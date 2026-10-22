@@ -2,7 +2,8 @@
 
 import { useId } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import type { CheckResult, InteractionProps, QuestionType } from './model';
+import type { CheckResult, QuestionType } from '../../types/questions';
+import type { InteractionProps } from './interaction-props';
 import { questionRegistry } from './registry';
 import { QuestionResult } from './QuestionResult';
 

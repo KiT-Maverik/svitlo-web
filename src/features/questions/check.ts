@@ -1,4 +1,4 @@
-import type { AnswerMap, CheckResult, Item, QuestionOf, QuestionType, Submission, TextNormalization } from './model';
+import type { AnswerMap, CheckResult, Item, QuestionOf, QuestionType, Submission, TextNormalization } from '../../types/questions';
 
 const empty: CheckResult = { status: 'incomplete', reason: 'empty' };
 const invalid = (reason: Extract<CheckResult, { status: 'invalid' }>['reason']): CheckResult => ({ status: 'invalid', reason });

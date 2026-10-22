@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { Box, ButtonBase, Stack, Typography, useTheme } from '@mui/material';
-import type { InteractionProps } from './model';
+import type { InteractionProps } from './interaction-props';
 import { uk } from './messages';
 
 type Point = { x: number; y: number };

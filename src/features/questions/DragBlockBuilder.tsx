@@ -6,7 +6,8 @@ import DragIndicator from '@mui/icons-material/DragIndicator';
 import { closestCenter, DndContext, type KeyboardCoordinateGetter, KeyboardSensor, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, rectSortingStrategy, SortableContext, useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import type { InteractionProps, Item } from './model';
+import type { InteractionProps } from './interaction-props';
+import type { Item } from '../../types/questions';
 import { uk } from './messages';
 
 function Block({ item, index, selected, locked, toggle }: { item: Item; index: number; selected: boolean; locked: boolean; toggle: () => void }) {

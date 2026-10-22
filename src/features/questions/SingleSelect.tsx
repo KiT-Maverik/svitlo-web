@@ -1,6 +1,6 @@
 'use client';
 
-import type { InteractionProps } from './model';
+import type { InteractionProps } from './interaction-props';
 import { Box } from '@mui/material';
 import { AnswerOption, answerColumnSx } from './AnswerOption';
 export function SingleSelect({ question, value, onChange, disabled, readOnly }: InteractionProps<'single-select'>) {

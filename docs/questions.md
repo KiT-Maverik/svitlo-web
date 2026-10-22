@@ -58,7 +58,7 @@ const [value, setValue] = useState('');
 
 ## Додавання типу
 
-1. Додайте поля в `DefinitionMap` і форму відповіді в `AnswerMap` (`model.ts`).
+1. Додайте поля в `DefinitionMap` і форму відповіді в `AnswerMap` (`src/types/questions/index.ts`).
 2. Додайте чистий checker у `checkers` і гілку `checkAnswer`; додайте unit-тести.
 3. Створіть керований компонент `InteractionProps<'new-type'>` з `value/onChange`, disabled/readOnly.
 4. Зареєструйте `Interaction`, `check`, `initial` у `questionRegistry` і додайте гілки в `QuestionView` / `QuestionAttempt`. Типізовані реєстри вимагають повного набору ключів.
@@ -68,7 +68,7 @@ UI-написи винесені до `messages.ts`; проєкт наразі �
 
 ## Перевірки
 
-- `npm run typecheck` — Next route types та TypeScript, включно з негативними compile-time прикладами `tests/types.ts`.
+- `npm run typecheck` — Next route types та TypeScript, включно з негативними compile-time прикладами `tests/type-contracts/types.ts`.
 - `npm test` — Node test runner; TypeScript компілює чистий модуль і тести до ігнорованого `.test-build` (без нового unit-фреймворку).
 - `npm run lint` — ESLint.
 - `npm run build` — production build.
@@ -90,3 +90,89 @@ Matching — дві колонки з кнопками та SVG-кривими �
 Для block-builder додано необов’язкове поле `interaction: 'click' | 'drag'`. За замовчуванням використовується попередній click UI. `interaction: 'drag'` обирає окремий `DragBlockBuilder` з двома drop-зонами: доступні блоки та складена відповідь. Перетягування додає, повертає й сортує блоки; повторювані написи розрізняються за ID. Click/Enter залишаються альтернативою додавання/повернення, пробіл і стрілки сортують складену відповідь. В обох режимах незмінні модель відповіді, правила перевірки та controller. На `/questions` показані обидва варіанти з незалежним станом.
 
 Кожна взаємодія має окремий файл: SingleSelect, MultipleSelect, Matching, ShortText, Numeric, Ordering, ClickBlockBuilder, DragBlockBuilder. `interactions.tsx` лише реекспортує компоненти. `AnswerOption` після вибору показує вибраний кружок; хрестик з’являється після виходу й повторного наведення (або повторного фокуса клавіатурою), а не одразу після кліку.
+
+
+## Рефактор API: домен, розширення, події та слоти
+
+Канонічні доменні контракти тепер у `src/types/questions/`: `base.ts`, окремий файл кожного типу, `answers.ts`, `results.ts` і `index.ts`. Домен не залежить від React. `QuestionType.Numeric` тощо — сталі рядкові дискримінатори, сумісні з JSON. `QuestionOf<'numeric'>` і конкретний `NumericQuestion` означають ту саму форму даних. `model.ts` залишається сумісним шляхом реекспорту; UI-пропси винесені в `interaction-props.ts`, `attempt-model.ts` та `slots.ts`.
+
+Кожен конкретний тип успадковує власний відкритий інтерфейс `*QuestionExtensions`. Наприклад:
+
+```ts
+// author-question-extensions.d.ts — файл повинен входити до tsconfig автора.
+import '@/types/questions/multiple-select';
+
+declare module '@/types/questions/multiple-select' {
+  interface MultipleSelectQuestionExtensions {
+    curriculum?: { topicId: string; objectives: string[] };
+  }
+}
+```
+
+Це додає типізовані авторські поля до multiple-select, які стандартний UI і checker ігнорують. Несумісне перевизначення стандартних полів відхиляється успадкуванням інтерфейсів. Розширення діє на весь compilation unit: обов’язкове поле стане обов’язковим для всіх запитань цього типу. Зберігайте розширення JSON-сумісними: декларація TypeScript сама по собі не виключає ReactNode, функції чи класи. Compile-time приклади augmentation та помилкових відповідей ізольовані в `tests/type-contracts` і перевіряються окремим `tsconfig.types.json`, не змінюючи контракти production build.
+
+### Події та стан
+
+`controller.ts` — незалежна від React машина стану, яку використовує `QuestionAttempt` для всіх семи типів. Події викликаються лише діями користувача/контролера, не render чи effects.
+
+| Callback | Семантика |
+| --- | --- |
+| `onChange` | Відповідь справді змінилась; ідентична відповідь не генерує подію |
+| `onCheck` | Будь-яка виконана перевірка, включно з incomplete/invalid |
+| `onAnswer` | Лише завершена відповідь correct/incorrect |
+| `onCorrect` / `onIncorrect` | Відповідний бінарний результат |
+| `onRetry` | Прибрано перевірку, введення збережено |
+| `onReset` | Повернуто початковий стан |
+
+Порядок при оцінюванні: `onCheck → onAnswer → onCorrect/onIncorrect`; в автоматичному режимі перед цим іде `onChange`. Payload містить `question`, snapshot `answer`, `result`, `attemptNumber` і прапорці стану. Копії payload захищають стан відповіді від мутації з callback; повторний `check()` після блокування не дублює подій. Неправильна відповідь не є технічною помилкою, тому `onError` не використовується. Події `onFinal` немає, оскільки кількість повторних спроб необмежена.
+
+- `hasInteracted`: була хоча б одна зміна відповіді, навіть якщо потім повернули початкову. Hover/focus його не змінюють.
+- `isModified`: відповідь відрізняється від початкової. Для multiple-select порядок множини не враховується; для matching порядок ключів неважливий.
+- `hasChecked`: у поточній спробі вже виконана перевірка.
+- `attemptNumber`: починається з 1, збільшується після retry перевіреної спроби; reset повертає 1.
+
+Retry зберігає `hasInteracted` та відповідь, прибирає `result/hasChecked`. Reset скидає все; ordering відновлює початкову послідовність.
+
+### Режими перевірки та показ результатів
+
+```tsx
+<QuestionAttempt question={question}
+  checkMode="on-change" showResult={true} showExplanation={false}
+  onAnswer={event => recordAnswer(event)} />
+```
+
+`checkMode="manual"` — типовий режим, перевірка кнопкою. `on-change` перевіряє кожну нову завершену валідну відповідь одразу та блокує її до retry; кнопка перевірки прихована. Порожні, неповні та невалідні зміни залишаються редагованими й не генерують onAnswer. Для single-select зняття вибору не завершує спробу. Режим доступний всім типам, але текстові/числові відповіді можуть стати валідними до завершення введення, тому для них зазвичай потрібний manual.
+
+`showResult={false}` приховує стандартне повідомлення разом із поясненням, але не вимикає оцінювання, блокування та callbacks. `showExplanation={false}` окремо приховує пояснення. Підсвічування обраного варіанта саме по собі не означає оцінку правильності.
+
+### Чотири слоти
+
+`QuestionAttempt` має однаковий API для кожного типу: `root`, `question`, `answers`, `actions`. Це render-функції, не before/after позиції. Вони отримують `QuestionSlotContext<K>`:
+
+- типізовані `question`, `answer`, `result` та повні UI `props`;
+- `hasInteracted`, `isModified`, `hasChecked`, `attemptNumber`, `isLocked`, `canCheck`;
+- захищені дії `setAnswer`, `check`, `retry`, `reset`;
+- `children` — стандартний вміст саме цього слота; можна обгорнути, доповнити або повністю замінити;
+- для власного root — `rootProps`, які слід передати своєму MUI-контейнеру, щоб зберегти доступну назву, стилі та пропси root.
+
+```tsx
+<QuestionAttempt question={question}
+  slotProps={{
+    root: { sx: { borderRadius: 3 } },
+    answers: context => ({ sx: { opacity: context.isLocked ? 0.7 : 1 } }),
+  }}
+  slots={{
+    root: context => <Paper {...context.rootProps}>{context.children}</Paper>,
+    question: context => <>{context.children}<CustomIllustration /></>,
+    answers: context => <CustomAnswers question={context.question}
+      value={context.answer} onChange={context.setAnswer} disabled={context.isLocked} />,
+    actions: context => <Button disabled={!context.canCheck}
+      onClick={context.check}>Перевірити</Button>,
+  }} />
+```
+
+`slotProps` приймає об’єкт або функцію від того самого контексту: root — PaperProps, question/answers — BoxProps, actions — StackProps. `sx` композиційно додається після стандартних стилів. Для question/answers/actions зберігаються зовнішні контейнери з потрібними ідентифікаторами/доступністю; slot renderer замінює їхній вміст. Root renderer повністю замінює контейнер. Результат залишається відповідальністю контролера та керується showResult/showExplanation.
+
+Вставляйте додатковий React-контент у потрібний слот, поряд із `context.children`. Він не входить у JSON-визначення. Дії контролера перевіряють disabled/readOnly/блокування незалежно від того, чи власна кнопка правильно виставила disabled. Власні відповіді/дії повинні користуватись цими діями, а не змінювати snapshot. Render-функції мають бути чистими; для hook-логіки рендерте власний React-компонент усередині слота.
+
+Живі приклади: `/questions/api` — manual, on-change з прихованим результатом, журнал подій і повністю власні чотири слоти. Там також показані hasInteracted/isModified та захист кастомних дій у disabled/readOnly.

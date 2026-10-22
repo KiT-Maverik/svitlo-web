@@ -1,6 +1,6 @@
 'use client';
 
-import type { InteractionProps } from './model';
+import type { InteractionProps } from './interaction-props';
 import { useId } from 'react';
 import { TextField } from '@mui/material';
 import { uk } from './messages';

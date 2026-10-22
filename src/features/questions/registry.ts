@@ -1,7 +1,8 @@
 'use client';
 
 import type { ComponentType } from 'react';
-import type { AnswerMap, CheckResult, InteractionProps, QuestionOf, QuestionType } from './model';
+import type { AnswerMap, CheckResult, QuestionOf, QuestionType } from '../../types/questions';
+import type { InteractionProps } from './interaction-props';
 import { checkers } from './check';
 import { BlockBuilder, Matching, MultipleSelect, Numeric, Ordering, ShortText, SingleSelect } from './interactions';
 export interface QuestionEntry<K extends QuestionType> {

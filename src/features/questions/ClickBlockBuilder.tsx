@@ -1,9 +1,9 @@
 'use client';
 
-import type { InteractionProps } from './model';
+import type { InteractionProps } from './interaction-props';
 import { useId, useRef } from 'react';
 import { Box, Button, Stack, Typography } from '@mui/material';
-import type { Item } from './model';
+import type { Item } from '../../types/questions';
 import { uk } from './messages';
 export function ClickBlockBuilder({ question, value, onChange, disabled, readOnly }: InteractionProps<'block-builder'>) {
   const available = question.blocks.filter(b => !value.includes(b.id));

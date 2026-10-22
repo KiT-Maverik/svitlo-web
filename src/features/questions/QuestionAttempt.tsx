@@ -1,41 +1,77 @@
 'use client';
 
-import { useRef, useState } from 'react';
-import { Box, Button, Paper, Stack } from '@mui/material';
-import type { AnswerMap, CheckResult, Question, QuestionOf, QuestionType } from './model';
+import { useId, useLayoutEffect, useState, useSyncExternalStore } from 'react';
+import { Box, Button, Paper, Stack, Typography } from '@mui/material';
+import type { SxProps, Theme } from '@mui/material';
+import type { QuestionType } from '../../types/questions';
+import type { QuestionAttemptProps, QuestionSlotContext, SlotProps } from './slots';
+import { createQuestionController } from './controller';
 import { questionRegistry } from './registry';
-import { InternalQuestionView } from './QuestionView';
+import { QuestionResult } from './QuestionResult';
 import { uk } from './messages';
 
-function Attempt<K extends QuestionType>({ question, disabled, readOnly }: { question: QuestionOf<K>; disabled?: boolean; readOnly?: boolean }) {
+function resolve<P, K extends QuestionType>(props: SlotProps<P, K> | undefined, context: QuestionSlotContext<K>): P | undefined {
+  return typeof props === 'function' ? (props as (context: QuestionSlotContext<K>) => P)(context) : props;
+}
+function sx(defaults: SxProps<Theme>, extra?: SxProps<Theme>): SxProps<Theme> {
+  return [...(Array.isArray(defaults) ? defaults : [defaults]), ...(Array.isArray(extra) ? extra : extra ? [extra] : [])];
+}
+function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
+  const { question, disabled, readOnly, slots, slotProps, showResult = true, showExplanation = true } = props;
   const entry = questionRegistry[question.type];
-  const [value, setValue] = useState<AnswerMap[K]>(() => entry.initial(question));
-  const [result, setResult] = useState<CheckResult | null>(null);
-  const checkButton = useRef<HTMLButtonElement>(null);
-  const resultBox = useRef<HTMLDivElement>(null);
-  const locked = result !== null || disabled || readOnly;
-  const edit = () => { setResult(null); requestAnimationFrame(() => checkButton.current?.focus()); };
-  return <Paper component="section" aria-label={question.prompt} variant="outlined" sx={{ p: { xs: 2, sm: 3 }, minWidth: 0, '& .Mui-focusVisible, & :focus-visible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 } }}>
-    <Box ref={resultBox} tabIndex={-1}>
-      <InternalQuestionView<K> question={question} value={value} onChange={next => { if (!locked) setValue(next); }} result={result} disabled={disabled} readOnly={readOnly || result !== null} />
+  const [controller] = useState(() => createQuestionController(question, entry.initial(question), entry.check, props));
+  useLayoutEffect(() => controller.configure(props), [controller, props]);
+  const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
+  const heading = useId();
+  const resultId = `${heading}-result`, checkId = `${heading}-check`, answersId = `${heading}-answers`;
+  const isLocked = Boolean(state.result || disabled || readOnly);
+  const focusResult = () => { if (showResult) requestAnimationFrame(() => document.getElementById(resultId)?.focus()); };
+  const focusEditor = () => requestAnimationFrame(() => {
+    const target = props.checkMode === 'on-change' ? document.getElementById(answersId)?.querySelector<HTMLElement>('button:not(:disabled), input:not(:disabled)') : document.getElementById(checkId);
+    target?.focus();
+  });
+  const context: QuestionSlotContext<K> = {
+    ...state, answer: structuredClone(state.answer), result: structuredClone(state.result), question, props, isLocked, canCheck: !isLocked,
+    setAnswer: answer => { controller.setAnswer(answer); if (controller.getSnapshot().result) focusResult(); },
+    check: () => { controller.check(); focusResult(); },
+    retry: () => { controller.retry(); focusEditor(); },
+    reset: () => { controller.reset(); focusEditor(); },
+    children: null, rootProps: {},
+  };
+  const Interaction = entry.Interaction;
+  const questionProps = resolve(slotProps?.question, context);
+  const answerProps = resolve(slotProps?.answers, context);
+  const actionProps = resolve(slotProps?.actions, context);
+  const rootProps = resolve(slotProps?.root, context);
+  const questionContent = <Typography component="h2" variant="h6" id={heading} sx={{ textAlign: 'center' }}>{question.prompt}</Typography>;
+  const answerContent = <Interaction question={question} value={state.answer} onChange={context.setAnswer} disabled={disabled} readOnly={readOnly || state.result !== null} />;
+  const actionContent = <>
+    {state.hasChecked ? <Button variant="contained" disabled={disabled || readOnly} onClick={context.retry}>{uk.retry}</Button> :
+      <Button id={checkId} variant="contained" disabled={!context.canCheck} onClick={context.check} sx={{ display: props.checkMode === 'on-change' ? 'none' : undefined }}>{uk.check}</Button>}
+    <Button disabled={disabled || readOnly} onClick={context.reset}>{uk.reset}</Button>
+  </>;
+  const contents = <>
+    <Box id={resultId} tabIndex={-1}>
+      <Stack spacing={2} sx={{ alignItems: 'center' }}>
+        <Box {...questionProps} sx={sx({ width: '100%' }, questionProps?.sx)}>
+          {slots?.question ? slots.question({ ...context, children: questionContent }) : questionContent}
+        </Box>
+        <Box {...answerProps} id={answersId} role="group" aria-label={question.prompt} sx={sx({ width: '100%', textAlign: 'center' }, answerProps?.sx)}>
+          {slots?.answers ? slots.answers({ ...context, children: answerContent }) : answerContent}
+        </Box>
+        <QuestionResult result={showResult ? state.result : null} explanation={question.explanation} showExplanation={showExplanation} />
+      </Stack>
     </Box>
-    <Stack direction="row" useFlexGap sx={{ mt: 2, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }}>
-      {result ? <Button variant="contained" disabled={disabled || readOnly} onClick={edit}>{uk.retry}</Button> :
-        <Button ref={checkButton} variant="contained" disabled={disabled || readOnly} onClick={() => { setResult(entry.check(question, value)); requestAnimationFrame(() => resultBox.current?.focus()); }}>{uk.check}</Button>}
-      <Button disabled={disabled || readOnly} onClick={() => { setValue(entry.initial(question)); edit(); }}>{uk.reset}</Button>
+    <Stack direction="row" useFlexGap {...actionProps} sx={sx({ mt: 2, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }, actionProps?.sx)}>
+      {slots?.actions ? slots.actions({ ...context, children: actionContent }) : actionContent}
     </Stack>
-  </Paper>;
+  </>;
+  const mergedRootProps = { variant: 'outlined' as const, ...rootProps, role: 'region', 'aria-label': question.prompt, sx: sx({ p: { xs: 2, sm: 3 }, minWidth: 0, '& .Mui-focusVisible, & :focus-visible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 } }, rootProps?.sx) };
+  context.rootProps = mergedRootProps;
+  return slots?.root ? slots.root({ ...context, children: contents }) : <Paper {...mergedRootProps} component="section">{contents}</Paper>;
 }
-export function QuestionAttempt({ question, disabled, readOnly }: { question: Question; disabled?: boolean; readOnly?: boolean }) {
-  const common = { disabled, readOnly };
-  // Remount on a different definition (id identifies an immutable authored question).
-  switch (question.type) {
-    case 'single-select': return <Attempt<'single-select'> key={question.id} question={question} {...common} />;
-    case 'multiple-select': return <Attempt<'multiple-select'> key={question.id} question={question} {...common} />;
-    case 'matching': return <Attempt<'matching'> key={question.id} question={question} {...common} />;
-    case 'short-text': return <Attempt<'short-text'> key={question.id} question={question} {...common} />;
-    case 'numeric': return <Attempt<'numeric'> key={question.id} question={question} {...common} />;
-    case 'ordering': return <Attempt<'ordering'> key={question.id} question={question} {...common} />;
-    case 'block-builder': return <Attempt<'block-builder'> key={question.id} question={question} {...common} />;
-  }
+/** A question ID identifies an immutable authored definition. Changing it starts fresh. */
+export function QuestionAttempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
+  return <Attempt<K> key={`${props.question.type}:${props.question.id}`} {...props} />;
 }
+export type { QuestionAttemptProps, QuestionSlotContext } from './slots';

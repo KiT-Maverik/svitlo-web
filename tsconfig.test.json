@@ -1,6 +1,23 @@
 {
   "extends": "./tsconfig.json",
-  "compilerOptions": { "module": "commonjs", "moduleResolution": "node", "noEmit": false, "outDir": ".test-build", "incremental": false, "isolatedModules": false, "plugins": [] },
-  "include": ["tests/check.test.ts", "src/features/questions/model.ts", "src/features/questions/check.ts", "src/features/questions/examples.ts"],
-  "exclude": ["node_modules", ".test-build"]
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "outDir": ".test-build",
+    "incremental": false,
+    "isolatedModules": false,
+    "plugins": []
+  },
+  "include": [
+    "tests/check.test.ts",
+    "src/features/questions/model.ts",
+    "src/features/questions/check.ts",
+    "src/features/questions/examples.ts",
+    "tests/controller.test.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".test-build"
+  ]
 }

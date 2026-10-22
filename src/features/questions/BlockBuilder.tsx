@@ -1,5 +1,5 @@
 'use client';
-import type { InteractionProps } from './model';
+import type { InteractionProps } from './interaction-props';
 import { ClickBlockBuilder } from './ClickBlockBuilder';
 import { DragBlockBuilder } from './DragBlockBuilder';
 export function BlockBuilder(props: InteractionProps<'block-builder'>) {

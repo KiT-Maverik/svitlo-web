@@ -6,7 +6,8 @@ import DragIndicator from '@mui/icons-material/DragIndicator';
 import { closestCenter, DndContext, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import type { InteractionProps, Item } from './model';
+import type { InteractionProps } from './interaction-props';
+import type { Item } from '../../types/questions';
 import { answerColumnSx } from './AnswerOption';
 import { uk } from './messages';
 
