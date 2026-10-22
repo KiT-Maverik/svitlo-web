@@ -9,7 +9,14 @@ export default function Home() {
           Світло
         </Typography>
 
-        <Button variant="contained">Почати навчання</Button>
+        <Typography variant="h5" gutterBottom>
+          Як рухається світло
+        </Typography>
+        <Typography sx={{ mb: 3 }}>
+          Перша інтерактивна тема: пояснення, малюнок і дослід зі світловим променем.
+        </Typography>
+        <Button variant="contained" href="/topics/light">Почати навчання</Button>
       </Container>
   );
 }
+

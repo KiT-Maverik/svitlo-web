@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Світловий промінь — інтерактивна сцена</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; background: #101e35; color: #e2ecf8; font: 16px/1.5 Arial, sans-serif; }
+    h1 { margin: 0; font-size: 20px; } p { margin: 6px 0; color: #abbfd8; }
+    .track { height: 160px; position: relative; margin: 16px 10px; }
+    .line { position: absolute; left: 32px; right: 12px; top: 80px; height: 2px; background: #8b7446; }
+    .source { position: absolute; left: 0; top: 62px; width: 36px; height: 38px; background: #e7edf5; border-radius: 8px 3px 3px 8px; }
+    .screen { position: absolute; right: 0; top: 22px; width: 10px; height: 120px; border-radius: 5px; background: #8ca3be; }
+    .path { position: absolute; left: 36px; right: 12px; top: 74px; height: 14px; }
+    .pulse { position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #ffda65; box-shadow: 0 0 22px #ffd45b; animation: travel 3s linear infinite; }
+    @keyframes travel { from { left: 0; } to { left: calc(100% - 14px); } }
+    .paused .pulse { animation-play-state: paused; }
+    .labels { display: flex; justify-content: space-between; color: #abbfd8; font-size: 13px; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 20px; }
+    button { padding: 10px 20px; border: 0; border-radius: 24px; color: #142238; background: #ffda65; font: inherit; cursor: pointer; min-width: 125px; }
+    button:focus-visible, input:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+    label { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; } input { width: 110px; accent-color: #ffda65; }
+    .note { margin-top: 16px; font-size: 13px; }
+    @media (prefers-reduced-motion: reduce) { .pulse { animation-play-state: paused; } .playing .pulse { animation-play-state: running; } }
+  </style>
+</head>
+<body>
+  <h1>Простеж шлях світла</h1>
+  <p>Від джерела — прямою до екрана.</p>
+  <div class="track" role="img" aria-label="Жовта позначка рухається прямою лінією від джерела ліворуч до екрана праворуч.">
+    <div class="line"></div><div class="source"></div>
+    <div class="path"><div class="pulse"></div></div><div class="screen"></div>
+  </div>
+  <div class="labels"><span>Джерело світла</span><span>Екран</span></div>
+  <div class="controls">
+    <button id="toggle" type="button" aria-pressed="false">Пауза</button>
+    <label for="speed">Швидкість <input id="speed" type="range" min="0.5" max="2" step="0.5" value="1"><output id="value" for="speed">1×</output></label>
+  </div>
+  <p class="note">Умовна модель: швидкість світла не відтворена в масштабі.</p>
+  <script>
+    const toggle = document.getElementById('toggle');
+    const speed = document.getElementById('speed');
+    const pulse = document.querySelector('.pulse');
+    let paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function update() {
+      document.body.classList.toggle('paused', paused);
+      document.body.classList.toggle('playing', !paused);
+      toggle.textContent = paused ? 'Відтворити' : 'Пауза';
+      toggle.setAttribute('aria-pressed', String(paused));
+    }
+    toggle.addEventListener('click', () => { paused = !paused; update(); });
+    speed.addEventListener('input', () => {
+      pulse.style.animationDuration = (3 / Number(speed.value)) + 's';
+      document.getElementById('value').textContent = speed.value + '×';
+    });
+    update();
+  </script>
+</body>
+</html>
