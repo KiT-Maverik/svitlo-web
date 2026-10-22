@@ -253,7 +253,7 @@ test('icon controls keep accessible names and reduced motion disables choice and
   expect(await reset.evaluate(node => getComputedStyle(node).borderWidth)).toBe('0px');
   const resetBounds = await reset.boundingBox(), checkBounds = await choice.getByRole('button', { name: 'Перевірити', exact: true }).boundingBox();
   expect(resetBounds!.x).toBeLessThan(checkBounds!.x);
-  await expect(page.getByRole('region', { name: /Упорядкуйте етапи/ }).locator('[data-testid="DragIndicatorIcon"]')).toHaveCount(3);
+  await expect(page.getByRole('region', { name: /Упорядкуйте етапи/ }).locator('ol button svg')).toHaveCount(3);
   await reset.focus(); await page.keyboard.press('Enter');
   await expect(mercury).toHaveAttribute('aria-pressed', 'false');
   const flag = choice.getByRole('button', { name: /^Flag:/ });
@@ -267,7 +267,7 @@ test('icon controls keep accessible names and reduced motion disables choice and
   await expect(chip).toHaveClass(/MuiChip-root/);
   expect(await chip.evaluate(node => getComputedStyle(node).backgroundColor)).toBe('rgba(0, 0, 0, 0)');
   expect((await chip.boundingBox())!.height).toBeLessThan(44);
-  await expect(blocks.locator('[data-testid="DragIndicatorIcon"]')).toHaveCount(0);
+  await expect(blocks.getByRole('group', { name: 'Складена відповідь', exact: true }).locator('button svg')).toHaveCount(0);
   expect(await chip.evaluate(node => getComputedStyle(node.parentElement!).animationName)).toBe('none');
   await blocks.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(blocks.getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
