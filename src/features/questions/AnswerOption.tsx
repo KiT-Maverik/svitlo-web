@@ -18,13 +18,17 @@ export function AnswerOption({ label, selected, onToggle, disabled = false }: {
     sx={{
       width: '100%', justifyContent: 'flex-start', gap: 1.5, px: 2, py: 1.5,
       border: '1px solid', borderColor: selected ? 'primary.main' : 'transparent',
+      transition: theme => theme.transitions.create(['border-color', 'background-color'], { duration: 180, easing: theme.transitions.easing.easeInOut }),
+      '@media (prefers-reduced-motion: reduce)': { transition: 'none', '& svg': { transition: 'none' } },
       borderRadius: 1, textAlign: 'left', minHeight: 48,
       '&:not(.Mui-disabled):hover': { bgcolor: 'action.hover' },
       '&.Mui-disabled': { opacity: 0.6 },
       '&.Mui-focusVisible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 },
     }}>
-    <Box component="span" aria-hidden="true" sx={{ display: 'flex', flexShrink: 0, color: selected ? 'primary.main' : 'text.secondary' }}>
-      {selected ? <><RadioButtonChecked className="answer-selected" sx={{ display: showRemove && !disabled ? 'none' : 'block' }} /><Close className="answer-remove" sx={{ display: showRemove && !disabled ? 'block' : 'none' }} /></> : <RadioButtonUnchecked />}
+    <Box component="span" aria-hidden="true" sx={{ position: 'relative', width: 24, height: 24, flexShrink: 0, color: selected ? 'primary.main' : 'text.secondary', transition: 'color 180ms ease-in-out', '& svg': { position: 'absolute', inset: 0, transition: 'opacity 180ms ease-in-out, transform 180ms ease-in-out, visibility 180ms' } }}>
+      <RadioButtonUnchecked sx={{ opacity: selected ? 0 : 1, visibility: selected ? 'hidden' : 'visible', transform: selected ? 'scale(.8)' : 'scale(1)' }} />
+      <RadioButtonChecked className="answer-selected" sx={{ opacity: selected && !(showRemove && !disabled) ? 1 : 0, visibility: selected && !(showRemove && !disabled) ? 'visible' : 'hidden', transform: selected ? 'scale(1)' : 'scale(.8)' }} />
+      <Close className="answer-remove" sx={{ opacity: selected && showRemove && !disabled ? 1 : 0, visibility: selected && showRemove && !disabled ? 'visible' : 'hidden', transform: showRemove ? 'rotate(0deg) scale(1)' : 'rotate(-45deg) scale(.8)' }} />
     </Box>
     <Typography component="span" sx={{ overflowWrap: 'anywhere', minWidth: 0 }}>{label}</Typography>
   </ButtonBase>;

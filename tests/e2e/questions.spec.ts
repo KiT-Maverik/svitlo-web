@@ -3,7 +3,7 @@ import { test, expect, type Locator } from '@playwright/test';
 test.beforeEach(async ({ page }) => { await page.goto('/questions'); });
 test('single choice keyboard cycle locks, retries retain, reset clears; examples are independent', async ({ page }) => {
   const section = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
-  await expect(page.getByRole('region')).toHaveCount(8);
+  await expect(page.getByRole('region')).toHaveCount(7);
   await expect(section.getByText('Пояснення:', { exact: false })).toHaveCount(0);
   const earth = section.getByRole('button', { name: 'Земля', exact: true });
   await earth.focus(); await page.keyboard.press('Space');
@@ -80,9 +80,9 @@ test('ordering and block builder work using keyboard with duplicate labels and s
   await blocks.getByRole('button', { name: 'Повернути: 2 (5)', exact: true }).focus(); await page.keyboard.press('Enter');
   await blocks.getByRole('button', { name: 'Додати: 2 (5)', exact: true }).focus(); await page.keyboard.press('Enter');
   await blocks.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(blocks.getByRole('status')).toContainText('Правильно!');
+  await expect(blocks.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
   await blocks.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  await blocks.getByRole('button', { name: 'Очистити відповідь', exact: true }).click();
+  await blocks.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(blocks.getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 });
@@ -106,6 +106,7 @@ test('answer surfaces share the widest width, center the column, and show select
   await mercury.click();
   if (testInfo.project.name === 'desktop') {
     await expect(mercury.locator('.answer-selected')).toBeVisible();
+    expect(await mercury.evaluate(node => getComputedStyle(node).transitionDuration)).not.toBe('0s');
     await expect(mercury.locator('.answer-remove')).toBeHidden();
     await page.mouse.move(0, 0);
     await mercury.hover();
@@ -186,8 +187,8 @@ test('matching previews curves, replaces endpoints and deletes links with keyboa
   await expect(correct).toHaveCount(0);
 });
 
-test('drag block builder remains independent and supports cross-zone moves and sorting', async ({ page }, testInfo) => {
-  const section = page.getByRole('region', { name: 'Складіть рівність перетягуванням блоків: сума двох одиниць.' });
+test('one chip builder supports click, drag, insertion preview, cross-zone moves and sorting', async ({ page }, testInfo) => {
+  const section = page.getByRole('region', { name: /Складіть рівність для суми/ });
   await section.scrollIntoViewIfNeeded();
   const built = section.getByRole('group', { name: 'Складена відповідь', exact: true });
   const addOne = section.getByRole('button', { name: 'Додати: 1 (1)', exact: true });
@@ -205,7 +206,10 @@ test('drag block builder remains independent and supports cross-zone moves and s
       await session.detach();
     } else {
       await page.mouse.move(x, y); await page.mouse.down();
-      await page.mouse.move(tx, ty, { steps: 12 }); await page.mouse.up();
+      await page.mouse.move(tx, ty, { steps: 12 });
+      await expect(section.locator('[data-insertion-preview]')).toBeVisible();
+      await section.screenshot({ path: testInfo.outputPath('block-insertion.png') });
+      await page.mouse.up();
     }
   }
   await drag(addOne, built);
@@ -228,7 +232,10 @@ test('drag block builder remains independent and supports cross-zone moves and s
   await expect(section.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
   await expect(built.getByRole('button').first()).toBeDisabled();
   await section.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  await section.getByRole('button', { name: 'Очистити відповідь', exact: true }).click();
+  await section.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(built.getByRole('button')).toHaveCount(0);
+  await expect(section.getByText('Очистити відповідь', { exact: true })).toHaveCount(0);
+  await expect(section.getByRole('button', { name: 'Скинути', exact: true })).toHaveText('');
+  await expect(section.getByRole('button', { name: /^Flag:/ })).toHaveText('');
   await expect(page.getByRole('region', { name: /Складіть рівність для суми/ }).getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
 });

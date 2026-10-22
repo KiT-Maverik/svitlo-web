@@ -10,7 +10,7 @@ export default function QuestionsPage() {
       <Link href="/">← Світло</Link>
       <Link href="/questions/api">Демонстрація режимів, подій та слотів →</Link>
       <Typography component="h1" variant="h4">Інтерактивні запитання</Typography>
-      <Typography>Сім типів запитань і два варіанти складання блоків. Дайте відповідь, перевірте результат і спробуйте ще раз. Кожен приклад незалежний.</Typography>
+      <Typography>Сім типів запитань. Блоки можна додавати натисканням або перетягуванням. Дайте відповідь, перевірте результат і спробуйте ще раз. Кожен приклад незалежний.</Typography>
       {exampleQuestions.map(question => <ReportedQuestion key={question.id} question={question} />)}
     </Stack>
   </Container>;

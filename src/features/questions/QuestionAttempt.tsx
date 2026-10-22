@@ -1,7 +1,8 @@
 'use client';
 
 import { useId, useLayoutEffect, useState, useSyncExternalStore } from 'react';
-import { Box, Button, Paper, Stack, Typography } from '@mui/material';
+import { Box, Button, IconButton, Tooltip, Paper, Stack, Typography } from '@mui/material';
+import RestartAlt from '@mui/icons-material/RestartAlt';
 import type { SxProps, Theme } from '@mui/material';
 import type { QuestionType } from '../../types/questions';
 import type { QuestionAttemptProps, QuestionSlotContext, SlotProps } from './slots';
@@ -48,7 +49,7 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
   const actionContent = <>
     {state.hasChecked ? <Button variant="contained" disabled={disabled || readOnly} onClick={context.retry}>{uk.retry}</Button> :
       <Button id={checkId} variant="contained" disabled={!context.canCheck} onClick={context.check} sx={{ display: props.checkMode === 'on-change' ? 'none' : undefined }}>{uk.check}</Button>}
-    <Button disabled={disabled || readOnly} onClick={context.reset}>{uk.reset}</Button>
+    <Tooltip title={uk.reset}><span><IconButton aria-label={uk.reset} disabled={disabled || readOnly} onClick={context.reset} sx={{ border: '1px solid', borderColor: 'divider' }}><RestartAlt /></IconButton></span></Tooltip>
   </>;
   const contents = <>
     <Box id={resultId} tabIndex={-1}>
@@ -66,7 +67,7 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
       {slots?.actions ? slots.actions({ ...context, children: actionContent }) : actionContent}
     </Stack>
   </>;
-  const mergedRootProps = { variant: 'outlined' as const, ...rootProps, role: 'region', 'aria-label': question.prompt, sx: sx({ p: { xs: 2, sm: 3 }, minWidth: 0, '& .Mui-focusVisible, & :focus-visible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 } }, rootProps?.sx) };
+  const mergedRootProps = { variant: 'outlined' as const, ...rootProps, role: 'region', 'aria-label': question.prompt, sx: sx({ position: 'relative', p: { xs: 2, sm: 3 }, minWidth: 0, '& .Mui-focusVisible, & :focus-visible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 } }, rootProps?.sx) };
   context.rootProps = mergedRootProps;
   return slots?.root ? slots.root({ ...context, children: contents }) : <Paper {...mergedRootProps} component="section">{contents}</Paper>;
 }

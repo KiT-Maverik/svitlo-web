@@ -4,5 +4,5 @@ import type { BaseQuestion, Item } from './base';
 export interface BlockBuilderQuestionExtensions {}
 export interface BlockBuilderQuestion extends BaseQuestion, BlockBuilderQuestionExtensions {
   type: 'block-builder';
-  blocks: Item[]; acceptedSequences: string[][]; interaction?: 'click' | 'drag';
+  blocks: Item[]; acceptedSequences: string[][];
 }

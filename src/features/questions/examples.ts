@@ -8,6 +8,3 @@ export const exampleQuestions: Question[] = [
   { id: 'water', type: 'ordering', prompt: 'Упорядкуйте етапи колообігу води, починаючи з випаровування.', items: [{ id: 'rain', label: 'Опади' }, { id: 'evaporation', label: 'Випаровування' }, { id: 'cloud', label: 'Конденсація' }], correctOrder: ['evaporation', 'cloud', 'rain'], explanation: 'Вода випаровується, пара конденсується, потім випадають опади.' },
   { id: 'addition', type: 'block-builder', prompt: 'Складіть рівність для суми двох одиниць. Блок «3» зайвий.', blocks: [{ id: 'one-a', label: '1' }, { id: 'plus', label: '+' }, { id: 'one-b', label: '1' }, { id: 'equals', label: '=' }, { id: 'two', label: '2' }, { id: 'three', label: '3' }], acceptedSequences: [['one-a', 'plus', 'one-b', 'equals', 'two'], ['one-b', 'plus', 'one-a', 'equals', 'two']], explanation: '1 + 1 = 2. Обидва блоки «1» мають власні ID; їх можна поміняти місцями.' },
 ] satisfies Question[];
-const addition = exampleQuestions.find(q => q.type === 'block-builder');
-if (addition?.type === 'block-builder') exampleQuestions.push({ ...addition, id: 'addition-drag', interaction: 'drag', prompt: 'Складіть рівність перетягуванням блоків: сума двох одиниць.' });
-

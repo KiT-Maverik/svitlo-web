@@ -2,7 +2,6 @@
 
 import { useId } from 'react';
 import { Box, ButtonBase, Divider, Stack, Typography } from '@mui/material';
-import DragIndicator from '@mui/icons-material/DragIndicator';
 import { closestCenter, DndContext, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
@@ -29,7 +28,6 @@ function SortableAnswer({ item, position, disabled }: { item: Item; position: nu
         '&.Mui-focusVisible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 },
       }}>
       <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>{item.label}</Typography>
-      <DragIndicator aria-hidden="true" sx={{ flexShrink: 0, color: 'text.secondary' }} />
     </ButtonBase>
   </Box>;
 }
