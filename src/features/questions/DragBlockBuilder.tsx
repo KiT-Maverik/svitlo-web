@@ -10,7 +10,7 @@ import { uk } from './messages';
 
 const chipSx = {
   height: 'auto', minHeight: 32, alignSelf: 'center', flex: '0 0 auto', bgcolor: 'transparent', maxWidth: '100%', fontSize: '1rem', cursor: 'grab',
-  '& .MuiChip-label': { whiteSpace: 'normal', overflowWrap: 'anywhere', overflow: 'visible', textOverflow: 'clip', py: 1 },
+  '& .MuiChip-label': { whiteSpace: 'normal', overflowWrap: 'anywhere', overflow: 'visible', textOverflow: 'clip', py: 0.25 },
   '&:active': { cursor: 'grabbing' },
 };
 function AvailableBlock({ item, index, locked, toggle }: { item: Item; index: number; locked: boolean; toggle: (node: HTMLElement) => void }) {
