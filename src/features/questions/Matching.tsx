@@ -21,7 +21,7 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
   const leftNodes = useRef(new Map<string, HTMLButtonElement>());
   const rightNodes = useRef(new Map<string, HTMLButtonElement>());
   const [anchors, setAnchors] = useState<Anchors>({ left: {}, right: {} });
-  const [pending, setPending] = useState<string | null>(null);
+  const [pending, setPending] = useState<{ side: 'left' | 'right'; id: string } | null>(null);
   const [pointer, setPointer] = useState<Point | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
   const [announcement, setAnnouncement] = useState('');
@@ -46,15 +46,22 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
   }, [question]);
   function remove(leftId: string) {
     if (locked) return;
-    const next = { ...value }; delete next[leftId]; onChange(next); setHovered(null);
+    const next = { ...value }; delete next[leftId]; onChange(next); setHovered(null); setPending(null); setPointer(null);
     setAnnouncement(uk.connectionRemoved);
     leftNodes.current.get(leftId)?.focus();
   }
-  function connect(rightId: string) {
-    if (locked || !pending) return;
-    // Replacing either endpoint still leaves a one-to-one mapping.
-    const next = Object.fromEntries(Object.entries(value).filter(([leftId, target]) => leftId !== pending && target !== rightId));
-    next[pending] = rightId;
+  function choose(side: 'left' | 'right', id: string) {
+    if (locked) return;
+    if (!pending || pending.side === side) {
+      setPending(pending?.side === side && pending.id === id ? null : { side, id });
+      setPointer(null);
+      return;
+    }
+    const leftId = side === 'left' ? id : pending.id;
+    const rightId = side === 'right' ? id : pending.id;
+    // The stored answer always maps left IDs to right IDs, regardless of click order.
+    const next = Object.fromEntries(Object.entries(value).filter(([left, right]) => left !== leftId && right !== rightId));
+    next[leftId] = rightId;
     onChange(next); setPending(null); setPointer(null); setAnnouncement(uk.connectionAdded);
   }
   const connections = Object.entries(value).filter(([a, b]) => anchors.left[a] && anchors.right[b]);
@@ -69,11 +76,11 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
       {(['left', 'right'] as const).map(side => <Stack key={side} spacing={2} sx={{ minWidth: 0 }}>
         {question[side].map(item => {
           const paired = side === 'left' ? Boolean(value[item.id]) : Object.values(value).includes(item.id);
-          const active = side === 'left' && pending === item.id;
+          const active = pending?.side === side && pending.id === item.id;
           return <ButtonBase key={item.id} disabled={locked} aria-pressed={active || paired}
             aria-label={item.label} aria-describedby={hint}
             ref={node => { const nodes = side === 'left' ? leftNodes : rightNodes; if (node) nodes.current.set(item.id, node); else nodes.current.delete(item.id); }}
-            onClick={() => { if (side === 'right') connect(item.id); else { setPending(pending === item.id ? null : item.id); setPointer(null); } }}
+            onClick={() => choose(side, item.id)}
             sx={{ position: 'relative', minHeight: 52, px: { xs: 1, sm: 2 }, py: 1.5, width: '100%', border: '1px solid', borderColor: active || paired ? 'primary.main' : 'divider', borderRadius: 1, textAlign: 'left', justifyContent: 'flex-start', bgcolor: active ? 'action.selected' : 'background.paper', '&:hover': { bgcolor: 'action.hover' }, '&.Mui-disabled': { opacity: 0.6 } }}>
             <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>{item.label}</Typography>
             {(active || paired) && <Box component="span" aria-hidden="true" sx={{ position: 'absolute', width: 8, height: 8, borderRadius: '50%', bgcolor: 'primary.main', top: 'calc(50% - 4px)', [side === 'left' ? 'right' : 'left']: -5 }} />}
@@ -99,9 +106,9 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
             </g>}
           </g>;
         })}
-        {!locked && pending && anchors.left[pending] && pointer && <path data-preview="true" d={curve(anchors.left[pending], pointer)} fill="none" stroke="currentColor" strokeWidth={2} strokeDasharray="5 4" />}
+        {!locked && pending && anchors[pending.side][pending.id] && pointer && <path data-preview="true" d={pending.side === 'left' ? curve(anchors.left[pending.id], pointer) : curve(pointer, anchors.right[pending.id])} fill="none" stroke="currentColor" strokeWidth={2} strokeDasharray="5 4" />}
       </Box>
     </Box>
-    <Typography role="status" variant="body2" sx={visuallyHidden}>{locked ? '' : pending ? `${uk.matchingChooseTarget}: ${question.left.find(i => i.id === pending)?.label}` : announcement}</Typography>
+    <Typography role="status" variant="body2" sx={visuallyHidden}>{locked ? '' : pending ? `${uk.matchingChooseTarget}: ${question[pending.side].find(i => i.id === pending.id)?.label}` : announcement}</Typography>
   </Stack>;
 }

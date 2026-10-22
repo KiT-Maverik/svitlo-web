@@ -260,6 +260,15 @@ test('icon controls keep accessible names and reduced motion disables choice and
   await expect(mercury).toHaveAttribute('aria-pressed', 'false');
   const flag = choice.getByRole('button', { name: /^Flag:/ });
   await expect(flag).toHaveText('');
+  await expect(flag).toBeEnabled();
+  const idleFlagColor = await flag.evaluate(node => getComputedStyle(node).color);
+  const resetSize = await reset.boundingBox(), flagSize = await flag.boundingBox();
+  expect(flagSize!.width).toBe(resetSize!.width);
+  expect(flagSize!.height).toBe(resetSize!.height);
+  await flag.focus();
+  await expect(flag.locator('.report-filled')).toBeVisible();
+  await expect(flag.locator('.report-outline')).toBeHidden();
+  expect(await flag.evaluate(node => getComputedStyle(node).color)).not.toBe(idleFlagColor);
   const card = await choice.boundingBox(), icon = await flag.boundingBox();
   expect(card && icon && card.x + card.width - icon.x - icon.width).toBeLessThan(36);
   const panel = choice.locator('[data-question-actions]');
@@ -280,4 +289,36 @@ test('icon controls keep accessible names and reduced motion disables choice and
   expect(await chip.evaluate(node => getComputedStyle(node.parentElement!).animationName)).toBe('none');
   await blocks.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(blocks.getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
+});
+
+
+test('matching connects from either side with preview, cancellation and one-to-one reassignment', async ({ page }, testInfo) => {
+  const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
+  const paris = match.getByRole('button', { name: 'Париж', exact: true });
+  await paris.focus(); await page.keyboard.press('Enter');
+  await expect(paris).toHaveAttribute('aria-pressed', 'true');
+  await page.keyboard.press('Escape');
+  await expect(paris).toHaveAttribute('aria-pressed', 'false');
+  await paris.click();
+  await match.getByRole('button', { name: 'Київ', exact: true }).click();
+  await expect(paris).toHaveAttribute('aria-pressed', 'false');
+  if (testInfo.project.name === 'desktop') {
+    await match.getByRole('button', { name: 'Україна', exact: true }).hover();
+    await expect(match.locator('path[data-preview]')).toHaveCount(1);
+  }
+  await match.getByRole('button', { name: 'Україна', exact: true }).click();
+  await expect(match.getByRole('button', { name: 'Видалити зв’язок: Україна — Київ', exact: true })).toHaveCount(1);
+  await paris.focus(); await page.keyboard.press('Enter');
+  await match.getByRole('button', { name: 'Франція', exact: true }).focus(); await page.keyboard.press('Enter');
+  await expect(match.locator('path[data-connection]')).toHaveCount(2);
+  // Starting from an already paired right endpoint moves that endpoint to the new left item.
+  await match.getByRole('button', { name: 'Київ', exact: true }).click();
+  await match.getByRole('button', { name: 'Франція', exact: true }).click();
+  await expect(match.locator('path[data-connection]')).toHaveCount(1);
+  await expect(match.getByRole('button', { name: 'Видалити зв’язок: Франція — Київ', exact: true })).toHaveCount(1);
+  await match.getByRole('button', { name: 'Скинути', exact: true }).click();
+  for (const name of ['Париж', 'Франція', 'Київ', 'Україна']) await match.getByRole('button', { name, exact: true }).click();
+  await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
+  await expect(paris).toBeDisabled();
 });

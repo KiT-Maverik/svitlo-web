@@ -2,6 +2,7 @@
 import { useId, useRef, useState } from 'react';
 import { Alert, Button, IconButton, Tooltip, Dialog, DialogActions, DialogContent, DialogTitle, Link, MenuItem, Stack, TextField, Typography } from '@mui/material';
 import OutlinedFlag from '@mui/icons-material/OutlinedFlag';
+import Flag from '@mui/icons-material/Flag';
 import type { ReportCategory, ReportResponse } from './types';
 export function ReportButton({ contentId, title }: { contentId: string; title: string }) {
   const id = useId();
@@ -22,7 +23,7 @@ export function ReportButton({ contentId, title }: { contentId: string; title: s
     finally { sending.current = false; setBusy(false); }
   }
   return <>
-    <Tooltip title="Повідомити про помилку"><IconButton size="small" aria-label={`Flag: ${title}`} onClick={() => { if (!requestId.current || result?.status === 'created') { requestId.current = crypto.randomUUID(); setMessage(''); setResult(null); } setOpen(true); }}><OutlinedFlag fontSize="small" /></IconButton></Tooltip>
+    <Tooltip title="Повідомити про помилку"><IconButton sx={{ width: 40, height: 40, color: 'action.disabled', transition: 'color 180ms ease-in-out', '& .report-filled': { display: 'none' }, '&:hover, &.Mui-focusVisible': { color: 'error.main', '& .report-outline': { display: 'none' }, '& .report-filled': { display: 'block' } }, '@media (prefers-reduced-motion: reduce)': { transition: 'none' } }} aria-label={`Flag: ${title}`} onClick={() => { if (!requestId.current || result?.status === 'created') { requestId.current = crypto.randomUUID(); setMessage(''); setResult(null); } setOpen(true); }}><OutlinedFlag className="report-outline" /><Flag className="report-filled" /></IconButton></Tooltip>
     <Dialog open={open} onClose={() => { if (!busy) setOpen(false); }} fullWidth maxWidth="sm" aria-labelledby={`${id}-title`}>
       <DialogTitle id={`${id}-title`}>Повідомити про помилку</DialogTitle>
       <DialogContent><Stack spacing={2} sx={{ pt: 1 }}>
