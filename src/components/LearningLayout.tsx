@@ -22,8 +22,10 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import TopNavbar from './navigation/TopNavbar';
 import BottomNavbar from './navigation/BottomNavbar';
 import { topics } from '@/content/topics';
+import { canAdvance, useLessonProgress } from './lesson/LessonProgress';
 
 export default function LearningLayout({ children }: { children: ReactNode }) {
+  const { progress, dispatch } = useLessonProgress();
   const [open, setOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   useEffect(() => {
@@ -35,9 +37,6 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
     return () => document.removeEventListener('keydown', onKeyDown);
   }, [open, settingsOpen]);
   const pathname = usePathname();
-  const currentIndex = topics.findIndex((topic) => topic.href === pathname);
-  const previous = topics[currentIndex - 1];
-  const next = topics[currentIndex + 1];
 
   return (
     <Box sx={{ height: '100dvh', display: 'grid', gridTemplateRows: 'auto minmax(0, 1fr) auto', overflow: 'hidden', bgcolor: '#fff' }}>
@@ -116,8 +115,8 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
 
       <BottomNavbar aria-label="Нижня навігація навчання" slots={{
         center: <>
-          {previous ? <Button component={Link} href={previous.href}>← Назад</Button> : <Button disabled>← Назад</Button>}
-          {next ? <Button component={Link} href={next.href}>Далі →</Button> : <Button disabled>Далі →</Button>}
+          <Button disabled={progress.step === 0} onClick={() => dispatch({ type: 'back' })}>← Назад</Button>
+          <Button disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>Далі →</Button>
         </>,
       }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />
     </Box>

@@ -3,6 +3,7 @@ import path from 'node:path';
 import type { Metadata } from 'next';
 import Container from '@mui/material/Container';
 import MarkdownContent from '@/components/MarkdownContent';
+import LightLesson from '@/components/lesson/LightLesson';
 
 export const metadata: Metadata = {
   title: 'Як рухається світло — Світло',
@@ -17,11 +18,11 @@ async function getContent() {
 export default async function LightTopic() {
   const content = await getContent();
   return (
-    <Container maxWidth="md" sx={{ py: { xs: 3, md: 6 } }}>
+    <LightLesson theory={<Container maxWidth="md" sx={{ py: { xs: 3, md: 6 } }}>
       <p style={{ color: '#63758b', letterSpacing: '.12em', fontSize: 12, fontWeight: 700 }}>
-        ФІЗИКА · ТЕМА 01 · 5 ХВИЛИН
+        ФІЗИКА · УРОК 01 · 4 ЕТАПИ
       </p>
       <MarkdownContent content={content} />
-    </Container>
+    </Container>} />
   );
 }
