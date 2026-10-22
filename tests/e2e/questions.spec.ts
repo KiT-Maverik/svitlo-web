@@ -217,7 +217,9 @@ test('drag block builder remains independent and supports cross-zone moves and s
     const plus = section.getByRole('button', { name: 'Повернути: + (2)', exact: true });
     await plus.focus(); await page.keyboard.press('Space');
     await expect(plus).toHaveAttribute('aria-pressed', 'true');
+    await expect(section.getByRole('status').filter({ hasText: 'Позиція: 3' })).toBeAttached();
     await page.keyboard.press('ArrowLeft');
+    await expect(section.getByRole('status').filter({ hasText: 'Позиція: 2' })).toBeAttached();
     await page.keyboard.press('Space');
   }
   await expect(built.getByRole('button')).toHaveText(['1', '+', '1', '=', '2']);

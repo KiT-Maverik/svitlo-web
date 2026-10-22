@@ -1,10 +1,10 @@
 'use client';
 
-import { useId } from 'react';
+import { useId, useState } from 'react';
 import { Box, Button, ButtonBase, Stack, Typography } from '@mui/material';
 import DragIndicator from '@mui/icons-material/DragIndicator';
-import { closestCenter, DndContext, KeyboardSensor, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
-import { arrayMove, rectSortingStrategy, SortableContext, sortableKeyboardCoordinates, useSortable } from '@dnd-kit/sortable';
+import { closestCenter, DndContext, type KeyboardCoordinateGetter, KeyboardSensor, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
+import { arrayMove, rectSortingStrategy, SortableContext, useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import type { InteractionProps, Item } from './model';
 import { uk } from './messages';
@@ -39,7 +39,18 @@ function DropZone({ id, label, children, locked }: { id: string; label: string; 
 export function DragBlockBuilder({ question, value, onChange, disabled, readOnly }: InteractionProps<'block-builder'>) {
   const id = useId(), answerId = `${id}-answer`, bankId = `${id}-bank`;
   const locked = Boolean(disabled || readOnly);
-  const sensors = useSensors(useSensor(MouseSensor, { activationConstraint: { distance: 5 } }), useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 8 } }), useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates, scrollBehavior: 'auto', keyboardCodes: { start: ['Space'], cancel: ['Escape'], end: ['Space', 'Enter'] } }));
+  const [keyboardDrag, setKeyboardDrag] = useState(false);
+  // The answer is one logical sequence even when its visual rows wrap.
+  const keyboardCoordinates: KeyboardCoordinateGetter = (event, { context }) => {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.code)) return;
+    event.preventDefault();
+    const current = value.indexOf(String(context.over?.id ?? context.active?.id));
+    const delta = event.code === 'ArrowLeft' || event.code === 'ArrowUp' ? -1 : 1;
+    const target = value[Math.max(0, Math.min(value.length - 1, current + delta))];
+    const rect = context.droppableRects.get(target);
+    return rect ? { x: rect.left, y: rect.top } : undefined;
+  };
+  const sensors = useSensors(useSensor(MouseSensor, { activationConstraint: { distance: 5 } }), useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 8 } }), useSensor(KeyboardSensor, { coordinateGetter: keyboardCoordinates, scrollBehavior: 'auto', keyboardCodes: { start: ['Space'], cancel: ['Escape'], end: ['Space', 'Enter'] } }));
   const available = question.blocks.filter(item => !value.includes(item.id));
   const renderBlock = (item: Item, selected: boolean) => <Block key={item.id} item={item} index={question.blocks.findIndex(b => b.id === item.id)} selected={selected} locked={locked} toggle={() => { if (!locked) onChange(selected ? value.filter(v => v !== item.id) : [...value, item.id]); }} />;
   return <Stack spacing={2} sx={{ width: '100%', maxWidth: 600, mx: 'auto', alignItems: 'center' }}>
@@ -50,7 +61,10 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
         onDragOver: ({ over }) => over ? `${uk.position}: ${value.indexOf(String(over.id)) + 1}` : undefined,
         onDragEnd: () => uk.dropped, onDragCancel: () => uk.dragCancelled,
       } }}
+      onDragStart={event => setKeyboardDrag(event.activatorEvent.type === 'keydown')}
+      onDragCancel={() => setKeyboardDrag(false)}
       onDragEnd={({ active, over }) => {
+        setKeyboardDrag(false);
         if (locked || !over) return;
         const itemId = String(active.id), target = String(over.id);
         if (!question.blocks.some(b => b.id === itemId)) return;
@@ -65,12 +79,12 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
         } else if (target !== itemId) onChange(arrayMove(value, from, to < 0 ? value.length - 1 : to));
       }}>
       <SortableContext items={value} strategy={rectSortingStrategy}>
-        <DropZone id={answerId} label={uk.built} locked={locked}>
+        <DropZone id={answerId} label={uk.built} locked={locked || keyboardDrag}>
           {!value.length && <Typography color="text.secondary">{uk.emptyBlocks}</Typography>}
           {value.map(itemId => { const item = question.blocks.find(b => b.id === itemId); return item ? renderBlock(item, true) : null; })}
         </DropZone>
       </SortableContext>
-      <DropZone id={bankId} label={uk.available} locked={locked}>
+      <DropZone id={bankId} label={uk.available} locked={locked || keyboardDrag}>
         {!available.length && <Typography color="text.secondary">{uk.noBlocks}</Typography>}
         {available.map(item => renderBlock(item, false))}
       </DropZone>
