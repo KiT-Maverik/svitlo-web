@@ -8,6 +8,7 @@ import type { QuestionType } from '../../types/questions';
 import type { QuestionAttemptProps, QuestionSlotContext, SlotProps } from './slots';
 import { createQuestionController } from './controller';
 import { questionRegistry } from './registry';
+import { QuestionActions } from './QuestionActions';
 import { QuestionResult } from './QuestionResult';
 import { uk } from './messages';
 
@@ -46,11 +47,14 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
   const rootProps = resolve(slotProps?.root, context);
   const questionContent = <Typography component="h2" variant="h6" id={heading} sx={{ textAlign: 'center' }}>{question.prompt}</Typography>;
   const answerContent = <Interaction question={question} value={state.answer} onChange={context.setAnswer} disabled={disabled} readOnly={readOnly || state.result !== null} />;
-  const actionContent = <>
-    <Tooltip title={uk.reset}><span><IconButton aria-label={uk.reset} disabled={disabled || readOnly} onClick={context.reset}><RestartAlt /></IconButton></span></Tooltip>
-    {state.hasChecked ? <Button variant="contained" disabled={disabled || readOnly} onClick={context.retry}>{uk.retry}</Button> :
-      <Button id={checkId} variant="contained" disabled={!context.canCheck} onClick={context.check} sx={{ display: props.checkMode === 'on-change' ? 'none' : undefined }}>{uk.check}</Button>}
-  </>;
+  const resetContent = <Tooltip title={uk.reset}><span><IconButton aria-label={uk.reset} disabled={disabled || readOnly} onClick={context.reset}><RestartAlt /></IconButton></span></Tooltip>;
+  const checkContent = state.hasChecked ? <Button variant="contained" disabled={disabled || readOnly} onClick={context.retry}>{uk.retry}</Button> :
+    <Button id={checkId} variant="contained" disabled={!context.canCheck} onClick={context.check} sx={{ display: props.checkMode === 'on-change' ? 'none' : undefined }}>{uk.check}</Button>;
+  const actionContent = <QuestionActions
+    left={props.actionSlots?.left ? props.actionSlots.left({ ...context, children: resetContent }) : resetContent}
+    center={props.actionSlots?.center ? props.actionSlots.center({ ...context, children: checkContent }) : checkContent}
+    right={props.actionSlots?.right?.({ ...context, children: null })}
+  />;
   const contents = <>
     <Box id={resultId} tabIndex={-1}>
       <Stack spacing={2} sx={{ alignItems: 'center' }}>
@@ -67,7 +71,7 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
       {slots?.actions ? slots.actions({ ...context, children: actionContent }) : actionContent}
     </Stack>
   </>;
-  const mergedRootProps = { variant: 'outlined' as const, ...rootProps, role: 'region', 'aria-label': question.prompt, sx: sx({ position: 'relative', p: { xs: 2, sm: 3 }, minWidth: 0, '& .Mui-focusVisible, & :focus-visible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 } }, rootProps?.sx) };
+  const mergedRootProps = { variant: 'outlined' as const, ...rootProps, role: 'region', 'aria-label': question.prompt, sx: sx({ position: 'relative', p: { xs: 2, sm: 3 }, minWidth: 0, '& button.Mui-focusVisible, & button:focus-visible, & input:focus-visible, & textarea:focus-visible, & a:focus-visible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 } }, rootProps?.sx) };
   context.rootProps = mergedRootProps;
   return slots?.root ? slots.root({ ...context, children: contents }) : <Paper {...mergedRootProps} component="section">{contents}</Paper>;
 }

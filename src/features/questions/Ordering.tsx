@@ -20,7 +20,7 @@ function SortableAnswer({ item, position, disabled }: { item: Item; position: nu
       aria-label={`${item.label} (${position})`} disabled={disabled}
       style={{ transform: CSS.Transform.toString(transform), transition }}
       sx={{
-        flex: 1, minWidth: 0, justifyContent: 'space-between', gap: 2, px: 2, py: 1.5,
+        flex: 1, minWidth: 0, justifyContent: 'flex-start', gap: 2, px: 2, py: 1.5,
         borderRadius: 1, textAlign: 'left', minHeight: 48, cursor: disabled ? 'default' : isDragging ? 'grabbing' : 'grab',
         bgcolor: isDragging ? 'action.selected' : 'background.paper', zIndex: isDragging ? 1 : 'auto',
         boxShadow: isDragging ? 3 : 0,
@@ -28,8 +28,8 @@ function SortableAnswer({ item, position, disabled }: { item: Item; position: nu
         '&.Mui-disabled': { opacity: 0.6 },
         '&.Mui-focusVisible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 },
       }}>
-      <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>{item.label}</Typography>
       <DragIndicator aria-hidden="true" sx={{ flexShrink: 0, color: 'text.secondary' }} />
+      <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>{item.label}</Typography>
     </ButtonBase>
   </Box>;
 }

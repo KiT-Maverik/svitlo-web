@@ -5,6 +5,8 @@ import { Box, ButtonBase, Stack, Typography, useTheme } from '@mui/material';
 import type { InteractionProps } from './interaction-props';
 import { uk } from './messages';
 
+const visuallyHidden = { position: 'absolute', width: 1, height: 1, p: 0, m: -1, overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 } as const;
+
 type Point = { x: number; y: number };
 type Anchors = { left: Record<string, Point>; right: Record<string, Point> };
 const curve = (a: Point, b: Point) => {
@@ -58,7 +60,7 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
   const connections = Object.entries(value).filter(([a, b]) => anchors.left[a] && anchors.right[b]);
   connections.sort(([a], [b]) => Number(a === hovered) - Number(b === hovered));
   return <Stack spacing={2} sx={{ alignItems: 'center', width: '100%' }}>
-    <Typography id={hint} variant="body2" sx={{ textAlign: 'center' }}>{uk.matchingHint}</Typography>
+    <Typography id={hint} variant="body2" sx={visuallyHidden}>{uk.matchingHint}</Typography>
     <Box ref={root} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) { setPending(null); setPointer(null); } }} role="group" aria-label={question.prompt} aria-describedby={hint}
       onKeyDown={event => { if (event.key === 'Escape') { setPending(null); setPointer(null); } }}
       onPointerMove={event => { if (!locked && pending && root.current) { const rect = root.current.getBoundingClientRect(); setPointer({ x: event.clientX - rect.left, y: event.clientY - rect.top }); } }}
@@ -84,7 +86,7 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
           const mid = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
           const selected = hovered === leftId && !locked;
           const name = `${uk.removeConnection}: ${question.left.find(i => i.id === leftId)?.label} — ${question.right.find(i => i.id === rightId)?.label}`;
-          return <g key={leftId} role={locked ? undefined : 'button'} tabIndex={locked ? undefined : 0} aria-label={name}
+          return <g key={leftId} style={{ outline: 'none' }} role={locked ? undefined : 'button'} tabIndex={locked ? undefined : 0} aria-label={name}
             onPointerEnter={() => { if (!locked) setHovered(leftId); }} onPointerLeave={() => setHovered(null)}
             onFocus={() => setHovered(leftId)} onBlur={() => setHovered(null)}
             onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); remove(leftId); } }}>
@@ -100,6 +102,6 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
         {!locked && pending && anchors.left[pending] && pointer && <path data-preview="true" d={curve(anchors.left[pending], pointer)} fill="none" stroke="currentColor" strokeWidth={2} strokeDasharray="5 4" />}
       </Box>
     </Box>
-    <Typography role="status" variant="body2">{locked ? '' : pending ? `${uk.matchingChooseTarget}: ${question.left.find(i => i.id === pending)?.label}` : announcement}</Typography>
+    <Typography role="status" variant="body2" sx={visuallyHidden}>{locked ? '' : pending ? `${uk.matchingChooseTarget}: ${question.left.find(i => i.id === pending)?.label}` : announcement}</Typography>
   </Stack>;
 }

@@ -169,7 +169,9 @@ test('matching previews curves, replaces endpoints and deletes links with keyboa
   await match.getByRole('button', { name: 'Париж', exact: true }).click();
   await expect(link).toHaveCount(0);
   const replacement = match.getByRole('button', { name: 'Видалити зв’язок: Франція — Париж', exact: true });
-  await replacement.focus(); await page.keyboard.press('Enter');
+  await replacement.focus();
+  expect(await replacement.evaluate(node => getComputedStyle(node).outlineStyle)).toBe('none');
+  await page.keyboard.press('Enter');
   await expect(replacement).toHaveCount(0);
   await match.getByRole('button', { name: 'Україна', exact: true }).click();
   await page.keyboard.press('Escape');
@@ -259,8 +261,15 @@ test('icon controls keep accessible names and reduced motion disables choice and
   const flag = choice.getByRole('button', { name: /^Flag:/ });
   await expect(flag).toHaveText('');
   const card = await choice.boundingBox(), icon = await flag.boundingBox();
-  expect(card && icon && card.x + card.width - icon.x - icon.width).toBeLessThan(24);
-  expect(card && icon && card.y + card.height - icon.y - icon.height).toBeLessThan(24);
+  expect(card && icon && card.x + card.width - icon.x - icon.width).toBeLessThan(36);
+  const panel = choice.locator('[data-question-actions]');
+  await expect(panel.locator('[data-action-zone="left"]').getByRole('button', { name: 'Скинути', exact: true })).toBeVisible();
+  await expect(panel.locator('[data-action-zone="right"]').getByRole('button', { name: /^Flag:/ })).toBeVisible();
+  const check = await panel.locator('[data-action-zone="center"]').getByRole('button').boundingBox();
+  expect(Math.abs(check!.x + check!.width / 2 - (card!.x + card!.width / 2))).toBeLessThan(2);
+  expect(Math.abs(resetBounds!.y + resetBounds!.height / 2 - (icon!.y + icon!.height / 2))).toBeLessThan(2);
+  const ordering = page.getByRole('region', { name: /Упорядкуйте етапи/ }).locator('ol button').first();
+  expect(await ordering.evaluate(node => node.querySelector('svg')!.getBoundingClientRect().right <= node.querySelector('span')!.getBoundingClientRect().left)).toBe(true);
   const blocks = page.getByRole('region', { name: /Складіть рівність для суми/ });
   await blocks.getByRole('button', { name: 'Додати: 1 (1)', exact: true }).click();
   const chip = blocks.getByRole('button', { name: 'Повернути: 1 (1)', exact: true });
