@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
+import Fade from '@mui/material/Fade';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -61,7 +62,13 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
       }} />
 
       <Box sx={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
-        {(open || settingsOpen) && <Box component="button" aria-label="Закрити бічну панель" onClick={() => { setOpen(false); setSettingsOpen(false); }} sx={{ position: 'absolute', inset: 0, border: 0, bgcolor: 'rgba(16, 37, 63, .25)', zIndex: 1100, cursor: 'pointer' }} />}
+        <Fade in={open || settingsOpen} timeout={{ enter: 225, exit: 195 }} unmountOnExit>
+          <Box component="button" aria-label="Закрити бічну панель" tabIndex={-1} onClick={() => { setOpen(false); setSettingsOpen(false); }} sx={{
+            position: 'absolute', inset: 0, border: 0, bgcolor: 'rgba(16, 37, 63, .25)', zIndex: 1100, cursor: 'pointer',
+            pointerEvents: open || settingsOpen ? 'auto' : 'none',
+            '@media (prefers-reduced-motion: reduce)': { transition: 'none !important' },
+          }} />
+        </Fade>
         <Drawer
           variant="persistent"
           open={open}
