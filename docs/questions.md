@@ -74,7 +74,7 @@ UI-написи винесені до `messages.ts`; проєкт наразі �
 - `npm run build` — production build.
 - `npx playwright install --with-deps chromium`, `npm run test:e2e` після build — основні сценарії для всіх семи типів, keyboard, mobile і desktop.
 
-GitHub Actions виконує цей самий набір перевірок для PR. E2E запускає production server; використовує ButtonBase перемикачі для вибору відповіді, нативні select/input та @dnd-kit для впорядкування. Артефакти trace зберігаються при помилках.
+GitHub Actions виконує цей самий набір перевірок для PR. E2E запускає production server; використовує ButtonBase перемикачі для вибору відповіді, нативні input та SVG-зв’язки matching та @dnd-kit для впорядкування. Артефакти trace зберігаються при помилках.
 
 
 ## Вигляд і впорядкування
