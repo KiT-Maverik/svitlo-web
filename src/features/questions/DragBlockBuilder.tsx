@@ -9,13 +9,13 @@ import type { Item } from '../../types/questions';
 import { uk } from './messages';
 
 const chipSx = {
-  minHeight: 44, maxWidth: '100%', fontSize: '1rem', cursor: 'grab',
+  height: 'auto', minHeight: 32, alignSelf: 'center', flex: '0 0 auto', bgcolor: 'transparent', maxWidth: '100%', fontSize: '1rem', cursor: 'grab',
   '& .MuiChip-label': { whiteSpace: 'normal', overflowWrap: 'anywhere', overflow: 'visible', textOverflow: 'clip', py: 1 },
   '&:active': { cursor: 'grabbing' },
 };
 function AvailableBlock({ item, index, locked, toggle }: { item: Item; index: number; locked: boolean; toggle: (node: HTMLElement) => void }) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({ id: item.id, disabled: locked });
-  return <Chip component="button" clickable ref={setNodeRef} {...attributes} {...listeners} onKeyDown={undefined} aria-pressed={undefined}
+  return <Chip component="button" clickable variant="outlined" ref={setNodeRef} {...attributes} {...listeners} onKeyDown={undefined} aria-pressed={undefined}
     aria-label={`${uk.add}: ${item.label} (${index + 1})`} label={item.label} disabled={locked} onClick={event => toggle(event.currentTarget)}
     sx={{ ...chipSx, opacity: isDragging ? 0.25 : 1 }} />;
 }
@@ -23,7 +23,7 @@ function SortableBlock({ item, index, locked, toggle }: { item: Item; index: num
   const { attributes, listeners, setNodeRef, isDragging } = useSortable({ id: item.id, disabled: locked });
   return <Chip component="button" clickable ref={setNodeRef} {...attributes} {...listeners}
     aria-label={`${uk.remove}: ${item.label} (${index + 1})`} label={item.label} variant="outlined" disabled={locked} onClick={event => toggle(event.currentTarget)}
-    sx={{ ...chipSx, bgcolor: 'action.selected', opacity: isDragging ? 0.25 : 1 }} />;
+    sx={{ ...chipSx, opacity: isDragging ? 0.25 : 1 }} />;
 }
 function DropZone({ id, label, children, locked }: { id: string; label: string; children: React.ReactNode; locked: boolean }) {
   const { setNodeRef, isOver } = useDroppable({ id, disabled: locked });
@@ -86,7 +86,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
       if (!reducedMotion && container) setDeparture({ item, x: bounds.left - container.left, y: bounds.top - container.top, width: bounds.width, height: bounds.height });
       onChange(selected ? value.filter(v => v !== item.id) : [...value, item.id]);
     };
-    return <Box key={item.id} sx={{ maxWidth: '100%', display: 'flex', animation: !activeId ? 'block-in 140ms ease-in-out both' : 'none', '@keyframes block-in': { from: { opacity: 0, transform: 'scale(.65)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@keyframes block-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.65)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }}>
+    return <Box key={item.id} sx={{ maxWidth: '100%', display: 'flex', alignSelf: 'center', alignItems: 'center', flex: '0 0 auto', animation: !activeId ? 'block-in 140ms ease-in-out both' : 'none', '@keyframes block-in': { from: { opacity: 0, transform: 'scale(.65)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@keyframes block-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.65)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }}>
       {selected ? <SortableBlock item={item} index={index} locked={locked} toggle={toggle} /> : <AvailableBlock item={item} index={index} locked={locked} toggle={toggle} />}
     </Box>;
   };

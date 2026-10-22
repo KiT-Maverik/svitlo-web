@@ -47,9 +47,9 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
   const questionContent = <Typography component="h2" variant="h6" id={heading} sx={{ textAlign: 'center' }}>{question.prompt}</Typography>;
   const answerContent = <Interaction question={question} value={state.answer} onChange={context.setAnswer} disabled={disabled} readOnly={readOnly || state.result !== null} />;
   const actionContent = <>
+    <Tooltip title={uk.reset}><span><IconButton aria-label={uk.reset} disabled={disabled || readOnly} onClick={context.reset}><RestartAlt /></IconButton></span></Tooltip>
     {state.hasChecked ? <Button variant="contained" disabled={disabled || readOnly} onClick={context.retry}>{uk.retry}</Button> :
       <Button id={checkId} variant="contained" disabled={!context.canCheck} onClick={context.check} sx={{ display: props.checkMode === 'on-change' ? 'none' : undefined }}>{uk.check}</Button>}
-    <Tooltip title={uk.reset}><span><IconButton aria-label={uk.reset} disabled={disabled || readOnly} onClick={context.reset} sx={{ border: '1px solid', borderColor: 'divider' }}><RestartAlt /></IconButton></span></Tooltip>
   </>;
   const contents = <>
     <Box id={resultId} tabIndex={-1}>
