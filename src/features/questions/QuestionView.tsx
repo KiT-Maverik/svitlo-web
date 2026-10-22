@@ -1,0 +1,31 @@
+'use client';
+
+import { useId } from 'react';
+import { Box, Stack, Typography } from '@mui/material';
+import type { CheckResult, InteractionProps, QuestionType } from './model';
+import { questionRegistry } from './registry';
+import { QuestionResult } from './QuestionResult';
+
+export type QuestionViewProps = { [K in QuestionType]: InteractionProps<K> & { type: K; result?: CheckResult | null } }[QuestionType];
+// Internal generic implementation; public union rejects mismatched question/value callbacks.
+function TypedView<K extends QuestionType>({ result = null, ...props }: InteractionProps<K> & { result?: CheckResult | null }) {
+  const heading = useId();
+  const Interaction = questionRegistry[props.question.type].Interaction;
+  return <Stack spacing={2}>
+    <Typography component="h2" variant="h6" id={heading}>{props.question.prompt}</Typography>
+    <Box role="group" aria-labelledby={heading}><Interaction {...props} /></Box>
+    <QuestionResult result={result} explanation={props.question.explanation} />
+  </Stack>;
+}
+export function QuestionView(props: QuestionViewProps) {
+  switch (props.type) {
+    case 'single-select': return <TypedView<'single-select'> {...props} />;
+    case 'multiple-select': return <TypedView<'multiple-select'> {...props} />;
+    case 'matching': return <TypedView<'matching'> {...props} />;
+    case 'short-text': return <TypedView<'short-text'> {...props} />;
+    case 'numeric': return <TypedView<'numeric'> {...props} />;
+    case 'ordering': return <TypedView<'ordering'> {...props} />;
+    case 'block-builder': return <TypedView<'block-builder'> {...props} />;
+  }
+}
+export { TypedView as InternalQuestionView };

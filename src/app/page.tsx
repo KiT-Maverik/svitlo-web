@@ -9,7 +9,7 @@ export default function Home() {
           Світло
         </Typography>
 
-        <Button variant="contained">Почати навчання</Button>
+        <Button variant="contained" href="/questions">Інтерактивні запитання</Button>
       </Container>
   );
 }

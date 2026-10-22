@@ -1,0 +1,77 @@
+# Інтерактивні запитання — задача №1
+
+Демонстрація: `/questions` (посилання на головній сторінці). Кожен приклад має незалежний локальний стан. Дані: `src/features/questions/examples.ts`.
+
+## Дані автора
+
+Усі визначення мають `id`, `type`, `prompt`, `explanation`. Це JSON-сумісні дані: без JSX, функцій, React-компонентів. Використовуйте `satisfies Question[]` для перевірки даних TypeScript. Кожне питання й кожен його елемент мають стабільний непорожній ID; написи можуть повторюватись. ID у межах окремого списку унікальні. Питання з даним ID вважається незмінним; при заміні визначення задайте новий ID, щоб скинути спробу.
+
+| type | Поля визначення | value користувача |
+| --- | --- | --- |
+| `single-select` | `options: {id,label}[]`, `correctId` | ID або `null` |
+| `multiple-select` | `options`, `correctIds: string[]` | масив ID |
+| `matching` | `left`, `right`: списки `{id,label}`; `pairs: {id,leftId,rightId}[]` | об’єкт `leftId → rightId` |
+| `short-text` | `acceptedAnswers: string[]`, `normalization: {trim,ignoreCase,collapseWhitespace}` | рядок |
+| `numeric` | `expected: number`, `tolerance: number >= 0`, необов’язковий `unit` | сирий рядок |
+| `ordering` | `items`, `correctOrder: string[]` | впорядкований масив усіх ID |
+| `block-builder` | `blocks`, `acceptedSequences: string[][]` | масив вибраних ID |
+
+Для matching кожен лівий і правий елемент має рівно одну пару. Ordering містить усі елементи рівно один раз. Block-builder може мати зайві блоки та альтернативні допустимі послідовності; кожен блок використовується максимум один раз. Наприклад, два блоки `1` мають різні ID `one-a`, `one-b`; якщо перестановка обох одиниць допустима, автор явно додає обидві послідовності. Повні приклади всіх семи типів наведені в `examples.ts`.
+
+```ts
+import type { Question } from '@/features/questions/model';
+const question = {
+  id: 'sum-v1', type: 'numeric', prompt: 'Скільки буде 2 + 2?',
+  expected: 4, tolerance: 0, explanation: '2 + 2 = 4.',
+} satisfies Question;
+```
+
+## Використання
+
+```tsx
+import { QuestionAttempt } from '@/features/questions/QuestionAttempt';
+// Працює також із Server Component: передаємо лише серіалізовані дані.
+<QuestionAttempt question={question} />
+```
+
+`QuestionAttempt` керує відповіддю, перевіркою та кнопками. Кожен результат (включно з incomplete/invalid) блокує редагування до «Спробувати ще раз». Повторна спроба зберігає введене та прибирає результат. «Скинути» відновлює початкове значення й прибирає результат: порожнє введення/вибір; для ordering — початковий порядок усіх елементів. `disabled` і `readOnly` блокують взаємодію й кнопки керування.
+
+Для власного контролера використовуйте керований `QuestionView` у Client Component:
+
+```tsx
+const [value, setValue] = useState('');
+<QuestionView type="numeric" question={question} value={value}
+  onChange={setValue} result={result} readOnly={result !== null} />
+```
+
+`QuestionViewProps` — discriminated union з корельованими `type`, `question`, `value`, `onChange`; помилкові поєднання відхиляє TypeScript. View лише відображає переданий результат: блокування після перевірки — відповідальність зовнішнього контролера. Окремі взаємодії не знають про уроки чи прогрес. `QuestionResult` відповідає за доступне текстове повідомлення та пояснення; пояснення відображається лише після correct/incorrect.
+
+## Перевірка
+
+`check.ts` не імпортує React чи DOM. `checkers` — типізований реєстр чистих функцій; `checkAnswer({question, answer: {type, value}})` — корельований публічний API. Визначення правила перевірки зберігається окремо від стану відповіді й коду UI.
+
+Результати: `{status:'correct'}`, `{status:'incorrect'}`, `{status:'incomplete',reason}` або `{status:'invalid',reason}`. Немає часткових балів. Порожні відповіді, незавершені matching/ordering і правильні префікси block-builder — incomplete. Непорожня множина multiple-select уже оцінюється як остаточний вибір. Інші неуспішні допустимі послідовності блоків — incorrect. Невідомі/повторені ID, некоректні числа та порушені авторські інваріанти — invalid.
+
+Текст: кожна нормалізація вмикається явно; collapseWhitespace замінює послідовність Unicode-пробільних символів одним пробілом, ignoreCase застосовує `toLowerCase`, trim обрізає краї. Немає нечіткого порівняння, автоматичної транслітерації чи Unicode-нормалізації.
+
+Числа: десяткова крапка/кома, знак і пробіли лише на краях; `,5` допустиме. Порожній рядок не стає нулем; немає часткового parse, експонент, hex, Infinity чи роздільників тисяч. `1,234` означає десяткове 1.234. Межі абсолютної похибки включні з мінімальною поправкою на IEEE-754 округлення; нульова похибка вимагає точного числового збігу. Одиниця — лише підпис, без конвертації.
+
+## Додавання типу
+
+1. Додайте поля в `DefinitionMap` і форму відповіді в `AnswerMap` (`model.ts`).
+2. Додайте чистий checker у `checkers` і гілку `checkAnswer`; додайте unit-тести.
+3. Створіть керований компонент `InteractionProps<'new-type'>` з `value/onChange`, disabled/readOnly.
+4. Зареєструйте `Interaction`, `check`, `initial` у `questionRegistry` і додайте гілки в `QuestionView` / `QuestionAttempt`. Типізовані реєстри вимагають повного набору ключів.
+5. Додайте дані прикладу й браузерний сценарій.
+
+UI-написи винесені до `messages.ts`; проєкт наразі не має механізму локалізації. Текст ніколи не використовується як ID. Обмеження першої версії: одна послідовність блоків з переносом рядка, без drag-and-drop, бекенду, збереження прогресу, AI-перевірки та інтервального повторення. JSON із зовнішніх недовірених джерел потребуватиме окремої runtime-схеми валідації: TypeScript перевіряє авторські дані під час розробки, checkers перевіряють інваріанти вже типізованих визначень.
+
+## Перевірки
+
+- `npm run typecheck` — Next route types та TypeScript, включно з негативними compile-time прикладами `tests/types.ts`.
+- `npm test` — Node test runner; TypeScript компілює чистий модуль і тести до ігнорованого `.test-build` (без нового unit-фреймворку).
+- `npm run lint` — ESLint.
+- `npm run build` — production build.
+- `npx playwright install --with-deps chromium`, `npm run test:e2e` після build — основні сценарії для всіх семи типів, keyboard, mobile і desktop.
+
+GitHub Actions виконує цей самий набір перевірок для PR. E2E запускає production server; використовує нативні radio/checkbox/select/button без drag-and-drop. Артефакти trace зберігаються при помилках.
