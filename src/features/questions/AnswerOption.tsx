@@ -25,7 +25,7 @@ export function AnswerOption({ label, selected, onToggle, disabled = false }: {
       '&.Mui-disabled': { opacity: 0.6 },
       '&.Mui-focusVisible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 },
     }}>
-    <Box component="span" aria-hidden="true" sx={{ position: 'relative', width: 24, height: 24, flexShrink: 0, color: selected ? 'primary.main' : 'text.secondary', transition: 'color 180ms ease-in-out', '& svg': { position: 'absolute', inset: 0, transition: 'opacity 180ms ease-in-out, transform 180ms ease-in-out, visibility 180ms' } }}>
+    <Box component="span" aria-hidden="true" sx={{ position: 'relative', width: 24, height: 24, flexShrink: 0, color: selected ? 'primary.main' : 'text.secondary', transition: 'color 180ms ease-in-out', '& svg': { position: 'absolute', inset: 0, transition: 'opacity 180ms ease-in-out, transform 180ms ease-in-out, visibility 180ms' }, '@media (prefers-reduced-motion: reduce)': { transition: 'none', '& svg': { transition: 'none' } } }}>
       <RadioButtonUnchecked sx={{ opacity: selected ? 0 : 1, visibility: selected ? 'hidden' : 'visible', transform: selected ? 'scale(.8)' : 'scale(1)' }} />
       <RadioButtonChecked className="answer-selected" sx={{ opacity: selected && !(showRemove && !disabled) ? 1 : 0, visibility: selected && !(showRemove && !disabled) ? 'visible' : 'hidden', transform: selected ? 'scale(1)' : 'scale(.8)' }} />
       <Close className="answer-remove" sx={{ opacity: selected && showRemove && !disabled ? 1 : 0, visibility: selected && showRemove && !disabled ? 'visible' : 'hidden', transform: showRemove ? 'rotate(0deg) scale(1)' : 'rotate(-45deg) scale(.8)' }} />

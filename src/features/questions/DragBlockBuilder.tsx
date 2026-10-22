@@ -10,7 +10,7 @@ import { uk } from './messages';
 
 const chipSx = {
   minHeight: 44, maxWidth: '100%', fontSize: '1rem', cursor: 'grab',
-  '& .MuiChip-label': { whiteSpace: 'normal', overflowWrap: 'anywhere', py: 1 },
+  '& .MuiChip-label': { whiteSpace: 'normal', overflowWrap: 'anywhere', overflow: 'visible', textOverflow: 'clip', py: 1 },
   '&:active': { cursor: 'grabbing' },
 };
 function AvailableBlock({ item, index, locked, toggle }: { item: Item; index: number; locked: boolean; toggle: (node: HTMLElement) => void }) {
@@ -128,7 +128,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
         {available.map(item => renderBlock(item, false))}
         {preview?.zone === 'bank' && placeholder}
       </DropZone>
-      <DragOverlay dropAnimation={null}>{activeItem ? <Chip aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, bgcolor: 'background.paper', boxShadow: 3, cursor: 'grabbing' }} /> : null}</DragOverlay>
+      <DragOverlay dropAnimation={null} style={{ margin: 0 }}>{activeItem ? <Chip aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, width: '100%', bgcolor: 'background.paper', boxShadow: 3, cursor: 'grabbing' }} /> : null}</DragOverlay>
     </DndContext>
     {departure && <Box aria-hidden="true" onAnimationEnd={() => setDeparture(null)} sx={{ position: 'absolute', pointerEvents: 'none', m: '0 !important', left: departure.x, top: departure.y, width: departure.width, height: departure.height, animation: 'block-out 140ms ease-in-out both', '@keyframes block-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.65)' } }, '@media (prefers-reduced-motion: reduce)': { display: 'none' } }}><Chip label={departure.item.label} sx={{ ...chipSx, width: '100%' }} /></Box>}
   </Stack>;
