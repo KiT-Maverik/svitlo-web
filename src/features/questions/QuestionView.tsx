@@ -11,9 +11,9 @@ export type QuestionViewProps = { [K in QuestionType]: InteractionProps<K> & { t
 function TypedView<K extends QuestionType>({ result = null, ...props }: InteractionProps<K> & { result?: CheckResult | null }) {
   const heading = useId();
   const Interaction = questionRegistry[props.question.type].Interaction;
-  return <Stack spacing={2}>
-    <Typography component="h2" variant="h6" id={heading}>{props.question.prompt}</Typography>
-    <Box role="group" aria-labelledby={heading}><Interaction {...props} /></Box>
+  return <Stack spacing={2} sx={{ alignItems: 'center' }}>
+    <Typography component="h2" variant="h6" id={heading} sx={{ textAlign: 'center' }}>{props.question.prompt}</Typography>
+    <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={heading}><Interaction {...props} /></Box>
     <QuestionResult result={result} explanation={props.question.explanation} />
   </Stack>;
 }

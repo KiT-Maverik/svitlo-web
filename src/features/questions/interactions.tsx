@@ -1,24 +1,26 @@
 'use client';
 
 import { useId, useRef } from 'react';
-import { Box, Button, Checkbox, FormControlLabel, Radio, RadioGroup, Stack, TextField, Typography } from '@mui/material';
+import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 import type { InteractionProps, Item } from './model';
 import { uk } from './messages';
+import { AnswerOption, answerColumnSx } from './AnswerOption';
+export { Ordering } from './Ordering';
 
 export function SingleSelect({ question, value, onChange, disabled, readOnly }: InteractionProps<'single-select'>) {
-  return <RadioGroup aria-label={question.prompt} value={value ?? ''} onChange={(_, id) => { if (!disabled && !readOnly) onChange(id); }}>
-    {question.options.map(item => <FormControlLabel key={item.id} value={item.id} control={<Radio disabled={disabled || readOnly} />} label={item.label} />)}
-  </RadioGroup>;
+  return <Box role="group" aria-label={question.prompt} sx={answerColumnSx}>
+    {question.options.map(item => <AnswerOption key={item.id} label={item.label} selected={value === item.id} disabled={disabled || readOnly} onToggle={() => onChange(value === item.id ? null : item.id)} />)}
+  </Box>;
 }
 export function MultipleSelect({ question, value, onChange, disabled, readOnly }: InteractionProps<'multiple-select'>) {
-  return <Stack role="group" aria-label={question.prompt}>
-    {question.options.map(item => <FormControlLabel key={item.id} label={item.label} control={<Checkbox disabled={disabled || readOnly} checked={value.includes(item.id)} onChange={(_, checked) => onChange(checked ? [...value, item.id] : value.filter(id => id !== item.id))} />} />)}
-  </Stack>;
+  return <Box role="group" aria-label={question.prompt} sx={answerColumnSx}>
+    {question.options.map(item => <AnswerOption key={item.id} label={item.label} selected={value.includes(item.id)} disabled={disabled || readOnly} onToggle={() => onChange(value.includes(item.id) ? value.filter(id => id !== item.id) : [...value, item.id])} />)}
+  </Box>;
 }
 export function Matching({ question, value, onChange, disabled, readOnly }: InteractionProps<'matching'>) {
   const id = useId();
-  return <Stack spacing={2}>
-    {question.left.map((item, index) => <TextField key={item.id} id={`${id}-${index}`} select label={item.label} value={value[item.id] ?? ''} disabled={disabled || readOnly}
+  return <Stack spacing={2} sx={{ alignItems: 'center', width: '100%' }}>
+    {question.left.map((item, index) => <TextField sx={{ width: '100%', maxWidth: 440 }} key={item.id} id={`${id}-${index}`} select label={item.label} value={value[item.id] ?? ''} disabled={disabled || readOnly}
       onChange={e => onChange({ ...value, [item.id]: e.target.value })}
       slotProps={{ select: { native: true }, inputLabel: { shrink: true } }}>
       <option value="">{uk.choose}</option>
@@ -28,40 +30,12 @@ export function Matching({ question, value, onChange, disabled, readOnly }: Inte
 }
 export function ShortText({ value, onChange, disabled, readOnly }: InteractionProps<'short-text'>) {
   const id = useId();
-  return <TextField id={id} fullWidth label={uk.answer} value={value} onChange={e => onChange(e.target.value)} disabled={disabled} slotProps={{ input: { readOnly } }} />;
+  return <TextField sx={{ maxWidth: 440 }} id={id} fullWidth label={uk.answer} value={value} onChange={e => onChange(e.target.value)} disabled={disabled} slotProps={{ input: { readOnly } }} />;
 }
 export function Numeric({ question, value, onChange, disabled, readOnly }: InteractionProps<'numeric'>) {
   const id = useId();
-  return <TextField id={id} fullWidth label={question.unit ? `${uk.answer} (${question.unit})` : uk.answer} value={value} onChange={e => onChange(e.target.value)} disabled={disabled}
+  return <TextField sx={{ maxWidth: 440 }} id={id} fullWidth label={question.unit ? `${uk.answer} (${question.unit})` : uk.answer} value={value} onChange={e => onChange(e.target.value)} disabled={disabled}
     helperText={uk.numberFormat} slotProps={{ input: { readOnly }, htmlInput: { inputMode: 'decimal' } }} />;
-}
-export function Ordering({ question, value, onChange, disabled, readOnly }: InteractionProps<'ordering'>) {
-  const buttons = useRef(new Map<string, HTMLButtonElement>());
-  const hint = useId();
-  function move(index: number, offset: number) {
-    const next = [...value];
-    [next[index], next[index + offset]] = [next[index + offset], next[index]];
-    onChange(next);
-    // If the move hits an edge, focus the remaining enabled direction.
-    const destination = index + offset;
-    const direction = destination === 0 ? 'down' : destination === value.length - 1 ? 'up' : offset < 0 ? 'up' : 'down';
-    requestAnimationFrame(() => buttons.current.get(`${value[index]}-${direction}`)?.focus());
-  }
-  return <Stack spacing={1}>
-    <Typography id={hint} variant="body2">{uk.orderingHint}</Typography>
-    <Stack component="ol" aria-label={question.prompt} aria-describedby={hint} spacing={1} sx={{ pl: 3 }}>
-      {value.map((id, index) => <Box component="li" key={id}>
-        <Stack direction="row" useFlexGap spacing={1} sx={{ flexWrap: 'wrap', alignItems: 'center' }}>
-          <Typography sx={{ flex: '1 1 120px', overflowWrap: 'anywhere' }}>{question.items.find(item => item.id === id)?.label ?? id}</Typography>
-          {([-1, 1] as const).map(offset => <Button key={offset} size="small" variant="outlined"
-            ref={el => { if (el) buttons.current.set(`${id}-${offset < 0 ? 'up' : 'down'}`, el); else buttons.current.delete(`${id}-${offset < 0 ? 'up' : 'down'}`); }}
-            aria-label={`${offset < 0 ? uk.up : uk.down}: ${question.items.find(item => item.id === id)?.label} (${index + 1})`}
-            disabled={disabled || readOnly || index + offset < 0 || index + offset >= value.length} onClick={() => move(index, offset)}>{offset < 0 ? uk.up : uk.down}</Button>)}
-        </Stack>
-      </Box>)}
-    </Stack>
-    {!value.length && <Button disabled={disabled || readOnly} onClick={() => onChange(question.items.map(i => i.id))}>{uk.reset}</Button>}
-  </Stack>;
 }
 export function BlockBuilder({ question, value, onChange, disabled, readOnly }: InteractionProps<'block-builder'>) {
   const available = question.blocks.filter(b => !value.includes(b.id));
@@ -70,11 +44,11 @@ export function BlockBuilder({ question, value, onChange, disabled, readOnly }: 
   const heading = useId();
   const hint = useId();
   const label = (item: Item) => `${item.label} (${question.blocks.findIndex(b => b.id === item.id) + 1})`;
-  return <Stack spacing={2}>
-    <Typography id={hint} variant="body2">{uk.blockHint}</Typography>
-    <Box role="group" aria-labelledby={`${heading}-built`} aria-describedby={hint}>
+  return <Stack spacing={2} sx={{ alignItems: 'center', width: '100%' }}>
+    <Typography id={hint} variant="body2" sx={{ textAlign: 'center' }}>{uk.blockHint}</Typography>
+    <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={`${heading}-built`} aria-describedby={hint}>
       <Typography id={`${heading}-built`} variant="subtitle2">{uk.built}</Typography>
-      <Stack direction="row" useFlexGap sx={{ my: 1, minHeight: 48, flexWrap: 'wrap', gap: 1 }}>
+      <Stack direction="row" useFlexGap sx={{ my: 1, minHeight: 48, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }}>
         {!value.length && <Typography color="text.secondary">{uk.emptyBlocks}</Typography>}
         {value.map((id, index) => {
           const block = question.blocks.find(b => b.id === id);
@@ -87,9 +61,9 @@ export function BlockBuilder({ question, value, onChange, disabled, readOnly }: 
       </Stack>
       <Button disabled={disabled || readOnly || !value.length} onClick={() => { onChange([]); requestAnimationFrame(() => addButtons.current.get(question.blocks[0]?.id)?.focus()); }}>{uk.clear}</Button>
     </Box>
-    <Box role="group" aria-labelledby={`${heading}-available`}>
+    <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={`${heading}-available`}>
       <Typography id={`${heading}-available`} variant="subtitle2">{uk.available}</Typography>
-      <Stack direction="row" useFlexGap sx={{ mt: 1, flexWrap: 'wrap', gap: 1 }}>
+      <Stack direction="row" useFlexGap sx={{ mt: 1, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }}>
         {!available.length && <Typography color="text.secondary">{uk.noBlocks}</Typography>}
         {available.map((block, index) => <Button key={block.id} variant="outlined" disabled={disabled || readOnly}
           ref={el => { if (el) addButtons.current.set(block.id, el); else addButtons.current.delete(block.id); }}

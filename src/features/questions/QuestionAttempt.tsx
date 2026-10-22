@@ -19,7 +19,7 @@ function Attempt<K extends QuestionType>({ question, disabled, readOnly }: { que
     <Box ref={resultBox} tabIndex={-1}>
       <InternalQuestionView<K> question={question} value={value} onChange={next => { if (!locked) setValue(next); }} result={result} disabled={disabled} readOnly={readOnly || result !== null} />
     </Box>
-    <Stack direction="row" useFlexGap sx={{ mt: 2, flexWrap: 'wrap', gap: 1 }}>
+    <Stack direction="row" useFlexGap sx={{ mt: 2, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }}>
       {result ? <Button variant="contained" disabled={disabled || readOnly} onClick={edit}>{uk.retry}</Button> :
         <Button ref={checkButton} variant="contained" disabled={disabled || readOnly} onClick={() => { setResult(entry.check(question, value)); requestAnimationFrame(() => resultBox.current?.focus()); }}>{uk.check}</Button>}
       <Button disabled={disabled || readOnly} onClick={() => { setValue(entry.initial(question)); edit(); }}>{uk.reset}</Button>
