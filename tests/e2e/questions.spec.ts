@@ -239,3 +239,29 @@ test('one chip builder supports click, drag, insertion preview, cross-zone moves
   await expect(section.getByRole('button', { name: /^Flag:/ })).toHaveText('');
   await expect(page.getByRole('region', { name: /Складіть рівність для суми/ }).getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
 });
+
+
+test('icon controls keep accessible names and reduced motion disables choice and chip animation', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const choice = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
+  const mercury = choice.getByRole('button', { name: 'Меркурій', exact: true });
+  await mercury.click();
+  expect(await mercury.evaluate(node => getComputedStyle(node).transitionDuration)).toBe('0s');
+  expect(await mercury.locator('.answer-selected').evaluate(node => getComputedStyle(node).transitionDuration)).toBe('0s');
+  const reset = choice.getByRole('button', { name: 'Скинути', exact: true });
+  await expect(reset).toHaveText('');
+  await reset.focus(); await page.keyboard.press('Enter');
+  await expect(mercury).toHaveAttribute('aria-pressed', 'false');
+  const flag = choice.getByRole('button', { name: /^Flag:/ });
+  await expect(flag).toHaveText('');
+  const card = await choice.boundingBox(), icon = await flag.boundingBox();
+  expect(card && icon && card.x + card.width - icon.x - icon.width).toBeLessThan(24);
+  expect(card && icon && card.y + card.height - icon.y - icon.height).toBeLessThan(24);
+  const blocks = page.getByRole('region', { name: /Складіть рівність для суми/ });
+  await blocks.getByRole('button', { name: 'Додати: 1 (1)', exact: true }).click();
+  const chip = blocks.getByRole('button', { name: 'Повернути: 1 (1)', exact: true });
+  await expect(chip).toHaveClass(/MuiChip-root/);
+  expect(await chip.evaluate(node => getComputedStyle(node.parentElement!).animationName)).toBe('none');
+  await blocks.getByRole('button', { name: 'Скинути', exact: true }).click();
+  await expect(blocks.getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
+});

@@ -19,7 +19,7 @@ export function AnswerOption({ label, selected, onToggle, disabled = false }: {
       width: '100%', justifyContent: 'flex-start', gap: 1.5, px: 2, py: 1.5,
       border: '1px solid', borderColor: selected ? 'primary.main' : 'transparent',
       transition: theme => theme.transitions.create(['border-color', 'background-color'], { duration: 180, easing: theme.transitions.easing.easeInOut }),
-      '@media (prefers-reduced-motion: reduce)': { transition: 'none', '& svg': { transition: 'none' } },
+      '@media (prefers-reduced-motion: reduce)': { transition: 'none', '& svg, & span': { transition: 'none' } },
       borderRadius: 1, textAlign: 'left', minHeight: 48,
       '&:not(.Mui-disabled):hover': { bgcolor: 'action.hover' },
       '&.Mui-disabled': { opacity: 0.6 },
