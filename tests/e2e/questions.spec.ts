@@ -60,15 +60,20 @@ test('multiple, matching, short text and numeric validate through shared control
 });
 test('ordering and block builder work using keyboard with duplicate labels and spare blocks', async ({ page }) => {
   const order = page.getByRole('region', { name: /Упорядкуйте етапи/ });
+  await order.scrollIntoViewIfNeeded();
   const rain = order.getByRole('button', { name: 'Опади (1)', exact: true });
   await rain.focus();
   await page.keyboard.press('Space');
+  await expect(rain).toHaveAttribute('aria-pressed', 'true');
+  await expect(order.getByRole('status').filter({ hasText: 'Піднято' })).toBeAttached();
   await page.keyboard.press('ArrowDown');
+  await expect(order.getByRole('status').filter({ hasText: 'Позиція: 2' })).toBeAttached();
   await page.keyboard.press('ArrowDown');
+  await expect(order.getByRole('status').filter({ hasText: 'Позиція: 3' })).toBeAttached();
   await page.keyboard.press('Space');
   await expect(order.getByRole('button', { name: 'Опади (3)', exact: true })).toBeFocused();
   await order.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(order.getByRole('status')).toContainText('Правильно!');
+  await expect(order.getByRole('status').filter({ hasText: 'Правильно!' })).toContainText('Правильно!');
   const blocks = page.getByRole('region', { name: /Складіть рівність/ });
   for (const name of ['Додати: 1 (1)', 'Додати: + (2)', 'Додати: 1 (3)', 'Додати: = (4)', 'Додати: 2 (5)']) {
     await blocks.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
@@ -86,7 +91,7 @@ test('ordering and block builder work using keyboard with duplicate labels and s
 
 test('answer surfaces share the widest width, center the column, and show selected hover affordance', async ({ page }, testInfo) => {
   const section = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
-  const options = section.getByRole('button', { pressed: false });
+  const options = section.locator('button[aria-pressed="false"]');
   const bounds = await options.evaluateAll(nodes => nodes.map(node => {
     const rect = node.getBoundingClientRect();
     return { x: rect.x, width: rect.width, align: getComputedStyle(node).textAlign };
@@ -140,7 +145,7 @@ test('ordering can be dragged by mouse or touch, cancelled with Escape, and lock
   await page.keyboard.press('ArrowUp'); await page.keyboard.press('Escape');
   await expect(moved).toBeVisible();
   await order.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(order.getByRole('status')).toContainText('Правильно!');
+  await expect(order.getByRole('status').filter({ hasText: 'Правильно!' })).toContainText('Правильно!');
   await expect(moved).toBeDisabled();
   await order.getByRole('button', { name: 'Спробувати ще раз' }).click();
   await expect(moved).toBeEnabled();
