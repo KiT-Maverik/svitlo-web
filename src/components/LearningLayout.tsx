@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Box from '@mui/material/Box';
@@ -14,10 +14,20 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import TopNavbar from './navigation/TopNavbar';
+import BottomNavbar from './navigation/BottomNavbar';
 import { topics } from '@/content/topics';
 
 export default function LearningLayout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [open]);
   const pathname = usePathname();
   const currentIndex = topics.findIndex((topic) => topic.href === pathname);
   const current = topics[currentIndex];
@@ -26,21 +36,22 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
 
   return (
     <Box sx={{ height: '100dvh', display: 'grid', gridTemplateRows: 'auto minmax(0, 1fr) auto', overflow: 'hidden', bgcolor: '#fff' }}>
-      <Box component="nav" aria-label="Верхня навігація навчання" sx={{ display: 'flex', alignItems: 'center', gap: 2, px: 2, minHeight: 64, borderBottom: '1px solid #dce4ed', bgcolor: '#f7f9fc', pt: 'env(safe-area-inset-top)' }}>
-        <IconButton aria-label="Відкрити список тем" aria-expanded={open} aria-controls={open ? 'learning-sidebar' : undefined} onClick={() => setOpen(true)}>
-          <MenuIcon />
-        </IconButton>
-        <Typography component={Link} href="/" sx={{ color: '#10253f', fontWeight: 800, fontSize: 20, textDecoration: 'none' }}>Світло</Typography>
-        <Typography sx={{ ml: 'auto', color: '#63758b', fontSize: 14 }}>Навчальна зона</Typography>
-      </Box>
+      <TopNavbar aria-label="Верхня навігація навчання" slots={{
+        left: <>
+          <IconButton aria-label={open ? 'Закрити список тем' : 'Відкрити список тем'} aria-expanded={open} aria-controls={open ? 'learning-sidebar' : undefined} onClick={() => setOpen((value) => !value)}>
+            <MenuIcon />
+          </IconButton>
+          <Typography component={Link} href="/" sx={{ color: '#10253f', fontWeight: 800, fontSize: 20, textDecoration: 'none' }}>Світло</Typography>
+        </>,
+        right: <Typography sx={{ color: '#63758b', fontSize: 14 }}>Навчальна зона</Typography>,
+      }} />
 
       <Box sx={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
+        {open && <Box component="button" aria-label="Закрити панель тем" onClick={() => setOpen(false)} sx={{ position: 'absolute', inset: 0, border: 0, bgcolor: 'rgba(16, 37, 63, .25)', zIndex: 1100, cursor: 'pointer' }} />}
         <Drawer
+          variant="persistent"
           open={open}
-          onClose={() => setOpen(false)}
-          ModalProps={{ disablePortal: true, sx: { position: 'absolute' } }}
           slotProps={{
-            backdrop: { sx: { position: 'absolute' } },
             paper: { sx: { position: 'absolute', width: 'min(320px, calc(100vw - 48px))', height: '100%', display: 'flex', overflow: 'hidden' } },
           }}
         >
@@ -66,11 +77,11 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
         </Box>
       </Box>
 
-      <Box component="nav" aria-label="Нижня навігація навчання" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 1, px: { xs: 1, sm: 2 }, minHeight: 64, borderTop: '1px solid #dce4ed', bgcolor: '#f7f9fc', pb: 'env(safe-area-inset-bottom)' }}>
-        {previous ? <Button component={Link} href={previous.href}>← Назад</Button> : <Button disabled>← Назад</Button>}
-        <Typography sx={{ textAlign: 'center', color: '#63758b', fontSize: 13 }}>{current ? `Тема ${currentIndex + 1} з ${topics.length}` : 'Теми'}</Typography>
-        {next ? <Button component={Link} href={next.href}>Далі →</Button> : <Button disabled>Далі →</Button>}
-      </Box>
+      <BottomNavbar aria-label="Нижня навігація навчання" slots={{
+        left: previous ? <Button component={Link} href={previous.href}>← Назад</Button> : <Button disabled>← Назад</Button>,
+        center: <Typography sx={{ textAlign: 'center', color: '#63758b', fontSize: 13 }}>{current ? `Тема ${currentIndex + 1} з ${topics.length}` : 'Теми'}</Typography>,
+        right: next ? <Button component={Link} href={next.href}>Далі →</Button> : <Button disabled>Далі →</Button>,
+      }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />
     </Box>
   );
 }
