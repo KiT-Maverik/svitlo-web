@@ -59,3 +59,11 @@ test('a global cap prevents unlimited submissions with spoofed client addresses'
   for (let i = 0; i < 30; i++) assert.equal((await handler(request(input(`request-global-1234-${i}`), { 'x-forwarded-for': `address-${i}` }))).status, 201);
   assert.equal((await handler(request(input('request-global-1234-31'), { 'x-forwarded-for': 'new-address' }))).status, 429);
 });
+
+test('same-origin checks use HTTP Host when Next normalizes the internal request URL', async () => {
+  const handler = createReportHandler({ config: () => ({ enabled: false }), resolveTarget });
+  const make = (origin: string) => new Request('http://localhost:3000/api/reports', { method: 'POST', headers: { host: '127.0.0.1:3000', origin, 'content-type': 'application/json' }, body: JSON.stringify(input()) });
+  assert.equal((await handler(make('http://127.0.0.1:3000'))).status, 503);
+  assert.equal((await handler(make('http://attacker.test'))).status, 403);
+  assert.equal((await handler(make('https://127.0.0.1:3000'))).status, 403);
+});

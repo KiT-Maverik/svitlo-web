@@ -17,7 +17,10 @@ export function createReportHandler(deps: Dependencies) {
   const requests = new Map<string, { fingerprint: string; expires: number; result: Promise<{ status: number; body: unknown }> }>();
   return async function POST(request: Request): Promise<Response> {
     const origin = request.headers.get('origin');
-    if (!origin || origin !== new URL(request.url).origin) return error('Надсилати повідомлення можна лише зі сторінки Світла.', 403);
+    // Next may normalize request.url to its internal listen address; Host is the browser-facing authority.
+    const url = new URL(request.url);
+    const expectedOrigin = `${url.protocol}//${request.headers.get('host') ?? url.host}`;
+    if (!origin || origin !== expectedOrigin) return error('Надсилати повідомлення можна лише зі сторінки Світла.', 403);
     if (!request.headers.get('content-type')?.toLowerCase().startsWith('application/json')) return error('Очікується JSON-повідомлення.', 415);
     if (Number(request.headers.get('content-length')) > 12000) return error('Повідомлення завелике.', 413);
     let input: ReportInput | null;
