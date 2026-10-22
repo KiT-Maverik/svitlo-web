@@ -40,3 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 Open `/questions` for seven independently controlled examples. See [authoring and API documentation](docs/questions.md) for data definitions, checks, extension points and validation commands.
 
 Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Domain contracts and module augmentation live in `src/types/questions`.
+
+## Workspaces and content reports
+
+Open `/student`, `/teacher`, `/admin/lessons` and `/lessons/light`. Dashboards and CRUD mutation ports are explicit prototypes. Flag forms use `/api/reports`; configure server-only env from `.env.example` to enable GitHub issue delivery. See [implementation and CRUD plan](docs/workspaces.md).
