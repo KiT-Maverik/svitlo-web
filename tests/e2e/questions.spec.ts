@@ -65,7 +65,7 @@ test('ordering and block builder work using keyboard with duplicate labels and s
   await rain.focus();
   await page.keyboard.press('Space');
   await expect(rain).toHaveAttribute('aria-pressed', 'true');
-  await expect(order.getByRole('status').filter({ hasText: 'Піднято' })).toBeAttached();
+  await expect(order.getByRole('status').filter({ hasText: 'Позиція: 1' })).toBeAttached();
   await page.keyboard.press('ArrowDown');
   await expect(order.getByRole('status').filter({ hasText: 'Позиція: 2' })).toBeAttached();
   await page.keyboard.press('ArrowDown');

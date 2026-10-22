@@ -40,7 +40,7 @@ export function Ordering({ question, value, onChange, disabled, readOnly }: Inte
     useSensor(MouseSensor, { activationConstraint: { distance: 5 } }),
     // A short hold starts dragging; moving before the hold allows ordinary scrolling.
     useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 8 } }),
-    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates, scrollBehavior: 'auto' }),
   );
   const label = (itemId: string | number) => question.items.find(item => item.id === itemId)?.label ?? String(itemId);
   return <Stack spacing={2} sx={{ alignItems: 'center', maxWidth: '100%' }}>
