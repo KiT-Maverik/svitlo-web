@@ -1,9 +1,9 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Locator } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => { await page.goto('/questions'); });
 test('single choice keyboard cycle locks, retries retain, reset clears; examples are independent', async ({ page }) => {
   const section = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
-  await expect(page.getByRole('region')).toHaveCount(7);
+  await expect(page.getByRole('region')).toHaveCount(8);
   await expect(section.getByText('Пояснення:', { exact: false })).toHaveCount(0);
   const earth = section.getByRole('button', { name: 'Земля', exact: true });
   await earth.focus(); await page.keyboard.press('Space');
@@ -34,15 +34,13 @@ test('multiple, matching, short text and numeric validate through shared control
   await expect(multi.getByRole('status')).toContainText('Правильно!');
   const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
   await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(match.getByRole('status')).toContainText('неповна');
+  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toContainText('неповна');
   await match.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  const ua = match.getByRole('combobox', { name: 'Україна' });
-  await ua.focus(); await page.keyboard.press('k'); // Selection also verified via native select API below.
-  await ua.selectOption('kyiv');
-  await expect(match.getByRole('combobox', { name: 'Франція' }).locator('option[value="kyiv"]')).toBeDisabled();
-  await match.getByRole('combobox', { name: 'Франція' }).selectOption('paris');
+  for (const name of ['Україна', 'Київ', 'Франція', 'Париж']) {
+    await match.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
+  }
   await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(match.getByRole('status')).toContainText('Правильно!');
+  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
   const text = page.getByRole('region', { name: /Як називається/ });
   await text.getByRole('textbox').fill('  ФОТОСИНТЕЗ  ');
   await text.getByRole('button', { name: 'Перевірити', exact: true }).click();
@@ -74,7 +72,7 @@ test('ordering and block builder work using keyboard with duplicate labels and s
   await expect(order.getByRole('button', { name: 'Опади (3)', exact: true })).toBeFocused();
   await order.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(order.getByRole('status').filter({ hasText: 'Правильно!' })).toContainText('Правильно!');
-  const blocks = page.getByRole('region', { name: /Складіть рівність/ });
+  const blocks = page.getByRole('region', { name: /Складіть рівність для/ });
   for (const name of ['Додати: 1 (1)', 'Додати: + (2)', 'Додати: 1 (3)', 'Додати: = (4)', 'Додати: 2 (5)']) {
     await blocks.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
   }
@@ -107,6 +105,9 @@ test('answer surfaces share the widest width, center the column, and show select
   const mercury = section.getByRole('button', { name: 'Меркурій', exact: true });
   await mercury.click();
   if (testInfo.project.name === 'desktop') {
+    await expect(mercury.locator('.answer-selected')).toBeVisible();
+    await expect(mercury.locator('.answer-remove')).toBeHidden();
+    await page.mouse.move(0, 0);
     await mercury.hover();
     await expect(mercury.locator('.answer-remove')).toBeVisible();
     await expect(mercury.locator('.answer-selected')).toBeHidden();
@@ -149,4 +150,83 @@ test('ordering can be dragged by mouse or touch, cancelled with Escape, and lock
   await expect(moved).toBeDisabled();
   await order.getByRole('button', { name: 'Спробувати ще раз' }).click();
   await expect(moved).toBeEnabled();
+});
+
+test('matching previews curves, replaces endpoints and deletes links with keyboard or hover cross', async ({ page }, testInfo) => {
+  const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
+  await match.getByRole('button', { name: 'Україна', exact: true }).click();
+  if (testInfo.project.name === 'desktop') {
+    const right = await match.getByRole('button', { name: 'Париж', exact: true }).boundingBox();
+    if (!right) throw new Error('No matching target');
+    await page.mouse.move(right.x - 15, right.y + right.height / 2);
+    await expect(match.locator('path[data-preview]')).toHaveCount(1);
+  }
+  await match.getByRole('button', { name: 'Париж', exact: true }).click();
+  const link = match.getByRole('button', { name: 'Видалити зв’язок: Україна — Париж', exact: true });
+  await expect(link).toBeAttached();
+  await match.getByRole('button', { name: 'Франція', exact: true }).click();
+  await match.getByRole('button', { name: 'Париж', exact: true }).click();
+  await expect(link).toHaveCount(0);
+  const replacement = match.getByRole('button', { name: 'Видалити зв’язок: Франція — Париж', exact: true });
+  await replacement.focus(); await page.keyboard.press('Enter');
+  await expect(replacement).toHaveCount(0);
+  await match.getByRole('button', { name: 'Україна', exact: true }).click();
+  await page.keyboard.press('Escape');
+  await match.getByRole('button', { name: 'Київ', exact: true }).click();
+  await expect(match.locator('path[data-connection]')).toHaveCount(0);
+  await match.getByRole('button', { name: 'Україна', exact: true }).click();
+  await match.getByRole('button', { name: 'Київ', exact: true }).click();
+  const correct = match.getByRole('button', { name: 'Видалити зв’язок: Україна — Київ', exact: true });
+  await match.screenshot({ path: testInfo.outputPath('matching.png') });
+  if (testInfo.project.name === 'desktop') {
+    await correct.locator('path[data-connection]').hover();
+    await expect(correct.locator('circle')).toBeVisible();
+    await correct.locator('circle').click();
+  } else { await correct.focus(); await page.keyboard.press('Space'); }
+  await expect(correct).toHaveCount(0);
+});
+
+test('drag block builder remains independent and supports cross-zone moves and sorting', async ({ page }, testInfo) => {
+  const section = page.getByRole('region', { name: 'Складіть рівність перетягуванням блоків: сума двох одиниць.' });
+  await section.scrollIntoViewIfNeeded();
+  const built = section.getByRole('group', { name: 'Складена відповідь', exact: true });
+  const addOne = section.getByRole('button', { name: 'Додати: 1 (1)', exact: true });
+  async function drag(source: Locator, target: Locator) {
+    const a = await source.boundingBox(), b = await target.boundingBox();
+    if (!a || !b) throw new Error('Missing block drag bounds');
+    const x = a.x + a.width / 2, y = a.y + a.height / 2;
+    const tx = b.x + b.width / 2, ty = b.y + b.height / 2;
+    if (testInfo.project.name === 'mobile') {
+      const session = await page.context().newCDPSession(page);
+      await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
+      await page.waitForTimeout(250);
+      for (let step = 1; step <= 10; step++) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x + (tx - x) * step / 10, y: y + (ty - y) * step / 10 }] });
+      await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+      await session.detach();
+    } else {
+      await page.mouse.move(x, y); await page.mouse.down();
+      await page.mouse.move(tx, ty, { steps: 12 }); await page.mouse.up();
+    }
+  }
+  await drag(addOne, built);
+  await expect(section.getByRole('button', { name: 'Повернути: 1 (1)', exact: true })).toBeVisible();
+  for (const name of ['Додати: 1 (3)', 'Додати: + (2)', 'Додати: = (4)', 'Додати: 2 (5)']) await section.getByRole('button', { name, exact: true }).click();
+  if (testInfo.project.name === 'desktop') {
+    await drag(section.getByRole('button', { name: 'Повернути: + (2)', exact: true }), section.getByRole('button', { name: 'Повернути: 1 (3)', exact: true }));
+  } else {
+    const plus = section.getByRole('button', { name: 'Повернути: + (2)', exact: true });
+    await plus.focus(); await page.keyboard.press('Space');
+    await expect(plus).toHaveAttribute('aria-pressed', 'true');
+    await page.keyboard.press('ArrowLeft');
+    await page.keyboard.press('Space');
+  }
+  await expect(built.getByRole('button')).toHaveText(['1', '+', '1', '=', '2']);
+  await section.screenshot({ path: testInfo.outputPath('drag-blocks.png') });
+  await section.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  await expect(section.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
+  await expect(built.getByRole('button').first()).toBeDisabled();
+  await section.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await section.getByRole('button', { name: 'Очистити відповідь', exact: true }).click();
+  await expect(built.getByRole('button')).toHaveCount(0);
+  await expect(page.getByRole('region', { name: /Складіть рівність для суми/ }).getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
 });

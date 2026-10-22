@@ -1,75 +1,10 @@
 'use client';
 
-import { useId, useRef } from 'react';
-import { Box, Button, Stack, TextField, Typography } from '@mui/material';
-import type { InteractionProps, Item } from './model';
-import { uk } from './messages';
-import { AnswerOption, answerColumnSx } from './AnswerOption';
+// Compatibility exports; each interaction has its own implementation file.
+export { SingleSelect } from './SingleSelect';
+export { MultipleSelect } from './MultipleSelect';
+export { ShortText } from './ShortText';
+export { Numeric } from './Numeric';
+export { Matching } from './Matching';
 export { Ordering } from './Ordering';
-
-export function SingleSelect({ question, value, onChange, disabled, readOnly }: InteractionProps<'single-select'>) {
-  return <Box role="group" aria-label={question.prompt} sx={answerColumnSx}>
-    {question.options.map(item => <AnswerOption key={item.id} label={item.label} selected={value === item.id} disabled={disabled || readOnly} onToggle={() => onChange(value === item.id ? null : item.id)} />)}
-  </Box>;
-}
-export function MultipleSelect({ question, value, onChange, disabled, readOnly }: InteractionProps<'multiple-select'>) {
-  return <Box role="group" aria-label={question.prompt} sx={answerColumnSx}>
-    {question.options.map(item => <AnswerOption key={item.id} label={item.label} selected={value.includes(item.id)} disabled={disabled || readOnly} onToggle={() => onChange(value.includes(item.id) ? value.filter(id => id !== item.id) : [...value, item.id])} />)}
-  </Box>;
-}
-export function Matching({ question, value, onChange, disabled, readOnly }: InteractionProps<'matching'>) {
-  const id = useId();
-  return <Stack spacing={2} sx={{ alignItems: 'center', width: '100%' }}>
-    {question.left.map((item, index) => <TextField sx={{ width: '100%', maxWidth: 440 }} key={item.id} id={`${id}-${index}`} select label={item.label} value={value[item.id] ?? ''} disabled={disabled || readOnly}
-      onChange={e => onChange({ ...value, [item.id]: e.target.value })}
-      slotProps={{ select: { native: true }, inputLabel: { shrink: true } }}>
-      <option value="">{uk.choose}</option>
-      {question.right.map(right => <option key={right.id} value={right.id} disabled={Object.entries(value).some(([leftId, rightId]) => leftId !== item.id && rightId === right.id)}>{right.label}</option>)}
-    </TextField>)}
-  </Stack>;
-}
-export function ShortText({ value, onChange, disabled, readOnly }: InteractionProps<'short-text'>) {
-  const id = useId();
-  return <TextField sx={{ maxWidth: 440 }} id={id} fullWidth label={uk.answer} value={value} onChange={e => onChange(e.target.value)} disabled={disabled} slotProps={{ input: { readOnly } }} />;
-}
-export function Numeric({ question, value, onChange, disabled, readOnly }: InteractionProps<'numeric'>) {
-  const id = useId();
-  return <TextField sx={{ maxWidth: 440 }} id={id} fullWidth label={question.unit ? `${uk.answer} (${question.unit})` : uk.answer} value={value} onChange={e => onChange(e.target.value)} disabled={disabled}
-    helperText={uk.numberFormat} slotProps={{ input: { readOnly }, htmlInput: { inputMode: 'decimal' } }} />;
-}
-export function BlockBuilder({ question, value, onChange, disabled, readOnly }: InteractionProps<'block-builder'>) {
-  const available = question.blocks.filter(b => !value.includes(b.id));
-  const addButtons = useRef(new Map<string, HTMLButtonElement>());
-  const removeButtons = useRef(new Map<string, HTMLButtonElement>());
-  const heading = useId();
-  const hint = useId();
-  const label = (item: Item) => `${item.label} (${question.blocks.findIndex(b => b.id === item.id) + 1})`;
-  return <Stack spacing={2} sx={{ alignItems: 'center', width: '100%' }}>
-    <Typography id={hint} variant="body2" sx={{ textAlign: 'center' }}>{uk.blockHint}</Typography>
-    <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={`${heading}-built`} aria-describedby={hint}>
-      <Typography id={`${heading}-built`} variant="subtitle2">{uk.built}</Typography>
-      <Stack direction="row" useFlexGap sx={{ my: 1, minHeight: 48, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }}>
-        {!value.length && <Typography color="text.secondary">{uk.emptyBlocks}</Typography>}
-        {value.map((id, index) => {
-          const block = question.blocks.find(b => b.id === id);
-          if (!block) return null;
-          return <Button key={id} variant="contained" disabled={disabled || readOnly}
-            ref={el => { if (el) removeButtons.current.set(id, el); else removeButtons.current.delete(id); }}
-            aria-label={`${uk.remove}: ${label(block)}`} sx={{ maxWidth: '100%', overflowWrap: 'anywhere' }}
-            onClick={() => { onChange(value.filter(v => v !== id)); requestAnimationFrame(() => (removeButtons.current.get(value[index + 1] ?? value[index - 1]) ?? addButtons.current.get(id))?.focus()); }}>{block.label}</Button>;
-        })}
-      </Stack>
-      <Button disabled={disabled || readOnly || !value.length} onClick={() => { onChange([]); requestAnimationFrame(() => addButtons.current.get(question.blocks[0]?.id)?.focus()); }}>{uk.clear}</Button>
-    </Box>
-    <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={`${heading}-available`}>
-      <Typography id={`${heading}-available`} variant="subtitle2">{uk.available}</Typography>
-      <Stack direction="row" useFlexGap sx={{ mt: 1, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }}>
-        {!available.length && <Typography color="text.secondary">{uk.noBlocks}</Typography>}
-        {available.map((block, index) => <Button key={block.id} variant="outlined" disabled={disabled || readOnly}
-          ref={el => { if (el) addButtons.current.set(block.id, el); else addButtons.current.delete(block.id); }}
-          aria-label={`${uk.add}: ${label(block)}`} sx={{ maxWidth: '100%', overflowWrap: 'anywhere' }}
-          onClick={() => { onChange([...value, block.id]); requestAnimationFrame(() => (addButtons.current.get(available[index + 1]?.id ?? available[index - 1]?.id) ?? removeButtons.current.get(block.id))?.focus()); }}>{block.label}</Button>)}
-      </Stack>
-    </Box>
-  </Stack>;
-}
+export { BlockBuilder } from './BlockBuilder';

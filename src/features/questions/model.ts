@@ -8,7 +8,7 @@ export interface DefinitionMap {
   'short-text': { acceptedAnswers: string[]; normalization: TextNormalization };
   numeric: { expected: number; tolerance: number; unit?: string };
   ordering: { items: Item[]; correctOrder: string[] };
-  'block-builder': { blocks: Item[]; acceptedSequences: string[][] };
+  'block-builder': { blocks: Item[]; acceptedSequences: string[][]; interaction?: 'click' | 'drag' };
 }
 export interface AnswerMap {
   'single-select': string | null;

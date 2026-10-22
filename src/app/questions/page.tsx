@@ -9,7 +9,7 @@ export default function QuestionsPage() {
     <Stack spacing={3}>
       <Link href="/">← Світло</Link>
       <Typography component="h1" variant="h4">Інтерактивні запитання</Typography>
-      <Typography>Сім типів запитань. Дайте відповідь, перевірте результат і спробуйте ще раз. Кожен приклад незалежний.</Typography>
+      <Typography>Сім типів запитань і два варіанти складання блоків. Дайте відповідь, перевірте результат і спробуйте ще раз. Кожен приклад незалежний.</Typography>
       {exampleQuestions.map(question => <QuestionAttempt key={question.id} question={question} />)}
     </Stack>
   </Container>;

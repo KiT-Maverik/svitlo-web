@@ -1,5 +1,5 @@
 import type { Question } from './model';
-export const exampleQuestions = [
+export const exampleQuestions: Question[] = [
   { id: 'planet', type: 'single-select', prompt: 'Яка планета найближча до Сонця?', options: [{ id: 'earth', label: 'Земля' }, { id: 'mercury', label: 'Меркурій' }, { id: 'venus', label: 'Венера' }], correctId: 'mercury', explanation: 'Меркурій — перша планета від Сонця.' },
   { id: 'primes', type: 'multiple-select', prompt: 'Оберіть усі прості числа.', options: [{ id: 'two', label: '2' }, { id: 'four', label: '4' }, { id: 'five', label: '5' }], correctIds: ['two', 'five'], explanation: '2 і 5 мають лише два додатні дільники. 4 ділиться ще й на 2.' },
   { id: 'capitals', type: 'matching', prompt: 'Поєднайте країни та столиці.', left: [{ id: 'ua', label: 'Україна' }, { id: 'fr', label: 'Франція' }], right: [{ id: 'paris', label: 'Париж' }, { id: 'kyiv', label: 'Київ' }], pairs: [{ id: 'ua-capital', leftId: 'ua', rightId: 'kyiv' }, { id: 'fr-capital', leftId: 'fr', rightId: 'paris' }], explanation: 'Столиця України — Київ, Франції — Париж.' },
@@ -8,3 +8,6 @@ export const exampleQuestions = [
   { id: 'water', type: 'ordering', prompt: 'Упорядкуйте етапи колообігу води, починаючи з випаровування.', items: [{ id: 'rain', label: 'Опади' }, { id: 'evaporation', label: 'Випаровування' }, { id: 'cloud', label: 'Конденсація' }], correctOrder: ['evaporation', 'cloud', 'rain'], explanation: 'Вода випаровується, пара конденсується, потім випадають опади.' },
   { id: 'addition', type: 'block-builder', prompt: 'Складіть рівність для суми двох одиниць. Блок «3» зайвий.', blocks: [{ id: 'one-a', label: '1' }, { id: 'plus', label: '+' }, { id: 'one-b', label: '1' }, { id: 'equals', label: '=' }, { id: 'two', label: '2' }, { id: 'three', label: '3' }], acceptedSequences: [['one-a', 'plus', 'one-b', 'equals', 'two'], ['one-b', 'plus', 'one-a', 'equals', 'two']], explanation: '1 + 1 = 2. Обидва блоки «1» мають власні ID; їх можна поміняти місцями.' },
 ] satisfies Question[];
+const addition = exampleQuestions.find(q => q.type === 'block-builder');
+if (addition?.type === 'block-builder') exampleQuestions.push({ ...addition, id: 'addition-drag', interaction: 'drag', prompt: 'Складіть рівність перетягуванням блоків: сума двох одиниць.' });
+

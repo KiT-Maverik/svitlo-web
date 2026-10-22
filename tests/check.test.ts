@@ -98,7 +98,7 @@ test('malformed authored definitions are invalid rather than incorrectly graded'
 test('JSON round-trip preserves definitions and pure dispatcher works without React', () => {
   assert.deepEqual(JSON.parse(JSON.stringify(exampleQuestions)), exampleQuestions);
   assert.equal(checkAnswer({ question: n, answer: { type: 'numeric', value: '10' } }).status, 'correct');
-  assert.equal(exampleQuestions.length, 7);
+  assert.equal(exampleQuestions.length, 8);
   assert.equal(text.type, 'short-text');
   assert.equal(numeric.type, 'numeric');
 });
