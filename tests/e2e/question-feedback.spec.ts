@@ -1,0 +1,91 @@
+import { test, expect } from '@playwright/test';
+
+test('choice review distinguishes wrong, missed and selected correct options and clears on retry', async ({ page }, testInfo) => {
+  await page.goto('/questions');
+  const single = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
+  const earth = single.getByRole('button', { name: 'Земля', exact: true });
+  const mercury = single.getByRole('button', { name: 'Меркурій', exact: true });
+  await earth.click();
+  await expect(single.locator('[data-feedback]')).toHaveCount(0);
+  await single.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  await expect(earth).toHaveAttribute('data-feedback', 'incorrect');
+  await expect(mercury).toHaveAttribute('data-feedback', 'missed');
+  await expect(mercury).toHaveAttribute('aria-pressed', 'false');
+  await expect(single.getByText('Правильна відповідь — не обрано', { exact: true })).toBeVisible();
+  await expect(earth).toBeDisabled();
+  await single.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(single.locator('[data-feedback]')).toHaveCount(0);
+  await expect(earth).toHaveAttribute('aria-pressed', 'true');
+  await mercury.click(); await single.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  await expect(mercury).toHaveAttribute('data-feedback', 'correct');
+  await single.getByRole('button', { name: 'Скинути', exact: true }).click();
+  await expect(single.locator('[data-feedback]')).toHaveCount(0);
+  await expect(mercury).toHaveAttribute('aria-pressed', 'false');
+  const multi = page.getByRole('region', { name: 'Оберіть усі прості числа.' });
+  await multi.getByRole('button', { name: '2', exact: true }).click();
+  await multi.getByRole('button', { name: '4', exact: true }).click();
+  await multi.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  for (const [name, state] of [['2', 'correct'], ['4', 'incorrect'], ['5', 'missed']]) {
+    const option = multi.getByRole('button', { name, exact: true });
+    await expect(option).toHaveAttribute('data-feedback', state); await expect(option).toBeDisabled();
+  }
+  await multi.screenshot({ path: testInfo.outputPath('multiple-review.png') });
+});
+
+test('independent feedback flags never reveal grading before check and hidden results stay locked', async ({ page }) => {
+  await page.goto('/questions/api');
+  const q = page.getByRole('region', { name: 'Стани: Яка планета найближча до Сонця?' });
+  await page.getByRole('checkbox', { name: 'Показувати помилки', exact: true }).uncheck();
+  await page.getByRole('checkbox', { name: 'Показувати правильні відповіді', exact: true }).uncheck();
+  await q.getByRole('button', { name: 'Земля', exact: true }).click();
+  await expect(q.locator('[data-feedback]')).toHaveCount(0);
+  await q.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  await expect(q.locator('[data-feedback]')).toHaveCount(0);
+  await expect(q.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
+  await expect(q.getByText('Пояснення:', { exact: false })).toHaveCount(0);
+  await page.getByRole('checkbox', { name: 'Показувати помилки', exact: true }).check();
+  await expect(q.getByRole('button', { name: 'Земля', exact: true })).toHaveAttribute('data-feedback', 'incorrect');
+  await expect(q.getByRole('button', { name: 'Меркурій', exact: true })).not.toHaveAttribute('data-feedback');
+  await page.getByRole('checkbox', { name: 'Показувати помилки', exact: true }).uncheck();
+  await page.getByRole('checkbox', { name: 'Показувати правильні відповіді', exact: true }).check();
+  await expect(q.getByRole('button', { name: 'Земля', exact: true })).not.toHaveAttribute('data-feedback');
+  await expect(q.getByRole('button', { name: 'Меркурій', exact: true })).toHaveAttribute('data-feedback', 'missed');
+  await page.getByRole('checkbox', { name: 'Показувати результати прикладів', exact: true }).uncheck();
+  await expect(q.locator('[data-feedback]')).toHaveCount(0);
+  await expect(q.getByRole('button', { name: 'Меркурій', exact: true })).toBeDisabled();
+  await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(q.getByRole('button', { name: 'Земля', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  await expect(q.getByRole('button', { name: 'Меркурій', exact: true })).toBeEnabled();
+});
+
+test('matching requires all pairs, reviews the submitted pairing and restores authored order on retry', async ({ page }, testInfo) => {
+  await page.goto('/questions');
+  const q = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
+  const check = q.getByRole('button', { name: 'Перевірити', exact: true });
+  const right = q.locator('[data-match-side="right"]');
+  await expect(check).toBeDisabled();
+  for (const name of ['Україна', 'Париж']) await q.getByRole('button', { name, exact: true }).click();
+  await expect(check).toBeDisabled();
+  for (const name of ['Франція', 'Київ']) await q.getByRole('button', { name, exact: true }).click();
+  await expect(check).toBeEnabled(); await check.click();
+  await expect(q.locator('button[data-feedback="incorrect"]')).toHaveCount(4);
+  await expect(q.locator('svg > g[data-feedback="incorrect"]')).toHaveCount(2);
+  await expect(q.getByRole('button', { name: /^Видалити зв’язок:/ })).toHaveCount(0);
+  await q.screenshot({ path: testInfo.outputPath('matching-wrong.png') });
+  await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  for (const name of ['Київ', 'Україна', 'Париж', 'Франція']) await q.getByRole('button', { name, exact: true }).click();
+  await expect(right).toHaveText(['Париж', 'Київ']);
+  await check.click();
+  await expect(right).toHaveText(['Київ', 'Париж']);
+  await expect(q.locator('button[data-feedback="correct"]')).toHaveCount(4);
+  await expect(q.locator('svg > g[data-feedback="correct"]')).toHaveCount(2);
+  const leftY = await q.locator('[data-match-side="left"]').evaluateAll(nodes => nodes.map(n => { const r = n.getBoundingClientRect(); return r.y + r.height / 2; }));
+  const rightY = await right.evaluateAll(nodes => nodes.map(n => { const r = n.getBoundingClientRect(); return r.y + r.height / 2; }));
+  expect(rightY).toEqual(leftY);
+  await q.screenshot({ path: testInfo.outputPath('matching-correct.png') });
+  await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(right).toHaveText(['Париж', 'Київ']);
+  await expect(q.locator('[data-feedback]')).toHaveCount(0);
+  await q.getByRole('button', { name: 'Скинути', exact: true }).click();
+  await expect(check).toBeDisabled();
+});

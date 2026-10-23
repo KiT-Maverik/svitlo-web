@@ -1,5 +1,6 @@
 'use client';
 
+import { FeedbackDemo } from './FeedbackDemo';
 import { useState } from 'react';
 import { Box, Button, Checkbox, FormControlLabel, Paper, Stack, TextField, Typography } from '@mui/material';
 import type { NumericQuestion, SingleSelectQuestion } from '../../types/questions';
@@ -43,5 +44,6 @@ export function ApiDemo() {
           {context.children}
         </>,
       }} />
+    <FeedbackDemo />
   </Stack>;
 }

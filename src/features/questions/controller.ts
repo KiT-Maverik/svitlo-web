@@ -1,3 +1,4 @@
+import { isGraded } from './feedback';
 import type { AnswerMap, CheckResult, QuestionOf, QuestionType } from '../../types/questions';
 import type { AttemptEvent, AttemptOptions, AttemptState } from './attempt-model';
 
@@ -32,7 +33,9 @@ export function createQuestionController<K extends QuestionType>(question: Quest
       else handlers.onIncorrect?.({ ...structuredClone(snapshot), result: structuredClone(result) });
     }
   }
+  const isReadyToCheck = () => question.type !== 'matching' || isGraded(checker(question, state.answer));
   return {
+    isReadyToCheck,
     getSnapshot: () => state,
     subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; },
     configure: (next: AttemptOptions<K>) => { options = next; },
@@ -48,7 +51,7 @@ export function createQuestionController<K extends QuestionType>(question: Quest
         if (result.status === 'correct' || result.status === 'incorrect') evaluate(next, result);
       }
     },
-    check: () => evaluate(state.answer),
+    check: () => { if (isReadyToCheck()) evaluate(state.answer); },
     retry: () => {
       if (options.disabled || options.readOnly || !state.hasChecked) return;
       commit({ ...state, result: null, hasChecked: false, attemptNumber: state.attemptNumber + 1 });

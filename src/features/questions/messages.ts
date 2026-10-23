@@ -1,4 +1,5 @@
 export const uk = {
+  optionCorrect: 'Правильна відповідь', optionIncorrect: 'Неправильна відповідь', optionMissed: 'Правильна відповідь — не обрано',
   checkResult: 'Результат перевірки',
   matchingHint: 'Оберіть елемент у будь-якій колонці, потім пару в протилежній. Escape скасовує незавершений зв’язок.',
   matchingChooseTarget: 'Оберіть пару в протилежній колонці для', connections: 'Зв’язки між елементами',

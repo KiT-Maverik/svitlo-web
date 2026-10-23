@@ -19,7 +19,7 @@ function sx(defaults: SxProps<Theme>, extra?: SxProps<Theme>): SxProps<Theme> {
   return [...(Array.isArray(defaults) ? defaults : [defaults]), ...(Array.isArray(extra) ? extra : extra ? [extra] : [])];
 }
 function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
-  const { question, disabled, readOnly, slots, slotProps, showResult = true, showExplanation = true } = props;
+  const { question, disabled, readOnly, slots, slotProps, showResult = true, showExplanation = true, showErrors = true, showCorrectAnswers = true } = props;
   const entry = questionRegistry[question.type];
   const [controller] = useState(() => createQuestionController(question, entry.initial(question), entry.check, props));
   useLayoutEffect(() => controller.configure(props), [controller, props]);
@@ -33,7 +33,7 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
     target?.focus();
   });
   const context: QuestionSlotContext<K> = {
-    ...state, answer: structuredClone(state.answer), result: structuredClone(state.result), question, props, isLocked, canCheck: !isLocked,
+    ...state, answer: structuredClone(state.answer), result: structuredClone(state.result), question, props, isLocked, canCheck: !isLocked && controller.isReadyToCheck(),
     setAnswer: answer => { controller.setAnswer(answer); if (controller.getSnapshot().result) focusResult(); },
     check: () => { controller.check(); focusResult(); },
     retry: () => { controller.retry(); focusEditor(); },
@@ -46,7 +46,7 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
   const actionProps = resolve(slotProps?.actions, context);
   const rootProps = resolve(slotProps?.root, context);
   const questionContent = <Typography component="h2" variant="h6" id={heading} sx={{ textAlign: 'center' }}>{question.prompt}</Typography>;
-  const answerContent = <Interaction question={question} value={state.answer} onChange={context.setAnswer} disabled={disabled} readOnly={readOnly || state.result !== null} />;
+  const answerContent = <Interaction question={question} value={state.answer} onChange={context.setAnswer} result={showResult ? state.result : null} showErrors={showErrors} showCorrectAnswers={showCorrectAnswers} disabled={disabled} readOnly={readOnly || state.result !== null} />;
   const resetContent = <Tooltip title={uk.reset}><span><IconButton aria-label={uk.reset} disabled={disabled || readOnly} onClick={context.reset}><RestartAlt /></IconButton></span></Tooltip>;
   const checkContent = state.hasChecked ? <Button variant="contained" disabled={disabled || readOnly} onClick={context.retry}>{uk.retry}</Button> :
     <Button id={checkId} variant="contained" disabled={!context.canCheck} onClick={context.check} sx={{ display: props.checkMode === 'on-change' ? 'none' : undefined }}>{uk.check}</Button>;
@@ -64,7 +64,7 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
         <Box {...answerProps} id={answersId} role="group" aria-label={question.prompt} sx={sx({ width: '100%', textAlign: 'center' }, answerProps?.sx)}>
           {slots?.answers ? slots.answers({ ...context, children: answerContent }) : answerContent}
         </Box>
-        <QuestionResult result={showResult ? state.result : null} explanation={question.explanation} showExplanation={showExplanation} />
+        <QuestionResult result={showResult ? state.result : null} explanation={question.explanation} showExplanation={showExplanation && showCorrectAnswers} showErrors={showErrors} />
       </Stack>
     </Box>
     <Stack direction="row" useFlexGap {...actionProps} sx={sx({ mt: 2, flexWrap: 'wrap', justifyContent: 'center', gap: 1 }, actionProps?.sx)}>

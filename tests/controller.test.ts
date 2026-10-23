@@ -65,3 +65,18 @@ test('callback reentry preserves checked event snapshots and never auto-checks a
   c.configure({ checkMode: 'on-change', onChange: () => c.reset() });
   c.setAnswer('a'); assert.equal(c.getSnapshot().result, null); assert.equal(c.getSnapshot().answer, null);
 });
+
+
+test('matching cannot be checked via controller or custom slot until every unique valid pair is present', () => {
+  const q = { id: 'm', type: 'matching' as const, prompt: '?', explanation: '.', left: [{ id: 'a', label: 'A' }, { id: 'b', label: 'B' }], right: [{ id: 'x', label: 'X' }, { id: 'y', label: 'Y' }], pairs: [{ id: 'ax', leftId: 'a', rightId: 'x' }, { id: 'by', leftId: 'b', rightId: 'y' }] };
+  const calls: string[] = [];
+  const c = createQuestionController(q, {}, checkers.matching, { onCheck: e => calls.push(e.result.status) });
+  const drafts: Record<string, string>[] = [{}, { a: 'x' }, { a: 'x', b: 'x' }, { a: 'x', b: 'foreign' }];
+  for (const answer of drafts) {
+    c.setAnswer(answer); assert.equal(c.isReadyToCheck(), false); c.check(); assert.equal(c.getSnapshot().result, null);
+  }
+  assert.deepEqual(calls, []);
+  c.setAnswer({ a: 'y', b: 'x' }); assert.equal(c.isReadyToCheck(), true); c.check();
+  assert.deepEqual(calls, ['incorrect']); c.retry(); assert.equal(c.getSnapshot().result, null);
+  c.reset(); assert.equal(c.isReadyToCheck(), false);
+});

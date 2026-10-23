@@ -33,9 +33,7 @@ test('multiple, matching, short text and numeric validate through shared control
   await multi.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(multi.getByRole('status')).toContainText('Правильно!');
   const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
-  await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toContainText('неповна');
-  await match.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(match.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
   for (const name of ['Україна', 'Київ', 'Франція', 'Париж']) {
     await match.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
   }

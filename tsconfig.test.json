@@ -11,6 +11,7 @@
   },
   "include": [
     "tests/check.test.ts",
+    "tests/feedback.test.ts",
     "src/features/questions/model.ts",
     "src/features/questions/check.ts",
     "src/features/questions/examples.ts",

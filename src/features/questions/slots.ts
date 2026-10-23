@@ -1,3 +1,4 @@
+import type { FeedbackVisibility } from './feedback';
 import type { ReactNode } from 'react';
 import type { BoxProps, PaperProps, StackProps } from '@mui/material';
 import type { QuestionOf, QuestionType } from '../../types/questions';
@@ -31,7 +32,7 @@ export interface QuestionSlotProps<K extends QuestionType> {
   answers?: SlotProps<BoxProps, K>;
   actions?: SlotProps<StackProps, K>;
 }
-export interface QuestionAttemptOptions<K extends QuestionType> extends AttemptOptions<K> {
+export interface QuestionAttemptOptions<K extends QuestionType> extends AttemptOptions<K>, FeedbackVisibility {
   /** Optional content for the three regions of the shared actions panel. */
   actionSlots?: { left?: QuestionSlot<K>; center?: QuestionSlot<K>; right?: QuestionSlot<K> };
   showResult?: boolean;

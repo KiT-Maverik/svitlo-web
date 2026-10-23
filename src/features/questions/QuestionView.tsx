@@ -14,8 +14,8 @@ function TypedView<K extends QuestionType>({ result = null, ...props }: Interact
   const Interaction = questionRegistry[props.question.type].Interaction;
   return <Stack spacing={2} sx={{ alignItems: 'center' }}>
     <Typography component="h2" variant="h6" id={heading} sx={{ textAlign: 'center' }}>{props.question.prompt}</Typography>
-    <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={heading}><Interaction {...props} /></Box>
-    <QuestionResult result={result} explanation={props.question.explanation} />
+    <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={heading}><Interaction {...props} result={result} readOnly={props.readOnly || Boolean(result)} /></Box>
+    <QuestionResult result={result} explanation={props.question.explanation} showErrors={props.showErrors} showExplanation={props.showCorrectAnswers !== false} />
   </Stack>;
 }
 export function QuestionView(props: QuestionViewProps) {
