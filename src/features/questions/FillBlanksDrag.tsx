@@ -2,10 +2,13 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { alpha, Box, Chip, Stack } from '@mui/material';
+import CheckOutlined from '@mui/icons-material/CheckOutlined';
+import CloseOutlined from '@mui/icons-material/CloseOutlined';
 import { DndContext, DragOverlay, PointerSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
 import type { InteractionProps } from './interaction-props';
 import type { Item } from '../../types/questions';
 import { isGraded } from './feedback';
+import { CorrectAnswerBlock } from './CorrectAnswerBlock';
 
 const returnAnimationMs = 180;
 const chipSx = { height: 'auto', minHeight: 32, maxWidth: '100%', bgcolor: 'background.paper', '& .MuiChip-label': { whiteSpace: 'normal', overflowWrap: 'anywhere', py: 0.25 } };
@@ -34,13 +37,15 @@ function DraggableBlock({ item, id, disabled, faded = false, entering = false, e
     onClick?.();
   }} sx={{ ...chipSx, cursor: disabled ? 'default' : 'grab', opacity: faded || isDragging ? 0.35 : 1, animation: exiting ? `fill-blank-return-out ${returnAnimationMs}ms ease-in-out both` : entering ? `fill-blank-return-in ${returnAnimationMs}ms cubic-bezier(0.2, 0.8, 0.2, 1) both` : 'none', '@keyframes fill-blank-return-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.72)' } }, '@keyframes fill-blank-return-in': { from: { opacity: 0, transform: 'scale(.72)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' }, '&:active': { cursor: 'grabbing' } }} />;
 }
-function BlankDrop({ id, item, preview, exiting = false, disabled, feedback, active, onRemove }: { id: string; item?: Item; preview?: Item; exiting?: boolean; disabled: boolean; feedback?: 'correct' | 'incorrect'; active: boolean; onRemove?: () => void }) {
+function BlankDrop({ id, item, preview, correctAnswer, showCorrectAnswer = false, exiting = false, graded, disabled, feedback, active, onRemove }: { id: string; item?: Item; preview?: Item; correctAnswer?: string; showCorrectAnswer?: boolean; exiting?: boolean; graded: boolean; disabled: boolean; feedback?: 'correct' | 'incorrect'; active: boolean; onRemove?: () => void }) {
   const { setNodeRef, isOver } = useDroppable({ id, disabled });
   const shownItem = isOver && preview ? preview : item;
   const showingPreview = Boolean(shownItem && preview && shownItem.id === preview.id);
-  return <Box ref={setNodeRef} component="span" sx={{ display: 'inline-flex', verticalAlign: 'middle', alignItems: 'center', justifyContent: 'center', minWidth: 96, minHeight: 40, mx: 0.5, px: shownItem ? 0 : 1, border: '1px dashed', borderColor: feedback === 'correct' ? 'success.main' : feedback === 'incorrect' ? 'error.main' : isOver ? 'primary.main' : 'divider', borderRadius: 1, bgcolor: feedback === 'correct' ? theme => alpha(theme.palette.success.main, 0.12) : feedback === 'incorrect' ? theme => alpha(theme.palette.error.main, 0.12) : isOver ? 'action.hover' : 'transparent', transition: 'background-color 180ms ease-in-out, border-color 180ms ease-in-out' }}>
-    {shownItem ? <DraggableBlock item={shownItem} id={shownItem.id} disabled={disabled} faded={active || showingPreview} exiting={exiting} onClick={!showingPreview ? onRemove : undefined} /> : <Box component="span" aria-hidden="true" sx={{ width: 56, height: 1, bgcolor: 'text.disabled' }} />}
+  const answerBlock = <Box ref={setNodeRef} component="span" sx={{ display: 'inline-flex', verticalAlign: 'middle', alignItems: 'center', justifyContent: 'center', minWidth: 96, minHeight: 40, mx: 0.5, px: shownItem ? 0.75 : 1, position: 'relative', border: '1px dashed', borderColor: feedback === 'correct' ? 'success.main' : feedback === 'incorrect' ? 'error.main' : isOver ? 'primary.main' : 'divider', borderRadius: 1, bgcolor: feedback === 'correct' ? theme => alpha(theme.palette.success.main, 0.12) : feedback === 'incorrect' ? theme => alpha(theme.palette.error.main, 0.12) : isOver ? 'action.hover' : 'transparent', transition: 'background-color 180ms ease-in-out, border-color 180ms ease-in-out' }}>
+    {shownItem ? graded ? <Box component="span" sx={{ lineHeight: 1.4, overflowWrap: 'anywhere' }}>{shownItem.label}</Box> : <DraggableBlock item={shownItem} id={shownItem.id} disabled={disabled} faded={active || showingPreview} exiting={exiting} onClick={!showingPreview ? onRemove : undefined} /> : <Box component="span" aria-hidden="true" sx={{ width: 56, height: 1, bgcolor: 'text.disabled' }} />}
+    {graded && feedback ? <Box component="span" role="img" aria-label={feedback === 'correct' ? 'Правильна відповідь' : 'Неправильна відповідь'} sx={{ position: 'absolute', left: '50%', top: 0, zIndex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 22, height: 22, border: '1px solid', borderColor: feedback === 'correct' ? 'success.main' : 'error.main', borderRadius: '50%', bgcolor: 'background.paper', color: feedback === 'correct' ? 'success.main' : 'error.main', transform: 'translate(-50%, -50%)', animation: 'fill-blank-drag-feedback-pop 180ms ease-out both', '@keyframes fill-blank-drag-feedback-pop': { from: { opacity: 0, transform: 'translate(-50%, -50%) scale(.55)' }, to: { opacity: 1, transform: 'translate(-50%, -50%) scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }}>{feedback === 'correct' ? <CheckOutlined sx={{ fontSize: 20 }} /> : <CloseOutlined sx={{ fontSize: 15 }} />}</Box> : null}
   </Box>;
+  return <>{answerBlock}{graded && showCorrectAnswer && correctAnswer ? <CorrectAnswerBlock label={correctAnswer} /> : null}</>;
 }
 function PreviewBlock({ item }: { item: Item }) {
   return <Chip aria-hidden="true" label={item.label} variant="outlined" sx={{ ...chipSx, width: 'max-content', maxWidth: 'min(80vw, 600px)', borderColor: 'divider', color: 'text.primary', opacity: 1, boxShadow: 2, pointerEvents: 'none' }} />;
@@ -107,7 +112,7 @@ export function FillBlanksDrag({ question, value, onChange, disabled, readOnly, 
   return <DndContext id={id} sensors={sensors} onDragStart={({ active }) => setActiveId(String(active.id))} onDragCancel={() => setActiveId(null)} onDragEnd={({ active, over }) => { if (!locked && over) drop(String(active.id), String(over.id)); setActiveId(null); }}>
     <Stack spacing={2} sx={{ alignItems: 'center', width: '100%' }}>
       <Box role="group" aria-label={question.prompt} sx={{ width: '100%', textAlign: 'left', lineHeight: 2.8, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
-        {question.parts.map((part, index) => part.type === 'text' ? <Box component="span" key={`text-${index}`}>{part.text}</Box> : <BlankDrop key={part.id} id={blankTarget(part.id)} item={question.blocks.find(item => item.id === value[part.id])} preview={activeItem} exiting={returning?.blankId === part.id} disabled={locked} feedback={feedbackFor(part.id)} active={activeId === value[part.id]} onRemove={() => { const itemId = value[part.id]; if (itemId) { setBankOrder(order => [...order.filter(id => id !== itemId), itemId]); setReturning({ blankId: part.id, itemId }); } }} />)}
+        {question.parts.map((part, index) => part.type === 'text' ? <Box component="span" key={`text-${index}`}>{part.text}</Box> : <BlankDrop key={part.id} id={blankTarget(part.id)} item={question.blocks.find(item => item.id === value[part.id])} preview={activeItem} correctAnswer={question.blocks.find(item => item.id === question.correctBlocks[part.id])?.label} showCorrectAnswer={isGraded(result) && showCorrectAnswers && value[part.id] !== question.correctBlocks[part.id]} exiting={returning?.blankId === part.id} graded={isGraded(result)} disabled={locked} feedback={feedbackFor(part.id)} active={activeId === value[part.id]} onRemove={() => { const itemId = value[part.id]; if (itemId) { setBankOrder(order => [...order.filter(id => id !== itemId), itemId]); setReturning({ blankId: part.id, itemId }); } }} />)}
       </Box>
       <BlockBank id={bankTarget} items={bankItems} enteringId={returning?.itemId} disabled={locked} />
     </Stack>

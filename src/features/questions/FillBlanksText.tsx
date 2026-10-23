@@ -7,6 +7,7 @@ import CloseOutlined from '@mui/icons-material/CloseOutlined';
 import type { InteractionProps } from './interaction-props';
 import { isGraded } from './feedback';
 import { normalizeText } from './check';
+import { CorrectAnswerBlock } from './CorrectAnswerBlock';
 
 const minWidth = 96;
 const maxWidth = 360;
@@ -36,7 +37,12 @@ export function FillBlanksText({ question, value, onChange, disabled, readOnly, 
     if (!correct && showErrors) return 'incorrect' as const;
     return undefined;
   };
+  const shouldShowCorrectAnswer = (blankId: string) => {
+    if (!graded || !showCorrectAnswers) return false;
+    const answer = value[blankId] ?? '';
+    return !(question.acceptedAnswers[blankId]?.some(expected => normalizeText(expected, question.normalization) === normalizeText(answer, question.normalization)) ?? false);
+  };
   return <Box role="group" aria-label={question.prompt} sx={{ width: '100%', textAlign: 'left', lineHeight: 2.8, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
-    {question.parts.map((part, index) => part.type === 'text' ? <Box component="span" key={`text-${index}`}>{part.text}</Box> : <BlankTextInput key={part.id} id={`${question.id}-${part.id}`} value={value[part.id] ?? ''} onChange={next => onChange({ ...value, [part.id]: next })} disabled={Boolean(disabled)} readOnly={Boolean(readOnly || result)} feedback={feedbackFor(part.id)} />)}
+    {question.parts.map((part, index) => part.type === 'text' ? <Box component="span" key={`text-${index}`}>{part.text}</Box> : <Box component="span" key={part.id}><BlankTextInput id={`${question.id}-${part.id}`} value={value[part.id] ?? ''} onChange={next => onChange({ ...value, [part.id]: next })} disabled={Boolean(disabled)} readOnly={Boolean(readOnly || result)} feedback={feedbackFor(part.id)} />{shouldShowCorrectAnswer(part.id) ? <CorrectAnswerBlock label={question.acceptedAnswers[part.id]?.join(' / ') ?? ''} /> : null}</Box>)}
   </Box>;
 }
