@@ -9,6 +9,17 @@
 .stage { flex: 1; display: flex; flex-direction: column; animation: appear .35s ease both; }
 @keyframes appear { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 .practice, .quiz { width: min(900px, 100%); margin: auto; padding: clamp(24px, 5vw, 56px); }
+.questionProgress { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; width: min(100%, 914px); margin: 0 auto 24px; padding: 0; list-style: none; }
+.questionProgress button { display: block; height: 10px; min-width: 0; border: 0; border-radius: 3px; padding: 0; background: #dbe3ec; cursor: default; user-select: none; transition: background-color .2s, box-shadow .2s; }
+.questionProgress button:not(:disabled) { cursor: pointer; }
+.questionProgress button[data-status=correct] { background: #79b99a; }
+.questionProgress button[data-status=incorrect] { background: #d98989; }
+.questionProgress button[data-status=deferred] { background: #d5ad67; }
+.questionProgress button[data-current=true] { box-shadow: 0 0 0 2px #427fbd; }
+.questionProgress button:not(:disabled):hover { box-shadow: 0 0 0 4px #427fbd33; }
+.questionProgress button:not(:disabled):focus-visible { outline: 2px solid #427fbd; outline-offset: 2px; }
+@media (min-width: 601px) { .questionProgress button { flex: 0 0 40px; } }
+@media (max-width: 600px) { .questionProgress { width: min(100%, 454px); } .questionProgress button { flex: 0 0 40px; } }
 .practice h1, .quiz h1, .finish h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.2; letter-spacing: -.03em; }
 .practice p, .quiz p, .finish p { line-height: 1.75; }
 .eyebrow { color: #687e94; font-size: 12px; font-weight: 700; letter-spacing: .12em; }

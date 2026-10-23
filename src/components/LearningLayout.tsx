@@ -115,9 +115,10 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
 
       <BottomNavbar aria-label="Нижня навігація навчання" slots={{
         center: <>
-          <Button disabled={progress.step === 0} onClick={() => dispatch({ type: 'back' })}>← Назад</Button>
-          <Button disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>Далі →</Button>
+          <Button variant="contained" disabled={progress.step === 0} onClick={() => dispatch({ type: 'back' })}>← Назад</Button>
+          <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>Далі →</Button>
         </>,
+        right: <Button variant="outlined" disabled={progress.step >= 3} onClick={() => dispatch({ type: 'skip' })}>Skip</Button>,
       }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />
     </Box>
   );

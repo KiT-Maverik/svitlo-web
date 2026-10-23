@@ -27,6 +27,7 @@ test('home opens the light lesson and preserves the four-step learning flow', as
   for (const [index, concept] of lightLesson.concepts.entries()) {
     await expect(page.getByRole('heading', { name: concept.question, exact: true })).toBeVisible();
     await page.getByRole('group', { name: 'Варіанти відповіді' }).getByRole('button', { name: concept.choices[concept.correct], exact: true }).click();
+    await page.getByRole('button', { name: 'Перевірити', exact: true }).click();
     await page.getByRole('button', { name: index === lightLesson.concepts.length - 1 ? 'Завершити урок' : 'Наступне питання →', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'Вітаємо, ви завершили роботу з цим уроком!' })).toBeVisible();

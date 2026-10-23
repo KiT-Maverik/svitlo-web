@@ -5,21 +5,21 @@ import { lightLesson } from '@/content/lightLesson';
 import { useLessonProgress } from './LessonProgress';
 import MediumPractice from './MediumPractice';
 import Celebration, { playCelebration } from './Celebration';
+import { QuestionAttempt } from '@/features/questions/QuestionAttempt';
+import { QuestionProgress, type QuestionStatus } from './QuestionProgress';
 import styles from './Lesson.module.css';
 
-export default function LightLesson({ theory }: { theory: ReactNode }) {
+export default function LightLesson({ theory, allowQuestionNavigation = true }: { theory: ReactNode; allowQuestionNavigation?: boolean }) {
   const { progress, dispatch } = useLessonProgress();
   const [cardIndex, setCardIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [remembered, setRemembered] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [choice, setChoice] = useState<number | null>(null);
+  const [questionStatuses, setQuestionStatuses] = useState<QuestionStatus[]>(() => lightLesson.questions.map((_, index) => index === 0 ? 'unanswered' : 'deferred'));
   const [score, setScore] = useState(0);
   const [sound, setSound] = useState(true);
   const cardRef = useRef<HTMLButtonElement>(null);
-  const quizRef = useRef<HTMLHeadingElement>(null);
   const card = lightLesson.concepts[cardIndex];
-  const question = lightLesson.concepts[questionIndex];
   useEffect(() => {
     document.getElementById('learning-content')?.scrollTo({ top: 0 });
   }, [progress.step]);
@@ -30,14 +30,16 @@ export default function LightLesson({ theory }: { theory: ReactNode }) {
     if (cardIndex + 1 === lightLesson.concepts.length) dispatch({ type: 'cardsDone' });
     else { setCardIndex((value) => value + 1); cardRef.current?.focus(); }
   }
-  function nextQuestion() {
-    if (choice === null) return;
-    const result = score + Number(choice === question.correct);
-    setScore(result);
-    if (questionIndex + 1 === lightLesson.concepts.length) {
+  function nextQuestion(index: number) {
+    if (index + 1 === lightLesson.questions.length) {
       dispatch({ type: 'testDone' });
       if (sound) void playCelebration();
-    } else { setQuestionIndex((value) => value + 1); setChoice(null); quizRef.current?.focus(); }
+    } else setQuestionIndex(index + 1);
+  }
+  function navigateQuestion(index: number) {
+    if (!allowQuestionNavigation || index < 0 || index >= lightLesson.questions.length) return;
+    setQuestionIndex(index);
+    setQuestionStatuses(statuses => statuses.map((status, current) => current === index && status === 'deferred' ? 'unanswered' : status));
   }
   return <div className={styles.lesson}>
     <nav className={styles.steps} aria-label="Етапи уроку">
@@ -63,15 +65,18 @@ export default function LightLesson({ theory }: { theory: ReactNode }) {
           {revealed && <button className={`${styles.rating} ${styles.remember}`} aria-label="Пам’ятаю" onClick={() => gradeCard(true)}><span>❯</span><strong>Пам’ятаю</strong></button>}
         </div>
       </section>)}
-      {progress.step === 3 && (progress.testDone ? <Celebration score={score} total={lightLesson.concepts.length} /> : <section className={styles.quiz} aria-labelledby="quiz-question">
-        <p className={styles.eyebrow}>ПЕРЕВІР СЕБЕ · {questionIndex + 1} / {lightLesson.concepts.length}</p>
-        <h1 id="quiz-question" ref={quizRef} tabIndex={-1}>{question.question}</h1>
-        <div className={styles.choices} role="group" aria-label="Варіанти відповіді">
-          {question.choices.map((text, index) => <button key={`${question.id}-${index}`} disabled={choice !== null} data-selected={choice === index} data-correct={choice !== null && question.correct === index} onClick={() => setChoice(index)}>{text}</button>)}
-        </div>
-        {choice !== null && <div className={styles.feedback} role="status"><strong>{choice === question.correct ? 'Правильно!' : 'Цього разу не зовсім.'}</strong><p>{question.answer}</p></div>}
+      {progress.step === 3 && (progress.testDone ? <Celebration score={score} total={lightLesson.questions.length} /> : <section className={styles.quiz} aria-label="Тест">
+        <QuestionProgress className={styles.questionProgress} statuses={questionStatuses} currentIndex={questionIndex} allowNavigation={allowQuestionNavigation} onNavigate={navigateQuestion} />
+        {lightLesson.questions.map((testQuestion, index) => <div key={testQuestion.id} hidden={index !== questionIndex}>
+          <QuestionAttempt question={testQuestion} showErrors showCorrectAnswers showExplanation onCheck={event => {
+            const status = event.result.status === 'correct' ? 'correct' : event.result.status === 'incorrect' ? 'incorrect' : undefined;
+            if (!status) return;
+            const nextStatuses = questionStatuses.map((currentStatus, currentIndex) => currentIndex === index ? status : currentIndex === index + 1 && currentStatus === 'deferred' ? 'unanswered' : currentStatus);
+            setQuestionStatuses(nextStatuses);
+            setScore(nextStatuses.filter(currentStatus => currentStatus === 'correct').length);
+          }} actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === lightLesson.questions.length ? 'Завершити урок' : 'Наступне питання →'}</button> : context.children }} />
+        </div>)}
         <label className={styles.sound}><input type="checkbox" checked={sound} onChange={(event) => setSound(event.target.checked)} /> Звук завершення</label>
-        <button className={styles.primary} disabled={choice === null} onClick={nextQuestion}>{questionIndex + 1 === lightLesson.concepts.length ? 'Завершити урок' : 'Наступне питання →'}</button>
       </section>)}
     </div>
   </div>;

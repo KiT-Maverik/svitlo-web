@@ -1,3 +1,14 @@
+import type { SingleSelectQuestion } from '@/types/questions';
+
+const lightQuestions: SingleSelectQuestion[] = [
+  { id: 'direction', type: 'single-select', prompt: 'Як поширюється світло в прозорому однорідному середовищі?', options: [{ id: 'direction-circle', label: 'По колу.' }, { id: 'direction-linear', label: 'Прямолінійно.' }, { id: 'direction-curve', label: 'Завжди по кривій.' }], correctId: 'direction-linear', explanation: 'У прозорому однорідному середовищі світло поширюється прямолінійно.' },
+  { id: 'ray', type: 'single-select', prompt: 'Що показує світловий промінь?', options: [{ id: 'ray-temperature', label: 'Температуру джерела.' }, { id: 'ray-particle', label: 'Розмір частинки світла.' }, { id: 'ray-direction', label: 'Напрямок поширення світла.' }], correctId: 'ray-direction', explanation: 'Світловий промінь показує напрямок поширення світла.' },
+  { id: 'vacuum', type: 'single-select', prompt: 'Де світло поширюється найшвидше: у вакуумі, повітрі чи воді?', options: [{ id: 'vacuum-space', label: 'У вакуумі.' }, { id: 'vacuum-air', label: 'У повітрі.' }, { id: 'vacuum-water', label: 'У воді.' }], correctId: 'vacuum-space', explanation: 'У вакуумі світло поширюється найшвидше — приблизно 300 000 км/с.' },
+  { id: 'water', type: 'single-select', prompt: 'Як змінюється швидкість світла у воді порівняно з вакуумом?', options: [{ id: 'water-faster', label: 'Збільшується.' }, { id: 'water-same', label: 'Не змінюється.' }, { id: 'water-slower', label: 'Зменшується.' }], correctId: 'water-slower', explanation: 'У воді світло рухається повільніше, ніж у вакуумі: приблизно 225 000 км/с.' },
+  { id: 'air', type: 'single-select', prompt: 'Чи однакова швидкість світла у повітрі та вакуумі?', options: [{ id: 'air-same', label: 'Так, абсолютно однакова.' }, { id: 'air-slower', label: 'Ні, у повітрі трохи повільніше.' }, { id: 'air-faster', label: 'Ні, у повітрі вдвічі швидше.' }], correctId: 'air-slower', explanation: 'У повітрі світло трохи повільніше, ніж у вакуумі. Різниця дуже мала.' },
+  { id: 'shadow', type: 'single-select', prompt: 'Що утворюється за непрозорим предметом, який перекриває світло?', options: [{ id: 'shadow-shadow', label: 'Тінь.' }, { id: 'shadow-source', label: 'Нове джерело світла.' }, { id: 'shadow-vacuum', label: 'Вакуум.' }], correctId: 'shadow-shadow', explanation: 'Непрозорий предмет перекриває світло, тому за ним утворюється тінь.' },
+];
+
 export const lightLesson = {
   id: 'light',
   title: 'Як рухається світло',
@@ -15,6 +26,7 @@ export const lightLesson = {
     { id: 'air', question: 'Чи однакова швидкість світла у повітрі та вакуумі?', answer: 'Ні. У повітрі світло трохи повільніше; різниця дуже мала.', choices: ['Так, абсолютно однакова.', 'Ні, у повітрі трохи повільніше.', 'Ні, у повітрі вдвічі швидше.'], correct: 1 },
     { id: 'shadow', question: 'Що утворюється за непрозорим предметом, який перекриває світло?', answer: 'Тінь.', choices: ['Тінь.', 'Нове джерело світла.', 'Вакуум.'], correct: 0 },
   ],
+  questions: lightQuestions,
 } as const;
 
 export const media = [
