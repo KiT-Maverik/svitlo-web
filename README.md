@@ -48,7 +48,7 @@ Open `/student`, `/teacher`, `/admin/lessons` and `/lessons/light`. Dashboards a
 
 ## Перша тема
 
-Після `npm ci` та `npm run dev` відкрийте `/topics/light` або натисніть «Почати навчання» на головній сторінці.
+Після `npm ci` та `npm run dev` відкрийте `/topics/light` або натисніть «Відкрити урок «Як рухається світло»» на головній сторінці.
 
 - `public/content/topics/light/uk.md` — навчальний текст у Markdown та HTML-примітка.
 - `public/content/topics/light/ray.svg` — ілюстрація.
