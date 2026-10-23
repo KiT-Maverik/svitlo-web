@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useLayoutEffect, useRef, useState } from 'react';
+import { useCallback, useId, useLayoutEffect, useRef, useState } from 'react';
 import { Box, Chip, Stack, Typography, useMediaQuery } from '@mui/material';
 import { closestCenter, DndContext, DragOverlay, type CollisionDetection, type KeyboardCoordinateGetter, KeyboardSensor, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, SortableContext, useSortable } from '@dnd-kit/sortable';
@@ -49,9 +49,16 @@ function SortableBlock({ item, index, locked, toggle }: { item: Item; index: num
     aria-label={`${uk.remove}: ${item.label} (${index + 1})`} label={item.label} variant="outlined" disabled={locked} onClick={event => toggle(event.currentTarget)}
     sx={{ ...chipSx, opacity: isDragging ? 0.25 : 1 }} />;
 }
-function DropZone({ id, label, children, locked, highlighted = false }: { id: string; label: string; children: React.ReactNode; locked: boolean; highlighted?: boolean }) {
+function DropZone({ id, label, children, locked, highlighted = false, onMeasure }: { id: string; label: string; children: React.ReactNode; locked: boolean; highlighted?: boolean; onMeasure?: (rect: DragRect) => void }) {
   const { setNodeRef } = useDroppable({ id, disabled: locked });
-  return <Box ref={setNodeRef} role="group" aria-label={label} sx={{ width: '100%', p: 2, border: '1px dashed', borderColor: highlighted ? 'primary.main' : 'divider', borderRadius: 1, minHeight: 100, transition: theme => theme.transitions.create('border-color', { duration: 180, easing: theme.transitions.easing.easeInOut }) }}>
+  const setRef = useCallback((node: HTMLDivElement | null) => {
+    setNodeRef(node);
+    if (node) {
+      const rect = node.getBoundingClientRect();
+      onMeasure?.({ left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom });
+    }
+  }, [onMeasure, setNodeRef]);
+  return <Box ref={setRef} role="group" aria-label={label} sx={{ width: '100%', p: 2, border: '1px dashed', borderColor: highlighted ? 'primary.main' : 'divider', borderRadius: 1, minHeight: 100, transition: theme => theme.transitions.create('border-color', { duration: 180, easing: theme.transitions.easing.easeInOut }) }}>
     <Typography variant="subtitle2" sx={{ mb: 1, textAlign: 'center' }}>{label}</Typography>
     <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', justifyContent: 'center', gap: 1, minHeight: 44, alignItems: 'center' }}>{children}</Stack>
   </Box>;
@@ -72,6 +79,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
   const [preview, setPreview] = useState<Preview | null>(null);
   const [ghostAnimationKey, setGhostAnimationKey] = useState(0);
   const [sourceRectState, setSourceRectState] = useState<DragRect | null>(null);
+  const [answerZoneRect, setAnswerZoneRect] = useState<DragRect | null>(null);
   const geometry = useRef<DragGeometry | null>(null);
   const sourceRect = useRef<DragRect | null>(null);
   const itemRects = useRef(new Map<string, DragRect>());
@@ -99,12 +107,14 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
       const rect = geometry.current?.get(zone);
       return rect && point.x >= rect.left && point.x <= rect.right && point.y >= rect.top && point.y <= rect.bottom;
     };
-    const source = sourceRect.current;
-    if (source && point.x >= source.left && point.x <= source.right && point.y >= source.top && point.y <= source.bottom) return [{ id: sourceSlotId }];
-    if (contains(bankId)) return [{ id: bankId }];
     const draggingId = String(args.active.id);
     const draggingFromAnswer = value.includes(draggingId);
     const answerRect = geometry.current.get(answerId);
+    const source = sourceRect.current;
+    const sourceTop = draggingFromAnswer && answerRect ? answerRect.top : source?.top;
+    const sourceBottom = draggingFromAnswer && answerRect ? answerRect.bottom : source?.bottom;
+    if (source && sourceTop !== undefined && sourceBottom !== undefined && point.x >= source.left && point.x <= source.right && point.y >= sourceTop && point.y <= sourceBottom) return [{ id: sourceSlotId }];
+    if (contains(bankId)) return [{ id: bankId }];
     const firstId = value[0];
     const firstRect = firstId ? geometry.current.get(firstId) : undefined;
     const lastId = value[value.length - 1];
@@ -160,6 +170,9 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
   const bankInsertion = ghostZone === 'bank'
     ? preview?.zone === 'bank' ? Math.min(preview.index, displayedAvailableBlocks.length) : available.findIndex(item => item.id === activeId)
     : -1;
+  const sourceSlotRect = activeId && sourceRectState
+    ? activeInAnswer && answerZoneRect ? { ...sourceRectState, top: answerZoneRect.top, bottom: answerZoneRect.bottom } : sourceRectState
+    : null;
   const ghost = activeItem ? <AnimatedLayoutItem key={`insertion-ghost-${ghostAnimationKey}`} enabled={!reducedMotion}>
     <Chip data-insertion-preview="true" aria-hidden="true" label={activeItem.label} variant="outlined" sx={{ ...chipSx, borderColor: 'text.disabled', color: 'text.disabled', opacity: 0.45, boxShadow: 1, pointerEvents: 'none', animation: ghostAnimationKey && !reducedMotion ? 'ghost-grow 180ms cubic-bezier(0.2, 0.8, 0.2, 1) both' : 'none', '@keyframes ghost-grow': { from: { opacity: 0, transform: 'scale(.72)' }, to: { opacity: 0.45, transform: 'scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }} />
   </AnimatedLayoutItem> : null;
@@ -207,7 +220,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
         else if (target !== itemId) onChange(arrayMove(value, from, Math.min(dest.index, value.length - 1)));
       }}>
       <SortableContext items={value}>
-        <DropZone id={answerId} label={uk.built} locked={locked || keyboardDrag} highlighted={Boolean(activeId && !value.includes(activeId))}>
+        <DropZone id={answerId} label={uk.built} locked={locked || keyboardDrag} highlighted={Boolean(activeId && !value.includes(activeId))} onMeasure={setAnswerZoneRect}>
           {!value.length && !preview && <Typography color="text.secondary">{uk.emptyBlocks}</Typography>}
           {displayedAnswerBlocks.flatMap((item, index) => index === displayAnswerInsertion ? [ghost, renderBlock(item, true)] : [renderBlock(item, true)])}
           {displayAnswerInsertion === displayedAnswerBlocks.length && ghost}
@@ -218,7 +231,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
         {displayedAvailableBlocks.flatMap((item, index) => index === bankInsertion ? [ghost, renderBlock(item, false)] : [renderBlock(item, false)])}
         {bankInsertion === displayedAvailableBlocks.length && ghost}
       </DropZone>
-      <SourceSlot id={sourceSlotId} rect={activeId ? sourceRectState : null} disabled={locked || keyboardDrag} />
+      <SourceSlot id={sourceSlotId} rect={sourceSlotRect} disabled={locked || keyboardDrag} />
       <DragOverlay dropAnimation={null} style={{ margin: 0 }}>{activeItem ? <Chip aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, width: '100%', bgcolor: 'background.paper', cursor: 'grabbing' }} /> : null}</DragOverlay>
     </DndContext>
     {departure && <Box aria-hidden="true" onAnimationEnd={() => setDeparture(null)} sx={{ position: 'absolute', pointerEvents: 'none', m: '0 !important', left: departure.x, top: departure.y, width: departure.width, height: departure.height, animation: 'block-out 140ms ease-in-out both', '@keyframes block-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.65)' } }, '@media (prefers-reduced-motion: reduce)': { display: 'none' } }}><Chip label={departure.item.label} sx={{ ...chipSx, width: '100%' }} /></Box>}
