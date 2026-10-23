@@ -7,9 +7,10 @@ import MediumPractice from './MediumPractice';
 import Celebration, { playCelebration } from './Celebration';
 import { QuestionAttempt } from '@/features/questions/QuestionAttempt';
 import { QuestionProgress, type QuestionStatus } from './QuestionProgress';
+import { LessonSteps } from './LessonSteps';
 import styles from './Lesson.module.css';
 
-export default function LightLesson({ theory, allowQuestionNavigation = true }: { theory: ReactNode; allowQuestionNavigation?: boolean }) {
+export default function LightLesson({ theory, allowQuestionNavigation = true, allowSectionNavigation = true, showStepNumbers = true }: { theory: ReactNode; allowQuestionNavigation?: boolean; allowSectionNavigation?: boolean; showStepNumbers?: boolean }) {
   const { progress, dispatch } = useLessonProgress();
   const [cardIndex, setCardIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -42,11 +43,7 @@ export default function LightLesson({ theory, allowQuestionNavigation = true }: 
     setQuestionStatuses(statuses => statuses.map((status, current) => current === index && status === 'deferred' ? 'unanswered' : status));
   }
   return <div className={styles.lesson}>
-    <nav className={styles.steps} aria-label="Етапи уроку">
-      {lightLesson.steps.map((step, index) => <button key={step.id} disabled={index > progress.unlocked} aria-current={index === progress.step ? 'step' : undefined} data-complete={index < progress.unlocked || (index === 3 && progress.testDone)} onClick={() => dispatch({ type: 'visit', step: index })}>
-        <span className={styles.segment} /><span>{index + 1}. {step.title}</span>
-      </button>)}
-    </nav>
+    <LessonSteps steps={lightLesson.steps} currentStep={progress.step} unlocked={progress.unlocked} completedStep={progress.testDone ? 3 : undefined} showStepNumbers={showStepNumbers} allowNavigation={allowSectionNavigation} onNavigate={step => dispatch({ type: 'visit', step })} />
     <div key={progress.step} className={styles.stage}>
       {progress.step === 0 && theory}
       {progress.step === 1 && <MediumPractice />}
