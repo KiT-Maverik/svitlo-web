@@ -22,7 +22,7 @@ function SortableAnswer({ item, position, disabled, feedback }: { item: Item; po
     <Typography component="span" aria-hidden="true" sx={{ width: 32, flexShrink: 0, alignSelf: 'center', textAlign: 'center', color: 'text.secondary' }}>{position}</Typography>
     <Divider orientation="vertical" flexItem sx={{ mx: 1 }} />
     <ButtonBase ref={node => { setNodeRef(node); setActivatorNodeRef(node); }} {...attributes} {...listeners}
-      data-feedback={feedback} aria-description={feedback ? feedback === 'correct' ? uk.optionCorrect : uk.optionIncorrect : undefined} aria-label={`${item.label} (${position})`} disabled={disabled}
+      aria-describedby={disabled ? undefined : attributes['aria-describedby']} aria-roledescription={disabled ? undefined : attributes['aria-roledescription']} data-feedback={feedback} aria-description={feedback ? feedback === 'correct' ? uk.optionCorrect : uk.optionIncorrect : undefined} aria-label={`${item.label} (${position})`} disabled={disabled}
       style={{ transform: CSS.Transform.toString(transform), transition }}
       sx={{
         flex: 1, minWidth: 0, justifyContent: 'flex-start', gap: 2, px: 2, py: 1.5,

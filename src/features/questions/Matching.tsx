@@ -93,7 +93,7 @@ export function Matching({ question, value, onChange, disabled, readOnly, result
           const paired = side === 'left' ? Boolean(value[item.id]) : Object.values(value).includes(item.id);
           const active = pending?.side === side && pending.id === item.id;
           return <ButtonBase key={item.id} disabled={locked} aria-pressed={active || paired}
-            data-match-id={item.id} data-match-side={side} data-feedback={feedback ?? undefined} aria-description={feedback ? feedback === 'correct' ? uk.optionCorrect : uk.optionIncorrect : undefined} aria-label={item.label} aria-describedby={hint}
+            data-match-id={item.id} data-match-side={side} data-feedback={feedback ?? undefined} aria-description={feedback ? feedback === 'correct' ? uk.optionCorrect : uk.optionIncorrect : undefined} aria-label={item.label} aria-describedby={feedback ? undefined : hint}
             ref={node => { const nodes = side === 'left' ? leftNodes : rightNodes; if (node) nodes.current.set(item.id, node); else nodes.current.delete(item.id); }}
             onClick={() => choose(side, item.id)}
             sx={{ gridColumn: side === 'left' ? 1 : 2, gridRow: index + 1, position: 'relative', minHeight: 52, px: { xs: 1, sm: 2 }, py: 1.5, width: '100%', border: '1px solid', borderColor: feedback ? color : active || paired ? 'primary.main' : 'divider', borderRadius: 1, textAlign: 'left', justifyContent: 'flex-start', bgcolor: feedback ? alpha(color, 0.12) : active ? 'action.selected' : 'background.paper', '&:hover': { bgcolor: 'action.hover' }, '&.Mui-disabled': { opacity: review ? 1 : 0.6, color: 'text.primary' } }}>
