@@ -112,7 +112,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
       if (!reducedMotion && container) setDeparture({ item, x: bounds.left - container.left, y: bounds.top - container.top, width: bounds.width, height: bounds.height });
       onChange(selected ? value.filter(v => v !== item.id) : [...value, item.id]);
     };
-    return <AnimatedLayoutItem key={item.id} enabled={!activeId && !reducedMotion}>
+    return <AnimatedLayoutItem key={item.id} enabled={!reducedMotion}>
       <Box sx={{ maxWidth: '100%', display: 'flex', alignSelf: 'center', alignItems: 'center', flex: '0 0 auto', animation: 'block-in 140ms ease-in-out both', '@keyframes block-in': { from: { opacity: 0, transform: 'scale(.65)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }}>
         {selected ? <SortableBlock item={item} index={index} locked={locked} toggle={toggle} /> : <AvailableBlock item={item} index={index} locked={locked} toggle={toggle} />}
       </Box>
@@ -131,7 +131,9 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
   const bankInsertion = ghostZone === 'bank'
     ? preview?.zone === 'bank' ? Math.min(preview.index, displayedAvailableBlocks.length) : available.findIndex(item => item.id === activeId)
     : -1;
-  const ghost = activeItem ? <Chip key={`insertion-ghost-${ghostAnimationKey}`} data-insertion-preview="true" aria-hidden="true" label={activeItem.label} variant="outlined" sx={{ ...chipSx, borderColor: 'text.disabled', color: 'text.disabled', opacity: 0.45, boxShadow: 1, pointerEvents: 'none', animation: ghostAnimationKey && !reducedMotion ? 'ghost-grow 180ms cubic-bezier(0.2, 0.8, 0.2, 1) both' : 'none', '@keyframes ghost-grow': { from: { opacity: 0, transform: 'scale(.72)' }, to: { opacity: 0.45, transform: 'scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }} /> : null;
+  const ghost = activeItem ? <AnimatedLayoutItem key={`insertion-ghost-${ghostAnimationKey}`} enabled={!reducedMotion}>
+    <Chip data-insertion-preview="true" aria-hidden="true" label={activeItem.label} variant="outlined" sx={{ ...chipSx, borderColor: 'text.disabled', color: 'text.disabled', opacity: 0.45, boxShadow: 1, pointerEvents: 'none', animation: ghostAnimationKey && !reducedMotion ? 'ghost-grow 180ms cubic-bezier(0.2, 0.8, 0.2, 1) both' : 'none', '@keyframes ghost-grow': { from: { opacity: 0, transform: 'scale(.72)' }, to: { opacity: 0.45, transform: 'scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }} />
+  </AnimatedLayoutItem> : null;
   return <Stack ref={root} spacing={2} sx={{ position: 'relative', width: '100%', maxWidth: 600, mx: 'auto', alignItems: 'center' }}>
     <Typography variant="body2" sx={{ textAlign: 'center' }}>{uk.dragBlockHint}</Typography>
     <DndContext id={id} sensors={sensors} collisionDetection={collision}
