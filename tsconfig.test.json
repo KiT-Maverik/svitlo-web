@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "outDir": ".test-build",
+    "incremental": false,
+    "isolatedModules": false,
+    "plugins": []
+  },
+  "include": [
+    "tests/check.test.ts",
+    "tests/feedback.test.ts",
+    "src/features/questions/model.ts",
+    "src/features/questions/check.ts",
+    "src/features/questions/examples.ts",
+    "tests/controller.test.ts",
+    "tests/workspaces.test.ts",
+    "tests/reporting.test.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".test-build"
+  ]
+}

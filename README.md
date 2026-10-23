@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Interactive questions
+
+Open `/questions` for seven independently controlled examples. See [authoring and API documentation](docs/questions.md) for data definitions, checks, extension points and validation commands.
+
+Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Domain contracts and module augmentation live in `src/types/questions`.
+
+## Workspaces and content reports
+
+Open `/student`, `/teacher`, `/admin/lessons` and `/lessons/light`. Dashboards and CRUD mutation ports are explicit prototypes. Flag forms use `/api/reports`; configure server-only env from `.env.example` to enable GitHub issue delivery. See [implementation and CRUD plan](docs/workspaces.md).
