@@ -1,4 +1,4 @@
-import type { AnswerMap, CheckResult, Item, QuestionOf, QuestionType, Submission, TextNormalization } from '../../types/questions';
+import type { AnswerMap, CheckResult, FillBlankPart, Item, QuestionOf, QuestionType, Submission, TextNormalization } from '../../types/questions';
 
 const empty: CheckResult = { status: 'incomplete', reason: 'empty' };
 const invalid = (reason: Extract<CheckResult, { status: 'invalid' }>['reason']): CheckResult => ({ status: 'invalid', reason });
@@ -7,6 +7,11 @@ const equal = (a: string[], b: string[]) => a.length === b.length && a.every((id
 const unique = (ids: string[]) => new Set(ids).size === ids.length;
 const validItems = (items: Item[]) => items.length > 0 && items.every(i => i.id.length > 0) && unique(items.map(i => i.id));
 const contains = (items: Item[], id: string) => items.some(i => i.id === id);
+const blankIds = (parts: FillBlankPart[]) => parts.filter((part): part is Extract<FillBlankPart, { type: 'blank' }> => part.type === 'blank').map(part => part.id);
+const validParts = (parts: FillBlankPart[]) => {
+  const ids = blankIds(parts);
+  return parts.length > 0 && ids.length > 0 && ids.every(Boolean) && unique(ids) && parts.every(part => part.type === 'blank' ? Boolean(part.id) : typeof part.text === 'string');
+};
 function validateIds(ids: string[], items: Item[]): CheckResult | undefined {
   if (!unique(ids)) return invalid('duplicate-id');
   if (ids.some(id => !contains(items, id))) return invalid('unknown-id');
@@ -84,6 +89,28 @@ export const checkers: { [K in QuestionType]: Checker<K> } = {
     if (q.acceptedSequences.some(s => value.length < s.length && value.every((id, i) => s[i] === id))) return { status: 'incomplete', reason: 'missing-items' };
     return grade(false);
   },
+  'fill-blanks-drag': (q, value) => {
+    const blanks = blankIds(q.parts);
+    const correctIds = Object.keys(q.correctBlocks);
+    if (!validParts(q.parts) || !validItems(q.blocks) || correctIds.length !== blanks.length || correctIds.some(id => !blanks.includes(id)) || blanks.some(id => !contains(q.blocks, q.correctBlocks[id])) || !unique(Object.values(q.correctBlocks))) return invalid('definition');
+    if (Object.keys(value).some(id => !blanks.includes(id))) return invalid('unknown-id');
+    const selected = Object.values(value).filter((id): id is string => Boolean(id));
+    if (selected.some(id => !contains(q.blocks, id))) return invalid('unknown-id');
+    if (!unique(selected)) return invalid('duplicate-id');
+    if (!selected.length) return empty;
+    if (selected.length !== blanks.length) return { status: 'incomplete', reason: 'missing-items' };
+    return grade(blanks.every(id => value[id] === q.correctBlocks[id]));
+  },
+  'fill-blanks-text': (q, value) => {
+    const blanks = blankIds(q.parts);
+    const acceptedIds = Object.keys(q.acceptedAnswers);
+    if (!validParts(q.parts) || acceptedIds.length !== blanks.length || acceptedIds.some(id => !blanks.includes(id)) || blanks.some(id => !q.acceptedAnswers[id]?.length || q.acceptedAnswers[id].some(answer => !answer.trim()))) return invalid('definition');
+    if (Object.keys(value).some(id => !blanks.includes(id))) return invalid('unknown-id');
+    const filled = blanks.filter(id => Boolean(value[id]?.trim()));
+    if (!filled.length) return empty;
+    if (filled.length !== blanks.length) return { status: 'incomplete', reason: 'missing-items' };
+    return grade(blanks.every(id => q.acceptedAnswers[id].some(answer => normalizeText(answer, q.normalization) === normalizeText(value[id], q.normalization))));
+  },
 };
 export function checkAnswer(s: Submission): CheckResult {
   // Narrow on the nested discriminant through explicit guards (no casts / any).
@@ -94,5 +121,7 @@ export function checkAnswer(s: Submission): CheckResult {
   if (s.question.type === 'numeric' && s.answer.type === 'numeric') return checkers.numeric(s.question, s.answer.value);
   if (s.question.type === 'ordering' && s.answer.type === 'ordering') return checkers.ordering(s.question, s.answer.value);
   if (s.question.type === 'block-builder' && s.answer.type === 'block-builder') return checkers['block-builder'](s.question, s.answer.value);
+  if (s.question.type === 'fill-blanks-drag' && s.answer.type === 'fill-blanks-drag') return checkers['fill-blanks-drag'](s.question, s.answer.value);
+  if (s.question.type === 'fill-blanks-text' && s.answer.type === 'fill-blanks-text') return checkers['fill-blanks-text'](s.question, s.answer.value);
   return invalid('definition');
 }

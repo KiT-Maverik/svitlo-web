@@ -27,6 +27,8 @@ export function QuestionView(props: QuestionViewProps) {
     case 'numeric': return <TypedView<'numeric'> {...props} />;
     case 'ordering': return <TypedView<'ordering'> {...props} />;
     case 'block-builder': return <TypedView<'block-builder'> {...props} />;
+    case 'fill-blanks-drag': return <TypedView<'fill-blanks-drag'> {...props} />;
+    case 'fill-blanks-text': return <TypedView<'fill-blanks-text'> {...props} />;
   }
 }
 export { TypedView as InternalQuestionView };

@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Interactive questions
 
-Open `/questions` for seven independently controlled examples. See [authoring and API documentation](docs/questions.md) for data definitions, checks, extension points and validation commands.
+Open `/questions` for nine independently controlled examples. See [authoring and API documentation](docs/questions.md) for data definitions, checks, extension points and validation commands.
 
 Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Domain contracts and module augmentation live in `src/types/questions`.
 
@@ -91,4 +91,3 @@ Open `/student`, `/teacher`, `/admin/lessons` and `/lessons/light`. Dashboards a
 Гамбургер відкриває та закриває немодальний сайдбар. Escape, кнопка закриття та натискання на затемнену область теж закривають його. Панель і затемнення обмежені областю між навбарами.
 
 Перевірки: `npm run lint`, `npm run build`.
-

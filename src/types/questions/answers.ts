@@ -6,4 +6,6 @@ export interface AnswerMap {
   numeric: string;
   ordering: string[];
   'block-builder': string[];
+  'fill-blanks-drag': Record<string, string | null>;
+  'fill-blanks-text': Record<string, string>;
 }

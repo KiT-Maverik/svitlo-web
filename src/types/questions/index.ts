@@ -5,6 +5,7 @@ import type { ShortTextQuestion } from './short-text';
 import type { NumericQuestion } from './numeric';
 import type { OrderingQuestion } from './ordering';
 import type { BlockBuilderQuestion } from './block-builder';
+import type { FillBlanksDragQuestion, FillBlanksTextQuestion } from './fill-blanks';
 export type { SingleSelectQuestion, SingleSelectQuestionExtensions } from './single-select';
 export type { MultipleSelectQuestion, MultipleSelectQuestionExtensions } from './multiple-select';
 export type { MatchingQuestion, MatchingQuestionExtensions } from './matching';
@@ -12,6 +13,7 @@ export type { ShortTextQuestion, ShortTextQuestionExtensions } from './short-tex
 export type { NumericQuestion, NumericQuestionExtensions } from './numeric';
 export type { OrderingQuestion, OrderingQuestionExtensions } from './ordering';
 export type { BlockBuilderQuestion, BlockBuilderQuestionExtensions } from './block-builder';
+export type { FillBlankPart, FillBlanksDragQuestion, FillBlanksTextQuestion } from './fill-blanks';
 export type * from './base';
 export type * from './answers';
 export type * from './results';
@@ -24,6 +26,8 @@ export const QuestionType = {
   Numeric: 'numeric',
   Ordering: 'ordering',
   BlockBuilder: 'block-builder',
+  FillBlanksDrag: 'fill-blanks-drag',
+  FillBlanksText: 'fill-blanks-text',
 } as const;
 export interface DefinitionMap {
   'single-select': SingleSelectQuestion;
@@ -33,6 +37,8 @@ export interface DefinitionMap {
   'numeric': NumericQuestion;
   'ordering': OrderingQuestion;
   'block-builder': BlockBuilderQuestion;
+  'fill-blanks-drag': FillBlanksDragQuestion;
+  'fill-blanks-text': FillBlanksTextQuestion;
 }
 export type QuestionType = keyof DefinitionMap;
 export type QuestionOf<K extends QuestionType> = DefinitionMap[K] & { type: K };

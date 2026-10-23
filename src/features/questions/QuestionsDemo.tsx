@@ -19,7 +19,7 @@ export function QuestionsDemo() {
   return <Stack spacing={3}>
     <Stack spacing={1}>
       <Typography component="h1" variant="h4">Інтерактивні запитання</Typography>
-      <Typography>Сім типів запитань. Блоки можна додавати натисканням або перетягуванням. Дайте відповідь, перевірте результат і спробуйте ще раз. Кожен приклад незалежний.</Typography>
+      <Typography>Дев’ять типів запитань. Блоки можна додавати натисканням або перетягуванням. Дайте відповідь, перевірте результат і спробуйте ще раз. Кожен приклад незалежний.</Typography>
     </Stack>
     <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} sx={{ alignItems: 'stretch' }}>
       <Stack spacing={3} sx={{ flex: '1 1 auto', minWidth: 0 }}>

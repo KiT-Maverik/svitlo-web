@@ -88,6 +88,23 @@ test('block-builder supports extras, repeated labels with unique IDs, and altern
   assert.equal(check(['three']), 'incorrect');
   assert.equal(check(['one-b', 'one-a', 'plus', 'equals', 'two']), 'incorrect');
 });
+test('fill-blanks drag checks complete mappings, missing blanks and duplicate blocks', () => {
+  const question = exampleQuestions.find(item => item.type === 'fill-blanks-drag');
+  if (!question || question.type !== 'fill-blanks-drag') throw Error();
+  const check = (value: Record<string, string | null>) => checkers['fill-blanks-drag'](question, value).status;
+  assert.equal(check({ capital: 'kyiv', mountain: 'hoverla' }), 'correct');
+  assert.equal(check({ capital: 'kyiv', mountain: null }), 'incomplete');
+  assert.equal(check({ capital: 'hoverla', mountain: 'kyiv' }), 'incorrect');
+  assert.equal(check({ capital: 'kyiv', mountain: 'kyiv' }), 'invalid');
+});
+test('fill-blanks text checks each blank with shared normalization', () => {
+  const question = exampleQuestions.find(item => item.type === 'fill-blanks-text');
+  if (!question || question.type !== 'fill-blanks-text') throw Error();
+  const check = (value: Record<string, string>) => checkers['fill-blanks-text'](question, value).status;
+  assert.equal(check({ evaporation: ' ВИПАРОВУВАННЯ ', condensation: 'конденсація' }), 'correct');
+  assert.equal(check({ evaporation: 'випаровування', condensation: '' }), 'incomplete');
+  assert.equal(check({ evaporation: 'танення', condensation: 'конденсація' }), 'incorrect');
+});
 test('malformed authored definitions are invalid rather than incorrectly graded', () => {
   assert.equal(checkers.numeric({ ...n, tolerance: -1 }, '10').status, 'invalid');
   assert.equal(checkers.numeric({ ...n, expected: Infinity }, '10').status, 'invalid');
@@ -98,7 +115,7 @@ test('malformed authored definitions are invalid rather than incorrectly graded'
 test('JSON round-trip preserves definitions and pure dispatcher works without React', () => {
   assert.deepEqual(JSON.parse(JSON.stringify(exampleQuestions)), exampleQuestions);
   assert.equal(checkAnswer({ question: n, answer: { type: 'numeric', value: '10' } }).status, 'correct');
-  assert.equal(exampleQuestions.length, 7);
+  assert.equal(exampleQuestions.length, 9);
   assert.equal(text.type, 'short-text');
   assert.equal(numeric.type, 'numeric');
 });

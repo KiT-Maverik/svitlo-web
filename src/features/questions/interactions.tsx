@@ -8,3 +8,5 @@ export { Numeric } from './Numeric';
 export { Matching } from './Matching';
 export { Ordering } from './Ordering';
 export { BlockBuilder } from './BlockBuilder';
+export { FillBlanksDrag } from './FillBlanksDrag';
+export { FillBlanksText } from './FillBlanksText';
