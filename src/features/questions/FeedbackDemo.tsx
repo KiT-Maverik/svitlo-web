@@ -14,6 +14,6 @@ export function FeedbackDemo() {
       <FormControlLabel label="Показувати правильні відповіді" control={<Checkbox checked={showCorrectAnswers} onChange={(_, value) => setShowCorrectAnswers(value)} />} />
       <FormControlLabel label="Показувати результати прикладів" control={<Checkbox checked={showResult} onChange={(_, value) => setShowResult(value)} />} />
     </Stack>
-    {exampleQuestions.filter(q => ['single-select', 'multiple-select', 'matching'].includes(q.type)).map(question => <QuestionAttempt key={question.id} question={{ ...question, id: `feedback-${question.id}`, prompt: `Стани: ${question.prompt}` }} showErrors={showErrors} showCorrectAnswers={showCorrectAnswers} showResult={showResult} />)}
+    {exampleQuestions.filter(q => ['single-select', 'multiple-select', 'matching', 'short-text', 'numeric', 'ordering'].includes(q.type)).map(question => <QuestionAttempt key={question.id} question={{ ...question, id: `feedback-${question.id}`, prompt: `Стани: ${question.prompt}` }} showErrors={showErrors} showCorrectAnswers={showCorrectAnswers} showResult={showResult} />)}
   </Stack>;
 }

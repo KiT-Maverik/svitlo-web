@@ -89,3 +89,49 @@ test('matching requires all pairs, reviews the submitted pairing and restores au
   await q.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(check).toBeDisabled();
 });
+
+test('text and numeric answers stay editable until valid and render locked result adornments', async ({ page }, testInfo) => {
+  await page.goto('/questions');
+  const text = page.getByRole('region', { name: /Як називається утворення/ });
+  const input = text.getByRole('textbox');
+  const check = text.getByRole('button', { name: 'Перевірити', exact: true });
+  await expect(check).toBeDisabled(); await input.fill('   '); await expect(check).toBeDisabled();
+  await input.fill('дихання'); await expect(check).toBeEnabled(); await check.click();
+  await expect(text.getByRole('img', { name: 'Неправильна відповідь', exact: true })).toBeVisible();
+  await expect(input).toHaveAttribute('readonly', '');
+  await text.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(input).toHaveValue('дихання'); await expect(text.getByRole('img')).toHaveCount(0);
+  await input.fill('ФОТОСИНТЕЗ'); await check.click();
+  await expect(text.getByRole('img', { name: 'Правильна відповідь', exact: true })).toBeVisible();
+  const numeric = page.getByRole('region', { name: /Обчисліть довжину кола/ });
+  const number = numeric.getByRole('textbox'), grade = numeric.getByRole('button', { name: 'Перевірити', exact: true });
+  await expect(grade).toBeDisabled(); await number.fill('12abc'); await expect(grade).toBeDisabled();
+  await expect(number).not.toHaveAttribute('readonly'); await number.fill('1'); await grade.click();
+  await expect(numeric.getByRole('img', { name: 'Неправильна відповідь', exact: true })).toBeVisible();
+  await numeric.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await number.fill('6,28'); await grade.click();
+  await expect(numeric.getByRole('img', { name: 'Правильна відповідь', exact: true })).toBeVisible();
+  await numeric.screenshot({ path: testInfo.outputPath('numeric-review.png') });
+  await numeric.getByRole('button', { name: 'Скинути', exact: true }).click();
+  await expect(number).toHaveValue(''); await expect(grade).toBeDisabled(); await expect(numeric.getByRole('img')).toHaveCount(0);
+  const blocks = page.getByRole('region', { name: /Складіть рівність для суми/ });
+  await expect(blocks.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
+  await blocks.getByRole('button', { name: 'Додати: 3 (6)', exact: true }).click();
+  await expect(blocks.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
+});
+
+test('ordering reviews individual positions and restores drag icons on retry', async ({ page }, testInfo) => {
+  await page.goto('/questions');
+  const q = page.getByRole('region', { name: /Упорядкуйте етапи/ });
+  const rain = q.getByRole('button', { name: 'Опади (1)', exact: true });
+  await rain.focus(); await page.keyboard.press('Space'); await page.keyboard.press('ArrowDown'); await page.keyboard.press('Space');
+  await q.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  await expect(q.locator('button[data-feedback="correct"]')).toHaveCount(1);
+  await expect(q.locator('button[data-feedback="incorrect"]')).toHaveCount(2);
+  await expect(q.getByRole('button', { name: 'Випаровування (1)', exact: true })).toHaveAccessibleDescription('Правильна відповідь');
+  await expect(q.getByRole('button', { name: 'Опади (2)', exact: true })).toBeDisabled();
+  await q.screenshot({ path: testInfo.outputPath('ordering-review.png') });
+  await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(q.locator('[data-feedback]')).toHaveCount(0);
+  await expect(q.getByRole('button', { name: 'Опади (2)', exact: true })).toBeEnabled();
+});

@@ -1,17 +1,15 @@
 import { test, expect } from '@playwright/test';
 test.beforeEach(async ({ page }) => { await page.goto('/questions/api'); });
-test('manual emits answer only after grading; incomplete checks are separate', async ({ page }) => {
+test('manual blocks incomplete input and emits answer only after grading', async ({ page }) => {
   const q = page.getByRole('region', { name: /Ручна перевірка:/ });
   const events = page.getByRole('status', { name: 'Події контролера' });
-  await q.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(events).toContainText('manual-check:1:incomplete');
-  await expect(events).not.toContainText('manual-answer');
-  await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(q.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
+  await expect(events).not.toContainText('manual-check');
   await q.getByRole('button', { name: '3', exact: true }).click();
   await expect(q.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await q.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(events).toContainText('manual-answer:2:incorrect');
-  await expect(events).toContainText('manual-incorrect:2:incorrect');
+  await expect(events).toContainText('manual-answer:1:incorrect');
+  await expect(events).toContainText('manual-incorrect:1:incorrect');
 });
 test('automatic grading and hidden feedback still emit one ordered lifecycle', async ({ page }) => {
   await page.getByRole('checkbox', { name: 'Приховати результат автоматичної перевірки' }).check();

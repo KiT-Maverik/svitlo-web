@@ -1,10 +1,7 @@
 'use client';
-
 import type { InteractionProps } from './interaction-props';
-import { useId } from 'react';
-import { TextField } from '@mui/material';
+import { AnswerField } from './AnswerField';
 import { uk } from './messages';
-export function ShortText({ value, onChange, disabled, readOnly }: InteractionProps<'short-text'>) {
-  const id = useId();
-  return <TextField sx={{ maxWidth: 440 }} id={id} fullWidth label={uk.answer} value={value} onChange={e => onChange(e.target.value)} disabled={disabled} slotProps={{ input: { readOnly } }} />;
+export function ShortText({ value, onChange, disabled, readOnly, result, showErrors, showCorrectAnswers }: InteractionProps<'short-text'>) {
+  return <AnswerField label={uk.answer} value={value} onChange={onChange} disabled={disabled} readOnly={readOnly} result={result} showErrors={showErrors} showCorrectAnswers={showCorrectAnswers} />;
 }

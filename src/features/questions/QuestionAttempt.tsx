@@ -35,7 +35,7 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
   const context: QuestionSlotContext<K> = {
     ...state, answer: structuredClone(state.answer), result: structuredClone(state.result), question, props, isLocked, canCheck: !isLocked && controller.isReadyToCheck(),
     setAnswer: answer => { controller.setAnswer(answer); if (controller.getSnapshot().result) focusResult(); },
-    check: () => { controller.check(); focusResult(); },
+    check: () => { if (!isLocked && controller.isReadyToCheck()) { controller.check(); focusResult(); } },
     retry: () => { controller.retry(); focusEditor(); },
     reset: () => { controller.reset(); focusEditor(); },
     children: null, rootProps: {},

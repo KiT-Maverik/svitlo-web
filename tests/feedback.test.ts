@@ -21,3 +21,13 @@ test('error and correct-answer visibility switches are independent for every opt
     assert.equal(choiceFeedback({ status: 'incorrect' }, false, true, flags), showCorrectAnswers ? 'missed' : undefined);
   }
 });
+
+test('field feedback respects grading and independent visibility switches', async () => {
+  const { resultFeedback } = await import('../src/features/questions/feedback');
+  assert.equal(resultFeedback(null, {}), undefined);
+  assert.equal(resultFeedback({ status: 'invalid', reason: 'number-format' }, {}), undefined);
+  assert.equal(resultFeedback({ status: 'correct' }, {}), 'correct');
+  assert.equal(resultFeedback({ status: 'incorrect' }, {}), 'incorrect');
+  assert.equal(resultFeedback({ status: 'incorrect' }, { showErrors: false }), undefined);
+  assert.equal(resultFeedback({ status: 'correct' }, { showCorrectAnswers: false }), undefined);
+});

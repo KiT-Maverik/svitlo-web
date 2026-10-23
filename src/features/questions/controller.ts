@@ -33,7 +33,14 @@ export function createQuestionController<K extends QuestionType>(question: Quest
       else handlers.onIncorrect?.({ ...structuredClone(snapshot), result: structuredClone(result) });
     }
   }
-  const isReadyToCheck = () => question.type !== 'matching' || isGraded(checker(question, state.answer));
+  const isReadyToCheck = () => {
+    if (!isGraded(checker(question, state.answer))) return false;
+    // A wrong short sequence is still unfinished in the block editor.
+    if (question.type === 'block-builder' && 'acceptedSequences' in question && Array.isArray(state.answer)) {
+      return state.answer.length >= Math.min(...question.acceptedSequences.map(sequence => sequence.length));
+    }
+    return true;
+  };
   return {
     isReadyToCheck,
     getSnapshot: () => state,
@@ -48,7 +55,7 @@ export function createQuestionController<K extends QuestionType>(question: Quest
       if (state === changed && options.checkMode === 'on-change' && !locked()) {
         const result = checker(question, next);
         // Empty, incomplete and invalid edits remain editable, including deselection.
-        if (result.status === 'correct' || result.status === 'incorrect') evaluate(next, result);
+        if (isGraded(result) && isReadyToCheck()) evaluate(next, result);
       }
     },
     check: () => { if (isReadyToCheck()) evaluate(state.answer); },

@@ -11,3 +11,9 @@ export function choiceFeedback(result: CheckResult | null | undefined, selected:
   if (correct && showCorrectAnswers) return selected ? 'correct' : 'missed';
   if (selected && !correct && showErrors) return 'incorrect';
 }
+
+export function resultFeedback(result: CheckResult | null | undefined, { showErrors = true, showCorrectAnswers = true }: FeedbackVisibility): 'correct' | 'incorrect' | undefined {
+  if (!isGraded(result)) return;
+  if (result?.status === 'correct') return showCorrectAnswers ? 'correct' : undefined;
+  return showErrors ? 'incorrect' : undefined;
+}

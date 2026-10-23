@@ -45,11 +45,10 @@ test('multiple, matching, short text and numeric validate through shared control
   await expect(text.getByRole('status')).toContainText('Правильно!');
   const number = page.getByRole('region', { name: /Обчисліть довжину/ });
   await number.getByRole('textbox').fill('12abc');
-  await number.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(number.getByRole('status')).toContainText('скінченне число');
+  await expect(number.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
+  await expect(number.getByRole('status')).toBeEmpty();
   await expect(number.getByText('Пояснення:', { exact: false })).toHaveCount(0);
-  await expect(number.getByRole('textbox')).toHaveAttribute('readonly', '');
-  await number.getByRole('button', { name: 'Спробувати ще раз' }).click();
+  await expect(number.getByRole('textbox')).not.toHaveAttribute('readonly');
   await number.getByRole('textbox').fill('6,28');
   await number.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(number.getByRole('status')).toContainText('Правильно!');

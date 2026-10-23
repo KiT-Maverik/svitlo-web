@@ -35,12 +35,12 @@ test('automatic mode emits grade only for a complete valid answer and locks imme
   c.setAnswer('a'); assert.equal(c.getSnapshot().result?.status, 'correct');
   c.setAnswer('b'); c.check(); assert.deepEqual(calls, ['correct']);
 });
-test('incomplete and invalid manual checks do not emit onAnswer or grade callbacks', () => {
+test('incomplete and invalid checks stay editable without emitting callbacks', () => {
   const n: NumericQuestion = { id: 'n', type: 'numeric', prompt: '?', explanation: '.', expected: 12, tolerance: 0 };
   const calls: string[] = [];
   const c = createQuestionController(n, '', checkers.numeric, { onCheck: e => calls.push(e.result.status), onAnswer: () => calls.push('answer') });
   c.check(); c.retry(); c.setAnswer('12abc'); c.check();
-  assert.deepEqual(calls, ['incomplete', 'invalid']);
+  assert.deepEqual(calls, []); assert.equal(c.getSnapshot().hasChecked, false); assert.equal(c.getSnapshot().result, null);
   assert.equal(c.getSnapshot().hasInteracted, true);
 });
 test('disabled and readOnly guard all actions, including actions invoked through custom slots', () => {
@@ -79,4 +79,32 @@ test('matching cannot be checked via controller or custom slot until every uniqu
   c.setAnswer({ a: 'y', b: 'x' }); assert.equal(c.isReadyToCheck(), true); c.check();
   assert.deepEqual(calls, ['incorrect']); c.retry(); assert.equal(c.getSnapshot().result, null);
   c.reset(); assert.equal(c.isReadyToCheck(), false);
+});
+
+test('all interaction types reject unfinished or invalid submissions and allow complete wrong answers', async () => {
+  const { exampleQuestions } = await import('../src/features/questions/examples');
+  const single = exampleQuestions.find(q => q.type === 'single-select');
+  const multi = exampleQuestions.find(q => q.type === 'multiple-select');
+  const text = exampleQuestions.find(q => q.type === 'short-text');
+  const numeric = exampleQuestions.find(q => q.type === 'numeric');
+  const ordering = exampleQuestions.find(q => q.type === 'ordering');
+  const blocks = exampleQuestions.find(q => q.type === 'block-builder');
+  assert.ok(single && multi && text && numeric && ordering && blocks);
+  const s = createQuestionController(single, null, checkers['single-select']);
+  assert.equal(s.isReadyToCheck(), false); s.check(); assert.equal(s.getSnapshot().result, null);
+  s.setAnswer('earth'); assert.equal(s.isReadyToCheck(), true); s.setAnswer(null); assert.equal(s.isReadyToCheck(), false);
+  const m = createQuestionController(multi, [], checkers['multiple-select']);
+  m.check(); assert.equal(m.getSnapshot().hasChecked, false); m.setAnswer(['four']); assert.equal(m.isReadyToCheck(), true);
+  m.setAnswer(['four', 'four']); assert.equal(m.isReadyToCheck(), false);
+  const t = createQuestionController(text, '', checkers['short-text']);
+  t.setAnswer('  \n '); t.check(); assert.equal(t.getSnapshot().result, null);
+  t.setAnswer('неправильний текст'); assert.equal(t.isReadyToCheck(), true); t.check(); assert.equal(t.getSnapshot().result?.status, 'incorrect');
+  const n = createQuestionController(numeric, '', checkers.numeric);
+  for (const value of ['', ' ', '12abc', 'Infinity', '1,2.3']) { n.setAnswer(value); n.check(); assert.equal(n.isReadyToCheck(), false); assert.equal(n.getSnapshot().result, null); }
+  n.setAnswer('0'); assert.equal(n.isReadyToCheck(), true); n.check(); assert.equal(n.getSnapshot().result?.status, 'incorrect');
+  const o = createQuestionController(ordering, ordering.items.map(i => i.id), checkers.ordering);
+  assert.equal(o.isReadyToCheck(), true); o.setAnswer(['rain']); assert.equal(o.isReadyToCheck(), false);
+  const b = createQuestionController(blocks, [], checkers['block-builder'], { checkMode: 'on-change' });
+  b.setAnswer(['three']); assert.equal(b.isReadyToCheck(), false); b.check(); assert.equal(b.getSnapshot().result, null);
+  b.setAnswer(['three', 'one-a', 'plus', 'one-b', 'equals']); assert.equal(b.isReadyToCheck(), true); assert.equal(b.getSnapshot().result?.status, 'incorrect');
 });

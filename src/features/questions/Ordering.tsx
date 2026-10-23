@@ -1,8 +1,11 @@
 'use client';
 
 import { useId } from 'react';
+import CheckCircle from '@mui/icons-material/CheckCircle';
+import Close from '@mui/icons-material/Close';
+import { choiceFeedback, type ChoiceFeedback } from './feedback';
 import DragIndicator from '@mui/icons-material/DragIndicator';
-import { Box, ButtonBase, Divider, Stack, Typography } from '@mui/material';
+import { alpha, Box, ButtonBase, Divider, Stack, Typography } from '@mui/material';
 import { closestCenter, DndContext, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
@@ -11,32 +14,35 @@ import type { Item } from '../../types/questions';
 import { answerColumnSx } from './AnswerOption';
 import { uk } from './messages';
 
-function SortableAnswer({ item, position, disabled }: { item: Item; position: number; disabled: boolean }) {
+function SortableAnswer({ item, position, disabled, feedback }: { item: Item; position: number; disabled: boolean; feedback?: ChoiceFeedback }) {
   const { attributes, listeners, setNodeRef, setActivatorNodeRef, transform, transition, isDragging } = useSortable({ id: item.id, disabled });
+  const tone = feedback === 'correct' ? 'success' : 'error';
+  const Icon = feedback ? feedback === 'correct' ? CheckCircle : Close : DragIndicator;
   return <Box component="li" sx={{ display: 'flex', alignItems: 'stretch', minWidth: 0 }}>
     <Typography component="span" aria-hidden="true" sx={{ width: 32, flexShrink: 0, alignSelf: 'center', textAlign: 'center', color: 'text.secondary' }}>{position}</Typography>
     <Divider orientation="vertical" flexItem sx={{ mx: 1 }} />
     <ButtonBase ref={node => { setNodeRef(node); setActivatorNodeRef(node); }} {...attributes} {...listeners}
-      aria-label={`${item.label} (${position})`} disabled={disabled}
+      data-feedback={feedback} aria-description={feedback ? feedback === 'correct' ? uk.optionCorrect : uk.optionIncorrect : undefined} aria-label={`${item.label} (${position})`} disabled={disabled}
       style={{ transform: CSS.Transform.toString(transform), transition }}
       sx={{
         flex: 1, minWidth: 0, justifyContent: 'flex-start', gap: 2, px: 2, py: 1.5,
         borderRadius: 1, textAlign: 'left', minHeight: 48, cursor: disabled ? 'default' : isDragging ? 'grabbing' : 'grab',
-        bgcolor: isDragging ? 'action.selected' : 'background.paper', zIndex: isDragging ? 1 : 'auto',
+        border: '1px solid', borderColor: feedback ? `${tone}.main` : 'transparent',
+        bgcolor: theme => feedback ? alpha(theme.palette[tone].main, 0.12) : isDragging ? theme.palette.action.selected : theme.palette.background.paper, zIndex: isDragging ? 1 : 'auto',
         boxShadow: isDragging ? 3 : 0,
         '&:not(.Mui-disabled):hover': { bgcolor: 'action.hover' },
-        '&.Mui-disabled': { opacity: 0.6 },
+        '&.Mui-disabled': { opacity: feedback ? 1 : 0.6, color: 'text.primary' },
         '&.Mui-focusVisible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 },
       }}>
-      <DragIndicator aria-hidden="true" sx={{ flexShrink: 0, color: 'text.secondary' }} />
+      <Icon aria-hidden="true" sx={{ flexShrink: 0, color: feedback ? `${tone}.main` : 'text.secondary' }} />
       <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>{item.label}</Typography>
     </ButtonBase>
   </Box>;
 }
 
-export function Ordering({ question, value, onChange, disabled, readOnly }: InteractionProps<'ordering'>) {
+export function Ordering({ question, value, onChange, disabled, readOnly, result, showErrors, showCorrectAnswers }: InteractionProps<'ordering'>) {
   const id = useId();
-  const locked = Boolean(disabled || readOnly);
+  const locked = Boolean(disabled || readOnly || result);
   const sensors = useSensors(
     useSensor(MouseSensor, { activationConstraint: { distance: 5 } }),
     // A short hold starts dragging; moving before the hold allows ordinary scrolling.
@@ -66,7 +72,7 @@ export function Ordering({ question, value, onChange, disabled, readOnly }: Inte
         <Box component="ol" aria-label={question.prompt} aria-describedby={`${id}-hint`} sx={{ ...answerColumnSx, listStyle: 'none', p: 0, my: 0 }}>
           {value.map((itemId, index) => {
             const item = question.items.find(item => item.id === itemId);
-            return item ? <SortableAnswer key={item.id} item={item} position={index + 1} disabled={locked} /> : null;
+            return item ? <SortableAnswer key={item.id} item={item} position={index + 1} feedback={choiceFeedback(result, true, question.correctOrder[index] === item.id, { showErrors, showCorrectAnswers })} disabled={locked} /> : null;
           })}
         </Box>
       </SortableContext>
