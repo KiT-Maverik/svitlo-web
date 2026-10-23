@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useRef, useState } from 'react';
+import { useId, useLayoutEffect, useRef, useState } from 'react';
 import { Box, Chip, Stack, Typography, useMediaQuery } from '@mui/material';
 import { closestCenter, DndContext, DragOverlay, type CollisionDetection, type KeyboardCoordinateGetter, KeyboardSensor, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, SortableContext, useSortable } from '@dnd-kit/sortable';
@@ -13,6 +13,28 @@ const chipSx = {
   '& .MuiChip-label': { whiteSpace: 'normal', overflowWrap: 'anywhere', overflow: 'visible', textOverflow: 'clip', py: 0.25 },
   '&:active': { cursor: 'grabbing' },
 };
+function AnimatedLayoutItem({ children, enabled }: { children: React.ReactNode; enabled: boolean }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const previousRect = useRef<DOMRect | null>(null);
+  const animation = useRef<Animation | null>(null);
+  useLayoutEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const nextRect = node.getBoundingClientRect();
+    const oldRect = previousRect.current;
+    previousRect.current = nextRect;
+    if (!enabled || !oldRect) return;
+    const x = oldRect.left - nextRect.left;
+    const y = oldRect.top - nextRect.top;
+    if (Math.abs(x) < 0.5 && Math.abs(y) < 0.5) return;
+    animation.current?.cancel();
+    animation.current = node.animate(
+      [{ transform: `translate(${x}px, ${y}px)` }, { transform: 'translate(0, 0)' }],
+      { duration: 220, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)' },
+    );
+  });
+  return <Box ref={ref} sx={{ display: 'flex', maxWidth: '100%', alignSelf: 'center', alignItems: 'center', flex: '0 0 auto', willChange: enabled ? 'transform' : 'auto' }}>{children}</Box>;
+}
 function AvailableBlock({ item, index, locked, toggle }: { item: Item; index: number; locked: boolean; toggle: (node: HTMLElement) => void }) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({ id: item.id, disabled: locked });
   return <Chip component="button" clickable variant="outlined" ref={setNodeRef} {...attributes} {...listeners} onKeyDown={undefined} aria-pressed={undefined}
@@ -75,6 +97,8 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
   function destination(target: string): Preview | null {
     if (target === bankId) return { zone: 'bank', index: available.length };
     if (target === answerId) return { zone: 'answer', index: value.length };
+    const availableIndex = available.findIndex(item => item.id === target);
+    if (availableIndex >= 0) return { zone: 'bank', index: availableIndex };
     const index = value.indexOf(target);
     return index < 0 ? null : { zone: 'answer', index };
   }
@@ -87,15 +111,26 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
       if (!reducedMotion && container) setDeparture({ item, x: bounds.left - container.left, y: bounds.top - container.top, width: bounds.width, height: bounds.height });
       onChange(selected ? value.filter(v => v !== item.id) : [...value, item.id]);
     };
-    return <Box key={item.id} sx={{ maxWidth: '100%', display: 'flex', alignSelf: 'center', alignItems: 'center', flex: '0 0 auto', animation: !activeId ? 'block-in 140ms ease-in-out both' : 'none', '@keyframes block-in': { from: { opacity: 0, transform: 'scale(.65)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@keyframes block-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.65)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }}>
-      {selected ? <SortableBlock item={item} index={index} locked={locked} toggle={toggle} /> : <AvailableBlock item={item} index={index} locked={locked} toggle={toggle} />}
-    </Box>;
+    return <AnimatedLayoutItem key={item.id} enabled={!activeId && !reducedMotion}>
+      <Box sx={{ maxWidth: '100%', display: 'flex', alignSelf: 'center', alignItems: 'center', flex: '0 0 auto', animation: !activeId ? 'block-in 140ms ease-in-out both' : 'none', '@keyframes block-in': { from: { opacity: 0, transform: 'scale(.65)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@keyframes block-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.65)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }}>
+        {selected ? <SortableBlock item={item} index={index} locked={locked} toggle={toggle} /> : <AvailableBlock item={item} index={index} locked={locked} toggle={toggle} />}
+      </Box>
+    </AnimatedLayoutItem>;
   };
   const answerBlocks = value.map(itemId => question.blocks.find(b => b.id === itemId)).filter((item): item is Item => Boolean(item));
+  const ghostZone = preview?.zone ?? (activeInAnswer ? 'answer' : 'bank');
   const displayedAnswerBlocks = activeInAnswer ? answerBlocks.filter(item => item.id !== activeId) : answerBlocks;
-  const insertion = preview?.zone === 'answer' ? Math.min(preview.index + (value.includes(activeId ?? '') && value.indexOf(activeId ?? '') < preview.index ? 1 : 0), value.length) : -1;
-  const displayInsertion = activeInAnswer ? Math.min(insertion, displayedAnswerBlocks.length) : Math.min(preview?.index ?? -1, displayedAnswerBlocks.length);
-  const ghost = activeItem && preview?.zone === 'answer' ? <Chip key="insertion-ghost" data-insertion-preview="true" aria-hidden="true" label={activeItem.label} variant="outlined" sx={{ ...chipSx, borderColor: 'text.disabled', color: 'text.disabled', opacity: 0.45, boxShadow: 1, pointerEvents: 'none' }} /> : null;
+  const displayedAvailableBlocks = activeId ? available.filter(item => item.id !== activeId) : available;
+  const answerInsertion = ghostZone === 'answer'
+    ? preview?.zone === 'answer'
+      ? Math.min(preview.index + (activeInAnswer && value.indexOf(activeId ?? '') < preview.index ? 1 : 0), value.length)
+      : activeInAnswer ? value.indexOf(activeId ?? '') : -1
+    : -1;
+  const displayAnswerInsertion = Math.min(answerInsertion, displayedAnswerBlocks.length);
+  const bankInsertion = ghostZone === 'bank'
+    ? preview?.zone === 'bank' ? Math.min(preview.index, displayedAvailableBlocks.length) : available.findIndex(item => item.id === activeId)
+    : -1;
+  const ghost = activeItem ? <Chip key="insertion-ghost" data-insertion-preview="true" aria-hidden="true" label={activeItem.label} variant="outlined" sx={{ ...chipSx, borderColor: 'text.disabled', color: 'text.disabled', opacity: 0.45, boxShadow: 1, pointerEvents: 'none' }} /> : null;
   return <Stack ref={root} spacing={2} sx={{ position: 'relative', width: '100%', maxWidth: 600, mx: 'auto', alignItems: 'center' }}>
     <Typography variant="body2" sx={{ textAlign: 'center' }}>{uk.dragBlockHint}</Typography>
     <DndContext id={id} sensors={sensors} collisionDetection={collision}
@@ -105,7 +140,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
         onDragEnd: () => uk.dropped, onDragCancel: () => uk.dragCancelled,
       } }}
       onDragStart={event => { setKeyboardDrag(event.activatorEvent.type === 'keydown'); setActiveId(String(event.active.id)); setPreview(null); setDeparture(null); geometry.current = null; }}
-      onDragOver={({ over }) => setPreview(over ? destination(String(over.id)) : null)}
+      onDragOver={({ over }) => { if (over) setPreview(destination(String(over.id))); }}
       onDragCancel={clearDrag}
       onDragEnd={({ active, over }) => {
         clearDrag();
@@ -122,13 +157,14 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
       <SortableContext items={value}>
         <DropZone id={answerId} label={uk.built} locked={locked || keyboardDrag} highlighted={Boolean(activeId && !value.includes(activeId))}>
           {!value.length && !preview && <Typography color="text.secondary">{uk.emptyBlocks}</Typography>}
-          {displayedAnswerBlocks.flatMap((item, index) => index === displayInsertion ? [ghost, renderBlock(item, true)] : [renderBlock(item, true)])}
-          {displayInsertion === displayedAnswerBlocks.length && ghost}
+          {displayedAnswerBlocks.flatMap((item, index) => index === displayAnswerInsertion ? [ghost, renderBlock(item, true)] : [renderBlock(item, true)])}
+          {displayAnswerInsertion === displayedAnswerBlocks.length && ghost}
         </DropZone>
       </SortableContext>
       <DropZone id={bankId} label={uk.available} locked={locked || keyboardDrag} highlighted={Boolean(activeId && value.includes(activeId))}>
         {!available.length && preview?.zone !== 'bank' && <Typography color="text.secondary">{uk.noBlocks}</Typography>}
-        {available.map(item => renderBlock(item, false))}
+        {displayedAvailableBlocks.flatMap((item, index) => index === bankInsertion ? [ghost, renderBlock(item, false)] : [renderBlock(item, false)])}
+        {bankInsertion === displayedAvailableBlocks.length && ghost}
       </DropZone>
       <DragOverlay dropAnimation={null} style={{ margin: 0 }}>{activeItem ? <Chip aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, width: '100%', bgcolor: 'background.paper', cursor: 'grabbing' }} /> : null}</DragOverlay>
     </DndContext>
