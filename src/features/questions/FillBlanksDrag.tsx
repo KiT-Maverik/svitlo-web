@@ -42,7 +42,7 @@ function BlankDrop({ id, item, preview, disabled, feedback, active, onRemove }: 
   </Box>;
 }
 function PreviewBlock({ item }: { item: Item }) {
-  return <Chip aria-hidden="true" label={item.label} variant="outlined" sx={{ ...chipSx, width: 'max-content', maxWidth: 'min(80vw, 600px)', borderColor: 'text.disabled', color: 'text.disabled', opacity: 0.55, boxShadow: 1, pointerEvents: 'none' }} />;
+  return <Chip aria-hidden="true" label={item.label} variant="outlined" sx={{ ...chipSx, width: 'max-content', maxWidth: 'min(80vw, 600px)', borderColor: 'divider', color: 'text.primary', opacity: 1, boxShadow: 2, pointerEvents: 'none' }} />;
 }
 function BlockBank({ id, items, disabled }: { id: string; items: Item[]; disabled: boolean }) {
   const { setNodeRef, isOver } = useDroppable({ id, disabled });
