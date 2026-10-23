@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "tests/type-contracts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".test-build"
+  ]
+}
