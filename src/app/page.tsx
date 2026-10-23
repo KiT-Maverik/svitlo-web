@@ -5,6 +5,6 @@ export default function Home() {
     <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
       {[['/student', 'Кабінет учня', 'Продовжуйте уроки й переглядайте прогрес.'], ['/teacher', 'Кабінет учителя', 'Складайте програму з наявних уроків.'], ['/admin/lessons', 'Адміністрування', 'Переглядайте уроки та готуйте зміни.']].map(([href, title, description]) => <Paper key={href} variant="outlined" sx={{ p: 3, flex: 1 }}><Typography variant="h6" component="h2">{title}</Typography><Typography color="text.secondary" sx={{ my: 2 }}>{description}</Typography><Button href={href} variant="contained">Відкрити</Button></Paper>)}
     </Stack>
-    <Stack direction="row" sx={{ gap: 2, flexWrap: 'wrap' }}><Button variant="outlined" href="/questions">Інтерактивні запитання</Button><Button href="/questions/api">API запитань</Button><Button href="/lessons/light">Огляд уроку про світло</Button></Stack>
+    <Stack direction="row" sx={{ gap: 2, flexWrap: 'wrap' }}><Button variant="outlined" href="/questions">Інтерактивні запитання</Button><Button href="/questions/api">API запитань</Button><Button variant="contained" href="/topics/light">Відкрити урок «Як рухається світло»</Button><Button href="/lessons/light">Огляд уроку про світло</Button></Stack>
   </Stack></Container>;
 }
