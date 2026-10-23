@@ -108,7 +108,7 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
             </Box>
           </Box>
         </Drawer>
-        <Box component="main" id="learning-content" tabIndex={-1} sx={{ height: '100%', overflowY: 'auto', overscrollBehavior: 'contain' }}>
+        <Box component="main" id="learning-content" tabIndex={-1} sx={{ height: '100%', overflowY: 'auto', scrollbarGutter: 'stable both-edges', overscrollBehavior: 'contain' }}>
           {children}
         </Box>
       </Box>

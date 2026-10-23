@@ -11,7 +11,7 @@
 .steps button:not(:disabled):focus-visible .stepLabel { outline: 2px solid #427fbd; outline-offset: 2px; }
 .steps button:disabled { cursor: default; opacity: .65; }
 @media (prefers-color-scheme: dark) { .steps button[aria-current=step] .stepLabel { color: #fff; } }
-.stage { flex: 1; display: flex; flex-direction: column; animation: appear .35s ease both; }
+.stage { flex: 1; min-height: 0; display: flex; flex-direction: column; animation: appear .35s ease both; }
 @keyframes appear { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 .practice, .quiz { width: min(900px, 100%); margin: auto; padding: clamp(24px, 5vw, 56px); }
 .questionProgress { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; width: min(100%, 914px); margin: 0 auto 24px; padding: 0; list-style: none; }
@@ -46,7 +46,7 @@
 .quote { margin: 28px 0; border-left: 4px solid #e5b647; padding: 18px 24px; background: #fff8e8; border-radius: 0 12px 12px 0; font-size: 20px; line-height: 1.5; }
 .caption { color: #66788d; font-size: 13px; }
 .caption a { color: #245f96; }
-.flashStage { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px 0; min-height: 500px; }
+.flashStage { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px 0; }
 .counter { font-size: 13px; color: #728296; }
 .cardArea { width: 100%; display: grid; grid-template-columns: minmax(70px, 1fr) minmax(0, 640px) minmax(70px, 1fr); align-items: stretch; position: relative; }
 .card { grid-column: 2; min-height: 340px; width: 100%; border-radius: 24px; border: 1px solid #dce5ef; box-shadow: 0 12px 40px #16365212; padding: 32px; background: white; color: #20344e; cursor: pointer; font: inherit; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
@@ -76,5 +76,5 @@
 @keyframes burst { 0% { opacity: 0; transform: translate(0, 0) rotate(0); } 12% { opacity: 1; } 65% { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--spin)); } 100% { opacity: 0; transform: translate(var(--dx), 65vh) rotate(var(--spin)); } }
 .lesson button:focus-visible, .primary:focus-visible { outline: 3px solid #427fbd; outline-offset: 4px; }
 @media (hover: hover) { .rating span, .rating strong { opacity: 0; transition: opacity .2s; } .rating:hover span, .rating:hover strong, .rating:focus-visible span, .rating:focus-visible strong { opacity: 1; } }
-@media (max-width: 600px) { .steps { gap: 6px; } .steps button { font-size: 11px; } .cardArea { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; padding: 0 16px; } .card { grid-column: 1 / -1; grid-row: 1; min-height: 320px; padding: 24px; } .forget { grid-column: 1; grid-row: 2; } .remember { grid-column: 2; grid-row: 2; } .rating { border-radius: 12px; background: #f0f4f9; min-height: 76px; } .rating span, .rating strong { opacity: 1; } .rating span { font-size: 20px; } .flashStage { min-height: 460px; } }
+@media (max-width: 600px) { .steps { gap: 6px; } .steps button { font-size: 11px; } .cardArea { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; padding: 0 16px; } .card { grid-column: 1 / -1; grid-row: 1; min-height: 320px; padding: 24px; } .forget { grid-column: 1; grid-row: 2; } .remember { grid-column: 2; grid-row: 2; } .rating { border-radius: 12px; background: #f0f4f9; min-height: 76px; } .rating span, .rating strong { opacity: 1; } .rating span { font-size: 20px; } }
 @media (prefers-reduced-motion: reduce) { .stage, .answer, .finish, .feedback { animation: none; } .confetti { display: none; } .segment, .rating, .rating span, .rating strong { transition: none; } }
