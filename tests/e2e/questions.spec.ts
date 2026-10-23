@@ -1,7 +1,7 @@
 import { test, expect, type Locator } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => { await page.goto('/questions'); });
-test('single choice keyboard cycle locks, retries retain, reset clears; examples are independent', async ({ page }) => {
+test('single choice keyboard cycle locks, retries clear, reset clears; examples are independent', async ({ page }) => {
   const section = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
   await expect(page.getByRole('region')).toHaveCount(7);
   await expect(section.getByText('Пояснення:', { exact: false })).toHaveCount(0);
@@ -15,10 +15,10 @@ test('single choice keyboard cycle locks, retries retain, reset clears; examples
   await page.keyboard.press('Enter');
   await expect(section.getByRole('button', { name: 'Меркурій' })).toHaveAttribute('aria-pressed', 'true');
   await section.getByRole('button', { name: 'Перевірити', exact: true }).focus(); await page.keyboard.press('Enter');
-  await expect(section.getByRole('status')).toContainText('Правильно!');
+  await expect(section.getByRole('status')).toBeEmpty();
   await expect(earth).toBeDisabled();
   await section.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  await expect(section.getByRole('button', { name: 'Меркурій' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(section.getByRole('button', { name: 'Меркурій' })).toHaveAttribute('aria-pressed', 'false');
   await expect(section.getByRole('status')).toBeEmpty();
   await section.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(section.getByRole('button', { name: 'Меркурій' })).toHaveAttribute('aria-pressed', 'false');
@@ -31,18 +31,18 @@ test('multiple, matching, short text and numeric validate through shared control
   await expect(multi.getByRole('button', { name: '2', exact: true })).toHaveAttribute('aria-pressed', 'false');
   for (const name of ['2', '5']) { await multi.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Space'); }
   await multi.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(multi.getByRole('status')).toContainText('Правильно!');
+  await expect(multi.getByRole('status')).toBeEmpty();
   const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
   await expect(match.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
   for (const name of ['Україна', 'Київ', 'Франція', 'Париж']) {
     await match.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
   }
   await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
+  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   const text = page.getByRole('region', { name: /Як називається/ });
   await text.getByRole('textbox').fill('  ФОТОСИНТЕЗ  ');
   await text.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(text.getByRole('status')).toContainText('Правильно!');
+  await expect(text.getByRole('status')).toBeEmpty();
   const number = page.getByRole('region', { name: /Обчисліть довжину/ });
   await number.getByRole('textbox').fill('12abc');
   await expect(number.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
@@ -51,7 +51,7 @@ test('multiple, matching, short text and numeric validate through shared control
   await expect(number.getByRole('textbox')).not.toHaveAttribute('readonly');
   await number.getByRole('textbox').fill('6,28');
   await number.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(number.getByRole('status')).toContainText('Правильно!');
+  await expect(number.getByRole('status')).toBeEmpty();
 });
 test('ordering and block builder work using keyboard with duplicate labels and spare blocks', async ({ page }) => {
   const order = page.getByRole('region', { name: /Упорядкуйте етапи/ });
@@ -68,7 +68,7 @@ test('ordering and block builder work using keyboard with duplicate labels and s
   await page.keyboard.press('Space');
   await expect(order.getByRole('button', { name: 'Опади (3)', exact: true })).toBeFocused();
   await order.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(order.getByRole('status').filter({ hasText: 'Правильно!' })).toContainText('Правильно!');
+  await expect(order.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   const blocks = page.getByRole('region', { name: /Складіть рівність для/ });
   for (const name of ['Додати: 1 (1)', 'Додати: + (2)', 'Додати: 1 (3)', 'Додати: = (4)', 'Додати: 2 (5)']) {
     await blocks.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
@@ -77,7 +77,7 @@ test('ordering and block builder work using keyboard with duplicate labels and s
   await blocks.getByRole('button', { name: 'Повернути: 2 (5)', exact: true }).focus(); await page.keyboard.press('Enter');
   await blocks.getByRole('button', { name: 'Додати: 2 (5)', exact: true }).focus(); await page.keyboard.press('Enter');
   await blocks.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(blocks.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
+  await expect(blocks.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await blocks.getByRole('button', { name: 'Спробувати ще раз' }).click();
   await blocks.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(blocks.getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
@@ -144,10 +144,11 @@ test('ordering can be dragged by mouse or touch, cancelled with Escape, and lock
   await page.keyboard.press('ArrowUp'); await page.keyboard.press('Escape');
   await expect(moved).toBeVisible();
   await order.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(order.getByRole('status').filter({ hasText: 'Правильно!' })).toContainText('Правильно!');
+  await expect(order.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await expect(moved).toBeDisabled();
   await order.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  await expect(moved).toBeEnabled();
+  await expect(moved).toHaveCount(0);
+  await expect(order.getByRole('button', { name: 'Опади (1)', exact: true })).toBeEnabled();
 });
 
 test('matching previews curves, replaces endpoints and deletes links with keyboard or hover cross', async ({ page }, testInfo) => {
@@ -228,7 +229,7 @@ test('one chip builder supports click, drag, insertion preview, cross-zone moves
   await expect(built.getByRole('button')).toHaveText(['1', '+', '1', '=', '2']);
   await section.screenshot({ path: testInfo.outputPath('drag-blocks.png') });
   await section.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(section.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
+  await expect(section.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await expect(built.getByRole('button').first()).toBeDisabled();
   await section.getByRole('button', { name: 'Спробувати ще раз' }).click();
   await section.getByRole('button', { name: 'Скинути', exact: true }).click();
@@ -316,6 +317,6 @@ test('matching connects from either side with preview, cancellation and one-to-o
   await match.getByRole('button', { name: 'Скинути', exact: true }).click();
   for (const name of ['Париж', 'Франція', 'Київ', 'Україна']) await match.getByRole('button', { name, exact: true }).click();
   await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
-  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
+  await expect(match.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await expect(paris).toBeDisabled();
 });

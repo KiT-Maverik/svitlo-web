@@ -1,13 +1,16 @@
 'use client';
 
-import { Alert, Typography } from '@mui/material';
-import type { CheckResult } from './model';
+import { Box, Fade, Paper } from '@mui/material';
+import MarkdownContent from '../../components/MarkdownContent';
 import { uk } from './messages';
-export function QuestionResult({ result, explanation, showExplanation = true, showErrors = true }: { result: CheckResult | null; explanation: string; showExplanation?: boolean; showErrors?: boolean }) {
-  return <div style={{ textAlign: 'center', maxWidth: '100%' }} role="status" aria-label={uk.checkResult} aria-live="polite" aria-atomic="true">
-    {result && (showErrors || result.status === 'correct') && <Alert severity={result.status === 'correct' ? 'success' : result.status === 'incorrect' ? 'error' : 'warning'}>
-      {result.status === 'invalid' ? result.reason === 'number-format' ? uk.numberFormat : result.reason === 'definition' ? uk.definition : uk.invalid : result.status === 'incorrect' && !showExplanation ? uk.incorrectShort : uk[result.status]}
-      {showExplanation && (result.status === 'correct' || result.status === 'incorrect') && <Typography sx={{ mt: 1, whiteSpace: 'pre-wrap' }}><strong>{uk.explanation}: </strong>{explanation}</Typography>}
-    </Alert>}
-  </div>;
+export function QuestionResult({ explanation, visible, onClose }: { explanation: string; visible: boolean; onClose: () => void }) {
+  return <Box role="status" aria-label={uk.checkResult} aria-live="polite" aria-atomic="true" sx={{ maxWidth: '100%', textAlign: 'center' }}>
+    <Fade in={visible} timeout={220} mountOnEnter unmountOnExit>
+      <Box onClick={onClose} sx={{ position: 'absolute', inset: 0, zIndex: 2, display: 'flex', alignItems: 'stretch', justifyContent: 'center', p: { xs: 1, sm: 2 }, bgcolor: 'background.paper' }}>
+        <Paper elevation={0} onClick={event => event.stopPropagation()} sx={{ width: '100%', maxWidth: 720, minWidth: 0, maxHeight: '100%', overflowY: 'auto', p: { xs: 2, sm: 3 }, textAlign: 'left', border: 0, boxShadow: 'none', bgcolor: 'background.paper' }}>
+          <MarkdownContent content={explanation} />
+        </Paper>
+      </Box>
+    </Fade>
+  </Box>;
 }

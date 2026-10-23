@@ -15,7 +15,7 @@ function TypedView<K extends QuestionType>({ result = null, ...props }: Interact
   return <Stack spacing={2} sx={{ alignItems: 'center' }}>
     <Typography component="h2" variant="h6" id={heading} sx={{ textAlign: 'center' }}>{props.question.prompt}</Typography>
     <Box sx={{ width: '100%', textAlign: 'center' }} role="group" aria-labelledby={heading}><Interaction {...props} result={result} readOnly={props.readOnly || Boolean(result)} /></Box>
-    <QuestionResult result={result} explanation={props.question.explanation} showErrors={props.showErrors} showExplanation={props.showCorrectAnswers !== false} />
+    <QuestionResult explanation={props.question.explanation} visible={false} onClose={() => {}} />
   </Stack>;
 }
 export function QuestionView(props: QuestionViewProps) {

@@ -5,17 +5,25 @@ test('choice review distinguishes wrong, missed and selected correct options and
   const single = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
   const earth = single.getByRole('button', { name: 'Земля', exact: true });
   const mercury = single.getByRole('button', { name: 'Меркурій', exact: true });
+  const explanation = single.getByRole('button', { name: 'Показати пояснення', exact: true });
+  await expect(explanation).toBeDisabled();
   await earth.click();
+  await expect(explanation).toBeDisabled();
   await expect(single.locator('[data-feedback]')).toHaveCount(0);
   await single.getByRole('button', { name: 'Перевірити', exact: true }).click();
+  await expect(explanation).toBeEnabled();
+  await explanation.click();
+  await expect(single.getByText('Меркурій — перша планета від Сонця.', { exact: true })).toBeVisible();
+  await single.getByRole('button', { name: 'Приховати пояснення', exact: true }).click();
   await expect(earth).toHaveAttribute('data-feedback', 'incorrect');
   await expect(mercury).toHaveAttribute('data-feedback', 'missed');
   await expect(mercury).toHaveAttribute('aria-pressed', 'false');
-  await expect(single.getByText('Правильна відповідь — не обрано', { exact: true })).toBeVisible();
+  await expect(single.getByText('Правильна відповідь — не обрано', { exact: true })).toHaveCount(0);
+  await expect(mercury).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
   await expect(earth).toBeDisabled();
   await single.getByRole('button', { name: 'Спробувати ще раз' }).click();
   await expect(single.locator('[data-feedback]')).toHaveCount(0);
-  await expect(earth).toHaveAttribute('aria-pressed', 'true');
+  await expect(earth).toHaveAttribute('aria-pressed', 'false');
   await mercury.click(); await single.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(mercury).toHaveAttribute('data-feedback', 'correct');
   await single.getByRole('button', { name: 'Скинути', exact: true }).click();
@@ -54,11 +62,11 @@ test('independent feedback flags never reveal grading before check and hidden re
   await expect(q.locator('[data-feedback]')).toHaveCount(0);
   await expect(q.getByRole('button', { name: 'Меркурій', exact: true })).toBeDisabled();
   await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  await expect(q.getByRole('button', { name: 'Земля', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  await expect(q.getByRole('button', { name: 'Земля', exact: true })).toHaveAttribute('aria-pressed', 'false');
   await expect(q.getByRole('button', { name: 'Меркурій', exact: true })).toBeEnabled();
 });
 
-test('matching requires all pairs, reviews the submitted pairing and restores authored order on retry', async ({ page }, testInfo) => {
+test('matching requires all pairs and reviews each submitted pair without reordering the columns', async ({ page }, testInfo) => {
   await page.goto('/questions');
   const q = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
   const check = q.getByRole('button', { name: 'Перевірити', exact: true });
@@ -76,7 +84,7 @@ test('matching requires all pairs, reviews the submitted pairing and restores au
   for (const name of ['Київ', 'Україна', 'Париж', 'Франція']) await q.getByRole('button', { name, exact: true }).click();
   await expect(right).toHaveText(['Париж', 'Київ']);
   await check.click();
-  await expect(right).toHaveText(['Київ', 'Париж']);
+  await expect(right).toHaveText(['Париж', 'Київ']);
   await expect(q.locator('button[data-feedback="correct"]')).toHaveCount(4);
   await expect(q.locator('svg > g[data-feedback="correct"]')).toHaveCount(2);
   const leftY = await q.locator('[data-match-side="left"]').evaluateAll(nodes => nodes.map(n => { const r = n.getBoundingClientRect(); return r.y + r.height / 2; }));
@@ -100,7 +108,7 @@ test('text and numeric answers stay editable until valid and render locked resul
   await expect(text.getByRole('img', { name: 'Неправильна відповідь', exact: true })).toBeVisible();
   await expect(input).toHaveAttribute('readonly', '');
   await text.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  await expect(input).toHaveValue('дихання'); await expect(text.getByRole('img')).toHaveCount(0);
+  await expect(input).toHaveValue(''); await expect(text.getByRole('img')).toHaveCount(0);
   await input.fill('ФОТОСИНТЕЗ'); await check.click();
   await expect(text.getByRole('img', { name: 'Правильна відповідь', exact: true })).toBeVisible();
   const numeric = page.getByRole('region', { name: /Обчисліть довжину кола/ });
@@ -133,5 +141,5 @@ test('ordering reviews individual positions and restores drag icons on retry', a
   await q.screenshot({ path: testInfo.outputPath('ordering-review.png') });
   await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
   await expect(q.locator('[data-feedback]')).toHaveCount(0);
-  await expect(q.getByRole('button', { name: 'Опади (2)', exact: true })).toBeEnabled();
+  await expect(q.getByRole('button', { name: 'Опади (1)', exact: true })).toBeEnabled();
 });

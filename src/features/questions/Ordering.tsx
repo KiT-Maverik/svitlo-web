@@ -29,12 +29,14 @@ function SortableAnswer({ item, position, disabled, feedback }: { item: Item; po
         borderRadius: 1, textAlign: 'left', minHeight: 48, cursor: disabled ? 'default' : isDragging ? 'grabbing' : 'grab',
         border: '1px solid', borderColor: feedback ? `${tone}.main` : 'transparent',
         bgcolor: theme => feedback ? alpha(theme.palette[tone].main, 0.12) : isDragging ? theme.palette.action.selected : theme.palette.background.paper, zIndex: isDragging ? 1 : 'auto',
+        transition: theme => theme.transitions.create(['background-color', 'border-color', 'color'], { duration: 220, easing: theme.transitions.easing.easeInOut }),
         boxShadow: isDragging ? 3 : 0,
         '&:not(.Mui-disabled):hover': { bgcolor: 'action.hover' },
         '&.Mui-disabled': { opacity: feedback ? 1 : 0.6, color: 'text.primary' },
         '&.Mui-focusVisible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 },
+        '@media (prefers-reduced-motion: reduce)': { transition: 'none' },
       }}>
-      <Icon aria-hidden="true" sx={{ flexShrink: 0, color: feedback ? `${tone}.main` : 'text.secondary' }} />
+      <Icon key={feedback ?? 'drag'} aria-hidden="true" sx={{ flexShrink: 0, color: feedback ? `${tone}.main` : 'text.secondary', animation: 'ordering-feedback-pop 180ms ease-out both', '@keyframes ordering-feedback-pop': { from: { opacity: 0, transform: 'scale(.55)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }} />
       <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>{item.label}</Typography>
     </ButtonBase>
   </Box>;

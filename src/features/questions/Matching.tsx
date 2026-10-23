@@ -2,6 +2,8 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { alpha, Box, ButtonBase, Stack, Typography, useTheme } from '@mui/material';
+import CheckCircle from '@mui/icons-material/CheckCircle';
+import Close from '@mui/icons-material/Close';
 import type { InteractionProps } from './interaction-props';
 import { isGraded } from './feedback';
 import { uk } from './messages';
@@ -19,10 +21,7 @@ export function Matching({ question, value, onChange, disabled, readOnly, result
   const theme = useTheme();
   const locked = Boolean(disabled || readOnly || result);
   const review = isGraded(result);
-  const rightItems = review ? [
-    ...question.left.flatMap(item => question.right.filter(right => right.id === value[item.id])),
-    ...question.right.filter(item => !Object.values(value).includes(item.id)),
-  ] : question.right;
+  const rightItems = question.right;
   const pairFeedback = (leftId: string, rightId: string) => {
     if (!review) return null;
     const correct = question.pairs.some(pair => pair.leftId === leftId && pair.rightId === rightId);
@@ -90,14 +89,16 @@ export function Matching({ question, value, onChange, disabled, readOnly, result
           const leftId = side === 'left' ? item.id : Object.keys(value).find(id => value[id] === item.id);
           const feedback = leftId && value[leftId] ? pairFeedback(leftId, value[leftId]) : null;
           const color = pairColor(feedback);
+          const FeedbackIcon = feedback === 'correct' ? CheckCircle : feedback === 'incorrect' ? Close : null;
           const paired = side === 'left' ? Boolean(value[item.id]) : Object.values(value).includes(item.id);
           const active = pending?.side === side && pending.id === item.id;
           return <ButtonBase key={item.id} disabled={locked} aria-pressed={active || paired}
             data-match-id={item.id} data-match-side={side} data-feedback={feedback ?? undefined} aria-description={feedback ? feedback === 'correct' ? uk.optionCorrect : uk.optionIncorrect : undefined} aria-label={item.label} aria-describedby={feedback ? undefined : hint}
             ref={node => { const nodes = side === 'left' ? leftNodes : rightNodes; if (node) nodes.current.set(item.id, node); else nodes.current.delete(item.id); }}
             onClick={() => choose(side, item.id)}
-            sx={{ gridColumn: side === 'left' ? 1 : 2, gridRow: index + 1, position: 'relative', minHeight: 52, px: { xs: 1, sm: 2 }, py: 1.5, width: '100%', border: '1px solid', borderColor: feedback ? color : active || paired ? 'primary.main' : 'divider', borderRadius: 1, textAlign: 'left', justifyContent: 'flex-start', bgcolor: feedback ? alpha(color, 0.12) : active ? 'action.selected' : 'background.paper', '&:hover': { bgcolor: 'action.hover' }, '&.Mui-disabled': { opacity: review ? 1 : 0.6, color: 'text.primary' } }}>
-            <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>{item.label}</Typography>
+            sx={{ gridColumn: side === 'left' ? 1 : 2, gridRow: index + 1, position: 'relative', minHeight: 52, px: { xs: 1, sm: 2 }, py: 1.5, width: '100%', border: '1px solid', borderColor: feedback ? color : active || paired ? 'primary.main' : 'divider', borderRadius: 1, textAlign: 'center', justifyContent: 'center', gap: 1, bgcolor: feedback ? alpha(color, 0.12) : active ? 'action.selected' : 'background.paper', transition: theme => theme.transitions.create(['background-color', 'border-color'], { duration: 220, easing: theme.transitions.easing.easeInOut }), '&:hover': { bgcolor: 'action.hover' }, '&.Mui-disabled': { opacity: review ? 1 : 0.6, color: 'text.primary' }, '@media (prefers-reduced-motion: reduce)': { transition: 'none' } }}>
+            <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere', textAlign: 'center' }}>{item.label}</Typography>
+            {side === 'left' && FeedbackIcon && <FeedbackIcon aria-hidden="true" sx={{ position: 'absolute', right: { xs: 8, sm: 12 }, top: '50%', transform: 'translateY(-50%)', color, animation: 'matching-feedback-pop 180ms ease-out both', '@keyframes matching-feedback-pop': { from: { opacity: 0, transform: 'translateY(-50%) scale(.55)' }, to: { opacity: 1, transform: 'translateY(-50%) scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }} />}
             {(active || paired) && <Box component="span" aria-hidden="true" sx={{ position: 'absolute', width: 8, height: 8, borderRadius: '50%', bgcolor: color, top: 'calc(50% - 4px)', [side === 'left' ? 'right' : 'left']: -5 }} />}
           </ButtonBase>;
         })}
@@ -117,10 +118,6 @@ export function Matching({ question, value, onChange, disabled, readOnly, result
             {selected && <path d={curve(a, b)} fill="none" stroke="currentColor" strokeWidth={10} opacity={0.18} />}
             <path d={curve(a, b)} fill="none" stroke="currentColor" strokeWidth={2} />
             <path data-connection={leftId} d={curve(a, b)} fill="none" stroke="transparent" strokeWidth={18} pointerEvents={locked ? 'none' : 'stroke'} onClick={() => setHovered(leftId)} />
-            {feedback && <g aria-label={feedback === 'correct' ? uk.optionCorrect : uk.optionIncorrect}>
-              <circle cx={mid.x} cy={mid.y} r={13} fill={theme.palette.background.paper} stroke="currentColor" />
-              <path d={feedback === 'correct' ? `M ${mid.x - 5} ${mid.y} l 3 4 7 -8` : `M ${mid.x - 4} ${mid.y - 4} l 8 8 M ${mid.x + 4} ${mid.y - 4} l -8 8`} fill="none" stroke="currentColor" strokeWidth={2} />
-            </g>}
             {selected && <g onClick={() => remove(leftId)} style={{ cursor: 'pointer', pointerEvents: 'all' }}>
               <circle cx={mid.x} cy={mid.y} r={13} fill={theme.palette.background.paper} stroke="currentColor" />
               <path d={`M ${mid.x - 4} ${mid.y - 4} l 8 8 M ${mid.x + 4} ${mid.y - 4} l -8 8`} stroke="currentColor" strokeWidth={2} />

@@ -20,13 +20,11 @@ test('automatic grading and hidden feedback still emit one ordered lifecycle', a
   const events = page.getByRole('status', { name: 'Події контролера' });
   await expect(events).toHaveText('change:1:editing\ncheck:1:correct\nanswer:1:correct\ncorrect:1:correct');
   await q.getByRole('button', { name: 'Спробувати ще раз' }).click();
-  await expect(q.getByRole('button', { name: '2', exact: true })).toHaveAttribute('aria-pressed', 'true');
-  await q.getByRole('button', { name: '2', exact: true }).click();
   await expect(q.getByRole('button', { name: '2', exact: true })).toHaveAttribute('aria-pressed', 'false');
-  await expect(q.getByRole('button', { name: 'Спробувати ще раз' })).toHaveCount(0);
-  await page.getByRole('checkbox', { name: 'Приховати результат автоматичної перевірки' }).uncheck();
   await q.getByRole('button', { name: '3', exact: true }).click();
-  await expect(q.getByRole('status', { name: 'Результат перевірки' })).toContainText('Неправильно');
+  await expect(q.getByRole('button', { name: 'Спробувати ще раз' })).toBeVisible();
+  await page.getByRole('checkbox', { name: 'Приховати результат автоматичної перевірки' }).uncheck();
+  await expect(q.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await expect(q.getByText('Пояснення:', { exact: false })).toHaveCount(0);
   await expect(events).toContainText('answer:2:incorrect');
   await q.getByRole('button', { name: 'Скинути', exact: true }).click();
@@ -42,7 +40,7 @@ test('custom root/question/answers/actions slots share state and cannot bypass l
   await expect(state).toContainText('hasInteracted=true; isModified=false');
   await input.fill('42');
   await q.getByRole('button', { name: 'Власна перевірка', exact: true }).click();
-  await expect(q.getByRole('status', { name: 'Результат перевірки' })).toContainText('Правильно!');
+  await expect(q.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await expect(input).toBeDisabled();
   await q.getByRole('button', { name: 'Власна повторна спроба' }).click();
   await expect(input).toHaveValue('42');
