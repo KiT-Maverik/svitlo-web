@@ -25,9 +25,9 @@ function SortableBlock({ item, index, locked, toggle }: { item: Item; index: num
     aria-label={`${uk.remove}: ${item.label} (${index + 1})`} label={item.label} variant="outlined" disabled={locked} onClick={event => toggle(event.currentTarget)}
     sx={{ ...chipSx, opacity: isDragging ? 0.25 : 1 }} />;
 }
-function DropZone({ id, label, children, locked }: { id: string; label: string; children: React.ReactNode; locked: boolean }) {
-  const { setNodeRef, isOver } = useDroppable({ id, disabled: locked });
-  return <Box ref={setNodeRef} role="group" aria-label={label} sx={{ width: '100%', p: 2, border: '1px dashed', borderColor: isOver ? 'primary.main' : 'divider', borderRadius: 1, minHeight: 100 }}>
+function DropZone({ id, label, children, locked, highlighted = false }: { id: string; label: string; children: React.ReactNode; locked: boolean; highlighted?: boolean }) {
+  const { setNodeRef } = useDroppable({ id, disabled: locked });
+  return <Box ref={setNodeRef} role="group" aria-label={label} sx={{ width: '100%', p: 2, border: '1px dashed', borderColor: highlighted ? 'primary.main' : 'divider', borderRadius: 1, minHeight: 100, transition: theme => theme.transitions.create('border-color', { duration: 180, easing: theme.transitions.easing.easeInOut }) }}>
     <Typography variant="subtitle2" sx={{ mb: 1, textAlign: 'center' }}>{label}</Typography>
     <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', justifyContent: 'center', gap: 1, minHeight: 44, alignItems: 'center' }}>{children}</Stack>
   </Box>;
@@ -56,6 +56,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
   const sensors = useSensors(useSensor(MouseSensor, { activationConstraint: { distance: 5 } }), useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 8 } }), useSensor(KeyboardSensor, { coordinateGetter: keyboardCoordinates, scrollBehavior: 'auto', keyboardCodes: { start: ['Space'], cancel: ['Escape'], end: ['Space', 'Enter'] } }));
   const available = question.blocks.filter(item => !value.includes(item.id));
   const activeItem = question.blocks.find(item => item.id === activeId);
+  const activeInAnswer = Boolean(activeId && value.includes(activeId));
   const collision: CollisionDetection = args => {
     if (!args.pointerCoordinates) return closestCenter(args);
     // Freeze measurements before the placeholder changes layout, avoiding a moving insertion target.
@@ -90,9 +91,11 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
       {selected ? <SortableBlock item={item} index={index} locked={locked} toggle={toggle} /> : <AvailableBlock item={item} index={index} locked={locked} toggle={toggle} />}
     </Box>;
   };
-  const placeholder = activeItem && preview && <Chip key="insertion-preview" data-insertion-preview="true" aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, bgcolor: 'action.disabledBackground', border: '1px dashed', borderColor: 'text.disabled', color: 'transparent', pointerEvents: 'none' }} />;
   const answerBlocks = value.map(itemId => question.blocks.find(b => b.id === itemId)).filter((item): item is Item => Boolean(item));
+  const displayedAnswerBlocks = activeInAnswer ? answerBlocks.filter(item => item.id !== activeId) : answerBlocks;
   const insertion = preview?.zone === 'answer' ? Math.min(preview.index + (value.includes(activeId ?? '') && value.indexOf(activeId ?? '') < preview.index ? 1 : 0), value.length) : -1;
+  const displayInsertion = activeInAnswer ? Math.min(insertion, displayedAnswerBlocks.length) : Math.min(preview?.index ?? -1, displayedAnswerBlocks.length);
+  const ghost = activeItem && preview?.zone === 'answer' ? <Chip key="insertion-ghost" data-insertion-preview="true" aria-hidden="true" label={activeItem.label} variant="outlined" sx={{ ...chipSx, borderColor: 'text.disabled', color: 'text.disabled', opacity: 0.45, boxShadow: 1, pointerEvents: 'none' }} /> : null;
   return <Stack ref={root} spacing={2} sx={{ position: 'relative', width: '100%', maxWidth: 600, mx: 'auto', alignItems: 'center' }}>
     <Typography variant="body2" sx={{ textAlign: 'center' }}>{uk.dragBlockHint}</Typography>
     <DndContext id={id} sensors={sensors} collisionDetection={collision}
@@ -117,18 +120,17 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
         else if (target !== itemId) onChange(arrayMove(value, from, Math.min(dest.index, value.length - 1)));
       }}>
       <SortableContext items={value}>
-        <DropZone id={answerId} label={uk.built} locked={locked || keyboardDrag}>
+        <DropZone id={answerId} label={uk.built} locked={locked || keyboardDrag} highlighted={Boolean(activeId && !value.includes(activeId))}>
           {!value.length && !preview && <Typography color="text.secondary">{uk.emptyBlocks}</Typography>}
-          {answerBlocks.flatMap((item, index) => index === insertion ? [placeholder, renderBlock(item, true)] : [renderBlock(item, true)])}
-          {insertion === value.length && placeholder}
+          {displayedAnswerBlocks.flatMap((item, index) => index === displayInsertion ? [ghost, renderBlock(item, true)] : [renderBlock(item, true)])}
+          {displayInsertion === displayedAnswerBlocks.length && ghost}
         </DropZone>
       </SortableContext>
-      <DropZone id={bankId} label={uk.available} locked={locked || keyboardDrag}>
+      <DropZone id={bankId} label={uk.available} locked={locked || keyboardDrag} highlighted={Boolean(activeId && value.includes(activeId))}>
         {!available.length && preview?.zone !== 'bank' && <Typography color="text.secondary">{uk.noBlocks}</Typography>}
         {available.map(item => renderBlock(item, false))}
-        {preview?.zone === 'bank' && placeholder}
       </DropZone>
-      <DragOverlay dropAnimation={null} style={{ margin: 0 }}>{activeItem ? <Chip aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, width: '100%', bgcolor: 'background.paper', boxShadow: 3, cursor: 'grabbing' }} /> : null}</DragOverlay>
+      <DragOverlay dropAnimation={null} style={{ margin: 0 }}>{activeItem ? <Chip aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, width: '100%', bgcolor: 'background.paper', cursor: 'grabbing' }} /> : null}</DragOverlay>
     </DndContext>
     {departure && <Box aria-hidden="true" onAnimationEnd={() => setDeparture(null)} sx={{ position: 'absolute', pointerEvents: 'none', m: '0 !important', left: departure.x, top: departure.y, width: departure.width, height: departure.height, animation: 'block-out 140ms ease-in-out both', '@keyframes block-out': { from: { opacity: 1, transform: 'scale(1)' }, to: { opacity: 0, transform: 'scale(.65)' } }, '@media (prefers-reduced-motion: reduce)': { display: 'none' } }}><Chip label={departure.item.label} sx={{ ...chipSx, width: '100%' }} /></Box>}
   </Stack>;
