@@ -1,13 +1,16 @@
 'use client';
 
 import { useCallback, useId, useRef, useState } from 'react';
-import { Box, Chip, Stack, Typography, useMediaQuery } from '@mui/material';
+import DeleteOutlineOutlined from '@mui/icons-material/DeleteOutlineOutlined';
+import InfoOutlined from '@mui/icons-material/InfoOutlined';
+import { alpha, Box, Chip, Divider, Stack, Typography, useMediaQuery } from '@mui/material';
 import { closestCenter, DndContext, DragOverlay, type CollisionDetection, type KeyboardCoordinateGetter, KeyboardSensor, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, SortableContext, useSortable } from '@dnd-kit/sortable';
 import type { InteractionProps } from './interaction-props';
 import type { Item } from '../../types/questions';
 import { uk } from './messages';
 import { AnimatedLayoutItem, type DragRect } from './AnimatedLayoutItem';
+import { choiceFeedback, isGraded, type ChoiceFeedback } from './feedback';
 
 const chipSx = {
   height: 'auto', minHeight: 32, alignSelf: 'center', flex: '0 0 auto', bgcolor: 'transparent', maxWidth: '100%', fontSize: '1rem', cursor: 'grab',
@@ -20,13 +23,14 @@ function AvailableBlock({ item, id, index, locked, toggle }: { item: Item; id: s
     aria-label={`${uk.add}: ${item.label} (${index + 1})`} label={item.label} disabled={locked} onClick={event => toggle(event.currentTarget)}
     sx={{ ...chipSx, opacity: isDragging ? 0.25 : 1 }} />;
 }
-function SortableBlock({ item, id, index, locked, toggle }: { item: Item; id: string; index: number; locked: boolean; toggle: (node: HTMLElement) => void }) {
+function SortableBlock({ item, id, index, locked, toggle, feedback }: { item: Item; id: string; index: number; locked: boolean; toggle: (node: HTMLElement) => void; feedback?: Exclude<ChoiceFeedback, 'missed'> }) {
   const { attributes, listeners, setNodeRef, isDragging } = useSortable({ id, disabled: locked });
+  const tone = feedback === 'correct' ? 'success' : feedback === 'incorrect' ? 'error' : undefined;
   return <Chip component="button" clickable ref={setNodeRef} {...attributes} {...listeners}
-    aria-label={`${uk.remove}: ${item.label} (${index + 1})`} label={item.label} variant="outlined" disabled={locked} onClick={event => toggle(event.currentTarget)}
-    sx={{ ...chipSx, opacity: isDragging ? 0.25 : 1 }} />;
+    aria-label={`${uk.remove}: ${item.label} (${index + 1})`} data-feedback={feedback} label={item.label} variant="outlined" disabled={locked} onClick={event => toggle(event.currentTarget)}
+    sx={{ ...chipSx, opacity: isDragging ? 0.25 : 1, borderColor: tone ? `${tone}.main` : undefined, bgcolor: tone ? theme => alpha(theme.palette[tone].main, 0.12) : undefined, color: tone ? `${tone}.main` : undefined, transition: theme => theme.transitions.create(['background-color', 'border-color', 'color'], { duration: 220, easing: theme.transitions.easing.easeInOut }), '&.Mui-disabled': { opacity: feedback ? 1 : 0.6, color: tone ? `${tone}.main` : undefined }, '@media (prefers-reduced-motion: reduce)': { transition: 'none' } }} />;
 }
-function DropZone({ id, label, children, locked, highlighted = false, onMeasure }: { id: string; label: string; children: React.ReactNode; locked: boolean; highlighted?: boolean; onMeasure?: (rect: DragRect) => void }) {
+function DropZone({ id, label, children, locked, highlighted = false, showLabel = true, onMeasure }: { id: string; label: string; children: React.ReactNode; locked: boolean; highlighted?: boolean; showLabel?: boolean; onMeasure?: (rect: DragRect) => void }) {
   const { setNodeRef } = useDroppable({ id, disabled: locked });
   const setRef = useCallback((node: HTMLDivElement | null) => {
     setNodeRef(node);
@@ -36,7 +40,7 @@ function DropZone({ id, label, children, locked, highlighted = false, onMeasure 
     }
   }, [onMeasure, setNodeRef]);
   return <Box ref={setRef} role="group" aria-label={label} sx={{ width: '100%', p: 2, border: '1px dashed', borderColor: highlighted ? 'primary.main' : 'divider', borderRadius: 1, minHeight: 100, transition: theme => theme.transitions.create('border-color', { duration: 180, easing: theme.transitions.easing.easeInOut }) }}>
-    <Typography variant="subtitle2" sx={{ mb: 1, textAlign: 'center' }}>{label}</Typography>
+    {showLabel ? <Typography variant="subtitle2" sx={{ mb: 1, textAlign: 'center' }}>{label}</Typography> : null}
     <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', justifyContent: 'center', gap: 1, minHeight: 44, alignItems: 'center' }}>{children}</Stack>
   </Box>;
 }
@@ -47,7 +51,7 @@ function SourceSlot({ id, rect, disabled }: { id: string; rect: DragRect | null;
 }
 type Preview = { zone: 'answer' | 'bank'; index: number };
 type DragGeometry = Parameters<CollisionDetection>[0]['droppableRects'];
-export function DragBlockBuilder({ question, value, onChange, disabled, readOnly }: InteractionProps<'block-builder'>) {
+export function DragBlockBuilder({ question, value, onChange, disabled, readOnly, result, showErrors = true, showCorrectAnswers = true }: InteractionProps<'block-builder'>) {
   const id = useId(), answerId = `${id}-answer`, bankId = `${id}-bank`, sourceSlotId = `${id}-source-slot`;
   const itemDragId = (itemId: string) => `${id}-item-${itemId}`;
   const locked = Boolean(disabled || readOnly);
@@ -103,9 +107,15 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
     if (!contains(answerId)) return [];
     const activeRect = geometry.current.get(String(args.active.id)) ?? sourceRect.current;
     if (draggingFromAnswer && activeRect && point.x >= activeRect.left && point.x <= activeRect.right && point.y >= activeRect.top && point.y <= activeRect.bottom) return [{ id: draggingId }];
-    const last = value[value.length - 1] ? geometry.current.get(itemDragId(value[value.length - 1])) : undefined;
-    if (!last || point.y > last.bottom || (point.y >= last.top && point.x > last.right)) return [{ id: answerId }];
-    return closestCenter({ ...args, droppableRects: geometry.current, droppableContainers: args.droppableContainers.filter(container => value.some(itemId => itemDragId(itemId) === String(container.id)) && String(container.id) !== String(args.active.id)) });
+    const answerItems = value.flatMap(itemId => {
+      const itemIdWithPrefix = itemDragId(itemId);
+      const rect = geometry.current?.get(itemIdWithPrefix);
+      return rect && itemIdWithPrefix !== draggingId ? [{ id: itemIdWithPrefix, rect }] : [];
+    });
+    const rowItems = answerItems.filter(item => point.y >= item.rect.top && point.y <= item.rect.bottom);
+    if (!rowItems.length) return [{ id: answerId }];
+    const before = rowItems.find(item => point.x < (item.rect.left + item.rect.right) / 2);
+    return [{ id: before?.id ?? answerId }];
   };
   function destination(target: string, draggedId = activeId): Preview | null {
     if (target === sourceSlotId && draggedId) {
@@ -121,7 +131,15 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
     return index < 0 ? null : { zone: 'answer', index };
   }
   const clearDrag = () => { setActiveId(null); setPreview(null); setGhostAnimationKey(0); setSourceRectState(null); setKeyboardDrag(false); geometry.current = null; sourceRect.current = null; };
-  const renderBlock = (item: Item, selected: boolean) => {
+  const feedbackFor = (index: number): Exclude<ChoiceFeedback, 'missed'> | undefined => {
+    if (!result || (result.status !== 'correct' && result.status !== 'incorrect')) return undefined;
+    const itemId = value[index];
+    const isCorrectPosition = Boolean(itemId && question.acceptedSequences.some(sequence => sequence[index] === itemId));
+    const feedback = choiceFeedback(result, Boolean(itemId), isCorrectPosition, { showErrors, showCorrectAnswers });
+    return feedback === 'correct' || feedback === 'incorrect' ? feedback : undefined;
+  };
+  const correctAnswerItems = question.acceptedSequences[0]?.map(itemId => question.blocks.find(item => item.id === itemId)).filter((item): item is Item => Boolean(item)) ?? [];
+  const renderBlock = (item: Item, selected: boolean, feedback?: Exclude<ChoiceFeedback, 'missed'>) => {
     const index = question.blocks.findIndex(b => b.id === item.id);
     const toggle = (node: HTMLElement) => {
       if (locked || activeId) return;
@@ -131,7 +149,7 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
     };
     return <AnimatedLayoutItem key={item.id} enabled={!reducedMotion && Boolean(activeId)} onMeasure={rect => itemRects.current.set(item.id, rect)}>
       <Box sx={{ maxWidth: '100%', display: 'flex', alignSelf: 'center', alignItems: 'center', flex: '0 0 auto', animation: 'block-in 140ms ease-in-out both', '@keyframes block-in': { from: { opacity: 0, transform: 'scale(.65)' }, to: { opacity: 1, transform: 'scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }}>
-        {selected ? <SortableBlock item={item} id={itemDragId(item.id)} index={index} locked={locked} toggle={toggle} /> : <AvailableBlock item={item} id={itemDragId(item.id)} index={index} locked={locked} toggle={toggle} />}
+        {selected ? <SortableBlock item={item} id={itemDragId(item.id)} index={index} locked={locked} feedback={feedback} toggle={toggle} /> : <AvailableBlock item={item} id={itemDragId(item.id)} index={index} locked={locked} toggle={toggle} />}
       </Box>
     </AnimatedLayoutItem>;
   };
@@ -202,14 +220,34 @@ export function DragBlockBuilder({ question, value, onChange, disabled, readOnly
       <SortableContext items={value.map(itemDragId)}>
         <DropZone id={answerId} label={uk.built} locked={locked || keyboardDrag} highlighted={Boolean(activeId && !activeInAnswer)} onMeasure={setAnswerZoneRect}>
           {!value.length && !preview && <Typography color="text.secondary">{uk.emptyBlocks}</Typography>}
-          {displayedAnswerBlocks.flatMap((item, index) => index === displayAnswerInsertion ? [ghost, renderBlock(item, true)] : [renderBlock(item, true)])}
+          {displayedAnswerBlocks.flatMap((item, index) => {
+            const valueIndex = value.indexOf(item.id);
+            const block = renderBlock(item, true, feedbackFor(valueIndex));
+            return index === displayAnswerInsertion ? [ghost, block] : [block];
+          })}
           {displayAnswerInsertion === displayedAnswerBlocks.length && ghost}
         </DropZone>
       </SortableContext>
-      <DropZone id={bankId} label={uk.available} locked={locked || keyboardDrag} highlighted={Boolean(activeId && activeInAnswer)}>
-        {!available.length && preview?.zone !== 'bank' && <Typography color="text.secondary">{uk.noBlocks}</Typography>}
-        {displayedAvailableBlocks.flatMap((item, index) => index === bankInsertion ? [ghost, renderBlock(item, false)] : [renderBlock(item, false)])}
-        {bankInsertion === displayedAvailableBlocks.length && ghost}
+      <DropZone id={bankId} label={uk.available} showLabel={!isGraded(result)} locked={locked || keyboardDrag} highlighted={Boolean(activeId && activeInAnswer)}>
+        {isGraded(result) ? <Stack direction="row" useFlexGap sx={{ width: '100%', minHeight: 80, alignItems: 'stretch', justifyContent: 'center', gap: 2 }}>
+          <Stack sx={{ flex: '1 1 auto', minWidth: 0, alignItems: 'center', justifyContent: 'center', gap: 2 }}>
+            <InfoOutlined aria-label="Правильна відповідь" color="disabled" />
+            <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 1 }}>
+              {correctAnswerItems.map(item => <Chip key={item.id} label={item.label} variant="outlined" disabled sx={{ ...chipSx, cursor: 'default' }} />)}
+            </Stack>
+          </Stack>
+          <Divider orientation="vertical" flexItem />
+          <Stack sx={{ flex: '0 1 auto', width: 'fit-content', maxWidth: '45%', minWidth: 0, alignItems: 'center', justifyContent: 'center', gap: 2 }}>
+            <DeleteOutlineOutlined aria-label="Доступні блоки" color="disabled" />
+            <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 1 }}>
+              {available.length ? available.map(item => renderBlock(item, false, undefined)) : <Typography color="text.secondary">{uk.noBlocks}</Typography>}
+            </Stack>
+          </Stack>
+        </Stack> : <>
+          {!available.length && preview?.zone !== 'bank' && <Typography color="text.secondary">{uk.noBlocks}</Typography>}
+          {displayedAvailableBlocks.flatMap((item, index) => index === bankInsertion ? [ghost, renderBlock(item, false)] : [renderBlock(item, false)])}
+          {bankInsertion === displayedAvailableBlocks.length && ghost}
+        </>}
       </DropZone>
       <SourceSlot id={sourceSlotId} rect={sourceSlotRect} disabled={locked || keyboardDrag} />
       <DragOverlay dropAnimation={null} style={{ margin: 0 }}>{activeItem ? <Chip aria-hidden="true" label={activeItem.label} sx={{ ...chipSx, width: '100%', bgcolor: 'background.paper', cursor: 'grabbing' }} /> : null}</DragOverlay>
