@@ -12,38 +12,45 @@ export interface ResourceBase<T extends ContentType> {
 export type AllLocales = Record<Locale, string>;
 
 /** Values present for the chosen supported locales. */
-export type ChosenLocales<Locales extends Locale = Locale> = Record<Locales, string>;
+export type ChosenLocales<Locales extends Locale = never> = [Locales] extends [never]
+  ? AnyChosenLocales
+  : Record<Locales, string>;
+
+/** A non-empty set of supported locales when the exact set is not shared by a parent object. */
+export type AnyChosenLocales = {
+  [LocaleKey in Locale]: Record<LocaleKey, string> & Partial<Record<Exclude<Locale, LocaleKey>, string>>
+}[Locale];
 
 export interface TextResource_AllLocales extends ResourceBase<'text'> {
   allLocales: true;
   value: AllLocales;
 }
 
-export interface TextResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'text'> {
+export interface TextResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'text'> {
   allLocales: false;
   value: ChosenLocales<Locales>;
 }
 
-export type TextResource<Locales extends Locale = Locale> = TextResource_AllLocales | TextResource_ChosenLocales<Locales>;
+export type TextResource<Locales extends Locale = never> = TextResource_AllLocales | TextResource_ChosenLocales<Locales>;
 
 export interface MarkdownResource_AllLocales extends ResourceBase<'markdown'> {
   allLocales: true;
   fileLocation: AllLocales;
 }
 
-export interface MarkdownResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'markdown'> {
+export interface MarkdownResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'markdown'> {
   allLocales: false;
   fileLocation: ChosenLocales<Locales>;
 }
 
-export type MarkdownResource<Locales extends Locale = Locale> = MarkdownResource_AllLocales | MarkdownResource_ChosenLocales<Locales>;
+export type MarkdownResource<Locales extends Locale = never> = MarkdownResource_AllLocales | MarkdownResource_ChosenLocales<Locales>;
 
 export interface HtmlResourceParam_AllLocales {
   selector: string;
   values: AllLocales;
 }
 
-export interface HtmlResourceParam_ChosenLocales<Locales extends Locale = Locale> {
+export interface HtmlResourceParam_ChosenLocales<Locales extends Locale = never> {
   selector: string;
   values: ChosenLocales<Locales>;
 }
@@ -54,20 +61,20 @@ export interface HtmlResource_AllLocales extends ResourceBase<'html'> {
   htmlParams: HtmlResourceParam_AllLocales[];
 }
 
-export interface HtmlResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'html'> {
+export interface HtmlResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'html'> {
   allLocales: false;
   fileLocation: ChosenLocales<Locales>;
   htmlParams: HtmlResourceParam_ChosenLocales<Locales>[];
 }
 
-export type HtmlResource<Locales extends Locale = Locale> = HtmlResource_AllLocales | HtmlResource_ChosenLocales<Locales>;
+export type HtmlResource<Locales extends Locale = never> = HtmlResource_AllLocales | HtmlResource_ChosenLocales<Locales>;
 
 export interface CodeResourceParam_AllLocales {
   selector: string;
   values: AllLocales;
 }
 
-export interface CodeResourceParam_ChosenLocales<Locales extends Locale = Locale> {
+export interface CodeResourceParam_ChosenLocales<Locales extends Locale = never> {
   selector: string;
   values: ChosenLocales<Locales>;
 }
@@ -78,13 +85,13 @@ export interface CodeResource_AllLocales extends ResourceBase<'code'> {
   codeParams: CodeResourceParam_AllLocales[];
 }
 
-export interface CodeResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'code'> {
+export interface CodeResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'code'> {
   allLocales: false;
   fileLocation: ChosenLocales<Locales>;
   codeParams: CodeResourceParam_ChosenLocales<Locales>[];
 }
 
-export type CodeResource<Locales extends Locale = Locale> = CodeResource_AllLocales | CodeResource_ChosenLocales<Locales>;
+export type CodeResource<Locales extends Locale = never> = CodeResource_AllLocales | CodeResource_ChosenLocales<Locales>;
 
 export interface AudioResource_AllLocales extends ResourceBase<'audio'> {
   allLocales: true;
@@ -93,14 +100,14 @@ export interface AudioResource_AllLocales extends ResourceBase<'audio'> {
   description: AllLocales;
 }
 
-export interface AudioResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'audio'> {
+export interface AudioResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'audio'> {
   allLocales: false;
   fileLocation: ChosenLocales<Locales>;
   title: ChosenLocales<Locales>;
   description: ChosenLocales<Locales>;
 }
 
-export type AudioResource<Locales extends Locale = Locale> = AudioResource_AllLocales | AudioResource_ChosenLocales<Locales>;
+export type AudioResource<Locales extends Locale = never> = AudioResource_AllLocales | AudioResource_ChosenLocales<Locales>;
 
 export interface VideoResource_AllLocales extends ResourceBase<'video'> {
   allLocales: true;
@@ -108,13 +115,13 @@ export interface VideoResource_AllLocales extends ResourceBase<'video'> {
   poster: AllLocales;
 }
 
-export interface VideoResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'video'> {
+export interface VideoResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'video'> {
   allLocales: false;
   fileLocation: ChosenLocales<Locales>;
   poster: ChosenLocales<Locales>;
 }
 
-export type VideoResource<Locales extends Locale = Locale> = VideoResource_AllLocales | VideoResource_ChosenLocales<Locales>;
+export type VideoResource<Locales extends Locale = never> = VideoResource_AllLocales | VideoResource_ChosenLocales<Locales>;
 
 export interface ImageResource_AllLocales extends ResourceBase<'image'> {
   allLocales: true;
@@ -122,15 +129,15 @@ export interface ImageResource_AllLocales extends ResourceBase<'image'> {
   alt: AllLocales;
 }
 
-export interface ImageResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'image'> {
+export interface ImageResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'image'> {
   allLocales: false;
   fileLocation: ChosenLocales<Locales>;
   alt: ChosenLocales<Locales>;
 }
 
-export type ImageResource<Locales extends Locale = Locale> = ImageResource_AllLocales | ImageResource_ChosenLocales<Locales>;
+export type ImageResource<Locales extends Locale = never> = ImageResource_AllLocales | ImageResource_ChosenLocales<Locales>;
 
-export type Resource<Locales extends Locale = Locale> =
+export type Resource<Locales extends Locale = never> =
   | TextResource<Locales>
   | MarkdownResource<Locales>
   | HtmlResource<Locales>
@@ -139,7 +146,7 @@ export type Resource<Locales extends Locale = Locale> =
   | VideoResource<Locales>
   | ImageResource<Locales>;
 
-export interface ResourceMap<Locales extends Locale = Locale> {
+export interface ResourceMap<Locales extends Locale = never> {
   text: TextResource<Locales>;
   markdown: MarkdownResource<Locales>;
   html: HtmlResource<Locales>;
