@@ -62,20 +62,42 @@ export interface HtmlResource_ChosenLocales<Locales extends Locale = Locale> ext
 
 export type HtmlResource<Locales extends Locale = Locale> = HtmlResource_AllLocales | HtmlResource_ChosenLocales<Locales>;
 
-export interface CodeResource extends ResourceBase<'code'> {
-  fileLocation: string;
+export interface CodeResourceParam_AllLocales {
+  selector: string;
+  values: AllLocales;
 }
+
+export interface CodeResourceParam_ChosenLocales<Locales extends Locale = Locale> {
+  selector: string;
+  values: ChosenLocales<Locales>;
+}
+
+export interface CodeResource_AllLocales extends ResourceBase<'code'> {
+  allLocales: true;
+  fileLocation: AllLocales;
+  codeParams: CodeResourceParam_AllLocales[];
+}
+
+export interface CodeResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'code'> {
+  allLocales: false;
+  fileLocation: ChosenLocales<Locales>;
+  codeParams: CodeResourceParam_ChosenLocales<Locales>[];
+}
+
+export type CodeResource<Locales extends Locale = Locale> = CodeResource_AllLocales | CodeResource_ChosenLocales<Locales>;
 
 export interface AudioResource_AllLocales extends ResourceBase<'audio'> {
   allLocales: true;
   fileLocation: AllLocales;
   title: AllLocales;
+  description: AllLocales;
 }
 
 export interface AudioResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'audio'> {
   allLocales: false;
   fileLocation: ChosenLocales<Locales>;
   title: ChosenLocales<Locales>;
+  description: ChosenLocales<Locales>;
 }
 
 export type AudioResource<Locales extends Locale = Locale> = AudioResource_AllLocales | AudioResource_ChosenLocales<Locales>;
@@ -112,7 +134,7 @@ export type Resource<Locales extends Locale = Locale> =
   | TextResource<Locales>
   | MarkdownResource<Locales>
   | HtmlResource<Locales>
-  | CodeResource
+  | CodeResource<Locales>
   | AudioResource<Locales>
   | VideoResource<Locales>
   | ImageResource<Locales>;
@@ -121,7 +143,7 @@ export interface ResourceMap<Locales extends Locale = Locale> {
   text: TextResource<Locales>;
   markdown: MarkdownResource<Locales>;
   html: HtmlResource<Locales>;
-  code: CodeResource;
+  code: CodeResource<Locales>;
   audio: AudioResource<Locales>;
   video: VideoResource<Locales>;
   image: ImageResource<Locales>;
