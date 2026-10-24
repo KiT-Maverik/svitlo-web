@@ -146,6 +146,8 @@ export type Resource<Locales extends Locale = never> =
   | VideoResource<Locales>
   | ImageResource<Locales>;
 
+export type NonEmptyResourceArray<T extends Resource = Resource> = [T, ...T[]];
+
 export interface ResourceMap<Locales extends Locale = never> {
   text: TextResource<Locales>;
   markdown: MarkdownResource<Locales>;

@@ -1,4 +1,4 @@
-import type { Resource, TextResource } from '../resources';
+import type { NonEmptyResourceArray, Resource, TextResource } from '../resources';
 import type { Disability } from '../../disabilities.types';
 
 /** Content question kinds supported by the reusable question widgets. */
@@ -17,10 +17,7 @@ export interface Question_ContentBase {
   id: string;
   type: QuestionType;
   restrictions: Disability[];
-  content: [
-    Resource,
-    ...Resource[]
-  ];
+  content: NonEmptyResourceArray;
 }
 
 export interface AnswerWithNumber_QuestionContent extends Question_ContentBase {
@@ -39,7 +36,7 @@ export interface AnswerWithText_QuestionContent extends Question_ContentBase {
 
 export interface BuildAnswerWithBlocks_QuestionContent extends Question_ContentBase {
   type: 'build-answer-with-blocks';
-  correctSequence: [TextResource, ...TextResource[]];
+  correctSequence: NonEmptyResourceArray<TextResource>;
   distractors: TextResource[];
   /** Intentionally mandatory; use this property to provide formatting insights. */
   placeholder: TextResource;
@@ -62,4 +59,35 @@ export interface FillBlanksWithText_QuestionContent extends Question_ContentBase
   placeholder: TextResource;
   distractors: TextResource[];
   slots: FillBlanksSlot[];
+}
+
+export interface MatchBlocksMap {
+  left: NonEmptyResourceArray;
+  right: NonEmptyResourceArray;
+}
+
+export interface MatchBlocks_QuestionContent extends Question_ContentBase {
+  type: 'match-blocks';
+  map: MatchBlocksMap;
+}
+
+export interface OrderSequence_QuestionContent extends Question_ContentBase {
+  type: 'order-sequence';
+  sequence: NonEmptyResourceArray;
+}
+
+export interface BasicAnswersBlock<CorrectAnswer extends Resource | NonEmptyResourceArray> {
+  answers: {
+    correct: CorrectAnswer;
+    incorrect: NonEmptyResourceArray;
+    distractors: NonEmptyResourceArray;
+  }
+}
+
+export interface SelectOneAnswer_QuestionContent extends Question_ContentBase, BasicAnswersBlock<Resource> {
+  type: 'select-one-answer';
+}
+
+export interface SelectMultipleAnswers_QuestionContent extends Question_ContentBase, BasicAnswersBlock<NonEmptyResourceArray> {
+  type: 'select-multiple-answers';
 }
