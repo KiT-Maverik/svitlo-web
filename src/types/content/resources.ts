@@ -38,9 +38,29 @@ export interface MarkdownResource_ChosenLocales<Locales extends Locale = Locale>
 
 export type MarkdownResource<Locales extends Locale = Locale> = MarkdownResource_AllLocales | MarkdownResource_ChosenLocales<Locales>;
 
-export interface HtmlResource extends ResourceBase<'html'> {
-  fileLocation: string;
+export interface HtmlResourceParam_AllLocales {
+  selector: string;
+  values: AllLocales;
 }
+
+export interface HtmlResourceParam_ChosenLocales<Locales extends Locale = Locale> {
+  selector: string;
+  values: ChosenLocales<Locales>;
+}
+
+export interface HtmlResource_AllLocales extends ResourceBase<'html'> {
+  allLocales: true;
+  fileLocation: AllLocales;
+  htmlParams: HtmlResourceParam_AllLocales[];
+}
+
+export interface HtmlResource_ChosenLocales<Locales extends Locale = Locale> extends ResourceBase<'html'> {
+  allLocales: false;
+  fileLocation: ChosenLocales<Locales>;
+  htmlParams: HtmlResourceParam_ChosenLocales<Locales>[];
+}
+
+export type HtmlResource<Locales extends Locale = Locale> = HtmlResource_AllLocales | HtmlResource_ChosenLocales<Locales>;
 
 export interface CodeResource extends ResourceBase<'code'> {
   fileLocation: string;
@@ -91,7 +111,7 @@ export type ImageResource<Locales extends Locale = Locale> = ImageResource_AllLo
 export type Resource<Locales extends Locale = Locale> =
   | TextResource<Locales>
   | MarkdownResource<Locales>
-  | HtmlResource
+  | HtmlResource<Locales>
   | CodeResource
   | AudioResource<Locales>
   | VideoResource<Locales>
@@ -100,7 +120,7 @@ export type Resource<Locales extends Locale = Locale> =
 export interface ResourceMap<Locales extends Locale = Locale> {
   text: TextResource<Locales>;
   markdown: MarkdownResource<Locales>;
-  html: HtmlResource;
+  html: HtmlResource<Locales>;
   code: CodeResource;
   audio: AudioResource<Locales>;
   video: VideoResource<Locales>;
