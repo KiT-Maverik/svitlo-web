@@ -22,3 +22,17 @@ export interface Question_ContentBase {
     ...Resource[]
   ];
 }
+
+export interface AnswerWithNumber_QuestionContent extends Question_ContentBase {
+  type: 'answer-with-number';
+  correctAnswer: number[];
+  /** Intentionally mandatory; use this property to provide formatting insights. */
+  placeholder: string;
+}
+
+export interface AnswerWithText_QuestionContent extends Question_ContentBase {
+  type: 'answer-with-text';
+  correctAnswer: string[];
+  /** Intentionally mandatory; use this property to provide formatting insights. */
+  placeholder: string;
+}
