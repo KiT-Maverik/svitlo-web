@@ -1,3 +1,5 @@
+import type { Locale } from '../languages';
+
 /** Supported content resource kinds. */
 export type ContentType = 'text' | 'markdown' | 'html' | 'code' | 'audio' | 'video' | 'image';
 
@@ -6,9 +8,25 @@ export interface ResourceBase<T extends ContentType> {
   blockType: T;
 }
 
-export interface TextResource extends ResourceBase<'text'> {
-  value: string;
+/** Text values that must be present for every supported locale. */
+export type AllLocales = Record<Locale, string>;
+
+/** Text values present for at least one supported locale, with no upper limit. */
+export type ChosenLocales = {
+  [LocaleKey in Locale]: Record<LocaleKey, string> & Partial<Record<Exclude<Locale, LocaleKey>, string>>
+}[Locale];
+
+export interface TextResource_AllLocales extends ResourceBase<'text'> {
+  allLocales: true;
+  value: AllLocales;
 }
+
+export interface TextResource_ChosenLocales extends ResourceBase<'text'> {
+  allLocales: false;
+  value: ChosenLocales;
+}
+
+export type TextResource = TextResource_AllLocales | TextResource_ChosenLocales;
 
 export interface MarkdownResource extends ResourceBase<'markdown'> {
   fileLocation: string;
