@@ -49,16 +49,20 @@
 .flashStage { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px 0; }
 .counter { font-size: 13px; color: #728296; }
 .cardArea { width: 100%; display: grid; grid-template-columns: minmax(70px, 1fr) minmax(0, 640px) minmax(70px, 1fr); align-items: stretch; position: relative; }
-.card { grid-column: 2; min-height: 340px; width: 100%; border-radius: 24px; border: 1px solid #dce5ef; box-shadow: 0 12px 40px #16365212; padding: 32px; background: white; color: #20344e; cursor: pointer; font: inherit; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
-.card h1 { font-size: clamp(22px, 3vw, 30px); line-height: 1.35; }
-.answer { font-size: 19px; color: #245c45; animation: appear .3s ease both; }
+.flashCard { grid-column: 2; position: relative; min-height: 340px; width: 100%; overflow: hidden; border-radius: 24px; border: 1px solid #dce5ef; box-shadow: 0 12px 40px #16365212; padding: 32px; background: var(--background, #fff); color: var(--foreground, #20344e); display: flex; flex-direction: column; align-items: stretch; text-align: center; }
+.flashHeader { display: flex; align-items: flex-start; gap: 8px; }
+.flashMenuButton { position: relative; z-index: 3; flex: 0 0 auto; color: #728296; }
+.flashQuestion { flex: 1; min-width: 0; margin: 8px 0 0; font-size: clamp(16px, 1.8vw, 20px); line-height: 1.35; text-align: left; }
+.flashLabels { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; margin: 16px 0 12px; }
+.flashDivider { margin: 0; }
+.flashReveal { position: relative; z-index: 2; display: flex; flex: 0 0 132px; align-items: center; justify-content: center; width: 100%; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.flashReveal:disabled { cursor: default; }
+.flashHintIcon { display: inline-flex; color: #9aa8b8; opacity: .36; transition: opacity .2s, transform .2s; }
+.flashReveal:not(:disabled):hover .flashHintIcon, .flashReveal:not(:disabled):focus-visible .flashHintIcon { opacity: .62; transform: scale(1.08); }
+.answer { font-size: 19px; color: #245c45; }
 .hint { font-size: 14px; color: #738398; }
-.rating { border: none; font: inherit; cursor: pointer; background: transparent; color: #36465c; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px; position: relative; overflow: hidden; transition: background .25s, color .25s; padding: 12px 4px; }
-.rating span { font-size: 32px; }
-.rating strong { font-size: 13px; }
-.forget { grid-column: 1; grid-row: 1; }
-.remember { grid-column: 3; grid-row: 1; }
-.rating:hover, .rating:focus-visible { background: linear-gradient(#1a2948cc, #1a2948eb); color: white; }
+.flashControlsDivider { margin: 0; }
+.flashControls { width: 100%; padding-top: 16px; }
 .finish { flex: 1; width: min(850px, 100%); margin: auto; text-align: center; padding: 48px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; animation: appear .5s ease both; }
 .badge { display: grid; place-items: center; font-size: 48px; color: #28705b; background: #e8f5ed; width: 90px; height: 90px; border-radius: 50%; }
 .primary { display: inline-block; border: 0; border-radius: 24px; padding: 13px 25px; background: #163652; color: white; font: inherit; cursor: pointer; text-decoration: none; margin-top: 20px; }
@@ -75,6 +79,5 @@
 .confetti i { position: absolute; left: var(--origin); top: 45%; width: 10px; height: 16px; animation: burst 2.5s ease-out both; }
 @keyframes burst { 0% { opacity: 0; transform: translate(0, 0) rotate(0); } 12% { opacity: 1; } 65% { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--spin)); } 100% { opacity: 0; transform: translate(var(--dx), 65vh) rotate(var(--spin)); } }
 .lesson button:focus-visible, .primary:focus-visible { outline: 3px solid #427fbd; outline-offset: 4px; }
-@media (hover: hover) { .rating span, .rating strong { opacity: 0; transition: opacity .2s; } .rating:hover span, .rating:hover strong, .rating:focus-visible span, .rating:focus-visible strong { opacity: 1; } }
-@media (max-width: 600px) { .steps { gap: 6px; } .steps button { font-size: 11px; } .cardArea { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; padding: 0 16px; } .card { grid-column: 1 / -1; grid-row: 1; min-height: 320px; padding: 24px; } .forget { grid-column: 1; grid-row: 2; } .remember { grid-column: 2; grid-row: 2; } .rating { border-radius: 12px; background: #f0f4f9; min-height: 76px; } .rating span, .rating strong { opacity: 1; } .rating span { font-size: 20px; } }
+@media (max-width: 600px) { .steps { gap: 6px; } .steps button { font-size: 11px; } .cardArea { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; padding: 0 16px; } .flashCard { grid-column: 1 / -1; min-height: 320px; padding: 24px; } }
 @media (prefers-reduced-motion: reduce) { .stage, .answer, .finish, .feedback { animation: none; } .confetti { display: none; } .segment, .rating, .rating span, .rating strong { transition: none; } }

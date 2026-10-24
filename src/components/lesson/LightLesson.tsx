@@ -8,6 +8,7 @@ import Celebration, { playCelebration } from './Celebration';
 import { QuestionAttempt } from '@/features/questions/QuestionAttempt';
 import { QuestionProgress, type QuestionStatus } from './QuestionProgress';
 import { LessonSteps } from './LessonSteps';
+import { Flashcard } from './Flashcard';
 import styles from './Lesson.module.css';
 
 export default function LightLesson({ theory, allowQuestionNavigation = true, allowSectionNavigation = true, showStepNumbers = true }: { theory: ReactNode; allowQuestionNavigation?: boolean; allowSectionNavigation?: boolean; showStepNumbers?: boolean }) {
@@ -51,17 +52,7 @@ export default function LightLesson({ theory, allowQuestionNavigation = true, al
         <span className={styles.badge} aria-hidden="true">✓</span><h1>Вітаємо, ви повторили матеріал!</h1>
         <p>Переглянуто {lightLesson.concepts.length} карток. Пам’ятаю: {remembered}; варто повторити: {lightLesson.concepts.length - remembered}.</p>
         <button className={styles.primary} onClick={() => dispatch({ type: 'next' })}>Далі →</button>
-      </section> : <section className={styles.flashStage} aria-label="Повторення з флеш-картками">
-        <p className={styles.counter}>Картка {cardIndex + 1} із {lightLesson.concepts.length}</p>
-        <div className={styles.cardArea}>
-          {revealed && <button className={`${styles.rating} ${styles.forget}`} aria-label="Не пам’ятаю" onClick={() => gradeCard(false)}><span>❮</span><strong>Не пам’ятаю</strong></button>}
-          <button ref={cardRef} className={styles.card} onClick={() => setRevealed((value) => !value)} aria-expanded={revealed} aria-label={`${card.question} ${revealed ? 'Приховати відповідь' : 'Показати відповідь'}`}>
-            <span className={styles.eyebrow}>ЗГАДАЙ ГОЛОВНЕ</span><h1>{card.question}</h1>
-            {revealed ? <p className={styles.answer}>{card.answer}</p> : <p className={styles.hint}>Натисни на картку, щоб відкрити відповідь</p>}
-          </button>
-          {revealed && <button className={`${styles.rating} ${styles.remember}`} aria-label="Пам’ятаю" onClick={() => gradeCard(true)}><span>❯</span><strong>Пам’ятаю</strong></button>}
-        </div>
-      </section>)}
+      </section> : <Flashcard ref={cardRef} question={card.question} answer={card.answer} revealed={revealed} onReveal={() => setRevealed(true)} onRate={gradeCard} />)}
       {progress.step === 3 && (progress.testDone ? <Celebration score={score} total={lightLesson.questions.length} /> : <section className={styles.quiz} aria-label="Тест">
         <QuestionProgress className={styles.questionProgress} statuses={questionStatuses} currentIndex={questionIndex} allowNavigation={allowQuestionNavigation} onNavigate={navigateQuestion} />
         {lightLesson.questions.map((testQuestion, index) => <div key={testQuestion.id} hidden={index !== questionIndex}>
