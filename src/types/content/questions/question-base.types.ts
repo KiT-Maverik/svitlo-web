@@ -2,7 +2,7 @@ import type { Resource } from '../resources';
 import type { Disability } from '../../disabilities.types';
 
 /** Content question kinds supported by the reusable question widgets. */
-export type ContentQuestionType =
+export type QuestionType =
   | 'select-one-answer'
   | 'select-multiple-answers'
   | 'match-blocks'
@@ -13,8 +13,9 @@ export type ContentQuestionType =
   | 'fill-blanks-with-blocks'
   | 'fill-blanks-with-text';
 
-export interface ContentQuestionBase {
+export interface Question_ContentBase {
   id: string;
+  type: QuestionType;
   restrictions: Disability[];
   content: [
     Resource,
