@@ -1,5 +1,5 @@
-import type { ContentQuestion } from './questions';
-import type { NonEmptyResourceArray } from './resources';
+import type { ContentQuestion } from '../content/questions';
+import type { NonEmptyResourceArray } from '../content/resources';
 
 type Question = ContentQuestion & { number: number; weight: number }
 
