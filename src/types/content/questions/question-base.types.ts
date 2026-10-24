@@ -13,11 +13,16 @@ export type QuestionType =
   | 'fill-blanks-with-blocks'
   | 'fill-blanks-with-text';
 
+export interface FlashcardConfig {
+  includeInLessonSet: boolean;
+}
+
 export interface Question_ContentBase {
   id: string;
   type: QuestionType;
   restrictions: Disability[];
   content: NonEmptyResourceArray;
+  flashcardConfig?: FlashcardConfig;
 }
 
 export interface AnswerWithNumber_QuestionContent extends Question_ContentBase {
