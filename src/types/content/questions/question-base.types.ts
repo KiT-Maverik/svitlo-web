@@ -61,14 +61,12 @@ export interface FillBlanksWithText_QuestionContent extends Question_ContentBase
   slots: FillBlanksSlot[];
 }
 
-export interface MatchBlocksMap {
-  left: NonEmptyResourceArray;
-  right: NonEmptyResourceArray;
-}
-
 export interface MatchBlocks_QuestionContent extends Question_ContentBase {
   type: 'match-blocks';
-  map: MatchBlocksMap;
+  map: {
+    left: NonEmptyResourceArray;
+    right: NonEmptyResourceArray;
+  };
 }
 
 export interface OrderSequence_QuestionContent extends Question_ContentBase {
