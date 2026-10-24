@@ -5,7 +5,7 @@ import { lightLesson } from '@/content/lightLesson';
 import { useLessonProgress } from './LessonProgress';
 import MediumPractice from './MediumPractice';
 import Celebration, { playCelebration } from './Celebration';
-import { QuestionAttempt } from '@/features/questions/QuestionAttempt';
+import { QuestionAttempt } from '@/components/widgets/questions/helpers';
 import { QuestionProgress, type QuestionStatus } from './QuestionProgress';
 import { LessonSteps } from './LessonSteps';
 import { Flashcard } from './Flashcard';

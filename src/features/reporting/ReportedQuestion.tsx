@@ -1,7 +1,7 @@
 'use client';
 import type { Question } from '../../types/questions';
-import { QuestionAttempt } from '../questions/QuestionAttempt';
-import type { CheckMode } from '../questions/attempt-model';
+import { QuestionAttempt } from '@/components/widgets/questions/helpers';
+import type { CheckMode } from '@/components/widgets/questions/attempt-model';
 import { ReportButton } from './ReportButton';
 /** Integration via the shared actions panel; the question controller knows nothing about reports. */
 export interface ReportedQuestionOptions {

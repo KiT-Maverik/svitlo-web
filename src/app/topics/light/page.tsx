@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Metadata } from 'next';
 import Container from '@mui/material/Container';
-import MarkdownContent from '@/components/MarkdownContent';
+import { MarkdownContent } from '@/components/widgets';
 import LightLesson from '@/components/lesson/LightLesson';
 
 export const metadata: Metadata = {

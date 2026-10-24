@@ -15,7 +15,7 @@ import FlagOutlined from '@mui/icons-material/FlagOutlined';
 import LabelOutlined from '@mui/icons-material/LabelOutlined';
 import MoreVert from '@mui/icons-material/MoreVert';
 import LockOpenOutlined from '@mui/icons-material/LockOpenOutlined';
-import { QuestionActions } from '@/features/questions/QuestionActions';
+import { QuestionActions } from '@/components/widgets/questions/helpers';
 import styles from './Lesson.module.css';
 
 export interface FlashcardLabel {

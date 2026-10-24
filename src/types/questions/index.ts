@@ -1,44 +1,44 @@
-import type { SingleSelectQuestion } from './single-select';
-import type { MultipleSelectQuestion } from './multiple-select';
-import type { MatchingQuestion } from './matching';
-import type { ShortTextQuestion } from './short-text';
-import type { NumericQuestion } from './numeric';
-import type { OrderingQuestion } from './ordering';
-import type { BlockBuilderQuestion } from './block-builder';
-import type { FillBlanksDragQuestion, FillBlanksTextQuestion } from './fill-blanks';
-export type { SingleSelectQuestion, SingleSelectQuestionExtensions } from './single-select';
-export type { MultipleSelectQuestion, MultipleSelectQuestionExtensions } from './multiple-select';
-export type { MatchingQuestion, MatchingQuestionExtensions } from './matching';
-export type { ShortTextQuestion, ShortTextQuestionExtensions } from './short-text';
-export type { NumericQuestion, NumericQuestionExtensions } from './numeric';
-export type { OrderingQuestion, OrderingQuestionExtensions } from './ordering';
-export type { BlockBuilderQuestion, BlockBuilderQuestionExtensions } from './block-builder';
-export type { FillBlankPart, FillBlanksDragQuestion, FillBlanksTextQuestion } from './fill-blanks';
+import type { SelectOneAnswerQuestion } from './select-one-answer';
+import type { SelectMultipleAnswersQuestion } from './select-multiple-answers';
+import type { MatchBlocksQuestion } from './match-blocks';
+import type { AnswerWithTextQuestion } from './answer-with-text';
+import type { AnswerWithNumberQuestion } from './answer-with-number';
+import type { OrderSequenceQuestion } from './order-sequence';
+import type { BuildAnswerWithBlocksQuestion } from './build-answer-with-blocks';
+import type { FillBlanksWithBlocksQuestion, FillBlanksWithTextQuestion } from './fill-blanks';
+export type { SelectOneAnswerQuestion, SelectOneAnswerQuestionExtensions } from './select-one-answer';
+export type { SelectMultipleAnswersQuestion, SelectMultipleAnswersQuestionExtensions } from './select-multiple-answers';
+export type { MatchBlocksQuestion, MatchBlocksQuestionExtensions } from './match-blocks';
+export type { AnswerWithTextQuestion, AnswerWithTextQuestionExtensions } from './answer-with-text';
+export type { AnswerWithNumberQuestion, AnswerWithNumberQuestionExtensions } from './answer-with-number';
+export type { OrderSequenceQuestion, OrderSequenceQuestionExtensions } from './order-sequence';
+export type { BuildAnswerWithBlocksQuestion, BuildAnswerWithBlocksQuestionExtensions } from './build-answer-with-blocks';
+export type { FillBlankPart, FillBlanksWithBlocksQuestion, FillBlanksWithTextQuestion } from './fill-blanks';
 export type * from './base';
 export type * from './answers';
 export type * from './results';
 import type { AnswerMap } from './answers';
 export const QuestionType = {
-  SingleSelect: 'single-select',
-  MultipleSelect: 'multiple-select',
-  Matching: 'matching',
-  ShortText: 'short-text',
-  Numeric: 'numeric',
-  Ordering: 'ordering',
-  BlockBuilder: 'block-builder',
-  FillBlanksDrag: 'fill-blanks-drag',
-  FillBlanksText: 'fill-blanks-text',
+  SelectOneAnswer: 'single-select',
+  SelectMultipleAnswers: 'multiple-select',
+  MatchBlocks: 'matching',
+  AnswerWithText: 'short-text',
+  AnswerWithNumber: 'numeric',
+  OrderSequence: 'ordering',
+  BuildAnswerWithBlocks: 'block-builder',
+  FillBlanksWithBlocks: 'fill-blanks-drag',
+  FillBlanksWithText: 'fill-blanks-text',
 } as const;
 export interface DefinitionMap {
-  'single-select': SingleSelectQuestion;
-  'multiple-select': MultipleSelectQuestion;
-  'matching': MatchingQuestion;
-  'short-text': ShortTextQuestion;
-  'numeric': NumericQuestion;
-  'ordering': OrderingQuestion;
-  'block-builder': BlockBuilderQuestion;
-  'fill-blanks-drag': FillBlanksDragQuestion;
-  'fill-blanks-text': FillBlanksTextQuestion;
+  'single-select': SelectOneAnswerQuestion;
+  'multiple-select': SelectMultipleAnswersQuestion;
+  'matching': MatchBlocksQuestion;
+  'short-text': AnswerWithTextQuestion;
+  'numeric': AnswerWithNumberQuestion;
+  'ordering': OrderSequenceQuestion;
+  'block-builder': BuildAnswerWithBlocksQuestion;
+  'fill-blanks-drag': FillBlanksWithBlocksQuestion;
+  'fill-blanks-text': FillBlanksWithTextQuestion;
 }
 export type QuestionType = keyof DefinitionMap;
 export type QuestionOf<K extends QuestionType> = DefinitionMap[K] & { type: K };

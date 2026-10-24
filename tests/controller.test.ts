@@ -1,9 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import type { SingleSelectQuestion, MultipleSelectQuestion, NumericQuestion } from '../src/types/questions';
-import { checkers } from '../src/features/questions/check';
-import { answersEqual, createQuestionController } from '../src/features/questions/controller';
-const question: SingleSelectQuestion = { id: 'q', type: 'single-select', prompt: 'Choose', explanation: 'Reason', options: [{ id: 'a', label: 'A' }, { id: 'b', label: 'B' }], correctId: 'a' };
+import type { SelectOneAnswerQuestion, SelectMultipleAnswersQuestion, AnswerWithNumberQuestion } from '../src/types/questions';
+import { checkers } from '../src/components/widgets/questions/check';
+import { answersEqual, createQuestionController } from '../src/components/widgets/questions/controller';
+const question: SelectOneAnswerQuestion = { id: 'q', type: 'single-select', prompt: 'Choose', explanation: 'Reason', options: [{ id: 'a', label: 'A' }, { id: 'b', label: 'B' }], correctId: 'a' };
 test('manual lifecycle fires once, locks after grading, retry retains, reset clears', () => {
   const calls: string[] = [];
   const c = createQuestionController(question, null, checkers['single-select'], {
@@ -36,7 +36,7 @@ test('automatic mode emits grade only for a complete valid answer and locks imme
   c.setAnswer('b'); c.check(); assert.deepEqual(calls, ['correct']);
 });
 test('incomplete and invalid checks stay editable without emitting callbacks', () => {
-  const n: NumericQuestion = { id: 'n', type: 'numeric', prompt: '?', explanation: '.', expected: 12, tolerance: 0 };
+  const n: AnswerWithNumberQuestion = { id: 'n', type: 'numeric', prompt: '?', explanation: '.', expected: 12, tolerance: 0 };
   const calls: string[] = [];
   const c = createQuestionController(n, '', checkers.numeric, { onCheck: e => calls.push(e.result.status), onAnswer: () => calls.push('answer') });
   c.check(); c.retry(); c.setAnswer('12abc'); c.check();
@@ -51,7 +51,7 @@ test('disabled and readOnly guard all actions, including actions invoked through
   assert.equal(c.getSnapshot().result?.status, 'correct');
 });
 test('snapshots sent to callbacks cannot mutate internal answers and set equality ignores order', () => {
-  const q: MultipleSelectQuestion = { ...question, type: 'multiple-select', correctIds: ['a', 'b'] };
+  const q: SelectMultipleAnswersQuestion = { ...question, type: 'multiple-select', correctIds: ['a', 'b'] };
   const c = createQuestionController(q, [], checkers['multiple-select'], { onChange: e => e.answer.push('foreign') });
   c.setAnswer(['a', 'b']); assert.deepEqual(c.getSnapshot().answer, ['a', 'b']);
   c.configure({ onChange: () => { throw Error('An equivalent set is not a change'); } });
@@ -82,7 +82,7 @@ test('matching cannot be checked via controller or custom slot until every uniqu
 });
 
 test('all interaction types reject unfinished or invalid submissions and allow complete wrong answers', async () => {
-  const { exampleQuestions } = await import('../src/features/questions/examples');
+  const { exampleQuestions } = await import('../src/components/widgets/questions/examples');
   const single = exampleQuestions.find(q => q.type === 'single-select');
   const multi = exampleQuestions.find(q => q.type === 'multiple-select');
   const text = exampleQuestions.find(q => q.type === 'short-text');

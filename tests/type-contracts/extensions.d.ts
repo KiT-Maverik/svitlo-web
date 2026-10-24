@@ -1,10 +1,10 @@
-import '../../src/types/questions/multiple-select';
-import '../../src/types/questions/numeric';
-declare module '../../src/types/questions/multiple-select' {
-  interface MultipleSelectQuestionExtensions {
+import '../../src/types/questions/select-multiple-answers';
+import '../../src/types/questions/answer-with-number';
+declare module '../../src/types/questions/select-multiple-answers' {
+  interface SelectMultipleAnswersQuestionExtensions {
     curriculum?: { topicId: string; objectives: string[] };
   }
 }
-declare module '../../src/types/questions/numeric' {
-  interface NumericQuestionExtensions { authorDifficulty?: 'easy' | 'hard' }
+declare module '../../src/types/questions/answer-with-number' {
+  interface AnswerWithNumberQuestionExtensions { authorDifficulty?: 'easy' | 'hard' }
 }

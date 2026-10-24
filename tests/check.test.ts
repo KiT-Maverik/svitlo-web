@@ -1,8 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { checkAnswer, checkers, normalizeText, parseNumeric } from '../src/features/questions/check';
-import { exampleQuestions } from '../src/features/questions/examples';
-import type { QuestionOf } from '../src/features/questions/model';
+import { checkAnswer, checkers, normalizeText, parseAnswerWithNumber } from '../src/components/widgets/questions/check';
+import { exampleQuestions } from '../src/components/widgets/questions/examples';
+import type { QuestionOf } from '../src/components/widgets/questions/model';
 const [single, multi, matching, text, numeric, ordering, blocks] = exampleQuestions;
 // Type-narrow fixtures so each checker enforces its question/answer contract.
 assert.equal(single.type, 'single-select');
@@ -55,14 +55,14 @@ for (const value of ['10.250001', '9.749999', '11']) test(`numeric rejects outsi
 });
 for (const value of ['', ' ', '\t']) test(`numeric empty is incomplete ${JSON.stringify(value)}`, () => {
   assert.equal(checkers.numeric(n, value).status, 'incomplete');
-  assert.equal(parseNumeric(value), null);
+  assert.equal(parseAnswerWithNumber(value), null);
 });
 for (const value of ['12abc', 'Infinity', 'NaN', '1e2', '0x10', '1 000', '1,234.5', '1.2.3', '--1', '.', '9'.repeat(400)]) test(`numeric rejects malformed ${value.slice(0, 30)}`, () => {
   assert.equal(checkers.numeric(n, value).status, 'invalid');
 });
 test('numeric supports zero, signs, decimal comma, rounding boundary and exact zero tolerance', () => {
-  assert.equal(parseNumeric('0'), 0);
-  assert.equal(parseNumeric('-,5'), -0.5);
+  assert.equal(parseAnswerWithNumber('0'), 0);
+  assert.equal(parseAnswerWithNumber('-,5'), -0.5);
   assert.equal(checkers.numeric({ ...n, expected: 0.2, tolerance: 0.1 }, '0.3').status, 'correct');
   assert.equal(checkers.numeric({ ...n, tolerance: 0 }, '10').status, 'correct');
   assert.equal(checkers.numeric({ ...n, tolerance: 0 }, '10.0000000001').status, 'incorrect');

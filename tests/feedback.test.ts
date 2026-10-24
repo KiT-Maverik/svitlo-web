@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { choiceFeedback } from '../src/features/questions/feedback';
-import { answerLetter } from '../src/features/questions/AnswerOption';
+import { choiceFeedback } from '../src/components/widgets/questions/feedback';
+import { answerLetter } from '../src/components/widgets/questions/helpers/AnswerOption/AnswerOption';
 
 test('answer letters use alphabetical labels and continue after Z', () => {
   assert.deepEqual([0, 1, 2, 25, 26, 27].map(answerLetter), ['A', 'B', 'C', 'Z', 'AA', 'AB']);
@@ -28,7 +28,7 @@ test('error and correct-answer visibility switches are independent for every opt
 });
 
 test('field feedback respects grading and independent visibility switches', async () => {
-  const { resultFeedback } = await import('../src/features/questions/feedback');
+  const { resultFeedback } = await import('../src/components/widgets/questions/feedback');
   assert.equal(resultFeedback(null, {}), undefined);
   assert.equal(resultFeedback({ status: 'invalid', reason: 'number-format' }, {}), undefined);
   assert.equal(resultFeedback({ status: 'correct' }, {}), 'correct');

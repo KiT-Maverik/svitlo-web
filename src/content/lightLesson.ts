@@ -1,6 +1,6 @@
-import type { SingleSelectQuestion } from '@/types/questions';
+import type { SelectOneAnswerQuestion } from '@/types/questions';
 
-const lightQuestions: SingleSelectQuestion[] = [
+const lightQuestions: SelectOneAnswerQuestion[] = [
   { id: 'direction', type: 'single-select', prompt: 'Як поширюється світло в прозорому однорідному середовищі?', options: [{ id: 'direction-circle', label: 'По колу.' }, { id: 'direction-linear', label: 'Прямолінійно.' }, { id: 'direction-curve', label: 'Завжди по кривій.' }], correctId: 'direction-linear', explanation: 'У прозорому однорідному середовищі світло поширюється прямолінійно.' },
   { id: 'ray', type: 'single-select', prompt: 'Що показує світловий промінь?', options: [{ id: 'ray-temperature', label: 'Температуру джерела.' }, { id: 'ray-particle', label: 'Розмір частинки світла.' }, { id: 'ray-direction', label: 'Напрямок поширення світла.' }], correctId: 'ray-direction', explanation: 'Світловий промінь показує напрямок поширення світла.' },
   { id: 'vacuum', type: 'single-select', prompt: 'Де світло поширюється найшвидше: у вакуумі, повітрі чи воді?', options: [{ id: 'vacuum-space', label: 'У вакуумі.' }, { id: 'vacuum-air', label: 'У повітрі.' }, { id: 'vacuum-water', label: 'У воді.' }], correctId: 'vacuum-space', explanation: 'У вакуумі світло поширюється найшвидше — приблизно 300 000 км/с.' },
