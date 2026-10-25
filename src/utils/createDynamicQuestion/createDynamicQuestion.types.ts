@@ -1,3 +1,6 @@
+import {Resource, TextResource_AllLocales} from "@/types/content/resources";
+import {NonEmptyArray} from "@/types/misc.types";
+
 export type DynamicQuestion_ArgumentType =
     | "string"
     | "number"
@@ -48,15 +51,28 @@ export type DynamicQuestion__ArgumentProposal<
                 ? DynamicQuestion_StringArgument & { value: string }
                 : never;
 
-export interface DynamicQuestion__Config {
+export interface DynamicQuestion_Config {
     arguments: [DynamicQuestion_Argument,...DynamicQuestion_Argument[]];
+    buildVariants: (config: DynamicQuestion_Config) => DynamicQuestion_Config;
+    checkConstraints: (config: DynamicQuestion_Config) => boolean;
+    checkAnswer: (answer: string) => boolean;
     content: {
-        question: string[];
-        explanation: string[];
+        question: NonEmptyArray<Resource[]>;
+        explanation: NonEmptyArray<Resource[]>;
+        answer: NonEmptyArray<Resource[]>;
     },
-    handlers: {
-        createValidConfig: (config: DynamicQuestion__Config) => DynamicQuestion__Config;
-        checkAnswer: (config: DynamicQuestion__Config) => boolean;
-        getValidValuesForRemainingArgument: (config: DynamicQuestion__Config) => any;
-    }
+    name: TextResource_AllLocales,
+}
+
+export interface DynamicQuestion_Variant {
+    args: () => NonEmptyArray<{selector: string; value: any}>;
+    checkAnswer: (answer: string) => boolean;
+}
+
+export interface DynamicQuestion {
+    getArgs: () => NonEmptyArray<DynamicQuestion_Argument>;
+    updateArgs: (args) => void;
+    calculateValidVariants: () => void;
+    hasVariants: () => boolean;
+    getAllVariants: () => NonEmptyArray<DynamicQuestion_Config>;
 }
