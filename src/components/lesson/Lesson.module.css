@@ -34,15 +34,15 @@
 .readout { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .readout span { color: var(--mui-palette-warning-main); font-variant-numeric: tabular-nums; }
 .track { position: relative; height: 160px; margin: 0 8px; }
-.source { position: absolute; left: 0; top: 63px; width: 30px; height: 34px; border-radius: 8px 2px 2px 8px; background: var(--mui-palette-action-selected); }
-.screen { position: absolute; right: 0; top: 30px; width: 8px; height: 100px; background: var(--mui-palette-info-main); border-radius: 5px; }
-.beam { position: absolute; left: 30px; right: 8px; top: 79px; height: 2px; background: var(--mui-palette-warning-dark); }
-.travel { position: absolute; left: 30px; right: 8px; top: 73px; height: 14px; }
+.source { position: absolute; inset-inline-start: 0; top: 63px; width: 30px; height: 34px; border-radius: 8px 2px 2px 8px; background: var(--mui-palette-action-selected); }
+.screen { position: absolute; inset-inline-end: 0; top: 30px; width: 8px; height: 100px; background: var(--mui-palette-info-main); border-radius: 5px; }
+.beam { position: absolute; inset-inline-start: 30px; inset-inline-end: 8px; top: 79px; height: 2px; background: var(--mui-palette-warning-dark); }
+.travel { position: absolute; inset-inline-start: 30px; inset-inline-end: 8px; top: 73px; height: 14px; }
 .pulse { position: absolute; height: 14px; width: 14px; background: var(--mui-palette-warning-main); box-shadow: 0 0 20px var(--mui-palette-warning-main); border-radius: 50%; animation: travel var(--travel-time) linear infinite alternate; }
-@keyframes travel { from { left: 0; } to { left: calc(100% - 14px); } }
+@keyframes travel { from { inset-inline-start: 0; } to { inset-inline-start: calc(100% - 14px); } }
 .trackLabels { display: flex; justify-content: space-between; color: var(--mui-palette-text-secondary); font-size: 13px; }
 .play { margin-top: 20px; background: var(--mui-palette-warning-main); color: var(--mui-palette-warning-contrastText); border: none; }
-.quote { margin: 28px 0; border-left: 4px solid var(--mui-palette-warning-main); padding: 18px 24px; background: rgb(var(--mui-palette-warning-mainChannel) / 0.12); border-radius: 0 12px 12px 0; font-size: 20px; line-height: 1.5; }
+.quote { margin: 28px 0; border-inline-start: 4px solid var(--mui-palette-warning-main); padding: 18px 24px; background: rgb(var(--mui-palette-warning-mainChannel) / 0.12); border-radius: 0 12px 12px 0; font-size: 20px; line-height: 1.5; }
 .caption { color: var(--mui-palette-text-secondary); font-size: 13px; }
 .caption a { color: var(--mui-palette-primary-main); }
 .flashStage { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px 0; }
@@ -51,7 +51,7 @@
 .flashCard { grid-column: 2; position: relative; min-height: 340px; width: 100%; overflow: hidden; border-radius: 24px; border: 1px solid var(--mui-palette-divider); box-shadow: 0 12px 40px rgb(var(--mui-palette-text-primaryChannel) / 0.07); padding: 32px; background: var(--mui-palette-background-paper); color: var(--mui-palette-text-primary); display: flex; flex-direction: column; align-items: stretch; text-align: center; }
 .flashHeader { display: flex; align-items: flex-start; gap: 8px; }
 .flashMenuButton { position: relative; z-index: 3; flex: 0 0 auto; color: var(--mui-palette-text-secondary); }
-.flashQuestion { flex: 1; min-width: 0; margin: 8px 0 0; font-size: clamp(16px, 1.8vw, 20px); line-height: 1.35; text-align: left; }
+.flashQuestion { flex: 1; min-width: 0; margin: 8px 0 0; font-size: clamp(16px, 1.8vw, 20px); line-height: 1.35; text-align: start; }
 .flashLabels { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; margin: 16px 0 12px; }
 .flashDivider { margin: 0; }
 .flashReveal { position: relative; z-index: 2; display: flex; flex: 0 0 132px; align-items: center; justify-content: center; width: 100%; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
@@ -67,7 +67,7 @@
 .primary { display: inline-block; border: 0; border-radius: 24px; padding: 13px 25px; background: var(--mui-palette-primary-main); color: var(--mui-palette-primary-contrastText); font: inherit; cursor: pointer; text-decoration: none; margin-top: 20px; }
 .primary:disabled { opacity: .4; cursor: default; }
 .choices { display: grid; gap: 12px; margin: 28px 0; }
-.choices button { padding: 18px 22px; border: 1px solid var(--mui-palette-divider); border-radius: 14px; color: var(--mui-palette-text-primary); background: var(--mui-palette-background-paper); font: inherit; text-align: left; cursor: pointer; }
+.choices button { padding: 18px 22px; border: 1px solid var(--mui-palette-divider); border-radius: 14px; color: var(--mui-palette-text-primary); background: var(--mui-palette-background-paper); font: inherit; text-align: start; cursor: pointer; }
 .choices button[data-selected=true] { border: 2px solid var(--mui-palette-warning-main); background: rgb(var(--mui-palette-warning-mainChannel) / 0.12); }
 .choices button[data-correct=true] { border: 2px solid var(--mui-palette-success-main); background: rgb(var(--mui-palette-success-mainChannel) / 0.12); }
 .choices button:disabled { cursor: default; color: var(--mui-palette-text-primary); }

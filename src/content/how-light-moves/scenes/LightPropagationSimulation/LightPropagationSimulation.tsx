@@ -4,6 +4,7 @@ import { useState, useSyncExternalStore } from 'react';
 import { Box, Button, Paper, Slider, Typography } from '@mui/material';
 import type { LightPropagationSimulationLocale, LightPropagationSimulationLocaleCode } from './lightPropagationSimulation.locale';
 import styles from './LightPropagationSimulation.module.css';
+import { getLocaleDirection } from '@/types/languages';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
 
@@ -29,7 +30,7 @@ export default function LightPropagationSimulation({ locale, messages }: LightPr
   const paused = playbackOverride ?? reducedMotion;
 
   return (
-    <Paper component="section" variant="outlined" className={styles.scene} lang={locale} aria-label={messages.scene.accessibleName}>
+    <Paper component="section" variant="outlined" className={styles.scene} lang={locale} dir={getLocaleDirection(locale)} aria-label={messages.scene.accessibleName}>
       <Typography component="h3" variant="h6">{messages.scene.title}</Typography>
       <Typography component="div" className={styles.description}>{messages.scene.description}</Typography>
 

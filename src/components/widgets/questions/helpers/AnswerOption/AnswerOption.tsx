@@ -40,7 +40,7 @@ export function AnswerOption({ label, selected, onToggle, disabled = false, feed
       bgcolor: theme => tone && feedback !== 'missed' ? alpha(theme.palette[tone].main, 0.12) : 'transparent',
       transition: theme => theme.transitions.create(['border-color', 'background-color', 'color'], { duration: 220, easing: theme.transitions.easing.easeInOut }),
       '@media (prefers-reduced-motion: reduce)': { transition: 'none', '& svg, & span': { transition: 'none' } },
-      borderRadius: 1, textAlign: 'left', minHeight: 48,
+      borderRadius: 1, textAlign: 'start', minHeight: 48,
       '&:not(.Mui-disabled):hover': { bgcolor: 'action.hover' },
       '&.Mui-disabled': { opacity: feedback ? 1 : 0.6, color: 'text.primary' },
       '&.Mui-focusVisible': { outline: '3px solid', outlineColor: 'primary.main', outlineOffset: 3 },
@@ -67,5 +67,5 @@ export function AnswerOption({ label, selected, onToggle, disabled = false, feed
 /** Max-content measures the widest label; all rows stretch to that one width. */
 export const answerColumnSx = {
   display: 'grid', gridTemplateColumns: 'minmax(0, 1fr)', gap: 1,
-  width: 'max-content', maxWidth: '100%', mx: 'auto', textAlign: 'left',
+  width: 'max-content', maxWidth: '100%', mx: 'auto', textAlign: 'start',
 };

@@ -25,8 +25,12 @@ import BottomNavbar from '../Navigation/BottomNavbar';
 import { topics } from '@/content/topics';
 import { canAdvance, useLessonProgress } from '@/components/lesson/LessonProgress';
 import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
+import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
+import { getLocaleDirection } from '@/types/languages';
 
 export default function LearningLayout({ children }: { children: ReactNode }) {
+  const { locale } = useLocale();
+  const direction = getLocaleDirection(locale);
   const { progress, dispatch } = useLessonProgress();
   const [open, setOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -41,7 +45,7 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
   return (
-    <Box sx={{ height: '100dvh', display: 'grid', gridTemplateRows: 'auto minmax(0, 1fr) auto', overflow: 'hidden', bgcolor: 'background.default', color: 'text.primary' }}>
+    <Box dir={direction} lang={locale} sx={{ height: '100dvh', display: 'grid', gridTemplateRows: 'auto minmax(0, 1fr) auto', overflow: 'hidden', bgcolor: 'background.default', color: 'text.primary' }}>
       <TopNavbar aria-label="Верхня навігація навчання" slots={{
         left: <>
           <IconButton aria-label={open ? 'Закрити список тем' : 'Відкрити список тем'} aria-expanded={open} aria-controls={open ? 'learning-sidebar' : undefined} onClick={() => { setOpen((value) => !value); setSettingsOpen(false); }}>
@@ -72,6 +76,7 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
           }} />
         </Fade>
         <Drawer
+          anchor={direction === 'rtl' ? 'right' : 'left'}
           variant="persistent"
           open={open}
           slotProps={{
@@ -96,7 +101,7 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
           </Box>
         </Drawer>
         <Drawer
-          anchor="right"
+          anchor={direction === 'rtl' ? 'left' : 'right'}
           variant="persistent"
           open={settingsOpen}
           slotProps={{ paper: { sx: { position: 'absolute', width: 'min(320px, calc(100vw - 48px))', height: '100%', overflow: 'hidden' } } }}
@@ -118,8 +123,8 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
 
       <BottomNavbar aria-label="Нижня навігація навчання" slots={{
         center: <>
-          <Button variant="contained" disabled={progress.step === 0} onClick={() => dispatch({ type: 'back' })}>← Назад</Button>
-          <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>Далі →</Button>
+          <Button variant="contained" disabled={progress.step === 0} onClick={() => dispatch({ type: 'back' })}>{direction === 'rtl' ? '→' : '←'} Назад</Button>
+          <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>Далі {direction === 'rtl' ? '←' : '→'}</Button>
         </>,
         right: <Button variant="outlined" disabled={progress.step >= 3} onClick={() => dispatch({ type: 'skip' })}>Skip</Button>,
       }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />

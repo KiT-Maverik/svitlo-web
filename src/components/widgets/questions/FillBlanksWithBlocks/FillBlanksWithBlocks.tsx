@@ -111,7 +111,7 @@ export function FillBlanksWithBlocks({ question, value, onChange, disabled, read
   };
   return <DndContext id={id} sensors={sensors} onDragStart={({ active }) => setActiveId(String(active.id))} onDragCancel={() => setActiveId(null)} onDragEnd={({ active, over }) => { if (!locked && over) drop(String(active.id), String(over.id)); setActiveId(null); }}>
     <Stack spacing={2} sx={{ alignItems: 'center', width: '100%' }}>
-      <Box role="group" aria-label={question.prompt} sx={{ width: '100%', textAlign: 'left', lineHeight: 2.8, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
+      <Box role="group" aria-label={question.prompt} sx={{ width: '100%', textAlign: 'start', lineHeight: 2.8, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
         {question.parts.map((part, index) => part.type === 'text' ? <Box component="span" key={`text-${index}`}>{part.text}</Box> : <BlankDrop key={part.id} id={blankTarget(part.id)} item={question.blocks.find(item => item.id === value[part.id])} preview={activeItem} correctAnswer={question.blocks.find(item => item.id === question.correctBlocks[part.id])?.label} showCorrectAnswer={isGraded(result) && showCorrectAnswers && value[part.id] !== question.correctBlocks[part.id]} exiting={returning?.blankId === part.id} graded={isGraded(result)} disabled={locked} feedback={feedbackFor(part.id)} active={activeId === value[part.id]} onRemove={() => { const itemId = value[part.id]; if (itemId) { setBankOrder(order => [...order.filter(id => id !== itemId), itemId]); setReturning({ blankId: part.id, itemId }); } }} />)}
       </Box>
       <BlockBank id={bankTarget} items={bankItems} enteringId={returning?.itemId} disabled={locked} />

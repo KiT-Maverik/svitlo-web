@@ -9,8 +9,12 @@ import { QuestionAttempt } from '@/components/widgets/questions/helpers';
 import { QuestionProgress, type QuestionStatus } from './QuestionProgress';
 import { LessonSteps } from './LessonSteps';
 import styles from './Lesson.module.css';
+import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
+import { getLocaleDirection } from '@/types/languages';
 
 export default function LightLesson({ theory, allowQuestionNavigation = true, allowSectionNavigation = true, showStepNumbers = true }: { theory: ReactNode; allowQuestionNavigation?: boolean; allowSectionNavigation?: boolean; showStepNumbers?: boolean }) {
+  const { locale } = useLocale();
+  const rtl = getLocaleDirection(locale) === 'rtl';
   const { progress, dispatch } = useLessonProgress();
   const [questionIndex, setQuestionIndex] = useState(0);
   const [questionStatuses, setQuestionStatuses] = useState<QuestionStatus[]>(() => lightQuestions.map((_, index) => index === 0 ? 'unanswered' : 'deferred'));
@@ -44,7 +48,7 @@ export default function LightLesson({ theory, allowQuestionNavigation = true, al
             const nextStatuses = questionStatuses.map((currentStatus, currentIndex) => currentIndex === index ? status : currentIndex === index + 1 && currentStatus === 'deferred' ? 'unanswered' : currentStatus);
             setQuestionStatuses(nextStatuses);
             setScore(nextStatuses.filter(currentStatus => currentStatus === 'correct').length);
-          }} actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === lightQuestions.length ? 'Завершити урок' : 'Наступне питання →'}</button> : context.children }} />
+          }} actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === lightQuestions.length ? 'Завершити урок' : `Наступне питання ${rtl ? '←' : '→'}`}</button> : context.children }} />
         </div>)}
         <label className={styles.sound}><input type="checkbox" checked={sound} onChange={(event) => setSound(event.target.checked)} /> Звук завершення</label>
       </section>)}

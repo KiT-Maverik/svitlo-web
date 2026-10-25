@@ -97,3 +97,7 @@ export function getSupportedLanguages(configuration: LanguageConfiguration = {})
 export function isLocale(value: string, languages: readonly LanguageDefinition[] = DEFAULT_SUPPORTED_LANGUAGES): value is Locale {
   return languages.some((language) => language.locale === value);
 }
+
+export function getLocaleDirection(locale: Locale): TextDirection {
+  return DEFAULT_SUPPORTED_LANGUAGES.find((language) => language.locale === locale)?.direction ?? 'ltr';
+}

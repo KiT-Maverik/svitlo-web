@@ -26,7 +26,7 @@ function SortableAnswer({ item, position, disabled, feedback }: { item: Item; po
       style={{ transform: CSS.Transform.toString(transform), transition }}
       sx={{
         flex: 1, minWidth: 0, justifyContent: 'flex-start', gap: 2, px: 2, py: 1.5,
-        borderRadius: 1, textAlign: 'left', minHeight: 48, cursor: disabled ? 'default' : isDragging ? 'grabbing' : 'grab',
+        borderRadius: 1, textAlign: 'start', minHeight: 48, cursor: disabled ? 'default' : isDragging ? 'grabbing' : 'grab',
         border: '1px solid', borderColor: feedback ? `${tone}.main` : 'transparent',
         bgcolor: theme => feedback ? alpha(theme.palette[tone].main, 0.12) : isDragging ? theme.palette.action.selected : theme.palette.background.paper, zIndex: isDragging ? 1 : 'auto',
         transition: theme => theme.transitions.create(['background-color', 'border-color', 'color'], { duration: 220, easing: theme.transitions.easing.easeInOut }),

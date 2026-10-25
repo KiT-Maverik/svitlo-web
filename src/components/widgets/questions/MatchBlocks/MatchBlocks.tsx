@@ -13,7 +13,7 @@ const visuallyHidden = { position: 'absolute', width: 1, height: 1, p: 0, m: -1,
 type Point = { x: number; y: number };
 type Anchors = { left: Record<string, Point>; right: Record<string, Point> };
 const curve = (a: Point, b: Point) => {
-  const bend = Math.max(24, Math.abs(b.x - a.x) / 2);
+  const bend = Math.max(24, Math.abs(b.x - a.x) / 2) * (b.x >= a.x ? 1 : -1);
   return `M ${a.x} ${a.y} C ${a.x + bend} ${a.y}, ${b.x - bend} ${b.y}, ${b.x} ${b.y}`;
 };
 
@@ -43,17 +43,20 @@ export function MatchBlocks({ question, value, onChange, disabled, readOnly, res
       if (!rect) return;
       const collect = (nodes: Map<string, HTMLButtonElement>, side: 'left' | 'right') => Object.fromEntries([...nodes].map(([id, node]) => {
         const bounds = node.getBoundingClientRect();
-        return [id, { x: (side === 'left' ? bounds.right : bounds.left) - rect.left, y: bounds.top + bounds.height / 2 - rect.top }];
+        const rtl = getComputedStyle(root.current!).direction === 'rtl';
+        return [id, { x: (side === 'left' ? rtl ? bounds.left : bounds.right : rtl ? bounds.right : bounds.left) - rect.left, y: bounds.top + bounds.height / 2 - rect.top }];
       }));
       const next = { left: collect(leftNodes.current, 'left'), right: collect(rightNodes.current, 'right') };
       setAnchors(previous => JSON.stringify(previous) === JSON.stringify(next) ? previous : next);
     }
     const observer = new ResizeObserver(measure);
+    const directionObserver = new MutationObserver(measure);
+    directionObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['dir'] });
     if (root.current) observer.observe(root.current);
     for (const node of [...leftNodes.current.values(), ...rightNodes.current.values()]) observer.observe(node);
     measure();
     window.addEventListener('resize', measure);
-    return () => { observer.disconnect(); window.removeEventListener('resize', measure); };
+    return () => { observer.disconnect(); directionObserver.disconnect(); window.removeEventListener('resize', measure); };
   }, [question, review, value]);
   function remove(leftId: string) {
     if (locked) return;
@@ -98,8 +101,8 @@ export function MatchBlocks({ question, value, onChange, disabled, readOnly, res
             onClick={() => choose(side, item.id)}
             sx={{ gridColumn: side === 'left' ? 1 : 2, gridRow: index + 1, position: 'relative', minHeight: 52, px: { xs: 1, sm: 2 }, py: 1.5, width: '100%', border: '1px solid', borderColor: feedback ? color : active || paired ? 'primary.main' : 'divider', borderRadius: 1, textAlign: 'center', justifyContent: 'center', gap: 1, bgcolor: feedback ? alpha(color, 0.12) : active ? 'action.selected' : 'background.paper', transition: theme => theme.transitions.create(['background-color', 'border-color'], { duration: 220, easing: theme.transitions.easing.easeInOut }), '&:hover': { bgcolor: 'action.hover' }, '&.Mui-disabled': { opacity: review ? 1 : 0.6, color: 'text.primary' }, '@media (prefers-reduced-motion: reduce)': { transition: 'none' } }}>
             <Typography component="span" sx={{ minWidth: 0, overflowWrap: 'anywhere', textAlign: 'center' }}>{item.label}</Typography>
-            {side === 'left' && FeedbackIcon && <FeedbackIcon aria-hidden="true" sx={{ position: 'absolute', right: { xs: 8, sm: 12 }, top: '50%', transform: 'translateY(-50%)', color, animation: 'matching-feedback-pop 180ms ease-out both', '@keyframes matching-feedback-pop': { from: { opacity: 0, transform: 'translateY(-50%) scale(.55)' }, to: { opacity: 1, transform: 'translateY(-50%) scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }} />}
-            {(active || paired) && <Box component="span" aria-hidden="true" sx={{ position: 'absolute', width: 8, height: 8, borderRadius: '50%', bgcolor: color, top: 'calc(50% - 4px)', [side === 'left' ? 'right' : 'left']: -5 }} />}
+            {side === 'left' && FeedbackIcon && <FeedbackIcon aria-hidden="true" sx={{ position: 'absolute', insetInlineEnd: { xs: 8, sm: 12 }, top: '50%', transform: 'translateY(-50%)', color, animation: 'matching-feedback-pop 180ms ease-out both', '@keyframes matching-feedback-pop': { from: { opacity: 0, transform: 'translateY(-50%) scale(.55)' }, to: { opacity: 1, transform: 'translateY(-50%) scale(1)' } }, '@media (prefers-reduced-motion: reduce)': { animation: 'none' } }} />}
+            {(active || paired) && <Box component="span" aria-hidden="true" sx={{ position: 'absolute', width: 8, height: 8, borderRadius: '50%', bgcolor: color, top: 'calc(50% - 4px)', [side === 'left' ? 'insetInlineEnd' : 'insetInlineStart']: -5 }} />}
           </ButtonBase>;
         })}
       </Box>)}

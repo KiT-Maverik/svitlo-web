@@ -19,8 +19,8 @@
 .line {
   position: absolute;
   top: 80px;
-  right: 12px;
-  left: 32px;
+  inset-inline-end: 12px;
+  inset-inline-start: 32px;
   height: 2px;
   background: var(--mui-palette-warning-dark);
 }
@@ -28,19 +28,22 @@
 .source {
   position: absolute;
   top: 62px;
-  left: 0;
+  inset-inline-start: 0;
   width: 36px;
   height: 38px;
   border: 1px solid var(--mui-palette-divider);
-  border-radius: 8px 3px 3px 8px;
+  border-start-start-radius: 8px;
+  border-end-start-radius: 8px;
+  border-start-end-radius: 3px;
+  border-end-end-radius: 3px;
   background: var(--mui-palette-action-selected);
 }
 
 .path {
   position: absolute;
   top: 74px;
-  right: 12px;
-  left: 36px;
+  inset-inline-end: 12px;
+  inset-inline-start: 36px;
   height: 14px;
 }
 
@@ -55,14 +58,14 @@
 }
 
 @keyframes travel {
-  from { left: 0; }
-  to { left: calc(100% - 14px); }
+  from { inset-inline-start: 0; }
+  to { inset-inline-start: calc(100% - 14px); }
 }
 
 .screen {
   position: absolute;
   top: 22px;
-  right: 0;
+  inset-inline-end: 0;
   width: 10px;
   height: 120px;
   border-radius: 8px;

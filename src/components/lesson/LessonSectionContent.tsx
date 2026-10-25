@@ -4,7 +4,7 @@ import { Fragment, type ReactNode } from 'react';
 import { MarkdownContent } from '@/components/widgets';
 import type { LessonSection_Config } from '@/types/configs/lesson.types';
 import type { Resource } from '@/types/content/resources';
-import { DEFAULT_SUPPORTED_LANGUAGES, type Locale } from '@/types/languages';
+import { getLocaleDirection, type Locale } from '@/types/languages';
 
 function isResource(block: Resource | ReactNode): block is Resource {
   return typeof block === 'object' && block !== null && 'blockType' in block;
@@ -19,7 +19,7 @@ export default async function LessonSectionContent({ content, locale }: {
   content: LessonSection_Config['content'];
   locale: Locale;
 }) {
-  const direction = DEFAULT_SUPPORTED_LANGUAGES.find(language => language.locale === locale)?.direction ?? 'ltr';
+  const direction = getLocaleDirection(locale);
   const blocks = await Promise.all(content.map(async (block, index) => {
     if (!isResource(block)) return <Fragment key={index}>{block}</Fragment>;
 

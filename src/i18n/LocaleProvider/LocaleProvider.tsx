@@ -1,8 +1,9 @@
 'use client';
 
-import { createContext, useCallback, useContext, useMemo, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, type ReactNode } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import type { Locale } from '@/types/languages';
+import { ThemeProvider, useTheme } from '@mui/material/styles';
+import { getLocaleDirection, type Locale } from '@/types/languages';
 
 type LocaleContextValue = {
   locale: Locale;
@@ -12,6 +13,19 @@ type LocaleContextValue = {
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
 export function LocaleProvider({ locale, children }: { locale: Locale; children: ReactNode }) {
+  const theme = useTheme();
+  const direction = getLocaleDirection(locale);
+  const directionalTheme = useMemo(() => ({ ...theme, direction }), [theme, direction]);
+  useEffect(() => {
+    const previousDirection = document.documentElement.dir;
+    const previousLanguage = document.documentElement.lang;
+    document.documentElement.dir = direction;
+    document.documentElement.lang = locale;
+    return () => {
+      document.documentElement.dir = previousDirection;
+      document.documentElement.lang = previousLanguage;
+    };
+  }, [direction, locale]);
   const pathname = usePathname();
   const router = useRouter();
   const setLocale = useCallback((nextLocale: Locale) => {
@@ -21,7 +35,7 @@ export function LocaleProvider({ locale, children }: { locale: Locale; children:
   }, [pathname, router]);
   const value = useMemo(() => ({ locale, setLocale }), [locale, setLocale]);
 
-  return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
+  return <LocaleContext.Provider value={value}><ThemeProvider theme={directionalTheme}>{children}</ThemeProvider></LocaleContext.Provider>;
 }
 
 export function useLocale() {
