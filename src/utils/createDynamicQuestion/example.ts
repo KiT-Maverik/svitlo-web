@@ -1,55 +1,60 @@
-import {z} from "zod";
+import { createDynamicQuestion } from './createDynamicQuestion.utils';
+import type {
+  DynamicQuestion_Config,
+  DynamicQuestion_NumberArgumentConfig,
+  DynamicQuestion_Variant,
+} from './createDynamicQuestion.types';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@/types/languages';
+import type { TextResource_AllLocales } from '@/types/content/resources';
 
-import {
-    Generator_Config,
-    NumberGeneratorArgument,
-    Generator_ArgumentProposal,
-    GeneratorArgumentType
-} from "@/types/configs/generator.types";
-import {NonEmptyArray} from "@/types/misc.types";
+const girlsApple = {
+  selector: 'girlsApple',
+  min: 1,
+  max: 10,
+  type: 'number',
+} as const satisfies DynamicQuestion_NumberArgumentConfig;
 
-const girlsApple: NumberGeneratorArgument = {
-    selector: "girlsApple",
-    min: 1,
-    max: 10,
-    type: "number"
-} as const;
+const boysApple = {
+  selector: 'boysApple',
+  min: 2,
+  max: 11,
+  type: 'number',
+} as const satisfies DynamicQuestion_NumberArgumentConfig;
 
-const boysApple: NumberGeneratorArgument = {
-    selector: "boysApple",
-    min: 2,
-    max: 11,
-    type: "number"
-} as const;
+const appleArguments = [girlsApple, boysApple] as const;
+type AppleArguments = typeof appleArguments;
+type AppleVariant = DynamicQuestion_Variant<AppleArguments>;
 
-type Arguments = typeof girlsApple | typeof boysApple
+const appleName: TextResource_AllLocales = {
+  id: 'apples-question',
+  blockType: 'text',
+  allLocales: true,
+  value: Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(language => [language.locale, 'Apples'])) as TextResource_AllLocales['value'],
+};
 
-const checkConstraints = (girlsApple: number, boysApple: number) => girlsApple < boysApple
+const createAppleValue = <T extends 'girlsApple' | 'boysApple'>(selector: T, value: number): { selector: T; value: number } => ({ selector, value });
 
-type F = (boysApple?: number, girlsApple?: number) => void
-
-const getValidVariants: F = (
-    girlsApple,
-    boysApple,
-) => {
-    let girlsOptions: number[] = [];
-    let boysOptions: number[] = [];
-
-    if (boysApple && girlsApple) {
-        girlsOptions = [girlsApple]
-        boysOptions = [boysApple]
+const appleConfig: DynamicQuestion_Config<AppleArguments> = {
+  arguments: appleArguments,
+  buildVariants: () => {
+    const variants: AppleVariant[] = [];
+    for (let girls = 1; girls <= 10; girls += 1) {
+      for (let boys = 2; boys <= 11; boys += 1) {
+        variants.push([
+          createAppleValue('girlsApple', girls),
+          createAppleValue('boysApple', boys),
+        ]);
+      }
     }
-    else if (boysApple) {
-        girlsOptions = Array.from({length: boysApple - 1}, (_, i) => i + 1)
-        boysOptions = [boysApple]
-    }
-    else if (girlsApple) {
-        girlsOptions = [girlsApple]
-        boysOptions = Array.from({length: girlsApple - 1}, (_, i) => i + 1)
-    }
+    return variants;
+  },
+  checkConstraints: ([girls, boys]) => girls.value < boys.value,
+  content: {
+    question: [[]],
+    explanation: [[]],
+    answer: [[]],
+  },
+  name: appleName,
+};
 
-    return variants
-}
-
-
-const generator
+export const appleDynamicQuestion = createDynamicQuestion(appleConfig);

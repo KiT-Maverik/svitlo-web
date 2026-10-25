@@ -1,95 +1,141 @@
-import {
-    Generator_ArgumentProposal,
-    GeneratorArgumentType
-} from "@/types/configs/generator.types";
-import {NonEmptyArray} from "@/types/misc.types";
+import type {
+    DynamicQuestion,
+    DynamicQuestion_ArgumentProposal,
+    DynamicQuestion_ArgumentValidation,
+    DynamicQuestion_Arguments,
+    DynamicQuestion_Config,
+    DynamicQuestion_Variant,
+} from './createDynamicQuestion.types';
 
-export const validateNumberArgumentProposition = (arg: Generator_ArgumentProposal<"number">) => {
+const isRecord = (value: unknown): value is Record<string, unknown> => (
+    typeof value === 'object' && value !== null
+);
+
+const validateCommonArgument = (
+    argument: DynamicQuestion_ArgumentProposal<'string' | 'number' | 'boolean'>,
+): Record<string, boolean> => ({
+    selector: argument.selector.length > 0,
+    type: typeof argument.value === argument.type,
+});
+
+export const validateStringArgument = (
+    argument: DynamicQuestion_ArgumentProposal<'string'>,
+): DynamicQuestion_ArgumentValidation => {
     const constraints = {
-        selector: typeof arg.selector === "string",
-        type: arg.type === typeof arg.value,
-        min: arg.min === undefined ? true : arg.value <= arg.min,
-        max: arg.max === undefined ? true : arg.value <= arg.max,
-        allowedValues: arg.allowedValues !== undefined && arg.allowedValues.includes(arg.value),
-        exclude: arg.exclude === undefined || !arg.exclude.includes(arg.value),
-        exact: arg.value === arg.exact,
+        ...validateCommonArgument(argument),
+        minLength: argument.minLength === undefined || argument.value.length >= argument.minLength,
+        maxLength: argument.maxLength === undefined || argument.value.length <= argument.maxLength,
+        allowedValues: argument.allowedValues === undefined || argument.allowedValues.includes(argument.value),
+        exclude: argument.exclude === undefined || !argument.exclude.includes(argument.value),
+        exact: argument.exact === undefined || argument.value === argument.exact,
     };
 
     return {
-        success: Object.values(constraints).every(v => v),
-        selector: arg.selector,
-        type: arg.type,
+        success: Object.values(constraints).every(Boolean),
+        selector: argument.selector,
+        type: argument.type,
         constraints,
-    } as const;
-}
+    };
+};
 
-export const validateStringArgumentProposition = (arg: Generator_ArgumentProposal<"string">) => {
+export const validateNumberArgument = (
+    argument: DynamicQuestion_ArgumentProposal<'number'>,
+): DynamicQuestion_ArgumentValidation => {
     const constraints = {
-        selector: typeof arg.selector === "string",
-        type: arg.type === typeof arg.value,
-        minLength: arg.minLength === undefined ? true : arg.value.length <= arg.minLength,
-        maxLength: arg.maxLength === undefined ? true : arg.value.length <= arg.maxLength,
-        allowedValues: arg.allowedValues !== undefined && arg.allowedValues.includes(arg.value),
-        exclude: arg.exclude === undefined || !arg.exclude.includes(arg.value),
-        exact: arg.value === arg.exact,
+        ...validateCommonArgument(argument),
+        min: argument.min === undefined || argument.value >= argument.min,
+        max: argument.max === undefined || argument.value <= argument.max,
+        step: argument.step === undefined
+            || argument.min === undefined
+            || (argument.value - argument.min) % argument.step === 0,
+        allowedValues: argument.allowedValues === undefined || argument.allowedValues.includes(argument.value),
+        exclude: argument.exclude === undefined || !argument.exclude.includes(argument.value),
+        exact: argument.exact === undefined || argument.value === argument.exact,
     };
 
     return {
-        success: Object.values(constraints).every(v => v),
-        selector: arg.selector,
-        type: arg.type,
+        success: Object.values(constraints).every(Boolean),
+        selector: argument.selector,
+        type: argument.type,
         constraints,
-    } as const;
-}
-
-export const validateBooleanArgumentProposition = (arg: Generator_ArgumentProposal<"boolean">) => {
-    const constraints = {
-        selector: typeof arg.selector === "string",
-        type: arg.type === typeof arg.value,
     };
+};
+
+export const validateBooleanArgument = (
+    argument: DynamicQuestion_ArgumentProposal<'boolean'>,
+): DynamicQuestion_ArgumentValidation => {
+    const constraints = validateCommonArgument(argument);
 
     return {
-        success: Object.values(constraints).every(v => v),
-        selector: arg.selector,
-        type: arg.type,
+        success: Object.values(constraints).every(Boolean),
+        selector: argument.selector,
+        type: argument.type,
         constraints,
-    } as const;
-}
+    };
+};
 
-export const validateArgumentProposition = (arg: Generator_ArgumentProposal<GeneratorArgumentType>) => {
-    switch (arg.type) {
-        case "number":
-            return validateNumberArgumentProposition(arg);
-        case "string":
-            return validateStringArgumentProposition(arg);
-        case "boolean":
-            return validateBooleanArgumentProposition(arg);
+export const validateArgument = (
+    argument: DynamicQuestion_ArgumentProposal<'string' | 'number' | 'boolean'>,
+): DynamicQuestion_ArgumentValidation => {
+    switch (argument.type) {
+        case 'string':
+            return validateStringArgument(argument);
+        case 'number':
+            return validateNumberArgument(argument);
+        case 'boolean':
+            return validateBooleanArgument(argument);
     }
 };
 
-type VariantsGenerator_Config = {
-    propositions: NonEmptyArray<Generator_ArgumentProposal<GeneratorArgumentType>>;
-    handler: () => void;
-}
-
-type VariantsConfig = {
-    args: NonEmptyArray<Generator_ArgumentProposal<GeneratorArgumentType>>;
-    variants: NonEmptyArray<Generator_ArgumentProposal<GeneratorArgumentType>>;
-    randomTask: Generator_ArgumentProposal<GeneratorArgumentType>;
-}
-
-type VariantsGenerator = (config: VariantsGenerator_Config) => VariantsConfig
-
-export const getValidVariants: VariantsGenerator = ({propositions, handler}) => {
-    const validatedPropositions = propositions.map((i) => validateArgumentProposition(i));
-
-    if (validatedPropositions.every(({success}) => success)) {
-        handler()
+const isValidVariant = <TArguments extends DynamicQuestion_Arguments>(
+    argumentsConfig: TArguments,
+    variant: DynamicQuestion_Variant<TArguments>,
+): boolean => {
+    if (variant.length !== argumentsConfig.length) {
+        return false;
     }
+
+    return argumentsConfig.every((argument, index) => {
+        const value = variant[index];
+
+        if (!isRecord(value) || value.selector !== argument.selector) {
+            return false;
+        }
+
+        const proposal = {
+            ...argument,
+            value: value.value,
+        } as DynamicQuestion_ArgumentProposal<'string' | 'number' | 'boolean'>;
+
+        return validateArgument(proposal).success;
+    });
+};
+
+export function createDynamicQuestion<TArguments extends DynamicQuestion_Arguments>(
+    config: DynamicQuestion_Config<TArguments>,
+): DynamicQuestion<TArguments> {
+    let args: DynamicQuestion_Variant<TArguments> | undefined;
+    let variants: DynamicQuestion_Variant<TArguments>[] = [];
+
+    const calculateValidVariants = (): DynamicQuestion_Variant<TArguments>[] => {
+        variants = config.buildVariants(config)
+            .filter((variant) => isValidVariant(config.arguments, variant))
+            .filter(config.checkConstraints);
+
+        return variants;
+    };
 
     return {
-        validatedPropositions,
-        variants,
-        randomTask,
-    }
+        getArgs: () => args,
+        updateArgs: (nextArgs) => {
+            args = nextArgs;
+        },
+        calculateValidVariants,
+        hasVariants: () => variants.length > 0,
+        getAllVariants: () => variants,
+        getVariant: (index) => variants[index],
+        getRandomVariant: () => variants.length === 0
+            ? undefined
+            : variants[Math.floor(Math.random() * variants.length)],
+    };
 }

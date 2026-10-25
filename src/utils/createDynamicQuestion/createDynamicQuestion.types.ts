@@ -1,5 +1,5 @@
-import {Resource, TextResource_AllLocales} from "@/types/content/resources";
-import {NonEmptyArray} from "@/types/misc.types";
+import type { Resource, TextResource_AllLocales } from '@/types/content/resources';
+import type { NonEmptyArray } from '@/types/misc.types';
 
 export type DynamicQuestion_ArgumentType =
     | "string"
@@ -51,19 +51,47 @@ export type DynamicQuestion_ArgumentProposal<
                 ? DynamicQuestion_StringArgumentConfig & { value: string }
                 : never;
 
+type DynamicQuestion_ArgumentValueForConfig<T extends DynamicQuestion_ArgumentConfig> =
+    T extends DynamicQuestion_BooleanArgumentConfig
+        ? { selector: T['selector']; value: boolean }
+        : T extends DynamicQuestion_NumberArgumentConfig
+            ? { selector: T['selector']; value: number }
+            : T extends DynamicQuestion_StringArgumentConfig
+                ? { selector: T['selector']; value: string }
+                : never;
+
 export type DynamicQuestion_ArgumentValue<
-    T extends DynamicQuestion_ArgumentType,
-> = Pick<DynamicQuestion_ArgumentProposal<T>, "selector" | "value">;
+    T extends DynamicQuestion_ArgumentConfig,
+> = DynamicQuestion_ArgumentValueForConfig<T>;
 
-export type DynamicQuestion_AnswerChecker<
-    T extends DynamicQuestion_ArgumentType,
-> = (args: DynamicQuestion_ArgumentValue<T>[]) => boolean;
+export type DynamicQuestion_Arguments = readonly [
+    DynamicQuestion_ArgumentConfig,
+    ...DynamicQuestion_ArgumentConfig[],
+];
 
-export interface DynamicQuestion_Config {
-    arguments: [DynamicQuestion_ArgumentConfig,...DynamicQuestion_ArgumentConfig[]];
-    buildVariants: (config: DynamicQuestion_Config) => DynamicQuestion_Config;
-    checkConstraints: (config: DynamicQuestion_Config) => boolean;
-    checkAnswer: DynamicQuestion_AnswerChecker
+export type DynamicQuestion_Variant<
+    TArguments extends DynamicQuestion_Arguments,
+> = {
+    [Index in keyof TArguments]: TArguments[Index] extends DynamicQuestion_ArgumentConfig
+        ? DynamicQuestion_ArgumentValue<TArguments[Index]>
+        : never;
+};
+
+export type DynamicQuestion_AnswerCheck<TArguments extends DynamicQuestion_Arguments> = (
+    args: DynamicQuestion_Variant<TArguments>,
+) => boolean;
+
+export interface DynamicQuestion_ArgumentValidation {
+    success: boolean;
+    selector: string;
+    type: DynamicQuestion_ArgumentType;
+    constraints: Record<string, boolean>;
+}
+
+export interface DynamicQuestion_Config<TArguments extends DynamicQuestion_Arguments = DynamicQuestion_Arguments> {
+    arguments: TArguments;
+    buildVariants: (config: DynamicQuestion_Config<TArguments>) => DynamicQuestion_Variant<TArguments>[];
+    checkConstraints: (variant: DynamicQuestion_Variant<TArguments>) => boolean;
     content: {
         question: NonEmptyArray<Resource[]>;
         explanation: NonEmptyArray<Resource[]>;
@@ -72,15 +100,12 @@ export interface DynamicQuestion_Config {
     name: TextResource_AllLocales,
 }
 
-export type DynamicQuestion_Variant<
-    T extends DynamicQuestion_ArgumentType,
-> = NonEmptyArray<DynamicQuestion_ArgumentValue<T>>;
-
-export interface DynamicQuestion {
-    getArgs: () => NonEmptyArray<DynamicQuestion_ArgumentConfig>;
-    updateArgs: (args) => void;
-    calculateValidVariants: () => void;
+export interface DynamicQuestion<TArguments extends DynamicQuestion_Arguments = DynamicQuestion_Arguments> {
+    getArgs: () => DynamicQuestion_Variant<TArguments> | undefined;
+    updateArgs: (args: DynamicQuestion_Variant<TArguments>) => void;
+    calculateValidVariants: () => DynamicQuestion_Variant<TArguments>[];
     hasVariants: () => boolean;
-    getAllVariants: () => NonEmptyArray<DynamicQuestion_Config>;
-    getRandomVariant: () => NonEmptyArray<DynamicQuestion_Config>;
+    getAllVariants: () => DynamicQuestion_Variant<TArguments>[];
+    getVariant: (index: number) => DynamicQuestion_Variant<TArguments> | undefined;
+    getRandomVariant: () => DynamicQuestion_Variant<TArguments> | undefined;
 }

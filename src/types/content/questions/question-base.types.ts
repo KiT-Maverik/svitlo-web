@@ -87,6 +87,10 @@ export interface BasicAnswersBlock<CorrectAnswer extends Resource | NonEmptyReso
   }
 }
 
+export type SelectOneAnswer_Answers = BasicAnswersBlock<Resource>['answers'];
+
+export type SelectMultipleAnswers_Answers = BasicAnswersBlock<NonEmptyResourceArray>['answers'];
+
 export interface SelectOneAnswer_QuestionContent extends Question_ContentBase, BasicAnswersBlock<Resource> {
   type: 'select-one-answer';
 }
