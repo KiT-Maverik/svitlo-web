@@ -13,6 +13,11 @@ export type QuizEndingScreenConfig =
       resources: NonEmptyResourceArray;
     };
 
+export interface QuizEndingScreensConfig {
+  success: QuizEndingScreenConfig;
+  fail: QuizEndingScreenConfig;
+}
+
 export interface QuizConfig {
   feedbackMode: 'immediate' | 'after-completion';
   grading?: {
@@ -41,7 +46,7 @@ export interface QuizConfig {
   };
   screen: {
     welcome?: { resources: NonEmptyResourceArray };
-    ending?: QuizEndingScreenConfig;
+    ending?: QuizEndingScreensConfig;
   };
   sectionId: string;
 }
