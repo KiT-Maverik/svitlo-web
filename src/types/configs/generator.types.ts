@@ -1,46 +1,52 @@
 export type GeneratorArgumentType =
     | "string"
     | "number"
-    | "boolean"
+    | "boolean";
 
-type GeneratorArgumentBase<
-    TType extends GeneratorArgumentType,
-    TValue,
-> = {
+type GeneratorArgumentBase<TType extends GeneratorArgumentType> = {
     type: TType;
     selector: string;
+};
+
+type GeneratorArgumentConstraints<TValue> = {
     exclude?: readonly TValue[];
     allowedValues?: readonly TValue[];
     exact?: TValue;
 };
 
 export type StringGeneratorArgument =
-    GeneratorArgumentBase<"string", string> & {
+    GeneratorArgumentBase<"string"> &
+    GeneratorArgumentConstraints<string> & {
     minLength?: number;
     maxLength?: number;
 };
 
 export type NumberGeneratorArgument =
-    GeneratorArgumentBase<"number", number> & {
+    GeneratorArgumentBase<"number"> &
+    GeneratorArgumentConstraints<number> & {
     min?: number;
     max?: number;
     step?: number;
 };
 
 export type BooleanGeneratorArgument =
-    GeneratorArgumentBase<"boolean", boolean>;
+    GeneratorArgumentBase<"boolean">;
 
 type GeneratorArgument =
     | StringGeneratorArgument
     | NumberGeneratorArgument
     | BooleanGeneratorArgument
 
-export type Generator_ArgumentProposal<T extends GeneratorArgumentType> =
-    Extract<GeneratorArgument, { type: T }> & {
-    value: NonNullable<
-        Extract<GeneratorArgument, { type: T }>["exact"]
-    >;
-};
+export type Generator_ArgumentProposal<
+    T extends GeneratorArgumentType,
+> =
+    T extends "boolean"
+        ? BooleanGeneratorArgument & { value: boolean }
+        : T extends "number"
+            ? NumberGeneratorArgument & { value: number }
+            : T extends "string"
+                ? StringGeneratorArgument & { value: string }
+                : never;
 
 export interface Generator_Config {
     arguments: [GeneratorArgument,...GeneratorArgument[]];
