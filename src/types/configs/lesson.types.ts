@@ -1,8 +1,9 @@
-import type { TextResource, NonEmptyResourceArray } from '../content/resources';
+import {TextResource, Resource} from '../content/resources';
 import type { QuizConfig } from './quiz.types';
+import {NonEmptyArray} from "@/types/misc.types";
 
 export interface LessonSection_Config {
-  content: [NonEmptyResourceArray, ...NonEmptyResourceArray[]];
+  content: NonEmptyArray<Resource>;
   id: string;
   name: TextResource;
   skippable: boolean;
@@ -17,7 +18,7 @@ export interface Lesson_Config {
     allowNavigation: boolean;
     allowSkipping: boolean;
     showIndexes: boolean;
-    content: [LessonSection_Content, ...LessonSection_Content[]];
+    content: NonEmptyArray<LessonSection_Content>;
   };
   title: TextResource;
 }
