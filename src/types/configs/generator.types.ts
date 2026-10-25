@@ -2,7 +2,6 @@ export type GeneratorArgumentType =
     | "string"
     | "number"
     | "boolean"
-    | "enum";
 
 type GeneratorArgumentBase<
     TType extends GeneratorArgumentType,
@@ -11,6 +10,7 @@ type GeneratorArgumentBase<
     type: TType;
     selector: string;
     exclude?: readonly TValue[];
+    allowedValues?: readonly TValue[];
     exact?: TValue;
 };
 
@@ -30,16 +30,17 @@ export type NumberGeneratorArgument =
 export type BooleanGeneratorArgument =
     GeneratorArgumentBase<"boolean", boolean>;
 
-export type EnumGeneratorArgument =
-    GeneratorArgumentBase<"enum", string> & {
-    values: readonly [string, ...string[]];
-};
-
 type GeneratorArgument =
     | StringGeneratorArgument
     | NumberGeneratorArgument
     | BooleanGeneratorArgument
-    | EnumGeneratorArgument;
+
+export type Generator_ArgumentProposal<T extends GeneratorArgumentType> =
+    Extract<GeneratorArgument, { type: T }> & {
+    value: NonNullable<
+        Extract<GeneratorArgument, { type: T }>["exact"]
+    >;
+};
 
 export interface Generator_Config {
     arguments: [GeneratorArgument,...GeneratorArgument[]];
