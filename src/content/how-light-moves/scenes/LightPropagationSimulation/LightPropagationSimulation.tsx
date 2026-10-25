@@ -2,9 +2,8 @@
 
 import { useState, useSyncExternalStore } from 'react';
 import { Box, Button, Paper, Slider, Typography } from '@mui/material';
-import type { Locale as RayMessages } from './ray.locale';
-import type { RayLocaleCode } from './ray.locales';
-import styles from './Ray.module.css';
+import type { LightPropagationSimulationLocale, LightPropagationSimulationLocaleCode } from './lightPropagationSimulation.locale';
+import styles from './LightPropagationSimulation.module.css';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
 
@@ -18,7 +17,12 @@ function getReducedMotion() {
   return window.matchMedia(reducedMotionQuery).matches;
 }
 
-export default function Ray({ locale, messages }: { locale: RayLocaleCode; messages: RayMessages }) {
+export interface LightPropagationSimulationProps {
+  locale: LightPropagationSimulationLocaleCode;
+  messages: LightPropagationSimulationLocale;
+}
+
+export default function LightPropagationSimulation({ locale, messages }: LightPropagationSimulationProps) {
   const reducedMotion = useSyncExternalStore(subscribeToReducedMotion, getReducedMotion, () => false);
   const [playbackOverride, setPlaybackOverride] = useState<boolean | null>(null);
   const [speed, setSpeed] = useState(1);

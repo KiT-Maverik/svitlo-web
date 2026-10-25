@@ -1,7 +1,11 @@
-import styles from './Ray.module.css';
-import { locales, type RayLocaleCode } from './Ray.locale';
+import styles from './LightRayDiagram.module.css';
+import { locales, type LightRayDiagramLocaleCode } from './lightRayDiagram.locale';
 
-export default function Ray({ locale }: { locale: RayLocaleCode }) {
+export interface LightRayDiagramProps {
+  locale: LightRayDiagramLocaleCode;
+}
+
+export default function LightRayDiagram({ locale }: LightRayDiagramProps) {
   const messages = locales[locale];
 
   return (

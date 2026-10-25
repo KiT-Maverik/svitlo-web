@@ -3,7 +3,6 @@
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize, { defaultSchema } from 'rehype-sanitize';
-import type { ReactNode } from 'react';
 import styles from './MarkdownContent.module.css';
 
 const schema = {
@@ -11,14 +10,10 @@ const schema = {
   tagNames: [...(defaultSchema.tagNames ?? []), 'mark', 'aside'],
 };
 
-export default function MarkdownContent({ content, scenes = {} }: { content: string; scenes?: Record<string, ReactNode> }) {
+export default function MarkdownContent({ content }: { content: string }) {
   return (
     <article className={styles.content}>
-      {content.split(/(\{\{scene:[\w-]+\}\})/g).map((part, index) => {
-        const scene = /^\{\{scene:([\w-]+)\}\}$/.exec(part);
-        if (scene) return <div key={index}>{scenes[scene[1]]}</div>;
-        return <Markdown key={index} rehypePlugins={[rehypeRaw, [rehypeSanitize, schema]]}>{part}</Markdown>;
-      })}
+      <Markdown rehypePlugins={[rehypeRaw, [rehypeSanitize, schema]]}>{content}</Markdown>
     </article>
   );
 }

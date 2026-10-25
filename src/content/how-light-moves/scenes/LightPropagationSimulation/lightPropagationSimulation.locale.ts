@@ -23,7 +23,7 @@ export const ukUA = {
   }
 };
 
-export type Locale = typeof ukUA;
+export type LightPropagationSimulationLocale = typeof ukUA;
 
 export const enUS = {
   scene: {
@@ -46,7 +46,7 @@ export const enUS = {
   hints: {
     scale: "Simplified model: the speed of light is not shown to scale."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const zhHansCN = {
   scene: {
@@ -69,7 +69,7 @@ export const zhHansCN = {
   hints: {
     scale: "简化模型：光速未按比例呈现。"
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const hiIN = {
   scene: {
@@ -92,7 +92,7 @@ export const hiIN = {
   hints: {
     scale: "सरलीकृत मॉडल: प्रकाश की गति को वास्तविक अनुपात में नहीं दिखाया गया है।"
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const esES = {
   scene: {
@@ -115,7 +115,7 @@ export const esES = {
   hints: {
     scale: "Modelo simplificado: la velocidad de la luz no se representa a escala."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const arSA = {
   scene: {
@@ -138,7 +138,7 @@ export const arSA = {
   hints: {
     scale: "نموذج مبسّط: سرعة الضوء غير ممثّلة بمقياس واقعي."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const frFR = {
   scene: {
@@ -161,7 +161,7 @@ export const frFR = {
   hints: {
     scale: "Modèle simplifié : la vitesse de la lumière n’est pas représentée à l’échelle."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const bnBD = {
   scene: {
@@ -184,7 +184,7 @@ export const bnBD = {
   hints: {
     scale: "সরলীকৃত মডেল: আলোর গতি প্রকৃত অনুপাতে দেখানো হয়নি।"
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const ptBR = {
   scene: {
@@ -207,7 +207,7 @@ export const ptBR = {
   hints: {
     scale: "Modelo simplificado: a velocidade da luz não é representada em escala."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const urPK = {
   scene: {
@@ -230,7 +230,7 @@ export const urPK = {
   hints: {
     scale: "سادہ ماڈل: روشنی کی رفتار اصل تناسب کے مطابق نہیں دکھائی گئی۔"
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const idID = {
   scene: {
@@ -253,7 +253,7 @@ export const idID = {
   hints: {
     scale: "Model sederhana: kecepatan cahaya tidak ditampilkan sesuai skala."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const deDE = {
   scene: {
@@ -276,7 +276,7 @@ export const deDE = {
   hints: {
     scale: "Vereinfachtes Modell: Die Lichtgeschwindigkeit wird nicht maßstabsgetreu dargestellt."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const jaJP = {
   scene: {
@@ -299,7 +299,7 @@ export const jaJP = {
   hints: {
     scale: "簡略化したモデルです。光の速度は実際の縮尺では表現されていません。"
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const koKR = {
   scene: {
@@ -322,7 +322,7 @@ export const koKR = {
   hints: {
     scale: "단순화한 모형입니다. 빛의 속도는 실제 비율로 표현되지 않았습니다."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const trTR = {
   scene: {
@@ -345,7 +345,7 @@ export const trTR = {
   hints: {
     scale: "Basitleştirilmiş model: ışık hızı ölçekli olarak gösterilmemiştir."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const viVN = {
   scene: {
@@ -368,7 +368,7 @@ export const viVN = {
   hints: {
     scale: "Mô hình đơn giản hóa: tốc độ ánh sáng không được thể hiện theo tỉ lệ thực tế."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const taIN = {
   scene: {
@@ -391,7 +391,7 @@ export const taIN = {
   hints: {
     scale: "எளிமைப்படுத்தப்பட்ட மாதிரி: ஒளியின் வேகம் உண்மையான விகிதத்தில் காட்டப்படவில்லை."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const teIN = {
   scene: {
@@ -414,7 +414,7 @@ export const teIN = {
   hints: {
     scale: "సరళీకృత నమూనా: కాంతి వేగాన్ని వాస్తవ నిష్పత్తిలో చూపలేదు."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const mrIN = {
   scene: {
@@ -437,7 +437,7 @@ export const mrIN = {
   hints: {
     scale: "सुलभ केलेले मॉडेल: प्रकाशाचा वेग प्रत्यक्ष प्रमाणात दाखवलेला नाही."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const msMY = {
   scene: {
@@ -460,7 +460,7 @@ export const msMY = {
   hints: {
     scale: "Model ringkas: kelajuan cahaya tidak ditunjukkan mengikut skala."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const heIL = {
   scene: {
@@ -483,7 +483,7 @@ export const heIL = {
   hints: {
     scale: "מודל מפושט: מהירות האור אינה מוצגת בקנה מידה מציאותי."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const plPL = {
   scene: {
@@ -506,7 +506,7 @@ export const plPL = {
   hints: {
     scale: "Model uproszczony: prędkość światła nie jest przedstawiona w rzeczywistej skali."
   }
-} satisfies Locale;
+} satisfies LightPropagationSimulationLocale;
 
 export const locales = {
   "en-US": enUS,
@@ -531,10 +531,10 @@ export const locales = {
   "he-IL": heIL,
   "pl-PL": plPL,
   "uk-UA": ukUA,
-} satisfies Record<DefaultSupportedLanguage['locale'], Locale>;
+} satisfies Record<DefaultSupportedLanguage['locale'], LightPropagationSimulationLocale>;
 
-export type LocaleCode = keyof typeof locales;
+export type LightPropagationSimulationLocaleCode = keyof typeof locales;
 
-export const defaultLocaleCode: LocaleCode = "uk-UA";
+export const defaultLightPropagationSimulationLocaleCode: LightPropagationSimulationLocaleCode = "uk-UA";
 
 export default ukUA;

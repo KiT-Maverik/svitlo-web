@@ -12,7 +12,7 @@ export const ukUA = {
   },
 };
 
-export type RayLocale = typeof ukUA;
+export type LightRayDiagramLocale = typeof ukUA;
 
 export const locales = {
   'en-US': {
@@ -247,6 +247,6 @@ export const locales = {
     },
   },
   'uk-UA': ukUA,
-} satisfies Record<DefaultSupportedLanguage['locale'], RayLocale>;
+} satisfies Record<DefaultSupportedLanguage['locale'], LightRayDiagramLocale>;
 
-export type RayLocaleCode = keyof typeof locales;
+export type LightRayDiagramLocaleCode = keyof typeof locales;
