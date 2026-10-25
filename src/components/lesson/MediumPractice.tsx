@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, type CSSProperties } from 'react';
-import { LIGHT_SPEED_KM_S, media } from '@/content/lightLesson';
+import { LIGHT_SPEED_KM_S, media } from '@/content/how-light-moves/lightLesson';
 import styles from './Lesson.module.css';
 
 export default function MediumPractice() {

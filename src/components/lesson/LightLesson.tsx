@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, type ReactNode } from 'react';
-import { lightQuestions } from '@/content/lightLesson';
+import { lightQuestions } from '@/content/how-light-moves/lightLesson';
 import { useLessonProgress } from './LessonProgress';
 import MediumPractice from './MediumPractice';
 import Celebration, { playCelebration } from './Celebration';

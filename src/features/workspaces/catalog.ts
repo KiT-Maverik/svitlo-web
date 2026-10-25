@@ -4,7 +4,7 @@ export const lessons: LessonSummary[] = [{
   id: 'light', title: 'Як рухається світло', subject: 'Фізика', status: 'review',
   description: 'Поширення світла, швидкість у різних середовищах і утворення тіні.',
   revision: '7542e82dd87550acdd93b6cf85bb027ad5491a5b',
-  sourcePath: 'src/content/lightLesson.ts',
+  sourcePath: 'src/content/how-light-moves/lightLesson.ts',
   sourceUrl: 'https://github.com/KiT-Maverik/svitlo-web/blob/7542e82dd87550acdd93b6cf85bb027ad5491a5b/src/content/lightLesson.ts',
   sections: [
     { id: 'theory', title: 'Теорія', kind: 'theory', summary: 'У прозорому однорідному середовищі світло поширюється прямолінійно. Світловий промінь показує напрямок його поширення.' },

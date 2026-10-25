@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { lightQuestions } from '../../src/content/lightLesson';
+import { lightQuestions } from '../../src/content/how-light-moves/lightLesson';
 
 test('home opens the light lesson and preserves the three-step learning flow', async ({ page }, testInfo) => {
   await page.goto('/');
