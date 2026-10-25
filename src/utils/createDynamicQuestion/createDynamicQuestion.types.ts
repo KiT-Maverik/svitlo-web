@@ -72,10 +72,9 @@ export interface DynamicQuestion_Config {
     name: TextResource_AllLocales,
 }
 
-export interface DynamicQuestion_Variant {
-    args: () => NonEmptyArray<{selector: string; value: any}>;
-    checkAnswer: DynamicQuestion_AnswerChecker;
-}
+export type DynamicQuestion_Variant<
+    T extends DynamicQuestion_ArgumentType,
+> = NonEmptyArray<DynamicQuestion_ArgumentValue<T>>;
 
 export interface DynamicQuestion {
     getArgs: () => NonEmptyArray<DynamicQuestion_ArgumentConfig>;
@@ -83,4 +82,5 @@ export interface DynamicQuestion {
     calculateValidVariants: () => void;
     hasVariants: () => boolean;
     getAllVariants: () => NonEmptyArray<DynamicQuestion_Config>;
+    getRandomVariant: () => NonEmptyArray<DynamicQuestion_Config>;
 }
