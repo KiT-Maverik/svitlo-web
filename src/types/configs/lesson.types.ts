@@ -13,6 +13,7 @@ export type LessonSection_Content = LessonSection_Config | QuizConfig;
 
 export interface Lesson_Config {
   id: string,
+  slug: string;
   requireQuiz: boolean;
   sections: {
     allowNavigation: boolean;
