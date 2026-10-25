@@ -10,9 +10,9 @@ const schema = {
   tagNames: [...(defaultSchema.tagNames ?? []), 'mark', 'aside'],
 };
 
-export default function MarkdownContent({ content }: { content: string }) {
+export default function MarkdownContent({ content, lang, dir }: { content: string; lang?: string; dir?: 'ltr' | 'rtl' }) {
   return (
-    <article className={styles.content}>
+    <article className={styles.content} lang={lang} dir={dir}>
       <Markdown rehypePlugins={[rehypeRaw, [rehypeSanitize, schema]]}>{content}</Markdown>
     </article>
   );

@@ -5,6 +5,7 @@
 .content img { display: block; width: 100%; height: auto; border-radius: 20px; }
 .content a { color: var(--mui-palette-primary-main); text-underline-offset: 4px; }
 .content blockquote { border-left: 4px solid var(--mui-palette-warning-main); margin: 1.5rem 0; padding: .5rem 1.4rem; background: rgb(var(--mui-palette-warning-mainChannel) / 0.12); }
+.content[dir='rtl'] blockquote { border-left: 0; border-right: 4px solid var(--mui-palette-warning-main); }
 .content aside { border: 1px solid var(--mui-palette-info-main); border-radius: 16px; background: rgb(var(--mui-palette-info-mainChannel) / 0.08); padding: 1rem 1.4rem; margin: 1.5rem 0; }
 .content mark { color: var(--mui-palette-warning-contrastText); background: var(--mui-palette-warning-main); border-radius: 4px; padding: .1rem .25rem; }
 .content code { background: var(--mui-palette-action-hover); border-radius: 4px; padding: .15rem .35rem; }
