@@ -21,4 +21,6 @@ const locale = {
   },
 }
 
+export type RayMessages = typeof locale;
+
 export default locale;
