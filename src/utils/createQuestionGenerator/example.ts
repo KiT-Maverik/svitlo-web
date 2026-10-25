@@ -50,3 +50,6 @@ const getValidVariants: F = (
 
     return variants
 }
+
+
+const generator
