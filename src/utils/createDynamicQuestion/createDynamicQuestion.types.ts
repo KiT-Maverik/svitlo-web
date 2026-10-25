@@ -101,6 +101,7 @@ export interface DynamicQuestion_Config<TArguments extends DynamicQuestion_Argum
 }
 
 export interface DynamicQuestion<TArguments extends DynamicQuestion_Arguments = DynamicQuestion_Arguments> {
+    getDefaultArgs: () => TArguments;
     getArgs: () => DynamicQuestion_Variant<TArguments> | undefined;
     updateArgs: (args: DynamicQuestion_Variant<TArguments>) => void;
     calculateValidVariants: () => DynamicQuestion_Variant<TArguments>[];
