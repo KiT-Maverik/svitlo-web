@@ -17,7 +17,7 @@ const girlsApple: NumberGeneratorArgument = {
 
 const boysApple: NumberGeneratorArgument = {
     selector: "boysApple",
-    min: 1,
+    min: 2,
     max: 11,
     type: "number"
 } as const;
@@ -26,14 +26,26 @@ type Arguments = typeof girlsApple | typeof boysApple
 
 const checkConstraints = (girlsApple: number, boysApple: number) => girlsApple < boysApple
 
-const getValidVariants = ({
-    girlsApple: number,
-    boysApple: number,
-}) => {
-    let variants: [number, number] | undefined;
+type F = (boysApple?: number, girlsApple?: number) => void
 
-    if (boysApple) {
+const getValidVariants: F = (
+    girlsApple,
+    boysApple,
+) => {
+    let girlsOptions: number[] = [];
+    let boysOptions: number[] = [];
 
+    if (boysApple && girlsApple) {
+        girlsOptions = [girlsApple]
+        boysOptions = [boysApple]
+    }
+    else if (boysApple) {
+        girlsOptions = Array.from({length: boysApple - 1}, (_, i) => i + 1)
+        boysOptions = [boysApple]
+    }
+    else if (girlsApple) {
+        girlsOptions = [girlsApple]
+        boysOptions = Array.from({length: girlsApple - 1}, (_, i) => i + 1)
     }
 
     return variants

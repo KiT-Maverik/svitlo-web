@@ -2,8 +2,9 @@ import {
     Generator_ArgumentProposal,
     GeneratorArgumentType
 } from "@/types/configs/generator.types";
+import {NonEmptyArray} from "@/types/misc.types";
 
-export const validateNumberArgument = (arg: Generator_ArgumentProposal<"number">) => {
+export const validateNumberArgumentProposition = (arg: Generator_ArgumentProposal<"number">) => {
     const constraints = {
         selector: typeof arg.selector === "string",
         type: arg.type === typeof arg.value,
@@ -22,7 +23,7 @@ export const validateNumberArgument = (arg: Generator_ArgumentProposal<"number">
     } as const;
 }
 
-export const validateStringArgument = (arg: Generator_ArgumentProposal<"string">) => {
+export const validateStringArgumentProposition = (arg: Generator_ArgumentProposal<"string">) => {
     const constraints = {
         selector: typeof arg.selector === "string",
         type: arg.type === typeof arg.value,
@@ -41,7 +42,7 @@ export const validateStringArgument = (arg: Generator_ArgumentProposal<"string">
     } as const;
 }
 
-export const validateBooleanArgument = (arg: Generator_ArgumentProposal<"boolean">) => {
+export const validateBooleanArgumentProposition = (arg: Generator_ArgumentProposal<"boolean">) => {
     const constraints = {
         selector: typeof arg.selector === "string",
         type: arg.type === typeof arg.value,
@@ -58,10 +59,37 @@ export const validateBooleanArgument = (arg: Generator_ArgumentProposal<"boolean
 export const validateArgument = (arg: Generator_ArgumentProposal<GeneratorArgumentType>) => {
     switch (arg.type) {
         case "number":
-            return validateNumberArgument(arg);
+            return validateNumberArgumentProposition(arg);
         case "string":
-            return validateStringArgument(arg);
+            return validateStringArgumentProposition(arg);
         case "boolean":
-            return validateBooleanArgument(arg);
+            return validateBooleanArgumentProposition(arg);
     }
 };
+
+type VariantsGenerator_Config = {
+    propositions: NonEmptyArray<Generator_ArgumentProposal<GeneratorArgumentType>>;
+    handler: () => void;
+}
+
+type VariantsConfig = {
+    args: NonEmptyArray<Generator_ArgumentProposal<GeneratorArgumentType>>;
+    variants: NonEmptyArray<Generator_ArgumentProposal<GeneratorArgumentType>>;
+    randomTask: Generator_ArgumentProposal<GeneratorArgumentType>;
+}
+
+type VariantsGenerator = (config: VariantsGenerator_Config) => VariantsConfig
+
+export const getValidVariants: VariantsGenerator = ({propositions, handler}) => {
+    const validatedPropositions = propositions.map((i) => validateArgument(i));
+
+    if (validatedPropositions.every(({success}) => success)) {
+        handler()
+    }
+
+    return {
+        validatedPropositions,
+        variants,
+        randomTask,
+    }
+}
