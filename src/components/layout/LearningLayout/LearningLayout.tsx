@@ -24,6 +24,7 @@ import TopNavbar from '../Navigation/TopNavbar';
 import BottomNavbar from '../Navigation/BottomNavbar';
 import { topics } from '@/content/topics';
 import { canAdvance, useLessonProgress } from '@/components/lesson/LessonProgress';
+import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 
 export default function LearningLayout({ children }: { children: ReactNode }) {
   const { progress, dispatch } = useLessonProgress();
@@ -49,15 +50,16 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
           <Typography component={Link} href="/" sx={{ color: 'text.primary', fontWeight: 800, fontSize: 20, textDecoration: 'none' }}>Світло</Typography>
         </>,
         right: <>
-          <Tooltip title="Профіль буде доступний після підключення авторизації"><span>
+          <NavbarPreferences />
+          <Tooltip title="Профіль буде доступний після підключення авторизації"><Box component="span" sx={{ display: { xs: 'none', sm: 'inline-flex' } }}>
             <IconButton aria-label="Профіль" disabled><AccountCircleOutlinedIcon /></IconButton>
-          </span></Tooltip>
+          </Box></Tooltip>
           <IconButton aria-label={settingsOpen ? 'Закрити налаштування' : 'Відкрити налаштування'} aria-expanded={settingsOpen} aria-controls={settingsOpen ? 'settings-sidebar' : undefined} onClick={() => { setSettingsOpen((value) => !value); setOpen(false); }}>
             <SettingsOutlinedIcon />
           </IconButton>
-          <Tooltip title="Вихід буде доступний після підключення авторизації"><span>
+          <Tooltip title="Вихід буде доступний після підключення авторизації"><Box component="span" sx={{ display: { xs: 'none', sm: 'inline-flex' } }}>
             <IconButton aria-label="Logout" disabled><LogoutIcon /></IconButton>
-          </span></Tooltip>
+          </Box></Tooltip>
         </>,
       }} />
 
