@@ -3,38 +3,22 @@
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize, { defaultSchema } from 'rehype-sanitize';
+import type { ReactNode } from 'react';
 import styles from './MarkdownContent.module.css';
 
-// Only this local scene can execute scripts; HTML in Markdown is sanitized.
-const scenePath = '/content/topics/light/ray-scene.html';
 const schema = {
   ...defaultSchema,
-  tagNames: [...(defaultSchema.tagNames ?? []), 'iframe', 'mark', 'aside'],
-  attributes: {
-    ...defaultSchema.attributes,
-    iframe: ['src', 'title'],
-  },
+  tagNames: [...(defaultSchema.tagNames ?? []), 'mark', 'aside'],
 };
 
-export default function MarkdownContent({ content }: { content: string }) {
+export default function MarkdownContent({ content, scenes = {} }: { content: string; scenes?: Record<string, ReactNode> }) {
   return (
     <article className={styles.content}>
-      <Markdown
-        rehypePlugins={[rehypeRaw, [rehypeSanitize, schema]]}
-        components={{
-          iframe: ({ src, title }) => src === scenePath ? (
-            <iframe
-              src={src}
-              title={title || 'Інтерактивна сцена'}
-              sandbox="allow-scripts"
-              loading="lazy"
-              className={styles.scene}
-            />
-          ) : null,
-        }}
-      >
-        {content}
-      </Markdown>
+      {content.split(/(\{\{scene:[\w-]+\}\})/g).map((part, index) => {
+        const scene = /^\{\{scene:([\w-]+)\}\}$/.exec(part);
+        if (scene) return <div key={index}>{scenes[scene[1]]}</div>;
+        return <Markdown key={index} rehypePlugins={[rehypeRaw, [rehypeSanitize, schema]]}>{part}</Markdown>;
+      })}
     </article>
   );
 }
