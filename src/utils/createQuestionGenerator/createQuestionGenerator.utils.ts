@@ -56,7 +56,7 @@ export const validateBooleanArgumentProposition = (arg: Generator_ArgumentPropos
     } as const;
 }
 
-export const validateArgument = (arg: Generator_ArgumentProposal<GeneratorArgumentType>) => {
+export const validateArgumentProposition = (arg: Generator_ArgumentProposal<GeneratorArgumentType>) => {
     switch (arg.type) {
         case "number":
             return validateNumberArgumentProposition(arg);
@@ -81,7 +81,7 @@ type VariantsConfig = {
 type VariantsGenerator = (config: VariantsGenerator_Config) => VariantsConfig
 
 export const getValidVariants: VariantsGenerator = ({propositions, handler}) => {
-    const validatedPropositions = propositions.map((i) => validateArgument(i));
+    const validatedPropositions = propositions.map((i) => validateArgumentProposition(i));
 
     if (validatedPropositions.every(({success}) => success)) {
         handler()
