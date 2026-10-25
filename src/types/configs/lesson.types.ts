@@ -3,10 +3,16 @@ import type { QuizConfig } from './quiz.types';
 import {NonEmptyArray} from "@/types/misc.types";
 
 export interface LessonSection_Config {
-  content: NonEmptyArray<Resource>;
+  content: NonEmptyArray<Resource | LessonScene_Config>;
   id: string;
   name: TextResource;
   skippable: boolean;
+}
+
+export interface LessonScene_Config {
+  id: string;
+  blockType: 'scene';
+  scene: string;
 }
 
 export type LessonSection_Content = LessonSection_Config | QuizConfig;

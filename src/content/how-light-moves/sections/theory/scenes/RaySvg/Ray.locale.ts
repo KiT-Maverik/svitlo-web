@@ -1,0 +1,252 @@
+import type { DefaultSupportedLanguage } from '@/types/languages';
+
+export const ukUA = {
+  scene: {
+    title: "Світловий промінь",
+    description: "Світло від ліхтарика ліворуч поширюється прямою лінією до екрана праворуч.",
+  },
+  labels: {
+    source: "Джерело",
+    direction: "Напрямок поширення",
+    screen: "Екран",
+  },
+};
+
+export type RayLocale = typeof ukUA;
+
+export const locales = {
+  'en-US': {
+    scene: {
+      title: "Trace the path of light",
+      description: "From the source straight to the screen.",
+    },
+    labels: {
+      source: "Light source",
+      direction: "Direction of light",
+      screen: "Screen",
+    },
+  },
+  'zh-Hans-CN': {
+    scene: {
+      title: "追踪光的路径",
+      description: "从光源沿直线传播到屏幕。",
+    },
+    labels: {
+      source: "光源",
+      direction: "光的传播方向",
+      screen: "屏幕",
+    },
+  },
+  'hi-IN': {
+    scene: {
+      title: "प्रकाश के पथ का अनुसरण करें",
+      description: "स्रोत से पर्दे तक सीधी रेखा में।",
+    },
+    labels: {
+      source: "प्रकाश स्रोत",
+      direction: "प्रकाश की दिशा",
+      screen: "पर्दा",
+    },
+  },
+  'es-ES': {
+    scene: {
+      title: "Sigue el recorrido de la luz",
+      description: "De la fuente a la pantalla en línea recta.",
+    },
+    labels: {
+      source: "Fuente de luz",
+      direction: "Dirección de la luz",
+      screen: "Pantalla",
+    },
+  },
+  'ar-SA': {
+    scene: {
+      title: "تتبّع مسار الضوء",
+      description: "من المصدر إلى الشاشة في خط مستقيم.",
+    },
+    labels: {
+      source: "مصدر الضوء",
+      direction: "اتجاه انتشار الضوء",
+      screen: "الشاشة",
+    },
+  },
+  'fr-FR': {
+    scene: {
+      title: "Suis le trajet de la lumière",
+      description: "De la source à l’écran en ligne droite.",
+    },
+    labels: {
+      source: "Source lumineuse",
+      direction: "Direction de la lumière",
+      screen: "Écran",
+    },
+  },
+  'bn-BD': {
+    scene: {
+      title: "আলোর পথ অনুসরণ করো",
+      description: "উৎস থেকে সরলরেখায় পর্দা পর্যন্ত।",
+    },
+    labels: {
+      source: "আলোর উৎস",
+      direction: "আলোর দিক",
+      screen: "পর্দা",
+    },
+  },
+  'pt-BR': {
+    scene: {
+      title: "Acompanhe o caminho da luz",
+      description: "Da fonte até a tela em linha reta.",
+    },
+    labels: {
+      source: "Fonte de luz",
+      direction: "Direção da luz",
+      screen: "Tela",
+    },
+  },
+  'ur-PK': {
+    scene: {
+      title: "روشنی کے راستے کا مشاہدہ کریں",
+      description: "منبع سے پردے تک سیدھی لکیر میں۔",
+    },
+    labels: {
+      source: "روشنی کا منبع",
+      direction: "روشنی کی سمت",
+      screen: "پردہ",
+    },
+  },
+  'id-ID': {
+    scene: {
+      title: "Telusuri lintasan cahaya",
+      description: "Dari sumber menuju layar dalam garis lurus.",
+    },
+    labels: {
+      source: "Sumber cahaya",
+      direction: "Arah cahaya",
+      screen: "Layar",
+    },
+  },
+  'de-DE': {
+    scene: {
+      title: "Verfolge den Weg des Lichts",
+      description: "Von der Quelle geradlinig zum Schirm.",
+    },
+    labels: {
+      source: "Lichtquelle",
+      direction: "Richtung des Lichts",
+      screen: "Schirm",
+    },
+  },
+  'ja-JP': {
+    scene: {
+      title: "光の進む道をたどろう",
+      description: "光源からスクリーンまで一直線に。",
+    },
+    labels: {
+      source: "光源",
+      direction: "光の進む方向",
+      screen: "スクリーン",
+    },
+  },
+  'ko-KR': {
+    scene: {
+      title: "빛의 경로를 따라가 보세요",
+      description: "광원에서 스크린까지 직선으로.",
+    },
+    labels: {
+      source: "광원",
+      direction: "빛의 진행 방향",
+      screen: "스크린",
+    },
+  },
+  'tr-TR': {
+    scene: {
+      title: "Işığın yolunu takip et",
+      description: "Kaynaktan ekrana düz bir çizgi boyunca.",
+    },
+    labels: {
+      source: "Işık kaynağı",
+      direction: "Işığın yönü",
+      screen: "Ekran",
+    },
+  },
+  'vi-VN': {
+    scene: {
+      title: "Theo dõi đường đi của ánh sáng",
+      description: "Từ nguồn sáng đến màn theo đường thẳng.",
+    },
+    labels: {
+      source: "Nguồn sáng",
+      direction: "Hướng truyền ánh sáng",
+      screen: "Màn",
+    },
+  },
+  'ta-IN': {
+    scene: {
+      title: "ஒளியின் பாதையைப் பின்தொடருங்கள்",
+      description: "ஒளிமூலத்திலிருந்து திரை வரை நேர்கோட்டில்.",
+    },
+    labels: {
+      source: "ஒளிமூலம்",
+      direction: "ஒளியின் திசை",
+      screen: "திரை",
+    },
+  },
+  'te-IN': {
+    scene: {
+      title: "కాంతి మార్గాన్ని అనుసరించండి",
+      description: "కాంతి మూలం నుంచి తెర వరకు సరళరేఖలో.",
+    },
+    labels: {
+      source: "కాంతి మూలం",
+      direction: "కాంతి దిశ",
+      screen: "తెర",
+    },
+  },
+  'mr-IN': {
+    scene: {
+      title: "प्रकाशाचा मार्ग पाहा",
+      description: "स्रोतापासून पडद्यापर्यंत सरळ रेषेत.",
+    },
+    labels: {
+      source: "प्रकाशस्रोत",
+      direction: "प्रकाशाची दिशा",
+      screen: "पडदा",
+    },
+  },
+  'ms-MY': {
+    scene: {
+      title: "Jejaki laluan cahaya",
+      description: "Dari sumber ke skrin dalam garis lurus.",
+    },
+    labels: {
+      source: "Sumber cahaya",
+      direction: "Arah cahaya",
+      screen: "Skrin",
+    },
+  },
+  'he-IL': {
+    scene: {
+      title: "עקבו אחר מסלול האור",
+      description: "ממקור האור אל המסך בקו ישר.",
+    },
+    labels: {
+      source: "מקור אור",
+      direction: "כיוון התפשטות האור",
+      screen: "מסך",
+    },
+  },
+  'pl-PL': {
+    scene: {
+      title: "Prześledź drogę światła",
+      description: "Od źródła prosto do ekranu.",
+    },
+    labels: {
+      source: "Źródło światła",
+      direction: "Kierunek światła",
+      screen: "Ekran",
+    },
+  },
+  'uk-UA': ukUA,
+} satisfies Record<DefaultSupportedLanguage['locale'], RayLocale>;
+
+export type RayLocaleCode = keyof typeof locales;
