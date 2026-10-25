@@ -32,7 +32,7 @@ export type NumberGeneratorArgument =
 export type BooleanGeneratorArgument =
     GeneratorArgumentBase<"boolean">;
 
-type GeneratorArgument =
+export type GeneratorArgument =
     | StringGeneratorArgument
     | NumberGeneratorArgument
     | BooleanGeneratorArgument

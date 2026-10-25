@@ -1,27 +1,9 @@
-import {z} from "zod";
-
 import {
-    Generator_Config,
-    NumberGeneratorArgument,
     Generator_ArgumentProposal,
     GeneratorArgumentType
 } from "@/types/configs/generator.types";
 
-const girlsApple: NumberGeneratorArgument = {
-    selector: "girlsApple",
-    min: 1,
-    max: 10,
-    type: "number"
-} as const;
-
-const boysApple: NumberGeneratorArgument = {
-    selector: "boysApple",
-    min: 1,
-    max: 10,
-    type: "number"
-} as const;
-
-const validateNumberArgument = (arg: Generator_ArgumentProposal<"number">) => {
+export const validateNumberArgument = (arg: Generator_ArgumentProposal<"number">) => {
     const constraints = {
         selector: typeof arg.selector === "string",
         type: arg.type === typeof arg.value,
@@ -40,7 +22,7 @@ const validateNumberArgument = (arg: Generator_ArgumentProposal<"number">) => {
     } as const;
 }
 
-const validateStringArgument = (arg: Generator_ArgumentProposal<"string">) => {
+export const validateStringArgument = (arg: Generator_ArgumentProposal<"string">) => {
     const constraints = {
         selector: typeof arg.selector === "string",
         type: arg.type === typeof arg.value,
@@ -59,7 +41,7 @@ const validateStringArgument = (arg: Generator_ArgumentProposal<"string">) => {
     } as const;
 }
 
-const validateBooleanArgument = (arg: Generator_ArgumentProposal<"boolean">) => {
+export const validateBooleanArgument = (arg: Generator_ArgumentProposal<"boolean">) => {
     const constraints = {
         selector: typeof arg.selector === "string",
         type: arg.type === typeof arg.value,
@@ -73,7 +55,7 @@ const validateBooleanArgument = (arg: Generator_ArgumentProposal<"boolean">) => 
     } as const;
 }
 
-const validateArgument = (arg: Generator_ArgumentProposal<GeneratorArgumentType>) => {
+export const validateArgument = (arg: Generator_ArgumentProposal<GeneratorArgumentType>) => {
     switch (arg.type) {
         case "number":
             return validateNumberArgument(arg);
@@ -83,14 +65,3 @@ const validateArgument = (arg: Generator_ArgumentProposal<GeneratorArgumentType>
             return validateBooleanArgument(arg);
     }
 };
-
-type Arguments = typeof girlsApple | typeof boysApple
-
-const validateConfig = (girlsApples: number, boysApples: number) => {
-    return boysApples > girlsApples
-}
-
-const getConfig = (override: [Arguments, ...Arguments[]]) => {
-
-}
-
