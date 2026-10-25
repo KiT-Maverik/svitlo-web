@@ -1,18 +1,10 @@
-import type { RayMessages } from './ray.locale';
-import type { Locale } from '@/types/languages';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@/types/languages';
+import { locales, type Locale as RayMessages, type LocaleCode } from './ray.locale';
 
-export const rayLocales = [
-  { code: 'uk-UA', name: 'Українська' },
-  { code: 'en-US', name: 'English' },
-] as const satisfies readonly { code: Locale; name: string }[];
+export const rayLocales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale, nativeName }) => ({ code: locale, name: nativeName }));
 
-export type RayLocaleCode = (typeof rayLocales)[number]['code'];
+export type RayLocaleCode = LocaleCode;
 
-const loaders: Record<RayLocaleCode, () => Promise<RayMessages>> = {
-  'uk-UA': () => import('./ray.locale').then(module => module.default),
-  'en-US': () => import('./en-US.locale').then(module => module.default),
-};
-
-export function loadRayLocale(code: RayLocaleCode): Promise<RayMessages> {
-  return loaders[code]();
+export function getRayLocale(code: RayLocaleCode): RayMessages {
+  return locales[code];
 }

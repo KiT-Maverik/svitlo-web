@@ -28,7 +28,7 @@ export default function Celebration({ score, total }: { score: number; total: nu
   useEffect(() => { const timer = setTimeout(() => setShowConfetti(false), 3200); return () => clearTimeout(timer); }, []);
   return <section className={styles.finish} aria-labelledby="lesson-complete">
     {showConfetti && <div className={styles.confetti} aria-hidden="true">{Array.from({ length: 48 }, (_, i) => <i key={i} style={{
-      '--origin': i % 2 ? '100%' : '0%', '--dx': `${(i % 2 ? -1 : 1) * (180 + i * 7)}px`, '--dy': `${-240 + (i % 12) * 48}px`, '--spin': `${180 + i * 31}deg`, background: ['#ffd45b', '#76bfff', '#a6e5c7', '#eaa7da'][i % 4], animationDelay: `${(i % 8) * 45}ms`,
+      '--origin': i % 2 ? '100%' : '0%', '--dx': `${(i % 2 ? -1 : 1) * (180 + i * 7)}px`, '--dy': `${-240 + (i % 12) * 48}px`, '--spin': `${180 + i * 31}deg`, animationDelay: `${(i % 8) * 45}ms`,
     } as CSSProperties} />)}</div>}
     <span className={styles.badge} aria-hidden="true">✦</span>
     <h1 id="lesson-complete">Вітаємо, ви завершили роботу з цим уроком!</h1>

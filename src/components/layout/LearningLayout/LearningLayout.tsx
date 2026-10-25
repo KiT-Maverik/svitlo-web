@@ -13,6 +13,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
+import { alpha } from '@mui/material/styles';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -39,13 +40,13 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
   return (
-    <Box sx={{ height: '100dvh', display: 'grid', gridTemplateRows: 'auto minmax(0, 1fr) auto', overflow: 'hidden', bgcolor: '#fff' }}>
+    <Box sx={{ height: '100dvh', display: 'grid', gridTemplateRows: 'auto minmax(0, 1fr) auto', overflow: 'hidden', bgcolor: 'background.default', color: 'text.primary' }}>
       <TopNavbar aria-label="Верхня навігація навчання" slots={{
         left: <>
           <IconButton aria-label={open ? 'Закрити список тем' : 'Відкрити список тем'} aria-expanded={open} aria-controls={open ? 'learning-sidebar' : undefined} onClick={() => { setOpen((value) => !value); setSettingsOpen(false); }}>
             <MenuIcon />
           </IconButton>
-          <Typography component={Link} href="/" sx={{ color: '#10253f', fontWeight: 800, fontSize: 20, textDecoration: 'none' }}>Світло</Typography>
+          <Typography component={Link} href="/" sx={{ color: 'text.primary', fontWeight: 800, fontSize: 20, textDecoration: 'none' }}>Світло</Typography>
         </>,
         right: <>
           <Tooltip title="Профіль буде доступний після підключення авторизації"><span>
@@ -63,7 +64,7 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
       <Box sx={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
         <Fade in={open || settingsOpen} timeout={{ enter: 225, exit: 195 }} unmountOnExit>
           <Box component="button" aria-label="Закрити бічну панель" tabIndex={-1} onClick={() => { setOpen(false); setSettingsOpen(false); }} sx={{
-            position: 'absolute', inset: 0, border: 0, bgcolor: 'rgba(16, 37, 63, .25)', zIndex: 1100, cursor: 'pointer',
+            position: 'absolute', inset: 0, border: 0, bgcolor: theme => alpha(theme.palette.common.black, 0.25), zIndex: 1100, cursor: 'pointer',
             pointerEvents: open || settingsOpen ? 'auto' : 'none',
             '@media (prefers-reduced-motion: reduce)': { transition: 'none !important' },
           }} />
@@ -76,12 +77,12 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
           }}
         >
           <Box id="learning-sidebar" component="nav" aria-label="Список тем" sx={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', p: 1, flexShrink: 0, borderBottom: '1px solid #dce4ed' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', p: 1, flexShrink: 0, borderBottom: 1, borderColor: 'divider' }}>
               <Button component={Link} href="/" startIcon={<HomeOutlinedIcon />} onClick={() => setOpen(false)} sx={{ flex: 1, justifyContent: 'flex-start' }}>Home</Button>
               <IconButton aria-label="Закрити список тем" onClick={() => setOpen(false)}><CloseIcon /></IconButton>
             </Box>
             <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', overscrollBehavior: 'contain', p: 1 }}>
-              <Typography component="h2" sx={{ px: 2, py: 1, fontSize: 13, fontWeight: 700, color: '#63758b' }}>ТЕМИ</Typography>
+              <Typography component="h2" sx={{ px: 2, py: 1, fontSize: 13, fontWeight: 700, color: 'text.secondary' }}>ТЕМИ</Typography>
               <List disablePadding>
                 {topics.map((topic) => (
                   <ListItemButton key={topic.id} component={Link} href={topic.href} selected={pathname === topic.href} aria-current={pathname === topic.href ? 'page' : undefined} onClick={() => setOpen(false)} sx={{ borderRadius: 2 }}>
@@ -99,7 +100,7 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
           slotProps={{ paper: { sx: { position: 'absolute', width: 'min(320px, calc(100vw - 48px))', height: '100%', overflow: 'hidden' } } }}
         >
           <Box id="settings-sidebar" component="aside" aria-label="Налаштування" sx={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', p: 1, borderBottom: '1px solid #dce4ed', flexShrink: 0 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', p: 1, borderBottom: 1, borderColor: 'divider', flexShrink: 0 }}>
               <Typography component="h2" sx={{ flex: 1, px: 1, fontSize: 18, fontWeight: 700 }}>Налаштування</Typography>
               <IconButton aria-label="Закрити панель налаштувань" onClick={() => setSettingsOpen(false)}><CloseIcon /></IconButton>
             </Box>

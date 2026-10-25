@@ -2,7 +2,7 @@
 
 import { useState, useSyncExternalStore } from 'react';
 import { Box, Button, Paper, Slider, Typography } from '@mui/material';
-import type { RayMessages } from './ray.locale';
+import type { Locale as RayMessages } from './ray.locale';
 import type { RayLocaleCode } from './ray.locales';
 import styles from './Ray.module.css';
 

@@ -16,7 +16,7 @@ export default function Navbar({ slots = {}, slotProps = {}, 'aria-label': label
   const { sx: rootSx = [], ...rootProps } = slotProps.root ?? {};
   return (
     <Box {...rootProps} component="nav" aria-label={label} sx={[
-      { display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto minmax(0, 1fr)', alignItems: 'center', gap: 1, px: 2, minHeight: 64, bgcolor: '#f7f9fc' },
+      { display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto minmax(0, 1fr)', alignItems: 'center', gap: 1, px: 2, minHeight: 64, bgcolor: 'background.paper' },
       ...(Array.isArray(rootSx) ? rootSx : [rootSx]),
     ]}>
       {(['left', 'center', 'right'] as const).map((section) => {
