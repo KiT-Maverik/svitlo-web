@@ -17,14 +17,14 @@ type DynamicQuestion_ArgumentConstraints<TValue> = {
     exact?: TValue;
 };
 
-export type DynamicQuestion_StringArgument =
+export type DynamicQuestion_StringArgumentConfig =
     DynamicQuestion_ArgumentBase<"string"> &
     DynamicQuestion_ArgumentConstraints<string> & {
     minLength?: number;
     maxLength?: number;
 };
 
-export type DynamicQuestion_NumberArgument =
+export type DynamicQuestion_NumberArgumentConfig =
     DynamicQuestion_ArgumentBase<"number"> &
     DynamicQuestion_ArgumentConstraints<number> & {
     min?: number;
@@ -32,30 +32,38 @@ export type DynamicQuestion_NumberArgument =
     step?: number;
 };
 
-export type DynamicQuestion_BooleanArgument =
+export type DynamicQuestion_BooleanArgumentConfig =
     DynamicQuestion_ArgumentBase<"boolean">;
 
-export type DynamicQuestion_Argument =
-    | DynamicQuestion_StringArgument
-    | DynamicQuestion_NumberArgument
-    | DynamicQuestion_BooleanArgument
+export type DynamicQuestion_ArgumentConfig =
+    | DynamicQuestion_StringArgumentConfig
+    | DynamicQuestion_NumberArgumentConfig
+    | DynamicQuestion_BooleanArgumentConfig
 
-export type DynamicQuestion__ArgumentProposal<
+export type DynamicQuestion_ArgumentProposal<
     T extends DynamicQuestion_ArgumentType,
 > =
     T extends "boolean"
-        ? DynamicQuestion_BooleanArgument & { value: boolean }
+        ? DynamicQuestion_BooleanArgumentConfig & { value: boolean }
         : T extends "number"
-            ? DynamicQuestion_NumberArgument & { value: number }
+            ? DynamicQuestion_NumberArgumentConfig & { value: number }
             : T extends "string"
-                ? DynamicQuestion_StringArgument & { value: string }
+                ? DynamicQuestion_StringArgumentConfig & { value: string }
                 : never;
 
+export type DynamicQuestion_ArgumentValue<
+    T extends DynamicQuestion_ArgumentType,
+> = Pick<DynamicQuestion_ArgumentProposal<T>, "selector" | "value">;
+
+export type DynamicQuestion_AnswerChecker<
+    T extends DynamicQuestion_ArgumentType,
+> = (args: DynamicQuestion_ArgumentValue<T>[]) => boolean;
+
 export interface DynamicQuestion_Config {
-    arguments: [DynamicQuestion_Argument,...DynamicQuestion_Argument[]];
+    arguments: [DynamicQuestion_ArgumentConfig,...DynamicQuestion_ArgumentConfig[]];
     buildVariants: (config: DynamicQuestion_Config) => DynamicQuestion_Config;
     checkConstraints: (config: DynamicQuestion_Config) => boolean;
-    checkAnswer: (answer: string) => boolean;
+    checkAnswer: DynamicQuestion_AnswerChecker
     content: {
         question: NonEmptyArray<Resource[]>;
         explanation: NonEmptyArray<Resource[]>;
@@ -66,11 +74,11 @@ export interface DynamicQuestion_Config {
 
 export interface DynamicQuestion_Variant {
     args: () => NonEmptyArray<{selector: string; value: any}>;
-    checkAnswer: (answer: string) => boolean;
+    checkAnswer: DynamicQuestion_AnswerChecker;
 }
 
 export interface DynamicQuestion {
-    getArgs: () => NonEmptyArray<DynamicQuestion_Argument>;
+    getArgs: () => NonEmptyArray<DynamicQuestion_ArgumentConfig>;
     updateArgs: (args) => void;
     calculateValidVariants: () => void;
     hasVariants: () => boolean;
