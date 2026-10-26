@@ -1,7 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
-import { screen } from '@testing-library/react';
 import { act } from 'react';
-import Celebration, { playCelebration } from './Celebration';
+import { playCelebration } from './Celebration';
 import { Celebration_fx } from './Celebration.unit.fx.test';
 import { locale } from './locales/uk-UA';
 

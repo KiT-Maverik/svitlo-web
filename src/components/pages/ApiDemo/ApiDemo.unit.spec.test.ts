@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-import { screen } from '@testing-library/react';
 import { ApiDemo_fx } from './ApiDemo.unit.fx.test';
 import { locale } from './locales/uk-UA';
 

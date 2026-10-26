@@ -1,4 +1,4 @@
-import { createElement, type ComponentProps } from 'react';
+import type { ComponentProps } from 'react';
 import { render, screen } from '@testing-library/react';
 import LessonSectionContent from './LessonSectionContent';
 
