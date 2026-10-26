@@ -1,8 +1,8 @@
 import type { LessonState } from '@types';
-import { lessonStateSchema } from '../../../schemas/lessonStateSchema/lessonStateSchema';
+import { lessonState_Schema } from '../../../schemas/lessonState/lessonState.schema';
 import { runStateRequest } from '../../../utils';
 
 export async function saveLessonState(state: LessonState): Promise<void> {
-  const validated = lessonStateSchema.parse(state);
+  const validated = lessonState_Schema.parse(state);
   await runStateRequest('lessonStates', 'readwrite', store => store.put(validated));
 }

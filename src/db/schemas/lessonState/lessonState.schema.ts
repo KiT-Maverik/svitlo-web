@@ -2,9 +2,7 @@ import { z } from 'zod';
 import type { LessonState } from '@types';
 
 const id = z.string().min(1);
-
 const base = { id, lessonId: id };
-
 const progress = {
   ...base,
   startedAt: z.string(),
@@ -14,9 +12,32 @@ const progress = {
   quizStateIds: z.record(id, id),
 };
 
-export const lessonStateSchema: z.ZodType<LessonState> = z.discriminatedUnion('status', [
-  z.strictObject({ ...base, status: z.literal('new') }),
-  z.strictObject({ ...progress, status: z.literal('in-progress') }),
-  z.strictObject({ ...progress, status: z.literal('content-complete'), contentCompletedAt: z.string() }),
-  z.strictObject({ ...progress, status: z.literal('finished'), contentCompletedAt: z.string(), completedAt: z.string() }),
+export const newLessonState_Schema = z.strictObject({
+  ...base,
+  status: z.literal('new'),
+}) satisfies z.ZodType<Extract<LessonState, { status: 'new' }>>;
+
+export const inProgressLessonState_Schema = z.strictObject({
+  ...progress,
+  status: z.literal('in-progress'),
+}) satisfies z.ZodType<Extract<LessonState, { status: 'in-progress' }>>;
+
+export const contentCompleteLessonState_Schema = z.strictObject({
+  ...progress,
+  status: z.literal('content-complete'),
+  contentCompletedAt: z.string(),
+}) satisfies z.ZodType<Extract<LessonState, { status: 'content-complete' }>>;
+
+export const finishedLessonState_Schema = z.strictObject({
+  ...progress,
+  status: z.literal('finished'),
+  contentCompletedAt: z.string(),
+  completedAt: z.string(),
+}) satisfies z.ZodType<Extract<LessonState, { status: 'finished' }>>;
+
+export const lessonState_Schema: z.ZodType<LessonState> = z.discriminatedUnion('status', [
+  newLessonState_Schema,
+  inProgressLessonState_Schema,
+  contentCompleteLessonState_Schema,
+  finishedLessonState_Schema,
 ]);

@@ -1,5 +1,5 @@
 import type { QuizState } from '@types';
-import { quizStateSchema } from '../../../schemas/quizStateSchema/quizStateSchema';
+import { quizStateSchema } from '../../../schemas/quizState/quizState.schema';
 import { updateState } from '../../../utils';
 
 export function updateQuizState(
