@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import type { LessonState, QuizState } from '@types';
 import {
   createLessonState, deleteLessonState, getLessonState, listLessonStates,
@@ -74,11 +74,8 @@ async function dispatch(command: ControllerCommand): Promise<unknown> {
 }
 
 export default function DbBrowserHarness() {
-  const [ready, setReady] = useState(false);
-
   useEffect(() => {
     window.__svitloDbE2E = dispatch;
-    setReady(true);
     return () => {
       delete window.__svitloDbE2E;
       heldConnection?.close();
@@ -88,6 +85,6 @@ export default function DbBrowserHarness() {
 
   return <main>
     <h1>Native IndexedDB controller test harness</h1>
-    {ready && <p data-testid="db-harness-ready">Ready</p>}
+    <p data-testid="db-harness-ready">Ready</p>
   </main>;
 }

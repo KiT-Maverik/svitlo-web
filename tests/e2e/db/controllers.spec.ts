@@ -37,9 +37,16 @@ function progressingQuiz(id: string, quizId: string): QuizState {
   };
 }
 
+async function waitForHarness(page: Page) {
+  await expect(page.getByTestId('db-harness-ready')).toBeVisible();
+  await page.waitForFunction(() => typeof (window as Window & {
+    __svitloDbE2E?: unknown;
+  }).__svitloDbE2E === 'function');
+}
+
 async function prepare(page: Page) {
   await page.goto('/db-browser-harness');
-  await expect(page.getByTestId('db-harness-ready')).toBeVisible();
+  await waitForHarness(page);
 }
 
 /** The controllers close their own connections. Fail cleanup if a connection was leaked. */
@@ -380,7 +387,7 @@ test.describe('DB', () => {
       const quiz = progressingQuiz('quiz-run', 'quiz');
       await invoke(page, { op: 'saveQuizState', state: quiz });
       await page.reload();
-      await expect(page.getByTestId('db-harness-ready')).toBeVisible();
+      await waitForHarness(page);
       expect(await invoke(page, { op: 'getLessonState', id: lesson.id })).toEqual(lesson);
       expect(await invoke(page, { op: 'getQuizState', id: quiz.id })).toEqual(quiz);
     });
