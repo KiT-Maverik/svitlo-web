@@ -11,6 +11,8 @@ import { LessonSteps } from './LessonSteps';
 import styles from './Lesson.module.css';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@types';
+import { locale as messages } from './locales/uk-UA';
+import { aria } from './LightLesson.constants';
 
 export default function LightLesson({ lesson, quiz, sectionContent, questions }: {
   lesson: Lesson;
@@ -113,7 +115,7 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
   const score = questionStatuses.filter(status => status === 'correct').length;
   const steps = lesson.sections.content.map(section => ({
     id: 'sectionId' in section ? section.sectionId : section.id,
-    title: 'sectionId' in section ? 'Тест' : section.name.value,
+    title: 'sectionId' in section ? messages.lightLesson.test : section.name.value,
   }));
 
   if (!progress.ready || !quizState) return <div className={styles.lesson} />;
@@ -122,7 +124,7 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
     <LessonSteps steps={steps} currentStep={progress.step} unlocked={progress.unlocked} completedStep={progress.testDone ? progress.lastStep : undefined} showStepNumbers={lesson.sections.showIndexes} allowNavigation={lesson.sections.allowNavigation} onNavigate={step => dispatch({ type: 'visit', step })} />
     <div key={progress.step} className={styles.stage}>
       {progress.step < progress.lastStep && sectionContent[progress.step]}
-      {progress.step === 2 && (progress.testDone ? <Celebration score={score} total={questions.length} /> : <section className={styles.quiz} aria-label="Тест">
+      {progress.step === 2 && (progress.testDone ? <Celebration score={score} total={questions.length} /> : <section className={styles.quiz} aria-label={aria.quiz}>
         <QuestionProgress className={styles.questionProgress} statuses={questionStatuses} currentIndex={questionIndex} allowNavigation={quiz.interaction.allowQuestionNavigation} onNavigate={index => setQuestionIndex(index)} />
         {questions.map((question, index) => {
           const entry = answers[question.id];
@@ -142,11 +144,11 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
               }}
               onRetry={event => setAnswer(question.id, event.answer, 'draft')}
               onReset={() => setAnswer(question.id, null, 'draft')}
-              actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === questions.length ? 'Завершити урок' : `Наступне питання ${rtl ? '←' : '→'}`}</button> : context.children }}
+              actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === questions.length ? messages.lightLesson.finish : `${messages.lightLesson.nextQuestion} ${rtl ? '←' : '→'}`}</button> : context.children }}
             />
           </div>;
         })}
-        <label className={styles.sound}><input type="checkbox" checked={sound} onChange={event => setSound(event.target.checked)} /> Звук завершення</label>
+        <label className={styles.sound}><input type="checkbox" checked={sound} onChange={event => setSound(event.target.checked)} /> {messages.lightLesson.sound}</label>
       </section>)}
     </div>
   </div>;

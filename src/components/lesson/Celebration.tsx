@@ -3,6 +3,8 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import Link from 'next/link';
 import styles from './Lesson.module.css';
+import { locale } from './locales/uk-UA';
+import { aria } from './Celebration.constants';
 
 export async function playCelebration() {
   try {
@@ -26,14 +28,14 @@ export async function playCelebration() {
 export default function Celebration({ score, total }: { score: number; total: number }) {
   const [showConfetti, setShowConfetti] = useState(true);
   useEffect(() => { const timer = setTimeout(() => setShowConfetti(false), 3200); return () => clearTimeout(timer); }, []);
-  return <section className={styles.finish} aria-labelledby="lesson-complete">
+  return <section className={styles.finish} aria-labelledby={aria.headingId}>
     {showConfetti && <div className={styles.confetti} aria-hidden="true">{Array.from({ length: 48 }, (_, i) => <i key={i} style={{
       '--origin': i % 2 ? '100%' : '0%', '--dx': `${(i % 2 ? -1 : 1) * (180 + i * 7)}px`, '--dy': `${-240 + (i % 12) * 48}px`, '--spin': `${180 + i * 31}deg`, animationDelay: `${(i % 8) * 45}ms`,
     } as CSSProperties} />)}</div>}
     <span className={styles.badge} aria-hidden="true">✦</span>
-    <h1 id="lesson-complete">Вітаємо, ви завершили роботу з цим уроком!</h1>
-    <p>Теорія, практика, флеш-картки та тест — усі етапи позаду.</p>
-    <p>Правильних відповідей: <strong>{score} із {total}</strong>. Завершення уроку не означає, що всі відповіді були правильними — до матеріалу завжди можна повернутися.</p>
-    <Link className={styles.primary} href="/">До головної</Link>
+    <h1 id={aria.headingId}>{locale.celebration.title}</h1>
+    <p>{locale.celebration.description}</p>
+    <p>{locale.celebration.correctAnswers} <strong>{locale.celebration.score(score,total)}</strong>. {locale.celebration.note}</p>
+    <Link className={styles.primary} href="/">{locale.celebration.home}</Link>
   </section>;
 }

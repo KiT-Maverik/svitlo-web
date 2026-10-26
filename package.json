@@ -17,7 +17,9 @@
     "test:db:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test .test-build/tests/db-controllers.integration.test.js",
     "test:db-controllers-unit": "tsc -p tsconfig.test.json && node --test .test-build/src/db/controllers/*/*/*.spec.js",
     "test:db-controllers-unit:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test .test-build/src/db/controllers/*/*/*.spec.js",
-    "test:e2e:db": "playwright test --config playwright.db.config.ts"
+    "test:e2e:db": "playwright test --config playwright.db.config.ts",
+    "test:components": "vitest run",
+    "test:components:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
@@ -42,13 +44,19 @@
     "@playwright/test": "^1.64.1",
     "@storybook/addon-docs": "^10.6.3",
     "@storybook/nextjs": "^10.6.3",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.8",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "^3.2.4",
     "eslint": "^9",
     "eslint-config-next": "16.4.2",
+    "fake-indexeddb": "^6.2.6",
+    "jsdom": "^26.1.0",
     "storybook": "^10.6.3",
     "typescript": "^5",
-    "fake-indexeddb": "^6.2.6"
+    "vitest": "^3.2.4"
   }
 }

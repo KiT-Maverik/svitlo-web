@@ -8,6 +8,8 @@ import Tooltip from '@mui/material/Tooltip';
 import { useColorScheme } from '@mui/material/styles';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
+import { locale as messages } from './locales/uk-UA';
+import { aria } from './NavbarPreferences.constants';
 
 const locales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale, language, nativeName, flag }) => ({
   locale,
@@ -22,7 +24,7 @@ function LocaleSelector() {
   return <Select
     size="small"
     value={locale}
-    inputProps={{ 'aria-label': 'Мова' }}
+    inputProps={{ 'aria-label': aria.locale }}
     renderValue={value => {
       const selected = locales.find(option => option.locale === value);
       return selected ? `${selected.flag} ${selected.language.toUpperCase()}` : value;
@@ -41,12 +43,12 @@ function ThemeSwitch() {
   const { mode, systemMode, setMode } = useColorScheme();
   const isDark = mode === 'dark' || (mode === 'system' && systemMode === 'dark');
 
-  return <Tooltip title={isDark ? 'Темна тема' : 'Світла тема'}>
+  return <Tooltip title={isDark ? messages.theme.dark : messages.theme.light}>
     <Switch
       checked={isDark}
       disabled={mode === undefined}
       onChange={event => setMode(event.target.checked ? 'dark' : 'light')}
-      slotProps={{ input: { 'aria-label': 'Темна тема' } }}
+      slotProps={{ input: { 'aria-label': aria.theme } }}
     />
   </Tooltip>;
 }
