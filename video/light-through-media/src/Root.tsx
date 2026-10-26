@@ -5,6 +5,7 @@ import {FractionsAdShort} from './ad/FractionsAdShort';
 import {AD_DURATION, AD_DEFAULT_PROPS} from './ad/ad.constants';
 
 export const RemotionRoot = () => (
+  <>
   <Folder name="Svitlo-Optical-Motion-Design">
     <Composition
       id="LightThroughMedia"
@@ -36,4 +37,5 @@ export const RemotionRoot = () => (
       defaultProps={AD_DEFAULT_PROPS}
     />
   </Folder>
+  </>
 );
