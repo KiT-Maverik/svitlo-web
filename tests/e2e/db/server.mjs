@@ -33,7 +33,7 @@ try {
 
   const nextBin = resolve(root, 'node_modules/next/dist/bin/next');
   const child = spawn(process.execPath,
-    [nextBin, 'dev', '--hostname', '127.0.0.1', '--port', port],
+    [nextBin, 'dev', '--webpack', '--hostname', '127.0.0.1', '--port', port],
     { cwd: sandbox, env: { ...process.env, NEXT_TELEMETRY_DISABLED: '1' }, stdio: 'inherit' },
   );
 
