@@ -1,2 +1,1 @@
-export { lessonStateController } from './controllers/lessonStateController/lessonStateController';
-export { quizStateController } from './controllers/quizStateController/quizStateController';
+export * from './controllers';

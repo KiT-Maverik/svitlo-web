@@ -1,4 +1,4 @@
-import { DATABASE_NAME, DATABASE_VERSION } from '../databaseConfig/databaseConfig';
+import { DATABASE_NAME, DATABASE_VERSION } from '../databaseConfig/databaseConfig.utils';
 
 export function openDatabase(): Promise<IDBDatabase> {
   if (typeof indexedDB === 'undefined') {

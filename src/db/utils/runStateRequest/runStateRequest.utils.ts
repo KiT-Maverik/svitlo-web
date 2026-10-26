@@ -1,5 +1,5 @@
-import type { StateStore } from '../databaseConfig/databaseConfig';
-import { openDatabase } from '../openDatabase/openDatabase';
+import type { StateStore } from '../databaseConfig/databaseConfig.utils';
+import { openDatabase } from '../openDatabase/openDatabase.utils';
 
 /** Wait for the transaction to commit, not just for its individual request to succeed. */
 export async function runStateRequest<T>(

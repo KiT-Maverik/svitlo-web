@@ -1,5 +1,5 @@
-import type { StateStore } from '../databaseConfig/databaseConfig';
-import { openDatabase } from '../openDatabase/openDatabase';
+import type { StateStore } from '../databaseConfig/databaseConfig.utils';
+import { openDatabase } from '../openDatabase/openDatabase.utils';
 
 export async function updateState<T extends { id: string }>(
   storeName: StateStore,
