@@ -13,7 +13,8 @@
     "test": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/src/db/utils/**/*.js' .test-build/tests/*.test.js .test-build/src/utils/*/*.spec.js .test-build/src/utils/*/*/*.spec.js .test-build/src/db/utils/*/*.spec.js",
     "test:e2e": "playwright test",
     "test:db-utils": "tsc -p tsconfig.test.json && node --test .test-build/src/db/utils/*/*.spec.js",
-    "test:db-utils:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/src/db/utils/**/*.js' .test-build/src/db/utils/*/*.spec.js"
+    "test:db-utils:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/src/db/utils/**/*.js' .test-build/src/db/utils/*/*.spec.js",
+    "test:db:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test .test-build/tests/db-controllers.integration.test.js"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
@@ -44,6 +45,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.2",
     "storybook": "^10.6.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "fake-indexeddb": "^6.2.6"
   }
 }

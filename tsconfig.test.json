@@ -19,7 +19,8 @@
     "tests/workspaces.test.ts",
     "tests/reporting.test.ts",
     "src/utils/**/*.spec.ts",
-    "src/db/utils/**/*.spec.ts"
+    "src/db/utils/**/*.spec.ts",
+    "tests/db-controllers.integration.test.ts"
   ],
   "exclude": [
     "node_modules",
