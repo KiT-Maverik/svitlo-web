@@ -29,6 +29,7 @@ const lesson = (): Lesson_Config => ({
 
 const quiz = (): Quiz_Config => ({
   id: 'quiz', sectionId: 'quiz-section', feedbackMode: 'after-completion',
+  name: text('quiz-name', 'Quiz', 'Тест'),
   interaction: {
     retries: 0, showErrors: false, showCorrectAnswers: true,
     allowExplanations: true, allowDeferring: false,
@@ -119,6 +120,9 @@ describe('Utils', () => {
           ]);
           const convertedQuiz = result.sections.content[1];
           if (!('questionBank' in convertedQuiz)) return assert.fail('Expected a quiz section');
+          assert.deepEqual(convertedQuiz.name, {
+            id: 'quiz-name', blockType: 'text', locale: 'uk-UA', value: 'Тест',
+          });
           assert.deepEqual(convertedQuiz.questionBank.map(question => ({
             id: question.id, number: question.number, weight: question.weight,
           })), [{ id: 'q1', number: 1, weight: 2 }]);

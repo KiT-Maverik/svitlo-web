@@ -130,7 +130,7 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
   const score = questionStatuses.filter(status => status === 'correct').length;
   const steps = lesson.sections.content.map(section => ({
     id: 'sectionId' in section ? section.sectionId : section.id,
-    title: 'sectionId' in section ? messages.lightLesson.test : section.name.value,
+    title: section.name.value,
   }));
 
   if (!progress.ready || !quizState) return <div className={styles.lesson} />;

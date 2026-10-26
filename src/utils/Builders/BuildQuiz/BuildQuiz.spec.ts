@@ -18,6 +18,7 @@ const question = (id: string, number: number): Quiz_Config['questionBank'][numbe
 
 const quiz = (): Quiz_Config => ({
   id: 'quiz', sectionId: 'section', feedbackMode: 'immediate',
+  name: text('quiz-name', 'Quiz', 'Тест'),
   grading: { mode: 'percentage', successThreshold: 70 },
   maxDuration: 120,
   interaction: {
@@ -39,6 +40,9 @@ describe('Utils', () => {
           const result = buildQuiz(config, 'uk-UA');
           assert.equal(result.id, config.id);
           assert.equal(result.sectionId, config.sectionId);
+          assert.deepEqual(result.name, {
+            id: 'quiz-name', blockType: 'text', locale: 'uk-UA', value: 'Тест',
+          });
           assert.equal(result.feedbackMode, config.feedbackMode);
           assert.deepEqual(result.grading, config.grading);
           assert.deepEqual(result.interaction, config.interaction);

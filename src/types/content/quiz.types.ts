@@ -1,5 +1,5 @@
 import type { Question, Question_Config } from './question.types';
-import type { Resource, Resource_Config } from './resource.types';
+import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
 import type { NonEmptyArray } from '../misc.types';
 
 type QuizQuestion = Question_Config & { number: number; weight: number }
@@ -37,6 +37,7 @@ export interface Quiz_Config {
     skippable: boolean;
   };
   maxDuration?: number;
+  name: TextResource_Config;
   questionBank: [
     QuizQuestion,
     ...QuizQuestion[],
@@ -67,7 +68,8 @@ export interface Quiz_EndingScreens {
   fail: Quiz_EndingScreen;
 }
 
-export interface Quiz extends Omit<Quiz_Config, 'questionBank' | 'screen'> {
+export interface Quiz extends Omit<Quiz_Config, 'name' | 'questionBank' | 'screen'> {
+  name: TextResource;
   questionBank: NonEmptyArray<Question & { number: number; weight: number }>;
   screen: {
     welcome?: { resources: NonEmptyArray<Resource> };

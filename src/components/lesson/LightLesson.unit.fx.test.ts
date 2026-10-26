@@ -18,6 +18,7 @@ const questions = [{
 const quiz = {
   id: 'sample-quiz',
   sectionId: 'quiz',
+  name: { id: 'quiz-name', blockType: 'text', locale: 'uk-UA', value: locale.lightLesson.test },
   questionBank: [{ ...questions[0], weight: 1, number: 1 }] as unknown as Props['quiz']['questionBank'],
   feedbackMode: 'immediate',
   interaction: {

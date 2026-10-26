@@ -3,12 +3,3 @@
 </aside>
 
 ## Intenta explicarlo
-
-1. ¿Dónde está la fuente de luz en la escena?
-2. ¿Cambia la trayectoria al modificar la velocidad de la animación?
-3. ¿Qué ocurre si colocas un objeto opaco entre la fuente y la pantalla?
-
-<details>
-  <summary>Comprueba tu explicación</summary>
-  <p>La fuente está a la izquierda. El control solo cambia la velocidad de la animación; la trayectoria sigue siendo recta. Un objeto opaco bloquea parte de la luz y produce una sombra detrás de él.</p>
-</details>

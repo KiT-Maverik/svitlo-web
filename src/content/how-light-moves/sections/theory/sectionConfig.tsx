@@ -1,10 +1,11 @@
 import type { LessonSection_Config } from '@types';
 import type { MarkdownResource_AllLocales_Config } from '@types';
 import type { DefaultSupportedLanguage } from '@types';
-import { createLocalizedFileLocations } from '@/utils';
+import { createLocalizedFileLocations, createTextResource } from '@/utils';
 import LightRayDiagram from '../../scenes/LightRayDiagram/LightRayDiagram';
 import LightPropagationSimulation from '../../scenes/LightPropagationSimulation/LightPropagationSimulation';
 import { getLightPropagationSimulationLocale } from '../../scenes/LightPropagationSimulation/lightPropagationSimulation.locales';
+import ExplainLight from '../../scenes/ExplainLight/ExplainLight';
 
 const introduction: MarkdownResource_AllLocales_Config = {
   id: '6238256c-30f9-542d-962f-bcd37bcb6cfb',
@@ -30,12 +31,30 @@ const conclusion: MarkdownResource_AllLocales_Config = {
 export function createTheorySectionConfig(locale: DefaultSupportedLanguage['locale']): LessonSection_Config {
   return {
     id: 'ce4b3dd6-92db-5d0c-a4fc-bff481588e8a',
-    name: {
-      id: 'dcc83b8e-b2ca-54c7-ad81-c32f337c4508',
-      blockType: 'text',
-      allLocales: false,
-      value: { 'uk-UA': 'Теорія' },
-    },
+    name: createTextResource('dcc83b8e-b2ca-54c7-ad81-c32f337c4508', {
+      'en-US': 'Theory',
+      'zh-Hans-CN': '理论',
+      'hi-IN': 'सिद्धांत',
+      'es-ES': 'Teoría',
+      'ar-SA': 'النظرية',
+      'fr-FR': 'Théorie',
+      'bn-BD': 'তত্ত্ব',
+      'pt-BR': 'Teoria',
+      'ur-PK': 'نظریہ',
+      'id-ID': 'Teori',
+      'de-DE': 'Theorie',
+      'ja-JP': '理論',
+      'ko-KR': '이론',
+      'tr-TR': 'Teori',
+      'vi-VN': 'Lý thuyết',
+      'ta-IN': 'கோட்பாடு',
+      'te-IN': 'సిద్ధాంతం',
+      'mr-IN': 'सिद्धांत',
+      'ms-MY': 'Teori',
+      'he-IL': 'תיאוריה',
+      'pl-PL': 'Teoria',
+      'uk-UA': 'Теорія',
+    }),
     skippable: false,
     content: [
       introduction,
@@ -47,6 +66,7 @@ export function createTheorySectionConfig(locale: DefaultSupportedLanguage['loca
         messages={getLightPropagationSimulationLocale(locale)}
       />,
       conclusion,
+      <ExplainLight key="explain-light" locale={locale} />,
     ],
   };
 }
