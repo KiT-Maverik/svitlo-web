@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { afterEach, describe, it, mock } from 'node:test';
 import { ZodError } from 'zod';
 import { createLessonState } from './createLessonState.controller';
-import { lessonNew, lessonInProgress, stubRunStateRequest } from '../../testUtils/controllerTestDoubles';
+import { stubRunStateRequest } from '../../testUtils/controllerTestDoubles';
 
 describe('DB', () => {
   describe('Controllers', () => {
