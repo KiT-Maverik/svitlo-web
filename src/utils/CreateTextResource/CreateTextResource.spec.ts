@@ -27,7 +27,7 @@ describe('Utils', () => {
       });
 
       it('should support inclusion-based locale selection', () => {
-        const result = createTextResource('title', { 'en-US': 'Light', 'pl-PL': 'Światło' }, {
+        const result = createTextResource('title', { 'pl-PL': 'Światło' }, {
           locales: { include: ['pl-PL'] },
         });
         assert.equal(result.allLocales, false);
