@@ -5,7 +5,7 @@ import type {
   DynamicQuestion_Variant,
 } from './createDynamicQuestion.types';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@/types/languages';
-import type { TextResource_AllLocales } from '@/types/content/resources';
+import type { TextResource_AllLocales_Config } from '@/types/content/resources';
 
 const girlsApple = {
   selector: 'girlsApple',
@@ -25,11 +25,11 @@ const appleArguments = [girlsApple, boysApple] as const;
 type AppleArguments = typeof appleArguments;
 type AppleVariant = DynamicQuestion_Variant<AppleArguments>;
 
-const appleName: TextResource_AllLocales = {
+const appleName: TextResource_AllLocales_Config = {
   id: 'apples-question',
   blockType: 'text',
   allLocales: true,
-  value: Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(language => [language.locale, 'Apples'])) as TextResource_AllLocales['value'],
+  value: Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(language => [language.locale, 'Apples'])) as TextResource_AllLocales_Config['value'],
 };
 
 const createAppleValue = <T extends 'girlsApple' | 'boysApple'>(selector: T, value: number): { selector: T; value: number } => ({ selector, value });

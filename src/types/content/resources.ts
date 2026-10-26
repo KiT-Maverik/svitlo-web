@@ -21,17 +21,21 @@ export type AnyChosenLocales = {
   [LocaleKey in Locale]: Record<LocaleKey, string> & Partial<Record<Exclude<Locale, LocaleKey>, string>>
 }[Locale];
 
-export interface TextResource_AllLocales extends ResourceBase<'text'> {
+export interface TextResource_AllLocales_Config extends ResourceBase<'text'> {
   allLocales: true;
   value: AllLocales;
 }
 
-export interface TextResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'text'> {
+export interface TextResource_ChosenLocales_Config<Locales extends Locale = never> extends ResourceBase<'text'> {
   allLocales: false;
   value: ChosenLocales<Locales>;
 }
 
-export type TextResource<Locales extends Locale = never> = TextResource_AllLocales | TextResource_ChosenLocales<Locales>;
+export type TextResource_Config<Locales extends Locale = never> = TextResource_AllLocales_Config | TextResource_ChosenLocales_Config<Locales>;
+
+export interface TextResource extends ResourceBase<'text'> {
+  value: string;
+}
 
 export interface MarkdownResource_AllLocales extends ResourceBase<'markdown'> {
   allLocales: true;
@@ -114,7 +118,7 @@ export interface ImageResource_ChosenLocales<Locales extends Locale = never> ext
 export type ImageResource<Locales extends Locale = never> = ImageResource_AllLocales | ImageResource_ChosenLocales<Locales>;
 
 export type Resource<Locales extends Locale = never> =
-  | TextResource<Locales>
+  | TextResource_Config<Locales>
   | MarkdownResource<Locales>
   | CodeResource<Locales>
   | AudioResource<Locales>
@@ -124,7 +128,7 @@ export type Resource<Locales extends Locale = never> =
 export type NonEmptyResourceArray<T extends Resource = Resource> = [T, ...T[]];
 
 export interface ResourceMap<Locales extends Locale = never> {
-  text: TextResource<Locales>;
+  text: TextResource_Config<Locales>;
   markdown: MarkdownResource<Locales>;
   code: CodeResource<Locales>;
   audio: AudioResource<Locales>;

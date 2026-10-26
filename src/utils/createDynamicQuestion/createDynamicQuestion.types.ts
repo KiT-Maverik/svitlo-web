@@ -1,4 +1,4 @@
-import type { Resource, TextResource_AllLocales } from '@/types/content/resources';
+import type { Resource, TextResource_AllLocales_Config } from '@/types/content/resources';
 import type { NonEmptyArray } from '@/types/misc.types';
 
 export type DynamicQuestion_ArgumentType =
@@ -97,7 +97,7 @@ export interface DynamicQuestion_Config<TArguments extends DynamicQuestion_Argum
         explanation: NonEmptyArray<Resource[]>;
         answer: NonEmptyArray<Resource[]>;
     },
-    name: TextResource_AllLocales,
+    name: TextResource_AllLocales_Config,
 }
 
 export interface DynamicQuestion<TArguments extends DynamicQuestion_Arguments = DynamicQuestion_Arguments> {

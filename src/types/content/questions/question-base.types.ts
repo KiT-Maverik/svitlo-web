@@ -1,4 +1,4 @@
-import type { NonEmptyResourceArray, Resource, TextResource } from '../resources';
+import type { NonEmptyResourceArray, Resource, TextResource_Config } from '../resources';
 import type { Disability } from '../../disabilities.types';
 
 /** Content question kinds supported by the reusable question widgets. */
@@ -22,7 +22,7 @@ export interface Question_ContentBase {
   type: QuestionType;
   restrictions: Disability[];
   content: NonEmptyResourceArray;
-  explanation?: TextResource;
+  explanation?: TextResource_Config;
   flashcardConfig?: FlashcardConfig;
 }
 
@@ -30,40 +30,40 @@ export interface AnswerWithNumber_QuestionContent extends Question_ContentBase {
   type: 'answer-with-number';
   correctAnswer: number[];
   /** Intentionally mandatory; use this property to provide formatting insights. */
-  placeholder: TextResource;
+  placeholder: TextResource_Config;
 }
 
 export interface AnswerWithText_QuestionContent extends Question_ContentBase {
   type: 'answer-with-text';
-  correctAnswer: TextResource[];
+  correctAnswer: TextResource_Config[];
   /** Intentionally mandatory; use this property to provide formatting insights. */
-  placeholder: TextResource;
+  placeholder: TextResource_Config;
 }
 
 export interface BuildAnswerWithBlocks_QuestionContent extends Question_ContentBase {
   type: 'build-answer-with-blocks';
-  correctSequence: NonEmptyResourceArray<TextResource>;
-  distractors: TextResource[];
+  correctSequence: NonEmptyResourceArray<TextResource_Config>;
+  distractors: TextResource_Config[];
   /** Intentionally mandatory; use this property to provide formatting insights. */
-  placeholder: TextResource;
+  placeholder: TextResource_Config;
 }
 
 export interface FillBlanksSlot {
   selector: string;
-  correctAnswer: TextResource;
+  correctAnswer: TextResource_Config;
 }
 
 export interface FillBlanksWithBlocks_QuestionContent extends Question_ContentBase {
   type: 'fill-blanks-with-blocks';
-  placeholder: TextResource;
-  distractors: TextResource[];
+  placeholder: TextResource_Config;
+  distractors: TextResource_Config[];
   slots: FillBlanksSlot[];
 }
 
 export interface FillBlanksWithText_QuestionContent extends Question_ContentBase {
   type: 'fill-blanks-with-text';
-  placeholder: TextResource;
-  distractors: TextResource[];
+  placeholder: TextResource_Config;
+  distractors: TextResource_Config[];
   slots: FillBlanksSlot[];
 }
 

@@ -1,5 +1,5 @@
 import type { Locale } from '@/types/languages';
-import type { AllLocales, ChosenLocales, TextResource_AllLocales, TextResource_ChosenLocales } from '@/types/content/resources';
+import type { AllLocales, ChosenLocales, TextResource_AllLocales_Config, TextResource_ChosenLocales_Config } from '@/types/content/resources';
 
 type LocaleSelection =
   | { only: readonly [Locale, ...Locale[]]; include?: never; exclude?: never }
@@ -14,15 +14,15 @@ type SelectedLocales<T extends LocaleSelection> = Exclude<
     : never
 >;
 
-type ReadonlyTextResource<T extends TextResource_AllLocales | TextResource_ChosenLocales> =
+type ReadonlyTextResource<T extends TextResource_AllLocales_Config | TextResource_ChosenLocales_Config> =
   Readonly<Omit<T, 'value'>> & { readonly value: Readonly<T['value']> };
 
-export function createTextResource(id: string, value: AllLocales): ReadonlyTextResource<TextResource_AllLocales>;
+export function createTextResource(id: string, value: AllLocales): ReadonlyTextResource<TextResource_AllLocales_Config>;
 export function createTextResource<const T extends LocaleSelection>(
   id: string,
   value: ChosenLocales<NoInfer<SelectedLocales<T>>>,
   config: { locales: T },
-): ReadonlyTextResource<TextResource_ChosenLocales<SelectedLocales<T>>>;
+): ReadonlyTextResource<TextResource_ChosenLocales_Config<SelectedLocales<T>>>;
 export function createTextResource(
   id: string,
   value: AllLocales | ChosenLocales,

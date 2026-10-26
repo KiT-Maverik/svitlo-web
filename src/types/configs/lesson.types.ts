@@ -1,12 +1,12 @@
 import type { ReactNode } from 'react';
-import {TextResource, Resource} from '../content/resources';
+import {TextResource_Config, Resource} from '../content/resources';
 import type { QuizConfig } from './quiz.types';
 import {NonEmptyArray} from "@/types/misc.types";
 
 export interface LessonSection_Config {
   content: NonEmptyArray<Resource | ReactNode>;
   id: string;
-  name: TextResource;
+  name: TextResource_Config;
   skippable: boolean;
 }
 
@@ -22,5 +22,5 @@ export interface Lesson_Config {
     showIndexes: boolean;
     content: NonEmptyArray<LessonSection_Content>;
   };
-  title: TextResource;
+  title: TextResource_Config;
 }
