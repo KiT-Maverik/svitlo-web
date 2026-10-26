@@ -1,6 +1,6 @@
 import type { Locale, Quiz, Quiz_Config, Resource_Config } from '@types';
-import { buildResource } from './buildResource';
-import { buildQuestion } from './buildQuestion';
+import { buildResource } from '../BuildResource/BuildResource.utils';
+import { buildQuestion } from '../BuildQuestion/BuildQuestion.utils';
 
 export function buildQuiz(config: Quiz_Config, locale: Locale): Quiz {
   const resources = (items: [Resource_Config, ...Resource_Config[]]) => items.map(item => buildResource(item, locale)) as [ReturnType<typeof buildResource>, ...ReturnType<typeof buildResource>[]];

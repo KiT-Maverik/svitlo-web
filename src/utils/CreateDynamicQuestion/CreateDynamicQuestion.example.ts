@@ -1,9 +1,9 @@
-import { createDynamicQuestion } from './createDynamicQuestion.utils';
+import { createDynamicQuestion } from './CreateDynamicQuestion.utils';
 import type {
   DynamicQuestion_Config,
   DynamicQuestion_NumberArgumentConfig,
   DynamicQuestion_Variant,
-} from './createDynamicQuestion.types';
+} from './CreateDynamicQuestion.types';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
 import type { TextResource_AllLocales_Config } from '@types';
 
