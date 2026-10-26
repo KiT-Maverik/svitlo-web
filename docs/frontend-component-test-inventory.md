@@ -14,33 +14,33 @@ This inventory captures frontend components, layouts, widgets, interactive scene
 
 | Component | Category | Parent / consumer | Named child dependencies | Existing tests | New test suite |
 |---|---|---|---|---|---|
-| Navbar | Layout | LearningLayout; TopNavbar; BottomNavbar | Slot containers | No | Navbar.unit.spec.test.ts |
-| TopNavbar | Layout | LearningLayout | Navbar | No | TopNavbar.unit.spec.test.ts |
-| BottomNavbar | Layout | LearningLayout | Navbar | No | BottomNavbar.unit.spec.test.ts |
-| NavbarPreferences | Layout | LearningLayout | — | No | NavbarPreferences.unit.spec.test.ts |
-| LearningLayout | Layout | Route layouts | TopNavbar, BottomNavbar, NavbarPreferences, VerticalSpace | No | LearningLayout.unit.spec.test.ts |
-| VerticalSpace | Widget | LearningLayout; other consumers | — | No | VerticalSpace.unit.spec.test.ts |
-| MarkdownContent | Widget | LessonSectionContent; other consumers | — | No | MarkdownContent.unit.spec.test.ts |
-| LessonSteps | Component | LightLesson | — | No | LessonSteps.unit.spec.test.ts |
-| QuestionProgress | Component | LightLesson | — | No | QuestionProgress.unit.spec.test.ts |
-| LessonProgressProvider | Component | Lesson route | Context consumers | No | LessonProgress.unit.spec.test.ts |
-| Flashcard | Component | Lesson experience | — | No | Flashcard.unit.spec.test.ts |
-| MediumPractice | Component | Lesson experience | — | No | MediumPractice.unit.spec.test.ts |
-| LessonSectionContent | Component | Lesson route | MarkdownContent | No | LessonSectionContent.unit.spec.test.ts |
-| Celebration | Component | LightLesson | — | No | Celebration.unit.spec.test.ts |
-| LightLesson | Component | Lesson route | LessonSteps, QuestionProgress, Celebration; external QuestionAttempt | No | LightLesson.unit.spec.test.ts |
-| ApiDemo | Component | Demo route | FeedbackDemo; external QuestionAttempt | No | ApiDemo.unit.spec.test.ts |
-| FeedbackDemo | Component | ApiDemo | External QuestionAttempt | No | FeedbackDemo.unit.spec.test.ts |
-| QuestionsDemo | Component | Questions demo route | ReportedQuestion | No | QuestionsDemo.unit.spec.test.ts |
-| ReportButton | Component | ReportedQuestion; other consumers | — | No | ReportButton.unit.spec.test.ts |
-| ReportedQuestion | Component | QuestionsDemo | ReportButton; external QuestionAttempt | No | ReportedQuestion.unit.spec.test.ts |
-| WorkspaceShell | Layout | Workspace routes | Slot children | No | WorkspaceShell.unit.spec.test.ts |
-| StudentDashboard | Component | WorkspaceShell | — | No | StudentDashboard.unit.spec.test.ts |
-| TeacherDashboard | Component | WorkspaceShell | — | No | TeacherDashboard.unit.spec.test.ts |
-| AdminLessons | Component | WorkspaceShell | — | No | AdminLessons.unit.spec.test.ts |
-| LightRayDiagram | Widget | Light lesson content | — | No | LightRayDiagram.unit.spec.test.ts |
-| LightPropagationSimulation | Widget | Light lesson content | — | No | LightPropagationSimulation.unit.spec.test.ts |
-| LocaleProvider | Component | App layout | Context consumers | No | LocaleProvider.unit.spec.test.ts |
+| Navbar | Layout | LearningLayout; TopNavbar; BottomNavbar | Slot containers | No | Navbar.unit.spec.ts |
+| TopNavbar | Layout | LearningLayout | Navbar | No | TopNavbar.unit.spec.ts |
+| BottomNavbar | Layout | LearningLayout | Navbar | No | BottomNavbar.unit.spec.ts |
+| NavbarPreferences | Layout | LearningLayout | — | No | NavbarPreferences.unit.spec.ts |
+| LearningLayout | Layout | Route layouts | TopNavbar, BottomNavbar, NavbarPreferences, VerticalSpace | No | LearningLayout.unit.spec.ts |
+| VerticalSpace | Widget | LearningLayout; other consumers | — | No | VerticalSpace.unit.spec.ts |
+| MarkdownContent | Widget | LessonSectionContent; other consumers | — | No | MarkdownContent.unit.spec.ts |
+| LessonSteps | Component | LightLesson | — | No | LessonSteps.unit.spec.ts |
+| QuestionProgress | Component | LightLesson | — | No | QuestionProgress.unit.spec.ts |
+| LessonProgressProvider | Component | Lesson route | Context consumers | No | LessonProgress.unit.spec.ts |
+| Flashcard | Component | Lesson experience | — | No | Flashcard.unit.spec.ts |
+| MediumPractice | Component | Lesson experience | — | No | MediumPractice.unit.spec.ts |
+| LessonSectionContent | Component | Lesson route | MarkdownContent | No | LessonSectionContent.unit.spec.ts |
+| Celebration | Component | LightLesson | — | No | Celebration.unit.spec.ts |
+| LightLesson | Component | Lesson route | LessonSteps, QuestionProgress, Celebration; external QuestionAttempt | No | LightLesson.unit.spec.ts |
+| ApiDemo | Component | Demo route | FeedbackDemo; external QuestionAttempt | No | ApiDemo.unit.spec.ts |
+| FeedbackDemo | Component | ApiDemo | External QuestionAttempt | No | FeedbackDemo.unit.spec.ts |
+| QuestionsDemo | Component | Questions demo route | ReportedQuestion | No | QuestionsDemo.unit.spec.ts |
+| ReportButton | Component | ReportedQuestion; other consumers | — | No | ReportButton.unit.spec.ts |
+| ReportedQuestion | Component | QuestionsDemo | ReportButton; external QuestionAttempt | No | ReportedQuestion.unit.spec.ts |
+| WorkspaceShell | Layout | Workspace routes | Slot children | No | WorkspaceShell.unit.spec.ts |
+| StudentDashboard | Component | WorkspaceShell | — | No | StudentDashboard.unit.spec.ts |
+| TeacherDashboard | Component | WorkspaceShell | — | No | TeacherDashboard.unit.spec.ts |
+| AdminLessons | Component | WorkspaceShell | — | No | AdminLessons.unit.spec.ts |
+| LightRayDiagram | Widget | Light lesson content | — | No | LightRayDiagram.unit.spec.ts |
+| LightPropagationSimulation | Widget | Light lesson content | — | No | LightPropagationSimulation.unit.spec.ts |
+| LocaleProvider | Component | App layout | Context consumers | No | LocaleProvider.unit.spec.ts |
 
 ## Testing boundaries
 

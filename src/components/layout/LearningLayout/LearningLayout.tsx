@@ -21,7 +21,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import TopNavbar from '../Navigation/TopNavbar';
 import BottomNavbar from '../Navigation/BottomNavbar';
-import { canAdvance, useLessonProgress } from '@/components/lesson/LessonProgress';
+import { canAdvance, useLessonProgress } from '@/components/pages/Lesson/LessonProgress/LessonProgress';
 import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@types';
@@ -31,7 +31,7 @@ import { aria } from './LearningLayout.constants';
 
 type Topic = { id: string; title: string; href: string };
 
-export default function LearningLayout({ children, topics, skippableSteps = [] }: { children: ReactNode; topics: readonly Topic[]; skippableSteps?: readonly boolean[] }) {
+export default function LearningLayout({ children, topics, skippableSteps = [], quizStep }: { children: ReactNode; topics: readonly Topic[]; skippableSteps?: readonly boolean[]; quizStep?: number }) {
   const { locale } = useLocale();
   const direction = getLocaleDirection(locale);
   const { progress, dispatch } = useLessonProgress();
@@ -125,9 +125,9 @@ export default function LearningLayout({ children, topics, skippableSteps = [] }
       <BottomNavbar aria-label={aria.navigation.bottom} slots={{
         center: <>
           <Button variant="contained" disabled={!progress.ready || progress.step === 0} onClick={() => dispatch({ type: 'back' })}>{direction === 'rtl' ? '→' : '←'} {messages.actions.previous}</Button>
-          <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>{messages.actions.next} {direction === 'rtl' ? '←' : '→'}</Button>
+          <Button variant="contained" disabled={!canAdvance(progress) || (progress.step === quizStep && !progress.testDone && !progress.skipped.includes(progress.quizSectionId ?? ''))} onClick={() => dispatch({ type: 'next' })}>{messages.actions.next} {direction === 'rtl' ? '←' : '→'}</Button>
         </>,
-        right: <Button variant="outlined" disabled={!progress.ready || !skippableSteps[progress.step] || (progress.step === progress.lastStep && (progress.testDone || Boolean(progress.quizSectionId && progress.skipped.includes(progress.quizSectionId))))} onClick={() => dispatch({ type: 'skip' })}>{messages.actions.skip}</Button>,
+        right: <Button variant="outlined" disabled={!progress.ready || !skippableSteps[progress.step] || (progress.step === (quizStep ?? progress.lastStep) && (progress.testDone || Boolean(progress.quizSectionId && progress.skipped.includes(progress.quizSectionId))))} onClick={() => dispatch({ type: 'skip' })}>{messages.actions.skip}</Button>,
       }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />
     </Box>
   );

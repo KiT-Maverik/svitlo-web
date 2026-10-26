@@ -15,6 +15,7 @@ export function buildLesson(config: Lesson_Config, locale: Locale): Lesson {
     id: config.id,
     slug: config.slug,
     requireQuiz: config.requireQuiz,
+    sceneLocale: config.sceneLocales?.[locale],
     title: buildTextResource(config.title, locale),
     sections: {
       allowNavigation: config.sections.allowNavigation,

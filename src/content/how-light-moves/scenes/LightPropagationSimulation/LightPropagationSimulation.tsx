@@ -2,9 +2,9 @@
 
 import { useState, useSyncExternalStore } from 'react';
 import { Box, Button, Paper, Slider, Typography } from '@mui/material';
-import type { LightPropagationSimulationLocale, LightPropagationSimulationLocaleCode } from './lightPropagationSimulation.locale';
 import styles from './LightPropagationSimulation.module.css';
 import { getLocaleDirection } from '@types';
+import { useLightSceneLocales } from '../../useLightSceneLocales';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
 
@@ -18,12 +18,9 @@ function getReducedMotion() {
   return window.matchMedia(reducedMotionQuery).matches;
 }
 
-export interface LightPropagationSimulationProps {
-  locale: LightPropagationSimulationLocaleCode;
-  messages: LightPropagationSimulationLocale;
-}
-
-export default function LightPropagationSimulation({ locale, messages }: LightPropagationSimulationProps) {
+export default function LightPropagationSimulation() {
+  const { locale, scenes } = useLightSceneLocales();
+  const messages = scenes.simulation;
   const reducedMotion = useSyncExternalStore(subscribeToReducedMotion, getReducedMotion, () => false);
   const [playbackOverride, setPlaybackOverride] = useState<boolean | null>(null);
   const [speed, setSpeed] = useState(1);

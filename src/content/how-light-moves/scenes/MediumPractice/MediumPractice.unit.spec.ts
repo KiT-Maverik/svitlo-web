@@ -1,0 +1,46 @@
+import { describe, expect, it } from 'vitest';
+import { screen } from '@testing-library/react';
+import { MediumPractice_fx } from './MediumPractice.unit.fx';
+import { locale } from './MediumPractice.locale';
+import { media } from '@/content/how-light-moves/sections/practice/mediumData';
+
+describe('Components', () => {
+  describe('MediumPractice', () => {
+    it('should render the localized practice heading and source link', () => {
+      MediumPractice_fx.render();
+      expect(MediumPractice_fx.selectors.title()).toBeVisible();
+      expect(screen.getByRole('link', { name: locale.mediumPractice.sourceLink })).toHaveAttribute('href', expect.stringContaining('openstax.org'));
+    });
+
+    it('should initially select the first medium and pause animation', () => {
+      MediumPractice_fx.render();
+      expect(MediumPractice_fx.selectors.medium(0)).toHaveAttribute('aria-pressed', 'true');
+      expect(MediumPractice_fx.selectors.medium(1)).toHaveAttribute('aria-pressed', 'false');
+      expect(MediumPractice_fx.selectors.playback(true)).toBeVisible();
+    });
+
+    it('should update selection and accessible diagram after switching media', async () => {
+      MediumPractice_fx.render();
+      await MediumPractice_fx.actions.selectMedium(2);
+      expect(MediumPractice_fx.selectors.medium(2)).toHaveAttribute('aria-pressed', 'true');
+      expect(MediumPractice_fx.selectors.medium(0)).toHaveAttribute('aria-pressed', 'false');
+      expect(MediumPractice_fx.selectors.track(2)).toBeVisible();
+      expect(screen.getByText(media[2].title, { selector: 'strong' })).toBeVisible();
+    });
+
+    it('should toggle the playback control label without changing the selected medium', async () => {
+      MediumPractice_fx.render();
+      await MediumPractice_fx.actions.togglePlayback(true);
+      expect(MediumPractice_fx.selectors.playback(false)).toBeVisible();
+      expect(MediumPractice_fx.selectors.medium(0)).toHaveAttribute('aria-pressed', 'true');
+      await MediumPractice_fx.actions.togglePlayback(false);
+      expect(MediumPractice_fx.selectors.playback(true)).toBeVisible();
+    });
+
+    it('should preserve the text explaining the limits of the simulation', () => {
+      MediumPractice_fx.render();
+      expect(screen.getByText(locale.mediumPractice.quote)).toBeVisible();
+      expect(screen.getByText(locale.mediumPractice.caption)).toBeVisible();
+    });
+  });
+});

@@ -1,12 +1,9 @@
 import type { LessonSection_Config } from '@types';
 import type { MarkdownResource_AllLocales_Config } from '@types';
-import type { DefaultSupportedLanguage } from '@types';
 import { createLocalizedFileLocations, createTextResource } from '@/utils';
-import { KnowledgeCheckpoint } from '@/components/widgets';
 import LightRayDiagram from '../../scenes/LightRayDiagram/LightRayDiagram';
 import LightPropagationSimulation from '../../scenes/LightPropagationSimulation/LightPropagationSimulation';
-import { getLightPropagationSimulationLocale } from '../../scenes/LightPropagationSimulation/lightPropagationSimulation.locales';
-import { theoryKnowledgeCheckpointLocales } from './knowledgeCheckpoint.locale';
+import TheoryCheckpoint from '../../scenes/TheoryCheckpoint/TheoryCheckpoint';
 
 const introduction: MarkdownResource_AllLocales_Config = {
   id: '6238256c-30f9-542d-962f-bcd37bcb6cfb',
@@ -29,8 +26,7 @@ const conclusion: MarkdownResource_AllLocales_Config = {
   fileLocation: createLocalizedFileLocations('/content/how-light-moves/sections/theory/markdown/03', 'md'),
 };
 
-export function createTheorySectionConfig(locale: DefaultSupportedLanguage['locale']): LessonSection_Config {
-  return {
+export const theorySectionConfig: LessonSection_Config = {
     id: 'ce4b3dd6-92db-5d0c-a4fc-bff481588e8a',
     name: createTextResource('dcc83b8e-b2ca-54c7-ad81-c32f337c4508', {
       'en-US': 'Theory',
@@ -59,26 +55,10 @@ export function createTheorySectionConfig(locale: DefaultSupportedLanguage['loca
     skippable: false,
     content: [
       introduction,
-      <LightRayDiagram key="light-ray-diagram" locale={locale} />,
+      <LightRayDiagram key="light-ray-diagram" />,
       continuation,
-      <LightPropagationSimulation
-        key="light-propagation-simulation"
-        locale={locale}
-        messages={getLightPropagationSimulationLocale(locale)}
-      />,
+      <LightPropagationSimulation key="light-propagation-simulation" />,
       conclusion,
-      <KnowledgeCheckpoint
-        key="knowledge-checkpoint"
-        locale={locale}
-        title={theoryKnowledgeCheckpointLocales[locale].title}
-        items={theoryKnowledgeCheckpointLocales[locale].items.map(({ question, answer }, index) => ({
-          id: `light-explanation-${index + 1}`,
-          question,
-          answer: { id: `light-explanation-answer-${index + 1}`, blockType: 'text' as const, locale, value: answer },
-        }))}
-      />,
+      <TheoryCheckpoint key="knowledge-checkpoint" />,
     ],
-  };
-}
-
-export const theorySectionConfig = createTheorySectionConfig('uk-UA');
+};

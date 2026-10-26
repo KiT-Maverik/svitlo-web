@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
-import { toLightQuestionWidgets } from '../../src/components/lesson/adapters/toLightQuestionWidgets';
+import { toQuestionWidgets } from '../../src/components/pages/Lesson/adapters/toQuestionWidgets';
 import { quizSectionConfig } from '../../src/content/how-light-moves/sections/quiz/sectionConfig';
 import { buildQuiz } from '../../src/utils';
 
-const lightQuestions = toLightQuestionWidgets(buildQuiz(quizSectionConfig, 'uk-UA'));
+const lightQuestions = toQuestionWidgets(buildQuiz(quizSectionConfig, 'uk-UA'));
 
 test('home opens the light lesson and preserves the three-step learning flow', async ({ page }, testInfo) => {
   await page.goto('/');

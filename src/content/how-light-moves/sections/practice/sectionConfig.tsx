@@ -1,6 +1,6 @@
 import type { LessonSection_Config } from '@types';
 import { createTextResource } from '@/utils';
-import MediumPractice from '@/components/lesson/MediumPractice';
+import MediumPractice from '../../scenes/MediumPractice/MediumPractice';
 
 const name = createTextResource(
   '3b5ac8f2-e075-59ed-bc54-04b3697f8635',

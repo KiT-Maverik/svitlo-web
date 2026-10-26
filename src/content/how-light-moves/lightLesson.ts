@@ -3,6 +3,7 @@ import { createTextResource } from '@/utils';
 import { practiceSectionConfig } from './sections/practice/sectionConfig';
 import { quizSectionConfig } from './sections/quiz/sectionConfig';
 import { theorySectionConfig } from './sections/theory/sectionConfig';
+import { lightSceneLocales } from './sceneLocales';
 
 export const lightLesson = {
   id: 'd3048d21-8690-5255-b62c-984c69ac272c',
@@ -35,6 +36,7 @@ export const lightLesson = {
     },
   ),
   requireQuiz: true,
+  sceneLocales: lightSceneLocales,
   sections: {
     allowNavigation: true,
     allowSkipping: true,

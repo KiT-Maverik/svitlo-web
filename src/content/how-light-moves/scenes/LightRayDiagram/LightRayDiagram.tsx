@@ -1,13 +1,12 @@
+'use client';
+
 import styles from './LightRayDiagram.module.css';
-import { locales, type LightRayDiagramLocaleCode } from './lightRayDiagram.locale';
 import { getLocaleDirection } from '@types';
+import { useLightSceneLocales } from '../../useLightSceneLocales';
 
-export interface LightRayDiagramProps {
-  locale: LightRayDiagramLocaleCode;
-}
-
-export default function LightRayDiagram({ locale }: LightRayDiagramProps) {
-  const messages = locales[locale];
+export default function LightRayDiagram() {
+  const { locale, scenes } = useLightSceneLocales();
+  const messages = scenes.ray;
   const rtl = getLocaleDirection(locale) === 'rtl';
 
   return (
