@@ -1,5 +1,5 @@
 import type { Locale } from '@/types/languages';
-import type { Resource_AllLocales_Config, Resource_ChosenLocales_Config, TextResource_AllLocales_Config, TextResource_ChosenLocales_Config } from '@/types/content/resources';
+import type { Resource_AllLocales_Config, Resource_ChosenLocales_Config, TextResource_AllLocales_Config, TextResource_ChosenLocales_Config } from '@/types/content/resource.types';
 
 type LocaleSelection =
   | { only: readonly [Locale, ...Locale[]]; include?: never; exclude?: never }

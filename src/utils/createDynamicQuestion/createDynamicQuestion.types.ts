@@ -1,4 +1,4 @@
-import type { Resource_Config, TextResource_AllLocales_Config } from '@/types/content/resources';
+import type { Resource_Config, TextResource_AllLocales_Config } from '@/types/content/resource.types';
 import type { NonEmptyArray } from '@/types/misc.types';
 
 export type DynamicQuestion_ArgumentType =

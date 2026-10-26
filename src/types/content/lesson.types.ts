@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import {TextResource_Config, Resource_Config} from '../content/resources';
+import {TextResource_Config, Resource_Config} from '../content/resource.types';
 import type { QuizConfig } from './quiz.types';
 import {NonEmptyArray} from "@/types/misc.types";
 

@@ -1,4 +1,4 @@
-import type { Resource, Resource_Config, TextResource, TextResource_Config } from '../resources';
+import type { Resource, Resource_Config, TextResource, TextResource_Config } from '../resource.types';
 import type { NonEmptyArray } from '../../misc.types';
 import type { Disability } from '../../disabilities.types';
 

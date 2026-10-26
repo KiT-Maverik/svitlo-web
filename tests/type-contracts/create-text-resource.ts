@@ -1,4 +1,4 @@
-import type { Resource_AllLocales_Config, Resource_ChosenLocales_Config } from '../../src/types/content/resources';
+import type { Resource_AllLocales_Config, Resource_ChosenLocales_Config } from '../../src/types/content/resource.types';
 import type { Locale } from '../../src/types/languages';
 import { createTextResource } from '../../src/utils/createTextResource/createTextResource';
 
