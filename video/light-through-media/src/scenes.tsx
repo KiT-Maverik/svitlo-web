@@ -1,5 +1,5 @@
 import type {CSSProperties, ReactNode} from 'react';
-import {AbsoluteFill, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, interpolate, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {C, MEDIA, SCENES, clamp, roundedSpeed, smoothstep, type FilmProps} from './constants';
 import {FlickerLine, LargeType, OpticalDiagram, Prism, SheenPanel, UpperLabel, blend, hash, reveal} from './visuals';
 
