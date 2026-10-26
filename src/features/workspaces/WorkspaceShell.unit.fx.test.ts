@@ -10,7 +10,7 @@ export const WorkspaceShell_fx = {
     const { children = 'Workspace body', ...overrides } = props;
     return render(createElement(WorkspaceShell, {
       title: 'Example workspace', subtitle: 'Workspace description', current: '/student', ...overrides,
-    }, children));
+    } as Props, children));
   },
   selectors: {
     main: () => screen.getByRole('main'),
