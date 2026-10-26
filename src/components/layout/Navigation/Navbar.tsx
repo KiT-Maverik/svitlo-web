@@ -22,7 +22,7 @@ export default function Navbar({ slots = {}, slotProps = {}, 'aria-label': label
     ]}>
       {(['left', 'center', 'right'] as const).map((section) => {
         const { sx = [], ...props } = slotProps[section] ?? {};
-        return <Box key={section} data-testid={testId.slots[section]} {...props} sx=[
+        return <Box key={section} data-testid={testId.slots[section]} {...props} sx={[
           { display: 'flex', alignItems: 'center', gap: 1, minWidth: 0, justifyContent: section === 'left' ? 'flex-start' : section === 'right' ? 'flex-end' : 'center' },
           ...(Array.isArray(sx) ? sx : [sx]),
         ]}>{slots[section]}</Box>;

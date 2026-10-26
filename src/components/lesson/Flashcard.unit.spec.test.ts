@@ -46,8 +46,9 @@ describe('Components', () => {
     it('should invoke reporting from the accessible action menu', async () => {
       const onReport = vi.fn();
       Flashcard_fx.render({ onReport });
+      const menuButton = Flashcard_fx.selectors.menu();
       await Flashcard_fx.actions.openMenu();
-      expect(Flashcard_fx.selectors.menu()).toHaveAttribute('aria-expanded', 'true');
+      expect(menuButton).toHaveAttribute('aria-expanded', 'true');
       await userEvent.click(await screen.findByRole('menuitem', { name: 'Повідомити про проблему' }));
       expect(onReport).toHaveBeenCalledOnce();
     });
