@@ -3,7 +3,7 @@
 import { useCallback, useId, useRef, useState } from 'react';
 import DeleteOutlineOutlined from '@mui/icons-material/DeleteOutlineOutlined';
 import InfoOutlined from '@mui/icons-material/InfoOutlined';
-import { alpha, Box, Chip, Divider, Stack, Typography, useMediaQuery } from '@mui/material';
+import { alpha, Box, Chip, Divider, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { closestCenter, DndContext, DragOverlay, type CollisionDetection, type KeyboardCoordinateGetter, KeyboardSensor, MouseSensor, TouchSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
 import { arrayMove, SortableContext, useSortable } from '@dnd-kit/sortable';
 import type { InteractionProps } from '../../interaction-props';
@@ -52,6 +52,7 @@ function SourceSlot({ id, rect, disabled }: { id: string; rect: DragRect | null;
 type Preview = { zone: 'answer' | 'bank'; index: number };
 type DragGeometry = Parameters<CollisionDetection>[0]['droppableRects'];
 export function DragAndDropZone({ question, value, onChange, disabled, readOnly, result, showErrors = true, showCorrectAnswers = true }: InteractionProps<'block-builder'>) {
+  const rtl = useTheme().direction === 'rtl';
   const id = useId(), answerId = `${id}-answer`, bankId = `${id}-bank`, sourceSlotId = `${id}-source-slot`;
   const itemDragId = (itemId: string) => `${id}-item-${itemId}`;
   const locked = Boolean(disabled || readOnly);
@@ -71,7 +72,7 @@ export function DragAndDropZone({ question, value, onChange, disabled, readOnly,
     if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.code)) return;
     event.preventDefault();
     const current = value.findIndex(itemId => itemDragId(itemId) === String(context.over?.id ?? context.active?.id));
-    const delta = event.code === 'ArrowLeft' || event.code === 'ArrowUp' ? -1 : 1;
+    const delta = event.code === 'ArrowUp' ? -1 : event.code === 'ArrowDown' ? 1 : event.code === 'ArrowLeft' ? rtl ? 1 : -1 : rtl ? -1 : 1;
     const target = value[Math.max(0, Math.min(value.length - 1, current + delta))];
     const rect = target ? context.droppableRects.get(itemDragId(target)) : undefined;
     return rect ? { x: rect.left, y: rect.top } : undefined;
@@ -102,8 +103,8 @@ export function DragAndDropZone({ question, value, onChange, disabled, readOnly,
     const lastId = value[value.length - 1] ? itemDragId(value[value.length - 1]) : undefined;
     const lastRect = lastId ? geometry.current.get(lastId) : undefined;
     const inAnswerBand = answerRect && point.y >= answerRect.top && point.y <= answerRect.bottom;
-    if (inAnswerBand && firstId && firstRect && point.x < firstRect.left) return [{ id: firstId }];
-    if (inAnswerBand && lastRect && point.x > lastRect.right) return [{ id: answerId }];
+    if (inAnswerBand && firstId && firstRect && (rtl ? point.x > firstRect.right : point.x < firstRect.left)) return [{ id: firstId }];
+    if (inAnswerBand && lastRect && (rtl ? point.x < lastRect.left : point.x > lastRect.right)) return [{ id: answerId }];
     if (!contains(answerId)) return [];
     const activeRect = geometry.current.get(String(args.active.id)) ?? sourceRect.current;
     if (draggingFromAnswer && activeRect && point.x >= activeRect.left && point.x <= activeRect.right && point.y >= activeRect.top && point.y <= activeRect.bottom) return [{ id: draggingId }];
@@ -114,7 +115,7 @@ export function DragAndDropZone({ question, value, onChange, disabled, readOnly,
     });
     const rowItems = answerItems.filter(item => point.y >= item.rect.top && point.y <= item.rect.bottom);
     if (!rowItems.length) return [{ id: answerId }];
-    const before = rowItems.find(item => point.x < (item.rect.left + item.rect.right) / 2);
+    const before = rowItems.find(item => rtl ? point.x > (item.rect.left + item.rect.right) / 2 : point.x < (item.rect.left + item.rect.right) / 2);
     return [{ id: before?.id ?? answerId }];
   };
   function destination(target: string, draggedId = activeId): Preview | null {
