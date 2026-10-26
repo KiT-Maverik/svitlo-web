@@ -1,0 +1,25 @@
+name: Remotion source typecheck (no video rendering)
+on:
+  pull_request:
+    paths:
+      - 'video/light-through-media/**'
+      - '.github/workflows/remotion-typecheck.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: video/light-through-media
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install standalone video dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check Remotion TypeScript source
+        run: npm run check
