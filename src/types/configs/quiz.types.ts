@@ -1,16 +1,17 @@
 import type { ContentQuestion } from '../content/questions';
-import type { NonEmptyResourceArray } from '../content/resources';
+import type { Resource_Config } from '../content/resources';
+import type { NonEmptyArray } from '../misc.types';
 
 type Question = ContentQuestion & { number: number; weight: number }
 
 export type QuizEndingScreenConfig =
   | {
       showDefaultContent: true;
-      resources?: NonEmptyResourceArray;
+      resources?: NonEmptyArray<Resource_Config>;
     }
   | {
       showDefaultContent: false;
-      resources: NonEmptyResourceArray;
+      resources: NonEmptyArray<Resource_Config>;
     };
 
 export interface QuizEndingScreensConfig {
@@ -45,7 +46,7 @@ export interface QuizConfig {
     showScore: boolean;
   };
   screen: {
-    welcome?: { resources: NonEmptyResourceArray };
+    welcome?: { resources: NonEmptyArray<Resource_Config> };
     ending?: QuizEndingScreensConfig;
   };
   sectionId: string;

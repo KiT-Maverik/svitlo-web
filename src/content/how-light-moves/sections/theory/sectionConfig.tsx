@@ -1,26 +1,26 @@
 import type { LessonSection_Config } from '@/types/configs/lesson.types';
-import type { MarkdownResource_AllLocales } from '@/types/content/resources';
+import type { MarkdownResource_AllLocales_Config } from '@/types/content/resources';
 import type { DefaultSupportedLanguage } from '@/types/languages';
 import { createLocalizedFileLocations } from '@/utils/createLocalizedFileLocations/createLocalizedFileLocations';
 import LightRayDiagram from '../../scenes/LightRayDiagram/LightRayDiagram';
 import LightPropagationSimulation from '../../scenes/LightPropagationSimulation/LightPropagationSimulation';
 import { getLightPropagationSimulationLocale } from '../../scenes/LightPropagationSimulation/lightPropagationSimulation.locales';
 
-const introduction: MarkdownResource_AllLocales = {
+const introduction: MarkdownResource_AllLocales_Config = {
   id: '6238256c-30f9-542d-962f-bcd37bcb6cfb',
   blockType: 'markdown',
   allLocales: true,
   fileLocation: createLocalizedFileLocations('/content/how-light-moves/sections/theory/markdown/01', 'md'),
 };
 
-const continuation: MarkdownResource_AllLocales = {
+const continuation: MarkdownResource_AllLocales_Config = {
   id: '9d56030c-d6fb-43b1-b4ce-e3eb95727320',
   blockType: 'markdown',
   allLocales: true,
   fileLocation: createLocalizedFileLocations('/content/how-light-moves/sections/theory/markdown/02', 'md'),
 };
 
-const conclusion: MarkdownResource_AllLocales = {
+const conclusion: MarkdownResource_AllLocales_Config = {
   id: '4e5667d0-42a2-4050-9730-458503c7c9aa',
   blockType: 'markdown',
   allLocales: true,
