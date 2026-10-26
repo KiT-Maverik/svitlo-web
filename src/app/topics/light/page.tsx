@@ -8,7 +8,7 @@ import { createTheorySectionConfig } from '@/content/how-light-moves/sections/th
 import { resolveLocale } from '@/i18n/resolveLocale';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
-import { createLightQuestions } from '@/content/how-light-moves/sections/quiz/createLightQuestions';
+import { toLightQuestionWidgets } from '@/components/lesson/adapters/toLightQuestionWidgets';
 import { lightLesson } from '@/content/how-light-moves/lightLesson';
 import { practiceSectionConfig } from '@/content/how-light-moves/sections/practice/sectionConfig';
 import { quizSectionConfig } from '@/content/how-light-moves/sections/quiz/sectionConfig';
@@ -39,14 +39,14 @@ async function LocalizedLightTopic({ searchParams }: Pick<PageProps<'/topics/lig
   };
   const lesson = buildLesson(config, locale);
   const quiz = lesson.sections.content[2] as Quiz;
-  const questions = createLightQuestions(quiz);
+  const questions = toLightQuestionWidgets(quiz);
   const sectionContent = lesson.sections.content.map((section, index) => 'sectionId' in section ? null : <Container key={section.id} maxWidth="md" sx={{ py: { xs: 3, md: 6 } }}>
     {index === 0 && <Box component="p" sx={{ color: 'text.secondary', letterSpacing: '.12em', fontSize: 12, fontWeight: 700 }}>ФІЗИКА · УРОК 01 · 4 ЕТАПИ</Box>}
     <LessonSectionContent content={section.content} locale={locale} />
   </Container>);
   return (
     <LocaleProvider locale={locale}>
-      <LessonProgressProvider lessonId={lesson.id} sectionIds={lesson.sections.content.map(section => 'sectionId' in section ? section.sectionId : section.id)} requireQuiz={lesson.requireQuiz}>
+      <LessonProgressProvider lessonId={lesson.id} sectionIds={lesson.sections.content.map(section => 'sectionId' in section ? section.sectionId : section.id)} quizSectionId={quiz.sectionId} requireQuiz={lesson.requireQuiz}>
       <LearningLayout topics={[{ id: 'light', title: lesson.title.value, href: '/topics/light' }]} skippableSteps={lesson.sections.content.map(section => lesson.sections.allowSkipping && ('sectionId' in section ? section.interaction.skippable : section.skippable))}>
         <LightLesson lesson={lesson} quiz={quiz} questions={questions} sectionContent={sectionContent} />
       </LearningLayout>

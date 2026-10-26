@@ -127,7 +127,7 @@ export default function LearningLayout({ children, topics, skippableSteps = [] }
           <Button variant="contained" disabled={!progress.ready || progress.step === 0} onClick={() => dispatch({ type: 'back' })}>{direction === 'rtl' ? '→' : '←'} {messages.actions.previous}</Button>
           <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>{messages.actions.next} {direction === 'rtl' ? '←' : '→'}</Button>
         </>,
-        right: <Button variant="outlined" disabled={!progress.ready || !skippableSteps[progress.step] || progress.step >= progress.lastStep} onClick={() => dispatch({ type: 'skip' })}>{messages.actions.skip}</Button>,
+        right: <Button variant="outlined" disabled={!progress.ready || !skippableSteps[progress.step] || (progress.step === progress.lastStep && (progress.testDone || Boolean(progress.quizSectionId && progress.skipped.includes(progress.quizSectionId))))} onClick={() => dispatch({ type: 'skip' })}>{messages.actions.skip}</Button>,
       }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />
     </Box>
   );

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState, SelectOneAnswerQuestion } from '@types';
-import { createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
+import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
 import { useLessonProgress } from './LessonProgress';
 import Celebration, { playCelebration } from './Celebration';
 import { QuestionAttempt } from '@/components/widgets/questions/helpers';
@@ -28,6 +28,9 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
   const quizStateRef = useRef<QuizState | null>(null);
   const loadPromise = useRef<Promise<QuizState> | null>(null);
   const saveQueue = useRef<Promise<unknown>>(Promise.resolve());
+  const finishing = useRef(false);
+  const [isFinishing, setIsFinishing] = useState(false);
+  const [saveError, setSaveError] = useState(false);
   const [sound, setSound] = useState(true);
 
   useEffect(() => {
@@ -87,19 +90,31 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
 
   function finishQuiz() {
     const current = quizStateRef.current;
-    if (!current || current.status !== 'in-progress') return;
+    if (!current || current.status !== 'in-progress' || finishing.current) return;
+    finishing.current = true;
+    setIsFinishing(true);
+    setSaveError(false);
     const earned = quiz.questionBank.reduce((total, question) => total + (current.answers[question.id]?.result?.earnedWeight ?? 0), 0);
     const maximum = quiz.questionBank.reduce((total, question) => total + question.weight, 0);
     const value = quiz.grading?.mode === 'points' ? earned : maximum ? earned / maximum * 100 : 0;
     const result: QuizResult = quiz.grading
       ? { status: 'graded', success: value >= quiz.grading.successThreshold, value }
       : { status: 'ungraded' };
-    const finished: QuizState = { ...current, status: 'finished', completedAt: new Date().toISOString(), result };
-    quizStateRef.current = finished;
-    setQuizState(finished);
-    saveQueue.current = saveQueue.current.then(() => saveQuizState(finished)).catch(() => undefined);
-    dispatch({ type: 'testDone' });
-    if (sound) void playCelebration();
+    void saveQueue.current.then(async () => {
+      await saveQuizState(current);
+      return completeQuiz(current.id, result);
+    }).then(saved => {
+      if (!saved || saved.status !== 'finished') throw new Error('Quiz completion was not saved');
+      quizStateRef.current = saved;
+      setQuizState(saved);
+      dispatch({ type: 'testDone' });
+      if (sound) void playCelebration();
+    }).catch(() => {
+      setSaveError(true);
+    }).finally(() => {
+      finishing.current = false;
+      setIsFinishing(false);
+    });
   }
 
   function nextQuestion(index: number) {
@@ -124,7 +139,10 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
     <LessonSteps steps={steps} currentStep={progress.step} unlocked={progress.unlocked} completedStep={progress.testDone ? progress.lastStep : undefined} showStepNumbers={lesson.sections.showIndexes} allowNavigation={lesson.sections.allowNavigation} onNavigate={step => dispatch({ type: 'visit', step })} />
     <div key={progress.step} className={styles.stage}>
       {progress.step < progress.lastStep && sectionContent[progress.step]}
-      {progress.step === 2 && (progress.testDone ? <Celebration score={score} total={questions.length} /> : <section className={styles.quiz} aria-label={aria.quiz}>
+      {progress.step === progress.lastStep && (progress.testDone ? <Celebration score={score} total={questions.length} /> : progress.skipped.includes(quiz.sectionId) ? <section className={styles.quiz} aria-label={aria.quiz}>
+        <p>{messages.lightLesson.skipped}</p>
+        <button className={styles.primary} onClick={() => dispatch({ type: 'resumeQuiz' })}>{messages.lightLesson.resumeQuiz}</button>
+      </section> : <section className={styles.quiz} aria-label={aria.quiz}>
         <QuestionProgress className={styles.questionProgress} statuses={questionStatuses} currentIndex={questionIndex} allowNavigation={quiz.interaction.allowQuestionNavigation} onNavigate={index => setQuestionIndex(index)} />
         {questions.map((question, index) => {
           const entry = answers[question.id];
@@ -144,10 +162,11 @@ export default function LightLesson({ lesson, quiz, sectionContent, questions }:
               }}
               onRetry={event => setAnswer(question.id, event.answer, 'draft')}
               onReset={() => setAnswer(question.id, null, 'draft')}
-              actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === questions.length ? messages.lightLesson.finish : `${messages.lightLesson.nextQuestion} ${rtl ? '←' : '→'}`}</button> : context.children }}
+              actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} disabled={isFinishing} onClick={() => nextQuestion(index)}>{index + 1 === questions.length ? messages.lightLesson.finish : `${messages.lightLesson.nextQuestion} ${rtl ? '←' : '→'}`}</button> : context.children }}
             />
           </div>;
         })}
+        {saveError && <p role="alert">{messages.lightLesson.saveError}</p>}
         <label className={styles.sound}><input type="checkbox" checked={sound} onChange={event => setSound(event.target.checked)} /> {messages.lightLesson.sound}</label>
       </section>)}
     </div>

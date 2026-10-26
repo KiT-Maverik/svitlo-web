@@ -1,7 +1,8 @@
 import type { SelectOneAnswerQuestion } from '@types';
 import type { Quiz } from '@types';
 
-export function createLightQuestions(quiz: Quiz): SelectOneAnswerQuestion[] {
+/** Adapts localized content instances to the current select-one widget contract. */
+export function toLightQuestionWidgets(quiz: Quiz): SelectOneAnswerQuestion[] {
   return quiz.questionBank.map((question) => {
     if (question.type !== 'select-one-answer') throw new Error(`Unsupported light lesson question: ${question.type}`);
     const correct = question.answers.correct;

@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
-import { createLightQuestions } from '../../src/content/how-light-moves/sections/quiz/createLightQuestions';
+import { toLightQuestionWidgets } from '../../src/components/lesson/adapters/toLightQuestionWidgets';
 import { quizSectionConfig } from '../../src/content/how-light-moves/sections/quiz/sectionConfig';
 import { buildQuiz } from '../../src/utils';
 
-const lightQuestions = createLightQuestions(buildQuiz(quizSectionConfig, 'uk-UA'));
+const lightQuestions = toLightQuestionWidgets(buildQuiz(quizSectionConfig, 'uk-UA'));
 
 test('home opens the light lesson and preserves the three-step learning flow', async ({ page }, testInfo) => {
   await page.goto('/');
@@ -31,6 +31,9 @@ test('home opens the light lesson and preserves the three-step learning flow', a
   await expect(page.getByRole('heading', { name: 'Вітаємо, ви завершили роботу з цим уроком!' })).toBeVisible();
   await expect(page.getByText('6 із 6', { exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('light-lesson-complete.png'), fullPage: true });
+  await page.reload();
+  await expect(page.getByRole('heading', { name: 'Вітаємо, ви завершили роботу з цим уроком!' })).toBeVisible();
+  await expect(page.getByText('6 із 6', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'До головної', exact: true }).click();
   await expect(page.getByRole('link', { name: 'Відкрити урок «Як рухається світло»', exact: true })).toBeVisible();
 });
@@ -65,4 +68,17 @@ test('an unchecked answer remains selected after reloading', async ({ page }) =>
   await page.reload();
   await expect(page.getByRole('region', { name: first.prompt }).getByRole('button', { name: option.label, exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByRole('button', { name: 'Перевірити', exact: true })).toBeEnabled();
+});
+
+test('a skipped quiz can be resumed after reloading', async ({ page }) => {
+  await page.goto('/topics/light');
+  const navigation = page.getByRole('navigation', { name: 'Нижня навігація навчання' });
+  await navigation.getByRole('button', { name: 'Далі →', exact: true }).click();
+  await navigation.getByRole('button', { name: 'Далі →', exact: true }).click();
+  await navigation.getByRole('button', { name: 'Skip', exact: true }).click();
+  await expect(page.getByText('Тест пропущено. Урок можна завершити після проходження тесту.')).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole('button', { name: 'Повернутися до тесту' })).toBeVisible();
+  await page.getByRole('button', { name: 'Повернутися до тесту' }).click();
+  await expect(page.getByRole('heading', { name: lightQuestions[0].prompt })).toBeVisible();
 });
