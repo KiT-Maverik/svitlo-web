@@ -1,62 +1,46 @@
 import type {
-  AnswerWithNumber_QuestionContent,
-  AnswerWithText_QuestionContent,
-  BasicAnswersBlock,
-  BuildAnswerWithBlocks_QuestionContent,
-  FillBlanksWithBlocks_QuestionContent,
-  FillBlanksWithText_QuestionContent,
-  FillBlanksSlot,
-  FlashcardConfig,
-  MatchBlocks_QuestionContent,
-  OrderSequence_QuestionContent,
-  SelectMultipleAnswers_Answers,
-  SelectMultipleAnswers_QuestionContent,
-  SelectOneAnswer_Answers,
-  SelectOneAnswer_QuestionContent,
-  Question_ContentBase,
-  QuestionType,
+  AnswerWithNumber_Question,
+  AnswerWithNumber_Question_Config,
+  AnswerWithText_Question,
+  AnswerWithText_Question_Config,
+  BuildAnswerWithBlocks_Question,
+  BuildAnswerWithBlocks_Question_Config,
+  FillBlanksWithBlocks_Question,
+  FillBlanksWithBlocks_Question_Config,
+  FillBlanksWithText_Question,
+  FillBlanksWithText_Question_Config,
+  MatchBlocks_Question,
+  MatchBlocks_Question_Config,
+  OrderSequence_Question,
+  OrderSequence_Question_Config,
+  SelectMultipleAnswers_Question,
+  SelectMultipleAnswers_Question_Config,
+  SelectOneAnswer_Question,
+  SelectOneAnswer_Question_Config,
 } from './question-base.types';
 
-export type {
-  Question_ContentBase,
-  QuestionType,
-} from './question-base.types';
-export type {
-  AnswerWithNumber_QuestionContent,
-  AnswerWithText_QuestionContent,
-  BasicAnswersBlock,
-  BuildAnswerWithBlocks_QuestionContent,
-  FillBlanksWithBlocks_QuestionContent,
-  FillBlanksWithText_QuestionContent,
-  FillBlanksSlot,
-  FlashcardConfig,
-  MatchBlocks_QuestionContent,
-  OrderSequence_QuestionContent,
-  SelectMultipleAnswers_Answers,
-  SelectMultipleAnswers_QuestionContent,
-  SelectOneAnswer_Answers,
-  SelectOneAnswer_QuestionContent,
-} from './question-base.types';
+export type * from './question-base.types';
 
-/** Union of all content question kinds. */
-export type ContentQuestion = {
-  [Type in QuestionType]: Type extends 'answer-with-number'
-    ? AnswerWithNumber_QuestionContent
-    : Type extends 'answer-with-text'
-      ? AnswerWithText_QuestionContent
-      : Type extends 'build-answer-with-blocks'
-        ? BuildAnswerWithBlocks_QuestionContent
-        : Type extends 'fill-blanks-with-blocks'
-          ? FillBlanksWithBlocks_QuestionContent
-          : Type extends 'fill-blanks-with-text'
-            ? FillBlanksWithText_QuestionContent
-            : Type extends 'match-blocks'
-              ? MatchBlocks_QuestionContent
-            : Type extends 'order-sequence'
-              ? OrderSequence_QuestionContent
-              : Type extends 'select-one-answer'
-                ? SelectOneAnswer_QuestionContent
-                : Type extends 'select-multiple-answers'
-                  ? SelectMultipleAnswers_QuestionContent
-      : Question_ContentBase & { type: Type }
-}[QuestionType];
+/** Question definition with localized resource configurations. */
+export type Question_Config =
+  | AnswerWithNumber_Question_Config
+  | AnswerWithText_Question_Config
+  | BuildAnswerWithBlocks_Question_Config
+  | FillBlanksWithBlocks_Question_Config
+  | FillBlanksWithText_Question_Config
+  | MatchBlocks_Question_Config
+  | OrderSequence_Question_Config
+  | SelectMultipleAnswers_Question_Config
+  | SelectOneAnswer_Question_Config;
+
+/** Question instance with resources resolved to one locale. */
+export type Question =
+  | AnswerWithNumber_Question
+  | AnswerWithText_Question
+  | BuildAnswerWithBlocks_Question
+  | FillBlanksWithBlocks_Question
+  | FillBlanksWithText_Question
+  | MatchBlocks_Question
+  | OrderSequence_Question
+  | SelectMultipleAnswers_Question
+  | SelectOneAnswer_Question;

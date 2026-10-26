@@ -1,8 +1,8 @@
-import type { ContentQuestion } from '../content/questions';
+import type { Question_Config } from '../content/questions';
 import type { Resource_Config } from '../content/resources';
 import type { NonEmptyArray } from '../misc.types';
 
-type Question = ContentQuestion & { number: number; weight: number }
+type QuizQuestion = Question_Config & { number: number; weight: number }
 
 export type QuizEndingScreenConfig =
   | {
@@ -38,8 +38,8 @@ export interface QuizConfig {
   };
   maxDuration?: number;
   questionBank: [
-    Question,
-    ...Question[],
+    QuizQuestion,
+    ...QuizQuestion[],
   ];
   results: {
     visibility: 'immediate' | 'after-review' | 'hidden';

@@ -158,3 +158,18 @@ export interface Resource_ConfigMap<Locales extends Locale = never> {
   video: VideoResource_Config<Locales>;
   image: ImageResource_Config<Locales>;
 }
+
+export type Resource =
+  | TextResource
+  | MarkdownResource
+  | AudioResource
+  | VideoResource
+  | ImageResource;
+
+export interface ResourceMap {
+  text: TextResource;
+  markdown: MarkdownResource;
+  audio: AudioResource;
+  video: VideoResource;
+  image: ImageResource;
+}
