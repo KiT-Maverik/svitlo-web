@@ -29,7 +29,7 @@ export default function Lesson({ config, locale, href }: LessonProps) {
 
   return <LocaleProvider locale={locale}>
     <SceneLocaleProvider locale={locale} scenes={lesson.sceneLocale ?? {}}>
-      <LessonProgressProvider lessonId={lesson.id} sectionIds={sectionIds} quizSectionId={quiz?.sectionId} requireQuiz={lesson.requireQuiz}>
+      <LessonProgressProvider key={lesson.id} lessonId={lesson.id} sectionIds={sectionIds} quizSectionId={quiz?.sectionId} requireQuiz={lesson.requireQuiz}>
         <LearningLayout
           topics={[{ id: lesson.id, title: lesson.title.value, href }]}
           skippableSteps={lesson.sections.content.map(section => lesson.sections.allowSkipping && ('sectionId' in section ? section.interaction.skippable : section.skippable))}
