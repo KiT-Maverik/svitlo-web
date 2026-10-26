@@ -1,5 +1,7 @@
-export const locale = {
-  mediumPractice: {
+import type { LanguageCode } from '@types';
+
+export const uk = {
+  ...{
     eyebrow: "ДОСЛІДЖУЙ · ПОРІВНЮЙ · ПОМІЧАЙ",
     title: "Одне світло. Різні середовища.",
     description: "Перемикай середовища й порівнюй час проходження однакової відстані. Точка рухається між джерелом та екраном у режимі повтору.",
@@ -15,21 +17,14 @@ export const locale = {
     speedUnit: 'км/с',
     sourceLink: "Джерело значень показника заломлення — OpenStax",
   },
-} as const;
+  media: { vacuum: 'Вакуум', air: 'Повітря', water: 'Вода' },
+};
 
-import { DEFAULT_SUPPORTED_LANGUAGES, type Locale } from '@types';
-
-/** The scene receives its strings from the lesson rather than importing a fixed language. */
-export type MediumPracticeLocale = {
-  [K in keyof typeof locale.mediumPractice]: string;
+export type MediumPractice_Locale = {
+  [K in Exclude<keyof typeof uk, 'media'>]: string;
 } & { media: { vacuum: string; air: string; water: string } };
 
-const uk = {
-  ...locale.mediumPractice,
-  media: { vacuum: 'Вакуум', air: 'Повітря', water: 'Вода' },
-} satisfies MediumPracticeLocale;
-
-const en = {
+export const en = {
   eyebrow: 'EXPLORE · COMPARE · OBSERVE',
   title: 'One light. Different media.',
   description: 'Switch between media and compare the time light takes to cover the same distance. The point travels between the source and the screen in a repeating animation.',
@@ -45,9 +40,6 @@ const en = {
   speedUnit: 'km/s',
   sourceLink: 'Refractive-index values from OpenStax',
   media: { vacuum: 'Vacuum', air: 'Air', water: 'Water' },
-} satisfies MediumPracticeLocale;
+} satisfies MediumPractice_Locale;
 
-/** English is the explicit fallback until a scene translation is supplied. */
-export const mediumPracticeLocales = Object.fromEntries(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ locale: code }) => [code, code === 'uk-UA' ? uk : en]),
-) as Record<Locale, MediumPracticeLocale>;
+export const locales = { en, uk } satisfies Partial<Record<LanguageCode, MediumPractice_Locale>>;
