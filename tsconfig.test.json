@@ -21,7 +21,8 @@
     "tests/reporting.test.ts",
     "src/utils/**/*.spec.ts",
     "src/db/utils/**/*.spec.ts",
-    "tests/db-controllers.integration.test.ts"
+    "tests/db-controllers.integration.test.ts",
+    "src/db/controllers/**/*.spec.ts"
   ],
   "exclude": [
     "node_modules",

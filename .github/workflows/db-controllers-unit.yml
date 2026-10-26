@@ -1,0 +1,29 @@
+name: DB controller unit verification
+
+on:
+  push:
+    branches:
+      - test/db-controllers-unit
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: DB controller unit tests and coverage
+        run: npm run test:db-controllers-unit:coverage
+      - name: Existing and controller unit tests
+        run: npm test
+      - name: TypeScript
+        run: npm run typecheck
+      - name: ESLint
+        run: npm run lint
+      - name: Production build
+        run: npm run build
