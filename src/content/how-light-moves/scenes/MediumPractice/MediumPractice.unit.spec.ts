@@ -1,15 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import { screen } from '@testing-library/react';
 import { MediumPractice_fx } from './MediumPractice.unit.fx';
-import { locale } from './MediumPractice.locale';
-import { media } from '@/content/how-light-moves/sections/practice/mediumData';
+import { uk } from './MediumPractice.locale';
+import { media } from './MediumPractice.constants';
 
 describe('Components', () => {
   describe('MediumPractice', () => {
     it('should render the localized practice heading and source link', () => {
       MediumPractice_fx.render();
       expect(MediumPractice_fx.selectors.title()).toBeVisible();
-      expect(screen.getByRole('link', { name: locale.mediumPractice.sourceLink })).toHaveAttribute('href', expect.stringContaining('openstax.org'));
+      expect(screen.getByRole('link', { name: uk.sourceLink })).toHaveAttribute('href', expect.stringContaining('openstax.org'));
     });
 
     it('should use the lesson locale context for English labels and numeric values', () => {
@@ -48,8 +48,8 @@ describe('Components', () => {
 
     it('should preserve the text explaining the limits of the simulation', () => {
       MediumPractice_fx.render();
-      expect(screen.getByText(locale.mediumPractice.quote)).toBeVisible();
-      expect(screen.getByText(locale.mediumPractice.caption)).toBeVisible();
+      expect(screen.getByText(uk.quote)).toBeVisible();
+      expect(screen.getByText(uk.caption)).toBeVisible();
     });
   });
 });

@@ -3,6 +3,7 @@ import { isValidElement, type ReactElement } from 'react';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
 import { LearningLayout } from '@layout';
 import { lightLesson } from '@/content/how-light-moves/lightLesson';
+import { buildLesson } from '@/utils';
 import type { Lesson_Config } from '@types';
 import Lesson from './Lesson';
 import LessonClient from './LessonClient/LessonClient';
@@ -27,8 +28,8 @@ describe('Lesson page assembly', () => {
 
     const scenes = onlyChild(root);
     expect(scenes.type).toBe(SceneLocaleProvider);
-    expect(props<{ scenes: typeof lightLesson.sceneLocales['en-US'] }>(scenes).scenes)
-      .toEqual(lightLesson.sceneLocales['en-US']);
+    expect(props<{ scenes: object }>(scenes).scenes)
+      .toEqual(buildLesson(lightLesson, 'en-US').sceneLocale);
 
     const progress = onlyChild(scenes);
     expect(progress.type).toBe(LessonProgressProvider);
