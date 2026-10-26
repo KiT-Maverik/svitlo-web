@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { afterEach, describe, it, mock } from 'node:test';
 import { deleteQuizState } from './deleteQuizState.controller';
-import { quizNew, quizInProgress, stubRunStateRequest } from '../../testUtils/controllerTestDoubles';
+import { stubRunStateRequest } from '../../testUtils/controllerTestDoubles';
 
 describe('DB', () => {
   describe('Controllers', () => {
