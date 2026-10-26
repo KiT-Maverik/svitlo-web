@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit && tsc -p tsconfig.types.json",
-    "test": "tsc -p tsconfig.test.json && node --test .test-build/tests/*.test.js",
+    "test": "tsc -p tsconfig.test.json && node --test .test-build/tests/*.test.js .test-build/src/utils/*/*.spec.js .test-build/src/utils/*/*/*.spec.js",
     "test:e2e": "playwright test"
   },
   "dependencies": {
