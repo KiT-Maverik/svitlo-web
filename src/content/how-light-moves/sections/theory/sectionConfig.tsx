@@ -2,10 +2,11 @@ import type { LessonSection_Config } from '@types';
 import type { MarkdownResource_AllLocales_Config } from '@types';
 import type { DefaultSupportedLanguage } from '@types';
 import { createLocalizedFileLocations, createTextResource } from '@/utils';
+import { KnowledgeCheckpoint } from '@/components/widgets';
 import LightRayDiagram from '../../scenes/LightRayDiagram/LightRayDiagram';
 import LightPropagationSimulation from '../../scenes/LightPropagationSimulation/LightPropagationSimulation';
 import { getLightPropagationSimulationLocale } from '../../scenes/LightPropagationSimulation/lightPropagationSimulation.locales';
-import ExplainLight from '../../scenes/ExplainLight/ExplainLight';
+import { theoryKnowledgeCheckpointLocales } from './knowledgeCheckpoint.locale';
 
 const introduction: MarkdownResource_AllLocales_Config = {
   id: '6238256c-30f9-542d-962f-bcd37bcb6cfb',
@@ -66,7 +67,16 @@ export function createTheorySectionConfig(locale: DefaultSupportedLanguage['loca
         messages={getLightPropagationSimulationLocale(locale)}
       />,
       conclusion,
-      <ExplainLight key="explain-light" locale={locale} />,
+      <KnowledgeCheckpoint
+        key="knowledge-checkpoint"
+        locale={locale}
+        title={theoryKnowledgeCheckpointLocales[locale].title}
+        items={theoryKnowledgeCheckpointLocales[locale].items.map(({ question, answer }, index) => ({
+          id: `light-explanation-${index + 1}`,
+          question,
+          answer: { id: `light-explanation-answer-${index + 1}`, blockType: 'text' as const, locale, value: answer },
+        }))}
+      />,
     ],
   };
 }

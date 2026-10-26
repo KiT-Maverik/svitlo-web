@@ -1,11 +1,13 @@
 import type { DefaultSupportedLanguage } from '@types';
 
-export interface ExplainLightLocale {
+export interface TheoryKnowledgeCheckpointLocale {
+  title: string;
   items: readonly { question: string; answer: string }[];
 }
 
-export const locales = {
+export const theoryKnowledgeCheckpointLocales = {
   'en-US': {
+    title: 'Try to explain',
     items: [
       { question: "Where is the light source in the scene?", answer: "The source is on the left." },
       { question: "Does the path change when you change the animation speed?", answer: "The control changes only the animation speed; the path stays straight." },
@@ -13,6 +15,7 @@ export const locales = {
     ],
   },
   'zh-Hans-CN': {
+    title: '试着解释',
     items: [
       { question: "场景中的光源在哪里？", answer: "光源在左侧。" },
       { question: "改变动画速度时，路径会改变吗？", answer: "调节器只改变动画速度，传播路径仍是直线。" },
@@ -20,6 +23,7 @@ export const locales = {
     ],
   },
   'hi-IN': {
+    title: 'समझाने की कोशिश करें',
     items: [
       { question: "दृश्य में प्रकाश का स्रोत कहाँ है?", answer: "स्रोत बाईं ओर है।" },
       { question: "ऐनिमेशन की गति बदलने पर क्या उसका रास्ता बदलता है?", answer: "नियंत्रण केवल ऐनिमेशन की गति बदलता है; रास्ता सीधा रहता है।" },
@@ -27,6 +31,7 @@ export const locales = {
     ],
   },
   'es-ES': {
+    title: 'Intenta explicarlo',
     items: [
       { question: "¿Dónde está la fuente de luz en la escena?", answer: "La fuente está a la izquierda." },
       { question: "¿Cambia la trayectoria al modificar la velocidad de la animación?", answer: "El control solo cambia la velocidad de la animación; la trayectoria sigue siendo recta." },
@@ -34,6 +39,7 @@ export const locales = {
     ],
   },
   'ar-SA': {
+    title: 'حاول أن تشرح',
     items: [
       { question: "أين يقع مصدر الضوء في المشهد؟", answer: "المصدر على اليمين." },
       { question: "هل يتغير المسار عندما تغيّر سرعة الحركة؟", answer: "يغيّر عنصر التحكم سرعة العرض فقط؛ ويبقى المسار مستقيمًا." },
@@ -41,6 +47,7 @@ export const locales = {
     ],
   },
   'fr-FR': {
+    title: "Essaie d'expliquer",
     items: [
       { question: "Où se trouve la source de lumière dans la scène ?", answer: "La source est à gauche." },
       { question: "La trajectoire change-t-elle quand tu modifies la vitesse de l'animation ?", answer: "Le réglage change seulement la vitesse de l'animation ; la trajectoire reste droite." },
@@ -48,6 +55,7 @@ export const locales = {
     ],
   },
   'bn-BD': {
+    title: 'ব্যাখ্যা করার চেষ্টা করো',
     items: [
       { question: "দৃশ্যে আলোর উৎস কোথায়?", answer: "উৎসটি বাঁ দিকে।" },
       { question: "অ্যানিমেশনের গতি বদলালে কি পথ বদলে যায়?", answer: "নিয়ন্ত্রণটি শুধু অ্যানিমেশনের গতি বদলায়; পথ সোজাই থাকে।" },
@@ -55,6 +63,7 @@ export const locales = {
     ],
   },
   'pt-BR': {
+    title: 'Tente explicar',
     items: [
       { question: "Onde está a fonte de luz na cena?", answer: "A fonte está à esquerda." },
       { question: "A trajetória muda quando você altera a velocidade da animação?", answer: "O controle altera apenas a velocidade da animação; a trajetória continua reta." },
@@ -62,6 +71,7 @@ export const locales = {
     ],
   },
   'ur-PK': {
+    title: 'وضاحت کرنے کی کوشش کریں',
     items: [
       { question: "منظر میں روشنی کا منبع کہاں ہے؟", answer: "منبع دائیں طرف ہے۔" },
       { question: "حرکت کی رفتار بدلنے سے کیا راستہ بدلتا ہے؟", answer: "کنٹرول صرف حرکت کی رفتار بدلتا ہے؛ راستہ سیدھا رہتا ہے۔" },
@@ -69,6 +79,7 @@ export const locales = {
     ],
   },
   'id-ID': {
+    title: 'Coba jelaskan',
     items: [
       { question: "Di mana letak sumber cahaya pada adegan?", answer: "Sumber ada di sebelah kiri." },
       { question: "Apakah lintasan berubah ketika kecepatan animasi diubah?", answer: "Pengatur hanya mengubah kecepatan animasi; lintasannya tetap lurus." },
@@ -76,6 +87,7 @@ export const locales = {
     ],
   },
   'de-DE': {
+    title: 'Versuche es zu erklären',
     items: [
       { question: "Wo befindet sich die Lichtquelle in der Szene?", answer: "Die Quelle ist links." },
       { question: "Ändert sich die Bahn, wenn du die Animationsgeschwindigkeit änderst?", answer: "Der Regler ändert nur die Animationsgeschwindigkeit; die Bahn bleibt gerade." },
@@ -83,6 +95,7 @@ export const locales = {
     ],
   },
   'ja-JP': {
+    title: '説明してみよう',
     items: [
       { question: "場面の中で光源はどこにありますか？", answer: "光源は左側にあります。" },
       { question: "アニメーションの速さを変えると、進む道筋も変わりますか？", answer: "操作で変わるのはアニメーションの速さだけで、道筋は直線のままです。" },
@@ -90,6 +103,7 @@ export const locales = {
     ],
   },
   'ko-KR': {
+    title: '설명해 보세요',
     items: [
       { question: "장면에서 광원은 어디에 있나요?", answer: "광원은 왼쪽에 있습니다." },
       { question: "애니메이션 속도를 바꾸면 이동 경로도 바뀌나요?", answer: "조절기는 애니메이션 속도만 바꾸며 경로는 여전히 직선입니다." },
@@ -97,6 +111,7 @@ export const locales = {
     ],
   },
   'tr-TR': {
+    title: 'Açıklamayı dene',
     items: [
       { question: "Sahnedeki ışık kaynağı nerede?", answer: "Kaynak soldadır." },
       { question: "Animasyon hızını değiştirdiğinde izlenen yol değişiyor mu?", answer: "Denetim yalnızca animasyonun hızını değiştirir; yol düz kalır." },
@@ -104,6 +119,7 @@ export const locales = {
     ],
   },
   'vi-VN': {
+    title: 'Thử giải thích',
     items: [
       { question: "Nguồn sáng nằm ở đâu trong cảnh?", answer: "Nguồn sáng ở bên trái." },
       { question: "Quỹ đạo có thay đổi khi bạn đổi tốc độ hoạt ảnh không?", answer: "Nút điều khiển chỉ đổi tốc độ hoạt ảnh; quỹ đạo vẫn thẳng." },
@@ -111,6 +127,7 @@ export const locales = {
     ],
   },
   'ta-IN': {
+    title: 'விளக்க முயலுங்கள்',
     items: [
       { question: "காட்சியில் ஒளி மூலம் எங்கு உள்ளது?", answer: "மூலம் இடப்புறத்தில் உள்ளது." },
       { question: "இயக்கத்தின் வேகத்தை மாற்றினால் பாதை மாறுமா?", answer: "கட்டுப்பாடு இயக்கத்தின் வேகத்தை மட்டுமே மாற்றுகிறது; பாதை நேராகவே இருக்கும்." },
@@ -118,6 +135,7 @@ export const locales = {
     ],
   },
   'te-IN': {
+    title: 'వివరించడానికి ప్రయత్నించండి',
     items: [
       { question: "దృశ్యంలో కాంతి మూలం ఎక్కడ ఉంది?", answer: "మూలం ఎడమ వైపున ఉంది." },
       { question: "యానిమేషన్ వేగాన్ని మార్చితే మార్గం కూడా మారుతుందా?", answer: "నియంత్రణ యానిమేషన్ వేగాన్ని మాత్రమే మారుస్తుంది; మార్గం నేరుగానే ఉంటుంది." },
@@ -125,6 +143,7 @@ export const locales = {
     ],
   },
   'mr-IN': {
+    title: 'समजावून सांगण्याचा प्रयत्न करा',
     items: [
       { question: "दृश्यात प्रकाशाचा स्रोत कुठे आहे?", answer: "स्रोत डावीकडे आहे." },
       { question: "अॅनिमेशनचा वेग बदलल्यावर मार्ग बदलतो का?", answer: "नियंत्रण फक्त अॅनिमेशनचा वेग बदलते; मार्ग सरळच राहतो." },
@@ -132,6 +151,7 @@ export const locales = {
     ],
   },
   'ms-MY': {
+    title: 'Cuba jelaskan',
     items: [
       { question: "Di manakah sumber cahaya dalam adegan ini?", answer: "Sumber berada di sebelah kiri." },
       { question: "Adakah laluan berubah apabila kelajuan animasi diubah?", answer: "Kawalan hanya mengubah kelajuan animasi; laluannya kekal lurus." },
@@ -139,6 +159,7 @@ export const locales = {
     ],
   },
   'he-IL': {
+    title: 'נסו להסביר',
     items: [
       { question: "היכן נמצא מקור האור בסצנה?", answer: "המקור נמצא מימין." },
       { question: "האם המסלול משתנה כשמשנים את מהירות ההנפשה?", answer: "הבקרה משנה רק את מהירות ההנפשה; המסלול נשאר ישר." },
@@ -146,6 +167,7 @@ export const locales = {
     ],
   },
   'pl-PL': {
+    title: 'Spróbuj wyjaśnić',
     items: [
       { question: "Gdzie w scenie znajduje się źródło światła?", answer: "Źródło jest po lewej." },
       { question: "Czy tor zmienia się, gdy zmieniasz prędkość animacji?", answer: "Regulacja zmienia tylko prędkość animacji; tor pozostaje prosty." },
@@ -153,12 +175,13 @@ export const locales = {
     ],
   },
   'uk-UA': {
+    title: 'Спробуй пояснити',
     items: [
       { question: "Де в сцені розташоване джерело світла?", answer: "Джерело розташоване ліворуч." },
       { question: "Чи змінюється траєкторія, коли ти змінюєш швидкість анімації?", answer: "Регулятор змінює лише швидкість показу анімації: траєкторія залишається прямою." },
       { question: "Що станеться, якщо поставити непрозорий предмет між джерелом та екраном?", answer: "Непрозорий предмет перекриє частину світла, і за ним утвориться тінь." },
     ],
   },
-} satisfies Record<DefaultSupportedLanguage['locale'], ExplainLightLocale>;
+} satisfies Record<DefaultSupportedLanguage['locale'], TheoryKnowledgeCheckpointLocale>;
 
-export type ExplainLightLocaleCode = keyof typeof locales;
+export type TheoryKnowledgeCheckpointLocaleCode = keyof typeof theoryKnowledgeCheckpointLocales;
