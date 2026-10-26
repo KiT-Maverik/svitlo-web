@@ -1,6 +1,5 @@
 import { z } from 'zod';
 import type { QuizState } from '@types';
-import { createStateStore } from './indexedDatabase';
 
 const id = z.string().min(1);
 const stringArray = z.array(id);
@@ -35,19 +34,8 @@ const resultSchema = z.discriminatedUnion('status', [
 const base = { id, quizId: id };
 const progress = { ...base, startedAt: z.string(), answers: z.record(id, questionStateSchema) };
 
-const quizStateSchema: z.ZodType<QuizState> = z.discriminatedUnion('status', [
+export const quizStateSchema: z.ZodType<QuizState> = z.discriminatedUnion('status', [
   z.strictObject({ ...base, status: z.literal('new') }),
   z.strictObject({ ...progress, status: z.literal('in-progress') }),
   z.strictObject({ ...progress, status: z.literal('finished'), completedAt: z.string(), result: resultSchema }),
 ]);
-
-const store = createStateStore('quizStates', 'quizId', value => quizStateSchema.parse(value));
-
-export const quizStateController = {
-  ...store,
-  async create(quizId: string): Promise<QuizState> {
-    const state: QuizState = { id: crypto.randomUUID(), quizId, status: 'new' };
-    await store.save(state);
-    return state;
-  },
-};
