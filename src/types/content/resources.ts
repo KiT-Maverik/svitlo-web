@@ -1,7 +1,7 @@
 import type { Locale } from '../languages';
 
 /** Supported content resource kinds. */
-export type ContentType = 'text' | 'markdown' | 'html' | 'code' | 'audio' | 'video' | 'image';
+export type ContentType = 'text' | 'markdown' | 'code' | 'audio' | 'video'  | 'youtube' | 'image';
 
 export interface ResourceBase<T extends ContentType> {
   id: string;
@@ -44,30 +44,6 @@ export interface MarkdownResource_ChosenLocales<Locales extends Locale = never> 
 }
 
 export type MarkdownResource<Locales extends Locale = never> = MarkdownResource_AllLocales | MarkdownResource_ChosenLocales<Locales>;
-
-export interface HtmlResourceParam_AllLocales {
-  selector: string;
-  values: AllLocales;
-}
-
-export interface HtmlResourceParam_ChosenLocales<Locales extends Locale = never> {
-  selector: string;
-  values: ChosenLocales<Locales>;
-}
-
-export interface HtmlResource_AllLocales extends ResourceBase<'html'> {
-  allLocales: true;
-  fileLocation: AllLocales;
-  htmlParams: HtmlResourceParam_AllLocales[];
-}
-
-export interface HtmlResource_ChosenLocales<Locales extends Locale = never> extends ResourceBase<'html'> {
-  allLocales: false;
-  fileLocation: ChosenLocales<Locales>;
-  htmlParams: HtmlResourceParam_ChosenLocales<Locales>[];
-}
-
-export type HtmlResource<Locales extends Locale = never> = HtmlResource_AllLocales | HtmlResource_ChosenLocales<Locales>;
 
 export interface CodeResourceParam_AllLocales {
   selector: string;
@@ -140,7 +116,6 @@ export type ImageResource<Locales extends Locale = never> = ImageResource_AllLoc
 export type Resource<Locales extends Locale = never> =
   | TextResource<Locales>
   | MarkdownResource<Locales>
-  | HtmlResource<Locales>
   | CodeResource<Locales>
   | AudioResource<Locales>
   | VideoResource<Locales>
@@ -151,7 +126,6 @@ export type NonEmptyResourceArray<T extends Resource = Resource> = [T, ...T[]];
 export interface ResourceMap<Locales extends Locale = never> {
   text: TextResource<Locales>;
   markdown: MarkdownResource<Locales>;
-  html: HtmlResource<Locales>;
   code: CodeResource<Locales>;
   audio: AudioResource<Locales>;
   video: VideoResource<Locales>;
