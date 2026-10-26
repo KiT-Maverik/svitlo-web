@@ -132,6 +132,32 @@ describe('Utils', () => {
         });
       });
 
+      describe('Server-side scene localization', () => {
+        it('should select only the requested language for each scene', () => {
+          const config = lesson();
+          config.sceneLocales = {
+            ray: { en: { title: 'Ray' }, uk: { title: 'Промінь' } },
+            practice: { en: { title: 'Practice' }, uk: { title: 'Практика' } },
+          };
+          assert.deepEqual(buildLesson(config, 'uk-UA').sceneLocale, {
+            ray: { title: 'Промінь' },
+            practice: { title: 'Практика' },
+          });
+        });
+
+        it('should fall back to English for scenes missing a requested translation', () => {
+          const config = lesson();
+          config.sceneLocales = { practice: { en: { title: 'Practice' }, uk: { title: 'Практика' } } };
+          assert.deepEqual(buildLesson(config, 'pl-PL').sceneLocale, { practice: { title: 'Practice' } });
+        });
+
+        it('should reject scenes without either the selected language or English fallback', () => {
+          const config = lesson();
+          config.sceneLocales = { practice: { uk: { title: 'Практика' } } };
+          assert.throws(() => buildLesson(config, 'de-DE'), /no translation/);
+        });
+      });
+
       describe('Input integrity', () => {
         it('should not mutate lesson content, nested resources, or quiz configuration', () => {
           const config = lesson();

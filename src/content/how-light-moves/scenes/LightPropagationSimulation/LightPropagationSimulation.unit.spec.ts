@@ -12,14 +12,14 @@ describe('Widgets', () => {
 
     it('should render the localized simulation title and accessible track', () => {
       LightPropagationSimulation_fx.render();
-      const messages = locales['uk-UA'];
+      const messages = locales.uk;
       expect(LightPropagationSimulation_fx.selectors.scene(messages)).toBeVisible();
       expect(LightPropagationSimulation_fx.selectors.track(messages)).toBeVisible();
     });
 
     it('should toggle playback label and pressed state when activated', async () => {
       LightPropagationSimulation_fx.render();
-      const messages = locales['uk-UA'];
+      const messages = locales.uk;
       const pause = LightPropagationSimulation_fx.selectors.playback(messages.controls.pause);
       expect(pause).toHaveAttribute('aria-pressed', 'false');
       await LightPropagationSimulation_fx.actions.togglePlayback(messages.controls.pause);
@@ -29,7 +29,7 @@ describe('Widgets', () => {
     it('should start paused when reduced motion is enabled', () => {
       LightPropagationSimulation_mx.installMatchMedia(true);
       LightPropagationSimulation_fx.render();
-      expect(LightPropagationSimulation_fx.selectors.playback(locales['uk-UA'].controls.play)).toBeVisible();
+      expect(LightPropagationSimulation_fx.selectors.playback(locales.uk.controls.play)).toBeVisible();
     });
 
     it('should increase simulation speed with keyboard interaction', async () => {
@@ -41,7 +41,7 @@ describe('Widgets', () => {
     });
 
     it('should render the supplied English messages without translating them again', () => {
-      const messages = locales['en-US'];
+      const messages = locales.en;
       LightPropagationSimulation_fx.render({ locale: 'en-US' });
       expect(LightPropagationSimulation_fx.selectors.scene(messages)).toHaveAttribute('lang', 'en-US');
       expect(LightPropagationSimulation_fx.selectors.playback(messages.controls.pause)).toBeVisible();
@@ -51,7 +51,7 @@ describe('Widgets', () => {
       const match = LightPropagationSimulation_mx.installMatchMedia(false);
       LightPropagationSimulation_fx.render();
       await act(async () => match.setReducedMotion(true));
-      expect(LightPropagationSimulation_fx.selectors.playback(locales['uk-UA'].controls.play)).toBeVisible();
+      expect(LightPropagationSimulation_fx.selectors.playback(locales.uk.controls.play)).toBeVisible();
     });
   });
 });

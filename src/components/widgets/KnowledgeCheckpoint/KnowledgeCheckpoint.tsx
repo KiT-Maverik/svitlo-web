@@ -11,8 +11,8 @@ import LightbulbOutlineRounded from '@mui/icons-material/LightbulbOutlineRounded
 import RadioButtonUncheckedRounded from '@mui/icons-material/RadioButtonUncheckedRounded';
 import CheckCircleRounded from '@mui/icons-material/CheckCircleRounded';
 import type { Resource } from '@types';
-import { getLocaleDirection } from '@types';
-import { knowledgeCheckpointLocale } from './KnowledgeCheckpoint.locale';
+import { getLanguageCode, getLocaleDirection, type LanguageCode } from '@types';
+import { locales, type KnowledgeCheckpoint_Locale } from './KnowledgeCheckpoint.locale';
 import type { KnowledgeCheckpointProps, KnowledgeCheckpointProgress } from './KnowledgeCheckpoint.types';
 import styles from './KnowledgeCheckpoint.module.css';
 
@@ -48,7 +48,7 @@ export default function KnowledgeCheckpoint({
   const [expanded, setExpanded] = useState<string | null>(null);
   const [internalCheckedIds, setInternalCheckedIds] = useState<string[]>(() => [...defaultCheckedIds]);
   const checked = new Set(checkedIds ?? internalCheckedIds);
-  const messages = knowledgeCheckpointLocale[locale];
+  const messages = (locales as Partial<Record<LanguageCode, KnowledgeCheckpoint_Locale>>)[getLanguageCode(locale)] ?? locales.en;
   const direction = getLocaleDirection(locale);
   const accordionHeading = `h${Math.min(headingLevel + 1, 6)}` as 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 

@@ -66,6 +66,11 @@ export type SupportedLanguage = DefaultSupportedLanguage | AdditionalLanguage;
 export type Locale = SupportedLanguage['locale'];
 export type LanguageCode = SupportedLanguage['language'];
 
+/** Convert a validated BCP 47 locale tag to the language key used by content dictionaries. */
+export function getLanguageCode(locale: Locale): LanguageCode {
+  return (DEFAULT_SUPPORTED_LANGUAGES.find(entry => entry.locale === locale)?.language ?? locale.split('-')[0]) as LanguageCode;
+}
+
 /** English is used whenever a requested language is unavailable. */
 export const FALLBACK_LANGUAGE = 'en' as const;
 export const FALLBACK_LOCALE = 'en-US' as const;

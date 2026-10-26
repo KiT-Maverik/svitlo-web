@@ -1,6 +1,6 @@
 import type { DefaultSupportedLanguage } from '@types';
 
-export const ukUA = {
+const uk = {
   scene: {
     title: "Простеж шлях світла",
     description: "Від джерела — прямою до екрана.",
@@ -23,9 +23,9 @@ export const ukUA = {
   }
 };
 
-export type LightPropagationSimulationLocale = typeof ukUA;
+export type LightPropagationSimulation_Locale = typeof uk;
 
-export const enUS = {
+const en = {
   scene: {
     title: "Trace the path of light",
     description: "From the source straight to the screen.",
@@ -46,9 +46,9 @@ export const enUS = {
   hints: {
     scale: "Simplified model: the speed of light is not shown to scale."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const zhHansCN = {
+const zh = {
   scene: {
     title: "追踪光的路径",
     description: "从光源沿直线传播到屏幕。",
@@ -69,9 +69,9 @@ export const zhHansCN = {
   hints: {
     scale: "简化模型：光速未按比例呈现。"
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const hiIN = {
+const hi = {
   scene: {
     title: "प्रकाश के पथ का अनुसरण करें",
     description: "स्रोत से पर्दे तक सीधी रेखा में।",
@@ -92,9 +92,9 @@ export const hiIN = {
   hints: {
     scale: "सरलीकृत मॉडल: प्रकाश की गति को वास्तविक अनुपात में नहीं दिखाया गया है।"
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const esES = {
+const es = {
   scene: {
     title: "Sigue el recorrido de la luz",
     description: "De la fuente a la pantalla en línea recta.",
@@ -115,9 +115,9 @@ export const esES = {
   hints: {
     scale: "Modelo simplificado: la velocidad de la luz no se representa a escala."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const arSA = {
+const ar = {
   scene: {
     title: "تتبّع مسار الضوء",
     description: "من المصدر إلى الشاشة في خط مستقيم.",
@@ -138,9 +138,9 @@ export const arSA = {
   hints: {
     scale: "نموذج مبسّط: سرعة الضوء غير ممثّلة بمقياس واقعي."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const frFR = {
+const fr = {
   scene: {
     title: "Suis le trajet de la lumière",
     description: "De la source à l’écran en ligne droite.",
@@ -161,9 +161,9 @@ export const frFR = {
   hints: {
     scale: "Modèle simplifié : la vitesse de la lumière n’est pas représentée à l’échelle."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const bnBD = {
+const bn = {
   scene: {
     title: "আলোর পথ অনুসরণ করো",
     description: "উৎস থেকে সরলরেখায় পর্দা পর্যন্ত।",
@@ -184,9 +184,9 @@ export const bnBD = {
   hints: {
     scale: "সরলীকৃত মডেল: আলোর গতি প্রকৃত অনুপাতে দেখানো হয়নি।"
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const ptBR = {
+const pt = {
   scene: {
     title: "Acompanhe o caminho da luz",
     description: "Da fonte até a tela em linha reta.",
@@ -207,9 +207,9 @@ export const ptBR = {
   hints: {
     scale: "Modelo simplificado: a velocidade da luz não é representada em escala."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const urPK = {
+const ur = {
   scene: {
     title: "روشنی کے راستے کا مشاہدہ کریں",
     description: "منبع سے پردے تک سیدھی لکیر میں۔",
@@ -230,9 +230,9 @@ export const urPK = {
   hints: {
     scale: "سادہ ماڈل: روشنی کی رفتار اصل تناسب کے مطابق نہیں دکھائی گئی۔"
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const idID = {
+const id = {
   scene: {
     title: "Telusuri lintasan cahaya",
     description: "Dari sumber menuju layar dalam garis lurus.",
@@ -253,9 +253,9 @@ export const idID = {
   hints: {
     scale: "Model sederhana: kecepatan cahaya tidak ditampilkan sesuai skala."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const deDE = {
+const de = {
   scene: {
     title: "Verfolge den Weg des Lichts",
     description: "Von der Quelle geradlinig zum Schirm.",
@@ -276,9 +276,9 @@ export const deDE = {
   hints: {
     scale: "Vereinfachtes Modell: Die Lichtgeschwindigkeit wird nicht maßstabsgetreu dargestellt."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const jaJP = {
+const ja = {
   scene: {
     title: "光の進む道をたどろう",
     description: "光源からスクリーンまで一直線に。",
@@ -299,9 +299,9 @@ export const jaJP = {
   hints: {
     scale: "簡略化したモデルです。光の速度は実際の縮尺では表現されていません。"
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const koKR = {
+const ko = {
   scene: {
     title: "빛의 경로를 따라가 보세요",
     description: "광원에서 스크린까지 직선으로.",
@@ -322,9 +322,9 @@ export const koKR = {
   hints: {
     scale: "단순화한 모형입니다. 빛의 속도는 실제 비율로 표현되지 않았습니다."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const trTR = {
+const tr = {
   scene: {
     title: "Işığın yolunu takip et",
     description: "Kaynaktan ekrana düz bir çizgi boyunca.",
@@ -345,9 +345,9 @@ export const trTR = {
   hints: {
     scale: "Basitleştirilmiş model: ışık hızı ölçekli olarak gösterilmemiştir."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const viVN = {
+const vi = {
   scene: {
     title: "Theo dõi đường đi của ánh sáng",
     description: "Từ nguồn sáng đến màn theo đường thẳng.",
@@ -368,9 +368,9 @@ export const viVN = {
   hints: {
     scale: "Mô hình đơn giản hóa: tốc độ ánh sáng không được thể hiện theo tỉ lệ thực tế."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const taIN = {
+const ta = {
   scene: {
     title: "ஒளியின் பாதையைப் பின்தொடருங்கள்",
     description: "ஒளிமூலத்திலிருந்து திரை வரை நேர்கோட்டில்.",
@@ -391,9 +391,9 @@ export const taIN = {
   hints: {
     scale: "எளிமைப்படுத்தப்பட்ட மாதிரி: ஒளியின் வேகம் உண்மையான விகிதத்தில் காட்டப்படவில்லை."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const teIN = {
+const te = {
   scene: {
     title: "కాంతి మార్గాన్ని అనుసరించండి",
     description: "కాంతి మూలం నుంచి తెర వరకు సరళరేఖలో.",
@@ -414,9 +414,9 @@ export const teIN = {
   hints: {
     scale: "సరళీకృత నమూనా: కాంతి వేగాన్ని వాస్తవ నిష్పత్తిలో చూపలేదు."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const mrIN = {
+const mr = {
   scene: {
     title: "प्रकाशाचा मार्ग पाहा",
     description: "स्रोतापासून पडद्यापर्यंत सरळ रेषेत.",
@@ -437,9 +437,9 @@ export const mrIN = {
   hints: {
     scale: "सुलभ केलेले मॉडेल: प्रकाशाचा वेग प्रत्यक्ष प्रमाणात दाखवलेला नाही."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const msMY = {
+const ms = {
   scene: {
     title: "Jejaki laluan cahaya",
     description: "Dari sumber ke skrin dalam garis lurus.",
@@ -460,9 +460,9 @@ export const msMY = {
   hints: {
     scale: "Model ringkas: kelajuan cahaya tidak ditunjukkan mengikut skala."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const heIL = {
+const he = {
   scene: {
     title: "עקבו אחר מסלול האור",
     description: "ממקור האור אל המסך בקו ישר.",
@@ -483,9 +483,9 @@ export const heIL = {
   hints: {
     scale: "מודל מפושט: מהירות האור אינה מוצגת בקנה מידה מציאותי."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
-export const plPL = {
+const pl = {
   scene: {
     title: "Prześledź drogę światła",
     description: "Od źródła prosto do ekranu.",
@@ -506,35 +506,29 @@ export const plPL = {
   hints: {
     scale: "Model uproszczony: prędkość światła nie jest przedstawiona w rzeczywistej skali."
   }
-} satisfies LightPropagationSimulationLocale;
+} satisfies LightPropagationSimulation_Locale;
 
 export const locales = {
-  "en-US": enUS,
-  "zh-Hans-CN": zhHansCN,
-  "hi-IN": hiIN,
-  "es-ES": esES,
-  "ar-SA": arSA,
-  "fr-FR": frFR,
-  "bn-BD": bnBD,
-  "pt-BR": ptBR,
-  "ur-PK": urPK,
-  "id-ID": idID,
-  "de-DE": deDE,
-  "ja-JP": jaJP,
-  "ko-KR": koKR,
-  "tr-TR": trTR,
-  "vi-VN": viVN,
-  "ta-IN": taIN,
-  "te-IN": teIN,
-  "mr-IN": mrIN,
-  "ms-MY": msMY,
-  "he-IL": heIL,
-  "pl-PL": plPL,
-  "uk-UA": ukUA,
-} satisfies Record<DefaultSupportedLanguage['locale'], LightPropagationSimulationLocale>;
-
-export type LightPropagationSimulationLocaleCode = keyof typeof locales;
-
-export const defaultLightPropagationSimulationLocaleCode: LightPropagationSimulationLocaleCode = "uk-UA";
-
-export default ukUA;
+  en,
+  zh,
+  hi,
+  es,
+  ar,
+  fr,
+  bn,
+  pt,
+  ur,
+  id,
+  de,
+  ja,
+  ko,
+  tr,
+  vi,
+  ta,
+  te,
+  mr,
+  ms,
+  he,
+  pl,
+  uk,
+} satisfies Record<DefaultSupportedLanguage['language'], LightPropagationSimulation_Locale>;

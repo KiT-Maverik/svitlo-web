@@ -3,7 +3,9 @@ import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Flashcard, type FlashcardProps } from './Flashcard';
 import { aria } from './Flashcard.constants';
-import { locale } from './Flashcard.locale';
+import { locales } from './Flashcard.locale';
+
+const locale = locales.uk;
 
 export const Flashcard_fx = {
   defaults: { question: 'What is light?', answer: 'Electromagnetic radiation' } satisfies FlashcardProps,

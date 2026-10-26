@@ -1,10 +1,11 @@
 'use client';
 
 import { KnowledgeCheckpoint } from '@/components/widgets';
-import { useLightSceneLocales } from '../../useLightSceneLocales';
+import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
+import type { LightSceneLocales } from '../../sceneLocales.types';
 
 export default function TheoryCheckpoint() {
-  const { locale, scenes } = useLightSceneLocales();
+  const { locale, scenes } = useSceneLocales<LightSceneLocales>();
   return <KnowledgeCheckpoint
     locale={locale}
     title={scenes.checkpoint.title}

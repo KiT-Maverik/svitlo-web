@@ -8,16 +8,16 @@ describe('Widgets', () => {
       LightRayDiagram_fx.render();
       const image = LightRayDiagram_fx.selectors.illustration();
       expect(image).toHaveAttribute('lang', 'uk-UA');
-      expect(image.querySelector('title')).toHaveTextContent(locales['uk-UA'].scene.title);
-      expect(image.querySelector('desc')).toHaveTextContent(locales['uk-UA'].scene.description);
+      expect(image.querySelector('title')).toHaveTextContent(locales.uk.scene.title);
+      expect(image.querySelector('desc')).toHaveTextContent(locales.uk.scene.description);
     });
 
     it('should display labels matching the chosen English locale', () => {
       LightRayDiagram_fx.render({ locale: 'en-US' });
       const image = LightRayDiagram_fx.selectors.illustration('en-US');
-      expect(image).toHaveTextContent(locales['en-US'].labels.source);
-      expect(image).toHaveTextContent(locales['en-US'].labels.direction);
-      expect(image).toHaveTextContent(locales['en-US'].labels.screen);
+      expect(image).toHaveTextContent(locales.en.labels.source);
+      expect(image).toHaveTextContent(locales.en.labels.direction);
+      expect(image).toHaveTextContent(locales.en.labels.screen);
       expect(image).toHaveAttribute('direction', 'ltr');
     });
 

@@ -1,6 +1,6 @@
 import type { DefaultSupportedLanguage } from '@types';
 
-export const ukUA = {
+const uk = {
   scene: {
     title: "Світловий промінь",
     description: "Світло від ліхтарика ліворуч поширюється прямою лінією до екрана праворуч.",
@@ -12,10 +12,9 @@ export const ukUA = {
   },
 };
 
-export type LightRayDiagramLocale = typeof ukUA;
+export type LightRayDiagram_Locale = typeof uk;
 
-export const locales = {
-  'en-US': {
+const en = {
     scene: {
       title: "Trace the path of light",
       description: "From the source straight to the screen.",
@@ -25,8 +24,9 @@ export const locales = {
       direction: "Direction of light",
       screen: "Screen",
     },
-  },
-  'zh-Hans-CN': {
+  } satisfies LightRayDiagram_Locale;
+
+const zh = {
     scene: {
       title: "追踪光的路径",
       description: "从光源沿直线传播到屏幕。",
@@ -36,8 +36,9 @@ export const locales = {
       direction: "光的传播方向",
       screen: "屏幕",
     },
-  },
-  'hi-IN': {
+  } satisfies LightRayDiagram_Locale;
+
+const hi = {
     scene: {
       title: "प्रकाश के पथ का अनुसरण करें",
       description: "स्रोत से पर्दे तक सीधी रेखा में।",
@@ -47,8 +48,9 @@ export const locales = {
       direction: "प्रकाश की दिशा",
       screen: "पर्दा",
     },
-  },
-  'es-ES': {
+  } satisfies LightRayDiagram_Locale;
+
+const es = {
     scene: {
       title: "Sigue el recorrido de la luz",
       description: "De la fuente a la pantalla en línea recta.",
@@ -58,8 +60,9 @@ export const locales = {
       direction: "Dirección de la luz",
       screen: "Pantalla",
     },
-  },
-  'ar-SA': {
+  } satisfies LightRayDiagram_Locale;
+
+const ar = {
     scene: {
       title: "تتبّع مسار الضوء",
       description: "من المصدر إلى الشاشة في خط مستقيم.",
@@ -69,8 +72,9 @@ export const locales = {
       direction: "اتجاه انتشار الضوء",
       screen: "الشاشة",
     },
-  },
-  'fr-FR': {
+  } satisfies LightRayDiagram_Locale;
+
+const fr = {
     scene: {
       title: "Suis le trajet de la lumière",
       description: "De la source à l’écran en ligne droite.",
@@ -80,8 +84,9 @@ export const locales = {
       direction: "Direction de la lumière",
       screen: "Écran",
     },
-  },
-  'bn-BD': {
+  } satisfies LightRayDiagram_Locale;
+
+const bn = {
     scene: {
       title: "আলোর পথ অনুসরণ করো",
       description: "উৎস থেকে সরলরেখায় পর্দা পর্যন্ত।",
@@ -91,8 +96,9 @@ export const locales = {
       direction: "আলোর দিক",
       screen: "পর্দা",
     },
-  },
-  'pt-BR': {
+  } satisfies LightRayDiagram_Locale;
+
+const pt = {
     scene: {
       title: "Acompanhe o caminho da luz",
       description: "Da fonte até a tela em linha reta.",
@@ -102,8 +108,9 @@ export const locales = {
       direction: "Direção da luz",
       screen: "Tela",
     },
-  },
-  'ur-PK': {
+  } satisfies LightRayDiagram_Locale;
+
+const ur = {
     scene: {
       title: "روشنی کے راستے کا مشاہدہ کریں",
       description: "منبع سے پردے تک سیدھی لکیر میں۔",
@@ -113,8 +120,9 @@ export const locales = {
       direction: "روشنی کی سمت",
       screen: "پردہ",
     },
-  },
-  'id-ID': {
+  } satisfies LightRayDiagram_Locale;
+
+const id = {
     scene: {
       title: "Telusuri lintasan cahaya",
       description: "Dari sumber menuju layar dalam garis lurus.",
@@ -124,8 +132,9 @@ export const locales = {
       direction: "Arah cahaya",
       screen: "Layar",
     },
-  },
-  'de-DE': {
+  } satisfies LightRayDiagram_Locale;
+
+const de = {
     scene: {
       title: "Verfolge den Weg des Lichts",
       description: "Von der Quelle geradlinig zum Schirm.",
@@ -135,8 +144,9 @@ export const locales = {
       direction: "Richtung des Lichts",
       screen: "Schirm",
     },
-  },
-  'ja-JP': {
+  } satisfies LightRayDiagram_Locale;
+
+const ja = {
     scene: {
       title: "光の進む道をたどろう",
       description: "光源からスクリーンまで一直線に。",
@@ -146,8 +156,9 @@ export const locales = {
       direction: "光の進む方向",
       screen: "スクリーン",
     },
-  },
-  'ko-KR': {
+  } satisfies LightRayDiagram_Locale;
+
+const ko = {
     scene: {
       title: "빛의 경로를 따라가 보세요",
       description: "광원에서 스크린까지 직선으로.",
@@ -157,8 +168,9 @@ export const locales = {
       direction: "빛의 진행 방향",
       screen: "스크린",
     },
-  },
-  'tr-TR': {
+  } satisfies LightRayDiagram_Locale;
+
+const tr = {
     scene: {
       title: "Işığın yolunu takip et",
       description: "Kaynaktan ekrana düz bir çizgi boyunca.",
@@ -168,8 +180,9 @@ export const locales = {
       direction: "Işığın yönü",
       screen: "Ekran",
     },
-  },
-  'vi-VN': {
+  } satisfies LightRayDiagram_Locale;
+
+const vi = {
     scene: {
       title: "Theo dõi đường đi của ánh sáng",
       description: "Từ nguồn sáng đến màn theo đường thẳng.",
@@ -179,8 +192,9 @@ export const locales = {
       direction: "Hướng truyền ánh sáng",
       screen: "Màn",
     },
-  },
-  'ta-IN': {
+  } satisfies LightRayDiagram_Locale;
+
+const ta = {
     scene: {
       title: "ஒளியின் பாதையைப் பின்தொடருங்கள்",
       description: "ஒளிமூலத்திலிருந்து திரை வரை நேர்கோட்டில்.",
@@ -190,8 +204,9 @@ export const locales = {
       direction: "ஒளியின் திசை",
       screen: "திரை",
     },
-  },
-  'te-IN': {
+  } satisfies LightRayDiagram_Locale;
+
+const te = {
     scene: {
       title: "కాంతి మార్గాన్ని అనుసరించండి",
       description: "కాంతి మూలం నుంచి తెర వరకు సరళరేఖలో.",
@@ -201,8 +216,9 @@ export const locales = {
       direction: "కాంతి దిశ",
       screen: "తెర",
     },
-  },
-  'mr-IN': {
+  } satisfies LightRayDiagram_Locale;
+
+const mr = {
     scene: {
       title: "प्रकाशाचा मार्ग पाहा",
       description: "स्रोतापासून पडद्यापर्यंत सरळ रेषेत.",
@@ -212,8 +228,9 @@ export const locales = {
       direction: "प्रकाशाची दिशा",
       screen: "पडदा",
     },
-  },
-  'ms-MY': {
+  } satisfies LightRayDiagram_Locale;
+
+const ms = {
     scene: {
       title: "Jejaki laluan cahaya",
       description: "Dari sumber ke skrin dalam garis lurus.",
@@ -223,8 +240,9 @@ export const locales = {
       direction: "Arah cahaya",
       screen: "Skrin",
     },
-  },
-  'he-IL': {
+  } satisfies LightRayDiagram_Locale;
+
+const he = {
     scene: {
       title: "עקבו אחר מסלול האור",
       description: "ממקור האור אל המסך בקו ישר.",
@@ -234,8 +252,9 @@ export const locales = {
       direction: "כיוון התפשטות האור",
       screen: "מסך",
     },
-  },
-  'pl-PL': {
+  } satisfies LightRayDiagram_Locale;
+
+const pl = {
     scene: {
       title: "Prześledź drogę światła",
       description: "Od źródła prosto do ekranu.",
@@ -245,8 +264,29 @@ export const locales = {
       direction: "Kierunek światła",
       screen: "Ekran",
     },
-  },
-  'uk-UA': ukUA,
-} satisfies Record<DefaultSupportedLanguage['locale'], LightRayDiagramLocale>;
+  } satisfies LightRayDiagram_Locale;
 
-export type LightRayDiagramLocaleCode = keyof typeof locales;
+export const locales = {
+  en,
+  zh,
+  hi,
+  es,
+  ar,
+  fr,
+  bn,
+  pt,
+  ur,
+  id,
+  de,
+  ja,
+  ko,
+  tr,
+  vi,
+  ta,
+  te,
+  mr,
+  ms,
+  he,
+  pl,
+  uk,
+} satisfies Record<DefaultSupportedLanguage['language'], LightRayDiagram_Locale>;
