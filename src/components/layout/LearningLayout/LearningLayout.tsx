@@ -26,6 +26,8 @@ import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@types';
 import { VerticalSpace } from '@/components/widgets';
+import { locale as messages } from './locales/uk-UA';
+import { aria } from './LearningLayout.constants';
 
 type Topic = { id: string; title: string; href: string };
 
@@ -47,30 +49,30 @@ export default function LearningLayout({ children, topics, skippableSteps = [] }
 
   return (
     <Box dir={direction} lang={locale} sx={{ height: '100dvh', display: 'grid', gridTemplateRows: 'auto minmax(0, 1fr) auto', overflow: 'hidden', bgcolor: 'background.default', color: 'text.primary' }}>
-      <TopNavbar aria-label="Верхня навігація навчання" slots={{
+      <TopNavbar aria-label={aria.navigation.top} slots={{
         left: <>
-          <IconButton aria-label={open ? 'Закрити список тем' : 'Відкрити список тем'} aria-expanded={open} aria-controls={open ? 'learning-sidebar' : undefined} onClick={() => { setOpen((value) => !value); setSettingsOpen(false); }}>
+          <IconButton aria-label={open ? messages.actions.closeTopics : messages.actions.openTopics} aria-expanded={open} aria-controls={open ? 'learning-sidebar' : undefined} onClick={() => { setOpen((value) => !value); setSettingsOpen(false); }}>
             <MenuIcon />
           </IconButton>
-          <Typography component={Link} href="/" sx={{ color: 'text.primary', fontWeight: 800, fontSize: 20, textDecoration: 'none' }}>Світло</Typography>
+          <Typography component={Link} href="/" sx={{ color: 'text.primary', fontWeight: 800, fontSize: 20, textDecoration: 'none' }}>{messages.brand}</Typography>
         </>,
         right: <>
           <NavbarPreferences />
-          <Tooltip title="Профіль буде доступний після підключення авторизації"><Box component="span" sx={{ display: { xs: 'none', sm: 'inline-flex' } }}>
-            <IconButton aria-label="Профіль" disabled><AccountCircleOutlinedIcon /></IconButton>
+          <Tooltip title={messages.tooltips.profile}><Box component="span" sx={{ display: { xs: 'none', sm: 'inline-flex' } }}>
+            <IconButton aria-label={aria.actions.profile} disabled><AccountCircleOutlinedIcon /></IconButton>
           </Box></Tooltip>
-          <IconButton aria-label={settingsOpen ? 'Закрити налаштування' : 'Відкрити налаштування'} aria-expanded={settingsOpen} aria-controls={settingsOpen ? 'settings-sidebar' : undefined} onClick={() => { setSettingsOpen((value) => !value); setOpen(false); }}>
+          <IconButton aria-label={settingsOpen ? messages.actions.closeSettings : messages.actions.openSettings} aria-expanded={settingsOpen} aria-controls={settingsOpen ? 'settings-sidebar' : undefined} onClick={() => { setSettingsOpen((value) => !value); setOpen(false); }}>
             <SettingsOutlinedIcon />
           </IconButton>
-          <Tooltip title="Вихід буде доступний після підключення авторизації"><Box component="span" sx={{ display: { xs: 'none', sm: 'inline-flex' } }}>
-            <IconButton aria-label="Logout" disabled><LogoutIcon /></IconButton>
+          <Tooltip title={messages.tooltips.logout}><Box component="span" sx={{ display: { xs: 'none', sm: 'inline-flex' } }}>
+            <IconButton aria-label={aria.actions.logout} disabled><LogoutIcon /></IconButton>
           </Box></Tooltip>
         </>,
       }} />
 
       <Box sx={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
         <Fade in={open || settingsOpen} timeout={{ enter: 225, exit: 195 }} unmountOnExit>
-          <Box component="button" aria-label="Закрити бічну панель" tabIndex={-1} onClick={() => { setOpen(false); setSettingsOpen(false); }} sx={{
+          <Box component="button" aria-label={aria.actions.closeSidebar} tabIndex={-1} onClick={() => { setOpen(false); setSettingsOpen(false); }} sx={{
             position: 'absolute', inset: 0, border: 0, bgcolor: theme => alpha(theme.palette.common.black, 0.25), zIndex: 1100, cursor: 'pointer',
             pointerEvents: open || settingsOpen ? 'auto' : 'none',
             '@media (prefers-reduced-motion: reduce)': { transition: 'none !important' },
@@ -84,9 +86,9 @@ export default function LearningLayout({ children, topics, skippableSteps = [] }
             paper: { sx: { position: 'absolute', width: 'min(320px, calc(100vw - 48px))', height: '100%', display: 'flex', overflow: 'hidden' } },
           }}
         >
-          <Box id="learning-sidebar" component="nav" aria-label="Список тем" sx={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
+          <Box id="learning-sidebar" component="nav" aria-label={aria.navigation.topics} sx={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
             <VerticalSpace
-              top={<Typography component="h2" sx={{ px: 3, pt: 2, fontSize: 13, fontWeight: 700, color: 'text.secondary' }}>ТЕМИ</Typography>}
+              top={<Typography component="h2" sx={{ px: 3, pt: 2, fontSize: 13, fontWeight: 700, color: 'text.secondary' }}>{messages.topicsTitle}</Typography>}
               center={<Box sx={{ height: '100%', overflowY: 'auto', overscrollBehavior: 'contain', px: 1 }}>
                 <List disablePadding>
                   {topics.map((topic) => (
@@ -105,13 +107,13 @@ export default function LearningLayout({ children, topics, skippableSteps = [] }
           open={settingsOpen}
           slotProps={{ paper: { sx: { position: 'absolute', width: 'min(320px, calc(100vw - 48px))', height: '100%', overflow: 'hidden' } } }}
         >
-          <Box id="settings-sidebar" component="aside" aria-label="Налаштування" sx={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
+          <Box id="settings-sidebar" component="aside" aria-label={aria.navigation.settings} sx={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', p: 1, borderBottom: 1, borderColor: 'divider', flexShrink: 0 }}>
-              <Typography component="h2" sx={{ flex: 1, px: 1, fontSize: 18, fontWeight: 700 }}>Налаштування</Typography>
-              <IconButton aria-label="Закрити панель налаштувань" onClick={() => setSettingsOpen(false)}><CloseIcon /></IconButton>
+              <Typography component="h2" sx={{ flex: 1, px: 1, fontSize: 18, fontWeight: 700 }}>{messages.settingsTitle}</Typography>
+              <IconButton aria-label={aria.actions.closeSettingsPanel} onClick={() => setSettingsOpen(false)}><CloseIcon /></IconButton>
             </Box>
             <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', p: 2 }}>
-              <Typography color="text.secondary">Налаштування навчання з’являться тут.</Typography>
+              <Typography color="text.secondary">{messages.settingsDescription}</Typography>
             </Box>
           </Box>
         </Drawer>
@@ -120,12 +122,12 @@ export default function LearningLayout({ children, topics, skippableSteps = [] }
         </Box>
       </Box>
 
-      <BottomNavbar aria-label="Нижня навігація навчання" slots={{
+      <BottomNavbar aria-label={aria.navigation.bottom} slots={{
         center: <>
-          <Button variant="contained" disabled={!progress.ready || progress.step === 0} onClick={() => dispatch({ type: 'back' })}>{direction === 'rtl' ? '→' : '←'} Назад</Button>
-          <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>Далі {direction === 'rtl' ? '←' : '→'}</Button>
+          <Button variant="contained" disabled={!progress.ready || progress.step === 0} onClick={() => dispatch({ type: 'back' })}>{direction === 'rtl' ? '→' : '←'} {messages.actions.previous}</Button>
+          <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>{messages.actions.next} {direction === 'rtl' ? '←' : '→'}</Button>
         </>,
-        right: <Button variant="outlined" disabled={!progress.ready || !skippableSteps[progress.step] || progress.step >= progress.lastStep} onClick={() => dispatch({ type: 'skip' })}>Skip</Button>,
+        right: <Button variant="outlined" disabled={!progress.ready || !skippableSteps[progress.step] || progress.step >= progress.lastStep} onClick={() => dispatch({ type: 'skip' })}>{messages.actions.skip}</Button>,
       }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />
     </Box>
   );
