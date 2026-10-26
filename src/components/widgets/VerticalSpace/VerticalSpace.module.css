@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+  min-height: 0;
+}
+
+.edge {
+  flex: none;
+}
+
+.center {
+  flex: 1;
+  min-height: 0;
+}

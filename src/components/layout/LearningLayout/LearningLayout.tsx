@@ -19,16 +19,17 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import TopNavbar from '../Navigation/TopNavbar';
 import BottomNavbar from '../Navigation/BottomNavbar';
-import { topics } from '@/content/topics';
 import { canAdvance, useLessonProgress } from '@/components/lesson/LessonProgress';
 import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@/types/languages';
+import { VerticalSpace } from '@/components/widgets';
 
-export default function LearningLayout({ children }: { children: ReactNode }) {
+type Topic = { id: string; title: string; href: string };
+
+export default function LearningLayout({ children, topics }: { children: ReactNode; topics: readonly Topic[] }) {
   const { locale } = useLocale();
   const direction = getLocaleDirection(locale);
   const { progress, dispatch } = useLessonProgress();
@@ -84,20 +85,18 @@ export default function LearningLayout({ children }: { children: ReactNode }) {
           }}
         >
           <Box id="learning-sidebar" component="nav" aria-label="Список тем" sx={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', p: 1, flexShrink: 0, borderBottom: 1, borderColor: 'divider' }}>
-              <Button component={Link} href="/" startIcon={<HomeOutlinedIcon />} onClick={() => setOpen(false)} sx={{ flex: 1, justifyContent: 'flex-start' }}>Home</Button>
-              <IconButton aria-label="Закрити список тем" onClick={() => setOpen(false)}><CloseIcon /></IconButton>
-            </Box>
-            <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', overscrollBehavior: 'contain', p: 1 }}>
-              <Typography component="h2" sx={{ px: 2, py: 1, fontSize: 13, fontWeight: 700, color: 'text.secondary' }}>ТЕМИ</Typography>
-              <List disablePadding>
-                {topics.map((topic) => (
-                  <ListItemButton key={topic.id} component={Link} href={topic.href} selected={pathname === topic.href} aria-current={pathname === topic.href ? 'page' : undefined} onClick={() => setOpen(false)} sx={{ borderRadius: 2 }}>
-                    <ListItemText primary={topic.title} />
-                  </ListItemButton>
-                ))}
-              </List>
-            </Box>
+            <VerticalSpace
+              top={<Typography component="h2" sx={{ px: 3, pt: 2, fontSize: 13, fontWeight: 700, color: 'text.secondary' }}>ТЕМИ</Typography>}
+              center={<Box sx={{ height: '100%', overflowY: 'auto', overscrollBehavior: 'contain', px: 1 }}>
+                <List disablePadding>
+                  {topics.map((topic) => (
+                    <ListItemButton key={topic.id} component={Link} href={`${topic.href}?lang=${locale}`} selected={pathname === topic.href} aria-current={pathname === topic.href ? 'page' : undefined} onClick={() => setOpen(false)} sx={{ borderRadius: 2 }}>
+                      <ListItemText primary={topic.title} />
+                    </ListItemButton>
+                  ))}
+                </List>
+              </Box>}
+            />
           </Box>
         </Drawer>
         <Drawer
