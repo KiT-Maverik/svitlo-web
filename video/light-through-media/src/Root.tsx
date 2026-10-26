@@ -3,7 +3,7 @@ import {DURATION, DEFAULT_PROPS, FPS} from './constants';
 import {LightThroughMedia} from './LightThroughMedia';
 
 export const RemotionRoot = () => (
-  <Folder name="Svitlo — optical motion design">
+  <Folder name="Svitlo-Optical-Motion-Design">
     <Composition
       id="LightThroughMedia"
       component={LightThroughMedia}
