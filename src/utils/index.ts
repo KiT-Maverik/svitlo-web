@@ -15,6 +15,8 @@ export type {
   DynamicQuestion_ArgumentProposal,
   DynamicQuestion_ArgumentType,
   DynamicQuestion_ArgumentValidation,
+  DynamicQuestion_ArgumentValue,
+  DynamicQuestion_AnswerCheck,
   DynamicQuestion_Arguments,
   DynamicQuestion_BooleanArgumentConfig,
   DynamicQuestion_Config,
