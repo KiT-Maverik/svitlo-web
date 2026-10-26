@@ -7,7 +7,7 @@ vi.mock('@/db', () => ({
   saveLessonState: vi.fn().mockResolvedValue(undefined),
 }));
 
-import { waitFor } from '@testing-library/react';
+import { renderHook, waitFor } from '@testing-library/react';
 import { LessonProgress_fx, sectionIds } from './LessonProgress.unit.fx.test';
 import { LessonProgress_mx } from './LessonProgress.unit.mx.test';
 import { canAdvance, initialProgress, progressReducer, useLessonProgress } from './LessonProgress';
@@ -75,7 +75,7 @@ describe('Components', () => {
     });
 
     it('should reject useLessonProgress calls outside its provider', () => {
-      expect(useLessonProgress).toBeDefined();
+      expect(() => renderHook(() => useLessonProgress())).toThrow('LessonProgressProvider is required');
     });
   });
 });

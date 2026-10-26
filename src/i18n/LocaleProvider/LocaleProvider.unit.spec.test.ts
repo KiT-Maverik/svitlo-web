@@ -1,4 +1,6 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+
+vi.mock('next/navigation', () => ({ usePathname: vi.fn(), useRouter: vi.fn() }));
 import { LocaleProvider_fx } from './LocaleProvider.unit.fx.test';
 import { LocaleProvider_mx } from './LocaleProvider.unit.mx.test';
 

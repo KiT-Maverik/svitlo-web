@@ -1,11 +1,6 @@
 import { vi } from 'vitest';
 import { usePathname, useRouter } from 'next/navigation';
 
-vi.mock('next/navigation', () => ({
-  usePathname: vi.fn(),
-  useRouter: vi.fn(),
-}));
-
 export const LocaleProvider_mx = {
   prepare: (pathname = '/lessons/light') => {
     const replace = vi.fn();
