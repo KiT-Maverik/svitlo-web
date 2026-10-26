@@ -15,6 +15,14 @@ export const locale = {
     model: "Модель: v = c / n.",
     sourceLink: "Джерело значень показника заломлення — OpenStax",
   },
+  celebration: {
+    title: 'Вітаємо, ви завершили роботу з цим уроком!',
+    description: 'Теорія, практика, флеш-картки та тест — усі етапи позаду.',
+    correctAnswers: 'Правильних відповідей:',
+    score: (score: number, total: number) => `${score} із ${total}`,
+    note: 'Завершення уроку не означає, що всі відповіді були правильними — до матеріалу завжди можна повернутися.',
+    home: 'До головної',
+  },
   flashcard: {
     region: 'Флешкартка',
     actions: {
