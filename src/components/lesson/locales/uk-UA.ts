@@ -15,6 +15,12 @@ export const locale = {
     model: "Модель: v = c / n.",
     sourceLink: "Джерело значень показника заломлення — OpenStax",
   },
+  lightLesson: {
+    test: 'Тест',
+    finish: 'Завершити урок',
+    nextQuestion: 'Наступне питання',
+    sound: 'Звук завершення',
+  },
   celebration: {
     title: 'Вітаємо, ви завершили роботу з цим уроком!',
     description: 'Теорія, практика, флеш-картки та тест — усі етапи позаду.',
