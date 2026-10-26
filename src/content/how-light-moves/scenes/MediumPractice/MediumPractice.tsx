@@ -4,10 +4,11 @@ import { useState, type CSSProperties } from 'react';
 import { LIGHT_SPEED_KM_S, media } from '@/content/how-light-moves/sections/practice/mediumData';
 import styles from './MediumPractice.module.css';
 import { getLocaleDirection } from '@types';
-import { useLightSceneLocales } from '../../useLightSceneLocales';
+import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
+import type { LightSceneLocales } from '../../sceneLocales.types';
 
 export default function MediumPractice() {
-  const { locale, scenes } = useLightSceneLocales();
+  const { locale, scenes } = useSceneLocales<LightSceneLocales>();
   const messages = scenes.practice;
   const [selected, setSelected] = useState(0);
   const [paused, setPaused] = useState(true);

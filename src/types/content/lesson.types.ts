@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
 import type { Quiz, Quiz_Config, QuizState } from './quiz.types';
 import type { NonEmptyArray } from '../misc.types';
-import type { Locale } from '../languages';
+import type { LanguageCode } from '../languages';
 
 export interface LessonSection_Config {
   content: NonEmptyArray<Resource_Config | ReactNode>;
@@ -33,8 +33,8 @@ export interface Lesson_Config {
     content: NonEmptyArray<LessonSection_Content>;
   };
   title: TextResource_Config;
-  /** Translations for the lesson's self-contained scenes, keyed by locale. */
-  sceneLocales?: Record<Locale, object>;
+  /** Every scene's translations, keyed by short language code. Server selects one value per scene. */
+  sceneLocales?: Record<string, Partial<Record<LanguageCode, object>>>;
 }
 
 export interface Lesson {

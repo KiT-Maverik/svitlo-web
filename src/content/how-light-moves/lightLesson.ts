@@ -3,7 +3,10 @@ import { createTextResource } from '@/utils';
 import { practiceSectionConfig } from './sections/practice/sectionConfig';
 import { quizSectionConfig } from './sections/quiz/sectionConfig';
 import { theorySectionConfig } from './sections/theory/sectionConfig';
-import { lightSceneLocales } from './sceneLocales';
+import { locales as rayLocales } from './scenes/LightRayDiagram/lightRayDiagram.locale';
+import { locales as simulationLocales } from './scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
+import { locales as checkpointLocales } from './sections/theory/knowledgeCheckpoint.locale';
+import { locales as practiceLocales } from './scenes/MediumPractice/MediumPractice.locale';
 
 export const lightLesson = {
   id: 'd3048d21-8690-5255-b62c-984c69ac272c',
@@ -36,7 +39,12 @@ export const lightLesson = {
     },
   ),
   requireQuiz: true,
-  sceneLocales: lightSceneLocales,
+  sceneLocales: {
+    ray: rayLocales,
+    simulation: simulationLocales,
+    checkpoint: checkpointLocales,
+    practice: practiceLocales,
+  },
   sections: {
     allowNavigation: true,
     allowSkipping: true,
