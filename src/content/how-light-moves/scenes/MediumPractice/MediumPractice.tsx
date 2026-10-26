@@ -3,31 +3,33 @@
 import { useState, type CSSProperties } from 'react';
 import { LIGHT_SPEED_KM_S, media } from '@/content/how-light-moves/sections/practice/mediumData';
 import styles from './MediumPractice.module.css';
-import { aria } from './MediumPractice.constants';
-import { locale } from './MediumPractice.locale';
+import { getLocaleDirection } from '@types';
+import { useLightSceneLocales } from '../../useLightSceneLocales';
 
 export default function MediumPractice() {
+  const { locale, scenes } = useLightSceneLocales();
+  const messages = scenes.practice;
   const [selected, setSelected] = useState(0);
   const [paused, setPaused] = useState(true);
   const medium = media[selected];
-  return <section className={styles.practice} aria-labelledby="practice-title">
-    <p className={styles.eyebrow}>{locale.mediumPractice.eyebrow}</p>
-    <h1 id="practice-title">{locale.mediumPractice.title}</h1>
-    <p>{locale.mediumPractice.description}</p>
-    <div className={styles.media} role="group" aria-label={aria.mediaGroup}>
-      {media.map((item, index) => <button key={item.id} aria-pressed={index === selected} onClick={() => setSelected(index)}>{item.title}</button>)}
+  return <section className={styles.practice} lang={locale} dir={getLocaleDirection(locale)} aria-labelledby="practice-title">
+    <p className={styles.eyebrow}>{messages.eyebrow}</p>
+    <h1 id="practice-title">{messages.title}</h1>
+    <p>{messages.description}</p>
+    <div className={styles.media} role="group" aria-label={messages.mediaGroup}>
+      {media.map((item, index) => <button key={item.id} aria-pressed={index === selected} onClick={() => setSelected(index)}>{messages.media[item.key]}</button>)}
     </div>
     <div className={styles.experiment} style={{ '--travel-time': `${2 * medium.index}s` } as CSSProperties}>
-      <div className={styles.readout} aria-live="polite"><strong>{medium.title}</strong><span>≈ {Math.round(LIGHT_SPEED_KM_S / medium.index).toLocaleString('uk-UA')} {locale.mediumPractice.speedUnit}</span></div>
-      <div className={styles.track} role="img" aria-label={`${locale.mediumPractice.trackPrefix}${medium.title}.`}>
+      <div className={styles.readout} aria-live="polite"><strong>{messages.media[medium.key]}</strong><span>≈ {Math.round(LIGHT_SPEED_KM_S / medium.index).toLocaleString(locale)} {messages.speedUnit}</span></div>
+      <div className={styles.track} role="img" aria-label={`${messages.trackPrefix}${messages.media[medium.key]}.`}>
         <div className={styles.source} /><div className={styles.beam} />
         <div className={styles.travel}><span className={styles.pulse} style={{ animationPlayState: paused ? 'paused' : 'running' }} /></div><div className={styles.screen} />
       </div>
-      <div className={styles.trackLabels}><span>{locale.mediumPractice.source}</span><span>{locale.mediumPractice.screen}</span></div>
-      <button className={styles.play} onClick={() => setPaused((value) => !value)}>{paused ? locale.mediumPractice.play : locale.mediumPractice.pause}</button>
+      <div className={styles.trackLabels}><span>{messages.source}</span><span>{messages.screen}</span></div>
+      <button className={styles.play} onClick={() => setPaused((value) => !value)}>{paused ? messages.play : messages.pause}</button>
     </div>
-    <blockquote className={styles.quote}>{locale.mediumPractice.quote}</blockquote>
-    <p className={styles.caption}>{locale.mediumPractice.caption}</p>
-    <p className={styles.caption}>{locale.mediumPractice.model} <a href="https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light" target="_blank" rel="noreferrer">{locale.mediumPractice.sourceLink}</a>.</p>
+    <blockquote className={styles.quote}>{messages.quote}</blockquote>
+    <p className={styles.caption}>{messages.caption}</p>
+    <p className={styles.caption}>{messages.model} <a href="https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light" target="_blank" rel="noreferrer">{messages.sourceLink}</a>.</p>
   </section>;
 }

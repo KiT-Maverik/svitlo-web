@@ -38,6 +38,19 @@ test('home opens the light lesson and preserves the three-step learning flow', a
   await expect(page.getByRole('link', { name: 'Відкрити урок «Як рухається світло»', exact: true })).toBeVisible();
 });
 
+
+test('the config-driven lesson supplies the active locale to its scenes', async ({ page }) => {
+  await page.goto('/topics/light?lang=en-US');
+  await expect(page.getByRole('img', { name: 'Trace the path of light' })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Animation of light traveling from the source to the screen' })).toBeVisible();
+  const next = page.getByRole('navigation', { name: 'Нижня навігація навчання' }).getByRole('button', { name: 'Далі →', exact: true });
+  await next.click();
+  await expect(page.getByRole('heading', { name: 'One light. Different media.' })).toBeVisible();
+  await expect(page.getByRole('group', { name: 'Light propagation medium' }).getByRole('button', { name: 'Vacuum' })).toBeVisible();
+  await page.getByRole('group', { name: 'Light propagation medium' }).getByRole('button', { name: 'Water' }).click();
+  await expect(page.getByRole('img', { name: 'Light propagation model: Water.' })).toBeVisible();
+});
+
 test('lesson and checked quiz answer survive a reload', async ({ page }) => {
   await page.goto('/topics/light');
   const next = page.getByRole('navigation', { name: 'Нижня навігація навчання' }).getByRole('button', { name: 'Далі →', exact: true });
