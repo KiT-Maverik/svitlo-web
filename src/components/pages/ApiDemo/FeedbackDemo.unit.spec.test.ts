@@ -7,7 +7,7 @@ describe('Components', () => {
       it('should render the localized feedback heading and accessible control labels', () => {
         FeedbackDemo_fx.render();
         expect(FeedbackDemo_fx.selectors.heading()).toBeVisible();
-        expect(FeedbackDemo_fx.selectors.setting('showErrors')).toBeVisible();
+        expect(FeedbackDemo_fx.selectors.setting('showErrors')).toBeChecked();
       });
 
       it('should enable error and correct-answer hints by default', () => {
