@@ -9,7 +9,7 @@ export const NavbarPreferences_mx = {
     vi.mocked(useLocale).mockReturnValue({ locale: options.locale ?? 'uk-UA', setLocale });
     vi.mocked(useColorScheme).mockReturnValue({
       mode: 'mode' in options ? options.mode : 'light', systemMode: 'light', setMode,
-    } as ReturnType<typeof useColorScheme>);
+    } as unknown as ReturnType<typeof useColorScheme>);
     return { setLocale, setMode };
   },
   reset: () => vi.clearAllMocks(),
