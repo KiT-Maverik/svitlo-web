@@ -12,7 +12,7 @@ import { createLightQuestions } from '@/content/how-light-moves/sections/quiz/cr
 import { lightLesson } from '@/content/how-light-moves/lightLesson';
 import { practiceSectionConfig } from '@/content/how-light-moves/sections/practice/sectionConfig';
 import { quizSectionConfig } from '@/content/how-light-moves/sections/quiz/sectionConfig';
-import { buildLesson } from '@/utils/buildLesson/buildLesson';
+import { buildLesson } from '@/utils';
 import type { Lesson_Config, Quiz } from '@types';
 import { LessonProgressProvider } from '@/components/lesson/LessonProgress';
 
