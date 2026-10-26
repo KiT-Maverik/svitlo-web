@@ -1,7 +1,7 @@
 import type { MediumPractice_Locale } from './scenes/MediumPractice/MediumPractice.locale';
 import type { LightRayDiagram_Locale } from './scenes/LightRayDiagram/lightRayDiagram.locale';
 import type { LightPropagationSimulation_Locale } from './scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
-import type { TheoryKnowledgeCheckpoint_Locale } from './sections/theory/KnowledgeCheckpoint.locale';
+import type { TheoryKnowledgeCheckpoint_Locale } from './sections/theory/locale/KnowledgeCheckpoint.locale';
 
 export interface LightSceneLocales {
   ray: LightRayDiagram_Locale;
@@ -9,3 +9,4 @@ export interface LightSceneLocales {
   checkpoint: TheoryKnowledgeCheckpoint_Locale;
   practice: MediumPractice_Locale;
 }
+// todo
