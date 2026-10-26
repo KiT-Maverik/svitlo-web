@@ -1,0 +1,42 @@
+name: Native IndexedDB browser controllers
+on:
+  push:
+    branches: [test/db-controllers-e2e]
+  pull_request:
+    paths:
+      - 'src/db/**'
+      - 'tests/e2e/db/**'
+      - 'playwright.db.config.ts'
+      - 'playwright.config.ts'
+      - 'package.json'
+permissions:
+  contents: read
+jobs:
+  browser-controllers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run lint
+      - run: npm run build
+      - run: npx playwright install chromium
+      - name: Native IndexedDB Chromium
+        run: npm run test:e2e:db
+      - name: Native IndexedDB Chromium repeat
+        run: npm run test:e2e:db
+      - name: Existing Playwright suite
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: db-browser-test-results
+          path: |
+            test-results/
+            playwright-report/
