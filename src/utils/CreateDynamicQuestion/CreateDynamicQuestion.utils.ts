@@ -5,7 +5,7 @@ import type {
     DynamicQuestion_Arguments,
     DynamicQuestion_Config,
     DynamicQuestion_Variant,
-} from './createDynamicQuestion.types';
+} from './CreateDynamicQuestion.types';
 
 const isRecord = (value: unknown): value is Record<string, unknown> => (
     typeof value === 'object' && value !== null

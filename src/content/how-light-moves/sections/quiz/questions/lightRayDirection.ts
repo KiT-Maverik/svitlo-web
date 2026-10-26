@@ -1,5 +1,5 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 
 export const lightRayDirection = {
   id: '26b09f82-f8db-5b7a-9a0f-7e7937fba45c',

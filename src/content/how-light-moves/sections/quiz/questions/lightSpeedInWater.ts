@@ -1,5 +1,5 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 
 export const lightSpeedInWater = {
   id: 'f42370dc-1de2-59bf-93a0-0e304f9021f0',
