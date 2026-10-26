@@ -2,11 +2,10 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { Fragment, type ReactNode } from 'react';
 import { MarkdownContent } from '@/components/widgets';
-import type { LessonSection_Config } from '@types';
-import type { Resource_Config } from '@types';
+import type { LessonSection, Resource } from '@types';
 import { getLocaleDirection, type Locale } from '@types';
 
-function isResource(block: Resource_Config | ReactNode): block is Resource_Config {
+function isResource(block: Resource | ReactNode): block is Resource {
   return typeof block === 'object' && block !== null && 'blockType' in block;
 }
 
@@ -16,7 +15,7 @@ async function readMarkdown(fileLocation: string) {
 }
 
 export default async function LessonSectionContent({ content, locale }: {
-  content: LessonSection_Config['content'];
+  content: LessonSection['content'];
   locale: Locale;
 }) {
   const direction = getLocaleDirection(locale);
@@ -24,10 +23,11 @@ export default async function LessonSectionContent({ content, locale }: {
     if (!isResource(block)) return <Fragment key={index}>{block}</Fragment>;
 
     if (block.blockType === 'markdown') {
-      const fileLocation = block.fileLocation[locale] ?? Object.values(block.fileLocation)[0];
-      const markdown = await readMarkdown(fileLocation);
+      const markdown = await readMarkdown(block.fileLocation);
       return <MarkdownContent key={block.id} content={markdown} lang={locale} dir={direction} />;
     }
+
+    if (block.blockType === 'text') return <Fragment key={block.id}>{block.value}</Fragment>;
 
     throw new Error(`Unsupported lesson resource type: ${block.blockType}`);
   }));

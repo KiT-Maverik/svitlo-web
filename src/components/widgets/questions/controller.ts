@@ -15,7 +15,14 @@ export function answersEqual(type: QuestionType, a: unknown, b: unknown): boolea
 export function createQuestionController<K extends QuestionType>(question: QuestionOf<K>, initial: AnswerMap[K], checker: (q: QuestionOf<K>, a: AnswerMap[K]) => CheckResult, initialOptions: AttemptOptions<K> = {}) {
   const first = structuredClone(initial);
   const fresh = (): AttemptState<K> => ({ answer: structuredClone(first), result: null, hasInteracted: false, isModified: false, hasChecked: false, attemptNumber: 1 });
-  let state = fresh();
+  let state: AttemptState<K> = initialOptions.initialAnswer === undefined ? fresh() : {
+    answer: structuredClone(initialOptions.initialAnswer),
+    result: initialOptions.initialResult ?? null,
+    hasInteracted: true,
+    isModified: !answersEqual(question.type, initialOptions.initialAnswer, first),
+    hasChecked: Boolean(initialOptions.initialResult),
+    attemptNumber: 1,
+  };
   let options = initialOptions;
   const listeners = new Set<() => void>();
   const locked = () => Boolean(options.disabled || options.readOnly || state.result);

@@ -1,5 +1,6 @@
 import type { LessonSection_Config } from '@types';
 import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import MediumPractice from '@/components/lesson/MediumPractice';
 
 const name = createTextResource(
   '3b5ac8f2-e075-59ed-bc54-04b3697f8635',
@@ -61,5 +62,5 @@ export const practiceSectionConfig: LessonSection_Config = {
   id: '60032520-2238-5600-a38c-02b7ac0b8695',
   name,
   skippable: true,
-  content: [task],
+  content: [task, <MediumPractice key="medium-practice" />],
 };

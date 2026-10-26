@@ -1,12 +1,15 @@
 import type { SelectOneAnswerQuestion } from '@types';
-import type { Locale } from '@types';
-import { questionBank } from './questions';
+import type { Quiz } from '@types';
 
-export function createLightQuestions(locale: Locale): SelectOneAnswerQuestion[] {
-  return questionBank.map((question) => {
+export function createLightQuestions(quiz: Quiz): SelectOneAnswerQuestion[] {
+  return quiz.questionBank.map((question) => {
+    if (question.type !== 'select-one-answer') throw new Error(`Unsupported light lesson question: ${question.type}`);
     const correct = question.answers.correct;
     const options = [correct, ...question.answers.incorrect, ...question.answers.distractors]
-      .map((resource) => ({ id: resource.id, label: resource.value[locale] }));
+      .map((resource) => {
+        if (resource.blockType !== 'text') throw new Error('This question widget requires text answer options');
+        return { id: resource.id, label: resource.value };
+      });
 
     // Keep option order stable across renders without storing another question definition.
     let seed = Number.parseInt(question.id.slice(0, 8), 16);
@@ -19,10 +22,10 @@ export function createLightQuestions(locale: Locale): SelectOneAnswerQuestion[] 
     return {
       id: question.id,
       type: 'single-select',
-      prompt: question.content[0].value[locale],
+      prompt: question.content.map(resource => resource.blockType === 'text' ? resource.value : '').join('\n'),
       options,
       correctId: correct.id,
-      explanation: question.explanation.value[locale],
+      explanation: question.explanation?.value ?? '',
     };
   });
 }

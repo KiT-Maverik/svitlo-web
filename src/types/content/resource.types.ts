@@ -65,19 +65,25 @@ export interface CodeResourceParam_ChosenLocales<Locales extends Locale = never>
   values: Resource_ChosenLocales_Config<Locales>;
 }
 
-export interface CodeResource_AllLocales extends Resource_ConfigBase<'code'> {
+export interface CodeResource_AllLocales_Config extends Resource_ConfigBase<'code'> {
   allLocales: true;
   fileLocation: Resource_AllLocales_Config;
   codeParams: CodeResourceParam_AllLocales[];
 }
 
-export interface CodeResource_ChosenLocales<Locales extends Locale = never> extends Resource_ConfigBase<'code'> {
+export interface CodeResource_ChosenLocales_Config<Locales extends Locale = never> extends Resource_ConfigBase<'code'> {
   allLocales: false;
   fileLocation: Resource_ChosenLocales_Config<Locales>;
   codeParams: CodeResourceParam_ChosenLocales<Locales>[];
 }
 
-export type CodeResource<Locales extends Locale = never> = CodeResource_AllLocales | CodeResource_ChosenLocales<Locales>;
+export type CodeResource_Config<Locales extends Locale = never> = CodeResource_AllLocales_Config | CodeResource_ChosenLocales_Config<Locales>;
+
+export interface CodeResource extends Resource_ConfigBase<'code'> {
+  locale: Locale;
+  fileLocation: string;
+  codeParams: { selector: string; value: string }[];
+}
 
 export interface AudioResource_AllLocales_Config extends Resource_ConfigBase<'audio'> {
   allLocales: true;
@@ -145,7 +151,7 @@ export interface ImageResource extends Resource_ConfigBase<'image'> {
 export type Resource_Config<Locales extends Locale = never> =
   | TextResource_Config<Locales>
   | MarkdownResource_Config<Locales>
-  | CodeResource<Locales>
+  | CodeResource_Config<Locales>
   | AudioResource_Config<Locales>
   | VideoResource_Config<Locales>
   | ImageResource_Config<Locales>;
@@ -153,7 +159,7 @@ export type Resource_Config<Locales extends Locale = never> =
 export interface Resource_ConfigMap<Locales extends Locale = never> {
   text: TextResource_Config<Locales>;
   markdown: MarkdownResource_Config<Locales>;
-  code: CodeResource<Locales>;
+  code: CodeResource_Config<Locales>;
   audio: AudioResource_Config<Locales>;
   video: VideoResource_Config<Locales>;
   image: ImageResource_Config<Locales>;
@@ -162,6 +168,7 @@ export interface Resource_ConfigMap<Locales extends Locale = never> {
 export type Resource =
   | TextResource
   | MarkdownResource
+  | CodeResource
   | AudioResource
   | VideoResource
   | ImageResource;
@@ -169,6 +176,7 @@ export type Resource =
 export interface ResourceMap {
   text: TextResource;
   markdown: MarkdownResource;
+  code: CodeResource;
   audio: AudioResource;
   video: VideoResource;
   image: ImageResource;

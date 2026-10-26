@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useState, type ReactNode } from 'react';
-import type { SelectOneAnswerQuestion } from '@types';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
+import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState, SelectOneAnswerQuestion } from '@types';
+import { createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
 import { useLessonProgress } from './LessonProgress';
-import MediumPractice from './MediumPractice';
 import Celebration, { playCelebration } from './Celebration';
 import { QuestionAttempt } from '@/components/widgets/questions/helpers';
 import { QuestionProgress, type QuestionStatus } from './QuestionProgress';
@@ -12,45 +12,141 @@ import styles from './Lesson.module.css';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@types';
 
-export default function LightLesson({ theory, questions, allowQuestionNavigation = true, allowSectionNavigation = true, showStepNumbers = true }: { theory: ReactNode; questions: SelectOneAnswerQuestion[]; allowQuestionNavigation?: boolean; allowSectionNavigation?: boolean; showStepNumbers?: boolean }) {
+export default function LightLesson({ lesson, quiz, sectionContent, questions }: {
+  lesson: Lesson;
+  quiz: Quiz;
+  sectionContent: ReactNode[];
+  questions: SelectOneAnswerQuestion[];
+}) {
   const { locale } = useLocale();
   const rtl = getLocaleDirection(locale) === 'rtl';
   const { progress, dispatch } = useLessonProgress();
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [questionStatuses, setQuestionStatuses] = useState<QuestionStatus[]>(() => questions.map((_, index) => index === 0 ? 'unanswered' : 'deferred'));
-  const [score, setScore] = useState(0);
+  const [quizState, setQuizState] = useState<QuizState | null>(null);
+  const quizStateRef = useRef<QuizState | null>(null);
+  const loadPromise = useRef<Promise<QuizState> | null>(null);
+  const saveQueue = useRef<Promise<unknown>>(Promise.resolve());
   const [sound, setSound] = useState(true);
+
+  useEffect(() => {
+    if (!progress.ready) return;
+    let active = true;
+    loadPromise.current ??= (async () => {
+        const saved = progress.quizStateId ? await getQuizState(progress.quizStateId) : undefined;
+        return saved ?? [...await listQuizStates(quiz.id)].reverse().find(item => item.status !== 'finished') ?? await createQuizState(quiz.id);
+    })();
+    void loadPromise.current.then(state => {
+        if (!active) return;
+        quizStateRef.current = state;
+        setQuizState(state);
+        dispatch({ type: 'linkQuiz', id: state.id });
+        if (state.status === 'finished') dispatch({ type: 'testDone' });
+        if (state.status !== 'new') {
+          const firstUnanswered = questions.findIndex(question => state.answers[question.id]?.status !== 'submitted');
+          setQuestionIndex(firstUnanswered < 0 ? questions.length - 1 : firstUnanswered);
+        }
+    }).catch(() => {
+        if (!active) return;
+        const state: QuizState = { id: crypto.randomUUID(), quizId: quiz.id, status: 'new' };
+        quizStateRef.current = state;
+        setQuizState(state);
+    });
+    return () => { active = false; };
+  }, [dispatch, progress.ready, progress.quizStateId, questions, quiz.id]);
+
   useEffect(() => {
     document.getElementById('learning-content')?.scrollTo({ top: 0 });
   }, [progress.step]);
+
+  function updateQuestion(questionId: string, update: (answers: Record<string, QuizQuestionState>) => Record<string, QuizQuestionState>) {
+    const current = quizStateRef.current;
+    if (!current || current.status === 'finished') return;
+    const next: QuizState = {
+      id: current.id,
+      quizId: current.quizId,
+      status: 'in-progress',
+      startedAt: current.status === 'new' ? new Date().toISOString() : current.startedAt,
+      answers: update(current.status === 'new' ? {} : current.answers),
+    };
+    quizStateRef.current = next;
+    setQuizState(next);
+    saveQueue.current = saveQueue.current.then(() => saveQuizState(next)).catch(() => undefined);
+  }
+
+  function setAnswer(questionId: string, value: string | null, status: 'draft' | 'submitted', correct?: boolean) {
+    updateQuestion(questionId, answers => {
+      const next = { ...answers };
+      if (!value) delete next[questionId];
+      else if (status === 'submitted') next[questionId] = { status, answer: { type: 'select-one-answer', value }, result: { status: correct ? 'correct' : 'incorrect', earnedWeight: correct ? (quiz.questionBank.find(question => question.id === questionId)?.weight ?? 0) : 0 } };
+      else next[questionId] = { status, answer: { type: 'select-one-answer', value } };
+      return next;
+    });
+  }
+
+  function finishQuiz() {
+    const current = quizStateRef.current;
+    if (!current || current.status !== 'in-progress') return;
+    const earned = quiz.questionBank.reduce((total, question) => total + (current.answers[question.id]?.result?.earnedWeight ?? 0), 0);
+    const maximum = quiz.questionBank.reduce((total, question) => total + question.weight, 0);
+    const value = quiz.grading?.mode === 'points' ? earned : maximum ? earned / maximum * 100 : 0;
+    const result: QuizResult = quiz.grading
+      ? { status: 'graded', success: value >= quiz.grading.successThreshold, value }
+      : { status: 'ungraded' };
+    const finished: QuizState = { ...current, status: 'finished', completedAt: new Date().toISOString(), result };
+    quizStateRef.current = finished;
+    setQuizState(finished);
+    saveQueue.current = saveQueue.current.then(() => saveQuizState(finished)).catch(() => undefined);
+    dispatch({ type: 'testDone' });
+    if (sound) void playCelebration();
+  }
+
   function nextQuestion(index: number) {
-    if (index + 1 === questions.length) {
-      dispatch({ type: 'testDone' });
-      if (sound) void playCelebration();
-    } else setQuestionIndex(index + 1);
+    if (index + 1 === questions.length) finishQuiz();
+    else setQuestionIndex(index + 1);
   }
-  function navigateQuestion(index: number) {
-    if (!allowQuestionNavigation || index < 0 || index >= questions.length) return;
-    setQuestionIndex(index);
-    setQuestionStatuses(statuses => statuses.map((status, current) => current === index && status === 'deferred' ? 'unanswered' : status));
-  }
+
+  const answers = quizState?.status === 'new' ? {} : quizState?.answers ?? {};
+  const questionStatuses: QuestionStatus[] = questions.map((question, index) => {
+    const entry = answers[question.id];
+    return entry?.result?.status ?? (entry?.status === 'deferred' ? 'deferred' : index === questionIndex || entry?.status === 'draft' ? 'unanswered' : 'deferred');
+  });
+  const score = questionStatuses.filter(status => status === 'correct').length;
+  const steps = lesson.sections.content.map(section => ({
+    id: 'sectionId' in section ? section.sectionId : section.id,
+    title: 'sectionId' in section ? 'Тест' : section.name.value,
+  }));
+
+  if (!progress.ready || !quizState) return <div className={styles.lesson} />;
+
   return <div className={styles.lesson}>
-    <LessonSteps steps={[{ id: 'theory', title: 'Теорія' }, { id: 'practice', title: 'Практика' }, { id: 'quiz', title: 'Тест' }]} currentStep={progress.step} unlocked={progress.unlocked} completedStep={progress.testDone ? 2 : undefined} showStepNumbers={showStepNumbers} allowNavigation={allowSectionNavigation} onNavigate={step => dispatch({ type: 'visit', step })} />
+    <LessonSteps steps={steps} currentStep={progress.step} unlocked={progress.unlocked} completedStep={progress.testDone ? progress.lastStep : undefined} showStepNumbers={lesson.sections.showIndexes} allowNavigation={lesson.sections.allowNavigation} onNavigate={step => dispatch({ type: 'visit', step })} />
     <div key={progress.step} className={styles.stage}>
-      {progress.step === 0 && theory}
-      {progress.step === 1 && <MediumPractice />}
+      {progress.step < progress.lastStep && sectionContent[progress.step]}
       {progress.step === 2 && (progress.testDone ? <Celebration score={score} total={questions.length} /> : <section className={styles.quiz} aria-label="Тест">
-        <QuestionProgress className={styles.questionProgress} statuses={questionStatuses} currentIndex={questionIndex} allowNavigation={allowQuestionNavigation} onNavigate={navigateQuestion} />
-        {questions.map((testQuestion, index) => <div key={testQuestion.id} hidden={index !== questionIndex}>
-          <QuestionAttempt question={testQuestion} showErrors showCorrectAnswers showExplanation onCheck={event => {
-            const status = event.result.status === 'correct' ? 'correct' : event.result.status === 'incorrect' ? 'incorrect' : undefined;
-            if (!status) return;
-            const nextStatuses = questionStatuses.map((currentStatus, currentIndex) => currentIndex === index ? status : currentIndex === index + 1 && currentStatus === 'deferred' ? 'unanswered' : currentStatus);
-            setQuestionStatuses(nextStatuses);
-            setScore(nextStatuses.filter(currentStatus => currentStatus === 'correct').length);
-          }} actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === questions.length ? 'Завершити урок' : `Наступне питання ${rtl ? '←' : '→'}`}</button> : context.children }} />
-        </div>)}
-        <label className={styles.sound}><input type="checkbox" checked={sound} onChange={(event) => setSound(event.target.checked)} /> Звук завершення</label>
+        <QuestionProgress className={styles.questionProgress} statuses={questionStatuses} currentIndex={questionIndex} allowNavigation={quiz.interaction.allowQuestionNavigation} onNavigate={index => setQuestionIndex(index)} />
+        {questions.map((question, index) => {
+          const entry = answers[question.id];
+          const initialAnswer = entry?.answer?.type === 'select-one-answer' ? entry.answer.value : undefined;
+          const initialResult = entry?.status === 'submitted' && entry.result ? { status: entry.result.status } as const : undefined;
+          return <div key={question.id} hidden={index !== questionIndex}>
+            <QuestionAttempt
+              question={question}
+              initialAnswer={initialAnswer}
+              initialResult={initialResult}
+              showErrors={quiz.interaction.showErrors}
+              showCorrectAnswers={quiz.interaction.showCorrectAnswers}
+              showExplanation={quiz.interaction.allowExplanations}
+              onChange={event => setAnswer(question.id, event.answer, 'draft')}
+              onCheck={event => {
+                if (event.result.status === 'correct' || event.result.status === 'incorrect') setAnswer(question.id, event.answer, 'submitted', event.result.status === 'correct');
+              }}
+              onRetry={event => setAnswer(question.id, event.answer, 'draft')}
+              onReset={() => setAnswer(question.id, null, 'draft')}
+              actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === questions.length ? 'Завершити урок' : `Наступне питання ${rtl ? '←' : '→'}`}</button> : context.children }}
+            />
+          </div>;
+        })}
+        <label className={styles.sound}><input type="checkbox" checked={sound} onChange={event => setSound(event.target.checked)} /> Звук завершення</label>
       </section>)}
     </div>
   </div>;

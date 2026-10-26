@@ -12,6 +12,8 @@ export interface AttemptEvent<K extends QuestionType> extends AttemptState<K> { 
 export interface CheckEvent<K extends QuestionType> extends AttemptEvent<K> { result: CheckResult }
 export interface AnswerEvent<K extends QuestionType> extends AttemptEvent<K> { result: AnswerResult }
 export interface AttemptOptions<K extends QuestionType> {
+  initialAnswer?: AnswerMap[K];
+  initialResult?: CheckResult | null;
   disabled?: boolean;
   readOnly?: boolean;
   checkMode?: CheckMode;

@@ -29,7 +29,7 @@ import { VerticalSpace } from '@/components/widgets';
 
 type Topic = { id: string; title: string; href: string };
 
-export default function LearningLayout({ children, topics }: { children: ReactNode; topics: readonly Topic[] }) {
+export default function LearningLayout({ children, topics, skippableSteps = [] }: { children: ReactNode; topics: readonly Topic[]; skippableSteps?: readonly boolean[] }) {
   const { locale } = useLocale();
   const direction = getLocaleDirection(locale);
   const { progress, dispatch } = useLessonProgress();
@@ -122,10 +122,10 @@ export default function LearningLayout({ children, topics }: { children: ReactNo
 
       <BottomNavbar aria-label="Нижня навігація навчання" slots={{
         center: <>
-          <Button variant="contained" disabled={progress.step === 0} onClick={() => dispatch({ type: 'back' })}>{direction === 'rtl' ? '→' : '←'} Назад</Button>
+          <Button variant="contained" disabled={!progress.ready || progress.step === 0} onClick={() => dispatch({ type: 'back' })}>{direction === 'rtl' ? '→' : '←'} Назад</Button>
           <Button variant="contained" disabled={!canAdvance(progress)} onClick={() => dispatch({ type: 'next' })}>Далі {direction === 'rtl' ? '←' : '→'}</Button>
         </>,
-        right: <Button variant="outlined" disabled={progress.step >= 3} onClick={() => dispatch({ type: 'skip' })}>Skip</Button>,
+        right: <Button variant="outlined" disabled={!progress.ready || !skippableSteps[progress.step] || progress.step >= progress.lastStep} onClick={() => dispatch({ type: 'skip' })}>Skip</Button>,
       }} slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }} />
     </Box>
   );
