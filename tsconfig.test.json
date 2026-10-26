@@ -11,6 +11,7 @@
   },
   "include": [
     "tests/check.test.ts",
+    "tests/questions-colocated.test.ts",
     "tests/feedback.test.ts",
     "src/components/widgets/questions/model.ts",
     "src/components/widgets/questions/check.ts",

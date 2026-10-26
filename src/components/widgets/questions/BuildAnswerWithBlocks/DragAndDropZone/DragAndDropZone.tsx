@@ -232,14 +232,14 @@ export function DragAndDropZone({ question, value, onChange, disabled, readOnly,
       <DropZone id={bankId} label={uk.available} showLabel={!isGraded(result)} locked={locked || keyboardDrag} highlighted={Boolean(activeId && activeInAnswer)}>
         {isGraded(result) ? <Stack direction="row" useFlexGap sx={{ width: '100%', minHeight: 80, alignItems: 'stretch', justifyContent: 'center', gap: 2 }}>
           <Stack sx={{ flex: '1 1 auto', minWidth: 0, alignItems: 'center', justifyContent: 'center', gap: 2 }}>
-            <InfoOutlined aria-label="Правильна відповідь" color="disabled" />
+            <InfoOutlined aria-label={uk.optionCorrect} color="disabled" />
             <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 1 }}>
               {correctAnswerItems.map(item => <Chip key={item.id} label={item.label} variant="outlined" disabled sx={{ ...chipSx, cursor: 'default' }} />)}
             </Stack>
           </Stack>
           <Divider orientation="vertical" flexItem />
           <Stack sx={{ flex: '0 1 auto', width: 'fit-content', maxWidth: '45%', minWidth: 0, alignItems: 'center', justifyContent: 'center', gap: 2 }}>
-            <DeleteOutlineOutlined aria-label="Доступні блоки" color="disabled" />
+            <DeleteOutlineOutlined aria-label={uk.available} color="disabled" />
             <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 1 }}>
               {available.length ? available.map(item => renderBlock(item, false, undefined)) : <Typography color="text.secondary">{uk.noBlocks}</Typography>}
             </Stack>
