@@ -63,7 +63,7 @@ describe('Components', () => {
       expect(LightLesson_fx.child.progress.list()).toBeVisible();
     });
 
-    it('should persist submitted answers and complete the test through child callbacks', async () => {
+    it('should persist submitted answers and dispatch quiz completion through child callbacks', async () => {
       const { dispatch } = LightLesson_mx.prepare({ step: 2 });
       LightLesson_fx.render();
       expect(await screen.findByRole('region', { name: locale.lightLesson.test })).toBeVisible();
@@ -72,13 +72,13 @@ describe('Components', () => {
       expect(LightLesson_fx.selectors.finish()).toBeVisible();
       await LightLesson_fx.actions.finish();
       await waitFor(() => expect(dispatch).toHaveBeenCalledWith({ type: 'testDone' }));
-      expect(LightLesson_fx.child.celebration.title()).toBeVisible();
+      await waitFor(() => expect(saveQuizState).toHaveBeenCalledWith(expect.objectContaining({ status: 'finished' })));
     });
 
     it('should display completed lessons without rendering additional question controls', async () => {
       LightLesson_mx.prepare({ step: 2, progress: { testDone: true } });
       LightLesson_fx.render();
-      expect(await LightLesson_fx.child.celebration.title()).toBeVisible();
+      expect(await screen.findByRole('heading', { name: locale.celebration.title })).toBeVisible();
       expect(screen.queryByRole('button', { name: 'Check answer' })).not.toBeInTheDocument();
     });
   });
