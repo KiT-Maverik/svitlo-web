@@ -18,7 +18,7 @@ export default function MediumPractice() {
       {media.map((item, index) => <button key={item.id} aria-pressed={index === selected} onClick={() => setSelected(index)}>{item.title}</button>)}
     </div>
     <div className={styles.experiment} style={{ '--travel-time': `${2 * medium.index}s` } as CSSProperties}>
-      <div className={styles.readout} aria-live="polite"><strong>{medium.title}</strong><span>≈ {Math.round(LIGHT_SPEED_KM_S / medium.index).toLocaleString('uk-UA')} км/с</span></div>
+      <div className={styles.readout} aria-live="polite"><strong>{medium.title}</strong><span>≈ {Math.round(LIGHT_SPEED_KM_S / medium.index).toLocaleString('uk-UA')} {locale.mediumPractice.speedUnit}</span></div>
       <div className={styles.track} role="img" aria-label={`${locale.mediumPractice.trackPrefix}${medium.title}.`}>
         <div className={styles.source} /><div className={styles.beam} />
         <div className={styles.travel}><span className={styles.pulse} style={{ animationPlayState: paused ? 'paused' : 'running' }} /></div><div className={styles.screen} />

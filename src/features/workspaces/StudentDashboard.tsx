@@ -24,7 +24,7 @@ export function StudentDashboard({ lessons, progress, programs }: { lessons: Les
         </Stack>
       </Paper>;
     })}
-    <Typography component="h2" variant="h5">Мої програми</Typography>
+    <Typography component="h2" variant="h5">{locale.student.myPrograms}</Typography>
     {programs.map(program => <Paper key={program.id} variant="outlined" sx={{ p: 2 }}><Typography variant="h6">{program.title}</Typography><Typography color="text.secondary">{locale.student.programLessons(program.lessonIds.length)}</Typography></Paper>)}
   </Stack>;
 }
