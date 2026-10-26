@@ -1,4 +1,4 @@
-import type { NonEmptyResourceArray, Resource, TextResource_Config } from '../resources';
+import type { NonEmptyResourceArray, Resource_Config, TextResource_Config } from '../resources';
 import type { Disability } from '../../disabilities.types';
 
 /** Content question kinds supported by the reusable question widgets. */
@@ -80,7 +80,7 @@ export interface OrderSequence_QuestionContent extends Question_ContentBase {
   sequence: NonEmptyResourceArray;
 }
 
-export interface BasicAnswersBlock<CorrectAnswer extends Resource | NonEmptyResourceArray> {
+export interface BasicAnswersBlock<CorrectAnswer extends Resource_Config | NonEmptyResourceArray> {
   answers: {
     correct: CorrectAnswer;
     incorrect: NonEmptyResourceArray;
@@ -88,11 +88,11 @@ export interface BasicAnswersBlock<CorrectAnswer extends Resource | NonEmptyReso
   }
 }
 
-export type SelectOneAnswer_Answers = BasicAnswersBlock<Resource>['answers'];
+export type SelectOneAnswer_Answers = BasicAnswersBlock<Resource_Config>['answers'];
 
 export type SelectMultipleAnswers_Answers = BasicAnswersBlock<NonEmptyResourceArray>['answers'];
 
-export interface SelectOneAnswer_QuestionContent extends Question_ContentBase, BasicAnswersBlock<Resource> {
+export interface SelectOneAnswer_QuestionContent extends Question_ContentBase, BasicAnswersBlock<Resource_Config> {
   type: 'select-one-answer';
 }
 

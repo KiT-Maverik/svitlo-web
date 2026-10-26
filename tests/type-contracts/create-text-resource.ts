@@ -1,8 +1,8 @@
-import type { AllLocales, ChosenLocales } from '../../src/types/content/resources';
+import type { AllLocales_Config, ChosenLocales_Config } from '../../src/types/content/resources';
 import type { Locale } from '../../src/types/languages';
 import { createTextResource } from '../../src/utils/createTextResource/createTextResource';
 
-declare const allValues: AllLocales;
+declare const allValues: AllLocales_Config;
 const all = createTextResource('title', allValues);
 const allLocales: true = all.allLocales;
 const english: string = all.value['en-US'];
@@ -29,7 +29,7 @@ createTextResource('title', { 'uk-UA': 'Світло', 'en-US': 'Light' }, { loc
 // @ts-expect-error Only cannot be combined with include or exclude.
 createTextResource('title', { 'uk-UA': 'Світло' }, { locales: { only: ['uk-UA'], include: ['pl-PL'] } });
 
-declare const withoutEnglish: ChosenLocales<Exclude<Locale, 'en-US'>>;
+declare const withoutEnglish: ChosenLocales_Config<Exclude<Locale, 'en-US'>>;
 const filtered = createTextResource('title', withoutEnglish, { locales: { exclude: ['en-US'] } });
 // @ts-expect-error Excluded locales are not present in the result.
 const filteredEnglish = filtered.value['en-US'];

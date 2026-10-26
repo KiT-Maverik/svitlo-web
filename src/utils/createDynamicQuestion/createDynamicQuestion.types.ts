@@ -1,4 +1,4 @@
-import type { Resource, TextResource_AllLocales_Config } from '@/types/content/resources';
+import type { Resource_Config, TextResource_AllLocales_Config } from '@/types/content/resources';
 import type { NonEmptyArray } from '@/types/misc.types';
 
 export type DynamicQuestion_ArgumentType =
@@ -93,9 +93,9 @@ export interface DynamicQuestion_Config<TArguments extends DynamicQuestion_Argum
     buildVariants: (config: DynamicQuestion_Config<TArguments>) => DynamicQuestion_Variant<TArguments>[];
     checkConstraints: (variant: DynamicQuestion_Variant<TArguments>) => boolean;
     content: {
-        question: NonEmptyArray<Resource[]>;
-        explanation: NonEmptyArray<Resource[]>;
-        answer: NonEmptyArray<Resource[]>;
+        question: NonEmptyArray<Resource_Config[]>;
+        explanation: NonEmptyArray<Resource_Config[]>;
+        answer: NonEmptyArray<Resource_Config[]>;
     },
     name: TextResource_AllLocales_Config,
 }

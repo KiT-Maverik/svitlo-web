@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
-import {TextResource_Config, Resource} from '../content/resources';
+import {TextResource_Config, Resource_Config} from '../content/resources';
 import type { QuizConfig } from './quiz.types';
 import {NonEmptyArray} from "@/types/misc.types";
 
 export interface LessonSection_Config {
-  content: NonEmptyArray<Resource | ReactNode>;
+  content: NonEmptyArray<Resource_Config | ReactNode>;
   id: string;
   name: TextResource_Config;
   skippable: boolean;
