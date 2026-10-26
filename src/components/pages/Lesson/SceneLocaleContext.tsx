@@ -10,7 +10,7 @@ type SceneLocaleValue = {
 
 const SceneLocaleContext = createContext<SceneLocaleValue | null>(null);
 
-export function SceneLocaleProvider({ locale, scenes, children }: SceneLocaleValue & { children: ReactNode }) {
+export function SceneLocaleProvider({ locale, scenes, children }: SceneLocaleValue & { children?: ReactNode }) {
   return <SceneLocaleContext.Provider value={{ locale, scenes }}>{children}</SceneLocaleContext.Provider>;
 }
 
