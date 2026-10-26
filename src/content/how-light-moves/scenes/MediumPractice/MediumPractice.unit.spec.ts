@@ -12,6 +12,15 @@ describe('Components', () => {
       expect(screen.getByRole('link', { name: locale.mediumPractice.sourceLink })).toHaveAttribute('href', expect.stringContaining('openstax.org'));
     });
 
+    it('should use the lesson locale context for English labels and numeric values', () => {
+      MediumPractice_fx.render('en-US');
+      expect(screen.getByRole('heading', { name: 'One light. Different media.' })).toBeVisible();
+      expect(screen.getByRole('button', { name: 'Vacuum' })).toHaveAttribute('aria-pressed', 'true');
+      expect(screen.getByRole('group', { name: 'Light propagation medium' })).toBeVisible();
+      expect(screen.getByRole('img', { name: 'Light propagation model: Vacuum.' })).toBeVisible();
+      expect(screen.getByText(/299,792 km\/s/)).toBeVisible();
+    });
+
     it('should initially select the first medium and pause animation', () => {
       MediumPractice_fx.render();
       expect(MediumPractice_fx.selectors.medium(0)).toHaveAttribute('aria-pressed', 'true');
