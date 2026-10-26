@@ -9,7 +9,7 @@ import type { Locale } from '@types';
 
 export const LightPropagationSimulation_fx = {
   render: ({ locale = 'uk-UA' }: { locale?: Locale } = {}) =>
-    render(createElement(SceneLocaleProvider, { locale, scenes: lightSceneLocales[locale], children: createElement(LightPropagationSimulation) })),
+    render(createElement(SceneLocaleProvider, { locale, scenes: lightSceneLocales[locale] }, createElement(LightPropagationSimulation))),
   selectors: {
     scene: (messages = locales['uk-UA'], scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('region', { name: messages.scene.accessibleName }),
