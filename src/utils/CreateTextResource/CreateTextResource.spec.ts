@@ -27,11 +27,11 @@ describe('Utils', () => {
       });
 
       it('should support inclusion-based locale selection', () => {
-        const result = createTextResource('title', { 'pl-PL': 'Światło' }, {
+        const result = createTextResource('title', values, {
           locales: { include: ['pl-PL'] },
         });
         assert.equal(result.allLocales, false);
-        assert.equal(result.value['pl-PL'], 'Światło');
+        assert.equal(result.value['pl-PL'], 'pl-PL');
       });
 
       it('should support exclusion-based locale selection', () => {
