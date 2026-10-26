@@ -11,32 +11,32 @@ describe('DB', () => {
       describe('Listing', () => {
         it('should use the entity index and return records in persistence order', async () => {
           const persistence = stubRunStateRequest([lessonNew, lessonInProgress]);
-          assert.deepEqual(await listLessonStatess('lesson-1'), [lessonNew, lessonInProgress]);
+          assert.deepEqual(await listLessonStates('lesson-1'), [lessonNew, lessonInProgress]);
           assert.deepEqual(persistence.calls, [{ storeName: 'lessonStates', mode: 'readonly' }]);
           assert.deepEqual(persistence.index.mock.calls[0]?.arguments, ['lessonId']);
           assert.deepEqual(persistence.getAll.mock.calls[0]?.arguments, ['lesson-1']);
         });
         it('should return an empty array for an empty indexed result', async () => {
           stubRunStateRequest([]);
-          assert.deepEqual(await listLessonStatess('lesson-1'), []);
+          assert.deepEqual(await listLessonStates('lesson-1'), []);
         });
         it('should pass through an empty lookup key to the index', async () => {
           const persistence = stubRunStateRequest([]);
-          await listLessonStatess('');
+          await listLessonStates('');
           assert.deepEqual(persistence.getAll.mock.calls[0]?.arguments, ['']);
         });
       });
       describe('Validation', () => {
         it('should reject an invalid record instead of silently dropping it', async () => {
           stubRunStateRequest([lessonNew, { ...lessonNew, id: '' }]);
-          await assert.rejects(listLessonStatess('lesson-1'), ZodError);
+          await assert.rejects(listLessonStates('lesson-1'), ZodError);
         });
       });
       describe('Failures', () => {
         it('should propagate a failed index query', async () => {
           const failure = new Error('getAll failed');
           stubRunStateRequest(undefined, failure);
-          await assert.rejects(listLessonStatess('lesson-1'), error => error === failure);
+          await assert.rejects(listLessonStates('lesson-1'), error => error === failure);
         });
       });
     });
