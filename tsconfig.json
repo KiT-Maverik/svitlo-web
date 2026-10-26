@@ -23,8 +23,12 @@
       }
     ],
     "paths": {
-      "@layout": ["./src/components/layout/index.ts"],
-      "@pages": ["./src/components/pages/index.ts"],
+      "@layout": [
+        "./src/components/layout/index.ts"
+      ],
+      "@pages": [
+        "./src/components/pages/index.ts"
+      ],
       "@types": [
         "./src/types/index.ts"
       ],
@@ -46,6 +50,7 @@
     ".test-build",
     "test-results",
     "playwright-report",
-    "tests/type-contracts"
+    "tests/type-contracts",
+    "video"
   ]
 }
