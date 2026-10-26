@@ -1,5 +1,5 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 
 export const lightTravelsStraight = {
   id: 'a4f1e4aa-3831-5e3f-aece-1df57f757d82',

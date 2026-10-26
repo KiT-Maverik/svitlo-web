@@ -1,5 +1,5 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 
 export const airVacuumSpeed = {
   id: '21733db1-2e1a-55cc-80c2-08e68fec1d90',

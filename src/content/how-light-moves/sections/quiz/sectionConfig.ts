@@ -1,5 +1,5 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 import { questionBank } from './questions';
 
 export const quizSectionConfig: Quiz_Config = {
