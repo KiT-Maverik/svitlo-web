@@ -26,7 +26,7 @@ describe('Widgets', () => {
     it('should keep scoped selectors independent between instances', () => {
       VerticalSpace_fx.render({ center: 'First' });
       VerticalSpace_fx.render({ center: 'Second' });
-      const roots = document.querySelectorAll('[data-testid="vertical-space"]');
+      const roots = VerticalSpace_fx.selectors.containers();
       expect(VerticalSpace_fx.selectors.slot('center', roots[0] as HTMLElement)).toHaveTextContent('First');
       expect(VerticalSpace_fx.selectors.slot('center', roots[1] as HTMLElement)).toHaveTextContent('Second');
     });

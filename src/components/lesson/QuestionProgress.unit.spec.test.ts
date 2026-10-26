@@ -31,7 +31,8 @@ describe('Components', () => {
       const onNavigate = vi.fn();
       QuestionProgress_fx.render({ allowNavigation: true, onNavigate });
       await QuestionProgress_fx.actions.select(2, 'incorrect');
-      expect(onNavigate).toHaveBeenCalledExactlyOnceWith(2);
+      expect(onNavigate).toHaveBeenCalledTimes(1);
+      expect(onNavigate).toHaveBeenCalledWith(2);
     });
 
     it('should handle an empty status list without creating question buttons', () => {

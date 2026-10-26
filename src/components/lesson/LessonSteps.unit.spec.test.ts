@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
+import { screen } from '@testing-library/react';
 import { LessonSteps_fx } from './LessonSteps.unit.fx.test';
 import { aria } from './LessonSteps.constants';
 
@@ -27,13 +28,14 @@ describe('Components', () => {
       const onNavigate = vi.fn();
       LessonSteps_fx.render({ allowNavigation: true, unlocked: 2, onNavigate });
       await LessonSteps_fx.actions.select('2. Practice');
-      expect(onNavigate).toHaveBeenCalledExactlyOnceWith(1);
+      expect(onNavigate).toHaveBeenCalledTimes(1);
+      expect(onNavigate).toHaveBeenCalledWith(1);
     });
 
     it('should omit step numbers when requested', () => {
       LessonSteps_fx.render({ showStepNumbers: false, allowNavigation: true });
       expect(LessonSteps_fx.selectors.step('Theory')).toBeVisible();
-      expect(LessonSteps_fx.selectors.step('1. Theory')).not.toBeVisible();
+      expect(screen.queryByRole('button', { name: '1. Theory' })).not.toBeInTheDocument();
     });
 
     it('should expose completed step state through the existing data attribute', () => {

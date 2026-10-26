@@ -14,7 +14,7 @@ describe('Widgets', () => {
       LightPropagationSimulation_fx.render();
       const messages = locales['uk-UA'];
       expect(LightPropagationSimulation_fx.selectors.scene(messages)).toBeVisible();
-      expect(document.querySelector('[role="img"]')).toHaveAccessibleName(messages.track.accessibleDescription);
+      expect(LightPropagationSimulation_fx.selectors.track(messages)).toBeVisible();
     });
 
     it('should toggle playback label and pressed state when activated', async () => {

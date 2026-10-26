@@ -18,6 +18,8 @@ export const LightPropagationSimulation_fx = {
       (scope ? within(scope) : screen).getByRole('region', { name: messages.scene.accessibleName }),
     playback: (name: string, scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('button', { name }),
+    track: (messages = locales['uk-UA'], scope?: HTMLElement) =>
+      (scope ? within(scope) : screen).getByRole('img', { name: messages.track.accessibleDescription }),
     speed: (messages = locales['uk-UA'], scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('slider', { name: messages.controls.speedAccessibleName }),
   },

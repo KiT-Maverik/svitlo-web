@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { Flashcard_fx } from './Flashcard.unit.fx.test';
 
 describe('Components', () => {
@@ -47,8 +48,7 @@ describe('Components', () => {
       Flashcard_fx.render({ onReport });
       await Flashcard_fx.actions.openMenu();
       expect(Flashcard_fx.selectors.menu()).toHaveAttribute('aria-expanded', 'true');
-      await screen.findByRole('menuitem');
-      await import('@testing-library/user-event').then(({ default: userEvent }) => userEvent.click(Flashcard_fx.selectors.menuItem('report')));
+      await userEvent.click(await screen.findByRole('menuitem', { name: 'Повідомити про проблему' }));
       expect(onReport).toHaveBeenCalledOnce();
     });
 
