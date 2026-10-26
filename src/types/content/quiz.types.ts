@@ -1,10 +1,10 @@
-import type { Question_Config } from './question.types';
-import type { Resource_Config } from './resource.types';
+import type { Question, Question_Config } from './question.types';
+import type { Resource, Resource_Config } from './resource.types';
 import type { NonEmptyArray } from '../misc.types';
 
 type QuizQuestion = Question_Config & { number: number; weight: number }
 
-export type QuizEndingScreenConfig =
+export type Quiz_EndingScreen_Config =
   | {
       showDefaultContent: true;
       resources?: NonEmptyArray<Resource_Config>;
@@ -14,12 +14,12 @@ export type QuizEndingScreenConfig =
       resources: NonEmptyArray<Resource_Config>;
     };
 
-export interface QuizEndingScreensConfig {
-  success: QuizEndingScreenConfig;
-  fail: QuizEndingScreenConfig;
+export interface Quiz_EndingScreens_Config {
+  success: Quiz_EndingScreen_Config;
+  fail: Quiz_EndingScreen_Config;
 }
 
-export interface QuizConfig {
+export interface Quiz_Config {
   feedbackMode: 'immediate' | 'after-completion';
   grading?: {
     mode: 'percentage' | 'points';
@@ -47,7 +47,30 @@ export interface QuizConfig {
   };
   screen: {
     welcome?: { resources: NonEmptyArray<Resource_Config> };
-    ending?: QuizEndingScreensConfig;
+    ending?: Quiz_EndingScreens_Config;
   };
   sectionId: string;
+}
+
+export type Quiz_EndingScreen =
+  | {
+      showDefaultContent: true;
+      resources?: NonEmptyArray<Resource>;
+    }
+  | {
+      showDefaultContent: false;
+      resources: NonEmptyArray<Resource>;
+    };
+
+export interface Quiz_EndingScreens {
+  success: Quiz_EndingScreen;
+  fail: Quiz_EndingScreen;
+}
+
+export interface Quiz extends Omit<Quiz_Config, 'questionBank' | 'screen'> {
+  questionBank: NonEmptyArray<Question & { number: number; weight: number }>;
+  screen: {
+    welcome?: { resources: NonEmptyArray<Resource> };
+    ending?: Quiz_EndingScreens;
+  };
 }

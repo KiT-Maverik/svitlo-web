@@ -1,7 +1,19 @@
 export * from './languages';
 export type * from './misc.types';
 export type * from './disabilities.types';
-export type * from './workspaces';
+export type {
+  LearningProgram,
+  LessonProgress,
+  LessonSection as WorkspaceLessonSection,
+  LessonStepKind,
+  LessonSummary,
+  MutationResult,
+  ProgramDraft,
+  ProgressSummary,
+  ProgramRepository,
+  LessonRepository,
+  ProgressRepository,
+} from './workspaces';
 export * from './questions';
 
 export type * from './content/resource.types';

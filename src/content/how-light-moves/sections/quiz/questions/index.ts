@@ -1,4 +1,4 @@
-import type { QuizConfig } from '@types';
+import type { Quiz_Config } from '@types';
 import { lightTravelsStraight } from './lightTravelsStraight';
 import { lightRayDirection } from './lightRayDirection';
 import { fastestMedium } from './fastestMedium';
@@ -13,4 +13,4 @@ export const questionBank = [
   lightSpeedInWater,
   airVacuumSpeed,
   opaqueObjectShadow,
-] satisfies QuizConfig['questionBank'];
+] satisfies Quiz_Config['questionBank'];

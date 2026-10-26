@@ -1,4 +1,4 @@
-import type { QuizConfig } from '@types';
+import type { Quiz_Config } from '@types';
 import { createTextResource } from '@/utils/createTextResource/createTextResource';
 
 export const airVacuumSpeed = {
@@ -151,4 +151,4 @@ export const airVacuumSpeed = {
       ),
     ],
   },
-} satisfies QuizConfig['questionBank'][number];
+} satisfies Quiz_Config['questionBank'][number];
