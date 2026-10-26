@@ -1,0 +1,142 @@
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import type { Lesson_Config, Quiz_Config, TextResource_Config } from '@types';
+import { buildLesson } from './BuildLesson.utils';
+
+const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
+  id, blockType: 'text', allLocales: false,
+  value: { 'en-US': english, 'uk-UA': ukrainian },
+});
+
+const lesson = (): Lesson_Config => ({
+  id: 'lesson', slug: 'light', requireQuiz: true,
+  title: text('title', 'Light', 'Світло'),
+  sections: {
+    allowNavigation: true, allowSkipping: false, showIndexes: true,
+    content: [{
+      id: 'theory', skippable: false, name: text('section-name', 'Theory', 'Теорія'),
+      content: [
+        text('body', 'Body', 'Текст'),
+        'Unchanged React content',
+        { id: 'image', blockType: 'image', allLocales: false,
+          fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
+          alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
+        },
+      ],
+    }],
+  },
+});
+
+const quiz = (): Quiz_Config => ({
+  id: 'quiz', sectionId: 'quiz-section', feedbackMode: 'after-completion',
+  interaction: {
+    retries: 0, showErrors: false, showCorrectAnswers: true,
+    allowExplanations: true, allowDeferring: false,
+    allowQuestionNavigation: false, skippable: false,
+  },
+  questionBank: [{
+    id: 'q1', type: 'answer-with-number', restrictions: [],
+    content: [text('prompt', 'Number', 'Число')],
+    correctAnswer: [3],
+    placeholder: text('placeholder', 'Type', 'Введіть'),
+    number: 1, weight: 2,
+  }],
+  results: { visibility: 'hidden', showScore: false },
+  screen: {},
+});
+
+describe('Utils', () => {
+  describe('Builders', () => {
+    describe('BuildLesson', () => {
+      describe('Lesson metadata', () => {
+        it('should preserve lesson identity, slug, and quiz requirement', () => {
+          const result = buildLesson(lesson(), 'uk-UA');
+          assert.equal(result.id, 'lesson');
+          assert.equal(result.slug, 'light');
+          assert.equal(result.requireQuiz, true);
+        });
+
+        it('should localize the title for the requested locale', () => {
+          assert.deepEqual(buildLesson(lesson(), 'uk-UA').title, {
+            id: 'title', blockType: 'text', locale: 'uk-UA', value: 'Світло',
+          });
+        });
+
+        it('should retain navigation, skipping, and index visibility settings', () => {
+          const result = buildLesson(lesson(), 'en-US');
+          assert.deepEqual({
+            allowNavigation: result.sections.allowNavigation,
+            allowSkipping: result.sections.allowSkipping,
+            showIndexes: result.sections.showIndexes,
+          }, { allowNavigation: true, allowSkipping: false, showIndexes: true });
+        });
+      });
+
+      describe('Section content', () => {
+        it('should localize the section name and all resource blocks', () => {
+          const result = buildLesson(lesson(), 'uk-UA');
+          const section = result.sections.content[0];
+          if ('questionBank' in section) return assert.fail('Expected a lesson section');
+          assert.deepEqual(section.name, {
+            id: 'section-name', blockType: 'text', locale: 'uk-UA', value: 'Теорія',
+          });
+          assert.deepEqual(section.content[0], {
+            id: 'body', blockType: 'text', locale: 'uk-UA', value: 'Текст',
+          });
+          assert.deepEqual(section.content[2], {
+            id: 'image', blockType: 'image', locale: 'uk-UA',
+            fileLocation: '/uk.png', alt: 'Світло',
+          });
+        });
+
+        it('should preserve non-resource React content and its position', () => {
+          const result = buildLesson(lesson(), 'en-US');
+          const section = result.sections.content[0];
+          if ('questionBank' in section) return assert.fail('Expected a lesson section');
+          assert.deepEqual(section.content.map(block => typeof block === 'string' ? block : 'resource'), [
+            'resource', 'Unchanged React content', 'resource',
+          ]);
+        });
+
+        it('should preserve section IDs and skippable settings', () => {
+          const result = buildLesson(lesson(), 'en-US');
+          const section = result.sections.content[0];
+          if ('questionBank' in section) return assert.fail('Expected a lesson section');
+          assert.equal(section.id, 'theory');
+          assert.equal(section.skippable, false);
+        });
+
+        it('should convert quiz sections without disturbing their order among lesson sections', () => {
+          const config = lesson();
+          config.sections.content.push(quiz());
+          config.sections.content.push({
+            id: 'summary', skippable: true, name: text('summary-name', 'Summary'),
+            content: [text('summary-text', 'Finish')],
+          });
+          const result = buildLesson(config, 'uk-UA');
+          assert.deepEqual(result.sections.content.map(section => section.id), [
+            'theory', 'quiz', 'summary',
+          ]);
+          const convertedQuiz = result.sections.content[1];
+          if (!('questionBank' in convertedQuiz)) return assert.fail('Expected a quiz section');
+          assert.deepEqual(convertedQuiz.questionBank.map(question => ({
+            id: question.id, number: question.number, weight: question.weight,
+          })), [{ id: 'q1', number: 1, weight: 2 }]);
+          assert.deepEqual(convertedQuiz.questionBank[0].content[0], {
+            id: 'prompt', blockType: 'text', locale: 'uk-UA', value: 'Число',
+          });
+        });
+      });
+
+      describe('Input integrity', () => {
+        it('should not mutate lesson content, nested resources, or quiz configuration', () => {
+          const config = lesson();
+          config.sections.content.push(quiz());
+          const before = structuredClone(config);
+          buildLesson(config, 'uk-UA');
+          assert.deepEqual(config, before);
+        });
+      });
+    });
+  });
+});
