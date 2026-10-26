@@ -4,11 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "studio": "node scripts/generate-audio.mjs && remotion studio src/index.ts --port=3001",
+    "studio": "node scripts/generate-audio.mjs && node scripts/generate-short-audio.mjs && remotion studio src/index.ts --port=3001",
     "render": "node scripts/generate-audio.mjs && remotion render src/index.ts LightThroughMedia out/light-through-media.mp4 --codec=h264 --crf=16",
     "render:vertical": "node scripts/generate-audio.mjs && remotion render src/index.ts LightThroughMediaVertical out/light-through-media-vertical.mp4 --codec=h264 --crf=16",
     "poster": "node scripts/generate-audio.mjs && remotion still src/index.ts LightThroughMedia out/poster.png --frame=605",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "render:short": "node scripts/generate-short-audio.mjs && remotion render src/index.ts FractionsAdShort out/fractions-ad-short.mp4 --codec=h264 --crf=16",
+    "poster:short": "node scripts/generate-short-audio.mjs && remotion still src/index.ts FractionsAdShort out/fractions-ad-poster.png --frame=375"
   },
   "dependencies": {
     "@remotion/cli": "4.0.538",

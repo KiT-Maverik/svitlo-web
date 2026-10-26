@@ -24,4 +24,4 @@ jobs:
       - name: Check Remotion TypeScript source
         run: npm run check
       - name: Check soundtrack generator syntax (no audio produced)
-        run: node --check scripts/generate-audio.mjs
+        run: node --check scripts/generate-audio.mjs && node --check scripts/generate-short-audio.mjs
