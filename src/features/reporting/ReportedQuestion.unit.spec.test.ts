@@ -18,7 +18,7 @@ describe('Components', () => {
       ReportedQuestion_fx.render();
       await ReportedQuestion_fx.actions.openReport();
       expect(ReportedQuestion_fx.child.report.dialog()).toBeVisible();
-      expect(screen.getByText(ReportedQuestion_fx.defaults.question.prompt, { selector: 'span' })).toBeVisible();
+      expect(ReportedQuestion_fx.child.report.dialog()).toHaveTextContent(ReportedQuestion_fx.defaults.question.prompt);
     });
 
     it('should submit reports with the prefixed question ID without changing question behavior', async () => {

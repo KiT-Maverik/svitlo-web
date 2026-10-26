@@ -18,7 +18,7 @@ const questions = [{
 const quiz = {
   id: 'sample-quiz',
   sectionId: 'quiz',
-  questionBank: [{ ...questions[0], weight: 1, number: 1 }],
+  questionBank: [{ ...questions[0], weight: 1, number: 1 }] as unknown as Props['quiz']['questionBank'],
   feedbackMode: 'immediate',
   interaction: {
     retries: 0, showErrors: true, showCorrectAnswers: true,
