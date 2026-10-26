@@ -1,4 +1,5 @@
-import { FALLBACK_LANGUAGE, getLanguageCode, type Lesson, type Lesson_Config, type LessonSection, type Locale, type Quiz_Config, type Resource_Config } from '@types';
+import type { Lesson, Lesson_Config, LessonSection, Locale, Quiz_Config, Resource_Config } from '@types';
+import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 import { buildResource, buildTextResource } from '../BuildResource/BuildResource.utils';
 import { buildQuiz } from '../BuildQuiz/BuildQuiz.utils';
 
