@@ -32,7 +32,7 @@ describe('Components', () => {
     });
 
     it('should submit a trimmed message and display the created issue link', async () => {
-      const fetchMock = vi.fn(async () => ({
+      const fetchMock = vi.fn(async (_input: RequestInfo | URL, _init?: RequestInit) => ({
         ok: true,
         json: async () => ({ status: 'created', issueUrl: 'https://github.com/example/lesson/issues/7', issueNumber: 7 }),
       }));

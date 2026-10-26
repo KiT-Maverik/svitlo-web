@@ -7,12 +7,14 @@ import { locale } from './locales/uk-UA';
 
 type Props = ComponentProps<typeof ReportButton>;
 
+const defaults = { contentId: 'lesson:sample', title: 'Sample lesson' } satisfies Props;
+
 export const ReportButton_fx = {
-  defaults: { contentId: 'lesson:sample', title: 'Sample lesson' } satisfies Props,
+  defaults,
   render: (props: Partial<Props> = {}) =>
-    render(createElement(ReportButton, { ...ReportButton_fx.defaults, ...props })),
+    render(createElement(ReportButton, { ...defaults, ...props })),
   selectors: {
-    trigger: (title = ReportButton_fx.defaults.title, scope?: HTMLElement) =>
+    trigger: (title = defaults.title, scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('button', { name: aria.trigger(title) }),
     dialog: () => screen.getByRole('dialog', { name: aria.dialog }),
     message: () => screen.getByRole('textbox', { name: locale.fields.message }),
