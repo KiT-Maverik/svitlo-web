@@ -1,10 +1,9 @@
 import type {CSSProperties, ReactNode} from 'react';
-import {AbsoluteFill, interpolate, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {C, MEDIA, SCENES, clamp, roundedSpeed, smoothstep, speed, type FilmProps} from './constants';
+import {AbsoluteFill, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {C, MEDIA, SCENES, clamp, roundedSpeed, smoothstep, type FilmProps} from './constants';
 import {FlickerLine, LargeType, OpticalDiagram, Prism, SheenPanel, UpperLabel, blend, hash, reveal} from './visuals';
 
 const shell: CSSProperties = {position:'absolute',inset:0,fontFamily:'Arial, sans-serif',color:C.ink,overflow:'hidden'};
-const byFrame = (f:number, start:number, end:number):number=>interpolate(f,[start,end],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
 function In({children,frame,at=0,shift=50,delay=30,style={}}:{children:ReactNode;frame:number;at?:number;shift?:number;delay?:number;style?:CSSProperties}){
   const vis=reveal(frame,at,delay);
   return <div style={{opacity:vis,transform:`translate3d(0,${(1-vis)*shift}px,0)`,...style}}>{children}</div>;

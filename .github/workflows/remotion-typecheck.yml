@@ -23,3 +23,5 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Check Remotion TypeScript source
         run: npm run check
+      - name: Check soundtrack generator syntax (no audio produced)
+        run: node --check scripts/generate-audio.mjs

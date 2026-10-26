@@ -1,5 +1,5 @@
 import type {CSSProperties, ReactNode} from 'react';
-import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {useCurrentFrame, useVideoConfig} from 'remotion';
 import {C, clamp, degrees, roundedSpeed, smoothstep} from './constants';
 
 export const hash = (n: number): number => {
