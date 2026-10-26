@@ -1,4 +1,4 @@
-import { DEFAULT_SUPPORTED_LANGUAGES, type Locale } from '@types';
+import { DEFAULT_SUPPORTED_LANGUAGES, type Locale } from '../../types/languages';
 
 export interface CreateLocalizedFileLocationsOptions {
   only?: readonly Locale[];

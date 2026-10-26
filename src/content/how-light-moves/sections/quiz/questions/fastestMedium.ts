@@ -1,5 +1,5 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 
 export const fastestMedium = {
   id: '08c3bae5-081a-5afc-bccf-e44078e137f2',
