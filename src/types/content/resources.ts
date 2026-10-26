@@ -50,6 +50,11 @@ export interface MarkdownResource_ChosenLocales_Config<Locales extends Locale = 
 
 export type MarkdownResource_Config<Locales extends Locale = never> = MarkdownResource_AllLocales_Config | MarkdownResource_ChosenLocales_Config<Locales>;
 
+export interface MarkdownResource extends Resource_ConfigBase<'markdown'> {
+  locale: Locale;
+  fileLocation: string;
+}
+
 export interface CodeResourceParam_AllLocales {
   selector: string;
   values: Resource_AllLocales_Config;
@@ -90,6 +95,13 @@ export interface AudioResource_ChosenLocales_Config<Locales extends Locale = nev
 
 export type AudioResource_Config<Locales extends Locale = never> = AudioResource_AllLocales_Config | AudioResource_ChosenLocales_Config<Locales>;
 
+export interface AudioResource extends Resource_ConfigBase<'audio'> {
+  locale: Locale;
+  fileLocation: string;
+  title: string;
+  description: string;
+}
+
 export interface VideoResource_AllLocales_Config extends Resource_ConfigBase<'video'> {
   allLocales: true;
   fileLocation: Resource_AllLocales_Config;
@@ -104,6 +116,12 @@ export interface VideoResource_ChosenLocales_Config<Locales extends Locale = nev
 
 export type VideoResource_Config<Locales extends Locale = never> = VideoResource_AllLocales_Config | VideoResource_ChosenLocales_Config<Locales>;
 
+export interface VideoResource extends Resource_ConfigBase<'video'> {
+  locale: Locale;
+  fileLocation: string;
+  poster: string;
+}
+
 export interface ImageResource_AllLocales_Config extends Resource_ConfigBase<'image'> {
   allLocales: true;
   fileLocation: Resource_AllLocales_Config;
@@ -117,6 +135,12 @@ export interface ImageResource_ChosenLocales_Config<Locales extends Locale = nev
 }
 
 export type ImageResource_Config<Locales extends Locale = never> = ImageResource_AllLocales_Config | ImageResource_ChosenLocales_Config<Locales>;
+
+export interface ImageResource extends Resource_ConfigBase<'image'> {
+  locale: Locale;
+  fileLocation: string;
+  alt: string;
+}
 
 export type Resource_Config<Locales extends Locale = never> =
   | TextResource_Config<Locales>
