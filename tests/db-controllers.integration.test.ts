@@ -507,7 +507,7 @@ describe('DB', { concurrency: false }, () => {
                 ...current.answers,
                 'question-2': { status: 'draft', answer: { type: 'answer-with-number', value: '3.5' } },
               },
-            };
+            } satisfies QuizProgress;
           });
           assert.deepEqual(await readStored('quizStates', original.id), updated);
           assert.deepEqual((updated as QuizProgress).answers['question-1'], original.answers['question-1']);
