@@ -2,6 +2,7 @@
 
 import Box from '@mui/material/Box';
 import styles from './Lesson.module.css';
+import { aria } from './LessonSteps.constants';
 
 export interface LessonStepItem {
   id: string;
@@ -19,7 +20,7 @@ export interface LessonStepsProps {
 }
 
 export function LessonSteps({ steps, currentStep, unlocked, completedStep, showStepNumbers = true, allowNavigation = false, onNavigate }: LessonStepsProps) {
-  return <Box component="nav" className={styles.steps} aria-label="Етапи уроку">
+  return <Box component="nav" className={styles.steps} aria-label={aria.navigation}>
     {steps.map((step, index) => <Box component="button" key={step.id} type="button" disabled={!allowNavigation || index > unlocked} aria-current={index === currentStep ? 'step' : undefined} data-complete={index < unlocked || index === completedStep || undefined} onClick={() => onNavigate?.(index)}>
       <span className={styles.segment} /><span className={styles.stepLabel}>{showStepNumbers ? `${index + 1}. ` : ''}{step.title}</span>
     </Box>)}
