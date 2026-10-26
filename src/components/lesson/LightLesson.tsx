@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, type ReactNode } from 'react';
-import { lightQuestions } from '@/content/how-light-moves/sections/quiz/sectionConfig';
+import type { SelectOneAnswerQuestion } from '@/types/questions';
 import { useLessonProgress } from './LessonProgress';
 import MediumPractice from './MediumPractice';
 import Celebration, { playCelebration } from './Celebration';
@@ -12,25 +12,25 @@ import styles from './Lesson.module.css';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@/types/languages';
 
-export default function LightLesson({ theory, allowQuestionNavigation = true, allowSectionNavigation = true, showStepNumbers = true }: { theory: ReactNode; allowQuestionNavigation?: boolean; allowSectionNavigation?: boolean; showStepNumbers?: boolean }) {
+export default function LightLesson({ theory, questions, allowQuestionNavigation = true, allowSectionNavigation = true, showStepNumbers = true }: { theory: ReactNode; questions: SelectOneAnswerQuestion[]; allowQuestionNavigation?: boolean; allowSectionNavigation?: boolean; showStepNumbers?: boolean }) {
   const { locale } = useLocale();
   const rtl = getLocaleDirection(locale) === 'rtl';
   const { progress, dispatch } = useLessonProgress();
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [questionStatuses, setQuestionStatuses] = useState<QuestionStatus[]>(() => lightQuestions.map((_, index) => index === 0 ? 'unanswered' : 'deferred'));
+  const [questionStatuses, setQuestionStatuses] = useState<QuestionStatus[]>(() => questions.map((_, index) => index === 0 ? 'unanswered' : 'deferred'));
   const [score, setScore] = useState(0);
   const [sound, setSound] = useState(true);
   useEffect(() => {
     document.getElementById('learning-content')?.scrollTo({ top: 0 });
   }, [progress.step]);
   function nextQuestion(index: number) {
-    if (index + 1 === lightQuestions.length) {
+    if (index + 1 === questions.length) {
       dispatch({ type: 'testDone' });
       if (sound) void playCelebration();
     } else setQuestionIndex(index + 1);
   }
   function navigateQuestion(index: number) {
-    if (!allowQuestionNavigation || index < 0 || index >= lightQuestions.length) return;
+    if (!allowQuestionNavigation || index < 0 || index >= questions.length) return;
     setQuestionIndex(index);
     setQuestionStatuses(statuses => statuses.map((status, current) => current === index && status === 'deferred' ? 'unanswered' : status));
   }
@@ -39,16 +39,16 @@ export default function LightLesson({ theory, allowQuestionNavigation = true, al
     <div key={progress.step} className={styles.stage}>
       {progress.step === 0 && theory}
       {progress.step === 1 && <MediumPractice />}
-      {progress.step === 2 && (progress.testDone ? <Celebration score={score} total={lightQuestions.length} /> : <section className={styles.quiz} aria-label="Тест">
+      {progress.step === 2 && (progress.testDone ? <Celebration score={score} total={questions.length} /> : <section className={styles.quiz} aria-label="Тест">
         <QuestionProgress className={styles.questionProgress} statuses={questionStatuses} currentIndex={questionIndex} allowNavigation={allowQuestionNavigation} onNavigate={navigateQuestion} />
-        {lightQuestions.map((testQuestion, index) => <div key={testQuestion.id} hidden={index !== questionIndex}>
+        {questions.map((testQuestion, index) => <div key={testQuestion.id} hidden={index !== questionIndex}>
           <QuestionAttempt question={testQuestion} showErrors showCorrectAnswers showExplanation onCheck={event => {
             const status = event.result.status === 'correct' ? 'correct' : event.result.status === 'incorrect' ? 'incorrect' : undefined;
             if (!status) return;
             const nextStatuses = questionStatuses.map((currentStatus, currentIndex) => currentIndex === index ? status : currentIndex === index + 1 && currentStatus === 'deferred' ? 'unanswered' : currentStatus);
             setQuestionStatuses(nextStatuses);
             setScore(nextStatuses.filter(currentStatus => currentStatus === 'correct').length);
-          }} actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === lightQuestions.length ? 'Завершити урок' : `Наступне питання ${rtl ? '←' : '→'}`}</button> : context.children }} />
+          }} actionSlots={{ center: context => context.hasChecked ? <button className={styles.primary} onClick={() => nextQuestion(index)}>{index + 1 === questions.length ? 'Завершити урок' : `Наступне питання ${rtl ? '←' : '→'}`}</button> : context.children }} />
         </div>)}
         <label className={styles.sound}><input type="checkbox" checked={sound} onChange={(event) => setSound(event.target.checked)} /> Звук завершення</label>
       </section>)}

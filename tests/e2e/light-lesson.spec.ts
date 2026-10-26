@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { lightQuestions } from '../../src/content/how-light-moves/sections/quiz/sectionConfig';
+import { createLightQuestions } from '../../src/content/how-light-moves/sections/quiz/createLightQuestions';
+
+const lightQuestions = createLightQuestions('uk-UA');
 
 test('home opens the light lesson and preserves the three-step learning flow', async ({ page }, testInfo) => {
   await page.goto('/');

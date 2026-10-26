@@ -22,6 +22,7 @@ export interface Question_ContentBase {
   type: QuestionType;
   restrictions: Disability[];
   content: NonEmptyResourceArray;
+  explanation?: TextResource;
   flashcardConfig?: FlashcardConfig;
 }
 
