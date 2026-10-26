@@ -65,7 +65,8 @@ describe('Widgets', () => {
           const q = Questions_fx.make('matching');
           const events: string[] = [];
           const controller = createQuestionController(q, {}, checkers.matching, { onCheck: () => events.push('check') });
-          for (const answer of [{}, { a: 'x' }, { a: 'x', b: 'x' }, { a: 'unknown' }]) {
+          const drafts: Record<string, string>[] = [{}, { a: 'x' }, { a: 'x', b: 'x' }, { a: 'unknown' }];
+          for (const answer of drafts) {
             controller.setAnswer(answer);
             assert.equal(controller.isReadyToCheck(), false);
             controller.check();
