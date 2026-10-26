@@ -246,8 +246,8 @@ describe('Utils', () => {
         const variants = question.calculateValidVariants();
         for (let index = 0; index < 12; index += 1) {
           const chosen = question.getRandomVariant();
-          assert.notEqual(chosen, undefined);
-          assert.equal(variants.includes(chosen as Variant), true);
+          if (chosen === undefined) return assert.fail('Expected an available variant');
+          assert.equal(variants.includes(chosen), true);
         }
       });
 

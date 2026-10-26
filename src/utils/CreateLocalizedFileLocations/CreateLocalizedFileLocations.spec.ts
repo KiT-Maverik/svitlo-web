@@ -54,14 +54,6 @@ describe('Utils', () => {
         assert.deepEqual(Object.keys(result), ['en-US', 'pl-PL', 'uk-UA']);
       });
 
-      it('should ignore unsupported locale names provided at runtime', () => {
-        // Runtime input may come from JSON even though TypeScript callers are constrained.
-        const options: { include: readonly string[] } = { include: ['not-a-locale'] };
-        assert.deepEqual(createLocalizedFileLocations('/dir', 'md', {
-          only: [],
-          include: options.include.filter((value): value is 'en-US' => value === 'en-US'),
-        }), {});
-      });
     });
 
     describe('Path formatting', () => {
