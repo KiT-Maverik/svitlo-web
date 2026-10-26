@@ -15,9 +15,9 @@ export const MediumPractice_fx = {
   selectors: {
     title: () => screen.getByRole('heading', { name: uk.title }),
     mediaGroup: () => screen.getByRole('group', { name: aria.mediaGroup }),
-    medium: (index: number) => within(MediumPractice_fx.selectors.mediaGroup()).getByRole('button', { name: media[index].title }),
+    medium: (index: number) => within(MediumPractice_fx.selectors.mediaGroup()).getByRole('button', { name: uk.media[media[index].key] }),
     playback: (paused: boolean) => screen.getByRole('button', { name: paused ? uk.play : uk.pause }),
-    track: (index: number) => screen.getByRole('img', { name: `${uk.trackPrefix}${media[index].title}.` }),
+    track: (index: number) => screen.getByRole('img', { name: `${uk.trackPrefix}${uk.media[media[index].key]}.` }),
   },
   actions: {
     selectMedium: async (index: number) => userEvent.click(MediumPractice_fx.selectors.medium(index)),

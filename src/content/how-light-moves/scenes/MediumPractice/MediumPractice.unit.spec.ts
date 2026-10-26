@@ -34,7 +34,7 @@ describe('Components', () => {
       expect(MediumPractice_fx.selectors.medium(2)).toHaveAttribute('aria-pressed', 'true');
       expect(MediumPractice_fx.selectors.medium(0)).toHaveAttribute('aria-pressed', 'false');
       expect(MediumPractice_fx.selectors.track(2)).toBeVisible();
-      expect(screen.getByText(media[2].title, { selector: 'strong' })).toBeVisible();
+      expect(screen.getByText(uk.media[media[2].key], { selector: 'strong' })).toBeVisible();
     });
 
     it('should toggle the playback control label without changing the selected medium', async () => {
