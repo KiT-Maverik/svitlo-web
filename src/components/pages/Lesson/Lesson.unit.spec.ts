@@ -32,6 +32,7 @@ describe('Lesson page assembly', () => {
 
     const progress = onlyChild(scenes);
     expect(progress.type).toBe(LessonProgressProvider);
+    expect(progress.key).toBe(lightLesson.id);
     expect(props<{ lessonId: string; sectionIds: string[]; quizSectionId: string }>(progress))
       .toMatchObject({
         lessonId: lightLesson.id,
