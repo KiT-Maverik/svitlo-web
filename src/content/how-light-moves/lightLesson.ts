@@ -1,11 +1,11 @@
 import type { Lesson_Config } from '@types';
 import { createTextResource } from '@/utils';
-import { practiceSectionConfig } from './sections/practice/sectionConfig';
-import { quizSectionConfig } from './sections/quiz/sectionConfig';
-import { theorySectionConfig } from './sections/theory/sectionConfig';
+import { practice } from './sections/practice';
+import { quiz } from './sections/quiz';
+import { theory } from './sections/theory';
 import { locales as rayLocales } from './scenes/LightRayDiagram/lightRayDiagram.locale';
 import { locales as simulationLocales } from './scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
-import { locales as checkpointLocales } from './sections/theory/knowledgeCheckpoint.locale';
+import { locales as checkpointLocales } from './sections/theory/KnowledgeCheckpoint.locale';
 import { locales as practiceLocales } from './scenes/MediumPractice/MediumPractice.locale';
 
 export const lightLesson = {
@@ -49,6 +49,6 @@ export const lightLesson = {
     allowNavigation: true,
     allowSkipping: true,
     showIndexes: true,
-    content: [theorySectionConfig, practiceSectionConfig, quizSectionConfig],
+    content: [theory, practice, quiz],
   },
 } satisfies Lesson_Config;

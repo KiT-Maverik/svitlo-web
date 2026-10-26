@@ -58,7 +58,7 @@ const task = createTextResource(
   },
 );
 
-export const practiceSectionConfig: LessonSection_Config = {
+export const practice: LessonSection_Config = {
   id: '60032520-2238-5600-a38c-02b7ac0b8695',
   name,
   skippable: true,

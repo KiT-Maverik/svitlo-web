@@ -2,7 +2,7 @@ import type { Quiz_Config } from '@types';
 import { createTextResource } from '@/utils';
 import { questionBank } from './questions';
 
-export const quizSectionConfig: Quiz_Config = {
+export const quiz: Quiz_Config = {
   id: '557ced91-32c2-5798-a114-19a63e6d35b6',
   sectionId: '2b17e601-474e-551c-a556-a42a8e653c31',
   name: createTextResource('1eb9908b-615d-4796-88a7-03dd8213ec62', {

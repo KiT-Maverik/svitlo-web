@@ -12,3 +12,4 @@ export const media = [
 ] as const;
 
 export const LIGHT_SPEED_KM_S = 299792.458;
+// todo

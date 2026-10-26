@@ -26,7 +26,7 @@ const conclusion: MarkdownResource_AllLocales_Config = {
   fileLocation: createLocalizedFileLocations('/content/how-light-moves/sections/theory/markdown/03', 'md'),
 };
 
-export const theorySectionConfig: LessonSection_Config = {
+export const theory: LessonSection_Config = {
     id: 'ce4b3dd6-92db-5d0c-a4fc-bff481588e8a',
     name: createTextResource('dcc83b8e-b2ca-54c7-ad81-c32f337c4508', {
       'en-US': 'Theory',
