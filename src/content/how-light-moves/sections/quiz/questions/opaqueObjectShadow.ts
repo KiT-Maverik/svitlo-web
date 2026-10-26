@@ -1,5 +1,5 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 
 export const opaqueObjectShadow = {
   id: 'fbc29fba-d44d-5658-b6e7-ef1733ce81b5',
