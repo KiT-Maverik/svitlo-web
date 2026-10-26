@@ -1,5 +1,5 @@
-import type { Resource_AllLocales_Config, Resource_ChosenLocales_Config } from '../../src/types/content/resource.types';
-import type { Locale } from '../../src/types/languages';
+import type { Resource_AllLocales_Config, Resource_ChosenLocales_Config } from '@types';
+import type { Locale } from '@types';
 import { createTextResource } from '../../src/utils/createTextResource/createTextResource';
 
 declare const allValues: Resource_AllLocales_Config;

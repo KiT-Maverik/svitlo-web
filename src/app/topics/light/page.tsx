@@ -7,7 +7,7 @@ import LessonSectionContent from '@/components/lesson/LessonSectionContent';
 import { createTheorySectionConfig } from '@/content/how-light-moves/sections/theory/sectionConfig';
 import { resolveLocale } from '@/i18n/resolveLocale';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@/types/languages';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
 import { createLightQuestions } from '@/content/how-light-moves/sections/quiz/createLightQuestions';
 import { lightLesson } from '@/content/how-light-moves/lightLesson';
 

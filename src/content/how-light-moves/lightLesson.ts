@@ -1,4 +1,4 @@
-import type { Lesson_Config } from '@/types/configs/lesson.types';
+import type { Lesson_Config } from '@types';
 import { createTextResource } from '@/utils/createTextResource/createTextResource';
 import { practiceSectionConfig } from './sections/practice/sectionConfig';
 import { quizSectionConfig } from './sections/quiz/sectionConfig';

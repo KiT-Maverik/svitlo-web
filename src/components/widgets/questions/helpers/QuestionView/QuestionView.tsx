@@ -2,7 +2,7 @@
 
 import { useId } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import type { CheckResult, QuestionType } from '@/types/questions';
+import type { CheckResult, QuestionType } from '@types';
 import type { InteractionProps } from '../../interaction-props';
 import { questionRegistry } from '../../registry';
 import { QuestionResult } from '../QuestionAttempt/QuestionResult';

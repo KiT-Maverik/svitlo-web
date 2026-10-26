@@ -1,4 +1,4 @@
-import type { AnswerMap, AnswerResult, CheckResult, QuestionOf, QuestionType } from '@/types/questions';
+import type { AnswerMap, AnswerResult, CheckResult, QuestionOf, QuestionType } from '@types';
 export type CheckMode = 'manual' | 'on-change';
 export interface AttemptState<K extends QuestionType> {
   answer: AnswerMap[K];

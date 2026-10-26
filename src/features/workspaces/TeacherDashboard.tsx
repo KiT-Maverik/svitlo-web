@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Alert, Box, Button, Checkbox, FormControlLabel, Paper, Stack, TextField, Typography } from '@mui/material';
-import type { LearningProgram, LessonSummary } from '../../types/workspaces';
+import type { LearningProgram, LessonSummary } from '@types';
 import { programRepository } from './repositories';
 import { validateProgram } from './selectors';
 export function TeacherDashboard({ lessons, programs }: { lessons: LessonSummary[]; programs: LearningProgram[] }) {

@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Alert, Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField, Typography } from '@mui/material';
-import type { LessonSummary } from '../../types/workspaces';
+import type { LessonSummary } from '@types';
 import { lessonRepository } from './repositories';
 export function AdminLessons({ lessons }: { lessons: LessonSummary[] }) {
   const [search, setSearch] = useState(''), [status, setStatus] = useState('all');

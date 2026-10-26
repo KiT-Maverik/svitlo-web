@@ -1,4 +1,4 @@
-import type { CheckResult } from '@/types/questions';
+import type { CheckResult } from '@types';
 export interface FeedbackVisibility {
   showErrors?: boolean;
   showCorrectAnswers?: boolean;

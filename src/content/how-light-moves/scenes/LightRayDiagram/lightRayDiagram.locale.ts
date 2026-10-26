@@ -1,4 +1,4 @@
-import type { DefaultSupportedLanguage } from '@/types/languages';
+import type { DefaultSupportedLanguage } from '@types';
 
 export const ukUA = {
   scene: {

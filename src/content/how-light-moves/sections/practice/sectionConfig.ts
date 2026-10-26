@@ -1,4 +1,4 @@
-import type { LessonSection_Config } from '@/types/configs/lesson.types';
+import type { LessonSection_Config } from '@types';
 import { createTextResource } from '@/utils/createTextResource/createTextResource';
 
 const name = createTextResource(

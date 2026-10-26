@@ -6,7 +6,7 @@ import RestartAlt from '@mui/icons-material/RestartAlt';
 import InfoOutlined from '@mui/icons-material/InfoOutlined';
 import Close from '@mui/icons-material/Close';
 import type { SxProps, Theme } from '@mui/material';
-import type { QuestionType } from '@/types/questions';
+import type { QuestionType } from '@types';
 import type { QuestionAttemptProps, QuestionSlotContext, SlotProps } from '../../slots';
 import { createQuestionController } from '../../controller';
 import { questionRegistry } from '../../registry';

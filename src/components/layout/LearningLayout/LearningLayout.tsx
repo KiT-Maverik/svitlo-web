@@ -24,7 +24,7 @@ import BottomNavbar from '../Navigation/BottomNavbar';
 import { canAdvance, useLessonProgress } from '@/components/lesson/LessonProgress';
 import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
-import { getLocaleDirection } from '@/types/languages';
+import { getLocaleDirection } from '@types';
 import { VerticalSpace } from '@/components/widgets';
 
 type Topic = { id: string; title: string; href: string };

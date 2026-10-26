@@ -1,4 +1,4 @@
-import type { LearningProgram, LessonProgress, LessonSummary } from '../../types/workspaces';
+import type { LearningProgram, LessonProgress, LessonSummary } from '@types';
 // This lesson exists in PR #1. This catalog is a preview adapter until the branches join.
 export const lessons: LessonSummary[] = [{
   id: 'light', title: 'Як рухається світло', subject: 'Фізика', status: 'review',

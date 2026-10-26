@@ -1,5 +1,5 @@
 'use client';
-import type { Question } from '../../types/questions';
+import type { Question } from '@types';
 import { QuestionAttempt } from '@/components/widgets/questions/helpers';
 import type { CheckMode } from '@/components/widgets/questions/attempt-model';
 import { ReportButton } from './ReportButton';

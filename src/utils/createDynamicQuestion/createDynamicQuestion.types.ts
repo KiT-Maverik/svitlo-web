@@ -1,5 +1,5 @@
-import type { Resource_Config, TextResource_AllLocales_Config } from '@/types/content/resource.types';
-import type { NonEmptyArray } from '@/types/misc.types';
+import type { Resource_Config, TextResource_AllLocales_Config } from '@types';
+import type { NonEmptyArray } from '@types';
 
 export type DynamicQuestion_ArgumentType =
     | "string"

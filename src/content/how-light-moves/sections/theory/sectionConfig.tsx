@@ -1,6 +1,6 @@
-import type { LessonSection_Config } from '@/types/configs/lesson.types';
-import type { MarkdownResource_AllLocales_Config } from '@/types/content/resource.types';
-import type { DefaultSupportedLanguage } from '@/types/languages';
+import type { LessonSection_Config } from '@types';
+import type { MarkdownResource_AllLocales_Config } from '@types';
+import type { DefaultSupportedLanguage } from '@types';
 import { createLocalizedFileLocations } from '@/utils/createLocalizedFileLocations/createLocalizedFileLocations';
 import LightRayDiagram from '../../scenes/LightRayDiagram/LightRayDiagram';
 import LightPropagationSimulation from '../../scenes/LightPropagationSimulation/LightPropagationSimulation';

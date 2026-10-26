@@ -1,5 +1,5 @@
 import { Box, Button, Chip, LinearProgress, Paper, Stack, Typography } from '@mui/material';
-import type { LearningProgram, LessonProgress, LessonSummary } from '../../types/workspaces';
+import type { LearningProgram, LessonProgress, LessonSummary } from '@types';
 import { summarizeProgress } from './selectors';
 export function StudentDashboard({ lessons, progress, programs }: { lessons: LessonSummary[]; progress: LessonProgress[]; programs: LearningProgram[] }) {
   const summaries = lessons.map(lesson => summarizeProgress(lesson, progress.find(p => p.lessonId === lesson.id)));

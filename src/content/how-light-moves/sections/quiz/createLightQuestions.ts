@@ -1,5 +1,5 @@
-import type { SelectOneAnswerQuestion } from '@/types/questions';
-import type { Locale } from '@/types/languages';
+import type { SelectOneAnswerQuestion } from '@types';
+import type { Locale } from '@types';
 import { questionBank } from './questions';
 
 export function createLightQuestions(locale: Locale): SelectOneAnswerQuestion[] {

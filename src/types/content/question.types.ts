@@ -1,6 +1,6 @@
-import type { Resource, Resource_Config, TextResource, TextResource_Config } from '../resource.types';
-import type { NonEmptyArray } from '../../misc.types';
-import type { Disability } from '../../disabilities.types';
+import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
+import type { NonEmptyArray } from '../misc.types';
+import type { Disability } from '../disabilities.types';
 
 /** Content question kinds supported by the reusable question widgets. */
 export type QuestionType =
@@ -129,3 +129,25 @@ export interface SelectMultipleAnswers_Question<R extends Question_Resource = Re
 }
 
 export type SelectMultipleAnswers_Question_Config = SelectMultipleAnswers_Question<Resource_Config, TextResource_Config>;
+
+export type Question_Config =
+  | AnswerWithNumber_Question_Config
+  | AnswerWithText_Question_Config
+  | BuildAnswerWithBlocks_Question_Config
+  | FillBlanksWithBlocks_Question_Config
+  | FillBlanksWithText_Question_Config
+  | MatchBlocks_Question_Config
+  | OrderSequence_Question_Config
+  | SelectMultipleAnswers_Question_Config
+  | SelectOneAnswer_Question_Config;
+
+export type Question =
+  | AnswerWithNumber_Question
+  | AnswerWithText_Question
+  | BuildAnswerWithBlocks_Question
+  | FillBlanksWithBlocks_Question
+  | FillBlanksWithText_Question
+  | MatchBlocks_Question
+  | OrderSequence_Question
+  | SelectMultipleAnswers_Question
+  | SelectOneAnswer_Question;

@@ -1,5 +1,5 @@
 import { isGraded } from './feedback';
-import type { AnswerMap, CheckResult, QuestionOf, QuestionType } from '@/types/questions';
+import type { AnswerMap, CheckResult, QuestionOf, QuestionType } from '@types';
 import type { AttemptEvent, AttemptOptions, AttemptState } from './attempt-model';
 
 function canonical(value: unknown): string {

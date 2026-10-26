@@ -1,4 +1,4 @@
-import type { QuizConfig } from '@/types/configs/quiz.types';
+import type { QuizConfig } from '@types';
 import { createTextResource } from '@/utils/createTextResource/createTextResource';
 
 export const lightRayDirection = {

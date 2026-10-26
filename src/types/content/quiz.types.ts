@@ -1,5 +1,5 @@
-import type { Question_Config } from '../content/questions';
-import type { Resource_Config } from '../content/resource.types';
+import type { Question_Config } from './question.types';
+import type { Resource_Config } from './resource.types';
 import type { NonEmptyArray } from '../misc.types';
 
 type QuizQuestion = Question_Config & { number: number; weight: number }

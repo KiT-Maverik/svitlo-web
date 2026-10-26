@@ -2,9 +2,9 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { Fragment, type ReactNode } from 'react';
 import { MarkdownContent } from '@/components/widgets';
-import type { LessonSection_Config } from '@/types/configs/lesson.types';
-import type { Resource_Config } from '@/types/content/resource.types';
-import { getLocaleDirection, type Locale } from '@/types/languages';
+import type { LessonSection_Config } from '@types';
+import type { Resource_Config } from '@types';
+import { getLocaleDirection, type Locale } from '@types';
 
 function isResource(block: Resource_Config | ReactNode): block is Resource_Config {
   return typeof block === 'object' && block !== null && 'blockType' in block;

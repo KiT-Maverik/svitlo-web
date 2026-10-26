@@ -4,8 +4,8 @@ import type {
   DynamicQuestion_NumberArgumentConfig,
   DynamicQuestion_Variant,
 } from './createDynamicQuestion.types';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@/types/languages';
-import type { TextResource_AllLocales_Config } from '@/types/content/resource.types';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
+import type { TextResource_AllLocales_Config } from '@types';
 
 const girlsApple = {
   selector: 'girlsApple',

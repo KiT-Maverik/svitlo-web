@@ -9,8 +9,8 @@ const mismatch: Submission = { question: numeric, answer: { type: 'matching', va
 const invalidView: QuestionViewProps = { type: 'numeric', question: numeric, value: [], onChange: () => {} };
 void [invalid, mismatch, invalidView];
 
-import type { SelectMultipleAnswersQuestion, AnswerWithNumberQuestion } from '../../src/types/questions';
-import { QuestionType } from '../../src/types/questions';
+import type { SelectMultipleAnswersQuestion, AnswerWithNumberQuestion } from '@types';
+import { QuestionType } from '@types';
 import type { QuestionAttemptProps } from '../../src/components/widgets/questions/helpers';
 const extended: SelectMultipleAnswersQuestion = {
   id: 'extended', type: QuestionType.SelectMultipleAnswers, prompt: '?', explanation: '.', options: [{ id: 'a', label: 'A' }], correctIds: ['a'],

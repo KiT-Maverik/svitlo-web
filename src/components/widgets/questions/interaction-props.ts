@@ -1,4 +1,4 @@
-import type { AnswerMap, CheckResult, QuestionOf, QuestionType } from '@/types/questions';
+import type { AnswerMap, CheckResult, QuestionOf, QuestionType } from '@types';
 import type { FeedbackVisibility } from './feedback';
 export interface InteractionProps<K extends QuestionType> extends FeedbackVisibility {
   showLetters?: boolean;

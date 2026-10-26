@@ -6,7 +6,7 @@ import Select from '@mui/material/Select';
 import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
 import { useColorScheme } from '@mui/material/styles';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@/types/languages';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 
 const locales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale, language, nativeName, flag }) => ({

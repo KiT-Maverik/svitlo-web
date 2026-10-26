@@ -1,4 +1,4 @@
-import type { QuizConfig } from '@/types/configs/quiz.types';
+import type { QuizConfig } from '@types';
 import { lightTravelsStraight } from './lightTravelsStraight';
 import { lightRayDirection } from './lightRayDirection';
 import { fastestMedium } from './fastestMedium';

@@ -1,6 +1,6 @@
 import styles from './LightRayDiagram.module.css';
 import { locales, type LightRayDiagramLocaleCode } from './lightRayDiagram.locale';
-import { getLocaleDirection } from '@/types/languages';
+import { getLocaleDirection } from '@types';
 
 export interface LightRayDiagramProps {
   locale: LightRayDiagramLocaleCode;

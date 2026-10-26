@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, type ReactNode } from 'react';
-import type { SelectOneAnswerQuestion } from '@/types/questions';
+import type { SelectOneAnswerQuestion } from '@types';
 import { useLessonProgress } from './LessonProgress';
 import MediumPractice from './MediumPractice';
 import Celebration, { playCelebration } from './Celebration';
@@ -10,7 +10,7 @@ import { QuestionProgress, type QuestionStatus } from './QuestionProgress';
 import { LessonSteps } from './LessonSteps';
 import styles from './Lesson.module.css';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
-import { getLocaleDirection } from '@/types/languages';
+import { getLocaleDirection } from '@types';
 
 export default function LightLesson({ theory, questions, allowQuestionNavigation = true, allowSectionNavigation = true, showStepNumbers = true }: { theory: ReactNode; questions: SelectOneAnswerQuestion[]; allowQuestionNavigation?: boolean; allowSectionNavigation?: boolean; showStepNumbers?: boolean }) {
   const { locale } = useLocale();

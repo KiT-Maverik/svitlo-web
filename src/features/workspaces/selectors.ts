@@ -1,4 +1,4 @@
-import type { LessonProgress, LessonSummary, ProgramDraft, ProgressSummary } from '../../types/workspaces';
+import type { LessonProgress, LessonSummary, ProgramDraft, ProgressSummary } from '@types';
 export function summarizeProgress(lesson: LessonSummary, progress?: LessonProgress): ProgressSummary {
   const valid = new Set(lesson.sections.map(section => section.id));
   const completed = new Set((progress?.lessonId === lesson.id ? progress.completedSectionIds : []).filter(id => valid.has(id))).size;

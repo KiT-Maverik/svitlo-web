@@ -1,4 +1,4 @@
-import type { LessonRepository, ProgramRepository, ProgressRepository } from '../../types/workspaces';
+import type { LessonRepository, ProgramRepository, ProgressRepository } from '@types';
 import { demoPrograms, demoProgress, lessons } from './catalog';
 const unavailable = () => ({ status: 'not-configured' as const, message: 'Збереження змін ще не підключене. Дані залишилися без змін.' });
 export const programRepository: ProgramRepository = { list: async () => structuredClone(demoPrograms), save: async () => unavailable(), remove: async () => unavailable() };

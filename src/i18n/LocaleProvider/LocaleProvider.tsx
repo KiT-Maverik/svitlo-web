@@ -3,7 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, type ReactNode } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { ThemeProvider, useTheme } from '@mui/material/styles';
-import { getLocaleDirection, type Locale } from '@/types/languages';
+import { getLocaleDirection, type Locale } from '@types';
 
 type LocaleContextValue = {
   locale: Locale;

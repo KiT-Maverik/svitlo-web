@@ -1,7 +1,7 @@
 import type { FeedbackVisibility } from './feedback';
 import type { ReactNode } from 'react';
 import type { BoxProps, PaperProps, StackProps } from '@mui/material';
-import type { QuestionOf, QuestionType } from '@/types/questions';
+import type { QuestionOf, QuestionType } from '@types';
 import type { AttemptOptions, AttemptState } from './attempt-model';
 
 export interface QuestionSlotContext<K extends QuestionType> extends Readonly<AttemptState<K>> {

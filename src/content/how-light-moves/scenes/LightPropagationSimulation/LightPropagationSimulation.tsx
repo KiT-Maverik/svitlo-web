@@ -4,7 +4,7 @@ import { useState, useSyncExternalStore } from 'react';
 import { Box, Button, Paper, Slider, Typography } from '@mui/material';
 import type { LightPropagationSimulationLocale, LightPropagationSimulationLocaleCode } from './lightPropagationSimulation.locale';
 import styles from './LightPropagationSimulation.module.css';
-import { getLocaleDirection } from '@/types/languages';
+import { getLocaleDirection } from '@types';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
 

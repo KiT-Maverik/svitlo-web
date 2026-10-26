@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import type { SelectOneAnswerQuestion, SelectMultipleAnswersQuestion, AnswerWithNumberQuestion } from '../src/types/questions';
+import type { SelectOneAnswerQuestion, SelectMultipleAnswersQuestion, AnswerWithNumberQuestion } from '@types';
 import { checkers } from '../src/components/widgets/questions/check';
 import { answersEqual, createQuestionController } from '../src/components/widgets/questions/controller';
 const question: SelectOneAnswerQuestion = { id: 'q', type: 'single-select', prompt: 'Choose', explanation: 'Reason', options: [{ id: 'a', label: 'A' }, { id: 'b', label: 'B' }], correctId: 'a' };

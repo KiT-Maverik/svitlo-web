@@ -3,7 +3,7 @@
 import { FeedbackDemo } from './FeedbackDemo';
 import { useState } from 'react';
 import { Box, Button, Checkbox, FormControlLabel, Paper, Stack, TextField, Typography } from '@mui/material';
-import type { AnswerWithNumberQuestion, SelectOneAnswerQuestion } from '@/types/questions';
+import type { AnswerWithNumberQuestion, SelectOneAnswerQuestion } from '@types';
 import { QuestionAttempt } from '@/components/widgets/questions/helpers';
 import type { AttemptEvent, AnswerEvent } from '@/components/widgets/questions/attempt-model';
 const manual: SelectOneAnswerQuestion = { id: 'api-manual', type: 'single-select', prompt: 'Ручна перевірка: оберіть парне число.', options: [{ id: 'two', label: '2' }, { id: 'three', label: '3' }], correctId: 'two', explanation: '2 ділиться на 2 без остачі.' };
