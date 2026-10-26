@@ -32,10 +32,10 @@ describe('Components', () => {
     });
 
     it('should submit a trimmed message and display the created issue link', async () => {
-      const fetchMock = vi.fn(async (_input: RequestInfo | URL, _init?: RequestInit) => ({
+      const fetchMock = vi.fn<typeof fetch>().mockResolvedValue({
         ok: true,
         json: async () => ({ status: 'created', issueUrl: 'https://github.com/example/lesson/issues/7', issueNumber: 7 }),
-      }));
+      } as Response);
       vi.stubGlobal('fetch', fetchMock);
       ReportButton_fx.render();
       await ReportButton_fx.actions.open();

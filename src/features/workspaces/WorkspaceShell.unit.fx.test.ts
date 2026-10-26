@@ -6,9 +6,12 @@ import { locale } from './locales/uk-UA';
 type Props = ComponentProps<typeof WorkspaceShell>;
 
 export const WorkspaceShell_fx = {
-  render: (props: Partial<Props> = {}) => render(createElement(WorkspaceShell, {
-    title: 'Example workspace', subtitle: 'Workspace description', current: '/student', children: 'Workspace body', ...props,
-  })),
+  render: (props: Partial<Props> = {}) => {
+    const { children = 'Workspace body', ...overrides } = props;
+    return render(createElement(WorkspaceShell, {
+      title: 'Example workspace', subtitle: 'Workspace description', current: '/student', ...overrides,
+    }, children));
+  },
   selectors: {
     main: () => screen.getByRole('main'),
     navigation: (scope?: HTMLElement) =>
