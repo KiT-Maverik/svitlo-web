@@ -1,6 +1,6 @@
 import type { DefaultSupportedLanguage } from '@types';
 
-export const uk = {
+const uk = {
   scene: {
     title: "Простеж шлях світла",
     description: "Від джерела — прямою до екрана.",
@@ -25,7 +25,7 @@ export const uk = {
 
 export type LightPropagationSimulation_Locale = typeof uk;
 
-export const en = {
+const en = {
   scene: {
     title: "Trace the path of light",
     description: "From the source straight to the screen.",
@@ -48,7 +48,7 @@ export const en = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const zh = {
+const zh = {
   scene: {
     title: "追踪光的路径",
     description: "从光源沿直线传播到屏幕。",
@@ -71,7 +71,7 @@ export const zh = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const hi = {
+const hi = {
   scene: {
     title: "प्रकाश के पथ का अनुसरण करें",
     description: "स्रोत से पर्दे तक सीधी रेखा में।",
@@ -94,7 +94,7 @@ export const hi = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const es = {
+const es = {
   scene: {
     title: "Sigue el recorrido de la luz",
     description: "De la fuente a la pantalla en línea recta.",
@@ -117,7 +117,7 @@ export const es = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const ar = {
+const ar = {
   scene: {
     title: "تتبّع مسار الضوء",
     description: "من المصدر إلى الشاشة في خط مستقيم.",
@@ -140,7 +140,7 @@ export const ar = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const fr = {
+const fr = {
   scene: {
     title: "Suis le trajet de la lumière",
     description: "De la source à l’écran en ligne droite.",
@@ -163,7 +163,7 @@ export const fr = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const bn = {
+const bn = {
   scene: {
     title: "আলোর পথ অনুসরণ করো",
     description: "উৎস থেকে সরলরেখায় পর্দা পর্যন্ত।",
@@ -186,7 +186,7 @@ export const bn = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const pt = {
+const pt = {
   scene: {
     title: "Acompanhe o caminho da luz",
     description: "Da fonte até a tela em linha reta.",
@@ -209,7 +209,7 @@ export const pt = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const ur = {
+const ur = {
   scene: {
     title: "روشنی کے راستے کا مشاہدہ کریں",
     description: "منبع سے پردے تک سیدھی لکیر میں۔",
@@ -232,7 +232,7 @@ export const ur = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const id = {
+const id = {
   scene: {
     title: "Telusuri lintasan cahaya",
     description: "Dari sumber menuju layar dalam garis lurus.",
@@ -255,7 +255,7 @@ export const id = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const de = {
+const de = {
   scene: {
     title: "Verfolge den Weg des Lichts",
     description: "Von der Quelle geradlinig zum Schirm.",
@@ -278,7 +278,7 @@ export const de = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const ja = {
+const ja = {
   scene: {
     title: "光の進む道をたどろう",
     description: "光源からスクリーンまで一直線に。",
@@ -301,7 +301,7 @@ export const ja = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const ko = {
+const ko = {
   scene: {
     title: "빛의 경로를 따라가 보세요",
     description: "광원에서 스크린까지 직선으로.",
@@ -324,7 +324,7 @@ export const ko = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const tr = {
+const tr = {
   scene: {
     title: "Işığın yolunu takip et",
     description: "Kaynaktan ekrana düz bir çizgi boyunca.",
@@ -347,7 +347,7 @@ export const tr = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const vi = {
+const vi = {
   scene: {
     title: "Theo dõi đường đi của ánh sáng",
     description: "Từ nguồn sáng đến màn theo đường thẳng.",
@@ -370,7 +370,7 @@ export const vi = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const ta = {
+const ta = {
   scene: {
     title: "ஒளியின் பாதையைப் பின்தொடருங்கள்",
     description: "ஒளிமூலத்திலிருந்து திரை வரை நேர்கோட்டில்.",
@@ -393,7 +393,7 @@ export const ta = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const te = {
+const te = {
   scene: {
     title: "కాంతి మార్గాన్ని అనుసరించండి",
     description: "కాంతి మూలం నుంచి తెర వరకు సరళరేఖలో.",
@@ -416,7 +416,7 @@ export const te = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const mr = {
+const mr = {
   scene: {
     title: "प्रकाशाचा मार्ग पाहा",
     description: "स्रोतापासून पडद्यापर्यंत सरळ रेषेत.",
@@ -439,7 +439,7 @@ export const mr = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const ms = {
+const ms = {
   scene: {
     title: "Jejaki laluan cahaya",
     description: "Dari sumber ke skrin dalam garis lurus.",
@@ -462,7 +462,7 @@ export const ms = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const he = {
+const he = {
   scene: {
     title: "עקבו אחר מסלול האור",
     description: "ממקור האור אל המסך בקו ישר.",
@@ -485,7 +485,7 @@ export const he = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
-export const pl = {
+const pl = {
   scene: {
     title: "Prześledź drogę światła",
     description: "Od źródła prosto do ekranu.",

@@ -1,11 +1,11 @@
 import type { DefaultSupportedLanguage } from '@types';
 
-export interface TheoryKnowledgeCheckpoint_Locale {
+export type TheoryKnowledgeCheckpoint_Locale = {
   title: string;
   items: readonly { question: string; answer: string }[];
-}
+};
 
-export const en = {
+const en = {
     title: 'Try to explain',
     items: [
       { question: "Where is the light source in the scene?", answer: "The source is on the left." },
@@ -14,7 +14,7 @@ export const en = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const zh = {
+const zh = {
     title: '试着解释',
     items: [
       { question: "场景中的光源在哪里？", answer: "光源在左侧。" },
@@ -23,7 +23,7 @@ export const zh = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const hi = {
+const hi = {
     title: 'समझाने की कोशिश करें',
     items: [
       { question: "दृश्य में प्रकाश का स्रोत कहाँ है?", answer: "स्रोत बाईं ओर है।" },
@@ -32,7 +32,7 @@ export const hi = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const es = {
+const es = {
     title: 'Intenta explicarlo',
     items: [
       { question: "¿Dónde está la fuente de luz en la escena?", answer: "La fuente está a la izquierda." },
@@ -41,7 +41,7 @@ export const es = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const ar = {
+const ar = {
     title: 'حاول أن تشرح',
     items: [
       { question: "أين يقع مصدر الضوء في المشهد؟", answer: "المصدر على اليمين." },
@@ -50,7 +50,7 @@ export const ar = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const fr = {
+const fr = {
     title: "Essaie d'expliquer",
     items: [
       { question: "Où se trouve la source de lumière dans la scène ?", answer: "La source est à gauche." },
@@ -59,7 +59,7 @@ export const fr = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const bn = {
+const bn = {
     title: 'ব্যাখ্যা করার চেষ্টা করো',
     items: [
       { question: "দৃশ্যে আলোর উৎস কোথায়?", answer: "উৎসটি বাঁ দিকে।" },
@@ -68,7 +68,7 @@ export const bn = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const pt = {
+const pt = {
     title: 'Tente explicar',
     items: [
       { question: "Onde está a fonte de luz na cena?", answer: "A fonte está à esquerda." },
@@ -77,7 +77,7 @@ export const pt = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const ur = {
+const ur = {
     title: 'وضاحت کرنے کی کوشش کریں',
     items: [
       { question: "منظر میں روشنی کا منبع کہاں ہے؟", answer: "منبع دائیں طرف ہے۔" },
@@ -86,7 +86,7 @@ export const ur = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const id = {
+const id = {
     title: 'Coba jelaskan',
     items: [
       { question: "Di mana letak sumber cahaya pada adegan?", answer: "Sumber ada di sebelah kiri." },
@@ -95,7 +95,7 @@ export const id = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const de = {
+const de = {
     title: 'Versuche es zu erklären',
     items: [
       { question: "Wo befindet sich die Lichtquelle in der Szene?", answer: "Die Quelle ist links." },
@@ -104,7 +104,7 @@ export const de = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const ja = {
+const ja = {
     title: '説明してみよう',
     items: [
       { question: "場面の中で光源はどこにありますか？", answer: "光源は左側にあります。" },
@@ -113,7 +113,7 @@ export const ja = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const ko = {
+const ko = {
     title: '설명해 보세요',
     items: [
       { question: "장면에서 광원은 어디에 있나요?", answer: "광원은 왼쪽에 있습니다." },
@@ -122,7 +122,7 @@ export const ko = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const tr = {
+const tr = {
     title: 'Açıklamayı dene',
     items: [
       { question: "Sahnedeki ışık kaynağı nerede?", answer: "Kaynak soldadır." },
@@ -131,7 +131,7 @@ export const tr = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const vi = {
+const vi = {
     title: 'Thử giải thích',
     items: [
       { question: "Nguồn sáng nằm ở đâu trong cảnh?", answer: "Nguồn sáng ở bên trái." },
@@ -140,7 +140,7 @@ export const vi = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const ta = {
+const ta = {
     title: 'விளக்க முயலுங்கள்',
     items: [
       { question: "காட்சியில் ஒளி மூலம் எங்கு உள்ளது?", answer: "மூலம் இடப்புறத்தில் உள்ளது." },
@@ -149,7 +149,7 @@ export const ta = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const te = {
+const te = {
     title: 'వివరించడానికి ప్రయత్నించండి',
     items: [
       { question: "దృశ్యంలో కాంతి మూలం ఎక్కడ ఉంది?", answer: "మూలం ఎడమ వైపున ఉంది." },
@@ -158,7 +158,7 @@ export const te = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const mr = {
+const mr = {
     title: 'समजावून सांगण्याचा प्रयत्न करा',
     items: [
       { question: "दृश्यात प्रकाशाचा स्रोत कुठे आहे?", answer: "स्रोत डावीकडे आहे." },
@@ -167,7 +167,7 @@ export const mr = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const ms = {
+const ms = {
     title: 'Cuba jelaskan',
     items: [
       { question: "Di manakah sumber cahaya dalam adegan ini?", answer: "Sumber berada di sebelah kiri." },
@@ -176,7 +176,7 @@ export const ms = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const he = {
+const he = {
     title: 'נסו להסביר',
     items: [
       { question: "היכן נמצא מקור האור בסצנה?", answer: "המקור נמצא מימין." },
@@ -185,7 +185,7 @@ export const he = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const pl = {
+const pl = {
     title: 'Spróbuj wyjaśnić',
     items: [
       { question: "Gdzie w scenie znajduje się źródło światła?", answer: "Źródło jest po lewej." },
@@ -194,7 +194,7 @@ export const pl = {
     ],
   } satisfies TheoryKnowledgeCheckpoint_Locale;
 
-export const uk = {
+const uk = {
     title: 'Спробуй пояснити',
     items: [
       { question: "Де в сцені розташоване джерело світла?", answer: "Джерело розташоване ліворуч." },

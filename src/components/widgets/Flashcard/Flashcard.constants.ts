@@ -1,4 +1,6 @@
-import { locale } from './Flashcard.locale';
+import { locales } from './Flashcard.locale';
+
+const locale = locales.uk;
 
 export const aria = {
   region: locale.flashcard.region,

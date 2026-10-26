@@ -18,7 +18,9 @@ import LockOpenOutlined from '@mui/icons-material/LockOpenOutlined';
 import { QuestionActions } from '@/components/widgets/questions/helpers';
 import styles from './Flashcard.module.css';
 import { aria } from './Flashcard.constants';
-import { locale } from './Flashcard.locale';
+import { locales } from './Flashcard.locale';
+
+const locale = locales.uk;
 
 export interface FlashcardLabel {
   label: ReactNode;

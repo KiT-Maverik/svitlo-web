@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { screen } from '@testing-library/react';
 import { MediumPractice_fx } from './MediumPractice.unit.fx';
-import { uk } from './MediumPractice.locale';
+import { locales } from './MediumPractice.locale';
+
+const uk = locales.uk;
 import { media } from './MediumPractice.constants';
 
 describe('Components', () => {

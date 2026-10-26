@@ -7,7 +7,9 @@ import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import MediumPractice from './MediumPractice';
 import { aria } from './MediumPractice.constants';
-import { uk } from './MediumPractice.locale';
+import { locales } from './MediumPractice.locale';
+
+const uk = locales.uk;
 import { media } from './MediumPractice.constants';
 
 export const MediumPractice_fx = {

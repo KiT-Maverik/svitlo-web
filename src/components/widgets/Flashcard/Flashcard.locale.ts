@@ -1,4 +1,4 @@
-export const locale = {
+const uk = {
   flashcard: {
     region: 'Флешкартка',
     actions: {
@@ -10,4 +10,7 @@ export const locale = {
       addLabel: 'Додати мітку',
     },
   },
-} as const;
+};
+
+export type Flashcard_Locale = typeof uk;
+export const locales = { uk } as const;

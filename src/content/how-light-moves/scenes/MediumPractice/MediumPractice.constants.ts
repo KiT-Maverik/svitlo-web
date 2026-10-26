@@ -1,4 +1,6 @@
-import { uk } from './MediumPractice.locale';
+import { locales } from './MediumPractice.locale';
+
+const uk = locales.uk;
 
 export const aria = { mediaGroup: uk.mediaGroup } as const;
 

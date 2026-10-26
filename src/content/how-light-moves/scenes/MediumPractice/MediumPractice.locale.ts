@@ -1,6 +1,6 @@
 import type { LanguageCode } from '@types';
 
-export const uk = {
+const uk = {
   eyebrow: "ДОСЛІДЖУЙ · ПОРІВНЮЙ · ПОМІЧАЙ",
   title: "Одне світло. Різні середовища.",
   description: "Перемикай середовища й порівнюй час проходження однакової відстані. Точка рухається між джерелом та екраном у режимі повтору.",
@@ -22,7 +22,7 @@ export type MediumPractice_Locale = {
   [K in Exclude<keyof typeof uk, 'media'>]: string;
 } & { media: { vacuum: string; air: string; water: string } };
 
-export const en = {
+const en = {
   eyebrow: 'EXPLORE · COMPARE · OBSERVE',
   title: 'One light. Different media.',
   description: 'Switch between media and compare the time light takes to cover the same distance. The point travels between the source and the screen in a repeating animation.',
