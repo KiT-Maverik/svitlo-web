@@ -11,13 +11,17 @@
   },
   "include": [
     "tests/check.test.ts",
+    "tests/questions-colocated.test.ts",
     "tests/feedback.test.ts",
     "src/components/widgets/questions/model.ts",
     "src/components/widgets/questions/check.ts",
     "src/components/widgets/questions/examples.ts",
     "tests/controller.test.ts",
     "tests/workspaces.test.ts",
-    "tests/reporting.test.ts"
+    "tests/reporting.test.ts",
+    "src/utils/**/*.spec.ts",
+    "src/db/utils/**/*.spec.ts",
+    "tests/db-controllers.integration.test.ts"
   ],
   "exclude": [
     "node_modules",

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { createLightQuestions } from '../../src/content/how-light-moves/sections/quiz/createLightQuestions';
 import { quizSectionConfig } from '../../src/content/how-light-moves/sections/quiz/sectionConfig';
-import { buildQuiz } from '../../src/utils/buildLesson/buildQuiz';
+import { buildQuiz } from '../../src/utils';
 
 const lightQuestions = createLightQuestions(buildQuiz(quizSectionConfig, 'uk-UA'));
 

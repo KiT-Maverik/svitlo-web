@@ -1,5 +1,5 @@
 import type { Lesson_Config } from '@types';
-import { createTextResource } from '@/utils/createTextResource/createTextResource';
+import { createTextResource } from '@/utils';
 import { practiceSectionConfig } from './sections/practice/sectionConfig';
 import { quizSectionConfig } from './sections/quiz/sectionConfig';
 import { theorySectionConfig } from './sections/theory/sectionConfig';

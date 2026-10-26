@@ -1,6 +1,6 @@
 import type { Lesson, Lesson_Config, LessonSection, Locale, Quiz_Config, Resource_Config } from '@types';
-import { buildResource, buildTextResource } from './buildResource';
-import { buildQuiz } from './buildQuiz';
+import { buildResource, buildTextResource } from '../BuildResource/BuildResource.utils';
+import { buildQuiz } from '../BuildQuiz/BuildQuiz.utils';
 
 function isResource(value: unknown): value is Resource_Config {
   return typeof value === 'object' && value !== null && 'blockType' in value;
