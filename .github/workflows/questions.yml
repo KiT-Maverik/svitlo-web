@@ -20,12 +20,18 @@ jobs:
       - run: npm test
       - run: npm run test:components
       - run: npm run test:db:coverage
+        if: ${{ !cancelled() }}
       - run: npm run lint
+        if: ${{ !cancelled() }}
       - run: npm run build
+        if: ${{ !cancelled() }}
       - run: npx playwright install chromium
+        if: ${{ !cancelled() }}
       - name: Lesson page E2E (desktop and mobile)
+        if: ${{ !cancelled() }}
         run: npx playwright test src/components/pages/Lesson/Lesson.e2e.spec.ts
       - run: npm run test:e2e
+        if: ${{ !cancelled() }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
