@@ -22,7 +22,7 @@
 
 ## Інвентар навичок
 
-Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **15 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
+Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **34 навички із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
 
 ## Семантична таксономія (v0.6)
 
@@ -34,7 +34,7 @@
 |---|---|---:|---:|---|---:|---:|
 | `math.counting` | Лічба | 5 | 15 | **Implemented** | 5/5 | 15/15 |
 | `math.numeration` | Натуральні числа | 5 | 27 | — | 0/5 | 0/27 |
-| `math.fractions` | Дроби | 4 | 19 | — | 0/4 | 0/19 |
+| `math.fractions` | Дроби | 4 | 19 | **Implemented** | 4/4 | 19/19 |
 | `math.arithmetic` | Арифметика | 5 | 79 | **Implemented** | 3/5 | 0/79 |
 | `math.algebra` | Алгебра | 5 | 17 | — | 0/5 | 0/17 |
 | `math.geometry` | Геометрія | 10 | 35 | **Implemented** | 3/10 | 0/35 |
@@ -50,7 +50,7 @@
 
 **Редакційні Domain/Group ID — робочі.** У реалізованому коді Domain має `groupIds`, Group — `skillIds` як іменовані словники UUID. Належність навички не виводиться з префікса редакційного ID; перегрупування не змінює runtime UUID.
 
-**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Обробленими повністю є лише 15 Skill домену Counting. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
+**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Повністю реалізовано 15 Skill домену Counting та 19 Skill домену Fractions. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
 
 ## Інвентар за доменами
 
@@ -200,7 +200,7 @@
 
 ### Domain 3. Дроби (19)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 4/4 Group configs + 19/19 individual Skills — **Complete**
 
 **ID:** `math.fractions`
 
@@ -208,56 +208,56 @@
 
 **ID:** `math.fractions.representation`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config + individual Skill data files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.fractions.whole-and-equal-parts` | Розрізняти ціле, його рівні частини й довільні нерівні шматки | 2–3 | — |
-| `math.fractions.fraction-greater-than-one` | Розміщувати на моделі або прямій дроби, більші за одиницю | 3 | — |
-| `math.fractions.tenths-as-division` | Пов'язувати десяті з поділом цілого на 10 рівних частин та діленням на 10 | 3 | — |
-| `math.fractions.unit-fraction-model` | Показувати одиничний дріб 1/n на фігурі, відрізку або наборі предметів | 3 | — |
-| `math.fractions.unit-fraction-read` | Читати й записувати одиничні дроби: половина, третина, чверть тощо | 3 | — |
-| `math.fractions.denominator-meaning` | Пояснювати, що знаменник указує на кількість рівних частин цілого | 3 | — |
-| `math.fractions.numerator-meaning` | Пояснювати, скільки рівних частин позначає чисельник | 3+ | — |
-| `math.fractions.non-unit-model` | Представляти кілька рівних частин одного цілого дробом a/b | 3+ | — |
-| `math.fractions.whole-dependence` | Пояснювати, чому величина частини залежить від розміру цілого | 3 | — |
-| `math.fractions.number-line` | Розміщувати прості дроби між 0 і 1 на числовій прямій | 3+ | — |
-| `math.fractions.one-as-fraction` | Пояснювати на моделі, що n/n відповідає одному цілому | 3+ | — |
-| `math.fractions.equivalent-visual` | Показувати на наочних моделях рівність простих дробів, наприклад 1/2 = 2/4 | 3+ | — |
+| `math.fractions.whole-and-equal-parts` | Розрізняти ціле, його рівні частини й довільні нерівні шматки | 2–3 | **Implemented** |
+| `math.fractions.fraction-greater-than-one` | Розміщувати на моделі або прямій дроби, більші за одиницю | 3 | **Implemented** |
+| `math.fractions.tenths-as-division` | Пов'язувати десяті з поділом цілого на 10 рівних частин та діленням на 10 | 3 | **Implemented** |
+| `math.fractions.unit-fraction-model` | Показувати одиничний дріб 1/n на фігурі, відрізку або наборі предметів | 3 | **Implemented** |
+| `math.fractions.unit-fraction-read` | Читати й записувати одиничні дроби: половина, третина, чверть тощо | 3 | **Implemented** |
+| `math.fractions.denominator-meaning` | Пояснювати, що знаменник указує на кількість рівних частин цілого | 3 | **Implemented** |
+| `math.fractions.numerator-meaning` | Пояснювати, скільки рівних частин позначає чисельник | 3+ | **Implemented** |
+| `math.fractions.non-unit-model` | Представляти кілька рівних частин одного цілого дробом a/b | 3+ | **Implemented** |
+| `math.fractions.whole-dependence` | Пояснювати, чому величина частини залежить від розміру цілого | 3 | **Implemented** |
+| `math.fractions.number-line` | Розміщувати прості дроби між 0 і 1 на числовій прямій | 3+ | **Implemented** |
+| `math.fractions.one-as-fraction` | Пояснювати на моделі, що n/n відповідає одному цілому | 3+ | **Implemented** |
+| `math.fractions.equivalent-visual` | Показувати на наочних моделях рівність простих дробів, наприклад 1/2 = 2/4 | 3+ | **Implemented** |
 
 #### SkillGroup 3.2. Порівняння дробів (3)
 
 **ID:** `math.fractions.comparison`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config + individual Skill data files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.fractions.compare-same-numerator` | Порівнювати дроби з однаковим чисельником, спираючись на однакове ціле | 3 | — |
-| `math.fractions.compare-unit` | Порівнювати одиничні дроби від одного й того самого цілого | 3 | — |
-| `math.fractions.same-denominator-model` | Порівнювати дроби з однаковими знаменниками через наочну модель | 3+ | — |
+| `math.fractions.compare-same-numerator` | Порівнювати дроби з однаковим чисельником, спираючись на однакове ціле | 3 | **Implemented** |
+| `math.fractions.compare-unit` | Порівнювати одиничні дроби від одного й того самого цілого | 3 | **Implemented** |
+| `math.fractions.same-denominator-model` | Порівнювати дроби з однаковими знаменниками через наочну модель | 3+ | **Implemented** |
 
 #### SkillGroup 3.3. Обчислення з дробами (2)
 
 **ID:** `math.fractions.arithmetic`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config + individual Skill data files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.fractions.add-like-denominators` | Додавати прості дроби з однаковими знаменниками в межах одного цілого | 3 | — |
-| `math.fractions.subtract-like-denominators` | Віднімати прості дроби з однаковими знаменниками в межах одного цілого | 3 | — |
+| `math.fractions.add-like-denominators` | Додавати прості дроби з однаковими знаменниками в межах одного цілого | 3 | **Implemented** |
+| `math.fractions.subtract-like-denominators` | Віднімати прості дроби з однаковими знаменниками в межах одного цілого | 3 | **Implemented** |
 
 #### SkillGroup 3.4. Частини величини (2)
 
 **ID:** `math.fractions.portions`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config + individual Skill data files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.fractions.find-unit-part` | Знаходити 1/n від числа або вимірюваної величини через ділення | 3 | — |
-| `math.fractions.reconstruct-whole` | Знаходити ціле за відомою одиничною частиною | 3 | — |
+| `math.fractions.find-unit-part` | Знаходити 1/n від числа або вимірюваної величини через ділення | 3 | **Implemented** |
+| `math.fractions.reconstruct-whole` | Знаходити ціле за відомою одиничною частиною | 3 | **Implemented** |
 
 ### Domain 4. Арифметика (79)
 
