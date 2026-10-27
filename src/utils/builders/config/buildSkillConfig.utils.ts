@@ -1,5 +1,6 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 import type { Skill_Config } from '../../../types/content/skill.types';
+import { validateSkillUuid } from './validateSkillReferences.utils';
 
 const supportedLocales = new Set<string>(
   DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => locale),
@@ -12,9 +13,10 @@ const supportedLocales = new Set<string>(
  * A separate build-time source index supplies fileLocation when registering skills.
  */
 export function buildSkillConfig<const T extends Skill_Config>(config: T): T {
-  if (!config || typeof config.id !== 'string' || config.id.trim() === '') {
-    throw new Error('Skill id must be a non-empty string');
+  if (!config) {
+    throw new Error('Skill id must be a UUID');
   }
+  validateSkillUuid(config.id, 'Skill id');
 
   if (!config.name || typeof config.name !== 'object' || Array.isArray(config.name)) {
     throw new Error('Skill name must contain all supported locales');

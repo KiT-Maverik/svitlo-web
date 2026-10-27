@@ -2,9 +2,9 @@ import type { Locale } from '../languages';
 import type { Skill } from './skill.types';
 
 export interface SkillGroup_Config {
-  id: string;
+  id: Skill['id'];
   name: Readonly<Record<Locale, string>>;
-  skillIds: readonly Skill['id'][];
+  skillIds: Readonly<Record<string, Skill['id']>>;
 }
 
 /** fileLocation is added by a build-time source registry. */

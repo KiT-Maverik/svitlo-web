@@ -9,7 +9,7 @@ const allNames = () => Object.fromEntries(
 ) as Skill_Config['name'];
 
 const skill = (): Skill_Config => ({
-  id: 'math.multiply.by-2',
+  id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: allNames(),
 });
 
@@ -31,7 +31,7 @@ describe('Utils / builders / config / buildSkillConfig', () => {
   });
 
   it('rejects missing, blank and non-string identifiers at the runtime boundary', () => {
-    for (const id of ['', '  ', null, undefined, 123]) {
+    for (const id of ['', '  ', 'math.multiply.by-2', null, undefined, 123]) {
       const invalid = { ...skill(), id } as unknown as Skill_Config;
       assert.throws(() => buildSkillConfig(invalid), /Skill id/);
     }
