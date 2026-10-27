@@ -5,6 +5,12 @@ export const collectCounts_Skill_Data = buildSkillConfig({
   id: collection_Skills_Ids.collectCounts,
   name: {
     en: "Counting category frequencies",
+    "lt": "Kategorijų dažnių skaičiavimas",
+    "lv": "Kategoriju biežuma skaitīšana",
+    "et": "Kategooriate sageduste loendamine",
+    "be": "Падлік частотаў катэгорыяў",
+    "ka": "კატეგორიების სიხშირეების დათვლა",
+    "kk": "Санаттардың жиілігін санау",
     zh: "统计各类别的频数",
     hi: "श्रेणियों की आवृत्तियाँ गिनना",
     es: "Contar frecuencias por categoría",

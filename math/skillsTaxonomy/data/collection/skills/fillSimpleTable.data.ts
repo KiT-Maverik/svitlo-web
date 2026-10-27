@@ -5,6 +5,12 @@ export const fillSimpleTable_Skill_Data = buildSkillConfig({
   id: collection_Skills_Ids.fillSimpleTable,
   name: {
     en: "Recording observations in a table",
+    "lt": "Stebėjimų užrašymas lentelėje",
+    "lv": "Novērojumu pierakstīšana tabulā",
+    "et": "Vaatluste tabelisse märkimine",
+    "be": "Запіс назіраньняў у табліцу",
+    "ka": "დაკვირვებების ცხრილში ჩაწერა",
+    "kk": "Бақылауларды кестеге жазу",
     zh: "将观察结果填入表格",
     hi: "अवलोकनों को तालिका में दर्ज करना",
     es: "Registrar observaciones en una tabla",
