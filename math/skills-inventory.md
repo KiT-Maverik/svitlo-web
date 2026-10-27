@@ -44,13 +44,13 @@
 | `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
 | `math.probability` | Ймовірність | 2 | 4 | — | 0/2 | 0/4 |
 | `math.problemSolving` | Задачі | 7 | 23 | — | 0/7 | 0/23 |
-| `math.reasoning` | Міркування | 4 | 11 | — | 0/4 | 0/11 |
+| `math.reasoning` | Міркування | 4 | 11 | **Implemented** | 4/4 | 11/11 |
 
 **Редакційні `math.*` ID тут — історичні/семантичні позначення; runtime ID наявних конфігів — незмінні UUID з [`UUID-MIGRATION.md`](./skillsTaxonomy/UUID-MIGRATION.md). Статус `Implemented` означає наявність окремого `Skill` data-файлу, а не лише посилання на його UUID у конфігу групи.**
 
 **Редакційні Domain/Group ID — робочі.** У реалізованому коді Domain має `groupIds`, Group — `skillIds` як іменовані словники UUID. Належність навички не виводиться з префікса редакційного ID; перегрупування не змінює runtime UUID.
 
-**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Обробленими повністю є лише 15 Skill домену Counting. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
+**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Повністю реалізовані 15 Skill домену Counting та 11 Skill домену Reasoning. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
 
 ## Інвентар за доменами
 
@@ -904,7 +904,7 @@
 
 ### Domain 13. Міркування (11)
 
-**Implementation:** Implemented — Domain data, 4 Group data files and 11 localized Skill data files.
+**Implementation:** Domain + 4/4 Group configs + 11/11 individual Skills — **Complete**.
 
 **ID:** `math.reasoning`
 
@@ -916,11 +916,11 @@
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.reasoning.classify-and-justify` | Об’єднувати об’єкти чи числа за правилом і пояснювати вибір | 1–3 | Implemented |
-| `math.reasoning.find-counterexample` | Знаходити приклад, який спростовує хибне узагальнення | 3+ | Implemented |
-| `math.reasoning.explain-strategy` | Пояснювати обраний спосіб обчислення словами, схемою чи математичним записом | 1–3 | Implemented |
-| `math.reasoning.distinguish-example-rule` | Відрізняти один приклад від загального правила, яке потребує перевірки | 3+ | Implemented |
-| `math.reasoning.draw-conclusion` | Формулювати висновок на основі умов та результатів міркування | 2–3 | Implemented |
+| `math.reasoning.classify-and-justify` | Об’єднувати об’єкти чи числа за правилом і пояснювати вибір | 1–3 | **Implemented** |
+| `math.reasoning.find-counterexample` | Знаходити приклад, який спростовує хибне узагальнення | 3+ | **Implemented** |
+| `math.reasoning.explain-strategy` | Пояснювати обраний спосіб обчислення словами, схемою чи математичним записом | 1–3 | **Implemented** |
+| `math.reasoning.distinguish-example-rule` | Відрізняти один приклад від загального правила, яке потребує перевірки | 3+ | **Implemented** |
+| `math.reasoning.draw-conclusion` | Формулювати висновок на основі умов та результатів міркування | 2–3 | **Implemented** |
 
 #### SkillGroup 13.2. Самоперевірка (3)
 
@@ -930,9 +930,9 @@
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.reasoning.check-reasonableness` | Оцінювати, чи може відповідь бути правильною за змістом та порядком величини | 2–3 | Implemented |
-| `math.reasoning.spot-calculation-error` | Знаходити неправильний крок у чужому розв’язанні й пояснювати його | 2–3 | Implemented |
-| `math.reasoning.verify-with-second-method` | Перевіряти обчислення іншим способом, коли це можливо | 2–3 | Implemented |
+| `math.reasoning.check-reasonableness` | Оцінювати, чи може відповідь бути правильною за змістом та порядком величини | 2–3 | **Implemented** |
+| `math.reasoning.spot-calculation-error` | Знаходити неправильний крок у чужому розв’язанні й пояснювати його | 2–3 | **Implemented** |
+| `math.reasoning.verify-with-second-method` | Перевіряти обчислення іншим способом, коли це можливо | 2–3 | **Implemented** |
 
 #### SkillGroup 13.3. Логіка (2)
 
@@ -942,8 +942,8 @@
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.reasoning.complete-pattern` | Доповнювати геометричну або числову закономірність відповідно до встановленого правила | 1–2 | Implemented |
-| `math.reasoning.logical-elimination` | Використовувати виключення неможливих варіантів у простих логічних задачах | 2–3 | Implemented |
+| `math.reasoning.complete-pattern` | Доповнювати геометричну або числову закономірність відповідно до встановленого правила | 1–2 | **Implemented** |
+| `math.reasoning.logical-elimination` | Використовувати виключення неможливих варіантів у простих логічних задачах | 2–3 | **Implemented** |
 
 #### SkillGroup 13.4. Способи представлення (1)
 
@@ -953,7 +953,7 @@
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.reasoning.multiple-representations` | Переходити між предметною моделлю, схемою, словесним поясненням і виразом | 1–3 | Implemented |
+| `math.reasoning.multiple-representations` | Переходити між предметною моделлю, схемою, словесним поясненням і виразом | 1–3 | **Implemented** |
 
 Додаткові 26 навичок внесено за результатами [методичного аудиту](./skills-inventory-audit.md). Розміщення в групах і орієнтовні рівні не є вимогами до майбутньої моделі Skill.
 
