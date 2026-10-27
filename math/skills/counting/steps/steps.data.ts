@@ -1,10 +1,10 @@
 import { buildSkillGroupConfig } from '@/utils';
 
-import {steps_Ids} from "./steps.ids";
+import {steps_SkillGroup_Ids} from "./steps.ids";
 import {steps_Skills_Ids} from "./skills/index.ids";
 
-export const stepsGroup = buildSkillGroupConfig({
-  id: steps_Ids.steps,
+export const steps_SkillGroup_Data = buildSkillGroupConfig({
+  id: steps_SkillGroup_Ids.steps,
   name: {
     "en-US": "Skip counting",
     "zh-Hans-CN": "跳数计数",

@@ -1,3 +1,3 @@
-export const steps_Ids = {
+export const steps_SkillGroup_Ids = {
     steps: 'math.counting.steps'
 } as const;

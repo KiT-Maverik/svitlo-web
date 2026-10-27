@@ -1,3 +1,4 @@
+export * from './collections.types';
 export * from './languages';
 export type * from './misc.types';
 export type * from './disabilities.types';
