@@ -12,7 +12,7 @@ import { LessonSteps } from '../LessonSteps/LessonSteps';
 import styles from '../Lesson.module.css';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@types';
-import { locale as messages } from '../locales/uk-UA';
+import { getLessonMessages } from '../locales';
 import { aria } from './LessonClient.constants';
 
 export default function LessonClient({ lesson, quiz, sectionContent, questions = [] }: {
@@ -22,6 +22,7 @@ export default function LessonClient({ lesson, quiz, sectionContent, questions =
   questions?: SelectOneAnswerQuestion[];
 }) {
   const { locale } = useLocale();
+  const messages = getLessonMessages(locale);
   const rtl = getLocaleDirection(locale) === 'rtl';
   const { progress, dispatch } = useLessonProgress();
   const [questionIndex, setQuestionIndex] = useState(0);
