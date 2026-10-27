@@ -1,35 +1,8 @@
 import type { LessonSection_Config } from '@types';
 import { createTextResource } from '@/utils';
-import { scene } from '../../resources/scenes';
+import { scene } from './resources/scenes';
+import { name } from './resources/text';
 import { id } from '../../howLightMoves.constants';
-
-const name = createTextResource(
-  '3b5ac8f2-e075-59ed-bc54-04b3697f8635',
-  {
-    en: 'Practice',
-    zh: '练习',
-    hi: 'अभ्यास',
-    es: 'Práctica',
-    ar: 'تدريب',
-    fr: 'Pratique',
-    bn: 'অনুশীলন',
-    pt: 'Prática',
-    ur: 'مشق',
-    id: 'Latihan',
-    de: 'Übung',
-    ja: '練習',
-    ko: '연습',
-    tr: 'Alıştırma',
-    vi: 'Luyện tập',
-    ta: 'பயிற்சி',
-    te: 'అభ్యాసం',
-    mr: 'सराव',
-    ms: 'Latihan',
-    he: 'תרגול',
-    pl: 'Ćwiczenie',
-    uk: 'Практика',
-  },
-);
 
 const task = createTextResource(
   '6e9b3471-a055-546f-8502-87df18302f6f',
@@ -61,7 +34,7 @@ const task = createTextResource(
 
 export const practice: LessonSection_Config = {
   id: id.section.practice,
-    lessonId: id.lesson,
+  lessonId: id.lesson,
   name,
   skippable: true,
   content: [task, scene.mediumPractice],

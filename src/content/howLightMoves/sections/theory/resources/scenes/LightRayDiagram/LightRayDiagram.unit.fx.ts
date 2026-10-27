@@ -1,8 +1,8 @@
 import { createElement } from 'react';
 import { render, screen, within } from '@testing-library/react';
 import { LightRayDiagram } from './LightRayDiagram';
-import { howLightMoves } from '../../../howLightMoves.data';
-import { howLightMovesCatalog } from '../../../howLightMoves.catalog';
+import { howLightMoves } from '../../../../../howLightMoves.data';
+import { howLightMovesCatalog } from '../../../../../howLightMoves.catalog';
 import { buildLesson } from '@/utils';
 import type { LightRayDiagram_Locale } from './lightRayDiagram.locale';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';

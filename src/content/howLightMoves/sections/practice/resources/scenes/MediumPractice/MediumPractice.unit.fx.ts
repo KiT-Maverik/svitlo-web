@@ -1,8 +1,8 @@
 import { createElement } from 'react';
 import type { Locale } from '@types';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
-import { howLightMoves } from '../../../howLightMoves.data';
-import { howLightMovesCatalog } from '../../../howLightMoves.catalog';
+import { howLightMoves } from '../../../../../howLightMoves.data';
+import { howLightMovesCatalog } from '../../../../../howLightMoves.catalog';
 import { buildLesson } from '@/utils';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';

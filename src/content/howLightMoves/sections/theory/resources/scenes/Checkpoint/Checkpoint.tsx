@@ -2,9 +2,9 @@
 
 import { KnowledgeCheckpoint } from '@/components/widgets';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { TheoryKnowledgeCheckpoint_Locale } from '../../../sections/theory/locales/KnowledgeCheckpoint.locale';
+import type { TheoryKnowledgeCheckpoint_Locale } from './Checkpoint.locale';
 
-export function TheoryCheckpoint() {
+export function Checkpoint() {
   const { locale, scenes } = useSceneLocales<{ checkpoint: TheoryKnowledgeCheckpoint_Locale }>();
   return <KnowledgeCheckpoint
     locale={locale}
