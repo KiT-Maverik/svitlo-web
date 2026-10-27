@@ -28,7 +28,7 @@ describe('Probability SkillDomain taxonomy', () => {
       const translations = [...source.matchAll(/^    ([a-z]{2}): "(.+)",$/gm)];
       assert.deepEqual(translations.map(match => match[1]).sort(), expected, path);
       assert.ok(translations.every(match => match[2].trim().length > 0), path);
-      assert.match(source, /buildSkill(?:Domain|Group)?Config\\(\\{/);
+      assert.match(source, /buildSkill(?:Domain|Group)?Config\(\{/);
     }
   });
 
@@ -55,7 +55,7 @@ describe('Probability SkillDomain taxonomy', () => {
       assert.match(groupIds, new RegExp(`\\b${group}: ${group}_SkillGroup_Ids\\.${group}\\b`));
       assert.match(read(`${group}/${group}.data.ts`), new RegExp(`skillIds: ${group}_Skills_Ids`));
       const ids = read(`${group}/skills/index.ids.ts`);
-      const exports = read(`${group}/skills/index.data.ts`).trim().split('\\n');
+      const exports = read(`${group}/skills/index.data.ts`).trim().split('\n');
       assert.equal([...ids.matchAll(/: '[0-9a-f-]{36}'/g)].length, skills.length);
       assert.deepEqual(exports, [...skills].sort().map(skill =>
         `export { ${skill}_Skill_Data } from './${skill}.data';`,
