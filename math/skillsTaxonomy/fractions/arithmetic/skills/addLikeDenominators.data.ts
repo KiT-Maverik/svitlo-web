@@ -5,6 +5,12 @@ export const addLikeDenominators_Skill_Data = buildSkillConfig({
   id: arithmetic_Skills_Ids.addLikeDenominators,
   name: {
     en: "Adding fractions with the same denominator within one whole",
+    "lt": "Trupmenų su vienodais vardikliais sudėtis vieneto ribose",
+    "lv": "Daļu ar vienādiem saucējiem saskaitīšana viena veselā robežās",
+    "et": "Samanimeliste murdude liitmine ühe terviku piires",
+    "be": "Складаньне дробаў з аднолькавымі назоўнікамі ў межах адзінкі",
+    "ka": "ერთის ფარგლებში ერთნაირმნიშვნელიანი წილადების შეკრება",
+    "kk": "Бір бүтін шегінде бөлімдері бірдей бөлшектерді қосу",
     zh: "在一个整体内相加同分母分数",
     hi: "एक पूर्ण के भीतर समान हर वाले भिन्न जोड़ना",
     es: "Sumar fracciones del mismo denominador dentro de un entero",

@@ -5,6 +5,12 @@ export const compareSameNumerator_Skill_Data = buildSkillConfig({
   id: comparison_Skills_Ids.compareSameNumerator,
   name: {
     en: "Comparing fractions with the same numerator",
+    "lt": "Trupmenų su vienodais skaitikliais palyginimas",
+    "lv": "Daļu ar vienādiem skaitītājiem salīdzināšana",
+    "et": "Sama lugejaga murdude võrdlemine",
+    "be": "Параўнаньне дробаў з аднолькавымі лічнікамі",
+    "ka": "ერთნაირმრიცხველიანი წილადების შედარება",
+    "kk": "Алымдары бірдей бөлшектерді салыстыру",
     zh: "比较分子相同的分数",
     hi: "समान अंश वाले भिन्नों की तुलना",
     es: "Comparar fracciones con el mismo numerador",

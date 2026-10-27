@@ -5,6 +5,12 @@ export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
   id: arithmetic_Skills_Ids.subtractLikeDenominators,
   name: {
     en: "Subtracting fractions with the same denominator within one whole",
+    "lt": "Trupmenų su vienodais vardikliais atimtis vieneto ribose",
+    "lv": "Daļu ar vienādiem saucējiem atņemšana viena veselā robežās",
+    "et": "Samanimeliste murdude lahutamine ühe terviku piires",
+    "be": "Адніманьне дробаў з аднолькавымі назоўнікамі ў межах адзінкі",
+    "ka": "ერთის ფარგლებში ერთნაირმნიშვნელიანი წილადების გამოკლება",
+    "kk": "Бір бүтін шегінде бөлімдері бірдей бөлшектерді азайту",
     zh: "在一个整体内相减同分母分数",
     hi: "एक पूर्ण के भीतर समान हर वाले भिन्न घटाना",
     es: "Restar fracciones del mismo denominador dentro de un entero",

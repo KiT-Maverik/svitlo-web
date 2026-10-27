@@ -5,6 +5,12 @@ export const compareUnit_Skill_Data = buildSkillConfig({
   id: comparison_Skills_Ids.compareUnit,
   name: {
     en: "Comparing unit fractions of the same whole",
+    "lt": "To paties vieneto vienetinių trupmenų palyginimas",
+    "lv": "Viena veselā vienības daļu salīdzināšana",
+    "et": "Sama terviku ühikmurdude võrdlemine",
+    "be": "Параўнаньне адзінкавых дробаў аднаго цэлага",
+    "ka": "ერთი მთელის ერთეულოვანი წილადების შედარება",
+    "kk": "Бір бүтіннің бірлік бөлшектерін салыстыру",
     zh: "比较同一整体的单位分数",
     hi: "एक ही पूर्ण के इकाई भिन्नों की तुलना",
     es: "Comparar fracciones unitarias del mismo entero",

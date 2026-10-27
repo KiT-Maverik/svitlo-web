@@ -5,6 +5,12 @@ export const equivalentVisual_Skill_Data = buildSkillConfig({
   id: representation_Skills_Ids.equivalentVisual,
   name: {
     en: "Showing equivalent fractions with visual models",
+    "lt": "Lygiaverčių trupmenų vaizdavimas modeliais",
+    "lv": "Vienādu daļu attēlošana ar vizuāliem modeļiem",
+    "et": "Võrdsete murdude näitamine visuaalsete mudelitega",
+    "be": "Паказ роўных дробаў з дапамогай мадэляў",
+    "ka": "ტოლი წილადების ვიზუალური მოდელებით ჩვენება",
+    "kk": "Тең бөлшектерді көрнекі модельдермен көрсету",
     zh: "用直观模型展示等值分数",
     hi: "चित्रात्मक मॉडल से समतुल्य भिन्न दिखाना",
     es: "Mostrar fracciones equivalentes con modelos visuales",
