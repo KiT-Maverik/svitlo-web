@@ -5,7 +5,7 @@ import { buildQuestion } from './BuildQuestion.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
   id, blockType: 'text', allLocales: false,
-  value: { 'en-US': english, 'uk-UA': ukrainian },
+  value: { en: english, uk: ukrainian },
 });
 
 const base = {
@@ -78,14 +78,14 @@ describe('Utils', () => {
             ...base, type: 'select-multiple-answers',
             answers: {
               correct: [text('yes-2', 'Second'), text('yes-1', 'First')],
-              incorrect: [text('no-2', 'Second no'), text('no-1', 'First no')],
+              incorrect: [text('no', 'Second no'), text('no', 'First no')],
               distractors: [text('extra', 'Extra')],
             },
           }, 'en-US');
           assert.equal(result.type, 'select-multiple-answers');
           if (result.type !== 'select-multiple-answers') return assert.fail('Expected multiple selection');
           assert.deepEqual(result.answers.correct.map(item => item.id), ['yes-2', 'yes-1']);
-          assert.deepEqual(result.answers.incorrect.map(item => item.id), ['no-2', 'no-1']);
+          assert.deepEqual(result.answers.incorrect.map(item => item.id), ['no', 'no']);
           assert.deepEqual(result.answers.distractors.map(item => item.id), ['extra']);
         });
       });

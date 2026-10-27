@@ -1,4 +1,5 @@
-import type { Locale, Resource, Resource_Config, TextResource, TextResource_Config } from '@types';
+import type { LanguageCode, Locale, Resource, Resource_Config, TextResource, TextResource_Config } from '@types';
+import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 
 function localized(values: Partial<Record<Locale, string>>, locale: Locale): string {
   const value = values[locale] ?? values['en-US'] ?? Object.values(values)[0];
@@ -7,7 +8,11 @@ function localized(values: Partial<Record<Locale, string>>, locale: Locale): str
 }
 
 export function buildTextResource(config: TextResource_Config, locale: Locale): TextResource {
-  return { id: config.id, blockType: 'text', locale, value: localized(config.value, locale) };
+  const language = getLanguageCode(locale);
+  const values: Partial<Record<LanguageCode, string>> = config.value;
+  const value = values[language] ?? values[FALLBACK_LANGUAGE] ?? Object.values(values)[0];
+  if (value === undefined) throw new Error(`Resource has no value for ${locale}`);
+  return { id: config.id, blockType: 'text', locale, value };
 }
 
 export function buildResource(config: Resource_Config, locale: Locale): Resource {

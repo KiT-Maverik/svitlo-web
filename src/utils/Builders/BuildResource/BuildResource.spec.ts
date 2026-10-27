@@ -7,7 +7,7 @@ const text: TextResource_Config = {
   id: 'title',
   blockType: 'text',
   allLocales: false,
-  value: { 'en-US': 'Hello', 'uk-UA': 'Привіт' },
+  value: { en: 'Hello', uk: 'Привіт' },
 };
 
 describe('Utils', () => {
@@ -29,14 +29,14 @@ describe('Utils', () => {
         it('should fall back to the first configured locale when English is unavailable', () => {
           const configured: TextResource_Config = {
             id: 'only-uk', blockType: 'text', allLocales: false,
-            value: { 'uk-UA': 'Українською', 'pl-PL': 'Po polsku' },
+            value: { uk: 'Українською', pl: 'Po polsku' },
           };
           assert.equal(buildTextResource(configured, 'fr-FR').value, 'Українською');
         });
 
         it('should preserve an intentionally empty translation instead of falling back', () => {
           const configured: TextResource_Config = {
-            ...text, value: { 'en-US': 'Hello', 'uk-UA': '' },
+            ...text, value: { en: 'Hello', uk: '' },
           };
           assert.equal(buildTextResource(configured, 'uk-UA').value, '');
         });

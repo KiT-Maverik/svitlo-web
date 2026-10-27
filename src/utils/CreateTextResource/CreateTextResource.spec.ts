@@ -1,12 +1,12 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../types/languages';
-import type { Resource_AllLocales_Config } from '@types';
+import type { TextResource_AllLanguages_Config } from '@types';
 import { createTextResource } from './CreateTextResource.utils';
 
 const values = Object.fromEntries(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => [locale, locale]),
-) as Resource_AllLocales_Config;
+  DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, language]),
+) as TextResource_AllLanguages_Config;
 
 describe('Utils', () => {
   describe('CreateTextResource', () => {
@@ -18,39 +18,39 @@ describe('Utils', () => {
       });
 
       it('should create a configuration for explicitly selected locales', () => {
-        assert.deepEqual(createTextResource('title', { 'uk-UA': 'Світло' }, {
-          locales: { only: ['uk-UA'] },
+        assert.deepEqual(createTextResource('title', { uk: 'Світло' }, {
+          locales: { only: ['uk'] },
         }), {
           id: 'title', blockType: 'text', allLocales: false,
-          value: { 'uk-UA': 'Світло' },
+          value: { uk: 'Світло' },
         });
       });
 
       it('should support inclusion-based locale selection', () => {
         const result = createTextResource('title', values, {
-          locales: { include: ['pl-PL'] },
+          locales: { include: ['pl'] },
         });
         assert.equal(result.allLocales, false);
-        assert.equal(result.value['pl-PL'], 'pl-PL');
+        assert.equal(result.value['pl'], 'pl');
       });
 
       it('should support exclusion-based locale selection', () => {
         const withoutEnglish = Object.fromEntries(
-          DEFAULT_SUPPORTED_LANGUAGES.filter(({ locale }) => locale !== 'en-US')
-            .map(({ locale }) => [locale, locale]),
-        ) as Record<Exclude<keyof Resource_AllLocales_Config, 'en-US'>, string>;
+          DEFAULT_SUPPORTED_LANGUAGES.filter(({ language }) => language !== 'en')
+            .map(({ language }) => [language, language]),
+        ) as Record<Exclude<keyof TextResource_AllLanguages_Config, 'en'>, string>;
         const result = createTextResource('title', withoutEnglish, {
-          locales: { exclude: ['en-US'] },
+          locales: { exclude: ['en'] },
         });
         assert.equal(result.allLocales, false);
         assert.deepEqual(result.value, withoutEnglish);
       });
 
       it('should retain an empty identifier and empty selected translation as supplied', () => {
-        const result = createTextResource('', { 'uk-UA': '' }, {
-          locales: { only: ['uk-UA'] },
+        const result = createTextResource('', { uk: '' }, {
+          locales: { only: ['uk'] },
         });
-        assert.deepEqual(result, { id: '', blockType: 'text', allLocales: false, value: { 'uk-UA': '' } });
+        assert.deepEqual(result, { id: '', blockType: 'text', allLocales: false, value: { uk: '' } });
       });
     });
 
@@ -61,9 +61,9 @@ describe('Utils', () => {
       });
 
       it('should not change the supplied localized values', () => {
-        const original = { 'uk-UA': 'Світло', 'pl-PL': 'Światło' };
+        const original = { uk: 'Світло', pl: 'Światło' };
         const before = { ...original };
-        createTextResource('title', original, { locales: { only: ['uk-UA', 'pl-PL'] } });
+        createTextResource('title', original, { locales: { only: ['uk', 'pl'] } });
         assert.deepEqual(original, before);
       });
     });

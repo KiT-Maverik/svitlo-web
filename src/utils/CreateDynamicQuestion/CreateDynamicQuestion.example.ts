@@ -29,7 +29,7 @@ const appleName: TextResource_AllLocales_Config = {
   id: 'apples-question',
   blockType: 'text',
   allLocales: true,
-  value: Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(language => [language.locale, 'Apples'])) as TextResource_AllLocales_Config['value'],
+  value: Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(language => [language.language, 'Apples'])) as TextResource_AllLocales_Config['value'],
 };
 
 const createAppleValue = <T extends 'girlsApple' | 'boysApple'>(selector: T, value: number): { selector: T; value: number } => ({ selector, value });

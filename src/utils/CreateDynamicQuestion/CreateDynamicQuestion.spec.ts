@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { Resource_AllLocales_Config } from '@types';
+import type { TextResource_AllLanguages_Config } from '@types';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../types/languages';
 import type { DynamicQuestion_Config, DynamicQuestion_Variant } from './CreateDynamicQuestion.types';
 import {
@@ -26,8 +26,8 @@ const variant = (amount: number, enabled: boolean): Variant => [
 const name = {
   id: 'dynamic-question', blockType: 'text' as const, allLocales: true as const,
   value: Object.fromEntries(
-    DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => [locale, 'Question']),
-  ) as Resource_AllLocales_Config,
+    DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'Question']),
+  ) as TextResource_AllLanguages_Config,
 };
 
 const createConfig = (

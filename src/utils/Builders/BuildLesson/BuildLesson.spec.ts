@@ -5,7 +5,7 @@ import { buildLesson } from './BuildLesson.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
   id, blockType: 'text', allLocales: false,
-  value: { 'en-US': english, 'uk-UA': ukrainian },
+  value: { en: english, uk: ukrainian },
 });
 
 const lesson = (): Lesson_Config => ({

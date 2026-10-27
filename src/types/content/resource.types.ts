@@ -1,4 +1,4 @@
-import type { Locale } from '../languages';
+import type { LanguageCode, Locale } from '../languages';
 import type { ReactNode } from 'react';
 
 /** Supported content resource kinds. */
@@ -22,17 +22,28 @@ export type Resource_AnyChosenLocales_Config = {
   [LocaleKey in Locale]: Record<LocaleKey, string> & Partial<Record<Exclude<Locale, LocaleKey>, string>>
 }[Locale];
 
+/** Text translations are keyed by language, independently of regional locale tags. */
+export type TextResource_AllLanguages_Config = Record<LanguageCode, string>;
+
+export type TextResource_ChosenLanguages_Config<Languages extends LanguageCode = never> = [Languages] extends [never]
+  ? TextResource_AnyChosenLanguages_Config
+  : Record<Languages, string>;
+
+export type TextResource_AnyChosenLanguages_Config = {
+  [Language in LanguageCode]: Record<Language, string> & Partial<Record<Exclude<LanguageCode, Language>, string>>
+}[LanguageCode];
+
 export interface TextResource_AllLocales_Config extends Resource_ConfigBase<'text'> {
   allLocales: true;
-  value: Resource_AllLocales_Config;
+  value: TextResource_AllLanguages_Config;
 }
 
-export interface TextResource_ChosenLocales_Config<Locales extends Locale = never> extends Resource_ConfigBase<'text'> {
+export interface TextResource_ChosenLocales_Config<Languages extends LanguageCode = never> extends Resource_ConfigBase<'text'> {
   allLocales: false;
-  value: Resource_ChosenLocales_Config<Locales>;
+  value: TextResource_ChosenLanguages_Config<Languages>;
 }
 
-export type TextResource_Config<Locales extends Locale = never> = TextResource_AllLocales_Config | TextResource_ChosenLocales_Config<Locales>;
+export type TextResource_Config<Languages extends LanguageCode = never> = TextResource_AllLocales_Config | TextResource_ChosenLocales_Config<Languages>;
 
 export interface TextResource extends Resource_ConfigBase<'text'> {
   locale: Locale;
@@ -156,7 +167,7 @@ export interface ImageResource extends Resource_ConfigBase<'image'> {
 }
 
 export type Resource_Config<Locales extends Locale = never> =
-  | TextResource_Config<Locales>
+  | TextResource_Config
   | SceneResource_Config
   | MarkdownResource_Config<Locales>
   | CodeResource_Config<Locales>
@@ -165,7 +176,7 @@ export type Resource_Config<Locales extends Locale = never> =
   | ImageResource_Config<Locales>;
 
 export interface Resource_ConfigMap<Locales extends Locale = never> {
-  text: TextResource_Config<Locales>;
+  text: TextResource_Config;
   scene: SceneResource_Config;
   markdown: MarkdownResource_Config<Locales>;
   code: CodeResource_Config<Locales>;
