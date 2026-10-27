@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { unknowns_Skills_Ids } from './index.ids';
+
+export const unknownSubtrahend_Skill_Data = buildSkillConfig({
+  id: unknowns_Skills_Ids.unknownSubtrahend,
+  name: {
+    en: "Finding an unknown subtrahend",
+    zh: "求未知减数",
+    hi: "अज्ञात घटाने वाली संख्या ज्ञात करना",
+    es: "Hallar un sustraendo desconocido",
+    ar: "إيجاد المطروح المجهول",
+    fr: "Trouver un nombre soustrait inconnu",
+    bn: "অজানা বিয়োজক নির্ণয়",
+    pt: "Encontrar um subtraendo desconhecido",
+    ur: "نامعلوم منفی عدد معلوم کرنا",
+    id: "Mencari bilangan pengurang yang tidak diketahui",
+    de: "Einen unbekannten Subtrahenden finden",
+    ja: "未知の減数を求める",
+    ko: "모르는 감수 구하기",
+    tr: "Bilinmeyen çıkanı bulma",
+    vi: "Tìm số trừ chưa biết",
+    ta: "தெரியாத கழிக்கும் எண்ணைக் காணுதல்",
+    te: "తెలియని వ్యవకలకాన్ని కనుగొనడం",
+    mr: "अज्ञात वजाबाकीची संख्या शोधणे",
+    ms: "Mencari penolak yang tidak diketahui",
+    he: "מציאת המחסר הלא ידוע",
+    pl: "Znajdowanie nieznanego odjemnika",
+    uk: "Знаходження невідомого від’ємника",
+  },
+});

@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { steps_Skills_Ids } from './index.ids';
+
+export const countBy2_Skill_Data = buildSkillConfig({
+  id: steps_Skills_Ids.countBy2,
+  name: {
+    en: "Counting in steps of 2",
+    zh: "每次按2递增计数",
+    hi: "2-2 के अंतर से गिनना",
+    es: "Contar de 2 en 2",
+    ar: "العد بقفزات مقدارها 2",
+    fr: "Compter de 2 en 2",
+    bn: "2 করে গণনা",
+    pt: "Contar de 2 em 2",
+    ur: "2 2 کے وقفے سے گننا",
+    id: "Membilang dengan kelipatan 2",
+    de: "In 2er-Schritten zählen",
+    ja: "2ずつ数える",
+    ko: "2씩 건너뛰며 세기",
+    tr: "2'er 2'er ritmik sayma",
+    vi: "Đếm cách 2 đơn vị",
+    ta: "2 வீதம் எண்ணுதல்",
+    te: "2 చొప్పున లెక్కించడం",
+    mr: "2 च्या टप्प्यांनी मोजणे",
+    ms: "Membilang secara 2-2",
+    he: "ספירה בקפיצות של 2",
+    pl: "Liczenie co 2",
+    uk: "Лічба з кроком 2",
+  },
+});
