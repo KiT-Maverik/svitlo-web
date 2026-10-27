@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by5_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by5,
   name: {
+    "lt": "Daugyba — × 5",
+    "lv": "Reizināšana — × 5",
+    "et": "Korrutamine — × 5",
+    "be": "Множаньне — × 5",
+    "ka": "გამრავლება — × 5",
+    "kk": "Көбейту — × 5",
     en: "Multiplication — × 5",
     zh: "乘法 — × 5",
     hi: "गुणा — × 5",

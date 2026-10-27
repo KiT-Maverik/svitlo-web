@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by9_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by9,
   name: {
+    "lt": "Dalyba — ÷ 9",
+    "lv": "Dalīšana — ÷ 9",
+    "et": "Jagamine — ÷ 9",
+    "be": "Дзяленьне — ÷ 9",
+    "ka": "გაყოფა — ÷ 9",
+    "kk": "Бөлу — ÷ 9",
     en: "Division — ÷ 9",
     zh: "除法 — ÷ 9",
     hi: "भाग — ÷ 9",

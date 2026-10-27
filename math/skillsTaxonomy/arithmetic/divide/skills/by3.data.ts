@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by3_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by3,
   name: {
+    "lt": "Dalyba — ÷ 3",
+    "lv": "Dalīšana — ÷ 3",
+    "et": "Jagamine — ÷ 3",
+    "be": "Дзяленьне — ÷ 3",
+    "ka": "გაყოფა — ÷ 3",
+    "kk": "Бөлу — ÷ 3",
     en: "Division — ÷ 3",
     zh: "除法 — ÷ 3",
     hi: "भाग — ÷ 3",
