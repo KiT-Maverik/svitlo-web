@@ -4,6 +4,12 @@ import { planning_Skills_Ids } from './index.ids';
 export const threeStepPlan_Skill_Data = buildSkillConfig({
   id: planning_Skills_Ids.threeStepPlan,
   name: {
+    "lt": "Trijų veiksmų uždavinio sprendimas",
+    "lv": "Trīs darbību uzdevuma risināšana",
+    "et": "Kolmetehtelise ülesande lahendamine",
+    "be": "Разьвязваньне задачы на тры дзеяньні",
+    "ka": "სამმოქმედებიანი ამოცანის ამოხსნა",
+    "kk": "Үш амалдық есепті шығару",
     en: "Solving a three-step problem",
     zh: "解决三步应用题",
     hi: "तीन चरणों की समस्या हल करना",

@@ -4,6 +4,12 @@ import { quantities_Skills_Ids } from './index.ids';
 export const workRateTime_Skill_Data = buildSkillConfig({
   id: quantities_Skills_Ids.workRateTime,
   name: {
+    "lt": "Darbo našumo, laiko ir atlikto darbo ryšys",
+    "lv": "Darba ražīguma, laika un paveiktā darba saistība",
+    "et": "Töökiiruse, aja ja töömahu seostamine",
+    "be": "Сувязь прадукцыйнасьці, часу й аб'ёму працы",
+    "ka": "შრომის ნაყოფიერების, დროისა და სამუშაოს მოცულობის კავშირი",
+    "kk": "Өнімділік, уақыт және жұмыс көлемі арасындағы байланыс",
     en: "Relating work rate, time and output",
     zh: "联系工作效率、时间与工作量",
     hi: "कार्य दर, समय और कार्य में संबंध",

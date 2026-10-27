@@ -4,6 +4,12 @@ import { planning_Skills_Ids } from './index.ids';
 export const inverseProblem_Skill_Data = buildSkillConfig({
   id: planning_Skills_Ids.inverseProblem,
   name: {
+    "lt": "Atvirkštinių uždavinių kūrimas ir sprendimas",
+    "lv": "Apgriezto uzdevumu veidošana un risināšana",
+    "et": "Pöördülesannete koostamine ja lahendamine",
+    "be": "Складаньне й разьвязваньне адваротных задач",
+    "ka": "შებრუნებული ამოცანების შედგენა და ამოხსნა",
+    "kk": "Кері есептерді құрастыру және шығару",
     en: "Constructing and solving inverse problems",
     zh: "编写并解决逆向问题",
     hi: "उलटी समस्याएँ बनाना और हल करना",
