@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { formalization_Skills_Ids } from './index.ids';
+
+export const translateSituation_Skill_Data = buildSkillConfig({
+  id: formalization_Skills_Ids.translateSituation,
+  name: {
+    en: "Representing a situation with an expression or equation",
+    zh: "用算式或方程表示情境",
+    hi: "स्थिति को व्यंजक या समीकरण से दर्शाना",
+    es: "Representar una situación mediante una expresión o ecuación",
+    ar: "تمثيل موقف بتعبير أو معادلة",
+    fr: "Traduire une situation en expression ou en équation",
+    bn: "পরিস্থিতিকে রাশি বা সমীকরণে প্রকাশ",
+    pt: "Representar uma situação por expressão ou equação",
+    ur: "صورت حال کو عبارت یا مساوات سے ظاہر کرنا",
+    id: "Mewakili situasi dengan ekspresi atau persamaan",
+    de: "Eine Situation durch Term oder Gleichung darstellen",
+    ja: "場面を式や方程式で表す",
+    ko: "상황을 식이나 방정식으로 나타내기",
+    tr: "Bir durumu ifade veya denklemle gösterme",
+    vi: "Biểu diễn tình huống bằng biểu thức hoặc phương trình",
+    ta: "ஒரு சூழலைக் கோவை அல்லது சமன்பாட்டால் காட்டுதல்",
+    te: "పరిస్థితిని వ్యక్తీకరణ లేదా సమీకరణంతో సూచించడం",
+    mr: "परिस्थिती व्यंजक किंवा समीकरणाने मांडणे",
+    ms: "Mewakili situasi dengan ungkapan atau persamaan",
+    he: "ייצוג מצב באמצעות ביטוי או משוואה",
+    pl: "Przedstawianie sytuacji wyrażeniem lub równaniem",
+    uk: "Подання ситуації виразом або рівнянням",
+  },
+});

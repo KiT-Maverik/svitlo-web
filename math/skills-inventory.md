@@ -390,7 +390,7 @@
 
 ### Domain 5. Алгебра (17)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 5/5 Group configs; 17/17 Skill files — **Implemented**
 
 **ID:** `math.algebra`
 
@@ -398,63 +398,63 @@
 
 **ID:** `math.algebra.expressions`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data file and all Skill data files are present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.algebra.read-numeric-expressions` | Читати та записувати числові вирази з арифметичними діями | 1–2 | — |
-| `math.algebra.parentheses` | Обчислювати вирази з дужками, пояснюючи пріоритет дій | 2–3 | — |
-| `math.algebra.order-of-operations` | Обчислювати вирази з кількома арифметичними діями за правилами порядку | 3 | — |
-| `math.algebra.variable-value` | Обчислювати значення найпростішого буквеного виразу за заданого значення змінної | 3 | — |
-| `math.algebra.identify-expression-error` | Пояснювати помилку, спричинену неправильним порядком дій | 3 | — |
+| `math.algebra.read-numeric-expressions` | Читати та записувати числові вирази з арифметичними діями | 1–2 | Implemented |
+| `math.algebra.parentheses` | Обчислювати вирази з дужками, пояснюючи пріоритет дій | 2–3 | Implemented |
+| `math.algebra.order-of-operations` | Обчислювати вирази з кількома арифметичними діями за правилами порядку | 3 | Implemented |
+| `math.algebra.variable-value` | Обчислювати значення найпростішого буквеного виразу за заданого значення змінної | 3 | Implemented |
+| `math.algebra.identify-expression-error` | Пояснювати помилку, спричинену неправильним порядком дій | 3 | Implemented |
 
 #### SkillGroup 5.2. Рівності (3)
 
 **ID:** `math.algebra.equalities`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data file and all Skill data files are present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.algebra.equality-meaning` | Сприймати знак рівності як рівність значень обох частин, а не команду «порахуй» | 1 | — |
-| `math.algebra.true-false-equality` | Перевіряти правильність числової рівності або нерівності | 1–2 | — |
-| `math.algebra.complete-equality` | Добирати пропущене число так, щоб рівність була істинною | 1–2 | — |
+| `math.algebra.equality-meaning` | Сприймати знак рівності як рівність значень обох частин, а не команду «порахуй» | 1 | Implemented |
+| `math.algebra.true-false-equality` | Перевіряти правильність числової рівності або нерівності | 1–2 | Implemented |
+| `math.algebra.complete-equality` | Добирати пропущене число так, щоб рівність була істинною | 1–2 | Implemented |
 
 #### SkillGroup 5.3. Невідомі (6)
 
 **ID:** `math.algebra.unknowns`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data file and all Skill data files are present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.algebra.unknown-addend` | Знаходити невідомий доданок і перевіряти результат | 1–2 | — |
-| `math.algebra.unknown-minuend` | Знаходити невідоме зменшуване і перевіряти результат | 2 | — |
-| `math.algebra.unknown-subtrahend` | Знаходити невідомий від’ємник і перевіряти результат | 2 | — |
-| `math.algebra.unknown-factor` | Знаходити невідомий множник за відомими добутком і множником | 2–3 | — |
-| `math.algebra.unknown-dividend` | Знаходити невідоме ділене в простих рівняннях | 3 | — |
-| `math.algebra.unknown-divisor` | Знаходити невідомий дільник у простих рівняннях із ненульовими числами | 3 | — |
+| `math.algebra.unknown-addend` | Знаходити невідомий доданок і перевіряти результат | 1–2 | Implemented |
+| `math.algebra.unknown-minuend` | Знаходити невідоме зменшуване і перевіряти результат | 2 | Implemented |
+| `math.algebra.unknown-subtrahend` | Знаходити невідомий від’ємник і перевіряти результат | 2 | Implemented |
+| `math.algebra.unknown-factor` | Знаходити невідомий множник за відомими добутком і множником | 2–3 | Implemented |
+| `math.algebra.unknown-dividend` | Знаходити невідоме ділене в простих рівняннях | 3 | Implemented |
+| `math.algebra.unknown-divisor` | Знаходити невідомий дільник у простих рівняннях із ненульовими числами | 3 | Implemented |
 
 #### SkillGroup 5.4. Закономірності (2)
 
 **ID:** `math.algebra.patterns`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data file and all Skill data files are present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.algebra.arithmetic-pattern` | Знаходити й продовжувати числову закономірність з постійним кроком | 1–2 | — |
-| `math.algebra.growing-pattern` | Визначати правило зростання закономірності за кількома прикладами | 2–3 | — |
+| `math.algebra.arithmetic-pattern` | Знаходити й продовжувати числову закономірність з постійним кроком | 1–2 | Implemented |
+| `math.algebra.growing-pattern` | Визначати правило зростання закономірності за кількома прикладами | 2–3 | Implemented |
 
 #### SkillGroup 5.5. Символьне моделювання (1)
 
 **ID:** `math.algebra.formalization`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data file and all Skill data files are present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.algebra.translate-situation` | Перекладати просту ситуацію в числовий вираз або рівняння | 1–3 | — |
+| `math.algebra.translate-situation` | Перекладати просту ситуацію в числовий вираз або рівняння | 1–3 | Implemented |
 
 ### Domain 6. Геометрія (35)
 
