@@ -9,5 +9,9 @@
 
 - `math.geometry.identify-2d-shapes` — `54f96aba-7db2-48bb-97ae-5ba2f3436095`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+
 ---
 [Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

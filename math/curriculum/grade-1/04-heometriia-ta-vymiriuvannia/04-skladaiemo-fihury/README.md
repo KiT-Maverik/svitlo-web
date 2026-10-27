@@ -9,5 +9,9 @@
 
 - `math.geometry.compose-decompose-shapes` — `1612d301-b286-45d0-ab5f-b52393bdce31`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+
 ---
 [Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

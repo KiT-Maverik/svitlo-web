@@ -10,5 +10,9 @@
 - `math.geometry.position-words` — `30001f22-2352-4068-a1be-f0e8f0278588`
 - `math.geometry.spatial-orientation-path` — `1defe702-c0b3-4760-aea0-2d2861933d5f`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+
 ---
 [Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

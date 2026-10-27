@@ -9,5 +9,9 @@
 
 - `math.geometry.identify-3d-solids` — `6aed363a-9049-445d-aa9e-fa35c8018855`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+
 ---
 [Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
