@@ -6,6 +6,12 @@ export const name_TextResource_Data = createTextResource(
     howLightMoves_TextResources_Ids.name,
     {
       en: 'How Light Travels',
+      lt: "Kaip sklinda šviesa",
+      lv: "Kā izplatās gaisma",
+      et: "Kuidas valgus levib",
+      be: "Як пашыраецца сьвятло",
+      ka: "როგორ ვრცელდება სინათლე",
+      kk: "Жарық қалай таралады",
       zh: '光是如何传播的',
       hi: 'प्रकाश कैसे चलता है',
       es: 'Cómo se propaga la luz',

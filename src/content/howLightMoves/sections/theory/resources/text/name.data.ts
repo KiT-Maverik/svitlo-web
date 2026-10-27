@@ -5,6 +5,12 @@ export const name_TextResource_Data = createTextResource(
   theory_TextResources_Ids.name,
   {
     en: 'Theory',
+    lt: "Teorija",
+    lv: "Teorija",
+    et: "Teooria",
+    be: "Тэорыя",
+    ka: "თეორია",
+    kk: "Теория",
     zh: '理论',
     hi: 'सिद्धांत',
     es: 'Teoría',

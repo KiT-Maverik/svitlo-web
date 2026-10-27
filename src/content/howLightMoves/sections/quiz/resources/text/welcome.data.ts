@@ -5,6 +5,12 @@ export const welcome_TextResource_Data = createTextResource(
   quiz_TextResources_Ids.welcome,
   {
     en: "Let's check how light travels.",
+    lt: "Patikrinkime, kaip sklinda šviesa.",
+    lv: "Pārbaudīsim, kā izplatās gaisma.",
+    et: "Kontrollime, kuidas valgus levib.",
+    be: "Праверым, як пашыраецца сьвятло.",
+    ka: "შევამოწმოთ, როგორ ვრცელდება სინათლე.",
+    kk: "Жарықтың қалай таралатынын тексерейік.",
     zh: '让我们检验一下光是如何传播的。',
     hi: 'आइए जाँचें कि प्रकाश कैसे चलता है।',
     es: 'Comprobemos cómo se propaga la luz.',
