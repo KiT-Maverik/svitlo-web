@@ -1,10 +1,11 @@
 import type { Quiz_Config } from '@types';
 import { createTextResource } from '@/utils';
 import { questionBank } from './questions';
-import {id} from "@/content/howLightMoves/howLightMoves.constants";
+import { id } from '../../howLightMoves.constants';
 
 export const quiz: Quiz_Config = {
-    id: id.section.quiz,
+    id: id.quiz,
+    sectionId: id.section.quiz,
     lessonId: id.lesson,
   name: createTextResource('1eb9908b-615d-4796-88a7-03dd8213ec62', {
     'en-US': 'Quiz',

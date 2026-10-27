@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { toQuestionWidgets } from './adapters/toQuestionWidgets';
-import { quiz } from '@/content/how-light-moves/sections/quiz';
+import { quiz } from '@/content/howLightMoves/sections/quiz';
 import { buildQuiz } from '@/utils';
 
 const lightQuestions = toQuestionWidgets(buildQuiz(quiz, 'uk-UA'));

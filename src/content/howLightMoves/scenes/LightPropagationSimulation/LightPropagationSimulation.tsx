@@ -19,7 +19,7 @@ function getReducedMotion() {
   return window.matchMedia(reducedMotionQuery).matches;
 }
 
-export default function LightPropagationSimulation() {
+export function LightPropagationSimulation() {
   const { locale, scenes } = useSceneLocales<{ simulation: LightPropagationSimulation_Locale }>();
   const messages = scenes.simulation;
   const reducedMotion = useSyncExternalStore(subscribeToReducedMotion, getReducedMotion, () => false);

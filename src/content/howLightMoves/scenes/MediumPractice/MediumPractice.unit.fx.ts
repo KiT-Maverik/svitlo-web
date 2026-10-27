@@ -5,7 +5,7 @@ import { howLightMoves } from '../../howLightMoves.data';
 import { buildLesson } from '@/utils';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import MediumPractice from './MediumPractice';
+import { MediumPractice } from './MediumPractice';
 import { aria } from './MediumPractice.constants';
 import { locales } from './MediumPractice.locale';
 

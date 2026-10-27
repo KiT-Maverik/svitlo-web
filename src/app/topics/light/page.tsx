@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 import { Lesson } from '@pages';
 import { resolveLocale } from '@/i18n/resolveLocale';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
-import { howLightMoves } from '@/content/how-light-moves/lightLesson';
+import { howLightMoves } from '@/content/howLightMoves/howLightMoves.data';
 
 export async function generateMetadata({ searchParams }: PageProps<'/topics/light'>): Promise<Metadata> {
   const locale = resolveLocale((await searchParams).lang, DEFAULT_SUPPORTED_LANGUAGES.map(language => language.locale), 'uk-UA');

@@ -1,11 +1,7 @@
-import type { Lesson, Lesson_Config, LessonSection, Locale, Quiz_Config, Resource_Config } from '@types';
+import type { Lesson, Lesson_Config, LessonSection, Locale, Quiz_Config } from '@types';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 import { buildResource, buildTextResource } from '../BuildResource/BuildResource.utils';
 import { buildQuiz } from '../BuildQuiz/BuildQuiz.utils';
-
-function isResource(value: unknown): value is Resource_Config {
-  return typeof value === 'object' && value !== null && 'blockType' in value;
-}
 
 function isQuiz(value: Lesson_Config['sections']['content'][number]): value is Quiz_Config {
   return 'questionBank' in value;
@@ -38,7 +34,7 @@ export function buildLesson(config: Lesson_Config, locale: Locale): Lesson {
         return {
           ...section,
           name: buildTextResource(section.name, locale),
-          content: section.content.map(block => isResource(block) ? buildResource(block, locale) : block) as LessonSection['content'],
+          content: section.content.map(block => buildResource(block, locale)) as LessonSection['content'],
         };
       }) as Lesson['sections']['content'],
     },

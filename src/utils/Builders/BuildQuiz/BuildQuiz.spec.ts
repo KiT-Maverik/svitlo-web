@@ -17,7 +17,7 @@ const question = (id: string, number: number): Quiz_Config['questionBank'][numbe
 });
 
 const quiz = (): Quiz_Config => ({
-  id: 'quiz', sectionId: 'section', feedbackMode: 'immediate',
+  id: 'quiz', lessonId: 'lesson', sectionId: 'section', feedbackMode: 'immediate',
   name: text('quiz-name', 'Quiz', 'Тест'),
   grading: { mode: 'percentage', successThreshold: 70 },
   maxDuration: 120,

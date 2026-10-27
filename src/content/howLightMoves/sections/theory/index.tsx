@@ -1,30 +1,28 @@
 import type { LessonSection_Config } from '@types';
 import type { MarkdownResource_AllLocales_Config } from '@types';
 import { createLocalizedFileLocations, createTextResource } from '@/utils';
-import LightRayDiagram from '../../scenes/LightRayDiagram/LightRayDiagram';
-import LightPropagationSimulation from '../../scenes/LightPropagationSimulation/LightPropagationSimulation';
-import TheoryCheckpoint from '../../scenes/TheoryCheckpoint/TheoryCheckpoint';
-import {id} from "@/content/howLightMoves/howLightMoves.constants";
+import { scene } from '../../scenes';
+import { id } from '../../howLightMoves.constants';
 
 const introduction: MarkdownResource_AllLocales_Config = {
   id: '6238256c-30f9-542d-962f-bcd37bcb6cfb',
   blockType: 'markdown',
   allLocales: true,
-  fileLocation: createLocalizedFileLocations('/content/how-light-moves/sections/theory/markdown/01', 'md'),
+  fileLocation: createLocalizedFileLocations('/content/howLightMoves/sections/theory/markdown/01', 'md'),
 };
 
 const continuation: MarkdownResource_AllLocales_Config = {
   id: '9d56030c-d6fb-43b1-b4ce-e3eb95727320',
   blockType: 'markdown',
   allLocales: true,
-  fileLocation: createLocalizedFileLocations('/content/how-light-moves/sections/theory/markdown/02', 'md'),
+  fileLocation: createLocalizedFileLocations('/content/howLightMoves/sections/theory/markdown/02', 'md'),
 };
 
 const conclusion: MarkdownResource_AllLocales_Config = {
   id: '4e5667d0-42a2-4050-9730-458503c7c9aa',
   blockType: 'markdown',
   allLocales: true,
-  fileLocation: createLocalizedFileLocations('/content/how-light-moves/sections/theory/markdown/03', 'md'),
+  fileLocation: createLocalizedFileLocations('/content/howLightMoves/sections/theory/markdown/03', 'md'),
 };
 
 export const theory: LessonSection_Config = {
@@ -57,10 +55,10 @@ export const theory: LessonSection_Config = {
     skippable: false,
     content: [
       introduction,
-      <LightRayDiagram key="light-ray-diagram" />,
+      scene.lightRayDiagram,
       continuation,
-      <LightPropagationSimulation key="light-propagation-simulation" />,
+      scene.lightPropagationSimulation,
       conclusion,
-      <TheoryCheckpoint key="knowledge-checkpoint" />,
+      scene.theoryCheckpoint,
     ],
 };

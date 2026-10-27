@@ -17,6 +17,7 @@ const questions = [{
 
 const quiz = {
   id: 'sample-quiz',
+  lessonId: 'sample-lesson',
   sectionId: 'quiz',
   name: { id: 'quiz-name', blockType: 'text', locale: 'uk-UA', value: locale.quiz.test },
   questionBank: [{ ...questions[0], weight: 1, number: 1 }] as unknown as NonNullable<Props['quiz']>['questionBank'],

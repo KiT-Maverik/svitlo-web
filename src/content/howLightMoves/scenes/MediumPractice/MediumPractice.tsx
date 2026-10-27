@@ -7,7 +7,7 @@ import { getLocaleDirection } from '@types';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
 import type { MediumPractice_Locale } from './MediumPractice.locale';
 
-export default function MediumPractice() {
+export function MediumPractice() {
   const { locale, scenes } = useSceneLocales<{ practice: MediumPractice_Locale }>();
   const messages = scenes.practice;
   const [selected, setSelected] = useState(0);

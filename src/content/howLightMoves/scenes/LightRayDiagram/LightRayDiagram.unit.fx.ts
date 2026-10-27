@@ -1,6 +1,6 @@
 import { createElement } from 'react';
 import { render, screen, within } from '@testing-library/react';
-import LightRayDiagram from './LightRayDiagram';
+import { LightRayDiagram } from './LightRayDiagram';
 import { howLightMoves } from '../../howLightMoves.data';
 import { buildLesson } from '@/utils';
 import type { LightRayDiagram_Locale } from './lightRayDiagram.locale';

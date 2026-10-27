@@ -10,11 +10,11 @@ describe('Components', () => {
       expect(LessonSectionContent_fx.selectors.text('Introductory lesson content')).toBeVisible();
     });
 
-    it('should preserve the order of JSX nodes and text resources', async () => {
+    it('should preserve the order of scene and text resources', async () => {
       const content = [
-        createElement('p', { key: 'before' }, 'Before'),
+        { id: 'before', blockType: 'scene', component: createElement('p', null, 'Before') },
         LessonSectionContent_fx.blocks.text('Middle'),
-        createElement('p', { key: 'after' }, 'After'),
+        { id: 'after', blockType: 'scene', component: createElement('p', null, 'After') },
       ] as const;
       const { container } = await LessonSectionContent_fx.render({ content: [...content] });
       expect(container.textContent).toBe('BeforeMiddleAfter');
@@ -23,7 +23,7 @@ describe('Components', () => {
     it('should render markdown content using the locale and RTL direction', async () => {
       await LessonSectionContent_fx.render({
         locale: 'ar-SA',
-        content: [LessonSectionContent_fx.blocks.markdown('/content/how-light-moves/sections/theory/markdown/01/ar-sa.md')],
+        content: [LessonSectionContent_fx.blocks.markdown('/content/howLightMoves/sections/theory/markdown/01/ar-sa.md')],
       });
       expect(LessonSectionContent_fx.selectors.article()).toHaveAttribute('lang', 'ar-SA');
       expect(LessonSectionContent_fx.selectors.article()).toHaveAttribute('dir', 'rtl');

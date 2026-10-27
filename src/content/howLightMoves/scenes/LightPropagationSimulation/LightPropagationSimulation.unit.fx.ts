@@ -1,7 +1,7 @@
 import { createElement } from 'react';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import LightPropagationSimulation from './LightPropagationSimulation';
+import { LightPropagationSimulation } from './LightPropagationSimulation';
 import { locales } from './lightPropagationSimulation.locale';
 import { howLightMoves } from '../../howLightMoves.data';
 import { buildLesson } from '@/utils';

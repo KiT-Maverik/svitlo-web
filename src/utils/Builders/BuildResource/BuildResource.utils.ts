@@ -13,6 +13,7 @@ export function buildTextResource(config: TextResource_Config, locale: Locale): 
 export function buildResource(config: Resource_Config, locale: Locale): Resource {
   switch (config.blockType) {
     case 'text': return buildTextResource(config, locale);
+    case 'scene': return config;
     case 'markdown': return { id: config.id, blockType: 'markdown', locale, fileLocation: localized(config.fileLocation, locale) };
     case 'audio': return { id: config.id, blockType: 'audio', locale, fileLocation: localized(config.fileLocation, locale), title: localized(config.title, locale), description: localized(config.description, locale) };
     case 'video': return { id: config.id, blockType: 'video', locale, fileLocation: localized(config.fileLocation, locale), poster: localized(config.poster, locale) };

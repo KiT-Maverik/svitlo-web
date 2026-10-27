@@ -14,10 +14,10 @@ const lesson = (): Lesson_Config => ({
   sections: {
     allowNavigation: true, allowSkipping: false, showIndexes: true,
     content: [{
-      id: 'theory', skippable: false, name: text('section-name', 'Theory', 'Теорія'),
+      id: 'theory', lessonId: 'lesson', skippable: false, name: text('section-name', 'Theory', 'Теорія'),
       content: [
         text('body', 'Body', 'Текст'),
-        'Unchanged React content',
+        { id: 'scene', blockType: 'scene', component: 'Scene content' },
         { id: 'image', blockType: 'image', allLocales: false,
           fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
           alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
@@ -28,7 +28,7 @@ const lesson = (): Lesson_Config => ({
 });
 
 const quiz = (): Quiz_Config => ({
-  id: 'quiz', sectionId: 'quiz-section', feedbackMode: 'after-completion',
+  id: 'quiz', lessonId: 'lesson', sectionId: 'quiz-section', feedbackMode: 'after-completion',
   name: text('quiz-name', 'Quiz', 'Тест'),
   interaction: {
     retries: 0, showErrors: false, showCorrectAnswers: true,
@@ -90,13 +90,12 @@ describe('Utils', () => {
           });
         });
 
-        it('should preserve non-resource React content and its position', () => {
+        it('should preserve a scene resource and its position', () => {
           const result = buildLesson(lesson(), 'en-US');
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
-          assert.deepEqual(section.content.map(block => typeof block === 'string' ? block : 'resource'), [
-            'resource', 'Unchanged React content', 'resource',
-          ]);
+          assert.deepEqual(section.content[1], { id: 'scene', blockType: 'scene', component: 'Scene content' });
+          assert.deepEqual(section.content.map(block => block.blockType), ['text', 'scene', 'image']);
         });
 
         it('should preserve section IDs and skippable settings', () => {
@@ -104,6 +103,7 @@ describe('Utils', () => {
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
           assert.equal(section.id, 'theory');
+          assert.equal(section.lessonId, 'lesson');
           assert.equal(section.skippable, false);
         });
 
@@ -111,7 +111,7 @@ describe('Utils', () => {
           const config = lesson();
           config.sections.content.push(quiz());
           config.sections.content.push({
-            id: 'summary', skippable: true, name: text('summary-name', 'Summary'),
+            id: 'summary', lessonId: 'lesson', skippable: true, name: text('summary-name', 'Summary'),
             content: [text('summary-text', 'Finish')],
           });
           const result = buildLesson(config, 'uk-UA');

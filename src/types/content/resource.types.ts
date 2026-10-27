@@ -1,7 +1,8 @@
 import type { Locale } from '../languages';
+import type { ReactNode } from 'react';
 
 /** Supported content resource kinds. */
-export type Resource_Type = 'text' | 'markdown' | 'code' | 'audio' | 'video'  | 'youtube' | 'image';
+export type Resource_Type = 'text' | 'markdown' | 'code' | 'audio' | 'video'  | 'youtube' | 'image' | 'scene';
 
 export interface Resource_ConfigBase<T extends Resource_Type> {
   id: string;
@@ -37,6 +38,12 @@ export interface TextResource extends Resource_ConfigBase<'text'> {
   locale: Locale;
   value: string;
 }
+
+export interface SceneResource_Config extends Resource_ConfigBase<'scene'> {
+  component: ReactNode;
+}
+
+export type SceneResource = SceneResource_Config;
 
 export interface MarkdownResource_AllLocales_Config extends Resource_ConfigBase<'markdown'> {
   allLocales: true;
@@ -150,6 +157,7 @@ export interface ImageResource extends Resource_ConfigBase<'image'> {
 
 export type Resource_Config<Locales extends Locale = never> =
   | TextResource_Config<Locales>
+  | SceneResource_Config
   | MarkdownResource_Config<Locales>
   | CodeResource_Config<Locales>
   | AudioResource_Config<Locales>
@@ -158,6 +166,7 @@ export type Resource_Config<Locales extends Locale = never> =
 
 export interface Resource_ConfigMap<Locales extends Locale = never> {
   text: TextResource_Config<Locales>;
+  scene: SceneResource_Config;
   markdown: MarkdownResource_Config<Locales>;
   code: CodeResource_Config<Locales>;
   audio: AudioResource_Config<Locales>;
@@ -167,6 +176,7 @@ export interface Resource_ConfigMap<Locales extends Locale = never> {
 
 export type Resource =
   | TextResource
+  | SceneResource
   | MarkdownResource
   | CodeResource
   | AudioResource
@@ -175,6 +185,7 @@ export type Resource =
 
 export interface ResourceMap {
   text: TextResource;
+  scene: SceneResource;
   markdown: MarkdownResource;
   code: CodeResource;
   audio: AudioResource;

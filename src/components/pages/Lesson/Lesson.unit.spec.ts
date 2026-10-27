@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { isValidElement, type ReactElement } from 'react';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
 import { LearningLayout } from '@layout';
-import { howLightMoves } from '@/content/how-light-moves/lightLesson';
+import { howLightMoves } from '@/content/howLightMoves/howLightMoves.data';
 import { buildLesson } from '@/utils';
 import type { Lesson_Config } from '@types';
 import Lesson from './Lesson';

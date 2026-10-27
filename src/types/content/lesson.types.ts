@@ -5,16 +5,18 @@ import type { NonEmptyArray } from '../misc.types';
 import type { LanguageCode } from '../languages';
 
 export interface LessonSection_Config {
-  content: NonEmptyArray<Resource_Config | ReactNode>;
+  content: NonEmptyArray<Resource_Config>;
   id: string;
+  lessonId: Lesson_Config['id'];
   name: TextResource_Config;
   skippable: boolean;
   icon?: ReactNode;
 }
 
 export interface LessonSection {
-  content: NonEmptyArray<Resource | ReactNode>;
+  content: NonEmptyArray<Resource>;
   id: string;
+  lessonId: Lesson['id'];
   name: TextResource;
   skippable: boolean;
   icon?: ReactNode;

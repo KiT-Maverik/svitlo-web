@@ -26,6 +26,7 @@ export interface Quiz_Config {
     successThreshold: number;
   };
   id: string
+  lessonId: string;
   interaction: {
     /** -1 means unlimited retries, 0 disables retries, positive values set the limit. */
     retries: number;
