@@ -4,6 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const expandedForm_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.expandedForm,
   name: {
+    "lt": "Skaičiaus išskaidyta forma",
+    "lv": "Skaitļa izvērstā forma",
+    "et": "Arvu laiendatud kuju",
+    "be": "Разгорнуты запіс ліку",
+    "ka": "რიცხვის გაშლილი ფორმა",
+    "kk": "Санның жіктелген түрі",
     en: "Expanded form of numbers",
     zh: "数的展开式",
     hi: "संख्या का विस्तारित रूप",

@@ -4,6 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const regroupPlaceValues_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.regroupPlaceValues,
   name: {
+    "lt": "Vienetų pergrupavimas tarp skyrių",
+    "lv": "Pārgrupēšana starp skaitļa šķirām",
+    "et": "Järkude vaheline ümberrühmitamine",
+    "be": "Перагрупаваньне паміж разрадамі",
+    "ka": "თანრიგებს შორის გადაჯგუფება",
+    "kk": "Разрядтар арасында қайта топтастыру",
     en: "Regrouping between place values",
     zh: "数位单位间的换算",
     hi: "स्थानीय मानों के बीच पुनर्समूहन",

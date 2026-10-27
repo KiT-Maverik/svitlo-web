@@ -4,6 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const multipleRepresentations_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.multipleRepresentations,
   name: {
+    "lt": "Skirtingų skaičiaus vaizdavimo būdų atitikmenys",
+    "lv": "Dažādu skaitļa attēlojumu saskaņošana",
+    "et": "Arvu eri esitusviiside vastavusse viimine",
+    "be": "Суаднясеньне розных мадэляў ліку",
+    "ka": "რიცხვის სხვადასხვა წარმოდგენის შესაბამისობა",
+    "kk": "Санның әртүрлі көрсетілімдерін сәйкестендіру",
     en: "Matching representations of a number",
     zh: "匹配一个数的多种表示",
     hi: "संख्या के विभिन्न रूपों का मिलान",
