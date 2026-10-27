@@ -9,6 +9,8 @@ import type {
   TextResource_Config,
 } from '@types';
 import { buildLesson } from './buildLesson.utils';
+import { buildLessonConfig } from '../config/buildLessonConfig.utils';
+import { buildLessonSectionConfig } from '../config/buildLessonSectionConfig.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
   id,
@@ -17,7 +19,7 @@ const text = (id: string, english: string, ukrainian = english): TextResource_Co
   value: { en: english, uk: ukrainian },
 });
 
-const lesson = (): Lesson_Config => ({
+const lesson = (): Lesson_Config => buildLessonConfig({
   id: 'lesson',
   slug: 'light',
   requireQuiz: true,
@@ -30,7 +32,7 @@ const lesson = (): Lesson_Config => ({
   },
 });
 
-const theory = (): LessonSection_Config => ({
+const theory = (): LessonSection_Config => buildLessonSectionConfig({
   id: 'theory',
   lessonId: 'lesson',
   skippable: false,
@@ -94,6 +96,7 @@ describe('Utils', () => {
         it('should preserve lesson identity, slug, and quiz requirement', () => {
           const result = build('uk-UA');
           assert.equal(result.id, 'lesson');
+          assert.equal(result.collection, 'lesson');
           assert.equal(result.slug, 'light');
           assert.equal(result.requireQuiz, true);
         });
@@ -184,6 +187,7 @@ describe('Utils', () => {
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
           assert.equal(section.id, 'theory');
+          assert.equal(section.collection, 'lessonSection');
           assert.equal(section.lessonId, 'lesson');
           assert.equal(section.skippable, false);
         });
@@ -191,13 +195,13 @@ describe('Utils', () => {
         it('should convert quiz sections without disturbing their order among lesson sections', () => {
           const config = lesson();
           const definitions = catalog();
-          const summary: LessonSection_Config = {
+          const summary: LessonSection_Config = buildLessonSectionConfig({
             id: 'summary',
             lessonId: 'lesson',
             skippable: true,
             name: text('summary-name', 'Summary'),
             content: [text('summary-text', 'Finish')],
-          };
+          });
           config.sections.content.push('quiz-section', 'summary');
           const result = buildLesson(config, 'uk-UA', {
             ...definitions,

@@ -34,6 +34,7 @@ export function buildLesson(config: Lesson_Config, locale: Locale, catalog: Less
   if (!title || title.id !== config.title) throw new Error(`Missing text resource for lesson title: ${config.title}`);
 
   return {
+    collection: config.collection,
     id: config.id,
     slug: config.slug,
     requireQuiz: config.requireQuiz,

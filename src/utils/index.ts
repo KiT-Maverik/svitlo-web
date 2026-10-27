@@ -33,3 +33,5 @@ export { createTextResource } from './createTextResource/createTextResource.util
 export { buildSkillConfig } from './builders/config/buildSkillConfig.utils';
 export { buildSkillGroupConfig } from './builders/config/buildSkillGroupConfig.utils';
 export { buildSkillDomainConfig } from './builders/config/buildSkillDomainConfig.utils';
+export { buildLessonConfig } from './builders/config/buildLessonConfig.utils';
+export { buildLessonSectionConfig } from './builders/config/buildLessonSectionConfig.utils';
