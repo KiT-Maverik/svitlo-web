@@ -266,6 +266,36 @@ const pl = {
     },
   } satisfies LightRayDiagram_Locale;
 
+const lt = {
+  scene: { title: "Sek šviesos kelią", description: "Nuo šaltinio tiesia linija iki ekrano." },
+  labels: { source: "Šviesos šaltinis", direction: "Šviesos sklidimo kryptis", screen: "Ekranas" },
+} satisfies LightRayDiagram_Locale;
+
+const lv = {
+  scene: { title: "Izseko gaismas ceļu", description: "No avota taisnā līnijā līdz ekrānam." },
+  labels: { source: "Gaismas avots", direction: "Gaismas virziens", screen: "Ekrāns" },
+} satisfies LightRayDiagram_Locale;
+
+const et = {
+  scene: { title: "Jälgi valguse teekonda", description: "Allikast sirgjooneliselt ekraanini." },
+  labels: { source: "Valgusallikas", direction: "Valguse suund", screen: "Ekraan" },
+} satisfies LightRayDiagram_Locale;
+
+const be = {
+  scene: { title: "Прасачы шлях сьвятла", description: "Ад крыніцы па простай лініі да экрана." },
+  labels: { source: "Крыніца сьвятла", direction: "Кірунак сьвятла", screen: "Экран" },
+} satisfies LightRayDiagram_Locale;
+
+const ka = {
+  scene: { title: "მიჰყევი სინათლის გზას", description: "წყაროდან ეკრანამდე სწორი ხაზით." },
+  labels: { source: "სინათლის წყარო", direction: "სინათლის მიმართულება", screen: "ეკრანი" },
+} satisfies LightRayDiagram_Locale;
+
+const kk = {
+  scene: { title: "Жарықтың жолын бақыла", description: "Көзден экранға дейін түзу сызық бойымен." },
+  labels: { source: "Жарық көзі", direction: "Жарықтың таралу бағыты", screen: "Экран" },
+} satisfies LightRayDiagram_Locale;
+
 export const locales = {
   en,
   zh,
@@ -289,4 +319,5 @@ export const locales = {
   he,
   pl,
   uk,
+  lt, lv, et, be, ka, kk,
 } satisfies Record<DefaultSupportedLanguage['language'], LightRayDiagram_Locale>;
