@@ -6,6 +6,12 @@ export const counting_SkillDomain_Data = buildSkillDomainConfig({
   id: counting_SkillDomain_Ids.counting,
   name: {
     en: "Counting",
+    "lt": "Skaičiavimas",
+    "lv": "Skaitīšana",
+    "et": "Loendamine",
+    "be": "Лічэньне",
+    "ka": "დათვლა",
+    "kk": "Санау",
     zh: "计数",
     hi: "गिनती",
     es: "Conteo",

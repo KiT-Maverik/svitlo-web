@@ -6,6 +6,12 @@ export const measurement_SkillDomain_Data = buildSkillDomainConfig({
   id: measurement_SkillDomain_Ids.measurement,
   name: {
     "en": "Measurement",
+    "lt": "Matavimas",
+    "lv": "Mērīšana",
+    "et": "Mõõtmine",
+    "be": "Вымярэньне",
+    "ka": "გაზომვა",
+    "kk": "Өлшеу",
     "zh": "测量",
     "hi": "मापन",
     "es": "Medición",

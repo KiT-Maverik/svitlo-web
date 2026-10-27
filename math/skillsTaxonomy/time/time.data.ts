@@ -6,6 +6,12 @@ export const time_SkillDomain_Data = buildSkillDomainConfig({
   id: time_SkillDomain_Ids.time,
   name: {
     en: "Time",
+    "lt": "Laikas",
+    "lv": "Laiks",
+    "et": "Aeg",
+    "be": "Час",
+    "ka": "დრო",
+    "kk": "Уақыт",
     zh: "时间",
     hi: "समय",
     es: "Tiempo",

@@ -6,6 +6,12 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
   id: algebra_SkillDomain_Ids.algebra,
   name: {
     en: "Algebra",
+    "lt": "Algebra",
+    "lv": "Algebra",
+    "et": "Algebra",
+    "be": "Альгебра",
+    "ka": "ალგებრა",
+    "kk": "Алгебра",
     zh: "代数",
     hi: "बीजगणित",
     es: "Álgebra",

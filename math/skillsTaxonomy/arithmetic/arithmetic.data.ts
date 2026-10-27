@@ -6,6 +6,12 @@ export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
   id: arithmetic_SkillDomain_Ids.arithmetic,
   name: {
     en: "Arithmetic",
+    "lt": "Aritmetika",
+    "lv": "Aritmētika",
+    "et": "Aritmeetika",
+    "be": "Арытмэтыка",
+    "ka": "არითმეტიკა",
+    "kk": "Арифметика",
     zh: "算术",
     hi: "अंकगणित",
     es: "Aritmética",
