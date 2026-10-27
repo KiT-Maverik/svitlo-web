@@ -1,4 +1,4 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../../Maps/assessmentMethodTaxonomy/index.ids';
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../math/assessmentMethodTaxonomy/index.ids';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Quiz_Config, TextResource_Config } from '@types';

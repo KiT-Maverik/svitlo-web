@@ -1,4 +1,4 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../Maps/assessmentMethodTaxonomy/index.ids';
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../math/assessmentMethodTaxonomy/index.ids';
 import type { AssessmentMethodId } from './assessmentMethod.types';
 import type { Question_Base_Config } from './question.types';
 
