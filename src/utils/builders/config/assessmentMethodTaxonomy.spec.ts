@@ -15,7 +15,8 @@ describe('Assessment Method Taxonomy', () => {
   it('has exactly 16 distinct, statically authored UUIDs', () => {
     assert.equal(ids.length, 16);
     assert.equal(new Set(ids).size, 16);
-    for (const id of ids) assert.match(id, /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
+    for (const id of ids)
+      assert.match(id, /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
     const source = readFileSync(join(directory, 'index.ids.ts'), 'utf8');
     assert.doesNotMatch(source, /randomUUID|uuidv4|uuid\.v4|Math\.random/);
   });
@@ -43,7 +44,10 @@ describe('Assessment Method Taxonomy', () => {
   it('keeps data and ID exports isolated to their own collection', () => {
     const source = readFileSync(join(directory, 'index.data.ts'), 'utf8').trim().split('\n');
     const names = Object.keys(assessmentMethods_AssessmentMethod_Ids).sort();
-    assert.deepEqual(source, names.map(name => `export { ${name}_AssessmentMethod_Data } from './${name}.data';`));
+    assert.deepEqual(
+      source,
+      names.map(name => `export { ${name}_AssessmentMethod_Data } from './${name}.data';`),
+    );
     const idFile = readFileSync(join(directory, 'index.ids.ts'), 'utf8');
     assert.doesNotMatch(idFile, /from '\.\/.*\.data'/);
   });

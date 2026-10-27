@@ -19,36 +19,38 @@ const text = (id: string, english: string, ukrainian = english): TextResource_Co
   value: { en: english, uk: ukrainian },
 });
 
-const lesson = (): Lesson_Config => buildLessonConfig({
-  id: 'lesson',
-  slug: 'light',
-  requireQuiz: true,
-  title: 'title',
-  sections: {
-    allowNavigation: true,
-    allowSkipping: false,
-    showIndexes: true,
-    content: ['theory'],
-  },
-});
-
-const theory = (): LessonSection_Config => buildLessonSectionConfig({
-  id: 'theory',
-  lessonId: 'lesson',
-  skippable: false,
-  name: text('section-name', 'Theory', 'Теорія'),
-  content: [
-    text('body', 'Body', 'Текст'),
-    { id: 'scene', blockType: 'scene', component: 'Scene content' },
-    {
-      id: 'image',
-      blockType: 'image',
-      allLocales: false,
-      fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
-      alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
+const lesson = (): Lesson_Config =>
+  buildLessonConfig({
+    id: 'lesson',
+    slug: 'light',
+    requireQuiz: true,
+    title: 'title',
+    sections: {
+      allowNavigation: true,
+      allowSkipping: false,
+      showIndexes: true,
+      content: ['theory'],
     },
-  ],
-});
+  });
+
+const theory = (): LessonSection_Config =>
+  buildLessonSectionConfig({
+    id: 'theory',
+    lessonId: 'lesson',
+    skippable: false,
+    name: text('section-name', 'Theory', 'Теорія'),
+    content: [
+      text('body', 'Body', 'Текст'),
+      { id: 'scene', blockType: 'scene', component: 'Scene content' },
+      {
+        id: 'image',
+        blockType: 'image',
+        allLocales: false,
+        fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
+        alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
+      },
+    ],
+  });
 
 const catalog = (): LessonContentCatalog => ({
   text: { title: text('title', 'Light', 'Світло') },
