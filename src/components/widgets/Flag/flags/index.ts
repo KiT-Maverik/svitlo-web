@@ -22,3 +22,5 @@ export { LithuaniaFlag } from './LithuaniaFlag';
 export { LatviaFlag } from './LatviaFlag';
 export { EstoniaFlag } from './EstoniaFlag';
 export { CrimeanTatarFlag } from './CrimeanTatarFlag';
+export { GeorgiaFlag } from './GeorgiaFlag';
+export { KazakhstanFlag } from './KazakhstanFlag';
