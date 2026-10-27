@@ -10,5 +10,9 @@
 - `math.multiply.commutative` — `1750b60b-9e8d-4426-b307-1b6c7a4d641b`
 - `math.multiply.double-twice` — `dcaa33ea-4bd8-42d5-8b22-27dd75d13c53`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще не створено.
+
 ---
 [Множення та ділення](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

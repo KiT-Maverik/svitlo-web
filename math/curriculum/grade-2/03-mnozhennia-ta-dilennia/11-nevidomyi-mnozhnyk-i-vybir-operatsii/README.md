@@ -11,5 +11,9 @@
 - `math.problems.choose-operation-mul-div` — `8abaee79-c7a9-462f-9cd6-b9efaa9ed699`
 - `math.problems.equal-groups` — `30aa7d28-187b-44e7-806b-06457d3a0970`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще не створено.
+
 ---
 [Множення та ділення](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

@@ -11,5 +11,9 @@
 - `math.divide.by-5` — `e7c66fa9-9208-4877-8dca-504dc55833f7`
 - `math.divide.double-half` — `cfb05426-4c79-46eb-a49e-53a128a661de`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще не створено.
+
 ---
 [Множення та ділення](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

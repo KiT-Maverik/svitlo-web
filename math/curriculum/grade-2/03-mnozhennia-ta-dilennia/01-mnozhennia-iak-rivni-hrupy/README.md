@@ -10,5 +10,9 @@
 - `math.multiply.equal-groups` — `a3a6ab42-2285-4d6f-a65e-f2a4d8140a88`
 - `math.multiply.repeated-addition` — `5c08d331-b6ba-44ee-ab1d-0f1781f23f73`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще не створено.
+
 ---
 [Множення та ділення](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
