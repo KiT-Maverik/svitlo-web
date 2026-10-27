@@ -9,5 +9,9 @@
 
 - `math.addsub.commutative-addition` — `cdd703ab-2b89-4f9a-8bd5-475c5713d758`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка збережена.
+
 ---
 [Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
