@@ -106,12 +106,13 @@ Domain, Group і Skill описують **різні рівні абстракц
 
 **Членство задається явно через `groupIds` та `skillIds`, а не виводиться з `id.split('.')` або фізичного шляху до файлу.** Перегрупування не повинно ламати аналітику.
 
-Масиви ID мають заданий редакційний порядок для UI. Алфавітне сортування експортів у `index.ts` — це **конвенція коду**, а не навчальний порядок проходження Skill.
+Іменовані словники ID (`{ key: uuid }`) створюють зручний стабільний API. Порядок навчання, якщо важливий, визначається окремим Curriculum, а не сортуванням ключів об'єкта. Алфавітне сортування експортів у `index.ts` — це **конвенція коду**, а не навчальний порядок проходження Skill.
 
 ## 7. Ідентичність, ID та файлові назви
 
-- `id` — **стабільний семантичний ідентифікатор**, не назва уроку й не поточне місце в дереві.
-- `name` — локалізована людиночитна назва; її можна редакційно змінити без зміни змісту ID.
+- `id` — **статичний UUID**, що не залежить від назви, уроку або місця в дереві; читаються ID з `*.ids.ts`, а не з data-конфігів. Історичні семантичні ключі `math.*` залишаються в інвентарі для авторського рев'ю.
+- `name` — локалізована людиночитна назва; її можна редакційно змінити без зміни UUID.
+- **Назви SkillGroup та її безпосереднього Skill мають бути різними.** За збігу вибираємо змістовно точніший кваліфікатор для навички (`Basic`, `Fundamentals`, `Whole`, `Advanced` тощо) і локалізуємо його; не додаємо `Basic` бездумно, якщо навичка насправді не базова. Наприклад, `cardinality` (група) → `basicCardinality` (Skill), `ordinal` → `basicOrdinal`.
 - Переміщення Skill до іншої групи або перейменування папки **не змінює** його `id`.
 - Якщо сутність **змінює значення**, об'єднується чи розділяється, потрібні нові ID або явне рішення про сумісність та міграцію прогресу. Не переносити історію засвоєння механічно з одного старого Skill на всі нові.
 - Короткі назви можуть збігатися у різних групах (`multiply.by-2` і `divide.by-2`); **не припускати глобальну унікальність basename**. Повний ID — глобальний ключ, вкладені каталоги — спосіб уникати колізій фізичних файлів.
@@ -121,19 +122,23 @@ Domain, Group і Skill описують **різні рівні абстракц
 Цільова організація:
 
 ```text
-math/skills/
+math/skillsTaxonomy/
   arithmetic/
+    arithmetic.ids.ts               # Domain ID
     arithmetic.data.ts              # SkillDomain
+    index.ids.ts                    # Named group ID references
     index.data.ts
     addition/
+      addition.ids.ts               # Group ID
       addition.data.ts              # SkillGroup
-      index.data.ts
-      crossTenAddition/
+      skills/
+        index.ids.ts                # Named Skill IDs
         crossTenAddition.data.ts    # Skill
     additionSubtraction/
-      additionSubtraction.data.ts   # SkillGroup
-      inverseOperations/
-        inverseOperations.data.ts   # Skill
+      additionSubtraction.ids.ts
+      additionSubtraction.data.ts
+      skills/
+        index.ids.ts
 ```
 
 **Це цільовий приклад, а не твердження про поточну наявність усіх зазначених файлів.** На момент написання не всі Skill матеріалізовані у TypeScript.
@@ -146,32 +151,32 @@ math/skills/
 
 ```ts
 interface Skill_Config {
-  id: string;
+  id: SkillId;
   name: Readonly<Record<Locale, string>>;
 }
 
 interface SkillGroup_Config {
-  id: string;
+  id: SkillId;
   name: Readonly<Record<Locale, string>>;
-  skillIds: readonly string[];
+  skillIds: Readonly<Record<string, SkillId>>;
 }
 
 interface SkillDomain_Config {
-  id: string;
+  id: SkillId;
   name: Readonly<Record<Locale, string>>;
-  groupIds: readonly string[];
+  groupIds: Readonly<Record<string, SkillId>>;
 }
 
 // Зареєстровані Skill / SkillGroup / SkillDomain
 // додатково мають fileLocation: string.
 ```
 
-Наведені інтерфейси — **скорочений запис поточних типів**; у коді `skillIds` та `groupIds` типізовані через відповідні `['id']`.
+Наведені інтерфейси — **скорочений запис поточних типів**; `SkillId` — UUID-подібний рядковий тип із runtime-валідатором, а у коді `skillIds` та `groupIds` типізовані через відповідні `['id']`. UUID створюються **один раз**, а потім живуть у файлах `*.ids.ts` як статичні строкові константи. Жодної генерації ID в runtime, білдерах, імпортах чи компонентах.
 
 - Кожна назва повинна мати непорожній переклад **для всіх підтримуваних локалей** (`Locale` із `src/types/languages.ts`). На момент написання стандартний набір — **22 локалі**.
 - Не підміняти відсутні переклади копіюванням іншої мови без явного рішення щодо якості контенту.
 - `buildSkillConfig`, `buildSkillGroupConfig`, `buildSkillDomainConfig` перевіряють ID та словники локалей і повертають той самий об'єкт без мутації.
-- Builders для груп і доменів також перевіряють непорожні масиви посилань, коректний тип значень та відсутність дублікатів **у межах масиву**.
+- Builders для груп і доменів також перевіряють **непорожні об'єкти** посилань, коректні UUID та відсутність дублікатів значень **у межах об'єкта**.
 - **Перевірка існування цільового Skill/Group, глобальної унікальності ID, цілісності дерева та визначення `fileLocation`** належать майбутньому реєстру/індексатору. Не приписувати поточним builders цю відповідальність.
 
 ## 9. Skill відокремлено від педагогічного контексту
@@ -297,7 +302,7 @@ Skill catalog (definition)
 
 На дату документа **математичний інвентар: 285 Skill, 60 SkillGroup, 13 SkillDomain**. Це поточний редакційний результат, **не обмеження моделі**.
 
-У коді вже є контракти й builders трьох типів сутностей; 15 індивідуальних Skill-файлів лічби, конфіги 6 груп арифметики/геометрії та 2 відповідні Domain. **Повний TypeScript-реєстр усіх 285 навичок та автоматичний build-time індекс ще не завершено.**
+У коді вже є контракти й builders трьох типів сутностей; 15 індивідуальних Skill-файлів лічби, конфіги 11 груп та 3 відповідні Domain. **Повний TypeScript-реєстр усіх 285 навичок та автоматичний build-time індекс ще не завершено.**
 
 Питання для майбутнього методичного рев'ю: незалежність лічби вперед/назад, множення на 0/1, ділення на 1/самого себе, зсувів/віддзеркалення, читання/запису чисел. Не дробити ці Skill автоматично лише за їхньою назвою.
 
@@ -306,6 +311,6 @@ Skill catalog (definition)
 - [Mathematics Skills Inventory](../math/skills-inventory.md) — каталог і поточна таксономія.
 - [Skills Taxonomy Review](../math/skills-taxonomy-review.md) — аргументація поділів та проблемні формулювання.
 - [Skills Inventory Audit](../math/skills-inventory-audit.md) — аудит охоплення відносно навчальних стандартів.
-- Реалізація: `src/types/content/skill.types.ts`, `skillGroup.types.ts`, `skillDomain.types.ts`; `src/utils/builders/config/`; `math/skills/`.
+- Реалізація: `src/types/content/skill.types.ts`, `skillGroup.types.ts`, `skillDomain.types.ts`; `src/utils/builders/config/`; `math/skillsTaxonomy/`.
 
 **Коротке правило:** *Один Skill — один окремо оцінюваний результат; один Group — одна змістовна сім'я навичок; один Domain — одна предметна область. Поєднання знань може бути окремою навичкою лише тоді, коли саме поєднання є новою перевірюваною компетенцією.*

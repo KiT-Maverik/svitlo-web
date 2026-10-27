@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@/utils';
+import { counting_Ids } from './counting.ids';
+import { counting_Groups_Ids } from './index.ids';
 
-import {counting_Ids} from './counting.ids'
-import {steps_Ids} from './steps/steps.ids'
-
-export const counting_Data = buildSkillDomainConfig({
+export const counting = buildSkillDomainConfig({
   id: counting_Ids.counting,
   name: {
     "en-US": "Counting",
@@ -29,11 +28,5 @@ export const counting_Data = buildSkillDomainConfig({
     "pl-PL": "Liczenie",
     "uk-UA": "Лічба",
   },
-  groupIds: [
-    "math.counting.sequence",
-    "math.counting.cardinality",
-      ...steps_Ids,
-    "math.counting.ordinal",
-    "math.counting.parity",
-  ],
+  groupIds: counting_Groups_Ids,
 });
