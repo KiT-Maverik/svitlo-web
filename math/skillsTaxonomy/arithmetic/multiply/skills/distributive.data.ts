@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const distributive_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.distributive,
   name: {
+    "lt": "Daugyba — skirstomumo dėsnis",
+    "lv": "Reizināšana — distributivitātes likums",
+    "et": "Korrutamine — jaotuvusseadus",
+    "be": "Множаньне — разьмеркавальны закон",
+    "ka": "გამრავლება — განრიგებადობის თვისება",
+    "kk": "Көбейту — үлестірімділік қасиеті",
     en: "Multiplication — Distributive property",
     zh: "乘法 — 分配律",
     hi: "गुणा — वितरण नियम",

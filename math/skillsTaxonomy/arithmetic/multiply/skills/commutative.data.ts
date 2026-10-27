@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const commutative_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.commutative,
   name: {
+    "lt": "Daugyba — perstatomumo dėsnis",
+    "lv": "Reizināšana — komutativitātes likums",
+    "et": "Korrutamine — vahetuvusseadus",
+    "be": "Множаньне — перастаўляльны закон",
+    "ka": "გამრავლება — გადანაცვლებადობის თვისება",
+    "kk": "Көбейту — ауыстырымдылық қасиеті",
     en: "Multiplication — Commutative property",
     zh: "乘法 — 交换律",
     hi: "गुणा — क्रमविनिमेय नियम",

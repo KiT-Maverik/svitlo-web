@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const checkProduct_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.checkProduct,
   name: {
+    "lt": "Daugyba — rezultato tikrinimas",
+    "lv": "Reizināšana — rezultāta pārbaude",
+    "et": "Korrutamine — tulemuse kontrollimine",
+    "be": "Множаньне — праверка выніку",
+    "ka": "გამრავლება — შედეგის შემოწმება",
+    "kk": "Көбейту — нәтижені тексеру",
     en: "Multiplication — Result checking",
     zh: "乘法 — 结果检验",
     hi: "गुणा — उत्तर की जाँच",

@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const arrayModel_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.arrayModel,
   name: {
+    "lt": "Daugyba — stačiakampio masyvo modelis",
+    "lv": "Reizināšana — taisnstūrveida masīva modelis",
+    "et": "Korrutamine — ristkülikukujuline punktimudel",
+    "be": "Множаньне — прамавугольны масіў",
+    "ka": "გამრავლება — მართკუთხა მასივის მოდელი",
+    "kk": "Көбейту — тікбұрышты массив моделі",
     en: "Multiplication — Array model",
     zh: "乘法 — 阵列模型",
     hi: "गुणा — आयताकार सरणी",

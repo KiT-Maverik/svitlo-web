@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const associative_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.associative,
   name: {
+    "lt": "Daugyba — jungiamumo dėsnis",
+    "lv": "Reizināšana — asociativitātes likums",
+    "et": "Korrutamine — ühenduvusseadus",
+    "be": "Множаньне — спалучальны закон",
+    "ka": "გამრავლება — ჯუფთებადობის თვისება",
+    "kk": "Көбейту — терімділік қасиеті",
     en: "Multiplication — Associative property",
     zh: "乘法 — 结合律",
     hi: "गुणा — साहचर्य नियम",

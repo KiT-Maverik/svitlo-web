@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const deriveFacts_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.deriveFacts,
   name: {
+    "lt": "Daugyba — sandaugų išvedimas",
+    "lv": "Reizināšana — reizināšanas faktu atvasināšana",
+    "et": "Korrutamine — korrutustabeli tulemuste tuletamine",
+    "be": "Множаньне — вывядзеньне здабыткаў",
+    "ka": "გამრავლება — ნამრავლების გამოყვანა",
+    "kk": "Көбейту — көбейту нәтижелерін шығару",
     en: "Multiplication — Deriving multiplication Number facts",
     zh: "乘法 — 推导乘法算式",
     hi: "गुणा — गुणन तथ्य निकालना",
