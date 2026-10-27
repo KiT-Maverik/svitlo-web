@@ -4,6 +4,12 @@ import { comparisons_Skills_Ids } from './index.ids';
 export const increaseDecreaseNumber_Skill_Data = buildSkillConfig({
   id: comparisons_Skills_Ids.increaseDecreaseNumber,
   name: {
+    "lt": "Didinimas ar mažinimas nurodytu skaičiumi",
+    "lv": "Palielināšana vai samazināšana par noteiktu skaitli",
+    "et": "Suurendamine või vähendamine etteantud arvu võrra",
+    "be": "Павелічэньне або памяншэньне на зададзены лік",
+    "ka": "მოცემული რიცხვით გაზრდა ან შემცირება",
+    "kk": "Берілген санға арттыру немесе кеміту",
     en: "Increasing or decreasing by a given amount",
     zh: "按给定数量增加或减少",
     hi: "दी गई संख्या से बढ़ाना या घटाना",

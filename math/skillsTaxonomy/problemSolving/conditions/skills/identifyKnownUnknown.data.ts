@@ -4,6 +4,12 @@ import { conditions_Skills_Ids } from './index.ids';
 export const identifyKnownUnknown_Skill_Data = buildSkillConfig({
   id: conditions_Skills_Ids.identifyKnownUnknown,
   name: {
+    "lt": "Žinomų ir nežinomų dydžių nustatymas",
+    "lv": "Zināmo un nezināmo lielumu noteikšana",
+    "et": "Teadaolevate ja tundmatute suuruste leidmine",
+    "be": "Вызначэньне вядомых і невядомых велічыняў",
+    "ka": "ცნობილი და უცნობი სიდიდეების განსაზღვრა",
+    "kk": "Белгілі және белгісіз шамаларды анықтау",
     en: "Identifying known and unknown quantities",
     zh: "识别已知量与未知量",
     hi: "ज्ञात और अज्ञात राशियाँ पहचानना",

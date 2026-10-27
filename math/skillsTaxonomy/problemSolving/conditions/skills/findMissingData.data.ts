@@ -4,6 +4,12 @@ import { conditions_Skills_Ids } from './index.ids';
 export const findMissingData_Skill_Data = buildSkillConfig({
   id: conditions_Skills_Ids.findMissingData,
   name: {
+    "lt": "Trūkstamų duomenų nustatymas",
+    "lv": "Trūkstošo datu noteikšana",
+    "et": "Puuduvate andmete tuvastamine",
+    "be": "Выяўленьне адсутных зьвестак",
+    "ka": "დაკლებული მონაცემების გამოვლენა",
+    "kk": "Жетіспейтін мәліметтерді анықтау",
     en: "Identifying missing information",
     zh: "发现缺失信息",
     hi: "अनुपस्थित जानकारी पहचानना",

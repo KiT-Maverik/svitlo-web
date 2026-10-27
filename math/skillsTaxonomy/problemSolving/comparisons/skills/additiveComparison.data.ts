@@ -4,6 +4,12 @@ import { comparisons_Skills_Ids } from './index.ids';
 export const additiveComparison_Skill_Data = buildSkillConfig({
   id: comparisons_Skills_Ids.additiveComparison,
   name: {
+    "lt": "Sudėtinių palyginimo uždavinių sprendimas",
+    "lv": "Saskaitāmu lielumu salīdzināšanas uzdevumu risināšana",
+    "et": "Liitvahe võrdlusülesannete lahendamine",
+    "be": "Разьвязваньне задач на розьнічнае параўнаньне",
+    "ka": "შეკრებით შედარების ამოცანების ამოხსნა",
+    "kk": "Айырмалық салыстыру есептерін шығару",
     en: "Solving additive comparison problems",
     zh: "解决加法比较问题",
     hi: "योगात्मक तुलना की समस्याएँ हल करना",
