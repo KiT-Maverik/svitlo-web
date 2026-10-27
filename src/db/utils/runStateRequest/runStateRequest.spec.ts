@@ -6,13 +6,15 @@ import { runStateRequest } from './runStateRequest.utils';
 describe('DB', () => {
   describe('Utils', () => {
     describe('runStateRequest', () => {
-      it('should use the requested store and access mode and resolve only after commit', async (t) => {
+      it('should use the requested store and access mode and resolve only after commit', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const state = { id: 'lesson-1', progress: 25 };
         const result = runStateRequest('lessonStates', 'readonly', store => store.get(state.id));
         let settled = false;
-        const observed = result.then(() => { settled = true; });
+        const observed = result.then(() => {
+          settled = true;
+        });
 
         fixture.succeedOpen();
         await Promise.resolve();
@@ -29,7 +31,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should support readwrite requests on the quiz state store', async (t) => {
+      it('should support readwrite requests on the quiz state store', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const value = { id: 'quiz-1', completed: true };
@@ -47,7 +49,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should preserve undefined when a requested record is missing', async (t) => {
+      it('should preserve undefined when a requested record is missing', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const result = runStateRequest('lessonStates', 'readonly', store => store.get('missing'));
@@ -61,7 +63,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should reject with the transaction error when a transaction aborts', async (t) => {
+      it('should reject with the transaction error when a transaction aborts', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const failure = new DOMException('Constraint violated', 'ConstraintError');
@@ -75,7 +77,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should use the request error when an aborted transaction has no error', async (t) => {
+      it('should use the request error when an aborted transaction has no error', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const failure = new DOMException('Request failed', 'DataError');
@@ -90,7 +92,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should supply an abort error when neither the transaction nor the request reports one', async (t) => {
+      it('should supply an abort error when neither the transaction nor the request reports one', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const result = runStateRequest('lessonStates', 'readonly', store => store.get('a'));
@@ -103,7 +105,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should propagate transaction errors and close the connection', async (t) => {
+      it('should propagate transaction errors and close the connection', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const failure = new DOMException('Commit failed', 'UnknownError');
@@ -117,7 +119,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should reject with a fallback error when a transaction fails without a reported error', async (t) => {
+      it('should reject with a fallback error when a transaction fails without a reported error', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const result = runStateRequest('quizStates', 'readwrite', store => store.get('a'));
@@ -130,18 +132,20 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should reject synchronous request-factory errors and close the connection', async (t) => {
+      it('should reject synchronous request-factory errors and close the connection', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const failure = new Error('Cannot create request');
-        const result = runStateRequest('lessonStates', 'readonly', () => { throw failure; });
+        const result = runStateRequest('lessonStates', 'readonly', () => {
+          throw failure;
+        });
 
         fixture.succeedOpen();
         await assert.rejects(result, (error: unknown) => error === failure);
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should reject transaction-creation errors and close the connection', async (t) => {
+      it('should reject transaction-creation errors and close the connection', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const failure = new Error('Unknown store');
@@ -153,7 +157,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 1);
       });
 
-      it('should propagate database-open errors without attempting a transaction', async (t) => {
+      it('should propagate database-open errors without attempting a transaction', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const failure = new DOMException('Database unavailable', 'UnknownError');

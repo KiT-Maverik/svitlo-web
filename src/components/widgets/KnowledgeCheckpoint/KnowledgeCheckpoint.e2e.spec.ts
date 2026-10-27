@@ -9,14 +9,20 @@ test('the explanation scene reveals one answer at a time', async ({ page }, test
   await expect(source).toHaveAttribute('aria-expanded', 'false');
   await source.click();
   await expect(source).toHaveAttribute('aria-expanded', 'true');
-  await expect(page.getByRole('region', { name: 'Where is the light source in the scene?' })).toContainText('The source is on the left.');
+  await expect(page.getByRole('region', { name: 'Where is the light source in the scene?' })).toContainText(
+    'The source is on the left.',
+  );
 
   await path.click();
   await expect(source).toHaveAttribute('aria-expanded', 'false');
   await expect(path).toHaveAttribute('aria-expanded', 'true');
   await expect(page.getByRole('region', { name: 'Where is the light source in the scene?' })).toBeHidden();
-  await expect(page.getByRole('region', { name: 'Does the path change when you change the animation speed?' })).toBeVisible();
-  await expect(page.getByRole('region', { name: 'Does the path change when you change the animation speed?' })).toContainText('the path stays straight');
+  await expect(
+    page.getByRole('region', { name: 'Does the path change when you change the animation speed?' }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('region', { name: 'Does the path change when you change the animation speed?' }),
+  ).toContainText('the path stays straight');
   await source.locator('xpath=../../..').screenshot({ path: testInfo.outputPath('explain-light.png') });
   await page.getByRole('switch', { name: 'Темна тема' }).check();
   await page.waitForTimeout(250);

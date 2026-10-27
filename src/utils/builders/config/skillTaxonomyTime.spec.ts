@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy', 'time');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'time');
 
 const groupSkills = {
   calendar: ['daySequence', 'leapYearDays', 'weekMonthYear', 'calendarInterval'],
@@ -13,12 +13,15 @@ const groupSkills = {
 } as const;
 
 const read = (path: string): string => readFileSync(join(root, path), 'utf8');
-const lines = (source: string): string[] => source.trim().split('\n').map(line => line.trim()).filter(Boolean);
+const lines = (source: string): string[] =>
+  source
+    .trim()
+    .split('\n')
+    .map(line => line.trim())
+    .filter(Boolean);
 
 function ownIds(source: string): Record<string, string> {
-  return Object.fromEntries(
-    [...source.matchAll(/^  (\w+): '([^']+)',?$/gm)].map(([, key, id]) => [key, id]),
-  );
+  return Object.fromEntries([...source.matchAll(/^  (\w+): '([^']+)',?$/gm)].map(([, key, id]) => [key, id]));
 }
 
 function names(source: string): Record<string, string> {
@@ -41,7 +44,10 @@ describe('Time skill taxonomy', () => {
     assert.match(domain, /groupIds: time_SkillGroups_Ids,/);
 
     const groupIndex = read('index.ids.ts');
-    assert.deepEqual([...groupIndex.matchAll(/^  (\w+): \w+_SkillGroup_Ids\.\w+,?$/gm)].map(x => x[1]), Object.keys(groupSkills));
+    assert.deepEqual(
+      [...groupIndex.matchAll(/^  (\w+): \w+_SkillGroup_Ids\.\w+,?$/gm)].map(x => x[1]),
+      Object.keys(groupSkills),
+    );
 
     for (const [group, skills] of Object.entries(groupSkills)) {
       const groupData = read(`${group}/${group}.data.ts`);

@@ -23,7 +23,10 @@ describe('Widgets', () => {
       const pause = LightPropagationSimulation_fx.selectors.playback(messages.controls.pause);
       expect(pause).toHaveAttribute('aria-pressed', 'false');
       await LightPropagationSimulation_fx.actions.togglePlayback(messages.controls.pause);
-      expect(LightPropagationSimulation_fx.selectors.playback(messages.controls.play)).toHaveAttribute('aria-pressed', 'true');
+      expect(LightPropagationSimulation_fx.selectors.playback(messages.controls.play)).toHaveAttribute(
+        'aria-pressed',
+        'true',
+      );
     });
 
     it('should start paused when reduced motion is enabled', () => {

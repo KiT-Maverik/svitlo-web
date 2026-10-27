@@ -10,16 +10,31 @@ export const LessonClient_mx = {
     const dispatch = vi.fn();
     vi.mocked(useLocale).mockReturnValue({ locale: 'uk-UA', setLocale: vi.fn() });
     vi.mocked(useLessonProgress).mockReturnValue({
-      progress: { ...initialProgress, ready: options.ready ?? true, step: options.step ?? 0, lastStep: 2, unlocked: 2, ...options.progress },
+      progress: {
+        ...initialProgress,
+        ready: options.ready ?? true,
+        step: options.step ?? 0,
+        lastStep: 2,
+        unlocked: 2,
+        ...options.progress,
+      },
       dispatch,
     });
     vi.mocked(getQuizState).mockReset().mockResolvedValue(undefined);
     vi.mocked(listQuizStates).mockReset().mockResolvedValue([]);
     vi.mocked(createQuizState).mockReset().mockResolvedValue(freshState);
     vi.mocked(saveQuizState).mockReset().mockResolvedValue(undefined);
-    vi.mocked(completeQuiz).mockReset().mockImplementation(async (id, result) => ({
-      id, quizId: freshState.quizId, status: 'finished', startedAt: new Date().toISOString(), answers: {}, completedAt: new Date().toISOString(), result,
-    }));
+    vi.mocked(completeQuiz)
+      .mockReset()
+      .mockImplementation(async (id, result) => ({
+        id,
+        quizId: freshState.quizId,
+        status: 'finished',
+        startedAt: new Date().toISOString(),
+        answers: {},
+        completedAt: new Date().toISOString(),
+        result,
+      }));
     return { dispatch, freshState };
   },
   reset: () => vi.clearAllMocks(),

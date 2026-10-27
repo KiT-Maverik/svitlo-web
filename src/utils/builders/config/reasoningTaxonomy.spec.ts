@@ -4,18 +4,24 @@ import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(root, 'reasoning');
 const groups = {
-  argumentation: ['classifyAndJustify', 'findCounterexample', 'explainStrategy', 'distinguishExampleRule', 'drawConclusion'],
+  argumentation: [
+    'classifyAndJustify',
+    'findCounterexample',
+    'explainStrategy',
+    'distinguishExampleRule',
+    'drawConclusion',
+  ],
   verification: ['checkReasonableness', 'spotCalculationError', 'verifyWithSecondMethod'],
   logic: ['completePattern', 'logicalElimination'],
   representations: ['multipleRepresentations'],
 } as const;
 const read = (path: string) => readFileSync(path, 'utf8');
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
-const idEntries = (path: string) => [...read(path).matchAll(/^  (\w+): '([^']+)',?$/gm)]
-  .map(([, key, value]) => [key, value] as const);
+const idEntries = (path: string) =>
+  [...read(path).matchAll(/^  (\w+): '([^']+)',?$/gm)].map(([, key, value]) => [key, value] as const);
 
 describe('Reasoning taxonomy integrity', () => {
   it('contains exactly the inventory groups and skill files', () => {
@@ -28,11 +34,17 @@ describe('Reasoning taxonomy integrity', () => {
       const groupData = read(join(path, `${group}.data.ts`));
       assert.ok(groupData.includes(`skillIds: ${group}_Skills_Ids`));
       const entries = idEntries(join(path, 'skills', 'index.ids.ts'));
-      assert.deepEqual(entries.map(([key]) => key), skills);
-      const exports = read(join(path, 'skills', 'index.data.ts')).trim().split('\n');
-      assert.deepEqual(exports, [...skills].sort().map(
-        skill => `export { ${skill}_Skill_Data } from './${skill}.data';`,
-      ));
+      assert.deepEqual(
+        entries.map(([key]) => key),
+        skills,
+      );
+      const exports = read(join(path, 'skills', 'index.data.ts'))
+        .trim()
+        .split('\n');
+      assert.deepEqual(
+        exports,
+        [...skills].sort().map(skill => `export { ${skill}_Skill_Data } from './${skill}.data';`),
+      );
       for (const skill of skills) {
         const filename = join(path, 'skills', `${skill}.data.ts`);
         assert.ok(existsSync(filename), filename);
@@ -69,7 +81,11 @@ describe('Reasoning taxonomy integrity', () => {
     assert.equal(dataFiles.length, 16);
     for (const path of dataFiles) {
       const keys = [...read(path).matchAll(/^    ([a-z]{2}): (.+),$/gm)];
-      assert.deepEqual(keys.map(([, key]) => key), expected, path);
+      assert.deepEqual(
+        keys.map(([, key]) => key),
+        expected,
+        path,
+      );
       for (const [, , value] of keys) {
         assert.notEqual(JSON.parse(value).trim(), '', path);
       }

@@ -12,7 +12,10 @@ describe('Components', () => {
     it('should render the localized practice heading and source link', () => {
       Practice_fx.render();
       expect(Practice_fx.selectors.title()).toBeVisible();
-      expect(screen.getByRole('link', { name: uk.notes.sourceLink })).toHaveAttribute('href', expect.stringContaining('openstax.org'));
+      expect(screen.getByRole('link', { name: uk.notes.sourceLink })).toHaveAttribute(
+        'href',
+        expect.stringContaining('openstax.org'),
+      );
     });
 
     it('should use the lesson locale context for English labels and numeric values', () => {
@@ -28,8 +31,13 @@ describe('Components', () => {
       Practice_fx.render('ar-SA');
       expect(screen.getByRole('heading', { name: locales.ar.header.title })).toBeVisible();
       expect(screen.getByRole('group', { name: locales.ar.selector.label })).toBeVisible();
-      expect(screen.getByRole('img', { name: `${locales.ar.simulation.trackPrefix}${locales.ar.selector.media.vacuum}.` })).toBeVisible();
-      expect(screen.getByRole('heading', { name: locales.ar.header.title }).closest('section')).toHaveAttribute('dir', 'rtl');
+      expect(
+        screen.getByRole('img', { name: `${locales.ar.simulation.trackPrefix}${locales.ar.selector.media.vacuum}.` }),
+      ).toBeVisible();
+      expect(screen.getByRole('heading', { name: locales.ar.header.title }).closest('section')).toHaveAttribute(
+        'dir',
+        'rtl',
+      );
     });
 
     it('should initially select the first medium and pause animation', () => {

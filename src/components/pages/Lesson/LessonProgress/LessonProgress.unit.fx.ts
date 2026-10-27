@@ -8,22 +8,32 @@ export const sectionIds = ['theory', 'practice', 'quiz'] as const;
 
 function ProgressHarness() {
   const { progress, dispatch } = useLessonProgress();
-  return createElement('div', {},
+  return createElement(
+    'div',
+    {},
     createElement('output', { 'aria-label': 'Ready state' }, String(progress.ready)),
     createElement('output', { 'aria-label': 'Current lesson step' }, String(progress.step)),
     createElement('output', { 'aria-label': 'Unlocked lesson step' }, String(progress.unlocked)),
     createElement('button', { type: 'button', onClick: () => dispatch({ type: 'next' }) }, 'Next step'),
     createElement('button', { type: 'button', onClick: () => dispatch({ type: 'back' }) }, 'Previous step'),
     createElement('button', { type: 'button', onClick: () => dispatch({ type: 'skip' }) }, 'Skip step'),
-    createElement('button', { type: 'button', onClick: () => dispatch({ type: 'visit', step: 0 }) }, 'Visit first step'),
+    createElement(
+      'button',
+      { type: 'button', onClick: () => dispatch({ type: 'visit', step: 0 }) },
+      'Visit first step',
+    ),
   );
 }
 
 export const LessonProgress_fx = {
   render: (props: Partial<Omit<Props, 'children'>> = {}) =>
-    render(createElement(LessonProgressProvider,
-      { lessonId: 'sample-lesson', sectionIds, requireQuiz: true, ...props } as Props,
-      createElement(ProgressHarness))),
+    render(
+      createElement(
+        LessonProgressProvider,
+        { lessonId: 'sample-lesson', sectionIds, requireQuiz: true, ...props } as Props,
+        createElement(ProgressHarness),
+      ),
+    ),
   selectors: {
     ready: () => screen.getByRole('status', { name: 'Ready state' }),
     step: () => screen.getByRole('status', { name: 'Current lesson step' }),

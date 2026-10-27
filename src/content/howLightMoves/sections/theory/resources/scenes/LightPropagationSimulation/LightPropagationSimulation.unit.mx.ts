@@ -9,7 +9,10 @@ export const LightPropagationSimulation_mx = {
       addEventListener: vi.fn((_event: string, callback: () => void) => listeners.add(callback)),
       removeEventListener: vi.fn((_event: string, callback: () => void) => listeners.delete(callback)),
     };
-    vi.stubGlobal('matchMedia', vi.fn(() => query));
+    vi.stubGlobal(
+      'matchMedia',
+      vi.fn(() => query),
+    );
     return {
       setReducedMotion: (value: boolean) => {
         query.matches = value;

@@ -3,9 +3,7 @@ import type { Collection } from '../../../types/misc.types';
 import type { Skill_Config } from '../../../types/content/skill.types';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
-const supportedLanguages = new Set<string>(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language),
-);
+const supportedLanguages = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language));
 
 /**
  * Shared validation for all taxonomy authoring configs.

@@ -6,8 +6,12 @@ import type { StateStore } from '../../utils/databaseConfig/databaseConfig.utils
 // The project compiles node:test suites to CommonJS. Mock the concrete exports
 // used by the utils barrel, leaving controller and validation code real.
 const nodeRequire = createRequire(__filename);
-const requestModule = nodeRequire('../../utils/runStateRequest/runStateRequest.utils') as typeof import('../../utils/runStateRequest/runStateRequest.utils');
-const updateModule = nodeRequire('../../utils/updateState/updateState.utils') as typeof import('../../utils/updateState/updateState.utils');
+const requestModule = nodeRequire(
+  '../../utils/runStateRequest/runStateRequest.utils',
+) as typeof import('../../utils/runStateRequest/runStateRequest.utils');
+const updateModule = nodeRequire(
+  '../../utils/updateState/updateState.utils',
+) as typeof import('../../utils/updateState/updateState.utils');
 
 function makeStore() {
   const request = {} as IDBRequest<unknown>;
@@ -67,7 +71,9 @@ export function stubUpdateState(result: unknown = undefined, rejection?: Error) 
 }
 
 export const lessonNew: Extract<LessonState, { status: 'new' }> = {
-  id: 'lesson-run-1', lessonId: 'lesson-1', status: 'new',
+  id: 'lesson-run-1',
+  lessonId: 'lesson-1',
+  status: 'new',
 };
 
 export const lessonInProgress: Extract<LessonState, { status: 'in-progress' }> = {
@@ -82,7 +88,9 @@ export const lessonInProgress: Extract<LessonState, { status: 'in-progress' }> =
 };
 
 export const quizNew: Extract<QuizState, { status: 'new' }> = {
-  id: 'quiz-run-1', quizId: 'quiz-1', status: 'new',
+  id: 'quiz-run-1',
+  quizId: 'quiz-1',
+  status: 'new',
 };
 
 export const quizInProgress: Extract<QuizState, { status: 'in-progress' }> = {

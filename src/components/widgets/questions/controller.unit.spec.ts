@@ -14,15 +14,22 @@ describe('Widgets', () => {
           const controller = createQuestionController(q, initial, checkers['multiple-select']);
           initial.push('a');
           assert.deepEqual(controller.getSnapshot(), {
-            answer: [], result: null, hasInteracted: false, isModified: false, hasChecked: false, attemptNumber: 1,
+            answer: [],
+            result: null,
+            hasInteracted: false,
+            isModified: false,
+            hasChecked: false,
+            attemptNumber: 1,
           });
         });
         it('should reflect a prefilled answer and a pregraded result without invoking callbacks', () => {
           const q = Questions_fx.make('single-select');
           const events: string[] = [];
           const controller = createQuestionController(q, null, checkers['single-select'], {
-            initialAnswer: 'b', initialResult: { status: 'incorrect' },
-            onCheck: () => events.push('check'), onAnswer: () => events.push('answer'),
+            initialAnswer: 'b',
+            initialResult: { status: 'incorrect' },
+            onCheck: () => events.push('check'),
+            onAnswer: () => events.push('answer'),
           });
           assert.equal(controller.getSnapshot().answer, 'b');
           assert.equal(controller.getSnapshot().isModified, true);
@@ -35,7 +42,9 @@ describe('Widgets', () => {
         it('should emit changes only for distinguishable answer values', () => {
           const q = Questions_fx.make('multiple-select');
           const events: string[][] = [];
-          const controller = createQuestionController(q, [], checkers['multiple-select'], { onChange: e => events.push(e.answer) });
+          const controller = createQuestionController(q, [], checkers['multiple-select'], {
+            onChange: e => events.push(e.answer),
+          });
           controller.setAnswer(['a', 'b']);
           controller.setAnswer(['b', 'a']);
           assert.deepEqual(events, [['a', 'b']]);
@@ -54,7 +63,9 @@ describe('Widgets', () => {
         it('should protect internal state from mutations in callbacks', () => {
           const q = Questions_fx.make('multiple-select');
           const controller = createQuestionController(q, [], checkers['multiple-select'], {
-            onChange: event => { event.answer.push('foreign'); },
+            onChange: event => {
+              event.answer.push('foreign');
+            },
           });
           controller.setAnswer(['a']);
           assert.deepEqual(controller.getSnapshot().answer, ['a']);
@@ -64,7 +75,9 @@ describe('Widgets', () => {
         it('should prohibit checking an incomplete or invalid matching answer', () => {
           const q = Questions_fx.make('matching');
           const events: string[] = [];
-          const controller = createQuestionController(q, {}, checkers.matching, { onCheck: () => events.push('check') });
+          const controller = createQuestionController(q, {}, checkers.matching, {
+            onCheck: () => events.push('check'),
+          });
           const drafts: Record<string, string>[] = [{}, { a: 'x' }, { a: 'x', b: 'x' }, { a: 'unknown' }];
           for (const answer of drafts) {
             controller.setAnswer(answer);
@@ -165,15 +178,44 @@ describe('Widgets', () => {
           assert.equal(controller.getSnapshot().attemptNumber, 1);
           assert.deepEqual(events, ['retry:2', 'reset:1']);
         });
+        it('should clear the UI answer on retry while keeping the next attempt number', () => {
+          const q = Questions_fx.make('single-select');
+          const events: string[] = [];
+          const controller = createQuestionController(q, null, checkers['single-select'], {
+            onRetry: e => events.push(`retry:${e.attemptNumber}:${e.answer}`),
+          });
+          controller.setAnswer('b');
+          controller.check();
+          controller.retry(true);
+          assert.deepEqual(controller.getSnapshot(), {
+            answer: null,
+            result: null,
+            hasInteracted: false,
+            isModified: false,
+            hasChecked: false,
+            attemptNumber: 2,
+          });
+          assert.deepEqual(events, ['retry:2:null']);
+          controller.setAnswer('a');
+          controller.check();
+          assert.equal(controller.getSnapshot().result?.status, 'correct');
+          assert.equal(controller.getSnapshot().attemptNumber, 2);
+        });
         it('should prevent all answer mutation and lifecycle actions while disabled or read-only', () => {
           const q = Questions_fx.make('single-select');
           const controller = createQuestionController(q, null, checkers['single-select'], { disabled: true });
-          controller.setAnswer('a'); controller.check(); controller.reset(); controller.retry();
+          controller.setAnswer('a');
+          controller.check();
+          controller.reset();
+          controller.retry();
           assert.equal(controller.getSnapshot().answer, null);
           controller.configure({});
-          controller.setAnswer('a'); controller.check();
+          controller.setAnswer('a');
+          controller.check();
           controller.configure({ readOnly: true });
-          controller.retry(); controller.reset(); controller.setAnswer('b');
+          controller.retry();
+          controller.reset();
+          controller.setAnswer('b');
           assert.equal(controller.getSnapshot().answer, 'a');
           assert.equal(controller.getSnapshot().result?.status, 'correct');
         });

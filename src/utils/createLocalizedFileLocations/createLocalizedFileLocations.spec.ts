@@ -8,7 +8,10 @@ describe('Utils', () => {
     describe('Locale selection', () => {
       it('should generate a path for every default supported locale', () => {
         const result = createLocalizedFileLocations('/lessons/intro', 'md');
-        assert.deepEqual(Object.keys(result), DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => locale));
+        assert.deepEqual(
+          Object.keys(result),
+          DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => locale),
+        );
         assert.equal(result['en-US'], '/lessons/intro/en.md');
         assert.equal(result['uk-UA'], '/lessons/intro/uk.md');
         assert.equal(result['zh-Hans-CN'], '/lessons/intro/zh.md');
@@ -16,27 +19,39 @@ describe('Utils', () => {
       });
 
       it('should restrict the output to only the requested locales', () => {
-        assert.deepEqual(createLocalizedFileLocations('/dir', '.txt', {
-          only: ['uk-UA', 'pl-PL'],
-        }), {
-          'pl-PL': '/dir/pl.txt',
-          'uk-UA': '/dir/uk.txt',
-        });
+        assert.deepEqual(
+          createLocalizedFileLocations('/dir', '.txt', {
+            only: ['uk-UA', 'pl-PL'],
+          }),
+          {
+            'pl-PL': '/dir/pl.txt',
+            'uk-UA': '/dir/uk.txt',
+          },
+        );
       });
 
       it('should add included locales to an explicit selection', () => {
-        assert.deepEqual(createLocalizedFileLocations('/dir', 'md', {
-          only: ['uk-UA'], include: ['en-US'],
-        }), {
-          'en-US': '/dir/en.md',
-          'uk-UA': '/dir/uk.md',
-        });
+        assert.deepEqual(
+          createLocalizedFileLocations('/dir', 'md', {
+            only: ['uk-UA'],
+            include: ['en-US'],
+          }),
+          {
+            'en-US': '/dir/en.md',
+            'uk-UA': '/dir/uk.md',
+          },
+        );
       });
 
       it('should remove excluded locales after applying inclusions', () => {
-        assert.deepEqual(createLocalizedFileLocations('/dir', 'md', {
-          only: ['uk-UA'], include: ['en-US'], exclude: ['uk-UA'],
-        }), { 'en-US': '/dir/en.md' });
+        assert.deepEqual(
+          createLocalizedFileLocations('/dir', 'md', {
+            only: ['uk-UA'],
+            include: ['en-US'],
+            exclude: ['uk-UA'],
+          }),
+          { 'en-US': '/dir/en.md' },
+        );
       });
 
       it('should remove excluded locales from the default full selection', () => {
@@ -55,7 +70,6 @@ describe('Utils', () => {
         });
         assert.deepEqual(Object.keys(result), ['en-US', 'pl-PL', 'uk-UA']);
       });
-
     });
 
     describe('Path formatting', () => {

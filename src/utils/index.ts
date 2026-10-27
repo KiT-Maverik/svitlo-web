@@ -25,8 +25,13 @@ export type {
   DynamicQuestion_Variant,
 } from './createDynamicQuestion/createDynamicQuestion.types';
 export { createLocalizedFileLocations } from './createLocalizedFileLocations/createLocalizedFileLocations.utils';
-export type { CreateLocalizedFileLocationsOptions, LocalizedFileLocations } from './createLocalizedFileLocations/createLocalizedFileLocations.utils';
+export type {
+  CreateLocalizedFileLocationsOptions,
+  LocalizedFileLocations,
+} from './createLocalizedFileLocations/createLocalizedFileLocations.utils';
 export { createTextResource } from './createTextResource/createTextResource.utils';
 export { buildSkillConfig } from './builders/config/buildSkillConfig.utils';
 export { buildSkillGroupConfig } from './builders/config/buildSkillGroupConfig.utils';
 export { buildSkillDomainConfig } from './builders/config/buildSkillDomainConfig.utils';
+export { buildLessonConfig } from './builders/config/buildLessonConfig.utils';
+export { buildLessonSectionConfig } from './builders/config/buildLessonSectionConfig.utils';

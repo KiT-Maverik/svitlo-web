@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import ts from 'typescript';
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
-const taxonomyRoot = join(projectRoot, 'math', 'skillsTaxonomy');
+const taxonomyRoot = join(projectRoot, 'src', 'math', 'skillsTaxonomy');
 const checkOnly = process.argv.includes('--check');
 
 function* dataFiles(directory) {
@@ -21,16 +21,24 @@ function migrate(file) {
   const edits = [];
 
   function visit(node) {
-    if (ts.isPropertyAssignment(node) && node.name.getText(ast) === 'name' && ts.isObjectLiteralExpression(node.initializer)) {
+    if (
+      ts.isPropertyAssignment(node) &&
+      node.name.getText(ast) === 'name' &&
+      ts.isObjectLiteralExpression(node.initializer)
+    ) {
       const languages = new Set();
       for (const property of node.initializer.properties) {
-        if (!ts.isPropertyAssignment(property) || !ts.isStringLiteral(property.name) && !ts.isIdentifier(property.name)) {
+        if (
+          !ts.isPropertyAssignment(property) ||
+          (!ts.isStringLiteral(property.name) && !ts.isIdentifier(property.name))
+        ) {
           throw new Error(`Unexpected name key in ${relative(projectRoot, file)}`);
         }
         const key = property.name.text;
         const language = /^[a-z]{2}$/.test(key) ? key : /^([a-z]{2})(?:-[A-Za-z0-9]+)+$/.exec(key)?.[1];
         if (!language) throw new Error(`Unsupported name key ${key} in ${relative(projectRoot, file)}`);
-        if (languages.has(language)) throw new Error(`Duplicate language ${language} in ${relative(projectRoot, file)}`);
+        if (languages.has(language))
+          throw new Error(`Duplicate language ${language} in ${relative(projectRoot, file)}`);
         languages.add(language);
         if (key !== language || ts.isStringLiteral(property.name)) {
           edits.push({ start: property.name.getStart(ast), end: property.name.getEnd(), text: language });

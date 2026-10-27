@@ -32,9 +32,15 @@ export function LightRayDiagram() {
         <rect className={styles.screen} x="800" y="75" width="14" height="190" rx="7" />
       </g>
       <g className={styles.labels} textAnchor="middle">
-        <text x={rtl ? 800 : 160} y="285">{messages.labels.source}</text>
-        <text x="500" y="115">{messages.labels.direction}</text>
-        <text x={rtl ? 153 : 807} y="305">{messages.labels.screen}</text>
+        <text x={rtl ? 800 : 160} y="285">
+          {messages.labels.source}
+        </text>
+        <text x="500" y="115">
+          {messages.labels.direction}
+        </text>
+        <text x={rtl ? 153 : 807} y="305">
+          {messages.labels.screen}
+        </text>
       </g>
     </svg>
   );

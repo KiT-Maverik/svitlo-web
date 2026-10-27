@@ -2,7 +2,7 @@ import type { Question, Question_Config } from './question.types';
 import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
 import type { NonEmptyArray } from '../misc.types';
 
-type QuizQuestion = Question_Config & { number: number; weight: number }
+type QuizQuestion = Question_Config & { number: number; weight: number };
 
 export type Quiz_EndingScreen_Config =
   | {
@@ -25,7 +25,7 @@ export interface Quiz_Config {
     mode: 'percentage' | 'points';
     successThreshold: number;
   };
-  id: string
+  id: string;
   lessonId: string;
   interaction: {
     /** -1 means unlimited retries, 0 disables retries, positive values set the limit. */
@@ -39,10 +39,7 @@ export interface Quiz_Config {
   };
   maxDuration?: number;
   name: TextResource_Config;
-  questionBank: [
-    QuizQuestion,
-    ...QuizQuestion[],
-  ];
+  questionBank: [QuizQuestion, ...QuizQuestion[]];
   results: {
     visibility: 'immediate' | 'after-review' | 'hidden';
     showScore: boolean;
@@ -102,9 +99,7 @@ export type QuizQuestionState =
   | { status: 'deferred'; answer?: QuizAnswer; result?: never }
   | { status: 'submitted'; answer: QuizAnswer; result?: QuizQuestionResult };
 
-export type QuizResult =
-  | { status: 'graded'; success: boolean; value: number }
-  | { status: 'ungraded' };
+export type QuizResult = { status: 'graded'; success: boolean; value: number } | { status: 'ungraded' };
 
 interface QuizState_Base {
   /** Identifies this particular run; another run of the same quiz has another ID. */

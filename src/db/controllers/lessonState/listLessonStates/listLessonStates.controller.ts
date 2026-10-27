@@ -3,6 +3,8 @@ import { lessonState_Schema } from '../../../schemas/lessonState/lessonState.sch
 import { runStateRequest } from '../../../utils';
 
 export async function listLessonStates(lessonId: LessonState['lessonId']): Promise<LessonState[]> {
-  const values: unknown[] = await runStateRequest('lessonStates', 'readonly', store => store.index('lessonId').getAll(lessonId));
+  const values: unknown[] = await runStateRequest('lessonStates', 'readonly', store =>
+    store.index('lessonId').getAll(lessonId),
+  );
   return values.map(value => lessonState_Schema.parse(value));
 }

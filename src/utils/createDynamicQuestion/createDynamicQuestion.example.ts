@@ -29,10 +29,15 @@ const appleName: TextResource_AllLocales_Config = {
   id: 'apples-question',
   blockType: 'text',
   allLocales: true,
-  value: Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(language => [language.language, 'Apples'])) as TextResource_AllLocales_Config['value'],
+  value: Object.fromEntries(
+    DEFAULT_SUPPORTED_LANGUAGES.map(language => [language.language, 'Apples']),
+  ) as TextResource_AllLocales_Config['value'],
 };
 
-const createAppleValue = <T extends 'girlsApple' | 'boysApple'>(selector: T, value: number): { selector: T; value: number } => ({ selector, value });
+const createAppleValue = <T extends 'girlsApple' | 'boysApple'>(
+  selector: T,
+  value: number,
+): { selector: T; value: number } => ({ selector, value });
 
 const appleConfig: DynamicQuestion_Config<AppleArguments> = {
   arguments: appleArguments,
@@ -40,10 +45,7 @@ const appleConfig: DynamicQuestion_Config<AppleArguments> = {
     const variants: AppleVariant[] = [];
     for (let girls = 1; girls <= 10; girls += 1) {
       for (let boys = 2; boys <= 11; boys += 1) {
-        variants.push([
-          createAppleValue('girlsApple', girls),
-          createAppleValue('boysApple', boys),
-        ]);
+        variants.push([createAppleValue('girlsApple', girls), createAppleValue('boysApple', boys)]);
       }
     }
     return variants;

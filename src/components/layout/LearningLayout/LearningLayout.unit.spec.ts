@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('next/navigation', () => ({ usePathname: vi.fn(), useRouter: vi.fn() }));
 vi.mock('@/i18n/LocaleProvider/LocaleProvider', () => ({ useLocale: vi.fn() }));
-vi.mock('@/components/pages/Lesson/LessonProgress/LessonProgress', async (importOriginal) => ({
+vi.mock('@/components/pages/Lesson/LessonProgress/LessonProgress', async importOriginal => ({
   ...(await importOriginal<typeof import('@/components/pages/Lesson/LessonProgress/LessonProgress')>()),
   useLessonProgress: vi.fn(),
 }));
@@ -23,7 +23,9 @@ describe('Layouts', () => {
       expect(LearningLayout_fx.selectors.top()).toBeVisible();
       expect(LearningLayout_fx.selectors.bottom()).toBeVisible();
       expect(LearningLayout_fx.selectors.main()).toHaveTextContent('Lesson content');
-      expect(LearningLayout_fx.navbar.slot('center', LearningLayout_fx.selectors.bottom())).toHaveTextContent(locale.actions.next);
+      expect(LearningLayout_fx.navbar.slot('center', LearningLayout_fx.selectors.bottom())).toHaveTextContent(
+        locale.actions.next,
+      );
     });
 
     it('should enable progression only when the supplied progress permits it', async () => {
@@ -46,7 +48,9 @@ describe('Layouts', () => {
       LearningLayout_fx.render();
       await LearningLayout_fx.actions.openTopics();
       expect(await screen.findByRole('navigation', { name: aria.navigation.topics })).toBeVisible();
-      expect(within(LearningLayout_fx.selectors.topics()).getByRole('link', { name: 'How light travels' })).toHaveAttribute('aria-current', 'page');
+      expect(
+        within(LearningLayout_fx.selectors.topics()).getByRole('link', { name: 'How light travels' }),
+      ).toHaveAttribute('aria-current', 'page');
       await LearningLayout_fx.actions.escape();
       expect(LearningLayout_fx.selectors.topAction(aria.actions.openTopics)).toHaveAttribute('aria-expanded', 'false');
     });
@@ -56,7 +60,10 @@ describe('Layouts', () => {
       await LearningLayout_fx.actions.openTopics();
       await LearningLayout_fx.actions.openSettings();
       expect(await screen.findByText(locale.settingsDescription)).toBeVisible();
-      expect(LearningLayout_fx.selectors.topAction(aria.actions.closeSettings)).toHaveAttribute('aria-expanded', 'true');
+      expect(LearningLayout_fx.selectors.topAction(aria.actions.closeSettings)).toHaveAttribute(
+        'aria-expanded',
+        'true',
+      );
       expect(LearningLayout_fx.selectors.topAction(aria.actions.openTopics)).toHaveAttribute('aria-expanded', 'false');
     });
 

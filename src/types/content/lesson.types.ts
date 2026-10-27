@@ -1,10 +1,11 @@
 import type { ReactNode } from 'react';
 import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
 import type { Quiz, Quiz_Config, QuizState } from './quiz.types';
-import type { NonEmptyArray } from '../misc.types';
+import type { Collection, NonEmptyArray } from '../misc.types';
 import type { LanguageCode } from '../languages';
 
 export interface LessonSection_Config {
+  readonly collection: Extract<Collection, 'lessonSection'>;
   content: NonEmptyArray<Resource_Config>;
   id: string;
   lessonId: Lesson_Config['id'];
@@ -14,6 +15,7 @@ export interface LessonSection_Config {
 }
 
 export interface LessonSection {
+  readonly collection: Extract<Collection, 'lessonSection'>;
   content: NonEmptyArray<Resource>;
   id: string;
   lessonId: Lesson['id'];
@@ -31,7 +33,8 @@ export interface LessonContentCatalog {
 }
 
 export interface Lesson_Config {
-  id: string,
+  readonly collection: Extract<Collection, 'lesson'>;
+  id: string;
   slug: string;
   requireQuiz: boolean;
   sections: {
@@ -46,6 +49,7 @@ export interface Lesson_Config {
 }
 
 export interface Lesson {
+  readonly collection: Extract<Collection, 'lesson'>;
   id: string;
   slug: string;
   requireQuiz: boolean;
@@ -77,7 +81,15 @@ interface LessonState_Progress extends LessonState_Base {
 }
 
 export type LessonState =
-  | (LessonState_Base & { status: 'new'; startedAt?: never; sectionCompletion?: never; skippedSectionIds?: never; quizStateIds?: never; contentCompletedAt?: never; completedAt?: never })
+  | (LessonState_Base & {
+      status: 'new';
+      startedAt?: never;
+      sectionCompletion?: never;
+      skippedSectionIds?: never;
+      quizStateIds?: never;
+      contentCompletedAt?: never;
+      completedAt?: never;
+    })
   | (LessonState_Progress & { status: 'in-progress'; contentCompletedAt?: never; completedAt?: never })
   /** Lesson content is complete; any required quiz may still be unfinished. */
   | (LessonState_Progress & { status: 'content-complete'; contentCompletedAt: string; completedAt?: never })

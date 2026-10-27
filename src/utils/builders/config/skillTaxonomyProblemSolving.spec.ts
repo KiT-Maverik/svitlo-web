@@ -4,46 +4,16 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy', 'problemSolving');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'problemSolving');
 const read = (...path: string[]): string => readFileSync(join(root, ...path), 'utf8');
 const groups = {
-  "conditions": [
-    "identifyKnownUnknown",
-    "findExtraneousData",
-    "findMissingData"
-  ],
-  "models": [
-    "chooseOperationAddSub",
-    "chooseOperationMulDiv",
-    "oneStepModel",
-    "createProblem"
-  ],
-  "planning": [
-    "twoStepPlan",
-    "threeStepPlan",
-    "inverseProblem",
-    "explainAnswerUnits",
-    "multipleSolutionStrategies"
-  ],
-  "comparisons": [
-    "additiveComparison",
-    "increaseDecreaseNumber",
-    "multiplicativeComparison",
-    "increaseDecreaseFactor"
-  ],
-  "parts": [
-    "partWholeAddsub",
-    "fractionsContext"
-  ],
-  "groups": [
-    "correspondenceCombinations",
-    "equalGroups"
-  ],
-  "quantities": [
-    "workRateTime",
-    "priceQuantityCost",
-    "measurementContext"
-  ]
+  conditions: ['identifyKnownUnknown', 'findExtraneousData', 'findMissingData'],
+  models: ['chooseOperationAddSub', 'chooseOperationMulDiv', 'oneStepModel', 'createProblem'],
+  planning: ['twoStepPlan', 'threeStepPlan', 'inverseProblem', 'explainAnswerUnits', 'multipleSolutionStrategies'],
+  comparisons: ['additiveComparison', 'increaseDecreaseNumber', 'multiplicativeComparison', 'increaseDecreaseFactor'],
+  parts: ['partWholeAddsub', 'fractionsContext'],
+  groups: ['correspondenceCombinations', 'equalGroups'],
+  quantities: ['workRateTime', 'priceQuantityCost', 'measurementContext'],
 } as const;
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
@@ -67,13 +37,17 @@ function idEntries(contents: string): Map<string, string> {
 describe('Problem Solving taxonomy implementation', () => {
   it('provides exactly seven groups and 23 independent Skill data files', () => {
     assert.deepEqual(
-      readdirSync(root, { withFileTypes: true }).filter(e => e.isDirectory()).map(e => e.name).sort(),
+      readdirSync(root, { withFileTypes: true })
+        .filter(e => e.isDirectory())
+        .map(e => e.name)
+        .sort(),
       Object.keys(groups).sort(),
     );
     for (const [group, skills] of Object.entries(groups)) {
       const found = readdirSync(join(root, group, 'skills'))
         .filter(file => file.endsWith('.data.ts') && file !== 'index.data.ts')
-        .map(file => file.replace('.data.ts', '')).sort();
+        .map(file => file.replace('.data.ts', ''))
+        .sort();
       assert.deepEqual(found, [...skills].sort(), group);
     }
     assert.equal(Object.values(groups).flat().length, 23);

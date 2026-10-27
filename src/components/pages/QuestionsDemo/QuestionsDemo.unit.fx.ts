@@ -12,7 +12,8 @@ export const QuestionsDemo_fx = {
     controls: () => screen.getByRole('complementary', { name: aria.controls }),
     checkbox: (key: Exclude<keyof typeof locale.settings, 'checkMode'>) =>
       within(QuestionsDemo_fx.selectors.controls()).getByRole('checkbox', { name: locale.settings[key] }),
-    checkMode: () => within(QuestionsDemo_fx.selectors.controls()).getByRole('combobox', { name: locale.settings.checkMode }),
+    checkMode: () =>
+      within(QuestionsDemo_fx.selectors.controls()).getByRole('combobox', { name: locale.settings.checkMode }),
   },
   actions: {
     toggle: async (key: Exclude<keyof typeof locale.settings, 'checkMode'>) =>

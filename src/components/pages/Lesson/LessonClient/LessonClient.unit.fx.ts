@@ -9,11 +9,13 @@ import { locale } from '../locales/uk-UA';
 
 type Props = ComponentProps<typeof LessonClient>;
 
-const questions = [{
-  id: 'sample-question',
-  prompt: 'Which answer is correct?',
-  type: 'select-one-answer',
-}] as unknown as NonNullable<Props['questions']>;
+const questions = [
+  {
+    id: 'sample-question',
+    prompt: 'Which answer is correct?',
+    type: 'select-one-answer',
+  },
+] as unknown as NonNullable<Props['questions']>;
 
 const quiz = {
   id: 'sample-quiz',
@@ -23,9 +25,13 @@ const quiz = {
   questionBank: [{ ...questions[0], weight: 1, number: 1 }] as unknown as NonNullable<Props['quiz']>['questionBank'],
   feedbackMode: 'immediate',
   interaction: {
-    retries: 0, showErrors: true, showCorrectAnswers: true,
-    allowExplanations: true, allowDeferring: false,
-    allowQuestionNavigation: true, skippable: false,
+    retries: 0,
+    showErrors: true,
+    showCorrectAnswers: true,
+    allowExplanations: true,
+    allowDeferring: false,
+    allowQuestionNavigation: true,
+    skippable: false,
   },
   results: { visibility: 'immediate', showScore: true },
   screen: {},
@@ -37,18 +43,21 @@ const lesson = {
   requireQuiz: true,
   title: { id: 'title', blockType: 'text', locale: 'uk-UA', value: 'Sample lesson' },
   sections: {
-    allowNavigation: true, allowSkipping: true, showIndexes: true,
-    content: [
-      { id: 'theory', name: { value: 'Theory' } },
-      { id: 'practice', name: { value: 'Practice' } },
-      quiz,
-    ],
+    allowNavigation: true,
+    allowSkipping: true,
+    showIndexes: true,
+    content: [{ id: 'theory', name: { value: 'Theory' } }, { id: 'practice', name: { value: 'Practice' } }, quiz],
   },
 } as unknown as Props['lesson'];
 
 const defaults = {
-  lesson, quiz, questions,
-  sectionContent: [createElement('p', { key: 'theory' }, 'Theory body'), createElement('p', { key: 'practice' }, 'Practice body')],
+  lesson,
+  quiz,
+  questions,
+  sectionContent: [
+    createElement('p', { key: 'theory' }, 'Theory body'),
+    createElement('p', { key: 'practice' }, 'Practice body'),
+  ],
 } satisfies Props;
 
 export const LessonClient_fx = {

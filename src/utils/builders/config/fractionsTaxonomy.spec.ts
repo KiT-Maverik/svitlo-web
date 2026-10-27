@@ -4,14 +4,22 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const base = join(root, 'fractions');
 const groups = {
   representation: [
-    'wholeAndEqualParts', 'fractionGreaterThanOne', 'tenthsAsDivision',
-    'unitFractionModel', 'unitFractionRead', 'denominatorMeaning',
-    'numeratorMeaning', 'nonUnitModel', 'wholeDependence', 'numberLine',
-    'oneAsFraction', 'equivalentVisual',
+    'wholeAndEqualParts',
+    'fractionGreaterThanOne',
+    'tenthsAsDivision',
+    'unitFractionModel',
+    'unitFractionRead',
+    'denominatorMeaning',
+    'numeratorMeaning',
+    'nonUnitModel',
+    'wholeDependence',
+    'numberLine',
+    'oneAsFraction',
+    'equivalentVisual',
   ],
   comparison: ['compareSameNumerator', 'compareUnit', 'sameDenominatorModel'],
   arithmetic: ['addLikeDenominators', 'subtractLikeDenominators'],
@@ -31,8 +39,7 @@ function checkLocales(source: string, label: string): void {
 }
 
 function getStaticIds(source: string): Readonly<Record<string, string>> {
-  return Object.fromEntries([...source.matchAll(/^\s+(\w+): '([0-9a-f-]+)',$/gm)]
-    .map(([, key, id]) => [key, id]));
+  return Object.fromEntries([...source.matchAll(/^\s+(\w+): '([0-9a-f-]+)',$/gm)].map(([, key, id]) => [key, id]));
 }
 
 describe('Math / Fractions taxonomy', () => {
@@ -52,14 +59,16 @@ describe('Math / Fractions taxonomy', () => {
       const ids = getStaticIds(read(folder, 'skills', 'index.ids.ts'));
       assert.deepEqual(Object.keys(ids).sort(), [...expectedSkills].sort());
 
-      const allFiles = readdirSync(join(folder, 'skills'))
-        .filter(filename => filename.endsWith('.data.ts') && filename !== 'index.data.ts');
+      const allFiles = readdirSync(join(folder, 'skills')).filter(
+        filename => filename.endsWith('.data.ts') && filename !== 'index.data.ts',
+      );
       assert.equal(allFiles.length, expectedSkills.length, group + ' Skill file count');
 
       const exports = read(folder, 'skills', 'index.data.ts').trim().split('\n');
-      assert.deepEqual(exports, [...expectedSkills].sort().map(
-        skill => "export { " + skill + "_Skill_Data } from './" + skill + ".data';",
-      ));
+      assert.deepEqual(
+        exports,
+        [...expectedSkills].sort().map(skill => 'export { ' + skill + "_Skill_Data } from './" + skill + ".data';"),
+      );
 
       for (const skill of expectedSkills) {
         const data = read(folder, 'skills', skill + '.data.ts');
@@ -85,13 +94,17 @@ describe('Math / Fractions taxonomy', () => {
   });
 
   it('marks all 19 Skill rows implemented in the inventory', () => {
-    const inventory = read(process.cwd(), 'math', 'skills-inventory.md');
+    const inventory = read(process.cwd(), 'src', 'math', 'skills-inventory.md');
     const begin = inventory.indexOf('### Domain 3. Дроби (19)');
     const end = inventory.indexOf('### Domain 4. Арифметика (79)');
     assert.ok(begin >= 0 && end > begin);
     const section = inventory.slice(begin, end);
-    const implemented = section.split('\n').filter(line =>
-      line.startsWith('| ' + String.fromCharCode(96) + 'math.fractions.') && line.endsWith('| **Implemented** |'));
+    const implemented = section
+      .split('\n')
+      .filter(
+        line =>
+          line.startsWith('| ' + String.fromCharCode(96) + 'math.fractions.') && line.endsWith('| **Implemented** |'),
+      );
     assert.equal(implemented.length, 19);
   });
 });

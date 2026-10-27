@@ -65,8 +65,10 @@ export function installIndexedDbFixture(existingStores: readonly string[] = []) 
     oncomplete: null,
     onabort: null,
     onerror: null,
-    abort: () => { abortCount += 1; },
-    objectStore: (name) => {
+    abort: () => {
+      abortCount += 1;
+    },
+    objectStore: name => {
       selectedStores.push(name);
       return store;
     },
@@ -80,7 +82,7 @@ export function installIndexedDbFixture(existingStores: readonly string[] = []) 
     close: () => void;
     onversionchange: IDBDatabase['onversionchange'];
   } = {
-    objectStoreNames: { contains: (name) => stores.has(name) },
+    objectStoreNames: { contains: name => stores.has(name) },
     createObjectStore(name, options) {
       createdStores.push({ name, keyPath: options?.keyPath });
       stores.add(name);
@@ -95,7 +97,9 @@ export function installIndexedDbFixture(existingStores: readonly string[] = []) 
       transactions.push({ name, mode });
       return transaction;
     },
-    close: () => { closeCount += 1; },
+    close: () => {
+      closeCount += 1;
+    },
     onversionchange: null,
   };
   const database = databaseState as unknown as IDBDatabase;
@@ -127,16 +131,18 @@ export function installIndexedDbFixture(existingStores: readonly string[] = []) 
     selectedStores,
     reads,
     writes,
-    get closeCount() { return closeCount; },
-    get abortCount() { return abortCount; },
+    get closeCount() {
+      return closeCount;
+    },
+    get abortCount() {
+      return abortCount;
+    },
     succeedOpen: () => openRequest.succeed(database),
     failOpen: (error: DOMException) => openRequest.fail(error),
-    upgrade: () => upgradeRequest.onupgradeneeded?.call(
-      upgradeRequest, new Event('upgradeneeded') as IDBVersionChangeEvent,
-    ),
-    versionChange: () => databaseState.onversionchange?.call(
-      database, new Event('versionchange') as IDBVersionChangeEvent,
-    ),
+    upgrade: () =>
+      upgradeRequest.onupgradeneeded?.call(upgradeRequest, new Event('upgradeneeded') as IDBVersionChangeEvent),
+    versionChange: () =>
+      databaseState.onversionchange?.call(database, new Event('versionchange') as IDBVersionChangeEvent),
     complete: () => transactionState.oncomplete?.call(transaction, new Event('complete')),
     abort: (error: DOMException | null = null) => {
       transactionState.error = error;
@@ -146,8 +152,12 @@ export function installIndexedDbFixture(existingStores: readonly string[] = []) 
       transactionState.error = error;
       transactionState.onerror?.call(transaction, new Event('error'));
     },
-    throwOnTransaction: (error: Error) => { transactionFailure = error; },
-    throwOnPut: (error: Error) => { putFailure = error; },
+    throwOnTransaction: (error: Error) => {
+      transactionFailure = error;
+    },
+    throwOnPut: (error: Error) => {
+      putFailure = error;
+    },
     restore: () => {
       if (previous) Object.defineProperty(globalThis, 'indexedDB', previous);
       else Reflect.deleteProperty(globalThis, 'indexedDB');

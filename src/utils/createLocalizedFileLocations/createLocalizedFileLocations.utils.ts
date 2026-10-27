@@ -13,9 +13,7 @@ const normalizeExtension = (extension: string): string => {
   return value.length > 0 ? `.${value}` : '';
 };
 
-const joinPath = (directory: string, fileName: string): string => (
-  `${directory.replace(/\/+$/, '')}/${fileName}`
-);
+const joinPath = (directory: string, fileName: string): string => `${directory.replace(/\/+$/, '')}/${fileName}`;
 
 export function createLocalizedFileLocations<TOnly extends Locale = Locale>(
   directory: string,
@@ -26,8 +24,8 @@ export function createLocalizedFileLocations<TOnly extends Locale = Locale>(
   const availableLocales = availableLanguages.map(({ locale }) => locale);
   const selectedLocales = new Set<Locale>(options.only ?? availableLocales);
 
-  options.include?.forEach((locale) => selectedLocales.add(locale));
-  options.exclude?.forEach((locale) => selectedLocales.delete(locale));
+  options.include?.forEach(locale => selectedLocales.add(locale));
+  options.exclude?.forEach(locale => selectedLocales.delete(locale));
 
   const fileExtension = normalizeExtension(extension);
   const locations = Object.fromEntries(

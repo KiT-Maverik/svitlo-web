@@ -19,7 +19,10 @@ describe('Widgets', () => {
       });
       it('should reject a malformed correct identifier', () => {
         const q = Questions_fx.make('single-select');
-        assert.deepEqual(checkers['single-select']({ ...q, correctId: 'missing' }, 'a'), { status: 'invalid', reason: 'definition' });
+        assert.deepEqual(checkers['single-select']({ ...q, correctId: 'missing' }, 'a'), {
+          status: 'invalid',
+          reason: 'definition',
+        });
       });
     });
     describe('MultipleSelect', () => {
@@ -65,7 +68,7 @@ describe('Widgets', () => {
     describe('AnswerWithText', () => {
       it('should accept independently authored alternatives under configured normalization', () => {
         const q = Questions_fx.make('short-text');
-        assert.equal(checkers['short-text'](q, '  HELLO   WORLD ' ).status, 'correct');
+        assert.equal(checkers['short-text'](q, '  HELLO   WORLD ').status, 'correct');
         assert.equal(checkers['short-text'](q, 'hi').status, 'correct');
         assert.equal(checkers['short-text'](q, 'other').status, 'incorrect');
       });
@@ -76,7 +79,10 @@ describe('Widgets', () => {
           const changed = { ...q, normalization: { ...q.normalization, [flag]: false } };
           assert.equal(checkers['short-text'](changed, answer).status, 'incorrect', flag);
         }
-        assert.equal(normalizeText('  A\t B ', { trim: false, collapseWhitespace: false, ignoreCase: false }), '  A\t B ');
+        assert.equal(
+          normalizeText('  A\t B ', { trim: false, collapseWhitespace: false, ignoreCase: false }),
+          '  A\t B ',
+        );
       });
       it('should report blank Unicode whitespace as incomplete', () => {
         const q = Questions_fx.make('short-text');
@@ -108,7 +114,10 @@ describe('Widgets', () => {
         const q = Questions_fx.make('numeric');
         assert.deepEqual(checkers.numeric(q, ' '), { status: 'incomplete', reason: 'empty' });
         assert.deepEqual(checkers.numeric({ ...q, tolerance: -1 }, '2.5'), { status: 'invalid', reason: 'definition' });
-        assert.deepEqual(checkers.numeric({ ...q, expected: Infinity }, '2.5'), { status: 'invalid', reason: 'definition' });
+        assert.deepEqual(checkers.numeric({ ...q, expected: Infinity }, '2.5'), {
+          status: 'invalid',
+          reason: 'definition',
+        });
       });
       it('should include a decimal rounding boundary in tolerance', () => {
         const q = { ...Questions_fx.make('numeric'), expected: 0.2, tolerance: 0.1 };
@@ -164,8 +173,14 @@ describe('Widgets', () => {
       it('should distinguish empty, partially filled, duplicated and foreign blocks', () => {
         const q = Questions_fx.make('fill-blanks-drag');
         assert.equal(checkers['fill-blanks-drag'](q, { first: null, second: null }).status, 'incomplete');
-        assert.deepEqual(checkers['fill-blanks-drag'](q, { first: 'a', second: null }), { status: 'incomplete', reason: 'missing-items' });
-        assert.deepEqual(checkers['fill-blanks-drag'](q, { first: 'a', second: 'a' }), { status: 'invalid', reason: 'duplicate-id' });
+        assert.deepEqual(checkers['fill-blanks-drag'](q, { first: 'a', second: null }), {
+          status: 'incomplete',
+          reason: 'missing-items',
+        });
+        assert.deepEqual(checkers['fill-blanks-drag'](q, { first: 'a', second: 'a' }), {
+          status: 'invalid',
+          reason: 'duplicate-id',
+        });
         assert.equal(checkers['fill-blanks-drag'](q, { third: 'c' }).status, 'invalid');
       });
     });
@@ -177,9 +192,18 @@ describe('Widgets', () => {
       });
       it('should require all fields and reject unknown blank IDs', () => {
         const q = Questions_fx.make('fill-blanks-text');
-        assert.deepEqual(checkers['fill-blanks-text'](q, { first: 'Alpha', second: '' }), { status: 'incomplete', reason: 'missing-items' });
-        assert.deepEqual(checkers['fill-blanks-text'](q, { first: '', second: '' }), { status: 'incomplete', reason: 'empty' });
-        assert.deepEqual(checkers['fill-blanks-text'](q, { foreign: 'Alpha' }), { status: 'invalid', reason: 'unknown-id' });
+        assert.deepEqual(checkers['fill-blanks-text'](q, { first: 'Alpha', second: '' }), {
+          status: 'incomplete',
+          reason: 'missing-items',
+        });
+        assert.deepEqual(checkers['fill-blanks-text'](q, { first: '', second: '' }), {
+          status: 'incomplete',
+          reason: 'empty',
+        });
+        assert.deepEqual(checkers['fill-blanks-text'](q, { foreign: 'Alpha' }), {
+          status: 'invalid',
+          reason: 'unknown-id',
+        });
       });
     });
   });

@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy', 'probability');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'probability');
 const read = (path: string): string => readFileSync(join(root, path), 'utf8');
 const groups = {
   events: ['certainImpossible', 'likelihoodLanguage', 'listOutcomes'],
@@ -27,7 +27,10 @@ describe('Probability SkillDomain taxonomy', () => {
       const source = read(path);
       const translations = [...source.matchAll(/^    ([a-z]{2}): "(.+)",$/gm)];
       assert.deepEqual(translations.map(match => match[1]).sort(), expected, path);
-      assert.ok(translations.every(match => match[2].trim().length > 0), path);
+      assert.ok(
+        translations.every(match => match[2].trim().length > 0),
+        path,
+      );
       assert.match(source, /buildSkill(?:Domain|Group)?Config\(\{/);
     }
   });
@@ -35,10 +38,7 @@ describe('Probability SkillDomain taxonomy', () => {
   it('uses seven distinct static UUIDs for the domain, groups and Skills', () => {
     const paths = [
       'probability.ids.ts',
-      ...Object.entries(groups).flatMap(([group]) => [
-        `${group}/${group}.ids.ts`,
-        `${group}/skills/index.ids.ts`,
-      ]),
+      ...Object.entries(groups).flatMap(([group]) => [`${group}/${group}.ids.ts`, `${group}/skills/index.ids.ts`]),
     ];
     const ids = paths.flatMap(path =>
       [...read(path).matchAll(/'([0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12})'/g)].map(match => match[1]),
@@ -57,9 +57,10 @@ describe('Probability SkillDomain taxonomy', () => {
       const ids = read(`${group}/skills/index.ids.ts`);
       const exports = read(`${group}/skills/index.data.ts`).trim().split('\n');
       assert.equal([...ids.matchAll(/: '[0-9a-f-]{36}'/g)].length, skills.length);
-      assert.deepEqual(exports, [...skills].sort().map(skill =>
-        `export { ${skill}_Skill_Data } from './${skill}.data';`,
-      ));
+      assert.deepEqual(
+        exports,
+        [...skills].sort().map(skill => `export { ${skill}_Skill_Data } from './${skill}.data';`),
+      );
       for (const skill of skills) {
         assert.match(ids, new RegExp(`\\b${skill}: '[0-9a-f-]{36}'`));
         assert.match(read(`${group}/skills/${skill}.data.ts`), new RegExp(`id: ${group}_Skills_Ids\\.${skill}`));

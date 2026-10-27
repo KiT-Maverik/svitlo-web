@@ -14,13 +14,23 @@ import { media } from './Practice.constants';
 const uk = locales.uk;
 
 export const Practice_fx = {
-  render: (code: Locale = 'uk-UA') => render(createElement(SceneLocaleProvider, { locale: code, scenes: buildLesson(howLightMoves_Lesson_Data, code, howLightMovesCatalog).sceneLocale ?? {} }, createElement(Practice))),
+  render: (code: Locale = 'uk-UA') =>
+    render(
+      createElement(
+        SceneLocaleProvider,
+        { locale: code, scenes: buildLesson(howLightMoves_Lesson_Data, code, howLightMovesCatalog).sceneLocale ?? {} },
+        createElement(Practice),
+      ),
+    ),
   selectors: {
     title: () => screen.getByRole('heading', { name: uk.header.title }),
     mediaGroup: () => screen.getByRole('group', { name: uk.selector.label }),
-    medium: (index: number) => within(Practice_fx.selectors.mediaGroup()).getByRole('button', { name: uk.selector.media[media[index].key] }),
-    playback: (paused: boolean) => screen.getByRole('button', { name: paused ? uk.simulation.play : uk.simulation.pause }),
-    track: (index: number) => screen.getByRole('img', { name: `${uk.simulation.trackPrefix}${uk.selector.media[media[index].key]}.` }),
+    medium: (index: number) =>
+      within(Practice_fx.selectors.mediaGroup()).getByRole('button', { name: uk.selector.media[media[index].key] }),
+    playback: (paused: boolean) =>
+      screen.getByRole('button', { name: paused ? uk.simulation.play : uk.simulation.pause }),
+    track: (index: number) =>
+      screen.getByRole('img', { name: `${uk.simulation.trackPrefix}${uk.selector.media[media[index].key]}.` }),
   },
   actions: {
     selectMedium: async (index: number) => userEvent.click(Practice_fx.selectors.medium(index)),

@@ -4,7 +4,6 @@ import type { LanguageCode } from '../languages';
 /** RFC 4122-style UUID literal; validated at runtime by config builders. */
 export type SkillId = `${string}-${string}-${string}-${string}-${string}`;
 
-
 /**
  * A content-authoring skill descriptor.
  * Relationships to lessons, questions and curricula are declared externally.

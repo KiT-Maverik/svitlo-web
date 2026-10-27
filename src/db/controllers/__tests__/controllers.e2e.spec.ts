@@ -7,9 +7,11 @@ const date = '2026-01-01T00:00:00.000Z';
 
 async function invoke<T = unknown>(page: Page, command: ControllerCommand): Promise<T> {
   return page.evaluate(async input => {
-    const handler = (window as Window & {
-      __svitloDbE2E?: (value: ControllerCommand) => Promise<unknown>;
-    }).__svitloDbE2E;
+    const handler = (
+      window as Window & {
+        __svitloDbE2E?: (value: ControllerCommand) => Promise<unknown>;
+      }
+    ).__svitloDbE2E;
     if (!handler) throw new Error('Database browser harness did not initialize');
     return handler(input);
   }, command) as Promise<T>;
@@ -17,7 +19,10 @@ async function invoke<T = unknown>(page: Page, command: ControllerCommand): Prom
 
 function progressingLesson(id: string, lessonId: string): LessonState {
   return {
-    id, lessonId, status: 'in-progress', startedAt: date,
+    id,
+    lessonId,
+    status: 'in-progress',
+    startedAt: date,
     currentSectionId: 'theory',
     sectionCompletion: { theory: true, practice: false },
     skippedSectionIds: ['practice'],
@@ -27,7 +32,10 @@ function progressingLesson(id: string, lessonId: string): LessonState {
 
 function progressingQuiz(id: string, quizId: string): QuizState {
   return {
-    id, quizId, status: 'in-progress', startedAt: date,
+    id,
+    quizId,
+    status: 'in-progress',
+    startedAt: date,
     answers: {
       question: {
         status: 'draft',
@@ -39,9 +47,14 @@ function progressingQuiz(id: string, quizId: string): QuizState {
 
 async function waitForHarness(page: Page) {
   await expect(page.getByTestId('db-harness-ready')).toBeVisible();
-  await page.waitForFunction(() => typeof (window as Window & {
-    __svitloDbE2E?: unknown;
-  }).__svitloDbE2E === 'function');
+  await page.waitForFunction(
+    () =>
+      typeof (
+        window as Window & {
+          __svitloDbE2E?: unknown;
+        }
+      ).__svitloDbE2E === 'function',
+  );
 }
 
 async function prepare(page: Page) {
@@ -51,12 +64,16 @@ async function prepare(page: Page) {
 
 /** The controllers close their own connections. Fail cleanup if a connection was leaked. */
 async function removeDatabase(page: Page) {
-  await page.evaluate(name => new Promise<void>((resolve, reject) => {
-    const request = indexedDB.deleteDatabase(name);
-    request.onsuccess = () => resolve();
-    request.onerror = () => reject(request.error ?? new Error('Failed to delete IndexedDB'));
-    request.onblocked = () => reject(new Error('IndexedDB deletion blocked by a leaked connection'));
-  }), DATABASE_NAME);
+  await page.evaluate(
+    name =>
+      new Promise<void>((resolve, reject) => {
+        const request = indexedDB.deleteDatabase(name);
+        request.onsuccess = () => resolve();
+        request.onerror = () => reject(request.error ?? new Error('Failed to delete IndexedDB'));
+        request.onblocked = () => reject(new Error('IndexedDB deletion blocked by a leaked connection'));
+      }),
+    DATABASE_NAME,
+  );
 }
 
 test.describe('DB', () => {
@@ -145,14 +162,17 @@ test.describe('DB', () => {
         });
 
         test('should return undefined without creating a missing state', async ({ page }) => {
-          expect(await invoke(page, { op: 'updateLessonState', id: 'missing', patch: { status: 'new' } })).toBeUndefined();
+          expect(
+            await invoke(page, { op: 'updateLessonState', id: 'missing', patch: { status: 'new' } }),
+          ).toBeUndefined();
           expect(await invoke(page, { op: 'getLessonState', id: 'missing' })).toBeUndefined();
         });
 
         test('should abort an attempted primary-key change and retain the original state', async ({ page }) => {
           const created = await invoke<LessonState>(page, { op: 'createLessonState', lessonId: 'lesson' });
-          await expect(invoke(page, { op: 'updateLessonState', id: created.id, patch: { id: 'different-id' } }))
-            .rejects.toThrow(/cannot change its ID/);
+          await expect(
+            invoke(page, { op: 'updateLessonState', id: created.id, patch: { id: 'different-id' } }),
+          ).rejects.toThrow(/cannot change its ID/);
           expect(await invoke(page, { op: 'getLessonState', id: created.id })).toEqual(created);
           expect(await invoke(page, { op: 'getLessonState', id: 'different-id' })).toBeUndefined();
         });
@@ -160,7 +180,13 @@ test.describe('DB', () => {
         test('should abort invalid changes without committing partial data', async ({ page }) => {
           const saved = progressingLesson('state', 'lesson');
           await invoke(page, { op: 'saveLessonState', state: saved });
-          await expect(invoke(page, { op: 'updateLessonState', id: saved.id, patch: { sectionCompletion: { theory: 'invalid' } } })).rejects.toThrow();
+          await expect(
+            invoke(page, {
+              op: 'updateLessonState',
+              id: saved.id,
+              patch: { sectionCompletion: { theory: 'invalid' } },
+            }),
+          ).rejects.toThrow();
           expect(await invoke(page, { op: 'getLessonState', id: saved.id })).toEqual(saved);
         });
       });
@@ -244,7 +270,10 @@ test.describe('DB', () => {
         test('should reject invalid answer shapes and keep the preceding valid state', async ({ page }) => {
           const saved = progressingQuiz('quiz-state', 'quiz');
           await invoke(page, { op: 'saveQuizState', state: saved });
-          const invalid = { ...saved, answers: { question: { status: 'draft', answer: { type: 'select-multiple-answers', value: ['okay', 1] } } } } as unknown as QuizState;
+          const invalid = {
+            ...saved,
+            answers: { question: { status: 'draft', answer: { type: 'select-multiple-answers', value: ['okay', 1] } } },
+          } as unknown as QuizState;
           await expect(invoke(page, { op: 'saveQuizState', state: invalid })).rejects.toThrow();
           expect(await invoke(page, { op: 'getQuizState', id: saved.id })).toEqual(saved);
         });
@@ -275,14 +304,17 @@ test.describe('DB', () => {
         });
 
         test('should return undefined and not insert when the run does not exist', async ({ page }) => {
-          expect(await invoke(page, { op: 'updateQuizState', id: 'missing', patch: { status: 'new' } })).toBeUndefined();
+          expect(
+            await invoke(page, { op: 'updateQuizState', id: 'missing', patch: { status: 'new' } }),
+          ).toBeUndefined();
           expect(await invoke(page, { op: 'getQuizState', id: 'missing' })).toBeUndefined();
         });
 
         test('should reject changes to the primary key and roll back', async ({ page }) => {
           const created = await invoke<QuizState>(page, { op: 'createQuizState', quizId: 'quiz' });
-          await expect(invoke(page, { op: 'updateQuizState', id: created.id, patch: { id: 'another-id' } }))
-            .rejects.toThrow(/cannot change its ID/);
+          await expect(
+            invoke(page, { op: 'updateQuizState', id: created.id, patch: { id: 'another-id' } }),
+          ).rejects.toThrow(/cannot change its ID/);
           expect(await invoke(page, { op: 'getQuizState', id: created.id })).toEqual(created);
           expect(await invoke(page, { op: 'getQuizState', id: 'another-id' })).toBeUndefined();
         });
@@ -290,13 +322,23 @@ test.describe('DB', () => {
         test('should reject invalid result values and retain existing answers', async ({ page }) => {
           const saved = progressingQuiz('quiz-state', 'quiz');
           await invoke(page, { op: 'saveQuizState', state: saved });
-          await expect(invoke(page, { op: 'updateQuizState', id: saved.id, patch: { status: 'finished', result: { status: 'graded', success: true, value: -2 }, completedAt: date } }))
-            .resolves.toMatchObject({ status: 'finished' });
+          await expect(
+            invoke(page, {
+              op: 'updateQuizState',
+              id: saved.id,
+              patch: { status: 'finished', result: { status: 'graded', success: true, value: -2 }, completedAt: date },
+            }),
+          ).resolves.toMatchObject({ status: 'finished' });
           // The quiz result schema requires a finite value but permits negative scores;
           // check a truly invalid (non-finite) result, not an invented domain constraint.
           const finished = await invoke<QuizState>(page, { op: 'getQuizState', id: saved.id });
-          await expect(invoke(page, { op: 'updateQuizState', id: saved.id, patch: { result: { status: 'graded', success: true, value: Infinity } } }))
-            .rejects.toThrow();
+          await expect(
+            invoke(page, {
+              op: 'updateQuizState',
+              id: saved.id,
+              patch: { result: { status: 'graded', success: true, value: Infinity } },
+            }),
+          ).rejects.toThrow();
           expect(await invoke(page, { op: 'getQuizState', id: saved.id })).toEqual(finished);
         });
       });
@@ -337,12 +379,20 @@ test.describe('DB', () => {
 
     test.describe('completeQuiz', () => {
       test.describe('E2E', () => {
-        test('should finish an in-progress run with its calculated result and completion timestamp', async ({ page }) => {
+        test('should finish an in-progress run with its calculated result and completion timestamp', async ({
+          page,
+        }) => {
           const saved = progressingQuiz('quiz-state', 'quiz');
           await invoke(page, { op: 'saveQuizState', state: saved });
           const result: QuizResult = { status: 'graded', value: 75, success: true };
           const updated = await invoke<QuizState>(page, { op: 'completeQuiz', id: saved.id, result });
-          expect(updated).toMatchObject({ id: saved.id, quizId: saved.quizId, status: 'finished', result, answers: saved.answers });
+          expect(updated).toMatchObject({
+            id: saved.id,
+            quizId: saved.quizId,
+            status: 'finished',
+            result,
+            answers: saved.answers,
+          });
           if (updated.status !== 'finished') throw new Error('Expected finished quiz');
           expect(Number.isNaN(Date.parse(updated.completedAt))).toBe(false);
           expect(await invoke(page, { op: 'getQuizState', id: saved.id })).toEqual(updated);
@@ -350,19 +400,27 @@ test.describe('DB', () => {
 
         test('should reject completion of a new or already finished run without changing storage', async ({ page }) => {
           const created = await invoke<QuizState>(page, { op: 'createQuizState', quizId: 'quiz' });
-          await expect(invoke(page, { op: 'completeQuiz', id: created.id, result: { status: 'ungraded' } }))
-            .rejects.toThrow(/Only an in-progress quiz/);
+          await expect(
+            invoke(page, { op: 'completeQuiz', id: created.id, result: { status: 'ungraded' } }),
+          ).rejects.toThrow(/Only an in-progress quiz/);
           expect(await invoke(page, { op: 'getQuizState', id: created.id })).toEqual(created);
           const active = progressingQuiz('active', 'quiz');
           await invoke(page, { op: 'saveQuizState', state: active });
-          const finished = await invoke<QuizState>(page, { op: 'completeQuiz', id: active.id, result: { status: 'ungraded' } });
-          await expect(invoke(page, { op: 'completeQuiz', id: active.id, result: { status: 'ungraded' } }))
-            .rejects.toThrow(/Only an in-progress quiz/);
+          const finished = await invoke<QuizState>(page, {
+            op: 'completeQuiz',
+            id: active.id,
+            result: { status: 'ungraded' },
+          });
+          await expect(
+            invoke(page, { op: 'completeQuiz', id: active.id, result: { status: 'ungraded' } }),
+          ).rejects.toThrow(/Only an in-progress quiz/);
           expect(await invoke(page, { op: 'getQuizState', id: active.id })).toEqual(finished);
         });
 
         test('should return undefined instead of creating a missing quiz run', async ({ page }) => {
-          expect(await invoke(page, { op: 'completeQuiz', id: 'missing', result: { status: 'ungraded' } })).toBeUndefined();
+          expect(
+            await invoke(page, { op: 'completeQuiz', id: 'missing', result: { status: 'ungraded' } }),
+          ).toBeUndefined();
           expect(await invoke(page, { op: 'getQuizState', id: 'missing' })).toBeUndefined();
         });
       });
@@ -371,7 +429,10 @@ test.describe('DB', () => {
 
   test.describe('Native IndexedDB', () => {
     test('should initialize version-one stores and nonunique indexes on an empty origin', async ({ page }) => {
-      const before = await page.evaluate(async name => (await indexedDB.databases()).some(db => db.name === name), DATABASE_NAME);
+      const before = await page.evaluate(
+        async name => (await indexedDB.databases()).some(db => db.name === name),
+        DATABASE_NAME,
+      );
       expect(before).toBe(false);
       const actual = await invoke<DatabaseInspection>(page, { op: 'inspectDatabase' });
       expect(actual.name).toBe(DATABASE_NAME);
@@ -418,20 +479,32 @@ test.describe('DB', () => {
       }
     });
 
-    test('should commit native multi-store transactions and expose writes through production controllers', async ({ page }) => {
+    test('should commit native multi-store transactions and expose writes through production controllers', async ({
+      page,
+    }) => {
       await invoke(page, { op: 'inspectDatabase' });
-      const outcome = await page.evaluate(name => new Promise<string>((resolve, reject) => {
-        const request = indexedDB.open(name);
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => {
-          const db = request.result;
-          const tx = db.transaction(['lessonStates', 'quizStates'], 'readwrite');
-          tx.objectStore('lessonStates').add({ id: 'lesson-tx', lessonId: 'lesson', status: 'new' });
-          tx.objectStore('quizStates').add({ id: 'quiz-tx', quizId: 'quiz', status: 'new' });
-          tx.oncomplete = () => { db.close(); resolve('committed'); };
-          tx.onabort = () => { db.close(); reject(tx.error ?? new Error('Transaction aborted')); };
-        };
-      }), DATABASE_NAME);
+      const outcome = await page.evaluate(
+        name =>
+          new Promise<string>((resolve, reject) => {
+            const request = indexedDB.open(name);
+            request.onerror = () => reject(request.error);
+            request.onsuccess = () => {
+              const db = request.result;
+              const tx = db.transaction(['lessonStates', 'quizStates'], 'readwrite');
+              tx.objectStore('lessonStates').add({ id: 'lesson-tx', lessonId: 'lesson', status: 'new' });
+              tx.objectStore('quizStates').add({ id: 'quiz-tx', quizId: 'quiz', status: 'new' });
+              tx.oncomplete = () => {
+                db.close();
+                resolve('committed');
+              };
+              tx.onabort = () => {
+                db.close();
+                reject(tx.error ?? new Error('Transaction aborted'));
+              };
+            };
+          }),
+        DATABASE_NAME,
+      );
       expect(outcome).toBe('committed');
       expect(await invoke(page, { op: 'getLessonState', id: 'lesson-tx' })).toMatchObject({ status: 'new' });
       expect(await invoke(page, { op: 'getQuizState', id: 'quiz-tx' })).toMatchObject({ status: 'new' });
@@ -439,36 +512,56 @@ test.describe('DB', () => {
 
     test('should roll back all writes after a native duplicate primary-key error', async ({ page }) => {
       await invoke(page, { op: 'inspectDatabase' });
-      const result = await page.evaluate(name => new Promise<string>((resolve, reject) => {
-        const request = indexedDB.open(name);
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => {
-          const db = request.result;
-          const tx = db.transaction('lessonStates', 'readwrite');
-          tx.objectStore('lessonStates').add({ id: 'duplicate', lessonId: 'lesson', status: 'new' });
-          tx.objectStore('lessonStates').add({ id: 'duplicate', lessonId: 'lesson', status: 'new' });
-          tx.oncomplete = () => { db.close(); resolve('unexpected commit'); };
-          tx.onabort = () => { db.close(); resolve('aborted'); };
-        };
-      }), DATABASE_NAME);
+      const result = await page.evaluate(
+        name =>
+          new Promise<string>((resolve, reject) => {
+            const request = indexedDB.open(name);
+            request.onerror = () => reject(request.error);
+            request.onsuccess = () => {
+              const db = request.result;
+              const tx = db.transaction('lessonStates', 'readwrite');
+              tx.objectStore('lessonStates').add({ id: 'duplicate', lessonId: 'lesson', status: 'new' });
+              tx.objectStore('lessonStates').add({ id: 'duplicate', lessonId: 'lesson', status: 'new' });
+              tx.oncomplete = () => {
+                db.close();
+                resolve('unexpected commit');
+              };
+              tx.onabort = () => {
+                db.close();
+                resolve('aborted');
+              };
+            };
+          }),
+        DATABASE_NAME,
+      );
       expect(result).toBe('aborted');
       expect(await invoke(page, { op: 'getLessonState', id: 'duplicate' })).toBeUndefined();
     });
 
     test('should roll back an explicitly aborted native transaction', async ({ page }) => {
       await invoke(page, { op: 'inspectDatabase' });
-      const outcome = await page.evaluate(name => new Promise<string>((resolve, reject) => {
-        const request = indexedDB.open(name);
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => {
-          const db = request.result;
-          const tx = db.transaction('quizStates', 'readwrite');
-          tx.objectStore('quizStates').add({ id: 'rolled-back', quizId: 'quiz', status: 'new' });
-          tx.onabort = () => { db.close(); resolve('aborted'); };
-          tx.oncomplete = () => { db.close(); resolve('unexpected commit'); };
-          tx.abort();
-        };
-      }), DATABASE_NAME);
+      const outcome = await page.evaluate(
+        name =>
+          new Promise<string>((resolve, reject) => {
+            const request = indexedDB.open(name);
+            request.onerror = () => reject(request.error);
+            request.onsuccess = () => {
+              const db = request.result;
+              const tx = db.transaction('quizStates', 'readwrite');
+              tx.objectStore('quizStates').add({ id: 'rolled-back', quizId: 'quiz', status: 'new' });
+              tx.onabort = () => {
+                db.close();
+                resolve('aborted');
+              };
+              tx.oncomplete = () => {
+                db.close();
+                resolve('unexpected commit');
+              };
+              tx.abort();
+            };
+          }),
+        DATABASE_NAME,
+      );
       expect(outcome).toBe('aborted');
       expect(await invoke(page, { op: 'getQuizState', id: 'rolled-back' })).toBeUndefined();
     });
@@ -478,18 +571,19 @@ test.describe('DB', () => {
       expect(await invoke(page, { op: 'holdConnection' })).toBe(DATABASE_VERSION);
       // Production openDatabase registers onversionchange = close. A version bump must not block.
       const version = await page.evaluate(
-        ({ name, nextVersion }) => new Promise<number>((resolve, reject) => {
-          const request = indexedDB.open(name, nextVersion);
-          request.onblocked = () => reject(new Error('Application connection blocked schema upgrade'));
-          request.onerror = () => reject(request.error);
-          request.onupgradeneeded = () => request.result.createObjectStore('upgradeProbe');
-          request.onsuccess = () => {
-            const db = request.result;
-            const actual = db.version;
-            db.close();
-            resolve(actual);
-          };
-        }),
+        ({ name, nextVersion }) =>
+          new Promise<number>((resolve, reject) => {
+            const request = indexedDB.open(name, nextVersion);
+            request.onblocked = () => reject(new Error('Application connection blocked schema upgrade'));
+            request.onerror = () => reject(request.error);
+            request.onupgradeneeded = () => request.result.createObjectStore('upgradeProbe');
+            request.onsuccess = () => {
+              const db = request.result;
+              const actual = db.version;
+              db.close();
+              resolve(actual);
+            };
+          }),
         { name: DATABASE_NAME, nextVersion: DATABASE_VERSION + 1 },
       );
       expect(version).toBe(DATABASE_VERSION + 1);

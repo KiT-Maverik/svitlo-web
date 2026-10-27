@@ -16,16 +16,44 @@ export type NavbarProps = {
 export default function Navbar({ slots = {}, slotProps = {}, 'aria-label': label }: NavbarProps) {
   const { sx: rootSx = [], ...rootProps } = slotProps.root ?? {};
   return (
-    <Box {...rootProps} component="nav" aria-label={label} sx={[
-      { display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto minmax(0, 1fr)', alignItems: 'center', gap: 1, px: 2, minHeight: 64, bgcolor: 'background.paper' },
-      ...(Array.isArray(rootSx) ? rootSx : [rootSx]),
-    ]}>
-      {(['left', 'center', 'right'] as const).map((section) => {
+    <Box
+      {...rootProps}
+      component="nav"
+      aria-label={label}
+      sx={[
+        {
+          display: 'grid',
+          gridTemplateColumns: 'minmax(0, 1fr) auto minmax(0, 1fr)',
+          alignItems: 'center',
+          gap: 1,
+          px: 2,
+          minHeight: 64,
+          bgcolor: 'background.paper',
+        },
+        ...(Array.isArray(rootSx) ? rootSx : [rootSx]),
+      ]}
+    >
+      {(['left', 'center', 'right'] as const).map(section => {
         const { sx = [], ...props } = slotProps[section] ?? {};
-        return <Box key={section} data-testid={testId.slots[section]} {...props} sx={[
-          { display: 'flex', alignItems: 'center', gap: 1, minWidth: 0, justifyContent: section === 'left' ? 'flex-start' : section === 'right' ? 'flex-end' : 'center' },
-          ...(Array.isArray(sx) ? sx : [sx]),
-        ]}>{slots[section]}</Box>;
+        return (
+          <Box
+            key={section}
+            data-testid={testId.slots[section]}
+            {...props}
+            sx={[
+              {
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1,
+                minWidth: 0,
+                justifyContent: section === 'left' ? 'flex-start' : section === 'right' ? 'flex-end' : 'center',
+              },
+              ...(Array.isArray(sx) ? sx : [sx]),
+            ]}
+          >
+            {slots[section]}
+          </Box>
+        );
       })}
     </Box>
   );

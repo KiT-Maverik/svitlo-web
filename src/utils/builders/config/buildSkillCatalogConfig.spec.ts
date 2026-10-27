@@ -6,9 +6,10 @@ import type { SkillDomain_Config } from '../../../types/content/skillDomain.type
 import { buildSkillGroupConfig } from './buildSkillGroupConfig.utils';
 import { buildSkillDomainConfig } from './buildSkillDomainConfig.utils';
 
-const names = () => Object.fromEntries(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'A localized name']),
-) as SkillGroup_Config['name'];
+const names = () =>
+  Object.fromEntries(
+    DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'A localized name']),
+  ) as SkillGroup_Config['name'];
 
 const groupId = 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' as const;
 const domainId = '9de735b7-4bcd-4b58-8832-d2d5d15846cd' as const;
@@ -32,26 +33,56 @@ describe('Skill catalog builders', () => {
   it('rejects missing translations in groups and domains', () => {
     const partial = { ...names() } as Record<string, string>;
     delete partial.uk;
-    assert.throws(() => buildSkillGroupConfig({
-      id: groupId, name: partial as SkillGroup_Config['name'], skillIds: { first: skillId },
-    }), /uk/);
-    assert.throws(() => buildSkillDomainConfig({
-      id: domainId, name: partial as SkillDomain_Config['name'], groupIds: { primary: groupId },
-    }), /uk/);
+    assert.throws(
+      () =>
+        buildSkillGroupConfig({
+          id: groupId,
+          name: partial as SkillGroup_Config['name'],
+          skillIds: { first: skillId },
+        }),
+      /uk/,
+    );
+    assert.throws(
+      () =>
+        buildSkillDomainConfig({
+          id: domainId,
+          name: partial as SkillDomain_Config['name'],
+          groupIds: { primary: groupId },
+        }),
+      /uk/,
+    );
   });
 
   it('rejects arrays, empty objects, bad UUIDs and duplicate child IDs', () => {
     for (const refs of [{}, [], null, { first: '' }, { a: skillId, b: skillId }]) {
-      assert.throws(() => buildSkillGroupConfig({
-        id: groupId, name: names(), skillIds: refs as SkillGroup_Config['skillIds'],
-      }), /SkillGroup skillIds/);
-      assert.throws(() => buildSkillDomainConfig({
-        id: domainId, name: names(), groupIds: refs as SkillDomain_Config['groupIds'],
-      }), /SkillDomain groupIds/);
+      assert.throws(
+        () =>
+          buildSkillGroupConfig({
+            id: groupId,
+            name: names(),
+            skillIds: refs as SkillGroup_Config['skillIds'],
+          }),
+        /SkillGroup skillIds/,
+      );
+      assert.throws(
+        () =>
+          buildSkillDomainConfig({
+            id: domainId,
+            name: names(),
+            groupIds: refs as SkillDomain_Config['groupIds'],
+          }),
+        /SkillDomain groupIds/,
+      );
     }
-    assert.throws(() => buildSkillGroupConfig({
-      id: 'not-a-uuid' as SkillGroup_Config['id'], name: names(), skillIds: { first: skillId },
-    }), /Skill id must be a UUID/);
+    assert.throws(
+      () =>
+        buildSkillGroupConfig({
+          id: 'not-a-uuid' as SkillGroup_Config['id'],
+          name: names(),
+          skillIds: { first: skillId },
+        }),
+      /Skill id must be a UUID/,
+    );
   });
 
   it('does not add fileLocation or mutate the original config', () => {

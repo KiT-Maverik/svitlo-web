@@ -1,10 +1,14 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('@/db', () => ({
-  createQuizState: vi.fn(), getQuizState: vi.fn(), listQuizStates: vi.fn(), saveQuizState: vi.fn(), completeQuiz: vi.fn(),
+  createQuizState: vi.fn(),
+  getQuizState: vi.fn(),
+  listQuizStates: vi.fn(),
+  saveQuizState: vi.fn(),
+  completeQuiz: vi.fn(),
 }));
 vi.mock('@/i18n/LocaleProvider/LocaleProvider', () => ({ useLocale: vi.fn() }));
-vi.mock('../LessonProgress/LessonProgress', async (importOriginal) => ({
+vi.mock('../LessonProgress/LessonProgress', async importOriginal => ({
   ...(await importOriginal<typeof import('../LessonProgress/LessonProgress')>()),
   useLessonProgress: vi.fn(),
 }));
@@ -17,12 +21,22 @@ vi.mock('@/components/widgets/questions/helpers', async () => {
       actionSlots: { center: (context: { hasChecked: boolean; children: null }) => React.ReactNode };
     }) => {
       const [hasChecked, setChecked] = React.useState(false);
-      return React.createElement('section', { role: 'group', 'aria-label': props.question.prompt },
-        React.createElement('button', { type: 'button', onClick: () => {
-          props.onCheck({ answer: 'answer-1', result: { status: 'correct' } });
-          setChecked(true);
-        } }, 'Check answer'),
-        props.actionSlots.center({ hasChecked, children: null }));
+      return React.createElement(
+        'section',
+        { role: 'group', 'aria-label': props.question.prompt },
+        React.createElement(
+          'button',
+          {
+            type: 'button',
+            onClick: () => {
+              props.onCheck({ answer: 'answer-1', result: { status: 'correct' } });
+              setChecked(true);
+            },
+          },
+          'Check answer',
+        ),
+        props.actionSlots.center({ hasChecked, children: null }),
+      );
     },
   };
 });

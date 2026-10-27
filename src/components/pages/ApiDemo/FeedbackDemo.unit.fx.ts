@@ -8,8 +8,9 @@ export const FeedbackDemo_fx = {
   render: () => render(createElement(FeedbackDemo)),
   selectors: {
     heading: () => screen.getByRole('heading', { name: locale.feedback.heading }),
-    setting: (name: keyof Pick<typeof locale.feedback, 'showErrors' | 'showCorrectAnswers' | 'showLetters' | 'showResult'>) =>
-      screen.getByRole('checkbox', { name: locale.feedback[name] }),
+    setting: (
+      name: keyof Pick<typeof locale.feedback, 'showErrors' | 'showCorrectAnswers' | 'showLetters' | 'showResult'>,
+    ) => screen.getByRole('checkbox', { name: locale.feedback[name] }),
   },
   actions: {
     toggle: async (name: 'showErrors' | 'showCorrectAnswers' | 'showLetters' | 'showResult') =>

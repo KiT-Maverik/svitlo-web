@@ -18,7 +18,15 @@ export const quiz_Quiz_Data: Quiz_Config = {
   name: name_TextResource_Data,
   feedbackMode: 'immediate',
   grading: { mode: 'percentage', successThreshold: 70 },
-  interaction: { retries: -1, showErrors: true, showCorrectAnswers: true, allowExplanations: true, allowDeferring: true, allowQuestionNavigation: true, skippable: true },
+  interaction: {
+    retries: -1,
+    showErrors: true,
+    showCorrectAnswers: true,
+    allowExplanations: true,
+    allowDeferring: true,
+    allowQuestionNavigation: true,
+    skippable: true,
+  },
   questionBank: [
     lightTravelsStraight_Question_Data,
     lightRayDirection_Question_Data,

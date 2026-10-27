@@ -12,9 +12,21 @@ type VerticalSpaceProps = {
 };
 
 export default function VerticalSpace({ top, center, bottom, className }: VerticalSpaceProps) {
-  return <div data-testid={testId.container} className={[styles.root, className].filter(Boolean).join(' ')}>
-    {top != null && <div data-testid={testId.slots.top} className={styles.edge}>{top}</div>}
-    <div data-testid={testId.slots.center} className={styles.center}>{center}</div>
-    {bottom != null && <div data-testid={testId.slots.bottom} className={styles.edge}>{bottom}</div>}
-  </div>;
+  return (
+    <div data-testid={testId.container} className={[styles.root, className].filter(Boolean).join(' ')}>
+      {top != null && (
+        <div data-testid={testId.slots.top} className={styles.edge}>
+          {top}
+        </div>
+      )}
+      <div data-testid={testId.slots.center} className={styles.center}>
+        {center}
+      </div>
+      {bottom != null && (
+        <div data-testid={testId.slots.bottom} className={styles.edge}>
+          {bottom}
+        </div>
+      )}
+    </div>
+  );
 }

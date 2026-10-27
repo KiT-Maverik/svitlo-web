@@ -5,30 +5,54 @@ import type { AttemptEvent, AttemptOptions, AttemptState } from './attempt-model
 
 function canonical(value: unknown): string {
   if (Array.isArray(value)) return JSON.stringify(value.map(v => canonical(v)));
-  if (value !== null && typeof value === 'object') return JSON.stringify(Object.entries(value).sort(([a], [b]) => a.localeCompare(b)).map(([key, v]) => [key, canonical(v)]));
+  if (value !== null && typeof value === 'object')
+    return JSON.stringify(
+      Object.entries(value)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([key, v]) => [key, canonical(v)]),
+    );
   return JSON.stringify(value);
 }
 export function answersEqual(type: QuestionType, a: unknown, b: unknown): boolean {
-  if (type === 'multiple-select' && Array.isArray(a) && Array.isArray(b)) return canonical([...a].sort()) === canonical([...b].sort());
+  if (type === 'multiple-select' && Array.isArray(a) && Array.isArray(b))
+    return canonical([...a].sort()) === canonical([...b].sort());
   return canonical(a) === canonical(b);
 }
 /** UI-independent state machine. Events originate in actions, never render/effects. */
-export function createQuestionController<K extends QuestionType>(question: QuestionOf<K>, initial: AnswerMap[K], checker: (q: QuestionOf<K>, a: AnswerMap[K]) => CheckResult, initialOptions: AttemptOptions<K> = {}) {
+export function createQuestionController<K extends QuestionType>(
+  question: QuestionOf<K>,
+  initial: AnswerMap[K],
+  checker: (q: QuestionOf<K>, a: AnswerMap[K]) => CheckResult,
+  initialOptions: AttemptOptions<K> = {},
+) {
   const first = structuredClone(initial);
-  const fresh = (): AttemptState<K> => ({ answer: structuredClone(first), result: null, hasInteracted: false, isModified: false, hasChecked: false, attemptNumber: 1 });
-  let state: AttemptState<K> = initialOptions.initialAnswer === undefined ? fresh() : {
-    answer: structuredClone(initialOptions.initialAnswer),
-    result: initialOptions.initialResult ?? null,
-    hasInteracted: true,
-    isModified: !answersEqual(question.type, initialOptions.initialAnswer, first),
-    hasChecked: Boolean(initialOptions.initialResult),
+  const fresh = (): AttemptState<K> => ({
+    answer: structuredClone(first),
+    result: null,
+    hasInteracted: false,
+    isModified: false,
+    hasChecked: false,
     attemptNumber: 1,
-  };
+  });
+  let state: AttemptState<K> =
+    initialOptions.initialAnswer === undefined
+      ? fresh()
+      : {
+          answer: structuredClone(initialOptions.initialAnswer),
+          result: initialOptions.initialResult ?? null,
+          hasInteracted: true,
+          isModified: !answersEqual(question.type, initialOptions.initialAnswer, first),
+          hasChecked: Boolean(initialOptions.initialResult),
+          attemptNumber: 1,
+        };
   let options = initialOptions;
   const listeners = new Set<() => void>();
   const locked = () => Boolean(options.disabled || options.readOnly || state.result);
   const event = (): AttemptEvent<K> => ({ ...structuredClone(state), question });
-  function commit(next: AttemptState<K>) { state = next; listeners.forEach(listener => listener()); }
+  function commit(next: AttemptState<K>) {
+    state = next;
+    listeners.forEach(listener => listener());
+  }
   function evaluate(answer: AnswerMap[K], result = checker(question, answer)) {
     if (locked()) return;
     commit({ ...state, answer: structuredClone(answer), result, hasChecked: true });
@@ -37,7 +61,8 @@ export function createQuestionController<K extends QuestionType>(question: Quest
     handlers.onCheck?.({ ...structuredClone(snapshot), result: structuredClone(result) });
     if (result.status === 'correct' || result.status === 'incorrect') {
       handlers.onAnswer?.({ ...structuredClone(snapshot), result: structuredClone(result) });
-      if (result.status === 'correct') handlers.onCorrect?.({ ...structuredClone(snapshot), result: structuredClone(result) });
+      if (result.status === 'correct')
+        handlers.onCorrect?.({ ...structuredClone(snapshot), result: structuredClone(result) });
       else handlers.onIncorrect?.({ ...structuredClone(snapshot), result: structuredClone(result) });
     }
   }
@@ -52,8 +77,15 @@ export function createQuestionController<K extends QuestionType>(question: Quest
   return {
     isReadyToCheck,
     getSnapshot: () => state,
-    subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; },
-    configure: (next: AttemptOptions<K>) => { options = next; },
+    subscribe: (listener: () => void) => {
+      listeners.add(listener);
+      return () => {
+        listeners.delete(listener);
+      };
+    },
+    configure: (next: AttemptOptions<K>) => {
+      options = next;
+    },
     setAnswer: (answer: AnswerMap[K]) => {
       if (locked() || answersEqual(question.type, state.answer, answer)) return;
       const next = structuredClone(answer);
@@ -66,15 +98,22 @@ export function createQuestionController<K extends QuestionType>(question: Quest
         if (isGraded(result) && isReadyToCheck()) evaluate(next, result);
       }
     },
-    check: () => { if (isReadyToCheck()) evaluate(state.answer); },
-    retry: () => {
+    check: () => {
+      if (isReadyToCheck()) evaluate(state.answer);
+    },
+    retry: (clearAnswer = false) => {
       if (options.disabled || options.readOnly || !state.hasChecked) return;
-      commit({ ...state, result: null, hasChecked: false, attemptNumber: state.attemptNumber + 1 });
+      const attemptNumber = state.attemptNumber + 1;
+      // The default UI starts a blank attempt; custom slots may preserve the answer for editing.
+      commit(
+        clearAnswer ? { ...fresh(), attemptNumber } : { ...state, result: null, hasChecked: false, attemptNumber },
+      );
       options.onRetry?.(event());
     },
     reset: () => {
       if (options.disabled || options.readOnly) return;
-      commit(fresh()); options.onReset?.(event());
+      commit(fresh());
+      options.onReset?.(event());
     },
   };
 }

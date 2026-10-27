@@ -45,14 +45,7 @@ export const flagCountryByLocale = {
 } as const satisfies Record<FlagLocale, string>;
 
 /** A single image wrapper instead of individually authored React SVG components. */
-export function Flag({
-  locale,
-  alt = '',
-  width = 24,
-  height = 16,
-  style,
-  ...props
-}: FlagProps) {
+export function Flag({ locale, alt = '', width = 24, height = 16, style, ...props }: FlagProps) {
   return (
     <Image
       src={`/flags/${flagCountryByLocale[locale]}.svg`}

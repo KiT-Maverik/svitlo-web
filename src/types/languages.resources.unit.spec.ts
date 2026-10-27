@@ -27,7 +27,7 @@ describe('Extended locale resource coverage', () => {
   });
 
   it('includes six translations in every authored math taxonomy config', () => {
-    const files = collectFiles(join(root, 'math/skillsTaxonomy'))
+    const files = collectFiles(join(root, 'src/math/skillsTaxonomy'))
       .filter(file => file.endsWith('.data.ts') && !file.endsWith('index.data.ts'));
     expect(files.length).toBeGreaterThanOrEqual(358);
 

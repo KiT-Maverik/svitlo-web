@@ -11,12 +11,17 @@ import type { Locale } from '@types';
 
 export const LightPropagationSimulation_fx = {
   render: ({ locale = 'uk-UA' }: { locale?: Locale } = {}) =>
-    render(createElement(SceneLocaleProvider, { locale, scenes: buildLesson(howLightMoves_Lesson_Data, locale, howLightMovesCatalog).sceneLocale ?? {} }, createElement(LightPropagationSimulation))),
+    render(
+      createElement(
+        SceneLocaleProvider,
+        { locale, scenes: buildLesson(howLightMoves_Lesson_Data, locale, howLightMovesCatalog).sceneLocale ?? {} },
+        createElement(LightPropagationSimulation),
+      ),
+    ),
   selectors: {
     scene: (messages = locales.uk, scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('region', { name: messages.scene.accessibleName }),
-    playback: (name: string, scope?: HTMLElement) =>
-      (scope ? within(scope) : screen).getByRole('button', { name }),
+    playback: (name: string, scope?: HTMLElement) => (scope ? within(scope) : screen).getByRole('button', { name }),
     track: (messages = locales.uk, scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('img', { name: messages.track.accessibleDescription }),
     speed: (messages = locales.uk, scope?: HTMLElement) =>

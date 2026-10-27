@@ -4,9 +4,10 @@ import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 import type { Skill_Config } from '../../../types/content/skill.types';
 import { buildSkillConfig } from './buildSkillConfig.utils';
 
-const allNames = () => Object.fromEntries(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, `Skill in ${language}`]),
-) as Skill_Config['name'];
+const allNames = () =>
+  Object.fromEntries(
+    DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, `Skill in ${language}`]),
+  ) as Skill_Config['name'];
 
 const skill = (): Skill_Config => ({
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
@@ -59,18 +60,12 @@ describe('Utils / builders / config / buildSkillConfig', () => {
   it('rejects blank and non-string localized names', () => {
     for (const value of ['', '  ', null, 5]) {
       const invalid = { ...allNames(), uk: value };
-      assert.throws(
-        () => buildSkillConfig({ id: skill().id, name: invalid } as unknown as Skill_Config),
-        /uk/,
-      );
+      assert.throws(() => buildSkillConfig({ id: skill().id, name: invalid } as unknown as Skill_Config), /uk/);
     }
   });
 
   it('rejects unsupported extra locale keys', () => {
     const names = { ...allNames(), xx: 'Unknown' };
-    assert.throws(
-      () => buildSkillConfig({ id: skill().id, name: names }),
-      /unsupported languages: xx/,
-    );
+    assert.throws(() => buildSkillConfig({ id: skill().id, name: names }), /unsupported languages: xx/);
   });
 });

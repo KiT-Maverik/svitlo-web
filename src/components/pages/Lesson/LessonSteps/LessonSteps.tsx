@@ -19,10 +19,34 @@ export interface LessonStepsProps {
   onNavigate?: (step: number) => void;
 }
 
-export function LessonSteps({ steps, currentStep, unlocked, completedStep, showStepNumbers = true, allowNavigation = false, onNavigate }: LessonStepsProps) {
-  return <Box component="nav" className={styles.steps} aria-label={aria.navigation}>
-    {steps.map((step, index) => <Box component="button" key={step.id} type="button" disabled={!allowNavigation || index > unlocked} aria-current={index === currentStep ? 'step' : undefined} data-complete={index < unlocked || index === completedStep || undefined} onClick={() => onNavigate?.(index)}>
-      <span className={styles.segment} /><span className={styles.stepLabel}>{showStepNumbers ? `${index + 1}. ` : ''}{step.title}</span>
-    </Box>)}
-  </Box>;
+export function LessonSteps({
+  steps,
+  currentStep,
+  unlocked,
+  completedStep,
+  showStepNumbers = true,
+  allowNavigation = false,
+  onNavigate,
+}: LessonStepsProps) {
+  return (
+    <Box component="nav" className={styles.steps} aria-label={aria.navigation}>
+      {steps.map((step, index) => (
+        <Box
+          component="button"
+          key={step.id}
+          type="button"
+          disabled={!allowNavigation || index > unlocked}
+          aria-current={index === currentStep ? 'step' : undefined}
+          data-complete={index < unlocked || index === completedStep || undefined}
+          onClick={() => onNavigate?.(index)}
+        >
+          <span className={styles.segment} />
+          <span className={styles.stepLabel}>
+            {showStepNumbers ? `${index + 1}. ` : ''}
+            {step.title}
+          </span>
+        </Box>
+      ))}
+    </Box>
+  );
 }

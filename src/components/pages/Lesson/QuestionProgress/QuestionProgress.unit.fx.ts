@@ -15,10 +15,11 @@ export const QuestionProgress_fx = {
   render: (props: Partial<Props> = {}) =>
     render(createElement(QuestionProgress, { ...QuestionProgress_fx.defaults, ...props })),
   selectors: {
-    list: (scope?: HTMLElement) =>
-      (scope ? within(scope) : screen).getByRole('list', { name: aria.navigation }),
+    list: (scope?: HTMLElement) => (scope ? within(scope) : screen).getByRole('list', { name: aria.navigation }),
     status: (index: number, status: QuestionStatus, scope?: HTMLElement) =>
-      (scope ? within(scope) : screen).getByRole('button', { name: `${index + 1}. ${locale.questionProgress.status[status]}` }),
+      (scope ? within(scope) : screen).getByRole('button', {
+        name: `${index + 1}. ${locale.questionProgress.status[status]}`,
+      }),
   },
   actions: {
     select: async (index: number, status: QuestionStatus, scope?: HTMLElement) =>

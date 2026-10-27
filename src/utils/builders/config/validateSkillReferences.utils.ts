@@ -2,7 +2,10 @@ import type { SkillId } from '../../../types/content/skill.types';
 
 /** Verify UUID syntax while keeping generation outside application runtime. */
 export function validateSkillUuid(value: unknown, field: string): asserts value is SkillId {
-  if (typeof value !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)) {
+  if (
+    typeof value !== 'string' ||
+    !/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)
+  ) {
     throw new Error(`${field} must be a UUID`);
   }
 }

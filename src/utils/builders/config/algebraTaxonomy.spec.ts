@@ -4,11 +4,24 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math/skillsTaxonomy/algebra');
+const root = join(process.cwd(), 'src/math/skillsTaxonomy/algebra');
 const groupSkills = {
-  expressions: ['readNumericExpressions', 'parentheses', 'orderOfOperations', 'variableValue', 'identifyExpressionError'],
+  expressions: [
+    'readNumericExpressions',
+    'parentheses',
+    'orderOfOperations',
+    'variableValue',
+    'identifyExpressionError',
+  ],
   equalities: ['equalityMeaning', 'trueFalseEquality', 'completeEquality'],
-  unknowns: ['unknownAddend', 'unknownMinuend', 'unknownSubtrahend', 'unknownFactor', 'unknownDividend', 'unknownDivisor'],
+  unknowns: [
+    'unknownAddend',
+    'unknownMinuend',
+    'unknownSubtrahend',
+    'unknownFactor',
+    'unknownDividend',
+    'unknownDivisor',
+  ],
   patterns: ['arithmeticPattern', 'growingPattern'],
   formalization: ['translateSituation'],
 } as const;
@@ -23,12 +36,17 @@ describe('Algebra taxonomy source integrity', () => {
     assert.equal(Object.values(groupSkills).flat().length, 17);
     for (const [group, skills] of Object.entries(groupSkills)) {
       const ids = readUuidEntries(source(`${group}/skills/index.ids.ts`));
-      assert.deepEqual(ids.map(({ key }) => key), skills);
+      assert.deepEqual(
+        ids.map(({ key }) => key),
+        skills,
+      );
       const data = source(`${group}/${group}.data.ts`);
       assert.match(data, new RegExp(`skillIds: ${group}_Skills_Ids`));
       const exports = source(`${group}/skills/index.data.ts`).trim().split('\n');
-      assert.deepEqual(exports, [...skills].sort().map(skill =>
-        `export { ${skill}_Skill_Data } from './${skill}.data';`));
+      assert.deepEqual(
+        exports,
+        [...skills].sort().map(skill => `export { ${skill}_Skill_Data } from './${skill}.data';`),
+      );
       for (const skill of skills) {
         const body = source(`${group}/skills/${skill}.data.ts`);
         assert.match(body, new RegExp(`id: ${group}_Skills_Ids\\.${skill}`));
@@ -69,7 +87,11 @@ describe('Algebra taxonomy source integrity', () => {
       assert.notEqual(end, -1, path);
       const block = content.slice(start, end);
       const keys = [...block.matchAll(/^    ([a-z]+): "(.+)",$/gm)].map(([, key, value]) => ({ key, value }));
-      assert.deepEqual(keys.map(x => x.key), DEFAULT_SUPPORTED_LANGUAGES.map(x => x.language), path);
+      assert.deepEqual(
+        keys.map(x => x.key),
+        DEFAULT_SUPPORTED_LANGUAGES.map(x => x.language),
+        path,
+      );
       for (const entry of keys) assert.ok(entry.value.trim(), path);
     }
   });
@@ -77,10 +99,7 @@ describe('Algebra taxonomy source integrity', () => {
   it('does not mix collection levels in data indexes', () => {
     assert.equal(source('index.data.ts'), "export { algebra_SkillDomain_Data } from './algebra.data';\n");
     for (const group of Object.keys(groupSkills)) {
-      assert.equal(
-        source(`${group}/index.data.ts`),
-        `export { ${group}_SkillGroup_Data } from './${group}.data';\n`,
-      );
+      assert.equal(source(`${group}/index.data.ts`), `export { ${group}_SkillGroup_Data } from './${group}.data';\n`);
     }
   });
 });

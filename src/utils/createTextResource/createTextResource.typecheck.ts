@@ -11,9 +11,13 @@ all.id = 'other';
 // @ts-expect-error Localized values are readonly.
 all.value['en'] = 'Other';
 
-const chosen = createTextResource('title', { uk: 'Світло', pl: 'Światło' }, {
-  locales: { only: ['uk', 'pl'] },
-});
+const chosen = createTextResource(
+  'title',
+  { uk: 'Світло', pl: 'Światło' },
+  {
+    locales: { only: ['uk', 'pl'] },
+  },
+);
 const chosenLocales: false = chosen.allLocales;
 const ukrainian: string = chosen.value['uk'];
 const polish: string = chosen.value['pl'];

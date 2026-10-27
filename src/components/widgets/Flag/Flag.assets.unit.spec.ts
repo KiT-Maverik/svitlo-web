@@ -26,7 +26,11 @@ describe('Static SVG flags', () => {
     expect(content).not.toMatch(/\b(?:xlink:)?href\s*=\s*["'](?!#)/i);
     expect(content).not.toMatch(/(?:javascript:|data:|url\(\s*["']?https?:)/i);
 
-    const viewBox = content.match(/\bviewBox="([^"]+)"/i)?.[1]?.trim().split(/[\s,]+/).map(Number);
+    const viewBox = content
+      .match(/\bviewBox="([^"]+)"/i)?.[1]
+      ?.trim()
+      .split(/[\s,]+/)
+      .map(Number);
     expect(viewBox).toBeDefined();
     expect(viewBox).toHaveLength(4);
     if (viewBox) {
@@ -40,7 +44,7 @@ describe('Static SVG flags', () => {
     expect(svg).toContain('id="ua-crest-side"');
     expect(svg).toContain('href="#ua-crest-side"');
     expect(svg).toContain('viewBox="0 0 3 2"');
-    expect(svg).toContain('transform="translate(1.5 .25)');
+    expect(svg).toContain('transform="translate(1.5 .44)');
     expect(svg).not.toContain('<image');
     expect(svg).not.toContain('data:image');
     expect(svgFiles).not.toContain('Lesser_Coat_of_Arms_of_Ukraine.svg');
@@ -59,7 +63,11 @@ describe('Static SVG flags', () => {
     ['br', 10 / 7],
   ] as const)('%s preserves its native proportions', (code, expected) => {
     const svg = readFileSync(join(directory, `${code}.svg`), 'utf8');
-    const viewBox = svg.match(/\bviewBox="([^"]+)"/i)?.[1]?.trim().split(/[\s,]+/).map(Number);
+    const viewBox = svg
+      .match(/\bviewBox="([^"]+)"/i)?.[1]
+      ?.trim()
+      .split(/[\s,]+/)
+      .map(Number);
     expect(viewBox).toBeDefined();
     expect(viewBox![2] / viewBox![3]).toBeCloseTo(expected, 4);
   });

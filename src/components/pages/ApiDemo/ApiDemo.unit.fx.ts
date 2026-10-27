@@ -13,9 +13,9 @@ export const ApiDemo_fx = {
     events: () => screen.getByRole('status', { name: aria.events }),
     attemptState: () => screen.getByRole('status', { name: aria.attemptState }),
     numeric: () => screen.getByRole('textbox', { name: locale.api.numericField }),
-    button: (action: keyof typeof locale.api.actions) => screen.getByRole('button', { name: locale.api.actions[action] }),
-    checkbox: (key: 'hideResult' | 'disabled' | 'readOnly') =>
-      screen.getByRole('checkbox', { name: locale.api[key] }),
+    button: (action: keyof typeof locale.api.actions) =>
+      screen.getByRole('button', { name: locale.api.actions[action] }),
+    checkbox: (key: 'hideResult' | 'disabled' | 'readOnly') => screen.getByRole('checkbox', { name: locale.api[key] }),
   },
   actions: {
     toggle: async (key: 'hideResult' | 'disabled' | 'readOnly') => userEvent.click(ApiDemo_fx.selectors.checkbox(key)),

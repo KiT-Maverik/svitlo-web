@@ -4,33 +4,54 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const taxonomy = join(process.cwd(), 'math', 'skillsTaxonomy');
+const taxonomy = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(taxonomy, 'data');
 const expected: Record<string, readonly string[]> = {
-  collection: ['classifyByAttribute', 'formulateInvestigationQuestion', 'collectCounts', 'tallyMarks', 'fillSimpleTable'],
-  presentation: ['linePlotMeasurements', 'readSimpleTable', 'readPictograph', 'buildPictograph', 'readBarChart', 'buildBarChart', 'scaledChart'],
+  collection: [
+    'classifyByAttribute',
+    'formulateInvestigationQuestion',
+    'collectCounts',
+    'tallyMarks',
+    'fillSimpleTable',
+  ],
+  presentation: [
+    'linePlotMeasurements',
+    'readSimpleTable',
+    'readPictograph',
+    'buildPictograph',
+    'readBarChart',
+    'buildBarChart',
+    'scaledChart',
+  ],
   interpretation: ['compareCategories', 'interpretConclusion', 'missingInformation'],
 };
 const read = (path: string): string => readFileSync(path, 'utf8');
 const uuidEntries = (source: string) =>
-  [...source.matchAll(/^\s*(\w+): '([0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})',?$/gm)]
-    .map(match => ({ key: match[1], id: match[2] }));
+  [...source.matchAll(/^\s*(\w+): '([0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})',?$/gm)].map(
+    match => ({ key: match[1], id: match[2] }),
+  );
 
 describe('Data taxonomy source contracts', () => {
   it('has three groups and fifteen individually authored skills', () => {
-    assert.deepEqual(readdirSync(domain, { withFileTypes: true })
-      .filter(entry => entry.isDirectory()).map(entry => entry.name).sort(),
-      Object.keys(expected).sort());
+    assert.deepEqual(
+      readdirSync(domain, { withFileTypes: true })
+        .filter(entry => entry.isDirectory())
+        .map(entry => entry.name)
+        .sort(),
+      Object.keys(expected).sort(),
+    );
     let count = 0;
     for (const [group, keys] of Object.entries(expected)) {
       const folder = join(domain, group, 'skills');
       const actual = readdirSync(folder)
-        .filter(name => name.endsWith('.data.ts') && name !== 'index.data.ts').sort();
+        .filter(name => name.endsWith('.data.ts') && name !== 'index.data.ts')
+        .sort();
       assert.deepEqual(actual, keys.map(key => key + '.data.ts').sort());
-      assert.deepEqual(uuidEntries(read(join(folder, 'index.ids.ts')))
-        .map(item => item.key), [...keys]);
-      assert.ok(read(join(domain, group, group + '.data.ts'))
-        .includes('skillIds: ' + group + '_Skills_Ids'));
+      assert.deepEqual(
+        uuidEntries(read(join(folder, 'index.ids.ts'))).map(item => item.key),
+        [...keys],
+      );
+      assert.ok(read(join(domain, group, group + '.data.ts')).includes('skillIds: ' + group + '_Skills_Ids'));
       count += actual.length;
     }
     assert.equal(count, 15);
@@ -49,8 +70,7 @@ describe('Data taxonomy source contracts', () => {
       const source = read(path);
       const match = source.match(/name:\s*\{([\s\S]*?)\n\s*\},/);
       assert.ok(match, 'Missing localized name: ' + path);
-      const keys = [...match[1].matchAll(/^\s*([a-z]+):\s*"(?:\\.|[^"\\])*",?$/gm)]
-        .map(entry => entry[1]).sort();
+      const keys = [...match[1].matchAll(/^\s*([a-z]+):\s*"(?:\\.|[^"\\])*",?$/gm)].map(entry => entry[1]).sort();
       assert.deepEqual(keys, languages, 'Incomplete locales in ' + path);
       assert.ok(!source.includes('fileLocation:'), path);
     }
@@ -77,20 +97,23 @@ describe('Data taxonomy source contracts', () => {
   });
 
   it('keeps domain, group and skill exports at their own collection levels', () => {
-    assert.equal(read(join(domain, 'index.data.ts')).trim(),
-      "export { data_SkillDomain_Data } from './data.data';");
+    assert.equal(read(join(domain, 'index.data.ts')).trim(), "export { data_SkillDomain_Data } from './data.data';");
     assert.ok(read(join(domain, 'data.data.ts')).includes('groupIds: data_SkillGroups_Ids'));
     for (const [group, keys] of Object.entries(expected)) {
-      assert.equal(read(join(domain, group, 'index.data.ts')).trim(),
-        'export { ' + group + "_SkillGroup_Data } from './" + group + ".data';");
-      const actual = read(join(domain, group, 'skills', 'index.data.ts')).trim().split('\n').sort();
-      assert.deepEqual(actual, keys.map(key =>
-        'export { ' + key + "_Skill_Data } from './" + key + ".data';").sort());
+      assert.equal(
+        read(join(domain, group, 'index.data.ts')).trim(),
+        'export { ' + group + "_SkillGroup_Data } from './" + group + ".data';",
+      );
+      const actual = read(join(domain, group, 'skills', 'index.data.ts'))
+        .trim()
+        .split('\n')
+        .sort();
+      assert.deepEqual(actual, keys.map(key => 'export { ' + key + "_Skill_Data } from './" + key + ".data';").sort());
     }
   });
 
   it('marks exactly the authored skills as Implemented in the inventory', () => {
-    const inventory = read(join(process.cwd(), 'math', 'skills-inventory.md'));
+    const inventory = read(join(process.cwd(), 'src', 'math', 'skills-inventory.md'));
     const dataSection = inventory.split('### Domain 10. Дані (15)')[1].split('### Domain 11.')[0];
     const rows = dataSection.split('\n').filter(line => line.includes('| ' + String.fromCharCode(96) + 'math.data.'));
     assert.equal(rows.length, 15);

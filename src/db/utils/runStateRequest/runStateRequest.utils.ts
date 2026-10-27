@@ -22,7 +22,9 @@ export async function runStateRequest<T>(
     }
 
     let result: T;
-    request.onsuccess = () => { result = request.result; };
+    request.onsuccess = () => {
+      result = request.result;
+    };
     transaction.oncomplete = () => {
       database.close();
       resolve(result);
