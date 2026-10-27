@@ -101,9 +101,15 @@ export function createQuestionController<K extends QuestionType>(
     check: () => {
       if (isReadyToCheck()) evaluate(state.answer);
     },
-    retry: () => {
+    retry: (clearAnswer = false) => {
       if (options.disabled || options.readOnly || !state.hasChecked) return;
-      commit({ ...state, result: null, hasChecked: false, attemptNumber: state.attemptNumber + 1 });
+      const attemptNumber = state.attemptNumber + 1;
+      // The default UI starts a blank attempt; custom slots may preserve the answer for editing.
+      commit(
+        clearAnswer
+          ? { ...fresh(), attemptNumber }
+          : { ...state, result: null, hasChecked: false, attemptNumber },
+      );
       options.onRetry?.(event());
     },
     reset: () => {
