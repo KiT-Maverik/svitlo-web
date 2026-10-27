@@ -21,7 +21,7 @@ export const checkReasonableness_Skill_Data = buildSkillConfig({
     vi: "Đánh giá tính hợp lý của đáp án theo ngữ cảnh và độ lớn",
     ta: "சூழல் மற்றும் அளவின் அடிப்படையில் விடையின் நியாயத்தன்மையை மதிப்பிடுதல்",
     te: "సందర్భం మరియు పరిమాణాన్ని బట్టి సమాధానం సమంజసమో అంచనా వేయడం",
-    mr: "संदर्भ आणि परिमाणानुसार उत्तराची वाजवीपणा तपासणे",
+    mr: "संदर्भ आणि परिमाणानुसार उत्तर कितपत वाजवी आहे हे तपासणे",
     ms: "Menilai kewajaran jawapan berdasarkan konteks dan magnitud",
     he: "הערכת סבירות התשובה לפי ההקשר וסדר הגודל",
     pl: "Ocena sensowności odpowiedzi w kontekście i skali wielkości",

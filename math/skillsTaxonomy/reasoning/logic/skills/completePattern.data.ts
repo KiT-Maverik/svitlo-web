@@ -14,7 +14,7 @@ export const completePattern_Skill_Data = buildSkillConfig({
     pt: "Completar um padrão numérico ou geométrico segundo sua regra",
     ur: "قاعدے کے مطابق عددی یا ہندسی نمونہ مکمل کرنا",
     id: "Melengkapi pola bilangan atau geometri sesuai aturannya",
-    de: "Ein Zahlen- oder Formenmust­er nach seiner Regel fortsetzen",
+    de: "Ein Zahlen- oder Figurenmuster nach seiner Regel fortsetzen",
     ja: "規則に従って数や図形のパターンを完成させる",
     ko: "규칙에 따라 수나 도형의 패턴 완성하기",
     tr: "Sayısal veya geometrik örüntüyü kuralına göre tamamlama",
