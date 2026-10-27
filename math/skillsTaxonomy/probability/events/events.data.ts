@@ -6,6 +6,12 @@ export const events_SkillGroup_Data = buildSkillGroupConfig({
   id: events_SkillGroup_Ids.events,
   name: {
     en: "Random events",
+    "lt": "Atsitiktiniai įvykiai",
+    "lv": "Nejauši notikumi",
+    "et": "Juhuslikud sündmused",
+    "be": "Выпадковыя падзеі",
+    "ka": "შემთხვევითი მოვლენები",
+    "kk": "Кездейсоқ оқиғалар",
     zh: "随机事件",
     hi: "यादृच्छिक घटनाएँ",
     es: "Sucesos aleatorios",

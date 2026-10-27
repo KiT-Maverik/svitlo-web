@@ -6,6 +6,12 @@ export const placeValue_SkillGroup_Data = buildSkillGroupConfig({
   id: placeValue_SkillGroup_Ids.placeValue,
   name: {
     en: "Place value",
+    "lt": "Skaitmenų vietinė vertė",
+    "lv": "Cipara vietas vērtība",
+    "et": "Kohaväärtus",
+    "be": "Разраднае значэньне",
+    "ka": "თანრიგის მნიშვნელობა",
+    "kk": "Разрядтық мән",
     zh: "数位与位值",
     hi: "स्थानीय मान",
     es: "Valor posicional",

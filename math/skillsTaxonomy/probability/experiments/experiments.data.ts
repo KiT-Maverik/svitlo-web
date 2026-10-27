@@ -6,6 +6,12 @@ export const experiments_SkillGroup_Data = buildSkillGroupConfig({
   id: experiments_SkillGroup_Ids.experiments,
   name: {
     en: "Random experiments",
+    "lt": "Atsitiktiniai bandymai",
+    "lv": "Nejauši eksperimenti",
+    "et": "Juhukatsed",
+    "be": "Выпадковыя досьледы",
+    "ka": "შემთხვევითი ექსპერიმენტები",
+    "kk": "Кездейсоқ тәжірибелер",
     zh: "随机试验",
     hi: "यादृच्छिक प्रयोग",
     es: "Experimentos aleatorios",
