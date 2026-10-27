@@ -4,6 +4,12 @@ import { estimation_Skills_Ids } from './index.ids';
 export const estimateQuantity_Skill_Data = buildSkillConfig({
   id: estimation_Skills_Ids.estimateQuantity,
   name: {
+    "lt": "Kiekio įvertinimas ir patikrinimas",
+    "lv": "Daudzuma novērtēšana un pārbaude",
+    "et": "Koguste hindamine ja kontrollimine",
+    "be": "Ацэньваньне й праверка колькасьці",
+    "ka": "რაოდენობების შეფასება და შემოწმება",
+    "kk": "Мөлшерді бағалау және тексеру",
     en: "Estimating and checking quantities",
     zh: "估计并核对数量",
     hi: "मात्रा का अनुमान और जाँच",

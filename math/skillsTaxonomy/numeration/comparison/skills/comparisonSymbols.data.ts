@@ -4,6 +4,12 @@ import { comparison_Skills_Ids } from './index.ids';
 export const comparisonSymbols_Skill_Data = buildSkillConfig({
   id: comparison_Skills_Ids.comparisonSymbols,
   name: {
+    "lt": "Palyginimo ženklai <, > ir =",
+    "lv": "Salīdzināšanas zīmes <, > un =",
+    "et": "Võrdlusmärgid <, > ja =",
+    "be": "Знакі параўнаньня <, > і =",
+    "ka": "შედარების ნიშნები <, > და =",
+    "kk": "Салыстыру таңбалары <, > және =",
     en: "Comparison symbols <, > and =",
     zh: "使用比较符号 <、> 和 =",
     hi: "तुलना चिह्न <, > और =",

@@ -4,6 +4,12 @@ import { comparison_Skills_Ids } from './index.ids';
 export const order20_Skill_Data = buildSkillConfig({
   id: comparison_Skills_Ids.order20,
   name: {
+    "lt": "Skaičių nuo 0 iki 20 rikiavimas",
+    "lv": "Skaitļu no 0 līdz 20 sakārtošana",
+    "et": "Arvude 0–20 järjestamine",
+    "be": "Упарадкаваньне лікаў ад 0 да 20",
+    "ka": "0-დან 20-მდე რიცხვების დალაგება",
+    "kk": "0-ден 20-ға дейінгі сандарды реттеу",
     en: "Ordering numbers 0–20",
     zh: "排列0至20的数",
     hi: "0–20 तक संख्याओं का क्रम",

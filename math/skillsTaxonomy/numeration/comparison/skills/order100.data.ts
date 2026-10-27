@@ -4,6 +4,12 @@ import { comparison_Skills_Ids } from './index.ids';
 export const order100_Skill_Data = buildSkillConfig({
   id: comparison_Skills_Ids.order100,
   name: {
+    "lt": "Dviženklių skaičių lyginimas ir rikiavimas",
+    "lv": "Divciparu skaitļu salīdzināšana un sakārtošana",
+    "et": "Kahekohaliste arvude võrdlemine ja järjestamine",
+    "be": "Параўнаньне й упарадкаваньне двухзначных лікаў",
+    "ka": "ორნიშნა რიცხვების შედარება და დალაგება",
+    "kk": "Екі таңбалы сандарды салыстыру және реттеу",
     en: "Comparing and ordering two-digit numbers",
     zh: "比较并排列两位数",
     hi: "दो अंकों की संख्याओं की तुलना और क्रम",
