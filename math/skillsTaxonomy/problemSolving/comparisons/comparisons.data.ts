@@ -6,6 +6,12 @@ export const comparisons_SkillGroup_Data = buildSkillGroupConfig({
   id: comparisons_SkillGroup_Ids.comparisons,
   name: {
     en: "Comparison problems",
+    "lt": "Palyginimo uždaviniai",
+    "lv": "Salīdzināšanas uzdevumi",
+    "et": "Võrdlusülesanded",
+    "be": "Задачы на параўнаньне",
+    "ka": "შედარების ამოცანები",
+    "kk": "Салыстыру есептері",
     zh: "比较类应用题",
     hi: "तुलना की समस्याएँ",
     es: "Problemas de comparación",
