@@ -5,6 +5,12 @@ export const perimeterVsArea_Skill_Data = buildSkillConfig({
   id: perimeterArea_Skills_Ids.perimeterVsArea,
   name: {
     en: "Choosing perimeter or area for a measurement",
+    "lt": "Perimetro arba ploto pasirinkimas matavimui",
+    "lv": "Perimetra vai laukuma izvēle mērīšanai",
+    "et": "Ümbermõõdu või pindala valimine mõõtmiseks",
+    "be": "Выбар пэрымэтру ці плошчы для вымярэньня",
+    "ka": "გაზომვისთვის პერიმეტრის ან ფართობის არჩევა",
+    "kk": "Өлшеу үшін периметрді немесе ауданды таңдау",
     zh: "根据测量目标选择周长或面积",
     hi: "माप के लिए परिमाप या क्षेत्रफल चुनना",
     es: "Elegir perímetro o área según la medida",

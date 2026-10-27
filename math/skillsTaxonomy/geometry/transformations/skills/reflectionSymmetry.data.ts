@@ -5,6 +5,12 @@ export const reflectionSymmetry_Skill_Data = buildSkillConfig({
   id: transformations_Skills_Ids.reflectionSymmetry,
   name: {
     en: "Finding symmetry axes and completing reflections",
+    "lt": "Simetrijos ašių radimas ir atspindžių užbaigimas",
+    "lv": "Simetrijas asu atrašana un atspoguļojumu pabeigšana",
+    "et": "Sümmeetriatelgede leidmine ja peegelpildi täiendamine",
+    "be": "Знаходжаньне восяў сымэтрыі і дапаўненьне адлюстраваньняў",
+    "ka": "სიმეტრიის ღერძების პოვნა და ანარეკლების დასრულება",
+    "kk": "Симметрия осьтерін табу және шағылдыруды толықтыру",
     zh: "找对称轴并补全轴对称图形",
     hi: "सममिति अक्ष ढूँढना और प्रतिबिंब पूरा करना",
     es: "Hallar ejes de simetría y completar reflejos",

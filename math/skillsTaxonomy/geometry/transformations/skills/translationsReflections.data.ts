@@ -5,6 +5,12 @@ export const translationsReflections_Skill_Data = buildSkillConfig({
   id: transformations_Skills_Ids.translationsReflections,
   name: {
     en: "Translating and reflecting figures",
+    "lt": "Figūrų pastūmimas ir atspindėjimas",
+    "lv": "Figūru pārbīde un atspoguļošana",
+    "et": "Kujundite nihutamine ja peegeldamine",
+    "be": "Перанос і адлюстраваньне фігураў",
+    "ka": "ფიგურების გადატანა და არეკვლა",
+    "kk": "Фигураларды жылжыту және шағылдыру",
     zh: "平移与轴对称翻折图形",
     hi: "आकृतियों का स्थानांतरण और परावर्तन",
     es: "Trasladar y reflejar figuras",

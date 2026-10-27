@@ -5,6 +5,12 @@ export const identify3dSolids_Skill_Data = buildSkillConfig({
   id: solids_Skills_Ids.identify3dSolids,
   name: {
     en: "Identifying basic solid figures",
+    "lt": "Pagrindinių erdvinių figūrų atpažinimas",
+    "lv": "Pamata telpisku figūru atpazīšana",
+    "et": "Põhiliste ruumiliste kehade äratundmine",
+    "be": "Распазнаваньне асноўных аб'ёмных фігураў",
+    "ka": "ძირითადი სივრცული ფიგურების ამოცნობა",
+    "kk": "Негізгі кеңістіктік фигураларды тану",
     zh: "识别基本立体图形",
     hi: "मूल ठोस आकृतियों की पहचान",
     es: "Identificar cuerpos geométricos básicos",

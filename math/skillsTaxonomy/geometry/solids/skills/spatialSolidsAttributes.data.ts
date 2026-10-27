@@ -5,6 +5,12 @@ export const spatialSolidsAttributes_Skill_Data = buildSkillConfig({
   id: solids_Skills_Ids.spatialSolidsAttributes,
   name: {
     en: "Faces, edges and vertices of cubes and cuboids",
+    "lt": "Kubų ir stačiakampių gretasienių sienos, briaunos ir viršūnės",
+    "lv": "Kubu un taisnstūra paralēlskaldņu skaldnes, šķautnes un virsotnes",
+    "et": "Kuupide ja risttahukate tahud, servad ja tipud",
+    "be": "Грані, рэбры і вяршыні кубаў і прамавугольных паралелепіпэдаў",
+    "ka": "კუბებისა და მართკუთხა პარალელეპიპედების წახნაგები, წიბოები და წვეროები",
+    "kk": "Текшелер мен тікбұрышты параллелепипедтердің жақтары, қырлары және төбелері",
     zh: "正方体和长方体的面、棱和顶点",
     hi: "घन और घनाभ के फलक धार और शीर्ष",
     es: "Caras, aristas y vértices de cubos y ortoedros",
