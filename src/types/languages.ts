@@ -8,7 +8,6 @@ export interface LanguageDefinition {
   readonly name: string;
   readonly nativeName: string;
   readonly nameUk: string;
-  readonly flag: string;
   readonly direction: TextDirection;
 }
 
@@ -24,7 +23,6 @@ export interface LanguageDefinition {
  *       name: 'Czech';
  *       nativeName: 'Čeština';
  *       nameUk: 'Чеська';
- *       flag: '🇨🇿';
  *       direction: 'ltr';
  *     };
  *   }
@@ -37,28 +35,28 @@ export type AdditionalLanguage = AdditionalLanguages[keyof AdditionalLanguages];
 
 /** Default language set shipped with the project. */
 export const DEFAULT_SUPPORTED_LANGUAGES = [
-  { locale: 'en-US', language: 'en', name: 'English', nativeName: 'English', nameUk: 'Англійська', flag: '🇺🇸', direction: 'ltr' },
-  { locale: 'zh-Hans-CN', language: 'zh', name: 'Chinese (Simplified)', nativeName: '简体中文', nameUk: 'Китайська (спрощене письмо)', flag: '🇨🇳', direction: 'ltr' },
-  { locale: 'hi-IN', language: 'hi', name: 'Hindi', nativeName: 'हिन्दी', nameUk: 'Гінді', flag: '🇮🇳', direction: 'ltr' },
-  { locale: 'es-ES', language: 'es', name: 'Spanish', nativeName: 'Español', nameUk: 'Іспанська', flag: '🇪🇸', direction: 'ltr' },
-  { locale: 'ar-SA', language: 'ar', name: 'Arabic', nativeName: 'العربية', nameUk: 'Арабська', flag: '🇸🇦', direction: 'rtl' },
-  { locale: 'fr-FR', language: 'fr', name: 'French', nativeName: 'Français', nameUk: 'Французька', flag: '🇫🇷', direction: 'ltr' },
-  { locale: 'bn-BD', language: 'bn', name: 'Bengali', nativeName: 'বাংলা', nameUk: 'Бенгальська', flag: '🇧🇩', direction: 'ltr' },
-  { locale: 'pt-BR', language: 'pt', name: 'Portuguese (Brazil)', nativeName: 'Português do Brasil', nameUk: 'Португальська (Бразилія)', flag: '🇧🇷', direction: 'ltr' },
-  { locale: 'ur-PK', language: 'ur', name: 'Urdu', nativeName: 'اردو', nameUk: 'Урду', flag: '🇵🇰', direction: 'rtl' },
-  { locale: 'id-ID', language: 'id', name: 'Indonesian', nativeName: 'Bahasa Indonesia', nameUk: 'Індонезійська', flag: '🇮🇩', direction: 'ltr' },
-  { locale: 'de-DE', language: 'de', name: 'German', nativeName: 'Deutsch', nameUk: 'Німецька', flag: '🇩🇪', direction: 'ltr' },
-  { locale: 'ja-JP', language: 'ja', name: 'Japanese', nativeName: '日本語', nameUk: 'Японська', flag: '🇯🇵', direction: 'ltr' },
-  { locale: 'ko-KR', language: 'ko', name: 'Korean', nativeName: '한국어', nameUk: 'Корейська', flag: '🇰🇷', direction: 'ltr' },
-  { locale: 'tr-TR', language: 'tr', name: 'Turkish', nativeName: 'Türkçe', nameUk: 'Турецька', flag: '🇹🇷', direction: 'ltr' },
-  { locale: 'vi-VN', language: 'vi', name: 'Vietnamese', nativeName: 'Tiếng Việt', nameUk: 'В’єтнамська', flag: '🇻🇳', direction: 'ltr' },
-  { locale: 'ta-IN', language: 'ta', name: 'Tamil', nativeName: 'தமிழ்', nameUk: 'Тамільська', flag: '🇮🇳', direction: 'ltr' },
-  { locale: 'te-IN', language: 'te', name: 'Telugu', nativeName: 'తెలుగు', nameUk: 'Телугу', flag: '🇮🇳', direction: 'ltr' },
-  { locale: 'mr-IN', language: 'mr', name: 'Marathi', nativeName: 'मराठी', nameUk: 'Маратхі', flag: '🇮🇳', direction: 'ltr' },
-  { locale: 'ms-MY', language: 'ms', name: 'Malay', nativeName: 'Bahasa Melayu', nameUk: 'Малайська', flag: '🇲🇾', direction: 'ltr' },
-  { locale: 'he-IL', language: 'he', name: 'Hebrew', nativeName: 'עברית', nameUk: 'Іврит', flag: '🇮🇱', direction: 'rtl' },
-  { locale: 'pl-PL', language: 'pl', name: 'Polish', nativeName: 'Polski', nameUk: 'Польська', flag: '🇵🇱', direction: 'ltr' },
-  { locale: 'uk-UA', language: 'uk', name: 'Ukrainian', nativeName: 'Українська', nameUk: 'Українська', flag: '🇺🇦', direction: 'ltr' },
+  { locale: 'en-US', language: 'en', name: 'English', nativeName: 'English', nameUk: 'Англійська', direction: 'ltr' },
+  { locale: 'zh-Hans-CN', language: 'zh', name: 'Chinese (Simplified)', nativeName: '简体中文', nameUk: 'Китайська (спрощене письмо)', direction: 'ltr' },
+  { locale: 'hi-IN', language: 'hi', name: 'Hindi', nativeName: 'हिन्दी', nameUk: 'Гінді', direction: 'ltr' },
+  { locale: 'es-ES', language: 'es', name: 'Spanish', nativeName: 'Español', nameUk: 'Іспанська', direction: 'ltr' },
+  { locale: 'ar-SA', language: 'ar', name: 'Arabic', nativeName: 'العربية', nameUk: 'Арабська', direction: 'rtl' },
+  { locale: 'fr-FR', language: 'fr', name: 'French', nativeName: 'Français', nameUk: 'Французька', direction: 'ltr' },
+  { locale: 'bn-BD', language: 'bn', name: 'Bengali', nativeName: 'বাংলা', nameUk: 'Бенгальська', direction: 'ltr' },
+  { locale: 'pt-BR', language: 'pt', name: 'Portuguese (Brazil)', nativeName: 'Português do Brasil', nameUk: 'Португальська (Бразилія)', direction: 'ltr' },
+  { locale: 'ur-PK', language: 'ur', name: 'Urdu', nativeName: 'اردو', nameUk: 'Урду', direction: 'rtl' },
+  { locale: 'id-ID', language: 'id', name: 'Indonesian', nativeName: 'Bahasa Indonesia', nameUk: 'Індонезійська', direction: 'ltr' },
+  { locale: 'de-DE', language: 'de', name: 'German', nativeName: 'Deutsch', nameUk: 'Німецька', direction: 'ltr' },
+  { locale: 'ja-JP', language: 'ja', name: 'Japanese', nativeName: '日本語', nameUk: 'Японська', direction: 'ltr' },
+  { locale: 'ko-KR', language: 'ko', name: 'Korean', nativeName: '한국어', nameUk: 'Корейська', direction: 'ltr' },
+  { locale: 'tr-TR', language: 'tr', name: 'Turkish', nativeName: 'Türkçe', nameUk: 'Турецька', direction: 'ltr' },
+  { locale: 'vi-VN', language: 'vi', name: 'Vietnamese', nativeName: 'Tiếng Việt', nameUk: 'В’єтнамська', direction: 'ltr' },
+  { locale: 'ta-IN', language: 'ta', name: 'Tamil', nativeName: 'தமிழ்', nameUk: 'Тамільська', direction: 'ltr' },
+  { locale: 'te-IN', language: 'te', name: 'Telugu', nativeName: 'తెలుగు', nameUk: 'Телугу', direction: 'ltr' },
+  { locale: 'mr-IN', language: 'mr', name: 'Marathi', nativeName: 'मराठी', nameUk: 'Маратхі', direction: 'ltr' },
+  { locale: 'ms-MY', language: 'ms', name: 'Malay', nativeName: 'Bahasa Melayu', nameUk: 'Малайська', direction: 'ltr' },
+  { locale: 'he-IL', language: 'he', name: 'Hebrew', nativeName: 'עברית', nameUk: 'Іврит', direction: 'rtl' },
+  { locale: 'pl-PL', language: 'pl', name: 'Polish', nativeName: 'Polski', nameUk: 'Польська', direction: 'ltr' },
+  { locale: 'uk-UA', language: 'uk', name: 'Ukrainian', nativeName: 'Українська', nameUk: 'Українська', direction: 'ltr' },
 ] as const satisfies readonly LanguageDefinition[];
 
 export type DefaultSupportedLanguage = (typeof DEFAULT_SUPPORTED_LANGUAGES)[number];
