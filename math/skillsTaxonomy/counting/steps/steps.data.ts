@@ -6,6 +6,12 @@ export const steps_SkillGroup_Data = buildSkillGroupConfig({
   id: steps_SkillGroup_Ids.steps,
   name: {
     en: "Skip counting",
+    "lt": "Skaičiavimas žingsniais",
+    "lv": "Skaitīšana ar soli",
+    "et": "Loendamine sammuga",
+    "be": "Лічэньне з крокам",
+    "ka": "დათვლა ნაბიჯებით",
+    "kk": "Қадамдап санау",
     zh: "跳数计数",
     hi: "अंतराल से गिनती",
     es: "Conteo por intervalos",

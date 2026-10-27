@@ -6,6 +6,12 @@ export const sequence_SkillGroup_Data = buildSkillGroupConfig({
   id: sequence_SkillGroup_Ids.sequence,
   name: {
     en: "Number sequences",
+    "lt": "Skaičių sekos",
+    "lv": "Skaitļu virknes",
+    "et": "Arvujadad",
+    "be": "Лікавыя пасьлядоўнасьці",
+    "ka": "რიცხვთა მიმდევრობები",
+    "kk": "Сандар тізбегі",
     zh: "数列",
     hi: "संख्या क्रम",
     es: "Secuencias numéricas",

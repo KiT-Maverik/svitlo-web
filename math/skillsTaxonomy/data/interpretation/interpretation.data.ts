@@ -6,6 +6,12 @@ export const interpretation_SkillGroup_Data = buildSkillGroupConfig({
   id: interpretation_SkillGroup_Ids.interpretation,
   name: {
     en: "Data interpretation",
+    "lt": "Duomenų aiškinimas",
+    "lv": "Datu interpretācija",
+    "et": "Andmete tõlgendamine",
+    "be": "Тлумачэньне зьвестак",
+    "ka": "მონაცემების ინტერპრეტაცია",
+    "kk": "Деректерді түсіндіру",
     zh: "数据解读",
     hi: "आँकड़ों की व्याख्या",
     es: "Interpretación de datos",
