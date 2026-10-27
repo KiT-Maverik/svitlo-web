@@ -24,29 +24,36 @@ function props<T>(element: ReactElement): T {
 
 describe('Lesson page assembly', () => {
   it('should assemble the route from the supplied config and locale', () => {
-    const root = Lesson({ config: howLightMoves_Lesson_Data, catalog: howLightMovesCatalog, locale: 'en-US', href: '/topics/light' });
+    const root = Lesson({
+      config: howLightMoves_Lesson_Data,
+      catalog: howLightMovesCatalog,
+      locale: 'en-US',
+      href: '/topics/light',
+    });
     expect(root.type).toBe(LocaleProvider);
     expect(props<{ locale: string }>(root).locale).toBe('en-US');
 
     const scenes = onlyChild(root);
     expect(scenes.type).toBe(SceneLocaleProvider);
-    expect(props<{ scenes: object }>(scenes).scenes)
-      .toEqual(buildLesson(howLightMoves_Lesson_Data, 'en-US', howLightMovesCatalog).sceneLocale);
+    expect(props<{ scenes: object }>(scenes).scenes).toEqual(
+      buildLesson(howLightMoves_Lesson_Data, 'en-US', howLightMovesCatalog).sceneLocale,
+    );
 
     const progress = onlyChild(scenes);
     expect(progress.type).toBe(LessonProgressProvider);
     expect(progress.key).toBe(howLightMoves_Lesson_Data.id);
-    expect(props<{ lessonId: string; sectionIds: string[]; quizSectionId: string }>(progress))
-      .toMatchObject({
-        lessonId: howLightMoves_Lesson_Data.id,
-        sectionIds: [...howLightMoves_Lesson_Data.sections.content],
-        quizSectionId: howLightMoves_Lesson_Data.sections.content[2],
-      });
+    expect(props<{ lessonId: string; sectionIds: string[]; quizSectionId: string }>(progress)).toMatchObject({
+      lessonId: howLightMoves_Lesson_Data.id,
+      sectionIds: [...howLightMoves_Lesson_Data.sections.content],
+      quizSectionId: howLightMoves_Lesson_Data.sections.content[2],
+    });
 
     const layout = onlyChild(progress);
     expect(layout.type).toBe(LearningLayout);
-    expect(props<{ topics: Array<{ title: string; href: string }>; quizStep: number }>(layout))
-      .toMatchObject({ topics: [{ title: 'How Light Travels', href: '/topics/light' }], quizStep: 2 });
+    expect(props<{ topics: Array<{ title: string; href: string }>; quizStep: number }>(layout)).toMatchObject({
+      topics: [{ title: 'How Light Travels', href: '/topics/light' }],
+      quizStep: 2,
+    });
 
     const client = onlyChild(layout);
     expect(client.type).toBe(LessonClient);
@@ -62,9 +69,10 @@ describe('Lesson page assembly', () => {
       requireQuiz: false,
       sections: { ...howLightMoves_Lesson_Data.sections, content: [howLightMoves_Lesson_Data.sections.content[0]] },
     };
-    const progress = onlyChild(onlyChild(Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' })));
-    expect(props<{ quizSectionId?: string; requireQuiz: boolean }>(progress))
-      .toMatchObject({ requireQuiz: false });
+    const progress = onlyChild(
+      onlyChild(Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' })),
+    );
+    expect(props<{ quizSectionId?: string; requireQuiz: boolean }>(progress)).toMatchObject({ requireQuiz: false });
     expect(props<{ quizSectionId?: string }>(progress).quizSectionId).toBeUndefined();
     const layout = onlyChild(progress);
     expect(props<{ quizStep?: number }>(layout).quizStep).toBeUndefined();
@@ -76,8 +84,9 @@ describe('Lesson page assembly', () => {
       ...howLightMoves_Lesson_Data,
       sections: { ...howLightMoves_Lesson_Data.sections, content: [howLightMoves_Lesson_Data.sections.content[0]] },
     };
-    expect(() => Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' }))
-      .toThrow('A lesson that requires a quiz must include one');
+    expect(() => Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' })).toThrow(
+      'A lesson that requires a quiz must include one',
+    );
   });
 
   it('should reject multiple quizzes until the progress model supports them', () => {
@@ -88,7 +97,8 @@ describe('Lesson page assembly', () => {
         content: [...howLightMoves_Lesson_Data.sections.content, howLightMoves_Lesson_Data.sections.content[2]],
       },
     };
-    expect(() => Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' }))
-      .toThrow('The current lesson progress model supports one quiz per lesson');
+    expect(() => Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' })).toThrow(
+      'The current lesson progress model supports one quiz per lesson',
+    );
   });
 });

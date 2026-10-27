@@ -16,10 +16,29 @@ export interface QuestionProgressProps {
 
 const statusLabel: Record<QuestionStatus, string> = lessonLocale.questionProgress.status;
 
-export function QuestionProgress({ statuses, currentIndex, allowNavigation = false, onNavigate, className }: QuestionProgressProps) {
-  return <Box component="ol" className={className} role="list" aria-label={aria.navigation}>
-    {statuses.map((status, index) => <Box component="li" key={index} sx={{ display: 'contents' }}>
-      <Box component="button" type="button" disabled={!allowNavigation || index === currentIndex} aria-current={index === currentIndex ? 'step' : undefined} aria-label={`${index + 1}. ${statusLabel[status]}`} data-status={status} data-current={index === currentIndex || undefined} onClick={() => onNavigate?.(index)} />
-    </Box>)}
-  </Box>;
+export function QuestionProgress({
+  statuses,
+  currentIndex,
+  allowNavigation = false,
+  onNavigate,
+  className,
+}: QuestionProgressProps) {
+  return (
+    <Box component="ol" className={className} role="list" aria-label={aria.navigation}>
+      {statuses.map((status, index) => (
+        <Box component="li" key={index} sx={{ display: 'contents' }}>
+          <Box
+            component="button"
+            type="button"
+            disabled={!allowNavigation || index === currentIndex}
+            aria-current={index === currentIndex ? 'step' : undefined}
+            aria-label={`${index + 1}. ${statusLabel[status]}`}
+            data-status={status}
+            data-current={index === currentIndex || undefined}
+            onClick={() => onNavigate?.(index)}
+          />
+        </Box>
+      ))}
+    </Box>
+  );
 }

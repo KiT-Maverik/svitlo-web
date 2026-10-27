@@ -87,10 +87,21 @@ async function readStored(store: StateStore, id: string): Promise<unknown> {
     const transaction = db.transaction(store, 'readonly');
     const request = transaction.objectStore(store).get(id);
     let result: unknown;
-    request.onsuccess = () => { result = request.result; };
-    transaction.oncomplete = () => { db.close(); resolve(result); };
-    transaction.onabort = () => { db.close(); reject(transaction.error ?? new Error('Read aborted')); };
-    transaction.onerror = () => { db.close(); reject(transaction.error ?? new Error('Read failed')); };
+    request.onsuccess = () => {
+      result = request.result;
+    };
+    transaction.oncomplete = () => {
+      db.close();
+      resolve(result);
+    };
+    transaction.onabort = () => {
+      db.close();
+      reject(transaction.error ?? new Error('Read aborted'));
+    };
+    transaction.onerror = () => {
+      db.close();
+      reject(transaction.error ?? new Error('Read failed'));
+    };
   });
 }
 
@@ -192,9 +203,23 @@ describe('DB', { concurrency: false }, () => {
       describe('Integration', () => {
         it('should retrieve and parse every persisted lesson status', async () => {
           const progress = lessonProgress();
-          const contentComplete: LessonState = { ...progress, status: 'content-complete', contentCompletedAt: startedAt };
-          const finished: LessonState = { ...progress, status: 'finished', contentCompletedAt: startedAt, completedAt: startedAt };
-          const states = [newLesson('new'), { ...progress, id: 'progress' }, { ...contentComplete, id: 'complete' }, { ...finished, id: 'finished' }];
+          const contentComplete: LessonState = {
+            ...progress,
+            status: 'content-complete',
+            contentCompletedAt: startedAt,
+          };
+          const finished: LessonState = {
+            ...progress,
+            status: 'finished',
+            contentCompletedAt: startedAt,
+            completedAt: startedAt,
+          };
+          const states = [
+            newLesson('new'),
+            { ...progress, id: 'progress' },
+            { ...contentComplete, id: 'complete' },
+            { ...finished, id: 'finished' },
+          ];
           for (const state of states) {
             await addStored('lessonStates', state);
             assert.deepEqual(await getLessonState(state.id), state);
@@ -220,10 +245,7 @@ describe('DB', { concurrency: false }, () => {
           await saveLessonState(newLesson('one', 'lesson-a'));
           await saveLessonState(newLesson('two', 'lesson-a'));
           await saveLessonState(newLesson('three', 'lesson-b'));
-          assert.deepEqual(
-            (await listLessonStates('lesson-a')).map(state => state.id).sort(),
-            ['one', 'two'],
-          );
+          assert.deepEqual((await listLessonStates('lesson-a')).map(state => state.id).sort(), ['one', 'two']);
         });
 
         it('should return an empty array when the index has no matches', async () => {
@@ -278,7 +300,9 @@ describe('DB', { concurrency: false }, () => {
               const transaction = db.transaction('lessonStates', 'readwrite');
               const store = transaction.objectStore('lessonStates');
               const first = store.add(newLesson('rollback'));
-              first.addEventListener('success', () => { firstRequestSucceeded = true; });
+              first.addEventListener('success', () => {
+                firstRequestSucceeded = true;
+              });
               store.add(newLesson('rollback'));
               transaction.oncomplete = () => reject(new Error('A duplicate-key transaction unexpectedly committed'));
               transaction.onabort = () => resolve();
@@ -317,21 +341,35 @@ describe('DB', { concurrency: false }, () => {
 
         it('should return undefined without invoking the callback for missing state', async () => {
           let invoked = false;
-          assert.equal(await updateLessonState('missing', state => { invoked = true; return state; }), undefined);
+          assert.equal(
+            await updateLessonState('missing', state => {
+              invoked = true;
+              return state;
+            }),
+            undefined,
+          );
           assert.equal(invoked, false);
         });
 
         it('should abort and preserve the original record when the update throws', async () => {
           const initial = lessonProgress();
           await saveLessonState(initial);
-          await assert.rejects(updateLessonState(initial.id, () => { throw new Error('change failed'); }), /change failed/);
+          await assert.rejects(
+            updateLessonState(initial.id, () => {
+              throw new Error('change failed');
+            }),
+            /change failed/,
+          );
           assert.deepEqual(await readStored('lessonStates', initial.id), initial);
         });
 
         it('should reject changed IDs and roll back', async () => {
           const initial = lessonProgress();
           await saveLessonState(initial);
-          await assert.rejects(updateLessonState(initial.id, current => ({ ...current, id: 'wrong-id' })), /cannot change its ID/);
+          await assert.rejects(
+            updateLessonState(initial.id, current => ({ ...current, id: 'wrong-id' })),
+            /cannot change its ID/,
+          );
           assert.deepEqual(await readStored('lessonStates', initial.id), initial);
           assert.equal(await readStored('lessonStates', 'wrong-id'), undefined);
         });
@@ -339,9 +377,7 @@ describe('DB', { concurrency: false }, () => {
         it('should reject invalid updated content and preserve the stored version', async () => {
           const initial = lessonProgress();
           await saveLessonState(initial);
-          await assert.rejects(updateLessonState(initial.id, current => (
-            { ...current, lessonId: '' }
-          )));
+          await assert.rejects(updateLessonState(initial.id, current => ({ ...current, lessonId: '' })));
           assert.deepEqual(await getLessonState(initial.id), initial);
         });
       });
@@ -379,10 +415,7 @@ describe('DB', { concurrency: false }, () => {
           await addStored('quizStates', newQuiz('first'));
           await addStored('quizStates', newQuiz('second'));
           await assert.rejects(addStored('quizStates', newQuiz('first')));
-          assert.deepEqual(
-            (await listQuizStates('quiz-a')).map(state => state.id).sort(),
-            ['first', 'second'],
-          );
+          assert.deepEqual((await listQuizStates('quiz-a')).map(state => state.id).sort(), ['first', 'second']);
         });
       });
     });
@@ -408,7 +441,12 @@ describe('DB', { concurrency: false }, () => {
       describe('Integration', () => {
         it('should deserialize new, in-progress, and finished quiz runs', async () => {
           const progress = quizProgress();
-          const finished: QuizState = { ...progress, status: 'finished', completedAt: startedAt, result: { status: 'graded', success: true, value: 100 } };
+          const finished: QuizState = {
+            ...progress,
+            status: 'finished',
+            completedAt: startedAt,
+            result: { status: 'graded', success: true, value: 100 },
+          };
           const states = [newQuiz('new'), { ...progress, id: 'progress' }, { ...finished, id: 'finished' }];
           for (const state of states) {
             await addStored('quizStates', state);
@@ -421,7 +459,10 @@ describe('DB', { concurrency: false }, () => {
         });
 
         it('should reject malformed stored answers without changing them', async () => {
-          const invalid = { ...quizProgress(), answers: { broken: { status: 'submitted', answer: { type: 'unknown', value: 0 } } } };
+          const invalid = {
+            ...quizProgress(),
+            answers: { broken: { status: 'submitted', answer: { type: 'unknown', value: 0 } } },
+          };
           await addStored('quizStates', invalid);
           await assert.rejects(getQuizState(invalid.id));
           assert.deepEqual(await readStored('quizStates', invalid.id), invalid);
@@ -479,7 +520,13 @@ describe('DB', { concurrency: false }, () => {
 
         it('should reject invalid earned weights before transaction persistence', async () => {
           const invalid = quizProgress({
-            answers: { q: { status: 'submitted', answer: { type: 'answer-with-text', value: 'x' }, result: { status: 'correct', earnedWeight: -1 } } },
+            answers: {
+              q: {
+                status: 'submitted',
+                answer: { type: 'answer-with-text', value: 'x' },
+                result: { status: 'correct', earnedWeight: -1 },
+              },
+            },
           });
           await assert.rejects(saveQuizState(invalid));
           assert.equal(await readStored('quizStates', invalid.id), undefined);
@@ -515,21 +562,35 @@ describe('DB', { concurrency: false }, () => {
 
         it('should return undefined and skip the callback for a missing quiz run', async () => {
           let invoked = false;
-          assert.equal(await updateQuizState('missing', current => { invoked = true; return current; }), undefined);
+          assert.equal(
+            await updateQuizState('missing', current => {
+              invoked = true;
+              return current;
+            }),
+            undefined,
+          );
           assert.equal(invoked, false);
         });
 
         it('should roll back a thrown updater and preserve the original answers', async () => {
           const initial = quizProgress();
           await saveQuizState(initial);
-          await assert.rejects(updateQuizState(initial.id, () => { throw new Error('rollback quiz'); }), /rollback quiz/);
+          await assert.rejects(
+            updateQuizState(initial.id, () => {
+              throw new Error('rollback quiz');
+            }),
+            /rollback quiz/,
+          );
           assert.deepEqual(await getQuizState(initial.id), initial);
         });
 
         it('should reject ID changes and avoid creating the new key', async () => {
           const initial = quizProgress();
           await saveQuizState(initial);
-          await assert.rejects(updateQuizState(initial.id, current => ({ ...current, id: 'other' })), /cannot change its ID/);
+          await assert.rejects(
+            updateQuizState(initial.id, current => ({ ...current, id: 'other' })),
+            /cannot change its ID/,
+          );
           assert.deepEqual(await readStored('quizStates', initial.id), initial);
           assert.equal(await readStored('quizStates', 'other'), undefined);
         });
@@ -537,9 +598,7 @@ describe('DB', { concurrency: false }, () => {
         it('should reject invalid updated answers and retain the committed record', async () => {
           const initial = quizProgress();
           await saveQuizState(initial);
-          await assert.rejects(updateQuizState(initial.id, current => (
-            { ...current, quizId: '' }
-          )));
+          await assert.rejects(updateQuizState(initial.id, current => ({ ...current, quizId: '' })));
           assert.deepEqual(await readStored('quizStates', initial.id), initial);
         });
       });
@@ -577,9 +636,17 @@ describe('DB', { concurrency: false }, () => {
         });
 
         it('should reject completion of an already finished quiz and preserve its result', async () => {
-          const initial: QuizState = { ...quizProgress(), status: 'finished', completedAt: startedAt, result: { status: 'ungraded' } };
+          const initial: QuizState = {
+            ...quizProgress(),
+            status: 'finished',
+            completedAt: startedAt,
+            result: { status: 'ungraded' },
+          };
           await saveQuizState(initial);
-          await assert.rejects(completeQuiz(initial.id, { status: 'graded', success: true, value: 50 }), /Only an in-progress/);
+          await assert.rejects(
+            completeQuiz(initial.id, { status: 'graded', success: true, value: 50 }),
+            /Only an in-progress/,
+          );
           assert.deepEqual(await readStored('quizStates', initial.id), initial);
         });
 

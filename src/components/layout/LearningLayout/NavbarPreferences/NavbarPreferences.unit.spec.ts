@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('@/i18n/LocaleProvider/LocaleProvider', () => ({ useLocale: vi.fn() }));
-vi.mock('@mui/material/styles', async (importOriginal) => ({
+vi.mock('@mui/material/styles', async importOriginal => ({
   ...(await importOriginal<typeof import('@mui/material/styles')>()),
   useColorScheme: vi.fn(),
 }));

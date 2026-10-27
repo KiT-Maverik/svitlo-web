@@ -4,27 +4,39 @@ import type { Quiz_Config, TextResource_Config } from '@types';
 import { buildQuiz } from './buildQuiz.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
-  id, blockType: 'text', allLocales: false,
+  id,
+  blockType: 'text',
+  allLocales: false,
   value: { en: english, uk: ukrainian },
 });
 
 const question = (id: string, number: number): Quiz_Config['questionBank'][number] => ({
-  id, type: 'answer-with-number', restrictions: [],
+  id,
+  type: 'answer-with-number',
+  restrictions: [],
   content: [text('prompt-' + id, 'Question', 'Запитання')],
   correctAnswer: [42],
   placeholder: text('placeholder-' + id, 'Type', 'Введіть'),
-  number, weight: number + 1,
+  number,
+  weight: number + 1,
 });
 
 const quiz = (): Quiz_Config => ({
-  id: 'quiz', lessonId: 'lesson', sectionId: 'section', feedbackMode: 'immediate',
+  id: 'quiz',
+  lessonId: 'lesson',
+  sectionId: 'section',
+  feedbackMode: 'immediate',
   name: text('quiz-name', 'Quiz', 'Тест'),
   grading: { mode: 'percentage', successThreshold: 70 },
   maxDuration: 120,
   interaction: {
-    retries: -1, showErrors: true, showCorrectAnswers: true,
-    allowExplanations: true, allowDeferring: false,
-    allowQuestionNavigation: true, skippable: false,
+    retries: -1,
+    showErrors: true,
+    showCorrectAnswers: true,
+    allowExplanations: true,
+    allowDeferring: false,
+    allowQuestionNavigation: true,
+    skippable: false,
   },
   questionBank: [question('one', 1), question('two', 2)],
   results: { visibility: 'after-review', showScore: true },
@@ -41,7 +53,10 @@ describe('Utils', () => {
           assert.equal(result.id, config.id);
           assert.equal(result.sectionId, config.sectionId);
           assert.deepEqual(result.name, {
-            id: 'quiz-name', blockType: 'text', locale: 'uk-UA', value: 'Тест',
+            id: 'quiz-name',
+            blockType: 'text',
+            locale: 'uk-UA',
+            value: 'Тест',
           });
           assert.equal(result.feedbackMode, config.feedbackMode);
           assert.deepEqual(result.grading, config.grading);
@@ -52,24 +67,33 @@ describe('Utils', () => {
 
         it('should localize all questions and retain their number and weight', () => {
           const result = buildQuiz(quiz(), 'uk-UA');
-          assert.deepEqual(result.questionBank.map(({ id, number, weight }) => ({
-            id, number, weight,
-          })), [
-            { id: 'one', number: 1, weight: 2 },
-            { id: 'two', number: 2, weight: 3 },
-          ]);
-          assert.deepEqual(result.questionBank.map(item => item.content[0]), [
-            { id: 'prompt-one', blockType: 'text', locale: 'uk-UA', value: 'Запитання' },
-            { id: 'prompt-two', blockType: 'text', locale: 'uk-UA', value: 'Запитання' },
-          ]);
+          assert.deepEqual(
+            result.questionBank.map(({ id, number, weight }) => ({
+              id,
+              number,
+              weight,
+            })),
+            [
+              { id: 'one', number: 1, weight: 2 },
+              { id: 'two', number: 2, weight: 3 },
+            ],
+          );
+          assert.deepEqual(
+            result.questionBank.map(item => item.content[0]),
+            [
+              { id: 'prompt-one', blockType: 'text', locale: 'uk-UA', value: 'Запитання' },
+              { id: 'prompt-two', blockType: 'text', locale: 'uk-UA', value: 'Запитання' },
+            ],
+          );
         });
 
         it('should preserve the configured question bank order', () => {
           const config = quiz();
           config.questionBank = [question('last', 9), question('first', 1)];
-          assert.deepEqual(buildQuiz(config, 'en-US').questionBank.map(item => item.id), [
-            'last', 'first',
-          ]);
+          assert.deepEqual(
+            buildQuiz(config, 'en-US').questionBank.map(item => item.id),
+            ['last', 'first'],
+          );
         });
       });
 
@@ -85,11 +109,14 @@ describe('Utils', () => {
             resources: [text('welcome-1', 'First', 'Перший'), text('welcome-2', 'Second', 'Другий')],
           };
           const result = buildQuiz(config, 'uk-UA');
-          assert.deepEqual(result.screen.welcome?.resources.map(item => item.id), [
-            'welcome-1', 'welcome-2',
-          ]);
-          assert.deepEqual(result.screen.welcome?.resources.map(item =>
-            item.blockType === 'text' ? item.value : ''), ['Перший', 'Другий']);
+          assert.deepEqual(
+            result.screen.welcome?.resources.map(item => item.id),
+            ['welcome-1', 'welcome-2'],
+          );
+          assert.deepEqual(
+            result.screen.welcome?.resources.map(item => (item.blockType === 'text' ? item.value : '')),
+            ['Перший', 'Другий'],
+          );
         });
 
         it('should retain custom ending content and its visibility flag', () => {

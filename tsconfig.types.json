@@ -1,11 +1,5 @@
 {
   "extends": "./tsconfig.json",
-  "include": [
-    "src/**/*.typecheck.ts",
-    "src/**/*.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    ".test-build"
-  ]
+  "include": ["src/**/*.typecheck.ts", "src/**/*.d.ts"],
+  "exclude": ["node_modules", ".test-build"]
 }

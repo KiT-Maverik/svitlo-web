@@ -6,7 +6,19 @@ import { LightPropagationSimulation } from './LightPropagationSimulation/LightPr
 import { Checkpoint } from './Checkpoint/Checkpoint';
 
 export const theory_SceneResources_Data = {
-  lightRayDiagram: { id: theory_SceneResources_Ids.lightRayDiagram, blockType: 'scene', component: createElement(LightRayDiagram) },
-  lightPropagationSimulation: { id: theory_SceneResources_Ids.lightPropagationSimulation, blockType: 'scene', component: createElement(LightPropagationSimulation) },
-  theoryCheckpoint: { id: theory_SceneResources_Ids.theoryCheckpoint, blockType: 'scene', component: createElement(Checkpoint) },
+  lightRayDiagram: {
+    id: theory_SceneResources_Ids.lightRayDiagram,
+    blockType: 'scene',
+    component: createElement(LightRayDiagram),
+  },
+  lightPropagationSimulation: {
+    id: theory_SceneResources_Ids.lightPropagationSimulation,
+    blockType: 'scene',
+    component: createElement(LightPropagationSimulation),
+  },
+  theoryCheckpoint: {
+    id: theory_SceneResources_Ids.theoryCheckpoint,
+    blockType: 'scene',
+    component: createElement(Checkpoint),
+  },
 } satisfies Record<'lightRayDiagram' | 'lightPropagationSimulation' | 'theoryCheckpoint', SceneResource_Config>;

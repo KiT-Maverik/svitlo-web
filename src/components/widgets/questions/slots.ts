@@ -41,4 +41,6 @@ export interface QuestionAttemptOptions<K extends QuestionType> extends AttemptO
   slots?: QuestionSlots<K>;
   slotProps?: QuestionSlotProps<K>;
 }
-export type QuestionAttemptProps<K extends QuestionType> = { question: QuestionOf<K> } & QuestionAttemptOptions<NoInfer<K>>;
+export type QuestionAttemptProps<K extends QuestionType> = { question: QuestionOf<K> } & QuestionAttemptOptions<
+  NoInfer<K>
+>;

@@ -11,15 +11,39 @@ const groups = {
   multiply: 24,
   divide: 24,
 } as const;
-const locales = ["en","zh","hi","es","ar","fr","bn","pt","ur","id","de","ja","ko","tr","vi","ta","te","mr","ms","he","pl","uk"] as const;
+const locales = [
+  'en',
+  'zh',
+  'hi',
+  'es',
+  'ar',
+  'fr',
+  'bn',
+  'pt',
+  'ur',
+  'id',
+  'de',
+  'ja',
+  'ko',
+  'tr',
+  'vi',
+  'ta',
+  'te',
+  'mr',
+  'ms',
+  'he',
+  'pl',
+  'uk',
+] as const;
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
 function read(...parts: string[]): string {
   return readFileSync(join(root, ...parts), 'utf8');
 }
 function ids(content: string): Map<string, string> {
-  return new Map([...content.matchAll(/^  (\w+): '([0-9a-f-]{36})',/gm)]
-    .map((match): [string, string] => [match[1], match[2]]));
+  return new Map(
+    [...content.matchAll(/^  (\w+): '([0-9a-f-]{36})',/gm)].map((match): [string, string] => [match[1], match[2]]),
+  );
 }
 
 describe('Arithmetic taxonomy completeness', () => {
@@ -50,9 +74,13 @@ describe('Arithmetic taxonomy completeness', () => {
         const data = read(group, 'skills', key + '.data.ts');
         assert.ok(data.includes('id: ' + group + '_Skills_Ids.' + key + ','));
         assert.ok(data.includes('export const ' + key + '_Skill_Data = buildSkillConfig('));
-        assert.ok(exports.includes("export { " + key + "_Skill_Data } from './" + key + ".data';"));
+        assert.ok(exports.includes('export { ' + key + "_Skill_Data } from './" + key + ".data';"));
         const localizations = [...data.matchAll(/^    ([a-z]{2}): (.+),$/gm)];
-        assert.deepEqual(localizations.map(m => m[1]), [...locales], group + '/' + key);
+        assert.deepEqual(
+          localizations.map(m => m[1]),
+          [...locales],
+          group + '/' + key,
+        );
         const names = localizations.map(m => JSON.parse(m[2]) as string);
         assert.ok(names.every(n => n.trim().length > 0 && !n.includes('undefined')));
       }

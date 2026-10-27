@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
-test.beforeEach(async ({ page }) => { await page.goto('/questions/api'); });
+test.beforeEach(async ({ page }) => {
+  await page.goto('/questions/api');
+});
 test('manual blocks incomplete input and emits answer only after grading', async ({ page }) => {
   const q = page.getByRole('region', { name: /Ручна перевірка:/ });
   const events = page.getByRole('status', { name: 'Події контролера' });
@@ -36,7 +38,8 @@ test('custom root/question/answers/actions slots share state and cannot bypass l
   const input = q.getByRole('textbox', { name: 'Власне числове поле' });
   const state = q.getByRole('status', { name: 'Стан спроби' });
   await expect(state).toContainText('hasInteracted=false; isModified=false');
-  await input.fill('4'); await input.fill('');
+  await input.fill('4');
+  await input.fill('');
   await expect(state).toContainText('hasInteracted=true; isModified=false');
   await input.fill('42');
   await q.getByRole('button', { name: 'Власна перевірка', exact: true }).click();

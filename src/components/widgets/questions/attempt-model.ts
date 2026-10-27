@@ -9,9 +9,15 @@ export interface AttemptState<K extends QuestionType> {
   hasChecked: boolean;
   attemptNumber: number;
 }
-export interface AttemptEvent<K extends QuestionType> extends AttemptState<K> { question: QuestionOf<K> }
-export interface CheckEvent<K extends QuestionType> extends AttemptEvent<K> { result: CheckResult }
-export interface AnswerEvent<K extends QuestionType> extends AttemptEvent<K> { result: AnswerResult }
+export interface AttemptEvent<K extends QuestionType> extends AttemptState<K> {
+  question: QuestionOf<K>;
+}
+export interface CheckEvent<K extends QuestionType> extends AttemptEvent<K> {
+  result: CheckResult;
+}
+export interface AnswerEvent<K extends QuestionType> extends AttemptEvent<K> {
+  result: AnswerResult;
+}
 export interface AttemptOptions<K extends QuestionType> {
   initialAnswer?: AnswerMap[K];
   initialResult?: CheckResult | null;

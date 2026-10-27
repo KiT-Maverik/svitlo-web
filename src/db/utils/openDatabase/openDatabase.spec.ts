@@ -7,7 +7,7 @@ import { openDatabase } from './openDatabase.utils';
 describe('DB', () => {
   describe('Utils', () => {
     describe('openDatabase', () => {
-      it('should reject when IndexedDB is not available', async (t) => {
+      it('should reject when IndexedDB is not available', async t => {
         const previous = Object.getOwnPropertyDescriptor(globalThis, 'indexedDB');
         Reflect.deleteProperty(globalThis, 'indexedDB');
         t.after(() => {
@@ -18,7 +18,7 @@ describe('DB', () => {
         await assert.rejects(openDatabase(), /IndexedDB is unavailable/);
       });
 
-      it('should open the configured database version and resolve its connection on success', async (t) => {
+      it('should open the configured database version and resolve its connection on success', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const result = openDatabase();
@@ -30,7 +30,7 @@ describe('DB', () => {
         assert.equal(fixture.closeCount, 0);
       });
 
-      it('should create both keyed stores and their indexes during a fresh database upgrade', async (t) => {
+      it('should create both keyed stores and their indexes during a fresh database upgrade', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const result = openDatabase();
@@ -48,21 +48,19 @@ describe('DB', () => {
         await result;
       });
 
-      it('should only create missing stores when upgrading an existing database', async (t) => {
+      it('should only create missing stores when upgrading an existing database', async t => {
         const fixture = installIndexedDbFixture(['lessonStates']);
         t.after(fixture.restore);
         const result = openDatabase();
 
         fixture.upgrade();
         assert.deepEqual(fixture.createdStores, [{ name: 'quizStates', keyPath: 'id' }]);
-        assert.deepEqual(fixture.createdIndexes, [
-          { store: 'quizStates', name: 'quizId', keyPath: 'quizId' },
-        ]);
+        assert.deepEqual(fixture.createdIndexes, [{ store: 'quizStates', name: 'quizId', keyPath: 'quizId' }]);
         fixture.succeedOpen();
         await result;
       });
 
-      it('should preserve existing stores when no schema changes are needed', async (t) => {
+      it('should preserve existing stores when no schema changes are needed', async t => {
         const fixture = installIndexedDbFixture(['lessonStates', 'quizStates']);
         t.after(fixture.restore);
         const result = openDatabase();
@@ -74,7 +72,7 @@ describe('DB', () => {
         await result;
       });
 
-      it('should propagate the original error when opening fails', async (t) => {
+      it('should propagate the original error when opening fails', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const failure = new DOMException('Opening blocked', 'UnknownError');
@@ -84,7 +82,7 @@ describe('DB', () => {
         await assert.rejects(result, (error: unknown) => error === failure);
       });
 
-      it('should close the connection when the database version changes', async (t) => {
+      it('should close the connection when the database version changes', async t => {
         const fixture = installIndexedDbFixture();
         t.after(fixture.restore);
         const result = openDatabase();

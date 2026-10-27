@@ -7,9 +7,12 @@ type Props = ComponentProps<typeof LocaleProvider>;
 
 function LocaleHarness() {
   const { locale, setLocale } = useLocale();
-  return createElement('div', {},
+  return createElement(
+    'div',
+    {},
     createElement('output', { 'aria-label': 'Current locale' }, locale),
-    createElement('button', { type: 'button', onClick: () => setLocale('en-US') }, 'Change locale'));
+    createElement('button', { type: 'button', onClick: () => setLocale('en-US') }, 'Change locale'),
+  );
 }
 
 export const LocaleProvider_fx = {

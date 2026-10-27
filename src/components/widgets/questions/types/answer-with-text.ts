@@ -1,5 +1,6 @@
 import type { BaseQuestion, TextNormalization } from './base';
 export interface AnswerWithTextQuestion extends BaseQuestion {
   type: 'short-text';
-  acceptedAnswers: string[]; normalization: TextNormalization;
+  acceptedAnswers: string[];
+  normalization: TextNormalization;
 }

@@ -26,7 +26,11 @@ describe('Static SVG flags', () => {
     expect(content).not.toMatch(/\b(?:xlink:)?href\s*=\s*["'](?!#)/i);
     expect(content).not.toMatch(/(?:javascript:|data:|url\(\s*["']?https?:)/i);
 
-    const viewBox = content.match(/\bviewBox="([^"]+)"/i)?.[1]?.trim().split(/[\s,]+/).map(Number);
+    const viewBox = content
+      .match(/\bviewBox="([^"]+)"/i)?.[1]
+      ?.trim()
+      .split(/[\s,]+/)
+      .map(Number);
     expect(viewBox).toBeDefined();
     expect(viewBox).toHaveLength(4);
     if (viewBox) {
@@ -59,7 +63,11 @@ describe('Static SVG flags', () => {
     ['br', 10 / 7],
   ] as const)('%s preserves its native proportions', (code, expected) => {
     const svg = readFileSync(join(directory, `${code}.svg`), 'utf8');
-    const viewBox = svg.match(/\bviewBox="([^"]+)"/i)?.[1]?.trim().split(/[\s,]+/).map(Number);
+    const viewBox = svg
+      .match(/\bviewBox="([^"]+)"/i)?.[1]
+      ?.trim()
+      .split(/[\s,]+/)
+      .map(Number);
     expect(viewBox).toBeDefined();
     expect(viewBox![2] / viewBox![3]).toBeCloseTo(expected, 4);
   });

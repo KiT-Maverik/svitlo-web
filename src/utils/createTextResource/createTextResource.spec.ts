@@ -13,17 +13,29 @@ describe('Utils', () => {
     describe('Metadata', () => {
       it('should create a text configuration that declares all locales by default', () => {
         assert.deepEqual(createTextResource('title', values), {
-          id: 'title', blockType: 'text', allLocales: true, value: values,
+          id: 'title',
+          blockType: 'text',
+          allLocales: true,
+          value: values,
         });
       });
 
       it('should create a configuration for explicitly selected locales', () => {
-        assert.deepEqual(createTextResource('title', { uk: 'Світло' }, {
-          locales: { only: ['uk'] },
-        }), {
-          id: 'title', blockType: 'text', allLocales: false,
-          value: { uk: 'Світло' },
-        });
+        assert.deepEqual(
+          createTextResource(
+            'title',
+            { uk: 'Світло' },
+            {
+              locales: { only: ['uk'] },
+            },
+          ),
+          {
+            id: 'title',
+            blockType: 'text',
+            allLocales: false,
+            value: { uk: 'Світло' },
+          },
+        );
       });
 
       it('should support inclusion-based locale selection', () => {
@@ -36,8 +48,10 @@ describe('Utils', () => {
 
       it('should support exclusion-based locale selection', () => {
         const withoutEnglish = Object.fromEntries(
-          DEFAULT_SUPPORTED_LANGUAGES.filter(({ language }) => language !== 'en')
-            .map(({ language }) => [language, language]),
+          DEFAULT_SUPPORTED_LANGUAGES.filter(({ language }) => language !== 'en').map(({ language }) => [
+            language,
+            language,
+          ]),
         ) as Record<Exclude<keyof TextResource_AllLanguages_Config, 'en'>, string>;
         const result = createTextResource('title', withoutEnglish, {
           locales: { exclude: ['en'] },
@@ -47,9 +61,13 @@ describe('Utils', () => {
       });
 
       it('should retain an empty identifier and empty selected translation as supplied', () => {
-        const result = createTextResource('', { uk: '' }, {
-          locales: { only: ['uk'] },
-        });
+        const result = createTextResource(
+          '',
+          { uk: '' },
+          {
+            locales: { only: ['uk'] },
+          },
+        );
         assert.deepEqual(result, { id: '', blockType: 'text', allLocales: false, value: { uk: '' } });
       });
     });

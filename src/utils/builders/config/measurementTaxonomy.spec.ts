@@ -10,8 +10,18 @@ const inventory = readFileSync(join(process.cwd(), 'math', 'skills-inventory.md'
 const migration = readFileSync(join(root, 'UUID-MIGRATION.md'), 'utf8');
 const locales = DEFAULT_SUPPORTED_LANGUAGES.map(item => item.language);
 const names = {
-  length: ['compareLength', 'nonstandardLength', 'rulerZero', 'measureCentimeters', 'millimeters',
-    'decimeters', 'meters', 'kilometers', 'estimateLength', 'addSubtractLengths'],
+  length: [
+    'compareLength',
+    'nonstandardLength',
+    'rulerZero',
+    'measureCentimeters',
+    'millimeters',
+    'decimeters',
+    'meters',
+    'kilometers',
+    'estimateLength',
+    'addSubtractLengths',
+  ],
   mass: ['centnerKilogram', 'compareMass', 'kilogramGram', 'weighObject'],
   capacity: ['capacityConcept', 'liter', 'milliliter'],
   temperature: ['readTemperature'],
@@ -19,14 +29,32 @@ const names = {
 } as const;
 
 const expectedEditorial = [
-  'compare-length', 'nonstandard-length', 'ruler-zero', 'measure-centimeters',
-  'millimeters', 'decimeters', 'meters', 'kilometers', 'estimate-length', 'add-subtract-lengths',
-  'centner-kilogram', 'compare-mass', 'kilogram-gram', 'weigh-object',
-  'capacity-concept', 'liter', 'milliliter', 'temperature-read',
-  'standard-unit-purpose', 'choose-appropriate-unit', 'word-problems-measures',
+  'compare-length',
+  'nonstandard-length',
+  'ruler-zero',
+  'measure-centimeters',
+  'millimeters',
+  'decimeters',
+  'meters',
+  'kilometers',
+  'estimate-length',
+  'add-subtract-lengths',
+  'centner-kilogram',
+  'compare-mass',
+  'kilogram-gram',
+  'weigh-object',
+  'capacity-concept',
+  'liter',
+  'milliliter',
+  'temperature-read',
+  'standard-unit-purpose',
+  'choose-appropriate-unit',
+  'word-problems-measures',
 ];
 
-function read(path: string): string { return readFileSync(path, 'utf8'); }
+function read(path: string): string {
+  return readFileSync(path, 'utf8');
+}
 
 function getNames(path: string): Record<string, string> {
   const match = read(path).match(/name:\s*(\{[\s\S]*?\})\s*,/);
@@ -46,13 +74,18 @@ function ids(path: string): Record<string, string> {
 describe('Measurement taxonomy', () => {
   it('implements exactly the inventory groups and 21 Skills', () => {
     assert.deepEqual(
-      readdirSync(domain, { withFileTypes: true }).filter(item => item.isDirectory()).map(item => item.name).sort(),
+      readdirSync(domain, { withFileTypes: true })
+        .filter(item => item.isDirectory())
+        .map(item => item.name)
+        .sort(),
       Object.keys(names).sort(),
     );
     for (const [group, skills] of Object.entries(names)) {
       const dir = join(domain, group, 'skills');
       assert.deepEqual(
-        readdirSync(dir).filter(name => name.endsWith('.data.ts') && name !== 'index.data.ts').sort(),
+        readdirSync(dir)
+          .filter(name => name.endsWith('.data.ts') && name !== 'index.data.ts')
+          .sort(),
         skills.map(key => key + '.data.ts').sort(),
       );
       assert.deepEqual(
@@ -74,7 +107,9 @@ describe('Measurement taxonomy', () => {
       assert.match(value, /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
       assert.ok(!seen.has(value), 'Duplicate UUID: ' + value);
       seen.add(value);
-      assert.ok(migration.includes('| ' + kind + ' | ' + quote + editorial + quote + ' | ' + quote + value + quote + ' |'));
+      assert.ok(
+        migration.includes('| ' + kind + ' | ' + quote + editorial + quote + ' | ' + quote + value + quote + ' |'),
+      );
     };
     const domainIds = ids(join(domain, 'measurement.ids.ts'));
     assert.deepEqual(Object.keys(domainIds), ['measurement']);

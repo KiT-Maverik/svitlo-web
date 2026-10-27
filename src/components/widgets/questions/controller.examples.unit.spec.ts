@@ -42,7 +42,11 @@ test('example question types keep incomplete drafts editable and accept complete
   n.check();
   assert.equal(n.getSnapshot().result?.status, 'incorrect');
 
-  const o = createQuestionController(ordering, ordering.items.map(item => item.id), checkers.ordering);
+  const o = createQuestionController(
+    ordering,
+    ordering.items.map(item => item.id),
+    checkers.ordering,
+  );
   o.setAnswer(['rain']);
   assert.equal(o.isReadyToCheck(), false);
 

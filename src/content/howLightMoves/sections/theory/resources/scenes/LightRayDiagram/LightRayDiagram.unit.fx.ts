@@ -10,9 +10,21 @@ import type { Locale } from '@types';
 
 export const LightRayDiagram_fx = {
   render: ({ locale = 'uk-UA' }: { locale?: Locale } = {}) =>
-    render(createElement(SceneLocaleProvider, { locale, scenes: buildLesson(howLightMoves_Lesson_Data, locale, howLightMovesCatalog).sceneLocale ?? {} }, createElement(LightRayDiagram))),
+    render(
+      createElement(
+        SceneLocaleProvider,
+        { locale, scenes: buildLesson(howLightMoves_Lesson_Data, locale, howLightMovesCatalog).sceneLocale ?? {} },
+        createElement(LightRayDiagram),
+      ),
+    ),
   selectors: {
     illustration: (locale: Locale = 'uk-UA', scope?: HTMLElement) =>
-      (scope ? within(scope) : screen).getByRole('img', { name: (buildLesson(howLightMoves_Lesson_Data, locale, howLightMovesCatalog).sceneLocale as { ray: LightRayDiagram_Locale }).ray.scene.title }),
+      (scope ? within(scope) : screen).getByRole('img', {
+        name: (
+          buildLesson(howLightMoves_Lesson_Data, locale, howLightMovesCatalog).sceneLocale as {
+            ray: LightRayDiagram_Locale;
+          }
+        ).ray.scene.title,
+      }),
   },
 } as const;

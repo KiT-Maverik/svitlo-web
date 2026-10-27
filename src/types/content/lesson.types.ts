@@ -31,7 +31,7 @@ export interface LessonContentCatalog {
 }
 
 export interface Lesson_Config {
-  id: string,
+  id: string;
   slug: string;
   requireQuiz: boolean;
   sections: {
@@ -77,7 +77,15 @@ interface LessonState_Progress extends LessonState_Base {
 }
 
 export type LessonState =
-  | (LessonState_Base & { status: 'new'; startedAt?: never; sectionCompletion?: never; skippedSectionIds?: never; quizStateIds?: never; contentCompletedAt?: never; completedAt?: never })
+  | (LessonState_Base & {
+      status: 'new';
+      startedAt?: never;
+      sectionCompletion?: never;
+      skippedSectionIds?: never;
+      quizStateIds?: never;
+      contentCompletedAt?: never;
+      completedAt?: never;
+    })
   | (LessonState_Progress & { status: 'in-progress'; contentCompletedAt?: never; completedAt?: never })
   /** Lesson content is complete; any required quiz may still be unfinished. */
   | (LessonState_Progress & { status: 'content-complete'; contentCompletedAt: string; completedAt?: never })

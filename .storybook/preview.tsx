@@ -4,7 +4,14 @@ import Box from '@mui/material/Box';
 
 const preview: Preview = {
   decorators: [
-    (Story) => <><CssBaseline /><Box sx={{ minHeight: '100vh', p: { xs: 2, sm: 4 }, bgcolor: 'background.default' }}><Story /></Box></>,
+    Story => (
+      <>
+        <CssBaseline />
+        <Box sx={{ minHeight: '100vh', p: { xs: 2, sm: 4 }, bgcolor: 'background.default' }}>
+          <Story />
+        </Box>
+      </>
+    ),
   ],
   parameters: {
     controls: { expanded: true },

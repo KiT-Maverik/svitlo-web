@@ -1,12 +1,15 @@
 import { test, expect, type Locator } from '@playwright/test';
 
-test.beforeEach(async ({ page }) => { await page.goto('/questions'); });
+test.beforeEach(async ({ page }) => {
+  await page.goto('/questions');
+});
 test('single choice keyboard cycle locks, retries clear, reset clears; examples are independent', async ({ page }) => {
   const section = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
   await expect(page.getByRole('region')).toHaveCount(9);
   await expect(section.getByText('Пояснення:', { exact: false })).toHaveCount(0);
   const earth = section.getByRole('button', { name: 'Земля', exact: true });
-  await earth.focus(); await page.keyboard.press('Space');
+  await earth.focus();
+  await page.keyboard.press('Space');
   await expect(earth).toHaveAttribute('aria-pressed', 'true');
   await page.keyboard.press('Space');
   await expect(earth).toHaveAttribute('aria-pressed', 'false');
@@ -14,7 +17,8 @@ test('single choice keyboard cycle locks, retries clear, reset clears; examples 
   await expect(section.getByRole('button', { name: 'Меркурій', exact: true })).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(section.getByRole('button', { name: 'Меркурій' })).toHaveAttribute('aria-pressed', 'true');
-  await section.getByRole('button', { name: 'Перевірити', exact: true }).focus(); await page.keyboard.press('Enter');
+  await section.getByRole('button', { name: 'Перевірити', exact: true }).focus();
+  await page.keyboard.press('Enter');
   await expect(section.getByRole('status')).toBeEmpty();
   await expect(earth).toBeDisabled();
   await section.getByRole('button', { name: 'Спробувати ще раз' }).click();
@@ -29,13 +33,17 @@ test('multiple, matching, short text and numeric validate through shared control
   await multi.getByRole('button', { name: '2', exact: true }).click();
   await multi.getByRole('button', { name: '2', exact: true }).click();
   await expect(multi.getByRole('button', { name: '2', exact: true })).toHaveAttribute('aria-pressed', 'false');
-  for (const name of ['2', '5']) { await multi.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Space'); }
+  for (const name of ['2', '5']) {
+    await multi.getByRole('button', { name, exact: true }).focus();
+    await page.keyboard.press('Space');
+  }
   await multi.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(multi.getByRole('status')).toBeEmpty();
   const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
   await expect(match.getByRole('button', { name: 'Перевірити', exact: true })).toBeDisabled();
   for (const name of ['Україна', 'Київ', 'Франція', 'Париж']) {
-    await match.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
+    await match.getByRole('button', { name, exact: true }).focus();
+    await page.keyboard.press('Enter');
   }
   await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(match.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
@@ -71,11 +79,14 @@ test('ordering and block builder work using keyboard with duplicate labels and s
   await expect(order.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   const blocks = page.getByRole('region', { name: /Складіть рівність для/ });
   for (const name of ['Додати: 1 (1)', 'Додати: + (2)', 'Додати: 1 (3)', 'Додати: = (4)', 'Додати: 2 (5)']) {
-    await blocks.getByRole('button', { name, exact: true }).focus(); await page.keyboard.press('Enter');
+    await blocks.getByRole('button', { name, exact: true }).focus();
+    await page.keyboard.press('Enter');
   }
   await expect(blocks.getByRole('button', { name: 'Додати: 3 (6)', exact: true })).toBeVisible();
-  await blocks.getByRole('button', { name: 'Повернути: 2 (5)', exact: true }).focus(); await page.keyboard.press('Enter');
-  await blocks.getByRole('button', { name: 'Додати: 2 (5)', exact: true }).focus(); await page.keyboard.press('Enter');
+  await blocks.getByRole('button', { name: 'Повернути: 2 (5)', exact: true }).focus();
+  await page.keyboard.press('Enter');
+  await blocks.getByRole('button', { name: 'Додати: 2 (5)', exact: true }).focus();
+  await page.keyboard.press('Enter');
   await blocks.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(blocks.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await blocks.getByRole('button', { name: 'Спробувати ще раз' }).click();
@@ -84,13 +95,17 @@ test('ordering and block builder work using keyboard with duplicate labels and s
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 });
 
-test('answer surfaces share the widest width, center the column, and show selected hover affordance', async ({ page }, testInfo) => {
+test('answer surfaces share the widest width, center the column, and show selected hover affordance', async ({
+  page,
+}, testInfo) => {
   const section = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
   const options = section.locator('button[aria-pressed="false"]');
-  const bounds = await options.evaluateAll(nodes => nodes.map(node => {
-    const rect = node.getBoundingClientRect();
-    return { x: rect.x, width: rect.width, align: getComputedStyle(node).textAlign };
-  }));
+  const bounds = await options.evaluateAll(nodes =>
+    nodes.map(node => {
+      const rect = node.getBoundingClientRect();
+      return { x: rect.x, width: rect.width, align: getComputedStyle(node).textAlign };
+    }),
+  );
   expect(bounds).toHaveLength(3);
   for (const bound of bounds) {
     expect(Math.abs(bound.width - bounds[0].width)).toBeLessThan(1);
@@ -115,14 +130,18 @@ test('answer surfaces share the widest width, center the column, and show select
   await page.screenshot({ path: testInfo.outputPath('centered-questions.png'), fullPage: true });
 });
 
-test('ordering can be dragged by mouse or touch, cancelled with Escape, and locks after checking', async ({ page }, testInfo) => {
+test('ordering can be dragged by mouse or touch, cancelled with Escape, and locks after checking', async ({
+  page,
+}, testInfo) => {
   const order = page.getByRole('region', { name: /Упорядкуйте етапи/ });
   await order.scrollIntoViewIfNeeded();
   const rain = order.getByRole('button', { name: 'Опади (1)', exact: true });
   const cloud = order.getByRole('button', { name: 'Конденсація (3)', exact: true });
-  const from = await rain.boundingBox(); const to = await cloud.boundingBox();
+  const from = await rain.boundingBox();
+  const to = await cloud.boundingBox();
   if (!from || !to) throw new Error('Missing draggable bounds');
-  const x = from.x + from.width / 2, y = from.y + from.height / 2;
+  const x = from.x + from.width / 2,
+    y = from.y + from.height / 2;
   const endY = to.y + to.height / 2;
   if (testInfo.project.name === 'mobile') {
     const session = await page.context().newCDPSession(page);
@@ -130,18 +149,25 @@ test('ordering can be dragged by mouse or touch, cancelled with Escape, and lock
     // The touch sensor intentionally requires a hold to preserve page scrolling.
     await page.waitForTimeout(250);
     for (let step = 1; step <= 10; step++) {
-      await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: y + (endY - y) * step / 10 }] });
+      await session.send('Input.dispatchTouchEvent', {
+        type: 'touchMove',
+        touchPoints: [{ x, y: y + ((endY - y) * step) / 10 }],
+      });
     }
     await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     await session.detach();
   } else {
-    await page.mouse.move(x, y); await page.mouse.down();
-    await page.mouse.move(x, endY, { steps: 10 }); await page.mouse.up();
+    await page.mouse.move(x, y);
+    await page.mouse.down();
+    await page.mouse.move(x, endY, { steps: 10 });
+    await page.mouse.up();
   }
   const moved = order.getByRole('button', { name: 'Опади (3)', exact: true });
   await expect(moved).toBeVisible();
-  await moved.focus(); await page.keyboard.press('Space');
-  await page.keyboard.press('ArrowUp'); await page.keyboard.press('Escape');
+  await moved.focus();
+  await page.keyboard.press('Space');
+  await page.keyboard.press('ArrowUp');
+  await page.keyboard.press('Escape');
   await expect(moved).toBeVisible();
   await order.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(order.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
@@ -151,7 +177,9 @@ test('ordering can be dragged by mouse or touch, cancelled with Escape, and lock
   await expect(order.getByRole('button', { name: 'Опади (1)', exact: true })).toBeEnabled();
 });
 
-test('matching previews curves, replaces endpoints and deletes links with keyboard or hover cross', async ({ page }, testInfo) => {
+test('matching previews curves, replaces endpoints and deletes links with keyboard or hover cross', async ({
+  page,
+}, testInfo) => {
   const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
   await match.getByRole('button', { name: 'Україна', exact: true }).click();
   if (testInfo.project.name === 'desktop') {
@@ -183,29 +211,42 @@ test('matching previews curves, replaces endpoints and deletes links with keyboa
     await correct.locator('path[data-connection]').hover();
     await expect(correct.locator('circle')).toBeVisible();
     await correct.locator('circle').click();
-  } else { await correct.focus(); await page.keyboard.press('Space'); }
+  } else {
+    await correct.focus();
+    await page.keyboard.press('Space');
+  }
   await expect(correct).toHaveCount(0);
 });
 
-test('one chip builder supports click, drag, insertion preview, cross-zone moves and sorting', async ({ page }, testInfo) => {
+test('one chip builder supports click, drag, insertion preview, cross-zone moves and sorting', async ({
+  page,
+}, testInfo) => {
   const section = page.getByRole('region', { name: /Складіть рівність для суми/ });
   await section.scrollIntoViewIfNeeded();
   const built = section.getByRole('group', { name: 'Складена відповідь', exact: true });
   const addOne = section.getByRole('button', { name: 'Додати: 1 (1)', exact: true });
   async function drag(source: Locator, target: Locator) {
-    const a = await source.boundingBox(), b = await target.boundingBox();
+    const a = await source.boundingBox(),
+      b = await target.boundingBox();
     if (!a || !b) throw new Error('Missing block drag bounds');
-    const x = a.x + a.width / 2, y = a.y + a.height / 2;
-    const tx = b.x + b.width / 2, ty = b.y + b.height / 2;
+    const x = a.x + a.width / 2,
+      y = a.y + a.height / 2;
+    const tx = b.x + b.width / 2,
+      ty = b.y + b.height / 2;
     if (testInfo.project.name === 'mobile') {
       const session = await page.context().newCDPSession(page);
       await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
       await page.waitForTimeout(250);
-      for (let step = 1; step <= 10; step++) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x + (tx - x) * step / 10, y: y + (ty - y) * step / 10 }] });
+      for (let step = 1; step <= 10; step++)
+        await session.send('Input.dispatchTouchEvent', {
+          type: 'touchMove',
+          touchPoints: [{ x: x + ((tx - x) * step) / 10, y: y + ((ty - y) * step) / 10 }],
+        });
       await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
       await session.detach();
     } else {
-      await page.mouse.move(x, y); await page.mouse.down();
+      await page.mouse.move(x, y);
+      await page.mouse.down();
       await page.mouse.move(tx, ty, { steps: 12 });
       await expect(section.locator('[data-insertion-preview]')).toBeVisible();
       await section.screenshot({ path: testInfo.outputPath('block-insertion.png') });
@@ -214,12 +255,17 @@ test('one chip builder supports click, drag, insertion preview, cross-zone moves
   }
   await drag(addOne, built);
   await expect(section.getByRole('button', { name: 'Повернути: 1 (1)', exact: true })).toBeVisible();
-  for (const name of ['Додати: 1 (3)', 'Додати: + (2)', 'Додати: = (4)', 'Додати: 2 (5)']) await section.getByRole('button', { name, exact: true }).click();
+  for (const name of ['Додати: 1 (3)', 'Додати: + (2)', 'Додати: = (4)', 'Додати: 2 (5)'])
+    await section.getByRole('button', { name, exact: true }).click();
   if (testInfo.project.name === 'desktop') {
-    await drag(section.getByRole('button', { name: 'Повернути: + (2)', exact: true }), section.getByRole('button', { name: 'Повернути: 1 (3)', exact: true }));
+    await drag(
+      section.getByRole('button', { name: 'Повернути: + (2)', exact: true }),
+      section.getByRole('button', { name: 'Повернути: 1 (3)', exact: true }),
+    );
   } else {
     const plus = section.getByRole('button', { name: 'Повернути: + (2)', exact: true });
-    await plus.focus(); await page.keyboard.press('Space');
+    await plus.focus();
+    await page.keyboard.press('Space');
     await expect(plus).toHaveAttribute('aria-pressed', 'true');
     await expect(section.getByRole('status').filter({ hasText: 'Позиція: 3' })).toBeAttached();
     await page.keyboard.press('ArrowLeft');
@@ -236,9 +282,10 @@ test('one chip builder supports click, drag, insertion preview, cross-zone moves
   await expect(built.getByRole('button')).toHaveCount(0);
   await expect(section.getByText('Очистити відповідь', { exact: true })).toHaveCount(0);
   await expect(section.getByRole('button', { name: 'Скинути', exact: true })).toHaveText('');
-  await expect(page.getByRole('region', { name: /Складіть рівність для суми/ }).getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
+  await expect(
+    page.getByRole('region', { name: /Складіть рівність для суми/ }).getByRole('button', { name: /^Додати:/ }),
+  ).toHaveCount(6);
 });
-
 
 test('icon controls keep accessible names and reduced motion disables choice and chip animation', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -246,40 +293,59 @@ test('icon controls keep accessible names and reduced motion disables choice and
   const mercury = choice.getByRole('button', { name: 'Меркурій', exact: true });
   await mercury.click();
   expect(await mercury.evaluate(node => getComputedStyle(node).transitionDuration)).toBe('0s');
-  expect(await mercury.locator('.answer-selected').evaluate(node => getComputedStyle(node).transitionDuration)).toBe('0s');
+  expect(await mercury.locator('.answer-selected').evaluate(node => getComputedStyle(node).transitionDuration)).toBe(
+    '0s',
+  );
   const reset = choice.getByRole('button', { name: 'Скинути', exact: true });
   await expect(reset).toHaveText('');
   expect(await reset.evaluate(node => getComputedStyle(node).borderWidth)).toBe('0px');
-  const resetBounds = await reset.boundingBox(), checkBounds = await choice.getByRole('button', { name: 'Перевірити', exact: true }).boundingBox();
+  const resetBounds = await reset.boundingBox(),
+    checkBounds = await choice.getByRole('button', { name: 'Перевірити', exact: true }).boundingBox();
   expect(resetBounds!.x).toBeLessThan(checkBounds!.x);
   await expect(page.getByRole('region', { name: /Упорядкуйте етапи/ }).locator('ol button svg')).toHaveCount(3);
-  await reset.focus(); await page.keyboard.press('Enter');
+  await reset.focus();
+  await page.keyboard.press('Enter');
   await expect(mercury).toHaveAttribute('aria-pressed', 'false');
   const card = await choice.boundingBox();
   const panel = choice.locator('[data-question-actions]');
-  await expect(panel.locator('[data-action-zone="left"]').getByRole('button', { name: 'Скинути', exact: true })).toBeVisible();
+  await expect(
+    panel.locator('[data-action-zone="left"]').getByRole('button', { name: 'Скинути', exact: true }),
+  ).toBeVisible();
   await expect(panel.locator('[data-action-zone="right"]').getByRole('button')).toHaveCount(0);
   const check = await panel.locator('[data-action-zone="center"]').getByRole('button').boundingBox();
   expect(Math.abs(check!.x + check!.width / 2 - (card!.x + card!.width / 2))).toBeLessThan(2);
-  const ordering = page.getByRole('region', { name: /Упорядкуйте етапи/ }).locator('ol button').first();
-  expect(await ordering.evaluate(node => node.querySelector('svg')!.getBoundingClientRect().right <= node.querySelector('span')!.getBoundingClientRect().left)).toBe(true);
+  const ordering = page
+    .getByRole('region', { name: /Упорядкуйте етапи/ })
+    .locator('ol button')
+    .first();
+  expect(
+    await ordering.evaluate(
+      node =>
+        node.querySelector('svg')!.getBoundingClientRect().right <=
+        node.querySelector('span')!.getBoundingClientRect().left,
+    ),
+  ).toBe(true);
   const blocks = page.getByRole('region', { name: /Складіть рівність для суми/ });
   await blocks.getByRole('button', { name: 'Додати: 1 (1)', exact: true }).click();
   const chip = blocks.getByRole('button', { name: 'Повернути: 1 (1)', exact: true });
   await expect(chip).toHaveClass(/MuiChip-root/);
   expect(await chip.evaluate(node => getComputedStyle(node).backgroundColor)).toBe('rgba(0, 0, 0, 0)');
   expect((await chip.boundingBox())!.height).toBeLessThan(44);
-  await expect(blocks.getByRole('group', { name: 'Складена відповідь', exact: true }).locator('button svg')).toHaveCount(0);
+  await expect(
+    blocks.getByRole('group', { name: 'Складена відповідь', exact: true }).locator('button svg'),
+  ).toHaveCount(0);
   expect(await chip.evaluate(node => getComputedStyle(node.parentElement!).animationName)).toBe('none');
   await blocks.getByRole('button', { name: 'Скинути', exact: true }).click();
   await expect(blocks.getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
 });
 
-
-test('matching connects from either side with preview, cancellation and one-to-one reassignment', async ({ page }, testInfo) => {
+test('matching connects from either side with preview, cancellation and one-to-one reassignment', async ({
+  page,
+}, testInfo) => {
   const match = page.getByRole('region', { name: 'Поєднайте країни та столиці.' });
   const paris = match.getByRole('button', { name: 'Париж', exact: true });
-  await paris.focus(); await page.keyboard.press('Enter');
+  await paris.focus();
+  await page.keyboard.press('Enter');
   await expect(paris).toHaveAttribute('aria-pressed', 'true');
   await page.keyboard.press('Escape');
   await expect(paris).toHaveAttribute('aria-pressed', 'false');
@@ -292,8 +358,10 @@ test('matching connects from either side with preview, cancellation and one-to-o
   }
   await match.getByRole('button', { name: 'Україна', exact: true }).click();
   await expect(match.getByRole('button', { name: 'Видалити зв’язок: Україна — Київ', exact: true })).toHaveCount(1);
-  await paris.focus(); await page.keyboard.press('Enter');
-  await match.getByRole('button', { name: 'Франція', exact: true }).focus(); await page.keyboard.press('Enter');
+  await paris.focus();
+  await page.keyboard.press('Enter');
+  await match.getByRole('button', { name: 'Франція', exact: true }).focus();
+  await page.keyboard.press('Enter');
   await expect(match.locator('path[data-connection]')).toHaveCount(2);
   // Starting from an already paired right endpoint moves that endpoint to the new left item.
   await match.getByRole('button', { name: 'Київ', exact: true }).click();
@@ -301,7 +369,8 @@ test('matching connects from either side with preview, cancellation and one-to-o
   await expect(match.locator('path[data-connection]')).toHaveCount(1);
   await expect(match.getByRole('button', { name: 'Видалити зв’язок: Франція — Київ', exact: true })).toHaveCount(1);
   await match.getByRole('button', { name: 'Скинути', exact: true }).click();
-  for (const name of ['Париж', 'Франція', 'Київ', 'Україна']) await match.getByRole('button', { name, exact: true }).click();
+  for (const name of ['Париж', 'Франція', 'Київ', 'Україна'])
+    await match.getByRole('button', { name, exact: true }).click();
   await match.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(match.getByRole('status', { name: 'Результат перевірки' })).toBeEmpty();
   await expect(paris).toBeDisabled();

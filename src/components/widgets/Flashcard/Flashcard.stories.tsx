@@ -12,10 +12,20 @@ type StoryProps = Omit<FlashcardProps, 'revealed' | 'onReveal' | 'onRate'> & { i
 function FlashcardStory({ initialRevealed = false, ...props }: StoryProps) {
   const [revealed, setRevealed] = useState(initialRevealed);
   const [rating, setRating] = useState<string | null>(null);
-  return <Stack spacing={2} sx={{ alignItems: 'center' }}>
-    <Flashcard {...props} revealed={revealed} onReveal={() => { setRevealed(true); setRating(null); }} onRate={remembered => setRating(remembered ? 'Пам’ятаю' : 'Не пам’ятаю')} />
-    {rating && <Typography color="text.secondary">Оцінка: {rating}</Typography>}
-  </Stack>;
+  return (
+    <Stack spacing={2} sx={{ alignItems: 'center' }}>
+      <Flashcard
+        {...props}
+        revealed={revealed}
+        onReveal={() => {
+          setRevealed(true);
+          setRating(null);
+        }}
+        onRate={remembered => setRating(remembered ? 'Пам’ятаю' : 'Не пам’ятаю')}
+      />
+      {rating && <Typography color="text.secondary">Оцінка: {rating}</Typography>}
+    </Stack>
+  );
 }
 
 const meta = {
@@ -24,7 +34,9 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: { component: 'Самостійна інтерактивна флешкартка: питання, відповідь і дві оцінки запам’ятовування.' },
+      description: {
+        component: 'Самостійна інтерактивна флешкартка: питання, відповідь і дві оцінки запам’ятовування.',
+      },
     },
   },
   argTypes: {

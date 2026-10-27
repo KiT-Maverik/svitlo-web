@@ -36,27 +36,69 @@ export type AdditionalLanguage = AdditionalLanguages[keyof AdditionalLanguages];
 /** Default language set shipped with the project. */
 export const DEFAULT_SUPPORTED_LANGUAGES = [
   { locale: 'en-US', language: 'en', name: 'English', nativeName: 'English', nameUk: 'Англійська', direction: 'ltr' },
-  { locale: 'zh-Hans-CN', language: 'zh', name: 'Chinese (Simplified)', nativeName: '简体中文', nameUk: 'Китайська (спрощене письмо)', direction: 'ltr' },
+  {
+    locale: 'zh-Hans-CN',
+    language: 'zh',
+    name: 'Chinese (Simplified)',
+    nativeName: '简体中文',
+    nameUk: 'Китайська (спрощене письмо)',
+    direction: 'ltr',
+  },
   { locale: 'hi-IN', language: 'hi', name: 'Hindi', nativeName: 'हिन्दी', nameUk: 'Гінді', direction: 'ltr' },
   { locale: 'es-ES', language: 'es', name: 'Spanish', nativeName: 'Español', nameUk: 'Іспанська', direction: 'ltr' },
   { locale: 'ar-SA', language: 'ar', name: 'Arabic', nativeName: 'العربية', nameUk: 'Арабська', direction: 'rtl' },
   { locale: 'fr-FR', language: 'fr', name: 'French', nativeName: 'Français', nameUk: 'Французька', direction: 'ltr' },
   { locale: 'bn-BD', language: 'bn', name: 'Bengali', nativeName: 'বাংলা', nameUk: 'Бенгальська', direction: 'ltr' },
-  { locale: 'pt-BR', language: 'pt', name: 'Portuguese (Brazil)', nativeName: 'Português do Brasil', nameUk: 'Португальська (Бразилія)', direction: 'ltr' },
+  {
+    locale: 'pt-BR',
+    language: 'pt',
+    name: 'Portuguese (Brazil)',
+    nativeName: 'Português do Brasil',
+    nameUk: 'Португальська (Бразилія)',
+    direction: 'ltr',
+  },
   { locale: 'ur-PK', language: 'ur', name: 'Urdu', nativeName: 'اردو', nameUk: 'Урду', direction: 'rtl' },
-  { locale: 'id-ID', language: 'id', name: 'Indonesian', nativeName: 'Bahasa Indonesia', nameUk: 'Індонезійська', direction: 'ltr' },
+  {
+    locale: 'id-ID',
+    language: 'id',
+    name: 'Indonesian',
+    nativeName: 'Bahasa Indonesia',
+    nameUk: 'Індонезійська',
+    direction: 'ltr',
+  },
   { locale: 'de-DE', language: 'de', name: 'German', nativeName: 'Deutsch', nameUk: 'Німецька', direction: 'ltr' },
   { locale: 'ja-JP', language: 'ja', name: 'Japanese', nativeName: '日本語', nameUk: 'Японська', direction: 'ltr' },
   { locale: 'ko-KR', language: 'ko', name: 'Korean', nativeName: '한국어', nameUk: 'Корейська', direction: 'ltr' },
   { locale: 'tr-TR', language: 'tr', name: 'Turkish', nativeName: 'Türkçe', nameUk: 'Турецька', direction: 'ltr' },
-  { locale: 'vi-VN', language: 'vi', name: 'Vietnamese', nativeName: 'Tiếng Việt', nameUk: 'В’єтнамська', direction: 'ltr' },
+  {
+    locale: 'vi-VN',
+    language: 'vi',
+    name: 'Vietnamese',
+    nativeName: 'Tiếng Việt',
+    nameUk: 'В’єтнамська',
+    direction: 'ltr',
+  },
   { locale: 'ta-IN', language: 'ta', name: 'Tamil', nativeName: 'தமிழ்', nameUk: 'Тамільська', direction: 'ltr' },
   { locale: 'te-IN', language: 'te', name: 'Telugu', nativeName: 'తెలుగు', nameUk: 'Телугу', direction: 'ltr' },
   { locale: 'mr-IN', language: 'mr', name: 'Marathi', nativeName: 'मराठी', nameUk: 'Маратхі', direction: 'ltr' },
-  { locale: 'ms-MY', language: 'ms', name: 'Malay', nativeName: 'Bahasa Melayu', nameUk: 'Малайська', direction: 'ltr' },
+  {
+    locale: 'ms-MY',
+    language: 'ms',
+    name: 'Malay',
+    nativeName: 'Bahasa Melayu',
+    nameUk: 'Малайська',
+    direction: 'ltr',
+  },
   { locale: 'he-IL', language: 'he', name: 'Hebrew', nativeName: 'עברית', nameUk: 'Іврит', direction: 'rtl' },
   { locale: 'pl-PL', language: 'pl', name: 'Polish', nativeName: 'Polski', nameUk: 'Польська', direction: 'ltr' },
-  { locale: 'uk-UA', language: 'uk', name: 'Ukrainian', nativeName: 'Українська', nameUk: 'Українська', direction: 'ltr' },
+  {
+    locale: 'uk-UA',
+    language: 'uk',
+    name: 'Ukrainian',
+    nativeName: 'Українська',
+    nameUk: 'Українська',
+    direction: 'ltr',
+  },
 ] as const satisfies readonly LanguageDefinition[];
 
 export type DefaultSupportedLanguage = (typeof DEFAULT_SUPPORTED_LANGUAGES)[number];
@@ -66,7 +108,8 @@ export type LanguageCode = SupportedLanguage['language'];
 
 /** Convert a validated BCP 47 locale tag to the language key used by content dictionaries. */
 export function getLanguageCode(locale: Locale): LanguageCode {
-  return (DEFAULT_SUPPORTED_LANGUAGES.find(entry => entry.locale === locale)?.language ?? locale.split('-')[0]) as LanguageCode;
+  return (DEFAULT_SUPPORTED_LANGUAGES.find(entry => entry.locale === locale)?.language ??
+    locale.split('-')[0]) as LanguageCode;
 }
 
 /** English is used whenever a requested language is unavailable. */
@@ -97,10 +140,13 @@ export function getSupportedLanguages(configuration: LanguageConfiguration = {})
     : [...DEFAULT_SUPPORTED_LANGUAGES, ...additionalLanguages];
 }
 
-export function isLocale(value: string, languages: readonly LanguageDefinition[] = DEFAULT_SUPPORTED_LANGUAGES): value is Locale {
-  return languages.some((language) => language.locale === value);
+export function isLocale(
+  value: string,
+  languages: readonly LanguageDefinition[] = DEFAULT_SUPPORTED_LANGUAGES,
+): value is Locale {
+  return languages.some(language => language.locale === value);
 }
 
 export function getLocaleDirection(locale: Locale): TextDirection {
-  return DEFAULT_SUPPORTED_LANGUAGES.find((language) => language.locale === locale)?.direction ?? 'ltr';
+  return DEFAULT_SUPPORTED_LANGUAGES.find(language => language.locale === locale)?.direction ?? 'ltr';
 }

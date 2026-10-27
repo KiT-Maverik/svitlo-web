@@ -32,10 +32,11 @@ try {
   symlinkSync(join(root, 'node_modules'), join(sandbox, 'node_modules'), 'dir');
 
   const nextBin = resolve(root, 'node_modules/next/dist/bin/next');
-  const child = spawn(process.execPath,
-    [nextBin, 'dev', '--webpack', '--hostname', '127.0.0.1', '--port', port],
-    { cwd: sandbox, env: { ...process.env, NEXT_TELEMETRY_DISABLED: '1' }, stdio: 'inherit' },
-  );
+  const child = spawn(process.execPath, [nextBin, 'dev', '--webpack', '--hostname', '127.0.0.1', '--port', port], {
+    cwd: sandbox,
+    env: { ...process.env, NEXT_TELEMETRY_DISABLED: '1' },
+    stdio: 'inherit',
+  });
 
   for (const signal of ['SIGINT', 'SIGTERM']) {
     process.on(signal, () => child.kill(signal));

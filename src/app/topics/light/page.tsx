@@ -9,7 +9,11 @@ import { howLightMovesCatalog } from '@/content/howLightMoves/howLightMoves.cata
 import { buildTextResource } from '@/utils';
 
 export async function generateMetadata({ searchParams }: PageProps<'/topics/light'>): Promise<Metadata> {
-  const locale = resolveLocale((await searchParams).lang, DEFAULT_SUPPORTED_LANGUAGES.map(language => language.locale), 'uk-UA');
+  const locale = resolveLocale(
+    (await searchParams).lang,
+    DEFAULT_SUPPORTED_LANGUAGES.map(language => language.locale),
+    'uk-UA',
+  );
   return {
     title: `${buildTextResource(howLightMovesCatalog.text[howLightMoves_Lesson_Data.title], locale).value} — Світло`,
     description: 'Перша інтерактивна тема: світловий промінь, малюнок і анімована сцена.',
@@ -17,12 +21,20 @@ export async function generateMetadata({ searchParams }: PageProps<'/topics/ligh
 }
 
 export default function LightTopic({ searchParams }: PageProps<'/topics/light'>) {
-  return <Suspense fallback={<Container maxWidth="md" sx={{ py: 6 }} />}>
-    <LocalizedLightTopic searchParams={searchParams} />
-  </Suspense>;
+  return (
+    <Suspense fallback={<Container maxWidth="md" sx={{ py: 6 }} />}>
+      <LocalizedLightTopic searchParams={searchParams} />
+    </Suspense>
+  );
 }
 
 async function LocalizedLightTopic({ searchParams }: Pick<PageProps<'/topics/light'>, 'searchParams'>) {
-  const locale = resolveLocale((await searchParams).lang, DEFAULT_SUPPORTED_LANGUAGES.map(language => language.locale), 'uk-UA');
-  return <Lesson config={howLightMoves_Lesson_Data} catalog={howLightMovesCatalog} locale={locale} href="/topics/light" />;
+  const locale = resolveLocale(
+    (await searchParams).lang,
+    DEFAULT_SUPPORTED_LANGUAGES.map(language => language.locale),
+    'uk-UA',
+  );
+  return (
+    <Lesson config={howLightMoves_Lesson_Data} catalog={howLightMovesCatalog} locale={locale} href="/topics/light" />
+  );
 }

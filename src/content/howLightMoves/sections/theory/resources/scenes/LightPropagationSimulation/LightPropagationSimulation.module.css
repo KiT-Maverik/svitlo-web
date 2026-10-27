@@ -58,8 +58,12 @@
 }
 
 @keyframes travel {
-  from { inset-inline-start: 0; }
-  to { inset-inline-start: calc(100% - 14px); }
+  from {
+    inset-inline-start: 0;
+  }
+  to {
+    inset-inline-start: calc(100% - 14px);
+  }
 }
 
 .screen {
@@ -92,8 +96,12 @@
   gap: 10px;
 }
 
-.slider { width: 110px; }
-.speedValue { min-width: 24px; }
+.slider {
+  width: 110px;
+}
+.speedValue {
+  min-width: 24px;
+}
 
 .scene .note {
   display: block;

@@ -32,7 +32,10 @@ export interface Question_Base<R extends Question_Resource = Resource, T extends
 
 export type Question_Base_Config = Question_Base<Resource_Config, TextResource_Config>;
 
-export interface AnswerWithNumber_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T> {
+export interface AnswerWithNumber_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+> extends Question_Base<R, T> {
   type: 'answer-with-number';
   correctAnswer: number[];
   /** Intentionally mandatory; use this property to provide formatting insights. */
@@ -41,7 +44,10 @@ export interface AnswerWithNumber_Question<R extends Question_Resource = Resourc
 
 export type AnswerWithNumber_Question_Config = AnswerWithNumber_Question<Resource_Config, TextResource_Config>;
 
-export interface AnswerWithText_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T> {
+export interface AnswerWithText_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+> extends Question_Base<R, T> {
   type: 'answer-with-text';
   correctAnswer: T[];
   /** Intentionally mandatory; use this property to provide formatting insights. */
@@ -50,7 +56,10 @@ export interface AnswerWithText_Question<R extends Question_Resource = Resource,
 
 export type AnswerWithText_Question_Config = AnswerWithText_Question<Resource_Config, TextResource_Config>;
 
-export interface BuildAnswerWithBlocks_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T> {
+export interface BuildAnswerWithBlocks_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+> extends Question_Base<R, T> {
   type: 'build-answer-with-blocks';
   correctSequence: NonEmptyArray<T>;
   distractors: T[];
@@ -58,7 +67,10 @@ export interface BuildAnswerWithBlocks_Question<R extends Question_Resource = Re
   placeholder: T;
 }
 
-export type BuildAnswerWithBlocks_Question_Config = BuildAnswerWithBlocks_Question<Resource_Config, TextResource_Config>;
+export type BuildAnswerWithBlocks_Question_Config = BuildAnswerWithBlocks_Question<
+  Resource_Config,
+  TextResource_Config
+>;
 
 export interface FillBlanksSlot<T extends Question_TextResource = TextResource> {
   selector: string;
@@ -67,7 +79,10 @@ export interface FillBlanksSlot<T extends Question_TextResource = TextResource> 
 
 export type FillBlanksSlot_Config = FillBlanksSlot<TextResource_Config>;
 
-export interface FillBlanksWithBlocks_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T> {
+export interface FillBlanksWithBlocks_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+> extends Question_Base<R, T> {
   type: 'fill-blanks-with-blocks';
   placeholder: T;
   distractors: T[];
@@ -76,7 +91,10 @@ export interface FillBlanksWithBlocks_Question<R extends Question_Resource = Res
 
 export type FillBlanksWithBlocks_Question_Config = FillBlanksWithBlocks_Question<Resource_Config, TextResource_Config>;
 
-export interface FillBlanksWithText_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T> {
+export interface FillBlanksWithText_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+> extends Question_Base<R, T> {
   type: 'fill-blanks-with-text';
   placeholder: T;
   distractors: T[];
@@ -85,7 +103,10 @@ export interface FillBlanksWithText_Question<R extends Question_Resource = Resou
 
 export type FillBlanksWithText_Question_Config = FillBlanksWithText_Question<Resource_Config, TextResource_Config>;
 
-export interface MatchBlocks_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T> {
+export interface MatchBlocks_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+> extends Question_Base<R, T> {
   type: 'match-blocks';
   map: {
     left: NonEmptyArray<R>;
@@ -95,14 +116,20 @@ export interface MatchBlocks_Question<R extends Question_Resource = Resource, T 
 
 export type MatchBlocks_Question_Config = MatchBlocks_Question<Resource_Config, TextResource_Config>;
 
-export interface OrderSequence_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T> {
+export interface OrderSequence_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+> extends Question_Base<R, T> {
   type: 'order-sequence';
   sequence: NonEmptyArray<R>;
 }
 
 export type OrderSequence_Question_Config = OrderSequence_Question<Resource_Config, TextResource_Config>;
 
-export interface BasicAnswersBlock<R extends Question_Resource = Resource, CorrectAnswer extends R | NonEmptyArray<R> = R> {
+export interface BasicAnswersBlock<
+  R extends Question_Resource = Resource,
+  CorrectAnswer extends R | NonEmptyArray<R> = R,
+> {
   answers: {
     correct: CorrectAnswer;
     incorrect: NonEmptyArray<R>;
@@ -110,7 +137,9 @@ export interface BasicAnswersBlock<R extends Question_Resource = Resource, Corre
   };
 }
 
-export type BasicAnswersBlock_Config<CorrectAnswer extends Resource_Config | NonEmptyArray<Resource_Config> = Resource_Config> = BasicAnswersBlock<Resource_Config, CorrectAnswer>;
+export type BasicAnswersBlock_Config<
+  CorrectAnswer extends Resource_Config | NonEmptyArray<Resource_Config> = Resource_Config,
+> = BasicAnswersBlock<Resource_Config, CorrectAnswer>;
 
 export type SelectOneAnswer_Answers = BasicAnswersBlock<Resource, Resource>['answers'];
 export type SelectOneAnswer_Answers_Config = BasicAnswersBlock_Config<Resource_Config>['answers'];
@@ -118,17 +147,28 @@ export type SelectOneAnswer_Answers_Config = BasicAnswersBlock_Config<Resource_C
 export type SelectMultipleAnswers_Answers = BasicAnswersBlock<Resource, NonEmptyArray<Resource>>['answers'];
 export type SelectMultipleAnswers_Answers_Config = BasicAnswersBlock_Config<NonEmptyArray<Resource_Config>>['answers'];
 
-export interface SelectOneAnswer_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T>, BasicAnswersBlock<R, R> {
+export interface SelectOneAnswer_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+>
+  extends Question_Base<R, T>, BasicAnswersBlock<R, R> {
   type: 'select-one-answer';
 }
 
 export type SelectOneAnswer_Question_Config = SelectOneAnswer_Question<Resource_Config, TextResource_Config>;
 
-export interface SelectMultipleAnswers_Question<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> extends Question_Base<R, T>, BasicAnswersBlock<R, NonEmptyArray<R>> {
+export interface SelectMultipleAnswers_Question<
+  R extends Question_Resource = Resource,
+  T extends Question_TextResource = TextResource,
+>
+  extends Question_Base<R, T>, BasicAnswersBlock<R, NonEmptyArray<R>> {
   type: 'select-multiple-answers';
 }
 
-export type SelectMultipleAnswers_Question_Config = SelectMultipleAnswers_Question<Resource_Config, TextResource_Config>;
+export type SelectMultipleAnswers_Question_Config = SelectMultipleAnswers_Question<
+  Resource_Config,
+  TextResource_Config
+>;
 
 export type Question_Config =
   | AnswerWithNumber_Question_Config

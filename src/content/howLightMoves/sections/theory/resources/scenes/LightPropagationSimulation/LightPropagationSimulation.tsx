@@ -28,15 +28,29 @@ export function LightPropagationSimulation() {
   const paused = playbackOverride ?? reducedMotion;
 
   return (
-    <Paper component="section" variant="outlined" className={styles.scene} lang={locale} dir={getLocaleDirection(locale)} aria-label={messages.scene.accessibleName}>
-      <Typography component="h3" variant="h6">{messages.scene.title}</Typography>
-      <Typography component="div" className={styles.description}>{messages.scene.description}</Typography>
+    <Paper
+      component="section"
+      variant="outlined"
+      className={styles.scene}
+      lang={locale}
+      dir={getLocaleDirection(locale)}
+      aria-label={messages.scene.accessibleName}
+    >
+      <Typography component="h3" variant="h6">
+        {messages.scene.title}
+      </Typography>
+      <Typography component="div" className={styles.description}>
+        {messages.scene.description}
+      </Typography>
 
       <Box role="img" aria-label={messages.track.accessibleDescription} className={styles.track}>
         <Box className={styles.line} />
         <Box className={styles.source} />
         <Box className={styles.path}>
-          <Box className={styles.pulse} style={{ animationDuration: `${3 / speed}s`, animationPlayState: paused ? 'paused' : 'running' }} />
+          <Box
+            className={styles.pulse}
+            style={{ animationDuration: `${3 / speed}s`, animationPlayState: paused ? 'paused' : 'running' }}
+          />
         </Box>
         <Box className={styles.screen} />
       </Box>
@@ -51,11 +65,24 @@ export function LightPropagationSimulation() {
           {paused ? messages.controls.play : messages.controls.pause}
         </Button>
         <Box className={styles.speedControls}>
-          <Typography component="span" variant="body2">{messages.controls.speed}</Typography>
-          <Slider className={styles.slider} aria-label={messages.controls.speedAccessibleName} min={0.5} max={2} step={0.5} value={speed} onChange={(_, value) => {
-            if (typeof value === 'number') setSpeed(value);
-          }} />
-          <Typography component="output" variant="body2" className={styles.speedValue}>{speed}{messages.controls.speedUnit}</Typography>
+          <Typography component="span" variant="body2">
+            {messages.controls.speed}
+          </Typography>
+          <Slider
+            className={styles.slider}
+            aria-label={messages.controls.speedAccessibleName}
+            min={0.5}
+            max={2}
+            step={0.5}
+            value={speed}
+            onChange={(_, value) => {
+              if (typeof value === 'number') setSpeed(value);
+            }}
+          />
+          <Typography component="output" variant="body2" className={styles.speedValue}>
+            {speed}
+            {messages.controls.speedUnit}
+          </Typography>
         </Box>
       </Box>
       <Typography component="div" variant="caption" className={styles.note}>

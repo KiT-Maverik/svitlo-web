@@ -19,10 +19,10 @@ export type * from './answers';
 interface DefinitionMap {
   'single-select': SelectOneAnswerQuestion;
   'multiple-select': SelectMultipleAnswersQuestion;
-  'matching': MatchBlocksQuestion;
+  matching: MatchBlocksQuestion;
   'short-text': AnswerWithTextQuestion;
-  'numeric': AnswerWithNumberQuestion;
-  'ordering': OrderSequenceQuestion;
+  numeric: AnswerWithNumberQuestion;
+  ordering: OrderSequenceQuestion;
   'block-builder': BuildAnswerWithBlocksQuestion;
   'fill-blanks-drag': FillBlanksWithBlocksQuestion;
   'fill-blanks-text': FillBlanksWithTextQuestion;

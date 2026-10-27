@@ -17,7 +17,9 @@ describe('Widgets', () => {
 
     it('should render the supported mark and aside elements', () => {
       MarkdownContent_fx.render({ content: '<aside><mark>Highlighted lesson</mark></aside>' });
-      expect(MarkdownContent_fx.selectors.article().querySelector('aside mark')).toHaveTextContent('Highlighted lesson');
+      expect(MarkdownContent_fx.selectors.article().querySelector('aside mark')).toHaveTextContent(
+        'Highlighted lesson',
+      );
     });
 
     it('should remove scripts and executable event attributes from untrusted HTML', () => {

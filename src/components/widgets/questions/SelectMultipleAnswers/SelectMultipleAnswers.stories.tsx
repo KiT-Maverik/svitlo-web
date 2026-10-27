@@ -100,12 +100,14 @@ export const Incorrect: Story = {
 };
 
 export const StateGallery: Story = {
-  render: (args) => <Stack spacing={3}>
-    <Typography variant="h6">Стан за замовчуванням</Typography>
-    <SelectMultipleAnswersStory {...args} />
-    <Typography variant="h6">Без літер і пояснення</Typography>
-    <SelectMultipleAnswersStory {...args} showLetters={false} showExplanation={false} />
-    <Typography variant="h6">Заблокований стан</Typography>
-    <SelectMultipleAnswersStory {...args} disabled />
-  </Stack>,
+  render: args => (
+    <Stack spacing={3}>
+      <Typography variant="h6">Стан за замовчуванням</Typography>
+      <SelectMultipleAnswersStory {...args} />
+      <Typography variant="h6">Без літер і пояснення</Typography>
+      <SelectMultipleAnswersStory {...args} showLetters={false} showExplanation={false} />
+      <Typography variant="h6">Заблокований стан</Typography>
+      <SelectMultipleAnswersStory {...args} disabled />
+    </Stack>
+  ),
 };

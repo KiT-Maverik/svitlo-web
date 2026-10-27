@@ -1,4 +1,12 @@
-import type { Lesson, Lesson_Config, LessonContentCatalog, LessonSection, LessonSection_Content, Locale, Quiz_Config } from '@types';
+import type {
+  Lesson,
+  Lesson_Config,
+  LessonContentCatalog,
+  LessonSection,
+  LessonSection_Content,
+  Locale,
+  Quiz_Config,
+} from '@types';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 import { buildResource, buildTextResource } from '../buildResource/buildResource.utils';
 import { buildQuiz } from '../buildQuiz/buildQuiz.utils';
@@ -11,11 +19,14 @@ function isQuiz(value: LessonSection_Content): value is Quiz_Config {
 function selectSceneLocales(config: Lesson_Config['sceneLocales'], locale: Locale): Readonly<object> | undefined {
   if (!config) return undefined;
   const language = getLanguageCode(locale);
-  return Object.fromEntries(Object.entries(config).map(([sceneId, messages]) => {
-    const selected = messages[language] ?? messages[FALLBACK_LANGUAGE];
-    if (!selected) throw new Error(`Scene "${sceneId}" has no translation for ${language} or fallback ${FALLBACK_LANGUAGE}`);
-    return [sceneId, selected];
-  }));
+  return Object.fromEntries(
+    Object.entries(config).map(([sceneId, messages]) => {
+      const selected = messages[language] ?? messages[FALLBACK_LANGUAGE];
+      if (!selected)
+        throw new Error(`Scene "${sceneId}" has no translation for ${language} or fallback ${FALLBACK_LANGUAGE}`);
+      return [sceneId, selected];
+    }),
+  );
 }
 
 export function buildLesson(config: Lesson_Config, locale: Locale, catalog: LessonContentCatalog): Lesson {

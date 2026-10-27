@@ -28,14 +28,21 @@ export function LocaleProvider({ locale, children }: { locale: Locale; children:
   }, [direction, locale]);
   const pathname = usePathname();
   const router = useRouter();
-  const setLocale = useCallback((nextLocale: Locale) => {
-    const params = new URLSearchParams(window.location.search);
-    params.set('lang', nextLocale);
-    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
-  }, [pathname, router]);
+  const setLocale = useCallback(
+    (nextLocale: Locale) => {
+      const params = new URLSearchParams(window.location.search);
+      params.set('lang', nextLocale);
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    },
+    [pathname, router],
+  );
   const value = useMemo(() => ({ locale, setLocale }), [locale, setLocale]);
 
-  return <LocaleContext.Provider value={value}><ThemeProvider theme={directionalTheme}>{children}</ThemeProvider></LocaleContext.Provider>;
+  return (
+    <LocaleContext.Provider value={value}>
+      <ThemeProvider theme={directionalTheme}>{children}</ThemeProvider>
+    </LocaleContext.Provider>
+  );
 }
 
 export function useLocale() {

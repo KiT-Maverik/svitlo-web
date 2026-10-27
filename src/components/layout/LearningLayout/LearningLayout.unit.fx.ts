@@ -28,7 +28,8 @@ export const LearningLayout_fx = {
     settings: () => screen.getByRole('complementary', { name: aria.navigation.settings }),
     main: () => screen.getByRole('main'),
     topAction: (name: string) => within(LearningLayout_fx.selectors.top()).getByRole('button', { name }),
-    bottomAction: (name: string) => within(LearningLayout_fx.selectors.bottom()).getByRole('button', { name: new RegExp(name) }),
+    bottomAction: (name: string) =>
+      within(LearningLayout_fx.selectors.bottom()).getByRole('button', { name: new RegExp(name) }),
   },
   actions: {
     openTopics: async () => userEvent.click(LearningLayout_fx.selectors.topAction(aria.actions.openTopics)),

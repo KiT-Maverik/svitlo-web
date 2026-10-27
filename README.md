@@ -41,7 +41,6 @@ Open `/questions` for nine independently controlled examples.
 
 Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Widget types live in `src/components/widgets/questions/types`; content contracts live in `src/types/content`.
 
-
 ## Урок із конфігурації (data-driven Lesson)
 
 Після `npm ci` та `npm run dev` відкрийте `/topics/light` — урок «Як рухається світло».

@@ -12,14 +12,14 @@ export const Flashcard_fx = {
   render: (props: Partial<FlashcardProps> = {}) =>
     render(createElement(Flashcard, { ...Flashcard_fx.defaults, ...props })),
   selectors: {
-    region: (scope?: HTMLElement) =>
-      (scope ? within(scope) : screen).getByRole('region', { name: aria.region }),
+    region: (scope?: HTMLElement) => (scope ? within(scope) : screen).getByRole('region', { name: aria.region }),
     reveal: (scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('button', { name: aria.actions.reveal }),
-    menu: (scope?: HTMLElement) =>
-      (scope ? within(scope) : screen).getByRole('button', { name: aria.actions.menu }),
+    menu: (scope?: HTMLElement) => (scope ? within(scope) : screen).getByRole('button', { name: aria.actions.menu }),
     rate: (remembered: boolean, scope?: HTMLElement) =>
-      (scope ? within(scope) : screen).getByRole('button', { name: remembered ? locale.flashcard.actions.remembered : locale.flashcard.actions.forgot }),
+      (scope ? within(scope) : screen).getByRole('button', {
+        name: remembered ? locale.flashcard.actions.remembered : locale.flashcard.actions.forgot,
+      }),
     menuItem: () => screen.getByRole('menuitem', { name: locale.flashcard.actions.addLabel }),
   },
   actions: {

@@ -2,7 +2,7 @@ import type { LanguageCode, Locale } from '../languages';
 import type { ReactNode } from 'react';
 
 /** Supported content resource kinds. */
-export type Resource_Type = 'text' | 'markdown' | 'code' | 'audio' | 'video'  | 'youtube' | 'image' | 'scene';
+export type Resource_Type = 'text' | 'markdown' | 'code' | 'audio' | 'video' | 'youtube' | 'image' | 'scene';
 
 export interface Resource_ConfigBase<T extends Resource_Type> {
   id: string;
@@ -19,7 +19,7 @@ export type Resource_ChosenLocales_Config<Locales extends Locale = never> = [Loc
 
 /** A non-empty set of supported locales when the exact set is not shared by a parent object. */
 export type Resource_AnyChosenLocales_Config = {
-  [LocaleKey in Locale]: Record<LocaleKey, string> & Partial<Record<Exclude<Locale, LocaleKey>, string>>
+  [LocaleKey in Locale]: Record<LocaleKey, string> & Partial<Record<Exclude<Locale, LocaleKey>, string>>;
 }[Locale];
 
 /** Text translations are keyed by language, independently of regional locale tags. */
@@ -30,7 +30,7 @@ export type TextResource_ChosenLanguages_Config<Languages extends LanguageCode =
   : Record<Languages, string>;
 
 export type TextResource_AnyChosenLanguages_Config = {
-  [Language in LanguageCode]: Record<Language, string> & Partial<Record<Exclude<LanguageCode, Language>, string>>
+  [Language in LanguageCode]: Record<Language, string> & Partial<Record<Exclude<LanguageCode, Language>, string>>;
 }[LanguageCode];
 
 export interface TextResource_AllLocales_Config extends Resource_ConfigBase<'text'> {
@@ -38,12 +38,15 @@ export interface TextResource_AllLocales_Config extends Resource_ConfigBase<'tex
   value: TextResource_AllLanguages_Config;
 }
 
-export interface TextResource_ChosenLocales_Config<Languages extends LanguageCode = never> extends Resource_ConfigBase<'text'> {
+export interface TextResource_ChosenLocales_Config<
+  Languages extends LanguageCode = never,
+> extends Resource_ConfigBase<'text'> {
   allLocales: false;
   value: TextResource_ChosenLanguages_Config<Languages>;
 }
 
-export type TextResource_Config<Languages extends LanguageCode = never> = TextResource_AllLocales_Config | TextResource_ChosenLocales_Config<Languages>;
+export type TextResource_Config<Languages extends LanguageCode = never> =
+  TextResource_AllLocales_Config | TextResource_ChosenLocales_Config<Languages>;
 
 export interface TextResource extends Resource_ConfigBase<'text'> {
   locale: Locale;
@@ -61,12 +64,15 @@ export interface MarkdownResource_AllLocales_Config extends Resource_ConfigBase<
   fileLocation: Resource_AllLocales_Config;
 }
 
-export interface MarkdownResource_ChosenLocales_Config<Locales extends Locale = never> extends Resource_ConfigBase<'markdown'> {
+export interface MarkdownResource_ChosenLocales_Config<
+  Locales extends Locale = never,
+> extends Resource_ConfigBase<'markdown'> {
   allLocales: false;
   fileLocation: Resource_ChosenLocales_Config<Locales>;
 }
 
-export type MarkdownResource_Config<Locales extends Locale = never> = MarkdownResource_AllLocales_Config | MarkdownResource_ChosenLocales_Config<Locales>;
+export type MarkdownResource_Config<Locales extends Locale = never> =
+  MarkdownResource_AllLocales_Config | MarkdownResource_ChosenLocales_Config<Locales>;
 
 export interface MarkdownResource extends Resource_ConfigBase<'markdown'> {
   locale: Locale;
@@ -95,7 +101,8 @@ export interface CodeResource_ChosenLocales_Config<Locales extends Locale = neve
   codeParams: CodeResourceParam_ChosenLocales<Locales>[];
 }
 
-export type CodeResource_Config<Locales extends Locale = never> = CodeResource_AllLocales_Config | CodeResource_ChosenLocales_Config<Locales>;
+export type CodeResource_Config<Locales extends Locale = never> =
+  CodeResource_AllLocales_Config | CodeResource_ChosenLocales_Config<Locales>;
 
 export interface CodeResource extends Resource_ConfigBase<'code'> {
   locale: Locale;
@@ -110,14 +117,17 @@ export interface AudioResource_AllLocales_Config extends Resource_ConfigBase<'au
   description: Resource_AllLocales_Config;
 }
 
-export interface AudioResource_ChosenLocales_Config<Locales extends Locale = never> extends Resource_ConfigBase<'audio'> {
+export interface AudioResource_ChosenLocales_Config<
+  Locales extends Locale = never,
+> extends Resource_ConfigBase<'audio'> {
   allLocales: false;
   fileLocation: Resource_ChosenLocales_Config<Locales>;
   title: Resource_ChosenLocales_Config<Locales>;
   description: Resource_ChosenLocales_Config<Locales>;
 }
 
-export type AudioResource_Config<Locales extends Locale = never> = AudioResource_AllLocales_Config | AudioResource_ChosenLocales_Config<Locales>;
+export type AudioResource_Config<Locales extends Locale = never> =
+  AudioResource_AllLocales_Config | AudioResource_ChosenLocales_Config<Locales>;
 
 export interface AudioResource extends Resource_ConfigBase<'audio'> {
   locale: Locale;
@@ -132,13 +142,16 @@ export interface VideoResource_AllLocales_Config extends Resource_ConfigBase<'vi
   poster: Resource_AllLocales_Config;
 }
 
-export interface VideoResource_ChosenLocales_Config<Locales extends Locale = never> extends Resource_ConfigBase<'video'> {
+export interface VideoResource_ChosenLocales_Config<
+  Locales extends Locale = never,
+> extends Resource_ConfigBase<'video'> {
   allLocales: false;
   fileLocation: Resource_ChosenLocales_Config<Locales>;
   poster: Resource_ChosenLocales_Config<Locales>;
 }
 
-export type VideoResource_Config<Locales extends Locale = never> = VideoResource_AllLocales_Config | VideoResource_ChosenLocales_Config<Locales>;
+export type VideoResource_Config<Locales extends Locale = never> =
+  VideoResource_AllLocales_Config | VideoResource_ChosenLocales_Config<Locales>;
 
 export interface VideoResource extends Resource_ConfigBase<'video'> {
   locale: Locale;
@@ -152,13 +165,16 @@ export interface ImageResource_AllLocales_Config extends Resource_ConfigBase<'im
   alt: Resource_AllLocales_Config;
 }
 
-export interface ImageResource_ChosenLocales_Config<Locales extends Locale = never> extends Resource_ConfigBase<'image'> {
+export interface ImageResource_ChosenLocales_Config<
+  Locales extends Locale = never,
+> extends Resource_ConfigBase<'image'> {
   allLocales: false;
   fileLocation: Resource_ChosenLocales_Config<Locales>;
   alt: Resource_ChosenLocales_Config<Locales>;
 }
 
-export type ImageResource_Config<Locales extends Locale = never> = ImageResource_AllLocales_Config | ImageResource_ChosenLocales_Config<Locales>;
+export type ImageResource_Config<Locales extends Locale = never> =
+  ImageResource_AllLocales_Config | ImageResource_ChosenLocales_Config<Locales>;
 
 export interface ImageResource extends Resource_ConfigBase<'image'> {
   locale: Locale;
@@ -186,13 +202,7 @@ export interface Resource_ConfigMap<Locales extends Locale = never> {
 }
 
 export type Resource =
-  | TextResource
-  | SceneResource
-  | MarkdownResource
-  | CodeResource
-  | AudioResource
-  | VideoResource
-  | ImageResource;
+  TextResource | SceneResource | MarkdownResource | CodeResource | AudioResource | VideoResource | ImageResource;
 
 export interface ResourceMap {
   text: TextResource;
