@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { duration_Skills_Ids } from './index.ids';
+
+export const findStartOrEnd_Skill_Data = buildSkillConfig({
+  id: duration_Skills_Ids.findStartOrEnd,
+  name: {
+    en: "Finding a start or end time from a duration",
+    zh: "根据持续时间求开始或结束时刻",
+    hi: "अवधि से शुरू या समाप्ति का समय निकालना",
+    es: "Hallar la hora de inicio o fin a partir de la duración",
+    ar: "تحديد وقت البداية أو النهاية باستخدام المدة",
+    fr: "Trouver l'heure de début ou de fin à partir d'une durée",
+    bn: "সময়কাল থেকে শুরুর বা শেষের সময় নির্ণয়",
+    pt: "Determinar a hora de início ou fim a partir da duração",
+    ur: "دورانیے سے آغاز یا اختتام کا وقت معلوم کرنا",
+    id: "Menentukan waktu mulai atau selesai dari durasi",
+    de: "Anfangs- oder Endzeit aus einer Dauer bestimmen",
+    ja: "所要時間から開始時刻または終了時刻を求める",
+    ko: "소요 시간으로 시작 또는 종료 시각 구하기",
+    tr: "Süreden başlangıç veya bitiş saatini bulma",
+    vi: "Tìm giờ bắt đầu hoặc kết thúc từ khoảng thời gian",
+    ta: "கால அளவிலிருந்து தொடக்க அல்லது முடிவு நேரத்தைக் கண்டறிதல்",
+    te: "వ్యవధి ఆధారంగా ప్రారంభ లేదా ముగింపు సమయాన్ని కనుగొనడం",
+    mr: "कालावधीवरून सुरुवात किंवा समाप्तीची वेळ शोधणे",
+    ms: "Menentukan waktu mula atau tamat daripada tempoh",
+    he: "מציאת שעת התחלה או סיום לפי משך הזמן",
+    pl: "Wyznaczanie czasu rozpoczęcia lub zakończenia na podstawie długości trwania",
+    uk: "Знаходження часу початку або завершення за тривалістю",
+  },
+});

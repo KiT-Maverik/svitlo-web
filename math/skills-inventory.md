@@ -22,7 +22,7 @@
 
 ## Інвентар навичок
 
-Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **15 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
+Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **28 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
 
 ## Семантична таксономія (v0.6)
 
@@ -39,7 +39,7 @@
 | `math.algebra` | Алгебра | 5 | 17 | — | 0/5 | 0/17 |
 | `math.geometry` | Геометрія | 10 | 35 | **Implemented** | 3/10 | 0/35 |
 | `math.measurement` | Вимірювання | 5 | 21 | — | 0/5 | 0/21 |
-| `math.time` | Час | 3 | 13 | — | 0/3 | 0/13 |
+| `math.time` | Час | 3 | 13 | **Implemented** | 3/3 | 13/13 |
 | `math.money` | Гроші | 2 | 6 | — | 0/2 | 0/6 |
 | `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
 | `math.probability` | Ймовірність | 2 | 4 | — | 0/2 | 0/4 |
@@ -660,7 +660,7 @@
 
 ### Domain 8. Час (13)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Implemented (Domain, 3 Group, 13 Skill data files).
 
 **ID:** `math.time`
 
@@ -668,41 +668,41 @@
 
 **ID:** `math.time.calendar`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config and all individual Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.time.day-sequence` | Упорядковувати частини доби та пов’язувати їх із повсякденними подіями | 1 | — |
-| `math.time.leap-year-days` | Пояснювати відмінність звичайного і високосного років та користуватися календарем | 3 | — |
-| `math.time.week-month-year` | Називати дні тижня, місяці року й орієнтуватися в календарі | 1–2 | — |
-| `math.time.calendar-interval` | Визначати кількість днів між календарними датами в нескладних випадках | 2–3 | — |
+| `math.time.day-sequence` | Упорядковувати частини доби та пов’язувати їх із повсякденними подіями | 1 | **Implemented** |
+| `math.time.leap-year-days` | Пояснювати відмінність звичайного і високосного років та користуватися календарем | 3 | **Implemented** |
+| `math.time.week-month-year` | Називати дні тижня, місяці року й орієнтуватися в календарі | 1–2 | **Implemented** |
+| `math.time.calendar-interval` | Визначати кількість днів між календарними датами в нескладних випадках | 2–3 | **Implemented** |
 
 #### SkillGroup 8.2. Годинник (5)
 
 **ID:** `math.time.clock`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config and all individual Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.time.read-24-hour-clock` | Читати 24-годинний запис часу та співвідносити його з часом доби | 3 | — |
-| `math.time.read-hour` | Визначати час на аналоговому та цифровому годиннику з точністю до години | 1 | — |
-| `math.time.read-half-quarter` | Зчитувати половину та чверть години на годиннику | 1–2 | — |
-| `math.time.read-five-minute` | Зчитувати час із точністю до п’яти хвилин | 2 | — |
-| `math.time.read-minute` | Зчитувати й записувати час із точністю до хвилини | 3 | — |
+| `math.time.read-24-hour-clock` | Читати 24-годинний запис часу та співвідносити його з часом доби | 3 | **Implemented** |
+| `math.time.read-hour` | Визначати час на аналоговому та цифровому годиннику з точністю до години | 1 | **Implemented** |
+| `math.time.read-half-quarter` | Зчитувати половину та чверть години на годиннику | 1–2 | **Implemented** |
+| `math.time.read-five-minute` | Зчитувати час із точністю до п’яти хвилин | 2 | **Implemented** |
+| `math.time.read-minute` | Зчитувати й записувати час із точністю до хвилини | 3 | **Implemented** |
 
 #### SkillGroup 8.3. Тривалість (4)
 
 **ID:** `math.time.duration`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config and all individual Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.time.convert-hours-minutes` | Застосовувати співвідношення 1 год = 60 хв | 2–3 | — |
-| `math.time.convert-minutes-seconds` | Застосовувати співвідношення 1 хв = 60 с | 3 | — |
-| `math.time.duration` | Знаходити тривалість події за часом початку та завершення | 2–3 | — |
-| `math.time.find-start-or-end` | Знаходити час початку чи завершення за тривалістю події | 3 | — |
+| `math.time.convert-hours-minutes` | Застосовувати співвідношення 1 год = 60 хв | 2–3 | **Implemented** |
+| `math.time.convert-minutes-seconds` | Застосовувати співвідношення 1 хв = 60 с | 3 | **Implemented** |
+| `math.time.duration` | Знаходити тривалість події за часом початку та завершення | 2–3 | **Implemented** |
+| `math.time.find-start-or-end` | Знаходити час початку чи завершення за тривалістю події | 3 | **Implemented** |
 
 ### Domain 9. Гроші (6)
 
