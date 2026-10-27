@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const twoDigitBorrow_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.twoDigitBorrow,
   name: {
+    "lt": "Atimtis — dviženkliai skaičiai su skolinimusi",
+    "lv": "Atņemšana — divciparu skaitļi ar aizņemšanos",
+    "et": "Lahutamine — kahekohalised arvud laenamisega",
+    "be": "Адніманьне — двухзначныя лікі з разьяднаньнем",
+    "ka": "გამოკლება — ორნიშნა რიცხვები გადაჯგუფებით",
+    "kk": "Азайту — екі таңбалы сандар разрядтан алумен",
     en: "Subtraction — 2-digit · Borrowing",
     zh: "减法 — 2-位数 · 退位",
     hi: "घटाव — 2-अंकीय · उधार लेना",

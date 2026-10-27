@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const crossTenSubtraction_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.crossTenSubtraction,
   name: {
+    "lt": "Atimtis — peržengiant dešimtį",
+    "lv": "Atņemšana — pāreja pāri desmitam",
+    "et": "Lahutamine — üle kümne lahutamine",
+    "be": "Адніманьне — пераход праз дзясятак",
+    "ka": "გამოკლება — ათეულის გადაცილებით",
+    "kk": "Азайту — ондықтан аттап өту",
     en: "Subtraction — Crossing ten",
     zh: "减法 — 跨十计算",
     hi: "घटाव — दस पार करना",

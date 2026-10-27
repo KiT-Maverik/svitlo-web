@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const borrowErrorDetection_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.borrowErrorDetection,
   name: {
+    "lt": "Atimtis — skolinimosi klaidų aptikimas",
+    "lv": "Atņemšana — aizņemšanās kļūdu atklāšana",
+    "et": "Lahutamine — laenamisvigade tuvastamine",
+    "be": "Адніманьне — выяўленьне памылак разьяднаньня",
+    "ka": "გამოკლება — გადაჯგუფების შეცდომების ამოცნობა",
+    "kk": "Азайту — разрядтан алу қатесін анықтау",
     en: "Subtraction — Borrowing · Error detection",
     zh: "减法 — 退位 · 错误识别",
     hi: "घटाव — उधार लेना · त्रुटि पहचान",

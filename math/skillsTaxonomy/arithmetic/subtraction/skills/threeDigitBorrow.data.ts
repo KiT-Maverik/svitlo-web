@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const threeDigitBorrow_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.threeDigitBorrow,
   name: {
+    "lt": "Atimtis — triženkliai skaičiai su skolinimusi",
+    "lv": "Atņemšana — trīsciparu skaitļi ar aizņemšanos",
+    "et": "Lahutamine — kolmekohalised arvud laenamisega",
+    "be": "Адніманьне — трохзначныя лікі з разьяднаньнем",
+    "ka": "გამოკლება — სამნიშნა რიცხვები გადაჯგუფებით",
+    "kk": "Азайту — үш таңбалы сандар разрядтан алумен",
     en: "Subtraction — 3-digit · Borrowing",
     zh: "减法 — 3-位数 · 退位",
     hi: "घटाव — 3-अंकीय · उधार लेना",

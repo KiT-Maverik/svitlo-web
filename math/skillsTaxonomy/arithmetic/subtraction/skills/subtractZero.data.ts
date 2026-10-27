@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const subtractZero_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.subtractZero,
   name: {
+    "lt": "Atimtis — nulis",
+    "lv": "Atņemšana — nulle",
+    "et": "Lahutamine — null",
+    "be": "Адніманьне — нуль",
+    "ka": "გამოკლება — ნული",
+    "kk": "Азайту — нөл",
     en: "Subtraction — Zero",
     zh: "减法 — 零",
     hi: "घटाव — शून्य",

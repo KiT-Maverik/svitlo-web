@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const subtractSelf_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.subtractSelf,
   name: {
+    "lt": "Atimtis — tas pats skaičius",
+    "lv": "Atņemšana — tas pats skaitlis",
+    "et": "Lahutamine — sama arv",
+    "be": "Адніманьне — той самы лік",
+    "ka": "გამოკლება — იგივე რიცხვი",
+    "kk": "Азайту — бірдей сан",
     en: "Subtraction — Same number",
     zh: "减法 — 同一个数",
     hi: "घटाव — वही संख्या",

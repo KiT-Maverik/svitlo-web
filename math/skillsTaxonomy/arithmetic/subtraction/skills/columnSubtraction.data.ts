@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const columnSubtraction_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.columnSubtraction,
   name: {
+    "lt": "Atimtis — stulpeliu",
+    "lv": "Atņemšana — stabiņā",
+    "et": "Lahutamine — kirjalik lahutamine",
+    "be": "Адніманьне — слупком",
+    "ka": "გამოკლება — სვეტურად",
+    "kk": "Азайту — баған түрінде",
     en: "Subtraction — Column method",
     zh: "减法 — 竖式计算",
     hi: "घटाव — स्तंभ विधि",

@@ -4,6 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const subtractMeaning_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.subtractMeaning,
   name: {
+    "lt": "Atimtis — reikšmė ir modeliai",
+    "lv": "Atņemšana — nozīme un modeļi",
+    "et": "Lahutamine — tähendus ja mudelid",
+    "be": "Адніманьне — сэнс і мадэлі",
+    "ka": "გამოკლება — მნიშვნელობა და მოდელები",
+    "kk": "Азайту — мағынасы мен модельдері",
     en: "Subtraction — Meaning and models",
     zh: "减法 — 含义与模型",
     hi: "घटाव — अर्थ और मॉडल",
