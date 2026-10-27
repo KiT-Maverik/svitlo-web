@@ -25,6 +25,6 @@ export const equalGroups_Skill_Data = buildSkillConfig({
     ms: "Menyelesaikan masalah kumpulan sama banyak",
     he: "פתרון בעיות של קבוצות שוות",
     pl: "Rozwiązywanie zadań o równych grupach",
-    uk: "Розв’язування задач на рівні групи",
+    uk: "Розв’язування задач на однакові групи",
   },
 });
