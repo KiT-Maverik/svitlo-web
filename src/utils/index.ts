@@ -8,7 +8,7 @@ export {
   validateBooleanArgument,
   validateNumberArgument,
   validateStringArgument,
-} from './CreateDynamicQuestion/CreateDynamicQuestion.utils';
+} from './create-dynamic-question/create-dynamic-question.utils';
 export type {
   DynamicQuestion,
   DynamicQuestion_ArgumentConfig,
@@ -23,7 +23,7 @@ export type {
   DynamicQuestion_NumberArgumentConfig,
   DynamicQuestion_StringArgumentConfig,
   DynamicQuestion_Variant,
-} from './CreateDynamicQuestion/CreateDynamicQuestion.types';
-export { createLocalizedFileLocations } from './CreateLocalizedFileLocations/CreateLocalizedFileLocations.utils';
-export type { CreateLocalizedFileLocationsOptions, LocalizedFileLocations } from './CreateLocalizedFileLocations/CreateLocalizedFileLocations.utils';
-export { createTextResource } from './CreateTextResource/CreateTextResource.utils';
+} from './create-dynamic-question/create-dynamic-question.types';
+export { createLocalizedFileLocations } from './create-localized-file-locations/create-localized-file-locations.utils';
+export type { CreateLocalizedFileLocationsOptions, LocalizedFileLocations } from './create-localized-file-locations/create-localized-file-locations.utils';
+export { createTextResource } from './create-text-resource/create-text-resource.utils';
