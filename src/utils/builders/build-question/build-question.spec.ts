@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Question_Config, TextResource_Config } from '@types';
-import { buildQuestion } from './BuildQuestion.utils';
+import { buildQuestion } from './build-question.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
   id, blockType: 'text', allLocales: false,

@@ -1,7 +1,7 @@
 import type { Lesson, Lesson_Config, LessonSection, Locale, Quiz_Config, Resource_Config } from '@types';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
-import { buildResource, buildTextResource } from '../BuildResource/BuildResource.utils';
-import { buildQuiz } from '../BuildQuiz/BuildQuiz.utils';
+import { buildResource, buildTextResource } from '../build-resource/build-resource.utils';
+import { buildQuiz } from '../build-quiz/build-quiz.utils';
 
 function isResource(value: unknown): value is Resource_Config {
   return typeof value === 'object' && value !== null && 'blockType' in value;

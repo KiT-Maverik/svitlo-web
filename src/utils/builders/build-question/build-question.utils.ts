@@ -1,6 +1,6 @@
 import type { Locale, Resource, Resource_Config } from '@types';
 import type { Question, Question_Config } from '@/types/content/question.types';
-import { buildResource, buildTextResource } from '../BuildResource/BuildResource.utils';
+import { buildResource, buildTextResource } from '../build-resource/build-resource.utils';
 
 export function buildQuestion(config: Question_Config, locale: Locale): Question {
   const base = {

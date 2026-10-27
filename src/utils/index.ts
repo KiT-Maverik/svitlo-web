@@ -1,7 +1,7 @@
-export { buildLesson } from './Builders/BuildLesson/BuildLesson.utils';
-export { buildQuestion } from './Builders/BuildQuestion/BuildQuestion.utils';
-export { buildQuiz } from './Builders/BuildQuiz/BuildQuiz.utils';
-export { buildResource, buildTextResource } from './Builders/BuildResource/BuildResource.utils';
+export { buildLesson } from './builders/build-lesson/build-lesson.utils';
+export { buildQuestion } from './builders/build-question/build-question.utils';
+export { buildQuiz } from './builders/build-quiz/build-quiz.utils';
+export { buildResource, buildTextResource } from './builders/build-resource/build-resource.utils';
 export {
   createDynamicQuestion,
   validateArgument,
