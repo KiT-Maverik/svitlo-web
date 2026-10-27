@@ -68,7 +68,7 @@ describe('Natural Numbers taxonomy integrity', () => {
       const actualSkills = readdirSync(skillsDir).filter(filename =>
         filename.endsWith('.data.ts') && filename !== 'index.data.ts');
       assert.deepEqual(actualSkills.sort(), skills.map(skill => `${skill}.data.ts`).sort());
-      assert.deepEqual(lines(join(skillsDir, 'index.data.ts')), skills.map(skill =>
+      assert.deepEqual(lines(join(skillsDir, 'index.data.ts')), skills.slice().sort().map(skill =>
         `export { ${skill}_Skill_Data } from './${skill}.data';`).sort());
 
       const ids = source(join(skillsDir, 'index.ids.ts'));
