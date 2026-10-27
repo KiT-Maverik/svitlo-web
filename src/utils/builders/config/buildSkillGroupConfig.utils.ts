@@ -8,5 +8,5 @@ export function buildSkillGroupConfig<const T extends SkillGroup_Config>(config:
   validateSkillConfig(config);
   validateSkillReferences('SkillGroup', 'skillIds', config.skillIds);
   const collection = 'skillGroup' satisfies Collection;
-  return { ...config, collection };
+  return { ...config, collection } as const;
 }

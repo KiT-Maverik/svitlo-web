@@ -8,5 +8,5 @@ export function buildSkillDomainConfig<const T extends SkillDomain_Config>(confi
   validateSkillConfig(config);
   validateSkillReferences('SkillDomain', 'groupIds', config.groupIds);
   const collection = 'skillDomain' satisfies Collection;
-  return { ...config, collection };
+  return { ...config, collection } as const;
 }

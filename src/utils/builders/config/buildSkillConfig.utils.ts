@@ -41,5 +41,5 @@ export function validateSkillConfig(config: Skill_Config): void {
 export function buildSkillConfig<const T extends Skill_Config>(config: T) {
   validateSkillConfig(config);
   const collection = 'skill' satisfies Collection;
-  return { ...config, collection };
+  return { ...config, collection } as const;
 }
