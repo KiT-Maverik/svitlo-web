@@ -42,7 +42,7 @@
 | `math.time` | Час | 3 | 13 | — | 0/3 | 0/13 |
 | `math.money` | Гроші | 2 | 6 | — | 0/2 | 0/6 |
 | `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
-| `math.probability` | Ймовірність | 2 | 4 | — | 0/2 | 0/4 |
+| `math.probability` | Ймовірність | 2 | 4 | **Implemented** | 2/2 | 4/4 |
 | `math.problemSolving` | Задачі | 7 | 23 | — | 0/7 | 0/23 |
 | `math.reasoning` | Міркування | 4 | 11 | — | 0/4 | 0/11 |
 
@@ -784,7 +784,7 @@
 
 ### Domain 11. Ймовірність (4)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 2/2 Group configs + 4/4 individual Skills — **Complete**
 
 **ID:** `math.probability`
 
@@ -792,23 +792,23 @@
 
 **ID:** `math.probability.events`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.probability.certain-impossible` | Розрізняти достовірні й неможливі події на конкретних прикладах | 2–3 | — |
-| `math.probability.likelihood-language` | Порівнювати повсякденні події як більш або менш імовірні, пояснюючи вибір | 2–3 | — |
-| `math.probability.list-outcomes` | Називати можливі результати простого випадкового експерименту | 3 | — |
+| `math.probability.certain-impossible` | Розрізняти достовірні й неможливі події на конкретних прикладах | 2–3 | **Implemented** |
+| `math.probability.likelihood-language` | Порівнювати повсякденні події як більш або менш імовірні, пояснюючи вибір | 2–3 | **Implemented** |
+| `math.probability.list-outcomes` | Називати можливі результати простого випадкового експерименту | 3 | **Implemented** |
 
 #### SkillGroup 11.2. Експерименти (1)
 
 **ID:** `math.probability.experiments`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.probability.experiment-variation` | Порівнювати серії повторних випадкових експериментів і помічати відмінності результатів | 3 | — |
+| `math.probability.experiment-variation` | Порівнювати серії повторних випадкових експериментів і помічати відмінності результатів | 3 | **Implemented** |
 
 ### Domain 12. Задачі (23)
 

@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { events_Skills_Ids } from './index.ids';
+
+export const likelihoodLanguage_Skill_Data = buildSkillConfig({
+  id: events_Skills_Ids.likelihoodLanguage,
+  name: {
+    en: "Comparing the likelihood of everyday events",
+    zh: "比较日常事件发生的可能性",
+    hi: "रोज़मर्रा की घटनाओं की संभावना की तुलना करना",
+    es: "Comparar la probabilidad de sucesos cotidianos",
+    ar: "مقارنة احتمالية وقوع الأحداث اليومية",
+    fr: "Comparer la probabilité d'événements quotidiens",
+    bn: "দৈনন্দিন ঘটনার সম্ভাবনা তুলনা করা",
+    pt: "Comparar a probabilidade de eventos cotidianos",
+    ur: "روزمرہ واقعات کے امکانات کا موازنہ کرنا",
+    id: "Membandingkan kemungkinan kejadian sehari-hari",
+    de: "Die Wahrscheinlichkeit alltäglicher Ereignisse vergleichen",
+    ja: "日常の出来事の起こりやすさを比較する",
+    ko: "일상적인 사건의 발생 가능성 비교하기",
+    tr: "Günlük olayların olasılığını karşılaştırma",
+    vi: "So sánh khả năng xảy ra của các sự kiện hằng ngày",
+    ta: "அன்றாட நிகழ்வுகளின் நிகழ்தகவுகளை ஒப்பிடுதல்",
+    te: "రోజువారీ సంఘటనల సంభావ్యతలను పోల్చడం",
+    mr: "दैनंदिन घटनांच्या शक्यतेची तुलना करणे",
+    ms: "Membandingkan kebarangkalian peristiwa harian",
+    he: "השוואת הסיכויים להתרחשות אירועים יומיומיים",
+    pl: "Porównywanie prawdopodobieństwa zdarzeń codziennych",
+    uk: "Порівняння ймовірності повсякденних подій",
+  },
+});

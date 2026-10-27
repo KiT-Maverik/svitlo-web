@@ -83,3 +83,10 @@ Generated once for authoring; each UUID below must be copied as a **static strin
 | group | `math.geometry.perimeterArea` | `580b10f6-cb53-4db4-b74c-ffccef55564d` |
 | skill | `math.geomeasure.area-perimeter-contrast` | `1c1b7595-df14-4cb6-aa67-0831d6c4425d` |
 | skill | `math.geomeasure.perimeter-vs-area` | `96ab255c-a9f4-40aa-b072-e4f59790dfe5` |
+| domain | `math.probability` | `55bc6d54-f5fc-49fc-8e7f-8d31230e1aca` |
+| group | `math.probability.events` | `d41710f5-a1ce-4a10-ae8f-65b9ad51026c` |
+| skill | `math.probability.certain-impossible` | `96ed02b9-b56e-4498-8e3e-195e76eceaf0` |
+| skill | `math.probability.likelihood-language` | `a2a4702d-d512-4459-a699-a4fd874670ac` |
+| skill | `math.probability.list-outcomes` | `97f45a5a-d5bb-4618-89e5-11be5fb4f02c` |
+| group | `math.probability.experiments` | `cbaceeaf-fdb7-44c1-8c11-8b10c20f80ea` |
+| skill | `math.probability.experiment-variation` | `90f7775d-bb0d-4b7b-85fd-d56870116d3f` |
