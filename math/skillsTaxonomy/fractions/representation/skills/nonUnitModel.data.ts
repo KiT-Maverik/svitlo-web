@@ -5,6 +5,12 @@ export const nonUnitModel_Skill_Data = buildSkillConfig({
   id: representation_Skills_Ids.nonUnitModel,
   name: {
     en: "Modeling fractions with multiple equal parts",
+    "lt": "Trupmenų iš kelių lygių dalių modeliavimas",
+    "lv": "Daļu modelēšana ar vairākām vienādām daļām",
+    "et": "Mitmest võrdsest osast koosnevate murdude modelleerimine",
+    "be": "Мадэляваньне дробаў з некалькіх роўных частак",
+    "ka": "რამდენიმე ტოლი ნაწილისგან შემდგარი წილადების მოდელირება",
+    "kk": "Бірнеше тең бөліктері бар бөлшектерді модельдеу",
     zh: "用模型表示由多个等份组成的分数",
     hi: "कई समान भागों वाले भिन्न का मॉडल बनाना",
     es: "Representar fracciones de varias partes iguales",

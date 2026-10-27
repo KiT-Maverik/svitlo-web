@@ -5,6 +5,12 @@ export const unitFractionRead_Skill_Data = buildSkillConfig({
   id: representation_Skills_Ids.unitFractionRead,
   name: {
     en: "Reading and writing unit fractions",
+    "lt": "Vienetinių trupmenų skaitymas ir rašymas",
+    "lv": "Vienības daļu lasīšana un rakstīšana",
+    "et": "Ühikmurdude lugemine ja kirjutamine",
+    "be": "Чытаньне і запіс адзінкавых дробаў",
+    "ka": "ერთეულოვანი წილადების წაკითხვა და ჩაწერა",
+    "kk": "Бірлік бөлшектерді оқу және жазу",
     zh: "读写单位分数",
     hi: "इकाई भिन्न पढ़ना और लिखना",
     es: "Leer y escribir fracciones unitarias",
