@@ -9,5 +9,9 @@
 
 - `math.time.week-month-year` — `3fccd9a5-9094-400e-8401-be2fa98cbfa6`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
+
 ---
 [Час, гроші, дані](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

@@ -10,5 +10,9 @@
 - `math.time.day-sequence` — `8dba0c68-4d5b-4e3f-a6fa-119f448baaa4`
 - `math.time.read-hour` — `587f72d3-5c93-4aa7-9e36-588a1f5483f0`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
+
 ---
 [Час, гроші, дані](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
