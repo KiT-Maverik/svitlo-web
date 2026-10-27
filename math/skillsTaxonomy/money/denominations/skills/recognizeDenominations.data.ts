@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { denominations_Skills_Ids } from './index.ids';
+
+export const recognizeDenominations_Skill_Data = buildSkillConfig({
+  id: denominations_Skills_Ids.recognizeDenominations,
+  name: {
+    en: "Recognizing coin and banknote denominations",
+    zh: "识别硬币和纸币的面额",
+    hi: "सिक्कों और नोटों के मूल्यवर्ग पहचानना",
+    es: "Reconocer denominaciones de monedas y billetes",
+    ar: "التعرف على فئات العملات المعدنية والأوراق النقدية",
+    fr: "Reconnaître les valeurs des pièces et des billets",
+    bn: "মুদ্রা ও নোটের মূল্যমান চেনা",
+    pt: "Reconhecer os valores das moedas e cédulas",
+    ur: "سکوں اور نوٹوں کی مالیت پہچاننا",
+    id: "Mengenali pecahan uang logam dan kertas",
+    de: "Münz- und Banknotenwerte erkennen",
+    ja: "硬貨と紙幣の額面を見分ける",
+    ko: "동전과 지폐의 액면가 알아보기",
+    tr: "Madeni ve kâğıt paraların değerlerini tanıma",
+    vi: "Nhận biết mệnh giá tiền xu và tiền giấy",
+    ta: "நாணயங்கள் மற்றும் பணத்தாள்களின் மதிப்புகளை அறிதல்",
+    te: "నాణేలు మరియు నోట్ల విలువలను గుర్తించడం",
+    mr: "नाणी आणि नोटांची दर्शनी मूल्ये ओळखणे",
+    ms: "Mengenal nilai duit syiling dan wang kertas",
+    he: "זיהוי ערכי מטבעות ושטרות",
+    pl: "Rozpoznawanie nominałów monet i banknotów",
+    uk: "Розпізнавання номіналів монет і банкнот",
+  },
+});

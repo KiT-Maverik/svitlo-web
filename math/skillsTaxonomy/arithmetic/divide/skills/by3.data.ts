@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { divide_Skills_Ids } from './index.ids';
+
+export const by3_Skill_Data = buildSkillConfig({
+  id: divide_Skills_Ids.by3,
+  name: {
+    en: "Division — ÷ 3",
+    zh: "除法 — ÷ 3",
+    hi: "भाग — ÷ 3",
+    es: "División — ÷ 3",
+    ar: "القسمة — ÷ 3",
+    fr: "Division — ÷ 3",
+    bn: "ভাগ — ÷ 3",
+    pt: "Divisão — ÷ 3",
+    ur: "تقسیم — ÷ 3",
+    id: "Pembagian — ÷ 3",
+    de: "Division — ÷ 3",
+    ja: "除法 — ÷ 3",
+    ko: "나눗셈 — ÷ 3",
+    tr: "Bölme — ÷ 3",
+    vi: "Phép chia — ÷ 3",
+    ta: "வகுத்தல் — ÷ 3",
+    te: "భాగహారం — ÷ 3",
+    mr: "भागाकार — ÷ 3",
+    ms: "Pembahagian — ÷ 3",
+    he: "חילוק — ÷ 3",
+    pl: "Dzielenie — ÷ 3",
+    uk: "Ділення — ÷ 3",
+  },
+});

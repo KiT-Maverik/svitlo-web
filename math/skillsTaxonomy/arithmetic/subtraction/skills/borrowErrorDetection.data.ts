@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { subtraction_Skills_Ids } from './index.ids';
+
+export const borrowErrorDetection_Skill_Data = buildSkillConfig({
+  id: subtraction_Skills_Ids.borrowErrorDetection,
+  name: {
+    en: "Subtraction — Borrowing · Error detection",
+    zh: "减法 — 退位 · 错误识别",
+    hi: "घटाव — उधार लेना · त्रुटि पहचान",
+    es: "Resta — Préstamos · Detección de errores",
+    ar: "الطرح — الاستلاف · اكتشاف الأخطاء",
+    fr: "Soustraction — Emprunt · Détection des erreurs",
+    bn: "বিয়োগ — ধার নেওয়া · ভুল শনাক্তকরণ",
+    pt: "Subtração — Empréstimo · Identificação de erros",
+    ur: "تفریق — ادھار لینا · غلطیوں کی شناخت",
+    id: "Pengurangan — Meminjam · Mendeteksi kesalahan",
+    de: "Subtraktion — Entbündeln · Fehler erkennen",
+    ja: "減法 — 繰り下がり · 誤りの発見",
+    ko: "뺄셈 — 받아내림 · 오류 찾기",
+    tr: "Çıkarma — Onluk bozma · Hata belirleme",
+    vi: "Phép trừ — Mượn khi trừ · Phát hiện lỗi",
+    ta: "கழித்தல் — கடன் வாங்குதல் · பிழை கண்டறிதல்",
+    te: "తీసివేత — అప్పు తీసుకోవడం · తప్పులను గుర్తించడం",
+    mr: "वजाबाकी — उसने घेणे · चुका ओळखणे",
+    ms: "Penolakan — Meminjam · Mengesan kesilapan",
+    he: "חיסור — פריטה · זיהוי שגיאות",
+    pl: "Odejmowanie — Pożyczanie · Wykrywanie błędów",
+    uk: "Віднімання — Розгрупування · Виявлення помилок",
+  },
+});

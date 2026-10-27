@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { clock_Skills_Ids } from './index.ids';
+
+export const readHour_Skill_Data = buildSkillConfig({
+  id: clock_Skills_Ids.readHour,
+  name: {
+    en: "Reading time to the hour",
+    zh: "读取整点时间",
+    hi: "पूरे घंटे का समय पढ़ना",
+    es: "Leer la hora en punto",
+    ar: "قراءة الوقت عند تمام الساعة",
+    fr: "Lire l'heure juste",
+    bn: "পূর্ণ ঘণ্টার সময় পড়া",
+    pt: "Ler as horas exatas",
+    ur: "پورے گھنٹے کا وقت پڑھنا",
+    id: "Membaca waktu tepat pada jam",
+    de: "Volle Stunden ablesen",
+    ja: "ちょうどの時刻を読む",
+    ko: "정각 읽기",
+    tr: "Tam saatleri okuma",
+    vi: "Đọc giờ đúng",
+    ta: "முழு மணி நேரத்தை வாசித்தல்",
+    te: "గంట పూర్తయిన సమయం చదవడం",
+    mr: "पूर्ण तासाची वेळ वाचणे",
+    ms: "Membaca waktu tepat pada jam",
+    he: "קריאת שעה עגולה",
+    pl: "Odczytywanie pełnych godzin",
+    uk: "Зчитування часу з точністю до години",
+  },
+});

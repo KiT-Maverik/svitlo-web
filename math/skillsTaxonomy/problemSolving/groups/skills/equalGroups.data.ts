@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { groups_Skills_Ids } from './index.ids';
+
+export const equalGroups_Skill_Data = buildSkillConfig({
+  id: groups_Skills_Ids.equalGroups,
+  name: {
+    en: "Solving equal-group problems",
+    zh: "解决等组问题",
+    hi: "समान समूहों की समस्याएँ हल करना",
+    es: "Resolver problemas de grupos iguales",
+    ar: "حل مسائل المجموعات المتساوية",
+    fr: "Résoudre des problèmes de groupes égaux",
+    bn: "সমান দলের সমস্যা সমাধান",
+    pt: "Resolver problemas de grupos iguais",
+    ur: "برابر گروہوں کے مسائل حل کرنا",
+    id: "Menyelesaikan soal kelompok sama banyak",
+    de: "Aufgaben mit gleich großen Gruppen lösen",
+    ja: "同じ大きさのグループの問題を解く",
+    ko: "같은 크기 묶음 문제 풀기",
+    tr: "Eşit gruplu problemleri çözme",
+    vi: "Giải bài toán nhóm bằng nhau",
+    ta: "சமக் குழுக்களின் கணக்குகளைத் தீர்த்தல்",
+    te: "సమాన సమూహ సమస్యలను పరిష్కరించడం",
+    mr: "समान गटांच्या समस्या सोडवणे",
+    ms: "Menyelesaikan masalah kumpulan sama banyak",
+    he: "פתרון בעיות של קבוצות שוות",
+    pl: "Rozwiązywanie zadań o równych grupach",
+    uk: "Розв’язування задач на однакові групи",
+  },
+});

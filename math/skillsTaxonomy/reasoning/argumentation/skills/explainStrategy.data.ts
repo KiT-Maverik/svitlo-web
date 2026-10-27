@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { argumentation_Skills_Ids } from './index.ids';
+
+export const explainStrategy_Skill_Data = buildSkillConfig({
+  id: argumentation_Skills_Ids.explainStrategy,
+  name: {
+    en: "Explaining a chosen calculation strategy",
+    zh: "解释所选择的计算方法",
+    hi: "चुनी गई गणना विधि समझाना",
+    es: "Explicar la estrategia de cálculo elegida",
+    ar: "شرح طريقة الحساب المختارة",
+    fr: "Expliquer la stratégie de calcul choisie",
+    bn: "নির্বাচিত গণনার পদ্ধতি ব্যাখ্যা করা",
+    pt: "Explicar a estratégia de cálculo escolhida",
+    ur: "منتخب حسابی طریقہ سمجھانا",
+    id: "Menjelaskan strategi perhitungan yang dipilih",
+    de: "Einen gewählten Rechenweg erklären",
+    ja: "選んだ計算方法を説明する",
+    ko: "선택한 계산 전략 설명하기",
+    tr: "Seçilen hesaplama yöntemini açıklama",
+    vi: "Giải thích cách tính đã chọn",
+    ta: "தேர்ந்தெடுத்த கணக்கீட்டு முறையை விளக்குதல்",
+    te: "ఎంచుకున్న గణన పద్ధతిని వివరించడం",
+    mr: "निवडलेली गणना पद्धत स्पष्ट करणे",
+    ms: "Menerangkan kaedah pengiraan yang dipilih",
+    he: "הסבר דרך החישוב שנבחרה",
+    pl: "Wyjaśnianie wybranej strategii obliczeń",
+    uk: "Пояснення обраного способу обчислення",
+  },
+});
