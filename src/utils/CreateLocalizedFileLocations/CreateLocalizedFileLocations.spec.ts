@@ -9,16 +9,18 @@ describe('Utils', () => {
       it('should generate a path for every default supported locale', () => {
         const result = createLocalizedFileLocations('/lessons/intro', 'md');
         assert.deepEqual(Object.keys(result), DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => locale));
-        assert.equal(result['en-US'], '/lessons/intro/en-us.md');
-        assert.equal(result['uk-UA'], '/lessons/intro/uk-ua.md');
+        assert.equal(result['en-US'], '/lessons/intro/en.md');
+        assert.equal(result['uk-UA'], '/lessons/intro/uk.md');
+        assert.equal(result['zh-Hans-CN'], '/lessons/intro/zh.md');
+        assert.equal(new Set(Object.values(result)).size, DEFAULT_SUPPORTED_LANGUAGES.length);
       });
 
       it('should restrict the output to only the requested locales', () => {
         assert.deepEqual(createLocalizedFileLocations('/dir', '.txt', {
           only: ['uk-UA', 'pl-PL'],
         }), {
-          'pl-PL': '/dir/pl-pl.txt',
-          'uk-UA': '/dir/uk-ua.txt',
+          'pl-PL': '/dir/pl.txt',
+          'uk-UA': '/dir/uk.txt',
         });
       });
 
@@ -26,15 +28,15 @@ describe('Utils', () => {
         assert.deepEqual(createLocalizedFileLocations('/dir', 'md', {
           only: ['uk-UA'], include: ['en-US'],
         }), {
-          'en-US': '/dir/en-us.md',
-          'uk-UA': '/dir/uk-ua.md',
+          'en-US': '/dir/en.md',
+          'uk-UA': '/dir/uk.md',
         });
       });
 
       it('should remove excluded locales after applying inclusions', () => {
         assert.deepEqual(createLocalizedFileLocations('/dir', 'md', {
           only: ['uk-UA'], include: ['en-US'], exclude: ['uk-UA'],
-        }), { 'en-US': '/dir/en-us.md' });
+        }), { 'en-US': '/dir/en.md' });
       });
 
       it('should remove excluded locales from the default full selection', () => {
@@ -66,25 +68,25 @@ describe('Utils', () => {
 
       it('should strip every leading period from a supplied extension', () => {
         assert.deepEqual(createLocalizedFileLocations('/dir', '...md', { only: ['uk-UA'] }), {
-          'uk-UA': '/dir/uk-ua.md',
+          'uk-UA': '/dir/uk.md',
         });
       });
 
       it('should omit the extension when it is empty or only periods', () => {
         assert.deepEqual(createLocalizedFileLocations('/dir', '...', { only: ['uk-UA'] }), {
-          'uk-UA': '/dir/uk-ua',
+          'uk-UA': '/dir/uk',
         });
       });
 
       it('should trim trailing directory slashes before joining the file name', () => {
         assert.deepEqual(createLocalizedFileLocations('/dir///', '.md', { only: ['uk-UA'] }), {
-          'uk-UA': '/dir/uk-ua.md',
+          'uk-UA': '/dir/uk.md',
         });
       });
 
-      it('should preserve relative directories and the original locale casing only in keys', () => {
+      it('should preserve relative directories and use language codes only in file names', () => {
         assert.deepEqual(createLocalizedFileLocations('lessons', 'md', { only: ['zh-Hans-CN'] }), {
-          'zh-Hans-CN': 'lessons/zh-hans-cn.md',
+          'zh-Hans-CN': 'lessons/zh.md',
         });
       });
     });

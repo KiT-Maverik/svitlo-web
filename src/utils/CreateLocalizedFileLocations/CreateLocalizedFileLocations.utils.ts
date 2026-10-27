@@ -22,7 +22,8 @@ export function createLocalizedFileLocations<TOnly extends Locale = Locale>(
   extension: string,
   options: CreateLocalizedFileLocationsOptions & { only?: readonly TOnly[] } = {},
 ): LocalizedFileLocations<TOnly> {
-  const availableLocales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => locale);
+  const availableLanguages = DEFAULT_SUPPORTED_LANGUAGES;
+  const availableLocales = availableLanguages.map(({ locale }) => locale);
   const selectedLocales = new Set<Locale>(options.only ?? availableLocales);
 
   options.include?.forEach((locale) => selectedLocales.add(locale));
@@ -30,9 +31,9 @@ export function createLocalizedFileLocations<TOnly extends Locale = Locale>(
 
   const fileExtension = normalizeExtension(extension);
   const locations = Object.fromEntries(
-    availableLocales
-      .filter((locale) => selectedLocales.has(locale))
-      .map((locale) => [locale, joinPath(directory, `${locale.toLowerCase()}${fileExtension}`)]),
+    availableLanguages
+      .filter(({ locale }) => selectedLocales.has(locale))
+      .map(({ locale, language }) => [locale, joinPath(directory, `${language}${fileExtension}`)]),
   );
 
   return locations as LocalizedFileLocations<TOnly>;
