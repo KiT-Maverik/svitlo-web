@@ -2,7 +2,7 @@ import type { Lesson_Config } from '@types';
 import { locales as rayLocales } from './sections/theory/resources/scenes/LightRayDiagram/lightRayDiagram.locale';
 import { locales as simulationLocales } from './sections/theory/resources/scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
 import { locales as checkpointLocales } from './sections/theory/resources/scenes/Checkpoint/Checkpoint.locale';
-import { locales as practiceLocales } from './sections/practice/resources/scenes/MediumPractice/MediumPractice.locale';
+import { locales as practiceLocales } from './sections/practice/resources/scenes/Practice/Practice.locale';
 import { id } from './howLightMoves.constants';
 
 export const howLightMoves = {

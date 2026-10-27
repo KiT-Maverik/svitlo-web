@@ -37,5 +37,5 @@ export const practice: LessonSection_Config = {
   lessonId: id.lesson,
   name,
   skippable: true,
-  content: [task, scene.mediumPractice],
+  content: [task, scene.practice],
 };

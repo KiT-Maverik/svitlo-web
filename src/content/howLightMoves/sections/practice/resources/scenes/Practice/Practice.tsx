@@ -1,14 +1,14 @@
 'use client';
 
 import { useState, type CSSProperties } from 'react';
-import { LIGHT_SPEED_KM_S, media } from './MediumPractice.constants';
-import styles from './MediumPractice.module.css';
+import { LIGHT_SPEED_KM_S, media } from './Practice.constants';
+import styles from './Practice.module.css';
 import { getLocaleDirection } from '@types';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { MediumPractice_Locale } from './MediumPractice.locale';
+import type { Practice_Locale } from './Practice.locale';
 
-export function MediumPractice() {
-  const { locale, scenes } = useSceneLocales<{ practice: MediumPractice_Locale }>();
+export function Practice() {
+  const { locale, scenes } = useSceneLocales<{ practice: Practice_Locale }>();
   const messages = scenes.practice;
   const [selected, setSelected] = useState(0);
   const [paused, setPaused] = useState(true);

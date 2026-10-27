@@ -1,8 +1,8 @@
 import { createElement } from 'react';
 import type { SceneResource_Config } from '@types';
 import { id } from '../../../../howLightMoves.constants';
-import { MediumPractice } from './MediumPractice/MediumPractice';
+import { Practice } from './Practice/Practice';
 
 export const scene = {
-  mediumPractice: { id: id.resource.scene.mediumPractice, blockType: 'scene', component: createElement(MediumPractice) },
-} satisfies Record<'mediumPractice', SceneResource_Config>;
+  practice: { id: id.resource.scene.practice, blockType: 'scene', component: createElement(Practice) },
+} satisfies Record<'practice', SceneResource_Config>;

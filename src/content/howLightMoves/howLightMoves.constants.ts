@@ -13,7 +13,7 @@ export const id = {
         scene: {
             lightPropagationSimulation: '1c0b03fd-de9a-50b8-a493-03594337b5a7',
             lightRayDiagram: '5acac9ef-2452-5072-b471-1255d52b4a28',
-            mediumPractice: '9ea839e1-4237-5382-bf9b-1b534539f968',
+            practice: '9ea839e1-4237-5382-bf9b-1b534539f968',
             theoryCheckpoint: 'cd65e160-da27-57e1-a58f-38b1276c4346',
         }
     },
