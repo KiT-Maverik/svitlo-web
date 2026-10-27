@@ -1,14 +1,14 @@
 import type { Quiz_Config } from '@types';
-import { lightTravelsStraight_Question_Ids } from './lightTravelsStraight.ids';
+import { quiz_Questions_Ids } from './index.ids';
 import { createTextResource } from '@/utils';
 
 export const lightTravelsStraight_Question_Data = {
-  id: lightTravelsStraight_Question_Ids.question,
+  id: quiz_Questions_Ids.lightTravelsStraight.question,
   type: 'select-one-answer',
   restrictions: [],
   content: [
     createTextResource(
-      lightTravelsStraight_Question_Ids.content,
+      quiz_Questions_Ids.lightTravelsStraight.content,
       {
         en: 'How does light travel in a uniform transparent medium?',
         zh: '光在均匀透明的介质中如何传播？',
@@ -36,7 +36,7 @@ export const lightTravelsStraight_Question_Data = {
     ),
   ],
   explanation: createTextResource(
-    lightTravelsStraight_Question_Ids.explanation,
+    quiz_Questions_Ids.lightTravelsStraight.explanation,
     {
       en: 'In a uniform transparent medium, light travels in a straight line.',
       zh: '在均匀透明的介质中，光沿直线传播。',
@@ -67,7 +67,7 @@ export const lightTravelsStraight_Question_Data = {
   weight: 1,
   answers: {
     correct: createTextResource(
-      lightTravelsStraight_Question_Ids.correct,
+      quiz_Questions_Ids.lightTravelsStraight.correct,
       {
         en: 'In a straight line.',
         zh: '沿直线传播。',
@@ -95,7 +95,7 @@ export const lightTravelsStraight_Question_Data = {
     ),
     incorrect: [
       createTextResource(
-        lightTravelsStraight_Question_Ids.incorrectFirst,
+        quiz_Questions_Ids.lightTravelsStraight.incorrectFirst,
         {
           en: 'In a circle.',
           zh: '沿圆周传播。',
@@ -124,7 +124,7 @@ export const lightTravelsStraight_Question_Data = {
     ],
     distractors: [
       createTextResource(
-        lightTravelsStraight_Question_Ids.incorrectSecond,
+        quiz_Questions_Ids.lightTravelsStraight.incorrectSecond,
         {
           en: 'Always along a curve.',
           zh: '总是沿曲线传播。',

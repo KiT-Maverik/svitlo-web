@@ -1,14 +1,14 @@
 import type { Quiz_Config } from '@types';
-import { fastestMedium_Question_Ids } from './fastestMedium.ids';
+import { quiz_Questions_Ids } from './index.ids';
 import { createTextResource } from '@/utils';
 
 export const fastestMedium_Question_Data = {
-  id: fastestMedium_Question_Ids.question,
+  id: quiz_Questions_Ids.fastestMedium.question,
   type: 'select-one-answer',
   restrictions: [],
   content: [
     createTextResource(
-      fastestMedium_Question_Ids.content,
+      quiz_Questions_Ids.fastestMedium.content,
       {
         en: 'Where does light travel fastest: in a vacuum, air, or water?',
         zh: '光在真空、空气和水中，在哪种环境中传播得最快？',
@@ -36,7 +36,7 @@ export const fastestMedium_Question_Data = {
     ),
   ],
   explanation: createTextResource(
-    fastestMedium_Question_Ids.explanation,
+    quiz_Questions_Ids.fastestMedium.explanation,
     {
       en: 'Light travels fastest in a vacuum—about 300,000 km/s.',
       zh: '光在真空中传播得最快，速度约为每秒30万千米。',
@@ -67,7 +67,7 @@ export const fastestMedium_Question_Data = {
   weight: 1,
   answers: {
     correct: createTextResource(
-      fastestMedium_Question_Ids.correct,
+      quiz_Questions_Ids.fastestMedium.correct,
       {
         en: 'In a vacuum.',
         zh: '在真空中。',
@@ -95,7 +95,7 @@ export const fastestMedium_Question_Data = {
     ),
     incorrect: [
       createTextResource(
-        fastestMedium_Question_Ids.incorrectFirst,
+        quiz_Questions_Ids.fastestMedium.incorrectFirst,
         {
           en: 'In air.',
           zh: '在空气中。',
@@ -124,7 +124,7 @@ export const fastestMedium_Question_Data = {
     ],
     distractors: [
       createTextResource(
-        fastestMedium_Question_Ids.incorrectSecond,
+        quiz_Questions_Ids.fastestMedium.incorrectSecond,
         {
           en: 'In water.',
           zh: '在水中。',
