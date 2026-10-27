@@ -11,5 +11,9 @@
 - `math.addsub.subtract-zero` — `8481e65e-c9b4-4ac0-b336-03fe1a17cfcb`
 - `math.addsub.subtract-self` — `623f1f12-39d4-4422-8f2b-52053eefa7bc`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка збережена.
+
 ---
 [Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
