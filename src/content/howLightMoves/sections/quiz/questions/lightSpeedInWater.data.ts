@@ -1,9 +1,11 @@
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../../../Maps/assessmentMethodTaxonomy/index.ids';
 import type { Quiz_Config } from '@types';
 import { quiz_Questions_Ids } from './index.ids';
 import { createTextResource } from '@/utils';
 
 export const lightSpeedInWater_Question_Data = {
   id: quiz_Questions_Ids.lightSpeedInWater.question,
+  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.interpretation,
   type: 'select-one-answer',
   restrictions: [],
   content: [

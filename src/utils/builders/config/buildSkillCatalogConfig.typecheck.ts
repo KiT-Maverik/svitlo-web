@@ -28,10 +28,10 @@ buildSkillGroupConfig({
 });
 // @ts-expect-error Missing group references.
 buildSkillDomainConfig({ id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd', name: names });
-// @ts-expect-error Reference lists must be keyed objects.
 buildSkillGroupConfig({
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: names,
+  // @ts-expect-error Reference lists must be keyed objects.
   skillIds: ['9de735b7-4bcd-4b58-8832-d2d5d15846cd'],
 });
 // @ts-expect-error Semantic slugs are not UUID values.

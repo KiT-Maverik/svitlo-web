@@ -1,3 +1,4 @@
+import type { AssessmentMethodId } from './assessmentMethod.types';
 import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
 import type { NonEmptyArray } from '../misc.types';
 import type { Disability } from '../disabilities.types';
@@ -23,6 +24,7 @@ type Question_TextResource = TextResource | TextResource_Config;
 
 export interface Question_Base<R extends Question_Resource = Resource, T extends Question_TextResource = TextResource> {
   id: string;
+  assessmentMethodId: AssessmentMethodId;
   type: QuestionType;
   restrictions: Disability[];
   content: NonEmptyArray<R>;

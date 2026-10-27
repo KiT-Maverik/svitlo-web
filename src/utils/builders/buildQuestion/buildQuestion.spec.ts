@@ -1,3 +1,4 @@
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../Maps/assessmentMethodTaxonomy/index.ids';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Question_Config, TextResource_Config } from '@types';
@@ -12,6 +13,7 @@ const text = (id: string, english: string, ukrainian = english): TextResource_Co
 
 const base = {
   id: 'question',
+  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.interpretation,
   restrictions: [],
   content: [text('prompt', 'Question', 'Запитання')] as [TextResource_Config],
   explanation: text('explanation', 'Because', 'Тому що'),
@@ -33,6 +35,7 @@ describe('Utils', () => {
             'uk-UA',
           );
           assert.equal(result.id, 'question');
+          assert.equal(result.assessmentMethodId, assessmentMethods_AssessmentMethod_Ids.interpretation);
           assert.deepEqual(result.restrictions, []);
           assert.deepEqual(result.flashcardConfig, { includeInLessonSet: true });
         });
@@ -60,6 +63,7 @@ describe('Utils', () => {
           const result = buildQuestion(
             {
               id: 'minimal',
+              assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.retrieval,
               type: 'answer-with-number',
               restrictions: [],
               content: [text('prompt', 'Prompt')],

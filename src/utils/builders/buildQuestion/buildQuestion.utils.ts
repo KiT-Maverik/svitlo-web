@@ -5,6 +5,7 @@ import { buildResource, buildTextResource } from '../buildResource/buildResource
 export function buildQuestion(config: Question_Config, locale: Locale): Question {
   const base = {
     id: config.id,
+    assessmentMethodId: config.assessmentMethodId,
     restrictions: config.restrictions,
     content: config.content.map(resource => buildResource(resource, locale)) as [
       ReturnType<typeof buildResource>,

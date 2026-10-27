@@ -1,3 +1,4 @@
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../Maps/assessmentMethodTaxonomy/index.ids';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Quiz_Config, TextResource_Config } from '@types';
@@ -12,6 +13,7 @@ const text = (id: string, english: string, ukrainian = english): TextResource_Co
 
 const question = (id: string, number: number): Quiz_Config['questionBank'][number] => ({
   id,
+  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.application,
   type: 'answer-with-number',
   restrictions: [],
   content: [text('prompt-' + id, 'Question', 'Запитання')],
