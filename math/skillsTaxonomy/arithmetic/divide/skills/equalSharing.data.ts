@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const equalSharing_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.equalSharing,
   name: {
+    "lt": "Dalyba — lygiomis dalimis",
+    "lv": "Dalīšana — sadalīšana vienādās daļās",
+    "et": "Jagamine — võrdseteks osadeks jaotamine",
+    "be": "Дзяленьне — роўны падзел",
+    "ka": "გაყოფა — თანაბრად განაწილება",
+    "kk": "Бөлу — тең үлестерге бөлу",
     en: "Division — Equal sharing",
     zh: "除法 — 平均分配",
     hi: "भाग — समान बाँट",

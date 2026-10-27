@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const errorDetection_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.errorDetection,
   name: {
+    "lt": "Dalyba — klaidų atpažinimas",
+    "lv": "Dalīšana — kļūdu atklāšana",
+    "et": "Jagamine — vigade tuvastamine",
+    "be": "Дзяленьне — выяўленьне памылак",
+    "ka": "გაყოფა — შეცდომების გამოვლენა",
+    "kk": "Бөлу — қателерді анықтау",
     en: "Division — Error detection",
     zh: "除法 — 错误识别",
     hi: "भाग — त्रुटि पहचान",

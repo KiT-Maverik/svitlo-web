@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const doubleHalf_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.doubleHalf,
   name: {
+    "lt": "Dalyba — dalijimas pusiau ir dvigubinimas",
+    "lv": "Dalīšana — dalīšana uz pusēm un dubultošana",
+    "et": "Jagamine — poolitamine ja kahekordistamine",
+    "be": "Дзяленьне — палавіна й падваеньне",
+    "ka": "გაყოფა — განახევრება და გაორმაგება",
+    "kk": "Бөлу — жартылау және екі еселеу",
     en: "Division — Halving and doubling",
     zh: "除法 — 减半与加倍",
     hi: "भाग — आधा और दुगुना",

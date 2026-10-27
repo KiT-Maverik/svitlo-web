@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const noDivisionByZero_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.noDivisionByZero,
   name: {
+    "lt": "Dalyba — dalyba iš nulio",
+    "lv": "Dalīšana — dalīšana ar nulli",
+    "et": "Jagamine — nulliga jagamine",
+    "be": "Дзяленьне — дзяленьне на нуль",
+    "ka": "გაყოფა — ნულზე გაყოფა",
+    "kk": "Бөлу — нөлге бөлу",
     en: "Division — Division by Zero",
     zh: "除法 — 除以零",
     hi: "भाग — शून्य से भाग",

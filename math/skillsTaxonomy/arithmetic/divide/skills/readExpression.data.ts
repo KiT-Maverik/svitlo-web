@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const readExpression_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.readExpression,
   name: {
+    "lt": "Dalyba — reiškinių skaitymas",
+    "lv": "Dalīšana — izteiksmju lasīšana",
+    "et": "Jagamine — avaldiste lugemine",
+    "be": "Дзяленьне — чытаньне выразаў",
+    "ka": "გაყოფა — გამოსახულებების წაკითხვა",
+    "kk": "Бөлу — өрнектерді оқу",
     en: "Division — Reading expressions",
     zh: "除法 — 读算式",
     hi: "भाग — व्यंजक पढ़ना",

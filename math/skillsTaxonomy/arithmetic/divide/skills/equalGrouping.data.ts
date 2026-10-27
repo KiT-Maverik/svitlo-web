@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const equalGrouping_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.equalGrouping,
   name: {
+    "lt": "Dalyba — skirstymas į lygias grupes",
+    "lv": "Dalīšana — sadalīšana vienādās grupās",
+    "et": "Jagamine — võrdsetesse rühmadesse jaotamine",
+    "be": "Дзяленьне — разьмеркаваньне па роўных групах",
+    "ka": "გაყოფა — თანაბარ ჯგუფებად დაყოფა",
+    "kk": "Бөлу — тең топтарға бөлу",
     en: "Division — Equal grouping · Equal groups",
     zh: "除法 — 按相等组分组 · 等量组",
     hi: "भाग — समान समूह बनाना · समान समूह",

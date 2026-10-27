@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const checkQuotient_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.checkQuotient,
   name: {
+    "lt": "Dalyba — rezultato tikrinimas",
+    "lv": "Dalīšana — rezultāta pārbaude",
+    "et": "Jagamine — tulemuse kontrollimine",
+    "be": "Дзяленьне — праверка выніку",
+    "ka": "გაყოფა — შედეგის შემოწმება",
+    "kk": "Бөлу — нәтижені тексеру",
     en: "Division — Result checking",
     zh: "除法 — 结果检验",
     hi: "भाग — उत्तर की जाँच",
