@@ -2,14 +2,14 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Resource_AllLocales_Config } from '@types';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../types/languages';
-import type { DynamicQuestion_Config, DynamicQuestion_Variant } from './create-dynamic-question.types';
+import type { DynamicQuestion_Config, DynamicQuestion_Variant } from './createDynamicQuestion.types';
 import {
   createDynamicQuestion,
   validateArgument,
   validateBooleanArgument,
   validateNumberArgument,
   validateStringArgument,
-} from './create-dynamic-question.utils';
+} from './createDynamicQuestion.utils';
 
 const argumentsConfig = [
   { type: 'number', selector: 'amount', min: 1, max: 4, step: 1 },

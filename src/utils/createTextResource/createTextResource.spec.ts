@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../types/languages';
 import type { Resource_AllLocales_Config } from '@types';
-import { createTextResource } from './create-text-resource.utils';
+import { createTextResource } from './createTextResource.utils';
 
 const values = Object.fromEntries(
   DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => [locale, locale]),
