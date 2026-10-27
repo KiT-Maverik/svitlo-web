@@ -1,6 +1,6 @@
 import type { Resource_AllLocales_Config, Resource_ChosenLocales_Config } from '@types';
 import type { Locale } from '@types';
-import { createTextResource } from '../../src/utils';
+import { createTextResource } from '@/utils';
 
 declare const allValues: Resource_AllLocales_Config;
 const all = createTextResource('title', allValues);

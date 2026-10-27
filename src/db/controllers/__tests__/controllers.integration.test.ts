@@ -17,9 +17,9 @@ import {
   saveQuizState,
   updateLessonState,
   updateQuizState,
-} from '../src/db/controllers';
-import { DATABASE_NAME, DATABASE_VERSION, type StateStore } from '../src/db/utils/databaseConfig/databaseConfig.utils';
-import { openDatabase } from '../src/db/utils';
+} from '..';
+import { DATABASE_NAME, DATABASE_VERSION, type StateStore } from '../../utils/databaseConfig/databaseConfig.utils';
+import { openDatabase } from '../../utils';
 
 type LessonProgress = Extract<LessonState, { status: 'in-progress' }>;
 type QuizProgress = Extract<QuizState, { status: 'in-progress' }>;

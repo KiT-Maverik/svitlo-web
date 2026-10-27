@@ -5,7 +5,10 @@ on:
   pull_request:
     paths:
       - 'src/db/**'
-      - 'tests/e2e/db/**'
+      - 'src/db/controllers/__tests__/**'
+      - 'src/testing/db-browser-*.mjs'
+      - 'src/testing/db-browser-*.ts'
+      - 'src/testing/DbBrowserHarness.tsx'
       - 'playwright.db.config.ts'
       - 'playwright.config.ts'
       - 'package.json'

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { toQuestionWidgets } from '../../src/components/pages/Lesson/adapters/toQuestionWidgets';
+import { toQuestionWidgets } from './adapters/toQuestionWidgets';
 import { quiz } from '@/content/how-light-moves/sections/quiz';
-import { buildQuiz } from '../../src/utils';
+import { buildQuiz } from '@/utils';
 
 const lightQuestions = toQuestionWidgets(buildQuiz(quiz, 'uk-UA'));
 

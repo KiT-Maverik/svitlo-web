@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "include": [
-    "tests/type-contracts/**/*.ts",
+    "src/**/*.typecheck.ts",
     "src/**/*.d.ts"
   ],
   "exclude": [

@@ -10,15 +10,11 @@
     "plugins": []
   },
   "include": [
-    "tests/check.test.ts",
-    "tests/questions-colocated.test.ts",
-    "tests/feedback.test.ts",
-    "src/components/widgets/questions/check.ts",
-    "src/components/widgets/questions/examples.ts",
-    "tests/controller.test.ts",
+    "src/components/widgets/questions/*.unit.spec.ts",
+    "src/components/widgets/questions/helpers/AnswerOption/AnswerOption.unit.spec.ts",
     "src/utils/**/*.spec.ts",
     "src/db/utils/**/*.spec.ts",
-    "tests/db-controllers.integration.test.ts",
+    "src/db/controllers/__tests__/controllers.integration.test.ts",
     "src/db/controllers/**/*.spec.ts"
   ],
   "exclude": [

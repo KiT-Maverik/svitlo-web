@@ -7,7 +7,7 @@ export default defineConfig({
     environment: 'jsdom',
     include: ['src/**/*.unit.spec.ts', 'src/**/*.unit.spec.tsx'],
     exclude: [...configDefaults.exclude, 'src/components/widgets/questions/**'],
-    setupFiles: ['./src/test/setup.ts'],
+    setupFiles: ['./src/testing/setup.ts'],
     restoreMocks: true,
     clearMocks: true,
     css: true,

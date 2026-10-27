@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import type { LessonState, QuizResult, QuizState } from '@types';
-import { DATABASE_NAME, DATABASE_VERSION } from '../../../src/db/utils/databaseConfig/databaseConfig.utils';
-import type { ControllerCommand, DatabaseInspection } from './harness/commands';
+import { DATABASE_NAME, DATABASE_VERSION } from '../../utils/databaseConfig/databaseConfig.utils';
+import type { ControllerCommand, DatabaseInspection } from '@/testing/db-browser-commands';
 
 const date = '2026-01-01T00:00:00.000Z';
 

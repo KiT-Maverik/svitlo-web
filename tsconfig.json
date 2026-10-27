@@ -46,6 +46,6 @@
     ".test-build",
     "test-results",
     "playwright-report",
-    "tests/type-contracts"
+    "src/**/*.typecheck.ts"
   ]
 }

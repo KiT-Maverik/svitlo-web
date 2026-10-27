@@ -8,7 +8,7 @@ import {
   deleteQuizState, getQuizState, listQuizStates, saveQuizState, updateQuizState,
 } from '@/db';
 import { openDatabase } from '@/db/utils/openDatabase/openDatabase.utils';
-import type { ControllerCommand, DatabaseInspection } from './commands';
+import type { ControllerCommand, DatabaseInspection } from './db-browser-commands';
 
 declare global {
   interface Window {

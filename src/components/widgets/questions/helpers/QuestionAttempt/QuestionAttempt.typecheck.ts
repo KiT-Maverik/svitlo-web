@@ -1,5 +1,5 @@
 import type { AnswerWithNumberQuestion } from '@/components/widgets/questions/types';
-import type { QuestionAttemptProps } from '../../src/components/widgets/questions/helpers';
+import type { QuestionAttemptProps } from '..';
 
 const numeric: AnswerWithNumberQuestion = {
   id: 'n', type: 'numeric', prompt: '?', explanation: '.', expected: 1, tolerance: 0,

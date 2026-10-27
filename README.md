@@ -57,7 +57,7 @@ Question API examples (slots, lifecycle events, automatic grading): `/questions/
 
 Прогрес уроку та відповіді зберігаються в IndexedDB, тому перезавантаження відновлює поточний крок і стан тесту. Для іншого `lesson.id` клієнтський стан монтується заново. Контент Markdown рендериться сервером; під час перемикання локалі сцени отримують відповідний словник із конфігу. Для `MediumPractice` наразі є українська й англійська версії; решта локалей тимчасово використовують англійський текст.
 
-Тестування: `npm run test:components`, `npm run typecheck`, `npm run build`, `npx playwright test tests/e2e/light-lesson.spec.ts`.
+Тестування: `npm run test:components`, `npm run typecheck`, `npm run build`, `npx playwright test src/components/pages/Lesson/Lesson.e2e.spec.ts`.
 
 ## Навігація навчальної зони
 

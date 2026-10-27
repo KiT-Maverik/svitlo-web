@@ -100,7 +100,7 @@ describe('Widgets', () => {
       });
       it('should reject scientific notation, nonfinite input, separators and partial numbers', () => {
         const q = Questions_fx.make('numeric');
-        for (const value of ['1e2', 'Infinity', 'NaN', '1 000', '2.5x', '.', '1,2.3']) {
+        for (const value of ['1e2', 'Infinity', 'NaN', '0x10', '1 000', '2.5x', '--1', '.', '1,2.3', '9'.repeat(400)]) {
           assert.deepEqual(checkers.numeric(q, value), { status: 'invalid', reason: 'number-format' }, value);
         }
       });
@@ -108,6 +108,11 @@ describe('Widgets', () => {
         const q = Questions_fx.make('numeric');
         assert.deepEqual(checkers.numeric(q, ' '), { status: 'incomplete', reason: 'empty' });
         assert.deepEqual(checkers.numeric({ ...q, tolerance: -1 }, '2.5'), { status: 'invalid', reason: 'definition' });
+        assert.deepEqual(checkers.numeric({ ...q, expected: Infinity }, '2.5'), { status: 'invalid', reason: 'definition' });
+      });
+      it('should include a decimal rounding boundary in tolerance', () => {
+        const q = { ...Questions_fx.make('numeric'), expected: 0.2, tolerance: 0.1 };
+        assert.equal(checkers.numeric(q, '0.3').status, 'correct');
       });
       it('should apply exact matching when tolerance is zero', () => {
         const q = { ...Questions_fx.make('numeric'), tolerance: 0 };

@@ -27,8 +27,8 @@ try {
   }
   const testRoute = join(sandbox, 'src', 'app', 'db-browser-harness');
   mkdirSync(testRoute, { recursive: true });
-  cpSync(join(root, 'tests/e2e/db/harness/page.tsx'), join(testRoute, 'page.tsx'));
-  cpSync(join(root, 'tests/e2e/db/harness/commands.ts'), join(testRoute, 'commands.ts'));
+  cpSync(join(root, 'src/testing/DbBrowserHarness.tsx'), join(testRoute, 'page.tsx'));
+  cpSync(join(root, 'src/testing/db-browser-commands.ts'), join(testRoute, 'db-browser-commands.ts'));
   symlinkSync(join(root, 'node_modules'), join(sandbox, 'node_modules'), 'dir');
 
   const nextBin = resolve(root, 'node_modules/next/dist/bin/next');
