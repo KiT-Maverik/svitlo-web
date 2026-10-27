@@ -1,6 +1,7 @@
 export { algebra_SkillDomain_Ids } from './algebra/algebra.ids';
 export { arithmetic_SkillDomain_Ids } from './arithmetic/arithmetic.ids';
 export { counting_SkillDomain_Ids } from './counting/counting.ids';
+export { data_SkillDomain_Ids } from './data/data.ids';
 export { fractions_SkillDomain_Ids } from './fractions/fractions.ids';
 export { geometry_SkillDomain_Ids } from './geometry/geometry.ids';
 export { measurement_SkillDomain_Ids } from './measurement/measurement.ids';
