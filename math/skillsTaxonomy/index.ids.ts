@@ -9,3 +9,4 @@ export { numeration_SkillDomain_Ids } from './numeration/numeration.ids';
 export { probability_SkillDomain_Ids } from './probability/probability.ids';
 export { problemSolving_SkillDomain_Ids } from './problemSolving/problemSolving.ids';
 export { reasoning_SkillDomain_Ids } from './reasoning/reasoning.ids';
+export { time_SkillDomain_Ids } from './time/time.ids';

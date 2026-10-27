@@ -9,3 +9,4 @@ export { numeration_SkillDomain_Data } from './numeration/index.data';
 export { probability_SkillDomain_Data } from './probability/index.data';
 export { problemSolving_SkillDomain_Data } from './problemSolving/index.data';
 export { reasoning_SkillDomain_Data } from './reasoning/index.data';
+export { time_SkillDomain_Data } from './time/index.data';
