@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { numberLine_Skills_Ids } from './index.ids';
+
+export const numberLine20_Skill_Data = buildSkillConfig({
+  id: numberLine_Skills_Ids.numberLine20,
+  name: {
+    en: "Numbers on a line to 20",
+    zh: "在数轴上标出20以内的数",
+    hi: "20 तक संख्या रेखा पर संख्याएँ",
+    es: "Números en la recta hasta 20",
+    ar: "تمثيل الأعداد حتى 20 على خط الأعداد",
+    fr: "Placer les nombres jusqu'à 20 sur une droite",
+    bn: "২০ পর্যন্ত সংখ্যারেখায় সংখ্যা",
+    pt: "Números na reta até 20",
+    ur: "20 تک خطِ اعداد پر اعداد",
+    id: "Bilangan pada garis sampai 20",
+    de: "Zahlen bis 20 auf dem Zahlenstrahl",
+    ja: "20までの数直線上の数",
+    ko: "20까지 수직선의 수",
+    tr: "20'ye kadar sayı doğrusunda sayılar",
+    vi: "Các số trên trục số đến 20",
+    ta: "20 வரை எண் கோட்டில் எண்கள்",
+    te: "20 వరకు సంఖ్యారేఖపై సంఖ్యలు",
+    mr: "२० पर्यंत संख्यारेषेवरील संख्या",
+    ms: "Nombor pada garis hingga 20",
+    he: "מספרים על ציר עד 20",
+    pl: "Liczby na osi do 20",
+    uk: "Числа на прямій до 20",
+  },
+});
