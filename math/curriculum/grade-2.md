@@ -1,4 +1,4 @@
-# Mathematics — Grade 2
+# Curriculum: Mathematics — Grade 2
 
 > **Статус:** методична чернетка (AI-methodologist prototype), 27.10.2026. Універсальна програма без прив'язки до країни, державного стандарту, валюти або конкретного навчального календаря. Українська тут — мова авторського Markdown, а не обмеження майбутніх локалізацій.
 
@@ -18,7 +18,7 @@
 
 Уроки наведені в рекомендованому порядку; тривалість і кількість навчальних годин навмисно не фіксуються. Кожен запис — **план уроку, не готовий контент**. Ідентифікатори: читабельний редакційний ключ і відповідний статичний UUID з [UUID-MIGRATION](../skillsTaxonomy/UUID-MIGRATION.md).
 
-### 1. Числа, розряди та закономірності
+### 01. [Числа, розряди та закономірності](./grade-2/01-chysla-rozriady-ta-zakonomirnosti/README.md)
 
 1. **Лічба й запис чисел до 100** — Рахує та читає двоцифрові числа.
    - **Target Skills:** `math.count.forward-100` · `64ecb242-b1d9-4967-a020-5f6fc711aa93`; `math.numbers.read-write-100` · `c9ff45cf-3fe7-4f2c-9380-ce1a5c463cf2`.
@@ -47,7 +47,7 @@
 9. **Зростаючі числові закономірності** — Знаходить і пояснює правило, за яким змінюється числовий ряд.
    - **Target Skills:** `math.algebra.growing-pattern` · `ce88fbc1-1607-42c3-8d54-e87e9d368bf6`.
 
-### 2. Додавання, віднімання та рівняння
+### 02. [Додавання, віднімання та рівняння](./grade-2/02-dodavannia-vidnimannia-ta-rivniannia/README.md)
 
 10. **Цілі десятки та розрядна арифметика** — Додає й віднімає десятки без переходу через розряд.
    - **Target Skills:** `math.addsub.add-subtract-tens` · `7f04c06b-e844-4dff-8417-d7a9b6fadaca`.
@@ -82,7 +82,7 @@
 20. **Двокрокові задачі на додавання й віднімання** — Складає та перевіряє план розв’язання.
    - **Target Skills:** `math.problems.two-step-plan` · `126e3b5b-fa90-4f68-8efc-05b0117611c3`; `math.problems.inverse-problem` · `75eb4981-4ba2-4e7f-ab31-e1acdcdac4a1`.
 
-### 3. Множення та ділення
+### 03. [Множення та ділення](./grade-2/03-mnozhennia-ta-dilennia/README.md)
 
 21. **Множення як рівні групи** — Переходить від груп предметів до повторюваного додавання.
    - **Target Skills:** `math.multiply.equal-groups` · `a3a6ab42-2285-4d6f-a65e-f2a4d8140a88`; `math.multiply.repeated-addition` · `5c08d331-b6ba-44ee-ab1d-0f1781f23f73`.
@@ -120,7 +120,7 @@
 32. **Ділення на один і на себе** — Пояснює й застосовує випадки ділення на 1 та ненульового числа на себе.
    - **Target Skills:** `math.divide.by-1-and-self` · `a609bf69-69fb-44f8-8367-db6360b2de79`.
 
-### 4. Геометрія та величини
+### 04. [Геометрія та величини](./grade-2/04-heometriia-ta-velychyny/README.md)
 
 33. **Многокутники та їхні ознаки** — Називає сторони й вершини, розрізняє трикутник, прямокутник, квадрат.
    - **Target Skills:** `math.geometry.polygon` · `a8c08632-974a-477c-8707-e3f8b39f217d`; `math.geometry.triangle-rectangle-square` · `c4186c89-f443-4eb0-8226-e1774c2e76d7`; `math.geometry.shape-attributes` · `91ac826f-9b38-4dee-8e19-bd7883514afe`.
@@ -146,7 +146,7 @@
 40. **Місткість у літрах** — Порівнює місткості й користується літром.
    - **Target Skills:** `math.measure.liter` · `3853f445-537c-4c06-b5ec-9391ce2a440f`; `math.measure.standard-unit-purpose` · `543a4960-c0e1-43cf-911b-4c59b6c36571`.
 
-### 5. Час, покупки, дані та міркування
+### 05. [Час, покупки, дані та міркування](./grade-2/05-chas-pokupky-dani-ta-mirkuvannia/README.md)
 
 41. **Час із точністю до п’яти хвилин** — Читає годинник і знаходить просту тривалість.
    - **Target Skills:** `math.time.read-half-quarter` · `1b6415de-16f7-4e65-9f82-871d0bdb8b2d`; `math.time.read-five-minute` · `21d2c77f-39e4-4c54-98fc-b54a8e1568fe`; `math.time.duration` · `c11ad392-6a44-49f4-a2b7-ea246a9a8ae4`.

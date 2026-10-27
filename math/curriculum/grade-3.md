@@ -1,4 +1,4 @@
-# Mathematics — Grade 3
+# Curriculum: Mathematics — Grade 3
 
 > **Статус:** методична чернетка (AI-methodologist prototype), 27.10.2026. Універсальна програма без прив'язки до країни, державного стандарту, валюти або конкретного навчального календаря. Українська тут — мова авторського Markdown, а не обмеження майбутніх локалізацій.
 
@@ -18,7 +18,7 @@
 
 Уроки наведені в рекомендованому порядку; тривалість і кількість навчальних годин навмисно не фіксуються. Кожен запис — **план уроку, не готовий контент**. Ідентифікатори: читабельний редакційний ключ і відповідний статичний UUID з [UUID-MIGRATION](../skillsTaxonomy/UUID-MIGRATION.md).
 
-### 1. Трицифрові числа та їхній порядок
+### 01. [Трицифрові числа та їхній порядок](./grade-3/01-trytsyfrovi-chysla-ta-ikhnii-poriadok/README.md)
 
 1. **Лічба й читання до 1000** — Відновлює послідовність і читає трицифрові числа.
    - **Target Skills:** `math.count.forward-1000` · `e789a4fd-8ea2-4309-b19d-eaede0ed9c37`; `math.numbers.read-write-1000` · `de22f569-5a58-4d63-bc1a-664fad8a6bf6`.
@@ -44,7 +44,7 @@
 8. **Округлення до десятків** — Визначає найближчий десяток і пояснює оцінювання.
    - **Target Skills:** `math.order.round-to-ten` · `a421f9f3-cba7-4e85-ae61-ecb06f78d916`.
 
-### 2. Обчислення в межах 1000
+### 02. [Обчислення в межах 1000](./grade-3/02-obchyslennia-v-mezhakh-1000/README.md)
 
 9. **Сотні та десятки в обчисленнях** — Виконує дії з круглими сотнями та десятками.
    - **Target Skills:** `math.addsub.hundreds-and-tens` · `8e0dda78-413c-4120-8d68-ea185bd1a1b6`.
@@ -64,7 +64,7 @@
 14. **Зручне групування доданків** — Перегруповує доданки без зміни суми.
    - **Target Skills:** `math.addsub.associative-addition` · `4754301d-73dc-4b7f-b146-3c8f14a9a3e1`.
 
-### 3. Множення та ділення — наступний рівень
+### 03. [Множення та ділення — наступний рівень](./grade-3/03-mnozhennia-ta-dilennia-nastupnyi-riven/README.md)
 
 15. **Таблиці множення 6 і 7** — Застосовує табличні факти й обґрунтовує їх.
    - **Target Skills:** `math.multiply.by-6` · `876aeae4-0fb9-444c-bd9f-b253f3e3db1c`; `math.multiply.by-7` · `395cf74c-7c7a-4257-8a3a-3769bc7dc17f`.
@@ -105,7 +105,7 @@
 27. **Знаходимо помилку в діленні** — Викриває некоректну частку або остачу.
    - **Target Skills:** `math.divide.error-detection` · `06ea981c-0bfb-411b-9386-e04d83c92907`.
 
-### 4. Вирази, рівняння та дроби
+### 04. [Вирази, рівняння та дроби](./grade-3/04-vyrazy-rivniannia-ta-droby/README.md)
 
 28. **Порядок арифметичних дій** — Виконує багатодійні вирази та знаходить порушення правил.
    - **Target Skills:** `math.algebra.order-of-operations` · `87cd08bd-e276-4a36-88de-77dd23028abf`; `math.algebra.identify-expression-error` · `4f5207c6-619e-4714-a2f7-486f9b4630dc`.
@@ -134,7 +134,7 @@
 36. **Десяті та дроби більші за одиницю** — Пояснює зв’язок десятих із діленням та моделює дроби понад один.
    - **Target Skills:** `math.fractions.tenths-as-division` · `07f83714-554b-4dd3-8e1a-3abeb1c065b0`; `math.fractions.fraction-greater-than-one` · `59f5bbe7-63e4-4f1b-a23e-47f3e59c1ac7`.
 
-### 5. Геометрія, величини, час і дані
+### 05. [Геометрія, величини, час і дані](./grade-3/05-heometriia-velychyny-chas-i-dani/README.md)
 
 37. **Коло, круг, радіус і діаметр** — Показує елементи кола й будує його циркулем.
    - **Target Skills:** `math.geometry.circle-disk` · `e875516d-7466-4b91-b249-1b4e0de6b052`; `math.geometry.radius-diameter` · `200f6633-8027-4330-8218-b6e4c1cc1750`; `math.geometry.draw-circle` · `66ec42c0-7450-4b2d-93b5-d5fd0ef0f02f`.
@@ -175,7 +175,7 @@
 49. **Маршрут на координатній сітці** — Читає простий план на сітці та описує маршрут.
    - **Target Skills:** `math.geometry.grid-map-navigation` · `43b1fdd6-0846-4c0c-a01b-375a6fec3b2f`.
 
-### 6. Задачі та математичне міркування
+### 06. [Задачі та математичне міркування](./grade-3/06-zadachi-ta-matematychne-mirkuvannia/README.md)
 
 50. **У скільки разів більше або менше** — Розв’язує задачі на кратне порівняння й зміну у кілька разів.
    - **Target Skills:** `math.problems.multiplicative-comparison` · `1d85ddb7-6a08-4972-8458-80d86a41daeb`; `math.problems.increase-decrease-factor` · `863bc70e-c4f5-4ca2-b65d-94d69638c09d`.
