@@ -4,6 +4,12 @@ import { notation_Skills_Ids } from './index.ids';
 export const readWrite1000_Skill_Data = buildSkillConfig({
   id: notation_Skills_Ids.readWrite1000,
   name: {
+    "lt": "Triženklių skaičių skaitymas ir rašymas",
+    "lv": "Trīsciparu skaitļu lasīšana un rakstīšana",
+    "et": "Kolmekohaliste arvude lugemine ja kirjutamine",
+    "be": "Чытаньне й запіс трохзначных лікаў",
+    "ka": "სამნიშნა რიცხვების წაკითხვა და ჩაწერა",
+    "kk": "Үш таңбалы сандарды оқу және жазу",
     en: "Reading and writing three-digit numbers",
     zh: "读写三位数",
     hi: "तीन अंकों की संख्याएँ पढ़ना और लिखना",

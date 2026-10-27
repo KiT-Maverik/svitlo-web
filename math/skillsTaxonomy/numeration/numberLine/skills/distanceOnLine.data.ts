@@ -4,6 +4,12 @@ import { numberLine_Skills_Ids } from './index.ids';
 export const distanceOnLine_Skill_Data = buildSkillConfig({
   id: numberLine_Skills_Ids.distanceOnLine,
   name: {
+    "lt": "Atstumas tarp sveikųjų skaičių skaičių tiesėje",
+    "lv": "Attālums starp veseliem skaitļiem uz skaitļu taisnes",
+    "et": "Täisarvude vaheline kaugus arvteljel",
+    "be": "Адлегласьць паміж цэлымі лікамі на лікавай прамой",
+    "ka": "მთელ რიცხვებს შორის მანძილი რიცხვით წრფეზე",
+    "kk": "Сан түзуіндегі бүтін сандар арасындағы қашықтық",
     en: "Distance between integers on a number line",
     zh: "求数轴上整数间的距离",
     hi: "संख्या रेखा पर पूर्णांकों के बीच दूरी",

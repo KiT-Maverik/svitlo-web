@@ -4,6 +4,12 @@ import { numberLine_Skills_Ids } from './index.ids';
 export const numberLine20_Skill_Data = buildSkillConfig({
   id: numberLine_Skills_Ids.numberLine20,
   name: {
+    "lt": "Skaičiai skaičių tiesėje iki 20",
+    "lv": "Skaitļi uz skaitļu taisnes līdz 20",
+    "et": "Arvud arvteljel kuni 20",
+    "be": "Лікі на лікавай прамой да 20",
+    "ka": "რიცხვები რიცხვით წრფეზე 20-მდე",
+    "kk": "20-ға дейінгі сандар сан түзуінде",
     en: "Numbers on a line to 20",
     zh: "在数轴上标出20以内的数",
     hi: "20 तक संख्या रेखा पर संख्याएँ",

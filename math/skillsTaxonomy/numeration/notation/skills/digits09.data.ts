@@ -4,6 +4,12 @@ import { notation_Skills_Ids } from './index.ids';
 export const digits09_Skill_Data = buildSkillConfig({
   id: notation_Skills_Ids.digits09,
   name: {
+    "lt": "Skaitmenys 0–9 ir skaitmens reikšmė",
+    "lv": "Cipari 0–9 un cipara nozīme",
+    "et": "Numbrid 0–9 ja numbri tähendus",
+    "be": "Лічбы 0–9 і значэньне лічбы",
+    "ka": "ციფრები 0–9 და ციფრის მნიშვნელობა",
+    "kk": "0–9 цифрлары және цифрдың мағынасы",
     en: "Digits 0–9 and the meaning of a digit",
     zh: "认识0至9的数字及数字与数的区别",
     hi: "0–9 के अंक और अंक तथा संख्या का अंतर",

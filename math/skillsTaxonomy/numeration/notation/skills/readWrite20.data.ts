@@ -4,6 +4,12 @@ import { notation_Skills_Ids } from './index.ids';
 export const readWrite20_Skill_Data = buildSkillConfig({
   id: notation_Skills_Ids.readWrite20,
   name: {
+    "lt": "Skaičių 0–20 skaitymas, rašymas ir siejimas su kiekiu",
+    "lv": "Skaitļu 0–20 lasīšana, rakstīšana un sasaistīšana ar daudzumu",
+    "et": "Arvude 0–20 lugemine, kirjutamine ja kogustega seostamine",
+    "be": "Чытаньне, запіс і суаднясеньне лікаў 0–20 з колькасьцю",
+    "ka": "0–20 რიცხვების წაკითხვა, ჩაწერა და რაოდენობასთან დაკავშირება",
+    "kk": "0–20 сандарын оқу, жазу және мөлшермен сәйкестендіру",
     en: "Reading, writing and matching numbers 0–20",
     zh: "读写并匹配0至20的数与数量",
     hi: "0–20 की संख्याएँ पढ़ना, लिखना और मात्रा से मिलाना",
