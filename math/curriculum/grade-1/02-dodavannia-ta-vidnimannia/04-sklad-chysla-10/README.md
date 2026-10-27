@@ -9,5 +9,9 @@
 
 - `math.addsub.number-bonds-10` — `43d5def4-faee-41d1-b9a8-b4e120120bb6`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище зберігається.
+
 ---
 [Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
