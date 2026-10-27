@@ -1,3 +1,6 @@
+// SkillDomain: Arithmetic
+export * from './arithmetic';
+
 // Лічба, кількість і первинне відчуття числа
 export { backward20 } from './backward20.data';
 export { cardinality } from './cardinality.data';
@@ -14,3 +17,6 @@ export { groupAndCount } from './groupAndCount.data';
 export { oneToOne } from './oneToOne.data';
 export { ordinal } from './ordinal.data';
 export { zero } from './zero.data';
+
+// SkillDomain: Geometry
+export * from './geometry';
