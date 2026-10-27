@@ -5,6 +5,12 @@ export const closedOpenLines_Skill_Data = buildSkillConfig({
   id: lines_Skills_Ids.closedOpenLines,
   name: {
     en: "Identifying closed and open lines",
+    "lt": "Uždarųjų ir atvirųjų linijų atpažinimas",
+    "lv": "Slēgtu un atvērtu līniju atpazīšana",
+    "et": "Suletud ja avatud joonte eristamine",
+    "be": "Распазнаваньне замкнёных і незамкнёных лініяў",
+    "ka": "დახურული და ღია ხაზების ამოცნობა",
+    "kk": "Тұйық және тұйық емес сызықтарды тану",
     zh: "识别封闭线和开放线",
     hi: "बंद और खुली रेखाएँ पहचानना",
     es: "Identificar líneas cerradas y abiertas",

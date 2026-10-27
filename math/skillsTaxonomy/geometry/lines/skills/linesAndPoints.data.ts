@@ -5,6 +5,12 @@ export const linesAndPoints_Skill_Data = buildSkillConfig({
   id: lines_Skills_Ids.linesAndPoints,
   name: {
     en: "Distinguishing points and line types",
+    "lt": "Taškų ir linijų tipų atskyrimas",
+    "lv": "Punktu un līniju veidu atšķiršana",
+    "et": "Punktide ja joonte liikide eristamine",
+    "be": "Адрозьненьне пунктаў і відаў лініяў",
+    "ka": "წერტილებისა და ხაზის სახეების გარჩევა",
+    "kk": "Нүктелер мен сызық түрлерін ажырату",
     zh: "区分点和各种线",
     hi: "बिंदु और रेखाओं के प्रकार पहचानना",
     es: "Distinguir puntos y tipos de líneas",

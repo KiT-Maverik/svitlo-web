@@ -5,6 +5,12 @@ export const positionWords_Skill_Data = buildSkillConfig({
   id: orientation_Skills_Ids.positionWords,
   name: {
     en: "Describing relative positions",
+    "lt": "Santykinės padėties apibūdinimas",
+    "lv": "Relatīvā novietojuma aprakstīšana",
+    "et": "Suhtelise asukoha kirjeldamine",
+    "be": "Апісаньне адноснага разьмяшчэньня",
+    "ka": "შედარებითი მდებარეობის აღწერა",
+    "kk": "Салыстырмалы орналасуды сипаттау",
     zh: "描述物体的相对位置",
     hi: "वस्तुओं की सापेक्ष स्थिति बताना",
     es: "Describir posiciones relativas",
