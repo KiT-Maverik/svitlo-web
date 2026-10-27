@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Lesson_Config, LessonContentCatalog, LessonSection_Config, Quiz_Config, TextResource_Config } from '@types';
-import { buildLesson } from './BuildLesson.utils';
+import { buildLesson } from './buildLesson.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
   id, blockType: 'text', allLocales: false,

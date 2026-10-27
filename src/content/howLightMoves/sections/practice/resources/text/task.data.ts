@@ -1,7 +1,8 @@
 import { createTextResource } from '@/utils';
+import { practice_TextResources_Ids } from './index.ids';
 
-const task = createTextResource(
-  '6e9b3471-a055-546f-8502-87df18302f6f',
+export const task_TextResource_Data = createTextResource(
+  practice_TextResources_Ids.task,
   {
     en: 'Compare the speed of light in vacuum, air and water.',
     zh: '比较光在真空、空气和水中的传播速度。',

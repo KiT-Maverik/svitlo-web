@@ -1,13 +1,14 @@
 import type { Quiz_Config } from '@types';
+import { lightSpeedInWater_Question_Ids } from './lightSpeedInWater.ids';
 import { createTextResource } from '@/utils';
 
-export const lightSpeedInWater = {
-  id: 'f42370dc-1de2-59bf-93a0-0e304f9021f0',
+export const lightSpeedInWater_Question_Data = {
+  id: lightSpeedInWater_Question_Ids.question,
   type: 'select-one-answer',
   restrictions: [],
   content: [
     createTextResource(
-      '036e5835-35c6-50bb-b195-9c3b5a9a339d',
+      lightSpeedInWater_Question_Ids.content,
       {
         en: 'How does the speed of light change in water compared with a vacuum?',
         zh: '与真空相比，光在水中的速度如何变化？',
@@ -35,7 +36,7 @@ export const lightSpeedInWater = {
     ),
   ],
   explanation: createTextResource(
-    '2f13114a-9715-5467-82ab-e56a8424a51c',
+    lightSpeedInWater_Question_Ids.explanation,
     {
       en: 'Light travels more slowly in water than in a vacuum.',
       zh: '光在水中的传播速度比在真空中慢。',
@@ -66,7 +67,7 @@ export const lightSpeedInWater = {
   weight: 1,
   answers: {
     correct: createTextResource(
-      '635f5beb-5464-59e0-80d9-a4044af786bf',
+      lightSpeedInWater_Question_Ids.correct,
       {
         en: 'It decreases.',
         zh: '变慢。',
@@ -94,7 +95,7 @@ export const lightSpeedInWater = {
     ),
     incorrect: [
       createTextResource(
-        '18b8063a-9e8e-5778-868a-9aecb594a031',
+        lightSpeedInWater_Question_Ids.incorrectFirst,
         {
           en: 'It increases.',
           zh: '变快。',
@@ -123,7 +124,7 @@ export const lightSpeedInWater = {
     ],
     distractors: [
       createTextResource(
-        '1684ab83-c09f-5dac-ad63-196cc0c9410a',
+        lightSpeedInWater_Question_Ids.incorrectSecond,
         {
           en: 'It does not change.',
           zh: '不变。',

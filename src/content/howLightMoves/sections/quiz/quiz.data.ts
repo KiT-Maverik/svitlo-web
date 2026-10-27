@@ -1,72 +1,36 @@
 import type { Quiz_Config } from '@types';
-import { createTextResource } from '@/utils';
-import { questionBank } from './questions';
-import { id } from '../../howLightMoves.constants';
+import { name_TextResource_Data, welcome_TextResource_Data } from './resources/text/index.data';
+import {
+  airVacuumSpeed_Question_Data,
+  fastestMedium_Question_Data,
+  lightRayDirection_Question_Data,
+  lightSpeedInWater_Question_Data,
+  lightTravelsStraight_Question_Data,
+  opaqueObjectShadow_Question_Data,
+} from './questions/index.data';
+import { howLightMoves_Lesson_Ids } from '../../howLightMoves.ids';
+import { quiz_Section_Ids, quiz_Quiz_Ids } from './quiz.ids';
 
-export const quiz: Quiz_Config = {
-    id: id.quiz,
-    sectionId: id.section.quiz,
-    lessonId: id.lesson,
-  name: createTextResource('1eb9908b-615d-4796-88a7-03dd8213ec62', {
-    en: 'Quiz',
-    zh: '测验',
-    hi: 'प्रश्नोत्तरी',
-    es: 'Cuestionario',
-    ar: 'اختبار',
-    fr: 'Quiz',
-    bn: 'কুইজ',
-    pt: 'Questionário',
-    ur: 'آزمائش',
-    id: 'Kuis',
-    de: 'Quiz',
-    ja: 'クイズ',
-    ko: '퀴즈',
-    tr: 'Kısa sınav',
-    vi: 'Bài kiểm tra',
-    ta: 'வினாடி வினா',
-    te: 'క్విజ్',
-    mr: 'प्रश्नमंजुषा',
-    ms: 'Kuiz',
-    he: 'בוחן',
-    pl: 'Quiz',
-    uk: 'Тест',
-  }),
+export const quiz_Quiz_Data: Quiz_Config = {
+  id: quiz_Quiz_Ids.quiz,
+  sectionId: quiz_Section_Ids.quiz,
+  lessonId: howLightMoves_Lesson_Ids.howLightMoves,
+  name: name_TextResource_Data,
   feedbackMode: 'immediate',
   grading: { mode: 'percentage', successThreshold: 70 },
   interaction: { retries: -1, showErrors: true, showCorrectAnswers: true, allowExplanations: true, allowDeferring: true, allowQuestionNavigation: true, skippable: true },
-  questionBank,
+  questionBank: [
+    lightTravelsStraight_Question_Data,
+    lightRayDirection_Question_Data,
+    fastestMedium_Question_Data,
+    lightSpeedInWater_Question_Data,
+    airVacuumSpeed_Question_Data,
+    opaqueObjectShadow_Question_Data,
+  ],
   results: { visibility: 'immediate', showScore: true },
   screen: {
     welcome: {
-      resources: [
-        createTextResource(
-          '485c38a3-25f7-5c47-be4a-bfaa32e9424e',
-          {
-            en: "Let's check how light travels.",
-            zh: '让我们检验一下光是如何传播的。',
-            hi: 'आइए जाँचें कि प्रकाश कैसे चलता है।',
-            es: 'Comprobemos cómo se propaga la luz.',
-            ar: 'لنتحقق من كيفية انتشار الضوء.',
-            fr: 'Vérifions comment la lumière se propage.',
-            bn: 'চলুন যাচাই করি আলো কীভাবে চলাচল করে।',
-            pt: 'Vamos conferir como a luz se propaga.',
-            ur: 'آئیے جانچیں کہ روشنی کیسے سفر کرتی ہے۔',
-            id: 'Mari kita periksa bagaimana cahaya merambat.',
-            de: 'Prüfen wir, wie sich Licht ausbreitet.',
-            ja: '光がどのように進むか、確かめましょう。',
-            ko: '빛이 어떻게 이동하는지 확인해 봅시다.',
-            tr: 'Işığın nasıl yayıldığını kontrol edelim.',
-            vi: 'Hãy kiểm tra xem ánh sáng truyền đi như thế nào.',
-            ta: 'ஒளி எவ்வாறு பயணிக்கிறது என்பதைச் சரிபார்ப்போம்.',
-            te: 'కాంతి ఎలా ప్రయాణిస్తుందో పరిశీలిద్దాం.',
-            mr: 'प्रकाश कसा प्रवास करतो ते तपासूया.',
-            ms: 'Mari kita semak bagaimana cahaya bergerak.',
-            he: 'בואו נבדוק כיצד האור מתקדם.',
-            pl: 'Sprawdźmy, jak rozchodzi się światło.',
-            uk: 'Перевірмо, як рухається світло.',
-          },
-        ),
-      ],
+      resources: [welcome_TextResource_Data],
     },
     ending: { success: { showDefaultContent: true }, fail: { showDefaultContent: true } },
   },

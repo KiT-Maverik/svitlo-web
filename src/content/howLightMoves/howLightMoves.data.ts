@@ -3,12 +3,14 @@ import { locales as rayLocales } from './sections/theory/resources/scenes/LightR
 import { locales as simulationLocales } from './sections/theory/resources/scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
 import { locales as checkpointLocales } from './sections/theory/resources/scenes/Checkpoint/Checkpoint.locale';
 import { locales as practiceLocales } from './sections/practice/resources/scenes/Practice/Practice.locale';
-import { id } from './howLightMoves.constants';
+import { howLightMoves_Lesson_Ids } from './howLightMoves.ids';
+import { howLightMoves_Sections_Ids } from './sections/index.ids';
+import { howLightMoves_TextResources_Ids } from './resources/text/index.ids';
 
-export const howLightMoves = {
-  id: id.lesson,
+export const howLightMoves_Lesson_Data = {
+  id: howLightMoves_Lesson_Ids.howLightMoves,
   slug: 'how-light-moves',
-  title: id.resource.text.name,
+  title: howLightMoves_TextResources_Ids.name,
   requireQuiz: true,
   sceneLocales: {
     ray: rayLocales,
@@ -20,6 +22,6 @@ export const howLightMoves = {
     allowNavigation: true,
     allowSkipping: true,
     showIndexes: true,
-    content: [id.section.theory, id.section.practice, id.section.quiz],
+    content: [howLightMoves_Sections_Ids.theory, howLightMoves_Sections_Ids.practice, howLightMoves_Sections_Ids.quiz],
   },
 } satisfies Lesson_Config;

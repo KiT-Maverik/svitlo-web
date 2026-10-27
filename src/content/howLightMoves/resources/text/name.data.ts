@@ -1,9 +1,9 @@
 import { createTextResource } from '@/utils';
 
-import { id } from '../../howLightMoves.constants';
+import { howLightMoves_TextResources_Ids } from './index.ids';
 
-export const name = createTextResource(
-    id.resource.text.name,
+export const name_TextResource_Data = createTextResource(
+    howLightMoves_TextResources_Ids.name,
     {
       en: 'How Light Travels',
       zh: '光是如何传播的',

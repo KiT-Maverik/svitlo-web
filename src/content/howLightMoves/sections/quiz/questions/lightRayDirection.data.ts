@@ -1,13 +1,14 @@
 import type { Quiz_Config } from '@types';
+import { lightRayDirection_Question_Ids } from './lightRayDirection.ids';
 import { createTextResource } from '@/utils';
 
-export const lightRayDirection = {
-  id: '26b09f82-f8db-5b7a-9a0f-7e7937fba45c',
+export const lightRayDirection_Question_Data = {
+  id: lightRayDirection_Question_Ids.question,
   type: 'select-one-answer',
   restrictions: [],
   content: [
     createTextResource(
-      'ecd0e88a-0a78-553b-94da-2dc23f7eb711',
+      lightRayDirection_Question_Ids.content,
       {
         en: 'What does a light ray show?',
         zh: '光线表示什么？',
@@ -35,7 +36,7 @@ export const lightRayDirection = {
     ),
   ],
   explanation: createTextResource(
-    'c0967099-071a-56fc-b3f1-c42a18e10c27',
+    lightRayDirection_Question_Ids.explanation,
     {
       en: 'A light ray shows the direction in which light travels.',
       zh: '光线表示光传播的方向。',
@@ -66,7 +67,7 @@ export const lightRayDirection = {
   weight: 1,
   answers: {
     correct: createTextResource(
-      'a1330386-a6f7-5d87-8184-8a97061a28dc',
+      lightRayDirection_Question_Ids.correct,
       {
         en: 'The direction light travels.',
         zh: '光传播的方向。',
@@ -94,7 +95,7 @@ export const lightRayDirection = {
     ),
     incorrect: [
       createTextResource(
-        '4964ff42-34e2-549a-8fee-3aae6fab2f64',
+        lightRayDirection_Question_Ids.incorrectFirst,
         {
           en: 'The temperature of the source.',
           zh: '光源的温度。',
@@ -123,7 +124,7 @@ export const lightRayDirection = {
     ],
     distractors: [
       createTextResource(
-        '67dd2d47-f486-51d8-a546-52479f1ad1f7',
+        lightRayDirection_Question_Ids.incorrectSecond,
         {
           en: 'The size of a light particle.',
           zh: '光粒子的大小。',

@@ -1,7 +1,8 @@
 import { createTextResource } from '@/utils';
+import { practice_TextResources_Ids } from './index.ids';
 
-export const name = createTextResource(
-  '3b5ac8f2-e075-59ed-bc54-04b3697f8635',
+export const name_TextResource_Data = createTextResource(
+  practice_TextResources_Ids.name,
   {
     en: 'Practice',
     zh: '练习',

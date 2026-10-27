@@ -1,13 +1,14 @@
 import type { Quiz_Config } from '@types';
+import { opaqueObjectShadow_Question_Ids } from './opaqueObjectShadow.ids';
 import { createTextResource } from '@/utils';
 
-export const opaqueObjectShadow = {
-  id: 'fbc29fba-d44d-5658-b6e7-ef1733ce81b5',
+export const opaqueObjectShadow_Question_Data = {
+  id: opaqueObjectShadow_Question_Ids.question,
   type: 'select-one-answer',
   restrictions: [],
   content: [
     createTextResource(
-      '6c774fef-a950-58f3-af3f-8aab86a20499',
+      opaqueObjectShadow_Question_Ids.content,
       {
         en: 'What forms behind an opaque object that blocks light?',
         zh: '不透明的物体挡住光后，它的后方会形成什么？',
@@ -35,7 +36,7 @@ export const opaqueObjectShadow = {
     ),
   ],
   explanation: createTextResource(
-    '7be66008-e2b4-5e52-b859-76c67681ef83',
+    opaqueObjectShadow_Question_Ids.explanation,
     {
       en: 'A shadow forms behind an opaque object.',
       zh: '不透明物体的后方会形成影子。',
@@ -66,7 +67,7 @@ export const opaqueObjectShadow = {
   weight: 1,
   answers: {
     correct: createTextResource(
-      'cd4ab79f-814c-537b-827f-8df5e8c41bc2',
+      opaqueObjectShadow_Question_Ids.correct,
       {
         en: 'A shadow.',
         zh: '影子。',
@@ -94,7 +95,7 @@ export const opaqueObjectShadow = {
     ),
     incorrect: [
       createTextResource(
-        'ef4f844a-cd36-54eb-a39a-e5ffcb5ddadb',
+        opaqueObjectShadow_Question_Ids.incorrectFirst,
         {
           en: 'A new light source.',
           zh: '新的光源。',
@@ -123,7 +124,7 @@ export const opaqueObjectShadow = {
     ],
     distractors: [
       createTextResource(
-        '11b016c6-cfc7-5faf-9cb9-6f0c792c3f14',
+        opaqueObjectShadow_Question_Ids.incorrectSecond,
         {
           en: 'A vacuum.',
           zh: '真空。',

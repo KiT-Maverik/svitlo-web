@@ -3,7 +3,7 @@ import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { LightPropagationSimulation } from './LightPropagationSimulation';
 import { locales } from './lightPropagationSimulation.locale';
-import { howLightMoves } from '../../../../../howLightMoves.data';
+import { howLightMoves_Lesson_Data } from '../../../../../index.data';
 import { howLightMovesCatalog } from '../../../../../howLightMoves.catalog';
 import { buildLesson } from '@/utils';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
@@ -11,7 +11,7 @@ import type { Locale } from '@types';
 
 export const LightPropagationSimulation_fx = {
   render: ({ locale = 'uk-UA' }: { locale?: Locale } = {}) =>
-    render(createElement(SceneLocaleProvider, { locale, scenes: buildLesson(howLightMoves, locale, howLightMovesCatalog).sceneLocale ?? {} }, createElement(LightPropagationSimulation))),
+    render(createElement(SceneLocaleProvider, { locale, scenes: buildLesson(howLightMoves_Lesson_Data, locale, howLightMovesCatalog).sceneLocale ?? {} }, createElement(LightPropagationSimulation))),
   selectors: {
     scene: (messages = locales.uk, scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('region', { name: messages.scene.accessibleName }),

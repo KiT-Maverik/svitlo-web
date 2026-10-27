@@ -1,13 +1,14 @@
 import type { Quiz_Config } from '@types';
+import { airVacuumSpeed_Question_Ids } from './airVacuumSpeed.ids';
 import { createTextResource } from '@/utils';
 
-export const airVacuumSpeed = {
-  id: '21733db1-2e1a-55cc-80c2-08e68fec1d90',
+export const airVacuumSpeed_Question_Data = {
+  id: airVacuumSpeed_Question_Ids.question,
   type: 'select-one-answer',
   restrictions: [],
   content: [
     createTextResource(
-      '3fef6037-c629-5395-9db1-0dc955dbae57',
+      airVacuumSpeed_Question_Ids.content,
       {
         en: 'Is the speed of light the same in air and in a vacuum?',
         zh: '光在空气中和真空中的速度相同吗？',
@@ -35,7 +36,7 @@ export const airVacuumSpeed = {
     ),
   ],
   explanation: createTextResource(
-    '69dba392-fca7-5a7b-8c5e-e07f359a16c9',
+    airVacuumSpeed_Question_Ids.explanation,
     {
       en: 'Light travels slightly slower in air than in a vacuum.',
       zh: '光在空气中的传播速度比在真空中稍慢。',
@@ -66,7 +67,7 @@ export const airVacuumSpeed = {
   weight: 1,
   answers: {
     correct: createTextResource(
-      '90711b93-f187-5002-88a9-3eee2157709d',
+      airVacuumSpeed_Question_Ids.correct,
       {
         en: 'No, it is slightly slower in air.',
         zh: '不同，在空气中稍慢。',
@@ -94,7 +95,7 @@ export const airVacuumSpeed = {
     ),
     incorrect: [
       createTextResource(
-        '0d20b406-f074-5136-a437-670d7484d5b4',
+        airVacuumSpeed_Question_Ids.incorrectFirst,
         {
           en: 'Yes, it is exactly the same.',
           zh: '是的，完全相同。',
@@ -123,7 +124,7 @@ export const airVacuumSpeed = {
     ],
     distractors: [
       createTextResource(
-        '684adaff-fc81-5316-a769-f19a5829f051',
+        airVacuumSpeed_Question_Ids.incorrectSecond,
         {
           en: 'No, it is twice as fast in air.',
           zh: '不同，在空气中快两倍。',
