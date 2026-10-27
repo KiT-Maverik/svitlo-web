@@ -10,5 +10,9 @@
 - `math.addsub.facts-within-20` — `1ffee805-7302-4069-a2ae-1639b07ce718`
 - `math.addsub.inverse-operations` — `99807d43-bd91-498f-86d6-553f1cd3b51b`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Це сценарій, а не детальна методична специфікація.
+
 ---
 [Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
