@@ -5,6 +5,12 @@ export const readMinute_Skill_Data = buildSkillConfig({
   id: clock_Skills_Ids.readMinute,
   name: {
     en: "Reading and recording time to the minute",
+    "lt": "Laiko skaitymas ir užrašymas minučių tikslumu",
+    "lv": "Laika lasīšana un pierakstīšana līdz minūtei",
+    "et": "Kellaaja lugemine ja märkimine minuti täpsusega",
+    "be": "Чытаньне і запіс часу з дакладнасьцю да хвіліны",
+    "ka": "დროის წაკითხვა და ჩაწერა წუთის სიზუსტით",
+    "kk": "Уақытты минут дәлдікпен оқу және жазу",
     zh: "读取精确到分钟的时间并记录",
     hi: "मिनट तक समय पढ़ना और लिखना",
     es: "Leer y escribir la hora con precisión de un minuto",

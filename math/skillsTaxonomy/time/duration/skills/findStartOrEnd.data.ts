@@ -5,6 +5,12 @@ export const findStartOrEnd_Skill_Data = buildSkillConfig({
   id: duration_Skills_Ids.findStartOrEnd,
   name: {
     en: "Finding a start or end time from a duration",
+    "lt": "Pradžios arba pabaigos laiko radimas pagal trukmę",
+    "lv": "Sākuma vai beigu laika atrašana pēc ilguma",
+    "et": "Algus- või lõpuaja leidmine kestuse põhjal",
+    "be": "Знаходжаньне пачатку або канца паводле працягласьці",
+    "ka": "დაწყების ან დასრულების დროის პოვნა ხანგრძლივობის მიხედვით",
+    "kk": "Ұзақтығы бойынша басталу не аяқталу уақытын табу",
     zh: "根据持续时间求开始或结束时刻",
     hi: "अवधि से शुरू या समाप्ति का समय निकालना",
     es: "Hallar la hora de inicio o fin a partir de la duración",

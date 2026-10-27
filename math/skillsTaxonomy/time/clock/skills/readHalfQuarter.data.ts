@@ -5,6 +5,12 @@ export const readHalfQuarter_Skill_Data = buildSkillConfig({
   id: clock_Skills_Ids.readHalfQuarter,
   name: {
     en: "Reading half-hours and quarter-hours",
+    "lt": "Pusvalandžių ir ketvirčių valandos skaitymas",
+    "lv": "Pusstundu un ceturtdaļstundu nolasīšana",
+    "et": "Pool- ja veerandtundide lugemine",
+    "be": "Чытаньне паўгадзінаў і чвэрцяў гадзіны",
+    "ka": "ნახევარი და მეოთხედი საათის წაკითხვა",
+    "kk": "Жарты сағат пен ширек сағатты оқу",
     zh: "读取半点和一刻钟的时间",
     hi: "आधे और चौथाई घंटे का समय पढ़ना",
     es: "Leer medias horas y cuartos de hora",

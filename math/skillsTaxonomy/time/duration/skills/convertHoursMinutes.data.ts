@@ -5,6 +5,12 @@ export const convertHoursMinutes_Skill_Data = buildSkillConfig({
   id: duration_Skills_Ids.convertHoursMinutes,
   name: {
     en: "Converting hours and minutes",
+    "lt": "Valandų ir minučių keitimas",
+    "lv": "Stundu un minūšu pārveidošana",
+    "et": "Tundide ja minutite teisendamine",
+    "be": "Перавод гадзінаў і хвілінаў",
+    "ka": "საათებისა და წუთების გარდაქმნა",
+    "kk": "Сағаттар мен минуттарды түрлендіру",
     zh: "小时与分钟的换算",
     hi: "घंटों और मिनटों का रूपांतरण",
     es: "Convertir horas y minutos",

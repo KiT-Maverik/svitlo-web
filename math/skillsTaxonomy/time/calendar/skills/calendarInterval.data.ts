@@ -5,6 +5,12 @@ export const calendarInterval_Skill_Data = buildSkillConfig({
   id: calendar_Skills_Ids.calendarInterval,
   name: {
     en: "Counting days between dates",
+    "lt": "Dienų tarp datų skaičiavimas",
+    "lv": "Dienu skaitīšana starp datumiem",
+    "et": "Kuupäevadevaheliste päevade loendamine",
+    "be": "Падлік дзён паміж датамі",
+    "ka": "თარიღებს შორის დღეების დათვლა",
+    "kk": "Күндер арасындағы күн санын есептеу",
     zh: "计算两个日期之间的天数",
     hi: "दो तारीखों के बीच दिनों की गणना",
     es: "Contar días entre fechas",

@@ -5,6 +5,12 @@ export const daySequence_Skill_Data = buildSkillConfig({
   id: calendar_Skills_Ids.daySequence,
   name: {
     en: "Sequencing parts of the day",
+    "lt": "Paros dalių eiliškumas",
+    "lv": "Diennakts daļu secība",
+    "et": "Päevaosade järjestamine",
+    "be": "Пасьлядоўнасьць частак сутак",
+    "ka": "დღის მონაკვეთების მიმდევრობა",
+    "kk": "Тәулік бөліктерінің ретін анықтау",
     zh: "排列一天中各时段的顺序",
     hi: "दिन के हिस्सों को क्रम में रखना",
     es: "Ordenar las partes del día",

@@ -5,6 +5,12 @@ export const leapYearDays_Skill_Data = buildSkillConfig({
   id: calendar_Skills_Ids.leapYearDays,
   name: {
     en: "Distinguishing common and leap years",
+    "lt": "Paprastųjų ir keliamųjų metų atskyrimas",
+    "lv": "Parastu un garo gadu atšķiršana",
+    "et": "Liigaasta ja tavalise aasta eristamine",
+    "be": "Адрозьненьне звычайнага і высакоснага году",
+    "ka": "ჩვეულებრივი და ნაკიანი წლების გარჩევა",
+    "kk": "Кәдімгі және кібісе жылдарды ажырату",
     zh: "区分平年和闰年",
     hi: "सामान्य और लीप वर्ष में अंतर करना",
     es: "Distinguir años comunes y bisiestos",
