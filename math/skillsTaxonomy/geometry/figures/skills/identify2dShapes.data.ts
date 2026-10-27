@@ -5,6 +5,12 @@ export const identify2dShapes_Skill_Data = buildSkillConfig({
   id: figures_Skills_Ids.identify2dShapes,
   name: {
     en: "Identifying basic plane figures",
+    "lt": "Pagrindinių plokščiųjų figūrų atpažinimas",
+    "lv": "Pamata plaknes figūru atpazīšana",
+    "et": "Põhiliste tasandiliste kujundite äratundmine",
+    "be": "Распазнаваньне асноўных плоскіх фігураў",
+    "ka": "ძირითადი ბრტყელი ფიგურების ამოცნობა",
+    "kk": "Негізгі жазық фигураларды тану",
     zh: "识别基本平面图形",
     hi: "मूल समतलीय आकृतियों की पहचान",
     es: "Identificar figuras planas básicas",

@@ -5,6 +5,12 @@ export const rectangleAreaModel_Skill_Data = buildSkillConfig({
   id: area_Skills_Ids.rectangleAreaModel,
   name: {
     en: "Relating rectangle area to side-length multiplication",
+    "lt": "Stačiakampio ploto siejimas su kraštinių sandauga",
+    "lv": "Taisnstūra laukuma saistīšana ar malu garumu reizinājumu",
+    "et": "Ristküliku pindala seostamine külgede pikkuste korrutisega",
+    "be": "Сувязь плошчы прамавугольніка з множаньнем даўжыняў бакоў",
+    "ka": "მართკუთხედის ფართობის დაკავშირება გვერდების სიგრძეების ნამრავლთან",
+    "kk": "Тіктөртбұрыш ауданын қабырғаларының көбейтіндісімен байланыстыру",
     zh: "将长方形面积与边长乘积联系起来",
     hi: "आयत के क्षेत्रफल को भुजाओं के गुणनफल से जोड़ना",
     es: "Relacionar el área del rectángulo con el producto de sus lados",

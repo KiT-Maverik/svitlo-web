@@ -5,6 +5,12 @@ export const compositeArea_Skill_Data = buildSkillConfig({
   id: area_Skills_Ids.compositeArea,
   name: {
     en: "Finding the area of a composite rectilinear figure",
+    "lt": "Sudėtinės stačiakampės figūros ploto radimas",
+    "lv": "Saliktas taisnleņķa figūras laukuma atrašana",
+    "et": "Liitkujundi pindala leidmine ristkülikutest",
+    "be": "Знаходжаньне плошчы складанай прамавугольнай фігуры",
+    "ka": "რთული მართკუთხა ფიგურის ფართობის პოვნა",
+    "kk": "Құрама тікбұрышты фигураның ауданын табу",
     zh: "求组合直角图形的面积",
     hi: "संयुक्त समकोणीय आकृति का क्षेत्रफल निकालना",
     es: "Hallar el área de una figura compuesta por rectángulos",

@@ -5,6 +5,12 @@ export const circleDisk_Skill_Data = buildSkillConfig({
   id: circles_Skills_Ids.circleDisk,
   name: {
     en: "Distinguishing the circumference and the disk",
+    "lt": "Apskritimo ir skritulio atskyrimas",
+    "lv": "Riņķa līnijas un riņķa atšķiršana",
+    "et": "Ringjoone ja ringi eristamine",
+    "be": "Адрозьненьне акружнасьці і круга",
+    "ka": "წრეწირისა და წრის გარჩევა",
+    "kk": "Шеңбер мен дөңгелекті ажырату",
     zh: "区分圆周与圆面",
     hi: "वृत्त की परिधि और अंदरूनी क्षेत्र में अंतर",
     es: "Distinguir circunferencia y círculo",

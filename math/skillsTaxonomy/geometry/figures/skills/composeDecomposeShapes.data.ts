@@ -5,6 +5,12 @@ export const composeDecomposeShapes_Skill_Data = buildSkillConfig({
   id: figures_Skills_Ids.composeDecomposeShapes,
   name: {
     en: "Composing and decomposing plane figures",
+    "lt": "Plokščiųjų figūrų sudarymas ir skaidymas",
+    "lv": "Plaknes figūru veidošana un sadalīšana",
+    "et": "Tasandiliste kujundite koostamine ja osadeks jaotamine",
+    "be": "Складаньне і разьбіцьцё плоскіх фігураў",
+    "ka": "ბრტყელი ფიგურების შედგენა და დანაწილება",
+    "kk": "Жазық фигураларды құрастыру және бөлшектеу",
     zh: "拼合与拆分平面图形",
     hi: "समतलीय आकृतियों को जोड़ना और बाँटना",
     es: "Componer y descomponer figuras planas",

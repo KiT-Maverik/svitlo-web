@@ -5,6 +5,12 @@ export const radiusDiameter_Skill_Data = buildSkillConfig({
   id: circles_Skills_Ids.radiusDiameter,
   name: {
     en: "Relating the center, radius and diameter",
+    "lt": "Centro, spindulio ir skersmens ryšys",
+    "lv": "Centra, rādiusa un diametra saistība",
+    "et": "Keskpunkti, raadiuse ja diameetri seos",
+    "be": "Сувязь цэнтру, радыюсу і дыямэтру",
+    "ka": "ცენტრის, რადიუსისა და დიამეტრის კავშირი",
+    "kk": "Центр, радиус және диаметрдің байланысы",
     zh: "关联圆心、半径和直径",
     hi: "केंद्र त्रिज्या और व्यास का संबंध",
     es: "Relacionar centro, radio y diámetro",

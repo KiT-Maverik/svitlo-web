@@ -5,6 +5,12 @@ export const rightAngle_Skill_Data = buildSkillConfig({
   id: angles_Skills_Ids.rightAngle,
   name: {
     en: "Identifying and checking right angles",
+    "lt": "Stačiųjų kampų atpažinimas ir tikrinimas",
+    "lv": "Taisu leņķu atpazīšana un pārbaude",
+    "et": "Täisnurkade äratundmine ja kontrollimine",
+    "be": "Распазнаваньне і праверка прамых кутоў",
+    "ka": "მართი კუთხეების ამოცნობა და შემოწმება",
+    "kk": "Тік бұрыштарды анықтау және тексеру",
     zh: "识别并检验直角",
     hi: "समकोण पहचानना और जाँचना",
     es: "Identificar y comprobar ángulos rectos",

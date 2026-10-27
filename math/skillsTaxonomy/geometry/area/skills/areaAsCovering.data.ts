@@ -5,6 +5,12 @@ export const areaAsCovering_Skill_Data = buildSkillConfig({
   id: area_Skills_Ids.areaAsCovering,
   name: {
     en: "Understanding area as coverage by unit squares",
+    "lt": "Ploto supratimas kaip padengimo vienetiniais kvadratais",
+    "lv": "Laukuma izpratne kā pārklājums ar vienības kvadrātiem",
+    "et": "Pindala mõistmine ühikruutudega katmisena",
+    "be": "Разуменьне плошчы як пакрыцьця адзінкавымі квадратамі",
+    "ka": "ფართობის გაგება ერთეულოვანი კვადრატებით დაფარვის გზით",
+    "kk": "Ауданды бірлік шаршылармен жабу ретінде түсіну",
     zh: "把面积理解为单位正方形的覆盖",
     hi: "इकाई वर्गों से ढके क्षेत्र के रूप में क्षेत्रफल समझना",
     es: "Comprender el área como recubrimiento con cuadrados unidad",
