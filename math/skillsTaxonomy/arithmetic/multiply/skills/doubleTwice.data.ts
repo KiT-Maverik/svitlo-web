@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const doubleTwice_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.doubleTwice,
   name: {
+    "lt": "Daugyba — dvigubinimas du kartus",
+    "lv": "Reizināšana — divkāršošana divas reizes",
+    "et": "Korrutamine — kahekordistamine kaks korda",
+    "be": "Множаньне — падвойнае падваеньне",
+    "ka": "გამრავლება — ორჯერ გაორმაგება",
+    "kk": "Көбейту — екі рет еселеу",
     en: "Multiplication — Doubling twice",
     zh: "乘法 — 连续翻倍两次",
     hi: "गुणा — दो बार दुगुना करना",

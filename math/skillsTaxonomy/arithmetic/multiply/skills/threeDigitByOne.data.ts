@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const threeDigitByOne_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.threeDigitByOne,
   name: {
+    "lt": "Daugyba — triženklis skaičius iš vienaženklio",
+    "lv": "Reizināšana — trīsciparu skaitlis ar viencipara skaitli",
+    "et": "Korrutamine — kolmekohaline arv ühekohalisega",
+    "be": "Множаньне — трохзначны лік на адназначны",
+    "ka": "გამრავლება — სამნიშნა რიცხვი ერთნიშნაზე",
+    "kk": "Көбейту — үш таңбалы санды бір таңбалы санға",
     en: "Multiplication — 3-digit×1-digit",
     zh: "乘法 — 3-位数×1-位数",
     hi: "गुणा — 3-अंकीय×1-अंकीय",

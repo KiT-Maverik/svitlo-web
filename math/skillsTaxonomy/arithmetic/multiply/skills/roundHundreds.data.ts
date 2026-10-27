@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const roundHundreds_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.roundHundreds,
   name: {
+    "lt": "Daugyba — pilni šimtai",
+    "lv": "Reizināšana — pilni simti",
+    "et": "Korrutamine — täissajad",
+    "be": "Множаньне — круглыя сотні",
+    "ka": "გამრავლება — სრული ასეულები",
+    "kk": "Көбейту — толық жүздіктер",
     en: "Multiplication — Whole hundreds",
     zh: "乘法 — 整百数",
     hi: "गुणा — पूरे सैकड़े",

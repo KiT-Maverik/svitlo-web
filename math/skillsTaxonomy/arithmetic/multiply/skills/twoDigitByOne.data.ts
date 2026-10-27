@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const twoDigitByOne_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.twoDigitByOne,
   name: {
+    "lt": "Daugyba — dviženklis skaičius iš vienaženklio",
+    "lv": "Reizināšana — divciparu skaitlis ar viencipara skaitli",
+    "et": "Korrutamine — kahekohaline arv ühekohalisega",
+    "be": "Множаньне — двухзначны лік на адназначны",
+    "ka": "გამრავლება — ორნიშნა რიცხვი ერთნიშნაზე",
+    "kk": "Көбейту — екі таңбалы санды бір таңбалы санға",
     en: "Multiplication — 2-digit×1-digit",
     zh: "乘法 — 2-位数×1-位数",
     hi: "गुणा — 2-अंकीय×1-अंकीय",

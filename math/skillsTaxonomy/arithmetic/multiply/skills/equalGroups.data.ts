@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const equalGroups_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.equalGroups,
   name: {
+    "lt": "Daugyba — lygios grupės",
+    "lv": "Reizināšana — vienādas grupas",
+    "et": "Korrutamine — võrdsed rühmad",
+    "be": "Множаньне — роўныя групы",
+    "ka": "გამრავლება — თანაბარი ჯგუფები",
+    "kk": "Көбейту — тең топтар",
     en: "Multiplication — Equal groups",
     zh: "乘法 — 等量组",
     hi: "गुणा — समान समूह",

@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const readExpression_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.readExpression,
   name: {
+    "lt": "Daugyba — reiškinių skaitymas",
+    "lv": "Reizināšana — izteiksmju lasīšana",
+    "et": "Korrutamine — avaldiste lugemine",
+    "be": "Множаньне — чытаньне выразаў",
+    "ka": "გამრავლება — გამოსახულებების წაკითხვა",
+    "kk": "Көбейту — өрнектерді оқу",
     en: "Multiplication — Reading expressions",
     zh: "乘法 — 读算式",
     hi: "गुणा — व्यंजक पढ़ना",

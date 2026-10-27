@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const repeatedAddition_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.repeatedAddition,
   name: {
+    "lt": "Daugyba — kartotinė sudėtis",
+    "lv": "Reizināšana — atkārtota saskaitīšana",
+    "et": "Korrutamine — korduv liitmine",
+    "be": "Множаньне — паўторнае складаньне",
+    "ka": "გამრავლება — განმეორებითი შეკრება",
+    "kk": "Көбейту — қайталанатын қосу",
     en: "Multiplication — Repeated addition",
     zh: "乘法 — 连加",
     hi: "गुणा — बार-बार जोड़",

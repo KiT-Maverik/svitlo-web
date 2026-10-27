@@ -4,6 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const roundTens_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.roundTens,
   name: {
+    "lt": "Daugyba — pilnos dešimtys",
+    "lv": "Reizināšana — pilni desmiti",
+    "et": "Korrutamine — täiskümned",
+    "be": "Множаньне — круглыя дзясяткі",
+    "ka": "გამრავლება — სრული ათეულები",
+    "kk": "Көбейту — толық ондықтар",
     en: "Multiplication — Whole tens",
     zh: "乘法 — 整十数",
     hi: "गुणा — पूरे दहाई",
