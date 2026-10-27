@@ -5,6 +5,12 @@ export const evenOdd_Skill_Data = buildSkillConfig({
   id: parity_Skills_Ids.evenOdd,
   name: {
     en: "Identifying even and odd numbers using pairs",
+    "lt": "Lyginių ir nelyginių skaičių atpažinimas sudarant poras",
+    "lv": "Pāra un nepāra skaitļu atpazīšana, veidojot pārus",
+    "et": "Paaris- ja paaritute arvude eristamine paaride abil",
+    "be": "Вызначэньне цотных і няцотных лікаў праз пары",
+    "ka": "ლუწი და კენტი რიცხვების ამოცნობა წყვილებით",
+    "kk": "Жұптау арқылы жұп және тақ сандарды анықтау",
     zh: "通过配对辨别奇数和偶数",
     hi: "जोड़े बनाकर सम और विषम संख्याएँ पहचानना",
     es: "Identificar números pares e impares formando parejas",

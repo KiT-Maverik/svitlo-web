@@ -5,6 +5,12 @@ export const basicCardinality_Skill_Data = buildSkillConfig({
   id: cardinality_Skills_Ids.basicCardinality,
   name: {
     en: "Determining how many objects are in a set",
+    "lt": "Daiktų kiekio nustatymas",
+    "lv": "Priekšmetu skaita noteikšana",
+    "et": "Hulga esemete arvu leidmine",
+    "be": "Вызначэньне колькасьці прадметаў у мностве",
+    "ka": "სიმრავლეში საგნების რაოდენობის განსაზღვრა",
+    "kk": "Жиындағы заттардың санын анықтау",
     zh: "确定一组物品的数量",
     hi: "समूह में वस्तुओं की संख्या निर्धारित करना",
     es: "Determinar cuántos elementos hay en un conjunto",

@@ -5,6 +5,12 @@ export const basicOrdinal_Skill_Data = buildSkillConfig({
   id: ordinal_Skills_Ids.basicOrdinal,
   name: {
     en: "Recognizing ordinal position",
+    "lt": "Kelintinės vietos atpažinimas",
+    "lv": "Kārtas vietas atpazīšana",
+    "et": "Järjekorrakoha äratundmine",
+    "be": "Распазнаваньне парадкавага месца",
+    "ka": "რიგითი ადგილის ამოცნობა",
+    "kk": "Реттік орынды тану",
     zh: "确定物品的顺序位置",
     hi: "क्रम में स्थान निर्धारित करना",
     es: "Reconocer la posición ordinal",

@@ -5,6 +5,12 @@ export const forward100_Skill_Data = buildSkillConfig({
   id: sequence_Skills_Ids.forward100,
   name: {
     en: "Counting forward and backward within 100",
+    "lt": "Skaičiavimas pirmyn ir atgal iki 100",
+    "lv": "Skaitīšana uz priekšu un atpakaļ 100 robežās",
+    "et": "Edasi ja tagasi loendamine 100 piires",
+    "be": "Лічэньне наперад і назад у межах 100",
+    "ka": "წინ და უკან დათვლა 100-ის ფარგლებში",
+    "kk": "100 көлемінде тура және кері санау",
     zh: "在100以内顺数和倒数",
     hi: "100 तक आगे और पीछे गिनना",
     es: "Contar hacia adelante y hacia atrás hasta 100",
