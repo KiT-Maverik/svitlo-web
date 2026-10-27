@@ -9,5 +9,9 @@
 
 - `math.addsub.cross-ten-addition` — `e2d79a7d-611e-4c74-b344-aba08db29c38`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Методичний документ збережено окремо.
+
 ---
 [Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
