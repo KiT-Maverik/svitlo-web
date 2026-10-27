@@ -5,6 +5,12 @@ export const unknownDivisor_Skill_Data = buildSkillConfig({
   id: unknowns_Skills_Ids.unknownDivisor,
   name: {
     en: "Finding an unknown divisor",
+    "lt": "Nežinomo daliklio radimas",
+    "lv": "Nezināmā dalītāja atrašana",
+    "et": "Tundmatu jagaja leidmine",
+    "be": "Знаходжаньне невядомага дзельніка",
+    "ka": "უცნობი გამყოფის პოვნა",
+    "kk": "Белгісіз бөлгішті табу",
     zh: "求未知除数",
     hi: "अज्ञात भाजक ज्ञात करना",
     es: "Hallar un divisor desconocido",

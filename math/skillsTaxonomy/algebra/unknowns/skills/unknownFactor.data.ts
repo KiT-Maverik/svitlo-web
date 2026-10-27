@@ -5,6 +5,12 @@ export const unknownFactor_Skill_Data = buildSkillConfig({
   id: unknowns_Skills_Ids.unknownFactor,
   name: {
     en: "Finding an unknown factor",
+    "lt": "Nežinomo daugiklio radimas",
+    "lv": "Nezināmā reizinātāja atrašana",
+    "et": "Tundmatu teguri leidmine",
+    "be": "Знаходжаньне невядомага множніка",
+    "ka": "უცნობი მამრავლის პოვნა",
+    "kk": "Белгісіз көбейткішті табу",
     zh: "求未知因数",
     hi: "अज्ञात गुणनखंड ज्ञात करना",
     es: "Hallar un factor desconocido",

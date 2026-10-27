@@ -5,6 +5,12 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
   id: unknowns_Skills_Ids.unknownAddend,
   name: {
     en: "Finding an unknown addend",
+    "lt": "Nežinomo dėmens radimas",
+    "lv": "Nezināmā saskaitāmā atrašana",
+    "et": "Tundmatu liidetava leidmine",
+    "be": "Знаходжаньне невядомага складніка",
+    "ka": "უცნობი შესაკრების პოვნა",
+    "kk": "Белгісіз қосылғышты табу",
     zh: "求未知加数",
     hi: "अज्ञात जोड़ का पद ज्ञात करना",
     es: "Hallar un sumando desconocido",

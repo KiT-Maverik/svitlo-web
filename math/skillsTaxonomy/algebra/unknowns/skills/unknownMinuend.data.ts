@@ -5,6 +5,12 @@ export const unknownMinuend_Skill_Data = buildSkillConfig({
   id: unknowns_Skills_Ids.unknownMinuend,
   name: {
     en: "Finding an unknown minuend",
+    "lt": "Nežinomo turinio radimas",
+    "lv": "Nezināmā mazināmā atrašana",
+    "et": "Tundmatu vähendatava leidmine",
+    "be": "Знаходжаньне невядомага зьмяншанага",
+    "ka": "უცნობი საკლების პოვნა",
+    "kk": "Белгісіз азайғышты табу",
     zh: "求未知被减数",
     hi: "अज्ञात घट्य ज्ञात करना",
     es: "Hallar un minuendo desconocido",

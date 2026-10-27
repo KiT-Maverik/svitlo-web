@@ -5,6 +5,12 @@ export const arithmeticPattern_Skill_Data = buildSkillConfig({
   id: patterns_Skills_Ids.arithmeticPattern,
   name: {
     en: "Continuing numerical patterns with a constant step",
+    "lt": "Skaitinio dėsningumo tęsimas pastoviu žingsniu",
+    "lv": "Skaitliskas likumsakarības turpināšana ar nemainīgu soli",
+    "et": "Arvumustri jätkamine kindla sammuga",
+    "be": "Працяг лікавай заканамернасьці з пастаянным крокам",
+    "ka": "რიცხვითი კანონზომიერების გაგრძელება მუდმივი ნაბიჯით",
+    "kk": "Тұрақты қадаммен сандық заңдылықты жалғастыру",
     zh: "按固定步长续写数列",
     hi: "निश्चित अंतर वाली संख्या श्रृंखला आगे बढ़ाना",
     es: "Continuar patrones numéricos de paso constante",

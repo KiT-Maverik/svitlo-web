@@ -5,6 +5,12 @@ export const growingPattern_Skill_Data = buildSkillConfig({
   id: patterns_Skills_Ids.growingPattern,
   name: {
     en: "Finding the rule of a growing pattern",
+    "lt": "Didėjančio dėsningumo taisyklės radimas",
+    "lv": "Augošas likumsakarības noteikuma atrašana",
+    "et": "Kasvava mustri reegli leidmine",
+    "be": "Знаходжаньне правіла ўзрастаньня",
+    "ka": "ზრდადი კანონზომიერების წესის პოვნა",
+    "kk": "Өсетін заңдылық ережесін табу",
     zh: "找出递增规律",
     hi: "बढ़ते पैटर्न का नियम पता करना",
     es: "Encontrar la regla de un patrón creciente",

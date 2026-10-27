@@ -5,6 +5,12 @@ export const unknownDividend_Skill_Data = buildSkillConfig({
   id: unknowns_Skills_Ids.unknownDividend,
   name: {
     en: "Finding an unknown dividend",
+    "lt": "Nežinomo dalinio radimas",
+    "lv": "Nezināmā dalāmā atrašana",
+    "et": "Tundmatu jagatava leidmine",
+    "be": "Знаходжаньне невядомага дзялімага",
+    "ka": "უცნობი გასაყოფის პოვნა",
+    "kk": "Белгісіз бөлінгішті табу",
     zh: "求未知被除数",
     hi: "अज्ञात भाज्य ज्ञात करना",
     es: "Hallar un dividendo desconocido",

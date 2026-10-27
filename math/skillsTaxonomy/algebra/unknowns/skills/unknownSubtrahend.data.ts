@@ -5,6 +5,12 @@ export const unknownSubtrahend_Skill_Data = buildSkillConfig({
   id: unknowns_Skills_Ids.unknownSubtrahend,
   name: {
     en: "Finding an unknown subtrahend",
+    "lt": "Nežinomo atėminio radimas",
+    "lv": "Nezināmā atņemamā atrašana",
+    "et": "Tundmatu vähendaja leidmine",
+    "be": "Знаходжаньне невядомага аднімальніка",
+    "ka": "უცნობი მაკლების პოვნა",
+    "kk": "Белгісіз азайтқышты табу",
     zh: "求未知减数",
     hi: "अज्ञात घटाने वाली संख्या ज्ञात करना",
     es: "Hallar un sustraendo desconocido",
