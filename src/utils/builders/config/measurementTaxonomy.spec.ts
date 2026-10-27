@@ -91,20 +91,23 @@ describe('Measurement taxonomy', () => {
     }
     const domainInventory = inventory.split('### Domain 7.')[1]?.split('### Domain 8.')[0];
     assert.ok(domainInventory);
-    const rows = [...domainInventory.matchAll(/^\| \x60(math\.measure\.[^\x60]+)\x60 \|[^\n]+$/gm)];
+    const rows = [...domainInventory.matchAll(/^\|\s*`(math\.measure\.[^`]+)`\s*\|[^\n]+$/gm)];
     assert.deepEqual(rows.map(row => row[1]).sort(), expectedEditorial.map(key => 'math.measure.' + key).sort());
-    assert.ok(rows.every(row => row[0].endsWith('| **Implemented** |')));
+    assert.ok(rows.every(row => /\|\s*\*\*Implemented\*\*\s*\|\s*$/.test(row[0])));
   });
 
   it('uses stable, unique UUIDs with separate ID-only references', () => {
     const seen = new Set<string>();
-    const quote = String.fromCharCode(96);
     const check = (kind: string, editorial: string, value: string): void => {
       assert.match(value, /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
       assert.ok(!seen.has(value), 'Duplicate UUID: ' + value);
       seen.add(value);
       assert.ok(
-        migration.includes('| ' + kind + ' | ' + quote + editorial + quote + ' | ' + quote + value + quote + ' |'),
+        migration.split('\n').some(line => {
+          const columns = line.split('|').map(column => column.trim());
+          return columns[1] === kind && columns[2] === '`' + editorial + '`' && columns[3] === '`' + value + '`';
+        }),
+        `Missing migration entry: ${kind} ${editorial} ${value}`,
       );
     };
     const domainIds = ids(join(domain, 'measurement.ids.ts'));

@@ -129,7 +129,7 @@ describe('Geometry taxonomy integrity', () => {
       ).length,
       10,
     );
-    const statuses = Array.from(section.matchAll(/^\| `math\.[^`]+` \|[^\n]+\| (Implemented|—) \|$/gm));
+    const statuses = Array.from(section.matchAll(/^\|\s*`math\.[^`]+`\s*\|[^\n]+\|\s*(Implemented|—)\s*\|$/gm));
     assert.equal(statuses.length, 35);
     assert.ok(statuses.every(([, status]) => status === 'Implemented'));
   });

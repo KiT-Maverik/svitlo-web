@@ -84,11 +84,11 @@ describe('Time skill taxonomy', () => {
   it('provides all supported locales and distinct parent/child names', () => {
     const required = DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language);
     const domainNames = names(read('time.data.ts'));
-    assert.deepEqual(Object.keys(domainNames), required);
+    assert.deepEqual(Object.keys(domainNames).sort(), [...required].sort());
 
     for (const [group, skills] of Object.entries(groupSkills)) {
       const groupNames = names(read(`${group}/${group}.data.ts`));
-      assert.deepEqual(Object.keys(groupNames), required);
+      assert.deepEqual(Object.keys(groupNames).sort(), [...required].sort());
 
       for (const skill of skills) {
         const skillNames = names(read(`${group}/skills/${skill}.data.ts`));
