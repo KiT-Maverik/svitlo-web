@@ -9,5 +9,9 @@
 
 - `math.problems.create-problem` — `1752c41c-dedc-4bc3-9b3f-285878f851b4`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Картка вище лишається методичним джерелом, повний Learning Brief потребує окремого написання.
+
 ---
 [Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

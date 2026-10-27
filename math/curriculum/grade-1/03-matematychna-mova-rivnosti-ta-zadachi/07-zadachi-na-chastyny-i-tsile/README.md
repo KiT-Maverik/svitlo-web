@@ -10,5 +10,9 @@
 - `math.problems.part-whole-addsub` — `adb1adc5-7f54-495d-a65f-e8754a2a0748`
 - `math.problems.explain-answer-units` — `cc32ed01-5823-42a0-a32e-810074474d93`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Картка вище лишається методичним джерелом, повний Learning Brief потребує окремого написання.
+
 ---
 [Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
