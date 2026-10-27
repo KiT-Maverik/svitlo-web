@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const makeTenStrategy_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.makeTenStrategy,
   name: {
+    "lt": "Sudėtis — dešimties sudarymo strategija",
+    "lv": "Saskaitīšana — desmita veidošanas paņēmiens",
+    "et": "Liitmine — kümne moodustamine",
+    "be": "Складаньне — дапаўненьне да дзесяці",
+    "ka": "შეკრება — ათეულამდე შევსება",
+    "kk": "Қосу — ондыққа толықтыру",
     en: "Addition — Making ten",
     zh: "加法 — 凑十法",
     hi: "जोड़ — दस पूरा करना",

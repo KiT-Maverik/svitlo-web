@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const crossTenAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.crossTenAddition,
   name: {
+    "lt": "Sudėtis — peržengiant dešimtį",
+    "lv": "Saskaitīšana — pāreja pāri desmitam",
+    "et": "Liitmine — üle kümne liitmine",
+    "be": "Складаньне — пераход праз дзясятак",
+    "ka": "შეკრება — ათეულის გადაცილებით",
+    "kk": "Қосу — ондықтан аттап өту",
     en: "Addition — Crossing ten",
     zh: "加法 — 跨十计算",
     hi: "जोड़ — दस पार करना",

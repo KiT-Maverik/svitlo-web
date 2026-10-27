@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const addZero_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.addZero,
   name: {
+    "lt": "Sudėtis — nulis",
+    "lv": "Saskaitīšana — nulle",
+    "et": "Liitmine — null",
+    "be": "Складаньне — нуль",
+    "ka": "შეკრება — ნული",
+    "kk": "Қосу — нөл",
     en: "Addition — Zero",
     zh: "加法 — 零",
     hi: "जोड़ — शून्य",

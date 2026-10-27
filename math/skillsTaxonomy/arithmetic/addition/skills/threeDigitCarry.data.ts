@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const threeDigitCarry_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.threeDigitCarry,
   name: {
+    "lt": "Sudėtis — triženkliai skaičiai su pernešimu",
+    "lv": "Saskaitīšana — trīsciparu skaitļi ar pārnesumu",
+    "et": "Liitmine — kolmekohalised arvud ülekandega",
+    "be": "Складаньне — трохзначныя лікі з пераносам",
+    "ka": "შეკრება — სამნიშნა რიცხვები გადატანით",
+    "kk": "Қосу — үш таңбалы сандар разряд ауыстырумен",
     en: "Addition — 3-digit · Carrying",
     zh: "加法 — 3-位数 · 进位",
     hi: "जोड़ — 3-अंकीय · कैरी",

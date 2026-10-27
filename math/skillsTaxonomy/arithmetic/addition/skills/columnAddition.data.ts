@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const columnAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.columnAddition,
   name: {
+    "lt": "Sudėtis — stulpeliu",
+    "lv": "Saskaitīšana — stabiņā",
+    "et": "Liitmine — kirjalik liitmine",
+    "be": "Складаньне — слупком",
+    "ka": "შეკრება — სვეტურად",
+    "kk": "Қосу — баған түрінде",
     en: "Addition — Column method",
     zh: "加法 — 竖式计算",
     hi: "जोड़ — स्तंभ विधि",

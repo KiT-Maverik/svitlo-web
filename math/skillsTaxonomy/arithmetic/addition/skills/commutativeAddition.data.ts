@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const commutativeAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.commutativeAddition,
   name: {
+    "lt": "Sudėtis — perstatomumo dėsnis",
+    "lv": "Saskaitīšana — komutativitātes likums",
+    "et": "Liitmine — vahetuvusseadus",
+    "be": "Складаньне — перастаўляльны закон",
+    "ka": "შეკრება — გადანაცვლებადობის თვისება",
+    "kk": "Қосу — ауыстырымдылық қасиеті",
     en: "Addition — Commutative property",
     zh: "加法 — 交换律",
     hi: "जोड़ — क्रमविनिमेय नियम",

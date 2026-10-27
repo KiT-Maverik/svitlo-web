@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const twoDigitCarry_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.twoDigitCarry,
   name: {
+    "lt": "Sudėtis — dviženkliai skaičiai su pernešimu",
+    "lv": "Saskaitīšana — divciparu skaitļi ar pārnesumu",
+    "et": "Liitmine — kahekohalised arvud ülekandega",
+    "be": "Складаньне — двухзначныя лікі з пераносам",
+    "ka": "შეკრება — ორნიშნა რიცხვები გადატანით",
+    "kk": "Қосу — екі таңбалы сандар разряд ауыстырумен",
     en: "Addition — 2-digit · Carrying",
     zh: "加法 — 2-位数 · 进位",
     hi: "जोड़ — 2-अंकीय · कैरी",

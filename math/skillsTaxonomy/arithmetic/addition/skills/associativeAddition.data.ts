@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const associativeAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.associativeAddition,
   name: {
+    "lt": "Sudėtis — jungiamumo dėsnis",
+    "lv": "Saskaitīšana — asociativitātes likums",
+    "et": "Liitmine — ühenduvusseadus",
+    "be": "Складаньне — спалучальны закон",
+    "ka": "შეკრება — ჯუფთებადობის თვისება",
+    "kk": "Қосу — терімділік қасиеті",
     en: "Addition — Associative property",
     zh: "加法 — 结合律",
     hi: "जोड़ — साहचर्य नियम",

@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const addMeaning_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.addMeaning,
   name: {
+    "lt": "Sudėtis — reikšmė ir modeliai",
+    "lv": "Saskaitīšana — nozīme un modeļi",
+    "et": "Liitmine — tähendus ja mudelid",
+    "be": "Складаньне — сэнс і мадэлі",
+    "ka": "შეკრება — მნიშვნელობა და მოდელები",
+    "kk": "Қосу — мағынасы мен модельдері",
     en: "Addition — Meaning and models",
     zh: "加法 — 含义与模型",
     hi: "जोड़ — अर्थ और मॉडल",

@@ -4,6 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const carryErrorDetection_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.carryErrorDetection,
   name: {
+    "lt": "Sudėtis — pernešimo klaidų radimas",
+    "lv": "Saskaitīšana — pārnesuma kļūdu atklāšana",
+    "et": "Liitmine — ülekandevigade tuvastamine",
+    "be": "Складаньне — выяўленьне памылак пераносу разраду",
+    "ka": "შეკრება — გადატანის შეცდომების აღმოჩენა",
+    "kk": "Қосу — разряд ауыстыру қатесін табу",
     en: "Addition — Carrying · Error detection",
     zh: "加法 — 进位 · 错误识别",
     hi: "जोड़ — कैरी · त्रुटि पहचान",
