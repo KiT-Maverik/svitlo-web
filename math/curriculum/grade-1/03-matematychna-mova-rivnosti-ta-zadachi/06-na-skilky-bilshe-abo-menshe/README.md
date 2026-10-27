@@ -10,5 +10,9 @@
 - `math.problems.additive-comparison` — `6ec0b82a-2cb0-4875-a327-dc292e6624c0`
 - `math.problems.increase-decrease-number` — `4b3a53a2-c2dc-49b6-beb8-c81a0544978b`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Цей сценарій доповнює коротку методичну картку; повний Learning Brief потребує окремого проходу методиста.
+
 ---
 [Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

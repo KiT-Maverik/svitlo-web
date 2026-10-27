@@ -9,5 +9,9 @@
 
 - `math.problems.identify-known-unknown` — `87a8b2f2-0e9e-4b10-aa28-bd52ba0c9b7e`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Цей сценарій доповнює коротку методичну картку; повний Learning Brief потребує окремого проходу методиста.
+
 ---
 [Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
