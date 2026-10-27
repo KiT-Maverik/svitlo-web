@@ -174,8 +174,11 @@ test('ordering reviews individual positions and restores drag icons on retry', a
   const rain = q.getByRole('button', { name: 'Опади (1)', exact: true });
   await rain.focus();
   await page.keyboard.press('Space');
+  await expect(rain).toHaveAttribute('aria-pressed', 'true');
   await page.keyboard.press('ArrowDown');
+  await expect(q.getByRole('status').filter({ hasText: 'Позиція: 2' })).toBeAttached();
   await page.keyboard.press('Space');
+  await expect(q.getByRole('button', { name: 'Опади (2)', exact: true })).toBeVisible();
   await q.getByRole('button', { name: 'Перевірити', exact: true }).click();
   await expect(q.locator('button[data-feedback="correct"]')).toHaveCount(1);
   await expect(q.locator('button[data-feedback="incorrect"]')).toHaveCount(2);
