@@ -1,9 +1,3 @@
-import { locales } from './MediumPractice.locale';
-
-const uk = locales.uk;
-
-export const aria = { mediaGroup: uk.mediaGroup } as const;
-
 /** Refractive indices used by the interactive medium comparison scene. */
 export const media = [
   { id: '08c3bae5-081a-5afc-bccf-e44078e137f2', key: 'vacuum', index: 1 },
