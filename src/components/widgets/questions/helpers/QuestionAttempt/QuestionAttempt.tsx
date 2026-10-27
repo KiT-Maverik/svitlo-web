@@ -199,7 +199,8 @@ function Attempt<K extends QuestionType>(props: QuestionAttemptProps<K>) {
       disabled={disabled || readOnly}
       onClick={() => {
         setExplanationVisible(false);
-        context.reset();
+        controller.retry(true);
+        focusEditor();
       }}
     >
       {uk.retry}
