@@ -10,5 +10,9 @@
 - `math.measure.kilogram-gram` — `2d6e3dbf-3b0e-4368-92aa-6853332f20d0`
 - `math.measure.weigh-object` — `401849ab-d37f-49a3-9179-da85f6704707`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
+
 ---
 [Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

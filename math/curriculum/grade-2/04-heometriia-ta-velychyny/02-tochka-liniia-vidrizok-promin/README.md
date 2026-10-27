@@ -12,5 +12,9 @@
 - `math.geometry.ray` — `1f1740cd-914a-4945-b564-5124a982c735`
 - `math.geometry.closed-open-lines` — `d52a91eb-a4b7-48c7-8d2c-97aceb88b146`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
+
 ---
 [Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

@@ -12,5 +12,9 @@
 - `math.geometry.translations-reflections` — `d93e1819-5d86-4cfe-b200-44ad0cc8478c`
 - `math.geometry.reflection-symmetry` — `f570551e-7d44-4a2c-8567-16ebbffeb142`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
+
 ---
 [Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

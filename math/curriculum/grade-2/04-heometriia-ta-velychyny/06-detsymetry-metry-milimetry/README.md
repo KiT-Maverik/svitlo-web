@@ -11,5 +11,9 @@
 - `math.measure.meters` — `d427dfd0-7501-447b-ad8a-c75e8ec25196`
 - `math.measure.millimeters` — `fa6cb61c-e83a-49d9-961c-8444e0fa231b`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
+
 ---
 [Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

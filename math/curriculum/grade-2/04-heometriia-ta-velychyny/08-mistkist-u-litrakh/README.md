@@ -10,5 +10,9 @@
 - `math.measure.liter` — `3853f445-537c-4c06-b5ec-9391ce2a440f`
 - `math.measure.standard-unit-purpose` — `543a4960-c0e1-43cf-911b-4c59b6c36571`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
+
 ---
 [Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

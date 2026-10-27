@@ -9,5 +9,9 @@
 
 - `math.geomeasure.measure-perimeter` — `13a58a6e-d453-4d8b-bba8-fae79b2a77cd`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
+
 ---
 [Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

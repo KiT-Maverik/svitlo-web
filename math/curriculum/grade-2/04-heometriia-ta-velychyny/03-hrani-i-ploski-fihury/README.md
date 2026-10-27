@@ -9,5 +9,9 @@
 
 - `math.geometry.shape-on-solid-surface` — `a9355c95-a65a-472e-bb7d-f11c7a23fe49`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
+
 ---
 [Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
