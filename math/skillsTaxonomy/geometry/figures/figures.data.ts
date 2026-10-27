@@ -6,6 +6,12 @@ export const figures_SkillGroup_Data = buildSkillGroupConfig({
   id: figures_SkillGroup_Ids.figures,
   name: {
     en: "Plane figures",
+    "lt": "Plokščiosios figūros",
+    "lv": "Plaknes figūras",
+    "et": "Tasandilised kujundid",
+    "be": "Плоскія фігуры",
+    "ka": "ბრტყელი ფიგურები",
+    "kk": "Жазық фигуралар",
     zh: "平面图形",
     hi: "समतलीय आकृतियाँ",
     es: "Figuras planas",

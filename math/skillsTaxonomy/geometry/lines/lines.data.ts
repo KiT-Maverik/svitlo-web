@@ -6,6 +6,12 @@ export const lines_SkillGroup_Data = buildSkillGroupConfig({
   id: lines_SkillGroup_Ids.lines,
   name: {
     en: "Lines",
+    "lt": "Tiesės ir linijos",
+    "lv": "Taisnes un līnijas",
+    "et": "Sirged ja jooned",
+    "be": "Прамыя і лініі",
+    "ka": "წრფეები და ხაზები",
+    "kk": "Түзулер мен сызықтар",
     zh: "线",
     hi: "रेखाएँ",
     es: "Líneas",

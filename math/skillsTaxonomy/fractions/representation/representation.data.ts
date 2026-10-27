@@ -6,6 +6,12 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
   id: representation_SkillGroup_Ids.representation,
   name: {
     en: "Representing fractions",
+    "lt": "Trupmenų vaizdavimas",
+    "lv": "Daļu attēlošana",
+    "et": "Murdude kujutamine",
+    "be": "Прадстаўленьне дробаў",
+    "ka": "წილადების წარმოდგენა",
+    "kk": "Бөлшектерді көрсету",
     zh: "分数的表示",
     hi: "भिन्नों का निरूपण",
     es: "Representación de fracciones",

@@ -6,6 +6,12 @@ export const portions_SkillGroup_Data = buildSkillGroupConfig({
   id: portions_SkillGroup_Ids.portions,
   name: {
     en: "Fractional parts of quantities",
+    "lt": "Dydžių dalys",
+    "lv": "Lielumu daļas",
+    "et": "Suuruste osad",
+    "be": "Долі велічыняў",
+    "ka": "სიდიდეების ნაწილები",
+    "kk": "Шамалардың бөліктері",
     zh: "数量的几分之一",
     hi: "राशियों के भिन्नात्मक भाग",
     es: "Partes fraccionarias de cantidades",

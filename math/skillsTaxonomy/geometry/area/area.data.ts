@@ -6,6 +6,12 @@ export const area_SkillGroup_Data = buildSkillGroupConfig({
   id: area_SkillGroup_Ids.area,
   name: {
     en: "Area",
+    "lt": "Plotas",
+    "lv": "Laukums",
+    "et": "Pindala",
+    "be": "Плошча",
+    "ka": "ფართობი",
+    "kk": "Аудан",
     zh: "面积",
     hi: "क्षेत्रफल",
     es: "Área",

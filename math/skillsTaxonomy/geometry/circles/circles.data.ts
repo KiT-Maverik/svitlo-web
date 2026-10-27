@@ -6,6 +6,12 @@ export const circles_SkillGroup_Data = buildSkillGroupConfig({
   id: circles_SkillGroup_Ids.circles,
   name: {
     en: "Circles and disks",
+    "lt": "Apskritimai ir skrituliai",
+    "lv": "Riņķa līnijas un riņķi",
+    "et": "Ringjooned ja ringid",
+    "be": "Акружнасьці і кругі",
+    "ka": "წრეწირები და წრეები",
+    "kk": "Шеңберлер мен дөңгелектер",
     zh: "圆周与圆面",
     hi: "वृत्त और चक्र",
     es: "Circunferencias y círculos",

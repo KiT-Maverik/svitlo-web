@@ -6,6 +6,12 @@ export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
   id: arithmetic_SkillGroup_Ids.arithmetic,
   name: {
     en: "Operations with fractions",
+    "lt": "Veiksmai su trupmenomis",
+    "lv": "Darbības ar daļām",
+    "et": "Tehted murdudega",
+    "be": "Дзеяньні з дробамі",
+    "ka": "მოქმედებები წილადებზე",
+    "kk": "Бөлшектерге амалдар қолдану",
     zh: "分数运算",
     hi: "भिन्नों पर संक्रियाएँ",
     es: "Operaciones con fracciones",

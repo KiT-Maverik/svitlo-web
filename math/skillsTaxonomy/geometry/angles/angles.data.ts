@@ -6,6 +6,12 @@ export const angles_SkillGroup_Data = buildSkillGroupConfig({
   id: angles_SkillGroup_Ids.angles,
   name: {
     en: "Angles",
+    "lt": "Kampai",
+    "lv": "Leņķi",
+    "et": "Nurgad",
+    "be": "Куты",
+    "ka": "კუთხეები",
+    "kk": "Бұрыштар",
     zh: "角",
     hi: "कोण",
     es: "Ángulos",
