@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const partWhole_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.partWhole,
   name: {
+    "lt": "Sudėtis ir atimtis — dalies ir visumos ryšys",
+    "lv": "Saskaitīšana un atņemšana — daļas un veseluma saikne",
+    "et": "Liitmine ja lahutamine — osa ja terviku seos",
+    "be": "Складаньне й адніманьне — сувязь часткі й цэлага",
+    "ka": "შეკრება და გამოკლება — ნაწილისა და მთელის კავშირი",
+    "kk": "Қосу және азайту — бөлік пен бүтіннің байланысы",
     en: "Addition and subtraction — Part–whole relationship",
     zh: "加减法 — 部分与整体的关系",
     hi: "जोड़ और घटाव — भाग और पूर्ण का संबंध",

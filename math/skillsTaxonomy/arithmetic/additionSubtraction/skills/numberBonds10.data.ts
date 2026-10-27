@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const numberBonds10_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.numberBonds10,
   name: {
+    "lt": "Sudėtis ir atimtis — skaičiaus 10 sudėtis",
+    "lv": "Saskaitīšana un atņemšana — skaitļa 10 sastāvs",
+    "et": "Liitmine ja lahutamine — arvu 10 koosseis",
+    "be": "Складаньне й адніманьне — склад ліку 10",
+    "ka": "შეკრება და გამოკლება — რიცხვი 10-ის შემადგენლობა",
+    "kk": "Қосу және азайту — 10 санының құрамы",
     en: "Addition and subtraction — Bonds of 10",
     zh: "加减法 — 组成 10",
     hi: "जोड़ और घटाव — संख्या के संयोजन 10",

@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const compensation_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.compensation,
   name: {
+    "lt": "Sudėtis ir atimtis — kompensavimo būdas",
+    "lv": "Saskaitīšana un atņemšana — kompensācijas paņēmiens",
+    "et": "Liitmine ja lahutamine — kompenseerimine",
+    "be": "Складаньне й адніманьне — кампэнсацыя",
+    "ka": "შეკრება და გამოკლება — კომპენსაციის ხერხი",
+    "kk": "Қосу және азайту — компенсация әдісі",
     en: "Addition and subtraction — Compensation",
     zh: "加减法 — 补偿策略",
     hi: "जोड़ और घटाव — समायोजन विधि",

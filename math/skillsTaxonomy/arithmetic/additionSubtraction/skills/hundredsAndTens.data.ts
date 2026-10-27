@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const hundredsAndTens_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.hundredsAndTens,
   name: {
+    "lt": "Sudėtis ir atimtis — šimtai ir dešimtys",
+    "lv": "Saskaitīšana un atņemšana — simti un desmiti",
+    "et": "Liitmine ja lahutamine — sajalised ja kümnelised",
+    "be": "Складаньне й адніманьне — сотні й дзясяткі",
+    "ka": "შეკრება და გამოკლება — ასეულები და ათეულები",
+    "kk": "Қосу және азайту — жүздіктер мен ондықтар",
     en: "Addition and subtraction — Hundreds and tens",
     zh: "加减法 — 整百与整十",
     hi: "जोड़ और घटाव — सैकड़े और दहाई",

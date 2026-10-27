@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.twoDigitNoRegroup,
   name: {
+    "lt": "Sudėtis ir atimtis — dviženkliai skaičiai be pergrupavimo",
+    "lv": "Saskaitīšana un atņemšana — divciparu skaitļi bez pārgrupēšanas",
+    "et": "Liitmine ja lahutamine — kahekohalised arvud ümberrühmitamiseta",
+    "be": "Складаньне й адніманьне — двухзначныя лікі без разраднага абмену",
+    "ka": "შეკრება და გამოკლება — ორნიშნა რიცხვები გადაჯგუფების გარეშე",
+    "kk": "Қосу және азайту — екі таңбалы сандар қайта топтастырусыз",
     en: "Addition and subtraction — 2-digit · Without regrouping",
     zh: "加减法 — 2-位数 · 不进退位",
     hi: "जोड़ और घटाव — 2-अंकीय · बिना पुनर्समूहन",

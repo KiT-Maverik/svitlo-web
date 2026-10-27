@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const factsWithin10_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.factsWithin10,
   name: {
+    "lt": "Sudėtis ir atimtis — skaičių deriniai iki 10",
+    "lv": "Saskaitīšana un atņemšana — skaitļu fakti līdz 10",
+    "et": "Liitmine ja lahutamine — arvufaktid 10 piires",
+    "be": "Складаньне й адніманьне — таблічныя вылічэньні да 10",
+    "ka": "შეკრება და გამოკლება — გამოთვლები 10-ის ფარგლებში",
+    "kk": "Қосу және азайту — 10-ға дейінгі есептеу деректері",
     en: "Addition and subtraction — Number facts ≤ 10",
     zh: "加减法 — 基本算式 ≤ 10",
     hi: "जोड़ और घटाव — गणना तथ्य ≤ 10",

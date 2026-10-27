@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const placeValueMental_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.placeValueMental,
   name: {
+    "lt": "Sudėtis ir atimtis — skaičiavimas mintinai pagal skyrius",
+    "lv": "Saskaitīšana un atņemšana — prāta aprēķini pēc šķirām",
+    "et": "Liitmine ja lahutamine — peastarvutamine järkude kaupa",
+    "be": "Складаньне й адніманьне — вусныя вылічэньні па разрадах",
+    "ka": "შეკრება და გამოკლება — ზეპირი გამოთვლა თანრიგებით",
+    "kk": "Қосу және азайту — разряд бойынша ауызша есептеу",
     en: "Addition and subtraction — Mental place-value strategy",
     zh: "加减法 — 按位值心算",
     hi: "जोड़ और घटाव — स्थानीय मान से मौखिक गणना",

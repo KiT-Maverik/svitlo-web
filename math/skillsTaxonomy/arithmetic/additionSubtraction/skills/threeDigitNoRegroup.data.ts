@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.threeDigitNoRegroup,
   name: {
+    "lt": "Sudėtis ir atimtis — triženkliai skaičiai be pergrupavimo",
+    "lv": "Saskaitīšana un atņemšana — trīsciparu skaitļi bez pārgrupēšanas",
+    "et": "Liitmine ja lahutamine — kolmekohalised arvud ümberrühmitamiseta",
+    "be": "Складаньне й адніманьне — трохзначныя лікі без разраднага абмену",
+    "ka": "შეკრება და გამოკლება — სამნიშნა რიცხვები გადაჯგუფების გარეშე",
+    "kk": "Қосу және азайту — үш таңбалы сандар қайта топтастырусыз",
     en: "Addition and subtraction — 3-digit · Without regrouping",
     zh: "加减法 — 3-位数 · 不进退位",
     hi: "जोड़ और घटाव — 3-अंकीय · बिना पुनर्समूहन",

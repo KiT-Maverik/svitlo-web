@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const estimateResult_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.estimateResult,
   name: {
+    "lt": "Sudėtis ir atimtis — rezultato įvertinimas",
+    "lv": "Saskaitīšana un atņemšana — rezultāta novērtēšana",
+    "et": "Liitmine ja lahutamine — tulemuse hindamine",
+    "be": "Складаньне й адніманьне — ацэнка выніку",
+    "ka": "შეკრება და გამოკლება — შედეგის შეფასება",
+    "kk": "Қосу және азайту — нәтижені бағалау",
     en: "Addition and subtraction — Result estimation",
     zh: "加减法 — 结果估算",
     hi: "जोड़ और घटाव — परिणाम का अनुमान",

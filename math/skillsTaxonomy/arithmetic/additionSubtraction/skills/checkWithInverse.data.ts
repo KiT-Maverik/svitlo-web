@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const checkWithInverse_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.checkWithInverse,
   name: {
+    "lt": "Sudėtis ir atimtis — tikrinimas atvirkštiniais veiksmais",
+    "lv": "Saskaitīšana un atņemšana — pārbaude ar pretējām darbībām",
+    "et": "Liitmine ja lahutamine — kontroll pöördtehetega",
+    "be": "Складаньне й адніманьне — праверка адваротнымі дзеяньнямі",
+    "ka": "შეკრება და გამოკლება — შემოწმება შებრუნებული მოქმედებებით",
+    "kk": "Қосу және азайту — кері амалдармен тексеру",
     en: "Addition and subtraction — Result checking · Inverse operations",
     zh: "加减法 — 结果检验 · 逆运算",
     hi: "जोड़ और घटाव — उत्तर की जाँच · व्युत्क्रम संक्रियाएँ",

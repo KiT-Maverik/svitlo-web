@@ -4,6 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const addSubtractTens_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.addSubtractTens,
   name: {
+    "lt": "Sudėtis ir atimtis — pilnos dešimtys",
+    "lv": "Saskaitīšana un atņemšana — pilni desmiti",
+    "et": "Liitmine ja lahutamine — täiskümned",
+    "be": "Складаньне й адніманьне — круглыя дзясяткі",
+    "ka": "შეკრება და გამოკლება — სრული ათეულები",
+    "kk": "Қосу және азайту — толық ондықтар",
     en: "Addition and subtraction — Whole tens",
     zh: "加减法 — 整十数",
     hi: "जोड़ और घटाव — पूरे दहाई",
