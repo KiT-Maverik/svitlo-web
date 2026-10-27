@@ -5,6 +5,12 @@ export const readTemperature_Skill_Data = buildSkillConfig({
   id: temperature_Skills_Ids.readTemperature,
   name: {
     "en": "Reading nonnegative temperatures on a thermometer",
+    "lt": "Teigiamos ir nulinės temperatūros skaitymas termometre",
+    "lv": "Nenegatīvu temperatūru nolasīšana termometrā",
+    "et": "Mitte-negatiivsete temperatuuride lugemine termomeetrilt",
+    "be": "Чытаньне неадмоўных тэмпэратураў на тэрмомэтры",
+    "ka": "არაუარყოფითი ტემპერატურის თერმომეტრზე წაკითხვა",
+    "kk": "Термометрден теріс емес температураларды оқу",
     "zh": "读取温度计上的非负温度",
     "hi": "थर्मामीटर पर शून्य या उससे ऊपर का तापमान पढ़ना",
     "es": "Leer temperaturas no negativas en un termómetro",

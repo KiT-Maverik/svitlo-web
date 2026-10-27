@@ -5,6 +5,12 @@ export const kilogramGram_Skill_Data = buildSkillConfig({
   id: mass_Skills_Ids.kilogramGram,
   name: {
     "en": "Relating kilograms and grams",
+    "lt": "Kilogramų ir gramų ryšys",
+    "lv": "Kilogramu un gramu saistība",
+    "et": "Kilogrammide ja grammide seos",
+    "be": "Сувязь кіляграмаў і грамаў",
+    "ka": "კილოგრამებისა და გრამების კავშირი",
+    "kk": "Килограмм мен грамның байланысы",
     "zh": "千克与克之间的关系",
     "hi": "किलोग्राम और ग्राम का संबंध",
     "es": "Relacionar kilogramos y gramos",

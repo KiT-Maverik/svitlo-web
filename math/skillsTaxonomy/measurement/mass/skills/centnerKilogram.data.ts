@@ -5,6 +5,12 @@ export const centnerKilogram_Skill_Data = buildSkillConfig({
   id: mass_Skills_Ids.centnerKilogram,
   name: {
     "en": "Using centners and kilograms in problems",
+    "lt": "Centnerių ir kilogramų naudojimas uždaviniuose",
+    "lv": "Centneru un kilogramu izmantošana uzdevumos",
+    "et": "Tsentnerite ja kilogrammide kasutamine ülesannetes",
+    "be": "Выкарыстаньне цэнтнэраў і кіляграмаў у задачах",
+    "ka": "ცენტნერებისა და კილოგრამების გამოყენება ამოცანებში",
+    "kk": "Есептерде центнер мен килограмды қолдану",
     "zh": "在应用题中使用公担和千克",
     "hi": "प्रश्नों में क्विंटल और किलोग्राम का उपयोग",
     "es": "Usar quintales y kilogramos en problemas",
