@@ -20,13 +20,25 @@ import { mr_AssessmentMethod_Locale } from './locales/mr';
 import { ms_AssessmentMethod_Locale } from './locales/ms';
 import { he_AssessmentMethod_Locale } from './locales/he';
 import { pl_AssessmentMethod_Locale } from './locales/pl';
+import { lt_AssessmentMethod_Locale } from './locales/lt';
+import { lv_AssessmentMethod_Locale } from './locales/lv';
+import { et_AssessmentMethod_Locale } from './locales/et';
+import { be_AssessmentMethod_Locale } from './locales/be';
+import { ka_AssessmentMethod_Locale } from './locales/ka';
+import { kk_AssessmentMethod_Locale } from './locales/kk';
 import { uk_AssessmentMethod_Locale } from './locales/uk';
 
-/** Explicit mappings retain type-checked locale coverage without runtime fallbacks. */
+/** Explicit, type-checked native translations for every supported language. */
 export const assessmentMethodTranslations = {
   retrieval: {
     title: {
       en: en_AssessmentMethod_Locale.retrieval.title,
+      lt: lt_AssessmentMethod_Locale.retrieval.title,
+      lv: lv_AssessmentMethod_Locale.retrieval.title,
+      et: et_AssessmentMethod_Locale.retrieval.title,
+      be: be_AssessmentMethod_Locale.retrieval.title,
+      ka: ka_AssessmentMethod_Locale.retrieval.title,
+      kk: kk_AssessmentMethod_Locale.retrieval.title,
       zh: zh_AssessmentMethod_Locale.retrieval.title,
       hi: hi_AssessmentMethod_Locale.retrieval.title,
       es: es_AssessmentMethod_Locale.retrieval.title,
@@ -51,6 +63,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.retrieval.description,
+      lt: lt_AssessmentMethod_Locale.retrieval.description,
+      lv: lv_AssessmentMethod_Locale.retrieval.description,
+      et: et_AssessmentMethod_Locale.retrieval.description,
+      be: be_AssessmentMethod_Locale.retrieval.description,
+      ka: ka_AssessmentMethod_Locale.retrieval.description,
+      kk: kk_AssessmentMethod_Locale.retrieval.description,
       zh: zh_AssessmentMethod_Locale.retrieval.description,
       hi: hi_AssessmentMethod_Locale.retrieval.description,
       es: es_AssessmentMethod_Locale.retrieval.description,
@@ -77,6 +95,12 @@ export const assessmentMethodTranslations = {
   interpretation: {
     title: {
       en: en_AssessmentMethod_Locale.interpretation.title,
+      lt: lt_AssessmentMethod_Locale.interpretation.title,
+      lv: lv_AssessmentMethod_Locale.interpretation.title,
+      et: et_AssessmentMethod_Locale.interpretation.title,
+      be: be_AssessmentMethod_Locale.interpretation.title,
+      ka: ka_AssessmentMethod_Locale.interpretation.title,
+      kk: kk_AssessmentMethod_Locale.interpretation.title,
       zh: zh_AssessmentMethod_Locale.interpretation.title,
       hi: hi_AssessmentMethod_Locale.interpretation.title,
       es: es_AssessmentMethod_Locale.interpretation.title,
@@ -101,6 +125,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.interpretation.description,
+      lt: lt_AssessmentMethod_Locale.interpretation.description,
+      lv: lv_AssessmentMethod_Locale.interpretation.description,
+      et: et_AssessmentMethod_Locale.interpretation.description,
+      be: be_AssessmentMethod_Locale.interpretation.description,
+      ka: ka_AssessmentMethod_Locale.interpretation.description,
+      kk: kk_AssessmentMethod_Locale.interpretation.description,
       zh: zh_AssessmentMethod_Locale.interpretation.description,
       hi: hi_AssessmentMethod_Locale.interpretation.description,
       es: es_AssessmentMethod_Locale.interpretation.description,
@@ -127,6 +157,12 @@ export const assessmentMethodTranslations = {
   application: {
     title: {
       en: en_AssessmentMethod_Locale.application.title,
+      lt: lt_AssessmentMethod_Locale.application.title,
+      lv: lv_AssessmentMethod_Locale.application.title,
+      et: et_AssessmentMethod_Locale.application.title,
+      be: be_AssessmentMethod_Locale.application.title,
+      ka: ka_AssessmentMethod_Locale.application.title,
+      kk: kk_AssessmentMethod_Locale.application.title,
       zh: zh_AssessmentMethod_Locale.application.title,
       hi: hi_AssessmentMethod_Locale.application.title,
       es: es_AssessmentMethod_Locale.application.title,
@@ -151,6 +187,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.application.description,
+      lt: lt_AssessmentMethod_Locale.application.description,
+      lv: lv_AssessmentMethod_Locale.application.description,
+      et: et_AssessmentMethod_Locale.application.description,
+      be: be_AssessmentMethod_Locale.application.description,
+      ka: ka_AssessmentMethod_Locale.application.description,
+      kk: kk_AssessmentMethod_Locale.application.description,
       zh: zh_AssessmentMethod_Locale.application.description,
       hi: hi_AssessmentMethod_Locale.application.description,
       es: es_AssessmentMethod_Locale.application.description,
@@ -177,6 +219,12 @@ export const assessmentMethodTranslations = {
   classification: {
     title: {
       en: en_AssessmentMethod_Locale.classification.title,
+      lt: lt_AssessmentMethod_Locale.classification.title,
+      lv: lv_AssessmentMethod_Locale.classification.title,
+      et: et_AssessmentMethod_Locale.classification.title,
+      be: be_AssessmentMethod_Locale.classification.title,
+      ka: ka_AssessmentMethod_Locale.classification.title,
+      kk: kk_AssessmentMethod_Locale.classification.title,
       zh: zh_AssessmentMethod_Locale.classification.title,
       hi: hi_AssessmentMethod_Locale.classification.title,
       es: es_AssessmentMethod_Locale.classification.title,
@@ -201,6 +249,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.classification.description,
+      lt: lt_AssessmentMethod_Locale.classification.description,
+      lv: lv_AssessmentMethod_Locale.classification.description,
+      et: et_AssessmentMethod_Locale.classification.description,
+      be: be_AssessmentMethod_Locale.classification.description,
+      ka: ka_AssessmentMethod_Locale.classification.description,
+      kk: kk_AssessmentMethod_Locale.classification.description,
       zh: zh_AssessmentMethod_Locale.classification.description,
       hi: hi_AssessmentMethod_Locale.classification.description,
       es: es_AssessmentMethod_Locale.classification.description,
@@ -227,6 +281,12 @@ export const assessmentMethodTranslations = {
   relationshipMapping: {
     title: {
       en: en_AssessmentMethod_Locale.relationshipMapping.title,
+      lt: lt_AssessmentMethod_Locale.relationshipMapping.title,
+      lv: lv_AssessmentMethod_Locale.relationshipMapping.title,
+      et: et_AssessmentMethod_Locale.relationshipMapping.title,
+      be: be_AssessmentMethod_Locale.relationshipMapping.title,
+      ka: ka_AssessmentMethod_Locale.relationshipMapping.title,
+      kk: kk_AssessmentMethod_Locale.relationshipMapping.title,
       zh: zh_AssessmentMethod_Locale.relationshipMapping.title,
       hi: hi_AssessmentMethod_Locale.relationshipMapping.title,
       es: es_AssessmentMethod_Locale.relationshipMapping.title,
@@ -251,6 +311,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.relationshipMapping.description,
+      lt: lt_AssessmentMethod_Locale.relationshipMapping.description,
+      lv: lv_AssessmentMethod_Locale.relationshipMapping.description,
+      et: et_AssessmentMethod_Locale.relationshipMapping.description,
+      be: be_AssessmentMethod_Locale.relationshipMapping.description,
+      ka: ka_AssessmentMethod_Locale.relationshipMapping.description,
+      kk: kk_AssessmentMethod_Locale.relationshipMapping.description,
       zh: zh_AssessmentMethod_Locale.relationshipMapping.description,
       hi: hi_AssessmentMethod_Locale.relationshipMapping.description,
       es: es_AssessmentMethod_Locale.relationshipMapping.description,
@@ -277,6 +343,12 @@ export const assessmentMethodTranslations = {
   representationTranslation: {
     title: {
       en: en_AssessmentMethod_Locale.representationTranslation.title,
+      lt: lt_AssessmentMethod_Locale.representationTranslation.title,
+      lv: lv_AssessmentMethod_Locale.representationTranslation.title,
+      et: et_AssessmentMethod_Locale.representationTranslation.title,
+      be: be_AssessmentMethod_Locale.representationTranslation.title,
+      ka: ka_AssessmentMethod_Locale.representationTranslation.title,
+      kk: kk_AssessmentMethod_Locale.representationTranslation.title,
       zh: zh_AssessmentMethod_Locale.representationTranslation.title,
       hi: hi_AssessmentMethod_Locale.representationTranslation.title,
       es: es_AssessmentMethod_Locale.representationTranslation.title,
@@ -301,6 +373,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.representationTranslation.description,
+      lt: lt_AssessmentMethod_Locale.representationTranslation.description,
+      lv: lv_AssessmentMethod_Locale.representationTranslation.description,
+      et: et_AssessmentMethod_Locale.representationTranslation.description,
+      be: be_AssessmentMethod_Locale.representationTranslation.description,
+      ka: ka_AssessmentMethod_Locale.representationTranslation.description,
+      kk: kk_AssessmentMethod_Locale.representationTranslation.description,
       zh: zh_AssessmentMethod_Locale.representationTranslation.description,
       hi: hi_AssessmentMethod_Locale.representationTranslation.description,
       es: es_AssessmentMethod_Locale.representationTranslation.description,
@@ -327,6 +405,12 @@ export const assessmentMethodTranslations = {
   missingInformationInference: {
     title: {
       en: en_AssessmentMethod_Locale.missingInformationInference.title,
+      lt: lt_AssessmentMethod_Locale.missingInformationInference.title,
+      lv: lv_AssessmentMethod_Locale.missingInformationInference.title,
+      et: et_AssessmentMethod_Locale.missingInformationInference.title,
+      be: be_AssessmentMethod_Locale.missingInformationInference.title,
+      ka: ka_AssessmentMethod_Locale.missingInformationInference.title,
+      kk: kk_AssessmentMethod_Locale.missingInformationInference.title,
       zh: zh_AssessmentMethod_Locale.missingInformationInference.title,
       hi: hi_AssessmentMethod_Locale.missingInformationInference.title,
       es: es_AssessmentMethod_Locale.missingInformationInference.title,
@@ -351,6 +435,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.missingInformationInference.description,
+      lt: lt_AssessmentMethod_Locale.missingInformationInference.description,
+      lv: lv_AssessmentMethod_Locale.missingInformationInference.description,
+      et: et_AssessmentMethod_Locale.missingInformationInference.description,
+      be: be_AssessmentMethod_Locale.missingInformationInference.description,
+      ka: ka_AssessmentMethod_Locale.missingInformationInference.description,
+      kk: kk_AssessmentMethod_Locale.missingInformationInference.description,
       zh: zh_AssessmentMethod_Locale.missingInformationInference.description,
       hi: hi_AssessmentMethod_Locale.missingInformationInference.description,
       es: es_AssessmentMethod_Locale.missingInformationInference.description,
@@ -377,6 +467,12 @@ export const assessmentMethodTranslations = {
   structuralAnalysis: {
     title: {
       en: en_AssessmentMethod_Locale.structuralAnalysis.title,
+      lt: lt_AssessmentMethod_Locale.structuralAnalysis.title,
+      lv: lv_AssessmentMethod_Locale.structuralAnalysis.title,
+      et: et_AssessmentMethod_Locale.structuralAnalysis.title,
+      be: be_AssessmentMethod_Locale.structuralAnalysis.title,
+      ka: ka_AssessmentMethod_Locale.structuralAnalysis.title,
+      kk: kk_AssessmentMethod_Locale.structuralAnalysis.title,
       zh: zh_AssessmentMethod_Locale.structuralAnalysis.title,
       hi: hi_AssessmentMethod_Locale.structuralAnalysis.title,
       es: es_AssessmentMethod_Locale.structuralAnalysis.title,
@@ -401,6 +497,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.structuralAnalysis.description,
+      lt: lt_AssessmentMethod_Locale.structuralAnalysis.description,
+      lv: lv_AssessmentMethod_Locale.structuralAnalysis.description,
+      et: et_AssessmentMethod_Locale.structuralAnalysis.description,
+      be: be_AssessmentMethod_Locale.structuralAnalysis.description,
+      ka: ka_AssessmentMethod_Locale.structuralAnalysis.description,
+      kk: kk_AssessmentMethod_Locale.structuralAnalysis.description,
       zh: zh_AssessmentMethod_Locale.structuralAnalysis.description,
       hi: hi_AssessmentMethod_Locale.structuralAnalysis.description,
       es: es_AssessmentMethod_Locale.structuralAnalysis.description,
@@ -427,6 +529,12 @@ export const assessmentMethodTranslations = {
   patternGeneralization: {
     title: {
       en: en_AssessmentMethod_Locale.patternGeneralization.title,
+      lt: lt_AssessmentMethod_Locale.patternGeneralization.title,
+      lv: lv_AssessmentMethod_Locale.patternGeneralization.title,
+      et: et_AssessmentMethod_Locale.patternGeneralization.title,
+      be: be_AssessmentMethod_Locale.patternGeneralization.title,
+      ka: ka_AssessmentMethod_Locale.patternGeneralization.title,
+      kk: kk_AssessmentMethod_Locale.patternGeneralization.title,
       zh: zh_AssessmentMethod_Locale.patternGeneralization.title,
       hi: hi_AssessmentMethod_Locale.patternGeneralization.title,
       es: es_AssessmentMethod_Locale.patternGeneralization.title,
@@ -451,6 +559,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.patternGeneralization.description,
+      lt: lt_AssessmentMethod_Locale.patternGeneralization.description,
+      lv: lv_AssessmentMethod_Locale.patternGeneralization.description,
+      et: et_AssessmentMethod_Locale.patternGeneralization.description,
+      be: be_AssessmentMethod_Locale.patternGeneralization.description,
+      ka: ka_AssessmentMethod_Locale.patternGeneralization.description,
+      kk: kk_AssessmentMethod_Locale.patternGeneralization.description,
       zh: zh_AssessmentMethod_Locale.patternGeneralization.description,
       hi: hi_AssessmentMethod_Locale.patternGeneralization.description,
       es: es_AssessmentMethod_Locale.patternGeneralization.description,
@@ -477,6 +591,12 @@ export const assessmentMethodTranslations = {
   analogicalReasoning: {
     title: {
       en: en_AssessmentMethod_Locale.analogicalReasoning.title,
+      lt: lt_AssessmentMethod_Locale.analogicalReasoning.title,
+      lv: lv_AssessmentMethod_Locale.analogicalReasoning.title,
+      et: et_AssessmentMethod_Locale.analogicalReasoning.title,
+      be: be_AssessmentMethod_Locale.analogicalReasoning.title,
+      ka: ka_AssessmentMethod_Locale.analogicalReasoning.title,
+      kk: kk_AssessmentMethod_Locale.analogicalReasoning.title,
       zh: zh_AssessmentMethod_Locale.analogicalReasoning.title,
       hi: hi_AssessmentMethod_Locale.analogicalReasoning.title,
       es: es_AssessmentMethod_Locale.analogicalReasoning.title,
@@ -501,6 +621,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.analogicalReasoning.description,
+      lt: lt_AssessmentMethod_Locale.analogicalReasoning.description,
+      lv: lv_AssessmentMethod_Locale.analogicalReasoning.description,
+      et: et_AssessmentMethod_Locale.analogicalReasoning.description,
+      be: be_AssessmentMethod_Locale.analogicalReasoning.description,
+      ka: ka_AssessmentMethod_Locale.analogicalReasoning.description,
+      kk: kk_AssessmentMethod_Locale.analogicalReasoning.description,
       zh: zh_AssessmentMethod_Locale.analogicalReasoning.description,
       hi: hi_AssessmentMethod_Locale.analogicalReasoning.description,
       es: es_AssessmentMethod_Locale.analogicalReasoning.description,
@@ -527,6 +653,12 @@ export const assessmentMethodTranslations = {
   knowledgeTransfer: {
     title: {
       en: en_AssessmentMethod_Locale.knowledgeTransfer.title,
+      lt: lt_AssessmentMethod_Locale.knowledgeTransfer.title,
+      lv: lv_AssessmentMethod_Locale.knowledgeTransfer.title,
+      et: et_AssessmentMethod_Locale.knowledgeTransfer.title,
+      be: be_AssessmentMethod_Locale.knowledgeTransfer.title,
+      ka: ka_AssessmentMethod_Locale.knowledgeTransfer.title,
+      kk: kk_AssessmentMethod_Locale.knowledgeTransfer.title,
       zh: zh_AssessmentMethod_Locale.knowledgeTransfer.title,
       hi: hi_AssessmentMethod_Locale.knowledgeTransfer.title,
       es: es_AssessmentMethod_Locale.knowledgeTransfer.title,
@@ -551,6 +683,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.knowledgeTransfer.description,
+      lt: lt_AssessmentMethod_Locale.knowledgeTransfer.description,
+      lv: lv_AssessmentMethod_Locale.knowledgeTransfer.description,
+      et: et_AssessmentMethod_Locale.knowledgeTransfer.description,
+      be: be_AssessmentMethod_Locale.knowledgeTransfer.description,
+      ka: ka_AssessmentMethod_Locale.knowledgeTransfer.description,
+      kk: kk_AssessmentMethod_Locale.knowledgeTransfer.description,
       zh: zh_AssessmentMethod_Locale.knowledgeTransfer.description,
       hi: hi_AssessmentMethod_Locale.knowledgeTransfer.description,
       es: es_AssessmentMethod_Locale.knowledgeTransfer.description,
@@ -577,6 +715,12 @@ export const assessmentMethodTranslations = {
   prediction: {
     title: {
       en: en_AssessmentMethod_Locale.prediction.title,
+      lt: lt_AssessmentMethod_Locale.prediction.title,
+      lv: lv_AssessmentMethod_Locale.prediction.title,
+      et: et_AssessmentMethod_Locale.prediction.title,
+      be: be_AssessmentMethod_Locale.prediction.title,
+      ka: ka_AssessmentMethod_Locale.prediction.title,
+      kk: kk_AssessmentMethod_Locale.prediction.title,
       zh: zh_AssessmentMethod_Locale.prediction.title,
       hi: hi_AssessmentMethod_Locale.prediction.title,
       es: es_AssessmentMethod_Locale.prediction.title,
@@ -601,6 +745,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.prediction.description,
+      lt: lt_AssessmentMethod_Locale.prediction.description,
+      lv: lv_AssessmentMethod_Locale.prediction.description,
+      et: et_AssessmentMethod_Locale.prediction.description,
+      be: be_AssessmentMethod_Locale.prediction.description,
+      ka: ka_AssessmentMethod_Locale.prediction.description,
+      kk: kk_AssessmentMethod_Locale.prediction.description,
       zh: zh_AssessmentMethod_Locale.prediction.description,
       hi: hi_AssessmentMethod_Locale.prediction.description,
       es: es_AssessmentMethod_Locale.prediction.description,
@@ -627,6 +777,12 @@ export const assessmentMethodTranslations = {
   errorDiagnosis: {
     title: {
       en: en_AssessmentMethod_Locale.errorDiagnosis.title,
+      lt: lt_AssessmentMethod_Locale.errorDiagnosis.title,
+      lv: lv_AssessmentMethod_Locale.errorDiagnosis.title,
+      et: et_AssessmentMethod_Locale.errorDiagnosis.title,
+      be: be_AssessmentMethod_Locale.errorDiagnosis.title,
+      ka: ka_AssessmentMethod_Locale.errorDiagnosis.title,
+      kk: kk_AssessmentMethod_Locale.errorDiagnosis.title,
       zh: zh_AssessmentMethod_Locale.errorDiagnosis.title,
       hi: hi_AssessmentMethod_Locale.errorDiagnosis.title,
       es: es_AssessmentMethod_Locale.errorDiagnosis.title,
@@ -651,6 +807,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.errorDiagnosis.description,
+      lt: lt_AssessmentMethod_Locale.errorDiagnosis.description,
+      lv: lv_AssessmentMethod_Locale.errorDiagnosis.description,
+      et: et_AssessmentMethod_Locale.errorDiagnosis.description,
+      be: be_AssessmentMethod_Locale.errorDiagnosis.description,
+      ka: ka_AssessmentMethod_Locale.errorDiagnosis.description,
+      kk: kk_AssessmentMethod_Locale.errorDiagnosis.description,
       zh: zh_AssessmentMethod_Locale.errorDiagnosis.description,
       hi: hi_AssessmentMethod_Locale.errorDiagnosis.description,
       es: es_AssessmentMethod_Locale.errorDiagnosis.description,
@@ -677,6 +839,12 @@ export const assessmentMethodTranslations = {
   verification: {
     title: {
       en: en_AssessmentMethod_Locale.verification.title,
+      lt: lt_AssessmentMethod_Locale.verification.title,
+      lv: lv_AssessmentMethod_Locale.verification.title,
+      et: et_AssessmentMethod_Locale.verification.title,
+      be: be_AssessmentMethod_Locale.verification.title,
+      ka: ka_AssessmentMethod_Locale.verification.title,
+      kk: kk_AssessmentMethod_Locale.verification.title,
       zh: zh_AssessmentMethod_Locale.verification.title,
       hi: hi_AssessmentMethod_Locale.verification.title,
       es: es_AssessmentMethod_Locale.verification.title,
@@ -701,6 +869,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.verification.description,
+      lt: lt_AssessmentMethod_Locale.verification.description,
+      lv: lv_AssessmentMethod_Locale.verification.description,
+      et: et_AssessmentMethod_Locale.verification.description,
+      be: be_AssessmentMethod_Locale.verification.description,
+      ka: ka_AssessmentMethod_Locale.verification.description,
+      kk: kk_AssessmentMethod_Locale.verification.description,
       zh: zh_AssessmentMethod_Locale.verification.description,
       hi: hi_AssessmentMethod_Locale.verification.description,
       es: es_AssessmentMethod_Locale.verification.description,
@@ -727,6 +901,12 @@ export const assessmentMethodTranslations = {
   justification: {
     title: {
       en: en_AssessmentMethod_Locale.justification.title,
+      lt: lt_AssessmentMethod_Locale.justification.title,
+      lv: lv_AssessmentMethod_Locale.justification.title,
+      et: et_AssessmentMethod_Locale.justification.title,
+      be: be_AssessmentMethod_Locale.justification.title,
+      ka: ka_AssessmentMethod_Locale.justification.title,
+      kk: kk_AssessmentMethod_Locale.justification.title,
       zh: zh_AssessmentMethod_Locale.justification.title,
       hi: hi_AssessmentMethod_Locale.justification.title,
       es: es_AssessmentMethod_Locale.justification.title,
@@ -751,6 +931,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.justification.description,
+      lt: lt_AssessmentMethod_Locale.justification.description,
+      lv: lv_AssessmentMethod_Locale.justification.description,
+      et: et_AssessmentMethod_Locale.justification.description,
+      be: be_AssessmentMethod_Locale.justification.description,
+      ka: ka_AssessmentMethod_Locale.justification.description,
+      kk: kk_AssessmentMethod_Locale.justification.description,
       zh: zh_AssessmentMethod_Locale.justification.description,
       hi: hi_AssessmentMethod_Locale.justification.description,
       es: es_AssessmentMethod_Locale.justification.description,
@@ -777,6 +963,12 @@ export const assessmentMethodTranslations = {
   knowledgeConstruction: {
     title: {
       en: en_AssessmentMethod_Locale.knowledgeConstruction.title,
+      lt: lt_AssessmentMethod_Locale.knowledgeConstruction.title,
+      lv: lv_AssessmentMethod_Locale.knowledgeConstruction.title,
+      et: et_AssessmentMethod_Locale.knowledgeConstruction.title,
+      be: be_AssessmentMethod_Locale.knowledgeConstruction.title,
+      ka: ka_AssessmentMethod_Locale.knowledgeConstruction.title,
+      kk: kk_AssessmentMethod_Locale.knowledgeConstruction.title,
       zh: zh_AssessmentMethod_Locale.knowledgeConstruction.title,
       hi: hi_AssessmentMethod_Locale.knowledgeConstruction.title,
       es: es_AssessmentMethod_Locale.knowledgeConstruction.title,
@@ -801,6 +993,12 @@ export const assessmentMethodTranslations = {
     },
     description: {
       en: en_AssessmentMethod_Locale.knowledgeConstruction.description,
+      lt: lt_AssessmentMethod_Locale.knowledgeConstruction.description,
+      lv: lv_AssessmentMethod_Locale.knowledgeConstruction.description,
+      et: et_AssessmentMethod_Locale.knowledgeConstruction.description,
+      be: be_AssessmentMethod_Locale.knowledgeConstruction.description,
+      ka: ka_AssessmentMethod_Locale.knowledgeConstruction.description,
+      kk: kk_AssessmentMethod_Locale.knowledgeConstruction.description,
       zh: zh_AssessmentMethod_Locale.knowledgeConstruction.description,
       hi: hi_AssessmentMethod_Locale.knowledgeConstruction.description,
       es: es_AssessmentMethod_Locale.knowledgeConstruction.description,

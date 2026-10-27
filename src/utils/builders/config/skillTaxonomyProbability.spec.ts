@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'probability');
 const read = (path: string): string => readFileSync(join(root, path), 'utf8');
@@ -20,17 +20,11 @@ describe('Probability SkillDomain taxonomy', () => {
         ...skills.map(skill => `${group}/skills/${skill}.data.ts`),
       ]),
     ];
-    const expected = DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language).sort();
     assert.equal(paths.length, 7);
 
     for (const path of paths) {
       const source = read(path);
-      const translations = [...source.matchAll(/^    ([a-z]{2}): "(.+)",$/gm)];
-      assert.deepEqual(translations.map(match => match[1]).sort(), expected, path);
-      assert.ok(
-        translations.every(match => match[2].trim().length > 0),
-        path,
-      );
+      assertSupportedTranslations(source, path);
       assert.match(source, /buildSkill(?:Domain|Group)?Config\(\{/);
     }
   });

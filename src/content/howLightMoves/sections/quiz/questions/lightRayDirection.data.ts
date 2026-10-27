@@ -11,6 +11,12 @@ export const lightRayDirection_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.lightRayDirection.content, {
       en: 'What does a light ray show?',
+        lt: "Ką parodo šviesos spindulys?",
+        lv: "Ko parāda gaismas stars?",
+        et: "Mida valguskiir näitab?",
+        be: "Што паказвае сьветлавы прамень?",
+        ka: "რას გვიჩვენებს სინათლის სხივი?",
+        kk: "Жарық сәулесі нені көрсетеді?",
       zh: '光线表示什么？',
       hi: 'प्रकाश किरण क्या दर्शाती है?',
       es: '¿Qué indica un rayo de luz?',
@@ -36,6 +42,12 @@ export const lightRayDirection_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.lightRayDirection.explanation, {
     en: 'A light ray shows the direction in which light travels.',
+      lt: "Šviesos spindulys parodo šviesos sklidimo kryptį.",
+      lv: "Gaismas stars parāda gaismas izplatīšanās virzienu.",
+      et: "Valguskiir näitab valguse levimise suunda.",
+      be: "Сьветлавы прамень паказвае кірунак пашырэньня сьвятла.",
+      ka: "სინათლის სხივი სინათლის გავრცელების მიმართულებას გვიჩვენებს.",
+      kk: "Жарық сәулесі жарықтың таралу бағытын көрсетеді.",
     zh: '光线表示光传播的方向。',
     hi: 'प्रकाश किरण उस दिशा को दर्शाती है जिसमें प्रकाश चलता है।',
     es: 'Un rayo de luz indica la dirección en que se propaga la luz.',
@@ -64,6 +76,12 @@ export const lightRayDirection_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.lightRayDirection.correct, {
       en: 'The direction light travels.',
+        lt: "Šviesos sklidimo kryptį.",
+        lv: "Gaismas izplatīšanās virzienu.",
+        et: "Valguse levimise suunda.",
+        be: "Кірунак пашырэньня сьвятла.",
+        ka: "სინათლის გავრცელების მიმართულებას.",
+        kk: "Жарықтың таралу бағытын.",
       zh: '光传播的方向。',
       hi: 'प्रकाश के चलने की दिशा।',
       es: 'La dirección en que se propaga la luz.',
@@ -89,6 +107,12 @@ export const lightRayDirection_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.lightRayDirection.incorrectFirst, {
         en: 'The temperature of the source.',
+          lt: "Šaltinio temperatūrą.",
+          lv: "Avota temperatūru.",
+          et: "Valgusallika temperatuuri.",
+          be: "Тэмпэратуру крыніцы.",
+          ka: "წყაროს ტემპერატურას.",
+          kk: "Жарық көзінің температурасын.",
         zh: '光源的温度。',
         hi: 'स्रोत का तापमान।',
         es: 'La temperatura de la fuente.',
@@ -115,6 +139,12 @@ export const lightRayDirection_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.lightRayDirection.incorrectSecond, {
         en: 'The size of a light particle.',
+          lt: "Šviesos dalelės dydį.",
+          lv: "Gaismas daļiņas izmēru.",
+          et: "Valgusosakese suurust.",
+          be: "Памер часьцінкі сьвятла.",
+          ka: "სინათლის ნაწილაკის ზომას.",
+          kk: "Жарық бөлшегінің өлшемін.",
         zh: '光粒子的大小。',
         hi: 'प्रकाश के कण का आकार।',
         es: 'El tamaño de una partícula de luz.',

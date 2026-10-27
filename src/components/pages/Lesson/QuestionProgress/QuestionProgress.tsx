@@ -2,7 +2,8 @@
 
 import Box from '@mui/material/Box';
 import { aria } from './QuestionProgress.constants';
-import { locale as lessonLocale } from '../locales/uk-UA';
+import { getLessonMessages } from '../locales';
+import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 
 export type QuestionStatus = 'unanswered' | 'correct' | 'incorrect' | 'deferred';
 
@@ -14,8 +15,6 @@ export interface QuestionProgressProps {
   className?: string;
 }
 
-const statusLabel: Record<QuestionStatus, string> = lessonLocale.questionProgress.status;
-
 export function QuestionProgress({
   statuses,
   currentIndex,
@@ -23,6 +22,8 @@ export function QuestionProgress({
   onNavigate,
   className,
 }: QuestionProgressProps) {
+  const { locale } = useLocale();
+  const statusLabel: Record<QuestionStatus, string> = getLessonMessages(locale).questionProgress.status;
   return (
     <Box component="ol" className={className} role="list" aria-label={aria.navigation}>
       {statuses.map((status, index) => (

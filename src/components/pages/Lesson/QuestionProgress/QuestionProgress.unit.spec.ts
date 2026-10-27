@@ -1,9 +1,17 @@
-import { describe, expect, it, vi } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { screen } from '@testing-library/react';
+import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
+import { getLessonMessages } from '../locales';
+
+vi.mock('@/i18n/LocaleProvider/LocaleProvider', () => ({ useLocale: vi.fn() }));
 import { QuestionProgress_fx } from './QuestionProgress.unit.fx';
 import { aria } from './QuestionProgress.constants';
 
 describe('Components', () => {
   describe('QuestionProgress', () => {
+    beforeEach(() => {
+      vi.mocked(useLocale).mockReturnValue({ locale: 'uk-UA', setLocale: vi.fn() });
+    });
     it('should expose a localized accessible list label', () => {
       QuestionProgress_fx.render();
       expect(QuestionProgress_fx.selectors.list()).toHaveAccessibleName(aria.navigation);
@@ -38,6 +46,13 @@ describe('Components', () => {
     it('should handle an empty status list without creating question buttons', () => {
       QuestionProgress_fx.render({ statuses: [] });
       expect(QuestionProgress_fx.selectors.list().querySelectorAll('button')).toHaveLength(0);
+    });
+
+    it('should use the active Lithuanian locale for status labels', () => {
+      vi.mocked(useLocale).mockReturnValue({ locale: 'lt-LT', setLocale: vi.fn() });
+      QuestionProgress_fx.render({ statuses: ['unanswered'], currentIndex: 0 });
+      const title = getLessonMessages('lt-LT').questionProgress.status.unanswered;
+      expect(screen.getByRole('button', { name: `1. ${title}` })).toBeVisible();
     });
 
     it('should include deferred status in accessible names', () => {

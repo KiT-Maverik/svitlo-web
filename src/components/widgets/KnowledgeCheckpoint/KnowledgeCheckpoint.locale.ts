@@ -98,6 +98,13 @@ const uk = {
   checked: 'Підтверджено',
 } satisfies KnowledgeCheckpoint_Locale;
 
+const lt = { title: 'Pasitikrink žinias', check: 'Patikrinti', checked: 'Patikrinta' } satisfies KnowledgeCheckpoint_Locale;
+const lv = { title: 'Pārbaudi savas zināšanas', check: 'Pārbaudīt', checked: 'Pārbaudīts' } satisfies KnowledgeCheckpoint_Locale;
+const et = { title: 'Kontrolli oma teadmisi', check: 'Kontrolli', checked: 'Kontrollitud' } satisfies KnowledgeCheckpoint_Locale;
+const be = { title: 'Правер свае веды', check: 'Праверыць', checked: 'Праверана' } satisfies KnowledgeCheckpoint_Locale;
+const ka = { title: 'შეამოწმე შენი ცოდნა', check: 'შემოწმება', checked: 'შემოწმებულია' } satisfies KnowledgeCheckpoint_Locale;
+const kk = { title: 'Біліміңді тексер', check: 'Тексеру', checked: 'Тексерілді' } satisfies KnowledgeCheckpoint_Locale;
+
 export const locales = {
   en,
   zh,
@@ -121,4 +128,5 @@ export const locales = {
   he,
   pl,
   uk,
+  lt, lv, et, be, ka, kk,
 } satisfies Record<DefaultSupportedLanguage['language'], KnowledgeCheckpoint_Locale>;

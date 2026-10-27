@@ -3,7 +3,8 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import Link from 'next/link';
 import styles from '../Lesson.module.css';
-import { locale } from '../locales/uk-UA';
+import { getLessonMessages } from '../locales';
+import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { aria } from './Celebration.constants';
 
 export async function playCelebration() {
@@ -34,6 +35,8 @@ export async function playCelebration() {
 }
 
 export default function Celebration({ score, total }: { score: number; total: number }) {
+  const { locale: activeLocale } = useLocale();
+  const locale = getLessonMessages(activeLocale);
   const [showConfetti, setShowConfetti] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => setShowConfetti(false), 3200);

@@ -9,7 +9,7 @@ import { useColorScheme } from '@mui/material/styles';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
 import { Flag } from '@/components/widgets/Flag';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
-import { locale as messages } from './locales/uk-UA';
+import { getNavbarPreferencesMessages } from './locales';
 import { aria } from './NavbarPreferences.constants';
 
 const locales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale, language, nativeName }) => ({
@@ -56,6 +56,8 @@ function LocaleSelector() {
 }
 
 function ThemeSwitch() {
+  const { locale } = useLocale();
+  const messages = getNavbarPreferencesMessages(locale);
   const { mode, systemMode, setMode } = useColorScheme();
   const isDark = mode === 'dark' || (mode === 'system' && systemMode === 'dark');
 

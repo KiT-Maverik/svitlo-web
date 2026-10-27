@@ -329,6 +329,60 @@ const uk = {
   ],
 } satisfies TheoryKnowledgeCheckpoint_Locale;
 
+const lt = {
+  title: "Pabandyk paaiškinti",
+  items: [
+    { question: "Kur scenoje yra šviesos šaltinis?", answer: "Šaltinis yra kairėje." },
+    { question: "Ar pasikeičia šviesos kelias, kai pakeiti animacijos greitį?", answer: "Valdiklis keičia tik animacijos greitį; kelias išlieka tiesus." },
+    { question: "Kas nutiks, jei tarp šaltinio ir ekrano padėsi nepermatomą daiktą?", answer: "Nepermatomas daiktas užstoja dalį šviesos, todėl už jo susidaro šešėlis." },
+  ],
+} satisfies TheoryKnowledgeCheckpoint_Locale;
+
+const lv = {
+  title: "Mēģini izskaidrot",
+  items: [
+    { question: "Kur attēlā atrodas gaismas avots?", answer: "Avots atrodas kreisajā pusē." },
+    { question: "Vai gaismas ceļš mainās, ja maini animācijas ātrumu?", answer: "Vadīkla maina tikai animācijas ātrumu; gaismas ceļš paliek taisns." },
+    { question: "Kas notiks, ja starp avotu un ekrānu novietosi necaurspīdīgu priekšmetu?", answer: "Necaurspīdīgs priekšmets aiztur daļu gaismas, un aiz tā veidojas ēna." },
+  ],
+} satisfies TheoryKnowledgeCheckpoint_Locale;
+
+const et = {
+  title: "Proovi selgitada",
+  items: [
+    { question: "Kus asub stseenis valgusallikas?", answer: "Valgusallikas on vasakul." },
+    { question: "Kas valguse teekond muutub, kui muudad animatsiooni kiirust?", answer: "Juhtnupp muudab ainult animatsiooni kiirust; valguse teekond jääb sirgeks." },
+    { question: "Mis juhtub, kui asetad valgusallika ja ekraani vahele läbipaistmatu eseme?", answer: "Läbipaistmatu ese takistab osa valgusest ja selle taha tekib vari." },
+  ],
+} satisfies TheoryKnowledgeCheckpoint_Locale;
+
+const be = {
+  title: "Паспрабуй патлумачыць",
+  items: [
+    { question: "Дзе ў сцэне знаходзіцца крыніца сьвятла?", answer: "Крыніца знаходзіцца зьлева." },
+    { question: "Ці зьмяняецца шлях сьвятла, калі зьмяніць хуткасьць анімацыі?", answer: "Рэгулятар зьмяняе толькі хуткасьць анімацыі; шлях застаецца простым." },
+    { question: "Што будзе, калі паставіць непразрысты прадмет паміж крыніцай і экранам?", answer: "Непразрысты прадмет затрымлівае частку сьвятла, і за ім утвараецца цень." },
+  ],
+} satisfies TheoryKnowledgeCheckpoint_Locale;
+
+const ka = {
+  title: "სცადე ახსნა",
+  items: [
+    { question: "სად არის სინათლის წყარო სცენაზე?", answer: "წყარო მარცხნივ მდებარეობს." },
+    { question: "იცვლება სინათლის გზა, როცა ანიმაციის სიჩქარეს ცვლი?", answer: "მართვის ღილაკი მხოლოდ ანიმაციის სიჩქარეს ცვლის; სინათლის გზა სწორი რჩება." },
+    { question: "რა მოხდება, თუ წყაროსა და ეკრანს შორის გაუმჭვირვალე საგანს მოათავსებ?", answer: "გაუმჭვირვალე საგანი სინათლის ნაწილს აკავებს და მის უკან ჩრდილი წარმოიქმნება." },
+  ],
+} satisfies TheoryKnowledgeCheckpoint_Locale;
+
+const kk = {
+  title: "Түсіндіріп көр",
+  items: [
+    { question: "Көріністе жарық көзі қай жерде орналасқан?", answer: "Жарық көзі сол жақта орналасқан." },
+    { question: "Анимация жылдамдығын өзгерткенде жарықтың жолы өзгере ме?", answer: "Реттегіш тек анимация жылдамдығын өзгертеді; жолы түзу болып қалады." },
+    { question: "Жарық көзі мен экранның арасына мөлдір емес зат қойсаң не болады?", answer: "Мөлдір емес зат жарықтың бір бөлігін бөгеп, артында көлеңке түсіреді." },
+  ],
+} satisfies TheoryKnowledgeCheckpoint_Locale;
+
 export const locales = {
   en,
   zh,
@@ -352,4 +406,5 @@ export const locales = {
   he,
   pl,
   uk,
+  lt, lv, et, be, ka, kk,
 } satisfies Record<DefaultSupportedLanguage['language'], TheoryKnowledgeCheckpoint_Locale>;

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src/math/skillsTaxonomy/algebra');
 const groupSkills = {
@@ -80,19 +80,7 @@ describe('Algebra taxonomy source integrity', () => {
       ]),
     ];
     for (const path of paths) {
-      const content = source(path);
-      const start = content.indexOf('  name: {');
-      assert.notEqual(start, -1, path);
-      const end = content.indexOf('  },', start);
-      assert.notEqual(end, -1, path);
-      const block = content.slice(start, end);
-      const keys = [...block.matchAll(/^    ([a-z]+): "(.+)",$/gm)].map(([, key, value]) => ({ key, value }));
-      assert.deepEqual(
-        keys.map(x => x.key),
-        DEFAULT_SUPPORTED_LANGUAGES.map(x => x.language),
-        path,
-      );
-      for (const entry of keys) assert.ok(entry.value.trim(), path);
+      assertSupportedTranslations(source(path), path);
     }
   });
 

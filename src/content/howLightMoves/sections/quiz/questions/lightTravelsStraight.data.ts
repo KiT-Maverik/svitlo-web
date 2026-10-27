@@ -11,6 +11,12 @@ export const lightTravelsStraight_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.lightTravelsStraight.content, {
       en: 'How does light travel in a uniform transparent medium?',
+        lt: "Kaip šviesa sklinda vienalytėje skaidrioje terpėje?",
+        lv: "Kā gaisma izplatās viendabīgā caurspīdīgā vidē?",
+        et: "Kuidas valgus levib ühtlases läbipaistvas keskkonnas?",
+        be: "Як сьвятло пашыраецца ў аднародным празрыстым асяродзьдзі?",
+        ka: "როგორ ვრცელდება სინათლე ერთგვაროვან გამჭვირვალე გარემოში?",
+        kk: "Біртекті мөлдір ортада жарық қалай таралады?",
       zh: '光在均匀透明的介质中如何传播？',
       hi: 'एकसमान पारदर्शी माध्यम में प्रकाश कैसे चलता है?',
       es: '¿Cómo se propaga la luz en un medio transparente y homogéneo?',
@@ -36,6 +42,12 @@ export const lightTravelsStraight_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.lightTravelsStraight.explanation, {
     en: 'In a uniform transparent medium, light travels in a straight line.',
+      lt: "Vienalytėje skaidrioje terpėje šviesa sklinda tiesia linija.",
+      lv: "Viendabīgā caurspīdīgā vidē gaisma izplatās taisnā līnijā.",
+      et: "Ühtlases läbipaistvas keskkonnas levib valgus sirgjooneliselt.",
+      be: "У аднародным празрыстым асяродзьдзі сьвятло пашыраецца па простай лініі.",
+      ka: "ერთგვაროვან გამჭვირვალე გარემოში სინათლე სწორი ხაზით ვრცელდება.",
+      kk: "Біртекті мөлдір ортада жарық түзу сызық бойымен таралады.",
     zh: '在均匀透明的介质中，光沿直线传播。',
     hi: 'एकसमान पारदर्शी माध्यम में प्रकाश सीधी रेखा में चलता है।',
     es: 'En un medio transparente y homogéneo, la luz se propaga en línea recta.',
@@ -64,6 +76,12 @@ export const lightTravelsStraight_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.lightTravelsStraight.correct, {
       en: 'In a straight line.',
+        lt: "Tiesia linija.",
+        lv: "Taisnā līnijā.",
+        et: "Sirgjooneliselt.",
+        be: "Па простай лініі.",
+        ka: "სწორი ხაზით.",
+        kk: "Түзу сызық бойымен.",
       zh: '沿直线传播。',
       hi: 'सीधी रेखा में।',
       es: 'En línea recta.',
@@ -89,6 +107,12 @@ export const lightTravelsStraight_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.lightTravelsStraight.incorrectFirst, {
         en: 'In a circle.',
+          lt: "Apskritimu.",
+          lv: "Pa apli.",
+          et: "Ringikujuliselt.",
+          be: "Па коле.",
+          ka: "წრეზე.",
+          kk: "Шеңбер бойымен.",
         zh: '沿圆周传播。',
         hi: 'गोल चक्कर में।',
         es: 'En círculo.',
@@ -115,6 +139,12 @@ export const lightTravelsStraight_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.lightTravelsStraight.incorrectSecond, {
         en: 'Always along a curve.',
+          lt: "Visada kreive.",
+          lv: "Vienmēr pa līkni.",
+          et: "Alati mööda kõverat.",
+          be: "Заўсёды па крывой.",
+          ka: "ყოველთვის მრუდით.",
+          kk: "Әрқашан қисық бойымен.",
         zh: '总是沿曲线传播。',
         hi: 'हमेशा वक्र रेखा में।',
         es: 'Siempre en una curva.',

@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(root, 'measurement');
@@ -57,12 +58,7 @@ function read(path: string): string {
 }
 
 function getNames(path: string): Record<string, string> {
-  const match = read(path).match(/name:\s*(\{[\s\S]*?\})\s*,/);
-  assert.ok(match, 'Missing names: ' + path);
-  const result = JSON.parse(match[1]) as Record<string, string>;
-  assert.deepEqual(Object.keys(result), locales);
-  assert.ok(Object.values(result).every(text => typeof text === 'string' && text.trim().length > 0));
-  return result;
+  return assertSupportedTranslations(read(path), path);
 }
 
 function ids(path: string): Record<string, string> {
@@ -95,20 +91,23 @@ describe('Measurement taxonomy', () => {
     }
     const domainInventory = inventory.split('### Domain 7.')[1]?.split('### Domain 8.')[0];
     assert.ok(domainInventory);
-    const rows = [...domainInventory.matchAll(/^\| \x60(math\.measure\.[^\x60]+)\x60 \|[^\n]+$/gm)];
+    const rows = [...domainInventory.matchAll(/^\|\s*`(math\.measure\.[^`]+)`\s*\|[^\n]+$/gm)];
     assert.deepEqual(rows.map(row => row[1]).sort(), expectedEditorial.map(key => 'math.measure.' + key).sort());
-    assert.ok(rows.every(row => row[0].endsWith('| **Implemented** |')));
+    assert.ok(rows.every(row => /\|\s*\*\*Implemented\*\*\s*\|\s*$/.test(row[0])));
   });
 
   it('uses stable, unique UUIDs with separate ID-only references', () => {
     const seen = new Set<string>();
-    const quote = String.fromCharCode(96);
     const check = (kind: string, editorial: string, value: string): void => {
       assert.match(value, /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
       assert.ok(!seen.has(value), 'Duplicate UUID: ' + value);
       seen.add(value);
       assert.ok(
-        migration.includes('| ' + kind + ' | ' + quote + editorial + quote + ' | ' + quote + value + quote + ' |'),
+        migration.split('\n').some(line => {
+          const columns = line.split('|').map(column => column.trim());
+          return columns[1] === kind && columns[2] === '`' + editorial + '`' && columns[3] === '`' + value + '`';
+        }),
+        `Missing migration entry: ${kind} ${editorial} ${value}`,
       );
     };
     const domainIds = ids(join(domain, 'measurement.ids.ts'));
@@ -136,8 +135,8 @@ describe('Measurement taxonomy', () => {
     assert.equal(seen.size, 27);
   });
 
-  it('provides all 22 translations with distinct Group and Skill names', () => {
-    assert.equal(locales.length, 22);
+  it('provides all supported translations with distinct Group and Skill names', () => {
+    assert.equal(locales.length, DEFAULT_SUPPORTED_LANGUAGES.length);
     getNames(join(domain, 'measurement.data.ts'));
     for (const [group, skills] of Object.entries(names)) {
       const parent = getNames(join(domain, group, group + '.data.ts'));

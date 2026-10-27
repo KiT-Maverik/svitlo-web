@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const taxonomy = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const root = join(taxonomy, 'money');
@@ -25,18 +25,10 @@ const idFiles = [
 const uuidPattern = /'([0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})'/g;
 
 describe('Money SkillDomain integrity', () => {
-  it('implements exactly nine configs with all 22 nonempty localized names', () => {
+  it('implements exactly nine configs with all supported localized names', () => {
     assert.equal(configs.length, 9);
-    const languages = DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language).sort();
     for (const file of configs) {
-      const dictionary = read(file).match(/name: \{([\s\S]*?)\n  \},/)?.[1];
-      assert.ok(dictionary, 'Missing name dictionary: ' + file);
-      const entries = [...dictionary.matchAll(/^    ([a-z]{2}): "([^"]+)",$/gm)];
-      assert.deepEqual(entries.map(([, key]) => key).sort(), languages, file);
-      assert.ok(
-        entries.every(([, , value]) => value.trim().length > 0),
-        file,
-      );
+      assertSupportedTranslations(read(file), file);
     }
   });
 

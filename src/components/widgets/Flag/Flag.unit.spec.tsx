@@ -25,6 +25,15 @@ describe('Widgets/Flag', () => {
     expect(flagCountryByLocale['pt-BR']).toBe('br');
   });
 
+  it('uses the agreed flags for the new language communities', () => {
+    expect(flagCountryByLocale['be-tarask']).toBe('by');
+    expect(flagCountryByLocale['ka-GE']).toBe('ge');
+    expect(flagCountryByLocale['kk-Cyrl-KZ']).toBe('kz');
+    expect(flagCountryByLocale['lt-LT']).toBe('lt');
+    expect(flagCountryByLocale['lv-LV']).toBe('lv');
+    expect(flagCountryByLocale['et-EE']).toBe('ee');
+  });
+
   it('reuses India for all four Indian-language locales', () => {
     for (const locale of ['hi-IN', 'ta-IN', 'te-IN', 'mr-IN'] as const) {
       expect(flagCountryByLocale[locale]).toBe('in');

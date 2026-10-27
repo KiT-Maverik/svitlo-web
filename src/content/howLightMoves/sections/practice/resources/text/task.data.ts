@@ -3,6 +3,12 @@ import { practice_TextResources_Ids } from './index.ids';
 
 export const task_TextResource_Data = createTextResource(practice_TextResources_Ids.task, {
   en: 'Compare the speed of light in vacuum, air and water.',
+    lt: "Palygink šviesos greitį vakuume, ore ir vandenyje.",
+    lv: "Salīdzini gaismas ātrumu vakuumā, gaisā un ūdenī.",
+    et: "Võrdle valguse kiirust vaakumis, õhus ja vees.",
+    be: "Параўнай хуткасьць сьвятла ў вакуўме, паветры і вадзе.",
+    ka: "შეადარე სინათლის სიჩქარე ვაკუუმში, ჰაერსა და წყალში.",
+    kk: "Вакуумдағы, ауадағы және судағы жарық жылдамдығын салыстыр.",
   zh: '比较光在真空、空气和水中的传播速度。',
   hi: 'निर्वात, हवा और पानी में प्रकाश की गति की तुलना करें।',
   es: 'Compara la velocidad de la luz en el vacío, el aire y el agua.',

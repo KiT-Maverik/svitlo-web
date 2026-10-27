@@ -1,4 +1,9 @@
-import { describe, expect, it, vi } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { screen } from '@testing-library/react';
+import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
+import { getLessonMessages } from '../locales';
+
+vi.mock('@/i18n/LocaleProvider/LocaleProvider', () => ({ useLocale: vi.fn() }));
 import { act } from 'react';
 import { playCelebration } from './Celebration';
 import { Celebration_fx } from './Celebration.unit.fx';
@@ -6,6 +11,9 @@ import { locale } from '../locales/uk-UA';
 
 describe('Components', () => {
   describe('Celebration', () => {
+    beforeEach(() => {
+      vi.mocked(useLocale).mockReturnValue({ locale: 'uk-UA', setLocale: vi.fn() });
+    });
     it('should show the localized completion heading and score', () => {
       Celebration_fx.render({ score: 2, total: 4 });
       expect(Celebration_fx.selectors.title()).toBeVisible();
@@ -36,6 +44,12 @@ describe('Components', () => {
       } finally {
         vi.useRealTimers();
       }
+    });
+
+    it('should render the active Belarusian Taraškievica completion heading', () => {
+      vi.mocked(useLocale).mockReturnValue({ locale: 'be-tarask', setLocale: vi.fn() });
+      Celebration_fx.render();
+      expect(screen.getByRole('heading', { name: getLessonMessages('be-tarask').celebration.title })).toBeVisible();
     });
 
     it('should tolerate unavailable browser audio without rejecting completion', async () => {

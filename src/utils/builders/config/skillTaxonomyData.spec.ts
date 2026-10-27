@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const taxonomy = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(taxonomy, 'data');
@@ -57,21 +57,17 @@ describe('Data taxonomy source contracts', () => {
     assert.equal(count, 15);
   });
 
-  it('localizes every domain, group and skill name into all 22 languages', () => {
+  it('localizes every domain, group and skill name into all supported languages', () => {
     const paths = [join(domain, 'data.data.ts')];
     for (const [group, keys] of Object.entries(expected)) {
       paths.push(join(domain, group, group + '.data.ts'));
       for (const key of keys) paths.push(join(domain, group, 'skills', key + '.data.ts'));
     }
     assert.equal(paths.length, 19);
-    const languages = DEFAULT_SUPPORTED_LANGUAGES.map(entry => entry.language).sort();
     for (const path of paths) {
       assert.ok(existsSync(path), path);
       const source = read(path);
-      const match = source.match(/name:\s*\{([\s\S]*?)\n\s*\},/);
-      assert.ok(match, 'Missing localized name: ' + path);
-      const keys = [...match[1].matchAll(/^\s*([a-z]+):\s*"(?:\\.|[^"\\])*",?$/gm)].map(entry => entry[1]).sort();
-      assert.deepEqual(keys, languages, 'Incomplete locales in ' + path);
+      assertSupportedTranslations(source, path);
       assert.ok(!source.includes('fileLocation:'), path);
     }
   });

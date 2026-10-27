@@ -26,7 +26,7 @@ import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@types';
 import { VerticalSpace } from '@/components/widgets';
-import { locale as messages } from './locales/uk-UA';
+import { getLearningLayoutMessages } from './locales';
 import { aria } from './LearningLayout.constants';
 
 type Topic = { id: string; title: string; href: string };
@@ -43,6 +43,7 @@ export default function LearningLayout({
   quizStep?: number;
 }) {
   const { locale } = useLocale();
+  const messages = getLearningLayoutMessages(locale);
   const direction = getLocaleDirection(locale);
   const { progress, dispatch } = useLessonProgress();
   const [open, setOpen] = useState(false);

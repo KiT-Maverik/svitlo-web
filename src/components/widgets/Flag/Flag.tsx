@@ -10,6 +10,7 @@ export type FlagProps = Omit<ImageProps, 'src' | 'alt'> & {
 
 /**
  * ISO 3166-1 alpha-2 country codes, not language codes.
+ * Belarusian Taraškievica deliberately uses the historical white-red-white asset.
  * Unregistered future locales intentionally have no dispatcher entry.
  */
 export const flagCountryByLocale = {
@@ -35,6 +36,12 @@ export const flagCountryByLocale = {
   'he-IL': 'il',
   'pl-PL': 'pl',
   'uk-UA': 'ua',
+  'lt-LT': 'lt',
+  'lv-LV': 'lv',
+  'et-EE': 'ee',
+  'be-tarask': 'by',
+  'ka-GE': 'ge',
+  'kk-Cyrl-KZ': 'kz',
 } as const satisfies Record<FlagLocale, string>;
 
 /** A single image wrapper instead of individually authored React SVG components. */
