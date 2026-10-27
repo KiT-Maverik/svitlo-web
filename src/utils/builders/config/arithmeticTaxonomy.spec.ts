@@ -19,7 +19,7 @@ function read(...parts: string[]): string {
 }
 function ids(content: string): Map<string, string> {
   return new Map([...content.matchAll(/^  (\w+): '([0-9a-f-]{36})',/gm)]
-    .map(match => [match[1], match[2]]));
+    .map((match): [string, string] => [match[1], match[2]]));
 }
 
 describe('Arithmetic taxonomy completeness', () => {
