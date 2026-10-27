@@ -22,7 +22,7 @@
 
 ## Інвентар навичок
 
-Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **15 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
+Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **30 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
 
 ## Семантична таксономія (v0.6)
 
@@ -41,7 +41,7 @@
 | `math.measurement` | Вимірювання | 5 | 21 | — | 0/5 | 0/21 |
 | `math.time` | Час | 3 | 13 | — | 0/3 | 0/13 |
 | `math.money` | Гроші | 2 | 6 | — | 0/2 | 0/6 |
-| `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
+| `math.data` | Дані | 3 | 15 | **Implemented** | 3/3 | 15/15 |
 | `math.probability` | Ймовірність | 2 | 4 | — | 0/2 | 0/4 |
 | `math.problemSolving` | Задачі | 7 | 23 | — | 0/7 | 0/23 |
 | `math.reasoning` | Міркування | 4 | 11 | — | 0/4 | 0/11 |
@@ -50,7 +50,7 @@
 
 **Редакційні Domain/Group ID — робочі.** У реалізованому коді Domain має `groupIds`, Group — `skillIds` як іменовані словники UUID. Належність навички не виводиться з префікса редакційного ID; перегрупування не змінює runtime UUID.
 
-**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Обробленими повністю є лише 15 Skill домену Counting. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
+**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Повністю реалізовані 15 Skill домену Counting та 15 Skill домену Data. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
 
 ## Інвентар за доменами
 
@@ -736,7 +736,7 @@
 
 ### Domain 10. Дані (15)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 3/3 Group configs + 15/15 individual Skills — **Complete**
 
 **ID:** `math.data`
 
@@ -744,43 +744,43 @@
 
 **ID:** `math.data.collection`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.data.classify-by-attribute` | Групувати об’єкти за однією або двома визначеними ознаками | 1 | — |
-| `math.data.formulate-investigation-question` | Формулювати запитання, для відповіді на яке потрібно зібрати дані | 3 | — |
-| `math.data.collect-counts` | Збирати прості дані підрахунком та фіксувати частоти категорій | 1–2 | — |
-| `math.data.tally-marks` | Записувати кількості умовними позначками й відновлювати їх | 2 | — |
-| `math.data.fill-simple-table` | Заповнювати таблицю результатами спостереження або вимірювання | 2 | — |
+| `math.data.classify-by-attribute` | Групувати об’єкти за однією або двома визначеними ознаками | 1 | **Implemented** |
+| `math.data.formulate-investigation-question` | Формулювати запитання, для відповіді на яке потрібно зібрати дані | 3 | **Implemented** |
+| `math.data.collect-counts` | Збирати прості дані підрахунком та фіксувати частоти категорій | 1–2 | **Implemented** |
+| `math.data.tally-marks` | Записувати кількості умовними позначками й відновлювати їх | 2 | **Implemented** |
+| `math.data.fill-simple-table` | Заповнювати таблицю результатами спостереження або вимірювання | 2 | **Implemented** |
 
 #### SkillGroup 10.2. Подання даних (7)
 
 **ID:** `math.data.presentation`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.data.line-plot-measurements` | Фіксувати серію вимірювань на точковій/лінійній діаграмі з числовою віссю (line plot) | 2–3 | — |
-| `math.data.read-simple-table` | Читати значення з таблиці та відповідати на прості питання за нею | 1–2 | — |
-| `math.data.read-pictograph` | Читати піктограму, де один символ відповідає одному об’єкту | 1–2 | — |
-| `math.data.build-pictograph` | Будувати просту піктограму за підрахованими даними | 2 | — |
-| `math.data.read-bar-chart` | Читати стовпчикову діаграму й порівнювати висоти стовпчиків | 2–3 | — |
-| `math.data.build-bar-chart` | Створювати просту стовпчикову діаграму за таблицею | 2–3 | — |
-| `math.data.scaled-chart` | Читати діаграму, де одна позначка відповідає кільком одиницям | 3+ | — |
+| `math.data.line-plot-measurements` | Фіксувати серію вимірювань на точковій/лінійній діаграмі з числовою віссю (line plot) | 2–3 | **Implemented** |
+| `math.data.read-simple-table` | Читати значення з таблиці та відповідати на прості питання за нею | 1–2 | **Implemented** |
+| `math.data.read-pictograph` | Читати піктограму, де один символ відповідає одному об’єкту | 1–2 | **Implemented** |
+| `math.data.build-pictograph` | Будувати просту піктограму за підрахованими даними | 2 | **Implemented** |
+| `math.data.read-bar-chart` | Читати стовпчикову діаграму й порівнювати висоти стовпчиків | 2–3 | **Implemented** |
+| `math.data.build-bar-chart` | Створювати просту стовпчикову діаграму за таблицею | 2–3 | **Implemented** |
+| `math.data.scaled-chart` | Читати діаграму, де одна позначка відповідає кільком одиницям | 3+ | **Implemented** |
 
 #### SkillGroup 10.3. Інтерпретація даних (3)
 
 **ID:** `math.data.interpretation`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.data.compare-categories` | Знаходити різницю та суму кількостей за таблицею чи діаграмою | 2–3 | — |
-| `math.data.interpret-conclusion` | Формулювати висновок, який обґрунтовують наведені дані | 2–3 | — |
-| `math.data.missing-information` | Визначати, якої інформації бракує для відповіді на поставлене питання | 3 | — |
+| `math.data.compare-categories` | Знаходити різницю та суму кількостей за таблицею чи діаграмою | 2–3 | **Implemented** |
+| `math.data.interpret-conclusion` | Формулювати висновок, який обґрунтовують наведені дані | 2–3 | **Implemented** |
+| `math.data.missing-information` | Визначати, якої інформації бракує для відповіді на поставлене питання | 3 | **Implemented** |
 
 ### Domain 11. Ймовірність (4)
 
