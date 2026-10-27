@@ -1,0 +1,21 @@
+# Dependencies, caches and generated output
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+.test-build/
+test-results/
+playwright-report/
+storybook-static/
+.vercel/
+
+# Generated files and large machine-maintained metadata
+next-env.d.ts
+*.tsbuildinfo
+package-lock.json
+
+# Local environment files
+.env*
+!.env.example
