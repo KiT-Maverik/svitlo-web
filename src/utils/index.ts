@@ -28,3 +28,5 @@ export { createLocalizedFileLocations } from './createLocalizedFileLocations/cre
 export type { CreateLocalizedFileLocationsOptions, LocalizedFileLocations } from './createLocalizedFileLocations/createLocalizedFileLocations.utils';
 export { createTextResource } from './createTextResource/createTextResource.utils';
 export { buildSkillConfig } from './builders/config/buildSkillConfig.utils';
+export { buildSkillGroupConfig } from './builders/config/buildSkillGroupConfig.utils';
+export { buildSkillDomainConfig } from './builders/config/buildSkillDomainConfig.utils';

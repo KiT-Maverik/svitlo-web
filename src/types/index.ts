@@ -39,3 +39,5 @@ export type {
   SelectOneAnswer_Question_Config,
 } from './content/question.types';
 export type * from './content/skill.types';
+export type * from './content/skillGroup.types';
+export type * from './content/skillDomain.types';
