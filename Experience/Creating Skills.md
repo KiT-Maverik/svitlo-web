@@ -122,29 +122,58 @@ Domain, Group і Skill описують **різні рівні абстракц
 - Всі `import` та `export` мають використовувати той самий типізований ідентифікатор змінної. Перейменування змінної **не змінює** UUID, ключі словників, фізичний шлях або назву локалі.
 - Кожна сутність отримує окремий `.data.ts` і власну іменовану константу; UUID зберігаються окремо в `.ids.ts`. Барелі `index.data.ts` експортують дані, а `index.ids.ts` — лише ID-посилання, без імпорту data-файлів. Рядки експорту в data-барелях впорядковуємо за алфавітом.
 
-Цільова організація:
+### Файлова структура: один рівень сутностей на один каталог
+
+Робоча коренева директорія математичної таксономії — `math/skillsTaxonomy/`, **не** `math/skills/`. Вона містить каталог доменів; кожен домен — каталоги груп; кожна група — окрему папку `skills/` з індивідуальними навичками. Назва `skillsTaxonomy` на верхньому рівні навмисно не повторює назву найнижчої папки `skills`.
+
+Приклад **реально наявної** структури `Counting → Steps → Skills`:
 
 ```text
-math/skillsTaxonomy/
-  arithmetic/
-    arithmetic.ids.ts               # Domain ID
-    arithmetic.data.ts              # SkillDomain
-    index.ids.ts                    # Named group ID references
-    index.data.ts
-    addition/
-      addition.ids.ts               # Group ID
-      addition.data.ts              # SkillGroup
-      skills/
-        index.ids.ts                # Named Skill IDs
-        crossTenAddition.data.ts    # Skill
-    additionSubtraction/
-      additionSubtraction.ids.ts
-      additionSubtraction.data.ts
-      skills/
-        index.ids.ts
+math/
+  skillsTaxonomy/
+    index.data.ts                       # тільки експорти SkillDomain Data
+    index.ids.ts                        # тільки власні SkillDomain ID
+    counting/
+      counting.data.ts                  # counting_SkillDomain_Data
+      counting.ids.ts                   # counting_SkillDomain_Ids
+      index.data.ts                     # тільки Counting Domain Data
+      index.ids.ts                      # counting_SkillGroups_Ids
+      steps/
+        steps.data.ts                   # steps_SkillGroup_Data
+        steps.ids.ts                    # steps_SkillGroup_Ids
+        index.data.ts                   # тільки Steps Group Data
+        skills/
+          index.data.ts                 # тільки Skill Data цієї групи
+          index.ids.ts                  # steps_Skills_Ids
+          countBy2.data.ts              # countBy2_Skill_Data
+          countBy5.data.ts              # countBy5_Skill_Data
+          countBy10.data.ts             # countBy10_Skill_Data
+          countBy100.data.ts            # countBy100_Skill_Data
+      sequence/
+      cardinality/
+      ordinal/
+      parity/
+    arithmetic/
+    geometry/
 ```
 
-**Це цільовий приклад, а не твердження про поточну наявність усіх зазначених файлів.** На момент написання не всі Skill матеріалізовані у TypeScript.
+Інші `counting/*/skills/` організовані за тією самою схемою. **Не створюємо `index.ids.ts` у папці групи лише заради симетрії:** у чинному патерні власний UUID групи зберігається в `<group>.ids.ts`, а словник її навичок — у `skills/index.ids.ts`.
+
+Кожен файл має одну відповідальність:
+
+| Файл | Призначення |
+|---|---|
+| `<domain>.data.ts` | Конфіг одного Domain: власний UUID, назви, `groupIds` |
+| `<domain>.ids.ts` | Статична константа з власним UUID Domain |
+| `<domain>/index.ids.ts` | Іменований об'єкт UUID дочірніх Group |
+| `<group>.data.ts` | Конфіг однієї Group: власний UUID, назви, `skillIds` |
+| `<group>.ids.ts` | Статична константа з власним UUID Group |
+| `<group>/skills/index.ids.ts` | Іменований об'єкт UUID дочірніх Skill |
+| `<skill>.data.ts` | Локалізований конфіг одного Skill, ID взято зі словника `index.ids.ts` |
+| `index.data.ts` | Публічні експорти **тільки** відповідного рівня; точні правила далі |
+
+`*.ids.ts` **не генерують ID під час виконання**. Статичні UUID записуються один раз і перевикористовуються. Відсутність `<skill>.data.ts` при наявності його UUID — нормальний тимчасовий стан незавершеної групи; це **не** означає `Implemented`.
+
 
 ## 8. Конфігурації, локалізація та builders
 
@@ -191,6 +220,97 @@ interface SkillDomain_Config {
 - `buildSkillDomainConfig(config)` → `{ ...config, collection: 'skillDomain' }`.
 
 Builders перевіряють спільні поля й відповідні словники child ID, **не мутують** авторські конфіги, не генерують UUID і не підставляють `fileLocation`. Завдяки дискримінатору отримані об'єкти можна розрізняти без аналізу шляху або імені файлу.
+
+### Експорти `index.data.ts`: одна колекція — одна відповідальність
+
+**Індекс експортує тільки сутності власного рівня. Жоден батьківський `index.data.ts` не робить рекурсивного `export *` із вкладеного рівня.** Корінь таксономії — точка доступу **лише до доменів**. Уявна «зручність» наскрізного експорту призводить до небажаних залежностей і ускладнює завантаження окремих рівнів.
+
+| Шлях | Дозволено експортувати | Заборонено експортувати |
+|---|---|---|
+| `skillsTaxonomy/index.data.ts` | Лише всі реалізовані `*_SkillDomain_Data` | Group Data та Skill Data |
+| `skillsTaxonomy/<domain>/index.data.ts` | Лише `<domain>_SkillDomain_Data` | Вкладені Group Data та Skill Data |
+| `skillsTaxonomy/<domain>/<group>/index.data.ts` | Лише `<group>_SkillGroup_Data` | Вкладені Skill Data |
+| `skillsTaxonomy/<domain>/<group>/skills/index.data.ts` | Лише `*_Skill_Data` **цієї** папки | Group, Domain, Skill з інших груп |
+
+Еталонні реалізації:
+
+```ts
+// math/skillsTaxonomy/index.data.ts — тільки домени
+export { arithmetic_SkillDomain_Data } from './arithmetic/index.data';
+export { counting_SkillDomain_Data } from './counting/index.data';
+export { geometry_SkillDomain_Data } from './geometry/index.data';
+
+// math/skillsTaxonomy/counting/index.data.ts — тільки поточний домен
+export { counting_SkillDomain_Data } from './counting.data';
+
+// math/skillsTaxonomy/counting/steps/index.data.ts — тільки поточна група
+export { steps_SkillGroup_Data } from './steps.data';
+
+// math/skillsTaxonomy/counting/steps/skills/index.data.ts — тільки Skills
+export { countBy10_Skill_Data } from './countBy10.data';
+export { countBy100_Skill_Data } from './countBy100.data';
+export { countBy2_Skill_Data } from './countBy2.data';
+export { countBy5_Skill_Data } from './countBy5.data';
+```
+
+Це **чотири окремі файли**, показані разом для порівняння. Константи експортуємо поіменно й підтримуємо алфавітний порядок у відповідних індексах. Якщо потрібен конкретний Skill, імпортуємо індекс його `skills/` або його власний файл, **не** розширюємо для цього індекс домену.
+
+### `index.ids.ts`: лише UUID-посилання, без дочірніх Data
+
+Дерево ID навмисно незалежне від дерева локалізованих конфігів:
+
+| Шлях | Що експортує |
+|---|---|
+| `skillsTaxonomy/index.ids.ts` | Власні ID наявних Domain: `*_SkillDomain_Ids` |
+| `skillsTaxonomy/<domain>/index.ids.ts` | Об'єкт посилань `<domain>_SkillGroups_Ids` |
+| `skillsTaxonomy/<domain>/<group>/skills/index.ids.ts` | Об'єкт посилань `<group>_Skills_Ids` |
+| `<domain>.ids.ts`, `<group>.ids.ts` | Їхні власні UUID-константи |
+
+Еталонна композиція (скорочена; UUID **записані статично** в кінцевих `*.ids.ts`):
+
+```ts
+// counting/index.ids.ts — посилання на Group ID, НЕ Group Data
+import { steps_SkillGroup_Ids } from './steps/steps.ids';
+// ... ID інших груп
+export const counting_SkillGroups_Ids = {
+  steps: steps_SkillGroup_Ids.steps,
+  // ...інші групи
+} as const;
+
+// counting/steps/skills/index.ids.ts — лише UUID Skill
+export const steps_Skills_Ids = {
+  countBy2: 'f227f79b-0196-46b8-a227-8b7991729cc5',
+  // ...інші вже зарезервовані UUID
+} as const;
+```
+
+`counting.data.ts` імпортує `counting_SkillDomain_Ids` та `counting_SkillGroups_Ids`; `steps.data.ts` імпортує `steps_SkillGroup_Ids` та `steps_Skills_Ids`; `countBy2.data.ts` імпортує тільки `steps_Skills_Ids` для власного ID. **Жоден із цих імпортів не тягне повні Data своїх дочірніх сутностей.**
+
+### Навігація між рівнями: явне завантаження
+
+```ts
+// 1. Потрібні тільки Domain:
+import { counting_SkillDomain_Data } from './math/skillsTaxonomy/index.data';
+
+// 2. Потрібна Group:
+import { steps_SkillGroup_Data } from './math/skillsTaxonomy/counting/steps/index.data';
+
+// 3. Потрібні окремі Skill:
+import { countBy2_Skill_Data } from './math/skillsTaxonomy/counting/steps/skills/index.data';
+```
+
+Шляхи тут показані **відносно ілюстративного файлу-споживача**; у реальному коді використовуємо правильний відносний шлях або налаштований alias. Якщо UI одержав `counting_SkillDomain_Data.groupIds.steps`, він знає UUID групи, але має **явно** завантажити її Data з відповідного джерела/реєстру. Сам UUID не є імпортом, а `fileLocation` і пошук ресурсу за UUID — окреме завдання майбутнього індексатора.
+
+Така організація гарантує, що **через barrel-exports** список Domain не розгортається автоматично у всі Group/Skill. Реальний обсяг bundle та поведінку tree-shaking перевіряємо окремо; структура експортів сама по собі не гарантує довільної оптимізації збірки.
+
+### Правила рев'ю для AI-агентів
+
+1. Нову групу додаємо до `<domain>/index.ids.ts` як посилання на її статичний UUID; Domain Data не імпортує Group Data.
+2. Новий Skill реєструємо в `<group>/skills/index.ids.ts` та, **коли створено його `.data.ts`**, експортуємо через `skills/index.data.ts`.
+3. Нову Group Data експортуємо через **власний** `<group>/index.data.ts`; не додаємо Group Data до `<domain>/index.data.ts`.
+4. Новий Domain Data експортуємо через власний `<domain>/index.data.ts` і кореневий `skillsTaxonomy/index.data.ts`; не додаємо туди Group/Skill.
+5. Не змішуємо `*.ids.ts` і `*.data.ts`, не використовуємо рекурсивні `export *`, не створюємо UUID динамічно.
+6. Перевіряємо `src/utils/builders/config/skillTaxonomyIndex.spec.ts`, типізацію й [Skills Inventory](../math/skills-inventory.md) для статусу реалізації. **Наявність UUID ≠ реалізований Skill**.
 
 ## 9. Skill відокремлено від педагогічного контексту
 
