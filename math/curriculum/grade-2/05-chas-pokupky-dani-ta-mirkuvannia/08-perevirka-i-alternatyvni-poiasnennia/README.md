@@ -11,5 +11,9 @@
 - `math.reasoning.check-reasonableness` — `d9a090cc-ab44-4e08-babd-357a9b7a3154`
 - `math.problems.multiple-solution-strategies` — `2be4fa3b-25b6-4c4d-95a3-61e1e1c160c2`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще потрібен.
+
 ---
 [Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

@@ -11,5 +11,9 @@
 - `math.time.read-five-minute` — `21d2c77f-39e4-4c54-98fc-b54a8e1568fe`
 - `math.time.duration` — `c11ad392-6a44-49f4-a2b7-ea246a9a8ae4`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще потрібен.
+
 ---
 [Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

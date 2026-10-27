@@ -9,5 +9,9 @@
 
 - `math.time.convert-hours-minutes` — `131741ec-c4d9-4f98-9c52-208326de7cd0`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще потрібен.
+
 ---
 [Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

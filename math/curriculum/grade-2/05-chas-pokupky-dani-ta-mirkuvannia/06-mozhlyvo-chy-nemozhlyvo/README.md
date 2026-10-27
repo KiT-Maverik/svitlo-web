@@ -10,5 +10,9 @@
 - `math.probability.certain-impossible` — `96ed02b9-b56e-4498-8e3e-195e76eceaf0`
 - `math.probability.likelihood-language` — `a2a4702d-d512-4459-a699-a4fd874670ac`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще потрібен.
+
 ---
 [Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

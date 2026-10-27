@@ -9,5 +9,9 @@
 
 - `math.money.calculate-change` — `56a4bd47-1221-489d-a11a-577d07bcb9af`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще потрібен.
+
 ---
 [Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

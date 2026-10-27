@@ -11,5 +11,9 @@
 - `math.data.build-bar-chart` — `5dd18314-5344-4219-9ffb-1b9df9fc7ec7`
 - `math.data.compare-categories` — `b245a322-1c1f-4977-9a0b-838ac058392a`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще потрібен.
+
 ---
 [Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
