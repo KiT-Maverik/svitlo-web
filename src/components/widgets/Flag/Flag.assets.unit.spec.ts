@@ -44,7 +44,7 @@ describe('Static SVG flags', () => {
     expect(svg).toContain('id="ua-crest-side"');
     expect(svg).toContain('href="#ua-crest-side"');
     expect(svg).toContain('viewBox="0 0 3 2"');
-    expect(svg).toContain('transform="translate(1.5 .25)');
+    expect(svg).toContain('transform="translate(1.5 .44)');
     expect(svg).not.toContain('<image');
     expect(svg).not.toContain('data:image');
     expect(svgFiles).not.toContain('Lesser_Coat_of_Arms_of_Ukraine.svg');
