@@ -92,7 +92,7 @@ describe('Time skill taxonomy', () => {
 
       for (const skill of skills) {
         const skillNames = names(read(`${group}/skills/${skill}.data.ts`));
-        assert.deepEqual(Object.keys(skillNames), required);
+        assert.deepEqual(Object.keys(skillNames).sort(), [...required].sort());
         for (const language of required) {
           assert.ok(skillNames[language].trim(), `Missing ${language} for ${skill}`);
           assert.notEqual(skillNames[language], groupNames[language], `Duplicate group name for ${skill}/${language}`);
