@@ -261,7 +261,7 @@
 
 ### Domain 4. Арифметика (79)
 
-**Implementation:** Domain + 3/5 Group configs; 0/79 Skill files — **Partial**
+**Implementation:** Domain + 5/5 Group configs; 79/79 localized Skill files — **Implemented**
 
 **ID:** `math.arithmetic`
 
@@ -269,124 +269,124 @@
 
 **ID:** `math.arithmetic.addition`
 
-**Implementation:** Group config implemented; individual Skill files not implemented.
+**Implementation:** Group config and all localized Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.addsub.add-meaning` | Моделювати додавання як об’єднання кількостей або збільшення кількості | 1 | — |
-| `math.addsub.add-zero` | Пояснювати й застосовувати додавання нуля | 1 | — |
-| `math.addsub.commutative-addition` | Змінювати порядок доданків без зміни суми та застосовувати це для обчислень | 1 | — |
-| `math.addsub.make-ten-strategy` | Використовувати доповнення до десяти під час додавання | 1 | — |
-| `math.addsub.cross-ten-addition` | Додавати одноцифрові числа з переходом через десяток | 1 | — |
-| `math.addsub.two-digit-carry` | Додавати двоцифрові числа з утворенням нового десятка | 2 | — |
-| `math.addsub.associative-addition` | Групувати доданки у зручному порядку без зміни суми | 2–3 | — |
-| `math.addsub.three-digit-carry` | Додавати трицифрові числа з одним або кількома переходами через розряд | 3 | — |
-| `math.addsub.column-addition` | Коректно записувати та виконувати письмове додавання стовпчиком | 2–3 | — |
-| `math.addsub.carry-error-detection` | Розпізнавати пропущений перенос десятка чи сотні та пояснювати причину помилки | 2–3 | — |
+| `math.addsub.add-meaning` | Моделювати додавання як об’єднання кількостей або збільшення кількості | 1 | Implemented |
+| `math.addsub.add-zero` | Пояснювати й застосовувати додавання нуля | 1 | Implemented |
+| `math.addsub.commutative-addition` | Змінювати порядок доданків без зміни суми та застосовувати це для обчислень | 1 | Implemented |
+| `math.addsub.make-ten-strategy` | Використовувати доповнення до десяти під час додавання | 1 | Implemented |
+| `math.addsub.cross-ten-addition` | Додавати одноцифрові числа з переходом через десяток | 1 | Implemented |
+| `math.addsub.two-digit-carry` | Додавати двоцифрові числа з утворенням нового десятка | 2 | Implemented |
+| `math.addsub.associative-addition` | Групувати доданки у зручному порядку без зміни суми | 2–3 | Implemented |
+| `math.addsub.three-digit-carry` | Додавати трицифрові числа з одним або кількома переходами через розряд | 3 | Implemented |
+| `math.addsub.column-addition` | Коректно записувати та виконувати письмове додавання стовпчиком | 2–3 | Implemented |
+| `math.addsub.carry-error-detection` | Розпізнавати пропущений перенос десятка чи сотні та пояснювати причину помилки | 2–3 | Implemented |
 
 #### SkillGroup 4.2. Віднімання (8)
 
 **ID:** `math.arithmetic.subtraction`
 
-**Implementation:** Group config implemented; individual Skill files not implemented.
+**Implementation:** Group config and all localized Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.addsub.subtract-meaning` | Моделювати віднімання як вилучення, різницю або пошук невідомої частини | 1 | — |
-| `math.addsub.subtract-zero` | Пояснювати й застосовувати віднімання нуля | 1 | — |
-| `math.addsub.subtract-self` | Пояснювати, чому віднімання числа від самого себе дає нуль | 1 | — |
-| `math.addsub.cross-ten-subtraction` | Віднімати в межах 20 із переходом через десяток | 1 | — |
-| `math.addsub.two-digit-borrow` | Віднімати двоцифрові числа з розгрупуванням одного десятка | 2 | — |
-| `math.addsub.three-digit-borrow` | Віднімати трицифрові числа з розгрупуванням десятків або сотень | 3 | — |
-| `math.addsub.column-subtraction` | Коректно записувати та виконувати письмове віднімання стовпчиком | 2–3 | — |
-| `math.addsub.borrow-error-detection` | Розпізнавати неправильне розгрупування під час віднімання й виправляти його | 2–3 | — |
+| `math.addsub.subtract-meaning` | Моделювати віднімання як вилучення, різницю або пошук невідомої частини | 1 | Implemented |
+| `math.addsub.subtract-zero` | Пояснювати й застосовувати віднімання нуля | 1 | Implemented |
+| `math.addsub.subtract-self` | Пояснювати, чому віднімання числа від самого себе дає нуль | 1 | Implemented |
+| `math.addsub.cross-ten-subtraction` | Віднімати в межах 20 із переходом через десяток | 1 | Implemented |
+| `math.addsub.two-digit-borrow` | Віднімати двоцифрові числа з розгрупуванням одного десятка | 2 | Implemented |
+| `math.addsub.three-digit-borrow` | Віднімати трицифрові числа з розгрупуванням десятків або сотень | 3 | Implemented |
+| `math.addsub.column-subtraction` | Коректно записувати та виконувати письмове віднімання стовпчиком | 2–3 | Implemented |
+| `math.addsub.borrow-error-detection` | Розпізнавати неправильне розгрупування під час віднімання й виправляти його | 2–3 | Implemented |
 
 #### SkillGroup 4.3. Поєднання додавання та віднімання (13)
 
 **ID:** `math.arithmetic.additionSubtraction`
 
-**Implementation:** Group config implemented; individual Skill files not implemented.
+**Implementation:** Group config and all localized Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.addsub.part-whole` | Складати ціле з частин і знаходити невідому частину цілого | 1 | — |
-| `math.addsub.facts-within-10` | Обчислювати суми й різниці в межах 10 без предметного переліку | 1 | — |
-| `math.addsub.number-bonds-10` | Розкладати 10 на дві частини різними способами | 1 | — |
-| `math.addsub.facts-within-20` | Впевнено обчислювати суми та різниці в межах 20 | 1–2 | — |
-| `math.addsub.inverse-operations` | Перевіряти додавання відніманням і навпаки | 1–2 | — |
-| `math.addsub.add-subtract-tens` | Додавати й віднімати цілі десятки | 1–2 | — |
-| `math.addsub.two-digit-no-regroup` | Додавати та віднімати двоцифрові числа без розрядного обміну | 2 | — |
-| `math.addsub.place-value-mental` | Обчислювати усно через десятки й одиниці, пояснюючи кожний крок | 2 | — |
-| `math.addsub.compensation` | Використовувати компенсацію (додати й відняти те саме число) для усних обчислень | 2–3 | — |
-| `math.addsub.hundreds-and-tens` | Додавати та віднімати круглі сотні й десятки в межах 1000 | 2–3 | — |
-| `math.addsub.three-digit-no-regroup` | Додавати та віднімати трицифрові числа без переходу через розряд | 2–3 | — |
-| `math.addsub.estimate-result` | Оцінювати правдоподібність суми або різниці до точного обчислення | 2–3 | — |
-| `math.addsub.check-with-inverse` | Знаходити й виправляти помилки в додаванні та відніманні за допомогою оберненої дії | 2–3 | — |
+| `math.addsub.part-whole` | Складати ціле з частин і знаходити невідому частину цілого | 1 | Implemented |
+| `math.addsub.facts-within-10` | Обчислювати суми й різниці в межах 10 без предметного переліку | 1 | Implemented |
+| `math.addsub.number-bonds-10` | Розкладати 10 на дві частини різними способами | 1 | Implemented |
+| `math.addsub.facts-within-20` | Впевнено обчислювати суми та різниці в межах 20 | 1–2 | Implemented |
+| `math.addsub.inverse-operations` | Перевіряти додавання відніманням і навпаки | 1–2 | Implemented |
+| `math.addsub.add-subtract-tens` | Додавати й віднімати цілі десятки | 1–2 | Implemented |
+| `math.addsub.two-digit-no-regroup` | Додавати та віднімати двоцифрові числа без розрядного обміну | 2 | Implemented |
+| `math.addsub.place-value-mental` | Обчислювати усно через десятки й одиниці, пояснюючи кожний крок | 2 | Implemented |
+| `math.addsub.compensation` | Використовувати компенсацію (додати й відняти те саме число) для усних обчислень | 2–3 | Implemented |
+| `math.addsub.hundreds-and-tens` | Додавати та віднімати круглі сотні й десятки в межах 1000 | 2–3 | Implemented |
+| `math.addsub.three-digit-no-regroup` | Додавати та віднімати трицифрові числа без переходу через розряд | 2–3 | Implemented |
+| `math.addsub.estimate-result` | Оцінювати правдоподібність суми або різниці до точного обчислення | 2–3 | Implemented |
+| `math.addsub.check-with-inverse` | Знаходити й виправляти помилки в додаванні та відніманні за допомогою оберненої дії | 2–3 | Implemented |
 #### SkillGroup 4.4. Множення (24)
 
 **ID:** `math.multiply`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config and all localized Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.multiply.equal-groups` | Представляти множення як кількість рівних груп певного розміру | 2 | — |
-| `math.multiply.repeated-addition` | Переходити між множенням і повторюваним додаванням | 2 | — |
-| `math.multiply.array-model` | Представляти множення прямокутним масивом предметів або клітинок | 2 | — |
-| `math.multiply.read-expression` | Читати вираз a × b та пов’язувати множники й добуток із моделлю | 2 | — |
-| `math.multiply.by-2` | Обчислювати добутки з множником 2 та використовувати подвоєння | 2 | — |
-| `math.multiply.by-3` | Обчислювати табличні добутки з множником 3 | 2–3 | — |
-| `math.multiply.by-4` | Обчислювати табличні добутки з множником 4 | 2–3 | — |
-| `math.multiply.by-5` | Обчислювати табличні добутки з множником 5 | 2 | — |
-| `math.multiply.by-6` | Обчислювати табличні добутки з множником 6 | 3 | — |
-| `math.multiply.by-7` | Обчислювати табличні добутки з множником 7 | 3 | — |
-| `math.multiply.by-8` | Обчислювати табличні добутки з множником 8 | 3 | — |
-| `math.multiply.by-9` | Обчислювати табличні добутки з множником 9 | 3 | — |
-| `math.multiply.by-10` | Обчислювати добутки з множником 10 та пояснювати їх через десятки | 2 | — |
-| `math.multiply.by-0-and-1` | Пояснювати й застосовувати множення на 0 та 1 | 2 | — |
-| `math.multiply.commutative` | Пояснювати переставний закон множення за допомогою моделей | 2 | — |
-| `math.multiply.associative` | Змінювати групування множників для зручного обчислення | 3 | — |
-| `math.multiply.distributive` | Розкладати один множник на частини та знаходити суму часткових добутків | 3 | — |
-| `math.multiply.derive-facts` | Виводити незнайомі табличні добутки з відомих, а не лише пригадувати їх | 2–3 | — |
-| `math.multiply.double-twice` | Знаходити множення на 4 через подвійне подвоєння | 2–3 | — |
-| `math.multiply.round-tens` | Множити круглі десятки на одноцифрові числа в межах 1000 | 3 | — |
-| `math.multiply.round-hundreds` | Множити круглі сотні на одноцифрові числа в межах 1000 | 3 | — |
-| `math.multiply.two-digit-by-one` | Множити двоцифрове число на одноцифрове через розрядний розклад | 3 | — |
-| `math.multiply.three-digit-by-one` | Множити трицифрове число на одноцифрове, якщо результат у межах 1000 | 3+ | — |
-| `math.multiply.check-product` | Оцінювати добуток та перевіряти його оберненою дією або іншим способом | 3 | — |
+| `math.multiply.equal-groups` | Представляти множення як кількість рівних груп певного розміру | 2 | Implemented |
+| `math.multiply.repeated-addition` | Переходити між множенням і повторюваним додаванням | 2 | Implemented |
+| `math.multiply.array-model` | Представляти множення прямокутним масивом предметів або клітинок | 2 | Implemented |
+| `math.multiply.read-expression` | Читати вираз a × b та пов’язувати множники й добуток із моделлю | 2 | Implemented |
+| `math.multiply.by-2` | Обчислювати добутки з множником 2 та використовувати подвоєння | 2 | Implemented |
+| `math.multiply.by-3` | Обчислювати табличні добутки з множником 3 | 2–3 | Implemented |
+| `math.multiply.by-4` | Обчислювати табличні добутки з множником 4 | 2–3 | Implemented |
+| `math.multiply.by-5` | Обчислювати табличні добутки з множником 5 | 2 | Implemented |
+| `math.multiply.by-6` | Обчислювати табличні добутки з множником 6 | 3 | Implemented |
+| `math.multiply.by-7` | Обчислювати табличні добутки з множником 7 | 3 | Implemented |
+| `math.multiply.by-8` | Обчислювати табличні добутки з множником 8 | 3 | Implemented |
+| `math.multiply.by-9` | Обчислювати табличні добутки з множником 9 | 3 | Implemented |
+| `math.multiply.by-10` | Обчислювати добутки з множником 10 та пояснювати їх через десятки | 2 | Implemented |
+| `math.multiply.by-0-and-1` | Пояснювати й застосовувати множення на 0 та 1 | 2 | Implemented |
+| `math.multiply.commutative` | Пояснювати переставний закон множення за допомогою моделей | 2 | Implemented |
+| `math.multiply.associative` | Змінювати групування множників для зручного обчислення | 3 | Implemented |
+| `math.multiply.distributive` | Розкладати один множник на частини та знаходити суму часткових добутків | 3 | Implemented |
+| `math.multiply.derive-facts` | Виводити незнайомі табличні добутки з відомих, а не лише пригадувати їх | 2–3 | Implemented |
+| `math.multiply.double-twice` | Знаходити множення на 4 через подвійне подвоєння | 2–3 | Implemented |
+| `math.multiply.round-tens` | Множити круглі десятки на одноцифрові числа в межах 1000 | 3 | Implemented |
+| `math.multiply.round-hundreds` | Множити круглі сотні на одноцифрові числа в межах 1000 | 3 | Implemented |
+| `math.multiply.two-digit-by-one` | Множити двоцифрове число на одноцифрове через розрядний розклад | 3 | Implemented |
+| `math.multiply.three-digit-by-one` | Множити трицифрове число на одноцифрове, якщо результат у межах 1000 | 3+ | Implemented |
+| `math.multiply.check-product` | Оцінювати добуток та перевіряти його оберненою дією або іншим способом | 3 | Implemented |
 
 #### SkillGroup 4.5. Ділення (24)
 
 **ID:** `math.divide`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Group config and all localized Skill files implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.divide.equal-sharing` | Моделювати ділення як розподіл на задану кількість рівних груп | 2 | — |
-| `math.divide.equal-grouping` | Моделювати ділення як визначення кількості груп заданого розміру | 2 | — |
-| `math.divide.relation-to-multiplication` | Пояснювати ділення як пошук невідомого множника | 2 | — |
-| `math.divide.read-expression` | Читати запис a ÷ b та співвідносити ділене, дільник і частку з моделлю | 2 | — |
-| `math.divide.by-2` | Обчислювати табличні випадки ділення на 2 | 2 | — |
-| `math.divide.by-3` | Обчислювати табличні випадки ділення на 3 | 2–3 | — |
-| `math.divide.by-4` | Обчислювати табличні випадки ділення на 4 | 2–3 | — |
-| `math.divide.by-5` | Обчислювати табличні випадки ділення на 5 | 2 | — |
-| `math.divide.by-6` | Обчислювати табличні випадки ділення на 6 | 3 | — |
-| `math.divide.by-7` | Обчислювати табличні випадки ділення на 7 | 3 | — |
-| `math.divide.by-8` | Обчислювати табличні випадки ділення на 8 | 3 | — |
-| `math.divide.by-9` | Обчислювати табличні випадки ділення на 9 | 3 | — |
-| `math.divide.by-1-and-self` | Пояснювати й застосовувати ділення на 1 та числа на самого себе (для ненульового числа) | 2–3 | — |
-| `math.divide.zero-dividend` | Пояснювати результат ділення нуля на ненульове число | 3 | — |
-| `math.divide.no-division-by-zero` | Розпізнавати, що ділення на нуль не визначене | 3 | — |
-| `math.divide.double-half` | Знаходити половину парної кількості та пов’язувати це з подвоєнням | 2 | — |
-| `math.divide.round-tens` | Ділити круглі десятки на одноцифрові числа в межах 1000 | 3 | — |
-| `math.divide.round-hundreds` | Ділити круглі сотні на одноцифрові числа в межах 1000 | 3 | — |
-| `math.divide.two-digit-by-one` | Ділити двоцифрові числа на одноцифрові позатабличним способом | 3 | — |
-| `math.divide.three-digit-by-one` | Ділити окремі трицифрові числа на одноцифрові через розрядний розклад | 3+ | — |
-| `math.divide.with-remainder` | Знаходити частку й остачу під час ділення натуральних чисел | 3 | — |
-| `math.divide.remainder-less-divisor` | Перевіряти, що невід’ємна остача менша за дільник | 3 | — |
-| `math.divide.check-quotient` | Перевіряти частку множенням, з урахуванням остачі за її наявності | 3 | — |
-| `math.divide.error-detection` | Розпізнавати помилку в діленні або некоректну остачу за моделлю чи перевіркою | 3 | — |
+| `math.divide.equal-sharing` | Моделювати ділення як розподіл на задану кількість рівних груп | 2 | Implemented |
+| `math.divide.equal-grouping` | Моделювати ділення як визначення кількості груп заданого розміру | 2 | Implemented |
+| `math.divide.relation-to-multiplication` | Пояснювати ділення як пошук невідомого множника | 2 | Implemented |
+| `math.divide.read-expression` | Читати запис a ÷ b та співвідносити ділене, дільник і частку з моделлю | 2 | Implemented |
+| `math.divide.by-2` | Обчислювати табличні випадки ділення на 2 | 2 | Implemented |
+| `math.divide.by-3` | Обчислювати табличні випадки ділення на 3 | 2–3 | Implemented |
+| `math.divide.by-4` | Обчислювати табличні випадки ділення на 4 | 2–3 | Implemented |
+| `math.divide.by-5` | Обчислювати табличні випадки ділення на 5 | 2 | Implemented |
+| `math.divide.by-6` | Обчислювати табличні випадки ділення на 6 | 3 | Implemented |
+| `math.divide.by-7` | Обчислювати табличні випадки ділення на 7 | 3 | Implemented |
+| `math.divide.by-8` | Обчислювати табличні випадки ділення на 8 | 3 | Implemented |
+| `math.divide.by-9` | Обчислювати табличні випадки ділення на 9 | 3 | Implemented |
+| `math.divide.by-1-and-self` | Пояснювати й застосовувати ділення на 1 та числа на самого себе (для ненульового числа) | 2–3 | Implemented |
+| `math.divide.zero-dividend` | Пояснювати результат ділення нуля на ненульове число | 3 | Implemented |
+| `math.divide.no-division-by-zero` | Розпізнавати, що ділення на нуль не визначене | 3 | Implemented |
+| `math.divide.double-half` | Знаходити половину парної кількості та пов’язувати це з подвоєнням | 2 | Implemented |
+| `math.divide.round-tens` | Ділити круглі десятки на одноцифрові числа в межах 1000 | 3 | Implemented |
+| `math.divide.round-hundreds` | Ділити круглі сотні на одноцифрові числа в межах 1000 | 3 | Implemented |
+| `math.divide.two-digit-by-one` | Ділити двоцифрові числа на одноцифрові позатабличним способом | 3 | Implemented |
+| `math.divide.three-digit-by-one` | Ділити окремі трицифрові числа на одноцифрові через розрядний розклад | 3+ | Implemented |
+| `math.divide.with-remainder` | Знаходити частку й остачу під час ділення натуральних чисел | 3 | Implemented |
+| `math.divide.remainder-less-divisor` | Перевіряти, що невід’ємна остача менша за дільник | 3 | Implemented |
+| `math.divide.check-quotient` | Перевіряти частку множенням, з урахуванням остачі за її наявності | 3 | Implemented |
+| `math.divide.error-detection` | Розпізнавати помилку в діленні або некоректну остачу за моделлю чи перевіркою | 3 | Implemented |
 
 ### Domain 5. Алгебра (17)
 

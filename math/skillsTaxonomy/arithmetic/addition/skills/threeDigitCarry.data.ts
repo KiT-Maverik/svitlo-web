@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { addition_Skills_Ids } from './index.ids';
+
+export const threeDigitCarry_Skill_Data = buildSkillConfig({
+  id: addition_Skills_Ids.threeDigitCarry,
+  name: {
+    en: "Addition — 3-digit · Carrying",
+    zh: "加法 — 3-位数 · 进位",
+    hi: "जोड़ — 3-अंकीय · कैरी",
+    es: "Suma — 3-cifras · Llevadas",
+    ar: "الجمع — 3-أرقام · الحمل",
+    fr: "Addition — 3-chiffres · Retenue",
+    bn: "যোগ — 3-অঙ্কের · হাতে রাখা",
+    pt: "Adição — 3-algarismos · Transporte",
+    ur: "جمع — 3-ہندسوں · حاصل رکھنا",
+    id: "Penjumlahan — 3-angka · Menyimpan",
+    de: "Addition — 3-stellige · Übertrag",
+    ja: "加法 — 3-桁の数 · 繰り上がり",
+    ko: "덧셈 — 3-자리 수 · 받아올림",
+    tr: "Toplama — 3-basamaklı · Elde",
+    vi: "Phép cộng — 3-chữ số · Nhớ khi cộng",
+    ta: "கூட்டல் — 3-இலக்க · எடுத்துச் செல்லல்",
+    te: "కూడిక — 3-అంకెల · క్యారీ",
+    mr: "बेरीज — 3-अंकी · हातचा घेणे",
+    ms: "Penambahan — 3-digit · Membawa",
+    he: "חיבור — 3-ספרות · העברה",
+    pl: "Dodawanie — 3-cyfrowe · Przeniesienie",
+    uk: "Додавання — 3-цифрові · Перенесення розряду",
+  },
+});

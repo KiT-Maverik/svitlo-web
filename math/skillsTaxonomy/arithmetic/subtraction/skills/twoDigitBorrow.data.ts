@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { subtraction_Skills_Ids } from './index.ids';
+
+export const twoDigitBorrow_Skill_Data = buildSkillConfig({
+  id: subtraction_Skills_Ids.twoDigitBorrow,
+  name: {
+    en: "Subtraction — 2-digit · Borrowing",
+    zh: "减法 — 2-位数 · 退位",
+    hi: "घटाव — 2-अंकीय · उधार लेना",
+    es: "Resta — 2-cifras · Préstamos",
+    ar: "الطرح — 2-أرقام · الاستلاف",
+    fr: "Soustraction — 2-chiffres · Emprunt",
+    bn: "বিয়োগ — 2-অঙ্কের · ধার নেওয়া",
+    pt: "Subtração — 2-algarismos · Empréstimo",
+    ur: "تفریق — 2-ہندسوں · ادھار لینا",
+    id: "Pengurangan — 2-angka · Meminjam",
+    de: "Subtraktion — 2-stellige · Entbündeln",
+    ja: "減法 — 2-桁の数 · 繰り下がり",
+    ko: "뺄셈 — 2-자리 수 · 받아내림",
+    tr: "Çıkarma — 2-basamaklı · Onluk bozma",
+    vi: "Phép trừ — 2-chữ số · Mượn khi trừ",
+    ta: "கழித்தல் — 2-இலக்க · கடன் வாங்குதல்",
+    te: "తీసివేత — 2-అంకెల · అప్పు తీసుకోవడం",
+    mr: "वजाबाकी — 2-अंकी · उसने घेणे",
+    ms: "Penolakan — 2-digit · Meminjam",
+    he: "חיסור — 2-ספרות · פריטה",
+    pl: "Odejmowanie — 2-cyfrowe · Pożyczanie",
+    uk: "Віднімання — 2-цифрові · Розгрупування",
+  },
+});

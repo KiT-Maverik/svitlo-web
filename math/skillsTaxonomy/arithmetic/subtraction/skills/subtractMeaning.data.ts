@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { subtraction_Skills_Ids } from './index.ids';
+
+export const subtractMeaning_Skill_Data = buildSkillConfig({
+  id: subtraction_Skills_Ids.subtractMeaning,
+  name: {
+    en: "Subtraction — Meaning and models",
+    zh: "减法 — 含义与模型",
+    hi: "घटाव — अर्थ और मॉडल",
+    es: "Resta — Significado y modelos",
+    ar: "الطرح — المعنى والنماذج",
+    fr: "Soustraction — Sens et représentations",
+    bn: "বিয়োগ — অর্থ ও মডেল",
+    pt: "Subtração — Significado e modelos",
+    ur: "تفریق — مفہوم اور نمونے",
+    id: "Pengurangan — Makna dan model",
+    de: "Subtraktion — Bedeutung und Modelle",
+    ja: "減法 — 意味とモデル",
+    ko: "뺄셈 — 뜻과 모델",
+    tr: "Çıkarma — Anlam ve modeller",
+    vi: "Phép trừ — Ý nghĩa và mô hình",
+    ta: "கழித்தல் — பொருளும் மாதிரிகளும்",
+    te: "తీసివేత — అర్థం మరియు నమూనాలు",
+    mr: "वजाबाकी — अर्थ आणि प्रतिमान",
+    ms: "Penolakan — Makna dan model",
+    he: "חיסור — משמעות ומודלים",
+    pl: "Odejmowanie — Znaczenie i modele",
+    uk: "Віднімання — Зміст і моделі",
+  },
+});
