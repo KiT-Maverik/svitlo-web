@@ -3,10 +3,10 @@
 import styles from './LightRayDiagram.module.css';
 import { getLocaleDirection } from '@types';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { LightSceneLocales } from '../../sceneLocales.types';
+import type { LightRayDiagram_Locale } from './lightRayDiagram.locale';
 
 export default function LightRayDiagram() {
-  const { locale, scenes } = useSceneLocales<LightSceneLocales>();
+  const { locale, scenes } = useSceneLocales<{ ray: LightRayDiagram_Locale }>();
   const messages = scenes.ray;
   const rtl = getLocaleDirection(locale) === 'rtl';
 

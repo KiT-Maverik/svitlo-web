@@ -5,7 +5,7 @@ import { quiz } from './sections/quiz';
 import { theory } from './sections/theory';
 import { locales as rayLocales } from './scenes/LightRayDiagram/lightRayDiagram.locale';
 import { locales as simulationLocales } from './scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
-import { locales as checkpointLocales } from './sections/theory/KnowledgeCheckpoint.locale';
+import { locales as checkpointLocales } from './sections/theory/locales/KnowledgeCheckpoint.locale';
 import { locales as practiceLocales } from './scenes/MediumPractice/MediumPractice.locale';
 
 export const lightLesson = {

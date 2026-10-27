@@ -5,10 +5,10 @@ import { LIGHT_SPEED_KM_S, media } from './MediumPractice.constants';
 import styles from './MediumPractice.module.css';
 import { getLocaleDirection } from '@types';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { LightSceneLocales } from '../../sceneLocales.types';
+import type { MediumPractice_Locale } from './MediumPractice.locale';
 
 export default function MediumPractice() {
-  const { locale, scenes } = useSceneLocales<LightSceneLocales>();
+  const { locale, scenes } = useSceneLocales<{ practice: MediumPractice_Locale }>();
   const messages = scenes.practice;
   const [selected, setSelected] = useState(0);
   const [paused, setPaused] = useState(true);

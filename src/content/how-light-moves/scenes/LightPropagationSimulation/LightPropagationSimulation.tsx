@@ -5,7 +5,7 @@ import { Box, Button, Paper, Slider, Typography } from '@mui/material';
 import styles from './LightPropagationSimulation.module.css';
 import { getLocaleDirection } from '@types';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { LightSceneLocales } from '../../sceneLocales.types';
+import type { LightPropagationSimulation_Locale } from './lightPropagationSimulation.locale';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
 
@@ -20,7 +20,7 @@ function getReducedMotion() {
 }
 
 export default function LightPropagationSimulation() {
-  const { locale, scenes } = useSceneLocales<LightSceneLocales>();
+  const { locale, scenes } = useSceneLocales<{ simulation: LightPropagationSimulation_Locale }>();
   const messages = scenes.simulation;
   const reducedMotion = useSyncExternalStore(subscribeToReducedMotion, getReducedMotion, () => false);
   const [playbackOverride, setPlaybackOverride] = useState<boolean | null>(null);
