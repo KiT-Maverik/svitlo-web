@@ -4,6 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const zeroPlaceholder_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.zeroPlaceholder,
   name: {
+    "lt": "Nulis kaip vietos žymeklis",
+    "lv": "Nulle kā vietas aizpildītājs",
+    "et": "Null kohatäitena",
+    "be": "Нуль як пазнака адсутнага разраду",
+    "ka": "ნული, როგორც თანრიგის ადგილის აღმნიშვნელი",
+    "kk": "Нөлдің разряд орнын белгілеу қызметі",
     en: "Zero as a place-value placeholder",
     zh: "零作为数位占位符",
     hi: "स्थान धारक के रूप में शून्य",

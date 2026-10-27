@@ -4,6 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const tensOnes_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.tensOnes,
   name: {
+    "lt": "Dešimtys ir vienetai dviženkliuose skaičiuose",
+    "lv": "Desmiti un vieni divciparu skaitļos",
+    "et": "Kümnelised ja ühelised kahekohalistes arvudes",
+    "be": "Дзясяткі й адзінкі двухзначных лікаў",
+    "ka": "ათეულები და ერთეულები ორნიშნა რიცხვებში",
+    "kk": "Екі таңбалы сандардағы ондықтар мен бірліктер",
     en: "Tens and ones in two-digit numbers",
     zh: "两位数的十位和个位",
     hi: "दो अंकों की संख्या में दहाई और इकाई",
