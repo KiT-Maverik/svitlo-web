@@ -192,6 +192,29 @@ interface SkillDomain_Config {
 
 Builders перевіряють спільні поля й відповідні словники child ID, **не мутують** авторські конфіги, не генерують UUID і не підставляють `fileLocation`. Завдяки дискримінатору отримані об'єкти можна розрізняти без аналізу шляху або імені файлу.
 
+### Dependency boundaries for `index.data.ts`
+
+**Each `index.data.ts` exposes data for exactly one collection level. Never recursively `export *` a child level from a parent index.** This prevents a lightweight domain lookup from importing entire group and skill modules.
+
+| File | Public exports | Must not export |
+|---|---|---|
+| `math/skillsTaxonomy/index.data.ts` | Domain configs only (`*_SkillDomain_Data`) | Groups, individual Skills |
+| `<domain>/index.data.ts` | Its own Domain config only | Group configs, Skills |
+| `<domain>/<group>/index.data.ts` | Its own Group config only | Individual Skills |
+| `<domain>/<group>/skills/index.data.ts` | Individual Skill configs in that directory only | Group or Domain configs |
+
+Examples of **deliberate, explicit imports**:
+
+```ts
+import { counting_SkillDomain_Data } from './math/skillsTaxonomy/index.data';
+import { steps_SkillGroup_Data } from './math/skillsTaxonomy/counting/steps/index.data';
+import { countBy2_Skill_Data } from './math/skillsTaxonomy/counting/steps/skills/index.data';
+```
+
+**Dependency direction:** Domain data imports **only** child Group UUID maps (via `index.ids.ts`), Group data imports **only** child Skill UUID maps. Neither data config should import the data of its descendants. ID indexes likewise import only ID constants; no `.data.ts` imports. This is a deliberate separation between a *reference* and *materializing the referenced resource*.
+
+**Completeness rule for agents:** A Group/Domain config with child UUID references is not proof that its children already have `.data.ts` implementations. Check the [Mathematics Skills Inventory](../math/skills-inventory.md) statuses at **all levels** before continuing work.
+
 ## 9. Skill відокремлено від педагогічного контексту
 
 **У Skill не зберігаємо** `grade`, `age`, `prerequisites`, `lessonIds`, `questionIds`, параметри оцінювання, поточний прогрес користувача, місце в програмі або послідовність навчання. **Усі сценарії використання та межі відповідальності описані в [Use Cases](#10-use-cases-де-та-навіщо-використовуються-skill).**

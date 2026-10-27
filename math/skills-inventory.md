@@ -30,35 +30,41 @@
 
 Коми та сполучники — привід перевірити зміст, а не автоматичний роздільник. **Дві раніше неоднозначні групи розкладено на окремі та інтеграційні компетенції**; див. [методичний звіт](./skills-taxonomy-review.md). Усі **285** редакційних ідентифікаторів, описи й орієнтовні рівні залишилися без змін; **runtime ID у реалізованому коді тепер UUID**. Для двох реорганізованих областей створено типізовані конфіги груп і доменів; наявні Skill-файли не переписувалися.
 
-| Domain ID | Домен | Груп | Навичок |
-|---|---|---:|---:|
-| `math.counting` | Лічба | 5 | 15 |
-| `math.numeration` | Натуральні числа | 5 | 27 |
-| `math.fractions` | Дроби | 4 | 19 |
-| `math.arithmetic` | Арифметика | 5 | 79 |
-| `math.algebra` | Алгебра | 5 | 17 |
-| `math.geometry` | Геометрія | 10 | 35 |
-| `math.measurement` | Вимірювання | 5 | 21 |
-| `math.time` | Час | 3 | 13 |
-| `math.money` | Гроші | 2 | 6 |
-| `math.data` | Дані | 3 | 15 |
-| `math.probability` | Ймовірність | 2 | 4 |
-| `math.problemSolving` | Задачі | 7 | 23 |
-| `math.reasoning` | Міркування | 4 | 11 |
+| Domain ID | Домен | Груп | Навичок | Domain config | Group configs | Skill files |
+|---|---|---:|---:|---|---:|---:|
+| `math.counting` | Лічба | 5 | 15 | **Implemented** | 5/5 | 15/15 |
+| `math.numeration` | Натуральні числа | 5 | 27 | — | 0/5 | 0/27 |
+| `math.fractions` | Дроби | 4 | 19 | — | 0/4 | 0/19 |
+| `math.arithmetic` | Арифметика | 5 | 79 | **Implemented** | 3/5 | 0/79 |
+| `math.algebra` | Алгебра | 5 | 17 | — | 0/5 | 0/17 |
+| `math.geometry` | Геометрія | 10 | 35 | **Implemented** | 3/10 | 0/35 |
+| `math.measurement` | Вимірювання | 5 | 21 | — | 0/5 | 0/21 |
+| `math.time` | Час | 3 | 13 | — | 0/3 | 0/13 |
+| `math.money` | Гроші | 2 | 6 | — | 0/2 | 0/6 |
+| `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
+| `math.probability` | Ймовірність | 2 | 4 | — | 0/2 | 0/4 |
+| `math.problemSolving` | Задачі | 7 | 23 | — | 0/7 | 0/23 |
+| `math.reasoning` | Міркування | 4 | 11 | — | 0/4 | 0/11 |
 
 **Редакційні `math.*` ID тут — історичні/семантичні позначення; runtime ID наявних конфігів — незмінні UUID з [`UUID-MIGRATION.md`](./skillsTaxonomy/UUID-MIGRATION.md). Статус `Implemented` означає наявність окремого `Skill` data-файлу, а не лише посилання на його UUID у конфігу групи.**
 
 **Редакційні Domain/Group ID — робочі.** У реалізованому коді Domain має `groupIds`, Group — `skillIds` як іменовані словники UUID. Належність навички не виводиться з префікса редакційного ID; перегрупування не змінює runtime UUID.
 
+**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Обробленими повністю є лише 15 Skill домену Counting. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
+
 ## Інвентар за доменами
 
 ### Domain 1. Лічба (15)
+
+**Implementation:** Domain + 5/5 Group configs + 15/15 individual Skills — **Complete**
 
 **ID:** `math.counting`
 
 #### SkillGroup 1.1. Числові послідовності (5)
 
 **ID:** `math.counting.sequence`
+
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -72,6 +78,8 @@
 
 **ID:** `math.counting.cardinality`
 
+**Implementation:** Implemented — Group config and all Skill files.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.count.cardinality` | Визначати кількість предметів за останнім названим числом під час лічби | 1 | **Implemented** |
@@ -82,6 +90,8 @@
 #### SkillGroup 1.3. Крокова лічба (4)
 
 **ID:** `math.counting.steps`
+
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -94,6 +104,8 @@
 
 **ID:** `math.counting.ordinal`
 
+**Implementation:** Implemented — Group config and all Skill files.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.count.ordinal` | Визначати порядковий номер об’єкта та розрізняти порядок і кількість | 1 | **Implemented** |
@@ -102,17 +114,23 @@
 
 **ID:** `math.counting.parity`
 
+**Implementation:** Implemented — Group config and all Skill files.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.count.even-odd` | Розрізняти парні й непарні числа через розбиття на пари | 2–3 | **Implemented** |
 
 ### Domain 2. Натуральні числа (27)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.numeration`
 
 #### SkillGroup 2.1. Числовий запис (4)
 
 **ID:** `math.numeration.notation`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -124,6 +142,8 @@
 #### SkillGroup 2.2. Розрядність (11)
 
 **ID:** `math.numeration.placeValue`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -143,6 +163,8 @@
 
 **ID:** `math.numeration.comparison`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.order.more-less-equal` | Визначати «більше», «менше», «дорівнює» на конкретних кількостях | 1 | — |
@@ -155,6 +177,8 @@
 
 **ID:** `math.numeration.numberLine`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.order.before-after-between` | Знаходити попереднє, наступне та проміжні числа в заданому діапазоні | 1–2 | — |
@@ -166,6 +190,8 @@
 
 **ID:** `math.numeration.estimation`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.order.round-to-ten` | Округлювати числа до найближчого десятка й пояснювати вибір | 2–3 | — |
@@ -174,11 +200,15 @@
 
 ### Domain 3. Дроби (19)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.fractions`
 
 #### SkillGroup 3.1. Представлення дробів (12)
 
 **ID:** `math.fractions.representation`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -199,6 +229,8 @@
 
 **ID:** `math.fractions.comparison`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.fractions.compare-same-numerator` | Порівнювати дроби з однаковим чисельником, спираючись на однакове ціле | 3 | — |
@@ -209,6 +241,8 @@
 
 **ID:** `math.fractions.arithmetic`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.fractions.add-like-denominators` | Додавати прості дроби з однаковими знаменниками в межах одного цілого | 3 | — |
@@ -218,6 +252,8 @@
 
 **ID:** `math.fractions.portions`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.fractions.find-unit-part` | Знаходити 1/n від числа або вимірюваної величини через ділення | 3 | — |
@@ -225,11 +261,15 @@
 
 ### Domain 4. Арифметика (79)
 
+**Implementation:** Domain + 3/5 Group configs; 0/79 Skill files — **Partial**
+
 **ID:** `math.arithmetic`
 
 #### SkillGroup 4.1. Додавання (10)
 
 **ID:** `math.arithmetic.addition`
+
+**Implementation:** Group config implemented; individual Skill files not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -248,6 +288,8 @@
 
 **ID:** `math.arithmetic.subtraction`
 
+**Implementation:** Group config implemented; individual Skill files not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.addsub.subtract-meaning` | Моделювати віднімання як вилучення, різницю або пошук невідомої частини | 1 | — |
@@ -262,6 +304,8 @@
 #### SkillGroup 4.3. Поєднання додавання та віднімання (13)
 
 **ID:** `math.arithmetic.additionSubtraction`
+
+**Implementation:** Group config implemented; individual Skill files not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -281,6 +325,8 @@
 #### SkillGroup 4.4. Множення (24)
 
 **ID:** `math.multiply`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -313,6 +359,8 @@
 
 **ID:** `math.divide`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.divide.equal-sharing` | Моделювати ділення як розподіл на задану кількість рівних груп | 2 | — |
@@ -342,11 +390,15 @@
 
 ### Domain 5. Алгебра (17)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.algebra`
 
 #### SkillGroup 5.1. Вирази (5)
 
 **ID:** `math.algebra.expressions`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -360,6 +412,8 @@
 
 **ID:** `math.algebra.equalities`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.algebra.equality-meaning` | Сприймати знак рівності як рівність значень обох частин, а не команду «порахуй» | 1 | — |
@@ -369,6 +423,8 @@
 #### SkillGroup 5.3. Невідомі (6)
 
 **ID:** `math.algebra.unknowns`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -383,6 +439,8 @@
 
 **ID:** `math.algebra.patterns`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.algebra.arithmetic-pattern` | Знаходити й продовжувати числову закономірність з постійним кроком | 1–2 | — |
@@ -392,17 +450,23 @@
 
 **ID:** `math.algebra.formalization`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.algebra.translate-situation` | Перекладати просту ситуацію в числовий вираз або рівняння | 1–3 | — |
 
 ### Domain 6. Геометрія (35)
 
+**Implementation:** Domain + 3/10 Group configs; 0/35 Skill files — **Partial**
+
 **ID:** `math.geometry`
 
 #### SkillGroup 6.1. Просторова орієнтація (3)
 
 **ID:** `math.geometry.orientation`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -413,6 +477,8 @@
 #### SkillGroup 6.2. Плоскі фігури (5)
 
 **ID:** `math.geometry.figures`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -426,6 +492,8 @@
 
 **ID:** `math.geometry.solids`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.geometry.shape-on-solid-surface` | Впізнавати плоскі фігури на гранях/поверхнях просторових тіл | 2 | — |
@@ -435,6 +503,8 @@
 #### SkillGroup 6.4. Лінії (5)
 
 **ID:** `math.geometry.lines`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -448,6 +518,8 @@
 
 **ID:** `math.geometry.angles`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.geometry.angle-as-turn` | Інтерпретувати кут як величину повороту й порівнювати кути з прямим | 3 | — |
@@ -457,6 +529,8 @@
 #### SkillGroup 6.6. Коло (3)
 
 **ID:** `math.geometry.circles`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -468,6 +542,8 @@
 
 **ID:** `math.geometry.transformations`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.geometry.turns-quarters` | Демонструвати чверть-, пів- і три-чверть оберту за і проти годинникової стрілки | 2 | — |
@@ -477,6 +553,8 @@
 #### SkillGroup 6.8. Периметр (4)
 
 **ID:** `math.geometry.perimeter`
+
+**Implementation:** Group config implemented; individual Skill files not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -489,6 +567,8 @@
 
 **ID:** `math.geometry.area`
 
+**Implementation:** Group config implemented; individual Skill files not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.geomeasure.composite-area` | Розбивати прямокутну складену фігуру на прямокутники та додавати площі частин | 3 | — |
@@ -500,17 +580,23 @@
 
 **ID:** `math.geometry.perimeterArea`
 
+**Implementation:** Group config implemented; individual Skill files not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.geomeasure.area-perimeter-contrast` | Будувати фігури з однаковим периметром і різними площами або навпаки | 3 | — |
 | `math.geomeasure.perimeter-vs-area` | Розрізняти периметр і площу та добирати відповідний спосіб вимірювання | 3+ | — |
 ### Domain 7. Вимірювання (21)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.measurement`
 
 #### SkillGroup 7.1. Довжина (10)
 
 **ID:** `math.measurement.length`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -529,6 +615,8 @@
 
 **ID:** `math.measurement.mass`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.measure.centner-kilogram` | Застосовувати співвідношення центнера й кілограма у задачах | 3 | — |
@@ -540,6 +628,8 @@
 
 **ID:** `math.measurement.capacity`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.measure.capacity-concept` | Порівнювати місткість посудин через переливання або вимірювання | 1–2 | — |
@@ -550,6 +640,8 @@
 
 **ID:** `math.measurement.temperature`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.measure.temperature-read` | Зчитувати невід’ємну температуру з простої шкали термометра | 3+ | — |
@@ -557,6 +649,8 @@
 #### SkillGroup 7.5. Вимірювальні навички (3)
 
 **ID:** `math.measurement.general`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -566,11 +660,15 @@
 
 ### Domain 8. Час (13)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.time`
 
 #### SkillGroup 8.1. Календар (4)
 
 **ID:** `math.time.calendar`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -582,6 +680,8 @@
 #### SkillGroup 8.2. Годинник (5)
 
 **ID:** `math.time.clock`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -595,6 +695,8 @@
 
 **ID:** `math.time.duration`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.time.convert-hours-minutes` | Застосовувати співвідношення 1 год = 60 хв | 2–3 | — |
@@ -604,11 +706,15 @@
 
 ### Domain 9. Гроші (6)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.money`
 
 #### SkillGroup 9.1. Грошові суми (3)
 
 **ID:** `math.money.denominations`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -620,6 +726,8 @@
 
 **ID:** `math.money.transactions`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.money.calculate-change` | Знаходити решту після покупки | 2–3 | — |
@@ -628,11 +736,15 @@
 
 ### Domain 10. Дані (15)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.data`
 
 #### SkillGroup 10.1. Збирання даних (5)
 
 **ID:** `math.data.collection`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -645,6 +757,8 @@
 #### SkillGroup 10.2. Подання даних (7)
 
 **ID:** `math.data.presentation`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -660,6 +774,8 @@
 
 **ID:** `math.data.interpretation`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.data.compare-categories` | Знаходити різницю та суму кількостей за таблицею чи діаграмою | 2–3 | — |
@@ -668,11 +784,15 @@
 
 ### Domain 11. Ймовірність (4)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.probability`
 
 #### SkillGroup 11.1. Випадкові події (3)
 
 **ID:** `math.probability.events`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -684,17 +804,23 @@
 
 **ID:** `math.probability.experiments`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.probability.experiment-variation` | Порівнювати серії повторних випадкових експериментів і помічати відмінності результатів | 3 | — |
 
 ### Domain 12. Задачі (23)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.problemSolving`
 
 #### SkillGroup 12.1. Аналіз умови (3)
 
 **ID:** `math.problemSolving.conditions`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -706,6 +832,8 @@
 
 **ID:** `math.problemSolving.models`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.problems.choose-operation-add-sub` | Вибирати додавання чи віднімання відповідно до змісту простої задачі | 1 | — |
@@ -716,6 +844,8 @@
 #### SkillGroup 12.3. Планування розв’язання (5)
 
 **ID:** `math.problemSolving.planning`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -729,6 +859,8 @@
 
 **ID:** `math.problemSolving.comparisons`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.problems.additive-comparison` | Розв’язувати задачі на «на скільки більше / менше» | 1–2 | — |
@@ -740,6 +872,8 @@
 
 **ID:** `math.problemSolving.parts`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.problems.part-whole-addsub` | Розв’язувати задачі на ціле й частини та складати обернені задачі | 1–2 | — |
@@ -748,6 +882,8 @@
 #### SkillGroup 12.6. Задачі на групи (2)
 
 **ID:** `math.problemSolving.groups`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -758,6 +894,8 @@
 
 **ID:** `math.problemSolving.quantities`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.problems.work-rate-time` | Використовувати зв'язок продуктивність × час = виконаний обсяг у простих задачах | 3 | — |
@@ -766,11 +904,15 @@
 
 ### Domain 13. Міркування (11)
 
+**Implementation:** Not started (no Domain/Group/Skill data files)
+
 **ID:** `math.reasoning`
 
 #### SkillGroup 13.1. Аргументація (5)
 
 **ID:** `math.reasoning.argumentation`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
@@ -784,6 +926,8 @@
 
 **ID:** `math.reasoning.verification`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.reasoning.check-reasonableness` | Оцінювати, чи може відповідь бути правильною за змістом та порядком величини | 2–3 | — |
@@ -794,6 +938,8 @@
 
 **ID:** `math.reasoning.logic`
 
+**Implementation:** Not started — Group data file not implemented.
+
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
 | `math.reasoning.complete-pattern` | Доповнювати геометричну або числову закономірність відповідно до встановленого правила | 1–2 | — |
@@ -802,6 +948,8 @@
 #### SkillGroup 13.4. Способи представлення (1)
 
 **ID:** `math.reasoning.representations`
+
+**Implementation:** Not started — Group data file not implemented.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
