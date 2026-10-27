@@ -9,5 +9,9 @@
 
 - `math.order.estimate-quantity` — `a4f386e6-e8f1-4497-8344-b348bcaeaaec`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
+
 ---
 [Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

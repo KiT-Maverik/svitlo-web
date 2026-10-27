@@ -9,5 +9,9 @@
 
 - `math.count.even-odd` — `1945f222-d833-4897-b9c1-71f16d81fd74`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
+
 ---
 [Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

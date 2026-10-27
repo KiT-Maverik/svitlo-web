@@ -10,5 +10,9 @@
 - `math.count.count-by-10` — `f0669022-6bc5-45fc-acb7-92f03e03cf27`
 - `math.count.count-by-100` — `130326b8-210c-41f7-8da3-3db1ceef5950`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
+
 ---
 [Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

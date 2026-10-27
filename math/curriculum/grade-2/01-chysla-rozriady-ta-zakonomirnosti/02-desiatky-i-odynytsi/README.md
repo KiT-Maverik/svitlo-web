@@ -9,5 +9,9 @@
 
 - `math.numbers.tens-ones` — `cbe7c10a-de6d-42cc-9526-f4019d797727`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
+
 ---
 [Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

@@ -9,5 +9,9 @@
 
 - `math.algebra.growing-pattern` — `ce88fbc1-1607-42c3-8d54-e87e9d368bf6`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
+
 ---
 [Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

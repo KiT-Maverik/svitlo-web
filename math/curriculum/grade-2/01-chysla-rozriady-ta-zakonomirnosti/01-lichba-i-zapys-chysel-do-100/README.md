@@ -10,5 +10,9 @@
 - `math.count.forward-100` — `64ecb242-b1d9-4967-a020-5f6fc711aa93`
 - `math.numbers.read-write-100` — `c9ff45cf-3fe7-4f2c-9380-ce1a5c463cf2`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
+
 ---
 [Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

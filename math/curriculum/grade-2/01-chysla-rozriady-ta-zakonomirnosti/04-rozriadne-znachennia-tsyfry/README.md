@@ -9,5 +9,9 @@
 
 - `math.numbers.place-value` — `bfa629a1-292a-4a80-8305-001a2506e4bb`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
+
 ---
 [Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
