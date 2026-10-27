@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { angles_Skills_Ids } from './index.ids';
+
+export const rightAngle_Skill_Data = buildSkillConfig({
+  id: angles_Skills_Ids.rightAngle,
+  name: {
+    en: "Identifying and checking right angles",
+    zh: "识别并检验直角",
+    hi: "समकोण पहचानना और जाँचना",
+    es: "Identificar y comprobar ángulos rectos",
+    ar: "تمييز الزوايا القائمة والتحقق منها",
+    fr: "Reconnaître et vérifier les angles droits",
+    bn: "সমকোণ চেনা ও যাচাই",
+    pt: "Identificar e verificar ângulos retos",
+    ur: "قائمہ زاویوں کی شناخت اور جانچ",
+    id: "Mengenali dan memeriksa sudut siku-siku",
+    de: "Rechte Winkel erkennen und überprüfen",
+    ja: "直角を見つけて確かめる",
+    ko: "직각 찾기와 확인하기",
+    tr: "Dik açıları tanıma ve kontrol etme",
+    vi: "Nhận biết và kiểm tra góc vuông",
+    ta: "செங்கோணங்களை அறிந்து சரிபார்த்தல்",
+    te: "లంబ కోణాలను గుర్తించి తనిఖీ చేయడం",
+    mr: "काटकोन ओळखणे आणि तपासणे",
+    ms: "Mengenal pasti dan menyemak sudut tegak",
+    he: "זיהוי ובדיקה של זוויות ישרות",
+    pl: "Rozpoznawanie i sprawdzanie kątów prostych",
+    uk: "Розпізнавання та перевірка прямих кутів",
+  },
+});

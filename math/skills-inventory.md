@@ -458,7 +458,7 @@
 
 ### Domain 6. Геометрія (35)
 
-**Implementation:** Domain + 3/10 Group configs; 0/35 Skill files — **Partial**
+**Implementation:** Domain + 10/10 Group configs; 35/35 Skill files — **Implemented**
 
 **ID:** `math.geometry`
 
@@ -466,126 +466,126 @@
 
 **ID:** `math.geometry.orientation`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geometry.position-words` | Описувати положення об’єкта: ліворуч, праворуч, вище, нижче, між, перед, за | 1 | — |
-| `math.geometry.grid-map-navigation` | Читати й складати простий план на сітці та описувати шлях/позицію | 3 | — |
-| `math.geometry.spatial-orientation-path` | Складати й виконувати покрокові просторові інструкції маршруту | 1–3 | — |
+| `math.geometry.position-words` | Описувати положення об’єкта: ліворуч, праворуч, вище, нижче, між, перед, за | 1 | Implemented |
+| `math.geometry.grid-map-navigation` | Читати й складати простий план на сітці та описувати шлях/позицію | 3 | Implemented |
+| `math.geometry.spatial-orientation-path` | Складати й виконувати покрокові просторові інструкції маршруту | 1–3 | Implemented |
 
 #### SkillGroup 6.2. Плоскі фігури (5)
 
 **ID:** `math.geometry.figures`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geometry.identify-2d-shapes` | Розпізнавати круг, трикутник, квадрат і прямокутник незалежно від розміру й повороту | 1 | — |
-| `math.geometry.shape-attributes` | Класифікувати плоскі фігури за кількістю сторін і вершин | 1–2 | — |
-| `math.geometry.polygon` | Розпізнавати многокутник і визначати його вершини та сторони | 2 | — |
-| `math.geometry.triangle-rectangle-square` | Пояснювати властивості трикутника, прямокутника та квадрата | 2 | — |
-| `math.geometry.compose-decompose-shapes` | Складати нову фігуру з частин і розкладати складену фігуру на прості | 1–3 | — |
+| `math.geometry.identify-2d-shapes` | Розпізнавати круг, трикутник, квадрат і прямокутник незалежно від розміру й повороту | 1 | Implemented |
+| `math.geometry.shape-attributes` | Класифікувати плоскі фігури за кількістю сторін і вершин | 1–2 | Implemented |
+| `math.geometry.polygon` | Розпізнавати многокутник і визначати його вершини та сторони | 2 | Implemented |
+| `math.geometry.triangle-rectangle-square` | Пояснювати властивості трикутника, прямокутника та квадрата | 2 | Implemented |
+| `math.geometry.compose-decompose-shapes` | Складати нову фігуру з частин і розкладати складену фігуру на прості | 1–3 | Implemented |
 
 #### SkillGroup 6.3. Просторові тіла (3)
 
 **ID:** `math.geometry.solids`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geometry.shape-on-solid-surface` | Впізнавати плоскі фігури на гранях/поверхнях просторових тіл | 2 | — |
-| `math.geometry.identify-3d-solids` | Розпізнавати куб, кулю, циліндр, конус та інші базові просторові тіла | 1–2 | — |
-| `math.geometry.spatial-solids-attributes` | Описувати грані, ребра й вершини куба та прямокутного паралелепіпеда | 3+ | — |
+| `math.geometry.shape-on-solid-surface` | Впізнавати плоскі фігури на гранях/поверхнях просторових тіл | 2 | Implemented |
+| `math.geometry.identify-3d-solids` | Розпізнавати куб, кулю, циліндр, конус та інші базові просторові тіла | 1–2 | Implemented |
+| `math.geometry.spatial-solids-attributes` | Описувати грані, ребра й вершини куба та прямокутного паралелепіпеда | 3+ | Implemented |
 
 #### SkillGroup 6.4. Лінії (5)
 
 **ID:** `math.geometry.lines`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geometry.lines-and-points` | Розрізняти точку, пряму, криву й ламану | 1–2 | — |
-| `math.geometry.segment` | Розпізнавати, будувати й позначати відрізок із кінцевими точками | 1–2 | — |
-| `math.geometry.ray` | Розрізняти промінь, відрізок і пряму | 2–3 | — |
-| `math.geometry.closed-open-lines` | Розрізняти замкнені й незамкнені лінії | 1–2 | — |
-| `math.geometry.parallel-perpendicular` | Розпізнавати паралельні та перпендикулярні прямі на рисунках і в довкіллі | 3+ | — |
+| `math.geometry.lines-and-points` | Розрізняти точку, пряму, криву й ламану | 1–2 | Implemented |
+| `math.geometry.segment` | Розпізнавати, будувати й позначати відрізок із кінцевими точками | 1–2 | Implemented |
+| `math.geometry.ray` | Розрізняти промінь, відрізок і пряму | 2–3 | Implemented |
+| `math.geometry.closed-open-lines` | Розрізняти замкнені й незамкнені лінії | 1–2 | Implemented |
+| `math.geometry.parallel-perpendicular` | Розпізнавати паралельні та перпендикулярні прямі на рисунках і в довкіллі | 3+ | Implemented |
 
 #### SkillGroup 6.5. Кути (3)
 
 **ID:** `math.geometry.angles`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geometry.angle-as-turn` | Інтерпретувати кут як величину повороту й порівнювати кути з прямим | 3 | — |
-| `math.geometry.right-angle` | Розпізнавати прямий кут і перевіряти його за еталоном | 2–3 | — |
-| `math.geometry.angle-types` | Розрізняти гострий, прямий і тупий кути на наочних прикладах | 3+ | — |
+| `math.geometry.angle-as-turn` | Інтерпретувати кут як величину повороту й порівнювати кути з прямим | 3 | Implemented |
+| `math.geometry.right-angle` | Розпізнавати прямий кут і перевіряти його за еталоном | 2–3 | Implemented |
+| `math.geometry.angle-types` | Розрізняти гострий, прямий і тупий кути на наочних прикладах | 3+ | Implemented |
 
 #### SkillGroup 6.6. Коло (3)
 
 **ID:** `math.geometry.circles`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geometry.circle-disk` | Розрізняти коло та круг | 2–3 | — |
-| `math.geometry.radius-diameter` | Показувати центр, радіус і діаметр кола та пов’язувати діаметр із двома радіусами | 3 | — |
-| `math.geometry.draw-circle` | Будувати коло заданого радіуса циркулем | 3 | — |
+| `math.geometry.circle-disk` | Розрізняти коло та круг | 2–3 | Implemented |
+| `math.geometry.radius-diameter` | Показувати центр, радіус і діаметр кола та пов’язувати діаметр із двома радіусами | 3 | Implemented |
+| `math.geometry.draw-circle` | Будувати коло заданого радіуса циркулем | 3 | Implemented |
 
 #### SkillGroup 6.7. Перетворення (3)
 
 **ID:** `math.geometry.transformations`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geometry.turns-quarters` | Демонструвати чверть-, пів- і три-чверть оберту за і проти годинникової стрілки | 2 | — |
-| `math.geometry.translations-reflections` | Виконувати та розпізнавати прості зсуви й віддзеркалення фігури | 2–3 | — |
-| `math.geometry.reflection-symmetry` | Знаходити вісь симетрії у простих фігурах і добудовувати симетричну частину | 2–3 | — |
+| `math.geometry.turns-quarters` | Демонструвати чверть-, пів- і три-чверть оберту за і проти годинникової стрілки | 2 | Implemented |
+| `math.geometry.translations-reflections` | Виконувати та розпізнавати прості зсуви й віддзеркалення фігури | 2–3 | Implemented |
+| `math.geometry.reflection-symmetry` | Знаходити вісь симетрії у простих фігурах і добудовувати симетричну частину | 2–3 | Implemented |
 
 #### SkillGroup 6.8. Периметр (4)
 
 **ID:** `math.geometry.perimeter`
 
-**Implementation:** Group config implemented; individual Skill files not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geomeasure.measure-perimeter` | Вимірювати периметр многокутника як суму довжин сторін | 2–3 | — |
-| `math.geomeasure.rectangle-perimeter` | Обчислювати периметр прямокутника за довжинами його сторін | 3 | — |
-| `math.geomeasure.square-perimeter` | Обчислювати периметр квадрата за довжиною сторони | 3 | — |
-| `math.geomeasure.unknown-side-from-perimeter` | Знаходити невідому сторону прямокутника за периметром та іншими сторонами | 3+ | — |
+| `math.geomeasure.measure-perimeter` | Вимірювати периметр многокутника як суму довжин сторін | 2–3 | Implemented |
+| `math.geomeasure.rectangle-perimeter` | Обчислювати периметр прямокутника за довжинами його сторін | 3 | Implemented |
+| `math.geomeasure.square-perimeter` | Обчислювати периметр квадрата за довжиною сторони | 3 | Implemented |
+| `math.geomeasure.unknown-side-from-perimeter` | Знаходити невідому сторону прямокутника за периметром та іншими сторонами | 3+ | Implemented |
 
 #### SkillGroup 6.9. Площа (4)
 
 **ID:** `math.geometry.area`
 
-**Implementation:** Group config implemented; individual Skill files not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geomeasure.composite-area` | Розбивати прямокутну складену фігуру на прямокутники та додавати площі частин | 3 | — |
-| `math.geomeasure.area-as-covering` | Розуміти площу як міру поверхні, вкритої однаковими одиничними квадратами | 3+ | — |
-| `math.geomeasure.count-unit-squares` | Визначати площу простої фігури підрахунком одиничних квадратів | 3+ | — |
-| `math.geomeasure.rectangle-area-model` | Пов’язувати площу прямокутника з добутком довжин його сторін у цілих одиницях | 3+ | — |
+| `math.geomeasure.composite-area` | Розбивати прямокутну складену фігуру на прямокутники та додавати площі частин | 3 | Implemented |
+| `math.geomeasure.area-as-covering` | Розуміти площу як міру поверхні, вкритої однаковими одиничними квадратами | 3+ | Implemented |
+| `math.geomeasure.count-unit-squares` | Визначати площу простої фігури підрахунком одиничних квадратів | 3+ | Implemented |
+| `math.geomeasure.rectangle-area-model` | Пов’язувати площу прямокутника з добутком довжин його сторін у цілих одиницях | 3+ | Implemented |
 
 #### SkillGroup 6.10. Зв’язок периметра та площі (2)
 
 **ID:** `math.geometry.perimeterArea`
 
-**Implementation:** Group config implemented; individual Skill files not implemented.
+**Implementation:** Implemented — Group data and all Skill data files present.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.geomeasure.area-perimeter-contrast` | Будувати фігури з однаковим периметром і різними площами або навпаки | 3 | — |
-| `math.geomeasure.perimeter-vs-area` | Розрізняти периметр і площу та добирати відповідний спосіб вимірювання | 3+ | — |
+| `math.geomeasure.area-perimeter-contrast` | Будувати фігури з однаковим периметром і різними площами або навпаки | 3 | Implemented |
+| `math.geomeasure.perimeter-vs-area` | Розрізняти периметр і площу та добирати відповідний спосіб вимірювання | 3+ | Implemented |
 ### Domain 7. Вимірювання (21)
 
 **Implementation:** Not started (no Domain/Group/Skill data files)
