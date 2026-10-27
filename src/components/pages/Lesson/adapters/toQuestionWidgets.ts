@@ -1,4 +1,4 @@
-import type { SelectOneAnswerQuestion } from '@types';
+import type { SelectOneAnswerQuestion } from '@/components/widgets/questions/types';
 import type { Quiz } from '@types';
 
 /** Adapts localized content instances to the current select-one widget contract. */

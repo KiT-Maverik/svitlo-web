@@ -37,13 +37,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Interactive questions
 
-Open `/questions` for nine independently controlled examples. See [authoring and API documentation](docs/questions.md) for data definitions, checks, extension points and validation commands.
+Open `/questions` for nine independently controlled examples.
 
-Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Domain contracts and module augmentation live in `src/types/questions`.
-
-## Workspaces and content reports
-
-Open `/student`, `/teacher`, `/admin/lessons` and `/lessons/light`. Dashboards and CRUD mutation ports are explicit prototypes. Flag forms use `/api/reports`; configure server-only env from `.env.example` to enable GitHub issue delivery. See [implementation and CRUD plan](docs/workspaces.md).
+Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Widget types live in `src/components/widgets/questions/types`; content contracts live in `src/types/content`.
 
 
 ## Урок із конфігурації (data-driven Lesson)
@@ -61,7 +57,7 @@ Open `/student`, `/teacher`, `/admin/lessons` and `/lessons/light`. Dashboards a
 
 Прогрес уроку та відповіді зберігаються в IndexedDB, тому перезавантаження відновлює поточний крок і стан тесту. Для іншого `lesson.id` клієнтський стан монтується заново. Контент Markdown рендериться сервером; під час перемикання локалі сцени отримують відповідний словник із конфігу. Для `MediumPractice` наразі є українська й англійська версії; решта локалей тимчасово використовують англійський текст.
 
-Тестування: `npm run test:components`, `npm run typecheck`, `npm run build`, `npx playwright test tests/e2e/light-lesson.spec.ts`. Для перейменування старих тестових файлів: `python3 scripts/rename-unit-files.py --dry-run`.
+Тестування: `npm run test:components`, `npm run typecheck`, `npm run build`, `npx playwright test tests/e2e/light-lesson.spec.ts`.
 
 ## Навігація навчальної зони
 

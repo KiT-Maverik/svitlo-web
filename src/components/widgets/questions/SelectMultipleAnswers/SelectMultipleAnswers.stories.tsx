@@ -3,7 +3,7 @@ import { expect, userEvent, within } from 'storybook/test';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { QuestionAttempt, type QuestionAttemptProps } from '../helpers';
-import type { SelectMultipleAnswersQuestion } from '@types';
+import type { SelectMultipleAnswersQuestion } from '@/components/widgets/questions/types';
 
 const question: SelectMultipleAnswersQuestion = {
   id: 'multiple-select-playground',

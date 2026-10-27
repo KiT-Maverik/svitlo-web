@@ -28,10 +28,10 @@ describe('Components', () => {
 
     it('should navigate without discarding unrelated query parameters when changing locale', async () => {
       const { replace } = LocaleProvider_mx.prepare();
-      window.history.replaceState({}, '', '/lessons/light?ref=abc&lang=uk-UA');
+      window.history.replaceState({}, '', '/topics/light?ref=abc&lang=uk-UA');
       LocaleProvider_fx.render();
       await LocaleProvider_fx.actions.change();
-      expect(replace).toHaveBeenCalledWith('/lessons/light?ref=abc&lang=en-US', { scroll: false });
+      expect(replace).toHaveBeenCalledWith('/topics/light?ref=abc&lang=en-US', { scroll: false });
     });
 
     it('should restore the original document locale on unmount', () => {

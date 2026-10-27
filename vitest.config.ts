@@ -30,12 +30,6 @@ export default defineConfig({
           "src/components/pages/ApiDemo/ApiDemo.tsx",
           "src/components/pages/ApiDemo/FeedbackDemo.tsx",
           "src/components/pages/QuestionsDemo/QuestionsDemo.tsx",
-          "src/features/reporting/ReportButton.tsx",
-          "src/features/reporting/ReportedQuestion.tsx",
-          "src/features/workspaces/WorkspaceShell.tsx",
-          "src/features/workspaces/StudentDashboard.tsx",
-          "src/features/workspaces/TeacherDashboard.tsx",
-          "src/features/workspaces/AdminLessons.tsx",
           "src/content/how-light-moves/scenes/LightRayDiagram/LightRayDiagram.tsx",
           "src/content/how-light-moves/scenes/LightPropagationSimulation/LightPropagationSimulation.tsx",
           "src/i18n/LocaleProvider/LocaleProvider.tsx"

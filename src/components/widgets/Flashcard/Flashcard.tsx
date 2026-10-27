@@ -11,7 +11,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Paper from '@mui/material/Paper';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import FlagOutlined from '@mui/icons-material/FlagOutlined';
 import LabelOutlined from '@mui/icons-material/LabelOutlined';
 import MoreVert from '@mui/icons-material/MoreVert';
 import LockOpenOutlined from '@mui/icons-material/LockOpenOutlined';
@@ -36,11 +35,10 @@ export interface FlashcardProps {
   disabled?: boolean;
   onReveal?: () => void;
   onRate?: (remembered: boolean) => void;
-  onReport?: () => void;
   onAddLabel?: () => void;
 }
 
-export const Flashcard = forwardRef<HTMLButtonElement, FlashcardProps>(function Flashcard({ question, answer, labels = [], revealed = false, disabled = false, onReveal, onRate, onReport, onAddLabel }, ref) {
+export const Flashcard = forwardRef<HTMLButtonElement, FlashcardProps>(function Flashcard({ question, answer, labels = [], revealed = false, disabled = false, onReveal, onRate, onAddLabel }, ref) {
   const [menuAnchor, setMenuAnchor] = useState<null | HTMLElement>(null);
   const closeMenu = () => setMenuAnchor(null);
   return <section className={styles.flashStage} aria-label={aria.region}>
@@ -65,7 +63,6 @@ export const Flashcard = forwardRef<HTMLButtonElement, FlashcardProps>(function 
           </div>
         </>}
         <Menu id="flashcard-menu" anchorEl={menuAnchor} open={Boolean(menuAnchor)} onClose={closeMenu} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} transformOrigin={{ vertical: 'top', horizontal: 'right' }}>
-          <MenuItem onClick={() => { onReport?.(); closeMenu(); }}><ListItemIcon><FlagOutlined fontSize="small" /></ListItemIcon>{locale.flashcard.actions.report}</MenuItem>
           <MenuItem onClick={() => { onAddLabel?.(); closeMenu(); }}><ListItemIcon><LabelOutlined fontSize="small" /></ListItemIcon>{locale.flashcard.actions.addLabel}</MenuItem>
         </Menu>
       </Paper>

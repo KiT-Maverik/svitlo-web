@@ -1,4 +1,4 @@
-import type { AnswerMap, FillBlankPart, Item, QuestionOf, QuestionType, TextNormalization } from '@types';
+import type { AnswerMap, FillBlankPart, Item, QuestionOf, QuestionType, TextNormalization } from '@/components/widgets/questions/types';
 import type { CheckResult } from './check-result';
 
 const empty: CheckResult = { status: 'incomplete', reason: 'empty' };

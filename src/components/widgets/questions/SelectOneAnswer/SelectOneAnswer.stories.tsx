@@ -3,7 +3,7 @@ import { expect, userEvent, within } from 'storybook/test';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { QuestionAttempt, type QuestionAttemptProps } from '../helpers';
-import type { SelectOneAnswerQuestion } from '@types';
+import type { SelectOneAnswerQuestion } from '@/components/widgets/questions/types';
 
 const question: SelectOneAnswerQuestion = {
   id: 'single-select-playground',

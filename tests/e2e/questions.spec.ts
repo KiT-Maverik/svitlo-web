@@ -3,7 +3,7 @@ import { test, expect, type Locator } from '@playwright/test';
 test.beforeEach(async ({ page }) => { await page.goto('/questions'); });
 test('single choice keyboard cycle locks, retries clear, reset clears; examples are independent', async ({ page }) => {
   const section = page.getByRole('region', { name: 'Яка планета найближча до Сонця?' });
-  await expect(page.getByRole('region')).toHaveCount(7);
+  await expect(page.getByRole('region')).toHaveCount(9);
   await expect(section.getByText('Пояснення:', { exact: false })).toHaveCount(0);
   const earth = section.getByRole('button', { name: 'Земля', exact: true });
   await earth.focus(); await page.keyboard.press('Space');
@@ -94,7 +94,7 @@ test('answer surfaces share the widest width, center the column, and show select
   expect(bounds).toHaveLength(3);
   for (const bound of bounds) {
     expect(Math.abs(bound.width - bounds[0].width)).toBeLessThan(1);
-    expect(bound.align).toBe('left');
+    expect(bound.align).toBe('start');
   }
   const region = await section.boundingBox();
   expect(region).not.toBeNull();
@@ -236,7 +236,6 @@ test('one chip builder supports click, drag, insertion preview, cross-zone moves
   await expect(built.getByRole('button')).toHaveCount(0);
   await expect(section.getByText('Очистити відповідь', { exact: true })).toHaveCount(0);
   await expect(section.getByRole('button', { name: 'Скинути', exact: true })).toHaveText('');
-  await expect(section.getByRole('button', { name: /^Flag:/ })).toHaveText('');
   await expect(page.getByRole('region', { name: /Складіть рівність для суми/ }).getByRole('button', { name: /^Додати:/ })).toHaveCount(6);
 });
 
@@ -256,25 +255,12 @@ test('icon controls keep accessible names and reduced motion disables choice and
   await expect(page.getByRole('region', { name: /Упорядкуйте етапи/ }).locator('ol button svg')).toHaveCount(3);
   await reset.focus(); await page.keyboard.press('Enter');
   await expect(mercury).toHaveAttribute('aria-pressed', 'false');
-  const flag = choice.getByRole('button', { name: /^Flag:/ });
-  await expect(flag).toHaveText('');
-  await expect(flag).toBeEnabled();
-  const idleFlagColor = await flag.evaluate(node => getComputedStyle(node).color);
-  const resetSize = await reset.boundingBox(), flagSize = await flag.boundingBox();
-  expect(flagSize!.width).toBe(resetSize!.width);
-  expect(flagSize!.height).toBe(resetSize!.height);
-  await flag.focus();
-  await expect(flag.locator('.report-filled')).toBeVisible();
-  await expect(flag.locator('.report-outline')).toBeHidden();
-  expect(await flag.evaluate(node => getComputedStyle(node).color)).not.toBe(idleFlagColor);
-  const card = await choice.boundingBox(), icon = await flag.boundingBox();
-  expect(card && icon && card.x + card.width - icon.x - icon.width).toBeLessThan(36);
+  const card = await choice.boundingBox();
   const panel = choice.locator('[data-question-actions]');
   await expect(panel.locator('[data-action-zone="left"]').getByRole('button', { name: 'Скинути', exact: true })).toBeVisible();
-  await expect(panel.locator('[data-action-zone="right"]').getByRole('button', { name: /^Flag:/ })).toBeVisible();
+  await expect(panel.locator('[data-action-zone="right"]').getByRole('button')).toHaveCount(0);
   const check = await panel.locator('[data-action-zone="center"]').getByRole('button').boundingBox();
   expect(Math.abs(check!.x + check!.width / 2 - (card!.x + card!.width / 2))).toBeLessThan(2);
-  expect(Math.abs(resetBounds!.y + resetBounds!.height / 2 - (icon!.y + icon!.height / 2))).toBeLessThan(2);
   const ordering = page.getByRole('region', { name: /Упорядкуйте етапи/ }).locator('ol button').first();
   expect(await ordering.evaluate(node => node.querySelector('svg')!.getBoundingClientRect().right <= node.querySelector('span')!.getBoundingClientRect().left)).toBe(true);
   const blocks = page.getByRole('region', { name: /Складіть рівність для суми/ });

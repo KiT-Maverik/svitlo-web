@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState, SelectOneAnswerQuestion } from '@types';
+import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState } from '@types';
+import type { SelectOneAnswerQuestion } from '@/components/widgets/questions/types';
 import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
 import { useLessonProgress } from '../LessonProgress/LessonProgress';
 import Celebration, { playCelebration } from '../Celebration/Celebration';

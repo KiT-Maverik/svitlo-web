@@ -1,6 +1,4 @@
 import { describe, expect, it } from 'vitest';
-import { exampleQuestions } from '@/components/widgets/questions/examples';
-import { screen } from '@testing-library/react';
 import { QuestionsDemo_fx } from './QuestionsDemo.unit.fx';
 import { locale } from './locales/uk-UA';
 
@@ -11,13 +9,6 @@ describe('Components', () => {
       expect(QuestionsDemo_fx.selectors.title()).toBeVisible();
       expect(QuestionsDemo_fx.selectors.controls()).toHaveAccessibleName(locale.controls);
       expect(QuestionsDemo_fx.selectors.checkMode()).toHaveTextContent(locale.checkModes.manual);
-    });
-
-    it('should compose a report action for every provided example without duplicating selectors', () => {
-      QuestionsDemo_fx.render();
-      const reports = screen.getAllByRole('button', { name: /^Flag:/ });
-      expect(reports).toHaveLength(exampleQuestions.length);
-      expect(QuestionsDemo_fx.child.reportedQuestion.report(exampleQuestions[0].prompt)).toBeVisible();
     });
 
     it('should initialize all display toggles with the configured default states', () => {

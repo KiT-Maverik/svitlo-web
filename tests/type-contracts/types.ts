@@ -1,4 +1,4 @@
-import type { AnswerWithNumberQuestion } from '@types';
+import type { AnswerWithNumberQuestion } from '@/components/widgets/questions/types';
 import type { QuestionAttemptProps } from '../../src/components/widgets/questions/helpers';
 
 const numeric: AnswerWithNumberQuestion = {

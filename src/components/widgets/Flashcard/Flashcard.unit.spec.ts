@@ -43,14 +43,12 @@ describe('Components', () => {
       expect(Flashcard_fx.selectors.menu()).toBeDisabled();
     });
 
-    it('should invoke reporting from the accessible action menu', async () => {
-      const onReport = vi.fn();
-      Flashcard_fx.render({ onReport });
-      const menuButton = Flashcard_fx.selectors.menu();
+    it('should invoke adding a label from the action menu', async () => {
+      const onAddLabel = vi.fn();
+      Flashcard_fx.render({ onAddLabel });
       await Flashcard_fx.actions.openMenu();
-      expect(menuButton).toHaveAttribute('aria-expanded', 'true');
-      await userEvent.click(await screen.findByRole('menuitem', { name: 'Повідомити про проблему' }));
-      expect(onReport).toHaveBeenCalledOnce();
+      await userEvent.click(Flashcard_fx.selectors.menuItem());
+      expect(onAddLabel).toHaveBeenCalledOnce();
     });
 
     it('should render optional user-defined labels without changing the question', () => {

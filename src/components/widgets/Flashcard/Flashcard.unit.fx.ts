@@ -20,8 +20,7 @@ export const Flashcard_fx = {
       (scope ? within(scope) : screen).getByRole('button', { name: aria.actions.menu }),
     rate: (remembered: boolean, scope?: HTMLElement) =>
       (scope ? within(scope) : screen).getByRole('button', { name: remembered ? locale.flashcard.actions.remembered : locale.flashcard.actions.forgot }),
-    menuItem: (kind: 'report' | 'addLabel') =>
-      screen.getByRole('menuitem', { name: locale.flashcard.actions[kind] }),
+    menuItem: () => screen.getByRole('menuitem', { name: locale.flashcard.actions.addLabel }),
   },
   actions: {
     reveal: async () => userEvent.click(Flashcard_fx.selectors.reveal()),

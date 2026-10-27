@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { checkers, normalizeText, parseAnswerWithNumber } from '../src/components/widgets/questions/check';
 import { exampleQuestions } from '../src/components/widgets/questions/examples';
-import type { QuestionOf } from '@types';
+import type { QuestionOf } from '@/components/widgets/questions/types';
 const [single, multi, matching, text, numeric, ordering, blocks] = exampleQuestions;
 // Type-narrow fixtures so each checker enforces its question/answer contract.
 assert.equal(single.type, 'single-select');

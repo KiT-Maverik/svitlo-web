@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Checkbox, FormControl, FormControlLabel, InputLabel, MenuItem, Paper, Select, Stack, Typography } from '@mui/material';
 import { exampleQuestions } from '@/components/widgets/questions/examples';
-import { ReportedQuestion } from '@/features/reporting/ReportedQuestion';
+import { QuestionAttempt } from '@/components/widgets/questions/helpers';
 import type { CheckMode } from '@/components/widgets/questions/attempt-model';
 import { locale } from './locales/uk-UA';
 import { aria } from './QuestionsDemo.constants';
@@ -25,7 +25,7 @@ export function QuestionsDemo() {
     </Stack>
     <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} sx={{ alignItems: 'stretch' }}>
       <Stack spacing={3} sx={{ flex: '1 1 auto', minWidth: 0 }}>
-        {exampleQuestions.map(question => <ReportedQuestion key={question.id} question={question} showErrors={showErrors} showCorrectAnswers={showCorrectAnswers} showLetters={showLetters} showExplanation={showExplanation} showResult={showResult} disabled={disabled} readOnly={readOnly} checkMode={checkMode} />)}
+        {exampleQuestions.map(question => <QuestionAttempt key={question.id} question={question} showErrors={showErrors} showCorrectAnswers={showCorrectAnswers} showLetters={showLetters} showExplanation={showExplanation} showResult={showResult} disabled={disabled} readOnly={readOnly} checkMode={checkMode} />)}
       </Stack>
       <Paper component="aside" variant="outlined" aria-label={aria.controls} sx={{ width: { xs: '100%', md: 280 }, flex: '0 0 auto', p: 2, alignSelf: 'flex-start', position: { md: 'sticky' }, top: { md: 16 } }}>
         <Stack spacing={1}>

@@ -6,7 +6,7 @@ import CheckOutlined from '@mui/icons-material/CheckOutlined';
 import CloseOutlined from '@mui/icons-material/CloseOutlined';
 import { DndContext, DragOverlay, PointerSensor, useDraggable, useDroppable, useSensor, useSensors } from '@dnd-kit/core';
 import type { InteractionProps } from '../interaction-props';
-import type { Item } from '@types';
+import type { Item } from '@/components/widgets/questions/types';
 import { isGraded } from '../feedback';
 import { CorrectAnswerBlock } from '../helpers';
 import { uk } from '../messages';
