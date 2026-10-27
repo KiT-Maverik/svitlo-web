@@ -4,6 +4,12 @@ import { models_Skills_Ids } from './index.ids';
 export const chooseOperationAddSub_Skill_Data = buildSkillConfig({
   id: models_Skills_Ids.chooseOperationAddSub,
   name: {
+    "lt": "Sudėties ar atimties pasirinkimas",
+    "lv": "Saskaitīšanas vai atņemšanas izvēle",
+    "et": "Liitmise või lahutamise valimine",
+    "be": "Выбар складаньня або адніманьня",
+    "ka": "შეკრების ან გამოკლების არჩევა",
+    "kk": "Қосу немесе азайту амалын таңдау",
     en: "Choosing addition or subtraction",
     zh: "选择加法或减法",
     hi: "जोड़ या घटाव चुनना",

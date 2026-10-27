@@ -4,6 +4,12 @@ import { parts_Skills_Ids } from './index.ids';
 export const fractionsContext_Skill_Data = buildSkillConfig({
   id: parts_Skills_Ids.fractionsContext,
   name: {
+    "lt": "Vienetinės trupmenos dalies radimas",
+    "lv": "Vienības daļas atrašana no lieluma",
+    "et": "Ühikmurru osa leidmine hulgast",
+    "be": "Знаходжаньне адзінкавай долі колькасьці",
+    "ka": "რაოდენობის ერთეული წილადის პოვნა",
+    "kk": "Шаманың бірлік бөлшегін табу",
     en: "Finding a unit fraction of a quantity",
     zh: "求一个数量的单位分数",
     hi: "किसी मात्रा का एकक भिन्न निकालना",

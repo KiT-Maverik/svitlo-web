@@ -4,6 +4,12 @@ import { groups_Skills_Ids } from './index.ids';
 export const equalGroups_Skill_Data = buildSkillConfig({
   id: groups_Skills_Ids.equalGroups,
   name: {
+    "lt": "Vienodų grupių uždavinių sprendimas",
+    "lv": "Vienādu grupu uzdevumu risināšana",
+    "et": "Võrdsete rühmade ülesannete lahendamine",
+    "be": "Разьвязваньне задач на роўныя групы",
+    "ka": "თანაბარი ჯგუფების ამოცანების ამოხსნა",
+    "kk": "Тең топтарға арналған есептерді шығару",
     en: "Solving equal-group problems",
     zh: "解决等组问题",
     hi: "समान समूहों की समस्याएँ हल करना",

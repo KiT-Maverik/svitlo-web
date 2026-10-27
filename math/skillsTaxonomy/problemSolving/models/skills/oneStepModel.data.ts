@@ -4,6 +4,12 @@ import { models_Skills_Ids } from './index.ids';
 export const oneStepModel_Skill_Data = buildSkillConfig({
   id: models_Skills_Ids.oneStepModel,
   name: {
+    "lt": "Vieno veiksmo uždavinio modeliavimas",
+    "lv": "Viena soļa uzdevuma modelēšana",
+    "et": "Ühetehtelise ülesande modelleerimine",
+    "be": "Мадэляваньне аднаходавай задачы",
+    "ka": "ერთმოქმედებიანი ამოცანის მოდელირება",
+    "kk": "Бір амалдық есепті модельдеу",
     en: "Modeling a one-step problem",
     zh: "建立一步应用题模型",
     hi: "एक चरण की समस्या का मॉडल बनाना",

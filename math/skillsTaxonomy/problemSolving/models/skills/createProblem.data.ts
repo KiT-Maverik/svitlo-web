@@ -4,6 +4,12 @@ import { models_Skills_Ids } from './index.ids';
 export const createProblem_Skill_Data = buildSkillConfig({
   id: models_Skills_Ids.createProblem,
   name: {
+    "lt": "Tekstinio uždavinio kūrimas pagal modelį",
+    "lv": "Teksta uzdevuma veidošana pēc modeļa",
+    "et": "Tekstülesande koostamine mudeli põhjal",
+    "be": "Складаньне тэкставай задачы паводле мадэлі",
+    "ka": "მოდელის მიხედვით ტექსტური ამოცანის შედგენა",
+    "kk": "Модель бойынша мәтіндік есеп құрастыру",
     en: "Creating a word problem from a model",
     zh: "根据模型编写应用题",
     hi: "मॉडल से शब्द समस्या बनाना",
