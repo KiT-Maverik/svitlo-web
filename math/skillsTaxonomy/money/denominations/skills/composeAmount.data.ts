@@ -5,6 +5,12 @@ export const composeAmount_Skill_Data = buildSkillConfig({
   id: denominations_Skills_Ids.composeAmount,
   name: {
     en: "Composing a money amount",
+    "lt": "Pinigų sumos sudarymas",
+    "lv": "Naudas summas veidošana",
+    "et": "Rahasumma koostamine",
+    "be": "Складаньне грашовай сумы",
+    "ka": "ფულადი თანხის შედგენა",
+    "kk": "Ақша сомасын құрастыру",
     zh: "组合出指定金额",
     hi: "दी गई धनराशि बनाना",
     es: "Formar una cantidad de dinero",

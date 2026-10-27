@@ -5,6 +5,12 @@ export const unitPriceTotal_Skill_Data = buildSkillConfig({
   id: transactions_Skills_Ids.unitPriceTotal,
   name: {
     en: "Calculating total cost from unit price and quantity",
+    "lt": "Bendros kainos skaičiavimas pagal vieneto kainą ir kiekį",
+    "lv": "Kopējās cenas aprēķināšana pēc vienības cenas un daudzuma",
+    "et": "Kogumaksumuse arvutamine ühikuhinna ja koguse põhjal",
+    "be": "Разьлік агульнага кошту паводле цаны за адзінку і колькасьці",
+    "ka": "სრული ღირებულების გამოთვლა ერთეულის ფასისა და რაოდენობის მიხედვით",
+    "kk": "Бірлік бағасы мен саны бойынша жалпы құнды есептеу",
     zh: "根据单价和数量计算总价",
     hi: "इकाई मूल्य और मात्रा से कुल लागत निकालना",
     es: "Calcular el coste total a partir del precio unitario y la cantidad",

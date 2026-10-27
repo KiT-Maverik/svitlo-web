@@ -5,6 +5,12 @@ export const listOutcomes_Skill_Data = buildSkillConfig({
   id: events_Skills_Ids.listOutcomes,
   name: {
     en: "Listing possible outcomes of a simple random experiment",
+    "lt": "Paprasto atsitiktinio bandymo galimų baigčių išvardijimas",
+    "lv": "Vienkārša nejauša eksperimenta iespējamo iznākumu uzskaitīšana",
+    "et": "Lihtsa juhukatse võimalike tulemuste loetlemine",
+    "be": "Пералік магчымых вынікаў простага выпадковага досьледу",
+    "ka": "მარტივი შემთხვევითი ექსპერიმენტის შესაძლო შედეგების ჩამოთვლა",
+    "kk": "Қарапайым кездейсоқ тәжірибенің мүмкін нәтижелерін тізу",
     zh: "列出简单随机试验的可能结果",
     hi: "सरल यादृच्छिक प्रयोग के संभावित परिणाम बताना",
     es: "Enumerar los posibles resultados de un experimento aleatorio sencillo",

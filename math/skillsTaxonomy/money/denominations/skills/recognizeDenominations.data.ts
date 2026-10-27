@@ -5,6 +5,12 @@ export const recognizeDenominations_Skill_Data = buildSkillConfig({
   id: denominations_Skills_Ids.recognizeDenominations,
   name: {
     en: "Recognizing coin and banknote denominations",
+    "lt": "Monetų ir banknotų nominalų atpažinimas",
+    "lv": "Monētu un banknošu nominālu atpazīšana",
+    "et": "Müntide ja pangatähtede nimiväärtuste tundmine",
+    "be": "Распазнаваньне наміналаў манэтаў і банкнотаў",
+    "ka": "მონეტებისა და ბანკნოტების ნომინალების ამოცნობა",
+    "kk": "Монеталар мен банкноттардың номиналдарын тану",
     zh: "识别硬币和纸币的面额",
     hi: "सिक्कों और नोटों के मूल्यवर्ग पहचानना",
     es: "Reconocer denominaciones de monedas y billetes",

@@ -5,6 +5,12 @@ export const likelihoodLanguage_Skill_Data = buildSkillConfig({
   id: events_Skills_Ids.likelihoodLanguage,
   name: {
     en: "Comparing the likelihood of everyday events",
+    "lt": "Kasdienių įvykių tikimybės palyginimas",
+    "lv": "Ikdienas notikumu varbūtības salīdzināšana",
+    "et": "Igapäevaste sündmuste tõenäosuse võrdlemine",
+    "be": "Параўнаньне імавернасьці штодзённых падзеяў",
+    "ka": "ყოველდღიური მოვლენების ალბათობების შედარება",
+    "kk": "Күнделікті оқиғалардың ықтималдығын салыстыру",
     zh: "比较日常事件发生的可能性",
     hi: "रोज़मर्रा की घटनाओं की संभावना की तुलना करना",
     es: "Comparar la probabilidad de sucesos cotidianos",
