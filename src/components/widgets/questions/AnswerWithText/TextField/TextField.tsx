@@ -3,7 +3,7 @@ import { useId } from 'react';
 import { alpha, Box, InputAdornment, TextField as MuiTextField } from '@mui/material';
 import CheckCircle from '@mui/icons-material/CheckCircle';
 import Close from '@mui/icons-material/Close';
-import type { CheckResult } from '@types';
+import type { CheckResult } from '../../check-result';
 import { resultFeedback, type FeedbackVisibility } from '../../feedback';
 import { uk } from '../../messages';
 interface TextFieldProps extends FeedbackVisibility {

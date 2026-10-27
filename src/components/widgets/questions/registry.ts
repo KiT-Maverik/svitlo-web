@@ -1,7 +1,8 @@
 'use client';
 
 import type { ComponentType } from 'react';
-import type { AnswerMap, CheckResult, QuestionOf, QuestionType } from '@types';
+import type { AnswerMap, QuestionOf, QuestionType } from '@types';
+import type { CheckResult } from './check-result';
 import type { InteractionProps } from './interaction-props';
 import { checkers } from './check';
 import { BuildAnswerWithBlocks, FillBlanksWithBlocks, FillBlanksWithText, MatchBlocks, SelectMultipleAnswers, AnswerWithNumber, OrderSequence, AnswerWithText, SelectOneAnswer } from './interactions';

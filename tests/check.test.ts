@@ -1,8 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { checkAnswer, checkers, normalizeText, parseAnswerWithNumber } from '../src/components/widgets/questions/check';
+import { checkers, normalizeText, parseAnswerWithNumber } from '../src/components/widgets/questions/check';
 import { exampleQuestions } from '../src/components/widgets/questions/examples';
-import type { QuestionOf } from '../src/components/widgets/questions/model';
+import type { QuestionOf } from '@types';
 const [single, multi, matching, text, numeric, ordering, blocks] = exampleQuestions;
 // Type-narrow fixtures so each checker enforces its question/answer contract.
 assert.equal(single.type, 'single-select');
@@ -112,9 +112,8 @@ test('malformed authored definitions are invalid rather than incorrectly graded'
   assert.equal(checkers.matching({ ...matching, pairs: [matching.pairs[0], matching.pairs[0]] }, {}).status, 'invalid');
   assert.equal(checkers['block-builder']({ ...blocks, acceptedSequences: [['unknown']] }, []).status, 'invalid');
 });
-test('JSON round-trip preserves definitions and pure dispatcher works without React', () => {
+test('JSON round-trip preserves definitions', () => {
   assert.deepEqual(JSON.parse(JSON.stringify(exampleQuestions)), exampleQuestions);
-  assert.equal(checkAnswer({ question: n, answer: { type: 'numeric', value: '10' } }).status, 'correct');
   assert.equal(exampleQuestions.length, 9);
   assert.equal(text.type, 'short-text');
   assert.equal(numeric.type, 'numeric');

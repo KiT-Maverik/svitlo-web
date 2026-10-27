@@ -1,4 +1,5 @@
-import type { AnswerMap, CheckResult, FillBlankPart, Item, QuestionOf, QuestionType, Submission, TextNormalization } from '@types';
+import type { AnswerMap, FillBlankPart, Item, QuestionOf, QuestionType, TextNormalization } from '@types';
+import type { CheckResult } from './check-result';
 
 const empty: CheckResult = { status: 'incomplete', reason: 'empty' };
 const invalid = (reason: Extract<CheckResult, { status: 'invalid' }>['reason']): CheckResult => ({ status: 'invalid', reason });
@@ -112,16 +113,3 @@ export const checkers: { [K in QuestionType]: Checker<K> } = {
     return grade(blanks.every(id => q.acceptedAnswers[id].some(answer => normalizeText(answer, q.normalization) === normalizeText(value[id], q.normalization))));
   },
 };
-export function checkAnswer(s: Submission): CheckResult {
-  // Narrow on the nested discriminant through explicit guards (no casts / any).
-  if (s.question.type === 'single-select' && s.answer.type === 'single-select') return checkers['single-select'](s.question, s.answer.value);
-  if (s.question.type === 'multiple-select' && s.answer.type === 'multiple-select') return checkers['multiple-select'](s.question, s.answer.value);
-  if (s.question.type === 'matching' && s.answer.type === 'matching') return checkers.matching(s.question, s.answer.value);
-  if (s.question.type === 'short-text' && s.answer.type === 'short-text') return checkers['short-text'](s.question, s.answer.value);
-  if (s.question.type === 'numeric' && s.answer.type === 'numeric') return checkers.numeric(s.question, s.answer.value);
-  if (s.question.type === 'ordering' && s.answer.type === 'ordering') return checkers.ordering(s.question, s.answer.value);
-  if (s.question.type === 'block-builder' && s.answer.type === 'block-builder') return checkers['block-builder'](s.question, s.answer.value);
-  if (s.question.type === 'fill-blanks-drag' && s.answer.type === 'fill-blanks-drag') return checkers['fill-blanks-drag'](s.question, s.answer.value);
-  if (s.question.type === 'fill-blanks-text' && s.answer.type === 'fill-blanks-text') return checkers['fill-blanks-text'](s.question, s.answer.value);
-  return invalid('definition');
-}

@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { checkAnswer, checkers, normalizeText, parseAnswerWithNumber } from './check';
+import { checkers, normalizeText, parseAnswerWithNumber } from './check';
 import { Questions_fx } from './questions.unit.fx';
 
 describe('Widgets', () => {
@@ -175,15 +175,6 @@ describe('Widgets', () => {
         assert.deepEqual(checkers['fill-blanks-text'](q, { first: 'Alpha', second: '' }), { status: 'incomplete', reason: 'missing-items' });
         assert.deepEqual(checkers['fill-blanks-text'](q, { first: '', second: '' }), { status: 'incomplete', reason: 'empty' });
         assert.deepEqual(checkers['fill-blanks-text'](q, { foreign: 'Alpha' }), { status: 'invalid', reason: 'unknown-id' });
-      });
-    });
-    describe('Submission', () => {
-      it('should dispatch only a matching discriminant to the evaluator', () => {
-        const q = Questions_fx.make('numeric');
-        assert.deepEqual(checkAnswer({ question: q, answer: { type: 'numeric', value: '2.5' } }), { status: 'correct' });
-        // Runtime untrusted JSON may contain mismatched discriminants despite static TS contracts.
-        const foreign = JSON.parse(JSON.stringify({ question: q, answer: { type: 'short-text', value: '2.5' } }));
-        assert.deepEqual(checkAnswer(foreign), { status: 'invalid', reason: 'definition' });
       });
     });
   });
