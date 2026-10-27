@@ -6,6 +6,12 @@ export const logic_SkillGroup_Data = buildSkillGroupConfig({
   id: logic_SkillGroup_Ids.logic,
   name: {
     en: "Logical reasoning",
+    "lt": "Loginis samprotavimas",
+    "lv": "Loģiskā spriešana",
+    "et": "Loogiline arutlus",
+    "be": "Лягічнае разважаньне",
+    "ka": "ლოგიკური მსჯელობა",
+    "kk": "Логикалық пайымдау",
     zh: "逻辑推理",
     hi: "तार्किक चिंतन",
     es: "Razonamiento lógico",

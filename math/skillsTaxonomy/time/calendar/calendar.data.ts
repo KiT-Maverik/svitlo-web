@@ -6,6 +6,12 @@ export const calendar_SkillGroup_Data = buildSkillGroupConfig({
   id: calendar_SkillGroup_Ids.calendar,
   name: {
     en: "Calendar",
+    "lt": "Kalendorius",
+    "lv": "Kalendārs",
+    "et": "Kalender",
+    "be": "Каляндар",
+    "ka": "კალენდარი",
+    "kk": "Күнтізбе",
     zh: "日历",
     hi: "कैलेंडर",
     es: "Calendario",
