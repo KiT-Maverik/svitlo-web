@@ -5,6 +5,12 @@ export const decimeters_Skill_Data = buildSkillConfig({
   id: length_Skills_Ids.decimeters,
   name: {
     "en": "Converting between decimeters and centimeters",
+    "lt": "Decimetrų ir centimetrų keitimas",
+    "lv": "Decimetru un centimetru pārveidošana",
+    "et": "Detsimeetrite ja sentimeetrite teisendamine",
+    "be": "Перавод дэцымэтраў і сантымэтраў",
+    "ka": "დეციმეტრებისა და სანტიმეტრების გარდაქმნა",
+    "kk": "Дециметр мен сантиметрді түрлендіру",
     "zh": "分米与厘米的换算",
     "hi": "डेसीमीटर और सेंटीमीटर में रूपांतरण",
     "es": "Convertir entre decímetros y centímetros",

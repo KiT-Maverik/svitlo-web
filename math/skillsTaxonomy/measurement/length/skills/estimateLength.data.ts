@@ -5,6 +5,12 @@ export const estimateLength_Skill_Data = buildSkillConfig({
   id: length_Skills_Ids.estimateLength,
   name: {
     "en": "Estimating length and checking by measurement",
+    "lt": "Ilgio vertinimas ir tikrinimas matuojant",
+    "lv": "Garuma novērtēšana un pārbaude ar mērīšanu",
+    "et": "Pikkuse hindamine ja mõõtmisega kontrollimine",
+    "be": "Ацэнка даўжыні і праверка вымярэньнем",
+    "ka": "სიგრძის შეფასება და გაზომვით შემოწმება",
+    "kk": "Ұзындықты бағалау және өлшеумен тексеру",
     "zh": "估计长度并通过测量验证",
     "hi": "लंबाई का अनुमान लगाना और मापकर जाँचना",
     "es": "Estimar longitudes y comprobarlas midiendo",

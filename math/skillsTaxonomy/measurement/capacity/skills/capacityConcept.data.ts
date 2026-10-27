@@ -5,6 +5,12 @@ export const capacityConcept_Skill_Data = buildSkillConfig({
   id: capacity_Skills_Ids.capacityConcept,
   name: {
     "en": "Comparing container capacities by pouring or measuring",
+    "lt": "Indų talpos palyginimas pilstant ar matuojant",
+    "lv": "Trauku tilpuma salīdzināšana, pārlejot vai mērot",
+    "et": "Anumate mahutavuse võrdlemine valamise või mõõtmise abil",
+    "be": "Параўнаньне ўмяшчальнасьці пасудзінаў пераліваньнем ці вымярэньнем",
+    "ka": "ჭურჭლის ტევადობის შედარება გადასხმით ან გაზომვით",
+    "kk": "Ыдыстар сыйымдылығын құю немесе өлшеу арқылы салыстыру",
     "zh": "通过倒水或测量比较容器容量",
     "hi": "पानी उँडेलकर या मापकर बर्तनों की धारिता की तुलना",
     "es": "Comparar la capacidad de recipientes vertiendo o midiendo",

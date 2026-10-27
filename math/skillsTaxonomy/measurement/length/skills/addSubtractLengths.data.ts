@@ -5,6 +5,12 @@ export const addSubtractLengths_Skill_Data = buildSkillConfig({
   id: length_Skills_Ids.addSubtractLengths,
   name: {
     "en": "Adding and subtracting lengths in compatible units",
+    "lt": "Ilgių sudėtis ir atimtis suderinamais vienetais",
+    "lv": "Garumu saskaitīšana un atņemšana saderīgās mērvienībās",
+    "et": "Pikkuste liitmine ja lahutamine sobivates ühikutes",
+    "be": "Складаньне і адніманьне даўжыняў у сумяшчальных адзінках",
+    "ka": "სიგრძეების შეკრება და გამოკლება თავსებადი ერთეულებით",
+    "kk": "Сәйкес бірліктердегі ұзындықтарды қосу және азайту",
     "zh": "使用一致的单位加减长度",
     "hi": "संगत इकाइयों में लंबाइयों को जोड़ना और घटाना",
     "es": "Sumar y restar longitudes en unidades compatibles",
