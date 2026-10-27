@@ -36,3 +36,5 @@ The SVG images were imported by the project author from Wikipedia/Wikimedia-rela
 The original Belarusian (Pahonia), Polish (with coat of arms), and Ukrainian (PNG-embedded) SVG content was **replaced**, not redistributed in the published `public/flags/` folder.
 
 For future source imports, maintain a stable Commons file page URL, author, license, and required attribution in a separate registry when necessary. License details inside source SVG metadata are not inherently malicious, but are unnecessary for on-screen flag rendering; removing them does not remove a license obligation.
+
+The project's subsequently uploaded `Lesser_Coat_of_Arms_of_Ukraine.svg` (fully vector shield and trident) has been merged directly into `ua.svg`. The standalone source file was deleted from `public/flags/` to avoid duplication. Please verify the original coat-of-arms file page and usage terms independently.

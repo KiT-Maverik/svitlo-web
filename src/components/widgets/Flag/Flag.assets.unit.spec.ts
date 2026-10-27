@@ -35,6 +35,16 @@ describe('Static SVG flags', () => {
     }
   });
 
+  it('renders the Ukrainian coat of arms as vector geometry inside ua.svg', () => {
+    const svg = readFileSync(join(directory, 'ua.svg'), 'utf8');
+    expect(svg).toContain('id="ua-crest-side"');
+    expect(svg).toContain('href="#ua-crest-side"');
+    expect(svg).toContain('viewBox="0 0 3 2"');
+    expect(svg).toContain('transform="translate(1.5 .25)');
+    expect(svg).not.toMatch(/<(?:image|foreignObject)\\b|data:image\\//i);
+    expect(svgFiles).not.toContain('Lesser_Coat_of_Arms_of_Ukraine.svg');
+  });
+
   it.each([
     ['ua', 3 / 2],
     ['pl', 8 / 5],

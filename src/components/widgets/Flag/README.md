@@ -18,7 +18,7 @@ Every SVG here has a `viewBox` and no root absolute width/height. XML declaratio
 
 ## Noteworthy assets
 
-- `ua.svg`: rebuilt as two clean vectors; source SVG embedded a PNG and Inkscape metadata.
+- `ua.svg`: blue/yellow bands plus the centrally placed **vector** Lesser Coat of Arms of Ukraine, composited directly from the separately uploaded SVG; no embedded PNG, raster image, or second file request. This is a stylized flag-with-coat-of-arms design, rather than the plain official national flag.
 - `by.svg`: replaced the heavy Pahonia variant with the plain historical white-red-white flag used for `be-tarask`.
 - `pl.svg`: replaced the heavy coat-of-arms variant with the plain Polish national flag.
 - `br.svg`: **temporary simplified** vector derived from the former BrazilFlag component. The star field, white motto band and correct emblem details need a verified asset before considering it a faithful official Brazilian flag.
