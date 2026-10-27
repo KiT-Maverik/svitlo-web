@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { planning_Skills_Ids } from './index.ids';
+
+export const multipleSolutionStrategies_Skill_Data = buildSkillConfig({
+  id: planning_Skills_Ids.multipleSolutionStrategies,
+  name: {
+    en: "Comparing solution strategies",
+    zh: "比较解题策略",
+    hi: "समाधान की रणनीतियों की तुलना",
+    es: "Comparar estrategias de solución",
+    ar: "مقارنة استراتيجيات الحل",
+    fr: "Comparer des stratégies de résolution",
+    bn: "সমাধানের কৌশল তুলনা",
+    pt: "Comparar estratégias de resolução",
+    ur: "حل کی حکمت عملیوں کا موازنہ",
+    id: "Membandingkan strategi penyelesaian",
+    de: "Lösungsstrategien vergleichen",
+    ja: "解法を比較する",
+    ko: "풀이 전략 비교하기",
+    tr: "Çözüm stratejilerini karşılaştırma",
+    vi: "So sánh các cách giải",
+    ta: "தீர்வு முறைகளை ஒப்பிடுதல்",
+    te: "పరిష్కార పద్ధతులను పోల్చడం",
+    mr: "उपायांच्या पद्धतींची तुलना",
+    ms: "Membandingkan strategi penyelesaian",
+    he: "השוואת אסטרטגיות פתרון",
+    pl: "Porównywanie strategii rozwiązania",
+    uk: "Порівняння способів розв’язання",
+  },
+});

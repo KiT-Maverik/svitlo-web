@@ -6,4 +6,5 @@ export { geometry_SkillDomain_Ids } from './geometry/geometry.ids';
 export { measurement_SkillDomain_Ids } from './measurement/measurement.ids';
 export { numeration_SkillDomain_Ids } from './numeration/numeration.ids';
 export { probability_SkillDomain_Ids } from './probability/probability.ids';
+export { problemSolving_SkillDomain_Ids } from './problemSolving/problemSolving.ids';
 export { reasoning_SkillDomain_Ids } from './reasoning/reasoning.ids';
