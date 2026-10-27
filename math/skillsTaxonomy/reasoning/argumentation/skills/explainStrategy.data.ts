@@ -5,6 +5,12 @@ export const explainStrategy_Skill_Data = buildSkillConfig({
   id: argumentation_Skills_Ids.explainStrategy,
   name: {
     en: "Explaining a chosen calculation strategy",
+    "lt": "Pasirinktos skaičiavimo strategijos paaiškinimas",
+    "lv": "Izvēlētās aprēķina stratēģijas izskaidrošana",
+    "et": "Valitud arvutusstrateegia selgitamine",
+    "be": "Тлумачэньне абранай стратэгіі вылічэньня",
+    "ka": "არჩეული გამოთვლის სტრატეგიის ახსნა",
+    "kk": "Таңдалған есептеу стратегиясын түсіндіру",
     zh: "解释所选择的计算方法",
     hi: "चुनी गई गणना विधि समझाना",
     es: "Explicar la estrategia de cálculo elegida",

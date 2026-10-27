@@ -5,6 +5,12 @@ export const distinguishExampleRule_Skill_Data = buildSkillConfig({
   id: argumentation_Skills_Ids.distinguishExampleRule,
   name: {
     en: "Distinguishing a single example from a general rule",
+    "lt": "Atskiro pavyzdžio ir bendrosios taisyklės atskyrimas",
+    "lv": "Atsevišķa piemēra atšķiršana no vispārīga noteikuma",
+    "et": "Üksiknäite ja üldreegli eristamine",
+    "be": "Адрозьненьне асобнага прыкладу ад агульнага правіла",
+    "ka": "ცალკეული მაგალითისა და ზოგადი წესის გარჩევა",
+    "kk": "Жеке мысал мен жалпы ережені ажырату",
     zh: "区分单个例子和普遍规则",
     hi: "एक उदाहरण और सामान्य नियम में अंतर पहचानना",
     es: "Distinguir un ejemplo particular de una regla general",

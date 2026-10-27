@@ -5,6 +5,12 @@ export const checkReasonableness_Skill_Data = buildSkillConfig({
   id: verification_Skills_Ids.checkReasonableness,
   name: {
     en: "Assessing whether an answer is reasonable in context and magnitude",
+    "lt": "Atsakymo pagrįstumo pagal kontekstą ir dydį vertinimas",
+    "lv": "Atbildes ticamības vērtēšana pēc konteksta un lieluma",
+    "et": "Vastuse mõistlikkuse hindamine konteksti ja suurusjärgu järgi",
+    "be": "Ацэнка праўдападобнасьці адказу паводле кантэксту і велічыні",
+    "ka": "პასუხის გონივრულობის შეფასება კონტექსტისა და სიდიდის მიხედვით",
+    "kk": "Жауаптың қисындылығын мәнмәтін мен шама бойынша бағалау",
     zh: "结合情境和数量级判断答案是否合理",
     hi: "संदर्भ और परिमाण के अनुसार उत्तर की उचितता जाँचना",
     es: "Evaluar si una respuesta es razonable por su contexto y magnitud",

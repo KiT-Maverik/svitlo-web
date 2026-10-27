@@ -5,6 +5,12 @@ export const logicalElimination_Skill_Data = buildSkillConfig({
   id: logic_Skills_Ids.logicalElimination,
   name: {
     en: "Eliminating impossible options in a logical problem",
+    "lt": "Neįmanomų variantų atmetimas loginėje užduotyje",
+    "lv": "Neiespējamu variantu izslēgšana loģikas uzdevumā",
+    "et": "Võimatute valikute välistamine loogikaülesandes",
+    "be": "Выключэньне немагчымых варыянтаў у лягічнай задачы",
+    "ka": "ლოგიკურ ამოცანაში შეუძლებელი ვარიანტების გამორიცხვა",
+    "kk": "Логикалық есептегі мүмкін емес нұсқаларды алып тастау",
     zh: "在逻辑问题中排除不可能的选项",
     hi: "तार्किक प्रश्न में असंभव विकल्प हटाना",
     es: "Descartar opciones imposibles en un problema lógico",

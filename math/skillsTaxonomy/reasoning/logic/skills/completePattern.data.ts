@@ -5,6 +5,12 @@ export const completePattern_Skill_Data = buildSkillConfig({
   id: logic_Skills_Ids.completePattern,
   name: {
     en: "Completing a numerical or geometric pattern using its rule",
+    "lt": "Skaitinio ar geometrinio dėsningumo tęsimas pagal taisyklę",
+    "lv": "Skaitliskas vai ģeometriskas likumsakarības turpināšana pēc noteikuma",
+    "et": "Arvu- või kujundimustri jätkamine reegli järgi",
+    "be": "Працяг лікавай ці геамэтрычнай заканамернасьці паводле правіла",
+    "ka": "რიცხვითი ან გეომეტრიული კანონზომიერების წესით გაგრძელება",
+    "kk": "Сандық немесе геометриялық заңдылықты ереже бойынша жалғастыру",
     zh: "根据规律补全数字或几何图形序列",
     hi: "नियम के अनुसार संख्या या आकृति का पैटर्न पूरा करना",
     es: "Completar un patrón numérico o geométrico según su regla",
