@@ -1,9 +1,11 @@
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../../../Maps/assessmentMethodTaxonomy/index.ids';
 import type { Quiz_Config } from '@types';
 import { quiz_Questions_Ids } from './index.ids';
 import { createTextResource } from '@/utils';
 
 export const fastestMedium_Question_Data = {
   id: quiz_Questions_Ids.fastestMedium.question,
+  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.retrieval,
   type: 'select-one-answer',
   restrictions: [],
   content: [

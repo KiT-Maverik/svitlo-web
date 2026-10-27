@@ -1,3 +1,4 @@
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../Maps/assessmentMethodTaxonomy/index.ids';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type {
@@ -70,6 +71,7 @@ const quiz = (): Quiz_Config => ({
   questionBank: [
     {
       id: 'q1',
+      assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.application,
       type: 'answer-with-number',
       restrictions: [],
       content: [text('prompt', 'Number', 'Число')],
