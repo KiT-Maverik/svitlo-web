@@ -10,5 +10,9 @@
 - `math.measure.compare-mass` — `c2be8e28-ceb6-45c8-8c45-e8c39181c044`
 - `math.measure.capacity-concept` — `a57c2d50-cd76-4614-9e12-f1505ef7f05c`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повна методична специфікація ще потребує створення.
+
 ---
 [Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

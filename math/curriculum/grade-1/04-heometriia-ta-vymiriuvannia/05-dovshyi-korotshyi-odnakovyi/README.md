@@ -10,5 +10,9 @@
 - `math.measure.compare-length` — `49a806ae-35f5-4e85-afad-94418ac02e10`
 - `math.measure.nonstandard-length` — `8d0cccb9-f078-450a-af0a-b0ab6fbcbb26`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повна методична специфікація ще потребує створення.
+
 ---
 [Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
