@@ -10,5 +10,9 @@
 - `math.addsub.compensation` — `b5de45e3-da6d-4bd7-914b-1ac679cc359a`
 - `math.addsub.check-with-inverse` — `e336b8c9-07bf-44fa-beda-80663c3a87a4`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще потрібен.
+
 ---
 [Додавання, віднімання та рівняння](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

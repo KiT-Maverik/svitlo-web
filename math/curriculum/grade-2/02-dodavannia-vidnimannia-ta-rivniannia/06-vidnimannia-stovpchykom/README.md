@@ -9,5 +9,9 @@
 
 - `math.addsub.column-subtraction` — `6d74f20c-3203-4bcc-bad2-f356b480c6c0`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще потрібен.
+
 ---
 [Додавання, віднімання та рівняння](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

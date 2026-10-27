@@ -9,5 +9,9 @@
 
 - `math.addsub.add-subtract-tens` — `7f04c06b-e844-4dff-8417-d7a9b6fadaca`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще потрібен.
+
 ---
 [Додавання, віднімання та рівняння](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

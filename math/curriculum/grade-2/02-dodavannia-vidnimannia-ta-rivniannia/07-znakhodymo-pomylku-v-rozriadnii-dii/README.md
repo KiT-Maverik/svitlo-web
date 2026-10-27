@@ -10,5 +10,9 @@
 - `math.addsub.carry-error-detection` — `899918a4-df10-4a31-990a-787862f78127`
 - `math.addsub.borrow-error-detection` — `60e684d8-9823-48e8-8076-327b094af91b`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще потрібен.
+
 ---
 [Додавання, віднімання та рівняння](../README.md) · [Curriculum Grade 2](../../../grade-2.md)

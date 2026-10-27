@@ -9,5 +9,9 @@
 
 - `math.addsub.two-digit-borrow` — `5ef6de35-c2d8-4073-98d8-d8779eaa7875`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще потрібен.
+
 ---
 [Додавання, віднімання та рівняння](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
