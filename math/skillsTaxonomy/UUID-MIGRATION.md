@@ -83,3 +83,13 @@ Generated once for authoring; each UUID below must be copied as a **static strin
 | group | `math.geometry.perimeterArea` | `580b10f6-cb53-4db4-b74c-ffccef55564d` |
 | skill | `math.geomeasure.area-perimeter-contrast` | `1c1b7595-df14-4cb6-aa67-0831d6c4425d` |
 | skill | `math.geomeasure.perimeter-vs-area` | `96ab255c-a9f4-40aa-b072-e4f59790dfe5` |
+
+| domain | `math.money` | `fc6e1529-7c86-4141-b8b7-9df999eeaea5` |
+| group | `math.money.denominations` | `b2a96b3c-533d-4649-98e3-dd1e58566e66` |
+| skill | `math.money.recognize-denominations` | `2086fcee-1737-4cbb-aa46-34cfc4f3fe44` |
+| skill | `math.money.compose-amount` | `bb0e7ba7-3325-4dac-80cc-0070988cc5ef` |
+| skill | `math.money.compare-amounts` | `6ac377cf-4d67-4ef4-bdc7-4bb8a0895e81` |
+| group | `math.money.transactions` | `15c170e7-d86b-43d3-b08a-64a642f93f0b` |
+| skill | `math.money.calculate-change` | `56a4bd47-1221-489d-a11a-577d07bcb9af` |
+| skill | `math.money.unit-price-total` | `8d0f36a9-7994-427f-8a3a-fae3082c8837` |
+| skill | `math.money.budget-constraint` | `945f887d-4370-42b0-aefa-02a88a06f6d8` |
