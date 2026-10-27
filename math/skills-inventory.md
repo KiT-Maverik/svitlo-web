@@ -43,7 +43,7 @@
 | `math.money` | Гроші | 2 | 6 | — | 0/2 | 0/6 |
 | `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
 | `math.probability` | Ймовірність | 2 | 4 | — | 0/2 | 0/4 |
-| `math.problemSolving` | Задачі | 7 | 23 | — | 0/7 | 0/23 |
+| `math.problemSolving` | Задачі | 7 | 23 | **Complete** | 7/7 | 23/23 |
 | `math.reasoning` | Міркування | 4 | 11 | — | 0/4 | 0/11 |
 
 **Редакційні `math.*` ID тут — історичні/семантичні позначення; runtime ID наявних конфігів — незмінні UUID з [`UUID-MIGRATION.md`](./skillsTaxonomy/UUID-MIGRATION.md). Статус `Implemented` означає наявність окремого `Skill` data-файлу, а не лише посилання на його UUID у конфігу групи.**
@@ -812,7 +812,7 @@
 
 ### Domain 12. Задачі (23)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 7/7 Group configs + 23/23 individual Skills — **Complete**
 
 **ID:** `math.problemSolving`
 
@@ -820,87 +820,87 @@
 
 **ID:** `math.problemSolving.conditions`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.problems.identify-known-unknown` | Виділяти умову задачі, відомі величини й запитання | 1 | — |
-| `math.problems.find-extraneous-data` | Розпізнавати зайві дані в текстовій задачі | 2–3 | — |
-| `math.problems.find-missing-data` | Пояснювати, чому задачу неможливо розв’язати без додаткових даних | 2–3 | — |
+| `math.problems.identify-known-unknown` | Виділяти умову задачі, відомі величини й запитання | 1 | **Implemented** |
+| `math.problems.find-extraneous-data` | Розпізнавати зайві дані в текстовій задачі | 2–3 | **Implemented** |
+| `math.problems.find-missing-data` | Пояснювати, чому задачу неможливо розв’язати без додаткових даних | 2–3 | **Implemented** |
 
 #### SkillGroup 12.2. Моделі задач (4)
 
 **ID:** `math.problemSolving.models`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.problems.choose-operation-add-sub` | Вибирати додавання чи віднімання відповідно до змісту простої задачі | 1 | — |
-| `math.problems.choose-operation-mul-div` | Вибирати множення чи ділення за змістом рівних груп | 2 | — |
-| `math.problems.one-step-model` | Будувати малюнок, схему або вираз до одноходової задачі | 1–2 | — |
-| `math.problems.create-problem` | Складати текстову задачу за малюнком, таблицею чи виразом | 1–3 | — |
+| `math.problems.choose-operation-add-sub` | Вибирати додавання чи віднімання відповідно до змісту простої задачі | 1 | **Implemented** |
+| `math.problems.choose-operation-mul-div` | Вибирати множення чи ділення за змістом рівних груп | 2 | **Implemented** |
+| `math.problems.one-step-model` | Будувати малюнок, схему або вираз до одноходової задачі | 1–2 | **Implemented** |
+| `math.problems.create-problem` | Складати текстову задачу за малюнком, таблицею чи виразом | 1–3 | **Implemented** |
 
 #### SkillGroup 12.3. Планування розв’язання (5)
 
 **ID:** `math.problemSolving.planning`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.problems.two-step-plan` | Складати план розв’язання задачі на дві дії та пояснювати порядок | 2–3 | — |
-| `math.problems.three-step-plan` | Розв’язувати нескладні складені задачі на три дії | 3+ | — |
-| `math.problems.inverse-problem` | Складати та розв’язувати обернену задачу | 2–3 | — |
-| `math.problems.explain-answer-units` | Записувати відповідь із відповідними одиницями та перевіряти змістовну правдоподібність | 1–3 | — |
-| `math.problems.multiple-solution-strategies` | Порівнювати два правильні способи розв’язання тієї самої задачі | 2–3 | — |
+| `math.problems.two-step-plan` | Складати план розв’язання задачі на дві дії та пояснювати порядок | 2–3 | **Implemented** |
+| `math.problems.three-step-plan` | Розв’язувати нескладні складені задачі на три дії | 3+ | **Implemented** |
+| `math.problems.inverse-problem` | Складати та розв’язувати обернену задачу | 2–3 | **Implemented** |
+| `math.problems.explain-answer-units` | Записувати відповідь із відповідними одиницями та перевіряти змістовну правдоподібність | 1–3 | **Implemented** |
+| `math.problems.multiple-solution-strategies` | Порівнювати два правильні способи розв’язання тієї самої задачі | 2–3 | **Implemented** |
 
 #### SkillGroup 12.4. Задачі на порівняння (4)
 
 **ID:** `math.problemSolving.comparisons`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.problems.additive-comparison` | Розв’язувати задачі на «на скільки більше / менше» | 1–2 | — |
-| `math.problems.increase-decrease-number` | Розв’язувати задачі на збільшення або зменшення на задане число | 1–2 | — |
-| `math.problems.multiplicative-comparison` | Розв’язувати задачі на «у скільки разів більше / менше» | 3 | — |
-| `math.problems.increase-decrease-factor` | Розв’язувати задачі на збільшення або зменшення в задану кількість разів | 3 | — |
+| `math.problems.additive-comparison` | Розв’язувати задачі на «на скільки більше / менше» | 1–2 | **Implemented** |
+| `math.problems.increase-decrease-number` | Розв’язувати задачі на збільшення або зменшення на задане число | 1–2 | **Implemented** |
+| `math.problems.multiplicative-comparison` | Розв’язувати задачі на «у скільки разів більше / менше» | 3 | **Implemented** |
+| `math.problems.increase-decrease-factor` | Розв’язувати задачі на збільшення або зменшення в задану кількість разів | 3 | **Implemented** |
 
 #### SkillGroup 12.5. Задачі на частини (2)
 
 **ID:** `math.problemSolving.parts`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.problems.part-whole-addsub` | Розв’язувати задачі на ціле й частини та складати обернені задачі | 1–2 | — |
-| `math.problems.fractions-context` | Розв’язувати сюжетні задачі на знаходження одиничної частини кількості | 3 | — |
+| `math.problems.part-whole-addsub` | Розв’язувати задачі на ціле й частини та складати обернені задачі | 1–2 | **Implemented** |
+| `math.problems.fractions-context` | Розв’язувати сюжетні задачі на знаходження одиничної частини кількості | 3 | **Implemented** |
 
 #### SkillGroup 12.6. Задачі на групи (2)
 
 **ID:** `math.problemSolving.groups`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.problems.correspondence-combinations` | Лічити всі прості комбінації вибору по одному з двох наборів (одяг, меню тощо) | 3 | — |
-| `math.problems.equal-groups` | Розв’язувати задачі на кількість груп, розмір групи та загальну кількість | 2–3 | — |
+| `math.problems.correspondence-combinations` | Лічити всі прості комбінації вибору по одному з двох наборів (одяг, меню тощо) | 3 | **Implemented** |
+| `math.problems.equal-groups` | Розв’язувати задачі на кількість груп, розмір групи та загальну кількість | 2–3 | **Implemented** |
 
 #### SkillGroup 12.7. Задачі на величини (3)
 
 **ID:** `math.problemSolving.quantities`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.problems.work-rate-time` | Використовувати зв'язок продуктивність × час = виконаний обсяг у простих задачах | 3 | — |
-| `math.problems.price-quantity-cost` | Моделювати задачі на вартість через зв’язок ціни, кількості та суми | 3 | — |
-| `math.problems.measurement-context` | Моделювати задачі на довжину, масу, місткість і час | 2–3 | — |
+| `math.problems.work-rate-time` | Використовувати зв'язок продуктивність × час = виконаний обсяг у простих задачах | 3 | **Implemented** |
+| `math.problems.price-quantity-cost` | Моделювати задачі на вартість через зв’язок ціни, кількості та суми | 3 | **Implemented** |
+| `math.problems.measurement-context` | Моделювати задачі на довжину, масу, місткість і час | 2–3 | **Implemented** |
 
 ### Domain 13. Міркування (11)
 
