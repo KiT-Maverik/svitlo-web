@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math');
 const taxonomy = join(root, 'skillsTaxonomy');
@@ -19,7 +19,7 @@ const groups = {
   area: ['compositeArea', 'areaAsCovering', 'countUnitSquares', 'rectangleAreaModel'],
   perimeterArea: ['areaPerimeterContrast', 'perimeterVsArea'],
 } as const;
-const languageCodes = DEFAULT_SUPPORTED_LANGUAGES.map(language => language.language);
+const languageCodes = Object.keys(assertSupportedTranslations(readFileSync(join(geometry, 'geometry.data.ts'), 'utf8'), 'geometry'));
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
 const read = (path: string) => readFileSync(path, 'utf8');
@@ -30,15 +30,12 @@ const lines = (path: string) =>
     .map(line => line.trim())
     .filter(Boolean);
 
-function names(source: string): Record<string, string> {
-  const block = source.match(/\bname:\s*\{([\s\S]*?)\n\s{2}\}/)?.[1];
-  assert.ok(block, 'Missing localized name dictionary');
-  const pairs = Array.from(block.matchAll(/^\s+(\w+):\s*("(?:\\.|[^"\\])*"),?$/gm));
-  return Object.fromEntries(pairs.map(([, key, value]) => [key, JSON.parse(value) as string]));
+function names(source: string, label: string): Record<string, string> {
+  return assertSupportedTranslations(source, label);
 }
 
 function validTranslations(path: string): Record<string, string> {
-  const result = names(read(path));
+  const result = names(read(path), path);
   assert.deepEqual(Object.keys(result).sort(), [...languageCodes].sort(), path);
   for (const value of Object.values(result)) {
     assert.ok(value.trim().length > 0, path);

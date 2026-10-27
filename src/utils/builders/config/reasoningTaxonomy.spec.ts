@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(root, 'reasoning');
@@ -77,18 +77,9 @@ describe('Reasoning taxonomy integrity', () => {
         ...skills.map(skill => join(domain, group, 'skills', `${skill}.data.ts`)),
       ]),
     ];
-    const expected = DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language);
     assert.equal(dataFiles.length, 16);
     for (const path of dataFiles) {
-      const keys = [...read(path).matchAll(/^    ([a-z]{2}): (.+),$/gm)];
-      assert.deepEqual(
-        keys.map(([, key]) => key),
-        expected,
-        path,
-      );
-      for (const [, , value] of keys) {
-        assert.notEqual(JSON.parse(value).trim(), '', path);
-      }
+      assertSupportedTranslations(read(path), path);
     }
   });
 });

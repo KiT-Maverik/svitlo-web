@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(root, 'measurement');
@@ -57,12 +58,7 @@ function read(path: string): string {
 }
 
 function getNames(path: string): Record<string, string> {
-  const match = read(path).match(/name:\s*(\{[\s\S]*?\})\s*,/);
-  assert.ok(match, 'Missing names: ' + path);
-  const result = JSON.parse(match[1]) as Record<string, string>;
-  assert.deepEqual(Object.keys(result), locales);
-  assert.ok(Object.values(result).every(text => typeof text === 'string' && text.trim().length > 0));
-  return result;
+  return assertSupportedTranslations(read(path), path);
 }
 
 function ids(path: string): Record<string, string> {
@@ -136,8 +132,8 @@ describe('Measurement taxonomy', () => {
     assert.equal(seen.size, 27);
   });
 
-  it('provides all 22 translations with distinct Group and Skill names', () => {
-    assert.equal(locales.length, 22);
+  it('provides all supported translations with distinct Group and Skill names', () => {
+    assert.equal(locales.length, DEFAULT_SUPPORTED_LANGUAGES.length);
     getNames(join(domain, 'measurement.data.ts'));
     for (const [group, skills] of Object.entries(names)) {
       const parent = getNames(join(domain, group, group + '.data.ts'));

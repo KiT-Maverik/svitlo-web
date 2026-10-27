@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const numeration = join(root, 'numeration');
@@ -38,17 +39,7 @@ const languages = DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language);
 
 /** Inspect authored configurations without importing TS modules through unresolved @/ aliases. */
 function localizedNames(path: string): Record<string, string> {
-  const content = source(path);
-  const name = content.match(/\bname: \{\n([\s\S]*?)\n  \},/);
-  assert.ok(name, `Missing localized name in ${path}`);
-  const pairs = [...name[1].matchAll(/^\s{4}([a-z]{2}): "((?:\\.|[^"\\])*)",?$/gm)];
-  assert.equal(pairs.length, languages.length, `Wrong translation count in ${path}`);
-  const values = Object.fromEntries(pairs.map(([, language, value]) => [language, value]));
-  assert.deepEqual(Object.keys(values).sort(), [...languages].sort(), `Wrong locale set in ${path}`);
-  for (const language of languages) {
-    assert.ok(values[language]?.trim(), `Blank ${language} in ${path}`);
-  }
-  return values;
+  return assertSupportedTranslations(source(path), path);
 }
 
 describe('Natural Numbers taxonomy integrity', () => {
@@ -98,7 +89,7 @@ describe('Natural Numbers taxonomy integrity', () => {
     }
   });
 
-  it('provides all 22 localized names and distinct parent/child names', () => {
+  it('provides all supported localized names and distinct parent/child names', () => {
     localizedNames(join(numeration, 'numeration.data.ts'));
     for (const [group, skills] of Object.entries(groupSkills)) {
       const dir = join(numeration, group);

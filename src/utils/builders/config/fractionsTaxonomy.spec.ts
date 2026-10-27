@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const base = join(root, 'fractions');
@@ -27,15 +27,10 @@ const groups = {
 } as const;
 
 const read = (...segments: string[]) => readFileSync(join(...segments), 'utf8');
-const localeKeys = DEFAULT_SUPPORTED_LANGUAGES.map(entry => entry.language).sort();
 const uuidPattern = /[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}/gi;
 
 function checkLocales(source: string, label: string): void {
-  const actual = [...source.matchAll(/^\s+([a-z]{2}): "([^"]+)",$/gm)];
-  assert.deepEqual(actual.map(match => match[1]).sort(), localeKeys, label + ' localizations');
-  for (const [, lang, value] of actual) {
-    assert.ok(value.trim(), label + ': empty ' + lang + ' translation');
-  }
+  assertSupportedTranslations(source, label);
 }
 
 function getStaticIds(source: string): Readonly<Record<string, string>> {

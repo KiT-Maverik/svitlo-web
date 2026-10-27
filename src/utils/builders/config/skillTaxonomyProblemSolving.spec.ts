@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'problemSolving');
 const read = (...path: string[]): string => readFileSync(join(root, ...path), 'utf8');
@@ -18,16 +18,7 @@ const groups = {
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
 function checkNames(contents: string): void {
-  const nameBlock = contents.match(/name:\s*\{([\s\S]*?)\n\s*\},/);
-  assert.ok(nameBlock, 'Missing localized name dictionary');
-  const entries = [...nameBlock[1].matchAll(/^\s*(\w+):\s*"((?:[^"\\]|\\.)*)",?$/gm)];
-  assert.deepEqual(
-    entries.map(([, locale]) => locale).sort(),
-    DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language).sort(),
-  );
-  for (const [, language, localized] of entries) {
-    assert.ok(localized.trim(), `Empty translation: ${language}`);
-  }
+  assertSupportedTranslations(contents, 'problem solving');
 }
 
 function idEntries(contents: string): Map<string, string> {
@@ -86,7 +77,7 @@ describe('Problem Solving taxonomy implementation', () => {
     assert.doesNotMatch(groupReferences, /\.data/);
   });
 
-  it('has all 22 translations in every Domain, Group and Skill', () => {
+  it('has all supported translations in every Domain, Group and Skill', () => {
     checkNames(read('problemSolving.data.ts'));
     for (const [group, skills] of Object.entries(groups)) {
       checkNames(read(group, `${group}.data.ts`));

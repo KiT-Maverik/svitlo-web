@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'time');
 
@@ -25,16 +26,7 @@ function ownIds(source: string): Record<string, string> {
 }
 
 function names(source: string): Record<string, string> {
-  const match = source.match(/  name: \{\n([\s\S]*?)\n  \},/);
-  assert.ok(match, 'Expected a localized name dictionary');
-
-  return Object.fromEntries(
-    match[1].split('\n').map(line => {
-      const item = line.match(/^    ([a-z]{2}): ("(?:[^"\\]|\\.)*"),$/);
-      assert.ok(item, `Invalid locale definition: ${line}`);
-      return [item[1], JSON.parse(item[2]) as string];
-    }),
-  );
+  return assertSupportedTranslations(source, 'time taxonomy');
 }
 
 describe('Time skill taxonomy', () => {
@@ -89,7 +81,7 @@ describe('Time skill taxonomy', () => {
     }
   });
 
-  it('provides all 22 supported locales and distinct parent/child names', () => {
+  it('provides all supported locales and distinct parent/child names', () => {
     const required = DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language);
     const domainNames = names(read('time.data.ts'));
     assert.deepEqual(Object.keys(domainNames), required);
