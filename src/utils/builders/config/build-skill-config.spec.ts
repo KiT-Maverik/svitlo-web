@@ -1,0 +1,75 @@
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import type { Skill_Config } from '../../../types/content/skill.types';
+import { buildSkillConfig } from './build-skill-config.utils';
+
+const allNames = () => Object.fromEntries(
+  DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => [locale, `Skill in ${locale}`]),
+) as Skill_Config['name'];
+
+const skill = (): Skill_Config => ({
+  id: 'math.multiply.by-2',
+  name: allNames(),
+});
+
+describe('Utils / builders / config / buildSkillConfig', () => {
+  it('preserves the config and all supported locales', () => {
+    const input = skill();
+    const result = buildSkillConfig(input);
+    assert.strictEqual(result, input);
+    assert.equal(result.id, input.id);
+    assert.equal(Object.keys(result.name).length, DEFAULT_SUPPORTED_LANGUAGES.length);
+    assert.deepEqual(result.name, input.name);
+  });
+
+  it('does not mutate the input or its name dictionary', () => {
+    const input = skill();
+    const before = structuredClone(input);
+    buildSkillConfig(input);
+    assert.deepEqual(input, before);
+  });
+
+  it('rejects missing, blank and non-string identifiers at the runtime boundary', () => {
+    for (const id of ['', '  ', null, undefined, 123]) {
+      const invalid = { ...skill(), id } as unknown as Skill_Config;
+      assert.throws(() => buildSkillConfig(invalid), /Skill id/);
+    }
+  });
+
+  it('rejects a missing or malformed name dictionary', () => {
+    for (const name of [undefined, null, [], 'name']) {
+      const invalid = { ...skill(), name } as unknown as Skill_Config;
+      assert.throws(() => buildSkillConfig(invalid), /Skill name/);
+    }
+  });
+
+  it('rejects any missing required locale', () => {
+    for (const { locale } of DEFAULT_SUPPORTED_LANGUAGES) {
+      const names: Record<string, string> = { ...allNames() };
+      delete names[locale];
+      assert.throws(
+        () => buildSkillConfig({ id: skill().id, name: names } as unknown as Skill_Config),
+        new RegExp(locale),
+      );
+    }
+  });
+
+  it('rejects blank and non-string localized names', () => {
+    for (const value of ['', '  ', null, 5]) {
+      const invalid = { ...allNames(), 'uk-UA': value };
+      assert.throws(
+        () => buildSkillConfig({ id: skill().id, name: invalid } as unknown as Skill_Config),
+        /uk-UA/,
+      );
+    }
+  });
+
+  it('rejects unsupported extra locale keys', () => {
+    const names = { ...allNames(), 'xx-XX': 'Unknown' };
+    assert.throws(
+      () => buildSkillConfig({ id: skill().id, name: names }),
+      /unsupported locales: xx-XX/,
+    );
+  });
+});

@@ -38,3 +38,4 @@ export type {
   SelectOneAnswer_Question,
   SelectOneAnswer_Question_Config,
 } from './content/question.types';
+export type * from './content/skill.types';
