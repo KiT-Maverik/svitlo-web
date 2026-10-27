@@ -1,7 +1,9 @@
 import { buildSkillConfig } from '@/utils';
 
+import { steps_Skills_Ids } from './index.ids';
+
 export const countBy2 = buildSkillConfig({
-  id: 'math.count.count-by-2',
+  id: steps_Skills_Ids.countBy2,
   name: {
     "en-US": "Counting in steps of 2",
     "zh-Hans-CN": "每次按2递增计数",

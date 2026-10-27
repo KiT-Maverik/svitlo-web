@@ -1,7 +1,10 @@
 import { buildSkillGroupConfig } from '@/utils';
 
+import {steps_Ids} from "./steps.ids";
+import {steps_Skills_Ids} from "./skills/index.ids";
+
 export const stepsGroup = buildSkillGroupConfig({
-  id: "math.counting.steps",
+  id: steps_Ids.steps,
   name: {
     "en-US": "Skip counting",
     "zh-Hans-CN": "跳数计数",
@@ -26,10 +29,5 @@ export const stepsGroup = buildSkillGroupConfig({
     "pl-PL": "Liczenie skokowe",
     "uk-UA": "Крокова лічба",
   },
-  skillIds: [
-    "math.count.count-by-2",
-    "math.count.count-by-5",
-    "math.count.count-by-10",
-    "math.count.count-by-100",
-  ],
+  skillIds: steps_Skills_Ids,
 });

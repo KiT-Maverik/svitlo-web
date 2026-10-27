@@ -1,7 +1,9 @@
 import { buildSkillConfig } from '@/utils';
 
+import { steps_Skills_Ids } from './index.ids';
+
 export const countBy5 = buildSkillConfig({
-  id: 'math.count.count-by-5',
+  id: steps_Skills_Ids.countBy5,
   name: {
     "en-US": "Counting in steps of 5",
     "zh-Hans-CN": "每次按5递增计数",

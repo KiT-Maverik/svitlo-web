@@ -124,10 +124,10 @@ Domain, Group і Skill описують **різні рівні абстракц
 math/skills/
   arithmetic/
     arithmetic.data.ts              # SkillDomain
-    index.ts
+    index.data.ts
     addition/
       addition.data.ts              # SkillGroup
-      index.ts
+      index.data.ts
       crossTenAddition/
         crossTenAddition.data.ts    # Skill
     additionSubtraction/
