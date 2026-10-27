@@ -7,6 +7,6 @@ import { validateSkillReferences } from './validateSkillReferences.utils';
 export function buildSkillGroupConfig<const T extends SkillGroup_Config>(config: T) {
   validateSkillConfig(config);
   validateSkillReferences('SkillGroup', 'skillIds', config.skillIds);
-  const collection = 'skillGroup' satisfies Collection;
+  const collection: Extract<Collection, 'skillGroup'> = 'skillGroup';
   return { ...config, collection } as const;
 }
