@@ -22,7 +22,7 @@
 
 ## Інвентар навичок
 
-Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **15 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
+Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **42 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
 
 ## Семантична таксономія (v0.6)
 
@@ -33,7 +33,7 @@
 | Domain ID | Домен | Груп | Навичок | Domain config | Group configs | Skill files |
 |---|---|---:|---:|---|---:|---:|
 | `math.counting` | Лічба | 5 | 15 | **Implemented** | 5/5 | 15/15 |
-| `math.numeration` | Натуральні числа | 5 | 27 | — | 0/5 | 0/27 |
+| `math.numeration` | Натуральні числа | 5 | 27 | **Implemented** | 5/5 | 27/27 |
 | `math.fractions` | Дроби | 4 | 19 | — | 0/4 | 0/19 |
 | `math.arithmetic` | Арифметика | 5 | 79 | **Implemented** | 3/5 | 0/79 |
 | `math.algebra` | Алгебра | 5 | 17 | — | 0/5 | 0/17 |
@@ -122,7 +122,7 @@
 
 ### Domain 2. Натуральні числа (27)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 5/5 Group configs + 27/27 individual Skills — **Complete**
 
 **ID:** `math.numeration`
 
@@ -130,73 +130,73 @@
 
 **ID:** `math.numeration.notation`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.numbers.digits-0-9` | Розпізнавати та записувати цифри 0–9; відрізняти цифру від числа | 1 | — |
-| `math.numbers.read-write-20` | Читати, записувати й співвідносити з кількістю числа 0–20 | 1 | — |
-| `math.numbers.read-write-100` | Читати й записувати числа в межах 100 | 1–2 | — |
-| `math.numbers.read-write-1000` | Читати й записувати трицифрові числа, включно з нулями всередині запису | 2–3 | — |
+| `math.numbers.digits-0-9` | Розпізнавати та записувати цифри 0–9; відрізняти цифру від числа | 1 | **Implemented** |
+| `math.numbers.read-write-20` | Читати, записувати й співвідносити з кількістю числа 0–20 | 1 | **Implemented** |
+| `math.numbers.read-write-100` | Читати й записувати числа в межах 100 | 1–2 | **Implemented** |
+| `math.numbers.read-write-1000` | Читати й записувати трицифрові числа, включно з нулями всередині запису | 2–3 | **Implemented** |
 
 #### SkillGroup 2.2. Розрядність (11)
 
 **ID:** `math.numeration.placeValue`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.numbers.flexible-partition` | Представляти число різними рівносильними розбиттями, не лише за стандартними розрядами (146 = 130 + 16) | 2–3 | — |
-| `math.numbers.total-tens-in-number` | Визначати загальну кількість повних десятків чи сотень у трицифровому числі | 3 | — |
-| `math.numbers.make-ten` | Групувати десять одиниць в один десяток і виконувати зворотне розгрупування | 1 | — |
-| `math.numbers.tens-ones` | Складати й розкладати двоцифрове число на десятки та одиниці | 1–2 | — |
-| `math.numbers.make-hundred` | Пояснювати, що десять десятків утворюють одну сотню | 2 | — |
-| `math.numbers.hundreds-tens-ones` | Складати й розкладати трицифрове число на сотні, десятки й одиниці | 2–3 | — |
-| `math.numbers.place-value` | Визначати значення цифри залежно від її розряду | 2 | — |
-| `math.numbers.zero-placeholder` | Пояснювати роль нуля як позначення відсутнього розряду | 2–3 | — |
-| `math.numbers.expanded-form` | Записувати число як суму розрядних доданків і відновлювати його з цієї суми | 2–3 | — |
-| `math.numbers.regroup-place-values` | Обмінювати одну сотню на десять десятків, а десяток — на десять одиниць | 2–3 | — |
-| `math.numbers.multiple-representations` | Співвідносити запис числа, модель блоками, числову пряму та кількість предметів | 1–3 | — |
+| `math.numbers.flexible-partition` | Представляти число різними рівносильними розбиттями, не лише за стандартними розрядами (146 = 130 + 16) | 2–3 | **Implemented** |
+| `math.numbers.total-tens-in-number` | Визначати загальну кількість повних десятків чи сотень у трицифровому числі | 3 | **Implemented** |
+| `math.numbers.make-ten` | Групувати десять одиниць в один десяток і виконувати зворотне розгрупування | 1 | **Implemented** |
+| `math.numbers.tens-ones` | Складати й розкладати двоцифрове число на десятки та одиниці | 1–2 | **Implemented** |
+| `math.numbers.make-hundred` | Пояснювати, що десять десятків утворюють одну сотню | 2 | **Implemented** |
+| `math.numbers.hundreds-tens-ones` | Складати й розкладати трицифрове число на сотні, десятки й одиниці | 2–3 | **Implemented** |
+| `math.numbers.place-value` | Визначати значення цифри залежно від її розряду | 2 | **Implemented** |
+| `math.numbers.zero-placeholder` | Пояснювати роль нуля як позначення відсутнього розряду | 2–3 | **Implemented** |
+| `math.numbers.expanded-form` | Записувати число як суму розрядних доданків і відновлювати його з цієї суми | 2–3 | **Implemented** |
+| `math.numbers.regroup-place-values` | Обмінювати одну сотню на десять десятків, а десяток — на десять одиниць | 2–3 | **Implemented** |
+| `math.numbers.multiple-representations` | Співвідносити запис числа, модель блоками, числову пряму та кількість предметів | 1–3 | **Implemented** |
 
 #### SkillGroup 2.3. Порівняння чисел (5)
 
 **ID:** `math.numeration.comparison`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.order.more-less-equal` | Визначати «більше», «менше», «дорівнює» на конкретних кількостях | 1 | — |
-| `math.order.comparison-symbols` | Правильно використовувати знаки <, >, = для чисел | 1 | — |
-| `math.order.order-20` | Розташовувати числа 0–20 за зростанням або спаданням | 1 | — |
-| `math.order.order-100` | Порівнювати й впорядковувати двоцифрові числа за розрядами | 1–2 | — |
-| `math.order.order-1000` | Порівнювати й упорядковувати трицифрові числа за розрядами | 2–3 | — |
+| `math.order.more-less-equal` | Визначати «більше», «менше», «дорівнює» на конкретних кількостях | 1 | **Implemented** |
+| `math.order.comparison-symbols` | Правильно використовувати знаки <, >, = для чисел | 1 | **Implemented** |
+| `math.order.order-20` | Розташовувати числа 0–20 за зростанням або спаданням | 1 | **Implemented** |
+| `math.order.order-100` | Порівнювати й впорядковувати двоцифрові числа за розрядами | 1–2 | **Implemented** |
+| `math.order.order-1000` | Порівнювати й упорядковувати трицифрові числа за розрядами | 2–3 | **Implemented** |
 
 #### SkillGroup 2.4. Числова пряма (4)
 
 **ID:** `math.numeration.numberLine`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.order.before-after-between` | Знаходити попереднє, наступне та проміжні числа в заданому діапазоні | 1–2 | — |
-| `math.order.number-line-20` | Розміщувати числа та знаходити сусідів на числовій прямій до 20 | 1 | — |
-| `math.order.number-line-1000` | Розміщувати числа на числовій прямій із відповідним масштабом до 1000 | 2–3 | — |
-| `math.order.distance-on-line` | Визначати відстань між цілими числами на числовій прямій | 2–3 | — |
+| `math.order.before-after-between` | Знаходити попереднє, наступне та проміжні числа в заданому діапазоні | 1–2 | **Implemented** |
+| `math.order.number-line-20` | Розміщувати числа та знаходити сусідів на числовій прямій до 20 | 1 | **Implemented** |
+| `math.order.number-line-1000` | Розміщувати числа на числовій прямій із відповідним масштабом до 1000 | 2–3 | **Implemented** |
+| `math.order.distance-on-line` | Визначати відстань між цілими числами на числовій прямій | 2–3 | **Implemented** |
 
 #### SkillGroup 2.5. Оцінювання чисел (3)
 
 **ID:** `math.numeration.estimation`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.order.round-to-ten` | Округлювати числа до найближчого десятка й пояснювати вибір | 2–3 | — |
-| `math.order.round-to-hundred` | Округлювати числа до найближчої сотні й оцінювати похибку | 3+ | — |
-| `math.order.estimate-quantity` | Оцінювати приблизну кількість предметів та перевіряти оцінку підрахунком | 1–3 | — |
+| `math.order.round-to-ten` | Округлювати числа до найближчого десятка й пояснювати вибір | 2–3 | **Implemented** |
+| `math.order.round-to-hundred` | Округлювати числа до найближчої сотні й оцінювати похибку | 3+ | **Implemented** |
+| `math.order.estimate-quantity` | Оцінювати приблизну кількість предметів та перевіряти оцінку підрахунком | 1–3 | **Implemented** |
 
 ### Domain 3. Дроби (19)
 
