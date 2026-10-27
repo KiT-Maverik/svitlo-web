@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math/skillsTaxonomy/algebra');
+const root = join(process.cwd(), 'src/math/skillsTaxonomy/algebra');
 const groupSkills = {
   expressions: [
     'readNumericExpressions',

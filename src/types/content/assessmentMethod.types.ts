@@ -1,5 +1,5 @@
 import type { LanguageCode } from '../languages';
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../math/assessmentMethodTaxonomy/index.ids';
+import { assessmentMethods_AssessmentMethod_Ids } from '../../math/assessmentMethodTaxonomy/index.ids';
 
 export type AssessmentMethodKey = keyof typeof assessmentMethods_AssessmentMethod_Ids;
 /** Restrict authored questions to the 16 stable Assessment Method UUIDs. */

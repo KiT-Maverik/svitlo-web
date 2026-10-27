@@ -4,9 +4,9 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(root, 'measurement');
-const inventory = readFileSync(join(process.cwd(), 'math', 'skills-inventory.md'), 'utf8');
+const inventory = readFileSync(join(process.cwd(), 'src', 'math', 'skills-inventory.md'), 'utf8');
 const migration = readFileSync(join(root, 'UUID-MIGRATION.md'), 'utf8');
 const locales = DEFAULT_SUPPORTED_LANGUAGES.map(item => item.language);
 const names = {

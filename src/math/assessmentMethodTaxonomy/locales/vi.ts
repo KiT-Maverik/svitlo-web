@@ -1,4 +1,4 @@
-import type { AssessmentMethodKey } from '../../../src/types/content/assessmentMethod.types';
+import type { AssessmentMethodKey } from '../../../types/content/assessmentMethod.types';
 
 export const vi_AssessmentMethod_Locale = {
   retrieval: {

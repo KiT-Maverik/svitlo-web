@@ -4,7 +4,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(root, 'reasoning');
 const groups = {
   argumentation: [

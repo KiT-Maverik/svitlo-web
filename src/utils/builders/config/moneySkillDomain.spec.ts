@@ -4,7 +4,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const taxonomy = join(process.cwd(), 'math', 'skillsTaxonomy');
+const taxonomy = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const root = join(taxonomy, 'money');
 const read = (path: string) => readFileSync(join(root, path), 'utf8');
 const groups = {

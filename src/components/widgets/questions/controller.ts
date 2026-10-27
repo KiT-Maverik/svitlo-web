@@ -106,9 +106,7 @@ export function createQuestionController<K extends QuestionType>(
       const attemptNumber = state.attemptNumber + 1;
       // The default UI starts a blank attempt; custom slots may preserve the answer for editing.
       commit(
-        clearAnswer
-          ? { ...fresh(), attemptNumber }
-          : { ...state, result: null, hasChecked: false, attemptNumber },
+        clearAnswer ? { ...fresh(), attemptNumber } : { ...state, result: null, hasChecked: false, attemptNumber },
       );
       options.onRetry?.(event());
     },

@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const numeration = join(root, 'numeration');
 const groupSkills = {
   notation: ['digits09', 'readWrite20', 'readWrite100', 'readWrite1000'],
@@ -156,7 +156,7 @@ describe('Natural Numbers taxonomy integrity', () => {
   });
 
   it('lists the 27 actual Skill configurations as Implemented in the inventory', () => {
-    const inventory = source(join(process.cwd(), 'math', 'skills-inventory.md'));
+    const inventory = source(join(process.cwd(), 'src', 'math', 'skills-inventory.md'));
     const section = inventory.split('### Domain 2. Натуральні числа (27)')[1]?.split('### Domain 3. Дроби')[0];
     assert.ok(section);
     assert.equal((section.match(/\| \*\*Implemented\*\* \|/g) ?? []).length, 27);

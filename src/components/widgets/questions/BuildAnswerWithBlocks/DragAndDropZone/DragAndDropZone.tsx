@@ -423,9 +423,8 @@ export function DragAndDropZone({
     .filter((item): item is Item => Boolean(item));
   const ghostZone = preview?.zone ?? (activeInAnswer ? 'answer' : 'bank');
   // Keep the active chip mounted and focused while it is being moved with the keyboard.
-  const displayedAnswerBlocks = activeInAnswer && !keyboardDrag
-    ? answerBlocks.filter(item => itemDragId(item.id) !== activeId)
-    : answerBlocks;
+  const displayedAnswerBlocks =
+    activeInAnswer && !keyboardDrag ? answerBlocks.filter(item => itemDragId(item.id) !== activeId) : answerBlocks;
   const displayedAvailableBlocks = activeId ? available.filter(item => itemDragId(item.id) !== activeId) : available;
   const answerInsertion =
     ghostZone === 'answer'

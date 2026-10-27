@@ -1,4 +1,4 @@
-import type { AssessmentMethod_Config, AssessmentMethodKey } from '../../src/types/content/assessmentMethod.types';
+import type { AssessmentMethod_Config, AssessmentMethodKey } from '../../types/content/assessmentMethod.types';
 import { en_AssessmentMethod_Locale } from './locales/en';
 import { zh_AssessmentMethod_Locale } from './locales/zh';
 import { hi_AssessmentMethod_Locale } from './locales/hi';

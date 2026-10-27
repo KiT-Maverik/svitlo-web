@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy', 'problemSolving');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'problemSolving');
 const read = (...path: string[]): string => readFileSync(join(root, ...path), 'utf8');
 const groups = {
   conditions: ['identifyKnownUnknown', 'findExtraneousData', 'findMissingData'],

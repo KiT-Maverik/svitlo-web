@@ -1,4 +1,4 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../../../../math/assessmentMethodTaxonomy/index.ids';
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../../math/assessmentMethodTaxonomy/index.ids';
 import type { Quiz_Config } from '@types';
 import { quiz_Questions_Ids } from './index.ids';
 import { createTextResource } from '@/utils';

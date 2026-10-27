@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math');
+const root = join(process.cwd(), 'src', 'math');
 const taxonomy = join(root, 'skillsTaxonomy');
 const geometry = join(taxonomy, 'geometry');
 const groups = {

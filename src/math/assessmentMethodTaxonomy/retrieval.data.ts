@@ -1,4 +1,4 @@
-import { buildAssessmentMethodConfig } from '@/utils/builders/config/buildAssessmentMethodConfig.utils';
+import { buildAssessmentMethodConfig } from '../../utils/builders/config/buildAssessmentMethodConfig.utils';
 import { assessmentMethods_AssessmentMethod_Ids } from './index.ids';
 import { assessmentMethodTranslations } from './translations';
 

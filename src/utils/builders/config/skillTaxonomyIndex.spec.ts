@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
-const taxonomy = join(process.cwd(), 'math', 'skillsTaxonomy');
+const taxonomy = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domains = [
   'algebra',
   'arithmetic',

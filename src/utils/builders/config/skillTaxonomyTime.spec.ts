@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const root = join(process.cwd(), 'math', 'skillsTaxonomy', 'time');
+const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'time');
 
 const groupSkills = {
   calendar: ['daySequence', 'leapYearDays', 'weekMonthYear', 'calendarInterval'],

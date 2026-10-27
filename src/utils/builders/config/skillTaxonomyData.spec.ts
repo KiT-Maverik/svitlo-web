@@ -4,7 +4,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 
-const taxonomy = join(process.cwd(), 'math', 'skillsTaxonomy');
+const taxonomy = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
 const domain = join(taxonomy, 'data');
 const expected: Record<string, readonly string[]> = {
   collection: [
@@ -113,7 +113,7 @@ describe('Data taxonomy source contracts', () => {
   });
 
   it('marks exactly the authored skills as Implemented in the inventory', () => {
-    const inventory = read(join(process.cwd(), 'math', 'skills-inventory.md'));
+    const inventory = read(join(process.cwd(), 'src', 'math', 'skills-inventory.md'));
     const dataSection = inventory.split('### Domain 10. Дані (15)')[1].split('### Domain 11.')[0];
     const rows = dataSection.split('\n').filter(line => line.includes('| ' + String.fromCharCode(96) + 'math.data.'));
     assert.equal(rows.length, 15);

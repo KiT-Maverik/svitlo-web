@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import ts from 'typescript';
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
-const taxonomyRoot = join(projectRoot, 'math', 'skillsTaxonomy');
+const taxonomyRoot = join(projectRoot, 'src', 'math', 'skillsTaxonomy');
 const checkOnly = process.argv.includes('--check');
 
 function* dataFiles(directory) {
