@@ -6,6 +6,12 @@ export const transformations_SkillGroup_Data = buildSkillGroupConfig({
   id: transformations_SkillGroup_Ids.transformations,
   name: {
     en: "Geometric transformations",
+    "lt": "Geometrinės transformacijos",
+    "lv": "Ģeometriskās pārveidošanas",
+    "et": "Geomeetrilised teisendused",
+    "be": "Геамэтрычныя пераўтварэньні",
+    "ka": "გეომეტრიული გარდაქმნები",
+    "kk": "Геометриялық түрлендірулер",
     zh: "几何变换",
     hi: "ज्यामितीय रूपांतरण",
     es: "Transformaciones geométricas",

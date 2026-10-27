@@ -6,6 +6,12 @@ export const orientation_SkillGroup_Data = buildSkillGroupConfig({
   id: orientation_SkillGroup_Ids.orientation,
   name: {
     en: "Spatial orientation",
+    "lt": "Orientavimasis erdvėje",
+    "lv": "Orientēšanās telpā",
+    "et": "Ruumiline orienteerumine",
+    "be": "Арыентацыя ў прасторы",
+    "ka": "სივრცეში ორიენტირება",
+    "kk": "Кеңістікте бағдарлау",
     zh: "空间方位",
     hi: "स्थानिक दिशा ज्ञान",
     es: "Orientación espacial",

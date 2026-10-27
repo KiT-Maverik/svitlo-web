@@ -6,6 +6,12 @@ export const perimeterArea_SkillGroup_Data = buildSkillGroupConfig({
   id: perimeterArea_SkillGroup_Ids.perimeterArea,
   name: {
     en: "Relationship between perimeter and area",
+    "lt": "Perimetro ir ploto ryšys",
+    "lv": "Perimetra un laukuma saistība",
+    "et": "Ümbermõõdu ja pindala seos",
+    "be": "Сувязь пэрымэтру і плошчы",
+    "ka": "პერიმეტრისა და ფართობის კავშირი",
+    "kk": "Периметр мен ауданның байланысы",
     zh: "周长与面积的关系",
     hi: "परिमाप और क्षेत्रफल का संबंध",
     es: "Relación entre perímetro y área",
