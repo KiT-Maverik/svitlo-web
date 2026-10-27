@@ -5,6 +5,12 @@ export const linePlotMeasurements_Skill_Data = buildSkillConfig({
   id: presentation_Skills_Ids.linePlotMeasurements,
   name: {
     en: "Plotting measurements on a number line",
+    "lt": "Matavimų žymėjimas skaičių tiesėje",
+    "lv": "Mērījumu attēlošana uz skaitļu taisnes",
+    "et": "Mõõtmiste märkimine arvkiirel",
+    "be": "Адзначэньне вымярэньняў на лікавай прамой",
+    "ka": "გაზომვების რიცხვით ღერძზე დატანა",
+    "kk": "Өлшемдерді сан сәулесіне белгілеу",
     zh: "在数轴上标示测量数据",
     hi: "मापों को संख्या रेखा पर अंकित करना",
     es: "Representar mediciones sobre una recta numérica",

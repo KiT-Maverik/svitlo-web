@@ -5,6 +5,12 @@ export const scaledChart_Skill_Data = buildSkillConfig({
   id: presentation_Skills_Ids.scaledChart,
   name: {
     en: "Reading a scaled chart",
+    "lt": "Diagramos su masteliu skaitymas",
+    "lv": "Diagrammas ar mērogu lasīšana",
+    "et": "Skaalaga diagrammi lugemine",
+    "be": "Чытаньне дыяграмы з маштабам",
+    "ka": "მასშტაბიანი დიაგრამის წაკითხვა",
+    "kk": "Масштабталған диаграмманы оқу",
     zh: "读取带刻度的统计图",
     hi: "मापनी वाला आलेख पढ़ना",
     es: "Leer un gráfico con escala",

@@ -5,6 +5,12 @@ export const readBarChart_Skill_Data = buildSkillConfig({
   id: presentation_Skills_Ids.readBarChart,
   name: {
     en: "Reading a bar chart",
+    "lt": "Stulpelinės diagramos skaitymas",
+    "lv": "Stabiņu diagrammas lasīšana",
+    "et": "Tulpdiagrammi lugemine",
+    "be": "Чытаньне слупковай дыяграмы",
+    "ka": "სვეტოვანი დიაგრამის წაკითხვა",
+    "kk": "Бағандық диаграмманы оқу",
     zh: "读取条形统计图",
     hi: "स्तंभ आलेख पढ़ना",
     es: "Leer un gráfico de barras",

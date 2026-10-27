@@ -5,6 +5,12 @@ export const readPictograph_Skill_Data = buildSkillConfig({
   id: presentation_Skills_Ids.readPictograph,
   name: {
     en: "Reading a one-to-one pictograph",
+    "lt": "Piktogramos su viena žyme skaitymas",
+    "lv": "Piktogrammas lasīšana ar vienu simbolu katrai vienībai",
+    "et": "Üks-ühele piltgraafiku lugemine",
+    "be": "Чытаньне піктаграмы з адным значком на адзін аб'ект",
+    "ka": "პიქტოგრამის წაკითხვა: ერთი ნიშანი ერთ ობიექტს შეესაბამება",
+    "kk": "Бір белгісі бір нысанға сәйкес пиктограмманы оқу",
     zh: "读取一图一物的象形统计图",
     hi: "एक प्रतीक प्रति वस्तु वाला चित्रलेख पढ़ना",
     es: "Leer un pictograma de un símbolo por objeto",
