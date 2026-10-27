@@ -3,11 +3,11 @@ import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../../Maps/assessmentMethodTaxonomy/index.ids';
-import * as methods from '../../../../Maps/assessmentMethodTaxonomy/index.data';
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../../math/assessmentMethodTaxonomy/index.ids';
+import * as methods from '../../../../math/assessmentMethodTaxonomy/index.data';
 import { buildAssessmentMethodConfig } from './buildAssessmentMethodConfig.utils';
 
-const directory = join(process.cwd(), 'Maps', 'assessmentMethodTaxonomy');
+const directory = join(process.cwd(), 'math', 'assessmentMethodTaxonomy');
 const ids = Object.values(assessmentMethods_AssessmentMethod_Ids);
 const configs = Object.values(methods);
 
