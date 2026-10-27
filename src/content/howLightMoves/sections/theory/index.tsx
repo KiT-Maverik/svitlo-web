@@ -4,6 +4,7 @@ import { createLocalizedFileLocations, createTextResource } from '@/utils';
 import LightRayDiagram from '../../scenes/LightRayDiagram/LightRayDiagram';
 import LightPropagationSimulation from '../../scenes/LightPropagationSimulation/LightPropagationSimulation';
 import TheoryCheckpoint from '../../scenes/TheoryCheckpoint/TheoryCheckpoint';
+import {id} from "@/content/howLightMoves/howLightMoves.constants";
 
 const introduction: MarkdownResource_AllLocales_Config = {
   id: '6238256c-30f9-542d-962f-bcd37bcb6cfb',
@@ -27,7 +28,8 @@ const conclusion: MarkdownResource_AllLocales_Config = {
 };
 
 export const theory: LessonSection_Config = {
-    id: 'ce4b3dd6-92db-5d0c-a4fc-bff481588e8a',
+  id: id.section.theory,
+  lessonId: id.lesson,
     name: createTextResource('dcc83b8e-b2ca-54c7-ad81-c32f337c4508', {
       'en-US': 'Theory',
       'zh-Hans-CN': '理论',

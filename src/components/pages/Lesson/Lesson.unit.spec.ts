@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { isValidElement, type ReactElement } from 'react';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
 import { LearningLayout } from '@layout';
-import { lightLesson } from '@/content/how-light-moves/lightLesson';
+import { howLightMoves } from '@/content/how-light-moves/lightLesson';
 import { buildLesson } from '@/utils';
 import type { Lesson_Config } from '@types';
 import Lesson from './Lesson';
@@ -22,23 +22,23 @@ function props<T>(element: ReactElement): T {
 
 describe('Lesson page assembly', () => {
   it('should assemble the route from the supplied config and locale', () => {
-    const root = Lesson({ config: lightLesson, locale: 'en-US', href: '/topics/light' });
+    const root = Lesson({ config: howLightMoves, locale: 'en-US', href: '/topics/light' });
     expect(root.type).toBe(LocaleProvider);
     expect(props<{ locale: string }>(root).locale).toBe('en-US');
 
     const scenes = onlyChild(root);
     expect(scenes.type).toBe(SceneLocaleProvider);
     expect(props<{ scenes: object }>(scenes).scenes)
-      .toEqual(buildLesson(lightLesson, 'en-US').sceneLocale);
+      .toEqual(buildLesson(howLightMoves, 'en-US').sceneLocale);
 
     const progress = onlyChild(scenes);
     expect(progress.type).toBe(LessonProgressProvider);
-    expect(progress.key).toBe(lightLesson.id);
+    expect(progress.key).toBe(howLightMoves.id);
     expect(props<{ lessonId: string; sectionIds: string[]; quizSectionId: string }>(progress))
       .toMatchObject({
-        lessonId: lightLesson.id,
-        sectionIds: [lightLesson.sections.content[0].id, lightLesson.sections.content[1].id, lightLesson.sections.content[2].sectionId],
-        quizSectionId: lightLesson.sections.content[2].sectionId,
+        lessonId: howLightMoves.id,
+        sectionIds: [howLightMoves.sections.content[0].id, howLightMoves.sections.content[1].id, howLightMoves.sections.content[2].sectionId],
+        quizSectionId: howLightMoves.sections.content[2].sectionId,
       });
 
     const layout = onlyChild(progress);
@@ -51,14 +51,14 @@ describe('Lesson page assembly', () => {
     const assembled = props<{ sectionContent: unknown[]; questions: unknown[] }>(client);
     expect(assembled.sectionContent).toHaveLength(3);
     expect(assembled.sectionContent[2]).toBeNull();
-    expect(assembled.questions).toHaveLength(lightLesson.sections.content[2].questionBank.length);
+    expect(assembled.questions).toHaveLength(howLightMoves.sections.content[2].questionBank.length);
   });
 
   it('should support a content-only lesson with no quiz', () => {
     const config: Lesson_Config = {
-      ...lightLesson,
+      ...howLightMoves,
       requireQuiz: false,
-      sections: { ...lightLesson.sections, content: [lightLesson.sections.content[0]] },
+      sections: { ...howLightMoves.sections, content: [howLightMoves.sections.content[0]] },
     };
     const progress = onlyChild(onlyChild(Lesson({ config, locale: 'uk-UA', href: '/lesson' })));
     expect(props<{ quizSectionId?: string; requireQuiz: boolean }>(progress))
@@ -71,8 +71,8 @@ describe('Lesson page assembly', () => {
 
   it('should reject a config requiring a missing quiz', () => {
     const config: Lesson_Config = {
-      ...lightLesson,
-      sections: { ...lightLesson.sections, content: [lightLesson.sections.content[0]] },
+      ...howLightMoves,
+      sections: { ...howLightMoves.sections, content: [howLightMoves.sections.content[0]] },
     };
     expect(() => Lesson({ config, locale: 'uk-UA', href: '/lesson' }))
       .toThrow('A lesson that requires a quiz must include one');
@@ -80,10 +80,10 @@ describe('Lesson page assembly', () => {
 
   it('should reject multiple quizzes until the progress model supports them', () => {
     const config: Lesson_Config = {
-      ...lightLesson,
+      ...howLightMoves,
       sections: {
-        ...lightLesson.sections,
-        content: [...lightLesson.sections.content, lightLesson.sections.content[2]],
+        ...howLightMoves.sections,
+        content: [...howLightMoves.sections.content, howLightMoves.sections.content[2]],
       },
     };
     expect(() => Lesson({ config, locale: 'uk-UA', href: '/lesson' }))

@@ -7,9 +7,10 @@ import { locales as rayLocales } from './scenes/LightRayDiagram/lightRayDiagram.
 import { locales as simulationLocales } from './scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
 import { locales as checkpointLocales } from './sections/theory/locales/KnowledgeCheckpoint.locale';
 import { locales as practiceLocales } from './scenes/MediumPractice/MediumPractice.locale';
+import { id } from './howLightMoves.constants';
 
-export const lightLesson = {
-  id: 'd3048d21-8690-5255-b62c-984c69ac272c',
+export const howLightMoves = {
+  id: id.lesson,
   slug: 'how-light-moves',
   title: createTextResource(
     'd5ee2ac8-0d95-5f98-8f16-31400ea7a85b',
