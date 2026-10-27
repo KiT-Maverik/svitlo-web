@@ -10,5 +10,9 @@
 - `math.algebra.equality-meaning` — `974af868-5b72-4a5a-a88e-8f7e03e48661`
 - `math.algebra.true-false-equality` — `7dca0048-581a-4cff-9fa4-670cb7655505`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
+
 ---
 [Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

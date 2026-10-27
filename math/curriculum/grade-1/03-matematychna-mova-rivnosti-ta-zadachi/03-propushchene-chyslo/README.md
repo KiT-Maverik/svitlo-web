@@ -10,5 +10,9 @@
 - `math.algebra.complete-equality` — `b10f275e-3774-4e50-8450-b3da6be099af`
 - `math.algebra.unknown-addend` — `a01ad4cb-5aeb-44ee-ba4b-913b384b3178`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
+
 ---
 [Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)

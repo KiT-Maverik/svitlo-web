@@ -9,5 +9,9 @@
 
 - `math.algebra.read-numeric-expressions` — `2429be16-34f7-4857-8144-f2d550931872`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
+
 ---
 [Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
