@@ -5,6 +5,12 @@ export const countBy100_Skill_Data = buildSkillConfig({
   id: steps_Skills_Ids.countBy100,
   name: {
     en: "Counting in steps of 100",
+    "lt": "Skaičiavimas šimtais",
+    "lv": "Skaitīšana ar soli 100",
+    "et": "Saja kaupa loendamine",
+    "be": "Лічэньне сотнямі",
+    "ka": "ასეულებით დათვლა",
+    "kk": "Жүздіктермен санау",
     zh: "每次按100递增计数",
     hi: "100-100 के अंतर से गिनना",
     es: "Contar de 100 en 100",

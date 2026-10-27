@@ -5,6 +5,12 @@ export const forward1000_Skill_Data = buildSkillConfig({
   id: sequence_Skills_Ids.forward1000,
   name: {
     en: "Continuing number sequences within 1,000",
+    "lt": "Skaičių sekų tęsimas iki 1000",
+    "lv": "Skaitļu virkņu turpināšana 1000 robežās",
+    "et": "Arvujadade jätkamine 1000 piires",
+    "be": "Працяг лікавых пасьлядоўнасьцяў у межах 1000",
+    "ka": "რიცხვითი მიმდევრობების გაგრძელება 1000-ის ფარგლებში",
+    "kk": "1000 көлемінде сандар тізбегін жалғастыру",
     zh: "续写1000以内的数列",
     hi: "1000 तक संख्या क्रम को आगे बढ़ाना",
     es: "Continuar secuencias numéricas hasta 1000",
