@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { cardinality_Skills_Ids } from './index.ids';
+
+export const basicCardinality_Skill_Data = buildSkillConfig({
+  id: cardinality_Skills_Ids.basicCardinality,
+  name: {
+    en: "Determining how many objects are in a set",
+    zh: "确定一组物品的数量",
+    hi: "समूह में वस्तुओं की संख्या निर्धारित करना",
+    es: "Determinar cuántos elementos hay en un conjunto",
+    ar: "تحديد عدد العناصر في مجموعة",
+    fr: "Déterminer le nombre d’éléments d’un ensemble",
+    bn: "একটি দলে বস্তুগুলোর সংখ্যা নির্ণয়",
+    pt: "Determinar a quantidade de elementos de um conjunto",
+    ur: "ایک مجموعے میں اشیا کی تعداد معلوم کرنا",
+    id: "Menentukan banyaknya benda dalam kelompok",
+    de: "Anzahl der Elemente einer Menge bestimmen",
+    ja: "集合にあるものの個数を求める",
+    ko: "집합에 있는 물건의 개수 알아내기",
+    tr: "Bir kümedeki nesnelerin sayısını belirleme",
+    vi: "Xác định số lượng đồ vật trong một nhóm",
+    ta: "ஒரு தொகுப்பிலுள்ள பொருள்களின் எண்ணிக்கையை அறிதல்",
+    te: "ఒక సమూహంలోని వస్తువుల సంఖ్యను గుర్తించడం",
+    mr: "संचातील वस्तूंची संख्या ठरवणे",
+    ms: "Menentukan bilangan objek dalam kumpulan",
+    he: "קביעת מספר הפריטים בקבוצה",
+    pl: "Określanie liczby elementów zbioru",
+    uk: "Визначення кількості предметів у множині",
+  },
+});

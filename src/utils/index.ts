@@ -1,14 +1,14 @@
-export { buildLesson } from './Builders/BuildLesson/BuildLesson.utils';
-export { buildQuestion } from './Builders/BuildQuestion/BuildQuestion.utils';
-export { buildQuiz } from './Builders/BuildQuiz/BuildQuiz.utils';
-export { buildResource, buildTextResource } from './Builders/BuildResource/BuildResource.utils';
+export { buildLesson } from './builders/buildLesson/buildLesson.utils';
+export { buildQuestion } from './builders/buildQuestion/buildQuestion.utils';
+export { buildQuiz } from './builders/buildQuiz/buildQuiz.utils';
+export { buildResource, buildTextResource } from './builders/buildResource/buildResource.utils';
 export {
   createDynamicQuestion,
   validateArgument,
   validateBooleanArgument,
   validateNumberArgument,
   validateStringArgument,
-} from './CreateDynamicQuestion/CreateDynamicQuestion.utils';
+} from './createDynamicQuestion/createDynamicQuestion.utils';
 export type {
   DynamicQuestion,
   DynamicQuestion_ArgumentConfig,
@@ -23,7 +23,10 @@ export type {
   DynamicQuestion_NumberArgumentConfig,
   DynamicQuestion_StringArgumentConfig,
   DynamicQuestion_Variant,
-} from './CreateDynamicQuestion/CreateDynamicQuestion.types';
-export { createLocalizedFileLocations } from './CreateLocalizedFileLocations/CreateLocalizedFileLocations.utils';
-export type { CreateLocalizedFileLocationsOptions, LocalizedFileLocations } from './CreateLocalizedFileLocations/CreateLocalizedFileLocations.utils';
-export { createTextResource } from './CreateTextResource/CreateTextResource.utils';
+} from './createDynamicQuestion/createDynamicQuestion.types';
+export { createLocalizedFileLocations } from './createLocalizedFileLocations/createLocalizedFileLocations.utils';
+export type { CreateLocalizedFileLocationsOptions, LocalizedFileLocations } from './createLocalizedFileLocations/createLocalizedFileLocations.utils';
+export { createTextResource } from './createTextResource/createTextResource.utils';
+export { buildSkillConfig } from './builders/config/buildSkillConfig.utils';
+export { buildSkillGroupConfig } from './builders/config/buildSkillGroupConfig.utils';
+export { buildSkillDomainConfig } from './builders/config/buildSkillDomainConfig.utils';

@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { sequence_Skills_Ids } from './index.ids';
+
+export const forward20_Skill_Data = buildSkillConfig({
+  id: sequence_Skills_Ids.forward20,
+  name: {
+    en: "Counting forward within 20",
+    zh: "在20以内顺数",
+    hi: "20 तक आगे की ओर गिनना",
+    es: "Contar hacia adelante hasta 20",
+    ar: "العد تصاعديًا حتى 20",
+    fr: "Compter en avant jusqu’à 20",
+    bn: "২০ পর্যন্ত সামনের দিকে গণনা",
+    pt: "Contar em ordem crescente até 20",
+    ur: "20 تک آگے کی طرف گنتی کرنا",
+    id: "Membilang maju sampai 20",
+    de: "Vorwärtszählen bis 20",
+    ja: "20までの順唱",
+    ko: "20까지 앞으로 세기",
+    tr: "20’ye kadar ileriye doğru sayma",
+    vi: "Đếm tiến trong phạm vi 20",
+    ta: "20 வரை முன்னோக்கி எண்ணுதல்",
+    te: "20 వరకు ముందుకు లెక్కించడం",
+    mr: "२० पर्यंत पुढे मोजणे",
+    ms: "Membilang menaik hingga 20",
+    he: "ספירה קדימה עד 20",
+    pl: "Liczenie w przód do 20",
+    uk: "Лічба вперед у межах 20",
+  },
+});
