@@ -317,3 +317,12 @@ Generated once for authoring; each UUID below must be copied as a **static strin
 | skill | `math.problems.work-rate-time` | `62dbd12e-55c3-40b5-aac4-031dbaee075c` |
 | skill | `math.problems.price-quantity-cost` | `c5f731c1-be62-495a-8614-ba67ab9ed8a8` |
 | skill | `math.problems.measurement-context` | `62d74e18-5c86-4038-b3c0-59f30a201da3` |
+| domain | `math.money` | `fc6e1529-7c86-4141-b8b7-9df999eeaea5` |
+| group | `math.money.denominations` | `b2a96b3c-533d-4649-98e3-dd1e58566e66` |
+| skill | `math.money.recognize-denominations` | `2086fcee-1737-4cbb-aa46-34cfc4f3fe44` |
+| skill | `math.money.compose-amount` | `bb0e7ba7-3325-4dac-80cc-0070988cc5ef` |
+| skill | `math.money.compare-amounts` | `6ac377cf-4d67-4ef4-bdc7-4bb8a0895e81` |
+| group | `math.money.transactions` | `15c170e7-d86b-43d3-b08a-64a642f93f0b` |
+| skill | `math.money.calculate-change` | `56a4bd47-1221-489d-a11a-577d07bcb9af` |
+| skill | `math.money.unit-price-total` | `8d0f36a9-7994-427f-8a3a-fae3082c8837` |
+| skill | `math.money.budget-constraint` | `945f887d-4370-42b0-aefa-02a88a06f6d8` |

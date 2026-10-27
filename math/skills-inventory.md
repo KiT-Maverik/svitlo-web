@@ -22,7 +22,7 @@
 
 ## Інвентар навичок
 
-Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **120 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
+Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **126 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
 
 ## Семантична таксономія (v0.6)
 
@@ -40,7 +40,7 @@
 | `math.geometry` | Геометрія | 10 | 35 | **Implemented** | 3/10 | 0/35 |
 | `math.measurement` | Вимірювання | 5 | 21 | **Implemented** | 5/5 | 21/21 |
 | `math.time` | Час | 3 | 13 | — | 0/3 | 0/13 |
-| `math.money` | Гроші | 2 | 6 | — | 0/2 | 0/6 |
+| `math.money` | Гроші | 2 | 6 | **Implemented** | 2/2 | 6/6 |
 | `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
 | `math.probability` | Ймовірність | 2 | 4 | **Implemented** | 2/2 | 4/4 |
 | `math.problemSolving` | Задачі | 7 | 23 | **Complete** | 7/7 | 23/23 |
@@ -706,7 +706,7 @@
 
 ### Domain 9. Гроші (6)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 2/2 Group configs + 6/6 individual Skills — **Complete**
 
 **ID:** `math.money`
 
@@ -714,25 +714,25 @@
 
 **ID:** `math.money.denominations`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.money.recognize-denominations` | Розпізнавати номінали монет і купюр заданої валюти | 1–2 | — |
-| `math.money.compose-amount` | Складати задану суму різними комбінаціями грошових одиниць | 1–2 | — |
-| `math.money.compare-amounts` | Порівнювати грошові суми в межах однієї валюти | 1–2 | — |
+| `math.money.recognize-denominations` | Розпізнавати номінали монет і купюр заданої валюти | 1–2 | **Implemented** |
+| `math.money.compose-amount` | Складати задану суму різними комбінаціями грошових одиниць | 1–2 | **Implemented** |
+| `math.money.compare-amounts` | Порівнювати грошові суми в межах однієї валюти | 1–2 | **Implemented** |
 
 #### SkillGroup 9.2. Покупки (3)
 
 **ID:** `math.money.transactions`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.money.calculate-change` | Знаходити решту після покупки | 2–3 | — |
-| `math.money.unit-price-total` | Розв’язувати задачі на ціну, кількість і загальну вартість | 3 | — |
-| `math.money.budget-constraint` | Вибирати покупки з урахуванням заданого бюджету | 3 | — |
+| `math.money.calculate-change` | Знаходити решту після покупки | 2–3 | **Implemented** |
+| `math.money.unit-price-total` | Розв’язувати задачі на ціну, кількість і загальну вартість | 3 | **Implemented** |
+| `math.money.budget-constraint` | Вибирати покупки з урахуванням заданого бюджету | 3 | **Implemented** |
 
 ### Domain 10. Дані (15)
 
