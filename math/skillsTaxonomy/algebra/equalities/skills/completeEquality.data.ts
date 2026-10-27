@@ -5,6 +5,12 @@ export const completeEquality_Skill_Data = buildSkillConfig({
   id: equalities_Skills_Ids.completeEquality,
   name: {
     en: "Completing a true equality",
+    "lt": "Teisingos lygybės užpildymas",
+    "lv": "Patiesas vienādības papildināšana",
+    "et": "Tõese võrduse täiendamine",
+    "be": "Дапаўненьне праўдзівай роўнасьці",
+    "ka": "სწორი ტოლობის შევსება",
+    "kk": "Дұрыс теңдікті толықтыру",
     zh: "填数使等式成立",
     hi: "समानता सही बनाने के लिए संख्या भरना",
     es: "Completar una igualdad verdadera",

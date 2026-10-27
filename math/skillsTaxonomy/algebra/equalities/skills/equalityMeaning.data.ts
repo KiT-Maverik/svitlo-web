@@ -5,6 +5,12 @@ export const equalityMeaning_Skill_Data = buildSkillConfig({
   id: equalities_Skills_Ids.equalityMeaning,
   name: {
     en: "Understanding the equals sign",
+    "lt": "Lygybės ženklo reikšmės supratimas",
+    "lv": "Vienādības zīmes nozīmes izpratne",
+    "et": "Võrdusmärgi tähenduse mõistmine",
+    "be": "Разуменьне знаку роўнасьці",
+    "ka": "ტოლობის ნიშნის მნიშვნელობის გაგება",
+    "kk": "Теңдік белгісінің мағынасын түсіну",
     zh: "理解等号的含义",
     hi: "बराबर चिह्न का अर्थ समझना",
     es: "Comprender el signo igual",

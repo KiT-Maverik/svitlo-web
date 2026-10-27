@@ -5,6 +5,12 @@ export const variableValue_Skill_Data = buildSkillConfig({
   id: expressions_Skills_Ids.variableValue,
   name: {
     en: "Evaluating simple expressions with a variable",
+    "lt": "Paprastų reiškinių su kintamuoju reikšmės apskaičiavimas",
+    "lv": "Vienkāršu izteiksmju ar mainīgo vērtības aprēķināšana",
+    "et": "Lihtsate muutujaga avaldiste väärtuse leidmine",
+    "be": "Знаходжаньне значэньня простых выразаў са зьменнай",
+    "ka": "ცვლადიანი მარტივი გამოსახულებების მნიშვნელობის გამოთვლა",
+    "kk": "Айнымалысы бар қарапайым өрнектердің мәнін табу",
     zh: "求简单含字母式的值",
     hi: "चर वाले सरल व्यंजकों का मान निकालना",
     es: "Evaluar expresiones sencillas con una variable",

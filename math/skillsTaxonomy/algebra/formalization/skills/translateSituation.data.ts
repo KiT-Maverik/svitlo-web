@@ -5,6 +5,12 @@ export const translateSituation_Skill_Data = buildSkillConfig({
   id: formalization_Skills_Ids.translateSituation,
   name: {
     en: "Representing a situation with an expression or equation",
+    "lt": "Situacijos užrašymas reiškiniu arba lygtimi",
+    "lv": "Situācijas attēlošana ar izteiksmi vai vienādojumu",
+    "et": "Olukorra esitamine avaldise või võrrandina",
+    "be": "Прадстаўленьне сытуацыі выразам ці раўнаньнем",
+    "ka": "სიტუაციის გამოსახულებით ან განტოლებით წარმოდგენა",
+    "kk": "Жағдайды өрнекпен немесе теңдеумен көрсету",
     zh: "用算式或方程表示情境",
     hi: "स्थिति को व्यंजक या समीकरण से दर्शाना",
     es: "Representar una situación mediante una expresión o ecuación",

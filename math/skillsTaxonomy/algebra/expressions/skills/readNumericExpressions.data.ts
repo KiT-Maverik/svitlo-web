@@ -5,6 +5,12 @@ export const readNumericExpressions_Skill_Data = buildSkillConfig({
   id: expressions_Skills_Ids.readNumericExpressions,
   name: {
     en: "Reading and writing numerical expressions",
+    "lt": "Skaitinių reiškinių skaitymas ir rašymas",
+    "lv": "Skaitlisku izteiksmju lasīšana un rakstīšana",
+    "et": "Arvavaldiste lugemine ja kirjutamine",
+    "be": "Чытаньне і запіс лікавых выразаў",
+    "ka": "რიცხვითი გამოსახულებების წაკითხვა და ჩაწერა",
+    "kk": "Сандық өрнектерді оқу және жазу",
     zh: "读写数字算式",
     hi: "संख्यात्मक व्यंजक पढ़ना और लिखना",
     es: "Leer y escribir expresiones numéricas",

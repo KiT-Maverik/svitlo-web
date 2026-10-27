@@ -5,6 +5,12 @@ export const identifyExpressionError_Skill_Data = buildSkillConfig({
   id: expressions_Skills_Ids.identifyExpressionError,
   name: {
     en: "Identifying errors in the order of operations",
+    "lt": "Veiksmų eilės klaidų atpažinimas",
+    "lv": "Darbību secības kļūdu noteikšana",
+    "et": "Tehete järjekorra vigade leidmine",
+    "be": "Вызначэньне памылак у парадку дзеяньняў",
+    "ka": "მოქმედებათა თანმიმდევრობაში შეცდომების პოვნა",
+    "kk": "Амалдар ретіндегі қателерді табу",
     zh: "识别运算顺序错误",
     hi: "संचालन क्रम की गलतियाँ पहचानना",
     es: "Identificar errores en el orden de las operaciones",

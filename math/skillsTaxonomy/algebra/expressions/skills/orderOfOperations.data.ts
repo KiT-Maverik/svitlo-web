@@ -5,6 +5,12 @@ export const orderOfOperations_Skill_Data = buildSkillConfig({
   id: expressions_Skills_Ids.orderOfOperations,
   name: {
     en: "Applying the order of operations",
+    "lt": "Veiksmų atlikimo tvarkos taikymas",
+    "lv": "Darbību secības ievērošana",
+    "et": "Tehete järjekorra rakendamine",
+    "be": "Ужываньне парадку дзеяньняў",
+    "ka": "მოქმედებათა თანმიმდევრობის გამოყენება",
+    "kk": "Амалдар ретін қолдану",
     zh: "运用运算顺序",
     hi: "संचालन क्रम के नियम लागू करना",
     es: "Aplicar el orden de las operaciones",

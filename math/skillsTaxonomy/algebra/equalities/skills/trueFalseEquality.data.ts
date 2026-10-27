@@ -5,6 +5,12 @@ export const trueFalseEquality_Skill_Data = buildSkillConfig({
   id: equalities_Skills_Ids.trueFalseEquality,
   name: {
     en: "Checking numerical equalities and inequalities",
+    "lt": "Skaitinių lygybių ir nelygybių tikrinimas",
+    "lv": "Skaitlisku vienādību un nevienādību pārbaude",
+    "et": "Arvvõrduste ja -võrratuste kontrollimine",
+    "be": "Праверка лікавых роўнасьцяў і няроўнасьцяў",
+    "ka": "რიცხვითი ტოლობებისა და უტოლობების შემოწმება",
+    "kk": "Сандық теңдіктер мен теңсіздіктерді тексеру",
     zh: "判断数值等式和不等式是否成立",
     hi: "संख्यात्मक समानता और असमानता की सत्यता जाँचना",
     es: "Comprobar igualdades y desigualdades numéricas",

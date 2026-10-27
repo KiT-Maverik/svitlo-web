@@ -5,6 +5,12 @@ export const parentheses_Skill_Data = buildSkillConfig({
   id: expressions_Skills_Ids.parentheses,
   name: {
     en: "Evaluating expressions with parentheses",
+    "lt": "Reiškinių su skliaustais apskaičiavimas",
+    "lv": "Izteiksmju ar iekavām vērtības aprēķināšana",
+    "et": "Sulgudega avaldiste arvutamine",
+    "be": "Вылічэньне выразаў з дужкамі",
+    "ka": "ფრჩხილებიანი გამოსახულებების გამოთვლა",
+    "kk": "Жақшалары бар өрнектерді есептеу",
     zh: "计算带括号的算式",
     hi: "कोष्ठकों वाले व्यंजकों का मान निकालना",
     es: "Calcular expresiones con paréntesis",
