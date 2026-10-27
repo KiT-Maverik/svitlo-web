@@ -1,5 +1,5 @@
 import { Container } from '@mui/material';
-import type { Lesson_Config, Locale, Quiz } from '@types';
+import type { Lesson_Config, LessonContentCatalog, Locale, Quiz } from '@types';
 import { buildLesson } from '@/utils';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
 import { LearningLayout } from '@layout';
@@ -11,12 +11,13 @@ import { toQuestionWidgets } from './adapters/toQuestionWidgets';
 
 export interface LessonProps {
   config: Lesson_Config;
+  catalog: LessonContentCatalog;
   locale: Locale;
   href: string;
 }
 
-export default function Lesson({ config, locale, href }: LessonProps) {
-  const lesson = buildLesson(config, locale);
+export default function Lesson({ config, catalog, locale, href }: LessonProps) {
+  const lesson = buildLesson(config, locale, catalog);
   const quizzes = lesson.sections.content.filter((section): section is Quiz => 'sectionId' in section);
   if (quizzes.length > 1) throw new Error('The current lesson progress model supports one quiz per lesson');
   const quiz = quizzes[0];

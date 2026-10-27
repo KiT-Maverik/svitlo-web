@@ -1,9 +1,9 @@
-import type { Lesson, Lesson_Config, LessonSection, Locale, Quiz_Config } from '@types';
+import type { Lesson, Lesson_Config, LessonContentCatalog, LessonSection, LessonSection_Content, Locale, Quiz_Config } from '@types';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 import { buildResource, buildTextResource } from '../BuildResource/BuildResource.utils';
 import { buildQuiz } from '../BuildQuiz/BuildQuiz.utils';
 
-function isQuiz(value: Lesson_Config['sections']['content'][number]): value is Quiz_Config {
+function isQuiz(value: LessonSection_Content): value is Quiz_Config {
   return 'questionBank' in value;
 }
 
@@ -18,18 +18,27 @@ function selectSceneLocales(config: Lesson_Config['sceneLocales'], locale: Local
   }));
 }
 
-export function buildLesson(config: Lesson_Config, locale: Locale): Lesson {
+export function buildLesson(config: Lesson_Config, locale: Locale, catalog: LessonContentCatalog): Lesson {
+  const title = catalog.text[config.title];
+  if (!title || title.id !== config.title) throw new Error(`Missing text resource for lesson title: ${config.title}`);
+
   return {
     id: config.id,
     slug: config.slug,
     requireQuiz: config.requireQuiz,
     sceneLocale: selectSceneLocales(config.sceneLocales, locale),
-    title: buildTextResource(config.title, locale),
+    title: buildTextResource(title, locale),
     sections: {
       allowNavigation: config.sections.allowNavigation,
       allowSkipping: config.sections.allowSkipping,
       showIndexes: config.sections.showIndexes,
-      content: config.sections.content.map(section => {
+      content: config.sections.content.map(sectionId => {
+        const section = catalog.sections[sectionId];
+        if (!section) throw new Error(`Missing lesson section: ${sectionId}`);
+        if (section.lessonId !== config.id) throw new Error(`Section ${sectionId} belongs to another lesson`);
+        if (isQuiz(section) ? section.sectionId !== sectionId : section.id !== sectionId) {
+          throw new Error(`Section ID does not match its catalog key: ${sectionId}`);
+        }
         if (isQuiz(section)) return buildQuiz(section, locale);
         return {
           ...section,

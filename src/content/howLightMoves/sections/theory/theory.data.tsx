@@ -1,7 +1,7 @@
 import type { LessonSection_Config } from '@types';
 import type { MarkdownResource_AllLocales_Config } from '@types';
 import { createLocalizedFileLocations, createTextResource } from '@/utils';
-import { scene } from '../../scenes';
+import { scene } from '../../resources/scenes';
 import { id } from '../../howLightMoves.constants';
 
 const introduction: MarkdownResource_AllLocales_Config = {

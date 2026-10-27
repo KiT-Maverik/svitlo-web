@@ -6,10 +6,15 @@ export const id = {
         theory: '32376510-b49a-5da8-91d7-e13cf162c9f9',
         quiz: '2a02b81f-dbd6-58d8-9711-4deb97312a56',
     },
-    scene: {
-        lightPropagationSimulation: '1c0b03fd-de9a-50b8-a493-03594337b5a7',
-        lightRayDiagram: '5acac9ef-2452-5072-b471-1255d52b4a28',
-        mediumPractice: '9ea839e1-4237-5382-bf9b-1b534539f968',
-        theoryCheckpoint: 'cd65e160-da27-57e1-a58f-38b1276c4346',
-    }
+    resource: {
+      text: {
+          name: 'd5ee2ac8-0d95-5f98-8f16-31400ea7a85b',
+      },
+        scene: {
+            lightPropagationSimulation: '1c0b03fd-de9a-50b8-a493-03594337b5a7',
+            lightRayDiagram: '5acac9ef-2452-5072-b471-1255d52b4a28',
+            mediumPractice: '9ea839e1-4237-5382-bf9b-1b534539f968',
+            theoryCheckpoint: 'cd65e160-da27-57e1-a58f-38b1276c4346',
+        }
+    },
 } as const;

@@ -1,7 +1,8 @@
 import { createElement } from 'react';
 import type { Locale } from '@types';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
-import { howLightMoves } from '../../howLightMoves.data';
+import { howLightMoves } from '../../../howLightMoves.data';
+import { howLightMovesCatalog } from '../../../howLightMoves.catalog';
 import { buildLesson } from '@/utils';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -13,7 +14,7 @@ const uk = locales.uk;
 import { media } from './MediumPractice.constants';
 
 export const MediumPractice_fx = {
-  render: (code: Locale = 'uk-UA') => render(createElement(SceneLocaleProvider, { locale: code, scenes: buildLesson(howLightMoves, code).sceneLocale ?? {} }, createElement(MediumPractice))),
+  render: (code: Locale = 'uk-UA') => render(createElement(SceneLocaleProvider, { locale: code, scenes: buildLesson(howLightMoves, code, howLightMovesCatalog).sceneLocale ?? {} }, createElement(MediumPractice))),
   selectors: {
     title: () => screen.getByRole('heading', { name: uk.title }),
     mediaGroup: () => screen.getByRole('group', { name: aria.mediaGroup }),

@@ -1,6 +1,6 @@
 import type { LessonSection_Config } from '@types';
 import { createTextResource } from '@/utils';
-import { scene } from '../../scenes';
+import { scene } from '../../resources/scenes';
 import { id } from '../../howLightMoves.constants';
 
 const name = createTextResource(

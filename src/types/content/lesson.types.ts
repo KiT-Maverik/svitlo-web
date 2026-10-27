@@ -24,6 +24,12 @@ export interface LessonSection {
 
 export type LessonSection_Content = LessonSection_Config | Quiz_Config;
 
+/** Definitions referenced by a lesson's stable IDs. */
+export interface LessonContentCatalog {
+  text: Readonly<Record<string, TextResource_Config>>;
+  sections: Readonly<Record<string, LessonSection_Content>>;
+}
+
 export interface Lesson_Config {
   id: string,
   slug: string;
@@ -32,9 +38,9 @@ export interface Lesson_Config {
     allowNavigation: boolean;
     allowSkipping: boolean;
     showIndexes: boolean;
-    content: NonEmptyArray<LessonSection_Content>;
+    content: NonEmptyArray<string>;
   };
-  title: TextResource_Config;
+  title: string;
   /** Every scene's translations, keyed by short language code. Server selects one value per scene. */
   sceneLocales?: Record<string, Partial<Record<LanguageCode, object>>>;
 }

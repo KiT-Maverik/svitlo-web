@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { Lesson_Config, Quiz_Config, TextResource_Config } from '@types';
+import type { Lesson_Config, LessonContentCatalog, LessonSection_Config, Quiz_Config, TextResource_Config } from '@types';
 import { buildLesson } from './BuildLesson.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
@@ -10,21 +10,28 @@ const text = (id: string, english: string, ukrainian = english): TextResource_Co
 
 const lesson = (): Lesson_Config => ({
   id: 'lesson', slug: 'light', requireQuiz: true,
-  title: text('title', 'Light', 'Світло'),
+  title: 'title',
   sections: {
     allowNavigation: true, allowSkipping: false, showIndexes: true,
-    content: [{
-      id: 'theory', lessonId: 'lesson', skippable: false, name: text('section-name', 'Theory', 'Теорія'),
-      content: [
-        text('body', 'Body', 'Текст'),
-        { id: 'scene', blockType: 'scene', component: 'Scene content' },
-        { id: 'image', blockType: 'image', allLocales: false,
-          fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
-          alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
-        },
-      ],
-    }],
+    content: ['theory'],
   },
+});
+
+const theory = (): LessonSection_Config => ({
+  id: 'theory', lessonId: 'lesson', skippable: false, name: text('section-name', 'Theory', 'Теорія'),
+  content: [
+    text('body', 'Body', 'Текст'),
+    { id: 'scene', blockType: 'scene', component: 'Scene content' },
+    { id: 'image', blockType: 'image', allLocales: false,
+      fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
+      alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
+    },
+  ],
+});
+
+const catalog = (): LessonContentCatalog => ({
+  text: { title: text('title', 'Light', 'Світло') },
+  sections: { theory: theory() },
 });
 
 const quiz = (): Quiz_Config => ({
@@ -46,25 +53,27 @@ const quiz = (): Quiz_Config => ({
   screen: {},
 });
 
+const build = (locale: 'en-US' | 'uk-UA') => buildLesson(lesson(), locale, catalog());
+
 describe('Utils', () => {
   describe('Builders', () => {
     describe('BuildLesson', () => {
       describe('Lesson metadata', () => {
         it('should preserve lesson identity, slug, and quiz requirement', () => {
-          const result = buildLesson(lesson(), 'uk-UA');
+          const result = build('uk-UA');
           assert.equal(result.id, 'lesson');
           assert.equal(result.slug, 'light');
           assert.equal(result.requireQuiz, true);
         });
 
         it('should localize the title for the requested locale', () => {
-          assert.deepEqual(buildLesson(lesson(), 'uk-UA').title, {
+          assert.deepEqual(build('uk-UA').title, {
             id: 'title', blockType: 'text', locale: 'uk-UA', value: 'Світло',
           });
         });
 
         it('should retain navigation, skipping, and index visibility settings', () => {
-          const result = buildLesson(lesson(), 'en-US');
+          const result = build('en-US');
           assert.deepEqual({
             allowNavigation: result.sections.allowNavigation,
             allowSkipping: result.sections.allowSkipping,
@@ -74,8 +83,19 @@ describe('Utils', () => {
       });
 
       describe('Section content', () => {
+        it('should reject unresolved or mismatched references', () => {
+          const config = lesson();
+          const definitions = catalog();
+          assert.throws(() => buildLesson({ ...config, title: 'missing' }, 'en-US', definitions), /Missing text resource/);
+          assert.throws(() => buildLesson({ ...config, sections: { ...config.sections, content: ['missing'] } }, 'en-US', definitions), /Missing lesson section/);
+          assert.throws(() => buildLesson(config, 'en-US', {
+            ...definitions,
+            sections: { theory: { ...theory(), lessonId: 'another-lesson' } },
+          }), /belongs to another lesson/);
+        });
+
         it('should localize the section name and all resource blocks', () => {
-          const result = buildLesson(lesson(), 'uk-UA');
+          const result = build('uk-UA');
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
           assert.deepEqual(section.name, {
@@ -91,7 +111,7 @@ describe('Utils', () => {
         });
 
         it('should preserve a scene resource and its position', () => {
-          const result = buildLesson(lesson(), 'en-US');
+          const result = build('en-US');
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
           assert.deepEqual(section.content[1], { id: 'scene', blockType: 'scene', component: 'Scene content' });
@@ -99,7 +119,7 @@ describe('Utils', () => {
         });
 
         it('should preserve section IDs and skippable settings', () => {
-          const result = buildLesson(lesson(), 'en-US');
+          const result = build('en-US');
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
           assert.equal(section.id, 'theory');
@@ -109,12 +129,16 @@ describe('Utils', () => {
 
         it('should convert quiz sections without disturbing their order among lesson sections', () => {
           const config = lesson();
-          config.sections.content.push(quiz());
-          config.sections.content.push({
+          const definitions = catalog();
+          const summary: LessonSection_Config = {
             id: 'summary', lessonId: 'lesson', skippable: true, name: text('summary-name', 'Summary'),
             content: [text('summary-text', 'Finish')],
+          };
+          config.sections.content.push('quiz-section', 'summary');
+          const result = buildLesson(config, 'uk-UA', {
+            ...definitions,
+            sections: { ...definitions.sections, 'quiz-section': quiz(), summary },
           });
-          const result = buildLesson(config, 'uk-UA');
           assert.deepEqual(result.sections.content.map(section => section.id), [
             'theory', 'quiz', 'summary',
           ]);
@@ -139,7 +163,7 @@ describe('Utils', () => {
             ray: { en: { title: 'Ray' }, uk: { title: 'Промінь' } },
             practice: { en: { title: 'Practice' }, uk: { title: 'Практика' } },
           };
-          assert.deepEqual(buildLesson(config, 'uk-UA').sceneLocale, {
+          assert.deepEqual(buildLesson(config, 'uk-UA', catalog()).sceneLocale, {
             ray: { title: 'Промінь' },
             practice: { title: 'Практика' },
           });
@@ -148,22 +172,23 @@ describe('Utils', () => {
         it('should fall back to English for scenes missing a requested translation', () => {
           const config = lesson();
           config.sceneLocales = { practice: { en: { title: 'Practice' }, uk: { title: 'Практика' } } };
-          assert.deepEqual(buildLesson(config, 'pl-PL').sceneLocale, { practice: { title: 'Practice' } });
+          assert.deepEqual(buildLesson(config, 'pl-PL', catalog()).sceneLocale, { practice: { title: 'Practice' } });
         });
 
         it('should reject scenes without either the selected language or English fallback', () => {
           const config = lesson();
           config.sceneLocales = { practice: { uk: { title: 'Практика' } } };
-          assert.throws(() => buildLesson(config, 'de-DE'), /no translation/);
+          assert.throws(() => buildLesson(config, 'de-DE', catalog()), /no translation/);
         });
       });
 
       describe('Input integrity', () => {
         it('should not mutate lesson content, nested resources, or quiz configuration', () => {
           const config = lesson();
-          config.sections.content.push(quiz());
+          const definitions = catalog();
+          config.sections.content.push('quiz-section');
           const before = structuredClone(config);
-          buildLesson(config, 'uk-UA');
+          buildLesson(config, 'uk-UA', { ...definitions, sections: { ...definitions.sections, 'quiz-section': quiz() } });
           assert.deepEqual(config, before);
         });
       });
