@@ -194,6 +194,55 @@ const pl = {
   notes: { caption: 'Animacja została znacznie spowolniona, ale zachowano stosunek prędkości. Powietrze i próżnia wyglądają niemal tak samo. Powrót punktu tylko powtarza model i nie przedstawia odbicia. Wartości dla światła widzialnego są przybliżone i zależą od warunków.', model: 'Model: v = c / n.', sourceLink: 'Wartości współczynnika załamania: OpenStax' },
 } satisfies Practice_Locale;
 
+const lt = {
+  header: { eyebrow: "TYRINĖK · LYGINК · STEBĖK", title: "Ta pati šviesa. Skirtingos terpės.", description: "Keisk terpes ir palygink, kiek laiko šviesai reikia tam pačiam atstumui įveikti. Taškas kartotinėje animacijoje juda tarp šaltinio ir ekrano." },
+  selector: { label: "Šviesos sklidimo terpė", media: { vacuum: "Vakuumas", air: "Oras", water: "Vanduo" } },
+  simulation: { trackPrefix: "Šviesos sklidimo modelis: ", source: "Šaltinis", screen: "Ekranas", play: "Paleisti", pause: "Pauzė", speedUnit: "km/s" },
+  insight: { quote: "Šviesos greitis priklauso nuo terpės: vandenyje šviesa sklinda lėčiau nei vakuume." },
+  notes: { caption: "Animacija gerokai sulėtinta, tačiau greičių santykis išlaikytas. Oras ir vakuumas atrodo beveik vienodai. Taško grįžimas tik pakartoja modelį, o ne vaizduoja atspindį. Matomosios šviesos vertės yra apytikslės ir priklauso nuo sąlygų.", model: "Modelis: v = c / n.", sourceLink: "Lūžio rodiklio reikšmių šaltinis – OpenStax" },
+} satisfies Practice_Locale;
+
+const lv = {
+  header: { eyebrow: "IZPĒTI · SALĪDZINI · NOVĒRO", title: "Viena gaisma. Dažādas vides.", description: "Pārslēdz vides un salīdzini, cik ilgi gaisma veic vienādu attālumu. Punkts atkārtotā animācijā pārvietojas starp avotu un ekrānu." },
+  selector: { label: "Gaismas izplatīšanās vide", media: { vacuum: "Vakuums", air: "Gaiss", water: "Ūdens" } },
+  simulation: { trackPrefix: "Gaismas izplatīšanās modelis: ", source: "Avots", screen: "Ekrāns", play: "Atskaņot", pause: "Pauze", speedUnit: "km/s" },
+  insight: { quote: "Gaismas ātrums ir atkarīgs no vides: ūdenī gaisma izplatās lēnāk nekā vakuumā." },
+  notes: { caption: "Animācija ir ievērojami palēnināta, bet ātrumu attiecība ir saglabāta. Gaiss un vakuums izskatās gandrīz vienādi. Punkta atgriešanās tikai atkārto modeli un nerāda atstarošanos. Redzamās gaismas vērtības ir aptuvenas un atkarīgas no apstākļiem.", model: "Modelis: v = c / n.", sourceLink: "Laušanas koeficienta vērtību avots — OpenStax" },
+} satisfies Practice_Locale;
+
+const et = {
+  header: { eyebrow: "UURI · VÕRDLE · MÄRKA", title: "Sama valgus. Erinevad keskkonnad.", description: "Vaheta keskkondi ja võrdle, kui kaua kulub valgusel sama vahemaa läbimiseks. Punkt liigub korduvas animatsioonis valgusallika ja ekraani vahel." },
+  selector: { label: "Valguse levimise keskkond", media: { vacuum: "Vaakum", air: "Õhk", water: "Vesi" } },
+  simulation: { trackPrefix: "Valguse levimise mudel: ", source: "Allikas", screen: "Ekraan", play: "Esita", pause: "Paus", speedUnit: "km/s" },
+  insight: { quote: "Valguse kiirus sõltub keskkonnast: vees levib valgus aeglasemalt kui vaakumis." },
+  notes: { caption: "Animatsioon on oluliselt aeglustatud, kuid kiiruste suhted on säilitatud. Õhk ja vaakum paistavad peaaegu ühesugused. Punkti tagasiliikumine kordab ainult mudelit ega kujuta peegeldumist. Nähtava valguse väärtused on ligikaudsed ja sõltuvad tingimustest.", model: "Mudel: v = c / n.", sourceLink: "Murdumisnäitaja väärtuste allikas — OpenStax" },
+} satisfies Practice_Locale;
+
+const be = {
+  header: { eyebrow: "ДАСЬЛЕДУЙ · ПАРАЎНОЎВАЙ · НАЗІРАЙ", title: "Адно сьвятло. Розныя асяродзьдзі.", description: "Пераключай асяродзьдзі і параўноўвай, колькі часу сьвятлу трэба, каб прайсьці аднолькавую адлегласьць. Кропка паўторна рухаецца паміж крыніцай і экранам." },
+  selector: { label: "Асяродзьдзе пашырэньня сьвятла", media: { vacuum: "Вакуўм", air: "Паветра", water: "Вада" } },
+  simulation: { trackPrefix: "Мадэль пашырэньня сьвятла: ", source: "Крыніца", screen: "Экран", play: "Прайграць", pause: "Паўза", speedUnit: "км/с" },
+  insight: { quote: "Хуткасьць сьвятла залежыць ад асяродзьдзя: у вадзе сьвятло пашыраецца павольней, чым у вакуўме." },
+  notes: { caption: "Анімацыю моцна запаволілі, але суадносіны хуткасьцяў захавалі. Паветра і вакуўм выглядаюць амаль аднолькава. Вяртаньне кропкі толькі паўтарае мадэль, а не паказвае адбіцьцё. Значэньні для бачнага сьвятла прыблізныя і залежаць ад умоваў.", model: "Мадэль: v = c / n.", sourceLink: "Крыніца значэньняў паказьніка праламленьня — OpenStax" },
+} satisfies Practice_Locale;
+
+const ka = {
+  header: { eyebrow: "გამოიკვლიე · შეადარე · დააკვირდი", title: "ერთი სინათლე. სხვადასხვა გარემო.", description: "შეცვალე გარემო და შეადარე დრო, რომელიც სინათლეს ერთნაირი მანძილის გასავლელად სჭირდება. წერტილი წყაროსა და ეკრანს შორის განმეორებით მოძრაობს." },
+  selector: { label: "სინათლის გავრცელების გარემო", media: { vacuum: "ვაკუუმი", air: "ჰაერი", water: "წყალი" } },
+  simulation: { trackPrefix: "სინათლის გავრცელების მოდელი: ", source: "წყარო", screen: "ეკრანი", play: "გაშვება", pause: "პაუზა", speedUnit: "კმ/წმ" },
+  insight: { quote: "სინათლის სიჩქარე დამოკიდებულია გარემოზე: წყალში სინათლე უფრო ნელა ვრცელდება, ვიდრე ვაკუუმში." },
+  notes: { caption: "ანიმაცია მნიშვნელოვნად შენელებულია, მაგრამ სიჩქარეთა თანაფარდობა შენარჩუნებულია. ჰაერი და ვაკუუმი თითქმის ერთნაირად ჩანს. წერტილის დაბრუნება მხოლოდ მოდელის გამეორებაა და არ ასახავს არეკვლას. ხილული სინათლის მნიშვნელობები მიახლოებითია და პირობებზეა დამოკიდებული.", model: "მოდელი: v = c / n.", sourceLink: "გარდატეხის მაჩვენებლის მნიშვნელობების წყარო — OpenStax" },
+} satisfies Practice_Locale;
+
+const kk = {
+  header: { eyebrow: "ЗЕРТТЕ · САЛЫСТЫР · БАҚЫЛА", title: "Бір жарық. Әртүрлі орта.", description: "Ортаны ауыстырып, жарықтың бірдей қашықтықты жүріп өту уақытын салыстыр. Нүкте жарық көзі мен экран арасында қайталанып қозғалады." },
+  selector: { label: "Жарық таралатын орта", media: { vacuum: "Вакуум", air: "Ауа", water: "Су" } },
+  simulation: { trackPrefix: "Жарықтың таралу моделі: ", source: "Көз", screen: "Экран", play: "Ойнату", pause: "Кідірту", speedUnit: "км/с" },
+  insight: { quote: "Жарықтың жылдамдығы ортаға тәуелді: суда жарық вакуумға қарағанда баяу таралады." },
+  notes: { caption: "Анимация едәуір баяулатылған, бірақ жылдамдықтардың қатынасы сақталған. Ауа мен вакуумның көрінісі дерлік бірдей. Нүктенің қайтуы тек модельді қайталайды, шағылуды көрсетпейді. Көрінетін жарыққа арналған мәндер жуық және жағдайға байланысты өзгереді.", model: "Модель: v = c / n.", sourceLink: "Сыну көрсеткішінің мәндері: OpenStax" },
+} satisfies Practice_Locale;
+
 export const locales = {
   en, zh, hi, es, ar, fr, bn, pt, ur, id, de, ja, ko, tr, vi, ta, te, mr, ms, he, pl, uk,
+  lt, lv, et, be, ka, kk,
 } satisfies Record<DefaultSupportedLanguage['language'], Practice_Locale>;
