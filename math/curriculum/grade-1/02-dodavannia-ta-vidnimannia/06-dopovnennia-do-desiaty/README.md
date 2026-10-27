@@ -9,5 +9,9 @@
 
 - `math.addsub.make-ten-strategy` — `36dd9741-4d7a-4042-98b4-62b77a8b877f`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Це не повний методичний brief.
+
 ---
 [Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
