@@ -4,7 +4,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 const taxonomy = join(process.cwd(), 'math', 'skillsTaxonomy');
-const domains = ['algebra', 'arithmetic', 'counting', 'fractions', 'geometry', 'numeration'] as const;
+const domains = ['algebra', 'arithmetic', 'counting', 'fractions', 'geometry', 'measurement', 'numeration'] as const;
 
 const lines = (path: string): string[] =>
   readFileSync(path, 'utf8').trim().split('\n').map(line => line.trim()).filter(Boolean);
