@@ -1,25 +1,28 @@
-# SVG flags
+# Static SVG locale flags
 
-Every asset is an independent inline SVG component: color fields, bands, cantons and simple geometric shapes only. No common geometry builder is used.
+SVG assets live in `public/flags/<code>.svg`. The `Flag` component uses Next.js `Image` and a strict mapping from the current `DefaultSupportedLanguage['locale']` union to asset codes. A per-flag TSX component is **not** required.
 
-The `Flag` dispatcher supports **only** the current 22 entries in `DEFAULT_SUPPORTED_LANGUAGES` (19 distinct flags: four Indian language entries share the Indian flag). Seven additional assets are ready for future localization but are not yet supported by `Flag`: historical Belarusian white-red-white (`be-tarask`), Crimean Tatar (`crh-Latn`), Lithuania (`lt`), Latvia (`lv`), Estonia (`et`), Georgia (`ka-GE`) and Kazakhstan (`kk-Cyrl-KZ`). The language definitions and locale files remain unchanged.
+- No new supported languages or translations are registered.
+- 22 existing locales map to 19 country flag assets; Hindi, Tamil, Telugu and Marathi share `in.svg`.
+- Seven future-ready assets are included, but not selectable by the dispatcher: Belarusian Taraškievica (`by.svg`), Crimean Tatar (`crh.svg`), Lithuanian (`lt.svg`), Latvian (`lv.svg`), Estonian (`ee.svg`), Georgian (`ge.svg`), Kazakh (`kz.svg`).
+- `pt.svg` is Portugal's flag, retained as an unused asset; `pt-BR` intentionally maps to `br.svg`, **not** `pt.svg`.
+- `crh.svg` uses the three-letter ISO 639-3 *language* code, because the Crimean Tatar people have no ISO 3166-1 two-letter country code. All other asset names use ISO 3166-1 alpha-2 country codes.
 
-## Pending symbols and insignia
+## Dimensions and vector safety
 
-- United States: 50 white stars
-- China: five yellow stars
-- India: Ashoka Chakra
-- Spain: coat of arms
-- Saudi Arabia: Shahada and sword
-- Brazil: blue celestial globe, motto band and stars
-- Pakistan: crescent and star
-- South Korea: taegeuk and four trigrams
-- Turkey: crescent and star
-- Vietnam: yellow star
-- Malaysia: crescent and 14-point star
-- Israel: Star of David
-- Crimean Tatar: golden tamga
-- Georgia: four smaller red Bolnisi crosses
-- Kazakhstan: golden sun with 32 rays, steppe eagle and traditional vertical ornament
+National flags have **different official aspect ratios** (e.g. US 19:10, Kazakhstan 2:1, Ukraine 3:2, Estonia 11:7). Do **not** overwrite their viewBoxes to force 3:4 or 3:2. The dispatcher defaults to a 24 × 16 CSS-pixel image slot with `object-fit: contain`, and callers may override width/height.
 
-The simple geometric red discs of Japan and Bangladesh are rendered. Any later insignia should use a verified source and appropriate licensing. SVGs are decorative by default when rendered by `Flag`, but callers may override ARIA attributes.
+Every SVG here has a `viewBox` and no root absolute width/height. XML declarations, DTDs, comments, titles, editor metadata and embedded raster images were removed. All `href`/xlink references, where used, are internal `#id` references. The assets are displayed as external image files, rather than injected as HTML.
+
+`Flag.assets.unit.spec.ts` enforces an inert SVG subset and sensible native viewBox geometry. Any new asset should also be reviewed before publishing, not only regex-tested.
+
+## Noteworthy assets
+
+- `ua.svg`: rebuilt as two clean vectors; source SVG embedded a PNG and Inkscape metadata.
+- `by.svg`: replaced the heavy Pahonia variant with the plain historical white-red-white flag used for `be-tarask`.
+- `pl.svg`: replaced the heavy coat-of-arms variant with the plain Polish national flag.
+- `br.svg`: **temporary simplified** vector derived from the former BrazilFlag component. The star field, white motto band and correct emblem details need a verified asset before considering it a faithful official Brazilian flag.
+- `pt.svg`: Portuguese flag, not used for Brazilian Portuguese.
+- `es.svg`: detailed source is still about **155 KB**, much larger than most flags. Its geometry is retained; consider further lossless SVG optimization if bandwidth is critical.
+
+See `SOURCES.md` for the original imported filenames and editorial/licensing reminders.

@@ -1,58 +1,60 @@
-import type { ComponentType, SVGProps } from 'react';
+import Image, { type ImageProps } from 'next/image';
 import type { DefaultSupportedLanguage } from '@types';
-import {
-  UnitedStatesFlag,
-  ChinaFlag,
-  IndiaFlag,
-  SpainFlag,
-  SaudiArabiaFlag,
-  FranceFlag,
-  BangladeshFlag,
-  BrazilFlag,
-  PakistanFlag,
-  IndonesiaFlag,
-  GermanyFlag,
-  JapanFlag,
-  SouthKoreaFlag,
-  TurkeyFlag,
-  VietnamFlag,
-  MalaysiaFlag,
-  IsraelFlag,
-  PolandFlag,
-  UkraineFlag,
-} from './flags';
 
-/** Only locales with existing resources can be selected. */
+/** Only locales registered in the app have a flag dispatch entry. */
 export type FlagLocale = DefaultSupportedLanguage['locale'];
-export type FlagProps = Omit<SVGProps<SVGSVGElement>, 'children'> & { locale: FlagLocale };
+export type FlagProps = Omit<ImageProps, 'src' | 'alt'> & {
+  locale: FlagLocale;
+  alt?: string;
+};
 
-const flagsByLocale = {
-  'en-US': UnitedStatesFlag,
-  'zh-Hans-CN': ChinaFlag,
-  'hi-IN': IndiaFlag,
-  'es-ES': SpainFlag,
-  'ar-SA': SaudiArabiaFlag,
-  'fr-FR': FranceFlag,
-  'bn-BD': BangladeshFlag,
-  'pt-BR': BrazilFlag,
-  'ur-PK': PakistanFlag,
-  'id-ID': IndonesiaFlag,
-  'de-DE': GermanyFlag,
-  'ja-JP': JapanFlag,
-  'ko-KR': SouthKoreaFlag,
-  'tr-TR': TurkeyFlag,
-  'vi-VN': VietnamFlag,
-  'ta-IN': IndiaFlag,
-  'te-IN': IndiaFlag,
-  'mr-IN': IndiaFlag,
-  'ms-MY': MalaysiaFlag,
-  'he-IL': IsraelFlag,
-  'pl-PL': PolandFlag,
-  'uk-UA': UkraineFlag,
-} satisfies Record<FlagLocale, ComponentType<SVGProps<SVGSVGElement>>>;
+/**
+ * ISO 3166-1 alpha-2 country codes, not language codes.
+ * Unregistered future locales intentionally have no dispatcher entry.
+ */
+export const flagCountryByLocale = {
+  'en-US': 'us',
+  'zh-Hans-CN': 'cn',
+  'hi-IN': 'in',
+  'es-ES': 'es',
+  'ar-SA': 'sa',
+  'fr-FR': 'fr',
+  'bn-BD': 'bd',
+  'pt-BR': 'br',
+  'ur-PK': 'pk',
+  'id-ID': 'id',
+  'de-DE': 'de',
+  'ja-JP': 'jp',
+  'ko-KR': 'kr',
+  'tr-TR': 'tr',
+  'vi-VN': 'vn',
+  'ta-IN': 'in',
+  'te-IN': 'in',
+  'mr-IN': 'in',
+  'ms-MY': 'my',
+  'he-IL': 'il',
+  'pl-PL': 'pl',
+  'uk-UA': 'ua',
+} as const satisfies Record<FlagLocale, string>;
 
-/** Dispatcher for currently implemented locales, not the future flag assets. */
-export function Flag({ locale, ...svgProps }: FlagProps) {
-  const Component = flagsByLocale[locale];
-  return <Component width={24} height={16} aria-hidden="true" focusable="false" {...svgProps} />;
+/** A single image wrapper instead of individually authored React SVG components. */
+export function Flag({
+  locale,
+  alt = '',
+  width = 24,
+  height = 16,
+  style,
+  ...props
+}: FlagProps) {
+  return (
+    <Image
+      src={`/flags/${flagCountryByLocale[locale]}.svg`}
+      alt={alt}
+      width={width}
+      height={height}
+      unoptimized
+      style={{ objectFit: 'contain', ...style }}
+      {...props}
+    />
+  );
 }
