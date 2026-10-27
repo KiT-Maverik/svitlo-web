@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { steps_Skills_Ids } from './index.ids';
 
-export const countBy5 = buildSkillConfig({
+export const countBy5_Skill_Data = buildSkillConfig({
   id: steps_Skills_Ids.countBy5,
   name: {
     "en-US": "Counting in steps of 5",

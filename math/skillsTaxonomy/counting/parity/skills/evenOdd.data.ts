@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { parity_Skills_Ids } from './index.ids';
 
-export const evenOdd = buildSkillConfig({
+export const evenOdd_Skill_Data = buildSkillConfig({
   id: parity_Skills_Ids.evenOdd,
   name: {
     "en-US": "Identifying even and odd numbers using pairs",

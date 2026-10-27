@@ -1,2 +1,2 @@
-export { sequenceGroup } from './sequence.data';
+export { sequence_SkillGroup_Data } from './sequence.data';
 export * from './skills/index.data';

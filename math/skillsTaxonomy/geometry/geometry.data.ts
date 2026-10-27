@@ -1,9 +1,9 @@
 import { buildSkillDomainConfig } from '@/utils';
-import { geometry_Ids } from './geometry.ids';
-import { geometry_Groups_Ids } from './index.ids';
+import { geometry_SkillDomain_Ids } from './geometry.ids';
+import { geometry_SkillGroups_Ids } from './index.ids';
 
-export const geometry = buildSkillDomainConfig({
-  id: geometry_Ids.geometry,
+export const geometry_SkillDomain_Data = buildSkillDomainConfig({
+  id: geometry_SkillDomain_Ids.geometry,
   name: {
     "en-US": "Geometry",
     "zh-Hans-CN": "几何",
@@ -28,5 +28,5 @@ export const geometry = buildSkillDomainConfig({
     "pl-PL": "Geometria",
     "uk-UA": "Геометрія",
   },
-  groupIds: geometry_Groups_Ids,
+  groupIds: geometry_SkillGroups_Ids,
 });

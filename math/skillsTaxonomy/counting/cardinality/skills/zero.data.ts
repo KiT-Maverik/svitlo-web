@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { cardinality_Skills_Ids } from './index.ids';
 
-export const zero = buildSkillConfig({
+export const zero_Skill_Data = buildSkillConfig({
   id: cardinality_Skills_Ids.zero,
   name: {
     "en-US": "Understanding zero as an empty quantity",

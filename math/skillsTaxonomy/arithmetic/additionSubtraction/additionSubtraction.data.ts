@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { additionSubtraction_Ids } from './additionSubtraction.ids';
+import { additionSubtraction_SkillGroup_Ids } from './additionSubtraction.ids';
 import { additionSubtraction_Skills_Ids } from './skills/index.ids';
 
-export const additionSubtraction = buildSkillGroupConfig({
-  id: additionSubtraction_Ids.additionSubtraction,
+export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
+  id: additionSubtraction_SkillGroup_Ids.additionSubtraction,
   name: {
     "en-US": "Combining addition and subtraction",
     "zh-Hans-CN": "加减法的结合运用",

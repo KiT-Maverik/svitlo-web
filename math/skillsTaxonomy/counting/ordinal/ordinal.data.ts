@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { ordinal_Ids } from './ordinal.ids';
+import { ordinal_SkillGroup_Ids } from './ordinal.ids';
 import { ordinal_Skills_Ids } from './skills/index.ids';
 
-export const ordinalGroup = buildSkillGroupConfig({
-  id: ordinal_Ids.ordinal,
+export const ordinal_SkillGroup_Data = buildSkillGroupConfig({
+  id: ordinal_SkillGroup_Ids.ordinal,
   name: {
     "en-US": "Ordinal counting",
     "zh-Hans-CN": "顺序计数",

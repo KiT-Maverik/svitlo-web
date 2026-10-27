@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { sequence_Skills_Ids } from './index.ids';
 
-export const backward20 = buildSkillConfig({
+export const backward20_Skill_Data = buildSkillConfig({
   id: sequence_Skills_Ids.backward20,
   name: {
     "en-US": "Counting backward within 20",

@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { cardinality_Skills_Ids } from './index.ids';
 
-export const compareSets = buildSkillConfig({
+export const compareSets_Skill_Data = buildSkillConfig({
   id: cardinality_Skills_Ids.compareSets,
   name: {
     "en-US": "Comparing sets by matching or counting",

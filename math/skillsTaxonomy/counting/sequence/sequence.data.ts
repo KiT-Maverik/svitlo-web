@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { sequence_Ids } from './sequence.ids';
+import { sequence_SkillGroup_Ids } from './sequence.ids';
 import { sequence_Skills_Ids } from './skills/index.ids';
 
-export const sequenceGroup = buildSkillGroupConfig({
-  id: sequence_Ids.sequence,
+export const sequence_SkillGroup_Data = buildSkillGroupConfig({
+  id: sequence_SkillGroup_Ids.sequence,
   name: {
     "en-US": "Number sequences",
     "zh-Hans-CN": "数列",

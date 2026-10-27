@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { perimeterArea_Ids } from './perimeterArea.ids';
+import { perimeterArea_SkillGroup_Ids } from './perimeterArea.ids';
 import { perimeterArea_Skills_Ids } from './skills/index.ids';
 
-export const perimeterArea = buildSkillGroupConfig({
-  id: perimeterArea_Ids.perimeterArea,
+export const perimeterArea_SkillGroup_Data = buildSkillGroupConfig({
+  id: perimeterArea_SkillGroup_Ids.perimeterArea,
   name: {
     "en-US": "Relationship between perimeter and area",
     "zh-Hans-CN": "周长与面积的关系",

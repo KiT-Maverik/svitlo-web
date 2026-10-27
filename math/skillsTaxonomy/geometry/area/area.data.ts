@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { area_Ids } from './area.ids';
+import { area_SkillGroup_Ids } from './area.ids';
 import { area_Skills_Ids } from './skills/index.ids';
 
-export const area = buildSkillGroupConfig({
-  id: area_Ids.area,
+export const area_SkillGroup_Data = buildSkillGroupConfig({
+  id: area_SkillGroup_Ids.area,
   name: {
     "en-US": "Area",
     "zh-Hans-CN": "面积",

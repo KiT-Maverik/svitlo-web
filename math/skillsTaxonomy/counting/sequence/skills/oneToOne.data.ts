@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { sequence_Skills_Ids } from './index.ids';
 
-export const oneToOne = buildSkillConfig({
+export const oneToOne_Skill_Data = buildSkillConfig({
   id: sequence_Skills_Ids.oneToOne,
   name: {
     "en-US": "One-to-one correspondence when counting",

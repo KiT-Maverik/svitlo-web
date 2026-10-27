@@ -1,9 +1,9 @@
 import { buildSkillDomainConfig } from '@/utils';
-import { arithmetic_Ids } from './arithmetic.ids';
-import { arithmetic_Groups_Ids } from './index.ids';
+import { arithmetic_SkillDomain_Ids } from './arithmetic.ids';
+import { arithmetic_SkillGroups_Ids } from './index.ids';
 
-export const arithmetic = buildSkillDomainConfig({
-  id: arithmetic_Ids.arithmetic,
+export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
+  id: arithmetic_SkillDomain_Ids.arithmetic,
   name: {
     "en-US": "Arithmetic",
     "zh-Hans-CN": "算术",
@@ -28,5 +28,5 @@ export const arithmetic = buildSkillDomainConfig({
     "pl-PL": "Arytmetyka",
     "uk-UA": "Арифметика",
   },
-  groupIds: arithmetic_Groups_Ids,
+  groupIds: arithmetic_SkillGroups_Ids,
 });

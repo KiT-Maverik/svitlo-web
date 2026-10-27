@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { perimeter_Ids } from './perimeter.ids';
+import { perimeter_SkillGroup_Ids } from './perimeter.ids';
 import { perimeter_Skills_Ids } from './skills/index.ids';
 
-export const perimeter = buildSkillGroupConfig({
-  id: perimeter_Ids.perimeter,
+export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
+  id: perimeter_SkillGroup_Ids.perimeter,
   name: {
     "en-US": "Perimeter",
     "zh-Hans-CN": "周长",

@@ -1,9 +1,9 @@
 import { buildSkillDomainConfig } from '@/utils';
-import { counting_Ids } from './counting.ids';
-import { counting_Groups_Ids } from './index.ids';
+import { counting_SkillDomain_Ids } from './counting.ids';
+import { counting_SkillGroups_Ids } from './index.ids';
 
-export const counting = buildSkillDomainConfig({
-  id: counting_Ids.counting,
+export const counting_SkillDomain_Data = buildSkillDomainConfig({
+  id: counting_SkillDomain_Ids.counting,
   name: {
     "en-US": "Counting",
     "zh-Hans-CN": "计数",
@@ -28,5 +28,5 @@ export const counting = buildSkillDomainConfig({
     "pl-PL": "Liczenie",
     "uk-UA": "Лічба",
   },
-  groupIds: counting_Groups_Ids,
+  groupIds: counting_SkillGroups_Ids,
 });

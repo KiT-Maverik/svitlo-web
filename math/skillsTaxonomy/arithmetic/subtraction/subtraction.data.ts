@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { subtraction_Ids } from './subtraction.ids';
+import { subtraction_SkillGroup_Ids } from './subtraction.ids';
 import { subtraction_Skills_Ids } from './skills/index.ids';
 
-export const subtraction = buildSkillGroupConfig({
-  id: subtraction_Ids.subtraction,
+export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
+  id: subtraction_SkillGroup_Ids.subtraction,
   name: {
     "en-US": "Subtraction",
     "zh-Hans-CN": "减法",

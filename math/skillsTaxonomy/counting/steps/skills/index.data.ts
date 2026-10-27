@@ -1,4 +1,4 @@
-export { countBy10 } from './countBy10.data';
-export { countBy100 } from './countBy100.data';
-export { countBy2 } from './countBy2.data';
-export { countBy5 } from './countBy5.data';
+export { countBy10_Skill_Data } from './countBy10.data';
+export { countBy100_Skill_Data } from './countBy100.data';
+export { countBy2_Skill_Data } from './countBy2.data';
+export { countBy5_Skill_Data } from './countBy5.data';

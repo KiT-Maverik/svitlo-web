@@ -1,1 +1,1 @@
-export { basicOrdinal } from './basicOrdinal.data';
+export { basicOrdinal_Skill_Data } from './basicOrdinal.data';

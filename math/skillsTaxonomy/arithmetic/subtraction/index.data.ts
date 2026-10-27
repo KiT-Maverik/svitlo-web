@@ -1,1 +1,1 @@
-export { subtraction } from './subtraction.data';
+export { subtraction_SkillGroup_Data } from './subtraction.data';

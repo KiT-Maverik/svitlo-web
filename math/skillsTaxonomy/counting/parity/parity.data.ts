@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { parity_Ids } from './parity.ids';
+import { parity_SkillGroup_Ids } from './parity.ids';
 import { parity_Skills_Ids } from './skills/index.ids';
 
-export const parityGroup = buildSkillGroupConfig({
-  id: parity_Ids.parity,
+export const parity_SkillGroup_Data = buildSkillGroupConfig({
+  id: parity_SkillGroup_Ids.parity,
   name: {
     "en-US": "Even and odd numbers",
     "zh-Hans-CN": "奇数与偶数",

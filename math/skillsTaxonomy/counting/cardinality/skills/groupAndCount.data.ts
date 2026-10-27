@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { cardinality_Skills_Ids } from './index.ids';
 
-export const groupAndCount = buildSkillConfig({
+export const groupAndCount_Skill_Data = buildSkillConfig({
   id: cardinality_Skills_Ids.groupAndCount,
   name: {
     "en-US": "Counting objects in groups of tens or hundreds",

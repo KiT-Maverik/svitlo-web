@@ -1,1 +1,1 @@
-export { perimeterArea } from './perimeterArea.data';
+export { perimeterArea_SkillGroup_Data } from './perimeterArea.data';

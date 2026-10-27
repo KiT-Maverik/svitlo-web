@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { addition_Ids } from './addition.ids';
+import { addition_SkillGroup_Ids } from './addition.ids';
 import { addition_Skills_Ids } from './skills/index.ids';
 
-export const addition = buildSkillGroupConfig({
-  id: addition_Ids.addition,
+export const addition_SkillGroup_Data = buildSkillGroupConfig({
+  id: addition_SkillGroup_Ids.addition,
   name: {
     "en-US": "Addition",
     "zh-Hans-CN": "加法",

@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { cardinality_Skills_Ids } from './index.ids';
 
-export const basicCardinality = buildSkillConfig({
+export const basicCardinality_Skill_Data = buildSkillConfig({
   id: cardinality_Skills_Ids.basicCardinality,
   name: {
     "en-US": "Determining how many objects are in a set",

@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { sequence_Skills_Ids } from './index.ids';
 
-export const forward20 = buildSkillConfig({
+export const forward20_Skill_Data = buildSkillConfig({
   id: sequence_Skills_Ids.forward20,
   name: {
     "en-US": "Counting forward within 20",

@@ -1,7 +1,7 @@
 import { buildSkillConfig } from '@/utils';
 import { ordinal_Skills_Ids } from './index.ids';
 
-export const basicOrdinal = buildSkillConfig({
+export const basicOrdinal_Skill_Data = buildSkillConfig({
   id: ordinal_Skills_Ids.basicOrdinal,
   name: {
     "en-US": "Recognizing ordinal position",

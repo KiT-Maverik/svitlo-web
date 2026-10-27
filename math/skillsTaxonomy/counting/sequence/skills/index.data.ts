@@ -1,5 +1,5 @@
-export { backward20 } from './backward20.data';
-export { forward100 } from './forward100.data';
-export { forward1000 } from './forward1000.data';
-export { forward20 } from './forward20.data';
-export { oneToOne } from './oneToOne.data';
+export { backward20_Skill_Data } from './backward20.data';
+export { forward100_Skill_Data } from './forward100.data';
+export { forward1000_Skill_Data } from './forward1000.data';
+export { forward20_Skill_Data } from './forward20.data';
+export { oneToOne_Skill_Data } from './oneToOne.data';

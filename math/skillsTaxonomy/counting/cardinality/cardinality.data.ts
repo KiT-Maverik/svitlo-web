@@ -1,9 +1,9 @@
 import { buildSkillGroupConfig } from '@/utils';
-import { cardinality_Ids } from './cardinality.ids';
+import { cardinality_SkillGroup_Ids } from './cardinality.ids';
 import { cardinality_Skills_Ids } from './skills/index.ids';
 
-export const cardinalityGroup = buildSkillGroupConfig({
-  id: cardinality_Ids.cardinality,
+export const cardinality_SkillGroup_Data = buildSkillGroupConfig({
+  id: cardinality_SkillGroup_Ids.cardinality,
   name: {
     "en-US": "Cardinality",
     "zh-Hans-CN": "基数与数量",
