@@ -9,5 +9,9 @@
 
 - `math.addsub.part-whole` — `edd12274-ab3e-4409-bbc0-9847140ec465`
 
+## Сценарій взаємодії (draft)
+
+[Sections — 6 сценарних секцій](./Sections/README.md). Це сценарій, а не детальний Learning Brief.
+
 ---
 [Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
