@@ -508,6 +508,48 @@ const pl = {
   }
 } satisfies LightPropagationSimulation_Locale;
 
+const lt = {
+  scene: { title: "Sek šviesos kelią", description: "Nuo šaltinio tiesiai iki ekrano.", accessibleName: "Šviesos sklidimo nuo šaltinio iki ekrano animacija" },
+  track: { accessibleDescription: "Geltona žymė juda tiesia linija nuo šaltinio kairėje iki ekrano dešinėje.", source: "Šviesos šaltinis", screen: "Ekranas" },
+  controls: { play: "Paleisti", pause: "Pauzė", speed: "Greitis", speedAccessibleName: "Animacijos greitis", speedUnit: "×" },
+  hints: { scale: "Supaprastintas modelis: tikrasis šviesos greitis neatvaizduojamas pagal mastelį." },
+} satisfies LightPropagationSimulation_Locale;
+
+const lv = {
+  scene: { title: "Izseko gaismas ceļu", description: "No avota pa taisnu līniju līdz ekrānam.", accessibleName: "Gaismas izplatīšanās animācija no avota līdz ekrānam" },
+  track: { accessibleDescription: "Dzeltenā atzīme pārvietojas pa taisnu līniju no avota kreisajā pusē uz ekrānu labajā pusē.", source: "Gaismas avots", screen: "Ekrāns" },
+  controls: { play: "Atskaņot", pause: "Pauze", speed: "Ātrums", speedAccessibleName: "Animācijas ātrums", speedUnit: "×" },
+  hints: { scale: "Vienkāršots modelis: īstais gaismas ātrums nav attēlots mērogā." },
+} satisfies LightPropagationSimulation_Locale;
+
+const et = {
+  scene: { title: "Jälgi valguse teekonda", description: "Allikast sirgjooneliselt ekraanini.", accessibleName: "Animatsioon valguse levimisest allikast ekraanini" },
+  track: { accessibleDescription: "Kollane tähis liigub sirgjooneliselt vasakul asuvast valgusallikast paremal oleva ekraanini.", source: "Valgusallikas", screen: "Ekraan" },
+  controls: { play: "Esita", pause: "Paus", speed: "Kiirus", speedAccessibleName: "Animatsiooni kiirus", speedUnit: "×" },
+  hints: { scale: "Lihtsustatud mudel: valguse tegelik kiirus ei ole kujutatud õiges mõõtkavas." },
+} satisfies LightPropagationSimulation_Locale;
+
+const be = {
+  scene: { title: "Прасачы шлях сьвятла", description: "Ад крыніцы па простай лініі да экрана.", accessibleName: "Анімацыя пашырэньня сьвятла ад крыніцы да экрана" },
+  track: { accessibleDescription: "Жоўтая пазнака рухаецца па простай лініі ад крыніцы зьлева да экрана справа.", source: "Крыніца сьвятла", screen: "Экран" },
+  controls: { play: "Прайграць", pause: "Паўза", speed: "Хуткасьць", speedAccessibleName: "Хуткасьць анімацыі", speedUnit: "×" },
+  hints: { scale: "Спрошчаная мадэль: сапраўдная хуткасьць сьвятла не паказаная ў маштабе." },
+} satisfies LightPropagationSimulation_Locale;
+
+const ka = {
+  scene: { title: "მიჰყევი სინათლის გზას", description: "წყაროდან ეკრანამდე სწორი ხაზით.", accessibleName: "სინათლის წყაროდან ეკრანამდე გავრცელების ანიმაცია" },
+  track: { accessibleDescription: "ყვითელი მაჩვენებელი სწორ ხაზზე გადაადგილდება მარცხნივ მდებარე წყაროდან მარჯვნივ მდებარე ეკრანამდე.", source: "სინათლის წყარო", screen: "ეკრანი" },
+  controls: { play: "გაშვება", pause: "პაუზა", speed: "სიჩქარე", speedAccessibleName: "ანიმაციის სიჩქარე", speedUnit: "×" },
+  hints: { scale: "გამარტივებული მოდელი: სინათლის რეალური სიჩქარე მასშტაბით არ არის ნაჩვენები." },
+} satisfies LightPropagationSimulation_Locale;
+
+const kk = {
+  scene: { title: "Жарықтың жолын бақыла", description: "Көзден экранға дейін түзу сызық бойымен.", accessibleName: "Жарықтың көзден экранға таралу анимациясы" },
+  track: { accessibleDescription: "Сары белгі сол жақтағы жарық көзінен оң жақтағы экранға дейін түзу сызық бойымен қозғалады.", source: "Жарық көзі", screen: "Экран" },
+  controls: { play: "Ойнату", pause: "Кідірту", speed: "Жылдамдық", speedAccessibleName: "Анимация жылдамдығы", speedUnit: "×" },
+  hints: { scale: "Қарапайым модель: жарықтың нақты жылдамдығы масштабпен көрсетілмеген." },
+} satisfies LightPropagationSimulation_Locale;
+
 export const locales = {
   en,
   zh,
@@ -531,4 +573,5 @@ export const locales = {
   he,
   pl,
   uk,
+  lt, lv, et, be, ka, kk,
 } satisfies Record<DefaultSupportedLanguage['language'], LightPropagationSimulation_Locale>;
