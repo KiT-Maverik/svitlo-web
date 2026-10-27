@@ -6,6 +6,12 @@ export const capacity_SkillGroup_Data = buildSkillGroupConfig({
   id: capacity_SkillGroup_Ids.capacity,
   name: {
     "en": "Capacity",
+    "lt": "Talpa",
+    "lv": "Tilpums",
+    "et": "Mahutavus",
+    "be": "Умяшчальнасьць",
+    "ka": "ტევადობა",
+    "kk": "Сыйымдылық",
     "zh": "容量",
     "hi": "धारिता",
     "es": "Capacidad",

@@ -6,6 +6,12 @@ export const mass_SkillGroup_Data = buildSkillGroupConfig({
   id: mass_SkillGroup_Ids.mass,
   name: {
     "en": "Mass",
+    "lt": "Masė",
+    "lv": "Masa",
+    "et": "Mass",
+    "be": "Маса",
+    "ka": "მასა",
+    "kk": "Масса",
     "zh": "质量",
     "hi": "द्रव्यमान",
     "es": "Masa",

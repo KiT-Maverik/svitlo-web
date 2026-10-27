@@ -6,6 +6,12 @@ export const general_SkillGroup_Data = buildSkillGroupConfig({
   id: general_SkillGroup_Ids.general,
   name: {
     "en": "General measurement skills",
+    "lt": "Bendrieji matavimo įgūdžiai",
+    "lv": "Vispārīgās mērīšanas prasmes",
+    "et": "Üldised mõõtmisoskused",
+    "be": "Агульныя навыкі вымярэньня",
+    "ka": "გაზომვის ზოგადი უნარები",
+    "kk": "Жалпы өлшеу дағдылары",
     "zh": "通用测量技能",
     "hi": "सामान्य मापन कौशल",
     "es": "Habilidades generales de medición",
