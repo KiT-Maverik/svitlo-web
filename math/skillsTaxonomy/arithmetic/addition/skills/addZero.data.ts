@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { addition_Skills_Ids } from './index.ids';
+
+export const addZero_Skill_Data = buildSkillConfig({
+  id: addition_Skills_Ids.addZero,
+  name: {
+    en: "Addition — Zero",
+    zh: "加法 — 零",
+    hi: "जोड़ — शून्य",
+    es: "Suma — Cero",
+    ar: "الجمع — الصفر",
+    fr: "Addition — Zéro",
+    bn: "যোগ — শূন্য",
+    pt: "Adição — Zero",
+    ur: "جمع — صفر",
+    id: "Penjumlahan — Nol",
+    de: "Addition — Null",
+    ja: "加法 — ゼロ",
+    ko: "덧셈 — 영",
+    tr: "Toplama — Sıfır",
+    vi: "Phép cộng — Số không",
+    ta: "கூட்டல் — பூச்சியம்",
+    te: "కూడిక — సున్నా",
+    mr: "बेरीज — शून्य",
+    ms: "Penambahan — Sifar",
+    he: "חיבור — אפס",
+    pl: "Dodawanie — Zero",
+    uk: "Додавання — Нуль",
+  },
+});

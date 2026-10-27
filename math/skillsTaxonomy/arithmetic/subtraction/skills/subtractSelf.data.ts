@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { subtraction_Skills_Ids } from './index.ids';
+
+export const subtractSelf_Skill_Data = buildSkillConfig({
+  id: subtraction_Skills_Ids.subtractSelf,
+  name: {
+    en: "Subtraction — Same number",
+    zh: "减法 — 同一个数",
+    hi: "घटाव — वही संख्या",
+    es: "Resta — Mismo número",
+    ar: "الطرح — العدد نفسه",
+    fr: "Soustraction — Même nombre",
+    bn: "বিয়োগ — একই সংখ্যা",
+    pt: "Subtração — Mesmo número",
+    ur: "تفریق — وہی عدد",
+    id: "Pengurangan — Bilangan yang sama",
+    de: "Subtraktion — Dieselbe Zahl",
+    ja: "減法 — 同じ数",
+    ko: "뺄셈 — 같은 수",
+    tr: "Çıkarma — Aynı sayı",
+    vi: "Phép trừ — Cùng một số",
+    ta: "கழித்தல் — அதே எண்",
+    te: "తీసివేత — అదే సంఖ్య",
+    mr: "वजाबाकी — तीच संख्या",
+    ms: "Penolakan — Nombor sama",
+    he: "חיסור — אותו מספר",
+    pl: "Odejmowanie — Ta sama liczba",
+    uk: "Віднімання — Те саме число",
+  },
+});

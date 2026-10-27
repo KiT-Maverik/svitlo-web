@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { addition_Skills_Ids } from './index.ids';
+
+export const addMeaning_Skill_Data = buildSkillConfig({
+  id: addition_Skills_Ids.addMeaning,
+  name: {
+    en: "Addition — Meaning and models",
+    zh: "加法 — 含义与模型",
+    hi: "जोड़ — अर्थ और मॉडल",
+    es: "Suma — Significado y modelos",
+    ar: "الجمع — المعنى والنماذج",
+    fr: "Addition — Sens et représentations",
+    bn: "যোগ — অর্থ ও মডেল",
+    pt: "Adição — Significado e modelos",
+    ur: "جمع — مفہوم اور نمونے",
+    id: "Penjumlahan — Makna dan model",
+    de: "Addition — Bedeutung und Modelle",
+    ja: "加法 — 意味とモデル",
+    ko: "덧셈 — 뜻과 모델",
+    tr: "Toplama — Anlam ve modeller",
+    vi: "Phép cộng — Ý nghĩa và mô hình",
+    ta: "கூட்டல் — பொருளும் மாதிரிகளும்",
+    te: "కూడిక — అర్థం మరియు నమూనాలు",
+    mr: "बेरीज — अर्थ आणि प्रतिमान",
+    ms: "Penambahan — Makna dan model",
+    he: "חיבור — משמעות ומודלים",
+    pl: "Dodawanie — Znaczenie i modele",
+    uk: "Додавання — Зміст і моделі",
+  },
+});
