@@ -1,7 +1,7 @@
-export { buildLesson } from './builders/build-lesson/build-lesson.utils';
-export { buildQuestion } from './builders/build-question/build-question.utils';
-export { buildQuiz } from './builders/build-quiz/build-quiz.utils';
-export { buildResource, buildTextResource } from './builders/build-resource/build-resource.utils';
+export { buildLesson } from './builders/buildLesson/buildLesson.utils';
+export { buildQuestion } from './builders/buildQuestion/buildQuestion.utils';
+export { buildQuiz } from './builders/buildQuiz/buildQuiz.utils';
+export { buildResource, buildTextResource } from './builders/buildResource/buildResource.utils';
 export {
   createDynamicQuestion,
   validateArgument,
@@ -27,4 +27,4 @@ export type {
 export { createLocalizedFileLocations } from './create-localized-file-locations/create-localized-file-locations.utils';
 export type { CreateLocalizedFileLocationsOptions, LocalizedFileLocations } from './create-localized-file-locations/create-localized-file-locations.utils';
 export { createTextResource } from './create-text-resource/create-text-resource.utils';
-export { buildSkillConfig } from './builders/config/build-skill-config.utils';
+export { buildSkillConfig } from './builders/config/buildSkillConfig.utils';

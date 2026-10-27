@@ -1,5 +1,5 @@
 import type { Skill_Config } from '../../../types/content/skill.types';
-import { buildSkillConfig } from './build-skill-config.utils';
+import { buildSkillConfig } from './buildSkillConfig.utils';
 
 const names = {} as Skill_Config['name'];
 

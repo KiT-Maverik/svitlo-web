@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 import type { Skill_Config } from '../../../types/content/skill.types';
-import { buildSkillConfig } from './build-skill-config.utils';
+import { buildSkillConfig } from './buildSkillConfig.utils';
 
 const allNames = () => Object.fromEntries(
   DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => [locale, `Skill in ${locale}`]),
