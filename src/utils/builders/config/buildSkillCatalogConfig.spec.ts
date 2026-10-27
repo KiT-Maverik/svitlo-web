@@ -15,11 +15,17 @@ const domainId = '9de735b7-4bcd-4b58-8832-d2d5d15846cd' as const;
 const skillId = '9d1e7906-fa72-4ac5-b313-b135333fb937' as const;
 
 describe('Skill catalog builders', () => {
-  it('preserves keyed reference objects and identity', () => {
+  it('preserves keyed references and injects distinct collection discriminators', () => {
     const group = { id: groupId, name: names(), skillIds: { first: skillId, second: domainId } } as const;
     const domain = { id: domainId, name: names(), groupIds: { primary: groupId, secondary: skillId } } as const;
-    assert.strictEqual(buildSkillGroupConfig(group), group);
-    assert.strictEqual(buildSkillDomainConfig(domain), domain);
+    const builtGroup = buildSkillGroupConfig(group);
+    const builtDomain = buildSkillDomainConfig(domain);
+    assert.notStrictEqual(builtGroup, group);
+    assert.notStrictEqual(builtDomain, domain);
+    assert.equal(builtGroup.collection, 'skillGroup');
+    assert.equal(builtDomain.collection, 'skillDomain');
+    assert.strictEqual(builtGroup.skillIds, group.skillIds);
+    assert.strictEqual(builtDomain.groupIds, domain.groupIds);
     assert.deepEqual(Object.keys(group.skillIds), ['first', 'second']);
   });
 
@@ -50,6 +56,6 @@ describe('Skill catalog builders', () => {
 
   it('does not add fileLocation or mutate the original config', () => {
     const group = buildSkillGroupConfig({ id: groupId, name: names(), skillIds: { first: skillId } });
-    assert.deepEqual(Object.keys(group).sort(), ['id', 'name', 'skillIds']);
+    assert.deepEqual(Object.keys(group).sort(), ['collection', 'id', 'name', 'skillIds']);
   });
 });

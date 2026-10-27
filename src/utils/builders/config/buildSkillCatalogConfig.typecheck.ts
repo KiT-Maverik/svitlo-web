@@ -6,9 +6,13 @@ declare const names: SkillGroup_Config['name'];
 const group = buildSkillGroupConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, skillIds: { basic: '9de735b7-4bcd-4b58-8832-d2d5d15846cd' } as const });
 const groupId: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' = group.id;
 void groupId;
+const groupCollection: 'skillGroup' = group.collection;
+void groupCollection;
 const domain = buildSkillDomainConfig({ id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd', name: names, groupIds: { group: group.id } });
 const domainId: '9de735b7-4bcd-4b58-8832-d2d5d15846cd' = domain.id;
 void domainId;
+const domainCollection: 'skillDomain' = domain.collection;
+void domainCollection;
 // @ts-expect-error Missing localized name.
 buildSkillGroupConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', skillIds: { basic: '9de735b7-4bcd-4b58-8832-d2d5d15846cd' } });
 // @ts-expect-error Missing group references.

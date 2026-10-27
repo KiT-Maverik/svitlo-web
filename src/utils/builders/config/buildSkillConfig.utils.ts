@@ -1,4 +1,5 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import type { Collection } from '../../../types/misc.types';
 import type { Skill_Config } from '../../../types/content/skill.types';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
@@ -7,12 +8,10 @@ const supportedLocales = new Set<string>(
 );
 
 /**
- * Validate a skill definition without modifying it or inventing external relationships.
- *
- * The caller supplies only the semantic ID and all localized names.
- * A separate build-time source index supplies fileLocation when registering skills.
+ * Shared validation for all taxonomy authoring configs.
+ * This does not create any collection, entity or external relationship.
  */
-export function buildSkillConfig<const T extends Skill_Config>(config: T): T {
+export function validateSkillConfig(config: Skill_Config): void {
   if (!config) {
     throw new Error('Skill id must be a UUID');
   }
@@ -33,6 +32,14 @@ export function buildSkillConfig<const T extends Skill_Config>(config: T): T {
   if (unexpected.length > 0) {
     throw new Error(`Skill name contains unsupported locales: ${unexpected.join(', ')}`);
   }
+}
 
-  return config;
+/**
+ * Adds the static taxonomy discriminator. IDs remain imported from *.ids.ts.
+ * Authoring config is not mutated; fileLocation is added separately by the registry.
+ */
+export function buildSkillConfig<const T extends Skill_Config>(config: T) {
+  validateSkillConfig(config);
+  const collection = 'skill' satisfies Collection;
+  return { ...config, collection };
 }

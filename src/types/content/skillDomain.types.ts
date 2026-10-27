@@ -1,3 +1,4 @@
+import type { Collection } from '../misc.types';
 import type { Locale } from '../languages';
 import type { SkillGroup } from './skillGroup.types';
 
@@ -9,5 +10,6 @@ export interface SkillDomain_Config {
 
 /** fileLocation is added by a build-time source registry. */
 export interface SkillDomain extends SkillDomain_Config {
+  readonly collection: Extract<Collection, 'skillDomain'>;
   fileLocation: string;
 }

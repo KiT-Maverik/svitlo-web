@@ -9,6 +9,8 @@ buildSkillConfig({ id: 'math.multiply.by-2', name: names });
 const valid = buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names });
 const literalId: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' = valid.id;
 void literalId;
+const collection: 'skill' = valid.collection;
+void collection;
 
 // @ts-expect-error A partial name dictionary must not satisfy the required locales.
 buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: { 'uk-UA': 'Множення на 2' } });

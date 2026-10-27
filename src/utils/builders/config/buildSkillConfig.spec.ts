@@ -14,10 +14,11 @@ const skill = (): Skill_Config => ({
 });
 
 describe('Utils / builders / config / buildSkillConfig', () => {
-  it('preserves the config and all supported locales', () => {
+  it('adds the skill collection without changing identity fields or locales', () => {
     const input = skill();
     const result = buildSkillConfig(input);
-    assert.strictEqual(result, input);
+    assert.notStrictEqual(result, input);
+    assert.equal(result.collection, 'skill');
     assert.equal(result.id, input.id);
     assert.equal(Object.keys(result.name).length, DEFAULT_SUPPORTED_LANGUAGES.length);
     assert.deepEqual(result.name, input.name);
