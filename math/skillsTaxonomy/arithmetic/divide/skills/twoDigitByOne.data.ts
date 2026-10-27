@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const twoDigitByOne_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.twoDigitByOne,
   name: {
+    "lt": "Dalyba — dviženklis skaičius iš vienaženklio",
+    "lv": "Dalīšana — divciparu skaitlis ar viencipara skaitli",
+    "et": "Jagamine — kahekohaline arv ühekohalisega",
+    "be": "Дзяленьне — двухзначны лік на адназначны",
+    "ka": "გაყოფა — ორნიშნა რიცხვი ერთნიშნაზე",
+    "kk": "Бөлу — екі таңбалы санды бір таңбалы санға",
     en: "Division — 2-digit÷1-digit",
     zh: "除法 — 2-位数÷1-位数",
     hi: "भाग — 2-अंकीय÷1-अंकीय",

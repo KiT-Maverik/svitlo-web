@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const roundHundreds_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.roundHundreds,
   name: {
+    "lt": "Dalyba — pilni šimtai",
+    "lv": "Dalīšana — pilni simti",
+    "et": "Jagamine — täissajad",
+    "be": "Дзяленьне — круглыя сотні",
+    "ka": "გაყოფა — სრული ასეულები",
+    "kk": "Бөлу — толық жүздіктер",
     en: "Division — Whole hundreds",
     zh: "除法 — 整百数",
     hi: "भाग — पूरे सैकड़े",

@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const withRemainder_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.withRemainder,
   name: {
+    "lt": "Dalyba — su liekana",
+    "lv": "Dalīšana — ar atlikumu",
+    "et": "Jagamine — jäägiga",
+    "be": "Дзяленьне — з астачай",
+    "ka": "გაყოფა — ნაშთით",
+    "kk": "Бөлу — қалдықпен",
     en: "Division — Division with remainder",
     zh: "除法 — 有余数的除法",
     hi: "भाग — शेषफल सहित भाग",

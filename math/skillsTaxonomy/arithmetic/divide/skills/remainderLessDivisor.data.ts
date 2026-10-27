@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const remainderLessDivisor_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.remainderLessDivisor,
   name: {
+    "lt": "Dalyba — liekana mažesnė už daliklį",
+    "lv": "Dalīšana — atlikums mazāks par dalītāju",
+    "et": "Jagamine — jääk on jagajast väiksem",
+    "be": "Дзяленьне — астача меншая за дзельнік",
+    "ka": "გაყოფა — ნაშთი გამყოფზე ნაკლებია",
+    "kk": "Бөлу — қалдық бөлгіштен кіші",
     en: "Division — Remainder less than divisor",
     zh: "除法 — 余数小于除数",
     hi: "भाग — शेषफल भाजक से कम",

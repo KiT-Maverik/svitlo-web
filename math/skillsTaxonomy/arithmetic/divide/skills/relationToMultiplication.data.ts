@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const relationToMultiplication_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.relationToMultiplication,
   name: {
+    "lt": "Dalyba — atvirkštiniai veiksmai",
+    "lv": "Dalīšana — pretējās darbības",
+    "et": "Jagamine — pöördtehted",
+    "be": "Дзяленьне — адваротныя дзеяньні",
+    "ka": "გაყოფა — შებრუნებული მოქმედებები",
+    "kk": "Бөлу — кері амалдар",
     en: "Division — Inverse operations",
     zh: "除法 — 逆运算",
     hi: "भाग — व्युत्क्रम संक्रियाएँ",

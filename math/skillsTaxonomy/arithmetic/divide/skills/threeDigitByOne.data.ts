@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const threeDigitByOne_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.threeDigitByOne,
   name: {
+    "lt": "Dalyba — triženklis skaičius iš vienaženklio",
+    "lv": "Dalīšana — trīsciparu skaitlis ar viencipara skaitli",
+    "et": "Jagamine — kolmekohaline arv ühekohalisega",
+    "be": "Дзяленьне — трохзначны лік на адназначны",
+    "ka": "გაყოფა — სამნიშნა რიცხვი ერთნიშნაზე",
+    "kk": "Бөлу — үш таңбалы санды бір таңбалы санға",
     en: "Division — 3-digit÷1-digit",
     zh: "除法 — 3-位数÷1-位数",
     hi: "भाग — 3-अंकीय÷1-अंकीय",

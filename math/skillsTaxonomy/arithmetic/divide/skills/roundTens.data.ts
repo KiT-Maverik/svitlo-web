@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const roundTens_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.roundTens,
   name: {
+    "lt": "Dalyba — pilnos dešimtys",
+    "lv": "Dalīšana — pilni desmiti",
+    "et": "Jagamine — täiskümned",
+    "be": "Дзяленьне — круглыя дзясяткі",
+    "ka": "გაყოფა — სრული ათეულები",
+    "kk": "Бөлу — толық ондықтар",
     en: "Division — Whole tens",
     zh: "除法 — 整十数",
     hi: "भाग — पूरे दहाई",

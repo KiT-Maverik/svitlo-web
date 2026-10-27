@@ -4,6 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const zeroDividend_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.zeroDividend,
   name: {
+    "lt": "Dalyba — nulis kaip dalinys",
+    "lv": "Dalīšana — nulle kā dalāmais",
+    "et": "Jagamine — null jagatav",
+    "be": "Дзяленьне — нуль як дзялімае",
+    "ka": "გაყოფა — ნული გასაყოფის როლში",
+    "kk": "Бөлу — бөлінгіш нөл",
     en: "Division — Zero dividend",
     zh: "除法 — 被除数为零",
     hi: "भाग — शून्य भाज्य",
