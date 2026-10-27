@@ -128,10 +128,12 @@ math/skills/
     addition/
       addition.data.ts              # SkillGroup
       index.ts
-      crossTenAddition.data.ts      # Skill
+      crossTenAddition/
+        crossTenAddition.data.ts    # Skill
     additionSubtraction/
       additionSubtraction.data.ts   # SkillGroup
-      inverseOperations.data.ts     # Skill
+      inverseOperations/
+        inverseOperations.data.ts   # Skill
 ```
 
 **Це цільовий приклад, а не твердження про поточну наявність усіх зазначених файлів.** На момент написання не всі Skill матеріалізовані у TypeScript.

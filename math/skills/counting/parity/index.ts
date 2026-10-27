@@ -1,3 +1,3 @@
-// SkillGroup: Парність (math.counting.parity)
-export { parityGroup } from './parityGroup.data';
-export { evenOdd } from './evenOdd.data';
+// SkillGroup: parity (math.counting.parity)
+export { parityGroup } from './parity.data';
+export { evenOdd } from './evenOdd/evenOdd.data';
