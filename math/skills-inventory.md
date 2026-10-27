@@ -22,7 +22,7 @@
 
 ## Інвентар навичок
 
-Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **15 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
+Усього: **285** кандидатів у **60 SkillGroup**, організованих у **13 SkillDomain**. **36 навичок із конфігами мають статус Implemented; решта очікують реалізації**. **Кожен рядок — кандидат на один окремий файл Skill**, але не вимога створювати один урок на кожний Skill.
 
 ## Семантична таксономія (v0.6)
 
@@ -38,7 +38,7 @@
 | `math.arithmetic` | Арифметика | 5 | 79 | **Implemented** | 3/5 | 0/79 |
 | `math.algebra` | Алгебра | 5 | 17 | — | 0/5 | 0/17 |
 | `math.geometry` | Геометрія | 10 | 35 | **Implemented** | 3/10 | 0/35 |
-| `math.measurement` | Вимірювання | 5 | 21 | — | 0/5 | 0/21 |
+| `math.measurement` | Вимірювання | 5 | 21 | **Implemented** | 5/5 | 21/21 |
 | `math.time` | Час | 3 | 13 | — | 0/3 | 0/13 |
 | `math.money` | Гроші | 2 | 6 | — | 0/2 | 0/6 |
 | `math.data` | Дані | 3 | 15 | — | 0/3 | 0/15 |
@@ -50,7 +50,7 @@
 
 **Редакційні Domain/Group ID — робочі.** У реалізованому коді Domain має `groupIds`, Group — `skillIds` як іменовані словники UUID. Належність навички не виводиться з префікса редакційного ID; перегрупування не змінює runtime UUID.
 
-**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Обробленими повністю є лише 15 Skill домену Counting. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
+**Правила статусів:** `Domain config` означає, що є локалізований Domain `.data.ts`; `Group configs` рахує тільки локалізовані Group `.data.ts` (навіть якщо решта груп ще не створена); `Skill files` рахує лише окремі локалізовані Skill `.data.ts`. **Статичні UUID/посилання самі по собі не означають `Implemented`.** Повністю реалізовано 15 Skill домену Counting та 21 Skill домену Measurement. Для Arithmetic і Geometry створено домени та по 3 конфіги груп, але ще немає їхніх індивідуальних Skill-файлів.
 
 ## Інвентар за доменами
 
@@ -588,7 +588,7 @@
 | `math.geomeasure.perimeter-vs-area` | Розрізняти периметр і площу та добирати відповідний спосіб вимірювання | 3+ | — |
 ### Domain 7. Вимірювання (21)
 
-**Implementation:** Not started (no Domain/Group/Skill data files)
+**Implementation:** Domain + 5/5 Group configs + 21/21 individual Skills — **Complete**
 
 **ID:** `math.measurement`
 
@@ -596,67 +596,67 @@
 
 **ID:** `math.measurement.length`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.measure.compare-length` | Порівнювати довжини безпосереднім накладанням і непрямим способом | 1 | — |
-| `math.measure.nonstandard-length` | Вимірювати довжину послідовним прикладанням однакових умовних одиниць | 1 | — |
-| `math.measure.ruler-zero` | Правильно користуватися лінійкою, починаючи вимірювання від нульової позначки | 1–2 | — |
-| `math.measure.measure-centimeters` | Вимірювати та креслити відрізки заданої довжини в сантиметрах | 1–2 | — |
-| `math.measure.millimeters` | Вимірювати короткі відрізки в міліметрах і співвідносити мм із см | 2–3 | — |
-| `math.measure.decimeters` | Співвідносити дециметр і сантиметр та виконувати прості перетворення | 2 | — |
-| `math.measure.meters` | Співвідносити метр, дециметр і сантиметр у практичних вимірах | 2–3 | — |
-| `math.measure.kilometers` | Вибирати кілометри для великих відстаней і співвідносити їх із метрами | 3 | — |
-| `math.measure.estimate-length` | Оцінювати довжину та перевіряти результат інструментом | 1–3 | — |
-| `math.measure.add-subtract-lengths` | Додавати й віднімати довжини в узгоджених одиницях | 2–3 | — |
+| `math.measure.compare-length` | Порівнювати довжини безпосереднім накладанням і непрямим способом | 1 | **Implemented** |
+| `math.measure.nonstandard-length` | Вимірювати довжину послідовним прикладанням однакових умовних одиниць | 1 | **Implemented** |
+| `math.measure.ruler-zero` | Правильно користуватися лінійкою, починаючи вимірювання від нульової позначки | 1–2 | **Implemented** |
+| `math.measure.measure-centimeters` | Вимірювати та креслити відрізки заданої довжини в сантиметрах | 1–2 | **Implemented** |
+| `math.measure.millimeters` | Вимірювати короткі відрізки в міліметрах і співвідносити мм із см | 2–3 | **Implemented** |
+| `math.measure.decimeters` | Співвідносити дециметр і сантиметр та виконувати прості перетворення | 2 | **Implemented** |
+| `math.measure.meters` | Співвідносити метр, дециметр і сантиметр у практичних вимірах | 2–3 | **Implemented** |
+| `math.measure.kilometers` | Вибирати кілометри для великих відстаней і співвідносити їх із метрами | 3 | **Implemented** |
+| `math.measure.estimate-length` | Оцінювати довжину та перевіряти результат інструментом | 1–3 | **Implemented** |
+| `math.measure.add-subtract-lengths` | Додавати й віднімати довжини в узгоджених одиницях | 2–3 | **Implemented** |
 
 #### SkillGroup 7.2. Маса (4)
 
 **ID:** `math.measurement.mass`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.measure.centner-kilogram` | Застосовувати співвідношення центнера й кілограма у задачах | 3 | — |
-| `math.measure.compare-mass` | Порівнювати масу предметів за допомогою терезів або рівноваги | 1–2 | — |
-| `math.measure.kilogram-gram` | Використовувати кілограм і грам та співвідносити їх | 2–3 | — |
-| `math.measure.weigh-object` | Зчитувати покази вагів і записувати результат із одиницею | 2–3 | — |
+| `math.measure.centner-kilogram` | Застосовувати співвідношення центнера й кілограма у задачах | 3 | **Implemented** |
+| `math.measure.compare-mass` | Порівнювати масу предметів за допомогою терезів або рівноваги | 1–2 | **Implemented** |
+| `math.measure.kilogram-gram` | Використовувати кілограм і грам та співвідносити їх | 2–3 | **Implemented** |
+| `math.measure.weigh-object` | Зчитувати покази вагів і записувати результат із одиницею | 2–3 | **Implemented** |
 
 #### SkillGroup 7.3. Місткість (3)
 
 **ID:** `math.measurement.capacity`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.measure.capacity-concept` | Порівнювати місткість посудин через переливання або вимірювання | 1–2 | — |
-| `math.measure.liter` | Вимірювати й оцінювати місткість у літрах | 2 | — |
-| `math.measure.milliliter` | Використовувати мілілітри та співвідносити їх із літрами | 3+ | — |
+| `math.measure.capacity-concept` | Порівнювати місткість посудин через переливання або вимірювання | 1–2 | **Implemented** |
+| `math.measure.liter` | Вимірювати й оцінювати місткість у літрах | 2 | **Implemented** |
+| `math.measure.milliliter` | Використовувати мілілітри та співвідносити їх із літрами | 3+ | **Implemented** |
 
 #### SkillGroup 7.4. Температура (1)
 
 **ID:** `math.measurement.temperature`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.measure.temperature-read` | Зчитувати невід’ємну температуру з простої шкали термометра | 3+ | — |
+| `math.measure.temperature-read` | Зчитувати невід’ємну температуру з простої шкали термометра | 3+ | **Implemented** |
 
 #### SkillGroup 7.5. Вимірювальні навички (3)
 
 **ID:** `math.measurement.general`
 
-**Implementation:** Not started — Group data file not implemented.
+**Implementation:** Implemented — Group config and all Skill files.
 
 | Skill ID | Перевірюване уміння | Орієнтир | Status |
 |---|---|:---:|:---:|
-| `math.measure.standard-unit-purpose` | Пояснювати, чому для порівняння вимірів потрібна узгоджена одиниця | 1–2 | — |
-| `math.measure.choose-appropriate-unit` | Вибирати доречну одиницю для довжини, маси чи місткості | 2–3 | — |
-| `math.measure.word-problems-measures` | Розв’язувати практичні задачі на величини в однакових або сумісних одиницях | 2–3 | — |
+| `math.measure.standard-unit-purpose` | Пояснювати, чому для порівняння вимірів потрібна узгоджена одиниця | 1–2 | **Implemented** |
+| `math.measure.choose-appropriate-unit` | Вибирати доречну одиницю для довжини, маси чи місткості | 2–3 | **Implemented** |
+| `math.measure.word-problems-measures` | Розв’язувати практичні задачі на величини в однакових або сумісних одиницях | 2–3 | **Implemented** |
 
 ### Domain 8. Час (13)
 
