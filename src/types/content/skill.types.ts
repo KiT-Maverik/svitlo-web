@@ -1,5 +1,5 @@
 import type { Collection } from '../misc.types';
-import type { Locale } from '../languages';
+import type { LanguageCode } from '../languages';
 
 /** RFC 4122-style UUID literal; validated at runtime by config builders. */
 export type SkillId = `${string}-${string}-${string}-${string}-${string}`;
@@ -12,8 +12,8 @@ export type SkillId = `${string}-${string}-${string}-${string}-${string}`;
 export interface Skill_Config {
   /** Stable UUID, assigned once in a separate *.ids.ts file. */
   id: SkillId;
-  /** One non-empty name for every supported locale. */
-  name: Readonly<Record<Locale, string>>;
+  /** One non-empty name for every supported language. */
+  name: Readonly<Record<LanguageCode, string>>;
 }
 
 /**

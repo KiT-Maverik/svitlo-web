@@ -1,10 +1,10 @@
 import type { Collection } from '../misc.types';
-import type { Locale } from '../languages';
+import type { LanguageCode } from '../languages';
 import type { SkillGroup } from './skillGroup.types';
 
 export interface SkillDomain_Config {
   id: SkillGroup['id'];
-  name: Readonly<Record<Locale, string>>;
+  name: Readonly<Record<LanguageCode, string>>;
   groupIds: Readonly<Record<string, SkillGroup['id']>>;
 }
 

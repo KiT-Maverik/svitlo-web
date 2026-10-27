@@ -7,7 +7,7 @@ import { buildSkillGroupConfig } from './buildSkillGroupConfig.utils';
 import { buildSkillDomainConfig } from './buildSkillDomainConfig.utils';
 
 const names = () => Object.fromEntries(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => [locale, 'A localized name']),
+  DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'A localized name']),
 ) as SkillGroup_Config['name'];
 
 const groupId = 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' as const;
@@ -31,13 +31,13 @@ describe('Skill catalog builders', () => {
 
   it('rejects missing translations in groups and domains', () => {
     const partial = { ...names() } as Record<string, string>;
-    delete partial['uk-UA'];
+    delete partial.uk;
     assert.throws(() => buildSkillGroupConfig({
       id: groupId, name: partial as SkillGroup_Config['name'], skillIds: { first: skillId },
-    }), /uk-UA/);
+    }), /uk/);
     assert.throws(() => buildSkillDomainConfig({
       id: domainId, name: partial as SkillDomain_Config['name'], groupIds: { primary: groupId },
-    }), /uk-UA/);
+    }), /uk/);
   });
 
   it('rejects arrays, empty objects, bad UUIDs and duplicate child IDs', () => {

@@ -3,8 +3,8 @@ import type { Collection } from '../../../types/misc.types';
 import type { Skill_Config } from '../../../types/content/skill.types';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
-const supportedLocales = new Set<string>(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ locale }) => locale),
+const supportedLanguages = new Set<string>(
+  DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language),
 );
 
 /**
@@ -18,19 +18,19 @@ export function validateSkillConfig(config: Skill_Config): void {
   validateSkillUuid(config.id, 'Skill id');
 
   if (!config.name || typeof config.name !== 'object' || Array.isArray(config.name)) {
-    throw new Error('Skill name must contain all supported locales');
+    throw new Error('Skill name must contain all supported languages');
   }
 
-  for (const locale of supportedLocales) {
-    const value = config.name[locale as keyof typeof config.name];
+  for (const language of supportedLanguages) {
+    const value = config.name[language as keyof typeof config.name];
     if (typeof value !== 'string' || value.trim() === '') {
-      throw new Error(`Skill name must contain a non-empty translation for ${locale}`);
+      throw new Error(`Skill name must contain a non-empty translation for ${language}`);
     }
   }
 
-  const unexpected = Object.keys(config.name).filter(locale => !supportedLocales.has(locale));
+  const unexpected = Object.keys(config.name).filter(language => !supportedLanguages.has(language));
   if (unexpected.length > 0) {
-    throw new Error(`Skill name contains unsupported locales: ${unexpected.join(', ')}`);
+    throw new Error(`Skill name contains unsupported languages: ${unexpected.join(', ')}`);
   }
 }
 

@@ -1,10 +1,10 @@
 import type { Collection } from '../misc.types';
-import type { Locale } from '../languages';
+import type { LanguageCode } from '../languages';
 import type { Skill } from './skill.types';
 
 export interface SkillGroup_Config {
   id: Skill['id'];
-  name: Readonly<Record<Locale, string>>;
+  name: Readonly<Record<LanguageCode, string>>;
   skillIds: Readonly<Record<string, Skill['id']>>;
 }
 
