@@ -57,6 +57,12 @@ export const DEFAULT_SUPPORTED_LANGUAGES = [
   { locale: 'he-IL', language: 'he', name: 'Hebrew', nativeName: 'עברית', nameUk: 'Іврит', direction: 'rtl' },
   { locale: 'pl-PL', language: 'pl', name: 'Polish', nativeName: 'Polski', nameUk: 'Польська', direction: 'ltr' },
   { locale: 'uk-UA', language: 'uk', name: 'Ukrainian', nativeName: 'Українська', nameUk: 'Українська', direction: 'ltr' },
+  { locale: 'lt-LT', language: 'lt', name: 'Lithuanian', nativeName: 'Lietuvių', nameUk: 'Литовська', direction: 'ltr' },
+  { locale: 'lv-LV', language: 'lv', name: 'Latvian', nativeName: 'Latviešu', nameUk: 'Латиська', direction: 'ltr' },
+  { locale: 'et-EE', language: 'et', name: 'Estonian', nativeName: 'Eesti', nameUk: 'Естонська', direction: 'ltr' },
+  { locale: 'be-tarask', language: 'be', name: 'Belarusian (Taraškievica)', nativeName: 'Беларуская (тарашкевіца)', nameUk: 'Білоруська (тарашкевиця)', direction: 'ltr' },
+  { locale: 'ka-GE', language: 'ka', name: 'Georgian', nativeName: 'ქართული', nameUk: 'Грузинська', direction: 'ltr' },
+  { locale: 'kk-Cyrl-KZ', language: 'kk', name: 'Kazakh (Cyrillic)', nativeName: 'Қазақша', nameUk: 'Казахська', direction: 'ltr' },
 ] as const satisfies readonly LanguageDefinition[];
 
 export type DefaultSupportedLanguage = (typeof DEFAULT_SUPPORTED_LANGUAGES)[number];
