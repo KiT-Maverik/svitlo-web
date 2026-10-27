@@ -6,3 +6,4 @@ export { geometry_SkillDomain_Data } from './geometry/index.data';
 export { measurement_SkillDomain_Data } from './measurement/index.data';
 export { numeration_SkillDomain_Data } from './numeration/index.data';
 export { probability_SkillDomain_Data } from './probability/index.data';
+export { reasoning_SkillDomain_Data } from './reasoning/index.data';

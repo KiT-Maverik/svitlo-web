@@ -1,0 +1,30 @@
+import { buildSkillConfig } from '@/utils';
+import { argumentation_Skills_Ids } from './index.ids';
+
+export const findCounterexample_Skill_Data = buildSkillConfig({
+  id: argumentation_Skills_Ids.findCounterexample,
+  name: {
+    en: "Finding a counterexample to a false generalization",
+    zh: "找出反驳错误概括的反例",
+    hi: "गलत सामान्यीकरण का खंडन करने वाला प्रतिउदाहरण खोजना",
+    es: "Encontrar un contraejemplo que refute una generalización falsa",
+    ar: "إيجاد مثال مضاد يدحض تعميمًا خاطئًا",
+    fr: "Trouver un contre-exemple à une généralisation erronée",
+    bn: "ভুল সাধারণীকরণ খণ্ডন করার পাল্টা উদাহরণ খোঁজা",
+    pt: "Encontrar um contraexemplo para refutar uma generalização falsa",
+    ur: "غلط عمومی دعوے کی تردید کے لیے مخالف مثال تلاش کرنا",
+    id: "Menemukan contoh tandingan untuk membantah generalisasi yang salah",
+    de: "Ein Gegenbeispiel zu einer falschen Verallgemeinerung finden",
+    ja: "誤った一般化に対する反例を見つける",
+    ko: "잘못된 일반화를 반박하는 반례 찾기",
+    tr: "Yanlış bir genellemeyi çürüten karşı örnek bulma",
+    vi: "Tìm phản ví dụ bác bỏ một khái quát sai",
+    ta: "தவறான பொதுமைப்படுத்தலை மறுக்கும் எதிர் எடுத்துக்காட்டு கண்டறிதல்",
+    te: "తప్పుడు సాధారణీకరణను ఖండించే ప్రతివుదాహరణను కనుగొనడం",
+    mr: "चुकीच्या सामान्यीकरणाचे खंडन करणारे प्रतिउदाहरण शोधणे",
+    ms: "Mencari contoh balas yang menyangkal generalisasi salah",
+    he: "מציאת דוגמה נגדית להכללה שגויה",
+    pl: "Znajdowanie kontrprzykładu obalającego fałszywe uogólnienie",
+    uk: "Пошук контрприкладу до хибного узагальнення",
+  },
+});
