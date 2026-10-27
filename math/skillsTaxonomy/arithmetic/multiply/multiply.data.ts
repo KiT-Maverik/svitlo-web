@@ -6,6 +6,12 @@ export const multiply_SkillGroup_Data = buildSkillGroupConfig({
   id: multiply_SkillGroup_Ids.multiply,
   name: {
     en: "Multiplication",
+    "lt": "Daugyba",
+    "lv": "Reizināšana",
+    "et": "Korrutamine",
+    "be": "Множаньне",
+    "ka": "გამრავლება",
+    "kk": "Көбейту",
     zh: "乘法",
     hi: "गुणा",
     es: "Multiplicación",

@@ -6,6 +6,12 @@ export const expressions_SkillGroup_Data = buildSkillGroupConfig({
   id: expressions_SkillGroup_Ids.expressions,
   name: {
     en: "Expressions",
+    "lt": "Reiškiniai",
+    "lv": "Izteiksmes",
+    "et": "Avaldised",
+    "be": "Выразы",
+    "ka": "გამოსახულებები",
+    "kk": "Өрнектер",
     zh: "数学表达式",
     hi: "व्यंजक",
     es: "Expresiones",

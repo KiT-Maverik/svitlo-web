@@ -6,6 +6,12 @@ export const formalization_SkillGroup_Data = buildSkillGroupConfig({
   id: formalization_SkillGroup_Ids.formalization,
   name: {
     en: "Symbolic modeling",
+    "lt": "Simbolinis modeliavimas",
+    "lv": "Simboliskā modelēšana",
+    "et": "Sümbolmudelite koostamine",
+    "be": "Сымбалічнае мадэляваньне",
+    "ka": "სიმბოლური მოდელირება",
+    "kk": "Символдық модельдеу",
     zh: "符号建模",
     hi: "प्रतीकात्मक निरूपण",
     es: "Modelización simbólica",

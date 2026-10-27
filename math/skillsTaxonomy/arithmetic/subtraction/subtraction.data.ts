@@ -6,6 +6,12 @@ export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
   id: subtraction_SkillGroup_Ids.subtraction,
   name: {
     en: "Subtraction",
+    "lt": "Atimtis",
+    "lv": "Atņemšana",
+    "et": "Lahutamine",
+    "be": "Адніманьне",
+    "ka": "გამოკლება",
+    "kk": "Азайту",
     zh: "减法",
     hi: "घटाव",
     es: "Resta",

@@ -6,6 +6,12 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
   id: additionSubtraction_SkillGroup_Ids.additionSubtraction,
   name: {
     en: "Combining addition and subtraction",
+    "lt": "Sudėties ir atimties derinimas",
+    "lv": "Saskaitīšanas un atņemšanas apvienošana",
+    "et": "Liitmise ja lahutamise ühendamine",
+    "be": "Спалучэньне складаньня і адніманьня",
+    "ka": "შეკრებისა და გამოკლების გაერთიანება",
+    "kk": "Қосу мен азайтуды біріктіру",
     zh: "加减法的结合运用",
     hi: "जोड़ और घटाव का संयुक्त प्रयोग",
     es: "Combinación de suma y resta",

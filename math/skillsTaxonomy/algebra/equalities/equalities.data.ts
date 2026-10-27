@@ -6,6 +6,12 @@ export const equalities_SkillGroup_Data = buildSkillGroupConfig({
   id: equalities_SkillGroup_Ids.equalities,
   name: {
     en: "Equalities",
+    "lt": "Lygybės",
+    "lv": "Vienādības",
+    "et": "Võrdused",
+    "be": "Роўнасьці",
+    "ka": "ტოლობები",
+    "kk": "Теңдіктер",
     zh: "等式",
     hi: "समानताएँ",
     es: "Igualdades",

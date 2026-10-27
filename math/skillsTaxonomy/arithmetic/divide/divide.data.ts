@@ -6,6 +6,12 @@ export const divide_SkillGroup_Data = buildSkillGroupConfig({
   id: divide_SkillGroup_Ids.divide,
   name: {
     en: "Division",
+    "lt": "Dalyba",
+    "lv": "Dalīšana",
+    "et": "Jagamine",
+    "be": "Дзяленьне",
+    "ka": "გაყოფა",
+    "kk": "Бөлу",
     zh: "除法",
     hi: "भाग",
     es: "División",

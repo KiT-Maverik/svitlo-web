@@ -6,6 +6,12 @@ export const addition_SkillGroup_Data = buildSkillGroupConfig({
   id: addition_SkillGroup_Ids.addition,
   name: {
     en: "Addition",
+    "lt": "Sudėtis",
+    "lv": "Saskaitīšana",
+    "et": "Liitmine",
+    "be": "Складаньне",
+    "ka": "შეკრება",
+    "kk": "Қосу",
     zh: "加法",
     hi: "जोड़",
     es: "Suma",

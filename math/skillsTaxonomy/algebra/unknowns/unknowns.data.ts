@@ -6,6 +6,12 @@ export const unknowns_SkillGroup_Data = buildSkillGroupConfig({
   id: unknowns_SkillGroup_Ids.unknowns,
   name: {
     en: "Unknown values",
+    "lt": "Nežinomos reikšmės",
+    "lv": "Nezināmās vērtības",
+    "et": "Tundmatud väärtused",
+    "be": "Невядомыя значэньні",
+    "ka": "უცნობი მნიშვნელობები",
+    "kk": "Белгісіз мәндер",
     zh: "未知数",
     hi: "अज्ञात मान",
     es: "Valores desconocidos",

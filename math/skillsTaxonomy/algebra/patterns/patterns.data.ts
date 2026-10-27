@@ -6,6 +6,12 @@ export const patterns_SkillGroup_Data = buildSkillGroupConfig({
   id: patterns_SkillGroup_Ids.patterns,
   name: {
     en: "Patterns",
+    "lt": "Dėsningumai",
+    "lv": "Likumsakarības",
+    "et": "Seaduspärasused",
+    "be": "Заканамернасьці",
+    "ka": "კანონზომიერებები",
+    "kk": "Заңдылықтар",
     zh: "规律",
     hi: "नियमित क्रम",
     es: "Patrones",
