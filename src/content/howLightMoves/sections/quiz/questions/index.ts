@@ -1,10 +1,10 @@
 import type { Quiz_Config } from '@types';
-import { lightTravelsStraight } from './lightTravelsStraight';
-import { lightRayDirection } from './lightRayDirection';
-import { fastestMedium } from './fastestMedium';
-import { lightSpeedInWater } from './lightSpeedInWater';
-import { airVacuumSpeed } from './airVacuumSpeed';
-import { opaqueObjectShadow } from './opaqueObjectShadow';
+import { lightTravelsStraight } from './lightTravelsStraight.data';
+import { lightRayDirection } from './lightRayDirection.data';
+import { fastestMedium } from './fastestMedium.data';
+import { lightSpeedInWater } from './lightSpeedInWater.data';
+import { airVacuumSpeed } from './airVacuumSpeed.data';
+import { opaqueObjectShadow } from './opaqueObjectShadow.data';
 
 export const questionBank = [
   lightTravelsStraight,

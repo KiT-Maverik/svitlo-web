@@ -1,8 +1,8 @@
 import type { Lesson_Config } from '@types';
 import { createTextResource } from '@/utils';
-import { practice } from './sections/practice';
-import { quiz } from './sections/quiz';
-import { theory } from './sections/theory';
+import { practice } from './sections/practice/practice.data';
+import { quiz } from './sections/quiz/quiz.data';
+import { theory } from './sections/theory/theory.data';
 import { locales as rayLocales } from './scenes/LightRayDiagram/lightRayDiagram.locale';
 import { locales as simulationLocales } from './scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
 import { locales as checkpointLocales } from './sections/theory/locales/KnowledgeCheckpoint.locale';
