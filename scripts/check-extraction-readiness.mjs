@@ -48,6 +48,7 @@ function isPublicImport(pkg, specifier) {
 for (const [path, pkg] of workspaces) {
   const packageRoot = resolve(root, path);
   const declared = new Set(Object.keys({ ...(pkg.dependencies || {}), ...(pkg.peerDependencies || {}) }));
+  const localAliases = readJson(path + '/tsconfig.json').compilerOptions?.paths || {};
   for (const file of walk(join(packageRoot, 'src')).filter(isProductionSource)) {
     for (const specifier of importedModules(readFileSync(file, 'utf8'))) {
       const description = relative(root, file) + ' -> ' + specifier;
@@ -58,7 +59,7 @@ for (const [path, pkg] of workspaces) {
           'Cross-package relative import: ' + description);
         continue;
       }
-      if (specifier.startsWith('@/')) {
+      if (specifier.startsWith('@/') || Object.hasOwn(localAliases, specifier)) {
         assert(path.startsWith('apps/'), 'Unrewritten shared source alias: ' + description);
         continue;
       }
