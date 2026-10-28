@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { flagCountryByLocale } from './Flag';
 
-const directory = join(process.cwd(), 'public/flags');
+const directory = join(process.cwd(), 'assets/flags');
 const svgFiles = readdirSync(directory).filter(name => name.endsWith('.svg'));
 
 describe('Static SVG flags', () => {

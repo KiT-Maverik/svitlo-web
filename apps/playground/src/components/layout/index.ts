@@ -1,1 +1,1 @@
-export { default as LearningLayout } from './LearningLayout/LearningLayout';
+export { default as LessonLearningLayout } from './LearningLayout/LearningLayout';

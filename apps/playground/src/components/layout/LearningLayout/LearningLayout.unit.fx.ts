@@ -21,7 +21,7 @@ const VerticalSpace_fx = {
       (scope ? within(scope) : screen).queryByTestId(spaceTestId.slots[name]),
   },
 };
-import { aria } from './LearningLayout.constants';
+import { aria } from '@svitlo/ui-kit/learning-layout/constants';
 
 type Props = ComponentProps<typeof LearningLayout>;
 

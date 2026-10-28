@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { isValidElement, type ReactElement } from 'react';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
-import { LearningLayout } from '@layout';
+import { LessonLearningLayout } from '@layout';
 import { howLightMoves_Lesson_Data } from '@/content/howLightMoves/index.data';
 import { howLightMovesCatalog } from '@/content/howLightMoves/howLightMoves.catalog';
 import { quiz_Quiz_Data } from '@/content/howLightMoves/sections/quiz/index.data';
@@ -49,7 +49,7 @@ describe('Lesson page assembly', () => {
     });
 
     const layout = onlyChild(progress);
-    expect(layout.type).toBe(LearningLayout);
+    expect(layout.type).toBe(LessonLearningLayout);
     expect(props<{ topics: Array<{ title: string; href: string }>; quizStep: number }>(layout)).toMatchObject({
       topics: [{ title: 'How Light Travels', href: '/topics/light' }],
       quizStep: 2,

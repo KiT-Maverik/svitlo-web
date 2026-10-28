@@ -7,7 +7,7 @@ import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
 import { useColorScheme } from '@mui/material/styles';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { Flag } from '@/components/widgets/Flag';
+import { Flag } from '@svitlo/ui-kit/widgets';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getNavbarPreferencesMessages } from './locales';
 import { aria } from './NavbarPreferences.constants';

@@ -1,11 +1,12 @@
-import Image, { type ImageProps } from 'next/image';
+import type { ImgHTMLAttributes } from 'react';
 import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
 
 /** Only locales registered in the app have a flag dispatch entry. */
 export type FlagLocale = DefaultSupportedLanguage['locale'];
-export type FlagProps = Omit<ImageProps, 'src' | 'alt'> & {
+export type FlagProps = Omit<ImgHTMLAttributes<HTMLImageElement>, 'src' | 'alt'> & {
   locale: FlagLocale;
   alt?: string;
+  assetBasePath?: string;
 };
 
 /**
@@ -45,14 +46,13 @@ export const flagCountryByLocale = {
 } as const satisfies Record<FlagLocale, string>;
 
 /** A single image wrapper instead of individually authored React SVG components. */
-export function Flag({ locale, alt = '', width = 24, height = 16, style, ...props }: FlagProps) {
+export function Flag({ locale, alt = '', width = 24, height = 16, style, assetBasePath = '/flags', ...props }: FlagProps) {
   return (
-    <Image
-      src={`/flags/${flagCountryByLocale[locale]}.svg`}
+    <img
+      src={`${assetBasePath.replace(/\/$/, '')}/${flagCountryByLocale[locale]}.svg`}
       alt={alt}
       width={width}
       height={height}
-      unoptimized
       style={{ objectFit: 'contain', ...style }}
       {...props}
     />
