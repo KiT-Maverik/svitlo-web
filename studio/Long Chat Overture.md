@@ -122,14 +122,12 @@ Program може декларативно описувати правила: «�
 - Builders додають статичний `collection: 'skill' | 'skillGroup' | 'skillDomain'`, валідують локалі й посилання, але не генерують UUID та не обчислюють засвоєння.
 - Індекси мають бути **рівневими**: кореневий `index.data.ts` експортує тільки Domain Data, доменний — тільки себе, груповий — тільки Group Data, `skills/index.data.ts` — тільки Skill Data цієї групи. `index.ids.ts` не імпортує Data. Це уникає зайвого притягування дочірніх модулів.
 
-**[Стан на дату документа, гілка `math`]** Inventory: **285 Skill / 60 Group / 13 Domain**. Повністю реалізовані **15/15 Skill у Counting**. У Arithmetic — Domain та **3/5 Group Data**, у Geometry — Domain та **3/10 Group Data**, але **0 Skill Data** в обох. Інші домени — лише в інвентарі. Зарезервований UUID або Group Config **не** означає `Implemented`.
+**[Історичний зріз на дату створення документа, гілка `math`; НЕ актуальний статус]** На той момент існував каталог **285 Skill / 60 Group / 13 Domain**, а реалізація була частковою. Поточну реалізацію перевіряйте у [канонічній таксономії](../learningApps/math/docs/skills/taxonomy.md) та `*.data.ts`; зарезервований UUID або Group Config сам собою не підтверджує завершеність.
 
 **Не копіювати сюди повну специфікацію.** Для наступного агента канонічні джерела:
 
 - [Skill entity rules](./docs/entities/skill.md) та [Implement Skill Code](./skills/implement-skill-code.skill.md) — правила сутностей, UUID та файловий контракт;
-- [Skills Inventory](../learningApps/math/src/data/skills-inventory.md) — **актуальний статус кожної навички**;
-- [Taxonomy Review](../learningApps/math/src/data/skills-taxonomy-review.md) — неоднозначності;
-- [UUID migration map](../learningApps/math/src/data/skillsTaxonomy/UUID-MIGRATION.md) — зіставлення історичних позначень із UUID.
+- [Approved Mathematics Skills Taxonomy](../learningApps/math/docs/skills/taxonomy.md) — актуальна педагогічна ієрархія, змістовні описи та перевірені посилання на реалізації; сумнівні нові зміни виносити на окреме редакційне погодження.
 
 ## 6. Questions, Flashcards, Practice і генерація задач
 
@@ -180,7 +178,7 @@ Program може декларативно описувати правила: «�
 2. Поточний Lesson має **array секцій**, хоча обговорювали об’єкт зі стабільними ключами. Не міняти публічний API потай під час іншого рефакторингу.
 3. **Слоти та події — два різні механізми.** Статична вставка не замінює реакцію на `question.answered`/retry; реакція не дає права підмінювати оцінювання.
 4. **Педагогічний прогрес ≠ сюжетний прогрес ≠ оцінка тесту ≠ Skill mastery.**
-5. Зміни в **Skills Taxonomy** мають проходити за [Skill entity rules](./docs/entities/skill.md) та [Create Skills Taxonomy Skill](./skills/create-skills-taxonomy.skill.md), а реальну завершеність дивитися в [Inventory](../learningApps/math/src/data/skills-inventory.md). UUID-посилання не є готовими Skill-файлами.
+5. Зміни в **Skills Taxonomy** мають проходити за [Skill entity rules](./docs/entities/skill.md) та [Create Skills Taxonomy Skill](./skills/create-skills-taxonomy.skill.md), а реальну завершеність перевіряти за Code-посиланнями в [таксономії](../learningApps/math/docs/skills/taxonomy.md) та фактичними TypeScript-файлами. UUID-посилання не є готовими Skill-файлами.
 6. **Сумнівні Skill** (об’єднання кількох компетенцій, дублікати, невизначена семантика) — винести на рев’ю, не переписувати тихо.
 7. При продовженні роботи спочатку подивитися **актуальний HEAD і CI**; назви PR/демо з попередніх бесід не гарантують поточного стану гілки.
 
@@ -197,9 +195,7 @@ Program може декларативно описувати правила: «�
 ## 12. Орієнтири в репозиторії
 
 - [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — актуальні правила сутностей; [Implement Skill Code](./skills/implement-skill-code.skill.md) — UUID, локалізація та рівневі експорти.
-- [Skills Inventory](../learningApps/math/src/data/skills-inventory.md) — повна методична таксономія, статуси `Implemented`.
-- [Skills Taxonomy Review](../learningApps/math/src/data/skills-taxonomy-review.md) — результати семантичного рев’ю.
-- [UUID mapping](../learningApps/math/src/data/skillsTaxonomy/UUID-MIGRATION.md) — історичні редакційні ID → статичні UUID.
+- [Approved Mathematics Skills Taxonomy](../learningApps/math/docs/skills/taxonomy.md) — чинна методична структура й описи; runtime UUID знаходяться в `*.ids.ts`, реалізації — у `*.data.ts`.
 - [Lesson types](../shared/engine/src/types/content/lesson.types.ts) — **поточні** контракти Lesson та LessonState.
 - [Lesson assembler](../learningApps/playground/src/components/pages/Lesson/Lesson.tsx) — поточна data-driven реалізація.
 - [How Light Moves Lesson](../learningApps/playground/src/data/howLightMoves/howLightMoves.data.ts) — реальний конфіг.
@@ -209,4 +205,4 @@ Program може декларативно описувати правила: «�
 
 ### Одним абзацом для нового AI-агента
 
-«Світло» будується як міжнародна безкоштовна бібліотека повторно використовуваних інтерактивних уроків. **Lesson** — автономний перевірюваний навчальний контент; **Program** (поки концепт) — сюжет, маскот, мандрівка й правила навчального маршруту. Потрібні **два способи програмного розширення уроку**: статичні вставки в адресні секції/слоти та динамічні реакції на фактичні події (`question.*`, `section.*`, `lesson.*`). Skill — стабільна, окремо оцінювана компетенція; оцінки, завдання, прогрес і сюжет — окремі шари. Код у гілці `math` уже містить data-driven Lesson та частину локалізованого UUID-based Skills Taxonomy, **але не слід вважати Program Runtime або event/injection API реалізованими**. Перед будь-якою задачею звіряй `studio/docs/entities/skill.md`, відповідний `studio/skills/*.skill.md`, поточний інвентар і чинні TypeScript-контракти. Історичні кількості реалізованих Skill у цьому документі є зрізом на дату його створення.
+«Світло» будується як міжнародна безкоштовна бібліотека повторно використовуваних інтерактивних уроків. **Lesson** — автономний перевірюваний навчальний контент; **Program** (поки концепт) — сюжет, маскот, мандрівка й правила навчального маршруту. Потрібні **два способи програмного розширення уроку**: статичні вставки в адресні секції/слоти та динамічні реакції на фактичні події (`question.*`, `section.*`, `lesson.*`). Skill — стабільна, окремо оцінювана компетенція; оцінки, завдання, прогрес і сюжет — окремі шари. Код у гілці `math` уже містить data-driven Lesson та частину локалізованого UUID-based Skills Taxonomy, **але не слід вважати Program Runtime або event/injection API реалізованими**. Перед будь-якою задачею звіряй `studio/docs/entities/skill.md`, відповідний `studio/skills/*.skill.md`, канонічну таксономію та чинні TypeScript-контракти. Історичні кількості реалізованих Skill у цьому документі є зрізом на дату його створення.

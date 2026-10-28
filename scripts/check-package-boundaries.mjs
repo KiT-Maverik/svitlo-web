@@ -3,7 +3,9 @@ import { dirname, join, resolve, relative, sep } from 'node:path';
 
 const root = process.cwd();
 const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
+const contracts = readJson('shared/contracts/package.json');
 const engine = readJson('shared/engine/package.json');
+const indexdb = readJson('shared/indexdb/package.json');
 const playground = readJson('learningApps/playground/package.json');
 const math = readJson('learningApps/math/package.json');
 const uiKit = readJson('shared/ui-kit/package.json');
@@ -17,19 +19,50 @@ function walk(dir) {
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
+assert(contracts.name === '@svitlo/contracts', 'Unexpected contracts package name');
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
+assert(indexdb.name === '@svitlo/indexdb', 'Unexpected IndexedDB package name');
+assert(indexdb.dependencies?.[contracts.name] === contracts.version, 'IndexedDB must consume canonical Contracts');
+assert(!indexdb.dependencies?.[engine.name], 'IndexedDB cannot depend on Engine');
+assert(indexdb.dependencies?.zod, 'IndexedDB must declare its Zod schema dependency');
+for (const subpath of ['.', './controllers', './utils', './schemas', './config']) {
+  const target = indexdb.exports?.[subpath];
+  assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
+    'IndexedDB public API must use compiled exports: ' + subpath);
+}
+assert(engine.dependencies?.[contracts.name] === contracts.version, 'Engine must use versioned public Contracts dependency');
+for (const subpath of ['.', './content', './taxonomy', './localization', './state']) {
+  const target = contracts.exports?.[subpath];
+  assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
+    'Contracts public export must use compiled artifacts: ' + subpath);
+}
 assert(playground.dependencies?.[engine.name] === engine.version, 'Playground must use a versioned engine dependency');
 assert(playground.dependencies?.[uiKit.name] === uiKit.version, 'Playground must use a versioned UI Kit dependency');
+assert(playground.dependencies?.[indexdb.name] === indexdb.version, 'Playground must use public IndexedDB dependency');
+assert(math.dependencies?.[indexdb.name] === indexdb.version, 'Math must use public IndexedDB dependency');
+for (const name of ['learningApps/math', 'learningApps/playground']) {
+  assert(!existsSync(resolve(root, name, 'src/db')), name + ' must not own duplicate IndexedDB controllers');
+}
+assert(existsSync(resolve(root, 'shared/indexdb/src/controllers/index.ts')), 'Shared IndexedDB controllers are missing');
+assert(existsSync(resolve(root, 'shared/indexdb/src/schemas/lessonState/lessonState.schema.ts')), 'Shared IndexedDB LessonState schema is missing');
+assert(existsSync(resolve(root, 'shared/indexdb/src/schemas/quizState/quizState.schema.ts')), 'Shared IndexedDB QuizState schema is missing');
 for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', playground]]) {
   assert(manifest.dependencies?.[engine.name] === engine.version, label + ' must use public Engine dependency');
   assert(manifest.dependencies?.[uiKit.name] === uiKit.version, label + ' must use public UI Kit dependency');
 }
-assert(existsSync(resolve(root, 'learningApps/math/src/math')), 'Math textbook is missing its domain content');
+assert(existsSync(resolve(root, 'learningApps/math/src/data/skillsTaxonomy')), 'Math textbook is missing its domain content');
 assert(existsSync(resolve(root, 'learningApps/math/docs')), 'Math textbook is missing package-local educational docs');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/content')), 'Playground cannot contain authored textbook content');
-assert(!existsSync(resolve(root, 'learningApps/playground/src/app/topics/light')), 'Old subject-specific Playground route must be removed');
-assert(existsSync(resolve(root, 'learningApps/playground/src/fixtures/demoLesson.ts')), 'Playground must provide a generic lesson fixture');
+assert(existsSync(resolve(root, 'learningApps/playground/src/app/topics/light/page.tsx')), 'Playground must host the moved light demonstration route');
+assert(existsSync(resolve(root, 'learningApps/playground/src/data/demoLesson/demoLesson.ts')), 'Playground must own its subject-neutral lesson demo data');
+assert(existsSync(resolve(root, 'learningApps/playground/src/data/demoLesson/markdown/sample-ar.md')), 'Playground must own localized Markdown test data');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/fixtures')), 'Obsolete Playground fixtures directory must be removed');
+assert(!existsSync(resolve(root, 'learningApps/math/src/app/topics/light')), 'Math cannot own Playground demo routes');
+assert(!existsSync(resolve(root, 'learningApps/math/src/content/howLightMoves')), 'Math cannot own light demonstration content');
+assert(!existsSync(resolve(root, 'learningApps/math/src/components/widgets/KnowledgeCheckpoint')), 'Math cannot own scene-specific checkpoint tests');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/components/widgets/KnowledgeCheckpoint')), 'Scene checkpoint tests must live with their authored scene');
+assert(existsSync(resolve(root, 'learningApps/playground/src/data/howLightMoves/sections/theory/resources/scenes/Checkpoint/Checkpoint.e2e.spec.ts')), 'Checkpoint scene must own its E2E coverage');
 assert(!existsSync(resolve(root, 'math')), 'Root mathematics docs must be inside the textbook package');
 assert(uiKit.dependencies?.[engine.name] === engine.version, 'UI Kit must consume the published Engine API');
 assert(engine.scripts?.build && engine.files?.includes('dist'), 'Engine must publish compiled artifacts');
@@ -38,12 +71,20 @@ for (const subpath of ['.', './localization', './taxonomy', './content', './buil
   assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
     'Engine public export is missing a dist entry: ' + subpath);
 }
+assert(existsSync(resolve(root, 'shared/engine/src/data/assessmentMethodTaxonomy/index.data.ts')), 'Engine must own the canonical Assessment Method Taxonomy');
+assert(!existsSync(resolve(root, 'learningApps/math/src/data/assessmentMethodTaxonomy')), 'Math must not own shared Assessment Method Taxonomy');
+assert(!existsSync(resolve(root, 'learningApps/math/src/utils')), 'Math utility duplicates must be removed after extraction');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/utils')), 'Playground utility duplicates must be removed after extraction');
+assert(existsSync(resolve(root, 'learningApps/math/src/data/skillsTaxonomy/__tests__/arithmeticTaxonomy.spec.ts')), 'Subject-specific Math taxonomy checks must stay with Math');
+assert(existsSync(resolve(root, 'shared/engine/src/utils/createLocalizedFileLocations/createLocalizedFileLocations.spec.ts')), 'Engine must own shared locale path tests');
+assert(existsSync(resolve(root, 'shared/engine/src/utils/builders/config/buildSkillCatalogConfig.spec.ts')), 'Engine must own shared skill builder tests');
+assert(engine.exports?.['./assessment-methods']?.default === './dist/assessment-methods.js', 'Engine must publicly export shared Assessment Methods');
 const engineSources = walk(resolve(root, 'shared/engine/src')).filter(file => file.endsWith('.ts') && !/\.(?:spec|typecheck)\.ts$/.test(file));
 for (const file of engineSources) {
   const content = readFileSync(file, 'utf8');
   const imports = [...content.matchAll(/\b(?:from\s*|import\s*\(\s*)['"]([^'"]+)['"]/g)];
   for (const match of imports) {
-    assert(match[1].startsWith('.'),
+    assert(match[1].startsWith('.') || match[1].startsWith('@svitlo/contracts'),
       'Engine must not import runtime, UI or application packages: ' + relative(root, file) + ' -> ' + match[1]);
   }
 }

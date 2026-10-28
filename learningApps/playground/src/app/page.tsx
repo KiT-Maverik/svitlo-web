@@ -15,6 +15,7 @@ export default function Home() {
           <Button variant="contained" href="/topics/demo">
             Демонстраційний урок
           </Button>
+          <Button variant="outlined" href="/topics/light">Відкрити урок «Як рухається світло»</Button>
           <Button variant="outlined" href="/questions">
             Інтерактивні запитання
           </Button>

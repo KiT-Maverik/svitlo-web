@@ -1,5 +1,5 @@
 import type { Locale } from '../../../types/languages';
-import type { DeepReadonly } from '../../../types/readonly.types';
+import type { DeepReadonly } from '@svitlo/contracts/content';
 import type {
   Lesson,
   Lesson_Config,
@@ -7,7 +7,7 @@ import type {
   LessonSection,
   LessonSection_Content,
   Quiz_Config,
-} from '../../../content';
+} from '@svitlo/contracts/content';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 import { buildResource, buildTextResource } from '../buildResource/buildResource.utils';
 import { buildQuiz } from '../buildQuiz/buildQuiz.utils';

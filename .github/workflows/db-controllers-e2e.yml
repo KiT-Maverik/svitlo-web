@@ -4,7 +4,8 @@ on:
     branches: [test/db-controllers-e2e]
   pull_request:
     paths:
-      - 'learningApps/playground/src/db/**'
+      - 'shared/indexdb/**'
+      - 'learningApps/playground/src/testing/controllers.e2e.spec.ts'
       - 'learningApps/playground/src/db/controllers/__tests__/**'
       - 'learningApps/playground/src/testing/db-browser-*.mjs'
       - 'learningApps/playground/src/testing/db-browser-*.ts'

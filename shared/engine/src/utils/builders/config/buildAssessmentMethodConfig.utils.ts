@@ -1,6 +1,6 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
-import type { AssessmentMethod_Config } from '../../../types/content/assessmentMethod.types';
-import type { DeepReadonly } from '../../../types/readonly.types';
+import type { AssessmentMethod_Config } from '@svitlo/contracts/content';
+import type { DeepReadonly } from '@svitlo/contracts/content';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
 const supported = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language));

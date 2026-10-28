@@ -7,18 +7,18 @@ export const theory_MarkdownResources_Data = {
     id: theory_MarkdownResources_Ids.introduction,
     blockType: 'markdown',
     allLocales: true,
-    fileLocation: createLocalizedFileLocations('/content/howLightMoves/sections/theory/resources/markdown/01', 'md'),
+    fileLocation: createLocalizedFileLocations('/data/howLightMoves/sections/theory/resources/markdown/01', 'md'),
   },
   continuation: {
     id: theory_MarkdownResources_Ids.continuation,
     blockType: 'markdown',
     allLocales: true,
-    fileLocation: createLocalizedFileLocations('/content/howLightMoves/sections/theory/resources/markdown/02', 'md'),
+    fileLocation: createLocalizedFileLocations('/data/howLightMoves/sections/theory/resources/markdown/02', 'md'),
   },
   conclusion: {
     id: theory_MarkdownResources_Ids.conclusion,
     blockType: 'markdown',
     allLocales: true,
-    fileLocation: createLocalizedFileLocations('/content/howLightMoves/sections/theory/resources/markdown/03', 'md'),
+    fileLocation: createLocalizedFileLocations('/data/howLightMoves/sections/theory/resources/markdown/03', 'md'),
   },
 } satisfies Record<keyof typeof theory_MarkdownResources_Ids, MarkdownResource_AllLocales_Config>;

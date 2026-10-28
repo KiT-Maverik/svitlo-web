@@ -107,7 +107,7 @@ learningApps/<subject>/
 ├── eslint.config.mjs               # local or referenced lint config where needed
 ├── public/                         # owned static/downloadable media
 ├── docs/                           # own reviewed editorial source and specifications
-│   ├── skills/                      # taxonomy/Skill definitions where applicable
+│   ├── skills/                      # canonical Skills Taxonomy where applicable
 │   ├── curriculums/                 # curricular definitions
 │   └── lessons/                     # Lesson briefs, scripts and Scene specifications
 └── src/
