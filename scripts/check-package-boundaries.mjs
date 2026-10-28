@@ -53,7 +53,14 @@ for (const subpath of ['.', './localization', './taxonomy', './content', './buil
   assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
     'Engine public export is missing a dist entry: ' + subpath);
 }
-assert(existsSync(resolve(root, 'learningApps/math/src/data/assessmentMethodTaxonomy')), 'Assessment-method taxonomy is missing from Math pending extraction');
+assert(existsSync(resolve(root, 'shared/engine/src/data/assessmentMethodTaxonomy/index.data.ts')), 'Engine must own the canonical Assessment Method Taxonomy');
+assert(!existsSync(resolve(root, 'learningApps/math/src/data/assessmentMethodTaxonomy')), 'Math must not own shared Assessment Method Taxonomy');
+assert(!existsSync(resolve(root, 'learningApps/math/src/utils')), 'Math utility duplicates must be removed after extraction');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/utils')), 'Playground utility duplicates must be removed after extraction');
+assert(existsSync(resolve(root, 'learningApps/math/src/data/skillsTaxonomy/__tests__/arithmeticTaxonomy.spec.ts')), 'Subject-specific Math taxonomy checks must stay with Math');
+assert(existsSync(resolve(root, 'shared/engine/src/utils/createLocalizedFileLocations/createLocalizedFileLocations.spec.ts')), 'Engine must own shared locale path tests');
+assert(existsSync(resolve(root, 'shared/engine/src/utils/builders/config/buildSkillCatalogConfig.spec.ts')), 'Engine must own shared skill builder tests');
+assert(engine.exports?.['./assessment-methods']?.default === './dist/assessment-methods.js', 'Engine must publicly export shared Assessment Methods');
 const engineSources = walk(resolve(root, 'shared/engine/src')).filter(file => file.endsWith('.ts') && !/\.(?:spec|typecheck)\.ts$/.test(file));
 for (const file of engineSources) {
   const content = readFileSync(file, 'utf8');

@@ -17,3 +17,5 @@ npm run typecheck:math
 ```
 
 The app depends on the public npm exports of `@svitlo/engine` and `@svitlo/ui-kit`, not on the Playground or on source paths in other workspaces. Registry publishing and isolated tarball consumption are verified in later migration stages.
+
+Math-only taxonomy regression tests are co-located with subject data in `src/data/skillsTaxonomy/__tests__/`. Shared Assessment Method descriptors and generic builder tests belong to `@svitlo/engine`.

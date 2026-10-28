@@ -10,7 +10,7 @@
     "plugins": []
   },
   "include": [
-    "src/utils/**/*.spec.ts",
+    "src/data/skillsTaxonomy/__tests__/*.spec.ts",
     "src/db/utils/**/*.spec.ts",
     "src/db/controllers/__tests__/controllers.integration.test.ts",
     "src/db/controllers/**/*.spec.ts"

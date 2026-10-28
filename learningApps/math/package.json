@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit && tsc -p tsconfig.types.json",
-    "test": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/db/utils/**/*.js' .test-build/utils/*/*.spec.js .test-build/utils/*/*/*.spec.js .test-build/db/utils/*/*.spec.js .test-build/db/controllers/*/*/*.spec.js .test-build/db/controllers/__tests__/*.integration.test.js",
+    "test": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/db/utils/**/*.js' .test-build/data/skillsTaxonomy/__tests__/*.spec.js .test-build/db/utils/*/*.spec.js .test-build/db/controllers/*/*/*.spec.js .test-build/db/controllers/__tests__/*.integration.test.js",
     "test:e2e": "playwright test",
     "test:db-utils": "tsc -p tsconfig.test.json && node --test .test-build/db/utils/*/*.spec.js",
     "test:db-utils:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/db/utils/**/*.js' .test-build/db/utils/*/*.spec.js",
