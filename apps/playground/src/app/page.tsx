@@ -5,15 +5,15 @@ export default function Home() {
       <Stack spacing={4}>
         <Box>
           <Typography component="h1" variant="h2" sx={{ fontWeight: 800 }}>
-            Світло
+            Світло · Playground
           </Typography>
           <Typography variant="h6" color="text.secondary" sx={{ mt: 2 }}>
-            Досліджуйте світло в інтерактивному уроці.
+            Перевіряйте універсальні навчальні компоненти, навігацію та інтерактивні запитання.
           </Typography>
         </Box>
         <Stack direction="row" sx={{ gap: 2, flexWrap: 'wrap' }}>
-          <Button variant="contained" href="/topics/light">
-            Відкрити урок «Як рухається світло»
+          <Button variant="contained" href="/topics/demo">
+            Демонстраційний урок
           </Button>
           <Button variant="outlined" href="/questions">
             Інтерактивні запитання

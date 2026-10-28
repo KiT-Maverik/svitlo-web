@@ -27,6 +27,9 @@ for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', 
 assert(existsSync(resolve(root, 'apps/textbooks/math/src/math')), 'Math textbook is missing its domain content');
 assert(existsSync(resolve(root, 'apps/textbooks/math/docs')), 'Math textbook is missing package-local educational docs');
 assert(!existsSync(resolve(root, 'apps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
+assert(!existsSync(resolve(root, 'apps/playground/src/content')), 'Playground cannot contain authored textbook content');
+assert(!existsSync(resolve(root, 'apps/playground/src/app/topics/light')), 'Old subject-specific Playground route must be removed');
+assert(existsSync(resolve(root, 'apps/playground/src/fixtures/demoLesson.ts')), 'Playground must provide a generic lesson fixture');
 assert(!existsSync(resolve(root, 'math')), 'Root mathematics docs must be inside the textbook package');
 assert(uiKit.dependencies?.[engine.name] === engine.version, 'UI Kit must consume the published Engine API');
 assert(engine.scripts?.build && engine.files?.includes('dist'), 'Engine must publish compiled artifacts');

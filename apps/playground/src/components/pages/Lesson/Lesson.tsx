@@ -3,7 +3,7 @@ import type { Lesson_Config, LessonContentCatalog, Quiz } from '@svitlo/engine/c
 import type { Locale } from '@svitlo/engine/localization';
 import { buildLesson } from '@svitlo/engine/builders';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
-import { LessonLearningLayout } from '@layout';
+import LessonLearningLayout from '@/components/layout/LearningLayout/LearningLayout';
 import { LessonProgressProvider } from './LessonProgress/LessonProgress';
 import LessonSectionContent from './LessonSectionContent/LessonSectionContent';
 import LessonClient from './LessonClient/LessonClient';

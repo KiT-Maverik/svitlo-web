@@ -1,10 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { isValidElement, type ReactElement } from 'react';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
-import { LessonLearningLayout } from '@layout';
-import { howLightMoves_Lesson_Data } from '@/content/howLightMoves/index.data';
-import { howLightMovesCatalog } from '@/content/howLightMoves/howLightMoves.catalog';
-import { quiz_Quiz_Data } from '@/content/howLightMoves/sections/quiz/index.data';
+import LessonLearningLayout from '@/components/layout/LearningLayout/LearningLayout';
+import { demoLessonConfig, demoLessonCatalog, demoQuizConfig } from '@/fixtures/demoLesson';
 import { buildLesson } from '@svitlo/engine/builders';
 import type { Lesson_Config } from '@svitlo/engine/content';
 import Lesson from './Lesson';
@@ -25,10 +23,10 @@ function props<T>(element: ReactElement): T {
 describe('Lesson page assembly', () => {
   it('should assemble the route from the supplied config and locale', () => {
     const root = Lesson({
-      config: howLightMoves_Lesson_Data,
-      catalog: howLightMovesCatalog,
+      config: demoLessonConfig,
+      catalog: demoLessonCatalog,
       locale: 'en-US',
-      href: '/topics/light',
+      href: '/topics/demo',
     });
     expect(root.type).toBe(LocaleProvider);
     expect(props<{ locale: string }>(root).locale).toBe('en-US');
@@ -36,22 +34,22 @@ describe('Lesson page assembly', () => {
     const scenes = onlyChild(root);
     expect(scenes.type).toBe(SceneLocaleProvider);
     expect(props<{ scenes: object }>(scenes).scenes).toEqual(
-      buildLesson(howLightMoves_Lesson_Data, 'en-US', howLightMovesCatalog).sceneLocale,
+      buildLesson(demoLessonConfig, 'en-US', demoLessonCatalog).sceneLocale,
     );
 
     const progress = onlyChild(scenes);
     expect(progress.type).toBe(LessonProgressProvider);
-    expect(progress.key).toBe(howLightMoves_Lesson_Data.id);
+    expect(progress.key).toBe(demoLessonConfig.id);
     expect(props<{ lessonId: string; sectionIds: string[]; quizSectionId: string }>(progress)).toMatchObject({
-      lessonId: howLightMoves_Lesson_Data.id,
-      sectionIds: [...howLightMoves_Lesson_Data.sections.content],
-      quizSectionId: howLightMoves_Lesson_Data.sections.content[2],
+      lessonId: demoLessonConfig.id,
+      sectionIds: [...demoLessonConfig.sections.content],
+      quizSectionId: demoLessonConfig.sections.content[2],
     });
 
     const layout = onlyChild(progress);
     expect(layout.type).toBe(LessonLearningLayout);
     expect(props<{ topics: Array<{ title: string; href: string }>; quizStep: number }>(layout)).toMatchObject({
-      topics: [{ title: 'How Light Travels', href: '/topics/light' }],
+      topics: [{ title: 'Interactive lesson demo', href: '/topics/demo' }],
       quizStep: 2,
     });
 
@@ -60,17 +58,17 @@ describe('Lesson page assembly', () => {
     const assembled = props<{ sectionContent: unknown[]; questions: unknown[] }>(client);
     expect(assembled.sectionContent).toHaveLength(3);
     expect(assembled.sectionContent[2]).toBeNull();
-    expect(assembled.questions).toHaveLength(quiz_Quiz_Data.questionBank.length);
+    expect(assembled.questions).toHaveLength(demoQuizConfig.questionBank.length);
   });
 
   it('should support a content-only lesson with no quiz', () => {
     const config: Lesson_Config = {
-      ...howLightMoves_Lesson_Data,
+      ...demoLessonConfig,
       requireQuiz: false,
-      sections: { ...howLightMoves_Lesson_Data.sections, content: [howLightMoves_Lesson_Data.sections.content[0]] },
+      sections: { ...demoLessonConfig.sections, content: [demoLessonConfig.sections.content[0]] },
     };
     const progress = onlyChild(
-      onlyChild(Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' })),
+      onlyChild(Lesson({ config, catalog: demoLessonCatalog, locale: 'uk-UA', href: '/lesson' })),
     );
     expect(props<{ quizSectionId?: string; requireQuiz: boolean }>(progress)).toMatchObject({ requireQuiz: false });
     expect(props<{ quizSectionId?: string }>(progress).quizSectionId).toBeUndefined();
@@ -81,23 +79,23 @@ describe('Lesson page assembly', () => {
 
   it('should reject a config requiring a missing quiz', () => {
     const config: Lesson_Config = {
-      ...howLightMoves_Lesson_Data,
-      sections: { ...howLightMoves_Lesson_Data.sections, content: [howLightMoves_Lesson_Data.sections.content[0]] },
+      ...demoLessonConfig,
+      sections: { ...demoLessonConfig.sections, content: [demoLessonConfig.sections.content[0]] },
     };
-    expect(() => Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' })).toThrow(
+    expect(() => Lesson({ config, catalog: demoLessonCatalog, locale: 'uk-UA', href: '/lesson' })).toThrow(
       'A lesson that requires a quiz must include one',
     );
   });
 
   it('should reject multiple quizzes until the progress model supports them', () => {
     const config: Lesson_Config = {
-      ...howLightMoves_Lesson_Data,
+      ...demoLessonConfig,
       sections: {
-        ...howLightMoves_Lesson_Data.sections,
-        content: [...howLightMoves_Lesson_Data.sections.content, howLightMoves_Lesson_Data.sections.content[2]],
+        ...demoLessonConfig.sections,
+        content: [...demoLessonConfig.sections.content, demoLessonConfig.sections.content[2]],
       },
     };
-    expect(() => Lesson({ config, catalog: howLightMovesCatalog, locale: 'uk-UA', href: '/lesson' })).toThrow(
+    expect(() => Lesson({ config, catalog: demoLessonCatalog, locale: 'uk-UA', href: '/lesson' })).toThrow(
       'The current lesson progress model supports one quiz per lesson',
     );
   });

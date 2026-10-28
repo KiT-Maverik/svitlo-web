@@ -91,3 +91,6 @@ Question API examples (slots, lifecycle events, automatic grading): `/questions/
 Гамбургер відкриває та закриває немодальний сайдбар. Escape, кнопка закриття та натискання на затемнену область теж закривають його. Панель і затемнення обмежені областю між навбарами.
 
 Перевірки: `npm run lint`, `npm run build`.
+
+
+Playground is a subject-neutral component and lesson-rendering sandbox; authored curricula belong only to textbook applications.

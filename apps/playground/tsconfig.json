@@ -23,12 +23,6 @@
       }
     ],
     "paths": {
-      "@layout": [
-        "./src/components/layout/index.ts"
-      ],
-      "@pages": [
-        "./src/components/pages/index.ts"
-      ],
       "@/*": [
         "src/*"
       ]

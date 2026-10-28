@@ -96,3 +96,10 @@ Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/
 - `math/` at repository root moved into `apps/textbooks/math/docs/` so package-scoped agents can read educational specifications.
 - `apps/playground/src/math/` and subject-specific taxonomy regression tests are removed from the Playground, while the Math app keeps the complete authored taxonomy and tests.
 - Each app builds and typechecks via its own npm workspace scripts; shared code is consumed through public Engine/UI Kit exports. Publishing remains out of scope.
+
+## Stage 4 — Subject-neutral Playground
+
+- Removed the old light-science authored content, local route and the deprecated mathematics taxonomy migration script from Playground. Math textbook source and documentation remain unchanged.
+- Playground now hosts a small static, subject-neutral lesson fixture under `src/fixtures/demoLesson.ts` and `/topics/demo`, plus generic UI Kit question/API examples.
+- Removed obsolete `@layout` and `@pages` aliases and app re-export barrels; application imports are explicit. Shared packages remain accessible only through their public package exports.
+- Playground remains separately buildable and its lesson persistence, quiz workflow, localization and browser coverage use fixture IDs rather than textbook-specific content.
