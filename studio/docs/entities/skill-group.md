@@ -1,30 +1,26 @@
 # SkillGroup
 
-**Entity category:** semantic collection of related competencies.
+**Entity category:** catalog grouping.
 
-A **SkillGroup** is a coherent family of Skills within a SkillDomain. It is an intermediate cataloging level, not itself the smallest independently assessable competency.
+A **SkillGroup** is a named category that organizes related Skills inside one SkillDomain. It is an organizational layer, not a lesson, assessment, learner result, or aggregate mastery status.
 
-## SEMANTIC RESPONSIBILITY
+## SEMANTIC ROLE
 
-- Give the Group a meaningful name describing a shared competency family.
-- Explain what belongs in this Group and how it differs from adjacent Groups.
-- Contain one or more individually assessable Skills, without forcing a minimum count beyond one or uniform group sizes.
-- Preserve a single **primary placement** for each Skill. Cross-domain educational use belongs in curricula and other external mappings.
-- Distinguish the Group's name from that of its direct child Skills. If they coincide, revise the Skill to a semantically accurate specific name; avoid adding meaningless qualifiers.
+- Name one coherent family of related Skill labels.
+- Use a short editorial description to distinguish it from other Groups.
+- A Group contains Skills **through the taxonomy and code-level membership map**, not through a list embedded in its own Markdown Definition.
+- Keep each Skill in one primary Group; external materials can reference a Skill from multiple contexts.
+- Do not force a fixed number of Skills per Group or duplicate a child Skill's name as the Group name.
 
-## GRANULARITY AND REVIEW
+The generated Group Definition is intentionally minimal: title, editorial Status, short Description, and separate Code link. **It must not enumerate its Skills** or define evaluation evidence, grades, progress, question formats, or curriculum sequencing.
 
-A Group can organize distinct operations and their genuinely independent integration competencies. For example, a family can include separate operations **and** a Skill assessing understanding of their relationship. A list of actions in a Group name is a reason to inspect cohesion, not an automatic defect. If the Group itself describes an observable, independently assessable outcome, determine whether its concept belongs at Skill level instead.
+## RUNTIME CONTRACT AND ARTIFACTS
 
-## WHAT IT IS NOT
+The current shared-engine `SkillGroup_Config` contains `id`, localized `name`, and `skillIds` (explicit references to child IDs). These technical relationships remain in source code. It currently contains no `description` property, so the Markdown description is editorial rather than an automatic UI field.
 
-A Group is not a lesson, unit, grade, prerequisite ordering, aggregation rule, question bank, UI component, or evidence that all child Skills have been mastered.
+- **Definition:** the Group's concise Markdown catalog description.
+- **Code:** a separate verified application source file.
 
-## ARTIFACTS
-
-- **Definition:** a Markdown document explaining the Group's scope and boundaries.
-- **Code:** its separately existing application source file.
-
-Both must remain independent, verifiable links. Neither a Markdown document nor a referenced UUID is sufficient evidence that Code exists. Missing targets use `[Not implemented](#)`. Runtime identifiers and technical reference maps belong in the implementation layer.
+Neither artifact replaces the other; use `[Not implemented](#)` for a missing target.
 
 Related entities: [SkillDomain](./skill-domain.md), [Skill](./skill.md).
