@@ -123,7 +123,7 @@ File: %Lesson document file link. Default [Not implemented](#). When implemented
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
-- [%SKILL_NAME as written in its data file, without suffixes%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
+- [%SKILL_NAME%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
 - ...
 ```
 
