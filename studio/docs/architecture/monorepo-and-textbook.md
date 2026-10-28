@@ -133,11 +133,9 @@ These are **responsibility-based directories**, not an obligation to create empt
 
 ### Current concrete reference
 
-The independent [Math textbook](../../../learningApps/math/package.json) demonstrates:
-- [Next.js App Router](../../../learningApps/math/src/app/topics/light/page.tsx) for a lesson route.
-- [Git-authored named Lesson Data](../../../learningApps/math/src/content/howLightMoves/howLightMoves.data.ts) and [ordered Section Data](../../../learningApps/math/src/content/howLightMoves/sections/theory/theory.data.ts).
-- [Lesson Section renderer](../../../learningApps/math/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) for selected typed blocks. **It currently directly renders `text`, `markdown` and `scene`, not all resource types declared by Engine**.
-- Own package builds/tests and shared-library use. **Math is an actual standalone textbook, not a runtime dependency for other textbooks**; Playground remains a separate UI demonstration application.
+The [Math textbook package](../../../learningApps/math/package.json) and [Math Skills Taxonomy](../../../learningApps/math/src/data/skillsTaxonomy/) have their own package-owned sources. The subject-specific [How Light Moves demo Data](../../../learningApps/playground/src/data/howLightMoves/howLightMoves.data.ts) and [demo Sections](../../../learningApps/playground/src/data/howLightMoves/sections/theory/theory.data.ts) now live in **Playground**, not under the Math textbook. The [Math Lesson Section renderer](../../../learningApps/math/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) still exists, but its legacy `/topics/light` route and tests reference the old content location and **require a separate migration before they can be considered working**. Do not reintroduce duplicate demo content into Math merely to satisfy stale imports; adapt or retire those usages through their owning migration work.
+
+Math is intended to be a standalone textbook and Playground an independent demonstration app; both must pass their own tests before declaring the extraction complete.
 
 Do not duplicate Math's subject-specific content into `shared` or Playground to “standardize” a textbook. Every new textbook must be independently testable and host only **its own educational content**.
 

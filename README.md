@@ -53,6 +53,8 @@ Question API examples (slots, lifecycle events, automatic grading): `/questions/
 
 ## Урок із конфігурації (data-driven Lesson)
 
+> **Migration note (2026-10-28):** `howLightMoves` data and Scenes were relocated to `learningApps/playground/src/data/howLightMoves`. The Math `/topics/light` route and some legacy tests still refer to the former Math `src/content/` location. The implementation details below describe an **earlier state**, not a currently verified working Math route. Do not copy demonstration Data back into Math; finish the remaining route/test migration in its owning workstream.
+
 Після `npm ci` та `npm run dev` відкрийте `/topics/light` — урок «Як рухається світло».
 
 - `src/content/howLightMoves/howLightMoves.data.ts` — `Lesson_Config`: ID назви й секцій, параметри навігації, квізу та словники локалізації сцен.

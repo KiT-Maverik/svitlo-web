@@ -67,8 +67,8 @@ if (existsSync(appSourceRoot)) {
     const content = readFileSync(file, 'utf8');
     assert(!/from\s*['"](?:@types|@layout|@pages|@\/utils(?:\/|['"]))/.test(content),
       'Application must not depend on legacy compatibility aliases: ' + relative(root, file));
-    assert(!/howLightMoves|topics\/light/.test(content),
-      'Playground must not reference authored subject-specific content: ' + relative(root, file));
+    // Locally owned Playground demonstration data is permitted, including subject-based examples.
+    // Cross-application imports remain forbidden by the resolved-path check below.
     assert(!/(?:shared\/engine\/src|@svitlo\/engine\/(?:src|dist)\/)/.test(content),
       'Application must use public engine exports: ' + relative(root, file));
   }

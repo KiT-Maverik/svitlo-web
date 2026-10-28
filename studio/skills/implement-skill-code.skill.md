@@ -19,7 +19,7 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
    - `skillDomain.types.ts` — `SkillDomain_Config`, `groupIds`.
    - `shared/engine/src/types/languages.ts` — `LanguageCode` and the current supported-language configuration.
 5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
-6. **Reference implementation (read-only example):** inspect the **existing Mathematics taxonomy** in `learningApps/math/src/math/skillsTaxonomy/`, especially:
+6. **Reference implementation (read-only example):** inspect the **existing Mathematics taxonomy** in `learningApps/math/src/data/skillsTaxonomy/`, especially:
    - `index.data.ts` and `index.ids.ts`;
    - `arithmetic/arithmetic.data.ts`, `arithmetic/arithmetic.ids.ts`, `arithmetic/index.data.ts`, `arithmetic/index.ids.ts`;
    - `arithmetic/addition/addition.data.ts`, `addition.ids.ts`, `index.data.ts`;
