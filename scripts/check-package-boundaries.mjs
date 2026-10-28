@@ -1,5 +1,5 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
-import { join, resolve, relative } from 'node:path';
+import { dirname, join, resolve, relative, sep } from 'node:path';
 
 const root = process.cwd();
 const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
@@ -73,11 +73,21 @@ if (existsSync(appSourceRoot)) {
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-for(const appRoot of ['learningApps/playground/src','learningApps/math/src']) {
-  for (const file of walk(resolve(root,appRoot)).filter(x=>/\.(ts|tsx)$/.test(x))) {
-    const code=readFileSync(file,'utf8');
-    assert(!/from\s*['"](?:@svitlo\/(?:playground|math)|(?:\.\.\/){3,}(?:playground|math)\/)/.test(code),
-      'Textbooks and Playground must not import other application source: '+relative(root,file));
+const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src']
+  .map(path => resolve(root, path));
+for (const applicationRoot of applicationSourceRoots) {
+  for (const file of walk(applicationRoot).filter(path => /\.(ts|tsx)$/.test(path))) {
+    const code = readFileSync(file, 'utf8');
+    for (const match of code.matchAll(/\bfrom\s*['"]([^'"]+)['"]/g)) {
+      const specifier = match[1];
+      assert(!/^@svitlo\/(?:playground|math)(?:\/|$)/.test(specifier),
+        'Applications must not import another application by package name: ' + relative(root, file));
+      if (!specifier.startsWith('.')) continue;
+      const target = resolve(dirname(file), specifier);
+      assert(!applicationSourceRoots.some(other => other !== applicationRoot &&
+        (target === other || target.startsWith(other + sep))),
+        'Applications must not import another application source: ' + relative(root, file) + ' -> ' + specifier);
+    }
   }
 }
 console.log('Package boundaries and both independent applications verified.');
