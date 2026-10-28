@@ -2,12 +2,14 @@
  * Test-only Next server. Build a disposable app directory with an extra route;
  * the real repository (and every production build) never contains the harness.
  */
-import { cpSync, existsSync, mkdirSync, mkdtempSync, rmSync, symlinkSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { spawn } from 'node:child_process';
 
 const root = process.cwd();
+const workspaceRoot = resolve(root, '../..');
+const installedNodeModules = [join(root, 'node_modules'), join(workspaceRoot, 'node_modules')].find(existsSync);
 const sandbox = mkdtempSync(join(tmpdir(), 'svitlo-db-e2e-'));
 const port = process.env.PLAYWRIGHT_DB_PORT ?? '3107';
 let cleaned = false;
@@ -19,19 +21,26 @@ function cleanup() {
 }
 
 try {
-  if (!existsSync(join(root, 'node_modules'))) {
+  if (!installedNodeModules) {
     throw new Error('Dependencies must be installed before running browser tests');
   }
-  for (const path of ['src', 'public', 'package.json', 'package-lock.json', 'tsconfig.json', 'next.config.ts']) {
+  for (const path of ['src', 'public', 'package.json', 'tsconfig.json', 'next.config.ts']) {
     cpSync(join(root, path), join(sandbox, path), { recursive: true });
   }
+  // The monorepo lockfile and base TypeScript config live above the Playground workspace.
+  cpSync(join(workspaceRoot, 'package-lock.json'), join(sandbox, 'package-lock.json'));
+  cpSync(join(workspaceRoot, 'tsconfig.base.json'), join(sandbox, 'tsconfig.base.json'));
+  const tsconfigPath = join(sandbox, 'tsconfig.json');
+  const tsconfig = JSON.parse(readFileSync(tsconfigPath, 'utf8'));
+  tsconfig.extends = './tsconfig.base.json';
+  writeFileSync(tsconfigPath, JSON.stringify(tsconfig, null, 2) + '\n');
   const testRoute = join(sandbox, 'src', 'app', 'db-browser-harness');
   mkdirSync(testRoute, { recursive: true });
   cpSync(join(root, 'src/testing/DbBrowserHarness.tsx'), join(testRoute, 'page.tsx'));
   cpSync(join(root, 'src/testing/db-browser-commands.ts'), join(testRoute, 'db-browser-commands.ts'));
-  symlinkSync(join(root, 'node_modules'), join(sandbox, 'node_modules'), 'dir');
+  symlinkSync(installedNodeModules, join(sandbox, 'node_modules'), 'dir');
 
-  const nextBin = resolve(root, 'node_modules/next/dist/bin/next');
+  const nextBin = resolve(installedNodeModules, 'next/dist/bin/next');
   const child = spawn(process.execPath, [nextBin, 'dev', '--webpack', '--hostname', '127.0.0.1', '--port', port], {
     cwd: sandbox,
     env: { ...process.env, NEXT_TELEMETRY_DISABLED: '1' },
