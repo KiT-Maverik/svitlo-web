@@ -63,6 +63,10 @@ Framework-specific links, `usePathname`, lesson progress and `useColorScheme` re
 
 The canonical native IndexedDB browser harness, commands and Playwright suite live in `shared/indexdb/testing` and use a temporary standalone browser test host. App-local `src/testing/setup.ts` remains Vitest setup; it is **not** IndexedDB duplication. The persisted database name/version/store structure was retained across migration.
 
+## Canonical editorial Skills Taxonomy
+
+For Mathematics, [`learningApps/math/docs/skills/taxonomy.md`](../../../learningApps/math/docs/skills/taxonomy.md) is the **single reviewed editorial source of truth** for the Domain → Group → Skill hierarchy. Its descriptions must explain the competencies in substance, not merely repeat their titles. The linked `learningApps/math/src/data/skillsTaxonomy/` modules are the typed, machine-readable representation; curriculum documentation points to this canonical taxonomy rather than duplicating definitions in parallel Skill files or legacy inventory reports. The separate per-Skill definition template was retired as part of the taxonomy consolidation; do not restore it or the former `src/data/skills-inventory*.md`, `skills-taxonomy-review.md` or `UUID-MIGRATION.md` documents.
+
 ## Standalone textbook package contract
 
 Each `learningApps/<subject>` owns its own `package.json`, `tsconfig.json`, Next.js config, `src/app` routes, `src/data` authored content, `public` media where required, package-owned `docs/` and tests. Reusable code is accessed through declared public `@svitlo/*` exports, never `shared/*/src`, another app's `src`, aliases resolved outside the package, or `../` paths crossing package roots. The `@/*` alias is local to that package.

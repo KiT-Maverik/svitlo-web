@@ -2,7 +2,7 @@
 
 **Mandatory first action:** Read [Coding Agent Persona](../personas/coding-agent.persona.md) in full. Apply the repository's `AGENTS.md` and any package-local instructions. This is an implementation task: do not redesign the catalog, invent Skills, author curriculum, or implement assessment/learner tracking.
 
-**Purpose:** Implement **approved SkillDomain, SkillGroup, and Skill Definitions** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy and separate lightweight Data/ID import surfaces.
+**Purpose:** Implement the **approved SkillDomain, SkillGroup, and Skill entries in the canonical Skills Taxonomy** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy and separate lightweight Data/ID import surfaces.
 
 ## CROSS-CUTTING RULES
 
@@ -11,7 +11,7 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
 ## REQUIRED SOURCES — READ BEFORE WRITING
 
 1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
-2. **Editorial authority:** read `<PackageRoot>/docs/skills/taxonomy.md` and the approved Markdown Definition linked for every entity in scope (`*.skill-domain.md`, `*.skill-group.md`, `*.skill.md`). The taxonomy alone owns the **Domain → Group → Skill** hierarchy and the placement of each entity. Missing, Draft, or contradictory Definitions are blockers for the affected entity; report them rather than inferring semantics.
+2. **Editorial authority:** read the **approved** `<PackageRoot>/docs/skills/taxonomy.md`, including each in-scope entity’s heading, substantive description, hierarchy position and Code link. This is the sole editorial source of truth; **no individual Markdown Definitions exist or are required**. Missing, ambiguous, unapproved or contradictory taxonomy entries are blockers; report them rather than inventing semantics or silently revising the taxonomy.
 3. **Entity meanings:** read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
 4. **Authoritative TypeScript contracts in the shared engine:** inspect the actual files under `shared/engine/src/types/content/`:
    - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.
@@ -40,7 +40,7 @@ Every runtime entity must be produced through its designated builder, using the 
 | SkillGroup | `id`, `name`, `skillIds` | `buildSkillGroupConfig` | Immediate child Skill IDs |
 | SkillDomain | `id`, `name`, `groupIds` | `buildSkillDomainConfig` | Immediate child SkillGroup IDs |
 
-The current contracts do **not** contain `description`. The Description in Markdown Definitions and taxonomy is editorial; **never invent** a runtime field or copy a description into TypeScript without an approved engine contract change. Likewise, no mastery evidence, assessment rules, scores, learner records, grade, prerequisites, question references, or UI state belong to these configs.
+The current contracts do **not** contain `description`. The explanatory prose in the permanent Markdown taxonomy is editorial; **never invent** a runtime field or copy a description into TypeScript without an approved engine contract change. Likewise, no mastery evidence, assessment rules, scores, learner records, grade, prerequisites, question references, or UI state belong to these configs.
 
 - Match the names, identity, and **exact parent/child placements** approved in the taxonomy; no extra Domains, Groups, Skills, cross-domain duplicates, or synthetic groups.
 - Respect the hierarchy: a Domain references only its Groups through `groupIds`; a Group references only its Skills through `skillIds`; a Skill references no children.
@@ -133,14 +133,14 @@ Use the repo's configured string quote preference independently of the **no-quot
 
 ## 5. REQUIRED IMPLEMENTATION ORDER
 
-1. **Inspect and reconcile:** read the approved editorial taxonomy, Definitions, type/builder contracts, **full current supported language set**, reference Mathematics tree and existing target code. Produce an exact in-scope file/ID plan. The taxonomy is a **temporary editorial authoring reference**, not a runtime registry; do not couple the application to reading it at runtime. Never mutate another textbook to satisfy this one.
+1. **Inspect and reconcile:** read the approved editorial taxonomy (including authoritative descriptions), type/builder contracts, **full current supported language set**, reference Mathematics tree and existing target code. Produce an exact in-scope file/ID plan. The taxonomy is the **permanent editorial source of truth**, not a runtime registry; do not couple the application to reading it at runtime. Never mutate another textbook to satisfy this one.
 2. **Reserve identity:** create/reuse Skill UUID literals in the Group's `skills/index.ids.ts`, Group UUID in `<group>.ids.ts`, Domain UUID in `<domain>.ids.ts`. Check uniqueness against the target package; preserve established identifiers.
 3. **Implement Skill Data:** write one `<skill>.data.ts` per approved Skill with `buildSkillConfig`, its ID-only import, and full `name` dictionary. Update the local `skills/index.data.ts` with **only the Group's Skill Data**.
 4. **Implement Group Data:** create/update `<group>.data.ts` with `buildSkillGroupConfig`, full `name`, own UUID, and exact `skillIds` from its `skills/index.ids.ts`. Maintain `<group>/index.data.ts` as **Group Data only** and `<group>/index.ids.ts` as the **Group UUID-only** re-export.
 5. **Implement Domain Data:** create/update `<domain>/index.ids.ts` with the direct Groups' UUIDs only; build `<domain>.data.ts` using `buildSkillDomainConfig` with full `name`, own UUID, and exact `groupIds`. Keep `<domain>/index.data.ts` **Domain Data only**.
 6. **Complete root indexes:** update root `index.data.ts` to export the selected Domain Data entries and root `index.ids.ts` to export Domain ID dictionaries. Do not aggregate nested Group/Skill Data into the root.
 7. **Verify what is currently possible:** cross-check taxonomy names against source paths and immediate-child ID maps, duplicate/missing IDs, wrong-level exports, circular dependencies, dynamic UUID generation, and translations. Report any unverified cross-file identity/registration requirements as **pending build-time integrity checks**; do not misattribute them to current TypeScript builders.
-8. **Update editorial Code links only after implementation:** in `<PackageRoot>/docs/skills/taxonomy.md`, update the **Code** link for each implemented entity to the verified actual `*.data.ts` file, relative to the taxonomy document. Recompute only **Code files** counts and preserve all Definition links/counts. Also update the affected entity's Markdown Definition `Code` link, resolving relative to that Definition file. Never replace the Definition link with Code.
+8. **Update taxonomy Code links only after verified implementation:** update the single **Code** link of each implemented entity in `<PackageRoot>/docs/skills/taxonomy.md` to the actual `*.data.ts` path relative to the taxonomy. Recompute only the **Code files** counts. Preserve headings, descriptions, hierarchy and all other Code links. **Never create or update individual Markdown Definition files.** An unverified/partial implementation retains `Code: [Not implemented](#)`.
 9. **Stop:** report only the bounded task, validations, and anything incomplete. Do not proceed to unrelated Domains, lessons, question generation, or assessment.
 
 A partial implementation is not “complete” merely because its UUID or parent mapping exists. Only entities with valid `*.data.ts`, reachable own-level Data exports, complete translations, and verified references count as implemented. Avoid generating empty Group/Domain placeholders that violate current reference validation; if a prerequisite child is missing, complete the approved dependencies within scope or report the blocker.
@@ -154,7 +154,7 @@ Before reporting success, run the target package's available checks and add/fix 
 - **Identity:** UUID syntax and stability; check uniqueness and immediate-child mappings against the in-scope files and approved hierarchy. The existing builders **cannot** resolve IDs to actual entity types/registrations; full repo-wide reference validation is deferred to a separate build-time script. Mark unverified items explicitly rather than claiming a builder-level guarantee.
 - **Data/IDs isolation:** `*.ids.ts` modules never import Data or builders; importing a parent Data config does not require importing child Data solely to access child IDs.
 - **Export boundaries:** root Data exports Domains only, Domain Data exports its own Domain only, Group Data exports its Group only, Skills Data exports only that Group's Skills. Verify no nested/re-exported Data from higher levels and no `export *`. Adapt the structural checks exemplified by `learningApps/math/src/utils/builders/config/skillTaxonomyIndex.spec.ts`.
-- **Topology:** physical paths and entries match the approved taxonomy, with no accidental duplicate or missing entities. All editorial Code links resolve to real files and counts reconcile; Definition links remain unchanged.
+- **Topology:** physical paths and entries match the approved taxonomy, with no accidental duplicate or missing entities. All non-placeholder taxonomy Code links resolve to matching implemented files and counts reconcile; the permanent descriptions and approved hierarchy remain unchanged.
 - **Tests:** run available package TypeScript, lint, builder, translation and index tests; cite commands/results. Run registry validation only if a real registry/test exists; `fileLocation` and global ID resolution remain separate planned infrastructure, not automatically finished by producing Data files. If tooling is unavailable, mark checks **not run**.
 
 ## RESULT / HANDOFF
@@ -165,7 +165,7 @@ Produce a reviewable code change that includes:
 2. **Complete source files** for in-scope entities: `*.data.ts`, stable `*.ids.ts` / child ID dictionaries, and correctly scoped `index.data.ts` / `index.ids.ts` at **every** level, with no duplicated UUID values.
 3. **Fully translated names** for all required language keys in every new or changed Skill/Group/Domain; no shortcuts.
 4. **Tests or updated verification** covering hierarchy integrity, ID reference independence, complete localization and shallow barrel exports.
-5. **Updated Code links/counts** in `<PackageRoot>/docs/skills/taxonomy.md` and Code links in the corresponding Markdown Definitions, without overwriting the Definitions or their relationships.
+5. **Updated Code links/counts** in `<PackageRoot>/docs/skills/taxonomy.md`, preserving its approved semantic descriptions, entity names and hierarchy. No redundant per-entity Markdown files.
 6. **Concise completion report:** implemented Domains/Groups/Skills counts, paths, preserved/new IDs, verification commands and outcomes, unresolved items, and any necessary explicit migration notes.
 
 **Scope boundary:** Do **not** move/copy the Math textbook's Mathematics taxonomy into another textbook automatically, change shared engine contracts, rewrite curriculum semantics, build a cross-textbook Skill registry, or refactor unrelated packages. Cross-textbook Skill identity synchronization is **out of scope for now**. Each textbook stays independently extractable with its own `src/data/skillsTaxonomy`, depending only on explicit shared-engine contracts — no hidden coupling to another textbook's data tree.
