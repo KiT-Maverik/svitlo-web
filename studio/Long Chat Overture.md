@@ -25,7 +25,7 @@
 - Самодостатній, повторно використовуваний пакет навчального змісту: теорія, інтерактиви, практика, перевірка, ресурси, метадані, стабільні ID.
 - Не знає, який маскот його супроводжує, у якій пригоді знаходиться учень або хто замовив цей урок.
 - Може існувати в загальному каталозі й бути використаним у багатьох програмах, підручниках, класах, країнах і сценаріях.
-- **[У коді]** Урок задається `Lesson_Config`, а універсальний компонент `src/components/pages/Lesson/Lesson.tsx` його збирає. Приклад — `src/content/how-light-moves/lightLesson.ts`.
+- **[У коді]** Урок задається `Lesson_Config`, а універсальний компонент `src/components/pages/Lesson/Lesson.tsx` його збирає. Приклад — `src/content/howLightMoves/howLightMoves.data.ts`.
 - **Важливе обмеження поточної реалізації:** у `Lesson_Config` секції зараз описані через `sections.content: NonEmptyArray<...>`, а поточний рендерер підтримує максимум один Quiz. Це НЕ фінальна модель композиції, до якої ми схилялися.
 
 ### Program — режисура навчання
@@ -202,7 +202,7 @@ Program може декларативно описувати правила: «�
 - [UUID mapping](../math/skillsTaxonomy/UUID-MIGRATION.md) — історичні редакційні ID → статичні UUID.
 - [Lesson types](../src/types/content/lesson.types.ts) — **поточні** контракти Lesson та LessonState.
 - [Lesson assembler](../src/components/pages/Lesson/Lesson.tsx) — поточна data-driven реалізація.
-- [How Light Moves Lesson](../src/content/how-light-moves/lightLesson.ts) — реальний конфіг.
+- [How Light Moves Lesson](../src/content/howLightMoves/howLightMoves.data.ts) — реальний конфіг.
 - [Taxonomy index regression test](../src/utils/builders/config/skillTaxonomyIndex.spec.ts) — перевірка ізоляції експортів.
 
 ---
