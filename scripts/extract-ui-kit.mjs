@@ -1,4 +1,4 @@
-import { existsSync, readdirSync, readFileSync, mkdirSync, writeFileSync, unlinkSync } from 'node:fs';
+import { existsSync, statSync, readdirSync, readFileSync, mkdirSync, writeFileSync, unlinkSync } from 'node:fs';
 import { dirname, extname, isAbsolute, join, relative, resolve, sep } from 'node:path';
 import ts from 'typescript';
 
@@ -36,7 +36,7 @@ function oldResolve(source, importer) {
   else if (source.startsWith('.')) path = resolve(dirname(importer), source);
   else return null;
   for (const p of [path, path+'.ts',path+'.tsx',path+'.mts',path+'.js',join(path,'index.ts'),join(path,'index.tsx')])
-    if (existsSync(p)) return p;
+    if (existsSync(p) && statSync(p).isFile()) return p;
   return null;
 }
 function publicPath(oldPath) {
