@@ -20,8 +20,8 @@
     "test:e2e:db": "playwright test --config playwright.db.config.ts",
     "test:components": "vitest run",
     "test:components:coverage": "vitest run --coverage",
-    "prebuild": "svitlo-sync-flags",
-    "predev": "svitlo-sync-flags"
+    "prebuild": "node --import @svitlo/ui-kit/sync-flags",
+    "predev": "node --import @svitlo/ui-kit/sync-flags"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

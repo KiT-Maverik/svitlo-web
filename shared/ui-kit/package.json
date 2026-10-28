@@ -61,6 +61,9 @@
     "./learning-layout/locales/*": {
       "types": "./dist/components/layout/LearningLayout/locales/*.d.ts",
       "default": "./dist/components/layout/LearningLayout/locales/*.js"
+    },
+    "./sync-flags": {
+      "default": "./scripts/sync-flags.mjs"
     }
   },
   "files": [
