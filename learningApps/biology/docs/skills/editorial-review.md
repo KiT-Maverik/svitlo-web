@@ -10,6 +10,7 @@ Date: 2026-10-28
 | --- | --- | --- |
 | Discipline naming | Use clear subject areas from `Studio/Subject Proposition`: botany, zoology, anatomy, physiology, etc. | Domains renamed to **Ботаніка**, **Зоологія**, **Анатомія та фізіологія людини**, **Екологія**, **Генетика та еволюція**, etc.; no new textbooks. |
 | Living / dead / never alive | **Approved: one Skill** for the three-way classification. | Existing **«Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими»** remains one Skill ID; distinguish the three response categories inside assessment, not via separate Skill IDs. |
+| Viruses | **Approved: three independent Skills** (2026-10-28). | Keep **«Пояснювати, що таке вірус»**, **«Відрізняти вірус від клітинного організму»**, and **«Пояснювати основні шляхи поширення вірусів за моделлю»** as distinct Skills; do not merge the first two. |
 | Plant organs | **One Skill** for identifying root, stem, leaf and flower. | Four one-organ Skills replaced by **«Визначати основні органи рослини»**. A separate existing Skill about **functions** remains because knowing names and explaining function differ. |
 | Animal groups | **Keep independent Skills** for insects, fish, amphibians, reptiles, birds and mammals. | Retained the individual group-recognition Skills; their descriptions now give the diagnostic biological features instead of repeating names. |
 | Biomimicry | Primarily **engineering in Physics**, not an independent Biology engineering competency. | Removed the three engineering Skills and entire `Біомімікрія` Group from Biology; recorded the proposed primary owner in [Subject Proposition](../../../../studio/Subject%20Proposition.md). **No Physics Skill has been created.** |
@@ -45,7 +46,7 @@ Date: 2026-10-28
 
 | Decision | Methodologist proposal | Status / action |
 | --- | --- | --- |
-| Definition of a virus | Add an independent Skill **«Пояснювати, що таке вірус»**, because knowing that a virus lacks cellular machinery and relies on a host is more than recognizing the label. Retain a separate comparison with a cellular organism and a separate transmission-model competency. | **Proposed; editor confirmation needed** (3 Skills in virus Group). |
+| Definition of a virus | Separate knowledge of the virus as a noncellular infectious agent, comparison with cellular organisms, and explanation of transmission models. These are different independently assessable competencies, although the first two share background facts. | **APPROVED (2026-10-28): keep all three Skills** in the virus Group; taxonomy already reflects this. |
 | Biological tables vs graphs | **Tabular growth observations**: reason about changes between rows/time points and a biological process. **Graph of a process**: infer trend/rate/shape and their biological meaning. They are separate representation skills, not merely different question interfaces; general graph reading may also be taught in Math. | **Proposed; editor may merge or share cross-subject skills.** |
 | Cross-subject scientific skills | Is the ability to control an experiment or read biological data a Biology-specific Skill, or one shared Skill reused by multiple textbooks? Avoid duplicate IDs with identical meaning. | **Open future cross-textbook architecture decision**; no new IDs now. |
 | Boundary: life-process breathing | Clarify **cellular respiration** vs lung ventilation; plants also respire. Revised description makes the distinction explicit. | Clarification in draft, requires factual/pedagogical review. |
@@ -59,10 +60,9 @@ The [Create Skills Taxonomy Skill](../../../../studio/skills/create-skills-taxon
 
 ## 5. Remaining workflow / stop condition
 
-The **one-Skill classification decision is approved**, but the **taxonomy as a whole remains an editorial draft**. Before the **Create Skill Definitions** stage:
+The **one-Skill classification and three-Skill virus decisions are approved**, but the **taxonomy as a whole remains an editorial draft**. Before the **Create Skill Definitions** stage:
 
-1. Confirm whether virus definition is an independent Skill.
-2. Decide whether biological-table and biological-graph interpretation should have separate stable identities or use cross-subject Skills.
-3. Review remaining atomicity and subject coverage; reconcile actual counts if any choices change.
+1. Decide whether biological-table and biological-graph interpretation should have separate stable identities or use cross-subject Skills.
+2. Review remaining atomicity and subject coverage; reconcile actual counts if any choices change.
 
 **Do not create entity definitions, UUID files, `*.data.ts`, Lessons or Questions on the basis of open decisions.**
