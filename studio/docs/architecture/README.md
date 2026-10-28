@@ -19,7 +19,7 @@
 | [Lesson Notes](./lesson-notes.md) | Planned concise recall notes revealed during a lesson and assembled into a learner's revision sheet |
 | [System Boundaries & Roadmap](./system-boundaries.md) | Lesson vs Program, progress vs assessment, injection/events, IDs and planned registries/sync |
 | [Coding Agent Specializations](./coding-agent-specializations.md) | Existing specialized Skills (including Remotion) and prioritized future ones; specialist subskills supplement one Coding Agent Persona |
-| [Monorepo & Standalone Textbook Architecture](./monorepo-and-textbook.md) | Live `apps/` / `backend/` / `shared/` / `studio/` / `scripts/` layout, independently owned packages, exports, TypeScript aliases and standard Next.js textbook form |
+| [Monorepo & Standalone Textbook Architecture](./monorepo-and-textbook.md) | Live `learningApps/` / `backend/` / `shared/` / `studio/` / `scripts/` layout, independently owned packages, exports, TypeScript aliases and standard Next.js textbook form |
 
 ## Reviewer constitutions
 

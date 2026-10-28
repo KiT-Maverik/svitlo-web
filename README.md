@@ -1,6 +1,6 @@
 # Svitlo monorepo
 
-The current Next.js Playground application lives at `apps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Other root build, test, lint and Storybook scripts delegate to the Playground workspace.
+The current Next.js Playground application lives at `apps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Root application checks target Playground/Math; Storybook is owned by UI Kit and no longer reads application sources.
 
 Engine is now an independently compiled workspace package. The Server workspace remains a placeholder; Math is now a standalone textbook app and UI Kit owns reusable React/MUI components. See `studio/Monorepo Migration.md`.
 
@@ -94,3 +94,7 @@ Question API examples (slots, lifecycle events, automatic grading): `/questions/
 
 
 Playground is a subject-neutral component and lesson-rendering sandbox; authored curricula belong only to textbook applications.
+
+## UI Kit Storybook
+
+`npm run storybook` starts the self-contained component catalog from `shared/ui-kit/.storybook` (port 6006), while `npm run build-storybook` builds its static output. All stories and demo fixtures belong to `shared/ui-kit`; neither textbook nor Playground is needed as a source dependency. Framework tooling uses Next.js only as a development dependency; the shipped UI Kit package stays independent of Next.js.

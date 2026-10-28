@@ -12,10 +12,11 @@ Svitlo is a constellation of **independently buildable and extractable applicati
 
 ~~~text
 <MonorepoRoot>/
-├── apps/
+├── learningApps/
 │   ├── playground/                 # existing Next.js app; demonstration/reference
-│   └── textbooks/
-│       └── math/                   # implemented standalone Next.js mathematics textbook
+│   └── math/                       # implemented standalone Next.js mathematics textbook
+├── frontend/
+│   └── platform/                   # new platform placeholder; not a declared npm workspace
 ├── backend/
 │   └── server/                     # server workspace scaffold
 ├── shared/
@@ -33,26 +34,26 @@ Svitlo is a constellation of **independently buildable and extractable applicati
 └── tsconfig.base.json              # shared strict TypeScript defaults
 ~~~
 
-**Naming clarification:** older plans and [historical migration notes](../../Monorepo%20Migration.md) used `frontend/`, but the **live source root is `apps/`**; there is **no top-level `frontend/` workspace** in the inspected repository. `apps/` is the **frontend/application functional zone**. Do not introduce `frontend/` aliases, package paths or imports based on old docs. Other incidental root directories (for example, `math/`) do not become npm workspaces just by existing.
+**Naming clarification (post-reorganization):** textbook and Playground application source directories now live directly under **`learningApps/`**. The top-level `frontend/platform/` placeholder exists, but is not a declared npm workspace and must not be treated as an implemented application. Historical `apps/` paths in older migration notes are obsolete. New package references must be checked against the actual tree and manifests; a directory move alone is not proof of independent workspace integration.
 
 ### Directory responsibilities
 
 | Area | Responsibility | Is it an npm workspace itself? |
 | --- | --- | --- |
-| `apps/textbooks/*` | Independent, topic-specific **standalone Next.js textbooks** | Each matching textbook directory has its own `package.json` |
-| `apps/playground` | Independent Next.js reference/demonstration app; **not** a runtime library for textbooks | Yes |
+| `learningApps/*` | Independent, topic-specific **standalone Next.js textbooks** | Each matching textbook directory has its own `package.json` |
+| `learningApps/playground` | Independent Next.js reference/demonstration app; **not** a runtime library for textbooks | Yes |
 | `backend/*` | Independent services and backend functional packages | Each matching package, not the whole directory |
 | `shared/engine` | Framework-independent content types, builders, localization, generation, taxonomy and reusable non-UI logic | Yes |
 | `shared/ui-kit` | Shared React/MUI components, interactive widgets, navigation primitives and UI utilities | Yes |
 | `scripts/` | Root-level tooling, workspace audits and package-boundary verification | No |
 | `studio/` | Human/AI architectural, editorial, workflow and review documentation | No; documentation is not a runtime dependency |
 
-**Current workspace patterns** in [root `package.json`](../../../package.json): `backend/*`, `apps/textbooks/*`, `apps/playground`, `shared/*`. The inspected workspace packages are `@svitlo/server`, `@svitlo/math`, `@svitlo/playground`, `@svitlo/engine` and `@svitlo/ui-kit`.
+**Workspace migration still requires verification:** The latest `main` moved Playground and Math into `learningApps/`, but the checked-in [root `package.json`](../../../package.json) still declares the older `backend/*`, `apps/textbooks/*`, `apps/playground`, `shared/*` workspace patterns, and the lockfile/workspace checks may also reference those paths. These are **stale configuration paths**, not evidence that `learningApps/` is registered correctly. Reconcile manifests, lockfile and validation scripts in the owning monorepo migration before claiming builds or CI are green. The intended packages remain `@svitlo/server`, `@svitlo/math`, `@svitlo/playground`, `@svitlo/engine` and `@svitlo/ui-kit`.
 
 ## 3. Package ownership and dependency graph
 
 ~~~text
-                apps/playground        apps/textbooks/<subject>
+                learningApps/playground        learningApps/<subject>
                      |    \                |       \
                      v     v               v        v
                  @svitlo/ui-kit ------> @svitlo/engine
@@ -99,7 +100,7 @@ The [workspace validator](../../../scripts/check-workspaces.mjs) and [package-bo
 **Target standardized form, grounded in the now-implemented Math application, but not a demand that every app use identical folder names:**
 
 ~~~text
-apps/textbooks/<subject>/
+learningApps/<subject>/
 ├── package.json                    # unique @svitlo/<subject>, real dependencies and scripts
 ├── tsconfig.json                   # own TS aliases and strict configuration
 ├── next.config.ts                  # Next.js configuration where needed
@@ -132,10 +133,10 @@ These are **responsibility-based directories**, not an obligation to create empt
 
 ### Current concrete reference
 
-The independent [Math textbook](../../../apps/textbooks/math/package.json) demonstrates:
-- [Next.js App Router](../../../apps/textbooks/math/src/app/topics/light/page.tsx) for a lesson route.
-- [Git-authored named Lesson Data](../../../apps/textbooks/math/src/content/howLightMoves/howLightMoves.data.ts) and [ordered Section Data](../../../apps/textbooks/math/src/content/howLightMoves/sections/theory/theory.data.ts).
-- [Lesson Section renderer](../../../apps/textbooks/math/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) for selected typed blocks. **It currently directly renders `text`, `markdown` and `scene`, not all resource types declared by Engine**.
+The independent [Math textbook](../../../learningApps/math/package.json) demonstrates:
+- [Next.js App Router](../../../learningApps/math/src/app/topics/light/page.tsx) for a lesson route.
+- [Git-authored named Lesson Data](../../../learningApps/math/src/content/howLightMoves/howLightMoves.data.ts) and [ordered Section Data](../../../learningApps/math/src/content/howLightMoves/sections/theory/theory.data.ts).
+- [Lesson Section renderer](../../../learningApps/math/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) for selected typed blocks. **It currently directly renders `text`, `markdown` and `scene`, not all resource types declared by Engine**.
 - Own package builds/tests and shared-library use. **Math is an actual standalone textbook, not a runtime dependency for other textbooks**; Playground remains a separate UI demonstration application.
 
 Do not duplicate Math's subject-specific content into `shared` or Playground to “standardize” a textbook. Every new textbook must be independently testable and host only **its own educational content**.

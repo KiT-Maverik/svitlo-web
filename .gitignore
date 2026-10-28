@@ -60,5 +60,8 @@ next-env.d.ts
 # UI Kit generated flag assets; sync from the dependency before dev/build
 **/public/flags/
 
-# Disposable local scripts and intermediate files for one-off repository work
+# Local UI Kit Storybook build
+**/storybook-static/
+
+# Disposable one-off scripts and generated intermediate files
 **/temp/
