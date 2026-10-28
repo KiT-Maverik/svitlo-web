@@ -1,3 +1,13 @@
+# Svitlo monorepo
+
+The existing Next.js application has moved to `frontend/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Other root build, test, lint and Storybook scripts delegate to the Playground workspace.
+
+The Math, Engine, UI Kit and Server workspaces remain empty placeholders. See `experience/Monorepo Migration.md`.
+
+> Legacy documentation below uses paths relative to Playground. A reference to `src/` now means `frontend/playground/src/`.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
