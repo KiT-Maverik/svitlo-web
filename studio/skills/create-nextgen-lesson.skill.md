@@ -303,3 +303,36 @@ Provide:
 3. A concise editorial report stating the **most important interactive concepts**, how the Lesson avoids passive content without losing clarity, the chosen Sections/Resource blocks, **verified runtime capabilities vs proposed features**, accessibility/localization decisions, any source/technical gaps and which artifacts are waiting for approval.
 
 **Stop after documentation and handoff.** The Coding Agent, Design Scene and Learning Assessment Architect perform their own separately authorized stages. Never author production code, invent new Question correctness rules, register fake resource types, or attach a Program narrative to the canonical Lesson.
+---
+
+## PROPOSED CHANGE — EDITORIAL DISCUSSION REQUIRED ON NEXT USE (2026-10-28)
+
+> **Status: proposal only — NOT an approved change to this Skill's operating contract.**
+> **MANDATORY HANDOFF FOR THE NEXT AGENT WHO READS THIS SKILL:** Before authoring or revising the next Lesson Script, explicitly bring this proposal to the editor's attention, explain how it relates to the current engine contracts and ask for an editorial decision. Do not silently assume the proposal is already in force, change TypeScript contracts, or implement a new layout/localization API.
+
+### 1. Lesson page as a strictly vertical sequence of typed content blocks
+
+**Proposed authoring contract:** Treat the Lesson page as an ordered, **single-column vertical flow** of content blocks. Within each general Lesson Section, its blocks are placed **one directly below another in the documented order**. Sections group the blocks into coherent instructional steps; they are not a substitute for specifying the actual sequence of blocks. Do not presume side-by-side sibling Resource blocks or an undocumented multi-column page layout. A self-contained interactive Scene may manage its own **internal** geometry, but remains one block in the surrounding vertical page flow.
+
+Each block must declare an actual, precise **resource type** from the engine's canonical discriminated types (currently \`Resource_Type\` and \`Resource_Config\` in [resource.types.ts](../../shared/engine/src/types/content/resource.types.ts), via \`blockType\`), plus its intended content/function, position in the Section and renderer readiness. A proposed content type must be explicitly marked **proposed / not yet supported**, never invented as an existing \`blockType\`. Cross-check [lesson.types.ts](../../shared/engine/src/types/content/lesson.types.ts) and the real Section renderer on every use; \`Quiz_Config\` remains distinct from ordinary Resource blocks.
+
+### 2. Mandatory locale coverage **per content block**, not only per Lesson or Section
+
+**Proposed Lesson Script requirement:** For **every** ordered content block, document exactly which supported locales require its content/translation and how that selection is expressed:
+
+- **All supported locales** — \`all\`.
+- **All supported locales except a named set** — \`all-except: [<locale codes>]\` (nonempty exclusions).
+- **Only explicitly named supported locales** — \`only: [<locale codes>]\` (nonempty inclusions; also covers one locale).
+
+This is a **proposed documentation/authoring notation**, not a claim that the above literals or an \`all-except\` field already exist in the TypeScript resource model. Use **actual canonical locale codes** from the repository's supported-locale list; never substitute an invented language set. For each block the screenplay must specify a locale policy and, for exceptions, the exact included/excluded locales. Identify what is translatable (text, Markdown, asset captions/alt text, subtitles, scene labels, embedded text, etc.), whether the same block is shown in all locales, and any content or asset variants needed. Do not assume that translated text availability, block visibility and locale-dependent media variants are the same concern.
+
+**Current contracts to reconcile before acceptance:** Many Resource configs already have \`allLocales: true | false\` and locale-keyed values/file locations, while Scene translations currently have Lesson-level \`sceneLocales\`; the exact coverage scheme varies by \`blockType\`. Confirm whether \`all-except\` can be expressed as the complement of explicit chosen locales, how a \`scene\` block expresses its locale policy, and what happens when the current locale is excluded. **Do not invent resource fields or fallback behavior.**
+
+### 3. Questions the next agent must present to the editor
+
+1. Should the **single-column, strictly top-to-bottom block flow** become a mandatory Lesson and Section authoring invariant, or is it a default with expressly approved exceptions?
+2. Should the **per-block locale selection** be mandatory in the Lesson Script even when the runtime already has \`allLocales\` / chosen-locale values? Should it affect translation requirements only, or also whether a block is visible in a locale?
+3. What exact representation should be used for **all / all-except / only**, particularly for \`scene\` blocks, and how should missing or excluded locales behave? Reuse existing canonical types where possible; propose changes separately if needed.
+
+**After explicit editor approval:** update this Skill's Core Architecture, Execution Protocol, Lesson Script Section template, localization requirements and Acceptance Checklist consistently; verify existing TypeScript contracts/renderer; request any required runtime changes through the appropriate Coding Agent workflow. Until approval, leave current instructions intact and retain this note as a visible open decision.
+
