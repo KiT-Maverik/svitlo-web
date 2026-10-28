@@ -8,22 +8,24 @@
 
 **Do not begin drafting a Curriculum until both conditions are satisfied:**
 
-1. **Editorial briefing received.** Identify the textbook/course/program and the requested part of it; the target audience and expected entry level; the intended outcomes and constraints.
-2. **Skills Taxonomy accessible.** Locate the relevant real SkillDomain, SkillGroup, and Skill definitions and inspect them before assigning competencies. A mere list of hypothetical names or unverified identifiers is not sufficient.
+1. **Editorial briefing received.** Identify the target package root, textbook/course/program and requested scope, audience, entry level, outcomes, and constraints.
+2. **Skills Taxonomy accessible.** Inspect the relevant real SkillDomain, SkillGroup, and Skill definitions under `<PackageRoot>/docs/skills/` before assigning competencies. A list of names or unverified identifiers is not sufficient.
 
 If a required input is absent or taxonomy files cannot be inspected, **stop Curriculum generation**, describe what is missing, and request the smallest necessary briefing or access. Do not infer the audience, invent a textbook scope, or manufacture Skills to keep writing. Existing Curriculum or Lesson files can inform the briefing but cannot substitute for the Skills Taxonomy.
 
 ### Editorial briefing — required fields
 
+- **Package root:** location of the package that owns the requested learning resource (normally a standalone Next.js textbook app), **not** the monorepo root or a sibling engine, UI kit, or backend package.
 - **Learning resource:** title or working title of the textbook/course/learning program, discipline or interdisciplinary theme, and requested scope (whole resource, level, module, or lesson).
 - **Audience:** learner category and approximate age or professional stage when relevant; prior knowledge, literacy and language proficiency; learning context and meaningful accessibility needs. School grades are optional, not universal.
 - **Intent:** desired educational outcomes, depth, boundaries, mandatory source materials, and whether alignment with a specified local standard or accreditation is required.
-- **Taxonomy:** repository/location of the canonical Skills Taxonomy and enough access to inspect the relevant definitions.
+- **Taxonomy:** canonical definitions at `<PackageRoot>/docs/skills/`, accessible for inspection. If unavailable, stop and report the missing prerequisite rather than guessing another directory.
 
 Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. If a target-language preference is supplied, write the generated educational material in that language even though this instruction and its template are in English.
 
 ## SOURCE OF TRUTH: SKILLS TAXONOMY
 
+- The canonical taxonomy for the target package lives in `<PackageRoot>/docs/skills/`, alongside `<PackageRoot>/docs/curriculums/`. The folder is named **`skills`**, not `skillsTaxonomy`. Do not assume the monorepo root or another package owns these definitions.
 - Read the available **SkillDomain → SkillGroup → Skill** hierarchy. A Skill represents a separately assessable competency; a Group or Domain is a broader semantic collection, **not** automatically a learning sequence or proof that every descendant is mastered.
 - Follow the **actual configuration files** (normally `*.data.ts`) and their canonical, human-readable names. Use file links from the generated document to reference entities, rather than duplicating their technical identifiers.
 - **Check every referenced file exists** and refers to the intended entity. Resolve Markdown links relative to the *generated Curriculum or brief file*, **never** relative to this instruction file.
@@ -84,9 +86,9 @@ Ages: %AGE_RANGE%
 > Agent Note:
 > Allowed types of records:
 > - Plain text: %TEXT_PREREQUISITE%
-> - Skill: [%SKILL_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
-> - SkillGroup: [%SKILL_GROUP_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/%GROUP%.data.ts)
-> - SkillDomain: [%SKILL_DOMAIN_NAME%](../skillsTaxonomy/%DOMAIN%/%DOMAIN%.data.ts)
+> - Skill: [%SKILL_NAME%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
+> - SkillGroup: [%SKILL_GROUP_NAME%](../../skills/%DOMAIN%/%GROUP%/%GROUP%.data.ts)
+> - SkillDomain: [%SKILL_DOMAIN_NAME%](../../skills/%DOMAIN%/%DOMAIN%.data.ts)
 > 
 > Choose only applicable record types and mix them when needed.
 > Use actual entity names and existing file paths.
@@ -121,7 +123,7 @@ File: %Lesson document file link. Default [Not implemented](#). When implemented
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
-- [Skill name as written in its *.data file. No suffixes.](*Data file path)
+- [%SKILL_NAME as written in its data file, without suffixes%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
 - ...
 ```
 
@@ -138,6 +140,6 @@ Create or update one Curriculum document at:
             └── %CURRICULUM_NAME in camelCase%.curriculum.md
 ```
 
-- Use the textbook root from the editorial briefing. Derive the Curriculum name in **camelCase** once and reuse it for both the folder and filename; keep `curriculums/` literal.
+- Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Keep `docs/curriculums/` literal and derive the Curriculum name in **camelCase** once for both directory and filename.
 - Fill the file using the embedded **CURRICULUM TEMPLATE**. Review existing content before updating it; do not create a substitute `README.md` or automatically generate module, lesson, or assessment files.
-- Verify the output path, replace all template placeholders, and resolve file links relative to the **resulting Curriculum file**. For module or lesson files that do not exist, use the template's `[Not implemented](#)` convention rather than inventing links.
+- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculums/<name>/`, local taxonomy links begin `../../skills/`. For absent module or lesson files, use the template's `[Not implemented](#)` convention.
