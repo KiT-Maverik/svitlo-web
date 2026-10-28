@@ -22,7 +22,7 @@ Read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entit
 1. **Research:** establish the complete subject landscape, practical scope boundaries and uncertainty. Use references to check breadth rather than copying a syllabus.
 2. **Decompose:** identify coherent Domains and Groups, then atomic observable Skills. Apply the A-without-B test from the canonical Skill entity rules. Commas and conjunctions signal candidates for review, not automatic splitting.
 3. **Review:** discuss overlaps, missing competencies, accidental bundling and over-fragmentation. Separate A and B if independently meaningful; add an integration Skill C only when the relationship itself is independently assessable. A Lesson/Question covering A and B need not create C. Report unresolved choices **before** editing an approved hierarchy.
-4. **Write authoritative descriptions in the taxonomy itself:** directly under each Domain, Group and Skill heading, provide a substantive paragraph explaining **what the concept/competency means, what is included and what distinguishes it from neighboring entries**. Names identify; descriptions explain. A Description **must not repeat, paraphrase or mechanically expand the heading**, nor merely say that a Domain contains related Groups or a Group contains related Skills. For Skills, clarify the observable mathematical idea, meaningful scope or distinguishing case; give a concrete example where it improves understanding, without turning the description into a lesson, grading rubric, question format or implementation plan. Every entry receives its own relevant description. Use ordinary prose below the heading: **never emit a `Description:` prefix**.
+4. **Write authoritative descriptions in the taxonomy itself:** immediately after each Domain, Group and Skill heading's metadata, provide a substantive paragraph explaining **what the concept/competency means, what is included and what distinguishes it from neighboring entries**. Names identify; descriptions explain. A Description **must not repeat, paraphrase or mechanically expand the heading**, nor merely say that a Domain contains related Groups or a Group contains related Skills. For Skills, clarify the observable mathematical idea, meaningful scope or distinguishing case; give a concrete example where it improves understanding, without turning the description into a lesson, grading rubric, question format or implementation plan. Every entry receives its own relevant description. Use ordinary prose below the heading: **never emit a `Description:` prefix**.
 5. **Inspect actual Code files:** when an entity is implemented and validated, link directly to its canonical `*.data.ts` file. Otherwise use exactly `Code: [Not implemented](#)`. A reserved UUID, a parent map or a proposed path does not prove implementation.
 6. **Author only the taxonomy** using the template below. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code.
 7. **Verify and stop:** check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval.
@@ -35,6 +35,10 @@ Read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entit
 - **Approval:** a human editorial review gate on the taxonomy or a substantive revision, not a duplicated `Status: Draft/Approved` field on hundreds of documents. Once approved, downstream work must not rename, split, merge or rearrange without explicit review.
 - **Curricula and Lessons:** reference the canonical taxonomy; they own sequencing, teaching context, prerequisites and assessment choices, not the Skill catalog.
 
+### Metadata before descriptions
+
+Keep every entity's metadata together directly after its heading. Order is **Domain:** `Groups · Skills` → `Code` → prose; **Group:** `Skills` → `Code` → prose; **Skill:** `Code` → prose. Present substantive descriptions as unlabeled Markdown paragraphs, never as `Description:` fields, and never interrupt metadata with a description. Do not reintroduce `Definition` links: the taxonomy itself is the permanent editorial definition and its only per-entity artifact link is `Code`.
+
 ## QUALITY AND ACCEPTANCE GATES
 
 - Names and descriptions are **semantically different**: the description materially explains the name's subject content and boundaries and is not a tautology.
@@ -43,7 +47,7 @@ Read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entit
 - Domain/Group/Skill counts reconcile at every hierarchy level; membership is unique and matches any approved existing catalog.
 - Each entry has one verified `Code` reference or the exact missing-target placeholder; Code counts report actual implementations, not file names guessed from the taxonomy.
 - No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or fake `Status` fields occur in the taxonomy.
-- Markdown descriptions do **not** start with `Description:`.
+- Markdown descriptions do **not** start with `Description:` and always follow all of the entity's metadata (`Code` plus any Group/Skill counts).
 - The only artifact written by this workflow is the taxonomy file. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates.
 
 ## TAXONOMY TEMPLATE
@@ -79,9 +83,9 @@ Code: [Not implemented](#)
 
 Skills: %GROUP_SKILL_COUNT%
 
-%SUBSTANTIVE_GROUP_DESCRIPTION_EXPLAINING_SCOPE_AND_BOUNDARIES%
-
 Code: [Not implemented](#)
+
+%SUBSTANTIVE_GROUP_DESCRIPTION_EXPLAINING_SCOPE_AND_BOUNDARIES%
 
 ##### %SKILL_NAME%
 

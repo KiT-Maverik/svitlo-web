@@ -54,9 +54,10 @@
 - [Teacher Custom Exams](./assessment/teacher-custom-exams.md)
 - [Teacher Review Workflows](./assessment/teacher-review-workflows.md)
 
-### Learner Experience, Notes, Skills & Programs (17)
+### Learner Experience, Notes, Skills & Programs (18)
 
 - [Coding Workspace](./learning/coding-workspace.md)
+- [Contextual Encyclopedia Navigation](./learning/contextual-encyclopedia-navigation.md)
 - [Flashcard Cram Mode](./learning/flashcard-cram-mode.md)
 - [Flashcard Spaced Review](./learning/flashcard-spaced-review.md)
 - [Learning HOW TO Learn Course](./learning/learning-how-to-learn-course.md)
@@ -102,6 +103,6 @@
 
 ---
 
-**Total planned feature documents:** 61. The previous immutable-builder quality task was resolved as an Engine code/typecheck change (see [Git-First Typed Content](../docs/architecture/git-first-typed-content.md)); it is no longer a planned feature.
+**Total planned feature documents:** 62. The previous immutable-builder quality task was resolved as an Engine code/typecheck change (see [Git-First Typed Content](../docs/architecture/git-first-typed-content.md)); it is no longer a planned feature.
 
 **Curation rules:** Preserve open decisions as questions, distinguish proposed versus existing contracts, do not assign invented completion dates or guarantees, and update each item when a decision, prototype, implementation PR or test result actually exists. Planned features may depend on other items; descriptions are **not** authorization to start multiple implementation streams simultaneously.
