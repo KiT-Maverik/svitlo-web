@@ -4,6 +4,10 @@
 
 **Purpose:** Implement **approved SkillDomain, SkillGroup, and Skill Definitions** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy and separate lightweight Data/ID import surfaces.
 
+## CROSS-CUTTING RULES
+
+This implementation must also follow [Git-First Typed Content & AI Authoring](../docs/architecture/git-first-typed-content.md) and [Internationalization & Inclusive Access](../docs/architecture/internationalization-and-accessibility.md). Treat every `*.data.ts` entity as reviewed, **strictly typed named-export content**, avoid default exports and undocumented identity aliases, and do not confuse translation dictionaries or stable IDs with a fully registered runtime catalog. Inspect the live Engine types and full locale roster before implementation.
+
 ## REQUIRED SOURCES — READ BEFORE WRITING
 
 1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
