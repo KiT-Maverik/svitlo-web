@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { divide_Skills_Ids } from './index.ids';
+
+export const twoDigitByOne_Skill_Data = buildSkillConfig({
+  id: divide_Skills_Ids.twoDigitByOne,
+  name: {
+    "lt": "Dalyba — dviženklis skaičius iš vienaženklio",
+    "lv": "Dalīšana — divciparu skaitlis ar viencipara skaitli",
+    "et": "Jagamine — kahekohaline arv ühekohalisega",
+    "be": "Дзяленьне — двухзначны лік на адназначны",
+    "ka": "გაყოფა — ორნიშნა რიცხვი ერთნიშნაზე",
+    "kk": "Бөлу — екі таңбалы санды бір таңбалы санға",
+    en: "Division — 2-digit÷1-digit",
+    zh: "除法 — 2-位数÷1-位数",
+    hi: "भाग — 2-अंकीय÷1-अंकीय",
+    es: "División — 2-cifras÷1-cifras",
+    ar: "القسمة — 2-أرقام÷1-أرقام",
+    fr: "Division — 2-chiffres÷1-chiffres",
+    bn: "ভাগ — 2-অঙ্কের÷1-অঙ্কের",
+    pt: "Divisão — 2-algarismos÷1-algarismos",
+    ur: "تقسیم — 2-ہندسوں÷1-ہندسوں",
+    id: "Pembagian — 2-angka÷1-angka",
+    de: "Division — 2-stellige÷1-stellige",
+    ja: "除法 — 2-桁の数÷1-桁の数",
+    ko: "나눗셈 — 2-자리 수÷1-자리 수",
+    tr: "Bölme — 2-basamaklı÷1-basamaklı",
+    vi: "Phép chia — 2-chữ số÷1-chữ số",
+    ta: "வகுத்தல் — 2-இலக்க÷1-இலக்க",
+    te: "భాగహారం — 2-అంకెల÷1-అంకెల",
+    mr: "भागाकार — 2-अंकी÷1-अंकी",
+    ms: "Pembahagian — 2-digit÷1-digit",
+    he: "חילוק — 2-ספרות÷1-ספרות",
+    pl: "Dzielenie — 2-cyfrowe÷1-cyfrowe",
+    uk: "Ділення — 2-цифрові÷1-цифрові",
+  },
+});

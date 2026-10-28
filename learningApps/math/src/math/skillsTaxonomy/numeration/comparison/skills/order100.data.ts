@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { comparison_Skills_Ids } from './index.ids';
+
+export const order100_Skill_Data = buildSkillConfig({
+  id: comparison_Skills_Ids.order100,
+  name: {
+    "lt": "Dviženklių skaičių lyginimas ir rikiavimas",
+    "lv": "Divciparu skaitļu salīdzināšana un sakārtošana",
+    "et": "Kahekohaliste arvude võrdlemine ja järjestamine",
+    "be": "Параўнаньне й упарадкаваньне двухзначных лікаў",
+    "ka": "ორნიშნა რიცხვების შედარება და დალაგება",
+    "kk": "Екі таңбалы сандарды салыстыру және реттеу",
+    en: "Comparing and ordering two-digit numbers",
+    zh: "比较并排列两位数",
+    hi: "दो अंकों की संख्याओं की तुलना और क्रम",
+    es: "Comparar y ordenar números de dos cifras",
+    ar: "مقارنة وترتيب الأعداد ذات الخانتين",
+    fr: "Comparer et ranger les nombres à deux chiffres",
+    bn: "দুই অঙ্কের সংখ্যার তুলনা ও ক্রম",
+    pt: "Comparar e ordenar números de dois algarismos",
+    ur: "دو ہندسوں والے اعداد کا موازنہ اور ترتیب",
+    id: "Membandingkan dan mengurutkan bilangan dua digit",
+    de: "Zweistellige Zahlen vergleichen und ordnen",
+    ja: "2桁の数の比較と順序",
+    ko: "두 자리 수 비교와 정렬",
+    tr: "İki basamaklı sayıları karşılaştırma ve sıralama",
+    vi: "So sánh và sắp xếp số hai chữ số",
+    ta: "இரண்டு இலக்க எண்களை ஒப்பிட்டு வரிசைப்படுத்துதல்",
+    te: "రెండు అంకెల సంఖ్యల పోలిక, క్రమం",
+    mr: "दोन अंकी संख्यांची तुलना व क्रम",
+    ms: "Membanding dan menyusun nombor dua digit",
+    he: "השוואה וסידור של מספרים דו־ספרתיים",
+    pl: "Porównywanie i porządkowanie liczb dwucyfrowych",
+    uk: "Порівняння й упорядкування двоцифрових чисел",
+  },
+});

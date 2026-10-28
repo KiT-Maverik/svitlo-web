@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { estimation_Skills_Ids } from './index.ids';
+
+export const roundToTen_Skill_Data = buildSkillConfig({
+  id: estimation_Skills_Ids.roundToTen,
+  name: {
+    "lt": "Apvalinimas iki artimiausios dešimties",
+    "lv": "Noapaļošana līdz tuvākajam desmitam",
+    "et": "Ümardamine lähima kümneni",
+    "be": "Акругленьне да найбліжэйшага дзясятка",
+    "ka": "უახლოეს ათეულამდე დამრგვალება",
+    "kk": "Ең жақын ондыққа дейін дөңгелектеу",
+    en: "Rounding to the nearest ten",
+    zh: "四舍五入到最接近的十",
+    hi: "निकटतम दहाई तक पूर्णांकन",
+    es: "Redondeo a la decena más cercana",
+    ar: "التقريب إلى أقرب عشرة",
+    fr: "Arrondir à la dizaine la plus proche",
+    bn: "নিকটতম দশকে পূর্ণায়ন",
+    pt: "Arredondamento à dezena mais próxima",
+    ur: "قریب ترین دہائی تک گول کرنا",
+    id: "Membulatkan ke puluhan terdekat",
+    de: "Auf den nächsten Zehner runden",
+    ja: "最も近い十への四捨五入",
+    ko: "가장 가까운 십으로 반올림",
+    tr: "En yakın onluğa yuvarlama",
+    vi: "Làm tròn đến hàng chục",
+    ta: "அருகிலுள்ள பத்துக்கு வட்டமிடுதல்",
+    te: "దగ్గరి పదికి సవరించడం",
+    mr: "जवळच्या दहापर्यंत पूर्णांकित करणे",
+    ms: "Membundarkan kepada puluh terdekat",
+    he: "עיגול לעשרת הקרובה",
+    pl: "Zaokrąglanie do najbliższej dziesiątki",
+    uk: "Округлення до найближчого десятка",
+  },
+});

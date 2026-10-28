@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { multiply_Skills_Ids } from './index.ids';
+
+export const commutative_Skill_Data = buildSkillConfig({
+  id: multiply_Skills_Ids.commutative,
+  name: {
+    "lt": "Daugyba — perstatomumo dėsnis",
+    "lv": "Reizināšana — komutativitātes likums",
+    "et": "Korrutamine — vahetuvusseadus",
+    "be": "Множаньне — перастаўляльны закон",
+    "ka": "გამრავლება — გადანაცვლებადობის თვისება",
+    "kk": "Көбейту — ауыстырымдылық қасиеті",
+    en: "Multiplication — Commutative property",
+    zh: "乘法 — 交换律",
+    hi: "गुणा — क्रमविनिमेय नियम",
+    es: "Multiplicación — Propiedad conmutativa",
+    ar: "الضرب — خاصية الإبدال",
+    fr: "Multiplication — Commutativité",
+    bn: "গুণ — বিনিময় সূত্র",
+    pt: "Multiplicação — Propriedade comutativa",
+    ur: "ضرب — تبادلی خاصیت",
+    id: "Perkalian — Sifat komutatif",
+    de: "Multiplikation — Kommutativgesetz",
+    ja: "乗法 — 交換法則",
+    ko: "곱셈 — 교환법칙",
+    tr: "Çarpma — Değişme özelliği",
+    vi: "Phép nhân — Tính giao hoán",
+    ta: "பெருக்கல் — பரிமாற்றப் பண்பு",
+    te: "గుణకారం — మార్పిడి ధర్మం",
+    mr: "गुणाकार — क्रमविनिमय नियम",
+    ms: "Pendaraban — Sifat tukar tertib",
+    he: "כפל — חוק החילוף",
+    pl: "Mnożenie — Przemienność",
+    uk: "Множення — Переставний закон",
+  },
+});

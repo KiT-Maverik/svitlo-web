@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { angles_Skills_Ids } from './index.ids';
+
+export const angleTypes_Skill_Data = buildSkillConfig({
+  id: angles_Skills_Ids.angleTypes,
+  name: {
+    en: "Distinguishing acute, right and obtuse angles",
+    "lt": "Smailiųjų, stačiųjų ir bukųjų kampų atskyrimas",
+    "lv": "Šauru, taisnu un platu leņķu atšķiršana",
+    "et": "Terav-, täis- ja nürinurkade eristamine",
+    "be": "Адрозьненьне вострых, прамых і тупых кутоў",
+    "ka": "მახვილი, მართი და ბლაგვი კუთხეების გარჩევა",
+    "kk": "Сүйір, тік және доғал бұрыштарды ажырату",
+    zh: "区分锐角、直角和钝角",
+    hi: "न्यून सम और अधिक कोणों में अंतर",
+    es: "Distinguir ángulos agudos, rectos y obtusos",
+    ar: "التمييز بين الزوايا الحادة والقائمة والمنفرجة",
+    fr: "Distinguer les angles aigus, droits et obtus",
+    bn: "সূক্ষ্ম সমকোণ ও স্থূলকোণ আলাদা করা",
+    pt: "Distinguir ângulos agudos, retos e obtusos",
+    ur: "حاد قائمہ اور منفرجہ زاویوں میں فرق",
+    id: "Membedakan sudut lancip, siku-siku, dan tumpul",
+    de: "Spitze, rechte und stumpfe Winkel unterscheiden",
+    ja: "鋭角・直角・鈍角を区別する",
+    ko: "예각 직각 둔각 구별하기",
+    tr: "Dar, dik ve geniş açıları ayırt etme",
+    vi: "Phân biệt góc nhọn, vuông và tù",
+    ta: "குறுங்கோணம் செங்கோணம் விரிகோணம் வேறுபடுத்துதல்",
+    te: "లఘుకోణం లంబకోణం అధికకోణాలను వేరు చేయడం",
+    mr: "लघु काटकोन आणि विशालकोन ओळखणे",
+    ms: "Membezakan sudut tirus, tegak dan cakah",
+    he: "הבחנה בין זוויות חדות ישרות וקהות",
+    pl: "Rozróżnianie kątów ostrych, prostych i rozwartych",
+    uk: "Розрізнення гострих, прямих і тупих кутів",
+  },
+});
