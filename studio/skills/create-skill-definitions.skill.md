@@ -7,18 +7,18 @@
 ## REQUIRED INPUTS AND SOURCES
 
 1. Establish the exact `PackageRoot` of the standalone textbook application and selected entities. It is not necessarily the monorepo root.
-2. Read `<PackageRoot>/docs/skills/taxonomy.md` and locate the approved Domain, Group, and Skill entries. The taxonomy is the **sole hierarchy inventory**: preserve its membership, ordering, names, and counts.
+2. Read `<PackageRoot>/docs/skills/taxonomy.md` and locate the approved Domain, Group, and Skill entries. The taxonomy is the **editorial hierarchy inventory** for this authoring stage: preserve its membership, names, and counts. It may later be retired as a temporary reference artifact; it is not a runtime registry or a learner-data source.
 3. Read the canonical editorial meanings of [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md); relevant `AGENTS.md` instructions; and any existing Definitions.
 4. When translating Definitions to code is relevant, inspect the real package's content contracts. The current engine's `Skill_Config` contains `id` and localized `name`, **not `description`**. A Markdown Description does not automatically add a runtime field.
 
-If a selected entry is absent from the approved taxonomy, do not invent it. Report the needed taxonomy revision. Do not overwrite already approved Definitions with a new generic description.
+If a selected entry is absent from the approved taxonomy, do not invent it. Report the needed taxonomy revision. Do not overwrite already approved Definitions with a new generic description. Compound Skills and unresolved splits must first be discussed and approved in the **Create Skills Taxonomy** stage, rather than resolved while generating Definitions.
 
 ## DOCUMENT RULES
 
 - **Name:** use the exact approved taxonomy name. The Markdown document's `#` heading is the human-readable name; do not add another “Name” field.
 - **Description:** keep the entity's meaning concise, plain-language, and suitable for human identification and cataloging. A Domain may need a short paragraph, a Group one or two sentences, and a Skill ideally **one short sentence**. This is editorial text, not an automatically implemented UI property.
 - **No embedded hierarchy:** Domain Definitions **must not list SkillGroups**; Group Definitions **must not list Skills**; Skill Definitions **must not list lessons, questions, or related Skills**. The taxonomy owns the hierarchy; source ID dictionaries own runtime memberships.
-- **No assessment metadata:** do not add `Competency`, `Boundaries`, `Evidence of Competency`, rubrics, learning objectives, mastery thresholds, proficiency, scores, learner progress, assessment methods, exercises, teaching plans, prerequisites, or analytics measurements. Those belong to separate educational or learner-related entities.
+- **No assessment metadata:** do not add `Competency`, `Boundaries`, `Evidence of Competency`, rubrics, learning objectives, mastery thresholds, proficiency, scores, learner progress, assessment methods, exercises, teaching plans, prerequisites, or analytics measurements. Those belong to separate educational or learner-related entities. The **editorial design criterion** of independent assessability belongs in the canonical [Skill entity rules](../docs/entities/skill.md), never as a field in an individual Definition.
 - **Status** is only an editorial document-review marker (`Draft` or `Approved`), **not** a learner-status field. A new or substantively revised Definition starts as `Draft`; only an explicit editorial decision marks it `Approved`.
 - **Code** is an independent link to the canonical entity source file, if verified. If missing, use exactly `[Not implemented](#)`. Do not add UUIDs, technical ID fields, code snippets, or guessed implementation paths to Definitions.
 - Keep the descriptions aligned with the taxonomy. If a material rename, split, or relocation is needed, raise it for taxonomy review rather than silently modifying hierarchy or identifiers.
