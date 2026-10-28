@@ -50,4 +50,4 @@ A Quiz question can cite multiple Skill IDs. That does not create an extra integ
 
 The priorities requiring further architecture are **Note schema/events**, **Program and injections/events**, **content manifest/UUID reference integrity**, **offline package caching and sync**, **automatic capability/accessibility flags**, **browser-performance support boundaries** and **generator validation**. Each requires its own scope, quality gates, tests and approvals; creating these docs does **not** implement them.
 
-**Related:** [Learning Philosophy](./learning-experience-philosophy.md), [Typed Content](./git-first-typed-content.md), [Locales & Access](./internationalization-and-accessibility.md), [Offline](./offline-first-and-device-compatibility.md), [Notes](./lesson-notes.md).
+**Related:** [Monorepo & Textbook Architecture](./monorepo-and-textbook.md), [Learning Philosophy](./learning-experience-philosophy.md), [Typed Content](./git-first-typed-content.md), [Locales & Access](./internationalization-and-accessibility.md), [Offline](./offline-first-and-device-compatibility.md), [Notes](./lesson-notes.md).
