@@ -32,6 +32,10 @@ The Scene's **public React component takes absolutely no props**, receives lesso
 - Keep behavior reproducible, scientifically consistent and logically bounded. Controls should change only the intended aspect of a model; a change in animation speed must not change the physical rule being demonstrated unless the learning specification explicitly calls for it.
 - **Self-contained, independently testable content:** the Scene owns its interaction, state, and presentation behavior. **Every Scene must have co-located automated tests**, even when it composes existing tested widgets; the parent Lesson's tests alone do not replace the Scene's tests. Follow the repository's standard test naming, fixture, mocking, accessibility and quality rules instead of inventing a special test architecture.
 
+## SPECIALIST MOTION / VIDEO INTEGRATION
+
+If an approved Scene specification calls for programmable motion design, video-style timeline composition or Remotion playback, **also read [Create Remotion Video Skill](./create-remotion-video.skill.md)**. Decide whether an internal `@remotion/player` composition helps the learner, or whether the interaction genuinely needs ordinary React/SVG/Canvas/Three.js controls. **A composition may use typed internal props; the exported Scene root still takes zero props.** Remotion does not automatically provide arbitrary keyboard-accessible learning interactions, a fully offline video package or a YouTube integration. Preserve this Scene Skill's localization, LTR/RTL, independent tests and `TODO(a11y)` exception contract.
+
 ## REQUIRED REFERENCE IMPLEMENTATIONS
 
 Use these **current architectural examples**, not mandatory source files to duplicate:
