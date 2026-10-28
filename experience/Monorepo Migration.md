@@ -46,3 +46,12 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 5. Activate full multi-package build/test CI, and migrate to pnpm + Turborepo with a committed lockfile.
 
 **Scope guard:** Relocate the Next.js application intact in Phase 02. Do not refactor `src/utils`, extract shared components, or change textbook data until successful build and tests.
+
+## Phase 03 — Extract standalone Engine (first vertical slice)
+
+- Built and typed npm package `@svitlo/engine` now owns localization definitions, localized-path generation, and Skill/SkillGroup/SkillDomain authoring validations.
+- `@svitlo/playground` consumes the compiled package via a real npm dependency and public `exports`.
+- Legacy files under Playground contain compatibility re-exports, not duplicate implementations. They are removed after downstream import migration, separately from behavior changes.
+- No app imports from `shared/engine/src/`. No engine imports from Playground, React, or Next.js.
+- Builders for lessons/resources/questions, text resources, dynamic question and assessment method configs remain in Playground until their contract dependencies are made portable. No React hooks or UI-only utilities were found in this first batch; `ui-kit` is untouched.
+- Registry extraction remains an explicit later phase; `private: true` intentionally prevents accidental publication.
