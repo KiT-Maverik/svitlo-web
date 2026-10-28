@@ -51,9 +51,6 @@
       "taxonomy": [
         "dist/taxonomy.d.ts"
       ],
-      "*": [
-        "dist/index.d.ts"
-      ],
       "content": [
         "dist/content.d.ts"
       ],
@@ -62,6 +59,9 @@
       ],
       "generation": [
         "dist/generation.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
       ]
     }
   }

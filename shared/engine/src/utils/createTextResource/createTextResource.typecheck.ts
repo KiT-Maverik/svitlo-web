@@ -1,6 +1,5 @@
 import type { LanguageCode } from '../../types/languages';
 import type { TextResource_AllLanguages_Config, TextResource_ChosenLanguages_Config } from '../../content';
-import type { } from '../../content';
 import { createTextResource } from './createTextResource.utils';
 
 declare const allValues: TextResource_AllLanguages_Config;
