@@ -1,5 +1,8 @@
 # Svitlo monorepo
 
+Stage 7 adds `frontend/platform` as an independent Next.js web-platform workspace (`@svitlo/platform`). Run `npm run dev:platform`, `npm run build:platform`, and `npm run test:e2e:platform` (after a build) to work on the site. The textbook catalog uses `NEXT_PUBLIC_MATH_APP_URL` only when an actual Math deployment URL has been configured. The Platform imports no learning-app sources.
+
+
 The Next.js Playground application now lives at `learningApps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Root application checks target Playground/Math; Storybook is owned by UI Kit and no longer reads application sources.
 
 Engine is now an independently compiled workspace package. The Server workspace remains a placeholder; Math is now a standalone textbook app and UI Kit owns reusable React/MUI components. See `studio/Monorepo Migration.md`.

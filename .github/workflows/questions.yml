@@ -40,6 +40,9 @@ jobs:
         run: npm run test:e2e --workspace @svitlo/playground -- src/components/pages/Lesson/Lesson.e2e.spec.ts
       - run: npm run test:e2e
         if: ${{ !cancelled() }}
+      - name: Platform catalog smoke E2E (desktop and mobile)
+        if: ${{ !cancelled() }}
+        run: npm run test:e2e:platform
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -47,3 +50,4 @@ jobs:
           path: |
             learningApps/playground/test-results/
             learningApps/math/test-results/
+            frontend/platform/test-results/
