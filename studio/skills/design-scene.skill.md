@@ -4,7 +4,7 @@
 
 **Purpose:** Design and implement a self-contained **Scene**: a content block through which a learner can observe, manipulate, explore, or interact with the subject of a lesson. Scenes commonly contain **animation, interactive controls, simulations, visual demonstrations, SVG diagrams, or guided exploration**; not every Scene must animate or be interactive if a clear learning purpose is served. A Scene is **not** a full Lesson, a Skill, a Question definition, a generic UI page, or an assessment policy.
 
-The Scene's **public React component takes absolutely no props**, receives lesson-localized messages through the **existing context**, and adapts semantically to **both LTR and RTL** reading directions.
+The Scene's **public React component takes absolutely no props**, receives lesson-localized messages through the **existing context**, and adapts semantically to **both LTR and RTL** reading directions. As a **self-contained lesson interaction**, each Scene must also own **its own tests**, written and run in accordance with all applicable repository-wide and package-local testing rules. Design for learners with disabilities and other accessibility needs from the outset; unresolved accessibility limitations must be documented in code **and explicitly disclosed in the chat completion report**.
 
 ## NON-NEGOTIABLE START CONDITIONS
 
@@ -20,6 +20,7 @@ The Scene's **public React component takes absolutely no props**, receives lesso
 - The Scene **may use its own hooks, local state, internal constants, content data, and composed child widgets**. Child widgets can use props internally; the **public Scene root** remains prop-free. Interactive state belongs inside the Scene or an existing shared context explicitly designed for it.
 - A Scene obtains needed external **locale, scene text, and applicable lesson context** through existing provider hooks, not by passing props through the scene resource. If required context is unavailable, use the repository's established explicit error behavior; do not silently substitute an invented default.
 - Keep behavior reproducible, scientifically consistent and logically bounded. Controls should change only the intended aspect of a model; a change in animation speed must not change the physical rule being demonstrated unless the learning specification explicitly calls for it.
+- **Self-contained, independently testable content:** the Scene owns its interaction, state, and presentation behavior. **Every Scene must have co-located automated tests**, even when it composes existing tested widgets; the parent Lesson's tests alone do not replace the Scene's tests. Follow the repository's standard test naming, fixture, mocking, accessibility and quality rules instead of inventing a special test architecture.
 
 ## REQUIRED REFERENCE IMPLEMENTATIONS
 
@@ -111,6 +112,8 @@ Support LTR **and** RTL as **directional design modes**, not a single `scaleX(-1
 ## 4. INTERACTION, ANIMATION AND ACCESSIBILITY
 
 - **Clear instructional purpose:** every moving object/control should demonstrate an explicit concept; learners must be able to distinguish model behavior from decorative motion. Document simplifications, scales or idealizations in localized learner-facing language when materially relevant.
+- **Inclusive design from the planning stage:** whenever feasible, make the full learning interaction accessible to learners with differing vision, hearing, motor, cognitive, and other disability-related needs. Consider nonvisual or text alternatives for essential graphics, keyboard-only and assistive-technology use, reduced-motion/nonanimated modes, readable contrast, scalable text, and sufficient time/control flexibility as applicable. Choose an equivalent accessible pathway whenever possible **without dropping the Scene's learning functionality or scientific meaning**. Do not equate an ARIA label or a static screenshot with equivalent access to an essential interactive task.
+- **Mandatory documented exception if equivalent access cannot currently be achieved without a material loss of functionality:** first explore reasonable alternatives; do not silently discard accessibility or remove core functionality just to satisfy a checklist. In the **main Scene component source file (`<SceneName>.tsx`) place a clear `TODO(a11y)` comment at the very end of the file** (after the component implementation) recording: **which learner need or modality is not supported, what concrete barrier exists, why an equivalent solution is not currently feasible without losing the specified function, and what remediation/alternative needs to be investigated**. Add related comments to other affected files only if helpful; the end-of-file TODO in the main Scene source is mandatory. Keep the known limitation visible in tests/review where feasible. **Explicitly call out the same blocker in the chat completion message**, including the affected learners, practical impact and pending remedy. A TODO does **not** mean accessibility is complete or waive other available accessibility requirements.
 - **State and determinism:** keep interaction state local or in a documented shared context. Do not mutate global lesson state without an existing contract. If random behavior is needed, use a stable seed or explicit model input; test state changes and reset behavior where appropriate.
 - **Motion preference:** respect `prefers-reduced-motion` for nonessential animation. Allow pause/play or a readable static state for continuous movement; do not hide required information behind animation alone. The reference Simulation uses `useSyncExternalStore` with a reduced-motion media query.
 - **Accessible controls:** all controls must be operable by keyboard, have discernible localized accessible names, correct roles/states (`aria-pressed`, slider values, etc.), visible focus and sensible tab sequence. Use semantic buttons/labels and announce meaningful dynamic feedback (`aria-live` sparingly). Do not use color or motion as the only information channel.
@@ -118,16 +121,29 @@ Support LTR **and** RTL as **directional design modes**, not a single `scaleX(-1
 - **Responsive design:** adapt size, hit targets and layout to mobile/tablet/desktop; avoid horizontal overflow and tiny controls. Use existing theme tokens, shared components and CSS modules as appropriate rather than hardcoded platform-specific styling.
 - **Performance and cleanup:** limit unbounded animations and excessive re-renders, remove event listeners/observers on unmount, avoid hydration mismatch and unnecessary client bundle dependencies. Do not import massive media or translation collections solely to render one Scene.
 
+
+**Example required end-of-file annotation when accessibility is genuinely blocked (illustrative only; use a real, scene-specific explanation):**
+
+~~~tsx
+// TODO(a11y): Learners who cannot use pointer-based spatial dragging cannot yet
+// complete [specific interactive task]. An equivalent keyboard/screen-reader
+// interaction needs [specific unresolved design or technical work]; a naive
+// conversion to buttons would lose [specific essential learning behavior].
+// Investigate [concrete accessible alternative] with the accessibility reviewer.
+~~~
+
+The TODO must appear **after the main Scene implementation at the end of its own `<SceneName>.tsx` file**, not only in a test, PR description or issue. Do not copy the example as a generic excuse: identify the actual accessibility barrier and concrete next action. If the Scene can be made accessible with existing techniques, **implement them** instead of leaving a TODO.
+
 ## 5. IMPLEMENTATION PROTOCOL
 
 1. **Read and scope:** confirm target Lesson, Section, educational intent, existing relevant Scenes, current scene contracts, context, localization and app boundaries.
-2. **Specify observable Scene behavior:** briefly describe the learner's actions (if any), visual feedback, model state, instructional limitations, expected LTR/RTL mappings and acceptance cases. Obtain editorial input rather than inventing scientific or pedagogical facts.
+2. **Specify observable Scene behavior:** briefly describe the learner's actions (if any), visual feedback, model state, instructional limitations, expected LTR/RTL mappings, **accessible interaction modes for learners with relevant disabilities**, and acceptance cases. Identify limitations early and try equivalent accessible designs before accepting a functional trade-off. Obtain editorial input rather than inventing scientific or pedagogical facts.
 3. **Implement Scene:** build the zero-prop React component plus reusable internal helpers/styles; use typed local state and existing hooks. No public component props.
 4. **Localize:** author all required visible and accessible strings for the complete current language set. Wire them into the Lesson's scene-locale configuration and read only from context inside the Scene.
 5. **Handle direction semantically:** test RTL geometry, text, controls and interactions as distinct concerns; do not apply a global reflection transform.
 6. **Register and compose:** create/reuse stable Scene ID, typed resource config, level-specific Data/ID exports, and the intended Lesson Section inclusion. Make sure the selected locale and direction reach the Scene through providers.
-7. **Test:** use the Scene's co-located `*.unit.spec.ts` and `*.unit.fx.ts` patterns where appropriate, plus package-level tests. Cover an LTR locale, RTL locale(s), interactions, accessible controls, reduced motion, responsive behavior and scene registration/rendering.
-8. **Review and stop:** report the exact implementation and validation outcome. Do not automatically alter question banks, assessment policies, curricula, or unrelated shared engine code.
+7. **Test:** **create and maintain the Scene's own co-located `*.unit.spec.ts` tests as a required deliverable**, with `*.unit.fx.ts`/other fixtures as warranted. Follow **all** applicable repository and target-package testing rules, conventions, tooling and quality gates; do not treat tests of the Lesson or a reused widget as sufficient. Cover the Scene's observable behavior, states, meaningful interactions, an LTR locale, RTL locale(s), accessibility/keyboard paths, reduced motion when relevant, responsive behavior and scene registration/rendering. Test available accessible alternatives; explicitly identify any untested or unresolved accommodation instead of claiming full coverage.
+8. **Review and stop:** report the exact implementation, **Scene-specific test files and their results**, and validation outcome. When any accessibility limitation remains, ensure the source file **ends with the required `TODO(a11y)`**, and **explicitly describe the limitation and its impact in the final chat response**, even if the rest of the Scene works. Do not automatically alter question banks, assessment policies, curricula, or unrelated shared engine code.
 
 ## 6. ACCEPTANCE CHECKLIST
 
@@ -138,9 +154,10 @@ Support LTR **and** RTL as **directional design modes**, not a single `scaleX(-1
 - [ ] All current supported languages have complete, meaningful translations for **visible and accessibility text**; selected-locale SSR assembly is verified when applicable.
 - [ ] Correct `lang` and LTR/RTL direction; semantic layout and directional interactions are tested.
 - [ ] No blanket mirroring of text, labels, numbers or semantics; selective geometry changes preserve the lesson concept.
-- [ ] Scene remains keyboard-usable, accessible, responsive and reduced-motion-aware when animated.
+- [ ] Scene is planned for learners with relevant accessibility needs and uses equivalent accessible interactions wherever feasible; available keyboard, screen-reader, visual, audio, reduced-motion and responsive paths are verified as applicable.
+- [ ] If full accessibility would currently require losing essential functionality, a precise **end-of-file `TODO(a11y)` exists in `<SceneName>.tsx`**, and the same limitation, affected users, impact and pending remedy are **explicitly stated in the chat**. No limitation is concealed behind a passing checklist.
 - [ ] Stable Scene Resource ID, Data registration, local indexes and Section inclusion are all wired and verified.
-- [ ] Typecheck, lint, unit/integration or visual tests run where available; unavailable checks clearly reported as **not run**.
+- [ ] The Scene has **its own automated tests** following repo/package-wide test rules (not solely parent Lesson or child-widget coverage); required tests run and results are reported. Typecheck, lint and applicable integration/visual tests run where available; unavailable checks clearly reported as **not run**.
 - [ ] No unrelated Lesson/Program/Assessment/Skill semantics were modified.
 
 ## RESULT
@@ -150,8 +167,8 @@ Deliver a reviewable code change inside the **actual textbook application** (not
 - `<SceneName>/<SceneName>.tsx`: named, prop-free Scene root with any local interactive state.
 - `<SceneName>/<SceneName>.locale.ts`: complete typed translations where visible or accessible text exists.
 - `<SceneName>/<SceneName>.module.css` (or existing styling convention), plus optional `*.constants.ts` / helper files if truly needed.
-- `<SceneName>/<SceneName>.unit.spec.ts` and optional co-located fixture/mocks for meaningful automated tests. UI fixtures may supply **provider props**, but must not change the Scene root's public zero-prop API.
+- **Required** `<SceneName>/<SceneName>.unit.spec.ts` with Scene-specific automated tests compliant with repository-wide and package-local rules, plus optional co-located fixtures/mocks. Parent Lesson or reused-widget tests are not a substitute. UI test fixtures may supply **provider props**, but must not change the Scene root's public zero-prop API.
 - Parent `scenes.data.ts` / `index.data.ts` / `index.ids.ts` updates for the typed `SceneResource_Config`, plus the parent Lesson's `sceneLocales` and intended Section's ordered content.
-- A concise report: learning interaction implemented, paths changed, LTR/RTL checks, locale coverage, accessibility/performance checks, test commands/results, remaining concerns.
+- A concise **chat completion report**: learning interaction implemented, paths changed, **own Scene test file(s)** and test commands/results, LTR/RTL checks, locale coverage, accessible alternatives and accessibility/performance checks. **Any unresolved disability-access barrier must be called out explicitly, with the location of the final-line `TODO(a11y)`, affected users, functionality impacted and proposed follow-up**; do not bury it under generic 'remaining concerns'.
 
 **Scope guard:** This Skill is an **engineering implementation workflow** under the Coding Agent Persona. Approved pedagogical intent belongs to Methodologist/Screenwriter; the Scene's technical presentation and interaction implementation belong here. Do not silently invent lesson facts, assessment scoring, unapproved interfaces, or cross-textbook dependencies.
