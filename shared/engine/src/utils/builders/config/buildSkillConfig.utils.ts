@@ -1,7 +1,7 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
-import type { Collection } from '../../../types/misc.types';
-import type { Skill_Config } from '../../../types/content/skill.types';
-import type { DeepReadonly } from '../../../types/readonly.types';
+import type { Collection } from '@svitlo/contracts/content';
+import type { Skill_Config } from '@svitlo/contracts/taxonomy';
+import type { DeepReadonly } from '@svitlo/contracts/content';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
 const supportedLanguages = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language));

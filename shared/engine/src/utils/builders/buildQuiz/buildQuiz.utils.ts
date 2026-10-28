@@ -1,6 +1,6 @@
 import type { Locale } from '../../../types/languages';
-import type { DeepReadonly } from '../../../types/readonly.types';
-import type { Quiz, Quiz_Config, Resource_Config } from '../../../content';
+import type { DeepReadonly } from '@svitlo/contracts/content';
+import type { Quiz, Quiz_Config, Resource_Config } from '@svitlo/contracts/content';
 import { buildResource } from '../buildResource/buildResource.utils';
 import { buildQuestion } from '../buildQuestion/buildQuestion.utils';
 import { buildTextResource } from '../buildResource/buildResource.utils';

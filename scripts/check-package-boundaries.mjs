@@ -3,6 +3,7 @@ import { dirname, join, resolve, relative, sep } from 'node:path';
 
 const root = process.cwd();
 const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
+const contracts = readJson('shared/contracts/package.json');
 const engine = readJson('shared/engine/package.json');
 const playground = readJson('learningApps/playground/package.json');
 const math = readJson('learningApps/math/package.json');
@@ -17,7 +18,14 @@ function walk(dir) {
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
+assert(contracts.name === '@svitlo/contracts', 'Unexpected contracts package name');
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
+assert(engine.dependencies?.[contracts.name] === contracts.version, 'Engine must use versioned public Contracts dependency');
+for (const subpath of ['.', './content', './taxonomy', './localization', './state']) {
+  const target = contracts.exports?.[subpath];
+  assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
+    'Contracts public export must use compiled artifacts: ' + subpath);
+}
 assert(playground.dependencies?.[engine.name] === engine.version, 'Playground must use a versioned engine dependency');
 assert(playground.dependencies?.[uiKit.name] === uiKit.version, 'Playground must use a versioned UI Kit dependency');
 for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', playground]]) {
@@ -51,7 +59,7 @@ for (const file of engineSources) {
   const content = readFileSync(file, 'utf8');
   const imports = [...content.matchAll(/\b(?:from\s*|import\s*\(\s*)['"]([^'"]+)['"]/g)];
   for (const match of imports) {
-    assert(match[1].startsWith('.'),
+    assert(match[1].startsWith('.') || match[1].startsWith('@svitlo/contracts'),
       'Engine must not import runtime, UI or application packages: ' + relative(root, file) + ' -> ' + match[1]);
   }
 }

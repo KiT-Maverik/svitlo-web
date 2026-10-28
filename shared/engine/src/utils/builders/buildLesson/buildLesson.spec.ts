@@ -1,4 +1,4 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../types/content/assessmentMethod.ids';
+import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/contracts/content';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type {

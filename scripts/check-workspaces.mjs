@@ -17,6 +17,10 @@ const expected = [
     "name": "@svitlo/playground"
   },
   {
+    "path": "shared/contracts",
+    "name": "@svitlo/contracts"
+  },
+  {
     "path": "shared/engine",
     "name": "@svitlo/engine"
   },
