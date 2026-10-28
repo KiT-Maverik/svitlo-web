@@ -10,8 +10,8 @@ vi.mock('@/components/pages/Lesson/LessonProgress/LessonProgress', async importO
 import { screen, within } from '@testing-library/react';
 import { LearningLayout_fx } from './LearningLayout.unit.fx';
 import { LearningLayout_mx } from './LearningLayout.unit.mx';
-import { aria } from './LearningLayout.constants';
-import { locale } from './locales/uk-UA';
+import { aria } from '@svitlo/ui-kit/learning-layout/constants';
+import { locale } from '@svitlo/ui-kit/learning-layout/locales/uk-UA';
 
 describe('Layouts', () => {
   describe('LearningLayout', () => {
@@ -49,7 +49,7 @@ describe('Layouts', () => {
       await LearningLayout_fx.actions.openTopics();
       expect(await screen.findByRole('navigation', { name: aria.navigation.topics })).toBeVisible();
       expect(
-        within(LearningLayout_fx.selectors.topics()).getByRole('link', { name: 'How light travels' }),
+        within(LearningLayout_fx.selectors.topics()).getByRole('link', { name: 'Example topic' }),
       ).toHaveAttribute('aria-current', 'page');
       await LearningLayout_fx.actions.escape();
       expect(LearningLayout_fx.selectors.topAction(aria.actions.openTopics)).toHaveAttribute('aria-expanded', 'false');

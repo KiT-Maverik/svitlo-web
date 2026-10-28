@@ -5,6 +5,7 @@ const root = process.cwd();
 const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
 const engine = readJson('shared/engine/package.json');
 const playground = readJson('apps/playground/package.json');
+const math = readJson('apps/textbooks/math/package.json');
 const uiKit = readJson('shared/ui-kit/package.json');
 
 function walk(dir) {
@@ -19,6 +20,17 @@ function assert(condition, message) {
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
 assert(playground.dependencies?.[engine.name] === engine.version, 'Playground must use a versioned engine dependency');
 assert(playground.dependencies?.[uiKit.name] === uiKit.version, 'Playground must use a versioned UI Kit dependency');
+for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', playground]]) {
+  assert(manifest.dependencies?.[engine.name] === engine.version, label + ' must use public Engine dependency');
+  assert(manifest.dependencies?.[uiKit.name] === uiKit.version, label + ' must use public UI Kit dependency');
+}
+assert(existsSync(resolve(root, 'apps/textbooks/math/src/math')), 'Math textbook is missing its domain content');
+assert(existsSync(resolve(root, 'apps/textbooks/math/docs')), 'Math textbook is missing package-local educational docs');
+assert(!existsSync(resolve(root, 'apps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
+assert(!existsSync(resolve(root, 'apps/playground/src/content')), 'Playground cannot contain authored textbook content');
+assert(!existsSync(resolve(root, 'apps/playground/src/app/topics/light')), 'Old subject-specific Playground route must be removed');
+assert(existsSync(resolve(root, 'apps/playground/src/fixtures/demoLesson.ts')), 'Playground must provide a generic lesson fixture');
+assert(!existsSync(resolve(root, 'math')), 'Root mathematics docs must be inside the textbook package');
 assert(uiKit.dependencies?.[engine.name] === engine.version, 'UI Kit must consume the published Engine API');
 assert(engine.scripts?.build && engine.files?.includes('dist'), 'Engine must publish compiled artifacts');
 for (const subpath of ['.', './localization', './taxonomy', './content', './builders', './generation']) {
@@ -44,16 +56,28 @@ if(existsSync(kitSourceRoot)) {
   }
 }
 const appSourceRoot = resolve(root, 'apps/playground/src');
+const playgroundManifest = readJson('apps/playground/tsconfig.json');
+assert(!playgroundManifest.compilerOptions?.paths?.['@layout'] && !playgroundManifest.compilerOptions?.paths?.['@pages'],
+  'Playground must not retain deprecated @layout or @pages aliases');
 for (const removed of ['types/index.ts', 'types/languages.ts', 'utils/index.ts', 'math/assessmentMethodTaxonomy/index.ids.ts']) {
   assert(!existsSync(resolve(appSourceRoot, removed)), 'Legacy compatibility shim must not exist: ' + removed);
 }
 if (existsSync(appSourceRoot)) {
   for (const file of walk(appSourceRoot).filter(file => /\.(?:ts|tsx)$/.test(file))) {
     const content = readFileSync(file, 'utf8');
-    assert(!/from\s*['"](?:@types|@\/utils(?:\/|['"]))/.test(content),
+    assert(!/from\s*['"](?:@types|@layout|@pages|@\/utils(?:\/|['"]))/.test(content),
       'Application must not depend on legacy compatibility aliases: ' + relative(root, file));
+    assert(!/howLightMoves|topics\/light/.test(content),
+      'Playground must not reference authored subject-specific content: ' + relative(root, file));
     assert(!/(?:shared\/engine\/src|@svitlo\/engine\/(?:src|dist)\/)/.test(content),
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-console.log('Package boundaries and engine publishing surface verified.');
+for(const appRoot of ['apps/playground/src','apps/textbooks/math/src']) {
+  for (const file of walk(resolve(root,appRoot)).filter(x=>/\.(ts|tsx)$/.test(x))) {
+    const code=readFileSync(file,'utf8');
+    assert(!/from\s*['"](?:@svitlo\/(?:playground|math)|(?:\.\.\/){3,}(?:playground|textbooks)\/)/.test(code),
+      'Textbooks and Playground must not import other application source: '+relative(root,file));
+  }
+}
+console.log('Package boundaries and both independent applications verified.');

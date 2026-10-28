@@ -1,16 +1,54 @@
 {
-  "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
+      "@layout": [
+        "./src/components/layout/index.ts"
+      ],
+      "@pages": [
+        "./src/components/pages/index.ts"
+      ],
       "@/*": [
         "src/*"
       ]
     },
-    "jsx": "react-jsx"
+    "baseUrl": "."
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ]
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".test-build",
+    "test-results",
+    "playwright-report",
+    "src/**/*.typecheck.ts"
+  ],
+  "extends": "../../../tsconfig.base.json"
 }
