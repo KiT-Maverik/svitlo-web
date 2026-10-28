@@ -10,11 +10,17 @@ Ages: %AGE_RANGE%
 %Audience description in a form of a detailed reasonably long text.%
 
 Prerequisites:
-%Use only applicable entries; the four bullet shapes below are alternatives, not required fields. Mix free text and links as needed. Resolve links to existing *.data.ts files and use their actual entity names; no duplicated IDs or UUIDs. Prefer Skills for precise prerequisites; SkillGroups/SkillDomains indicate broader prior familiarity, not mastery of all descendants.%
-- %TEXT_PREREQUISITE%
-- [%SKILL_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
-- [%SKILL_GROUP_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/%GROUP%.data.ts)
-- [%SKILL_DOMAIN_NAME%](../skillsTaxonomy/%DOMAIN%/%DOMAIN%.data.ts)
+%Agent Note:
+Allowed types of records:
+- Plain text: %TEXT_PREREQUISITE%
+- Skill: [%SKILL_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
+- SkillGroup: [%SKILL_GROUP_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/%GROUP%.data.ts)
+- SkillDomain: [%SKILL_DOMAIN_NAME%](../skillsTaxonomy/%DOMAIN%/%DOMAIN%.data.ts)
+
+Choose only applicable record types and mix them when needed. For references, use the entity's actual name and an existing *.data.ts path. Do not duplicate IDs or UUIDs. A SkillGroup or SkillDomain prerequisite means general familiarity, not mastery of every nested Skill.
+%
+- %ITEM_1%
+- ...
 
 ## EXPECTED RESULTS
 
