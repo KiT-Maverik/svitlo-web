@@ -5,6 +5,7 @@ const root = process.cwd();
 const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
 const contracts = readJson('shared/contracts/package.json');
 const engine = readJson('shared/engine/package.json');
+const indexdb = readJson('shared/indexdb/package.json');
 const playground = readJson('learningApps/playground/package.json');
 const math = readJson('learningApps/math/package.json');
 const uiKit = readJson('shared/ui-kit/package.json');
@@ -20,6 +21,15 @@ function assert(condition, message) {
 }
 assert(contracts.name === '@svitlo/contracts', 'Unexpected contracts package name');
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
+assert(indexdb.name === '@svitlo/indexdb', 'Unexpected IndexedDB package name');
+assert(indexdb.dependencies?.[contracts.name] === contracts.version, 'IndexedDB must consume canonical Contracts');
+assert(!indexdb.dependencies?.[engine.name], 'IndexedDB cannot depend on Engine');
+assert(indexdb.dependencies?.zod, 'IndexedDB must declare its Zod schema dependency');
+for (const subpath of ['.', './controllers', './utils', './schemas', './config']) {
+  const target = indexdb.exports?.[subpath];
+  assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
+    'IndexedDB public API must use compiled exports: ' + subpath);
+}
 assert(engine.dependencies?.[contracts.name] === contracts.version, 'Engine must use versioned public Contracts dependency');
 for (const subpath of ['.', './content', './taxonomy', './localization', './state']) {
   const target = contracts.exports?.[subpath];
@@ -28,6 +38,14 @@ for (const subpath of ['.', './content', './taxonomy', './localization', './stat
 }
 assert(playground.dependencies?.[engine.name] === engine.version, 'Playground must use a versioned engine dependency');
 assert(playground.dependencies?.[uiKit.name] === uiKit.version, 'Playground must use a versioned UI Kit dependency');
+assert(playground.dependencies?.[indexdb.name] === indexdb.version, 'Playground must use public IndexedDB dependency');
+assert(math.dependencies?.[indexdb.name] === indexdb.version, 'Math must use public IndexedDB dependency');
+for (const name of ['learningApps/math', 'learningApps/playground']) {
+  assert(!existsSync(resolve(root, name, 'src/db')), name + ' must not own duplicate IndexedDB controllers');
+}
+assert(existsSync(resolve(root, 'shared/indexdb/src/controllers/index.ts')), 'Shared IndexedDB controllers are missing');
+assert(existsSync(resolve(root, 'shared/indexdb/src/schemas/lessonState/lessonState.schema.ts')), 'Shared IndexedDB LessonState schema is missing');
+assert(existsSync(resolve(root, 'shared/indexdb/src/schemas/quizState/quizState.schema.ts')), 'Shared IndexedDB QuizState schema is missing');
 for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', playground]]) {
   assert(manifest.dependencies?.[engine.name] === engine.version, label + ' must use public Engine dependency');
   assert(manifest.dependencies?.[uiKit.name] === uiKit.version, label + ' must use public UI Kit dependency');

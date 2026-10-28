@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-vi.mock('@/db', () => ({
+vi.mock('@svitlo/indexdb', () => ({
   createQuizState: vi.fn(),
   getQuizState: vi.fn(),
   listQuizStates: vi.fn(),
@@ -13,7 +13,7 @@ vi.mock('../LessonProgress/LessonProgress', async importOriginal => ({
   useLessonProgress: vi.fn(),
 }));
 import { screen, waitFor } from '@testing-library/react';
-import { saveQuizState, createQuizState, completeQuiz } from '@/db';
+import { saveQuizState, createQuizState, completeQuiz } from '@svitlo/indexdb';
 import { LessonClient_fx } from './LessonClient.unit.fx';
 import { LessonClient_mx } from './LessonClient.unit.mx';
 import { locale } from '../locales/uk-UA';

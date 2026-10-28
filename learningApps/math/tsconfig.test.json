@@ -7,13 +7,11 @@
     "outDir": ".test-build",
     "incremental": false,
     "isolatedModules": false,
-    "plugins": []
+    "plugins": [],
+    "rootDir": "./src"
   },
   "include": [
-    "src/data/skillsTaxonomy/__tests__/*.spec.ts",
-    "src/db/utils/**/*.spec.ts",
-    "src/db/controllers/__tests__/controllers.integration.test.ts",
-    "src/db/controllers/**/*.spec.ts"
+    "src/data/skillsTaxonomy/__tests__/*.spec.ts"
   ],
   "exclude": [
     "node_modules",
