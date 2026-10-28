@@ -13,7 +13,13 @@ const questions = [
   {
     id: 'sample-question',
     prompt: 'Which answer is correct?',
-    type: 'select-one-answer',
+    type: 'single-select',
+    options: [
+      { id: 'answer-1', label: 'Correct answer' },
+      { id: 'wrong-1', label: 'Incorrect answer' },
+    ],
+    correctId: 'answer-1',
+    explanation: 'Because the first answer is correct.',
   },
 ] as unknown as NonNullable<Props['questions']>;
 
@@ -70,13 +76,16 @@ export const LessonClient_fx = {
   },
   selectors: {
     quiz: () => screen.getByRole('region', { name: locale.quiz.test }),
-    question: () => screen.getByRole('group', { name: questions[0].prompt }),
-    check: () => screen.getByRole('button', { name: 'Check answer' }),
+    question: () => screen.getByRole('region', { name: questions[0].prompt }),
+    check: () => screen.getByRole('button', { name: 'Перевірити' }),
     finish: () => screen.getByRole('button', { name: locale.quiz.finish }),
     sound: () => screen.getByRole('checkbox', { name: locale.quiz.sound }),
   },
   actions: {
-    check: async () => userEvent.click(LessonClient_fx.selectors.check()),
+    check: async () => {
+      await userEvent.click(screen.getByRole('button', { name: 'Correct answer' }));
+      await userEvent.click(LessonClient_fx.selectors.check());
+    },
     finish: async () => userEvent.click(LessonClient_fx.selectors.finish()),
   },
 } as const;

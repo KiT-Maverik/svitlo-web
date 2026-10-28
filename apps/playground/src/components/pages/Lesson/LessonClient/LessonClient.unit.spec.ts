@@ -12,35 +12,6 @@ vi.mock('../LessonProgress/LessonProgress', async importOriginal => ({
   ...(await importOriginal<typeof import('../LessonProgress/LessonProgress')>()),
   useLessonProgress: vi.fn(),
 }));
-vi.mock('@/components/widgets/questions/helpers', async () => {
-  const React = await import('react');
-  return {
-    QuestionAttempt: (props: {
-      question: { id: string; prompt: string };
-      onCheck: (value: { answer: string; result: { status: 'correct' } }) => void;
-      actionSlots: { center: (context: { hasChecked: boolean; children: null }) => React.ReactNode };
-    }) => {
-      const [hasChecked, setChecked] = React.useState(false);
-      return React.createElement(
-        'section',
-        { role: 'group', 'aria-label': props.question.prompt },
-        React.createElement(
-          'button',
-          {
-            type: 'button',
-            onClick: () => {
-              props.onCheck({ answer: 'answer-1', result: { status: 'correct' } });
-              setChecked(true);
-            },
-          },
-          'Check answer',
-        ),
-        props.actionSlots.center({ hasChecked, children: null }),
-      );
-    },
-  };
-});
-
 import { screen, waitFor } from '@testing-library/react';
 import { saveQuizState, createQuizState, completeQuiz } from '@/db';
 import { LessonClient_fx } from './LessonClient.unit.fx';
@@ -93,7 +64,7 @@ describe('Components', () => {
       LessonClient_mx.prepare({ step: 2, progress: { testDone: true } });
       LessonClient_fx.render();
       expect(await screen.findByRole('heading', { name: locale.celebration.title })).toBeVisible();
-      expect(screen.queryByRole('button', { name: 'Check answer' })).not.toBeInTheDocument();
+      expect(screen.queryByRole('button', { name: 'Перевірити' })).not.toBeInTheDocument();
     });
   });
 });

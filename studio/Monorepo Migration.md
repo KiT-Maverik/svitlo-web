@@ -67,3 +67,19 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 ## Layout update (2026-10-28)
 
 Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/` holds independently deployable applications; `apps/textbooks/` groups textbook applications. The historical phase descriptions above retain their original paths for chronology. Existing package APIs and extraction boundaries remain unchanged.
+
+## Stage 2 — Shared UI Kit extraction
+
+- Reusable question input widgets, question controller/registry, navigation primitives,
+  Flashcard, KnowledgeCheckpoint, MarkdownContent and VerticalSpace now live in
+  `shared/ui-kit` (package `@svitlo/ui-kit`).
+- The public package API exposes `@svitlo/ui-kit`, `/questions`, `/widgets`, and
+  `/navigation` plus exported, typed subpaths. Dist includes JavaScript, declarations
+  and CSS Module assets; Playground builds after Engine and UI Kit.
+- Consumers import the package directly. No application compatibility re-exports
+  or relative imports across workspace roots are retained.
+- Component and question-logic regression tests live beside their source in UI Kit.
+  Application integration tests remain in Playground.
+- Next.js routing, lesson-state-dependent LearningLayout, LocaleProvider, and the
+  Next Image flag asset adapter remain app-owned because they depend on the host.
+- Stage 3 (standalone Math application) is not included here.
