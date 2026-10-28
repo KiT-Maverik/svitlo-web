@@ -36,7 +36,7 @@ Svitlo має створювати багато повторно викорис�
 **Відповідальність:**
 
 - Визначає навчальну мету, необхідні знання, передумови, логіку руху від простого до складнішого та межі теми.
-- Добирає **вже наявні** Skill ID; пропонує нові Skill або їхнє розділення лише за правилами [Creating Skills](./Creating%20Skills.md), без непогодженої зміни каталогу.
+- Добирає **вже наявні** Skill ID; пропонує нові Skill або їхнє розділення лише за правилами [Skill entity rules](./docs/entities/skill.md), без непогодженої зміни каталогу.
 - Розрізняє **окреме вміння** та **складену/інтеграційну компетенцію**. Підсвічує ризики, коли учень може знати A, але не B.
 - Описує конкретний результат: _після навчання учень зможе…_; встановлює межі достатньої глибини, а не винаходить випадкові вправи.
 - Перевіряє предметну точність та педагогічні ризики, зокрема хибні узагальнення, невірну складність і непідтверджені припущення.
@@ -95,7 +95,7 @@ Svitlo має створювати багато повторно викорис�
 
 - Використовує наявну архітектуру, типи й компоненти; не винаходить другу паралельну систему Question, Skill або Lesson.
 - Створює/оновлює необхідні `*.data.ts`, `*.ids.ts`, контентні локалі, інтерактивні сцени, адаптери та компоненти.
-- Дотримується правил [Creating Skills](./Creating%20Skills.md) для UUID, локалізацій, іменованих словників і collection-scoped exports.
+- Дотримується правил [Implement Skill Code](./skills/implement-skill-code.skill.md) для UUID, локалізацій, іменованих словників і collection-scoped exports.
 - Перевіряє типізацію, unit/integration/component/E2E-тести там, де це доречно, а також accessibility, поведінку на мобільних пристроях, SSR і performance.
 - Зберігає коректну сепарацію: Lesson content ≠ Program narrative ≠ Assessment results ≠ Skill mastery; не прошиває випадкові дані одного уроку в універсальні компоненти.
 - Якщо специфікація неможлива в поточному API, **не вигадує мовчки новий контракт**: описує обмеження, пропонує вузьку зміну та погоджує або явно фіксує рішення відповідно до умов задачі.
@@ -206,10 +206,10 @@ User / Editor: тема, цілі, обмеження, домен
 
 ## 11. Пов'язані матеріали та статус
 
-- [Creating Skills](./Creating%20Skills.md) — **канонічна** специфікація Skill/SkillGroup/SkillDomain, static UUID, локалізацій, builder і dependency boundaries.
+- [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — семантика сутностей; [Create Skills Taxonomy](./skills/create-skills-taxonomy.skill.md) — методичний процес; [Implement Skill Code](./skills/implement-skill-code.skill.md) — static UUID, локалізація, builders та dependency boundaries.
 - [Long Chat Overture](./Long%20Chat%20Overture.md) — контекст інших архітектурних домовленостей (Lesson/Program, events, injections, генератори, offline).
-- [Mathematics Skills Inventory](../math/skills-inventory.md) — змістовний каталог і фактичний статус `Implemented`.
-- [Lesson types](../src/types/content/lesson.types.ts) і [Question types](../src/types/content/question.types.ts) — **чинні** кодові контракти.
+- [Mathematics Skills Inventory](../frontend/playground/src/math/skills-inventory.md) — змістовний каталог і фактичний статус `Implemented`.
+- [Lesson types](../shared/engine/src/types/content/lesson.types.ts) і [Question types](../shared/engine/src/types/content/question.types.ts) — **чинні** кодові контракти.
 - [AGENTS.md](../AGENTS.md) — інструкції агента, обов'язкові під час реалізації.
 
 **Підсумкове рішення:** починати з **чотирьох чітких ролей**. Візуальну та інтерактивну режисуру тримати всередині Screenwriter, оцінювання — **окремо** від сценариста, технічну реалізацію — **окремо** від педагогічних рішень. Цей файл — **proposition/decision record**, за яким згодом можна написати repository skills; він **не** означає, що відповідні skills чи runtime вже створені.
