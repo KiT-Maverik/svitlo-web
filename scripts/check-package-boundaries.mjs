@@ -26,7 +26,7 @@ for (const subpath of ['.', './localization', './taxonomy']) {
 const engineSources = walk(resolve(root, 'shared/engine/src')).filter(file => file.endsWith('.ts'));
 for (const file of engineSources) {
   const content = readFileSync(file, 'utf8');
-  const imports = [...content.matchAll(/\\b(?:from\\s*|import\\s*\\(\\s*)['"]([^'"]+)['"]/g)];
+  const imports = [...content.matchAll(/\b(?:from\s*|import\s*\(\s*)['"]([^'"]+)['"]/g)];
   for (const match of imports) {
     assert(match[1].startsWith('.'),
       'Engine must not import runtime, UI or application packages: ' + relative(root, file) + ' -> ' + match[1]);
@@ -34,9 +34,9 @@ for (const file of engineSources) {
 }
 const appSourceRoot = resolve(root, 'frontend/playground/src');
 if (existsSync(appSourceRoot)) {
-  for (const file of walk(appSourceRoot).filter(file => /\\.(?:ts|tsx)$/.test(file))) {
+  for (const file of walk(appSourceRoot).filter(file => /\.(?:ts|tsx)$/.test(file))) {
     const content = readFileSync(file, 'utf8');
-    assert(!/(?:shared\\/engine\\/src|@svitlo\\/engine\\/(?:src|dist)\\/)/.test(content),
+    assert(!/(?:shared\/engine\/src|@svitlo\/engine\/(?:src|dist)\/)/.test(content),
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
