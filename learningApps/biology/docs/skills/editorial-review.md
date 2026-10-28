@@ -12,9 +12,9 @@ Date: 2026-10-28
 | Living / dead / never alive | **Approved: one Skill** for the three-way classification. | Existing **«Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими»** remains one Skill ID; distinguish the three response categories inside assessment, not via separate Skill IDs. |
 | Viruses | **Approved: three independent Skills** (2026-10-28). | Keep **«Пояснювати, що таке вірус»**, **«Відрізняти вірус від клітинного організму»**, and **«Пояснювати основні шляхи поширення вірусів за моделлю»** as distinct Skills; do not merge the first two. |
 | Subject ownership and data literacy | **Approved: remove four cross-disciplinary candidates from Biology** (2026-10-28). | Removed the now-empty **«Біологічні дані та наукові твердження»** Group: table reading, graph reading, source credibility and unsupported-claim checking. No new cross-textbook Skill IDs assigned. |
-| Scientific inquiry and evidence | **Approved: remove the entire «Дослідження та докази» Group and its six Skills** (2026-10-28). | Research questions, testable predictions, variables, controls, interpretation of results and evidence-backed conclusions are general inquiry competencies, not Biology-owned merely because organisms are used in examples. **Current total: 9 Domains / 32 Groups / 128 Skills.** |
-| Biological classification | **Keep the Group in the draft** (editor's tentative direction, 2026-10-28). | No changes to its four Skills yet. Independently audit generic sorting methods versus genuinely biological classification and organism-identification knowledge before declaring the individual Skills approved. |
-| Observation and modeling | **Review, no deletion approved.** | Preserve both Groups pending item-level examination; distinguish a cross-disciplinary procedure, a subject-specific biological inference, and a **lesson/interactive format**.
+| Scientific inquiry and evidence | **Approved: remove «Дослідження та докази» and six Skills** (2026-10-28). | Generic scientific inquiry Skills removed; historic post-removal total was 9 Domains / 32 Groups / 128 Skills. Current total after further approved changes: **9 Domains / 30 Groups / 121 Skills**. |
+| Biological classification | **Keep the Group** (2026-10-28). | Five current Skills, including the renamed and transferred biological-diagnostic-traits Skill; general methods still require an ownership audit. |
+| Observation and modeling | **Approved item-level consolidation** (2026-10-28). | Three Observation Skills removed, the remaining subject-specific diagnostic skill moved under Biological Classification; all four Modeling Group Skills removed, their intended ecological outcome captured by renaming one existing Ecology Skill. Neither empty Group remains. |
 | Plant organs | **One Skill** for identifying root, stem, leaf and flower. | Four one-organ Skills replaced by **«Визначати основні органи рослини»**. A separate existing Skill about **functions** remains because knowing names and explaining function differ. |
 | Animal groups | **Keep independent Skills** for insects, fish, amphibians, reptiles, birds and mammals. | Retained the individual group-recognition Skills; their descriptions now give the diagnostic biological features instead of repeating names. |
 | Biomimicry | Primarily **engineering in Physics**, not an independent Biology engineering competency. | Removed the three engineering Skills and entire `Біомімікрія` Group from Biology; recorded the proposed primary owner in [Subject Proposition](../../../../studio/Subject%20Proposition.md). **No Physics Skill has been created.** |
@@ -25,7 +25,7 @@ Date: 2026-10-28
 
 ## 2. **RESOLVED: ONE Skill for living / dead / never alive**
 
-**Affected group:** [Біологічне дослідження → Ознаки живого](./taxonomy.md#ознаки-живого).
+**Affected group:** [Ознаки живого та класифікація організмів → Ознаки живого](./taxonomy.md#ознаки-живого).
 
 **Editor decision (2026-10-28): APPROVED — one classification Skill ID.** The three categories are (1) living, (2) dead / formerly living, (3) never alive, but the competence is making one classification choice with three possible outcomes. The distinction between a dead organism and biologically derived material still requires careful examples and definitions.
 
@@ -67,29 +67,43 @@ Their Group **«Біологічні дані та наукові твердже
 
 **Editor decision (2026-10-28):** remove this entire Biology Group and its six candidates: **«Формулювати дослідницьке запитання»**, **«Робити перевірюване передбачення»**, **«Визначати змінну досліду»**, **«Контролювати умови порівняння»**, **«Інтерпретувати результати»**, **«Обґрунтовувати висновок даними»**. Their method is transferable across natural sciences. They were removed from Biology without inventing replacement Skill IDs.
 
-**Result:** the **«Біологічне дослідження»** Domain now contains **3 Groups and 10 Skills** (previously 4 / 16). The taxonomy now contains **9 Domains / 32 Groups / 128 Skills**, with 169 unimplemented Definition and 169 unimplemented Code links.
+**At this stage**, «Біологічне дослідження» had 3 Groups / 10 Skills, and the Biology draft contained 9 Domains / 32 Groups / 128 Skills. Subsequent approved changes to Observation and Modeling brought the current inventory to **9 Domains / 30 Groups / 121 Skills**; this earlier snapshot is preserved as decision history.
 
-### Pending review: «Спостереження» — four candidates, NO removals yet
+### RESOLVED: Observation — three removed, one moved
 
-| Existing candidate | Ownership question / preliminary recommendation |
+**Editor decision (2026-10-28):** retain only the independently assessable Biology-specific competence of identifying **diagnostic biological traits**. Remove the other three, which are either generic research skills or physical instrument handling.
+
+| Previous Observation Skill | Decision |
 | --- | --- |
-| **Виділяти спостережувані ознаки організму** | May be biology-specific if selecting diagnostic biological characteristics; may be general observation if merely enumerating visible properties. Requires an explicit competence boundary. |
-| **Фіксувати зміни в часі** | Generic longitudinal recording / comparison; recommend removal from Biology after editor decision. |
-| **Використовувати збільшувальні засоби** | Practical instrument-use competence, potentially shared across sciences; distinguish microscope technique from an interactive or lesson resource. Ownership unresolved. |
-| **Відділяти спостереження від припущення** | General scientific reasoning; recommend removal from Biology after editor decision. |
+| «Виділяти спостережувані ознаки організму» | **Rename and move** into «Біологічна класифікація» as **«Виділяти біологічно значущі ознаки організму»**: select features such as body segmentation, number of pairs of limbs, or leaf structures that actually discriminate biological groups. |
+| «Фіксувати зміни в часі» | **Remove:** generic longitudinal observation and data recording. |
+| «Використовувати збільшувальні засоби» | **Remove:** not a uniquely Biology-specific competence and virtual Questions do not demonstrate real microscope proficiency. The equipment can still feature in practical lessons; this does not claim that practical use is inherently unassessable. |
+| «Відділяти спостереження від припущення» | **Remove:** generic scientific reasoning. |
 
-### Pending review: «Моделювання біологічних систем» — four candidates, NO removals yet
+«Спостереження» is now empty and has been removed as a Group. «Біологічна класифікація» contains **5 Skills**. The original «Біологічне дослідження» Domain no longer contains experimental research methods and has been renamed to **«Ознаки живого та класифікація організмів»** (2 Groups / 7 Skills).
 
-This is presently a **SkillGroup**, not a Skill. Using a **simulation, animation, model or other interactive block** is a *teaching/assessment format*, not by itself a learner competency. Independently assessable biological reasoning performed **with** a model can, however, justify a Skill.
+### RESOLVED: Modeling — ecological interdependence, not an interaction format
 
-| Existing candidate | Ownership question / preliminary recommendation |
-| --- | --- |
-| **Будувати модель зв’язку будови й функції** | Could be subject-specific when biological structure/function knowledge is indispensable; generic diagram-building alone is not a Biology Skill. |
-| **Прогнозувати наслідки зміни компонента біосистеми** | Likely subject-specific biological reasoning, e.g. consequences of species loss or organ dysfunction. |
-| **Відрізняти модель від реального явища** | Generic model literacy; recommend removal from Biology after editor review. |
-| **Порівнювати дві моделі одного явища** | Generic critical comparison of models unless the criterion is specifically biological; review before removal. |
+**Editor decision (2026-10-28):** the four entries under «Моделювання біологічних систем» should not constitute their own Group. The valuable common outcome is to **explain the interdependence of ecosystem components**, including why removing an apparently undesirable predator or introducing an invasive species may cause indirect, cascading ecological consequences.
 
-**No automatic modeling Group deletion:** two of these may represent meaningful Biology competencies; the other two may belong elsewhere. Whether modeling deserves its own *Group* or should be represented as a method of practicing existing competencies is a separate editorial decision.
+The entire Modeling Group and its four Skills were removed:
+1. «Будувати модель зв’язку будови й функції» — diagram construction is not automatically a separate outcome; structure/function knowledge remains covered elsewhere.
+2. «Прогнозувати наслідки зміни компонента біосистеми» — this lumped together ecosystem change and organ dysfunction; the ecology-specific core is captured by the revised ecosystem Skill.
+3. «Відрізняти модель від реального явища» — cross-disciplinary model literacy.
+4. «Порівнювати дві моделі одного явища» — cross-disciplinary model literacy.
+
+**Avoiding duplicate IDs:** instead of adding a new Ecology Skill, the existing **«Моделювати взаємодію живих і неживих компонентів»** was renamed and rewritten as **«Пояснювати взаємозалежність компонентів екосистеми»**. That is assessable by explaining links among resources, species and populations; a simulation, diagram or interactive ecosystem is an **instructional/assessment medium**, not by itself a Skill.
+
+**Candidate examples for future lessons, not additional Skills:**
+- Invasive rabbits have damaged Australian vegetation and native ecosystems ([Australian Government, pest animals](https://www.agriculture.gov.au/biosecurity-trade/pests-diseases-weeds/pest-animals-and-weeds/priority-pest-animals)).
+- Introduced brown tree snakes on Guam have severely reduced endemic/native birds ([USGS, brown treesnake project](https://www.usgs.gov/pacific-island-ecosystems-research-center/science/brown-treesnake-project)).
+- Avoid an inaccurate blanket claim that "rabbits or domestic cats are banned across Australia." Keeping pet rabbits is prohibited in Queensland but allowed in some other states, while Queensland does not categorically prohibit domestic cats ([Queensland Government, exotic pets](https://www.qld.gov.au/family/family-and-parents/government/pets/keeping-exotic-animals-as-pets-in-queensland)). The ecological consequences, not blanket legal claims, are the curriculum target.
+
+The old Domain «Біологічні моделі та біотехнології» contained the removed Modeling Group and the retained Biotechnology Group. It has been renamed **«Прикладна біологія»**, now containing **1 Group / 4 Skills** (Biotechnology only).
+
+**Remaining reviewable overlap:** «Прогнозувати наслідки вилучення ланки ланцюга» still exists in Ecology → «Харчові зв’язки». It specifically concerns a food chain, while the new interdependence Skill addresses ecological networks and indirect effects more broadly. **Assess whether these justify independent IDs before approving taxonomy**; do not silently remove the more specific Skill.
+
+**Current inventory after these approved changes: 9 Domains, 30 Groups, 121 Skills; 160 unimplemented Definition and 160 unimplemented Code links.**
 
 ### Cross-disciplinary ownership audit — OPEN, do not apply silently
 
@@ -97,20 +111,18 @@ The same test must now be applied to additional existing candidates, especially:
 
 | Affected Biology Group | Candidates needing editorial ownership review | Why this is open |
 | --- | --- | --- |
-| **Біологічне дослідження → Спостереження** | Four candidates listed in the pending review above | Generic observations and biological diagnostic features may require different ownership; the editor requested a closer look, not immediate removal. |
-| **Біологічне дослідження → Біологічна класифікація** | Four existing candidates; editor tentatively favors retaining this Group | Keep the Group while auditing which underlying methods depend on biological knowledge. Do not equate tentative Group retention with approval of each Skill. |
-| **Біологічні моделі та біотехнології → Моделювання біологічних систем** | Four existing candidates; interactive-model format vs subject knowledge | Review model literacy vs biological inference at item level and revisit whether this Group is necessary. |
+| **Ознаки живого та класифікація організмів → Біологічна класифікація** | Five current Skills, including biological diagnostic traits | Keep the Group as approved; verify whether the generic categorization methods require biological knowledge in the remaining item-level audit. |
 
-**Status: open editorial audit, not approval to remove these other candidates.** Review their actual descriptions, the subject knowledge needed, and cross-subject reuse before modifying their Skill IDs, Groups or Domain structure.
+**Status: open audit of the remaining classification candidates and food-chain-versus-ecosystem skill overlap only.** Observation and Modeling Group decisions above are approved and applied.
 
 ## 4. Additional decisions to review
 
 | Decision | Methodologist proposal | Status / action |
 | --- | --- | --- |
 | Definition of a virus | Separate knowledge of the virus as a noncellular infectious agent, comparison with cellular organisms, and explanation of transmission models. These are different independently assessable competencies, although the first two share background facts. | **APPROVED (2026-10-28): keep all three Skills** in the virus Group; taxonomy already reflects this. |
-| Cross-subject scientific skills | Investigate which general scientific-inquiry, observation, classification, model and data-literacy abilities should have shared Skill IDs or belong to another textbook. **No Biology-only IDs** simply because a biology example is used. | **OPEN:** editorial ownership review. Four data/source Skills and six scientific-inquiry Skills are removed from Biology; observation/modeling/classification require individual decisions. |
+| Cross-subject scientific skills | Decide where general scientific inquiry, observation, practical instrument use, model literacy, and data literacy belong; no Biology-specific IDs merely because examples feature organisms. | **OPEN:** no automatic reassignment of removed Skills to other textbooks. |
 | Boundary: life-process breathing | Clarify **cellular respiration** vs lung ventilation; plants also respire. Revised description makes the distinction explicit. | Clarification in draft, requires factual/pedagogical review. |
-| Local taxonomy granularity | The current 128-item draft contains other candidates that may need atomicity audit: examples-based species recognition, certain classifications, and modeling across multiple systems. | **Open global review**, no claim of final approval. |
+| Local taxonomy granularity | The current 121-item draft contains other candidates that may need atomicity audit: examples-based species recognition, certain classifications, and modeling across multiple systems. | **Open global review**, no claim of final approval. |
 
 ## 5. Why the previous review failed
 
@@ -120,11 +132,11 @@ The [Create Skills Taxonomy Skill](../../../../studio/skills/create-skills-taxon
 
 ## 6. Remaining workflow / stop condition
 
-The **one-Skill classification, three-Skill virus, removal of four generic data/source Skills and removal of six inquiry/evidence Skills decisions are approved**, but the **taxonomy as a whole remains an editorial draft**. Before the **Create Skill Definitions** stage:
+The **living/dead classification, three virus Skills, removal of four data/source Skills and six inquiry/evidence Skills, plus the Observation/Modeling consolidations are approved**, but the **taxonomy as a whole remains an editorial draft**. Before the **Create Skill Definitions** stage:
 
-1. Decide the four **Observation** Skills one by one; then audit the four **Biological Classification** Skills while respecting the editor's provisional preference to retain the Group.
-2. Distinguish biological inference Skills from model-based teaching or assessment formats and generic model literacy; decide whether the **Modeling** Group remains necessary.
-3. Decide separately where generic scientific/data-literacy Skills should live across textbooks; do not create or assign IDs by assumption.
-4. Review remaining atomicity and subject coverage; reconcile actual counts if any choices change.
+1. Audit the **five Biological Classification Skills** for subject ownership, while retaining the Group.
+2. Review whether **«Прогнозувати наслідки вилучення ланки ланцюга»** requires a separate ID from the ecosystem-interdependence Skill.
+3. Decide separately where generic scientific/data/model-literacy Skills should live across textbooks; do not create IDs by assumption.
+4. Review remaining atomicity and subject coverage before approving the taxonomy.
 
 **Do not create entity definitions, UUID files, `*.data.ts`, Lessons or Questions on the basis of open decisions.**
