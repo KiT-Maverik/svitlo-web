@@ -6,9 +6,8 @@ import Select from '@mui/material/Select';
 import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
 import { useColorScheme } from '@mui/material/styles';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { Flag } from '@svitlo/ui-kit/widgets';
-import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
+import { DEFAULT_SUPPORTED_LANGUAGES, type Locale } from '@svitlo/engine/localization';
+import { Flag } from '../../../widgets/Flag/Flag';
 import { getNavbarPreferencesMessages } from './locales';
 import { aria } from './NavbarPreferences.constants';
 
@@ -18,8 +17,12 @@ const locales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale, language, nativeName 
   nativeName,
 }));
 
-function LocaleSelector() {
-  const { locale, setLocale } = useLocale();
+export type NavbarPreferencesProps = {
+  locale: Locale;
+  onLocaleChange: (locale: Locale) => void;
+};
+
+function LocaleSelector({ locale, onLocaleChange }: NavbarPreferencesProps) {
 
   return (
     <Select
@@ -39,7 +42,7 @@ function LocaleSelector() {
       }}
       onChange={event => {
         const selected = locales.find(option => option.locale === event.target.value);
-        if (selected) setLocale(selected.locale);
+        if (selected) onLocaleChange(selected.locale);
       }}
       sx={{ minWidth: 92 }}
     >
@@ -55,8 +58,7 @@ function LocaleSelector() {
   );
 }
 
-function ThemeSwitch() {
-  const { locale } = useLocale();
+function ThemeSwitch({ locale }: Pick<NavbarPreferencesProps, 'locale'>) {
   const messages = getNavbarPreferencesMessages(locale);
   const { mode, systemMode, setMode } = useColorScheme();
   const isDark = mode === 'dark' || (mode === 'system' && systemMode === 'dark');
@@ -73,11 +75,11 @@ function ThemeSwitch() {
   );
 }
 
-export default function NavbarPreferences() {
+export default function NavbarPreferences({ locale, onLocaleChange }: NavbarPreferencesProps) {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-      <LocaleSelector />
-      <ThemeSwitch />
+      <LocaleSelector locale={locale} onLocaleChange={onLocaleChange} />
+      <ThemeSwitch locale={locale} />
     </Box>
   );
 }

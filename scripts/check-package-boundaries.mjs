@@ -145,4 +145,18 @@ for (const testFile of ['DbBrowserHarness.tsx', 'db-browser-commands.ts', 'db-br
 }
 assert(existsSync(resolve(root, 'shared/indexdb/playwright.config.ts')),
   'IndexedDB must own the native browser Playwright configuration');
+for (const app of ['learningApps/math', 'learningApps/playground']) {
+  const preferences = resolve(root, app, 'src/components/layout/LearningLayout/NavbarPreferences');
+  assert(!existsSync(preferences), 'NavbarPreferences must be owned by UI Kit, not ' + app);
+  const adapter = readFileSync(resolve(root, app, 'src/components/layout/LearningLayout/LearningLayout.tsx'), 'utf8');
+  assert(adapter.includes('createLessonLearningLayout') && !adapter.includes('<SharedLearningLayout'),
+    'App layout must bind UI Kit without duplicating shared composition: ' + app);
+}
+assert(existsSync(resolve(root, 'shared/ui-kit/src/components/layout/LearningLayout/createLessonLearningLayout.tsx')),
+  'Shared LearningLayout connector missing from UI Kit');
+assert(existsSync(resolve(root, 'shared/ui-kit/src/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.tsx')),
+  'Shared NavbarPreferences missing from UI Kit');
+assert(uiKit.exports?.['./learning-layout/preferences']?.default ===
+  './dist/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.js',
+  'NavbarPreferences must have a compiled public UI Kit export');
 console.log('Package boundaries and both independent applications verified.');

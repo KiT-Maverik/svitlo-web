@@ -21,3 +21,5 @@ The app depends on the public npm exports of `@svitlo/engine` and `@svitlo/ui-ki
 Math-only taxonomy regression tests are co-located with subject data in `src/data/skillsTaxonomy/__tests__/`. Shared Assessment Method descriptors and generic builder tests belong to `@svitlo/engine`.
 
 IndexedDB storage, persisted-state controllers and Zod schemas are shared through `@svitlo/indexdb`. The canonical native IndexedDB browser E2E harness, commands and Playwright suite are owned by `shared/indexdb/testing`; app-local `src/testing/setup.ts` remains solely for component tests.
+
+Stage 6: navigation and preferences implementations, translations, and behavior tests are centralized in `@svitlo/ui-kit`. The app's minimal `createLessonLearningLayout` binding only injects Next.js hooks, lesson-progress context and locale provider; no shared layout code or localization is copied into the app.
