@@ -1,5 +1,5 @@
+import type { LanguageCode } from '../../types/languages';
 import type {
-  LanguageCode,
   TextResource_AllLanguages_Config,
   TextResource_ChosenLanguages_Config,
   TextResource_AllLocales_Config,

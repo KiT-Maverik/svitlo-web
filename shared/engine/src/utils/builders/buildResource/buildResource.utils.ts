@@ -1,4 +1,5 @@
-import type { LanguageCode, Locale, Resource, Resource_Config, TextResource, TextResource_Config } from '../../../content';
+import type { LanguageCode, Locale } from '../../../types/languages';
+import type { Resource, Resource_Config, TextResource, TextResource_Config } from '../../../content';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 
 function localized(values: Partial<Record<Locale, string>>, locale: Locale): string {

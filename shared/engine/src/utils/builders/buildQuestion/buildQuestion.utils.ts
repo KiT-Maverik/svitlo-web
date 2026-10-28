@@ -1,4 +1,5 @@
-import type { Locale, Resource, Resource_Config } from '../../../content';
+import type { Locale } from '../../../types/languages';
+import type { Resource, Resource_Config } from '../../../content';
 import type { Question, Question_Config } from '../../../types/content/question.types';
 import { buildResource, buildTextResource } from '../buildResource/buildResource.utils';
 

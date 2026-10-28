@@ -1,10 +1,10 @@
+import type { Locale } from '../../../types/languages';
 import type {
   Lesson,
   Lesson_Config,
   LessonContentCatalog,
   LessonSection,
   LessonSection_Content,
-  Locale,
   Quiz_Config,
 } from '../../../content';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
