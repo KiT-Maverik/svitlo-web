@@ -13,7 +13,7 @@ Before inspecting the taxonomy, read [SkillDomain](../docs/entities/skill-domain
 **Do not begin drafting a Curriculum until both conditions are satisfied:**
 
 1. **Editorial briefing received.** Identify the target package root, textbook/course/program and requested scope, audience, entry level, outcomes, and constraints.
-2. **Skills Taxonomy and Definitions accessible.** Inspect `<PackageRoot>/docs/skills/skills-taxonomy.md` and the actual Markdown **Definition** files for every relevant SkillDomain, SkillGroup, and Skill before assigning competencies. Taxonomy names, unverified links, Code files, and UUIDs alone are insufficient to replace a Definition.
+2. **Taxonomy available.** Read `<PackageRoot>/docs/skills/taxonomy.md` and inspect the actual Markdown **Definition** linked for every relevant SkillDomain, SkillGroup, and Skill before mapping outcomes. A name, Code link, or UUID alone does not replace a Definition.
 
 If a required input is absent or taxonomy files cannot be inspected, **stop Curriculum generation**, describe what is missing, and request the smallest necessary briefing or access. Do not infer the audience, invent a textbook scope, or manufacture Skills to keep writing. Existing Curriculum or Lesson files can inform the briefing but cannot substitute for the Skills Taxonomy.
 
@@ -23,15 +23,14 @@ If a required input is absent or taxonomy files cannot be inspected, **stop Curr
 - **Learning resource:** title or working title of the textbook/course/learning program, discipline or interdisciplinary theme, and requested scope (whole resource, level, module, or lesson).
 - **Audience:** learner category and approximate age or professional stage when relevant; prior knowledge, literacy and language proficiency; learning context and meaningful accessibility needs. School grades are optional, not universal.
 - **Intent:** desired educational outcomes, depth, boundaries, mandatory source materials, and whether alignment with a specified local standard or accreditation is required.
-- **Taxonomy:** the canonical inventory and corresponding Markdown Definitions at `<PackageRoot>/docs/skills/`, accessible for inspection. A Code link is optional and does not substitute for a missing Definition. If required Definitions are unavailable, stop and report the missing prerequisite rather than guessing another directory.
+- **Taxonomy:** the canonical `<PackageRoot>/docs/skills/taxonomy.md`, plus the relevant Definition documents linked from it. Code links are optional for editorial planning. If this file or required Definitions are inaccessible, stop rather than guessing their location.
 
 Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. If a target-language preference is supplied, write the generated educational material in that language even though this instruction and its template are in English.
 
 ## SOURCE OF TRUTH: SKILLS TAXONOMY
 
-- The canonical taxonomy for the target package lives in `<PackageRoot>/docs/skills/`, alongside `<PackageRoot>/docs/curriculums/`. The folder is named **`skills`**, not `skillsTaxonomy`. Do not assume the monorepo root or another package owns these definitions.
-- Read the **SkillDomain → SkillGroup → Skill** hierarchy, following their canonical [entity definitions](../docs/entities/skill.md), and inspect each referenced Markdown **Definition**. Use the real Definition file as the editorial source of competency meaning, not the implementation's UUID or file path.
-- Every taxonomy entry has **two independent fields**: `Definition` (Markdown) and `Code` (a verified runtime file, if any). **Never replace one with the other.** Use verified Definition links when mapping outcomes; preserve separate Code links for traceability when needed. Lack of Code does not prevent curriculum authoring if the approved Definition exists.
+- **Canonical inventory:** `<PackageRoot>/docs/skills/taxonomy.md`, as defined by [Create Skills Taxonomy Skill](./create-skills-taxonomy.skill.md). Read this exact file from the selected package, then follow the `Definition` links for the relevant Domains, Groups, and Skills. Do not infer an alternative path or use Code as a substitute for an editorial Definition.
+- Every taxonomy entry has separate `Definition` and `Code` links. Curriculum decisions must use approved Markdown Definitions; missing Code does not block editorial planning. Preserve traceability without copying technical IDs or treating Code as the semantic source.
 - **Check every referenced file exists** and refers to the intended entity. Resolve Markdown links relative to the *generated Curriculum or brief file*, **never** relative to this instruction file.
 - A Definition file establishes an inspectable editorial artifact, **not necessarily editorial approval, runtime registration, or learner mastery**. Respect its Draft/Approved status when applicable; unresolved Drafts are editorial blockers for final competency mapping.
 - Prefer a **specific Skill** as a learning target. Link to a SkillGroup or SkillDomain only for genuinely broad context or prerequisites, and make the intended breadth explicit.
@@ -43,7 +42,7 @@ Clarify optional constraints when they matter: language(s) of output, locale/cul
 
 ### Stage 1 — Curriculum design
 
-1. **Read the brief and inspect the taxonomy.** Confirm audience, resource scope, intended outcomes, constraints, prior learning, and available subject references. Verify the relevant Skill definitions.
+1. **Read the brief and canonical taxonomy.** Open `<PackageRoot>/docs/skills/taxonomy.md`, follow the relevant Definition links, and confirm audience, scope, outcomes, prior learning, and subject references.
 2. **Define observable outcomes.** State what learners should be able to do, distinguish essential competencies from optional enrichment, and adjust depth to the audience. Do not confuse topic coverage with demonstrated capability.
 3. **Build the learning progression.** Sequence modules and lessons according to conceptual dependencies, cognitive load, worked examples, transfer, retrieval, and increasing independence. Do not mirror the taxonomy tree mechanically; do not force one Skill per lesson.
 4. **Map outcomes to the canonical Skills.** Cite existing files with working relative Markdown links. Specify meaningful prerequisites, including plain-language knowledge or existing Skill/SkillGroup/SkillDomain references. Note missing coverage separately.
@@ -57,7 +56,7 @@ Clarify optional constraints when they matter: language(s) of output, locale/cul
 
 A Curriculum is ready for editorial review only when:
 
-- The source briefing and Skills Taxonomy are available and actually used.
+- The briefing and canonical `<PackageRoot>/docs/skills/taxonomy.md` are actually read, along with relevant approved Definition documents.
 - The plan covers requested outcomes without invented or unverifiable competencies.
 - Every Skill reference has a real, correctly resolved **Definition** link, with the entity's actual name; Code is shown separately if referenced and may remain `[Not implemented](#)`.
 - The order is pedagogically defensible, and required prior learning is available or explicitly identified as a gap.
@@ -79,6 +78,8 @@ Use the following template **as written**, replacing placeholders with content a
 Date: %CURRENT_DATE%
 
 %Program description in a form of a detailed reasonably long text.%
+
+Skills Taxonomy: [Skills Taxonomy](../../skills/taxonomy.md)
 
 ## TARGET AUDIENCE
 
@@ -149,4 +150,4 @@ Create or update one Curriculum document at:
 
 - Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Keep `docs/curriculums/` literal and derive the Curriculum name in **camelCase** once for both directory and filename.
 - Fill the file using the embedded **CURRICULUM TEMPLATE**. Review existing content before updating it; do not create a substitute `README.md` or automatically generate module, lesson, or assessment files.
-- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculums/<name>/`, local taxonomy links begin `../../skills/`. For absent module/lesson Definitions or Code, use `[Not implemented](#)` **independently**. Required Skill Definitions must exist and be checked; Code may be absent.
+- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculums/<name>/`, the canonical taxonomy is exactly `../../skills/taxonomy.md` (the template includes this direct link). For absent module/lesson Definitions or Code, use `[Not implemented](#)` independently. Required Skill Definitions must exist and be checked; Code may be absent.
