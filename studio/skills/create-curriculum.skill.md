@@ -132,9 +132,10 @@ Create or update one Curriculum document at:
 
 ```text
 <TextbookRoot>/
-└── curriculums/
-    └── %CURRICULUM_NAME in camelCase%/
-        └── %CURRICULUM_NAME in camelCase%.curriculum.md
+└── docs/
+    └── curriculums/
+        └── %CURRICULUM_NAME in camelCase%/
+            └── %CURRICULUM_NAME in camelCase%.curriculum.md
 ```
 
 - Use the textbook root from the editorial briefing. Derive the Curriculum name in **camelCase** once and reuse it for both the folder and filename; keep `curriculums/` literal.
