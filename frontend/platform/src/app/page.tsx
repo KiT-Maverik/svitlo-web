@@ -31,7 +31,7 @@ export default function Home() {
             {apps.map(app => (
               <Card variant="outlined" component="article" key={app.id}>
                 <CardContent>
-                  <Stack direction="row" alignItems="center" justifyContent="space-between" gap={2}>
+                  <Stack direction="row" sx={{ alignItems: 'center', justifyContent: 'space-between', gap: 2 }}>
                     <Typography variant="h6" component="h3">{app.name}</Typography>
                     <Chip size="small" label={app.url ? 'Доступний' : 'Готується'} />
                   </Stack>
