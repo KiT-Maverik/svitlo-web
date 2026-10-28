@@ -71,7 +71,9 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "assets/flags",
+    "scripts/sync-flags.mjs"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json && node scripts/copy-assets.mjs",
