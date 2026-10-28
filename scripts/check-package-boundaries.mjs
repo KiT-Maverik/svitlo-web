@@ -73,14 +73,14 @@ if (existsSync(appSourceRoot)) {
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src']
+const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src', 'learningApps/biology/src']
   .map(path => resolve(root, path));
 for (const applicationRoot of applicationSourceRoots) {
   for (const file of walk(applicationRoot).filter(path => /\.(ts|tsx)$/.test(path))) {
     const code = readFileSync(file, 'utf8');
     for (const match of code.matchAll(/\bfrom\s*['"]([^'"]+)['"]/g)) {
       const specifier = match[1];
-      assert(!/^@svitlo\/(?:playground|math)(?:\/|$)/.test(specifier),
+      assert(!/^@svitlo\/(?:playground|math|biology)(?:\/|$)/.test(specifier),
         'Applications must not import another application by package name: ' + relative(root, file));
       if (!specifier.startsWith('.')) continue;
       const target = resolve(dirname(file), specifier);

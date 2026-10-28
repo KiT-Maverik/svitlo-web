@@ -8,6 +8,7 @@ const builtins = new Set(builtinModules.map(name => name.replace(/^node:/, '')))
 const workspaces = [
   ['shared/engine', readJson('shared/engine/package.json')],
   ['shared/ui-kit', readJson('shared/ui-kit/package.json')],
+  ['learningApps/biology', readJson('learningApps/biology/package.json')],
   ['learningApps/playground', readJson('learningApps/playground/package.json')],
   ['learningApps/math', readJson('learningApps/math/package.json')],
 ];
@@ -121,7 +122,7 @@ assert(!/\b(?:apps|learningApps)\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/(?:apps|lear
   'UI Kit Storybook must not read application or monorepo source paths');
 assert(readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
   'UI Kit must own the Storybook build command');
-for (const application of ['learningApps/playground', 'learningApps/math']) {
+for (const application of ['learningApps/playground', 'learningApps/math', 'learningApps/biology']) {
   assert(!existsSync(resolve(root, application, '.storybook')),
     'Application Storybook must not depend on shared source trees: ' + application);
   const appManifest = readJson(application + '/package.json');

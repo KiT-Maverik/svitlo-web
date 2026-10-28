@@ -1,0 +1,31 @@
+name: Biology scaffold quality
+on:
+  pull_request:
+    paths:
+      - 'learningApps/biology/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/biology.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'learningApps/biology/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/biology.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck --workspace @svitlo/biology
+      - run: npm run lint --workspace @svitlo/biology
+      - run: npm run build --workspace @svitlo/biology

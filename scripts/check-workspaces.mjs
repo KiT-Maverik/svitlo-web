@@ -9,6 +9,10 @@ const expected = [
     "name": "@svitlo/server"
   },
   {
+    "path": "learningApps/biology",
+    "name": "@svitlo/biology"
+  },
+  {
     "path": "learningApps/math",
     "name": "@svitlo/math"
   },
