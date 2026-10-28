@@ -9,10 +9,11 @@ Date: %CURRENT_DATE%
 Ages: %AGE_RANGE%
 %Audience description in a form of a detailed reasonably long text.%
 
-## PREREQUISITES%
+## PREREQUISITES
+
 > Agent Note:
 > Allowed types of records:
-> - %PLAIN_TEXT%
+> - Plain text: %TEXT_PREREQUISITE%
 > - Skill: [%SKILL_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
 > - SkillGroup: [%SKILL_GROUP_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/%GROUP%.data.ts)
 > - SkillDomain: [%SKILL_DOMAIN_NAME%](../skillsTaxonomy/%DOMAIN%/%DOMAIN%.data.ts)
@@ -20,6 +21,7 @@ Ages: %AGE_RANGE%
 > Choose only applicable record types and mix them when needed.
 > Use actual entity names and existing file paths.
 > Do not duplicate IDs or UUIDs.
+> A SkillGroup or SkillDomain prerequisite means general familiarity, not mastery of every nested Skill.
 
 - %ITEM_1%
 - ...
