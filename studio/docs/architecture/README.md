@@ -19,6 +19,13 @@
 | [Lesson Notes](./lesson-notes.md) | Planned concise recall notes revealed during a lesson and assembled into a learner's revision sheet |
 | [System Boundaries & Roadmap](./system-boundaries.md) | Lesson vs Program, progress vs assessment, injection/events, IDs and planned registries/sync |
 | [Coding Agent Specializations](./coding-agent-specializations.md) | Existing specialized Skills (including Remotion) and prioritized future ones; specialist subskills supplement one Coding Agent Persona |
+| [Monorepo & Standalone Textbook Architecture](./monorepo-and-textbook.md) | Live `apps/` / `backend/` / `shared/` / `studio/` / `scripts/` layout, independently owned packages, exports, TypeScript aliases and standard Next.js textbook form |
+
+## Reviewer constitutions
+
+- [Development Constitution](../development-constitution.md) — reserved for future development rules; **currently intentionally empty** beyond its title.
+- [Quality Constitution](../quality-constitution.md) — reserved for future quality/testing rules; **currently intentionally empty** beyond its title.
+- [Development Reviewer](../../personas/development-reviewer.persona.md) evaluates code and PRs against written architecture/Development Constitution; [Quality Assurance Reviewer](../../personas/quality-assurance-reviewer.persona.md) evaluates test effectiveness and quality evidence. **No unwritten constitutional rules may be inferred** from an empty placeholder.
 
 ## Document precedence
 
