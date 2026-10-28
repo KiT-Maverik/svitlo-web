@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { equalities_Skills_Ids } from './index.ids';
+
+export const completeEquality_Skill_Data = buildSkillConfig({
+  id: equalities_Skills_Ids.completeEquality,
+  name: {
+    en: "Completing a true equality",
+    "lt": "Teisingos lygybės užpildymas",
+    "lv": "Patiesas vienādības papildināšana",
+    "et": "Tõese võrduse täiendamine",
+    "be": "Дапаўненьне праўдзівай роўнасьці",
+    "ka": "სწორი ტოლობის შევსება",
+    "kk": "Дұрыс теңдікті толықтыру",
+    zh: "填数使等式成立",
+    hi: "समानता सही बनाने के लिए संख्या भरना",
+    es: "Completar una igualdad verdadera",
+    ar: "إكمال مساواة صحيحة",
+    fr: "Compléter une égalité vraie",
+    bn: "সমতা সত্য করতে শূন্যস্থান পূরণ",
+    pt: "Completar uma igualdade verdadeira",
+    ur: "درست مساوات مکمل کرنا",
+    id: "Melengkapi kesamaan yang benar",
+    de: "Eine wahre Gleichheit vervollständigen",
+    ja: "等式が成り立つように数を入れる",
+    ko: "참인 등식 완성하기",
+    tr: "Doğru bir eşitliği tamamlama",
+    vi: "Điền số để đẳng thức đúng",
+    ta: "சரியான சமன்பாட்டை நிறைவு செய்தல்",
+    te: "సరైన సమానతను పూర్తి చేయడం",
+    mr: "बरोबर समानता पूर्ण करणे",
+    ms: "Melengkapkan kesamaan yang benar",
+    he: "השלמת שוויון נכון",
+    pl: "Uzupełnianie prawdziwej równości",
+    uk: "Доповнення рівності до істинної",
+  },
+});

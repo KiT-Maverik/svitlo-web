@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { experiments_Skills_Ids } from './index.ids';
+
+export const experimentVariation_Skill_Data = buildSkillConfig({
+  id: experiments_Skills_Ids.experimentVariation,
+  name: {
+    en: "Comparing results of repeated random experiments",
+    "lt": "Kartojamų atsitiktinių bandymų rezultatų palyginimas",
+    "lv": "Atkārtotu nejaušu eksperimentu rezultātu salīdzināšana",
+    "et": "Korduvate juhukatsete tulemuste võrdlemine",
+    "be": "Параўнаньне вынікаў паўторных выпадковых досьледаў",
+    "ka": "განმეორებითი შემთხვევითი ექსპერიმენტების შედეგების შედარება",
+    "kk": "Қайталанған кездейсоқ тәжірибелердің нәтижелерін салыстыру",
+    zh: "比较重复随机试验的结果",
+    hi: "दोहराए गए यादृच्छिक प्रयोगों के परिणामों की तुलना करना",
+    es: "Comparar los resultados de experimentos aleatorios repetidos",
+    ar: "مقارنة نتائج التجارب العشوائية المتكررة",
+    fr: "Comparer les résultats d'expériences aléatoires répétées",
+    bn: "পুনরাবৃত্ত দৈব পরীক্ষার ফলাফল তুলনা করা",
+    pt: "Comparar resultados de experimentos aleatórios repetidos",
+    ur: "بار بار کیے گئے اتفاقی تجربات کے نتائج کا موازنہ کرنا",
+    id: "Membandingkan hasil percobaan acak yang diulang",
+    de: "Ergebnisse wiederholter Zufallsexperimente vergleichen",
+    ja: "繰り返した確率実験の結果を比較する",
+    ko: "반복한 무작위 실험의 결과 비교하기",
+    tr: "Tekrarlanan rastgele deneylerin sonuçlarını karşılaştırma",
+    vi: "So sánh kết quả của các thí nghiệm ngẫu nhiên lặp lại",
+    ta: "மீண்டும் செய்யப்படும் சீரற்ற சோதனைகளின் முடிவுகளை ஒப்பிடுதல்",
+    te: "పునరావృత యాదృచ్ఛిక ప్రయోగాల ఫలితాలను పోల్చడం",
+    mr: "पुन्हा केलेल्या यादृच्छिक प्रयोगांच्या निष्कर्षांची तुलना करणे",
+    ms: "Membandingkan hasil eksperimen rawak berulang",
+    he: "השוואת תוצאות של ניסויים אקראיים חוזרים",
+    pl: "Porównywanie wyników powtarzanych doświadczeń losowych",
+    uk: "Порівняння результатів повторних випадкових експериментів",
+  },
+});

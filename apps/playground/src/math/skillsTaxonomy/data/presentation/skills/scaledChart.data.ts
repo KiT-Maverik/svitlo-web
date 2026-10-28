@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { presentation_Skills_Ids } from './index.ids';
+
+export const scaledChart_Skill_Data = buildSkillConfig({
+  id: presentation_Skills_Ids.scaledChart,
+  name: {
+    en: "Reading a scaled chart",
+    "lt": "Diagramos su masteliu skaitymas",
+    "lv": "Diagrammas ar mērogu lasīšana",
+    "et": "Skaalaga diagrammi lugemine",
+    "be": "Чытаньне дыяграмы з маштабам",
+    "ka": "მასშტაბიანი დიაგრამის წაკითხვა",
+    "kk": "Масштабталған диаграмманы оқу",
+    zh: "读取带刻度的统计图",
+    hi: "मापनी वाला आलेख पढ़ना",
+    es: "Leer un gráfico con escala",
+    ar: "قراءة مخطط ذي مقياس",
+    fr: "Lire un diagramme avec une échelle",
+    bn: "স্কেলযুক্ত চিত্র পড়া",
+    pt: "Ler um gráfico com escala",
+    ur: "پیمانے والا گراف پڑھنا",
+    id: "Membaca diagram berskala",
+    de: "Ein skaliertes Diagramm lesen",
+    ja: "目盛り付きグラフを読む",
+    ko: "눈금이 있는 그래프 읽기",
+    tr: "Ölçekli grafik okuma",
+    vi: "Đọc biểu đồ có tỉ lệ",
+    ta: "அளவீடு கொண்ட வரைபடத்தைப் படித்தல்",
+    te: "స్కేలు గల రేఖాచిత్రాన్ని చదవడం",
+    mr: "प्रमाणित आलेख वाचणे",
+    ms: "Membaca carta berskala",
+    he: "קריאת תרשים בקנה מידה",
+    pl: "Odczytywanie wykresu ze skalą",
+    uk: "Читання діаграми з масштабом",
+  },
+});

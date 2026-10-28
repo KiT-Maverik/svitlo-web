@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { cardinality_Skills_Ids } from './index.ids';
+
+export const groupAndCount_Skill_Data = buildSkillConfig({
+  id: cardinality_Skills_Ids.groupAndCount,
+  name: {
+    en: "Counting objects in groups of tens or hundreds",
+    "lt": "Daiktų skaičiavimas dešimtimis ar šimtais",
+    "lv": "Priekšmetu skaitīšana desmitu vai simtu grupās",
+    "et": "Esemete loendamine kümneste või sadade kaupa",
+    "be": "Падлік прадметаў дзясяткамі ці сотнямі",
+    "ka": "საგნების დათვლა ათეულებად ან ასეულებად",
+    "kk": "Заттарды ондықтармен немесе жүздіктермен санау",
+    zh: "按十个或一百个分组计数",
+    hi: "दहाइयों या सैकड़ों में समूह बनाकर गिनना",
+    es: "Contar objetos agrupándolos en decenas o centenas",
+    ar: "عد الأشياء في مجموعات من عشرات أو مئات",
+    fr: "Compter des objets par groupes de dizaines ou de centaines",
+    bn: "দশক বা শতকের দলে সাজিয়ে বস্তু গণনা",
+    pt: "Contar objetos agrupados em dezenas ou centenas",
+    ur: "دسیوں یا سینکڑوں کے گروہوں میں اشیا کی گنتی",
+    id: "Menghitung benda dalam kelompok puluhan atau ratusan",
+    de: "Gegenstände in Zehner- oder Hundertergruppen zählen",
+    ja: "10個や100個ずつまとめて数える",
+    ko: "물건을 10개 또는 100개씩 묶어 세기",
+    tr: "Nesneleri onluk veya yüzlük gruplarla sayma",
+    vi: "Đếm đồ vật theo nhóm chục hoặc trăm",
+    ta: "பத்துகள் அல்லது நூறுகள் கொண்ட குழுக்களாக எண்ணுதல்",
+    te: "పదులు లేదా వందల సమూహాలుగా వస్తువులను లెక్కించడం",
+    mr: "वस्तूंचे दहाच्या किंवा शंभराच्या गटांनी मोजणे",
+    ms: "Membilang objek dalam kumpulan puluh atau ratus",
+    he: "ספירת פריטים בקבוצות של עשרות או מאות",
+    pl: "Liczenie przedmiotów w grupach po dziesięć lub sto",
+    uk: "Лічба предметів групами по десятках або сотнях",
+  },
+});

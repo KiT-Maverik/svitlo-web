@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { solids_Skills_Ids } from './index.ids';
+
+export const identify3dSolids_Skill_Data = buildSkillConfig({
+  id: solids_Skills_Ids.identify3dSolids,
+  name: {
+    en: "Identifying basic solid figures",
+    "lt": "Pagrindinių erdvinių figūrų atpažinimas",
+    "lv": "Pamata telpisku figūru atpazīšana",
+    "et": "Põhiliste ruumiliste kehade äratundmine",
+    "be": "Распазнаваньне асноўных аб'ёмных фігураў",
+    "ka": "ძირითადი სივრცული ფიგურების ამოცნობა",
+    "kk": "Негізгі кеңістіктік фигураларды тану",
+    zh: "识别基本立体图形",
+    hi: "मूल ठोस आकृतियों की पहचान",
+    es: "Identificar cuerpos geométricos básicos",
+    ar: "تمييز المجسمات الأساسية",
+    fr: "Reconnaître les solides usuels",
+    bn: "মৌলিক ঘনবস্তু চেনা",
+    pt: "Identificar sólidos geométricos básicos",
+    ur: "بنیادی ٹھوس اشکال کی شناخت",
+    id: "Mengenali bangun ruang dasar",
+    de: "Grundlegende geometrische Körper erkennen",
+    ja: "基本的な立体図形を見分ける",
+    ko: "기본 입체도형 알아보기",
+    tr: "Temel geometrik cisimleri tanıma",
+    vi: "Nhận biết các hình khối cơ bản",
+    ta: "அடிப்படைத் திண்ம வடிவங்களை அடையாளம் காணுதல்",
+    te: "ప్రాథమిక ఘనాకృతులను గుర్తించడం",
+    mr: "मूलभूत घन आकृत्या ओळखणे",
+    ms: "Mengenal pasti bentuk tiga dimensi asas",
+    he: "זיהוי גופים גאומטריים בסיסיים",
+    pl: "Rozpoznawanie podstawowych brył",
+    uk: "Розпізнавання основних просторових тіл",
+  },
+});

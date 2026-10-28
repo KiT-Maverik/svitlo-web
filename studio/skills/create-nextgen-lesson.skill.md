@@ -13,7 +13,7 @@ The Lesson must **teach, illustrate, invite prediction and meaningful action, ex
 1. **Methodologist's approved input:** the actual approved lesson-level Learning Brief or equivalent substantive Methodologist document, with target learning outcomes, factual subject content / authoritative references, target audience, known prerequisites, relevant Skill references, scope and restrictions. A Curriculum title, an unapproved outline or a vague user topic does not substitute for this input. If missing, **stop authoring and request the approved material**; do not create Methodologist output on the Screenwriter's behalf.
 2. **Target package and context:** identify the **specific standalone textbook application package root** (`<PackageRoot>`), intended Lesson, language of the deliverable and reader profile. Do not treat the monorepo root or playground as the target by default.
 3. **Read relevant architecture:** [Roles Proposition](../Roles%20Proposition.md), [Long Chat Overture](../Long%20Chat%20Overture.md), current code contracts/renderers below, applicable `AGENTS.md` and any relevant local instructions. Treat historical concepts as design intent, not automatically implemented APIs.
-4. **Inspect existing lesson content:** read any applicable existing Lesson, Section, Question, Scene, content-resource and accessibility/localization patterns in the selected app, plus useful reference demonstrations in `frontend/playground`. Verify the *present* implementation before authoring platform-specific specifications.
+4. **Inspect existing lesson content:** read any applicable existing Lesson, Section, Question, Scene, content-resource and accessibility/localization patterns in the selected app, plus useful reference demonstrations in `apps/playground`. Verify the *present* implementation before authoring platform-specific specifications.
 5. **Editorial integrity:** where the Methodologist input conflicts with reliable facts, is ambiguous, or presupposes nonexistent assessment behavior, **report the exact blocker and proposed clarification**. Do not silently change competencies, learning goals or scoring rules.
 
 ## 1. CORE ARCHITECTURE: LESSON / SECTION / RESOURCE / PROGRAM
@@ -37,12 +37,12 @@ The following are **direct links to the current repository's source of truth**. 
 | [Typed content resource contracts](../../shared/engine/src/types/content/resource.types.ts) | `Resource_Type`, `Resource_Config` discriminated union, block-specific fields and `SceneResource_Config` |
 | [Quiz contracts](../../shared/engine/src/types/content/quiz.types.ts) | `Quiz_Config`, intro/results settings, progress/answer state and what belongs to assessment |
 | [Question contracts](../../shared/engine/src/types/content/question.types.ts) | `QuestionType`, Question content, flashcard association, accessibility restrictions; **declared types are not proof of implemented lesson widgets** |
-| [Actual Lesson Section renderer](../../frontend/playground/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) | Which `blockType` values can actually render in a generic Section **today** |
-| [Actual Lesson assembly](../../frontend/playground/src/components/pages/Lesson/Lesson.tsx) | Current `Lesson` composition, providers and navigation assumptions |
-| [Lesson → Question widget adapter](../../frontend/playground/src/components/pages/Lesson/adapters/toQuestionWidgets.ts) | Which Question kind this Lesson UI currently renders |
-| [Live lesson example](../../frontend/playground/src/content/howLightMoves/howLightMoves.data.ts) | Actual ordering and Lesson-level `sceneLocales` wiring |
-| [Theory Section](../../frontend/playground/src/content/howLightMoves/sections/theory/theory.data.ts) and [Practice Section](../../frontend/playground/src/content/howLightMoves/sections/practice/practice.data.ts) | Mixed ordered resources and interactive scenes |
-| [Example Quiz Section](../../frontend/playground/src/content/howLightMoves/sections/quiz/quiz.data.ts) | Distinct Quiz structure and current question integration |
+| [Actual Lesson Section renderer](../../apps/playground/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) | Which `blockType` values can actually render in a generic Section **today** |
+| [Actual Lesson assembly](../../apps/playground/src/components/pages/Lesson/Lesson.tsx) | Current `Lesson` composition, providers and navigation assumptions |
+| [Lesson → Question widget adapter](../../apps/playground/src/components/pages/Lesson/adapters/toQuestionWidgets.ts) | Which Question kind this Lesson UI currently renders |
+| [Live lesson example](../../apps/playground/src/content/howLightMoves/howLightMoves.data.ts) | Actual ordering and Lesson-level `sceneLocales` wiring |
+| [Theory Section](../../apps/playground/src/content/howLightMoves/sections/theory/theory.data.ts) and [Practice Section](../../apps/playground/src/content/howLightMoves/sections/practice/practice.data.ts) | Mixed ordered resources and interactive scenes |
+| [Example Quiz Section](../../apps/playground/src/content/howLightMoves/sections/quiz/quiz.data.ts) | Distinct Quiz structure and current question integration |
 | [Scene Designer workflow](./design-scene.skill.md) | Separate handoff contract for fully specified, prop-free, localized and LTR/RTL-aware custom Scenes |
 
 ### Current resource and rendering capability map — VERIFY AGAINST CODE

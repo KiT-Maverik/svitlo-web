@@ -208,7 +208,7 @@ User / Editor: тема, цілі, обмеження, домен
 
 - [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — семантика сутностей; [Create Skills Taxonomy](./skills/create-skills-taxonomy.skill.md) — методичний процес; [Implement Skill Code](./skills/implement-skill-code.skill.md) — static UUID, локалізація, builders та dependency boundaries.
 - [Long Chat Overture](./Long%20Chat%20Overture.md) — контекст інших архітектурних домовленостей (Lesson/Program, events, injections, генератори, offline).
-- [Mathematics Skills Inventory](../frontend/playground/src/math/skills-inventory.md) — змістовний каталог і фактичний статус `Implemented`.
+- [Mathematics Skills Inventory](../apps/playground/src/math/skills-inventory.md) — змістовний каталог і фактичний статус `Implemented`.
 - [Lesson types](../shared/engine/src/types/content/lesson.types.ts) і [Question types](../shared/engine/src/types/content/question.types.ts) — **чинні** кодові контракти.
 - [AGENTS.md](../AGENTS.md) — інструкції агента, обов'язкові під час реалізації.
 

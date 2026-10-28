@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { comparison_Skills_Ids } from './index.ids';
+
+export const moreLessEqual_Skill_Data = buildSkillConfig({
+  id: comparison_Skills_Ids.moreLessEqual,
+  name: {
+    "lt": "Daugiau, mažiau arba lygu",
+    "lv": "Vairāk, mazāk vai vienādi daudzumi",
+    "et": "Suurem, väiksem või võrdne kogus",
+    "be": "Больш, менш або роўна для колькасьцяў",
+    "ka": "მეტი, ნაკლები ან ტოლი რაოდენობები",
+    "kk": "Көп, аз немесе тең мөлшерлер",
+    en: "Greater, less or equal quantities",
+    zh: "比较数量的多、少和相等",
+    hi: "मात्राओं में अधिक, कम या बराबर",
+    es: "Cantidades mayores, menores o iguales",
+    ar: "مقارنة الكميات: أكبر وأصغر ومساوٍ",
+    fr: "Quantités supérieures, inférieures ou égales",
+    bn: "বেশি, কম বা সমান পরিমাণ",
+    pt: "Quantidades maiores, menores ou iguais",
+    ur: "زیادہ، کم یا برابر مقداریں",
+    id: "Jumlah lebih banyak, lebih sedikit, atau sama",
+    de: "Größere, kleinere oder gleiche Mengen",
+    ja: "数量の大小と等しさ",
+    ko: "수량의 많음·적음·같음",
+    tr: "Daha fazla, daha az veya eşit miktarlar",
+    vi: "Số lượng nhiều hơn, ít hơn hoặc bằng nhau",
+    ta: "அதிகம், குறைவு அல்லது சமமான அளவுகள்",
+    te: "ఎక్కువ, తక్కువ లేదా సమాన పరిమాణాలు",
+    mr: "जास्त, कमी किंवा समान प्रमाण",
+    ms: "Kuantiti lebih, kurang atau sama",
+    he: "כמויות גדולות, קטנות או שוות",
+    pl: "Większe, mniejsze lub równe ilości",
+    uk: "Більше, менше або дорівнює для кількостей",
+  },
+});

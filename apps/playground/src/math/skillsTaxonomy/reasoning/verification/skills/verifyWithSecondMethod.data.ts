@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { verification_Skills_Ids } from './index.ids';
+
+export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
+  id: verification_Skills_Ids.verifyWithSecondMethod,
+  name: {
+    en: "Verifying a calculation using another method",
+    "lt": "Skaičiavimo tikrinimas kitu būdu",
+    "lv": "Aprēķina pārbaude ar citu metodi",
+    "et": "Arvutuse kontrollimine teise meetodiga",
+    "be": "Праверка вылічэньня іншым спосабам",
+    "ka": "გამოთვლის სხვა მეთოდით შემოწმება",
+    "kk": "Есептеуді басқа әдіспен тексеру",
+    zh: "用另一种方法验证计算",
+    hi: "दूसरी विधि से गणना की जाँच करना",
+    es: "Verificar un cálculo con otro método",
+    ar: "التحقق من الحساب باستخدام طريقة أخرى",
+    fr: "Vérifier un calcul par une autre méthode",
+    bn: "অন্য পদ্ধতিতে গণনা যাচাই করা",
+    pt: "Verificar um cálculo por outro método",
+    ur: "دوسرے طریقے سے حساب کی تصدیق کرنا",
+    id: "Memeriksa perhitungan dengan metode lain",
+    de: "Eine Rechnung mit einem anderen Verfahren überprüfen",
+    ja: "別の方法で計算を確かめる",
+    ko: "다른 방법으로 계산 확인하기",
+    tr: "Hesaplamayı başka bir yöntemle doğrulama",
+    vi: "Kiểm tra phép tính bằng cách khác",
+    ta: "மற்றொரு முறையில் கணக்கீட்டைச் சரிபார்த்தல்",
+    te: "మరో పద్ధతితో గణనను తనిఖీ చేయడం",
+    mr: "इतर पद्धतीने गणना पडताळणे",
+    ms: "Mengesahkan pengiraan dengan kaedah lain",
+    he: "אימות חישוב בשיטה אחרת",
+    pl: "Sprawdzanie obliczeń inną metodą",
+    uk: "Перевірка обчислення іншим способом",
+  },
+});

@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { multiply_Skills_Ids } from './index.ids';
+
+export const deriveFacts_Skill_Data = buildSkillConfig({
+  id: multiply_Skills_Ids.deriveFacts,
+  name: {
+    "lt": "Daugyba — sandaugų išvedimas",
+    "lv": "Reizināšana — reizināšanas faktu atvasināšana",
+    "et": "Korrutamine — korrutustabeli tulemuste tuletamine",
+    "be": "Множаньне — вывядзеньне здабыткаў",
+    "ka": "გამრავლება — ნამრავლების გამოყვანა",
+    "kk": "Көбейту — көбейту нәтижелерін шығару",
+    en: "Multiplication — Deriving multiplication Number facts",
+    zh: "乘法 — 推导乘法算式",
+    hi: "गुणा — गुणन तथ्य निकालना",
+    es: "Multiplicación — Deducción de productos",
+    ar: "الضرب — استنتاج حقائق الضرب",
+    fr: "Multiplication — Déduction des produits",
+    bn: "গুণ — গুণফল নির্ণয়",
+    pt: "Multiplicação — Dedução de produtos",
+    ur: "ضرب — ضرب کے حقائق اخذ کرنا",
+    id: "Perkalian — Menurunkan fakta perkalian",
+    de: "Multiplikation — Einmaleins ableiten",
+    ja: "乗法 — 九九の導出",
+    ko: "곱셈 — 곱셈구구 유도",
+    tr: "Çarpma — Çarpım bulgularını türetme",
+    vi: "Phép nhân — Suy ra bảng nhân",
+    ta: "பெருக்கல் — பெருக்கல் உண்மைகளை கண்டறிதல்",
+    te: "గుణకారం — గుణకార లెక్కలు ఉత్పన్నం చేయడం",
+    mr: "गुणाकार — गुणाकार तथ्ये शोधणे",
+    ms: "Pendaraban — Menerbitkan fakta darab",
+    he: "כפל — גזירת עובדות כפל",
+    pl: "Mnożenie — Wyprowadzanie iloczynów",
+    uk: "Множення — Виведення добутків",
+  },
+});

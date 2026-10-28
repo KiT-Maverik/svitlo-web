@@ -51,7 +51,7 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 
 - Built and typed npm package `@svitlo/engine` now owns localization definitions, localized-path generation, and Skill/SkillGroup/SkillDomain authoring validations.
 - `@svitlo/playground` consumes the compiled package via a real npm dependency and public `exports`.
-- Legacy files under Playground contain compatibility re-exports, not duplicate implementations. They are removed after downstream import migration, separately from behavior changes.
+- Historic intermediate re-exports were removed during the subsequent direct-import migration; consumers now use Engine public entrypoints.
 - No app imports from `shared/engine/src/`. No engine imports from Playground, React, or Next.js.
 - Builders for lessons/resources/questions, text resources, dynamic question and assessment method configs remain in Playground until their contract dependencies are made portable. No React hooks or UI-only utilities were found in this first batch; `ui-kit` is untouched.
 - Registry extraction remains an explicit later phase; `private: true` intentionally prevents accidental publication.
@@ -59,7 +59,27 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 ## Phase 04 — Shared content contracts (complete)
 
 - Engine is the canonical owner of content contracts for Resource, Lesson, Question, Quiz, Assessment Method, Disability and shared collection utilities.
-- The stable set of 16 Assessment Method UUIDs now belongs to Engine, not a mathematics-specific path. The original path re-exports the registry for compatibility.
-- Playground's previous content-contract files re-export **types only**, preserving old imports without duplicating declarations.
+- The stable set of 16 Assessment Method UUIDs belongs to Engine, not a mathematics-specific path. No compatibility registry is retained.
+- Playground's previous content-contract wrappers have been removed. Callers import canonical contracts directly from Engine.
 - The Engine remains free of React and Next.js; scene `component` and lesson section `icon` are extensible, renderer-specific values typed as `unknown` by default. Frontend renderers supply/narrow their UI representation.
 - Public package API: `@svitlo/engine/content`. Future textbooks can extend base contracts using TypeScript intersections or generic parameters without editing Engine.
+
+## Layout update (2026-10-28)
+
+Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/` holds independently deployable applications; `apps/textbooks/` groups textbook applications. The historical phase descriptions above retain their original paths for chronology. Existing package APIs and extraction boundaries remain unchanged.
+
+## Stage 2 — Shared UI Kit extraction
+
+- Reusable question input widgets, question controller/registry, navigation primitives,
+  Flashcard, KnowledgeCheckpoint, MarkdownContent and VerticalSpace now live in
+  `shared/ui-kit` (package `@svitlo/ui-kit`).
+- The public package API exposes `@svitlo/ui-kit`, `/questions`, `/widgets`, and
+  `/navigation` plus exported, typed subpaths. Dist includes JavaScript, declarations
+  and CSS Module assets; Playground builds after Engine and UI Kit.
+- Consumers import the package directly. No application compatibility re-exports
+  or relative imports across workspace roots are retained.
+- Component and question-logic regression tests live beside their source in UI Kit.
+  Application integration tests remain in Playground.
+- Next.js routing, lesson-state-dependent LearningLayout, LocaleProvider, and the
+  Next Image flag asset adapter remain app-owned because they depend on the host.
+- Stage 3 (standalone Math application) is not included here.

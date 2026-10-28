@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { interpretation_Skills_Ids } from './index.ids';
+
+export const compareCategories_Skill_Data = buildSkillConfig({
+  id: interpretation_Skills_Ids.compareCategories,
+  name: {
+    en: "Comparing category totals and differences",
+    "lt": "Kategorijų sumų ir skirtumų palyginimas",
+    "lv": "Kategoriju kopsummu un starpību salīdzināšana",
+    "et": "Kategooriate koguarvude ja erinevuste võrdlemine",
+    "be": "Параўнаньне сумаў і розьніцаў катэгорыяў",
+    "ka": "კატეგორიების ჯამებისა და სხვაობების შედარება",
+    "kk": "Санаттар жиынтығы мен айырмаларын салыстыру",
+    zh: "比较各类别的总数与差值",
+    hi: "श्रेणियों के योग और अंतर की तुलना",
+    es: "Comparar totales y diferencias entre categorías",
+    ar: "مقارنة مجاميع الفئات والفروق بينها",
+    fr: "Comparer les totaux et les écarts entre catégories",
+    bn: "বিভাগগুলোর মোট ও পার্থক্য তুলনা",
+    pt: "Comparar totais e diferenças entre categorias",
+    ur: "زمروں کی کل تعداد اور فرق کا موازنہ",
+    id: "Membandingkan jumlah dan selisih antarkategori",
+    de: "Kategoriesummen und Unterschiede vergleichen",
+    ja: "分類ごとの合計と差を比較する",
+    ko: "범주별 합계와 차이 비교하기",
+    tr: "Kategorilerin toplamlarını ve farklarını karşılaştırma",
+    vi: "So sánh tổng và hiệu giữa các nhóm",
+    ta: "வகைகளின் மொத்தங்களையும் வேறுபாடுகளையும் ஒப்பிடுதல்",
+    te: "వర్గాల మొత్తం మరియు తేడాలను పోల్చడం",
+    mr: "गटांची बेरीज व फरक यांची तुलना करणे",
+    ms: "Membandingkan jumlah dan beza antara kategori",
+    he: "השוואת סכומים והפרשים בין קטגוריות",
+    pl: "Porównywanie sum i różnic między kategoriami",
+    uk: "Порівняння сум і різниць кількостей категорій",
+  },
+});
