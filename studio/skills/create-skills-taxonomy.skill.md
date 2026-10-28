@@ -2,74 +2,60 @@
 
 **Mandatory first action:** Read [Methodologist Persona](../personas/methodist.persona.md) in full. Adopt its professional judgment and role boundaries before researching, designing, or editing a taxonomy. Do not assume the persona has been loaded.
 
-**Purpose:** Design or review a subject-wide **Skills Taxonomy**: a stable, audience-independent catalog of named competencies organized as **SkillDomain → SkillGroup → Skill**. Produce a concise, navigable Markdown inventory for categorization and cross-referencing, with short descriptions, counts, and separate Definition and Code links. The taxonomy does not contain assessment evidence or learner analytics records. This Skill does **not** write individual Skill definition documents, TypeScript configurations, curricula, lessons, assessments, or code.
+**Purpose:** Create or review the **permanent, canonical pedagogical source of truth** for one subject: an audience-independent Skills Taxonomy organized as **SkillDomain → SkillGroup → Skill**. Author the names, authoritative substantive descriptions, hierarchy, counts, and verified Code links directly in `<PackageRoot>/docs/skills/taxonomy.md`. There is **no Create Skill Definitions stage, no per-entity Markdown Definition file, and no separate definition template**. Code implementation is a separate stage.
 
 ## NON-NEGOTIABLE START CONDITIONS
 
-Before authoring, establish:
+1. **Package root:** identify the real standalone textbook/application root, not the monorepo root. Inspect the actual repository rather than assuming an example path.
+2. **Scope:** establish the subject, intended breadth, exclusions, working language and whether the taxonomy is new or an approved revision.
+3. **Evidence:** examine credible subject references and any standards the editor explicitly requests; do not silently impose a country, age, grade, course sequence or national curriculum.
+4. **Existing state:** inspect `<PackageRoot>/docs/skills/taxonomy.md`, existing `*.data.ts` source files and repository instructions, including applicable `AGENTS.md`. Preserve previously approved identities, names, descriptions and placements unless explicitly authorized to revise them.
 
-1. **Package root:** the root of the specific standalone textbook/application being authored, not the monorepo root. Use the real repository path, for example `<MonorepoRoot>/apps/<textbook>/`; never presume the example is the actual layout.
-2. **Subject and scope:** discipline or interdisciplinary subject, intended knowledge breadth and depth, exclusions, working language, and whether this is a new taxonomy or a revision.
-3. **Evidence:** relevant subject references, existing taxonomy material if any, and any standards the editor *explicitly* wants compared. A taxonomy can be created before a curriculum or code exists.
-4. **Existing files:** inspect `<PackageRoot>/docs/skills/` and applicable repository instructions (`AGENTS.md` and nested instructions). Check for existing definitions and avoid overwriting or misrepresenting them.
-
-If a blocking input cannot be established, report the precise missing prerequisite; never invent a package root, claim to have inspected absent files, or silently presume a national school standard. Seek authoritative subject references where needed. An intended learner audience may help select *scope* but must not become an intrinsic property of a Skill.
+If a prerequisite is missing, report it accurately rather than inventing files or claiming unverified implementation.
 
 ## ENTITY DEFINITIONS — REQUIRED READING
 
-Read these three canonical entity descriptions in full before designing the taxonomy:
-
-- [SkillDomain](../docs/entities/skill-domain.md)
-- [SkillGroup](../docs/entities/skill-group.md)
-- [Skill](../docs/entities/skill.md)
-
-Apply the editorial rules in the [Skill entity definition](../docs/entities/skill.md): each Skill is a separately assessable ability, while the Skill *entity* never stores assessment evidence, scores, or progress. The entity documents, not this workflow, own the detailed granularity rules. Keep independent Definition/Code references.
+Read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md) and [Skill](../docs/entities/skill.md) in full. A Skill is an independently assessable competency; the taxonomy never stores grades, assessment evidence, learner progress or mastery data.
 
 ## OPERATING PROTOCOL
 
-1. **Discover** the complete subject landscape from the briefing, credible references, and existing definitions. Record meaningful scope boundaries and factual uncertainty; do not simply mirror one national curriculum.
-2. **Decompose** into broad Domains, coherent Groups, and **atomic, independently assessable Skills**. Apply the A-without-B test to compound candidates. For names/descriptions with commas, enumerations or conjunctions (e.g. addition **and** subtraction), treat the wording as a **red flag requiring a review**, not as proof of invalidity or an automatic split. Do not define assessment methods or learner evidence in the taxonomy.
-3. **Audit and discuss** overlaps, omissions, accidental bundling, unnecessary fragmentation, and ambiguous compound Skills. Propose A and B as separate Skills when independently meaningful. An optional integration Skill C is justified **only** when their relationship is itself a distinct assessable ability; a Lesson/Question addressing both A and B should simply reference **both Skill IDs**, not trigger an automatic Skill C. **Report unresolved split/merge cases with alternatives and wait for editorial review** instead of modifying uncertain entries silently.
-4. **Validate breadth** against relevant subject references. Coverage is editorial, not a fabricated percentage derived from row counts. Do not equate the number of conjunctions with the number of defects. Include a separate, concise **review report** listing suspicious combined names, suggested decomposition, any justified integration competencies, and editor decisions still needed; never add that report as metadata to the Skill entity.
-5. **Inspect actual Definition and Code files** under the target package. Each non-placeholder link must resolve to the matching entity and artifact. A proposed path, reserved UUID, or parent reference is not proof of implementation.
-6. **Author** the single taxonomy file using the **TAXONOMY TEMPLATE** below. Give each Domain, Group, and Skill a short, distinguishable catalog description. Use actual counts, not target quotas.
-7. **Verify and stop.** Recount Groups, Skills, Definitions and Code files; check primary placement, resolved links and Markdown structure. Deliver the inventory for editorial review. Do not generate entity documents or code.
+1. **Research:** establish the complete subject landscape, practical scope boundaries and uncertainty. Use references to check breadth rather than copying a syllabus.
+2. **Decompose:** identify coherent Domains and Groups, then atomic observable Skills. Apply the A-without-B test from the canonical Skill entity rules. Commas and conjunctions signal candidates for review, not automatic splitting.
+3. **Review:** discuss overlaps, missing competencies, accidental bundling and over-fragmentation. Separate A and B if independently meaningful; add an integration Skill C only when the relationship itself is independently assessable. A Lesson/Question covering A and B need not create C. Report unresolved choices **before** editing an approved hierarchy.
+4. **Write authoritative descriptions in the taxonomy itself:** directly under each Domain, Group and Skill heading, provide a substantive paragraph explaining **what the concept/competency means, what is included and what distinguishes it from neighboring entries**. Names identify; descriptions explain. A Description **must not repeat, paraphrase or mechanically expand the heading**, nor merely say that a Domain contains related Groups or a Group contains related Skills. For Skills, clarify the observable mathematical idea, meaningful scope or distinguishing case; give a concrete example where it improves understanding, without turning the description into a lesson, grading rubric, question format or implementation plan. Every entry receives its own relevant description. Use ordinary prose below the heading: **never emit a `Description:` prefix**.
+5. **Inspect actual Code files:** when an entity is implemented and validated, link directly to its canonical `*.data.ts` file. Otherwise use exactly `Code: [Not implemented](#)`. A reserved UUID, a parent map or a proposed path does not prove implementation.
+6. **Author only the taxonomy** using the template below. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code.
+7. **Verify and stop:** check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval.
 
-### Independent artifact links
+## CANONICAL OWNERSHIP
 
-Every Domain, Group, and Skill has **two independent fields**:
-
-- **Definition:** Markdown document with the entity's title and concise catalog description, normally written by **Create Skill Definitions Skill**.
-- **Code:** canonical source implementation of that entity, normally created by **Implement Skill Code Skill**.
-
-Neither link replaces the other. Use exactly `[Not implemented](#)` for each missing target. Link a Definition only to its verified `*.skill-domain.md`, `*.skill-group.md`, or `*.skill.md` document; link Code only to its verified canonical implementation file (normally `*.data.ts`). File existence does not imply editorial approval or runtime registration. Resolve both links **relative to the generated taxonomy file**, and count available Definitions and Code files independently by entity type.
+- **Taxonomy Markdown:** permanent editorial single source of truth for pedagogical names, scope, distinctions, descriptions and Domain → Group → Skill membership.
+- **TypeScript Data/IDs:** implementation authority for UUIDs, localized runtime names, typed configs, direct-child ID dictionaries and exports. The existing Engine does not have a `description` field; **do not duplicate descriptions in TypeScript** or add undocumented runtime metadata.
+- **Code link in taxonomy:** one implementation reference per entity. Use `Code: [Not implemented](#)` until implementation is verified. There is **no Definition link, separate Definition count or editorial Status on individual entities**.
+- **Approval:** a human editorial review gate on the taxonomy or a substantive revision, not a duplicated `Status: Draft/Approved` field on hundreds of documents. Once approved, downstream work must not rename, split, merge or rearrange without explicit review.
+- **Curricula and Lessons:** reference the canonical taxonomy; they own sequencing, teaching context, prerequisites and assessment choices, not the Skill catalog.
 
 ## QUALITY AND ACCEPTANCE GATES
 
-- All Domain, Group, and Skill names and descriptions convey meaningful, non-duplicative semantics.
-- Every Skill denotes a distinct, **independently assessable** competency; this is an editorial granularity criterion, not runtime assessment data. The catalog does not prescribe evaluation methods, evidence or mastery criteria.
-- Compound labels were reviewed using the A-without-B criterion; integration Skills are separately justified and multi-Skill Questions/Lessons do not automatically create an extra Skill.
-- Unresolved split/merge decisions are explicitly reported for discussion, not silently applied.
-- Descriptions accurately capture subject scope, not pedagogical sequencing or technical implementation.
-- Counts reconcile: each Domain's Group/Skill totals, each Group's Skill count, and global totals.
-- Each entity has both `Definition` and `Code` links, even when both are `[Not implemented](#)`.
-- Every non-placeholder link resolves and matches that specific artifact; definitions never become substitutes for code, or vice versa.
-- “Definitions” and “Code files” are counted separately; no unverified implementation claims.
-- No UUIDs, UI IDs, technical identifiers, guessed paths, or executable code content appear in the generated taxonomy; verified **Code links** are explicitly permitted.
-- Editorial uncertainties are reported separately rather than disguised as complete coverage.
-
-Write the artifact in the briefing's requested language. The following English template is structural; replace its example placeholders and repeat its Domain/Group/Skill blocks as needed.
+- Names and descriptions are **semantically different**: the description materially explains the name's subject content and boundaries and is not a tautology.
+- Each Skill is distinct and independently assessable; compound candidates use the A-without-B review rule.
+- Editorial uncertainties and source coverage limitations are reported separately; never fabricate a numeric standards-coverage percentage from catalog counts.
+- Domain/Group/Skill counts reconcile at every hierarchy level; membership is unique and matches any approved existing catalog.
+- Each entry has one verified `Code` reference or the exact missing-target placeholder; Code counts report actual implementations, not file names guessed from the taxonomy.
+- No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or fake `Status` fields occur in the taxonomy.
+- Markdown descriptions do **not** start with `Description:`.
+- The only artifact written by this workflow is the taxonomy file. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates.
 
 ## TAXONOMY TEMPLATE
 
-Use this **embedded template**. Repeat the Domain, Group, and Skill blocks as needed, reconcile the counts, and replace only verified Definition/Code links. Do not create a separate template document or include authoring instructions in the generated taxonomy.
+Repeat the following blocks for each Domain, Group and Skill. Replace placeholders with substantive, *non-duplicative* prose and independently verified Code paths. The template is embedded; do not create another template file.
 
 ~~~md
 # %SUBJECT_NAME% — Skills Taxonomy
 
 Date: %CURRENT_DATE%
 
-%Short subject scope and exclusions.%
+%SUBJECT_SCOPE_AND_EXCLUSIONS%
 
 ## SUMMARY
 
@@ -77,7 +63,6 @@ Domains: %DOMAIN_COUNT%
 Groups: %GROUP_COUNT%
 Skills: %SKILL_COUNT%
 
-Definitions: %DOMAIN_DEFINITIONS%/%DOMAIN_COUNT% Domains · %GROUP_DEFINITIONS%/%GROUP_COUNT% Groups · %SKILL_DEFINITIONS%/%SKILL_COUNT% Skills
 Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GROUP_COUNT% Groups · %SKILL_CODE_FILES%/%SKILL_COUNT% Skills
 
 ## DOMAINS
@@ -86,32 +71,28 @@ Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GR
 
 Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
 
-Definition: [Not implemented](#)
 Code: [Not implemented](#)
 
-Description: %DOMAIN_DESCRIPTION%
+%SUBSTANTIVE_DOMAIN_DESCRIPTION_NOT_A_RESTATEMENT_OF_NAME%
 
 #### %GROUP_NAME%
 
 Skills: %GROUP_SKILL_COUNT%
 
-Description: %GROUP_DESCRIPTION%
+%SUBSTANTIVE_GROUP_DESCRIPTION_EXPLAINING_SCOPE_AND_BOUNDARIES%
 
-Definition: [Not implemented](#)
 Code: [Not implemented](#)
 
 ##### %SKILL_NAME%
 
-Definition: [Not implemented](#)
 Code: [Not implemented](#)
 
-%SHORT_OBSERVABLE_SKILL_DESCRIPTION%
-
+%SUBSTANTIVE_SKILL_DESCRIPTION_CLARIFYING_MEANING_AND_DISTINCTION%
 ~~~
 
 ## RESULT
 
-Create or update exactly one taxonomy Markdown document:
+Create or update **exactly one canonical file** in the selected textbook package:
 
 ~~~text
 <PackageRoot>/
@@ -120,7 +101,4 @@ Create or update exactly one taxonomy Markdown document:
         └── taxonomy.md
 ~~~
 
-- Keep `docs/skills/taxonomy.md` literal within the actual textbook package. Never write the file to monorepo-level `studio/` or a guessed `src/math/` location.
-- Inspect an existing taxonomy before editing. Keep validated definitions and filenames stable; make significant splits/merges reviewable.
-- Do not create individual entity files, IDs, code, curriculum, or lesson content in this phase.
-- Report source references, final counts, separate Definition and Code file counts, **candidate compound Skills and unresolved editorial choices**, and readiness for **Create Skill Definitions Skill**.
+Keep validated code references and editorial decisions stable. Deliver source references, final Domain/Group/Skill counts, verified Code counts, suspicious combined competencies and unresolved editor decisions. The **next authorized stage after approval** is [Implement Skill Code](./implement-skill-code.skill.md), not a Definition-generation step.

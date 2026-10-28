@@ -10,7 +10,6 @@ Domains: 13
 Groups: 60
 Skills: 285
 
-Definitions: 13/13 Domains · 60/60 Groups · 285/285 Skills
 Code files: 13/13 Domains · 60/60 Groups · 285/285 Skills
 
 ## DOMAINS
@@ -19,2651 +18,2293 @@ Code files: 13/13 Domains · 60/60 Groups · 285/285 Skills
 
 Groups: 5 · Skills: 15
 
-Definition: [Definition](./counting/counting.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/counting.data.ts)
 
-Description: Математична область «Лічба», яка об'єднує споріднені вміння та поняття.
+Описує становлення поняття кількості через взаємно однозначне зіставлення предметів і чисел, рух натуральним числовим рядом, порядкові позиції та групування для лічби.
 
 #### Числові послідовності
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Числові послідовності» у межах області «Лічба».
+Послідовне називання натуральних чисел, рух у прямому й зворотному напрямках та відновлення пропущених елементів ряду без обов’язкового початку з одиниці.
 
-Definition: [Definition](./counting/sequence/sequence.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/sequence.data.ts)
 
 ##### Перелічувати предмети без пропусків і повторів, встановлюючи відповідність «предмет — одне число»
 
-Definition: [Definition](./counting/sequence/skills/oneToOne.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/oneToOne.data.ts)
 
-Перелічувати предмети без пропусків і повторів, встановлюючи відповідність «предмет — одне число».
+За довільного розташування елементів кожному відповідає лише одне числове слово; обхід множини не змінює її чисельності.
 
 ##### Лічити вперед у межах 20, зокрема від довільного початкового числа
 
-Definition: [Definition](./counting/sequence/skills/forward20.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward20.data.ts)
 
-Лічити вперед у межах 20, зокрема від довільного початкового числа.
+Від числа 8 наступними є 9, 10, 11; орієнтир — послідовність, а не запам’ятована лічилка від одиниці.
 
 ##### Лічити назад у межах 20, зокрема від довільного початкового числа
 
-Definition: [Definition](./counting/sequence/skills/backward20.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/backward20.data.ts)
 
-Лічити назад у межах 20, зокрема від довільного початкового числа.
+Від числа 14 попередніми є 13, 12, 11; зменшення на одиницю зберігається і при переході через десяток.
 
 ##### Лічити вперед і назад у межах 100, не починаючи щоразу з одиниці
 
-Definition: [Definition](./counting/sequence/skills/forward100.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward100.data.ts)
 
-Лічити вперед і назад у межах 100, не починаючи щоразу з одиниці.
+Початок може бути всередині двоцифрового діапазону: з 48 перейти через 50 і повернутися через 40, не скидаючи рахунок до початку.
 
 ##### Продовжувати й відновлювати послідовність натуральних чисел у межах 1000
 
-Definition: [Definition](./counting/sequence/skills/forward1000.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward1000.data.ts)
 
-Продовжувати й відновлювати послідовність натуральних чисел у межах 1000.
+Пропущений член визначають через сусідні значення й крок один, зокрема біля меж сотень (299, 300, 301).
 
 #### Кількість
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Кількість» у межах області «Лічба».
+Розуміння кількості як характеристики множини, включно з порожньою, та способи встановлення й зіставлення чисельності груп.
 
-Definition: [Definition](./counting/cardinality/cardinality.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/cardinality.data.ts)
 
 ##### Визначати кількість предметів за останнім названим числом під час лічби
 
-Definition: [Definition](./counting/cardinality/skills/basicCardinality.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/basicCardinality.data.ts)
 
-Визначати кількість предметів за останнім названим числом під час лічби.
+Після позначення кожного елемента рівно один раз останнє вимовлене число описує розмір усієї множини, а не лише останній предмет.
 
 ##### Розпізнавати нуль як кількість елементів порожньої множини
 
-Definition: [Definition](./counting/cardinality/skills/zero.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/zero.data.ts)
 
-Розпізнавати нуль як кількість елементів порожньої множини.
+Порожня коробка має кількість нуль, хоча сам контейнер існує; відсутність елементів не слід плутати з відсутністю об’єкта.
 
 ##### Порівнювати дві множини через попарне зіставлення або підрахунок
 
-Definition: [Definition](./counting/cardinality/skills/compareSets.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/compareSets.data.ts)
 
-Порівнювати дві множини через попарне зіставлення або підрахунок.
+Якщо кожному елементу однієї множини можна поставити у відповідність рівно один елемент іншої, кількості рівні незалежно від розмірів предметів.
 
 ##### Визначати кількість великої групи предметів через об’єднання в десятки або сотні
 
-Definition: [Definition](./counting/cardinality/skills/groupAndCount.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/groupAndCount.data.ts)
 
-Визначати кількість великої групи предметів через об’єднання в десятки або сотні.
+Об’єднання дрібних елементів у повні десятки чи сотні скорочує підрахунок, а залишок враховується окремо.
 
 #### Крокова лічба
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Крокова лічба» у межах області «Лічба».
+Рух числовим рядом із фіксованим приростом, пов’язаний із рівними групами, десятками та сотнями, а не з перелічуванням одиниць.
 
-Definition: [Definition](./counting/steps/steps.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/steps.data.ts)
 
 ##### Лічити рівними кроками по 2 й пояснювати, які групи перелічуються
 
-Definition: [Definition](./counting/steps/skills/countBy2.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy2.data.ts)
 
-Лічити рівними кроками по 2 й пояснювати, які групи перелічуються.
+Послідовність 2, 4, 6, 8 відображає додавання ще однієї пари; групи мають однаковий розмір.
 
 ##### Лічити рівними кроками по 5 й пояснювати зв’язок із групуванням
 
-Definition: [Definition](./counting/steps/skills/countBy5.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.ts)
 
-Лічити рівними кроками по 5 й пояснювати зв’язок із групуванням.
+Крок 5 відповідає повним п’ятіркам, тому 5, 10, 15 можна пов’язати з п’ятьма пальцями чи пучками предметів.
 
 ##### Лічити десятками в межах 1000
 
-Definition: [Definition](./counting/steps/skills/countBy10.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy10.data.ts)
 
-Лічити десятками в межах 1000.
+У послідовності 230, 240, 250 змінюються десятки, а одиниці не додаються по одній; після 290 буде 300.
 
 ##### Лічити сотнями в межах 1000
 
-Definition: [Definition](./counting/steps/skills/countBy100.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy100.data.ts)
 
-Лічити сотнями в межах 1000.
+Перехід 400, 500, 600 демонструє приріст однієї сотні та збереження решти розрядної структури.
 
 #### Порядкова лічба
 
 Skills: 1
 
-Description: Охоплює математичні вміння з теми «Порядкова лічба» у межах області «Лічба».
+Відношення між позицією елемента в упорядкованому ряду та загальною кількістю елементів, яке відокремлює питання «котрий?» від «скільки?».
 
-Definition: [Definition](./counting/ordinal/ordinal.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/ordinal/ordinal.data.ts)
 
 ##### Визначати порядковий номер об’єкта та розрізняти порядок і кількість
 
-Definition: [Definition](./counting/ordinal/skills/basicOrdinal.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/ordinal/skills/basicOrdinal.data.ts)
 
-Визначати порядковий номер об’єкта та розрізняти порядок і кількість.
+У ряді з п’яти фігур третя позиція не означає кількість три: порядковий номер залежить від напряму відліку.
 
 #### Парність
 
 Skills: 1
 
-Description: Охоплює математичні вміння з теми «Парність» у межах області «Лічба».
+Класифікація натуральних чисел за можливістю поділити відповідну кількість предметів на пари без залишку.
 
-Definition: [Definition](./counting/parity/parity.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/parity/parity.data.ts)
 
 ##### Розрізняти парні й непарні числа через розбиття на пари
 
-Definition: [Definition](./counting/parity/skills/evenOdd.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/counting/parity/skills/evenOdd.data.ts)
 
-Розрізняти парні й непарні числа через розбиття на пари.
+Для парної кількості можна скласти неперетинні пари без самотнього елемента; для непарної залишиться один.
 
 ### Натуральні числа
 
 Groups: 5 · Skills: 27
 
-Definition: [Definition](./numeration/numeration.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numeration.data.ts)
 
-Description: Математична область «Натуральні числа», яка об'єднує споріднені вміння та поняття.
+Визначає, як натуральні числа позначають кількість, як працює десяткова позиційна система та як числові записи порівнюють, розкладають і оцінюють.
 
 #### Числовий запис
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Числовий запис» у межах області «Натуральні числа».
+Цифри як знаки десяткової системи та способи співвіднести усну назву, письмовий запис і кількість для одно-, дво- й трицифрових чисел.
 
-Definition: [Definition](./numeration/notation/notation.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/notation.data.ts)
 
 ##### Розпізнавати та записувати цифри 0–9; відрізняти цифру від числа
 
-Definition: [Definition](./numeration/notation/skills/digits09.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/digits09.data.ts)
 
-Розпізнавати та записувати цифри 0–9; відрізняти цифру від числа.
+Одна цифра є символом із набору 0–9, а число може потребувати кількох цифр: 12 не є новою цифрою.
 
 ##### Читати, записувати й співвідносити з кількістю числа 0–20
 
-Definition: [Definition](./numeration/notation/skills/readWrite20.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite20.data.ts)
 
-Читати, записувати й співвідносити з кількістю числа 0–20.
+Записи «сімнадцять», 17 і набір із 17 предметів означають ту саму кількість; нуль також має власний запис.
 
 ##### Читати й записувати числа в межах 100
 
-Definition: [Definition](./numeration/notation/skills/readWrite100.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite100.data.ts)
 
-Читати й записувати числа в межах 100.
+Перехід від 9 до 10 вимагає двох позицій; у 46 цифри 4 та 6 позначають різні розряди.
 
 ##### Читати й записувати трицифрові числа, включно з нулями всередині запису
 
-Definition: [Definition](./numeration/notation/skills/readWrite1000.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite1000.data.ts)
 
-Читати й записувати трицифрові числа, включно з нулями всередині запису.
+У 305 відсутні десятки, але позиція нуля необхідна, щоб запис не означав 35.
 
 #### Розрядність
 
 Skills: 11
 
-Description: Охоплює математичні вміння з теми «Розрядність» у межах області «Натуральні числа».
+Десяткова структура числа, значення розряду, переходи між одиницями, десятками й сотнями та еквівалентні розклади одного значення.
 
-Definition: [Definition](./numeration/placeValue/placeValue.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/placeValue.data.ts)
 
 ##### Представляти число різними рівносильними розбиттями, не лише за стандартними розрядами (146 = 130 + 16)
 
-Definition: [Definition](./numeration/placeValue/skills/flexiblePartition.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/flexiblePartition.data.ts)
 
-Представляти число різними рівносильними розбиттями, не лише за стандартними розрядами (146 = 130 + 16).
+Один результат допускає нестандартні розклади: 146 можна скласти як 130 + 16 або 100 + 46 без зміни значення.
 
 ##### Визначати загальну кількість повних десятків чи сотень у трицифровому числі
 
-Definition: [Definition](./numeration/placeValue/skills/totalTensInNumber.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/totalTensInNumber.data.ts)
 
-Визначати загальну кількість повних десятків чи сотень у трицифровому числі.
+У числі 348 міститься 34 повні десятки, а не лише 4 десятки в десятковому розряді.
 
 ##### Групувати десять одиниць в один десяток і виконувати зворотне розгрупування
 
-Definition: [Definition](./numeration/placeValue/skills/makeTen.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.data.ts)
 
-Групувати десять одиниць в один десяток і виконувати зворотне розгрупування.
+Заміна десяти одиниць одним десятком не змінює загальної кількості; обмін можна виконати і в зворотний бік.
 
 ##### Складати й розкладати двоцифрове число на десятки та одиниці
 
-Definition: [Definition](./numeration/placeValue/skills/tensOnes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/tensOnes.data.ts)
 
-Складати й розкладати двоцифрове число на десятки та одиниці.
+У 57 міститься п’ять повних десятків і сім одиниць; спосіб запису пов’язаний із предметними блоками.
 
 ##### Пояснювати, що десять десятків утворюють одну сотню
 
-Definition: [Definition](./numeration/placeValue/skills/makeHundred.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeHundred.data.ts)
 
-Пояснювати, що десять десятків утворюють одну сотню.
+Десять груп по десять утворюють одну нову розрядну одиницю; це основа переходу 90 → 100.
 
 ##### Складати й розкладати трицифрове число на сотні, десятки й одиниці
 
-Definition: [Definition](./numeration/placeValue/skills/hundredsTensOnes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/hundredsTensOnes.data.ts)
 
-Складати й розкладати трицифрове число на сотні, десятки й одиниці.
+У 624 число 6 означає шість сотень, 2 — два десятки, 4 — чотири одиниці, незалежно від вимови.
 
 ##### Визначати значення цифри залежно від її розряду
 
-Definition: [Definition](./numeration/placeValue/skills/digitPlaceValue.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/digitPlaceValue.data.ts)
 
-Визначати значення цифри залежно від її розряду.
+У записі 232 перша й остання цифри 2 мають різну вартість: 200 і 2.
 
 ##### Пояснювати роль нуля як позначення відсутнього розряду
 
-Definition: [Definition](./numeration/placeValue/skills/zeroPlaceholder.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/zeroPlaceholder.data.ts)
 
-Пояснювати роль нуля як позначення відсутнього розряду.
+У 407 середній нуль зберігає місце десятків і запобігає плутанині з 47.
 
 ##### Записувати число як суму розрядних доданків і відновлювати його з цієї суми
 
-Definition: [Definition](./numeration/placeValue/skills/expandedForm.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/expandedForm.data.ts)
 
-Записувати число як суму розрядних доданків і відновлювати його з цієї суми.
+Розклад 583 = 500 + 80 + 3 дає змогу переходити між позиційним записом та сумою розрядних значень.
 
 ##### Обмінювати одну сотню на десять десятків, а десяток — на десять одиниць
 
-Definition: [Definition](./numeration/placeValue/skills/regroupPlaceValues.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/regroupPlaceValues.data.ts)
 
-Обмінювати одну сотню на десять десятків, а десяток — на десять одиниць.
+Одну сотню можна замінити десятьма десятками, а кожен десяток — десятьма одиницями без зміни числа.
 
 ##### Співвідносити запис числа, модель блоками, числову пряму та кількість предметів
 
-Definition: [Definition](./numeration/placeValue/skills/multipleRepresentations.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/multipleRepresentations.data.ts)
 
-Співвідносити запис числа, модель блоками, числову пряму та кількість предметів.
+Те саме 24 можна показати двома десятками й чотирма одиницями, точкою на шкалі або набором предметів.
 
 #### Порівняння чисел
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Порівняння чисел» у межах області «Натуральні числа».
+Відношення порядку між кількостями й числовими записами, включно зі знаками порівняння та сортуванням чисел.
 
-Definition: [Definition](./numeration/comparison/comparison.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/comparison.data.ts)
 
 ##### Визначати «більше», «менше», «дорівнює» на конкретних кількостях
 
-Definition: [Definition](./numeration/comparison/skills/moreLessEqual.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/moreLessEqual.data.ts)
 
-Визначати «більше», «менше», «дорівнює» на конкретних кількостях.
+Більшу групу визначають за чисельністю, а не за площею, масою чи візуальними розмірами предметів.
 
 ##### Правильно використовувати знаки <, >, = для чисел
 
-Definition: [Definition](./numeration/comparison/skills/comparisonSymbols.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/comparisonSymbols.data.ts)
 
-Правильно використовувати знаки <, >, = для чисел.
+Запис 8 > 5 показує напрям порівняння; перестановка чисел вимагає змінити знак на протилежний.
 
 ##### Розташовувати числа 0–20 за зростанням або спаданням
 
-Definition: [Definition](./numeration/comparison/skills/order20.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order20.data.ts)
 
-Розташовувати числа 0–20 за зростанням або спаданням.
+Значення у впорядкованому ряді мають послідовне місце; порядок за спаданням є зворотним до зростання.
 
 ##### Порівнювати й впорядковувати двоцифрові числа за розрядами
 
-Definition: [Definition](./numeration/comparison/skills/order100.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order100.data.ts)
 
-Порівнювати й впорядковувати двоцифрові числа за розрядами.
+Під час порівняння 64 і 59 вирішальним стає десятковий розряд, а одиниці зіставляють лише за рівних десятків.
 
 ##### Порівнювати й упорядковувати трицифрові числа за розрядами
 
-Definition: [Definition](./numeration/comparison/skills/order1000.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order1000.data.ts)
 
-Порівнювати й упорядковувати трицифрові числа за розрядами.
+Для 705 і 699 спочатку зіставляють сотні; нуль у розряді десятків не робить 705 меншим.
 
 #### Числова пряма
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Числова пряма» у межах області «Натуральні числа».
+Числа як точки на впорядкованій шкалі з рівними інтервалами; розташування, сусідство та відстань залежать від масштабу.
 
-Definition: [Definition](./numeration/numberLine/numberLine.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/numberLine.data.ts)
 
 ##### Знаходити попереднє, наступне та проміжні числа в заданому діапазоні
 
-Definition: [Definition](./numeration/numberLine/skills/beforeAfterBetween.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAfterBetween.data.ts)
 
-Знаходити попереднє, наступне та проміжні числа в заданому діапазоні.
+Між 36 і 38 знаходиться 37; попереднє і наступне відрізняються від заданого на одиницю.
 
 ##### Розміщувати числа та знаходити сусідів на числовій прямій до 20
 
-Definition: [Definition](./numeration/numberLine/skills/numberLine20.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine20.data.ts)
 
-Розміщувати числа та знаходити сусідів на числовій прямій до 20.
+Рівновіддалені поділки показують, чому 12 розміщене правіше 9, а його сусіди — 11 і 13.
 
 ##### Розміщувати числа на числовій прямій із відповідним масштабом до 1000
 
-Definition: [Definition](./numeration/numberLine/skills/numberLine1000.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine1000.data.ts)
 
-Розміщувати числа на числовій прямій із відповідним масштабом до 1000.
+У шкалі з позначками через 100 проміжні числа потрібно розташовувати пропорційно, а не за довільною відстанню.
 
 ##### Визначати відстань між цілими числами на числовій прямій
 
-Definition: [Definition](./numeration/numberLine/skills/distanceOnLine.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/distanceOnLine.data.ts)
 
-Визначати відстань між цілими числами на числовій прямій.
+Різниця координат показує кількість одиничних інтервалів між 4 і 9 — їх п’ять, незалежно від напряму.
 
 #### Оцінювання чисел
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Оцінювання чисел» у межах області «Натуральні числа».
+Наближені значення чисел і кількостей, округлення та співвіднесення точності оцінки з реальною величиною.
 
-Definition: [Definition](./numeration/estimation/estimation.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/estimation.data.ts)
 
 ##### Округлювати числа до найближчого десятка й пояснювати вибір
 
-Definition: [Definition](./numeration/estimation/skills/roundToTen.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/roundToTen.data.ts)
 
-Округлювати числа до найближчого десятка й пояснювати вибір.
+При округленні 46 до десятків результат 50, а 44 — 40; орієнтиром є відстань до сусідніх круглих чисел.
 
 ##### Округлювати числа до найближчої сотні й оцінювати похибку
 
-Definition: [Definition](./numeration/estimation/skills/roundToHundred.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/roundToHundred.data.ts)
 
-Округлювати числа до найближчої сотні й оцінювати похибку.
+Для 349 найближча сотня — 300, для 351 — 400; похибка — різниця між точним та округленим числом.
 
 ##### Оцінювати приблизну кількість предметів та перевіряти оцінку підрахунком
 
-Definition: [Definition](./numeration/estimation/skills/estimateQuantity.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/estimateQuantity.data.ts)
 
-Оцінювати приблизну кількість предметів та перевіряти оцінку підрахунком.
+Оцінку для розсипаних предметів можна зробити за частиною набору, а потім зіставити з точним підрахунком.
 
 ### Дроби
 
 Groups: 4 · Skills: 19
 
-Definition: [Definition](./fractions/fractions.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/fractions.data.ts)
 
-Description: Математична область «Дроби», яка об'єднує споріднені вміння та поняття.
+Пояснює частину й ціле через рівні поділи, чисельник і знаменник, зображення на моделях та числовій прямій; охоплює початкові порівняння й дії з дробами.
 
 #### Представлення дробів
 
 Skills: 12
 
-Description: Охоплює математичні вміння з теми «Представлення дробів» у межах області «Дроби».
+Рівні частини визначеного цілого, одиничні й неoдиничні дроби, їхній запис та геометричні інтерпретації, у тому числі значення понад одиницю.
 
-Definition: [Definition](./fractions/representation/representation.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/representation.data.ts)
 
 ##### Розрізняти ціле, його рівні частини й довільні нерівні шматки
 
-Definition: [Definition](./fractions/representation/skills/wholeAndEqualParts.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/wholeAndEqualParts.data.ts)
 
-Розрізняти ціле, його рівні частини й довільні нерівні шматки.
+Половинами можна назвати лише дві однакові за величиною частини одного цілого; довільний розріз на дві частини цього не гарантує.
 
 ##### Розміщувати на моделі або прямій дроби, більші за одиницю
 
-Definition: [Definition](./fractions/representation/skills/fractionGreaterThanOne.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/fractionGreaterThanOne.data.ts)
 
-Розміщувати на моделі або прямій дроби, більші за одиницю.
+Число 5/4 — це ціла одиниця й ще одна чверть; точка розташована правіше 1, а не між 0 і 1.
 
 ##### Пов'язувати десяті з поділом цілого на 10 рівних частин та діленням на 10
 
-Definition: [Definition](./fractions/representation/skills/tenthsAsDivision.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/tenthsAsDivision.data.ts)
 
-Пов'язувати десяті з поділом цілого на 10 рівних частин та діленням на 10.
+Одна десята виникає від десяти рівних частин визначеного цілого; її можна співвіднести з часткою 1 ÷ 10.
 
 ##### Показувати одиничний дріб 1/n на фігурі, відрізку або наборі предметів
 
-Definition: [Definition](./fractions/representation/skills/unitFractionModel.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/unitFractionModel.data.ts)
 
-Показувати одиничний дріб 1/n на фігурі, відрізку або наборі предметів.
+У моделі 1/3 потрібно показати одну з трьох рівних частин саме обраного цілого, а не будь-який малий фрагмент.
 
 ##### Читати й записувати одиничні дроби: половина, третина, чверть тощо
 
-Definition: [Definition](./fractions/representation/skills/unitFractionRead.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/unitFractionRead.data.ts)
 
-Читати й записувати одиничні дроби: половина, третина, чверть тощо.
+Слова «чверть» і запис 1/4 означають одну з чотирьох рівних частин, незалежно від геометричної форми цілого.
 
 ##### Пояснювати, що знаменник указує на кількість рівних частин цілого
 
-Definition: [Definition](./fractions/representation/skills/denominatorMeaning.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/denominatorMeaning.data.ts)
 
-Пояснювати, що знаменник указує на кількість рівних частин цілого.
+У 3/5 нижнє число задає, на скільки рівних частин поділено ціле, а не скільки їх взяли.
 
 ##### Пояснювати, скільки рівних частин позначає чисельник
 
-Definition: [Definition](./fractions/representation/skills/numeratorMeaning.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/numeratorMeaning.data.ts)
 
-Пояснювати, скільки рівних частин позначає чисельник.
+У 3/5 верхнє число вказує на три взяті частини із п’яти рівних, визначених знаменником.
 
 ##### Представляти кілька рівних частин одного цілого дробом a/b
 
-Definition: [Definition](./fractions/representation/skills/nonUnitModel.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/nonUnitModel.data.ts)
 
-Представляти кілька рівних частин одного цілого дробом a/b.
+Три однакові восьмі частини складають 3/8; усі частини повинні належати тому самому цілому.
 
 ##### Пояснювати, чому величина частини залежить від розміру цілого
 
-Definition: [Definition](./fractions/representation/skills/wholeDependence.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/wholeDependence.data.ts)
 
-Пояснювати, чому величина частини залежить від розміру цілого.
+Половина великої піци може бути більшою за половину маленької; порівнювати дробові частини без спільного цілого некоректно.
 
 ##### Розміщувати прості дроби між 0 і 1 на числовій прямій
 
-Definition: [Definition](./fractions/representation/skills/numberLine.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/numberLine.data.ts)
 
-Розміщувати прості дроби між 0 і 1 на числовій прямій.
+Між 0 та 1 точка 3/4 розташована на третьому із чотирьох рівних кроків від нуля.
 
 ##### Пояснювати на моделі, що n/n відповідає одному цілому
 
-Definition: [Definition](./fractions/representation/skills/oneAsFraction.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/oneAsFraction.data.ts)
 
-Пояснювати на моделі, що n/n відповідає одному цілому.
+Якщо взяти всі чотири чверті того самого цілого, сума покриває його повністю: 4/4 = 1.
 
 ##### Показувати на наочних моделях рівність простих дробів, наприклад 1/2 = 2/4
 
-Definition: [Definition](./fractions/representation/skills/equivalentVisual.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/equivalentVisual.data.ts)
 
-Показувати на наочних моделях рівність простих дробів, наприклад 1/2 = 2/4.
+Дві четверті покривають таку саму частку цілого, як одна друга; еквівалентність можна бачити без обчислення.
 
 #### Порівняння дробів
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Порівняння дробів» у межах області «Дроби».
+Відношення величин дробових частин для спільного цілого за фіксованого чисельника або знаменника.
 
-Definition: [Definition](./fractions/comparison/comparison.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/comparison.data.ts)
 
 ##### Порівнювати дроби з однаковим чисельником, спираючись на однакове ціле
 
-Definition: [Definition](./fractions/comparison/skills/compareSameNumerator.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/compareSameNumerator.data.ts)
 
-Порівнювати дроби з однаковим чисельником, спираючись на однакове ціле.
+За спільного цілого 2/5 більше за 2/7: однакову кількість частин беруть із більших за розміром шматків.
 
 ##### Порівнювати одиничні дроби від одного й того самого цілого
 
-Definition: [Definition](./fractions/comparison/skills/compareUnit.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/compareUnit.data.ts)
 
-Порівнювати одиничні дроби від одного й того самого цілого.
+Для того самого яблука 1/2 більше за 1/4, оскільки поділ на більше рівних частин робить кожну меншою.
 
 ##### Порівнювати дроби з однаковими знаменниками через наочну модель
 
-Definition: [Definition](./fractions/comparison/skills/sameDenominatorModel.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/sameDenominatorModel.data.ts)
 
-Порівнювати дроби з однаковими знаменниками через наочну модель.
+За однакових знаменників 5/8 більше за 3/8, бо розмір однієї восьмої не змінюється.
 
 #### Обчислення з дробами
 
 Skills: 2
 
-Description: Охоплює математичні вміння з теми «Обчислення з дробами» у межах області «Дроби».
+Зміна кількості рівних частин одного цілого через додавання чи вилучення при спільному знаменнику.
 
-Definition: [Definition](./fractions/arithmetic/arithmetic.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/arithmetic.data.ts)
 
 ##### Додавати прості дроби з однаковими знаменниками в межах одного цілого
 
-Definition: [Definition](./fractions/arithmetic/skills/addLikeDenominators.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/skills/addLikeDenominators.data.ts)
 
-Додавати прості дроби з однаковими знаменниками в межах одного цілого.
+У 2/7 + 3/7 додають кількість сьомих і залишають знаменник 7; сума в такому випадку не перевищує цілого.
 
 ##### Віднімати прості дроби з однаковими знаменниками в межах одного цілого
 
-Definition: [Definition](./fractions/arithmetic/skills/subtractLikeDenominators.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/skills/subtractLikeDenominators.data.ts)
 
-Віднімати прості дроби з однаковими знаменниками в межах одного цілого.
+У 5/6 − 2/6 віднімають дві рівні шості частини від п’яти; розмір частини не змінюється.
 
 #### Частини величини
 
 Skills: 2
 
-Description: Охоплює математичні вміння з теми «Частини величини» у межах області «Дроби».
+Перехід між цілою величиною і її одиничною частиною з використанням ділення та зворотної операції.
 
-Definition: [Definition](./fractions/portions/portions.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/portions.data.ts)
 
 ##### Знаходити 1/n від числа або вимірюваної величини через ділення
 
-Definition: [Definition](./fractions/portions/skills/findUnitPart.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/skills/findUnitPart.data.ts)
 
-Знаходити 1/n від числа або вимірюваної величини через ділення.
+Одна четверта від 20 — п’ять: рівномірне розбиття двадцяти одиниць на чотири групи дає розмір однієї групи.
 
 ##### Знаходити ціле за відомою одиничною частиною
 
-Definition: [Definition](./fractions/portions/skills/reconstructWhole.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/skills/reconstructWhole.data.ts)
 
-Знаходити ціле за відомою одиничною частиною.
+Якщо одна п’ята набору становить 3 предмети, усі п’ять однакових частин разом містять 15.
 
 ### Арифметика
 
 Groups: 5 · Skills: 79
 
-Definition: [Definition](./arithmetic/arithmetic.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/arithmetic.data.ts)
 
-Description: Математична область «Арифметика», яка об'єднує споріднені вміння та поняття.
+Охоплює смисл чотирьох арифметичних дій, способи усних і письмових обчислень, властивості операцій та перевірку результатів у межах початкової математики.
 
 #### Додавання
 
 Skills: 10
 
-Description: Охоплює математичні вміння з теми «Додавання» у межах області «Арифметика».
+Об’єднання кількостей, властивості суми, розрядний обмін і способи виконання та контролю обчислень.
 
-Definition: [Definition](./arithmetic/addition/addition.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/addition.data.ts)
 
 ##### Моделювати додавання як об’єднання кількостей або збільшення кількості
 
-Definition: [Definition](./arithmetic/addition/skills/addMeaning.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/addMeaning.data.ts)
 
-Моделювати додавання як об’єднання кількостей або збільшення кількості.
+З’єднання наборів із 3 та 4 предметів дає 7; збільшення початкової кількості на 4 має той самий результат.
 
 ##### Пояснювати й застосовувати додавання нуля
 
-Definition: [Definition](./arithmetic/addition/skills/addZero.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/addZero.data.ts)
 
-Пояснювати й застосовувати додавання нуля.
+Додавання нічого не змінює початкового значення: 8 + 0 та 0 + 8 обидва дорівнюють 8.
 
 ##### Змінювати порядок доданків без зміни суми та застосовувати це для обчислень
 
-Definition: [Definition](./arithmetic/addition/skills/commutativeAddition.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/commutativeAddition.data.ts)
 
-Змінювати порядок доданків без зміни суми та застосовувати це для обчислень.
+У парах наборів 3 + 5 і 5 + 3 загальна кількість однакова, хоча порядок груп різний.
 
 ##### Використовувати доповнення до десяти під час додавання
 
-Definition: [Definition](./arithmetic/addition/skills/makeTenStrategy.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/makeTenStrategy.data.ts)
 
-Використовувати доповнення до десяти під час додавання.
+У прикладі 8 + 5 можна спочатку взяти 2 до десятка, а далі додати решту 3.
 
 ##### Додавати одноцифрові числа з переходом через десяток
 
-Definition: [Definition](./arithmetic/addition/skills/crossTenAddition.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/crossTenAddition.data.ts)
 
-Додавати одноцифрові числа з переходом через десяток.
+Перехід 9 + 7 зручно виконати як 10 + 6 після добору одиниці до десятка.
 
 ##### Додавати двоцифрові числа з утворенням нового десятка
 
-Definition: [Definition](./arithmetic/addition/skills/twoDigitCarry.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/twoDigitCarry.data.ts)
 
-Додавати двоцифрові числа з утворенням нового десятка.
+У 27 + 18 сім і вісім одиниць дають один новий десяток та п’ять одиниць.
 
 ##### Групувати доданки у зручному порядку без зміни суми
 
-Definition: [Definition](./arithmetic/addition/skills/associativeAddition.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/associativeAddition.data.ts)
 
-Групувати доданки у зручному порядку без зміни суми.
+Суму 7 + 13 + 3 можна перегрупувати як (7 + 3) + 13, не змінюючи жодного доданка.
 
 ##### Додавати трицифрові числа з одним або кількома переходами через розряд
 
-Definition: [Definition](./arithmetic/addition/skills/threeDigitCarry.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/threeDigitCarry.data.ts)
 
-Додавати трицифрові числа з одним або кількома переходами через розряд.
+У 268 + 157 перенос виникає в різних розрядах; проміжні обміни одиниць на десятки не змінюють суми.
 
 ##### Коректно записувати та виконувати письмове додавання стовпчиком
 
-Definition: [Definition](./arithmetic/addition/skills/columnAddition.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/columnAddition.data.ts)
 
-Коректно записувати та виконувати письмове додавання стовпчиком.
+Одиниці записують під одиницями, десятки під десятками; перенесений розряд додають у наступному стовпці.
 
 ##### Розпізнавати пропущений перенос десятка чи сотні та пояснювати причину помилки
 
-Definition: [Definition](./arithmetic/addition/skills/carryErrorDetection.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/carryErrorDetection.data.ts)
 
-Розпізнавати пропущений перенос десятка чи сотні та пояснювати причину помилки.
+Для 48 + 37 пропущений перенос із суми 8 + 7 призводить до заниженого десяткового розряду.
 
 #### Віднімання
 
 Skills: 8
 
-Description: Охоплює математичні вміння з теми «Віднімання» у межах області «Арифметика».
+Вилучення частини, знаходження різниці, розгрупування розрядів і перевірка правильності обчислення.
 
-Definition: [Definition](./arithmetic/subtraction/subtraction.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/subtraction.data.ts)
 
 ##### Моделювати віднімання як вилучення, різницю або пошук невідомої частини
 
-Definition: [Definition](./arithmetic/subtraction/skills/subtractMeaning.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractMeaning.data.ts)
 
-Моделювати віднімання як вилучення, різницю або пошук невідомої частини.
+Забрати 3 з набору 8 — це знайти 8 − 3; різниця між двома наборами або невідома частина цілого приводять до тієї ж операції.
 
 ##### Пояснювати й застосовувати віднімання нуля
 
-Definition: [Definition](./arithmetic/subtraction/skills/subtractZero.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractZero.data.ts)
 
-Пояснювати й застосовувати віднімання нуля.
+Віднімання нуля залишає той самий набір предметів, бо нічого не вилучають.
 
 ##### Пояснювати, чому віднімання числа від самого себе дає нуль
 
-Definition: [Definition](./arithmetic/subtraction/skills/subtractSelf.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractSelf.data.ts)
 
-Пояснювати, чому віднімання числа від самого себе дає нуль.
+Після вилучення всіх 6 із набору 6 предметів не залишається нічого: результат — 0.
 
 ##### Віднімати в межах 20 із переходом через десяток
 
-Definition: [Definition](./arithmetic/subtraction/skills/crossTenSubtraction.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/crossTenSubtraction.data.ts)
 
-Віднімати в межах 20 із переходом через десяток.
+У 12 − 5 один десяток можна розкласти на одиниці, щоб відняти п’ять.
 
 ##### Віднімати двоцифрові числа з розгрупуванням одного десятка
 
-Definition: [Definition](./arithmetic/subtraction/skills/twoDigitBorrow.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/twoDigitBorrow.data.ts)
 
-Віднімати двоцифрові числа з розгрупуванням одного десятка.
+Для 43 − 18 один десяток обмінюють на десять одиниць, а потім працюють з кожним розрядом.
 
 ##### Віднімати трицифрові числа з розгрупуванням десятків або сотень
 
-Definition: [Definition](./arithmetic/subtraction/skills/threeDigitBorrow.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/threeDigitBorrow.data.ts)
 
-Віднімати трицифрові числа з розгрупуванням десятків або сотень.
+У 402 − 175 може знадобитися обмін із сотень через порожній десятковий розряд.
 
 ##### Коректно записувати та виконувати письмове віднімання стовпчиком
 
-Definition: [Definition](./arithmetic/subtraction/skills/columnSubtraction.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/columnSubtraction.data.ts)
 
-Коректно записувати та виконувати письмове віднімання стовпчиком.
+Під час письмового віднімання зберігають вирівнювання розрядів і фіксують кожний обмін до обчислення.
 
 ##### Розпізнавати неправильне розгрупування під час віднімання й виправляти його
 
-Definition: [Definition](./arithmetic/subtraction/skills/borrowErrorDetection.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/borrowErrorDetection.data.ts)
 
-Розпізнавати неправильне розгрупування під час віднімання й виправляти його.
+У 52 − 28 після обміну десятків змінюються і одиниці, і кількість десятків; забутий обмін спотворює відповідь.
 
 #### Поєднання додавання та віднімання
 
 Skills: 13
 
-Description: Охоплює математичні вміння з теми «Поєднання додавання та віднімання» у межах області «Арифметика».
+Взаємозв’язок двох обернених дій, робота з частинами цілого та гнучкі стратегії усних обчислень і самоперевірки.
 
-Definition: [Definition](./arithmetic/additionSubtraction/additionSubtraction.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/additionSubtraction.data.ts)
 
 ##### Складати ціле з частин і знаходити невідому частину цілого
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/partWhole.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/partWhole.data.ts)
 
-Складати ціле з частин і знаходити невідому частину цілого.
+Якщо ціле 9 поділено на відомі 4 й невідому частину, решта визначається як 9 − 4.
 
 ##### Обчислювати суми й різниці в межах 10 без предметного переліку
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/factsWithin10.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin10.data.ts)
 
-Обчислювати суми й різниці в межах 10 без предметного переліку.
+Результати невеликих комбінацій на кшталт 6 + 3 та 9 − 4 мають бути доступні без повторного підрахунку предметів.
 
 ##### Розкладати 10 на дві частини різними способами
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/numberBonds10.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/numberBonds10.data.ts)
 
-Розкладати 10 на дві частини різними способами.
+Число 10 можна зібрати як 1 + 9, 4 + 6 або 5 + 5; зміна частин не змінює цілого.
 
 ##### Впевнено обчислювати суми та різниці в межах 20
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/factsWithin20.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin20.data.ts)
 
-Впевнено обчислювати суми та різниці в межах 20.
+У діапазоні до 20 обчислення можна виконувати через опорні десятки й відомі числові факти, не повертаючись до лічби від одиниці.
 
 ##### Перевіряти додавання відніманням і навпаки
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/inverseOperations.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/inverseOperations.data.ts)
 
-Перевіряти додавання відніманням і навпаки.
+Рівність 7 + 5 = 12 можна перевірити як 12 − 5 = 7, бо дії повертають до початкової частини.
 
 ##### Додавати й віднімати цілі десятки
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/addSubtractTens.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/addSubtractTens.data.ts)
 
-Додавати й віднімати цілі десятки.
+40 + 30 спирається на 4 + 3 десятки, а 80 − 20 — на 8 − 2 десятки.
 
 ##### Додавати та віднімати двоцифрові числа без розрядного обміну
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/twoDigitNoRegroup.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/twoDigitNoRegroup.data.ts)
 
-Додавати та віднімати двоцифрові числа без розрядного обміну.
+У 34 + 25 додають десятки до десятків та одиниці до одиниць без утворення нового десятка.
 
 ##### Обчислювати усно через десятки й одиниці, пояснюючи кожний крок
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/placeValueMental.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/placeValueMental.data.ts)
 
-Обчислювати усно через десятки й одиниці, пояснюючи кожний крок.
+Для 47 + 21 можна подумки виконати 40 + 20 і 7 + 1 та поєднати підсумки.
 
 ##### Використовувати компенсацію (додати й відняти те саме число) для усних обчислень
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/compensation.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/compensation.data.ts)
 
-Використовувати компенсацію (додати й відняти те саме число) для усних обчислень.
+У 39 + 8 можна тимчасово замінити 39 на 40, обчислити 48 й відняти додану одиницю.
 
 ##### Додавати та віднімати круглі сотні й десятки в межах 1000
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/hundredsAndTens.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/hundredsAndTens.data.ts)
 
-Додавати та віднімати круглі сотні й десятки в межах 1000.
+300 + 400 працює із сотнями як із цілими одиницями розряду; 650 − 20 — із десятками.
 
 ##### Додавати та віднімати трицифрові числа без переходу через розряд
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/threeDigitNoRegroup.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/threeDigitNoRegroup.data.ts)
 
-Додавати та віднімати трицифрові числа без переходу через розряд.
+У 324 + 153 кожен стовпець дає значення менше десяти, тому переноси між розрядами не потрібні.
 
 ##### Оцінювати правдоподібність суми або різниці до точного обчислення
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/estimateResult.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/estimateResult.data.ts)
 
-Оцінювати правдоподібність суми або різниці до точного обчислення.
+Перед 399 + 204 можна очікувати суму приблизно 600; результат на кшталт 63 має неправильний порядок величини.
 
 ##### Знаходити й виправляти помилки в додаванні та відніманні за допомогою оберненої дії
 
-Definition: [Definition](./arithmetic/additionSubtraction/skills/checkWithInverse.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/checkWithInverse.data.ts)
 
-Знаходити й виправляти помилки в додаванні та відніманні за допомогою оберненої дії.
+Результат 63 − 28 перевіряють додаванням 28 до отриманої різниці; невідповідність показує збій.
 
 #### Множення
 
 Skills: 24
 
-Description: Охоплює математичні вміння з теми «Множення» у межах області «Арифметика».
+Добуток як рівні групи або прямокутний масив, табличні факти, властивості множення та розрядні способи обчислення.
 
-Definition: [Definition](./arithmetic/multiply/multiply.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/multiply.data.ts)
 
 ##### Представляти множення як кількість рівних груп певного розміру
 
-Definition: [Definition](./arithmetic/multiply/skills/equalGroups.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/equalGroups.data.ts)
 
-Представляти множення як кількість рівних груп певного розміру.
+Три однакові набори по чотири предмети відповідають 3 × 4, а не трьом різним доданкам.
 
 ##### Переходити між множенням і повторюваним додаванням
 
-Definition: [Definition](./arithmetic/multiply/skills/repeatedAddition.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/repeatedAddition.data.ts)
 
-Переходити між множенням і повторюваним додаванням.
+Запис 4 + 4 + 4 еквівалентний трьом рівним четвіркам; нерівні доданки не дають такої простої моделі.
 
 ##### Представляти множення прямокутним масивом предметів або клітинок
 
-Definition: [Definition](./arithmetic/multiply/skills/arrayModel.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/arrayModel.data.ts)
 
-Представляти множення прямокутним масивом предметів або клітинок.
+Масив із трьох рядків по п’ять клітинок показує загальну кількість 15 незалежно від порядку обходу.
 
 ##### Читати вираз a × b та пов’язувати множники й добуток із моделлю
 
-Definition: [Definition](./arithmetic/multiply/skills/readExpression.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/readExpression.data.ts)
 
-Читати вираз a × b та пов’язувати множники й добуток із моделлю.
+У 3 × 4 множники описують число груп і їхній розмір, а добуток — загальну кількість у моделі.
 
 ##### Обчислювати добутки з множником 2 та використовувати подвоєння
 
-Definition: [Definition](./arithmetic/multiply/skills/by2.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by2.data.ts)
 
-Обчислювати добутки з множником 2 та використовувати подвоєння.
+Добуток на 2 можна отримати як суму числа із самим собою: 2 × 7 = 7 + 7.
 
 ##### Обчислювати табличні добутки з множником 3
 
-Definition: [Definition](./arithmetic/multiply/skills/by3.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by3.data.ts)
 
-Обчислювати табличні добутки з множником 3.
+Три рівні четвірки дають 12; відомі суми по 3 допомагають вивести табличний результат.
 
 ##### Обчислювати табличні добутки з множником 4
 
-Definition: [Definition](./arithmetic/multiply/skills/by4.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by4.data.ts)
 
-Обчислювати табличні добутки з множником 4.
+Для чотирьох шісток результат 24 можна побачити як дві подвоєні шістки.
 
 ##### Обчислювати табличні добутки з множником 5
 
-Definition: [Definition](./arithmetic/multiply/skills/by5.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by5.data.ts)
 
-Обчислювати табличні добутки з множником 5.
+П’ятірки утворюють знайому шкалу 5, 10, 15, 20; її можна співвіднести з групами по п’ять.
 
 ##### Обчислювати табличні добутки з множником 6
 
-Definition: [Definition](./arithmetic/multiply/skills/by6.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by6.data.ts)
 
-Обчислювати табличні добутки з множником 6.
+Шість четвірок можна отримати з п’яти четвірок і ще однієї, не заучуючи випадок ізольовано.
 
 ##### Обчислювати табличні добутки з множником 7
 
-Definition: [Definition](./arithmetic/multiply/skills/by7.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by7.data.ts)
 
-Обчислювати табличні добутки з множником 7.
+Сім трійок можна обчислити як п’ять трійок плюс дві трійки: 15 + 6 = 21.
 
 ##### Обчислювати табличні добутки з множником 8
 
-Definition: [Definition](./arithmetic/multiply/skills/by8.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by8.data.ts)
 
-Обчислювати табличні добутки з множником 8.
+Вісім п’ятірок дають 40; результат також випливає з подвоєння чотирьох п’ятірок.
 
 ##### Обчислювати табличні добутки з множником 9
 
-Definition: [Definition](./arithmetic/multiply/skills/by9.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by9.data.ts)
 
-Обчислювати табличні добутки з множником 9.
+Дев’ять шісток можна вивести як десять шісток мінус одна шістка.
 
 ##### Обчислювати добутки з множником 10 та пояснювати їх через десятки
 
-Definition: [Definition](./arithmetic/multiply/skills/by10.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by10.data.ts)
 
-Обчислювати добутки з множником 10 та пояснювати їх через десятки.
+Множення на 10 додає десяткову одиницю до кожної групи: 6 × 10 = 60.
 
 ##### Пояснювати й застосовувати множення на 0 та 1
 
-Definition: [Definition](./arithmetic/multiply/skills/by0And1.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by0And1.data.ts)
 
-Пояснювати й застосовувати множення на 0 та 1.
+Порожня множина груп дає нуль, а одна група зберігає початкову кількість.
 
 ##### Пояснювати переставний закон множення за допомогою моделей
 
-Definition: [Definition](./arithmetic/multiply/skills/commutative.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/commutative.data.ts)
 
-Пояснювати переставний закон множення за допомогою моделей.
+Масив 3 × 5 можна повернути та побачити 5 × 3; число клітинок залишається 15.
 
 ##### Змінювати групування множників для зручного обчислення
 
-Definition: [Definition](./arithmetic/multiply/skills/associative.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/associative.data.ts)
 
-Змінювати групування множників для зручного обчислення.
+У 2 × (3 × 4) та (2 × 3) × 4 однакова загальна кількість предметів, хоча групи утворено в іншому порядку.
 
 ##### Розкладати один множник на частини та знаходити суму часткових добутків
 
-Definition: [Definition](./arithmetic/multiply/skills/distributive.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/distributive.data.ts)
 
-Розкладати один множник на частини та знаходити суму часткових добутків.
+Для 6 × 14 можна поділити 14 на 10 і 4, а потім додати 6 × 10 та 6 × 4.
 
 ##### Виводити незнайомі табличні добутки з відомих, а не лише пригадувати їх
 
-Definition: [Definition](./arithmetic/multiply/skills/deriveFacts.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/deriveFacts.data.ts)
 
-Виводити незнайомі табличні добутки з відомих, а не лише пригадувати їх.
+Добуток 7 × 8 можна знайти через 7 × 7 плюс сім, використовуючи засвоєний випадок.
 
 ##### Знаходити множення на 4 через подвійне подвоєння
 
-Definition: [Definition](./arithmetic/multiply/skills/doubleTwice.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/doubleTwice.data.ts)
 
-Знаходити множення на 4 через подвійне подвоєння.
+Чотири однакові групи можна отримати двома послідовними подвоєннями, а не окремим таблицевим правилом.
 
 ##### Множити круглі десятки на одноцифрові числа в межах 1000
 
-Definition: [Definition](./arithmetic/multiply/skills/roundTens.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/roundTens.data.ts)
 
-Множити круглі десятки на одноцифрові числа в межах 1000.
+Для 30 × 4 спочатку обчислюють 3 × 4 десятки, отримуючи 12 десятків, тобто 120.
 
 ##### Множити круглі сотні на одноцифрові числа в межах 1000
 
-Definition: [Definition](./arithmetic/multiply/skills/roundHundreds.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/roundHundreds.data.ts)
 
-Множити круглі сотні на одноцифрові числа в межах 1000.
+Для 200 × 3 множать дві сотні на три й отримують шість сотень.
 
 ##### Множити двоцифрове число на одноцифрове через розрядний розклад
 
-Definition: [Definition](./arithmetic/multiply/skills/twoDigitByOne.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/twoDigitByOne.data.ts)
 
-Множити двоцифрове число на одноцифрове через розрядний розклад.
+У 23 × 4 множення розкладають як 20 × 4 плюс 3 × 4, утримуючи одиниці й десятки окремо.
 
 ##### Множити трицифрове число на одноцифрове, якщо результат у межах 1000
 
-Definition: [Definition](./arithmetic/multiply/skills/threeDigitByOne.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/threeDigitByOne.data.ts)
 
-Множити трицифрове число на одноцифрове, якщо результат у межах 1000.
+У 124 × 3 добуток можна зібрати із 100 × 3, 20 × 3 та 4 × 3; підсумок не перевищує 1000.
 
 ##### Оцінювати добуток та перевіряти його оберненою дією або іншим способом
 
-Definition: [Definition](./arithmetic/multiply/skills/checkProduct.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/checkProduct.data.ts)
 
-Оцінювати добуток та перевіряти його оберненою дією або іншим способом.
+Перед 49 × 6 приблизно очікують 300, а множенням навпаки або повторним додаванням можна підтвердити точне значення.
 
 #### Ділення
 
 Skills: 24
 
-Description: Охоплює математичні вміння з теми «Ділення» у межах області «Арифметика».
+Частка як розподіл порівну або визначення числа рівних груп, табличні випадки, остача, обмеження й перевірка ділення.
 
-Definition: [Definition](./arithmetic/divide/divide.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/divide.data.ts)
 
 ##### Моделювати ділення як розподіл на задану кількість рівних груп
 
-Definition: [Definition](./arithmetic/divide/skills/equalSharing.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/equalSharing.data.ts)
 
-Моделювати ділення як розподіл на задану кількість рівних груп.
+Роздати 12 предметів порівну чотирьом учасникам означає знайти розмір кожної із чотирьох груп.
 
 ##### Моделювати ділення як визначення кількості груп заданого розміру
 
-Definition: [Definition](./arithmetic/divide/skills/equalGrouping.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/equalGrouping.data.ts)
 
-Моделювати ділення як визначення кількості груп заданого розміру.
+Із 12 предметів можна утворити три повні групи по 4; тут невідоме — кількість груп, а не предметів у кожній.
 
 ##### Пояснювати ділення як пошук невідомого множника
 
-Definition: [Definition](./arithmetic/divide/skills/relationToMultiplication.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/relationToMultiplication.data.ts)
 
-Пояснювати ділення як пошук невідомого множника.
+Якщо 5 × ? = 20, шуканий множник дорівнює 4; поділ знаходить невідомий компонент добутку.
 
 ##### Читати запис a ÷ b та співвідносити ділене, дільник і частку з моделлю
 
-Definition: [Definition](./arithmetic/divide/skills/readExpression.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/readExpression.data.ts)
 
-Читати запис a ÷ b та співвідносити ділене, дільник і частку з моделлю.
+У 12 ÷ 3 число 12 — уся кількість, 3 задає розподіл, а 4 — його результат у відповідній моделі.
 
 ##### Обчислювати табличні випадки ділення на 2
 
-Definition: [Definition](./arithmetic/divide/skills/by2.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by2.data.ts)
 
-Обчислювати табличні випадки ділення на 2.
+Для ділення на 2 корисна модель половини парної кількості: 14 ÷ 2 = 7.
 
 ##### Обчислювати табличні випадки ділення на 3
 
-Definition: [Definition](./arithmetic/divide/skills/by3.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by3.data.ts)
 
-Обчислювати табличні випадки ділення на 3.
+У 18 ÷ 3 добуток 3 × 6 = 18 відразу дає частку 6.
 
 ##### Обчислювати табличні випадки ділення на 4
 
-Definition: [Definition](./arithmetic/divide/skills/by4.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by4.data.ts)
 
-Обчислювати табличні випадки ділення на 4.
+Поділ 24 на чотири рівні частини має результат 6; перевірка — 4 × 6.
 
 ##### Обчислювати табличні випадки ділення на 5
 
-Definition: [Definition](./arithmetic/divide/skills/by5.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by5.data.ts)
 
-Обчислювати табличні випадки ділення на 5.
+Оскільки 5 × 7 = 35, ділення 35 на 5 повертає сім рівних груп.
 
 ##### Обчислювати табличні випадки ділення на 6
 
-Definition: [Definition](./arithmetic/divide/skills/by6.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by6.data.ts)
 
-Обчислювати табличні випадки ділення на 6.
+Для 36 ÷ 6 частка 6 випливає з відомого квадрата шістки.
 
 ##### Обчислювати табличні випадки ділення на 7
 
-Definition: [Definition](./arithmetic/divide/skills/by7.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by7.data.ts)
 
-Обчислювати табличні випадки ділення на 7.
+Поділ 42 на сім повних груп дає по шість у кожній.
 
 ##### Обчислювати табличні випадки ділення на 8
 
-Definition: [Definition](./arithmetic/divide/skills/by8.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by8.data.ts)
 
-Обчислювати табличні випадки ділення на 8.
+Добуток 8 × 4 = 32 дає діленню 32 ÷ 8 частку 4.
 
 ##### Обчислювати табличні випадки ділення на 9
 
-Definition: [Definition](./arithmetic/divide/skills/by9.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by9.data.ts)
 
-Обчислювати табличні випадки ділення на 9.
+Табличне ділення 54 ÷ 9 пов’язане з добутком 9 × 6 = 54.
 
 ##### Пояснювати й застосовувати ділення на 1 та числа на самого себе (для ненульового числа)
 
-Definition: [Definition](./arithmetic/divide/skills/by1AndSelf.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by1AndSelf.data.ts)
 
-Пояснювати й застосовувати ділення на 1 та числа на самого себе (для ненульового числа).
+Ділити на один означає залишити всю кількість в одній групі; ненульове число, поділене на себе, дає одну групу.
 
 ##### Пояснювати результат ділення нуля на ненульове число
 
-Definition: [Definition](./arithmetic/divide/skills/zeroDividend.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/zeroDividend.data.ts)
 
-Пояснювати результат ділення нуля на ненульове число.
+Якщо нуль предметів розподілити між трьома учасниками, кожен отримає нуль; дільник має бути ненульовим.
 
 ##### Розпізнавати, що ділення на нуль не визначене
 
-Definition: [Definition](./arithmetic/divide/skills/noDivisionByZero.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/noDivisionByZero.data.ts)
 
-Розпізнавати, що ділення на нуль не визначене.
+Не існує визначеної частки для 5 ÷ 0; її не можна встановити множенням на нуль.
 
 ##### Знаходити половину парної кількості та пов’язувати це з подвоєнням
 
-Definition: [Definition](./arithmetic/divide/skills/doubleHalf.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/doubleHalf.data.ts)
 
-Знаходити половину парної кількості та пов’язувати це з подвоєнням.
+Половина 18 — дев’ять, бо дві рівні дев’ятки утворюють 18; зв’язок працює й у зворотному напрямку.
 
 ##### Ділити круглі десятки на одноцифрові числа в межах 1000
 
-Definition: [Definition](./arithmetic/divide/skills/roundTens.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/roundTens.data.ts)
 
-Ділити круглі десятки на одноцифрові числа в межах 1000.
+У 80 ÷ 4 вісім десятків ділять на чотири групи, отримуючи по два десятки.
 
 ##### Ділити круглі сотні на одноцифрові числа в межах 1000
 
-Definition: [Definition](./arithmetic/divide/skills/roundHundreds.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/roundHundreds.data.ts)
 
-Ділити круглі сотні на одноцифрові числа в межах 1000.
+У 600 ÷ 3 шість сотень поділяють на три рівні частини — по дві сотні.
 
 ##### Ділити двоцифрові числа на одноцифрові позатабличним способом
 
-Definition: [Definition](./arithmetic/divide/skills/twoDigitByOne.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/twoDigitByOne.data.ts)
 
-Ділити двоцифрові числа на одноцифрові позатабличним способом.
+Для 84 ÷ 4 можна поділити 80 та 4 окремо, а потім додати частки.
 
 ##### Ділити окремі трицифрові числа на одноцифрові через розрядний розклад
 
-Definition: [Definition](./arithmetic/divide/skills/threeDigitByOne.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/threeDigitByOne.data.ts)
 
-Ділити окремі трицифрові числа на одноцифрові через розрядний розклад.
+У 648 ÷ 3 частки від 600, 30 і 18 можна зібрати в один результат за коректного розряду.
 
 ##### Знаходити частку й остачу під час ділення натуральних чисел
 
-Definition: [Definition](./arithmetic/divide/skills/withRemainder.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/withRemainder.data.ts)
 
-Знаходити частку й остачу під час ділення натуральних чисел.
+У 17 ÷ 5 можна отримати три повні п’ятірки й залишок два; не всі ділення натуральних чисел точні.
 
 ##### Перевіряти, що невід’ємна остача менша за дільник
 
-Definition: [Definition](./arithmetic/divide/skills/remainderLessDivisor.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/remainderLessDivisor.data.ts)
 
-Перевіряти, що невід’ємна остача менша за дільник.
+Для дільника 5 остача може бути 0, 1, 2, 3 або 4, але не 5 чи більше.
 
 ##### Перевіряти частку множенням, з урахуванням остачі за її наявності
 
-Definition: [Definition](./arithmetic/divide/skills/checkQuotient.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/checkQuotient.data.ts)
 
-Перевіряти частку множенням, з урахуванням остачі за її наявності.
+Рівність «дільник × частка + остача = ділене» підтверджує відповідь і показує, куди повернувся залишок.
 
 ##### Розпізнавати помилку в діленні або некоректну остачу за моделлю чи перевіркою
 
-Definition: [Definition](./arithmetic/divide/skills/errorDetection.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/errorDetection.data.ts)
 
-Розпізнавати помилку в діленні або некоректну остачу за моделлю чи перевіркою.
+Якщо при 19 ÷ 4 названо остачу 7, модель виявляє, що з неї можна скласти ще одну повну четвірку.
 
 ### Алгебра
 
 Groups: 5 · Skills: 17
 
-Definition: [Definition](./algebra/algebra.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/algebra.data.ts)
 
-Description: Математична область «Алгебра», яка об'єднує споріднені вміння та поняття.
+Формує перехід від конкретних обчислень до виразів, рівностей, невідомих величин і правил побудови послідовностей без переходу до формальної алгебри вищих класів.
 
 #### Вирази
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Вирази» у межах області «Алгебра».
+Зміст математичного запису з діями, дужками й змінними; правильний порядок виконання операцій.
 
-Definition: [Definition](./algebra/expressions/expressions.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/expressions.data.ts)
 
 ##### Читати та записувати числові вирази з арифметичними діями
 
-Definition: [Definition](./algebra/expressions/skills/readNumericExpressions.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/readNumericExpressions.data.ts)
 
-Читати та записувати числові вирази з арифметичними діями.
+Запис 7 + 5 або 18 ÷ 3 позначає операцію над числами, а не лише словесну команду; значення можна знайти окремо.
 
 ##### Обчислювати вирази з дужками, пояснюючи пріоритет дій
 
-Definition: [Definition](./algebra/expressions/skills/parentheses.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/parentheses.data.ts)
 
-Обчислювати вирази з дужками, пояснюючи пріоритет дій.
+У 2 × (3 + 4) спочатку визначають суму в дужках, після чого множать на 2; вилучення дужок може змінити результат.
 
 ##### Обчислювати вирази з кількома арифметичними діями за правилами порядку
 
-Definition: [Definition](./algebra/expressions/skills/orderOfOperations.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/orderOfOperations.data.ts)
 
-Обчислювати вирази з кількома арифметичними діями за правилами порядку.
+У 6 + 2 × 5 множення виконується перед додаванням, тому значення дорівнює 16, а не 40.
 
 ##### Обчислювати значення найпростішого буквеного виразу за заданого значення змінної
 
-Definition: [Definition](./algebra/expressions/skills/variableValue.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/variableValue.data.ts)
 
-Обчислювати значення найпростішого буквеного виразу за заданого значення змінної.
+Якщо a = 4, вираз a + 7 має значення 11; літера замінює визначене число в межах цієї задачі.
 
 ##### Пояснювати помилку, спричинену неправильним порядком дій
 
-Definition: [Definition](./algebra/expressions/skills/identifyExpressionError.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/identifyExpressionError.data.ts)
 
-Пояснювати помилку, спричинену неправильним порядком дій.
+Результат 6 + 3 × 2 = 18 є наслідком некоректної черговості: множення має передувати додаванню.
 
 #### Рівності
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Рівності» у межах області «Алгебра».
+Рівність як однаковість значень двох виразів, істинність записів та відновлення пропущеного компонента.
 
-Definition: [Definition](./algebra/equalities/equalities.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/equalities.data.ts)
 
 ##### Сприймати знак рівності як рівність значень обох частин, а не команду «порахуй»
 
-Definition: [Definition](./algebra/equalities/skills/equalityMeaning.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/equalityMeaning.data.ts)
 
-Сприймати знак рівності як рівність значень обох частин, а не команду «порахуй».
+Запис 4 + 3 = 5 + 2 є істинним, хоча справа також вираз, а не просто готова відповідь.
 
 ##### Перевіряти правильність числової рівності або нерівності
 
-Definition: [Definition](./algebra/equalities/skills/trueFalseEquality.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/trueFalseEquality.data.ts)
 
-Перевіряти правильність числової рівності або нерівності.
+Для рівності 8 + 3 = 12 − 1 обидві сторони мають значення 11; нерівність перевіряють за фактичними значеннями.
 
 ##### Добирати пропущене число так, щоб рівність була істинною
 
-Definition: [Definition](./algebra/equalities/skills/completeEquality.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/completeEquality.data.ts)
 
-Добирати пропущене число так, щоб рівність була істинною.
+У 7 + □ = 12 пропуск заповнюють числом 5, щоб обидві частини запису стали рівними.
 
 #### Невідомі
 
 Skills: 6
 
-Description: Охоплює математичні вміння з теми «Невідомі» у межах області «Алгебра».
+Залежності між компонентами й результатами чотирьох арифметичних дій, що дозволяють визначити невідоме та перевірити його.
 
-Definition: [Definition](./algebra/unknowns/unknowns.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/unknowns.data.ts)
 
 ##### Знаходити невідомий доданок і перевіряти результат
 
-Definition: [Definition](./algebra/unknowns/skills/unknownAddend.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownAddend.data.ts)
 
-Знаходити невідомий доданок і перевіряти результат.
+У □ + 6 = 14 шукане знаходять як 14 − 6 і повертають у рівняння для перевірки.
 
 ##### Знаходити невідоме зменшуване і перевіряти результат
 
-Definition: [Definition](./algebra/unknowns/skills/unknownMinuend.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownMinuend.data.ts)
 
-Знаходити невідоме зменшуване і перевіряти результат.
+У □ − 4 = 9 початкове число відновлюють додаванням 9 + 4.
 
 ##### Знаходити невідомий від’ємник і перевіряти результат
 
-Definition: [Definition](./algebra/unknowns/skills/unknownSubtrahend.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownSubtrahend.data.ts)
 
-Знаходити невідомий від’ємник і перевіряти результат.
+У 15 − □ = 7 потрібно вилучити вісім, а не шукати різницю як нове невідоме зменшуване.
 
 ##### Знаходити невідомий множник за відомими добутком і множником
 
-Definition: [Definition](./algebra/unknowns/skills/unknownFactor.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownFactor.data.ts)
 
-Знаходити невідомий множник за відомими добутком і множником.
+У □ × 5 = 20 значення пропуску дорівнює 4, оскільки 20 ÷ 5 = 4.
 
 ##### Знаходити невідоме ділене в простих рівняннях
 
-Definition: [Definition](./algebra/unknowns/skills/unknownDividend.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownDividend.data.ts)
 
-Знаходити невідоме ділене в простих рівняннях.
+У □ ÷ 3 = 7 шукане ділене — це сім рівних груп по три одиниці, тобто 21.
 
 ##### Знаходити невідомий дільник у простих рівняннях із ненульовими числами
 
-Definition: [Definition](./algebra/unknowns/skills/unknownDivisor.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownDivisor.data.ts)
 
-Знаходити невідомий дільник у простих рівняннях із ненульовими числами.
+У 24 ÷ □ = 6 потрібен дільник 4; його перевіряють множенням 6 × 4.
 
 #### Закономірності
 
 Skills: 2
 
-Description: Охоплює математичні вміння з теми «Закономірності» у межах області «Алгебра».
+Повторювана зміна чисел за правилом і розпізнавання структури послідовності за кількома членами.
 
-Definition: [Definition](./algebra/patterns/patterns.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/patterns.data.ts)
 
 ##### Знаходити й продовжувати числову закономірність з постійним кроком
 
-Definition: [Definition](./algebra/patterns/skills/arithmeticPattern.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/skills/arithmeticPattern.data.ts)
 
-Знаходити й продовжувати числову закономірність з постійним кроком.
+Ряд 4, 7, 10, 13 зберігає крок три; новий член отримують з попереднього тим самим приростом.
 
 ##### Визначати правило зростання закономірності за кількома прикладами
 
-Definition: [Definition](./algebra/patterns/skills/growingPattern.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/skills/growingPattern.data.ts)
 
-Визначати правило зростання закономірності за кількома прикладами.
+За кількома значеннями 2, 6, 10 можна припустити правило +4, але його треба перевірити на решті заданих членів.
 
 #### Символьне моделювання
 
 Skills: 1
 
-Description: Охоплює математичні вміння з теми «Символьне моделювання» у межах області «Алгебра».
+Подання відношень із короткої ситуації арифметичним або простим алгебраїчним записом.
 
-Definition: [Definition](./algebra/formalization/formalization.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/formalization/formalization.data.ts)
 
 ##### Перекладати просту ситуацію в числовий вираз або рівняння
 
-Definition: [Definition](./algebra/formalization/skills/translateSituation.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/algebra/formalization/skills/translateSituation.data.ts)
 
-Перекладати просту ситуацію в числовий вираз або рівняння.
+Ситуацію «три коробки по п’ять олівців» відображає 3 × 5; форма запису повинна відповідати саме відношенню в умові.
 
 ### Геометрія
 
 Groups: 10 · Skills: 35
 
-Definition: [Definition](./geometry/geometry.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/geometry.data.ts)
 
-Description: Математична область «Геометрія», яка об'єднує споріднені вміння та поняття.
+Охоплює просторові відношення, властивості плоских і об’ємних фігур, лінії й кути, геометричні перетворення, а також вимірювання периметра та площі.
 
 #### Просторова орієнтація
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Просторова орієнтація» у межах області «Геометрія».
+Словесні описи відносних положень і руху, маршрути за інструкціями та координування на простій сітці.
 
-Definition: [Definition](./geometry/orientation/orientation.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/orientation.data.ts)
 
 ##### Описувати положення об’єкта: ліворуч, праворуч, вище, нижче, між, перед, за
 
-Definition: [Definition](./geometry/orientation/skills/positionWords.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/positionWords.data.ts)
 
-Описувати положення об’єкта: ліворуч, праворуч, вище, нижче, між, перед, за.
+Опис «ліворуч від дерева, перед будинком» залежить від точки відліку; взаємне положення не тотожне абсолютній координаті.
 
 ##### Читати й складати простий план на сітці та описувати шлях/позицію
 
-Definition: [Definition](./geometry/orientation/skills/gridMapNavigation.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/gridMapNavigation.data.ts)
 
-Читати й складати простий план на сітці та описувати шлях/позицію.
+На сітці маршрут складають із переходів між клітинками чи вузлами; кінцеве місце має відповідати вихідним напрямкам.
 
 ##### Складати й виконувати покрокові просторові інструкції маршруту
 
-Definition: [Definition](./geometry/orientation/skills/spatialOrientationPath.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOrientationPath.data.ts)
 
-Складати й виконувати покрокові просторові інструкції маршруту.
+Інструкції «два кроки вперед, повернути праворуч» мають виконуватися в заданому порядку, бо перестановка кроків змінює маршрут.
 
 #### Плоскі фігури
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Плоскі фігури» у межах області «Геометрія».
+Ознаки багатокутників та інших плоских фігур, незалежні від масштабу й орієнтації, і складання фігур із частин.
 
-Definition: [Definition](./geometry/figures/figures.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/figures.data.ts)
 
 ##### Розпізнавати круг, трикутник, квадрат і прямокутник незалежно від розміру й повороту
 
-Definition: [Definition](./geometry/figures/skills/identify2dShapes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/identify2dShapes.data.ts)
 
-Розпізнавати круг, трикутник, квадрат і прямокутник незалежно від розміру й повороту.
+Повернутий квадрат залишається квадратом; важливі властивості сторін і кутів, а не звичне положення рисунка.
 
 ##### Класифікувати плоскі фігури за кількістю сторін і вершин
 
-Definition: [Definition](./geometry/figures/skills/shapeAttributes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/shapeAttributes.data.ts)
 
-Класифікувати плоскі фігури за кількістю сторін і вершин.
+Класифікацію здійснюють за геометричними ознаками: трикутник має три сторони, чотирикутник — чотири.
 
 ##### Розпізнавати многокутник і визначати його вершини та сторони
 
-Definition: [Definition](./geometry/figures/skills/polygon.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/polygon.data.ts)
 
-Розпізнавати многокутник і визначати його вершини та сторони.
+Многокутник обмежений відрізками; кожна точка сполучення сусідніх сторін є вершиною.
 
 ##### Пояснювати властивості трикутника, прямокутника та квадрата
 
-Definition: [Definition](./geometry/figures/skills/triangleRectangleSquare.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/triangleRectangleSquare.data.ts)
 
-Пояснювати властивості трикутника, прямокутника та квадрата.
+Квадрат є також прямокутником, оскільки має чотири прямі кути; додаткова властивість — рівність усіх сторін.
 
 ##### Складати нову фігуру з частин і розкладати складену фігуру на прості
 
-Definition: [Definition](./geometry/figures/skills/composeDecomposeShapes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/composeDecomposeShapes.data.ts)
 
-Складати нову фігуру з частин і розкладати складену фігуру на прості.
+З двох трикутників можна скласти іншу плоску фігуру; при розбитті початковий контур змінюється, але частини разом зберігають площину.
 
 #### Просторові тіла
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Просторові тіла» у межах області «Геометрія».
+Відмінності об’ємних тіл від плоских зображень, їхні поверхні, грані, ребра та вершини.
 
-Definition: [Definition](./geometry/solids/solids.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/solids.data.ts)
 
 ##### Впізнавати плоскі фігури на гранях/поверхнях просторових тіл
 
-Definition: [Definition](./geometry/solids/skills/shapeOnSolidSurface.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/shapeOnSolidSurface.data.ts)
 
-Впізнавати плоскі фігури на гранях/поверхнях просторових тіл.
+Квадрат на грані куба — плоска частина об’ємного тіла; не слід називати весь куб квадратом.
 
 ##### Розпізнавати куб, кулю, циліндр, конус та інші базові просторові тіла
 
-Definition: [Definition](./geometry/solids/skills/identify3dSolids.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/identify3dSolids.data.ts)
 
-Розпізнавати куб, кулю, циліндр, конус та інші базові просторові тіла.
+Куля не має плоских граней, а куб складається з них; зовнішній контур на рисунку не завжди достатній для розпізнавання.
 
 ##### Описувати грані, ребра й вершини куба та прямокутного паралелепіпеда
 
-Definition: [Definition](./geometry/solids/skills/spatialSolidsAttributes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/spatialSolidsAttributes.data.ts)
 
-Описувати грані, ребра й вершини куба та прямокутного паралелепіпеда.
+Для куба рахують шість граней, дванадцять ребер і вісім вершин, відрізняючи видимі елементи від усіх наявних.
 
 #### Лінії
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Лінії» у межах області «Геометрія».
+Точки, прямі, промені, відрізки й інші види ліній, їхні частини, взаємне положення і спосіб зображення.
 
-Definition: [Definition](./geometry/lines/lines.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/lines.data.ts)
 
 ##### Розрізняти точку, пряму, криву й ламану
 
-Definition: [Definition](./geometry/lines/skills/linesAndPoints.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/linesAndPoints.data.ts)
 
-Розрізняти точку, пряму, криву й ламану.
+Точка позначає місце, пряма не має кінців, крива може змінювати напрям, а ламана складається з відрізків.
 
 ##### Розпізнавати, будувати й позначати відрізок із кінцевими точками
 
-Definition: [Definition](./geometry/lines/skills/segment.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/segment.data.ts)
 
-Розпізнавати, будувати й позначати відрізок із кінцевими точками.
+Відрізок обмежений двома кінцями; його можна позначити літерами крайніх точок, наприклад AB.
 
 ##### Розрізняти промінь, відрізок і пряму
 
-Definition: [Definition](./geometry/lines/skills/ray.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/ray.data.ts)
 
-Розрізняти промінь, відрізок і пряму.
+Промінь має початок, але не має другого кінця; відрізок обмежений з обох боків, пряма — з жодного.
 
 ##### Розрізняти замкнені й незамкнені лінії
 
-Definition: [Definition](./geometry/lines/skills/closedOpenLines.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/closedOpenLines.data.ts)
 
-Розрізняти замкнені й незамкнені лінії.
+Контур без розриву може бути замкненим, а лінія з різними початком і кінцем — незамкненою.
 
 ##### Розпізнавати паралельні та перпендикулярні прямі на рисунках і в довкіллі
 
-Definition: [Definition](./geometry/lines/skills/parallelPerpendicular.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/parallelPerpendicular.data.ts)
 
-Розпізнавати паралельні та перпендикулярні прямі на рисунках і в довкіллі.
+Рейки однієї колії ілюструють паралельність; суміжні краї зошита в куті ілюструють перпендикулярність.
 
 #### Кути
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Кути» у межах області «Геометрія».
+Кут як геометричне відношення променів і величина повороту, з прямим кутом як орієнтиром для класифікації.
 
-Definition: [Definition](./geometry/angles/angles.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/angles.data.ts)
 
 ##### Інтерпретувати кут як величину повороту й порівнювати кути з прямим
 
-Definition: [Definition](./geometry/angles/skills/angleAsTurn.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/angleAsTurn.data.ts)
 
-Інтерпретувати кут як величину повороту й порівнювати кути з прямим.
+Поворот на чверть оберту дає прямий кут, на меншу частку — гострий; довжина сторін рисунка не визначає величину кута.
 
 ##### Розпізнавати прямий кут і перевіряти його за еталоном
 
-Definition: [Definition](./geometry/angles/skills/rightAngle.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/rightAngle.data.ts)
 
-Розпізнавати прямий кут і перевіряти його за еталоном.
+Кут аркуша чи косинця є еталоном 90°; зіставлення сторін перевіряє прямокутність незалежно від нахилу.
 
 ##### Розрізняти гострий, прямий і тупий кути на наочних прикладах
 
-Definition: [Definition](./geometry/angles/skills/angleTypes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/angleTypes.data.ts)
 
-Розрізняти гострий, прямий і тупий кути на наочних прикладах.
+Порівнюють розкриття променів із прямим кутом: менше нього — гострий, більше, але менше розгорнутого — тупий.
 
 #### Коло
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Коло» у межах області «Геометрія».
+Коло як межа круга; центр, радіус, діаметр та побудова фігури за сталою відстанню від центру.
 
-Definition: [Definition](./geometry/circles/circles.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/circles.data.ts)
 
 ##### Розрізняти коло та круг
 
-Definition: [Definition](./geometry/circles/skills/circleDisk.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/circleDisk.data.ts)
 
-Розрізняти коло та круг.
+Коло — лише замкнена крива межі, тоді як круг включає всі точки всередині цієї межі.
 
 ##### Показувати центр, радіус і діаметр кола та пов’язувати діаметр із двома радіусами
 
-Definition: [Definition](./geometry/circles/skills/radiusDiameter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/radiusDiameter.data.ts)
 
-Показувати центр, радіус і діаметр кола та пов’язувати діаметр із двома радіусами.
+Діаметр проходить через центр і має довжину двох радіусів; усі радіуси одного кола рівні.
 
 ##### Будувати коло заданого радіуса циркулем
 
-Definition: [Definition](./geometry/circles/skills/drawCircle.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/drawCircle.data.ts)
 
-Будувати коло заданого радіуса циркулем.
+Під час роботи циркулем розхил фіксує відстань від центру до кожної точки лінії; зміна розхилу дає інший радіус.
 
 #### Перетворення
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Перетворення» у межах області «Геометрія».
+Зміни положення фігури поворотом, зсувом і віддзеркаленням, а також симетричність щодо осі.
 
-Definition: [Definition](./geometry/transformations/transformations.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/transformations.data.ts)
 
 ##### Демонструвати чверть-, пів- і три-чверть оберту за і проти годинникової стрілки
 
-Definition: [Definition](./geometry/transformations/skills/turnsQuarters.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/turnsQuarters.data.ts)
 
-Демонструвати чверть-, пів- і три-чверть оберту за і проти годинникової стрілки.
+Чверть оберту відповідає 90°, пів оберту — 180°, три чверті — 270°; напрям повороту змінює кінцеве положення.
 
 ##### Виконувати та розпізнавати прості зсуви й віддзеркалення фігури
 
-Definition: [Definition](./geometry/transformations/skills/translationsReflections.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/translationsReflections.data.ts)
 
-Виконувати та розпізнавати прості зсуви й віддзеркалення фігури.
+Зсув переміщує всі точки однаково, а віддзеркалення змінює орієнтацію відносно осі; самі розміри не змінюються.
 
 ##### Знаходити вісь симетрії у простих фігурах і добудовувати симетричну частину
 
-Definition: [Definition](./geometry/transformations/skills/reflectionSymmetry.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/reflectionSymmetry.data.ts)
 
-Знаходити вісь симетрії у простих фігурах і добудовувати симетричну частину.
+Відповідні точки симетричних половин лежать на однакових відстанях від осі з різних її боків.
 
 #### Периметр
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Периметр» у межах області «Геометрія».
+Довжина замкненої межі багатокутника як сума сторін, включно з прямокутником і квадратом.
 
-Definition: [Definition](./geometry/perimeter/perimeter.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/perimeter.data.ts)
 
 ##### Вимірювати периметр многокутника як суму довжин сторін
 
-Definition: [Definition](./geometry/perimeter/skills/measurePerimeter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/measurePerimeter.data.ts)
 
-Вимірювати периметр многокутника як суму довжин сторін.
+Для фігури зі сторонами 3, 4 і 5 см довжина контуру становить 12 см; внутрішню поверхню тут не вимірюють.
 
 ##### Обчислювати периметр прямокутника за довжинами його сторін
 
-Definition: [Definition](./geometry/perimeter/skills/rectanglePerimeter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/rectanglePerimeter.data.ts)
 
-Обчислювати периметр прямокутника за довжинами його сторін.
+Для сторін a та b обхід прямокутного контуру дає a + b + a + b, а не добуток a × b.
 
 ##### Обчислювати периметр квадрата за довжиною сторони
 
-Definition: [Definition](./geometry/perimeter/skills/squarePerimeter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/squarePerimeter.data.ts)
 
-Обчислювати периметр квадрата за довжиною сторони.
+У квадрата всі чотири сторони рівні, отже довжину контуру отримують як чотири довжини сторони.
 
 ##### Знаходити невідому сторону прямокутника за периметром та іншими сторонами
 
-Definition: [Definition](./geometry/perimeter/skills/unknownSideFromPerimeter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/unknownSideFromPerimeter.data.ts)
 
-Знаходити невідому сторону прямокутника за периметром та іншими сторонами.
+Якщо периметр прямокутника 20 см, а одна сторона 6 см, решта контуру визначає сторону 4 см.
 
 #### Площа
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Площа» у межах області «Геометрія».
+Величина частини площини, яку займає фігура, через одиничні квадрати, прямокутні моделі та розбиття складених форм.
 
-Definition: [Definition](./geometry/area/area.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/area.data.ts)
 
 ##### Розбивати прямокутну складену фігуру на прямокутники та додавати площі частин
 
-Definition: [Definition](./geometry/area/skills/compositeArea.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/compositeArea.data.ts)
 
-Розбивати прямокутну складену фігуру на прямокутники та додавати площі частин.
+Складену Г-подібну фігуру можна поділити на два прямокутники без перекриттів, після чого підсумувати їхні площі.
 
 ##### Розуміти площу як міру поверхні, вкритої однаковими одиничними квадратами
 
-Definition: [Definition](./geometry/area/skills/areaAsCovering.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/areaAsCovering.data.ts)
 
-Розуміти площу як міру поверхні, вкритої однаковими одиничними квадратами.
+Площа описує заповнення поверхні, тож одиничні квадрати повинні мати однаковий розмір і не перекриватися.
 
 ##### Визначати площу простої фігури підрахунком одиничних квадратів
 
-Definition: [Definition](./geometry/area/skills/countUnitSquares.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/countUnitSquares.data.ts)
 
-Визначати площу простої фігури підрахунком одиничних квадратів.
+Якщо фігура охоплює 12 повних одиничних клітинок, її площа дорівнює 12 квадратним одиницям незалежно від форми розташування.
 
 ##### Пов’язувати площу прямокутника з добутком довжин його сторін у цілих одиницях
 
-Definition: [Definition](./geometry/area/skills/rectangleAreaModel.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/rectangleAreaModel.data.ts)
 
-Пов’язувати площу прямокутника з добутком довжин його сторін у цілих одиницях.
+Прямокутник із чотирьох рядів по три клітинки займає 12 квадратних одиниць; добуток є скороченим підрахунком клітинок.
 
 #### Зв’язок периметра та площі
 
 Skills: 2
 
-Description: Охоплює математичні вміння з теми «Зв’язок периметра та площі» у межах області «Геометрія».
+Незалежність вимірювань контуру та внутрішньої поверхні: однакове значення одного не визначає іншого.
 
-Definition: [Definition](./geometry/perimeterArea/perimeterArea.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/perimeterArea.data.ts)
 
 ##### Будувати фігури з однаковим периметром і різними площами або навпаки
 
-Definition: [Definition](./geometry/perimeterArea/skills/areaPerimeterContrast.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/skills/areaPerimeterContrast.data.ts)
 
-Будувати фігури з однаковим периметром і різними площами або навпаки.
+Два прямокутники можуть мати однаковий контур, але різну кількість внутрішніх клітинок; жодна величина не визначає іншу автоматично.
 
 ##### Розрізняти периметр і площу та добирати відповідний спосіб вимірювання
 
-Definition: [Definition](./geometry/perimeterArea/skills/perimeterVsArea.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/skills/perimeterVsArea.data.ts)
 
-Розрізняти периметр і площу та добирати відповідний спосіб вимірювання.
+Для огорожі потрібна довжина краю, а для покриття підлоги — внутрішня поверхня; одиниці й способи обчислення різні.
 
 ### Вимірювання
 
 Groups: 5 · Skills: 21
 
-Definition: [Definition](./measurement/measurement.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/measurement.data.ts)
 
-Description: Математична область «Вимірювання», яка об'єднує споріднені вміння та поняття.
+Розглядає вимірювання фізичних величин через порівняння з одиницею, інструменти й шкали; охоплює довжину, масу, місткість, температуру та узгодження одиниць.
 
 #### Довжина
 
 Skills: 10
 
-Description: Охоплює математичні вміння з теми «Довжина» у межах області «Вимірювання».
+Безпосереднє та інструментальне порівняння відрізків, метричні одиниці різного масштабу й операції з однорідними довжинами.
 
-Definition: [Definition](./measurement/length/length.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/length.data.ts)
 
 ##### Порівнювати довжини безпосереднім накладанням і непрямим способом
 
-Definition: [Definition](./measurement/length/skills/compareLength.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/compareLength.data.ts)
 
-Порівнювати довжини безпосереднім накладанням і непрямим способом.
+Коротший із двох відрізків видно після суміщення початків; порівняти можна і через спільну стрічку-посередник.
 
 ##### Вимірювати довжину послідовним прикладанням однакових умовних одиниць
 
-Definition: [Definition](./measurement/length/skills/nonstandardLength.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/nonstandardLength.data.ts)
 
-Вимірювати довжину послідовним прикладанням однакових умовних одиниць.
+Умовні мірки прикладають без проміжків та накладень: різні за довжиною мірки дадуть різні числові результати.
 
 ##### Правильно користуватися лінійкою, починаючи вимірювання від нульової позначки
 
-Definition: [Definition](./measurement/length/skills/rulerZero.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
 
-Правильно користуватися лінійкою, починаючи вимірювання від нульової позначки.
+Шкала лінійки рахує проміжки між поділками, а не кількість надрукованих цифр; початок виміру — нуль.
 
 ##### Вимірювати та креслити відрізки заданої довжини в сантиметрах
 
-Definition: [Definition](./measurement/length/skills/measureCentimeters.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
 
-Вимірювати та креслити відрізки заданої довжини в сантиметрах.
+Відрізок 5 см має п’ять сантиметрових проміжків між його кінцями, а не п’ять поділок разом із початковою.
 
 ##### Вимірювати короткі відрізки в міліметрах і співвідносити мм із см
 
-Definition: [Definition](./measurement/length/skills/millimeters.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/millimeters.data.ts)
 
-Вимірювати короткі відрізки в міліметрах і співвідносити мм із см.
+Десять міліметрів утворюють сантиметр; мала шкала потрібна там, де цілих сантиметрів недостатньо.
 
 ##### Співвідносити дециметр і сантиметр та виконувати прості перетворення
 
-Definition: [Definition](./measurement/length/skills/decimeters.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/decimeters.data.ts)
 
-Співвідносити дециметр і сантиметр та виконувати прості перетворення.
+Один дециметр дорівнює десяти сантиметрам, тому 3 дм відповідають 30 см.
 
 ##### Співвідносити метр, дециметр і сантиметр у практичних вимірах
 
-Definition: [Definition](./measurement/length/skills/meters.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/meters.data.ts)
 
-Співвідносити метр, дециметр і сантиметр у практичних вимірах.
+Метр складається із десяти дециметрів або ста сантиметрів; при порівнянні записів величину зберігають.
 
 ##### Вибирати кілометри для великих відстаней і співвідносити їх із метрами
 
-Definition: [Definition](./measurement/length/skills/kilometers.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/kilometers.data.ts)
 
-Вибирати кілометри для великих відстаней і співвідносити їх із метрами.
+Великі відстані між населеними пунктами доцільно виражати кілометрами: 2 км дорівнюють 2000 м.
 
 ##### Оцінювати довжину та перевіряти результат інструментом
 
-Definition: [Definition](./measurement/length/skills/estimateLength.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/estimateLength.data.ts)
 
-Оцінювати довжину та перевіряти результат інструментом.
+Приблизна довжина зорово оцінюється до виміру, а інструмент показує величину помилки оцінки.
 
 ##### Додавати й віднімати довжини в узгоджених одиницях
 
-Definition: [Definition](./measurement/length/skills/addSubtractLengths.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/addSubtractLengths.data.ts)
 
-Додавати й віднімати довжини в узгоджених одиницях.
+При обчисленні 30 см + 2 дм спочатку переходять до спільних одиниць: 30 см + 20 см.
 
 #### Маса
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Маса» у межах області «Вимірювання».
+Порівняння ваги тіл і числове вимірювання маси через рівновагу, покази вагів та співвідношення одиниць.
 
-Definition: [Definition](./measurement/mass/mass.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/mass.data.ts)
 
 ##### Застосовувати співвідношення центнера й кілограма у задачах
 
-Definition: [Definition](./measurement/mass/skills/centnerKilogram.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/centnerKilogram.data.ts)
 
-Застосовувати співвідношення центнера й кілограма у задачах.
+Один центнер містить сто кілограмів; регіональну одиницю не слід плутати з метричною тонною.
 
 ##### Порівнювати масу предметів за допомогою терезів або рівноваги
 
-Definition: [Definition](./measurement/mass/skills/compareMass.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/compareMass.data.ts)
 
-Порівнювати масу предметів за допомогою терезів або рівноваги.
+На двочашкових терезах переважує важча сторона; рівновага свідчить про рівність мас двох наборів.
 
 ##### Використовувати кілограм і грам та співвідносити їх
 
-Definition: [Definition](./measurement/mass/skills/kilogramGram.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/kilogramGram.data.ts)
 
-Використовувати кілограм і грам та співвідносити їх.
+Один кілограм дорівнює тисячі грамів; для легкого предмета зручні грами, для важкого — кілограми.
 
 ##### Зчитувати покази вагів і записувати результат із одиницею
 
-Definition: [Definition](./measurement/mass/skills/weighObject.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/weighObject.data.ts)
 
-Зчитувати покази вагів і записувати результат із одиницею.
+Показ 750 на шкалі вагів має сенс лише разом із підписом «г» або іншою одиницею.
 
 #### Місткість
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Місткість» у межах області «Вимірювання».
+Кількість рідини, що вміщується в посудині, вимірювання літрами і мілілітрами та їхнє порівняння.
 
-Definition: [Definition](./measurement/capacity/capacity.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/capacity.data.ts)
 
 ##### Порівнювати місткість посудин через переливання або вимірювання
 
-Definition: [Definition](./measurement/capacity/skills/capacityConcept.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/capacityConcept.data.ts)
 
-Порівнювати місткість посудин через переливання або вимірювання.
+Якщо одну посудину наповнити іншою, можна порівняти об’єми рідини незалежно від висоти чи форми ємностей.
 
 ##### Вимірювати й оцінювати місткість у літрах
 
-Definition: [Definition](./measurement/capacity/skills/liter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/liter.data.ts)
 
-Вимірювати й оцінювати місткість у літрах.
+Літр — стандартна одиниця місткості; високу вузьку посудину не можна автоматично вважати місткішою за низьку широку.
 
 ##### Використовувати мілілітри та співвідносити їх із літрами
 
-Definition: [Definition](./measurement/capacity/skills/milliliter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/milliliter.data.ts)
 
-Використовувати мілілітри та співвідносити їх із літрами.
+У літрі є 1000 мілілітрів; 500 мл — це пів літра за тієї самої одиниці об’єму.
 
 #### Температура
 
 Skills: 1
 
-Description: Охоплює математичні вміння з теми «Температура» у межах області «Вимірювання».
+Визначення невід’ємних показів термометра за поділками шкали та правильне зазначення одиниці.
 
-Definition: [Definition](./measurement/temperature/temperature.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/temperature/temperature.data.ts)
 
 ##### Зчитувати невід’ємну температуру з простої шкали термометра
 
-Definition: [Definition](./measurement/temperature/skills/readTemperature.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/temperature/skills/readTemperature.data.ts)
 
-Зчитувати невід’ємну температуру з простої шкали термометра.
+Між позначками 0 і 10 на рівномірній шкалі термометра проміжні поділки мають числові значення; без одиниці запис неповний.
 
 #### Вимірювальні навички
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Вимірювальні навички» у межах області «Вимірювання».
+Загальні принципи вибору одиниці, узгодження вимірів і виконання обчислень із порівнюваними величинами.
 
-Definition: [Definition](./measurement/general/general.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/general.data.ts)
 
 ##### Пояснювати, чому для порівняння вимірів потрібна узгоджена одиниця
 
-Definition: [Definition](./measurement/general/skills/standardUnitPurpose.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/standardUnitPurpose.data.ts)
 
-Пояснювати, чому для порівняння вимірів потрібна узгоджена одиниця.
+Значення «10» на шкалах сантиметрів і міліметрів не позначають однакової довжини; одиниці є частиною виміру.
 
 ##### Вибирати доречну одиницю для довжини, маси чи місткості
 
-Definition: [Definition](./measurement/general/skills/chooseAppropriateUnit.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/chooseAppropriateUnit.data.ts)
 
-Вибирати доречну одиницю для довжини, маси чи місткості.
+Шлях між містами зручно задавати в кілометрах, масу яблука — у грамах, місткість пляшки — у літрах.
 
 ##### Розв’язувати практичні задачі на величини в однакових або сумісних одиницях
 
-Definition: [Definition](./measurement/general/skills/wordProblemsMeasures.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/wordProblemsMeasures.data.ts)
 
-Розв’язувати практичні задачі на величини в однакових або сумісних одиницях.
+Дії з 2 м і 30 см вимагають спільної одиниці або явного перетворення; відповідь має зберігати фізичний зміст.
 
 ### Час
 
 Groups: 3 · Skills: 13
 
-Definition: [Definition](./time/time.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/time.data.ts)
 
-Description: Математична область «Час», яка об'єднує споріднені вміння та поняття.
+Поєднує календарні цикли, способи запису моменту часу й обчислення тривалості подій; розмежовує дату, показ годинника та часовий інтервал.
 
 #### Календар
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Календар» у межах області «Час».
+Орієнтація в днях, тижнях, місяцях і роках, з урахуванням різної тривалості місяців та високосного року.
 
-Definition: [Definition](./time/calendar/calendar.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/calendar.data.ts)
 
 ##### Упорядковувати частини доби та пов’язувати їх із повсякденними подіями
 
-Definition: [Definition](./time/calendar/skills/daySequence.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/daySequence.data.ts)
 
-Упорядковувати частини доби та пов’язувати їх із повсякденними подіями.
+Ранок, день, вечір і ніч утворюють повторюваний цикл; одна подія може відбуватися в різні його частини.
 
 ##### Пояснювати відмінність звичайного і високосного років та користуватися календарем
 
-Definition: [Definition](./time/calendar/skills/leapYearDays.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/leapYearDays.data.ts)
 
-Пояснювати відмінність звичайного і високосного років та користуватися календарем.
+Звичайний рік має 365 днів, високосний — 366; додатковий день припадає на лютий.
 
 ##### Називати дні тижня, місяці року й орієнтуватися в календарі
 
-Definition: [Definition](./time/calendar/skills/weekMonthYear.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/weekMonthYear.data.ts)
 
-Називати дні тижня, місяці року й орієнтуватися в календарі.
+Семиденний тиждень і послідовність місяців повторюються, але місяці мають різну тривалість.
 
 ##### Визначати кількість днів між календарними датами в нескладних випадках
 
-Definition: [Definition](./time/calendar/skills/calendarInterval.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/calendarInterval.data.ts)
 
-Визначати кількість днів між календарними датами в нескладних випадках.
+Для дат 10 і 13 числа одного місяця пройде три доби; підрахунок не дорівнює кількості перелічених дат включно.
 
 #### Годинник
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Годинник» у межах області «Час».
+Відповідність положень стрілок і цифрового запису певному моменту доби, включно з різною точністю відліку.
 
-Definition: [Definition](./time/clock/clock.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/clock.data.ts)
 
 ##### Читати 24-годинний запис часу та співвідносити його з часом доби
 
-Definition: [Definition](./time/clock/skills/read24HourClock.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/read24HourClock.data.ts)
 
-Читати 24-годинний запис часу та співвідносити його з часом доби.
+14:30 — це друга година тридцять хвилин після полудня; формат 24 години усуває неоднозначність «ранок/вечір».
 
 ##### Визначати час на аналоговому та цифровому годиннику з точністю до години
 
-Definition: [Definition](./time/clock/skills/readHour.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readHour.data.ts)
 
-Визначати час на аналоговому та цифровому годиннику з точністю до години.
+Положення годинної стрілки і цифровий запис 8:00 мають однаковий зміст; хвилинна стрілка стоїть на 12.
 
 ##### Зчитувати половину та чверть години на годиннику
 
-Definition: [Definition](./time/clock/skills/readHalfQuarter.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readHalfQuarter.data.ts)
 
-Зчитувати половину та чверть години на годиннику.
+За половини години хвилинна стрілка на 6, за чверті — на 3; годинна стрілка поступово рухається між числами.
 
 ##### Зчитувати час із точністю до п’яти хвилин
 
-Definition: [Definition](./time/clock/skills/readFiveMinute.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readFiveMinute.data.ts)
 
-Зчитувати час із точністю до п’яти хвилин.
+Поділка 1 на циферблаті відповідає п’яти хвилинам, 2 — десяти; інтервали однакові.
 
 ##### Зчитувати й записувати час із точністю до хвилини
 
-Definition: [Definition](./time/clock/skills/readMinute.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readMinute.data.ts)
 
-Зчитувати й записувати час із точністю до хвилини.
+Запис 09:17 показує сімнадцять хвилин після дев’ятої; кожна хвилинна поділка має окрему вагу.
 
 #### Тривалість
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Тривалість» у межах області «Час».
+Зв’язок секунд, хвилин і годин та знаходження інтервалу чи моменту за відомими часовими даними.
 
-Definition: [Definition](./time/duration/duration.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/duration.data.ts)
 
 ##### Застосовувати співвідношення 1 год = 60 хв
 
-Definition: [Definition](./time/duration/skills/convertHoursMinutes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/convertHoursMinutes.data.ts)
 
-Застосовувати співвідношення 1 год = 60 хв.
+Проміжок у півтори години дорівнює 90 хвилинам; одиниці переводять за коефіцієнтом 60.
 
 ##### Застосовувати співвідношення 1 хв = 60 с
 
-Definition: [Definition](./time/duration/skills/convertMinutesSeconds.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/convertMinutesSeconds.data.ts)
 
-Застосовувати співвідношення 1 хв = 60 с.
+Дві хвилини дорівнюють 120 секундам; секундний інтервал не слід плутати з показом секундної стрілки.
 
 ##### Знаходити тривалість події за часом початку та завершення
 
-Definition: [Definition](./time/duration/skills/eventDuration.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/eventDuration.data.ts)
 
-Знаходити тривалість події за часом початку та завершення.
+Від 10:15 до 11:00 проходить 45 хвилин; тривалість — різниця двох моментів, не сам показ годинника.
 
 ##### Знаходити час початку чи завершення за тривалістю події
 
-Definition: [Definition](./time/duration/skills/findStartOrEnd.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/findStartOrEnd.data.ts)
 
-Знаходити час початку чи завершення за тривалістю події.
+Подія тривалістю 35 хв, що почалася о 14:10, завершується о 14:45; зворотно можна визначити початок.
 
 ### Гроші
 
 Groups: 2 · Skills: 6
 
-Definition: [Definition](./money/money.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/money.data.ts)
 
-Description: Математична область «Гроші», яка об'єднує споріднені вміння та поняття.
+Застосовує арифметику до грошових номіналів, складання та порівняння сум, розрахунків вартості, решти й вибору покупок у межах бюджету.
 
 #### Грошові суми
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Грошові суми» у межах області «Гроші».
+Вартість, подана монетами й банкнотами певної валюти, еквівалентність наборів номіналів та співвідношення сум.
 
-Definition: [Definition](./money/denominations/denominations.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/denominations.data.ts)
 
 ##### Розпізнавати номінали монет і купюр заданої валюти
 
-Definition: [Definition](./money/denominations/skills/recognizeDenominations.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/recognizeDenominations.data.ts)
 
-Розпізнавати номінали монет і купюр заданої валюти.
+Номінал позначає вартість грошового знака, а не його розмір чи колір; розпізнавання залежить від обраної валюти.
 
 ##### Складати задану суму різними комбінаціями грошових одиниць
 
-Definition: [Definition](./money/denominations/skills/composeAmount.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/composeAmount.data.ts)
 
-Складати задану суму різними комбінаціями грошових одиниць.
+Суму 12 одиниць можна отримати як 10 + 2 чи 5 + 5 + 2, якщо відповідні номінали існують.
 
 ##### Порівнювати грошові суми в межах однієї валюти
 
-Definition: [Definition](./money/denominations/skills/compareAmounts.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/compareAmounts.data.ts)
 
-Порівнювати грошові суми в межах однієї валюти.
+Порівнюють спільну сумарну вартість, а не кількість монет: дві більші можуть коштувати більше за п’ять дрібних.
 
 #### Покупки
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Покупки» у межах області «Гроші».
+Застосування грошових розрахунків до ціни товару, кількості одиниць, решти та обмеженого бюджету.
 
-Definition: [Definition](./money/transactions/transactions.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/transactions.data.ts)
 
 ##### Знаходити решту після покупки
 
-Definition: [Definition](./money/transactions/skills/calculateChange.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/calculateChange.data.ts)
 
-Знаходити решту після покупки.
+Якщо товар коштує 37, а сплачено 50, повернути слід 13 грошових одиниць тієї самої валюти.
 
 ##### Розв’язувати задачі на ціну, кількість і загальну вартість
 
-Definition: [Definition](./money/transactions/skills/unitPriceTotal.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/unitPriceTotal.data.ts)
 
-Розв’язувати задачі на ціну, кількість і загальну вартість.
+За ціни 8 за одиницю три однакові предмети коштують 24; задача відрізняє одиничну ціну від загальної суми.
 
 ##### Вибирати покупки з урахуванням заданого бюджету
 
-Definition: [Definition](./money/transactions/skills/budgetConstraint.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/budgetConstraint.data.ts)
 
-Вибирати покупки з урахуванням заданого бюджету.
+За бюджету 40 набір товарів вартістю 43 недоступний, навіть якщо кожен предмет окремо дешевший за 40.
 
 ### Дані
 
 Groups: 3 · Skills: 15
 
-Definition: [Definition](./data/data.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/data.data.ts)
 
-Description: Математична область «Дані», яка об'єднує споріднені вміння та поняття.
+Охоплює формулювання запитань, збирання та класифікацію відомостей, їх подання в таблицях і діаграмах та обґрунтовані висновки за ними.
 
 #### Збирання даних
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Збирання даних» у межах області «Дані».
+Постановка дослідницького запитання, вибір ознак, підрахунок випадків і запис результатів спостереження.
 
-Definition: [Definition](./data/collection/collection.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/collection.data.ts)
 
 ##### Групувати об’єкти за однією або двома визначеними ознаками
 
-Definition: [Definition](./data/collection/skills/classifyByAttribute.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/classifyByAttribute.data.ts)
 
-Групувати об’єкти за однією або двома визначеними ознаками.
+Одні й ті самі предмети можна групувати за кольором або формою; дві ознаки утворюють спільні підкатегорії.
 
 ##### Формулювати запитання, для відповіді на яке потрібно зібрати дані
 
-Definition: [Definition](./data/collection/skills/formulateInvestigationQuestion.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/formulateInvestigationQuestion.data.ts)
 
-Формулювати запитання, для відповіді на яке потрібно зібрати дані.
+Запитання «який фрукт найпопулярніший у групі?» вимагає зібрати відповіді людей, а не відразу виконати арифметичну дію.
 
 ##### Збирати прості дані підрахунком та фіксувати частоти категорій
 
-Definition: [Definition](./data/collection/skills/collectCounts.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/collectCounts.data.ts)
 
-Збирати прості дані підрахунком та фіксувати частоти категорій.
+Для кожної категорії рахують кількість випадків; підсумок частот повинен відповідати загальному числу спостережень.
 
 ##### Записувати кількості умовними позначками й відновлювати їх
 
-Definition: [Definition](./data/collection/skills/tallyMarks.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/tallyMarks.data.ts)
 
-Записувати кількості умовними позначками й відновлювати їх.
+П’ять рисок можуть позначати п’ять відповідей; за позначками відновлюють точні кількості кожної категорії.
 
 ##### Заповнювати таблицю результатами спостереження або вимірювання
 
-Definition: [Definition](./data/collection/skills/fillSimpleTable.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/fillSimpleTable.data.ts)
 
-Заповнювати таблицю результатами спостереження або вимірювання.
+Рядки або стовпці мають узгоджені назви, щоб значення вимірювань не втратили одиниці й контекст.
 
 #### Подання даних
 
 Skills: 7
 
-Description: Охоплює математичні вміння з теми «Подання даних» у межах області «Дані».
+Відображення зібраних чисел у таблицях, піктограмах і діаграмах із правильним розумінням масштабу позначок.
 
-Definition: [Definition](./data/presentation/presentation.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/presentation.data.ts)
 
 ##### Фіксувати серію вимірювань на точковій/лінійній діаграмі з числовою віссю (line plot)
 
-Definition: [Definition](./data/presentation/skills/linePlotMeasurements.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/linePlotMeasurements.data.ts)
 
-Фіксувати серію вимірювань на точковій/лінійній діаграмі з числовою віссю (line plot).
+На числовій осі повторні вимірювання позначають над відповідними значеннями; число позначок показує частоту.
 
 ##### Читати значення з таблиці та відповідати на прості питання за нею
 
-Definition: [Definition](./data/presentation/skills/readSimpleTable.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readSimpleTable.data.ts)
 
-Читати значення з таблиці та відповідати на прості питання за нею.
+Щоб відповісти, скільки учнів обрали варіант Б, читають потрібний підписаний осередок, а не сусідній стовпець.
 
 ##### Читати піктограму, де один символ відповідає одному об’єкту
 
-Definition: [Definition](./data/presentation/skills/readPictograph.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readPictograph.data.ts)
 
-Читати піктограму, де один символ відповідає одному об’єкту.
+Кожна картинка означає рівно один об’єкт; кількість зображень тому дорівнює частоті категорії.
 
 ##### Будувати просту піктограму за підрахованими даними
 
-Definition: [Definition](./data/presentation/skills/buildPictograph.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/buildPictograph.data.ts)
 
-Будувати просту піктограму за підрахованими даними.
+Для значень 3, 2 і 4 потрібно намалювати саме 3, 2 та 4 значки відповідно до підписаних категорій.
 
 ##### Читати стовпчикову діаграму й порівнювати висоти стовпчиків
 
-Definition: [Definition](./data/presentation/skills/readBarChart.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readBarChart.data.ts)
 
-Читати стовпчикову діаграму й порівнювати висоти стовпчиків.
+Порівнюють стовпчики від спільної базової лінії та з однаковою шкалою; висота кодує число випадків.
 
 ##### Створювати просту стовпчикову діаграму за таблицею
 
-Definition: [Definition](./data/presentation/skills/buildBarChart.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/buildBarChart.data.ts)
 
-Створювати просту стовпчикову діаграму за таблицею.
+Числа з таблиці переносять у висоти стовпчиків за єдиним масштабом і з підписаними категоріями.
 
 ##### Читати діаграму, де одна позначка відповідає кільком одиницям
 
-Definition: [Definition](./data/presentation/skills/scaledChart.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/scaledChart.data.ts)
 
-Читати діаграму, де одна позначка відповідає кільком одиницям.
+Якщо одна позначка означає дві одиниці, три позначки дають шість; масштаб легенди не можна ігнорувати.
 
 #### Інтерпретація даних
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Інтерпретація даних» у межах області «Дані».
+Отримання висновків із числових даних, обчислення порівнянь та виявлення нестачі відомостей.
 
-Definition: [Definition](./data/interpretation/interpretation.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/interpretation.data.ts)
 
 ##### Знаходити різницю та суму кількостей за таблицею чи діаграмою
 
-Definition: [Definition](./data/interpretation/skills/compareCategories.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/compareCategories.data.ts)
 
-Знаходити різницю та суму кількостей за таблицею чи діаграмою.
+Із категорій 7 та 4 можна визначити різницю 3 і суму 11, зберігаючи той самий контекст даних.
 
 ##### Формулювати висновок, який обґрунтовують наведені дані
 
-Definition: [Definition](./data/interpretation/skills/interpretConclusion.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/interpretConclusion.data.ts)
 
-Формулювати висновок, який обґрунтовують наведені дані.
+Твердження «найчастіше обрали синій» виправдане лише тоді, коли у відповідної категорії справді найбільша частота.
 
 ##### Визначати, якої інформації бракує для відповіді на поставлене питання
 
-Definition: [Definition](./data/interpretation/skills/missingInformation.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/missingInformation.data.ts)
 
-Визначати, якої інформації бракує для відповіді на поставлене питання.
+Таблиця без підпису одиниці або без потрібної категорії може не дозволити визначити значення, про яке запитують.
 
 ### Ймовірність
 
 Groups: 2 · Skills: 4
 
-Definition: [Definition](./probability/probability.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/probability/probability.data.ts)
 
-Description: Математична область «Ймовірність», яка об'єднує споріднені вміння та поняття.
+Формує якісне розуміння випадковості: можливі, неможливі й достовірні результати, порівняння шансів та мінливість підсумків повторних випробувань.
 
 #### Випадкові події
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Випадкові події» у межах області «Ймовірність».
+Визначення множини результатів досліду й якісне порівняння можливості подій без хибного припущення про рівні шанси.
 
-Definition: [Definition](./probability/events/events.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/events.data.ts)
 
 ##### Розрізняти достовірні й неможливі події на конкретних прикладах
 
-Definition: [Definition](./probability/events/skills/certainImpossible.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/certainImpossible.data.ts)
 
-Розрізняти достовірні й неможливі події на конкретних прикладах.
+Звичайний шестигранний кубик не може показати 9, але обов’язково покаже число від 1 до 6; можливість не означає 50% шансів.
 
 ##### Порівнювати повсякденні події як більш або менш імовірні, пояснюючи вибір
 
-Definition: [Definition](./probability/events/skills/likelihoodLanguage.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/likelihoodLanguage.data.ts)
 
-Порівнювати повсякденні події як більш або менш імовірні, пояснюючи вибір.
+За чесного кубика отримати парне число і отримати саме шістку — події з різними шансами; обидві можливі, але не рівноймовірні.
 
 ##### Називати можливі результати простого випадкового експерименту
 
-Definition: [Definition](./probability/events/skills/listOutcomes.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/listOutcomes.data.ts)
 
-Називати можливі результати простого випадкового експерименту.
+Для підкидання монети простір результатів складається з двох сторін; перелік має враховувати всі передбачені умовами випадки.
 
 #### Експерименти
 
 Skills: 1
 
-Description: Охоплює математичні вміння з теми «Експерименти» у межах області «Ймовірність».
+Зміна емпіричних частот у повторних серіях випадкових випробувань, навіть якщо умови кожної серії ті самі.
 
-Definition: [Definition](./probability/experiments/experiments.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/probability/experiments/experiments.data.ts)
 
 ##### Порівнювати серії повторних випадкових експериментів і помічати відмінності результатів
 
-Definition: [Definition](./probability/experiments/skills/experimentVariation.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/probability/experiments/skills/experimentVariation.data.ts)
 
-Порівнювати серії повторних випадкових експериментів і помічати відмінності результатів.
+Дві серії по десять підкидань можуть дати різну кількість орлів; випадкова мінливість не свідчить сама по собі про зміну правил.
 
 ### Задачі
 
 Groups: 7 · Skills: 23
 
-Definition: [Definition](./problemSolving/problemSolving.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/problemSolving.data.ts)
 
-Description: Математична область «Задачі», яка об'єднує споріднені вміння та поняття.
+Охоплює переклад умов життєвої ситуації на математичну модель, добір операцій, планування кількох кроків і перевірку осмисленості відповіді.
 
 #### Аналіз умови
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Аналіз умови» у межах області «Задачі».
+Відокремлення запитання, відомих даних і прихованих припущень текстової задачі до вибору арифметичної операції.
 
-Definition: [Definition](./problemSolving/conditions/conditions.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/conditions.data.ts)
 
 ##### Виділяти умову задачі, відомі величини й запитання
 
-Definition: [Definition](./problemSolving/conditions/skills/identifyKnownUnknown.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/identifyKnownUnknown.data.ts)
 
-Виділяти умову задачі, відомі величини й запитання.
+Якщо відомо, що було 12 яблук і продали 5, слід виокремити початкову кількість, зміну і те, що потрібно знайти.
 
 ##### Розпізнавати зайві дані в текстовій задачі
 
-Definition: [Definition](./problemSolving/conditions/skills/findExtraneousData.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/findExtraneousData.data.ts)
 
-Розпізнавати зайві дані в текстовій задачі.
+У сюжеті про купівлю олівців колір рюкзака може не впливати на запитувану вартість; не всі числа та деталі потрібні.
 
 ##### Пояснювати, чому задачу неможливо розв’язати без додаткових даних
 
-Definition: [Definition](./problemSolving/conditions/skills/findMissingData.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/findMissingData.data.ts)
 
-Пояснювати, чому задачу неможливо розв’язати без додаткових даних.
+Якщо відома тільки ціна однієї речі, загальну вартість кількох речей не визначити без їхньої кількості.
 
 #### Моделі задач
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Моделі задач» у межах області «Задачі».
+Зв’язок між предметною ситуацією, малюнком, схемою та числовим виразом, що відображає потрібну дію.
 
-Definition: [Definition](./problemSolving/models/models.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/models.data.ts)
 
 ##### Вибирати додавання чи віднімання відповідно до змісту простої задачі
 
-Definition: [Definition](./problemSolving/models/skills/chooseOperationAddSub.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationAddSub.data.ts)
 
-Вибирати додавання чи віднімання відповідно до змісту простої задачі.
+Об’єднання двох наборів потребує додавання, вилучення з відомого набору — віднімання; ключова ознака — зміна кількості.
 
 ##### Вибирати множення чи ділення за змістом рівних груп
 
-Definition: [Definition](./problemSolving/models/skills/chooseOperationMulDiv.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationMulDiv.data.ts)
 
-Вибирати множення чи ділення за змістом рівних груп.
+Рівні групи по 4 можна порахувати множенням, а відому суму розподілити на групи діленням.
 
 ##### Будувати малюнок, схему або вираз до одноходової задачі
 
-Definition: [Definition](./problemSolving/models/skills/oneStepModel.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/oneStepModel.data.ts)
 
-Будувати малюнок, схему або вираз до одноходової задачі.
+Малюнок із трьома кошиками по п’ять яблук має відповідати короткій схемі «3 групи по 5», а не довільному виразу.
 
 ##### Складати текстову задачу за малюнком, таблицею чи виразом
 
-Definition: [Definition](./problemSolving/models/skills/createProblem.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/createProblem.data.ts)
 
-Складати текстову задачу за малюнком, таблицею чи виразом.
+До запису 4 × 3 можна придумати сюжет про чотири однакові пакети по три предмети; дані й запитання повинні узгоджуватися.
 
 #### Планування розв’язання
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Планування розв’язання» у межах області «Задачі».
+Побудова й обґрунтування послідовності кількох кроків із перевіркою одиниць, відповіді та альтернативних способів.
 
-Definition: [Definition](./problemSolving/planning/planning.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/planning.data.ts)
 
 ##### Складати план розв’язання задачі на дві дії та пояснювати порядок
 
-Definition: [Definition](./problemSolving/planning/skills/twoStepPlan.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/twoStepPlan.data.ts)
 
-Складати план розв’язання задачі на дві дії та пояснювати порядок.
+Спочатку потрібно визначити проміжну невідому величину, яку використають на другому кроці; порядок обґрунтовують залежністю.
 
 ##### Розв’язувати нескладні складені задачі на три дії
 
-Definition: [Definition](./problemSolving/planning/skills/threeStepPlan.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/threeStepPlan.data.ts)
 
-Розв’язувати нескладні складені задачі на три дії.
+У трьохдійовій задачі кожна проміжна відповідь має бути потрібною для наступного кроку та не суперечити умові.
 
 ##### Складати та розв’язувати обернену задачу
 
-Definition: [Definition](./problemSolving/planning/skills/inverseProblem.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/inverseProblem.data.ts)
 
-Складати та розв’язувати обернену задачу.
+Якщо відомі сума й один доданок, обернена задача може просити знайти інший доданок; дані й невідоме міняють ролі.
 
 ##### Записувати відповідь із відповідними одиницями та перевіряти змістовну правдоподібність
 
-Definition: [Definition](./problemSolving/planning/skills/explainAnswerUnits.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/explainAnswerUnits.data.ts)
 
-Записувати відповідь із відповідними одиницями та перевіряти змістовну правдоподібність.
+Число 12 без позначки «см» не є повною відповіддю про довжину; результат також має бути реалістичним для ситуації.
 
 ##### Порівнювати два правильні способи розв’язання тієї самої задачі
 
-Definition: [Definition](./problemSolving/planning/skills/multipleSolutionStrategies.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/multipleSolutionStrategies.data.ts)
 
-Порівнювати два правильні способи розв’язання тієї самої задачі.
+До одного результату інколи ведуть групування доданків або послідовні дії; способи порівнюють за коректністю й зручністю.
 
 #### Задачі на порівняння
 
 Skills: 4
 
-Description: Охоплює математичні вміння з теми «Задачі на порівняння» у межах області «Задачі».
+Відмінність адитивного порівняння («на скільки») від мультиплікативного («у скільки разів») та задач на зміну величини.
 
-Definition: [Definition](./problemSolving/comparisons/comparisons.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/comparisons.data.ts)
 
 ##### Розв’язувати задачі на «на скільки більше / менше»
 
-Definition: [Definition](./problemSolving/comparisons/skills/additiveComparison.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/additiveComparison.data.ts)
 
-Розв’язувати задачі на «на скільки більше / менше».
+Для наборів із 9 і 6 предметів запитання «на скільки» означає різницю 3, а не відношення 9 ÷ 6.
 
 ##### Розв’язувати задачі на збільшення або зменшення на задане число
 
-Definition: [Definition](./problemSolving/comparisons/skills/increaseDecreaseNumber.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseNumber.data.ts)
 
-Розв’язувати задачі на збільшення або зменшення на задане число.
+Після збільшення 15 на 4 отримують 19; «на чотири» позначає додаткову кількість, а не множник.
 
 ##### Розв’язувати задачі на «у скільки разів більше / менше»
 
-Definition: [Definition](./problemSolving/comparisons/skills/multiplicativeComparison.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/multiplicativeComparison.data.ts)
 
-Розв’язувати задачі на «у скільки разів більше / менше».
+Якщо одна група має 12 предметів, інша — 4, перша більша втричі; відповідь є коефіцієнтом, а не різницею.
 
 ##### Розв’язувати задачі на збільшення або зменшення в задану кількість разів
 
-Definition: [Definition](./problemSolving/comparisons/skills/increaseDecreaseFactor.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseFactor.data.ts)
 
-Розв’язувати задачі на збільшення або зменшення в задану кількість разів.
+Після збільшення 6 утричі виходить 18; «у три рази» описує множення, на відміну від «на три».
 
 #### Задачі на частини
 
 Skills: 2
 
-Description: Охоплює математичні вміння з теми «Задачі на частини» у межах області «Задачі».
+Відношення цілого і його частин у життєвих сюжетах, включно з одиничними дробовими частинами.
 
-Definition: [Definition](./problemSolving/parts/parts.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/parts.data.ts)
 
 ##### Розв’язувати задачі на ціле й частини та складати обернені задачі
 
-Definition: [Definition](./problemSolving/parts/skills/partWholeAddsub.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/partWholeAddsub.data.ts)
 
-Розв’язувати задачі на ціле й частини та складати обернені задачі.
+Якщо ціле складається з частин 7 і 5, його можна відновити сумою; відомі ціле та одна частина визначають іншу.
 
 ##### Розв’язувати сюжетні задачі на знаходження одиничної частини кількості
 
-Definition: [Definition](./problemSolving/parts/skills/fractionsContext.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/fractionsContext.data.ts)
 
-Розв’язувати сюжетні задачі на знаходження одиничної частини кількості.
+Чверть від 20 ягід — п’ять; сюжет вимагає рівного поділу початкової кількості.
 
 #### Задачі на групи
 
 Skills: 2
 
-Description: Охоплює математичні вміння з теми «Задачі на групи» у межах області «Задачі».
+Ситуації рівних груп і незалежних виборів із двох наборів; розмежування множення та підрахунку комбінацій.
 
-Definition: [Definition](./problemSolving/groups/groups.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/groups.data.ts)
 
 ##### Лічити всі прості комбінації вибору по одному з двох наборів (одяг, меню тощо)
 
-Definition: [Definition](./problemSolving/groups/skills/correspondenceCombinations.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/skills/correspondenceCombinations.data.ts)
 
-Лічити всі прості комбінації вибору по одному з двох наборів (одяг, меню тощо).
+Для трьох футболок і двох штанів існує шість пар вибору; кожна пара має складатися з одного елемента кожного набору.
 
 ##### Розв’язувати задачі на кількість груп, розмір групи та загальну кількість
 
-Definition: [Definition](./problemSolving/groups/skills/equalGroups.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/skills/equalGroups.data.ts)
 
-Розв’язувати задачі на кількість груп, розмір групи та загальну кількість.
+Якщо є п’ять пакетів по чотири цукерки, усього 20; за двома із цих трьох величин можна знайти третю.
 
 #### Задачі на величини
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Задачі на величини» у межах області «Задачі».
+Практичні співвідношення між величинами — продуктивністю, часом, ціною, кількістю, масою, місткістю та довжиною.
 
-Definition: [Definition](./problemSolving/quantities/quantities.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/quantities.data.ts)
 
 ##### Використовувати зв'язок продуктивність × час = виконаний обсяг у простих задачах
 
-Definition: [Definition](./problemSolving/quantities/skills/workRateTime.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/workRateTime.data.ts)
 
-Використовувати зв'язок продуктивність × час = виконаний обсяг у простих задачах.
+За продуктивності 3 деталі за годину протягом 4 годин виконано 12 деталей; одиниці часу й продуктивності мають узгоджуватися.
 
 ##### Моделювати задачі на вартість через зв’язок ціни, кількості та суми
 
-Definition: [Definition](./problemSolving/quantities/skills/priceQuantityCost.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/priceQuantityCost.data.ts)
 
-Моделювати задачі на вартість через зв’язок ціни, кількості та суми.
+Якщо ціна одиниці 7, а куплено 3 одиниці, модель вартості дає 21; однакова сума може відповідати іншій парі значень.
 
 ##### Моделювати задачі на довжину, масу, місткість і час
 
-Definition: [Definition](./problemSolving/quantities/skills/measurementContext.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/measurementContext.data.ts)
 
-Моделювати задачі на довжину, масу, місткість і час.
+Для шляху, рідини або маси сюжет має визначати доречну величину й одиницю; числове обчислення без цієї відповідності неповне.
 
 ### Міркування
 
 Groups: 4 · Skills: 11
 
-Definition: [Definition](./reasoning/reasoning.skill-domain.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/reasoning.data.ts)
 
-Description: Математична область «Міркування», яка об'єднує споріднені вміння та поняття.
+Зосереджується на аргументації математичних тверджень, пошуку контрприкладів, логічних висновках, перевірці розв’язань та переході між формами подання.
 
 #### Аргументація
 
 Skills: 5
 
-Description: Охоплює математичні вміння з теми «Аргументація» у межах області «Міркування».
+Обґрунтування висновків із математичних умов, перевірка загальних тверджень і пояснення обраного способу.
 
-Definition: [Definition](./reasoning/argumentation/argumentation.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/argumentation.data.ts)
 
 ##### Об’єднувати об’єкти чи числа за правилом і пояснювати вибір
 
-Definition: [Definition](./reasoning/argumentation/skills/classifyAndJustify.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/classifyAndJustify.data.ts)
 
-Об’єднувати об’єкти чи числа за правилом і пояснювати вибір.
+До групи можна зарахувати тільки числа, кратні 3; рішення обґрунтовують правилом, а не зовнішньою схожістю записів.
 
 ##### Знаходити приклад, який спростовує хибне узагальнення
 
-Definition: [Definition](./reasoning/argumentation/skills/findCounterexample.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/findCounterexample.data.ts)
 
-Знаходити приклад, який спростовує хибне узагальнення.
+Твердження «усі парні числа закінчуються на 2» спростовує число 4; одного коректного контрприкладу достатньо.
 
 ##### Пояснювати обраний спосіб обчислення словами, схемою чи математичним записом
 
-Definition: [Definition](./reasoning/argumentation/skills/explainStrategy.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/explainStrategy.data.ts)
 
-Пояснювати обраний спосіб обчислення словами, схемою чи математичним записом.
+Запис 19 + 6 = 20 + 5 можна пояснити компенсацією: одну одиницю перенесено між доданками без зміни суми.
 
 ##### Відрізняти один приклад від загального правила, яке потребує перевірки
 
-Definition: [Definition](./reasoning/argumentation/skills/distinguishExampleRule.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/distinguishExampleRule.data.ts)
 
-Відрізняти один приклад від загального правила, яке потребує перевірки.
+Окремий випадок 2 × 3 = 6 не доводить твердження для всіх чисел; потрібен загальний аргумент або перевірка.
 
 ##### Формулювати висновок на основі умов та результатів міркування
 
-Definition: [Definition](./reasoning/argumentation/skills/drawConclusion.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/drawConclusion.data.ts)
 
-Формулювати висновок на основі умов та результатів міркування.
+Якщо за умовою всі фігури в наборі мають три сторони, висновок про конкретну фігуру спирається саме на цю передумову.
 
 #### Самоперевірка
 
 Skills: 3
 
-Description: Охоплює математичні вміння з теми «Самоперевірка» у межах області «Міркування».
+Критичне зіставлення отриманого результату з умовою та пошук помилок і незалежних способів перевірки.
 
-Definition: [Definition](./reasoning/verification/verification.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/verification.data.ts)
 
 ##### Оцінювати, чи може відповідь бути правильною за змістом та порядком величини
 
-Definition: [Definition](./reasoning/verification/skills/checkReasonableness.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/checkReasonableness.data.ts)
 
-Оцінювати, чи може відповідь бути правильною за змістом та порядком величини.
+Для 98 + 105 результат 200 правдоподібний за масштабом, а 2000 — ні, навіть без точного обчислення.
 
 ##### Знаходити неправильний крок у чужому розв’язанні й пояснювати його
 
-Definition: [Definition](./reasoning/verification/skills/spotCalculationError.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/spotCalculationError.data.ts)
 
-Знаходити неправильний крок у чужому розв’язанні й пояснювати його.
+Помилка може виникнути в перенесенні розряду або у виборі дії; важливо локалізувати невірний крок, а не лише назвати відповідь хибною.
 
 ##### Перевіряти обчислення іншим способом, коли це можливо
 
-Definition: [Definition](./reasoning/verification/skills/verifyWithSecondMethod.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/verifyWithSecondMethod.data.ts)
 
-Перевіряти обчислення іншим способом, коли це можливо.
+Результат ділення можна зіставити з множенням, а суму — з відніманням; незалежна стратегія допомагає виявляти збій.
 
 #### Логіка
 
 Skills: 2
 
-Description: Охоплює математичні вміння з теми «Логіка» у межах області «Міркування».
+Відновлення правила та усунення суперечливих варіантів під час простих числових і геометричних міркувань.
 
-Definition: [Definition](./reasoning/logic/logic.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/logic.data.ts)
 
 ##### Доповнювати геометричну або числову закономірність відповідно до встановленого правила
 
-Definition: [Definition](./reasoning/logic/skills/completePattern.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/skills/completePattern.data.ts)
 
-Доповнювати геометричну або числову закономірність відповідно до встановленого правила.
+У послідовності круг, квадрат, круг, квадрат наступним має бути круг, якщо правило чергування не змінилося.
 
 ##### Використовувати виключення неможливих варіантів у простих логічних задачах
 
-Definition: [Definition](./reasoning/logic/skills/logicalElimination.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/skills/logicalElimination.data.ts)
 
-Використовувати виключення неможливих варіантів у простих логічних задачах.
+У задачі з трьома дверима та умовами, що виключають два варіанти, третій стає єдиним можливим без вгадування.
 
 #### Способи представлення
 
 Skills: 1
 
-Description: Охоплює математичні вміння з теми «Способи представлення» у межах області «Міркування».
+Перехід між предметним зображенням, схемою, словесним правилом і символічним записом зі збереженням змісту.
 
-Definition: [Definition](./reasoning/representations/representations.skill-group.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/representations/representations.data.ts)
 
 ##### Переходити між предметною моделлю, схемою, словесним поясненням і виразом
 
-Definition: [Definition](./reasoning/representations/skills/multipleRepresentations.skill.md)
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/representations/skills/multipleRepresentations.data.ts)
 
-Переходити між предметною моделлю, схемою, словесним поясненням і виразом.
+Схема «три рівні групи по чотири» і запис 3 × 4 описують те саме відношення; зміна форми подання не змінює значення.
 

@@ -2,25 +2,22 @@
 
 **Entity category:** subject-wide catalog domain.
 
-A **SkillDomain** is a broad, recognizable subject area containing semantically related SkillGroups. It organizes a catalog; it does not represent a course, educational level, learning sequence, assessment, or learner mastery record.
+A **SkillDomain** denotes a recognizable field within a subject and contains thematically coherent SkillGroups. It organizes the competencies catalog; it is not a course, grade, learning sequence, assessment or mastery record.
 
 ## SEMANTIC ROLE
 
-- Choose a concise name that identifies a distinct field within the subject.
-- Give it a short editorial Description of the area it covers.
-- Distinguish neighboring Domains by meaningful subject boundaries, without forcing uniform sizes or artificial minimum numbers of Groups. A Domain with a single coherent Group can be valid.
-- Keep the Domain's membership and the hierarchy of Groups/Skills in the **taxonomy**, not in lists inside individual Markdown Definitions.
-- Do not attach grades, prerequisites, teaching plans, scores, progress, or evaluation criteria to this entity.
-
-A generated Domain Definition is intentionally minimal: title, editorial Status, short Description, and Code link. **It must not enumerate its SkillGroups.**
+- Give each Domain a distinct name and a **substantive description** of its concepts, scope and boundaries. The description must explain more than the heading and must not say only that this is an area with related Skills.
+- Write the description and hierarchy **in-place in the canonical taxonomy**, not in a separate Markdown Definition file.
+- Distinguish neighboring Domains pedagogically, without forcing balanced counts or fixed sizes. A single-Group Domain may be appropriate.
+- The Domain's Group/Skill membership is a catalog classification, not teaching order, prerequisites or assessment metadata.
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
-The current shared-engine `SkillDomain_Config` contains `id`, localized `name`, and `groupIds` (explicit references to child Group IDs). These technical relationships belong to source files and do not define prerequisite or instructional sequence. The contract currently has no `description` property; the Markdown description is editorial text.
+The shared-engine `SkillDomain_Config` has `id`, localized `name` and direct-child `groupIds`. It has no `description` property and stores no pedagogical or learner-progress data.
 
-- **Definition:** the Domain's concise Markdown catalog description.
-- **Code:** a separate verified application implementation file.
+- **Editorial authority:** `<PackageRoot>/docs/skills/taxonomy.md` heading, explanatory paragraph and Group membership.
+- **Code:** a verified application `*.data.ts` linked from the taxonomy, or `Code: [Not implemented](#)`.
 
-Neither artifact replaces the other. Use `[Not implemented](#)` for a missing target.
+Descriptions appear as ordinary text, never as `Description:` fields. There are no per-Domain Markdown Definition files or redundant editorial `Status` markers.
 
 Related entities: [SkillGroup](./skill-group.md), [Skill](./skill.md).
