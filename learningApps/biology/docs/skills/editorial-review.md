@@ -12,7 +12,7 @@ Date: 2026-10-28
 | Living / dead / never alive | **Approved: one Skill** for the three-way classification. | Existing **«Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими»** remains one Skill ID; distinguish the three response categories inside assessment, not via separate Skill IDs. |
 | Viruses | **Approved: three independent Skills** (2026-10-28). | Keep **«Пояснювати, що таке вірус»**, **«Відрізняти вірус від клітинного організму»**, and **«Пояснювати основні шляхи поширення вірусів за моделлю»** as distinct Skills; do not merge the first two. |
 | Subject ownership and data literacy | **Approved: remove four cross-disciplinary candidates from Biology** (2026-10-28). | Removed the now-empty **«Біологічні дані та наукові твердження»** Group: table reading, graph reading, source credibility and unsupported-claim checking. No new cross-textbook Skill IDs assigned. |
-| Scientific inquiry and evidence | **Approved: remove «Дослідження та докази» and six Skills** (2026-10-28). | Generic scientific inquiry Skills removed; historic post-removal total was 9 Domains / 32 Groups / 128 Skills. Current total after further approved changes: **9 Domains / 30 Groups / 121 Skills**. |
+| Scientific inquiry and evidence | **Approved: remove «Дослідження та докази» and six Skills** (2026-10-28). | Generic scientific inquiry Skills removed; historic post-removal total was 9 Domains / 32 Groups / 128 Skills. Post-observation historical total: **9 Domains / 30 Groups / 121 Skills**. Current total: **11 Domains / 26 Groups / 122 Skills**. |
 | Biological classification | **Keep the Group** (2026-10-28). | Five current Skills, including the renamed and transferred biological-diagnostic-traits Skill; general methods still require an ownership audit. |
 | Observation and modeling | **Approved item-level consolidation** (2026-10-28). | Three Observation Skills removed, the remaining subject-specific diagnostic skill moved under Biological Classification; all four Modeling Group Skills removed, their intended ecological outcome captured by renaming one existing Ecology Skill. Neither empty Group remains. |
 | Plant organs | **One Skill** for identifying root, stem, leaf and flower. | Four one-organ Skills replaced by **«Визначати основні органи рослини»**. A separate existing Skill about **functions** remains because knowing names and explaining function differ. |
@@ -22,6 +22,12 @@ Date: 2026-10-28
 | «Хто це?» | Encyclopedia **lesson collection**, not Skill. | No separate Skill or SkillGroup; uses existing identification/classification competencies. |
 | Scope and subject boundaries | Biology includes organisms, their biology and ecosystem relationships; hygiene and safety belong to Health & Safety. | Recorded decisions in Subject Proposition; not redundant rows masquerading as unresolved issues. |
 | Format and descriptions | Metadata first; prose is meaningful explanatory content, not a paraphrase of the heading. | Reordered `Skills/Groups`, `Definition`, `Code` above unlabelled prose, rewrote domain/group/skill descriptions; same requirement applied to Studio skill/template and persona. |
+| Classification and justification | **Approved: one Skill** for status classification **including justification** (2026-10-29). | Removed formerly separate `Обґрунтовувати висновок про належність об'єкта до живої природи`; `Ознаки живого` now has one Skill. |
+| Plant versus animal cell | **Retain biological comparison, not a specific representation** (2026-10-29). | `Розрізняти рослинну та тваринну клітини за особливостями будови` replaces `…за моделлю`. |
+| Mycology, Microbiology, Virology | **Separate Domains with direct Skills** (2026-10-29). | Replaced artificially merged Domain and three namesake Groups with three ungrouped Domains. `Біотехнології` also becomes its own Domain (previously a singleton Group under Applied Biology). |
+| Domain structure | **Allow direct Domain → Skill when a genuine Group is not justified; strongly discourage singleton Groups** (2026-10-29). | `SkillDomain_Config.skillIds?` added as type-only extension; ownership and downstream runtime integration still need review. |
+| Genetics and biotechnology | **Rename «Основи генетики» → «Генетика»; add two prerequisite concept Skills** (2026-10-29). | Added separate fundamentals for selection and genetic modification; existing comparison Skill retained pending atomicity audit. |
+| Regionally relevant Lessons | **Program can offer optional regional variants; locale is only a suggestion** (2026-10-29). | User/teacher-selectable region, fallback and stable shared Skill IDs; future Program runtime, not implemented by a taxonomy document. |
 
 ## 2. **RESOLVED: ONE Skill for living / dead / never alive**
 
@@ -34,7 +40,7 @@ Date: 2026-10-28
 - **«Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими».**
 - It describes one coherent three-way decision: determining current life status and biological origin, rather than three separate learning goals each based on a different answer choice.
 - Example distinctions: a growing tree is living; a dead leaf was part of a living organism; a mineral rock was never alive.
-- A different competency — **«Обґрунтовувати висновок про належність об’єкта до живої природи»** — remains separate because choosing a category and justifying criteria can be independently demonstrated.
+- **Revised decision (2026-10-29):** explaining the relevant diagnostic features belongs inside the same classification competency, not in a second independent Skill ID.
 
 **Rejected alternative B (retained for decision history): three separately tracked Skills.**
 
@@ -42,7 +48,7 @@ Date: 2026-10-28
 - **«Визначати, чи неживий об’єкт має біологічне походження»** — recognizes objects that were once living or are derived from living material.
 - **«Визначати, чи об’єкт ніколи не був живим»** — distinguishes non-biological matter from former biological material.
 
-**Assessment consequence:** separately track confusion between the three answer categories, if useful, without creating additional stable Skill IDs. The approved granularity is one Skill, and the taxonomy already matches it. The separately retained **«Обґрунтовувати висновок про належність об’єкта до живої природи»** is a different skill (justifying an answer), not a fourth classification category.
+**Assessment consequence:** separately track confusion between the three answer categories, if useful, without creating additional stable Skill IDs. The approved granularity is one Skill, and the taxonomy already matches it. The once-separate justification Skill has since been **removed** (2026-10-29). Current `Ознаки живого` contains **one** classification Skill.
 
 **Scientific caveat:** “dead” vs “derived from something once alive” are not identical predicates. Paper, wood, wool and food may derive from biological material without themselves having been whole living organisms; dormant seeds may be alive without obvious movement. Precise examples and exceptions belong in future Lessons; avoid a false simplistic rule in an Assessment.
 
@@ -115,7 +121,7 @@ The old Domain «Біологічні моделі та біотехнологі
 
 **Remaining reviewable overlap:** «Прогнозувати наслідки вилучення ланки ланцюга» still exists in Ecology → «Харчові зв’язки». It specifically concerns a food chain, while the new interdependence Skill addresses ecological networks and indirect effects more broadly. **Assess whether these justify independent IDs before approving taxonomy**; do not silently remove the more specific Skill.
 
-**Current inventory after these approved changes: 9 Domains, 30 Groups, 121 Skills; 160 unimplemented Definition and 160 unimplemented Code links.**
+**Historical inventory after the Observation/Modeling pass:** 9 Domains, 30 Groups, 121 Skills; 160 placeholder Definition/Code links. **Current inventory after subsequent restructuring: 11 Domains, 26 Groups, 122 Skills; 159 placeholders of each kind.**
 
 ### Cross-disciplinary ownership audit — OPEN, do not apply silently
 
@@ -127,6 +133,18 @@ The same test must now be applied to additional existing candidates, especially:
 
 **Status: open audit of the remaining classification candidates and food-chain-versus-ecosystem skill overlap only.** Observation and Modeling Group decisions above are approved and applied.
 
+### RESOLVED: Discipline Domains and concept Skills (2026-10-29)
+
+**Approved organization:** Mycology (4 Skills), Microbiology (5), and Virology (3) are **three distinct Domains** instead of a merged Domain containing one Group for each discipline. `Прикладна біологія → Біотехнології` becomes a Domain `Біотехнології` (6 Skills). These four Domains have **no Groups** and their Skills attach directly. This does not create additional textbooks or applications.
+
+**Strict exception to grouping:** Use multiple meaningful SkillGroups where subdivisions are real. A single-Group Domain is **strongly discouraged**, requires an explicit editorial justification and must not duplicate the Domain name. If no meaningful Group exists, use `Domain → Skill`; **do not mix direct Skills and Groups in the same Domain**. The editorial taxonomy and Studio skill/entity guidance now permit this. The runtime type `SkillDomain_Config` adds optional `skillIds` while retaining `groupIds` for compatibility (the latter is `{}` for direct-mode Domains). **This is type support, not yet verified builder, registry, UI, ancestry or analytics support; runtime integration and invariant tests remain open.**
+
+**Approved skill granularity and terminology:** justification is included in the one living/dead/never-alive Skill; `Розрізняти рослинну та тваринну клітини за особливостями будови` replaces a format-dependent cell comparison; `Основи генетики` becomes `Генетика`. Added `Пояснювати принцип селекції` and `Пояснювати принцип генетичної модифікації` as distinct foundational Skills. The existing comparison Skill remains pending a separate test of whether it offers independently useful mastery evidence.
+
+**Program-level, locale-sensitive choice:** Local fauna examples (Ukraine, Israel, regions of the Americas, etc.) belong in **optional region-specific Lesson variants** of a Program that target the same canonical Skill. UI locale may suggest an initial region but must not be mistaken for residence or a non-editable decision. Provide user/teacher choice and a broadly relevant fallback. Regional selection and progress substitution are **not implemented merely by this documentation**. Translate **all variants** into the required default languages; no region-based reduction of localization requirements. See [Subject Proposition](../../../../studio/Subject%20Proposition.md) and [Create Curriculum Skill](../../../../studio/skills/create-curriculum.skill.md).
+
+**Current inventory: 11 Domains · 26 Groups · 122 Skills · 159 unimplemented Definition links · 159 unimplemented Code links.**
+
 ## 4. Additional decisions to review
 
 | Decision | Methodologist proposal | Status / action |
@@ -134,7 +152,7 @@ The same test must now be applied to additional existing candidates, especially:
 | Definition of a virus | Separate knowledge of the virus as a noncellular infectious agent, comparison with cellular organisms, and explanation of transmission models. These are different independently assessable competencies, although the first two share background facts. | **APPROVED (2026-10-28): keep all three Skills** in the virus Group; taxonomy already reflects this. |
 | Cross-subject scientific skills | Decide where general scientific inquiry, observation, practical instrument use, model literacy, and data literacy belong; no Biology-specific IDs merely because examples feature organisms. | **OPEN:** no automatic reassignment of removed Skills to other textbooks. |
 | Boundary: life-process breathing | Clarify **cellular respiration** vs lung ventilation; plants also respire. Revised description makes the distinction explicit. | Clarification in draft, requires factual/pedagogical review. |
-| Local taxonomy granularity | The current 121-item draft contains other candidates that may need atomicity audit: examples-based species recognition, certain classifications, and modeling across multiple systems. | **Open global review**, no claim of final approval. |
+| Local taxonomy granularity | The current 122-item draft contains other candidates that may need atomicity audit: examples-based species recognition, certain classifications, and modeling across multiple systems. | **Open global review**, no claim of final approval. |
 
 ## 5. Why the previous review failed
 
@@ -146,9 +164,9 @@ The [Create Skills Taxonomy Skill](../../../../studio/skills/create-skills-taxon
 
 The **living/dead classification, three virus Skills, removal of four data/source Skills and six inquiry/evidence Skills, plus the Observation/Modeling consolidations are approved**, but the **taxonomy as a whole remains an editorial draft**. Before the **Create Skill Definitions** stage:
 
-1. Audit the **five Biological Classification Skills** for subject ownership, while retaining the Group.
+1. Audit the **five Biological Classification Skills** for subject ownership, while retaining the Group; review whether selection vs genetic modification still needs a separate comparison Skill.
 2. Review whether **«Прогнозувати наслідки вилучення ланки ланцюга»** requires a separate ID from the ecosystem-interdependence Skill.
 3. Decide separately where generic scientific/data/model-literacy Skills should live across textbooks; do not create IDs by assumption.
-4. Review remaining atomicity and subject coverage before approving the taxonomy.
+4. Validate the new optional direct Domain → Skill link through registry/builders/consumers and tests before creating generated Skill Code. Specify region-based Program lesson selection separately; then review atomicity and subject coverage before approving the taxonomy.
 
 **Do not create entity definitions, UUID files, `*.data.ts`, Lessons or Questions on the basis of open decisions.**
