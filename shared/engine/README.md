@@ -22,3 +22,19 @@ type BiologyLesson = Lesson_Config & { organismIds: readonly string[] };
 ```
 
 Render-specific values remain framework-independent in Engine: `SceneResource_Config<TComponent>` and `LessonSection_Config<TIcon>` accept presentation types supplied by the caller. Playground adapts a scene's opaque payload to React at the rendering boundary.
+
+## Educational processing (Stage 1)
+
+Reusable educational builders are exported through `@svitlo/engine/builders`: lesson,
+lesson section, quiz, question and resource builders; localized text resources; and
+assessment method configuration validation. Dynamic question creation and validators
+are exported through `@svitlo/engine/generation` with their TypeScript contracts.
+
+Every public subpath resolves to compiled `dist` output. Neither module imports
+application code, React, Next.js, or Material UI. Existing Playground deep imports
+are temporary compatibility re-exports, not separate implementations.
+
+Run `npm run build --workspace @svitlo/engine`, `npm run typecheck --workspace
+@svitlo/engine`, and `npm run test --workspace @svitlo/engine` to verify the
+shared package independently. Publication and registry-based extraction remain
+out of scope for this stage.

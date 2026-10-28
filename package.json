@@ -10,7 +10,7 @@
     "start": "npm run build --workspace @svitlo/engine && npm run start --workspace @svitlo/playground",
     "lint": "npm run lint --workspace @svitlo/playground",
     "typecheck": "npm run build --workspace @svitlo/engine && npm run typecheck --workspace @svitlo/playground",
-    "test": "npm run build --workspace @svitlo/engine && npm run test --workspace @svitlo/playground",
+    "test": "npm run build --workspace @svitlo/engine && npm run test --workspace @svitlo/engine && npm run test --workspace @svitlo/playground",
     "test:e2e": "npm run build --workspace @svitlo/engine && npm run test:e2e --workspace @svitlo/playground",
     "test:db-utils": "npm run build --workspace @svitlo/engine && npm run test:db-utils --workspace @svitlo/playground",
     "test:db-utils:coverage": "npm run build --workspace @svitlo/engine && npm run test:db-utils:coverage --workspace @svitlo/playground",

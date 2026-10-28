@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { TextResource_Config } from '@types';
+import type { TextResource_Config } from '../../../content';
 import { buildResource, buildTextResource } from './buildResource.utils';
 
 const text: TextResource_Config = {

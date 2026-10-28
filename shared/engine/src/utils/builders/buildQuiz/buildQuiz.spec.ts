@@ -1,7 +1,7 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../math/assessmentMethodTaxonomy/index.ids';
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../types/content/assessmentMethod.ids';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { Quiz_Config, TextResource_Config } from '@types';
+import type { Quiz_Config, TextResource_Config } from '../../../content';
 import { buildQuiz } from './buildQuiz.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({

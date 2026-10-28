@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../types/languages';
-import type { TextResource_AllLanguages_Config } from '@types';
+import type { TextResource_AllLanguages_Config } from '../../content';
 import { createTextResource } from './createTextResource.utils';
 
 const values = Object.fromEntries(

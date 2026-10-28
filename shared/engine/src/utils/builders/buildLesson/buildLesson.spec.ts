@@ -1,4 +1,4 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../math/assessmentMethodTaxonomy/index.ids';
+import { assessmentMethods_AssessmentMethod_Ids } from '../../../types/content/assessmentMethod.ids';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type {
@@ -7,7 +7,7 @@ import type {
   LessonSection_Config,
   Quiz_Config,
   TextResource_Config,
-} from '@types';
+} from '../../../content';
 import { buildLesson } from './buildLesson.utils';
 import { buildLessonConfig } from '../config/buildLessonConfig.utils';
 import { buildLessonSectionConfig } from '../config/buildLessonSectionConfig.utils';

@@ -17,6 +17,7 @@
     "node_modules",
     "dist",
     "**/*.spec.ts",
-    "**/*.unit.spec.ts"
+    "**/*.unit.spec.ts",
+    "**/*.typecheck.ts"
   ]
 }

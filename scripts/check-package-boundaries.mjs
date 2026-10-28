@@ -18,12 +18,12 @@ function assert(condition, message) {
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
 assert(playground.dependencies?.[engine.name] === engine.version, 'Playground must use a versioned engine dependency');
 assert(engine.scripts?.build && engine.files?.includes('dist'), 'Engine must publish compiled artifacts');
-for (const subpath of ['.', './localization', './taxonomy', './content']) {
+for (const subpath of ['.', './localization', './taxonomy', './content', './builders', './generation']) {
   const target = engine.exports?.[subpath];
   assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
     'Engine public export is missing a dist entry: ' + subpath);
 }
-const engineSources = walk(resolve(root, 'shared/engine/src')).filter(file => file.endsWith('.ts'));
+const engineSources = walk(resolve(root, 'shared/engine/src')).filter(file => file.endsWith('.ts') && !/\.(?:spec|typecheck)\.ts$/.test(file));
 for (const file of engineSources) {
   const content = readFileSync(file, 'utf8');
   const imports = [...content.matchAll(/\b(?:from\s*|import\s*\(\s*)['"]([^'"]+)['"]/g)];

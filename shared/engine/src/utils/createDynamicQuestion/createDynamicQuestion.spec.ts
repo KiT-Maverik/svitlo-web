@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { TextResource_AllLanguages_Config } from '@types';
+import type { TextResource_AllLanguages_Config } from '../../content';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../types/languages';
 import type { DynamicQuestion_Config, DynamicQuestion_Variant } from './createDynamicQuestion.types';
 import {
