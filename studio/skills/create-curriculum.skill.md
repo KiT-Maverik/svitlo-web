@@ -91,10 +91,11 @@ Use the following template **as written**, replacing placeholders with content a
 Allowed types of records:
 - Plain text: %TEXT_PREREQUISITE%
 - Skill: **%SKILL_NAME%** — Definition: [%SKILL_NAME%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.skill.md) · Code: [Not implemented](#)
+- Direct Domain Skill: **%DIRECT_SKILL_NAME%** — Definition: [%DIRECT_SKILL_NAME%](../../skills/%DOMAIN%/skills/%DIRECT_SKILL%.skill.md) · Code: [Not implemented](#)
 - SkillGroup: **%SKILL_GROUP_NAME%** — Definition: [%SKILL_GROUP_NAME%](../../skills/%DOMAIN%/%GROUP%/%GROUP%.skill-group.md) · Code: [Not implemented](#)
 - SkillDomain: **%SKILL_DOMAIN_NAME%** — Definition: [%SKILL_DOMAIN_NAME%](../../skills/%DOMAIN%/%DOMAIN%.skill-domain.md) · Code: [Not implemented](#)
 
-Choose only applicable record types and mix them when needed.
+Choose only applicable record types and mix them when needed. Direct-Skill example paths are **alternatives**, not automatically required entries; every path must be replaced by a real verified link.
 Replace example paths with verified, existing relative Definition paths; they are not literal mandated filenames.
 Update the separate Code link only when that specific runtime file actually exists; otherwise keep [Not implemented](#).
 Do not duplicate IDs or UUIDs.
@@ -150,6 +151,7 @@ Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
 - **%SKILL_NAME%** — Definition: [%SKILL_NAME%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.skill.md) · Code: [Not implemented](#)
+- **%DIRECT_SKILL_NAME%** (if ungrouped; use only when a verified direct-Domain Definition exists) — Definition: [%DIRECT_SKILL_NAME%](../../skills/%DOMAIN%/skills/%DIRECT_SKILL%.skill.md) · Code: [Not implemented](#)
 - ...
 ```
 
