@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit && tsc -p tsconfig.types.json",
-    "test": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/db/utils/**/*.js' .test-build/components/widgets/questions/*.unit.spec.js .test-build/components/widgets/questions/helpers/AnswerOption/*.unit.spec.js .test-build/utils/*/*.spec.js .test-build/utils/*/*/*.spec.js .test-build/db/utils/*/*.spec.js .test-build/db/controllers/*/*/*.spec.js .test-build/db/controllers/__tests__/*.integration.test.js",
+    "test": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/db/utils/**/*.js' .test-build/utils/*/*.spec.js .test-build/utils/*/*/*.spec.js .test-build/db/utils/*/*.spec.js .test-build/db/controllers/*/*/*.spec.js .test-build/db/controllers/__tests__/*.integration.test.js",
     "test:e2e": "playwright test",
     "test:db-utils": "tsc -p tsconfig.test.json && node --test .test-build/db/utils/*/*.spec.js",
     "test:db-utils:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/db/utils/**/*.js' .test-build/db/utils/*/*.spec.js",
@@ -39,7 +39,8 @@
     "rehype-raw": "^7.0.0",
     "rehype-sanitize": "^6.0.0",
     "zod": "^4.6.7",
-    "@svitlo/engine": "0.0.0"
+    "@svitlo/engine": "0.0.0",
+    "@svitlo/ui-kit": "0.0.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
