@@ -1,31 +1,28 @@
-# Mathematics Skills — Research and Migration Audit
+# Mathematics Skills — Editorial Archive
 
-Status: Historical/editorial references, **not** an approved Skills Taxonomy or Skill Definitions.
-Package root: `learningApps/math`.
-Reviewed: 2026-10-28.
+Status: **historical source material**. The approved mathematics hierarchy is now maintained in the canonical [Skills Taxonomy](../taxonomy.md), not in the old inventory.
 
-## Retained source material
+## Canonical catalog
 
-- [Skills Inventory](./skills-inventory.md) — historical inventory of **285 candidate Skills**, **60 Groups**, and **13 Domains**; mostly the approximate Grade 1–3 scope. Its editorial identifiers, grade hints, status snapshots, and implementation remarks are **not** runtime Skill fields or a canonical approved taxonomy.
-- [Inventory Audit](./skills-inventory-audit.md) — earlier international-coverage audit and suggested additions; retain dated findings as history, not as current approval.
-- [Taxonomy Review](./skills-taxonomy-review.md) — earlier decomposition and outstanding atomicity/split-review questions.
-- [UUID Migration](./UUID-MIGRATION.md) — historical editorial-to-runtime UUID correspondence; implementation IDs remain in `src/data/skillsTaxonomy/**/*.ids.ts`. This document is reference material, not a runtime registry.
+- [Skills Taxonomy](../taxonomy.md): **13 SkillDomains, 60 SkillGroups, 285 Skills**, with independent, verified Definition and Code links.
+- The corresponding 358 Markdown Definition documents follow the templates of `studio/skills/create-skill-definitions.skill.md`; they are marked **Draft** for a separate editorial description review, **not** because the approved taxonomy or source code is incomplete.
+- Each corresponding Domain, Group and Skill has a canonical `*.data.ts` implementation. Stable runtime UUIDs remain in `src/data/skillsTaxonomy/**/*.ids.ts`; there is no longer a parallel UUID migration document.
 
-These four documents were relocated from `src/` without rewriting their educational meaning. Corrected relative links are the only change to the historical inventory text.
+## Historical research records
 
-## Compliance audit against current authoring Skills
+- [Skills Inventory v0.6](./skills-inventory.md): source descriptions and former editorial IDs used to preserve the approved structure. Dated status counts, grade hints and references to earlier implementation phases are historical snapshots.
+- [Skills Inventory Audit](./skills-inventory-audit.md): earlier coverage comparison and proposed additions; retained for provenance, not as a list of unapproved current Skills.
+- [SkillGroup Taxonomy Review](./skills-taxonomy-review.md): earlier grouping decisions and discussion candidates; retained for provenance, not authorization to split or merge the approved hierarchy.
 
-**Stage 1 — Create Skills Taxonomy: pending.** The canonical `docs/skills/taxonomy.md` required by `studio/skills/create-skills-taxonomy.skill.md` does not yet exist. The inventory is grade-scoped, contains technical/editorial IDs, implementation status and grade guidance, and does not follow the new Domain → Group → Skill Markdown template with distinct Definition and Code links and verified per-level counts. Before authoring, review open compound-skill and coverage decisions from the linked audits; do not silently reinterpret or split Skills.
+These documents **do not supersede** the canonical taxonomy. Old semantic identifiers and grade hints do not belong to canonical Markdown Definitions or to the runtime entity schema.
 
-**Stage 2 — Create Skill Definitions: pending Stage 1 approval.** No approved per-entity Markdown Domain, Group or Skill Definitions are available in the expected `docs/skills/<domain>/<group>/skills/` authoring structure. Runtime `*.data.ts` files are **Code**, not editorial Definitions. The required Stage 2 input is an approved taxonomy.
+## Separate Curriculum format work
 
-**Stage 3 — Create Curriculum: pending Stages 1–2.** Existing Grade 1–4 documents and nested materials are under `docs/curriculum/`, rather than the new `docs/curriculums/<nameCamelCase>/<nameCamelCase>.curriculum.md` convention from `studio/skills/create-curriculum.skill.md`. Their structure, dated content, and Skill mappings require separate editorial review. Grade 1 currently references runtime Code instead of approved Markdown Skill Definitions. Do **not** rename/rewrite 800+ curriculum, module and lesson documents in this Markdown relocation task.
+Grade 1–4 curricula currently reside in `docs/curriculum/` (not yet the `docs/curriculums/<nameCamelCase>/<nameCamelCase>.curriculum.md` convention in `studio/skills/create-curriculum.skill.md`). They link to the canonical Skills Taxonomy, but their relocation and broader module/lesson rewrite remain a **separate editorial migration**, not a change to approved Skill membership.
 
-## Repository verification and limits
+## Verification scope
 
-- The current `src/data/skillsTaxonomy/` tree contains **13 Domain**, **60 Group** and **285 individual Skill** `*.data.ts` source files by path count. This confirms file presence **only**, not a passing build, localization completeness, editorial approval, or reference integrity.
-- Older implementation totals inside `skills-inventory.md` (including intermediate 19/154-file figures) do not match the current source-file count. They are preserved for historical context, **not validated as current status**.
-- Repaired historical broken Markdown links from the Grade 1 curriculum to actual runtime source files, and from Grade 2–4 documents to the moved inventory and UUID map. This is link maintenance, **not curriculum validation or approval**.
-- This migration does not change runtime data, UUIDs, source code, lesson order, educational competencies, or the subject scope. Future work must proceed in the agreed order: **Taxonomy → Definitions → Curriculum**.
+- Verified file-level correspondence between the inventory, static UUID dictionaries and actual source files while constructing the taxonomy and Definitions. Markdown Definition status is an editorial review flag and must not be equated with runtime implementation.
+- No runtime code, IDs, group membership or curriculum sequence changed during this taxonomy documentation migration.
 
-Canonical workflow references: `studio/skills/create-skills-taxonomy.skill.md`, `studio/skills/create-skill-definitions.skill.md`, `studio/skills/create-curriculum.skill.md`.
+Authoring workflows: `studio/skills/create-skills-taxonomy.skill.md`, `studio/skills/create-skill-definitions.skill.md`, `studio/skills/create-curriculum.skill.md`.
