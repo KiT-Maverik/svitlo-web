@@ -28,7 +28,7 @@ describe('buildSkillDomainConfig', () => {
     assert.equal(result.collection, 'skillDomain');
     assert.deepEqual(result.groupIds, { organisms: groupId });
     assert.equal(result.skillIds, undefined);
-    assert.equal(config.collection, undefined);
+    assert.ok(!('collection' in config));
   });
 
   it('allows direct Skills when the domain has zero Groups', () => {
@@ -53,7 +53,7 @@ describe('buildSkillDomainConfig', () => {
   });
 
   it('validates UUIDs on direct Skill references', () => {
-    const invalid = 'not-a-uuid' as typeof skillId;
+    const invalid = 'not-a-uuid' as unknown as typeof skillId;
     assert.throws(
       () => buildSkillDomainConfig(createDomain({}, { identify: invalid })),
       /SkillDomain skillIds.identify must be a UUID/,
