@@ -7,6 +7,7 @@ const contracts = readJson('shared/contracts/package.json');
 const engine = readJson('shared/engine/package.json');
 const indexdb = readJson('shared/indexdb/package.json');
 const playground = readJson('learningApps/playground/package.json');
+const platform = readJson('frontend/platform/package.json');
 const math = readJson('learningApps/math/package.json');
 const uiKit = readJson('shared/ui-kit/package.json');
 
@@ -18,6 +19,14 @@ function walk(dir) {
 }
 function assert(condition, message) {
   if (!condition) throw new Error(message);
+}
+assert(platform.name === '@svitlo/platform', 'Unexpected Platform package name');
+assert(platform.dependencies?.next && platform.dependencies?.react && platform.dependencies?.['@mui/material'],
+  'Platform must declare independent Next.js, React and MUI dependencies');
+assert(!Object.keys(platform.dependencies ?? {}).some(name => name.startsWith('@svitlo/')),
+  'Platform scaffold must not depend on another Svitlo package');
+for (const path of ['src/app/layout.tsx', 'src/app/page.tsx', 'playwright.config.ts', 'next.config.ts']) {
+  assert(existsSync(resolve(root, 'frontend/platform', path)), 'Platform scaffold missing: ' + path);
 }
 assert(contracts.name === '@svitlo/contracts', 'Unexpected contracts package name');
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
@@ -114,14 +123,14 @@ if (existsSync(appSourceRoot)) {
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src']
+const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src', 'frontend/platform/src']
   .map(path => resolve(root, path));
 for (const applicationRoot of applicationSourceRoots) {
   for (const file of walk(applicationRoot).filter(path => /\.(ts|tsx)$/.test(path))) {
     const code = readFileSync(file, 'utf8');
     for (const match of code.matchAll(/\bfrom\s*['"]([^'"]+)['"]/g)) {
       const specifier = match[1];
-      assert(!/^@svitlo\/(?:playground|math)(?:\/|$)/.test(specifier),
+      assert(!/^@svitlo\/(?:playground|math|platform)(?:\/|$)/.test(specifier),
         'Applications must not import another application by package name: ' + relative(root, file));
       if (!specifier.startsWith('.')) continue;
       const target = resolve(dirname(file), specifier);
@@ -131,4 +140,36 @@ for (const applicationRoot of applicationSourceRoots) {
     }
   }
 }
+for (const app of ['learningApps/math', 'learningApps/playground']) {
+  for (const old of ['DbBrowserHarness.tsx', 'db-browser-commands.ts', 'db-browser-server.mjs', 'controllers.e2e.spec.ts']) {
+    assert(!existsSync(resolve(root, app, 'src/testing', old)),
+      'IndexedDB browser tests must be owned by @svitlo/indexdb: ' + app + '/' + old);
+  }
+  assert(!existsSync(resolve(root, app, 'playwright.db.config.ts')),
+    'Applications must not retain IndexedDB Playwright configuration: ' + app);
+}
+for (const testFile of ['DbBrowserHarness.tsx', 'db-browser-commands.ts', 'db-browser-server.mjs', 'controllers.e2e.spec.ts']) {
+  assert(existsSync(resolve(root, 'shared/indexdb/testing', testFile)),
+    'IndexedDB browser test infrastructure missing: ' + testFile);
+}
+assert(existsSync(resolve(root, 'shared/indexdb/playwright.config.ts')),
+  'IndexedDB must own the native browser Playwright configuration');
+for (const app of ['learningApps/math', 'learningApps/playground']) {
+  const preferences = resolve(root, app, 'src/components/layout/LearningLayout/NavbarPreferences');
+  assert(!existsSync(preferences), 'NavbarPreferences must be owned by UI Kit, not ' + app);
+  const adapter = readFileSync(resolve(root, app, 'src/components/layout/LearningLayout/LearningLayout.tsx'), 'utf8');
+  assert(adapter.includes('createLessonLearningLayout') && !adapter.includes('<SharedLearningLayout'),
+    'App layout must bind UI Kit without duplicating shared composition: ' + app);
+}
+assert(existsSync(resolve(root, 'shared/ui-kit/src/components/layout/LearningLayout/createLessonLearningLayout.tsx')),
+  'Shared LearningLayout connector missing from UI Kit');
+assert(existsSync(resolve(root, 'shared/ui-kit/src/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.tsx')),
+  'Shared NavbarPreferences missing from UI Kit');
+assert(uiKit.exports?.['./learning-layout/preferences']?.default ===
+  './dist/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.js',
+  'NavbarPreferences must have a compiled public UI Kit export');
+const themeComponent = readFileSync(resolve(root,
+  'shared/ui-kit/src/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.tsx'), 'utf8');
+assert(!themeComponent.includes('useColorScheme'),
+  'UI Kit NavbarPreferences must receive MUI theme state via props from the consuming app');
 console.log('Package boundaries and both independent applications verified.');

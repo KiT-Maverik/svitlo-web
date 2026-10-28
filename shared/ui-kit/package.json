@@ -68,6 +68,18 @@
     "./learning-layout/locales": {
       "types": "./dist/components/layout/LearningLayout/locales/index.d.ts",
       "default": "./dist/components/layout/LearningLayout/locales/index.js"
+    },
+    "./learning-layout/preferences": {
+      "types": "./dist/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.d.ts",
+      "default": "./dist/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.js"
+    },
+    "./learning-layout/preferences/constants": {
+      "types": "./dist/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.constants.d.ts",
+      "default": "./dist/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.constants.js"
+    },
+    "./learning-layout/preferences/locales": {
+      "types": "./dist/components/layout/LearningLayout/NavbarPreferences/locales/index.d.ts",
+      "default": "./dist/components/layout/LearningLayout/NavbarPreferences/locales/index.js"
     }
   },
   "files": [

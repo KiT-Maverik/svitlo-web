@@ -15,7 +15,7 @@
     "test:db:coverage": "npm run test:db:coverage --workspace @svitlo/indexdb",
     "test:db-controllers-unit": "npm run test:db-controllers-unit --workspace @svitlo/indexdb",
     "test:db-controllers-unit:coverage": "npm run test:db-controllers-unit:coverage --workspace @svitlo/indexdb",
-    "test:e2e:db": "playwright test --config playwright.db.config.ts",
+    "test:e2e:db": "npm run test:e2e:db --workspace @svitlo/indexdb",
     "test:components": "vitest run",
     "test:components:coverage": "vitest run --coverage",
     "prebuild": "node --import @svitlo/ui-kit/sync-flags",
