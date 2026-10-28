@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { Container } from '@mui/material';
-import { Lesson } from '@pages';
+import Lesson from '@/components/pages/Lesson/Lesson';
 import { resolveLocale } from '@/i18n/resolveLocale';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { demoLessonConfig, demoLessonCatalog } from '@/fixtures/demoLesson';
@@ -14,7 +14,7 @@ export async function generateMetadata({ searchParams }: PageProps<'/topics/demo
     'uk-UA',
   );
   return {
-    title: `${buildTextResource(demoLessonCatalog.text[demoLessonConfig.title], locale).value} — Світло`,
+    title: `${buildTextResource(demoLessonCatalog.text[demoLessonConfig.title], locale).value} — Svitlo Playground`,
     description: 'Нейтральний приклад інтерактивного уроку, навігації та оцінювання.',
   };
 }
