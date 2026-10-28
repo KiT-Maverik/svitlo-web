@@ -73,7 +73,7 @@ if (existsSync(appSourceRoot)) {
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src']
+const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src', 'learningApps/physics/src']
   .map(path => resolve(root, path));
 for (const applicationRoot of applicationSourceRoots) {
   for (const file of walk(applicationRoot).filter(path => /\.(ts|tsx)$/.test(path))) {
