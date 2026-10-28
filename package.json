@@ -27,7 +27,7 @@
     "packages:typecheck": "npm run build --workspace @svitlo/engine && npm run typecheck --workspaces --if-present",
     "packages:lint": "npm run lint --workspaces --if-present",
     "packages:test": "npm run build --workspace @svitlo/engine && npm run test --workspaces --if-present",
-    "packages:check": "node scripts/check-workspaces.mjs"
+    "packages:check": "node scripts/check-workspaces.mjs && node scripts/check-package-boundaries.mjs"
   },
   "devDependencies": {
     "prettier": "3.9.10"
