@@ -47,6 +47,12 @@ function isPublicImport(pkg, specifier) {
 
 for (const [path, pkg] of workspaces) {
   const packageRoot = resolve(root, path);
+  const tsconfig = readJson(path + '/tsconfig.json');
+  if (tsconfig.extends && tsconfig.extends.startsWith('.')) {
+    const base = relative(packageRoot, resolve(packageRoot, tsconfig.extends));
+    assert(base !== '..' && !base.startsWith('..' + sep) && !isAbsolute(base),
+      'External TypeScript config prevents standalone extraction: ' + path + ' -> ' + tsconfig.extends);
+  }
   const declared = new Set(Object.keys({ ...(pkg.dependencies || {}), ...(pkg.peerDependencies || {}) }));
   const localAliases = readJson(path + '/tsconfig.json').compilerOptions?.paths || {};
   for (const file of walk(join(packageRoot, 'src')).filter(isProductionSource)) {
