@@ -9,8 +9,6 @@ import type {
   TextResource_Config,
 } from '../../../content';
 import { buildLesson } from './buildLesson.utils';
-import { buildLessonConfig } from '../config/buildLessonConfig.utils';
-import { buildLessonSectionConfig } from '../config/buildLessonSectionConfig.utils';
 
 const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
   id,
@@ -19,8 +17,10 @@ const text = (id: string, english: string, ukrainian = english): TextResource_Co
   value: { en: english, uk: ukrainian },
 });
 
+// Mutable test fixture deliberately bypasses the readonly Data builder: tests amend it to exercise error paths.
 const lesson = (): Lesson_Config =>
-  buildLessonConfig({
+  ({
+    collection: 'lesson',
     id: 'lesson',
     slug: 'light',
     requireQuiz: true,
@@ -34,7 +34,8 @@ const lesson = (): Lesson_Config =>
   });
 
 const theory = (): LessonSection_Config =>
-  buildLessonSectionConfig({
+  ({
+    collection: 'lessonSection',
     id: 'theory',
     lessonId: 'lesson',
     skippable: false,
@@ -197,13 +198,14 @@ describe('Utils', () => {
         it('should convert quiz sections without disturbing their order among lesson sections', () => {
           const config = lesson();
           const definitions = catalog();
-          const summary: LessonSection_Config = buildLessonSectionConfig({
+          const summary: LessonSection_Config = {
+            collection: 'lessonSection',
             id: 'summary',
             lessonId: 'lesson',
             skippable: true,
             name: text('summary-name', 'Summary'),
             content: [text('summary-text', 'Finish')],
-          });
+          };
           config.sections.content.push('quiz-section', 'summary');
           const result = buildLesson(config, 'uk-UA', {
             ...definitions,
