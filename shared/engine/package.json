@@ -1,0 +1,52 @@
+{
+  "name": "@svitlo/engine",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./localization": {
+      "types": "./dist/localization.d.ts",
+      "default": "./dist/localization.js"
+    },
+    "./taxonomy": {
+      "types": "./dist/taxonomy.d.ts",
+      "default": "./dist/taxonomy.js"
+    },
+    "./content": {
+      "types": "./dist/content.d.ts",
+      "default": "./dist/content.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  },
+  "typesVersions": {
+    "*": {
+      "localization": [
+        "dist/localization.d.ts"
+      ],
+      "taxonomy": [
+        "dist/taxonomy.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
+      ],
+      "content": [
+        "dist/content.d.ts"
+      ]
+    }
+  }
+}
