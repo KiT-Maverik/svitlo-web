@@ -1,48 +1,26 @@
 # Skill
 
-**Entity category:** independently assessable competency.
+**Entity category:** atomic catalog classification.
 
-A **Skill** is the smallest *practically meaningful* competency that can be assessed separately and interpreted on its own. It answers **“What can a person demonstrably do?”** rather than “Which topic, lesson, question or teaching activity is this?”
+A **Skill** is a named, stable entry in a subject's taxonomy. It identifies a meaningful, distinct concept or ability so other entities can organize content, refer to Skills, and aggregate analytics by Skill. The Skill entity itself **does not measure, teach, or track mastery**.
 
-## ATOMICITY AND GRANULARITY
+## SEMANTIC ROLE
 
-A well-defined Skill:
+- Each Skill has a clear, recognizable name and a concise editorial description.
+- Keep Skills distinct enough for useful classification; avoid either broad catch-all labels or a new Skill for each exercise variant.
+- A compound label should represent one coherent category. If its parts are unrelated or need separate catalog identities, define separate Skills in the taxonomy.
+- A Skill appears under one primary SkillGroup in the taxonomy. Lesson, curriculum, program, question, and analytics relationships are maintained externally.
+- The Skill has no children and no embedded references to learning activities or learner records.
 
-1. States an **observable action** with a meaningful target: recognize, calculate, compare, construct, justify, interpret, etc.
-2. Has independently interpretable evidence of learning; an assessment can produce evidence about *this* competency.
-3. Does not fuse A and B when a learner could reliably master one without the other and separate evaluation would matter.
-4. Does not fragment into individual exercise parameters, number combinations, images, UI controls, or instructional variants if these test the same underlying competency.
-5. Is independent of any particular country's grade structure, curriculum, age, question, assessment method, or mastery threshold.
+A Skill Definition document is deliberately minimal. Its template contains only the title, editorial review status, short Description, and independent Code link. It **does not** include `Competency`, `Boundaries`, `Evidence of Competency`, learning objectives, rubrics, progress, mastery, scores, or assessment methods. Those are responsibilities of other educational or tracking entities.
 
-**Granularity check:** Can the learner receive a separate meaningful judgment on this ability, without smuggling in an unrelated ability?
+## RUNTIME CONTRACT AND ARTIFACTS
 
-“Multiplication by 2” may be a separate Skill when its mastery is independently useful; “2 × 7” is an exercise variation. “Arithmetic” is a Domain; “Addition” is generally a broad family of related Skills rather than one atomic competency.
+The current shared-engine `Skill_Config` has a static `id` and localized `name`. Registration adds `collection` and `fileLocation` through the existing infrastructure. **It currently has no `description` field**: Markdown descriptions are editorial text, not automatic runtime/UI properties.
 
-## COMPOUND AND INTEGRATION SKILLS
+- **Definition:** a short Markdown catalog entry.
+- **Code:** a separate verified implementation file, typically `*.data.ts`, using the current TypeScript contract.
 
-A comma, enumeration, or conjunction (“and,” “or,” etc.) is a **review signal**, not an instruction to split.
-
-- Test whether action A can be mastered independently of B and whether separate diagnostic evidence matters.
-- If so, separate them; then decide whether understanding **the relationship between A and B** is itself a new, independently assessable competency.
-- A relationship or integration Skill can be atomic when *that relationship* is the meaningful assessable outcome.
-- Merely using Skills A and B in the same exercise does **not** imply a third integration Skill.
-- A single combined correct answer does not automatically establish valid independent evidence of mastery for every referenced Skill.
-
-For example, addition and subtraction are distinct abilities; explaining their inverse relationship can be a further independently assessable Skill. Even/odd classification can remain a single Skill if the outcome is one coherent classification ability.
-
-## IDENTITY AND CONTEXT BOUNDARIES
-
-The Skill's **semantic meaning** must remain stable. Rewording a human-readable title need not change identity. A substantive split, merge, or change of competency requires explicit editorial review and, for existing code/learner history, migration planning.
-
-Do **not** store grade, age, lesson IDs, question IDs, prerequisites, exercise variant, hint, scoring, assessment dimension, confidence, progress, mastery, adaptive recommendations, or rendering details inside the Skill definition. These belong to curricula, lessons, assessments, learner evidence, or UI. A Skill can be reused by many lessons and assessed by many kinds of question.
-
-The Skill definition explains **what is being measured**, not how a test is designed or how its outcomes are scored.
-
-## ARTIFACTS
-
-- **Definition:** the human-readable Markdown document that defines this competency, its boundaries and evidence.
-- **Code:** a separate application source file implementing the entity in the repository's runtime data model.
-
-Keep both independently linked and never treat one as a replacement for the other. A Definition can exist without Code; Code can temporarily exist without a Definition for legacy entities. Missing targets use `[Not implemented](#)`. UUIDs and technical ID dictionaries belong in code, not Markdown taxonomy or competency definitions.
+Keep the two links independent. Use `[Not implemented](#)` when a target is absent. Stable UUIDs and code-level identifiers remain in source files, not Markdown Definitions.
 
 Related entities: [SkillGroup](./skill-group.md), [SkillDomain](./skill-domain.md).
