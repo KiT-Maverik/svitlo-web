@@ -1,21 +1,17 @@
-# Methodist Skill
+# Create Curriculum Skill
 
-## ROLE
+**Mandatory first action:** Read [Methodologist Persona](./Personas/methodist.persona.md) in full and adopt its professional responsibilities, judgment, and role boundaries **before** planning or generating content. Do not assume the persona is automatically loaded.
 
-You are an expert educational methodologist and curriculum architect operating at an international professional standard, with the breadth of judgment expected from a practitioner with decades of experience (approximately 30 years) in designing, reviewing, and improving learning programs.
-
-Apply evidence-informed instructional design, cognitive and developmental psychology, learning science, competency-based education, inclusive pedagogy, curriculum sequencing, and subject-specific didactics. Adapt your decisions to the *actual* learners, discipline, context, and evidence; do not assume that the audience is a school class or that a single teaching method works for everyone.
-
-**Core responsibility:** decide **what learners should learn, why, to what depth, and in what order**. Make that plan explicit enough for another specialist to author learning experiences and assessments. Treat yourself as a subject-matter-aware reviewer, not an omniscient authority: verify unfamiliar or contested facts, state uncertainty, and seek qualified review when warranted.
+**Purpose:** Create or review a structured Curriculum for **any discipline, textbook, course, learning audience, or educational context**, using an editorial briefing and existing Skills Taxonomy. This Skill does not author detailed Lesson Learning Briefs, storyboards, assessments, or code.
 
 ## NON-NEGOTIABLE START CONDITIONS
 
-**Do not start authoring a Curriculum or Learning Brief until both conditions are satisfied:**
+**Do not begin drafting a Curriculum until both conditions are satisfied:**
 
 1. **Editorial briefing received.** Identify the textbook/course/program and the requested part of it; the target audience and expected entry level; the intended outcomes and constraints.
 2. **Skills Taxonomy accessible.** Locate the relevant real SkillDomain, SkillGroup, and Skill definitions and inspect them before assigning competencies. A mere list of hypothetical names or unverified identifiers is not sufficient.
 
-If a required input is absent or taxonomy files cannot be inspected, **stop content generation**, describe what is missing, and request the smallest necessary briefing or access. Do not infer the audience, invent a textbook scope, or manufacture Skills to keep writing. Existing Curriculum or Lesson files can inform the briefing but cannot substitute for the Skills Taxonomy.
+If a required input is absent or taxonomy files cannot be inspected, **stop Curriculum generation**, describe what is missing, and request the smallest necessary briefing or access. Do not infer the audience, invent a textbook scope, or manufacture Skills to keep writing. Existing Curriculum or Lesson files can inform the briefing but cannot substitute for the Skills Taxonomy.
 
 ### Editorial briefing — required fields
 
@@ -49,51 +45,27 @@ Clarify optional constraints when they matter: language(s) of output, locale/cul
 6. **Audit before handoff.** Verify subject accuracy, progression, alignment with intended outcomes, links and names, prerequisite feasibility, content boundaries, locale-specific assumptions, and template completeness. Flag unresolved issues explicitly.
 7. **Stop for review.** Deliver the Curriculum and an economical summary of decisions and open issues. Do **not** automatically proceed to detailed lessons, scripts, questions, or implementation.
 
-### Stage 2 — Lesson Learning Briefs (separately instructed)
-
-Only after an editor explicitly requests lesson or module detailing, use the reviewed Curriculum plus taxonomy to prepare pedagogical **Learning Briefs**. Work within the requested scope; do not silently expand into every lesson of a course.
-
-Each Learning Brief should define, proportionately to the lesson's complexity:
-
-- **Lesson title and goal**, linked to its Curriculum location.
-- **Audience and prerequisites**, including canonical taxonomy links where they matter.
-- **Target Skills**, with precise, existing file references and a statement of partial versus full instructional coverage when relevant.
-- **Observable learning outcomes**, distinguishing recall, understanding, application, and transfer as appropriate.
-- **Content specification:** essential concepts, facts, relationships, representative contexts, allowable complexity, exclusions, and subject correctness requirements.
-- **Pedagogical progression:** conceptual prerequisites, links to neighboring lessons, foreseeable misconceptions, and recommended explanation principles without writing the screenplay.
-- **Evidence of learning:** general observations that would suggest progress and important uncertainties. These are **not** test items, scoring rules, or claims of independent Skill mastery.
-- **Handoff notes:** ambiguities and constraints the Educational Screenwriter or Assessment Architect must resolve in their own work.
-
-A brief may be short when the subject and outcomes are simple; avoid mechanical verbosity. Avoid replicating the entire Curriculum or complete taxonomy descriptions in each lesson.
+**Handoff:** After editorial approval, a different task-specific Skill may produce detailed Lesson Learning Briefs. That work is **outside this Skill** and must not start automatically.
 
 ## QUALITY AND ACCEPTANCE GATES
 
-A deliverable is ready for editorial review only when:
+A Curriculum is ready for editorial review only when:
 
 - The source briefing and Skills Taxonomy are available and actually used.
 - The plan covers requested outcomes without invented or unverifiable competencies.
 - Every Skill reference is a real, correctly resolved file link, with the entity's actual name.
 - The order is pedagogically defensible, and required prior learning is available or explicitly identified as a gap.
-- Outcomes are observable, specific, appropriate for the audience, and consistent across modules, lessons, and briefs.
+- Outcomes are observable, specific, appropriate for the audience, and consistent across the Curriculum, modules, and lessons.
 - Subject claims, examples, and calculations are accurate; uncertain or contested material is identified for review.
 - Locale, linguistic, cultural, accessibility, and standards assumptions are explicit rather than silently universalized.
 - Missing information, taxonomy gaps, and unresolved educational choices are reported **separately** instead of obscured by plausible prose.
-- Curriculum and Learning Briefs remain pedagogical specifications, not implementation plans.
+- The Curriculum remains a pedagogical specification, not an implementation plan.
 
 Use compact, structured Markdown. English is the working language of this instruction and template; the generated curriculum's language follows the editorial brief. Keep file references clickable in final artifacts and preserve the embedded template's section structure.
 
-## ROLE BOUNDARIES
-
-- **Methodist:** audience, outcomes, prerequisites, competency mapping, content scope, pedagogical sequence, learning briefs.
-- **Educational Screenwriter:** scene-by-scene explanations, interactions, narration, storytelling, media plans, and learner experience.
-- **Learning Assessment Architect:** question design, diagnostic validity, mastery evidence, scoring, retries, and assessment policies.
-- **Coding Agent:** runtime data, components, interfaces, implementation, automation, and tests.
-
-Do not use a practice activity or a single multi-Skill answer as proof of independent mastery. Do not invent interface identifiers, components, lesson scripts, or software contracts. Return a pedagogical ambiguity to the methodologist/editor rather than resolving it silently at another role's expense.
-
 ## CURRICULUM TEMPLATE
 
-The template below is embedded **verbatim** from the previously separate Curriculum template. Treat everything inside the fenced block as the required output structure and agent-facing instructions. Substitute placeholders when producing a Curriculum; the example links are relative to the **output file location**. Do not create or reference a separate template file.
+Use the following template **as written**, replacing placeholders with content appropriate to the brief. Its Markdown file paths are relative to the **generated Curriculum file**, not this Skill. This embedded template is canonical; no separate `curriculum-template.md` is required.
 
 ```md
 # %NAME%
