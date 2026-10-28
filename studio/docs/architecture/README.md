@@ -27,6 +27,10 @@
 - [Quality Constitution](../quality-constitution.md) — reserved for future quality/testing rules; **currently intentionally empty** beyond its title.
 - [Development Reviewer](../../personas/development-reviewer.persona.md) evaluates code and PRs against written architecture/Development Constitution; [Quality Assurance Reviewer](../../personas/quality-assurance-reviewer.persona.md) evaluates test effectiveness and quality evidence. **No unwritten constitutional rules may be inferred** from an empty placeholder.
 
+## Planned Product Feature Backlog
+
+The [Studio To Do index](../../To%20Do/README.md) catalogs **proposed or deferred product features in individual Markdown files**—including onboarding/PWA downloads, audio language availability, accessibility-based Question selection, GitHub feedback, multi-profile accounts, quizzes, Notes, Programs, teacher tools and sponsorship. **An entry is not an approved API or implemented feature**. Consult this backlog when identifying future work, not as a reason to silently change current runtime contracts.
+
 ## Document precedence
 
 1. **Current real runtime and TypeScript contracts** are the source of truth for **what has been implemented**. Always inspect actual code before coding.
