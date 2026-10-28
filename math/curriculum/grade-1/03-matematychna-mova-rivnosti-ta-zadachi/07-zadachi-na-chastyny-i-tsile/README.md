@@ -15,4 +15,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Картка вище лишається методичним джерелом, повний Learning Brief потребує окремого написання.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
+[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)

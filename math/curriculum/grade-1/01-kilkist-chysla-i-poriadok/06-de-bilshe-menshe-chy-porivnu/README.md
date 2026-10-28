@@ -58,4 +58,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методична специфікація вище залишається першоджерелом.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
+[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)

@@ -3,7 +3,7 @@
 > **Curriculum: Grade 1 · модуль 04**  
 > **Статус:** усі 8 уроків мають сценарні чернетки (48 секцій); повні Learning Briefs ще не створені.
 
-**Джерело порядку та Skill ID:** [Curriculum Grade 1](../../grade-1.md). Це навчальний модуль, а не SkillGroup з таксономії.
+**Джерело порядку та Skill ID:** [Curriculum Grade 1](../../grade-1.curriculum.md). Це навчальний модуль, а не SkillGroup з таксономії.
 
 ## Уроки
 

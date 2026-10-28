@@ -14,4 +14,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Це сценарій, а не детальний Learning Brief.
 
 ---
-[Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.md)
+[Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)

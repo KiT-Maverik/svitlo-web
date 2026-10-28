@@ -3,7 +3,7 @@
 > **Curriculum: Grade 1 · модуль 01**  
 > **Статус:** 11 методичних Learning Briefs та 69 сценарних секцій у статусі draft; потрібен редакційний перегляд.
 
-**Джерело порядку та Skill ID:** [Curriculum Grade 1](../../grade-1.md). Це навчальний модуль, а не SkillGroup з таксономії.
+**Джерело порядку та Skill ID:** [Curriculum Grade 1](../../grade-1.curriculum.md). Це навчальний модуль, а не SkillGroup з таксономії.
 
 ## Мета модуля
 
