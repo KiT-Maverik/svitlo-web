@@ -80,7 +80,7 @@ for (const applicationRoot of applicationSourceRoots) {
     const code = readFileSync(file, 'utf8');
     for (const match of code.matchAll(/\bfrom\s*['"]([^'"]+)['"]/g)) {
       const specifier = match[1];
-      assert(!/^@svitlo\/(?:playground|math)(?:\/|$)/.test(specifier),
+      assert(!/^@svitlo\/(?:playground|math|physics)(?:\/|$)/.test(specifier),
         'Applications must not import another application by package name: ' + relative(root, file));
       if (!specifier.startsWith('.')) continue;
       const target = resolve(dirname(file), specifier);
