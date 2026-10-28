@@ -3,20 +3,8 @@ import { expect, userEvent, within } from 'storybook/test';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { QuestionAttempt, type QuestionAttemptProps } from '../helpers';
-import type { SelectOneAnswerQuestion } from '../types';
+import { singleSelectQuestion } from '../../../../../.storybook/fixtures/questions';
 
-const question: SelectOneAnswerQuestion = {
-  id: 'single-select-playground',
-  type: 'single-select',
-  prompt: 'Яка планета найближча до Сонця?',
-  options: [
-    { id: 'earth', label: 'Земля' },
-    { id: 'mercury', label: 'Меркурій' },
-    { id: 'venus', label: 'Венера' },
-  ],
-  correctId: 'mercury',
-  explanation: 'Меркурій — перша планета від Сонця.',
-};
 
 type StoryProps = QuestionAttemptProps<'single-select'>;
 
@@ -55,7 +43,7 @@ const meta = {
     actionSlots: { control: false },
   },
   args: {
-    question,
+    question: singleSelectQuestion,
     showResult: true,
     showExplanation: true,
     showErrors: true,
