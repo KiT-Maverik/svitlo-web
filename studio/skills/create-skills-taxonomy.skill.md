@@ -135,7 +135,7 @@ Code: [Not implemented](#)
 
 %SHORT_OBSERVABLE_SKILL_DESCRIPTION%
 
-### %DIRECT_SKILLS_DOMAIN_NAME%  # use only instead of a grouped Domain
+### %DIRECT_SKILLS_DOMAIN_NAME%
 
 Groups: 0 · Skills: %DIRECT_DOMAIN_SKILL_COUNT%
 Definition: [Not implemented](#)
