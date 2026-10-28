@@ -86,4 +86,4 @@ Create or update only the selected files under the actual textbook package:
                     └── <skillCamelCase>.skill.md
 ~~~
 
-Keep existing paths stable where already established. Use file-relative links. Report updated Definitions, their Draft/Approved status, any missing Code links, and the bounded scope ready for editorial review. Implementation requires a separate, explicitly requested **Create Skill Code Skill** run on approved Definitions.
+Keep existing paths stable where already established. Use file-relative links. Report updated Definitions, their Draft/Approved status, any missing Code links, and the bounded scope ready for editorial review. Implementation requires a separate, explicitly requested **Implement Skill Code Skill** run on approved Definitions.
