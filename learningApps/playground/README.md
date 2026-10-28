@@ -5,9 +5,10 @@
 
 - `/questions`: shared question widgets
 - `/questions/api`: question events, slots and controller usage
-- `/topics/light`: interactive How Light Moves demonstration with scenes and quiz
-- `/topics/demo`: static subject-neutral lesson fixture with navigation, quiz,
-  localization and persisted progress, defined in `src/fixtures/demoLesson.ts`
+- `/topics/light`: interactive How Light Moves demonstration with scenes and quiz,
+  with its tests under `src/data/howLightMoves` (checkpoint E2E beside its scene)
+- `/topics/demo`: subject-neutral lesson demonstration with navigation, quiz,
+  localization and persisted progress, defined in `src/data/demoLesson/demoLesson.ts`
 
 Authored subject content, static skill taxonomies and learning-method documentation
 belong to the corresponding textbook (currently `learningApps/math`).

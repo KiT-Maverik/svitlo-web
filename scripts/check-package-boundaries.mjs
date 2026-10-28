@@ -29,7 +29,14 @@ assert(existsSync(resolve(root, 'learningApps/math/docs')), 'Math textbook is mi
 assert(!existsSync(resolve(root, 'learningApps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/content')), 'Playground cannot contain authored textbook content');
 assert(existsSync(resolve(root, 'learningApps/playground/src/app/topics/light/page.tsx')), 'Playground must host the moved light demonstration route');
-assert(existsSync(resolve(root, 'learningApps/playground/src/fixtures/demoLesson.ts')), 'Playground must provide a generic lesson fixture');
+assert(existsSync(resolve(root, 'learningApps/playground/src/data/demoLesson/demoLesson.ts')), 'Playground must own its subject-neutral lesson demo data');
+assert(existsSync(resolve(root, 'learningApps/playground/src/data/demoLesson/markdown/sample-ar.md')), 'Playground must own localized Markdown test data');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/fixtures')), 'Obsolete Playground fixtures directory must be removed');
+assert(!existsSync(resolve(root, 'learningApps/math/src/app/topics/light')), 'Math cannot own Playground demo routes');
+assert(!existsSync(resolve(root, 'learningApps/math/src/content/howLightMoves')), 'Math cannot own light demonstration content');
+assert(!existsSync(resolve(root, 'learningApps/math/src/components/widgets/KnowledgeCheckpoint')), 'Math cannot own scene-specific checkpoint tests');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/components/widgets/KnowledgeCheckpoint')), 'Scene checkpoint tests must live with their authored scene');
+assert(existsSync(resolve(root, 'learningApps/playground/src/data/howLightMoves/sections/theory/resources/scenes/Checkpoint/Checkpoint.e2e.spec.ts')), 'Checkpoint scene must own its E2E coverage');
 assert(!existsSync(resolve(root, 'math')), 'Root mathematics docs must be inside the textbook package');
 assert(uiKit.dependencies?.[engine.name] === engine.version, 'UI Kit must consume the published Engine API');
 assert(engine.scripts?.build && engine.files?.includes('dist'), 'Engine must publish compiled artifacts');
