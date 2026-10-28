@@ -90,4 +90,4 @@ for (const applicationRoot of applicationSourceRoots) {
     }
   }
 }
-console.log('Package boundaries and both independent applications verified.');
+console.log('Package boundaries and independent applications verified.');
