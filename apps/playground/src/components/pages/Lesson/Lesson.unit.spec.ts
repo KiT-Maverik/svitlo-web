@@ -34,7 +34,7 @@ describe('Lesson page assembly', () => {
     const scenes = onlyChild(root);
     expect(scenes.type).toBe(SceneLocaleProvider);
     expect(props<{ scenes: object }>(scenes).scenes).toEqual(
-      buildLesson(demoLessonConfig, 'en-US', demoLessonCatalog).sceneLocale,
+      buildLesson(demoLessonConfig, 'en-US', demoLessonCatalog).sceneLocale ?? {},
     );
 
     const progress = onlyChild(scenes);
