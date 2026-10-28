@@ -5,7 +5,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
-import { useColorScheme } from '@mui/material/styles';
 import { DEFAULT_SUPPORTED_LANGUAGES, type Locale } from '@svitlo/engine/localization';
 import { Flag } from '../../../widgets/Flag/Flag';
 import { getNavbarPreferencesMessages } from './locales';
@@ -20,6 +19,9 @@ const locales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale, language, nativeName 
 export type NavbarPreferencesProps = {
   locale: Locale;
   onLocaleChange: (locale: Locale) => void;
+  mode?: 'light' | 'dark' | 'system';
+  systemMode?: 'light' | 'dark';
+  onThemeChange: (mode: 'light' | 'dark') => void;
 };
 
 function LocaleSelector({ locale, onLocaleChange }: NavbarPreferencesProps) {
@@ -58,9 +60,8 @@ function LocaleSelector({ locale, onLocaleChange }: NavbarPreferencesProps) {
   );
 }
 
-function ThemeSwitch({ locale }: Pick<NavbarPreferencesProps, 'locale'>) {
+function ThemeSwitch({ locale, mode, systemMode, onThemeChange }: Pick<NavbarPreferencesProps, 'locale' | 'mode' | 'systemMode' | 'onThemeChange'>) {
   const messages = getNavbarPreferencesMessages(locale);
-  const { mode, systemMode, setMode } = useColorScheme();
   const isDark = mode === 'dark' || (mode === 'system' && systemMode === 'dark');
 
   return (
@@ -68,18 +69,18 @@ function ThemeSwitch({ locale }: Pick<NavbarPreferencesProps, 'locale'>) {
       <Switch
         checked={isDark}
         disabled={mode === undefined}
-        onChange={event => setMode(event.target.checked ? 'dark' : 'light')}
+        onChange={event => onThemeChange(event.target.checked ? 'dark' : 'light')}
         slotProps={{ input: { 'aria-label': aria.theme } }}
       />
     </Tooltip>
   );
 }
 
-export default function NavbarPreferences({ locale, onLocaleChange }: NavbarPreferencesProps) {
+export default function NavbarPreferences({ locale, onLocaleChange, mode, systemMode, onThemeChange }: NavbarPreferencesProps) {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
       <LocaleSelector locale={locale} onLocaleChange={onLocaleChange} />
-      <ThemeSwitch locale={locale} />
+      <ThemeSwitch locale={locale} mode={mode} systemMode={systemMode} onThemeChange={onThemeChange} />
     </Box>
   );
 }

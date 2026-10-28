@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useColorScheme } from '@mui/material/styles';
 import { createLessonLearningLayout } from '@svitlo/ui-kit/learning-layout';
 import { useLessonProgress } from '@/components/pages/Lesson/LessonProgress/LessonProgress';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
@@ -11,6 +12,7 @@ const LessonLearningLayout = createLessonLearningLayout({
   usePathname,
   useLessonProgress,
   useLocale,
+  useColorScheme,
   linkComponent: Link,
 });
 

@@ -18,6 +18,12 @@ export type LessonLearningLayoutBindings = {
     progress: LearningLayoutProgress;
     dispatch: (action: { type: 'back' | 'next' | 'skip' }) => void;
   };
+  /** Resolve theme from the app's MUI provider instance, not the UI Kit bundle. */
+  useColorScheme: () => {
+    mode?: 'light' | 'dark' | 'system';
+    systemMode?: 'light' | 'dark';
+    setMode: (mode: 'light' | 'dark') => void;
+  };
   linkComponent?: ElementType;
 };
 
@@ -27,6 +33,7 @@ export function createLessonLearningLayout(bindings: LessonLearningLayoutBinding
     const { locale, setLocale } = bindings.useLocale();
     const pathname = bindings.usePathname();
     const { progress, dispatch } = bindings.useLessonProgress();
+    const { mode, systemMode, setMode } = bindings.useColorScheme();
 
     return (
       <LearningLayout
@@ -41,7 +48,7 @@ export function createLessonLearningLayout(bindings: LessonLearningLayoutBinding
           next: () => dispatch({ type: 'next' }),
           skip: () => dispatch({ type: 'skip' }),
         }}
-        preferences={<NavbarPreferences locale={locale} onLocaleChange={setLocale} />}
+        preferences={<NavbarPreferences locale={locale} onLocaleChange={setLocale} mode={mode} systemMode={systemMode} onThemeChange={setMode} />}
         linkComponent={bindings.linkComponent}
       >
         {children}

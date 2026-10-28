@@ -159,4 +159,8 @@ assert(existsSync(resolve(root, 'shared/ui-kit/src/components/layout/LearningLay
 assert(uiKit.exports?.['./learning-layout/preferences']?.default ===
   './dist/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.js',
   'NavbarPreferences must have a compiled public UI Kit export');
+const themeComponent = readFileSync(resolve(root,
+  'shared/ui-kit/src/components/layout/LearningLayout/NavbarPreferences/NavbarPreferences.tsx'), 'utf8');
+assert(!themeComponent.includes('useColorScheme'),
+  'UI Kit NavbarPreferences must receive MUI theme state via props from the consuming app');
 console.log('Package boundaries and both independent applications verified.');
