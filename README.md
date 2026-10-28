@@ -53,23 +53,23 @@ Question API examples (slots, lifecycle events, automatic grading): `/questions/
 
 ## Урок із конфігурації (data-driven Lesson)
 
-> **Migration note (2026-10-28):** `howLightMoves` data and Scenes were relocated to `learningApps/playground/src/data/howLightMoves`. The Math `/topics/light` route and some legacy tests still refer to the former Math `src/content/` location. The implementation details below describe an **earlier state**, not a currently verified working Math route. Do not copy demonstration Data back into Math; finish the remaining route/test migration in its owning workstream.
+> **Current ownership:** `How Light Moves` is a Playground-only demonstration. Its route, authored content, lesson tests and checkpoint-scene tests live in `learningApps/playground`, not the Math textbook.
 
 Після `npm ci` та `npm run dev` відкрийте `/topics/light` — урок «Як рухається світло».
 
-- `src/content/howLightMoves/howLightMoves.data.ts` — `Lesson_Config`: ID назви й секцій, параметри навігації, квізу та словники локалізації сцен.
-- `src/content/howLightMoves/howLightMoves.catalog.ts` — визначення назви та секцій, доступні за їхніми ID.
+- `src/data/howLightMoves/howLightMoves.data.ts` — `Lesson_Config`: ID назви й секцій, параметри навігації, квізу та словники локалізації сцен.
+- `src/data/howLightMoves/howLightMoves.catalog.ts` — визначення назви та секцій, доступні за їхніми ID.
 - `src/app/topics/light/page.tsx` — тонкий маршрут, який визначає локаль і передає `config`, `catalog`, `locale`, `href` сторінці `Lesson`.
 - `src/components/pages/Lesson/Lesson.tsx` — спільний складальник уроків: `buildLesson(config, locale, catalog)`, контексти локалі/сцен/прогресу, layout та рендеринг кроків.
-- `src/components/pages/Lesson/LessonSectionContent/` — серверний рендерер текстових, Markdown-ресурсів і сцен. Локалізовані Markdown-файли знаходяться в `src/content/howLightMoves/sections/theory/markdown/`.
-- `src/content/howLightMoves/resources/scenes/` — вбудовані інтерактивні сцени як ресурси уроку. Сцени беруть вибрану локаль через `useSceneLocales()`.
-- `src/components/widgets/` — незалежні повторно використовувані компоненти, зокрема `Flashcard` і `MarkdownContent`.
+- `src/components/pages/Lesson/LessonSectionContent/` — серверний рендерер текстових, Markdown-ресурсів і сцен. Локалізовані Markdown-файли знаходяться в `src/data/howLightMoves/sections/theory/resources/markdown/`.
+- `src/data/howLightMoves/sections/theory/resources/scenes/` — вбудовані інтерактивні сцени як ресурси уроку. Сцени беруть вибрану локаль через `useSceneLocales()`.
+- `shared/ui-kit/src/components/widgets/` — незалежні повторно використовувані компоненти, зокрема `Flashcard`, `KnowledgeCheckpoint` і `MarkdownContent`.
 
 Поточний урок має три кроки: теорія, практика (порівняння швидкості світла у вакуумі, повітрі та воді за моделлю `v = c / n`) і тест із шести питань. Конфігурація підтримує довільну послідовність секцій, але теперішній клієнтський адаптер квізу рендерить тільки `select-one-answer` і обмежується одним квізом на урок; для інших типів потрібне розширення адаптера/стану.
 
 Прогрес уроку та відповіді зберігаються в IndexedDB, тому перезавантаження відновлює поточний крок і стан тесту. Для іншого `lesson.id` клієнтський стан монтується заново. Контент Markdown рендериться сервером; під час перемикання локалі сцени отримують відповідний словник із конфігу. Сцена `Practice` має переклади для всіх 22 стандартних мов.
 
-Тестування: `npm run test:components`, `npm run typecheck`, `npm run build`, `npx playwright test src/components/pages/Lesson/Lesson.e2e.spec.ts`.
+Тестування: `npm run test:components`, `npm run typecheck`, `npm run build`, `npm run test:e2e --workspace @svitlo/playground -- src/data/howLightMoves/LightLesson.e2e.spec.ts`.
 
 ## Навігація навчальної зони
 

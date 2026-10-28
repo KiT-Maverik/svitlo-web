@@ -1,5 +1,5 @@
 import { vi } from 'vitest';
-import { listLessonStates, saveLessonState } from '@/db';
+import { listLessonStates, saveLessonState } from '@svitlo/indexdb';
 
 export const LessonProgress_mx = {
   unavailable: () => {

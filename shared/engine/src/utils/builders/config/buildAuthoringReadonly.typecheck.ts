@@ -1,6 +1,6 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../types/content/assessmentMethod.ids';
-import type { AssessmentMethod_Config } from '../../../types/content/assessmentMethod.types';
-import type { Skill_Config } from '../../../types/content/skill.types';
+import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/contracts/content';
+import type { AssessmentMethod_Config } from '@svitlo/contracts/content';
+import type { Skill_Config } from '@svitlo/contracts/taxonomy';
 import { buildLessonConfig } from './buildLessonConfig.utils';
 import { buildLessonSectionConfig } from './buildLessonSectionConfig.utils';
 import { buildSkillConfig } from './buildSkillConfig.utils';

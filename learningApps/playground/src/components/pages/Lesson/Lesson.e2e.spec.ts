@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
-import { demoQuizConfig } from '@/fixtures/demoLesson';
+import { demoQuizConfig } from '@/data/demoLesson/demoLesson';
 import { toQuestionWidgets } from './adapters/toQuestionWidgets';
 import { buildQuiz } from '@svitlo/engine/builders';
 

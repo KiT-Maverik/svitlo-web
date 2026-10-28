@@ -1,6 +1,6 @@
-import type { LessonSection_Config } from '../../../types/content/lesson.types';
-import type { Collection } from '../../../types/misc.types';
-import type { DeepReadonly } from '../../../types/readonly.types';
+import type { LessonSection_Config } from '@svitlo/contracts/content';
+import type { Collection } from '@svitlo/contracts/content';
+import type { DeepReadonly } from '@svitlo/contracts/content';
 
 /** Add the lesson-section discriminator without changing authored config; return deeply readonly data. */
 export function buildLessonSectionConfig<T extends Omit<LessonSection_Config, 'collection'> & { collection?: never }>(

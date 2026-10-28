@@ -24,7 +24,7 @@ describe('Components', () => {
       await LessonSectionContent_fx.render({
         locale: 'ar-SA',
         content: [
-          LessonSectionContent_fx.blocks.markdown('/content/howLightMoves/sections/theory/resources/markdown/01/ar.md'),
+          LessonSectionContent_fx.blocks.markdown('/components/pages/Lesson/LessonSectionContent/sample-ar.unit.md'),
         ],
       });
       expect(LessonSectionContent_fx.selectors.article()).toHaveAttribute('lang', 'ar-SA');
