@@ -1,10 +1,10 @@
 # Svitlo monorepo
 
-The current Next.js Playground application lives at `apps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Root application checks target Playground/Math; Storybook is owned by UI Kit and no longer reads application sources.
+The Next.js Playground application now lives at `learningApps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Root application checks target Playground/Math; Storybook is owned by UI Kit and no longer reads application sources.
 
 Engine is now an independently compiled workspace package. The Server workspace remains a placeholder; Math is now a standalone textbook app and UI Kit owns reusable React/MUI components. See `studio/Monorepo Migration.md`.
 
-> Legacy documentation below uses paths relative to Playground. A reference to `src/` now means `apps/playground/src/`.
+> Legacy documentation below uses paths relative to Playground. A reference to `src/` now means `learningApps/playground/src/`.
 
 ---
 
@@ -52,6 +52,8 @@ Open `/questions` for nine independently controlled examples.
 Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Widget types live in `src/components/widgets/questions/types`; content contracts live in `src/types/content`.
 
 ## Урок із конфігурації (data-driven Lesson)
+
+> **Migration note (2026-10-28):** `howLightMoves` data and Scenes were relocated to `learningApps/playground/src/data/howLightMoves`. The Math `/topics/light` route and some legacy tests still refer to the former Math `src/content/` location. The implementation details below describe an **earlier state**, not a currently verified working Math route. Do not copy demonstration Data back into Math; finish the remaining route/test migration in its owning workstream.
 
 Після `npm ci` та `npm run dev` відкрийте `/topics/light` — урок «Як рухається світло».
 

@@ -1,11 +1,11 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
-import { join, resolve, relative } from 'node:path';
+import { dirname, join, resolve, relative, sep } from 'node:path';
 
 const root = process.cwd();
 const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
 const engine = readJson('shared/engine/package.json');
-const playground = readJson('apps/playground/package.json');
-const math = readJson('apps/textbooks/math/package.json');
+const playground = readJson('learningApps/playground/package.json');
+const math = readJson('learningApps/math/package.json');
 const uiKit = readJson('shared/ui-kit/package.json');
 
 function walk(dir) {
@@ -24,12 +24,12 @@ for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', 
   assert(manifest.dependencies?.[engine.name] === engine.version, label + ' must use public Engine dependency');
   assert(manifest.dependencies?.[uiKit.name] === uiKit.version, label + ' must use public UI Kit dependency');
 }
-assert(existsSync(resolve(root, 'apps/textbooks/math/src/math')), 'Math textbook is missing its domain content');
-assert(existsSync(resolve(root, 'apps/textbooks/math/docs')), 'Math textbook is missing package-local educational docs');
-assert(!existsSync(resolve(root, 'apps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
-assert(!existsSync(resolve(root, 'apps/playground/src/content')), 'Playground cannot contain authored textbook content');
-assert(!existsSync(resolve(root, 'apps/playground/src/app/topics/light')), 'Old subject-specific Playground route must be removed');
-assert(existsSync(resolve(root, 'apps/playground/src/fixtures/demoLesson.ts')), 'Playground must provide a generic lesson fixture');
+assert(existsSync(resolve(root, 'learningApps/math/src/math')), 'Math textbook is missing its domain content');
+assert(existsSync(resolve(root, 'learningApps/math/docs')), 'Math textbook is missing package-local educational docs');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/content')), 'Playground cannot contain authored textbook content');
+assert(!existsSync(resolve(root, 'learningApps/playground/src/app/topics/light')), 'Old subject-specific Playground route must be removed');
+assert(existsSync(resolve(root, 'learningApps/playground/src/fixtures/demoLesson.ts')), 'Playground must provide a generic lesson fixture');
 assert(!existsSync(resolve(root, 'math')), 'Root mathematics docs must be inside the textbook package');
 assert(uiKit.dependencies?.[engine.name] === engine.version, 'UI Kit must consume the published Engine API');
 assert(engine.scripts?.build && engine.files?.includes('dist'), 'Engine must publish compiled artifacts');
@@ -51,12 +51,12 @@ const kitSourceRoot = resolve(root, 'shared/ui-kit/src');
 if(existsSync(kitSourceRoot)) {
   for(const file of walk(kitSourceRoot).filter(file=>/\.(ts|tsx)$/.test(file))) {
     const source=readFileSync(file,'utf8');
-    assert(!/from\s*['"](?:@\/|@layout|@pages|next\/|\.\.\/\.\.\/\.\.\/\.\.\/apps\/)/.test(source),
+    assert(!/from\s*['"](?:@\/|@layout|@pages|next\/|\.\.\/\.\.\/\.\.\/\.\.\/learningApps\/)/.test(source),
       'UI Kit must not import application or Next.js sources: '+relative(root,file));
   }
 }
-const appSourceRoot = resolve(root, 'apps/playground/src');
-const playgroundManifest = readJson('apps/playground/tsconfig.json');
+const appSourceRoot = resolve(root, 'learningApps/playground/src');
+const playgroundManifest = readJson('learningApps/playground/tsconfig.json');
 assert(!playgroundManifest.compilerOptions?.paths?.['@layout'] && !playgroundManifest.compilerOptions?.paths?.['@pages'],
   'Playground must not retain deprecated @layout or @pages aliases');
 for (const removed of ['types/index.ts', 'types/languages.ts', 'utils/index.ts', 'math/assessmentMethodTaxonomy/index.ids.ts']) {
@@ -67,17 +67,27 @@ if (existsSync(appSourceRoot)) {
     const content = readFileSync(file, 'utf8');
     assert(!/from\s*['"](?:@types|@layout|@pages|@\/utils(?:\/|['"]))/.test(content),
       'Application must not depend on legacy compatibility aliases: ' + relative(root, file));
-    assert(!/howLightMoves|topics\/light/.test(content),
-      'Playground must not reference authored subject-specific content: ' + relative(root, file));
+    // Locally owned Playground demonstration data is permitted, including subject-based examples.
+    // Cross-application imports remain forbidden by the resolved-path check below.
     assert(!/(?:shared\/engine\/src|@svitlo\/engine\/(?:src|dist)\/)/.test(content),
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-for(const appRoot of ['apps/playground/src','apps/textbooks/math/src']) {
-  for (const file of walk(resolve(root,appRoot)).filter(x=>/\.(ts|tsx)$/.test(x))) {
-    const code=readFileSync(file,'utf8');
-    assert(!/from\s*['"](?:@svitlo\/(?:playground|math)|(?:\.\.\/){3,}(?:playground|textbooks)\/)/.test(code),
-      'Textbooks and Playground must not import other application source: '+relative(root,file));
+const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src']
+  .map(path => resolve(root, path));
+for (const applicationRoot of applicationSourceRoots) {
+  for (const file of walk(applicationRoot).filter(path => /\.(ts|tsx)$/.test(path))) {
+    const code = readFileSync(file, 'utf8');
+    for (const match of code.matchAll(/\bfrom\s*['"]([^'"]+)['"]/g)) {
+      const specifier = match[1];
+      assert(!/^@svitlo\/(?:playground|math)(?:\/|$)/.test(specifier),
+        'Applications must not import another application by package name: ' + relative(root, file));
+      if (!specifier.startsWith('.')) continue;
+      const target = resolve(dirname(file), specifier);
+      assert(!applicationSourceRoots.some(other => other !== applicationRoot &&
+        (target === other || target.startsWith(other + sep))),
+        'Applications must not import another application source: ' + relative(root, file) + ' -> ' + specifier);
+    }
   }
 }
 console.log('Package boundaries and both independent applications verified.');

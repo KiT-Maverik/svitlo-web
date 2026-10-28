@@ -8,8 +8,8 @@ const builtins = new Set(builtinModules.map(name => name.replace(/^node:/, '')))
 const workspaces = [
   ['shared/engine', readJson('shared/engine/package.json')],
   ['shared/ui-kit', readJson('shared/ui-kit/package.json')],
-  ['apps/playground', readJson('apps/playground/package.json')],
-  ['apps/textbooks/math', readJson('apps/textbooks/math/package.json')],
+  ['learningApps/playground', readJson('learningApps/playground/package.json')],
+  ['learningApps/math', readJson('learningApps/math/package.json')],
 ];
 const byName = new Map(workspaces.map(([path, pkg]) => [pkg.name, { path, pkg }]));
 function assert(ok, message) {
@@ -66,7 +66,7 @@ for (const [path, pkg] of workspaces) {
         continue;
       }
       if (specifier.startsWith('@/') || Object.hasOwn(localAliases, specifier)) {
-        assert(path.startsWith('apps/'), 'Unrewritten shared source alias: ' + description);
+        assert(path.startsWith('learningApps/'), 'Unrewritten shared source alias: ' + description);
         continue;
       }
       if (specifier.startsWith('node:') || builtins.has(specifier)) continue;
@@ -117,11 +117,11 @@ console.log('Stage 5 extraction readiness: source imports, dependencies, public 
 
 // Storybook is owned by UI Kit, not coupled to either Next.js application.
 const storybookMain = readFileSync(resolve(root, 'shared/ui-kit/.storybook/main.ts'), 'utf8');
-assert(!/\bapps\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/apps\//.test(storybookMain),
+assert(!/\b(?:apps|learningApps)\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/(?:apps|learningApps)\//.test(storybookMain),
   'UI Kit Storybook must not read application or monorepo source paths');
 assert(readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
   'UI Kit must own the Storybook build command');
-for (const application of ['apps/playground', 'apps/textbooks/math']) {
+for (const application of ['learningApps/playground', 'learningApps/math']) {
   assert(!existsSync(resolve(root, application, '.storybook')),
     'Application Storybook must not depend on shared source trees: ' + application);
   const appManifest = readJson(application + '/package.json');

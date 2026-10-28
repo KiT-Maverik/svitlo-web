@@ -1,13 +1,14 @@
 import type { Locale } from '../../../types/languages';
+import type { DeepReadonly } from '../../../types/readonly.types';
 import type { Resource, Resource_Config } from '../../../content';
 import type { Question, Question_Config } from '../../../types/content/question.types';
 import { buildResource, buildTextResource } from '../buildResource/buildResource.utils';
 
-export function buildQuestion(config: Question_Config, locale: Locale): Question {
+export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Locale): Question {
   const base = {
     id: config.id,
     assessmentMethodId: config.assessmentMethodId,
-    restrictions: config.restrictions,
+    restrictions: [...config.restrictions],
     content: config.content.map(resource => buildResource(resource, locale)) as [
       ReturnType<typeof buildResource>,
       ...ReturnType<typeof buildResource>[],
@@ -15,8 +16,8 @@ export function buildQuestion(config: Question_Config, locale: Locale): Question
     explanation: config.explanation && buildTextResource(config.explanation, locale),
     flashcardConfig: config.flashcardConfig,
   };
-  const resources = (items: Resource_Config[]) => items.map(item => buildResource(item, locale));
-  const nonEmptyResources = (items: [Resource_Config, ...Resource_Config[]]): [Resource, ...Resource[]] =>
+  const resources = (items: readonly DeepReadonly<Resource_Config>[]) => items.map(item => buildResource(item, locale));
+  const nonEmptyResources = (items: readonly [DeepReadonly<Resource_Config>, ...DeepReadonly<Resource_Config>[]]): [Resource, ...Resource[]] =>
     items.map(item => buildResource(item, locale)) as [Resource, ...Resource[]];
   switch (config.type) {
     case 'select-one-answer':
@@ -43,7 +44,7 @@ export function buildQuestion(config: Question_Config, locale: Locale): Question
       return {
         ...base,
         type: config.type,
-        correctAnswer: config.correctAnswer,
+        correctAnswer: [...config.correctAnswer],
         placeholder: buildTextResource(config.placeholder, locale),
       };
     case 'answer-with-text':

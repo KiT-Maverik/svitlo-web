@@ -4,6 +4,10 @@
 
 **Purpose:** Create or review a structured Curriculum for **any discipline, textbook, course, learning audience, or educational context**, using an editorial briefing and existing Skills Taxonomy. This Skill does not author detailed Lesson Learning Briefs, storyboards, assessments, or code.
 
+## CROSS-CUTTING PRODUCT INTENT
+
+Read the [Learning Experience Philosophy](../docs/architecture/learning-experience-philosophy.md), [Internationalization & Inclusive Access](../docs/architecture/internationalization-and-accessibility.md) and [Offline/Device Compatibility](../docs/architecture/offline-first-and-device-compatibility.md) when selecting outcomes and learning progressions. The Curriculum is a pedagogical plan, **not a pledge that all these runtime capabilities are complete**; it should preserve accessible, internationally applicable and offline-capable learning intent. The [Lesson Notes mechanism](../docs/architecture/lesson-notes.md) is planned and belongs to detailed Lesson authoring, not as fabricated Curriculum runtime fields.
+
 ## ENTITY DEFINITIONS — REQUIRED READING
 
 Before inspecting the taxonomy, read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md). These documents own the semantics and boundaries of the referenced entities; this Curriculum Skill owns their pedagogical sequencing and use.
@@ -19,7 +23,7 @@ If a required input is absent or taxonomy files cannot be inspected, **stop Curr
 
 ### Editorial briefing — required fields
 
-- **Package root:** root of the **specific standalone textbook application** being authored (for example, `<MonorepoRoot>/apps/<textbook>/`). The app directory is the package root; the monorepo root, its root-level `backend/`, and shared libraries are not. Use the actual app path from the repository/briefing rather than assuming a fixed monorepo layout.
+- **Package root:** root of the **specific standalone textbook application** being authored (for example, `<MonorepoRoot>/learningApps/<textbook>/`). The app directory is the package root; the monorepo root, its root-level `backend/`, and shared libraries are not. Use the actual app path from the repository/briefing rather than assuming a fixed monorepo layout.
 - **Learning resource:** title or working title of the textbook/course/learning program, discipline or interdisciplinary theme, and requested scope (whole resource, level, module, or lesson).
 - **Audience:** learner category and approximate age or professional stage when relevant; prior knowledge, literacy and language proficiency; learning context and meaningful accessibility needs. School grades are optional, not universal.
 - **Intent:** desired educational outcomes, depth, boundaries, mandatory source materials, and whether alignment with a specified local standard or accreditation is required.

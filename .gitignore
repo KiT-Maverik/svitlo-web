@@ -62,3 +62,6 @@ next-env.d.ts
 
 # Local UI Kit Storybook build
 **/storybook-static/
+
+# Disposable one-off scripts and generated intermediate files
+**/temp/

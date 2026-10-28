@@ -4,6 +4,10 @@
 
 **Purpose:** Implement **approved SkillDomain, SkillGroup, and Skill Definitions** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy and separate lightweight Data/ID import surfaces.
 
+## CROSS-CUTTING RULES
+
+This implementation must also follow [Git-First Typed Content & AI Authoring](../docs/architecture/git-first-typed-content.md) and [Internationalization & Inclusive Access](../docs/architecture/internationalization-and-accessibility.md). Treat every `*.data.ts` entity as reviewed, **strictly typed named-export content**, avoid default exports and undocumented identity aliases, and do not confuse translation dictionaries or stable IDs with a fully registered runtime catalog. Inspect the live Engine types and full locale roster before implementation.
+
 ## REQUIRED SOURCES — READ BEFORE WRITING
 
 1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
@@ -15,14 +19,14 @@
    - `skillDomain.types.ts` — `SkillDomain_Config`, `groupIds`.
    - `shared/engine/src/types/languages.ts` — `LanguageCode` and the current supported-language configuration.
 5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
-6. **Reference implementation (read-only example):** inspect the **existing Mathematics taxonomy** in `frontend/playground/src/math/skillsTaxonomy/`, especially:
+6. **Reference implementation (read-only example):** inspect the **existing Mathematics taxonomy** in `learningApps/math/src/data/skillsTaxonomy/`, especially:
    - `index.data.ts` and `index.ids.ts`;
    - `arithmetic/arithmetic.data.ts`, `arithmetic/arithmetic.ids.ts`, `arithmetic/index.data.ts`, `arithmetic/index.ids.ts`;
    - `arithmetic/addition/addition.data.ts`, `addition.ids.ts`, `index.data.ts`;
    - `arithmetic/addition/skills/addMeaning.data.ts`, `index.data.ts`, `index.ids.ts`;
-   - `frontend/playground/src/utils/builders/config/skillTaxonomyIndex.spec.ts` and the taxonomy builder/translation tests.
+   - `learningApps/math/src/utils/builders/config/skillTaxonomyIndex.spec.ts` and the taxonomy builder/translation tests.
 
-**Distinguish the two paths:** playground's `src/math/skillsTaxonomy/` is a **historical working reference**, not the destination for a new textbook. The canonical destination for this Skill is **`<PackageRoot>/src/data/skillsTaxonomy/`** (camelCase). Do not copy a stale playground import alias or modify the playground merely because it contains the examples. If a current shared-engine contract differs from a playground example, the current contract wins; explain a material incompatibility.
+**Distinguish the two paths:** Math textbook's `src/math/skillsTaxonomy/` is an **existing working reference**, not the destination for a new textbook. The canonical destination for this Skill is **`<PackageRoot>/src/data/skillsTaxonomy/`** (camelCase). Do not copy a stale playground import alias or modify the playground merely because it contains the examples. If a current shared-engine contract differs from a textbook example, the current contract wins; explain a material incompatibility.
 
 Current contracts and the canonical [Skill](../docs/entities/skill.md), [SkillGroup](../docs/entities/skill-group.md) and [SkillDomain](../docs/entities/skill-domain.md) rules govern this workflow. The historical conventions have been consolidated here; do not reintroduce obsolete directory layouts or locale counts.
 
@@ -78,7 +82,7 @@ Repeat Domain, Group, and Skill directories strictly according to `docs/skills/t
 
 The reference Mathematics tree has `index.data.ts` on every collection level, but some legacy Group directories have no `index.ids.ts`. **For new textbook output, create both `index.data.ts` and `index.ids.ts` at each level**, including Groups: the Group-level `index.ids.ts` is a named, ID-only re-export of its existing `<group>.ids.ts`, **not** a second UUID literal or a recursive aggregator. Reuse existing UUIDs, avoid duplicate ID definitions, and never re-export child Skill configurations. Root, Domain, and Skills ID indexes retain their distinct, direct-level responsibilities.
 
-Use the target package's actual alias/export configuration for imports (`@svitlo/engine/taxonomy` for shared builders where available). Do not assume playground's `@/utils` alias applies in a different package. Avoid duplicating shared engine types or builders inside `src/data/`.
+Use the target package's actual alias/export configuration for imports (`@svitlo/engine/taxonomy` for shared builders where available). Do not assume the reference textbook's `@/utils` alias applies in a different package. Avoid duplicating shared engine types or builders inside `src/data/`.
 
 ## 3. DATA VS ID MODULES — SEPARATE IMPORT SURFACES
 
@@ -149,7 +153,7 @@ Before reporting success, run the target package's available checks and add/fix 
 - **Localization:** each `name` has **exactly** the current required language-code keys (two-letter unquoted wherever legal), no gaps, duplicates, unexpected keys, empty/placeholder/copy-pasted language values.
 - **Identity:** UUID syntax and stability; check uniqueness and immediate-child mappings against the in-scope files and approved hierarchy. The existing builders **cannot** resolve IDs to actual entity types/registrations; full repo-wide reference validation is deferred to a separate build-time script. Mark unverified items explicitly rather than claiming a builder-level guarantee.
 - **Data/IDs isolation:** `*.ids.ts` modules never import Data or builders; importing a parent Data config does not require importing child Data solely to access child IDs.
-- **Export boundaries:** root Data exports Domains only, Domain Data exports its own Domain only, Group Data exports its Group only, Skills Data exports only that Group's Skills. Verify no nested/re-exported Data from higher levels and no `export *`. Adapt the structural checks exemplified by `frontend/playground/src/utils/builders/config/skillTaxonomyIndex.spec.ts`.
+- **Export boundaries:** root Data exports Domains only, Domain Data exports its own Domain only, Group Data exports its Group only, Skills Data exports only that Group's Skills. Verify no nested/re-exported Data from higher levels and no `export *`. Adapt the structural checks exemplified by `learningApps/math/src/utils/builders/config/skillTaxonomyIndex.spec.ts`.
 - **Topology:** physical paths and entries match the approved taxonomy, with no accidental duplicate or missing entities. All editorial Code links resolve to real files and counts reconcile; Definition links remain unchanged.
 - **Tests:** run available package TypeScript, lint, builder, translation and index tests; cite commands/results. Run registry validation only if a real registry/test exists; `fileLocation` and global ID resolution remain separate planned infrastructure, not automatically finished by producing Data files. If tooling is unavailable, mark checks **not run**.
 
@@ -164,4 +168,4 @@ Produce a reviewable code change that includes:
 5. **Updated Code links/counts** in `<PackageRoot>/docs/skills/taxonomy.md` and Code links in the corresponding Markdown Definitions, without overwriting the Definitions or their relationships.
 6. **Concise completion report:** implemented Domains/Groups/Skills counts, paths, preserved/new IDs, verification commands and outcomes, unresolved items, and any necessary explicit migration notes.
 
-**Scope boundary:** Do **not** move/copy the playground's Mathematics taxonomy into the new textbook automatically, change shared engine contracts, rewrite curriculum semantics, build a cross-textbook Skill registry, or refactor unrelated packages. Cross-textbook Skill identity synchronization is **out of scope for now**. Each textbook stays independently extractable with its own `src/data/skillsTaxonomy`, depending only on explicit shared-engine contracts — no hidden coupling to another textbook's data tree.
+**Scope boundary:** Do **not** move/copy the Math textbook's Mathematics taxonomy into another textbook automatically, change shared engine contracts, rewrite curriculum semantics, build a cross-textbook Skill registry, or refactor unrelated packages. Cross-textbook Skill identity synchronization is **out of scope for now**. Each textbook stays independently extractable with its own `src/data/skillsTaxonomy`, depending only on explicit shared-engine contracts — no hidden coupling to another textbook's data tree.

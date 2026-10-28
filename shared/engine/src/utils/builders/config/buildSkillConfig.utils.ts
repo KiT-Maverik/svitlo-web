@@ -1,6 +1,7 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 import type { Collection } from '../../../types/misc.types';
 import type { Skill_Config } from '../../../types/content/skill.types';
+import type { DeepReadonly } from '../../../types/readonly.types';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
 const supportedLanguages = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language));
@@ -36,8 +37,8 @@ export function validateSkillConfig(config: Skill_Config): void {
  * Adds the static taxonomy discriminator. IDs remain imported from *.ids.ts.
  * Authoring config is not mutated; fileLocation is added separately by the registry.
  */
-export function buildSkillConfig<const T extends Skill_Config>(config: T) {
+export function buildSkillConfig<const T extends Skill_Config>(config: T): DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }> {
   validateSkillConfig(config);
   const collection: Extract<Collection, 'skill'> = 'skill';
-  return { ...config, collection } as const;
+  return { ...config, collection } as DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }>;
 }
