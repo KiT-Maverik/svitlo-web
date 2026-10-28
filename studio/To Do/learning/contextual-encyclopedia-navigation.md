@@ -9,7 +9,7 @@ Let a learner explore a relevant encyclopedia-style material — **«Що це?�
 
 ## Intended scope
 
-- A Physics lesson about magnetic attraction may suggest **«Як працює маглев?»**, and a lesson about light may suggest **«Що таке лазер?»**. The destination is another reusable Lesson/resource in the same textbook, or a deliberately linked cross-subject resource where permitted.
+- A Physics lesson about magnetic attraction may suggest **«Як працює маглев?»** in the standalone **Engineering** textbook; an Optics lesson may lead to **«Як улаштовано лазер?»** in Engineering. The destination is another canonical Lesson/resource in the same textbook or an explicitly linked independent textbook; **no cross-app source import**.
 - An **explicit, optional** “Дізнатися більше” / “Як це працює?” choice may open a related item while preserving the learner's current context; never silently replace the next lesson with an unrelated topic.
 - Provide an obvious **«Повернутися до уроку»** action and restore the exact prior Lesson/Section position; reading an aside is **not** proof of completion or Skill mastery in the main learning path.
 - A suggested detour may appear near a relevant concept, in an optional “Explore” area, or after lesson completion. Keep an ordinary **«Далі за програмою»** path visible so the learner cannot confuse a side trip with the required sequence.
