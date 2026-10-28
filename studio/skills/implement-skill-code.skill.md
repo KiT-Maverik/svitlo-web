@@ -11,12 +11,12 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
 ## REQUIRED SOURCES — READ BEFORE WRITING
 
 1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
-2. **Editorial authority:** read `<PackageRoot>/docs/skills/taxonomy.md` and the approved Markdown Definition linked for every entity in scope (`*.skill-domain.md`, `*.skill-group.md`, `*.skill.md`). The taxonomy alone owns the **Domain → Group → Skill** hierarchy and the placement of each entity. Missing, Draft, or contradictory Definitions are blockers for the affected entity; report them rather than inferring semantics.
+2. **Editorial authority:** read `<PackageRoot>/docs/skills/taxonomy.md` and the approved Markdown Definition linked for every entity in scope (`*.skill-domain.md`, `*.skill-group.md`, `*.skill.md`). The taxonomy alone owns the usual **Domain → Group → Skill** hierarchy or the approved exceptional **Domain → Skill** structure and the placement of each entity. Missing, Draft, or contradictory Definitions are blockers for the affected entity; report them rather than inferring semantics.
 3. **Entity meanings:** read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
 4. **Authoritative TypeScript contracts in the shared engine:** inspect the actual files under `shared/engine/src/types/content/`:
    - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.
    - `skillGroup.types.ts` — `SkillGroup_Config`, `skillIds`.
-   - `skillDomain.types.ts` — `SkillDomain_Config`, `groupIds`.
+   - `skillDomain.types.ts` — `SkillDomain_Config`, `groupIds` and optional direct `skillIds`.
    - `shared/engine/src/types/languages.ts` — `LanguageCode` and the current supported-language configuration.
 5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
 6. **Reference implementation (read-only example):** inspect the **existing Mathematics taxonomy** in `learningApps/math/src/data/skillsTaxonomy/`, especially:
@@ -30,6 +30,12 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
 
 Current contracts and the canonical [Skill](../docs/entities/skill.md), [SkillGroup](../docs/entities/skill-group.md) and [SkillDomain](../docs/entities/skill-domain.md) rules govern this workflow. The historical conventions have been consolidated here; do not reintroduce obsolete directory layouts or locale counts.
 
+### Direct-Skill Domains — mandatory compatibility gate
+
+Before implementing a Domain with **zero Groups**, inspect and verify the shared-engine `SkillDomain_Config`, `buildSkillDomainConfig`, validation, **source registry and every downstream taxonomy index, exporter, loader and display/ancestry consumer**. The engine type and builder now permit `skillIds` with `groupIds: {}`, but this **does not prove** an existing textbook's grouped-only index, builder composition or UI supports direct Skills. Add focused tests for direct and grouped membership and for no mixed/empty Domain. Stop and report a blocker rather than generating a synthetic Group or falsely claiming end-to-end integration. No new Skill IDs may be invented to satisfy a directory layout.
+
+**Direct Domain source layout:** place Skills under `<domainCamelCase>/skills/<skillCamelCase>.data.ts` and their UUIDs in the established ID-only surfaces for that Domain; the Domain's `index.ids.ts` maps direct **Skill IDs** instead of Group IDs. Keep the existing grouped layouts unchanged for Domains that have meaningful Groups. Confirm all generated imports and index exports obey the existing `Data` vs `IDs` conventions and translation completeness before shipping.
+
 ## 1. STRICT TYPE AND ENTITY CONTRACT
 
 Every runtime entity must be produced through its designated builder, using the real shared-engine types. Do not hand-author the `collection` discriminator or `fileLocation` (the latter is supplied by the source registry).
@@ -38,12 +44,12 @@ Every runtime entity must be produced through its designated builder, using the 
 | --- | --- | --- | --- |
 | Skill | `id`, `name` | `buildSkillConfig` | None |
 | SkillGroup | `id`, `name`, `skillIds` | `buildSkillGroupConfig` | Immediate child Skill IDs |
-| SkillDomain | `id`, `name`, `groupIds` | `buildSkillDomainConfig` | Immediate child SkillGroup IDs |
+| SkillDomain | `id`, `name`, `groupIds`, optional direct `skillIds` | `buildSkillDomainConfig` | **Either** immediate child SkillGroup IDs **or** direct Skill IDs (not both) |
 
 The current contracts do **not** contain `description`. The Description in Markdown Definitions and taxonomy is editorial; **never invent** a runtime field or copy a description into TypeScript without an approved engine contract change. Likewise, no mastery evidence, assessment rules, scores, learner records, grade, prerequisites, question references, or UI state belong to these configs.
 
 - Match the names, identity, and **exact parent/child placements** approved in the taxonomy; no extra Domains, Groups, Skills, cross-domain duplicates, or synthetic groups.
-- Respect the hierarchy: a Domain references only its Groups through `groupIds`; a Group references only its Skills through `skillIds`; a Skill references no children.
+- Respect the approved hierarchy: a grouped Domain references its Groups through nonempty `groupIds`; a direct-Skill Domain uses `groupIds: {}` and nonempty `skillIds`, **never both nonempty**. A Group references Skills through `skillIds`; a Skill references no children. A singleton Group is strongly discouraged and requires explicit editorial justification.
 - Use stable, **literal UUID values**, established at authoring time in `*.ids.ts` files. Reuse existing UUIDs for existing identities. Generate fresh collision-free UUIDs **once** for genuinely new approved entities; never generate UUIDs during application runtime, derive them from paths, or reassign IDs during a rename/move.
 - Build explicit `as const` maps of child IDs and preserve stable meaning. Refer to **ID-only modules**, never child `*.data.ts` modules, when establishing relationships.
 - Cross-check that every ID reference represents the intended immediate child and that there are no missing, duplicated, or unintended entities. **The current builders validate UUID syntax, nonempty child maps, and duplicate values within each map; they do not prove that a UUID belongs to the correct entity type, exists in a registry, or is globally unique.** Complete referential/type integrity is a separate **future build-time validation** responsibility. Use available static/file-level cross-checks now, but never claim the current builders enforce a full taxonomy graph.
