@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import { isValidElement, type ReactElement } from 'react';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
-import { LessonLearningLayout } from '@layout';
-import { howLightMoves_Lesson_Data } from '@/content/howLightMoves/index.data';
-import { howLightMovesCatalog } from '@/content/howLightMoves/howLightMoves.catalog';
-import { quiz_Quiz_Data } from '@/content/howLightMoves/sections/quiz/index.data';
+import LessonLearningLayout from '@/components/layout/LearningLayout/LearningLayout';
+import { howLightMoves_Lesson_Data } from '@/data/howLightMoves/index.data';
+import { howLightMovesCatalog } from '@/data/howLightMoves/howLightMoves.catalog';
+import { quiz_Quiz_Data } from '@/data/howLightMoves/sections/quiz/index.data';
 import { buildLesson } from '@svitlo/engine/builders';
 import type { Lesson_Config } from '@svitlo/engine/content';
 import Lesson from './Lesson';
