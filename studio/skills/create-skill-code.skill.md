@@ -2,7 +2,7 @@
 
 **Mandatory first action:** Read [Coding Agent Persona](../personas/coding-agent.persona.md) in full and apply its responsibilities and role boundaries. This is an engineering task: do **not** substitute the Methodologist Persona or author new competencies during implementation.
 
-**Purpose:** Convert **approved** SkillDomain, SkillGroup, and Skill Markdown definitions into actual typed, localized source code, following the package's current content contracts, builders, registry pattern, and tests. Work only on the explicitly selected, bounded subtree. This Skill does **not** design the taxonomy, draft competency documents, curricula, lessons, or assessment interactions.
+**Purpose:** Convert **approved, lightweight** SkillDomain, SkillGroup, and Skill Markdown Definitions into typed, localized source code following the package's actual contracts, builders, registry pattern, and tests. The Definitions provide catalog names and descriptions, not assessment logic. Work only on the explicitly selected, bounded subtree. This Skill does **not** design the taxonomy, draft competency documents, curricula, lessons, or assessment interactions.
 
 ## ENTITY DEFINITIONS — REQUIRED READING
 
@@ -11,7 +11,7 @@ Before implementation, read [SkillDomain](../docs/entities/skill-domain.md), [Sk
 ## NON-NEGOTIABLE START CONDITIONS
 
 1. **Target:** obtain the exact `PackageRoot` of the standalone textbook package, selected Domain/Group/Skill scope, target branch/workflow, and any package-specific constraints. The monorepo root is **not** automatically the package root.
-2. **Editorial source:** read `<PackageRoot>/docs/skills/taxonomy.md` and the corresponding **approved** `*.skill-domain.md`, `*.skill-group.md`, and `*.skill.md` documents. The taxonomy summary alone is insufficient to derive detailed competency semantics.
+2. **Editorial source:** read `<PackageRoot>/docs/skills/taxonomy.md` and corresponding **approved** `*.skill-domain.md`, `*.skill-group.md`, and `*.skill.md` documents. Use them for names and catalog identity, not to infer competency evidence, scoring, or lessons.
 3. **Technical source:** inspect repository `AGENTS.md`, applicable nested instructions, current Skill/SkillGroup/SkillDomain contracts, builders, implementation examples, locale union, source indexes, and tests. Resolve the **real** implementation directory from the target package architecture; do not invent a `src/math` location or duplicate engine-owned contracts.
 4. **Migration safety:** locate existing IDs, data files, mappings, registered collections, and tests for the requested entities. Check whether they are new, partially implemented, or already published.
 
@@ -19,12 +19,12 @@ If a definition is missing, only Draft, ambiguous, or inconsistent with the appr
 
 ## ARCHITECTURAL CONTRACT
 
-- **Separation:** the taxonomy is a compact Markdown inventory; the definition documents own rich competency semantics; TypeScript files own runtime registration. Do not backfill UUIDs, executable implementation details, grades, prerequisites, questions, scores, or UI metadata into the editorial taxonomy.
+- **Separation:** the taxonomy indexes lightweight entity Definitions and verified Code file links. The Definition documents contain concise editorial names and descriptions; the TypeScript data model owns runtime identity and registration. Do not add assessment rules or learner-tracking fields to catalog entities.
 - **Filesystem:** follow the current content-code architecture, including one Domain per directory, nested Groups and Group-local `skills/` folders where that remains the established pattern. Respect actual package paths rather than assuming legacy paths.
 - **Identifiers:** runtime identity is a stable, static UUID stored in source `*.ids.ts` as required by the repository. Preserve existing UUIDs. Assign a new UUID **once at authoring time** only for a truly new approved entity, with no collisions. Never derive identity from filenames, hierarchy, grades, or educational content, and never call random UUID generation at runtime.
 - **Mappings:** Group `skillIds` and Domain `groupIds` are explicit, typed, ordered mappings to child UUIDs. Do not infer membership by parsing names or paths. Changing parent membership does not itself change a child's UUID.
 - **Naming:** use package-established camelCase filenames and semantically appropriate exported constants; where the repository uses the historical contract, follow `Entity_Collection_Data`, `Entity_Collection_Ids`, `Entity_ChildCollections_Ids` and one named entity per data file.
-- **Data:** create actual `*.data.ts` configs through the approved `buildSkillConfig` / `buildSkillGroupConfig` / `buildSkillDomainConfig` or their current shared-engine equivalents. Do not handwrite builder-provided discriminators or computed file-location metadata into authored configs.
+- **Data:** create actual `*.data.ts` configs through the approved `buildSkillConfig` / `buildSkillGroupConfig` / `buildSkillDomainConfig` or their current shared-engine equivalents. The current shared-engine contracts store ID and localized name (plus child ID mappings for Groups/Domains), **not description**. Keep the Markdown Description editorial until a separately approved runtime contract change; do not invent a `description` config field. Do not handwrite builder-provided discriminators or computed file-location metadata.
 - **Localization:** provide a genuine, nonempty name for **every current supported locale** using the repository's actual locale type/config. The set can change; never assume the count in the old architecture note is still current. No silent fallbacks or copied-language placeholders.
 - **Imports and exports:** export individual entity Data through the barrel for its **own level** only. Root taxonomy exports Domain Data, a Domain folder exports its Domain Data, a Group folder exports its Group Data, and `skills/index.data.ts` exports that Group's Skills. Use explicit named, alphabetically ordered exports rather than recursive `export *`.
 - **ID indexes:** keep static UUID-only indexes independent of the child Data files; no parent Data importing full child Data. Do not create meaningless index files solely for symmetry. Check circular dependencies and actual module boundaries.
@@ -36,7 +36,7 @@ The preserved [Creating Skills](../Creating%20Skills.md) is the historical refer
 
 1. **Read and classify:** enumerate approved in-scope entities, inspect source/configs/indexes and record new vs. existing vs. incomplete. Confirm file destinations based on actual code consumers.
 2. **Plan narrowly:** identify exact files to add/update, required static UUID definitions and references, localization tasks, and tests. Avoid unrequested refactors or architecture changes.
-3. **Implement from approved definitions:** preserve precise meaning and human-readable names. Build typed Domain/Group/Skill configs and the necessary ID dictionaries, without generating new skills or altering semantic scope.
+3. **Implement from approved Definitions:** use the approved names and stable catalog identity. Build typed Domain/Group/Skill configs and ID dictionaries, without introducing educational or assessment metadata and without generating new Skills.
 4. **Localize:** fill every required language genuinely. Keep locale keys and types consistent with the actual project and avoid Russian or other excluded locales unless the current repository's authoritative locale contract explicitly requires them.
 5. **Register at the correct level:** update `index.ids.ts` and `index.data.ts` as required by existing patterns; prevent duplicate UUIDs, missing references, accidental cross-level exports, or cycles.
 6. **Verify:** run relevant formatting/linting, TypeScript checks, locale integrity checks, builder/registry unit tests, and any available taxonomy consistency tests. If execution is unavailable, clearly mark checks as not run rather than inventing green results.
