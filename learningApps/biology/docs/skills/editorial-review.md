@@ -9,6 +9,7 @@ Date: 2026-10-28
 | Topic | Editor direction | Applied in taxonomy / concept |
 | --- | --- | --- |
 | Discipline naming | Use clear subject areas from `Studio/Subject Proposition`: botany, zoology, anatomy, physiology, etc. | Domains renamed to **Ботаніка**, **Зоологія**, **Анатомія та фізіологія людини**, **Екологія**, **Генетика та еволюція**, etc.; no new textbooks. |
+| Living / dead / never alive | **Approved: one Skill** for the three-way classification. | Existing **«Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими»** remains one Skill ID; distinguish the three response categories inside assessment, not via separate Skill IDs. |
 | Plant organs | **One Skill** for identifying root, stem, leaf and flower. | Four one-organ Skills replaced by **«Визначати основні органи рослини»**. A separate existing Skill about **functions** remains because knowing names and explaining function differ. |
 | Animal groups | **Keep independent Skills** for insects, fish, amphibians, reptiles, birds and mammals. | Retained the individual group-recognition Skills; their descriptions now give the diagnostic biological features instead of repeating names. |
 | Biomimicry | Primarily **engineering in Physics**, not an independent Biology engineering competency. | Removed the three engineering Skills and entire `Біомімікрія` Group from Biology; recorded the proposed primary owner in [Subject Proposition](../../../../studio/Subject%20Proposition.md). **No Physics Skill has been created.** |
@@ -17,26 +18,26 @@ Date: 2026-10-28
 | Scope and subject boundaries | Biology includes organisms, their biology and ecosystem relationships; hygiene and safety belong to Health & Safety. | Recorded decisions in Subject Proposition; not redundant rows masquerading as unresolved issues. |
 | Format and descriptions | Metadata first; prose is meaningful explanatory content, not a paraphrase of the heading. | Reordered `Skills/Groups`, `Definition`, `Code` above unlabelled prose, rewrote domain/group/skill descriptions; same requirement applied to Studio skill/template and persona. |
 
-## 2. **Open editorial decision: ONE vs THREE Skills for living / dead / never alive**
+## 2. **RESOLVED: ONE Skill for living / dead / never alive**
 
 **Affected group:** [Біологічне дослідження → Ознаки живого](./taxonomy.md#ознаки-живого).
 
-The editor correctly distinguished **three categories**: (1) a currently living organism, (2) a dead organism or object originating from one, (3) an object that has never been alive. However, **three categories do not necessarily require three Skill identities**.
+**Editor decision (2026-10-28): APPROVED — one classification Skill ID.** The three categories are (1) living, (2) dead / formerly living, (3) never alive, but the competence is making one classification choice with three possible outcomes. The distinction between a dead organism and biologically derived material still requires careful examples and definitions.
 
-**Option A (recommended; provisional in taxonomy): one classification Skill.**
+**Selected option A: one classification Skill (already represented in the taxonomy).**
 
 - **«Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими».**
 - It describes one coherent three-way decision: determining current life status and biological origin, rather than three separate learning goals each based on a different answer choice.
 - Example distinctions: a growing tree is living; a dead leaf was part of a living organism; a mineral rock was never alive.
 - A different competency — **«Обґрунтовувати висновок про належність об’єкта до живої природи»** — remains separate because choosing a category and justifying criteria can be independently demonstrated.
 
-**Option B (editor's possible intended granularity): three separately tracked Skills.**
+**Rejected alternative B (retained for decision history): three separately tracked Skills.**
 
 - **«Розпізнавати живі організми»** — uses evidence of life processes.
 - **«Визначати, чи неживий об’єкт має біологічне походження»** — recognizes objects that were once living or are derived from living material.
 - **«Визначати, чи об’єкт ніколи не був живим»** — distinguishes non-biological matter from former biological material.
 
-**Trade-off:** Option B allows per-category progress tracking but carries strong semantic overlap, especially between the last two. In Option A a single categorization task has three outcomes, which the **Assessment** layer may still analyze separately without creating three stable Skill IDs. **Explicit editor confirmation required:** is the intended structure **one three-way Skill** or **three independently assessed Skills**? The taxonomy currently uses A provisionally, not as an approved decision.
+**Assessment consequence:** separately track confusion between the three answer categories, if useful, without creating additional stable Skill IDs. The approved granularity is one Skill, and the taxonomy already matches it. The separately retained **«Обґрунтовувати висновок про належність об’єкта до живої природи»** is a different skill (justifying an answer), not a fourth classification category.
 
 **Scientific caveat:** “dead” vs “derived from something once alive” are not identical predicates. Paper, wood, wool and food may derive from biological material without themselves having been whole living organisms; dormant seeds may be alive without obvious movement. Precise examples and exceptions belong in future Lessons; avoid a false simplistic rule in an Assessment.
 
@@ -58,11 +59,10 @@ The [Create Skills Taxonomy Skill](../../../../studio/skills/create-skills-taxon
 
 ## 5. Remaining workflow / stop condition
 
-The changes recorded above are **draft proposals incorporating editor feedback**, not an approved taxonomy. Before the **Create Skill Definitions** stage:
+The **one-Skill classification decision is approved**, but the **taxonomy as a whole remains an editorial draft**. Before the **Create Skill Definitions** stage:
 
-1. Confirm **one vs three** classification Skills for living/dead/never alive.
-2. Confirm whether virus definition is an independent Skill.
-3. Decide whether biological-table and biological-graph interpretation should have separate stable identities or use cross-subject Skills.
-4. Review remaining atomicity and subject coverage; reconcile actual counts if any choices change.
+1. Confirm whether virus definition is an independent Skill.
+2. Decide whether biological-table and biological-graph interpretation should have separate stable identities or use cross-subject Skills.
+3. Review remaining atomicity and subject coverage; reconcile actual counts if any choices change.
 
 **Do not create entity definitions, UUID files, `*.data.ts`, Lessons or Questions on the basis of open decisions.**
