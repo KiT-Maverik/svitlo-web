@@ -30,6 +30,8 @@ Svitlo combines independently deployable Next.js apps with explicit reusable lib
 └── turbo.json            # task graph reference; not used by GitHub Actions
 ```
 
+**Concrete source roots:** `shared/contracts`, `shared/engine`, `shared/indexdb`, `shared/ui-kit`, `learningApps/math`, `learningApps/playground`, `frontend/platform`, `backend/server`. These paths are actual package folders; diagrams above use abbreviated names.
+
 The **eight** current workspaces are `@svitlo/server`, `@svitlo/platform`, `@svitlo/math`, `@svitlo/playground`, `@svitlo/contracts`, `@svitlo/engine`, `@svitlo/indexdb`, `@svitlo/ui-kit`. Patterns in root `package.json` and lockfile: `backend/*`, `frontend/*`, `learningApps/*`, `shared/*`. The server is deliberately not claimed to be executable yet.
 
 ## Dependency direction and ownership
