@@ -21,7 +21,13 @@
     "test:components": "vitest run",
     "test:components:coverage": "vitest run --coverage",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "packages:list": "npm ls --workspaces --depth=0",
+    "packages:build": "npm run build --workspaces --if-present",
+    "packages:typecheck": "npm run typecheck --workspaces --if-present",
+    "packages:lint": "npm run lint --workspaces --if-present",
+    "packages:test": "npm run test --workspaces --if-present",
+    "packages:check": "node scripts/check-workspaces.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
@@ -61,5 +67,11 @@
     "storybook": "^10.6.3",
     "typescript": "^5",
     "vitest": "^3.2.4"
-  }
+  },
+  "workspaces": [
+    "backend/*",
+    "frontend/textbooks/*",
+    "frontend/playground",
+    "shared/*"
+  ]
 }
