@@ -21,6 +21,10 @@ const expected = [
     "name": "@svitlo/contracts"
   },
   {
+    "path": "shared/indexdb",
+    "name": "@svitlo/indexdb"
+  },
+  {
     "path": "shared/engine",
     "name": "@svitlo/engine"
   },
