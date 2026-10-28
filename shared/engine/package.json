@@ -28,5 +28,18 @@
   },
   "devDependencies": {
     "typescript": "^5"
+  },
+  "typesVersions": {
+    "*": {
+      "localization": [
+        "dist/localization.d.ts"
+      ],
+      "taxonomy": [
+        "dist/taxonomy.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
+      ]
+    }
   }
 }
