@@ -1,102 +1,49 @@
-# Svitlo monorepo
+# Світло — Svitlo Monorepo
 
-The Next.js Playground application now lives at `learningApps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Root application checks target Playground/Math; Storybook is owned by UI Kit and no longer reads application sources.
+Svitlo is a modular interactive-learning project. Each textbook is a **standalone Next.js application** with its own curriculum, tests and `docs/`; packages share code only through explicit published-style exports. The architecture is designed so that a textbook can later be extracted into a separate repository/deployment **without global app-to-app rewrites**.
 
-Engine is now an independently compiled workspace package. The Server workspace remains a placeholder; Math is now a standalone textbook app and UI Kit owns reusable React/MUI components. See `studio/Monorepo Migration.md`.
+## Workspace map
 
-> Legacy documentation below uses paths relative to Playground. A reference to `src/` now means `learningApps/playground/src/`.
+| Workspace | Folder | Purpose |
+| --- | --- | --- |
+| `@svitlo/platform` | `frontend/platform` | Next.js web platform and external textbook catalog |
+| `@svitlo/math` | `learningApps/math` | Mathematics textbook; owns taxonomy and curriculum |
+| `@svitlo/playground` | `learningApps/playground` | Subject-neutral widget/lesson demonstration application |
+| `@svitlo/contracts` | `shared/contracts` | Shared types, stable IDs, localization descriptors and persisted-state contracts |
+| `@svitlo/engine` | `shared/engine` | Framework-independent builders, validation, generation and Assessment Methods |
+| `@svitlo/indexdb` | `shared/indexdb` | Browser IndexedDB persistence, schemas and native integration tests |
+| `@svitlo/ui-kit` | `shared/ui-kit` | Shared React/MUI widgets, navigation, themes/preferences composition and Storybook |
+| `@svitlo/server` | `backend/server` | **Placeholder only**; no operational backend yet |
 
----
+Node and npm workspaces are the current package/CI tools; `package-lock.json` is authoritative. `pnpm-workspace.yaml` and `turbo.json` are not used for this project's current GitHub Actions builds.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+## Quick start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm ci
+npm run packages:check
+npm run typecheck
+npm test
+npm run lint
+npm run build
+npm run packages:artifacts:check
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run an app: `npm run dev:math`, `npm run dev:platform` or `npm run dev` (Playground). Each Next.js app is independent; simultaneous development servers require different ports.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Browser testing after `npx playwright install chromium` and a build:
+- `npm run test:e2e:db` — native IndexedDB controller Chromium suite
+- `npm run test:e2e:platform` — Platform desktop/mobile smoke
+- `npm run test:e2e --workspace @svitlo/math` and `npm run test:e2e --workspace @svitlo/playground` — learning app suites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The Platform only links to a published Math textbook when its **real** `NEXT_PUBLIC_MATH_APP_URL` has been configured. The backend, account system, cross-device sync and offline/PWA feature set are future work, not implied by the scaffold.
 
-## Learn More
+## Documentation
 
-To learn more about Next.js, take a look at the following resources:
+- [Canonical architecture and package boundaries](studio/docs/architecture/monorepo-and-textbook.md)
+- [Final migration audit and known duplicate-source debt](studio/docs/architecture/migration-stage-8-audit.md)
+- [Architecture/documentation index](studio/docs/architecture/README.md)
+- [Historical migration notes](studio/Monorepo%20Migration.md)
+- [Math textbook](learningApps/math/README.md), [Playground](learningApps/playground/README.md), [Platform](frontend/platform/README.md)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## Interactive questions
-
-Open `/questions` for nine independently controlled examples.
-
-Question API examples (slots, lifecycle events, automatic grading): `/questions/api`. Widget types live in `src/components/widgets/questions/types`; content contracts live in `src/types/content`.
-
-## Урок із конфігурації (data-driven Lesson)
-
-> **Current ownership:** `How Light Moves` is a Playground-only demonstration. Its route, authored content, lesson tests and checkpoint-scene tests live in `learningApps/playground`, not the Math textbook.
-
-Після `npm ci` та `npm run dev` відкрийте `/topics/light` — урок «Як рухається світло».
-
-- `src/data/howLightMoves/howLightMoves.data.ts` — `Lesson_Config`: ID назви й секцій, параметри навігації, квізу та словники локалізації сцен.
-- `src/data/howLightMoves/howLightMoves.catalog.ts` — визначення назви та секцій, доступні за їхніми ID.
-- `src/app/topics/light/page.tsx` — тонкий маршрут, який визначає локаль і передає `config`, `catalog`, `locale`, `href` сторінці `Lesson`.
-- `src/components/pages/Lesson/Lesson.tsx` — спільний складальник уроків: `buildLesson(config, locale, catalog)`, контексти локалі/сцен/прогресу, layout та рендеринг кроків.
-- `src/components/pages/Lesson/LessonSectionContent/` — серверний рендерер текстових, Markdown-ресурсів і сцен. Локалізовані Markdown-файли знаходяться в `src/data/howLightMoves/sections/theory/resources/markdown/`.
-- `src/data/howLightMoves/sections/theory/resources/scenes/` — вбудовані інтерактивні сцени як ресурси уроку. Сцени беруть вибрану локаль через `useSceneLocales()`.
-- `shared/ui-kit/src/components/widgets/` — незалежні повторно використовувані компоненти, зокрема `Flashcard`, `KnowledgeCheckpoint` і `MarkdownContent`.
-
-Поточний урок має три кроки: теорія, практика (порівняння швидкості світла у вакуумі, повітрі та воді за моделлю `v = c / n`) і тест із шести питань. Конфігурація підтримує довільну послідовність секцій, але теперішній клієнтський адаптер квізу рендерить тільки `select-one-answer` і обмежується одним квізом на урок; для інших типів потрібне розширення адаптера/стану.
-
-Прогрес уроку та відповіді зберігаються в IndexedDB, тому перезавантаження відновлює поточний крок і стан тесту. Для іншого `lesson.id` клієнтський стан монтується заново. Контент Markdown рендериться сервером; під час перемикання локалі сцени отримують відповідний словник із конфігу. Сцена `Practice` має переклади для всіх 22 стандартних мов.
-
-Тестування: `npm run test:components`, `npm run typecheck`, `npm run build`, `npm run test:e2e --workspace @svitlo/playground -- src/data/howLightMoves/LightLesson.e2e.spec.ts`.
-
-## Навігація навчальної зони
-
-`TopNavbar` і `BottomNavbar` використовують спільний `Navbar`. `slots.left`, `slots.center`, `slots.right` приймають довільні React-вузли. `slotProps.root/left/center/right` приймають властивості MUI Box, включно з `sx`, `className`, атрибутами та обробниками. Користувацькі стилі застосовуються після стандартних. Центр має власну колонку між двома однаковими за шириною бічними секціями.
-
-```tsx
-<TopNavbar
-  aria-label="Навігація уроку"
-  slots={{ left: <MenuButton />, center: <LessonTitle />, right: <SettingsButton /> }}
-  slotProps={{
-    root: { sx: { bgcolor: 'background.paper' } },
-    left: { sx: { gap: 2 } },
-    center: { sx: { fontWeight: 700 } },
-    right: { sx: { px: 1 } },
-  }}
-/>
-```
-
-Кнопки «Назад» і «Далі» згруповані в центральному слоті нижнього навбара. У правому слоті верхнього навбара розташовані профіль, Settings та Logout. Профіль і Logout поки неактивні: авторизація ще не підключена. Settings перемикає правий сайдбар із місцем для майбутніх налаштувань; одночасно відкривається лише одна панель.
-
-Гамбургер відкриває та закриває немодальний сайдбар. Escape, кнопка закриття та натискання на затемнену область теж закривають його. Панель і затемнення обмежені областю між навбарами.
-
-Перевірки: `npm run lint`, `npm run build`.
-
-
-Playground is a subject-neutral component and lesson-rendering sandbox; authored curricula belong only to textbook applications.
-
-## UI Kit Storybook
-
-`npm run storybook` starts the self-contained component catalog from `shared/ui-kit/.storybook` (port 6006), while `npm run build-storybook` builds its static output. All stories and demo fixtures belong to `shared/ui-kit`; neither textbook nor Playground is needed as a source dependency. Framework tooling uses Next.js only as a development dependency; the shipped UI Kit package stays independent of Next.js.
+**Known remaining debt:** the Stage 8 audit records 67 byte-identical source files across Math and Playground. The new architecture guard prevents **additional** exact-path duplication while existing copied lesson/page implementations await a separately scoped extraction. Successful monorepo CI alone does not prove independent npm package publishing or clean-room repository extraction.

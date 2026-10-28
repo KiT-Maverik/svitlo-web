@@ -7,6 +7,7 @@ const contracts = readJson('shared/contracts/package.json');
 const engine = readJson('shared/engine/package.json');
 const indexdb = readJson('shared/indexdb/package.json');
 const playground = readJson('learningApps/playground/package.json');
+const platform = readJson('frontend/platform/package.json');
 const math = readJson('learningApps/math/package.json');
 const uiKit = readJson('shared/ui-kit/package.json');
 
@@ -18,6 +19,14 @@ function walk(dir) {
 }
 function assert(condition, message) {
   if (!condition) throw new Error(message);
+}
+assert(platform.name === '@svitlo/platform', 'Unexpected Platform package name');
+assert(platform.dependencies?.next && platform.dependencies?.react && platform.dependencies?.['@mui/material'],
+  'Platform must declare independent Next.js, React and MUI dependencies');
+assert(!Object.keys(platform.dependencies ?? {}).some(name => name.startsWith('@svitlo/')),
+  'Platform scaffold must not depend on another Svitlo package');
+for (const path of ['src/app/layout.tsx', 'src/app/page.tsx', 'playwright.config.ts', 'next.config.ts']) {
+  assert(existsSync(resolve(root, 'frontend/platform', path)), 'Platform scaffold missing: ' + path);
 }
 assert(contracts.name === '@svitlo/contracts', 'Unexpected contracts package name');
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
@@ -114,14 +123,14 @@ if (existsSync(appSourceRoot)) {
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src']
+const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src', 'frontend/platform/src']
   .map(path => resolve(root, path));
 for (const applicationRoot of applicationSourceRoots) {
   for (const file of walk(applicationRoot).filter(path => /\.(ts|tsx)$/.test(path))) {
     const code = readFileSync(file, 'utf8');
     for (const match of code.matchAll(/\bfrom\s*['"]([^'"]+)['"]/g)) {
       const specifier = match[1];
-      assert(!/^@svitlo\/(?:playground|math)(?:\/|$)/.test(specifier),
+      assert(!/^@svitlo\/(?:playground|math|platform)(?:\/|$)/.test(specifier),
         'Applications must not import another application by package name: ' + relative(root, file));
       if (!specifier.startsWith('.')) continue;
       const target = resolve(dirname(file), specifier);
