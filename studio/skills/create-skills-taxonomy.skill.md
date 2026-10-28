@@ -82,28 +82,34 @@ Groups: %GROUP_COUNT%
 Skills: %SKILL_COUNT%
 
 Definitions: %DOMAIN_DEFINITIONS%/%DOMAIN_COUNT% Domains · %GROUP_DEFINITIONS%/%GROUP_COUNT% Groups · %SKILL_DEFINITIONS%/%SKILL_COUNT% Skills
-Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GROUP_COUNT% Groups · %SKILL_CODE_FILES%/%SKILL_COUNT% Skills
 
 ## DOMAINS
 
 ### %DOMAIN_NAME%
 
-Description: %DOMAIN_DESCRIPTION%
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
 Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
+
+Definition: [Not implemented](#)
+
+Description: %DOMAIN_DESCRIPTION%
 
 #### %GROUP_NAME%
 
-Description: %GROUP_DESCRIPTION%
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
 Skills: %GROUP_SKILL_COUNT%
 
-- **%SKILL_NAME%** — %SHORT_OBSERVABLE_SKILL_DESCRIPTION%. Definition: [Not implemented](#) · Code: [Not implemented](#)
-- **%SKILL_NAME%** — %SHORT_OBSERVABLE_SKILL_DESCRIPTION%. File: [Not implemented](#)
+Description: %GROUP_DESCRIPTION%
 
-%Repeat groups and domains as required. Replace only verified file links with real relative paths.%
+Definition: [Not implemented](#)
+
+##### %SKILL_NAME%
+
+Definition: [Not implemented](#)
+
+%SHORT_OBSERVABLE_SKILL_DESCRIPTION%
+
+> Agent note:
+> Repeat groups and domains as required.
+> Replace only verified file links with real relative paths.
 ~~~
 
 ## RESULT
@@ -114,7 +120,7 @@ Create or update exactly one taxonomy Markdown document:
 <PackageRoot>/
 └── docs/
     └── skills/
-        └── skills-taxonomy.md
+        └── taxonomy.md
 ~~~
 
 - Keep `docs/skills/` and `skills-taxonomy.md` literal within the actual textbook package. Never write the file to monorepo-level `studio/` or a guessed `src/math/` location.
