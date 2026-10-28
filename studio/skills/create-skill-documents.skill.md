@@ -25,7 +25,7 @@ These files are the source of semantic rules (atomicity, independent evidence, i
 
 **Document-authoring rules:** Preserve approved descriptions and existing reviewed documents; do not overwrite them with generic paraphrases. New or substantively changed documents begin at `Status: Draft` and require explicit approval to become `Approved`. Do not add UUIDs, technical IDs, guessed runtime paths, or assessment implementations to entity Definitions.
 
-**Two independent artifacts:** Each entity's **Definition** is its Markdown document; its **Code** is a distinct, optional application source file. Creating a Definition must not change or erase a Code link. Existing Code does not automatically approve a Definition. Keep missing artifacts as `[Not implemented](#)` and verify both fields independently.
+**Two independent artifacts:** Each entity's **Definition** is its Markdown document; its **Code** is a distinct, optional application source file. Creating a Definition must not change or erase a Code link. Existing Code does not automatically approve a Definition. Before filling a generated document's `Code` field, inspect the existing canonical code: if present, link the verified real relative path; if absent, use exactly `[Not implemented](#)`. Verify both artifacts independently.
 
 ## OPERATING PROTOCOL
 
@@ -34,8 +34,8 @@ These files are the source of semantic rules (atomicity, independent evidence, i
 3. **Draft Group definitions** explaining the shared competency family, its distinctions, and its constituent Skills.
 4. **Draft individual Skill definitions** with a precise observable competency, a meaningful explanation, competency boundaries, and what independent evidence would demonstrate the competency.
 5. **Review semantics:** test the A-without-B split criterion; check overlap with neighboring Skills, variation vs. new competency, and whether an integration Skill adds real independent value. Escalate taxonomy-level changes; do not quietly move or duplicate entries.
-6. **Write each entity document** at the deterministic paths below. Use camelCase path segments based on approved semantic names, reusing established directories and filenames. Make references relative to each generated document.
-7. **Update only the corresponding Definition links and Definition counts** in the taxonomy, once the new Markdown files exist. Preserve all Code links and Code counts unchanged. Do not mark source code as implemented merely because a Markdown Definition exists.
+6. **Write each entity document** at the deterministic paths below. Use camelCase path segments based on approved semantic names, reusing established directories and filenames. Make references relative to each generated document. Populate its `Code` link with a verified existing code file if present; otherwise retain the placeholder.
+7. **Update only the corresponding Definition links and Definition counts** in the taxonomy, once the new Markdown files exist. Preserve all existing Code links and Code counts unchanged (except separately reported stale/broken references, which require code-owner review). Do not mark source code as implemented merely because a Markdown Definition exists.
 8. **Audit and stop:** confirm one document per in-scope entity, complete templates, consistent names, accurate links, no fabricated approvals or IDs, and no missing Skills hidden by a batch summary. Do not auto-run code generation.
 
 ## DOMAIN DOCUMENT TEMPLATE
