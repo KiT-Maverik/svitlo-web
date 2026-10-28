@@ -1,0 +1,156 @@
+# Design Scene Skill
+
+**Mandatory first action:** Read [Coding Agent Persona](../personas/coding-agent.persona.md) in full, then read applicable `AGENTS.md` instructions. This Skill runs as the **Coding Agent**. Its responsibility is the technical design, implementation, integration and testing of a lesson Scene, not independent revision of a lesson's subject matter, pedagogical learning objectives, or assessment policy.
+
+**Purpose:** Design and implement a self-contained **Scene**: a content block through which a learner can observe, manipulate, explore, or interact with the subject of a lesson. Scenes commonly contain **animation, interactive controls, simulations, visual demonstrations, SVG diagrams, or guided exploration**; not every Scene must animate or be interactive if a clear learning purpose is served. A Scene is **not** a full Lesson, a Skill, a Question definition, a generic UI page, or an assessment policy.
+
+The Scene's **public React component takes absolutely no props**, receives lesson-localized messages through the **existing context**, and adapts semantically to **both LTR and RTL** reading directions.
+
+## NON-NEGOTIABLE START CONDITIONS
+
+1. Identify the **actual standalone textbook package root** (`<PackageRoot>`), target Lesson and Section, requested Scene name and learning purpose, and any approved instructional brief/storyboard. Do not presume the playground is the destination or the monorepo root is the package root.
+2. Read the current target Lesson/Section/resource configurations, content types, Scene locale infrastructure, tests, asset conventions, CSS/theme, accessibility and app instructions. Respect the repository's real paths and available APIs rather than copying an example blindly.
+3. Read the **existing reference Scenes** in `frontend/playground/src/content/howLightMoves/sections/` (see concrete files below) and identify which patterns remain compatible with the target textbook's current contracts.
+4. If the expected scientific/pedagogical behavior, interaction constraints or learning objective are ambiguous, **report the decision needed** rather than fabricate domain facts or assessment criteria. A bounded Scene implementation should not trigger unrelated Lesson/Program refactors.
+
+## SCENE CONTRACT — WHAT THE COMPONENT IS
+
+- A Scene is a **Lesson content resource** represented by the current engine's `SceneResource_Config`: `{ id, blockType: 'scene', component }`. The `component` payload is renderer-specific (a React element in the current playground); the engine content contract does not itself import React.
+- The exported **Scene root component is prop-free**, e.g. `export function ExampleScene() { ... }`. It must not accept `props`, `children`, `locale`, `messages`, `direction`, `config`, `onChange`, or any other incoming component props. Do not add optional props, hidden default props, generic prop bags or new wrapper APIs to circumvent this boundary.
+- The Scene **may use its own hooks, local state, internal constants, content data, and composed child widgets**. Child widgets can use props internally; the **public Scene root** remains prop-free. Interactive state belongs inside the Scene or an existing shared context explicitly designed for it.
+- A Scene obtains needed external **locale, scene text, and applicable lesson context** through existing provider hooks, not by passing props through the scene resource. If required context is unavailable, use the repository's established explicit error behavior; do not silently substitute an invented default.
+- Keep behavior reproducible, scientifically consistent and logically bounded. Controls should change only the intended aspect of a model; a change in animation speed must not change the physical rule being demonstrated unless the learning specification explicitly calls for it.
+
+## REQUIRED REFERENCE IMPLEMENTATIONS
+
+Use these **current architectural examples**, not mandatory source files to duplicate:
+
+| Example | Actual location under `frontend/playground/src/content/howLightMoves/sections/` | Lessons to extract |
+| --- | --- | --- |
+| `LightRayDiagram` | `theory/resources/scenes/LightRayDiagram/LightRayDiagram.tsx` and `LightRayDiagram.module.css` | SVG illustration, localized `<title>`/`<desc>`, directional graphic geometry, **separate readable labels** |
+| `LightPropagationSimulation` | `theory/resources/scenes/LightPropagationSimulation/LightPropagationSimulation.tsx` and `LightPropagationSimulation.module.css` | Local state, playback/speed controls, reduced-motion preference, CSS logical properties, accessible labels |
+| `Practice` | `practice/resources/scenes/Practice/Practice.tsx`, `Practice.constants.ts` and `Practice.module.css` | Interactive selection, domain constants separated from JSX, localized numbers and text, RTL-aware layout |
+| `Checkpoint` | `theory/resources/scenes/Checkpoint/Checkpoint.tsx` | Prop-free Scene composing an existing widget using localized messages; **child widget props do not violate the Scene-root rule** |
+| `Scene resource registration` | `theory/resources/scenes/scenes.data.ts`, `index.data.ts`, `index.ids.ts`; practice equivalents | Stable resource IDs, `blockType: 'scene'`, `createElement(SceneName)` **without props**, level-specific exports |
+
+Also inspect the exact runtime wiring:
+
+- `frontend/playground/src/components/pages/Lesson/SceneLocaleContext.tsx` — `SceneLocaleProvider` and `useSceneLocales<T>()`. The **provider** takes props; the **Scene** does not.
+- `frontend/playground/src/content/howLightMoves/howLightMoves.data.ts` — registers the per-Scene translated dictionaries under distinct keys in `sceneLocales`.
+- `frontend/playground/src/utils/builders/buildLesson/buildLesson.utils.ts` — selects one language's messages on the **server** before rendering the Lesson.
+- `frontend/playground/src/components/pages/Lesson/Lesson.tsx` — provides selected Scene messages and locale via `SceneLocaleProvider`.
+- `frontend/playground/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx` — renders a `blockType: 'scene'` resource's prepared React element without passing Scene props.
+- `shared/engine/src/types/content/resource.types.ts` and `lesson.types.ts` — authoritative `SceneResource_Config` and `Lesson_Config.sceneLocales` contracts; inspect the actual engine version in the target package.
+- Existing `*.unit.spec.ts` and `*.unit.fx.ts` beside the reference Scenes — patterns for provider-based scene tests, accessibility, localization, interaction and RTL.
+
+**Migration rule:** references live in `frontend/playground` today, but new Scenes belong to the **selected textbook application**. Reuse shared engine types and existing lesson infrastructure; avoid a runtime dependency on playground or another textbook. If a target app lacks a required provider/renderer, report the actual integration gap instead of inventing undocumented props for the Scene.
+
+## 1. PROP-FREE COMPONENT AND LESSON INTEGRATION
+
+The current playground model is:
+
+~~~tsx
+// The public Scene component accepts NO props.
+'use client';
+
+import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
+import type { ExampleScene_Locale } from './ExampleScene.locale';
+
+export function ExampleScene() {
+  const { locale, scenes } = useSceneLocales<{ example: ExampleScene_Locale }>();
+  const messages = scenes.example;
+  return <section lang={locale}>{messages.title}</section>;
+}
+
+// In the owning Section's scene resource map (a DIFFERENT file):
+// example: {
+//   id: section_SceneResources_Ids.example,
+//   blockType: 'scene',
+//   component: createElement(ExampleScene),
+// }
+~~~
+
+This is an illustrative **split across files**: do not place resource-registration snippets into the component file. Adapt import aliases, scene key, naming and types to the real target package. For any scene using hooks, event handlers, browser APIs or local interactive state, use `'use client'` as required by the current Next.js boundary. Do not mark an entire Lesson or unrelated tree client-side when only the Scene needs client behavior.
+
+**Required integration:**
+
+1. Write `<SceneName>.tsx` as a named, zero-prop Scene root. Keep independent data/constants, styles and localizations in co-located files where appropriate.
+2. Define or reuse an **authoring-time stable Scene Resource ID** in the owning Section's `index.ids.ts`. Do not generate random IDs at render time.
+3. Register the actual React element (`createElement(SceneName)`, no props) in the owning Section's `scenes.data.ts` with `id`, `blockType: 'scene'` and `component`, satisfying the actual `SceneResource_Config` type.
+4. Export only the appropriate resource collection from the owning `index.data.ts`; do not flatten unrelated resources into a global barrel.
+5. Add the resource to the **intended ordered Section content** through the current Lesson/Section data contract. Do not assume a Scene auto-renders merely because its file exists.
+6. When Scene text exists, register the complete Scene locale dictionaries under a **unique matching key** in the owning Lesson's `sceneLocales`. The Scene reads that same key from context. Do not inject an independent translation provider inside the Scene.
+7. Verify the Lesson assembles and renders the resource with the correct selected locale and maintains existing Lesson navigation/state behavior.
+
+## 2. LOCALIZATION THROUGH CONTEXT — NO TEXT PROPS
+
+**Every user-visible string must be localized when present.** This includes titles, descriptions, labels, controls, tooltips, instructions, feedback, SVG labels, alternative text, accessible names/descriptions, visible physical-unit labels, and explanatory limits of simplified models.
+
+- Define a typed `<SceneName>.locale.ts` dictionary or use the existing package convention. Cover **every currently supported language**, using short language-code keys required by the actual `LanguageCode` contract (e.g. `en`, `uk`, `ar`, `he`), not a hardcoded historical number. Use the package's approved locale registration pattern (the reference uses `satisfies Record<DefaultSupportedLanguage['language'], SceneLocale>`).
+- The current flow is **authoring dictionary → Lesson `sceneLocales` → `buildLesson` selects the requested locale on the server → `SceneLocaleProvider` → prop-free Scene calls `useSceneLocales`**. Avoid shipping the entire multilingual dictionary to every interactive Scene client.
+- The current `buildLesson` has an **English fallback** when a requested translation is absent. That is a runtime behavior, **not an acceptable authoring shortcut**: fill translations for the full supported set and validate completeness. Do not rely on fallback to mask missing production translations.
+- Derive direction from the active locale and the existing authoritative helper (`getLocaleDirection(locale)` in the reference). Use the selected locale for `lang`, number/date formatting when necessary, and semantic accessibility text.
+- Do not store selected-locale UI strings as constants in the Scene implementation, interpolate fixed English labels into `aria-label`, hardcode left/right wording independent of orientation, or pass locale/messages through component props.
+- Scenes without visible text still require correctly localized **accessible descriptions** wherever meaningful, and correct LTR/RTL spatial behavior.
+
+## 3. TRUE LTR / RTL SUPPORT — NOT WHOLE-SCENE MIRRORING
+
+Support LTR **and** RTL as **directional design modes**, not a single `scaleX(-1)` applied to the entire component.
+
+1. **Direction and semantics:** derive `rtl = getLocaleDirection(locale) === 'rtl'` and apply an appropriate `dir`/`direction` to the Scene's semantic root. Inherit or explicitly set `lang`. Use `dir="auto"` / isolated bidirectional spans where appropriate for mixed-script content; do not blindly reverse symbols or numeric values.
+2. **Logical layout:** prefer CSS logical properties (`margin-inline-start`, `padding-inline-end`, `inset-inline-start/end`, `border-inline-start`, etc.) and direction-aware Flex/Grid placement to physical `left`/`right` assumptions. Align toolbars, labels, callouts, controls, focus progression and relationship cues for each reading direction.
+3. **Graphics and SVG:** selectively adapt **geometry** (coordinates, arrows, connector endpoints, axis placement, path direction, callouts, draggable destinations and animation travel) when its meaning depends on reading direction. In the current `LightRayDiagram`, the graphic group is transformed for RTL **separately from the text-label group**. This is a pattern for selective transformation, not permission to mirror everything.
+4. **Text is never a mirrored graphic:** keep letters, words, digits and formula glyphs readable in their original orientation. SVG `<text>` labels need independent coordinates, appropriate `text-anchor`/`direction` and localized content. HTML/SVG bidi behavior must be tested explicitly, particularly for Arabic, Hebrew and Urdu.
+5. **Semantic invariants:** physical phenomena, axes, coordinate signs, numeric values, time flow, mathematical operators, culturally meaningful icons and diagrams **must not be reversed if reversal would change the concept**. Decide which objects are logical-start/end elements and which are physical world directions. Localize written instructions to match the **actual rendered positions**.
+6. **Behavior, not only appearance:** keyboard ArrowLeft/ArrowRight meaning, drag behavior, Slider/stepping direction, animation trajectories, pointer hit regions and focus/reading order should stay consistent with the chosen directional model and common platform conventions. Do not apply arbitrary inversion to a physical simulation just because the surrounding text is RTL.
+7. **Layout resilience:** allow longer translated text, different font metrics and narrow mobile viewports. Prevent overlap, clipping and disconnected captions after directional rearrangement.
+
+**Required test:** render each relevant Scene with an LTR and an RTL locale; assert readable, correct localized text and accessible names, correct directional placements/relationships and preserved semantics. Checking only the existence of `dir="rtl"` is insufficient.
+
+## 4. INTERACTION, ANIMATION AND ACCESSIBILITY
+
+- **Clear instructional purpose:** every moving object/control should demonstrate an explicit concept; learners must be able to distinguish model behavior from decorative motion. Document simplifications, scales or idealizations in localized learner-facing language when materially relevant.
+- **State and determinism:** keep interaction state local or in a documented shared context. Do not mutate global lesson state without an existing contract. If random behavior is needed, use a stable seed or explicit model input; test state changes and reset behavior where appropriate.
+- **Motion preference:** respect `prefers-reduced-motion` for nonessential animation. Allow pause/play or a readable static state for continuous movement; do not hide required information behind animation alone. The reference Simulation uses `useSyncExternalStore` with a reduced-motion media query.
+- **Accessible controls:** all controls must be operable by keyboard, have discernible localized accessible names, correct roles/states (`aria-pressed`, slider values, etc.), visible focus and sensible tab sequence. Use semantic buttons/labels and announce meaningful dynamic feedback (`aria-live` sparingly). Do not use color or motion as the only information channel.
+- **Illustrations and diagrams:** give meaningful `role="img"` / `aria-label` or SVG `<title>` and `<desc>` when the graphic conveys information. Decorative shapes should not add noisy accessibility nodes. Keep the graphic understandable without relying solely on fine visual details.
+- **Responsive design:** adapt size, hit targets and layout to mobile/tablet/desktop; avoid horizontal overflow and tiny controls. Use existing theme tokens, shared components and CSS modules as appropriate rather than hardcoded platform-specific styling.
+- **Performance and cleanup:** limit unbounded animations and excessive re-renders, remove event listeners/observers on unmount, avoid hydration mismatch and unnecessary client bundle dependencies. Do not import massive media or translation collections solely to render one Scene.
+
+## 5. IMPLEMENTATION PROTOCOL
+
+1. **Read and scope:** confirm target Lesson, Section, educational intent, existing relevant Scenes, current scene contracts, context, localization and app boundaries.
+2. **Specify observable Scene behavior:** briefly describe the learner's actions (if any), visual feedback, model state, instructional limitations, expected LTR/RTL mappings and acceptance cases. Obtain editorial input rather than inventing scientific or pedagogical facts.
+3. **Implement Scene:** build the zero-prop React component plus reusable internal helpers/styles; use typed local state and existing hooks. No public component props.
+4. **Localize:** author all required visible and accessible strings for the complete current language set. Wire them into the Lesson's scene-locale configuration and read only from context inside the Scene.
+5. **Handle direction semantically:** test RTL geometry, text, controls and interactions as distinct concerns; do not apply a global reflection transform.
+6. **Register and compose:** create/reuse stable Scene ID, typed resource config, level-specific Data/ID exports, and the intended Lesson Section inclusion. Make sure the selected locale and direction reach the Scene through providers.
+7. **Test:** use the Scene's co-located `*.unit.spec.ts` and `*.unit.fx.ts` patterns where appropriate, plus package-level tests. Cover an LTR locale, RTL locale(s), interactions, accessible controls, reduced motion, responsive behavior and scene registration/rendering.
+8. **Review and stop:** report the exact implementation and validation outcome. Do not automatically alter question banks, assessment policies, curricula, or unrelated shared engine code.
+
+## 6. ACCEPTANCE CHECKLIST
+
+- [ ] Target package, Lesson/Section, learning purpose, and current repository instructions verified.
+- [ ] A Scene is implemented and wired as `blockType: 'scene'` in the actual typed content contract.
+- [ ] Exported Scene root has **zero props**; no external values enter it via component arguments.
+- [ ] Required locale/text comes **from the existing lesson/scene context**, not props or a private ad hoc locale provider.
+- [ ] All current supported languages have complete, meaningful translations for **visible and accessibility text**; selected-locale SSR assembly is verified when applicable.
+- [ ] Correct `lang` and LTR/RTL direction; semantic layout and directional interactions are tested.
+- [ ] No blanket mirroring of text, labels, numbers or semantics; selective geometry changes preserve the lesson concept.
+- [ ] Scene remains keyboard-usable, accessible, responsive and reduced-motion-aware when animated.
+- [ ] Stable Scene Resource ID, Data registration, local indexes and Section inclusion are all wired and verified.
+- [ ] Typecheck, lint, unit/integration or visual tests run where available; unavailable checks clearly reported as **not run**.
+- [ ] No unrelated Lesson/Program/Assessment/Skill semantics were modified.
+
+## RESULT
+
+Deliver a reviewable code change inside the **actual textbook application** (not `studio/` or `frontend/playground/` unless that application was expressly requested), including:
+
+- `<SceneName>/<SceneName>.tsx`: named, prop-free Scene root with any local interactive state.
+- `<SceneName>/<SceneName>.locale.ts`: complete typed translations where visible or accessible text exists.
+- `<SceneName>/<SceneName>.module.css` (or existing styling convention), plus optional `*.constants.ts` / helper files if truly needed.
+- `<SceneName>/<SceneName>.unit.spec.ts` and optional co-located fixture/mocks for meaningful automated tests. UI fixtures may supply **provider props**, but must not change the Scene root's public zero-prop API.
+- Parent `scenes.data.ts` / `index.data.ts` / `index.ids.ts` updates for the typed `SceneResource_Config`, plus the parent Lesson's `sceneLocales` and intended Section's ordered content.
+- A concise report: learning interaction implemented, paths changed, LTR/RTL checks, locale coverage, accessibility/performance checks, test commands/results, remaining concerns.
+
+**Scope guard:** This Skill is an **engineering implementation workflow** under the Coding Agent Persona. Approved pedagogical intent belongs to Methodologist/Screenwriter; the Scene's technical presentation and interaction implementation belong here. Do not silently invent lesson facts, assessment scoring, unapproved interfaces, or cross-textbook dependencies.
