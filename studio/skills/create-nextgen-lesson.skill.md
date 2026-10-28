@@ -101,6 +101,10 @@ Apply the following as **design choices justified by the particular brief**, not
 
 No claim that "biohacking", neuro-stimulation or any particular visual effect **guarantees** better learning. Identify the intended learning mechanism and what meaningful learner behavior it supports.
 
+### Programmatic video as an intentional experience
+
+When the approved teaching need benefits from animation or audiovisual explanation, propose a **Remotion-authored programmable composition** as a candidate—not a compulsory solution. Distinguish (a) a time-driven interactive browser demonstration via Remotion Player inside a Scene, (b) pre-rendered locally hosted/offline-capable video, and (c) an optional published YouTube rendition. Give the Coding Agent a precise visual/narrative brief and which interaction **must** remain manipulable; let [Create Remotion Video Skill](./create-remotion-video.skill.md) own implementation, export, Full HD/Story layout, codecs and rendering decisions. Do not mistake video playback for a learner-controlled experiment or assume YouTube works offline.
+
 ### Think in interactive, explorable systems
 
 Explore opportunities such as:
