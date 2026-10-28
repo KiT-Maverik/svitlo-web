@@ -44,6 +44,10 @@ Every Domain, Group, and Skill has **two independent fields**:
 
 Neither link replaces the other. Use exactly `[Not implemented](#)` for each missing target. Link a Definition only to its verified `*.skill-domain.md`, `*.skill-group.md`, or `*.skill.md` document; link Code only to its verified canonical implementation file (normally `*.data.ts`). File existence does not imply editorial approval or runtime registration. Resolve both links **relative to the generated taxonomy file**, and count available Definitions and Code files independently by entity type.
 
+### Metadata and prose ordering
+
+Within every Domain and Group entry, place **all catalog metadata directly after its heading**, before descriptive prose: Domain `Groups · Skills` → `Definition` → `Code`; Group `Skills` → `Definition` → `Code`. A Skill starts with `Definition` → `Code` before its prose. Follow these fields with one blank line and a **plain-language description paragraph without a `Description:` label**. Descriptions are editorial prose, not stored runtime metadata. Keep this layout consistent at every hierarchy level; do not interleave metadata and descriptions.
+
 ## QUALITY AND ACCEPTANCE GATES
 
 - All Domain, Group, and Skill names and descriptions convey meaningful, non-duplicative semantics.
@@ -89,16 +93,16 @@ Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
 Definition: [Not implemented](#)
 Code: [Not implemented](#)
 
-Description: %DOMAIN_DESCRIPTION%
+%DOMAIN_DESCRIPTION%
 
 #### %GROUP_NAME%
 
 Skills: %GROUP_SKILL_COUNT%
 
-Description: %GROUP_DESCRIPTION%
-
 Definition: [Not implemented](#)
 Code: [Not implemented](#)
+
+%GROUP_DESCRIPTION%
 
 ##### %SKILL_NAME%
 
