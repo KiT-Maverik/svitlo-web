@@ -27,7 +27,7 @@
     "packages:typecheck": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run typecheck --workspaces --if-present",
     "packages:lint": "npm run lint --workspaces --if-present",
     "packages:test": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test --workspaces --if-present",
-    "packages:check": "node scripts/check-workspaces.mjs && node scripts/check-package-boundaries.mjs",
+    "packages:check": "node scripts/check-workspaces.mjs && node scripts/check-package-boundaries.mjs && node scripts/check-extraction-readiness.mjs",
     "build:math": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/math",
     "dev:math": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run dev --workspace @svitlo/math",
     "test:math": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test --workspace @svitlo/math",
