@@ -103,3 +103,12 @@ Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/
 - Playground now hosts a small static, subject-neutral lesson fixture under `src/fixtures/demoLesson.ts` and `/topics/demo`, plus generic UI Kit question/API examples.
 - Removed obsolete `@layout` and `@pages` aliases and app re-export barrels; application imports are explicit. Shared packages remain accessible only through their public package exports.
 - Playground remains separately buildable and its lesson persistence, quiz workflow, localization and browser coverage use fixture IDs rather than textbook-specific content.
+
+## Stage 5 — Architecture extraction readiness (2026-10-28)
+
+- Keep npm workspaces and a single repository for current development. Independent registries, releases, deployments, and actual extraction are **not** part of this stage.
+- Every textbook remains self-contained: no application-to-application imports, cross-package relative paths, or direct imports into shared package source trees.
+- Shared Engine and UI Kit are consumed through explicit, typed public exports. Each package declares its production dependencies and owns the code and assets needed by its public API.
+- Engine remains framework-independent. UI Kit remains independent of Next.js and of application code; application-specific adapters and `LocaleProvider` remain in each app.
+- `npm run packages:check` includes the `check-extraction-readiness.mjs` guard for package import boundaries, dependency declarations, public entrypoint sources and UI Kit's packaged flag synchronization script and SVG assets.
+- A future decision to extract or distribute a package will still require a real package-artifact installation test (`npm pack` and isolated consumer). Passing static checks and monorepo CI is architectural preparation, **not** proof of distributable artifact functionality.
