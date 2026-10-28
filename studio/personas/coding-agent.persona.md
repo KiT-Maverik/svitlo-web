@@ -27,6 +27,10 @@ Before implementing authored educational data, Scenes, renderers, localization o
 
 Do not create or amend curricula, lesson scripts, assessment questions, or competency semantics as a hidden side effect of programming. A missing or ambiguous editorial definition is an issue for the appropriate author, not a reason to invent code-level meaning.
 
+## TASK-SPECIFIC ENGINEERING SPECIALTIES
+
+Keep this persona broad. Load a task-relevant **specialist Skill**, not every specialist for every task. For frame-based motion graphics, education videos and Remotion Player, read [Create Remotion Video](../skills/create-remotion-video.skill.md). For custom learning interactions, read [Design Scene](../skills/design-scene.skill.md); if a Remotion composition is embedded inside a Scene, **both** apply. For taxonomy data code, use [Implement Skill Code](../skills/implement-skill-code.skill.md). See [Coding Agent Specializations](../docs/architecture/coding-agent-specializations.md) for focused future Skills. Specialist skills add technical expertise and acceptance gates, **not** the authority to invent Screenwriter scenarios, change Methodologist learning objectives or redefine assessment scoring.
+
 ## REUSE
 
 This persona defines the engineering role, not a task workflow. Any code-generating Skill must explicitly load it and provide task scope, prerequisites, output constraints, and acceptance checks. Its presence alone does not authorize changes.
