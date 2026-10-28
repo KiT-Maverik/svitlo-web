@@ -2,149 +2,20 @@
 
 Date: 2026-10-28
 
-Редакційний **Draft** таксономії для окремого підручника «Фізика» (початковий фокус 1–3 класи). Навички є повторно використовуваними предметними компетентностями, а не позначками класів, уроками, видами вправ чи даними про успішність. Досягнення описуються якісно й через безпечні моделі; спеціальна математична формалізація старших класів наразі поза межами охоплення. Питальний розділ «Як це працює?» інтегровано як організацію предметного змісту, а не окремий Subject.
+Редакційний **Draft** таксономії для окремого підручника «Фізика» (початковий фокус 1–3 класи). Навички є повторно використовуваними предметними компетентностями, а не позначками класів, уроками, видами вправ чи даними про успішність. Досягнення описуються якісно й через безпечні моделі; спеціальна математична формалізація старших класів наразі поза межами охоплення. Питальний розділ «Як це працює?» інтегровано як організацію предметного змісту, а не окремий Subject. Науковий метод, контрольні експерименти, сліпі й подвійні сліпі дослідження належать до міжпредметного напряму підручника «Людина та мислення», тому не моделюються окремим фізичним SkillDomain. Предметно-специфічні вимірювання і механіка потребують подальшого редакційного аудиту.
 
 Джерела орієнтирів: [МОН — початкова освіта (2026)](https://mon.gov.ua/news/zatverdzheno-typovu-osvitniu-prohramu-dlia-14-klasiv), [МОН — програми 1–4](https://mon.gov.ua/osvita-2/zagalna-serednya-osvita/osvitni-programi/navchalni-programi-dlya-1-4-klasiv), [NGSS — Forces and Interactions](https://www.nextgenscience.org/topic-arrangement/3forces-and-interactions), [NGSS — Light and Sound](https://www.nextgenscience.org/topic-arrangement/1waves-light-and-sound), [England — Science](https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study), [studio/Subject Proposition](../../../../studio/Subject%20Proposition.md). Це синтез джерел для Svitlo, а не дослівне відтворення якоїсь програми.
 
 ## SUMMARY
 
-Domains: 8
-Groups: 28
-Skills: 83
+Domains: 7
+Groups: 24
+Skills: 71
 
-Definitions: 0/8 Domains · 0/28 Groups · 0/83 Skills
-Code files: 0/8 Domains · 0/28 Groups · 0/83 Skills
+Definitions: 0/7 Domains · 0/24 Groups · 0/71 Skills
+Code files: 0/7 Domains · 0/24 Groups · 0/71 Skills
 
 ## DOMAINS
-
-### Дослідження фізичних явищ
-
-Groups: 4 · Skills: 12
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Description: Навички спостереження, постановки запитань, простого експерименту й обґрунтування висновків.
-
-#### Спостереження та запитання
-
-Skills: 3
-
-Description: Виявлення фізичних явищ і формулювання питань про них.
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-##### Помічати фізичні зміни
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Визначати, яка спостережувана властивість об'єкта або події змінилася.
-
-##### Формулювати дослідницьке запитання
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Ставити запитання про явище, на яке можна відповісти спостереженням або дослідом.
-
-##### Відрізняти спостереження від припущення
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Розрізняти побачений факт і власне пояснення цього факту.
-
-#### Передбачення
-
-Skills: 2
-
-Description: Формування перевірюваних припущень про поведінку об'єктів.
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-##### Висувати перевірюване припущення
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Пропонувати можливу відповідь, яку можна перевірити простим дослідом.
-
-##### Прогнозувати результат зміни умови
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Передбачати спостережуваний наслідок зміни однієї обраної умови.
-
-#### Дослідницька процедура
-
-Skills: 3
-
-Description: Планування простих порівнянь та безпечного випробування припущень.
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-##### Обирати спосіб перевірки припущення
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Добирати спостереження або простий дослід, який відповідає поставленому запитанню.
-
-##### Змінювати одну умову досліду
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Порівнювати випадки, змінюючи одну визначену умову й зберігаючи інші.
-
-##### Дотримуватися безпечних умов досліду
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Розпізнавати допустимі для дитини умови проведення простого фізичного досліду.
-
-#### Вимірювання та висновки
-
-Skills: 4
-
-Description: Вимірювання, фіксація та інтерпретація простих фізичних даних.
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-##### Добирати вимірювальний інструмент
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Обирати інструмент для заданої вимірюваної фізичної величини.
-
-##### Зчитувати результат простого вимірювання
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Правильно визначати показ приладу з поділками або числовим відображенням.
-
-##### Записувати результати спостереження
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Упорядковувати дані кількох спостережень у простому записі або таблиці.
-
-##### Робити висновок із результатів
-
-Definition: [Not implemented](#)
-Code: [Not implemented](#)
-
-Формулювати висновок, що спирається на отримані спостереження або вимірювання.
 
 ### Рух і сили
 
