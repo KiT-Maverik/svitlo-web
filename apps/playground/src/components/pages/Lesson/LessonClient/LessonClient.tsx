@@ -2,11 +2,11 @@
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState } from '@svitlo/engine/content';
-import type { SelectOneAnswerQuestion } from '@/components/widgets/questions/types';
+import type { SelectOneAnswerQuestion } from '@svitlo/ui-kit/questions/types';
 import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
 import { useLessonProgress } from '../LessonProgress/LessonProgress';
 import Celebration, { playCelebration } from '../Celebration/Celebration';
-import { QuestionAttempt } from '@/components/widgets/questions/helpers';
+import { QuestionAttempt } from '@svitlo/ui-kit/questions/helpers';
 import { QuestionProgress, type QuestionStatus } from '../QuestionProgress/QuestionProgress';
 import { LessonSteps } from '../LessonSteps/LessonSteps';
 import styles from '../Lesson.module.css';

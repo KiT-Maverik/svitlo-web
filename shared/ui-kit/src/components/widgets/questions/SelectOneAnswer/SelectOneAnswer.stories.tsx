@@ -3,38 +3,38 @@ import { expect, userEvent, within } from 'storybook/test';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { QuestionAttempt, type QuestionAttemptProps } from '../helpers';
-import type { SelectMultipleAnswersQuestion } from '@/components/widgets/questions/types';
+import type { SelectOneAnswerQuestion } from '../types';
 
-const question: SelectMultipleAnswersQuestion = {
-  id: 'multiple-select-playground',
-  type: 'multiple-select',
-  prompt: 'Оберіть усі прості числа.',
+const question: SelectOneAnswerQuestion = {
+  id: 'single-select-playground',
+  type: 'single-select',
+  prompt: 'Яка планета найближча до Сонця?',
   options: [
-    { id: 'two', label: '2' },
-    { id: 'four', label: '4' },
-    { id: 'five', label: '5' },
+    { id: 'earth', label: 'Земля' },
+    { id: 'mercury', label: 'Меркурій' },
+    { id: 'venus', label: 'Венера' },
   ],
-  correctIds: ['two', 'five'],
-  explanation: '2 і 5 мають лише два додатні дільники. 4 ділиться ще й на 2.',
+  correctId: 'mercury',
+  explanation: 'Меркурій — перша планета від Сонця.',
 };
 
-type StoryProps = QuestionAttemptProps<'multiple-select'>;
+type StoryProps = QuestionAttemptProps<'single-select'>;
 
-function SelectMultipleAnswersStory(props: StoryProps) {
+function SelectOneAnswerStory(props: StoryProps) {
   return <QuestionAttempt {...props} />;
 }
 
 const meta = {
-  title: 'Questions/Select multiple answers',
-  component: SelectMultipleAnswersStory,
+  title: 'Questions/Select one answer',
+  component: SelectOneAnswerStory,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: { component: 'Запитання, у якому можна вибрати кілька правильних варіантів.' },
+      description: { component: 'Запитання з одним правильним варіантом відповіді.' },
     },
   },
   argTypes: {
-    question: { control: 'object', description: 'Опис запитання, варіанти та правильні відповіді.' },
+    question: { control: 'object', description: 'Опис запитання, варіанти та правильна відповідь.' },
     showResult: { control: 'boolean' },
     showExplanation: { control: 'boolean' },
     showErrors: { control: 'boolean' },
@@ -65,7 +65,7 @@ const meta = {
     readOnly: false,
     checkMode: 'manual',
   },
-} satisfies Meta<typeof SelectMultipleAnswersStory>;
+} satisfies Meta<typeof SelectOneAnswerStory>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -83,8 +83,7 @@ export const ReadOnly: Story = {
 export const Correct: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    await userEvent.click(canvas.getByRole('button', { name: /^2$/ }));
-    await userEvent.click(canvas.getByRole('button', { name: /^5$/ }));
+    await userEvent.click(canvas.getByRole('button', { name: /Меркурій/ }));
     await userEvent.click(canvas.getByRole('button', { name: 'Перевірити' }));
     await expect(canvas.getByRole('button', { name: 'Спробувати ще раз' })).toBeVisible();
   },
@@ -93,7 +92,7 @@ export const Correct: Story = {
 export const Incorrect: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    await userEvent.click(canvas.getByRole('button', { name: /^4$/ }));
+    await userEvent.click(canvas.getByRole('button', { name: /Земля/ }));
     await userEvent.click(canvas.getByRole('button', { name: 'Перевірити' }));
     await expect(canvas.getByRole('button', { name: 'Спробувати ще раз' })).toBeVisible();
   },
@@ -103,11 +102,11 @@ export const StateGallery: Story = {
   render: args => (
     <Stack spacing={3}>
       <Typography variant="h6">Стан за замовчуванням</Typography>
-      <SelectMultipleAnswersStory {...args} />
+      <SelectOneAnswerStory {...args} />
       <Typography variant="h6">Без літер і пояснення</Typography>
-      <SelectMultipleAnswersStory {...args} showLetters={false} showExplanation={false} />
+      <SelectOneAnswerStory {...args} showLetters={false} showExplanation={false} />
       <Typography variant="h6">Заблокований стан</Typography>
-      <SelectMultipleAnswersStory {...args} disabled />
+      <SelectOneAnswerStory {...args} disabled />
     </Stack>
   ),
 };

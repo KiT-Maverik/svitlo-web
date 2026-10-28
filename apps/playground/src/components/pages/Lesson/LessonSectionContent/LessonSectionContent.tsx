@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { Fragment, type ReactNode } from 'react';
-import { MarkdownContent } from '@/components/widgets';
+import { MarkdownContent } from '@svitlo/ui-kit';
 import type { LessonSection } from '@svitlo/engine/content';
 import { getLocaleDirection } from '@svitlo/engine/localization';
 import type { Locale } from '@svitlo/engine/localization';

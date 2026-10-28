@@ -12,9 +12,9 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import { exampleQuestions } from '@/components/widgets/questions/examples';
-import { QuestionAttempt } from '@/components/widgets/questions/helpers';
-import type { CheckMode } from '@/components/widgets/questions/attempt-model';
+import { exampleQuestions } from '@svitlo/ui-kit/questions/examples';
+import { QuestionAttempt } from '@svitlo/ui-kit/questions/helpers';
+import type { CheckMode } from '@svitlo/ui-kit/questions/attempt-model';
 import { locale } from './locales/uk-UA';
 import { aria } from './QuestionsDemo.constants';
 

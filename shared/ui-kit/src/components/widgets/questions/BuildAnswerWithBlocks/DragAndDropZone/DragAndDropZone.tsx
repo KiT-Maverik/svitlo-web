@@ -20,7 +20,7 @@ import {
 } from '@dnd-kit/core';
 import { arrayMove, SortableContext, useSortable } from '@dnd-kit/sortable';
 import type { InteractionProps } from '../../interaction-props';
-import type { Item } from '@/components/widgets/questions/types';
+import type { Item } from '../../types';
 import { uk } from '../../messages';
 import { AnimatedLayoutItem, type DragRect } from '../AnimatedLayoutItem/AnimatedLayoutItem';
 import { choiceFeedback, isGraded, type ChoiceFeedback } from '../../feedback';

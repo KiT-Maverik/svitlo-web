@@ -1,6 +1,6 @@
 'use client';
 
-import { KnowledgeCheckpoint } from '@/components/widgets';
+import { KnowledgeCheckpoint } from '@svitlo/ui-kit';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
 import type { TheoryKnowledgeCheckpoint_Locale } from './Checkpoint.locale';
 

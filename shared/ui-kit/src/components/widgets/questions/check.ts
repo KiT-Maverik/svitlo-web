@@ -5,7 +5,7 @@ import type {
   QuestionOf,
   QuestionType,
   TextNormalization,
-} from '@/components/widgets/questions/types';
+} from './types';
 import type { CheckResult } from './check-result';
 
 const empty: CheckResult = { status: 'incomplete', reason: 'empty' };

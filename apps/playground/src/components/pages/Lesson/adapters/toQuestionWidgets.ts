@@ -1,4 +1,4 @@
-import type { SelectOneAnswerQuestion } from '@/components/widgets/questions/types';
+import type { SelectOneAnswerQuestion } from '@svitlo/ui-kit/questions/types';
 import type { Quiz } from '@svitlo/engine/content';
 
 /** Adapts localized content instances to the current select-one widget contract. */

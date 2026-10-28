@@ -5,9 +5,9 @@ import { locale } from './locales/uk-UA';
 import { aria } from './ApiDemo.constants';
 import { useState } from 'react';
 import { Box, Button, Checkbox, FormControlLabel, Paper, Stack, TextField, Typography } from '@mui/material';
-import type { AnswerWithNumberQuestion, SelectOneAnswerQuestion } from '@/components/widgets/questions/types';
-import { QuestionAttempt } from '@/components/widgets/questions/helpers';
-import type { AttemptEvent, AnswerEvent } from '@/components/widgets/questions/attempt-model';
+import type { AnswerWithNumberQuestion, SelectOneAnswerQuestion } from '@svitlo/ui-kit/questions/types';
+import { QuestionAttempt } from '@svitlo/ui-kit/questions/helpers';
+import type { AttemptEvent, AnswerEvent } from '@svitlo/ui-kit/questions/attempt-model';
 const manual: SelectOneAnswerQuestion = {
   id: 'api-manual',
   type: 'single-select',

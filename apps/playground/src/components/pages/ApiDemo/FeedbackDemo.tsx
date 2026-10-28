@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import { locale } from './locales/uk-UA';
 import { Checkbox, FormControlLabel, Stack, Typography } from '@mui/material';
-import { exampleQuestions } from '@/components/widgets/questions/examples';
-import { QuestionAttempt } from '@/components/widgets/questions/helpers';
+import { exampleQuestions } from '@svitlo/ui-kit/questions/examples';
+import { QuestionAttempt } from '@svitlo/ui-kit/questions/helpers';
 export function FeedbackDemo() {
   const [showErrors, setShowErrors] = useState(true);
   const [showCorrectAnswers, setShowCorrectAnswers] = useState(true);

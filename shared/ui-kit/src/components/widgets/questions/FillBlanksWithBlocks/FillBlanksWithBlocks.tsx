@@ -14,7 +14,7 @@ import {
   useSensors,
 } from '@dnd-kit/core';
 import type { InteractionProps } from '../interaction-props';
-import type { Item } from '@/components/widgets/questions/types';
+import type { Item } from '../types';
 import { isGraded } from '../feedback';
 import { CorrectAnswerBlock } from '../helpers';
 import { uk } from '../messages';

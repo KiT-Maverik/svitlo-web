@@ -1,4 +1,4 @@
-import type { Question } from '@/components/widgets/questions/types';
+import type { Question } from './types';
 export const exampleQuestions: Question[] = [
   {
     id: 'planet',

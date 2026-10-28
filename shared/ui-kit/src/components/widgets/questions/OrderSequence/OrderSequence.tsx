@@ -24,7 +24,7 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import type { InteractionProps } from '../interaction-props';
-import type { Item } from '@/components/widgets/questions/types';
+import type { Item } from '../types';
 import { answerColumnSx } from '../helpers';
 import { uk } from '../messages';
 

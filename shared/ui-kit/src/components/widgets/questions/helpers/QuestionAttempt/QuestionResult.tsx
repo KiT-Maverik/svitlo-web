@@ -1,7 +1,7 @@
 'use client';
 
 import { Box, Fade, Paper } from '@mui/material';
-import { MarkdownContent } from '@/components/widgets/MarkdownContent';
+import { MarkdownContent } from '../../../MarkdownContent';
 import { uk } from '../../messages';
 export function QuestionResult({
   explanation,

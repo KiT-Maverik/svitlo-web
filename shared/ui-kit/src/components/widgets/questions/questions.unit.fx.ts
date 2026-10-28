@@ -1,4 +1,4 @@
-import type { QuestionOf, QuestionType } from '@/components/widgets/questions/types';
+import type { QuestionOf, QuestionType } from './types';
 
 /** Deterministic authored definitions. Return a clone so tests never share mutable answers. */
 const definitions: { [K in QuestionType]: QuestionOf<K> } = {

@@ -1,5 +1,5 @@
 import { isGraded } from './feedback';
-import type { AnswerMap, QuestionOf, QuestionType } from '@/components/widgets/questions/types';
+import type { AnswerMap, QuestionOf, QuestionType } from './types';
 import type { CheckResult } from './check-result';
 import type { AttemptEvent, AttemptOptions, AttemptState } from './attempt-model';
 

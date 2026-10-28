@@ -14,7 +14,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import LabelOutlined from '@mui/icons-material/LabelOutlined';
 import MoreVert from '@mui/icons-material/MoreVert';
 import LockOpenOutlined from '@mui/icons-material/LockOpenOutlined';
-import { QuestionActions } from '@/components/widgets/questions/helpers';
+import { QuestionActions } from '../questions/helpers';
 import styles from './Flashcard.module.css';
 import { aria } from './Flashcard.constants';
 import { locales } from './Flashcard.locale';

@@ -19,13 +19,13 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import TopNavbar from '../Navigation/TopNavbar';
-import BottomNavbar from '../Navigation/BottomNavbar';
+import TopNavbar from '@svitlo/ui-kit/navigation/TopNavbar';
+import BottomNavbar from '@svitlo/ui-kit/navigation/BottomNavbar';
 import { canAdvance, useLessonProgress } from '@/components/pages/Lesson/LessonProgress/LessonProgress';
 import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getLocaleDirection } from '@svitlo/engine/localization';
-import { VerticalSpace } from '@/components/widgets';
+import { VerticalSpace } from '@svitlo/ui-kit';
 import { getLearningLayoutMessages } from './locales';
 import { aria } from './LearningLayout.constants';
 
