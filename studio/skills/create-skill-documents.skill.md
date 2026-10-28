@@ -7,7 +7,7 @@
 ## NON-NEGOTIABLE START CONDITIONS
 
 1. Receive the actual **PackageRoot** of the standalone textbook/application, the requested Domain/Group/Skill scope, editorial language, and any material constraints. The monorepo root is not automatically PackageRoot.
-2. Read `<PackageRoot>/docs/skills/skills-taxonomy.md` and locate the **specific, existing** Domain, Group, and Skill entries. Read applicable `AGENTS.md` instructions and any existing definition documents.
+2. Read `<PackageRoot>/docs/skills/taxonomy.md` and locate the **specific, existing** Domain, Group, and Skill entries. Read applicable `AGENTS.md` instructions and any existing definition documents.
 3. Do not create entity files for names absent from the approved taxonomy, or silently change the taxonomy's counts, grouping, semantics, or scope. Report proposed additions/splits/merges as taxonomy change requests.
 4. Use relevant, reliable subject references to elaborate the approved competencies. Identify contested or ambiguous definitions rather than inventing certainty.
 
@@ -138,7 +138,7 @@ Create the selected documents inside the **target package**, never in `studio/` 
 <PackageRoot>/
 └── docs/
     └── skills/
-        ├── skills-taxonomy.md
+        ├── taxonomy.md
         └── <domainCamelCase>/
             ├── <domainCamelCase>.skill-domain.md
             └── <groupCamelCase>/

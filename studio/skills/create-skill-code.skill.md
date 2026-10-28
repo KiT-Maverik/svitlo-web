@@ -11,7 +11,7 @@ Before implementation, read [SkillDomain](../docs/entities/skill-domain.md), [Sk
 ## NON-NEGOTIABLE START CONDITIONS
 
 1. **Target:** obtain the exact `PackageRoot` of the standalone textbook package, selected Domain/Group/Skill scope, target branch/workflow, and any package-specific constraints. The monorepo root is **not** automatically the package root.
-2. **Editorial source:** read `<PackageRoot>/docs/skills/skills-taxonomy.md` and the corresponding **approved** `*.skill-domain.md`, `*.skill-group.md`, and `*.skill.md` documents. The taxonomy summary alone is insufficient to derive detailed competency semantics.
+2. **Editorial source:** read `<PackageRoot>/docs/skills/taxonomy.md` and the corresponding **approved** `*.skill-domain.md`, `*.skill-group.md`, and `*.skill.md` documents. The taxonomy summary alone is insufficient to derive detailed competency semantics.
 3. **Technical source:** inspect repository `AGENTS.md`, applicable nested instructions, current Skill/SkillGroup/SkillDomain contracts, builders, implementation examples, locale union, source indexes, and tests. Resolve the **real** implementation directory from the target package architecture; do not invent a `src/math` location or duplicate engine-owned contracts.
 4. **Migration safety:** locate existing IDs, data files, mappings, registered collections, and tests for the requested entities. Check whether they are new, partially implemented, or already published.
 
@@ -19,7 +19,7 @@ If a definition is missing, only Draft, ambiguous, or inconsistent with the appr
 
 ## ARCHITECTURAL CONTRACT
 
-- **Separation:** the taxonomy is a compact Markdown inventory; the definition documents own rich competency semantics; TypeScript files own runtime registration. Do not backfill UUIDs, implementation details, grades, prerequisites, questions, scores, or UI metadata into the editorial taxonomy.
+- **Separation:** the taxonomy is a compact Markdown inventory; the definition documents own rich competency semantics; TypeScript files own runtime registration. Do not backfill UUIDs, executable implementation details, grades, prerequisites, questions, scores, or UI metadata into the editorial taxonomy.
 - **Filesystem:** follow the current content-code architecture, including one Domain per directory, nested Groups and Group-local `skills/` folders where that remains the established pattern. Respect actual package paths rather than assuming legacy paths.
 - **Identifiers:** runtime identity is a stable, static UUID stored in source `*.ids.ts` as required by the repository. Preserve existing UUIDs. Assign a new UUID **once at authoring time** only for a truly new approved entity, with no collisions. Never derive identity from filenames, hierarchy, grades, or educational content, and never call random UUID generation at runtime.
 - **Mappings:** Group `skillIds` and Domain `groupIds` are explicit, typed, ordered mappings to child UUIDs. Do not infer membership by parsing names or paths. Changing parent membership does not itself change a child's UUID.
@@ -40,7 +40,7 @@ The preserved [Creating Skills](../Creating%20Skills.md) is the historical refer
 4. **Localize:** fill every required language genuinely. Keep locale keys and types consistent with the actual project and avoid Russian or other excluded locales unless the current repository's authoritative locale contract explicitly requires them.
 5. **Register at the correct level:** update `index.ids.ts` and `index.data.ts` as required by existing patterns; prevent duplicate UUIDs, missing references, accidental cross-level exports, or cycles.
 6. **Verify:** run relevant formatting/linting, TypeScript checks, locale integrity checks, builder/registry unit tests, and any available taxonomy consistency tests. If execution is unavailable, clearly mark checks as not run rather than inventing green results.
-7. **Update only Code links:** in `<PackageRoot>/docs/skills/skills-taxonomy.md`, set the in-scope entity's **Code** field to the verified relative path of the canonical implementation file only after it exists. Recompute **Code files** counts. **Preserve Definition fields and Definition counts**; never overwrite a Definition link with Code. Also update the **Code** field in that entity's own Markdown Definition document, resolving the link relative to that document. Keep other entities and their links unchanged.
+7. **Update only Code links:** in `<PackageRoot>/docs/skills/taxonomy.md`, set the in-scope entity's **Code** field to the verified relative path of the canonical implementation file only after it exists. Recompute **Code files** counts. **Preserve Definition fields and Definition counts**; never overwrite a Definition link with Code. Also update the **Code** field in that entity's own Markdown Definition document, resolving the link relative to that document. Keep other entities and their links unchanged.
 8. **Stop and report:** list files, entities, preserved/created UUIDs without copying UUID values into editorial docs, validations, remaining gaps and migration concerns. Do not proceed to lesson or assessment generation.
 
 ## IMPLEMENTATION CHECKLIST
@@ -60,6 +60,6 @@ The preserved [Creating Skills](../Creating%20Skills.md) is the historical refer
 ## RESULT
 
 - Modify **only** the actual Skill content-code subtree (and necessary registry, localization and tests) for the specified target package, respecting dependencies on shared engine-owned contracts.
-- The existing editorial files remain canonical: `<PackageRoot>/docs/skills/skills-taxonomy.md` plus the approved `*.skill-domain.md` / `*.skill-group.md` / `*.skill.md` files.
+- The existing editorial files remain canonical: `<PackageRoot>/docs/skills/taxonomy.md` plus the approved `*.skill-domain.md` / `*.skill-group.md` / `*.skill.md` files.
 - Do not assume source code must live next to those documents: discover and use the repository's real content-code root. If actual files are elsewhere, **Code** links must resolve correctly relative to the taxonomy and the entity's own Definition document. Never replace the Definition link.
 - Handoff is a reviewable code change with explicit validation results; nothing is declared implemented merely because a planned name, ID, or reference exists.

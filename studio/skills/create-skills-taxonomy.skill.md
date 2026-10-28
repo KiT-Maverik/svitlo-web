@@ -23,7 +23,7 @@ Read these three canonical entity descriptions in full before designing the taxo
 - [SkillGroup](../docs/entities/skill-group.md)
 - [Skill](../docs/entities/skill.md)
 
-Apply their semantic boundaries, atomicity rules, integration-skill criteria, and separation of Definition from Code. Do not reproduce those definitions inside this task instruction or invent UI/runtime identifiers in the editorial taxonomy. Preserve the historical source [Creating Skills](../Creating%20Skills.md) as background only; its legacy paths and implementation snapshots do not govern this template.
+Follow these canonical definitions for entity boundaries, atomicity, integration competencies, and the separation of Definition from Code. Do not repeat their semantic rules in this workflow. The preserved `studio/Creating Skills.md` is historical background, not an alternative output contract.
 
 ## OPERATING PROTOCOL
 
@@ -31,24 +31,18 @@ Apply their semantic boundaries, atomicity rules, integration-skill criteria, an
 2. **Decompose** into broad Domains, coherent Groups, and atomic Skills. Phrase each Skill as a testable action. Include independently assessable integrative competencies when justified.
 3. **Audit** overlapping definitions, gaps, inconsistent granularity, misleading combined concepts, and unnecessary fragmentation. Preserve existing agreed semantics during revisions unless changes are explicitly reviewed.
 4. **Validate breadth** against relevant subject references. Coverage is editorial, not a fabricated percentage derived from row counts. Flag disputed and optional areas for review outside the concise template.
-5. **Inspect real files** under the target package to determine availability. A valid link requires a file actually present and matching the entity. A reserved name, a proposed path, a UUID, or a parent file does **not** establish implementation.
+5. **Inspect actual Definition and Code files** under the target package. Each non-placeholder link must resolve to the matching entity and artifact. A proposed path, reserved UUID, or parent reference is not proof of implementation.
 6. **Author** the single taxonomy file using the **TAXONOMY TEMPLATE** below. Populate each Domain and Group description and each Skill's short, independently meaningful description. Use actual counts, not target quotas.
-7. **Verify and stop.** Recount all Groups and Skills, ensure one placement per Skill, check link destinations and Markdown structure, and deliver the inventory for editorial review. Do not automatically create hundreds of Skill documents or generate code.
+7. **Verify and stop.** Recount Groups, Skills, Definitions and Code files; check primary placement, resolved links and Markdown structure. Deliver the inventory for editorial review. Do not generate entity documents or code.
 
 ### Independent artifact links
 
-Every Domain, Group, and Skill has **two separate, permanent fields**:
+Every Domain, Group, and Skill has **two independent fields**:
 
 - **Definition:** Markdown document that defines the entity's semantics, boundaries, and evidence, normally written by **Create Skill Documents Skill**.
 - **Code:** canonical source implementation of that entity, normally created by **Create Skill Code Skill**.
 
-The fields **never replace one another**. Inspect each independently. Use exactly `[Not implemented](#)` for any **missing target**, even if the other file already exists. Replace a placeholder only when that specific file really exists and matches the entity.
-
-- For Definition, link verified `*.skill-domain.md`, `*.skill-group.md`, or `*.skill.md`.
-- For Code, link verified canonical `*.data.ts` (or its actual codebase equivalent).
-- An editorial definition, planned filename, reserved UUID, parent reference, or static ID object does **not** prove Code exists; code existence does not prove an approved Definition exists.
-- Resolve each relative link from the **generated taxonomy Markdown file**, not from this instruction. Keep both links populated when both artifacts exist.
-- Independently count **Definitions** and **Code files** by entity type; count only links to verified files.
+Neither link replaces the other. Use exactly `[Not implemented](#)` for each missing target. Link a Definition only to its verified `*.skill-domain.md`, `*.skill-group.md`, or `*.skill.md` document; link Code only to its verified canonical implementation file (normally `*.data.ts`). File existence does not imply editorial approval or runtime registration. Resolve both links **relative to the generated taxonomy file**, and count available Definitions and Code files independently by entity type.
 
 ## QUALITY AND ACCEPTANCE GATES
 
@@ -59,14 +53,14 @@ The fields **never replace one another**. Inspect each independently. Use exactl
 - Each entity has both `Definition` and `Code` links, even when both are `[Not implemented](#)`.
 - Every non-placeholder link resolves and matches that specific artifact; definitions never become substitutes for code, or vice versa.
 - “Definitions” and “Code files” are counted separately; no unverified implementation claims.
-- No UUIDs, UI IDs, technical IDs, guessed links, or code appear in the generated taxonomy.
+- No UUIDs, UI IDs, technical identifiers, guessed paths, or executable code content appear in the generated taxonomy; verified **Code links** are explicitly permitted.
 - Editorial uncertainties are reported separately rather than disguised as complete coverage.
 
 Write the artifact in the briefing's requested language. The following English template is structural; replace its example placeholders and repeat its Domain/Group/Skill blocks as needed.
 
 ## TAXONOMY TEMPLATE
 
-Use this **embedded template**. It is canonical; do not create a separate template document.
+Use this **embedded template**. Repeat the Domain, Group, and Skill blocks as needed, reconcile the counts, and replace only verified Definition/Code links. Do not create a separate template document or include authoring instructions in the generated taxonomy.
 
 ~~~md
 # %SUBJECT_NAME% — Skills Taxonomy
@@ -82,6 +76,7 @@ Groups: %GROUP_COUNT%
 Skills: %SKILL_COUNT%
 
 Definitions: %DOMAIN_DEFINITIONS%/%DOMAIN_COUNT% Domains · %GROUP_DEFINITIONS%/%GROUP_COUNT% Groups · %SKILL_DEFINITIONS%/%SKILL_COUNT% Skills
+Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GROUP_COUNT% Groups · %SKILL_CODE_FILES%/%SKILL_COUNT% Skills
 
 ## DOMAINS
 
@@ -90,6 +85,7 @@ Definitions: %DOMAIN_DEFINITIONS%/%DOMAIN_COUNT% Domains · %GROUP_DEFINITIONS%/
 Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
 
 Definition: [Not implemented](#)
+Code: [Not implemented](#)
 
 Description: %DOMAIN_DESCRIPTION%
 
@@ -100,16 +96,15 @@ Skills: %GROUP_SKILL_COUNT%
 Description: %GROUP_DESCRIPTION%
 
 Definition: [Not implemented](#)
+Code: [Not implemented](#)
 
 ##### %SKILL_NAME%
 
 Definition: [Not implemented](#)
+Code: [Not implemented](#)
 
 %SHORT_OBSERVABLE_SKILL_DESCRIPTION%
 
-> Agent note:
-> Repeat groups and domains as required.
-> Replace only verified file links with real relative paths.
 ~~~
 
 ## RESULT
@@ -123,7 +118,7 @@ Create or update exactly one taxonomy Markdown document:
         └── taxonomy.md
 ~~~
 
-- Keep `docs/skills/` and `skills-taxonomy.md` literal within the actual textbook package. Never write the file to monorepo-level `studio/` or a guessed `src/math/` location.
+- Keep `docs/skills/taxonomy.md` literal within the actual textbook package. Never write the file to monorepo-level `studio/` or a guessed `src/math/` location.
 - Inspect an existing taxonomy before editing. Keep validated definitions and filenames stable; make significant splits/merges reviewable.
 - Do not create individual entity files, IDs, code, curriculum, or lesson content in this phase.
 - Report source references used, final counts, separate Definition and Code file counts, unresolved semantic concerns, and readiness for **Create Skill Documents Skill**.
