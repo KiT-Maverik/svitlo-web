@@ -5,7 +5,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@types': fileURLToPath(new URL('./src/types/index.ts', import.meta.url)),
       '@layout': fileURLToPath(new URL('./src/components/layout/index.ts', import.meta.url)),
       '@pages': fileURLToPath(new URL('./src/components/pages/index.ts', import.meta.url)),
     },

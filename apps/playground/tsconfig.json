@@ -29,9 +29,6 @@
       "@pages": [
         "./src/components/pages/index.ts"
       ],
-      "@types": [
-        "./src/types/index.ts"
-      ],
       "@/*": [
         "src/*"
       ]

@@ -33,9 +33,14 @@ for (const file of engineSources) {
   }
 }
 const appSourceRoot = resolve(root, 'apps/playground/src');
+for (const removed of ['types/index.ts', 'types/languages.ts', 'utils/index.ts', 'math/assessmentMethodTaxonomy/index.ids.ts']) {
+  assert(!existsSync(resolve(appSourceRoot, removed)), 'Legacy compatibility shim must not exist: ' + removed);
+}
 if (existsSync(appSourceRoot)) {
   for (const file of walk(appSourceRoot).filter(file => /\.(?:ts|tsx)$/.test(file))) {
     const content = readFileSync(file, 'utf8');
+    assert(!/from\s*['"](?:@types|@\/utils(?:\/|['"]))/.test(content),
+      'Application must not depend on legacy compatibility aliases: ' + relative(root, file));
     assert(!/(?:shared\/engine\/src|@svitlo\/engine\/(?:src|dist)\/)/.test(content),
       'Application must use public engine exports: ' + relative(root, file));
   }

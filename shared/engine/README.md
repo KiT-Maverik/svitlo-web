@@ -31,8 +31,7 @@ assessment method configuration validation. Dynamic question creation and valida
 are exported through `@svitlo/engine/generation` with their TypeScript contracts.
 
 Every public subpath resolves to compiled `dist` output. Neither module imports
-application code, React, Next.js, or Material UI. Existing Playground deep imports
-are temporary compatibility re-exports, not separate implementations.
+application code, React, Next.js, or Material UI. Playground imports Engine features directly from the public package entrypoints; no legacy compatibility re-exports are maintained.
 
 Run `npm run build --workspace @svitlo/engine`, `npm run typecheck --workspace
 @svitlo/engine`, and `npm run test --workspace @svitlo/engine` to verify the

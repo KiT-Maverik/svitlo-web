@@ -51,7 +51,7 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 
 - Built and typed npm package `@svitlo/engine` now owns localization definitions, localized-path generation, and Skill/SkillGroup/SkillDomain authoring validations.
 - `@svitlo/playground` consumes the compiled package via a real npm dependency and public `exports`.
-- Legacy files under Playground contain compatibility re-exports, not duplicate implementations. They are removed after downstream import migration, separately from behavior changes.
+- Historic intermediate re-exports were removed during the subsequent direct-import migration; consumers now use Engine public entrypoints.
 - No app imports from `shared/engine/src/`. No engine imports from Playground, React, or Next.js.
 - Builders for lessons/resources/questions, text resources, dynamic question and assessment method configs remain in Playground until their contract dependencies are made portable. No React hooks or UI-only utilities were found in this first batch; `ui-kit` is untouched.
 - Registry extraction remains an explicit later phase; `private: true` intentionally prevents accidental publication.
@@ -59,8 +59,8 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 ## Phase 04 — Shared content contracts (complete)
 
 - Engine is the canonical owner of content contracts for Resource, Lesson, Question, Quiz, Assessment Method, Disability and shared collection utilities.
-- The stable set of 16 Assessment Method UUIDs now belongs to Engine, not a mathematics-specific path. The original path re-exports the registry for compatibility.
-- Playground's previous content-contract files re-export **types only**, preserving old imports without duplicating declarations.
+- The stable set of 16 Assessment Method UUIDs belongs to Engine, not a mathematics-specific path. No compatibility registry is retained.
+- Playground's previous content-contract wrappers have been removed. Callers import canonical contracts directly from Engine.
 - The Engine remains free of React and Next.js; scene `component` and lesson section `icon` are extensible, renderer-specific values typed as `unknown` by default. Frontend renderers supply/narrow their UI representation.
 - Public package API: `@svitlo/engine/content`. Future textbooks can extend base contracts using TypeScript intersections or generic parameters without editing Engine.
 
