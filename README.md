@@ -2,7 +2,7 @@
 
 The current Next.js Playground application lives at `apps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Other root build, test, lint and Storybook scripts delegate to the Playground workspace.
 
-Engine is now an independently compiled workspace package. The Math and Server workspaces remain placeholders; UI Kit now owns shared React/MUI components. See `studio/Monorepo Migration.md`.
+Engine is now an independently compiled workspace package. The Server workspace remains a placeholder; Math is now a standalone textbook app and UI Kit owns reusable React/MUI components. See `studio/Monorepo Migration.md`.
 
 > Legacy documentation below uses paths relative to Playground. A reference to `src/` now means `apps/playground/src/`.
 
