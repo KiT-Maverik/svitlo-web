@@ -1,30 +1,26 @@
 # SkillDomain
 
-**Entity category:** subject-wide competency domain.
+**Entity category:** subject-wide catalog domain.
 
-A **SkillDomain** is a broad, distinct area of knowledge and practice within one Subject. It organizes semantically related SkillGroups. A Subject (for example, Mathematics) is the context of the catalog; a separate Subject runtime type is not required by this editorial model.
+A **SkillDomain** is a broad, recognizable subject area containing semantically related SkillGroups. It organizes a catalog; it does not represent a course, educational level, learning sequence, assessment, or learner mastery record.
 
-## SEMANTIC RESPONSIBILITY
+## SEMANTIC ROLE
 
-- Name one recognizable discipline-level area and explain its scope in clear, substantive terms.
-- Organize coherent SkillGroups; do not use a Domain as an individual, separately measured outcome.
-- Define meaningful boundaries from neighboring Domains, including treatment of cross-disciplinary or cross-cutting competencies.
-- Keep each Skill in **one primary Group** in the taxonomy; cross-cutting reuse belongs in external mappings.
-- Allow one Group in a Domain when substantively correct. No target number or forced symmetry exists.
+- Choose a concise name that identifies a distinct field within the subject.
+- Give it a short editorial Description of the area it covers.
+- Distinguish neighboring Domains by meaningful subject boundaries, without forcing uniform sizes.
+- Keep the Domain's membership and the hierarchy of Groups/Skills in the **taxonomy**, not in lists inside individual Markdown Definitions.
+- Do not attach grades, prerequisites, teaching plans, scores, progress, or evaluation criteria to this entity.
 
-## WHAT IT IS NOT
+A generated Domain Definition is intentionally minimal: title, editorial Status, short Description, and Code link. **It must not enumerate its SkillGroups.**
 
-A Domain is **not** a school grade, course module, chronological learning phase, topic sequence, prerequisite graph, UI navigation state, mastery percentage, or assessment policy. Its position in a taxonomy does not establish when anything must be taught or whether a learner has mastered every descendant.
+## RUNTIME CONTRACT AND ARTIFACTS
 
-## EDITORIAL REVIEW
+The current shared-engine `SkillDomain_Config` contains `id`, localized `name`, and `groupIds` (explicit references to child Group IDs). These technical relationships belong to source files. The contract currently has no `description` property; the Markdown description is editorial text.
 
-Check that the Domain is neither so broad that it hides incompatible areas nor so narrow that it is just a SkillGroup renamed. Enumerations and conjunctions in its title invite review of whether separate Domains are appropriate; they do not automatically require splitting.
+- **Definition:** the Domain's concise Markdown catalog description.
+- **Code:** a separate verified application implementation file.
 
-## ARTIFACTS
-
-- **Definition:** a Markdown document explaining this Domain's semantics and boundaries.
-- **Code:** a separate, verified source file representing this Domain in the application.
-
-The two artifacts are **independent links**. A Definition does not prove Code exists; Code does not replace the Definition. In inventories, missing targets use exactly `[Not implemented](#)`. UUIDs and other runtime identifiers belong to the code layer, not this definition.
+Neither artifact replaces the other. Use `[Not implemented](#)` for a missing target.
 
 Related entities: [SkillGroup](./skill-group.md), [Skill](./skill.md).
