@@ -4,7 +4,7 @@ Date: 2026-10-28
 
 A country-independent first-stage mathematics curriculum organized around observable competencies rather than a specific national syllabus or timetable. It builds number sense, early operations, mathematical language, geometry, measurement, and reasoning through progressively more abstract representations.
 
-The plan establishes a pedagogical sequence, not fixed instructional hours or finalized lesson experiences. Module and lesson files provide the linked source material; the Skills Taxonomy owns the competency definitions.
+The plan establishes a pedagogical sequence, not fixed instructional hours or finalized lesson experiences. Module and lesson files provide the linked source material; the approved [Skills Taxonomy](../skills/taxonomy.md) owns the competency hierarchy and its separate editorial Definition and Code links.
 
 ## TARGET AUDIENCE
 
@@ -28,7 +28,7 @@ Prerequisites:
 Scope: Concrete number sense and basic arithmetic within 20; simple spatial, measurement, time, money, and data contexts. Recurring practice may revisit the same skill across lessons.
 Exclusions: Counting to 100 as an exit requirement, multi-step word problems, formal algebra, fixed national standards, and prescribed lesson hours.
 Progression: Module and lesson order is a pedagogical proposal; check prerequisite sequencing before publishing, especially the introduction of subtraction relative to early facts within 10.
-Dependencies: Skills are linked to their existing `*.data.ts` definitions. File presence establishes traceability, not proof of runtime registration; complete Learning Briefs, assessments, and UI specifications belong to later stages.
+Dependencies: Skills are linked to their existing `*.data.ts` Code implementations. Editorial Definitions are linked separately in the [Skills Taxonomy](../skills/taxonomy.md). File presence establishes traceability, not proof of runtime registration; complete Learning Briefs, assessments, and UI specifications belong to later stages.
 
 ## LEARNING PLAN
 
