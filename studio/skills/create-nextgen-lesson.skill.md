@@ -60,6 +60,8 @@ The following are **direct links to the current repository's source of truth**. 
 | `video` | Short demonstrations, recordings and media requiring pause/captions/transcripts | **Typed resource/builder available; generic Section renderer does not currently handle it**; verify actual player support |
 | `youtube` | Externally hosted video — conceptual/embed option | The literal occurs in `Resource_Type` but is **not in the current `Resource_Config` union or generic renderer**. Treat it as **not implemented** for authoring |
 
+**Static `image` authoring rule:** For each proposed `image` resource, provide an **Image prompt** in one or two clear sentences: what the image should show, its essential objects, and any spatial/action relationships needed to explain the concept. Add detail only if it is instructionally or factually necessary; do not produce long artistic prompts, model parameters or exhaustive styling instructions. Alongside (not inside) the prompt, note the **educational purpose**, **accessibility/alt-text intent**, and **asset status: pending editor/media production**. Do **not** generate the image, invent its URL/path, or claim it has been produced. This is a screenplay/media brief, **not** a new `Resource_Config` field. Classify a generic Section `image` block as **typed-only** until its actual renderer is verified; distinguish a static image from a custom interactive `scene` requiring its own specification.
+
 **Renderer caveat:** The currently inspected generic `LessonSectionContent` handles **only `text`, `markdown` and `scene`**; unsupported kinds cause an error. `buildResource` can build other typed resources without automatically making them renderable. Existing nested widgets may render image/audio/video in their own slots, which is **not** general-section support.
 
 **Section / exercise caveat:** `Quiz_Config` is a distinct section contract. The current engine lists **nine QuestionType values** (`select-one-answer`, `select-multiple-answers`, `match-blocks`, `answer-with-text`, `answer-with-number`, `order-sequence`, `build-answer-with-blocks`, `fill-blanks-with-blocks`, `fill-blanks-with-text`), but the current `toQuestionWidgets` adapter supports **only `select-one-answer`** in the inspected Lesson UI. A `flashcardConfig` exists on Question data, **not** as proof of a first-class Flashcard Section. Standalone flashcard, coding, dynamic generation or other Sections require real integration verification.
@@ -201,6 +203,7 @@ Program dependence: None
   2. ...
 - Core explanation and learner-facing text:
 - Illustration / model / experiment / interaction:
+- Image brief(s), **only when `image` blocks are proposed**: `Image prompt: <one or two short sentences describing the necessary scene/objects and relationships>`; `Educational purpose: <why this visual helps>`; `Accessibility/alt-text intent: <meaning to convey without the image>`; `Asset status: pending editor/media production`.
 - Learner action, observations and explanatory feedback:
 - Navigation and transition:
 - Accessibility, locale and RTL requirements:
@@ -288,6 +291,7 @@ including LTR, RTL, reduced motion and assistive-technology use>
 - [ ] Activity choices make pedagogical sense: cognitive load, meaningful retrieval/feedback, worked examples and transfer are considered without compulsory gimmicks.
 - [ ] Each custom Scene has an independent **full specification**, with observable behavior, accurate model, states, learner actions, accessible alternatives and acceptance scenarios.
 - [ ] The Lesson Script contains a **planned, concise Notes/unlock plan** for recall, without reproducing entire Sections or claiming Note APIs/sync exist.
+- [ ] Every proposed `image` resource has a concise scene/object Image prompt, separate learning purpose and accessibility intent, and an explicit pending-asset status. No image was generated and no nonexistent asset URL/path or renderer was presented as implemented.
 - [ ] Every specialized or unsupported experience has an honest feasibility classification and clear engineering dependency; no imaginary API/schema.
 - [ ] Accessibility, localization, responsive/mobile/low-end delivery, reduced motion, LTR/RTL, cultural adaptation and **complete offline lesson delivery** were planned. Any case requiring an actual sacrifice of functionality to support weak devices was escalated; no content was silently dropped.
 - [ ] Quiz/Question scoring, correct-answer validity, mastery and retry policies are left to **Assessment Architect**, not silently decided by Screenwriter.
