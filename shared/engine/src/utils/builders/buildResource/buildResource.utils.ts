@@ -1,6 +1,6 @@
 import type { LanguageCode, Locale } from '../../../types/languages';
-import type { DeepReadonly } from '../../../types/readonly.types';
-import type { Resource, Resource_Config, TextResource, TextResource_Config } from '../../../content';
+import type { DeepReadonly } from '@svitlo/contracts/content';
+import type { Resource, Resource_Config, TextResource, TextResource_Config } from '@svitlo/contracts/content';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
 
 function localized(values: Readonly<Partial<Record<Locale, string>>>, locale: Locale): string {

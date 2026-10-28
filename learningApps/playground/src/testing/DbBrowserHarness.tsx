@@ -16,8 +16,8 @@ import {
   listQuizStates,
   saveQuizState,
   updateQuizState,
-} from '@/db';
-import { openDatabase } from '@/db/utils/openDatabase/openDatabase.utils';
+} from '@svitlo/indexdb';
+import { openDatabase } from '@svitlo/indexdb/utils';
 import type { ControllerCommand, DatabaseInspection } from './db-browser-commands';
 
 declare global {

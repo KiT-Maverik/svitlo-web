@@ -3,8 +3,8 @@ import { defineConfig, devices } from '@playwright/test';
 const port = process.env.PLAYWRIGHT_DB_PORT ?? '3107';
 
 export default defineConfig({
-  testDir: './src/db/controllers',
-  testMatch: '**/*.e2e.spec.ts',
+  testDir: './src/testing',
+  testMatch: '**/controllers.e2e.spec.ts',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,

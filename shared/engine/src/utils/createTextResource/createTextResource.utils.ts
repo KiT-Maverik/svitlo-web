@@ -4,7 +4,7 @@ import type {
   TextResource_ChosenLanguages_Config,
   TextResource_AllLocales_Config,
   TextResource_ChosenLocales_Config,
-} from '../../content';
+} from '@svitlo/contracts/content';
 
 type LocaleSelection =
   | { only: readonly [LanguageCode, ...LanguageCode[]]; include?: never; exclude?: never }
