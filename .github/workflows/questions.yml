@@ -42,5 +42,5 @@ jobs:
         with:
           name: questions-test-results
           path: |
-            apps/playground/test-results/
-            apps/textbooks/math/test-results/
+            learningApps/playground/test-results/
+            learningApps/math/test-results/

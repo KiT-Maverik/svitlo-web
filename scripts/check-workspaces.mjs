@@ -9,11 +9,11 @@ const expected = [
     "name": "@svitlo/server"
   },
   {
-    "path": "apps/textbooks/math",
+    "path": "learningApps/math",
     "name": "@svitlo/math"
   },
   {
-    "path": "apps/playground",
+    "path": "learningApps/playground",
     "name": "@svitlo/playground"
   },
   {
@@ -27,7 +27,7 @@ const expected = [
 ];
 const manifest = readJson('package.json');
 const lock = readJson('package-lock.json');
-const patterns = ["backend/*","apps/textbooks/*","apps/playground","shared/*"];
+const patterns = ["backend/*","learningApps/*","shared/*"];
 
 function assert(ok, description) {
   if (!ok) throw new Error(description);

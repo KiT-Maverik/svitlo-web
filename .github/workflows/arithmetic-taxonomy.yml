@@ -2,10 +2,10 @@ name: Arithmetic taxonomy quality
 on:
   pull_request:
     paths:
-      - 'apps/textbooks/math/src/math/skillsTaxonomy/arithmetic/**'
-      - 'apps/textbooks/math/src/math/skillsTaxonomy/UUID-MIGRATION.md'
-      - 'apps/textbooks/math/src/math/skills-inventory.md'
-      - 'apps/textbooks/math/src/utils/builders/config/arithmeticTaxonomy.spec.ts'
+      - 'learningApps/math/src/math/skillsTaxonomy/arithmetic/**'
+      - 'learningApps/math/src/math/skillsTaxonomy/UUID-MIGRATION.md'
+      - 'learningApps/math/src/math/skills-inventory.md'
+      - 'learningApps/math/src/utils/builders/config/arithmeticTaxonomy.spec.ts'
       - 'shared/engine/**'
       - '.github/workflows/arithmetic-taxonomy.yml'
   workflow_dispatch:

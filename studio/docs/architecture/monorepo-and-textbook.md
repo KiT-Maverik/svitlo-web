@@ -48,7 +48,7 @@ Svitlo is a constellation of **independently buildable and extractable applicati
 | `scripts/` | Root-level tooling, workspace audits and package-boundary verification | No |
 | `studio/` | Human/AI architectural, editorial, workflow and review documentation | No; documentation is not a runtime dependency |
 
-**Workspace migration still requires verification:** The latest `main` moved Playground and Math into `learningApps/`, but the checked-in [root `package.json`](../../../package.json) still declares the older `backend/*`, `apps/textbooks/*`, `apps/playground`, `shared/*` workspace patterns, and the lockfile/workspace checks may also reference those paths. These are **stale configuration paths**, not evidence that `learningApps/` is registered correctly. Reconcile manifests, lockfile and validation scripts in the owning monorepo migration before claiming builds or CI are green. The intended packages remain `@svitlo/server`, `@svitlo/math`, `@svitlo/playground`, `@svitlo/engine` and `@svitlo/ui-kit`.
+**Current workspace patterns** in [root `package.json`](../../../package.json) and the corresponding lockfile: `backend/*`, `learningApps/*`, `shared/*`. The package/workspace validators and applicable CI path references were updated after the move from `apps/`. The inspected workspace packages are `@svitlo/server`, `@svitlo/math`, `@svitlo/playground`, `@svitlo/engine` and `@svitlo/ui-kit`. **Do not infer green CI from a path update alone:** run package checks, builds and tests on the new commit.
 
 ## 3. Package ownership and dependency graph
 

@@ -1,10 +1,10 @@
 # Svitlo monorepo
 
-The current Next.js Playground application lives at `apps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Root application checks target Playground/Math; Storybook is owned by UI Kit and no longer reads application sources.
+The Next.js Playground application now lives at `learningApps/playground/` with its source unchanged. Run `npm ci` and `npm run dev` from the root, or `npm run dev --workspace @svitlo/playground`. Root application checks target Playground/Math; Storybook is owned by UI Kit and no longer reads application sources.
 
 Engine is now an independently compiled workspace package. The Server workspace remains a placeholder; Math is now a standalone textbook app and UI Kit owns reusable React/MUI components. See `studio/Monorepo Migration.md`.
 
-> Legacy documentation below uses paths relative to Playground. A reference to `src/` now means `apps/playground/src/`.
+> Legacy documentation below uses paths relative to Playground. A reference to `src/` now means `learningApps/playground/src/`.
 
 ---
 
