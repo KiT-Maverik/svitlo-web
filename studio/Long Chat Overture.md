@@ -126,10 +126,10 @@ Program може декларативно описувати правила: «�
 
 **Не копіювати сюди повну специфікацію.** Для наступного агента канонічні джерела:
 
-- [Creating Skills](./Creating%20Skills.md) — правила та файловий контракт;
-- [Skills Inventory](../math/skills-inventory.md) — **актуальний статус кожної навички**;
-- [Taxonomy Review](../math/skills-taxonomy-review.md) — неоднозначності;
-- [UUID migration map](../math/skillsTaxonomy/UUID-MIGRATION.md) — зіставлення історичних позначень із UUID.
+- [Skill entity rules](./docs/entities/skill.md) та [Implement Skill Code](./skills/implement-skill-code.skill.md) — правила сутностей, UUID та файловий контракт;
+- [Skills Inventory](../frontend/playground/src/math/skills-inventory.md) — **актуальний статус кожної навички**;
+- [Taxonomy Review](../frontend/playground/src/math/skills-taxonomy-review.md) — неоднозначності;
+- [UUID migration map](../frontend/playground/src/math/skillsTaxonomy/UUID-MIGRATION.md) — зіставлення історичних позначень із UUID.
 
 ## 6. Questions, Flashcards, Practice і генерація задач
 
@@ -180,7 +180,7 @@ Program може декларативно описувати правила: «�
 2. Поточний Lesson має **array секцій**, хоча обговорювали об’єкт зі стабільними ключами. Не міняти публічний API потай під час іншого рефакторингу.
 3. **Слоти та події — два різні механізми.** Статична вставка не замінює реакцію на `question.answered`/retry; реакція не дає права підмінювати оцінювання.
 4. **Педагогічний прогрес ≠ сюжетний прогрес ≠ оцінка тесту ≠ Skill mastery.**
-5. Зміни в **Skills Taxonomy** мають проходити за [Creating Skills](./Creating%20Skills.md), а реальну завершеність дивитися в [Inventory](../math/skills-inventory.md). UUID-посилання не є готовими Skill-файлами.
+5. Зміни в **Skills Taxonomy** мають проходити за [Skill entity rules](./docs/entities/skill.md) та [Create Skills Taxonomy Skill](./skills/create-skills-taxonomy.skill.md), а реальну завершеність дивитися в [Inventory](../frontend/playground/src/math/skills-inventory.md). UUID-посилання не є готовими Skill-файлами.
 6. **Сумнівні Skill** (об’єднання кількох компетенцій, дублікати, невизначена семантика) — винести на рев’ю, не переписувати тихо.
 7. При продовженні роботи спочатку подивитися **актуальний HEAD і CI**; назви PR/демо з попередніх бесід не гарантують поточного стану гілки.
 
@@ -196,17 +196,17 @@ Program може декларативно описувати правила: «�
 
 ## 12. Орієнтири в репозиторії
 
-- [Creating Skills](./Creating%20Skills.md) — затверджені правила Skill/Domain/Group, UUID, локалізації та level-specific exports.
-- [Skills Inventory](../math/skills-inventory.md) — повна методична таксономія, статуси `Implemented`.
-- [Skills Taxonomy Review](../math/skills-taxonomy-review.md) — результати семантичного рев’ю.
-- [UUID mapping](../math/skillsTaxonomy/UUID-MIGRATION.md) — історичні редакційні ID → статичні UUID.
-- [Lesson types](../src/types/content/lesson.types.ts) — **поточні** контракти Lesson та LessonState.
-- [Lesson assembler](../src/components/pages/Lesson/Lesson.tsx) — поточна data-driven реалізація.
-- [How Light Moves Lesson](../src/content/howLightMoves/howLightMoves.data.ts) — реальний конфіг.
-- [Taxonomy index regression test](../src/utils/builders/config/skillTaxonomyIndex.spec.ts) — перевірка ізоляції експортів.
+- [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — актуальні правила сутностей; [Implement Skill Code](./skills/implement-skill-code.skill.md) — UUID, локалізація та рівневі експорти.
+- [Skills Inventory](../frontend/playground/src/math/skills-inventory.md) — повна методична таксономія, статуси `Implemented`.
+- [Skills Taxonomy Review](../frontend/playground/src/math/skills-taxonomy-review.md) — результати семантичного рев’ю.
+- [UUID mapping](../frontend/playground/src/math/skillsTaxonomy/UUID-MIGRATION.md) — історичні редакційні ID → статичні UUID.
+- [Lesson types](../frontend/playground/src/types/content/lesson.types.ts) — **поточні** контракти Lesson та LessonState.
+- [Lesson assembler](../frontend/playground/src/components/pages/Lesson/Lesson.tsx) — поточна data-driven реалізація.
+- [How Light Moves Lesson](../frontend/playground/src/content/howLightMoves/howLightMoves.data.ts) — реальний конфіг.
+- [Taxonomy index regression test](../frontend/playground/src/utils/builders/config/skillTaxonomyIndex.spec.ts) — перевірка ізоляції експортів.
 
 ---
 
 ### Одним абзацом для нового AI-агента
 
-«Світло» будується як міжнародна безкоштовна бібліотека повторно використовуваних інтерактивних уроків. **Lesson** — автономний перевірюваний навчальний контент; **Program** (поки концепт) — сюжет, маскот, мандрівка й правила навчального маршруту. Потрібні **два способи програмного розширення уроку**: статичні вставки в адресні секції/слоти та динамічні реакції на фактичні події (`question.*`, `section.*`, `lesson.*`). Skill — стабільна, окремо оцінювана компетенція; оцінки, завдання, прогрес і сюжет — окремі шари. Код у гілці `math` уже містить data-driven Lesson та частину локалізованого UUID-based Skills Taxonomy, **але не слід вважати Program Runtime або event/injection API реалізованими**. Перед будь-якою задачею звіряй `Experience/Creating Skills.md`, інвентар зі статусами та поточні TypeScript-контракти.
+«Світло» будується як міжнародна безкоштовна бібліотека повторно використовуваних інтерактивних уроків. **Lesson** — автономний перевірюваний навчальний контент; **Program** (поки концепт) — сюжет, маскот, мандрівка й правила навчального маршруту. Потрібні **два способи програмного розширення уроку**: статичні вставки в адресні секції/слоти та динамічні реакції на фактичні події (`question.*`, `section.*`, `lesson.*`). Skill — стабільна, окремо оцінювана компетенція; оцінки, завдання, прогрес і сюжет — окремі шари. Код у гілці `math` уже містить data-driven Lesson та частину локалізованого UUID-based Skills Taxonomy, **але не слід вважати Program Runtime або event/injection API реалізованими**. Перед будь-якою задачею звіряй `studio/docs/entities/skill.md`, відповідний `studio/skills/*.skill.md`, поточний інвентар і чинні TypeScript-контракти. Історичні кількості реалізованих Skill у цьому документі є зрізом на дату його створення.
