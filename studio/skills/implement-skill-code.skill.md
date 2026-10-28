@@ -24,7 +24,7 @@
 
 **Distinguish the two paths:** playground's `src/math/skillsTaxonomy/` is a **historical working reference**, not the destination for a new textbook. The canonical destination for this Skill is **`<PackageRoot>/src/data/skillsTaxonomy/`** (camelCase). Do not copy a stale playground import alias or modify the playground merely because it contains the examples. If a current shared-engine contract differs from a playground example, the current contract wins; explain a material incompatibility.
 
-The old [Creating Skills](../Creating%20Skills.md) is retained for historical background. Its paths, counts, and language snapshots do not override the contracts and target directory above.
+Current contracts and the canonical [Skill](../docs/entities/skill.md), [SkillGroup](../docs/entities/skill-group.md) and [SkillDomain](../docs/entities/skill-domain.md) rules govern this workflow. The historical conventions have been consolidated here; do not reintroduce obsolete directory layouts or locale counts.
 
 ## 1. STRICT TYPE AND ENTITY CONTRACT
 
@@ -42,7 +42,7 @@ The current contracts do **not** contain `description`. The Description in Markd
 - Respect the hierarchy: a Domain references only its Groups through `groupIds`; a Group references only its Skills through `skillIds`; a Skill references no children.
 - Use stable, **literal UUID values**, established at authoring time in `*.ids.ts` files. Reuse existing UUIDs for existing identities. Generate fresh collision-free UUIDs **once** for genuinely new approved entities; never generate UUIDs during application runtime, derive them from paths, or reassign IDs during a rename/move.
 - Build explicit `as const` maps of child IDs and preserve stable meaning. Refer to **ID-only modules**, never child `*.data.ts` modules, when establishing relationships.
-- Validate that every ID reference names a real intended immediate child, with no missing or duplicate children or IDs. Preserve editorial order where it matters for consumer presentation, without treating directory order as a learning prerequisite.
+- Cross-check that every ID reference represents the intended immediate child and that there are no missing, duplicated, or unintended entities. **The current builders validate UUID syntax, nonempty child maps, and duplicate values within each map; they do not prove that a UUID belongs to the correct entity type, exists in a registry, or is globally unique.** Complete referential/type integrity is a separate **future build-time validation** responsibility. Use available static/file-level cross-checks now, but never claim the current builders enforce a full taxonomy graph.
 
 ## 2. REQUIRED DESTINATION AND FILE HIERARCHY
 
@@ -129,13 +129,13 @@ Use the repo's configured string quote preference independently of the **no-quot
 
 ## 5. REQUIRED IMPLEMENTATION ORDER
 
-1. **Inspect and reconcile:** read target taxonomy, approved Definitions, type/builder contracts, actual locales, reference Mathematics tree and existing target code. Produce an exact in-scope file/ID plan. Never mutate another textbook to satisfy this one.
+1. **Inspect and reconcile:** read the approved editorial taxonomy, Definitions, type/builder contracts, **full current supported language set**, reference Mathematics tree and existing target code. Produce an exact in-scope file/ID plan. The taxonomy is a **temporary editorial authoring reference**, not a runtime registry; do not couple the application to reading it at runtime. Never mutate another textbook to satisfy this one.
 2. **Reserve identity:** create/reuse Skill UUID literals in the Group's `skills/index.ids.ts`, Group UUID in `<group>.ids.ts`, Domain UUID in `<domain>.ids.ts`. Check uniqueness against the target package; preserve established identifiers.
 3. **Implement Skill Data:** write one `<skill>.data.ts` per approved Skill with `buildSkillConfig`, its ID-only import, and full `name` dictionary. Update the local `skills/index.data.ts` with **only the Group's Skill Data**.
 4. **Implement Group Data:** create/update `<group>.data.ts` with `buildSkillGroupConfig`, full `name`, own UUID, and exact `skillIds` from its `skills/index.ids.ts`. Maintain `<group>/index.data.ts` as **Group Data only** and `<group>/index.ids.ts` as the **Group UUID-only** re-export.
 5. **Implement Domain Data:** create/update `<domain>/index.ids.ts` with the direct Groups' UUIDs only; build `<domain>.data.ts` using `buildSkillDomainConfig` with full `name`, own UUID, and exact `groupIds`. Keep `<domain>/index.data.ts` **Domain Data only**.
 6. **Complete root indexes:** update root `index.data.ts` to export the selected Domain Data entries and root `index.ids.ts` to export Domain ID dictionaries. Do not aggregate nested Group/Skill Data into the root.
-7. **Verify reference integrity:** every Skill belongs to the correct Group and every Group to the correct Domain; ID references resolve one-to-one; no duplicate or unused IDs, wrong-level exports, circular dependencies, dynamic UUID generation, or missing translations.
+7. **Verify what is currently possible:** cross-check taxonomy names against source paths and immediate-child ID maps, duplicate/missing IDs, wrong-level exports, circular dependencies, dynamic UUID generation, and translations. Report any unverified cross-file identity/registration requirements as **pending build-time integrity checks**; do not misattribute them to current TypeScript builders.
 8. **Update editorial Code links only after implementation:** in `<PackageRoot>/docs/skills/taxonomy.md`, update the **Code** link for each implemented entity to the verified actual `*.data.ts` file, relative to the taxonomy document. Recompute only **Code files** counts and preserve all Definition links/counts. Also update the affected entity's Markdown Definition `Code` link, resolving relative to that Definition file. Never replace the Definition link with Code.
 9. **Stop:** report only the bounded task, validations, and anything incomplete. Do not proceed to unrelated Domains, lessons, question generation, or assessment.
 
@@ -147,11 +147,11 @@ Before reporting success, run the target package's available checks and add/fix 
 
 - **Type safety:** `Skill_Config` / `SkillGroup_Config` / `SkillDomain_Config` and builders accept all new configs; no unsupported `description` or invented fields; no TypeScript errors.
 - **Localization:** each `name` has **exactly** the current required language-code keys (two-letter unquoted wherever legal), no gaps, duplicates, unexpected keys, empty/placeholder/copy-pasted language values.
-- **Identity:** UUID syntax and stability; unique IDs; `skillIds` / `groupIds` contain real immediate children only with no missing, wrong-type, or duplicate references.
+- **Identity:** UUID syntax and stability; check uniqueness and immediate-child mappings against the in-scope files and approved hierarchy. The existing builders **cannot** resolve IDs to actual entity types/registrations; full repo-wide reference validation is deferred to a separate build-time script. Mark unverified items explicitly rather than claiming a builder-level guarantee.
 - **Data/IDs isolation:** `*.ids.ts` modules never import Data or builders; importing a parent Data config does not require importing child Data solely to access child IDs.
 - **Export boundaries:** root Data exports Domains only, Domain Data exports its own Domain only, Group Data exports its Group only, Skills Data exports only that Group's Skills. Verify no nested/re-exported Data from higher levels and no `export *`. Adapt the structural checks exemplified by `frontend/playground/src/utils/builders/config/skillTaxonomyIndex.spec.ts`.
 - **Topology:** physical paths and entries match the approved taxonomy, with no accidental duplicate or missing entities. All editorial Code links resolve to real files and counts reconcile; Definition links remain unchanged.
-- **Tests:** run applicable package TypeScript, lint, builder/registry, translation and index tests; cite exact commands/results. If tooling is unavailable, explicitly mark checks **not run**, never imply they passed.
+- **Tests:** run available package TypeScript, lint, builder, translation and index tests; cite commands/results. Run registry validation only if a real registry/test exists; `fileLocation` and global ID resolution remain separate planned infrastructure, not automatically finished by producing Data files. If tooling is unavailable, mark checks **not run**.
 
 ## RESULT / HANDOFF
 
@@ -164,4 +164,4 @@ Produce a reviewable code change that includes:
 5. **Updated Code links/counts** in `<PackageRoot>/docs/skills/taxonomy.md` and Code links in the corresponding Markdown Definitions, without overwriting the Definitions or their relationships.
 6. **Concise completion report:** implemented Domains/Groups/Skills counts, paths, preserved/new IDs, verification commands and outcomes, unresolved items, and any necessary explicit migration notes.
 
-**Scope boundary:** Do **not** move/copy the playground's Mathematics taxonomy into the new textbook automatically, change shared engine contracts, rewrite curriculum semantics, or refactor unrelated packages. The goal is that each textbook can be **extracted independently** with its own `src/data/skillsTaxonomy`, while depending only on explicit, reusable shared-engine contracts — no hidden coupling to another textbook's data tree.
+**Scope boundary:** Do **not** move/copy the playground's Mathematics taxonomy into the new textbook automatically, change shared engine contracts, rewrite curriculum semantics, build a cross-textbook Skill registry, or refactor unrelated packages. Cross-textbook Skill identity synchronization is **out of scope for now**. Each textbook stays independently extractable with its own `src/data/skillsTaxonomy`, depending only on explicit shared-engine contracts — no hidden coupling to another textbook's data tree.
