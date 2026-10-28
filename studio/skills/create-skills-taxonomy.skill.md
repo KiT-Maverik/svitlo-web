@@ -60,7 +60,7 @@ Write the artifact in the briefing's requested language. The following English t
 
 ## TAXONOMY TEMPLATE
 
-Use this **embedded template**. It is canonical; do not create a separate template document.
+Use this **embedded template**. Repeat the Domain, Group, and Skill blocks as needed, reconcile the counts, and replace only verified Definition/Code links. Do not create a separate template document or include authoring instructions in the generated taxonomy.
 
 ~~~md
 # %SUBJECT_NAME% — Skills Taxonomy
@@ -105,9 +105,6 @@ Code: [Not implemented](#)
 
 %SHORT_OBSERVABLE_SKILL_DESCRIPTION%
 
-> Agent note:
-> Repeat Skills, Groups, and Domains as required.
-> Replace each placeholder only with its own verified Definition or Code file link.
 ~~~
 
 ## RESULT
