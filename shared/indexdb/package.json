@@ -1,0 +1,71 @@
+{
+  "name": "@svitlo/indexdb",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./controllers": {
+      "types": "./dist/controllers.d.ts",
+      "default": "./dist/controllers.js"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "default": "./dist/utils.js"
+    },
+    "./schemas": {
+      "types": "./dist/schemas.d.ts",
+      "default": "./dist/schemas.js"
+    },
+    "./config": {
+      "types": "./dist/config.d.ts",
+      "default": "./dist/config.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/utils/**/*.js' .test-build/utils/*/*.spec.js .test-build/controllers/*/*/*.spec.js .test-build/controllers/__tests__/*.integration.test.js",
+    "test:db-utils": "tsc -p tsconfig.test.json && node --test .test-build/utils/*/*.spec.js",
+    "test:db-utils:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/utils/**/*.js' .test-build/utils/*/*.spec.js",
+    "test:db:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test .test-build/controllers/__tests__/*.integration.test.js",
+    "test:db-controllers-unit": "tsc -p tsconfig.test.json && node --test .test-build/controllers/*/*/*.spec.js",
+    "test:db-controllers-unit:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test .test-build/controllers/*/*/*.spec.js",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@svitlo/contracts": "0.0.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5",
+    "fake-indexeddb": "^6.2.6"
+  },
+  "typesVersions": {
+    "*": {
+      "controllers": [
+        "dist/controllers.d.ts"
+      ],
+      "utils": [
+        "dist/utils.d.ts"
+      ],
+      "schemas": [
+        "dist/schemas.d.ts"
+      ],
+      "config": [
+        "dist/config.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
+      ]
+    }
+  }
+}

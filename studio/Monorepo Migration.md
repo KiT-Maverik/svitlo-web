@@ -120,3 +120,7 @@ Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/
 - Flag assets are served from the UI Kit's own `assets/flags`. Storybook tooling currently retains the existing Next.js Storybook framework as a **development-only** dependency; UI Kit's production API and compiled artifacts must not import Next.js.
 - Any future stories needing page-like state must create fixtures under UI Kit's own `.storybook/fixtures`, never depend on Playground/Math source or curriculum.
 - The Storybook build is verified by the dedicated `UI Kit Storybook` GitHub Actions workflow.
+
+## Stage 4 — IndexedDB package
+
+The canonical browser persistence implementation is `shared/indexdb` (`@svitlo/indexdb`), with public controllers, utils, schemas and configuration exports. Both `learningApps/math` and `learningApps/playground` consume the compiled package instead of owning `src/db`. The database name `svitlo-progress`, schema version `1`, store keys and indexes are unchanged. Browser harnesses remain in each app's `src/testing` pending Stage 5 centralization. If standalone apps share one browser origin, identical database names continue to share the same storage scope; extraction does not change that behavior.

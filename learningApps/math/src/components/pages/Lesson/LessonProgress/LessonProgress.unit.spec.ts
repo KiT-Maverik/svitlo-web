@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-vi.mock('@/db', () => ({
+vi.mock('@svitlo/indexdb', () => ({
   listLessonStates: vi.fn().mockRejectedValue(new Error('IndexedDB unavailable')),
   createLessonState: vi.fn(),
   getQuizState: vi.fn(),

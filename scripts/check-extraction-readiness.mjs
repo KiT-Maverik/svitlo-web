@@ -8,6 +8,7 @@ const builtins = new Set(builtinModules.map(name => name.replace(/^node:/, '')))
 const workspaces = [
   ['shared/contracts', readJson('shared/contracts/package.json')],
   ['shared/engine', readJson('shared/engine/package.json')],
+  ['shared/indexdb', readJson('shared/indexdb/package.json')],
   ['shared/ui-kit', readJson('shared/ui-kit/package.json')],
   ['learningApps/playground', readJson('learningApps/playground/package.json')],
   ['learningApps/math', readJson('learningApps/math/package.json')],
