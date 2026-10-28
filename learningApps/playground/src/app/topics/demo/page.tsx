@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 import Lesson from '@/components/pages/Lesson/Lesson';
 import { resolveLocale } from '@/i18n/resolveLocale';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { demoLessonConfig, demoLessonCatalog } from '@/fixtures/demoLesson';
+import { demoLessonConfig, demoLessonCatalog } from '@/data/demoLesson/demoLesson';
 import { buildTextResource } from '@svitlo/engine/builders';
 
 export async function generateMetadata({ searchParams }: PageProps<'/topics/demo'>): Promise<Metadata> {

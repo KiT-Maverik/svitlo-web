@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { isValidElement, type ReactElement } from 'react';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
 import LessonLearningLayout from '@/components/layout/LearningLayout/LearningLayout';
-import { demoLessonConfig, demoLessonCatalog, demoQuizConfig } from '@/fixtures/demoLesson';
+import { demoLessonConfig, demoLessonCatalog, demoQuizConfig } from '@/data/demoLesson/demoLesson';
 import { buildLesson } from '@svitlo/engine/builders';
 import type { Lesson_Config } from '@svitlo/engine/content';
 import Lesson from './Lesson';

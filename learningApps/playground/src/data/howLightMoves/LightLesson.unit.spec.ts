@@ -7,10 +7,10 @@ import { howLightMovesCatalog } from '@/data/howLightMoves/howLightMoves.catalog
 import { quiz_Quiz_Data } from '@/data/howLightMoves/sections/quiz/index.data';
 import { buildLesson } from '@svitlo/engine/builders';
 import type { Lesson_Config } from '@svitlo/engine/content';
-import Lesson from './Lesson';
-import LessonClient from './LessonClient/LessonClient';
-import { LessonProgressProvider } from './LessonProgress/LessonProgress';
-import { SceneLocaleProvider } from './SceneLocaleContext';
+import Lesson from '@/components/pages/Lesson/Lesson';
+import LessonClient from '@/components/pages/Lesson/LessonClient/LessonClient';
+import { LessonProgressProvider } from '@/components/pages/Lesson/LessonProgress/LessonProgress';
+import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
 
 function onlyChild(parent: ReactElement): ReactElement {
   const value = (parent.props as { children: unknown }).children;

@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { toQuestionWidgets } from './adapters/toQuestionWidgets';
+import { toQuestionWidgets } from '@/components/pages/Lesson/adapters/toQuestionWidgets';
 import { quiz_Quiz_Data } from '@/data/howLightMoves/sections/quiz/index.data';
 import { buildQuiz } from '@svitlo/engine/builders';
 
