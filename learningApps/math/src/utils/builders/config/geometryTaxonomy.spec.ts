@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src', 'math');
+const root = join(process.cwd(), 'src', 'data');
 const taxonomy = join(root, 'skillsTaxonomy');
 const geometry = join(taxonomy, 'geometry');
 const groups = {

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { toQuestionWidgets } from './adapters/toQuestionWidgets';
-import { quiz_Quiz_Data } from '@/content/howLightMoves/sections/quiz/index.data';
+import { quiz_Quiz_Data } from '@/data/howLightMoves/sections/quiz/index.data';
 import { buildQuiz } from '@svitlo/engine/builders';
 
 const lightQuestions = toQuestionWidgets(buildQuiz(quiz_Quiz_Data, 'uk-UA'));

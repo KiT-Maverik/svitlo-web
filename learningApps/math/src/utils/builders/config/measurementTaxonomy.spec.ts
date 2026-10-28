@@ -5,9 +5,9 @@ import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(root, 'measurement');
-const inventory = readFileSync(join(process.cwd(), 'src', 'math', 'skills-inventory.md'), 'utf8');
+const inventory = readFileSync(join(process.cwd(), 'src', 'data', 'skills-inventory.md'), 'utf8');
 const migration = readFileSync(join(root, 'UUID-MIGRATION.md'), 'utf8');
 const locales = DEFAULT_SUPPORTED_LANGUAGES.map(item => item.language);
 const names = {

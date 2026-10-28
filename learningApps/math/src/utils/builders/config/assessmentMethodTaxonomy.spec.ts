@@ -7,7 +7,7 @@ import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
 import * as methods from '../../../math/assessmentMethodTaxonomy/index.data';
 import { buildAssessmentMethodConfig } from '@svitlo/engine/builders';
 
-const directory = join(process.cwd(), 'src', 'math', 'assessmentMethodTaxonomy');
+const directory = join(process.cwd(), 'src', 'data', 'assessmentMethodTaxonomy');
 const ids = Object.values(assessmentMethods_AssessmentMethod_Ids);
 const configs = Object.values(methods);
 

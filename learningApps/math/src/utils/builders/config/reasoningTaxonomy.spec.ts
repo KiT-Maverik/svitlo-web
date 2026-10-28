@@ -4,7 +4,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(root, 'reasoning');
 const groups = {
   argumentation: [

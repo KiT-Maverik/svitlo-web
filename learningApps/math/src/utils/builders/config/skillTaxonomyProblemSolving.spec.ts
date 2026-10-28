@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'problemSolving');
+const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy', 'problemSolving');
 const read = (...path: string[]): string => readFileSync(join(root, ...path), 'utf8');
 const groups = {
   conditions: ['identifyKnownUnknown', 'findExtraneousData', 'findMissingData'],
