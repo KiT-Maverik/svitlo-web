@@ -46,3 +46,13 @@ next-env.d.ts
 /playwright-report/
 
 !.env.example
+
+# Monorepo workspace artifacts
+**/node_modules/
+**/.next/
+**/.turbo/
+**/dist/
+**/coverage/
+**/.test-build/
+**/test-results/
+**/playwright-report/

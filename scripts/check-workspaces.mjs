@@ -1,0 +1,50 @@
+import { readFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+const root = process.cwd();
+const readJson = (path) => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
+const expected = [
+  {
+    "path": "backend/server",
+    "name": "@svitlo/server"
+  },
+  {
+    "path": "frontend/textbooks/math",
+    "name": "@svitlo/math"
+  },
+  {
+    "path": "frontend/playground",
+    "name": "@svitlo/playground"
+  },
+  {
+    "path": "shared/engine",
+    "name": "@svitlo/engine"
+  },
+  {
+    "path": "shared/ui-kit",
+    "name": "@svitlo/ui-kit"
+  }
+];
+const manifest = readJson('package.json');
+const lock = readJson('package-lock.json');
+const patterns = ["backend/*","frontend/textbooks/*","frontend/playground","shared/*"];
+
+function assert(ok, description) {
+  if (!ok) throw new Error(description);
+}
+
+assert(JSON.stringify(manifest.workspaces) === JSON.stringify(patterns), 'Root workspace patterns differ from the expected layout');
+assert(JSON.stringify(lock.packages[''].workspaces) === JSON.stringify(patterns), 'Lockfile workspace patterns are out of sync');
+for (const { path, name } of expected) {
+  const pkgPath = path + '/package.json';
+  const tsconfigPath = path + '/tsconfig.json';
+  assert(existsSync(resolve(root, pkgPath)), 'Missing ' + pkgPath);
+  assert(existsSync(resolve(root, tsconfigPath)), 'Missing ' + tsconfigPath);
+  const pkg = readJson(pkgPath);
+  const tsconfig = readJson(tsconfigPath);
+  assert(pkg.name === name && pkg.private === true, 'Invalid workspace manifest: ' + pkgPath);
+  assert(tsconfig.compilerOptions?.paths?.['@/*']?.[0] === 'src/*', 'Missing local alias in ' + tsconfigPath);
+  assert(lock.packages[path]?.name === name, 'Missing workspace lockfile package: ' + name);
+  assert(lock.packages['node_modules/' + name]?.resolved === path, 'Missing workspace lockfile link: ' + name);
+}
+console.log('Workspace scaffold verified (' + expected.length + ' packages).');
