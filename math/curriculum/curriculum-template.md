@@ -9,7 +9,18 @@ Date: %CURRENT_DATE%
 Ages: %AGE_RANGE%
 %Audience description in a form of a detailed reasonably long text.%
 
-%PREREQUISITES%:
+## PREREQUISITES%
+> Agent Note:
+> Allowed types of records:
+> - %PLAIN_TEXT%
+> - Skill: [%SKILL_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
+> - SkillGroup: [%SKILL_GROUP_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/%GROUP%.data.ts)
+> - SkillDomain: [%SKILL_DOMAIN_NAME%](../skillsTaxonomy/%DOMAIN%/%DOMAIN%.data.ts)
+> 
+> Choose only applicable record types and mix them when needed.
+> Use actual entity names and existing file paths.
+> Do not duplicate IDs or UUIDs.
+
 - %ITEM_1%
 - ...
 
@@ -19,13 +30,12 @@ Ages: %AGE_RANGE%
 - ...
 
 
-## Методичні межі й редакційні примітки
+## SCOPE & EDITORIAL NOTES
 
-Повторення базових обчислень і розуміння умови задачі відбуваються наскрізно. Лічба до 100, довші тексти та складені задачі не є вимогою завершення цього рівня.
-
-- **Практика, повторення та оцінювання:** плануються пізніше за окремими специфікаціями; ці записи не задають кількості тестів або формату UI.
-- **Передумови між уроками:** порядок вище — гіпотеза; Skills Taxonomy не є графом залежностей. За потреби методист має додати явні зв'язки під час наступного проходу.
-- **Статус Skills:** посилання на зарезервований UUID не доводить готовність runtime-конфігурації. Перед реалізацією перевіряти актуальний [інвентар](../skills-inventory.md).
+Scope: %IN_SCOPE%
+Exclusions: %OUT_OF_SCOPE%
+Progression: %SEQUENCING_CONSTRAINTS%
+Dependencies: %UNRESOLVED_DEPENDENCIES_OR_GAPS%
 
 ## LEARNING PLAN
 
