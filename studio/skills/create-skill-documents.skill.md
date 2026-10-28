@@ -13,17 +13,19 @@
 
 If the taxonomy is missing, cannot be inspected, or contains unresolved blockers for the requested entity, stop that entity's generation and report the gap. Do not build definitions from unverified guessed names or technical IDs.
 
-## AUTHORING PRINCIPLES
+## ENTITY DEFINITIONS — REQUIRED READING
 
-- **A Skill document specifies what the learner can demonstrably do.** It may explain essential concepts, boundaries, observable evidence, and revealing counterexamples. It does not supply the full lesson, script, bank of test questions, scoring algorithm, or implementation.
-- **Atomicity:** one independently assessable competency per Skill. A Skill can legitimately assess a meaningful relationship between concepts, but two unrelated actions do not become one Skill because they appear in the same exercise.
-- **Domain/Group documents:** clarify semantic scope and distinguish child concepts; they are not learning sequences, prerequisites, or mastery aggregates.
-- **No invented attributes:** grade, age, curriculum order, prerequisites, difficulties, question types, locales required at runtime, UI state, and learner progress are external concerns. Editorial context may be documented separately when essential but must not become intrinsic competency fields.
-- **No technical identity:** do not include UUIDs, UI IDs, dotted ID keys, or planned runtime paths in the Markdown definitions. Stable semantic titles and existing file links are sufficient for this phase.
-- **Existing evidence:** inspect and reuse approved definitions. Do not overwrite a reviewed document with generic paraphrase. New or substantively revised documents start at `Status: Draft`; only an explicit editorial decision makes them `Approved`.
-- **File links:** never point to a nonexistent file. For unavailable child definitions or code, retain `[Not implemented](#)`. The taxonomy link to an entity can become its real definition-document path once the file exists.
+Before authoring, read the canonical entity definitions:
 
-For foundational reasoning, consult [Creating Skills](../Creating%20Skills.md) (atomicity, independent vs. integration Skills, responsibility boundaries). Ignore its historical assumption that authoring and coding are a single step; **Create Skill Code Skill** owns technical realization.
+- [SkillDomain](../docs/entities/skill-domain.md)
+- [SkillGroup](../docs/entities/skill-group.md)
+- [Skill](../docs/entities/skill.md)
+
+These files are the source of semantic rules (atomicity, independent evidence, integration Skills, boundaries and ownership). Do not duplicate those definitions in this workflow. Use [Creating Skills](../Creating%20Skills.md) only as preserved historical context, not as a conflicting output format.
+
+**Document-authoring rules:** Preserve approved descriptions and existing reviewed documents; do not overwrite them with generic paraphrases. New or substantively changed documents begin at `Status: Draft` and require explicit approval to become `Approved`. Do not add UUIDs, technical IDs, guessed runtime paths, or assessment implementations to entity Definitions.
+
+**Two independent artifacts:** Each entity's **Definition** is its Markdown document; its **Code** is a distinct, optional application source file. Creating a Definition must not change or erase a Code link. Existing Code does not automatically approve a Definition. Keep missing artifacts as `[Not implemented](#)` and verify both fields independently.
 
 ## OPERATING PROTOCOL
 
@@ -33,7 +35,7 @@ For foundational reasoning, consult [Creating Skills](../Creating%20Skills.md) (
 4. **Draft individual Skill definitions** with a precise observable competency, a meaningful explanation, competency boundaries, and what independent evidence would demonstrate the competency.
 5. **Review semantics:** test the A-without-B split criterion; check overlap with neighboring Skills, variation vs. new competency, and whether an integration Skill adds real independent value. Escalate taxonomy-level changes; do not quietly move or duplicate entries.
 6. **Write each entity document** at the deterministic paths below. Use camelCase path segments based on approved semantic names, reusing established directories and filenames. Make references relative to each generated document.
-7. **Update only the corresponding File links and availability counts** in the taxonomy for files verified to exist. Do not mark source code as implemented merely because a Markdown specification exists.
+7. **Update only the corresponding Definition links and Definition counts** in the taxonomy, once the new Markdown files exist. Preserve all Code links and Code counts unchanged. Do not mark source code as implemented merely because a Markdown Definition exists.
 8. **Audit and stop:** confirm one document per in-scope entity, complete templates, consistent names, accurate links, no fabricated approvals or IDs, and no missing Skills hidden by a batch summary. Do not auto-run code generation.
 
 ## DOMAIN DOCUMENT TEMPLATE
@@ -51,10 +53,14 @@ Status: Draft
 
 %Included concepts, exclusions, and distinctions from neighboring Domains.%
 
+## CODE
+
+Code: [Not implemented](#)
+
 ## SKILL GROUPS
 
-- [%GROUP_NAME%](%EXISTING_RELATIVE_DOCUMENT_PATH%) — %Brief semantic distinction%.
-- [Not implemented](#) — %GROUP_NAME%: %Brief semantic distinction%.
+- **%GROUP_NAME%** — %Brief semantic distinction%. Definition: [Not implemented](#) · Code: [Not implemented](#)
+- **%ANOTHER_GROUP_NAME%** — %Brief semantic distinction%. Definition: [Not implemented](#) · Code: [Not implemented](#)
 
 ## REVIEW NOTES
 
@@ -76,10 +82,14 @@ Status: Draft
 
 %What belongs here, what belongs in adjacent Groups, and why.%
 
+## CODE
+
+Code: [Not implemented](#)
+
 ## SKILLS
 
-- [%SKILL_NAME%](%EXISTING_RELATIVE_DOCUMENT_PATH%) — %Short skill description%.
-- [Not implemented](#) — %SKILL_NAME%: %Short skill description%.
+- **%SKILL_NAME%** — %Short skill description%. Definition: [Not implemented](#) · Code: [Not implemented](#)
+- **%ANOTHER_SKILL_NAME%** — %Short skill description%. Definition: [Not implemented](#) · Code: [Not implemented](#)
 
 ## REVIEW NOTES
 
@@ -92,6 +102,10 @@ Status: Draft
 # %SKILL_NAME%
 
 Status: Draft
+
+## CODE
+
+Code: [Not implemented](#)
 
 ## COMPETENCY
 
@@ -114,7 +128,7 @@ Status: Draft
 %Material unresolved questions, or "None".%
 ~~~
 
-Only include **existing** child-document links; use the exact `[Not implemented](#)` marker for child documents not yet authored. The templates are specifications and may be adapted for subject needs without adding runtime data or lesson plans.
+The document itself is that entity's **Definition**; the Code field points to implementation only if an actual file exists. For each child entity, preserve both **Definition** and **Code** fields independently, replacing the precise `[Not implemented](#)` marker only for verified targets. Duplicate or remove example rows to match the actual children. These are editorial document templates, not testing specifications; do not add runtime data or lesson plans.
 
 ## RESULT
 
@@ -135,5 +149,5 @@ Create the selected documents inside the **target package**, never in `studio/` 
 
 - Domain and Group Markdown documents are created once each for the selected scope. Individual Skill documents live inside the Group's `skills/` folder.
 - Path segments are stable names, **not IDs**; reuse existing conventions and filenames where the package already has them. A move or rename is an explicit editorial change.
-- The canonical taxonomy remains the **inventory/index**, while these files are the expanded semantic source for later coding.
+- The canonical taxonomy remains the **inventory/index**, while these files are the expanded semantic Definition source for later coding. Keep existing Code references untouched, and use the verified relative paths when adding links to Definitions.
 - Report documents created/updated, Draft vs. Approved status, unresolved issues, and the exact portion ready for review. Handoff to **Create Skill Code Skill** is manual and requires approved definitions.
