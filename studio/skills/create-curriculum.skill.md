@@ -72,6 +72,21 @@ Use compact, structured Markdown. English is the working language of this instru
 
 Use the following template **as written**, replacing placeholders with content appropriate to the brief. Its Markdown file paths are relative to the **generated Curriculum file**, not this Skill. This embedded template is canonical; no separate `curriculum-template.md` is required.
 
+**Prerequisites authoring guidance (not part of generated Curriculum):**
+Allowed types of records:
+- Plain text: %TEXT_PREREQUISITE%
+- Skill: **%SKILL_NAME%** — Definition: [%SKILL_NAME%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.skill.md) · Code: [Not implemented](#)
+- SkillGroup: **%SKILL_GROUP_NAME%** — Definition: [%SKILL_GROUP_NAME%](../../skills/%DOMAIN%/%GROUP%/%GROUP%.skill-group.md) · Code: [Not implemented](#)
+- SkillDomain: **%SKILL_DOMAIN_NAME%** — Definition: [%SKILL_DOMAIN_NAME%](../../skills/%DOMAIN%/%DOMAIN%.skill-domain.md) · Code: [Not implemented](#)
+
+Choose only applicable record types and mix them when needed.
+Replace example paths with verified, existing relative Definition paths; they are not literal mandated filenames.
+Update the separate Code link only when that specific runtime file actually exists; otherwise keep [Not implemented](#).
+Do not duplicate IDs or UUIDs.
+A SkillGroup or SkillDomain prerequisite means general familiarity, not mastery of every nested Skill.
+
+**Never include this authoring guidance or template notes in the produced Curriculum document.**
+
 ```md
 # %NAME%
 
@@ -87,19 +102,6 @@ Ages: %AGE_RANGE%
 %Audience description in a form of a detailed reasonably long text.%
 
 ## PREREQUISITES
-
-> Agent Note:
-> Allowed types of records:
-> - Plain text: %TEXT_PREREQUISITE%
-> - Skill: **%SKILL_NAME%** — Definition: [%SKILL_NAME%](../../skills/%DOMAIN%/%GROUP%/skills/%SKILL%.skill.md) · Code: [Not implemented](#)
-> - SkillGroup: **%SKILL_GROUP_NAME%** — Definition: [%SKILL_GROUP_NAME%](../../skills/%DOMAIN%/%GROUP%/%GROUP%.skill-group.md) · Code: [Not implemented](#)
-> - SkillDomain: **%SKILL_DOMAIN_NAME%** — Definition: [%SKILL_DOMAIN_NAME%](../../skills/%DOMAIN%/%DOMAIN%.skill-domain.md) · Code: [Not implemented](#)
->
-> Choose only applicable record types and mix them when needed.
-> Replace example paths with verified, existing relative Definition paths; they are not literal mandated filenames.
-> Update the separate Code link only when that specific runtime file actually exists; otherwise keep [Not implemented](#).
-> Do not duplicate IDs or UUIDs.
-> A SkillGroup or SkillDomain prerequisite means general familiarity, not mastery of every nested Skill.
 
 - %ITEM_1%
 - ...
