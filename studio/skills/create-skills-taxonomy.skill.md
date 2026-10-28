@@ -29,11 +29,11 @@ Apply the editorial rules in the [Skill entity definition](../docs/entities/skil
 
 1. **Discover** the complete subject landscape from the briefing, credible references, and existing definitions. Record meaningful scope boundaries and factual uncertainty; do not simply mirror one national curriculum.
 2. **Decompose** into broad Domains, coherent Groups, and **atomic, independently assessable Skills**. Apply the A-without-B test to compound candidates. For names/descriptions with commas, enumerations or conjunctions (e.g. addition **and** subtraction), treat the wording as a **red flag requiring a review**, not as proof of invalidity or an automatic split. Do not define assessment methods or learner evidence in the taxonomy.
-3. **Audit and discuss** overlaps, omissions, accidental bundling, unnecessary fragmentation, and ambiguous compound Skills. Propose A and B as separate Skills when independently meaningful. An optional integration Skill C is justified **only** when their relationship is itself a distinct assessable ability; a Lesson/Question addressing both A and B should simply reference **both Skill IDs**, not trigger an automatic Skill C. **Report unresolved split/merge cases with alternatives and wait for editorial review** instead of modifying uncertain entries silently.
-4. **Validate breadth** against relevant subject references. Coverage is editorial, not a fabricated percentage derived from row counts. Do not equate the number of conjunctions with the number of defects. Include a separate, concise **review report** listing suspicious combined names, suggested decomposition, any justified integration competencies, and editor decisions still needed; never add that report as metadata to the Skill entity.
+3. **Audit and discuss before finalizing semantic choices.** Surface every disputed split/merge, over-fragmentation, omission or domain placement as an **independent, actionable editorial decision**, with affected entries, alternatives, recommendation, reason and approval status. Present those decisions **visibly in chat before claiming completion**, not merely at the end of a long taxonomy. If editor intent remains ambiguous, retain the choice as open instead of silently settling it. Integration Skill C is justified only for an independent relational competency; combining A and B in one Lesson/Question is not enough.
+4. **Validate breadth** against relevant subject references; never invent a coverage percentage. Persist the concise **separate editorial review document** at `<PackageRoot>/docs/skills/editorial-review.md` when decisions or cross-subject handoffs exist. Distinguish **editor-approved**, **proposed**, and **open** decisions, include affected paths and reasoning, and link it from the taxonomy/PR. It is a workflow artifact, **not Skill entity metadata**.
 5. **Inspect actual Definition and Code files** under the target package. Each non-placeholder link must resolve to the matching entity and artifact. A proposed path, reserved UUID, or parent reference is not proof of implementation.
-6. **Author** the single taxonomy file using the **TAXONOMY TEMPLATE** below. Give each Domain, Group, and Skill a short, distinguishable catalog description. Use actual counts, not target quotas.
-7. **Verify and stop.** Recount Groups, Skills, Definitions and Code files; check primary placement, resolved links and Markdown structure. Deliver the inventory for editorial review. Do not generate entity documents or code.
+6. **Author** the taxonomy using the **TAXONOMY TEMPLATE** below. Domain prose explains scope and boundaries; Group prose explains the unifying biological idea and how it differs from neighboring Groups; Skill prose explains the exact conceptual distinction, procedure, conditions or mechanism behind the observable action. **A description that copies/paraphrases its title is a blocking quality defect**, even when format checks pass. Explain unfamiliar terminology (e.g. how a dichotomous identification key works). Write meaningful, distinct content rather than mechanically producing `name + period`. Use actual counts, not quotas.
+7. **Verify and stop.** Recount Groups, Skills, Definitions and Code files; check placement and links. Audit **every Domain, Group and Skill description** for tautology, omitted defining information and incorrect subject claims. Check metadata ordering and absence of `Description:` labels. Deliver the inventory **and prominent separate editorial review** for approval. Do not generate entity documents or code.
 
 ### Independent artifact links
 
@@ -46,10 +46,11 @@ Neither link replaces the other. Use exactly `[Not implemented](#)` for each mis
 
 ## QUALITY AND ACCEPTANCE GATES
 
-- All Domain, Group, and Skill names and descriptions convey meaningful, non-duplicative semantics.
+- All Domain, Group, and Skill names and descriptions convey meaningful, non-duplicative semantics; no title-paraphrase or mechanical descriptions.
+- **Metadata precedes prose:** Domain `Groups`, `Definition`, `Code`; Group `Skills`, `Definition`, `Code`; Skill `Definition`, `Code`; then an **unlabelled** descriptive paragraph. Do not write `Description:`.
 - Every Skill denotes a distinct, **independently assessable** competency; this is an editorial granularity criterion, not runtime assessment data. The catalog does not prescribe evaluation methods, evidence or mastery criteria.
 - Compound labels were reviewed using the A-without-B criterion; integration Skills are separately justified and multi-Skill Questions/Lessons do not automatically create an extra Skill.
-- Unresolved split/merge decisions are explicitly reported for discussion, not silently applied.
+- Unresolved split/merge or domain-placement decisions appear in a **separate visible editorial review**, with alternatives, rationale, status, and editor action; they are never silently applied as approved.
 - Descriptions accurately capture subject scope, not pedagogical sequencing or technical implementation.
 - Counts reconcile: each Domain's Group/Skill totals, each Group's Skill count, and global totals.
 - Each entity has both `Definition` and `Code` links, even when both are `[Not implemented](#)`.
@@ -85,20 +86,18 @@ Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GR
 ### %DOMAIN_NAME%
 
 Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
-
 Definition: [Not implemented](#)
 Code: [Not implemented](#)
 
-Description: %DOMAIN_DESCRIPTION%
+%DOMAIN_DESCRIPTION%
 
 #### %GROUP_NAME%
 
 Skills: %GROUP_SKILL_COUNT%
-
-Description: %GROUP_DESCRIPTION%
-
 Definition: [Not implemented](#)
 Code: [Not implemented](#)
+
+%GROUP_DESCRIPTION%
 
 ##### %SKILL_NAME%
 
@@ -111,16 +110,17 @@ Code: [Not implemented](#)
 
 ## RESULT
 
-Create or update exactly one taxonomy Markdown document:
+Create or update the taxonomy Markdown document and, when editorial decisions exist, a **separate review document**:
 
 ~~~text
 <PackageRoot>/
 └── docs/
     └── skills/
-        └── taxonomy.md
+        ├── taxonomy.md
+        └── editorial-review.md  # required when editorial questions or decisions exist
 ~~~
 
 - Keep `docs/skills/taxonomy.md` literal within the actual textbook package. Never write the file to monorepo-level `studio/` or a guessed `src/math/` location.
 - Inspect an existing taxonomy before editing. Keep validated definitions and filenames stable; make significant splits/merges reviewable.
 - Do not create individual entity files, IDs, code, curriculum, or lesson content in this phase.
-- Report source references, final counts, separate Definition and Code file counts, **candidate compound Skills and unresolved editorial choices**, and readiness for **Create Skill Definitions Skill**.
+- Report source references, final counts, separate Definition and Code file counts, **approved decisions and unresolved editorial choices**, and readiness for **Create Skill Definitions Skill**. Do not claim readiness if granularity decisions are open.

@@ -6,7 +6,7 @@ A **SkillGroup** is a named category that organizes related Skills inside one Sk
 
 ## SEMANTIC ROLE
 
-- Name one coherent family of related Skill labels.
+- Name one coherent family of related Skill labels. Its taxonomy description must explain what unifies that family and distinguishes it from adjacent groups, rather than repeat its title.
 - Use a short editorial description to distinguish it from other Groups.
 - A Group contains Skills **through the taxonomy and code-level membership map**, not through a list embedded in its own Markdown Definition.
 - Keep each Skill in one primary Group; external materials can reference a Skill from multiple contexts.

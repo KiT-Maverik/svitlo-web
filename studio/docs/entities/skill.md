@@ -8,7 +8,7 @@ A **Skill** names the smallest practically meaningful ability that can be **asse
 
 Use these rules when deciding whether a **separate Skill identity** is justified:
 
-1. Describe a recognizable, observable ability, not an entire subject, general lesson topic, exercise UI, or answer format. Prefer a meaningful action with a target (identify, compare, calculate, justify, construct).
+1. Describe a recognizable, observable ability, not an entire subject, general lesson topic, exercise UI, or answer format. Prefer a meaningful action with a target (identify, compare, calculate, justify, construct). In taxonomy prose, explain the underlying distinction, mechanism or knowledge boundary instead of paraphrasing this title.
 2. **A-without-B test:** can a learner meaningfully master A but not B? If so, would it be useful to refer to or evaluate the abilities separately? If both are true, model A and B as separate Skills.
 3. **Comma/conjunction red flag:** names or descriptions combining abilities using commas, lists, `and/or`, `і/та/або`, etc., **must be reviewed** for accidental bundling. These are warning signs, **not automatic split instructions**. Multiple terms can still describe one coherent classification or relationship.
 4. **Integration is optional and separate:** when A and B are distinct Skills, create a third integration Skill **only if understanding their relationship, selecting between them, or deliberately combining them is itself a distinct ability** worth identifying independently. Merely using A and B in one question or lesson **never requires** Skill C.

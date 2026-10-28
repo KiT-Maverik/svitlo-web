@@ -6,7 +6,7 @@ A **SkillDomain** is a broad, recognizable subject area containing semantically 
 
 ## SEMANTIC ROLE
 
-- Choose a concise name that identifies a distinct field within the subject.
+- Choose a concise name that identifies a distinct field within the subject. Its taxonomy description must explain the field's scope, unifying concerns and boundaries; a title paraphrase is not sufficient.
 - Give it a short editorial Description of the area it covers.
 - Distinguish neighboring Domains by meaningful subject boundaries, without forcing uniform sizes or artificial minimum numbers of Groups. A Domain with a single coherent Group can be valid.
 - Keep the Domain's membership and the hierarchy of Groups/Skills in the **taxonomy**, not in lists inside individual Markdown Definitions.
