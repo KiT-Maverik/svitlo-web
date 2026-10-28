@@ -26,12 +26,12 @@ Use these rules when deciding whether a **separate Skill identity** is justified
 
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
-- A Skill has **one primary SkillGroup** in the canonical taxonomy, but may be reused by many Lessons, Questions, Flashcards, Practice tasks, Programs, Curricula and analytics views.
+- A Skill has **exactly one primary catalog parent**: a SkillGroup, or directly a SkillDomain if the Domain has no Groups and an editorial exception is justified. It may be reused by many Lessons, Questions, Flashcards, Practice tasks, Programs, Curricula and analytics views. Direct and grouped ownership must not be duplicated.
 - **A Question or other assessment object can reference multiple Skill IDs** when it addresses multiple abilities. The relevant consumer or explicit relationship/mapping owns that association; no new combined Skill is needed.
 - A Question referencing several Skills does **not** automatically create a separately valid mastery observation for every Skill. Evidence attribution, scoring, attempts and confidence belong to Assessment / Evidence / Progress / Analytics, not the catalog.
 - A Lesson may teach one or several Skills; Curriculum/Program defines teaching sequence and prerequisites; the same Skill can be reused in different educational contexts.
 - Grade, age, lesson IDs, question IDs, practice variants, hints, difficulty, prerequisites, learner history, mastery, scores, rubric, exercise type, and presentation are **not** Skill fields.
-- The Domain → Group → Skill hierarchy is for **catalog organization**, not a graph of dependencies, teaching sequence or learner proficiency.
+- The usual Domain → Group → Skill hierarchy (or exceptional Domain → Skill form) is for **catalog organization**, not a graph of dependencies, teaching sequence or learner proficiency.
 
 Keep IDs stable across file moves, group changes or name/translation edits. Substantive splits, merges or semantic replacement require explicit editorial review, and existing analytics/progress may require a migration decision. Identical short basenames in different Groups do not imply identical Skills; UUID identifies the entity.
 
