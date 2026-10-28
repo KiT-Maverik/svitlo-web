@@ -1,5 +1,5 @@
 import { Container } from '@mui/material';
-import type { Lesson_Config, LessonContentCatalog, Quiz } from '@svitlo/engine/content';
+import type { LessonContentCatalog, Quiz } from '@svitlo/engine/content';
 import type { Locale } from '@svitlo/engine/localization';
 import { buildLesson } from '@svitlo/engine/builders';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
@@ -11,7 +11,7 @@ import { SceneLocaleProvider } from './SceneLocaleContext';
 import { toQuestionWidgets } from './adapters/toQuestionWidgets';
 
 export interface LessonProps {
-  config: Lesson_Config;
+  config: Parameters<typeof buildLesson>[0];
   catalog: LessonContentCatalog;
   locale: Locale;
   href: string;
