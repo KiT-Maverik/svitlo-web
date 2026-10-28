@@ -132,9 +132,9 @@ Create the following artifact **inside the target textbook's root directory** (t
 
 ```text
 <TextbookRoot>/
-└── Curriculum/
-    └── curriculum/
-        └── curriculum.curriculum.md
+└── curriculums/
+    └── %CURRICULUM_NAME in camelCase%/
+        └── %CURRICULUM_NAME in camelCase%.curriculum.md
 ```
 
 - `Curriculum/` is the parent directory; `curriculum/` and `curriculum.curriculum.md` use **camelCase** (for this single-word name, lowercase `curriculum`). Preserve this casing exactly.
