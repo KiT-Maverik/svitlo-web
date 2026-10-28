@@ -10,6 +10,7 @@ const workspaces = [
   ['shared/ui-kit', readJson('shared/ui-kit/package.json')],
   ['learningApps/playground', readJson('learningApps/playground/package.json')],
   ['learningApps/math', readJson('learningApps/math/package.json')],
+  ['learningApps/physics', readJson('learningApps/physics/package.json')],
 ];
 const byName = new Map(workspaces.map(([path, pkg]) => [pkg.name, { path, pkg }]));
 function assert(ok, message) {
