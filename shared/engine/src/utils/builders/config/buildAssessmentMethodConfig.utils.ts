@@ -1,11 +1,12 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 import type { AssessmentMethod_Config } from '../../../types/content/assessmentMethod.types';
+import type { DeepReadonly } from '../../../types/readonly.types';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
 const supported = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language));
 
 /** Validates independently authored method descriptors without creating relationships or identifiers. */
-export function buildAssessmentMethodConfig<const T extends AssessmentMethod_Config>(config: T): T {
+export function buildAssessmentMethodConfig<const T extends AssessmentMethod_Config>(config: T): DeepReadonly<T> {
   validateSkillUuid(config.id, 'Assessment Method id');
   for (const field of ['title', 'description'] as const) {
     const dictionary = config[field];
@@ -21,5 +22,5 @@ export function buildAssessmentMethodConfig<const T extends AssessmentMethod_Con
     const extra = Object.keys(dictionary).filter(language => !supported.has(language));
     if (extra.length) throw new Error(`Assessment Method ${field} has unsupported languages: ${extra.join(', ')}`);
   }
-  return config;
+  return config as DeepReadonly<T>;
 }
