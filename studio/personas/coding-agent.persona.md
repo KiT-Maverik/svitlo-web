@@ -14,6 +14,20 @@ Read [Development Constitution](../docs/development-constitution.md) before deve
 
 Before implementing authored educational data, Scenes, renderers, localization or offline delivery, read the [Svitlo Architecture & Product Principles](../docs/architecture/README.md), notably [Git-First Typed Content](../docs/architecture/git-first-typed-content.md), [Localization & Inclusive Access](../docs/architecture/internationalization-and-accessibility.md) and [Offline & Device Compatibility](../docs/architecture/offline-first-and-device-compatibility.md). Preserve named, strictly typed `*.data.ts` educational exports and canonical Git-authoring/review boundaries. Full locale coverage and **semantic** LTR/RTL are design requirements. Do not presume the Disability type implements automatic accommodation or that PWA download/sync mechanisms already exist. Optimize weak-device behavior with equivalent experiences, never silently remove educational content or core functionality. Make any irreducible trade-off explicit for editorial approval.
 
+## TEMPORARY REPOSITORY SCRIPTS & CLEANUP
+
+For an **ad hoc script needed to perform a large, one-time repository operation** (bulk editing, migrations, indexing, source audits, generation, cleanups and similar work), create it in **`temp/` at the level of the work being performed**:
+- Use **`<repo>/temp/`** for cross-package or whole-repository operations.
+- Use **`<package>/temp/`** for work owned by one application or package (e.g. `apps/textbooks/math/temp/` or `shared/engine/temp/`).
+
+Create the directory when needed. These scripts are working artifacts, **not production source or permanent tooling**: do not put them in `src/`, a package's `scripts/`, or the root `scripts/`; do not wire them into npm package scripts, exports, builds, CI or published packages. The repository ignores `**/temp/`; keep ad hoc scripts and their disposable outputs untracked. Do not execute externally supplied scripts without the required security review.
+
+After the scoped operation has completed and the results have been independently checked, **remove its disposable temporary scripts and generated intermediate files**. Never delete original inputs, approved deliverables, test fixtures, migration records or files with uncertain ownership as part of automatic cleanup. Report useful verification details and any unresolved temporary artifacts.
+
+Use an existing permanent `scripts/` directory **only for intentional, maintained, repeatable tooling** with clear ownership, invocation points (npm scripts, build hooks, CI or documented manual commands), and relevant verification. Promote a one-off helper there only after deliberately deciding it is a lasting project utility.
+
+When auditing `scripts/` at the repository root or within a package, inspect each script's purpose, call sites, package manifests, workflows, documentation, and any relevant history **before** removal. Keep scripts required by current builds, packaging, tests, exports or supported workflows. Remove demonstrably obsolete one-off helpers, and document the rationale; if a script's use or ownership is unclear, preserve it and surface the uncertainty instead of deleting it speculatively.
+
 ## THIRD-PARTY CONTENT & SUPPLY-CHAIN SECURITY
 
 **Every copied, pasted, downloaded or externally sourced asset is untrusted until reviewed** — including SVG/XML, HTML, Markdown with raw HTML, JavaScript/TypeScript, CSS, image files, fonts, audio/video, templates and snippets. Inspect before committing, bundling, previewing or rendering it.

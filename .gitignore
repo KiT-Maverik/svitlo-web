@@ -59,3 +59,6 @@ next-env.d.ts
 
 # UI Kit generated flag assets; sync from the dependency before dev/build
 **/public/flags/
+
+# Disposable local scripts and intermediate files for one-off repository work
+**/temp/
