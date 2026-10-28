@@ -15,7 +15,7 @@ Svitlo is a constellation of **independently buildable and extractable applicati
 ├── apps/
 │   ├── playground/                 # existing Next.js app; demonstration/reference
 │   └── textbooks/
-│       └── math/                   # workspace scaffold, not yet a finished Next.js app
+│       └── math/                   # implemented standalone Next.js mathematics textbook
 ├── backend/
 │   └── server/                     # server workspace scaffold
 ├── shared/
@@ -87,16 +87,16 @@ To add a new shared dependency: edit the **consumer's `package.json`**, use its 
 - `@svitlo/engine` — compiled via `tsc -p tsconfig.build.json`; has `build`, `typecheck` and `test` scripts and declared `dist` public exports.
 - `@svitlo/ui-kit` — compiled via `tsc -p tsconfig.build.json` plus asset copying; `build`, `typecheck`, `test` and `dist` public exports; depends on Engine.
 - `@svitlo/playground` — implemented Next.js app with `next build`, `next dev`, `typecheck` and multiple test commands; depends on Engine and UI Kit.
-- `@svitlo/math` — **currently scaffold only** (`package.json`, `tsconfig.json`); do **not** claim independent Next.js build or a finished textbook until actual scripts/source exist.
+- `@svitlo/math` — **now an implemented independent Next.js textbook** with its own `src`, `docs`, subject content, routes, assets, build/typecheck/test scripts and Engine/UI Kit dependencies. Verify those commands rather than inheriting Playground results.
 - `@svitlo/server` — **currently scaffold only**; do **not** claim executable backend scripts, handlers or tests.
 
-The current [root scripts](../../../package.json) explicitly build **Engine → UI Kit → Playground**; the root `build` is **not currently a full build of Server and Math**. The checked-in `package-lock.json` and npm workspaces are currently authoritative; `pnpm-workspace.yaml` and `turbo.json` express future/alternate orchestration, not automatic evidence that CI uses pnpm/Turbo.
+The current [root scripts](../../../package.json) build **Engine → UI Kit → Playground → Math**; the root `build` is **not yet a full build of Server**, which remains a scaffold. The checked-in `package-lock.json` and npm workspaces are currently authoritative; `pnpm-workspace.yaml` and `turbo.json` express future/alternate orchestration, not automatic evidence that CI uses pnpm/Turbo.
 
 The [workspace validator](../../../scripts/check-workspaces.mjs) and [package-boundary validator](../../../scripts/check-package-boundaries.mjs) check specific workspace structures/dependency rules. **A passing check is not a universal guarantee** that every future package import, API/export, offline feature or independent app deployment is correct.
 
 ## 4. Standard standalone textbook package
 
-**Target standardized form, not a claim that `apps/textbooks/math` already has every file:**
+**Target standardized form, grounded in the now-implemented Math application, but not a demand that every app use identical folder names:**
 
 ~~~text
 apps/textbooks/<subject>/
@@ -132,17 +132,17 @@ These are **responsibility-based directories**, not an obligation to create empt
 
 ### Current concrete reference
 
-The running [Playground](../../../apps/playground/package.json) demonstrates:
-- [Next.js App Router](../../../apps/playground/src/app/topics/light/page.tsx) for a lesson route.
-- [Git-authored named Lesson Data](../../../apps/playground/src/content/howLightMoves/howLightMoves.data.ts) and [ordered Section Data](../../../apps/playground/src/content/howLightMoves/sections/theory/theory.data.ts).
-- [Lesson Section renderer](../../../apps/playground/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) for selected typed blocks. **It currently directly renders `text`, `markdown` and `scene`, not all resource types declared by Engine**.
-- Existing tests and shared-library use. **Playground is a reference to inspect, not a runtime dependency to import**.
+The independent [Math textbook](../../../apps/textbooks/math/package.json) demonstrates:
+- [Next.js App Router](../../../apps/textbooks/math/src/app/topics/light/page.tsx) for a lesson route.
+- [Git-authored named Lesson Data](../../../apps/textbooks/math/src/content/howLightMoves/howLightMoves.data.ts) and [ordered Section Data](../../../apps/textbooks/math/src/content/howLightMoves/sections/theory/theory.data.ts).
+- [Lesson Section renderer](../../../apps/textbooks/math/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) for selected typed blocks. **It currently directly renders `text`, `markdown` and `scene`, not all resource types declared by Engine**.
+- Own package builds/tests and shared-library use. **Math is an actual standalone textbook, not a runtime dependency for other textbooks**; Playground remains a separate UI demonstration application.
 
-Do not duplicate Playground's subject-specific content into `shared` to “standardize” a textbook. When a new textbook (such as Math) is initialized, it should be independently testable and host only **its own educational content**.
+Do not duplicate Math's subject-specific content into `shared` or Playground to “standardize” a textbook. Every new textbook must be independently testable and host only **its own educational content**.
 
 ## 5. PR review and change validation
 
-A package-related PR should make its **owners and downstream consumers explicit**: which workspace was modified, whether public exports or dependency declarations changed, and which app/package builds and tests were run. Run the appropriate root `npm run packages:check` and affected workspaces' validation; do not substitute a full-root test of Playground for a missing Math/Server test suite.
+A package-related PR should make its **owners and downstream consumers explicit**: which workspace was modified, whether public exports or dependency declarations changed, and which app/package builds and tests were run. Run the appropriate root `npm run packages:check` and affected workspaces' validation; do not substitute Playground test results for Math, Server or any other affected package.
 
 - A [Development Reviewer](../../personas/development-reviewer.persona.md) checks package boundaries, modularity, public APIs, independent textbook extraction and [Development Constitution](../development-constitution.md) once populated.
 - A [Quality Assurance Reviewer](../../personas/quality-assurance-reviewer.persona.md) checks test efficacy, regression evidence and [Quality Constitution](../quality-constitution.md) once populated.

@@ -127,9 +127,9 @@ Program може декларативно описувати правила: «�
 **Не копіювати сюди повну специфікацію.** Для наступного агента канонічні джерела:
 
 - [Skill entity rules](./docs/entities/skill.md) та [Implement Skill Code](./skills/implement-skill-code.skill.md) — правила сутностей, UUID та файловий контракт;
-- [Skills Inventory](../apps/playground/src/math/skills-inventory.md) — **актуальний статус кожної навички**;
-- [Taxonomy Review](../apps/playground/src/math/skills-taxonomy-review.md) — неоднозначності;
-- [UUID migration map](../apps/playground/src/math/skillsTaxonomy/UUID-MIGRATION.md) — зіставлення історичних позначень із UUID.
+- [Skills Inventory](../apps/textbooks/math/src/math/skills-inventory.md) — **актуальний статус кожної навички**;
+- [Taxonomy Review](../apps/textbooks/math/src/math/skills-taxonomy-review.md) — неоднозначності;
+- [UUID migration map](../apps/textbooks/math/src/math/skillsTaxonomy/UUID-MIGRATION.md) — зіставлення історичних позначень із UUID.
 
 ## 6. Questions, Flashcards, Practice і генерація задач
 
@@ -180,7 +180,7 @@ Program може декларативно описувати правила: «�
 2. Поточний Lesson має **array секцій**, хоча обговорювали об’єкт зі стабільними ключами. Не міняти публічний API потай під час іншого рефакторингу.
 3. **Слоти та події — два різні механізми.** Статична вставка не замінює реакцію на `question.answered`/retry; реакція не дає права підмінювати оцінювання.
 4. **Педагогічний прогрес ≠ сюжетний прогрес ≠ оцінка тесту ≠ Skill mastery.**
-5. Зміни в **Skills Taxonomy** мають проходити за [Skill entity rules](./docs/entities/skill.md) та [Create Skills Taxonomy Skill](./skills/create-skills-taxonomy.skill.md), а реальну завершеність дивитися в [Inventory](../apps/playground/src/math/skills-inventory.md). UUID-посилання не є готовими Skill-файлами.
+5. Зміни в **Skills Taxonomy** мають проходити за [Skill entity rules](./docs/entities/skill.md) та [Create Skills Taxonomy Skill](./skills/create-skills-taxonomy.skill.md), а реальну завершеність дивитися в [Inventory](../apps/textbooks/math/src/math/skills-inventory.md). UUID-посилання не є готовими Skill-файлами.
 6. **Сумнівні Skill** (об’єднання кількох компетенцій, дублікати, невизначена семантика) — винести на рев’ю, не переписувати тихо.
 7. При продовженні роботи спочатку подивитися **актуальний HEAD і CI**; назви PR/демо з попередніх бесід не гарантують поточного стану гілки.
 
@@ -197,13 +197,13 @@ Program може декларативно описувати правила: «�
 ## 12. Орієнтири в репозиторії
 
 - [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — актуальні правила сутностей; [Implement Skill Code](./skills/implement-skill-code.skill.md) — UUID, локалізація та рівневі експорти.
-- [Skills Inventory](../apps/playground/src/math/skills-inventory.md) — повна методична таксономія, статуси `Implemented`.
-- [Skills Taxonomy Review](../apps/playground/src/math/skills-taxonomy-review.md) — результати семантичного рев’ю.
-- [UUID mapping](../apps/playground/src/math/skillsTaxonomy/UUID-MIGRATION.md) — історичні редакційні ID → статичні UUID.
+- [Skills Inventory](../apps/textbooks/math/src/math/skills-inventory.md) — повна методична таксономія, статуси `Implemented`.
+- [Skills Taxonomy Review](../apps/textbooks/math/src/math/skills-taxonomy-review.md) — результати семантичного рев’ю.
+- [UUID mapping](../apps/textbooks/math/src/math/skillsTaxonomy/UUID-MIGRATION.md) — історичні редакційні ID → статичні UUID.
 - [Lesson types](../shared/engine/src/types/content/lesson.types.ts) — **поточні** контракти Lesson та LessonState.
 - [Lesson assembler](../apps/playground/src/components/pages/Lesson/Lesson.tsx) — поточна data-driven реалізація.
-- [How Light Moves Lesson](../apps/playground/src/content/howLightMoves/howLightMoves.data.ts) — реальний конфіг.
-- [Taxonomy index regression test](../apps/playground/src/utils/builders/config/skillTaxonomyIndex.spec.ts) — перевірка ізоляції експортів.
+- [How Light Moves Lesson](../apps/textbooks/math/src/content/howLightMoves/howLightMoves.data.ts) — реальний конфіг.
+- [Taxonomy index regression test](../apps/textbooks/math/src/utils/builders/config/skillTaxonomyIndex.spec.ts) — перевірка ізоляції експортів.
 
 ---
 

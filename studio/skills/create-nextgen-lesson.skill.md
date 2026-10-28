@@ -40,9 +40,9 @@ The following are **direct links to the current repository's source of truth**. 
 | [Actual Lesson Section renderer](../../apps/playground/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) | Which `blockType` values can actually render in a generic Section **today** |
 | [Actual Lesson assembly](../../apps/playground/src/components/pages/Lesson/Lesson.tsx) | Current `Lesson` composition, providers and navigation assumptions |
 | [Lesson → Question widget adapter](../../apps/playground/src/components/pages/Lesson/adapters/toQuestionWidgets.ts) | Which Question kind this Lesson UI currently renders |
-| [Live lesson example](../../apps/playground/src/content/howLightMoves/howLightMoves.data.ts) | Actual ordering and Lesson-level `sceneLocales` wiring |
-| [Theory Section](../../apps/playground/src/content/howLightMoves/sections/theory/theory.data.ts) and [Practice Section](../../apps/playground/src/content/howLightMoves/sections/practice/practice.data.ts) | Mixed ordered resources and interactive scenes |
-| [Example Quiz Section](../../apps/playground/src/content/howLightMoves/sections/quiz/quiz.data.ts) | Distinct Quiz structure and current question integration |
+| [Live lesson example](../../apps/textbooks/math/src/content/howLightMoves/howLightMoves.data.ts) | Actual ordering and Lesson-level `sceneLocales` wiring |
+| [Theory Section](../../apps/textbooks/math/src/content/howLightMoves/sections/theory/theory.data.ts) and [Practice Section](../../apps/textbooks/math/src/content/howLightMoves/sections/practice/practice.data.ts) | Mixed ordered resources and interactive scenes |
+| [Example Quiz Section](../../apps/textbooks/math/src/content/howLightMoves/sections/quiz/quiz.data.ts) | Distinct Quiz structure and current question integration |
 | [Scene Designer workflow](./design-scene.skill.md) | Separate handoff contract for fully specified, prop-free, localized and LTR/RTL-aware custom Scenes |
 
 ### Current resource and rendering capability map — VERIFY AGAINST CODE
