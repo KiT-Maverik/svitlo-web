@@ -4,14 +4,16 @@ on:
     branches: [test/db-controllers-e2e]
   pull_request:
     paths:
-      - 'src/db/**'
-      - 'src/db/controllers/__tests__/**'
-      - 'src/testing/db-browser-*.mjs'
-      - 'src/testing/db-browser-*.ts'
-      - 'src/testing/DbBrowserHarness.tsx'
-      - 'playwright.db.config.ts'
-      - 'playwright.config.ts'
+      - 'frontend/playground/src/db/**'
+      - 'frontend/playground/src/db/controllers/__tests__/**'
+      - 'frontend/playground/src/testing/db-browser-*.mjs'
+      - 'frontend/playground/src/testing/db-browser-*.ts'
+      - 'frontend/playground/src/testing/DbBrowserHarness.tsx'
+      - 'frontend/playground/playwright.db.config.ts'
+      - 'frontend/playground/playwright.config.ts'
       - 'package.json'
+      - 'frontend/playground/package.json'
+      - 'package-lock.json'
 permissions:
   contents: read
 jobs:
@@ -41,5 +43,5 @@ jobs:
         with:
           name: db-browser-test-results
           path: |
-            test-results/
-            playwright-report/
+            frontend/playground/test-results/
+            frontend/playground/playwright-report/

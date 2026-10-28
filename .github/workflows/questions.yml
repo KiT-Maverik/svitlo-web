@@ -30,11 +30,11 @@ jobs:
         if: ${{ !cancelled() }}
       - name: Lesson page E2E (desktop and mobile)
         if: ${{ !cancelled() }}
-        run: npx playwright test src/components/pages/Lesson/Lesson.e2e.spec.ts
+        run: npm run test:e2e --workspace @svitlo/playground -- src/components/pages/Lesson/Lesson.e2e.spec.ts
       - run: npm run test:e2e
         if: ${{ !cancelled() }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: questions-test-results
-          path: test-results/
+          path: frontend/playground/test-results/
