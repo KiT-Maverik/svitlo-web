@@ -2,6 +2,7 @@ import type { Resource, Resource_Config, TextResource, TextResource_Config } fro
 import type { Quiz, Quiz_Config, QuizState } from './quiz.types';
 import type { Collection, NonEmptyArray } from '../misc.types';
 import type { LanguageCode } from '../languages';
+import type { DeepReadonly } from '../readonly.types';
 
 export interface LessonSection_Config<TIcon = unknown> {
   readonly collection: Extract<Collection, 'lessonSection'>;
@@ -30,7 +31,7 @@ export type LessonSection_Content = LessonSection_Config | Quiz_Config;
 /** Definitions referenced by a lesson's stable IDs. */
 export interface LessonContentCatalog {
   text: Readonly<Record<string, TextResource_Config>>;
-  sections: Readonly<Record<string, LessonSection_Content>>;
+  sections: Readonly<Record<string, DeepReadonly<LessonSection_Content>>>;
 }
 
 export interface Lesson_Config {
