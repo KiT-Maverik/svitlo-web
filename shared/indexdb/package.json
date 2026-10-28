@@ -31,14 +31,15 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.browser.json --noEmit",
     "test": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/utils/**/*.js' .test-build/utils/*/*.spec.js .test-build/controllers/*/*/*.spec.js .test-build/controllers/__tests__/*.integration.test.js",
     "test:db-utils": "tsc -p tsconfig.test.json && node --test .test-build/utils/*/*.spec.js",
     "test:db-utils:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test --test-coverage-include='.test-build/utils/**/*.js' .test-build/utils/*/*.spec.js",
     "test:db:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test .test-build/controllers/__tests__/*.integration.test.js",
     "test:db-controllers-unit": "tsc -p tsconfig.test.json && node --test .test-build/controllers/*/*/*.spec.js",
     "test:db-controllers-unit:coverage": "tsc -p tsconfig.test.json && node --experimental-test-coverage --test .test-build/controllers/*/*/*.spec.js",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "test:e2e:db": "playwright test --config playwright.config.ts"
   },
   "dependencies": {
     "@svitlo/contracts": "0.0.0",
@@ -47,7 +48,13 @@
   "devDependencies": {
     "@types/node": "^20",
     "typescript": "^5",
-    "fake-indexeddb": "^6.2.6"
+    "fake-indexeddb": "^6.2.6",
+    "@playwright/test": "^1.64.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "next": "16.4.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "typesVersions": {
     "*": {

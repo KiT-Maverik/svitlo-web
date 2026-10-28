@@ -27,4 +27,4 @@ The Playground only imports other packages through their public npm exports.
 
 Generic builder and localization tests are owned by `@svitlo/engine`; Playground contains demonstration data and application-specific tests only.
 
-IndexedDB controllers, schemas and transaction utilities are owned by `@svitlo/indexdb`. App-specific `src/testing` currently hosts the browser harness and Playwright suite; consolidating this harness is Stage 5.
+IndexedDB controllers, schemas and transaction utilities are owned by `@svitlo/indexdb`. The native IndexedDB Playwright suite and isolated Next.js test fixture live in `shared/indexdb/testing`. Local `src/testing/setup.ts` is only the Vitest component-test setup.

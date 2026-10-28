@@ -131,4 +131,18 @@ for (const applicationRoot of applicationSourceRoots) {
     }
   }
 }
+for (const app of ['learningApps/math', 'learningApps/playground']) {
+  for (const old of ['DbBrowserHarness.tsx', 'db-browser-commands.ts', 'db-browser-server.mjs', 'controllers.e2e.spec.ts']) {
+    assert(!existsSync(resolve(root, app, 'src/testing', old)),
+      'IndexedDB browser tests must be owned by @svitlo/indexdb: ' + app + '/' + old);
+  }
+  assert(!existsSync(resolve(root, app, 'playwright.db.config.ts')),
+    'Applications must not retain IndexedDB Playwright configuration: ' + app);
+}
+for (const testFile of ['DbBrowserHarness.tsx', 'db-browser-commands.ts', 'db-browser-server.mjs', 'controllers.e2e.spec.ts']) {
+  assert(existsSync(resolve(root, 'shared/indexdb/testing', testFile)),
+    'IndexedDB browser test infrastructure missing: ' + testFile);
+}
+assert(existsSync(resolve(root, 'shared/indexdb/playwright.config.ts')),
+  'IndexedDB must own the native browser Playwright configuration');
 console.log('Package boundaries and both independent applications verified.');
