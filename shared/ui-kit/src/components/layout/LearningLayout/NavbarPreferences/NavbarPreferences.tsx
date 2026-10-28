@@ -24,7 +24,7 @@ export type NavbarPreferencesProps = {
   onThemeChange: (mode: 'light' | 'dark') => void;
 };
 
-function LocaleSelector({ locale, onLocaleChange }: NavbarPreferencesProps) {
+function LocaleSelector({ locale, onLocaleChange }: Pick<NavbarPreferencesProps, 'locale' | 'onLocaleChange'>) {
 
   return (
     <Select
