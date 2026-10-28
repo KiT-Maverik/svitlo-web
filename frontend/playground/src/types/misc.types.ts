@@ -1,4 +1,2 @@
-export type NonEmptyArray<T> = [T, ...T[]];
-
-/** Catalog collection discriminator, supplied by the corresponding builder. */
-export type Collection = 'skill' | 'skillGroup' | 'skillDomain' | 'lesson' | 'lessonSection';
+// Legacy compatibility; canonical shared contracts belong to @svitlo/engine.
+export type { NonEmptyArray, Collection } from '@svitlo/engine/content';

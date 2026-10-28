@@ -55,3 +55,11 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 - No app imports from `shared/engine/src/`. No engine imports from Playground, React, or Next.js.
 - Builders for lessons/resources/questions, text resources, dynamic question and assessment method configs remain in Playground until their contract dependencies are made portable. No React hooks or UI-only utilities were found in this first batch; `ui-kit` is untouched.
 - Registry extraction remains an explicit later phase; `private: true` intentionally prevents accidental publication.
+
+## Phase 04 — Shared content contracts
+
+- Engine is the canonical owner of content contracts for Resource, Lesson, Question, Quiz, Assessment Method, Disability and shared collection utilities.
+- The stable set of 16 Assessment Method UUIDs now belongs to Engine, not a mathematics-specific path. The original path re-exports the registry for compatibility.
+- Playground's previous content-contract files re-export **types only**, preserving old imports without duplicating declarations.
+- The Engine remains free of React and Next.js; scene `component` and lesson section `icon` are extensible, renderer-specific values typed as `unknown` by default. Frontend renderers supply/narrow their UI representation.
+- Public package API: `@svitlo/engine/content`. Future textbooks can extend base contracts using TypeScript intersections or generic parameters without editing Engine.

@@ -18,7 +18,7 @@ function assert(condition, message) {
 assert(engine.name === '@svitlo/engine', 'Unexpected engine package name');
 assert(playground.dependencies?.[engine.name] === engine.version, 'Playground must use a versioned engine dependency');
 assert(engine.scripts?.build && engine.files?.includes('dist'), 'Engine must publish compiled artifacts');
-for (const subpath of ['.', './localization', './taxonomy']) {
+for (const subpath of ['.', './localization', './taxonomy', './content']) {
   const target = engine.exports?.[subpath];
   assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
     'Engine public export is missing a dist entry: ' + subpath);

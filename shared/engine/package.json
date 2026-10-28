@@ -16,6 +16,10 @@
     "./taxonomy": {
       "types": "./dist/taxonomy.d.ts",
       "default": "./dist/taxonomy.js"
+    },
+    "./content": {
+      "types": "./dist/content.d.ts",
+      "default": "./dist/content.js"
     }
   },
   "files": [
@@ -39,6 +43,9 @@
       ],
       "*": [
         "dist/index.d.ts"
+      ],
+      "content": [
+        "dist/content.d.ts"
       ]
     }
   }

@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { Fragment } from 'react';
+import { Fragment, type ReactNode } from 'react';
 import { MarkdownContent } from '@/components/widgets';
 import type { LessonSection } from '@types';
 import { getLocaleDirection, type Locale } from '@types';
@@ -20,7 +20,7 @@ export default async function LessonSectionContent({
   const direction = getLocaleDirection(locale);
   const blocks = await Promise.all(
     content.map(async block => {
-      if (block.blockType === 'scene') return <Fragment key={block.id}>{block.component}</Fragment>;
+      if (block.blockType === 'scene') return <Fragment key={block.id}>{block.component as ReactNode}</Fragment>;
       if (block.blockType === 'markdown') {
         const markdown = await readMarkdown(block.fileLocation);
         return <MarkdownContent key={block.id} content={markdown} lang={locale} dir={direction} />;
