@@ -6,7 +6,7 @@ import Select from '@mui/material/Select';
 import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
 import { useColorScheme } from '@mui/material/styles';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { Flag } from '@/components/widgets/Flag';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { getNavbarPreferencesMessages } from './locales';

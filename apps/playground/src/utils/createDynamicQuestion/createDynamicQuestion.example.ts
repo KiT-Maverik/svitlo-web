@@ -1,11 +1,7 @@
-import { createDynamicQuestion } from './createDynamicQuestion.utils';
-import type {
-  DynamicQuestion_Config,
-  DynamicQuestion_NumberArgumentConfig,
-  DynamicQuestion_Variant,
-} from './createDynamicQuestion.types';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
-import type { TextResource_AllLocales_Config } from '@types';
+import { createDynamicQuestion } from '@svitlo/engine/generation';
+import type { DynamicQuestion_Config, DynamicQuestion_NumberArgumentConfig, DynamicQuestion_Variant } from '@svitlo/engine/generation';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
+import type { TextResource_AllLocales_Config } from '@svitlo/engine/content';
 
 const girlsApple = {
   selector: 'girlsApple',

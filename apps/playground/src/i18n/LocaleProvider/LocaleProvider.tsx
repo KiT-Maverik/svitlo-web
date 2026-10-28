@@ -3,7 +3,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, type ReactNode } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { ThemeProvider, useTheme } from '@mui/material/styles';
-import { getLocaleDirection, type Locale } from '@types';
+import { getLocaleDirection } from '@svitlo/engine/localization';
+import type { Locale } from '@svitlo/engine/localization';
 
 type LocaleContextValue = {
   locale: Locale;

@@ -1,7 +1,7 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../../../math/assessmentMethodTaxonomy/index.ids';
-import type { Quiz_Config } from '@types';
+import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
+import type { Quiz_Config } from '@svitlo/engine/content';
 import { quiz_Questions_Ids } from './index.ids';
-import { createTextResource } from '@/utils';
+import { createTextResource } from '@svitlo/engine/builders';
 
 export const lightSpeedInWater_Question_Data = {
   id: quiz_Questions_Ids.lightSpeedInWater.question,

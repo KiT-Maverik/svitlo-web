@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { QuizState } from '@types';
+import type { QuizState } from '@svitlo/engine/content';
 
 const id = z.string().min(1);
 const stringArray = z.array(id);

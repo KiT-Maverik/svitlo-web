@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { reasoning_SkillDomain_Ids } from './reasoning.ids';
 import { reasoning_SkillGroups_Ids } from './index.ids';
 

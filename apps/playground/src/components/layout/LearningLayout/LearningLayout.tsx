@@ -24,7 +24,7 @@ import BottomNavbar from '../Navigation/BottomNavbar';
 import { canAdvance, useLessonProgress } from '@/components/pages/Lesson/LessonProgress/LessonProgress';
 import NavbarPreferences from './NavbarPreferences/NavbarPreferences';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
-import { getLocaleDirection } from '@types';
+import { getLocaleDirection } from '@svitlo/engine/localization';
 import { VerticalSpace } from '@/components/widgets';
 import { getLearningLayoutMessages } from './locales';
 import { aria } from './LearningLayout.constants';

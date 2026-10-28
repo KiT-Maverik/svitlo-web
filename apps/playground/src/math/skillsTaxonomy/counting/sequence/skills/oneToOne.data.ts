@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { sequence_Skills_Ids } from './index.ids';
 
 export const oneToOne_Skill_Data = buildSkillConfig({

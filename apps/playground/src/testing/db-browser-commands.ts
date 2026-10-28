@@ -1,4 +1,4 @@
-import type { LessonState, QuizResult, QuizState } from '@types';
+import type { LessonState, QuizResult, QuizState } from '@svitlo/engine/content';
 
 export type ControllerCommand =
   | { op: 'createLessonState'; lessonId: string }

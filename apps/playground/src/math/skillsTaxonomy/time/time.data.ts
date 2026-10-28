@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { time_SkillDomain_Ids } from './time.ids';
 import { time_SkillGroups_Ids } from './index.ids';
 

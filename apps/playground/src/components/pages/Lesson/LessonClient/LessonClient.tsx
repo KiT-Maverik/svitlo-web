@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState } from '@types';
+import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState } from '@svitlo/engine/content';
 import type { SelectOneAnswerQuestion } from '@/components/widgets/questions/types';
 import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
 import { useLessonProgress } from '../LessonProgress/LessonProgress';
@@ -11,7 +11,7 @@ import { QuestionProgress, type QuestionStatus } from '../QuestionProgress/Quest
 import { LessonSteps } from '../LessonSteps/LessonSteps';
 import styles from '../Lesson.module.css';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
-import { getLocaleDirection } from '@types';
+import { getLocaleDirection } from '@svitlo/engine/localization';
 import { getLessonMessages } from '../locales';
 import { aria } from './LessonClient.constants';
 

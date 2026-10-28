@@ -1,5 +1,5 @@
 import Image, { type ImageProps } from 'next/image';
-import type { DefaultSupportedLanguage } from '@types';
+import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
 
 /** Only locales registered in the app have a flag dispatch entry. */
 export type FlagLocale = DefaultSupportedLanguage['locale'];

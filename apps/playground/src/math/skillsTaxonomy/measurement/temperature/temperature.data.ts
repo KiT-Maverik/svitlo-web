@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { temperature_SkillGroup_Ids } from './temperature.ids';
 import { temperature_Skills_Ids } from './skills/index.ids';
 

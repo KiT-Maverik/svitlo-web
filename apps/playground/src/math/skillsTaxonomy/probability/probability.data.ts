@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { probability_SkillDomain_Ids } from './probability.ids';
 import { probability_SkillGroups_Ids } from './index.ids';
 

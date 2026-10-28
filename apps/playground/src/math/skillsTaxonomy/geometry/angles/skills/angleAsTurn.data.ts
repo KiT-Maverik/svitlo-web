@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { angles_Skills_Ids } from './index.ids';
 
 export const angleAsTurn_Skill_Data = buildSkillConfig({

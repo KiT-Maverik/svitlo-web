@@ -1,4 +1,4 @@
-import { buildLessonConfig } from '@/utils';
+import { buildLessonConfig } from '@svitlo/engine/builders';
 import { locales as rayLocales } from './sections/theory/resources/scenes/LightRayDiagram/lightRayDiagram.locale';
 import { locales as simulationLocales } from './sections/theory/resources/scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
 import { locales as checkpointLocales } from './sections/theory/resources/scenes/Checkpoint/Checkpoint.locale';

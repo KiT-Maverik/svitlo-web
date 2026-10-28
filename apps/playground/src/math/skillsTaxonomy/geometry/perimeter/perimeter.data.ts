@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { perimeter_SkillGroup_Ids } from './perimeter.ids';
 import { perimeter_Skills_Ids } from './skills/index.ids';
 

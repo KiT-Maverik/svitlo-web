@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const factsWithin10_Skill_Data = buildSkillConfig({

@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { quantities_Skills_Ids } from './index.ids';
 
 export const priceQuantityCost_Skill_Data = buildSkillConfig({

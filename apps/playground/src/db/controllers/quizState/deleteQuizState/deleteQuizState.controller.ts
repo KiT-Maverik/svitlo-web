@@ -1,4 +1,4 @@
-import type { QuizState } from '@types';
+import type { QuizState } from '@svitlo/engine/content';
 import { runStateRequest } from '../../../utils';
 
 export async function deleteQuizState(id: QuizState['id']): Promise<void> {

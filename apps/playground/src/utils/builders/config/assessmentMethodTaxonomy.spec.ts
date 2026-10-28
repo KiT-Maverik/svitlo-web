@@ -2,10 +2,10 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
-import { assessmentMethods_AssessmentMethod_Ids } from '../../../math/assessmentMethodTaxonomy/index.ids';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
+import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
 import * as methods from '../../../math/assessmentMethodTaxonomy/index.data';
-import { buildAssessmentMethodConfig } from './buildAssessmentMethodConfig.utils';
+import { buildAssessmentMethodConfig } from '@svitlo/engine/builders';
 
 const directory = join(process.cwd(), 'src', 'math', 'assessmentMethodTaxonomy');
 const ids = Object.values(assessmentMethods_AssessmentMethod_Ids);

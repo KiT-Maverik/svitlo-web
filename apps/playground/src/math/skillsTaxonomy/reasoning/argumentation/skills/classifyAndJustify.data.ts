@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { argumentation_Skills_Ids } from './index.ids';
 
 export const classifyAndJustify_Skill_Data = buildSkillConfig({

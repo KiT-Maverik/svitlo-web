@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { DEFAULT_SUPPORTED_LANGUAGES } from './languages';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 
 const root = process.cwd();
 const newLanguages = ['lt', 'lv', 'et', 'be', 'ka', 'kk'] as const;

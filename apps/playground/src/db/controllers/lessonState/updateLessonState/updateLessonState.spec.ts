@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { afterEach, describe, it, mock } from 'node:test';
 import { ZodError } from 'zod';
-import type { LessonState } from '@types';
+import type { LessonState } from '@svitlo/engine/content';
 import { updateLessonState } from './updateLessonState.controller';
 import { lessonInProgress, stubUpdateState } from '../../testUtils/controllerTestDoubles';
 

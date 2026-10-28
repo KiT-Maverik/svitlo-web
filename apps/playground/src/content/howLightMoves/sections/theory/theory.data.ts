@@ -1,4 +1,4 @@
-import { buildLessonSectionConfig } from '@/utils';
+import { buildLessonSectionConfig } from '@svitlo/engine/builders';
 import { theory_MarkdownResources_Data } from './resources/markdown/index.data';
 import { theory_SceneResources_Data } from './resources/scenes/index.data';
 import { name_TextResource_Data } from './resources/text/index.data';

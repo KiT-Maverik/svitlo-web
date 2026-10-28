@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
-import type { SkillGroup_Config } from '../../../types/content/skillGroup.types';
-import type { SkillDomain_Config } from '../../../types/content/skillDomain.types';
-import { buildSkillGroupConfig } from './buildSkillGroupConfig.utils';
-import { buildSkillDomainConfig } from './buildSkillDomainConfig.utils';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
+import type { SkillGroup_Config } from '@svitlo/engine/taxonomy';
+import type { SkillDomain_Config } from '@svitlo/engine/taxonomy';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
 const names = () =>
   Object.fromEntries(

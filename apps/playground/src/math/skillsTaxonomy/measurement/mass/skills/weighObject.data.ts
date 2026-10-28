@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { mass_Skills_Ids } from './index.ids';
 
 export const weighObject_Skill_Data = buildSkillConfig({

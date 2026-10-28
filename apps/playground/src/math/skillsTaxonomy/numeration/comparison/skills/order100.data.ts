@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { comparison_Skills_Ids } from './index.ids';
 
 export const order100_Skill_Data = buildSkillConfig({

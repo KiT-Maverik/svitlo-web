@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
-import type { LessonState, QuizResult, QuizState } from '@types';
+import type { LessonState, QuizResult, QuizState } from '@svitlo/engine/content';
 import { DATABASE_NAME, DATABASE_VERSION } from '../../utils/databaseConfig/databaseConfig.utils';
 import type { ControllerCommand, DatabaseInspection } from '@/testing/db-browser-commands';
 

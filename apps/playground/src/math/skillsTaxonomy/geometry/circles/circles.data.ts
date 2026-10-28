@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { circles_SkillGroup_Ids } from './circles.ids';
 import { circles_Skills_Ids } from './skills/index.ids';
 

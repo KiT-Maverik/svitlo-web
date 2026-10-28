@@ -1,4 +1,4 @@
-import type { QuizResult, QuizState } from '@types';
+import type { QuizResult, QuizState } from '@svitlo/engine/content';
 import { updateQuizState } from '../updateQuizState/updateQuizState.controller';
 
 /** Stores an already calculated result and finishes one in-progress quiz run. */

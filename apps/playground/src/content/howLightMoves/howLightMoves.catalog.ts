@@ -1,4 +1,4 @@
-import type { LessonContentCatalog } from '@types';
+import type { LessonContentCatalog } from '@svitlo/engine/content';
 import { name_TextResource_Data } from './resources/text/index.data';
 import { practice_Section_Data } from './sections/practice/index.data';
 import { quiz_Quiz_Data } from './sections/quiz/index.data';

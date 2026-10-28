@@ -5,9 +5,9 @@ import { LightPropagationSimulation } from './LightPropagationSimulation';
 import { locales } from './lightPropagationSimulation.locale';
 import { howLightMoves_Lesson_Data } from '../../../../../index.data';
 import { howLightMovesCatalog } from '../../../../../howLightMoves.catalog';
-import { buildLesson } from '@/utils';
+import { buildLesson } from '@svitlo/engine/builders';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { Locale } from '@types';
+import type { Locale } from '@svitlo/engine/localization';
 
 export const LightPropagationSimulation_fx = {
   render: ({ locale = 'uk-UA' }: { locale?: Locale } = {}) =>

@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { geometry_SkillDomain_Ids } from './geometry.ids';
 import { geometry_SkillGroups_Ids } from './index.ids';
 

@@ -7,7 +7,7 @@ vi.mock('@mui/material/styles', async importOriginal => ({
 }));
 import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { NavbarPreferences_fx } from './NavbarPreferences.unit.fx';
 import { NavbarPreferences_mx } from './NavbarPreferences.unit.mx';
 import { aria } from './NavbarPreferences.constants';

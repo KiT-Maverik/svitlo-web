@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { clock_Skills_Ids } from './index.ids';
 
 export const read24HourClock_Skill_Data = buildSkillConfig({

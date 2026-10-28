@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { collection_Skills_Ids } from './index.ids';
 
 export const classifyByAttribute_Skill_Data = buildSkillConfig({

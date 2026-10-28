@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { expressions_Skills_Ids } from './index.ids';
 
 export const orderOfOperations_Skill_Data = buildSkillConfig({

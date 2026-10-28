@@ -1,4 +1,4 @@
-import { createTextResource } from '@/utils';
+import { createTextResource } from '@svitlo/engine/builders';
 import { theory_TextResources_Ids } from './index.ids';
 
 export const name_TextResource_Data = createTextResource(theory_TextResources_Ids.name, {

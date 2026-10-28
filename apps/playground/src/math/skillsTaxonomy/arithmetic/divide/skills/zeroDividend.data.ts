@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { divide_Skills_Ids } from './index.ids';
 
 export const zeroDividend_Skill_Data = buildSkillConfig({

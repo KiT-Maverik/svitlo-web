@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { perimeter_Skills_Ids } from './index.ids';
 
 export const rectanglePerimeter_Skill_Data = buildSkillConfig({

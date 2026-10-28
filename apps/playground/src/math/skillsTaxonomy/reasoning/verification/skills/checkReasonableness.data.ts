@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { verification_Skills_Ids } from './index.ids';
 
 export const checkReasonableness_Skill_Data = buildSkillConfig({

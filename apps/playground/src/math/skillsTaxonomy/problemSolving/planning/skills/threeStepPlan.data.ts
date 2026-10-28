@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { planning_Skills_Ids } from './index.ids';
 
 export const threeStepPlan_Skill_Data = buildSkillConfig({

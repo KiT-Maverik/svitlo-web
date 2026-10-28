@@ -2,8 +2,9 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { Fragment, type ReactNode } from 'react';
 import { MarkdownContent } from '@/components/widgets';
-import type { LessonSection } from '@types';
-import { getLocaleDirection, type Locale } from '@types';
+import type { LessonSection } from '@svitlo/engine/content';
+import { getLocaleDirection } from '@svitlo/engine/localization';
+import type { Locale } from '@svitlo/engine/localization';
 
 async function readMarkdown(fileLocation: string) {
   'use cache';

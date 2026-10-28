@@ -1,5 +1,5 @@
 import { createElement } from 'react';
-import type { SceneResource_Config } from '@types';
+import type { SceneResource_Config } from '@svitlo/engine/content';
 import { theory_SceneResources_Ids } from './index.ids';
 import { LightRayDiagram } from './LightRayDiagram/LightRayDiagram';
 import { LightPropagationSimulation } from './LightPropagationSimulation/LightPropagationSimulation';

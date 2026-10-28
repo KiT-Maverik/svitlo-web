@@ -1,4 +1,4 @@
-import type { AssessmentMethodKey } from '../../../types/content/assessmentMethod.types';
+import type { AssessmentMethodKey } from '@svitlo/engine/content';
 
 export const ko_AssessmentMethod_Locale = {
   retrieval: {

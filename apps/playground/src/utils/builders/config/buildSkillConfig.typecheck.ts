@@ -1,5 +1,5 @@
-import type { Skill_Config } from '../../../types/content/skill.types';
-import { buildSkillConfig } from './buildSkillConfig.utils';
+import type { Skill_Config } from '@svitlo/engine/taxonomy';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 const names = {} as Skill_Config['name'];
 

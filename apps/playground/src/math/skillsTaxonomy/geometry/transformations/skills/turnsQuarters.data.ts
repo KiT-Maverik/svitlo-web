@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { transformations_Skills_Ids } from './index.ids';
 
 export const turnsQuarters_Skill_Data = buildSkillConfig({

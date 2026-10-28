@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { placeValue_Skills_Ids } from './index.ids';
 
 export const zeroPlaceholder_Skill_Data = buildSkillConfig({

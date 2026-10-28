@@ -1,4 +1,4 @@
-import type { QuizState } from '@types';
+import type { QuizState } from '@svitlo/engine/content';
 import { quizStateSchema } from '../../../schemas/quizState/quizState.schema';
 import { updateState } from '../../../utils';
 

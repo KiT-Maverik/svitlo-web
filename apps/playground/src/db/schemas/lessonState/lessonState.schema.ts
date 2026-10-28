@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { LessonState } from '@types';
+import type { LessonState } from '@svitlo/engine/content';
 
 const id = z.string().min(1);
 const base = { id, lessonId: id };

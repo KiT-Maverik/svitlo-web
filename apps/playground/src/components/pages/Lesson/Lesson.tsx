@@ -1,6 +1,7 @@
 import { Container } from '@mui/material';
-import type { Lesson_Config, LessonContentCatalog, Locale, Quiz } from '@types';
-import { buildLesson } from '@/utils';
+import type { Lesson_Config, LessonContentCatalog, Quiz } from '@svitlo/engine/content';
+import type { Locale } from '@svitlo/engine/localization';
+import { buildLesson } from '@svitlo/engine/builders';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
 import { LearningLayout } from '@layout';
 import { LessonProgressProvider } from './LessonProgress/LessonProgress';

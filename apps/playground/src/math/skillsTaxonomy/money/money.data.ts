@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { money_SkillDomain_Ids } from './money.ids';
 import { money_SkillGroups_Ids } from './index.ids';
 

@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { fractions_SkillDomain_Ids } from './fractions.ids';
 import { fractions_SkillGroups_Ids } from './index.ids';
 

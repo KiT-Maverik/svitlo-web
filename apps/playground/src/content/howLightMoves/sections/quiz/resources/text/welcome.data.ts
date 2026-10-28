@@ -1,4 +1,4 @@
-import { createTextResource } from '@/utils';
+import { createTextResource } from '@svitlo/engine/builders';
 import { quiz_TextResources_Ids } from './index.ids';
 
 export const welcome_TextResource_Data = createTextResource(quiz_TextResources_Ids.welcome, {

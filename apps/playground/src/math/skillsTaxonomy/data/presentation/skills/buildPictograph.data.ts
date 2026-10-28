@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { presentation_Skills_Ids } from './index.ids';
 
 export const buildPictograph_Skill_Data = buildSkillConfig({

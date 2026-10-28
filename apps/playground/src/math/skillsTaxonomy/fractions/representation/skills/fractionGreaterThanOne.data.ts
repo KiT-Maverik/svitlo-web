@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { representation_Skills_Ids } from './index.ids';
 
 export const fractionGreaterThanOne_Skill_Data = buildSkillConfig({

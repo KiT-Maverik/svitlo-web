@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { problemSolving_SkillDomain_Ids } from './problemSolving.ids';
 import { problemSolving_SkillGroups_Ids } from './index.ids';
 

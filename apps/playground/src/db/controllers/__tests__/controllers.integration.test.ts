@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto';
 
 import assert from 'node:assert/strict';
 import { afterEach, beforeEach, describe, it } from 'node:test';
-import type { LessonState, QuizState } from '@types';
+import type { LessonState, QuizState } from '@svitlo/engine/content';
 import {
   completeQuiz,
   createLessonState,

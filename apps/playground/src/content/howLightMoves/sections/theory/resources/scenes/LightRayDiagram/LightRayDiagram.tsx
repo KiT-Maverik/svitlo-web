@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './LightRayDiagram.module.css';
-import { getLocaleDirection } from '@types';
+import { getLocaleDirection } from '@svitlo/engine/localization';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
 import type { LightRayDiagram_Locale } from './lightRayDiagram.locale';
 

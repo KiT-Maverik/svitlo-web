@@ -3,10 +3,10 @@ import { render, screen, within } from '@testing-library/react';
 import { LightRayDiagram } from './LightRayDiagram';
 import { howLightMoves_Lesson_Data } from '../../../../../index.data';
 import { howLightMovesCatalog } from '../../../../../howLightMoves.catalog';
-import { buildLesson } from '@/utils';
+import { buildLesson } from '@svitlo/engine/builders';
 import type { LightRayDiagram_Locale } from './lightRayDiagram.locale';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { Locale } from '@types';
+import type { Locale } from '@svitlo/engine/localization';
 
 export const LightRayDiagram_fx = {
   render: ({ locale = 'uk-UA' }: { locale?: Locale } = {}) =>

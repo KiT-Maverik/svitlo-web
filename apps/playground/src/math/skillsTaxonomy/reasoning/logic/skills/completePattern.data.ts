@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { logic_Skills_Ids } from './index.ids';
 
 export const completePattern_Skill_Data = buildSkillConfig({

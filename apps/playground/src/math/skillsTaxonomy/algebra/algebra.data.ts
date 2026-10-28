@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { algebra_SkillDomain_Ids } from './algebra.ids';
 import { algebra_SkillGroups_Ids } from './index.ids';
 

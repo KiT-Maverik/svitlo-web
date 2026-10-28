@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { DEFAULT_SUPPORTED_LANGUAGES, type LanguageDefinition } from './languages';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
+import type { LanguageDefinition } from '@svitlo/engine/localization';
 
 describe('Language definitions', () => {
   it('describes language metadata without duplicating flag presentation data', () => {

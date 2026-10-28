@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { formalization_SkillGroup_Ids } from './formalization.ids';
 import { formalization_Skills_Ids } from './skills/index.ids';
 

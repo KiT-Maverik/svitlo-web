@@ -1,4 +1,4 @@
-import type { Locale } from '@types';
+import type { Locale } from '@svitlo/engine/localization';
 import { locale as uk } from './uk-UA';
 import { locale as lt } from './lt-LT';
 import { locale as lv } from './lv-LV';

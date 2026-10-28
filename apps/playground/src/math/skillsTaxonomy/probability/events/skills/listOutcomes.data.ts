@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { events_Skills_Ids } from './index.ids';
 
 export const listOutcomes_Skill_Data = buildSkillConfig({

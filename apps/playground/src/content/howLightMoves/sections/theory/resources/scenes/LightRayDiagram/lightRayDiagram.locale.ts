@@ -1,4 +1,4 @@
-import type { DefaultSupportedLanguage } from '@types';
+import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
 
 const uk = {
   scene: {

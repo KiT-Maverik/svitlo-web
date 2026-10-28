@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { calendar_SkillGroup_Ids } from './calendar.ids';
 import { calendar_Skills_Ids } from './skills/index.ids';
 

@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { orientation_SkillGroup_Ids } from './orientation.ids';
 import { orientation_Skills_Ids } from './skills/index.ids';
 

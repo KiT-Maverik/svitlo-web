@@ -1,9 +1,9 @@
 import { createElement } from 'react';
-import type { Locale } from '@types';
+import type { Locale } from '@svitlo/engine/localization';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
 import { howLightMoves_Lesson_Data } from '../../../../../index.data';
 import { howLightMovesCatalog } from '../../../../../howLightMoves.catalog';
-import { buildLesson } from '@/utils';
+import { buildLesson } from '@svitlo/engine/builders';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Practice } from './Practice';

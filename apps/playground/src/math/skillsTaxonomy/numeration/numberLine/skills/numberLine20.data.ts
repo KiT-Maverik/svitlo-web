@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { numberLine_Skills_Ids } from './index.ids';
 
 export const numberLine20_Skill_Data = buildSkillConfig({

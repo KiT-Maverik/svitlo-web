@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useReducer, useRef, type ReactNode } from 'react';
-import type { LessonState } from '@types';
+import type { LessonState } from '@svitlo/engine/content';
 import { createLessonState, getQuizState, listLessonStates, saveLessonState } from '@/db';
 
 export type Progress = {

@@ -3,10 +3,10 @@ import type { Metadata } from 'next';
 import { Container } from '@mui/material';
 import { Lesson } from '@pages';
 import { resolveLocale } from '@/i18n/resolveLocale';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@types';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { howLightMoves_Lesson_Data } from '@/content/howLightMoves/index.data';
 import { howLightMovesCatalog } from '@/content/howLightMoves/howLightMoves.catalog';
-import { buildTextResource } from '@/utils';
+import { buildTextResource } from '@svitlo/engine/builders';
 
 export async function generateMetadata({ searchParams }: PageProps<'/topics/light'>): Promise<Metadata> {
   const locale = resolveLocale(

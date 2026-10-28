@@ -1,4 +1,4 @@
-import type { Quiz_Config } from '@types';
+import type { Quiz_Config } from '@svitlo/engine/content';
 import { name_TextResource_Data, welcome_TextResource_Data } from './resources/text/index.data';
 import {
   airVacuumSpeed_Question_Data,

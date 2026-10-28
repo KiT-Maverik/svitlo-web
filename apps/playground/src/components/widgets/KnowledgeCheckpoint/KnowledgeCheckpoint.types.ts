@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
-import type { Locale, Resource } from '@types';
+import type { Locale } from '@svitlo/engine/localization';
+import type { Resource } from '@svitlo/engine/content';
 
 export interface KnowledgeCheckpointItem {
   id: string;

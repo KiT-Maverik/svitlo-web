@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { parity_Skills_Ids } from './index.ids';
 
 export const evenOdd_Skill_Data = buildSkillConfig({

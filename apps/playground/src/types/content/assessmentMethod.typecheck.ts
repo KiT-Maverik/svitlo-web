@@ -1,6 +1,6 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '../../math/assessmentMethodTaxonomy/index.ids';
-import type { AssessmentMethodId } from './assessmentMethod.types';
-import type { Question_Base_Config } from './question.types';
+import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
+import type { AssessmentMethodId } from '@svitlo/engine/content';
+import type { Question_Base_Config } from '@svitlo/engine/content';
 
 const valid: AssessmentMethodId = assessmentMethods_AssessmentMethod_Ids.retrieval;
 void valid;

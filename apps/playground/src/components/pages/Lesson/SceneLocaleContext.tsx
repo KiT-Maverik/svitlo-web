@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, type ReactNode } from 'react';
-import type { Locale } from '@types';
+import type { Locale } from '@svitlo/engine/localization';
 
 type SceneLocaleValue = {
   locale: Locale;

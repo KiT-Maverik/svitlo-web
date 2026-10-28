@@ -3,7 +3,7 @@
 import { useState, type CSSProperties } from 'react';
 import { LIGHT_SPEED_KM_S, media } from './Practice.constants';
 import styles from './Practice.module.css';
-import { getLocaleDirection } from '@types';
+import { getLocaleDirection } from '@svitlo/engine/localization';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
 import type { Practice_Locale } from './Practice.locale';
 

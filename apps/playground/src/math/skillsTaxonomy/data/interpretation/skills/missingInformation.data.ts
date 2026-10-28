@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { interpretation_Skills_Ids } from './index.ids';
 
 export const missingInformation_Skill_Data = buildSkillConfig({

@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { notation_Skills_Ids } from './index.ids';
 
 export const readWrite20_Skill_Data = buildSkillConfig({

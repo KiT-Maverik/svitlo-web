@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { planning_Skills_Ids } from './index.ids';
 
 export const multipleSolutionStrategies_Skill_Data = buildSkillConfig({

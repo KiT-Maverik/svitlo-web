@@ -1,4 +1,4 @@
-import { createTextResource } from '@/utils';
+import { createTextResource } from '@svitlo/engine/builders';
 
 import { howLightMoves_TextResources_Ids } from './index.ids';
 

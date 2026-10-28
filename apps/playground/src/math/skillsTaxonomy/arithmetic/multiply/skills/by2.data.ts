@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { multiply_Skills_Ids } from './index.ids';
 
 export const by2_Skill_Data = buildSkillConfig({

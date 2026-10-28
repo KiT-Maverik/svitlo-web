@@ -1,4 +1,4 @@
-import { createTextResource } from '@/utils';
+import { createTextResource } from '@svitlo/engine/builders';
 import { practice_TextResources_Ids } from './index.ids';
 
 export const task_TextResource_Data = createTextResource(practice_TextResources_Ids.task, {

@@ -3,7 +3,7 @@
 import { useState, useSyncExternalStore } from 'react';
 import { Box, Button, Paper, Slider, Typography } from '@mui/material';
 import styles from './LightPropagationSimulation.module.css';
-import { getLocaleDirection } from '@types';
+import { getLocaleDirection } from '@svitlo/engine/localization';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
 import type { LightPropagationSimulation_Locale } from './lightPropagationSimulation.locale';
 

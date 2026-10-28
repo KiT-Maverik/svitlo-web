@@ -1,6 +1,6 @@
-import type { SkillGroup_Config } from '../../../types/content/skillGroup.types';
-import { buildSkillGroupConfig } from './buildSkillGroupConfig.utils';
-import { buildSkillDomainConfig } from './buildSkillDomainConfig.utils';
+import type { SkillGroup_Config } from '@svitlo/engine/taxonomy';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
 declare const names: SkillGroup_Config['name'];
 const group = buildSkillGroupConfig({

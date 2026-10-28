@@ -1,4 +1,4 @@
-import { buildSkillDomainConfig } from '@/utils';
+import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { measurement_SkillDomain_Ids } from './measurement.ids';
 import { measurement_SkillGroups_Ids } from './index.ids';
 

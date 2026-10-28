@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { parity_SkillGroup_Ids } from './parity.ids';
 import { parity_Skills_Ids } from './skills/index.ids';
 

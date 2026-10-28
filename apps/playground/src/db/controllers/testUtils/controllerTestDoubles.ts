@@ -1,6 +1,6 @@
 import { createRequire } from 'node:module';
 import { mock } from 'node:test';
-import type { LessonState, QuizState } from '@types';
+import type { LessonState, QuizState } from '@svitlo/engine/content';
 import type { StateStore } from '../../utils/databaseConfig/databaseConfig.utils';
 
 // The project compiles node:test suites to CommonJS. Mock the concrete exports

@@ -1,4 +1,4 @@
-import { buildSkillGroupConfig } from '@/utils';
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { duration_SkillGroup_Ids } from './duration.ids';
 import { duration_Skills_Ids } from './skills/index.ids';
 

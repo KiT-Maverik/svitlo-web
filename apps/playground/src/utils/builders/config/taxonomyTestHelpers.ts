@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 
 /**
  * Inspect an authored Skill name dictionary without relying on Prettier quote style

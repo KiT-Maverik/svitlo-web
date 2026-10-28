@@ -1,4 +1,4 @@
-import { buildSkillConfig } from '@/utils';
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { comparisons_Skills_Ids } from './index.ids';
 
 export const multiplicativeComparison_Skill_Data = buildSkillConfig({

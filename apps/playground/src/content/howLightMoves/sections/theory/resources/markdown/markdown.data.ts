@@ -1,5 +1,5 @@
-import type { MarkdownResource_AllLocales_Config } from '@types';
-import { createLocalizedFileLocations } from '@/utils';
+import type { MarkdownResource_AllLocales_Config } from '@svitlo/engine/content';
+import { createLocalizedFileLocations } from '@svitlo/engine/localization';
 import { theory_MarkdownResources_Ids } from './index.ids';
 
 export const theory_MarkdownResources_Data = {
