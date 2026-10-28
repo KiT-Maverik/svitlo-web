@@ -12,7 +12,7 @@ The Lesson must **teach, illustrate, invite prediction and meaningful action, ex
 
 1. **Methodologist's approved input:** the actual approved lesson-level Learning Brief or equivalent substantive Methodologist document, with target learning outcomes, factual subject content / authoritative references, target audience, known prerequisites, relevant Skill references, scope and restrictions. A Curriculum title, an unapproved outline or a vague user topic does not substitute for this input. If missing, **stop authoring and request the approved material**; do not create Methodologist output on the Screenwriter's behalf.
 2. **Target package and context:** identify the **specific standalone textbook application package root** (`<PackageRoot>`), intended Lesson, language of the deliverable and reader profile. Do not treat the monorepo root or playground as the target by default.
-3. **Read relevant architecture:** [Roles Proposition](../Roles%20Proposition.md), [Long Chat Overture](../Long%20Chat%20Overture.md), current code contracts/renderers below, applicable `AGENTS.md` and any relevant local instructions. Treat historical concepts as design intent, not automatically implemented APIs.
+3. **Read relevant architecture:** all [Svitlo Architecture & Product Principles](../docs/architecture/README.md), particularly the [Learning Philosophy](../docs/architecture/learning-experience-philosophy.md), [Notes concept](../docs/architecture/lesson-notes.md), [Localization & Accessibility](../docs/architecture/internationalization-and-accessibility.md) and [Offline/Device Compatibility](../docs/architecture/offline-first-and-device-compatibility.md). Also read [Roles Proposition](../Roles%20Proposition.md), [Long Chat Overture](../Long%20Chat%20Overture.md), the current code contracts/renderers below, applicable `AGENTS.md` and local instructions. Historical concepts are design intent, not evidence of already implemented APIs.
 4. **Inspect existing lesson content:** read any applicable existing Lesson, Section, Question, Scene, content-resource and accessibility/localization patterns in the selected app, plus useful reference demonstrations in `apps/playground`. Verify the *present* implementation before authoring platform-specific specifications.
 5. **Editorial integrity:** where the Methodologist input conflicts with reliable facts, is ambiguous, or presupposes nonexistent assessment behavior, **report the exact blocker and proposed clarification**. Do not silently change competencies, learning goals or scoring rules.
 
@@ -145,9 +145,10 @@ For **Quiz/question** sequences, describe the pedagogical **purpose and position
 5. **Compose ordered content blocks.** For each Section, identify actual `blockType` values, purpose, approximate content, transition, learner action, localization/accessibility notes and **current readiness status**. Alternate explanation with meaningful demonstration and interaction when justified; do not create busywork.
 6. **Write audience-ready educational content.** Provide actual examples of key explanations, prompts, model annotations and feedback in the output language; do not hand engineers "put something engaging here". Use verifiable sources and the Methodologist's approved terminology.
 7. **Author each custom Scene specification separately.** Include goal and factual model, trigger/entry, objects/variables, sequence of events, learner inputs, state transitions, expected visual/auditory/text outputs, constraints, feedback content, edge cases, RTL/localization, accessibility alternatives, reduced motion and acceptance scenarios. **Do not author the implementation**. The spec must stand alone as the mandatory input for [Design Scene](./design-scene.skill.md).
-8. **Design practice/review handoffs.** Locate retrieval/checkpoints, useful flashcards or practice where warranted; identify **Assessment Architect-owned** questions and validity/scoring decisions. Mark spacing/repetition needs as future-system dependencies unless actually supported.
-9. **Audit for realism and pedagogy.** Check accuracy, target learner voice, cognitive load, meaningful interactivity, lack of Program plot, type/renderer feasibility, section flow, accessibility, RTL, locale, mobile/low-end device constraints, copyright/source attribution and explicit gaps.
-10. **Stop for editor review.** Deliver the Lesson Script + Scene specs and a short **readiness/dependency report**. Do not auto-run Scene Design, Question implementation, application coding, Program scripting or the next authoring Skill.
+8. **Plan unlocked Lesson Notes.** In the Lesson Script, include **short, atomic recall cues** for significant concepts (not paragraph summaries), each with its intended Section/teaching moment and **proposed unlock trigger**. Author the Notes plan even though the runtime is not implemented; mark it **planned / not wired** and do not invent Note fields or note-unlocked events. Follow the [Notes concept](../docs/architecture/lesson-notes.md).
+9. **Design practice/review handoffs.** Locate retrieval/checkpoints, useful flashcards or practice where warranted; identify **Assessment Architect-owned** questions and validity/scoring decisions. Mark spacing/repetition needs as future-system dependencies unless actually supported.
+10. **Audit for realism and pedagogy.** Check accuracy, target learner voice, cognitive load, meaningful interactivity, lack of Program plot, type/renderer feasibility, section flow, accessibility, RTL, locale, **complete offline-content design and low-device compatibility without silently reducing learning functionality**, copyright/source attribution, Notes plan and explicit gaps. Raise any genuine educational/performance trade-off for editorial review.
+11. **Stop for editor review.** Deliver the Lesson Script + Scene specs and a short **readiness/dependency report**. Do not auto-run Scene Design, Question implementation, application coding, Program scripting or the next authoring Skill.
 
 ## 6. REQUIRED DOCUMENT OUTPUTS
 
@@ -199,6 +200,7 @@ Program dependence: None
 - Learner action, observations and explanatory feedback:
 - Navigation and transition:
 - Accessibility, locale and RTL requirements:
+- Proposed unlocked Note(s) at this moment (brief recall cues; planned, not wired):
 - Implementation dependencies and review notes:
 
 ### <Section 2>
@@ -206,6 +208,12 @@ Program dependence: None
 
 ## CUSTOM SCENE SPECIFICATIONS
 - <Scene name>: <verified relative link to scenes/<scene>.scene-spec.md>
+
+## LESSON NOTES — UNLOCKED RECALL CUES (PLANNED)
+- <Each concise, localized, standalone recall Note; one key idea, not a Lesson recap>
+- <For each: Section/moment, proposed unlock condition and intended order>
+- <Status: planned; no current Note type/event/persistence or generated revision-sheet runtime>
+- <The future learner revision sheet consists only of their unlocked Notes>
 
 ## PRACTICE, RETRIEVAL AND ASSESSMENT HANDOFF
 - <Where learners practice or retrieve; what Assessment Architect must specify>
@@ -275,8 +283,9 @@ including LTR, RTL, reduced motion and assistive-technology use>
 - [ ] Script contains actual learner-facing explanations, demonstrations and interactions, not a generic Markdown lecture or vague creative wish list.
 - [ ] Activity choices make pedagogical sense: cognitive load, meaningful retrieval/feedback, worked examples and transfer are considered without compulsory gimmicks.
 - [ ] Each custom Scene has an independent **full specification**, with observable behavior, accurate model, states, learner actions, accessible alternatives and acceptance scenarios.
+- [ ] The Lesson Script contains a **planned, concise Notes/unlock plan** for recall, without reproducing entire Sections or claiming Note APIs/sync exist.
 - [ ] Every specialized or unsupported experience has an honest feasibility classification and clear engineering dependency; no imaginary API/schema.
-- [ ] Accessibility, localization, responsive/mobile/low-end delivery, reduced motion, LTR/RTL and cultural adaptation were planned.
+- [ ] Accessibility, localization, responsive/mobile/low-end delivery, reduced motion, LTR/RTL, cultural adaptation and **complete offline lesson delivery** were planned. Any case requiring an actual sacrifice of functionality to support weak devices was escalated; no content was silently dropped.
 - [ ] Quiz/Question scoring, correct-answer validity, mastery and retry policies are left to **Assessment Architect**, not silently decided by Screenwriter.
 - [ ] Links to approved sources, Methodologist brief, existing Skills and Scene specs are **real and relative to output files**; all uncertainties and unresolved dependencies are explicit.
 - [ ] Generated Lesson Script and Scene specs are handed off for **editor approval**, with no automatic runtime implementation.
@@ -285,7 +294,7 @@ including LTR, RTL, reduced motion and assistive-technology use>
 
 Provide:
 
-1. **One** draft Nextgen Lesson Script Markdown at the agreed target textbook docs location.
+1. **One** draft Nextgen Lesson Script Markdown, **including a planned Lesson Notes/unlock section**, at the agreed target textbook docs location.
 2. **One specification per custom Scene**, with real relative links from the Lesson Script. A purely text or existing-widget Lesson need not create an empty Scene specification.
 3. A concise editorial report stating the **most important interactive concepts**, how the Lesson avoids passive content without losing clarity, the chosen Sections/Resource blocks, **verified runtime capabilities vs proposed features**, accessibility/localization decisions, any source/technical gaps and which artifacts are waiting for approval.
 
