@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { getLearningLayoutMessages } from '@svitlo/ui-kit/learning-layout/locales';
+import { getNavbarPreferencesMessages } from '@svitlo/ui-kit/learning-layout/preferences/locales';
 
 const root = process.cwd();
 const newLanguages = ['lt', 'lv', 'et', 'be', 'ka', 'kk'] as const;
@@ -42,14 +43,13 @@ describe('Extended locale resource coverage', () => {
 
   it('provides locale dictionaries for the learner interface and lesson UI', () => {
     for (const locale of newLocales) expect(getLearningLayoutMessages(locale).brand).toBeTruthy();
-    for (const folder of [
-      'src/components/layout/LearningLayout/NavbarPreferences/locales',
-      'src/components/pages/Lesson/locales',
-    ]) {
-      for (const locale of newLocales) {
-        const source = readFileSync(join(root, folder, `${locale}.ts`), 'utf8');
-        expect(source).toContain('export const locale');
-      }
+    for (const locale of newLocales) {
+      const preferences = getNavbarPreferencesMessages(locale);
+      expect(preferences.language).toBeTruthy();
+      expect(preferences.theme.dark).toBeTruthy();
+      expect(preferences.theme.light).toBeTruthy();
+      const source = readFileSync(join(root, 'src/components/pages/Lesson/locales', `${locale}.ts`), 'utf8');
+      expect(source).toContain('export const locale');
     }
   });
 });

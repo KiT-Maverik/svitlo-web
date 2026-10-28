@@ -5,10 +5,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
-import { useColorScheme } from '@mui/material/styles';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { Flag } from '@svitlo/ui-kit/widgets';
-import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
+import { DEFAULT_SUPPORTED_LANGUAGES, type Locale } from '@svitlo/engine/localization';
+import { Flag } from '../../../widgets/Flag/Flag';
 import { getNavbarPreferencesMessages } from './locales';
 import { aria } from './NavbarPreferences.constants';
 
@@ -18,8 +16,15 @@ const locales = DEFAULT_SUPPORTED_LANGUAGES.map(({ locale, language, nativeName 
   nativeName,
 }));
 
-function LocaleSelector() {
-  const { locale, setLocale } = useLocale();
+export type NavbarPreferencesProps = {
+  locale: Locale;
+  onLocaleChange: (locale: Locale) => void;
+  mode?: 'light' | 'dark' | 'system';
+  systemMode?: 'light' | 'dark';
+  onThemeChange: (mode: 'light' | 'dark') => void;
+};
+
+function LocaleSelector({ locale, onLocaleChange }: Pick<NavbarPreferencesProps, 'locale' | 'onLocaleChange'>) {
 
   return (
     <Select
@@ -39,7 +44,7 @@ function LocaleSelector() {
       }}
       onChange={event => {
         const selected = locales.find(option => option.locale === event.target.value);
-        if (selected) setLocale(selected.locale);
+        if (selected) onLocaleChange(selected.locale);
       }}
       sx={{ minWidth: 92 }}
     >
@@ -55,10 +60,8 @@ function LocaleSelector() {
   );
 }
 
-function ThemeSwitch() {
-  const { locale } = useLocale();
+function ThemeSwitch({ locale, mode, systemMode, onThemeChange }: Pick<NavbarPreferencesProps, 'locale' | 'mode' | 'systemMode' | 'onThemeChange'>) {
   const messages = getNavbarPreferencesMessages(locale);
-  const { mode, systemMode, setMode } = useColorScheme();
   const isDark = mode === 'dark' || (mode === 'system' && systemMode === 'dark');
 
   return (
@@ -66,18 +69,18 @@ function ThemeSwitch() {
       <Switch
         checked={isDark}
         disabled={mode === undefined}
-        onChange={event => setMode(event.target.checked ? 'dark' : 'light')}
+        onChange={event => onThemeChange(event.target.checked ? 'dark' : 'light')}
         slotProps={{ input: { 'aria-label': aria.theme } }}
       />
     </Tooltip>
   );
 }
 
-export default function NavbarPreferences() {
+export default function NavbarPreferences({ locale, onLocaleChange, mode, systemMode, onThemeChange }: NavbarPreferencesProps) {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-      <LocaleSelector />
-      <ThemeSwitch />
+      <LocaleSelector locale={locale} onLocaleChange={onLocaleChange} />
+      <ThemeSwitch locale={locale} mode={mode} systemMode={systemMode} onThemeChange={onThemeChange} />
     </Box>
   );
 }
