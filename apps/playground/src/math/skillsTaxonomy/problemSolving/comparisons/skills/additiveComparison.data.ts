@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { comparisons_Skills_Ids } from './index.ids';
+
+export const additiveComparison_Skill_Data = buildSkillConfig({
+  id: comparisons_Skills_Ids.additiveComparison,
+  name: {
+    "lt": "Sudėtinių palyginimo uždavinių sprendimas",
+    "lv": "Saskaitāmu lielumu salīdzināšanas uzdevumu risināšana",
+    "et": "Liitvahe võrdlusülesannete lahendamine",
+    "be": "Разьвязваньне задач на розьнічнае параўнаньне",
+    "ka": "შეკრებით შედარების ამოცანების ამოხსნა",
+    "kk": "Айырмалық салыстыру есептерін шығару",
+    en: "Solving additive comparison problems",
+    zh: "解决加法比较问题",
+    hi: "योगात्मक तुलना की समस्याएँ हल करना",
+    es: "Resolver comparaciones aditivas",
+    ar: "حل مسائل المقارنة بالفرق",
+    fr: "Résoudre des comparaisons additives",
+    bn: "যোগভিত্তিক তুলনার সমস্যা সমাধান",
+    pt: "Resolver comparações aditivas",
+    ur: "جمعی موازنے کے مسائل حل کرنا",
+    id: "Menyelesaikan perbandingan aditif",
+    de: "Additive Vergleichsaufgaben lösen",
+    ja: "差による比較問題を解く",
+    ko: "덧셈 비교 문제 풀기",
+    tr: "Toplamsal karşılaştırma problemlerini çözme",
+    vi: "Giải bài toán so sánh hơn kém",
+    ta: "கூட்டல் ஒப்பீட்டுக் கணக்கைத் தீர்த்தல்",
+    te: "కూడిక పోలిక సమస్యలను పరిష్కరించడం",
+    mr: "बेरीजाधारित तुलनेच्या समस्या सोडवणे",
+    ms: "Menyelesaikan perbandingan penambahan",
+    he: "פתרון בעיות השוואה חיבורית",
+    pl: "Rozwiązywanie zadań na porównanie różnicowe",
+    uk: "Розв’язування задач на різницеве порівняння",
+  },
+});

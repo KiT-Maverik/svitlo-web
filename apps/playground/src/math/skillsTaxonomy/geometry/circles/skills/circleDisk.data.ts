@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { circles_Skills_Ids } from './index.ids';
+
+export const circleDisk_Skill_Data = buildSkillConfig({
+  id: circles_Skills_Ids.circleDisk,
+  name: {
+    en: "Distinguishing the circumference and the disk",
+    "lt": "Apskritimo ir skritulio atskyrimas",
+    "lv": "Riņķa līnijas un riņķa atšķiršana",
+    "et": "Ringjoone ja ringi eristamine",
+    "be": "Адрозьненьне акружнасьці і круга",
+    "ka": "წრეწირისა და წრის გარჩევა",
+    "kk": "Шеңбер мен дөңгелекті ажырату",
+    zh: "区分圆周与圆面",
+    hi: "वृत्त की परिधि और अंदरूनी क्षेत्र में अंतर",
+    es: "Distinguir circunferencia y círculo",
+    ar: "التمييز بين محيط الدائرة والقرص",
+    fr: "Distinguer cercle et disque",
+    bn: "বৃত্তরেখা ও বৃত্তাকার ক্ষেত্রের পার্থক্য",
+    pt: "Distinguir circunferência e círculo",
+    ur: "دائرے کی حد اور گول سطح میں فرق",
+    id: "Membedakan keliling lingkaran dan daerah lingkaran",
+    de: "Kreislinie und Kreisfläche unterscheiden",
+    ja: "円周と円の内部を区別する",
+    ko: "원둘레와 원판 구별하기",
+    tr: "Çember ile daireyi ayırt etme",
+    vi: "Phân biệt đường tròn và hình tròn",
+    ta: "வட்டக் கோடும் வட்டப் பரப்பும் வேறுபடுத்துதல்",
+    te: "వృత్త పరిధి మరియు వృత్త ప్రాంతాన్ని వేరు చేయడం",
+    mr: "वर्तुळाची रेषा आणि आतील क्षेत्र वेगळे ओळखणे",
+    ms: "Membezakan lilitan bulatan dan cakera",
+    he: "הבחנה בין מעגל לעיגול",
+    pl: "Rozróżnianie okręgu i koła",
+    uk: "Розрізнення кола та круга",
+  },
+});

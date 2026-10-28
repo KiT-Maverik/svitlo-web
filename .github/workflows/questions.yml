@@ -37,4 +37,4 @@ jobs:
         if: always()
         with:
           name: questions-test-results
-          path: frontend/playground/test-results/
+          path: apps/playground/test-results/

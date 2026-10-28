@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { groups_Skills_Ids } from './index.ids';
+
+export const correspondenceCombinations_Skill_Data = buildSkillConfig({
+  id: groups_Skills_Ids.correspondenceCombinations,
+  name: {
+    "lt": "Dviejų rinkinių derinių skaičiavimas",
+    "lv": "Divu kopu kombināciju skaitīšana",
+    "et": "Kahe hulga kombinatsioonide loendamine",
+    "be": "Падлік камбінацыяў двух набораў",
+    "ka": "ორი სიმრავლის კომბინაციების დათვლა",
+    "kk": "Екі жиынның комбинацияларын санау",
+    en: "Counting combinations from two sets",
+    zh: "计算两个集合的组合数",
+    hi: "दो समुच्चयों के संयोजन गिनना",
+    es: "Contar combinaciones de dos conjuntos",
+    ar: "عد تركيبات مجموعتين",
+    fr: "Dénombrer les combinaisons de deux ensembles",
+    bn: "দুই সেটের সমন্বয় গণনা",
+    pt: "Contar combinações de dois conjuntos",
+    ur: "دو مجموعوں کے امتزاج گننا",
+    id: "Menghitung kombinasi dari dua himpunan",
+    de: "Kombinationen aus zwei Mengen zählen",
+    ja: "二つの集合の組合せを数える",
+    ko: "두 집합의 조합 수 세기",
+    tr: "İki kümenin kombinasyonlarını sayma",
+    vi: "Đếm tổ hợp từ hai tập hợp",
+    ta: "இரண்டு தொகுதிகளின் சேர்க்கைகளை எண்ணுதல்",
+    te: "రెండు సమితుల కలయికలను లెక్కించడం",
+    mr: "दोन संचांचे संयोग मोजणे",
+    ms: "Mengira gabungan daripada dua set",
+    he: "ספירת צירופים משתי קבוצות",
+    pl: "Liczenie kombinacji z dwóch zbiorów",
+    uk: "Підрахунок комбінацій двох наборів",
+  },
+});

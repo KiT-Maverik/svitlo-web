@@ -20,6 +20,14 @@
     "./content": {
       "types": "./dist/content.d.ts",
       "default": "./dist/content.js"
+    },
+    "./builders": {
+      "types": "./dist/builders.d.ts",
+      "default": "./dist/builders.js"
+    },
+    "./generation": {
+      "types": "./dist/generation.d.ts",
+      "default": "./dist/generation.js"
     }
   },
   "files": [
@@ -27,11 +35,13 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "typecheck": "tsc -p tsconfig.build.json --noEmit",
-    "prepack": "npm run build"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build",
+    "test": "tsc -p tsconfig.test.json && node --test .test-build/utils/builders/*/*.spec.js .test-build/utils/createDynamicQuestion/*.spec.js .test-build/utils/createTextResource/*.spec.js .test-build/types/content/*.spec.js"
   },
   "devDependencies": {
-    "typescript": "^5"
+    "typescript": "^5",
+    "@types/node": "^20"
   },
   "typesVersions": {
     "*": {
@@ -41,11 +51,17 @@
       "taxonomy": [
         "dist/taxonomy.d.ts"
       ],
-      "*": [
-        "dist/index.d.ts"
-      ],
       "content": [
         "dist/content.d.ts"
+      ],
+      "builders": [
+        "dist/builders.d.ts"
+      ],
+      "generation": [
+        "dist/generation.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
       ]
     }
   }

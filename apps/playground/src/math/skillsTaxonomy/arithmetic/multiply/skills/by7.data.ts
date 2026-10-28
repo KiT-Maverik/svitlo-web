@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { multiply_Skills_Ids } from './index.ids';
+
+export const by7_Skill_Data = buildSkillConfig({
+  id: multiply_Skills_Ids.by7,
+  name: {
+    "lt": "Daugyba — × 7",
+    "lv": "Reizināšana — × 7",
+    "et": "Korrutamine — × 7",
+    "be": "Множаньне — × 7",
+    "ka": "გამრავლება — × 7",
+    "kk": "Көбейту — × 7",
+    en: "Multiplication — × 7",
+    zh: "乘法 — × 7",
+    hi: "गुणा — × 7",
+    es: "Multiplicación — × 7",
+    ar: "الضرب — × 7",
+    fr: "Multiplication — × 7",
+    bn: "গুণ — × 7",
+    pt: "Multiplicação — × 7",
+    ur: "ضرب — × 7",
+    id: "Perkalian — × 7",
+    de: "Multiplikation — × 7",
+    ja: "乗法 — × 7",
+    ko: "곱셈 — × 7",
+    tr: "Çarpma — × 7",
+    vi: "Phép nhân — × 7",
+    ta: "பெருக்கல் — × 7",
+    te: "గుణకారం — × 7",
+    mr: "गुणाकार — × 7",
+    ms: "Pendaraban — × 7",
+    he: "כפל — × 7",
+    pl: "Mnożenie — × 7",
+    uk: "Множення — × 7",
+  },
+});

@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { divide_Skills_Ids } from './index.ids';
+
+export const by5_Skill_Data = buildSkillConfig({
+  id: divide_Skills_Ids.by5,
+  name: {
+    "lt": "Dalyba — ÷ 5",
+    "lv": "Dalīšana — ÷ 5",
+    "et": "Jagamine — ÷ 5",
+    "be": "Дзяленьне — ÷ 5",
+    "ka": "გაყოფა — ÷ 5",
+    "kk": "Бөлу — ÷ 5",
+    en: "Division — ÷ 5",
+    zh: "除法 — ÷ 5",
+    hi: "भाग — ÷ 5",
+    es: "División — ÷ 5",
+    ar: "القسمة — ÷ 5",
+    fr: "Division — ÷ 5",
+    bn: "ভাগ — ÷ 5",
+    pt: "Divisão — ÷ 5",
+    ur: "تقسیم — ÷ 5",
+    id: "Pembagian — ÷ 5",
+    de: "Division — ÷ 5",
+    ja: "除法 — ÷ 5",
+    ko: "나눗셈 — ÷ 5",
+    tr: "Bölme — ÷ 5",
+    vi: "Phép chia — ÷ 5",
+    ta: "வகுத்தல் — ÷ 5",
+    te: "భాగహారం — ÷ 5",
+    mr: "भागाकार — ÷ 5",
+    ms: "Pembahagian — ÷ 5",
+    he: "חילוק — ÷ 5",
+    pl: "Dzielenie — ÷ 5",
+    uk: "Ділення — ÷ 5",
+  },
+});

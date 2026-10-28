@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { transformations_Skills_Ids } from './index.ids';
+
+export const reflectionSymmetry_Skill_Data = buildSkillConfig({
+  id: transformations_Skills_Ids.reflectionSymmetry,
+  name: {
+    en: "Finding symmetry axes and completing reflections",
+    "lt": "Simetrijos ašių radimas ir atspindžių užbaigimas",
+    "lv": "Simetrijas asu atrašana un atspoguļojumu pabeigšana",
+    "et": "Sümmeetriatelgede leidmine ja peegelpildi täiendamine",
+    "be": "Знаходжаньне восяў сымэтрыі і дапаўненьне адлюстраваньняў",
+    "ka": "სიმეტრიის ღერძების პოვნა და ანარეკლების დასრულება",
+    "kk": "Симметрия осьтерін табу және шағылдыруды толықтыру",
+    zh: "找对称轴并补全轴对称图形",
+    hi: "सममिति अक्ष ढूँढना और प्रतिबिंब पूरा करना",
+    es: "Hallar ejes de simetría y completar reflejos",
+    ar: "إيجاد محاور التناظر وإكمال الانعكاسات",
+    fr: "Trouver les axes de symétrie et compléter les reflets",
+    bn: "প্রতিসাম্য অক্ষ খুঁজে প্রতিবিম্ব পূর্ণ করা",
+    pt: "Encontrar eixos de simetria e completar reflexos",
+    ur: "محورِ تقارن تلاش کرنا اور انعکاس مکمل کرنا",
+    id: "Menentukan sumbu simetri dan melengkapi pencerminan",
+    de: "Symmetrieachsen finden und Spiegelbilder ergänzen",
+    ja: "対称軸を見つけて線対称図形を完成させる",
+    ko: "대칭축 찾기와 대칭 그림 완성",
+    tr: "Simetri eksenini bulma ve yansımayı tamamlama",
+    vi: "Tìm trục đối xứng và hoàn thành hình đối xứng",
+    ta: "சமச்சீர் அச்சைக் கண்டறிந்து பிரதிபலிப்பை நிறைவு செய்தல்",
+    te: "సౌష్టవ అక్షాలను గుర్తించి ప్రతిబింబాన్ని పూర్తి చేయడం",
+    mr: "सममिती अक्ष शोधणे आणि प्रतिबिंब पूर्ण करणे",
+    ms: "Mencari paksi simetri dan melengkapkan pantulan",
+    he: "מציאת צירי סימטריה והשלמת שיקופים",
+    pl: "Wyznaczanie osi symetrii i uzupełnianie odbić",
+    uk: "Знаходження осі симетрії та добудова відбиття",
+  },
+});

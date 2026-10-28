@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { multiply_Skills_Ids } from './index.ids';
+
+export const threeDigitByOne_Skill_Data = buildSkillConfig({
+  id: multiply_Skills_Ids.threeDigitByOne,
+  name: {
+    "lt": "Daugyba — triženklis skaičius iš vienaženklio",
+    "lv": "Reizināšana — trīsciparu skaitlis ar viencipara skaitli",
+    "et": "Korrutamine — kolmekohaline arv ühekohalisega",
+    "be": "Множаньне — трохзначны лік на адназначны",
+    "ka": "გამრავლება — სამნიშნა რიცხვი ერთნიშნაზე",
+    "kk": "Көбейту — үш таңбалы санды бір таңбалы санға",
+    en: "Multiplication — 3-digit×1-digit",
+    zh: "乘法 — 3-位数×1-位数",
+    hi: "गुणा — 3-अंकीय×1-अंकीय",
+    es: "Multiplicación — 3-cifras×1-cifras",
+    ar: "الضرب — 3-أرقام×1-أرقام",
+    fr: "Multiplication — 3-chiffres×1-chiffres",
+    bn: "গুণ — 3-অঙ্কের×1-অঙ্কের",
+    pt: "Multiplicação — 3-algarismos×1-algarismos",
+    ur: "ضرب — 3-ہندسوں×1-ہندسوں",
+    id: "Perkalian — 3-angka×1-angka",
+    de: "Multiplikation — 3-stellige×1-stellige",
+    ja: "乗法 — 3-桁の数×1-桁の数",
+    ko: "곱셈 — 3-자리 수×1-자리 수",
+    tr: "Çarpma — 3-basamaklı×1-basamaklı",
+    vi: "Phép nhân — 3-chữ số×1-chữ số",
+    ta: "பெருக்கல் — 3-இலக்க×1-இலக்க",
+    te: "గుణకారం — 3-అంకెల×1-అంకెల",
+    mr: "गुणाकार — 3-अंकी×1-अंकी",
+    ms: "Pendaraban — 3-digit×1-digit",
+    he: "כפל — 3-ספרות×1-ספרות",
+    pl: "Mnożenie — 3-cyfrowe×1-cyfrowe",
+    uk: "Множення — 3-цифрові×1-цифрові",
+  },
+});

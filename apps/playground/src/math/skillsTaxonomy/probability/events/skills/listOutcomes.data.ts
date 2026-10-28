@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { events_Skills_Ids } from './index.ids';
+
+export const listOutcomes_Skill_Data = buildSkillConfig({
+  id: events_Skills_Ids.listOutcomes,
+  name: {
+    en: "Listing possible outcomes of a simple random experiment",
+    "lt": "Paprasto atsitiktinio bandymo galimų baigčių išvardijimas",
+    "lv": "Vienkārša nejauša eksperimenta iespējamo iznākumu uzskaitīšana",
+    "et": "Lihtsa juhukatse võimalike tulemuste loetlemine",
+    "be": "Пералік магчымых вынікаў простага выпадковага досьледу",
+    "ka": "მარტივი შემთხვევითი ექსპერიმენტის შესაძლო შედეგების ჩამოთვლა",
+    "kk": "Қарапайым кездейсоқ тәжірибенің мүмкін нәтижелерін тізу",
+    zh: "列出简单随机试验的可能结果",
+    hi: "सरल यादृच्छिक प्रयोग के संभावित परिणाम बताना",
+    es: "Enumerar los posibles resultados de un experimento aleatorio sencillo",
+    ar: "تعداد النتائج الممكنة لتجربة عشوائية بسيطة",
+    fr: "Énumérer les issues possibles d'une expérience aléatoire simple",
+    bn: "সহজ দৈব পরীক্ষার সম্ভাব্য ফলাফল তালিকাভুক্ত করা",
+    pt: "Listar os resultados possíveis de um experimento aleatório simples",
+    ur: "سادہ اتفاقی تجربے کے ممکنہ نتائج گنوانا",
+    id: "Menyebutkan hasil yang mungkin dari percobaan acak sederhana",
+    de: "Mögliche Ergebnisse eines einfachen Zufallsexperiments aufzählen",
+    ja: "簡単な確率実験で起こり得る結果を挙げる",
+    ko: "간단한 무작위 실험의 가능한 결과 나열하기",
+    tr: "Basit bir rastgele deneyin olası sonuçlarını sıralama",
+    vi: "Liệt kê các kết quả có thể có của thí nghiệm ngẫu nhiên đơn giản",
+    ta: "எளிய சீரற்ற சோதனையின் சாத்தியமான முடிவுகளைப் பட்டியலிடுதல்",
+    te: "సరళ యాదృచ్ఛిక ప్రయోగం సాధ్యమైన ఫలితాలను జాబితా చేయడం",
+    mr: "सोप्या यादृच्छिक प्रयोगाचे संभाव्य निष्कर्ष सांगणे",
+    ms: "Menyenaraikan hasil yang mungkin bagi eksperimen rawak mudah",
+    he: "מניית התוצאות האפשריות של ניסוי אקראי פשוט",
+    pl: "Wymienianie możliwych wyników prostego doświadczenia losowego",
+    uk: "Називання можливих результатів простого випадкового експерименту",
+  },
+});

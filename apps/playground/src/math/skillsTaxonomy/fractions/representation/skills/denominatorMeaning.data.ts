@@ -1,0 +1,36 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { representation_Skills_Ids } from './index.ids';
+
+export const denominatorMeaning_Skill_Data = buildSkillConfig({
+  id: representation_Skills_Ids.denominatorMeaning,
+  name: {
+    en: "Explaining the denominator of a fraction",
+    "lt": "Trupmenos vardiklio reikšmės aiškinimas",
+    "lv": "Daļas saucēja nozīmes skaidrošana",
+    "et": "Murru nimetaja tähenduse selgitamine",
+    "be": "Тлумачэньне назоўніка дробу",
+    "ka": "წილადის მნიშვნელის მნიშვნელობის ახსნა",
+    "kk": "Бөлшек бөлімінің мағынасын түсіндіру",
+    zh: "解释分母的含义",
+    hi: "भिन्न के हर का अर्थ समझाना",
+    es: "Explicar el significado del denominador",
+    ar: "شرح معنى مقام الكسر",
+    fr: "Expliquer le sens du dénominateur",
+    bn: "ভগ্নাংশের হরের অর্থ বোঝানো",
+    pt: "Explicar o significado do denominador",
+    ur: "کسر کے مخرج کا مطلب سمجھانا",
+    id: "Menjelaskan arti penyebut pecahan",
+    de: "Die Bedeutung des Nenners erklären",
+    ja: "分母の意味を説明する",
+    ko: "분모의 의미 설명하기",
+    tr: "Kesrin paydasının anlamını açıklama",
+    vi: "Giải thích ý nghĩa của mẫu số",
+    ta: "பின்னத்தின் பகுதியைக் குறிக்கும் கீழெண்ணை விளக்குதல்",
+    te: "భిన్నంలోని హారం అర్థాన్ని వివరించడం",
+    mr: "अपूर्णांकाच्या छेदाचा अर्थ सांगणे",
+    ms: "Menjelaskan maksud penyebut pecahan",
+    he: "הסבר משמעות המכנה בשבר",
+    pl: "Wyjaśnianie znaczenia mianownika",
+    uk: "Пояснення значення знаменника дробу",
+  },
+});
