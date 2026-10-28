@@ -131,7 +131,7 @@ Target skills:
 Create or update one Curriculum document at:
 
 ```text
-<TextbookRoot>/
+<PackageRoot>/
 └── docs/
     └── curriculums/
         └── %CURRICULUM_NAME in camelCase%/
