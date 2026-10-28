@@ -3,7 +3,7 @@ import type { Lesson_Config, LessonContentCatalog, Quiz } from '@svitlo/engine/c
 import type { Locale } from '@svitlo/engine/localization';
 import { buildLesson } from '@svitlo/engine/builders';
 import { LocaleProvider } from '@/i18n/LocaleProvider/LocaleProvider';
-import { LearningLayout } from '@layout';
+import LessonLearningLayout from '@/components/layout/LearningLayout/LearningLayout';
 import { LessonProgressProvider } from './LessonProgress/LessonProgress';
 import LessonSectionContent from './LessonSectionContent/LessonSectionContent';
 import LessonClient from './LessonClient/LessonClient';
@@ -42,7 +42,7 @@ export default function Lesson({ config, catalog, locale, href }: LessonProps) {
           quizSectionId={quiz?.sectionId}
           requireQuiz={lesson.requireQuiz}
         >
-          <LearningLayout
+          <LessonLearningLayout
             topics={[{ id: lesson.id, title: lesson.title.value, href }]}
             skippableSteps={lesson.sections.content.map(
               section =>
@@ -57,7 +57,7 @@ export default function Lesson({ config, catalog, locale, href }: LessonProps) {
               questions={quiz ? toQuestionWidgets(quiz) : []}
               sectionContent={sectionContent}
             />
-          </LearningLayout>
+          </LessonLearningLayout>
         </LessonProgressProvider>
       </SceneLocaleProvider>
     </LocaleProvider>

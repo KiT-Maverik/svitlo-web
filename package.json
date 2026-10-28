@@ -6,11 +6,11 @@
     "dev": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run dev --workspace @svitlo/playground",
     "storybook": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run storybook --workspace @svitlo/playground",
     "build-storybook": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build-storybook --workspace @svitlo/playground",
-    "build": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/playground",
+    "build": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/playground && npm run build --workspace @svitlo/math",
     "start": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run start --workspace @svitlo/playground",
     "lint": "npm run lint --workspace @svitlo/playground",
-    "typecheck": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run typecheck --workspace @svitlo/engine && npm run typecheck --workspace @svitlo/ui-kit && npm run typecheck --workspace @svitlo/playground",
-    "test": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test --workspace @svitlo/engine && npm run test --workspace @svitlo/ui-kit && npm run test --workspace @svitlo/playground",
+    "typecheck": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run typecheck --workspace @svitlo/engine && npm run typecheck --workspace @svitlo/ui-kit && npm run typecheck --workspace @svitlo/playground && npm run typecheck --workspace @svitlo/math",
+    "test": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test --workspace @svitlo/engine && npm run test --workspace @svitlo/ui-kit && npm run test --workspace @svitlo/playground && npm run test --workspace @svitlo/math",
     "test:e2e": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test:e2e --workspace @svitlo/playground",
     "test:db-utils": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test:db-utils --workspace @svitlo/playground",
     "test:db-utils:coverage": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test:db-utils:coverage --workspace @svitlo/playground",
@@ -23,11 +23,15 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "packages:list": "npm ls --workspaces --depth=0",
-    "packages:build": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/playground",
+    "packages:build": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/playground && npm run build --workspace @svitlo/math",
     "packages:typecheck": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run typecheck --workspaces --if-present",
     "packages:lint": "npm run lint --workspaces --if-present",
     "packages:test": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test --workspaces --if-present",
-    "packages:check": "node scripts/check-workspaces.mjs && node scripts/check-package-boundaries.mjs"
+    "packages:check": "node scripts/check-workspaces.mjs && node scripts/check-package-boundaries.mjs",
+    "build:math": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/math",
+    "dev:math": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run dev --workspace @svitlo/math",
+    "test:math": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run test --workspace @svitlo/math",
+    "typecheck:math": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run typecheck --workspace @svitlo/math"
   },
   "devDependencies": {
     "prettier": "3.9.10"

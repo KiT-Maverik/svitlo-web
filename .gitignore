@@ -56,3 +56,6 @@ next-env.d.ts
 **/.test-build/
 **/test-results/
 **/playwright-report/
+
+# UI Kit generated flag assets; sync from the dependency before dev/build
+**/public/flags/

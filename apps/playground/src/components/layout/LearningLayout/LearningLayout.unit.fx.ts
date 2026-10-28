@@ -21,13 +21,13 @@ const VerticalSpace_fx = {
       (scope ? within(scope) : screen).queryByTestId(spaceTestId.slots[name]),
   },
 };
-import { aria } from './LearningLayout.constants';
+import { aria } from '@svitlo/ui-kit/learning-layout/constants';
 
 type Props = ComponentProps<typeof LearningLayout>;
 
 const topics = [
-  { id: 'light', title: 'How light travels', href: '/topics/light' },
-  { id: 'energy', title: 'Energy', href: '/topics/energy' },
+  { id: 'demo', title: 'Example topic', href: '/topics/demo' },
+  { id: 'other', title: 'Another topic', href: '/topics/other' },
 ] as const;
 
 export const LearningLayout_fx = {

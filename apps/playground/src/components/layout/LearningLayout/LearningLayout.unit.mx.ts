@@ -10,7 +10,7 @@ import {
 export const LearningLayout_mx = {
   prepare: (options: { locale?: 'uk-UA' | 'ar-SA'; progress?: Partial<Progress> } = {}) => {
     const dispatch = vi.fn();
-    vi.mocked(usePathname).mockReturnValue('/topics/light');
+    vi.mocked(usePathname).mockReturnValue('/topics/demo');
     vi.mocked(useLocale).mockReturnValue({
       locale: options.locale ?? 'uk-UA',
       setLocale: vi.fn(),

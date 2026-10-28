@@ -20,6 +20,7 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run test:components
+      - run: npm run test:components --workspace @svitlo/math
       - run: npm run test:db:coverage
         if: ${{ !cancelled() }}
       - run: npm run lint
@@ -28,6 +29,9 @@ jobs:
         if: ${{ !cancelled() }}
       - run: npx playwright install chromium
         if: ${{ !cancelled() }}
+      - name: Mathematics textbook lesson E2E (desktop and mobile)
+        if: ${{ !cancelled() }}
+        run: npm run test:e2e --workspace @svitlo/math -- src/components/pages/Lesson/Lesson.e2e.spec.ts src/components/widgets/KnowledgeCheckpoint/KnowledgeCheckpoint.e2e.spec.ts
       - name: Lesson page E2E (desktop and mobile)
         if: ${{ !cancelled() }}
         run: npm run test:e2e --workspace @svitlo/playground -- src/components/pages/Lesson/Lesson.e2e.spec.ts
@@ -37,4 +41,6 @@ jobs:
         if: always()
         with:
           name: questions-test-results
-          path: apps/playground/test-results/
+          path: |
+            apps/playground/test-results/
+            apps/textbooks/math/test-results/
