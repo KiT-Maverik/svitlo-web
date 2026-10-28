@@ -128,7 +128,7 @@ Target skills:
 
 ## RESULT
 
-Create the following artifact **inside the target textbook's root directory** (the location supplied in the editorial briefing):
+Create or update one Curriculum document at:
 
 ```text
 <TextbookRoot>/
@@ -137,9 +137,6 @@ Create the following artifact **inside the target textbook's root directory** (t
         └── %CURRICULUM_NAME in camelCase%.curriculum.md
 ```
 
-- `Curriculum/` is the parent directory; `curriculum/` and `curriculum.curriculum.md` use **camelCase** (for this single-word name, lowercase `curriculum`). Preserve this casing exactly.
-- Write the complete Curriculum document into `curriculum.curriculum.md` using the embedded **CURRICULUM TEMPLATE**, replacing its placeholders with the approved content. Do not create a `README.md` as a substitute.
-- Create missing directories as needed; if the target file already exists, review and update it rather than silently overwriting editorial changes.
-- Resolve and verify every relative file link **from the final location of `curriculum.curriculum.md`**, especially links to the Skills Taxonomy. Template example paths must not be copied unchanged when they do not resolve from this directory.
-- This task produces the Curriculum document only. Referenced module, lesson, Skill, or Learning Brief files are not automatically created by this Skill; follow the template's explicit `[Not implemented](#)` convention for absent module or lesson documents.
-- Before reporting completion, confirm the artifact exists at the specified path, follows the template, and contains no unresolved placeholders or broken links to files claimed to exist.
+- Use the textbook root from the editorial briefing. Derive the Curriculum name in **camelCase** once and reuse it for both the folder and filename; keep `curriculums/` literal.
+- Fill the file using the embedded **CURRICULUM TEMPLATE**. Review existing content before updating it; do not create a substitute `README.md` or automatically generate module, lesson, or assessment files.
+- Verify the output path, replace all template placeholders, and resolve file links relative to the **resulting Curriculum file**. For module or lesson files that do not exist, use the template's `[Not implemented](#)` convention rather than inventing links.
