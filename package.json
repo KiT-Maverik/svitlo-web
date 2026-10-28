@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run dev --workspace @svitlo/playground",
-    "storybook": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run storybook --workspace @svitlo/playground",
-    "build-storybook": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build-storybook --workspace @svitlo/playground",
+    "storybook": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run storybook --workspace @svitlo/ui-kit",
+    "build-storybook": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build-storybook --workspace @svitlo/ui-kit",
     "build": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/playground && npm run build --workspace @svitlo/math",
     "start": "npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/ui-kit && npm run start --workspace @svitlo/playground",
     "lint": "npm run lint --workspace @svitlo/playground",

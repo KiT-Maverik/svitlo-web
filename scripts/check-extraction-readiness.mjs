@@ -114,3 +114,17 @@ assert(kit.exports?.['./sync-flags']?.default === './scripts/sync-flags.mjs',
 assert(readdirSync(resolve(root, 'shared/ui-kit/assets/flags')).some(name => name.endsWith('.svg')),
   'Flag assets are missing');
 console.log('Stage 5 extraction readiness: source imports, dependencies, public exports, and static assets verified.');
+
+// Storybook is owned by UI Kit, not coupled to either Next.js application.
+const storybookMain = readFileSync(resolve(root, 'shared/ui-kit/.storybook/main.ts'), 'utf8');
+assert(!/\bapps\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/apps\//.test(storybookMain),
+  'UI Kit Storybook must not read application or monorepo source paths');
+assert(readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
+  'UI Kit must own the Storybook build command');
+for (const application of ['apps/playground', 'apps/textbooks/math']) {
+  assert(!existsSync(resolve(root, application, '.storybook')),
+    'Application Storybook must not depend on shared source trees: ' + application);
+  const appManifest = readJson(application + '/package.json');
+  assert(!appManifest.scripts?.storybook && !appManifest.scripts?.['build-storybook'],
+    'Storybook commands must be owned by UI Kit: ' + application);
+}

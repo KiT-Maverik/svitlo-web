@@ -3,20 +3,8 @@ import { expect, userEvent, within } from 'storybook/test';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { QuestionAttempt, type QuestionAttemptProps } from '../helpers';
-import type { SelectMultipleAnswersQuestion } from '../types';
+import { multipleSelectQuestion } from '../../../../../.storybook/fixtures/questions';
 
-const question: SelectMultipleAnswersQuestion = {
-  id: 'multiple-select-playground',
-  type: 'multiple-select',
-  prompt: 'Оберіть усі прості числа.',
-  options: [
-    { id: 'two', label: '2' },
-    { id: 'four', label: '4' },
-    { id: 'five', label: '5' },
-  ],
-  correctIds: ['two', 'five'],
-  explanation: '2 і 5 мають лише два додатні дільники. 4 ділиться ще й на 2.',
-};
 
 type StoryProps = QuestionAttemptProps<'multiple-select'>;
 
@@ -55,7 +43,7 @@ const meta = {
     actionSlots: { control: false },
   },
   args: {
-    question,
+    question: multipleSelectQuestion,
     showResult: true,
     showExplanation: true,
     showErrors: true,

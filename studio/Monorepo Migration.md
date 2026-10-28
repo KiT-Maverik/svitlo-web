@@ -112,3 +112,11 @@ Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/
 - Engine remains framework-independent. UI Kit remains independent of Next.js and of application code; application-specific adapters and `LocaleProvider` remain in each app.
 - `npm run packages:check` includes the `check-extraction-readiness.mjs` guard for package import boundaries, dependency declarations, public entrypoint sources and UI Kit's packaged flag synchronization script and SVG assets.
 - A future decision to extract or distribute a package will still require a real package-artifact installation test (`npm pack` and isolated consumer). Passing static checks and monorepo CI is architectural preparation, **not** proof of distributable artifact functionality.
+
+### Stage 5 follow-up — autonomous UI Kit Storybook
+
+- Storybook configuration and preview live in `shared/ui-kit/.storybook`, with locally owned demo fixtures in `.storybook/fixtures`. Stories only target UI Kit widgets.
+- `npm run storybook` and `npm run build-storybook` delegate from the root to `@svitlo/ui-kit` after building shared dependencies. No app-level Storybook configs, scripts, or direct stories sourced from other workspaces remain.
+- Flag assets are served from the UI Kit's own `assets/flags`. Storybook tooling currently retains the existing Next.js Storybook framework as a **development-only** dependency; UI Kit's production API and compiled artifacts must not import Next.js.
+- Any future stories needing page-like state must create fixtures under UI Kit's own `.storybook/fixtures`, never depend on Playground/Math source or curriculum.
+- The Storybook build is verified by the dedicated `UI Kit Storybook` GitHub Actions workflow.
