@@ -33,7 +33,7 @@
         "./src/types/index.ts"
       ],
       "@/*": [
-        "./src/*"
+        "src/*"
       ]
     }
   },
