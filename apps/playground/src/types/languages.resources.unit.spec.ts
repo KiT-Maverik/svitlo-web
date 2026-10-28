@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
+import { getLearningLayoutMessages } from '@svitlo/ui-kit/learning-layout/locales';
 
 const root = process.cwd();
 const newLanguages = ['lt', 'lv', 'et', 'be', 'ka', 'kk'] as const;
@@ -23,19 +24,6 @@ describe('Extended locale resource coverage', () => {
     for (let index = 0; index < newLocales.length; index++) {
       expect(DEFAULT_SUPPORTED_LANGUAGES.find(item => item.locale === newLocales[index])?.language)
         .toBe(newLanguages[index]);
-    }
-  });
-
-  it('includes six translations in every authored math taxonomy config', () => {
-    const files = collectFiles(join(root, 'src/math/skillsTaxonomy'))
-      .filter(file => file.endsWith('.data.ts') && !file.endsWith('index.data.ts'));
-    expect(files.length).toBeGreaterThanOrEqual(358);
-
-    for (const file of files) {
-      const source = readFileSync(file, 'utf8');
-      for (const language of newLanguages) {
-        expect(countLanguageEntries(source, language), `${file}: missing ${language}`).toBeGreaterThanOrEqual(1);
-      }
     }
   });
 
@@ -65,8 +53,8 @@ describe('Extended locale resource coverage', () => {
   });
 
   it('provides locale dictionaries for the learner interface and lesson UI', () => {
+    for (const locale of newLocales) expect(getLearningLayoutMessages(locale).brand).toBeTruthy();
     for (const folder of [
-      'src/components/layout/LearningLayout/locales',
       'src/components/layout/LearningLayout/NavbarPreferences/locales',
       'src/components/pages/Lesson/locales',
     ]) {

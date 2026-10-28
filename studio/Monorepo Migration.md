@@ -83,3 +83,16 @@ Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/
 - Next.js routing, lesson-state-dependent LearningLayout, LocaleProvider, and the
   Next Image flag asset adapter remain app-owned because they depend on the host.
 - Stage 3 (standalone Math application) is not included here.
+
+## Stage 2 completion — reusable layout and flags (2026-10-28)
+
+- UI Kit owns the `Flag` component, locale-to-country mapping, and canonical scalable SVG flag assets. All applications use `@svitlo/ui-kit/widgets`. A public package asset sync entrypoint installs static assets under the consuming Next.js public directory during dev/build.
+- UI Kit owns `LearningLayout`, its reusable presentation, navigation controls, state-independent public props, and localized labels. Textbooks provide lesson state, callbacks, route links, and preferences through their app adapter. UI Kit does not import the application, Next.js router, or lesson persistence.
+- `LocaleProvider` remains application-scoped by explicit decision.
+
+## Stage 3 — standalone mathematics textbook (2026-10-28)
+
+- `apps/textbooks/math` is a standalone Next.js workspace, initialized from the working Playground. It retains all reusable demonstrations, localized content, testing infrastructure and its mathematics-specific skills taxonomy.
+- `math/` at repository root moved into `apps/textbooks/math/docs/` so package-scoped agents can read educational specifications.
+- `apps/playground/src/math/` and subject-specific taxonomy regression tests are removed from the Playground, while the Math app keeps the complete authored taxonomy and tests.
+- Each app builds and typechecks via its own npm workspace scripts; shared code is consumed through public Engine/UI Kit exports. Publishing remains out of scope.

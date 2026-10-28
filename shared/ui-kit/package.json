@@ -64,6 +64,10 @@
     },
     "./sync-flags": {
       "default": "./scripts/sync-flags.mjs"
+    },
+    "./learning-layout/locales": {
+      "types": "./dist/components/layout/LearningLayout/locales/index.d.ts",
+      "default": "./dist/components/layout/LearningLayout/locales/index.js"
     }
   },
   "files": [
