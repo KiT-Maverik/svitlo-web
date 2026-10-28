@@ -18,6 +18,7 @@
 | [Offline-First & Device Compatibility](./offline-first-and-device-compatibility.md) | Downloadable PWA objective, complete offline learning, media and state storage, capability trade-offs |
 | [Lesson Notes](./lesson-notes.md) | Planned concise recall notes revealed during a lesson and assembled into a learner's revision sheet |
 | [System Boundaries & Roadmap](./system-boundaries.md) | Lesson vs Program, progress vs assessment, injection/events, IDs and planned registries/sync |
+| [Coding Agent Specializations](./coding-agent-specializations.md) | Existing specialized Skills (including Remotion) and prioritized future ones; specialist subskills supplement one Coding Agent Persona |
 
 ## Document precedence
 
