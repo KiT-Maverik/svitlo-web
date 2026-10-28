@@ -54,12 +54,13 @@ The current playground model is:
 'use client';
 
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
+import { getLocaleDirection } from '@types';
 import type { ExampleScene_Locale } from './ExampleScene.locale';
 
 export function ExampleScene() {
   const { locale, scenes } = useSceneLocales<{ example: ExampleScene_Locale }>();
   const messages = scenes.example;
-  return <section lang={locale}>{messages.title}</section>;
+  return <section lang={locale} dir={getLocaleDirection(locale)}>{messages.title}</section>;
 }
 
 // In the owning Section's scene resource map (a DIFFERENT file):
