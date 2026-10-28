@@ -2,8 +2,25 @@ import { createElement, type ComponentProps } from 'react';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import LearningLayout from './LearningLayout';
-import { Navbar_fx } from '../Navigation/Navbar.unit.fx';
-import { VerticalSpace_fx } from '@/components/widgets/VerticalSpace/VerticalSpace.unit.fx';
+import { testId as navbarTestId } from '@svitlo/ui-kit/navigation/Navbar.constants';
+import { testId as spaceTestId } from '@svitlo/ui-kit/widgets/VerticalSpace/VerticalSpace.constants';
+
+const Navbar_fx = {
+  selectors: {
+    navigation: (name = 'Example navigation', scope?: HTMLElement) =>
+      (scope ? within(scope) : screen).getByRole('navigation', { name }),
+    slot: (name: keyof typeof navbarTestId.slots, navigation?: HTMLElement) =>
+      (navigation ? within(navigation) : screen).getByTestId(navbarTestId.slots[name]),
+  },
+};
+const VerticalSpace_fx = {
+  selectors: {
+    container: (scope?: HTMLElement) => (scope ? within(scope) : screen).getByTestId(spaceTestId.container),
+    containers: () => screen.getAllByTestId(spaceTestId.container),
+    slot: (name: keyof typeof spaceTestId.slots, scope?: HTMLElement) =>
+      (scope ? within(scope) : screen).queryByTestId(spaceTestId.slots[name]),
+  },
+};
 import { aria } from './LearningLayout.constants';
 
 type Props = ComponentProps<typeof LearningLayout>;

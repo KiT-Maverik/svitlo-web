@@ -73,6 +73,7 @@ for (const oldPath of files) {
     if(!literal||!ts.isStringLiteral(literal)) continue;
     const previous=oldResolve(literal.text,oldPath);
     if(!previous) continue;
+    if(literal.text==='@layout' && !moving.has(oldPath)) continue;
     const barrel=direct.get(previous);
     if(barrel && !moving.has(oldPath) && (ts.isImportDeclaration(node)||ts.isExportDeclaration(node))) {
       const named=ts.isImportDeclaration(node)?node.importClause?.namedBindings:node.exportClause;
