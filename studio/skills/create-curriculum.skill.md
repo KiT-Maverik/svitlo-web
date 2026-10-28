@@ -1,6 +1,6 @@
 # Create Curriculum Skill
 
-**Mandatory first action:** Read [Methodologist Persona](./Personas/methodist.persona.md) in full and adopt its professional responsibilities, judgment, and role boundaries **before** planning or generating content. Do not assume the persona is automatically loaded.
+**Mandatory first action:** Read [Methodologist Persona](../personas/methodist.persona.md) in full and adopt its professional responsibilities, judgment, and role boundaries **before** planning or generating content. Do not assume the persona is automatically loaded.
 
 **Purpose:** Create or review a structured Curriculum for **any discipline, textbook, course, learning audience, or educational context**, using an editorial briefing and existing Skills Taxonomy. This Skill does not author detailed Lesson Learning Briefs, storyboards, assessments, or code.
 
