@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'probability');
+const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy', 'probability');
 const read = (path: string): string => readFileSync(join(root, path), 'utf8');
 const groups = {
   events: ['certainImpossible', 'likelihoodLanguage', 'listOutcomes'],

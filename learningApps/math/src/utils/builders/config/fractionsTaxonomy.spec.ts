@@ -4,7 +4,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy');
+const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const base = join(root, 'fractions');
 const groups = {
   representation: [
@@ -89,7 +89,7 @@ describe('Math / Fractions taxonomy', () => {
   });
 
   it('marks all 19 Skill rows implemented in the inventory', () => {
-    const inventory = read(process.cwd(), 'src', 'math', 'skills-inventory.md');
+    const inventory = read(process.cwd(), 'src', 'data', 'skills-inventory.md');
     const begin = inventory.indexOf('### Domain 3. Дроби (19)');
     const end = inventory.indexOf('### Domain 4. Арифметика (79)');
     assert.ok(begin >= 0 && end > begin);

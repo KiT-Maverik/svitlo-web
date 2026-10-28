@@ -2,9 +2,9 @@
 
 Standalone Next.js application: `@svitlo/math`.
 
-The application owns mathematics curriculum, authored skills taxonomy, static UUID registries, localized lessons, interactive scenes, tests and documentation.
+The application owns mathematics curriculum, authored skills taxonomy, static UUID registries, tests and documentation. Demonstration lessons such as How Light Moves belong to Playground.
 
-Package-specific educational documentation lives in `docs/`; domain content resides in `src/math/`.
+Package-specific educational documentation lives in `docs/`; domain content resides in `src/data/skillsTaxonomy/`.
 
 From the monorepo root:
 

@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'time');
+const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy', 'time');
 
 const groupSkills = {
   calendar: ['daySequence', 'leapYearDays', 'weekMonthYear', 'calendarInterval'],

@@ -57,12 +57,12 @@ Question API examples (slots, lifecycle events, automatic grading): `/questions/
 
 Після `npm ci` та `npm run dev` відкрийте `/topics/light` — урок «Як рухається світло».
 
-- `src/content/howLightMoves/howLightMoves.data.ts` — `Lesson_Config`: ID назви й секцій, параметри навігації, квізу та словники локалізації сцен.
-- `src/content/howLightMoves/howLightMoves.catalog.ts` — визначення назви та секцій, доступні за їхніми ID.
+- `src/data/howLightMoves/howLightMoves.data.ts` — `Lesson_Config`: ID назви й секцій, параметри навігації, квізу та словники локалізації сцен.
+- `src/data/howLightMoves/howLightMoves.catalog.ts` — визначення назви та секцій, доступні за їхніми ID.
 - `src/app/topics/light/page.tsx` — тонкий маршрут, який визначає локаль і передає `config`, `catalog`, `locale`, `href` сторінці `Lesson`.
 - `src/components/pages/Lesson/Lesson.tsx` — спільний складальник уроків: `buildLesson(config, locale, catalog)`, контексти локалі/сцен/прогресу, layout та рендеринг кроків.
-- `src/components/pages/Lesson/LessonSectionContent/` — серверний рендерер текстових, Markdown-ресурсів і сцен. Локалізовані Markdown-файли знаходяться в `src/content/howLightMoves/sections/theory/markdown/`.
-- `src/content/howLightMoves/resources/scenes/` — вбудовані інтерактивні сцени як ресурси уроку. Сцени беруть вибрану локаль через `useSceneLocales()`.
+- `src/components/pages/Lesson/LessonSectionContent/` — серверний рендерер текстових, Markdown-ресурсів і сцен. Локалізовані Markdown-файли знаходяться в `src/data/howLightMoves/sections/theory/markdown/`.
+- `src/data/howLightMoves/resources/scenes/` — вбудовані інтерактивні сцени як ресурси уроку. Сцени беруть вибрану локаль через `useSceneLocales()`.
 - `src/components/widgets/` — незалежні повторно використовувані компоненти, зокрема `Flashcard` і `MarkdownContent`.
 
 Поточний урок має три кроки: теорія, практика (порівняння швидкості світла у вакуумі, повітрі та воді за моделлю `v = c / n`) і тест із шести питань. Конфігурація підтримує довільну послідовність секцій, але теперішній клієнтський адаптер квізу рендерить тільки `select-one-answer` і обмежується одним квізом на урок; для інших типів потрібне розширення адаптера/стану.

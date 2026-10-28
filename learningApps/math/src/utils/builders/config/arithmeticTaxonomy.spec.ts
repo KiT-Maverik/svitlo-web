@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
-const root = join(process.cwd(), 'src', 'math', 'skillsTaxonomy', 'arithmetic');
+const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy', 'arithmetic');
 const groups = {
   addition: 10,
   subtraction: 8,

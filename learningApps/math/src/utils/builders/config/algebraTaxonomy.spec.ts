@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
-const root = join(process.cwd(), 'src/math/skillsTaxonomy/algebra');
+const root = join(process.cwd(), 'src/data/skillsTaxonomy/algebra');
 const groupSkills = {
   expressions: [
     'readNumericExpressions',

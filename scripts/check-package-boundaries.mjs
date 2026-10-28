@@ -24,11 +24,11 @@ for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', 
   assert(manifest.dependencies?.[engine.name] === engine.version, label + ' must use public Engine dependency');
   assert(manifest.dependencies?.[uiKit.name] === uiKit.version, label + ' must use public UI Kit dependency');
 }
-assert(existsSync(resolve(root, 'learningApps/math/src/math')), 'Math textbook is missing its domain content');
+assert(existsSync(resolve(root, 'learningApps/math/src/data/skillsTaxonomy')), 'Math textbook is missing its domain content');
 assert(existsSync(resolve(root, 'learningApps/math/docs')), 'Math textbook is missing package-local educational docs');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/content')), 'Playground cannot contain authored textbook content');
-assert(!existsSync(resolve(root, 'learningApps/playground/src/app/topics/light')), 'Old subject-specific Playground route must be removed');
+assert(existsSync(resolve(root, 'learningApps/playground/src/app/topics/light/page.tsx')), 'Playground must host the moved light demonstration route');
 assert(existsSync(resolve(root, 'learningApps/playground/src/fixtures/demoLesson.ts')), 'Playground must provide a generic lesson fixture');
 assert(!existsSync(resolve(root, 'math')), 'Root mathematics docs must be inside the textbook package');
 assert(uiKit.dependencies?.[engine.name] === engine.version, 'UI Kit must consume the published Engine API');
@@ -38,6 +38,7 @@ for (const subpath of ['.', './localization', './taxonomy', './content', './buil
   assert(target?.types?.startsWith('./dist/') && target?.default?.startsWith('./dist/'),
     'Engine public export is missing a dist entry: ' + subpath);
 }
+assert(existsSync(resolve(root, 'learningApps/math/src/data/assessmentMethodTaxonomy')), 'Assessment-method taxonomy is missing from Math pending extraction');
 const engineSources = walk(resolve(root, 'shared/engine/src')).filter(file => file.endsWith('.ts') && !/\.(?:spec|typecheck)\.ts$/.test(file));
 for (const file of engineSources) {
   const content = readFileSync(file, 'utf8');
