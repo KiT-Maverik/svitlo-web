@@ -19,7 +19,7 @@ If a definition is missing, only Draft, ambiguous, or inconsistent with the appr
 
 ## ARCHITECTURAL CONTRACT
 
-- **Separation:** the taxonomy is a compact Markdown inventory; the definition documents own rich competency semantics; TypeScript files own runtime registration. Do not backfill UUIDs, implementation details, grades, prerequisites, questions, scores, or UI metadata into the editorial taxonomy.
+- **Separation:** the taxonomy is a compact Markdown inventory; the definition documents own rich competency semantics; TypeScript files own runtime registration. Do not backfill UUIDs, executable implementation details, grades, prerequisites, questions, scores, or UI metadata into the editorial taxonomy.
 - **Filesystem:** follow the current content-code architecture, including one Domain per directory, nested Groups and Group-local `skills/` folders where that remains the established pattern. Respect actual package paths rather than assuming legacy paths.
 - **Identifiers:** runtime identity is a stable, static UUID stored in source `*.ids.ts` as required by the repository. Preserve existing UUIDs. Assign a new UUID **once at authoring time** only for a truly new approved entity, with no collisions. Never derive identity from filenames, hierarchy, grades, or educational content, and never call random UUID generation at runtime.
 - **Mappings:** Group `skillIds` and Domain `groupIds` are explicit, typed, ordered mappings to child UUIDs. Do not infer membership by parsing names or paths. Changing parent membership does not itself change a child's UUID.
