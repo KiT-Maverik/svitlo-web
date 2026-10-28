@@ -13,6 +13,6 @@ Run `npm ci` at the monorepo root first, then use:
 
 ## Editorial status
 
-The [Biology Skills Taxonomy draft](docs/skills/taxonomy.md) is now recorded in Git for editorial review (9 Domains, 35 Groups, 144 candidate Skills). **It is not approved or implemented.** No individual Skill/Group/Domain Definitions, `*.ids.ts`, `*.data.ts`, curricula, lesson content, or question data have been authored. The Methodologist's proposed catalog must be approved before implementation.
+The [Biology Skills Taxonomy draft](docs/skills/taxonomy.md) is now recorded in Git for editorial review (9 Domains, 34 Groups, 138 candidate Skills). **It is not approved or implemented.** No individual Skill/Group/Domain Definitions, `*.ids.ts`, `*.data.ts`, curricula, lesson content, or question data have been authored. The [separate editorial review](docs/skills/editorial-review.md) identifies open granularity and cross-subject decisions; the Methodologist's proposed catalog must be approved before implementation.
 
 Follow `studio/Subject Proposition.md`, `studio/personas/methodist.persona.md` and `studio/skills/create-skills-taxonomy.skill.md` for the editorial work; the Coding Agent Persona and `AGENTS.md` govern implementation. Keep the package independently deployable, and consume shared Engine/UI Kit only through published package exports when there is an approved integration task.
