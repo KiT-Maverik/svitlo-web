@@ -9,9 +9,12 @@ Date: %CURRENT_DATE%
 Ages: %AGE_RANGE%
 %Audience description in a form of a detailed reasonably long text.%
 
-%PREREQUISITES%:
-- %ITEM_1%
-- ...
+Prerequisites:
+%Use only applicable entries; the four bullet shapes below are alternatives, not required fields. Mix free text and links as needed. Resolve links to existing *.data.ts files and use their actual entity names; no duplicated IDs or UUIDs. Prefer Skills for precise prerequisites; SkillGroups/SkillDomains indicate broader prior familiarity, not mastery of all descendants.%
+- %TEXT_PREREQUISITE%
+- [%SKILL_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/skills/%SKILL%.data.ts)
+- [%SKILL_GROUP_NAME%](../skillsTaxonomy/%DOMAIN%/%GROUP%/%GROUP%.data.ts)
+- [%SKILL_DOMAIN_NAME%](../skillsTaxonomy/%DOMAIN%/%DOMAIN%.data.ts)
 
 ## EXPECTED RESULTS
 
