@@ -49,7 +49,7 @@ describe('Layouts', () => {
       await LearningLayout_fx.actions.openTopics();
       expect(await screen.findByRole('navigation', { name: aria.navigation.topics })).toBeVisible();
       expect(
-        within(LearningLayout_fx.selectors.topics()).getByRole('link', { name: 'How light travels' }),
+        within(LearningLayout_fx.selectors.topics()).getByRole('link', { name: 'Example topic' }),
       ).toHaveAttribute('aria-current', 'page');
       await LearningLayout_fx.actions.escape();
       expect(LearningLayout_fx.selectors.topAction(aria.actions.openTopics)).toHaveAttribute('aria-expanded', 'false');
