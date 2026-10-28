@@ -40,7 +40,7 @@ Follow the canonical meanings and grouping conventions, including coherent granu
 Every Domain, Group, and Skill has **two independent fields**:
 
 - **Definition:** Markdown document with the entity's title and concise catalog description, normally written by **Create Skill Definitions Skill**.
-- **Code:** canonical source implementation of that entity, normally created by **Create Skill Code Skill**.
+- **Code:** canonical source implementation of that entity, normally created by **Implement Skill Code Skill**.
 
 Neither link replaces the other. Use exactly `[Not implemented](#)` for each missing target. Link a Definition only to its verified `*.skill-domain.md`, `*.skill-group.md`, or `*.skill.md` document; link Code only to its verified canonical implementation file (normally `*.data.ts`). File existence does not imply editorial approval or runtime registration. Resolve both links **relative to the generated taxonomy file**, and count available Definitions and Code files independently by entity type.
 
