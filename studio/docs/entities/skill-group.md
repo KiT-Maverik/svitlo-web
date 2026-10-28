@@ -2,7 +2,7 @@
 
 **Entity category:** catalog grouping.
 
-A **SkillGroup** is a named category that organizes related Skills inside one SkillDomain. It is an organizational layer, not a lesson, assessment, learner result, or aggregate mastery status.
+A **SkillGroup** is an optional intermediate named category organizing related Skills inside a SkillDomain **when the Domain genuinely requires multiple coherent subgroups**. Some small Domains may directly contain Skills without a Group. It is an organizational layer, not a lesson, assessment, learner result, or aggregate mastery status.
 
 ## SEMANTIC ROLE
 
@@ -10,7 +10,7 @@ A **SkillGroup** is a named category that organizes related Skills inside one Sk
 - Use a short editorial description to distinguish it from other Groups.
 - A Group contains Skills **through the taxonomy and code-level membership map**, not through a list embedded in its own Markdown Definition.
 - Keep each Skill in one primary Group; external materials can reference a Skill from multiple contexts.
-- Do not force a fixed number of Skills per Group or duplicate a child Skill's name as the Group name. If names overlap, give the Skill a **meaningful** qualifier reflecting the actual competency, not a mechanical “Basic” label.
+- Do not create a Group as the **only child Group of a Domain** merely to wrap its Skills; move Skills directly to the Domain unless a substantive editor-approved exception exists. Do not force a fixed number of Skills per Group or duplicate a child Skill's name as the Group name. If names overlap, give the Skill a **meaningful** qualifier reflecting the actual competency, not a mechanical “Basic” label.
 
 The generated Group Definition is intentionally minimal: title, editorial Status, short Description, and separate Code link. **It must not enumerate its Skills** or define evaluation evidence, grades, progress, question formats, or curriculum sequencing.
 
