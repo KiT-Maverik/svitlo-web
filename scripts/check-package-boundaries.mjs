@@ -4,7 +4,7 @@ import { join, resolve, relative } from 'node:path';
 const root = process.cwd();
 const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
 const engine = readJson('shared/engine/package.json');
-const playground = readJson('frontend/playground/package.json');
+const playground = readJson('apps/playground/package.json');
 
 function walk(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
@@ -32,7 +32,7 @@ for (const file of engineSources) {
       'Engine must not import runtime, UI or application packages: ' + relative(root, file) + ' -> ' + match[1]);
   }
 }
-const appSourceRoot = resolve(root, 'frontend/playground/src');
+const appSourceRoot = resolve(root, 'apps/playground/src');
 if (existsSync(appSourceRoot)) {
   for (const file of walk(appSourceRoot).filter(file => /\.(?:ts|tsx)$/.test(file))) {
     const content = readFileSync(file, 'utf8');

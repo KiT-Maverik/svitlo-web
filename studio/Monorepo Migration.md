@@ -63,3 +63,7 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 - Playground's previous content-contract files re-export **types only**, preserving old imports without duplicating declarations.
 - The Engine remains free of React and Next.js; scene `component` and lesson section `icon` are extensible, renderer-specific values typed as `unknown` by default. Frontend renderers supply/narrow their UI representation.
 - Public package API: `@svitlo/engine/content`. Future textbooks can extend base contracts using TypeScript intersections or generic parameters without editing Engine.
+
+## Layout update (2026-10-28)
+
+Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/` holds independently deployable applications; `apps/textbooks/` groups textbook applications. The historical phase descriptions above retain their original paths for chronology. Existing package APIs and extraction boundaries remain unchanged.

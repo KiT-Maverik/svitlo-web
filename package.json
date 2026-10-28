@@ -34,8 +34,8 @@
   },
   "workspaces": [
     "backend/*",
-    "frontend/textbooks/*",
-    "frontend/playground",
+    "apps/textbooks/*",
+    "apps/playground",
     "shared/*"
   ]
 }
