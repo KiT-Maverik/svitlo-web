@@ -10,11 +10,11 @@ An audience-independent catalog of abilities for analyzing, designing, construct
 
 ## SUMMARY
 
-Domains: 8
-Groups: 27
-Skills: 113
+Domains: 16
+Groups: 55
+Skills: 224
 
-Code files: 0/8 Domains · 0/27 Groups · 0/113 Skills
+Code files: 0/16 Domains · 0/55 Groups · 0/224 Skills
 
 ## DOMAINS
 
@@ -975,4 +975,958 @@ Compare useful device output with energy input and identify major losses.
 [Not implemented](#)
 
 Recognize why generation, storage and demand must be coordinated across time.
+
+### Electrical and Electronic Engineering
+
+Groups: 4 · Skills: 17
+
+[Not implemented](#)
+
+Circuits and electronic hardware distribute power, process signals and connect physical controls to useful outputs. The subject here is device architecture and correct component integration, not the scientific derivation of electromagnetic laws.
+
+#### Circuit Construction
+
+Skills: 5
+
+[Not implemented](#)
+
+A functioning assembly requires compatible sources, loads and connections, including means of switching and independent distribution.
+
+##### Interpret circuit diagrams
+
+[Not implemented](#)
+
+Read electrical symbols and their connections to identify intended current paths and device functions.
+
+##### Assemble a low-voltage circuit
+
+[Not implemented](#)
+
+Connect a suitable power source and load with correctly rated components while avoiding shorts.
+
+##### Design a switching circuit
+
+[Not implemented](#)
+
+Place controls so a load can be energized or interrupted deliberately.
+
+##### Explain series arrangements in devices
+
+[Not implemented](#)
+
+Identify how interruption of one common current path affects dependent loads.
+
+##### Explain parallel arrangements in devices
+
+[Not implemented](#)
+
+Identify separate supply branches and why loads can operate independently.
+
+#### Electronic Components
+
+Skills: 4
+
+[Not implemented](#)
+
+Components can limit, store, steer or switch electrical signals; their appropriate use depends on ratings and surrounding circuit context.
+
+##### Explain resistor applications
+
+[Not implemented](#)
+
+Identify current limiting, biasing and voltage division as different practical uses.
+
+##### Explain diode applications
+
+[Not implemented](#)
+
+Relate directional conduction, rectification or light emission to practical circuits.
+
+##### Explain transistor switching
+
+[Not implemented](#)
+
+Trace how a relatively small control input governs another electrical path.
+
+##### Explain capacitor applications
+
+[Not implemented](#)
+
+Relate short-term charge storage to smoothing, filtering or timing in electronics.
+
+#### Embedded Hardware
+
+Skills: 4
+
+[Not implemented](#)
+
+Controllers communicate with sensors and actuators through real physical interfaces; programming concepts are treated separately in Informatics.
+
+##### Explain microcontroller architecture
+
+[Not implemented](#)
+
+Identify processor, memory, supply and hardware interfaces in a dedicated controller.
+
+##### Select a sensor input interface
+
+[Not implemented](#)
+
+Match a sensor's physical output and electrical characteristics to a suitable acquisition input.
+
+##### Select an actuator driver
+
+[Not implemented](#)
+
+Recognize when the controller needs an intermediate power stage to operate a load.
+
+##### Explain hardware input-output interfaces
+
+[Not implemented](#)
+
+Distinguish real electrical signaling and connector limitations from software data semantics.
+
+#### Electrical Measurement and Protection
+
+Skills: 4
+
+[Not implemented](#)
+
+Measurements must be connected correctly, while protective devices prevent harmful operating conditions rather than simply switching equipment normally.
+
+##### Measure circuit voltage
+
+[Not implemented](#)
+
+Use a suitable meter across selected terminals to determine a potential difference.
+
+##### Measure circuit current
+
+[Not implemented](#)
+
+Choose an appropriate sensing method and insertion point for a selected branch.
+
+##### Explain overcurrent protection
+
+[Not implemented](#)
+
+Recognize how properly rated fuses or breakers interrupt damaging excessive current.
+
+##### Explain grounding and electrical isolation
+
+[Not implemented](#)
+
+Distinguish intentional protective or reference connections from barriers separating dangerous circuits.
+
+### Automation and Robotics
+
+Groups: 4 · Skills: 16
+
+[Not implemented](#)
+
+Robotic and automated machinery converts physical observations into controlled actions. Engineering competencies concern sensors, actuators, feedback, mechanism geometry and dependable operation; general algorithms and software authoring remain in Informatics.
+
+#### Sensors and Measurement
+
+Skills: 4
+
+[Not implemented](#)
+
+Reliable decisions depend on selecting an appropriate measured quantity and understanding how placement, calibration and uncertainty shape the signal.
+
+##### Select a sensor
+
+[Not implemented](#)
+
+Match required physical quantity, range and conditions to an appropriate sensing principle.
+
+##### Calibrate a sensor
+
+[Not implemented](#)
+
+Relate device readings to known references and correct or qualify the measurements.
+
+##### Interpret sensor error
+
+[Not implemented](#)
+
+Distinguish real changes from drift, limited resolution and random noise.
+
+##### Explain sensor placement
+
+[Not implemented](#)
+
+Relate position and orientation to what a detector can and cannot observe.
+
+#### Feedback and Control
+
+Skills: 4
+
+[Not implemented](#)
+
+A controlled process needs commands, observations and actuation; feedback can improve regulation but also create delay or oscillation.
+
+##### Distinguish open-loop and closed-loop control
+
+[Not implemented](#)
+
+Identify whether measured output is used to adjust a system's input.
+
+##### Explain feedback control loops
+
+[Not implemented](#)
+
+Locate setpoint, sensor, controller, actuator and physical plant in a working system.
+
+##### Analyze control response
+
+[Not implemented](#)
+
+Identify overshoot, steady error, oscillation or excessive delay in observed behavior.
+
+##### Explain safe control fallback
+
+[Not implemented](#)
+
+Describe how critical equipment should react to missing power, unreliable sensing or lost communication.
+
+#### Drives and Actuators
+
+Skills: 4
+
+[Not implemented](#)
+
+A controller requires suitable physical mechanisms to turn supplied energy into controllable displacement, rotation or force.
+
+##### Explain motor-driven motion
+
+[Not implemented](#)
+
+Trace electrical supply and drive control to a rotating mechanical output.
+
+##### Explain servo positioning
+
+[Not implemented](#)
+
+Identify the use of position feedback to command and maintain an actuator's location.
+
+##### Select an actuator
+
+[Not implemented](#)
+
+Match required force or torque, range, speed and duty cycle to a suitable drive.
+
+##### Explain limit switches
+
+[Not implemented](#)
+
+Recognize how end-of-travel signals protect a mechanism from excessive movement.
+
+#### Robot Systems
+
+Skills: 4
+
+[Not implemented](#)
+
+Robots combine mobile or articulated structure with localization, motion control, power and protection; not all robots operate autonomously.
+
+##### Identify robot subsystems
+
+[Not implemented](#)
+
+Assign roles to structure, power, sensors, actuators and controller in a robot.
+
+##### Explain robot degrees of freedom
+
+[Not implemented](#)
+
+Connect the axes and joints of a mechanism to its possible independent movements.
+
+##### Explain robot localization hardware
+
+[Not implemented](#)
+
+Describe how sensing surroundings or movement contributes to estimating physical position.
+
+##### Evaluate safe robot operation
+
+[Not implemented](#)
+
+Identify guards, speed limits, stop systems or separation required around moving robots.
+
+### Transportation and Aerospace Engineering
+
+Groups: 4 · Skills: 16
+
+[Not implemented](#)
+
+Transport machines coordinate power, support, steering, stopping and protection while moving through land, air, water or space. Each vehicle is a system with characteristic environmental and operating constraints.
+
+#### Road and Rail
+
+Skills: 5
+
+[Not implemented](#)
+
+Surface vehicles depend on transmitting traction, guiding movement, supporting loads and maintaining control during stopping.
+
+##### Explain vehicle drivetrains
+
+[Not implemented](#)
+
+Trace prime-mover output through transmissions to driven wheels.
+
+##### Explain steering systems
+
+[Not implemented](#)
+
+Identify how wheel or axle orientation controls direction.
+
+##### Explain suspension systems
+
+[Not implemented](#)
+
+Relate springs, dampers and supports to maintaining contact and controlling motion.
+
+##### Explain vehicle braking systems
+
+[Not implemented](#)
+
+Trace control input to braking torque and recognize traction limitations.
+
+##### Explain maglev train subsystems
+
+[Not implemented](#)
+
+Distinguish magnetic levitation, forward propulsion and guidance; different designs may use attraction or repulsion.
+
+#### Aircraft
+
+Skills: 4
+
+[Not implemented](#)
+
+Aircraft incorporate propulsion, lifting surfaces, stabilization and control; different layouts solve different flight missions.
+
+##### Explain fixed-wing aircraft architecture
+
+[Not implemented](#)
+
+Identify the functions of wing, fuselage, tail, propulsion and landing gear.
+
+##### Explain flight control surfaces
+
+[Not implemented](#)
+
+Relate ailerons, elevators and rudders to changes in orientation rather than thrust.
+
+##### Explain rotorcraft control
+
+[Not implemented](#)
+
+Trace changes in rotor thrust to hovering and maneuvering.
+
+##### Compare aircraft propulsion technologies
+
+[Not implemented](#)
+
+Connect propeller, jet and other arrangements to operating conditions and mission constraints.
+
+#### Watercraft
+
+Skills: 3
+
+[Not implemented](#)
+
+Vessels need suitable hulls, propulsion and steering while managing stability and water resistance.
+
+##### Explain hull design choices
+
+[Not implemented](#)
+
+Relate hull geometry and loading to displacement, stability and resistance.
+
+##### Explain marine propulsion
+
+[Not implemented](#)
+
+Trace motor or engine output to propeller or waterjet thrust.
+
+##### Explain marine steering
+
+[Not implemented](#)
+
+Identify how rudders, steerable drives or differential thrust change course.
+
+#### Spacecraft
+
+Skills: 4
+
+[Not implemented](#)
+
+Space systems must coordinate propulsion and precision orientation with energy supply, thermal protection and mission hardware.
+
+##### Explain rocket propulsion systems
+
+[Not implemented](#)
+
+Identify propellant supply, energy release and nozzle as functions of a launch engine.
+
+##### Identify satellite subsystems
+
+[Not implemented](#)
+
+Distinguish payload, power, communications, thermal and attitude-control equipment.
+
+##### Explain spacecraft attitude control
+
+[Not implemented](#)
+
+Relate sensors and actuators to changing orientation rather than simply changing orbit.
+
+##### Explain atmospheric re-entry protection
+
+[Not implemented](#)
+
+Connect intense heating and mechanical loading to vehicle shielding and geometry.
+
+### Communications, Navigation, and Optical Devices
+
+Groups: 3 · Skills: 12
+
+[Not implemented](#)
+
+Real-world devices transmit signals or obtain information through engineered components and propagation media. This domain covers antennas, optical apparatus and positioning hardware rather than software networking or abstract signal algorithms.
+
+#### Communication Hardware
+
+Skills: 4
+
+[Not implemented](#)
+
+Physical communication chains depend on transducers, suitable electromagnetic or wired paths and receiving equipment.
+
+##### Trace a communication signal chain
+
+[Not implemented](#)
+
+Identify input conversion, transmission, propagation, reception and output in a practical link.
+
+##### Explain radio transmission and reception
+
+[Not implemented](#)
+
+Distinguish transmitting circuitry, antenna radiation, receiving and signal recovery.
+
+##### Explain antenna functions
+
+[Not implemented](#)
+
+Relate antenna coupling, placement and orientation to the intended link.
+
+##### Explain communications infrastructure
+
+[Not implemented](#)
+
+Identify the roles of repeaters, base stations and backhaul links in providing coverage.
+
+#### Optical Devices
+
+Skills: 5
+
+[Not implemented](#)
+
+Optical components manipulate or detect light for imaging, sensing and transmission; lasers require particular source and exposure precautions.
+
+##### Explain camera hardware
+
+[Not implemented](#)
+
+Trace light through an optical path onto an image sensor, apart from software image processing.
+
+##### Explain fiber-optic communication systems
+
+[Not implemented](#)
+
+Identify source, fiber path, connectors and receiver in an optical link.
+
+##### Explain laser device architecture
+
+[Not implemented](#)
+
+Identify an energized gain medium, light amplification and relevant resonator or output optics.
+
+##### Select optical components
+
+[Not implemented](#)
+
+Match lenses, reflectors, filters or detectors to an imaging or measurement function.
+
+##### Identify laser-device hazards
+
+[Not implemented](#)
+
+Connect beam intensity and reflection paths with protective measures and controlled operation.
+
+#### Navigation Equipment
+
+Skills: 3
+
+[Not implemented](#)
+
+Positioning methods use different physical measurements, and each has characteristic failures and accuracy limitations.
+
+##### Explain satellite-navigation receivers
+
+[Not implemented](#)
+
+Recognize how timing signals from multiple satellites support location and time estimates.
+
+##### Explain inertial navigation hardware
+
+[Not implemented](#)
+
+Identify accelerometers and gyroscopes and the accumulation of estimation error.
+
+##### Compare positioning methods
+
+[Not implemented](#)
+
+Relate satellite, inertial and local-reference approaches to interference, coverage and drift.
+
+### Manufacturing and Production
+
+Groups: 3 · Skills: 12
+
+[Not implemented](#)
+
+Finished products require suitable forming processes, assembly, tolerances and inspection. Production engineering addresses repeatable manufacture under resource, quality and throughput limits.
+
+#### Material Shaping
+
+Skills: 4
+
+[Not implemented](#)
+
+A manufacturing process imposes specific restrictions on geometry, material, waste and achievable accuracy.
+
+##### Explain machining and cutting
+
+[Not implemented](#)
+
+Trace material removal by tools to an intended final geometry and its scrap.
+
+##### Explain forming processes
+
+[Not implemented](#)
+
+Identify ways applied force reshapes a material without primarily removing it.
+
+##### Explain molding and casting
+
+[Not implemented](#)
+
+Follow liquid or moldable feedstock through shaping and solidification or curing.
+
+##### Explain additive manufacturing
+
+[Not implemented](#)
+
+Describe incremental material placement or fusion used to produce three-dimensional parts.
+
+#### Assembly and Quality
+
+Skills: 4
+
+[Not implemented](#)
+
+Making components separately is insufficient when fits, order of installation or verification are wrong.
+
+##### Plan an assembly sequence
+
+[Not implemented](#)
+
+Choose an order that provides access and establishes correct component alignment.
+
+##### Interpret manufacturing tolerances
+
+[Not implemented](#)
+
+Determine whether dimensional variations still permit a required fit or movement.
+
+##### Explain quality inspection
+
+[Not implemented](#)
+
+Compare specified product attributes with actual measurements instead of relying on appearance.
+
+##### Diagnose manufacturing defects
+
+[Not implemented](#)
+
+Relate observed nonconformity to possible processing or assembly causes.
+
+#### Production Flow
+
+Skills: 4
+
+[Not implemented](#)
+
+Repeated manufacture introduces throughput limits and choices between flexible batches and continuous processes.
+
+##### Trace production workflow
+
+[Not implemented](#)
+
+Identify stations and movement of parts from raw inputs to completed products.
+
+##### Compare batch and continuous production
+
+[Not implemented](#)
+
+Distinguish discrete runs from ongoing manufacture and their changeover implications.
+
+##### Explain automated manufacturing cells
+
+[Not implemented](#)
+
+Identify handling mechanisms, sensors, drives and safety boundaries in repetitive production.
+
+##### Identify production waste
+
+[Not implemented](#)
+
+Recognize avoidable scrap, waiting, transport or rework in a manufacturing process.
+
+### Human-Centered Engineering and Ergonomics
+
+Groups: 4 · Skills: 15
+
+[Not implemented](#)
+
+Physical controls and built environments must suit real human capabilities. Engineering UX concerns shape, reach, grip, affordance, safe handling and access; digital navigation and software feedback are separate Informatics competencies.
+
+#### User Needs
+
+Skills: 4
+
+[Not implemented](#)
+
+Design briefs must address users with differing abilities and usage contexts rather than projecting the designer's own preferences.
+
+##### Identify physical user scenarios
+
+[Not implemented](#)
+
+Specify who uses an object, what task they perform and relevant conditions.
+
+##### Identify accessibility barriers
+
+[Not implemented](#)
+
+Recognize force, reach, mobility, hearing, sight or dexterity obstacles introduced by a design.
+
+##### Observe physical usability problems
+
+[Not implemented](#)
+
+Distinguish witnessed hesitation or failed handling from assumptions about users.
+
+##### Translate use observations into requirements
+
+[Not implemented](#)
+
+Define a physical success condition based on an observed problem.
+
+#### Product Ergonomics
+
+Skills: 4
+
+[Not implemented](#)
+
+Geometry, loads and posture influence whether a device can be operated comfortably and dependably.
+
+##### Evaluate control reachability
+
+[Not implemented](#)
+
+Check access to buttons, handles or levers from intended operating positions.
+
+##### Evaluate grip and handling
+
+[Not implemented](#)
+
+Relate handle dimensions, texture and operating force to controlled manipulation.
+
+##### Evaluate operating posture
+
+[Not implemented](#)
+
+Identify strain caused by working height, repeated movement or sustained position.
+
+##### Adapt product dimensions
+
+[Not implemented](#)
+
+Choose adjustable or alternative dimensions to accommodate different users.
+
+#### Physical Interaction
+
+Skills: 4
+
+[Not implemented](#)
+
+Users should perceive the purpose of controls and the effects of their actions through appropriately designed physical cues.
+
+##### Evaluate physical control discoverability
+
+[Not implemented](#)
+
+Judge whether location, form and tactile cues make a function apparent.
+
+##### Evaluate physical feedback
+
+[Not implemented](#)
+
+Determine whether resistance, movement or another signal communicates that an action occurred.
+
+##### Design error-resistant controls
+
+[Not implemented](#)
+
+Reduce unintended activation or confusion through control geometry and spacing.
+
+##### Test physical product usability
+
+[Not implemented](#)
+
+Observe representative tasks and record whether operation meets defined requirements.
+
+#### Accessible Environments
+
+Skills: 3
+
+[Not implemented](#)
+
+Inclusive infrastructure requires usable routes and fixtures as well as accessible individual devices.
+
+##### Evaluate continuous access routes
+
+[Not implemented](#)
+
+Check whether surfaces, widths, doors and level changes allow required movement.
+
+##### Select accessible fixtures
+
+[Not implemented](#)
+
+Relate handle choice, reach range and clearances to diverse user needs.
+
+##### Compare inclusive design solutions
+
+[Not implemented](#)
+
+Consider who benefits or remains excluded when choosing a physical design alternative.
+
+### Biomimicry and Biomedical Engineering
+
+Groups: 3 · Skills: 11
+
+[Not implemented](#)
+
+Natural structures can suggest transferable technical principles, while assistive and medical equipment must respond to demanding human-use constraints. Studying biological adaptations is not itself engineering until a technical solution is proposed and evaluated.
+
+#### Nature-Inspired Design
+
+Skills: 4
+
+[Not implemented](#)
+
+A valid biological analogy extracts a function and tests whether it can work with different materials, geometry and scale.
+
+##### Identify functional biological strategies
+
+[Not implemented](#)
+
+Describe the useful effect of a natural structure without portraying evolution as intentional invention.
+
+##### Abstract a biological principle
+
+[Not implemented](#)
+
+Separate a transferable mechanism from the organism's particular form or habitat.
+
+##### Apply a natural principle to a design
+
+[Not implemented](#)
+
+Propose a technical arrangement based on an identified biological mechanism.
+
+##### Evaluate biomimetic performance
+
+[Not implemented](#)
+
+Compare a resulting prototype with functional criteria and acknowledge limitations of the analogy.
+
+#### Bio-Inspired Technologies
+
+Skills: 4
+
+[Not implemented](#)
+
+Distinct examples show recurring design strategies, not a separate Skill for every organism.
+
+##### Explain bio-inspired attachment
+
+[Not implemented](#)
+
+Relate hooks or structured surfaces to engineered removable fasteners or adhesion.
+
+##### Explain self-cleaning surfaces
+
+[Not implemented](#)
+
+Connect surface texture and wetting behavior with liquid and dirt removal.
+
+##### Explain biomimetic streamlining
+
+[Not implemented](#)
+
+Relate a biological shape to a proposed drag-reducing vehicle design requiring testing.
+
+##### Explain lightweight bio-inspired structures
+
+[Not implemented](#)
+
+Identify shells, cellular patterns or branching that motivate efficient material placement.
+
+#### Assistive and Medical Products
+
+Skills: 3
+
+[Not implemented](#)
+
+Devices that contact or support human bodies require function, fit and safety considerations beyond an ordinary consumer gadget.
+
+##### Explain prosthetic device functions
+
+[Not implemented](#)
+
+Identify attachment, structural support, alignment and intended functional replacement.
+
+##### Explain hearing-assistance devices
+
+[Not implemented](#)
+
+Trace sound pickup, processing, amplification or other output and fitting.
+
+##### Evaluate medical-device design constraints
+
+[Not implemented](#)
+
+Recognize hygiene, safe contact, reliable operation, usability and failure consequences.
+
+### Safety, Sustainability, and Responsibility
+
+Groups: 3 · Skills: 12
+
+[Not implemented](#)
+
+Engineering decisions affect people, resources and ecosystems throughout a product's service life. This domain examines foreseeable hazards, life-cycle choices and accountable technical judgment without turning an untested model into a safety certification.
+
+#### Life Cycle and Resources
+
+Skills: 4
+
+[Not implemented](#)
+
+Manufacture, operation, repair and disposal can create different impacts; improving one stage does not prove that the whole design is better.
+
+##### Trace a product life cycle
+
+[Not implemented](#)
+
+Identify material, energy and waste flows from sourcing through use to end of service.
+
+##### Evaluate repairability
+
+[Not implemented](#)
+
+Recognize the importance of accessible parts, reversible fasteners and replacement options.
+
+##### Explain reuse and recycling design
+
+[Not implemented](#)
+
+Relate component separation and material compatibility to feasible recovery pathways.
+
+##### Compare environmental trade-offs
+
+[Not implemented](#)
+
+Judge alternatives over a stated service life rather than a single operational measure.
+
+#### Risk and Protection
+
+Skills: 4
+
+[Not implemented](#)
+
+Hazard control should be integrated into the physical design and take precedence over simple warnings.
+
+##### Identify engineering hazards
+
+[Not implemented](#)
+
+Recognize hazardous motion, temperature, electricity, pressure or stored energy in intended use.
+
+##### Evaluate technical risk
+
+[Not implemented](#)
+
+Consider plausible consequence and occurrence in an explicitly described operating situation.
+
+##### Select risk-reduction measures
+
+[Not implemented](#)
+
+Prioritize safer geometry, guarding, isolation or appropriate protective controls.
+
+##### Explain safety margins
+
+[Not implemented](#)
+
+Relate uncertainty in loading, materials and use conditions to extra design capacity.
+
+#### Ethics and Public Effects
+
+Skills: 4
+
+[Not implemented](#)
+
+Technical solutions create benefits and burdens for users, maintainers, neighbors and communities; limitations must be disclosed.
+
+##### Identify affected stakeholders
+
+[Not implemented](#)
+
+Distinguish users, workers, maintainers and others exposed to a product's consequences.
+
+##### Evaluate social and environmental impacts
+
+[Not implemented](#)
+
+Consider foreseeable external effects alongside direct technical performance.
+
+##### Communicate design limitations
+
+[Not implemented](#)
+
+State assumptions and unverified safety claims instead of generalizing from limited tests.
+
+##### Justify responsible design decisions
+
+[Not implemented](#)
+
+Explain how safety, access, resource use and cost influenced a choice.
 
