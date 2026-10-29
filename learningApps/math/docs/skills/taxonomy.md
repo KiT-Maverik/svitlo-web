@@ -1946,13 +1946,13 @@ Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/interpretC
 
 Твердження «найчастіше обрали синій» виправдане лише тоді, коли у відповідної категорії справді найбільша частота.
 
-##### Визначати, якої інформації бракує для відповіді на поставлене питання
+##### Identifying missing information
 
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/missingInformation.data.ts)
 
 Таблиця без підпису одиниці або без потрібної категорії може не дозволити визначити значення, про яке запитують.
 
-### Ймовірність
+### Probability
 
 Groups: 2 · Skills: 4
 
@@ -1960,7 +1960,7 @@ Code: [Code](../../src/data/skillsTaxonomy/probability/probability.data.ts)
 
 Формує якісне розуміння випадковості: можливі, неможливі й достовірні результати, порівняння шансів та мінливість підсумків повторних випробувань.
 
-#### Випадкові події
+#### Random events
 
 Skills: 3
 
@@ -1968,25 +1968,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/events.data.ts)
 
-##### Розрізняти достовірні й неможливі події на конкретних прикладах
+##### Distinguishing certain and impossible events
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/certainImpossible.data.ts)
 
 Звичайний шестигранний кубик не може показати 9, але обов’язково покаже число від 1 до 6; можливість не означає 50% шансів.
 
-##### Порівнювати повсякденні події як більш або менш імовірні, пояснюючи вибір
+##### Comparing the likelihood of everyday events
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/likelihoodLanguage.data.ts)
 
 За чесного кубика отримати парне число і отримати саме шістку — події з різними шансами; обидві можливі, але не рівноймовірні.
 
-##### Називати можливі результати простого випадкового експерименту
+##### Listing possible outcomes of a simple random experiment
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/listOutcomes.data.ts)
 
 Для підкидання монети простір результатів складається з двох сторін; перелік має враховувати всі передбачені умовами випадки.
 
-#### Експерименти
+#### Random experiments
 
 Skills: 1
 
@@ -1994,13 +1994,13 @@ Skills: 1
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/experiments/experiments.data.ts)
 
-##### Порівнювати серії повторних випадкових експериментів і помічати відмінності результатів
+##### Comparing results of repeated random experiments
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/experiments/skills/experimentVariation.data.ts)
 
 Дві серії по десять підкидань можуть дати різну кількість орлів; випадкова мінливість не свідчить сама по собі про зміну правил.
 
-### Задачі
+### Problem solving
 
 Groups: 7 · Skills: 23
 
@@ -2008,7 +2008,7 @@ Code: [Code](../../src/data/skillsTaxonomy/problemSolving/problemSolving.data.ts
 
 Охоплює переклад умов життєвої ситуації на математичну модель, добір операцій, планування кількох кроків і перевірку осмисленості відповіді.
 
-#### Аналіз умови
+#### Analyzing problem statements
 
 Skills: 3
 
@@ -2016,25 +2016,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/conditions.data.ts)
 
-##### Виділяти умову задачі, відомі величини й запитання
+##### Identifying known and unknown quantities
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/identifyKnownUnknown.data.ts)
 
 Якщо відомо, що було 12 яблук і продали 5, слід виокремити початкову кількість, зміну і те, що потрібно знайти.
 
-##### Розпізнавати зайві дані в текстовій задачі
+##### Recognizing irrelevant information
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/findExtraneousData.data.ts)
 
 У сюжеті про купівлю олівців колір рюкзака може не впливати на запитувану вартість; не всі числа та деталі потрібні.
 
-##### Пояснювати, чому задачу неможливо розв’язати без додаткових даних
+##### Identifying missing information
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/findMissingData.data.ts)
 
 Якщо відома тільки ціна однієї речі, загальну вартість кількох речей не визначити без їхньої кількості.
 
-#### Моделі задач
+#### Problem models
 
 Skills: 4
 
@@ -2042,13 +2042,13 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/models.data.ts)
 
-##### Вибирати додавання чи віднімання відповідно до змісту простої задачі
+##### Choosing addition or subtraction
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationAddSub.data.ts)
 
 Об’єднання двох наборів потребує додавання, вилучення з відомого набору — віднімання; ключова ознака — зміна кількості.
 
-##### Вибирати множення чи ділення за змістом рівних груп
+##### Choosing multiplication or division
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationMulDiv.data.ts)
 
