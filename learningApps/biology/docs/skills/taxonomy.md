@@ -1,16 +1,17 @@
-# Біологія — Skills Taxonomy
+# Biology — Skills Taxonomy
 
 Date: 2026-10-28
+Approved: 2026-10-29
 
-**Історія редакторських рішень (28–29.10.2026):** [Skill Taxonomy Review](../history/skill-taxonomy-review.md). Це довідковий журнал домовленостей і причин змін; канонічний перелік Skills та їхні описи залишаються в цьому документі.
+**Editorial decision history (October 28–29, 2026):** [Skill Taxonomy Review](../history/skill-taxonomy-review.md). This is a reference record of editorial agreements and reasons for changes; the canonical list of Skills and their descriptions remain in this document.
 
-> **Статус: EDITORIAL DRAFT — не затверджено.** Зміни після методичного рев’ю: назви доменів приведено до предметних областей, усунуто механічні описи та переглянуто гранулярність кандидатних Skills. **Невирішені питання** залишаються в описі [PR #49](https://github.com/KiT-Maverik/svitlo-web/pull/49) для прямого редакторського погодження. Поточний інвентар **не** підтверджує затвердження чи реалізацію.
+> **Status: APPROVED.** Following methodologist review, the Domain names were aligned with subject disciplines, mechanical descriptions were replaced with substantive ones, and candidate Skill granularity was revised. The complete 147-Skill Biology taxonomy was approved by the editor on October 29, 2026. Approval concerns the editorial taxonomy, **not** runtime implementation; none of its entity Code files has been created.
 
-Каталог описує **самостійні предметні компетентності**, а не перелік уроків чи класи. Таксономія охоплює біологію як дисципліну в цілому, включно з клітинними механізмами, генетикою, еволюцією, фізіологією та біотехнологіями. Вона не задає вікового або навчального обмеження: вибір, глибину й послідовність матеріалу визначають Curricula.
+The catalog describes **independent subject-specific competencies**, not a list of Lessons or school grades. The taxonomy covers Biology as a whole discipline, including cellular mechanisms, genetics, evolution, physiology, and biotechnology. It sets no age or instructional-level ceiling: Curricula determine which material to select, its depth, and its sequence.
 
-**Предметні межі:** у Biology — будова й життєдіяльність організмів, біологічні екосистемні зв'язки, закономірності спадковості; у Geography — географія природних зон і клімат; у Health & Safety — гігієна, звички, поведінкова безпека. Енциклопедичне **«Хто це?»** — група уроків, не окремий Skill чи SkillGroup.
+**Subject boundaries:** Biology covers the structure and life processes of organisms, biological relationships within ecosystems, and principles of heredity; Geography covers the geographical distribution of natural zones and climate; Health & Safety covers hygiene, habits, and behavioral safety. The encyclopedic **“Who Is This?”** collection is a set of Lessons, not a separate Skill or SkillGroup.
 
-**Редакційні джерела:** [Subject Proposition](../../../../studio/Subject%20Proposition.md), [Methodologist Persona](../../../../studio/personas/methodist.persona.md), [Create Skills Taxonomy](../../../../studio/skills/create-skills-taxonomy.skill.md), [Skill](../../../../studio/docs/entities/skill.md), [SkillGroup](../../../../studio/docs/entities/skill-group.md), [SkillDomain](../../../../studio/docs/entities/skill-domain.md). Зовнішня основа для подальшої поелементної перевірки: НУШ і модельні програми біології України, NGSS, Cambridge Primary Science, Australian Curriculum v9, England Science. **Не заявляємо готового curriculum crosswalk або відсотка покриття.**
+**Editorial references:** [Subject Proposition](../../../../studio/Subject%20Proposition.md), [Methodologist Persona](../../../../studio/personas/methodist.persona.md), [Create Skills Taxonomy](../../../../studio/skills/create-skills-taxonomy.skill.md), [Skill](../../../../studio/docs/entities/skill.md), [SkillGroup](../../../../studio/docs/entities/skill-group.md), [SkillDomain](../../../../studio/docs/entities/skill-domain.md). External reference points for later item-by-item verification: the New Ukrainian School (NUS) and Ukrainian model Biology curricula, NGSS, Cambridge Primary Science, Australian Curriculum v9, and England Science. **No completed curriculum crosswalk or percentage coverage is claimed.**
 
 ## SUMMARY
 
