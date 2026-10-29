@@ -218,55 +218,55 @@ Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.
 
 Заміна десяти одиниць одним десятком не змінює загальної кількості; обмін можна виконати і в зворотний бік.
 
-##### Складати й розкладати двоцифрове число на десятки та одиниці
+##### Tens and ones in two-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/tensOnes.data.ts)
 
 У 57 міститься п’ять повних десятків і сім одиниць; спосіб запису пов’язаний із предметними блоками.
 
-##### Пояснювати, що десять десятків утворюють одну сотню
+##### Ten tens make one hundred
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeHundred.data.ts)
 
 Десять груп по десять утворюють одну нову розрядну одиницю; це основа переходу 90 → 100.
 
-##### Складати й розкладати трицифрове число на сотні, десятки й одиниці
+##### Hundreds, tens and ones in three-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/hundredsTensOnes.data.ts)
 
 У 624 число 6 означає шість сотень, 2 — два десятки, 4 — чотири одиниці, незалежно від вимови.
 
-##### Визначати значення цифри залежно від її розряду
+##### Value of a digit by position
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/digitPlaceValue.data.ts)
 
 У записі 232 перша й остання цифри 2 мають різну вартість: 200 і 2.
 
-##### Пояснювати роль нуля як позначення відсутнього розряду
+##### Zero as a place-value placeholder
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/zeroPlaceholder.data.ts)
 
 У 407 середній нуль зберігає місце десятків і запобігає плутанині з 47.
 
-##### Записувати число як суму розрядних доданків і відновлювати його з цієї суми
+##### Expanded form of numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/expandedForm.data.ts)
 
 Розклад 583 = 500 + 80 + 3 дає змогу переходити між позиційним записом та сумою розрядних значень.
 
-##### Обмінювати одну сотню на десять десятків, а десяток — на десять одиниць
+##### Regrouping between place values
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/regroupPlaceValues.data.ts)
 
 Одну сотню можна замінити десятьма десятками, а кожен десяток — десятьма одиницями без зміни числа.
 
-##### Співвідносити запис числа, модель блоками, числову пряму та кількість предметів
+##### Matching representations of a number
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/multipleRepresentations.data.ts)
 
 Те саме 24 можна показати двома десятками й чотирма одиницями, точкою на шкалі або набором предметів.
 
-#### Порівняння чисел
+#### Comparing numbers
 
 Skills: 5
 
@@ -274,37 +274,37 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/comparison.data.ts)
 
-##### Визначати «більше», «менше», «дорівнює» на конкретних кількостях
+##### Greater, less or equal quantities
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/moreLessEqual.data.ts)
 
 Більшу групу визначають за чисельністю, а не за площею, масою чи візуальними розмірами предметів.
 
-##### Правильно використовувати знаки <, >, = для чисел
+##### Comparison symbols <, > and =
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/comparisonSymbols.data.ts)
 
 Запис 8 > 5 показує напрям порівняння; перестановка чисел вимагає змінити знак на протилежний.
 
-##### Розташовувати числа 0–20 за зростанням або спаданням
+##### Ordering numbers 0–20
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order20.data.ts)
 
 Значення у впорядкованому ряді мають послідовне місце; порядок за спаданням є зворотним до зростання.
 
-##### Порівнювати й впорядковувати двоцифрові числа за розрядами
+##### Comparing and ordering two-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order100.data.ts)
 
 Під час порівняння 64 і 59 вирішальним стає десятковий розряд, а одиниці зіставляють лише за рівних десятків.
 
-##### Порівнювати й упорядковувати трицифрові числа за розрядами
+##### Comparing and ordering three-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order1000.data.ts)
 
 Для 705 і 699 спочатку зіставляють сотні; нуль у розряді десятків не робить 705 меншим.
 
-#### Числова пряма
+#### Number line
 
 Skills: 4
 
@@ -312,7 +312,7 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/numberLine.data.ts)
 
-##### Знаходити попереднє, наступне та проміжні числа в заданому діапазоні
+##### Previous, next and intermediate numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAfterBetween.data.ts)
 
