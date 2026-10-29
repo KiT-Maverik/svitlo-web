@@ -14,7 +14,7 @@ A new subskill is justified when it has a **distinct artifact**, substantial dom
 | --- | --- | --- |
 | [Design Scene](../../skills/design-scene.skill.md) | Prop-free, independently tested, interactive §scene§ resource | Includes UI behavior, localization/RTL, accessibility, performance; requires approved Screenwriter Scene specification |
 | [Create Remotion Video](../../skills/create-remotion-video.skill.md) | Programmatic video/composition, optional Player Scene, Full HD/Story exports | Frame-based motion design, audio/captions, rendering, distribution decisions; uses Design Scene as an additional rule **when embedded as a §scene§** |
-| [Implement Skill Code](../../skills/implement-skill-code.skill.md) | Strictly typed SkillDomain/Group/Skill source and ID registration | Content data generation, stable UUIDs, complete locale dictionaries, taxonomy import boundaries |
+| [Implement Skill Code](../../skills/skill-taxonomy-workflow/implement-skill-code.skill.md) | Strictly typed SkillDomain/Group/Skill source and ID registration | Content data generation, stable UUIDs, complete locale dictionaries, taxonomy import boundaries |
 
 ## Recommended future specialist Skills (not created here)
 
