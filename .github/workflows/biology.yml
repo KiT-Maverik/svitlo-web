@@ -6,6 +6,10 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/biology.yml'
+      - 'shared/contracts/src/types/content/skillDomain.types.ts'
+      - 'shared/engine/src/utils/builders/config/buildSkillDomainConfig.utils.ts'
+      - 'shared/engine/src/utils/builders/config/buildSkillDomainConfig.utils.spec.ts'
+      - 'shared/engine/src/utils/builders/config/buildSkillCatalogConfig.spec.ts'
   push:
     branches: [main]
     paths:
@@ -26,6 +30,10 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run packages:check
+      - run: npm run build --workspace @svitlo/contracts
+      - run: npm run build --workspace @svitlo/engine
+      - run: npm run test --workspace @svitlo/engine
       - run: npm run typecheck --workspace @svitlo/biology
       - run: npm run lint --workspace @svitlo/biology
       - run: npm run build --workspace @svitlo/biology
