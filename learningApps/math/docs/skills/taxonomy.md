@@ -1222,7 +1222,7 @@ Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOr
 
 Інструкції «два кроки вперед, повернути праворуч» мають виконуватися в заданому порядку, бо перестановка кроків змінює маршрут.
 
-#### Плоскі фігури
+#### Plane figures
 
 Skills: 5
 
@@ -1230,37 +1230,37 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/figures.data.ts)
 
-##### Розпізнавати круг, трикутник, квадрат і прямокутник незалежно від розміру й повороту
+##### Identifying basic plane figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/identify2dShapes.data.ts)
 
 Повернутий квадрат залишається квадратом; важливі властивості сторін і кутів, а не звичне положення рисунка.
 
-##### Класифікувати плоскі фігури за кількістю сторін і вершин
+##### Classifying figures by sides and vertices
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/shapeAttributes.data.ts)
 
 Класифікацію здійснюють за геометричними ознаками: трикутник має три сторони, чотирикутник — чотири.
 
-##### Розпізнавати многокутник і визначати його вершини та сторони
+##### Recognizing polygons and their parts
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/polygon.data.ts)
 
 Многокутник обмежений відрізками; кожна точка сполучення сусідніх сторін є вершиною.
 
-##### Пояснювати властивості трикутника, прямокутника та квадрата
+##### Properties of triangles, rectangles and squares
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/triangleRectangleSquare.data.ts)
 
 Квадрат є також прямокутником, оскільки має чотири прямі кути; додаткова властивість — рівність усіх сторін.
 
-##### Складати нову фігуру з частин і розкладати складену фігуру на прості
+##### Composing and decomposing plane figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/composeDecomposeShapes.data.ts)
 
 З двох трикутників можна скласти іншу плоску фігуру; при розбитті початковий контур змінюється, але частини разом зберігають площину.
 
-#### Просторові тіла
+#### Solid figures
 
 Skills: 3
 
@@ -1268,25 +1268,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/solids.data.ts)
 
-##### Впізнавати плоскі фігури на гранях/поверхнях просторових тіл
+##### Identifying plane figures on solid surfaces
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/shapeOnSolidSurface.data.ts)
 
 Квадрат на грані куба — плоска частина об’ємного тіла; не слід називати весь куб квадратом.
 
-##### Розпізнавати куб, кулю, циліндр, конус та інші базові просторові тіла
+##### Identifying basic solid figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/identify3dSolids.data.ts)
 
 Куля не має плоских граней, а куб складається з них; зовнішній контур на рисунку не завжди достатній для розпізнавання.
 
-##### Описувати грані, ребра й вершини куба та прямокутного паралелепіпеда
+##### Faces, edges and vertices of cubes and cuboids
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/spatialSolidsAttributes.data.ts)
 
 Для куба рахують шість граней, дванадцять ребер і вісім вершин, відрізняючи видимі елементи від усіх наявних.
 
-#### Лінії
+#### Lines
 
 Skills: 5
 
@@ -1294,31 +1294,31 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/lines.data.ts)
 
-##### Розрізняти точку, пряму, криву й ламану
+##### Distinguishing points and line types
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/linesAndPoints.data.ts)
 
 Точка позначає місце, пряма не має кінців, крива може змінювати напрям, а ламана складається з відрізків.
 
-##### Розпізнавати, будувати й позначати відрізок із кінцевими точками
+##### Constructing and labeling line segments
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/segment.data.ts)
 
 Відрізок обмежений двома кінцями; його можна позначити літерами крайніх точок, наприклад AB.
 
-##### Розрізняти промінь, відрізок і пряму
+##### Distinguishing rays, segments and lines
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/ray.data.ts)
 
 Промінь має початок, але не має другого кінця; відрізок обмежений з обох боків, пряма — з жодного.
 
-##### Розрізняти замкнені й незамкнені лінії
+##### Identifying closed and open lines
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/closedOpenLines.data.ts)
 
 Контур без розриву може бути замкненим, а лінія з різними початком і кінцем — незамкненою.
 
-##### Розпізнавати паралельні та перпендикулярні прямі на рисунках і в довкіллі
+##### Recognizing parallel and perpendicular lines
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/parallelPerpendicular.data.ts)
 
