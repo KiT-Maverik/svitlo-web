@@ -29,7 +29,7 @@ If a required input is absent or taxonomy files cannot be inspected, **stop Curr
 - **Intent:** desired educational outcomes, depth, boundaries, mandatory source materials, and whether alignment with a specified local standard or accreditation is required.
 - **Taxonomy:** the approved canonical `<PackageRoot>/docs/skills/taxonomy.md` containing the definitions as in-place explanatory prose. Runtime Code is optional for editorial planning. If the taxonomy is inaccessible, stop rather than guessing its location.
 
-Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. If a target-language preference is supplied, write the generated educational material in that language even though this instruction and its template are in English.
+Clarify optional constraints when they matter: locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. **The canonical editorial Curriculum, module/lesson briefs, headings, link labels, directory names, file names and slugs MUST be in English.** Localization of learner-facing material is a separate downstream process; an output-language preference does not change the canonical source language.
 
 ## SOURCE OF TRUTH: SKILLS TAXONOMY
 
@@ -70,7 +70,7 @@ A Curriculum is ready for editorial review only when:
 - Missing information, taxonomy gaps, and unresolved educational choices are reported **separately** instead of obscured by plausible prose.
 - The Curriculum remains a pedagogical specification, not an implementation plan.
 
-Use compact, structured Markdown. English is the working language of this instruction and template; the generated curriculum's language follows the editorial brief. Keep file references clickable in final artifacts and preserve the embedded template's section structure.
+Use compact, structured Markdown in English only. All canonical prose, heading titles, Markdown link labels, file names, directory segments and kebab-case slugs must be English, except immutable technical identifiers and intentional cited material. Preserve indexed ordering prefixes (`01-`, `02-`). Keep file references clickable in final artifacts and preserve the embedded template's section structure. Run an English-language and link-resolution audit before handoff.
 
 ## CURRICULUM TEMPLATE
 
@@ -79,11 +79,11 @@ Use the following template **as written**, replacing placeholders with content a
 **Prerequisites authoring guidance (not part of generated Curriculum):**
 Allowed records:
 - Plain text: %TEXT_PREREQUISITE%
-- Skill: **%SKILL_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
-- SkillGroup: **%SKILL_GROUP_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
-- SkillDomain: **%SKILL_DOMAIN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
+- Skill: **%EXACT_SKILL_EN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
+- SkillGroup: **%EXACT_SKILL_GROUP_EN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
+- SkillDomain: **%EXACT_SKILL_DOMAIN_EN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
 
-Choose only applicable types. All names must match the approved taxonomy exactly. Link to the existing taxonomy file relative to the actual Curriculum; an entry-specific verified Markdown anchor may be used if helpful. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
+Choose only applicable types. The display name of each referenced Skill, SkillGroup, or SkillDomain must **exactly match the canonical English `name.en` from its corresponding `*.data.ts` file** (when implemented), not a paraphrase of a competency, translated title, filename, or a guessed description. Use the relevant Skills Taxonomy link with a verified anchor where possible, or a verified direct Code link. If implementation is absent, use the approved English taxonomy heading. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
 
 **Never include this authoring guidance or template notes in the produced Curriculum document.**
 
@@ -122,18 +122,18 @@ Dependencies: %UNRESOLVED_DEPENDENCIES_OR_GAPS%
 ## LEARNING PLAN
 
 ### %MODULE_INDEX_NUMBER% - %MODULE_NAME%
-Definition: %Module Markdown document link. Default [Not implemented](#). Replace only with a verified file link.%
-Code: %Module runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
+File: %Verified Module Markdown document link. Default [Not implemented](#).%
+Code: %Verified Module runtime Code link if it exists; otherwise omit this optional line.%
 Goal: %MODULE_GOAL% 
 %Module description in a form of a detailed reasonably long text.%
 
 #### %LESSON_INDEX_NUMBER% - %LESSON_NAME%
-Definition: %Lesson Markdown document/learning brief link. Default [Not implemented](#). Replace only with a verified file link.%
-Code: %Lesson runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
+File: %Verified Lesson Markdown/learning brief link. Default [Not implemented](#).%
+Code: %Verified Lesson runtime Code link if it exists; otherwise omit this optional line.%
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
-- **%SKILL_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
+- [%EXACT_SKILL_EN_NAME%](%VERIFIED_SKILL_CODE_PATH_RELATIVE_TO_THIS_CURRICULUM%)
 - ...
 ```
 
@@ -145,11 +145,12 @@ Create or update one Curriculum document at:
 ```text
 <PackageRoot>/
 └── docs/
-    └── curriculums/
-        └── %CURRICULUM_NAME in camelCase%/
-            └── %CURRICULUM_NAME in camelCase%.curriculum.md
+    └── curriculum/
+        └── %ENGLISH_CURRICULUM_SLUG in kebab-case%/
+            └── %ENGLISH_CURRICULUM_SLUG in kebab-case%.curriculum.md
 ```
 
-- Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Keep `docs/curriculums/` literal and derive the Curriculum name in **camelCase** once for both directory and filename.
-- Fill the file using the embedded **CURRICULUM TEMPLATE**. Review existing content before updating it; do not create a substitute `README.md` or automatically generate module, lesson, or assessment files.
-- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculums/<name>/`, the canonical taxonomy is exactly `../../skills/taxonomy.md` (the template includes this direct link). For absent **module/lesson** Definitions or Code, use `[Not implemented](#)` independently; these artifacts have their own lifecycle. **Skills** do not have separate Definition files: verify the referenced names and substantive descriptions in the canonical taxonomy. Skill Code may be absent.
+- Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Use the existing `docs/curriculum/` directory (singular), with an English kebab-case curriculum slug; for grades use `grade-1`, `grade-2`, etc. Never leave a grade's canonical Curriculum file beside its grade folder.
+- Fill the **CURRICULUM TEMPLATE**. Do not create a substitute `README.md`, duplicate grade-level Curriculum, or automatically generate module, lesson, or assessment files. A short `README.md` may only link to the authoritative Curriculum, never replicate its editorial content.
+- Module and lesson directories use ordered English kebab-case names (`01-number-sense`, `02-counting-to-20`); section files and their link labels follow the same English-only rule. Verify all direct and backlink targets after renaming.
+- Resolve all relative links against the resulting Curriculum file. At `<PackageRoot>/docs/curriculum/<slug>/<slug>.curriculum.md`, the canonical taxonomy is `../../skills/taxonomy.md`. Verify actual Skill `name.en` against linked Code data and use that exact text as the Markdown Target Skills label (e.g. `[Number Bonds 10](...)`, not a paraphrase like `[Addition and Subtraction Bonds of Ten](...)`). If there is no verified Code file, link to the approved taxonomy heading instead; never invent a Code path. Do not duplicate Skill Definitions.
