@@ -1,8 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
-import type { LanguageCode } from '../../../types/languages';
-import type { SkillDomain_Config } from '../../../types/content/skillDomain.types';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../localization';
+import type { SkillDomain_Config } from '../../../taxonomy';
 import { buildSkillDomainConfig } from './buildSkillDomainConfig.utils';
 
 const domainId = '11111111-1111-4111-8111-111111111111';
@@ -11,7 +10,7 @@ const skillId = '33333333-3333-4333-8333-333333333333';
 
 const name = Object.fromEntries(
   DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'Test biology domain']),
-) as Record<LanguageCode, string>;
+) as SkillDomain_Config['name'];
 
 function createDomain(
   groupIds: SkillDomain_Config['groupIds'],
@@ -53,7 +52,7 @@ describe('buildSkillDomainConfig', () => {
   });
 
   it('validates UUIDs on direct Skill references', () => {
-    const invalid = 'not-a-uuid' as unknown as typeof skillId;
+    const invalid = 'not-a-uuid' as SkillDomain_Config['id'];
     assert.throws(
       () => buildSkillDomainConfig(createDomain({}, { identify: invalid })),
       /SkillDomain skillIds.identify must be a UUID/,
