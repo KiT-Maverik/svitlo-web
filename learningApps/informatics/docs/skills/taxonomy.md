@@ -1204,274 +1204,273 @@ Define an algorithm skeleton with fixed steps while subclasses implement selecte
 [Not implemented](#)
 
 Move operations on a family of types into a separate visitor while keeping the element structure relatively stable.
-### Штучний інтелект
+### Artificial Intelligence
 
 Groups: 7 · Skills: 34
 
 [Not implemented](#)
 
-Розглядає системи, які виконують задачі, пов’язані з розпізнаванням, прогнозуванням, генерацією та іншими формами інтелектуальної обробки інформації. Охоплює як явно задані правила, так і навчені моделі, особливості їхньої роботи, промптинг, технічні компроміси та перевірку надійності.
+Examines systems performing recognition, prediction, generation, and other forms of intelligent information processing. Includes explicitly programmed rules and trained models, how they work, prompting, technical trade-offs, and reliability verification.
 
-#### Основи AI
+#### AI Fundamentals
 
 Skills: 6
 
 [Not implemented](#)
 
-Розкриває роль програмних правил і навчальних даних у роботі AI, типові цілі задач та межі достовірності результатів. Класифікація задач стосується бажаного результату, а не лише назви моделі чи внутрішнього математичного прийому.
+Explores the roles of programmed rules and training data in AI, common task objectives, and limits of result reliability. Classify tasks by their desired outputs, not only by a model's name or underlying mathematical technique.
 
-##### Розрізняти правила та навчені моделі
-
-[Not implemented](#)
-
-Відрізняти системи, поведінку яких визначають явно запрограмовані правила, від моделей, параметри яких налаштовано навчанням на даних. Обидва підходи використовують алгоритми та можуть поєднуватися в одному продукті; не кожна AI-система обов’язково побудована на машинному навчанні.
-
-##### Пояснювати навчання на прикладах
+##### Distinguish Rules from Trained Models
 
 [Not implemented](#)
 
-Показувати, як навчальна процедура змінює параметри моделі на підставі прикладів та критерію якості, щоб вона узагальнювала на нові дані. Запам’ятовування окремих прикладів не дорівнює надійній здатності працювати з невідомими.
+Distinguish systems governed by explicitly programmed rules from models whose parameters are adjusted through training on data. Both use algorithms and may be combined in one product; not every AI system necessarily relies on machine learning.
 
-##### Класифікувати задачі AI
-
-[Not implemented](#)
-
-За метою задачі визначати, чи потрібно розпізнати категорію або властивість наявних даних, оцінити майбутнє чи невідоме значення, або створити новий матеріал. Наприклад, розпізнавання предмета на фото, прогноз попиту й створення зображення мають різні очікувані результати. Генеративна мовна модель також прогнозує наступні токени всередині процесу генерації, тому внутрішній механізм не тотожний меті задачі.
-
-##### Розпізнавати можливу помилку AI
+##### Explain Learning from Examples
 
 [Not implemented](#)
 
-Виявляти ознаки ненадійної відповіді, зокрема неправдоподібну конкретику, суперечність контексту або неперевірювані посилання. Упевнений тон не свідчить про правдивість; для підтвердження істотного факту потрібна окрема перевірка.
+Show how training adjusts model parameters using examples and a quality criterion to generalize to new data. Memorizing training examples alone does not establish reliable performance on unseen data.
 
-##### Пояснювати генеративний AI
-
-[Not implemented](#)
-
-Пояснювати, як модель створює нові тексти, зображення чи інші матеріали за вхідним контекстом і навченими закономірностями.
-
-##### Пояснювати предиктивний AI
+##### Classify AI Tasks
 
 [Not implemented](#)
 
-Описувати оцінювання числового значення, категорії чи імовірності події за наявними ознаками, наприклад прогноз опадів.
+Determine whether a task aims to recognize a category or property of existing data, predict an unknown or future value, or generate new content. Object recognition in a photo, demand forecasting, and image generation have distinct desired outcomes. A generative language model also predicts successive tokens internally, so its mechanism is not identical to the task's objective.
 
-#### Імітація та розуміння
+##### Identify a Potential AI Error
+
+[Not implemented](#)
+
+Recognize signs of an unreliable response, such as implausibly specific details, contradictions with context, or unverifiable references. A confident tone is not evidence of truth; material claims need independent verification.
+
+##### Explain Generative AI
+
+[Not implemented](#)
+
+Describe how models create new text, images, or other content based on input context and patterns learned during training.
+
+##### Explain Predictive AI
+
+[Not implemented](#)
+
+Describe estimating a numerical value, category, or event probability from known features, for example forecasting rainfall.
+
+#### Imitation and Understanding
 
 Skills: 2
 
 [Not implemented](#)
 
-Дискусії про машинний інтелект відокремлюють зовнішню схожість відповідей від тверджень про внутрішнє розуміння. Поведінковий критерій і філософський мисленнєвий експеримент ставлять різні питання; жоден з них сам по собі не доводить наявності або відсутності свідомості.
+Discussions of machine intelligence distinguish outward similarity of responses from claims of internal understanding. A behavioral criterion and a philosophical thought experiment ask different questions; neither alone proves or disproves consciousness.
 
-##### Пояснювати тест Тюрінга
-
-[Not implemented](#)
-
-Пояснювати запропонований Аланом Тюрінгом підхід до оцінювання, чи може машина в діалозі створити відповіді, які людина не відрізняє від людських за умовами випробування. Успішна імітація спілкування не є доведенням свідомості чи повного розуміння.
-
-##### Пояснювати «Китайську кімнату» Серла
+##### Explain the Turing Test
 
 [Not implemented](#)
 
-Розбирати мисленнєвий експеримент Джона Серла про обробку символів за правилами без обов’язкового розуміння їхнього змісту. Відрізняти аргумент у філософській дискусії від доведеного факту про внутрішні стани всіх AI-систем.
+Explain Alan Turing's proposed approach to evaluating whether a machine can produce dialogue that a person cannot distinguish from human responses under test conditions. Successful imitation does not establish consciousness or comprehensive understanding.
 
-#### Промптинг
+##### Explain Searle's Chinese Room
+
+[Not implemented](#)
+
+Analyze John Searle's thought experiment about rule-based symbol manipulation without necessarily understanding their meaning. Distinguish a debated philosophical argument from a proven fact about the internal states of all AI systems.
+
+#### Prompting
 
 Skills: 7
 
 [Not implemented](#)
 
-Формулювання вимог до запиту в AI-систему: мета, контекст, обмеження, бажаний формат і послідовне уточнення. Складові запиту можна змінювати незалежно, а оцінювання істинності відповіді належить до надійності AI.
+Specifying requirements for an AI request: objective, context, constraints, desired output format, and iterative refinement. Prompt components can vary independently; checking whether answers are true belongs to AI reliability.
 
-##### Формулювати мету промпту
-
-[Not implemented](#)
-
-Передавати моделі визначену задачу та бажаний результат, наприклад «порівняй три пояснення й виділи різницю», замість нечіткого прохання «розкажи щось». Мета описує роботу, яку слід виконати, а не формат виходу.
-
-##### Задавати контекст промпту
+##### Specify a Prompt Objective
 
 [Not implemented](#)
 
-Надавати моделі релевантні вихідні факти, цільове призначення або умови використання, без яких відповідь буде довільною. Контекст допомагає правильно інтерпретувати запит, але не повинен містити зайві персональні відомості.
+Give a model a defined task and desired outcome, such as 'compare three explanations and highlight their differences,' instead of 'tell me something.' The objective specifies the work, not the output format.
 
-##### Задавати обмеження промпту
-
-[Not implemented](#)
-
-Формулювати межі допустимого результату — джерела, обсяг, виключення чи заборону вигадувати відсутні дані. На відміну від мети, обмеження визначають, яких рішень модель не має пропонувати.
-
-##### Задавати формат відповіді
+##### Provide Prompt Context
 
 [Not implemented](#)
 
-Зазначати структуру готового результату, наприклад таблицю з конкретними стовпцями чи JSON із визначеними полями, не змішуючи формат зі змістовною правильністю відповіді.
+Supply relevant facts, intended audience or use, and conditions needed to interpret a request correctly. Context helps but should exclude unnecessary personal information.
 
-##### Уточнювати промпт за результатом
-
-[Not implemented](#)
-
-Порівнювати отриманий результат із початковою метою та коригувати конкретні частини запиту, що спричинили невідповідність. Підбір нового формулювання не замінює перевірки правдивості наведених моделлю фактів.
-
-##### Задавати роль у промпті
+##### Specify Prompt Constraints
 
 [Not implemented](#)
 
-Формулювати очікувану предметну роль або стиль відповіді моделі, не вважаючи названу роль доказом наявності професійного досвіду.
+Define the boundaries of acceptable output, such as permitted sources, length, exclusions, or a prohibition on inventing missing data. Unlike the objective, constraints define which responses are not acceptable.
 
-##### Розкладати складний промпт на підзадачі
+##### Specify an Output Format
 
 [Not implemented](#)
 
-Ділити багатокрокове прохання на послідовні запити з перевірюваними проміжними результатами, не втрачаючи початкової мети.
+Describe the required structure, such as a table with named columns or JSON with defined fields, without confusing formatting with factual correctness.
 
-#### Архітектури та ресурси моделей
+##### Refine a Prompt Based on Results
+
+[Not implemented](#)
+
+Compare output with the original goal and adjust specific parts of a prompt responsible for discrepancies. Rewording cannot substitute for fact-checking the model's claims.
+
+##### Specify a Role in a Prompt
+
+[Not implemented](#)
+
+State a desired subject-matter role or response style without treating the declared role as evidence of actual professional experience.
+
+##### Break a Complex Prompt into Subtasks
+
+[Not implemented](#)
+
+Split a multi-stage request into sequential prompts with verifiable intermediate outcomes while preserving the original objective.
+
+#### Model Architectures and Resources
 
 Skills: 5
 
 [Not implemented](#)
 
-Порівняння технічних властивостей AI-моделей: способу активації компонентів, числової точності, затримки, вимог до пам’яті та відповідності завданню. Це властивості конкретної моделі й умов запуску, не універсальний рейтинг AI.
+Compare AI model characteristics: activation of components, numerical precision, latency, memory requirements, and fit for a task. These depend on the model and execution conditions, not on a universal AI ranking.
 
-##### Порівнювати dense та MoE-моделі
-
-[Not implemented](#)
-
-Розрізняти архітектуру, де під час проходу задіяний увесь відповідний щільний обчислювальний блок, і mixture-of-experts, де маршрутизатор активує частину спеціалізованих експертних блоків. Не ототожнювати число всіх параметрів із кількістю активних параметрів на один токен.
-
-##### Пояснювати квантизацію
+##### Compare Dense and MoE Models
 
 [Not implemented](#)
 
-Показувати, як представлення ваг або активацій меншою кількістю бітів зменшує вимоги до пам’яті та іноді пришвидшує виконання, але може змінити точність обчислень і якість виходу. Це компроміс, а не безкоштовне стиснення.
+Distinguish an architecture activating all relevant dense computation from a mixture-of-experts architecture where a router activates only some expert blocks. Total parameter count is not the same as the number of parameters active for each token.
 
-##### Порівнювати затримку відповіді
-
-[Not implemented](#)
-
-Порівнювати затримку між надсиланням запиту та появою першої корисної відповіді за однакових умов запуску. Час очікування відрізняється від швидкості подальшої генерації: коротка затримка до першого токена не гарантує швидкого завершення довгої відповіді.
-
-##### Порівнювати вимоги моделей до пам’яті
+##### Explain Quantization
 
 [Not implemented](#)
 
-Оцінювати обсяг оперативної чи відеопам’яті, потрібний для зберігання ваг моделі та робочих даних під час запуску, за конкретної точності й довжини контексту. Розмір файла на диску не дорівнює піковому використанню пам’яті.
+Show how representing weights or activations with fewer bits reduces memory use and may improve speed, while potentially changing numerical accuracy and output quality. This is a trade-off, not cost-free compression.
 
-##### Обирати модель для задачі
+##### Compare Response Latency
 
 [Not implemented](#)
 
-Зважувати кілька незалежних обмежень конкретного сценарію — точність, затримку, доступну пам’ять, вартість і приватність — та обґрунтовувати вибір моделі. Не існує однієї моделі, найкращої за всіма критеріями одночасно.
+Compare the time between submitting a request and receiving the first useful output under consistent conditions. Time to first token is different from subsequent generation speed: a short initial delay does not guarantee that a long response finishes quickly.
 
-#### Надійність та відповідальне використання AI
+##### Compare Model Memory Requirements
+
+[Not implemented](#)
+
+Estimate RAM or GPU memory needed for model weights and runtime working data at a specified numerical precision and context length. Disk file size is not the same as peak runtime memory use.
+
+##### Choose a Model for a Task
+
+[Not implemented](#)
+
+Weigh independent constraints for a scenario—accuracy, latency, available memory, cost, and privacy—and justify the selection. No single model is best on every criterion simultaneously.
+
+#### Reliability and Responsible AI Use
 
 Skills: 4
 
 [Not implemented](#)
 
-Захист даних, виявлення ненадійних результатів і несправедливих наслідків використання моделей. Перевірка факту, оцінка упередженості й відповідальність людини охоплюють різні ризики.
+Protecting data and identifying unreliable results or unfair consequences of AI use. Fact-checking, bias assessment, and human accountability address different risks.
 
-##### Перевіряти факти у відповіді AI
-
-[Not implemented](#)
-
-Виділяти перевірювані твердження моделі й зіставляти їх із незалежними достовірними джерелами; оцінювати джерело, дату та контекст. AI-відповідь не стає підтвердженням сама собі або іншому переказу цієї самої відповіді.
-
-##### Розпізнавати ризик упередженості AI
+##### Verify Facts in an AI Response
 
 [Not implemented](#)
 
-Помічати, що навчальні дані чи правила застосування можуть призвести до систематично різних результатів для груп або окремих людей. Ізольований помилковий результат не завжди доводить систематичну упередженість.
+Identify verifiable claims from model output and compare them with independent trustworthy sources, checking provenance, date, and context. An AI response cannot confirm itself or another retelling of the same response.
 
-##### Захищати персональні дані в промптах
-
-[Not implemented](#)
-
-Визначати, яку інформацію про людину не слід передавати зовнішньому AI-сервісу, та вилучати чи узагальнювати її без втрати мети задачі. Публічний доступ до моделі не означає, що введені дані залишаються приватними.
-
-##### Пояснювати роль людини у рішенні з AI
+##### Recognize AI Bias Risks
 
 [Not implemented](#)
 
-Відокремлювати автоматично запропоновану рекомендацію від рішення, за наслідки якого відповідає конкретна людина або організація. Важливі перевірка підстав, можливість оскаржити результат і контроль над остаточною дією.
+Notice how training data or deployment rules may produce systematically different outcomes for groups or individuals. One erroneous output does not necessarily establish systematic bias.
 
-#### Токени й контекст мовних моделей
+##### Protect Personal Data in Prompts
+
+[Not implemented](#)
+
+Identify information about individuals that should not be disclosed to an external AI service and remove or generalize it without defeating the task objective. Public access to a model does not imply that submitted data stays private.
+
+##### Explain Human Responsibility for AI-Assisted Decisions
+
+[Not implemented](#)
+
+Distinguish an automatically generated recommendation from a decision for which a person or organization is accountable. Verification of grounds, the ability to contest results, and control over final action matter.
+
+#### Language Model Tokens and Context
 
 Skills: 6
 
 [Not implemented](#)
 
-Текстові моделі працюють з токенами, оцінюють можливі продовження та обмежені доступним контекстом; кількість параметрів моделі не дорівнює довжині контексту.
+Language models process tokens, evaluate possible continuations, and operate within a limited context window; model parameter count does not determine context length.
 
-##### Пояснювати поняття токена
-
-[Not implemented](#)
-
-Розуміти токен як одиницю тексту, визначену токенізатором: окремі літери, частини слів, цілі слова чи розділові знаки можуть кодуватися по-різному.
-
-##### Розрізняти токен, символ та слово
+##### Explain Tokens
 
 [Not implemented](#)
 
-Показувати, що одне слово може складатися з декількох токенів, а один токен містити декілька символів; поділ залежить від моделі та мови.
+Understand a token as a unit defined by a tokenizer: single letters, word fragments, whole words, or punctuation may be encoded in different ways.
 
-##### Пояснювати вибір наступного токена
-
-[Not implemented](#)
-
-Модель формує розподіл імовірностей продовження за доступним контекстом, після чого обраний токен стає частиною контексту наступного кроку.
-
-##### Розрізняти вибірку і вибір найімовірнішого токена
+##### Distinguish Tokens, Characters, and Words
 
 [Not implemented](#)
 
-Порівнювати декодування з вибіркою за розподілом та детермінованим вибором найбільш імовірного продовження.
+Show that a word may contain several tokens and a token may contain several characters; the segmentation depends on the model and language.
 
-##### Пояснювати контекстне вікно мовної моделі
-
-[Not implemented](#)
-
-Визначати обмеження обсягу токенів, які система може використовувати в одному запиті, та розуміти, що різні моделі мають різні ліміти.
-
-##### Пояснювати переповнення контекстного вікна
+##### Explain Next-Token Selection
 
 [Not implemented](#)
 
-Розуміти, що за перевищення ліміту конкретний сервіс може відхилити запит, скоротити або підсумувати частину попереднього тексту.
+A model computes a probability distribution over continuations given the available context, then incorporates the chosen token into the context for the next step.
 
-#### Безпечна взаємодія з AI
+##### Distinguish Sampling from Choosing the Most Likely Token
+
+[Not implemented](#)
+
+Compare decoding by sampling from a probability distribution with deterministically selecting its highest-probability continuation.
+
+##### Explain a Language Model's Context Window
+
+[Not implemented](#)
+
+Identify the limit on how many tokens a system can use for a request and understand that different models have different limits.
+
+##### Explain Context Window Overflow
+
+[Not implemented](#)
+
+Explain that when the limit is exceeded, a service may reject the request, truncate earlier content, or summarize parts of it.
+
+#### Safe Interaction with AI
 
 Skills: 4
 
 [Not implemented](#)
 
-Розпізнавання некоректної впевненості моделі, надмірної погоджувальності, ризиків залежності та необхідності зберігати людський контроль.
+Recognizing unjustified model confidence, excessive agreement, dependency risks, and the need for continued human judgment.
 
-##### Розпізнавати надмірне підтакування AI
-
-[Not implemented](#)
-
-Відділяти обґрунтовану підтримку від необґрунтованої похвали й підтвердження помилкової думки; позитивний тон не є доказом правильності.
-
-##### Пояснювати ризики надмірної залежності від AI
+##### Recognize AI Sycophancy
 
 [Not implemented](#)
 
-Розуміти, чому тривалі розмови з чатботом не повинні замінювати спілкування з людьми, самостійні перевірки й звернення по допомогу.
+Distinguish evidence-based support from unfounded praise and reinforcement of an incorrect belief; a positive tone does not establish correctness.
 
-##### Розпізнавати недовірені інструкції у матеріалах для AI
-
-[Not implemented](#)
-
-Відокремлювати вміст зовнішнього документа, який треба аналізувати, від інструкцій користувача; сторонній текст не має автоматично керувати поведінкою системи.
-
-##### Захищати секрети під час роботи з AI
+##### Explain Risks of Overreliance on AI
 
 [Not implemented](#)
 
-Не вводити в чатбот паролі, коди підтвердження, ключі доступу чи конфіденційні дані без належного дозволу та перевірених гарантій захисту.
+Explain why extended conversations with chatbots should not replace interactions with people, independent checks, or asking for help.
 
+##### Identify Untrusted Instructions in AI Input
+
+[Not implemented](#)
+
+Distinguish the content of an external document being analyzed from the user's instructions; third-party text should not automatically control system behavior.
+
+##### Protect Secrets When Using AI
+
+[Not implemented](#)
+
+Avoid entering passwords, confirmation codes, access keys, or confidential information into chatbots without proper authorization and verified safeguards.
 ### Робототехніка та автоматизація
 
 Groups: 2 · Skills: 8
