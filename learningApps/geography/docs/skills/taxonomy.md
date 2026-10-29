@@ -2,29 +2,29 @@
 
 Date: 2026-10-29
 
-A subject-wide, audience-independent catalog of geographical competencies. It covers spatial location and time zones, cartography and map types, minerals and Earth history, land and water systems, weather and climate, natural regions, human geography, natural resources, environment–society interactions, and geographic investigation. Domain → Group → Skill denotes **classification**, not grades, lesson order, prerequisites, assessment evidence, or a particular national curriculum. The same competency may support introductory explorations and more demanding learning experiences.
+A subject-wide, audience-independent catalog of geographical competencies. It covers geographic objects and global divisions, location and time zones, map creation and geospatial technologies, geology and surface processes, water systems, atmosphere and climate, natural regions and ecosystems, human and economic geography, environment–society interactions, and geographic inquiry. Domain → Group → Skill denotes **classification**, not grades, lesson order, prerequisites, assessment evidence, or a particular national curriculum. The same competency may support introductory explorations and more demanding learning experiences.
 
-**Boundaries:** Geographic interpretation of the spatial distribution, characteristics, and interaction of Earth systems is in scope. Detailed biology of organisms, physical equations, chemical reaction mechanisms, astronomy beyond geographical explanations, software implementation, historical chronology, and financial calculations remain primarily in their respective subjects. Introductory geology and mineralogy, including geological evidence, resources and hazards, are explicitly within Geography's editorial scope. Geography can draw on those disciplines without duplicating their taxonomies. The subject's optional “What is it?” encyclopedia is a **lesson/content format**, not a Skill or SkillGroup.
+**Boundaries:** Geographic interpretation of the spatial distribution, characteristics, and interaction of Earth systems is in scope. Detailed biology of organisms, physical equations, chemical reaction mechanisms, astronomy beyond geographical explanations, software implementation, historical chronology, and financial calculations remain primarily in their respective subjects. Introductory geology and mineralogy, including geological evidence, resources and hazards, are explicitly within Geography's editorial scope. Geography can draw on those disciplines without duplicating their taxonomies. The subject's optional “What is it?” encyclopedia is a **lesson/content format**, not a Skill or SkillGroup. Lessons may teach several Skills; Programs select and sequence Lessons. National or international geography standards can guide a Program and help identify missing competencies, but do not define the taxonomy's Domain hierarchy.
 
 **Breadth references:** [NCGE National Geography Standards — six essential elements](https://ncge.org/teacher-resources/national-geography-standards/) and [National Geographic, Geography Standard 1](https://education.nationalgeographic.org/resource/geography-standard-1/), consulted as international scope checks; they are **not** adopted as a mandated national or grade-specific curriculum. Technical concept checks: [USGS — rocks and minerals](https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral), [USGS — geologic time](https://pubs.usgs.gov/gip/geotime/relative.html), and [US Naval Observatory — civil and solar time](https://aa.usno.navy.mil/faq/eqtime). This document is an editorial proposal pending review.
 
 ## SUMMARY
 
-Domains: 8
-Groups: 32
-Skills: 116
+Domains: 11
+Groups: 41
+Skills: 161
 
-Code files: 0/8 Domains · 0/32 Groups · 0/116 Skills
+Code files: 0/11 Domains · 0/41 Groups · 0/161 Skills
 
 ## DOMAINS
 
 ### Spatial Orientation
 
-Groups: 4 · Skills: 15
+Groups: 4 · Skills: 16
 
 Code: [Not implemented](#)
 
-Places can be identified using a reference position, direction, scale, or coordinated spatial framework. The same geographic position also belongs to different local and civil time systems, which depend on Earth's rotation and agreed time conventions. This domain addresses locating, orienting and situating places, rather than the graphic rules of making maps.
+Locating and orienting oneself requires a stable or relative reference, directions, remembered spatial relationships and awareness of changing spatial and temporal frames. These competencies concern where places are, how we navigate between them, and how their civil and solar times relate—not how maps are drawn.
 
 #### Location and Reference
 
@@ -32,7 +32,7 @@ Skills: 3
 
 Code: [Not implemented](#)
 
-A position may be described from a chosen nearby reference or identified within an agreed fixed reference system; both require sufficient precision to tell one place from another. These methods are concepts of locating places, distinct from the specific techniques of reading latitude and longitude in cartography.
+Locations can be described relative to a chosen reference, identified using stable geographic or civic references, and situated within areas of different spatial extent. The identity of the reference must be explicit rather than assumed from the observer.
 
 ##### Describe a location relative to a reference point
 
@@ -60,11 +60,11 @@ Code: [Not implemented](#)
 
 Earth's rotation gives different longitudes different solar timing, while societies coordinate clocks through geographically assigned civil time rules. The same place can be described by its solar time, legal time-zone assignment, UTC offset and calendar date; these are related but not interchangeable.
 
-##### Explain the concept of local time
+##### Explain the concept of local civil time
 
 Code: [Not implemented](#)
 
-Recognize that time at a particular place can mean its solar timing or the legally observed clock time, and identify which meaning a geographic question uses. Two places may have different solar times yet share the same official clock time.
+Explain that the legally observed clock time in a place depends on the jurisdiction and applicable time zone, and can differ from the Sun's position. Civil local time is not the same concept as local solar time, and different places can share one civil clock time.
 
 ##### Explain why local solar time varies with longitude
 
@@ -98,7 +98,7 @@ Determine why adjacent locations on opposite sides of the approximate Pacific da
 
 #### Directions and Routes
 
-Skills: 3
+Skills: 4
 
 Code: [Not implemented](#)
 
@@ -121,6 +121,12 @@ Locate positions such as northeast between adjacent cardinal directions rather t
 Code: [Not implemented](#)
 
 Choose an intelligible sequence of landmarks and turns between two positions, checking that the instructions preserve connectivity.
+
+##### Use mental maps for spatial orientation
+
+Code: [Not implemented](#)
+
+Represent remembered places and spatial relationships internally, and use that representation to reason about position or a route without consulting a physical map. Drawing a familiar route, revising it after a new observation and imagining landmarks are different exercises for the same transferable spatial ability.
 
 #### Spatial Relationships
 
@@ -150,15 +156,15 @@ Explain how a mountain range, river crossing, valley, or road can restrict or en
 
 ### Maps and Geospatial Representations
 
-Groups: 4 · Skills: 13
+Groups: 5 · Skills: 17
 
 Code: [Not implemented](#)
 
-A representation selects, simplifies, and positions geographic information to communicate spatial meaning. Reading it requires attention to symbols, scale, perspective, coordinates, and the limitations of the chosen portrayal.
+Geographic representations convey selected positions, attributes and relationships through maps, globes, sketches, coordinates, imagery and spatial data. Competence includes interpretation and purposeful creation while acknowledging selection, measurement, projection and source limitations.
 
 #### Map Conventions
 
-Skills: 3
+Skills: 4
 
 Code: [Not implemented](#)
 
@@ -181,6 +187,12 @@ Use the map's stated orientation rather than assuming the top of every depiction
 Code: [Not implemented](#)
 
 Recognize that a short mark on paper or screen represents a larger distance on the ground and that the ratio changes with scale.
+
+##### Create maps
+
+Code: [Not implemented](#)
+
+Select an appropriate spatial extent and represent places or geographically referenced information with consistent symbols, orientation, labels and scale as needed for a communication purpose. Sketching a classroom plan and constructing a thematic map are applications, not automatically distinct Skills.
 
 #### Globes, Maps, and Projection
 
@@ -266,21 +278,165 @@ Code: [Not implemented](#)
 
 Identify where mapped phenomena coincide or differ without assuming that co-location alone establishes causation.
 
-### Earth Surface and Land Processes
-
-Groups: 9 · Skills: 42
-
-Code: [Not implemented](#)
-
-The solid Earth supplies minerals, rocks, soils and the relief visible on its surface. Their origin, internal organization, change across deep time, and location explain patterns of landscapes, deposits and geological hazards. This is the geography and introductory earth science of materials and land processes, not a substitute for detailed chemical reaction mechanisms or physical derivations.
-
-#### Landforms and Relief
+#### Geospatial Technologies
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Elevation, slope, and shape distinguish hills, mountains, valleys, plains, and plateaus. A named feature is less important than the properties by which such terrain can be recognized.
+Satellite and aerial imagery, positioning systems and geographic information systems provide different kinds of geographically referenced evidence. The focus is interpreting and using that evidence for geographic questions, not programming a software package or memorizing individual interface controls.
+
+##### Interpret remote-sensing imagery
+
+Code: [Not implemented](#)
+
+Use spatial patterns, scale, source limitations and visible characteristics in aerial or satellite observations to infer geographic features and land-cover change. Comparing two dated images is one application of this competence.
+
+##### Use satellite-positioning information for geographic orientation
+
+Code: [Not implemented](#)
+
+Interpret a position supplied by a GNSS device in relation to a coordinate reference and the surrounding geography; recognize that positioning has uncertainty and does not directly describe what is at the location.
+
+##### Analyze geographic relationships using spatial data layers
+
+Code: [Not implemented](#)
+
+Combine separately mapped geographic properties to investigate co-occurrence, proximity or spatial variation, taking account of registration, resolution and the risk of mistaking correlation for causation. GIS is a possible tool rather than the definition of the Skill.
+
+### Geographic Objects
+
+Groups: 4 · Skills: 23
+
+Code: [Not implemented](#)
+
+The world contains natural and human-made places and features with recognizable form, position and geographic roles. Learners classify these objects, interpret the conventional division of Earth into continents, parts of the world, oceans and hemispheres, and locate both familiar and global features. Processes that create or change these features belong to the relevant physical and human geography Domains.
+
+#### Classification
+
+Skills: 5
+
+Code: [Not implemented](#)
+
+A geographic object is a distinguishable natural or human-made feature or place, while regions group places by an explicit criterion. Classification uses defining properties, not just memorized names; a region's boundary may depend on the chosen rule.
+
+##### Explain the concept of a geographic object
+
+Code: [Not implemented](#)
+
+Describe a distinguishable feature or place that can be identified spatially and characterized through location, form or function, without assuming that all objects are naturally occurring or have perfectly sharp borders.
+
+##### Classify geographic objects by natural or human-made origin
+
+Code: [Not implemented](#)
+
+Use evidence about formation and function to decide whether a visible feature is natural or built or substantially modified by people, while recognizing that mixed cases such as managed rivers can require qualification.
+
+##### Classify places into regions using stated criteria
+
+Code: [Not implemented](#)
+
+Apply an explicit property such as climate or relief consistently instead of sorting places by familiar names alone.
+
+##### Distinguish formal and functional regions
+
+Code: [Not implemented](#)
+
+Separate areas sharing a measurable characteristic from areas connected through activity around a center, such as a commuting region.
+
+##### Explain why regional boundaries may differ between maps
+
+Code: [Not implemented](#)
+
+Recognize that changing the defining variable or classification threshold can redraw a region without moving any physical feature.
+
+#### Global Geographic Divisions
+
+Skills: 9
+
+Code: [Not implemented](#)
+
+Different conventions divide Earth into continental landmasses, historically and culturally recognized parts of the world, ocean basins and hemispheres. These systems answer different geographic questions and should not be collapsed into one supposedly universal continent count.
+
+##### Explain the concept of a continent
+
+Code: [Not implemented](#)
+
+Describe a major connected or conventionally recognized continental landmass and recognize that geography education uses different models for grouping landmasses, such as Eurasia versus separately named Europe and Asia.
+
+##### Explain the concept of a part of the world
+
+Code: [Not implemented](#)
+
+Describe a historically and geographically recognized world region such as Europe or Asia, distinguishing regional convention from purely continuous landmass without imposing one national schoolbook's definitions universally.
+
+##### Distinguish continents from parts of the world
+
+Code: [Not implemented](#)
+
+Select or explain which geographic classification system is being used and why Europe and Asia may be treated as two parts of the world yet Eurasia as one landmass in another convention. This is a relationship between systems, not just naming a region.
+
+##### Locate continents on a globe
+
+Code: [Not implemented](#)
+
+Identify the global positions and relative arrangement of major continental landmasses according to a specified classification system, using their forms and geographic relationships rather than a rote list of example coordinates.
+
+##### Locate parts of the world on a globe
+
+Code: [Not implemented](#)
+
+Recognize the world regions designated as parts of the world within a stated convention and locate them in relation to surrounding continents and oceans, without assuming their borders are universally fixed.
+
+##### Explain the concept of an ocean
+
+Code: [Not implemented](#)
+
+Recognize a major interconnected body of saline water forming part of the world ocean and distinguish a named ocean basin from smaller marginal seas and land-bound inland waters.
+
+##### Locate oceans on a globe
+
+Code: [Not implemented](#)
+
+Identify the principal named ocean basins and their positions relative to landmasses using an explicit naming convention rather than mistaking seas or map boundaries for physical barriers in the connected ocean.
+
+##### Identify Earth's geographic hemispheres
+
+Code: [Not implemented](#)
+
+Use the Equator and a stated meridian division to identify northern, southern, eastern or western hemispheres, while recognizing that eastern/western boundaries depend on the chosen conventional meridian.
+
+##### Locate countries on a map
+
+Code: [Not implemented](#)
+
+Identify the positions of named sovereign states using a political map and stated time/context, recognizing that boundaries, names and political recognition may be disputed or change. Which countries are studied belongs to the Program, not the Skill identity.
+
+#### Land and Water
+
+Skills: 6
+
+Code: [Not implemented](#)
+
+Natural geographic features are differentiated by relief, water movement, enclosure and spatial relationships to neighboring land or water. Object identification is separate from the physical processes that formed a coastline, mountain or river valley.
+
+##### Identify islands and peninsulas by their geographic form
+
+Code: [Not implemented](#)
+
+Recognize land surrounded by water on all sides versus land connected to a larger landmass while bordered by water on several sides, using the geographic relation rather than an object name.
+
+##### Identify straits and isthmuses by their geographic form
+
+Code: [Not implemented](#)
+
+Recognize a narrow water passage linking larger bodies of water and a narrow land bridge linking larger land areas, keeping land and water connectivity distinct.
+
+##### Identify capes and other coastal projections
+
+Code: [Not implemented](#)
+
+Recognize a portion of land projecting into adjacent water through its shape and position, distinguishing a cape from a peninsula by the scale and conventional use of the terms.
 
 ##### Classify common landforms by observable characteristics
 
@@ -288,11 +444,71 @@ Code: [Not implemented](#)
 
 Distinguish a valley, plain, plateau, and mountain using relief and shape instead of relying solely on place names.
 
-##### Compare elevations and relative relief
+##### Distinguish lakes, rivers, and wetlands by water behavior
 
 Code: [Not implemented](#)
 
-Separate height above sea level from height difference between nearby points, which can vary independently.
+Recognize characteristic movement and retention of water without treating all standing or shallow water as the same feature.
+
+##### Distinguish ocean, sea, gulf, and bay in geographic context
+
+Code: [Not implemented](#)
+
+Use scale, enclosure, and connection to larger water bodies while acknowledging that some named features are historical conventions.
+
+#### Human-Made Objects
+
+Skills: 3
+
+Code: [Not implemented](#)
+
+People build or organize identifiable features such as settlements, roads, bridges, ports and waterways. Their classification concerns recognizably different physical or functional types; networks, economics and governance are studied in other Domains.
+
+##### Identify common human-made geographic objects
+
+Code: [Not implemented](#)
+
+Recognize constructed features such as roads, bridges, dams, ports and canals by their observable geographic function, rather than assuming all visible landscape elements are natural.
+
+##### Classify settlements by their geographic characteristics
+
+Code: [Not implemented](#)
+
+Distinguish categories such as villages, towns and cities using available attributes, explicitly noting that legal and population thresholds differ between countries.
+
+##### Locate human-made geographic objects on a map
+
+Code: [Not implemented](#)
+
+Identify the location of a described settlement or infrastructure feature using its representation and spatial relationships, independently of its engineering design or ownership.
+
+### Landforms and Surface Processes
+
+Groups: 3 · Skills: 11
+
+Code: [Not implemented](#)
+
+Relief and unconsolidated surface materials form landscapes that change through weathering, transportation and deposition. This domain examines the recognizable forms and near-surface changes of terrain rather than the internal structure, mineralogy or deep-time evolution of solid Earth.
+
+#### Landforms and Relief
+
+Skills: 3
+
+Code: [Not implemented](#)
+
+The shape and vertical variation of terrain distinguish plains, hills, mountains, valleys and plateaus. Understanding elevation and relief also supports interpretation of slopes and contour information; foundational identification of landform categories belongs to Geographic Objects.
+
+##### Interpret elevation relative to a vertical reference
+
+Code: [Not implemented](#)
+
+Determine or interpret a position's height relative to an agreed vertical reference such as mean sea level, taking account of map or observation units rather than confusing it with nearby height differences.
+
+##### Interpret relative relief between locations
+
+Code: [Not implemented](#)
+
+Determine or explain the difference in elevation between local points independently of their absolute heights above sea level, using it to describe the vertical variation of a landscape.
 
 ##### Interpret contour spacing as terrain steepness
 
@@ -306,7 +522,7 @@ Skills: 4
 
 Code: [Not implemented](#)
 
-Weathered particles, organic matter, water and air combine into soils, while loose surface sediments vary in grain size and water movement. Their characteristics influence vegetation and land use; mineral identification and consolidated rock origin are covered in separate geology groups.
+Soil develops through alteration of parent material and accumulation of organic matter, while loose sediments vary in grain size and drainage. Their location and physical conditions influence water movement, vegetation and practical land use.
 
 ##### Explain how a soil profile develops at the surface
 
@@ -358,19 +574,27 @@ Code: [Not implemented](#)
 
 Identify how moving sediment accumulates when transporting conditions change, such as at a river mouth, on a floodplain or in a dune field.
 
-##### Explain how flowing water reshapes a landscape
+##### Explain the formation of fluvial landforms
 
 Code: [Not implemented](#)
 
-Relate river transport and sediment deposition to features such as valleys, meanders, and deltas while recognizing that conditions vary.
+Relate changing river flow, sediment transport and deposition to recognizable landforms such as meanders, floodplains, terraces and deltas. This integrative competency concerns the resulting landscape features, not a second generic definition of erosion or deposition.
+
+### Geology
+
+Groups: 6 · Skills: 28
+
+Code: [Not implemented](#)
+
+Minerals and rocks, Earth's internal structure, tectonic activity, geological evidence and mineral deposits reveal the solid planet's origins and evolution through deep time. Its focus is recognizing materials, processes and spatial evidence, distinct from describing everyday terrain or individual surface features.
 
 #### Minerals and Their Properties
 
-Skills: 6
+Skills: 3
 
 Code: [Not implemented](#)
 
-Minerals are natural crystalline solids identified by a combination of consistent material properties rather than by color alone. Their distinctive diagnostic features include hardness, streak, luster and modes of breakage; these are different from the characteristics of a whole rock or soil.
+A mineral is a naturally occurring crystalline substance with characteristic structure and material properties. Its identity is inferred using complementary evidence such as scratch resistance, streak, luster and cleavage rather than relying on color or one test in isolation.
 
 ##### Explain what makes a natural solid a mineral
 
@@ -378,29 +602,11 @@ Code: [Not implemented](#)
 
 Recognize the criteria used in introductory geology: natural origin, a normally inorganic solid state, characteristic composition and ordered internal structure. A manufactured glass shard or an aggregate of unrelated crystals does not automatically meet the mineral definition.
 
-##### Determine relative mineral hardness using scratching
+##### Characterize minerals using diagnostic physical properties
 
 Code: [Not implemented](#)
 
-Compare whether one sample scratches another or a familiar reference material, distinguishing scratch resistance from the ease of breaking a specimen.
-
-##### Identify a mineral's streak color
-
-Code: [Not implemented](#)
-
-Describe the powdered trace left by a specimen on a suitable streak plate, and explain why its streak may differ from the visible color of the intact crystal.
-
-##### Describe mineral luster from reflected light
-
-Code: [Not implemented](#)
-
-Recognize characteristic appearances such as metallic, glassy or dull reflection, without treating luster as a measurement of hardness or transparency.
-
-##### Distinguish cleavage from fracture in mineral breakage
-
-Code: [Not implemented](#)
-
-Use repeated flat breakage surfaces versus irregular break patterns to describe how a specimen separates, rather than confusing crystal shape with how a mineral fractures.
+Observe and describe a mineral specimen using hardness, streak, luster and breakage patterns, distinguishing what each property reveals. Individual scratch, streak or cleavage demonstrations are variations of one broader characterization competency.
 
 ##### Identify minerals using multiple diagnostic properties
 
@@ -600,19 +806,19 @@ Recognize how mine sites, waste storage and transport infrastructure can change 
 
 ### Water Systems
 
-Groups: 3 · Skills: 9
+Groups: 4 · Skills: 13
 
 Code: [Not implemented](#)
 
 Water connects landscapes through drainage networks, oceans, atmosphere, and underground storage. Geographic questions center on where water moves and accumulates, how its distribution varies, and how water features shape places.
 
-#### Rivers and Inland Waters
+#### Rivers and Drainage Basins
 
-Skills: 3
+Skills: 2
 
 Code: [Not implemented](#)
 
-Rivers, lakes, wetlands, and their catchments form connected systems whose boundaries are not always visible at the water's edge. A watershed describes where surface runoff converges.
+Flowing water links sources, tributaries and outlets into networks, while topography governs the surface catchment of a river. Describing different types of water bodies as objects belongs to Geographic Objects.
 
 ##### Identify the main parts of a river network
 
@@ -626,12 +832,6 @@ Code: [Not implemented](#)
 
 Infer the land area contributing runoff to an outlet using divides and slopes rather than administrative borders.
 
-##### Distinguish lakes, rivers, and wetlands by water behavior
-
-Code: [Not implemented](#)
-
-Recognize characteristic movement and retention of water without treating all standing or shallow water as the same feature.
-
 #### Oceans, Seas, and Coasts
 
 Skills: 3
@@ -640,43 +840,37 @@ Code: [Not implemented](#)
 
 Coastal and marine environments differ in exposure, enclosure, water movement, and relation to land. The emphasis is on geographic patterns and coastal form rather than detailed fluid dynamics.
 
-##### Distinguish ocean, sea, gulf, and bay in geographic context
-
-Code: [Not implemented](#)
-
-Use scale, enclosure, and connection to larger water bodies while acknowledging that some named features are historical conventions.
-
 ##### Identify coastal erosion and deposition features
 
 Code: [Not implemented](#)
 
 Relate cliffs, beaches, spits, or deltas to material removal and accumulation in their coastal setting.
 
-##### Recognize geographic patterns of tides and currents
+##### Interpret geographic patterns of ocean tides
 
 Code: [Not implemented](#)
 
-Explain that sea-level variation and major current pathways are spatially uneven and influence navigation, coasts, and climate.
+Identify regional and temporal variations in tidal water levels and their implications for coastlines and navigation, distinguishing tidal cycles from persistent ocean currents.
+
+##### Interpret geographic patterns of ocean currents
+
+Code: [Not implemented](#)
+
+Recognize major surface-current directions and geographic effects on coastal climate, transport and marine conditions, without confusing circulation with periodic tidal change.
 
 #### Hydrologic Connections
 
-Skills: 3
+Skills: 4
 
 Code: [Not implemented](#)
 
 Water changes location and state among the atmosphere, surface, living systems, and subsurface. This is a connected circulation model rather than a single linear loop.
 
-##### Trace water through evaporation, condensation, and precipitation
+##### Explain the hydrologic cycle
 
 Code: [Not implemented](#)
 
-Follow a coherent pathway through different reservoirs without assuming that each droplet necessarily passes through every stage in one fixed order.
-
-##### Distinguish surface runoff, infiltration, and groundwater storage
-
-Code: [Not implemented](#)
-
-Recognize different destinations for precipitation and how soil and rock conditions affect them.
+Describe the movement and storage of water among atmosphere, surface, living systems, ice and subsurface through evaporation, condensation, precipitation and flow. The cycles are multiple interconnected paths, not one mandatory linear sequence.
 
 ##### Compare geographic water availability across regions
 
@@ -684,21 +878,71 @@ Code: [Not implemented](#)
 
 Relate precipitation, storage, seasonal variation, and demand to differences in accessible fresh water, rather than equating wet weather with secure supply.
 
-### Atmosphere, Weather, and Climate
-
-Groups: 3 · Skills: 9
+##### Explain surface runoff as a water pathway
 
 Code: [Not implemented](#)
 
-Atmospheric conditions vary over hours, seasons, and decades and differ among places. Geographic interpretation links observations and regional patterns while distinguishing climate description from a single weather event.
+Describe water moving across land toward lower terrain and drainage networks when rainfall or melt exceeds infiltration and storage, distinguishing the process from water already stored underground.
+
+##### Explain infiltration and groundwater recharge
+
+Code: [Not implemented](#)
+
+Connect water entering permeable soils and rock to subsurface flow and replenishment of groundwater storage, distinguishing a downward pathway from direct surface runoff.
+
+#### Frozen and Subsurface Water
+
+Skills: 4
+
+Code: [Not implemented](#)
+
+Snow, ice and groundwater store freshwater for different durations and interact with landscapes and human supplies. Their accumulation and discharge vary with climate, geology and geography rather than being visible only in rivers.
+
+##### Explain how glaciers form and move
+
+Code: [Not implemented](#)
+
+Relate sustained snow accumulation and compaction to slowly flowing land ice, distinguishing glaciers from seasonal snow cover and floating sea ice.
+
+##### Explain how glaciers reshape terrain
+
+Code: [Not implemented](#)
+
+Recognize broad erosional and depositional outcomes of moving land ice, such as glacial valleys, moraines and transported sediment, without treating all U-shaped valleys as proof of one event.
+
+##### Explain the concept of a groundwater aquifer
+
+Code: [Not implemented](#)
+
+Identify a permeable geological layer or formation that can store and transmit useful groundwater, distinguishing an aquifer from an open underground lake.
+
+##### Interpret geographic variations in freshwater storage
+
+Code: [Not implemented](#)
+
+Compare places in which ice, aquifers, lakes or rivers hold accessible freshwater, recognizing differences in replenishment, seasonal availability and extraction limits.
+
+### Atmosphere, Weather, and Climate
+
+Groups: 4 · Skills: 16
+
+Code: [Not implemented](#)
+
+Weather describes atmospheric conditions at a place and time, whereas climate characterizes their long-term distributions and change. Geographic inquiry examines how clouds, precipitation, air motion and circulation vary across places, and how hazards and climate trends influence regions.
 
 #### Weather Observations
 
-Skills: 3
+Skills: 4
 
 Code: [Not implemented](#)
 
 Weather is described by measurable conditions at a particular location and time. Observations must be interpreted with appropriate units and temporal context.
+
+##### Explain the concept of weather
+
+Code: [Not implemented](#)
+
+Describe weather as the atmospheric conditions experienced at a particular place and time, including temperature, moisture, wind, cloud and precipitation. Individual observations can change rapidly and do not alone characterize a regional climate.
 
 ##### Identify weather variables in an observation
 
@@ -718,19 +962,51 @@ Code: [Not implemented](#)
 
 Use an explicit legend to identify rain, cloud, or wind indicators without relying on color alone.
 
+#### Atmospheric Processes
+
+Skills: 4
+
+Code: [Not implemented](#)
+
+Water vapor, atmospheric pressure differences, moving air masses and energy exchanges explain the geographic formation and movement of weather systems. The focus is observable and spatially significant processes rather than equations of fluid mechanics.
+
+##### Explain how clouds form
+
+Code: [Not implemented](#)
+
+Connect cooling moist air and condensation onto tiny particles with cloud formation, distinguishing suspended droplets or ice crystals from rainfall already reaching the ground.
+
+##### Explain how precipitation forms
+
+Code: [Not implemented](#)
+
+Recognize how condensed water or ice particles can grow and fall to the surface as rain, snow or other precipitation under suitable atmospheric conditions.
+
+##### Explain the formation of wind
+
+Code: [Not implemented](#)
+
+Relate air motion to geographic differences in atmospheric pressure and temperature, recognizing that terrain and Earth's rotation can modify its direction and strength.
+
+##### Interpret the movement of air masses and fronts
+
+Code: [Not implemented](#)
+
+Relate contrasting air-mass properties and their boundaries to changing conditions across a region, using maps or descriptions without assuming every front guarantees the same weather.
+
 #### Climate Patterns
 
-Skills: 3
+Skills: 5
 
 Code: [Not implemented](#)
 
 Climate summarizes the long-term distribution and variability of weather, not simply a typical day. Latitude, elevation, land–sea contrast, and circulation contribute to regional differences.
 
-##### Distinguish climate from a short-term weather event
+##### Explain the concept of climate
 
 Code: [Not implemented](#)
 
-Explain why an unusually cold day does not by itself define a region's climate or overturn a long-term trend.
+Describe climate through long-term patterns, variability and typical ranges of weather conditions in a region. A short cold spell is an event and does not by itself define climate or overturn a documented long-term trend.
 
 ##### Interpret a basic climate diagram
 
@@ -743,6 +1019,18 @@ Compare monthly temperature and precipitation patterns to identify seasonality w
 Code: [Not implemented](#)
 
 Use latitude, elevation, coastal influence, and prevailing wind patterns to account for contrasts between places, while allowing multiple causes.
+
+##### Interpret long-term climate trends
+
+Code: [Not implemented](#)
+
+Distinguish persistent changes in climate indicators over long observation periods from short-term variability, considering trends, baselines and the geographic coverage of measurements.
+
+##### Explain geographic impacts of climate change
+
+Code: [Not implemented](#)
+
+Connect documented climate changes with shifting regional water, temperature, ice, ecosystems or hazard patterns, noting that impacts vary by location and exposure and should not be inferred from one local weather event.
 
 #### Atmospheric Hazards
 
@@ -776,7 +1064,7 @@ Groups: 3 · Skills: 9
 
 Code: [Not implemented](#)
 
-Natural environments form recognizable regional patterns where climate, water, land, and organisms interact. Geography examines how these features are distributed and connected; organism anatomy and ecological mechanisms remain primarily in Biology.
+Natural conditions create geographic variation in terrestrial ecosystems, biodiversity and habitat patterns. This field describes where ecological regions occur, how their distributions vary and how landscape changes affect them; organism physiology and detailed food-web mechanisms belong primarily to Biology.
 
 #### Biomes and Habitats
 
@@ -804,32 +1092,6 @@ Code: [Not implemented](#)
 
 Identify that vegetation and environmental conditions may change gradually across boundaries rather than at a perfectly sharp line.
 
-#### Regional Classification
-
-Skills: 3
-
-Code: [Not implemented](#)
-
-Regions are analytical groupings chosen for a purpose, not always natural units with fixed edges. A region can be defined by physical or human characteristics.
-
-##### Classify places into regions using stated criteria
-
-Code: [Not implemented](#)
-
-Apply an explicit property such as climate or relief consistently instead of sorting places by familiar names alone.
-
-##### Distinguish formal and functional regions
-
-Code: [Not implemented](#)
-
-Separate areas sharing a measurable characteristic from areas connected through activity around a center, such as a commuting region.
-
-##### Explain why regional boundaries may differ between maps
-
-Code: [Not implemented](#)
-
-Recognize that changing the defining variable or classification threshold can redraw a region without moving any physical feature.
-
 #### Environmental Gradients
 
 Skills: 3
@@ -856,17 +1118,43 @@ Code: [Not implemented](#)
 
 Use two dated distributions or observations to describe a change in habitat range, without automatically assigning a single cause.
 
-### Human Geography
+#### Ecosystem Geography
 
-Groups: 3 · Skills: 9
+Skills: 3
 
 Code: [Not implemented](#)
 
-People organize settlements, territories, cultures, economies, and connections across space. The geographic focus is distribution, movement, accessibility, and the interaction of people with places—not general history or economics taught without spatial context.
+Ecosystems depend on linked environmental conditions and can vary markedly in spatial extent and connectivity. Geography focuses on distribution, boundaries, landscape fragmentation and relationships to regional conditions, rather than the physiology of individual organisms.
+
+##### Interpret geographic patterns of biodiversity
+
+Code: [Not implemented](#)
+
+Identify broad differences in variety of living organisms across mapped regions and relate them cautiously to climate, habitat complexity, disturbance and observation coverage.
+
+##### Explain habitat fragmentation as a geographic process
+
+Code: [Not implemented](#)
+
+Relate roads, land-cover change or other barriers to the separation of formerly connected habitat areas, recognizing that the ecological consequences depend on species and landscape context.
+
+##### Interpret connectivity between natural habitats
+
+Code: [Not implemented](#)
+
+Assess whether geographic corridors or barriers link habitat patches and enable movement across a landscape, without claiming that proximity automatically guarantees ecological connection.
+
+### Human Geography
+
+Groups: 4 · Skills: 16
+
+Code: [Not implemented](#)
+
+Settlement, mobility, culture, political territories, livelihoods and economic connections create spatial patterns across inhabited places. The focus is geographic distribution, diffusion, regional relationships and the effects of place, not national political history or business accounting.
 
 #### Population and Settlement
 
-Skills: 3
+Skills: 5
 
 Code: [Not implemented](#)
 
@@ -878,17 +1166,29 @@ Code: [Not implemented](#)
 
 Distinguish people per unit area from the total number of residents and identify areas with different densities.
 
-##### Compare concentrated and dispersed settlement patterns
+##### Explain geographic factors shaping settlement patterns
 
 Code: [Not implemented](#)
 
-Recognize clustered towns, linear settlements, and scattered homes and relate their locations to plausible geographic conditions.
+Relate available water, terrain, transport access, economic activities and other geographic constraints to clustered, linear or dispersed settlements; simple recognition of clustering belongs to the general Spatial Relationships competency.
 
 ##### Describe migration as movement between places
 
 Code: [Not implemented](#)
 
 Identify origin, destination, and movement direction while distinguishing a migration flow from a static population count.
+
+##### Explain geographic drivers of migration
+
+Code: [Not implemented](#)
+
+Connect migration patterns with geographic differences in livelihoods, safety, climate, conflict or access to services, distinguishing plausible push and pull conditions from assumptions about any individual's motives.
+
+##### Explain urbanization as geographic change
+
+Code: [Not implemented](#)
+
+Describe how the relative concentration of population and activity in urban areas can grow and reshape settlement networks, land use and infrastructure, without treating all urban growth as the same process.
 
 #### Territories and Cultural Landscapes
 
@@ -916,13 +1216,13 @@ Code: [Not implemented](#)
 
 Identify visible patterns such as farmland, places of worship, or historic streets without assuming all communities share one culture.
 
-#### Economic Activity and Connectivity
+#### Economic Geography
 
-Skills: 3
+Skills: 5
 
 Code: [Not implemented](#)
 
-Work, goods, transport, and services have locations and links. The geographic question is why activities and routes concentrate where they do, not how to calculate prices or run a business.
+Production, services, resources, settlement demand and transport networks are unevenly distributed and connect places. Geographic specialization and cross-regional dependence describe spatial relationships rather than prices or financial accounting.
 
 ##### Identify land-use patterns in a settlement or region
 
@@ -942,21 +1242,59 @@ Code: [Not implemented](#)
 
 Relate transport access, resources, population, and environmental constraints to plausible site choices without claiming one universal optimal location.
 
-### Environment, Resources, and Geographic Inquiry
-
-Groups: 3 · Skills: 10
+##### Explain geographic specialization of economic activities
 
 Code: [Not implemented](#)
 
-Geography also asks how evidence about places can support responsible choices. This domain combines investigation, resource use, impacts, and decision-making but retains separate Skills for observing patterns, assessing evidence, and judging alternatives.
+Connect differences in resources, climate, expertise, access and infrastructure to the concentration of particular types of production or services in different places, without assuming economic specialization is permanent.
 
-#### Resources and Human Impact
-
-Skills: 4
+##### Explain geographic interdependence between regions
 
 Code: [Not implemented](#)
 
-Natural resources are features, materials or flows people can use; their accessibility and rate of replenishment differ from place to place. Land-use decisions may change local conditions or transfer effects through shared air, water and ecological systems.
+Describe how exchange of goods, services and resources links different regions so that changes in supply, transport or demand in one place can affect others.
+
+#### Cultural Geography
+
+Skills: 3
+
+Code: [Not implemented](#)
+
+Languages, practices, built environments and cultural identities form geographic distributions that evolve through human movement and interaction. Geographic interpretation describes spatial patterns and diffusion without assigning one culture to all inhabitants of a territory.
+
+##### Interpret the geographic distribution of cultural characteristics
+
+Code: [Not implemented](#)
+
+Use spatial evidence to compare where linguistic, architectural or other cultural practices occur while recognizing overlap, diversity and the limitations of classifications.
+
+##### Explain geographic diffusion of cultural practices
+
+Code: [Not implemented](#)
+
+Trace how cultural ideas or practices may spread between places through migration, exchange and communication, without treating their spatial spread as automatic or uniform.
+
+##### Compare cultural landscapes across places
+
+Code: [Not implemented](#)
+
+Relate observable built forms, land use and place meanings to distinctive regional histories and practices, while avoiding stereotypes and one-to-one cultural labels.
+
+### Environment and Society
+
+Groups: 2 · Skills: 6
+
+Code: [Not implemented](#)
+
+Natural resources, environmental constraints and human decisions influence one another across space. Geography examines rates of resource renewal, adaptation to local conditions, transformations of land and the travel of impacts between connected regions.
+
+#### Natural Resources
+
+Skills: 2
+
+Code: [Not implemented](#)
+
+A natural resource is a material, stock or flow valued for human use, and availability depends on formation, replenishment, accessibility and demand. Geographic classifications should not equate renewable with inexhaustible or any deposit with a commercially recoverable resource.
 
 ##### Explain what makes something a natural resource
 
@@ -970,6 +1308,26 @@ Code: [Not implemented](#)
 
 Relate regeneration, formation or supply rates to rates of human use: sunlight is a continuing energy flow, managed forests can regrow, while fossil fuels and many mineral deposits form far too slowly to replace extraction on human timescales. Renewable does not mean inexhaustible.
 
+#### Human–Environment Interactions
+
+Skills: 4
+
+Code: [Not implemented](#)
+
+People use and alter environmental conditions, while climate, terrain, water and hazards shape the possibilities and constraints for human activities. These influences are reciprocal but not necessarily symmetric; different choices can reduce or intensify impacts.
+
+##### Explain how environmental conditions influence human activities
+
+Code: [Not implemented](#)
+
+Relate climate, terrain, water or hazard exposure to patterns in settlement, movement, land use or work without suggesting that physical conditions alone determine human choices.
+
+##### Explain how people adapt to geographic environments
+
+Code: [Not implemented](#)
+
+Connect practical geographic responses such as flood-aware settlement planning, water storage or regionally suited construction to environmental constraints without treating every adaptation as risk-free.
+
 ##### Identify geographic consequences of land-use change
 
 Code: [Not implemented](#)
@@ -981,6 +1339,14 @@ Explain plausible effects of paving, deforestation, or irrigation on runoff, hab
 Code: [Not implemented](#)
 
 Recognize that air, water, transport, or shared ecosystems can carry effects into downstream or neighboring places.
+
+### Geographic Inquiry
+
+Groups: 2 · Skills: 6
+
+Code: [Not implemented](#)
+
+Geographic investigation turns observations about places into reasoned evidence, maps, comparisons and decisions. It includes asking spatial questions, collecting and scrutinizing data, evaluating alternatives and communicating conclusions rather than memorizing a particular set of locations.
 
 #### Geographic Evidence and Investigation
 
