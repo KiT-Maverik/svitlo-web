@@ -1,5 +1,5 @@
 import { vi } from 'vitest';
-import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
+import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@svitlo/indexdb';
 import { useLocale } from '@/i18n/LocaleProvider/LocaleProvider';
 import { useLessonProgress, initialProgress, type Progress } from '../LessonProgress/LessonProgress';
 

@@ -24,7 +24,7 @@ describe('Components', () => {
       await LessonSectionContent_fx.render({
         locale: 'ar-SA',
         content: [
-          LessonSectionContent_fx.blocks.markdown('/fixtures/markdown/sample-ar.md'),
+          LessonSectionContent_fx.blocks.markdown('/data/demoLesson/markdown/sample-ar.md'),
         ],
       });
       expect(LessonSectionContent_fx.selectors.article()).toHaveAttribute('lang', 'ar-SA');

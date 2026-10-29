@@ -1,4 +1,4 @@
-import type { SkillId } from '../../../types/content/skill.types';
+import type { SkillId } from '@svitlo/contracts/taxonomy';
 
 /** Verify UUID syntax while keeping generation outside application runtime. */
 export function validateSkillUuid(value: unknown, field: string): asserts value is SkillId {

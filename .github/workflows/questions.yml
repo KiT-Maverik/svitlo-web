@@ -27,16 +27,25 @@ jobs:
         if: ${{ !cancelled() }}
       - run: npm run build
         if: ${{ !cancelled() }}
+      - name: Verify compiled public package artifacts
+        if: ${{ !cancelled() }}
+        run: npm run packages:artifacts:check
       - run: npx playwright install chromium
         if: ${{ !cancelled() }}
-      - name: Mathematics textbook lesson E2E (desktop and mobile)
+      - name: Mathematics UI E2E (desktop and mobile)
         if: ${{ !cancelled() }}
-        run: npm run test:e2e --workspace @svitlo/math -- src/components/pages/Lesson/Lesson.e2e.spec.ts src/components/widgets/KnowledgeCheckpoint/KnowledgeCheckpoint.e2e.spec.ts
+        run: npm run test:e2e --workspace @svitlo/math
+      - name: Light lesson and scene checkpoint E2E (Playground)
+        if: ${{ !cancelled() }}
+        run: npm run test:e2e --workspace @svitlo/playground -- src/data/howLightMoves/LightLesson.e2e.spec.ts src/data/howLightMoves/sections/theory/resources/scenes/Checkpoint/Checkpoint.e2e.spec.ts
       - name: Lesson page E2E (desktop and mobile)
         if: ${{ !cancelled() }}
         run: npm run test:e2e --workspace @svitlo/playground -- src/components/pages/Lesson/Lesson.e2e.spec.ts
       - run: npm run test:e2e
         if: ${{ !cancelled() }}
+      - name: Platform catalog smoke E2E (desktop and mobile)
+        if: ${{ !cancelled() }}
+        run: npm run test:e2e:platform
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -44,3 +53,4 @@ jobs:
           path: |
             learningApps/playground/test-results/
             learningApps/math/test-results/
+            frontend/platform/test-results/

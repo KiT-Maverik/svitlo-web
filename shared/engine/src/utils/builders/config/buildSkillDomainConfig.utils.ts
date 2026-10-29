@@ -1,6 +1,6 @@
-import type { Collection } from '../../../types/misc.types';
-import type { SkillDomain_Config } from '../../../types/content/skillDomain.types';
-import type { DeepReadonly } from '../../../types/readonly.types';
+import type { Collection } from '@svitlo/contracts/content';
+import type { SkillDomain_Config } from '@svitlo/contracts/taxonomy';
+import type { DeepReadonly } from '@svitlo/contracts/content';
 import { validateSkillConfig } from './buildSkillConfig.utils';
 import { validateSkillReferences } from './validateSkillReferences.utils';
 

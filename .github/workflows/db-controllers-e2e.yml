@@ -4,17 +4,11 @@ on:
     branches: [test/db-controllers-e2e]
   pull_request:
     paths:
-      - 'learningApps/playground/src/db/**'
-      - 'learningApps/playground/src/db/controllers/__tests__/**'
-      - 'learningApps/playground/src/testing/db-browser-*.mjs'
-      - 'learningApps/playground/src/testing/db-browser-*.ts'
-      - 'learningApps/playground/src/testing/DbBrowserHarness.tsx'
-      - 'learningApps/playground/playwright.db.config.ts'
-      - 'learningApps/playground/playwright.config.ts'
+      - 'shared/indexdb/**'
+      - 'shared/contracts/**'
+      - '.github/workflows/db-controllers-e2e.yml'
       - 'package.json'
-      - 'learningApps/playground/package.json'
       - 'package-lock.json'
-      - 'shared/engine/**'
 permissions:
   contents: read
 jobs:
@@ -28,6 +22,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run packages:check
       - run: npm run typecheck
       - run: npm test
       - run: npm run lint
@@ -44,5 +39,7 @@ jobs:
         with:
           name: db-browser-test-results
           path: |
+            shared/indexdb/test-results/
+            shared/indexdb/playwright-report/
             learningApps/playground/test-results/
             learningApps/playground/playwright-report/

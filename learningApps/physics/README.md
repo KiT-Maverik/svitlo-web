@@ -1,7 +1,7 @@
-# Фізика — Світло
+# Physics — Svitlo
 
-Мінімальний standalone Next.js-підручник `@svitlo/physics` у `learningApps/physics`.
+Standalone Next.js textbook scaffold (`@svitlo/physics`) in `learningApps/physics`.
 
-Застосунок навмисно не має уроків, запитань і runtime-реєстру скілів. Редакційна таксономія: [docs/skills/taxonomy.md](./docs/skills/taxonomy.md). Вона потребує погодження до створення Definitions та TypeScript Skill Data.
+This application deliberately contains no Lessons, Questions, or registered runtime Skills yet. The editorial [Skills Taxonomy](./docs/skills/taxonomy.md) is a **draft for methodologist review**. Descriptions are canonical in the taxonomy itself; no separate Definition files or Definition-generation stage exists. Skills implementation in TypeScript is a later, separately approved task.
 
-З кореня монорепозиторію: `npm run dev:physics`, `npm run build:physics`, `npm run typecheck:physics`.
+From the monorepo root: `npm run dev:physics`, `npm run build:physics`, `npm run typecheck:physics`.

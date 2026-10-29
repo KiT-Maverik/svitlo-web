@@ -6,11 +6,14 @@ const root = process.cwd();
 const readJson = name => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
 const builtins = new Set(builtinModules.map(name => name.replace(/^node:/, '')));
 const workspaces = [
+  ['shared/contracts', readJson('shared/contracts/package.json')],
   ['shared/engine', readJson('shared/engine/package.json')],
+  ['shared/indexdb', readJson('shared/indexdb/package.json')],
   ['shared/ui-kit', readJson('shared/ui-kit/package.json')],
   ['learningApps/playground', readJson('learningApps/playground/package.json')],
   ['learningApps/math', readJson('learningApps/math/package.json')],
   ['learningApps/physics', readJson('learningApps/physics/package.json')],
+  ['frontend/platform', readJson('frontend/platform/package.json')],
 ];
 const byName = new Map(workspaces.map(([path, pkg]) => [pkg.name, { path, pkg }]));
 function assert(ok, message) {
@@ -67,7 +70,7 @@ for (const [path, pkg] of workspaces) {
         continue;
       }
       if (specifier.startsWith('@/') || Object.hasOwn(localAliases, specifier)) {
-        assert(path.startsWith('learningApps/'), 'Unrewritten shared source alias: ' + description);
+        assert(path.startsWith('learningApps/') || path.startsWith('frontend/'), 'Unrewritten shared source alias: ' + description);
         continue;
       }
       if (specifier.startsWith('node:') || builtins.has(specifier)) continue;
@@ -79,7 +82,7 @@ for (const [path, pkg] of workspaces) {
       } else {
         assert(!specifier.startsWith('@svitlo/'), 'Unknown Svitlo workspace: ' + description);
         assert(declared.has(name), 'Undeclared production dependency: ' + description);
-        assert(path !== 'shared/engine', 'Engine has an external runtime dependency: ' + description);
+        assert(path !== 'shared/engine' && path !== 'shared/contracts', 'Engine and Contracts cannot depend on external runtime modules: ' + description);
         assert(path !== 'shared/ui-kit' || name !== 'next', 'UI Kit depends on Next.js: ' + description);
       }
     }
@@ -122,7 +125,7 @@ assert(!/\b(?:apps|learningApps)\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/(?:apps|lear
   'UI Kit Storybook must not read application or monorepo source paths');
 assert(readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
   'UI Kit must own the Storybook build command');
-for (const application of ['learningApps/playground', 'learningApps/math']) {
+for (const application of ['learningApps/playground', 'learningApps/math', 'learningApps/physics']) {
   assert(!existsSync(resolve(root, application, '.storybook')),
     'Application Storybook must not depend on shared source trees: ' + application);
   const appManifest = readJson(application + '/package.json');

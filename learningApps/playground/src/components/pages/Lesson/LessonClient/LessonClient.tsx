@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import type { Lesson, Quiz, QuizQuestionState, QuizResult, QuizState } from '@svitlo/engine/content';
 import type { SelectOneAnswerQuestion } from '@svitlo/ui-kit/questions/types';
-import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@/db';
+import { completeQuiz, createQuizState, getQuizState, listQuizStates, saveQuizState } from '@svitlo/indexdb';
 import { useLessonProgress } from '../LessonProgress/LessonProgress';
 import Celebration, { playCelebration } from '../Celebration/Celebration';
 import { QuestionAttempt } from '@svitlo/ui-kit/questions/helpers';

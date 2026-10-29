@@ -1,5 +1,8 @@
 # Svitlo Monorepo Migration
 
+> **Historical log, not the current architecture.** This file retains dated paths and stage names from earlier, separately numbered migrations. For the canonical 2026-10-29 layout and final audit use [Monorepo & Textbook](./docs/architecture/monorepo-and-textbook.md) and [Stage 8 Audit](./docs/architecture/migration-stage-8-audit.md). Current workspaces are `learningApps/{math,playground}`, `frontend/platform`, `shared/{contracts,engine,indexdb,ui-kit}`, and `backend/server`. The formerly pending IndexedDB browser harness consolidation was completed in Stage 5; Stage 6 centralized preferences, Stage 7 bootstrapped Platform.
+
+
 ## Phase 01 — Workspace foundation (complete)
 
 ## Phase 02 — Relocate Next.js into Playground (complete)
@@ -100,9 +103,9 @@ Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/
 ## Stage 4 — Subject-neutral Playground
 
 - Removed the old light-science authored content, local route and the deprecated mathematics taxonomy migration script from Playground. Math textbook source and documentation remain unchanged.
-- Playground now hosts a small static, subject-neutral lesson fixture under `src/fixtures/demoLesson.ts` and `/topics/demo`, plus generic UI Kit question/API examples.
+- Playground now hosts a small static, subject-neutral lesson fixture under `src/data/demoLesson/demoLesson.ts` and `/topics/demo`, plus generic UI Kit question/API examples.
 - Removed obsolete `@layout` and `@pages` aliases and app re-export barrels; application imports are explicit. Shared packages remain accessible only through their public package exports.
-- Playground remains separately buildable and its lesson persistence, quiz workflow, localization and browser coverage use fixture IDs rather than textbook-specific content.
+- Playground remains separately buildable and its lesson persistence, quiz workflow, localization and browser coverage use stable locally owned demo IDs rather than textbook-specific content.
 
 ## Stage 5 — Architecture extraction readiness (2026-10-28)
 
@@ -120,3 +123,7 @@ Live workspace paths are now `apps/playground` and `apps/textbooks/math`. `apps/
 - Flag assets are served from the UI Kit's own `assets/flags`. Storybook tooling currently retains the existing Next.js Storybook framework as a **development-only** dependency; UI Kit's production API and compiled artifacts must not import Next.js.
 - Any future stories needing page-like state must create fixtures under UI Kit's own `.storybook/fixtures`, never depend on Playground/Math source or curriculum.
 - The Storybook build is verified by the dedicated `UI Kit Storybook` GitHub Actions workflow.
+
+## Stage 4 — IndexedDB package
+
+The canonical browser persistence implementation is `shared/indexdb` (`@svitlo/indexdb`), with public controllers, utils, schemas and configuration exports. Both `learningApps/math` and `learningApps/playground` consume the compiled package instead of owning `src/db`. The database name `svitlo-progress`, schema version `1`, store keys and indexes are unchanged. Browser harnesses remain in each app's `src/testing` pending Stage 5 centralization. If standalone apps share one browser origin, identical database names continue to share the same storage scope; extraction does not change that behavior.
