@@ -14,9 +14,9 @@ Date: 2026-10-29
 
 Domains: 12
 Groups: 40
-Skills: 126
+Skills: 125
 
-Code files: 0/12 Domains · 0/40 Groups · 0/126 Skills
+Code files: 0/12 Domains · 0/40 Groups · 0/125 Skills
 
 ## DOMAINS
 
@@ -180,7 +180,7 @@ Code: [Not implemented](#)
 
 ### Сили та взаємодії
 
-Groups: 3 · Skills: 15
+Groups: 3 · Skills: 14
 
 Code: [Not implemented](#)
 
@@ -270,7 +270,7 @@ Code: [Not implemented](#)
 
 #### Гравітація
 
-Skills: 4
+Skills: 3
 
 Code: [Not implemented](#)
 
@@ -281,12 +281,6 @@ Code: [Not implemented](#)
 Code: [Not implemented](#)
 
 Визначати напрямок, у якому вільно падає предмет поблизу поверхні Землі.
-
-##### Пояснювати повернення предмета донизу
-
-Code: [Not implemented](#)
-
-Пов'язувати падіння або опускання предмета з притяганням Землі.
 
 ##### Розрізняти масу тіла та силу земного тяжіння
 
