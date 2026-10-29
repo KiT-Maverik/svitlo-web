@@ -109,7 +109,13 @@ This episode **did not** establish a blanket ban on classification, comparison, 
 | After generic-classification, selection-comparison and food-chain consolidation (2026-10-29) | **11** | **24** | **115** | Earlier candidate inventory; subsequently expanded |
 | After full-discipline exception review decisions (2026-10-29) | **11** | **26** | **147** | Current editorial draft after editor-approved changes |
 
-The earlier 115-Skill candidate inventory contained **150 entities and 150 unimplemented links**. After the editor's further decisions on 2026-10-29, the canonical draft contains **184 entities (11 Domains, 26 Groups, 147 Skills)** and **184 unimplemented links**. The catalog is still an **editorial draft**, not a statement that its full content is approved or implemented. Separately stored per-entity Markdown Definition files had already been discontinued; substantive descriptions belong directly to the canonical taxonomy.
+The earlier 115-Skill candidate inventory contained **150 entities and 150 unimplemented links**. After the editor's further decisions on 2026-10-29, the canonical draft contains **184 entities (11 Domains, 26 Groups, 147 Skills)** and **184 unimplemented links**. At this checkpoint, the catalog remained an **editorial draft**; the editor subsequently granted final approval on 2026-10-29, recorded below. Approval does not imply Code implementation. Separately stored per-entity Markdown Definition files had already been discontinued; substantive descriptions belong directly to the canonical taxonomy.
+
+## 2026-10-29 — Final editorial approval and faithful English translation
+
+**APPROVED — final editor decision.** The editor explicitly approved the complete Biology taxonomy as a subject-wide catalog with **11 SkillDomains, 26 SkillGroups and 147 Skills** after resolving the preceding exception-review recommendations. The canonical [taxonomy](../skills/taxonomy.md) was translated into English in full, including all Domain, Group and Skill names, every substantive description, scope qualification and scientific caveat, without changing the underlying competency inventory or its primary hierarchy. The translated English document is the approved editorial source of truth.
+
+**Implementation remains separate:** all **184** Domain/Group/Skill implementation links remain `[Not implemented](#)`. Final editorial approval is not a claim that UUIDs, Code files, Curricula, Lessons, Questions or learner assessment data exist. All historical decisions and earlier draft snapshots above remain preserved.
 
 **Unresolved allocation as of 2026-10-29:** which other textbooks, if any, should own general data-literacy, research-method, observation, equipment-handling and cross-disciplinary modeling Skills was **not decided** in this review. Their removal from Biology is not the same as removing the competencies from education.
 
