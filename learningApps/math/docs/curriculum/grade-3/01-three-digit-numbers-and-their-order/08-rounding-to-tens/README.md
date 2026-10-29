@@ -10,4 +10,4 @@
 - `math.order.round-to-ten` — `a421f9f3-cba7-4e85-ae61-ecb06f78d916`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

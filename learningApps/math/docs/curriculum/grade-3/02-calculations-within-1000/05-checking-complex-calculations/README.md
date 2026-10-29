@@ -11,4 +11,4 @@
 - `math.addsub.check-with-inverse` — `e336b8c9-07bf-44fa-beda-80663c3a87a4`
 
 ---
-[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

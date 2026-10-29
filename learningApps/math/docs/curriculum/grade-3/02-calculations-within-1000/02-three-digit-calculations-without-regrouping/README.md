@@ -10,4 +10,4 @@
 - `math.addsub.three-digit-no-regroup` — `cde7469c-abf3-4fd9-94ce-3089629fc77b`
 
 ---
-[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

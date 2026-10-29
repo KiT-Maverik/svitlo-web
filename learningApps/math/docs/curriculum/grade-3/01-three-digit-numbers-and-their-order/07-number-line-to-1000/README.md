@@ -11,4 +11,4 @@
 - `math.order.distance-on-line` — `c3a0e1b2-2158-4365-be77-cf97d3bace23`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

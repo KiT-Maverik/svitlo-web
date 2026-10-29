@@ -11,4 +11,4 @@
 - `math.numbers.flexible-partition` — `24a8feb2-e464-4b74-b807-600103edd59e`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

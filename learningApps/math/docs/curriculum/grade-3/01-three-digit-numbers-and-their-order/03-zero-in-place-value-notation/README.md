@@ -10,4 +10,4 @@
 - `math.numbers.zero-placeholder` — `c3711187-306a-436d-b10e-0d2ac631bfe9`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

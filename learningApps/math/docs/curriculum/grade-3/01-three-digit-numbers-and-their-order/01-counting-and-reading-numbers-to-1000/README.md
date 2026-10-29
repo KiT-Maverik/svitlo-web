@@ -11,4 +11,4 @@
 - `math.numbers.read-write-1000` — `de22f569-5a58-4d63-bc1a-664fad8a6bf6`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

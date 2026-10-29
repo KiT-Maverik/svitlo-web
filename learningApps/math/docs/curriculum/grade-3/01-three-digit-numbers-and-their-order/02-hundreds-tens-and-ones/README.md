@@ -10,4 +10,4 @@
 - `math.numbers.hundreds-tens-ones` — `e622e480-71c3-430e-b20a-200fad8377b2`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

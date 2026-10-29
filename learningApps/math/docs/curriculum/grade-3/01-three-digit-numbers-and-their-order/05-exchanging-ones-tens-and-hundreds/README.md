@@ -11,4 +11,4 @@
 - `math.numbers.total-tens-in-number` — `e89f69ed-48a7-4b1c-a4fc-d990926d0cb4`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

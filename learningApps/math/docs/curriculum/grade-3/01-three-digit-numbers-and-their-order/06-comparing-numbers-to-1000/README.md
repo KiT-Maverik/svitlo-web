@@ -10,4 +10,4 @@
 - `math.order.order-1000` — `d5a5fa8a-d208-4fc7-94c9-1ccc91caf6ce`
 
 ---
-[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Трицифрові числа та їхній порядок](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

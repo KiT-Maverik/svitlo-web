@@ -10,4 +10,4 @@
 - `math.addsub.hundreds-and-tens` — `8e0dda78-413c-4120-8d68-ea185bd1a1b6`
 
 ---
-[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

@@ -11,4 +11,4 @@
 - `math.addsub.column-addition` — `5957ed51-2e99-48b2-b86d-8f50b42af05e`
 
 ---
-[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)
