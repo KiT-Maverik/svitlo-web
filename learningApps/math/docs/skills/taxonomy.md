@@ -2202,109 +2202,109 @@ Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/meas
 
 Для шляху, рідини або маси сюжет має визначати доречну величину й одиницю; числове обчислення без цієї відповідності неповне.
 
-### Міркування
+### Reasoning
 
 Groups: 4 · Skills: 11
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/reasoning.data.ts)
 
-Зосереджується на аргументації математичних тверджень, пошуку контрприкладів, логічних висновках, перевірці розв’язань та переході між формами подання.
+This domain concerns justifying mathematical claims, finding counterexamples, drawing logical conclusions, checking solutions, and moving between equivalent mathematical representations.
 
-#### Аргументація
+#### Mathematical argumentation
 
 Skills: 5
 
-Обґрунтування висновків із математичних умов, перевірка загальних тверджень і пояснення обраного способу.
-
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/argumentation.data.ts)
 
-##### Об’єднувати об’єкти чи числа за правилом і пояснювати вибір
+Arguments connect mathematical conditions to conclusions, test generalizations, and make the reasoning behind a chosen method explicit.
+
+##### Classifying objects or numbers by a rule and justifying the choice
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/classifyAndJustify.data.ts)
 
-До групи можна зарахувати тільки числа, кратні 3; рішення обґрунтовують правилом, а не зовнішньою схожістю записів.
+A group may include only multiples of 3. Membership must be justified by the stated rule rather than the visual resemblance of written numbers.
 
-##### Знаходити приклад, який спростовує хибне узагальнення
+##### Finding a counterexample to a false generalization
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/findCounterexample.data.ts)
 
-Твердження «усі парні числа закінчуються на 2» спростовує число 4; одного коректного контрприкладу достатньо.
+The claim 'Every even number ends in 2' is disproved by 4. One valid counterexample is sufficient to refute a universal claim.
 
-##### Пояснювати обраний спосіб обчислення словами, схемою чи математичним записом
+##### Explaining a chosen calculation strategy
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/explainStrategy.data.ts)
 
-Запис 19 + 6 = 20 + 5 можна пояснити компенсацією: одну одиницю перенесено між доданками без зміни суми.
+The transformation 19 + 6 = 20 + 5 can be explained by compensation: one unit moves between the addends while the sum stays unchanged.
 
-##### Відрізняти один приклад від загального правила, яке потребує перевірки
+##### Distinguishing a single example from a general rule
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/distinguishExampleRule.data.ts)
 
-Окремий випадок 2 × 3 = 6 не доводить твердження для всіх чисел; потрібен загальний аргумент або перевірка.
+The individual fact 2 × 3 = 6 cannot establish a statement about all numbers. A general argument or wider verification is necessary.
 
-##### Формулювати висновок на основі умов та результатів міркування
+##### Drawing a conclusion from given conditions and reasoning
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/drawConclusion.data.ts)
 
-Якщо за умовою всі фігури в наборі мають три сторони, висновок про конкретну фігуру спирається саме на цю передумову.
+If the problem states that every figure in a set has three sides, a conclusion about a particular figure must follow from that condition.
 
-#### Самоперевірка
+#### Checking solutions
 
 Skills: 3
 
-Критичне зіставлення отриманого результату з умовою та пошук помилок і незалежних способів перевірки.
-
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/verification.data.ts)
 
-##### Оцінювати, чи може відповідь бути правильною за змістом та порядком величини
+The learner critically compares a result with the conditions of the problem, locates mistakes, and uses alternative checks when available.
+
+##### Assessing whether an answer is reasonable in context and magnitude
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/checkReasonableness.data.ts)
 
-Для 98 + 105 результат 200 правдоподібний за масштабом, а 2000 — ні, навіть без точного обчислення.
+For 98 + 105, an answer around 200 is reasonable in magnitude, whereas 2,000 is not, even without calculating the exact sum.
 
-##### Знаходити неправильний крок у чужому розв’язанні й пояснювати його
+##### Finding and explaining an incorrect step in a calculation
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/spotCalculationError.data.ts)
 
-Помилка може виникнути в перенесенні розряду або у виборі дії; важливо локалізувати невірний крок, а не лише назвати відповідь хибною.
+An error may arise from carrying the wrong place value or choosing the wrong operation. The incorrect step must be identified rather than merely labeling the final answer wrong.
 
-##### Перевіряти обчислення іншим способом, коли це можливо
+##### Verifying a calculation using another method
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/verifyWithSecondMethod.data.ts)
 
-Результат ділення можна зіставити з множенням, а суму — з відніманням; незалежна стратегія допомагає виявляти збій.
+Division can be checked by multiplication, and addition by subtraction. An independent method is useful for detecting errors.
 
-#### Логіка
+#### Logical reasoning
 
 Skills: 2
 
-Відновлення правила та усунення суперечливих варіантів під час простих числових і геометричних міркувань.
-
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/logic.data.ts)
 
-##### Доповнювати геометричну або числову закономірність відповідно до встановленого правила
+This group applies identified rules and the elimination of contradictions to simple numerical and geometric problems.
+
+##### Completing a numerical or geometric pattern using its rule
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/skills/completePattern.data.ts)
 
-У послідовності круг, квадрат, круг, квадрат наступним має бути круг, якщо правило чергування не змінилося.
+In the sequence circle, square, circle, square, the next shape should be a circle if the alternating rule has not changed.
 
-##### Використовувати виключення неможливих варіантів у простих логічних задачах
+##### Eliminating impossible options in a logical problem
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/skills/logicalElimination.data.ts)
 
-У задачі з трьома дверима та умовами, що виключають два варіанти, третій стає єдиним можливим без вгадування.
+If a problem presents three doors and its conditions eliminate two, the third is the only remaining possibility without guesswork.
 
-#### Способи представлення
+#### Mathematical representations
 
 Skills: 1
 
-Перехід між предметним зображенням, схемою, словесним правилом і символічним записом зі збереженням змісту.
-
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/representations/representations.data.ts)
 
-##### Переходити між предметною моделлю, схемою, словесним поясненням і виразом
+A mathematical relationship can be represented by physical objects, a diagram, a verbal rule, or a symbolic expression without changing its meaning.
+
+##### Converting between concrete, diagrammatic, verbal and symbolic representations
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/representations/skills/multipleRepresentations.data.ts)
 
-Схема «три рівні групи по чотири» і запис 3 × 4 описують те саме відношення; зміна форми подання не змінює значення.
+A diagram showing three equal groups of four and the expression 3 × 4 represent the same relationship; changing the representation does not change the value.
 
