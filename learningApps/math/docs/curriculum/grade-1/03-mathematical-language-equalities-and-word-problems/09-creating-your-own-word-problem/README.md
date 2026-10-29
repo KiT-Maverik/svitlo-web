@@ -1,17 +1,22 @@
 # Creating Your Own Word Problem
 
-> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 09**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 09**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Складає просту текстову задачу за малюнком чи виразом.
+## Learning objective
 
-**Target Skills:**
+Create a simple solvable word problem from a picture or expression.
+
+Choose consistent data, a meaningful event, and a question without revealing the answer in the condition.
+
+## Target Skills
 
 - [Creating a word problem from a model](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/createProblem.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Картка вище лишається методичним джерелом, повний Learning Brief потребує окремого написання.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

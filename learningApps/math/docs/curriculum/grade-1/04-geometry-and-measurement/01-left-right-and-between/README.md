@@ -1,18 +1,23 @@
 # Left, Right, and Between
 
-> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 01**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Geometry and Measurement · Lesson 01**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Описує положення та виконує прості просторові інструкції.
+## Learning objective
 
-**Target Skills:**
+Describe positions and follow short spatial directions.
+
+Use clearly named reference points for left, right, between, and path instructions.
+
+## Target Skills
 
 - [Describing relative positions](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/positionWords.data.ts)
 - [Giving and following route directions](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOrientationPath.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Geometry and Measurement](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

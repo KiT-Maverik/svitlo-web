@@ -1,19 +1,24 @@
 # Patterns and Explanations
 
-> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 08**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 08**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Продовжує числову закономірність та пояснює правило.
+## Learning objective
 
-**Target Skills:**
+Continue a pattern and justify its rule.
+
+Check that a proposed numerical step works across the sequence, not only at its end.
+
+## Target Skills
 
 - [Continuing numerical patterns with a constant step](../../../../../src/data/skillsTaxonomy/algebra/patterns/skills/arithmeticPattern.data.ts)
 - [Completing a numerical or geometric pattern using its rule](../../../../../src/data/skillsTaxonomy/reasoning/logic/skills/completePattern.data.ts)
 - [Explaining a chosen calculation strategy](../../../../../src/data/skillsTaxonomy/reasoning/argumentation/skills/explainStrategy.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Картка вище лишається методичним джерелом, повний Learning Brief потребує окремого написання.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

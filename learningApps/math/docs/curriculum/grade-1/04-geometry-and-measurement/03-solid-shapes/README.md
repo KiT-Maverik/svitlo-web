@@ -1,17 +1,22 @@
 # Solid Shapes
 
-> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 03**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Geometry and Measurement · Lesson 03**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Впізнає базові просторові тіла.
+## Learning objective
 
-**Target Skills:**
+Recognize common three-dimensional solids.
+
+Distinguish spheres, cubes, cylinders, and cones by visible spatial properties.
+
+## Target Skills
 
 - [Identifying basic solid figures](../../../../../src/data/skillsTaxonomy/geometry/solids/skills/identify3dSolids.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Geometry and Measurement](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

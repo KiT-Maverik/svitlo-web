@@ -1,17 +1,22 @@
 # Plane Shapes
 
-> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 02**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Geometry and Measurement · Lesson 02**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Розпізнає базові фігури незалежно від їхнього повороту й розміру.
+## Learning objective
 
-**Target Skills:**
+Identify common plane shapes despite changes of size or orientation.
+
+Compare sides, corners, and closure instead of matching a memorized appearance.
+
+## Target Skills
 
 - [Identifying basic plane figures](../../../../../src/data/skillsTaxonomy/geometry/figures/skills/identify2dShapes.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Geometry and Measurement](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

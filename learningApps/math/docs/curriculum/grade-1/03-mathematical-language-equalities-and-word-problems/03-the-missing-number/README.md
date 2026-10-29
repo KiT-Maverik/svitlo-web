@@ -1,18 +1,23 @@
 # The Missing Number
 
-> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 03**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 03**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Заповнює пропуск у рівності та знаходить невідомий доданок.
+## Learning objective
 
-**Target Skills:**
+Complete true equalities and find an unknown addend.
+
+Represent missing quantities and verify each proposed value by substitution.
+
+## Target Skills
 
 - [Completing a true equality](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/completeEquality.data.ts)
 - [Finding an unknown addend](../../../../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownAddend.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

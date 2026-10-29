@@ -1,17 +1,22 @@
 # Reading Numerical Expressions
 
-> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 02**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 02**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Пояснює запис простої операції числами й знаками.
+## Learning objective
 
-**Target Skills:**
+Read simple numerical expressions accurately.
+
+Connect the order of numbers and operation signs with concrete addition and subtraction actions.
+
+## Target Skills
 
 - [Reading and writing numerical expressions](../../../../../src/data/skillsTaxonomy/algebra/expressions/skills/readNumericExpressions.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

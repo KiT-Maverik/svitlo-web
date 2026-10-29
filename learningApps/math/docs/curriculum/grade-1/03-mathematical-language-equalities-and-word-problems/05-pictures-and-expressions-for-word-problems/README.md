@@ -1,18 +1,23 @@
 # Pictures and Expressions for Word Problems
 
-> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 05**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 05**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Створює модель ситуації та обирає додавання або віднімання.
+## Learning objective
 
-**Target Skills:**
+Build a model and choose an operation for a one-step problem.
+
+Translate a short story into an object diagram and a matching addition or subtraction expression.
+
+## Target Skills
 
 - [Modeling a one-step problem](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/oneStepModel.data.ts)
 - [Choosing addition or subtraction](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationAddSub.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Цей сценарій доповнює коротку методичну картку; повний Learning Brief потребує окремого проходу методиста.
+[View the six storyboard sections](./Sections/README.md). This storyboard is a proposed learning interaction, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)
