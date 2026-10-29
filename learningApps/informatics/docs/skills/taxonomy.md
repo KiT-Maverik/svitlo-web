@@ -1,8 +1,8 @@
-# Інформатика — Skills Taxonomy
+# Informatics — Skills Taxonomy
 
 Date: 2026-10-29
 
-Чернетка для редакторського рев’ю. Предметний обсяг: обчислювальне мислення, алгоритми й програмування, цифрові системи, дані та інформація, програмна архітектура, AI, робототехніка, цифрова безпека та цифрова творчість. Зафіксовано сферу з `studio/Subject Proposition.md` (з урахуванням погодженого розширення предметної пропозиції) з деталізацією за українськими та міжнародними стандартами. Навігаційна таксономія не містить шкільних класів, віку, уроків, вимірювань, завдань, оцінок або результатів навчання конкретної особи. Скіли належать цьому підручнику: подібні компетентності в інших підручниках можуть існувати незалежно; міжпідручникова уніфікація й аналітика не є вимогою.
+Subject scope: computational thinking, algorithms and programming, digital systems and networks, information and data, software architecture, design patterns, AI, robotics, digital safety, digital UX, and digital creativity. The scope follows `studio/Subject Proposition.md`, including agreed expansions, with reference to Ukrainian and international subject standards. This audience-independent taxonomy contains no grades, ages, lessons, individual assessments, tasks, scores, or personal learning outcomes. Skills belong to this textbook: related competencies may also exist independently in other textbooks, without requiring shared identifiers or cross-textbook analytics.
 
 ## SUMMARY
 
@@ -2331,179 +2331,177 @@ Explain the difference between operations that grow approximately in proportion 
 [Not implemented](#)
 
 Compare algorithms where fewer operations may require extra intermediate data; speed is not the only criterion for a sound choice.
-### Git і відкритий код
+### Git and Open Source
 
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Окремий предметний напрям про історію програмних змін, співпрацю у репозиторіях і ліцензоване спільне створення програм, а не автоматична складова будь-якого цифрового уроку.
+A distinct subject area covering software change history, collaboration in repositories, and licensed cooperative software creation rather than an automatic component of every digital lesson.
 
-#### Контроль версій Git
+#### Git Version Control
 
 Skills: 6
 
 [Not implemented](#)
 
-Git забезпечує послідовність комітів і гілок, а процеси перегляду змін допомагають об’єднувати внески кількох людей.
+Git provides a history of commits and branches, while change-review processes help combine the work of multiple contributors.
 
-##### Пояснювати поняття репозиторію
-
-[Not implemented](#)
-
-Репозиторій зберігає проєкт і його історію, даючи змогу перевірити попередні версії та внески авторів.
-
-##### Пояснювати поняття коміту
+##### Explain a Repository
 
 [Not implemented](#)
 
-Коміт фіксує узгоджений стан змін у Git із ідентифікатором і зв’язками з попередньою історією.
+A repository holds a project and its history, allowing earlier versions and author contributions to be examined.
 
-##### Пояснювати поняття гілки
-
-[Not implemented](#)
-
-Гілка позначає окремий напрямок розвитку, де можна створювати коміти без негайної зміни головної історії.
-
-##### Пояснювати поняття pull request
+##### Explain a Commit
 
 [Not implemented](#)
 
-Pull request на платформі спільної розробки організовує перевірку запропонованих змін перед їхнім об’єднанням.
+A Git commit captures a coherent state of changes with an identifier and links to preceding history.
 
-##### Пояснювати злиття гілок
-
-[Not implemented](#)
-
-Злиття поєднує історії змін; якщо вони торкаються несумісних місць, потрібне узгодження конфліктів.
-
-##### Розрізняти локальний і віддалений репозиторій
+##### Explain a Branch
 
 [Not implemented](#)
 
-Локальна копія дозволяє робити коміти самостійно, а віддалений репозиторій використовується для обміну між учасниками.
+A branch represents a line of development on which commits can be created without immediately changing the main history.
 
-#### Відкритий вихідний код
+##### Explain a Pull Request
+
+[Not implemented](#)
+
+A pull request on a collaborative development platform organizes review of proposed changes before they are merged.
+
+##### Explain Branch Merging
+
+[Not implemented](#)
+
+Merging combines lines of history; incompatible overlapping changes require conflict resolution.
+
+##### Distinguish Local and Remote Repositories
+
+[Not implemented](#)
+
+A local repository supports independent committing, while a remote repository enables sharing between contributors.
+
+#### Open Source
 
 Skills: 2
 
 [Not implemented](#)
 
-Відкритість вихідного коду визначається не лише його видимістю, а й правами використання, модифікації та поширення.
+Software openness depends not only on visibility of source code but also on rights to use, modify, and distribute it.
 
-##### Пояснювати поняття Open Source
-
-[Not implemented](#)
-
-Відкрита ліцензія дозволяє вивчати, використовувати, змінювати та розповсюджувати код у межах визначених умов.
-
-##### Розрізняти відкритий і публічно видимий код
+##### Explain Open Source
 
 [Not implemented](#)
 
-Доступ до тексту програми не завжди надає дозвіл вносити зміни чи повторно поширювати її.
+An open-source license permits studying, using, modifying, and redistributing code under its defined conditions.
 
-#### Спільна робота над цифровим продуктом
+##### Distinguish Open Source from Publicly Visible Code
+
+[Not implemented](#)
+
+Being able to read a program's source does not automatically grant permission to modify or redistribute it.
+
+#### Collaborative Digital Product Development
 
 Skills: 3
 
 [Not implemented](#)
 
-Спільна розробка потребує узгоджених правил внесення й перегляду змін, координації учасників і відстеження версій. Правила співпраці застосовні як у відкритих, так і в приватних репозиторіях та не визначають самі по собі умови ліцензування.
+Joint development requires agreed contribution and review rules, coordination among contributors, and tracking versions. Collaboration applies to public and private repositories and does not itself determine licensing.
 
-##### Пояснювати правила внеску до спільного проєкту
-
-[Not implemented](#)
-
-Правила внеску, перевірки коду й обговорення змін допомагають командам працювати над спільним продуктом.
-
-##### Узгоджувати зміни у спільному цифровому проєкті
+##### Explain Contribution Guidelines
 
 [Not implemented](#)
 
-Домовлятися про власників змін, послідовність об’єднання внесків і розв’язання ситуацій, коли двоє учасників змінили один фрагмент. Спільна робота не зводиться до зберігання файлів у спільній теці.
+Rules for contributions, code review, and discussing changes help teams maintain a shared project.
 
-##### Відстежувати версії цифрового продукту
+##### Coordinate Changes in a Shared Digital Project
 
 [Not implemented](#)
 
-Порівнювати послідовні стани файла чи проєкту, визначати, яка зміна коли з’явилася, і за потреби повертатися до попередньої збереженої версії. Наявність багатьох файлів із назвами «final2» не обов’язково створює прозору історію.
+Agree on ownership of changes, merge order, and resolution when contributors edit the same area. Collaboration is not just placing files in a common folder.
 
-### Історія програмування
+##### Track Digital Product Versions
+
+[Not implemented](#)
+
+Compare successive file or project states, identify when changes appeared, and restore earlier saved versions where necessary. Multiple files labeled 'final2' do not necessarily form a transparent history.
+### History of Programming
 
 Groups: 2 · Skills: 9
 
 [Not implemented](#)
 
-Висвітлює виникнення алгоритмічних ідей, практик програмування, програмних інструментів, мережевих рішень та обчислювальних машин у їхньому історичному контексті. Окремо показує внесок конкретних людей і команд, зокрема довго недооцінену працю жінок, без перетворення кожної біографії на окрему компетентність.
+Traces the origins of algorithmic ideas, programming practices, software tools, networking solutions, and computing machines in historical context. Recognizes individual and collaborative contributions, including women's long-undervalued work, without making every biography a separate competency.
 
-#### Ключові внески
+#### Key Contributions
 
 Skills: 6
 
 [Not implemented](#)
 
-Історичні технологічні зміни — перші описи програм, практичне програмування машин, компіляція, надійність програм, мережеві протоколи й теорія обчислень — дають змогу аналізувати, яку проблему розв’язував винахід і чому він став важливим. Конкретні автори та команди залишаються обов’язковими прикладами у предметній пропозиції.
+Historical developments in program descriptions, practical machine programming, compilation, software reliability, network protocols, and computability can be examined by the problems they solved and their lasting importance. Specific people and teams remain required examples in the Subject Proposition.
 
-##### Пояснювати витоки програмування
-
-[Not implemented](#)
-
-На прикладі описів для аналітичної машини Чарльза Беббіджа показувати, як послідовність операцій можна задати для машини ще до появи сучасних комп’ютерів. Розглядати праці Ади Лавлейс та їхнє бачення застосувань обчислення ширше за звичайну арифметику.
-
-##### Пояснювати раннє електронне програмування
+##### Explain the Origins of Programming
 
 [Not implemented](#)
 
-Показувати, як команди створювали й перевіряли програми для перших великих електронних обчислювальних машин попри складні засоби введення інструкцій. На прикладі шести програмісток ENIAC висвітлювати їхній документований, тривалий час недооцінений внесок.
+Use descriptions for Charles Babbage's Analytical Engine to show how machine operations could be specified before modern computers existed. Examine Ada Lovelace's work and her vision of computation extending beyond ordinary arithmetic.
 
-##### Пояснювати розвиток компіляторів
-
-[Not implemented](#)
-
-Пояснювати, як перетворення програм із зручнішого для людини запису на машинні інструкції змінило підхід до програмування. Показувати внесок Грейс Гоппер та інших дослідників у ранні компілятори й мови програмування, не ототожнюючи компілятор із самою мовою.
-
-##### Пояснювати розвиток надійності програм
+##### Explain Early Electronic Programming
 
 [Not implemented](#)
 
-На прикладі програмних систем для космічних польотів пояснювати важливість перевірки помилок, пріоритетів виконання й відновлення після відмов. Висвітлювати керівну роль Маргарет Гамільтон у програмному забезпеченні Apollo та колективний характер розробки.
+Explain how teams developed and tested programs for the first large electronic computers despite complex methods of entering instructions. The six ENIAC programmers exemplify substantial contributions that went underrecognized for decades.
 
-##### Пояснювати усунення мережевих петель
-
-[Not implemented](#)
-
-На історії мостів локальних мереж пояснювати, чому надлишкові фізичні з’єднання можуть створювати цикли передавання кадрів та як Spanning Tree Protocol формує логічну структуру без петель. Визнавати внесок Радії Перлман, не плутаючи цей протокол з алгоритмом маршрутизації IP.
-
-##### Пояснювати теорію обчислюваності
+##### Explain the Development of Compilers
 
 [Not implemented](#)
 
-Описувати ідею формальної моделі універсального обчислення та меж того, які задачі можна розв’язати алгоритмічно. Роботи Алана Тюрінга є ключовим історичним прикладом; його криптоаналіз і дискусії про машинний інтелект розглядаються окремо.
+Explain how translating more human-readable program notation into machine instructions changed programming. Include the contributions of Grace Hopper and other researchers to early compilers and languages without confusing a compiler with the language itself.
 
-#### Машини та криптоаналіз
+##### Explain the Development of Software Reliability
+
+[Not implemented](#)
+
+Use spaceflight software to explain error handling, execution priorities, and recovery from failures. Include Margaret Hamilton's leadership of Apollo software work and the collaborative nature of its development.
+
+##### Explain the Elimination of Network Loops
+
+[Not implemented](#)
+
+Use the history of local-area network bridges to explain how redundant physical links can create frame-forwarding loops and how Spanning Tree Protocol creates a loop-free logical topology. Credit Radia Perlman's contribution without mistaking STP for an IP routing algorithm.
+
+##### Explain Computability Theory
+
+[Not implemented](#)
+
+Describe the idea of a formal model of universal computation and limits on which problems are algorithmically solvable. Alan Turing's work is a principal historical example; his cryptanalysis and the debate over machine intelligence are separate topics.
+
+#### Machines and Cryptanalysis
 
 Skills: 3
 
 [Not implemented](#)
 
-Розвиток обчислювальних пристроїв і спеціалізованих криптоаналітичних машин демонструє, як формалізація інструкцій та механізація перевірок розв’язували конкретні історичні задачі. Філософські питання про імітацію мислення та розуміння розглядаються окремо в AI.
+The development of computing devices and specialized cryptanalytic machines illustrates how formal instructions and mechanized checking addressed historical problems. Philosophical issues of imitation and understanding belong to AI instead.
 
-##### Пояснювати історичні методи криптоаналізу
-
-[Not implemented](#)
-
-Пояснювати, як математичний аналіз закономірностей і систематичне відсіювання варіантів допомагали шукати налаштування шифрувальних машин. Історичні приклади включають польських криптоаналітиків, Джоан Кларк, Алана Тюрінга, Гордона Велчмана та інших фахівців Блетчлі-Парку.
-
-##### Пояснювати призначення Bombe
+##### Explain Historical Cryptanalysis Methods
 
 [Not implemented](#)
 
-Bombe була електромеханічною машиною для перевірки ключів Enigma, створеною з урахуванням попередньої польської криптоаналітичної роботи.
+Explain how mathematical analysis of patterns and systematic elimination of possibilities helped find cipher-machine settings. Historical examples include Polish cryptanalysts, Joan Clarke, Alan Turing, Gordon Welchman, and other specialists at Bletchley Park.
 
-##### Пояснювати розвиток програмованих комп’ютерів
+##### Explain the Purpose of the Bombe
 
 [Not implemented](#)
 
-Порівнювати, як від механічних концепцій до електронних машин змінювалися способи зберігання інструкцій, вибору операцій та керування виконанням програми. Це історія пристроїв і їхньої архітектури, на відміну від власне техніки раннього програмування.
+The Bombe was an electromechanical machine used to test possible Enigma key settings, built upon earlier Polish cryptanalytic work.
 
+##### Explain the Development of Programmable Computers
+
+[Not implemented](#)
+
+Compare how storage of instructions, selection of operations, and execution control evolved from mechanical concepts to electronic machines. This is the history of devices and their architecture, distinct from early hands-on programming techniques.
