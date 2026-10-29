@@ -15,4 +15,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається окремою.
 
 ---
-[Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

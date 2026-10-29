@@ -58,4 +58,4 @@
 [Sections — 8 сценарних секцій](./Sections/README.md). Методичний brief вище не замінюється сценарієм.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

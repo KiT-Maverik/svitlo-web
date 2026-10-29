@@ -57,4 +57,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методичний бриф вище лишається окремим.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
