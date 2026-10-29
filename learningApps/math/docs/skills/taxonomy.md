@@ -722,19 +722,19 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills
 
 У 324 + 153 кожен стовпець дає значення менше десяти, тому переноси між розрядами не потрібні.
 
-##### Оцінювати правдоподібність суми або різниці до точного обчислення
+##### Addition and subtraction — Result estimation
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/estimateResult.data.ts)
 
 Перед 399 + 204 можна очікувати суму приблизно 600; результат на кшталт 63 має неправильний порядок величини.
 
-##### Знаходити й виправляти помилки в додаванні та відніманні за допомогою оберненої дії
+##### Addition and subtraction — Result checking · Inverse operations
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/checkWithInverse.data.ts)
 
 Результат 63 − 28 перевіряють додаванням 28 до отриманої різниці; невідповідність показує збій.
 
-#### Множення
+#### Multiplication
 
 Skills: 24
 
@@ -742,79 +742,79 @@ Skills: 24
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/multiply.data.ts)
 
-##### Представляти множення як кількість рівних груп певного розміру
+##### Multiplication — Equal groups
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/equalGroups.data.ts)
 
 Три однакові набори по чотири предмети відповідають 3 × 4, а не трьом різним доданкам.
 
-##### Переходити між множенням і повторюваним додаванням
+##### Multiplication — Repeated addition
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/repeatedAddition.data.ts)
 
 Запис 4 + 4 + 4 еквівалентний трьом рівним четвіркам; нерівні доданки не дають такої простої моделі.
 
-##### Представляти множення прямокутним масивом предметів або клітинок
+##### Multiplication — Array model
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/arrayModel.data.ts)
 
 Масив із трьох рядків по п’ять клітинок показує загальну кількість 15 незалежно від порядку обходу.
 
-##### Читати вираз a × b та пов’язувати множники й добуток із моделлю
+##### Multiplication — Reading expressions
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/readExpression.data.ts)
 
 У 3 × 4 множники описують число груп і їхній розмір, а добуток — загальну кількість у моделі.
 
-##### Обчислювати добутки з множником 2 та використовувати подвоєння
+##### Multiplication — × 2
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by2.data.ts)
 
 Добуток на 2 можна отримати як суму числа із самим собою: 2 × 7 = 7 + 7.
 
-##### Обчислювати табличні добутки з множником 3
+##### Multiplication — × 3
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by3.data.ts)
 
 Три рівні четвірки дають 12; відомі суми по 3 допомагають вивести табличний результат.
 
-##### Обчислювати табличні добутки з множником 4
+##### Multiplication — × 4
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by4.data.ts)
 
 Для чотирьох шісток результат 24 можна побачити як дві подвоєні шістки.
 
-##### Обчислювати табличні добутки з множником 5
+##### Multiplication — × 5
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by5.data.ts)
 
 П’ятірки утворюють знайому шкалу 5, 10, 15, 20; її можна співвіднести з групами по п’ять.
 
-##### Обчислювати табличні добутки з множником 6
+##### Multiplication — × 6
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by6.data.ts)
 
 Шість четвірок можна отримати з п’яти четвірок і ще однієї, не заучуючи випадок ізольовано.
 
-##### Обчислювати табличні добутки з множником 7
+##### Multiplication — × 7
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by7.data.ts)
 
 Сім трійок можна обчислити як п’ять трійок плюс дві трійки: 15 + 6 = 21.
 
-##### Обчислювати табличні добутки з множником 8
+##### Multiplication — × 8
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by8.data.ts)
 
 Вісім п’ятірок дають 40; результат також випливає з подвоєння чотирьох п’ятірок.
 
-##### Обчислювати табличні добутки з множником 9
+##### Multiplication — × 9
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by9.data.ts)
 
 Дев’ять шісток можна вивести як десять шісток мінус одна шістка.
 
-##### Обчислювати добутки з множником 10 та пояснювати їх через десятки
+##### Multiplication — × 10
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by10.data.ts)
 
