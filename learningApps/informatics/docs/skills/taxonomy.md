@@ -1871,469 +1871,466 @@ Explain why the same pseudorandom seed, algorithm, parameters, and call order pr
 [Not implemented](#)
 
 Assess trade-offs between stored data volume, compact rule descriptions, initialization time, and CPU/GPU/RAM use. Procedural generation is not the same as lossless or lossy compression of a ready-made file.
-### Структури даних
+### Data Structures
 
 Groups: 8 · Skills: 34
 
 [Not implemented](#)
 
-Вивчає організацію наборів значень у послідовності, стеку, черзі, словнику, множині, дереві й графі, а також можливості доступу, змінення та вибору структури. Структура — не алгоритм обробки.
+Organization of values in sequences, stacks, queues, dictionaries, sets, trees, and graphs, including access, modification, and selection of appropriate structures. A structure is not an algorithm for processing it.
 
-#### Послідовності
+#### Sequences
 
 Skills: 7
 
 [Not implemented](#)
 
-Упорядковані набори елементів: масиви, списки й зв’язні представлення. Доступ за індексом, вставлення, вилучення та обхід мають різні передумови й витрати.
+Ordered collections including arrays, lists, and linked representations. Indexing, insertion, removal, and traversal have different requirements and costs.
 
-##### Пояснювати структуру масиву
-
-[Not implemented](#)
-
-Масив утримує елементи у визначених позиціях та допускає звернення за індексом; правила довжини й типів залежать від конкретної мови.
-
-##### Пояснювати структуру списку
+##### Explain Array Structure
 
 [Not implemented](#)
 
-Список представляє впорядковану колекцію, яка допускає операції над елементами, незалежно від того, чи внутрішньо використано масив або вузли.
+An array holds items at defined positions and supports index-based access; rules for length and element types depend on the language.
 
-##### Розрізняти масив і зв’язний список
-
-[Not implemented](#)
-
-Індексований масив і ланцюжок вузлів з посиланнями забезпечують різні способи доступу та різні витрати на змінення структури.
-
-##### Звертатися до елемента набору за індексом
+##### Explain List Structure
 
 [Not implemented](#)
 
-Отримувати елемент впорядкованої колекції за його позицією, враховуючи початок нумерації й межі допустимих індексів у вибраній мові.
+A list represents an ordered collection with element operations, regardless of whether its underlying representation uses an array or linked nodes.
 
-##### Додавати елемент до послідовності
-
-[Not implemented](#)
-
-Вставляти новий елемент на задану позицію і прогнозувати зміну порядку інших елементів або зв’язків вузлів.
-
-##### Вилучати елемент із послідовності
+##### Distinguish Arrays from Linked Lists
 
 [Not implemented](#)
 
-Видаляти значення з визначеної позиції та зберігати правильний порядок і доступність решти елементів.
+Indexed arrays and chains of linked nodes offer different access methods and modification costs.
 
-##### Перебирати елементи послідовності
+##### Access a Sequence Element by Index
 
 [Not implemented](#)
 
-Послідовно відвідувати значення колекції від початку до кінця, не пропускаючи позиції та не виконуючи зайвих повторів.
+Retrieve an element of an ordered collection by its position, accounting for indexing origin and valid bounds in the selected language.
 
-#### Стек
+##### Insert an Element into a Sequence
+
+[Not implemented](#)
+
+Add a new item at a specified position and predict how it affects the order of other items or links between nodes.
+
+##### Remove an Element from a Sequence
+
+[Not implemented](#)
+
+Delete an item at a position while preserving the proper order and accessibility of the remaining elements.
+
+##### Traverse a Sequence
+
+[Not implemented](#)
+
+Visit a collection's elements in order from beginning to end without skipping positions or performing unnecessary repetitions.
+
+#### Stack
 
 Skills: 3
 
 [Not implemented](#)
 
-Структура з доступом до верхівки за принципом LIFO: останній доданий елемент вилучається першим. Окремо пояснюються додавання, вилучення та порожній стан.
+A structure using last-in, first-out (LIFO) access to its top element. Pushing, popping, and handling an empty stack are distinct operations.
 
-##### Пояснювати принцип LIFO
-
-[Not implemented](#)
-
-У стеку останній доданий елемент стає першим вилученим, як верхня тарілка у стосі; це не сортування за величиною.
-
-##### Додавати елемент до стека
+##### Explain LIFO
 
 [Not implemented](#)
 
-Операція push розміщує нове значення на вершині стека, не змінюючи порядок усіх раніше доданих.
+In a stack, the most recently added element is removed first, like the top plate in a pile; this does not mean sorting by value.
 
-##### Вилучати елемент зі стека
+##### Push an Element onto a Stack
 
 [Not implemented](#)
 
-Операція pop прибирає верхнє значення стека, окремо враховуючи стан, коли стек порожній.
+Use `push` to place a new value on top without changing the order of previously added elements.
 
-#### Черга
+##### Pop an Element from a Stack
+
+[Not implemented](#)
+
+Use `pop` to remove the top value while accounting for the special case of an empty stack.
+
+#### Queue
 
 Skills: 3
 
 [Not implemented](#)
 
-Структура з порядком FIFO: перший доданий елемент вилучається першим. Нові значення надходять у кінець, а обробляються з початку.
+A structure following first-in, first-out (FIFO) order: elements join at the back and leave from the front.
 
-##### Пояснювати принцип FIFO
-
-[Not implemented](#)
-
-У черзі першим обслуговують найраніше доданий елемент, якщо не запроваджено окремих правил пріоритету.
-
-##### Додавати елемент до черги
+##### Explain FIFO
 
 [Not implemented](#)
 
-Нове значення ставиться в кінець черги, не переставляючи елементи, які вже очікують своєї черги.
+In a queue, the earliest added element is served first unless separate priority rules apply.
 
-##### Вилучати елемент із черги
+##### Enqueue an Element
 
 [Not implemented](#)
 
-Прибирати перше значення зі структури FIFO, зберігаючи порядок решти та враховуючи порожню чергу.
+Add a value to the back without rearranging those already waiting.
 
-#### Множини
+##### Dequeue an Element
+
+[Not implemented](#)
+
+Remove the front element of a FIFO structure, preserving the order of the rest and handling an empty queue.
+
+#### Sets
 
 Skills: 4
 
 [Not implemented](#)
 
-Колекції унікальних елементів із перевіркою належності й математичними операціями об’єднання та перетину. Індексований порядок не є обов’язковою властивістю множини.
+Collections of unique elements supporting membership tests, union, and intersection. Positional indexing is not an inherent property of a set.
 
-##### Пояснювати структуру множини
-
-[Not implemented](#)
-
-Множина складається з унікальних елементів за певним правилом рівності; повторне внесення значення не створює другої копії.
-
-##### Перевіряти належність множині
+##### Explain Set Structure
 
 [Not implemented](#)
 
-З’ясовувати, чи міститься задане значення серед елементів множини, не вимагаючи знання його порядкового індексу.
+A set consists of unique elements under a defined equality rule; inserting an existing value does not add another copy.
 
-##### Виконувати об’єднання множин
-
-[Not implemented](#)
-
-Складати множину всіх значень, присутніх хоча б в одній із двох множин, без повторів елементів.
-
-##### Виконувати перетин множин
+##### Test Set Membership
 
 [Not implemented](#)
 
-Знаходити тільки ті значення, які одночасно є у двох множинах, не плутаючи перетин з об’єднанням.
+Determine whether a value belongs to a set without requiring its positional index.
 
-#### Словники
+##### Compute Set Union
+
+[Not implemented](#)
+
+Create the set of all values that occur in either of two sets, eliminating duplicates.
+
+##### Compute Set Intersection
+
+[Not implemented](#)
+
+Find only values shared by two sets, distinguishing intersection from union.
+
+#### Dictionaries
 
 Skills: 3
 
 [Not implemented](#)
 
-Відповідності ключів і значень із доступом, оновленням та обробкою відсутнього ключа. Ключ не тотожний позиційному індексу послідовності.
+Key-to-value mappings supporting lookup, updates, and absent-key handling. A key need not be a positional sequence index.
 
-##### Пояснювати структуру словника
-
-[Not implemented](#)
-
-Словник зберігає відповідність ключа значенню, причому ключ не обов’язково є числом або позицією в масиві.
-
-##### Отримувати значення словника за ключем
+##### Explain Dictionary Structure
 
 [Not implemented](#)
 
-Знаходити запис за заданим ключем і правильно враховувати ситуацію, коли відповідного запису немає.
+A dictionary maps keys to values; keys need not be numeric or correspond to array positions.
 
-##### Оновлювати значення словника
+##### Retrieve a Dictionary Value by Key
 
 [Not implemented](#)
 
-Замінювати значення існуючого ключа без випадкового створення дубліката цього самого ключа.
+Find an entry using its key and handle the case in which the key does not exist.
 
-#### Дерева
+##### Update a Dictionary Value
+
+[Not implemented](#)
+
+Replace the value associated with an existing key without accidentally duplicating the key.
+
+#### Trees
 
 Skills: 4
 
 [Not implemented](#)
 
-Дерева — ациклічні ієрархії вузлів і ребер, а двійкові дерева пошуку мають додаткове правило впорядкування ключів.
+Trees organize nodes and edges into acyclic hierarchies; binary search trees also impose an ordering rule on keys.
 
-##### Пояснювати структуру дерева
-
-[Not implemented](#)
-
-Визначати корінь, вузол, ребро та зв’язок батько–нащадок в ієрархії; дерево не обов’язково двійкове.
-
-##### Розрізняти листок та внутрішній вузол дерева
+##### Explain Tree Structure
 
 [Not implemented](#)
 
-Листок не має дітей, а внутрішній вузол має хоча б одного нащадка; це властивість структури, а не назви вузла.
+Identify roots, nodes, edges, and parent–child relationships within a hierarchy; trees need not be binary.
 
-##### Знаходити шлях у дереві
-
-[Not implemented](#)
-
-Визначати послідовність реально з’єднаних вузлів між двома позиціями без вигаданих переходів.
-
-##### Пояснювати двійкове дерево пошуку
+##### Distinguish Leaf and Internal Tree Nodes
 
 [Not implemented](#)
 
-Ключі двійкового дерева пошуку організовані за правилом впорядкованості піддерев, якого довільне дерево не вимагає.
+A leaf has no children; an internal node has at least one child. The distinction follows the structure, not the node's name.
 
-#### Графи
+##### Find a Path in a Tree
+
+[Not implemented](#)
+
+Identify the actual sequence of connected nodes between two positions without inventing nonexistent links.
+
+##### Explain Binary Search Trees
+
+[Not implemented](#)
+
+Keys in a binary search tree obey an ordering rule across subtrees that is not required of an arbitrary tree.
+
+#### Graphs
 
 Skills: 6
 
 [Not implemented](#)
 
-Графи описують вершини та зв’язки між ними, зокрема цикли, напрямки переходів і числові ваги ребер.
+Graphs describe vertices and connections, including cycles, directed relationships, and numeric edge weights.
 
-##### Пояснювати структуру графа
-
-[Not implemented](#)
-
-Представляти вершини й ребра для мережі доріг чи знайомств, не вважаючи кожен граф деревом.
-
-##### Розрізняти орієнтований та неорієнтований граф
+##### Explain Graph Structure
 
 [Not implemented](#)
 
-Показувати, чи дозволяє ребро перехід в одному напрямку, чи зв’язок можна проходити в обох напрямках.
+Represent a road or social network as vertices and edges without assuming every graph is a tree.
 
-##### Розрізняти зважений та незважений граф
-
-[Not implemented](#)
-
-Визначати, як числова вага ребра може представляти час, відстань або витрати, а не лише факт з’єднання.
-
-##### Визначати сусідні вершини графа
+##### Distinguish Directed and Undirected Graphs
 
 [Not implemented](#)
 
-Знаходити вершини з безпосереднім зв’язком із заданою, відрізняючи їх від вершин, досяжних через інші вузли.
+Determine whether an edge permits travel only one way or represents a connection that can be traversed in both directions.
 
-##### Знаходити шлях у графі
-
-[Not implemented](#)
-
-Створювати послідовність з’єднаних вершин від початку до цілі, враховуючи напрямок ребер.
-
-##### Розрізняти дерево та граф із циклами
+##### Distinguish Weighted and Unweighted Graphs
 
 [Not implemented](#)
 
-Дерево не має циклів, а довільний граф може містити цикли й кілька альтернативних шляхів між тими самими вершинами.
+Identify how numeric edge weights can represent time, distance, or cost rather than simply whether a link exists.
 
-#### Вибір структур
+##### Identify Adjacent Vertices
+
+[Not implemented](#)
+
+Find vertices directly connected to a given vertex and distinguish them from vertices reached through intermediate nodes.
+
+##### Find a Path in a Graph
+
+[Not implemented](#)
+
+Construct a sequence of connected vertices from start to goal while respecting edge directions.
+
+##### Distinguish Trees from Graphs with Cycles
+
+[Not implemented](#)
+
+A tree has no cycles, whereas a general graph may have cycles and multiple alternative paths between vertices.
+
+#### Structure Selection
 
 Skills: 4
 
 [Not implemented](#)
 
-Вибір структури за потрібними операціями й оцінювання вартості доступу, вставлення та зберігання. Порівняння стосується способу організації даних, а не лише алгоритмів їх обробки.
+Select data structures based on required operations and evaluate access, insertion, and storage costs. The comparison concerns data organization rather than only algorithms that process it.
 
-##### Обирати структуру за потрібними операціями
-
-[Not implemented](#)
-
-Визначати, чи задачі потрібні індексація, унікальність, пошук за ключем, порядок FIFO/LIFO або ієрархічні зв’язки.
-
-##### Порівнювати витрати доступу до елемента
+##### Choose a Structure for Required Operations
 
 [Not implemented](#)
 
-Зіставляти типовий прямий доступ до індексованого масиву з послідовним проходженням зв’язного списку до потрібного вузла.
+Identify whether a task needs positional indexing, uniqueness, key lookup, FIFO/LIFO order, or hierarchical relationships.
 
-##### Порівнювати витрати вставлення до колекції
-
-[Not implemented](#)
-
-Пояснювати, чому масив може вимагати зсуву елементів, а список — зміни посилань, але місце вставлення ще треба знайти.
-
-##### Розрізняти структуру даних та алгоритм
+##### Compare Element Access Costs
 
 [Not implemented](#)
 
-Структура задає спосіб організації інформації та доступу, алгоритм визначає порядок дій над цією інформацією.
+Compare typical direct access in an indexed array with traversal through a linked list to the desired node.
 
+##### Compare Collection Insertion Costs
 
-### Алгоритми
+[Not implemented](#)
+
+Explain why an array may require moving elements while a linked list may require changing links, although the insertion point still needs to be located.
+
+##### Distinguish Data Structures from Algorithms
+
+[Not implemented](#)
+
+A data structure defines how information is organized and accessed; an algorithm specifies a sequence of operations on that information.
+### Algorithms
 
 Groups: 5 · Skills: 23
 
 [Not implemented](#)
 
-Відтворювані способи розв’язання обчислювальних задач, згруповані за призначенням: пошук, сортування, обробка наборів, загальна побудова та аналіз. Кожен названий базовий алгоритм має окрему самостійну Skill-ідентичність; навички про його передумови й оцінювання можуть бути окремими Skills тієї самої групи. Алгоритми можна пояснювати конкретними моделями без нав’язування вікового обмеження таксономії.
+Repeatable procedures for computational problems, organized by purpose: searching, sorting, collection processing, general construction, and analysis. Every named elementary algorithm has its own independent Skill; prerequisites and performance assessments may be separate skills within the same group. Concrete models can explain algorithms without imposing an age limit on the taxonomy.
 
-#### Побудова
-
-Skills: 6
-
-[Not implemented](#)
-
-Загальні способи формулювати мету, послідовність, умови та повторення для алгоритму, незалежно від конкретного призначення. Відрізняє опис коректної процедури від її реалізації мовою програмування.
-
-##### Формулювати мету алгоритму
-
-[Not implemented](#)
-
-Задавати перевірюваний кінцевий результат і допустимі вхідні умови: наприклад, знайти індекс заданого числа у впорядкованому масиві або встановити, що його немає. Мета відокремлюється від конкретних кроків розв’язання.
-
-##### Будувати послідовний алгоритм
-
-[Not implemented](#)
-
-Установлювати порядок скінченної кількості дій, де кожна наступна використовує стан після попередньої, без розгалуження. Це логічний опис розв’язання; запис тих самих кроків виконуваними командами належить до програмування.
-
-##### Проєктувати умовне розгалуження
-
-[Not implemented](#)
-
-Визначати взаємовиключні або пріоритетні шляхи алгоритму за перевірюваними умовами, включно з дією для випадку, коли умова не виконується. Наприклад, після порівняння чисел обирати одну з двох частин пошуку.
-
-##### Проєктувати повторення дій
-
-[Not implemented](#)
-
-Задавати тіло повторюваного алгоритму, умову продовження чи завершення та стан, який змінюється між кроками. Це запобігає нескінченному циклу й відрізняє повторення від простого дублювання однакових команд.
-
-##### Реалізовувати рекурсивний алгоритм
-
-[Not implemented](#)
-
-Самостійно будувати рекурсивне розв’язання задачі з коректним базовим випадком і зменшенням підзадачі, щоб виклики завершувалися. Перевіряти результат на граничних входах; уміння пояснити готову рекурсію не замінює створення алгоритму.
-
-##### Порівнювати алгоритми за вимогами
-
-[Not implemented](#)
-
-Зіставляти кілька коректних способів для тієї самої задачі за обмеженнями, наприклад упорядкованістю даних, кількістю перевірок, ресурсами або зрозумілістю. Алгоритм із меншою кількістю кроків може бути непридатним без потрібної передумови.
-
-#### Пошук
+#### Construction
 
 Skills: 6
 
 [Not implemented](#)
 
-Методи знаходження потрібного елемента серед даних: послідовний перегляд, ділення впорядкованого діапазону або пересування впорядкованим деревом. Окремі Skills позначають кожен конкретний алгоритм і відмінні передумови чи порівняння.
+General ways of specifying an algorithm's goal, sequence, conditions, and repetition, regardless of purpose. Distinguish describing a correct procedure from implementing it in a programming language.
 
-##### Застосовувати лінійний пошук
-
-[Not implemented](#)
-
-Послідовно перевіряти елементи до знаходження шуканого або завершення набору; не вимагати попереднього сортування. Розуміти, що за відсутності збігу може знадобитися перевірити весь набір.
-
-##### Застосовувати бінарний пошук
+##### Define an Algorithm's Goal
 
 [Not implemented](#)
 
-Вибирати середній елемент упорядкованого діапазону й за результатом порівняння відкидати ту його частину, де шуканого бути не може; повторювати до знаходження або порожнього інтервалу.
+Specify a verifiable outcome and acceptable inputs, such as finding the index of a target number in a sorted array or establishing its absence. Separate the objective from the steps of the solution.
 
-##### Визначати передумови бінарного пошуку
-
-[Not implemented](#)
-
-З’ясовувати, чи всі елементи впорядковані за узгодженим критерієм і чи доступне порівняння «менше/більше»; без цих умов виключення половини кандидатів може бути неправильним.
-
-##### Прогнозувати масштабування пошуку
+##### Construct a Sequential Algorithm
 
 [Not implemented](#)
 
-Порівнювати 100 і 1000 можливих позицій: для бінарного пошуку межа зростає з 7 до 10 перевірок, хоча даних удесятеро більше; пояснювати причину звуженням приблизно навпіл.
+Specify a finite ordered sequence of actions in which each uses the state left by the preceding step, without branching. This is a logical solution description; coding the steps as executable instructions belongs to Programming.
 
-##### Застосовувати пошук у двійковому дереві
-
-[Not implemented](#)
-
-Порівнювати ключ із вузлом і переходити у відповідне піддерево, доки значення не знайдено або шлях не завершився.
-
-##### Порівнювати пошук за кількістю перевірок
+##### Design Conditional Branching
 
 [Not implemented](#)
 
-Зіставляти кількість відкритих позицій у лінійному й бінарному пошуку для однакового набору, відрізняючи поодинокий вдалий результат від загальної гарантії алгоритму.
+Specify mutually exclusive or priority-based paths using testable conditions, including the action taken when a condition is false. For example, choose one half of a search range after comparing numbers.
 
-#### Сортування
+##### Design Repetition
+
+[Not implemented](#)
+
+Define the body of a repeated procedure, its continuation or termination condition, and state changes between steps. This prevents infinite loops and distinguishes repetition from copying identical instructions.
+
+##### Implement a Recursive Algorithm
+
+[Not implemented](#)
+
+Independently construct a recursive solution with a valid base case and progressively smaller subproblems so calls terminate. Test boundary inputs; being able to explain existing recursion is not equivalent to designing an algorithm.
+
+##### Compare Algorithms Against Requirements
+
+[Not implemented](#)
+
+Compare correct approaches to the same problem based on constraints such as sortedness, number of checks, resources, and clarity. An algorithm with fewer steps may be unsuitable without its prerequisite.
+
+#### Search
+
+Skills: 6
+
+[Not implemented](#)
+
+Methods of locating target items: scanning in order, halving a sorted range, or traversing an ordered tree. Each named algorithm has its own Skill, with prerequisite and comparison skills where independently meaningful.
+
+##### Apply Linear Search
+
+[Not implemented](#)
+
+Inspect items one by one until the target is found or the collection ends; prior sorting is unnecessary. In the no-match case the entire collection may need checking.
+
+##### Apply Binary Search
+
+[Not implemented](#)
+
+Inspect the middle element of a sorted range, discard the half that cannot contain the target, and repeat until a match or an empty range.
+
+##### Identify Binary Search Prerequisites
+
+[Not implemented](#)
+
+Verify that elements are sorted under a consistent criterion and support less-than/greater-than comparisons; without these properties, eliminating half the candidates may be incorrect.
+
+##### Predict Search Scaling
+
+[Not implemented](#)
+
+Compare 100 and 1,000 possible positions: the binary search bound grows from 7 to 10 checks although the dataset is ten times larger; explain this through repeated approximate halving.
+
+##### Apply Binary Tree Search
+
+[Not implemented](#)
+
+Compare the key with the current tree node and move into the appropriate subtree until the value is found or the path ends.
+
+##### Compare Search Methods by Check Count
+
+[Not implemented](#)
+
+Compare the number of opened positions in linear and binary search over the same dataset, distinguishing one lucky result from the algorithm's general guarantees.
+
+#### Sorting
 
 Skills: 4
 
 [Not implemented](#)
 
-Способи встановити порядок елементів за заданим критерієм: послідовний вибір, вставлення у впорядковану частину або обмін сусідніх елементів. Кожна процедура має окремий Skill для незалежного оцінювання.
+Put elements in order according to a criterion using successive selection, insertion into a sorted prefix, or swapping adjacent items. Each method has its own independently assessable Skill.
 
-##### Пояснювати критерій сортування
-
-[Not implemented](#)
-
-Задавати ключ і напрямок впорядкування, наприклад числа за зростанням чи назви за абеткою; алгоритми мають однаково порівнювати всі елементи.
-
-##### Застосовувати сортування вибором
+##### Explain a Sorting Criterion
 
 [Not implemented](#)
 
-На кожному кроці відшукувати найменший із ще не впорядкованих елементів і переносити його на наступну позицію відсортованої частини.
+Define a key and direction such as ascending numbers or alphabetic names; all comparisons in the algorithm must follow that rule.
 
-##### Застосовувати сортування вставками
-
-[Not implemented](#)
-
-Брати наступний елемент і знаходити йому місце в уже відсортованій частині набору, переміщуючи більші значення праворуч.
-
-##### Застосовувати бульбашкове сортування
+##### Apply Selection Sort
 
 [Not implemented](#)
 
-Порівнювати сусідні елементи й обмінювати невпорядковані пари, повторюючи проходи до отримання правильного порядку.
+On each pass, find the smallest remaining item and move it to the next position in the sorted prefix.
 
-#### Обробка наборів
+##### Apply Insertion Sort
+
+[Not implemented](#)
+
+Take the next item, find its correct place in an already sorted prefix, and shift larger values to the right.
+
+##### Apply Bubble Sort
+
+[Not implemented](#)
+
+Compare adjacent elements and swap out-of-order pairs, repeating passes until the entire collection is correctly sorted.
+
+#### Collection Processing
 
 Skills: 4
 
 [Not implemented](#)
 
-Покрокові процедури, що накопичують підсумкове значення під час обходу колекції, зокрема кількість, суму, мінімум і максимум. Вони пояснюються конкретними предметами або картками.
+Step-by-step procedures that aggregate values while traversing a collection, such as counting, totaling, minimum, and maximum. Objects or cards can illustrate the operations.
 
-##### Застосовувати підрахунок елементів
-
-[Not implemented](#)
-
-Перебирати набір, збільшуючи лічильник для кожного елемента, який задовольняє задану умову.
-
-##### Застосовувати накопичення суми
+##### Apply Element Counting
 
 [Not implemented](#)
 
-Обходити числовий набір, послідовно додаючи значення до акумулятора, починаючи з нульової суми.
+Traverse a collection, incrementing a counter for every item that meets the given condition.
 
-##### Застосовувати знаходження максимуму
-
-[Not implemented](#)
-
-Зберігати найбільше з уже переглянутих значень та оновлювати результат, якщо чергове число більше.
-
-##### Застосовувати знаходження мінімуму
+##### Apply Sum Accumulation
 
 [Not implemented](#)
 
-Зберігати найменше з уже переглянутих значень та оновлювати результат, якщо чергове число менше.
+Traverse a numeric collection, adding each value to an accumulator initialized to zero.
 
-#### Аналіз
+##### Apply Maximum Finding
+
+[Not implemented](#)
+
+Maintain the largest value seen so far and update it when a larger number appears.
+
+##### Apply Minimum Finding
+
+[Not implemented](#)
+
+Maintain the smallest value seen so far and update it when a smaller number appears.
+
+#### Analysis
 
 Skills: 3
 
 [Not implemented](#)
 
-Незалежне порівняння процедур за верхньою межею дій, типом зростання часу й ресурсами пам’яті. Це наскрізні методи оцінювання різних алгоритмів, а не новий алгоритм.
+Compare procedures using worst-case operation bounds, time growth classes, and memory costs. These are cross-cutting ways to assess algorithms, not additional algorithms themselves.
 
-##### Оцінювати найгірший випадок алгоритму
-
-[Not implemented](#)
-
-Визначати верхню межу перевірок для конкретної стратегії за заданими правилами, не плутаючи її з кроками одного щасливого запуску.
-
-##### Розрізняти лінійне та логарифмічне зростання
+##### Estimate an Algorithm's Worst Case
 
 [Not implemented](#)
 
-Описувати відмінність між кількістю операцій, що приблизно пропорційна розміру входу, та кількістю послідовних поділів удвічі; формальна нотація O(n), O(log n) є можливим поглибленням.
+Determine an upper bound on checks for a given strategy and rules, without confusing it with the steps taken in one lucky execution.
 
-##### Пояснювати компроміс часу і пам’яті
+##### Distinguish Linear and Logarithmic Growth
 
 [Not implemented](#)
 
-Порівнювати алгоритми, один із яких може виконати менше операцій ціною додаткових проміжних даних; швидкість не є єдиним критерієм коректного вибору.
+Explain the difference between operations that grow approximately in proportion to input size and those tied to repeated halving; formal `O(n)` and `O(log n)` notation can deepen the analysis.
 
+##### Explain Time–Memory Trade-offs
+
+[Not implemented](#)
+
+Compare algorithms where fewer operations may require extra intermediate data; speed is not the only criterion for a sound choice.
 ### Git і відкритий код
 
 Groups: 3 · Skills: 11
