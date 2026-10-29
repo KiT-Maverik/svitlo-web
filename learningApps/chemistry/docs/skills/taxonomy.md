@@ -10,17 +10,17 @@ This is the audience-independent catalog of independently assessable chemistry c
 
 ## SUMMARY
 
-Domains: 12
-Groups: 42
-Skills: 196
+Domains: 13
+Groups: 43
+Skills: 215
 
-Code files: 0/12 Domains · 0/42 Groups · 0/196 Skills
+Code files: 0/13 Domains · 0/43 Groups · 0/215 Skills
 
 ## DOMAINS
 
 ### Chemical Inquiry
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
@@ -130,23 +130,35 @@ Evaluate whether observations justify a claim about composition or reaction, inc
 
 #### Analytical Chemistry
 
-Skills: 4
+Skills: 6
 
 [Not implemented](#)
 
-Identifying and measuring the constituents of samples requires chemical selectivity, standards and defensible interpretation of instrument responses. This area complements general observation and bulk property comparison.
+Analytical chemistry identifies particular components in samples and determines their amounts. Sample treatment, chemical selectivity and calibration govern whether signals justify a conclusion; general observation and bulk property comparison are distinct competencies.
 
-##### Qualitative Chemical Analysis
-
-[Not implemented](#)
-
-Use characteristic chemical responses or reference signatures to establish whether a specified substance or ion is present.
-
-##### Quantitative Chemical Analysis
+##### Qualitative Analyte Identification
 
 [Not implemented](#)
 
-Infer an analyte's amount from an appropriate measurement, calibration and the sample's known composition or treatment.
+Use selective reactions or instrumental signatures to identify a target chemical species in a sample, recognizing that shared responses may prevent a unique identification.
+
+##### Quantitative Analyte Determination
+
+[Not implemented](#)
+
+Infer the amount or concentration of a specified analyte from a justified measured signal and calculation, accounting for relevant dilution or recovery factors.
+
+##### Sample Preparation for Analysis
+
+[Not implemented](#)
+
+Choose sample treatment, such as dissolution, extraction or dilution, to make a specified analyte measurable while considering contamination and analyte loss.
+
+##### Analytical Interferences
+
+[Not implemented](#)
+
+Identify when other sample components alter a chemical signal or selective response and determine whether a method can distinguish the target analyte.
 
 ##### Spectroscopic Evidence
 
@@ -260,7 +272,7 @@ Account for matter in physical and chemical processes, including gases that cros
 
 ### Particles and States
 
-Groups: 2 · Skills: 10
+Groups: 2 · Skills: 18
 
 [Not implemented](#)
 
@@ -268,7 +280,7 @@ Particle arrangements and motion explain properties of solids, liquids and gases
 
 #### Particle Behavior
 
-Skills: 6
+Skills: 9
 
 [Not implemented](#)
 
@@ -330,7 +342,7 @@ Use the ideal-gas equation as an approximation and identify conditions in which 
 
 #### Phases and Transitions
 
-Skills: 4
+Skills: 9
 
 [Not implemented](#)
 
@@ -392,7 +404,7 @@ Explain direct formation of a solid from a vapor without passage through a bulk 
 
 ### Atoms and Periodicity
 
-Groups: 5 · Skills: 20
+Groups: 5 · Skills: 21
 
 [Not implemented](#)
 
@@ -432,7 +444,7 @@ Interpret atomic mass and relative atomic mass, including why a tabulated averag
 
 #### Electronic Structure
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -842,7 +854,7 @@ Explain how accelerated sedimentation separates components with different effect
 
 ### Chemical Language and Quantities
 
-Groups: 3 · Skills: 17
+Groups: 3 · Skills: 18
 
 [Not implemented](#)
 
@@ -850,7 +862,7 @@ Chemists represent composition and transformation with conventional symbols and 
 
 #### Chemical Notation
 
-Skills: 7
+Skills: 8
 
 [Not implemented](#)
 
@@ -982,7 +994,7 @@ Distinguish theoretical yield, observed yield and percentage yield without attri
 
 ### Chemical Reactions
 
-Groups: 4 · Skills: 20
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -990,7 +1002,7 @@ This domain identifies and explains transformations in which constituent atoms a
 
 #### Recognizing Reactions
 
-Skills: 5
+Skills: 2
 
 [Not implemented](#)
 
@@ -1010,7 +1022,7 @@ Identify starting and resulting chemical species while distinguishing them from 
 
 #### Reaction Patterns
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -1054,7 +1066,7 @@ Recognize reactions in which water participates in bond cleavage or chemical con
 
 #### Oxidation and Reduction
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1158,7 +1170,7 @@ Use a measured equivalence relationship to infer an unknown amount or concentrat
 
 ### Energy, Rates and Equilibrium
 
-Groups: 3 · Skills: 14
+Groups: 3 · Skills: 19
 
 [Not implemented](#)
 
@@ -1166,7 +1178,7 @@ Chemical systems exchange energy, evolve at finite rates and may approach dynami
 
 #### Chemical Energetics
 
-Skills: 6
+Skills: 8
 
 [Not implemented](#)
 
@@ -1190,6 +1202,18 @@ Interpret positive system enthalpy change and recognize that absorbing heat need
 
 Relate heat at constant pressure to the difference in enthalpy between states.
 
+##### Calorimetry
+
+[Not implemented](#)
+
+Infer heat transfer from measured temperature change, heat capacity and appropriate system boundaries, recognizing energy losses and measurement uncertainty.
+
+##### Hess's Law
+
+[Not implemented](#)
+
+Combine known reaction equations and associated enthalpy changes to determine an overall enthalpy change using the state-function character of enthalpy.
+
 ##### Bond Energy Estimates
 
 [Not implemented](#)
@@ -1210,7 +1234,7 @@ Relate enthalpy, temperature and entropy to the direction of spontaneous change 
 
 #### Reaction Rates
 
-Skills: 4
+Skills: 6
 
 [Not implemented](#)
 
@@ -1221,6 +1245,18 @@ Rates describe how fast concentrations or amounts change, which can vary indepen
 [Not implemented](#)
 
 Interpret change in reactant or product amount over time with consistent sign and units.
+
+##### Rate Laws
+
+[Not implemented](#)
+
+Relate reaction rate to reactant concentrations using an experimentally determined rate expression rather than assuming exponents from equation coefficients.
+
+##### Reaction Order
+
+[Not implemented](#)
+
+Identify individual and overall concentration exponents of an empirical rate law and use them to predict rate changes when concentrations vary.
 
 ##### Concentration Effects
 
@@ -1242,7 +1278,7 @@ Explain alternate reaction pathways and activation barriers without treating a c
 
 #### Chemical Equilibrium
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1563,7 +1599,7 @@ Relate chain length, branching and cross-linking to bulk material behavior.
 
 ### Chemistry in the World
 
-Groups: 4 · Skills: 18
+Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
@@ -1571,7 +1607,7 @@ Chemical concepts support understanding of manufactured materials, environmental
 
 #### Materials Chemistry
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
