@@ -37,6 +37,42 @@ const expected = [
     "name": "@svitlo/playground"
   },
   {
+    "path": "learningApps/language-literature",
+    "name": "@svitlo/language-literature"
+  },
+  {
+    "path": "learningApps/chemistry",
+    "name": "@svitlo/chemistry"
+  },
+  {
+    "path": "learningApps/astronomy",
+    "name": "@svitlo/astronomy"
+  },
+  {
+    "path": "learningApps/history",
+    "name": "@svitlo/history"
+  },
+  {
+    "path": "learningApps/human-thinking",
+    "name": "@svitlo/human-thinking"
+  },
+  {
+    "path": "learningApps/economics",
+    "name": "@svitlo/economics"
+  },
+  {
+    "path": "learningApps/art",
+    "name": "@svitlo/art"
+  },
+  {
+    "path": "learningApps/health-safety",
+    "name": "@svitlo/health-safety"
+  },
+  {
+    "path": "learningApps/engineering",
+    "name": "@svitlo/engineering"
+  },
+  {
     "path": "shared/contracts",
     "name": "@svitlo/contracts"
   },

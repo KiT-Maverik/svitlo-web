@@ -8,6 +8,19 @@ Svitlo is a modular interactive-learning project. Each textbook is a **standalon
 | --- | --- | --- |
 | `@svitlo/platform` | `frontend/platform` | Next.js web platform and external textbook catalog |
 | `@svitlo/math` | `learningApps/math` | Mathematics textbook; owns taxonomy and curriculum |
+| `@svitlo/biology` | `learningApps/biology` | Biology textbook scaffold |
+| `@svitlo/geography` | `learningApps/geography` | Geography textbook scaffold |
+| `@svitlo/informatics` | `learningApps/informatics` | Informatics textbook scaffold |
+| `@svitlo/physics` | `learningApps/physics` | Physics textbook scaffold |
+| `@svitlo/language-literature` | `learningApps/language-literature` | Language and Literature textbook scaffold |
+| `@svitlo/chemistry` | `learningApps/chemistry` | Chemistry textbook scaffold |
+| `@svitlo/astronomy` | `learningApps/astronomy` | Astronomy textbook scaffold |
+| `@svitlo/history` | `learningApps/history` | History textbook scaffold |
+| `@svitlo/human-thinking` | `learningApps/human-thinking` | Human and Thinking textbook scaffold |
+| `@svitlo/economics` | `learningApps/economics` | Economics textbook scaffold |
+| `@svitlo/art` | `learningApps/art` | Art textbook scaffold |
+| `@svitlo/health-safety` | `learningApps/health-safety` | Health and Safety textbook scaffold |
+| `@svitlo/engineering` | `learningApps/engineering` | Engineering textbook scaffold |
 | `@svitlo/playground` | `learningApps/playground` | Subject-neutral widget/lesson demonstration application |
 | `@svitlo/contracts` | `shared/contracts` | Shared types, stable IDs, localization descriptors and persisted-state contracts |
 | `@svitlo/engine` | `shared/engine` | Framework-independent builders, validation, generation and Assessment Methods |
@@ -29,7 +42,7 @@ npm run build
 npm run packages:artifacts:check
 ```
 
-Run an app: `npm run dev:math`, `npm run dev:platform` or `npm run dev` (Playground). Each Next.js app is independent; simultaneous development servers require different ports.
+Run a textbook: `npm run dev:<subject-slug>` (all 14 subjects). Run Platform: `npm run dev:platform`; Playground: `npm run dev`. Each Next.js app is independent; simultaneous development servers require different ports.
 
 Browser testing after `npx playwright install chromium` and a build:
 - `npm run test:e2e:db` — native IndexedDB controller Chromium suite

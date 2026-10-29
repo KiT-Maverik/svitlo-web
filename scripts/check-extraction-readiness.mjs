@@ -16,6 +16,15 @@ const workspaces = [
   ['learningApps/biology', readJson('learningApps/biology/package.json')],
   ['learningApps/geography', readJson('learningApps/geography/package.json')],
   ['learningApps/informatics', readJson('learningApps/informatics/package.json')],
+  ['learningApps/language-literature', readJson('learningApps/language-literature/package.json')],
+  ['learningApps/chemistry', readJson('learningApps/chemistry/package.json')],
+  ['learningApps/astronomy', readJson('learningApps/astronomy/package.json')],
+  ['learningApps/history', readJson('learningApps/history/package.json')],
+  ['learningApps/human-thinking', readJson('learningApps/human-thinking/package.json')],
+  ['learningApps/economics', readJson('learningApps/economics/package.json')],
+  ['learningApps/art', readJson('learningApps/art/package.json')],
+  ['learningApps/health-safety', readJson('learningApps/health-safety/package.json')],
+  ['learningApps/engineering', readJson('learningApps/engineering/package.json')],
   ['frontend/platform', readJson('frontend/platform/package.json')],
 ];
 const byName = new Map(workspaces.map(([path, pkg]) => [pkg.name, { path, pkg }]));
@@ -128,7 +137,7 @@ assert(!/\b(?:apps|learningApps)\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/(?:apps|lear
   'UI Kit Storybook must not read application or monorepo source paths');
 assert(readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
   'UI Kit must own the Storybook build command');
-for (const application of ['learningApps/playground', 'learningApps/math', 'learningApps/physics', 'learningApps/geography', 'learningApps/informatics', 'learningApps/biology']) {
+for (const application of ['learningApps/playground', 'learningApps/math', 'learningApps/physics', 'learningApps/geography', 'learningApps/informatics', 'learningApps/biology', 'learningApps/language-literature', 'learningApps/chemistry', 'learningApps/astronomy', 'learningApps/history', 'learningApps/human-thinking', 'learningApps/economics', 'learningApps/art', 'learningApps/health-safety', 'learningApps/engineering']) {
   assert(!existsSync(resolve(root, application, '.storybook')),
     'Application Storybook must not depend on shared source trees: ' + application);
   const appManifest = readJson(application + '/package.json');
