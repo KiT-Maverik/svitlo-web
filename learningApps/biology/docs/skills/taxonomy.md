@@ -342,213 +342,213 @@ Explain causal links between root, leaf, and shoot structure and environmental r
 
 Establish the relationship between changes in day length or temperature and leaf fall, dormancy, or resumption of growth.
 
-### Зоологія
+### Zoology
 
 Groups: 4 · Skills: 28
 
 [Not implemented](#)
 
-Порівняння основних груп тварин, взаємозв'язку будови та функцій, способів живлення, розвитку й поведінки. Ланцюги живлення та міжвидові мережі як цілісні системи віднесені до екології.
+Comparison of major animal groups, relationships between structure and function, feeding patterns, development, and behavior. Food chains and interspecies networks as whole systems belong to Ecology.
 
-#### Різноманітність тварин
+#### Animal Diversity
 
 Skills: 17
 
 [Not implemented](#)
 
-Для визначення великих груп потрібні діагностичні ознаки, зокрема будова скелета, покривів, кінцівок і спосіб розвитку, а не випадкова зовнішня схожість.
+Identifying major animal groups requires diagnostic characteristics, including skeletal structure, body coverings, limbs, and developmental patterns, rather than incidental external resemblance.
 
-##### Розпізнавати поширених місцевих тварин
-
-[Not implemented](#)
-
-Впізнавати відомі місцеві види за характерною комбінацією будови, покривів і способу руху.
-
-##### Відрізняти хребетних від безхребетних
+##### Recognize Common Local Animals
 
 [Not implemented](#)
 
-Використовувати наявність хребтового стовпа як анатомічну межу між двома великими групами.
+Identify familiar local species from a characteristic combination of body structure, coverings, and modes of movement.
 
-##### Розпізнавати ознаки комах
-
-[Not implemented](#)
-
-Знаходити шість ніг, три основні відділи тіла й інші характерні ознаки дорослих комах.
-
-##### Розпізнавати ознаки павукоподібних
+##### Distinguish Vertebrates and Invertebrates
 
 [Not implemented](#)
 
-Розпізнавати членистоногих із характерною будовою хеліцер і переважно чотирма парами ходильних ніг у дорослих особин; відрізняти павуків, кліщів і скорпіонів від комах.
+Use the presence of a vertebral column as the anatomical dividing line between these two broad groups.
 
-##### Розпізнавати ознаки ракоподібних
-
-[Not implemented](#)
-
-Розпізнавати різноманітних ракоподібних за членистими кінцівками, вусиками та характерними рисами будови; не вважати десять ніг універсальною ознакою всіх ракоподібних.
-
-##### Розпізнавати ознаки молюсків
+##### Recognize Insect Characteristics
 
 [Not implemented](#)
 
-Визначати м'яке тіло, мантію та інші характерні риси черевоногих, двостулкових і головоногих, враховуючи, що зовнішня черепашка є не в усіх молюсків.
+Identify six legs, three main body regions, and other characteristic features of adult insects.
 
-##### Розпізнавати ознаки кільчастих червів
-
-[Not implemented](#)
-
-Розпізнавати членисту будову тіла кільчастих червів і відрізняти їх від нематод та плоских червів, навіть коли всі ці тварини мають подібну видовжену форму.
-
-##### Розпізнавати ознаки плоских червів
+##### Recognize Arachnid Characteristics
 
 [Not implemented](#)
 
-Визначати сплющене тіло та інші риси плоских червів, включно з вільноживучими й паразитичними формами, не ототожнюючи їх із кільчастими червами.
+Recognize arthropods with characteristic chelicerae and usually four pairs of walking legs in adults; distinguish spiders, ticks and mites, and scorpions from insects.
 
-##### Розпізнавати ознаки нематод
-
-[Not implemented](#)
-
-Розпізнавати несегментоване видовжене тіло круглих червів і особливості їхнього способу життя, зокрема вільноживучі та паразитичні форми.
-
-##### Розпізнавати ознаки кишковопорожнинних
+##### Recognize Crustacean Characteristics
 
 [Not implemented](#)
 
-Розпізнавати кнідарій за жалкими клітинами та характерними планами будови поліпів і медуз; не вважати медузоподібну форму обов'язковою для всіх представників.
+Recognize diverse crustaceans by jointed appendages, antennae, and characteristic structural traits; do not treat ten legs as a universal characteristic of crustaceans.
 
-##### Розпізнавати ознаки голкошкірих
-
-[Not implemented](#)
-
-Визначати морських безхребетних із водносудинною системою та характерною симетрією дорослих форм, відрізняючи морських зірок, їжаків та інших представників.
-
-##### Розпізнавати ознаки губок
+##### Recognize Mollusc Characteristics
 
 [Not implemented](#)
 
-Розпізнавати пористу будову тіла та фільтраційний спосіб живлення губок, пояснюючи відсутність у них справжніх тканин і органів.
+Identify the soft body, mantle, and other characteristic features of gastropods, bivalves, and cephalopods, taking into account that not all molluscs have an external shell.
 
-##### Розпізнавати ознаки риб
-
-[Not implemented](#)
-
-Впізнавати типові риси водних хребетних із зябровим диханням та плавцями, враховуючи різноманіття риб.
-
-##### Розпізнавати ознаки земноводних
+##### Recognize Annelid Characteristics
 
 [Not implemented](#)
 
-Визначати характерні ознаки групи, у якій розвиток часто пов'язаний із водою, а дорослі можуть користуватися легенями та шкірою.
+Recognize the segmented body of annelids and distinguish them from nematodes and flatworms, even where all these animals have similarly elongated bodies.
 
-##### Розпізнавати ознаки плазунів
-
-[Not implemented](#)
-
-Визначати представників за властивостями шкіри з лусками та особливостями розмноження наземних амніот.
-
-##### Розпізнавати ознаки птахів
+##### Recognize Flatworm Characteristics
 
 [Not implemented](#)
 
-Використовувати пір'я як головну діагностичну ознаку птахів, незалежно від здатності до польоту.
+Identify the flattened body and other features of flatworms, including free-living and parasitic forms, without confusing them with annelids.
 
-##### Розпізнавати ознаки ссавців
+##### Recognize Nematode Characteristics
 
 [Not implemented](#)
 
-Визначати представників за наявністю молочних залоз і характерними рисами покривів, не припускаючи, що всі ссавці живородні.
+Recognize the unsegmented elongated bodies of roundworms and features of their lifestyles, including free-living and parasitic forms.
 
-#### Будова та функції
+##### Recognize Cnidarian Characteristics
+
+[Not implemented](#)
+
+Recognize cnidarians by stinging cells and the characteristic body plans of polyps and medusae; do not regard the medusa form as obligatory for every member.
+
+##### Recognize Echinoderm Characteristics
+
+[Not implemented](#)
+
+Identify marine invertebrates with a water vascular system and characteristic adult symmetry, distinguishing sea stars, sea urchins, and other representatives.
+
+##### Recognize Sponge Characteristics
+
+[Not implemented](#)
+
+Recognize the porous body structure and filter-feeding of sponges, explaining that they lack true tissues and organs.
+
+##### Recognize Fish Characteristics
+
+[Not implemented](#)
+
+Identify typical traits of aquatic vertebrates with gill respiration and fins while accounting for the diversity of fish.
+
+##### Recognize Amphibian Characteristics
+
+[Not implemented](#)
+
+Identify characteristic features of a group in which development is often associated with water and adults may use lungs and skin for respiration.
+
+##### Recognize Reptile Characteristics
+
+[Not implemented](#)
+
+Identify members by characteristics of scaled skin and reproductive features of terrestrial amniotes.
+
+##### Recognize Bird Characteristics
+
+[Not implemented](#)
+
+Use feathers as the primary diagnostic characteristic of birds, regardless of their ability to fly.
+
+##### Recognize Mammal Characteristics
+
+[Not implemented](#)
+
+Identify members by mammary glands and characteristic body coverings without assuming that every mammal gives birth to live young.
+
+#### Structure and Functions
 
 Skills: 4
 
 [Not implemented](#)
 
-Форма кінцівок, покривів і чутливих структур пояснюється їхньою роботою під час руху, орієнтації та захисту від небезпеки.
+The forms of limbs, body coverings, and sensory structures are explained by their roles in locomotion, orientation, and protection against danger.
 
-##### Співвідносити будову кінцівок зі способом руху
-
-[Not implemented](#)
-
-Зіставляти форму лап, плавців або крил із вимогами ходіння, плавання, риття чи польоту.
-
-##### Пов’язувати покриви тіла з їхніми функціями
+##### Relate Limb Structure to Locomotion
 
 [Not implemented](#)
 
-Пояснювати, як пір'я, шерсть, луска й шкіра забезпечують захист, теплоізоляцію або водний баланс.
+Relate the shape of legs, fins, or wings to the requirements of walking, swimming, digging, or flying.
 
-##### Пояснювати роль органів чуття в поведінці
-
-[Not implemented](#)
-
-Пов'язувати сприйняття звуку, запаху, світла або вібрацій із орієнтацією та пошуком їжі.
-
-##### Визначати захисні пристосування тварин
+##### Relate Body Coverings to Their Functions
 
 [Not implemented](#)
 
-Визначати функцію маскування, панцира, колючок або інших захисних структур у конкретних ситуаціях.
+Explain how feathers, fur, scales, and skin provide protection, thermal insulation, or water balance.
 
-#### Живлення та розвиток
+##### Explain the Role of Sensory Organs in Behavior
+
+[Not implemented](#)
+
+Connect perception of sounds, smells, light, or vibrations with orientation and finding food.
+
+##### Identify Protective Adaptations in Animals
+
+[Not implemented](#)
+
+Identify the function of camouflage, shells or armor, spines, and other defensive structures in particular situations.
+
+#### Nutrition and Development
 
 Skills: 4
 
 [Not implemented](#)
 
-Джерела їжі відрізняються між групами тварин, а їхні життєві цикли можуть містити перетворення тіла або розвиток без різкої зміни форми.
+Food sources differ among animal groups, while their life cycles may involve body transformations or development without a drastic change in form.
 
-##### Класифікувати тварин за типом живлення
-
-[Not implemented](#)
-
-Відносити приклади до рослиноїдних, хижих та всеїдних за реальним раціоном, а не за назвою тварини.
-
-##### Розрізняти дитинча й дорослу особину
+##### Classify Animals by Diet
 
 [Not implemented](#)
 
-Визначати етап індивідуального розвитку за пропорціями тіла, покривами або репродуктивною зрілістю.
+Classify examples as herbivores, carnivores, or omnivores according to actual diets rather than animal names.
 
-##### Пояснювати повне перетворення комах
-
-[Not implemented](#)
-
-Пояснювати чотири стадії розвитку комах із повним перетворенням: яйце, личинка, лялечка, імаго; на прикладах метеликів, жуків чи мух розрізняти суттєво відмінні функції та будову личинки й дорослої особини.
-
-##### Порівнювати розвиток із метаморфозом та без нього
+##### Distinguish Juveniles and Adults
 
 [Not implemented](#)
 
-Порівнювати життєві цикли з радикальною зміною будови й цикли, де молоді особини схожі на дорослих.
+Determine an individual’s developmental stage by body proportions, coverings, or reproductive maturity.
 
-#### Поведінка
+##### Explain Complete Metamorphosis in Insects
+
+[Not implemented](#)
+
+Explain the four developmental stages of insects with complete metamorphosis: egg, larva, pupa, and imago; using butterflies, beetles, or flies as examples, distinguish the markedly different functions and structures of larvae and adults.
+
+##### Compare Development With and Without Metamorphosis
+
+[Not implemented](#)
+
+Compare life cycles involving radical structural change with cycles in which young individuals resemble adults.
+
+#### Behavior
 
 Skills: 3
 
 [Not implemented](#)
 
-Дії тварин виникають у відповідь на сигнали й потреби; спостереження дозволяє виявити захист, комунікацію та переваги спільного життя.
+Animal actions arise in response to signals and needs; observation makes it possible to identify defense, communication, and benefits of living in groups.
 
-##### Розпізнавати захисну поведінку
-
-[Not implemented](#)
-
-Встановлювати, чи втеча, завмирання, відволікання або напад знижують загрозу в певній ситуації.
-
-##### Пояснювати роль сигналів у спілкуванні тварин
+##### Recognize Defensive Behavior
 
 [Not implemented](#)
 
-Пов'язувати звук, запах, рух або забарвлення з отриманою іншою особиною інформацією.
+Determine whether fleeing, freezing, distraction, or attacking reduces a threat in a given situation.
 
-##### Пояснювати користь групової поведінки
+##### Explain the Role of Signals in Animal Communication
 
 [Not implemented](#)
 
-Пояснювати, як спільний пошук їжі, оборона чи догляд за потомством можуть підвищувати успіх особин.
+Relate sound, smell, movement, or coloration to information received by another individual.
+
+##### Explain Benefits of Group Behavior
+
+[Not implemented](#)
+
+Explain how cooperative foraging, defense, or care for offspring may improve the success of individuals.
 
 ### Мікологія
 
