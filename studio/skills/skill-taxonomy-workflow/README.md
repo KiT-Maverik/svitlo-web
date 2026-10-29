@@ -8,7 +8,7 @@
 2. **[Skills Taxonomy Exception Review](./review-skills-taxonomy-exceptions.skill.md)** — independent Methodologist Persona audit of full draft scope and semantic issues. **This is read-only and does not confer editorial approval**. Record any editor decisions through the approved authoring/history gate.
 3. **[Implement Skill Code](./implement-skill-code.skill.md)** — Coding Agent implements accurate local `SkillDomain`, `SkillGroup`, `Skill` objects and IDs with all supported locale names **and substantive descriptions**. Existing legacy objects without descriptions remain unpromoted until migration. Do not silently synthesize translations from names.
 4. **[Migrate Implemented Taxonomy](./migrate-implemented-taxonomy.skill.md)** — independently compare every staging entry against its verified code object and every supported translation, meaning, description and parent/child membership. Only remove a fully verified item once the editor approves its promotion. Never lose unimplemented descendants.
-5. **[Generate Skills Taxonomy](../../../../scripts/generate-skills-taxonomy.mjs)** — optional, repeatable, **read-only-from-Code** generation of a localized Markdown view in `<PackageRoot>/docs/generated/skills/taxonomy.<locale>.md`. Default `en`. Generated material is not authoring input.
+5. **[Generate Skills Taxonomy](../../../scripts/generate-skills-taxonomy.mjs)** — optional, repeatable, **read-only-from-Code** generation of a localized Markdown view in `<PackageRoot>/docs/generated/skills/taxonomy.<locale>.md`. Default `en`. Generated material is not authoring input.
 
 ## SOURCE OF TRUTH BY STAGE
 

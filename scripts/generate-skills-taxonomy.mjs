@@ -111,7 +111,7 @@ function readEntity(file, kind) {
 }
 function subdirs(dir) {
   if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir, { withFileTypes: true }).filter(x => x.isDirectory()).map(x => x.name).sort();
+  return fs.readdirSync(dir, { withFileTypes: true }).filter(x => x.isDirectory() && x.name !== '__tests__' && x.name !== 'skills').map(x => x.name).sort();
 }
 function fileNames(dir) {
   if (!fs.existsSync(dir)) return [];
