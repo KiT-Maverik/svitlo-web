@@ -25,6 +25,10 @@ const expected = [
     "name": "@svitlo/math"
   },
   {
+    "path": "learningApps/physics",
+    "name": "@svitlo/physics"
+  },
+  {
     "path": "learningApps/playground",
     "name": "@svitlo/playground"
   },
