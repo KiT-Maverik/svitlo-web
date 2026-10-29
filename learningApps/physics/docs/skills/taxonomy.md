@@ -658,323 +658,323 @@ Sound arises when an oscillating source disturbs an elastic medium; oscillation 
 
 Code: [Not implemented](#)
 
-Визначати коливну частину системи, яка створює звукове збурення, на відміну від деталей, які лише передають вібрацію далі.
+Identify the oscillating part of a system that generates a sound disturbance, as distinct from components that merely transmit vibration onward.
 
-##### Розпізнавати періодичність коливань
+##### Recognize the periodicity of oscillations
 
 Code: [Not implemented](#)
 
-Періодичне коливання характеризується повторенням фізичного стану через рівні проміжки часу; не кожен рух, що змінює напрямок, є періодичним.
+A periodic oscillation repeats a physical state at equal time intervals; not every motion that changes direction is periodic.
 
-#### Властивості хвиль
+#### Wave Properties
 
 Skills: 6
 
 Code: [Not implemented](#)
 
-Хвилі мають напрям поширення, характерний ритм і розмір збурення; порівняння на воді відділяє рух хвилі від перенесення всієї води.
+Waves have a direction of propagation, a characteristic rhythm, and a disturbance magnitude; observing water waves distinguishes wave propagation from transport of all the water.
 
-##### Розрізняти коливання джерела та поширення хвилі
-
-Code: [Not implemented](#)
-
-Коливання джерела створює збурення, що поширюється середовищем, тоді як частинки середовища не обов'язково переміщуються разом із хвильовим фронтом.
-
-##### Порівнювати частоту хвиль за спостережуваним ритмом
+##### Distinguish source oscillation from wave propagation
 
 Code: [Not implemented](#)
 
-У двох анімаціях визначати, де за однаковий час виникає більше повторюваних гребенів.
+An oscillating source creates a disturbance that propagates through a medium, while the medium's particles do not necessarily move along with the wavefront.
 
-##### Пояснювати амплітуду хвилі
-
-Code: [Not implemented](#)
-
-Амплітуда визначає найбільше відхилення фізичної величини від рівноважного стану, а не частоту хвилі.
-
-##### Пояснювати довжину хвилі
+##### Compare wave frequencies by observable rhythm
 
 Code: [Not implemented](#)
 
-Довжина хвилі — відстань між сусідніми точками однакової фази збурення, наприклад між гребенями.
+In two animations, identify which produces more recurring crests in the same amount of time.
 
-##### Пояснювати швидкість поширення хвилі
-
-Code: [Not implemented](#)
-
-Швидкість описує поширення збурення та відрізняється від руху частинок середовища.
-
-##### Розрізняти перенесення енергії хвилею та перенесення речовини
+##### Explain wave amplitude
 
 Code: [Not implemented](#)
 
-Хвиля переносить енергію без обов'язкового перенесення всього середовища на відповідну відстань.
+Amplitude is the greatest deviation of a physical quantity from its equilibrium value, not the wave's frequency.
 
-#### Акустика
+##### Explain wavelength
+
+Code: [Not implemented](#)
+
+Wavelength is the distance between adjacent points at the same phase of the disturbance, such as two successive crests.
+
+##### Explain wave speed
+
+Code: [Not implemented](#)
+
+Wave speed describes the propagation of a disturbance and differs from the motion of particles within the medium.
+
+##### Distinguish wave energy transfer from matter transport
+
+Code: [Not implemented](#)
+
+A wave carries energy without necessarily transporting the entire medium over the corresponding distance.
+
+#### Acoustics
 
 Skills: 8
 
 Code: [Not implemented](#)
 
-Гучність, висота й поширення звуку в середовищі пов'язані з властивостями коливань; слуховий досвід можна перевіряти безпечними симуляціями.
+Loudness, pitch, and the propagation of sound through a medium are related to oscillation properties; auditory experiences can be explored with safe simulations.
 
-##### Порівнювати гучність звуків
-
-Code: [Not implemented](#)
-
-Гучність — сприйняття інтенсивності звуку, залежне також від частоти й чутливості слуху; її порівнюють незалежно від висоти тону.
-
-##### Розрізняти високі й низькі звуки
+##### Compare the loudness of sounds
 
 Code: [Not implemented](#)
 
-Висота тону пов'язана переважно з частотою звукових коливань, а не з амплітудою, яка впливає на інтенсивність.
+Loudness is the perception of sound intensity and also depends on frequency and hearing sensitivity; compare it independently of pitch.
 
-##### Розпізнавати передавання звуку через середовище
-
-Code: [Not implemented](#)
-
-Звук потребує пружного матеріального середовища, де коливання тиску або деформації передаються між сусідніми частинами речовини; у вакуумі механічний звук не поширюється.
-
-##### Пояснювати послаблення звуку з відстанню
+##### Distinguish high-pitched from low-pitched sounds
 
 Code: [Not implemented](#)
 
-За поширення хвилі від локального джерела її енергія зазвичай розподіляється між більшою площею, тому інтенсивність слабшає; поглинання також впливає на рівень звуку.
+Pitch is primarily related to the frequency of sound oscillations, not amplitude, which affects intensity.
 
-##### Пояснювати появу відлуння як відбиття звуку
-
-Code: [Not implemented](#)
-
-На прикладі луни в порожньому приміщенні розпізнавати повернення звукової хвилі після взаємодії з поверхнею.
-
-##### Пояснювати зміну сприйнятої висоти звуку під час відносного руху джерела і слухача
+##### Recognize sound transmission through a medium
 
 Code: [Not implemented](#)
 
-За однакового звуку джерела пояснювати ефект Доплера: під час наближення частота, яку чує спостерігач, вища, а при віддаленні — нижча. Не плутати зміну частоти зі зміною гучності або обертів двигуна.
+Sound requires an elastic material medium, in which pressure or deformation oscillations pass between adjacent parts of matter; mechanical sound does not propagate in a vacuum.
 
-##### Пояснювати залежність висоти звуку від частоти коливань
-
-Code: [Not implemented](#)
-
-За незмінних інших умов більша частота звуку відповідає вищому тону; це не те саме, що зростання гучності.
-
-##### Пояснювати залежність гучності звуку від амплітуди коливань
+##### Explain sound attenuation with distance
 
 Code: [Not implemented](#)
 
-За незмінних інших умов більша амплітуда звукового тиску означає більшу інтенсивність, хоча сприйняття гучності залежить і від частоти.
+As a wave spreads from a localized source, its energy is generally distributed over an increasing area, reducing intensity; absorption also affects sound levels.
 
-#### Хвильові явища
+##### Explain an echo as sound reflection
+
+Code: [Not implemented](#)
+
+Using an echo in an empty room, recognize a returning sound wave after it interacts with a surface.
+
+##### Explain the change in perceived pitch during relative motion of source and listener
+
+Code: [Not implemented](#)
+
+For an unchanged sound emitted by a source, explain the Doppler effect: the frequency heard by the observer is higher as the source approaches and lower as it moves away. Do not confuse this frequency change with loudness or engine revolutions.
+
+##### Explain how sound pitch depends on oscillation frequency
+
+Code: [Not implemented](#)
+
+All else being equal, a higher sound frequency corresponds to a higher pitch; it is not the same as increased loudness.
+
+##### Explain how sound loudness depends on oscillation amplitude
+
+Code: [Not implemented](#)
+
+All else being equal, a greater sound-pressure amplitude means greater intensity, although perceived loudness also depends on frequency.
+
+#### Wave Phenomena
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Відбиття, заломлення, інтерференція, дифракція та резонанс можуть проявлятися в різних видах фізичних хвиль.
+Reflection, refraction, interference, diffraction, and resonance can occur in different kinds of physical waves.
 
-##### Пояснювати відбиття хвиль
-
-Code: [Not implemented](#)
-
-Частина збурення може повертатися від межі середовищ, змінюючи напрям поширення.
-
-##### Пояснювати заломлення хвиль
+##### Explain wave reflection
 
 Code: [Not implemented](#)
 
-Зміна швидкості поширення на межі середовищ може змінити напрям хвилі за сталої частоти джерела.
+Part of a disturbance may return from a boundary between media, changing its direction of propagation.
 
-##### Пояснювати інтерференцію хвиль
-
-Code: [Not implemented](#)
-
-Накладання хвиль може підсилювати чи послаблювати результуюче збурення залежно від їхніх фаз.
-
-##### Пояснювати дифракцію хвиль
+##### Explain wave refraction
 
 Code: [Not implemented](#)
 
-Хвилі можуть огинати перешкоди або розходитися за отворами залежно від співвідношення розмірів і довжини хвилі.
+A change in propagation speed at a boundary between media can change a wave's direction while the source frequency stays the same.
 
-##### Пояснювати резонанс
+##### Explain wave interference
 
 Code: [Not implemented](#)
 
-Періодична дія поблизу власної частоти системи може істотно збільшувати амплітуду її коливань.
+Superposed waves may reinforce or weaken the resulting disturbance depending on their phases.
 
-### Термодинаміка
+##### Explain wave diffraction
+
+Code: [Not implemented](#)
+
+Waves may bend around obstacles or spread after passing through openings depending on relative dimensions and wavelength.
+
+##### Explain resonance
+
+Code: [Not implemented](#)
+
+A periodic driving force near a system's natural frequency can substantially increase the amplitude of its oscillations.
+
+### Thermodynamics
 
 Groups: 4 · Skills: 15
 
 Code: [Not implemented](#)
 
-Теплові процеси описують зміну температури, передавання енергії та переходи речовини між станами. Макроскопічні спостереження відділені від частинкових пояснень сусіднього домену.
+Thermal processes describe changes in temperature, energy transfer, and transitions between states of matter. Macroscopic observations are distinguished from particle-level explanations in the neighboring Domain.
 
-#### Температура та нагрівання
+#### Temperature and Heating
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Температура характеризує тепловий стан, але не дорівнює суб'єктивному відчуттю гарячого чи холодного; нагрівання й охолодження — зміни стану.
+Temperature characterizes thermal state but is not the same as a subjective feeling of warmth or cold; heating and cooling are changes of state.
 
-##### Порівнювати температуру об'єктів
-
-Code: [Not implemented](#)
-
-Температура визначає тепловий стан тіла; коректне порівняння ґрунтується на вимірюваннях, а не на інтенсивності суб'єктивного відчуття тепла.
-
-##### Розрізняти температуру й відчуття тепла
+##### Compare objects' temperatures
 
 Code: [Not implemented](#)
 
-Пояснювати, чому відчуття дотику не завжди є точним вимірюванням температури.
+Temperature characterizes a body's thermal state; valid comparisons rely on measurements, not the intensity of subjective warmth.
 
-##### Розпізнавати нагрівання
-
-Code: [Not implemented](#)
-
-Підвищення температури пов'язане зі зміною теплового стану, але надходження енергії не завжди означає підвищення температури під час фазового переходу.
-
-##### Розпізнавати охолодження
+##### Distinguish temperature from the sensation of warmth
 
 Code: [Not implemented](#)
 
-Зменшення температури може супроводжуватися передаванням енергії довкіллю або змінами фізичного стану системи.
+Explain why the sensation of touch is not always an accurate measure of temperature.
 
-#### Механізми теплопередачі
+##### Recognize heating
+
+Code: [Not implemented](#)
+
+An increase in temperature reflects a change in thermal state, but energy input does not always increase temperature during a phase transition.
+
+##### Recognize cooling
+
+Code: [Not implemented](#)
+
+A decrease in temperature can accompany energy transfer to the surroundings or changes in a system's physical state.
+
+#### Heat-Transfer Mechanisms
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Теплова енергія передається через взаємодію частинок, рух рідини або газу чи електромагнітне випромінювання. В одному процесі може одночасно діяти декілька механізмів.
+Thermal energy is transferred through particle interactions, liquid or gas motion, or electromagnetic radiation. Several mechanisms may act simultaneously in a single process.
 
-##### Передбачати напрям теплопередачі
-
-Code: [Not implemented](#)
-
-За відсутності зовнішньої роботи теплота самочинно передається від теплішого тіла до холоднішого до досягнення теплової рівноваги.
-
-##### Пояснювати теплопровідність як перенесення енергії через речовину
+##### Predict the direction of heat transfer
 
 Code: [Not implemented](#)
 
-На прикладі металевої ложки, що нагрівається в гарячій воді, пояснювати передавання енергії без перенесення всієї речовини потоком.
+In the absence of external work, heat spontaneously flows from a warmer body to a colder one until thermal equilibrium is reached.
 
-##### Пояснювати конвекцію як перенесення енергії потоками рідини або газу
-
-Code: [Not implemented](#)
-
-Конвекція передає теплову енергію разом із макроскопічним рухом рідини або газу; її слід відрізняти від теплопровідності без об'ємного потоку речовини.
-
-##### Пояснювати теплопередачу випромінюванням
+##### Explain conduction as energy transfer through matter
 
 Code: [Not implemented](#)
 
-На прикладі тепла від Сонця чи вогню показувати перенесення енергії електромагнітними хвилями, яке не потребує контакту або руху повітря.
+Using a metal spoon heated in hot water, explain energy transfer without bulk movement of the entire substance.
 
-##### Визначати механізм теплопередачі за умовами фізичної ситуації
+##### Explain convection as energy transfer by fluid flow
 
 Code: [Not implemented](#)
 
-У прикладі з гарячою ложкою, нагрітою водою чи Сонцем обґрунтовано вибирати теплопровідність, конвекцію, випромінювання або їх поєднання. Це інтеграційна компетентність, а не три окремі тести в одному завданні.
+Convection carries thermal energy with macroscopic motion of a liquid or gas; distinguish it from conduction without bulk material flow.
 
-#### Теплоізоляція
+##### Explain radiative heat transfer
+
+Code: [Not implemented](#)
+
+Using heat from the Sun or fire, demonstrate energy transfer by electromagnetic waves without contact or moving air.
+
+##### Identify the heat-transfer mechanism from a physical situation
+
+Code: [Not implemented](#)
+
+For a hot spoon, heated water, or sunlight, select and justify conduction, convection, radiation, or a combination of them. This is an integrative competency, not three separate tests combined in one task.
+
+#### Thermal Insulation
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Теплоізоляційні матеріали зменшують швидкість передавання енергії, але самі по собі її не створюють; це відрізняється від опису трьох механізмів теплообміну.
+Insulating materials slow down energy transfer but do not create energy themselves; this differs from describing the three mechanisms of heat exchange.
 
-##### Порівнювати теплоізоляційні властивості матеріалів
-
-Code: [Not implemented](#)
-
-За результатами досліду визначати, який матеріал краще уповільнює теплообмін.
-
-##### Добирати матеріал для збереження температури
+##### Compare materials' thermal-insulation properties
 
 Code: [Not implemented](#)
 
-Вибирати ізолятор для простої побутової задачі, обґрунтовуючи вибір властивістю матеріалу.
+Determine from experimental results which material slows heat transfer more effectively.
 
-#### Фазові переходи
+##### Select a material for maintaining temperature
+
+Code: [Not implemented](#)
+
+Choose an insulator for a simple everyday task and justify the choice using the material's properties.
+
+#### Phase Transitions
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Танення, замерзання, випаровування та конденсація пов'язують теплові умови зі зміною стану тієї самої речовини.
+Melting, freezing, evaporation, and condensation link thermal conditions to changes of state of the same substance.
 
-##### Розрізняти танення та замерзання води
-
-Code: [Not implemented](#)
-
-Танення переводить речовину з твердого стану в рідкий, а замерзання — у зворотному напрямі; це фазові переходи тієї самої речовини.
-
-##### Пояснювати випаровування
+##### Distinguish melting from freezing of water
 
 Code: [Not implemented](#)
 
-Випаровування — перехід частинок з поверхні рідини в газову фазу, що можливий і без кипіння.
+Melting changes a substance from solid to liquid, while freezing is the reverse; both are phase transitions of the same substance.
 
-##### Пояснювати конденсацію
-
-Code: [Not implemented](#)
-
-Конденсація є переходом речовини з газової до рідкої фази, зокрема утворенням крапель із водяної пари.
-
-##### Розрізняти випаровування та кипіння
+##### Explain evaporation
 
 Code: [Not implemented](#)
 
-Кипіння відбувається з утворенням бульбашок пари в об'ємі рідини, тоді як випаровування відбувається на її поверхні.
+Evaporation is the transition of particles from the surface of a liquid into the gas phase and can occur without boiling.
 
-### Молекулярна фізика
+##### Explain condensation
+
+Code: [Not implemented](#)
+
+Condensation is the transition of matter from gas to liquid, including the formation of droplets from water vapor.
+
+##### Distinguish evaporation from boiling
+
+Code: [Not implemented](#)
+
+Boiling produces vapor bubbles throughout the volume of a liquid, whereas evaporation occurs at its surface.
+
+### Molecular Physics
 
 Groups: 3 · Skills: 10
 
 Code: [Not implemented](#)
 
-Моделі частинок допомагають пояснювати фізичні властивості й зміни стану речовини. На відміну від хімії, увагу зосереджено не на реакціях, а на русі, взаємодії та розташуванні частинок.
+Particle models help explain physical properties and changes in states of matter. Unlike chemistry, this Domain focuses on particle movement, interactions, and arrangement rather than chemical reactions.
 
-#### Частинкова модель речовини
+#### Particle Model of Matter
 
 Skills: 7
 
 Code: [Not implemented](#)
 
-Речовини складаються з частинок, між якими є проміжки і взаємодії; модель пояснює властивості без вимоги знати складні формули.
+Substances consist of particles with spaces and interactions between them; the model explains properties without requiring complex formulas.
 
-##### Пояснювати частинкову будову речовини
-
-Code: [Not implemented](#)
-
-Показувати, що вода навіть у прозорій склянці складається з невидимих неозброєним оком частинок.
-
-##### Порівнювати розміщення частинок у твердих тілах, рідинах і газах
+##### Explain the particulate structure of matter
 
 Code: [Not implemented](#)
 
-Частинки твердих тіл переважно коливаються біля сталих положень, у рідинах можуть переміщуватися одна відносно одної, а в газах мають значно більшу свободу руху та характерні міжчастинкові відстані.
+Demonstrate that even water in a transparent glass consists of particles invisible to the naked eye.
 
-##### Пов'язувати рух частинок зі зміною температури
-
-Code: [Not implemented](#)
-
-На анімації пояснювати, чому під час нагрівання середній рух частинок зазвичай стає інтенсивнішим.
-
-##### Пояснювати хаотичний тепловий рух частинок
+##### Compare particle arrangements in solids, liquids, and gases
 
 Code: [Not implemented](#)
 
-Частинки речовини постійно рухаються, але не всі з однаковою швидкістю; характер руху залежить від агрегатного стану.
+Particles in solids mostly oscillate around fixed positions; in liquids, particles can move relative to one another; and in gases they have much greater freedom of movement and characteristic interparticle distances.
 
-##### Пояснювати тиск газу через рух частинок
+##### Relate particle motion to temperature changes
+
+Code: [Not implemented](#)
+
+Using an animation, explain why average particle motion generally becomes more vigorous when heated.
+
+##### Explain random thermal motion of particles
+
+Code: [Not implemented](#)
+
+Particles of matter are constantly moving, but not all at the same speed; the type of motion depends on the physical state.
+
+##### Explain gas pressure through particle motion
 
 Code: [Not implemented](#)
 
