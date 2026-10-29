@@ -1,4 +1,4 @@
-# Час, гроші, дані
+# Time, Money and Data
 
 > **Curriculum: Grade 1 · модуль 05**  
 > **Статус:** усі 6 уроків мають сценарні чернетки (36 секцій); повні методичні Learning Briefs ще не створені.
@@ -7,12 +7,12 @@
 
 ## Уроки
 
-- 01. [Частини доби та години](./01-chastyny-doby-ta-hodyny/README.md) — Упорядковує частини доби, визначає повні години. · [Сценарій](./01-chastyny-doby-ta-hodyny/Sections/README.md)
-- 02. [Дні тижня та календар](./02-dni-tyzhnia-ta-kalendar/README.md) — Користується базовими назвами днів тижня й місяців. · [Сценарій](./02-dni-tyzhnia-ta-kalendar/Sections/README.md)
-- 03. [Грошові номінали та суми](./03-hroshovi-nominaly-ta-sumy/README.md) — Розпізнає номінали довільної заданої валюти, складає й порівнює суми. · [Сценарій](./03-hroshovi-nominaly-ta-sumy/Sections/README.md)
-- 04. [Сортуємо й рахуємо дані](./04-sortuiemo-i-rakhuiemo-dani/README.md) — Класифікує об’єкти за ознаками та збирає частоти. · [Сценарій](./04-sortuiemo-i-rakhuiemo-dani/Sections/README.md)
-- 05. [Прості таблиці й піктограми](./05-prosti-tablytsi-i-piktohramy/README.md) — Знаходить значення у таблиці чи піктограмі. · [Сценарій](./05-prosti-tablytsi-i-piktohramy/Sections/README.md)
-- 06. [Поясни, як ти міркував](./06-poiasny-iak-ty-mirkuvav/README.md) — Співвідносить реальну ситуацію, модель і вираз; пояснює вибір. · [Сценарій](./06-poiasny-iak-ty-mirkuvav/Sections/README.md)
+- 01. [Частини доби та години](./01-parts-of-the-day-and-hours/README.md) — Упорядковує частини доби, визначає повні години. · [Сценарій](./01-parts-of-the-day-and-hours/Sections/README.md)
+- 02. [Дні тижня та календар](./02-days-of-the-week-and-calendar/README.md) — Користується базовими назвами днів тижня й місяців. · [Сценарій](./02-days-of-the-week-and-calendar/Sections/README.md)
+- 03. [Грошові номінали та суми](./03-money-denominations-and-amounts/README.md) — Розпізнає номінали довільної заданої валюти, складає й порівнює суми. · [Сценарій](./03-money-denominations-and-amounts/Sections/README.md)
+- 04. [Сортуємо й рахуємо дані](./04-sorting-and-counting-data/README.md) — Класифікує об’єкти за ознаками та збирає частоти. · [Сценарій](./04-sorting-and-counting-data/Sections/README.md)
+- 05. [Прості таблиці й піктограми](./05-simple-tables-and-pictographs/README.md) — Знаходить значення у таблиці чи піктограмі. · [Сценарій](./05-simple-tables-and-pictographs/Sections/README.md)
+- 06. [Поясни, як ти міркував](./06-explaining-your-mathematical-reasoning/README.md) — Співвідносить реальну ситуацію, модель і вираз; пояснює вибір. · [Сценарій](./06-explaining-your-mathematical-reasoning/Sections/README.md)
 
 ## Сценарії взаємодії (Educational Screenwriter · draft)
 
