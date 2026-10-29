@@ -84,6 +84,20 @@ The same distinction accounted for two other removals: comparing already-taught 
 
 This episode **did not** establish a blanket ban on classification, comparison, modeling or prediction Skills. They can be legitimate competencies when there is an independently useful disciplinary outcome.
 
+## 2026-10-29 — Full-discipline exception review decisions
+
+**Scope (APPROVED):** Biology is a complete discipline-wide taxonomy, without ceilings on age, curriculum level or methods. Specific Curricula decide selection, progression and instructional depth. Existing taxonomies elsewhere are not required to share identities with Biology Skills.
+
+**New competencies (APPROVED):** Distinguish mitosis from meiosis; cover photosynthesis, cellular respiration and lung ventilation separately; distinguish transmission of genetic information, inheritance mechanisms and expression of genetic information; include evolutionary theory, common ancestry, speciation and multiple mechanisms of evolutionary change rather than treating natural selection as the entire theory. Add diagnostic competencies for major plant and invertebrate groups, bacteria versus archaea, microscopic eukaryotes, prokaryotic cell structure and bacterial division. Expand anatomy and physiology to digestion, absorption, kidneys, endocrine regulation, homeostasis, lung ventilation and human reproduction. Extend ecology to food webs, energy flow and matter cycling.
+
+**Redundancy / granularity (APPROVED):** Remove generic plant sorting by visible traits: a classification Question can assess specific plant knowledge without an extra Skill. Remove “match animal to food source” as redundant with diet classification, and generic observation-description as an independent zoological Skill. Generalize the butterfly life-cycle Skill to complete insect metamorphosis. Retain both plant adaptation recognition and functional explanation with explicit descriptions distinguishing them. Two Skills in different Biology Domains may legitimately examine different disciplinary aspects of similar subject matter; they retain independent identities when the definitions and assessable outcomes are distinct.
+
+**Regional context (APPROVED):** Retain recognition of locally common plants and animals: concrete instances differ with the learner's Program/region, but the competency identity does not. Retain the distinct Ukraine-specific natural-communities Skill for its intentional regional subject matter. Generalize Red Book species conservation beyond Ukraine; distinguish national/regional Red Books from the IUCN Red List.
+
+**Accuracy and editorial wording (APPROVED):** Clarify the genotype/environment interaction in hereditary-versus-acquired traits; separate cell respiration from lung ventilation, and gas exchange from ventilation; drop model/“simple” limitations in Skill names; clarify biology-specific versus cross-domain ecological relationships. Keep the concise context-dependent microorganism-decomposition title and context-dependent plant light/air names unchanged. Remove taxonomy-level biomimicry references because engineering design belongs to Engineering. Strip the “Code:” prefix from all placeholder links to match the current canonical template. The revised taxonomy is not thereby fully approved.
+
+**Synchronization requirement (APPROVED):** Reconcile the Biology branch against the current main-branch Subject Proposition containing 15 textbooks, including Philosophy and Psychology. Preserve earlier Biology subject-boundary decisions and prior Review entries while updating the current taxonomy.
+
 ### Historical inventory snapshots (not alternative current catalogs)
 
 | Checkpoint | Domains | Groups | Skills | Meaning |
@@ -92,9 +106,10 @@ This episode **did not** establish a blanket ban on classification, comparison, 
 | After removing generic research/evidence Group (2026-10-28) | 9 | 32 | 128 | Six further Skills removed |
 | After Observation and Modeling consolidation (2026-10-28) | 9 | 30 | 121 | Intermediate draft |
 | After domain restructuring and new foundational concepts (2026-10-29) | 11 | 26 | 122 | Earlier 2026-10-29 snapshot; **superseded** |
-| After generic-classification, selection-comparison and food-chain consolidation (2026-10-29) | **11** | **24** | **115** | Final candidate inventory for this review cycle |
+| After generic-classification, selection-comparison and food-chain consolidation (2026-10-29) | **11** | **24** | **115** | Earlier candidate inventory; subsequently expanded |
+| After full-discipline exception review decisions (2026-10-29) | **11** | **26** | **147** | Current editorial draft after editor-approved changes |
 
-The 2026-10-29 inventory contains **150 Domain/Group/Skill entities** and **150 unimplemented Code references**. It remains an **editorial draft**, not a statement that all 115 Skills have been individually approved or implemented. Separately stored per-entity Markdown Definition files had already been discontinued; substantive descriptions belong directly to the canonical taxonomy.
+The earlier 115-Skill candidate inventory contained **150 entities and 150 unimplemented links**. After the editor's further decisions on 2026-10-29, the canonical draft contains **184 entities (11 Domains, 26 Groups, 147 Skills)** and **184 unimplemented links**. The catalog is still an **editorial draft**, not a statement that its full content is approved or implemented. Separately stored per-entity Markdown Definition files had already been discontinued; substantive descriptions belong directly to the canonical taxonomy.
 
 **Unresolved allocation as of 2026-10-29:** which other textbooks, if any, should own general data-literacy, research-method, observation, equipment-handling and cross-disciplinary modeling Skills was **not decided** in this review. Their removal from Biology is not the same as removing the competencies from education.
 
