@@ -9,7 +9,7 @@
 ## REQUIRED INPUTS AND READING
 
 1. Identify the actual textbook package root and read the complete `<PackageRoot>/docs/skills/taxonomy.md`. Inspect the current repository state and applicable `AGENTS.md`; do not audit a remembered or outdated catalog.
-2. Read [Create Skills Taxonomy](../create-skills-taxonomy.skill.md) to understand the editorial taxonomy, its scope and canonical Markdown contract.
+2. Read [Create Skills Taxonomy](../skill-taxonomy-workflow/create-skills-taxonomy.skill.md) to understand the editorial taxonomy, its scope and canonical Markdown contract.
 3. Read the entity definitions [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md) and [Skill](../../docs/entities/skill.md) **in full**. In particular, Skill = smallest practically meaningful, **independently assessable competency**.
 4. Read the subject's agreed scope and boundaries, the applicable [Subject Proposition](../../Subject%20Proposition.md), and any existing dated taxonomy history when relevant. Existing history is context, never a substitute for the canonical file.
 5. Use credible subject references or named standards when they materially help assess breadth; identify which recommendations are sourced and which are editorial judgments. Do not impose an unrequested national curriculum or grade.
@@ -54,7 +54,7 @@ Inspect **every Domain, Group and Skill**, both headings and substantive descrip
 ### 5. Editorial and structural integrity
 
 - Flag heading/description tautology, descriptions that provide no substantive scope, or descriptions contradicting their entity names or neighbors.
-- Verify declared counts and the entity heading/metadata/description order from [Create Skills Taxonomy](../create-skills-taxonomy.skill.md). Examine standalone implementation links only as evidence: verify actual targets and full filename link labels (including suffixes and extension) where implemented; otherwise expect exactly `[Not implemented](#)` without a `Code:` prefix. Do not invent runtime files or UUIDs.
+- Verify declared counts and the entity heading/metadata/description order from [Create Skills Taxonomy](../skill-taxonomy-workflow/create-skills-taxonomy.skill.md). Examine standalone implementation links only as evidence: verify actual targets and full filename link labels (including suffixes and extension) where implemented; otherwise expect exactly `[Not implemented](#)` without a `Code:` prefix. Do not invent runtime files or UUIDs.
 - Identify factual uncertainty, unsubstantiated universality (e.g. a classification convention valid only in one country), and unsupported claims of reference/standard coverage.
 
 ## OUTPUT — PRIORITIZED EXCEPTION REPORT
@@ -75,4 +75,4 @@ Conclude with **confirmed problems vs open choices**, missing subject coverage, 
 
 This is **review-only by default**: **do not modify** `taxonomy.md`, runtime Code, UUIDs, curricula, Lessons, Programs or create a separate review/history file. The [Methodologist Persona](../../personas/methodist.persona.md) tightly restricts when a dated historical review may exist; this exception report does not authorize one.
 
-If the editor separately authorizes changes, use [Create Skills Taxonomy](../create-skills-taxonomy.skill.md) and its approval/history rules for the actual revision. Keep proposed vs approved decisions distinguishable; never imply the revised taxonomy is automatically approved.
+If the editor separately authorizes changes, use [Create Skills Taxonomy](../skill-taxonomy-workflow/create-skills-taxonomy.skill.md) and its approval/history rules for the actual revision. Keep proposed vs approved decisions distinguishable; never imply the revised taxonomy is automatically approved.

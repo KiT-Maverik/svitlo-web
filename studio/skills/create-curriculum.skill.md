@@ -105,11 +105,11 @@ Use the following template **as written**, replacing placeholders with content a
 **Prerequisites authoring guidance (not part of generated Curriculum):**
 Allowed records:
 - Plain text: %TEXT_PREREQUISITE%
-- Skill: **%SKILL_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
-- SkillGroup: **%SKILL_GROUP_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
-- SkillDomain: **%SKILL_DOMAIN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
+- Skill: **%SKILL_NAME%** — [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
+- SkillGroup: **%SKILL_GROUP_NAME%** — [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
+- SkillDomain: **%SKILL_DOMAIN_NAME%** — [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
 
-Choose only applicable types. All names must match the approved taxonomy exactly. Link to the existing taxonomy file relative to the actual Curriculum; an entry-specific verified Markdown anchor may be used if helpful. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
+Choose only applicable types. All names must match the approved authoritative Code or staging source exactly. Replace each `%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%` with the exact relative URL to that Skill/Group/Domain `*.data.ts` file if promoted, otherwise the existing staging taxonomy file (with verified anchor if useful). Never leave the placeholder in output. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
 
 **File-link formatting (authoring guidance):** The Module and Lesson runtime Code slots in the template are **standalone Markdown links with no `Code:` prefix**. If unimplemented, leave exactly `[Not implemented](#)`; if implemented, replace with a verified relative link whose visible text is the **entire real filename, including suffixes and extension** (for example, `[intro.data.ts](%VERIFIED_RELATIVE_PATH%)`). The same full-filename display convention applies to any implemented Definition link. Keep a Definition slot distinct from its Code slot; never fabricate either target.
 
@@ -122,7 +122,7 @@ Date: %CURRENT_DATE%
 
 %Program description in a form of a detailed reasonably long text.%
 
-Skills Taxonomy: [Skills Taxonomy](../../skills/taxonomy.md)
+Skills Taxonomy: [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
 
 ## TARGET AUDIENCE
 
@@ -161,7 +161,7 @@ Definition: %Lesson Markdown document/learning brief link. Default [Not implemen
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
-- **%SKILL_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
+- **%SKILL_NAME%** — [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
 - ...
 ```
 
