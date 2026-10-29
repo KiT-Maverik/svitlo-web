@@ -16,6 +16,8 @@ Svitlo combines independently deployable Next.js apps with explicit reusable lib
 │   └── platform/         # @svitlo/platform — independent Next.js catalog app
 ├── learningApps/
 │   ├── geography/        # @svitlo/geography — standalone textbook scaffold
+│   ├── informatics/      # @svitlo/informatics — standalone textbook scaffold
+│   ├── physics/          # @svitlo/physics — standalone textbook scaffold
 │   ├── math/             # @svitlo/math — standalone textbook and its docs/content
 │   └── playground/       # @svitlo/playground — demo and test app, not a shared library
 ├── shared/
@@ -31,9 +33,9 @@ Svitlo combines independently deployable Next.js apps with explicit reusable lib
 └── turbo.json            # task graph reference; not used by GitHub Actions
 ```
 
-**Concrete source roots:** `shared/contracts`, `shared/engine`, `shared/indexdb`, `shared/ui-kit`, `learningApps/geography`, `learningApps/math`, `learningApps/playground`, `frontend/platform`, `backend/server`. These paths are actual package folders; diagrams above use abbreviated names.
+**Concrete source roots:** `shared/contracts`, `shared/engine`, `shared/indexdb`, `shared/ui-kit`, `learningApps/geography`, `learningApps/informatics`, `learningApps/physics`, `learningApps/math`, `learningApps/playground`, `frontend/platform`, `backend/server`. These paths are actual package folders; diagrams above use abbreviated names.
 
-The **nine** current workspaces are `@svitlo/server`, `@svitlo/platform`, `@svitlo/geography`, `@svitlo/math`, `@svitlo/playground`, `@svitlo/contracts`, `@svitlo/engine`, `@svitlo/indexdb`, `@svitlo/ui-kit`. Patterns in root `package.json` and lockfile: `backend/*`, `frontend/*`, `learningApps/*`, `shared/*`. The server is deliberately not claimed to be executable yet.
+The **eleven** current workspaces are `@svitlo/server`, `@svitlo/platform`, `@svitlo/geography`, `@svitlo/informatics`, `@svitlo/physics`, `@svitlo/math`, `@svitlo/playground`, `@svitlo/contracts`, `@svitlo/engine`, `@svitlo/indexdb`, `@svitlo/ui-kit`. Patterns in root `package.json` and lockfile: `backend/*`, `frontend/*`, `learningApps/*`, `shared/*`. The server is deliberately not claimed to be executable yet.
 
 ## Dependency direction and ownership
 
@@ -56,6 +58,7 @@ Arrows above summarize **allowed consumption**, not a promise that every app imp
 | Engine | Builders, generation, assessment methods, localization logic | Depends on Contracts; no React, Next, MUI or app imports |
 | IndexDB | `svitlo-progress` v1 persistence, Zod state validation, browser controllers | Depends on Contracts and Zod; production does not depend on Engine/React/Next |
 | UI Kit | Components, Flag assets, LearningLayout, NavbarPreferences and locale dictionaries | Depends on Engine and UI peer dependencies; no Next.js/application imports in production source |
+| Informatics / Physics | Standalone Next.js textbook scaffolds, subject content in separate reviews | No application-to-application imports |
 | Geography / Math / Playground | Route handlers, progress/locale providers, subject content or demo fixtures | Declared public shared exports only; **no app-to-app imports** |
 | Platform | Standalone public site and external textbook catalog links | Next.js/React/MUI; does not embed Math or Playground |
 | Server | Future backend | Placeholder package only; do not claim build/API/test capabilities |
@@ -67,6 +70,8 @@ The canonical native IndexedDB browser harness, commands and Playwright suite li
 ## Canonical editorial Skills Taxonomy
 
 For Mathematics, [`learningApps/math/docs/skills/taxonomy.md`](../../../learningApps/math/docs/skills/taxonomy.md) is the **single reviewed editorial source of truth** for the Domain → Group → Skill hierarchy. Its descriptions must explain the competencies in substance, not merely repeat their titles. The linked `learningApps/math/src/data/skillsTaxonomy/` modules are the typed, machine-readable representation; curriculum documentation points to this canonical taxonomy rather than duplicating definitions in parallel Skill files or legacy inventory reports. The separate per-Skill definition template was retired as part of the taxonomy consolidation; do not restore it or the former `src/data/skills-inventory*.md`, `skills-taxonomy-review.md` or `UUID-MIGRATION.md` documents.
+
+Informatics and Physics have independent Next.js application shells. Informatics Skills Taxonomy is reviewed separately in Draft PR #48; no implemented Informatics Skills, lessons or curricula are implied.
 
 Geography has its own independently configured application shell and localized landing page. Its editorial Skills Taxonomy is a separate review proposal (PR #66); no Skill Data/UUIDs, curricula, lessons, full offline capability or learner results are implemented in Geography yet.
 
@@ -94,7 +99,7 @@ npm run test:e2e:db                # after Playwright browser install
 npm run test:e2e:platform          # after building Platform
 ```
 
-Individual app entrypoints: `npm run dev:geography`, `npm run dev:math`, `npm run dev:platform`, `npm run dev --workspace @svitlo/playground`. The `Questions quality` workflow runs root checks and app E2E; the `Native IndexedDB browser controllers` workflow repeats real Chromium checks; `UI Kit Storybook` builds independently.
+Individual app entrypoints: `npm run dev:informatics`, `npm run dev:physics`, `npm run dev:geography`, `npm run dev:math`, `npm run dev:platform`, `npm run dev --workspace @svitlo/playground`. The `Questions quality` workflow runs root checks and app E2E; the `Native IndexedDB browser controllers` workflow repeats real Chromium checks; `UI Kit Storybook` builds independently.
 
 **Evidence limitations:** these checks inspect declared packages, compiled artifacts and running apps **inside the monorepo**. Independent `npm pack`/registry installation, clean-room source extraction, production deployment and real backend/offline services are separate, not-yet-proven tasks.
 

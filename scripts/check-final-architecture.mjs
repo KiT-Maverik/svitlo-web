@@ -69,7 +69,7 @@ assert(quality.includes('test:e2e:platform') && quality.includes('packages:artif
 const db = readFileSync(resolve(root, '.github/workflows/db-controllers-e2e.yml'), 'utf8');
 assert(db.includes('test:e2e:db'), 'Native Chromium workflow missing');
 const canonical = readFileSync(resolve(root, 'studio/docs/architecture/monorepo-and-textbook.md'), 'utf8');
-for (const subject of ['shared/contracts', 'shared/indexdb', 'frontend/platform', 'learningApps/math']) {
+for (const subject of ['shared/contracts', 'shared/indexdb', 'frontend/platform', 'learningApps/math', 'learningApps/informatics']) {
   assert(canonical.includes(subject), 'Canonical architecture docs omit: ' + subject);
 }
 console.log(`Stage 8 architecture audit: ${exact.length} known identical app-source paths; no new duplicates. Shared ownership, Platform and CI gates verified.`);
