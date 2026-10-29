@@ -1,18 +1,18 @@
-# На скільки більше або менше
+# How Many More or Fewer
 
-> **Curriculum: Grade 1 · Математична мова, рівності та задачі · урок 06**  
+> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 06**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Розв’язує задачі на різницеве порівняння та збільшення/зменшення.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.problems.additive-comparison` — `6ec0b82a-2cb0-4875-a327-dc292e6624c0`
-- `math.problems.increase-decrease-number` — `4b3a53a2-c2dc-49b6-beb8-c81a0544978b`
+- [Solving additive comparison problems](../../../../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/additiveComparison.data.ts)
+- [Increasing or decreasing by a given amount](../../../../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseNumber.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Цей сценарій доповнює коротку методичну картку; повний Learning Brief потребує окремого проходу методиста.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

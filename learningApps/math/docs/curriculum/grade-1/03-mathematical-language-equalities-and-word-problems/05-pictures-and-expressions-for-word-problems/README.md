@@ -1,18 +1,18 @@
-# Малюнок і вираз до задачі
+# Pictures and Expressions for Word Problems
 
-> **Curriculum: Grade 1 · Математична мова, рівності та задачі · урок 05**  
+> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 05**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Створює модель ситуації та обирає додавання або віднімання.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.problems.one-step-model` — `64808d1f-bbb7-4252-965f-9f361078720c`
-- `math.problems.choose-operation-add-sub` — `52f1bc76-4795-452b-b241-4dc3099063e6`
+- [Modeling a one-step problem](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/oneStepModel.data.ts)
+- [Choosing addition or subtraction](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationAddSub.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Цей сценарій доповнює коротку методичну картку; повний Learning Brief потребує окремого проходу методиста.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

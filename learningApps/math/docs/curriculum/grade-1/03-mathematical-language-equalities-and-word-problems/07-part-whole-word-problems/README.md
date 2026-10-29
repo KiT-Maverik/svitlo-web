@@ -1,18 +1,18 @@
-# Задачі на частини й ціле
+# Part-Whole Word Problems
 
-> **Curriculum: Grade 1 · Математична мова, рівності та задачі · урок 07**  
+> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 07**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Пояснює рішення на основі моделі частина–ціле.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.problems.part-whole-addsub` — `adb1adc5-7f54-495d-a65f-e8754a2a0748`
-- `math.problems.explain-answer-units` — `cc32ed01-5823-42a0-a32e-810074474d93`
+- [Solving part-whole and inverse problems](../../../../../src/data/skillsTaxonomy/problemSolving/parts/skills/partWholeAddsub.data.ts)
+- [Checking answer units and reasonableness](../../../../../src/data/skillsTaxonomy/problemSolving/planning/skills/explainAnswerUnits.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Картка вище лишається методичним джерелом, повний Learning Brief потребує окремого написання.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

@@ -1,17 +1,17 @@
-# Створюємо власну задачу
+# Creating Your Own Word Problem
 
-> **Curriculum: Grade 1 · Математична мова, рівності та задачі · урок 09**  
+> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 09**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Складає просту текстову задачу за малюнком чи виразом.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.problems.create-problem` — `1752c41c-dedc-4bc3-9b3f-285878f851b4`
+- [Creating a word problem from a model](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/createProblem.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Картка вище лишається методичним джерелом, повний Learning Brief потребує окремого написання.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

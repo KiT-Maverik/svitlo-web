@@ -1,18 +1,18 @@
-# Ліворуч, праворуч, між
+# Left, Right, and Between
 
-> **Curriculum: Grade 1 · Геометрія та вимірювання · урок 01**  
+> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 01**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Описує положення та виконує прості просторові інструкції.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.geometry.position-words` — `30001f22-2352-4068-a1be-f0e8f0278588`
-- `math.geometry.spatial-orientation-path` — `1defe702-c0b3-4760-aea0-2d2861933d5f`
+- [Describing relative positions](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/positionWords.data.ts)
+- [Giving and following route directions](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOrientationPath.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
 
 ---
-[Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

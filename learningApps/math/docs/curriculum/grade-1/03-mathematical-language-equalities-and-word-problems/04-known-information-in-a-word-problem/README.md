@@ -1,17 +1,17 @@
-# Що відомо в задачі?
+# Known Information in a Word Problem
 
-> **Curriculum: Grade 1 · Математична мова, рівності та задачі · урок 04**  
+> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 04**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Виділяє дані й запитання в однокроковій ситуації.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.problems.identify-known-unknown` — `87a8b2f2-0e9e-4b10-aa28-bd52ba0c9b7e`
+- [Identifying known and unknown quantities](../../../../../src/data/skillsTaxonomy/problemSolving/conditions/skills/identifyKnownUnknown.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Цей сценарій доповнює коротку методичну картку; повний Learning Brief потребує окремого проходу методиста.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
