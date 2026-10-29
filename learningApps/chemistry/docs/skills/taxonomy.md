@@ -12,9 +12,9 @@ This is the audience-independent catalog of independently assessable chemistry c
 
 Domains: 12
 Groups: 42
-Skills: 197
+Skills: 196
 
-Code files: 0/12 Domains · 0/42 Groups · 0/197 Skills
+Code files: 0/12 Domains · 0/42 Groups · 0/196 Skills
 
 ## DOMAINS
 
@@ -1308,7 +1308,7 @@ Relate dissolved calcium and magnesium species to characteristic reactions and p
 
 ### Organic Chemistry
 
-Groups: 4 · Skills: 23
+Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
@@ -1416,7 +1416,7 @@ Recognize carbonyl–nitrogen connectivity and distinguish amides from amines.
 
 #### Organic Transformations
 
-Skills: 5
+Skills: 4
 
 [Not implemented](#)
 
@@ -1446,11 +1446,6 @@ Recognize removal of atoms or groups with formation of additional unsaturation.
 
 Explain bond formation between organic partners accompanied by removal of a small molecule.
 
-##### Organic Hydrolysis
-
-[Not implemented](#)
-
-Explain bond cleavage in organic compounds through reaction with water and distinguish it from simple dissolution.
 
 #### Macromolecules
 
