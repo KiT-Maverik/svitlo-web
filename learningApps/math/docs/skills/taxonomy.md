@@ -2000,207 +2000,207 @@ Code: [Code](../../src/data/skillsTaxonomy/probability/experiments/skills/experi
 
 Two sets of ten coin tosses can produce different numbers of heads. Such random variation does not, by itself, imply that the experiment's rules have changed.
 
-### Задачі
+### Problem solving
 
 Groups: 7 · Skills: 23
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/problemSolving.data.ts)
 
-Охоплює переклад умов життєвої ситуації на математичну модель, добір операцій, планування кількох кроків і перевірку осмисленості відповіді.
+This domain translates real-world situations into mathematical models, selects appropriate operations, plans multi-step calculations, and checks whether results make sense in context.
 
-#### Аналіз умови
+#### Analyzing problem statements
 
 Skills: 3
-
-Відокремлення запитання, відомих даних і прихованих припущень текстової задачі до вибору арифметичної операції.
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/conditions.data.ts)
 
-##### Виділяти умову задачі, відомі величини й запитання
+Analysis separates the question, known quantities, and implicit assumptions of a word problem before choosing an arithmetic operation.
+
+##### Identifying known and unknown quantities
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/identifyKnownUnknown.data.ts)
 
-Якщо відомо, що було 12 яблук і продали 5, слід виокремити початкову кількість, зміну і те, що потрібно знайти.
+If a story says there were twelve apples and five were sold, identify the starting quantity, the change, and the quantity being sought.
 
-##### Розпізнавати зайві дані в текстовій задачі
+##### Recognizing irrelevant information
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/findExtraneousData.data.ts)
 
-У сюжеті про купівлю олівців колір рюкзака може не впливати на запитувану вартість; не всі числа та деталі потрібні.
+In a pencil-purchase problem, the backpack's color may not affect the cost. Not every number or detail contributes to the calculation.
 
-##### Пояснювати, чому задачу неможливо розв’язати без додаткових даних
+##### Identifying missing information
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/conditions/skills/findMissingData.data.ts)
 
-Якщо відома тільки ціна однієї речі, загальну вартість кількох речей не визначити без їхньої кількості.
+Knowing only the price of one item is insufficient to determine the total cost of several items unless their quantity is also known.
 
-#### Моделі задач
+#### Problem models
 
 Skills: 4
-
-Зв’язок між предметною ситуацією, малюнком, схемою та числовим виразом, що відображає потрібну дію.
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/models.data.ts)
 
-##### Вибирати додавання чи віднімання відповідно до змісту простої задачі
+A concrete situation, a picture, a diagram, and a numerical expression can represent the same operation if their quantities and relationships agree.
+
+##### Choosing addition or subtraction
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationAddSub.data.ts)
 
-Об’єднання двох наборів потребує додавання, вилучення з відомого набору — віднімання; ключова ознака — зміна кількості.
+Combining two known sets calls for addition; removing objects from a set calls for subtraction. The meaning of the change determines the operation.
 
-##### Вибирати множення чи ділення за змістом рівних груп
+##### Choosing multiplication or division
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationMulDiv.data.ts)
 
-Рівні групи по 4 можна порахувати множенням, а відому суму розподілити на групи діленням.
+Equal groups of four can be counted by multiplication. A known total can be divided into equal groups when the question asks for the size or number of groups.
 
-##### Будувати малюнок, схему або вираз до одноходової задачі
+##### Modeling a one-step problem
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/oneStepModel.data.ts)
 
-Малюнок із трьома кошиками по п’ять яблук має відповідати короткій схемі «3 групи по 5», а не довільному виразу.
+A drawing of three baskets with five apples each must match the diagram 'three groups of five' rather than an unrelated expression.
 
-##### Складати текстову задачу за малюнком, таблицею чи виразом
+##### Creating a word problem from a model
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/createProblem.data.ts)
 
-До запису 4 × 3 можна придумати сюжет про чотири однакові пакети по три предмети; дані й запитання повинні узгоджуватися.
+The expression 4 × 3 could describe four identical packets containing three items each. The problem's facts and question must correspond to the model.
 
-#### Планування розв’язання
+#### Solution planning
 
 Skills: 5
 
-Побудова й обґрунтування послідовності кількох кроків із перевіркою одиниць, відповіді та альтернативних способів.
-
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/planning.data.ts)
 
-##### Складати план розв’язання задачі на дві дії та пояснювати порядок
+Planning orders intermediate calculations and checks units, the final answer, and alternative solution routes when several steps are required.
+
+##### Planning a two-step solution
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/twoStepPlan.data.ts)
 
-Спочатку потрібно визначити проміжну невідому величину, яку використають на другому кроці; порядок обґрунтовують залежністю.
+First find the intermediate unknown needed for the next calculation. The dependency between the two quantities explains the order of steps.
 
-##### Розв’язувати нескладні складені задачі на три дії
+##### Solving a three-step problem
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/threeStepPlan.data.ts)
 
-У трьохдійовій задачі кожна проміжна відповідь має бути потрібною для наступного кроку та не суперечити умові.
+Each intermediate result in a three-step problem must support a later step and remain consistent with the initial conditions.
 
-##### Складати та розв’язувати обернену задачу
+##### Constructing and solving inverse problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/inverseProblem.data.ts)
 
-Якщо відомі сума й один доданок, обернена задача може просити знайти інший доданок; дані й невідоме міняють ролі.
+If a total and one addend are known, an inverse problem may ask for the other addend, exchanging the roles of known and unknown quantities.
 
-##### Записувати відповідь із відповідними одиницями та перевіряти змістовну правдоподібність
+##### Checking answer units and reasonableness
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/explainAnswerUnits.data.ts)
 
-Число 12 без позначки «см» не є повною відповіддю про довжину; результат також має бути реалістичним для ситуації.
+An answer of '12' without 'cm' does not completely answer a question about length. The result must also be plausible for the given situation.
 
-##### Порівнювати два правильні способи розв’язання тієї самої задачі
+##### Comparing solution strategies
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/multipleSolutionStrategies.data.ts)
 
-До одного результату інколи ведуть групування доданків або послідовні дії; способи порівнюють за коректністю й зручністю.
+Grouping addends and performing sequential operations can sometimes reach the same result. Strategies are compared for correctness and convenience.
 
-#### Задачі на порівняння
+#### Comparison problems
 
 Skills: 4
 
-Відмінність адитивного порівняння («на скільки») від мультиплікативного («у скільки разів») та задач на зміну величини.
-
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/comparisons.data.ts)
 
-##### Розв’язувати задачі на «на скільки більше / менше»
+Additive comparison asks 'how many more?', while multiplicative comparison asks 'how many times as many?'. Both are distinct from changing a quantity by a stated amount.
+
+##### Solving additive comparison problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/additiveComparison.data.ts)
 
-Для наборів із 9 і 6 предметів запитання «на скільки» означає різницю 3, а не відношення 9 ÷ 6.
+For sets containing 9 and 6 objects, 'how many more?' asks for the difference 3, not the quotient 9 ÷ 6.
 
-##### Розв’язувати задачі на збільшення або зменшення на задане число
+##### Increasing or decreasing by a given amount
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseNumber.data.ts)
 
-Після збільшення 15 на 4 отримують 19; «на чотири» позначає додаткову кількість, а не множник.
+Increasing 15 by 4 produces 19. 'By four' represents an additional quantity rather than a factor.
 
-##### Розв’язувати задачі на «у скільки разів більше / менше»
+##### Solving multiplicative comparison problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/multiplicativeComparison.data.ts)
 
-Якщо одна група має 12 предметів, інша — 4, перша більша втричі; відповідь є коефіцієнтом, а не різницею.
+If one set contains twelve objects and another contains four, the first has three times as many. The answer is a ratio, not a difference.
 
-##### Розв’язувати задачі на збільшення або зменшення в задану кількість разів
+##### Increasing or decreasing by a given factor
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseFactor.data.ts)
 
-Після збільшення 6 утричі виходить 18; «у три рази» описує множення, на відміну від «на три».
+Tripling 6 gives 18; 'three times as many' indicates multiplication, unlike 'three more'.
 
-#### Задачі на частини
+#### Part-whole problems
 
 Skills: 2
-
-Відношення цілого і його частин у життєвих сюжетах, включно з одиничними дробовими частинами.
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/parts.data.ts)
 
-##### Розв’язувати задачі на ціле й частини та складати обернені задачі
+Stories involving a whole and its constituent quantities include both additive relationships and unit-fraction parts.
+
+##### Solving part-whole and inverse problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/partWholeAddsub.data.ts)
 
-Якщо ціле складається з частин 7 і 5, його можна відновити сумою; відомі ціле та одна частина визначають іншу.
+If a whole consists of parts 7 and 5, it is recovered by addition. Knowing the whole and one part allows the other to be calculated.
 
-##### Розв’язувати сюжетні задачі на знаходження одиничної частини кількості
+##### Finding a unit fraction of a quantity
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/fractionsContext.data.ts)
 
-Чверть від 20 ягід — п’ять; сюжет вимагає рівного поділу початкової кількості.
+A quarter of twenty berries is five; the story requires partitioning the initial quantity equally.
 
-#### Задачі на групи
+#### Grouping problems
 
 Skills: 2
 
-Ситуації рівних груп і незалежних виборів із двох наборів; розмежування множення та підрахунку комбінацій.
-
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/groups.data.ts)
 
-##### Лічити всі прості комбінації вибору по одному з двох наборів (одяг, меню тощо)
+Problems about equal groups and independent selections from two sets distinguish repeated groups from the systematic counting of combinations.
+
+##### Counting combinations from two sets
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/skills/correspondenceCombinations.data.ts)
 
-Для трьох футболок і двох штанів існує шість пар вибору; кожна пара має складатися з одного елемента кожного набору.
+Three shirts and two pairs of trousers yield six different outfit pairs, each made from one item of each set.
 
-##### Розв’язувати задачі на кількість груп, розмір групи та загальну кількість
+##### Solving equal-group problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/skills/equalGroups.data.ts)
 
-Якщо є п’ять пакетів по чотири цукерки, усього 20; за двома із цих трьох величин можна знайти третю.
+Five packets of four candies contain twenty in total. Any two of the three quantities—group count, group size, and total—determine the third.
 
-#### Задачі на величини
+#### Quantity problems
 
 Skills: 3
 
-Практичні співвідношення між величинами — продуктивністю, часом, ціною, кількістю, масою, місткістю та довжиною.
-
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/quantities.data.ts)
 
-##### Використовувати зв'язок продуктивність × час = виконаний обсяг у простих задачах
+Applied problems involve relationships between work rate, time and output; price, quantity and cost; and measured quantities such as mass, length, and capacity.
+
+##### Relating work rate, time and output
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/workRateTime.data.ts)
 
-За продуктивності 3 деталі за годину протягом 4 годин виконано 12 деталей; одиниці часу й продуктивності мають узгоджуватися.
+At a rate of three parts per hour, four hours produce twelve parts. Time and productivity units must be compatible.
 
-##### Моделювати задачі на вартість через зв’язок ціни, кількості та суми
+##### Relating price, quantity and cost
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/priceQuantityCost.data.ts)
 
-Якщо ціна одиниці 7, а куплено 3 одиниці, модель вартості дає 21; однакова сума може відповідати іншій парі значень.
+A unit price of seven and a purchase quantity of three produce a total cost of twenty-one. A different price-quantity combination can produce the same total.
 
-##### Моделювати задачі на довжину, масу, місткість і час
+##### Modeling measurement problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/measurementContext.data.ts)
 
-Для шляху, рідини або маси сюжет має визначати доречну величину й одиницю; числове обчислення без цієї відповідності неповне.
+A story about distance, liquid, or mass must identify the relevant measurable quantity and its unit; a numerical computation without that relationship is incomplete.
 
 ### Reasoning
 
