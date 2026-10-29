@@ -1,88 +1,88 @@
-# Інформатика — Subject Proposition
+# Informatics — Subject Proposition
 
 Date: 2026-10-29
 
-Предметний документ для пропозицій та сценаріїв навчання інформатики. Це **не** Curriculum, не Skills Taxonomy, не реалізований код і не новий тип навчального контенту. Загальні правила й міжпредметні рішення: [Studio Subject Proposition](../../../studio/Subject%20Proposition.md). Канонічні навички: [Informatics Skills Taxonomy](./skills/taxonomy.md).
+A subject-specific proposal of learning directions and scenarios for Informatics. This is **not** a Curriculum, a Skills Taxonomy, implemented code, or a new category of learning content. General conventions and interdisciplinary decisions: [Studio Subject Proposition](../../../studio/Subject%20Proposition.md). Canonical competencies: [Informatics Skills Taxonomy](./skills/taxonomy.md).
 
-**Предметна межа:** цифровий інструмент, що використовується у музиці, географії чи інженерії, не перетворює їхні уроки на інформатику. Самостійна тема інформатики має навчати алгоритмам, структурам даних, програмам або цифровим системам.
+**Subject boundary:** using a digital tool in Music, Geography, or Engineering does not automatically turn those lessons into Informatics. An independent Informatics topic must teach algorithms, data structures, programs, or digital systems.
 
-**UX — спільна дисципліна двох підручників:** **Інженерія** вивчає взаємодію людини з фізичними виробами, механізмами, пристроями та цілими системами; **Інформатика** окремо вивчає UX **цифрових продуктів і цифрових пристроїв**: навігацію, зворотний зв’язок, зрозумілість дій, доступність та доброчесність інтерфейсу. Фізична кнопка цифрового пристрою може бути спільним прикладом, якщо кожен предмет має власну навчальну ціль. Використання цифрового інструмента на уроці іншого предмета не створює автоматичних Skills інформатики. Мистецтво охоплює візуальну мову й композицію. [ISO 9241 — термінологія UX](https://www.iso.org/obp/ui/).
+**UX is shared by two textbooks:** **Engineering** studies human interaction with physical products, mechanisms, devices, and whole engineering systems; **Informatics** separately studies UX of **digital products and devices**: navigation, feedback, comprehensibility, accessibility, and interface integrity. A physical button on a digital device can serve as an example in both if each subject has its own learning goal. Using a digital tool in another subject does not automatically create Informatics Skills. Art covers visual language and composition. [ISO 9241 — UX terminology](https://www.iso.org/obp/ui/).
 
-## 1. Обсяг і міжпредметні зв’язки
+## 1. Scope and Interdisciplinary Connections
 
-**Глобальний індекс — рядок підручника «Інформатика»:**
+**Global index — the Informatics textbook entry:**
 
-| № | Підручник | Основні тематичні напрями | Питальні / енциклопедичні розділи |
+| No. | Textbook | Main subject areas | Question-based / encyclopedic sections |
 | --- | --- | --- | --- |
-| 8 | **Інформатика** | Булева логіка, алгоритміка, стратегії пошуку й ефективність алгоритмів, програмування й рекурсія, бази даних, статистика, ймовірність, цифрові системи та конкурентне й паралельне виконання, робототехніка, архітектура програм, принципи проєктування, процедурна генерація й оптимізація, AI й промптинг, цифрова безпека | **«Як це працює?»** — комп’ютер, інтернет, Wi-Fi, програми, AI |
+| 8 | **Informatics** | Boolean logic, algorithms, search strategies and algorithm efficiency, programming and recursion, databases, statistics, probability, digital systems and concurrent/parallel execution, robotics, software architecture, design principles, procedural generation and optimization, AI and prompting, digital safety | **"How does it work?"** — computers, the Internet, Wi-Fi, programs, AI |
 
-**Власні напрями, перенесені з глобального документа:**
+**Subject-owned areas carried over from the global proposal:**
 
-| Напрям | Предметна належність | Орієнтовний зміст |
+| Area | Subject ownership | Indicative content |
 | --- | --- | --- |
-| **Штучний інтелект (AI)** | Інформатика | Машинне навчання на прикладах, розпізнавання образів, нейромережі на інтуїтивному рівні, генеративний AI, помилки та обмеження |
-| **Архітектури та добір AI-моделей** | Інформатика | Інтуїтивне порівняння dense та mixture-of-experts (MoE) моделей, квантизація, швидкість, пам’ять, контекст, вартість, якість і вибір під задачу |
-| **Архітектура програм і принципи проєктування** | Інформатика | Об’єкти, властивості, поведінка, композиція, інтерфейси, абстракція, інкапсуляція, спадкування й поліморфізм; DRY, KISS, YAGNI, SRP, прості патерни на моделях |
+| **Artificial Intelligence (AI)** | Informatics | Learning from examples, pattern recognition, intuitive introduction to neural networks, generative AI, errors and limitations |
+| **AI Model Architectures and Selection** | Informatics | Intuitive comparison of dense and mixture-of-experts (MoE) models; quantization, speed, memory, context, cost, quality, and selecting a model for a task |
+| **Software Architecture and Design Principles** | Informatics | Objects, properties, behavior, composition, interfaces, abstraction, encapsulation, inheritance, polymorphism; DRY, KISS, YAGNI, SRP, and simple design-pattern models |
 
-**Міжпредметні напрями (редакторська копія для інформатики; глобальне джерело залишається [тут](../../../studio/Subject%20Proposition.md)):**
+**Interdisciplinary areas (editorial copy for Informatics; the global source remains [here](../../../studio/Subject%20Proposition.md)):**
 
-| Напрям | Предметна належність | Орієнтовний зміст |
+| Area | Subject ownership | Indicative content |
 | --- | --- | --- |
-| **Робототехніка** | Інженерія; інформатика; фізика | Роботи, датчики, виконавці, програмне керування, автоматизація |
-| **Промптинг і AI-грамотність** | Інформатика; мова та література; людина та мислення | Чітка постановка задачі, контекст, приклади й обмеження в інструкціях; перевірка результату, уточнення промпту, конфіденційність |
-| **Кібербезпека** | Інформатика; здоров’я та безпека | Паролі, приватність, шахрайство, цифрові сліди, безпечна комунікація |
-| **Геймдизайн** | Інформатика; мистецтво | Правила, механіки, створення та випробування ігор |
-| **Процедурна генерація та інженерна оптимізація** | Інформатика; математика; мистецтво | Створення графіки, об'єктів, світів і звуків за алгоритмами; насіння генерації, параметри, економія дискового простору та її компроміси щодо пам'яті, часу і потужності; історія гри .kkrieger (2004, приблизно 96 КБ) |
-| **Стратегії пошуку та ефективність алгоритмів** | Інформатика; математика | Випадковий перебір, послідовний і бінарний пошук, упорядкованість даних, кількість перевірок, умови застосування та наочне порівняння на прикладі «Знайди сюрприз» |
-| **Можливість, імовірність та гарантія** | Математика; інформатика; людина та мислення | Розрізнення «може трапитися», «наскільки ймовірно» та «гарантовано»; помилка «два результати означають 50/50»; значення даних і припущень для оцінки шансів |
-| **Історія винаходів, які змінили світ** | Історія; інженерія; фізика; інформатика; мистецтво | Яку проблему вирішував винахід, хто та як працював над ним, що було раніше, як його перевіряли та які зміни й наслідки він приніс |
+| **Robotics** | Engineering; Informatics; Physics | Robots, sensors, actuators, programmable control, automation |
+| **Prompting and AI Literacy** | Informatics; Language and Literature; Human Thought / Philosophy | Clear task specification, context, examples and constraints in instructions; output verification, prompt refinement, confidentiality |
+| **Cybersecurity** | Informatics; Health and Safety | Passwords, privacy, fraud, digital footprints, safe communication |
+| **Game Design** | Informatics; Art | Game rules, mechanics, creation and testing |
+| **Procedural Generation and Engineering Optimization** | Informatics; Mathematics; Art | Algorithmic generation of graphics, objects, worlds, and sounds; seeds, parameters, disk-space savings and trade-offs with memory, time, and computing power; .kkrieger (2004, roughly 96 KB) |
+| **Search Strategies and Algorithm Efficiency** | Informatics; Mathematics | Random guessing, sequential and binary search, sorted data, number of checks, prerequisites, and a visual comparison in the 'Find the Surprise' activity |
+| **Possibility, Probability, and Guarantee** | Mathematics; Informatics; Human Thought / Philosophy | Distinguish 'it can happen', 'how likely it is', and 'it is guaranteed'; the misconception that two outcomes imply 50/50; how data and assumptions affect chance estimates |
+| **The History of World-Changing Inventions** | History; Engineering; Physics; Informatics; Art | What problem an invention solved, who worked on it and how, previous approaches, validation, and the changes and consequences it brought |
 
-**Алгоритмічна лабораторія — приклад практики:**
+**Algorithm Lab — example activity:**
 
-- **«Алгоритмічна лабораторія»** — побудувати віртуальний ліс, візерунок чи місто з правил і випадкового насіння та порівняти обсяг інструкції, час створення й вигляд результату; у грі «Знайди сюрприз» порівняти випадкові спроби та бінарний пошук із підказками «більше / менше».
+- **'Algorithm Lab'** — generate a virtual forest, pattern, or city from rules and a random seed, comparing instruction size, generation time, and appearance. In 'Find the Surprise,' compare random guessing with binary search using 'higher/lower' hints.
 
-## 2. Програмна архітектура, патерни проєктування та AI Engineering
+## 2. Software Architecture, Design Patterns, and AI Engineering
 
-У межах **«Інформатики»** пропонуємо навчати базового інженерного мислення **до обов’язкового написання коду**: як розділити велику задачу, організувати взаємодію об’єктів, описати правила, перевірити роботу системи й обрати відповідний AI-інструмент.
+Within **Informatics**, we propose developing foundational engineering reasoning **before requiring code**: break a large task into parts, organize object interactions, define rules, verify a system's behavior, and choose an appropriate AI tool.
 
-- **Об’єктне мислення:** об’єкти, властивості, дії, зв’язки, відповідальність, композиція; на наочних прикладах — абстракція, інкапсуляція, спадкування й поліморфізм. Не плутаємо «знає метафору» з «самостійно проєктує програму».
-- **Принципи:** DRY (не дублювати без потреби), KISS (не ускладнювати), YAGNI (не будувати зайвого), SRP (одна зрозуміла відповідальність); згодом інтуїтивні ідеї інтерфейсів, замінності та залежності від контрактів. **SOLID не ставимо як обов’язковий формальний матеріал для всіх учнів 1–3 класів.**
-- **Патерни:** Factory (створити потрібний об’єкт через «майстерню»), Strategy (взаємозамінні способи виконання задачі), Observer (реакція підписників на подію); спершу інтерактивне моделювання, потім назви й за бажанням код.
-- **Prompt Engineering:** опис задачі, вхідні дані, очікуваний формат, приклади й обмеження, уточнення після помилок; порівняння відповіді з критеріями. Не передавати особисті дані й не довіряти автоматично впевненому тексту.
-- **Архітектури AI-моделей:** на інтуїтивному рівні порівняти *dense* модель і *mixture of experts (MoE)*, де маршрутизатор залучає частину обчислювальних блоків для токенів (це не обов’язково окремі «експерти з математики чи історії»); показати **квантизацію** як зменшення точності представлення чисел заради економії пам’яті з можливими втратами якості.
-- **Вибір моделі:** для задачі зіставити якість, швидкість відповіді (latency), вартість, обсяг контексту, вимоги до пам’яті, приватність та надійність; більша або дорожча модель не завжди потрібна.
+- **Object thinking:** objects, properties, actions, relationships, responsibility, composition; visual examples of abstraction, encapsulation, inheritance, and polymorphism. Knowing a metaphor is not equivalent to designing a program independently.
+- **Principles:** DRY (avoid unnecessary duplication), KISS (avoid needless complexity), YAGNI (do not build unnecessary features), SRP (one coherent responsibility); later, intuitive concepts of interfaces, substitutability, and dependency on contracts. **Do not impose formal SOLID as compulsory material on every Grade 1–3 pupil.**
+- **Patterns:** Factory (a 'workshop' creating an appropriate object), Strategy (interchangeable ways of performing a task), Observer (subscribers responding to events); begin with interactive models, introduce the terminology, and optionally code later.
+- **Prompt Engineering:** describe the task, inputs, expected output format, examples, and constraints; refine after errors and compare responses against criteria. Avoid sharing personal information and automatically trusting confidently worded text.
+- **AI model architectures:** intuitively compare a *dense* model with a *mixture of experts (MoE)*, where a router activates some computing blocks for tokens (not necessarily distinct 'math experts' and 'history experts'); illustrate **quantization** as lowering numerical representation precision to save memory, potentially at a quality cost.
+- **Model selection:** compare accuracy, response latency, price, context size, memory requirements, privacy, and reliability for a task; a larger or more expensive model is not always needed.
 
-| Орієнтовний рівень | Програмне проєктування | Робота з AI |
+| Indicative level | Software design | Working with AI |
 | --- | --- | --- |
-| **1 клас** | Об’єкт, дія, проста інструкція, послідовність, DRY, KISS | Ясно поставити питання, порівняти результат з умовою, помічати помилки |
-| **2 клас** | Розподіл відповідальності, композиція, інкапсуляція та абстракція на моделях | Контекст, формат, обмеження, послідовне уточнення промптів, різні можливості моделей |
-| **3 клас** | Спадкування й поліморфізм на прикладах, Factory/Strategy/Observer, SRP | Інтуїтивне порівняння dense/MoE, квантизація, аргументований вибір моделі за характеристиками |
+| **Grade 1** | Objects, actions, simple instructions, sequences, DRY, KISS | Ask clear questions, compare results with requirements, notice errors |
+| **Grade 2** | Responsibilities, composition, encapsulation, and abstraction through models | Context, format, constraints, iterative prompt refinement, different model capabilities |
+| **Grade 3** | Inheritance and polymorphism through examples, Factory/Strategy/Observer, SRP | Intuitive dense/MoE comparison, quantization, evidence-based model selection |
 
-**Оцінювання через дії:** зібрати систему з блоків, знайти дублювання, замінити стратегію, передбачити реакцію на подію, поліпшити незрозумілий промпт, обрати модель за заданими вимогами й пояснити компроміс. Не вимагати дослівних визначень чи дорослого синтаксису. Таблиця — **орієнтир спіральної прогресії, а не норматив для кожної дитини**: складність регулюємо за готовністю та інтересом.
+**Assessment through actions:** assemble a system from blocks, identify duplication, replace a strategy, predict an event response, improve an unclear prompt, choose a model for defined requirements, and explain the trade-off. Do not insist on verbatim definitions or adult-level syntax. The table is **guidance for a spiral progression, not a compulsory standard for every child**: adjust depth to readiness and interest.
 
-## 3. «Як гра помістилася у 96 КБ?» — історія .kkrieger та процедурної генерації
+## 3. 'How Did a Game Fit into 96 KB?' — .kkrieger and Procedural Generation
 
-**Окремий інженерний кейс у «Інформатиці»**, пов’язаний з математикою (правила, функції, випадкові числа), мистецтвом (текстури й форми) та історією технологій. Центральний сюжет: **чому іноді вигідніше зберегти рецепт створення об’єкта, а не сам готовий об’єкт?**
+**An Informatics engineering case** linked to Mathematics (rules, functions, randomness), Art (textures and shapes), and the history of technology. Core question: **why might storing instructions for generating an object be better than storing the completed object?**
 
-**Перевірена історія:** у 2004 році команда **.theprodukkt**, пов’язана з німецькою демосценою Farbrausch, представила **.kkrieger** — експериментальний тривимірний шутер з виконуваним файлом близько **96 КБ** (у джерелах також наведено точний розмір **97 280 байтів**). Це **не Far Cry** і не гра розміром 10 КБ. Проєкт змагався в категорії ігор до 96 КБ на Breakpoint 2004.
+**Verified history:** in 2004, **.theprodukkt**, connected to the German demoscene group Farbrausch, released **.kkrieger**, an experimental 3D shooter with an executable around **96 KB** (sources also cite **97,280 bytes**). This was **not Far Cry**, nor a 10 KB game. The project competed in the 96 KB game category at Breakpoint 2004.
 
-**Як це працювало:**
-1. Замість збереження багатьох готових текстур, моделей та аудіоданих розробники описували частину контенту **правилами, параметрами й алгоритмами процедурної генерації**.
-2. Під час запуску програма обчислювала та збирала необхідні ресурси. Для звуку використовувався, зокрема, програмний синтезатор; для візуальної частини — генератори текстур та геометрії.
-3. Додатково застосовувалися оптимізація коду й упаковка виконуваного файла (серед інструментів — **kkrunchy**). Гра спиралася на наявні у Windows графічні й звукові бібліотеки **Direct3D / DirectSound** та ресурси комп’ютера.
-4. **Розмір файла на диску не дорівнював обсягу пам’яті чи обчислень під час роботи.** Створення ресурсів при запуску потребувало часу, оперативної пам’яті та роботи CPU/GPU; складні сцени могли мати вищі апаратні вимоги та обмеження. Ця техніка не робить усі ігри автоматично кращими чи меншими.
+**How it worked:**
+1. Instead of storing many completed textures, models, and audio files, the developers described some content through **rules, parameters, and procedural generation algorithms**.
+2. On startup, the program computed and assembled the required resources. Audio used, among other things, a software synthesizer; visuals used texture and geometry generators.
+3. Code optimization and executable packing were also used (including **kkrunchy**). The game relied on Windows graphics/audio libraries **Direct3D / DirectSound** and available computer hardware.
+4. **Disk file size was not the same as runtime memory use or computational workload.** Startup resource generation required time, RAM, and CPU/GPU work; complex scenes could have substantial hardware demands and limitations. The technique does not automatically make every game better or smaller.
 
-**Чому це було досягнення:** команда показала, що складна 3D-сцена з текстурами, звуком і ігровою механікою може виникнути з **дуже компактного опису**, якщо програмісти та художники разом створюють генеративні інструменти. Результат — не «магічне стиснення будь-якої гри», а **радикально інша організація ресурсів і компроміс між диском, процесором, відеокартою, пам’яттю та часом**. Це приклад демосценового інженерного експерименту, а не доказ того, що сучасну велику гру можна завжди вкласти в 96 КБ.
+**Why it mattered:** the team demonstrated that a complex 3D scene with textures, audio, and game mechanics can emerge from a **very compact description** when programmers and artists jointly develop generative tools. This was not 'magical compression of any game' but a **different organization of resources and a trade-off among storage, CPU, GPU, memory, and time**. It was a demoscene engineering experiment, not proof that any large modern game can always fit into 96 KB.
 
-**Навчальні інтерактиви:**
-- **«Збережи малюнок чи рецепт?»** — порівняти набір готових зображень із коротким алгоритмом їх створення. Показати обсяг даних і час обчислення, пояснивши, що це навчальна модель, а не реальні метрики .kkrieger.
-- **«Ліс з одного насіння»** — учень задає seed, кількість дерев, висоту та палітру; програма щоразу відтворює той самий ліс для однакових параметрів і алгоритму. Пояснити, що таке детермінована псевдовипадковість.
-- **«Лабораторія текстур»** — замість малювання кожного каменя вручну створити правило повторення й варіацій; змінити параметри та оцінити повторюваність, виразність і складність.
-- **«Знайди компроміс»** — для трьох умовних способів зберігання ресурсів (готові дані, стиснуті дані, процедурна генерація) зіставити розмір файла, час підготовки, споживання пам’яті та обчислення; **стиснення та генерація — не одне й те саме**.
+**Learning interactions:**
+- **'Save the Picture or the Recipe?'** — compare pre-rendered images with a short algorithm for making them. Show storage and computation time using clearly educational example numbers rather than actual .kkrieger measurements.
+- **'A Forest from One Seed'** — set a seed, tree count, height, and palette; the program reproduces the same forest for the same parameters and algorithm. Explain deterministic pseudorandomness.
+- **'Texture Lab'** — create a rule for repetition and variation instead of drawing every stone manually; change parameters and assess repeatability, visual expression, and complexity.
+- **'Find the Trade-off'** — compare three hypothetical storage strategies (ready-made data, compressed data, procedural generation) in file size, preparation time, memory use, and computation; **compression is not generation**.
 
-**Спіральна подача:** 1 клас — «рецепт проти готового малюнка»; 2 клас — параметри та повторюваний візерунок; 3 клас — seed, процедурне створення світу й обґрунтований вибір між зберіганням та обчисленням. Практика можлива без написання коду; цифри та рівень деталей мають бути адаптовані до віку.
+**Spiral progression:** Grade 1 — 'recipe versus completed picture'; Grade 2 — parameters and repeating patterns; Grade 3 — seeds, procedural world creation, and justified choices between storage and computation. Activities need not require writing code; adapt numbers and detail to learner age.
 
-**Історичні й технічні джерела:** [Game Developer / Gamasutra — інтерв’ю з Фабіаном Гізеном (12.04.2005)](https://www.gamedeveloper.com/design/interview-frugal-fragging-with-i-kkrieger-i-), [ComputerBase — репортаж про 96-КБ шутер (17.04.2004)](https://www.computerbase.de/news/gaming/kompletter-ego-shooter-mit-96-kb.10046/), [MobyGames — .kkrieger: Chapter 1](https://www.mobygames.com/game/31194/kkrieger-chapter-1/). Не приписувати генерацію лише CPU: графічні бібліотеки та GPU також важливі.
+**Historical and technical references:** [Game Developer / Gamasutra — interview with Fabian Giesen (2005-04-12)](https://www.gamedeveloper.com/design/interview-frugal-fragging-with-i-kkrieger-i-), [ComputerBase — report on a 96 KB shooter (2004-04-17)](https://www.computerbase.de/news/gaming/kompletter-ego-shooter-mit-96-kb.10046/), [MobyGames — .kkrieger: Chapter 1](https://www.mobygames.com/game/31194/kkrieger-chapter-1/). Do not attribute resource generation only to the CPU: graphics libraries and the GPU also mattered.
 
 ## 4. Алгоритми пошуку, можливість і ймовірність — «Знайди сюрприз»
 
