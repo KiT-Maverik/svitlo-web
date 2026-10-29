@@ -13,6 +13,7 @@ Svitlo is a modular interactive-learning project. Each textbook is a **standalon
 | `@svitlo/informatics` | `learningApps/informatics` | Informatics textbook scaffold |
 | `@svitlo/physics` | `learningApps/physics` | Physics textbook scaffold |
 | `@svitlo/language-literature` | `learningApps/language-literature` | Language and Literature textbook scaffold |
+| `@svitlo/ukrainian` | `learningApps/languages/ukrainian` | Ukrainian language textbook scaffold (under Languages) |
 | `@svitlo/chemistry` | `learningApps/chemistry` | Chemistry textbook scaffold |
 | `@svitlo/astronomy` | `learningApps/astronomy` | Astronomy textbook scaffold |
 | `@svitlo/history` | `learningApps/history` | History textbook scaffold |
@@ -43,7 +44,7 @@ npm run build
 npm run packages:artifacts:check
 ```
 
-Run a textbook: `npm run dev:<subject-slug>` (all 15 subjects). Run Platform: `npm run dev:platform`; Playground: `npm run dev`. Each Next.js app is independent; simultaneous development servers require different ports.
+Run a textbook: `npm run dev:<subject-slug>` (all 16 subjects). Run Platform: `npm run dev:platform`; Playground: `npm run dev`. Each Next.js app is independent; simultaneous development servers require different ports.
 
 Browser testing after `npx playwright install chromium` and a build:
 - `npm run test:e2e:db` — native IndexedDB controller Chromium suite

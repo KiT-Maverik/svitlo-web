@@ -41,6 +41,10 @@ const expected = [
     "name": "@svitlo/language-literature"
   },
   {
+    "path": "learningApps/languages/ukrainian",
+    "name": "@svitlo/ukrainian"
+  },
+  {
     "path": "learningApps/chemistry",
     "name": "@svitlo/chemistry"
   },
@@ -95,7 +99,7 @@ const expected = [
 ];
 const manifest = readJson('package.json');
 const lock = readJson('package-lock.json');
-const patterns = ["backend/*","frontend/*","learningApps/*","shared/*"];
+const patterns = ["backend/*","frontend/*","learningApps/*","learningApps/languages/*","shared/*"];
 
 function assert(ok, description) {
   if (!ok) throw new Error(description);
