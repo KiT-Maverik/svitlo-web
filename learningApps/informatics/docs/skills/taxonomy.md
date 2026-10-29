@@ -1471,410 +1471,406 @@ Distinguish the content of an external document being analyzed from the user's i
 [Not implemented](#)
 
 Avoid entering passwords, confirmation codes, access keys, or confidential information into chatbots without proper authorization and verified safeguards.
-### Робототехніка та автоматизація
+### Robotics and Automation
 
 Groups: 2 · Skills: 8
 
 [Not implemented](#)
 
-Розглядає програмну логіку керування фізичними чи змодельованими виконавцями за сигналами датчиків. Будову механізмів також може вивчати інженерія; у цій таксономії акцент на зв’язку інформації, правила та дії.
+Programming the control logic of physical or simulated actuators in response to sensor readings. Engineering may also study mechanical design; this taxonomy emphasizes the relationship among information, rules, and actions.
 
-#### Складові роботизованої системи
-
-Skills: 4
-
-[Not implemented](#)
-
-Інформаційні ролі датчика, контролера та виконавця: отримати показник, обробити його за правилом і змінити стан. Вивчається функціональний зв’язок компонентів, а не проєктування їхньої механічної конструкції.
-
-##### Визначати призначення датчика
-
-[Not implemented](#)
-
-Встановлювати, яку фізичну величину чи стан середовища датчик перетворює на сигнал для контролера, наприклад відстань, світло або температуру. Датчик постачає інформацію, але сам не ухвалює керувальне рішення.
-
-##### Визначати призначення виконавця
-
-[Not implemented](#)
-
-Розрізняти пристрій, який отримує команду й здійснює фізичну дію: двигун рухає колесо, а світлодіод змінює освітлення. Виконавець не є датчиком, навіть коли обидва з’єднані з одним контролером.
-
-##### Розпізнавати контролер робота
-
-[Not implemented](#)
-
-Пояснювати роль блока, який читає входи, виконує програмні правила та надсилає команди виконавцям. Контролер з’єднує інформацію й дію; він не обов’язково має вигляд окремого великого комп’ютера.
-
-##### Моделювати зв’язок між датчиком і дією
-
-[Not implemented](#)
-
-Установлювати відповідність між виміряним станом, правилом контролера та командою виконавцю, наприклад «якщо відстань менша за поріг — зупинити двигун». Відокремлювати значення датчика від рішення програми.
-
-#### Керування роботами
+#### Robotic System Components
 
 Skills: 4
 
 [Not implemented](#)
 
-Побудова та коригування команд для рухів, реакцій на перешкоди й повторюваних операцій робота. Від звичайного програмування відрізняється зв’язком алгоритму із фізичним або симульованим середовищем.
+Information-processing roles of sensors, controllers, and actuators: receive a reading, apply a control rule, and change a state. This examines functional relationships rather than mechanical component design.
 
-##### Створювати послідовність рухів робота
-
-[Not implemented](#)
-
-Планувати порядок команд переміщення, орієнтації та зупинки, які ведуть робота від початкового до заданого стану з урахуванням напрямку. Це кінематична задача керування, а не просте записування абстрактної послідовності слів.
-
-##### Реалізовувати реакцію робота на перешкоду
+##### Identify a Sensor's Purpose
 
 [Not implemented](#)
 
-Пов’язувати сигнал датчика або стан моделі з конкретним маневром — зупинкою, поворотом чи об’їздом — та перевіряти, що дія спрацьовує тільки за потрібної умови.
+Determine which physical quantity or environmental state a sensor converts into a signal for the controller, such as distance, light, or temperature. A sensor supplies information but does not itself make control decisions.
 
-##### Налаштовувати повторювану дію робота
-
-[Not implemented](#)
-
-Управляти кількістю повторів або умовою завершення фізичної чи змодельованої операції, наприклад повторювати перевірку датчика під час руху. Слід ураховувати зміну стану середовища між ітераціями.
-
-##### Налагоджувати поведінку робота
+##### Identify an Actuator's Purpose
 
 [Not implemented](#)
 
-Знаходити, чи помилка маршруту або реакції виникла в показнику датчика, умові контролера чи команді виконавцю, й виправляти відповідне правило. Налагодження потребує зіставлення очікуваної та спостереженої дії.
+Recognize a device that receives a command and performs a physical action: a motor rotates a wheel while an LED changes light output. An actuator is not a sensor even if connected to the same controller.
 
-### Цифрова безпека й відповідальність
+##### Identify a Robot Controller
+
+[Not implemented](#)
+
+Explain the component that reads inputs, executes programmed rules, and sends commands to actuators. The controller connects information with action and need not resemble a large standalone computer.
+
+##### Model the Sensor-to-Action Relationship
+
+[Not implemented](#)
+
+Relate a measured condition, a controller rule, and an actuator command, such as 'stop the motor if distance falls below the threshold.' Distinguish the sensor reading from the programmed decision.
+
+#### Robot Control
+
+Skills: 4
+
+[Not implemented](#)
+
+Construct and adjust commands for movement, obstacle response, and repeated robot operations. Unlike general programming, these algorithms interact with a physical or simulated environment.
+
+##### Create a Robot Movement Sequence
+
+[Not implemented](#)
+
+Plan the ordered movement, orientation, and stopping commands that take a robot from its initial to its target state, accounting for direction. This is a motion-control problem, not simply a sequence of abstract words.
+
+##### Implement Robot Obstacle Response
+
+[Not implemented](#)
+
+Link a sensor reading or simulated state to a maneuver such as stopping, turning, or bypassing an obstacle, and verify the action occurs only under the intended condition.
+
+##### Configure a Repeated Robot Action
+
+[Not implemented](#)
+
+Control the number of repetitions or termination condition of a physical or simulated operation, such as repeatedly checking a sensor while moving. Account for environmental changes between iterations.
+
+##### Debug Robot Behavior
+
+[Not implemented](#)
+
+Determine whether a navigation or response error arises from a sensor reading, controller condition, or actuator command, and correct the appropriate rule. Debugging requires comparing expected and observed actions.
+### Digital Safety and Responsibility
 
 Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
-Охоплює захист персональних даних, облікових записів, повагу до інших людей і наслідки цифрових технологій. Спеціальне проєктування та перевірка UX цифрових інтерфейсів належать до окремого інформатичного домену «UX цифрових продуктів».
+Protection of personal information and accounts, respect for others, and the consequences of digital technologies. Designing and testing digital interface UX belongs to a separate Informatics domain.
 
-#### Приватність
+#### Privacy
 
 Skills: 5
 
 [Not implemented](#)
 
-Розпізнавання відомостей про людину, рішення щодо кола одержувачів та оцінка довготривалих наслідків опублікування. Не тотожна захисту паролем або діям у відповідь на шахрайство.
+Identifying personal information, deciding who may receive it, and evaluating long-term consequences of disclosure. Privacy is not identical to password protection or responding to fraud.
 
-##### Розпізнавати персональні дані
-
-[Not implemented](#)
-
-Визначати відомості, які прямо або в поєднанні з іншими дозволяють ідентифікувати конкретну людину: ім’я з адресою, фото, контакт чи місцеперебування. Навіть окремий на вигляд безневинний факт може стати персональним у контексті.
-
-##### Обирати безпечний спосіб поширення даних
+##### Identify Personal Data
 
 [Not implemented](#)
 
-Визначати належне коло одержувачів і канал для матеріалу, враховуючи приватність, дозволи та ризик подальшого пересилання. Відкрита публікація може залишатися доступною після видалення в початковому сервісі.
+Recognize information that identifies a person directly or in combination: name with address, photograph, contact details, or location. Even a seemingly harmless fact may be personal in context.
 
-##### Розпізнавати цифровий слід
-
-[Not implemented](#)
-
-Пов’язувати онлайн-дії з записами, які можуть зберігатися в сервісах або в інших людей: публікаціями, коментарями, історією доступу. Видимість дії тільки для друзів не обов’язково означає повне зникнення її наслідків.
-
-##### Розрізняти приватний чат і публічне посилання
+##### Choose Safe Data-Sharing Methods
 
 [Not implemented](#)
 
-Перевіряти, кому може бути доступна поширена розмова або документ, та не вважати посилання автоматично приватним.
+Select an appropriate audience and channel, considering privacy, permissions, and the risk of forwarding. Public information may remain accessible even after deletion from its original service.
 
-##### Пояснювати повторну ідентифікацію даних
+##### Recognize a Digital Footprint
 
 [Not implemented](#)
 
-Знеособлені записи іноді можна співвіднести з конкретною людиною за зовнішніми підказками, наприклад типовим маршрутом і часом.
+Connect online actions with records retained by services or other people, such as posts, comments, and access history. Visibility only to friends does not ensure the consequences disappear.
 
-#### Захист облікового запису
+##### Distinguish a Private Chat from a Public Link
+
+[Not implemented](#)
+
+Check who can access a shared conversation or document; do not automatically assume a link is private.
+
+##### Explain Data Re-identification
+
+[Not implemented](#)
+
+Explain how supposedly anonymized records can sometimes be linked to a person through external clues, such as habitual routes and times.
+
+#### Account Protection
 
 Skills: 9
 
 [Not implemented](#)
 
-Зменшення ризику несанкціонованого доступу включає стійкі паролі, незалежні фактори входу, виявлення фішингу, оцінку посилань, перевірку адрес і безпечні реакції на контакти. Технічні налаштування захисту та поведінкові рішення доповнюють одне одного.
+Reducing unauthorized access involves strong passwords, independent authentication factors, phishing detection, link risk assessment, address verification, and safe responses to contacts. Technical security settings and behavioral choices reinforce one another.
 
-##### Створювати стійку парольну фразу
-
-[Not implemented](#)
-
-Обирати достатньо довгу, непередбачувану й унікальну для облікового запису послідовність слів або символів, не включаючи легкодоступні особисті дані. Не вимагати щоденно змінювати надійну фразу без підстав і не плутати складність символів із загальною надійністю.
-
-##### Пояснювати багатофакторну автентифікацію
+##### Create a Strong Passphrase
 
 [Not implemented](#)
 
-Пояснювати, чому для входу можуть поєднувати різні типи факторів — знання (пароль), володіння (пристрій або ключ) і біометричну ознаку. Два паролі одного типу не створюють двох незалежних факторів; MFA знижує ризик, але не робить обліковий запис невразливим.
+Select a sufficiently long, unpredictable, account-specific sequence of words or symbols without readily accessible personal details. Do not require daily password changes without a reason or mistake character variety for overall security.
 
-##### Налаштовувати багатофакторну автентифікацію
-
-[Not implemented](#)
-
-У безпечному навчальному або власному середовищі вибирати підтримуваний додатковий фактор, увімкнути його для облікового запису й передбачити спосіб відновлення доступу. Відрізняти фактичне налаштування захисту від загального пояснення його принципу; не вимагати розголошувати секретні коди.
-
-##### Розпізнавати фішингове повідомлення
+##### Explain Multi-Factor Authentication
 
 [Not implemented](#)
 
-За змістом і контекстом повідомлення визначати спробу виманити пароль, код підтвердження або інші секрети через удавану особу, терміновість, погрозу чи фальшиву форму. Це аналіз наміру та прийомів соціальної інженерії; технічна перевірка домену й вибір безпечної реакції — інші компетентності.
+Explain how different factor categories can be combined for sign-in: knowledge (password), possession (device or security key), and biometrics. Two passwords are not two independent factors; MFA lowers risk but cannot make an account invulnerable.
 
-##### Реагувати на підозрілий цифровий контакт
-
-[Not implemented](#)
-
-Обирати безпечну негайну дію після незрозумілого прохання або тиску в мережі: не передавати секрети, припинити взаємодію, перевірити особу незалежним каналом і звернутися до довіреного дорослого чи служби підтримки.
-
-##### Пояснювати потребу в оновленні програм
+##### Configure Multi-Factor Authentication
 
 [Not implemented](#)
 
-Розуміти, що перевірені оновлення можуть усувати вразливості й помилки, якими користуються зловмисники; пояснювати різницю між офіційним оновленням та підробленим запрошенням встановити невідомий файл.
+In a safe practice or personal environment, choose and activate a supported additional factor and plan account recovery. Distinguish configuring protection from merely explaining it; never require disclosure of secret codes.
 
-##### Оцінювати ризик переходу за посиланням
-
-[Not implemented](#)
-
-За контекстом отримання посилання, запитаною дією та ознаками небезпеки передбачати можливі наслідки переходу: фальшиву форму входу, завантаження підозрілого файла чи іншу небажану дію. Саме відкриття сторінки не означає автоматичного зараження; установлення справжнього домену — інша навичка.
-
-##### Перевіряти домен вебресурсу
+##### Recognize a Phishing Message
 
 [Not implemented](#)
 
-Встановлювати фактичний домен у посиланні, відділяючи його від піддомену, шляху та напису на кнопці, і виявляти підміни через незначну зміну написання або подібні символи. Наприклад, у `facebook.com.example.org` справжній домен — `example.org`; зовнішня схожість адреси або HTTPS не доводять доброчесності власника.
+Identify attempts to elicit passwords, confirmation codes, or secrets through impersonation, urgency, threats, or fake forms. This examines intent and social-engineering tactics; technical domain checks and safe responses are separate skills.
 
-##### Оцінювати справжність відправника листа
+##### Respond to Suspicious Digital Contact
 
 [Not implemented](#)
 
-Ім’я та зображення відправника не доводять його особу; важливо перевіряти адресу й незалежний канал зв’язку.
+Choose an immediate safe response to an unclear request or online pressure: do not reveal secrets, stop engaging, verify identity through an independent channel, and contact a trusted adult or official support.
 
-#### Етика цифрової взаємодії
+##### Explain Why Software Updates Matter
+
+[Not implemented](#)
+
+Explain how trusted updates can patch vulnerabilities and defects exploited by attackers; distinguish official updates from fake prompts to install unfamiliar files.
+
+##### Assess the Risk of Following a Link
+
+[Not implemented](#)
+
+Based on context, requested actions, and warning signs, predict possible consequences such as fake login forms, suspicious downloads, or other unwanted behavior. Opening a page does not automatically cause infection; identifying the true domain is a different skill.
+
+##### Verify a Website's Domain
+
+[Not implemented](#)
+
+Determine the actual domain in a link, separating it from subdomains, paths, and button labels, and detect impersonation through minor spelling changes or lookalike characters. In `facebook.com.example.org` the domain is `example.org`; visual similarity or HTTPS does not prove that an operator is trustworthy.
+
+##### Assess an Email Sender's Authenticity
+
+[Not implemented](#)
+
+Recognize that a sender's displayed name and image do not prove identity; check the address and an independent communication channel.
+
+#### Ethics of Digital Interaction
 
 Skills: 4
 
 [Not implemented](#)
 
-Повага до інших учасників мережі та прав на матеріали, зокрема розпізнавання цькування, атрибуція і ліцензійні умови. Відокремлює соціальні норми та авторське право від технічних способів захисту акаунта.
+Respect for other users and creators' rights, including recognizing bullying, attribution, and licensing conditions. Social norms and copyright differ from technical account protection.
 
-##### Визначати прийнятну онлайн-поведінку
-
-[Not implemented](#)
-
-Розпізнавати поважні й неприйнятні способи цифрової комунікації, зокрема повторювані приниження, погрози та цькування. Розходження в думках саме по собі не є кібербулінгом, а шкідливі повідомлення не стають прийнятними через анонімність.
-
-##### Атрибутувати цифрові матеріали
+##### Identify Appropriate Online Behavior
 
 [Not implemented](#)
 
-Під час використання чужого тексту, зображення, звуку або коду зазначати автора та першоджерело в доречному форматі. Наявність атрибуції не замінює дозволу на використання й не скасовує вимог конкретної ліцензії.
+Distinguish respectful communication from repeated humiliation, threats, and bullying. Disagreement alone is not cyberbullying, and anonymity does not make harmful messages acceptable.
 
-##### Обирати безпечний спосіб повідомити про проблему
-
-[Not implemented](#)
-
-Визначати, коли звернутися до довіреного дорослого, модератора чи офіційної підтримки та яку мінімальну інформацію передати без розголошення чужих даних. Вибір адресата відрізняється від першочергової реакції на небезпечне повідомлення.
-
-##### Розрізняти умови ліцензування цифрового контенту
+##### Attribute Digital Materials
 
 [Not implemented](#)
 
-Читати прості дозволи та обмеження щодо копіювання, зміни й поширення текстів, зображень, звуків чи програм. Безкоштовний доступ, суспільне надбання та відкриті ліцензії — різні правові умови.
+When using another person's text, images, sound, or code, credit the creator and original source in an appropriate format. Attribution does not replace permission and does not override licensing terms.
 
-#### Суспільний та екологічний вплив обчислень
+##### Choose a Safe Way to Report a Problem
+
+[Not implemented](#)
+
+Determine when to contact a trusted adult, moderator, or official support and what minimum information to share without exposing other people's data. Selecting a reporting recipient differs from the immediate response to a dangerous message.
+
+##### Distinguish Digital Content Licenses
+
+[Not implemented](#)
+
+Read basic permissions and restrictions for copying, changing, and sharing text, images, sounds, or programs. Free access, the public domain, and open licenses are different legal conditions.
+
+#### Social and Environmental Impact of Computing
 
 Skills: 2
 
 [Not implemented](#)
 
-Наслідки цифрових систем для різних груп людей та довкілля: нерівномірний розподіл вигод і шкоди, енергоспоживання, матеріали та електронні відходи. Оцінка впливу потребує визначеного контексту, а не загального ярлика «корисно/шкідливо».
+Digital systems may affect social groups and the environment through uneven benefits and harms, energy consumption, material use, and electronic waste. Evaluation requires a specific context, not an abstract 'good/bad' label.
 
-##### Оцінювати вплив алгоритму на різні групи користувачів
-
-[Not implemented](#)
-
-Порівнювати, чи однакове автоматизоване правило створює різні наслідки для людей із різними потребами або характеристиками, й пояснювати можливе джерело нерівності. Формально однакове правило не завжди означає однаково справедливий результат.
-
-##### Оцінювати вплив обчислень на довкілля
+##### Assess an Algorithm's Impact on User Groups
 
 [Not implemented](#)
 
-Пов’язувати використання цифрових пристроїв і сервісів із витратами енергії, видобуванням матеріалів, строком служби обладнання та електронними відходами. Порівняння варіантів має враховувати більше ніж лише електрику під час одного запуску.
+Compare whether an automated rule produces different consequences for people with different characteristics or needs, and explain potential reasons. An identical formal rule does not necessarily yield an equally fair outcome.
 
-### UX цифрових продуктів
+##### Assess Computing's Environmental Impact
+
+[Not implemented](#)
+
+Connect devices and services with energy consumption, resource extraction, hardware lifespan, and electronic waste. Comparing alternatives requires more than electricity used during one run.
+### Digital Product UX
 
 Groups: 3 · Skills: 8
 
 [Not implemented](#)
 
-Окремий інформатичний погляд на досвід взаємодії людей із програмами, цифровими пристроями й електронними інтерфейсами: завдання, навігація, зворотний зв’язок, доступність, зручність та етичність. Engineering паралельно вивчає UX фізичних виробів і цілих інженерних систем; спільна назва дисципліни не змушує предмети використовувати спільні Skill-ідентичності.
+An Informatics perspective on people's experience with programs, digital devices, and electronic interfaces: goals, navigation, feedback, accessibility, usability, and ethics. Engineering separately studies UX for physical products and engineering systems; a shared discipline name does not imply shared Skill identities across textbooks.
 
-#### Проєктування цифрової взаємодії
+#### Digital Interaction Design
 
 Skills: 4
 
 [Not implemented](#)
 
-Проєктування послідовності дій користувача в застосунку або на цифровому пристрої, зрозумілих переходів, повідомлень про стан і запобігання типовим помилкам.
+Designing user action flows in applications and digital devices, understandable transitions, status feedback, and safeguards against common errors.
 
-##### Визначати мету користувача цифрового продукту
-
-[Not implemented](#)
-
-Визначати, яку конкретну дію людина прагне виконати на цифровому пристрої або у програмі, та відрізняти її мету від внутрішніх технічних операцій системи.
-
-##### Проєктувати навігацію цифрового інтерфейсу
+##### Identify a Digital Product User's Goal
 
 [Not implemented](#)
 
-Організовувати переходи між екранами, розділами чи станами так, щоб користувач міг знаходити потрібну дію та розуміти, де він перебуває у цифровому продукті.
+Determine the specific action a person intends to perform in a program or on a digital device, distinguishing the user goal from internal technical system operations.
 
-##### Проєктувати зворотний зв’язок цифрового інтерфейсу
-
-[Not implemented](#)
-
-Передбачати зрозуміле повідомлення про результат натискання, завантаження, помилку або завершення дії, щоб людина не здогадувалася, чи система відреагувала.
-
-##### Запобігати типовим помилкам цифрової взаємодії
+##### Design Digital Interface Navigation
 
 [Not implemented](#)
 
-Розпізнавати дії, які легко виконати помилково, й добирати цифрові запобіжники: зрозумілі назви, перевірку введення або підтвердження незворотної операції.
+Organize transitions among screens, sections, or states so users can find desired actions and understand their current position within a digital product.
 
-#### Доступність
+##### Design Digital Interface Feedback
+
+[Not implemented](#)
+
+Provide clear feedback about taps, loading, errors, and completed actions so people need not guess whether the system has responded.
+
+##### Prevent Common Digital Interaction Errors
+
+[Not implemented](#)
+
+Identify actions that are easy to perform incorrectly and choose digital safeguards, such as clear labels, input validation, or confirmation before irreversible operations.
+
+#### Accessibility
 
 Skills: 2
 
 [Not implemented](#)
 
-Урахування відмінностей у способах сприйняття й керування цифровими інтерфейсами та перевірка реальної можливості використання, а не тільки зовнішньої привабливості.
+Address different ways people perceive and operate interfaces and verify actual usability rather than judging only visual appeal.
 
-##### Визначати потреби користувачів із різними можливостями
-
-[Not implemented](#)
-
-Встановлювати, як користувач із різним зором, слухом, моторикою або способом введення отримує інформацію та керує цифровим продуктом. Наприклад, недоступне лише мишкою керування створює бар’єр для користувача клавіатури.
-
-##### Перевіряти доступність цифрової взаємодії
+##### Identify Needs of Users with Different Abilities
 
 [Not implemented](#)
 
-Перевіряти конкретні способи користування інтерфейсом без миші, без звуку або за збільшеного тексту й фіксувати бар’єри. Відсутність скарг чи гарний зовнішній вигляд не є доказом доступності.
+Determine how people with different vision, hearing, motor abilities, or input methods access information and control a digital product. Mouse-only controls, for example, create barriers for keyboard users.
 
-#### Оцінювання досвіду та етичність
+##### Test Digital Interaction Accessibility
+
+[Not implemented](#)
+
+Test concrete interaction methods without a mouse, without sound, or with enlarged text and record barriers. No complaints or an attractive design do not prove accessibility.
+
+#### Experience Evaluation and Ethics
 
 Skills: 2
 
 [Not implemented](#)
 
-Перевірка придатності цифрового інтерфейсу для реальних завдань та розпізнавання рішень, що приховано обмежують усвідомлений вибір користувача.
+Test whether an interface supports real tasks and identify designs that covertly restrict users' informed choices.
 
-##### Перевіряти зручність цифрового інтерфейсу
-
-[Not implemented](#)
-
-Давати людині конкретне завдання на цифровому пристрої чи в застосунку й спостерігати, чи знаходить вона потрібні дії без підказок; виявляти незрозумілі переходи й повідомлення.
-
-##### Розпізнавати маніпулятивні інтерфейсні рішення
+##### Test Digital Interface Usability
 
 [Not implemented](#)
 
-Знаходити конструкції, що приховано підштовхують до небажаної дії: заплутане скасування, попередньо обрані додаткові опції або оманливе формулювання кнопки. Відрізняти переконливий дизайн від прихованого обмеження усвідомленого вибору.
+Give a person a concrete task on a device or in an app and observe whether they find the necessary actions without hints; identify confusing transitions and messages.
 
-### Цифрова творчість та ігри
+##### Identify Manipulative Interface Patterns
+
+[Not implemented](#)
+
+Recognize designs that covertly steer people toward unwanted choices, such as confusing cancellation, preselected add-ons, or deceptive button wording. Distinguish persuasive design from hidden restrictions on informed choice.
+### Digital Creativity and Games
 
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Охоплює створення та редагування цифрових матеріалів, правила ігрових механік і процедурне породження ресурсів. UX цифрових продуктів має власний домен, а музичні й інженерні навчальні інструменти самі собою не створюють інформатичних компетентностей.
+Creating and editing digital content, game mechanics and rules, and procedural generation of resources. Digital product UX has its own domain, while the use of musical or engineering learning tools does not in itself create Informatics skills.
 
-#### Цифрові матеріали
-
-Skills: 3
-
-[Not implemented](#)
-
-Створення, змінювання й вибір інструмента для цифрового результату, що має конкретне призначення. Наприклад, редагування готового файлу перевіряє іншу дію, ніж вибір засобу для майбутньої роботи.
-
-##### Створювати простий цифровий матеріал
-
-[Not implemented](#)
-
-Поєднувати текст, зображення або інші елементи в завершений цифровий артефакт із визначеним повідомленням та адресатом, наприклад пояснювальну картку. Важлива смислова цілісність, а не використання конкретного редактора.
-
-##### Редагувати цифровий матеріал
-
-[Not implemented](#)
-
-Вносити цільові зміни до наявного файла, перевіряючи, чи збережено потрібний зміст: виправити підпис, змінити порядок елементів або адаптувати розмір зображення. Це інша дія, ніж первинне створення матеріалу.
-
-##### Добирати інструмент цифрової творчості
-
-[Not implemented](#)
-
-Зіставляти технічні властивості цифрового засобу з вимогами до результату, наприклад відрізняти редактор зображень від інструмента для впорядкування табличних записів. Ця цифрова компетентність не означає, що інформатика повинна пояснювати будову програм, які учні використовують як засіб навчання в інших предметах.
-
-#### Геймдизайн
+#### Digital Materials
 
 Skills: 3
 
 [Not implemented](#)
 
-Визначення правил, створення механік та перевірка їхнього впливу на ігровий досвід. Опис правила, його реалізація як взаємодії й перевірка балансу — послідовні, але окремо оцінювані дії.
+Creating, modifying, and selecting tools for digital outcomes with specific purposes. Editing an existing file, for example, is a distinct action from choosing a tool for future work.
 
-##### Формулювати правило гри
-
-[Not implemented](#)
-
-Записувати умову, дозволену дію або наслідок так, щоб різні гравці однаково розуміли правила. Наприклад, за яких обставин нараховується бал і коли завершено раунд.
-
-##### Проєктувати ігрову механіку
+##### Create a Simple Digital Artifact
 
 [Not implemented](#)
 
-Визначати зв’язок дії гравця зі зміною стану гри та її зворотним зв’язком: натискання запускає рух, а зіткнення з об’єктом змінює рахунок. Механіка робить правило дієвим у системі, не лише описаним у тексті.
+Combine text, images, or other elements into a finished artifact with a defined message and audience, such as an explanatory card. Meaningful coherence matters more than a particular editor.
 
-##### Перевіряти баланс простої гри
+##### Edit a Digital Artifact
 
 [Not implemented](#)
 
-Випробовувати, чи правила й обмеження не роблять один вибір завжди виграшним або гру неможливою для завершення, зіставляючи результат із задумом. Баланс залежить від цілей гри; рівні шанси всіх дій не є універсальною вимогою.
+Make purposeful changes to an existing file while preserving intended meaning: correct a caption, reorder elements, or resize an image. This is distinct from creating a new artifact.
 
-#### Процедурна генерація
+##### Choose a Digital Creative Tool
+
+[Not implemented](#)
+
+Match a tool's technical capabilities to desired outcomes, such as distinguishing an image editor from a spreadsheet tool. This competency does not require Informatics to teach the internal structure of tools students happen to use in other subjects.
+
+#### Game Design
+
+Skills: 3
+
+[Not implemented](#)
+
+Define game rules, create mechanics, and evaluate their effects on gameplay. Describing a rule, implementing it as interaction, and testing balance are related but independently assessable.
+
+##### Formulate a Game Rule
+
+[Not implemented](#)
+
+State a condition, permitted action, or consequence clearly enough that players interpret it consistently—for example, when points are awarded and when a round ends.
+
+##### Design a Game Mechanic
+
+[Not implemented](#)
+
+Define the relationship between a player's action, a change in game state, and feedback: pressing a control initiates movement; collision with an object changes the score. A mechanic makes a rule operative, not just a written description.
+
+##### Test the Balance of a Simple Game
+
+[Not implemented](#)
+
+Test whether rules and limitations make one choice always winning or render a game impossible to finish; compare outcomes with the design goal. Balance depends on game objectives; equal odds for every action are not universal requirements.
+
+#### Procedural Generation
 
 Skills: 4
 
 [Not implemented](#)
 
-Створення зображень, звуків, об’єктів або ігрових світів за правилами та параметрами, а не шляхом зберігання кожного готового варіанта. Розрізняє зміну параметрів, відтворюваність за seed та ресурсні компроміси.
+Produce images, sounds, objects, or game worlds through rules and parameters instead of storing every finished variant. Distinguish parameter changes, reproducibility through a seed, and resource trade-offs.
 
-##### Пояснювати процедурне створення ресурсу
-
-[Not implemented](#)
-
-Відрізняти зберігання готового зображення, звуку чи світу від запуску правил, які породжують результат за параметрами. Короткий опис правил може створити великий ресурс, але вимагає обчислень під час генерації.
-
-##### Налаштовувати параметри генератора
+##### Explain Procedural Resource Generation
 
 [Not implemented](#)
 
-Визначати, як зміна числа об’єктів, кольорової палітри чи іншого параметра змінює породжуваний результат за незмінного алгоритму. Не плутати регулювання параметра з переписуванням самого правила генерації.
+Distinguish storing a finished image, sound, or world from running rules that generate one from parameters. Compact rules can create a large resource but require computation at generation time.
 
-##### Відтворювати результат за насінням генерації
-
-[Not implemented](#)
-
-Пояснювати, чому однакове насіння псевдовипадкового генератора разом із незмінними алгоритмом, параметрами та порядком викликів дає той самий результат. Зміна будь-якого з цих чинників може зруйнувати відтворюваність.
-
-##### Порівнювати зберігання і генерацію ресурсів
+##### Configure Generator Parameters
 
 [Not implemented](#)
 
-Оцінювати компроміс між обсягом готових даних, розміром опису правил, часом запуску та ресурсами CPU/GPU/RAM. Процедурна генерація не тотожна безвтратному чи втратному стисненню готового файла.
+Determine how changing object count, color palette, or another parameter alters generated results while the algorithm stays the same. Parameter adjustment is not rewriting the generation rules.
 
+##### Reproduce Results Using a Generation Seed
+
+[Not implemented](#)
+
+Explain why the same pseudorandom seed, algorithm, parameters, and call order produce identical results. Changing any of these may break reproducibility.
+
+##### Compare Resource Storage and Generation
+
+[Not implemented](#)
+
+Assess trade-offs between stored data volume, compact rule descriptions, initialization time, and CPU/GPU/RAM use. Procedural generation is not the same as lossless or lossy compression of a ready-made file.
 ### Структури даних
 
 Groups: 8 · Skills: 34
