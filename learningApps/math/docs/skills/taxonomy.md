@@ -918,97 +918,97 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/readExpressi
 
 У 12 ÷ 3 число 12 — уся кількість, 3 задає розподіл, а 4 — його результат у відповідній моделі.
 
-##### Обчислювати табличні випадки ділення на 2
+##### Division — ÷ 2
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by2.data.ts)
 
 Для ділення на 2 корисна модель половини парної кількості: 14 ÷ 2 = 7.
 
-##### Обчислювати табличні випадки ділення на 3
+##### Division — ÷ 3
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by3.data.ts)
 
 У 18 ÷ 3 добуток 3 × 6 = 18 відразу дає частку 6.
 
-##### Обчислювати табличні випадки ділення на 4
+##### Division — ÷ 4
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by4.data.ts)
 
 Поділ 24 на чотири рівні частини має результат 6; перевірка — 4 × 6.
 
-##### Обчислювати табличні випадки ділення на 5
+##### Division — ÷ 5
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by5.data.ts)
 
 Оскільки 5 × 7 = 35, ділення 35 на 5 повертає сім рівних груп.
 
-##### Обчислювати табличні випадки ділення на 6
+##### Division — ÷ 6
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by6.data.ts)
 
 Для 36 ÷ 6 частка 6 випливає з відомого квадрата шістки.
 
-##### Обчислювати табличні випадки ділення на 7
+##### Division — ÷ 7
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by7.data.ts)
 
 Поділ 42 на сім повних груп дає по шість у кожній.
 
-##### Обчислювати табличні випадки ділення на 8
+##### Division — ÷ 8
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by8.data.ts)
 
 Добуток 8 × 4 = 32 дає діленню 32 ÷ 8 частку 4.
 
-##### Обчислювати табличні випадки ділення на 9
+##### Division — ÷ 9
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by9.data.ts)
 
 Табличне ділення 54 ÷ 9 пов’язане з добутком 9 × 6 = 54.
 
-##### Пояснювати й застосовувати ділення на 1 та числа на самого себе (для ненульового числа)
+##### Division — ÷ 1 · a ÷ a
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by1AndSelf.data.ts)
 
 Ділити на один означає залишити всю кількість в одній групі; ненульове число, поділене на себе, дає одну групу.
 
-##### Пояснювати результат ділення нуля на ненульове число
+##### Division — Zero dividend
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/zeroDividend.data.ts)
 
 Якщо нуль предметів розподілити між трьома учасниками, кожен отримає нуль; дільник має бути ненульовим.
 
-##### Розпізнавати, що ділення на нуль не визначене
+##### Division — Division by Zero
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/noDivisionByZero.data.ts)
 
 Не існує визначеної частки для 5 ÷ 0; її не можна встановити множенням на нуль.
 
-##### Знаходити половину парної кількості та пов’язувати це з подвоєнням
+##### Division — Halving and doubling
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/doubleHalf.data.ts)
 
 Половина 18 — дев’ять, бо дві рівні дев’ятки утворюють 18; зв’язок працює й у зворотному напрямку.
 
-##### Ділити круглі десятки на одноцифрові числа в межах 1000
+##### Division — Whole tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/roundTens.data.ts)
 
 У 80 ÷ 4 вісім десятків ділять на чотири групи, отримуючи по два десятки.
 
-##### Ділити круглі сотні на одноцифрові числа в межах 1000
+##### Division — Whole hundreds
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/roundHundreds.data.ts)
 
 У 600 ÷ 3 шість сотень поділяють на три рівні частини — по дві сотні.
 
-##### Ділити двоцифрові числа на одноцифрові позатабличним способом
+##### Division — 2-digit÷1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/twoDigitByOne.data.ts)
 
 Для 84 ÷ 4 можна поділити 80 та 4 окремо, а потім додати частки.
 
-##### Ділити окремі трицифрові числа на одноцифрові через розрядний розклад
+##### Division — 3-digit÷1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/threeDigitByOne.data.ts)
 
