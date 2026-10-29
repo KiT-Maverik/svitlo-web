@@ -1,14 +1,14 @@
-# Фізика — Skills Taxonomy
+# Physics — Skills Taxonomy
 
 Date: 2026-10-29
 
-Редакційний **Draft** предметної таксономії фізики. Кожен Skill описує самостійну фізичну компетентність без обмеження глибини її опанування, віку, рівня Curriculum, допустимих формул, методу навчання або способу оцінювання. Різні незалежні програми можуть включати той самий Skill на різній глибині й у різних послідовностях; жодна програма не визначає межі предметного каталогу.
+Editorial **Draft** of the subject-specific Physics taxonomy. Each Skill describes an independent physics competency without imposing limits on the depth of mastery, age, Curriculum level, permissible formulas, teaching method, or assessment approach. Different independent curricula may include the same Skill at different depths and in different sequences; no single curriculum sets the boundaries of the subject catalog.
 
-Фізика описує закономірності природних явищ і пояснює принципи, використані в техніці. Конструювання, добір компонентів та оптимізація пристроїв належать до підручника «Інженерія». Загальний науковий метод належить до «Людина та мислення». Міжпредметні посилання на ці теми не створюють спільних глобальних Skill IDs.
+Physics describes the laws governing natural phenomena and explains principles used in technology. Designing, selecting components for, and optimizing devices belong to the Engineering textbook. General scientific methodology belongs to Human and Thinking. Cross-subject references to these topics do not establish shared global Skill IDs.
 
-**Потребує редакційного рішення:** межа механіки й інженерії для простих механізмів і конструктивної стійкості; розмежування хвиль, оптики, випромінювання і теплового випромінювання. Збереження імпульсу, моменту імпульсу та електричного заряду розміщено в їхніх відповідних предметних групах, не в домені «Енергія».
+**Requires an editorial decision:** the boundary between Mechanics and Engineering for simple machines and structural stability; distinctions among waves, optics, radiation, and thermal radiation. Conservation of linear momentum, angular momentum, and electric charge are placed in their respective subject groups, not in the Energy Domain.
 
-Орієнтири: [OpenStax University Physics](https://openstax.org/books/university-physics-volume-1/pages/preface), [OpenStax: хвильові явища](https://openstax.org/books/physics/pages/13-3-wave-interaction-superposition-and-interference), [Studio Subject Proposition](../../../../studio/Subject%20Proposition.md). Матеріал використано для перевірки предметного охоплення, а не як готову програму чи буквальну структуру Svitlo.
+References: [OpenStax University Physics](https://openstax.org/books/university-physics-volume-1/pages/preface), [OpenStax: Wave Interaction](https://openstax.org/books/physics/pages/13-3-wave-interaction-superposition-and-interference), [Studio Subject Proposition](../../../../studio/Subject%20Proposition.md). These materials were used to check subject coverage, not as a ready-made curriculum or a literal structure for Svitlo.
 
 ## SUMMARY
 
@@ -20,315 +20,315 @@ Code files: 0/12 Domains · 0/48 Groups · 0/180 Skills
 
 ## DOMAINS
 
-### Вимірювання
+### Measurement
 
 Groups: 2 · Skills: 7
 
 Code: [Not implemented](#)
 
-Фізичне вимірювання пов'язує спостережувану властивість із узгодженим способом порівняння: вибором величини, одиниці та приладу. Його завдання — зробити опис явищ відтворюваним без прив'язки до формул чи уроків математики.
+Physical measurement connects an observable property to an agreed method of comparison through the choice of quantity, unit, and instrument. Its purpose is to make descriptions of phenomena reproducible without tying them to formulas or mathematics lessons.
 
-#### Фізичні величини та одиниці
+#### Physical Quantities and Units
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Один і той самий предмет можна описати різними величинами; для порівняння однієї величини потрібні сумісні одиниці та умови спостереження.
+A single object can be described using different quantities; comparisons of the same quantity require compatible units and observation conditions.
 
-##### Розрізняти фізичну величину та її одиницю вимірювання
-
-Code: [Not implemented](#)
-
-Фізична величина описує властивість тіла або явища, а одиниця задає узгоджений масштаб її кількісного вираження; довжина та сантиметр мають різні ролі.
-
-##### Добирати одиницю для опису знайомої фізичної величини
+##### Distinguish a physical quantity from its unit of measurement
 
 Code: [Not implemented](#)
 
-Вибирати доречні одиниці часу, довжини та маси на побутових прикладах, не змішуючи фізичну величину із предметом.
+A physical quantity describes a property of a body or phenomenon, whereas a unit establishes an agreed scale for expressing it numerically; length and centimeter serve different roles.
 
-##### Порівнювати результати вимірювання однієї величини
-
-Code: [Not implemented](#)
-
-За однакових одиниць і зрозумілих умов визначати, яке виміряне значення більше чи менше; це фізична інтерпретація, а не тренування арифметики.
-
-##### Пояснювати фізичний зміст маси тіла
+##### Select a unit for a familiar physical quantity
 
 Code: [Not implemented](#)
 
-Маса характеризує інертність тіла: за однакової дії тіло більшої маси зазвичай важче змінює свій рух. Її не слід ототожнювати із силою тяжіння, що може залежати від місця перебування.
+Choose appropriate units of time, length, and mass in everyday examples without confusing a physical quantity with an object.
 
-#### Прилади та спосіб вимірювання
+##### Compare measurements of the same quantity
+
+Code: [Not implemented](#)
+
+Given consistent units and clearly stated conditions, determine which measured value is larger or smaller; this is physical interpretation, not arithmetic practice.
+
+##### Explain the physical meaning of a body's mass
+
+Code: [Not implemented](#)
+
+Mass characterizes a body's inertia: under the same applied influence, a more massive body is generally harder to change in motion. Mass must not be equated with gravitational force, which can depend on location.
+
+#### Instruments and Measurement Methods
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Показ приладу залежить від шкали, одиниці та належного застосування; спосіб отримання даних важливий не менше за саме число.
+An instrument's reading depends on its scale, units, and correct use; the method of obtaining data matters as much as the number itself.
 
-##### Зчитувати температуру з термометра
-
-Code: [Not implemented](#)
-
-Зіставляти положення покажчика або стовпчика робочої рідини зі шкалою та одиницями температури, враховуючи початок відліку й межі вимірювання.
-
-##### Зчитувати покази простого вимірювального приладу
+##### Read temperature from a thermometer
 
 Code: [Not implemented](#)
 
-Правильно пов'язувати вимірювану величину з положенням покажчика на шкалі, одиницями та початком відліку; показ приладу має фізичний зміст лише з відповідними умовами вимірювання.
+Relate the position of a pointer or liquid column to the temperature scale and units, accounting for the scale origin and measurement limits.
 
-##### Пояснювати, чому повторні вимірювання можуть відрізнятися
+##### Read a simple measuring instrument
 
 Code: [Not implemented](#)
 
-Результати повторного вимірювання відрізняються через обмеження точності приладу, спосіб відліку або зміну умов; різниця значень не завжди означає зміну вимірюваного явища.
+Correctly relate the measured quantity to the position of a pointer on a scale, its units, and the zero reference; a reading has physical meaning only under the relevant measurement conditions.
 
-### Механіка
+##### Explain why repeated measurements may differ
+
+Code: [Not implemented](#)
+
+Repeated measurements can differ because of instrument precision limits, reading methods, or changing conditions; a difference in values does not always mean that the measured phenomenon has changed.
+
+### Mechanics
 
 Groups: 6 · Skills: 21
 
 Code: [Not implemented](#)
 
-Механіка описує зміну положення тіл у часі, інерційні властивості руху й передавання механічної дії через прості системи. Первинне пояснення типів сил та рівноваги виділено в сусідній домен.
+Mechanics describes changes in bodies' positions over time, the inertial properties of motion, and the transmission of mechanical action through simple systems. Basic explanations of types of forces and equilibrium are assigned to the neighboring Domain.
 
-#### Опис руху
+#### Describing Motion
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Положення, напрямок, швидкість та повторюваність потрібні для якісного опису траєкторії; рух завжди розглядають відносно обраного орієнтира.
+Position, direction, speed, and repetition are needed for a qualitative description of a trajectory; motion is always considered relative to a chosen reference.
 
-##### Визначати рух відносно орієнтира
-
-Code: [Not implemented](#)
-
-Рух є зміною положення тіла відносно системи відліку з часом; один об'єкт може одночасно рухатися щодо одного орієнтира й залишатися нерухомим щодо іншого.
-
-##### Описувати напрямок руху
+##### Identify motion relative to a reference point
 
 Code: [Not implemented](#)
 
-Визначати напрямок швидкості або переміщення тіла відносно обраної системи відліку, відрізняючи напрям від загальної довжини пройденого шляху.
+Motion is a change in a body's position relative to a reference frame over time; an object can move relative to one reference and remain stationary relative to another.
 
-##### Порівнювати швидкість руху
-
-Code: [Not implemented](#)
-
-Швидкість пов'язує переміщення або шлях із часом; порівняння враховує, чи йдеться про однакові проміжки часу або різні інтервали руху.
-
-##### Розпізнавати повторюваний рух
+##### Describe the direction of motion
 
 Code: [Not implemented](#)
 
-Виявляти повторення фізичних станів і розрізняти регулярні цикли руху та випадкові або одноразові зміни положення.
+Determine the direction of a body's velocity or displacement relative to a selected reference frame, distinguishing direction from the total distance traveled.
 
-#### Інерція та зміна руху
+##### Compare speeds of motion
+
+Code: [Not implemented](#)
+
+Speed relates displacement or distance to time; comparisons account for whether the same time intervals or different periods of motion are involved.
+
+##### Recognize periodic motion
+
+Code: [Not implemented](#)
+
+Identify recurring physical states and distinguish regular cycles of motion from random or one-time changes in position.
+
+#### Inertia and Changes in Motion
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Тіло може продовжувати рухатися після припинення дії, а зміна руху пов'язана з взаємодією; доступні моделі не потребують рівнянь руху.
+A body may continue moving after an applied action ceases, while changes in motion are associated with interaction; accessible models do not require equations of motion.
 
-##### Розпізнавати прояв інерції на прикладах руху
-
-Code: [Not implemented](#)
-
-Пояснювати, чому предмет або пасажир прагне зберігати попередній стан руху під час різкої зміни швидкості.
-
-##### Розрізняти рівномірний і нерівномірний рух
+##### Recognize manifestations of inertia in motion
 
 Code: [Not implemented](#)
 
-За послідовними положеннями об'єкта порівнювати, чи однакові відстані він проходить за однакові проміжки часу.
+Explain why an object or passenger tends to maintain its previous state of motion during an abrupt change in speed.
 
-#### Прості механізми
+##### Distinguish uniform from nonuniform motion
+
+Code: [Not implemented](#)
+
+Compare successive positions of an object to determine whether it travels equal distances in equal time intervals.
+
+#### Simple Machines
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Важелі, блоки, колеса та шестерні демонструють передавання сили й обертання. Тут оцінюють фізичний принцип, а не вибір конструкції чи проєктування машини.
+Levers, pulleys, wheels, and gears demonstrate the transmission of force and rotation. The focus here is on physical principles, not selecting a design or engineering a machine.
 
-##### Пояснювати дію важеля
-
-Code: [Not implemented](#)
-
-Механічна перевага важеля залежить від відстаней між точкою опори й місцями прикладання сил; виграш у силі пов'язаний із відповідною зміною переміщення.
-
-##### Пояснювати дію колеса й осі
+##### Explain how a lever works
 
 Code: [Not implemented](#)
 
-Спільне обертання колеса та осі дає змогу передавати рух і змінювати співвідношення прикладених сил та переміщень; колесо також може змінювати характер тертя.
+A lever's mechanical advantage depends on distances between the fulcrum and the points where forces are applied; gaining force involves a corresponding change in displacement.
 
-##### Пояснювати дію блока
-
-Code: [Not implemented](#)
-
-Нерухомий блок змінює напрям прикладання сили, а рухомий може зменшувати необхідну силу завдяки розподілу навантаження між ділянками мотузки.
-
-##### Прогнозувати обертання зчеплених шестерень
+##### Explain how a wheel and axle work
 
 Code: [Not implemented](#)
 
-У парі безпосередньо зчеплених шестерень напрямки обертання протилежні, а співвідношення кутових швидкостей залежить від числа зубців.
+The shared rotation of a wheel and axle transmits motion and changes the relationship between applied forces and displacements; a wheel can also change the nature of friction.
 
-#### Закони Ньютона
+##### Explain how a pulley works
+
+Code: [Not implemented](#)
+
+A fixed pulley changes the direction of the applied force, whereas a movable pulley can reduce the force needed by distributing the load across rope segments.
+
+##### Predict the rotation of meshed gears
+
+Code: [Not implemented](#)
+
+A directly meshed pair of gears rotates in opposite directions, and the ratio of their angular velocities depends on the number of teeth.
+
+#### Newton's Laws
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Закони Ньютона встановлюють зв'язок між силами, інерцією й зміною руху тіл у відповідних системах відліку.
+Newton's laws establish the relationships among forces, inertia, and changes in bodies' motion in the appropriate reference frames.
 
-##### Пояснювати перший закон Ньютона
-
-Code: [Not implemented](#)
-
-За нульової рівнодійної сил швидкість тіла в інерціальній системі відліку є сталою; спокій — окремий випадок.
-
-##### Пояснювати другий закон Ньютона
+##### Explain Newton's first law
 
 Code: [Not implemented](#)
 
-Прискорення тіла визначається рівнодійною силою та його масою; за однакової сили тіла різної маси змінюють швидкість по-різному.
+When the net force is zero, a body's velocity in an inertial reference frame remains constant; rest is a special case.
 
-##### Пояснювати третій закон Ньютона
+##### Explain Newton's second law
 
 Code: [Not implemented](#)
 
-Сили взаємодії двох тіл рівні за модулем, протилежні за напрямком та прикладені до різних тіл, тому не компенсують одна одну на одному тілі.
+A body's acceleration is determined by the net force and its mass; under the same force, bodies of different masses change velocity differently.
 
-#### Імпульс і зіткнення
+##### Explain Newton's third law
+
+Code: [Not implemented](#)
+
+The interaction forces between two bodies are equal in magnitude and opposite in direction but act on different bodies, so they do not cancel on a single body.
+
+#### Momentum and Collisions
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Імпульс характеризує рух тіла, а зіткнення демонструють передавання й зміну імпульсу. За відсутності зовнішнього імпульсу сили сумарний імпульс системи зберігається незалежно від виду зіткнення.
+Momentum characterizes a body's motion, while collisions demonstrate momentum transfer and change. In the absence of external impulse, the total momentum of a system is conserved regardless of the type of collision.
 
-##### Пояснювати імпульс тіла
-
-Code: [Not implemented](#)
-
-Імпульс залежить від маси й швидкості тіла та має напрям; однакові швидкості тіл різної маси не означають однакового імпульсу.
-
-##### Пояснювати імпульс сили
+##### Explain linear momentum
 
 Code: [Not implemented](#)
 
-Зміна імпульсу тіла пов'язана зі значенням та тривалістю дії сили, що пояснює фізичні відмінності способів гальмування.
+Momentum depends on a body's mass and velocity and has a direction; equal velocities of bodies with different masses do not imply equal momentum.
 
-##### Розрізняти пружні та непружні зіткнення
-
-Code: [Not implemented](#)
-
-У пружному зіткненні кінетична енергія системи зберігається, тоді як у непружному її частина переходить у внутрішню енергію та деформації; закон збереження імпульсу діє в ізольованій системі.
-
-##### Пояснювати закон збереження імпульсу
+##### Explain impulse
 
 Code: [Not implemented](#)
 
-За відсутності результуючого зовнішнього імпульсу сили повний імпульс системи залишається сталим, хоча окремі тіла змінюють свої імпульси.
+A change in a body's momentum is related to the magnitude and duration of an applied force, which explains physical differences among braking methods.
 
-#### Обертальний рух
+##### Distinguish elastic from inelastic collisions
+
+Code: [Not implemented](#)
+
+In an elastic collision, the system's kinetic energy is conserved; in an inelastic collision, some becomes internal energy and deformation. Momentum remains conserved in an isolated system.
+
+##### Explain conservation of linear momentum
+
+Code: [Not implemented](#)
+
+In the absence of a net external impulse, the total momentum of a system remains constant even though individual bodies change their momenta.
+
+#### Rotational Motion
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Обертання пов'язане з моментом сили, розподілом маси та інерційними властивостями. Закон збереження моменту імпульсу описує рух системи за відсутності результуючого зовнішнього моменту сили.
+Rotation involves torque, mass distribution, and inertial properties. Conservation of angular momentum describes a system's motion when there is no net external torque.
 
-##### Пояснювати момент сили
-
-Code: [Not implemented](#)
-
-Поворотний ефект сили залежить від напряму її дії та плеча відносно осі, а не тільки від величини сили.
-
-##### Пояснювати інерційні властивості обертання
+##### Explain torque
 
 Code: [Not implemented](#)
 
-Розподіл маси відносно осі впливає на зміну обертання навіть за однакової загальної маси.
+The turning effect of a force depends on its direction and lever arm relative to the axis, not merely on the force's magnitude.
 
-##### Розрізняти обертання навколо осі та рух по колу
-
-Code: [Not implemented](#)
-
-Обертання тіла навколо власної осі відрізняється від руху його центра коловою траєкторією, під час якого змінюється напрям швидкості.
-
-##### Пояснювати закон збереження моменту імпульсу
+##### Explain rotational inertia
 
 Code: [Not implemented](#)
 
-За відсутності зовнішнього результуючого моменту сили сумарний момент імпульсу системи зберігається.
+The distribution of mass relative to an axis affects how rotation changes, even when the total mass is the same.
 
-### Сили та взаємодії
+##### Distinguish rotation about an axis from motion along a circle
+
+Code: [Not implemented](#)
+
+A body's rotation about its own axis differs from the motion of its center along a circular path, during which the direction of velocity changes.
+
+##### Explain conservation of angular momentum
+
+Code: [Not implemented](#)
+
+In the absence of net external torque, a system's total angular momentum is conserved.
+
+### Forces and Interactions
 
 Groups: 3 · Skills: 14
 
 Code: [Not implemented](#)
 
-Коли тіла контактують або впливають одне на одне на відстані, їхній рух, форма чи стан рівноваги можуть змінюватися. Тут розміщено загальні поняття сили, контакту, тяжіння і стійкості; специфічні магнітні та електричні явища — в електромагнетизмі.
+When bodies touch or affect one another at a distance, their motion, shape, or state of equilibrium may change. This Domain covers general concepts of force, contact, gravity, and stability; specifically magnetic and electric phenomena belong to Electromagnetism.
 
-#### Контактні сили та тертя
+#### Contact Forces and Friction
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Дотик може спричинити штовхання, тягнення й тертя; напрям взаємодії та властивості поверхні впливають на рух.
+Contact can produce pushing, pulling, and friction; the direction of interaction and surface properties affect motion.
 
-##### Розпізнавати дію штовхання
-
-Code: [Not implemented](#)
-
-Контактна штовхальна дія передає силу від діючого тіла в напрямку тиску на інше тіло; не кожна зміна руху виникає через штовхання.
-
-##### Розпізнавати дію тягнення
+##### Recognize pushing forces
 
 Code: [Not implemented](#)
 
-Тягнення є контактною дією через зв'язок або захоплення, коли сила напрямлена в бік джерела; її відрізняють від тиску й штовхання.
+A contact push transfers force from the acting body in the direction of pressure on another body; not every change in motion is caused by pushing.
 
-##### Прогнозувати вплив напрямку сили
-
-Code: [Not implemented](#)
-
-Напрям результуючої сили відносно швидкості визначає, чи рух прискорюється, сповільнюється або змінює напрям.
-
-##### Порівнювати рух на різних поверхнях
+##### Recognize pulling forces
 
 Code: [Not implemented](#)
 
-Взаємодія контактних поверхонь впливає на силу тертя та опір ковзанню чи коченню, що змінює механічний рух за інших подібних умов.
+Pulling is a contact interaction through a connection or grip, with force directed toward its source; it differs from pressure and pushing.
 
-##### Пояснювати роль тертя в зупинці
+##### Predict the effect of force direction
 
 Code: [Not implemented](#)
 
-Тертя під час ковзання або кочення може зменшувати кінетичну енергію руху, переводячи її до внутрішньої енергії тіл і довкілля.
+The direction of the net force relative to velocity determines whether motion speeds up, slows down, or changes direction.
 
-#### Рівновага та стійкість
+##### Compare motion on different surfaces
+
+Code: [Not implemented](#)
+
+Interactions between contacting surfaces affect friction and resistance to sliding or rolling, changing mechanical motion under otherwise similar conditions.
+
+##### Explain the role of friction in stopping
+
+Code: [Not implemented](#)
+
+Friction during sliding or rolling can reduce kinetic energy of motion, converting it into the internal energy of the bodies and surroundings.
+
+#### Equilibrium and Stability
 
 Skills: 6
 
 Code: [Not implemented](#)
 
-Врівноважені дії дозволяють тілу залишатися у спокої, тоді як розташування опор і навантаження впливає на стійкість та деформацію моделі.
+Balanced forces allow a body to remain at rest, while the arrangement of supports and loads affects a model's stability and deformation.
 
-##### Розпізнавати врівноважені дії
+##### Recognize balanced forces
 
 Code: [Not implemented](#)
 
-За нульової результуючої сили прискорення відсутнє; тіло може перебувати у спокої або продовжувати рівномірний прямолінійний рух.
+When the net force is zero, there is no acceleration; a body may be at rest or continue moving uniformly in a straight line.
 
-##### Розпізнавати опорні елементи конструкції
+##### Identify structural support elements
 
 Code: [Not implemented](#)
 
