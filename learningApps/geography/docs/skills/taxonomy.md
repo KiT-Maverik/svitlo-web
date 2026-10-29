@@ -12,9 +12,9 @@ A subject-wide, audience-independent catalog of geographical competencies. It co
 
 Domains: 11
 Groups: 41
-Skills: 158
+Skills: 159
 
-Code files: 0/11 Domains · 0/41 Groups · 0/158 Skills
+Code files: 0/11 Domains · 0/41 Groups · 0/159 Skills
 
 ## DOMAINS
 
@@ -1037,11 +1037,11 @@ Evaluate options such as early warning, shelter, land-use planning, or water sto
 
 ### Natural Regions and Biogeography
 
-Groups: 3 · Skills: 9
+Groups: 3 · Skills: 10
 
 Code: [Not implemented](#)
 
-Natural conditions create geographic variation in terrestrial ecosystems, biodiversity and habitat patterns. This field describes where ecological regions occur, how their distributions vary and how landscape changes affect them; organism physiology and detailed food-web mechanisms belong primarily to Biology.
+Natural conditions create geographic variation in ecosystems, biodiversity and habitat patterns on land and in water. This field describes where ecological regions occur, how their distributions vary and how landscape changes affect them; organism physiology and detailed food-web mechanisms belong primarily to Biology.
 
 #### Biomes and Habitats
 
@@ -1097,11 +1097,17 @@ Use two dated distributions or observations to describe a change in habitat rang
 
 #### Ecosystems
 
-Skills: 3
+Skills: 4
 
 Code: [Not implemented](#)
 
-Ecosystems depend on linked environmental conditions and can vary markedly in spatial extent and connectivity. Geography focuses on distribution, boundaries, landscape fragmentation and relationships to regional conditions, rather than the physiology of individual organisms.
+Ecosystems develop under different physical conditions on land and in water, and can vary markedly in spatial extent and connectivity. Geography focuses on the distributions of terrestrial, marine and freshwater environments, their boundaries, fragmentation and regional relationships, rather than organism physiology.
+
+##### Distinguish marine and freshwater ecosystems
+
+Code: [Not implemented](#)
+
+Differentiate aquatic ecosystems shaped by saline ocean or sea water from those associated with predominantly fresh rivers, lakes and wetlands. Use salinity, water movement and geographic connections to explain broad habitat differences; recognize estuaries and other brackish transitional environments instead of forcing every location into one of two categories.
 
 ##### Interpret geographic patterns of biodiversity
 
