@@ -2,7 +2,7 @@
 
 **Mandatory first action:** Read [Methodologist Persona](../personas/methodist.persona.md) in full. Adopt its professional judgment and role boundaries before researching, designing, or editing a taxonomy. Do not assume the persona has been loaded.
 
-**Purpose:** Create or review the **permanent, canonical pedagogical source of truth** for one subject: an audience-independent Skills Taxonomy organized as **SkillDomain → SkillGroup → Skill**. Author the names, authoritative substantive descriptions, hierarchy, counts, and verified Code links directly in `<PackageRoot>/docs/skills/taxonomy.md`. There is **no Create Skill Definitions stage, no per-entity Markdown Definition file, and no separate definition template**. Code implementation is a separate stage.
+**Purpose:** Create or review the **permanent, canonical pedagogical source of truth** for one subject: an audience-independent Skills Taxonomy organized as **SkillDomain → SkillGroup → Skill**. Author the names, authoritative substantive descriptions, hierarchy, counts, and verified implementation links directly in `<PackageRoot>/docs/skills/taxonomy.md`. There is **no Create Skill Definitions stage, no per-entity Markdown Definition file, and no separate definition template**. Code implementation is a separate stage.
 
 ## NON-NEGOTIABLE START CONDITIONS
 
@@ -34,7 +34,7 @@ Do not reduce a rich competency to mere recognition or conceptual awareness beca
 2. **Decompose:** identify coherent Domains and Groups, then atomic observable Skills. Apply the A-without-B test from the canonical Skill entity rules. Commas and conjunctions signal candidates for review, not automatic splitting.
 3. **Review:** discuss overlaps, missing competencies, accidental bundling and over-fragmentation. Separate A and B if independently meaningful; add an integration Skill C only when the relationship itself is independently assessable. A Lesson/Question covering A and B need not create C. Report unresolved choices **before** editing an approved hierarchy.
 4. **Write authoritative descriptions in the taxonomy itself:** immediately after each Domain, Group and Skill heading's metadata, provide a substantive paragraph explaining **what the concept/competency means, what is included and what distinguishes it from neighboring entries**. Names identify; descriptions explain. A Description **must not repeat, paraphrase or mechanically expand the heading**, nor merely say that a Domain contains related Groups or a Group contains related Skills. For Skills, clarify the observable subject-specific competency, meaningful scope or distinguishing case; give a concrete example where it improves understanding, without turning the description into a lesson, grading rubric, question format or implementation plan. Every entry receives its own relevant description. Use ordinary prose below the heading: **never emit a `Description:` prefix**.
-5. **Inspect actual Code files:** when an entity is implemented and validated, link directly to its canonical `*.data.ts` file. Otherwise use exactly `Code: [Not implemented](#)`. A reserved UUID, a parent map or a proposed path does not prove implementation.
+5. **Inspect actual implementation files:** when an entity is implemented and validated, link directly to its canonical `*.data.ts` file. The link text **must be the file's exact basename, including every suffix and the extension** (for example, `[kineticEnergy.data.ts](../../src/skillsTaxonomy/energy/kineticEnergy.data.ts)`, not `[kineticEnergy]` or `[kineticEnergy.data]`). If implementation is unverified, use exactly `[Not implemented](#)`. The link stands **alone, without `Code:` or any other label**. A reserved UUID, a parent map or a proposed path does not prove implementation.
 6. **Author the canonical taxonomy** using the template below. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code. A **single optional historical Review** may be created or appended **only** under the narrowly defined gate below, not as a second taxonomy.
 7. **Verify and stop:** check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval. If a historical Review was changed, verify its dates, factual decisions, links and lack of duplication.
 
@@ -42,13 +42,13 @@ Do not reduce a rich competency to mere recognition or conceptual awareness beca
 
 - **Taxonomy Markdown:** permanent editorial single source of truth for pedagogical names, scope, distinctions, descriptions and Domain → Group → Skill membership.
 - **TypeScript Data/IDs:** implementation authority for UUIDs, localized runtime names, typed configs, direct-child ID dictionaries and exports. The existing Engine does not have a `description` field; **do not duplicate descriptions in TypeScript** or add undocumented runtime metadata.
-- **Code link in taxonomy:** one implementation reference per entity. Use `Code: [Not implemented](#)` until implementation is verified. There is **no Definition link, separate Definition count or editorial Status on individual entities**.
+- **Implementation link in taxonomy:** one unlabeled Markdown link per entity, with exact full filename (including suffixes and extension) as the link text when implemented, or exactly `[Not implemented](#)` otherwise. Never prefix that link with `Code:`. There is **no Definition link, separate Definition count or editorial Status on individual entities**.
 - **Approval:** a human editorial review gate on the taxonomy or a substantive revision, not a duplicated `Status: Draft/Approved` field on hundreds of documents. Once approved, downstream work must not rename, split, merge or rearrange without explicit review.
 - **Curricula and Lessons:** reference the canonical taxonomy; they own sequencing, teaching context, prerequisites and assessment choices, not the Skill catalog.
 
 ### Metadata before descriptions
 
-Keep every entity's metadata together directly after its heading. Order is **Domain:** `Groups · Skills` → `Code` → prose; **Group:** `Skills` → `Code` → prose; **Skill:** `Code` → prose. Present substantive descriptions as unlabeled Markdown paragraphs, never as `Description:` fields, and never interrupt metadata with a description. Do not reintroduce `Definition` links: the taxonomy itself is the permanent editorial definition and its only per-entity artifact link is `Code`.
+Keep every entity's metadata together directly after its heading. Order is **Domain:** `Groups · Skills` → standalone implementation link → prose; **Group:** `Skills` → standalone implementation link → prose; **Skill:** standalone implementation link → prose. Present substantive descriptions as unlabeled Markdown paragraphs, never as `Description:` fields, and never interrupt metadata with a description. Do not reintroduce `Definition` links: the taxonomy itself is the permanent editorial definition, and the single standalone implementation link is its only per-entity artifact link.
 
 ## SKILL TAXONOMY REVIEW — OPTIONAL DATED HISTORY, NOT ANOTHER TAXONOMY
 
@@ -80,14 +80,14 @@ Title: **Skill Taxonomy Review**. Keep the **original review date** and append s
 - Each Skill is distinct and independently assessable; compound candidates use the A-without-B review rule.
 - Editorial uncertainties and source coverage limitations are reported separately; never fabricate a numeric standards-coverage percentage from catalog counts.
 - Domain/Group/Skill counts reconcile at every hierarchy level; membership is unique and matches any approved existing catalog.
-- Each entry has one verified `Code` reference or the exact missing-target placeholder; Code counts report actual implementations, not file names guessed from the taxonomy.
+- Each entry has one verified, unlabeled implementation link showing the full filename (suffixes and extension included), or exactly `[Not implemented](#)`; Code counts report actual implementations, not file names guessed from the taxonomy.
 - No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or fake `Status` fields occur in the taxonomy.
-- Markdown descriptions do **not** start with `Description:` and always follow all of the entity's metadata (`Code` plus any Group/Skill counts).
+- Markdown descriptions do **not** start with `Description:` and always follow all of the entity's metadata (any Group/Skill counts and the standalone implementation link).
 - The **only canonical authoring artifact** is `docs/skills/taxonomy.md`. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates; the optional `docs/history/skill-taxonomy-review.md` may be created/updated **only** under the explicit history gate above.
 
 ## TAXONOMY TEMPLATE
 
-Repeat the following blocks for each Domain, Group and Skill. Replace placeholders with substantive, *non-duplicative* prose and independently verified Code paths. The template is embedded; do not create another template file.
+Repeat the following blocks for each Domain, Group and Skill. Replace placeholders with substantive, *non-duplicative* prose and independently verified implementation paths. Implemented link labels must use the exact filename including suffixes and extension; never prepend a field label to a Markdown link. The template is embedded; do not create another template file.
 
 ~~~md
 # %SUBJECT_NAME% — Skills Taxonomy
@@ -110,7 +110,7 @@ Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GR
 
 Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
 
-Code: [Not implemented](#)
+[Not implemented](#)
 
 %SUBSTANTIVE_DOMAIN_DESCRIPTION_NOT_A_RESTATEMENT_OF_NAME%
 
@@ -118,13 +118,13 @@ Code: [Not implemented](#)
 
 Skills: %GROUP_SKILL_COUNT%
 
-Code: [Not implemented](#)
+[Not implemented](#)
 
 %SUBSTANTIVE_GROUP_DESCRIPTION_EXPLAINING_SCOPE_AND_BOUNDARIES%
 
 ##### %SKILL_NAME%
 
-Code: [Not implemented](#)
+[Not implemented](#)
 
 %SUBSTANTIVE_SKILL_DESCRIPTION_CLARIFYING_MEANING_AND_DISTINCTION%
 ~~~
