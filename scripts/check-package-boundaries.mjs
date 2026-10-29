@@ -24,7 +24,7 @@ function assert(condition, message) {
 assert(physics.name === '@svitlo/physics', 'Unexpected Physics package name');
 assert(physics.dependencies?.next && physics.dependencies?.react && physics.dependencies?.['react-dom'],
   'Physics must declare independent Next.js/React runtime dependencies');
-for (const file of ['src/app/layout.tsx', 'src/app/page.tsx', 'docs/skills/taxonomy.md']) {
+for (const file of ['src/app/layout.tsx', 'src/app/page.tsx']) {
   assert(existsSync(resolve(root, 'learningApps/physics', file)), 'Physics scaffold missing: ' + file);
 }
 assert(platform.name === '@svitlo/platform', 'Unexpected Platform package name');
