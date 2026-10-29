@@ -1,17 +1,22 @@
 # Days of the Week and the Calendar
 
-> **Curriculum: Grade 1 · Time, Money, and Data · Lesson 02**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Time, Money, and Data · Lesson 02**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Користується базовими назвами днів тижня й місяців.
+## Learning objective
 
-**Target Skills:**
+Navigate days of the week and the calendar.
+
+Locate dates and months without assuming a universal start-of-week column.
+
+## Target Skills
 
 - [Navigating days, weeks, and months in a calendar](../../../../../src/data/skillsTaxonomy/time/calendar/skills/weekMonthYear.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
+[View the six storyboard sections](./Sections/README.md). This storyboard describes proposed learning interactions, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Time, Money, and Data](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Time, Money, and Data](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

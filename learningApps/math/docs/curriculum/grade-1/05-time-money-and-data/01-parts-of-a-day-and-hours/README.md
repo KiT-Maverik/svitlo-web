@@ -1,18 +1,23 @@
 # Parts of a Day and Hours
 
-> **Curriculum: Grade 1 · Time, Money, and Data · Lesson 01**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Time, Money, and Data · Lesson 01**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Упорядковує частини доби, визначає повні години.
+## Learning objective
 
-**Target Skills:**
+Sequence parts of a day and read whole hours.
+
+Recognize morning/day/evening/night and distinguish a clock reading from time-of-day context.
+
+## Target Skills
 
 - [Sequencing parts of the day](../../../../../src/data/skillsTaxonomy/time/calendar/skills/daySequence.data.ts)
 - [Reading time to the hour](../../../../../src/data/skillsTaxonomy/time/clock/skills/readHour.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
+[View the six storyboard sections](./Sections/README.md). This storyboard describes proposed learning interactions, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Time, Money, and Data](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Time, Money, and Data](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

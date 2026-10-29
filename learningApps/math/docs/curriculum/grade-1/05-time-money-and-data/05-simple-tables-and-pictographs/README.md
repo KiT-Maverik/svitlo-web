@@ -1,18 +1,23 @@
 # Simple Tables and Pictographs
 
-> **Curriculum: Grade 1 · Time, Money, and Data · Lesson 05**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Time, Money, and Data · Lesson 05**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Знаходить значення у таблиці чи піктограмі.
+## Learning objective
 
-**Target Skills:**
+Read simple tables and one-to-one pictographs.
+
+Find category values, interpret explicit zeroes, and observe the pictograph legend.
+
+## Target Skills
 
 - [Reading a simple data table](../../../../../src/data/skillsTaxonomy/data/presentation/skills/readSimpleTable.data.ts)
 - [Reading a one-to-one pictograph](../../../../../src/data/skillsTaxonomy/data/presentation/skills/readPictograph.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Повний Learning Brief для цього уроку ще потребує окремого створення.
+[View the six storyboard sections](./Sections/README.md). This storyboard describes proposed learning interactions, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Time, Money, and Data](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Time, Money, and Data](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

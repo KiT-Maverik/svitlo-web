@@ -1,18 +1,23 @@
 # Longer, Shorter, and Equal Length
 
-> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 05**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Geometry and Measurement · Lesson 05**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Порівнює довжини та вимірює умовною одиницею.
+## Learning objective
 
-**Target Skills:**
+Compare lengths and measure them with repeated equal units.
+
+Align starts, avoid gaps, and explain why a common unit is needed.
+
+## Target Skills
 
 - [Comparing lengths directly and indirectly](../../../../../src/data/skillsTaxonomy/measurement/length/skills/compareLength.data.ts)
 - [Measuring length with repeated nonstandard units](../../../../../src/data/skillsTaxonomy/measurement/length/skills/nonstandardLength.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повна методична специфікація ще потребує створення.
+[View the six storyboard sections](./Sections/README.md). This storyboard describes proposed learning interactions, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Geometry and Measurement](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

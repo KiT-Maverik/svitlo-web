@@ -1,19 +1,24 @@
 # Money Denominations and Amounts
 
-> **Curriculum: Grade 1 · Time, Money, and Data · Lesson 03**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Time, Money, and Data · Lesson 03**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Розпізнає номінали довільної заданої валюти, складає й порівнює суми.
+## Learning objective
 
-**Target Skills:**
+Recognize configured denominations and compose and compare amounts.
+
+Use an illustrative currency or a verified locale-specific set of denominations, never assumed universal coins.
+
+## Target Skills
 
 - [Recognizing coin and banknote denominations](../../../../../src/data/skillsTaxonomy/money/denominations/skills/recognizeDenominations.data.ts)
 - [Composing a money amount](../../../../../src/data/skillsTaxonomy/money/denominations/skills/composeAmount.data.ts)
 - [Comparing money amounts](../../../../../src/data/skillsTaxonomy/money/denominations/skills/compareAmounts.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
+[View the six storyboard sections](./Sections/README.md). This storyboard describes proposed learning interactions, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Time, Money, and Data](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Time, Money, and Data](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

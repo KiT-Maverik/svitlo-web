@@ -1,17 +1,22 @@
 # Composing Shapes
 
-> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 04**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Geometry and Measurement · Lesson 04**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Будує ціле з частин і розкладає на прості фігури.
+## Learning objective
 
-**Target Skills:**
+Compose and decompose shapes into familiar parts.
+
+Assemble and separate plane figures without losing or overlapping components.
+
+## Target Skills
 
 - [Composing and decomposing plane figures](../../../../../src/data/skillsTaxonomy/geometry/figures/skills/composeDecomposeShapes.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається джерелом цілей; повний Learning Brief ще потребує окремого створення.
+[View the six storyboard sections](./Sections/README.md). This storyboard describes proposed learning interactions, not implemented software or formal assessment. A complete methodological Learning Brief needs separate preparation and review.
 
 ---
-[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Geometry and Measurement](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)
