@@ -734,157 +734,157 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills
 
 A subtraction result for 63 − 28 can be checked by adding 28 back to the difference. A mismatch indicates an error.
 
-#### Множення
+#### Multiplication
 
 Skills: 24
 
-Добуток як рівні групи або прямокутний масив, табличні факти, властивості множення та розрядні способи обчислення.
-
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/multiply.data.ts)
 
-##### Представляти множення як кількість рівних груп певного розміру
+Multiplication combines equal groups or rectangular arrays; learners connect multiplication facts, operation properties, and place-value methods for computation and checking.
+
+##### Multiplication — Equal groups
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/equalGroups.data.ts)
 
-Три однакові набори по чотири предмети відповідають 3 × 4, а не трьом різним доданкам.
+Three equal groups of four objects are represented by 3 × 4, unlike three unrelated addends.
 
-##### Переходити між множенням і повторюваним додаванням
+##### Multiplication — Repeated addition
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/repeatedAddition.data.ts)
 
-Запис 4 + 4 + 4 еквівалентний трьом рівним четвіркам; нерівні доданки не дають такої простої моделі.
+The expression 4 + 4 + 4 represents three groups of four. Unequal addends do not fit this simple repeated-addition model.
 
-##### Представляти множення прямокутним масивом предметів або клітинок
+##### Multiplication — Array model
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/arrayModel.data.ts)
 
-Масив із трьох рядків по п’ять клітинок показує загальну кількість 15 незалежно від порядку обходу.
+An array of three rows and five columns contains fifteen cells regardless of the order in which they are counted.
 
-##### Читати вираз a × b та пов’язувати множники й добуток із моделлю
+##### Multiplication — Reading expressions
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/readExpression.data.ts)
 
-У 3 × 4 множники описують число груп і їхній розмір, а добуток — загальну кількість у моделі.
+In 3 × 4, the factors identify a number of groups and the size of each group; their product represents the total.
 
-##### Обчислювати добутки з множником 2 та використовувати подвоєння
+##### Multiplication — × 2
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by2.data.ts)
 
-Добуток на 2 можна отримати як суму числа із самим собою: 2 × 7 = 7 + 7.
+Multiplication by two can be represented as doubling: 2 × 7 = 7 + 7.
 
-##### Обчислювати табличні добутки з множником 3
+##### Multiplication — × 3
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by3.data.ts)
 
-Три рівні четвірки дають 12; відомі суми по 3 допомагають вивести табличний результат.
+Three equal groups of four give twelve; skip-counting by threes can help derive corresponding table facts.
 
-##### Обчислювати табличні добутки з множником 4
+##### Multiplication — × 4
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by4.data.ts)
 
-Для чотирьох шісток результат 24 можна побачити як дві подвоєні шістки.
+Four groups of six make twenty-four, which can also be obtained by doubling six twice.
 
-##### Обчислювати табличні добутки з множником 5
+##### Multiplication — × 5
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by5.data.ts)
 
-П’ятірки утворюють знайому шкалу 5, 10, 15, 20; її можна співвіднести з групами по п’ять.
+Groups of five lead to the sequence 5, 10, 15, 20, which corresponds to accumulated sets of five.
 
-##### Обчислювати табличні добутки з множником 6
+##### Multiplication — × 6
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by6.data.ts)
 
-Шість четвірок можна отримати з п’яти четвірок і ще однієї, не заучуючи випадок ізольовано.
+Six groups of four can be derived from five groups of four plus one more, without recalling the fact in isolation.
 
-##### Обчислювати табличні добутки з множником 7
+##### Multiplication — × 7
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by7.data.ts)
 
-Сім трійок можна обчислити як п’ять трійок плюс дві трійки: 15 + 6 = 21.
+Seven groups of three can be computed as five groups of three plus another two: 15 + 6 = 21.
 
-##### Обчислювати табличні добутки з множником 8
+##### Multiplication — × 8
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by8.data.ts)
 
-Вісім п’ятірок дають 40; результат також випливає з подвоєння чотирьох п’ятірок.
+Eight groups of five make forty; the same result follows by doubling four groups of five.
 
-##### Обчислювати табличні добутки з множником 9
+##### Multiplication — × 9
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by9.data.ts)
 
-Дев’ять шісток можна вивести як десять шісток мінус одна шістка.
+Nine groups of six can be derived from ten groups of six with one group subtracted.
 
-##### Обчислювати добутки з множником 10 та пояснювати їх через десятки
+##### Multiplication — × 10
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by10.data.ts)
 
-Множення на 10 додає десяткову одиницю до кожної групи: 6 × 10 = 60.
+Multiplying six by ten forms six tens, so 6 × 10 = 60.
 
-##### Пояснювати й застосовувати множення на 0 та 1
+##### Multiplication — × 0 · × 1
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by0And1.data.ts)
 
-Порожня множина груп дає нуль, а одна група зберігає початкову кількість.
+Zero groups contain zero items, while a single group preserves the original number of items.
 
-##### Пояснювати переставний закон множення за допомогою моделей
+##### Multiplication — Commutative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/commutative.data.ts)
 
-Масив 3 × 5 можна повернути та побачити 5 × 3; число клітинок залишається 15.
+Rotating a 3 × 5 array changes its orientation to 5 × 3 but does not change the total of fifteen cells.
 
-##### Змінювати групування множників для зручного обчислення
+##### Multiplication — Associative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/associative.data.ts)
 
-У 2 × (3 × 4) та (2 × 3) × 4 однакова загальна кількість предметів, хоча групи утворено в іншому порядку.
+Both 2 × (3 × 4) and (2 × 3) × 4 represent the same total even though the groups are formed differently.
 
-##### Розкладати один множник на частини та знаходити суму часткових добутків
+##### Multiplication — Distributive property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/distributive.data.ts)
 
-Для 6 × 14 можна поділити 14 на 10 і 4, а потім додати 6 × 10 та 6 × 4.
+For 6 × 14, split fourteen into ten and four, then add the partial products 6 × 10 and 6 × 4.
 
-##### Виводити незнайомі табличні добутки з відомих, а не лише пригадувати їх
+##### Multiplication — Deriving multiplication Number facts
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/deriveFacts.data.ts)
 
-Добуток 7 × 8 можна знайти через 7 × 7 плюс сім, використовуючи засвоєний випадок.
+An unfamiliar result such as 7 × 8 can be obtained from a known fact, 7 × 7, by adding another seven.
 
-##### Знаходити множення на 4 через подвійне подвоєння
+##### Multiplication — Doubling twice
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/doubleTwice.data.ts)
 
-Чотири однакові групи можна отримати двома послідовними подвоєннями, а не окремим таблицевим правилом.
+Four equal groups can be computed through two successive doublings rather than memorizing a separate procedure.
 
-##### Множити круглі десятки на одноцифрові числа в межах 1000
+##### Multiplication — Whole tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/roundTens.data.ts)
 
-Для 30 × 4 спочатку обчислюють 3 × 4 десятки, отримуючи 12 десятків, тобто 120.
+For 30 × 4, multiply three tens by four to get twelve tens, or 120.
 
-##### Множити круглі сотні на одноцифрові числа в межах 1000
+##### Multiplication — Whole hundreds
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/roundHundreds.data.ts)
 
-Для 200 × 3 множать дві сотні на три й отримують шість сотень.
+For 200 × 3, two hundreds multiplied by three produce six hundreds.
 
-##### Множити двоцифрове число на одноцифрове через розрядний розклад
+##### Multiplication — 2-digit×1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/twoDigitByOne.data.ts)
 
-У 23 × 4 множення розкладають як 20 × 4 плюс 3 × 4, утримуючи одиниці й десятки окремо.
+Decompose 23 × 4 into 20 × 4 plus 3 × 4 so that the tens and ones contributions remain clear.
 
-##### Множити трицифрове число на одноцифрове, якщо результат у межах 1000
+##### Multiplication — 3-digit×1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/threeDigitByOne.data.ts)
 
-У 124 × 3 добуток можна зібрати із 100 × 3, 20 × 3 та 4 × 3; підсумок не перевищує 1000.
+The product 124 × 3 combines 100 × 3, 20 × 3 and 4 × 3, with a total not exceeding 1,000 for this competency.
 
-##### Оцінювати добуток та перевіряти його оберненою дією або іншим способом
+##### Multiplication — Result checking
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/checkProduct.data.ts)
 
-Перед 49 × 6 приблизно очікують 300, а множенням навпаки або повторним додаванням можна підтвердити точне значення.
+Before calculating 49 × 6, a value near 300 is expected. An inverse operation, reversed factors, or repeated addition can help verify the exact result.
 
 #### Ділення
 
