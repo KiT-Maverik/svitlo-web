@@ -592,61 +592,61 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/carryError
 
 For 48 + 37, omitting the carried ten from 8 + 7 produces a result with an incorrect tens place.
 
-#### Віднімання
+#### Subtraction
 
 Skills: 8
 
-Вилучення частини, знаходження різниці, розгрупування розрядів і перевірка правильності обчислення.
-
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/subtraction.data.ts)
 
-##### Моделювати віднімання як вилучення, різницю або пошук невідомої частини
+Subtraction represents removing part of a collection, finding a difference, or identifying an unknown part of a whole. Calculations include regrouping place values and checking results.
+
+##### Subtraction — Meaning and models
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractMeaning.data.ts)
 
-Забрати 3 з набору 8 — це знайти 8 − 3; різниця між двома наборами або невідома частина цілого приводять до тієї ж операції.
+Removing three objects from a collection of eight models 8 − 3. The same operation can express a difference between groups or a missing part of a known whole.
 
-##### Пояснювати й застосовувати віднімання нуля
+##### Subtraction — Zero
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractZero.data.ts)
 
-Віднімання нуля залишає той самий набір предметів, бо нічого не вилучають.
+Subtracting zero leaves a collection unchanged because nothing is removed.
 
-##### Пояснювати, чому віднімання числа від самого себе дає нуль
+##### Subtraction — Same number
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractSelf.data.ts)
 
-Після вилучення всіх 6 із набору 6 предметів не залишається нічого: результат — 0.
+Removing all six objects from a set of six leaves an empty set, so the difference is zero.
 
-##### Віднімати в межах 20 із переходом через десяток
+##### Subtraction — Crossing ten
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/crossTenSubtraction.data.ts)
 
-У 12 − 5 один десяток можна розкласти на одиниці, щоб відняти п’ять.
+For 12 − 5, one ten can be regrouped into ones to make removing five possible.
 
-##### Віднімати двоцифрові числа з розгрупуванням одного десятка
+##### Subtraction — 2-digit · Borrowing
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/twoDigitBorrow.data.ts)
 
-Для 43 − 18 один десяток обмінюють на десять одиниць, а потім працюють з кожним розрядом.
+In 43 − 18, exchange one ten for ten ones and then subtract using the corresponding place values.
 
-##### Віднімати трицифрові числа з розгрупуванням десятків або сотень
+##### Subtraction — 3-digit · Borrowing
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/threeDigitBorrow.data.ts)
 
-У 402 − 175 може знадобитися обмін із сотень через порожній десятковий розряд.
+In 402 − 175, regrouping may need to cross an empty tens position and exchange part of the hundreds.
 
-##### Коректно записувати та виконувати письмове віднімання стовпчиком
+##### Subtraction — Column method
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/columnSubtraction.data.ts)
 
-Під час письмового віднімання зберігають вирівнювання розрядів і фіксують кожний обмін до обчислення.
+Written subtraction keeps matching place values aligned and records each exchange before computing the affected columns.
 
-##### Розпізнавати неправильне розгрупування під час віднімання й виправляти його
+##### Subtraction — Borrowing · Error detection
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/borrowErrorDetection.data.ts)
 
-У 52 − 28 після обміну десятків змінюються і одиниці, і кількість десятків; забутий обмін спотворює відповідь.
+In 52 − 28, exchanging a ten changes both the number of available ones and the remaining tens. Omitting either change produces an error.
 
 #### Поєднання додавання та віднімання
 
