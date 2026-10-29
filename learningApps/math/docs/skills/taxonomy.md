@@ -1014,31 +1014,31 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/threeDigitBy
 
 У 648 ÷ 3 частки від 600, 30 і 18 можна зібрати в один результат за коректного розряду.
 
-##### Знаходити частку й остачу під час ділення натуральних чисел
+##### Division — Division with remainder
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/withRemainder.data.ts)
 
 У 17 ÷ 5 можна отримати три повні п’ятірки й залишок два; не всі ділення натуральних чисел точні.
 
-##### Перевіряти, що невід’ємна остача менша за дільник
+##### Division — Remainder less than divisor
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/remainderLessDivisor.data.ts)
 
 Для дільника 5 остача може бути 0, 1, 2, 3 або 4, але не 5 чи більше.
 
-##### Перевіряти частку множенням, з урахуванням остачі за її наявності
+##### Division — Result checking
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/checkQuotient.data.ts)
 
 Рівність «дільник × частка + остача = ділене» підтверджує відповідь і показує, куди повернувся залишок.
 
-##### Розпізнавати помилку в діленні або некоректну остачу за моделлю чи перевіркою
+##### Division — Error detection
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/errorDetection.data.ts)
 
 Якщо при 19 ÷ 4 названо остачу 7, модель виявляє, що з неї можна скласти ще одну повну четвірку.
 
-### Алгебра
+### Algebra
 
 Groups: 5 · Skills: 17
 
@@ -1046,7 +1046,7 @@ Code: [Code](../../src/data/skillsTaxonomy/algebra/algebra.data.ts)
 
 Формує перехід від конкретних обчислень до виразів, рівностей, невідомих величин і правил побудови послідовностей без переходу до формальної алгебри вищих класів.
 
-#### Вирази
+#### Expressions
 
 Skills: 5
 
@@ -1054,37 +1054,37 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/expressions.data.ts)
 
-##### Читати та записувати числові вирази з арифметичними діями
+##### Reading and writing numerical expressions
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/readNumericExpressions.data.ts)
 
 Запис 7 + 5 або 18 ÷ 3 позначає операцію над числами, а не лише словесну команду; значення можна знайти окремо.
 
-##### Обчислювати вирази з дужками, пояснюючи пріоритет дій
+##### Evaluating expressions with parentheses
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/parentheses.data.ts)
 
 У 2 × (3 + 4) спочатку визначають суму в дужках, після чого множать на 2; вилучення дужок може змінити результат.
 
-##### Обчислювати вирази з кількома арифметичними діями за правилами порядку
+##### Applying the order of operations
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/orderOfOperations.data.ts)
 
 У 6 + 2 × 5 множення виконується перед додаванням, тому значення дорівнює 16, а не 40.
 
-##### Обчислювати значення найпростішого буквеного виразу за заданого значення змінної
+##### Evaluating simple expressions with a variable
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/variableValue.data.ts)
 
 Якщо a = 4, вираз a + 7 має значення 11; літера замінює визначене число в межах цієї задачі.
 
-##### Пояснювати помилку, спричинену неправильним порядком дій
+##### Identifying errors in the order of operations
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/identifyExpressionError.data.ts)
 
 Результат 6 + 3 × 2 = 18 є наслідком некоректної черговості: множення має передувати додаванню.
 
-#### Рівності
+#### Equalities
 
 Skills: 3
 
@@ -1092,25 +1092,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/equalities.data.ts)
 
-##### Сприймати знак рівності як рівність значень обох частин, а не команду «порахуй»
+##### Understanding the equals sign
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/equalityMeaning.data.ts)
 
 Запис 4 + 3 = 5 + 2 є істинним, хоча справа також вираз, а не просто готова відповідь.
 
-##### Перевіряти правильність числової рівності або нерівності
+##### Checking numerical equalities and inequalities
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/trueFalseEquality.data.ts)
 
 Для рівності 8 + 3 = 12 − 1 обидві сторони мають значення 11; нерівність перевіряють за фактичними значеннями.
 
-##### Добирати пропущене число так, щоб рівність була істинною
+##### Completing a true equality
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/completeEquality.data.ts)
 
 У 7 + □ = 12 пропуск заповнюють числом 5, щоб обидві частини запису стали рівними.
 
-#### Невідомі
+#### Unknown values
 
 Skills: 6
 
