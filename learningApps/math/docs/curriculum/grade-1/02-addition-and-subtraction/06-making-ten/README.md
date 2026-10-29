@@ -1,17 +1,17 @@
-# Доповнення до десяти
+# Making Ten
 
-> **Curriculum: Grade 1 · Додавання та віднімання · урок 06**  
+> **Curriculum: Grade 1 · Addition and Subtraction · Lesson 06**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Обчислює, використовуючи групування до повного десятка.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.addsub.make-ten-strategy` — `36dd9741-4d7a-4042-98b4-62b77a8b877f`
+- [Addition — Making ten](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/makeTenStrategy.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Це не повний методичний brief.
 
 ---
-[Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Addition and Subtraction](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

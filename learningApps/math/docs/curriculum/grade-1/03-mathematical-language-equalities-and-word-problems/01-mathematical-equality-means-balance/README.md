@@ -1,18 +1,18 @@
-# Знак рівності означає баланс
+# Mathematical Equality Means Balance
 
-> **Curriculum: Grade 1 · Математична мова, рівності та задачі · урок 01**  
+> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 01**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Визначає, коли дві сторони мають рівні значення.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.algebra.equality-meaning` — `974af868-5b72-4a5a-a88e-8f7e03e48661`
-- `math.algebra.true-false-equality` — `7dca0048-581a-4cff-9fa4-670cb7655505`
+- [Understanding the equals sign](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/equalityMeaning.data.ts)
+- [Checking numerical equalities and inequalities](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/trueFalseEquality.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

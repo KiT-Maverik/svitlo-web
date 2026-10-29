@@ -1,18 +1,18 @@
-# Що означає додати
+# What Addition Means
 
-> **Curriculum: Grade 1 · Додавання та віднімання · урок 02**  
+> **Curriculum: Grade 1 · Addition and Subtraction · Lesson 02**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Моделює додавання через об’єднання, у тому числі з нулем.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.addsub.add-meaning` — `00b48cb0-13c2-4531-84ac-1b8d44f11055`
-- `math.addsub.add-zero` — `97f896aa-10ee-47a1-9348-25b222ca748d`
+- [Addition — Meaning and models](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/addMeaning.data.ts)
+- [Addition — Zero](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/addZero.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище залишається окремою.
 
 ---
-[Додавання та віднімання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Addition and Subtraction](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
