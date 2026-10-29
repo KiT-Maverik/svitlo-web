@@ -11,7 +11,7 @@ Use concrete number relationships instead of memorizing isolated answers; subtra
 
 ## Target Skills
 
-- [Addition and subtraction — Number facts ≤ 10](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin10.data.ts)
+- [Facts Within 10](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin10.data.ts)
 
 ## Storyboard (draft)
 

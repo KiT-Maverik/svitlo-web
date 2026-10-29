@@ -11,7 +11,7 @@ Split one addend to complete a ten, then combine the remaining objects.
 
 ## Target Skills
 
-- [Addition — Making ten](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/makeTenStrategy.data.ts)
+- [Make Ten Strategy](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/makeTenStrategy.data.ts)
 
 ## Storyboard (draft)
 

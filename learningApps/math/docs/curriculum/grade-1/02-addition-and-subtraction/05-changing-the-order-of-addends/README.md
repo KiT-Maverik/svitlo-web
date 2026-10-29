@@ -11,7 +11,7 @@ Rearrange the same groups and compare their unchanged combined quantity.
 
 ## Target Skills
 
-- [Addition — Commutative property](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/commutativeAddition.data.ts)
+- [Commutative Addition](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/commutativeAddition.data.ts)
 
 ## Storyboard (draft)
 

@@ -11,8 +11,8 @@ Compare both sides of =, including cases where each side contains an operation.
 
 ## Target Skills
 
-- [Understanding the equals sign](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/equalityMeaning.data.ts)
-- [Checking numerical equalities and inequalities](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/trueFalseEquality.data.ts)
+- [Equality Meaning](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/equalityMeaning.data.ts)
+- [True False Equality](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/trueFalseEquality.data.ts)
 
 ## Storyboard (draft)
 

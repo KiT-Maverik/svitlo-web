@@ -11,7 +11,7 @@ Split the amount removed to reach ten first, then subtract the remainder.
 
 ## Target Skills
 
-- [Subtraction — Crossing ten](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/crossTenSubtraction.data.ts)
+- [Cross Ten Subtraction](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/crossTenSubtraction.data.ts)
 
 ## Storyboard (draft)
 

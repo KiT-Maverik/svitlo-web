@@ -11,7 +11,7 @@ Show each regrouping step through a full ten and leftover ones.
 
 ## Target Skills
 
-- [Addition — Crossing ten](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/crossTenAddition.data.ts)
+- [Cross Ten Addition](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/crossTenAddition.data.ts)
 
 ## Storyboard (draft)
 

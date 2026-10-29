@@ -11,7 +11,7 @@ Separate and reunite objects, keeping the total invariant and identifying unknow
 
 ## Target Skills
 
-- [Addition and subtraction — Part–whole relationship](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/partWhole.data.ts)
+- [Part Whole](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/partWhole.data.ts)
 
 ## Storyboard (draft)
 

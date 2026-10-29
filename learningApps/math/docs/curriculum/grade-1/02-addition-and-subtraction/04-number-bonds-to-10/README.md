@@ -11,7 +11,7 @@ Explore alternative pairs for the same whole and use ten frames to find missing 
 
 ## Target Skills
 
-- [Addition and subtraction — Bonds of 10](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/numberBonds10.data.ts)
+- [Number Bonds 10](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/numberBonds10.data.ts)
 
 ## Storyboard (draft)
 

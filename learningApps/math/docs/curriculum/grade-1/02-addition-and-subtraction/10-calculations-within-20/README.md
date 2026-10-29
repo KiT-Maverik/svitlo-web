@@ -11,8 +11,8 @@ Connect related equations and use the opposite operation to test a result.
 
 ## Target Skills
 
-- [Addition and subtraction — Number facts ≤ 20](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin20.data.ts)
-- [Addition and subtraction — Inverse operations](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/inverseOperations.data.ts)
+- [Facts Within 20](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin20.data.ts)
+- [Inverse Operations](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/inverseOperations.data.ts)
 
 ## Storyboard (draft)
 

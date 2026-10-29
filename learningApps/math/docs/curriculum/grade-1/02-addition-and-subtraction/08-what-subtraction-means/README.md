@@ -11,9 +11,9 @@ Contrast removing a part with joining groups and describe the resulting differen
 
 ## Target Skills
 
-- [Subtraction — Meaning and models](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractMeaning.data.ts)
-- [Subtraction — Zero](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractZero.data.ts)
-- [Subtraction — Same number](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractSelf.data.ts)
+- [Subtract Meaning](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractMeaning.data.ts)
+- [Subtract Zero](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractZero.data.ts)
+- [Subtract Self](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractSelf.data.ts)
 
 ## Storyboard (draft)
 

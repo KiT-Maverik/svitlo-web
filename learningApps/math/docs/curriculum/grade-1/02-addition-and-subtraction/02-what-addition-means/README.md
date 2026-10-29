@@ -11,8 +11,8 @@ Connect visible actions to the + sign; notice that adding zero leaves the quanti
 
 ## Target Skills
 
-- [Addition — Meaning and models](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/addMeaning.data.ts)
-- [Addition — Zero](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/addZero.data.ts)
+- [Add Meaning](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/addMeaning.data.ts)
+- [Add Zero](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/addZero.data.ts)
 
 ## Storyboard (draft)
 
