@@ -12,10 +12,18 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 4. A third integration Skill C is justified only when choosing between A and B or understanding their relationship is independently meaningful. A Question or Lesson using both A and B does not automatically require C.
 5. Changing numbers, media, presentation, hints or assessment mechanics normally changes a Question variant, not the Skill identity.
 6. Never silently split, merge, rename or move an approved competency. Surface unclear cases for editorial review first.
+7. **Skill names and their canonical definitions must be independent of learning depth, grade, age, curriculum tier, teaching method, assessment format and permitted mathematical formalism.** Define the complete subject-specific competency. Each Curriculum decides how deeply and in which form that competency is taught and evaluated; none of these limits may be embedded in the Skill's identity or explanation.
 
 **Examples:** multiplying and dividing may be independent; an exercise requiring both can reference both Skill IDs; explaining their inverse relationship may be a separate Skill only if explicitly warranted. Classifying even versus odd can be one coherent ability. `2 × 7` is an exercise variation, not a dedicated Skill.
 
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
+
+### Textbook-local Skill identity
+
+- Each textbook owns an **independent Skills Taxonomy and Skill identities**. The same or semantically similar competency **may occur in multiple textbooks**, each with its own Skill entity and stable ID; cross-textbook similarity is not an error.
+- **Do not require shared Skill UUIDs, a central registry, synchronization, canonical global deduplication or cross-textbook progress analytics.** These are not prerequisites for creating or implementing a textbook.
+- **Within each textbook**, continue checking for redundant Skills, unclear splits/merges, atomicity and stable identities. Cross-textbook duplication permission does **not** authorize needless duplication within one taxonomy.
+- Cross-subject lessons may draw on material from several textbooks without asserting globally unified Skill identity or a combined learner-mastery record.
 
 - A Skill has one primary SkillGroup in the approved taxonomy and may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics.
 - A multi-Skill Question does not automatically establish separate mastery evidence for each referenced Skill. Assessment attribution and scores belong to assessment/progress entities.
@@ -27,7 +35,7 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 
 `<PackageRoot>/docs/skills/taxonomy.md` is the **permanent, sole editorial definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy. The explanatory prose appears immediately below the heading and implementation link **without a `Description:` label**. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
 
-Do not copy a Skill heading into its description. Explain the mathematical ability, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
+Do not copy a Skill heading into its description. Explain the subject-specific competency, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
 
 The current shared-engine `Skill_Config` contains a stable `id` and localized `name`, not `description`. The builder adds `collection`; `fileLocation` belongs to separate indexing work, not assumed implemented. **Do not introduce a runtime description field** by copying taxonomy prose.
 
