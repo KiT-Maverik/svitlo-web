@@ -2,11 +2,11 @@
 
 Date: 2026-10-29
 
-Editorial **Draft** of the subject-specific Physics taxonomy. Each Skill describes an independent physics competency without imposing limits on the depth of mastery, age, Curriculum level, permissible formulas, teaching method, or assessment approach. Different independent curricula may include the same Skill at different depths and in different sequences; no single curriculum sets the boundaries of the subject catalog.
+**Approved** subject-specific Physics Skills Taxonomy. Each Skill describes an independent physics competency without imposing limits on the depth of mastery, age, Curriculum level, permissible formulas, teaching method, or assessment approach. Different independent curricula may include the same Skill at different depths and in different sequences; no single curriculum sets the boundaries of the subject catalog.
 
 Physics describes the laws governing natural phenomena and explains principles used in technology. Designing, selecting components for, and optimizing devices belong to the Engineering textbook. General scientific methodology belongs to Human and Thinking. Cross-subject references to these topics do not establish shared global Skill IDs.
 
-**Requires an editorial decision:** the boundary between Mechanics and Engineering for simple machines and structural stability; distinctions among waves, optics, radiation, and thermal radiation. Conservation of linear momentum, angular momentum, and electric charge are placed in their respective subject groups, not in the Energy Domain.
+**Approved subject boundaries:** Mechanics covers the physical principles of simple machines, forces, equilibrium, and structural stability, while the design and optimization of machines and structures belong to Engineering. Waves covers general wave phenomena; Optics covers light propagation and image formation; Radiation covers electromagnetic-spectrum phenomena and interactions with matter; Thermodynamics covers radiative heat transfer alongside conduction and convection. Conservation of linear momentum, angular momentum, and electric charge are placed in their respective subject groups, not in the Energy Domain.
 
 References: [OpenStax University Physics](https://openstax.org/books/university-physics-volume-1/pages/preface), [OpenStax: Wave Interaction](https://openstax.org/books/physics/pages/13-3-wave-interaction-superposition-and-interference), [Studio Subject Proposition](../../../../studio/Subject%20Proposition.md). These materials were used to check subject coverage, not as a ready-made curriculum or a literal structure for Svitlo.
 
