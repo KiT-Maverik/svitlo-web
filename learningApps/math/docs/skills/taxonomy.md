@@ -1830,127 +1830,127 @@ Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/budgetConst
 
 With a budget of 40, a basket costing 43 cannot be purchased, even if every individual item costs less than 40.
 
-### Дані
+### Data
 
 Groups: 3 · Skills: 15
 
 Code: [Code](../../src/data/skillsTaxonomy/data/data.data.ts)
 
-Охоплює формулювання запитань, збирання та класифікацію відомостей, їх подання в таблицях і діаграмах та обґрунтовані висновки за ними.
+This domain covers posing questions, collecting and classifying information, representing it in tables and charts, and drawing conclusions supported by the available evidence.
 
-#### Збирання даних
+#### Data collection
 
 Skills: 5
 
-Постановка дослідницького запитання, вибір ознак, підрахунок випадків і запис результатів спостереження.
-
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/collection.data.ts)
 
-##### Групувати об’єкти за однією або двома визначеними ознаками
+Collecting data requires a focused investigation question, suitable attributes or categories, consistent observation and counting, and an accurate record of results.
+
+##### Classifying objects by attributes
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/classifyByAttribute.data.ts)
 
-Одні й ті самі предмети можна групувати за кольором або формою; дві ознаки утворюють спільні підкатегорії.
+The same objects can be grouped by color or by shape. Using two attributes together creates categories corresponding to their combinations.
 
-##### Формулювати запитання, для відповіді на яке потрібно зібрати дані
+##### Formulating a data investigation question
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/formulateInvestigationQuestion.data.ts)
 
-Запитання «який фрукт найпопулярніший у групі?» вимагає зібрати відповіді людей, а не відразу виконати арифметичну дію.
+A question such as 'Which fruit is most popular in the group?' calls for gathering people's responses rather than immediately performing an arithmetic operation.
 
-##### Збирати прості дані підрахунком та фіксувати частоти категорій
+##### Counting category frequencies
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/collectCounts.data.ts)
 
-Для кожної категорії рахують кількість випадків; підсумок частот повинен відповідати загальному числу спостережень.
+Count the occurrences in each category separately. The category frequencies must sum to the total number of observations when the categories partition the dataset.
 
-##### Записувати кількості умовними позначками й відновлювати їх
+##### Recording and reading tally marks
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/tallyMarks.data.ts)
 
-П’ять рисок можуть позначати п’ять відповідей; за позначками відновлюють точні кількості кожної категорії.
+Five tally marks can represent five responses. The marks must allow the exact count in each category to be reconstructed.
 
-##### Заповнювати таблицю результатами спостереження або вимірювання
+##### Recording observations in a table
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/fillSimpleTable.data.ts)
 
-Рядки або стовпці мають узгоджені назви, щоб значення вимірювань не втратили одиниці й контекст.
+Rows and columns need consistent labels so that observed or measured values retain their units and meaning.
 
-#### Подання даних
+#### Data representation
 
 Skills: 7
 
-Відображення зібраних чисел у таблицях, піктограмах і діаграмах із правильним розумінням масштабу позначок.
-
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/presentation.data.ts)
 
-##### Фіксувати серію вимірювань на точковій/лінійній діаграмі з числовою віссю (line plot)
+Recorded quantities are displayed in tables, pictographs, line plots, and bar charts. Interpreting the scale of symbols and the chart's labels is essential.
+
+##### Plotting measurements on a number line
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/linePlotMeasurements.data.ts)
 
-На числовій осі повторні вимірювання позначають над відповідними значеннями; число позначок показує частоту.
+Repeated observations are marked above their corresponding values on a number axis. The number of marks at a position represents its frequency.
 
-##### Читати значення з таблиці та відповідати на прості питання за нею
+##### Reading a simple data table
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readSimpleTable.data.ts)
 
-Щоб відповісти, скільки учнів обрали варіант Б, читають потрібний підписаний осередок, а не сусідній стовпець.
+To answer how many students chose option B, read the cell with the appropriate row and column labels, rather than a neighboring value.
 
-##### Читати піктограму, де один символ відповідає одному об’єкту
+##### Reading a one-to-one pictograph
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readPictograph.data.ts)
 
-Кожна картинка означає рівно один об’єкт; кількість зображень тому дорівнює частоті категорії.
+Each picture represents exactly one object, so the number of icons in a category equals its frequency.
 
-##### Будувати просту піктограму за підрахованими даними
+##### Constructing a pictograph
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/buildPictograph.data.ts)
 
-Для значень 3, 2 і 4 потрібно намалювати саме 3, 2 та 4 значки відповідно до підписаних категорій.
+For category counts of 3, 2, and 4, draw 3, 2, and 4 symbols respectively, with the categories labeled correctly.
 
-##### Читати стовпчикову діаграму й порівнювати висоти стовпчиків
+##### Reading a bar chart
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readBarChart.data.ts)
 
-Порівнюють стовпчики від спільної базової лінії та з однаковою шкалою; висота кодує число випадків.
+Compare bar heights against a common baseline and consistent scale. Height represents the quantity recorded for each category.
 
-##### Створювати просту стовпчикову діаграму за таблицею
+##### Constructing a bar chart
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/buildBarChart.data.ts)
 
-Числа з таблиці переносять у висоти стовпчиків за єдиним масштабом і з підписаними категоріями.
+Translate values from a table into bar heights using one consistent numerical scale and clearly labeled categories.
 
-##### Читати діаграму, де одна позначка відповідає кільком одиницям
+##### Reading a scaled chart
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/scaledChart.data.ts)
 
-Якщо одна позначка означає дві одиниці, три позначки дають шість; масштаб легенди не можна ігнорувати.
+If each chart symbol represents two units, three symbols represent six. The legend's scale must be applied rather than ignored.
 
-#### Інтерпретація даних
+#### Data interpretation
 
 Skills: 3
 
-Отримання висновків із числових даних, обчислення порівнянь та виявлення нестачі відомостей.
-
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/interpretation.data.ts)
 
-##### Знаходити різницю та суму кількостей за таблицею чи діаграмою
+Interpretation connects the numerical information in a dataset to valid comparisons, calculations, and claims, while recognizing when evidence is insufficient.
+
+##### Comparing category totals and differences
 
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/compareCategories.data.ts)
 
-Із категорій 7 та 4 можна визначити різницю 3 і суму 11, зберігаючи той самий контекст даних.
+For category counts of 7 and 4, the difference is 3 and their combined total is 11. Both calculations must retain the context of the data.
 
-##### Формулювати висновок, який обґрунтовують наведені дані
+##### Drawing conclusions from data
 
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/interpretConclusion.data.ts)
 
-Твердження «найчастіше обрали синій» виправдане лише тоді, коли у відповідної категорії справді найбільша частота.
+The claim that blue was chosen most often is justified only when blue actually has the greatest recorded frequency.
 
-##### Визначати, якої інформації бракує для відповіді на поставлене питання
+##### Identifying missing information
 
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/missingInformation.data.ts)
 
-Таблиця без підпису одиниці або без потрібної категорії може не дозволити визначити значення, про яке запитують.
+A table with no measurement unit or without the necessary category may not contain enough information to answer the question posed.
 
 ### Probability
 
