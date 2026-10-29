@@ -1,26 +1,31 @@
 # Time, Money, and Data
 
-> **Curriculum: Grade 1 · модуль 05**  
-> **Статус:** усі 6 уроків мають сценарні чернетки (36 секцій); повні методичні Learning Briefs ще не створені.
+> **Curriculum: Mathematics — Grade 1 · Module 05**
+> **Status:** All six lessons have draft storyboards (36 sections); full methodological Learning Briefs remain to be written.
 
-**Джерело порядку та Skill ID:** [Curriculum Grade 1](../grade-1.curriculum.md). Це навчальний модуль, а не SkillGroup з таксономії.
+The authoritative learning sequence and skill mapping are specified in [Grade 1 Curriculum](../grade-1.curriculum.md). This is a learning module, not a SkillGroup in the taxonomy.
 
-## Уроки
+## Learning goal
 
-- 01. [Parts of a Day and Hours](./01-parts-of-a-day-and-hours/README.md) — Упорядковує частини доби, визначає повні години. · [Сценарій](./01-parts-of-a-day-and-hours/Sections/README.md)
-- 02. [Days of the Week and the Calendar](./02-days-of-the-week-and-the-calendar/README.md) — Користується базовими назвами днів тижня й місяців. · [Сценарій](./02-days-of-the-week-and-the-calendar/Sections/README.md)
-- 03. [Money Denominations and Amounts](./03-money-denominations-and-amounts/README.md) — Розпізнає номінали довільної заданої валюти, складає й порівнює суми. · [Сценарій](./03-money-denominations-and-amounts/Sections/README.md)
-- 04. [Sorting and Counting Data](./04-sorting-and-counting-data/README.md) — Класифікує об’єкти за ознаками та збирає частоти. · [Сценарій](./04-sorting-and-counting-data/Sections/README.md)
-- 05. [Simple Tables and Pictographs](./05-simple-tables-and-pictographs/README.md) — Знаходить значення у таблиці чи піктограмі. · [Сценарій](./05-simple-tables-and-pictographs/Sections/README.md)
-- 06. [Explain Your Reasoning](./06-explain-your-reasoning/README.md) — Співвідносить реальну ситуацію, модель і вираз; пояснює вибір. · [Сценарій](./06-explain-your-reasoning/Sections/README.md)
+Use time, money, and basic data representations to explain everyday quantities. Learners read whole hours and simple calendars, assemble money amounts, classify observations, and interpret tables and pictographs. Reasoning links representations to clear answers.
 
-## Сценарії взаємодії (Educational Screenwriter · draft)
+## Lessons
 
-Усі 6 уроків мають каталоги `Sections/` із шістьма Markdown-сценами на кожен — **36 сценарних секцій**. Сцени описують композицію, екранний текст, озвучення, навчальну взаємодію, допомогу після помилок, потреби в майбутніх графічних і медійних ресурсах, доступність. Це не готова реалізація і не Assessment Specification.
+- 01. [Parts of a Day and Hours](./01-parts-of-a-day-and-hours/README.md) — Sequence parts of a day and read whole hours. [Storyboard](./01-parts-of-a-day-and-hours/Sections/README.md)
+- 02. [Days of the Week and the Calendar](./02-days-of-the-week-and-the-calendar/README.md) — Navigate days of the week and the calendar. [Storyboard](./02-days-of-the-week-and-the-calendar/Sections/README.md)
+- 03. [Money Denominations and Amounts](./03-money-denominations-and-amounts/README.md) — Recognize configured denominations and compose and compare amounts. [Storyboard](./03-money-denominations-and-amounts/Sections/README.md)
+- 04. [Sorting and Counting Data](./04-sorting-and-counting-data/README.md) — Classify objects and count each category. [Storyboard](./04-sorting-and-counting-data/Sections/README.md)
+- 05. [Simple Tables and Pictographs](./05-simple-tables-and-pictographs/README.md) — Read simple tables and one-to-one pictographs. [Storyboard](./05-simple-tables-and-pictographs/Sections/README.md)
+- 06. [Explain Your Reasoning](./06-explain-your-reasoning/README.md) — Explain a calculation by relating a story, model, and expression. [Storyboard](./06-explain-your-reasoning/Sections/README.md)
 
-**Межі та локалізація:**
-- Час: не пов’язувати частини доби з національним режимом дня; локалізувати назви днів та місяців; перший стовпчик тижня є параметром інтерфейсу.
-- Гроші: номінали `1, 2, 5 од.` у сценарії — лише **умовна навчальна валюта**. Реальне використання конкретної валюти вимагає її підтверджених номіналів.
-- Дані: зберігати ту саму частоту в таблицях і піктограмах, зазначати легенду масштабу.
+## Localization and conceptual boundaries
 
-**Перед затвердженням:** Methodist має створити повні Learning Briefs для 6 уроків та перевірити коректність сценаріїв щодо меж наявних Skills.
+- **Time:** Do not tie parts of the day to a nationally specific daily routine. Localize the names of days and months; the first day displayed in a calendar week is an interface configuration.
+- **Money:** Sample denominations such as 1, 2, and 5 refer to an **imaginary learning currency** unless the denominations of a real selected currency have been verified.
+- **Data:** Numerical frequencies must remain consistent between tables and pictographs, and any scale legend must be stated clearly.
+
+The methodologist must prepare full Learning Briefs and review each storyboard against the approved Skills Taxonomy before publication.
+
+## Storyboard status
+
+6 lessons have 36 draft storyboard sections stored in their respective `Sections/` directories. The storyboards describe on-screen composition, learner interaction, narration, pedagogical feedback, prospective assets, and accessibility. No production graphics, audio, UI code, or formal assessment specification is implied by this draft status.

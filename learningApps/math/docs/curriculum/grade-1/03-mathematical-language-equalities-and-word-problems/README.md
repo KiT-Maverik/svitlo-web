@@ -1,28 +1,32 @@
 # Mathematical Language, Equalities, and Word Problems
 
-> **Curriculum: Grade 1 · модуль 03**  
-> **Статус:** усі 9 уроків мають сценарні чернетки (54 секції); повні методичні Learning Briefs ще не створені.
+> **Curriculum: Mathematics — Grade 1 · Module 03**
+> **Status:** All nine lessons have draft storyboards (54 sections); full methodological Learning Briefs remain to be written.
 
-**Джерело порядку та Skill ID:** [Curriculum Grade 1](../grade-1.curriculum.md). Це навчальний модуль, а не SkillGroup з таксономії.
+The authoritative learning sequence and skill mapping are specified in [Grade 1 Curriculum](../grade-1.curriculum.md). This is a learning module, not a SkillGroup in the taxonomy.
 
-## Уроки
+## Learning goal
 
-- 01. [Mathematical Equality Means Balance](./01-mathematical-equality-means-balance/README.md) — Визначає, коли дві сторони мають рівні значення. · [Сценарій](./01-mathematical-equality-means-balance/Sections/README.md)
-- 02. [Reading Numerical Expressions](./02-reading-numerical-expressions/README.md) — Пояснює запис простої операції числами й знаками. · [Сценарій](./02-reading-numerical-expressions/Sections/README.md)
-- 03. [The Missing Number](./03-the-missing-number/README.md) — Заповнює пропуск у рівності та знаходить невідомий доданок. · [Сценарій](./03-the-missing-number/Sections/README.md)
-- 04. [Known Information in a Word Problem](./04-known-information-in-a-word-problem/README.md) — Виділяє дані й запитання в однокроковій ситуації. · [Сценарій](./04-known-information-in-a-word-problem/Sections/README.md)
-- 05. [Pictures and Expressions for Word Problems](./05-pictures-and-expressions-for-word-problems/README.md) — Створює модель ситуації та обирає додавання або віднімання. · [Сценарій](./05-pictures-and-expressions-for-word-problems/Sections/README.md)
-- 06. [How Many More or Fewer](./06-how-many-more-or-fewer/README.md) — Розв’язує задачі на різницеве порівняння та збільшення/зменшення. · [Сценарій](./06-how-many-more-or-fewer/Sections/README.md)
-- 07. [Part-Whole Word Problems](./07-part-whole-word-problems/README.md) — Пояснює рішення на основі моделі частина–ціле. · [Сценарій](./07-part-whole-word-problems/Sections/README.md)
-- 08. [Patterns and Explanations](./08-patterns-and-explanations/README.md) — Продовжує числову закономірність та пояснює правило. · [Сценарій](./08-patterns-and-explanations/Sections/README.md)
-- 09. [Creating Your Own Word Problem](./09-creating-your-own-word-problem/README.md) — Складає просту текстову задачу за малюнком чи виразом. · [Сценарій](./09-creating-your-own-word-problem/Sections/README.md)
+Connect mathematical language with numerical relationships and word problems. Learners read expressions and equalities, identify known and unknown quantities, and translate short situations into models. Explanations should make the mathematical choice explicit.
 
-## Сценарії взаємодії · Educational Screenwriter (draft)
+## Lessons
 
-Кожен із 9 уроків має каталог `Sections/` з 6 послідовними Markdown-сценами (**54 секції загалом**). Сцени визначають математичний сенс, композицію екрана, текст і озвучення, дії учня, помилкові гілки, педагогічні підказки, майбутні ресурси та доступність.
+- 01. [Mathematical Equality Means Balance](./01-mathematical-equality-means-balance/README.md) — Understand equality as two expressions with the same value. [Storyboard](./01-mathematical-equality-means-balance/Sections/README.md)
+- 02. [Reading Numerical Expressions](./02-reading-numerical-expressions/README.md) — Read simple numerical expressions accurately. [Storyboard](./02-reading-numerical-expressions/Sections/README.md)
+- 03. [The Missing Number](./03-the-missing-number/README.md) — Complete true equalities and find an unknown addend. [Storyboard](./03-the-missing-number/Sections/README.md)
+- 04. [Known Information in a Word Problem](./04-known-information-in-a-word-problem/README.md) — Identify known information and the actual question in a word problem. [Storyboard](./04-known-information-in-a-word-problem/Sections/README.md)
+- 05. [Pictures and Expressions for Word Problems](./05-pictures-and-expressions-for-word-problems/README.md) — Build a model and choose an operation for a one-step problem. [Storyboard](./05-pictures-and-expressions-for-word-problems/Sections/README.md)
+- 06. [How Many More or Fewer](./06-how-many-more-or-fewer/README.md) — Compare quantities and describe increases or decreases. [Storyboard](./06-how-many-more-or-fewer/Sections/README.md)
+- 07. [Part-Whole Word Problems](./07-part-whole-word-problems/README.md) — Solve part–whole situations and name the result's unit. [Storyboard](./07-part-whole-word-problems/Sections/README.md)
+- 08. [Patterns and Explanations](./08-patterns-and-explanations/README.md) — Continue a pattern and justify its rule. [Storyboard](./08-patterns-and-explanations/Sections/README.md)
+- 09. [Creating Your Own Word Problem](./09-creating-your-own-word-problem/README.md) — Create a simple solvable word problem from a picture or expression. [Storyboard](./09-creating-your-own-word-problem/Sections/README.md)
 
-**Межі:** це сценарії, а не реалізовані компоненти, реальні медіафайли чи Assessment Specification. Формальне оцінювання опрацьовується окремо; учень може повторювати практику без штрафів або таймера. Текстові задачі озвучуються, щоб математичне навчання не залежало від самостійного читання складної умови.
+## Pedagogical boundaries
 
-**Перед затвердженням:** Methodist має підготувати й перевірити повні Learning Briefs для цих уроків, адже наразі у вкладених `README.md` — лише короткі методичні картки, а не деталізований методичний опис.
+The equality sign must represent equivalent values on **both** sides, not a command to calculate. Word problems distinguish given information, the question, the representation, operation choice, and an answer with appropriate units.
 
-**Редакційна примітка:** у секціях про рівність знак `=` означає однакові значення **обох** сторін; у текстових задачах розрізняються дані, запитання, модель, вибір дії та повна відповідь з назвою одиниці.
+Read word problems aloud where necessary so that independent reading proficiency does not become a prerequisite for learning mathematics.
+
+## Storyboard status
+
+9 lessons have 54 draft storyboard sections stored in their respective `Sections/` directories. The storyboards describe on-screen composition, learner interaction, narration, pedagogical feedback, prospective assets, and accessibility. No production graphics, audio, UI code, or formal assessment specification is implied by this draft status.
