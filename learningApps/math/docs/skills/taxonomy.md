@@ -1,8 +1,8 @@
-# Математика — Skills Taxonomy
+# Mathematics — Skills Taxonomy
 
 Date: 2026-10-28
 
-Затверджений предметний каталог початкових математичних умінь: лічба, натуральні числа, дроби, арифметика, алгебраїчне мислення, геометрія, вимірювання, час, гроші, дані, ймовірність, розв’язування задач і математичні міркування. Ієрархія Domain → Group → Skill класифікує компетенції, а не визначає клас навчання, послідовність уроків або вимоги до оцінювання. За межами поточної таксономії — формальні від’ємні числа, відсотки, пропорції та розширена алгебра.
+An approved subject-level catalog of foundational mathematical competencies covering counting, natural numbers, fractions, arithmetic, algebraic thinking, geometry, measurement, time, money, data, probability, problem solving, and mathematical reasoning. The Domain → Group → Skill hierarchy classifies competencies; it does not prescribe school grades, lesson order, or assessment criteria. Formal negative numbers, percentages, proportional reasoning, and advanced algebra are outside the current taxonomy.
 
 ## SUMMARY
 
@@ -14,143 +14,143 @@ Code files: 13/13 Domains · 60/60 Groups · 285/285 Skills
 
 ## DOMAINS
 
-### Лічба
+### Counting
 
 Groups: 5 · Skills: 15
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/counting.data.ts)
 
-Описує становлення поняття кількості через взаємно однозначне зіставлення предметів і чисел, рух натуральним числовим рядом, порядкові позиції та групування для лічби.
+This domain develops the concept of quantity through one-to-one matching between objects and number words, movement along the natural-number sequence, identification of ordinal positions, and grouping as an efficient way to count.
 
-#### Числові послідовності
+#### Number sequences
 
 Skills: 5
 
-Послідовне називання натуральних чисел, рух у прямому й зворотному напрямках та відновлення пропущених елементів ряду без обов’язкового початку з одиниці.
-
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/sequence.data.ts)
 
-##### Перелічувати предмети без пропусків і повторів, встановлюючи відповідність «предмет — одне число»
+The learner uses the order of natural numbers to move forward or backward and restore missing entries in a sequence. Counting does not have to restart at one; continuation from a given position is an essential distinction.
+
+##### One-to-one correspondence when counting
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/oneToOne.data.ts)
 
-За довільного розташування елементів кожному відповідає лише одне числове слово; обхід множини не змінює її чисельності.
+Each object is matched with exactly one number word regardless of the objects' arrangement. Changing the order in which a set is traversed does not change its cardinality.
 
-##### Лічити вперед у межах 20, зокрема від довільного початкового числа
+##### Counting forward within 20
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward20.data.ts)
 
-Від числа 8 наступними є 9, 10, 11; орієнтир — послідовність, а не запам’ятована лічилка від одиниці.
+Starting at 8, the next numbers are 9, 10, and 11. The competency concerns continuing the number sequence from any valid starting point, not merely reciting a memorized sequence from one.
 
-##### Лічити назад у межах 20, зокрема від довільного початкового числа
+##### Counting backward within 20
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/backward20.data.ts)
 
-Від числа 14 попередніми є 13, 12, 11; зменшення на одиницю зберігається і при переході через десяток.
+Starting at 14, the preceding numbers are 13, 12, and 11. Each step decreases by one, including when the sequence crosses a boundary between tens.
 
-##### Лічити вперед і назад у межах 100, не починаючи щоразу з одиниці
+##### Counting forward and backward within 100
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward100.data.ts)
 
-Початок може бути всередині двоцифрового діапазону: з 48 перейти через 50 і повернутися через 40, не скидаючи рахунок до початку.
+Counting can begin anywhere in the two-digit range: from 48 the learner crosses 50 and can count backward across 40 without resetting to the beginning of the sequence.
 
-##### Продовжувати й відновлювати послідовність натуральних чисел у межах 1000
+##### Continuing number sequences within 1,000
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward1000.data.ts)
 
-Пропущений член визначають через сусідні значення й крок один, зокрема біля меж сотень (299, 300, 301).
+A missing term is determined by its neighbors and the step of one, including at hundreds boundaries such as 299, 300, 301.
 
-#### Кількість
+#### Cardinality
 
 Skills: 4
-
-Розуміння кількості як характеристики множини, включно з порожньою, та способи встановлення й зіставлення чисельності груп.
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/cardinality.data.ts)
 
-##### Визначати кількість предметів за останнім названим числом під час лічби
+Cardinality is the number of elements in a set, including an empty set. This group distinguishes establishing a set's size from comparing the sizes of two sets.
+
+##### Determining how many objects are in a set
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/basicCardinality.data.ts)
 
-Після позначення кожного елемента рівно один раз останнє вимовлене число описує розмір усієї множини, а не лише останній предмет.
+After every object has been counted exactly once, the final spoken number describes the size of the entire set rather than only the last object visited.
 
-##### Розпізнавати нуль як кількість елементів порожньої множини
+##### Understanding zero as an empty quantity
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/zero.data.ts)
 
-Порожня коробка має кількість нуль, хоча сам контейнер існує; відсутність елементів не слід плутати з відсутністю об’єкта.
+An empty box contains zero items even though the box itself exists. Having no elements in a set must not be confused with the absence of a container or object.
 
-##### Порівнювати дві множини через попарне зіставлення або підрахунок
+##### Comparing sets by matching or counting
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/compareSets.data.ts)
 
-Якщо кожному елементу однієї множини можна поставити у відповідність рівно один елемент іншої, кількості рівні незалежно від розмірів предметів.
+If every element in one set can be paired with exactly one element in the other and nothing remains unmatched, the sets have equal cardinality regardless of the physical sizes of the objects.
 
-##### Визначати кількість великої групи предметів через об’єднання в десятки або сотні
+##### Counting objects in groups of tens or hundreds
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/groupAndCount.data.ts)
 
-Об’єднання дрібних елементів у повні десятки чи сотні скорочує підрахунок, а залишок враховується окремо.
+Forming complete tens or hundreds allows a large collection to be counted efficiently. Any leftover individual items must still be included in the total.
 
-#### Крокова лічба
+#### Skip counting
 
 Skills: 4
 
-Рух числовим рядом із фіксованим приростом, пов’язаний із рівними групами, десятками та сотнями, а не з перелічуванням одиниць.
-
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/steps.data.ts)
 
-##### Лічити рівними кроками по 2 й пояснювати, які групи перелічуються
+The learner moves along the number sequence in fixed increments corresponding to equal-sized groups, tens, or hundreds, rather than enumerating individual units.
+
+##### Counting in steps of 2
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy2.data.ts)
 
-Послідовність 2, 4, 6, 8 відображає додавання ще однієї пари; групи мають однаковий розмір.
+The sequence 2, 4, 6, 8 represents adding another pair at each step. Each counted group contains the same number of objects.
 
-##### Лічити рівними кроками по 5 й пояснювати зв’язок із групуванням
+##### Counting in steps of 5
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.ts)
 
-Крок 5 відповідає повним п’ятіркам, тому 5, 10, 15 можна пов’язати з п’ятьма пальцями чи пучками предметів.
+Each increment represents another complete group of five. The sequence 5, 10, 15 can be grounded in groups of five fingers or bundles of objects.
 
-##### Лічити десятками в межах 1000
+##### Counting in steps of 10
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy10.data.ts)
 
-У послідовності 230, 240, 250 змінюються десятки, а одиниці не додаються по одній; після 290 буде 300.
+In 230, 240, 250, the count increases by ten without adding single units one at a time; the number after 290 is 300.
 
-##### Лічити сотнями в межах 1000
+##### Counting in steps of 100
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy100.data.ts)
 
-Перехід 400, 500, 600 демонструє приріст однієї сотні та збереження решти розрядної структури.
+The progression 400, 500, 600 adds one hundred at each step while preserving the lower place values.
 
-#### Порядкова лічба
+#### Ordinal counting
 
 Skills: 1
-
-Відношення між позицією елемента в упорядкованому ряду та загальною кількістю елементів, яке відокремлює питання «котрий?» від «скільки?».
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/ordinal/ordinal.data.ts)
 
-##### Визначати порядковий номер об’єкта та розрізняти порядок і кількість
+Ordinal position identifies where an element occurs in an ordered sequence, not how many elements are in the entire set. It distinguishes the questions 'Which position?' and 'How many?'.
+
+##### Recognizing ordinal position
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/ordinal/skills/basicOrdinal.data.ts)
 
-У ряді з п’яти фігур третя позиція не означає кількість три: порядковий номер залежить від напряму відліку.
+In a row of five shapes, the third position does not mean a quantity of three. An object's ordinal number depends on the direction from which the row is counted.
 
-#### Парність
+#### Even and odd numbers
 
 Skills: 1
 
-Класифікація натуральних чисел за можливістю поділити відповідну кількість предметів на пари без залишку.
-
 Code: [Code](../../src/data/skillsTaxonomy/counting/parity/parity.data.ts)
 
-##### Розрізняти парні й непарні числа через розбиття на пари
+Parity is determined by whether a natural-number quantity can be partitioned into pairs without leaving an unmatched item.
+
+##### Identifying even and odd numbers using pairs
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/parity/skills/evenOdd.data.ts)
 
-Для парної кількості можна скласти неперетинні пари без самотнього елемента; для непарної залишиться один.
+An even quantity can be divided into disjoint pairs with no object left alone; an odd quantity leaves exactly one unpaired object.
 
 ### Натуральні числа
 
