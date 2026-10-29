@@ -820,73 +820,73 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by10.data.
 
 Множення на 10 додає десяткову одиницю до кожної групи: 6 × 10 = 60.
 
-##### Пояснювати й застосовувати множення на 0 та 1
+##### Multiplication — × 0 · × 1
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/by0And1.data.ts)
 
 Порожня множина груп дає нуль, а одна група зберігає початкову кількість.
 
-##### Пояснювати переставний закон множення за допомогою моделей
+##### Multiplication — Commutative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/commutative.data.ts)
 
 Масив 3 × 5 можна повернути та побачити 5 × 3; число клітинок залишається 15.
 
-##### Змінювати групування множників для зручного обчислення
+##### Multiplication — Associative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/associative.data.ts)
 
 У 2 × (3 × 4) та (2 × 3) × 4 однакова загальна кількість предметів, хоча групи утворено в іншому порядку.
 
-##### Розкладати один множник на частини та знаходити суму часткових добутків
+##### Multiplication — Distributive property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/distributive.data.ts)
 
 Для 6 × 14 можна поділити 14 на 10 і 4, а потім додати 6 × 10 та 6 × 4.
 
-##### Виводити незнайомі табличні добутки з відомих, а не лише пригадувати їх
+##### Multiplication — Deriving multiplication Number facts
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/deriveFacts.data.ts)
 
 Добуток 7 × 8 можна знайти через 7 × 7 плюс сім, використовуючи засвоєний випадок.
 
-##### Знаходити множення на 4 через подвійне подвоєння
+##### Multiplication — Doubling twice
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/doubleTwice.data.ts)
 
 Чотири однакові групи можна отримати двома послідовними подвоєннями, а не окремим таблицевим правилом.
 
-##### Множити круглі десятки на одноцифрові числа в межах 1000
+##### Multiplication — Whole tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/roundTens.data.ts)
 
 Для 30 × 4 спочатку обчислюють 3 × 4 десятки, отримуючи 12 десятків, тобто 120.
 
-##### Множити круглі сотні на одноцифрові числа в межах 1000
+##### Multiplication — Whole hundreds
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/roundHundreds.data.ts)
 
 Для 200 × 3 множать дві сотні на три й отримують шість сотень.
 
-##### Множити двоцифрове число на одноцифрове через розрядний розклад
+##### Multiplication — 2-digit×1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/twoDigitByOne.data.ts)
 
 У 23 × 4 множення розкладають як 20 × 4 плюс 3 × 4, утримуючи одиниці й десятки окремо.
 
-##### Множити трицифрове число на одноцифрове, якщо результат у межах 1000
+##### Multiplication — 3-digit×1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/threeDigitByOne.data.ts)
 
 У 124 × 3 добуток можна зібрати із 100 × 3, 20 × 3 та 4 × 3; підсумок не перевищує 1000.
 
-##### Оцінювати добуток та перевіряти його оберненою дією або іншим способом
+##### Multiplication — Result checking
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/checkProduct.data.ts)
 
 Перед 49 × 6 приблизно очікують 300, а множенням навпаки або повторним додаванням можна підтвердити точне значення.
 
-#### Ділення
+#### Division
 
 Skills: 24
 
@@ -894,25 +894,25 @@ Skills: 24
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/divide.data.ts)
 
-##### Моделювати ділення як розподіл на задану кількість рівних груп
+##### Division — Equal sharing
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/equalSharing.data.ts)
 
 Роздати 12 предметів порівну чотирьом учасникам означає знайти розмір кожної із чотирьох груп.
 
-##### Моделювати ділення як визначення кількості груп заданого розміру
+##### Division — Equal grouping · Equal groups
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/equalGrouping.data.ts)
 
 Із 12 предметів можна утворити три повні групи по 4; тут невідоме — кількість груп, а не предметів у кожній.
 
-##### Пояснювати ділення як пошук невідомого множника
+##### Division — Inverse operations
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/relationToMultiplication.data.ts)
 
 Якщо 5 × ? = 20, шуканий множник дорівнює 4; поділ знаходить невідомий компонент добутку.
 
-##### Читати запис a ÷ b та співвідносити ділене, дільник і частку з моделлю
+##### Division — Reading expressions
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/readExpression.data.ts)
 
