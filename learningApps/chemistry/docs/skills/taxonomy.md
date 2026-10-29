@@ -994,7 +994,7 @@ Skills: 5
 
 [Not implemented](#)
 
-A reaction involves chemical identity changes; observations must be evaluated in context rather than used as infallible indicators.
+Recognizing chemical change requires identifying initial and resulting chemical species and examining observations critically rather than treating any visible sign as proof.
 
 ##### Reaction Evidence
 
@@ -1008,17 +1008,13 @@ Interpret gas evolution, precipitates, color changes or thermal effects as possi
 
 Identify starting and resulting chemical species while distinguishing them from catalysts and solvents.
 
-##### Precipitation Reactions
+#### Reaction Patterns
+
+Skills: 5
 
 [Not implemented](#)
 
-Explain the formation of an insoluble product from reacting dissolved species.
-
-##### Decomposition Reactions
-
-[Not implemented](#)
-
-Recognize processes in which one chemical species gives rise to multiple products.
+Reaction patterns classify transformations such as combination, decomposition, precipitation, displacement, combustion and hydrolysis. Some categories may overlap and do not by themselves determine a detailed reaction mechanism.
 
 ##### Synthesis Reactions
 
@@ -1026,13 +1022,17 @@ Recognize processes in which one chemical species gives rise to multiple product
 
 Recognize processes producing a new compound from simpler starting substances.
 
-#### Reaction Patterns
-
-Skills: 5
+##### Decomposition Reactions
 
 [Not implemented](#)
 
-Named patterns help characterize transformations but do not replace chemical reasoning about specific reactants.
+Recognize processes in which one chemical species gives rise to multiple products.
+
+##### Precipitation Reactions
+
+[Not implemented](#)
+
+Explain the formation of an insoluble product from reacting dissolved species.
 
 ##### Combustion
 
@@ -1046,67 +1046,11 @@ Characterize reactions with an oxidant that release energy, distinguishing combu
 
 Reason about when one element can replace another in a compound.
 
-##### Neutralization
-
-[Not implemented](#)
-
-Explain net acid–base reactions and avoid assuming every neutralization gives a final pH of seven.
-
 ##### Hydrolysis
 
 [Not implemented](#)
 
 Recognize reactions in which water participates in bond cleavage or chemical conversion.
-
-##### Reversible Reactions
-
-[Not implemented](#)
-
-Recognize that products can reform reactants when the chemical system permits both directions.
-
-#### Acids and Bases
-
-Skills: 6
-
-[Not implemented](#)
-
-Different acid–base models characterize proton transfer, ionic behavior in water and electron-pair interactions at differing levels of generality.
-
-##### Acid–Base Models
-
-[Not implemented](#)
-
-Distinguish common Arrhenius, Brønsted–Lowry and Lewis descriptions by the chemical interactions each includes.
-
-##### pH
-
-[Not implemented](#)
-
-Interpret a logarithmic measure of hydrogen-ion activity and its concentration-based approximations.
-
-##### Acid Strength
-
-[Not implemented](#)
-
-Describe how strongly an acid tends to donate a proton under specified conditions. A stronger acid transfers protons more readily in a comparable system; this does not mean the solution is necessarily more concentrated or more hazardous.
-
-##### Acid–Base Indicators
-
-[Not implemented](#)
-
-Explain why some compounds change observable properties as solution acidity varies.
-
-##### Buffer Solutions
-
-[Not implemented](#)
-
-Explain how paired acid–base species resist moderate pH changes.
-
-##### Acid–Base Titration
-
-[Not implemented](#)
-
-Use a measured equivalence relationship to infer an unknown amount or concentration.
 
 #### Oxidation and Reduction
 
@@ -1145,6 +1089,72 @@ Explain how spontaneous, spatially separated oxidation and reduction reactions d
 [Not implemented](#)
 
 Explain how externally supplied electrical energy drives non-spontaneous redox reactions at electrodes, including transformations such as electroplating.
+
+### Acid–Base Chemistry
+
+Groups: 2 · Skills: 7
+
+[Not implemented](#)
+
+Acid–base chemistry concerns proton transfer, electron-pair interactions, acidity, and the behavior of chemical systems under relevant conditions. Its models, solution properties, transformations and analytical methods are broader than reaction-pattern classification alone.
+
+#### Acid–Base Fundamentals
+
+Skills: 3
+
+[Not implemented](#)
+
+Conceptual acid–base models establish what counts as an acid or base, while strength and pH describe different aspects of chemical behavior and solution conditions.
+
+##### Acid–Base Models
+
+[Not implemented](#)
+
+Distinguish common Arrhenius, Brønsted–Lowry and Lewis descriptions by the chemical interactions each includes.
+
+##### pH
+
+[Not implemented](#)
+
+Interpret a logarithmic measure of hydrogen-ion activity and its concentration-based approximations.
+
+##### Acid Strength
+
+[Not implemented](#)
+
+Describe how strongly an acid tends to donate a proton under specified conditions. A stronger acid transfers protons more readily in a comparable system; this does not mean the solution is necessarily more concentrated or more hazardous.
+
+#### Acid–Base Systems
+
+Skills: 4
+
+[Not implemented](#)
+
+Neutralization, indicator responses, buffer equilibria and titration exemplify how acid–base behavior is observed, controlled and measured under specific conditions.
+
+##### Neutralization
+
+[Not implemented](#)
+
+Explain net acid–base reactions and avoid assuming every neutralization gives a final pH of seven.
+
+##### Acid–Base Indicators
+
+[Not implemented](#)
+
+Explain why some compounds change observable properties as solution acidity varies.
+
+##### Buffer Solutions
+
+[Not implemented](#)
+
+Explain how paired acid–base species resist moderate pH changes.
+
+##### Acid–Base Titration
+
+[Not implemented](#)
+
+Use a measured equivalence relationship to infer an unknown amount or concentration.
 
 ### Energy, Rates and Equilibrium
 
@@ -1237,6 +1247,12 @@ Skills: 4
 [Not implemented](#)
 
 Forward and reverse processes may continue while bulk composition becomes steady; equilibrium responds to conditions.
+
+##### Reaction Reversibility
+
+[Not implemented](#)
+
+Determine when products can reform reactants, distinguishing a possible reverse pathway from a system that has actually reached dynamic equilibrium.
 
 ##### Dynamic Equilibrium
 
