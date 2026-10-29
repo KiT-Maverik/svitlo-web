@@ -127,3 +127,9 @@ Create or update **exactly one canonical taxonomy file** in the selected textboo
 ~~~
 
 Keep validated code references and editorial decisions stable. Deliver source references, final Domain/Group/Skill counts, verified Code counts, suspicious combined competencies, unresolved editor decisions, and a concise declaration of whether a qualifying dated Review was appended/created or no historical file was warranted. The **next authorized stage after approval** is [Implement Skill Code](./implement-skill-code.skill.md), not a Definition-generation step.
+
+## CANONICAL ENGLISH AND IDENTITY CONSISTENCY — MANDATORY
+
+- The canonical Skills Taxonomy and every Domain, Group and Skill name, heading, substantive description, metadata label, and editorial link label **MUST be in English**. Never use Ukrainian headings/descriptions or Ukrainian transliteration as a substitute for English. Learner-facing localized display strings belong in localization data, not the canonical editorial taxonomy.
+- Preserve the Skill's exact canonical English heading when other documents cite it. A Curriculum's `Target Skills` labels must match those headings verbatim; the TypeScript `*.data.ts` path and runtime ID are not alternative display names.
+- On reviewing a taxonomy, audit the **entire** file for non-English editorial prose, incomplete translations, inconsistent names across hierarchy and linked Curricula, and broken Code paths. Translate meaning faithfully without silently adding, splitting, merging, or changing approved competencies. Escalate ambiguous names for editorial review.
