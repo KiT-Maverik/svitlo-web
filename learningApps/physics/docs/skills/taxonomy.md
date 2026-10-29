@@ -1304,279 +1304,279 @@ An object is visible when light from it reaches the eye; a light source and an i
 
 Code: [Not implemented](#)
 
-Розпізнавати тіло, що випромінює світло, та тіло, яке його відбиває.
+Recognize a body that emits light and one that reflects it.
 
-##### Класифікувати природні й штучні джерела світла
-
-Code: [Not implemented](#)
-
-Розподіляти джерела світла за їхнім походженням.
-
-##### Пояснювати умову видимості предмета
+##### Classify natural and artificial light sources
 
 Code: [Not implemented](#)
 
-Визначати потребу потрапляння світла від предмета до ока.
+Group light sources according to their origin.
 
-#### Світло та тіні
+##### Explain the condition for an object to be visible
+
+Code: [Not implemented](#)
+
+Identify the need for light from an object to reach the eye.
+
+#### Light and Shadows
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Перешкоди й положення джерела визначають появу, напрям і розмір тіні; модель дозволяє робити якісні передбачення.
+Obstacles and the source's position determine a shadow's appearance, direction, and size; a model enables qualitative predictions.
 
-##### Пояснювати появу тіні
-
-Code: [Not implemented](#)
-
-Пов'язувати тінь із блокуванням світла непрозорим предметом.
-
-##### Прогнозувати положення тіні
+##### Explain how a shadow forms
 
 Code: [Not implemented](#)
 
-Передбачати, де утвориться тінь за заданого розташування джерела та предмета.
+Relate a shadow to the blocking of light by an opaque object.
 
-##### Прогнозувати зміну розміру тіні
+##### Predict the position of a shadow
 
 Code: [Not implemented](#)
 
-Визначати, як зміна взаємного розташування змінить розмір тіні.
+Predict where a shadow forms given the positions of the source and object.
 
-#### Прозорість
+##### Predict changes in shadow size
+
+Code: [Not implemented](#)
+
+Determine how changing their relative positions affects shadow size.
+
+#### Transparency
 
 Skills: 1
 
 Code: [Not implemented](#)
 
-Прозорість характеризує проходження видимого світла через матеріал, його поглинання та розсіювання і можливість передавання зображення.
+Transparency characterizes the transmission, absorption, and scattering of visible light by a material and its ability to transmit an image.
 
-##### Класифікувати матеріали за прозорістю
+##### Classify materials by transparency
 
 Code: [Not implemented](#)
 
-Відрізняти прозорі, напівпрозорі та непрозорі матеріали за здатністю пропускати світло і формувати чітке зображення крізь матеріал.
+Distinguish transparent, translucent, and opaque materials by their ability to transmit light and form a clear image through the material.
 
-#### Відбиття світла
+#### Light Reflection
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Поверхня змінює напрям поширення світлового променя; дзеркала дають наочну модель його поведінки.
+A surface changes the direction of a light ray; mirrors provide a visible model of this behavior.
 
-##### Розпізнавати відбиття світла
-
-Code: [Not implemented](#)
-
-Упізнавати випадки, коли світло повертається від поверхні.
-
-##### Передбачати напрям відбитого променя
+##### Recognize light reflection
 
 Code: [Not implemented](#)
 
-За законом відбиття кут між променем і нормаллю до поверхні однаковий для падаючого та відбитого променів.
+Identify situations in which light returns from a surface.
 
-#### Заломлення та лінзи
+##### Predict the direction of a reflected ray
+
+Code: [Not implemented](#)
+
+According to the law of reflection, the angle between the ray and the surface normal is the same for incident and reflected rays.
+
+#### Refraction and Lenses
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Перехід між середовищами та форма лінзи впливають на напрям променів і утворення зображень.
+Moving between media and the shape of a lens affect ray direction and image formation.
 
-##### Пояснювати заломлення світла на межі середовищ
-
-Code: [Not implemented](#)
-
-При переході між середовищами з різними оптичними властивостями змінюються швидкість та, за косого падіння, напрям світлової хвилі.
-
-##### Розрізняти дію збиральних і розсіювальних лінз
+##### Explain light refraction at the boundary between media
 
 Code: [Not implemented](#)
 
-На симуляції спостерігати, як різні лінзи змінюють напрям проходження світлових променів.
+When light passes between media with different optical properties, its speed changes and, at oblique incidence, so does the direction of the light wave.
 
-### Випромінювання
+##### Distinguish converging and diverging lenses
+
+Code: [Not implemented](#)
+
+Use a simulation to observe how different lenses change the directions of light rays passing through them.
+
+### Radiation
 
 Groups: 2 · Skills: 5
 
 Code: [Not implemented](#)
 
-Випромінювання описує перенесення енергії від джерела через простір, включно з невидимими діапазонами електромагнітного спектра та їх взаємодією з речовиною. Геометричні світлові зображення належать оптиці.
+Radiation describes energy transfer from a source through space, including invisible parts of the electromagnetic spectrum and their interaction with matter. Geometric image formation with light belongs to Optics.
 
-#### Електромагнітне випромінювання
+#### Electromagnetic Radiation
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Радіохвилі, інфрачервоне, видиме й ультрафіолетове випромінювання — різні ділянки електромагнітного спектра.
+Radio waves, infrared, visible, and ultraviolet radiation are different regions of the electromagnetic spectrum.
 
-##### Розрізняти видиме та невидиме електромагнітне випромінювання
-
-Code: [Not implemented](#)
-
-На прикладах світла лампи, інфрачервоного випромінювання й радіохвиль показувати, що не все випромінювання сприймається оком.
-
-##### Співвідносити знайомі види випромінювання з електромагнітним спектром
+##### Distinguish visible from invisible electromagnetic radiation
 
 Code: [Not implemented](#)
 
-Радіохвилі, інфрачервоне, видиме та ультрафіолетове випромінювання розташовуються в спектрі за частотою й довжиною хвилі; видимість не визначає їхню фізичну природу.
+Use lamp light, infrared radiation, and radio waves to demonstrate that not all radiation can be detected by the eye.
 
-##### Пояснювати поширення електромагнітних хвиль без повітря
+##### Relate familiar types of radiation to the electromagnetic spectrum
 
 Code: [Not implemented](#)
 
-На прикладі сонячного світла пояснювати, чому електромагнітне випромінювання може проходити через космічний вакуум.
+Radio waves, infrared, visible, and ultraviolet radiation occupy positions in the spectrum according to frequency and wavelength; visibility does not determine their physical nature.
 
-#### Випромінювання та речовина
+##### Explain the propagation of electromagnetic waves without air
+
+Code: [Not implemented](#)
+
+Use sunlight to explain why electromagnetic radiation can propagate through the vacuum of space.
+
+#### Radiation and Matter
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Матеріали можуть випромінювати, відбивати, пропускати або поглинати енергію; наслідки залежать від виду випромінювання й властивостей речовини.
+Materials can emit, reflect, transmit, or absorb energy; the outcomes depend on the type of radiation and the properties of matter.
 
-##### Пояснювати нагрівання під час поглинання випромінювання
-
-Code: [Not implemented](#)
-
-На прикладі двох поверхонь під сонячним світлом пов'язувати різний ступінь нагрівання з поглинанням енергії.
-
-##### Відрізняти випромінювання енергії від відбиття отриманого світла
+##### Explain heating through radiation absorption
 
 Code: [Not implemented](#)
 
-На прикладах Сонця та Місяця пояснювати, що джерело випромінює енергію, а освітлене тіло може відбивати її.
+Using two surfaces in sunlight, relate differences in heating to energy absorption.
 
-### Сучасна фізика
+##### Distinguish energy emission from reflection of received light
+
+Code: [Not implemented](#)
+
+Using the Sun and Moon, explain that a source emits energy while an illuminated body can reflect it.
+
+### Modern Physics
 
 Groups: 3 · Skills: 16
 
 Code: [Not implemented](#)
 
-Моделі атома, квантових і ядерних явищ та простору-часу пояснюють спостереження, які не охоплює лише класична фізика. Для молодших дітей можливе ознайомлення з ідеями без математичного апарату.
+Models of atoms, quantum and nuclear phenomena, and spacetime explain observations not covered by classical physics alone. Younger children can encounter the concepts without mathematical formalism.
 
-#### Атоми та квантові явища
+#### Atoms and Quantum Phenomena
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Атомні моделі й окремі порції енергії допомагають пояснювати світло та властивості речовини, які не описуються тільки механічним рухом.
+Atomic models and discrete packets of energy help explain light and properties of matter that cannot be described solely in terms of mechanical motion.
 
-##### Розрізняти атом та його основні складові
-
-Code: [Not implemented](#)
-
-Атом складається з ядра та електронної оболонки; характер руху й станів електронів не відповідає буквальним планетним орбітам.
-
-##### Пояснювати фотон як квант електромагнітного випромінювання
+##### Distinguish an atom from its principal components
 
 Code: [Not implemented](#)
 
-Фотон є квантом електромагнітного поля, енергія якого пов'язана з частотою випромінювання; його не слід тлумачити як маленьку класичну кульку.
+An atom consists of a nucleus and an electron cloud; electrons' motion and states do not correspond to literal planetary orbits.
 
-##### Пояснювати випромінювання світла збудженим атомом
-
-Code: [Not implemented](#)
-
-Перехід атома між енергетичними станами може супроводжуватися випромінюванням фотона з енергією, визначеною різницею станів.
-
-##### Пояснювати хвильові та корпускулярні прояви квантових об'єктів
+##### Explain a photon as a quantum of electromagnetic radiation
 
 Code: [Not implemented](#)
 
-Світло й матерія демонструють явища, які не описуються вичерпно лише класичним образом хвилі або частинки.
+A photon is a quantum of the electromagnetic field whose energy is related to radiation frequency; it should not be interpreted as a tiny classical ball.
 
-##### Пояснювати дискретні енергетичні стани атома
+##### Explain light emission by an excited atom
 
 Code: [Not implemented](#)
 
-Зв'язані стани атома мають визначені енергії, а переходи між станами супроводжуються поглинанням або випромінюванням енергії.
+A transition of an atom between energy states may be accompanied by the emission of a photon whose energy is determined by the difference between those states.
 
-#### Ядерні явища
+##### Explain wave-like and particle-like behavior of quantum objects
+
+Code: [Not implemented](#)
+
+Light and matter exhibit phenomena that cannot be exhaustively described by only a classical wave or a classical particle picture.
+
+##### Explain discrete atomic energy states
+
+Code: [Not implemented](#)
+
+Bound states of an atom have definite energies, and transitions between states involve energy absorption or emission.
+
+#### Nuclear Phenomena
 
 Skills: 6
 
 Code: [Not implemented](#)
 
-Зміни в ядрах атомів відрізняються від хімічних реакцій і можуть супроводжуватися виділенням енергії.
+Changes in atomic nuclei differ from chemical reactions and may release energy.
 
-##### Розрізняти ядерне перетворення та хімічну зміну
-
-Code: [Not implemented](#)
-
-Під час ядерного перетворення змінюється ядро атома, тоді як хімічні реакції насамперед змінюють зв'язки та електронну структуру атомів.
-
-##### Пояснювати радіоактивність
+##### Distinguish nuclear transformation from chemical change
 
 Code: [Not implemented](#)
 
-Нестійкі атомні ядра самочинно перетворюються з випромінюванням частинок або енергії; це не звичайна хімічна реакція.
+A nuclear transformation changes an atom's nucleus, whereas chemical reactions primarily change bonds and electronic structure.
 
-##### Розрізняти альфа-, бета- та гамма-випромінювання
-
-Code: [Not implemented](#)
-
-Альфа-випромінювання є потоком ядер гелію, бета — електронів або позитронів, а гамма — фотонів високої енергії.
-
-##### Пояснювати період напіврозпаду
+##### Explain radioactivity
 
 Code: [Not implemented](#)
 
-Період напіврозпаду характеризує статистичне зменшення кількості нестійких ядер у сукупності, а не час життя окремого ядра.
+Unstable atomic nuclei spontaneously transform while emitting particles or energy; this is not an ordinary chemical reaction.
 
-##### Пояснювати поділ атомних ядер
-
-Code: [Not implemented](#)
-
-Важкі ядра можуть ділитися на менші фрагменти з виділенням енергії внаслідок зміни енергії зв'язку.
-
-##### Пояснювати ядерний синтез
+##### Distinguish alpha, beta, and gamma radiation
 
 Code: [Not implemented](#)
 
-Легкі ядра можуть зливатися за відповідних умов, а зміна енергії зв'язку може приводити до виділення енергії.
+Alpha radiation consists of helium nuclei, beta radiation of electrons or positrons, and gamma radiation of high-energy photons.
 
-#### Теорія відносності
+##### Explain half-life
+
+Code: [Not implemented](#)
+
+Half-life describes the statistical decline in the number of unstable nuclei in a population, not the lifetime of an individual nucleus.
+
+##### Explain nuclear fission
+
+Code: [Not implemented](#)
+
+Heavy nuclei can split into lighter fragments and release energy because of changes in binding energy.
+
+##### Explain nuclear fusion
+
+Code: [Not implemented](#)
+
+Light nuclei can combine under suitable conditions, and changes in binding energy can lead to energy release.
+
+#### Relativity
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Спеціальна відносність описує зв'язок вимірювань простору й часу з рухом, а загальна — гравітацію як геометрію простору-часу. Їх не слід змішувати з історією астрономії або вимагати формул у початковій програмі.
+Special relativity describes how measurements of space and time relate to motion, while general relativity describes gravity as spacetime geometry. They should not be confused with the history of astronomy or require formulas in an introductory curriculum.
 
-##### Пояснювати залежність плину часу від відносного руху спостерігачів
-
-Code: [Not implemented](#)
-
-На концептуальній моделі пояснювати, чому рухомі відносно одне одного спостерігачі можуть по-різному виміряти проміжок часу; це фізична закономірність, а не навичка користування анімацією.
-
-##### Розпізнавати сталість швидкості світла у вакуумі як принцип спеціальної відносності
+##### Explain how the passage of time depends on observers' relative motion
 
 Code: [Not implemented](#)
 
-На якісних моделях розрізняти незмінність швидкості світла у вакуумі для інерціальних спостерігачів і звичайне додавання швидкостей побутових предметів.
+Using a conceptual model, explain why observers moving relative to one another may measure a time interval differently; this is a physical principle, not an animation-use skill.
 
-##### Пояснювати гравітацію як прояв викривлення простору-часу
-
-Code: [Not implemented](#)
-
-Розпізнавати в загальній теорії відносності ідею, що розподіл маси та енергії впливає на геометрію простору-часу; не вважати гумове полотно з кулькою буквальним поясненням механізму гравітації.
-
-##### Пояснювати вплив гравітації на плин часу
+##### Recognize the constancy of the speed of light in vacuum as a principle of special relativity
 
 Code: [Not implemented](#)
 
-Відносний хід годинників може залежати від гравітаційного потенціалу та умов спостереження; це фізичний ефект загальної теорії відносності.
+Using qualitative models, distinguish the invariant speed of light in vacuum for inertial observers from ordinary addition of speeds of everyday objects.
 
-##### Пояснювати гравітаційне відхилення світла
+##### Explain gravity as spacetime curvature
 
 Code: [Not implemented](#)
 
-Поблизу масивних тіл геометрія простору-часу змінює траєкторії світла; це не є заломленням на межі двох оптичних середовищ.
+Recognize the general relativity concept that the distribution of mass and energy affects spacetime geometry; do not treat a rubber-sheet-and-ball analogy as a literal mechanism of gravity.
+
+##### Explain the effect of gravity on the passage of time
+
+Code: [Not implemented](#)
+
+The relative rates of clocks can depend on gravitational potential and observation conditions; this is a physical effect of general relativity.
+
+##### Explain the gravitational deflection of light
+
+Code: [Not implemented](#)
+
+Near massive bodies, spacetime geometry changes light trajectories; this is not refraction at the boundary of two optical media.
 
