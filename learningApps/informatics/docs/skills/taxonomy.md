@@ -402,492 +402,490 @@ Organize a program around interacting objects with state and methods, rather tha
 [Not implemented](#)
 
 Compare specifying concrete state-changing steps with specifying desired results or rules from which the environment chooses an execution strategy.
-### Цифрові системи та мережі
+### Digital Systems and Networks
 
 Groups: 8 · Skills: 37
 
 [Not implemented](#)
 
-Пояснює взаємодію апаратних компонентів, програм, способів кодування та каналів передавання інформації. Ці скіли описують принципи роботи цифрової інфраструктури, а не лише практику користування пристроями.
+Explains interactions among hardware, software, encoding methods, and communication channels. These competencies concern the operation of digital infrastructure, not merely the use of devices.
 
-#### Будова цифрових пристроїв
+#### Digital Device Components
 
 Skills: 3
 
 [Not implemented](#)
 
-Ролі обчислювальних компонентів у системі: процесор виконує інструкції, пам’ять утримує робочі дані, а апаратна і програмна складові взаємодіють. Питання мережевого передавання винесені до іншої групи.
+Roles of computing components: processors execute instructions, memory holds working data, and hardware and software interact. Network transmission belongs to a different group.
 
-##### Розпізнавати цифрові пристрої
-
-[Not implemented](#)
-
-Визначати, чи пристрій використовує цифрове представлення й програмовану обробку інформації, на відміну від суто механічного або аналогового засобу. Зовнішня форма екрана чи кнопок сама по собі не є достатнім критерієм.
-
-##### Пояснювати функцію процесора
+##### Identify Digital Devices
 
 [Not implemented](#)
 
-Пов’язувати процесор із вибіркою, декодуванням і виконанням інструкцій та керуванням операціями над даними; не плутати його обчислювальну роль із постійним зберіганням файлів.
+Determine whether a device uses digital representation and programmable information processing rather than purely mechanical or analog means. The appearance of a screen or buttons is insufficient by itself.
 
-##### Розрізняти апаратне та програмне забезпечення
+##### Explain a Processor's Function
 
 [Not implemented](#)
 
-Відділяти матеріальні компоненти пристрою від інструкцій і даних, що визначають його роботу; показувати їхню взаємодію, наприклад як програма керує камерою через апаратний інтерфейс.
+Relate the CPU to fetching, decoding, and executing instructions and coordinating operations on data; distinguish its computing role from permanent file storage.
 
-#### Подання та зберігання
+##### Distinguish Hardware from Software
+
+[Not implemented](#)
+
+Differentiate tangible device components from instructions and data governing their behavior; explain their interaction, such as software controlling a camera through a hardware interface.
+
+#### Representation and Storage
 
 Skills: 4
 
 [Not implemented](#)
 
-Як цифрові пристрої кодують, форматують, вимірюють обсяг і впорядковують файли та дані. Тут відрізняють спосіб представлення інформації від організації файлів у сховищі.
+How digital devices encode, format, measure, and organize files and data. Distinguish the representation of information from the file system's organization.
 
-##### Пояснювати двійкове подання
-
-[Not implemented](#)
-
-Показувати, як дві умовні позначки 0 і 1 утворюють біти й послідовності бітів, якими кодують числа та інші типи даних. Один біт описує стан, а значення довшого коду залежить від обраного способу інтерпретації.
-
-##### Розрізняти цифрові формати
+##### Explain Binary Representation
 
 [Not implemented](#)
 
-Встановлювати, як формат визначає спосіб інтерпретації збережених бітів: текстовий файл, растрове зображення й аудіозапис мають різні структури. Розширення назви допомагає розпізнати формат, але саме по собі не гарантує вмісту.
+Show how the symbols 0 and 1 form bits and bit sequences that encode numbers and other data. A bit represents a state, while the meaning of a longer sequence depends on its interpretation.
 
-##### Порівнювати розміри цифрових файлів
-
-[Not implemented](#)
-
-Співвідносити кількість збережених байтів із обсягом файла, коректно порівнювати одиниці та пояснювати, що однакові на вигляд матеріали можуть мати різний розмір через формат або стиснення.
-
-##### Організовувати файли у каталогах
+##### Distinguish Digital Formats
 
 [Not implemented](#)
 
-Будувати зрозумілу ієрархію тек для набору ресурсів, обирати назви й місце збереження так, щоб файл можна було однозначно знайти за шляхом. Структура каталогів не визначає формат самого файла.
+Explain how formats determine the interpretation of stored bits: text files, raster images, and audio recordings have different structures. A filename extension is a clue, not proof of actual contents.
 
-#### Мережі
+##### Compare Digital File Sizes
+
+[Not implemented](#)
+
+Relate stored byte counts to file sizes, compare measurement units correctly, and explain why visually similar materials may differ in size because of format or compression.
+
+##### Organize Files in Directories
+
+[Not implemented](#)
+
+Create a clear directory hierarchy for resources and choose names and locations that allow a file to be found by its path. Directory organization does not determine file format.
+
+#### Networks
 
 Skills: 4
 
 [Not implemented](#)
 
-Обмін інформацією між з’єднаними пристроями, відмінність інтернету від вебслужб і роль каналів зв’язку. Ці компетентності пояснюють передавання повідомлення, а не його достовірність чи безпечність.
+Information exchange between connected devices, the distinction between the Internet and Web services, and communication channels. These competencies concern delivery, not message reliability or trustworthiness.
 
-##### Пояснювати призначення комп’ютерної мережі
-
-[Not implemented](#)
-
-Показувати, як з’єднання окремих пристроїв у мережу дозволяє обмін повідомленнями та користування спільними ресурсами, хоча кожен пристрій і далі має власну обчислювальну роль.
-
-##### Відрізняти інтернет від вебу
+##### Explain the Purpose of a Computer Network
 
 [Not implemented](#)
 
-Пояснювати, що інтернет — інфраструктура взаємопов’язаних мереж, а веб — служба для доступу до ресурсів через браузер і вебпротоколи. Електронна пошта або передавання файлів можуть користуватися інтернетом без вебсторінки.
+Show how networking separate devices allows them to exchange messages and share resources while each device maintains its own computing functions.
 
-##### Пояснювати доставку повідомлення мережею
-
-[Not implemented](#)
-
-Моделювати шлях даних від пристрою-відправника через проміжні мережеві вузли до адресата; відділяти адресу призначення та транспортне передавання від змісту повідомлення. Повідомлення не обов’язково йде одним прямим фізичним кабелем.
-
-##### Пояснювати призначення бездротового зв’язку
+##### Distinguish the Internet from the Web
 
 [Not implemented](#)
 
-Розуміти, що Wi-Fi та інші бездротові технології передають сигнали через середовище без окремого кабелю до кожного пристрою, але все одно потребують сумісних пристроїв, протоколів та інфраструктури зв’язку.
+Explain that the Internet is interconnected network infrastructure, while the Web is a service for accessing resources through browsers and Web protocols. Email or file transfer can use the Internet without a webpage.
 
-#### Системи числення
+##### Explain Network Message Delivery
+
+[Not implemented](#)
+
+Model a data path from a sender through intermediary network nodes to the recipient; separate destination addressing and transport from message content. Delivery need not occur over one direct physical cable.
+
+##### Explain Wireless Communication
+
+[Not implemented](#)
+
+Describe how Wi-Fi and other wireless technologies transmit signals without a dedicated cable to each device while still relying on compatible equipment, protocols, and communications infrastructure.
+
+#### Numeral Systems
 
 Skills: 4
 
 [Not implemented](#)
 
-Позиційні форми запису чисел, їхні основи й розряди; двійкові стани пов’язують математичний запис із технічним представленням даних.
+Positional numeral notation, bases, and place values; binary states connect mathematical notation to the technical representation of information.
 
-##### Пояснювати позиційну систему числення
-
-[Not implemented](#)
-
-Значення цифри залежить від її розряду й основи, тому запис 10 у двійковій і десятковій системах позначає різні кількості.
-
-##### Переводити числа між двійковою та десятковою системами
+##### Explain Positional Numeral Systems
 
 [Not implemented](#)
 
-Невелике ціле подають сумою степенів двійки й обернено відновлюють за розрядами, відрізняючи запис від самого числа.
+Explain that digit values depend on position and base, so `10` denotes different quantities in binary and decimal.
 
-##### Пояснювати двійкову логіку комп’ютера
-
-[Not implemented](#)
-
-Два стійко розрізнювані рівні електронного сигналу дозволяють надійно кодувати нулі та одиниці, хоча фізичні схеми складніші за два абстрактні символи.
-
-##### Розрізняти двійкову та шістнадцяткову системи
+##### Convert Between Binary and Decimal
 
 [Not implemented](#)
 
-Один шістнадцятковий розряд замінює чотири біти, скорочуючи запис без зміни числового значення.
+Represent a small integer as a sum of powers of two and recover a value from its binary positions, distinguishing the notation from the number itself.
 
-#### Пам’ять і сховища
+##### Explain Computer Binary Logic
+
+[Not implemented](#)
+
+Two reliably distinguishable electronic signal levels allow encoding zeros and ones, even though physical circuits are more complex than two abstract symbols.
+
+##### Distinguish Binary and Hexadecimal
+
+[Not implemented](#)
+
+Explain that one hexadecimal digit corresponds to four bits and shortens the representation without changing the number's value.
+
+#### Memory and Storage
 
 Skills: 4
 
 [Not implemented](#)
 
-Розділяє тимчасове утримання робочого стану програми та енергонезалежне збереження файлів, а також різні ролі RAM, ROM і накопичувача.
+Distinguishes temporary working memory from nonvolatile file storage, along with the different functions of RAM, ROM, and storage devices.
 
-##### Пояснювати оперативну пам’ять
-
-[Not implemented](#)
-
-Оперативна пам’ять утримує робочі дані й інструкції для швидкого доступу під час виконання; зазвичай її вміст втрачається після вимкнення живлення.
-
-##### Пояснювати постійне сховище
+##### Explain RAM
 
 [Not implemented](#)
 
-SSD, флешпам’ять або інший енергонезалежний носій зберігає файли без безперервного живлення, на відміну від типового робочого стану RAM.
+RAM holds working instructions and data for fast access during execution; its contents are usually lost when power is removed.
 
-##### Пояснювати призначення ROM
-
-[Not implemented](#)
-
-Пояснювати, що ROM та пов’язані з нею енергонезалежні технології можуть зберігати прошивку або початкові інструкції пристрою без живлення. Історична назва «пам’ять лише для читання» не означає, що вся сучасна прошивка фізично незмінна; багато пристроїв використовують перепрограмовувану флешпам’ять.
-
-##### Розрізняти RAM, ROM та накопичувач
+##### Explain Persistent Storage
 
 [Not implemented](#)
 
-Робоча пам’ять, пам’ять прошивки й сховище користувацьких файлів мають різні призначення; слово «постійна пам’ять» без контексту неоднозначне.
+An SSD, flash memory, or another nonvolatile medium stores files without continuous power, unlike the typical working state held in RAM.
 
-#### Операційні системи
+##### Explain the Purpose of ROM
+
+[Not implemented](#)
+
+Explain that ROM and related nonvolatile technologies can hold device firmware or initial startup instructions without power. The historical name 'read-only memory' does not mean all modern firmware is physically immutable; many devices use reprogrammable flash memory.
+
+##### Distinguish RAM, ROM, and Storage
+
+[Not implemented](#)
+
+Working memory, firmware memory, and storage for user files serve different purposes; the term 'permanent memory' is ambiguous without context.
+
+#### Operating Systems
 
 Skills: 4
 
 [Not implemented](#)
 
-Операційна система керує програмами, процесами, файлами й пристроями та відрізняється від застосунків, які працюють у її середовищі.
+An operating system manages programs, processes, files, and devices; it differs from applications running in its environment.
 
-##### Пояснювати призначення операційної системи
-
-[Not implemented](#)
-
-ОС узгоджує запуск програм, доступ до файлів і пристроїв; окремий застосунок не зобов’язаний сам реалізувати всі апаратні операції.
-
-##### Розрізняти сімейства операційних систем
+##### Explain an Operating System's Purpose
 
 [Not implemented](#)
 
-Windows, macOS, Linux, Android та iOS є різними прикладами ОС і споріднених платформ, а не просто назвами комп’ютерів.
+Describe how an OS coordinates launching programs and accessing files and devices so individual applications need not implement all hardware operations themselves.
 
-##### Пояснювати процес в операційній системі
-
-[Not implemented](#)
-
-Запущена програма має поточний стан і виділені ресурси, тоді як файл програми на диску сам по собі не є процесом.
-
-##### Пояснювати роль Лінуса Торвальдса у розвитку Linux
+##### Distinguish Operating System Families
 
 [Not implemented](#)
 
-Торвальдс ініціював ядро Linux; повна операційна система додає інші компоненти, а спільна розробка підтримує її розвиток.
+Identify Windows, macOS, Linux, Android, and iOS as different operating systems or related platforms rather than names for computers.
 
-#### Мережеві моделі та протоколи
+##### Explain an OS Process
+
+[Not implemented](#)
+
+A running program has current state and allocated resources; a program file on disk is not itself a process.
+
+##### Explain Linus Torvalds' Role in Linux
+
+[Not implemented](#)
+
+Torvalds initiated the Linux kernel; a complete operating system also includes other components, and collaborative development sustains its evolution.
+
+#### Network Models and Protocols
 
 Skills: 11
 
 [Not implemented](#)
 
-Правила мережевого обміну охоплюють адресацію та доставку пакетів, рівні протоколів, захист з’єднань і доступ кількох пристроїв до спільного середовища. OSI слугує концептуальною моделлю, а мережеві технології реалізують свої функції різними стеком і способами доступу.
+Network communication rules include addressing and packet delivery, protocol layers, connection security, and shared-medium access. OSI is a conceptual model, while real technologies implement their functions through different stacks and access methods.
 
-##### Пояснювати поняття мережевого протоколу
-
-[Not implemented](#)
-
-Протокол задає формат повідомлення та правила взаємодії пристроїв, щоб вони могли правильно обмінюватися даними.
-
-##### Пояснювати рівні OSI
+##### Explain a Network Protocol
 
 [Not implemented](#)
 
-Сім рівнів OSI описують функції від передавання фізичного сигналу до взаємодії застосунків, але не вимагають окремого протоколу для кожного.
+A protocol specifies message formats and rules that enable devices to exchange information correctly.
 
-##### Розрізняти OSI та TCP/IP
-
-[Not implemented](#)
-
-Модель OSI має сім концептуальних рівнів, а стек TCP/IP організовує реальні інтернет-протоколи за іншою кількістю функціональних шарів.
-
-##### Пояснювати призначення IP
+##### Explain the OSI Layers
 
 [Not implemented](#)
 
-IP використовує мережеву адресацію й пересилання пакетів між мережами; IP-адреса не тотожна доменному імені сайту.
+The seven OSI layers describe functions from physical signal transmission to application interaction, without requiring one distinct protocol per layer.
 
-##### Розрізняти TCP та UDP
-
-[Not implemented](#)
-
-TCP працює з керованим потоком і підтвердженнями, UDP передає датаграми без таких гарантій доставки на цьому рівні.
-
-##### Пояснювати DNS
+##### Distinguish OSI from TCP/IP
 
 [Not implemented](#)
 
-DNS дозволяє знаходити мережеві адреси за доменними іменами, не підмінюючи власне передавання даних між пристроями.
+The OSI reference model has seven conceptual layers, whereas TCP/IP organizes real Internet protocols into a different set of functional layers.
 
-##### Розрізняти HTTP та HTTPS
-
-[Not implemented](#)
-
-HTTPS додає захищене TLS-з’єднання до вебзапитів HTTP, але сам замок не підтверджує доброчесність власника ресурсу.
-
-##### Пояснювати CSMA/CD
+##### Explain the Purpose of IP
 
 [Not implemented](#)
 
-Пояснювати, як спільний сегмент класичного Ethernet перевіряв зайнятість середовища, виявляв колізію та повторював передачу після затримки. Сучасний повнодуплексний комутований Ethernet зазвичай цього механізму не потребує.
+IP provides network addressing and forwards packets between networks; an IP address is not the same as a website's domain name.
 
-##### Пояснювати CSMA/CA
-
-[Not implemented](#)
-
-Пояснювати, чому бездротова мережа перед передаванням оцінює зайнятість радіоканалу й намагається зменшити ймовірність колізій за допомогою очікування та узгоджених правил доступу; уникнення колізій не гарантує їх повної відсутності.
-
-##### Пояснювати Token Ring
+##### Distinguish TCP from UDP
 
 [Not implemented](#)
 
-Пояснювати, як у мережі з передаванням маркера право надсилати дані переходить між учасниками за визначеним порядком, і чому це відрізняється від змагання пристроїв за спільне середовище.
+TCP provides a managed data stream with acknowledgments; UDP sends datagrams without equivalent delivery guarantees at that layer.
 
-##### Порівнювати способи доступу до мережі
+##### Explain DNS
 
 [Not implemented](#)
 
-Обирати й аргументовано порівнювати механізми виявлення колізій (CSMA/CD), запобігання їм (CSMA/CA) та передавання маркера (Token Ring) за способом отримання права на передавання. Розуміти, що йдеться про різні технологічні контексти, а не про три взаємозамінні протоколи сучасного Ethernet.
+DNS resolves domain names to network addresses; it does not replace actual data transmission between devices.
 
-#### Виконання задач
+##### Distinguish HTTP from HTTPS
+
+[Not implemented](#)
+
+HTTPS uses TLS to secure HTTP communication, but a padlock alone does not establish that a website's operator is trustworthy.
+
+##### Explain CSMA/CD
+
+[Not implemented](#)
+
+Describe how classic shared-medium Ethernet senses channel activity, detects collisions, and retries after a delay. Modern switched full-duplex Ethernet normally does not need this mechanism.
+
+##### Explain CSMA/CA
+
+[Not implemented](#)
+
+Describe why a wireless network checks whether a radio channel is busy and seeks to reduce collisions through waiting and agreed access rules; avoidance does not guarantee that collisions never occur.
+
+##### Explain Token Ring
+
+[Not implemented](#)
+
+Describe how a token grants transmission rights to participants in a defined sequence and how this differs from devices contending for access to a shared medium.
+
+##### Compare Network Access Methods
+
+[Not implemented](#)
+
+Select and justify comparisons among collision detection (CSMA/CD), collision avoidance (CSMA/CA), and token passing (Token Ring) according to how sending rights are obtained. These represent different technological settings, not three interchangeable protocols of modern Ethernet.
+
+#### Task Execution
 
 Skills: 3
 
 [Not implemented](#)
 
-Послідовність, чергування та одночасна робота кількох виконавців впливають на порядок операцій і використання ресурсів. Конкурентність означає організацію перекривних у часі задач, а паралелізм — фактичне виконання операцій водночас; одне не слід автоматично прирівнювати до іншого.
+Sequential execution, interleaving, and actual simultaneous work by multiple executors affect operation order and resource use. Concurrency organizes overlapping task progress; parallelism means operations truly execute at the same time. They are related but not identical.
 
-##### Пояснювати конкурентне виконання
-
-[Not implemented](#)
-
-Визначати, як кілька задач просуваються через чергування кроків або очікування подій без вимоги одночасного виконання інструкцій. Порівнювати такий сценарій із повним послідовним завершенням однієї задачі перед початком іншої.
-
-##### Пояснювати паралельне виконання
+##### Explain Concurrent Execution
 
 [Not implemented](#)
 
-Визначати, коли незалежні операції фактично виконуються одночасно на кількох обчислювальних ресурсах. Відрізняти паралелізм від лише швидкого перемикання між задачами на одному виконавці; додаткові ресурси не завжди гарантують пропорційне прискорення.
+Explain how several tasks make progress through interleaved steps or waiting for events without requiring instructions to run simultaneously. Contrast this with completing each task fully before starting the next.
 
-##### Розподіляти незалежні задачі між виконавцями
+##### Explain Parallel Execution
 
 [Not implemented](#)
 
-На моделі обчислювальної системи планувати, які підзадачі можна виконувати одночасно, а які мають чекати залежних результатів. Наприклад, незалежну обробку кількох зображень можна розподілити між виконавцями, а підсумовування їхніх результатів виконати після завершення обробки.
+Identify when independent operations truly run simultaneously on multiple computing resources. Distinguish parallelism from rapid task switching on one executor; additional resources do not guarantee proportional speedup.
 
-### Інформація та дані
+##### Distribute Independent Tasks Across Executors
+
+[Not implemented](#)
+
+Plan which subtasks can run simultaneously and which must wait for dependent results in a model computing system. For example, process several images independently before combining their outputs.
+### Information and Data
 
 Groups: 5 · Skills: 24
 
 [Not implemented](#)
 
-Охоплює отримання й перевірку інформації, організацію наборів даних, виявлення закономірностей і міркування про невизначені події. Цифровий контекст не виключає перетину з математикою; класифікація залишається локальною для інформатики.
+Obtaining and verifying information, organizing datasets, finding patterns, and reasoning about uncertain events. A digital setting may overlap with mathematics, but these skills are classified locally within Informatics.
 
-#### Пошук та перевірка інформації
-
-Skills: 4
-
-[Not implemented](#)
-
-Пошук релевантних відомостей та встановлення того, чи підтверджується конкретне твердження незалежними джерелами. Формування запиту, порівняння повідомлень і перевірка факту — різні операції.
-
-##### Формулювати інформаційний запит
-
-[Not implemented](#)
-
-Перетворювати конкретне інформаційне питання на слова й уточнення, за якими система пошуку може повернути релевантні ресурси. Наприклад, додати назву об’єкта, місце чи період замість нечіткого загального слова.
-
-##### Порівнювати інформаційні джерела
-
-[Not implemented](#)
-
-Зіставляти повідомлення з кількох джерел про одне твердження, відокремлювати спільні факти від розбіжностей і визначати, які додаткові відомості потрібні для з’ясування причини невідповідності.
-
-##### Перевіряти твердження за джерелом
-
-[Not implemented](#)
-
-Шукати підтвердження конкретного твердження в першоджерелі або незалежному надійному матеріалі, враховуючи дату, контекст та походження інформації. Повторення помилки багатьма сайтами не робить її достовірною.
-
-##### Розрізняти повідомлення й дані
-
-[Not implemented](#)
-
-Пояснювати відмінність між окремими зафіксованими значеннями та повідомленням, що передає зміст адресатові за певного контексту. Наприклад, число «18» стає осмисленим повідомленням про температуру лише після додавання одиниці й об’єкта вимірювання.
-
-#### Збирання й організація даних
+#### Information Search and Verification
 
 Skills: 4
 
 [Not implemented](#)
 
-Визначення потрібних полів, систематичний запис спостережень, групування за критерієм та організація таблиці. Збирати дані означає отримувати записи; подавати їх у таблиці — структурувати вже наявні.
+Find relevant facts and determine whether independent sources support a particular claim. Formulating queries, comparing reports, and verifying facts are distinct operations.
 
-##### Визначати потрібні для задачі дані
-
-[Not implemented](#)
-
-Установлювати, які поля, спостереження чи вимірювання справді потрібні для відповіді на конкретне питання, а які не впливають на висновок. Не слід збирати персональні відомості лише тому, що їх технічно можливо записати.
-
-##### Збирати дані за правилом
+##### Formulate an Information Query
 
 [Not implemented](#)
 
-Одержувати записи за заздалегідь визначеною процедурою з однаковими одиницями та ознаками для кожного спостереження. Зміна правила посеред збирання робить частини набору важко порівнюваними.
+Convert a specific information need into search terms and qualifiers likely to retrieve relevant resources. For example, specify an object's name, location, or period instead of an overly general term.
 
-##### Групувати дані за ознакою
-
-[Not implemented](#)
-
-Застосовувати один критерій до всіх елементів набору, створюючи категорії з послідовним правилом належності. Наприклад, об’єднати повідомлення за типом файла, не змішуючи цю ознаку з розміром.
-
-##### Подавати дані у таблиці
+##### Compare Information Sources
 
 [Not implemented](#)
 
-Розподіляти однотипні записи по рядках, а їхні властивості — по стовпцях зі сталими заголовками й одиницями. Таблиця зберігає значення та їхні зв’язки, не підміняючи їх графічним узагальненням.
+Compare accounts from multiple sources concerning the same claim, separate shared facts from discrepancies, and identify what further evidence is needed to explain the differences.
 
-#### Бази даних
+##### Verify a Claim Against a Source
+
+[Not implemented](#)
+
+Seek evidence for a particular assertion in the primary source or independent reliable material, considering date, context, and provenance. Repetition of an error across websites does not make it true.
+
+##### Distinguish Messages from Data
+
+[Not implemented](#)
+
+Differentiate individually recorded values from a message that conveys meaning to an audience in context. For example, the number '18' communicates a temperature only once the unit and measured object are supplied.
+
+#### Data Collection and Organization
+
+Skills: 4
+
+[Not implemented](#)
+
+Identify required fields, record observations consistently, classify by an attribute, and organize a table. Collecting data generates records; tabulation structures existing records.
+
+##### Identify Data Needed for a Task
+
+[Not implemented](#)
+
+Determine which fields, observations, or measurements are necessary to answer a question and which do not affect the conclusion. Do not collect personal information merely because it can be stored.
+
+##### Collect Data Consistently
+
+[Not implemented](#)
+
+Gather records using a predefined procedure with the same units and attributes for each observation. Changing the procedure midway may make parts of the dataset difficult to compare.
+
+##### Group Data by Attribute
+
+[Not implemented](#)
+
+Apply one criterion consistently across items to create categories with a clear membership rule. For example, classify messages by file type without mixing this attribute with file size.
+
+##### Present Data in a Table
+
+[Not implemented](#)
+
+Arrange comparable records in rows and their attributes in columns with stable headings and units. A table preserves the values and relationships rather than substituting a graphical summary.
+
+#### Databases
 
 Skills: 5
 
 [Not implemented](#)
 
-Структуроване зберігання взаємопов’язаних відомостей відрізняється від простого оформлення таблиці для читача. Поля й записи описують табличну структуру, ключі забезпечують ідентифікацію, а зв’язки дають змогу працювати з даними кількох таблиць.
+Structured storage of interrelated information differs from a table laid out only for human reading. Records and fields define the structure, keys identify records, and relationships connect information across tables.
 
-##### Пояснювати таблицю бази даних
-
-[Not implemented](#)
-
-Пояснювати, як у реляційній моделі таблиця зберігає записи одного типу за спільним набором полів, наприклад каталог книг; оформлена таблиця у документі сама по собі не є базою даних.
-
-##### Розрізняти запис і поле
+##### Explain a Database Table
 
 [Not implemented](#)
 
-Визначати, що запис подає одну сутність або випадок у рядку таблиці, а поле — окрему іменовану характеристику у стовпці. Значення конкретної клітинки не дорівнює визначенню поля для всієї таблиці.
+Describe how a relational table stores records of one type using a common set of fields, such as a book catalog. A formatted table in a document is not automatically a database.
 
-##### Пояснювати первинний ключ
-
-[Not implemented](#)
-
-Пояснювати, навіщо запису потрібен стабільний унікальний ідентифікатор у межах таблиці та чому ім’я або назва не завжди придатні як ключ.
-
-##### Моделювати зв’язки між таблицями
+##### Distinguish Records and Fields
 
 [Not implemented](#)
 
-Визначати, як записи різних таблиць пов’язуються через ідентифікатори, наприклад `studentId` у записі про виконане завдання посилається на конкретного учня. Показувати різницю між ключем запису і посиланням на нього.
+Identify a row as a record of one entity or occurrence, and a column as a named field describing an attribute. A cell's particular value is not the definition of a field.
 
-##### Проєктувати просту схему бази даних
+##### Explain Primary Keys
 
 [Not implemented](#)
 
-Для предметної задачі самостійно вибирати сутності, поля, ключі й необхідні зв’язки, не дублюючи ті самі факти без потреби. Наприклад, для бібліотеки окремо описати книжки та позичання; це проєктування цілісної схеми, а не лише пояснення готової таблиці.
+Explain why a record needs a stable identifier unique within its table and why a person's name or a title is not always an appropriate key.
 
-#### Статистичне дослідження
+##### Model Relationships Between Tables
+
+[Not implemented](#)
+
+Explain how identifiers link records from different tables, such as a `studentId` in a completed-assignment record referencing a particular student. Distinguish a record's own key from a reference to another record.
+
+##### Design a Simple Database Schema
+
+[Not implemented](#)
+
+Independently identify entities, fields, keys, and required relationships for a task without needlessly duplicating facts. For example, model books and loans separately for a library; this designs a coherent schema rather than describing an existing table.
+
+#### Statistical Investigation
 
 Skills: 4
 
 [Not implemented](#)
 
-Читання та створення графічних подань набору даних, знаходження частот і порівняння спостережень. Статистичний висновок спирається на описані дані; він не тотожний прогнозу випадкової події.
+Read and create visual representations of datasets, find frequencies, and compare observations. Statistical conclusions describe data and are not equivalent to predicting a random outcome.
 
-##### Читати діаграму
-
-[Not implemented](#)
-
-Установлювати, які саме значення кодує вісь, шкала, колір чи довжина елемента, та коректно зчитувати дані без домислів за оформленням. Наприклад, початок шкали не з нуля може візуально перебільшувати різницю.
-
-##### Будувати просту діаграму
+##### Read a Chart
 
 [Not implemented](#)
 
-Обирати придатне зображення для типу даних і переносити числові чи категоріальні значення в підписані елементи зі зрозумілою шкалою. Графічне подання не повинно змінювати співвідношення вихідних значень.
+Identify the values represented by axes, scales, colors, and element lengths; read the data accurately without making assumptions based on presentation. A truncated axis can visually exaggerate a difference.
 
-##### Знаходити найчастіше значення
-
-[Not implemented](#)
-
-Обчислювати або виявляти значення з найбільшою частотою в наборі, враховуючи можливість кількох однаково поширених значень. Частота не є автоматично середнім арифметичним або найбільшим за величиною числом.
-
-##### Порівнювати набори спостережень
+##### Construct a Simple Chart
 
 [Not implemented](#)
 
-Визначати однакову для двох наборів основу порівняння — категорії, діапазони чи частоти — і пояснювати помічені відмінності. Не робити висновок про причину відмінності лише з її наявності.
+Choose a representation suitable for the data type and place numerical or categorical values in labeled elements on an understandable scale. Visual presentation must preserve proportions among source values.
 
-#### Імовірність і невизначеність
+##### Find the Most Frequent Value
+
+[Not implemented](#)
+
+Find or calculate the value with the highest frequency, allowing for multiple equally frequent values. The most frequent value need not equal the arithmetic mean or the largest number.
+
+##### Compare Sets of Observations
+
+[Not implemented](#)
+
+Choose a common basis for comparing two datasets—categories, ranges, or frequencies—and explain observed differences. A difference alone does not establish its cause.
+
+#### Probability and Uncertainty
 
 Skills: 7
 
 [Not implemented](#)
 
-Розмежування можливих і неможливих результатів, імовірнісних моделей, порівняння шансів та обмежень передбачення. Випадковість як джерело варіантів у цифровій моделі відрізняється від оцінки конкретного ризику.
+Distinguishing possible and impossible outcomes, probabilistic models, comparisons of likelihoods, and limits of prediction. Randomness as a source of variation in a digital model is distinct from assessing a particular risk.
 
-##### Розрізняти випадкову та визначену подію
-
-[Not implemented](#)
-
-Встановлювати, чи результат повністю задається відомими умовами моделі, чи модель допускає декілька результатів із невизначеним наперед вибором. Невідомий спостерігачеві результат сам по собі ще не доводить фізичну випадковість.
-
-##### Пояснювати можливість події
+##### Distinguish Random and Deterministic Events
 
 [Not implemented](#)
 
-Перевіряти, чи належить описаний результат до припустимих за умовами моделі, навіть коли він дуже малоймовірний. Якщо в коробці тільки сині кульки, витягнути червону за цих умов неможливо.
+Determine whether a model's known conditions fully determine its outcome or allow several possible outcomes with an unspecified selection. An outcome unknown to an observer does not itself prove physical randomness.
 
-##### Пояснювати ймовірність події
-
-[Not implemented](#)
-
-Оцінювати або інтерпретувати частку шансів події з огляду на модель та її припущення, зокрема рівноймовірність варіантів. Для одного рівноймовірного сховку зі 100 позицій шанс одного навмання обраного влучання становить 1%.
-
-##### Розрізняти можливість і ймовірність події
+##### Explain Event Possibility
 
 [Not implemented](#)
 
-Відрізняти твердження «подія може статися» від оцінки шансу й від обіцянки результату: два варіанти «так/ні» не означають 50/50. Наприклад, виграти з першої спроби серед 100 однакових закритих клітинок можливо, але це не рівноймовірно з промахом.
+Determine whether an outcome is allowed by a model's conditions, even if extremely unlikely. If a box contains only blue balls, drawing a red one is impossible under those conditions.
 
-##### Порівнювати ймовірність простих подій
-
-[Not implemented](#)
-
-Зіставляти шанси двох подій за однакових припущень, наприклад вибору одного з двох наборів рівноймовірних результатів. Порівняння потребує даних про розподіл, а не лише кількості словесно названих результатів.
-
-##### Пояснювати обмеженість прогнозу
+##### Explain Event Probability
 
 [Not implemented](#)
 
-Пояснювати, чому навіть відома ймовірність не визначає результат одного випробування, а невірна модель може дати хибні прогнози. Виграш за малоймовірного випадку не спростовує коректну оцінку шансу.
+Estimate or interpret an event's chance using the model and its assumptions, including whether outcomes are equally likely. If a prize is equally likely to occupy any of 100 hiding places, a random first guess has a 1% chance of success.
 
-##### Використовувати випадковість у моделі
+##### Distinguish Possibility from Probability
 
 [Not implemented](#)
 
-Додавати до цифрової симуляції випадковий вибір з явно заданої множини результатів і відділяти його від запрограмованого сценарію. Змінюваність результатів не є доказом того, що всі вони однаково ймовірні.
+Separate 'it can happen' from an estimated chance and from a promised result: two options labeled 'yes' and 'no' do not imply 50/50 odds. A first-try success among 100 equally likely hidden cells is possible but not as likely as a miss.
 
+##### Compare Probabilities of Simple Events
+
+[Not implemented](#)
+
+Compare two events' likelihoods under consistent assumptions, such as choosing from two sets of equally likely outcomes. A valid comparison needs distribution information, not merely a count of verbally named outcomes.
+
+##### Explain Limits of Prediction
+
+[Not implemented](#)
+
+Explain why a known probability does not determine the outcome of one trial and why a faulty model can give misleading forecasts. A rare win does not refute a correct low-probability estimate.
+
+##### Use Randomness in a Model
+
+[Not implemented](#)
+
+Introduce random selection from an explicitly defined outcome set into a digital simulation and distinguish it from a predetermined scenario. Variable outcomes do not imply equal likelihoods.
 ### Програмна архітектура
 
 Groups: 2 · Skills: 21
