@@ -624,31 +624,31 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/crossTe
 
 У 12 − 5 один десяток можна розкласти на одиниці, щоб відняти п’ять.
 
-##### Віднімати двоцифрові числа з розгрупуванням одного десятка
+##### Subtraction — 2-digit · Borrowing
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/twoDigitBorrow.data.ts)
 
 Для 43 − 18 один десяток обмінюють на десять одиниць, а потім працюють з кожним розрядом.
 
-##### Віднімати трицифрові числа з розгрупуванням десятків або сотень
+##### Subtraction — 3-digit · Borrowing
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/threeDigitBorrow.data.ts)
 
 У 402 − 175 може знадобитися обмін із сотень через порожній десятковий розряд.
 
-##### Коректно записувати та виконувати письмове віднімання стовпчиком
+##### Subtraction — Column method
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/columnSubtraction.data.ts)
 
 Під час письмового віднімання зберігають вирівнювання розрядів і фіксують кожний обмін до обчислення.
 
-##### Розпізнавати неправильне розгрупування під час віднімання й виправляти його
+##### Subtraction — Borrowing · Error detection
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/borrowErrorDetection.data.ts)
 
 У 52 − 28 після обміну десятків змінюються і одиниці, і кількість десятків; забутий обмін спотворює відповідь.
 
-#### Поєднання додавання та віднімання
+#### Combining addition and subtraction
 
 Skills: 13
 
@@ -656,67 +656,67 @@ Skills: 13
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/additionSubtraction.data.ts)
 
-##### Складати ціле з частин і знаходити невідому частину цілого
+##### Addition and subtraction — Part–whole relationship
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/partWhole.data.ts)
 
 Якщо ціле 9 поділено на відомі 4 й невідому частину, решта визначається як 9 − 4.
 
-##### Обчислювати суми й різниці в межах 10 без предметного переліку
+##### Addition and subtraction — Number facts ≤ 10
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin10.data.ts)
 
 Результати невеликих комбінацій на кшталт 6 + 3 та 9 − 4 мають бути доступні без повторного підрахунку предметів.
 
-##### Розкладати 10 на дві частини різними способами
+##### Addition and subtraction — Bonds of 10
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/numberBonds10.data.ts)
 
 Число 10 можна зібрати як 1 + 9, 4 + 6 або 5 + 5; зміна частин не змінює цілого.
 
-##### Впевнено обчислювати суми та різниці в межах 20
+##### Addition and subtraction — Number facts ≤ 20
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin20.data.ts)
 
 У діапазоні до 20 обчислення можна виконувати через опорні десятки й відомі числові факти, не повертаючись до лічби від одиниці.
 
-##### Перевіряти додавання відніманням і навпаки
+##### Addition and subtraction — Inverse operations
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/inverseOperations.data.ts)
 
 Рівність 7 + 5 = 12 можна перевірити як 12 − 5 = 7, бо дії повертають до початкової частини.
 
-##### Додавати й віднімати цілі десятки
+##### Addition and subtraction — Whole tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/addSubtractTens.data.ts)
 
 40 + 30 спирається на 4 + 3 десятки, а 80 − 20 — на 8 − 2 десятки.
 
-##### Додавати та віднімати двоцифрові числа без розрядного обміну
+##### Addition and subtraction — 2-digit · Without regrouping
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/twoDigitNoRegroup.data.ts)
 
 У 34 + 25 додають десятки до десятків та одиниці до одиниць без утворення нового десятка.
 
-##### Обчислювати усно через десятки й одиниці, пояснюючи кожний крок
+##### Addition and subtraction — Mental place-value strategy
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/placeValueMental.data.ts)
 
 Для 47 + 21 можна подумки виконати 40 + 20 і 7 + 1 та поєднати підсумки.
 
-##### Використовувати компенсацію (додати й відняти те саме число) для усних обчислень
+##### Addition and subtraction — Compensation
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/compensation.data.ts)
 
 У 39 + 8 можна тимчасово замінити 39 на 40, обчислити 48 й відняти додану одиницю.
 
-##### Додавати та віднімати круглі сотні й десятки в межах 1000
+##### Addition and subtraction — Hundreds and tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/hundredsAndTens.data.ts)
 
 300 + 400 працює із сотнями як із цілими одиницями розряду; 650 − 20 — із десятками.
 
-##### Додавати та віднімати трицифрові числа без переходу через розряд
+##### Addition and subtraction — 3-digit · Without regrouping
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/threeDigitNoRegroup.data.ts)
 
