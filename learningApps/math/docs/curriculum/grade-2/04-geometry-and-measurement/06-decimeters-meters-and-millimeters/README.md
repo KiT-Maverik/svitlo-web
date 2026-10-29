@@ -16,4 +16,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще відсутній.
 
 ---
-[Геометрія та величини](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
+[Геометрія та величини](../README.md) · [Curriculum Grade 2](../../grade-2.curriculum.md)
