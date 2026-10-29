@@ -15,4 +15,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще потрібен.
 
 ---
-[Додавання, віднімання та рівняння](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
+[Додавання, віднімання та рівняння](../README.md) · [Curriculum Grade 2](../../grade-2.curriculum.md)

@@ -16,4 +16,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Повний методичний Learning Brief ще не створено.
 
 ---
-[Множення та ділення](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
+[Множення та ділення](../README.md) · [Curriculum Grade 2](../../grade-2.curriculum.md)
