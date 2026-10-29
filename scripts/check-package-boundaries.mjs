@@ -9,6 +9,7 @@ const indexdb = readJson('shared/indexdb/package.json');
 const playground = readJson('learningApps/playground/package.json');
 const platform = readJson('frontend/platform/package.json');
 const math = readJson('learningApps/math/package.json');
+const biology = readJson('learningApps/biology/package.json');
 const physics = readJson('learningApps/physics/package.json');
 const uiKit = readJson('shared/ui-kit/package.json');
 
@@ -56,6 +57,7 @@ assert(playground.dependencies?.[engine.name] === engine.version, 'Playground mu
 assert(playground.dependencies?.[uiKit.name] === uiKit.version, 'Playground must use a versioned UI Kit dependency');
 assert(playground.dependencies?.[indexdb.name] === indexdb.version, 'Playground must use public IndexedDB dependency');
 assert(math.dependencies?.[indexdb.name] === indexdb.version, 'Math must use public IndexedDB dependency');
+assert(biology.name === '@svitlo/biology', 'Unexpected Biology package name');
 for (const name of ['learningApps/math', 'learningApps/playground']) {
   assert(!existsSync(resolve(root, name, 'src/db')), name + ' must not own duplicate IndexedDB controllers');
 }
@@ -130,14 +132,14 @@ if (existsSync(appSourceRoot)) {
       'Application must use public engine exports: ' + relative(root, file));
   }
 }
-const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src', 'learningApps/physics/src', 'frontend/platform/src']
+const applicationSourceRoots = ['learningApps/playground/src', 'learningApps/math/src', 'learningApps/biology/src', 'learningApps/physics/src', 'learningApps/informatics/src', 'frontend/platform/src']
   .map(path => resolve(root, path));
 for (const applicationRoot of applicationSourceRoots) {
   for (const file of walk(applicationRoot).filter(path => /\.(ts|tsx)$/.test(path))) {
     const code = readFileSync(file, 'utf8');
     for (const match of code.matchAll(/\bfrom\s*['"]([^'"]+)['"]/g)) {
       const specifier = match[1];
-      assert(!/^@svitlo\/(?:playground|math|physics|platform)(?:\/|$)/.test(specifier),
+      assert(!/^@svitlo\/(?:playground|math|biology|physics|informatics|platform)(?:\/|$)/.test(specifier),
         'Applications must not import another application by package name: ' + relative(root, file));
       if (!specifier.startsWith('.')) continue;
       const target = resolve(dirname(file), specifier);

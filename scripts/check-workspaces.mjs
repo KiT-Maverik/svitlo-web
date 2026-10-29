@@ -13,6 +13,14 @@ const expected = [
     "name": "@svitlo/platform"
   },
   {
+    "path": "learningApps/informatics",
+    "name": "@svitlo/informatics"
+  },
+  {
+    "path": "learningApps/biology",
+    "name": "@svitlo/biology"
+  },
+  {
     "path": "learningApps/geography",
     "name": "@svitlo/geography"
   },
