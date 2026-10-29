@@ -14,4 +14,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повна методична специфікація ще потребує створення.
 
 ---
-[Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

@@ -16,4 +16,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
 
 ---
-[Час, гроші, дані](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Час, гроші, дані](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
