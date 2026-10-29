@@ -22,151 +22,151 @@ Code files: 0/11 Domains · 0/26 Groups · 0/147 Skills
 
 ## DOMAINS
 
-### Ознаки живого
+### Characteristics of Living Things
 
 Groups: 0 · Skills: 1
 
 [Not implemented](#)
 
-Ознаки життєдіяльності, біологічне походження та відмінність живих організмів від мертвих решток і речей, що ніколи не були живими. Розрізнення потребує врахування реальних життєвих процесів, а не лише зовнішнього вигляду чи наявності руху.
+Life processes, biological origin, and the distinction between living organisms, dead remains, and things that have never been alive. This distinction requires consideration of actual life processes rather than appearance or movement alone.
 
-**Методична примітка щодо класифікаційних завдань:** загальні дії «обрати критерій групування», «відсортувати організми за ознакою», «застосувати визначальний ключ», «пояснити критерій» і «виділити ознаки для групування» **не створюють тут окремих Biology Skill ID**. Це способи побудови інтерактивних Questions, карток, практики та перевірки вже наявних предметних знань. Наприклад, «розподіли ссавців і плазунів за групами» перевіряє **знання відмінних ознак відповідних тварин**, а не окрему універсальну компетентність перетягування карток. Критерії та визначальні ключі залишаються допустимими інструментами уроків; окремий Skill потрібен лише для самостійного біологічного результату, якого не покривають предметні навички розпізнавання. **Процесний висновок:** цей редакторський прецедент не є забороною на всі класифікаційні чи модельні Skills. Для будь-якого нового або наявного схожого кандидата методист зобов'язаний представити редактору конкретне Question, компетентність, яку воно може перевіряти, наявні Skill(s) і альтернативи, а **до явного рішення редактора** не додавати, не прибирати й не переміщувати такі Skills. Правило: [Create Skills Taxonomy — mandatory editorial stop](../../../../studio/skills/create-skills-taxonomy.skill.md).
+**Methodological note on classification tasks:** generic actions such as “choose a grouping criterion,” “sort organisms by a trait,” “apply an identification key,” “explain a grouping criterion,” and “identify traits for grouping” **do not create separate Biology Skill IDs here**. They are ways to construct interactive Questions, cards, practice, and checks of existing subject knowledge. For example, “sort mammals and reptiles into groups” assesses **knowledge of the respective animals’ distinguishing characteristics**, not a separate universal ability to drag cards. Criteria and identification keys remain permissible tools for Lessons; a separate Skill is warranted only for an independent biological outcome not covered by subject-specific recognition Skills. **Process conclusion:** this editorial precedent does not prohibit all classification or modeling Skills. For any new or existing similar candidate, the methodologist must present the editor with a concrete Question, the competency it might assess, existing Skill(s), and alternatives, and **must not add, remove, or relocate such Skills before the editor’s explicit decision**. Rule: [Create Skills Taxonomy — mandatory editorial stop](../../../../studio/skills/create-skills-taxonomy.skill.md).
 
-#### Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими
+#### Classify objects as living, dead, or never alive
 
 [Not implemented](#)
 
-Застосовувати ознаки життєдіяльності та походження для класифікації об’єкта й пояснювати рішення діагностичними ознаками. Живе дерево здійснює життєві процеси, мертвий листок належав живому організму, а камінь не має біологічного походження. Не ототожнювати мертві організми, їхні рештки та продукти біологічного походження.
+Use evidence of life processes and origin to classify an object and justify the decision through diagnostic features. A living tree carries out life processes, a dead leaf once belonged to a living organism, and a stone has no biological origin. Do not equate dead organisms with their remains or with products of biological origin.
 
-### Загальна та клітинна біологія
+### General and Cell Biology
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Спільні принципи організації клітинних організмів: від клітини до взаємодії органів, а також обмін речовин, ріст і реакції. Специфічні системи людини й окремих таксонів розглядаються у відповідних доменах.
+Shared principles of cellular organism organization, from the cell to interactions among organs, as well as metabolism, growth, and responses. Specific human systems and particular taxa are addressed in their respective Domains.
 
-#### Клітинна будова
+#### Cellular Structure
 
 Skills: 4
 
 [Not implemented](#)
 
-Клітини мають мембрану та внутрішні компоненти, які забезпечують життєві процеси; схеми допомагають бачити спільне і відмінне в різних клітин.
+Cells have membranes and internal components that sustain life processes; diagrams help reveal commonalities and differences among different cells.
 
-##### Розпізнавати клітину як структурну одиницю
-
-[Not implemented](#)
-
-Розуміти, що тканини й тіла клітинних організмів побудовані з мікроскопічних одиниць, які мають власну межу.
-
-##### Розрізняти одноклітинні та багатоклітинні організми
+##### Recognize the Cell as a Structural Unit
 
 [Not implemented](#)
 
-Визначати, чи одна клітина забезпечує весь організм, чи багато спеціалізованих клітин працюють разом.
+Understand that the tissues and bodies of cellular organisms consist of microscopic units, each with its own boundary.
 
-##### Розрізняти рослинну та тваринну клітини за особливостями будови
-
-[Not implemented](#)
-
-Розрізняти характерні особливості клітин: клітинну стінку та пластиди рослинної клітини і відсутність цих структур у тваринної. Не припускати, що всі рослинні клітини мають хлоропласти (зокрема, багато клітин кореня їх не мають). Ілюстрація, текстовий опис чи інтерактивна модель — альтернативні способи перевірки, не частина назви Skill.
-
-##### Співвідносити основні частини клітини з їхніми функціями
+##### Distinguish Unicellular and Multicellular Organisms
 
 [Not implemented](#)
 
-Пов'язувати мембрану з вибірковим обміном, ядро з генетичною інформацією, а інші зображені органели — з основною роботою клітини.
+Determine whether a single cell carries out all functions of an organism or many specialized cells work together.
 
-#### Поділ клітини
+##### Distinguish Plant and Animal Cells by Structural Features
+
+[Not implemented](#)
+
+Distinguish characteristic cell features: the cell wall and plastids in plant cells and the absence of these structures in animal cells. Do not assume that all plant cells contain chloroplasts (many root cells, for instance, do not). An illustration, a textual description, or an interactive model are alternative ways of assessing the competency, not part of the Skill name.
+
+##### Relate Major Cell Structures to Their Functions
+
+[Not implemented](#)
+
+Associate the membrane with selective exchange, the nucleus with genetic information, and other depicted organelles with their main cellular functions.
+
+#### Cell Division
 
 Skills: 2
 
 [Not implemented](#)
 
-Клітинний цикл включає поділ генетичного матеріалу й цитоплазми; мітоз підтримує ріст і відновлення, а мейоз пов'язаний зі статевим розмноженням та спадковою мінливістю.
+The cell cycle involves division of genetic material and cytoplasm; mitosis supports growth and tissue renewal, while meiosis is associated with sexual reproduction and inherited variation.
 
-##### Пояснювати мітоз
-
-[Not implemented](#)
-
-Пояснювати поділ ядра еукаріотичної клітини зі збереженням числа хромосом і розподілом скопійованої ДНК між дочірніми ядрами. Розрізняти мітоз і поділ цитоплазми та пояснювати його значення для росту, оновлення тканин і нестатевого розмноження.
-
-##### Пояснювати мейоз
+##### Explain Mitosis
 
 [Not implemented](#)
 
-Пояснювати послідовні поділи після одного копіювання ДНК, зменшення числа хромосом удвічі, рекомбінацію та незалежний розподіл хромосом. Розрізняти продукти мейозу в тварин і рослин: у рослин він може утворювати спори, а не безпосередньо гамети.
+Explain division of a eukaryotic cell nucleus while maintaining the chromosome number and distributing replicated DNA between daughter nuclei. Distinguish mitosis from cytokinesis and explain its roles in growth, tissue renewal, and asexual reproduction.
 
-#### Рівні організації
+##### Explain Meiosis
+
+[Not implemented](#)
+
+Explain successive divisions following a single round of DNA replication, the halving of chromosome number, recombination, and independent chromosome assortment. Distinguish meiotic products in animals and plants: in plants, meiosis may produce spores rather than gametes directly.
+
+#### Levels of Organization
 
 Skills: 4
 
 [Not implemented](#)
 
-Частини клітинних організмів утворюють вкладені рівні; функція цілого залежить від узгодженої роботи його структур.
+Parts of cellular organisms form nested levels; the functioning of a whole depends on the coordinated work of its structures.
 
-##### Розрізняти частину організму й цілий організм
-
-[Not implemented](#)
-
-Знаходити межу між окремим органом, його частиною та організмом як самостійною живою системою.
-
-##### Упорядковувати рівні «клітина → тканина → орган → система»
+##### Distinguish a Part of an Organism from a Whole Organism
 
 [Not implemented](#)
 
-Встановлювати, як клітини утворюють тканини, тканини — органи, а органи можуть працювати разом у системі.
+Identify the boundary between an individual organ, a part of that organ, and an organism as an independent living system.
 
-##### Пояснювати функцію органа в організмі
-
-[Not implemented](#)
-
-Пояснювати внесок конкретної структури в загальну життєдіяльність, наприклад поглинання чи переміщення речовин.
-
-##### Пояснювати взаємозалежність органів
+##### Order the Levels “Cell → Tissue → Organ → System”
 
 [Not implemented](#)
 
-Показувати, чому збій у роботі однієї системи здатний змінити роботу іншої.
+Establish how cells form tissues, tissues form organs, and organs can work together within a system.
 
-#### Життєві процеси
+##### Explain an Organ’s Function in an Organism
+
+[Not implemented](#)
+
+Explain how a particular structure contributes to overall life processes, such as absorbing or transporting substances.
+
+##### Explain the Interdependence of Organs
+
+[Not implemented](#)
+
+Show why a disruption in one system can alter the functioning of another.
+
+#### Life Processes
 
 Skills: 5
 
 [Not implemented](#)
 
-Обмін речовин і енергії, збільшення розмірів, зміни форми й реагування на умови є проявами життєдіяльності, які можна спостерігати або моделювати.
+Exchange of matter and energy, increases in size, changes in form, and responses to conditions are manifestations of life that can be observed or modeled.
 
-##### Визначати приклади живлення
-
-[Not implemented](#)
-
-Відносити отримання та використання організмом поживних речовин до процесів живлення, розрізняючи його форми в різних організмів.
-
-##### Пояснювати фотосинтез
+##### Identify Examples of Nutrition
 
 [Not implemented](#)
 
-Пояснювати перетворення світлової енергії на хімічну під час утворення органічних речовин з вуглекислого газу й води у фотосинтезувальних організмів; визначати роль хлоропластів, пігментів і виділення кисню під час кисневого фотосинтезу. Не ототожнювати фотосинтез із мінеральним живленням чи диханням.
+Recognize the acquisition and use of nutrients by organisms as nutrition, distinguishing forms of nutrition across different organisms.
 
-##### Пояснювати клітинне дихання
-
-[Not implemented](#)
-
-Пояснювати, як клітини отримують придатну для роботи енергію внаслідок розщеплення органічних сполук із синтезом АТФ. Розрізняти аеробні й анаеробні шляхи та не ототожнювати клітинне дихання з вентиляцією легень або газообміном у дихальних органах.
-
-##### Розпізнавати ріст і розвиток
+##### Explain Photosynthesis
 
 [Not implemented](#)
 
-Відрізняти збільшення маси чи розміру від зміни будови та функцій під час переходу між стадіями життя.
+Explain the conversion of light energy into chemical energy as photosynthetic organisms form organic substances from carbon dioxide and water; identify the roles of chloroplasts and pigments and the release of oxygen during oxygenic photosynthesis. Do not equate photosynthesis with mineral nutrition or respiration.
 
-##### Розпізнавати реакції на подразники
+##### Explain Cellular Respiration
 
 [Not implemented](#)
 
-Встановлювати, як світло, дотик чи хімічний сигнал викликають відповідну зміну стану або руху організму.
+Explain how cells obtain usable energy by breaking down organic compounds while synthesizing ATP. Distinguish aerobic and anaerobic pathways, and do not equate cellular respiration with lung ventilation or gas exchange in respiratory organs.
+
+##### Recognize Growth and Development
+
+[Not implemented](#)
+
+Distinguish increases in mass or size from changes in structure and function during transitions between life stages.
+
+##### Recognize Responses to Stimuli
+
+[Not implemented](#)
+
+Establish how light, touch, or a chemical signal elicits a change in an organism’s state or movement.
 
 ### Ботаніка
 
