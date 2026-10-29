@@ -1,60 +1,61 @@
 # Number Line to 20
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 08**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 08**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Розміщує числа на прямій та визначає їхніх сусідів.
+**Learning objective:** Locate numbers and neighbors on a line from 0 to 20.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Numbers on a line to 20](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine20.data.ts)
 
-## Передумови
+## Prerequisites
 
-Вільне читання чисел 0–20, знання порядку і порівняння сусідів чисел.
+Fluent reading of numbers 0–20, their order, and comparisons of adjacent values.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Розміщує цілі числа від 0 до 20 на позначеній прямій із рівним кроком.
-- Знаходить число за його позицією та позицію за числом.
-- Описує відношення «лівіше/правіше» для чисел на прямій.
-- Визначає сусідів числа на такій прямій.
+- Place integers 0–20 on a marked line using equally spaced intervals.
+- Find a position from a number and a number from its position.
+- Describe 'left of' and 'right of' for positions on the line.
+- Identify neighboring numbers on the line.
 
-## Математичний зміст
+## Mathematical content
 
-- Числова пряма показує числовий порядок просторово; у звичайній орієнтації значення зростають праворуч.
-- Відстані між позначками сусідніх цілих чисел мають бути однаковими.
-- Нуль — позначене значення, а не обов’язково край кожного можливого числового ряду (пізніше з’являться інші числа).
+- A number line represents numerical order spatially; in its conventional orientation values increase to the right.
+- Adjacent integers are shown at equal distances.
+- Zero is a labeled value, not necessarily the leftmost point on every number line once the domain is extended.
 
-## Обсяг і межі
+## Scope and boundaries
 
-Тільки невід’ємні цілі числа 0–20 та рівний масштаб. Не вводити від’ємні координати, дробові точки, довільний масштаб або формальні осі координат.
+Use only nonnegative integers 0–20 and a uniform scale. Exclude negative coordinates, fractional positions, arbitrary scales, and formal coordinate axes.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Нерівномірні інтервали для послідовних чисел.
-- Відлік від 1 там, де позначено 0.
-- Ототожнення напрямку «правіше» з «менше».
+- Giving consecutive integers uneven spacing.
+- Starting to count at one when the line is labeled from zero.
+- Interpreting a point to the right as the smaller value.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Розташовує числа при частково позначеній прямій, а не лише читає готову.
-- Відновлює пропущені підписи з урахуванням рівного кроку.
-- Пов’язує просторове розміщення з числовим порівнянням.
+- Places numbers on a partially labeled line rather than only reading a completed example.
+- Reconstructs missing labels using equal intervals.
+- Connects spatial placement with numerical comparison.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Підготовка до групування десяти одиниць і зіставлення кількох подань одного числа.
+Prepare for grouping ten individual units and comparing different representations of a quantity.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методичний бриф вище лишається окремим.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

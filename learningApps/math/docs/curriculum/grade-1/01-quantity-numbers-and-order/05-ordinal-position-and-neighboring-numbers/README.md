@@ -1,61 +1,62 @@
 # Ordinal Position and Neighboring Numbers
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 05**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 05**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Розрізняє порядковий номер та кількість; називає попереднє й наступне числа.
+**Learning objective:** Tell ordinal position from quantity and locate neighboring numbers.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Recognizing ordinal position](../../../../../src/data/skillsTaxonomy/counting/ordinal/skills/basicOrdinal.data.ts)
 - [Previous, next and intermediate numbers](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAfterBetween.data.ts)
 
-## Передумови
+## Prerequisites
 
-Лічба до 20, розуміння кількості та читання чисел у відповідному діапазоні.
+Counting to twenty, understanding cardinality, and reading numerals in that range.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Визначає порядкове місце об’єкта в упорядкованій послідовності.
-- Розрізняє запитання «скільки?» та «котрий за порядком?».
-- Називає число безпосередньо перед і після заданого у межах діапазону.
-- Визначає число між двома сусідніми або близькими числами.
+- Identify an object's position in an ordered row.
+- Distinguish 'How many?' from 'Which one in order?'.
+- Name the number immediately before and after a given value.
+- Identify the number between two nearby values.
 
-## Математичний зміст
+## Mathematical content
 
-- Кількісне число позначає розмір множини, порядкове — місце об’єкта в обраному порядку.
-- Порядкове місце залежить від того, звідки визначено початок послідовності.
-- Попередник і наступник мають значення в певному числовому діапазоні.
+- Cardinal numbers give the size of a set; ordinal numbers indicate a position within a specified order.
+- Ordinal positions depend on where counting starts.
+- Predecessor and successor are defined relative to the given numerical range.
 
-## Обсяг і межі
+## Scope and boundaries
 
-Упорядковані ряди предметів і числа до 20. Не вводити координати, двовимірну нумерацію чи формальну логіку порядкових відношень.
+Use ordered collections and numbers to twenty. Do not introduce coordinates, two-dimensional numbering, or formal ordinal logic.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Відповідь кількістю предметів замість їхнього порядкового номера.
-- Неявне змінення початку ряду, коли визначається порядкова позиція.
-- Плутання числа перед заданим і числа після нього.
+- Answering with the number of objects instead of the requested ordinal position.
+- Silently changing which end of the row is used as the starting point.
+- Confusing the number before a given value with the number after it.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Учень чітко відповідає на обидва типи запитань про одну й ту саму групу.
-- Може назвати сусідів числа без повного переказування послідовності.
-- Пояснює, чому порядкове місце може змінитися, якщо змінити початок ряду.
+- Answers both cardinal and ordinal questions for the same row.
+- Identifies a number's immediate neighbors without reciting the entire sequence.
+- Explains why reversing the starting direction can change ordinal position.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Далі переносимо порівняння від позиції в ряду до кількості елементів у різних групах.
+Move from positions within one ordered row to comparing numbers of objects in different collections.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методичні вимоги вище залишаються першоджерелом.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

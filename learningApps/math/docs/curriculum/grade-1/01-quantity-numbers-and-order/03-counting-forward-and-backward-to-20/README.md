@@ -1,61 +1,62 @@
 # Counting Forward and Backward to 20
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 03**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 03**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Продовжує послідовність у двох напрямах від заданого числа.
+**Learning objective:** Continue counting forward and backward within 20.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Counting forward within 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/forward20.data.ts)
 - [Counting backward within 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/backward20.data.ts)
 
-## Передумови
+## Prerequisites
 
-Лічба невеликих наборів, знання числових слів до 10, розпізнавання нуля.
+Counting small collections, knowing number words through ten, and recognizing zero.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Відтворює послідовність чисел від 0 до 20 у прямому напрямі.
-- Продовжує лічбу від довільного числа всередині діапазону, а не тільки від 1.
-- Відтворює зворотну послідовність у межах 0–20.
-- Виявляє пропущене числове слово в знайомій послідовності.
+- Recite the number sequence from 0 to 20 in ascending order.
+- Continue counting from an arbitrary number in range, not just one.
+- Count backward within 0–20.
+- Identify a missing number word in a familiar sequence.
 
-## Математичний зміст
+## Mathematical content
 
-- Кожне наступне натуральне число в заданій послідовності на один більше попереднього.
-- Під час зворотної лічби кожне попереднє число на один менше.
-- Продовжувати послідовність можна з будь-якого відомого числа; не потрібно щоразу починати з одиниці.
+- Each next natural number is exactly one more than its predecessor.
+- Each step of backward counting decreases the value by one.
+- A sequence can continue from any known number without restarting at one.
 
-## Обсяг і межі
+## Scope and boundaries
 
-Діапазон 0–20 включно; не вводити від’ємні числа та алгоритми додавання/віднімання як обов’язкову передумову. Не зводити результат до завченого безперервного віршика.
+Work only with 0–20. Do not assume prior knowledge of negative numbers or formal addition and subtraction algorithms. Avoid reducing the task to memorized recitation.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Пропуски та перестановки чисел при переході через 10.
-- Механічне відтворення з 1 без здатності почати всередині послідовності.
-- Зміна напряму при зворотній лічбі або пропуск 0.
+- Skipping or misordering numbers when crossing ten.
+- Being able to recite only when starting at one.
+- Losing the reverse direction or omitting zero.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Самостійно продовжує числа після 8, 13, 18 і повертається у зворотному напрямі.
-- Пояснює, яке число йде перед або після названого, спираючись на порядок.
-- Відновлює пропуск у короткому числовому ряді.
+- Continues sequences forward from 8, 13, and 18, and counts back from supplied positions.
+- Explains which number comes immediately before or after a given value.
+- Restores a missing term in a short consecutive sequence.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Переходимо від усної послідовності до прочитання та запису чисел 0–20.
+Move from oral counting to reading and writing numerals 0–20.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 7 сценарних секцій](./Sections/README.md). Сценарій не змінює методичних цілей вище.
+[View the 7 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

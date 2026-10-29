@@ -1,61 +1,62 @@
 # More, Less, or Equal
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 06**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 06**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Порівнює множини предметів і числові кількості.
+**Learning objective:** Compare two groups as greater, smaller, or equal.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Comparing sets by matching or counting](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/compareSets.data.ts)
 - [Greater, less or equal quantities](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/moreLessEqual.data.ts)
 
-## Передумови
+## Prerequisites
 
-Однозначна лічба предметів і розуміння результату «скільки всього?».
+One-to-one counting and understanding the meaning of the final total.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Порівнює дві групи предметів без обов’язкового попереднього запису чисел.
-- Визначає «більше», «менше» або «порівну» через попарне зіставлення.
-- За потреби перевіряє порівняння підрахунком.
-- Пояснює, чому розмір чи просторовий розклад предметів самі по собі не визначають їхню кількість.
+- Compare two groups without first writing their quantities as numerals.
+- Identify more, fewer, or equal using one-to-one correspondence.
+- Check a comparison by counting when appropriate.
+- Explain why item size or spacing does not determine a collection's cardinality.
 
-## Математичний зміст
+## Mathematical content
 
-- Дві групи рівні за кількістю, якщо кожному предмету однієї відповідає рівно один предмет другої.
-- Якщо після попарного зіставлення лишилися зайві предмети в одній групі, ця група кількісно більша.
-- Фізично більший предмет або більша відстань між предметами не означають більшої кількості.
+- Two collections have equal cardinality when every object can be uniquely paired with an object in the other collection.
+- Unmatched items remaining on one side indicate that this collection is numerically larger.
+- Larger individual objects or greater spacing do not imply greater cardinality.
 
-## Обсяг і межі
+## Scope and boundaries
 
-На початку — помірні дискретні групи з однаковими та різними типами предметів. Символи <, >, = з’являться наступного уроку.
+Begin with manageable discrete sets of like or unlike objects. The symbols <, >, and = are introduced in the next lesson.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Порівняння груп лише за висотою або площею їхнього розміщення.
-- Плутання «більший за розміром» з «більший за кількістю».
-- Невірне попарне зіставлення з повторним використанням одного предмета.
+- Comparing the height or area of a drawing rather than the number of objects.
+- Confusing physical size with numerical quantity.
+- Reusing an object during a purported one-to-one comparison.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Виявляє більшу, меншу й рівну групу попри різний зовнішній вигляд.
-- Обґрунтовує висновок зіставленням або підрахунком.
-- Не змінює висновку, якщо предмети пересунути, не додаючи й не забираючи їх.
+- Identifies larger, smaller, and equal sets despite different visual arrangements.
+- Supports a conclusion with matching or counting.
+- Keeps the same comparison result when objects are rearranged without additions or removals.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Кількісні порівняння переводимо на мову числових записів і математичних знаків.
+Express numerical comparisons using written numerals and mathematical symbols.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична специфікація вище залишається першоджерелом.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

@@ -1,60 +1,61 @@
 # Ten as a Group
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 09**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 09**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Збирає десяток із одиниць та розкладає його назад.
+**Learning objective:** Make and break a group of ten objects.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Grouping and ungrouping ten ones](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.data.ts)
 
-## Передумови
+## Prerequisites
 
-Лічба предметів до 20, розпізнавання чисел 0–20, розуміння кількості.
+Counting and recognizing numbers through twenty and understanding cardinality.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Об’єднує рівно 10 одиниць в одну групу-десяток.
-- Пояснює, що один десяток і десять окремих одиниць — однакова кількість.
-- Розгруповує десяток назад у десять одиниць.
-- Визначає залишок одиниць при групуванні невеликої кількості предметів.
+- Combine exactly ten single units into one group of ten.
+- Explain that one group of ten and ten individual units have the same cardinality.
+- Ungroup a ten into its ten individual units.
+- Identify any leftover ones when grouping a small collection.
 
-## Математичний зміст
+## Mathematical content
 
-- Десяток — це рівно десять одиниць, незалежно від типу предметів.
-- Групування і розгрупування не змінюють загальної кількості.
-- Десять одиниць можна представляти єдиною зв’язаною групою, але це не «один предмет замість десяти».
+- A ten contains exactly ten units regardless of the type of objects.
+- Grouping and ungrouping preserve the total quantity.
+- A compact representation for a group of ten does not imply that only one original item exists.
 
-## Обсяг і межі
+## Scope and boundaries
 
-Первинне розуміння десятка на прикладі 10–20 предметів. Не вимагати формального розрядного розкладу довільних двоцифрових чисел або письмових алгоритмів перенесення.
+Use initial models of a ten drawn from collections of about 10–20 items. Do not require formal place-value decomposition or written carrying algorithms.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Визнання дев’яти або одинадцяти предметів «десятком».
-- Зміна загальної кількості в уявленні після об’єднання десяти предметів.
-- Нездатність перейти від компактного позначення десятка назад до окремих одиниць.
+- Labeling a group of nine or eleven objects as a ten.
+- Assuming grouping changes the total amount.
+- Failing to restore ten individual units from a grouped model.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Учень правильно створює десяток із предметів та доводить рівність кількостей.
-- Може розгрупувати та порахувати без зміни результату.
-- Пояснює, чому 10 одиниць і одна група по 10 — те саме.
+- Correctly creates a ten and demonstrates that no objects were added or removed.
+- Ungroups and recounts without changing the result.
+- Explains why ten ones and one group of ten describe the same quantity.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Групування стає передумовою осмисленої лічби рівними кроками й різних моделей числа.
+Grouping becomes a prerequisite for skip counting and multiple representations of the same value.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Навчальний brief вище залишається окремим.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

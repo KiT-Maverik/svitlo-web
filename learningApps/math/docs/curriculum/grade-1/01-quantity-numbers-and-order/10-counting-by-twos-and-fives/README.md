@@ -1,61 +1,62 @@
 # Counting by Twos and Fives
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 10**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 10**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Лічить рівними групами з опорою на предметні моделі.
+**Learning objective:** Count equal groups by twos and fives.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Counting in steps of 2](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy2.data.ts)
 - [Counting in steps of 5](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.ts)
 
-## Передумови
+## Prerequisites
 
-Лічба вперед до 20, групування предметів і розуміння одиниць як окремих об’єктів.
+Counting forward to twenty, grouping objects, and treating individual units as separate items.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Утворює послідовності рівних кроків по 2 або 5.
-- Пов’язує кожен названий результат з іще однією рівною групою предметів.
-- Продовжує короткі крокові ряди, не рахуючи завжди з самого початку.
-- Пояснює різницю між лічбою по 1, по 2 та по 5.
+- Generate sequences with constant steps of two or five.
+- Associate each new value with another equal group of objects.
+- Continue a short skip-counting sequence without restarting from the beginning.
+- Explain the difference between counting by ones, twos, and fives.
 
-## Математичний зміст
+## Mathematical content
 
-- Рівний крок означає постійне збільшення кількості на 2 або 5.
-- Крокова лічба відображає підсумок після додавання ще однієї групи того самого розміру.
-- Пропущене число можна відновити за сталим кроком, а не лише із завченого ряду.
+- Skip counting advances by a constant increase of two or five.
+- Each step reflects the cumulative total after adding one more equally sized group.
+- Missing terms can be recovered using a step rule rather than reciting a memorized sequence.
 
-## Обсяг і межі
+## Scope and boundaries
 
-Для базового засвоєння — кроки по 2 і 5 у доступних послідовностях, спочатку в межах 20; поступове розширення можливе, але повний діапазон Skills має бути окремо уточнений. Не вводити формальну таблицю множення або знак ×.
+Start with steps of two and five in accessible sequences, initially within twenty. Broader ranges require separate coverage; do not introduce multiplication tables or the × sign as prerequisites.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Зміна величини кроку всередині послідовності.
-- Завчена лічба без розуміння кількості груп.
-- Змішування кількості груп з кількістю предметів у групах.
+- Changing the step size midway through a sequence.
+- Reciting known terms without understanding the represented groups.
+- Confusing the number of groups with the number of items in each group.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Відновлює наступний елемент у послідовності і пояснює, чому саме він.
-- Використовує групи предметів для підтвердження числового ряду.
-- Відрізняє крок 2 від кроку 5 навіть при зміні початкового значення.
+- Identifies the next term in a skip-counting sequence and explains why.
+- Uses physical groups to justify the numerical series.
+- Distinguishes steps of two from steps of five after changing the starting value.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Завершуємо модуль інтеграцією предметного, знакового та просторового подань.
+Conclude the module by integrating concrete, symbolic, and spatial models of numbers.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична специфікація вище зберігається.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

@@ -1,61 +1,62 @@
 # Comparing and Ordering Numbers
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 07**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 07**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Використовує знаки порівняння та впорядковує числа до 20.
+**Learning objective:** Use comparison signs and order numbers within 20.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Comparison symbols <, > and =](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/comparisonSymbols.data.ts)
 - [Ordering numbers 0–20](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/order20.data.ts)
 
-## Передумови
+## Prerequisites
 
-Числа 0–20, порівняння груп за кількістю; базове розрізнення «більше / менше / дорівнює».
+Reading values 0–20, comparing concrete sets, and distinguishing more, less, and equal.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Правильно читає й використовує знаки <, >, = при порівнянні чисел.
-- Упорядковує декілька чисел 0–20 за зростанням та спаданням.
-- Пояснює відношення між сусідніми й несусідніми числами.
-- Визначає помилкове числове порівняння.
+- Read and use the symbols <, >, and = correctly.
+- Order several numbers 0–20 in ascending and descending order.
+- Explain comparisons between adjacent and nonadjacent numbers.
+- Identify a false numerical comparison.
 
-## Математичний зміст
+## Mathematical content
 
-- Запис a < b означає, що a менше за b; напрям знака визначає відношення, а не розміщення на екрані.
-- Рівність кількостей позначають знаком =.
-- Зростання й спадання — протилежні порядки одного набору чисел.
+- The expression a < b means that a is numerically less than b; the symbol encodes a relation, not screen layout.
+- Equality of quantities is written using =.
+- Ascending and descending orders traverse the same set of values in opposite directions.
 
-## Обсяг і межі
+## Scope and boundaries
 
-Числа 0–20, без ланцюгових нерівностей, дробів, від’ємних чисел або алгебраїчного перетворення нерівностей.
+Use numbers 0–20 only; exclude chained inequalities, fractions, negative numbers, and algebraic manipulation.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Перевертання знаків < і > без зміни змісту відношення.
-- Нерозрізнення порядку зростання й спадання.
-- Порівняння за формою запису (наприклад, «11 має дві цифри, тому...»), а не за числовим значенням.
+- Reversing < and > without changing the intended relation.
+- Confusing ascending and descending order.
+- Comparing the appearance of numerals rather than their numerical values.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Створює математично коректні порівняння різних пар чисел.
-- Сортує набір із кількох чисел без дублювання або пропусків.
-- Може словесно пояснити правильний напрям знака.
+- Constructs valid symbolic comparisons for several distinct number pairs.
+- Sorts a set of numbers without duplicating or omitting entries.
+- Explains verbally why the chosen comparison symbol faces the correct way.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Наступний крок — репрезентувати числовий порядок як положення на числовій прямій.
+Represent numerical order as positions on a number line.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Бриф вище не замінюється сценарієм.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

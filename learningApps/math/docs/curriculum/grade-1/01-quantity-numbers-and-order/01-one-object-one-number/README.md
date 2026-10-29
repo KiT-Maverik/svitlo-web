@@ -1,61 +1,62 @@
 # One Object, One Number
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 01**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 01**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Перелічує об’єкти без пропусків і називає загальну кількість.
+**Learning objective:** Count every object exactly once and state the total.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [One-to-one correspondence when counting](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/oneToOne.data.ts)
 - [Determining how many objects are in a set](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/basicCardinality.data.ts)
 
-## Передумови
+## Prerequisites
 
-Не вимагає попередніх математичних навичок. Достатньо розрізняти предмети у невеликій групі та виконувати просту послідовну дію.
+No prior mathematical skills are required. The learner only needs to distinguish objects in a small collection and perform a simple sequential action.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Встановлює однозначну відповідність між кожним предметом і одним числовим словом під час лічби.
-- Перелічує предмети в невеликих групах без пропусків і подвійного врахування.
-- Називає загальну кількість, використовуючи останнє числове слово, а не починаючи перелік заново.
-- Розуміє, що переставляння вже перелічених предметів не змінює їхню кількість.
+- Match each object with exactly one spoken number word.
+- Count a small collection without omissions or double-counting.
+- State the total using the final counting word without restarting the count.
+- Recognize that rearranging the counted objects does not change their number.
 
-## Математичний зміст
+## Mathematical content
 
-- Лічба визначає кількість лише тоді, коли кожен об’єкт враховано рівно один раз.
-- Порядок обходу предметів може змінюватися, але кількість залишається сталою.
-- Підсумкове число означає кількість усієї групи, а не лише останнього предмета.
+- A count is valid only when every object is included exactly once.
+- Objects may be visited in different orders without changing the cardinality of the set.
+- The last counting word gives the size of the entire set, not only the identity of the last object.
 
-## Обсяг і межі
+## Scope and boundaries
 
-Невеликі видимі множини предметів (орієнтовно до 10). Не вимагати швидкості, письмового запису числа або обчислення арифметичних виразів.
+Use small visible sets, typically no more than ten objects. Do not require speed, writing numerals, or evaluating arithmetic expressions.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Повторний підрахунок уже врахованого предмета або пропуск предмета.
-- Втрата відповідності між вказуванням на предмет і називанням числа.
-- Нездатність відповісти «скільки всього?» без повторної лічби; плутання останнього предмета із загальною кількістю.
+- Skipping objects or counting an object twice.
+- Saying a number word without pointing to a corresponding item.
+- Repeating the entire count when asked 'How many?' or treating the last object as the total.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Учень отримує той самий результат для однієї групи предметів при зміні порядку підрахунку.
-- Може пояснити, чому результат коректний: кожен предмет пораховано один раз.
-- Відповідає на запитання про загальну кількість після завершення переліку.
+- Counts the same collection correctly in a different traversal order.
+- Explains that every object was counted exactly once.
+- Answers a question about the total after counting.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Наступний урок пов'язує поняття кількості з нулем і цифровими знаками.
+The following lesson connects quantity to zero and digit symbols.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методичний brief вище лишається окремим від сценарію.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

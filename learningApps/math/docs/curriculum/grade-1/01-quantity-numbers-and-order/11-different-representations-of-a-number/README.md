@@ -1,60 +1,61 @@
 # Different Representations of a Number
 
-> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 11**  
-> Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
+> **Curriculum: Mathematics — Grade 1 · Quantity, Numbers, and Order · Lesson 11**
+> **Status:** Methodological Learning Brief awaiting editorial review; not an implemented lesson, screenplay, or Assessment Specification.
 
-**Навчальна мета:** Пов’язує кількість предметів, числовий запис і позначку на прямій.
+**Learning objective:** Link quantities, numerals, and number-line positions.
 
-**Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
+**Target audience:** Beginning mathematics learners, approximately ages 6–7. This age estimate is not an access restriction.
 
-**Target Skills:**
+## Target Skills
 
 - [Matching representations of a number](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/multipleRepresentations.data.ts)
 
-## Передумови
+## Prerequisites
 
-Базові поняття кількості та нуля; числовий запис 0–20; початкова числова пряма; розуміння десятка.
+Cardinality and zero, numerals 0–20, a basic number line, and the grouping of ten units.
 
-## Очікувані результати
+## Expected learning outcomes
 
-Після засвоєння матеріалу учень:
+After learning the material, the learner:
 
-- Співвідносить ту саму кількість із набором предметів, числовим записом і позначкою на прямій.
-- Упізнає число, показане через один десяток і кілька окремих одиниць у межах 20.
-- Переходить між різними поданнями числа, зберігаючи його значення.
-- Виявляє подання, яке не відповідає іншим за кількістю.
+- Match the same quantity across an object set, a written numeral, and a position on a number line.
+- Identify a number represented by one ten plus several additional units within twenty.
+- Convert between representations without changing the numerical value.
+- Identify a representation that disagrees with others about the quantity.
 
-## Математичний зміст
+## Mathematical content
 
-- Кількість можна подати словами, цифрами, групами предметів та точкою на числовій прямій.
-- Різні зовнішні форми одного числа означають те саме математичне значення.
-- Позиція на числовій прямій і конкретний набір предметів не повинні нав’язувати різні значення тому самому запису.
+- Numbers can be represented through spoken words, written numerals, object groups, and points on a number line.
+- These visually different representations preserve a single mathematical value.
+- A number-line position and a concrete set must agree in quantity with the corresponding numeral.
 
-## Обсяг і межі
+## Scope and boundaries
 
-У цьому модулі — тільки діапазон 0–20 і доступна модель «один десяток + одиниці». Повний Skill `math.numbers.multiple-representations` має ширший діапазон 1–3 рівнів: цей урок дає початкове охоплення, а не засвідчує повне mastery Skills у всіх контекстах.
+Keep the module within 0–20 and the model 'one ten plus ones'. The full runtime Skill covers a wider range across grades one through three; this lesson provides introductory exposure, not evidence of mastery in all contexts.
 
-## Типові хибні уявлення та ризики
+## Typical misconceptions and risks
 
-- Сприйняття двох різних груп предметів як різних чисел через їхній тип або розміщення.
-- Невідповідність між числом, числовою прямою та згрупованими одиницями.
-- Помилковий висновок, що одна модель замінює іншу лише за зовнішньою схожістю.
+- Treating differently shaped or arranged object collections as different numbers.
+- Inconsistent values between numerals, number-line positions, and grouped units.
+- Concluding that superficial visual similarity makes unrelated representations equivalent.
 
-## Ознаки досягнення навчальної мети
+## Indicators of learning objective attainment
 
-Це методичні орієнтири для майбутнього дизайну оцінювання, **не готові запитання, пороги балів або висновки про mastery**:
+These are **pedagogical guidelines for future assessment design**, not finalized questions, scoring thresholds, or mastery judgments.
 
-- Учень співвідносить щонайменше три різні математичні подання одного числа.
-- Пояснює, чому число не змінилося під час переходу між поданнями.
-- Знаходить і виправляє невідповідність у наборі подань.
+- Matches at least three distinct representations of the same number.
+- Explains why the number does not change when the representation changes.
+- Identifies and corrects an inconsistent representation among several alternatives.
 
-## Зв’язок із послідовністю навчання
+## Connection to learning sequence
 
-Підготовлено основу для модуля «Додавання та віднімання», де кількості та групи будуть перетворюватися на операції.
+This foundation supports the next module, Addition and Subtraction, where quantities and groups are related through operations.
 
-## Сценарій взаємодії (draft)
+## Interaction storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методичний опис вище залишається незмінним.
+[View the 6 storyboard sections](./Sections/README.md). The methodological Learning Brief remains authoritative and separate from the screenplay.
 
 ---
-[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Quantity, Numbers, and Order](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)
