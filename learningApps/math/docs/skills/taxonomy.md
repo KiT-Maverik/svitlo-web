@@ -112,19 +112,19 @@ Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.t
 
 Крок 5 відповідає повним п’ятіркам, тому 5, 10, 15 можна пов’язати з п’ятьма пальцями чи пучками предметів.
 
-##### Лічити десятками в межах 1000
+##### Counting in steps of 10
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy10.data.ts)
 
 У послідовності 230, 240, 250 змінюються десятки, а одиниці не додаються по одній; після 290 буде 300.
 
-##### Лічити сотнями в межах 1000
+##### Counting in steps of 100
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy100.data.ts)
 
 Перехід 400, 500, 600 демонструє приріст однієї сотні та збереження решти розрядної структури.
 
-#### Порядкова лічба
+#### Ordinal counting
 
 Skills: 1
 
@@ -132,13 +132,13 @@ Skills: 1
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/ordinal/ordinal.data.ts)
 
-##### Визначати порядковий номер об’єкта та розрізняти порядок і кількість
+##### Recognizing ordinal position
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/ordinal/skills/basicOrdinal.data.ts)
 
 У ряді з п’яти фігур третя позиція не означає кількість три: порядковий номер залежить від напряму відліку.
 
-#### Парність
+#### Even and odd numbers
 
 Skills: 1
 
@@ -146,13 +146,13 @@ Skills: 1
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/parity/parity.data.ts)
 
-##### Розрізняти парні й непарні числа через розбиття на пари
+##### Identifying even and odd numbers using pairs
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/parity/skills/evenOdd.data.ts)
 
 Для парної кількості можна скласти неперетинні пари без самотнього елемента; для непарної залишиться один.
 
-### Натуральні числа
+### Natural numbers
 
 Groups: 5 · Skills: 27
 
@@ -160,7 +160,7 @@ Code: [Code](../../src/data/skillsTaxonomy/numeration/numeration.data.ts)
 
 Визначає, як натуральні числа позначають кількість, як працює десяткова позиційна система та як числові записи порівнюють, розкладають і оцінюють.
 
-#### Числовий запис
+#### Numeral notation
 
 Skills: 4
 
@@ -168,31 +168,31 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/notation.data.ts)
 
-##### Розпізнавати та записувати цифри 0–9; відрізняти цифру від числа
+##### Digits 0–9 and the meaning of a digit
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/digits09.data.ts)
 
 Одна цифра є символом із набору 0–9, а число може потребувати кількох цифр: 12 не є новою цифрою.
 
-##### Читати, записувати й співвідносити з кількістю числа 0–20
+##### Reading, writing and matching numbers 0–20
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite20.data.ts)
 
 Записи «сімнадцять», 17 і набір із 17 предметів означають ту саму кількість; нуль також має власний запис.
 
-##### Читати й записувати числа в межах 100
+##### Reading and writing numbers to 100
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite100.data.ts)
 
 Перехід від 9 до 10 вимагає двох позицій; у 46 цифри 4 та 6 позначають різні розряди.
 
-##### Читати й записувати трицифрові числа, включно з нулями всередині запису
+##### Reading and writing three-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite1000.data.ts)
 
 У 305 відсутні десятки, але позиція нуля необхідна, щоб запис не означав 35.
 
-#### Розрядність
+#### Place value
 
 Skills: 11
 
@@ -200,19 +200,19 @@ Skills: 11
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/placeValue.data.ts)
 
-##### Представляти число різними рівносильними розбиттями, не лише за стандартними розрядами (146 = 130 + 16)
+##### Flexible number partitioning
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/flexiblePartition.data.ts)
 
 Один результат допускає нестандартні розклади: 146 можна скласти як 130 + 16 або 100 + 46 без зміни значення.
 
-##### Визначати загальну кількість повних десятків чи сотень у трицифровому числі
+##### Total tens and hundreds in a number
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/totalTensInNumber.data.ts)
 
 У числі 348 міститься 34 повні десятки, а не лише 4 десятки в десятковому розряді.
 
-##### Групувати десять одиниць в один десяток і виконувати зворотне розгрупування
+##### Grouping and ungrouping ten ones
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.data.ts)
 
