@@ -11,10 +11,10 @@ An audience-independent catalog of independently assessable competencies for mai
 ## SUMMARY
 
 Domains: 13
-Groups: 41
-Skills: 157
+Groups: 42
+Skills: 169
 
-Code files: 0/13 Domains · 0/41 Groups · 0/157 Skills
+Code files: 0/13 Domains · 0/42 Groups · 0/169 Skills
 
 ## DOMAINS
 
@@ -28,7 +28,7 @@ Personal health decisions rely on interpreting bodily changes, credible evidence
 
 #### Health and Risk
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -40,6 +40,12 @@ Health depends on interacting physical, psychological, social, and environmental
 
 Distinguish a usual bodily variation from a new or worsening change that deserves monitoring or advice, without treating a single symptom as a definitive diagnosis.
 
+##### Interpret basic health measurements
+
+[Not implemented](#)
+
+Relate observations such as temperature, pulse, or blood pressure to measurement conditions and reference context without making a diagnosis from one reading.
+
 ##### Identify factors affecting health
 
 [Not implemented](#)
@@ -50,13 +56,13 @@ Connect habits, exposures, living conditions, heredity, and access to services w
 
 [Not implemented](#)
 
-Consider likelihood, severity, uncertainty, and protective factors when judging a choice or exposure; distinguish population risk from an individual's condition.
+Evaluate the likelihood and potential consequences of longer-term health outcomes arising from exposures, behaviours or protective measures, accounting for uncertainty without converting population-level estimates into diagnoses.
 
-##### Choose preventive actions
+##### Choose preventive health measures
 
 [Not implemented](#)
 
-Match a preventable hazard to an appropriate evidence-based measure, distinguishing prevention from treatment after a problem occurs.
+Match health risks to evidence-based prevention such as vaccination, screening advice or protective daily habits, distinguishing the prevention of illness from first aid, clinical treatment and general accident avoidance.
 
 #### Using Healthcare
 
@@ -92,11 +98,11 @@ Recognize the roles of understandable information, consent, alternatives, privac
 
 #### Health Information and Medicines
 
-Skills: 4
+Skills: 3
 
 [Not implemented](#)
 
-Online claims, labels, treatments, and measurements require critical appraisal; self-care does not replace professional evaluation when it is needed.
+Claims about prevention and treatment should be evaluated against trustworthy evidence, and medicines require label-aware, safe handling; clinical observations and basic measurements are classified in Health and Risk.
 
 ##### Evaluate health information sources
 
@@ -109,12 +115,6 @@ Assess provenance, professional consensus, supporting evidence, conflicts of int
 [Not implemented](#)
 
 Identify miracle-cure promises, unsupported causal claims, and advertising disguised as medical advice, including claims about supplements.
-
-##### Interpret basic health measurements
-
-[Not implemented](#)
-
-Relate observations such as temperature, pulse, or blood pressure to measurement conditions and reference context without making a diagnosis from one reading.
 
 ##### Use medicines safely
 
@@ -228,7 +228,7 @@ Distinguish routine removal of dirt from targeted disinfection and avoid unsafe 
 
 ### Nutrition and Food Safety
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -248,11 +248,11 @@ Food supplies energy and essential nutrients; dietary adequacy depends on patter
 
 Consider variety, food groups, nutrient adequacy, and individual needs without assuming one fixed menu fits everyone.
 
-##### Nutrients and their roles
+##### Understand the roles of nutrients
 
 [Not implemented](#)
 
-Relate proteins, fats, carbohydrates, vitamins, minerals, and fibre to broad bodily functions without duplicating biochemical detail.
+Relate macronutrients, vitamins, minerals and fibre to their major physiological roles and distinguish nutritional adequacy from the amount of food alone, without reproducing biochemical mechanisms.
 
 ##### Hydration
 
@@ -260,15 +260,15 @@ Relate proteins, fats, carbohydrates, vitamins, minerals, and fibre to broad bod
 
 Recognize fluid needs and common signs of insufficient intake while accounting for activity, climate, and health circumstances.
 
-##### Food energy balance
+##### Interpret dietary energy balance
 
 [Not implemented](#)
 
-Distinguish energy intake and expenditure from nutritional quality and reject simplistic weight-based judgments about health.
+Relate energy intake to expenditure and changing individual needs while distinguishing energy balance from dietary quality and avoiding unsupported conclusions about a person's health from body size.
 
 #### Food Choices and Information
 
-Skills: 3
+Skills: 4
 
 [Not implemented](#)
 
@@ -286,11 +286,17 @@ Use ingredient lists, nutritional information, serving quantities, and date mark
 
 Distinguish evidence-based nutritional advice from detox claims, extreme restrictions, and unsupported promises of rapid results.
 
-##### Account for food allergies and restrictions
+##### Manage food allergy risks
 
 [Not implemented](#)
 
-Identify relevant ingredients, cross-contact warnings, and the need for safe alternatives or professional dietary guidance.
+Identify allergens and cross-contact warnings, verify ingredients, take appropriate avoidance precautions and understand when an allergic reaction requires urgent care.
+
+##### Adapt food choices to dietary needs
+
+[Not implemented](#)
+
+Select suitable alternatives for medical, nutritional, ethical or cultural dietary requirements, distinguishing individual preference from a potentially dangerous allergen exposure.
 
 #### Foodborne Hazards
 
@@ -300,17 +306,17 @@ Skills: 5
 
 Food safety depends on separation, temperature, handling, and storage; appearance or smell alone cannot always establish whether food is safe.
 
-##### Hygienic food preparation
+##### Maintain hygiene during food preparation
 
 [Not implemented](#)
 
-Prevent transfer of contaminants from hands, tools, raw foods, and work surfaces to ready-to-eat foods.
+Maintain clean hands, utensils and work surfaces while preparing meals, limiting microbial contamination without subsuming the distinct task of keeping raw foods separate from ready-to-eat foods.
 
-##### Separation of raw and ready-to-eat foods
+##### Prevent raw-to-ready food cross-contamination
 
 [Not implemented](#)
 
-Prevent cross-contamination through appropriate placement, equipment, and handling during storage and preparation.
+Keep raw animal products and their juices from contaminating ready-to-eat food through separate equipment, storage and handling; this concerns foodborne pathogens rather than allergen cross-contact.
 
 ##### Safe cooking and reheating
 
@@ -516,7 +522,7 @@ Offer calm, practical, non-intrusive support, immediate needs assessment, and co
 
 ### Personal Boundaries and Violence Prevention
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -582,17 +588,23 @@ Account for authority, dependency, age, or financial power when judging whether 
 
 #### Violence and Protection
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
 Violence can be physical, psychological, sexual, economic, or digital; protection and reporting should avoid exposing affected people to retaliation.
 
-##### Recognize bullying and harassment
+##### Recognize bullying
 
 [Not implemented](#)
 
-Distinguish repeated intimidation, targeted harassment, discrimination, and ordinary disagreement by conduct and impact.
+Identify a pattern of harmful repeated conduct involving a power imbalance, distinguishing bullying from a mutual disagreement or an isolated conflict.
+
+##### Recognize harassment
+
+[Not implemented](#)
+
+Identify intimidating, degrading, discriminatory or otherwise unwanted targeted conduct, which may be serious even without a repeated bullying pattern.
 
 ##### Respond safely to bullying
 
@@ -640,11 +652,11 @@ Changes through puberty differ in timing and expression; normal variation and sy
 
 Distinguish common physical changes and variations in timing from unsupported claims about a single correct developmental pattern.
 
-##### Menstrual health
+##### Manage menstrual health
 
 [Not implemented](#)
 
-Understand menstrual patterns, hygiene, and warning signs that warrant clinical advice rather than stigma or secrecy.
+Understand menstrual variation, choose appropriate hygiene and comfort measures, track relevant changes and recognize symptoms that merit clinical attention without shame or unsupported assumptions.
 
 ##### Recognize reproductive health concerns
 
@@ -652,13 +664,13 @@ Understand menstrual patterns, hygiene, and warning signs that warrant clinical 
 
 Notice pain, abnormal symptoms, or other changes that may require confidential professional consultation without self-diagnosis.
 
-#### Sexual Health Protection
+#### Sexual and Reproductive Healthcare
 
 Skills: 4
 
 [Not implemented](#)
 
-Risk reduction requires reliable information about transmission, pregnancy prevention, consent, and suitable care, without prescribing individual sexual choices.
+Risk reduction and access to care include prevention of sexually transmitted infections, contraception, pregnancy-related care and confidential advice. These are health-service competencies, not a prescribed set of personal choices.
 
 ##### Prevent sexually transmitted infections
 
@@ -758,7 +770,7 @@ Identify trusted people and health or addiction services, including urgent assis
 
 ### Everyday and Occupational Safety
 
-Groups: 4 · Skills: 16
+Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
@@ -782,7 +794,7 @@ Notice physical, chemical, electrical, and situational dangers without assuming 
 
 [Not implemented](#)
 
-Consider who may be exposed, how an incident could occur, severity, and the reliability of existing safeguards.
+Evaluate how an identifiable hazard could cause immediate accidental injury, who may be exposed and how reliably existing controls reduce that danger; chronic disease-risk estimation belongs to Health and Risk.
 
 ##### Choose protective measures
 
@@ -834,13 +846,33 @@ Recognize scalding and contact-burn hazards in kitchens, bathrooms, and heating 
 
 Identify risks from confined spaces, cords, bags, and unsafe storage for vulnerable people.
 
-#### Electricity, Fire and Gas
+#### Personal Safety in Public Places
 
-Skills: 4
+Skills: 2
 
 [Not implemented](#)
 
-Energy systems require distinct preventive actions; unsafe interventions can put bystanders and would-be helpers at risk.
+Being approached by unknown people or separated from familiar companions calls for independent judgement about safe distance, exit options and trustworthy assistance, without assuming every unfamiliar person is dangerous.
+
+##### Respond to unsafe approaches in public
+
+[Not implemented](#)
+
+Recognize unwanted invitations, requests for secrecy, pressure to leave a safe location or other suspicious approaches; maintain distance, decline unsafe requests and seek support from an appropriate trusted person or service.
+
+##### Seek help when lost or separated
+
+[Not implemented](#)
+
+Use an appropriate safe location, identifiable helpers and reliable contact channels when separated from companions; avoid sharing unnecessary personal information or following an unverified stranger.
+
+#### Electricity, Fire and Gas
+
+Skills: 5
+
+[Not implemented](#)
+
+Electrical hazards, ignition and fire, fuel-gas leaks, carbon monoxide exposure and heating equipment require different prevention and emergency responses; intervening in faulty systems can endanger bystanders.
 
 ##### Electrical safety
 
@@ -854,17 +886,23 @@ Recognize damaged wiring, water-related hazards, overloaded circuits, and the li
 
 Identify ignition sources, flammable materials, and preventive practices appropriate to the setting.
 
-##### Gas and carbon monoxide safety
+##### Gas leak safety
 
 [Not implemented](#)
 
-Distinguish gas leakage and toxic combustion exposure as urgent threats that call for safe evacuation and professional response.
+Recognize suspected leakage of combustible fuel gas and the risk of fire or explosion; withdraw from danger, seek appropriate assistance and avoid unsafe attempts to inspect or repair the system.
 
 ##### Safe use of heating equipment
 
 [Not implemented](#)
 
 Account for ventilation, clearance, stable installation, and manufacturer instructions rather than improvised operation.
+
+##### Carbon monoxide safety
+
+[Not implemented](#)
+
+Understand that carbon monoxide from combustion may be invisible and odorless, recognize alarm or exposure concerns, and prioritize getting to safety and obtaining emergency evaluation rather than relying on smell.
 
 #### Tools and Workplaces
 
@@ -894,7 +932,7 @@ Respect guards, operating limits, maintenance restrictions, and stop conditions 
 
 ### Transport, Water and Outdoor Safety
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -944,7 +982,7 @@ Drowning can occur quickly and silently; preventing entry into danger and using 
 
 [Not implemented](#)
 
-Consider depth, currents, temperature, supervision, and local warnings rather than relying only on the apparent calmness of water.
+Assess water-specific conditions such as depth, currents, temperature, supervision, safe access and local warnings before entering; this applies general hazard judgment to an environment with distinct drowning risks.
 
 ##### Use water-safety measures
 
@@ -960,17 +998,23 @@ Call for help and use safe reach-or-throw assistance where appropriate without p
 
 #### Weather and Nature Hazards
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
 Outdoor risks vary with temperature, sunlight, storms, terrain, and wildlife; adaptation depends on current conditions and local alerts.
 
-##### Prevent heat and sun exposure injury
+##### Prevent heat-related illness
 
 [Not implemented](#)
 
-Use shade, hydration, clothing, activity adjustments, and recognition of concerning symptoms during high temperatures.
+Adjust clothing, activity, shade, cooling and fluids to temperature and exertion to reduce overheating; distinguish prevention from first aid after heat illness begins.
+
+##### Protect against harmful UV exposure
+
+[Not implemented](#)
+
+Choose suitable shade, clothing, eye protection and sunscreen practices according to ultraviolet exposure, recognizing that sunburn and eye damage do not depend on high air temperature.
 
 ##### Prevent cold exposure injury
 
@@ -998,7 +1042,7 @@ Consider route reliability, weather change, communications, and the limits of pe
 
 ### Emergencies and Civil Protection
 
-Groups: 4 · Skills: 15
+Groups: 4 · Skills: 16
 
 [Not implemented](#)
 
@@ -1034,7 +1078,7 @@ Match water, medicine, documents, lighting, and other essentials to plausible di
 
 [Not implemented](#)
 
-Communicate location, type of danger, people affected, and urgent changes clearly while following dispatcher instructions.
+Communicate location, type of emergency, persons affected and critical changes clearly, including during medical first aid, while following dispatcher instructions and ensuring the caller's own safety.
 
 #### Evacuation and Shelter
 
@@ -1076,11 +1120,11 @@ Floods, earthquakes, chemical releases, and radiation incidents create different
 
 Avoid floodwater and unstable crossings, recognize sudden changes in water levels, and follow verified evacuation guidance.
 
-##### Earthquake safety
+##### Respond safely to an earthquake
 
 [Not implemented](#)
 
-Protect against falling objects and secondary hazards, and reassess structural safety before re-entry.
+Recognize immediate hazards from shaking and falling objects, use appropriate protective actions and consider aftershocks and structural damage before moving or re-entering unsafe spaces.
 
 ##### Chemical incident protection
 
@@ -1096,7 +1140,7 @@ Distinguish external radiation exposure and contamination, following official in
 
 #### Conflict-Related Dangers
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1107,6 +1151,12 @@ Armed conflict can produce immediate threats and leave dangerous remnants; civil
 [Not implemented](#)
 
 Use authoritative warnings and preidentified protective locations, accounting for obstacles and people needing assistance.
+
+##### Respond to an immediate attack
+
+[Not implemented](#)
+
+Recognize the need for immediate protection if an explosion, gunfire or other attack occurs without warning; seek the safest available cover or shelter and follow verified local civil-protection guidance when feasible.
 
 ##### Recognize explosive ordnance risk
 
@@ -1128,7 +1178,7 @@ Avoid compromised structures, debris, unstable utilities, and unauthorized entry
 
 ### First Aid and Immediate Response
 
-Groups: 5 · Skills: 20
+Groups: 5 · Skills: 25
 
 [Not implemented](#)
 
@@ -1140,7 +1190,7 @@ Skills: 4
 
 [Not implemented](#)
 
-Prioritization starts with responder safety, recognition of urgent conditions, clear communication, and reassessment as circumstances change.
+Initial response begins with rescuer safety, recognition of urgent changes in responsiveness or breathing, and continued observation. Calling for help uses the shared competency in Emergencies and Civil Protection rather than a duplicate Skill.
 
 ##### Assess scene safety before helping
 
@@ -1160,11 +1210,11 @@ Check whether a person responds and recognize when reduced responsiveness requir
 
 Recognize absent or abnormal breathing as a medical emergency without delaying the call for help.
 
-##### Activate emergency assistance
+##### Care for an unresponsive person who is breathing normally
 
 [Not implemented](#)
 
-Give concise location and condition information, use dispatcher guidance, and coordinate nearby helpers without delaying urgent action.
+Provide appropriate positioning and continuous monitoring while arranging urgent help for an unresponsive person who breathes normally; account for possible trauma and avoid unnecessary movement.
 
 #### Basic Life Support
 
@@ -1232,7 +1282,7 @@ Identify concerning mechanisms or symptoms and avoid unnecessary movement while 
 
 #### Medical Emergencies
 
-Skills: 5
+Skills: 8
 
 [Not implemented](#)
 
@@ -1250,6 +1300,12 @@ Use sudden neurological changes as reasons for urgent emergency response, even i
 
 Identify concerning chest discomfort and associated symptoms as possible medical emergencies requiring timely assistance.
 
+##### Respond to severe breathing difficulty
+
+[Not implemented](#)
+
+Recognize major difficulty breathing, severe respiratory distress or rapidly worsening symptoms as reasons to activate emergency assistance and support a safe position while awaiting qualified care.
+
 ##### Respond to severe allergic reaction
 
 [Not implemented](#)
@@ -1262,25 +1318,43 @@ Recognize possible anaphylaxis and the need for rapid emergency help and appropr
 
 Protect the person from surrounding injury, avoid harmful restraint, and recognize conditions requiring urgent assistance.
 
+##### Respond to suspected hypoglycaemia
+
+[Not implemented](#)
+
+Recognize possible low blood glucose and distinguish safe assistance for a person who is fully alert and can swallow from the need for urgent help when consciousness or swallowing is impaired.
+
 ##### Respond to suspected poisoning
 
 [Not implemented](#)
 
-Avoid unsafe home remedies or induced vomiting, minimize further exposure when safe, and obtain poison or emergency-service guidance.
+Identify possible toxic exposures, prevent further exposure without risking the helper and seek poison-service or emergency guidance; do not induce vomiting or improvise remedies. Opioid-specific response is addressed separately.
+
+##### Respond to suspected opioid overdose
+
+[Not implemented](#)
+
+Recognize dangerous respiratory depression or unresponsiveness following possible opioid exposure, activate emergency services and understand the role of naloxone and basic life support where available and within training.
 
 #### Environmental and Acute Injuries
 
-Skills: 3
+Skills: 5
 
 [Not implemented](#)
 
 Temperature, substances, and water exposure can rapidly worsen an individual's condition and demand hazard-specific first aid.
 
-##### First aid for burns
+##### First aid for thermal burns
 
 [Not implemented](#)
 
-Stop ongoing exposure when safe, provide appropriate cooling for thermal burns, and recognize serious injuries needing urgent care.
+End thermal exposure when safe, cool a heat burn appropriately and recognize features that require urgent medical assessment; chemical injuries require different hazard-specific precautions.
+
+##### First aid for chemical exposure
+
+[Not implemented](#)
+
+Prioritize rescuer protection, interruption of exposure when safe and appropriate professional or poison-service instructions for skin, eye or inhalation contact; avoid improvised neutralization or hazardous handling.
 
 ##### Respond to heat illness
 
@@ -1293,6 +1367,12 @@ Distinguish concerning heat-related symptoms and prioritize safe cooling and esc
 [Not implemented](#)
 
 Limit further cooling, handle an affected person carefully, and recognize that severe cold exposure needs urgent assessment.
+
+##### Provide first aid after drowning
+
+[Not implemented](#)
+
+Recognize the special urgency of impaired breathing after submersion, arrange emergency response and apply appropriate current resuscitation and monitoring guidance within training; do not delay vital assistance for nonessential actions.
 
 ### Digital and Consumer Safety
 
@@ -1352,7 +1432,7 @@ Identify advance-fee demands, fake prizes, fraudulent marketplaces, and requests
 
 [Not implemented](#)
 
-Recognize artificial scarcity, pressure to act immediately, and hidden conditions as signals to slow down and verify.
+When pressured by an urgent, secretive or fear-based offer, pause the requested action, decline unsafe disclosure or payment, seek independent verification through a known channel and disengage if the pressure continues.
 
 ##### Respond after suspected fraud
 
@@ -1368,11 +1448,11 @@ Skills: 4
 
 Digital abuse can extend beyond the screen; protective responses should prioritize personal safety, consent, and trustworthy reporting channels.
 
-##### Recognize cyberbullying and online harassment
+##### Recognize technology-facilitated harassment
 
 [Not implemented](#)
 
-Identify repeated targeting, threats, unwanted exposure, and stalking across messages, platforms, and shared content.
+Identify the distinctive risks of persistent unwanted online contact, coordinated targeting, cross-platform stalking and harmful redistribution of content, including online forms of bullying, without duplicating the general recognition of harassment.
 
 ##### Protect against online sexual exploitation
 
