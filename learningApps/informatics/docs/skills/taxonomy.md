@@ -886,326 +886,324 @@ Explain why a known probability does not determine the outcome of one trial and 
 [Not implemented](#)
 
 Introduce random selection from an explicitly defined outcome set into a digital simulation and distinguish it from a predetermined scenario. Variable outcomes do not imply equal likelihoods.
-### Програмна архітектура
+### Software Architecture
 
 Groups: 2 · Skills: 21
 
 [Not implemented](#)
 
-Пояснює структуру програми через об’єкти, контракти, відповідальності та залежності. Окремий домен патернів містить типові рішення щодо створення, композиції й поведінки об’єктів.
+Explains program structure through objects, contracts, responsibilities, and dependencies. Design patterns form a separate domain of reusable solutions to object creation, composition, and behavior.
 
-#### Об’єктна модель
+#### Object Model
 
 Skills: 13
 
 [Not implemented](#)
 
-Організація програмної поведінки навколо об’єктів: стан, методи, класи, абстракція, інкапсуляція та зв’язки між типами. Опис окремого об’єкта й пояснення відношень між класами не є однією навичкою.
+Organizing program behavior around objects: state, methods, classes, abstraction, encapsulation, and relationships between types. Describing an individual object and explaining class relationships are distinct abilities.
 
-##### Виділяти стан і поведінку об’єкта
-
-[Not implemented](#)
-
-Формувати ментальну модель реального або уявного об’єкта через його стан (які характеристики він має та як вони можуть змінюватися) і поведінку (що він може робити або які дії з ним можливі). Наприклад, автомобіль має швидкість і запас пального, може прискорюватися та гальмувати. Це концептуальний спосіб опису об’єкта; він не потребує визначення програмних властивостей, методів або написання коду.
-
-##### Пояснювати поняття класу
+##### Identify an Object's State and Behavior
 
 [Not implemented](#)
 
-Розглядати клас як визначення структури та доступних операцій для створюваних за ним об’єктів, наприклад опис властивостей і методів умовного «Лічильника». Сам опис класу не є окремим екземпляром із власним поточним значенням.
+Form a mental model of a real or imaginary object in terms of state (its characteristics and how they may change) and behavior (what it can do or what actions are possible). For example, a car has speed and fuel level and can accelerate or brake. This conceptual description does not require defining software properties and methods or writing code.
 
-##### Розрізняти клас та об’єкт
-
-[Not implemented](#)
-
-Порівнювати визначення типового шаблону з конкретними екземплярами, що мають власні значення: один клас «Робот» може породити кількох роботів з різними координатами. Зміна стану одного екземпляра не зобов’язана змінювати інші.
-
-##### Застосовувати абстракцію об’єкта
+##### Explain the Concept of a Class
 
 [Not implemented](#)
 
-Виділяти мінімальний набір операцій або властивостей, важливих користувачу компонента, приховуючи деталі, які не впливають на цей контракт. Наприклад, виклик «переміститися» може не розкривати внутрішню логіку двигунів робота.
+Understand a class as a definition of the structure and available operations of objects instantiated from it, such as the properties and methods of a hypothetical Counter. The class definition itself is not an instance with its own current count.
 
-##### Пояснювати інкапсуляцію
-
-[Not implemented](#)
-
-Показувати, як об’єкт обмежує прямий доступ до внутрішнього стану й пропонує керовані операції, що зберігають його правила. Наприклад, банківський рахунок змінюють методом списання, який перевіряє допустимість операції.
-
-##### Пояснювати спадкування
+##### Distinguish a Class from an Object
 
 [Not implemented](#)
 
-Пояснювати відношення між базовим і похідним типами, коли похідний тип успадковує визначені операції чи властивості та може спеціалізувати їх. Спадкування описує відношення типів «є різновидом», а не включення частини до цілого.
+Compare a type's template with particular instances holding their own values: one Robot class can produce several robots with different coordinates. A state change in one instance need not affect the others.
 
-##### Пояснювати поліморфізм
-
-[Not implemented](#)
-
-Розуміти, як різні реалізації виконують спільно очікувану операцію через однаковий контракт, наприклад метод `draw()` для кола і прямокутника. Виклик залишається узгодженим, хоча конкретна поведінка залежить від реалізації.
-
-##### Моделювати композицію об’єктів
+##### Apply Object Abstraction
 
 [Not implemented](#)
 
-Будувати систему з компонентів, кожен з яких має власну роль, наприклад робот складається з контролера, датчиків і виконавців. Композиція описує відношення «має частину», на відміну від спадкування «є різновидом».
+Identify the minimal set of operations or properties relevant to a component's user while hiding details that do not affect the contract. For example, a 'move' operation need not expose a robot's motor-control logic.
 
-##### Пояснювати структуру програмного об’єкта
-
-[Not implemented](#)
-
-Аналізувати будову вже заданого програмного об’єкта: визначати його ідентичність, властивості, які зберігають значення стану, та методи, які задають доступні операції. Наприклад, два екземпляри класу «Лічильник» можуть мати однаковий метод increment(), але різні значення властивості count. Ця навичка стосується розуміння готової програмної структури, а не самостійного добору її складових.
-
-##### Пояснювати властивість об’єкта
+##### Explain Encapsulation
 
 [Not implemented](#)
 
-Розрізняти атрибут як іменоване значення стану та метод як доступну дію, наприклад координата робота і команда переміститися.
+Show how an object restricts direct access to internal state and provides controlled operations that preserve its rules. For example, a bank account changes through a withdrawal method that validates the transaction.
 
-##### Пояснювати метод об’єкта
-
-[Not implemented](#)
-
-Показувати, як виклик дії об’єкта читає або змінює його стан; сам опис методу не означає, що дія вже виконалась.
-
-##### Моделювати предметну сутність програмним об’єктом
+##### Explain Inheritance
 
 [Not implemented](#)
 
-Самостійно проєктувати програмне представлення реальної або уявної сутності відповідно до конкретної задачі: обирати потрібні властивості та методи, відкидати несуттєві деталі й пояснювати свій вибір. Наприклад, для сервісу прокату автомобілів моделювати доступність автомобіля та дії видачі й повернення, а не його поточну швидкість. Результатом може бути схема, псевдокод або код моделі; самостійний добір структури відрізняє цю навичку від аналізу готового об’єкта.
+Explain relationships between base and derived types, where a derived type inherits defined properties or operations and may specialize them. Inheritance denotes an 'is a kind of' relationship, not a 'contains a part' relationship.
 
-##### Розрізняти реальний об’єкт та його абстрактну модель
+##### Explain Polymorphism
 
 [Not implemented](#)
 
-Пояснювати, що програмний об’єкт представляє лише вибрані характеристики предмета або поняття; вигадана сутність теж може мати корисну об’єктну модель.
+Explain how different implementations fulfill a shared operation under the same contract, such as `draw()` for a circle and rectangle. The call remains consistent although concrete behavior depends on the implementation.
 
-#### Принципи проєктування
+##### Model Object Composition
+
+[Not implemented](#)
+
+Construct a system from components with distinct roles, such as a robot comprising a controller, sensors, and actuators. Composition is a 'has a part' relationship, unlike inheritance's 'is a kind of' relationship.
+
+##### Explain the Structure of a Software Object
+
+[Not implemented](#)
+
+Analyze a given object's identity, the properties storing state values, and methods defining its operations. For example, two Counter instances can share `increment()` yet have different `count` values. This concerns understanding an existing software structure rather than independently choosing its parts.
+
+##### Explain an Object Property
+
+[Not implemented](#)
+
+Distinguish an attribute as a named state value from a method as an available action, such as a robot's coordinate versus its movement command.
+
+##### Explain an Object Method
+
+[Not implemented](#)
+
+Show how invoking an object operation reads or changes its state; a method definition does not mean the operation has already run.
+
+##### Model a Domain Entity as a Software Object
+
+[Not implemented](#)
+
+Independently design a software representation of a real or imaginary entity for a specific task by selecting relevant properties and methods, excluding unnecessary detail, and justifying those choices. For a car-rental service, model availability and renting/returning rather than current speed. The result can be a diagram, pseudocode, or code; designing the structure differs from analyzing an existing object.
+
+##### Distinguish a Real Object from Its Abstract Model
+
+[Not implemented](#)
+
+Explain that a software object represents only selected characteristics of a thing or concept; a fictional entity can also have a useful object model.
+
+#### Design Principles
 
 Skills: 8
 
 [Not implemented](#)
 
-Критерії якості структури програм: уникнення дублювання та непотрібної складності, розподіл відповідальностей, розширюваність і керування залежностями. Кожен принцип відповідає на інше запитання про можливу зміну програми.
+Quality criteria for software structure: limiting duplication and unnecessary complexity, separating responsibilities, enabling extension, and managing dependencies. Each principle addresses a different reason why a program may need to change.
 
-##### Виявляти зайве дублювання (DRY)
-
-[Not implemented](#)
-
-Знаходити декілька місць, де повторюється одна й та сама логіка або правило знання, через що виправлення доводиться відтворювати окремо. Схожі рядки коду не завжди є дублюванням, якщо вони представляють різні незалежні правила.
-
-##### Спрощувати зайву складність (KISS)
+##### Identify Unnecessary Duplication (DRY)
 
 [Not implemented](#)
 
-Зіставляти рішення з реальними вимогами й усувати механізми, які нічого не додають до потрібної поведінки. Простота означає зменшення необґрунтованої складності, а не ігнорування важливих умов або коректності.
+Find repeated logic or a repeated rule in several locations that requires fixes to be replicated. Similar-looking lines are not necessarily duplication when they represent independent rules.
 
-##### Відкладати необов’язкові можливості (YAGNI)
-
-[Not implemented](#)
-
-Відрізняти функціональність, що має підтверджену поточну потребу, від лише уявного майбутнього сценарію та не будувати останній завчасно. На відміну від KISS, питання тут не в складності реалізації, а в необхідності самої можливості.
-
-##### Виділяти одну відповідальність (SRP)
+##### Reduce Unnecessary Complexity (KISS)
 
 [Not implemented](#)
 
-Пояснювати, чому модуль варто організовувати довкола однієї узгодженої причини змін, а не кількох незалежних потреб різних учасників. Один клас може мати багато методів, якщо всі обслуговують ту саму відповідальність.
+Compare a solution with actual requirements and remove mechanisms that add nothing to needed behavior. Simplicity means reducing unjustified complexity, not ignoring important constraints or correctness.
 
-##### Розширювати поведінку без зміни ядра (OCP)
-
-[Not implemented](#)
-
-Розпізнавати точки розширення, що дозволяють додати новий варіант реалізації через контракт без переписування перевіреної загальної логіки. Це прагнення до стабільного ядра, а не абсолютна заборона змінювати будь-який існуючий код.
-
-##### Перевіряти замінність реалізацій (LSP)
+##### Defer Unnecessary Features (YAGNI)
 
 [Not implemented](#)
 
-Виявляти, коли підтип або нова реалізація порушує очікувані передумови, результати чи інваріанти спільного контракту. Наприклад, заміна звичайного сховища на «лише для читання» може зламати клієнта, який обґрунтовано викликає запис.
+Distinguish functionality needed now from a merely imagined future scenario and avoid building the latter prematurely. Unlike KISS, the question is whether the feature is needed, not how complex its implementation is.
 
-##### Виділяти вузький інтерфейс (ISP)
-
-[Not implemented](#)
-
-Розподіляти великий контракт на окремі ролі, щоб споживач залежав тільки від потрібних йому операцій. Наприклад, пристрій для перегляду не має бути зобов’язаний реалізувати редагування чи друк.
-
-##### Проєктувати залежності від контракту (DIP)
+##### Isolate a Single Responsibility (SRP)
 
 [Not implemented](#)
 
-Відділяти бізнес-правило від конкретного способу доступу до даних через інтерфейс, який допускає кілька реалізацій. Високорівнева логіка отримує потрібну залежність ззовні, а не створює всередині жорстко заданий сервіс.
+Explain why a module should be organized around one coherent reason to change rather than independent needs of different stakeholders. A class can have many methods if they all support that responsibility.
 
-### Патерни проєктування
+##### Extend Behavior Without Modifying the Core (OCP)
+
+[Not implemented](#)
+
+Identify extension points that allow a new implementation through a contract without rewriting tested shared logic. A stable core is a goal, not an absolute prohibition on changing existing code.
+
+##### Verify Substitutability (LSP)
+
+[Not implemented](#)
+
+Identify where a subtype or new implementation violates the expected preconditions, outcomes, or invariants of a shared contract. For example, replacing ordinary storage with read-only storage can break a client legitimately attempting a write.
+
+##### Separate Narrow Interfaces (ISP)
+
+[Not implemented](#)
+
+Split a large contract into role-specific interfaces so consumers depend only on needed operations. A read-only viewing device should not be required to implement editing or printing.
+
+##### Design Dependencies on Contracts (DIP)
+
+[Not implemented](#)
+
+Separate business rules from concrete data-access mechanisms through an interface admitting multiple implementations. High-level logic receives dependencies from outside instead of instantiating a fixed service internally.
+### Design Patterns
 
 Groups: 3 · Skills: 23
 
 [Not implemented](#)
 
-Класичні патерни Gang of Four утворюють 23 відтворювані структури для типових задач проєктування об’єктів. Три родини відрізняються створенням екземплярів, поєднанням компонентів і керуванням взаємодіями; їхня наявність не означає, що кожну задачу слід ускладнювати патерном.
+The classic Gang of Four catalog describes 23 reusable structures for common object-design problems. Its three families focus on instance creation, component composition, and interactions. The existence of a pattern does not mean every problem should be made more complex to use one.
 
-#### Породжувальні
+#### Creational
 
 Skills: 5
 
 [Not implemented](#)
 
-П’ять підходів до конструювання екземплярів і сімейств об’єктів, що відокремлюють логіку створення від використання.
+Five approaches to constructing instances and object families that separate creation logic from usage.
 
 ##### Factory Method
 
 [Not implemented](#)
 
-Створення продукту доручається перевизначуваному фабричному методу, щоб клієнт працював зі спільним контрактом, не знаючи конкретного класу.
+Delegate product instantiation to an overridable factory method so clients use a shared contract without knowing the concrete class.
 
 ##### Abstract Factory
 
 [Not implemented](#)
 
-Одна фабрика надає узгоджене сімейство взаємопов’язаних продуктів, наприклад елементи інтерфейсу певної платформи, приховуючи конкретні типи.
+Use one factory to supply a compatible family of related products, such as interface elements for a particular platform, while hiding concrete types.
 
 ##### Builder
 
 [Not implemented](#)
 
-Складний об’єкт збирається поетапно через окремого будівельника, а порядок кроків можна повторювати для різних результатів.
+Construct a complex object step by step through a separate builder, with sequences of steps reusable for different results.
 
 ##### Prototype
 
 [Not implemented](#)
 
-Новий об’єкт створюється з налаштованого зразка копіюванням; враховуються спільні вкладені дані та ідентичність результату.
+Create a new object by copying a configured exemplar, considering shared nested data and the new object's identity.
 
 ##### Singleton
 
 [Not implemented](#)
 
-Забезпечується одна спільна інстанція в певній області та контроль доступу до неї, водночас розуміються ризики прихованого глобального стану.
+Maintain one shared instance within a defined scope and control access to it while recognizing the risks of hidden global state.
 
-#### Структурні
+#### Structural
 
 Skills: 7
 
 [Not implemented](#)
 
-Сім способів поєднати компоненти через адаптацію, обгортання, вкладення, посередника або спільний стан.
+Seven methods of combining components through adaptation, wrapping, nesting, intermediaries, or shared state.
 
 ##### Adapter
 
 [Not implemented](#)
 
-Перехідник перетворює очікуваний клієнтом інтерфейс на інтерфейс уже існуючого компонента, не переписуючи сам компонент.
+Translate the interface expected by a client into that of an existing component without rewriting that component.
 
 ##### Bridge
 
 [Not implemented](#)
 
-Абстракцію та реалізацію розділяють на дві незалежні ієрархії, щоб кожен вимір міг змінюватися без комбінаційного вибуху класів.
+Separate abstraction and implementation into two independent hierarchies so each dimension can vary without an explosion of class combinations.
 
 ##### Composite
 
 [Not implemented](#)
 
-Окремі об’єкти і вкладені групи використовують спільний контракт, дозволяючи однаково обробляти листки та гілки деревоподібної структури.
+Provide a common contract for individual objects and nested groups, allowing leaves and branches in a tree-like structure to be treated uniformly.
 
 ##### Decorator
 
 [Not implemented](#)
 
-Об’єкт отримує додаткову поведінку через послідовні обгортки зі спільним інтерфейсом, а не створення підкласу для кожної комбінації.
+Add behavior through successive wrappers sharing an interface instead of creating a separate subclass for every combination.
 
 ##### Facade
 
 [Not implemented](#)
 
-Спрощена точка входу приховує складні послідовності внутрішніх викликів підсистеми, не замінюючи весь її інтерфейс.
+Provide a simplified entry point hiding complex sequences of subsystem calls without replacing the entire subsystem interface.
 
 ##### Flyweight
 
 [Not implemented](#)
 
-Багато подібних об’єктів спільно використовують незмінну частину свого стану, зменшуючи витрати пам’яті.
+Share the immutable portion of state among many similar objects to reduce memory consumption.
 
 ##### Proxy
 
 [Not implemented](#)
 
-Посередник контролює доступ до іншого об’єкта зі спільним інтерфейсом: наприклад, перевіряє дозвіл, кешує або відкладає завантаження.
+Control access to another object through a proxy sharing its interface—for example, to check authorization, cache results, or defer loading.
 
-#### Поведінкові
+#### Behavioral
 
 Skills: 11
 
 [Not implemented](#)
 
-Одинадцять підходів до керування запитами, вибору алгоритмів, сповіщень, стану та розподілу відповідальності.
+Eleven approaches to handling requests, selecting algorithms, delivering notifications, managing state, and distributing responsibility.
 
 ##### Chain of Responsibility
 
 [Not implemented](#)
 
-Запит проходить ланцюжком обробників, доки один із них не виконає дію або не передасть її далі.
+Pass a request through a chain of handlers until one processes it or passes it onward.
 
 ##### Command
 
 [Not implemented](#)
 
-Дія стає окремим об’єктом запиту, який можна зберігати, ставити в чергу чи виконувати пізніше.
+Represent an action as a request object that can be stored, queued, or executed later.
 
 ##### Interpreter
 
 [Not implemented](#)
 
-Правила малої предметної мови подаються структурою виразів, для яких визначено спосіб інтерпретації.
+Represent the rules of a small domain-specific language as an expression structure with defined interpretation behavior.
 
 ##### Iterator
 
 [Not implemented](#)
 
-Елементи колекції перебираються через визначений інтерфейс без потреби відкривати її внутрішнє представлення.
+Traverse collection elements through a defined interface without exposing their internal representation.
 
 ##### Mediator
 
 [Not implemented](#)
 
-Взаємодія кількох компонентів переноситься до посередника, щоб кожен не залежав від усіх інших безпосередньо.
+Move interactions between several components into a mediator so each component need not depend directly on every other one.
 
 ##### Memento
 
 [Not implemented](#)
 
-Зовнішній знімок стану дозволяє відновити об’єкт без розкриття його внутрішньої реалізації.
+Save an external snapshot that allows restoring an object's state without revealing its internal implementation.
 
 ##### Observer
 
 [Not implemented](#)
 
-Джерело надсилає сповіщення підписникам про зміни, не знаючи, яку власну дію виконає кожен із них.
+Notify subscribers when a source changes without knowing which particular action each subscriber will take.
 
 ##### State
 
 [Not implemented](#)
 
-Реакція об’єкта на ту саму команду делегується поточному об’єкту стану замість розгалуженого набору умов.
+Delegate an object's reaction to a given command to its current state object instead of using an extensive conditional tree.
 
 ##### Strategy
 
 [Not implemented](#)
 
-Кілька алгоритмів з однаковим інтерфейсом взаємозамінні, тому спосіб розв’язання можна змінювати незалежно від клієнта.
+Interchange algorithms sharing an interface so the solution method can change independently of the client.
 
 ##### Template Method
 
 [Not implemented](#)
 
-Скелет виконання алгоритму задає незмінні кроки, а частину деталей реалізують підкласи через визначені точки розширення.
+Define an algorithm skeleton with fixed steps while subclasses implement selected details through specified extension points.
 
 ##### Visitor
 
 [Not implemented](#)
 
-Операції над сімейством різних типів переносяться в окремого відвідувача, залишаючи структуру елементів відносно стабільною.
-
+Move operations on a family of types into a separate visitor while keeping the element structure relatively stable.
 ### Штучний інтелект
 
 Groups: 7 · Skills: 34
