@@ -2,7 +2,7 @@
 
 Date: 2026-10-29
 
-An audience-independent catalog of abilities for analyzing, designing, constructing, operating, testing and improving physical products and engineered systems. Domain → Group → Skill is a classification, not a course order, grade scheme, assessment policy or learning-depth ceiling. “What is it?” and “How does it work?” are possible learning formats, not taxonomic entities.
+An audience-independent catalog of abilities for analyzing, designing, constructing, operating, testing and improving physical products and engineered systems. Domain → Group → Skill is a classification, not a course order, grade scheme, assessment policy or learning-depth ceiling. Concise concept-based Skill names are analytics labels, while their substantive descriptions define the independently assessable ability. Generic verbs such as “Explain” are omitted when they add no distinction; verbs for distinct operations (e.g., measuring, calculating, diagnosing) are retained. Picking a concrete solution is a Question or Lesson task unless the underlying suitability judgment is a reusable competency. “What is it?” and “How does it work?” are possible learning formats, not taxonomic entities.
 
 **Boundaries:** Physics explains natural laws, while Engineering concerns practical integrated devices using those laws. Informatics owns algorithms, software and digital interaction, while Engineering includes electronic hardware, robotics, physical controls and ergonomics. Art owns architectural styles and spatial artistic composition, while Engineering owns load-bearing construction and accessibility. Biology studies organisms; Engineering evaluates nature-inspired technical designs and biomedical devices. The chronology of inventions belongs primarily to History; technical analysis of inventions belongs here. Textbook-local Skill identity permits related but distinct competencies across subjects.
 
@@ -10,17 +10,17 @@ An audience-independent catalog of abilities for analyzing, designing, construct
 
 ## SUMMARY
 
-Domains: 17
-Groups: 59
-Skills: 249
+Domains: 18
+Groups: 61
+Skills: 264
 
-Code files: 0/17 Domains · 0/59 Groups · 0/249 Skills
+Code files: 0/18 Domains · 0/61 Groups · 0/264 Skills
 
 ## DOMAINS
 
 ### Engineering Design
 
-Groups: 4 · Skills: 19
+Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
@@ -116,11 +116,11 @@ Technical representations communicate geometry, operation and interfaces. A mode
 
 Show key units and the direction of energy, material or signal flow between them.
 
-##### Interpret an engineering schematic
+##### Interpret technical system schematics
 
 [Not implemented](#)
 
-Read component symbols and connections to understand a supplied device or process.
+Interpret functional symbols and relationships in mechanical, hydraulic, pneumatic or block diagrams. Specialized electrical-circuit connectivity and electrical symbols have a separate competency.
 
 ##### Create a dimensioned drawing
 
@@ -134,7 +134,7 @@ Specify relevant sizes and geometric relations so another person could reproduce
 
 Make a physical or computational representation that can demonstrate or investigate a specified design feature.
 
-##### Explain a design rationale
+##### Design rationale
 
 [Not implemented](#)
 
@@ -142,7 +142,7 @@ Communicate why components, arrangements and dimensions were chosen in relation 
 
 #### Testing and Iteration
 
-Skills: 4
+Skills: 7
 
 [Not implemented](#)
 
@@ -158,7 +158,7 @@ Define the operating conditions, measurement and pass criterion that will evalua
 
 [Not implemented](#)
 
-Compare observed behavior with a predefined acceptance condition, including limitations of the test.
+Interpret observed prototype-test results under defined conditions and compare measured outputs with expected performance. This analysis alone does not establish full design verification or validate user needs.
 
 ##### Diagnose a prototype failure
 
@@ -171,6 +171,24 @@ Use symptoms and component relationships to identify a plausible cause of poor p
 [Not implemented](#)
 
 Change an identified feature on the basis of test results and explain the expected benefit.
+
+##### Verify design requirements
+
+[Not implemented](#)
+
+Use inspection, test, demonstration or analysis to determine whether stated technical requirements and their acceptance criteria have been met. Passing one test does not establish compliance with untested requirements.
+
+##### Validate user needs
+
+[Not implemented](#)
+
+Assess whether the finished or representative solution actually meets the real-world needs of intended users in appropriate conditions, even where formal design requirements have been met.
+
+##### Measurement uncertainty
+
+[Not implemented](#)
+
+Characterize the limits of numerical observations using resolution, calibration, repeatability and error sources, including consequences for a pass-or-fail engineering decision.
 
 ### Systems Engineering
 
@@ -206,7 +224,7 @@ Separate the engineered assembly from its users, surroundings and connected exte
 
 Follow energy, materials or signals entering and leaving an operating system, including losses or by-products.
 
-##### Explain subsystem functions
+##### Subsystem functions
 
 [Not implemented](#)
 
@@ -270,7 +288,7 @@ Explain why the loss of a part may or may not disable the overall function.
 
 Use symptoms and dependencies to locate a likely malfunction in a connected system.
 
-##### Explain redundant system design
+##### System redundancy
 
 [Not implemented](#)
 
@@ -316,13 +334,13 @@ Explain why resisting failure and resisting deformation are different requiremen
 
 Connect wear, corrosion, fatigue or exposure to the expected lifetime of a part.
 
-##### Select a material for a component
+##### Material suitability assessment
 
 [Not implemented](#)
 
-Justify a material based on its functional demands and practical limitations.
+Evaluate which material properties and processing limitations meet the expected loads and service environment. This is a reusable material-compatibility judgment rather than an individual choice question.
 
-##### Explain composite material applications
+##### Composite material applications
 
 [Not implemented](#)
 
@@ -336,35 +354,35 @@ Skills: 5
 
 Connections can be temporary or permanent, transmit different forces and impose different maintenance requirements.
 
-##### Explain threaded fastening
+##### Threaded fastening
 
 [Not implemented](#)
 
 Describe how a bolt or screw retains connected parts and permits suitable disassembly.
 
-##### Explain adhesive joints
+##### Adhesive joints
 
 [Not implemented](#)
 
 Relate bonding, compatible surfaces and load direction to joint performance.
 
-##### Explain welded joints
+##### Welded joints
 
 [Not implemented](#)
 
 Distinguish a joined material interface from detachable mechanical fasteners.
 
-##### Explain magnetic fastening
+##### Magnetic fastening
 
 [Not implemented](#)
 
 Identify how magnetic attraction can retain a part and when an alternative joint is necessary.
 
-##### Select a joining method
+##### Joining-method suitability
 
 [Not implemented](#)
 
-Choose a connection based on load, access, material compatibility and removability.
+Assess whether detachable, bonded, welded or magnetic joints can transfer loads, provide access and support maintenance. Choosing one particular screw or glue is a task variant.
 
 #### Surfaces and Fit
 
@@ -374,7 +392,7 @@ Skills: 3
 
 Small variations at contacting surfaces affect motion, grip, sealing, protection and assembly.
 
-##### Explain protective surface treatments
+##### Protective surface treatments
 
 [Not implemented](#)
 
@@ -386,15 +404,15 @@ Relate coatings or treatments to corrosion, wear, wetting or other surface prope
 
 Distinguish contacts that need reliable grip from those requiring easy sliding.
 
-##### Explain dimensional tolerances
+##### Fits and clearances
 
 [Not implemented](#)
 
-Recognize allowable manufacturing variation and its consequences for fitting parts together.
+Relate permissible gaps and interference between mating parts to sliding, rotation, retention or sealing. This is distinct from decoding a production drawing's dimensional specification.
 
 ### Mechanisms and Machines
 
-Groups: 4 · Skills: 19
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -408,13 +426,13 @@ Skills: 6
 
 Shafts, flexible elements and meshing components connect input motion to a useful output with potentially different speed, force and direction.
 
-##### Explain lever mechanisms
+##### Lever mechanisms
 
 [Not implemented](#)
 
 Identify pivot, input and output arrangement in a lever-driven machine.
 
-##### Explain gear transmission
+##### Gear transmission
 
 [Not implemented](#)
 
@@ -426,19 +444,19 @@ Trace rotational transfer between meshing gears and the effect of tooth counts.
 
 Calculate relative rotation or speed using the teeth of a gear pair.
 
-##### Explain belt drives
+##### Belt drives
 
 [Not implemented](#)
 
 Trace how tensioned flexible belts transfer motion between pulleys through friction or toothed engagement, including likely causes of slip.
 
-##### Explain chain drives
+##### Chain drives
 
 [Not implemented](#)
 
 Describe positive engagement between chain links and sprockets, including the need for alignment, tension and lubrication.
 
-##### Explain pulley systems
+##### Pulley systems
 
 [Not implemented](#)
 
@@ -452,25 +470,25 @@ Skills: 4
 
 Mechanical linkages and profiles transform rotation, translation or oscillation into required movement patterns.
 
-##### Explain crank-slider mechanisms
+##### Crank-slider mechanisms
 
 [Not implemented](#)
 
 Trace conversion between rotary and reciprocating motion in a piston machine.
 
-##### Explain cam mechanisms
+##### Cam mechanisms
 
 [Not implemented](#)
 
 Connect a shaped rotating profile with the timed displacement of a follower.
 
-##### Explain screw mechanisms
+##### Screw mechanisms
 
 [Not implemented](#)
 
 Describe how the pitch and mating threads of a screw convert rotation into controlled axial displacement or a clamping force.
 
-##### Explain articulated linkages
+##### Articulated linkages
 
 [Not implemented](#)
 
@@ -484,31 +502,31 @@ Skills: 5
 
 Motion must be supported and limited while interfaces are protected from damaging friction or unintended release.
 
-##### Explain bearings
+##### Bearings
 
 [Not implemented](#)
 
 Identify how supported shafts can rotate relative to a machine housing.
 
-##### Explain lubrication
+##### Lubrication
 
 [Not implemented](#)
 
 Relate a lubricant to reduced wear and heating at a moving interface.
 
-##### Explain braking mechanisms
+##### Braking mechanisms
 
 [Not implemented](#)
 
 Trace how contact forces or another braking device oppose a rotating component and transfer motion energy into heat or another form.
 
-##### Explain latches
+##### Latches
 
 [Not implemented](#)
 
 Describe how a catch retains a door or moving part in its closed position and permits intentional release.
 
-##### Explain locks
+##### Locks
 
 [Not implemented](#)
 
@@ -516,7 +534,7 @@ Identify how a key, code or other authorization mechanism restricts the operatio
 
 #### Integrated Machines
 
-Skills: 4
+Skills: 3
 
 [Not implemented](#)
 
@@ -528,23 +546,17 @@ Machines combine multiple components in a working sequence, so their behavior ca
 
 Follow useful motion and energy from a prime mover to the working component.
 
-##### Select a motion mechanism
+##### Motion-mechanism suitability
 
 [Not implemented](#)
 
-Match required travel, speed and direction to an appropriate mechanism.
+Relate the output direction, movement pattern, displacement and force needs to feasible mechanisms and their operating limits.
 
 ##### Diagnose transmission faults
 
 [Not implemented](#)
 
 Connect slipping, jamming or unexpected movement to plausible defects.
-
-##### Explain clockwork operation
-
-[Not implemented](#)
-
-Trace stored energy, transmission and regulation through a mechanical timekeeper.
 
 ### Thermal and Fluid Devices
 
@@ -562,29 +574,29 @@ Skills: 4
 
 Temperature-control devices combine energy input, circulation and insulation to maintain useful thermal conditions.
 
-##### Explain refrigeration equipment
+##### Refrigeration equipment
 
 [Not implemented](#)
 
 Trace compressor, condenser, expansion device and evaporator in a cooling cycle.
 
-##### Explain heat pumps
+##### Heat pumps
 
 [Not implemented](#)
 
 Identify how heat is transferred from a source to a destination using external work.
 
-##### Explain heat exchangers
+##### Heat exchangers
 
 [Not implemented](#)
 
 Show how two streams transfer heat across a barrier without normally mixing.
 
-##### Select thermal insulation
+##### Thermal insulation suitability
 
 [Not implemented](#)
 
-Match enclosure requirements to conductive, convective or radiative heat-loss paths.
+Assess how an insulating arrangement manages conductive, convective and radiative heat transfer in an intended enclosure.
 
 #### Fluid Machines
 
@@ -594,25 +606,25 @@ Skills: 4
 
 Mechanical energy can produce fluid flow, pressure or driven motion using distinct devices with different operating media.
 
-##### Explain liquid pumps
+##### Liquid pumps
 
 [Not implemented](#)
 
 Trace the components responsible for delivering flow or pressure to a liquid circuit.
 
-##### Explain gas compressors
+##### Gas compressors
 
 [Not implemented](#)
 
 Distinguish increasing gas pressure from merely circulating air.
 
-##### Explain hydraulic actuators
+##### Hydraulic actuators
 
 [Not implemented](#)
 
 Trace pressurized liquid from a pump and valve to mechanical movement.
 
-##### Explain pneumatic actuators
+##### Pneumatic actuators
 
 [Not implemented](#)
 
@@ -626,13 +638,13 @@ Skills: 3
 
 Indoor climate equipment needs functional air paths, treatment components and regulation appropriate to occupied spaces.
 
-##### Explain ventilation systems
+##### Ventilation systems
 
 [Not implemented](#)
 
 Distinguish outdoor-air exchange from recirculating existing indoor air.
 
-##### Explain air-conditioning systems
+##### Air-conditioning systems
 
 [Not implemented](#)
 
@@ -660,37 +672,37 @@ Skills: 6
 
 Characteristic forms route forces differently; a safe structure is not just a visually plausible shape.
 
-##### Explain beams
+##### Beams
 
 [Not implemented](#)
 
 Trace bending and load transfer from a span to its supports.
 
-##### Explain columns
+##### Columns
 
 [Not implemented](#)
 
 Recognize how primarily compression-loaded vertical members support loads and why slender members may become unstable.
 
-##### Explain structural bracing
+##### Structural bracing
 
 [Not implemented](#)
 
 Trace how diagonal members or other lateral systems prevent unwanted sway and redistribute horizontal actions.
 
-##### Explain arches
+##### Arches
 
 [Not implemented](#)
 
 Show how a curved compression path transfers loads and may produce support thrust.
 
-##### Explain trusses
+##### Trusses
 
 [Not implemented](#)
 
 Relate connected triangular members to a framed load path.
 
-##### Explain foundations
+##### Foundations
 
 [Not implemented](#)
 
@@ -742,7 +754,7 @@ A complete building combines its main structure with weather protection, spatial
 
 Distinguish frames or load-bearing walls from internal partitions.
 
-##### Explain building envelopes
+##### Building envelopes
 
 [Not implemented](#)
 
@@ -754,11 +766,11 @@ Relate roofs, walls and openings to control of moisture, weather and heat.
 
 Identify consequences of wind, soil, terrain or climate for construction choices.
 
-##### Plan accessible building circulation
+##### Design accessible building circulation
 
 [Not implemented](#)
 
-Check entrances, routes and changes of level against different mobility requirements.
+Create a proposed arrangement of entrances, corridors, turning spaces and level transitions so people with varying mobility can move through a planned building.
 
 #### Civil Works
 
@@ -768,19 +780,19 @@ Skills: 4
 
 Large built assets require sequential construction and coordination with the ground and existing infrastructure.
 
-##### Explain pavement layers
+##### Pavement layers
 
 [Not implemented](#)
 
 Identify why different road layers distribute vehicle loads to supporting ground.
 
-##### Explain bridge construction approaches
+##### Bridge construction approaches
 
 [Not implemented](#)
 
 Compare supported or staged methods for creating a span.
 
-##### Explain tunnel construction constraints
+##### Tunnel construction constraints
 
 [Not implemented](#)
 
@@ -814,13 +826,13 @@ Safe, reliable distribution requires treatment and controlled hydraulic delivery
 
 Follow a source through treatment, storage and distribution to a point of use.
 
-##### Explain drinking-water treatment
+##### Drinking-water treatment
 
 [Not implemented](#)
 
 Distinguish filtration, particle separation and disinfection as different barriers.
 
-##### Explain pressure management
+##### Pressure management
 
 [Not implemented](#)
 
@@ -846,19 +858,19 @@ Sewage, storm runoff and treated discharge have different handling requirements;
 
 Follow used water from connected properties to treatment facilities.
 
-##### Explain wastewater treatment
+##### Wastewater treatment
 
 [Not implemented](#)
 
 Identify the different purposes of physical and biological treatment processes.
 
-##### Explain stormwater drainage
+##### Stormwater drainage
 
 [Not implemented](#)
 
 Trace runoff from a built surface through inlet, conveyance and discharge or retention.
 
-##### Explain flood-control structures
+##### Flood-control structures
 
 [Not implemented](#)
 
@@ -872,13 +884,13 @@ Skills: 3
 
 Flow and water levels can be regulated by built chambers, gates and channels that connect transport or supply routes.
 
-##### Explain canal locks
+##### Canal locks
 
 [Not implemented](#)
 
 Trace chamber filling, gates and valves used to move a vessel between levels.
 
-##### Explain flow-control valves
+##### Flow-control valves
 
 [Not implemented](#)
 
@@ -898,25 +910,25 @@ Skills: 4
 
 Public environmental infrastructure also treats polluted air and solid waste. The engineering problem is selecting and integrating collection, containment and treatment equipment rather than merely recognizing that pollution exists.
 
-##### Explain air-filtration equipment
+##### Air-filtration equipment
 
 [Not implemented](#)
 
 Trace air through collection, filter media and discharge components while recognizing the importance of particle size and maintenance.
 
-##### Explain industrial emissions control
+##### Industrial emissions control
 
 [Not implemented](#)
 
 Identify capture and treatment stages intended to reduce selected pollutants before a process stream is released.
 
-##### Explain solid-waste processing systems
+##### Solid-waste processing systems
 
 [Not implemented](#)
 
 Trace collection, sorting, material recovery and residual handling through an engineered waste-management facility.
 
-##### Explain contaminated-site remediation equipment
+##### Contaminated-site remediation equipment
 
 [Not implemented](#)
 
@@ -938,31 +950,31 @@ Skills: 5
 
 Electricity and heat can be produced through different converter chains with distinct resource and operating constraints.
 
-##### Explain electrical generators
+##### Electrical generators
 
 [Not implemented](#)
 
 Trace mechanical input to electricity through a generator assembly.
 
-##### Explain photovoltaic systems
+##### Photovoltaic systems
 
 [Not implemented](#)
 
 Identify modules and power electronics used to produce usable electricity from sunlight.
 
-##### Explain wind turbines
+##### Wind turbines
 
 [Not implemented](#)
 
 Trace rotor, drive and generator functions within a wind-energy installation.
 
-##### Explain hydropower installations
+##### Hydropower installations
 
 [Not implemented](#)
 
 Follow water through a turbine and generator toward discharge.
 
-##### Explain thermal power stations
+##### Thermal power stations
 
 [Not implemented](#)
 
@@ -976,25 +988,25 @@ Skills: 4
 
 Reliable supply requires matching time, location and suitable electrical or thermal interfaces.
 
-##### Explain rechargeable battery systems
+##### Rechargeable battery systems
 
 [Not implemented](#)
 
 Identify cells, charging control and protective elements in practical energy storage.
 
-##### Explain electrical grid distribution
+##### Electrical grid distribution
 
 [Not implemented](#)
 
 Trace energy from generation through substations and delivery networks to loads.
 
-##### Explain transformer use
+##### Transformer use
 
 [Not implemented](#)
 
 Relate changing AC voltage levels to efficient transfer and equipment requirements.
 
-##### Explain thermal energy storage
+##### Thermal energy storage
 
 [Not implemented](#)
 
@@ -1020,7 +1032,7 @@ Combine device power and operating duration to assess required supply or storage
 
 Compare useful device output with energy input and identify major losses.
 
-##### Explain load balancing
+##### Load balancing
 
 [Not implemented](#)
 
@@ -1028,7 +1040,7 @@ Recognize why generation, storage and demand must be coordinated across time.
 
 ### Electrical and Electronic Engineering
 
-Groups: 4 · Skills: 18
+Groups: 5 · Skills: 27
 
 [Not implemented](#)
 
@@ -1046,7 +1058,7 @@ A functioning assembly requires compatible sources, loads and connections, inclu
 
 [Not implemented](#)
 
-Read electrical symbols and their connections to identify intended current paths and device functions.
+Read the symbols, electrical junctions and conductive paths specific to circuit diagrams, including when apparent crossing wires are not electrically connected. This is more specialized than reading general technical schematics.
 
 ##### Assemble a low-voltage circuit
 
@@ -1060,13 +1072,13 @@ Connect a suitable power source and load with correctly rated components while a
 
 Place controls so a load can be energized or interrupted deliberately.
 
-##### Explain series arrangements in devices
+##### Series circuit arrangements
 
 [Not implemented](#)
 
 Identify how interruption of one common current path affects dependent loads.
 
-##### Explain parallel arrangements in devices
+##### Parallel circuit arrangements
 
 [Not implemented](#)
 
@@ -1080,25 +1092,25 @@ Skills: 4
 
 Components can limit, store, steer or switch electrical signals; their appropriate use depends on ratings and surrounding circuit context.
 
-##### Explain resistor applications
+##### Resistor applications
 
 [Not implemented](#)
 
 Identify current limiting, biasing and voltage division as different practical uses.
 
-##### Explain diode applications
+##### Diode applications
 
 [Not implemented](#)
 
 Relate directional conduction, rectification or light emission to practical circuits.
 
-##### Explain transistor switching
+##### Transistor switching
 
 [Not implemented](#)
 
 Trace how a relatively small control input governs another electrical path.
 
-##### Explain capacitor applications
+##### Capacitor applications
 
 [Not implemented](#)
 
@@ -1112,25 +1124,25 @@ Skills: 4
 
 Controllers communicate with sensors and actuators through real physical interfaces; programming concepts are treated separately in Informatics.
 
-##### Explain microcontroller architecture
+##### Microcontroller architecture
 
 [Not implemented](#)
 
 Identify processor, memory, supply and hardware interfaces in a dedicated controller.
 
-##### Select a sensor input interface
+##### Sensor-interface compatibility
 
 [Not implemented](#)
 
-Match a sensor's physical output and electrical characteristics to a suitable acquisition input.
+Assess whether a sensor output, supply voltage, signal level and timing are compatible with a particular data acquisition input.
 
-##### Select an actuator driver
+##### Actuator-driver compatibility
 
 [Not implemented](#)
 
-Recognize when the controller needs an intermediate power stage to operate a load.
+Determine whether voltage, current, protection and command characteristics suit the drive and the expected actuator load.
 
-##### Explain hardware input-output interfaces
+##### Hardware input-output interfaces
 
 [Not implemented](#)
 
@@ -1156,27 +1168,89 @@ Use a suitable meter across selected terminals to determine a potential differen
 
 Choose an appropriate sensing method and insertion point for a selected branch.
 
-##### Explain overcurrent protection
+##### Overcurrent protection
 
 [Not implemented](#)
 
 Recognize how properly rated fuses or breakers interrupt damaging excessive current.
 
-##### Explain protective grounding
+##### Protective grounding
 
 [Not implemented](#)
 
 Identify intentional fault-current or equipotential connections that reduce electric-shock risk in appropriately designed equipment.
 
-##### Explain electrical isolation
+##### Electrical isolation
 
 [Not implemented](#)
 
 Describe how barriers or isolating components prevent unintended conductive paths between circuits, including hazardous interfaces.
 
+#### Computing Hardware
+
+Skills: 9
+
+[Not implemented](#)
+
+Computer hardware combines execution, working memory, persistent storage, electrical interconnects, human input/output and power and thermal management. It is distinct from programming, operating systems and software data structures.
+
+##### Processor hardware
+
+[Not implemented](#)
+
+Identify the functions of processing units, registers and internal interfaces in executing machine operations without confusing hardware architecture with the algorithms it runs.
+
+##### Main memory hardware
+
+[Not implemented](#)
+
+Distinguish operational random-access memory from persistent storage using volatility, capacity, latency and connection to processing hardware.
+
+##### Persistent data storage
+
+[Not implemented](#)
+
+Relate solid-state or magnetic storage media and controllers to retention, transfer, access performance and device reliability.
+
+##### Printed circuit board interconnects
+
+[Not implemented](#)
+
+Trace physical conductive pathways and connector functions that distribute signals and electrical power between mounted components.
+
+##### Computer hardware buses
+
+[Not implemented](#)
+
+Describe the communication pathways and electrical interfaces joining processors, memory controllers and peripheral equipment.
+
+##### Display hardware
+
+[Not implemented](#)
+
+Identify the physical image-forming panel, drive electronics and light-emission or modulation mechanisms independently from displayed software content.
+
+##### Input device hardware
+
+[Not implemented](#)
+
+Explain how mechanical switches, touch sensing or pointing-device transducers convert user actions into electrical signals.
+
+##### Computer power supply architecture
+
+[Not implemented](#)
+
+Trace conversion, regulation and distribution of the electrical supply to devices with differing voltage and current needs.
+
+##### Computer thermal management
+
+[Not implemented](#)
+
+Relate computer component heat production to cooling paths, heat sinks, airflow and protection against excessive temperature.
+
 ### Automation and Robotics
 
-Groups: 4 · Skills: 16
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -1190,11 +1264,11 @@ Skills: 4
 
 Reliable decisions depend on selecting an appropriate measured quantity and understanding how placement, calibration and uncertainty shape the signal.
 
-##### Select a sensor
+##### Sensor suitability
 
 [Not implemented](#)
 
-Match required physical quantity, range and conditions to an appropriate sensing principle.
+Assess the range, measurement principle, response and environmental limitations against a desired physical measurement. Choosing a catalog item is an assessment task, not a distinct Skill.
 
 ##### Calibrate a sensor
 
@@ -1208,7 +1282,7 @@ Relate device readings to known references and correct or qualify the measuremen
 
 Distinguish real changes from drift, limited resolution and random noise.
 
-##### Explain sensor placement
+##### Sensor placement
 
 [Not implemented](#)
 
@@ -1216,19 +1290,19 @@ Relate position and orientation to what a detector can and cannot observe.
 
 #### Feedback and Control
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 A controlled process needs commands, observations and actuation; feedback can improve regulation but also create delay or oscillation.
 
-##### Distinguish open-loop and closed-loop control
+##### Control architecture trade-offs
 
 [Not implemented](#)
 
-Identify whether measured output is used to adjust a system's input.
+Compare the robustness, sensing cost, responsiveness and stability implications of open-loop versus feedback control as an engineering architecture decision, not merely a definition quiz.
 
-##### Explain feedback control loops
+##### Feedback control loops
 
 [Not implemented](#)
 
@@ -1240,43 +1314,55 @@ Locate setpoint, sensor, controller, actuator and physical plant in a working sy
 
 Identify overshoot, steady error, oscillation or excessive delay in observed behavior.
 
-##### Explain safe control fallback
+##### Safe control fallback
 
 [Not implemented](#)
 
 Describe how critical equipment should react to missing power, unreliable sensing or lost communication.
 
+##### Open-loop control
+
+[Not implemented](#)
+
+Describe a control process whose command is set without measuring the resulting output for correction, and explain the consequences of changing loads or other disturbances.
+
 #### Drives and Actuators
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 A controller requires suitable physical mechanisms to turn supplied energy into controllable displacement, rotation or force.
 
-##### Explain motor-driven motion
+##### Motor-driven actuation
 
 [Not implemented](#)
 
 Trace electrical supply and drive control to a rotating mechanical output.
 
-##### Explain servo positioning
+##### Servo positioning
 
 [Not implemented](#)
 
 Identify the use of position feedback to command and maintain an actuator's location.
 
-##### Select an actuator
+##### Actuator suitability
 
 [Not implemented](#)
 
-Match required force or torque, range, speed and duty cycle to a suitable drive.
+Relate required torque, force, travel, speed and duty cycle to an available driving principle and its energy supply.
 
-##### Explain limit switches
+##### Limit switches
 
 [Not implemented](#)
 
 Recognize how end-of-travel signals protect a mechanism from excessive movement.
+
+##### Electric motor construction
+
+[Not implemented](#)
+
+Identify rotor, stator, magnets or windings, bearings and commutation arrangements that produce rotation in an electrical machine. This differs from incorporating a finished motor into a controlled mechanism.
 
 #### Robot Systems
 
@@ -1292,13 +1378,13 @@ Robots combine mobile or articulated structure with localization, motion control
 
 Assign roles to structure, power, sensors, actuators and controller in a robot.
 
-##### Explain robot degrees of freedom
+##### Robot degrees of freedom
 
 [Not implemented](#)
 
 Connect the axes and joints of a mechanism to its possible independent movements.
 
-##### Explain robot localization hardware
+##### Robot localization hardware
 
 [Not implemented](#)
 
@@ -1312,7 +1398,7 @@ Identify guards, speed limits, stop systems or separation required around moving
 
 ### Transportation and Aerospace Engineering
 
-Groups: 4 · Skills: 16
+Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
@@ -1320,41 +1406,35 @@ Transport machines coordinate power, support, steering, stopping and protection 
 
 #### Road and Rail
 
-Skills: 5
+Skills: 4
 
 [Not implemented](#)
 
 Surface vehicles depend on transmitting traction, guiding movement, supporting loads and maintaining control during stopping.
 
-##### Explain vehicle drivetrains
+##### Vehicle drivetrains
 
 [Not implemented](#)
 
 Trace prime-mover output through transmissions to driven wheels.
 
-##### Explain steering systems
+##### Steering systems
 
 [Not implemented](#)
 
 Identify how wheel or axle orientation controls direction.
 
-##### Explain suspension systems
+##### Suspension systems
 
 [Not implemented](#)
 
 Relate springs, dampers and supports to maintaining contact and controlling motion.
 
-##### Explain vehicle braking systems
+##### Vehicle braking systems
 
 [Not implemented](#)
 
 Trace control input to braking torque and recognize traction limitations.
-
-##### Explain maglev train subsystems
-
-[Not implemented](#)
-
-Distinguish magnetic levitation, forward propulsion and guidance; different designs may use attraction or repulsion.
 
 #### Aircraft
 
@@ -1364,19 +1444,19 @@ Skills: 4
 
 Aircraft incorporate propulsion, lifting surfaces, stabilization and control; different layouts solve different flight missions.
 
-##### Explain fixed-wing aircraft architecture
+##### Fixed-wing aircraft architecture
 
 [Not implemented](#)
 
 Identify the functions of wing, fuselage, tail, propulsion and landing gear.
 
-##### Explain flight control surfaces
+##### Flight control surfaces
 
 [Not implemented](#)
 
 Relate ailerons, elevators and rudders to changes in orientation rather than thrust.
 
-##### Explain rotorcraft control
+##### Rotorcraft control
 
 [Not implemented](#)
 
@@ -1396,19 +1476,19 @@ Skills: 3
 
 Vessels need suitable hulls, propulsion and steering while managing stability and water resistance.
 
-##### Explain hull design choices
+##### Hull design choices
 
 [Not implemented](#)
 
 Relate hull geometry and loading to displacement, stability and resistance.
 
-##### Explain marine propulsion
+##### Marine propulsion
 
 [Not implemented](#)
 
 Trace motor or engine output to propeller or waterjet thrust.
 
-##### Explain marine steering
+##### Marine steering
 
 [Not implemented](#)
 
@@ -1422,7 +1502,7 @@ Skills: 4
 
 Space systems must coordinate propulsion and precision orientation with energy supply, thermal protection and mission hardware.
 
-##### Explain rocket propulsion systems
+##### Rocket propulsion systems
 
 [Not implemented](#)
 
@@ -1434,25 +1514,25 @@ Identify propellant supply, energy release and nozzle as functions of a launch e
 
 Distinguish payload, power, communications, thermal and attitude-control equipment.
 
-##### Explain spacecraft attitude control
+##### Spacecraft attitude control
 
 [Not implemented](#)
 
 Relate sensors and actuators to changing orientation rather than simply changing orbit.
 
-##### Explain atmospheric re-entry protection
+##### Atmospheric re-entry protection
 
 [Not implemented](#)
 
 Connect intense heating and mechanical loading to vehicle shielding and geometry.
 
-### Communications, Navigation, and Optical Devices
+### Communication and Measurement Devices
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Real-world devices transmit signals or obtain information through engineered components and propagation media. This domain covers antennas, optical apparatus and positioning hardware rather than software networking or abstract signal algorithms.
+Radio, optical and navigation equipment generates, propagates, detects and uses physical signals. Competencies concern real emitters, interfaces, receivers and instrumentation, rather than networking programs or generic data-processing algorithms.
 
 #### Communication Hardware
 
@@ -1468,25 +1548,25 @@ Physical communication chains depend on transducers, suitable electromagnetic or
 
 Identify input conversion, transmission, propagation, reception and output in a practical link.
 
-##### Explain radio transmitters
+##### Radio transmitters
 
 [Not implemented](#)
 
 Trace how circuitry prepares a signal and supplies suitable electrical excitation to an antenna for radiation.
 
-##### Explain radio receivers
+##### Radio receivers
 
 [Not implemented](#)
 
 Trace how an antenna and receiving electronics select and recover useful information from a received signal.
 
-##### Explain antenna functions
+##### Antenna functions
 
 [Not implemented](#)
 
 Relate antenna coupling, placement and orientation to the intended link.
 
-##### Explain communications infrastructure
+##### Communications infrastructure
 
 [Not implemented](#)
 
@@ -1500,29 +1580,29 @@ Skills: 5
 
 Optical components manipulate or detect light for imaging, sensing and transmission; lasers require particular source and exposure precautions.
 
-##### Explain camera hardware
+##### Camera hardware
 
 [Not implemented](#)
 
 Trace light through an optical path onto an image sensor, apart from software image processing.
 
-##### Explain fiber-optic communication systems
+##### Fiber-optic communication systems
 
 [Not implemented](#)
 
 Identify source, fiber path, connectors and receiver in an optical link.
 
-##### Explain laser device architecture
+##### Laser device architecture
 
 [Not implemented](#)
 
 Identify an energized gain medium, light amplification and relevant resonator or output optics.
 
-##### Select optical components
+##### Optical component suitability
 
 [Not implemented](#)
 
-Match lenses, reflectors, filters or detectors to an imaging or measurement function.
+Assess the functional fit of lenses, mirrors, filters or detectors for an imaging, transmission or measurement purpose.
 
 ##### Identify laser-device hazards
 
@@ -1538,13 +1618,13 @@ Skills: 3
 
 Positioning methods use different physical measurements, and each has characteristic failures and accuracy limitations.
 
-##### Explain satellite-navigation receivers
+##### Satellite-navigation receivers
 
 [Not implemented](#)
 
 Recognize how timing signals from multiple satellites support location and time estimates.
 
-##### Explain inertial navigation hardware
+##### Inertial navigation hardware
 
 [Not implemented](#)
 
@@ -1572,31 +1652,31 @@ Skills: 5
 
 A manufacturing process imposes specific restrictions on geometry, material, waste and achievable accuracy.
 
-##### Explain machining processes
+##### Machining processes
 
 [Not implemented](#)
 
 Describe controlled material removal by tools, such as drilling, milling or turning, and the consequences for accuracy, tool access and waste.
 
-##### Explain forming processes
+##### Forming processes
 
 [Not implemented](#)
 
 Identify ways applied force reshapes a material without primarily removing it.
 
-##### Explain molding processes
+##### Molding processes
 
 [Not implemented](#)
 
 Describe shaping polymer or other moldable feedstock in a cavity under suitable temperature or pressure conditions.
 
-##### Explain casting processes
+##### Casting processes
 
 [Not implemented](#)
 
 Trace a poured molten or fluid material through filling a cavity, solidifying and removing a cast product.
 
-##### Explain additive manufacturing
+##### Additive manufacturing
 
 [Not implemented](#)
 
@@ -1620,9 +1700,9 @@ Choose an order that provides access and establishes correct component alignment
 
 [Not implemented](#)
 
-Determine whether dimensional variations still permit a required fit or movement.
+Read permissible dimensions and deviations from a specified manufacturing drawing, deciding whether a measured component meets its stated production limits.
 
-##### Explain quality inspection
+##### Quality inspection
 
 [Not implemented](#)
 
@@ -1654,7 +1734,7 @@ Identify stations and movement of parts from raw inputs to completed products.
 
 Distinguish discrete runs from ongoing manufacture and their changeover implications.
 
-##### Explain automated manufacturing cells
+##### Automated manufacturing cells
 
 [Not implemented](#)
 
@@ -1694,13 +1774,13 @@ Trace named material streams and equipment blocks to determine the order and pur
 
 Relate input, accumulation, product and waste flows across a specified process boundary without confusing mass conservation with constant volume.
 
-##### Explain industrial mixing equipment
+##### Industrial mixing equipment
 
 [Not implemented](#)
 
 Identify agitation or flow arrangements used to distribute multiple ingredients to a required degree of uniformity.
 
-##### Explain dosing equipment
+##### Dosing equipment
 
 [Not implemented](#)
 
@@ -1720,25 +1800,25 @@ Skills: 4
 
 Process apparatus can separate mixtures, support controlled chemical transformations or maintain thermal conditions while containing potentially hazardous materials.
 
-##### Explain industrial separation equipment
+##### Industrial separation equipment
 
 [Not implemented](#)
 
 Distinguish practical roles for filtration, sedimentation, distillation or membrane systems based on which property enables separation.
 
-##### Explain chemical reactor systems
+##### Chemical reactor systems
 
 [Not implemented](#)
 
 Identify containment, feed, mixing, heat control and product removal functions in a vessel designed for a controlled transformation.
 
-##### Explain process heating systems
+##### Process heating systems
 
 [Not implemented](#)
 
 Trace heat delivery and temperature regulation through industrial apparatus rather than treating a heater as an isolated element.
 
-##### Explain process containment
+##### Process containment
 
 [Not implemented](#)
 
@@ -1752,25 +1832,25 @@ Skills: 4
 
 Food and field equipment must handle biological materials with variable properties and constraints involving spoilage, hygiene, water use and environmental conditions.
 
-##### Explain food-preservation equipment
+##### Food-preservation equipment
 
 [Not implemented](#)
 
 Identify how refrigeration, dehydration, heating or sealed packaging apparatus supports a specified preservation process.
 
-##### Explain fermentation production equipment
+##### Fermentation production equipment
 
 [Not implemented](#)
 
 Trace the functions of a vessel, controlled conditions and material handling in an engineered biological production process.
 
-##### Explain irrigation engineering
+##### Irrigation engineering
 
 [Not implemented](#)
 
 Relate water sources, delivery methods and flow control to plant water needs and resource constraints.
 
-##### Explain precision agricultural equipment
+##### Precision agricultural equipment
 
 [Not implemented](#)
 
@@ -1892,13 +1972,13 @@ Inclusive infrastructure requires usable routes and fixtures as well as accessib
 
 [Not implemented](#)
 
-Check whether surfaces, widths, doors and level changes allow required movement.
+Assess an existing connected journey through buildings and public spaces, testing whether doors, surfaces, widths and level changes preserve access. This is different from designing a new internal circulation layout.
 
-##### Select accessible fixtures
+##### Accessible fixture design
 
 [Not implemented](#)
 
-Relate handle choice, reach range and clearances to diverse user needs.
+Assess fixtures for reachable placement, operating force, usable grip and adequate clearance across varied physical abilities.
 
 ##### Compare inclusive design solutions
 
@@ -1906,13 +1986,13 @@ Relate handle choice, reach range and clearances to diverse user needs.
 
 Consider who benefits or remains excluded when choosing a physical design alternative.
 
-### Biomimicry and Biomedical Engineering
+### Biomimicry
 
-Groups: 3 · Skills: 11
+Groups: 2 · Skills: 8
 
 [Not implemented](#)
 
-Natural structures can suggest transferable technical principles, while assistive and medical equipment must respond to demanding human-use constraints. Studying biological adaptations is not itself engineering until a technical solution is proposed and evaluated.
+Nature-inspired engineering abstracts useful functional strategies from living systems and subjects technical adaptations to testing. Evolution is not intentional design, and merely studying an organism is not itself an engineering competency.
 
 #### Nature-Inspired Design
 
@@ -1954,29 +2034,37 @@ Skills: 4
 
 Distinct examples show recurring design strategies, not a separate Skill for every organism.
 
-##### Explain bio-inspired attachment
+##### Bio-inspired attachment
 
 [Not implemented](#)
 
 Relate hooks or structured surfaces to engineered removable fasteners or adhesion.
 
-##### Explain self-cleaning surfaces
+##### Self-cleaning surfaces
 
 [Not implemented](#)
 
 Connect surface texture and wetting behavior with liquid and dirt removal.
 
-##### Explain biomimetic streamlining
+##### Biomimetic streamlining
 
 [Not implemented](#)
 
 Relate a biological shape to a proposed drag-reducing vehicle design requiring testing.
 
-##### Explain lightweight bio-inspired structures
+##### Lightweight bio-inspired structures
 
 [Not implemented](#)
 
 Identify shells, cellular patterns or branching that motivate efficient material placement.
+
+### Biomedical and Assistive Engineering
+
+Groups: 2 · Skills: 6
+
+[Not implemented](#)
+
+Devices supporting, measuring or interacting with human bodies must satisfy suitable physical interfaces, reliability and safe-use constraints. Clinical diagnosis and the biology of the human body remain outside this engineering domain.
 
 #### Assistive and Medical Products
 
@@ -1986,13 +2074,13 @@ Skills: 3
 
 Devices that contact or support human bodies require function, fit and safety considerations beyond an ordinary consumer gadget.
 
-##### Explain prosthetic device functions
+##### Prosthetic device functions
 
 [Not implemented](#)
 
 Identify attachment, structural support, alignment and intended functional replacement.
 
-##### Explain hearing-assistance devices
+##### Hearing-assistance devices
 
 [Not implemented](#)
 
@@ -2003,6 +2091,32 @@ Trace sound pickup, processing, amplification or other output and fitting.
 [Not implemented](#)
 
 Recognize hygiene, safe contact, reliable operation, usability and failure consequences.
+
+#### Medical Measurement Devices
+
+Skills: 3
+
+[Not implemented](#)
+
+Biomedical devices measure physiological or physical signals with specialized coupling, safety and reliability concerns distinct from ordinary industrial sensing.
+
+##### Physiological monitoring devices
+
+[Not implemented](#)
+
+Identify the sensing, acquisition and physical protection subsystems used to measure temperature, electrical activity or oxygen saturation without inferring clinical diagnoses.
+
+##### Diagnostic imaging hardware
+
+[Not implemented](#)
+
+Distinguish sources, detectors, positioning and associated hardware in ultrasound, radiographic or magnetic-resonance equipment without teaching clinical image interpretation.
+
+##### Biomedical measurement reliability
+
+[Not implemented](#)
+
+Assess calibration, interference, patient-contact conditions and signal reliability limits relevant to measurements by a medical device.
 
 ### Safety, Sustainability, and Responsibility
 
@@ -2070,13 +2184,13 @@ Recognize hazardous motion, temperature, electricity, pressure or stored energy 
 
 Consider plausible consequence and occurrence in an explicitly described operating situation.
 
-##### Select risk-reduction measures
+##### Hazard-control measures
 
 [Not implemented](#)
 
-Prioritize safer geometry, guarding, isolation or appropriate protective controls.
+Distinguish elimination, guarding, isolation, automatic protection and warnings by the actual risks each addresses. Selecting a particular safeguard for an exercise is a task variant.
 
-##### Explain safety margins
+##### Safety margins
 
 [Not implemented](#)
 
@@ -2119,4 +2233,3 @@ State assumptions and unverified safety claims instead of generalizing from limi
 [Not implemented](#)
 
 Explain how safety, access, resource use and cost influenced a choice.
-
