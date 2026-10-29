@@ -1634,7 +1634,7 @@ Code: [Code](../../src/data/skillsTaxonomy/measurement/temperature/skills/readTe
 
 Між позначками 0 і 10 на рівномірній шкалі термометра проміжні поділки мають числові значення; без одиниці запис неповний.
 
-#### Вимірювальні навички
+#### General measurement skills
 
 Skills: 3
 
@@ -1642,25 +1642,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/general.data.ts)
 
-##### Пояснювати, чому для порівняння вимірів потрібна узгоджена одиниця
+##### Explaining why common measurement units are needed
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/standardUnitPurpose.data.ts)
 
 Значення «10» на шкалах сантиметрів і міліметрів не позначають однакової довжини; одиниці є частиною виміру.
 
-##### Вибирати доречну одиницю для довжини, маси чи місткості
+##### Choosing suitable units for length, mass or capacity
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/chooseAppropriateUnit.data.ts)
 
 Шлях між містами зручно задавати в кілометрах, масу яблука — у грамах, місткість пляшки — у літрах.
 
-##### Розв’язувати практичні задачі на величини в однакових або сумісних одиницях
+##### Solving measurement word problems with compatible units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/wordProblemsMeasures.data.ts)
 
 Дії з 2 м і 30 см вимагають спільної одиниці або явного перетворення; відповідь має зберігати фізичний зміст.
 
-### Час
+### Time
 
 Groups: 3 · Skills: 13
 
@@ -1668,7 +1668,7 @@ Code: [Code](../../src/data/skillsTaxonomy/time/time.data.ts)
 
 Поєднує календарні цикли, способи запису моменту часу й обчислення тривалості подій; розмежовує дату, показ годинника та часовий інтервал.
 
-#### Календар
+#### Calendar
 
 Skills: 4
 
@@ -1676,31 +1676,31 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/calendar.data.ts)
 
-##### Упорядковувати частини доби та пов’язувати їх із повсякденними подіями
+##### Sequencing parts of the day
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/daySequence.data.ts)
 
 Ранок, день, вечір і ніч утворюють повторюваний цикл; одна подія може відбуватися в різні його частини.
 
-##### Пояснювати відмінність звичайного і високосного років та користуватися календарем
+##### Distinguishing common and leap years
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/leapYearDays.data.ts)
 
 Звичайний рік має 365 днів, високосний — 366; додатковий день припадає на лютий.
 
-##### Називати дні тижня, місяці року й орієнтуватися в календарі
+##### Navigating days, weeks, and months in a calendar
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/weekMonthYear.data.ts)
 
 Семиденний тиждень і послідовність місяців повторюються, але місяці мають різну тривалість.
 
-##### Визначати кількість днів між календарними датами в нескладних випадках
+##### Counting days between dates
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/calendarInterval.data.ts)
 
 Для дат 10 і 13 числа одного місяця пройде три доби; підрахунок не дорівнює кількості перелічених дат включно.
 
-#### Годинник
+#### Reading clocks
 
 Skills: 5
 
@@ -1708,31 +1708,31 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/clock.data.ts)
 
-##### Читати 24-годинний запис часу та співвідносити його з часом доби
+##### Reading 24-hour time
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/read24HourClock.data.ts)
 
 14:30 — це друга година тридцять хвилин після полудня; формат 24 години усуває неоднозначність «ранок/вечір».
 
-##### Визначати час на аналоговому та цифровому годиннику з точністю до години
+##### Reading time to the hour
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readHour.data.ts)
 
 Положення годинної стрілки і цифровий запис 8:00 мають однаковий зміст; хвилинна стрілка стоїть на 12.
 
-##### Зчитувати половину та чверть години на годиннику
+##### Reading half-hours and quarter-hours
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readHalfQuarter.data.ts)
 
 За половини години хвилинна стрілка на 6, за чверті — на 3; годинна стрілка поступово рухається між числами.
 
-##### Зчитувати час із точністю до п’яти хвилин
+##### Reading time to five minutes
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readFiveMinute.data.ts)
 
 Поділка 1 на циферблаті відповідає п’яти хвилинам, 2 — десяти; інтервали однакові.
 
-##### Зчитувати й записувати час із точністю до хвилини
+##### Reading and recording time to the minute
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readMinute.data.ts)
 
