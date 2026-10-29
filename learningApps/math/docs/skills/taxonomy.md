@@ -1118,43 +1118,43 @@ Skills: 6
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/unknowns.data.ts)
 
-##### Знаходити невідомий доданок і перевіряти результат
+##### Finding an unknown addend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownAddend.data.ts)
 
 У □ + 6 = 14 шукане знаходять як 14 − 6 і повертають у рівняння для перевірки.
 
-##### Знаходити невідоме зменшуване і перевіряти результат
+##### Finding an unknown minuend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownMinuend.data.ts)
 
 У □ − 4 = 9 початкове число відновлюють додаванням 9 + 4.
 
-##### Знаходити невідомий від’ємник і перевіряти результат
+##### Finding an unknown subtrahend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownSubtrahend.data.ts)
 
 У 15 − □ = 7 потрібно вилучити вісім, а не шукати різницю як нове невідоме зменшуване.
 
-##### Знаходити невідомий множник за відомими добутком і множником
+##### Finding an unknown factor
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownFactor.data.ts)
 
 У □ × 5 = 20 значення пропуску дорівнює 4, оскільки 20 ÷ 5 = 4.
 
-##### Знаходити невідоме ділене в простих рівняннях
+##### Finding an unknown dividend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownDividend.data.ts)
 
 У □ ÷ 3 = 7 шукане ділене — це сім рівних груп по три одиниці, тобто 21.
 
-##### Знаходити невідомий дільник у простих рівняннях із ненульовими числами
+##### Finding an unknown divisor
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownDivisor.data.ts)
 
 У 24 ÷ □ = 6 потрібен дільник 4; його перевіряють множенням 6 × 4.
 
-#### Закономірності
+#### Patterns
 
 Skills: 2
 
@@ -1162,19 +1162,19 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/patterns.data.ts)
 
-##### Знаходити й продовжувати числову закономірність з постійним кроком
+##### Continuing numerical patterns with a constant step
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/skills/arithmeticPattern.data.ts)
 
 Ряд 4, 7, 10, 13 зберігає крок три; новий член отримують з попереднього тим самим приростом.
 
-##### Визначати правило зростання закономірності за кількома прикладами
+##### Finding the rule of a growing pattern
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/skills/growingPattern.data.ts)
 
 За кількома значеннями 2, 6, 10 можна припустити правило +4, але його треба перевірити на решті заданих членів.
 
-#### Символьне моделювання
+#### Symbolic modeling
 
 Skills: 1
 
@@ -1182,13 +1182,13 @@ Skills: 1
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/formalization/formalization.data.ts)
 
-##### Перекладати просту ситуацію в числовий вираз або рівняння
+##### Representing a situation with an expression or equation
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/formalization/skills/translateSituation.data.ts)
 
 Ситуацію «три коробки по п’ять олівців» відображає 3 × 5; форма запису повинна відповідати саме відношенню в умові.
 
-### Геометрія
+### Geometry
 
 Groups: 10 · Skills: 35
 
@@ -1196,7 +1196,7 @@ Code: [Code](../../src/data/skillsTaxonomy/geometry/geometry.data.ts)
 
 Охоплює просторові відношення, властивості плоских і об’ємних фігур, лінії й кути, геометричні перетворення, а також вимірювання периметра та площі.
 
-#### Просторова орієнтація
+#### Spatial orientation
 
 Skills: 3
 
@@ -1204,19 +1204,19 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/orientation.data.ts)
 
-##### Описувати положення об’єкта: ліворуч, праворуч, вище, нижче, між, перед, за
+##### Describing relative positions
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/positionWords.data.ts)
 
 Опис «ліворуч від дерева, перед будинком» залежить від точки відліку; взаємне положення не тотожне абсолютній координаті.
 
-##### Читати й складати простий план на сітці та описувати шлях/позицію
+##### Reading and drawing simple grid maps
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/gridMapNavigation.data.ts)
 
 На сітці маршрут складають із переходів між клітинками чи вузлами; кінцеве місце має відповідати вихідним напрямкам.
 
-##### Складати й виконувати покрокові просторові інструкції маршруту
+##### Giving and following route directions
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOrientationPath.data.ts)
 
