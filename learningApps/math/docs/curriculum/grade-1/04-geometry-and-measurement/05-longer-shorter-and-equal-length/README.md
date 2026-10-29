@@ -11,8 +11,8 @@ Align starts, avoid gaps, and explain why a common unit is needed.
 
 ## Target Skills
 
-- [Comparing lengths directly and indirectly](../../../../../src/data/skillsTaxonomy/measurement/length/skills/compareLength.data.ts)
-- [Measuring length with repeated nonstandard units](../../../../../src/data/skillsTaxonomy/measurement/length/skills/nonstandardLength.data.ts)
+- [Compare Length](../../../../../src/data/skillsTaxonomy/measurement/length/skills/compareLength.data.ts)
+- [Nonstandard Length](../../../../../src/data/skillsTaxonomy/measurement/length/skills/nonstandardLength.data.ts)
 
 ## Storyboard (draft)
 

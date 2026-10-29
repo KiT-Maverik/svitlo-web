@@ -11,8 +11,8 @@ Distinguish a balance comparison from the volume a container can hold.
 
 ## Target Skills
 
-- [Comparing masses using a balance](../../../../../src/data/skillsTaxonomy/measurement/mass/skills/compareMass.data.ts)
-- [Comparing container capacities by pouring or measuring](../../../../../src/data/skillsTaxonomy/measurement/capacity/skills/capacityConcept.data.ts)
+- [Compare Mass](../../../../../src/data/skillsTaxonomy/measurement/mass/skills/compareMass.data.ts)
+- [Capacity Concept](../../../../../src/data/skillsTaxonomy/measurement/capacity/skills/capacityConcept.data.ts)
 
 ## Storyboard (draft)
 

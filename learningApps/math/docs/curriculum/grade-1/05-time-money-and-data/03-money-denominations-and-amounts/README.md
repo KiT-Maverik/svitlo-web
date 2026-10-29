@@ -11,9 +11,9 @@ Use an illustrative currency or a verified locale-specific set of denominations,
 
 ## Target Skills
 
-- [Recognizing coin and banknote denominations](../../../../../src/data/skillsTaxonomy/money/denominations/skills/recognizeDenominations.data.ts)
-- [Composing a money amount](../../../../../src/data/skillsTaxonomy/money/denominations/skills/composeAmount.data.ts)
-- [Comparing money amounts](../../../../../src/data/skillsTaxonomy/money/denominations/skills/compareAmounts.data.ts)
+- [Recognize Denominations](../../../../../src/data/skillsTaxonomy/money/denominations/skills/recognizeDenominations.data.ts)
+- [Compose Amount](../../../../../src/data/skillsTaxonomy/money/denominations/skills/composeAmount.data.ts)
+- [Compare Amounts](../../../../../src/data/skillsTaxonomy/money/denominations/skills/compareAmounts.data.ts)
 
 ## Storyboard (draft)
 

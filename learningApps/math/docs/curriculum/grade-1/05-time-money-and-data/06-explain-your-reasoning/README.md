@@ -11,9 +11,9 @@ Select and justify the operation with concrete evidence, not only a keyword.
 
 ## Target Skills
 
-- [Representing a situation with an expression or equation](../../../../../src/data/skillsTaxonomy/algebra/formalization/skills/translateSituation.data.ts)
-- [Classifying objects or numbers by a rule and justifying the choice](../../../../../src/data/skillsTaxonomy/reasoning/argumentation/skills/classifyAndJustify.data.ts)
-- [Converting between concrete, diagrammatic, verbal and symbolic representations](../../../../../src/data/skillsTaxonomy/reasoning/representations/skills/multipleRepresentations.data.ts)
+- [Translate Situation](../../../../../src/data/skillsTaxonomy/algebra/formalization/skills/translateSituation.data.ts)
+- [Classify And Justify](../../../../../src/data/skillsTaxonomy/reasoning/argumentation/skills/classifyAndJustify.data.ts)
+- [Multiple Representations](../../../../../src/data/skillsTaxonomy/reasoning/representations/skills/multipleRepresentations.data.ts)
 
 ## Storyboard (draft)
 

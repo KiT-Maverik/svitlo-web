@@ -11,7 +11,7 @@ Use a reference length, compare estimated and measured results, and learn from t
 
 ## Target Skills
 
-- [Estimating length and checking by measurement](../../../../../src/data/skillsTaxonomy/measurement/length/skills/estimateLength.data.ts)
+- [Estimate Length](../../../../../src/data/skillsTaxonomy/measurement/length/skills/estimateLength.data.ts)
 
 ## Storyboard (draft)
 

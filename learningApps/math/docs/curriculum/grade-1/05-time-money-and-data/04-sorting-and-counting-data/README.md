@@ -11,8 +11,8 @@ Choose a sorting attribute, assign each item once, and check category totals.
 
 ## Target Skills
 
-- [Classifying objects by attributes](../../../../../src/data/skillsTaxonomy/data/collection/skills/classifyByAttribute.data.ts)
-- [Counting category frequencies](../../../../../src/data/skillsTaxonomy/data/collection/skills/collectCounts.data.ts)
+- [Classify By Attribute](../../../../../src/data/skillsTaxonomy/data/collection/skills/classifyByAttribute.data.ts)
+- [Collect Counts](../../../../../src/data/skillsTaxonomy/data/collection/skills/collectCounts.data.ts)
 
 ## Storyboard (draft)
 

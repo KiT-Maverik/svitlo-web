@@ -11,8 +11,8 @@ Count centimeter intervals rather than tick marks; use a consistent virtual scal
 
 ## Target Skills
 
-- [Starting ruler measurements at zero](../../../../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
-- [Measuring and drawing segments in centimeters](../../../../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
+- [Ruler Zero](../../../../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
+- [Measure Centimeters](../../../../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
 
 ## Storyboard (draft)
 

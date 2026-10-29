@@ -11,7 +11,7 @@ Assemble and separate plane figures without losing or overlapping components.
 
 ## Target Skills
 
-- [Composing and decomposing plane figures](../../../../../src/data/skillsTaxonomy/geometry/figures/skills/composeDecomposeShapes.data.ts)
+- [Compose Decompose Shapes](../../../../../src/data/skillsTaxonomy/geometry/figures/skills/composeDecomposeShapes.data.ts)
 
 ## Storyboard (draft)
 

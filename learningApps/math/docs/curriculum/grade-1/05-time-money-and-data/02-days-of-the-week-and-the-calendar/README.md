@@ -11,7 +11,7 @@ Locate dates and months without assuming a universal start-of-week column.
 
 ## Target Skills
 
-- [Navigating days, weeks, and months in a calendar](../../../../../src/data/skillsTaxonomy/time/calendar/skills/weekMonthYear.data.ts)
+- [Week Month Year](../../../../../src/data/skillsTaxonomy/time/calendar/skills/weekMonthYear.data.ts)
 
 ## Storyboard (draft)
 

@@ -11,8 +11,8 @@ Find category values, interpret explicit zeroes, and observe the pictograph lege
 
 ## Target Skills
 
-- [Reading a simple data table](../../../../../src/data/skillsTaxonomy/data/presentation/skills/readSimpleTable.data.ts)
-- [Reading a one-to-one pictograph](../../../../../src/data/skillsTaxonomy/data/presentation/skills/readPictograph.data.ts)
+- [Read Simple Table](../../../../../src/data/skillsTaxonomy/data/presentation/skills/readSimpleTable.data.ts)
+- [Read Pictograph](../../../../../src/data/skillsTaxonomy/data/presentation/skills/readPictograph.data.ts)
 
 ## Storyboard (draft)
 

@@ -11,8 +11,8 @@ Recognize morning/day/evening/night and distinguish a clock reading from time-of
 
 ## Target Skills
 
-- [Sequencing parts of the day](../../../../../src/data/skillsTaxonomy/time/calendar/skills/daySequence.data.ts)
-- [Reading time to the hour](../../../../../src/data/skillsTaxonomy/time/clock/skills/readHour.data.ts)
+- [Day Sequence](../../../../../src/data/skillsTaxonomy/time/calendar/skills/daySequence.data.ts)
+- [Read Hour](../../../../../src/data/skillsTaxonomy/time/clock/skills/readHour.data.ts)
 
 ## Storyboard (draft)
 
