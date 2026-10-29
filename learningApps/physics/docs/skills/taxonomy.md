@@ -978,329 +978,329 @@ Particles of matter are constantly moving, but not all at the same speed; the ty
 
 Code: [Not implemented](#)
 
-Сукупні зіткнення частинок зі стінками посудини спричиняють силу на одиницю площі, тобто тиск.
+The combined collisions of particles with the vessel walls produce force per unit area, that is, pressure.
 
-##### Пояснювати теплове розширення через рух та взаємодію частинок
-
-Code: [Not implemented](#)
-
-Нагрівання часто змінює середні відстані між частинками, а не розміри самих молекул.
-
-##### Пояснювати властивості агрегатних станів через рух частинок
+##### Explain thermal expansion through particle motion and interactions
 
 Code: [Not implemented](#)
 
-Відмінності розташування, руху й взаємодій частинок пояснюють властивості твердого, рідкого й газоподібного станів.
+Heating often changes the average distances between particles, not the sizes of the molecules themselves.
 
-#### Дифузія та змішування
+##### Explain the properties of states of matter through particle motion
+
+Code: [Not implemented](#)
+
+Differences in the arrangement, motion, and interactions of particles explain the properties of solids, liquids, and gases.
+
+#### Diffusion and Mixing
 
 Skills: 1
 
 Code: [Not implemented](#)
 
-Безладний тепловий рух може спричинювати поступове поширення частинок без спеціального перемішування.
+Random thermal motion can cause particles to spread gradually without deliberate stirring.
 
-##### Пояснювати дифузію
+##### Explain diffusion
 
 Code: [Not implemented](#)
 
-Дифузія є результатом теплового руху частинок і поступового вирівнювання їхніх концентрацій без необхідності макроскопічного перемішування.
+Diffusion results from particles' thermal motion and the gradual equalization of their concentrations without the need for macroscopic mixing.
 
-#### Властивості газів
+#### Gas Properties
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Стисливість газів та залежність їхнього тиску від умов випливають із руху частинок і проміжків між ними.
+The compressibility of gases and the dependence of their pressure on conditions follow from particle motion and the spaces between particles.
 
-##### Пояснювати стисливість газів
-
-Code: [Not implemented](#)
-
-Під час стискання газу середні проміжки між частинками зменшуються, а розміри молекул залишаються практично незмінними.
-
-##### Пояснювати залежність тиску газу від температури за сталого об'єму
+##### Explain gas compressibility
 
 Code: [Not implemented](#)
 
-За сталого об'єму підвищення температури газу зазвичай збільшує тиск завдяки інтенсивнішому руху частинок.
+Compressing a gas reduces the average distances between particles while the sizes of the molecules remain virtually unchanged.
 
-### Електромагнетизм
+##### Explain how gas pressure depends on temperature at constant volume
+
+Code: [Not implemented](#)
+
+At constant volume, increasing a gas's temperature generally increases its pressure because the particles move more vigorously.
+
+### Electromagnetism
 
 Groups: 8 · Skills: 31
 
 Code: [Not implemented](#)
 
-Електричні заряди, струм і магнітні поля описують пов'язані взаємодії; електрика та магнетизм мають спільні принципи, але різні початкові спостереження.
+Electric charges, currents, and magnetic fields describe related interactions; electricity and magnetism share underlying principles but begin with different observations.
 
-#### Електричні заряди та взаємодії
+#### Electric Charges and Interactions
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Електризація, взаємодія заряджених тіл і перенесення заряду підпорядковуються закону збереження електричного заряду. Електрична взаємодія можлива без безпосереднього контакту.
+Electrification, interactions between charged bodies, and charge transfer obey conservation of electric charge. Electric interaction can occur without direct contact.
 
-##### Розпізнавати електризацію предметів тертям
-
-Code: [Not implemented](#)
-
-На безпечній моделі кульки або гребінця пов'язувати тертя з появою електростатичних ефектів, не пояснюючи їх магнітним притяганням.
-
-##### Розрізняти притягання й відштовхування електричних зарядів
+##### Recognize the charging of objects by friction
 
 Code: [Not implemented](#)
 
-Заряди однакового знака відштовхуються, а протилежного — притягуються; електрична взаємодія відрізняється від магнітної.
+Using a safe balloon or comb model, connect friction with electrostatic effects rather than attributing them to magnetic attraction.
 
-##### Пояснювати закон збереження електричного заряду
+##### Distinguish attraction from repulsion between electric charges
 
 Code: [Not implemented](#)
 
-Повний заряд ізольованої системи зберігається під час перенесення заряду та фізичних взаємодій.
+Like charges repel and unlike charges attract; electric interaction is distinct from magnetic interaction.
 
-#### Електричні кола
+##### Explain conservation of electric charge
+
+Code: [Not implemented](#)
+
+The total charge of an isolated system is conserved during charge transfer and physical interactions.
+
+#### Electric Circuits
 
 Skills: 9
 
 Code: [Not implemented](#)
 
-Електричне коло потребує провідного шляху, джерела й елементів, взаємодія яких визначає роботу безпечної моделі.
+An electric circuit needs a conducting path, a source, and components whose interactions determine the operation of a safe model.
 
-##### Розпізнавати джерело електроживлення
-
-Code: [Not implemented](#)
-
-Джерело підтримує різницю потенціалів між виводами й забезпечує перетворення інших видів енергії на електричну, на відміну від пасивного провідника.
-
-##### Розпізнавати споживач електроенергії
+##### Identify an electrical power source
 
 Code: [Not implemented](#)
 
-Споживач перетворює отриману електричну енергію на теплову, механічну, світлову чи інші форми, а не просто «використовує струм».
+A source maintains a potential difference between its terminals and converts other forms of energy into electrical energy, unlike a passive conductor.
 
-##### Розпізнавати призначення вимикача
-
-Code: [Not implemented](#)
-
-Вимикач змінює стан провідного шляху та може перервати струм у певній гілці, але сам не є джерелом енергії.
-
-##### Розпізнавати замкнене електричне коло
+##### Identify a consumer of electrical energy
 
 Code: [Not implemented](#)
 
-Замкнене коло має неперервний провідний шлях, а для сталого струму потрібна також умова наявності джерела електрорушійної сили.
+An electrical load converts received electrical energy into thermal, mechanical, light, or other forms, rather than merely "using current."
 
-##### Пояснювати розрив електричного кола
-
-Code: [Not implemented](#)
-
-Розімкнення певної гілки перериває її провідний шлях; в колі з паралельними гілками інші ділянки можуть продовжувати працювати.
-
-##### Прогнозувати дію вимикача в колі
+##### Identify the function of a switch
 
 Code: [Not implemented](#)
 
-Наслідки перемикання залежать від розташування вимикача щодо джерела, споживачів та паралельних шляхів.
+A switch changes the state of a conducting path and can interrupt current in a particular branch, but it is not itself an energy source.
 
-##### Пояснювати послідовне з'єднання елементів електричного кола
-
-Code: [Not implemented](#)
-
-Послідовні елементи перебувають на спільному шляху струму: через них проходить однаковий струм, а загальна напруга на сукупності елементів складається з напруг на окремих елементах. Розрив єдиного шляху перериває струм через усі ці елементи.
-
-##### Пояснювати паралельне з'єднання елементів електричного кола
+##### Recognize a closed electric circuit
 
 Code: [Not implemented](#)
 
-Паралельні гілки підключені до тих самих двох вузлів, тому напруга на кожній гілці однакова, а загальний струм розподіляється між гілками. Розрив однієї гілки не обов'язково перериває струм в інших.
+A closed circuit has a continuous conducting path; sustained current also requires a source of electromotive force.
 
-##### Пояснювати баланс струмів у вузлі електричного кола
+##### Explain an open circuit
 
 Code: [Not implemented](#)
 
-За усталеного струму заряд не накопичується у вузлі; сумарний струм, що входить, дорівнює сумарному струму, що виходить.
+Opening a branch interrupts its conducting path; in a circuit with parallel branches, other parts may continue to operate.
 
-#### Провідники та ізолятори
+##### Predict the effect of a switch in a circuit
+
+Code: [Not implemented](#)
+
+The consequences of switching depend on where the switch is placed relative to the source, loads, and parallel paths.
+
+##### Explain series connections of electric circuit components
+
+Code: [Not implemented](#)
+
+Components connected in series share a common current path: the same current passes through each, and the total voltage across the combination is the sum of the voltages across the individual components. Breaking the single path stops current through all those components.
+
+##### Explain parallel connections of electric circuit components
+
+Code: [Not implemented](#)
+
+Parallel branches connect to the same two nodes, so each has the same voltage and the total current is divided among the branches. Opening one branch does not necessarily stop current in the others.
+
+##### Explain current balance at a circuit node
+
+Code: [Not implemented](#)
+
+Under steady current, charge does not accumulate at a node; the total current entering equals the total current leaving.
+
+#### Conductors and Insulators
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Матеріали по-різному забезпечують рух електричних зарядів; важливо розрізняти електричну властивість речовини й призначення пристрою.
+Materials differ in how readily they permit electric charge to move; distinguish an electrical property of a material from a device's purpose.
 
-##### Розпізнавати електропровідні матеріали
-
-Code: [Not implemented](#)
-
-Визначати за дослідом матеріали, які замикають низьковольтне коло.
-
-##### Розпізнавати електроізоляційні матеріали
+##### Identify electrically conductive materials
 
 Code: [Not implemented](#)
 
-Визначати за дослідом матеріали, які перешкоджають проходженню струму.
+Determine experimentally which materials complete a low-voltage circuit.
 
-#### Магнітні властивості та взаємодії
+##### Identify electrically insulating materials
+
+Code: [Not implemented](#)
+
+Determine experimentally which materials impede the flow of current.
+
+#### Magnetic Properties and Interactions
 
 Skills: 6
 
 Code: [Not implemented](#)
 
-Матеріали та орієнтація полюсів впливають на взаємодію; контакт між магнітами не обов'язковий.
+Materials and pole orientation affect interactions; direct contact between magnets is not required.
 
-##### Розпізнавати матеріали, що притягуються магнітом
-
-Code: [Not implemented](#)
-
-Помітна дія магнітного поля на матеріал залежить від його магнітних властивостей; не всі метали притягуються однаково.
-
-##### Класифікувати предмети за магнітною взаємодією
+##### Identify materials attracted to a magnet
 
 Code: [Not implemented](#)
 
-Групування ґрунтується на напрямку та величині магнітної відповіді матеріалу за відповідних умов; це не те саме, що визначення наявності власного магнітного поля.
+The observable effect of a magnetic field on a material depends on its magnetic properties; not all metals are attracted equally.
 
-##### Розпізнавати магнітне притягання
-
-Code: [Not implemented](#)
-
-Визначати ситуацію зближення магнітів через їхню взаємодію.
-
-##### Розпізнавати магнітне відштовхування
+##### Classify objects by magnetic interaction
 
 Code: [Not implemented](#)
 
-Визначати ситуацію віддалення магнітів через їхню взаємодію.
+Classification is based on the direction and magnitude of a material's magnetic response under relevant conditions; this is not the same as determining whether it has its own magnetic field.
 
-##### Передбачати взаємодію полюсів
-
-Code: [Not implemented](#)
-
-Визначати притягання чи відштовхування за відомим розташуванням полюсів.
-
-##### Пояснювати магнітну дію без контакту
+##### Recognize magnetic attraction
 
 Code: [Not implemented](#)
 
-Розпізнавати магнітну силу як взаємодію, для якої безпосередній дотик не потрібний.
+Identify a situation in which magnets move toward one another due to their interaction.
 
-#### Електромагніти та індукція
+##### Recognize magnetic repulsion
+
+Code: [Not implemented](#)
+
+Identify a situation in which magnets move apart due to their interaction.
+
+##### Predict interactions between magnetic poles
+
+Code: [Not implemented](#)
+
+Determine attraction or repulsion from a known arrangement of poles.
+
+##### Explain magnetic action without contact
+
+Code: [Not implemented](#)
+
+Recognize magnetic force as an interaction that does not require direct contact.
+
+#### Electromagnets and Induction
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Електричний струм може створювати магнітне поле, а зміна магнітних умов — електричну дію, що пояснює роботу багатьох систем.
+Electric current can create a magnetic field, and changing magnetic conditions can produce electrical effects, explaining many systems.
 
-##### Пояснювати магнітну дію електричного струму
-
-Code: [Not implemented](#)
-
-Рух електричних зарядів створює магнітне поле; зміна струму змінює створене ним поле й відповідні магнітні взаємодії.
-
-##### Пояснювати виникнення індукованого струму
+##### Explain the magnetic effect of electric current
 
 Code: [Not implemented](#)
 
-Зміна магнітного потоку крізь замкнений провідний контур може спричиняти індуковану електрорушійну силу та струм; сталий потік сам собою струму не створює.
+Moving electric charges create a magnetic field; changing the current changes the field it produces and the associated magnetic interactions.
 
-#### Магнітна дія у фізичних системах
+##### Explain how induced current arises
+
+Code: [Not implemented](#)
+
+A changing magnetic flux through a closed conducting loop can induce an electromotive force and current; constant flux by itself does not generate current.
+
+#### Magnetic Effects in Physical Systems
 
 Skills: 1
 
 Code: [Not implemented](#)
 
-Магнітні сили в реальних системах пояснюються полем та властивостями матеріалів; вибір конструктивного рішення належить до інженерії.
+Magnetic forces in real systems are explained by fields and material properties; choosing an engineering design belongs to Engineering.
 
-##### Пояснювати фізичну роль магнітного поля у системі
+##### Explain the physical role of a magnetic field in a system
 
 Code: [Not implemented](#)
 
-Визначати, як магнітна взаємодія впливає на рух або стан системи, не переходячи до вибору технічного компонента.
+Determine how magnetic interaction affects a system's motion or state without proceeding to select a technical component.
 
-#### Електричне та магнітне поля
+#### Electric and Magnetic Fields
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Поля описують взаємодію електричних зарядів і магнітних систем без прямого контакту, але відрізняються фізичними проявами.
+Fields describe interactions involving electric charges and magnetic systems without direct contact, but their physical effects differ.
 
-##### Пояснювати електричне поле
-
-Code: [Not implemented](#)
-
-Електричне поле визначає силу, що діє на електричний заряд, і існує незалежно від пробного заряду.
-
-##### Пояснювати магнітне поле
+##### Explain the electric field
 
 Code: [Not implemented](#)
 
-Магнітне поле може діяти на рухомі заряди й магнітні системи; напрям та величина його проявів залежать від умов.
+An electric field determines the force on an electric charge and exists independently of a test charge.
 
-##### Розрізняти електричне та магнітне поле
+##### Explain the magnetic field
 
 Code: [Not implemented](#)
 
-Електричне поле може діяти на нерухомий заряд, а магнітна складова сили на заряд залежить від його руху.
+A magnetic field can act on moving charges and magnetic systems; the direction and magnitude of its effects depend on conditions.
 
-#### Струм, напруга та опір
+##### Distinguish electric from magnetic fields
+
+Code: [Not implemented](#)
+
+An electric field can act on a stationary charge, whereas the magnetic component of the force on a charge depends on its motion.
+
+#### Current, Voltage, and Resistance
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Струм описує рух електричного заряду, напруга — різницю потенціалів, опір — протидію струму за певних фізичних умов.
+Current describes the flow of electric charge, voltage is a potential difference, and resistance is opposition to current under specified physical conditions.
 
-##### Пояснювати електричний струм
-
-Code: [Not implemented](#)
-
-Електричний струм пов'язаний із напрямленим перенесенням заряду, а не лише з хаотичним рухом носіїв.
-
-##### Пояснювати електричну напругу
+##### Explain electric current
 
 Code: [Not implemented](#)
 
-Напруга визначає різницю електричних потенціалів між двома точками та не є самим струмом.
+Electric current involves directed transport of charge, not merely random motion of charge carriers.
 
-##### Пояснювати електричний опір
-
-Code: [Not implemented](#)
-
-Опір визначає зв'язок напруги та струму в заданих умовах і залежить від матеріалу й геометрії провідника.
-
-##### Пояснювати закон Ома для омічного провідника
+##### Explain electric voltage
 
 Code: [Not implemented](#)
 
-За сталих умов сила струму для омічного провідника прямо пропорційна напрузі; цей закон не описує всі компоненти без винятку.
+Voltage specifies the difference in electric potential between two points and is not current itself.
 
-##### Пояснювати електричну потужність
+##### Explain electrical resistance
 
 Code: [Not implemented](#)
 
-Електрична потужність характеризує швидкість передавання або перетворення електричної енергії.
+Resistance determines the relationship between voltage and current under given conditions and depends on conductor material and geometry.
 
-### Оптика
+##### Explain Ohm's law for an ohmic conductor
+
+Code: [Not implemented](#)
+
+Under constant conditions, the current through an ohmic conductor is directly proportional to voltage; this law does not describe every component without exception.
+
+##### Explain electrical power
+
+Code: [Not implemented](#)
+
+Electrical power describes the rate of electrical energy transfer or transformation.
+
+### Optics
 
 Groups: 5 · Skills: 11
 
 Code: [Not implemented](#)
 
-Оптика досліджує поширення світла, утворення зображень і взаємодію світлових променів із поверхнями, водою та лінзами. Ширший спектр електромагнітного випромінювання класифіковано окремо.
+Optics studies the propagation of light, image formation, and the interaction of light rays with surfaces, water, and lenses. The broader electromagnetic radiation spectrum is classified separately.
 
-#### Джерела та видимість світла
+#### Light Sources and Visibility
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Предмет видно, коли світло від нього потрапляє до ока; джерело світла та освітлена поверхня виконують різні ролі.
+An object is visible when light from it reaches the eye; a light source and an illuminated surface play different roles.
 
-##### Відрізняти джерело світла від освітленого тіла
+##### Distinguish a light source from an illuminated body
 
 Code: [Not implemented](#)
 
