@@ -300,7 +300,7 @@ Combine separately mapped geographic properties to investigate co-occurrence, pr
 
 ### Geographic Objects
 
-Groups: 4 · Skills: 23
+Groups: 4 · Skills: 22
 
 Code: [Not implemented](#)
 
@@ -1134,7 +1134,7 @@ Assess whether geographic corridors or barriers link habitat patches and enable 
 
 ### Human Geography
 
-Groups: 4 · Skills: 16
+Groups: 4 · Skills: 17
 
 Code: [Not implemented](#)
 
