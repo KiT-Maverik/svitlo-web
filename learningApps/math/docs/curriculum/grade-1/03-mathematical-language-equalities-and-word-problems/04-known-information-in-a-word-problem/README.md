@@ -11,7 +11,7 @@ Separate quantities supplied by the story from the quantity still to be found.
 
 ## Target Skills
 
-- [Identifying known and unknown quantities](../../../../../src/data/skillsTaxonomy/problemSolving/conditions/skills/identifyKnownUnknown.data.ts)
+- [Identify Known Unknown](../../../../../src/data/skillsTaxonomy/problemSolving/conditions/skills/identifyKnownUnknown.data.ts)
 
 ## Storyboard (draft)
 

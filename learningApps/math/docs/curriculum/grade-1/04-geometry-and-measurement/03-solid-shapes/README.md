@@ -11,7 +11,7 @@ Distinguish spheres, cubes, cylinders, and cones by visible spatial properties.
 
 ## Target Skills
 
-- [Identifying basic solid figures](../../../../../src/data/skillsTaxonomy/geometry/solids/skills/identify3dSolids.data.ts)
+- [Identify 3 D Solids](../../../../../src/data/skillsTaxonomy/geometry/solids/skills/identify3dSolids.data.ts)
 
 ## Storyboard (draft)
 

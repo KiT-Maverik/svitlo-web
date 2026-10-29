@@ -11,7 +11,7 @@ Choose consistent data, a meaningful event, and a question without revealing the
 
 ## Target Skills
 
-- [Creating a word problem from a model](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/createProblem.data.ts)
+- [Create Problem](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/createProblem.data.ts)
 
 ## Storyboard (draft)
 

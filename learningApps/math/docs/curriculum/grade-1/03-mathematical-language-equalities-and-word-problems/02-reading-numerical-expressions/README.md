@@ -11,7 +11,7 @@ Connect the order of numbers and operation signs with concrete addition and subt
 
 ## Target Skills
 
-- [Reading and writing numerical expressions](../../../../../src/data/skillsTaxonomy/algebra/expressions/skills/readNumericExpressions.data.ts)
+- [Read Numeric Expressions](../../../../../src/data/skillsTaxonomy/algebra/expressions/skills/readNumericExpressions.data.ts)
 
 ## Storyboard (draft)
 

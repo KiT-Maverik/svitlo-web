@@ -11,9 +11,9 @@ Check that a proposed numerical step works across the sequence, not only at its 
 
 ## Target Skills
 
-- [Continuing numerical patterns with a constant step](../../../../../src/data/skillsTaxonomy/algebra/patterns/skills/arithmeticPattern.data.ts)
-- [Completing a numerical or geometric pattern using its rule](../../../../../src/data/skillsTaxonomy/reasoning/logic/skills/completePattern.data.ts)
-- [Explaining a chosen calculation strategy](../../../../../src/data/skillsTaxonomy/reasoning/argumentation/skills/explainStrategy.data.ts)
+- [Arithmetic Pattern](../../../../../src/data/skillsTaxonomy/algebra/patterns/skills/arithmeticPattern.data.ts)
+- [Complete Pattern](../../../../../src/data/skillsTaxonomy/reasoning/logic/skills/completePattern.data.ts)
+- [Explain Strategy](../../../../../src/data/skillsTaxonomy/reasoning/argumentation/skills/explainStrategy.data.ts)
 
 ## Storyboard (draft)
 

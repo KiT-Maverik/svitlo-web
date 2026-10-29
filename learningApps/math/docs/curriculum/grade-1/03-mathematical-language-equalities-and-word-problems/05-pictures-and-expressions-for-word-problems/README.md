@@ -11,8 +11,8 @@ Translate a short story into an object diagram and a matching addition or subtra
 
 ## Target Skills
 
-- [Modeling a one-step problem](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/oneStepModel.data.ts)
-- [Choosing addition or subtraction](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationAddSub.data.ts)
+- [One Step Model](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/oneStepModel.data.ts)
+- [Choose Operation Add Sub](../../../../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOperationAddSub.data.ts)
 
 ## Storyboard (draft)
 

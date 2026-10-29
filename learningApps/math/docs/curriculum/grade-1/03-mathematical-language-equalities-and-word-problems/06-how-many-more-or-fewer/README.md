@@ -11,8 +11,8 @@ Distinguish 'how many more' comparisons from changes in a single quantity.
 
 ## Target Skills
 
-- [Solving additive comparison problems](../../../../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/additiveComparison.data.ts)
-- [Increasing or decreasing by a given amount](../../../../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseNumber.data.ts)
+- [Additive Comparison](../../../../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/additiveComparison.data.ts)
+- [Increase Decrease Number](../../../../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseNumber.data.ts)
 
 ## Storyboard (draft)
 

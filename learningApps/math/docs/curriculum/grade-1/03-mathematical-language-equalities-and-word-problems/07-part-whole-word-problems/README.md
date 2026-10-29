@@ -11,8 +11,8 @@ Decide whether the whole or a part is unknown, then explain what the answer coun
 
 ## Target Skills
 
-- [Solving part-whole and inverse problems](../../../../../src/data/skillsTaxonomy/problemSolving/parts/skills/partWholeAddsub.data.ts)
-- [Checking answer units and reasonableness](../../../../../src/data/skillsTaxonomy/problemSolving/planning/skills/explainAnswerUnits.data.ts)
+- [Part Whole Addsub](../../../../../src/data/skillsTaxonomy/problemSolving/parts/skills/partWholeAddsub.data.ts)
+- [Explain Answer Units](../../../../../src/data/skillsTaxonomy/problemSolving/planning/skills/explainAnswerUnits.data.ts)
 
 ## Storyboard (draft)
 

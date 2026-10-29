@@ -11,8 +11,8 @@ Represent missing quantities and verify each proposed value by substitution.
 
 ## Target Skills
 
-- [Completing a true equality](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/completeEquality.data.ts)
-- [Finding an unknown addend](../../../../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownAddend.data.ts)
+- [Complete Equality](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/completeEquality.data.ts)
+- [Unknown Addend](../../../../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownAddend.data.ts)
 
 ## Storyboard (draft)
 

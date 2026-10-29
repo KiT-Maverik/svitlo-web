@@ -11,8 +11,8 @@ Use clearly named reference points for left, right, between, and path instructio
 
 ## Target Skills
 
-- [Describing relative positions](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/positionWords.data.ts)
-- [Giving and following route directions](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOrientationPath.data.ts)
+- [Position Words](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/positionWords.data.ts)
+- [Spatial Orientation Path](../../../../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOrientationPath.data.ts)
 
 ## Storyboard (draft)
 

@@ -11,7 +11,7 @@ Compare sides, corners, and closure instead of matching a memorized appearance.
 
 ## Target Skills
 
-- [Identifying basic plane figures](../../../../../src/data/skillsTaxonomy/geometry/figures/skills/identify2dShapes.data.ts)
+- [Identify 2 D Shapes](../../../../../src/data/skillsTaxonomy/geometry/figures/skills/identify2dShapes.data.ts)
 
 ## Storyboard (draft)
 
