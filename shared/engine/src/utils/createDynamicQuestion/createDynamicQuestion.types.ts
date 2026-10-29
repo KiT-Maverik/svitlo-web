@@ -1,5 +1,5 @@
-import type { Resource_Config, TextResource_AllLocales_Config } from '../../content';
-import type { NonEmptyArray } from '../../content';
+import type { Resource_Config, TextResource_AllLocales_Config } from '@svitlo/contracts/content';
+import type { NonEmptyArray } from '@svitlo/contracts/content';
 
 export type DynamicQuestion_ArgumentType = 'string' | 'number' | 'boolean';
 

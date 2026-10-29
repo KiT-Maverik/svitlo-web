@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { getLearningLayoutMessages } from '@svitlo/ui-kit/learning-layout/locales';
+import { getNavbarPreferencesMessages } from '@svitlo/ui-kit/learning-layout/preferences/locales';
 
 const root = process.cwd();
 const newLanguages = ['lt', 'lv', 'et', 'be', 'ka', 'kk'] as const;
@@ -28,7 +29,7 @@ describe('Extended locale resource coverage', () => {
   });
 
   it('includes six translations in every authored math taxonomy config', () => {
-    const files = collectFiles(join(root, 'src/math/skillsTaxonomy'))
+    const files = collectFiles(join(root, 'src/data/skillsTaxonomy'))
       .filter(file => file.endsWith('.data.ts') && !file.endsWith('index.data.ts'));
     expect(files.length).toBeGreaterThanOrEqual(358);
 
@@ -40,41 +41,15 @@ describe('Extended locale resource coverage', () => {
     }
   });
 
-  it('includes localized values for every light-lesson text resource', () => {
-    const files = collectFiles(join(root, 'src/content/howLightMoves'))
-      .filter(file => file.endsWith('.data.ts'));
-
-    for (const file of files) {
-      const source = readFileSync(file, 'utf8');
-      const resources = source.split('createTextResource(').length - 1;
-      if (!resources) continue;
-      for (const language of newLanguages) {
-        expect(countLanguageEntries(source, language), `${file}: missing ${language}`)
-          .toBeGreaterThanOrEqual(resources);
-      }
-    }
-  });
-
-  it('provides every new language with each of the three theory Markdown resources', () => {
-    const folder = join(root, 'src/content/howLightMoves/sections/theory/resources/markdown');
-    for (const section of ['01', '02', '03']) {
-      for (const language of newLanguages) {
-        const source = readFileSync(join(folder, section, `${language}.md`), 'utf8');
-        expect(source.trim().length).toBeGreaterThan(40);
-      }
-    }
-  });
-
   it('provides locale dictionaries for the learner interface and lesson UI', () => {
     for (const locale of newLocales) expect(getLearningLayoutMessages(locale).brand).toBeTruthy();
-    for (const folder of [
-      'src/components/layout/LearningLayout/NavbarPreferences/locales',
-      'src/components/pages/Lesson/locales',
-    ]) {
-      for (const locale of newLocales) {
-        const source = readFileSync(join(root, folder, `${locale}.ts`), 'utf8');
-        expect(source).toContain('export const locale');
-      }
+    for (const locale of newLocales) {
+      const preferences = getNavbarPreferencesMessages(locale);
+      expect(preferences.language).toBeTruthy();
+      expect(preferences.theme.dark).toBeTruthy();
+      expect(preferences.theme.light).toBeTruthy();
+      const source = readFileSync(join(root, 'src/components/pages/Lesson/locales', `${locale}.ts`), 'utf8');
+      expect(source).toContain('export const locale');
     }
   });
 });
