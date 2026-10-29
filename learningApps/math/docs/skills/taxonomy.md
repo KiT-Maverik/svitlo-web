@@ -1952,53 +1952,53 @@ Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/missingInf
 
 Таблиця без підпису одиниці або без потрібної категорії може не дозволити визначити значення, про яке запитують.
 
-### Ймовірність
+### Probability
 
 Groups: 2 · Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/probability.data.ts)
 
-Формує якісне розуміння випадковості: можливі, неможливі й достовірні результати, порівняння шансів та мінливість підсумків повторних випробувань.
+The domain develops a qualitative understanding of chance: certain, impossible, and possible outcomes; comparisons of likelihood; and variation between repeated trials.
 
-#### Випадкові події
+#### Random events
 
 Skills: 3
 
-Визначення множини результатів досліду й якісне порівняння можливості подій без хибного припущення про рівні шанси.
-
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/events.data.ts)
 
-##### Розрізняти достовірні й неможливі події на конкретних прикладах
+This group identifies possible outcomes of a chance experiment and compares events qualitatively without incorrectly assuming that all possible events are equally likely.
+
+##### Distinguishing certain and impossible events
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/certainImpossible.data.ts)
 
-Звичайний шестигранний кубик не може показати 9, але обов’язково покаже число від 1 до 6; можливість не означає 50% шансів.
+An ordinary six-sided die cannot roll a 9 but must show a number from 1 to 6. An event being possible does not mean it has a 50% probability.
 
-##### Порівнювати повсякденні події як більш або менш імовірні, пояснюючи вибір
+##### Comparing the likelihood of everyday events
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/likelihoodLanguage.data.ts)
 
-За чесного кубика отримати парне число і отримати саме шістку — події з різними шансами; обидві можливі, але не рівноймовірні.
+For a fair die, rolling an even number and rolling exactly six have different chances. Both events are possible, but they are not equally likely.
 
-##### Називати можливі результати простого випадкового експерименту
+##### Listing possible outcomes of a simple random experiment
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/events/skills/listOutcomes.data.ts)
 
-Для підкидання монети простір результатів складається з двох сторін; перелік має враховувати всі передбачені умовами випадки.
+A coin toss has two possible face-up outcomes. An exhaustive outcome list must account for every case allowed by the stated experimental conditions.
 
-#### Експерименти
+#### Random experiments
 
 Skills: 1
 
-Зміна емпіричних частот у повторних серіях випадкових випробувань, навіть якщо умови кожної серії ті самі.
-
 Code: [Code](../../src/data/skillsTaxonomy/probability/experiments/experiments.data.ts)
 
-##### Порівнювати серії повторних випадкових експериментів і помічати відмінності результатів
+Empirical frequencies may differ between repeated sets of random trials, even when the underlying experimental conditions remain the same.
+
+##### Comparing results of repeated random experiments
 
 Code: [Code](../../src/data/skillsTaxonomy/probability/experiments/skills/experimentVariation.data.ts)
 
-Дві серії по десять підкидань можуть дати різну кількість орлів; випадкова мінливість не свідчить сама по собі про зміну правил.
+Two sets of ten coin tosses can produce different numbers of heads. Such random variation does not, by itself, imply that the experiment's rules have changed.
 
 ### Задачі
 
