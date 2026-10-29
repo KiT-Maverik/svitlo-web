@@ -8,6 +8,10 @@
 
 Read the [Learning Experience Philosophy](../docs/architecture/learning-experience-philosophy.md), [Internationalization & Inclusive Access](../docs/architecture/internationalization-and-accessibility.md) and [Offline/Device Compatibility](../docs/architecture/offline-first-and-device-compatibility.md) when selecting outcomes and learning progressions. The Curriculum is a pedagogical plan, **not a pledge that all these runtime capabilities are complete**; it should preserve accessible, internationally applicable and offline-capable learning intent. The [Lesson Notes mechanism](../docs/architecture/lesson-notes.md) is planned and belongs to detailed Lesson authoring, not as fabricated Curriculum runtime fields.
 
+### Deferred regional Lesson variants
+
+A future Program may offer locale-informed, **user-/teacher-selected regional alternatives** for locally relevant examples (such as biodiversity), while keeping universal Skills stable. **This is NOT a supported Program/Engine behavior or a mandatory new Curriculum field yet.** The design questions, internationalization boundaries, fallback and progress policies are tracked as a future task in [Regional Lesson Variants To Do](../To%20Do/curriculum/regional-lesson-variants.md). Do not fabricate Program fields or implement the selection flow during Curriculum authoring; surface context-specific needs as ordinary editorial notes.
+
 ## ENTITY DEFINITIONS — REQUIRED READING
 
 Before inspecting the taxonomy, read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md). These documents own the semantics and boundaries of the referenced entities; this Curriculum Skill owns their pedagogical sequencing and use.

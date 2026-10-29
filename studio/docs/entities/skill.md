@@ -16,6 +16,16 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 
 **Examples:** multiplying and dividing may be independent; an exercise requiring both can reference both Skill IDs; explaining their inverse relationship may be a separate Skill only if explicitly warranted. Classifying even versus odd can be one coherent ability. `2 × 7` is an exercise variation, not a dedicated Skill.
 
+## MANDATORY EDITOR REVIEW: SKILL OR ASSESSMENT FORMAT?
+
+A candidate is **not** a Skill merely because a learner can perform an observable action. A **Question / Practice task** is an instance of eliciting evidence; a **Skill** is the independently meaningful knowledge or capability such tasks are intended to assess. One Skill can be assessed by many question types, and one Question can draw on several Skills. A change of UI, visual medium, content example, or response format does not by itself establish an additional competency.
+
+**Non-negotiable escalation:** If a proposed or existing Skill could instead be (a) sorting/matching/ordering/drag-and-drop, use of a key or diagram, or another Question/Scene procedure, (b) a comparison of two already defined concepts, (c) a narrower example of a broader Skill, or (d) a generic transferable procedure with a subject-themed example, the author **must raise a specific question for explicit human editorial review**. The author may recommend an outcome but **must not independently finalize** its creation, removal, renaming, merging or placement, even when the author is confident in that recommendation.
+
+**Evidence to present:** candidate title and location; concrete Question/Practice example; underlying disciplinary knowledge; existing Skill(s) the task might assess; whether the capability would remain independently assessable with a different interaction; and alternative outcomes (**retain a standalone Skill / assess using existing Skills via Question / cross-subject Skill / further research**). Ask the editor which option to approve. Until the editor answers, mark the candidate `PENDING EDITOR DECISION`, preserve existing approved IDs, and block dependent code generation or claims of final taxonomy approval. See the mandatory gate in [Create Skills Taxonomy](../../skills/create-skills-taxonomy.skill.md).
+
+**Biology editorial precedent (2026-10-29):** “Group mammals and reptiles into piles”, “choose a grouping criterion” and “apply a simple identification key” were removed as *separate Biology Skill IDs*, not as learning activities. Their Questions can assess existing animal-identification Skills. “Compare selection and genetic modification” reuses the two respective concept Skills; a predator-removal scenario can assess ecosystem interdependence. **Do not generalize this into an automatic ban on classification, identification keys, comparison or modeling:** a genuinely independent disciplinary competence may justify its own Skill if the editor approves the evidence.
+
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
 ### Textbook-local Skill identity
@@ -25,7 +35,7 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 - **Within each textbook**, continue checking for redundant Skills, unclear splits/merges, atomicity and stable identities. Cross-textbook duplication permission does **not** authorize needless duplication within one taxonomy.
 - Cross-subject lessons may draw on material from several textbooks without asserting globally unified Skill identity or a combined learner-mastery record.
 
-- A Skill has one primary SkillGroup in the approved taxonomy and may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics.
+- A Skill has exactly one primary catalog parent: ordinarily a SkillGroup, or exceptionally a SkillDomain with no Groups. It may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics without duplicate ownership.
 - A multi-Skill Question does not automatically establish separate mastery evidence for each referenced Skill. Assessment attribution and scores belong to assessment/progress entities.
 - Curriculum/Program owns sequencing and prerequisites; the taxonomy owns classification and conceptual descriptions.
 - Age, school grade, teaching instructions, difficulty, exercise format, prerequisites, learner history, outcomes and scores are **not Skill fields**.
@@ -33,12 +43,12 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 
 ## CANONICAL PEDAGOGICAL SOURCE
 
-`<PackageRoot>/docs/skills/taxonomy.md` is the **permanent, sole editorial definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy. The explanatory prose appears immediately below the heading and implementation link **without a `Description:` label**. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
+`<PackageRoot>/docs/skills/taxonomy.md` is the **permanent, sole editorial definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy (or the approved direct Domain → Skill exception). The explanatory prose appears immediately below the heading and implementation link **without a `Description:` label**. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
 
 Do not copy a Skill heading into its description. Explain the subject-specific competency, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
 
 The current shared-engine `Skill_Config` contains a stable `id` and localized `name`, not `description`. The builder adds `collection`; `fileLocation` belongs to separate indexing work, not assumed implemented. **Do not introduce a runtime description field** by copying taxonomy prose.
 
-The taxonomy links to canonical `*.data.ts` via `Code` when fully implemented, otherwise `Code: [Not implemented](#)`. UUID literals and identity dictionaries belong in `*.ids.ts`, never Markdown.
+The taxonomy contains one standalone implementation link per entity to its verified canonical `*.data.ts` file (full filename displayed); otherwise it contains exactly `[Not implemented](#)` without a field label. UUID literals and identity dictionaries belong in `*.ids.ts`, never Markdown.
 
 Related entities: [SkillGroup](./skill-group.md), [SkillDomain](./skill-domain.md).
