@@ -13,11 +13,11 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
 1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
 2. **Editorial authority:** read the **approved** `<PackageRoot>/docs/skills/taxonomy.md`, including each in-scope entity’s heading, substantive description, hierarchy position and Code link. This is the sole editorial source of truth; **no individual Markdown Definitions exist or are required**. Missing, ambiguous, unapproved or contradictory taxonomy entries are blockers; report them rather than inventing semantics or silently revising the taxonomy.
 3. **Entity meanings:** read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
-4. **Authoritative TypeScript contracts in the shared engine:** inspect the actual files under `shared/engine/src/types/content/`:
+4. **Authoritative TypeScript contracts in `@svitlo/contracts`:** inspect the current files under `shared/contracts/src/types/content/` (import types via `@svitlo/contracts/taxonomy`; engine builders are separate):
    - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.
    - `skillGroup.types.ts` — `SkillGroup_Config`, `skillIds`.
    - `skillDomain.types.ts` — `SkillDomain_Config`, required `groupIds` and optional direct `skillIds`.
-   - `shared/engine/src/types/languages.ts` — `LanguageCode` and the current supported-language configuration.
+   - `shared/contracts/src/types/languages.ts` — `LanguageCode`; verify the current supported-language list through the published localization contract.
 5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
 6. **Reference implementation (read-only example):** inspect the **existing Mathematics taxonomy** in `learningApps/math/src/data/skillsTaxonomy/`, especially:
    - `index.data.ts` and `index.ids.ts`;
@@ -32,7 +32,7 @@ Current contracts and the canonical [Skill](../docs/entities/skill.md), [SkillGr
 
 ### Direct-Skill Domains — mandatory compatibility gate
 
-Before implementing a Domain with **zero Groups**, inspect and verify the shared-engine `SkillDomain_Config`, `buildSkillDomainConfig`, validation, **source registry and every downstream taxonomy index, exporter, loader and display/ancestry consumer**. The engine type and builder now permit `skillIds` with `groupIds: {}`, but this **does not prove** an existing textbook's grouped-only index, builder composition or UI supports direct Skills. Add focused tests for direct and grouped membership and for no mixed/empty Domain. Stop and report a blocker rather than generating a synthetic Group or falsely claiming end-to-end integration. No new Skill IDs may be invented to satisfy a directory layout.
+Before implementing a Domain with **zero Groups**, inspect and verify the `@svitlo/contracts` `SkillDomain_Config`, the `@svitlo/engine` `buildSkillDomainConfig`, validation, **source registry and every downstream taxonomy index, exporter, loader and display/ancestry consumer**. The engine type and builder now permit `skillIds` with `groupIds: {}`, but this **does not prove** an existing textbook's grouped-only index, builder composition or UI supports direct Skills. Add focused tests for direct and grouped membership and for no mixed/empty Domain. Stop and report a blocker rather than generating a synthetic Group or falsely claiming end-to-end integration. No new Skill IDs may be invented to satisfy a directory layout.
 
 **Direct Domain source layout:** place Skills under `<domainCamelCase>/skills/<skillCamelCase>.data.ts` and their UUIDs in the established ID-only surfaces for that Domain; the Domain's `index.ids.ts` maps direct **Skill IDs** instead of Group IDs. Keep the existing grouped layouts unchanged for Domains that have meaningful Groups. Confirm all generated imports and index exports obey the existing `Data` vs `IDs` conventions and translation completeness before shipping.
 
