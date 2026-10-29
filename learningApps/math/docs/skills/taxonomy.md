@@ -318,25 +318,25 @@ Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAf
 
 Між 36 і 38 знаходиться 37; попереднє і наступне відрізняються від заданого на одиницю.
 
-##### Розміщувати числа та знаходити сусідів на числовій прямій до 20
+##### Numbers on a line to 20
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine20.data.ts)
 
 Рівновіддалені поділки показують, чому 12 розміщене правіше 9, а його сусіди — 11 і 13.
 
-##### Розміщувати числа на числовій прямій із відповідним масштабом до 1000
+##### Numbers on a scaled line to 1000
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine1000.data.ts)
 
 У шкалі з позначками через 100 проміжні числа потрібно розташовувати пропорційно, а не за довільною відстанню.
 
-##### Визначати відстань між цілими числами на числовій прямій
+##### Distance between integers on a number line
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/distanceOnLine.data.ts)
 
 Різниця координат показує кількість одиничних інтервалів між 4 і 9 — їх п’ять, незалежно від напряму.
 
-#### Оцінювання чисел
+#### Estimating numbers
 
 Skills: 3
 
@@ -344,25 +344,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/estimation.data.ts)
 
-##### Округлювати числа до найближчого десятка й пояснювати вибір
+##### Rounding to the nearest ten
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/roundToTen.data.ts)
 
 При округленні 46 до десятків результат 50, а 44 — 40; орієнтиром є відстань до сусідніх круглих чисел.
 
-##### Округлювати числа до найближчої сотні й оцінювати похибку
+##### Rounding to the nearest hundred
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/roundToHundred.data.ts)
 
 Для 349 найближча сотня — 300, для 351 — 400; похибка — різниця між точним та округленим числом.
 
-##### Оцінювати приблизну кількість предметів та перевіряти оцінку підрахунком
+##### Estimating and checking quantities
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/estimateQuantity.data.ts)
 
 Оцінку для розсипаних предметів можна зробити за частиною набору, а потім зіставити з точним підрахунком.
 
-### Дроби
+### Fractions
 
 Groups: 4 · Skills: 19
 
@@ -370,7 +370,7 @@ Code: [Code](../../src/data/skillsTaxonomy/fractions/fractions.data.ts)
 
 Пояснює частину й ціле через рівні поділи, чисельник і знаменник, зображення на моделях та числовій прямій; охоплює початкові порівняння й дії з дробами.
 
-#### Представлення дробів
+#### Representing fractions
 
 Skills: 12
 
@@ -378,43 +378,43 @@ Skills: 12
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/representation.data.ts)
 
-##### Розрізняти ціле, його рівні частини й довільні нерівні шматки
+##### Distinguishing wholes and equal and unequal parts
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/wholeAndEqualParts.data.ts)
 
 Половинами можна назвати лише дві однакові за величиною частини одного цілого; довільний розріз на дві частини цього не гарантує.
 
-##### Розміщувати на моделі або прямій дроби, більші за одиницю
+##### Representing fractions greater than one
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/fractionGreaterThanOne.data.ts)
 
 Число 5/4 — це ціла одиниця й ще одна чверть; точка розташована правіше 1, а не між 0 і 1.
 
-##### Пов'язувати десяті з поділом цілого на 10 рівних частин та діленням на 10
+##### Relating tenths to division by 10
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/tenthsAsDivision.data.ts)
 
 Одна десята виникає від десяти рівних частин визначеного цілого; її можна співвіднести з часткою 1 ÷ 10.
 
-##### Показувати одиничний дріб 1/n на фігурі, відрізку або наборі предметів
+##### Modeling unit fractions 1/n
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/unitFractionModel.data.ts)
 
 У моделі 1/3 потрібно показати одну з трьох рівних частин саме обраного цілого, а не будь-який малий фрагмент.
 
-##### Читати й записувати одиничні дроби: половина, третина, чверть тощо
+##### Reading and writing unit fractions
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/unitFractionRead.data.ts)
 
 Слова «чверть» і запис 1/4 означають одну з чотирьох рівних частин, незалежно від геометричної форми цілого.
 
-##### Пояснювати, що знаменник указує на кількість рівних частин цілого
+##### Explaining the denominator of a fraction
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/denominatorMeaning.data.ts)
 
 У 3/5 нижнє число задає, на скільки рівних частин поділено ціле, а не скільки їх взяли.
 
-##### Пояснювати, скільки рівних частин позначає чисельник
+##### Explaining the numerator of a fraction
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/numeratorMeaning.data.ts)
 
