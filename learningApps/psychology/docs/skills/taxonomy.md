@@ -9,10 +9,10 @@ Breadth references, not imposed curricula: [APA Guidelines 3.0](https://www.apa.
 ## SUMMARY
 
 Domains: 14
-Groups: 57
-Skills: 274
+Groups: 58
+Skills: 282
 
-Code files: 0/14 Domains · 0/57 Groups · 0/274 Skills
+Code files: 0/14 Domains · 0/58 Groups · 0/282 Skills
 
 ## DOMAINS
 
@@ -394,7 +394,7 @@ Explain why a tendency advantageous in one context may impose costs in another r
 
 ### Sensation and Perception
 
-Groups: 4 · Skills: 16
+Groups: 5 · Skills: 23
 
 [Not implemented](#)
 
@@ -402,7 +402,7 @@ Sensory information is detected, selected, organized, and interpreted into an ex
 
 #### Sensory Detection
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -425,6 +425,12 @@ Explain how signal strength and competing noise affect the likelihood of noticin
 [Not implemented](#)
 
 Relate the detectable difference between stimuli to their starting intensity and context.
+
+##### Sensory Transduction
+
+[Not implemented](#)
+
+Explain how sensory receptors transform light, mechanical stimulation, or chemical signals into neural activity, distinguishing this initial encoding from later perception.
 
 ##### Sensory Adaptation
 
@@ -495,6 +501,50 @@ Explain how timing and level differences between ears contribute to perceived so
 [Not implemented](#)
 
 Analyze how acoustic cues, noise, and language expectations shape understanding of spoken messages.
+
+#### Body and Chemical Senses
+
+Skills: 6
+
+[Not implemented](#)
+
+Touch, pain, balance, body position, smell, and taste rely on partly distinct receptor and processing pathways. Their psychological importance lies in how signals become conscious experiences and guide action, not in cataloguing anatomy alone.
+
+##### Touch Perception
+
+[Not implemented](#)
+
+Explain how contact, pressure, vibration, and texture are discriminated through somatosensory processing, and why perceived touch depends on stimulus location and context.
+
+##### Pain Perception
+
+[Not implemented](#)
+
+Explain how nociceptive input, context, attention, and expectations interact in the experience of pain, without equating its intensity with a single tissue measurement.
+
+##### Smell Perception
+
+[Not implemented](#)
+
+Describe how patterns of odorant stimulation contribute to identifying smells and why learning, adaptation, and context can alter odor judgments.
+
+##### Taste Perception
+
+[Not implemented](#)
+
+Explain how gustatory information supports basic taste qualities and interacts with smell and other sensory cues in experienced flavor.
+
+##### Proprioception
+
+[Not implemented](#)
+
+Explain how information about muscle and joint state supports awareness of limb position and movement even without vision.
+
+##### Vestibular Perception
+
+[Not implemented](#)
+
+Explain how sensed head motion and orientation contribute to balance and spatial perception, including interactions with vision and proprioception.
 
 #### Illusions and Multisensory Perception
 
@@ -778,7 +828,7 @@ Explain why a response learned in one setting may not transfer unchanged to anot
 
 [Not implemented](#)
 
-Assess how prior training assists or interferes with a genuinely new task.
+Assess how prior learning assists, interferes with, or fails to transfer to a new task or context, accounting for meaningful similarities and differences.
 
 ##### Feedback and Skill Acquisition
 
@@ -1458,7 +1508,7 @@ Analyze replacing an established response with an alternative to the same cue ra
 
 ### Social Psychology
 
-Groups: 4 · Skills: 23
+Groups: 4 · Skills: 24
 
 [Not implemented](#)
 
@@ -1592,7 +1642,7 @@ Identify pressures toward unanimity that discourage dissent and reduce the scrut
 
 #### Relationships and Communication
 
-Skills: 6
+Skills: 7
 
 [Not implemented](#)
 
@@ -1616,11 +1666,17 @@ Distinguish checking understanding and attending to another person's meaning fro
 
 Interpret gesture, tone, and interpersonal distance in cultural and situational context rather than through universal decoding rules.
 
-##### Conflict and Repair
+##### Interpersonal Conflict
 
 [Not implemented](#)
 
-Analyze how misinterpretation, escalation, apology, and renegotiation affect interpersonal conflict.
+Analyze how unmet expectations, differing interpretations, communication patterns, and situational pressures contribute to the emergence or escalation of disagreements between people.
+
+##### Relationship Repair
+
+[Not implemented](#)
+
+Explain how acknowledgment, apology, changed behavior, and negotiated expectations can help restore trust after interpersonal harm without assuming reconciliation is always safe or obligatory.
 
 ##### Personal Boundaries
 
@@ -1778,7 +1834,7 @@ Evaluate how learning, context, and support influence functioning at different a
 
 ### Personality and Individual Variation
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -1824,7 +1880,7 @@ Explain both rank-order consistency and mean-level changes across the lifespan.
 
 #### Cognitive and Learning Differences
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1835,6 +1891,12 @@ Performance varies across abilities, experiences, and testing contexts, with no 
 [Not implemented](#)
 
 Interpret strengths and difficulties across different cognitive tasks without treating one performance as global ability.
+
+##### Neurodevelopmental Variability
+
+[Not implemented](#)
+
+Explain differences in developmental trajectories of attention, communication, sensory processing, and executive functions, accounting for the role of environment and support without treating variation itself as a disorder.
 
 ##### Nature and Nurture in Ability
 
@@ -1990,11 +2052,11 @@ Explain how exposure to threatening events can affect memory, arousal, and avoid
 
 Distinguish persistent unwanted thoughts and ritualized behavior associated with impairment from ordinary habits.
 
-##### Neurodevelopmental Differences
+##### Clinically Significant Neurodevelopmental Conditions
 
 [Not implemented](#)
 
-Explain developmentally arising differences in cognition or behavior without equating disability or neurodivergence with lack of worth.
+Explain how developmental-onset patterns of cognition, communication, or behavior may warrant clinical assessment when accompanied by meaningful impairment or support needs. Distinguish clinical evaluation from ordinary developmental variation without diagnosing people from isolated traits.
 
 #### Assessment and Professional Support
 
@@ -2062,7 +2124,7 @@ Assess evidence from controlled studies, meaningful outcomes, adverse effects, a
 
 ### Applied Psychology
 
-Groups: 5 · Skills: 20
+Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
@@ -2070,7 +2132,7 @@ Psychological knowledge informs educational, occupational, health, design, and c
 
 #### Learning Environments
 
-Skills: 4
+Skills: 3
 
 [Not implemented](#)
 
@@ -2093,12 +2155,6 @@ Distinguish informative performance feedback from judgments about a learner's fi
 [Not implemented](#)
 
 Explain how autonomy, belonging, and evaluation pressures influence learner engagement.
-
-##### Transfer to New Contexts
-
-[Not implemented](#)
-
-Evaluate whether a learned competency is used in situations different from those in which it was practiced.
 
 #### Work and Organizations
 
