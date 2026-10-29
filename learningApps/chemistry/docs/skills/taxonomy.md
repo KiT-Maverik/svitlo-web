@@ -390,11 +390,17 @@ Skills: 4
 
 Electron occupancy and energetic organization help explain reactivity and the behavior of valence electrons.
 
-##### Electron Shells and Orbitals
+##### Electron Shells
 
 [Not implemented](#)
 
-Distinguish simplified shell models from orbital-based descriptions of electron distribution.
+Use shell organization and principal energy levels to explain patterns of electron distribution without treating shells as literal paths of electrons.
+
+##### Atomic Orbitals
+
+[Not implemented](#)
+
+Interpret orbitals as probability-based descriptions of electron states and their occupancy rather than fixed electron trajectories.
 
 ##### Electron Configurations
 
@@ -838,11 +844,17 @@ Use ion charges to derive electrically neutral formula units.
 
 Assign formal oxidation numbers under established conventions without mistaking them for measured atomic charges.
 
-##### Chemical Nomenclature
+##### Inorganic Nomenclature
 
 [Not implemented](#)
 
-Use systematic naming rules to connect a compound's name to chemical identity and formula, distinguishing accepted common names where relevant.
+Apply systematic naming conventions to inorganic compounds, considering ionic or covalent composition and oxidation states where relevant.
+
+##### Organic Nomenclature
+
+[Not implemented](#)
+
+Use parent structures, locants and functional groups to relate organic compound names to their molecular connectivity.
 
 #### Reaction Equations
 
@@ -1028,7 +1040,7 @@ Interpret a logarithmic measure of hydrogen-ion activity and its concentration-b
 
 [Not implemented](#)
 
-Interpret extent of dissociation or proton donation without confusing it with concentration, exposure risk or toxicity.
+Describe how strongly an acid tends to donate a proton under specified conditions. A stronger acid transfers protons more readily in a comparable system; this does not mean the solution is necessarily more concentrated or more hazardous.
 
 ##### Acid–Base Indicators
 
@@ -1074,11 +1086,17 @@ Identify decreases in formal oxidation state or electron gain in appropriate rea
 
 Relate oxidation of one participant to reduction of another and identify oxidizing or reducing agents.
 
-##### Electrochemical Cells
+##### Galvanic Cells
 
 [Not implemented](#)
 
-Explain separation of oxidation and reduction into electrodes and the resulting electrical work.
+Explain how spontaneous, spatially separated oxidation and reduction reactions deliver electrical work through an external circuit while charge also flows through the electrolyte.
+
+##### Electrolysis
+
+[Not implemented](#)
+
+Explain how externally supplied electrical energy drives non-spontaneous redox reactions at electrodes, including transformations such as electroplating.
 
 ### Energy, Rates and Equilibrium
 
@@ -1212,11 +1230,11 @@ Skills: 4
 
 Elemental forms can vary in structure, oxidation state and behavior despite shared periodic classification.
 
-##### Metals and Reactivity
+##### Metal Reactivity
 
 [Not implemented](#)
 
-Compare metallic corrosion, ion formation and chemical replacement tendencies without assuming a universal reactivity ordering in all conditions.
+Compare how different metals undergo oxidation, form ions and participate in displacement reactions under relevant conditions, distinct from the detailed mechanisms of corrosion.
 
 ##### Nonmetals
 
