@@ -516,81 +516,81 @@ Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/skills/reconstruct
 
 If one fifth of a collection is 3 objects, all five equal parts together contain 15 objects.
 
-### Арифметика
+### Arithmetic
 
 Groups: 5 · Skills: 79
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/arithmetic.data.ts)
 
-Охоплює смисл чотирьох арифметичних дій, способи усних і письмових обчислень, властивості операцій та перевірку результатів у межах початкової математики.
+This domain covers the meaning of the four basic operations, mental and written calculation strategies, operation properties, and checking results in elementary mathematics.
 
-#### Додавання
+#### Addition
 
 Skills: 10
 
-Об’єднання кількостей, властивості суми, розрядний обмін і способи виконання та контролю обчислень.
-
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/addition.data.ts)
 
-##### Моделювати додавання як об’єднання кількостей або збільшення кількості
+Addition combines quantities or increases an initial amount. Learners develop properties of sums, place-value exchanges, strategies for calculating and checking results.
+
+##### Addition — Meaning and models
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/addMeaning.data.ts)
 
-З’єднання наборів із 3 та 4 предметів дає 7; збільшення початкової кількості на 4 має той самий результат.
+Joining collections of three and four objects produces seven. Increasing an initial quantity of three by four yields the same result.
 
-##### Пояснювати й застосовувати додавання нуля
+##### Addition — Zero
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/addZero.data.ts)
 
-Додавання нічого не змінює початкового значення: 8 + 0 та 0 + 8 обидва дорівнюють 8.
+Adding nothing preserves the original quantity: both 8 + 0 and 0 + 8 equal 8.
 
-##### Змінювати порядок доданків без зміни суми та застосовувати це для обчислень
+##### Addition — Commutative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/commutativeAddition.data.ts)
 
-У парах наборів 3 + 5 і 5 + 3 загальна кількість однакова, хоча порядок груп різний.
+Combining collections of three and five objects gives the same total as combining five and three, even though the groups are presented in reverse order.
 
-##### Використовувати доповнення до десяти під час додавання
+##### Addition — Making ten
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/makeTenStrategy.data.ts)
 
-У прикладі 8 + 5 можна спочатку взяти 2 до десятка, а далі додати решту 3.
+To calculate 8 + 5, take two from the five to complete ten, then add the remaining three.
 
-##### Додавати одноцифрові числа з переходом через десяток
+##### Addition — Crossing ten
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/crossTenAddition.data.ts)
 
-Перехід 9 + 7 зручно виконати як 10 + 6 після добору одиниці до десятка.
+The sum 9 + 7 becomes easier when one unit completes ten and the other six units are added afterward.
 
-##### Додавати двоцифрові числа з утворенням нового десятка
+##### Addition — 2-digit · Carrying
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/twoDigitCarry.data.ts)
 
-У 27 + 18 сім і вісім одиниць дають один новий десяток та п’ять одиниць.
+In 27 + 18, the seven and eight ones form one new ten and five remaining ones.
 
-##### Групувати доданки у зручному порядку без зміни суми
+##### Addition — Associative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/associativeAddition.data.ts)
 
-Суму 7 + 13 + 3 можна перегрупувати як (7 + 3) + 13, не змінюючи жодного доданка.
+The sum 7 + 13 + 3 can be regrouped as (7 + 3) + 13 without changing the addends or their total.
 
-##### Додавати трицифрові числа з одним або кількома переходами через розряд
+##### Addition — 3-digit · Carrying
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/threeDigitCarry.data.ts)
 
-У 268 + 157 перенос виникає в різних розрядах; проміжні обміни одиниць на десятки не змінюють суми.
+In 268 + 157, regrouping may occur in more than one place. Trading ten ones for a ten, or ten tens for a hundred, preserves the sum.
 
-##### Коректно записувати та виконувати письмове додавання стовпчиком
+##### Addition — Column method
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/columnAddition.data.ts)
 
-Одиниці записують під одиницями, десятки під десятками; перенесений розряд додають у наступному стовпці.
+Ones are written beneath ones and tens beneath tens. A carried place-value unit is included in the next column.
 
-##### Розпізнавати пропущений перенос десятка чи сотні та пояснювати причину помилки
+##### Addition — Carrying · Error detection
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/carryErrorDetection.data.ts)
 
-Для 48 + 37 пропущений перенос із суми 8 + 7 призводить до заниженого десяткового розряду.
+For 48 + 37, omitting the carried ten from 8 + 7 produces a result with an incorrect tens place.
 
 #### Віднімання
 
