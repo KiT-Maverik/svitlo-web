@@ -1,15 +1,17 @@
+> **OBSOLETE:** Superseded by [active review-skills-taxonomy-exceptions.skill.md](../skill-taxonomy-workflow/review-skills-taxonomy-exceptions.skill.md). Retained for historical reference; do not execute.
+
 # Skills Taxonomy Exception Review Skill
 
-**Mandatory first action:** Read the [Methodologist Persona](../personas/methodist.persona.md) **in full** and adopt its pedagogical judgment and role boundaries. Do not assume the persona is already loaded.
+**Mandatory first action:** Read the [Methodologist Persona](../../personas/methodist.persona.md) **in full** and adopt its pedagogical judgment and role boundaries. Do not assume the persona is already loaded.
 
 **Purpose:** Conduct a critical, **read-only exception review** of one textbook's canonical Skills Taxonomy. Detect suspicious distribution, granularity, duplication, naming, hierarchy, descriptions, and subject coverage; give the editor concrete decisions to review. This Skill is an independent quality gate, **not** another taxonomy generator, automatic rewrite, or demand to equalize catalog sizes.
 
 ## REQUIRED INPUTS AND READING
 
 1. Identify the actual textbook package root and read the complete `<PackageRoot>/docs/skills/taxonomy.md`. Inspect the current repository state and applicable `AGENTS.md`; do not audit a remembered or outdated catalog.
-2. Read [Create Skills Taxonomy](./create-skills-taxonomy.skill.md) to understand the editorial taxonomy, its scope and canonical Markdown contract.
-3. Read the entity definitions [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md) and [Skill](../docs/entities/skill.md) **in full**. In particular, Skill = smallest practically meaningful, **independently assessable competency**.
-4. Read the subject's agreed scope and boundaries, the applicable [Subject Proposition](../Subject%20Proposition.md), and any existing dated taxonomy history when relevant. Existing history is context, never a substitute for the canonical file.
+2. Read [Create Skills Taxonomy](../create-skills-taxonomy.skill.md) to understand the editorial taxonomy, its scope and canonical Markdown contract.
+3. Read the entity definitions [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md) and [Skill](../../docs/entities/skill.md) **in full**. In particular, Skill = smallest practically meaningful, **independently assessable competency**.
+4. Read the subject's agreed scope and boundaries, the applicable [Subject Proposition](../../Subject%20Proposition.md), and any existing dated taxonomy history when relevant. Existing history is context, never a substitute for the canonical file.
 5. Use credible subject references or named standards when they materially help assess breadth; identify which recommendations are sourced and which are editorial judgments. Do not impose an unrequested national curriculum or grade.
 
 If the actual taxonomy is missing, report that blocker rather than inventing entries or computing pretend statistics.
@@ -27,7 +29,7 @@ Inspect **every Domain, Group and Skill**, both headings and substantive descrip
 
 ### 2. Skill identity, atomicity and appropriate granularity
 
-- Check each Skill against the [Skill](../docs/entities/skill.md) definition: a recognizable, reusable, independently assessable ability, not merely an object/topic label, an entire subject, a lesson, a one-off Question, an exercise variant, or a UI interaction.
+- Check each Skill against the [Skill](../../docs/entities/skill.md) definition: a recognizable, reusable, independently assessable ability, not merely an object/topic label, an entire subject, a lesson, a one-off Question, an exercise variant, or a UI interaction.
 - Apply the **A-without-B test**: flag bundled independent competencies, missing foundational concepts hidden inside a comparison, and integration Skills without an independently justified relational ability.
 - Look for the opposite error: several tiny Skills created solely from different materials, named locations, numeric inputs, map symbols, worked examples, or practice tasks of one competency. Do not classify an authentic ability such as `Create Maps` as "only a task" merely because it has practical assessments.
 - Evaluate whether a broad title such as `Economic Geography` is better a SkillGroup than one Skill; do not promote/split/merge without semantic evidence.
@@ -52,7 +54,7 @@ Inspect **every Domain, Group and Skill**, both headings and substantive descrip
 ### 5. Editorial and structural integrity
 
 - Flag heading/description tautology, descriptions that provide no substantive scope, or descriptions contradicting their entity names or neighbors.
-- Verify declared counts and the entity heading/metadata/description order from [Create Skills Taxonomy](./create-skills-taxonomy.skill.md). Examine standalone implementation links only as evidence: verify actual targets and full filename link labels (including suffixes and extension) where implemented; otherwise expect exactly `[Not implemented](#)` without a `Code:` prefix. Do not invent runtime files or UUIDs.
+- Verify declared counts and the entity heading/metadata/description order from [Create Skills Taxonomy](../create-skills-taxonomy.skill.md). Examine standalone implementation links only as evidence: verify actual targets and full filename link labels (including suffixes and extension) where implemented; otherwise expect exactly `[Not implemented](#)` without a `Code:` prefix. Do not invent runtime files or UUIDs.
 - Identify factual uncertainty, unsubstantiated universality (e.g. a classification convention valid only in one country), and unsupported claims of reference/standard coverage.
 
 ## OUTPUT — PRIORITIZED EXCEPTION REPORT
@@ -71,6 +73,6 @@ Conclude with **confirmed problems vs open choices**, missing subject coverage, 
 
 ## CHANGE CONTROL
 
-This is **review-only by default**: **do not modify** `taxonomy.md`, runtime Code, UUIDs, curricula, Lessons, Programs or create a separate review/history file. The [Methodologist Persona](../personas/methodist.persona.md) tightly restricts when a dated historical review may exist; this exception report does not authorize one.
+This is **review-only by default**: **do not modify** `taxonomy.md`, runtime Code, UUIDs, curricula, Lessons, Programs or create a separate review/history file. The [Methodologist Persona](../../personas/methodist.persona.md) tightly restricts when a dated historical review may exist; this exception report does not authorize one.
 
-If the editor separately authorizes changes, use [Create Skills Taxonomy](./create-skills-taxonomy.skill.md) and its approval/history rules for the actual revision. Keep proposed vs approved decisions distinguishable; never imply the revised taxonomy is automatically approved.
+If the editor separately authorizes changes, use [Create Skills Taxonomy](../create-skills-taxonomy.skill.md) and its approval/history rules for the actual revision. Keep proposed vs approved decisions distinguishable; never imply the revised taxonomy is automatically approved.

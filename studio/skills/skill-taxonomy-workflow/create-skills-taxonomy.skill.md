@@ -1,8 +1,10 @@
 # Create Skills Taxonomy Skill
 
-**Mandatory first action:** Read [Methodologist Persona](../personas/methodist.persona.md) in full. Adopt its professional judgment and role boundaries before researching, designing, or editing a taxonomy. Do not assume the persona has been loaded.
+Read [Skill Taxonomy Workflow](./README.md) for the staged-to-code authority transition.
 
-**Purpose:** Create or review the **permanent, canonical pedagogical source of truth** for one subject: an audience-independent Skills Taxonomy organized as **SkillDomain → SkillGroup → Skill**, with a controlled **SkillDomain → Skill** alternative when there are no meaningful Groups. Author the names, authoritative substantive descriptions, hierarchy, counts, and verified implementation links directly in `<PackageRoot>/docs/skills/taxonomy.md`. There is **no Create Skill Definitions stage, no per-entity Markdown Definition file, and no separate definition template**. Code implementation is a separate stage.
+**Mandatory first action:** Read [Methodologist Persona](../../personas/methodist.persona.md) in full. Adopt its professional judgment and role boundaries before researching, designing, or editing a taxonomy. Do not assume the persona has been loaded.
+
+**Purpose:** Create or review the **editorial staging catalog of not-yet-migrated or pending Skill taxonomy entities** for one subject: an audience-independent Skills Taxonomy organized as **SkillDomain → SkillGroup → Skill**, with a controlled **SkillDomain → Skill** alternative when there are no meaningful Groups. Author the names, authoritative substantive descriptions, hierarchy, counts, and verified implementation links directly in `<PackageRoot>/docs/skills/taxonomy.md`. There is **no Create Skill Definitions stage, no per-entity Markdown Definition file, and no separate definition template**. Code implementation is a separate stage.
 
 ## NON-NEGOTIABLE START CONDITIONS
 
@@ -15,7 +17,7 @@ If a prerequisite is missing, report it accurately rather than inventing files o
 
 ## ENTITY DEFINITIONS — REQUIRED READING
 
-Read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md) and [Skill](../docs/entities/skill.md) in full. A Skill is an independently assessable competency; the taxonomy never stores grades, assessment evidence, learner progress or mastery data.
+Read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md) and [Skill](../../docs/entities/skill.md) in full. A Skill is an independently assessable competency; the taxonomy never stores grades, assessment evidence, learner progress or mastery data.
 
 ## SUBJECT OWNERSHIP GATE — KNOWLEDGE, NOT TASK CONTEXT
 
@@ -71,7 +73,7 @@ A **Skill** names what a learner can independently know, explain, determine, or 
 
 ## TEXTBOOK-LOCAL IDENTITY
 
-Follow [Skill entity ownership](../docs/entities/skill.md): a textbook's taxonomy and Skill IDs are **local to that textbook**. Overlapping competencies in other textbooks **are allowed** and must not trigger forced deduplication, cross-textbook ID reuse, a centralized registry, or shared analytics. Audit redundant or compound competencies **within the selected textbook** as usual; looking at other subjects for useful context is optional, not an identity requirement.
+Follow [Skill entity ownership](../../docs/entities/skill.md): a textbook's taxonomy and Skill IDs are **local to that textbook**. Overlapping competencies in other textbooks **are allowed** and must not trigger forced deduplication, cross-textbook ID reuse, a centralized registry, or shared analytics. Audit redundant or compound competencies **within the selected textbook** as usual; looking at other subjects for useful context is optional, not an identity requirement.
 
 ## TAXONOMY VS. CURRICULUM — NO LEARNING-DEPTH CEILING
 
@@ -91,8 +93,8 @@ Do not reduce a rich competency to mere recognition or conceptual awareness beca
 
 ## CANONICAL OWNERSHIP
 
-- **Taxonomy Markdown:** permanent editorial single source of truth for pedagogical names, scope, distinctions, descriptions and Domain → Group → Skill membership, or exceptional Domain → Skill membership.
-- **TypeScript Data/IDs:** implementation authority for UUIDs, localized runtime names, typed configs, direct-child ID dictionaries and exports. The existing Engine does not have a `description` field; **do not duplicate descriptions in TypeScript** or add undocumented runtime metadata.
+- **Taxonomy Markdown:** staging editorial source of truth for unpromoted entries for pedagogical names, scope, distinctions, descriptions and Domain → Group → Skill membership, or exceptional Domain → Skill membership.
+- **TypeScript Data/IDs:** implementation authority for UUIDs, localized runtime names, typed configs, direct-child ID dictionaries and exports. The shared contracts support localized descriptions as an optional transitional field. Do not regard an entity as migrated until its localized Code description is complete, semantically reviewed, and verified by [Migrate Implemented Taxonomy](./migrate-implemented-taxonomy.skill.md).
 - **Implementation link in taxonomy:** one unlabeled Markdown link per entity, with exact full filename (including suffixes and extension) as the link text when implemented, or exactly `[Not implemented](#)` otherwise. Never prefix that link with `Code:`. There is **no Definition link, separate Definition count or editorial Status on individual entities**.
 - **Approval:** a human editorial review gate on the taxonomy or a substantive revision, not a duplicated `Status: Draft/Approved` field on hundreds of documents. Once approved, downstream work must not rename, split, merge or rearrange without explicit review.
 - **Curricula and Lessons:** reference the canonical taxonomy; they own sequencing, teaching context, prerequisites and assessment choices, not the Skill catalog.
@@ -103,7 +105,7 @@ Keep every entity's metadata together directly after its heading. Order is **Dom
 
 ## SKILL TAXONOMY REVIEW — OPTIONAL DATED HISTORY, NOT ANOTHER TAXONOMY
 
-Follow the **mandatory dated-history policy** in [Methodologist Persona](../personas/methodist.persona.md) before touching any Review. There is exactly **one default history document for this subject**:
+Follow the **mandatory dated-history policy** in [Methodologist Persona](../../personas/methodist.persona.md) before touching any Review. There is exactly **one default history document for this subject**:
 
 ```text
 <PackageRoot>/docs/history/skill-taxonomy-review.md
@@ -135,7 +137,7 @@ Title: **Skill Taxonomy Review**. Keep the **original review date** and append s
 - Each entry has one verified, unlabeled implementation link showing the full filename (suffixes and extension included), or exactly `[Not implemented](#)`; Code counts report actual implementations, not file names guessed from the taxonomy.
 - No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or fake `Status` fields occur in the taxonomy.
 - Markdown descriptions do **not** start with `Description:` and always follow all of the entity's metadata (any Group/Skill counts and the standalone implementation link).
-- The **only canonical authoring artifact** is `docs/skills/taxonomy.md`. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates; the optional `docs/history/skill-taxonomy-review.md` may be created/updated **only** under the explicit history gate above.
+- The **authoring/staging artifact** is `docs/skills/taxonomy.md`. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates; the optional `docs/history/skill-taxonomy-review.md` may be created/updated **only** under the explicit history gate above.
 
 ## TAXONOMY TEMPLATE
 
