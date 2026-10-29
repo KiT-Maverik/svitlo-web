@@ -168,179 +168,179 @@ Distinguish increases in mass or size from changes in structure and function dur
 
 Establish how light, touch, or a chemical signal elicits a change in an organism’s state or movement.
 
-### Ботаніка
+### Botany
 
 Groups: 5 · Skills: 21
 
 [Not implemented](#)
 
-Дослідження рослин як організмів, здатних до фотосинтезу: будова вегетативних і репродуктивних органів, життєві цикли та залежність росту від середовища. Відмінність від екології — фокус на рослині, а не на взаємодії угруповання.
+Study of plants as organisms capable of photosynthesis: vegetative and reproductive organ structure, life cycles, and the dependence of growth on environmental conditions. Unlike Ecology, the focus is on the plant rather than interactions within a community.
 
-#### Різноманітність рослин
+#### Plant Diversity
 
 Skills: 6
 
 [Not implemented](#)
 
-Зовнішня будова, спосіб розгалуження й сезонність дають підстави порівнювати знайомі види, не ототожнюючи форму росту з біологічною спорідненістю.
+External structure, branching patterns, and seasonality provide grounds for comparing familiar species without equating growth form with biological relatedness.
 
-##### Розпізнавати поширені місцеві рослини
-
-[Not implemented](#)
-
-Впізнавати знайомі місцеві види за характерним поєднанням листків, стебел, квіток чи плодів, а не лише за кольором.
-
-##### Розрізняти дерева, кущі й трав’янисті рослини
+##### Recognize Common Local Plants
 
 [Not implemented](#)
 
-Визначати життєву форму за типом і розгалуженням здерев'янілих або трав'янистих стебел.
+Identify familiar local species by characteristic combinations of leaves, stems, flowers, or fruits, rather than color alone.
 
-##### Розрізняти листопадні та вічнозелені рослини
-
-[Not implemented](#)
-
-Розрізняти щорічне скидання листків і збереження листя впродовж року; це не тотожно поділу на хвойні та листяні.
-
-##### Розпізнавати ознаки мохоподібних
+##### Distinguish Trees, Shrubs, and Herbaceous Plants
 
 [Not implemented](#)
 
-Розпізнавати несудинні наземні рослини зі спороутворенням та переважанням гаметофіта в життєвому циклі; не називати ризоїди справжніми коренями.
+Determine growth form from the type and branching pattern of woody or herbaceous stems.
 
-##### Розпізнавати ознаки папоротеподібних
-
-[Not implemented](#)
-
-Визначати судинні рослини, які розмножуються спорами, за будовою пагонів і спорангіями; відрізняти їх від мохоподібних і насінних рослин.
-
-##### Розрізняти голонасінні та покритонасінні рослини
+##### Distinguish Deciduous and Evergreen Plants
 
 [Not implemented](#)
 
-Пояснювати різницю між насінними рослинами з відкритими насінними зачатками і квітковими рослинами, у яких насіння розвивається всередині плоду; не ототожнювати цей поділ із вічнозеленістю чи формою листків.
+Distinguish annual leaf shedding from retaining foliage throughout the year; this is not equivalent to the distinction between conifers and broadleaf plants.
 
-#### Будова рослин
+##### Recognize Bryophyte Characteristics
+
+[Not implemented](#)
+
+Recognize nonvascular land plants that produce spores and whose life cycle is dominated by the gametophyte; do not call rhizoids true roots.
+
+##### Recognize Fern and Fern-Ally Characteristics
+
+[Not implemented](#)
+
+Identify vascular spore-producing plants by the structure of their shoots and sporangia; distinguish them from bryophytes and seed plants.
+
+##### Distinguish Gymnosperms and Angiosperms
+
+[Not implemented](#)
+
+Explain the difference between seed plants with exposed ovules and flowering plants whose seeds develop inside a fruit; do not equate this division with evergreen habit or leaf shape.
+
+#### Plant Structure
 
 Skills: 2
 
 [Not implemented](#)
 
-Органи рослин виконують різні завдання: закріплення, поглинання, транспорт, фотосинтез і відтворення; функції слід відрізняти від самих назв.
+Plant organs perform different tasks: anchorage, absorption, transport, photosynthesis, and reproduction; their functions must be distinguished from their names.
 
-##### Визначати основні органи рослини
-
-[Not implemented](#)
-
-На рослині чи моделі відокремлювати корінь, стебло, листки та репродуктивні органи, зокрема квітку, за положенням і характерними ознаками.
-
-##### Співвідносити органи рослини з їхніми функціями
+##### Identify Major Plant Organs
 
 [Not implemented](#)
 
-Пояснювати, які структури забезпечують поглинання води, опору, транспорт речовин, фотосинтез і утворення насіння.
+On a plant or model, distinguish roots, stems, leaves, and reproductive organs, including flowers, by their position and distinguishing characteristics.
 
-#### Живлення та ріст
+##### Relate Plant Organs to Their Functions
+
+[Not implemented](#)
+
+Explain which structures enable water absorption, support, substance transport, photosynthesis, and seed production.
+
+#### Nutrition and Growth
 
 Skills: 5
 
 [Not implemented](#)
 
-Вода, світло, гази атмосфери й мінеральні речовини виконують різні ролі; відхилення умов змінює швидкість і характер розвитку рослини.
+Water, light, atmospheric gases, and minerals play different roles; deviations in environmental conditions change the rate and pattern of plant development.
 
-##### Пояснювати потребу рослин у воді
-
-[Not implemented](#)
-
-Пояснювати участь води в транспорті речовин, підтриманні клітин і фотосинтезі, а не сприймати її лише як «напій» рослини.
-
-##### Пояснювати роль світла
+##### Explain Plants’ Need for Water
 
 [Not implemented](#)
 
-Пов'язувати освітлення з утворенням органічних речовин у фотосинтезуючих частинах рослини.
+Explain water’s involvement in substance transport, cell maintenance, and photosynthesis rather than treating water merely as a plant’s 'drink'.
 
-##### Пояснювати роль повітря
-
-[Not implemented](#)
-
-Розрізняти використання вуглекислого газу під час фотосинтезу та кисню під час клітинного дихання.
-
-##### Визначати роль мінерального живлення
+##### Explain the Role of Light
 
 [Not implemented](#)
 
-Пояснювати, чому мінеральні елементи з ґрунту потрібні для утворення тканин, хоча не замінюють їжу як джерело енергії.
+Relate illumination to the production of organic substances in photosynthesizing parts of plants.
 
-##### Прогнозувати вплив зміни умов на ріст рослини
+##### Explain the Role of Air
 
 [Not implemented](#)
 
-Передбачати спостережувані зміни росту за нестачі світла, води чи мінеральних речовин, враховуючи інші сталі умови.
+Distinguish the use of carbon dioxide during photosynthesis from the use of oxygen during cellular respiration.
 
-#### Розмноження та розвиток
+##### Identify the Role of Mineral Nutrition
+
+[Not implemented](#)
+
+Explain why mineral elements from soil are necessary for tissue formation, although they do not replace food as an energy source.
+
+##### Predict Effects of Changing Conditions on Plant Growth
+
+[Not implemented](#)
+
+Predict observable changes in growth when light, water, or minerals are insufficient, while accounting for other conditions held constant.
+
+#### Reproduction and Development
 
 Skills: 5
 
 [Not implemented](#)
 
-Насінна рослина переходить від насіння через проросток до утворення наступного покоління; запилення й поширення насіння відбуваються на різних етапах.
+A seed plant progresses from a seed through a seedling to producing the next generation; pollination and seed dispersal occur at different stages.
 
-##### Визначати роль насінини
-
-[Not implemented](#)
-
-Розуміти, що насінина містить зародок і запас або джерело поживних речовин для початкового росту.
-
-##### Описувати проростання
+##### Identify the Role of a Seed
 
 [Not implemented](#)
 
-Встановлювати послідовність появи корінця й пагона та роль води й відповідної температури.
+Understand that a seed contains an embryo and a store or source of nutrients for initial growth.
 
-##### Упорядковувати етапи життєвого циклу квіткової рослини
-
-[Not implemented](#)
-
-Розташовувати стадії від насінини до дорослої рослини, цвітіння та формування нового насіння.
-
-##### Пояснювати роль запилення
+##### Describe Germination
 
 [Not implemented](#)
 
-Пояснювати перенесення пилку на приймочку або іншу приймальну структуру як етап, що передує заплідненню.
+Establish the order in which the embryonic root and shoot emerge, as well as the roles of water and an appropriate temperature.
 
-##### Співвідносити ознаки плодів зі способами поширення насіння
+##### Sequence Stages of a Flowering Plant’s Life Cycle
 
 [Not implemented](#)
 
-Порівнювати пристосування плодів і насіння до перенесення вітром, водою або тваринами.
+Order stages from seed to mature plant, flowering, and formation of new seeds.
 
-#### Пристосування рослин
+##### Explain the Role of Pollination
+
+[Not implemented](#)
+
+Explain transfer of pollen to a stigma or another receptive structure as a step preceding fertilization.
+
+##### Relate Fruit Characteristics to Seed Dispersal Methods
+
+[Not implemented](#)
+
+Compare adaptations of fruits and seeds to transport by wind, water, or animals.
+
+#### Plant Adaptations
 
 Skills: 3
 
 [Not implemented](#)
 
-Форма листків, коренів і пагонів та сезонні зміни можуть підвищувати виживання за нестачі води, світла чи низької температури.
+Leaf, root, and shoot forms and seasonal changes can improve survival when water or light is limited or temperatures are low.
 
-##### Розпізнавати пристосування до середовища
-
-[Not implemented](#)
-
-Виявляти у рослин конкретні морфологічні або фізіологічні адаптації, наприклад восковий покрив, запасання води чи листопад, і відрізняти їх від випадкових ознак. Основна компетентність — розпізнавання адаптації за її характерними проявами.
-
-##### Пов’язувати особливості будови рослини з умовами існування
+##### Recognize Adaptations to the Environment
 
 [Not implemented](#)
 
-Пояснювати причинний зв'язок між будовою коренів, листків і пагонів та ресурсами чи обмеженнями середовища; порівнювати, як різні конструктивні рішення впливають на водний баланс, освітлення й виживання. Основна компетентність — функціональне пояснення, а не лише впізнавання адаптації.
+Identify particular morphological or physiological adaptations in plants, such as a waxy covering, water storage, or leaf shedding, and distinguish them from incidental characteristics. The central competency is recognizing an adaptation from its characteristic manifestations.
 
-##### Описувати сезонні зміни рослин
+##### Relate Plant Structural Features to Environmental Conditions
 
 [Not implemented](#)
 
-Встановлювати зв'язок між зміною тривалості дня/температури та листопадом, спокоєм чи відновленням росту.
+Explain causal links between root, leaf, and shoot structure and environmental resources or limitations; compare how different structural solutions affect water balance, access to light, and survival. The central competency is functional explanation rather than merely identifying an adaptation.
+
+##### Describe Seasonal Changes in Plants
+
+[Not implemented](#)
+
+Establish the relationship between changes in day length or temperature and leaf fall, dormancy, or resumption of growth.
 
 ### Зоологія
 
