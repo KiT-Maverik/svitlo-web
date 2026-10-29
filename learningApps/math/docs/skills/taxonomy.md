@@ -362,159 +362,159 @@ Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/estimate
 
 Оцінку для розсипаних предметів можна зробити за частиною набору, а потім зіставити з точним підрахунком.
 
-### Дроби
+### Fractions
 
 Groups: 4 · Skills: 19
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/fractions.data.ts)
 
-Пояснює частину й ціле через рівні поділи, чисельник і знаменник, зображення на моделях та числовій прямій; охоплює початкові порівняння й дії з дробами.
+This domain explains part-whole relationships through equal partitions, numerators and denominators, visual models, and number-line positions. It includes initial comparisons and operations involving fractions.
 
-#### Представлення дробів
+#### Representing fractions
 
 Skills: 12
 
-Рівні частини визначеного цілого, одиничні й неoдиничні дроби, їхній запис та геометричні інтерпретації, у тому числі значення понад одиницю.
-
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/representation.data.ts)
 
-##### Розрізняти ціле, його рівні частини й довільні нерівні шматки
+Fractions represent equal parts of a specified whole. Both unit and non-unit fractions can be written symbolically and interpreted geometrically, including values greater than one.
+
+##### Distinguishing wholes and equal and unequal parts
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/wholeAndEqualParts.data.ts)
 
-Половинами можна назвати лише дві однакові за величиною частини одного цілого; довільний розріз на дві частини цього не гарантує.
+Two pieces are halves only if they are equal in size and belong to the same whole. Cutting something into two arbitrary pieces does not guarantee two halves.
 
-##### Розміщувати на моделі або прямій дроби, більші за одиницю
+##### Representing fractions greater than one
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/fractionGreaterThanOne.data.ts)
 
-Число 5/4 — це ціла одиниця й ще одна чверть; точка розташована правіше 1, а не між 0 і 1.
+The fraction 5/4 represents one whole and another quarter. Its point on the number line lies to the right of 1, not between 0 and 1.
 
-##### Пов'язувати десяті з поділом цілого на 10 рівних частин та діленням на 10
+##### Relating tenths to division by 10
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/tenthsAsDivision.data.ts)
 
-Одна десята виникає від десяти рівних частин визначеного цілого; її можна співвіднести з часткою 1 ÷ 10.
+One tenth arises when a specified whole is partitioned into ten equal parts and corresponds to the quotient 1 ÷ 10.
 
-##### Показувати одиничний дріб 1/n на фігурі, відрізку або наборі предметів
+##### Modeling unit fractions 1/n
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/unitFractionModel.data.ts)
 
-У моделі 1/3 потрібно показати одну з трьох рівних частин саме обраного цілого, а не будь-який малий фрагмент.
+A model of 1/3 must identify one of three equally sized parts of the chosen whole, rather than just any small fragment.
 
-##### Читати й записувати одиничні дроби: половина, третина, чверть тощо
+##### Reading and writing unit fractions
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/unitFractionRead.data.ts)
 
-Слова «чверть» і запис 1/4 означають одну з чотирьох рівних частин, незалежно від геометричної форми цілого.
+The word 'quarter' and the notation 1/4 both refer to one of four equal parts, regardless of the whole's geometric shape.
 
-##### Пояснювати, що знаменник указує на кількість рівних частин цілого
+##### Explaining the denominator of a fraction
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/denominatorMeaning.data.ts)
 
-У 3/5 нижнє число задає, на скільки рівних частин поділено ціле, а не скільки їх взяли.
+In 3/5, the lower number specifies into how many equal parts the whole was divided, not how many of those parts were selected.
 
-##### Пояснювати, скільки рівних частин позначає чисельник
+##### Explaining the numerator of a fraction
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/numeratorMeaning.data.ts)
 
-У 3/5 верхнє число вказує на три взяті частини із п’яти рівних, визначених знаменником.
+In 3/5, the upper number indicates the three selected pieces among the five equal parts determined by the denominator.
 
-##### Представляти кілька рівних частин одного цілого дробом a/b
+##### Modeling fractions with multiple equal parts
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/nonUnitModel.data.ts)
 
-Три однакові восьмі частини складають 3/8; усі частини повинні належати тому самому цілому.
+Three equal eighths make 3/8; all eight-sized parts in this representation must refer to the same whole.
 
-##### Пояснювати, чому величина частини залежить від розміру цілого
+##### Explaining how part size depends on the whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/wholeDependence.data.ts)
 
-Половина великої піци може бути більшою за половину маленької; порівнювати дробові частини без спільного цілого некоректно.
+Half of a large pizza may be bigger than half of a small pizza. Fractional portions cannot be compared meaningfully without accounting for their respective wholes.
 
-##### Розміщувати прості дроби між 0 і 1 на числовій прямій
+##### Locating fractions between 0 and 1 on a number line
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/numberLine.data.ts)
 
-Між 0 та 1 точка 3/4 розташована на третьому із чотирьох рівних кроків від нуля.
+Between 0 and 1, the point 3/4 lies at the third of four equal intervals from zero.
 
-##### Пояснювати на моделі, що n/n відповідає одному цілому
+##### Showing one whole as n/n
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/oneAsFraction.data.ts)
 
-Якщо взяти всі чотири чверті того самого цілого, сума покриває його повністю: 4/4 = 1.
+Taking all four quarters of the same whole covers it completely: 4/4 = 1.
 
-##### Показувати на наочних моделях рівність простих дробів, наприклад 1/2 = 2/4
+##### Showing equivalent fractions with visual models
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/equivalentVisual.data.ts)
 
-Дві четверті покривають таку саму частку цілого, як одна друга; еквівалентність можна бачити без обчислення.
+Two quarters cover the same proportion of a whole as one half. A visual model establishes the equivalence 1/2 = 2/4 without requiring numerical calculation.
 
-#### Порівняння дробів
+#### Comparing fractions
 
 Skills: 3
 
-Відношення величин дробових частин для спільного цілого за фіксованого чисельника або знаменника.
-
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/comparison.data.ts)
 
-##### Порівнювати дроби з однаковим чисельником, спираючись на однакове ціле
+Fraction comparisons must refer to the same whole. Fixed numerators or denominators reveal how the sizes of equal parts affect the quantities represented.
+
+##### Comparing fractions with the same numerator
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/compareSameNumerator.data.ts)
 
-За спільного цілого 2/5 більше за 2/7: однакову кількість частин беруть із більших за розміром шматків.
+For a common whole, 2/5 is greater than 2/7: the same number of pieces is taken from a partition into larger pieces.
 
-##### Порівнювати одиничні дроби від одного й того самого цілого
+##### Comparing unit fractions of the same whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/compareUnit.data.ts)
 
-Для того самого яблука 1/2 більше за 1/4, оскільки поділ на більше рівних частин робить кожну меншою.
+For the same apple, 1/2 is greater than 1/4 because dividing a whole into more equal pieces makes each individual piece smaller.
 
-##### Порівнювати дроби з однаковими знаменниками через наочну модель
+##### Comparing fractions with the same denominator using models
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/sameDenominatorModel.data.ts)
 
-За однакових знаменників 5/8 більше за 3/8, бо розмір однієї восьмої не змінюється.
+With a shared denominator, 5/8 is greater than 3/8 because every eighth has the same size.
 
-#### Обчислення з дробами
+#### Operations with fractions
 
 Skills: 2
-
-Зміна кількості рівних частин одного цілого через додавання чи вилучення при спільному знаменнику.
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/arithmetic.data.ts)
 
-##### Додавати прості дроби з однаковими знаменниками в межах одного цілого
+Adding or removing equal-sized fractional parts changes how many parts of one whole are selected while preserving the common denominator.
+
+##### Adding fractions with the same denominator within one whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/skills/addLikeDenominators.data.ts)
 
-У 2/7 + 3/7 додають кількість сьомих і залишають знаменник 7; сума в такому випадку не перевищує цілого.
+In 2/7 + 3/7, add the numbers of sevenths while keeping the denominator 7. For this competency, the result does not exceed one whole.
 
-##### Віднімати прості дроби з однаковими знаменниками в межах одного цілого
+##### Subtracting fractions with the same denominator within one whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/skills/subtractLikeDenominators.data.ts)
 
-У 5/6 − 2/6 віднімають дві рівні шості частини від п’яти; розмір частини не змінюється.
+For 5/6 − 2/6, remove two of the five selected sixths. The size of each sixth does not change.
 
-#### Частини величини
+#### Fractional parts of quantities
 
 Skills: 2
 
-Перехід між цілою величиною і її одиничною частиною з використанням ділення та зворотної операції.
-
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/portions.data.ts)
 
-##### Знаходити 1/n від числа або вимірюваної величини через ділення
+The relationship between a whole quantity and one of its equal parts can be found using division and reversed using multiplication.
+
+##### Finding 1/n of a quantity by division
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/skills/findUnitPart.data.ts)
 
-Одна четверта від 20 — п’ять: рівномірне розбиття двадцяти одиниць на чотири групи дає розмір однієї групи.
+One quarter of 20 is five: dividing twenty units into four equal groups produces groups of five.
 
-##### Знаходити ціле за відомою одиничною частиною
+##### Finding the whole from a known unit fraction
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/skills/reconstructWhole.data.ts)
 
-Якщо одна п’ята набору становить 3 предмети, усі п’ять однакових частин разом містять 15.
+If one fifth of a collection is 3 objects, all five equal parts together contain 15 objects.
 
 ### Арифметика
 
