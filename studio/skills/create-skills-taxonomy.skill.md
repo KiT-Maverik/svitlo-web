@@ -7,7 +7,7 @@
 ## NON-NEGOTIABLE START CONDITIONS
 
 1. **Package root:** identify the real standalone textbook/application root, not the monorepo root. Inspect the actual repository rather than assuming an example path.
-2. **Scope:** establish the subject, intended breadth, exclusions, working language and whether the taxonomy is new or an approved revision.
+2. **Scope:** establish the subject, intended breadth, exclusions and whether the taxonomy is new or an approved revision. **Canonical taxonomy headings, substantive descriptions, metadata, link labels, filenames and paths are authored in English only**; learner-facing translations live in the localized runtime data rather than replacing the editorial English original.
 3. **Evidence:** examine credible subject references and any standards the editor explicitly requests; do not silently impose a country, age, grade, course sequence or national curriculum.
 4. **Existing state:** inspect `<PackageRoot>/docs/skills/taxonomy.md`, existing `*.data.ts` source files and repository instructions, including applicable `AGENTS.md`. Preserve previously approved identities, names, descriptions and placements unless explicitly authorized to revise them.
 
@@ -41,6 +41,7 @@ Keep every entity's metadata together directly after its heading. Order is **Dom
 
 ## QUALITY AND ACCEPTANCE GATES
 
+- All names and descriptions are in English, with Markdown headings matching the corresponding English runtime `name.en` when a Code file exists. Translate editorial prose faithfully without changing the approved competency semantics, hierarchy, IDs, or Code targets.
 - Names and descriptions are **semantically different**: the description materially explains the name's subject content and boundaries and is not a tautology.
 - Each Skill is distinct and independently assessable; compound candidates use the A-without-B review rule.
 - Editorial uncertainties and source coverage limitations are reported separately; never fabricate a numeric standards-coverage percentage from catalog counts.
