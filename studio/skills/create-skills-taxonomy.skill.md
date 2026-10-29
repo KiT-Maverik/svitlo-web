@@ -9,7 +9,7 @@
 1. **Package root:** identify the real standalone textbook/application root, not the monorepo root. Inspect the actual repository rather than assuming an example path.
 2. **Scope:** establish the subject, intended breadth, exclusions, working language and whether the taxonomy is new or an approved revision.
 3. **Evidence:** examine credible subject references and any standards the editor explicitly requests; do not silently impose a country, age, grade, course sequence or national curriculum.
-4. **Existing state:** inspect `<PackageRoot>/docs/skills/taxonomy.md`, existing `*.data.ts` source files and repository instructions, including applicable `AGENTS.md`. Preserve previously approved identities, names, descriptions and placements unless explicitly authorized to revise them.
+4. **Existing state:** inspect `<PackageRoot>/docs/skills/taxonomy.md`, existing `*.data.ts` source files, repository instructions including applicable `AGENTS.md`, and any existing **`<PackageRoot>/docs/history/skill-taxonomy-review.md`**. The history explains past decisions but cannot override the canonical taxonomy. Preserve approved identities, names, descriptions and placements unless explicitly authorized to revise them.
 
 If a prerequisite is missing, report it accurately rather than inventing files or claiming unverified implementation.
 
@@ -24,8 +24,8 @@ Read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entit
 3. **Review:** discuss overlaps, missing competencies, accidental bundling and over-fragmentation. Separate A and B if independently meaningful; add an integration Skill C only when the relationship itself is independently assessable. A Lesson/Question covering A and B need not create C. Report unresolved choices **before** editing an approved hierarchy.
 4. **Write authoritative descriptions in the taxonomy itself:** immediately after each Domain, Group and Skill heading's metadata, provide a substantive paragraph explaining **what the concept/competency means, what is included and what distinguishes it from neighboring entries**. Names identify; descriptions explain. A Description **must not repeat, paraphrase or mechanically expand the heading**, nor merely say that a Domain contains related Groups or a Group contains related Skills. For Skills, clarify the observable mathematical idea, meaningful scope or distinguishing case; give a concrete example where it improves understanding, without turning the description into a lesson, grading rubric, question format or implementation plan. Every entry receives its own relevant description. Use ordinary prose below the heading: **never emit a `Description:` prefix**.
 5. **Inspect actual Code files:** when an entity is implemented and validated, link directly to its canonical `*.data.ts` file. Otherwise use exactly `Code: [Not implemented](#)`. A reserved UUID, a parent map or a proposed path does not prove implementation.
-6. **Author only the taxonomy** using the template below. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code.
-7. **Verify and stop:** check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval.
+6. **Author the canonical taxonomy** using the template below. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code. A **single optional historical Review** may be created or appended **only** under the narrowly defined gate below, not as a second taxonomy.
+7. **Verify and stop:** check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval. If a historical Review was changed, verify its dates, factual decisions, links and lack of duplication.
 
 ## CANONICAL OWNERSHIP
 
@@ -39,6 +39,27 @@ Read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entit
 
 Keep every entity's metadata together directly after its heading. Order is **Domain:** `Groups · Skills` → `Code` → prose; **Group:** `Skills` → `Code` → prose; **Skill:** `Code` → prose. Present substantive descriptions as unlabeled Markdown paragraphs, never as `Description:` fields, and never interrupt metadata with a description. Do not reintroduce `Definition` links: the taxonomy itself is the permanent editorial definition and its only per-entity artifact link is `Code`.
 
+## SKILL TAXONOMY REVIEW — OPTIONAL DATED HISTORY, NOT ANOTHER TAXONOMY
+
+Follow the **mandatory dated-history policy** in [Methodologist Persona](../personas/methodist.persona.md) before touching any Review. There is exactly **one default history document for this subject**:
+
+```text
+<PackageRoot>/docs/history/skill-taxonomy-review.md
+```
+
+Title: **Skill Taxonomy Review**. Keep the **original review date** and append subsequent agreed decisions under their actual dates. This historical file is **not** a per-Skill Definition, does not replace `docs/skills/taxonomy.md` and does not determine runtime IDs.
+
+**First decide whether to write history:**
+
+- **Existing history:** read and **append to the same file only if** this review produced a genuinely new editor-approved agreement, rationale or reversal. Prefer a short dated addendum that references the earlier decision; do not rewrite the past or duplicate the taxonomy's current descriptions.
+- **No history:** do **not** create one for a first taxonomy, a routine item-level or incremental editorial review, a title/description correction, or a PR update. Creation is warranted only if (a) the existing taxonomy has a substantially earlier **original date**, the corresponding textbook has **actually been implemented**, and the editor is now conducting a substantive redesign of that earlier generation; (b) the editor **explicitly identifies a new textbook generation**; or (c) the editor **expressly requests a dated historical decision record**. Verify the underlying conditions in source files and the brief, not from assumed elapsed time or confidence.
+- **New generation with a history already present:** **append a dated generation section** to the existing Review by default. A separate version-scoped Review is an **explicit editor exception**, not automatic version-per-review output; follow the Persona's generation naming rule.
+- **Any unresolved question:** present it to the editor separately. Never record an agent proposal as an agreed outcome, create an extra history document to avoid the approval gate, or change approved taxonomy entries merely to match a historic decision.
+
+**Record format:** factual `YYYY-MM-DD` decision, affected Domain/Group/Skill names, alternatives actually considered, editor's decision, the concrete rationale, any later supersession and links to the canonical taxonomy/PR or sources. Preserve earlier dates and rationale. Do **not** include a chronological agent work log, fake progress, guessed approvals, repetitive inventories, TODO lists or complete lesson-story material; those belong in their respective canonical artifacts.
+
+**Handoff:** State whether the existing history was **updated**, a **qualified new Review** was created, or **no history file** was warranted, and why. The ordinary result is still exactly **one canonical `taxonomy.md`**. History is a rare archival exception, not a required second output.
+
 ## QUALITY AND ACCEPTANCE GATES
 
 - Names and descriptions are **semantically different**: the description materially explains the name's subject content and boundaries and is not a tautology.
@@ -48,7 +69,7 @@ Keep every entity's metadata together directly after its heading. Order is **Dom
 - Each entry has one verified `Code` reference or the exact missing-target placeholder; Code counts report actual implementations, not file names guessed from the taxonomy.
 - No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or fake `Status` fields occur in the taxonomy.
 - Markdown descriptions do **not** start with `Description:` and always follow all of the entity's metadata (`Code` plus any Group/Skill counts).
-- The only artifact written by this workflow is the taxonomy file. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates.
+- The **only canonical authoring artifact** is `docs/skills/taxonomy.md`. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates; the optional `docs/history/skill-taxonomy-review.md` may be created/updated **only** under the explicit history gate above.
 
 ## TAXONOMY TEMPLATE
 
@@ -96,7 +117,7 @@ Code: [Not implemented](#)
 
 ## RESULT
 
-Create or update **exactly one canonical file** in the selected textbook package:
+Create or update **exactly one canonical taxonomy file** in the selected textbook package (a history file is separately optional and strictly gated):
 
 ~~~text
 <PackageRoot>/
@@ -105,4 +126,4 @@ Create or update **exactly one canonical file** in the selected textbook package
         └── taxonomy.md
 ~~~
 
-Keep validated code references and editorial decisions stable. Deliver source references, final Domain/Group/Skill counts, verified Code counts, suspicious combined competencies and unresolved editor decisions. The **next authorized stage after approval** is [Implement Skill Code](./implement-skill-code.skill.md), not a Definition-generation step.
+Keep validated code references and editorial decisions stable. Deliver source references, final Domain/Group/Skill counts, verified Code counts, suspicious combined competencies, unresolved editor decisions, and a concise declaration of whether a qualifying dated Review was appended/created or no historical file was warranted. The **next authorized stage after approval** is [Implement Skill Code](./implement-skill-code.skill.md), not a Definition-generation step.
