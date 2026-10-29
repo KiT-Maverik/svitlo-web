@@ -11,10 +11,10 @@ This is the permanent, textbook-local and audience-independent catalog of indepe
 ## SUMMARY
 
 Domains: 14
-Groups: 52
-Skills: 237
+Groups: 53
+Skills: 243
 
-Code files: 0/14 Domains · 0/52 Groups · 0/237 Skills
+Code files: 0/14 Domains · 0/53 Groups · 0/243 Skills
 
 ## DOMAINS
 
@@ -1286,11 +1286,11 @@ Assess a work through stated expressive and technical criteria rather than prefe
 
 ### Design and Visual Communication
 
-Groups: 4 · Skills: 16
+Groups: 5 · Skills: 22
 
 [Not implemented](#)
 
-Visual design conveys meaning through typography, symbols, layout and applied graphics. Artistic communication is the focus, not commercial strategy or implementing a software user interface.
+Design communicates through typography, symbols, layout, applied graphics and wearable forms. In clothing, artistic choices also concern silhouette, fabric behavior and the body; industrial manufacturing and commercial strategy remain outside this domain.
 
 #### Typography and Layout
 
@@ -1387,6 +1387,50 @@ Create related signs that are both mutually consistent and distinguishable.
 [Not implemented](#)
 
 Revise barriers arising from low contrast, inappropriate text scale or color-only distinctions.
+
+#### Fashion and Apparel Design
+
+Skills: 6
+
+[Not implemented](#)
+
+Garment design applies artistic decisions to forms worn on the body. Silhouette, material behavior, construction planning and coordinated collections distinguish this practice from textile-surface ornament and theatre-specific costume design.
+
+##### Design Garment Silhouettes
+
+[Not implemented](#)
+
+Develop a clothing form through deliberate decisions about outline, volume and proportion in relation to the moving human body.
+
+##### Select Textiles for Garments
+
+[Not implemented](#)
+
+Choose fabric properties such as weight, drape, texture and opacity to serve a particular garment form and expressive intention.
+
+##### Draft Garment Patterns
+
+[Not implemented](#)
+
+Translate a proposed three-dimensional clothing form into two-dimensional pattern pieces whose shapes and joins produce the intended fit and volume.
+
+##### Drape Fabric on a Form
+
+[Not implemented](#)
+
+Shape and arrange fabric directly on a body or dress form to explore volume, folds and construction relationships in three dimensions.
+
+##### Design Garment Surface Details
+
+[Not implemented](#)
+
+Place trims, motifs or decorative features in relation to garment shape, seams and movement rather than designing an isolated textile repeat.
+
+##### Develop a Fashion Collection
+
+[Not implemented](#)
+
+Create a coherent series of garment designs that explores a shared expressive concept through intentional variations of silhouette, material or detail.
 
 #### Information Design
 
