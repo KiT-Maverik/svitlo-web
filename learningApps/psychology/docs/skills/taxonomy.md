@@ -8,11 +8,11 @@ Breadth references, not imposed curricula: [APA Guidelines 3.0](https://www.apa.
 
 ## SUMMARY
 
-Domains: 4
-Groups: 16
-Skills: 70
+Domains: 8
+Groups: 33
+Skills: 146
 
-Code files: 0/4 Domains · 0/16 Groups · 0/70 Skills
+Code files: 0/8 Domains · 0/33 Groups · 0/146 Skills
 
 ## DOMAINS
 
@@ -595,3 +595,627 @@ Evaluate how sleep can support stabilization and reorganization of learned infor
 [Not implemented](#)
 
 Identify psychological consequences of insufficient sleep for attention, mood, and judgment.
+
+### Learning and Behavior Change
+
+Groups: 4 · Skills: 15
+
+[Not implemented](#)
+
+Past experience modifies responding through predictive cues, consequences, and social observation. This domain explains mechanisms of behavioral acquisition and flexibility rather than memory storage or a teaching sequence.
+
+#### Respondent Conditioning
+
+Skills: 4
+
+[Not implemented](#)
+
+Previously neutral cues can acquire the capacity to elicit responses through repeated relationships with consequential events.
+
+##### Classical Conditioning
+
+[Not implemented](#)
+
+Identify conditioned and unconditioned stimuli and responses within a learned predictive association.
+
+##### Acquisition and Extinction
+
+[Not implemented](#)
+
+Explain strengthening of a conditioned response and its reduction when a cue stops predicting the expected event.
+
+##### Spontaneous Recovery
+
+[Not implemented](#)
+
+Explain why a previously weakened conditioned response may reappear after a delay.
+
+##### Stimulus Generalization and Discrimination
+
+[Not implemented](#)
+
+Distinguish responses to similar cues from learning that distinct cues predict different outcomes.
+
+#### Operant Learning
+
+Skills: 4
+
+[Not implemented](#)
+
+Consequences influence the future frequency of actions; functional definitions depend on observed behavioral change rather than whether an outcome seems pleasant.
+
+##### Operant Conditioning
+
+[Not implemented](#)
+
+Identify behavior–consequence contingencies that alter future responding.
+
+##### Positive and Negative Reinforcement
+
+[Not implemented](#)
+
+Distinguish adding from removing a consequence that increases the probability of behavior.
+
+##### Positive and Negative Punishment
+
+[Not implemented](#)
+
+Distinguish adding from removing a consequence that decreases the probability of behavior.
+
+##### Reinforcement Schedules
+
+[Not implemented](#)
+
+Explain how timing and predictability of consequences alter response rates and persistence.
+
+#### Social Learning
+
+Skills: 3
+
+[Not implemented](#)
+
+Observing models informs anticipated outcomes and possible actions even without immediate imitation.
+
+##### Observational Learning
+
+[Not implemented](#)
+
+Analyze roles of attention, retention, opportunity, and motivation in learning from others.
+
+##### Vicarious Reinforcement
+
+[Not implemented](#)
+
+Explain how observing consequences experienced by another person can shift expectations about one's own action.
+
+##### Model Characteristics
+
+[Not implemented](#)
+
+Evaluate how perceived similarity, credibility, and context shape imitation.
+
+#### Transfer and Behavioral Flexibility
+
+Skills: 4
+
+[Not implemented](#)
+
+Acquired responses must generalize appropriately across contexts while remaining sensitive to meaningful differences.
+
+##### Context-Dependent Learning
+
+[Not implemented](#)
+
+Explain why a response learned in one setting may not transfer unchanged to another.
+
+##### Transfer of Learning
+
+[Not implemented](#)
+
+Assess how prior training assists or interferes with a genuinely new task.
+
+##### Feedback and Skill Acquisition
+
+[Not implemented](#)
+
+Explain how informative outcome feedback changes later performance differently from simple repetition.
+
+##### Learned Helplessness
+
+[Not implemented](#)
+
+Explain how repeated experience of uncontrollable outcomes can affect perceived agency and effort without labeling a person.
+
+### Memory and Metacognition
+
+Groups: 4 · Skills: 18
+
+[Not implemented](#)
+
+Remembering involves encoding, retention, retrieval, reconstruction, and monitoring. Memory science explains why familiar material can be difficult to recall and why subjective confidence may mislead.
+
+#### Memory Systems
+
+Skills: 4
+
+[Not implemented](#)
+
+Distinct forms of memory support immediate processing, recall of experiences and facts, and skilled performance.
+
+##### Sensory and Working Memory
+
+[Not implemented](#)
+
+Distinguish transient sensory traces from information actively maintained and manipulated during a task.
+
+##### Long-Term Retention
+
+[Not implemented](#)
+
+Describe durable storage of information and why persistence does not guarantee immediate access.
+
+##### Episodic and Semantic Memory
+
+[Not implemented](#)
+
+Distinguish recollection of personal events from access to generalized knowledge.
+
+##### Procedural Memory
+
+[Not implemented](#)
+
+Explain how acquired routines guide performance without constant conscious recollection of their steps.
+
+#### Encoding and Consolidation
+
+Skills: 4
+
+[Not implemented](#)
+
+Attention, meaningful structure, and subsequent processing influence what can later be remembered.
+
+##### Elaborative Encoding
+
+[Not implemented](#)
+
+Explain how connections to existing knowledge improve the accessibility of newly learned material.
+
+##### Organization and Chunking
+
+[Not implemented](#)
+
+Relate meaningful grouping to reduced processing demands and more efficient retrieval.
+
+##### Spacing Effects
+
+[Not implemented](#)
+
+Interpret why appropriately distributed study episodes often support longer-lasting recall than massed review.
+
+##### Memory Consolidation
+
+[Not implemented](#)
+
+Explain changes in retention after initial learning and how subsequent experience or sleep can affect them.
+
+#### Retrieval and Distortion
+
+Skills: 5
+
+[Not implemented](#)
+
+Access is cue-dependent and reconstructive; incorrect recollection does not automatically imply deliberate deception.
+
+##### Recall and Recognition
+
+[Not implemented](#)
+
+Distinguish producing remembered content from selecting it in the presence of cues.
+
+##### Retrieval Cues
+
+[Not implemented](#)
+
+Explain how contextual and semantic prompts can facilitate access to previously encoded material.
+
+##### Proactive and Retroactive Interference
+
+[Not implemented](#)
+
+Differentiate disruptions caused by earlier learning and by material acquired later.
+
+##### Misinformation Effects
+
+[Not implemented](#)
+
+Analyze how post-event suggestions can alter later reports of remembered events.
+
+##### Memory Confidence and Accuracy
+
+[Not implemented](#)
+
+Explain why vivid or confident recollection does not always predict correctness.
+
+#### Monitoring and Learning Strategies
+
+Skills: 5
+
+[Not implemented](#)
+
+Monitoring performance and choosing strategies require evidence beyond feelings of fluency or familiarity.
+
+##### Retrieval Practice
+
+[Not implemented](#)
+
+Explain how attempting to remember influences later retention differently from rereading.
+
+##### Interleaved Practice
+
+[Not implemented](#)
+
+Evaluate when alternating related task types supports discrimination and when it raises unnecessary difficulty.
+
+##### Illusions of Learning
+
+[Not implemented](#)
+
+Identify how fluent rereading or immediate performance may be confused with durable mastery.
+
+##### Self-Testing and Calibration
+
+[Not implemented](#)
+
+Use attempted retrieval and feedback to compare judged understanding with actual performance.
+
+##### Strategy Selection for Learning
+
+[Not implemented](#)
+
+Compare spacing, retrieval, elaboration, and organization for the demands of a given task rather than declaring a universal technique.
+
+### Thinking and Decision-Making
+
+Groups: 5 · Skills: 25
+
+[Not implemented](#)
+
+Cognitive processes create concepts, guide inferences, solve problems, and select actions under limited information. The focus is what people actually do, not whether their reasoning satisfies a formal philosophical standard.
+
+#### Mental Representation
+
+Skills: 4
+
+[Not implemented](#)
+
+Categories, schemas, and internal models compress information, enabling predictions while sometimes concealing important differences.
+
+##### Concept Formation
+
+[Not implemented](#)
+
+Explain how shared features and distinguishing properties support useful mental categories.
+
+##### Prototypes and Exemplars
+
+[Not implemented](#)
+
+Distinguish classification by a typical category member from comparison with remembered individual examples.
+
+##### Mental Models
+
+[Not implemented](#)
+
+Analyze how simplified internal representations predict outcomes and where neglected details cause errors.
+
+##### Cognitive Schemas
+
+[Not implemented](#)
+
+Explain how organized expectations influence the interpretation of familiar situations.
+
+#### Reasoning and Problem Solving
+
+Skills: 5
+
+[Not implemented](#)
+
+A person's representation of a challenge constrains which rules, heuristics, and solutions become available.
+
+##### Deductive and Inductive Reasoning
+
+[Not implemented](#)
+
+Distinguish reasoning from premises to a necessary conclusion from generalizing beyond observed cases.
+
+##### Problem Representation
+
+[Not implemented](#)
+
+Explain how changing the formulation of a problem changes the possible solution search.
+
+##### Means–Ends Analysis
+
+[Not implemented](#)
+
+Describe selecting intermediate actions that reduce a discrepancy between a current state and a goal.
+
+##### Functional Fixedness
+
+[Not implemented](#)
+
+Identify how familiar uses of an object can inhibit a different effective use.
+
+##### Insight and Restructuring
+
+[Not implemented](#)
+
+Explain abrupt reinterpretation during problem solving without treating the feeling of insight as proof.
+
+#### Heuristics and Biases
+
+Skills: 7
+
+[Not implemented](#)
+
+Fast judgments exploit convenient cues but may be systematically distorted by memory, presentation, or expectations.
+
+##### Availability Heuristic
+
+[Not implemented](#)
+
+Explain using the ease of recalling examples as a substitute for estimating real frequency.
+
+##### Representativeness Heuristic
+
+[Not implemented](#)
+
+Explain judging likelihood by resemblance to a familiar category while neglecting relevant background information.
+
+##### Anchoring Bias
+
+[Not implemented](#)
+
+Describe how an initial number or reference shifts later quantitative estimates.
+
+##### Confirmation Bias
+
+[Not implemented](#)
+
+Analyze selective search or interpretation of evidence that favors an existing belief.
+
+##### Hindsight Bias
+
+[Not implemented](#)
+
+Explain why knowing an outcome retrospectively makes it seem more predictable.
+
+##### Framing Effects
+
+[Not implemented](#)
+
+Assess how equivalent choices described differently can produce different judgments.
+
+##### Fundamental Attribution Error
+
+[Not implemented](#)
+
+Describe overemphasizing dispositions and neglecting situational constraints when explaining another person's behavior.
+
+#### Choices Under Uncertainty
+
+Skills: 5
+
+[Not implemented](#)
+
+Decisions depend on reference points, delayed consequences, uncertainty, and how alternatives are presented.
+
+##### Base-Rate Neglect
+
+[Not implemented](#)
+
+Explain failures to incorporate prior frequencies when a compelling individual example is present.
+
+##### Loss Aversion
+
+[Not implemented](#)
+
+Explain why a loss relative to a reference point may carry greater subjective weight than an equivalent gain.
+
+##### Delay Discounting
+
+[Not implemented](#)
+
+Explain changing subjective value of an outcome as its delivery becomes more distant.
+
+##### Risk Perception
+
+[Not implemented](#)
+
+Analyze why vividness, familiarity, controllability, and dread affect judgments of risk.
+
+##### Choice Architecture
+
+[Not implemented](#)
+
+Identify how defaults, option ordering, and information load shift behavior without assuming every nudge is harmless.
+
+#### Language and Cognitive Abilities
+
+Skills: 4
+
+[Not implemented](#)
+
+Psychological research investigates language processing and performance differences rather than literary quality or innate worth.
+
+##### Language Comprehension
+
+[Not implemented](#)
+
+Relate context and prior knowledge to the interpretation of ambiguous expressions.
+
+##### Language Production
+
+[Not implemented](#)
+
+Explain planning and word selection in speaking, including what errors reveal about processing.
+
+##### Cognitive Test Interpretation
+
+[Not implemented](#)
+
+Distinguish a measured score from a complete account of intellectual capacity, considering error and conditions.
+
+##### Theories of Intelligence
+
+[Not implemented](#)
+
+Compare broad and domain-specific models and evaluate how well measures predict relevant outcomes.
+
+### Emotion and Psychological Regulation
+
+Groups: 4 · Skills: 18
+
+[Not implemented](#)
+
+Emotional responses combine appraisal, bodily activation, expression, and action tendencies. Regulation concerns responding flexibly to emotions, not suppressing every uncomfortable experience.
+
+#### Emotional Processes
+
+Skills: 5
+
+[Not implemented](#)
+
+Emotions emerge from interpretations, physiological changes, and situational information that interact in complex ways.
+
+##### Emotion Functions
+
+[Not implemented](#)
+
+Explain how emotion can signal needs, orient attention, and prepare action while avoiding fixed rules for every person.
+
+##### Emotional Appraisal
+
+[Not implemented](#)
+
+Analyze how interpretations of an event influence feelings when the physical event is otherwise unchanged.
+
+##### Physiology of Emotion
+
+[Not implemented](#)
+
+Relate changes in arousal and bodily responses to experienced emotion without assuming a unique bodily signature for each state.
+
+##### Emotion Theories
+
+[Not implemented](#)
+
+Compare explanatory accounts of the relationship among bodily changes, appraisal, and conscious experience.
+
+##### Mood and Emotion
+
+[Not implemented](#)
+
+Distinguish relatively persistent affective states from briefer reactions focused on a specific event.
+
+#### Recognition and Expression
+
+Skills: 4
+
+[Not implemented](#)
+
+Emotional information is conveyed through multiple channels, but neither facial expression nor tone is an infallible window into another mind.
+
+##### Emotion Vocabulary
+
+[Not implemented](#)
+
+Differentiate related affective states to communicate distinctions in intensity, quality, or cause.
+
+##### Reading Emotional Cues
+
+[Not implemented](#)
+
+Interpret facial, vocal, and contextual signals cautiously rather than equating one expression with a definite inner state.
+
+##### Cultural Variation in Expression
+
+[Not implemented](#)
+
+Explain how social norms can influence whether and how feelings are displayed.
+
+##### Emotional Self-Awareness
+
+[Not implemented](#)
+
+Identify feelings, accompanying sensations, and possible triggers without assuming a single interpretation is certain.
+
+#### Regulation Strategies
+
+Skills: 5
+
+[Not implemented](#)
+
+People can influence attention, interpretation, expression, or behavior in response to emotion, with different strategies fitting different circumstances.
+
+##### Cognitive Reappraisal
+
+[Not implemented](#)
+
+Explain how reconsidering an event's meaning can change the emotional response without denying the event.
+
+##### Attentional Regulation
+
+[Not implemented](#)
+
+Explain how directing focus alters emotional intensity or persistence, including limits of distraction.
+
+##### Expressive Suppression
+
+[Not implemented](#)
+
+Evaluate potential immediate and interpersonal costs of withholding outward emotional expression.
+
+##### Regulation Strategy Flexibility
+
+[Not implemented](#)
+
+Select and justify possible responses to changing situations instead of treating one technique as universally best.
+
+##### Seeking Appropriate Support
+
+[Not implemented](#)
+
+Distinguish self-management from situations in which trusted or qualified assistance is an appropriate response.
+
+#### Stress and Coping
+
+Skills: 4
+
+[Not implemented](#)
+
+Stress is shaped by demands and perceived resources, with psychological consequences depending partly on duration and opportunities for recovery.
+
+##### Stress Appraisal
+
+[Not implemented](#)
+
+Explain how a person's interpretation of demands and resources shapes experienced strain.
+
+##### Acute and Chronic Stress
+
+[Not implemented](#)
+
+Distinguish temporary response to a challenge from sustained exposure with different consequences.
+
+##### Problem-Focused Coping
+
+[Not implemented](#)
+
+Explain responses aimed at modifying a controllable source of difficulty.
+
+##### Emotion-Focused Coping
+
+[Not implemented](#)
+
+Explain responses aimed at managing distress when the situation itself may not be immediately alterable.
