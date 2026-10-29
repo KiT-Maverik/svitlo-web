@@ -420,37 +420,37 @@ Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/numer
 
 У 3/5 верхнє число вказує на три взяті частини із п’яти рівних, визначених знаменником.
 
-##### Представляти кілька рівних частин одного цілого дробом a/b
+##### Modeling fractions with multiple equal parts
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/nonUnitModel.data.ts)
 
 Три однакові восьмі частини складають 3/8; усі частини повинні належати тому самому цілому.
 
-##### Пояснювати, чому величина частини залежить від розміру цілого
+##### Explaining how part size depends on the whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/wholeDependence.data.ts)
 
 Половина великої піци може бути більшою за половину маленької; порівнювати дробові частини без спільного цілого некоректно.
 
-##### Розміщувати прості дроби між 0 і 1 на числовій прямій
+##### Locating fractions between 0 and 1 on a number line
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/numberLine.data.ts)
 
 Між 0 та 1 точка 3/4 розташована на третьому із чотирьох рівних кроків від нуля.
 
-##### Пояснювати на моделі, що n/n відповідає одному цілому
+##### Showing one whole as n/n
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/oneAsFraction.data.ts)
 
 Якщо взяти всі чотири чверті того самого цілого, сума покриває його повністю: 4/4 = 1.
 
-##### Показувати на наочних моделях рівність простих дробів, наприклад 1/2 = 2/4
+##### Showing equivalent fractions with visual models
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/representation/skills/equivalentVisual.data.ts)
 
 Дві четверті покривають таку саму частку цілого, як одна друга; еквівалентність можна бачити без обчислення.
 
-#### Порівняння дробів
+#### Comparing fractions
 
 Skills: 3
 
@@ -458,25 +458,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/comparison.data.ts)
 
-##### Порівнювати дроби з однаковим чисельником, спираючись на однакове ціле
+##### Comparing fractions with the same numerator
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/compareSameNumerator.data.ts)
 
 За спільного цілого 2/5 більше за 2/7: однакову кількість частин беруть із більших за розміром шматків.
 
-##### Порівнювати одиничні дроби від одного й того самого цілого
+##### Comparing unit fractions of the same whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/compareUnit.data.ts)
 
 Для того самого яблука 1/2 більше за 1/4, оскільки поділ на більше рівних частин робить кожну меншою.
 
-##### Порівнювати дроби з однаковими знаменниками через наочну модель
+##### Comparing fractions with the same denominator using models
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/comparison/skills/sameDenominatorModel.data.ts)
 
 За однакових знаменників 5/8 більше за 3/8, бо розмір однієї восьмої не змінюється.
 
-#### Обчислення з дробами
+#### Operations with fractions
 
 Skills: 2
 
@@ -484,19 +484,19 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/arithmetic.data.ts)
 
-##### Додавати прості дроби з однаковими знаменниками в межах одного цілого
+##### Adding fractions with the same denominator within one whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/skills/addLikeDenominators.data.ts)
 
 У 2/7 + 3/7 додають кількість сьомих і залишають знаменник 7; сума в такому випадку не перевищує цілого.
 
-##### Віднімати прості дроби з однаковими знаменниками в межах одного цілого
+##### Subtracting fractions with the same denominator within one whole
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/arithmetic/skills/subtractLikeDenominators.data.ts)
 
 У 5/6 − 2/6 віднімають дві рівні шості частини від п’яти; розмір частини не змінюється.
 
-#### Частини величини
+#### Fractional parts of quantities
 
 Skills: 2
 
@@ -504,19 +504,19 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/portions.data.ts)
 
-##### Знаходити 1/n від числа або вимірюваної величини через ділення
+##### Finding 1/n of a quantity by division
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/skills/findUnitPart.data.ts)
 
 Одна четверта від 20 — п’ять: рівномірне розбиття двадцяти одиниць на чотири групи дає розмір однієї групи.
 
-##### Знаходити ціле за відомою одиничною частиною
+##### Finding the whole from a known unit fraction
 
 Code: [Code](../../src/data/skillsTaxonomy/fractions/portions/skills/reconstructWhole.data.ts)
 
 Якщо одна п’ята набору становить 3 предмети, усі п’ять однакових частин разом містять 15.
 
-### Арифметика
+### Arithmetic
 
 Groups: 5 · Skills: 79
 
