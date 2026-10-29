@@ -648,91 +648,91 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/borrowE
 
 In 52 − 28, exchanging a ten changes both the number of available ones and the remaining tens. Omitting either change produces an error.
 
-#### Поєднання додавання та віднімання
+#### Combining addition and subtraction
 
 Skills: 13
 
-Взаємозв’язок двох обернених дій, робота з частинами цілого та гнучкі стратегії усних обчислень і самоперевірки.
-
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/additionSubtraction.data.ts)
 
-##### Складати ціле з частин і знаходити невідому частину цілого
+The inverse relationship between addition and subtraction supports part-whole reasoning, flexible mental calculation, and checking results.
+
+##### Addition and subtraction — Part–whole relationship
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/partWhole.data.ts)
 
-Якщо ціле 9 поділено на відомі 4 й невідому частину, решта визначається як 9 − 4.
+If a whole of nine contains a known part of four, the remaining part is found by 9 − 4.
 
-##### Обчислювати суми й різниці в межах 10 без предметного переліку
+##### Addition and subtraction — Number facts ≤ 10
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin10.data.ts)
 
-Результати невеликих комбінацій на кшталт 6 + 3 та 9 − 4 мають бути доступні без повторного підрахунку предметів.
+Small facts such as 6 + 3 or 9 − 4 can be calculated without recounting physical objects.
 
-##### Розкладати 10 на дві частини різними способами
+##### Addition and subtraction — Bonds of 10
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/numberBonds10.data.ts)
 
-Число 10 можна зібрати як 1 + 9, 4 + 6 або 5 + 5; зміна частин не змінює цілого.
+Ten can be partitioned into two addends in several ways, including 1 + 9, 4 + 6, and 5 + 5. Changing the parts does not change the whole.
 
-##### Впевнено обчислювати суми та різниці в межах 20
+##### Addition and subtraction — Number facts ≤ 20
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/factsWithin20.data.ts)
 
-У діапазоні до 20 обчислення можна виконувати через опорні десятки й відомі числові факти, не повертаючись до лічби від одиниці.
+Sums and differences within twenty can rely on known number facts and tens as anchors without restarting from one each time.
 
-##### Перевіряти додавання відніманням і навпаки
+##### Addition and subtraction — Inverse operations
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/inverseOperations.data.ts)
 
-Рівність 7 + 5 = 12 можна перевірити як 12 − 5 = 7, бо дії повертають до початкової частини.
+The equality 7 + 5 = 12 can be checked using 12 − 5 = 7 because subtraction recovers the original part.
 
-##### Додавати й віднімати цілі десятки
+##### Addition and subtraction — Whole tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/addSubtractTens.data.ts)
 
-40 + 30 спирається на 4 + 3 десятки, а 80 − 20 — на 8 − 2 десятки.
+Computations such as 40 + 30 operate on groups of tens, while 80 − 20 removes two of eight tens.
 
-##### Додавати та віднімати двоцифрові числа без розрядного обміну
+##### Addition and subtraction — 2-digit · Without regrouping
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/twoDigitNoRegroup.data.ts)
 
-У 34 + 25 додають десятки до десятків та одиниці до одиниць без утворення нового десятка.
+In 34 + 25, tens and ones are combined separately, and neither place requires an exchange.
 
-##### Обчислювати усно через десятки й одиниці, пояснюючи кожний крок
+##### Addition and subtraction — Mental place-value strategy
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/placeValueMental.data.ts)
 
-Для 47 + 21 можна подумки виконати 40 + 20 і 7 + 1 та поєднати підсумки.
+For 47 + 21, mentally add 40 + 20 and 7 + 1, then combine the partial sums.
 
-##### Використовувати компенсацію (додати й відняти те саме число) для усних обчислень
+##### Addition and subtraction — Compensation
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/compensation.data.ts)
 
-У 39 + 8 можна тимчасово замінити 39 на 40, обчислити 48 й відняти додану одиницю.
+To calculate 39 + 8, temporarily use 40 + 8 = 48, then subtract the extra one.
 
-##### Додавати та віднімати круглі сотні й десятки в межах 1000
+##### Addition and subtraction — Hundreds and tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/hundredsAndTens.data.ts)
 
-300 + 400 працює із сотнями як із цілими одиницями розряду; 650 − 20 — із десятками.
+The calculation 300 + 400 combines hundreds as grouped units; in 650 − 20, two tens are subtracted.
 
-##### Додавати та віднімати трицифрові числа без переходу через розряд
+##### Addition and subtraction — 3-digit · Without regrouping
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/threeDigitNoRegroup.data.ts)
 
-У 324 + 153 кожен стовпець дає значення менше десяти, тому переноси між розрядами не потрібні.
+In 324 + 153, each column totals less than ten, so no carrying between place values is required.
 
-##### Оцінювати правдоподібність суми або різниці до точного обчислення
+##### Addition and subtraction — Result estimation
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/estimateResult.data.ts)
 
-Перед 399 + 204 можна очікувати суму приблизно 600; результат на кшталт 63 має неправильний порядок величини.
+Before calculating 399 + 204, a sum near 600 is expected; an answer such as 63 would be implausible in magnitude.
 
-##### Знаходити й виправляти помилки в додаванні та відніманні за допомогою оберненої дії
+##### Addition and subtraction — Result checking · Inverse operations
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/checkWithInverse.data.ts)
 
-Результат 63 − 28 перевіряють додаванням 28 до отриманої різниці; невідповідність показує збій.
+A subtraction result for 63 − 28 can be checked by adding 28 back to the difference. A mismatch indicates an error.
 
 #### Множення
 
