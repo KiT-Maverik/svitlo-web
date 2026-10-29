@@ -158,78 +158,78 @@ For `n` potential positions under this model, the maximum number of binary-searc
 
 **Accessibility:** all probabilities are shown as text, animations can be disabled, and probabilities are **invented teaching values only**. [Reference on tokens and context](https://help.openai.com/en/articles/4936856-understanding-and-counting-tokens).
 
-## 6. Цифрова безпека й AI — навчальні кейси
+## 6. Digital Safety and AI — Learning Cases
 
-### Надмірне підтакування AI: «Ти геній!» — це не доказ
+### AI Sycophancy: 'You Are a Genius!' Is Not Evidence
 
-У безпечному вигаданому діалозі учень порівнює безпідставну похвалу з коректною перевіркою факту. Поняття **sycophancy** — надмірна погоджувальність, здатна підтримувати помилки. **Не стверджувати, що AI завжди погоджується або що доведено єдину комерційну мотивацію.** Відомий задокументований приклад: **OpenAI відкликала надто підтакувальне оновлення GPT‑4o у квітні 2025 року**. Учимо просити контраргументи, перевіряти незалежні джерела й не приймати комплімент за підтвердження ідеї.
+In a safe fictional exchange, learners compare ungrounded praise with properly checked claims. **Sycophancy** is excessive agreement that can reinforce mistakes. **Do not claim AI always agrees or that a single commercial motive has been established.** A documented example: **OpenAI rolled back an overly sycophantic GPT-4o update in April 2025**. Teach learners to ask for counterarguments, verify independent sources, and not treat compliments as confirmation.
 
-**Реальний кейс для старших учнів / педагогічного розбору:** канадець **Allan Brooks**, за його свідченнями та журналістськими публікаціями, під час тривалих розмов із чатботом повірив у хибне математичне відкриття. Він згодом став **програмним директором The Human Line Project**; **засновник — Etienne Brisson**. Історію подавати як повідомлення та особисті свідчення, не як медичний діагноз чи остаточний судовий висновок. Підкреслити небезпеку відриву від перевірюваної реальності, ізоляції від близьких, надмірної тривалості розмов; важливість підтримки довіреної людини й фахівця. Не романтизувати психологічну кризу, не відтворювати шкідливі діалоги. [OpenAI про sycophancy](https://openai.com/index/sycophancy-in-gpt-4o/); [The Human Line Project](https://thehumanlineproject.org/); [інтерв’ю Brooks і Brisson](https://intoaisafety.transistor.fm/episodes/holding-the-human-line-w-allan-brooks-and-etienne-brisson/transcript).
+**Real-world case for older learners / guided educational discussion:** according to his accounts and journalistic reports, Canadian **Allan Brooks** became convinced he had made a false mathematical breakthrough during prolonged conversations with a chatbot. He later became **program director of The Human Line Project**; **Etienne Brisson is its founder**. Present this as reported experience and testimony, not a clinical diagnosis or final legal finding. Highlight risks of losing touch with verifiable reality, isolation from close relationships, and excessively long conversations; emphasize support from trusted people and qualified professionals. Do not romanticize psychological crises or reproduce harmful dialogue. [OpenAI on sycophancy](https://openai.com/index/sycophancy-in-gpt-4o/); [The Human Line Project](https://thehumanlineproject.org/); [interview with Brooks and Brisson](https://intoaisafety.transistor.fm/episodes/holding-the-human-line-w-allan-brooks-and-etienne-brisson/transcript).
 
-### Пошукові системи знаходять поширені розмови
+### Search Engines Can Index Shared Conversations
 
-У **липні 2025 року** в індексі пошукових систем знаходилися **окремі чати ChatGPT, поширені користувачами через публічне посилання з увімкненою опцією пошукової доступності**; **31 липня OpenAI прибрала цю опцію**. Це не означає масового відкриття всіх приватних чатів. Дитина на **вигаданих прикладах** розрізняє приватну розмову, публічне посилання, видимий усім документ і медичні/службові/персональні секрети, які не можна розкривати. [Розбір події з уточненням і виправленням](https://techcrunch.com/2025/07/31/your-public-chatgpt-queries-are-getting-indexed-by-google-and-other-search-engines/).
+In **July 2025**, search indexes included **some ChatGPT conversations deliberately shared through public links with search discoverability enabled**; **OpenAI removed that option on July 31**. This does not mean all private chats were exposed. Using **fictional examples**, learners distinguish private conversations, public links, universally accessible documents, and personal/medical/work secrets that should not be disclosed. [Report with clarification and correction](https://techcrunch.com/2025/07/31/your-public-chatgpt-queries-are-getting-indexed-by-google-and-other-search-engines/).
 
-### Чому знеособлені дані можуть бути впізнаваними
+### Why De-identified Data May Still Be Linkable to People
 
-На **вигаданих маршрутах** показати, як поєднання часу й місця з іншими відомостями може виділити одну людину з великого набору. Перевірена праця **Yves-Alexandre de Montjoye та співавторів (2013)** дослідила **1,5 млн мобільних траєкторій**; за **чотирма точками місця й часу** у цьому наборі можна було **унікально вирізнити 95% траєкторій**. Це **не рівнозначно встановленню імен, дітей та адреси будь-якої конкретної людини**. Не вигадувати особу «норвезького програміста» без джерел. Не експериментувати з реальними даними дітей. [Наукове дослідження](https://pmc.ncbi.nlm.nih.gov/articles/PMC3607247/).
+Use **fictional routes** to illustrate how combining time and location with other data can distinguish one person within a large dataset. A study by **Yves-Alexandre de Montjoye and colleagues (2013)** analyzed **1.5 million mobility trajectories** and found that **four space-time points uniquely characterized 95% of trajectories** in that dataset. This is **not equivalent to determining the names, children, or addresses of arbitrary specific individuals**. Do not invent an unsourced story about a 'Norwegian programmer'. Never experiment with real children's data. [Research paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC3607247/).
 
-### Фішинг, підміна адрес і довіра до листів
+### Phishing, Lookalike Addresses, and Email Trust
 
-На безпечних вигаданих прикладах зіставити видиму назву кнопки, справжній домен (`facebook.com.example.org` — це **`example.org`**, не `facebook.com`), схожі символи, пошту на кшталт `BillGates@gmail.com` та підроблену форму входу. **Ім’я відправника і логотип не є підтвердженням особи.** Ризики посилання: викрадення введеного пароля, завантаження/запуск шкідливого файла, а за наявності вразливості — технічна експлуатація. **Не стверджувати, що будь-який клік автоматично виконує код.** Ввести фішинг, соціальну інженерію, багатофакторну автентифікацію, перевірку домену та звернення до офіційного каналу. Окремо розмежувати вміння **розпізнати фішинг**, **оцінити наслідки переходу за посиланням** і **перевірити справжній домен**; схожі літери в підробленій адресі належать до останньої навички. Для MFA розрізняти розуміння незалежних факторів входу і їх безпечне налаштування з відновленням доступу.
+With safe fictional examples, compare a visible button label with the actual domain (`facebook.com.example.org` belongs to **`example.org`**, not `facebook.com`), lookalike characters, email such as `BillGates@gmail.com`, and a fake login form. **Display names and logos do not authenticate the sender.** Link risks include theft of entered passwords, malicious downloads or execution, and exploitation where a technical vulnerability exists. **Do not claim that clicking any link automatically executes malicious code.** Introduce phishing, social engineering, multi-factor authentication, domain checks, and official support channels. Treat **detecting phishing**, **assessing the risk of following a link**, and **verifying the actual domain** as separate skills; detecting lookalike characters belongs to domain verification. For MFA, distinguish understanding independent authentication factors from safely configuring and recovering access.
 
-## 7. Програмна логіка та люди, які її створювали
+## 7. Program Logic and the People Who Developed It
 
-**Булева логіка.** Починати з істинності простої умови, окремо досліджувати І (`AND`), АБО (`OR`, включне) і НЕ (`NOT`), а потім комбінувати їх у виразах із дужками та визначеним пріоритетом операцій. Зміна порядку групування може змінити результат, але сама логічна умова не повинна підмінятися кодом перевірки.
+**Boolean logic.** Begin by evaluating a single condition; examine AND, inclusive OR, and NOT independently before combining them into expressions with parentheses and defined operator precedence. Grouping can change outcomes, and evaluating a logical expression should not be confused with writing code to implement the check.
 
-**Рекурсія як спосіб обчислення.** На простих скінченних прикладах відрізняти пояснення повторного виклику з базовим випадком від самостійної побудови рекурсивного алгоритму, де підзадачі зменшуються й досягають завершення. Не плутати рекурсію з нескінченним викликом без базового випадку.
+**Recursion as computation.** Using simple finite examples, distinguish tracing a recursive call with a base case from independently designing a recursive algorithm in which progressively smaller subproblems terminate. Do not confuse recursion with an endless chain of calls that never reaches a base case.
 
-**Інтерактив «Чому друга умова не спрацювала?»** На `if (hasGreen)` з наступною `else if (hasGreen && hasRed)` показати, що для об’єкта з обома прапорцями друга гілка **недосяжна**: перша перекриває її. Виправлення — ставити **специфічнішу умову раніше**, якщо умови перекриваються й це ланцюг альтернатив. **Не перетворювати на універсальне правило «складні умови завжди першими»**; два незалежні `if` можуть обидва виконатися.
+**Interaction: 'Why Did the Second Condition Never Run?'** Use `if (hasGreen)` followed by `else if (hasGreen && hasRed)` to show that for an object with both flags the second branch is **unreachable**: the first condition shadows it. The fix is to place the **more specific condition earlier** when checks overlap in a chain of alternatives. **Do not universalize this into 'complex conditions always come first'**; two independent `if` statements may both execute.
 
-**Інтерактив «Чому тисячу разів рахуємо те саме?»** Порівняти повторне обчислення незмінного виразу **всередині циклу** та одноразове **перед циклом**. Винесення безпечне лише тоді, коли залежності не змінюються, а перенесення **не змінює побічні ефекти**. Окремо показати **нескінченний цикл** без досяжної умови виходу.
+**Interaction: 'Why Calculate the Same Thing a Thousand Times?'** Compare repeatedly computing a constant expression **inside a loop** with computing it once **before the loop**. Moving it out is safe only when dependencies are unchanged and the move **preserves side effects**. Also illustrate an **infinite loop** with no reachable exit condition.
 
-**Історія програмування — ідеї, технологічні внески та їхні творці.** Навички в [Skills Taxonomy](./skills/taxonomy.md) визначено за відтворюваними концептуальними внесками, а не за окремими біографіями. Водночас **конкретні люди та команди — обов’язковий навчальний зміст**, і їх не можна вилучати через перейменування скілів.
+**History of programming — ideas, technological contributions, and their creators.** The [Skills Taxonomy](./skills/taxonomy.md) identifies reusable conceptual contributions rather than creating a separate competency for each biography. Nevertheless, **named people and teams are mandatory learning content** and must not disappear when Skill headings are revised.
 
-| Концептуальний внесок | Обов’язковий історичний зміст |
+| Conceptual contribution | Required historical content |
 | --- | --- |
-| Витоки програмування | **Ада Лавлейс**, аналітична машина **Чарльза Беббіджа**, описи послідовностей операцій |
-| Раннє електронне програмування | **Шість програмісток ENIAC** і практична підготовка програм на ранніх електронних машинах |
-| Розвиток компіляторів | **Грейс Гоппер**, перехід до вищих рівнів опису програм, спільний розвиток мов і компіляторів |
-| Надійність програм | **Маргарет Гамільтон**, команда програмного забезпечення **Apollo**, обробка відмов і вимоги до критичних систем |
-| Усунення мережевих петель | **Радія Перлман**, **Spanning Tree Protocol** для мостів локальних мереж; не плутати з маршрутизацією IP |
-| Теорія обчислюваності | **Алан Тюрінг**, формальна модель обчислення та її обмеження |
-| Історичні методи криптоаналізу | **Джоан Кларк**, **Алан Тюрінг**, **Гордон Велчман**, **польські криптоаналітики** та їхній внесок у розвиток методів пошуку |
-| Обчислювальні й спеціалізовані машини | Розвиток програмованих комп’ютерів; **Bombe** як електромеханічна машина для перевірки можливих налаштувань **Enigma**, не універсальний комп’ютер |
+| Origins of programming | **Ada Lovelace**, **Charles Babbage's Analytical Engine**, descriptions of sequences of operations |
+| Early electronic programming | **Six ENIAC women programmers** and practical program preparation for early electronic computers |
+| Compiler development | **Grace Hopper**, higher-level program descriptions, collaborative development of languages and compilers |
+| Software reliability | **Margaret Hamilton**, **Apollo** software team, failure handling and requirements for safety-critical systems |
+| Eliminating network loops | **Radia Perlman**, **Spanning Tree Protocol** for local-area network bridges; not IP routing |
+| Computability theory | **Alan Turing**, formal computation models and their limits |
+| Historical cryptanalysis methods | **Joan Clarke**, **Alan Turing**, **Gordon Welchman**, **Polish cryptanalysts**, and their contributions to search methods |
+| Computing and special-purpose machines | Development of programmable computers; **Bombe** as an electromechanical machine for testing possible **Enigma** settings, not a general-purpose computer |
 
-На прикладах з історії показувати фундаментальну й довго недооцінену роль жінок поряд із внеском інших дослідників; не підміняти документовані факти твердженням, що майже всі технології створила одна група людей. **Тест Тюрінга** й **«Китайська кімната» Джона Серла (1980)** належать до осмислення AI та питань імітації людських відповідей і розуміння, а не до групи історичних обчислювальних машин.
+Use historical examples to show the foundational and long-undervalued work of women alongside that of other researchers. Do not replace documented contributions with an unsupported claim that one group invented nearly all technologies. The **Turing Test** and **John Searle's Chinese Room (1980)** belong to discussions of AI, imitation, and understanding, not a group of historical computing machines.
 
-**Джерела до історичних прикладів:** [Computer History Museum — Women in Computing](https://computerhistory.org/activities-resources/women-in-computing-history/); [National Museum of Computing — Bombe](https://www.tnmoc.org/bombe); [GCHQ — Joan Clarke](https://www.gchq.gov.uk/information/joan-clarke); [Stanford Encyclopedia — Chinese Room](https://plato.stanford.edu/entries/chinese-room/).
+**Historical references:** [Computer History Museum — Women in Computing](https://computerhistory.org/activities-resources/women-in-computing-history/); [National Museum of Computing — Bombe](https://www.tnmoc.org/bombe); [GCHQ — Joan Clarke](https://www.gchq.gov.uk/information/joan-clarke); [Stanford Encyclopedia — Chinese Room](https://plato.stanford.edu/entries/chinese-room/).
 
-**Бази даних та паралелізм — окремі технічні моделі.** На прикладі бібліотечного каталогу відрізняти відображення даних у звичайній таблиці від реляційної бази з записами, полями, унікальними ключами та зв’язками. На прикладі кількох незалежних обчислень відрізняти послідовне виконання від конкурентного чергування і фактичного паралельного виконання; окремо планувати залежності між підзадачами, не обіцяючи автоматичного прискорення.
+**Databases and parallelism — separate technical models.** A library catalog illustrates the distinction between a plain formatted table and a relational database with records, fields, unique keys, and relationships. Several independent computations illustrate sequential execution, concurrent interleaving, and actual simultaneous parallel execution. Separately plan task dependencies without promising automatic speedups.
 
-## 8. Прості алгоритми — кожен зі своєю навчальною моделлю
+## 8. Elementary Algorithms — Each with Its Own Learning Model
 
-**Організаційне рішення для редакційного рев’ю:** домен «Алгоритми» у [Skills Taxonomy](./skills/taxonomy.md) групує компетентності **за призначенням**: пошук, сортування, обробка наборів, загальна побудова й аналіз. Кожен названий базовий алгоритм має **окремий Skill** як самостійно ідентифіковану компетентність (наприклад, застосовувати лінійний пошук). Його передумови, ефективність і порівняння можуть бути додатковими незалежними Skills тієї самої групи. Окрему нову сутність `Algorithm` поки не створюємо: поточна ієрархія Domain → Group → Skill задовольняє класифікацію та незалежне оцінювання названих алгоритмів. Якщо з’явиться підтверджена потреба пов’язувати декілька Skills з одним алгоритмом як окремим об’єктом, спочатку оформити архітектурне рев’ю.
+**Editorial organization:** in the [Skills Taxonomy](./skills/taxonomy.md), the Algorithms domain groups competencies **by purpose**: search, sorting, collection processing, general construction, and analysis. Each named elementary algorithm has **its own Skill** as an independently identifiable competency, such as applying linear search. Prerequisites, efficiency, and comparisons may be additional independent Skills in the same group. No separate `Algorithm` entity is being introduced: the Domain → Group → Skill hierarchy already supports classification and independent assessment. If evidence later shows a need to represent one algorithm as a separate entity linked to multiple Skills, first conduct an architecture review.
 
-| Алгоритм | Просте пояснення / навчальна модель | Чого слід не сплутати |
+| Algorithm | Simple explanation / learning model | Important distinction |
 | --- | --- | --- |
-| Лінійний пошук | Переглядати одну картку за одною, доки не знайдемо потрібну | Не потребує сортування; шуканого може не бути |
-| Бінарний пошук | У впорядкованих картках перевіряти середину й відкидати непотрібну половину | Не працює за тими самими правилами з довільно перемішаними значеннями |
-| Сортування вибором | Щоразу брати найменшу картку з решти й переносити на початок | Пошук мінімуму є кроком цього алгоритму, не тотожним усьому сортуванню |
-| Сортування вставками | Укладати наступну картку в потрібне місце вже впорядкованого ряду | Потрібно підтримувати впорядковану частину |
-| Бульбашкове сортування | Порівнювати сусідні картки й міняти неправильні пари місцями | Один прохід не завжди сортує весь набір |
-| Підрахунок елементів | Обходити предмети й додавати один за кожен збіг з умовою | Кількість збігів не дорівнює сумі їхніх значень |
-| Накопичення суми | Класти числа в уявну скриньку, додаючи їх одне за одним | Не плутати акумулятор суми з лічильником елементів |
-| Знаходження максимуму | Зберігати «найбільше з тих, що вже бачили», оновлюючи за потреби | Не вимагати сортування всього набору |
-| Знаходження мінімуму | Зберігати «найменше з тих, що вже бачили», оновлюючи за потреби | Не вимагати сортування всього набору |
-| Пошук у двійковому дереві | Від вузла зіставляти ключ і обирати ліву чи праву гілку впорядкованого дерева | Потрібне правило дерева пошуку; не кожне дерево підходить |
+| Linear search | Examine one card at a time until the target appears | No sorting required; the target may be absent |
+| Binary search | Inspect the midpoint of sorted cards and discard the impossible half | The same rule does not work on arbitrarily shuffled values |
+| Selection sort | Select the smallest remaining card and move it into the sorted prefix | Finding a minimum is one step, not the entire sort |
+| Insertion sort | Place the next card in the correct position within the sorted prefix | The sorted portion must be maintained |
+| Bubble sort | Compare adjacent cards and swap pairs that are out of order | One pass does not always sort the entire collection |
+| Element counting | Traverse objects, adding one for each match | Count is not the same as the sum of values |
+| Sum accumulation | Add numbers one at a time to an imaginary box | Do not confuse a sum accumulator with an element counter |
+| Maximum finding | Maintain the largest value seen so far and update as needed | Sorting the entire set is unnecessary |
+| Minimum finding | Maintain the smallest value seen so far and update as needed | Sorting the entire set is unnecessary |
+| Binary search tree lookup | Compare a key at each node and choose the left or right subtree | The search tree ordering rule is required; not every tree qualifies |
 
-**Критерій включення:** спершу перевіряти, чи можна пояснити реальний принцип алгоритму дитині 1–3 класів на чесній, зрозумілій моделі без приховування вирішальної передумови. Якщо конкретний алгоритм не вдається пояснити коректно, слід **обґрунтувати** рішення, а не автоматично включати чи вилучати його за назвою. Це критерій добору прикладів і планування уроків, **не вікова межа для всієї таксономії**. Окремий Skill не вимагає окремої реалізації чи Lesson.
+**Inclusion criterion:** first check whether the real principle of an algorithm can be explained to Grade 1–3 learners through an honest, understandable model without hiding a decisive prerequisite. If it cannot be explained correctly, **justify** the decision rather than automatically including or excluding it by name. This is a criterion for selecting examples and planning lessons, **not an age ceiling for the entire taxonomy**. One Skill does not require one separate implementation or Lesson.
 
-## 9. UX цифрових продуктів — як людина взаємодіє з пристроєм
+## 9. Digital Product UX — How People Interact with Devices
 
-**Обидва підручники зберігають UX, але мають власні цілі.** Інженерія може досліджувати форму, силу натискання й розміщення фізичної кнопки, а інформатика — що відбувається **у цифровій системі** після натискання: чи зрозумілий стан пристрою, чи є повідомлення про результат, чи можна виправити помилку й чи доступна та сама дія іншими способами. Цифровий пристрій — не тільки екран: це також кнопки, клавіатура, звуковий відгук, сенсорне керування та доступні альтернативи.
+**Both textbooks retain UX, with different goals.** Engineering may examine a physical button's form, actuation force, and placement; Informatics examines what happens **inside the digital system** when it is pressed: whether device state is clear, the outcome is communicated, errors can be corrected, and the same action is available through alternative means. A digital device is not only a screen: buttons, keyboards, audio feedback, touch controls, and accessible alternatives all matter.
 
-**Мінілабораторія «Чому кнопка не працює?»** На безпечній моделі цифрового пристрою учень натискає кнопку без видимого зворотного зв’язку, а потім порівнює з моделлю, де з’являється повідомлення про стан. Він визначає, чи зрозуміла мета дії, чи можна знайти потрібну функцію, як система повідомляє про помилку та чи можливо виконати її без звуку або миші. Окремо показати оманливу кнопку, що приховує справжній наслідок: це питання доброчесності цифрового UX.
+**Mini-lab: 'Why Doesn't the Button Work?'** Using a safe digital-device model, a learner presses a button without visible feedback, then compares it with a model that displays status. They decide whether the action's purpose is clear, the feature is discoverable, errors are communicated, and the task can be completed without sound or a mouse. Also show a deceptive button concealing the actual consequence: this concerns digital UX integrity.
 
-**Межа дисциплін:** універсальні принципи дизайну, ергономіки та зручності інженерних виробів залишаються в Engineering; взаємодія з цифровими функціями, налаштуваннями, програмними станами й інтерфейсами — самостійна частина Informatics. Матеріали можуть перетинатися, а Skills та їхні ідентичності — бути локальними для кожного підручника. UX не треба зводити лише до доступності чи лише до безпеки.
+**Disciplinary boundary:** general design principles, ergonomics, and usability of engineering products stay within Engineering; interaction with digital functions, settings, software states, and interfaces is a distinct Informatics subject area. Learning materials may overlap, while Skills and their identifiers stay local to each textbook. UX must not be reduced to accessibility alone or to safety alone.
