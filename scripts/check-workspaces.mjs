@@ -53,8 +53,12 @@ const expected = [
     "name": "@svitlo/history"
   },
   {
-    "path": "learningApps/human-thinking",
-    "name": "@svitlo/human-thinking"
+    "path": "learningApps/philosophy",
+    "name": "@svitlo/philosophy"
+  },
+  {
+    "path": "learningApps/psychology",
+    "name": "@svitlo/psychology"
   },
   {
     "path": "learningApps/economics",
