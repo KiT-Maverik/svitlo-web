@@ -17,7 +17,7 @@ A **SkillGroup** organizes one coherent family of related Skills inside a SkillD
 The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It does not contain `description`, teaching order, evaluation evidence or student progress.
 
 - **Editorial authority:** `<PackageRoot>/docs/skills/taxonomy.md` heading, explanation and parent/child placement.
-- **Code:** verified application `*.data.ts` linked directly from the taxonomy, or `Code: [Not implemented](#)`.
+- **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
 Descriptions use plain prose with **no `Description:` prefix**, and per-entity editorial `Status` files are not created.
 
