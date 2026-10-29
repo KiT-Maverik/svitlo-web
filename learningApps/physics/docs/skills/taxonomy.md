@@ -332,329 +332,329 @@ When the net force is zero, there is no acceleration; a body may be at rest or c
 
 Code: [Not implemented](#)
 
-Визначати елементи, на які спирається модель мосту або будівлі.
+Identify the elements supporting a model bridge or building.
 
-##### Передбачати стійкість конструкції
-
-Code: [Not implemented](#)
-
-Порівнювати стійкість двох моделей за базовими ознаками опори.
-
-##### Пояснювати передавання навантаження
+##### Predict structural stability
 
 Code: [Not implemented](#)
 
-Визначати, як сили від навантаження передаються через елементи конструкції до опор, та розрізняти шлях передавання сили й форму конструкції.
+Compare the stability of two models using basic support-related characteristics.
 
-##### Порівнювати міцність конструктивних форм
-
-Code: [Not implemented](#)
-
-За однакового випробування встановлювати, яка форма краще витримує навантаження.
-
-##### Прогнозувати вплив положення центра мас на стійкість
+##### Explain load transfer
 
 Code: [Not implemented](#)
 
-Розміщення центра мас відносно площі опори впливає на можливість перекидання тіла під дією сили тяжіння.
+Identify how forces from a load pass through structural elements to supports, and distinguish the force-transmission path from the shape of the structure.
 
-#### Гравітація
+##### Compare the strength of structural shapes
+
+Code: [Not implemented](#)
+
+Under identical testing conditions, determine which shape better withstands a load.
+
+##### Predict the effect of center-of-mass position on stability
+
+Code: [Not implemented](#)
+
+The position of the center of mass relative to the support area affects whether a body can overturn under gravity.
+
+#### Gravity
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Тіла з масою гравітаційно взаємодіють, навіть не торкаючись одне одного. Земне тяжіння визначає падіння поблизу поверхні, а інші небесні тіла теж створюють гравітаційний вплив.
+Bodies with mass interact gravitationally even without touching. Earth's gravity governs falling near its surface, and other celestial bodies also exert gravitational influence.
 
-##### Передбачати напрямок падіння
-
-Code: [Not implemented](#)
-
-Поблизу земної поверхні гравітаційна дія спрямована приблизно до центра Землі, тому тіло у вільному падінні зазнає прискорення вниз відносно місцевої вертикалі.
-
-##### Розрізняти масу тіла та силу земного тяжіння
+##### Predict the direction of falling
 
 Code: [Not implemented](#)
 
-Порівнювати на моделях незмінну масу одного тіла та силу тяжіння, яка залежить від гравітаційного поля. Не називати ці величини тим самим і не плутати силу тяжіння з вагою тіла як силою дії на опору.
+Near Earth's surface, gravity acts approximately toward Earth's center, so a body in free fall accelerates downward relative to the local vertical.
 
-##### Пояснювати дію земного тяжіння на тіло
+##### Distinguish a body's mass from Earth's gravitational force
 
 Code: [Not implemented](#)
 
-Земля діє на тіло гравітаційною силою, яка залежить від маси тіла та поля тяжіння; силу тяжіння слід розрізняти з масою та вагою як дією тіла на опору.
+Compare a body's unchanged mass with gravitational force, which depends on the gravitational field, using models. Do not equate these quantities or confuse gravitational force with the body's weight as the force it exerts on a support.
 
-### Механіка рідин і газів
+##### Explain Earth's gravitational force on a body
+
+Code: [Not implemented](#)
+
+Earth exerts a gravitational force on a body depending on the body's mass and the gravitational field; distinguish that force from mass and from weight as the body's action on a support.
+
+### Fluid Mechanics
 
 Groups: 4 · Skills: 15
 
 Code: [Not implemented](#)
 
-Вода й повітря передають тиск, течуть, чинять опір руху тіл і можуть підтримувати їхню плавучість. Ці явища варто відкривати через знайомі посудини, плавання та повітряні потоки.
+Water and air transmit pressure, flow, resist bodies' motion, and can provide buoyancy. Familiar containers, floating objects, and airflow make these phenomena accessible.
 
-#### Тиск у рідинах та газах
+#### Pressure in Liquids and Gases
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Тиск передається середовищем, а в нерухомій воді змінюється з глибиною; приклади з ємностями допомагають відрізнити тиск від простої кількості води.
+Pressure is transmitted through a medium and changes with depth in still water; container examples help distinguish pressure from the mere amount of water.
 
-##### Пояснювати зростання тиску води з глибиною
-
-Code: [Not implemented](#)
-
-У нерухомій рідині тиск за незмінної густини зростає з глибиною через вагу розташованих вище шарів; форма посудини сама по собі не визначає його.
-
-##### Розпізнавати дію тиску рідини в різних напрямках
+##### Explain why water pressure increases with depth
 
 Code: [Not implemented](#)
 
-За моделлю отворів у посудині пояснювати, чому вода тисне не тільки вниз.
+In a stationary liquid of constant density, pressure increases with depth because of the weight of the layers above; the container's shape alone does not determine it.
 
-##### Виявляти на прикладах тиск газу
-
-Code: [Not implemented](#)
-
-Газ діє на поверхні тіл завдяки зіткненням своїх частинок; тиск залежить від фізичного стану газу та умов його утримання.
-
-##### Пояснювати передавання тиску в замкненій рідині
+##### Recognize liquid pressure acting in different directions
 
 Code: [Not implemented](#)
 
-Зміна тиску, прикладена до замкненої рідини в стані спокою, передається в усіх напрямках, на відміну від зміни гідростатичного тиску з глибиною.
+Use a model of holes in a container to explain why water exerts pressure in directions other than downward.
 
-#### Плавання та виштовхувальна дія
+##### Identify gas pressure in examples
+
+Code: [Not implemented](#)
+
+A gas acts on surfaces through collisions of its particles; pressure depends on the gas's physical state and the conditions of its confinement.
+
+##### Explain pressure transmission in an enclosed liquid
+
+Code: [Not implemented](#)
+
+A pressure change applied to an enclosed liquid at rest is transmitted in every direction, unlike the variation of hydrostatic pressure with depth.
+
+#### Floating and Buoyancy
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Поведінка тіла у воді визначається поєднанням тяжіння та дії рідини; матеріал і форма можуть впливати на результат через середню густину.
+A body's behavior in water is determined by gravity together with forces exerted by the liquid; material and shape may affect the outcome through average density.
 
-##### Розрізняти спливання, плавання та занурення тіл
-
-Code: [Not implemented](#)
-
-Визначати три можливі типи поведінки безпечних предметів у воді за спостереженням або симуляцією.
-
-##### Прогнозувати вплив навантаження на плавання тіла
+##### Distinguish rising, floating, and sinking
 
 Code: [Not implemented](#)
 
-Збільшення маси вантажу змінює потрібну для рівноваги виштовхувальну силу й об'єм витісненої рідини, тому занурення тіла може збільшуватися.
+Identify three possible behaviors of safe objects in water through observation or simulation.
 
-##### Пояснювати густину речовини
-
-Code: [Not implemented](#)
-
-Густина характеризує масу одиниці об'єму речовини й допомагає визначати співвідношення властивостей тіла та середовища.
-
-##### Пояснювати виштовхувальну силу
+##### Predict how a load affects floating
 
 Code: [Not implemented](#)
 
-Різниця тисків рідини чи газу на занурене тіло створює результуючу силу, спрямовану вгору.
+Increasing the mass of a load changes the buoyant force and displaced volume needed for equilibrium, so a body may become more deeply submerged.
 
-##### Пояснювати закон Архімеда
+##### Explain density
 
 Code: [Not implemented](#)
 
-Виштовхувальна сила за відповідних умов дорівнює вазі витісненого тілом об'єму рідини або газу.
+Density is the mass per unit volume of a substance and helps determine the relationship between a body's properties and those of the surrounding medium.
 
-#### Аеродинаміка
+##### Explain buoyant force
+
+Code: [Not implemented](#)
+
+The pressure difference exerted by a liquid or gas on a submerged body produces a net upward force.
+
+##### Explain Archimedes' principle
+
+Code: [Not implemented](#)
+
+Under the relevant conditions, the buoyant force equals the weight of the volume of liquid or gas displaced by the body.
+
+#### Aerodynamics
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Повітря діє на рухомі тіла силами опору; форма й відносна швидкість впливають на взаємодію. Побудова літака чи конструювання корпусу — інженерні застосування.
+Air exerts drag on moving bodies; shape and relative speed affect the interaction. Building aircraft or designing hulls are Engineering applications.
 
-##### Прогнозувати вплив форми на рух у повітрі
-
-Code: [Not implemented](#)
-
-Форма тіла та її орієнтація впливають на характер обтікання повітрям, на опір і за деяких умов на підіймальну силу.
-
-##### Пояснювати виникнення опору повітря під час руху тіла
+##### Predict the effect of shape on motion through air
 
 Code: [Not implemented](#)
 
-На прикладі паперового аркуша чи кульки пов'язувати опір із взаємодією тіла з повітрям; не стверджувати, що опір виникає лише через неправильну форму.
+A body's shape and orientation affect airflow around it, drag, and, under certain conditions, lift.
 
-##### Пояснювати аеродинамічну підіймальну силу
+##### Explain the origin of air resistance during motion
 
 Code: [Not implemented](#)
 
-Взаємодія повітряного потоку з тілом може створювати силу, перпендикулярну потоку; її не слід пояснювати лише різною довжиною шляху повітря.
+Using a paper sheet or ball, connect drag to the body's interaction with air; do not claim that drag arises only from an unsuitable shape.
 
-#### Гідродинаміка
+##### Explain aerodynamic lift
+
+Code: [Not implemented](#)
+
+Airflow interacting with a body can produce a force perpendicular to the flow; it should not be explained solely by differences in air-path length.
+
+#### Hydrodynamics
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Вода та інші рідини переміщуються за певних умов і чинять опір тілам у потоці; порівняння з повітрям пояснює різні властивості середовищ.
+Water and other liquids flow under certain conditions and resist bodies moving through the stream; comparison with air explains differences between the media.
 
-##### Порівнювати опір руху у воді та повітрі
-
-Code: [Not implemented](#)
-
-На якісних прикладах помічати, чому переміщення однакового предмета крізь воду й повітря відчувається по-різному.
-
-##### Пояснювати рух води між ємностями за різниці рівнів
+##### Compare resistance to motion in water and air
 
 Code: [Not implemented](#)
 
-Різниця гідростатичного тиску між сполученими посудинами спричиняє перетікання рідини, доки не встановиться рівновага тисків або не втрутяться інші сили.
+Use qualitative examples to recognize why moving the same object through water and through air feels different.
 
-##### Пояснювати неперервність потоку нестисливої рідини
+##### Explain water flow between containers at different levels
 
 Code: [Not implemented](#)
 
-За сталого потоку без витоків зміна площі перерізу каналу пов'язана зі зміною швидкості руху рідини.
+A hydrostatic pressure difference between connected vessels causes liquid to flow until pressures balance or other forces intervene.
 
-### Енергія
+##### Explain continuity of incompressible-fluid flow
+
+Code: [Not implemented](#)
+
+For steady flow without leakage, a change in a channel's cross-sectional area is associated with a change in fluid speed.
+
+### Energy
 
 Groups: 4 · Skills: 12
 
 Code: [Not implemented](#)
 
-Енергія є величиною, яка допомагає описувати фізичні зміни та зв'язувати явища руху, нагрівання, світла й електрики. У центрі — передавання, перетворення та збереження енергії, а не арифметичні формули.
+Energy is a quantity that helps describe physical changes and connect phenomena involving motion, heating, light, and electricity. The emphasis is on energy transfer, transformation, and conservation rather than arithmetic formulas.
 
-#### Форми енергії
+#### Forms of Energy
 
 Skills: 5
 
 Code: [Not implemented](#)
 
-Рух, положення, деформація та внутрішній стан можуть бути пов'язані з різними формами енергії; опис має спиратися на конкретну фізичну систему.
+Motion, position, deformation, and internal state can be associated with different forms of energy; descriptions should refer to a specific physical system.
 
-##### Класифікувати форми енергії
-
-Code: [Not implemented](#)
-
-Відрізняти енергію руху, положення тіл, пружної деформації та внутрішню енергію за фізичними властивостями системи.
-
-##### Розрізняти енергію та її джерело
+##### Classify forms of energy
 
 Code: [Not implemented](#)
 
-Енергія є характеристикою стану й змін системи, а джерелом називають тіло або процес, із якого енергія передається іншій системі; джерело не створює її з нічого.
+Distinguish energy of motion, energy related to bodies' positions, elastic deformation energy, and internal energy based on the physical properties of a system.
 
-##### Пояснювати кінетичну енергію як енергію руху
-
-Code: [Not implemented](#)
-
-Кінетична енергія пов'язана з рухом тіла відносно системи відліку й залежить від маси та швидкості, але не тотожна імпульсу.
-
-##### Пояснювати потенціальну енергію
+##### Distinguish energy from its source
 
 Code: [Not implemented](#)
 
-Потенціальна енергія пов'язана з конфігурацією фізичної системи та взаємодією її складових: зокрема, з положенням тіл у гравітаційному полі або пружною деформацією. Значення потенціальної енергії визначають відносно обраного нульового рівня; ця компетентність стосується фізичного змісту, а не виконання розрахунків.
+Energy characterizes the state and changes of a system, whereas a source is a body or process from which energy is transferred to another system; the source does not create it from nothing.
 
-##### Обчислювати гравітаційну потенціальну енергію
+##### Explain kinetic energy as energy of motion
 
 Code: [Not implemented](#)
 
-Визначати зміну гравітаційної потенціальної енергії тіла поблизу поверхні Землі за його масою, прискоренням вільного падіння та зміною висоти, коректно враховуючи вибір рівня відліку та одиниці вимірювання. Розрахунок спирається на умови наближено сталого гравітаційного поля й відрізняється від обчислення пружної потенціальної енергії.
+Kinetic energy is associated with a body's motion relative to a reference frame and depends on mass and speed, but it is not the same as momentum.
 
-#### Передавання та перетворення енергії
+##### Explain potential energy
+
+Code: [Not implemented](#)
+
+Potential energy is related to a physical system's configuration and interactions among its components, including bodies' positions in a gravitational field or elastic deformation. Its value is specified relative to a chosen zero level; this competency addresses physical meaning rather than calculation.
+
+##### Calculate gravitational potential energy
+
+Code: [Not implemented](#)
+
+Determine the change in a body's gravitational potential energy near Earth's surface from its mass, gravitational acceleration, and change in height, correctly accounting for the chosen reference level and units. This calculation assumes an approximately uniform gravitational field and differs from calculating elastic potential energy.
+
+#### Energy Transfer and Transformation
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Енергія може передаватися між об'єктами та змінювати форму; послідовність подій важливіша за назву конкретного приладу.
+Energy can pass between objects and change form; the sequence of events matters more than the name of a particular device.
 
-##### Виявляти передавання енергії між тілами
-
-Code: [Not implemented](#)
-
-На прикладі зіткнення кульок або нагрівання води показувати, від якого тіла до якого відбувається передавання.
-
-##### Пояснювати перетворення енергії у фізичному процесі
+##### Identify energy transfer between bodies
 
 Code: [Not implemented](#)
 
-Енергія змінює форму під час фізичних процесів, наприклад під час переходу між рухом і положенням тіла; повна енергія ізольованої системи зберігається.
+Using colliding balls or water heating, show which body transfers energy to which other body.
 
-#### Збереження енергії
+##### Explain energy transformation in a physical process
+
+Code: [Not implemented](#)
+
+Energy changes form during physical processes, for example when energy shifts between motion and position; the total energy of an isolated system is conserved.
+
+#### Conservation of Energy
 
 Skills: 3
 
 Code: [Not implemented](#)
 
-Повна енергія ізольованої системи зберігається, навіть коли змінюється її форма або розподіл між тілами. Зменшення придатної для роботи енергії не є її зникненням; для відкритої системи враховують обмін із довкіллям.
+The total energy of an isolated system is conserved even as its form or distribution among bodies changes. A decrease in energy available for useful work is not its disappearance; for an open system, exchange with the surroundings must be considered.
 
-##### Пояснювати закон збереження енергії
-
-Code: [Not implemented](#)
-
-Повна енергія ізольованої системи залишається незмінною; для відкритої системи потрібно враховувати обмін енергією з довкіллям.
-
-##### Пояснювати втрату корисної енергії
+##### Explain the law of conservation of energy
 
 Code: [Not implemented](#)
 
-Розсіювання енергії у менш придатні для заданої роботи форми зменшує корисність процесу, але не порушує збереження повної енергії.
+The total energy of an isolated system remains unchanged; for an open system, energy exchange with the surroundings must be taken into account.
 
-##### Спростовувати уявлення про зникнення енергії
+##### Explain the loss of useful energy
 
 Code: [Not implemented](#)
 
-Виявляти невраховані передавання й перетворення енергії замість пояснення зміни стану системи її зникненням.
+Dissipation into forms of energy less suitable for a particular task reduces a process's usefulness but does not violate conservation of total energy.
 
-#### Робота та потужність
+##### Refute the idea that energy disappears
+
+Code: [Not implemented](#)
+
+Identify unaccounted energy transfers and transformations instead of attributing a system's change of state to energy disappearing.
+
+#### Work and Power
 
 Skills: 2
 
 Code: [Not implemented](#)
 
-Робота описує передавання енергії силою під час переміщення, а потужність визначає темп передавання енергії.
+Work describes energy transfer by a force during displacement, while power describes the rate of energy transfer.
 
-##### Пояснювати механічну роботу
-
-Code: [Not implemented](#)
-
-Механічна робота пов'язана з дією сили вздовж переміщення; зусилля без переміщення не виконує механічної роботи.
-
-##### Пояснювати фізичний зміст потужності
+##### Explain mechanical work
 
 Code: [Not implemented](#)
 
-Потужність характеризує швидкість виконання роботи чи передавання енергії й не є окремою формою енергії.
+Mechanical work involves the component of force along displacement; exerting force without displacement does not perform mechanical work.
 
-### Хвилі
+##### Explain the physical meaning of power
+
+Code: [Not implemented](#)
+
+Power describes the rate of doing work or transferring energy and is not a separate form of energy.
+
+### Waves
 
 Groups: 4 · Skills: 23
 
 Code: [Not implemented](#)
 
-Коливання породжують повторювані збурення, які можуть поширюватися водою, повітрям та іншими середовищами. Звук — один із їхніх проявів, а закономірності хвиль можна побачити на поверхні води.
+Oscillations produce recurring disturbances that can propagate through water, air, and other media. Sound is one manifestation, while wave patterns are visible on the surface of water.
 
-#### Коливання
+#### Oscillations
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Повторення руху навколо певного стану дозволяє описувати вібрацію, періодичність та джерела звуку.
+Repetitive motion around a given state allows vibration, periodicity, and sound sources to be described.
 
-##### Розпізнавати коливний рух
-
-Code: [Not implemented](#)
-
-Коливання — зміна фізичного стану навколо рівноваги, що може повторюватися; не кожен рух із розворотами є гармонічним коливанням.
-
-##### Пов'язувати звук із вібрацією
+##### Recognize oscillatory motion
 
 Code: [Not implemented](#)
 
-Звук виникає через збурення пружного середовища коливним джерелом; коливання без середовища не створює механічної звукової хвилі.
+Oscillation is a change in a physical state around equilibrium that may recur; not every motion involving reversals is harmonic oscillation.
 
-##### Виявляти вібрацію джерела звуку
+##### Relate sound to vibration
+
+Code: [Not implemented](#)
+
+Sound arises when an oscillating source disturbs an elastic medium; oscillation without a medium does not produce a mechanical sound wave.
+
+##### Detect vibrations of a sound source
 
 Code: [Not implemented](#)
 
