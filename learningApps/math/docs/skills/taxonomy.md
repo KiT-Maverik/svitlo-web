@@ -1324,7 +1324,7 @@ Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/parallelPerpend
 
 Рейки однієї колії ілюструють паралельність; суміжні краї зошита в куті ілюструють перпендикулярність.
 
-#### Кути
+#### Angles
 
 Skills: 3
 
@@ -1332,25 +1332,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/angles.data.ts)
 
-##### Інтерпретувати кут як величину повороту й порівнювати кути з прямим
+##### Comparing angles as turns
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/angleAsTurn.data.ts)
 
 Поворот на чверть оберту дає прямий кут, на меншу частку — гострий; довжина сторін рисунка не визначає величину кута.
 
-##### Розпізнавати прямий кут і перевіряти його за еталоном
+##### Identifying and checking right angles
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/rightAngle.data.ts)
 
 Кут аркуша чи косинця є еталоном 90°; зіставлення сторін перевіряє прямокутність незалежно від нахилу.
 
-##### Розрізняти гострий, прямий і тупий кути на наочних прикладах
+##### Distinguishing acute, right and obtuse angles
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/angleTypes.data.ts)
 
 Порівнюють розкриття променів із прямим кутом: менше нього — гострий, більше, але менше розгорнутого — тупий.
 
-#### Коло
+#### Circles and disks
 
 Skills: 3
 
@@ -1358,25 +1358,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/circles.data.ts)
 
-##### Розрізняти коло та круг
+##### Distinguishing the circumference and the disk
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/circleDisk.data.ts)
 
 Коло — лише замкнена крива межі, тоді як круг включає всі точки всередині цієї межі.
 
-##### Показувати центр, радіус і діаметр кола та пов’язувати діаметр із двома радіусами
+##### Relating the center, radius and diameter
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/radiusDiameter.data.ts)
 
 Діаметр проходить через центр і має довжину двох радіусів; усі радіуси одного кола рівні.
 
-##### Будувати коло заданого радіуса циркулем
+##### Drawing circles of a given radius with a compass
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/drawCircle.data.ts)
 
 Під час роботи циркулем розхил фіксує відстань від центру до кожної точки лінії; зміна розхилу дає інший радіус.
 
-#### Перетворення
+#### Geometric transformations
 
 Skills: 3
 
@@ -1384,25 +1384,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/transformations.data.ts)
 
-##### Демонструвати чверть-, пів- і три-чверть оберту за і проти годинникової стрілки
+##### Quarter, half and three-quarter turns
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/turnsQuarters.data.ts)
 
 Чверть оберту відповідає 90°, пів оберту — 180°, три чверті — 270°; напрям повороту змінює кінцеве положення.
 
-##### Виконувати та розпізнавати прості зсуви й віддзеркалення фігури
+##### Translating and reflecting figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/translationsReflections.data.ts)
 
 Зсув переміщує всі точки однаково, а віддзеркалення змінює орієнтацію відносно осі; самі розміри не змінюються.
 
-##### Знаходити вісь симетрії у простих фігурах і добудовувати симетричну частину
+##### Finding symmetry axes and completing reflections
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/reflectionSymmetry.data.ts)
 
 Відповідні точки симетричних половин лежать на однакових відстанях від осі з різних її боків.
 
-#### Периметр
+#### Perimeter
 
 Skills: 4
 
@@ -1410,19 +1410,19 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/perimeter.data.ts)
 
-##### Вимірювати периметр многокутника як суму довжин сторін
+##### Measuring a polygon perimeter by adding its sides
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/measurePerimeter.data.ts)
 
 Для фігури зі сторонами 3, 4 і 5 см довжина контуру становить 12 см; внутрішню поверхню тут не вимірюють.
 
-##### Обчислювати периметр прямокутника за довжинами його сторін
+##### Calculating the perimeter of a rectangle
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/rectanglePerimeter.data.ts)
 
 Для сторін a та b обхід прямокутного контуру дає a + b + a + b, а не добуток a × b.
 
-##### Обчислювати периметр квадрата за довжиною сторони
+##### Calculating the perimeter of a square
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/squarePerimeter.data.ts)
 
