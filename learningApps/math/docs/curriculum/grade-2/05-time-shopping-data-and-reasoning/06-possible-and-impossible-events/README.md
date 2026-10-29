@@ -15,4 +15,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Повний Methodist Learning Brief ще потрібен.
 
 ---
-[Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
+[Час, покупки, дані та міркування](../README.md) · [Curriculum Grade 2](../../grade-2.curriculum.md)
