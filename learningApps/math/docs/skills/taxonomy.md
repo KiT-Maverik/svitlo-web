@@ -886,157 +886,157 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/multiply/skills/checkProdu
 
 Before calculating 49 × 6, a value near 300 is expected. An inverse operation, reversed factors, or repeated addition can help verify the exact result.
 
-#### Ділення
+#### Division
 
 Skills: 24
 
-Частка як розподіл порівну або визначення числа рівних груп, табличні випадки, остача, обмеження й перевірка ділення.
-
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/divide.data.ts)
 
-##### Моделювати ділення як розподіл на задану кількість рівних груп
+Division describes equal sharing or finding how many equal groups fit into a total. It includes division facts, remainders, valid constraints, and methods for checking results.
+
+##### Division — Equal sharing
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/equalSharing.data.ts)
 
-Роздати 12 предметів порівну чотирьом учасникам означає знайти розмір кожної із чотирьох груп.
+Sharing twelve objects equally among four people asks how many objects belong to each of four groups.
 
-##### Моделювати ділення як визначення кількості груп заданого розміру
+##### Division — Equal grouping · Equal groups
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/equalGrouping.data.ts)
 
-Із 12 предметів можна утворити три повні групи по 4; тут невідоме — кількість груп, а не предметів у кожній.
+Twelve objects can form three complete groups of four. Here the unknown is the number of groups, rather than the size of each group.
 
-##### Пояснювати ділення як пошук невідомого множника
+##### Division — Inverse operations
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/relationToMultiplication.data.ts)
 
-Якщо 5 × ? = 20, шуканий множник дорівнює 4; поділ знаходить невідомий компонент добутку.
+If 5 × ? = 20, division recovers the missing factor four.
 
-##### Читати запис a ÷ b та співвідносити ділене, дільник і частку з моделлю
+##### Division — Reading expressions
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/readExpression.data.ts)
 
-У 12 ÷ 3 число 12 — уся кількість, 3 задає розподіл, а 4 — його результат у відповідній моделі.
+In 12 ÷ 3, twelve is the entire quantity, three specifies the grouping, and four is the quotient in the relevant model.
 
-##### Обчислювати табличні випадки ділення на 2
+##### Division — ÷ 2
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by2.data.ts)
 
-Для ділення на 2 корисна модель половини парної кількості: 14 ÷ 2 = 7.
+Halving an even quantity models division by two: 14 ÷ 2 = 7.
 
-##### Обчислювати табличні випадки ділення на 3
+##### Division — ÷ 3
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by3.data.ts)
 
-У 18 ÷ 3 добуток 3 × 6 = 18 відразу дає частку 6.
+Because 3 × 6 = 18, the corresponding division 18 ÷ 3 has a quotient of six.
 
-##### Обчислювати табличні випадки ділення на 4
+##### Division — ÷ 4
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by4.data.ts)
 
-Поділ 24 на чотири рівні частини має результат 6; перевірка — 4 × 6.
+Dividing twenty-four objects into four equal groups gives six in each; multiplying 4 × 6 checks the result.
 
-##### Обчислювати табличні випадки ділення на 5
+##### Division — ÷ 5
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by5.data.ts)
 
-Оскільки 5 × 7 = 35, ділення 35 на 5 повертає сім рівних груп.
+The known product 5 × 7 = 35 shows that 35 ÷ 5 gives seven equal groups.
 
-##### Обчислювати табличні випадки ділення на 6
+##### Division — ÷ 6
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by6.data.ts)
 
-Для 36 ÷ 6 частка 6 випливає з відомого квадрата шістки.
+The quotient in 36 ÷ 6 is six because six squared is thirty-six.
 
-##### Обчислювати табличні випадки ділення на 7
+##### Division — ÷ 7
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by7.data.ts)
 
-Поділ 42 на сім повних груп дає по шість у кожній.
+Dividing forty-two into seven equal groups gives six objects per group.
 
-##### Обчислювати табличні випадки ділення на 8
+##### Division — ÷ 8
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by8.data.ts)
 
-Добуток 8 × 4 = 32 дає діленню 32 ÷ 8 частку 4.
+The product 8 × 4 = 32 gives the quotient four for 32 ÷ 8.
 
-##### Обчислювати табличні випадки ділення на 9
+##### Division — ÷ 9
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by9.data.ts)
 
-Табличне ділення 54 ÷ 9 пов’язане з добутком 9 × 6 = 54.
+The quotient 54 ÷ 9 is connected to the multiplication fact 9 × 6 = 54.
 
-##### Пояснювати й застосовувати ділення на 1 та числа на самого себе (для ненульового числа)
+##### Division — ÷ 1 · a ÷ a
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/by1AndSelf.data.ts)
 
-Ділити на один означає залишити всю кількість в одній групі; ненульове число, поділене на себе, дає одну групу.
+Dividing a quantity by one leaves the entire amount in one group. A nonzero number divided by itself equals one.
 
-##### Пояснювати результат ділення нуля на ненульове число
+##### Division — Zero dividend
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/zeroDividend.data.ts)
 
-Якщо нуль предметів розподілити між трьома учасниками, кожен отримає нуль; дільник має бути ненульовим.
+Sharing zero items among three people gives each person zero. The divisor must not be zero.
 
-##### Розпізнавати, що ділення на нуль не визначене
+##### Division — Division by Zero
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/noDivisionByZero.data.ts)
 
-Не існує визначеної частки для 5 ÷ 0; її не можна встановити множенням на нуль.
+The quotient 5 ÷ 0 is undefined; no number multiplied by zero can produce five.
 
-##### Знаходити половину парної кількості та пов’язувати це з подвоєнням
+##### Division — Halving and doubling
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/doubleHalf.data.ts)
 
-Половина 18 — дев’ять, бо дві рівні дев’ятки утворюють 18; зв’язок працює й у зворотному напрямку.
+Half of eighteen is nine because two equal groups of nine form eighteen. Doubling reverses the process.
 
-##### Ділити круглі десятки на одноцифрові числа в межах 1000
+##### Division — Whole tens
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/roundTens.data.ts)
 
-У 80 ÷ 4 вісім десятків ділять на чотири групи, отримуючи по два десятки.
+In 80 ÷ 4, eight tens divided among four groups produces two tens per group.
 
-##### Ділити круглі сотні на одноцифрові числа в межах 1000
+##### Division — Whole hundreds
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/roundHundreds.data.ts)
 
-У 600 ÷ 3 шість сотень поділяють на три рівні частини — по дві сотні.
+In 600 ÷ 3, six hundreds split equally into three groups give two hundreds each.
 
-##### Ділити двоцифрові числа на одноцифрові позатабличним способом
+##### Division — 2-digit÷1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/twoDigitByOne.data.ts)
 
-Для 84 ÷ 4 можна поділити 80 та 4 окремо, а потім додати частки.
+To compute 84 ÷ 4, divide eighty and four separately by four and add the partial quotients.
 
-##### Ділити окремі трицифрові числа на одноцифрові через розрядний розклад
+##### Division — 3-digit÷1-digit
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/threeDigitByOne.data.ts)
 
-У 648 ÷ 3 частки від 600, 30 і 18 можна зібрати в один результат за коректного розряду.
+For 648 ÷ 3, a valid place-value decomposition permits the partial quotients for 600, 30, and 18 to be combined.
 
-##### Знаходити частку й остачу під час ділення натуральних чисел
+##### Division — Division with remainder
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/withRemainder.data.ts)
 
-У 17 ÷ 5 можна отримати три повні п’ятірки й залишок два; не всі ділення натуральних чисел точні.
+Seventeen divided by five gives three complete groups with two left over. Not all natural-number divisions are exact.
 
-##### Перевіряти, що невід’ємна остача менша за дільник
+##### Division — Remainder less than divisor
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/remainderLessDivisor.data.ts)
 
-Для дільника 5 остача може бути 0, 1, 2, 3 або 4, але не 5 чи більше.
+With a positive divisor of five, possible nonnegative remainders are 0, 1, 2, 3, and 4, but not five or more.
 
-##### Перевіряти частку множенням, з урахуванням остачі за її наявності
+##### Division — Result checking
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/checkQuotient.data.ts)
 
-Рівність «дільник × частка + остача = ділене» підтверджує відповідь і показує, куди повернувся залишок.
+The equality divisor × quotient + remainder = dividend confirms the answer, including any leftover units.
 
-##### Розпізнавати помилку в діленні або некоректну остачу за моделлю чи перевіркою
+##### Division — Error detection
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/errorDetection.data.ts)
 
-Якщо при 19 ÷ 4 названо остачу 7, модель виявляє, що з неї можна скласти ще одну повну четвірку.
+A claimed remainder of seven for 19 ÷ 4 is invalid because it still contains a complete group of four.
 
 ### Algebra
 
