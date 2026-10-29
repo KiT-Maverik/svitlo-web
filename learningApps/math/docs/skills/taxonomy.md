@@ -1660,115 +1660,115 @@ Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/wordProble
 
 Дії з 2 м і 30 см вимагають спільної одиниці або явного перетворення; відповідь має зберігати фізичний зміст.
 
-### Час
+### Time
 
 Groups: 3 · Skills: 13
 
 Code: [Code](../../src/data/skillsTaxonomy/time/time.data.ts)
 
-Поєднує календарні цикли, способи запису моменту часу й обчислення тривалості подій; розмежовує дату, показ годинника та часовий інтервал.
+This domain connects recurring calendar cycles, representations of clock time, and calculations of elapsed time. Calendar dates, instants shown on clocks, and durations are distinct concepts.
 
-#### Календар
+#### Calendar
 
 Skills: 4
-
-Орієнтація в днях, тижнях, місяцях і роках, з урахуванням різної тривалості місяців та високосного року.
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/calendar.data.ts)
 
-##### Упорядковувати частини доби та пов’язувати їх із повсякденними подіями
+Calendar literacy involves navigating days, weeks, months, and years while accounting for unequal month lengths and leap years.
+
+##### Sequencing parts of the day
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/daySequence.data.ts)
 
-Ранок, день, вечір і ніч утворюють повторюваний цикл; одна подія може відбуватися в різні його частини.
+Morning, afternoon, evening, and night form a repeating cycle. A particular everyday activity is not restricted to just one part of that cycle.
 
-##### Пояснювати відмінність звичайного і високосного років та користуватися календарем
+##### Distinguishing common and leap years
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/leapYearDays.data.ts)
 
-Звичайний рік має 365 днів, високосний — 366; додатковий день припадає на лютий.
+A common year has 365 days and a leap year has 366. The additional day occurs in February.
 
-##### Називати дні тижня, місяці року й орієнтуватися в календарі
+##### Navigating days, weeks, and months in a calendar
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/weekMonthYear.data.ts)
 
-Семиденний тиждень і послідовність місяців повторюються, але місяці мають різну тривалість.
+The seven-day week and ordered months recur, but months differ in length. Locating a named date requires following these conventions.
 
-##### Визначати кількість днів між календарними датами в нескладних випадках
+##### Counting days between dates
 
 Code: [Code](../../src/data/skillsTaxonomy/time/calendar/skills/calendarInterval.data.ts)
 
-Для дат 10 і 13 числа одного місяця пройде три доби; підрахунок не дорівнює кількості перелічених дат включно.
+Between the 10th and the 13th of the same month, three days elapse. The elapsed number of days is not necessarily the number of dates counted inclusively.
 
-#### Годинник
+#### Reading clocks
 
 Skills: 5
 
-Відповідність положень стрілок і цифрового запису певному моменту доби, включно з різною точністю відліку.
-
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/clock.data.ts)
 
-##### Читати 24-годинний запис часу та співвідносити його з часом доби
+Clock hands and digital numerals identify a particular time of day. Reading to the hour, five minutes, or one minute requires progressively finer precision.
+
+##### Reading 24-hour time
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/read24HourClock.data.ts)
 
-14:30 — це друга година тридцять хвилин після полудня; формат 24 години усуває неоднозначність «ранок/вечір».
+14:30 means 2:30 in the afternoon. The 24-hour representation avoids ambiguity between morning and evening.
 
-##### Визначати час на аналоговому та цифровому годиннику з точністю до години
+##### Reading time to the hour
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readHour.data.ts)
 
-Положення годинної стрілки і цифровий запис 8:00 мають однаковий зміст; хвилинна стрілка стоїть на 12.
+The position of the hour hand and the digital display 8:00 convey the same instant; the minute hand points to 12.
 
-##### Зчитувати половину та чверть години на годиннику
+##### Reading half-hours and quarter-hours
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readHalfQuarter.data.ts)
 
-За половини години хвилинна стрілка на 6, за чверті — на 3; годинна стрілка поступово рухається між числами.
+At half past an hour, the minute hand points to 6; at a quarter past, it points to 3. The hour hand moves gradually between hour marks.
 
-##### Зчитувати час із точністю до п’яти хвилин
+##### Reading time to five minutes
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readFiveMinute.data.ts)
 
-Поділка 1 на циферблаті відповідає п’яти хвилинам, 2 — десяти; інтервали однакові.
+The numeral 1 on an analog dial represents five minutes and 2 represents ten minutes; the marked intervals are evenly spaced.
 
-##### Зчитувати й записувати час із точністю до хвилини
+##### Reading and recording time to the minute
 
 Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readMinute.data.ts)
 
-Запис 09:17 показує сімнадцять хвилин після дев’ятої; кожна хвилинна поділка має окрему вагу.
+09:17 indicates seventeen minutes after nine. Each individual minute tick represents a distinct minute increment.
 
-#### Тривалість
+#### Duration
 
 Skills: 4
 
-Зв’язок секунд, хвилин і годин та знаходження інтервалу чи моменту за відомими часовими даними.
-
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/duration.data.ts)
 
-##### Застосовувати співвідношення 1 год = 60 хв
+The learner connects seconds, minutes, and hours and derives an elapsed interval, start time, or end time from the information available.
+
+##### Converting hours and minutes
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/convertHoursMinutes.data.ts)
 
-Проміжок у півтори години дорівнює 90 хвилинам; одиниці переводять за коефіцієнтом 60.
+One and a half hours equals 90 minutes. The units are related by a factor of 60.
 
-##### Застосовувати співвідношення 1 хв = 60 с
+##### Converting minutes and seconds
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/convertMinutesSeconds.data.ts)
 
-Дві хвилини дорівнюють 120 секундам; секундний інтервал не слід плутати з показом секундної стрілки.
+Two minutes equal 120 seconds. A duration measured in seconds is different from the instantaneous reading of a clock's seconds hand.
 
-##### Знаходити тривалість події за часом початку та завершення
+##### Calculating elapsed time
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/eventDuration.data.ts)
 
-Від 10:15 до 11:00 проходить 45 хвилин; тривалість — різниця двох моментів, не сам показ годинника.
+From 10:15 to 11:00, 45 minutes pass. Duration is the difference between two instants, not a clock reading itself.
 
-##### Знаходити час початку чи завершення за тривалістю події
+##### Finding a start or end time from a duration
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/findStartOrEnd.data.ts)
 
-Подія тривалістю 35 хв, що почалася о 14:10, завершується о 14:45; зворотно можна визначити початок.
+An event lasting 35 minutes and starting at 14:10 ends at 14:45. The start can likewise be determined from a known end and duration.
 
 ### Money
 
