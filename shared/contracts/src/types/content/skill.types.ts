@@ -13,6 +13,8 @@ export interface Skill_Config {
   id: SkillId;
   /** One non-empty name for every supported language. */
   name: Readonly<Record<LanguageCode, string>>;
+  /** Required for code-authoritative entries; optional during legacy migration. */
+  description?: Readonly<Record<LanguageCode, string>>;
 }
 
 /**

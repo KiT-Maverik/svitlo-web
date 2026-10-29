@@ -64,6 +64,27 @@ describe('Utils / builders / config / buildSkillConfig', () => {
     }
   });
 
+  it('accepts a complete localized description and preserves it', () => {
+    const input = {
+      ...skill(),
+      description: Object.fromEntries(
+        DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, `Meaningful description in ${language}`]),
+      ) as NonNullable<Skill_Config['description']>,
+    };
+    const result = buildSkillConfig(input);
+    assert.deepEqual(result.description, input.description);
+  });
+
+  it('rejects malformed or incomplete description dictionaries when supplied', () => {
+    const fullDescriptions = Object.fromEntries(
+      DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, `Description ${language}`]),
+    );
+    for (const description of [null, [], 'text', { en: 'English only' }, { ...fullDescriptions, uk: ' ' }, { ...fullDescriptions, xx: 'Unknown' }]) {
+      const invalid = { ...skill(), description } as unknown as Skill_Config;
+      assert.throws(() => buildSkillConfig(invalid), /Skill description/);
+    }
+  });
+
   it('rejects unsupported extra locale keys', () => {
     const names = { ...allNames(), xx: 'Unknown' };
     assert.throws(() => buildSkillConfig({ id: skill().id, name: names }), /unsupported languages: xx/);

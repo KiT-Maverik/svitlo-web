@@ -6,6 +6,8 @@ import type { Skill } from './skill.types';
 export interface SkillDomain_Config {
   id: SkillGroup['id'];
   name: Readonly<Record<LanguageCode, string>>;
+  /** Full localized subject meaning; optional only for legacy migration. */
+  description?: Readonly<Record<LanguageCode, string>>;
   /** Child Groups in grouped mode; use {} when Skills are attached directly. */
   groupIds: Readonly<Record<string, SkillGroup['id']>>;
   /**
