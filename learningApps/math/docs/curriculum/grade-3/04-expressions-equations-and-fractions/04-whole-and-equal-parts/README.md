@@ -10,4 +10,4 @@
 - `math.fractions.whole-and-equal-parts` — `3b27b894-46e8-4a2a-b151-43b52224ba4c`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

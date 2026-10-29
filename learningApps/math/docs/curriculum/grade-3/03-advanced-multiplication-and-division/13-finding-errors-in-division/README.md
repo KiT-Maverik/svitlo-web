@@ -10,4 +10,4 @@
 - `math.divide.error-detection` — `06ea981c-0bfb-411b-9386-e04d83c92907`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

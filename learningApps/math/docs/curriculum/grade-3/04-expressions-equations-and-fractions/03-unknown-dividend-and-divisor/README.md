@@ -11,4 +11,4 @@
 - `math.algebra.unknown-divisor` — `c820dfa2-a186-4d00-8a53-4b6b4993a76b`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

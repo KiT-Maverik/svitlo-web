@@ -10,4 +10,4 @@
 - `math.algebra.variable-value` — `a8b94c00-522c-4a04-8fe1-4038a1b1a019`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

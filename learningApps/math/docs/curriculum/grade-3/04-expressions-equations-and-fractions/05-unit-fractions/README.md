@@ -12,4 +12,4 @@
 - `math.fractions.denominator-meaning` — `7297efca-9524-4bae-b64f-556efe5d2a5e`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

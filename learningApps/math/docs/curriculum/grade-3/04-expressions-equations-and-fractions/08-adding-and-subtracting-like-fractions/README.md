@@ -11,4 +11,4 @@
 - `math.fractions.subtract-like-denominators` — `80d0e1fc-eda0-4b6f-8aad-a27971ba7650`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

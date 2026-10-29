@@ -11,4 +11,4 @@
 - `math.fractions.compare-same-numerator` — `17d8eb21-df92-4074-a1d2-5a3bded8fea8`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

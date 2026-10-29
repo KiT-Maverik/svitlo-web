@@ -12,4 +12,4 @@
 - `math.geometry.draw-circle` — `66ec42c0-7450-4b2d-93b5-d5fd0ef0f02f`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

@@ -11,4 +11,4 @@
 - `math.geomeasure.square-perimeter` — `109234af-0003-4dca-9b7a-a0fdfb791835`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

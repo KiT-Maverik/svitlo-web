@@ -10,4 +10,4 @@
 - `math.geometry.angle-as-turn` — `72f07de3-30ee-4b55-a38c-3d0a12f5de9b`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

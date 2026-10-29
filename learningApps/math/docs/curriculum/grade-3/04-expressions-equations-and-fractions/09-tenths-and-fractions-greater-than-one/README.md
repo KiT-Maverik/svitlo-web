@@ -11,4 +11,4 @@
 - `math.fractions.fraction-greater-than-one` — `59f5bbe7-63e4-4f1b-a23e-47f3e59c1ac7`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

@@ -12,4 +12,4 @@
 - `math.fractions.whole-dependence` — `ff4e8348-80c0-49dd-8f49-191c9673b3e4`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

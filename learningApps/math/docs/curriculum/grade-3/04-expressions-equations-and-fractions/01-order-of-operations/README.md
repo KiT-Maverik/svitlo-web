@@ -11,4 +11,4 @@
 - `math.algebra.identify-expression-error` — `4f5207c6-619e-4714-a2f7-486f9b4630dc`
 
 ---
-[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Вирази, рівняння та дроби](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)
