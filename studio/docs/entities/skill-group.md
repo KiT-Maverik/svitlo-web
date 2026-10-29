@@ -2,25 +2,23 @@
 
 **Entity category:** catalog grouping.
 
-A **SkillGroup** is an optional intermediate named category organizing related Skills inside a SkillDomain **when the Domain genuinely requires multiple coherent subgroups**. Some small Domains may directly contain Skills without a Group. It is an organizational layer, not a lesson, assessment, learner result, or aggregate mastery status.
+A **SkillGroup** organizes one coherent family of related Skills inside a SkillDomain, where a meaningful subdivision is needed. A small cohesive Domain may instead attach Skills directly, without an artificial single Group. It is not a lesson, assessment, aggregate learner mastery value or course unit.
 
 ## SEMANTIC ROLE
 
-- Name one coherent family of related Skill labels. Its taxonomy description must explain what unifies that family and distinguishes it from adjacent groups, rather than repeat its title.
-- Use a short editorial description to distinguish it from other Groups.
-- A Group contains Skills **through the taxonomy and code-level membership map**, not through a list embedded in its own Markdown Definition.
-- Keep each Skill in one primary Group; external materials can reference a Skill from multiple contexts.
-- Do not create a Group as the **only child Group of a Domain** merely to wrap its Skills; move Skills directly to the Domain unless a substantive editor-approved exception exists. Do not force a fixed number of Skills per Group or duplicate a child Skill's name as the Group name. If names overlap, give the Skill a **meaningful** qualifier reflecting the actual competency, not a mechanical “Basic” label.
-
-The generated Group Definition is intentionally minimal: title, editorial Status, short Description, and separate Code link. **It must not enumerate its Skills** or define evaluation evidence, grades, progress, question formats, or curriculum sequencing.
+- Name a meaningful family of abilities and distinguish it from neighboring Groups.
+- Write a **substantive, standalone description directly in the canonical taxonomy**: clarify the shared subject matter, meaningful boundaries and why these Skills belong together. Simply repeating the Group name or writing “contains related Skills” is not a description.
+- The taxonomy owns membership. Do not redundantly list children inside a separate Markdown Definition file; there is **no per-Group Definition file**.
+- A grouped Skill belongs to one primary Group, while an exceptional direct-Domain Skill belongs to its Domain instead. Other educational materials may reference it without moving or duplicating it.
+- Do not impose an arbitrary minimum number of children, grades or pedagogical order. A one-Skill Group may be valid inside a multi-Group Domain; an entire Domain containing **only one Group** is strongly discouraged unless independently justified.
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
-The current shared-engine `SkillGroup_Config` contains `id`, localized `name`, and `skillIds` (explicit references to child IDs). These technical relationships remain in source code and do not encode teaching order or prerequisites. It currently contains no `description` property, so the Markdown description is editorial rather than an automatic UI field.
+The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It does not contain `description`, teaching order, evaluation evidence or student progress.
 
-- **Definition:** the Group's concise Markdown catalog description.
-- **Code:** a separate verified application source file.
+- **Editorial authority:** `<PackageRoot>/docs/skills/taxonomy.md` heading, explanation and parent/child placement.
+- **Code:** verified application `*.data.ts` linked directly from the taxonomy, or `Code: [Not implemented](#)`.
 
-Neither artifact replaces the other; use `[Not implemented](#)` for a missing target.
+Descriptions use plain prose with **no `Description:` prefix**, and per-entity editorial `Status` files are not created.
 
 Related entities: [SkillDomain](./skill-domain.md), [Skill](./skill.md).
