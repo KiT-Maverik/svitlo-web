@@ -29,7 +29,7 @@ If a required input is absent or taxonomy files cannot be inspected, **stop Curr
 - **Intent:** desired educational outcomes, depth, boundaries, mandatory source materials, and whether alignment with a specified local standard or accreditation is required.
 - **Taxonomy:** the approved canonical `<PackageRoot>/docs/skills/taxonomy.md` containing the definitions as in-place explanatory prose. Runtime Code is optional for editorial planning. If the taxonomy is inaccessible, stop rather than guessing its location.
 
-Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. If a target-language preference is supplied, write the generated educational material in that language even though this instruction and its template are in English.
+Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. Canonical editorial Curriculum prose and structural identifiers remain in English. Target learner-language requirements are fulfilled through separate localization artifacts, not by changing the canonical Curriculum document.
 
 ## SOURCE OF TRUTH: SKILLS TAXONOMY
 
@@ -58,10 +58,10 @@ Clarify optional constraints when they matter: language(s) of output, locale/cul
 
 ## CURRICULUM REVIEW — OPTIONAL DATED HISTORY, NOT A SECOND CURRICULUM
 
-Apply the **mandatory review-history policy** in [Methodologist Persona](../personas/methodist.persona.md), but **only to the Curriculum being authored/reviewed**. Use this **stable path per actual Curriculum**, deriving `<curriculumCamelCase>` from its canonical document's existing directory:
+Apply the **mandatory review-history policy** in [Methodologist Persona](../personas/methodist.persona.md), but **only to the Curriculum being authored/reviewed**. Use this **stable path per actual Curriculum**, deriving `<curriculumSlug>` from its canonical document's actual directory:
 
 ```text
-<PackageRoot>/docs/history/curriculums/<curriculumCamelCase>/curriculum-review.md
+<PackageRoot>/docs/history/curriculums/<curriculumSlug>/curriculum-review.md
 ```
 
 Title: **Curriculum Review**. The canonical Curriculum remains `<PackageRoot>/docs/curriculum/<curriculumSlug>/<curriculumSlug>.curriculum.md`. Its learning plan, metadata, links and educational decisions must not be replaced by a history file.
@@ -92,7 +92,7 @@ A Curriculum is ready for editorial review only when:
 - Any dated Curriculum Review is in its **one stable, artifact-specific history location**, reflects decisions actually approved by the editor, preserves dates and supersession, and was created only after satisfying the explicit creation gate. No per-item or per-meeting Review files.
 - The Curriculum remains a pedagogical specification, not an implementation plan.
 
-Use compact, structured Markdown. English is the working language of this instruction and template; the generated curriculum's language follows the editorial brief. Keep file references clickable in final artifacts and preserve the embedded template's section structure.
+Use compact, structured Markdown. English is the mandatory language of the canonical Curriculum, independent of the learner-facing locale. Keep file references clickable in final artifacts and preserve the embedded template's section structure.
 
 ## CURRICULUM TEMPLATE
 
@@ -167,14 +167,14 @@ Create or update **one canonical Curriculum document** at (an optional historica
 ```text
 <PackageRoot>/
 └── docs/
-    └── curriculums/
-        └── %CURRICULUM_NAME in camelCase%/
-            └── %CURRICULUM_NAME in camelCase%.curriculum.md
+    └── curriculum/
+        └── %CURRICULUM_SLUG in English kebab-case%/
+            └── %CURRICULUM_SLUG in English kebab-case%.curriculum.md
 ```
 
-- Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Keep `docs/curriculums/` literal and derive the Curriculum name in **camelCase** once for both directory and filename.
+- Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Keep `docs/curriculum/` literal and derive a semantic **English kebab-case** Curriculum slug once for both directory and filename (e.g. `grade-1/grade-1.curriculum.md`).
 - Fill the file using the embedded **CURRICULUM TEMPLATE**. Review existing content before updating it; do not create a substitute `README.md` or automatically generate module, lesson, or assessment files.
-- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculums/<name>/`, the canonical taxonomy is exactly `../../skills/taxonomy.md` (the template includes this direct link). For absent **module/lesson** Definitions or Code, use `[Not implemented](#)` independently; these artifacts have their own lifecycle. **Skills** do not have separate Definition files: verify the referenced names and substantive descriptions in the canonical taxonomy. Skill Code may be absent.
+- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculum/<name>/`, the canonical taxonomy is exactly `../../skills/taxonomy.md` (the template includes this direct link). For absent **module/lesson** Definitions or Code, use `[Not implemented](#)` independently; these artifacts have their own lifecycle. **Skills** do not have separate Definition files: verify the referenced names and substantive descriptions in the canonical taxonomy. Skill Code may be absent.
 - Unless the editor has requested a qualifying history, **do not create a second Curriculum artifact or a Review**. If a matching Review exists and a new editorial agreement was actually approved, append it with its actual date; preserve the original date and record if the same file was reused in the handoff.
 
 ## CANONICAL LANGUAGE, FILE OWNERSHIP AND LINK LABELS — MANDATORY
