@@ -1,7 +1,7 @@
 import type { Locale } from '../../../types/languages';
-import type { DeepReadonly } from '../../../types/readonly.types';
-import type { Resource, Resource_Config } from '../../../content';
-import type { Question, Question_Config } from '../../../types/content/question.types';
+import type { DeepReadonly } from '@svitlo/contracts/content';
+import type { Resource, Resource_Config } from '@svitlo/contracts/content';
+import type { Question, Question_Config } from '@svitlo/contracts/content';
 import { buildResource, buildTextResource } from '../buildResource/buildResource.utils';
 
 export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Locale): Question {
