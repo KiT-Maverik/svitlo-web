@@ -1770,65 +1770,65 @@ Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/findStartOrEnd.d
 
 Подія тривалістю 35 хв, що почалася о 14:10, завершується о 14:45; зворотно можна визначити початок.
 
-### Гроші
+### Money
 
 Groups: 2 · Skills: 6
 
 Code: [Code](../../src/data/skillsTaxonomy/money/money.data.ts)
 
-Застосовує арифметику до грошових номіналів, складання та порівняння сум, розрахунків вартості, решти й вибору покупок у межах бюджету.
+This domain applies arithmetic to denominations, composing and comparing monetary amounts, calculating total costs and change, and choosing purchases under budget constraints.
 
-#### Грошові суми
+#### Money amounts
 
 Skills: 3
-
-Вартість, подана монетами й банкнотами певної валюти, еквівалентність наборів номіналів та співвідношення сум.
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/denominations.data.ts)
 
-##### Розпізнавати номінали монет і купюр заданої валюти
+Amounts represented by coins and banknotes of a particular currency can be composed in different equivalent ways. The value of a collection is distinct from the number of physical pieces.
+
+##### Recognizing coin and banknote denominations
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/recognizeDenominations.data.ts)
 
-Номінал позначає вартість грошового знака, а не його розмір чи колір; розпізнавання залежить від обраної валюти.
+A denomination indicates a coin's or banknote's monetary value rather than its size or color. Recognition depends on the currency chosen for the exercise.
 
-##### Складати задану суму різними комбінаціями грошових одиниць
+##### Composing a money amount
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/composeAmount.data.ts)
 
-Суму 12 одиниць можна отримати як 10 + 2 чи 5 + 5 + 2, якщо відповідні номінали існують.
+An amount of 12 currency units may be formed as 10 + 2 or 5 + 5 + 2, provided those denominations exist in the selected currency.
 
-##### Порівнювати грошові суми в межах однієї валюти
+##### Comparing money amounts
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/compareAmounts.data.ts)
 
-Порівнюють спільну сумарну вартість, а не кількість монет: дві більші можуть коштувати більше за п’ять дрібних.
+Compare the total values rather than the numbers of coins: two high-denomination coins may be worth more than five low-denomination ones.
 
-#### Покупки
+#### Purchases
 
 Skills: 3
 
-Застосування грошових розрахунків до ціни товару, кількості одиниць, решти та обмеженого бюджету.
-
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/transactions.data.ts)
 
-##### Знаходити решту після покупки
+Transaction problems connect an item's unit price, the quantity bought, the change due, and whether a collection of items fits within a fixed spending limit.
+
+##### Calculating change
 
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/calculateChange.data.ts)
 
-Якщо товар коштує 37, а сплачено 50, повернути слід 13 грошових одиниць тієї самої валюти.
+If an item costs 37 and the customer pays 50, the change is 13 units of the same currency.
 
-##### Розв’язувати задачі на ціну, кількість і загальну вартість
+##### Calculating total cost from unit price and quantity
 
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/unitPriceTotal.data.ts)
 
-За ціни 8 за одиницю три однакові предмети коштують 24; задача відрізняє одиничну ціну від загальної суми.
+At 8 currency units per item, three identical items cost 24 in total. The calculation distinguishes the price of one item from the overall amount paid.
 
-##### Вибирати покупки з урахуванням заданого бюджету
+##### Choosing purchases within a budget
 
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/budgetConstraint.data.ts)
 
-За бюджету 40 набір товарів вартістю 43 недоступний, навіть якщо кожен предмет окремо дешевший за 40.
+With a budget of 40, a basket costing 43 cannot be purchased, even if every individual item costs less than 40.
 
 ### Дані
 
