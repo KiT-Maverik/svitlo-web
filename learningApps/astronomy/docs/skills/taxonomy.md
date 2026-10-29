@@ -2,27 +2,94 @@
 
 Date: 2026-10-29
 
-A subject-wide, audience-independent catalog of astronomy competencies. It covers observational astronomy, celestial dynamics, the Earth–Moon–Sun system, the Solar System, planetary science, stellar and galactic astronomy, exoplanets, cosmology, astrobiology and scientific space exploration. The hierarchy is a classification, not a lesson sequence, prerequisite graph, curriculum, assessment rubric or learner-progress model. Each competency may be taught at different depths by different Curricula; introductory programs need not include every Skill.
+A subject-wide, audience-independent catalog of astronomy competencies. It covers cosmic-object classification, observational astronomy, celestial dynamics, the Earth–Moon–Sun system, the Solar System, planetary science, stellar and galactic astronomy, exoplanets, cosmology, astrobiology and scientific space exploration. The hierarchy is a classification, not a lesson sequence, prerequisite graph, curriculum, assessment rubric or learner-progress model. Each competency may be taught at different depths by different Curricula; introductory programs need not include every Skill.
 
-**Subject boundaries:** Astronomy owns the observation and scientific explanation of celestial objects, astronomical signals and cosmic phenomena. The general physical laws of gravity, optics, plasma, nuclear reactions and electromagnetism may also be taught in Physics; Astronomy treats their application to celestial evidence. Geography addresses Earth's spatial and environmental systems, while Astronomy addresses Earth's astronomical setting and celestial cycles. Engineering owns spacecraft and instrument design; Astronomy owns what their measurements can establish. History addresses the chronology and cultural context of discoveries, while Astronomy may analyze how observational evidence changes scientific models. Overlap with other textbooks is permitted and does not establish shared global Skill IDs.
+**Subject boundaries:** Astronomy owns the observation, classification and scientific explanation of celestial objects, astronomical signals and cosmic phenomena. The general physical laws of gravity, optics, plasma, nuclear reactions and electromagnetism may also be taught in Physics; Astronomy treats their application to celestial evidence. Geography addresses Earth's spatial and environmental systems, while Astronomy addresses Earth's astronomical setting and celestial cycles. Engineering owns spacecraft and instrument design; Astronomy owns what their measurements can establish. History addresses the chronology and cultural context of discoveries, while Astronomy may analyze how observational evidence changes scientific models. Overlap with other textbooks is permitted and does not establish shared global Skill IDs.
 
-**References for coverage checks (not adopted syllabuses):** [OpenStax Astronomy 2e](https://openstax.org/books/astronomy-2e/pages/preface), [IAU Office of Astronomy for Education — Big Ideas in Astronomy](https://astro4edu.org/bigideas/bigideas/), [NASA Solar System Facts](https://science.nasa.gov/solar-system/solar-system-facts/), and [Studio Subject Proposition](../../../../studio/Subject%20Proposition.md). The question-led encyclopedia section “What is it in space?” is a content format, not a SkillGroup; individual object profiles can reference multiple Skills.
+**References for coverage checks (not adopted syllabuses):** [OpenStax Astronomy 2e](https://openstax.org/books/astronomy-2e/pages/preface), [IAU Office of Astronomy for Education — Big Ideas in Astronomy](https://astro4edu.org/bigideas/bigideas/), [NASA Solar System Facts](https://science.nasa.gov/solar-system/solar-system-facts/), [NASA Free-Floating Planets](https://www.nasa.gov/image-article/jupiter-like-rogue-planet-wanders-alone-space/), [NASA Universe Glossary](https://science.nasa.gov/universe/glossary/), and [Studio Subject Proposition](../../../../studio/Subject%20Proposition.md). The question-led encyclopedia section “What is it in space?” is a content format, not a SkillGroup; individual object profiles can reference multiple Skills.
 
 **Editorial state:** Draft for subject-editor review. No Skills, Groups or Domains are claimed to have runtime implementations.
 
 ## SUMMARY
 
-Domains: 12
-Groups: 45
-Skills: 190
+Domains: 13
+Groups: 49
+Skills: 212
 
-Code files: 0/12 Domains · 0/45 Groups · 0/190 Skills
+Code files: 0/13 Domains · 0/49 Groups · 0/212 Skills
+
 
 ## DOMAINS
 
+### Cosmic Objects
+
+Groups: 2 · Skills: 7
+
+[Not implemented](#)
+
+An overview of what kinds of physical objects and extended structures exist beyond Earth and how they are identified and organized. It teaches classification across cosmic scales and distinguishes an object's physical nature from its environment or apparent visual form; detailed physics belongs to the specialized planetary, stellar, galactic and cosmological domains.
+
+#### Object Families
+
+Skills: 4
+
+[Not implemented](#)
+
+Classification of astronomical entities requires more than their appearance in a photograph: a point source, a diffuse cloud, a cluster and an extended galaxy may be distinguished by physical evidence and scale.
+
+##### Celestial Object Classification
+
+[Not implemented](#)
+
+Classify astronomical sources as stellar bodies, planetary bodies, compact remnants, diffuse clouds, star clusters, galaxies or other broad physical types using characteristic evidence rather than appearance alone.
+
+##### Objects and Phenomena
+
+[Not implemented](#)
+
+Distinguish enduring physical objects and systems from observed events or effects such as eclipses, meteors, flares and transient brightenings, even when both occur in object catalogs.
+
+##### Stellar, Substellar and Planetary Boundaries
+
+[Not implemented](#)
+
+Compare physically distinct stars, brown dwarfs and planetary-mass bodies using fusion and mass constraints while acknowledging uncertainties near classification boundaries.
+
+##### Diffuse and Composite Objects
+
+[Not implemented](#)
+
+Differentiate diffuse nebulae, gravitationally associated groups and composite galaxies by their constituents, structure and binding rather than surface resemblance.
+
+#### Organization and Membership
+
+Skills: 3
+
+[Not implemented](#)
+
+A body's membership in a system is a different property from its type; the same class of object can be gravitationally bound, ejected or found in a sparse galactic environment.
+
+##### Gravitationally Bound Systems
+
+[Not implemented](#)
+
+Distinguish satellite systems, planetary systems, multiple stars, star clusters, galaxies and galaxy clusters by physical membership and characteristic scales.
+
+##### Free-Floating Planets
+
+[Not implemented](#)
+
+Explain planetary-mass objects not gravitationally bound to a host star, including proposed ejection or isolated-formation origins and detection by microlensing or thermal infrared emission; distinguish low illumination from a complete absence of radiation.
+
+##### Object Membership and Isolation
+
+[Not implemented](#)
+
+Determine whether an astronomical object is a member of a larger bound system or is apparently isolated, and explain why gravitational context does not by itself determine intrinsic object type.
+
 ### Observing the Sky
 
-Groups: 4 · Skills: 18
+Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
@@ -62,7 +129,7 @@ Determine or compare angular distances and apparent sizes on the sky independent
 
 #### Sky Patterns
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -97,6 +164,12 @@ Describe the apparent east-to-west paths of celestial objects across the sky, in
 [Not implemented](#)
 
 Explain why different stars and constellations become visible at different times of the year.
+
+##### Stellar Proper Motion
+
+[Not implemented](#)
+
+Identify the slow positional motion of a star relative to distant background sources and distinguish this physical change from the daily apparent rotation of the sky.
 
 #### Observation Practice
 
@@ -170,15 +243,15 @@ Relate solar-year calendar intervals to Earth's annual revolution and seasons wi
 
 ### Astronomical Instruments and Evidence
 
-Groups: 4 · Skills: 24
+Groups: 6 · Skills: 30
 
 [Not implemented](#)
 
-Astronomy infers properties of remote objects from photons, particles, gravitational signals and measurements. The focus is what observations reveal and how interpretations are justified, not the engineering design of instruments.
+Astronomy infers properties of remote objects from electromagnetic radiation, gravitational effects, particles and spacecraft observations. This domain covers what an observation can reveal, how instruments and methods constrain the evidence, and how competing interpretations are evaluated, not the engineering construction of observatories and spacecraft.
 
 #### Telescopes and Detectors
 
-Skills: 6
+Skills: 7
 
 [Not implemented](#)
 
@@ -208,11 +281,17 @@ Interpret the scientific roles of refractors, reflectors and optical configurati
 
 Explain how detectors capture light or other signals and why exposure, noise, calibration and sensitivity matter.
 
-##### Radio Astronomy and Interferometry
+##### Radio Astronomy
 
 [Not implemented](#)
 
-Interpret radio measurements and explain how combining separated antennas improves angular resolution.
+Interpret observations at radio wavelengths, including the kinds of astronomical sources and atmospheric or detector limitations relevant to these measurements.
+
+##### Astronomical Interferometry
+
+[Not implemented](#)
+
+Explain how correlated signals from separated receivers constrain angular structure in radio and optical astronomy and why baseline geometry matters.
 
 ##### Space-Based Observation
 
@@ -260,7 +339,7 @@ Relate observations in different electromagnetic bands to distinct physical comp
 
 #### Distances and Physical Properties
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -296,9 +375,15 @@ Explain how calibrated luminosity indicators support distance estimates beyond d
 
 Explain why different distance indicators apply across different ranges and how calibration errors can propagate.
 
+##### Astronomical Distance Units
+
+[Not implemented](#)
+
+Interpret astronomical units, light-years and parsecs as units of length, relate their scales and distinguish light-travel distance from travel duration.
+
 #### Evidence and Interpretation
 
-Skills: 8
+Skills: 4
 
 [Not implemented](#)
 
@@ -328,11 +413,45 @@ Identify how detection thresholds and survey methods bias the populations of cel
 
 Compare competing explanations with observations and revised predictions, including historically important planetary models.
 
-##### Multimessenger Evidence
+#### Spacecraft Observations
+
+Skills: 4
 
 [Not implemented](#)
 
-Explain how electromagnetic light, neutrinos, gravitational waves and particles can offer complementary evidence about an astrophysical event.
+Remote flybys, orbiters, landers and sample-return missions provide different access to remote worlds. These competencies concern scientific evidence, temporal coverage, sampling limits and interpretation; they exclude the engineering design of the vehicles.
+
+##### Flyby Measurements
+
+[Not implemented](#)
+
+Interpret scientific information obtained during a brief spacecraft encounter, including coverage constraints.
+
+##### Orbital Measurements
+
+[Not implemented](#)
+
+Explain how repeated observations from an orbiting spacecraft support mapping and temporal monitoring.
+
+##### Landers and Rovers as Scientific Probes
+
+[Not implemented](#)
+
+Interpret the local environmental evidence obtained by landed missions without treating vehicle design as an astronomy competency.
+
+##### Sample Return Evidence
+
+[Not implemented](#)
+
+Explain how collected extraterrestrial materials can be analyzed and how contamination or context loss affects conclusions.
+
+#### Gravitational and Particle Probes
+
+Skills: 4
+
+[Not implemented](#)
+
+Gravitational lensing, gravitational waves and astrophysical particles supply information that differs from ordinary electromagnetic imaging and spectroscopy; a multimessenger inference combines distinct independent signals. Lensing is observed through light affected by gravity and is not itself a non-electromagnetic measurement.
 
 ##### Gravitational Lensing
 
@@ -352,9 +471,15 @@ Interpret gravitational-wave detections as evidence about accelerating compact m
 
 Explain how astrophysical neutrinos probe energetic processes that electromagnetic observations may not reveal.
 
+##### Multimessenger Evidence
+
+[Not implemented](#)
+
+Explain how electromagnetic light, neutrinos, gravitational waves and particles can offer complementary evidence about an astrophysical event.
+
 ### Celestial Mechanics
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
@@ -362,7 +487,7 @@ This domain concerns how gravity and angular momentum govern orbital motion, rot
 
 #### Gravitational Motion
 
-Skills: 4
+Skills: 6
 
 [Not implemented](#)
 
@@ -374,11 +499,23 @@ Gravitational interactions produce trajectories governed by mass, initial condit
 
 Apply the dependence of gravitational attraction on interacting masses and separation to astronomical situations.
 
-##### Kepler's Laws
+##### Kepler's First Law
 
 [Not implemented](#)
 
-Use the relations among orbit geometry, swept area and orbital period to describe two-body orbital motion.
+Apply the elliptical-orbit relation, with the central gravitating body at one focus in the idealized two-body model, to the geometry of bound orbits.
+
+##### Kepler's Second Law
+
+[Not implemented](#)
+
+Use the equal-areas-in-equal-times relation to explain variation in orbital speed as an orbiting body changes its distance from the central focus.
+
+##### Kepler's Third Law
+
+[Not implemented](#)
+
+Relate the square of orbital period to the cube of semi-major axis with the appropriate gravitational mass dependence and limitations of the two-body model.
 
 ##### Orbital Energy
 
@@ -394,7 +531,7 @@ Explain why interacting celestial bodies orbit a shared center of mass rather th
 
 #### Orbits and Rotations
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -410,13 +547,19 @@ Interpret inclination, eccentricity and other orbital descriptors when comparing
 
 [Not implemented](#)
 
-Distinguish rotation and revolution periods, including sidereal and synodic orbital periods.
+Interpret the time needed to complete an orbit and compare sidereal and synodic periods, distinguishing orbital revolution from rotation about the body's own axis.
 
-##### Axial Rotation and Tilt
+##### Axial Rotation
 
 [Not implemented](#)
 
-Describe rotational period, spin-axis orientation and obliquity as distinct properties of a rotating world.
+Describe the spin of a world about its axis, including rotation period and direction, independently of the tilt or precession of that axis.
+
+##### Axial Tilt
+
+[Not implemented](#)
+
+Interpret the angle between a body's spin axis and orbital reference direction and explain its influence on illumination geometry and seasons.
 
 ##### Synchronous Rotation
 
@@ -582,7 +725,7 @@ Distinguish the Moon's orbital cycle from the phase cycle by considering Earth's
 
 ### Solar System Structure and Origins
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -654,7 +797,7 @@ Classify bodies beyond Neptune and relate their diverse orbits to the outer Sola
 
 #### Formation and Chronology
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -684,9 +827,15 @@ Explain how heating and density sorting lead young planetary bodies to develop d
 
 Interpret radiometric and meteoritic evidence used to constrain the time of Solar System formation.
 
+##### Origin of the Moon
+
+[Not implemented](#)
+
+Evaluate proposed formation scenarios for Earth's Moon, including giant-impact models, using angular momentum, lunar samples, isotopic composition and the limitations of current evidence.
+
 ### Planetary Science
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -694,7 +843,7 @@ Planetary science compares worlds by their surfaces, interiors, atmospheres and 
 
 #### Planetary Classes
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -723,6 +872,12 @@ Compare moons by origin, orbit, composition and geological activity without trea
 [Not implemented](#)
 
 Use mass, radius and density to constrain plausible bulk material and planetary classification.
+
+##### Planetary Ring Systems
+
+[Not implemented](#)
+
+Interpret the composition, dynamics, formation and evolution of rings around planets or other bodies, including interactions with nearby satellites and differences between dense rings and diffuse dust populations.
 
 #### Surfaces and Geology
 
@@ -932,7 +1087,7 @@ Explain how energetic charged particles interacting with an atmosphere and magne
 
 ### Stellar Properties and Evolution
 
-Groups: 5 · Skills: 20
+Groups: 5 · Skills: 26
 
 [Not implemented](#)
 
@@ -940,7 +1095,7 @@ Stars are understood through measurements of their physical properties and model
 
 #### Stellar Properties
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -970,13 +1125,19 @@ Explain how stellar spectra and emitted energy distributions constrain effective
 
 Distinguish total emitted power from the light received by an observer and infer luminosity from suitable measurements.
 
-#### Stellar Classification
-
-Skills: 4
+##### Stellar Hydrostatic Equilibrium
 
 [Not implemented](#)
 
-Patterns across stellar measurements support physical classification and comparisons among stars in different evolutionary states.
+Explain how the balance of inward gravitational forces and outward pressure gradients sustains an approximately stable star and how disruption of the balance causes structural changes.
+
+#### Stellar and Substellar Classification
+
+Skills: 6
+
+[Not implemented](#)
+
+Spectra, temperature, luminosity, mass, multiplicity and composition provide complementary ways to group luminous stars and related substellar bodies, while observational class need not imply a unique evolutionary history.
 
 ##### Stellar Spectral Types
 
@@ -1002,9 +1163,21 @@ Explain how gravitationally bound stellar systems are identified and used to est
 
 Distinguish stellar populations by typical ages, chemical abundances and locations without treating the categories as absolute.
 
+##### Brown Dwarfs
+
+[Not implemented](#)
+
+Distinguish substellar objects below the sustained hydrogen-fusion threshold from stars, including their cooling, atmospheric spectra and uncertain classification near planetary masses.
+
+##### Variable Stars
+
+[Not implemented](#)
+
+Classify intrinsic stellar brightness variation by physical mechanism, timescale or periodicity, distinguishing it from apparent variation caused by eclipsing companions.
+
 #### Star Formation
 
-Skills: 3
+Skills: 4
 
 [Not implemented](#)
 
@@ -1022,15 +1195,21 @@ Explain how gravitational collapse of dense gas can initiate star formation agai
 
 Interpret the stage during which a contracting young stellar object has not yet reached stable hydrogen fusion.
 
-##### Young Stellar Disks and Jets
+##### Protostellar Disks
 
 [Not implemented](#)
 
-Relate circumstellar accretion structures and outflows to the growth of a young star.
+Explain how circumstellar accretion disks transport matter and angular momentum during the early growth of stars.
+
+##### Protostellar Jets
+
+[Not implemented](#)
+
+Explain the observed collimated outflows from young stellar systems and how their association with disks and magnetic fields constrains star-formation models.
 
 #### Stellar Evolution
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1042,11 +1221,17 @@ Mass and composition strongly constrain the duration and physical stages of a st
 
 Explain why stars can remain in a long-lived core hydrogen-burning state and why mass changes its duration.
 
-##### Red Giants and Supergiants
+##### Red Giants
 
 [Not implemented](#)
 
-Interpret expansion and altered surface conditions as stars exhaust central fuel and evolve.
+Explain the expansion and cooling of stellar envelopes during post-main-sequence evolution and distinguish the relevant evolutionary paths by progenitor mass.
+
+##### Supergiants
+
+[Not implemented](#)
+
+Interpret the very large sizes and high luminosities of massive evolved stars and their connection to advanced stellar evolution and mass loss.
 
 ##### Advanced Stellar Fusion
 
@@ -1062,7 +1247,7 @@ Compare the evolutionary timescales of stars with different initial masses.
 
 #### Stellar Remnants
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -1074,11 +1259,17 @@ The final states of stars differ according to progenitor mass, mass loss and bin
 
 Explain how a compact electron-degeneracy-supported remnant forms after some stars shed their outer layers.
 
-##### Neutron Stars and Pulsars
+##### Neutron Stars
 
 [Not implemented](#)
 
-Explain the physical nature of neutron-star remnants and how rotating emission beams can produce pulsar signals.
+Explain the physical properties and formation of ultra-compact neutron-rich remnants supported by dense matter, including limits imposed by mass and rotation.
+
+##### Pulsars
+
+[Not implemented](#)
+
+Interpret periodic electromagnetic pulses as beams from rotating magnetized neutron stars and distinguish an observational pulsar designation from a separate stellar-remnant type.
 
 ##### Stellar-Mass Black Holes
 
@@ -1346,7 +1537,7 @@ Explain the observed collimated outflows in some active galaxies and the role of
 
 ### Cosmology
 
-Groups: 4 · Skills: 16
+Groups: 5 · Skills: 17
 
 [Not implemented](#)
 
@@ -1416,13 +1607,13 @@ Explain why the expansion of the Universe does not automatically enlarge gravita
 
 Compare the predictions and assumptions of simplified expanding-Universe models against observations.
 
-#### Early-Universe Evidence
+#### Early-Universe Models and Evidence
 
 Skills: 4
 
 [Not implemented](#)
 
-The early hot, dense state is constrained by several independent signatures visible in today's cosmic matter and radiation.
+The early hot and dense Universe is reconstructed from relic radiation, primordial abundances and theoretical models whose predictions and evidence have different degrees of support.
 
 ##### Hot Big Bang Model
 
@@ -1442,19 +1633,19 @@ Interpret relic microwave radiation and its spatial variations as evidence about
 
 Explain the predicted formation of light nuclei and why their observed abundances test early-Universe models.
 
-##### Cosmic Structure Formation
+##### Cosmic Inflation
 
 [Not implemented](#)
 
-Explain how initially small matter-density differences grow into galaxies and large-scale structure.
+Explain the hypothesized early accelerated-expansion phase, distinguish its predicted consequences from direct observation and evaluate what existing cosmic evidence can and cannot establish.
 
-#### Cosmic Composition
+#### Cosmic Components and Constraints
 
-Skills: 4
+Skills: 3
 
 [Not implemented](#)
 
-Gravitational observations and cosmic expansion are modeled with components whose physical nature is not equally well understood.
+Gravitational and expansion measurements constrain otherwise unseen components, while cosmological parameters and theoretical uncertainties limit the interpretations that can be supported by available evidence.
 
 ##### Dark Matter Evidence
 
@@ -1468,25 +1659,39 @@ Interpret dynamical, lensing and cosmological evidence for unseen gravitating ma
 
 Explain why observations of accelerated expansion motivate a dark-energy component or changes to gravitational models.
 
-##### Cosmic Web
-
-[Not implemented](#)
-
-Describe how filaments, clusters and voids trace the large-scale distribution of matter.
-
 ##### Limits of Cosmological Knowledge
 
 [Not implemented](#)
 
 Distinguish empirical constraints from open problems concerning early conditions, dark components and the global extent of the Universe.
 
-### Astrobiology and Space Exploration
+#### Cosmic Structure and Evolution
 
-Groups: 4 · Skills: 16
+Skills: 2
 
 [Not implemented](#)
 
-This domain considers where and how life might be detectable beyond Earth and how space missions produce testable scientific evidence. Spacecraft engineering, mission operations design and policy advocacy are outside its competency focus.
+Density perturbations, gravity and cosmic expansion shape the cosmic web over time. This branch focuses on spatial organization and dynamical evolution, as distinct from the initial hot state or the physical nature of the Universe's dark components.
+
+##### Cosmic Structure Formation
+
+[Not implemented](#)
+
+Explain how initially small matter-density differences grow into galaxies and large-scale structure.
+
+##### Cosmic Web
+
+[Not implemented](#)
+
+Describe how filaments, clusters and voids trace the large-scale distribution of matter.
+
+### Astrobiology
+
+Groups: 3 · Skills: 12
+
+[Not implemented](#)
+
+Scientific investigation of the possibility, conditions and evidence of life beyond Earth, including chemical origins, habitability and contamination risks. The methods of spacecraft observation are classified with astronomical instrumentation and evidence rather than presented as a separate astrobiological subject.
 
 #### Conditions for Life
 
@@ -1522,7 +1727,7 @@ Assess how a world's environmental history may change its potential to support l
 
 #### Evidence of Life
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1552,6 +1757,12 @@ Distinguish suggestive observations from convergent, independently checked evide
 
 Interpret possible observable indicators of technology without confusing an unexplained signal with confirmed intelligence.
 
+##### Planetary Protection
+
+[Not implemented](#)
+
+Explain why forward and backward biological contamination controls matter for mission science and credible life-detection results.
+
 #### Search Environments
 
 Skills: 3
@@ -1577,41 +1788,3 @@ Interpret the capabilities and limitations of remote atmospheric and planetary m
 [Not implemented](#)
 
 Explain why liquid environments protected under ice or rock can be relevant even when a surface is hostile.
-
-#### Exploration and Scientific Returns
-
-Skills: 5
-
-[Not implemented](#)
-
-Different mission approaches collect complementary information about inaccessible worlds while introducing sampling and interpretation constraints.
-
-##### Flyby Measurements
-
-[Not implemented](#)
-
-Interpret scientific information obtained during a brief spacecraft encounter, including coverage constraints.
-
-##### Orbital Measurements
-
-[Not implemented](#)
-
-Explain how repeated observations from an orbiting spacecraft support mapping and temporal monitoring.
-
-##### Landers and Rovers as Scientific Probes
-
-[Not implemented](#)
-
-Interpret the local environmental evidence obtained by landed missions without treating vehicle design as an astronomy competency.
-
-##### Sample Return Evidence
-
-[Not implemented](#)
-
-Explain how collected extraterrestrial materials can be analyzed and how contamination or context loss affects conclusions.
-
-##### Planetary Protection
-
-[Not implemented](#)
-
-Explain why forward and backward biological contamination controls matter for mission science and credible life-detection results.
