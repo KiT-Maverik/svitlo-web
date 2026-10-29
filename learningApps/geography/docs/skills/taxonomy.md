@@ -12,9 +12,9 @@ A subject-wide, audience-independent catalog of geographical competencies. It co
 
 Domains: 11
 Groups: 41
-Skills: 161
+Skills: 160
 
-Code files: 0/11 Domains · 0/41 Groups · 0/161 Skills
+Code files: 0/11 Domains · 0/41 Groups · 0/160 Skills
 
 ## DOMAINS
 
@@ -96,7 +96,7 @@ Code: [Not implemented](#)
 
 Determine why adjacent locations on opposite sides of the approximate Pacific date boundary can have different calendar dates, noting that its actual course follows regional civil-time choices rather than a perfectly straight meridian.
 
-#### Directions and Routes
+#### Navigation and Mental Maps
 
 Skills: 4
 
@@ -156,19 +156,19 @@ Explain how a mountain range, river crossing, valley, or road can restrict or en
 
 ### Maps and Geospatial Representations
 
-Groups: 5 · Skills: 17
+Groups: 5 · Skills: 16
 
 Code: [Not implemented](#)
 
 Geographic representations convey selected positions, attributes and relationships through maps, globes, sketches, coordinates, imagery and spatial data. Competence includes interpretation and purposeful creation while acknowledging selection, measurement, projection and source limitations.
 
-#### Map Conventions
+#### Map Design and Conventions
 
 Skills: 4
 
 Code: [Not implemented](#)
 
-Maps communicate through agreed visual devices rather than reproducing the ground exactly. Titles, legends, orientation, and scale provide distinct information necessary for interpretation.
+Creating and interpreting maps requires deliberate choices of symbols, legends, orientation, scale and labels. Conventions allow readers to infer geographic meaning from an authored representation without treating a map as a literal replica of the ground.
 
 ##### Interpret conventional map symbols through a legend
 
@@ -228,13 +228,13 @@ Code: [Not implemented](#)
 
 The graticule provides a worldwide angular reference for positions. Latitude and longitude are distinct measurements whose ordered combination identifies a location.
 
-##### Interpret latitude as position north or south of the Equator
+##### Interpret latitude
 
 Code: [Not implemented](#)
 
 Recognize the Equator as zero latitude and compare how far a point lies toward either pole.
 
-##### Interpret longitude as position east or west of the prime meridian
+##### Interpret longitude
 
 Code: [Not implemented](#)
 
@@ -248,7 +248,7 @@ Use both coordinates in their proper order and hemispheres to identify a geograp
 
 #### Map Types and Thematic Layers
 
-Skills: 4
+Skills: 3
 
 Code: [Not implemented](#)
 
@@ -271,12 +271,6 @@ Match a question to the type of information a map must show: for example, use a 
 Code: [Not implemented](#)
 
 Relate mapped color ranges, symbol sizes, or categories to the underlying variable while respecting units and class boundaries.
-
-##### Compare spatial patterns across two map layers
-
-Code: [Not implemented](#)
-
-Identify where mapped phenomena coincide or differ without assuming that co-location alone establishes causation.
 
 #### Geospatial Technologies
 
@@ -490,7 +484,7 @@ Code: [Not implemented](#)
 
 Relief and unconsolidated surface materials form landscapes that change through weathering, transportation and deposition. This domain examines the recognizable forms and near-surface changes of terrain rather than the internal structure, mineralogy or deep-time evolution of solid Earth.
 
-#### Landforms and Relief
+#### Relief and Elevation
 
 Skills: 3
 
@@ -766,7 +760,7 @@ Code: [Not implemented](#)
 
 Recognize that 'older than this layer' orders events, whereas an estimated age in years gives a measured time range; different evidence and uncertainty apply to each.
 
-#### Mineral Deposits and Resource Geography
+#### Mineral Deposits
 
 Skills: 5
 
@@ -832,7 +826,7 @@ Code: [Not implemented](#)
 
 Infer the land area contributing runoff to an outlet using divides and slopes rather than administrative borders.
 
-#### Oceans, Seas, and Coasts
+#### Marine and Coastal Processes
 
 Skills: 3
 
@@ -1118,7 +1112,7 @@ Code: [Not implemented](#)
 
 Use two dated distributions or observations to describe a change in habitat range, without automatically assigning a single cause.
 
-#### Ecosystem Geography
+#### Ecosystems
 
 Skills: 3
 
@@ -1190,13 +1184,13 @@ Code: [Not implemented](#)
 
 Describe how the relative concentration of population and activity in urban areas can grow and reshape settlement networks, land use and infrastructure, without treating all urban growth as the same process.
 
-#### Territories and Cultural Landscapes
+#### Political Territories
 
-Skills: 3
+Skills: 2
 
 Code: [Not implemented](#)
 
-Political boundaries and culturally meaningful places are human spatial constructions that may overlap imperfectly with physical regions. Geographic names and boundaries can be contested or change over time.
+Jurisdictions organize places using legally and socially defined boundaries that may change over time or be disputed. Political borders may follow rivers or mountains, but they are not the same kind of object as those natural features; cultural-landscape interpretation is covered separately in Cultural Geography.
 
 ##### Distinguish physical features from political boundaries
 
@@ -1209,12 +1203,6 @@ Recognize that a river or mountain is a land feature, while a state boundary is 
 Code: [Not implemented](#)
 
 Relate a municipality or region to a country without equating nested administrative units with continents or biomes.
-
-##### Recognize human influences on a cultural landscape
-
-Code: [Not implemented](#)
-
-Identify visible patterns such as farmland, places of worship, or historic streets without assuming all communities share one culture.
 
 #### Economic Geography
 
@@ -1256,11 +1244,17 @@ Describe how exchange of goods, services and resources links different regions s
 
 #### Cultural Geography
 
-Skills: 3
+Skills: 4
 
 Code: [Not implemented](#)
 
 Languages, practices, built environments and cultural identities form geographic distributions that evolve through human movement and interaction. Geographic interpretation describes spatial patterns and diffusion without assigning one culture to all inhabitants of a territory.
+
+##### Recognize human influences on a cultural landscape
+
+Code: [Not implemented](#)
+
+Identify visible patterns such as farmland, places of worship, or historic streets without assuming all communities share one culture.
 
 ##### Interpret the geographic distribution of cultural characteristics
 
@@ -1348,7 +1342,7 @@ Code: [Not implemented](#)
 
 Geographic investigation turns observations about places into reasoned evidence, maps, comparisons and decisions. It includes asking spatial questions, collecting and scrutinizing data, evaluating alternatives and communicating conclusions rather than memorizing a particular set of locations.
 
-#### Geographic Evidence and Investigation
+#### Evidence and Investigation
 
 Skills: 3
 
@@ -1374,7 +1368,7 @@ Code: [Not implemented](#)
 
 Check coverage, age, resolution, classification, and possible bias before drawing conclusions from a map or dataset.
 
-#### Geographic Decisions and Communication
+#### Decisions and Communication
 
 Skills: 3
 
