@@ -870,165 +870,165 @@ Relate sleep to neural regulation, memory, and restoration of functions without 
 
 Explain the biological functions of reproductive organs, production of sex cells, and the role of fertilization in human sexual reproduction, distinguishing physiological facts from individual differences in development.
 
-### Екологія
+### Ecology
 
 Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
-Залежності між організмами, популяціями, неживими чинниками й потоками речовин та енергії; наслідки порушень цих зв'язків. Географічне розміщення природних зон і кліматичні процеси належать до Geography.
+Dependencies among organisms, populations, nonliving factors, and flows of matter and energy, together with the consequences of disrupted relationships. The geographical distribution of natural zones and climate processes belongs to Geography.
 
-#### Середовища існування
+#### Habitats
 
 Skills: 4
 
 [Not implemented](#)
 
-Температура, вода, світло, інші організми й ресурси впливають на можливості виживання конкретного виду.
+Temperature, water, light, other organisms, and resources affect the survival prospects of a particular species.
 
-##### Визначати середовище існування організму
-
-[Not implemented](#)
-
-Описувати типові умови, у яких вид знаходить необхідні ресурси та може відтворюватися.
-
-##### Співвідносити будову організму з умовами середовища
+##### Identify an Organism’s Habitat
 
 [Not implemented](#)
 
-Пояснювати на рівні екологічної ніші, як будова організмів впливає на використання ресурсів і виживання за конкретних екологічних чинників. На відміну від ботанічного аналізу окремих органів рослини, тут оцінюється відповідність організму його середовищу та екологічній ролі.
+Describe typical conditions in which a species finds essential resources and can reproduce.
 
-##### Визначати біотичні та абіотичні чинники
-
-[Not implemented](#)
-
-Розрізняти вплив інших організмів та вплив води, світла, ґрунту або температури.
-
-##### Прогнозувати реакцію організму на зміну середовища
+##### Relate Organism Structure to Environmental Conditions
 
 [Not implemented](#)
 
-Передбачати, як зміна доступного ресурсу чи температури змінить поведінку, ріст або виживання виду.
+Explain, at the level of ecological niches, how organisms’ structures affect resource use and survival under particular environmental factors. Unlike botanical analysis of individual plant organs, this competency assesses how an organism fits its environment and ecological role.
 
-#### Харчові зв’язки
+##### Identify Biotic and Abiotic Factors
+
+[Not implemented](#)
+
+Distinguish influences from other organisms from influences of water, light, soil, or temperature.
+
+##### Predict an Organism’s Response to Environmental Change
+
+[Not implemented](#)
+
+Predict how a change in available resources or temperature will alter the behavior, growth, or survival of a species.
+
+#### Feeding Relationships
 
 Skills: 5
 
 [Not implemented](#)
 
-Речовини й енергія переходять між живими організмами, а редуценти повертають речовини до середовища; порушення зв'язку впливає на наступні ланки.
+Matter and energy pass between organisms, and decomposers return matter to the environment; a disrupted relationship affects subsequent links.
 
-##### Розрізняти продуцентів і консументів
-
-[Not implemented](#)
-
-Встановлювати, які організми самі утворюють органічні речовини з неорганічних, а які отримують їх, споживаючи інші організми.
-
-##### Розпізнавати редуцентів
+##### Distinguish Producers and Consumers
 
 [Not implemented](#)
 
-Визначати роль бактерій, грибів та інших розкладачів у перетворенні мертвих органічних решток.
+Determine which organisms produce organic substances from inorganic ones and which obtain them by consuming other organisms.
 
-##### Складати простий ланцюг живлення
-
-[Not implemented](#)
-
-Правильно розташовувати напрям передавання речовин і енергії між продуцентом та споживачами.
-
-##### Пояснювати харчові мережі
+##### Recognize Decomposers
 
 [Not implemented](#)
 
-Пояснювати, як взаємопов'язані ланцюги живлення утворюють мережу з кількома джерелами їжі для одного виду та кількома шляхами передавання речовин і енергії; відрізняти мережу від одного лінійного ланцюга.
+Identify the role of bacteria, fungi, and other decomposers in transforming dead organic remains.
 
-##### Пояснювати потік енергії в екосистемі
+##### Construct a Simple Food Chain
 
 [Not implemented](#)
 
-Пояснювати односпрямоване проходження енергії через продуцентів, консументів і редуцентів, її перетворення та розсіювання у вигляді тепла; не плутати потік енергії з кругообігом речовин.
+Correctly arrange the direction of matter and energy transfer between a producer and consumers.
 
-#### Взаємодії організмів
+##### Explain Food Webs
+
+[Not implemented](#)
+
+Explain how interconnected food chains form a network with several food sources for one species and multiple paths for matter and energy transfer; distinguish a web from a single linear chain.
+
+##### Explain Energy Flow in an Ecosystem
+
+[Not implemented](#)
+
+Explain one-way energy transfer through producers, consumers, and decomposers, energy transformations, and dissipation as heat; do not confuse energy flow with matter cycling.
+
+#### Interactions Among Organisms
 
 Skills: 4
 
 [Not implemented](#)
 
-Організми можуть використовувати один одного як ресурс, конкурувати або взаємно допомагати; характер зв'язку визначається наслідками для учасників.
+Organisms may use one another as resources, compete, or benefit one another; the nature of an interaction is determined by its consequences for those involved.
 
-##### Розпізнавати хижацтво
-
-[Not implemented](#)
-
-Відрізняти поїдання одного організму іншим від конкуренції за спільний ресурс.
-
-##### Розпізнавати конкуренцію
+##### Recognize Predation
 
 [Not implemented](#)
 
-Розпізнавати ситуації, коли обмежена їжа, світло чи територія знижують доступність ресурсу для інших.
+Distinguish consumption of one organism by another from competition over a shared resource.
 
-##### Розпізнавати взаємовигідні зв’язки
-
-[Not implemented](#)
-
-Виявляти випадки, коли взаємодія підвищує пристосованість обох видів, а не лише одного.
-
-##### Пояснювати роль запилювачів у взаємодії видів
+##### Recognize Competition
 
 [Not implemented](#)
 
-Пояснювати, як перенесення пилку твариною пов'язане з розмноженням рослини й ресурсами запилювача.
+Recognize situations in which limited food, light, or territory reduces resource availability to others.
 
-#### Екосистеми та біорізноманіття
+##### Recognize Mutually Beneficial Relationships
+
+[Not implemented](#)
+
+Identify interactions that increase the fitness of both species rather than only one.
+
+##### Explain the Role of Pollinators in Species Interactions
+
+[Not implemented](#)
+
+Explain how an animal’s transfer of pollen relates to plant reproduction and to the pollinator’s resources.
+
+#### Ecosystems and Biodiversity
 
 Skills: 7
 
 [Not implemented](#)
 
-Окремі особини, популяції та угруповання пов'язані між собою та з неживими чинниками. Зміни складу видів чи доступності ресурсів можуть спричиняти непрямі наслідки для всієї екосистеми, тому важливо розуміти ці зв'язки та роль біорізноманіття.
+Individual organisms, populations, and communities interact with one another and with nonliving factors. Changes in species composition or resource availability can have indirect consequences for an entire ecosystem, making these relationships and the role of biodiversity important to understand.
 
-##### Розрізняти організм, популяцію й угруповання
-
-[Not implemented](#)
-
-Відрізняти одну особину від сукупності особин виду на території та від спільноти різних видів.
-
-##### Розпізнавати природні угруповання України
+##### Distinguish an Organism, Population, and Community
 
 [Not implemented](#)
 
-Визначати типові поєднання рослин, тварин і умов у лісі, степу, луці чи водоймі України.
+Distinguish a single individual from individuals of one species in an area and from a community composed of different species.
 
-##### Пояснювати взаємозалежність компонентів екосистеми
-
-[Not implemented](#)
-
-Пояснювати, що організми, популяції та неживі чинники екосистеми пов'язані харчовими й іншими взаємодіями: зміна чисельності виду, зникнення хижака, поява інвазивного організму або нестача ресурсу може впливати на інших учасників і стан системи. На конкретних прикладах описувати як прямі, так і непрямі наслідки, не оголошуючи вид «корисним» чи «шкідливим» лише за тим, кого він поїдає.
-
-##### Пояснювати значення біорізноманіття
+##### Recognize Natural Communities of Ukraine
 
 [Not implemented](#)
 
-Пояснювати, чому різноманітність ролей і зв'язків може підтримувати стійкість екосистеми до змін.
+Identify characteristic combinations of plants, animals, and conditions in Ukrainian forests, steppes, meadows, or bodies of water.
 
-##### Визначати чинники загрози для місцевих видів
-
-[Not implemented](#)
-
-Відрізняти втрату середовища, забруднення, надмірне вилучення та інвазивні види як чинники загроз.
-
-##### Обґрунтовувати охорону видів, занесених до Червоної книги
+##### Explain the Interdependence of Ecosystem Components
 
 [Not implemented](#)
 
-Пояснювати, чому види, занесені до національних або регіональних Червоних книг, потребують природоохоронної уваги залежно від загроз і стану популяцій. Розрізняти правовий та інформаційний статус конкретної Червоної книги й міжнародний Червоний список МСОП: ці переліки не тотожні.
+Explain how organisms, populations, and nonliving ecosystem factors are linked by feeding and other interactions: a change in species abundance, disappearance of a predator, arrival of an invasive organism, or shortage of a resource may affect other participants and the system as a whole. Describe both direct and indirect consequences in particular examples without declaring a species 'beneficial' or 'harmful' merely because of what it eats.
 
-##### Пояснювати кругообіг речовин в екосистемі
+##### Explain the Importance of Biodiversity
 
 [Not implemented](#)
 
-Пояснювати повторне використання хімічних елементів і сполук між організмами та абіотичним середовищем через поглинання, живлення, виділення й розкладання; відрізняти циклічний рух речовин від односпрямованого потоку енергії.
+Explain why a diversity of ecological roles and relationships can support ecosystem resilience in the face of change.
+
+##### Identify Threats to Local Species
+
+[Not implemented](#)
+
+Distinguish habitat loss, pollution, excessive harvesting or removal, and invasive species as threat factors.
+
+##### Justify Protection of Species Listed in Red Data Books
+
+[Not implemented](#)
+
+Explain why species listed in national or regional Red Data Books require conservation attention in light of threats and population status. Distinguish the legal and informational status of a particular Red Data Book from the international IUCN Red List: these lists are not equivalent.
+
+##### Explain Matter Cycling in Ecosystems
+
+[Not implemented](#)
+
+Explain the repeated transfer and reuse of chemical elements and compounds between organisms and the abiotic environment through uptake, feeding, excretion, and decomposition; distinguish cyclical matter movement from one-way energy flow.
 
 ### Генетика та еволюція
 
