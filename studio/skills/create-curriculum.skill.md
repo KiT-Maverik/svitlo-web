@@ -38,7 +38,7 @@ Clarify optional constraints when they matter: language(s) of output, locale/cul
 ## SOURCE OF TRUTH: SKILLS TAXONOMY
 
 - **Canonical inventory:** `<PackageRoot>/docs/skills/taxonomy.md`, as defined by [Create Skills Taxonomy Skill](./create-skills-taxonomy.skill.md). Read the relevant Domain, Group and Skill headings and their explanatory paragraphs directly from this file; there are no separate Skill Definition files.
-- Every taxonomy entry contains the permanent editorial meaning and a single optional implementation `Code` link. Missing Code does not block Curriculum planning. Preserve traceability to the taxonomy without copying runtime identifiers or treating TypeScript Code as the semantic source.
+- Every taxonomy entry contains the permanent editorial meaning and a single optional, unlabeled implementation link. Missing Code does not block Curriculum planning. Preserve traceability to the taxonomy without copying runtime identifiers or treating TypeScript Code as the semantic source.
 - **Check every referenced file exists** and refers to the intended entity. Resolve Markdown links relative to the *generated Curriculum or brief file*, **never** relative to this instruction file.
 - Taxonomy **editorial approval** is distinct from runtime implementation and learner mastery. If approval or the meaning of an in-scope entity is unresolved, report a blocker; do not rely on a nonexistent per-entity Draft/Approved status.
 - Prefer a **specific Skill** as a learning target. Link to a SkillGroup or SkillDomain only for genuinely broad context or prerequisites, and make the intended breadth explicit.
@@ -87,7 +87,7 @@ A Curriculum is ready for editorial review only when:
 
 - The briefing and approved canonical `<PackageRoot>/docs/skills/taxonomy.md` (including relevant entity descriptions) are actually read.
 - The plan covers requested outcomes without invented or unverifiable competencies.
-- Every Skill reference points to the real canonical **Skills Taxonomy** and matches an existing named entry. The taxonomy's Code link may remain `[Not implemented](#)`; a Curriculum need not duplicate it.
+- Every Skill reference points to the real canonical **Skills Taxonomy** and matches an existing named entry. The taxonomy's implementation link may remain `[Not implemented](#)`; a Curriculum need not duplicate it.
 - The order is pedagogically defensible, and required prior learning is available or explicitly identified as a gap.
 - Outcomes are observable, specific, appropriate for the audience, and consistent across the Curriculum, modules, and lessons.
 - Subject claims, examples, and calculations are accurate; uncertain or contested material is identified for review.
@@ -110,6 +110,8 @@ Allowed records:
 - SkillDomain: **%SKILL_DOMAIN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
 
 Choose only applicable types. All names must match the approved taxonomy exactly. Link to the existing taxonomy file relative to the actual Curriculum; an entry-specific verified Markdown anchor may be used if helpful. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
+
+**File-link formatting (authoring guidance):** The Module and Lesson runtime Code slots in the template are **standalone Markdown links with no `Code:` prefix**. If unimplemented, leave exactly `[Not implemented](#)`; if implemented, replace with a verified relative link whose visible text is the **entire real filename, including suffixes and extension** (for example, `[intro.data.ts](%VERIFIED_RELATIVE_PATH%)`). The same full-filename display convention applies to any implemented Definition link. Keep a Definition slot distinct from its Code slot; never fabricate either target.
 
 **Never include this authoring guidance or template notes in the produced Curriculum document.**
 
@@ -149,13 +151,13 @@ Dependencies: %UNRESOLVED_DEPENDENCIES_OR_GAPS%
 
 ### %MODULE_INDEX_NUMBER% - %MODULE_NAME%
 Definition: %Module Markdown document link. Default [Not implemented](#). Replace only with a verified file link.%
-Code: %Module runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
+[Not implemented](#)
 Goal: %MODULE_GOAL% 
 %Module description in a form of a detailed reasonably long text.%
 
 #### %LESSON_INDEX_NUMBER% - %LESSON_NAME%
 Definition: %Lesson Markdown document/learning brief link. Default [Not implemented](#). Replace only with a verified file link.%
-Code: %Lesson runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
+[Not implemented](#)
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:

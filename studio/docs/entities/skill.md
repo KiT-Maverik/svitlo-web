@@ -12,6 +12,7 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 4. A third integration Skill C is justified only when choosing between A and B or understanding their relationship is independently meaningful. A Question or Lesson using both A and B does not automatically require C.
 5. Changing numbers, media, presentation, hints or assessment mechanics normally changes a Question variant, not the Skill identity.
 6. Never silently split, merge, rename or move an approved competency. Surface unclear cases for editorial review first.
+7. **Skill names and their canonical definitions must be independent of learning depth, grade, age, curriculum tier, teaching method, assessment format and permitted mathematical formalism.** Define the complete subject-specific competency. Each Curriculum decides how deeply and in which form that competency is taught and evaluated; none of these limits may be embedded in the Skill's identity or explanation.
 
 **Examples:** multiplying and dividing may be independent; an exercise requiring both can reference both Skill IDs; explaining their inverse relationship may be a separate Skill only if explicitly warranted. Classifying even versus odd can be one coherent ability. `2 × 7` is an exercise variation, not a dedicated Skill.
 
@@ -44,10 +45,10 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 `<PackageRoot>/docs/skills/taxonomy.md` is the **permanent, sole editorial definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy (or the approved direct Domain → Skill exception). The explanatory prose appears immediately below the heading and implementation link **without a `Description:` label**. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
 
-Do not copy a Skill heading into its description. Explain the subject-specific ability, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
+Do not copy a Skill heading into its description. Explain the subject-specific competency, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
 
 The current shared-engine `Skill_Config` contains a stable `id` and localized `name`, not `description`. The builder adds `collection`; `fileLocation` belongs to separate indexing work, not assumed implemented. **Do not introduce a runtime description field** by copying taxonomy prose.
 
-The taxonomy links to canonical `*.data.ts` via `Code` when fully implemented, otherwise `Code: [Not implemented](#)`. UUID literals and identity dictionaries belong in `*.ids.ts`, never Markdown.
+The taxonomy contains one standalone implementation link per entity to its verified canonical `*.data.ts` file (full filename displayed); otherwise it contains exactly `[Not implemented](#)` without a field label. UUID literals and identity dictionaries belong in `*.ids.ts`, never Markdown.
 
 Related entities: [SkillGroup](./skill-group.md), [SkillDomain](./skill-domain.md).
