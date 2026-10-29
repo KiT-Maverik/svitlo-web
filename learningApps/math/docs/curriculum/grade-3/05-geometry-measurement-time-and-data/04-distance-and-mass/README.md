@@ -11,4 +11,4 @@
 - `math.measure.centner-kilogram` — `3eb50b43-90c3-4a4a-ae8b-1cfa460fab1d`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

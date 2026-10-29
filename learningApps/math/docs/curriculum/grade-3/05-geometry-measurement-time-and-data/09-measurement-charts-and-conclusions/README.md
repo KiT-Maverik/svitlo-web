@@ -11,4 +11,4 @@
 - `math.data.interpret-conclusion` — `57c71e4d-0641-42e2-856d-b2282f308374`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

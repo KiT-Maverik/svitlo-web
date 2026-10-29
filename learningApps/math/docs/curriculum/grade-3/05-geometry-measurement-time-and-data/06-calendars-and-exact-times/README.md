@@ -11,4 +11,4 @@
 - `math.time.read-minute` — `ab684748-6981-419e-aa30-525ae9dfc017`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

@@ -11,4 +11,4 @@
 - `math.problems.increase-decrease-factor` — `863bc70e-c4f5-4ca2-b65d-94d69638c09d`
 
 ---
-[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

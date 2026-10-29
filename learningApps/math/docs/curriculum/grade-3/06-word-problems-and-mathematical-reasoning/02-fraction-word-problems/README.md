@@ -10,4 +10,4 @@
 - `math.problems.fractions-context` — `44334f70-1eba-4175-8396-dfe9a735b9d2`
 
 ---
-[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

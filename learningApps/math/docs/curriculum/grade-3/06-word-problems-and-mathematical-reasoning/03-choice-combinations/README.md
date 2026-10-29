@@ -10,4 +10,4 @@
 - `math.problems.correspondence-combinations` — `e2a50956-57c9-44c5-a871-6ce071a147be`
 
 ---
-[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

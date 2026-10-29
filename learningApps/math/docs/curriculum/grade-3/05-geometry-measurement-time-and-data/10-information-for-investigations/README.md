@@ -11,4 +11,4 @@
 - `math.data.missing-information` — `893df2c3-30b3-48b7-a961-11378d742022`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

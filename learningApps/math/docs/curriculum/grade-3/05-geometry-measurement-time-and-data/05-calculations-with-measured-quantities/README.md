@@ -12,4 +12,4 @@
 - `math.measure.word-problems-measures` — `64050aaa-4552-4d11-a947-c922f51e89f8`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

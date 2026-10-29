@@ -10,4 +10,4 @@
 - `math.geometry.grid-map-navigation` — `43b1fdd6-0846-4c0c-a01b-375a6fec3b2f`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

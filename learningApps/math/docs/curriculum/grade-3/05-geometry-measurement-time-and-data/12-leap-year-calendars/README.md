@@ -10,4 +10,4 @@
 - `math.time.leap-year-days` — `653b69ae-2576-4b9c-a2af-959bb675b8d1`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

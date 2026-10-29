@@ -11,4 +11,4 @@
 - `math.money.budget-constraint` — `945f887d-4370-42b0-aefa-02a88a06f6d8`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

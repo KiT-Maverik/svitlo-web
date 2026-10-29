@@ -12,4 +12,4 @@
 - `math.time.find-start-or-end` — `f98b80c1-0692-4ac2-a254-95a20ab13686`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

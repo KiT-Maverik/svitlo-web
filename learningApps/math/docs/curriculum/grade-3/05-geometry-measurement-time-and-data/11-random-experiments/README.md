@@ -11,4 +11,4 @@
 - `math.probability.experiment-variation` — `90f7775d-bb0d-4b7b-85fd-d56870116d3f`
 
 ---
-[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Геометрія, величини, час і дані](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)
