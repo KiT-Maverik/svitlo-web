@@ -10,4 +10,4 @@
 - `math.measure.milliliter` — `70f67012-b08c-4ef5-b45e-1fcc9a2dff3d`
 
 ---
-[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

@@ -10,4 +10,4 @@
 - `math.reasoning.distinguish-example-rule` — `a7426dcb-f817-41c5-bc9e-47244ea5301b`
 
 ---
-[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

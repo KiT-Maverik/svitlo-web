@@ -10,4 +10,4 @@
 - `math.geometry.angle-types` — `3b0bc126-23d9-4350-82f3-11df0c34b571`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

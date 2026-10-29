@@ -10,4 +10,4 @@
 - `math.data.scaled-chart` — `97aeb6ee-f087-4793-a9e4-60129d11d974`
 
 ---
-[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

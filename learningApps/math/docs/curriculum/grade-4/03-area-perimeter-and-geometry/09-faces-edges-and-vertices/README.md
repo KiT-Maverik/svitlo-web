@@ -10,4 +10,4 @@
 - `math.geometry.spatial-solids-attributes` — `3eec373e-4fff-46e8-a601-fc91759934f0`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

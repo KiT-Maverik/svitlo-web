@@ -10,4 +10,4 @@
 - `math.measure.temperature-read` — `3987a9c5-a8df-44e1-86e4-373aeebd9d02`
 
 ---
-[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

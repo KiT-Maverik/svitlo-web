@@ -10,4 +10,4 @@
 - `math.geomeasure.composite-area` — `8dedc81b-faae-489e-9d3c-14331920224e`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

@@ -11,4 +11,4 @@
 - `math.geomeasure.area-perimeter-contrast` — `1c1b7595-df14-4cb6-aa67-0831d6c4425d`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

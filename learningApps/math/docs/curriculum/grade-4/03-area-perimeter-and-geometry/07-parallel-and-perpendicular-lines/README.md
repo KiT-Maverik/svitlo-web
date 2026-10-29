@@ -10,4 +10,4 @@
 - `math.geometry.parallel-perpendicular` — `983869b9-b9aa-4053-b0fb-be6c3430cff1`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

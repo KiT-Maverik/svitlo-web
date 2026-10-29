@@ -10,4 +10,4 @@
 - `math.geomeasure.unknown-side-from-perimeter` — `41da7699-fdbd-4872-bb37-615a456a92c3`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

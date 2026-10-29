@@ -12,4 +12,4 @@
 - `math.data.interpret-conclusion` — `57c71e4d-0641-42e2-856d-b2282f308374`
 
 ---
-[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

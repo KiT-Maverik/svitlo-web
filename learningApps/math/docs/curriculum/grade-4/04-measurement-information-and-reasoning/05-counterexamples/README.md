@@ -10,4 +10,4 @@
 - `math.reasoning.find-counterexample` — `dde55a58-c038-4375-9b1d-b9ecfb4a9219`
 
 ---
-[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Величини, інформація, аргументація](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)
