@@ -15,6 +15,16 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 
 **Examples:** multiplying and dividing may be independent; an exercise requiring both can reference both Skill IDs; explaining their inverse relationship may be a separate Skill only if explicitly warranted. Classifying even versus odd can be one coherent ability. `2 × 7` is an exercise variation, not a dedicated Skill.
 
+## MANDATORY EDITOR REVIEW: SKILL OR ASSESSMENT FORMAT?
+
+A candidate is **not** a Skill merely because a learner can perform an observable action. A **Question / Practice task** is an instance of eliciting evidence; a **Skill** is the independently meaningful knowledge or capability such tasks are intended to assess. One Skill can be assessed by many question types, and one Question can draw on several Skills. A change of UI, visual medium, content example, or response format does not by itself establish an additional competency.
+
+**Non-negotiable escalation:** If a proposed or existing Skill could instead be (a) sorting/matching/ordering/drag-and-drop, use of a key or diagram, or another Question/Scene procedure, (b) a comparison of two already defined concepts, (c) a narrower example of a broader Skill, or (d) a generic transferable procedure with a subject-themed example, the author **must raise a specific question for explicit human editorial review**. The author may recommend an outcome but **must not independently finalize** its creation, removal, renaming, merging or placement, even when the author is confident in that recommendation.
+
+**Evidence to present:** candidate title and location; concrete Question/Practice example; underlying disciplinary knowledge; existing Skill(s) the task might assess; whether the capability would remain independently assessable with a different interaction; and alternative outcomes (**retain a standalone Skill / assess using existing Skills via Question / cross-subject Skill / further research**). Ask the editor which option to approve. Until the editor answers, mark the candidate `PENDING EDITOR DECISION`, preserve existing approved IDs, and block dependent code generation or claims of final taxonomy approval. See the mandatory gate in [Create Skills Taxonomy](../../skills/create-skills-taxonomy.skill.md).
+
+**Biology editorial precedent (2026-10-29):** “Group mammals and reptiles into piles”, “choose a grouping criterion” and “apply a simple identification key” were removed as *separate Biology Skill IDs*, not as learning activities. Their Questions can assess existing animal-identification Skills. “Compare selection and genetic modification” reuses the two respective concept Skills; a predator-removal scenario can assess ecosystem interdependence. **Do not generalize this into an automatic ban on classification, identification keys, comparison or modeling:** a genuinely independent disciplinary competence may justify its own Skill if the editor approves the evidence.
+
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
 - A Skill has exactly one primary catalog parent: ordinarily a SkillGroup, or exceptionally a SkillDomain with no Groups. It may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics without duplicate ownership.
