@@ -1738,7 +1738,7 @@ Code: [Code](../../src/data/skillsTaxonomy/time/clock/skills/readMinute.data.ts)
 
 Запис 09:17 показує сімнадцять хвилин після дев’ятої; кожна хвилинна поділка має окрему вагу.
 
-#### Тривалість
+#### Duration
 
 Skills: 4
 
@@ -1746,31 +1746,31 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/duration.data.ts)
 
-##### Застосовувати співвідношення 1 год = 60 хв
+##### Converting hours and minutes
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/convertHoursMinutes.data.ts)
 
 Проміжок у півтори години дорівнює 90 хвилинам; одиниці переводять за коефіцієнтом 60.
 
-##### Застосовувати співвідношення 1 хв = 60 с
+##### Converting minutes and seconds
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/convertMinutesSeconds.data.ts)
 
 Дві хвилини дорівнюють 120 секундам; секундний інтервал не слід плутати з показом секундної стрілки.
 
-##### Знаходити тривалість події за часом початку та завершення
+##### Calculating elapsed time
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/eventDuration.data.ts)
 
 Від 10:15 до 11:00 проходить 45 хвилин; тривалість — різниця двох моментів, не сам показ годинника.
 
-##### Знаходити час початку чи завершення за тривалістю події
+##### Finding a start or end time from a duration
 
 Code: [Code](../../src/data/skillsTaxonomy/time/duration/skills/findStartOrEnd.data.ts)
 
 Подія тривалістю 35 хв, що почалася о 14:10, завершується о 14:45; зворотно можна визначити початок.
 
-### Гроші
+### Money
 
 Groups: 2 · Skills: 6
 
@@ -1778,7 +1778,7 @@ Code: [Code](../../src/data/skillsTaxonomy/money/money.data.ts)
 
 Застосовує арифметику до грошових номіналів, складання та порівняння сум, розрахунків вартості, решти й вибору покупок у межах бюджету.
 
-#### Грошові суми
+#### Money amounts
 
 Skills: 3
 
@@ -1786,25 +1786,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/denominations.data.ts)
 
-##### Розпізнавати номінали монет і купюр заданої валюти
+##### Recognizing coin and banknote denominations
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/recognizeDenominations.data.ts)
 
 Номінал позначає вартість грошового знака, а не його розмір чи колір; розпізнавання залежить від обраної валюти.
 
-##### Складати задану суму різними комбінаціями грошових одиниць
+##### Composing a money amount
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/composeAmount.data.ts)
 
 Суму 12 одиниць можна отримати як 10 + 2 чи 5 + 5 + 2, якщо відповідні номінали існують.
 
-##### Порівнювати грошові суми в межах однієї валюти
+##### Comparing money amounts
 
 Code: [Code](../../src/data/skillsTaxonomy/money/denominations/skills/compareAmounts.data.ts)
 
 Порівнюють спільну сумарну вартість, а не кількість монет: дві більші можуть коштувати більше за п’ять дрібних.
 
-#### Покупки
+#### Purchases
 
 Skills: 3
 
@@ -1812,25 +1812,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/transactions.data.ts)
 
-##### Знаходити решту після покупки
+##### Calculating change
 
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/calculateChange.data.ts)
 
 Якщо товар коштує 37, а сплачено 50, повернути слід 13 грошових одиниць тієї самої валюти.
 
-##### Розв’язувати задачі на ціну, кількість і загальну вартість
+##### Calculating total cost from unit price and quantity
 
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/unitPriceTotal.data.ts)
 
 За ціни 8 за одиницю три однакові предмети коштують 24; задача відрізняє одиничну ціну від загальної суми.
 
-##### Вибирати покупки з урахуванням заданого бюджету
+##### Choosing purchases within a budget
 
 Code: [Code](../../src/data/skillsTaxonomy/money/transactions/skills/budgetConstraint.data.ts)
 
 За бюджету 40 набір товарів вартістю 43 недоступний, навіть якщо кожен предмет окремо дешевший за 40.
 
-### Дані
+### Data
 
 Groups: 3 · Skills: 15
 
@@ -1838,7 +1838,7 @@ Code: [Code](../../src/data/skillsTaxonomy/data/data.data.ts)
 
 Охоплює формулювання запитань, збирання та класифікацію відомостей, їх подання в таблицях і діаграмах та обґрунтовані висновки за ними.
 
-#### Збирання даних
+#### Data collection
 
 Skills: 5
 
