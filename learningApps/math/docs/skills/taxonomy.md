@@ -1188,303 +1188,303 @@ Code: [Code](../../src/data/skillsTaxonomy/algebra/formalization/skills/translat
 
 The situation 'three boxes with five pencils each' is represented by 3 × 5. The notation must match the relationship described in the problem.
 
-### Геометрія
+### Geometry
 
 Groups: 10 · Skills: 35
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/geometry.data.ts)
 
-Охоплює просторові відношення, властивості плоских і об’ємних фігур, лінії й кути, геометричні перетворення, а також вимірювання периметра та площі.
+This domain includes spatial relationships, properties of plane and solid figures, lines and angles, geometric transformations, and measurements of perimeter and area.
 
-#### Просторова орієнтація
+#### Spatial orientation
 
 Skills: 3
-
-Словесні описи відносних положень і руху, маршрути за інструкціями та координування на простій сітці.
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/orientation.data.ts)
 
-##### Описувати положення об’єкта: ліворуч, праворуч, вище, нижче, між, перед, за
+Relative-position language and sequential directions support route planning, describing movement, and locating positions on simple grids.
+
+##### Describing relative positions
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/positionWords.data.ts)
 
-Опис «ліворуч від дерева, перед будинком» залежить від точки відліку; взаємне положення не тотожне абсолютній координаті.
+'Left of the tree, in front of the house' depends on a reference position. A relative description is not the same as an absolute coordinate.
 
-##### Читати й складати простий план на сітці та описувати шлях/позицію
+##### Reading and drawing simple grid maps
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/gridMapNavigation.data.ts)
 
-На сітці маршрут складають із переходів між клітинками чи вузлами; кінцеве місце має відповідати вихідним напрямкам.
+A route on a grid consists of movements between cells or vertices. Its endpoint must be consistent with the stated directions.
 
-##### Складати й виконувати покрокові просторові інструкції маршруту
+##### Giving and following route directions
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/orientation/skills/spatialOrientationPath.data.ts)
 
-Інструкції «два кроки вперед, повернути праворуч» мають виконуватися в заданому порядку, бо перестановка кроків змінює маршрут.
+Instructions such as 'two steps forward, then turn right' must be carried out in sequence, because changing the order can alter the route.
 
-#### Плоскі фігури
+#### Plane figures
 
 Skills: 5
-
-Ознаки багатокутників та інших плоских фігур, незалежні від масштабу й орієнтації, і складання фігур із частин.
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/figures.data.ts)
 
-##### Розпізнавати круг, трикутник, квадрат і прямокутник незалежно від розміру й повороту
+This group identifies polygons and other two-dimensional figures by properties independent of their scale or orientation and explores composing figures from parts.
+
+##### Identifying basic plane figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/identify2dShapes.data.ts)
 
-Повернутий квадрат залишається квадратом; важливі властивості сторін і кутів, а не звичне положення рисунка.
+A square remains a square when rotated. Relationships among its sides and angles, rather than its familiar orientation in a drawing, determine the figure.
 
-##### Класифікувати плоскі фігури за кількістю сторін і вершин
+##### Classifying figures by sides and vertices
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/shapeAttributes.data.ts)
 
-Класифікацію здійснюють за геометричними ознаками: трикутник має три сторони, чотирикутник — чотири.
+Figures are classified using geometric features: a triangle has three sides, while a quadrilateral has four.
 
-##### Розпізнавати многокутник і визначати його вершини та сторони
+##### Recognizing polygons and their parts
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/polygon.data.ts)
 
-Многокутник обмежений відрізками; кожна точка сполучення сусідніх сторін є вершиною.
+A polygon is bounded by straight segments, and the meeting point of two neighboring sides is a vertex.
 
-##### Пояснювати властивості трикутника, прямокутника та квадрата
+##### Properties of triangles, rectangles and squares
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/triangleRectangleSquare.data.ts)
 
-Квадрат є також прямокутником, оскільки має чотири прямі кути; додаткова властивість — рівність усіх сторін.
+Every square is also a rectangle because it has four right angles. A square additionally has four equal sides.
 
-##### Складати нову фігуру з частин і розкладати складену фігуру на прості
+##### Composing and decomposing plane figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/figures/skills/composeDecomposeShapes.data.ts)
 
-З двох трикутників можна скласти іншу плоску фігуру; при розбитті початковий контур змінюється, але частини разом зберігають площину.
+Two triangles can be combined into another plane figure. Decomposing a shape changes its partition while the pieces collectively preserve its covered region.
 
-#### Просторові тіла
+#### Solid figures
 
 Skills: 3
-
-Відмінності об’ємних тіл від плоских зображень, їхні поверхні, грані, ребра та вершини.
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/solids.data.ts)
 
-##### Впізнавати плоскі фігури на гранях/поверхнях просторових тіл
+Three-dimensional solids differ from flat drawings and may have faces, curved surfaces, edges, and vertices.
+
+##### Identifying plane figures on solid surfaces
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/shapeOnSolidSurface.data.ts)
 
-Квадрат на грані куба — плоска частина об’ємного тіла; не слід називати весь куб квадратом.
+A square face belongs to a three-dimensional cube. The entire cube should not be described as a square.
 
-##### Розпізнавати куб, кулю, циліндр, конус та інші базові просторові тіла
+##### Identifying basic solid figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/identify3dSolids.data.ts)
 
-Куля не має плоских граней, а куб складається з них; зовнішній контур на рисунку не завжди достатній для розпізнавання.
+A sphere has no flat faces, whereas a cube is made of them. The outer silhouette in a drawing may be insufficient to identify a solid.
 
-##### Описувати грані, ребра й вершини куба та прямокутного паралелепіпеда
+##### Faces, edges and vertices of cubes and cuboids
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/solids/skills/spatialSolidsAttributes.data.ts)
 
-Для куба рахують шість граней, дванадцять ребер і вісім вершин, відрізняючи видимі елементи від усіх наявних.
+A cube has six faces, twelve edges, and eight vertices. All must be counted, not only those visible in a particular drawing.
 
-#### Лінії
+#### Lines
 
 Skills: 5
 
-Точки, прямі, промені, відрізки й інші види ліній, їхні частини, взаємне положення і спосіб зображення.
-
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/lines.data.ts)
 
-##### Розрізняти точку, пряму, криву й ламану
+This group distinguishes points, straight and curved lines, rays, and segments, including their endpoints and relative positions.
+
+##### Distinguishing points and line types
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/linesAndPoints.data.ts)
 
-Точка позначає місце, пряма не має кінців, крива може змінювати напрям, а ламана складається з відрізків.
+A point indicates a position; a straight line extends in both directions; a curve may change direction; and a broken line consists of connected segments.
 
-##### Розпізнавати, будувати й позначати відрізок із кінцевими точками
+##### Constructing and labeling line segments
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/segment.data.ts)
 
-Відрізок обмежений двома кінцями; його можна позначити літерами крайніх точок, наприклад AB.
+A segment has two endpoints and can be labeled with their letters, for example AB.
 
-##### Розрізняти промінь, відрізок і пряму
+##### Distinguishing rays, segments and lines
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/ray.data.ts)
 
-Промінь має початок, але не має другого кінця; відрізок обмежений з обох боків, пряма — з жодного.
+A ray has a starting point and extends without a second endpoint. A segment is bounded at both ends and a line at neither.
 
-##### Розрізняти замкнені й незамкнені лінії
+##### Identifying closed and open lines
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/closedOpenLines.data.ts)
 
-Контур без розриву може бути замкненим, а лінія з різними початком і кінцем — незамкненою.
+A continuous contour can form a closed line, whereas a line with separate start and end points is open.
 
-##### Розпізнавати паралельні та перпендикулярні прямі на рисунках і в довкіллі
+##### Recognizing parallel and perpendicular lines
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/lines/skills/parallelPerpendicular.data.ts)
 
-Рейки однієї колії ілюструють паралельність; суміжні краї зошита в куті ілюструють перпендикулярність.
+Railway tracks illustrate parallel lines; adjacent edges meeting at a notebook corner illustrate perpendicular lines.
 
-#### Кути
+#### Angles
 
 Skills: 3
-
-Кут як геометричне відношення променів і величина повороту, з прямим кутом як орієнтиром для класифікації.
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/angles.data.ts)
 
-##### Інтерпретувати кут як величину повороту й порівнювати кути з прямим
+An angle measures the turning between rays. Right angles provide a reference for classifying smaller and larger turns.
+
+##### Comparing angles as turns
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/angleAsTurn.data.ts)
 
-Поворот на чверть оберту дає прямий кут, на меншу частку — гострий; довжина сторін рисунка не визначає величину кута.
+A quarter turn is a right angle and a smaller turn forms an acute angle. The drawn length of the rays does not determine the angle size.
 
-##### Розпізнавати прямий кут і перевіряти його за еталоном
+##### Identifying and checking right angles
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/rightAngle.data.ts)
 
-Кут аркуша чи косинця є еталоном 90°; зіставлення сторін перевіряє прямокутність незалежно від нахилу.
+The corner of a sheet or set square provides a 90-degree reference; aligning the sides checks a right angle regardless of rotation.
 
-##### Розрізняти гострий, прямий і тупий кути на наочних прикладах
+##### Distinguishing acute, right and obtuse angles
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/angles/skills/angleTypes.data.ts)
 
-Порівнюють розкриття променів із прямим кутом: менше нього — гострий, більше, але менше розгорнутого — тупий.
+An acute angle is smaller than a right angle, while an obtuse angle is larger but smaller than a straight angle.
 
-#### Коло
+#### Circles and disks
 
 Skills: 3
-
-Коло як межа круга; центр, радіус, діаметр та побудова фігури за сталою відстанню від центру.
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/circles.data.ts)
 
-##### Розрізняти коло та круг
+This group distinguishes the circular boundary from its interior and describes the center, radius, diameter, and compass construction.
+
+##### Distinguishing the circumference and the disk
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/circleDisk.data.ts)
 
-Коло — лише замкнена крива межі, тоді як круг включає всі точки всередині цієї межі.
+The circumference is only the closed boundary curve, while the disk includes the entire area enclosed by that curve.
 
-##### Показувати центр, радіус і діаметр кола та пов’язувати діаметр із двома радіусами
+##### Relating the center, radius and diameter
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/radiusDiameter.data.ts)
 
-Діаметр проходить через центр і має довжину двох радіусів; усі радіуси одного кола рівні.
+A diameter passes through the center and is twice the length of the radius. Every radius of the same circle has equal length.
 
-##### Будувати коло заданого радіуса циркулем
+##### Drawing circles of a given radius with a compass
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/circles/skills/drawCircle.data.ts)
 
-Під час роботи циркулем розхил фіксує відстань від центру до кожної точки лінії; зміна розхилу дає інший радіус.
+The compass opening fixes the distance between the center and every point on the circumference. Changing the opening changes the radius.
 
-#### Перетворення
+#### Geometric transformations
 
 Skills: 3
 
-Зміни положення фігури поворотом, зсувом і віддзеркаленням, а також симетричність щодо осі.
-
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/transformations.data.ts)
 
-##### Демонструвати чверть-, пів- і три-чверть оберту за і проти годинникової стрілки
+Figures can change position through rotation, translation, or reflection while retaining their dimensions. Reflection introduces symmetry about an axis.
+
+##### Quarter, half and three-quarter turns
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/turnsQuarters.data.ts)
 
-Чверть оберту відповідає 90°, пів оберту — 180°, три чверті — 270°; напрям повороту змінює кінцеве положення.
+Quarter, half, and three-quarter turns correspond to 90, 180, and 270 degrees. Clockwise and counterclockwise rotations may result in different orientations.
 
-##### Виконувати та розпізнавати прості зсуви й віддзеркалення фігури
+##### Translating and reflecting figures
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/translationsReflections.data.ts)
 
-Зсув переміщує всі точки однаково, а віддзеркалення змінює орієнтацію відносно осі; самі розміри не змінюються.
+A translation moves every point by the same displacement; reflection reverses orientation across an axis. Neither transformation alters dimensions.
 
-##### Знаходити вісь симетрії у простих фігурах і добудовувати симетричну частину
+##### Finding symmetry axes and completing reflections
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/transformations/skills/reflectionSymmetry.data.ts)
 
-Відповідні точки симетричних половин лежать на однакових відстанях від осі з різних її боків.
+Corresponding points in reflected halves are equally distant from the line of symmetry, on opposite sides of it.
 
-#### Периметр
+#### Perimeter
 
 Skills: 4
-
-Довжина замкненої межі багатокутника як сума сторін, включно з прямокутником і квадратом.
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/perimeter.data.ts)
 
-##### Вимірювати периметр многокутника як суму довжин сторін
+Perimeter is the length of a polygon's closed boundary, computed from its sides, including rectangles and squares.
+
+##### Measuring a polygon perimeter by adding its sides
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/measurePerimeter.data.ts)
 
-Для фігури зі сторонами 3, 4 і 5 см довжина контуру становить 12 см; внутрішню поверхню тут не вимірюють.
+A figure with sides measuring 3, 4, and 5 cm has a total boundary length of 12 cm. This does not measure its interior surface.
 
-##### Обчислювати периметр прямокутника за довжинами його сторін
+##### Calculating the perimeter of a rectangle
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/rectanglePerimeter.data.ts)
 
-Для сторін a та b обхід прямокутного контуру дає a + b + a + b, а не добуток a × b.
+For side lengths a and b, the rectangular boundary measures a + b + a + b, not the product a × b.
 
-##### Обчислювати периметр квадрата за довжиною сторони
+##### Calculating the perimeter of a square
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/squarePerimeter.data.ts)
 
-У квадрата всі чотири сторони рівні, отже довжину контуру отримують як чотири довжини сторони.
+A square's four equal sides give a perimeter of four times the side length.
 
-##### Знаходити невідому сторону прямокутника за периметром та іншими сторонами
+##### Finding an unknown rectangle side from its perimeter
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/unknownSideFromPerimeter.data.ts)
 
-Якщо периметр прямокутника 20 см, а одна сторона 6 см, решта контуру визначає сторону 4 см.
+If a rectangle's perimeter is 20 cm and one side is 6 cm, the other side must be 4 cm.
 
-#### Площа
+#### Area
 
 Skills: 4
 
-Величина частини площини, яку займає фігура, через одиничні квадрати, прямокутні моделі та розбиття складених форм.
-
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/area.data.ts)
 
-##### Розбивати прямокутну складену фігуру на прямокутники та додавати площі частин
+Area measures the surface covered by a figure, through unit squares, rectangular arrays, and decomposition of composite shapes.
+
+##### Finding the area of a composite rectilinear figure
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/compositeArea.data.ts)
 
-Складену Г-подібну фігуру можна поділити на два прямокутники без перекриттів, після чого підсумувати їхні площі.
+An L-shaped figure can be divided into two non-overlapping rectangles whose areas add to the total.
 
-##### Розуміти площу як міру поверхні, вкритої однаковими одиничними квадратами
+##### Understanding area as coverage by unit squares
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/areaAsCovering.data.ts)
 
-Площа описує заповнення поверхні, тож одиничні квадрати повинні мати однаковий розмір і не перекриватися.
+Equal-sized unit squares must cover the region without gaps or overlaps; the number of squares determines area.
 
-##### Визначати площу простої фігури підрахунком одиничних квадратів
+##### Determining area by counting unit squares
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/countUnitSquares.data.ts)
 
-Якщо фігура охоплює 12 повних одиничних клітинок, її площа дорівнює 12 квадратним одиницям незалежно від форми розташування.
+If a shape covers twelve complete unit cells, its area is twelve square units regardless of how those cells are arranged.
 
-##### Пов’язувати площу прямокутника з добутком довжин його сторін у цілих одиницях
+##### Relating rectangle area to side-length multiplication
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/rectangleAreaModel.data.ts)
 
-Прямокутник із чотирьох рядів по три клітинки займає 12 квадратних одиниць; добуток є скороченим підрахунком клітинок.
+A four-by-three rectangular array contains twelve unit squares. Multiplication is a compact way to count the cells.
 
-#### Зв’язок периметра та площі
+#### Relationship between perimeter and area
 
 Skills: 2
 
-Незалежність вимірювань контуру та внутрішньої поверхні: однакове значення одного не визначає іншого.
-
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/perimeterArea.data.ts)
 
-##### Будувати фігури з однаковим периметром і різними площами або навпаки
+The length of a figure's boundary and the size of its interior are independent measurements. Equal values of one do not determine values of the other.
+
+##### Constructing shapes with contrasting perimeters and areas
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/skills/areaPerimeterContrast.data.ts)
 
-Два прямокутники можуть мати однаковий контур, але різну кількість внутрішніх клітинок; жодна величина не визначає іншу автоматично.
+Two rectangles can have the same perimeter but cover different numbers of unit squares. Neither measure automatically fixes the other.
 
-##### Розрізняти периметр і площу та добирати відповідний спосіб вимірювання
+##### Choosing perimeter or area for a measurement
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/skills/perimeterVsArea.data.ts)
 
-Для огорожі потрібна довжина краю, а для покриття підлоги — внутрішня поверхня; одиниці й способи обчислення різні.
+Fencing needs the boundary's length, while floor covering needs the interior's area. They use different units and calculation methods.
 
 ### Measurement
 
