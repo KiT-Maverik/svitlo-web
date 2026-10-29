@@ -1,17 +1,22 @@
 # Changing the Order of Addends
 
-> **Curriculum: Grade 1 · Addition and Subtraction · Lesson 05**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Addition and Subtraction · Lesson 05**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Пояснює, чому зміна порядку доданків не змінює суму.
+## Learning objective
 
-**Target Skills:**
+Explain why swapping addends preserves the sum.
+
+Rearrange the same groups and compare their unchanged combined quantity.
+
+## Target Skills
 
 - [Addition — Commutative property](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/commutativeAddition.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка збережена.
+[View the six storyboard sections](./Sections/README.md). They specify proposed interactions and feedback, not implemented software or a formal assessment. The full Learning Brief needs separate methodological preparation and review.
 
 ---
-[Addition and Subtraction](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Addition and Subtraction](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

@@ -1,17 +1,22 @@
 # Number Bonds to 10
 
-> **Curriculum: Grade 1 · Addition and Subtraction · Lesson 04**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Addition and Subtraction · Lesson 04**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Добирає різні пари чисел із сумою 10.
+## Learning objective
 
-**Target Skills:**
+Build ten from two complementary parts.
+
+Explore alternative pairs for the same whole and use ten frames to find missing parts.
+
+## Target Skills
 
 - [Addition and subtraction — Bonds of 10](../../../../../src/data/skillsTaxonomy/arithmetic/additionSubtraction/skills/numberBonds10.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка вище зберігається.
+[View the six storyboard sections](./Sections/README.md). They specify proposed interactions and feedback, not implemented software or a formal assessment. The full Learning Brief needs separate methodological preparation and review.
 
 ---
-[Addition and Subtraction](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Addition and Subtraction](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

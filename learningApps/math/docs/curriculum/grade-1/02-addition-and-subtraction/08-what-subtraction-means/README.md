@@ -1,19 +1,24 @@
 # What Subtraction Means
 
-> **Curriculum: Grade 1 · Addition and Subtraction · Lesson 08**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Addition and Subtraction · Lesson 08**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Моделює вилучення, різницю та випадки віднімання нуля і числа від самого себе.
+## Learning objective
 
-**Target Skills:**
+Model subtraction, including subtracting zero or all objects.
+
+Contrast removing a part with joining groups and describe the resulting difference.
+
+## Target Skills
 
 - [Subtraction — Meaning and models](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractMeaning.data.ts)
 - [Subtraction — Zero](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractZero.data.ts)
 - [Subtraction — Same number](../../../../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractSelf.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Методична картка збережена.
+[View the six storyboard sections](./Sections/README.md). They specify proposed interactions and feedback, not implemented software or a formal assessment. The full Learning Brief needs separate methodological preparation and review.
 
 ---
-[Addition and Subtraction](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Addition and Subtraction](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

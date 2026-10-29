@@ -1,18 +1,23 @@
 # Mathematical Equality Means Balance
 
-> **Curriculum: Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 01**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Mathematical Language, Equalities, and Word Problems · Lesson 01**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Визначає, коли дві сторони мають рівні значення.
+## Learning objective
 
-**Target Skills:**
+Understand equality as two expressions with the same value.
+
+Compare both sides of =, including cases where each side contains an operation.
+
+## Target Skills
 
 - [Understanding the equals sign](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/equalityMeaning.data.ts)
 - [Checking numerical equalities and inequalities](../../../../../src/data/skillsTaxonomy/algebra/equalities/skills/trueFalseEquality.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
+[View the six storyboard sections](./Sections/README.md). They specify proposed interactions and feedback, not implemented software or a formal assessment. The full Learning Brief needs separate methodological preparation and review.
 
 ---
-[Mathematical Language, Equalities, and Word Problems](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Mathematical Language, Equalities, and Word Problems](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)

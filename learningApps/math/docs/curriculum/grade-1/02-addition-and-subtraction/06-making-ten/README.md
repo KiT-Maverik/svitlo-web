@@ -1,17 +1,22 @@
 # Making Ten
 
-> **Curriculum: Grade 1 · Addition and Subtraction · Lesson 06**  
-> **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
+> **Curriculum: Mathematics — Grade 1 · Addition and Subtraction · Lesson 06**
+> **Status:** Draft lesson card; a complete methodological Learning Brief has not yet been written.
 
-**Навчальна мета:** Обчислює, використовуючи групування до повного десятка.
+## Learning objective
 
-**Target Skills:**
+Use making ten as a mental addition strategy.
+
+Split one addend to complete a ten, then combine the remaining objects.
+
+## Target Skills
 
 - [Addition — Making ten](../../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/makeTenStrategy.data.ts)
 
-## Сценарій взаємодії (draft)
+## Storyboard (draft)
 
-[Sections — 6 сценарних секцій](./Sections/README.md). Це не повний методичний brief.
+[View the six storyboard sections](./Sections/README.md). They specify proposed interactions and feedback, not implemented software or a formal assessment. The full Learning Brief needs separate methodological preparation and review.
 
 ---
-[Addition and Subtraction](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
+
+[Addition and Subtraction](../README.md) · [Grade 1 Curriculum](../../grade-1.curriculum.md)
