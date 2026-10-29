@@ -10,4 +10,4 @@
 - `math.multiply.check-product` — `3305fde5-63ba-4f32-92a8-42032b805e99`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

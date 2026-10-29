@@ -10,4 +10,4 @@
 - `math.multiply.two-digit-by-one` — `d2a66536-011d-4d97-b85b-707e2b55919d`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

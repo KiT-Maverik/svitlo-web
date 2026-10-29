@@ -11,4 +11,4 @@
 - `math.divide.by-7` — `07df03fa-2c82-4f13-8654-faf0a08145a5`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

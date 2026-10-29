@@ -11,4 +11,4 @@
 - `math.multiply.distributive` — `f8ebb2c5-d8e4-42d5-96ee-71e6ab32269e`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

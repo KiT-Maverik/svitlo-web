@@ -11,4 +11,4 @@
 - `math.multiply.round-hundreds` — `650e7e05-3e7e-4e80-8f0e-e23df595ed22`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

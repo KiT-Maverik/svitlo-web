@@ -10,4 +10,4 @@
 - `math.addsub.associative-addition` — `4754301d-73dc-4b7f-b146-3c8f14a9a3e1`
 
 ---
-[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Обчислення в межах 1000](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

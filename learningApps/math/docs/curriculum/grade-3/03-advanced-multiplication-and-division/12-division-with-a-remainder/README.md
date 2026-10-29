@@ -12,4 +12,4 @@
 - `math.divide.check-quotient` — `5daba1b4-4221-4349-a1a7-c12e209051b1`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

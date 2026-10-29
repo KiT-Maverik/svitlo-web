@@ -11,4 +11,4 @@
 - `math.divide.no-division-by-zero` — `531a8f3a-537c-4e2a-985f-a9b57e7dab9a`
 
 ---
-[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Множення та ділення — наступний рівень](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)
