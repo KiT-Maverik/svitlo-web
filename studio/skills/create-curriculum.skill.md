@@ -64,7 +64,7 @@ Apply the **mandatory review-history policy** in [Methodologist Persona](../pers
 <PackageRoot>/docs/history/curriculums/<curriculumCamelCase>/curriculum-review.md
 ```
 
-Title: **Curriculum Review**. The canonical Curriculum remains `<PackageRoot>/docs/curriculums/<curriculumCamelCase>/<curriculumCamelCase>.curriculum.md`. Its learning plan, metadata, links and educational decisions must not be replaced by a history file.
+Title: **Curriculum Review**. The canonical Curriculum remains `<PackageRoot>/docs/curriculum/<curriculumSlug>/<curriculumSlug>.curriculum.md`. Its learning plan, metadata, links and educational decisions must not be replaced by a history file.
 
 **Creation versus reuse (mandatory):**
 
