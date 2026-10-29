@@ -13,6 +13,7 @@
 | Document | Why it matters |
 | --- | --- |
 | [Learning Experience Philosophy](./learning-experience-philosophy.md) | Interactive learning ecosystem, depth of learning, separation of Lesson/Program, educational role ownership |
+| [Skill Taxonomy Workflow](../../skills/skill-taxonomy-workflow/README.md) | Review, Code promotion, safe Markdown retirement and localized Markdown regeneration |
 | [Git-First Typed Content & AI Authoring](./git-first-typed-content.md) | Git as the authoring source of truth, `*.data.ts` conventions, review, validation and AI-assisted scale |
 | [Internationalization & Inclusive Access](./internationalization-and-accessibility.md) | Broad locale coverage, semantic LTR/RTL, disability-aware accessibility as a default requirement |
 | [Offline-First & Device Compatibility](./offline-first-and-device-compatibility.md) | Downloadable PWA objective, complete offline learning, media and state storage, capability trade-offs |
