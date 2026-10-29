@@ -298,11 +298,29 @@ Explain net spreading by random particle motion and concentration differences.
 
 Relate collisions of gas particles with surfaces to measured pressure and changes in conditions.
 
-##### Gas Volume Relationships
+##### Gas Pressure–Volume Relationship
 
 [Not implemented](#)
 
-Explain how pressure, volume, temperature and amount constrain gas samples under stated conditions.
+Relate gas pressure and volume at constant temperature and amount of substance, recognizing the limits of the inverse ideal-gas relationship.
+
+##### Gas Volume–Temperature Relationship
+
+[Not implemented](#)
+
+Relate gas volume to absolute temperature when pressure and gas amount remain fixed under appropriate conditions.
+
+##### Gas Pressure–Temperature Relationship
+
+[Not implemented](#)
+
+Relate gas pressure to absolute temperature when volume and gas amount remain fixed under appropriate conditions.
+
+##### Gas Volume–Amount Relationship
+
+[Not implemented](#)
+
+Relate the volume of a gas to its amount of substance at fixed temperature and pressure under appropriate conditions.
 
 ##### Ideal Gas Model
 
@@ -336,11 +354,41 @@ Relate flow and nearly fixed volume to mobile particles that remain close togeth
 
 Relate compressibility and expansion to widely spaced particles and their motion.
 
-##### Phase Changes
+##### Melting
 
 [Not implemented](#)
 
-Interpret melting, freezing, boiling, condensation, sublimation and deposition as changes of state rather than automatic chemical reactions.
+Explain how a solid becomes liquid under appropriate temperature and pressure conditions, without requiring a change in chemical identity.
+
+##### Freezing
+
+[Not implemented](#)
+
+Explain how a liquid transforms into a solid through changes in particle arrangement and energy exchange.
+
+##### Vaporization
+
+[Not implemented](#)
+
+Explain transformation of liquid to gas, distinguishing surface evaporation from boiling within a liquid under suitable pressure.
+
+##### Condensation
+
+[Not implemented](#)
+
+Explain formation of liquid from vapor as conditions favor a more closely associated particle arrangement.
+
+##### Sublimation
+
+[Not implemented](#)
+
+Explain direct conversion from solid to vapor without passage through a bulk liquid phase.
+
+##### Deposition
+
+[Not implemented](#)
+
+Explain direct formation of a solid from a vapor without passage through a bulk liquid phase.
 
 ### Atoms and Periodicity
 
@@ -756,11 +804,11 @@ Choosing a technique requires identifying which physical property differs betwee
 
 Explain separation of suspended solids from fluids by passage through a suitable barrier.
 
-##### Evaporation
+##### Evaporative Separation
 
 [Not implemented](#)
 
-Recover a nonvolatile solute by allowing solvent to leave the mixture, recognizing when heating or volatility can damage the sample.
+Recover nonvolatile dissolved material by removing a volatile solvent, accounting for possible sample loss or decomposition.
 
 ##### Crystallization
 
@@ -1525,17 +1573,29 @@ Relate elemental metallic structure and processing to characteristic conductivit
 
 Explain how composition and phase structure can change mechanical or corrosion properties relative to constituent metals.
 
-##### Ceramics and Glass
+##### Ceramics
 
 [Not implemented](#)
 
-Relate network or crystalline structures to characteristic hardness, brittleness and thermal behavior.
+Relate inorganic nonmetallic ceramic composition, microstructure and processing to characteristic mechanical and thermal behavior, recognizing that some ceramics contain glassy phases.
 
-##### Plastics and Elastomers
+##### Glass
 
 [Not implemented](#)
 
-Relate polymer chain mobility and cross-linking to rigidity, elasticity and processing behavior.
+Explain the amorphous structure and glass-transition behavior of glass-forming materials, distinguishing them from ordinary crystalline solids.
+
+##### Plastics
+
+[Not implemented](#)
+
+Relate polymer chemistry and processing to the shaping, durability and temperature-dependent behavior of plastic materials.
+
+##### Elastomers
+
+[Not implemented](#)
+
+Explain recoverable deformation in rubberlike polymer networks through chain mobility and cross-linking, without treating all elastic substances as identical plastics.
 
 ##### Corrosion
 
