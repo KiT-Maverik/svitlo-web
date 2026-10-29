@@ -10,4 +10,4 @@
 - `math.problems.price-quantity-cost` — `c5f731c1-be62-495a-8614-ba67ab9ed8a8`
 
 ---
-[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

@@ -10,4 +10,4 @@
 - `math.problems.work-rate-time` — `62dbd12e-55c3-40b5-aac4-031dbaee075c`
 
 ---
-[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)

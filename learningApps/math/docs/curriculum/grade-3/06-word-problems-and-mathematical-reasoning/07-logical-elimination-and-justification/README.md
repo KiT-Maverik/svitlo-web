@@ -11,4 +11,4 @@
 - `math.reasoning.draw-conclusion` — `cda308de-9fd0-4536-8635-2f5ba1a7010d`
 
 ---
-[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../../grade-3.md)
+[Задачі та математичне міркування](../README.md) · [Curriculum Grade 3](../../grade-3.curriculum.md)
