@@ -83,7 +83,7 @@ Allowed records:
 - SkillGroup: **%EXACT_SKILL_GROUP_EN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
 - SkillDomain: **%EXACT_SKILL_DOMAIN_EN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
 
-Choose only applicable types. The display name of each referenced Skill, SkillGroup, or SkillDomain must **exactly match the canonical English `name.en` from its corresponding `*.data.ts` file** (when implemented), not a paraphrase of a competency, translated title, filename, or a guessed description. Use the relevant Skills Taxonomy link with a verified anchor where possible, or a verified direct Code link. If implementation is absent, use the approved English taxonomy heading. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
+Choose only applicable types. For **prerequisites and broad references**, use the approved English Skills Taxonomy entry name (consistent with the `name.en` field of its `*.data.ts` file when implemented). For the **Target skills link label**, derive the short English display name **from the verified target Code filename without `.data.ts`**: split camelCase and digits into words, capitalize the words, and keep the resulting human-readable stem without adding hierarchy, competencies, or explanatory phrases. Example: `numberBonds10.data.ts` → `[Number Bonds 10](...)` even when the current runtime `name.en` is longer. The link target, not a paraphrased label, identifies the canonical Skill. If the Skill has no Code file, use its approved English taxonomy heading and link to the taxonomy. Use verified Code links where available. If implementation is absent, use the approved English taxonomy heading. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
 
 **Never include this authoring guidance or template notes in the produced Curriculum document.**
 
@@ -133,7 +133,7 @@ Code: %Verified Lesson runtime Code link if it exists; otherwise omit this optio
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
-- [%EXACT_SKILL_EN_NAME%](%VERIFIED_SKILL_CODE_PATH_RELATIVE_TO_THIS_CURRICULUM%)
+- [%HUMANIZED_CODE_FILENAME_STEM%](%VERIFIED_SKILL_CODE_PATH_RELATIVE_TO_THIS_CURRICULUM%)
 - ...
 ```
 
@@ -153,4 +153,4 @@ Create or update one Curriculum document at:
 - Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Use the existing `docs/curriculum/` directory (singular), with an English kebab-case curriculum slug; for grades use `grade-1`, `grade-2`, etc. Never leave a grade's canonical Curriculum file beside its grade folder.
 - Fill the **CURRICULUM TEMPLATE**. Do not create a substitute `README.md`, duplicate grade-level Curriculum, or automatically generate module, lesson, or assessment files. A short `README.md` may only link to the authoritative Curriculum, never replicate its editorial content.
 - Module and lesson directories use ordered English kebab-case names (`01-number-sense`, `02-counting-to-20`); section files and their link labels follow the same English-only rule. Verify all direct and backlink targets after renaming.
-- Resolve all relative links against the resulting Curriculum file. At `<PackageRoot>/docs/curriculum/<slug>/<slug>.curriculum.md`, the canonical taxonomy is `../../skills/taxonomy.md`. Verify actual Skill `name.en` against linked Code data and use that exact text as the Markdown Target Skills label (e.g. `[Number Bonds 10](...)`, not a paraphrase like `[Addition and Subtraction Bonds of Ten](...)`). If there is no verified Code file, link to the approved taxonomy heading instead; never invent a Code path. Do not duplicate Skill Definitions.
+- Resolve all relative links against the resulting Curriculum file. At `<PackageRoot>/docs/curriculum/<slug>/<slug>.curriculum.md`, the canonical taxonomy is `../../skills/taxonomy.md`. Derive every Target Skills Markdown link label from the referenced Code filename stem, **not** from `name.en` or a free-form description: `numberBonds10.data.ts` becomes `[Number Bonds 10](...)`. Confirm that the file is the approved Skill via its Code entry in the Skills Taxonomy. If there is no verified Code file, link to the approved taxonomy heading instead; never invent a Code path. Do not duplicate Skill Definitions.
