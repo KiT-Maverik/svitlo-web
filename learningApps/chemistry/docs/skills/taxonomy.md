@@ -11,16 +11,16 @@ This is the audience-independent catalog of independently assessable chemistry c
 ## SUMMARY
 
 Domains: 12
-Groups: 40
-Skills: 177
+Groups: 42
+Skills: 197
 
-Code files: 0/12 Domains · 0/40 Groups · 0/177 Skills
+Code files: 0/12 Domains · 0/42 Groups · 0/197 Skills
 
 ## DOMAINS
 
 ### Chemical Inquiry
 
-Groups: 3 · Skills: 13
+Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
@@ -128,6 +128,38 @@ Distinguish the manipulated chemical condition, observed response and controlled
 
 Evaluate whether observations justify a claim about composition or reaction, including alternative explanations.
 
+#### Analytical Chemistry
+
+Skills: 4
+
+[Not implemented](#)
+
+Identifying and measuring the constituents of samples requires chemical selectivity, standards and defensible interpretation of instrument responses. This area complements general observation and bulk property comparison.
+
+##### Qualitative Chemical Analysis
+
+[Not implemented](#)
+
+Use characteristic chemical responses or reference signatures to establish whether a specified substance or ion is present.
+
+##### Quantitative Chemical Analysis
+
+[Not implemented](#)
+
+Infer an analyte's amount from an appropriate measurement, calibration and the sample's known composition or treatment.
+
+##### Spectroscopic Evidence
+
+[Not implemented](#)
+
+Interpret absorption, emission or related spectral patterns as information about chemical species, structure or concentration.
+
+##### Calibration Curves
+
+[Not implemented](#)
+
+Relate an instrument signal to known standards while recognizing background response, limited range and uncertainty.
+
 ### Substances and Properties
 
 Groups: 3 · Skills: 11
@@ -228,7 +260,7 @@ Account for matter in physical and chemical processes, including gases that cros
 
 ### Particles and States
 
-Groups: 2 · Skills: 8
+Groups: 2 · Skills: 10
 
 [Not implemented](#)
 
@@ -236,7 +268,7 @@ Particle arrangements and motion explain properties of solids, liquids and gases
 
 #### Particle Behavior
 
-Skills: 4
+Skills: 6
 
 [Not implemented](#)
 
@@ -265,6 +297,18 @@ Explain net spreading by random particle motion and concentration differences.
 [Not implemented](#)
 
 Relate collisions of gas particles with surfaces to measured pressure and changes in conditions.
+
+##### Gas Volume Relationships
+
+[Not implemented](#)
+
+Explain how pressure, volume, temperature and amount constrain gas samples under stated conditions.
+
+##### Ideal Gas Model
+
+[Not implemented](#)
+
+Use the ideal-gas equation as an approximation and identify conditions in which real gases deviate.
 
 #### Phases and Transitions
 
@@ -300,7 +344,7 @@ Interpret melting, freezing, boiling, condensation, sublimation and deposition a
 
 ### Atoms and Periodicity
 
-Groups: 4 · Skills: 16
+Groups: 5 · Skills: 20
 
 [Not implemented](#)
 
@@ -434,6 +478,38 @@ Use relative electron-attracting tendency to reason about bonds and polarity.
 
 Distinguish electron-addition energetics from electronegativity and ionization energy.
 
+#### Nuclear Chemistry
+
+Skills: 4
+
+[Not implemented](#)
+
+Changes within atomic nuclei alter nuclide identities rather than ordinary electron bonding. The chemical emphasis is isotopic substances, decay and analytical applications; general nuclear-force physics belongs to Physics.
+
+##### Radioactive Decay
+
+[Not implemented](#)
+
+Distinguish spontaneous nuclear transformation from chemical reaction, including emissions and daughter nuclides.
+
+##### Half-Life
+
+[Not implemented](#)
+
+Interpret the characteristic decay time of a radioactive population without implying that individual nuclei have predictable lifetimes.
+
+##### Nuclear Transmutation
+
+[Not implemented](#)
+
+Account for changes in proton and nucleon number across nuclear reactions and decays.
+
+##### Isotope Tracers
+
+[Not implemented](#)
+
+Explain how detectable isotopic signatures can trace material pathways or provide chemical analytical evidence.
+
 ### Bonding and Structure
 
 Groups: 3 · Skills: 12
@@ -540,7 +616,7 @@ Use bonding and intermolecular interactions jointly to explain contrasting boili
 
 ### Mixtures and Solutions
 
-Groups: 4 · Skills: 18
+Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
@@ -580,7 +656,7 @@ Interpret metallic mixtures or solid solutions without assuming every alloy has 
 
 #### Dissolution and Solubility
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -616,9 +692,15 @@ Relate gas dissolution to partial pressure and equilibrium under relevant condit
 
 Distinguish unsaturated, saturated and supersaturated states and their practical stability.
 
+##### Solvent–Solute Compatibility
+
+[Not implemented](#)
+
+Reason about dissolution from particle interactions, polarity and molecular structure without treating “like dissolves like” as an absolute rule.
+
 #### Concentration
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -648,9 +730,15 @@ Use conservation of solute amount to relate concentrations and volumes before an
 
 Compare dilute and concentrated samples without confusing concentration with solubility or toxicity.
 
+##### Colligative Properties
+
+[Not implemented](#)
+
+Relate changes such as freezing-point depression to dissolved particle concentration under appropriate assumptions.
+
 #### Separation
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
@@ -662,11 +750,17 @@ Choosing a technique requires identifying which physical property differs betwee
 
 Explain separation of suspended solids from fluids by passage through a suitable barrier.
 
-##### Evaporation and Crystallization
+##### Evaporation
 
 [Not implemented](#)
 
-Use volatility or solubility changes to recover dissolved solids and distinguish the two outcomes.
+Recover a nonvolatile solute by allowing solvent to leave the mixture, recognizing when heating or volatility can damage the sample.
+
+##### Crystallization
+
+[Not implemented](#)
+
+Exploit changes in solubility and the organization of solid particles to obtain crystals from a solution.
 
 ##### Distillation
 
@@ -680,15 +774,21 @@ Explain selective vaporization and condensation using differences in volatility.
 
 Interpret differential movement or partitioning of mixture components between phases.
 
-##### Decantation and Centrifugation
+##### Decantation
 
 [Not implemented](#)
 
-Distinguish separation driven by settling or density effects from molecular-scale purification.
+Separate layers or sediment by pouring off a liquid after gravitational settling without claiming complete purification.
+
+##### Centrifugation
+
+[Not implemented](#)
+
+Explain how accelerated sedimentation separates components with different effective buoyant densities.
 
 ### Chemical Language and Quantities
 
-Groups: 3 · Skills: 15
+Groups: 3 · Skills: 17
 
 [Not implemented](#)
 
@@ -696,7 +796,7 @@ Chemists represent composition and transformation with conventional symbols and 
 
 #### Chemical Notation
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
@@ -714,11 +814,17 @@ Interpret standard element symbols and distinguish capitalization changes that c
 
 Read subscripts as composition information rather than reaction coefficients.
 
-##### Molecular and Empirical Formulas
+##### Molecular Formulas
 
 [Not implemented](#)
 
-Distinguish a molecule's actual atomic composition from its simplest whole-number ratio.
+Interpret how many atoms of each element are present in a specified discrete molecule.
+
+##### Empirical Formulas
+
+[Not implemented](#)
+
+Derive or interpret the simplest whole-number elemental ratio without assuming that it specifies one molecule.
 
 ##### Ionic Compound Formulas
 
@@ -731,6 +837,12 @@ Use ion charges to derive electrically neutral formula units.
 [Not implemented](#)
 
 Assign formal oxidation numbers under established conventions without mistaking them for measured atomic charges.
+
+##### Chemical Nomenclature
+
+[Not implemented](#)
+
+Use systematic naming rules to connect a compound's name to chemical identity and formula, distinguishing accepted common names where relevant.
 
 #### Reaction Equations
 
@@ -900,7 +1012,7 @@ Skills: 6
 
 Different acid–base models characterize proton transfer, ionic behavior in water and electron-pair interactions at differing levels of generality.
 
-##### Acid and Base Definitions
+##### Acid–Base Models
 
 [Not implemented](#)
 
@@ -912,11 +1024,11 @@ Distinguish common Arrhenius, Brønsted–Lowry and Lewis descriptions by the ch
 
 Interpret a logarithmic measure of hydrogen-ion activity and its concentration-based approximations.
 
-##### Strong and Weak Acids
+##### Acid Strength
 
 [Not implemented](#)
 
-Distinguish degree of ionization from concentration and hazard.
+Interpret extent of dissociation or proton donation without confusing it with concentration, exposure risk or toxicity.
 
 ##### Acid–Base Indicators
 
@@ -970,7 +1082,7 @@ Explain separation of oxidation and reduction into electrodes and the resulting 
 
 ### Energy, Rates and Equilibrium
 
-Groups: 3 · Skills: 13
+Groups: 3 · Skills: 14
 
 [Not implemented](#)
 
@@ -978,7 +1090,7 @@ Chemical systems exchange energy, evolve at finite rates and may approach dynami
 
 #### Chemical Energetics
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -1008,11 +1120,17 @@ Relate heat at constant pressure to the difference in enthalpy between states.
 
 Approximate enthalpy changes from bonds broken and formed while recognizing average bond-energy limitations.
 
-##### Entropy and Gibbs Energy
+##### Entropy
 
 [Not implemented](#)
 
-Relate dispersal, enthalpy and temperature to thermodynamic favorability without equating favorability with speed.
+Relate the multiplicity of microscopic arrangements and energy dispersal to changes in thermodynamic entropy.
+
+##### Gibbs Energy
+
+[Not implemented](#)
+
+Relate enthalpy, temperature and entropy to the direction of spontaneous change at constant temperature and pressure.
 
 #### Reaction Rates
 
@@ -1190,7 +1308,7 @@ Relate dissolved calcium and magnesium species to characteristic reactions and p
 
 ### Organic Chemistry
 
-Groups: 4 · Skills: 21
+Groups: 4 · Skills: 23
 
 [Not implemented](#)
 
@@ -1248,7 +1366,7 @@ Interpret three-dimensional arrangements that differ without changing atom conne
 
 #### Functional Groups
 
-Skills: 6
+Skills: 7
 
 [Not implemented](#)
 
@@ -1266,11 +1384,17 @@ Recognize a hydroxyl group attached to an appropriate carbon framework and its c
 
 Interpret carboxyl-group acidity and derivative formation.
 
-##### Aldehydes and Ketones
+##### Aldehydes
 
 [Not implemented](#)
 
-Distinguish carbonyl placement and the characteristic differences it creates.
+Relate terminal carbonyl connectivity to characteristic structure and oxidation behavior.
+
+##### Ketones
+
+[Not implemented](#)
+
+Relate internal carbonyl connectivity to characteristic reactions and distinctions from aldehydes.
 
 ##### Esters
 
@@ -1292,7 +1416,7 @@ Recognize carbonyl–nitrogen connectivity and distinguish amides from amines.
 
 #### Organic Transformations
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1316,11 +1440,17 @@ Recognize replacement of one atom or group while retaining much of a carbon skel
 
 Recognize removal of atoms or groups with formation of additional unsaturation.
 
-##### Condensation and Hydrolysis
+##### Condensation Reactions
 
 [Not implemented](#)
 
-Distinguish bond formation accompanied by small-molecule loss from water-assisted bond cleavage.
+Explain bond formation between organic partners accompanied by removal of a small molecule.
+
+##### Organic Hydrolysis
+
+[Not implemented](#)
+
+Explain bond cleavage in organic compounds through reaction with water and distinguish it from simple dissolution.
 
 #### Macromolecules
 
@@ -1356,7 +1486,7 @@ Relate chain length, branching and cross-linking to bulk material behavior.
 
 ### Chemistry in the World
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -1364,17 +1494,23 @@ Chemical concepts support understanding of manufactured materials, environmental
 
 #### Materials Chemistry
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 A product's useful behavior depends on composition, microscopic structure and conditions of use, not merely its everyday material label.
 
-##### Metals and Alloys in Use
+##### Metals in Use
 
 [Not implemented](#)
 
-Explain how composition and microstructure influence corrosion resistance, strength or electrical behavior.
+Relate elemental metallic structure and processing to characteristic conductivity, deformation and corrosion.
+
+##### Alloys in Use
+
+[Not implemented](#)
+
+Explain how composition and phase structure can change mechanical or corrosion properties relative to constituent metals.
 
 ##### Ceramics and Glass
 
