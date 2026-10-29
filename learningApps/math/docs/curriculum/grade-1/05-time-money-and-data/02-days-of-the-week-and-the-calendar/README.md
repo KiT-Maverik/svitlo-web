@@ -1,17 +1,17 @@
-# Дні тижня та календар
+# Days of the Week and the Calendar
 
-> **Curriculum: Grade 1 · Час, гроші, дані · урок 02**  
+> **Curriculum: Grade 1 · Time, Money, and Data · Lesson 02**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Користується базовими назвами днів тижня й місяців.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.time.week-month-year` — `3fccd9a5-9094-400e-8401-be2fa98cbfa6`
+- [Navigating days, weeks, and months in a calendar](../../../../../src/data/skillsTaxonomy/time/calendar/skills/weekMonthYear.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
 
 ---
-[Час, гроші, дані](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Time, Money, and Data](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

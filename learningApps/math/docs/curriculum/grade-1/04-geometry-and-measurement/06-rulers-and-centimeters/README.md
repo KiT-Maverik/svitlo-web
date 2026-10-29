@@ -1,18 +1,18 @@
-# Лінійка та сантиметр
+# Rulers and Centimeters
 
-> **Curriculum: Grade 1 · Геометрія та вимірювання · урок 06**  
+> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 06**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Вимірює від нульової позначки й креслить відрізок заданої довжини.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.measure.ruler-zero` — `02a916c0-937f-41b8-a2d4-c48593b8798a`
-- `math.measure.measure-centimeters` — `abb9261a-793e-48fd-8262-7cd2ca8df3d3`
+- [Starting ruler measurements at zero](../../../../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
+- [Measuring and drawing segments in centimeters](../../../../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повна методична специфікація ще потребує створення.
 
 ---
-[Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

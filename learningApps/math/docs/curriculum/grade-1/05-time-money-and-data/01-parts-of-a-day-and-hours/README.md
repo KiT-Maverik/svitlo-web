@@ -1,18 +1,18 @@
-# Частини доби та години
+# Parts of a Day and Hours
 
-> **Curriculum: Grade 1 · Час, гроші, дані · урок 01**  
+> **Curriculum: Grade 1 · Time, Money, and Data · Lesson 01**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Упорядковує частини доби, визначає повні години.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.time.day-sequence` — `8dba0c68-4d5b-4e3f-a6fa-119f448baaa4`
-- `math.time.read-hour` — `587f72d3-5c93-4aa7-9e36-588a1f5483f0`
+- [Sequencing parts of the day](../../../../../src/data/skillsTaxonomy/time/calendar/skills/daySequence.data.ts)
+- [Reading time to the hour](../../../../../src/data/skillsTaxonomy/time/clock/skills/readHour.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повний Learning Brief ще потребує створення методистом.
 
 ---
-[Час, гроші, дані](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Time, Money, and Data](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

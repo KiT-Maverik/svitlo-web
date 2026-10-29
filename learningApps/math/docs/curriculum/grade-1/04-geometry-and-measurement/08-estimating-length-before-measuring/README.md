@@ -1,17 +1,17 @@
-# Оцінюємо довжину перед вимірюванням
+# Estimating Length Before Measuring
 
-> **Curriculum: Grade 1 · Геометрія та вимірювання · урок 08**  
+> **Curriculum: Grade 1 · Geometry and Measurement · Lesson 08**  
 > **Статус:** заплановано; детальний методичний опис ще не створено. Це коротка картка уроку.
 
 **Навчальна мета:** Прогнозує приблизну довжину предмета та перевіряє її вимірюванням.
 
-**Target Skills**:
+**Target Skills:**
 
-- `math.measure.estimate-length` — `acf47ae5-cf9b-42b3-9f7f-4c2a92e73f1f`
+- [Estimating length and checking by measurement](../../../../../src/data/skillsTaxonomy/measurement/length/skills/estimateLength.data.ts)
 
 ## Сценарій взаємодії (draft)
 
 [Sections — 6 сценарних секцій](./Sections/README.md). Це лише сценарій; повна методична специфікація ще потребує створення.
 
 ---
-[Геометрія та вимірювання](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Geometry and Measurement](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
