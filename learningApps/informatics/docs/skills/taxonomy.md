@@ -14,396 +14,394 @@ Code files: 0/15 Domains · 0/65 Groups · 0/311 Skills
 
 ## DOMAINS
 
-### Обчислювальне мислення
+### Computational Thinking
 
 Groups: 2 · Skills: 12
 
 [Not implemented](#)
 
-Вивчає способи перетворення відкритої проблеми на формалізовану задачу: визначити суттєве, сформулювати правила й побудувати розв’язання, яке можна повторити та перевірити. На відміну від програмування, тут не обов’язково записувати рішення виконуваним кодом.
+Turning open-ended problems into formalized tasks by identifying relevant information, defining rules, and constructing solutions that can be repeated and checked. Unlike programming, this does not necessarily require expressing the solution as executable code.
 
-#### Декомпозиція та абстракція
+#### Decomposition and Abstraction
 
 Skills: 4
 
 [Not implemented](#)
 
-Робота з межами задачі: розкладання проблеми на підзадачі, відбір значущих характеристик і побудова спрощеної моделі. Ці операції передують вибору конкретного алгоритму або структури програмних класів.
+Defining a problem's boundaries by breaking it into subproblems, identifying meaningful characteristics, and constructing a simplified model. These operations precede selecting a specific algorithm or class structure.
 
-##### Розкладати задачу на частини
-
-[Not implemented](#)
-
-Відокремлювати самостійні підзадачі так, щоб для кожної можна було визначити власний результат, а їхні результати разом розв’язували початкову проблему. Наприклад, пошук маршруту охоплює визначення початку, кінця й допустимих переходів.
-
-##### Визначати суттєві властивості об’єкта
+##### Decompose a Problem
 
 [Not implemented](#)
 
-Добирати лише характеристики, які впливають на розв’язання заданої задачі: для сортування книжок за автором важливе ім’я автора, а не колір обкладинки. Відкинуті властивості можуть бути потрібні в іншій моделі.
+Identify independent subproblems with distinct outcomes that collectively solve the original problem. For example, finding a route involves identifying the start, destination, and allowed transitions.
 
-##### Будувати абстрактну модель системи
-
-[Not implemented](#)
-
-Замінювати складну ситуацію спрощеним описом елементів, станів і зв’язків, достатнім для аналізу конкретного питання. Наприклад, карту переходів між кімнатами можна подати графом без відтворення всього інтер’єру.
-
-##### Узагальнювати повторюваний спосіб
+##### Identify Essential Object Properties
 
 [Not implemented](#)
 
-Виділяти інваріантний порядок дій із кількох часткових розв’язків і формулювати правило, застосовне до нових випадків. Узагальнення потребує відокремлення самого способу від випадкових чисел чи об’єктів прикладу.
+Choose only characteristics relevant to the given task: sorting books by author depends on the author's name, not the cover color. Properties omitted from one model may matter in another.
 
-#### Логіка та закономірності
+##### Build an Abstract System Model
+
+[Not implemented](#)
+
+Represent a complex situation with a simplified account of the elements, states, and relationships needed to investigate a question. For example, connections between rooms can be modeled as a graph without recreating each room's interior.
+
+##### Generalize a Repeated Method
+
+[Not implemented](#)
+
+Extract an invariant sequence of actions from several specific solutions and formulate a rule applicable to new cases. This requires separating the method from incidental numbers or objects in the examples.
+
+#### Logic and Patterns
 
 Skills: 8
 
 [Not implemented](#)
 
-Міркування за явно заданими правилами охоплює пошук закономірностей, перевірку простих тверджень, незалежні логічні операції, побудову складених умов та виявлення суперечностей. Тут аналізують істинність і наслідки, а не обов’язково записують виконуваний код.
+Reasoning from explicit rules includes finding patterns, evaluating simple statements, applying independent logical operations, combining conditions, and detecting contradictions. The focus is on truth and consequences, not necessarily executable code.
 
-##### Розпізнавати закономірність
-
-[Not implemented](#)
-
-Визначати правило зміни значень або структури в послідовності та перевіряти його на кількох елементах. Знайдене повторення є гіпотезою про правило, а не гарантією щодо невідомих даних.
-
-##### Прогнозувати результат за правилом
+##### Recognize a Pattern
 
 [Not implemented](#)
 
-Виводити наступний стан чи значення з явно заданого правила та початкових умов, наприклад, після одного кроку переходу в скінченному автоматі. На відміну від статистичного прогнозу, результат тут визначається правилом.
+Infer a rule governing changes in a sequence's values or structure and test it against several elements. An observed repetition suggests a rule but does not guarantee what unseen data will contain.
 
-##### Визначати істинність простої умови
-
-[Not implemented](#)
-
-Для заданих фактів визначати, чи виконується одна елементарна умова, наприклад `temperature > 20` або `isOpen = true`. Не плутати хибне твердження з випадком, коли інформації для встановлення істинності недостатньо; поєднання кількох умов належить до окремих логічних операцій.
-
-##### Застосовувати логічне І
+##### Predict an Outcome from a Rule
 
 [Not implemented](#)
 
-Обчислювати кон’юнкцію двох умов: результат істинний лише тоді, коли істинні обидві. Наприклад, доступ дозволений, якщо вказано правильний код і підтверджено право користувача; не плутати цю перевірку з альтернативою.
+Derive the next state or value from an explicit rule and initial conditions, such as one transition of a finite-state machine. Unlike statistical forecasting, the rule determines the outcome here.
 
-##### Застосовувати логічне АБО
-
-[Not implemented](#)
-
-Обчислювати диз’юнкцію двох умов: результат істинний, якщо виконується принаймні одна, зокрема коли виконуються обидві. Наприклад, знижка доступна за наявності учнівського квитка або промокоду; це включне «або», якщо інше правило не зазначено.
-
-##### Застосовувати логічне НЕ
+##### Evaluate a Simple Condition
 
 [Not implemented](#)
 
-Інвертувати істиннісне значення однієї умови: `NOT isLocked` істинне тоді, коли `isLocked` хибне. Заперечення змінює значення умови, але не змінює самі факти.
+Given known facts, determine whether a single elementary condition holds, such as `temperature > 20` or `isOpen = true`. Distinguish a false statement from one whose truth cannot be determined with the available information; combining conditions is a separate logical operation.
 
-##### Обчислювати складені логічні вирази
-
-[Not implemented](#)
-
-Послідовно визначати результат виразу з кількома умовами й операціями І, АБО, НЕ з урахуванням дужок та пріоритету. Наприклад, відрізняти `(A OR B) AND C` від `A OR (B AND C)` за однакових вихідних значень.
-
-##### Знаходити суперечність у правилах
+##### Apply Logical AND
 
 [Not implemented](#)
 
-Показувати, що дві чи більше вимоги несумісні за однакових умов: наприклад, об’єкт має одночасно перебувати лише в кімнаті А і лише в кімнаті Б. Перевіряється сумісність правил, а не послідовність виконання програми.
+Evaluate the conjunction of two conditions: it is true only when both conditions are true. For example, access requires both a correct code and authorization; do not confuse this with an alternative condition.
 
-### Програмування
+##### Apply Logical OR
+
+[Not implemented](#)
+
+Evaluate the disjunction of two conditions: it is true when at least one condition holds, including when both hold. For example, a discount may be available with a student ID or a promotional code; this is inclusive OR unless otherwise specified.
+
+##### Apply Logical NOT
+
+[Not implemented](#)
+
+Negate a condition's truth value: `NOT isLocked` is true when `isLocked` is false. Negation changes the truth value of the condition, not the underlying facts.
+
+##### Evaluate Compound Logical Expressions
+
+[Not implemented](#)
+
+Compute expressions involving multiple conditions and AND, OR, and NOT while observing parentheses and operator precedence. For example, distinguish `(A OR B) AND C` from `A OR (B AND C)` for the same inputs.
+
+##### Detect Contradictory Rules
+
+[Not implemented](#)
+
+Show when two or more requirements cannot hold under the same conditions: for example, an object cannot simultaneously be located exclusively in room A and exclusively in room B. The focus is rule consistency rather than program execution order.
+### Programming
 
 Groups: 8 · Skills: 37
 
 [Not implemented](#)
 
-Охоплює читання, створення, запуск і перевірку виконуваних інструкцій, які змінюють стан програми або формують її результат. На відміну від абстрактного проєктування алгоритму, ці компетентності стосуються поведінки конкретної програми.
+Reading, writing, running, and testing executable instructions that modify program state or produce results. Unlike abstract algorithm design, these competencies concern the behavior of an actual program.
 
-#### Читання програм
+#### Reading Programs
 
 Skills: 4
 
 [Not implemented](#)
 
-Інтерпретація вже заданих команд і порядку їх виконання, зокрема змін проміжного стану та кінцевого результату. Не тотожне написанню нових команд або виправленню виявленої помилки.
+Interpreting existing commands and their execution order, including intermediate state changes and final outcomes. This differs from writing new instructions or fixing an identified defect.
 
-##### Пояснювати призначення команди
-
-[Not implemented](#)
-
-Визначати операцію окремої інструкції та те, які значення чи ефекти вона змінює за заданого вхідного стану. Наприклад, присвоєння записує нове значення, але саме по собі не зобов’язане виводити його на екран.
-
-##### Відстежувати стан програми
+##### Explain a Command's Purpose
 
 [Not implemented](#)
 
-Послідовно обчислювати проміжні значення змінних, об’єктів і позицію виконання після кількох команд; у таблиці трасування фіксувати, коли саме стан змінився. Кінцевий вивід може приховувати ці проміжні зміни.
+Identify the operation performed by an instruction and which values or effects it changes given the initial state. For example, assignment stores a new value but does not necessarily display it.
 
-##### Прогнозувати вивід програми
-
-[Not implemented](#)
-
-Визначати, що саме програма надрукує, намалює або поверне за конкретних вхідних даних і порядку виконання. Це результат, видимий зовні, а не повний перелік внутрішніх станів.
-
-##### Прогнозувати наслідки порядку виконання
+##### Trace Program State
 
 [Not implemented](#)
 
-Визначати, як порядок присвоєнь, викликів або перевірок впливає на стан і результат програми, особливо коли інтуїтивне читання оманливе. Наприклад, друга команда оновлює змінну після першої та використовує вже змінене значення; на відміну від прогнозування лише кінцевого виводу тут аналізують причинно-наслідкову залежність від порядку.
+Calculate intermediate values of variables, objects, and execution position across several commands; use a trace table to record when state changes. The final output may conceal those intermediate changes.
 
-#### Програмні конструкції
+##### Predict Program Output
+
+[Not implemented](#)
+
+Determine exactly what a program prints, draws, or returns for particular inputs and execution order. This concerns the externally observable result, not every internal state.
+
+##### Predict Consequences of Execution Order
+
+[Not implemented](#)
+
+Determine how the order of assignments, calls, or checks affects program state and outcomes, especially when intuitive code reading is misleading. For example, a later instruction operates on a value already changed by an earlier one; unlike merely predicting output, this analyzes causal dependencies on order.
+
+#### Programming Constructs
 
 Skills: 7
 
 [Not implemented](#)
 
-Використання виконуваних команд, умов, циклів і реакцій на події для керування поведінкою програми. На відміну від проєктування алгоритму, конструкції мають бути реалізовані у певному середовищі виконання.
+Using executable commands, conditions, loops, and event responses to control a program. Unlike algorithm design, the constructs must be implemented in a particular execution environment.
 
-##### Створювати послідовність команд
-
-[Not implemented](#)
-
-Перекладати визначені кроки у синтаксично коректні інструкції конкретного середовища, які можна виконати у заданому порядку. На відміну від опису алгоритму словами, тут враховуються правила мови та ефекти команд.
-
-##### Реалізовувати умовну дію
+##### Write a Sequence of Commands
 
 [Not implemented](#)
 
-Записувати перевірку логічного виразу та відповідні гілки виконуваного коду; забезпечувати, що виконається потрібна гілка для кожного передбаченого значення умови.
+Translate specified steps into syntactically valid instructions for an environment that executes them in order. Unlike describing an algorithm in prose, this requires observing language rules and command effects.
 
-##### Реалізовувати цикл
-
-[Not implemented](#)
-
-Записувати повторення інструкцій із лічильником або умовою завершення та правильно оновлювати стан між ітераціями. Одна й та сама команда повторюється за правилом, а не копіюється вручну.
-
-##### Обробляти подію
+##### Implement Conditional Behavior
 
 [Not implemented](#)
 
-Прив’язувати програмну реакцію до сигналу, наприклад натискання кнопки, повідомлення чи зміни стану, і розрізняти момент надходження події та дії її обробника. Це не звичайна умова, яку програма постійно перевіряє послідовно.
+Write a Boolean test and the corresponding executable branches, ensuring that the intended branch runs for each anticipated condition value.
 
-##### Виявляти нескінченний цикл
-
-[Not implemented](#)
-
-Визначати, коли умова завершення повторення ніколи не досягається через незмінний лічильник або неправильне оновлення стану; пояснювати наслідки для виконання програми.
-
-##### Виносити інваріантні обчислення за межі циклу
+##### Implement a Loop
 
 [Not implemented](#)
 
-Розпізнавати вираз, результат якого не змінюється між ітераціями, і безпечно обчислювати його один раз поза циклом, якщо це не змінює потрібних побічних ефектів або порядку дій.
+Express repeated instructions using a counter or termination condition and correctly update state between iterations. An instruction repeats by rule rather than through manual duplication.
 
-##### Впорядковувати перекривні умовні перевірки
+##### Handle an Event
 
 [Not implemented](#)
 
-Для ланцюга if/else if показувати, чому загальна умова може зробити специфічну гілку недосяжною, й ставити її раніше за потреби; не переносити це правило автоматично на незалежні if.
+Associate a programmed response with a signal such as a button press, message, or state change, distinguishing the event's arrival from execution of its handler. This is not simply a condition checked sequentially at every step.
 
-#### Дані у програмі
+##### Detect an Infinite Loop
+
+[Not implemented](#)
+
+Identify when a loop's termination condition can never be reached because a counter stays unchanged or state is updated incorrectly; explain the consequences for program execution.
+
+##### Move Loop-Invariant Computations Outside a Loop
+
+[Not implemented](#)
+
+Recognize an expression whose value remains unchanged between iterations and safely calculate it once outside the loop, provided that doing so does not change required side effects or execution order.
+
+##### Order Overlapping Conditional Checks
+
+[Not implemented](#)
+
+In an `if/else if` chain, explain why a broad condition may make a more specific branch unreachable and place the specific check first when appropriate; do not automatically apply this rule to independent `if` statements.
+
+#### Program Data
 
 Skills: 3
 
 [Not implemented](#)
 
-Керування значеннями, які програма отримує, зберігає й змінює: змінні, типи, входи та переходи стану. Йдеться про дані під час виконання коду, а не про зовнішній набір для статистичного аналізу.
+Working with values received, stored, and changed at runtime: variables, types, inputs, and state transitions. This concerns data during code execution rather than external datasets for statistical analysis.
 
-##### Використовувати змінну
-
-[Not implemented](#)
-
-Визначати іменоване місце для значення та звертатися до поточного значення під час виконання; відрізняти ім’я змінної від значення, що в ній зберігається.
-
-##### Оновлювати стан програми
+##### Use a Variable
 
 [Not implemented](#)
 
-Обчислювати й записувати новий стан на основі попереднього, наприклад збільшити лічильник після події. На відміну від простого читання змінної, змінення стану впливає на наступні операції.
+Define a named location for a value and access its current contents at runtime; distinguish the variable's name from the value it stores.
 
-##### Використовувати введені дані
+##### Update Program State
 
 [Not implemented](#)
 
-Приймати зовнішнє значення як вхід програми та використовувати його в обчисленні або виборі дії. Вихідний результат має залежати від введення, а не від заздалегідь зафіксованого прикладу.
+Compute and store a new state from the previous one, such as incrementing a counter after an event. Unlike simply reading a variable, changing state affects subsequent operations.
 
-#### Перевірка та налагодження
+##### Use Input Data
+
+[Not implemented](#)
+
+Accept an external value as program input and use it in a computation or choice of action. The output should depend on input rather than on a fixed example.
+
+#### Testing and Debugging
 
 Skills: 4
 
 [Not implemented](#)
 
-Зіставлення фактичної поведінки програми з вимогами, пошук причини відхилення, виправлення та повторна перевірка. Розрізняє виявлення дефекту, діагностику, зміну коду й тестування різних випадків.
+Compare actual program behavior with requirements, find the cause of deviations, correct them, and test again. Detecting a defect, diagnosing it, changing code, and testing multiple cases are distinct abilities.
 
-##### Виявляти некоректну поведінку програми
-
-[Not implemented](#)
-
-Зіставляти фактичні результати або реакції програми з вимогою та виявляти конкретне відхилення: хибне значення, пропущену дію або аварійне завершення. Неправильний результат не обов’язково спричинений помилкою виконання; пошук першопричини — окрема навичка.
-
-##### Локалізувати причину помилки
+##### Detect Incorrect Program Behavior
 
 [Not implemented](#)
 
-Звужувати пошук дефекту до конкретної команди, умови або переходу стану через трасування й перевірку припущень. Помітити хибний результат недостатньо, щоб правильно назвати його джерело.
+Compare actual results or responses with requirements and identify a specific deviation such as a wrong value, missing response, or crash. An incorrect result need not be a runtime error; finding its root cause is a separate skill.
 
-##### Виправляти програмну помилку
-
-[Not implemented](#)
-
-Змінювати саме той фрагмент коду чи правило, що спричиняє підтверджений дефект, не порушуючи задану поведінку інших випадків. Після виправлення потрібно повторно перевірити попередній збій.
-
-##### Перевіряти програму на різних входах
+##### Locate the Cause of an Error
 
 [Not implemented](#)
 
-Вибирати кілька допустимих і граничних наборів вхідних значень, порівнювати отримані результати з очікуваними та знаходити випадки, на яких програма поводиться інакше. Один успішний запуск не підтверджує загальну коректність.
+Narrow a defect to a particular instruction, condition, or state transition by tracing execution and testing hypotheses. Recognizing a wrong result does not by itself identify its cause.
 
-#### Функції та повторне використання
+##### Fix a Program Defect
+
+[Not implemented](#)
+
+Change the specific code or rule responsible for a confirmed defect without breaking the required behavior of other cases. Retest the original failure after making the correction.
+
+##### Test a Program with Different Inputs
+
+[Not implemented](#)
+
+Choose valid and boundary input sets, compare actual with expected results, and identify cases where the program behaves differently. One successful run does not establish overall correctness.
+
+#### Functions and Reuse
 
 Skills: 5
 
 [Not implemented](#)
 
-Іменовані фрагменти програм із входами, результатами й визначеною областю відповідальності; слугують розділенню задач і уникненню повторення однієї логіки.
+Named sections of programs with inputs, outputs, and defined responsibilities that help divide tasks and avoid repeating the same logic.
 
-##### Пояснювати призначення функції
-
-[Not implemented](#)
-
-Описувати функцію як іменовану операцію, що виконує окрему дію або повертає значення; її виклик можна повторити без переписування тіла.
-
-##### Створювати функцію з параметрами
+##### Explain the Purpose of a Function
 
 [Not implemented](#)
 
-Визначати функцію з вхідними параметрами, які описують потрібні значення всередині тіла, не жорстко зашиваючи лише один конкретний приклад.
+Describe a function as a named operation that performs a particular action or returns a value and can be called repeatedly without rewriting its body.
 
-##### Викликати функцію з аргументами
-
-[Not implemented](#)
-
-Передавати конкретні значення під час виклику та простежувати, як вони зв’язуються з формальними параметрами; розрізняти визначення та виклик.
-
-##### Використовувати результат функції
+##### Define a Function with Parameters
 
 [Not implemented](#)
 
-Отримувати повернене значення й застосовувати його в наступному обчисленні, не плутаючи повернення даних із виведенням тексту на екран.
+Create a function whose input parameters represent values used inside its body rather than hard-coding a single example.
 
-##### Пояснювати рекурсію
+##### Call a Function with Arguments
 
 [Not implemented](#)
 
-Розбирати виконання функції, що викликає саму себе на простішому випадку, та визначати базову умову, за якої повторні виклики припиняються. Наприклад, обчислення факторіала потребує як переходу до меншого числа, так і завершення на базовому випадку.
+Supply concrete values at a call site and trace how they bind to formal parameters; distinguish defining a function from calling it.
 
-#### Типи даних та посилання
+##### Use a Function's Return Value
+
+[Not implemented](#)
+
+Obtain a returned value and use it in another computation, distinguishing returned data from text printed to the screen.
+
+##### Explain Recursion
+
+[Not implemented](#)
+
+Trace a function that calls itself on a simpler case and identify the base condition that ends the calls. For example, computing a factorial involves both reducing the argument and terminating at the base case.
+
+#### Data Types and References
 
 Skills: 6
 
 [Not implemented](#)
 
-Типи визначають допустимі форми значень і операції; способи зберігання та передавання стану залежать від конкретної мови. Не приписувати всім мовам однакову межу між «примітивом» та «об’єктом».
+Types determine valid forms of values and operations; storage and state-passing behavior depend on the programming language. Do not assume every language draws the same boundary between primitives and objects.
 
-##### Розрізняти типи значень
-
-[Not implemented](#)
-
-Визначати, чи задане значення є числом, текстом або логічною величиною, і які операції мають для нього сенс. Наприклад, складання чисел і поєднання текстових рядків можуть виглядати подібно, але мають різні правила.
-
-##### Пояснювати примітивні значення у мові
+##### Distinguish Value Types
 
 [Not implemented](#)
 
-На прикладі вибраної мови описувати прості значення на кшталт числа, логічного значення або тексту й те, як мова класифікує їх; не оголошувати рядок примітивом у всіх мовах.
+Identify whether a value is numeric, textual, or Boolean and which operations are meaningful for it. Numeric addition and string concatenation may look similar but follow different rules.
 
-##### Пояснювати складені структури даних
-
-[Not implemented](#)
-
-Розпізнавати масив, список, запис або словник як організацію кількох значень і зв’язків між ними; відокремлювати форму структури від поточного вмісту.
-
-##### Розрізняти копіювання значення та спільне посилання
+##### Explain Primitive Values in a Language
 
 [Not implemented](#)
 
-На конкретній мові показувати, коли зміна одного посилання впливає на спільний змінюваний об’єкт, а коли нове значення лишається незалежним; не ототожнювати це з універсальними «примітивними/посилковими типами».
+Use a selected programming language to describe simple values such as numbers, Boolean values, or text and how that language classifies them; do not assume strings are primitive in every language.
 
-##### Пояснювати контракт типу даних
-
-[Not implemented](#)
-
-З’ясовувати, яке значення має надати виклику, компоненту або функції її оголошений вхідний контракт: текст не завжди можна безпечно підмінити числом.
-
-##### Перевіряти відповідність даних контракту
+##### Explain Composite Data Structures
 
 [Not implemented](#)
 
-Визначати, коли отримане значення не відповідає очікуваному типу чи формату, й обирати перевірку або явне перетворення замість мовчазного припущення.
+Recognize arrays, lists, records, and dictionaries as organizations of several values and their relationships; separate a structure's form from its current contents.
 
-#### Будова та синтаксис програми
+##### Distinguish Value Copying from Shared References
+
+[Not implemented](#)
+
+In a particular language, demonstrate when modifying a reference affects a shared mutable object and when a new value remains independent; do not equate this universally with a primitive/reference type distinction.
+
+##### Explain a Data Type Contract
+
+[Not implemented](#)
+
+Determine what type or form of value a declared input contract requires for a function, component, or call; text cannot always safely substitute for a number.
+
+##### Validate Data Against a Contract
+
+[Not implemented](#)
+
+Identify when received values violate an expected type or format and use validation or explicit conversion instead of silently assuming compatibility.
+
+#### Program Structure and Syntax
 
 Skills: 4
 
 [Not implemented](#)
 
-Опис мовних одиниць, із яких складено виконуваний код: ключові слова, оператори, ідентифікатори, вирази, інструкції та блоки. Підсвічування редактора допомагає розпізнавати одиниці, але не доводить коректності програми.
+The language units of executable code include keywords, operators, identifiers, expressions, statements, and blocks. Editor highlighting helps identify them but does not prove a program correct.
 
-##### Розрізняти ключові слова та ідентифікатори
-
-[Not implemented](#)
-
-Відокремлювати зарезервовані конструкції мови від імен, які програміст дає змінним і функціям; правила імен залежать від мови.
-
-##### Розрізняти оператор, вираз та інструкцію
+##### Distinguish Keywords from Identifiers
 
 [Not implemented](#)
 
-Пояснювати, що оператор обробляє операнди, вираз дає значення, а інструкція задає дію; одна строка коду може поєднувати кілька таких одиниць.
+Separate reserved language constructs from programmer-chosen names for variables and functions; naming rules vary by language.
 
-##### Пояснювати межі блоку інструкцій
-
-[Not implemented](#)
-
-Визначати, які команди належать до тіла функції, циклу або гілки умови за дужками чи відступами конкретної мови, не змішуючи блок із цілим файлом.
-
-##### Пояснювати синтаксичне підсвічування
+##### Distinguish Operators, Expressions, and Statements
 
 [Not implemented](#)
 
-Розпізнавати колірне виділення ключових слів, рядків, коментарів та імен як підказку редактора; правильні кольори не гарантують правильний алгоритм.
+Explain that an operator acts on operands, an expression produces a value, and a statement directs an action; one line of code may contain several such units.
 
-#### Парадигми програмування
+##### Explain Statement Block Boundaries
+
+[Not implemented](#)
+
+Identify which instructions belong to a function, loop, or conditional branch based on braces or indentation in a language, without confusing a block with an entire file.
+
+##### Explain Syntax Highlighting
+
+[Not implemented](#)
+
+Recognize editor coloring of keywords, strings, comments, and names as a visual aid; correctly colored code is not necessarily correct.
+
+#### Programming Paradigms
 
 Skills: 4
 
 [Not implemented](#)
 
-Порівняння способів організації коду: покрокова зміна стану, функціональне перетворення значень, моделювання об’єктів та опис бажаного результату. Мови можуть підтримувати кілька парадигм.
+Compare code organization through stepwise state changes, functional transformation of values, object modeling, and description of desired results. A language may support several paradigms.
 
-##### Пояснювати процедурне програмування
-
-[Not implemented](#)
-
-Організовувати задачу в іменовані процедури й послідовності команд зі зміною стану, не вимагаючи класу для кожної дії.
-
-##### Пояснювати функціональне програмування
+##### Explain Procedural Programming
 
 [Not implemented](#)
 
-Описувати обчислення через композицію функцій і перетворення значень; показувати, як чисті функції не змінюють зовнішній стан.
+Organize tasks into named procedures and sequences of state-changing instructions without requiring a class for each action.
 
-##### Пояснювати об’єктно-орієнтоване програмування
-
-[Not implemented](#)
-
-Організовувати програму навколо взаємодіючих об’єктів зі станом і методами, відрізняючи цю форму від списку глобальних процедур.
-
-##### Розрізняти імперативний та декларативний підходи
+##### Explain Functional Programming
 
 [Not implemented](#)
 
-Порівнювати опис конкретних кроків зміни стану з описом потрібного результату чи правил, за якими середовище обирає виконання.
+Describe computation through function composition and transformations of values; demonstrate that pure functions do not modify external state.
 
+##### Explain Object-Oriented Programming
+
+[Not implemented](#)
+
+Organize a program around interacting objects with state and methods, rather than as a list of global procedures.
+
+##### Distinguish Imperative and Declarative Approaches
+
+[Not implemented](#)
+
+Compare specifying concrete state-changing steps with specifying desired results or rules from which the environment chooses an execution strategy.
 ### Цифрові системи та мережі
 
 Groups: 8 · Skills: 37
