@@ -12,9 +12,9 @@ A subject-wide, audience-independent catalog of geographical competencies. It co
 
 Domains: 11
 Groups: 41
-Skills: 160
+Skills: 158
 
-Code files: 0/11 Domains · 0/41 Groups · 0/160 Skills
+Code files: 0/11 Domains · 0/41 Groups · 0/158 Skills
 
 ## DOMAINS
 
@@ -300,7 +300,7 @@ Combine separately mapped geographic properties to investigate co-occurrence, pr
 
 ### Geographic Objects
 
-Groups: 4 · Skills: 22
+Groups: 4 · Skills: 20
 
 Code: [Not implemented](#)
 
@@ -402,29 +402,18 @@ Use the Equator and a stated meridian division to identify northern, southern, e
 
 #### Land and Water
 
-Skills: 6
+Skills: 4
 
 Code: [Not implemented](#)
 
 Natural geographic features are differentiated by relief, water movement, enclosure and spatial relationships to neighboring land or water. Object identification is separate from the physical processes that formed a coastline, mountain or river valley.
 
-##### Identify islands and peninsulas by their geographic form
+##### Classify coastal landforms and passages
 
 Code: [Not implemented](#)
 
-Recognize land surrounded by water on all sides versus land connected to a larger landmass while bordered by water on several sides, using the geographic relation rather than an object name.
+Classify coast-related geographic forms using enclosure, land connection and water passage: islands, peninsulas, capes, straits and isthmuses serve as contrasting examples. The transferable competency is recognizing the geographic relationships, not memorizing one named feature or a particular illustrative list.
 
-##### Identify straits and isthmuses by their geographic form
-
-Code: [Not implemented](#)
-
-Recognize a narrow water passage linking larger bodies of water and a narrow land bridge linking larger land areas, keeping land and water connectivity distinct.
-
-##### Identify capes and other coastal projections
-
-Code: [Not implemented](#)
-
-Recognize a portion of land projecting into adjacent water through its shape and position, distinguishing a cape from a peninsula by the scale and conventional use of the terms.
 
 ##### Classify common landforms by observable characteristics
 
