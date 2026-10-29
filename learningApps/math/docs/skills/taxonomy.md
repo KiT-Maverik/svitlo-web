@@ -1428,13 +1428,13 @@ Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/squarePerim
 
 У квадрата всі чотири сторони рівні, отже довжину контуру отримують як чотири довжини сторони.
 
-##### Знаходити невідому сторону прямокутника за периметром та іншими сторонами
+##### Finding an unknown rectangle side from its perimeter
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeter/skills/unknownSideFromPerimeter.data.ts)
 
 Якщо периметр прямокутника 20 см, а одна сторона 6 см, решта контуру визначає сторону 4 см.
 
-#### Площа
+#### Area
 
 Skills: 4
 
@@ -1442,31 +1442,31 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/area.data.ts)
 
-##### Розбивати прямокутну складену фігуру на прямокутники та додавати площі частин
+##### Finding the area of a composite rectilinear figure
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/compositeArea.data.ts)
 
 Складену Г-подібну фігуру можна поділити на два прямокутники без перекриттів, після чого підсумувати їхні площі.
 
-##### Розуміти площу як міру поверхні, вкритої однаковими одиничними квадратами
+##### Understanding area as coverage by unit squares
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/areaAsCovering.data.ts)
 
 Площа описує заповнення поверхні, тож одиничні квадрати повинні мати однаковий розмір і не перекриватися.
 
-##### Визначати площу простої фігури підрахунком одиничних квадратів
+##### Determining area by counting unit squares
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/countUnitSquares.data.ts)
 
 Якщо фігура охоплює 12 повних одиничних клітинок, її площа дорівнює 12 квадратним одиницям незалежно від форми розташування.
 
-##### Пов’язувати площу прямокутника з добутком довжин його сторін у цілих одиницях
+##### Relating rectangle area to side-length multiplication
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/area/skills/rectangleAreaModel.data.ts)
 
 Прямокутник із чотирьох рядів по три клітинки займає 12 квадратних одиниць; добуток є скороченим підрахунком клітинок.
 
-#### Зв’язок периметра та площі
+#### Relationship between perimeter and area
 
 Skills: 2
 
@@ -1474,19 +1474,19 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/perimeterArea.data.ts)
 
-##### Будувати фігури з однаковим периметром і різними площами або навпаки
+##### Constructing shapes with contrasting perimeters and areas
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/skills/areaPerimeterContrast.data.ts)
 
 Два прямокутники можуть мати однаковий контур, але різну кількість внутрішніх клітинок; жодна величина не визначає іншу автоматично.
 
-##### Розрізняти периметр і площу та добирати відповідний спосіб вимірювання
+##### Choosing perimeter or area for a measurement
 
 Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/skills/perimeterVsArea.data.ts)
 
 Для огорожі потрібна довжина краю, а для покриття підлоги — внутрішня поверхня; одиниці й способи обчислення різні.
 
-### Вимірювання
+### Measurement
 
 Groups: 5 · Skills: 21
 
@@ -1494,7 +1494,7 @@ Code: [Code](../../src/data/skillsTaxonomy/measurement/measurement.data.ts)
 
 Розглядає вимірювання фізичних величин через порівняння з одиницею, інструменти й шкали; охоплює довжину, масу, місткість, температуру та узгодження одиниць.
 
-#### Довжина
+#### Length
 
 Skills: 10
 
@@ -1502,31 +1502,31 @@ Skills: 10
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/length.data.ts)
 
-##### Порівнювати довжини безпосереднім накладанням і непрямим способом
+##### Comparing lengths directly and indirectly
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/compareLength.data.ts)
 
 Коротший із двох відрізків видно після суміщення початків; порівняти можна і через спільну стрічку-посередник.
 
-##### Вимірювати довжину послідовним прикладанням однакових умовних одиниць
+##### Measuring length with repeated nonstandard units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/nonstandardLength.data.ts)
 
 Умовні мірки прикладають без проміжків та накладень: різні за довжиною мірки дадуть різні числові результати.
 
-##### Правильно користуватися лінійкою, починаючи вимірювання від нульової позначки
+##### Starting ruler measurements at zero
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
 
 Шкала лінійки рахує проміжки між поділками, а не кількість надрукованих цифр; початок виміру — нуль.
 
-##### Вимірювати та креслити відрізки заданої довжини в сантиметрах
+##### Measuring and drawing segments in centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
 
 Відрізок 5 см має п’ять сантиметрових проміжків між його кінцями, а не п’ять поділок разом із початковою.
 
-##### Вимірювати короткі відрізки в міліметрах і співвідносити мм із см
+##### Measuring in millimeters and relating them to centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/millimeters.data.ts)
 
