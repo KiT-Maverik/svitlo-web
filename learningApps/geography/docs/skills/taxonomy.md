@@ -346,7 +346,7 @@ Recognize that changing the defining variable or classification threshold can re
 
 #### Global Geographic Divisions
 
-Skills: 9
+Skills: 8
 
 Code: [Not implemented](#)
 
@@ -399,12 +399,6 @@ Identify the principal named ocean basins and their positions relative to landma
 Code: [Not implemented](#)
 
 Use the Equator and a stated meridian division to identify northern, southern, eastern or western hemispheres, while recognizing that eastern/western boundaries depend on the chosen conventional meridian.
-
-##### Locate countries on a map
-
-Code: [Not implemented](#)
-
-Identify the positions of named sovereign states using a political map and stated time/context, recognizing that boundaries, names and political recognition may be disputed or change. Which countries are studied belongs to the Program, not the Skill identity.
 
 #### Land and Water
 
@@ -1186,11 +1180,17 @@ Describe how the relative concentration of population and activity in urban area
 
 #### Political Territories
 
-Skills: 2
+Skills: 3
 
 Code: [Not implemented](#)
 
 Jurisdictions organize places using legally and socially defined boundaries that may change over time or be disputed. Political borders may follow rivers or mountains, but they are not the same kind of object as those natural features; cultural-landscape interpretation is covered separately in Cultural Geography.
+
+##### Locate countries on a map
+
+Code: [Not implemented](#)
+
+Identify the positions of named sovereign states using a political map and stated time/context, recognizing that boundaries, names and political recognition may be disputed or change. Which countries are studied belongs to the Program, not the Skill identity.
 
 ##### Distinguish physical features from political boundaries
 
