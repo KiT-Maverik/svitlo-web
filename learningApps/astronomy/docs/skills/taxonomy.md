@@ -14,15 +14,15 @@ A subject-wide, audience-independent catalog of astronomy competencies. It cover
 
 Domains: 12
 Groups: 45
-Skills: 177
+Skills: 190
 
-Code files: 0/12 Domains · 0/45 Groups · 0/177 Skills
+Code files: 0/12 Domains · 0/45 Groups · 0/190 Skills
 
 ## DOMAINS
 
 ### Observing the Sky
 
-Groups: 4 · Skills: 15
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -62,17 +62,23 @@ Determine or compare angular distances and apparent sizes on the sky independent
 
 #### Sky Patterns
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 Recognizable configurations make celestial scenes navigable, but their visibility and apparent arrangement depend on viewpoint and date.
 
-##### Constellations and Asterisms
+##### Constellations
 
 [Not implemented](#)
 
-Distinguish officially defined sky regions from informal recognizable star patterns and relate both to sky navigation.
+Use officially defined regions of the celestial sphere to locate objects without assuming their member stars form a physical cluster.
+
+##### Asterisms
+
+[Not implemented](#)
+
+Recognize named visual star patterns that can cross constellation boundaries and distinguish them from officially defined regions.
 
 ##### Apparent Brightness
 
@@ -126,17 +132,23 @@ Distinguish approved solar-viewing methods from unsafe direct viewing or unfilte
 
 #### Astronomical Time
 
-Skills: 3
+Skills: 5
 
 [Not implemented](#)
 
 Timekeeping conventions derived from repeated celestial cycles support observation and comparison across dates, without constituting a curriculum in civil time zones.
 
-##### Solar and Sidereal Time
+##### Solar Time
 
 [Not implemented](#)
 
-Distinguish the Sun-based day from Earth's rotation relative to distant stars and relate each to repeating sky positions.
+Describe Sun-referenced time as related to the apparent position of the Sun, including mean and apparent solar conventions.
+
+##### Sidereal Time
+
+[Not implemented](#)
+
+Explain how rotation relative to distant stars defines sidereal time and predicts which celestial coordinates cross a local meridian.
 
 ##### Astronomical Dates and Epochs
 
@@ -144,15 +156,21 @@ Distinguish the Sun-based day from Earth's rotation relative to distant stars an
 
 Interpret a standard astronomical date or reference epoch when comparing observations made at different times.
 
-##### Lunar and Solar Calendar Cycles
+##### Lunar Calendar Cycles
 
 [Not implemented](#)
 
-Relate calendar conventions to lunar phases and Earth's annual revolution without assuming every calendar follows the same rule.
+Relate lunar-based calendar intervals to Moon phases while recognizing different calendar conventions.
+
+##### Solar Calendar Cycles
+
+[Not implemented](#)
+
+Relate solar-year calendar intervals to Earth's annual revolution and seasons without assuming universal calendar rules.
 
 ### Astronomical Instruments and Evidence
 
-Groups: 4 · Skills: 18
+Groups: 4 · Skills: 24
 
 [Not implemented](#)
 
@@ -160,17 +178,23 @@ Astronomy infers properties of remote objects from photons, particles, gravitati
 
 #### Telescopes and Detectors
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
 Instrumentation alters the detail, wavelengths and measurable signals available to observers; its scientific limitations are as important as its capabilities.
 
-##### Telescope Aperture and Resolution
+##### Light-Gathering Aperture
 
 [Not implemented](#)
 
-Explain how aperture influences light collection and angular resolving power, distinguishing resolution from magnification.
+Explain how telescope aperture affects collected light and the visibility of faint astronomical sources.
+
+##### Angular Resolution
+
+[Not implemented](#)
+
+Explain the ability to distinguish nearby sources, including effects of aperture, wavelength and atmospheric seeing.
 
 ##### Optical Telescope Systems
 
@@ -198,7 +222,7 @@ Compare observations above and below Earth's atmosphere in terms of accessible w
 
 #### Astronomical Spectra
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -210,11 +234,17 @@ Light encodes information about temperature, composition and motion through its 
 
 Infer broad thermal properties from the distribution of emitted light across wavelengths while recognizing idealized blackbody assumptions.
 
-##### Emission and Absorption Lines
+##### Emission Spectral Lines
 
 [Not implemented](#)
 
-Use spectral features to identify atomic or molecular material in an astronomical source or along the line of sight.
+Interpret discrete bright features produced by matter radiating at characteristic wavelengths.
+
+##### Absorption Spectral Lines
+
+[Not implemented](#)
+
+Interpret dark spectral features produced by matter absorbing characteristic wavelengths from background radiation.
 
 ##### Doppler Shift
 
@@ -230,7 +260,7 @@ Relate observations in different electromagnetic bands to distinct physical comp
 
 #### Distances and Physical Properties
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -242,11 +272,17 @@ Astronomical measurements connect remote observations to inferred size, distance
 
 Infer distances to nearby stars from the apparent displacement caused by changing observing positions.
 
-##### Apparent and Absolute Magnitude
+##### Apparent Magnitude
 
 [Not implemented](#)
 
-Distinguish observed stellar brightness from a standardized measure of intrinsic luminosity.
+Interpret a logarithmic brightness scale describing how bright a source appears to an observer.
+
+##### Absolute Magnitude
+
+[Not implemented](#)
+
+Interpret a source's magnitude at a defined reference distance and use it to compare intrinsic brightness.
 
 ##### Standard Candles
 
@@ -262,7 +298,7 @@ Explain why different distance indicators apply across different ranges and how 
 
 #### Evidence and Interpretation
 
-Skills: 5
+Skills: 8
 
 [Not implemented](#)
 
@@ -297,6 +333,24 @@ Compare competing explanations with observations and revised predictions, includ
 [Not implemented](#)
 
 Explain how electromagnetic light, neutrinos, gravitational waves and particles can offer complementary evidence about an astrophysical event.
+
+##### Gravitational Lensing
+
+[Not implemented](#)
+
+Interpret bending, magnification and distortion of background light by intervening gravity as evidence about mass and source geometry.
+
+##### Gravitational-Wave Astronomy
+
+[Not implemented](#)
+
+Interpret gravitational-wave detections as evidence about accelerating compact massive systems and compare the signals with electromagnetic observations.
+
+##### Neutrino Astronomy
+
+[Not implemented](#)
+
+Explain how astrophysical neutrinos probe energetic processes that electromagnetic observations may not reveal.
 
 ### Celestial Mechanics
 
@@ -632,7 +686,7 @@ Interpret radiometric and meteoritic evidence used to constrain the time of Sola
 
 ### Planetary Science
 
-Groups: 4 · Skills: 16
+Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
@@ -736,7 +790,7 @@ Relate global winds and thermal patterns to solar input, rotation and atmospheri
 
 #### Interiors and Volatiles
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -760,15 +814,21 @@ Explain the conditions under which internal conductive flows can generate global
 
 Evaluate the physical states and likely reservoirs of water on different Solar System bodies.
 
-##### Subsurface Oceans and Cryovolcanism
+##### Subsurface Oceans
 
 [Not implemented](#)
 
-Interpret evidence for buried liquids or volatile-driven eruptions without treating either as direct evidence of life.
+Interpret geophysical and compositional evidence for liquids beneath icy surfaces without assuming biology.
+
+##### Cryovolcanism
+
+[Not implemented](#)
+
+Recognize and explain eruptions driven by volatile liquids and ices rather than molten rock.
 
 ### Solar Astronomy
 
-Groups: 3 · Skills: 11
+Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
@@ -840,17 +900,23 @@ Distinguish large ejections of coronal plasma from flares, including their possi
 
 #### Heliospheric Effects
 
-Skills: 3
+Skills: 4
 
 [Not implemented](#)
 
 Solar material and magnetic fields extend outward and can influence planetary space environments even far from the solar surface.
 
-##### Solar Wind and Heliosphere
+##### Solar Wind
 
 [Not implemented](#)
 
-Explain how outward-flowing charged particles and solar magnetic fields form the Sun's extended influence.
+Explain the outward flow of charged solar particles and their transport of magnetic fields through space.
+
+##### Heliosphere
+
+[Not implemented](#)
+
+Explain the region dominated by the solar wind and distinguish its boundary from a solid surface.
 
 ##### Space Weather
 
@@ -1034,7 +1100,7 @@ Explain how stellar nucleosynthesis and explosive or ejective events change the 
 
 ### Exoplanetary Systems
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -1074,17 +1140,23 @@ Explain how temporary lensing signatures can reveal otherwise difficult-to-detec
 
 #### Exoplanet Characterization
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 Planet properties are inferred by combining signals and interpreting assumptions, with important differences between measured quantities and theoretical models.
 
-##### Exoplanet Radius and Mass
+##### Exoplanet Radius
 
 [Not implemented](#)
 
-Derive or constrain planetary size and mass from appropriate observations and clarify what each measurement leaves unresolved.
+Infer a planet's size from transit or other observations and explain its dependence on stellar parameters.
+
+##### Exoplanet Mass
+
+[Not implemented](#)
+
+Infer a planet's mass from orbital effects, including limits set by viewing geometry and models.
 
 ##### Exoplanet Bulk Composition
 
@@ -1410,7 +1482,7 @@ Distinguish empirical constraints from open problems concerning early conditions
 
 ### Astrobiology and Space Exploration
 
-Groups: 4 · Skills: 15
+Groups: 4 · Skills: 16
 
 [Not implemented](#)
 
@@ -1508,17 +1580,23 @@ Explain why liquid environments protected under ice or rock can be relevant even
 
 #### Exploration and Scientific Returns
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 Different mission approaches collect complementary information about inaccessible worlds while introducing sampling and interpretation constraints.
 
-##### Flyby and Orbital Measurements
+##### Flyby Measurements
 
 [Not implemented](#)
 
-Distinguish data obtainable during close passage and repeated orbital observation of a target.
+Interpret scientific information obtained during a brief spacecraft encounter, including coverage constraints.
+
+##### Orbital Measurements
+
+[Not implemented](#)
+
+Explain how repeated observations from an orbiting spacecraft support mapping and temporal monitoring.
 
 ##### Landers and Rovers as Scientific Probes
 
