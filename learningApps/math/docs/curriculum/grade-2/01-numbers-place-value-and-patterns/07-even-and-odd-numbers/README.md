@@ -14,4 +14,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Повного методичного Learning Brief ще немає.
 
 ---
-[Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../../grade-2.md)
+[Числа, розряди та закономірності](../README.md) · [Curriculum Grade 2](../../grade-2.curriculum.md)
