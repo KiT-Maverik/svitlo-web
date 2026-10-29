@@ -8,11 +8,11 @@ Breadth references, not imposed curricula: [APA Guidelines 3.0](https://www.apa.
 
 ## SUMMARY
 
-Domains: 13
+Domains: 14
 Groups: 57
 Skills: 274
 
-Code files: 0/13 Domains · 0/57 Groups · 0/274 Skills
+Code files: 0/14 Domains · 0/57 Groups · 0/274 Skills
 
 ## DOMAINS
 
@@ -1458,7 +1458,7 @@ Analyze replacing an established response with an alternative to the same cue ra
 
 ### Social Psychology
 
-Groups: 8 · Skills: 40
+Groups: 4 · Skills: 23
 
 [Not implemented](#)
 
@@ -1633,6 +1633,14 @@ Explain how individuals express limits about interactions, information, and bodi
 [Not implemented](#)
 
 Distinguish an informed, freely given and revocable agreement from silence, coercion, or assumed permission.
+
+### Development Across the Lifespan
+
+Groups: 4 · Skills: 17
+
+[Not implemented](#)
+
+Cognition, relationships, identity, and emotional regulation change from infancy through older adulthood. Developmental patterns express interactions of maturation and lived experience, not identical milestones for every person.
 
 #### Mechanisms of Development
 
