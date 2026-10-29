@@ -107,7 +107,7 @@ Allowed records:
 
 Choose only applicable types. All names must match the approved taxonomy exactly. Link to the existing taxonomy file relative to the actual Curriculum; an entry-specific verified Markdown anchor may be used if helpful. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
 
-**File-link formatting (authoring guidance):** The Module and Lesson runtime Code slots in the template are **standalone Markdown links with no `Code:` prefix**. If unimplemented, leave exactly `[Not implemented](#)`; if implemented, replace with a verified relative link whose visible text is the **entire real filename, including suffixes and extension** (for example, `[intro.lesson.data.ts](../../path/to/intro.lesson.data.ts)`). The same full-filename display convention applies to any implemented Definition link. Keep a Definition slot distinct from its Code slot; never fabricate either target.
+**File-link formatting (authoring guidance):** The Module and Lesson runtime Code slots in the template are **standalone Markdown links with no `Code:` prefix**. If unimplemented, leave exactly `[Not implemented](#)`; if implemented, replace with a verified relative link whose visible text is the **entire real filename, including suffixes and extension** (for example, `[intro.data.ts](%VERIFIED_RELATIVE_PATH%)`). The same full-filename display convention applies to any implemented Definition link. Keep a Definition slot distinct from its Code slot; never fabricate either target.
 
 **Never include this authoring guidance or template notes in the produced Curriculum document.**
 
