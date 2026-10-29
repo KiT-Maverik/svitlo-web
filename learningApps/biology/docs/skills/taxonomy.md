@@ -670,205 +670,205 @@ Compare cellular organisms' cell membranes, cytoplasm, and independent metabolis
 
 Explain how viruses spread between hosts by different routes, including respiratory particles, contact, biological fluids, vectors, and other mechanisms, and why a particular route depends on the characteristics of the virus and its hosts.
 
-### Анатомія та фізіологія людини
+### Human Anatomy and Physiology
 
 Groups: 6 · Skills: 24
 
 [Not implemented](#)
 
-Будова тіла, функції органів і взаємодія систем, завдяки яким людина рухається, сприймає, дихає та підтримує життєдіяльність. Правила гігієни, першої допомоги й безпечної поведінки залишаються в окремому підручнику.
+The structure of the body, organ functions, and interactions among systems that allow humans to move, perceive, breathe, and sustain life. Rules of hygiene, first aid, and safe behavior belong to a separate textbook.
 
-#### Будова тіла
+#### Body Structure
 
 Skills: 3
 
 [Not implemented](#)
 
-Зовнішні й внутрішні частини утворюють органи та системи, кожна з яких забезпечує певну функцію організму.
+External and internal body parts form organs and systems, each performing a particular function in the organism.
 
-##### Визначати основні частини тіла
-
-[Not implemented](#)
-
-Локалізувати голову, тулуб, кінцівки та важливі зовнішні структури на моделі людини.
-
-##### Співвідносити органи з їхніми функціями
+##### Identify Major Body Parts
 
 [Not implemented](#)
 
-Пов'язувати легені з газообміном, серце з рухом крові, а шлунок і кишечник з обробленням їжі.
+Locate the head, trunk, limbs, and important external structures on a model of the human body.
 
-##### Розрізняти орган і систему органів
+##### Relate Organs to Their Functions
 
 [Not implemented](#)
 
-Відрізняти одиничну анатомічну структуру від функціонального об'єднання кількох органів.
+Associate the lungs with gas exchange, the heart with blood movement, and the stomach and intestines with food processing.
 
-#### Органи чуття та нервова система
+##### Distinguish an Organ from an Organ System
+
+[Not implemented](#)
+
+Distinguish a single anatomical structure from a functional association of several organs.
+
+#### Sensory Organs and the Nervous System
 
 Skills: 4
 
 [Not implemented](#)
 
-Рецептори сприймають різні подразники, нервова система опрацьовує сигнали, а шкіра додатково захищає тіло як фізичний бар'єр.
+Receptors detect different stimuli, the nervous system processes signals, and the skin also protects the body as a physical barrier.
 
-##### Співвідносити орган чуття з видом інформації
-
-[Not implemented](#)
-
-Зіставляти світло, звук, запах, смак і дотик із рецепторами, які можуть сприймати ці сигнали.
-
-##### Пояснювати реакцію на подразник
+##### Relate a Sense Organ to the Information It Detects
 
 [Not implemented](#)
 
-Пояснювати, як сенсорний сигнал може спричинити відповідь м'язів чи зміну поведінки.
+Relate light, sound, smell, taste, and touch to receptors capable of detecting those signals.
 
-##### Розпізнавати роль мозку у сприйнятті
-
-[Not implemented](#)
-
-Розуміти, що нервові сигнали з органів чуття обробляються мозком, а не перетворюються на усвідомлене відчуття самими очима чи вухами.
-
-##### Визначати захисну функцію шкіри
+##### Explain Responses to Stimuli
 
 [Not implemented](#)
 
-Пояснювати роль цілісного шкірного покриву у зменшенні втрати води та проникнення шкідливих чинників.
+Explain how a sensory signal can trigger a muscle response or a change in behavior.
 
-#### Опора та рух
+##### Recognize the Brain’s Role in Perception
+
+[Not implemented](#)
+
+Understand that nerve signals from the sense organs are processed in the brain rather than being turned into conscious sensations by the eyes or ears themselves.
+
+##### Identify the Skin’s Protective Function
+
+[Not implemented](#)
+
+Explain how intact skin reduces water loss and the penetration of harmful agents.
+
+#### Support and Movement
 
 Skills: 3
 
 [Not implemented](#)
 
-Кістки формують опору та важелі, м'язи створюють зусилля, а суглоби визначають можливі напрямки руху.
+Bones provide support and levers, muscles exert force, and joints determine the possible directions of movement.
 
-##### Пояснювати роль скелета
-
-[Not implemented](#)
-
-Показувати, як кістки підтримують форму тіла й частково прикривають внутрішні органи.
-
-##### Пояснювати роль м’язів у русі
+##### Explain the Role of the Skeleton
 
 [Not implemented](#)
 
-Пов'язувати скорочення м'язової тканини з появою сили, яка змінює положення частин тіла.
+Show how bones maintain body shape and provide some protection to internal organs.
 
-##### Описувати взаємодію кісток і м’язів
+##### Explain the Role of Muscles in Movement
 
 [Not implemented](#)
 
-Пояснювати рух у суглобі через прикріплення м'язів до кісток і взаємодію протилежно діючих м'язів.
+Relate contraction of muscle tissue to the generation of force that changes the positions of body parts.
 
-#### Забезпечення життєдіяльності
+##### Describe Interactions Between Bones and Muscles
+
+[Not implemented](#)
+
+Explain movement at a joint through muscle attachments to bones and the interaction of muscles acting in opposite directions.
+
+#### Maintaining Life Processes
 
 Skills: 8
 
 [Not implemented](#)
 
-Поживні речовини, кисень і кров циркулюють різними шляхами; їхня узгоджена робота забезпечує клітини ресурсами.
+Nutrients, oxygen, and blood travel along different pathways; their coordinated operation provides cells with resources.
 
-##### Пояснювати проходження їжі через травну систему
-
-[Not implemented](#)
-
-Пояснювати послідовне проходження їжі через ротову порожнину, стравохід, шлунок і кишечник, роль перистальтики та відмінність між рухом їжі, її перетравленням і всмоктуванням поживних речовин.
-
-##### Пояснювати вентиляцію легень
+##### Explain the Passage of Food Through the Digestive System
 
 [Not implemented](#)
 
-Пояснювати вдих і видих як переміщення повітря внаслідок роботи дихальних м'язів, зміни об'єму грудної порожнини та різниці тиску; відділяти вентиляцію від газообміну в альвеолах і клітинного дихання.
+Explain the sequential passage of food through the mouth, esophagus, stomach, and intestines, the role of peristalsis, and the difference between food movement, digestion, and nutrient absorption.
 
-##### Пояснювати травлення поживних речовин
-
-[Not implemented](#)
-
-Пояснювати механічне й ферментативне перетворення їжі у травному тракті та роль травних соків у розщепленні великих молекул на доступні для всмоктування компоненти.
-
-##### Пояснювати всмоктування поживних речовин
+##### Explain Lung Ventilation
 
 [Not implemented](#)
 
-Пояснювати надходження продуктів травлення крізь епітелій кишечника до крові й лімфи; розрізняти хімічне травлення та перенесення вже розщеплених поживних речовин.
+Explain inhalation and exhalation as air movement caused by respiratory muscle activity, changes in thoracic cavity volume, and pressure differences; distinguish ventilation from alveolar gas exchange and cellular respiration.
 
-##### Пояснювати роль нирок у виділенні
-
-[Not implemented](#)
-
-Пояснювати фільтрацію крові, вибіркове повернення води й потрібних речовин та утворення сечі як спосіб виведення продуктів обміну й підтримання складу внутрішнього середовища.
-
-##### Пояснювати газообмін у легенях
+##### Explain Digestion of Nutrients
 
 [Not implemented](#)
 
-Пояснювати обмін кисню та вуглекислого газу між альвеолами й кров'ю.
+Explain the mechanical and enzymatic processing of food in the digestive tract and the role of digestive juices in breaking large molecules into components available for absorption.
 
-##### Пояснювати роль серця в кровообігу
-
-[Not implemented](#)
-
-Описувати серце як насос, що створює потік крові через судини до органів і назад.
-
-##### Визначати зміни дихання під час фізичної активності
+##### Explain Nutrient Absorption
 
 [Not implemented](#)
 
-Пов'язувати прискорення й поглиблення дихання зі зростанням потреби працюючих м'язів у кисні та виведенні CO₂.
+Explain how digestive products pass through the intestinal epithelium into blood and lymph; distinguish chemical digestion from transport of already broken-down nutrients.
 
-#### Регуляція та гомеостаз
+##### Explain the Role of the Kidneys in Excretion
+
+[Not implemented](#)
+
+Explain blood filtration, selective reabsorption of water and needed substances, and urine formation as means of removing metabolic waste and maintaining the internal environment.
+
+##### Explain Gas Exchange in the Lungs
+
+[Not implemented](#)
+
+Explain the exchange of oxygen and carbon dioxide between the alveoli and blood.
+
+##### Explain the Heart’s Role in Circulation
+
+[Not implemented](#)
+
+Describe the heart as a pump that drives blood through vessels to organs and back.
+
+##### Identify Breathing Changes During Physical Activity
+
+[Not implemented](#)
+
+Relate faster and deeper breathing to the increased need of working muscles for oxygen and removal of CO₂.
+
+#### Regulation and Homeostasis
 
 Skills: 2
 
 [Not implemented](#)
 
-Нервові та гормональні сигнали координують роботу органів, а механізми зворотного зв'язку підтримують основні параметри внутрішнього середовища в межах життєздатності.
+Nervous and hormonal signals coordinate organ functions, while feedback mechanisms maintain key internal conditions within viable ranges.
 
-##### Пояснювати ендокринну регуляцію
-
-[Not implemented](#)
-
-Пояснювати, як гормони залоз внутрішньої секреції впливають на роботу клітин і органів, зокрема на обмін речовин, ріст і реакції на зміни середовища; порівнювати тривалість гормональних і нервових сигналів без твердження, що вони завжди діють незалежно.
-
-##### Пояснювати підтримання гомеостазу
+##### Explain Endocrine Regulation
 
 [Not implemented](#)
 
-Пояснювати підтримання температури, водного балансу й концентрації глюкози через регуляцію та негативний зворотний зв'язок; розрізняти динамічну сталість внутрішнього середовища та відсутність змін.
+Explain how hormones secreted by endocrine glands affect cells and organs, including metabolism, growth, and responses to environmental changes; compare the duration of hormonal and neural signals without claiming that these always act independently.
 
-#### Розвиток та захист організму
+##### Explain Maintenance of Homeostasis
+
+[Not implemented](#)
+
+Explain how temperature, water balance, and blood glucose are maintained through regulation and negative feedback; distinguish dynamic stability of the internal environment from a total absence of change.
+
+#### Development and Protection of the Organism
 
 Skills: 4
 
 [Not implemented](#)
 
-Зміни від дитинства до дорослого стану, імунні механізми та фізіологічне відновлення підтримують роботу тіла в часі.
+Changes from childhood to adulthood, immune mechanisms, and physiological recovery help maintain bodily functions over time.
 
-##### Розрізняти вікові стадії розвитку людини
-
-[Not implemented](#)
-
-Співвідносити спостережувані зміни росту й статевого дозрівання з основними періодами життя без нормативних оцінок «правильного» темпу.
-
-##### Пояснювати захисну роль імунної системи
+##### Distinguish Stages of Human Development
 
 [Not implemented](#)
 
-Пояснювати, як організм розпізнає чужорідні агенти та запускає захисну відповідь, не плутаючи її з абсолютним захистом від хвороб.
+Relate observable growth and pubertal changes to the main stages of human life, without making normative judgments about a 'correct' developmental pace.
 
-##### Пояснювати значення сну для відновлення організму
-
-[Not implemented](#)
-
-Пов'язувати сон із нервовою регуляцією, пам'яттю та відновленням функцій, не підміняючи механізм правилами режиму.
-
-##### Пояснювати функції репродуктивної системи людини
+##### Explain the Immune System’s Protective Role
 
 [Not implemented](#)
 
-Пояснювати біологічні функції репродуктивних органів, утворення статевих клітин і роль запліднення в статевому розмноженні людини, розрізняючи фізіологічні факти та індивідуальні відмінності розвитку.
+Explain how the body recognizes foreign agents and initiates a protective response without confusing this with absolute protection against disease.
+
+##### Explain the Importance of Sleep for Recovery
+
+[Not implemented](#)
+
+Relate sleep to neural regulation, memory, and restoration of functions without replacing explanations of mechanisms with rules about sleep schedules.
+
+##### Explain Functions of the Human Reproductive System
+
+[Not implemented](#)
+
+Explain the biological functions of reproductive organs, production of sex cells, and the role of fertilization in human sexual reproduction, distinguishing physiological facts from individual differences in development.
 
 ### Екологія
 
