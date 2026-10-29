@@ -11,4 +11,4 @@
 - `math.reasoning.verify-with-second-method` — `b99c90cc-815d-4944-851a-e33ecb43e5b0`
 
 ---
-[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

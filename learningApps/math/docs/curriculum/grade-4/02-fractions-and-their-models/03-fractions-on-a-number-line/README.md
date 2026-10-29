@@ -10,4 +10,4 @@
 - `math.fractions.number-line` — `73fb395f-5148-4af6-b5b1-399c4e06beab`
 
 ---
-[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

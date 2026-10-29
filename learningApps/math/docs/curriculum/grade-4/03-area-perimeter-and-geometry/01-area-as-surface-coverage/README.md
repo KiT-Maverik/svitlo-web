@@ -10,4 +10,4 @@
 - `math.geomeasure.area-as-covering` — `6b0d5eb1-8d6f-448d-b1db-051779916e97`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

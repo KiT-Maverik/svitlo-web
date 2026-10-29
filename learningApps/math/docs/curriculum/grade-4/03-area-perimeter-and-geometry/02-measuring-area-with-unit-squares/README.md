@@ -10,4 +10,4 @@
 - `math.geomeasure.count-unit-squares` — `4c389e9b-24de-476f-8882-e973d812809a`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

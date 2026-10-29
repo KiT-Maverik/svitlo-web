@@ -11,4 +11,4 @@
 - `math.fractions.non-unit-model` — `ee8b4be0-4de7-4f66-9a05-7eca8f524caa`
 
 ---
-[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

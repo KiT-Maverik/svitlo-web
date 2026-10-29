@@ -10,4 +10,4 @@
 - `math.order.round-to-hundred` — `03fe2ab7-993c-4568-a426-4e47eb52aeb1`
 
 ---
-[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

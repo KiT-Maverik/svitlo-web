@@ -10,4 +10,4 @@
 - `math.geomeasure.rectangle-area-model` — `18927cbb-05bf-4f99-9d85-aaf60512417f`
 
 ---
-[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Площа, периметр і геометрія](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

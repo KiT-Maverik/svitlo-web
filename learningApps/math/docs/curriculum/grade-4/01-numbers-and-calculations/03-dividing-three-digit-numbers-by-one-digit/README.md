@@ -10,4 +10,4 @@
 - `math.divide.three-digit-by-one` — `94d69b03-cf2e-47bf-8e81-91d83098f45d`
 
 ---
-[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

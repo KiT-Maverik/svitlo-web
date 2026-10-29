@@ -10,4 +10,4 @@
 - `math.fractions.one-as-fraction` — `24ae675d-82dc-4eb4-94fe-adc96f15e452`
 
 ---
-[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

@@ -10,4 +10,4 @@
 - `math.fractions.same-denominator-model` — `78e25627-943c-4912-bde5-37d05a6045ac`
 
 ---
-[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Дроби та їхні моделі](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

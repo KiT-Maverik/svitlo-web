@@ -11,4 +11,4 @@
 - `math.multiply.distributive` — `f8ebb2c5-d8e4-42d5-96ee-71e6ab32269e`
 
 ---
-[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)

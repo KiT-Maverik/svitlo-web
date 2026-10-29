@@ -10,4 +10,4 @@
 - `math.problems.three-step-plan` — `be6ad385-9004-4823-9f89-ef8c6ae2341a`
 
 ---
-[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../../grade-4.md)
+[Числа та обчислення](../README.md) · [Curriculum Grade 4](../../grade-4.curriculum.md)
