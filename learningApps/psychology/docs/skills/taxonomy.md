@@ -8,11 +8,11 @@ Breadth references, not imposed curricula: [APA Guidelines 3.0](https://www.apa.
 
 ## SUMMARY
 
-Domains: 8
-Groups: 33
-Skills: 146
+Domains: 14
+Groups: 57
+Skills: 252
 
-Code files: 0/8 Domains · 0/33 Groups · 0/146 Skills
+Code files: 0/14 Domains · 0/57 Groups · 0/252 Skills
 
 ## DOMAINS
 
@@ -1219,3 +1219,879 @@ Explain responses aimed at modifying a controllable source of difficulty.
 [Not implemented](#)
 
 Explain responses aimed at managing distress when the situation itself may not be immediately alterable.
+
+### Motivation, Goals, and Habits
+
+Groups: 3 · Skills: 14
+
+[Not implemented](#)
+
+Motivation concerns what initiates, directs, and sustains action. Goals and habits reflect interactions among needs, rewards, expectations, self-control, and environmental cues rather than an unchanging amount of willpower.
+
+#### Motivational Mechanisms
+
+Skills: 5
+
+[Not implemented](#)
+
+Behavior is influenced by internal states and external incentives, with competing explanations and substantial individual variation.
+
+##### Intrinsic and Extrinsic Motivation
+
+[Not implemented](#)
+
+Distinguish engaging in an activity for its inherent interest from acting primarily for a separable outcome.
+
+##### Needs and Drives
+
+[Not implemented](#)
+
+Explain how physiological and psychological needs can influence the direction and intensity of behavior.
+
+##### Expectancy and Value
+
+[Not implemented](#)
+
+Analyze how anticipated success and the perceived value of an outcome jointly influence effort.
+
+##### Approach and Avoidance Motivation
+
+[Not implemented](#)
+
+Distinguish pursuing desired outcomes from preventing or escaping anticipated negative ones.
+
+##### Motivational Crowding
+
+[Not implemented](#)
+
+Evaluate circumstances in which external incentives change an existing interest rather than simply adding more motivation.
+
+#### Goal Pursuit and Self-Control
+
+Skills: 5
+
+[Not implemented](#)
+
+Persistent action requires monitoring progress, choosing responses, and adapting goals to changing conditions.
+
+##### Goal Specificity
+
+[Not implemented](#)
+
+Explain how a clearly defined target can guide action and progress monitoring differently from a vague intention.
+
+##### Implementation Intentions
+
+[Not implemented](#)
+
+Explain how linking a situational cue to a planned response can bridge an intention–action gap.
+
+##### Self-Control and Inhibition
+
+[Not implemented](#)
+
+Describe delaying or redirecting an immediate impulse in service of a competing aim, including contextual limitations.
+
+##### Self-Efficacy
+
+[Not implemented](#)
+
+Explain how beliefs about one's capability influence attempts, persistence, and response to setbacks without guaranteeing outcomes.
+
+##### Goal Revision and Disengagement
+
+[Not implemented](#)
+
+Evaluate when adjusting or abandoning an unattainable objective may be more adaptive than persisting.
+
+#### Habit Mechanisms
+
+Skills: 4
+
+[Not implemented](#)
+
+Repeated actions become cue-sensitive routines that can operate with reduced deliberation, though habits remain dependent on context.
+
+##### Habit Formation
+
+[Not implemented](#)
+
+Relate repetition in stable contexts and reinforcing outcomes to increasing automaticity.
+
+##### Habit Cues
+
+[Not implemented](#)
+
+Identify environmental or internal signals that trigger a learned routine.
+
+##### Habit Disruption
+
+[Not implemented](#)
+
+Explain how changed surroundings or interruption of familiar cues can alter routine behavior.
+
+##### Habit Substitution
+
+[Not implemented](#)
+
+Analyze replacing an established response with an alternative to the same cue rather than relying only on suppression.
+
+### Social Psychology
+
+Groups: 4 · Skills: 21
+
+[Not implemented](#)
+
+Thought and behavior change in the actual or imagined presence of others. Social processes involve interpretation, group membership, influence, and relationships without assuming all people respond alike.
+
+#### Social Perception
+
+Skills: 5
+
+[Not implemented](#)
+
+Judgments about other people are inferred from limited evidence and shaped by expectations, roles, and context.
+
+##### Social Attribution
+
+[Not implemented](#)
+
+Distinguish explanations invoking a person's dispositions from those emphasizing circumstances and available choices.
+
+##### First Impressions
+
+[Not implemented](#)
+
+Explain how early information can disproportionately influence expectations about a person.
+
+##### Stereotype Activation
+
+[Not implemented](#)
+
+Analyze how culturally available categories affect social perception without treating stereotypes as reliable descriptions.
+
+##### Perspective Taking
+
+[Not implemented](#)
+
+Explain inferring another person's possible viewpoint while recognizing that their actual experience remains uncertain.
+
+##### Empathy and Compassion
+
+[Not implemented](#)
+
+Distinguish understanding someone's perspective, sharing an affective response, and being motivated to support them.
+
+#### Influence and Persuasion
+
+Skills: 6
+
+[Not implemented](#)
+
+Other people's behavior, claims, and group norms can shift beliefs or actions through identifiable social mechanisms.
+
+##### Conformity
+
+[Not implemented](#)
+
+Explain changes in expressed judgments or behavior under perceived group pressure.
+
+##### Obedience to Authority
+
+[Not implemented](#)
+
+Analyze how authority cues and situational pressures influence compliance, including ethical limits of classic research.
+
+##### Informational Social Influence
+
+[Not implemented](#)
+
+Explain adopting others' judgments when they appear to provide useful evidence about uncertainty.
+
+##### Normative Social Influence
+
+[Not implemented](#)
+
+Explain compliance motivated by social approval or avoidance of rejection.
+
+##### Persuasion Routes
+
+[Not implemented](#)
+
+Compare careful evaluation of arguments with reliance on source or presentation cues.
+
+##### Recognizing Psychological Manipulation
+
+[Not implemented](#)
+
+Identify exploitative uses of urgency, isolation, guilt, or unequal power without teaching techniques to manipulate others.
+
+#### Group Dynamics
+
+Skills: 5
+
+[Not implemented](#)
+
+Belonging and coordination can alter performance, responsibility, intergroup attitudes, and collective decisions.
+
+##### Social Identity
+
+[Not implemented](#)
+
+Explain how membership in meaningful groups contributes to self-description and intergroup interpretation.
+
+##### In-Group and Out-Group Bias
+
+[Not implemented](#)
+
+Analyze unequal evaluation of people based on group membership even without direct personal experience.
+
+##### Bystander Effect
+
+[Not implemented](#)
+
+Explain how others' presence can change perceived responsibility or interpretations of a situation.
+
+##### Group Polarization
+
+[Not implemented](#)
+
+Describe how discussion among similarly inclined people can shift collective judgments toward more extreme positions.
+
+##### Groupthink
+
+[Not implemented](#)
+
+Identify pressures toward unanimity that discourage dissent and reduce the scrutiny of alternatives.
+
+#### Relationships and Communication
+
+Skills: 5
+
+[Not implemented](#)
+
+Relationships develop through mutual interpretation, reciprocal actions, boundaries, and social context rather than perfect reading of another's intentions.
+
+##### Attachment in Relationships
+
+[Not implemented](#)
+
+Explain how expectations about availability and support can influence close relationships while avoiding rigid labeling of individuals.
+
+##### Active Listening
+
+[Not implemented](#)
+
+Distinguish checking understanding and attending to another person's meaning from merely waiting to reply.
+
+##### Nonverbal Communication
+
+[Not implemented](#)
+
+Interpret gesture, tone, and interpersonal distance in cultural and situational context rather than through universal decoding rules.
+
+##### Conflict and Repair
+
+[Not implemented](#)
+
+Analyze how misinterpretation, escalation, apology, and renegotiation affect interpersonal conflict.
+
+##### Personal Boundaries and Consent
+
+[Not implemented](#)
+
+Distinguish voluntary agreement and respect for personal limits from pressure or assumptions about another's wishes.
+
+### Development Across the Lifespan
+
+Groups: 4 · Skills: 17
+
+[Not implemented](#)
+
+Cognition, relationships, identity, and emotional regulation change from infancy through older adulthood. Developmental patterns express interactions of maturation and lived experience, not identical milestones for every person.
+
+#### Mechanisms of Development
+
+Skills: 4
+
+[Not implemented](#)
+
+Research examines change over time, developmental diversity, and how environments interact with biological processes.
+
+##### Maturation and Experience
+
+[Not implemented](#)
+
+Explain how developmental changes reflect interacting biological processes and opportunities for learning.
+
+##### Developmental Research Designs
+
+[Not implemented](#)
+
+Compare cross-sectional and longitudinal evidence, including age, cohort, and attrition limitations.
+
+##### Developmental Plasticity
+
+[Not implemented](#)
+
+Explain why abilities may change with experience across life while acknowledging sensitive periods and contextual constraints.
+
+##### Individual Developmental Variation
+
+[Not implemented](#)
+
+Interpret population patterns without treating a different pace or pathway as proof of disorder.
+
+#### Early and Middle Childhood
+
+Skills: 5
+
+[Not implemented](#)
+
+Rapid changes in attention, symbolic representation, relationships, and self-regulation create different opportunities for learning.
+
+##### Early Social Attachment
+
+[Not implemented](#)
+
+Explain how caregiving relationships support expectations of safety and connection without assigning permanent attachment labels.
+
+##### Object Permanence
+
+[Not implemented](#)
+
+Explain understanding that objects continue to exist when temporarily outside direct perception.
+
+##### Theory of Mind Development
+
+[Not implemented](#)
+
+Describe increasing ability to represent that others may have beliefs or knowledge different from one's own.
+
+##### Executive Function Development
+
+[Not implemented](#)
+
+Explain changes in inhibitory control, updating, and flexible rule use during childhood.
+
+##### Play and Learning
+
+[Not implemented](#)
+
+Assess how different forms of play afford practice in imagination, cooperation, or problem solving without claiming all play has identical effects.
+
+#### Adolescence and Identity
+
+Skills: 4
+
+[Not implemented](#)
+
+Developing autonomy, identity, peer relationships, and cognitive control interact with social expectations and opportunities.
+
+##### Identity Exploration
+
+[Not implemented](#)
+
+Explain exploration of personal commitments and roles without prescribing a single identity pathway.
+
+##### Peer Influence in Adolescence
+
+[Not implemented](#)
+
+Analyze how peers affect preferences and behavior, considering protective as well as risky social effects.
+
+##### Adolescent Risk Taking
+
+[Not implemented](#)
+
+Explain the interaction between reward sensitivity, control, context, and opportunity without stereotyping all adolescents.
+
+##### Autonomy Development
+
+[Not implemented](#)
+
+Describe changes in independent decision-making and negotiated responsibilities across relationships.
+
+#### Adulthood and Aging
+
+Skills: 4
+
+[Not implemented](#)
+
+Psychological development continues through adulthood, including shifting roles, accumulated experience, and heterogeneous cognitive trajectories.
+
+##### Adult Role Transitions
+
+[Not implemented](#)
+
+Analyze how work, family, and social changes can reshape self-concept and coping.
+
+##### Cognitive Aging
+
+[Not implemented](#)
+
+Distinguish average age-related changes in some processing abilities from preserved or improved knowledge and variation among people.
+
+##### Socioemotional Selectivity
+
+[Not implemented](#)
+
+Explain how perceived time horizons may affect prioritization of goals and close relationships.
+
+##### Lifelong Adaptation
+
+[Not implemented](#)
+
+Evaluate how learning, context, and support influence functioning at different adult life stages.
+
+### Personality and Individual Variation
+
+Groups: 4 · Skills: 17
+
+[Not implemented](#)
+
+People differ in characteristic patterns of thought, feeling, and behavior, but measurement requires caution about situations, cultural meaning, and fairness. Describing a tendency never fixes a person's worth or destiny.
+
+#### Traits and Personality Models
+
+Skills: 5
+
+[Not implemented](#)
+
+Trait models summarize recurring behavioral tendencies while leaving room for situational variation and change.
+
+##### Trait versus State
+
+[Not implemented](#)
+
+Distinguish relatively stable tendencies from temporary conditions affecting behavior.
+
+##### Big Five Trait Model
+
+[Not implemented](#)
+
+Explain the five broad personality dimensions as descriptive continua rather than categorical diagnoses.
+
+##### Trait–Situation Interaction
+
+[Not implemented](#)
+
+Analyze why the same person may behave differently under different incentives or social demands.
+
+##### Personality Assessment
+
+[Not implemented](#)
+
+Evaluate self-report and informant measures for reliability, validity, and response distortion.
+
+##### Personality Stability and Change
+
+[Not implemented](#)
+
+Explain both rank-order consistency and mean-level changes across the lifespan.
+
+#### Cognitive and Learning Differences
+
+Skills: 4
+
+[Not implemented](#)
+
+Performance varies across abilities, experiences, and testing contexts, with no one score capturing every capability.
+
+##### Individual Cognitive Profiles
+
+[Not implemented](#)
+
+Interpret strengths and difficulties across different cognitive tasks without treating one performance as global ability.
+
+##### Nature and Nurture in Ability
+
+[Not implemented](#)
+
+Analyze interplay among heredity, learning opportunities, and environmental conditions in measured performance.
+
+##### Standardized Score Interpretation
+
+[Not implemented](#)
+
+Explain norm-referenced scores and why reference populations and test conditions matter.
+
+##### Fairness in Cognitive Assessment
+
+[Not implemented](#)
+
+Identify language, cultural, disability, and resource factors that can undermine an interpretation.
+
+#### Self-Concept and Identity
+
+Skills: 4
+
+[Not implemented](#)
+
+Accounts people hold about themselves are shaped through experience and relationships and may not match external observations.
+
+##### Self-Concept
+
+[Not implemented](#)
+
+Explain how people organize beliefs about their characteristics, roles, and competencies.
+
+##### Self-Esteem
+
+[Not implemented](#)
+
+Distinguish an overall evaluation of self-worth from domain-specific confidence or demonstrated skill.
+
+##### Self-Serving Attributions
+
+[Not implemented](#)
+
+Explain how explanations of successes and failures may protect a favorable self-image.
+
+##### Identity and Social Context
+
+[Not implemented](#)
+
+Analyze how roles, belonging, and social expectations shape self-descriptions.
+
+#### Culture and Diversity
+
+Skills: 4
+
+[Not implemented](#)
+
+Human psychological patterns must be examined against differences in context, institutions, and ways of interpreting experience.
+
+##### Cultural Variation in Behavior
+
+[Not implemented](#)
+
+Explain how norms and practices shape psychological expression without assuming uniformity within any culture.
+
+##### Cross-Cultural Research Comparability
+
+[Not implemented](#)
+
+Evaluate whether tasks and concepts carry comparable meaning across studied populations.
+
+##### Bias in Psychological Norms
+
+[Not implemented](#)
+
+Identify how a reference sample can cause ordinary differences to be misclassified as deviations.
+
+##### Avoiding Psychological Essentialism
+
+[Not implemented](#)
+
+Challenge explanations that attribute complex traits to immutable characteristics of a social group.
+
+### Mental Health and Clinical Science
+
+Groups: 4 · Skills: 17
+
+[Not implemented](#)
+
+Clinical psychology investigates distress, impaired functioning, and evidence-based assessment and intervention. Learning these concepts does not authorize students to diagnose themselves or others, deliver therapy, or replace qualified professional care.
+
+#### Wellbeing and Impairment
+
+Skills: 4
+
+[Not implemented](#)
+
+Psychological wellbeing is multidimensional, and the presence of an unpleasant emotion alone is not evidence of a disorder.
+
+##### Psychological Wellbeing
+
+[Not implemented](#)
+
+Explain dimensions such as functioning, connection, and life satisfaction without assuming permanent happiness.
+
+##### Distress versus Disorder
+
+[Not implemented](#)
+
+Distinguish common emotional responses from patterns involving persistence, severity, and functional impairment.
+
+##### Mental Health Stigma
+
+[Not implemented](#)
+
+Analyze how stereotypes and discriminatory assumptions affect people seeking understanding or care.
+
+##### Psychological Resilience
+
+[Not implemented](#)
+
+Explain adaptive functioning amid adversity as a dynamic process involving resources and context rather than an unchangeable personal trait.
+
+#### Patterns of Psychological Difficulty
+
+Skills: 5
+
+[Not implemented](#)
+
+Clinical categories summarize heterogeneous symptom patterns; they should not be inferred from a few ordinary behaviors or applied as labels to peers.
+
+##### Anxiety-Related Difficulties
+
+[Not implemented](#)
+
+Explain how excessive fear or worry may interfere with functioning while distinguishing them from common situational anxiety.
+
+##### Depressive Difficulties
+
+[Not implemented](#)
+
+Describe persistent changes in mood, interest, or functioning without confusing an episode of sadness with a diagnosis.
+
+##### Trauma-Related Responses
+
+[Not implemented](#)
+
+Explain how exposure to threatening events can affect memory, arousal, and avoidance, with outcomes varying across people.
+
+##### Compulsive and Repetitive Patterns
+
+[Not implemented](#)
+
+Distinguish persistent unwanted thoughts and ritualized behavior associated with impairment from ordinary habits.
+
+##### Neurodevelopmental Differences
+
+[Not implemented](#)
+
+Explain developmentally arising differences in cognition or behavior without equating disability or neurodivergence with lack of worth.
+
+#### Assessment and Professional Support
+
+Skills: 4
+
+[Not implemented](#)
+
+Clinical decisions use trained judgment, validated measures, and context; ethical education focuses on how professional care works rather than practicing diagnosis.
+
+##### Clinical Interview Purpose
+
+[Not implemented](#)
+
+Explain what a structured history can contribute to understanding a person's reported difficulties and context.
+
+##### Psychological Screening versus Diagnosis
+
+[Not implemented](#)
+
+Distinguish preliminary indicators from comprehensive professional assessment.
+
+##### Clinical Formulation
+
+[Not implemented](#)
+
+Explain combining developmental, social, behavioral, and situational evidence into a provisional account of a person's difficulties.
+
+##### Professional Roles and Referral
+
+[Not implemented](#)
+
+Distinguish roles of psychological practitioners and medical professionals and identify why appropriate referral may be needed.
+
+#### Intervention Evidence and Ethics
+
+Skills: 4
+
+[Not implemented](#)
+
+Treatment approaches propose different mechanisms and require evaluation for effectiveness, suitability, potential harm, and professional standards.
+
+##### Cognitive Behavioral Interventions
+
+[Not implemented](#)
+
+Explain how changing learned response patterns and examining interpretations can support psychological treatment without treating the explanation as therapy training.
+
+##### Behavioral Exposure Principles
+
+[Not implemented](#)
+
+Explain the rationale of supported, appropriately supervised exposure approaches while avoiding instructions for unsupervised self-treatment.
+
+##### Therapeutic Alliance
+
+[Not implemented](#)
+
+Explain why collaboration, trust, and agreement on goals matter for outcomes across psychological therapies.
+
+##### Evaluating Treatment Claims
+
+[Not implemented](#)
+
+Assess evidence from controlled studies, meaningful outcomes, adverse effects, and follow-up rather than testimonials or guaranteed-cure marketing.
+
+### Applied Psychology
+
+Groups: 5 · Skills: 20
+
+[Not implemented](#)
+
+Psychological knowledge informs educational, occupational, health, design, and community settings. Applications translate evidence about people into context-sensitive decisions without claiming that a single intervention suits everyone.
+
+#### Learning Environments
+
+Skills: 4
+
+[Not implemented](#)
+
+Educational psychology examines attention, feedback, motivation, and differences among learners to understand conditions for effective learning.
+
+##### Learning Environment Design
+
+[Not implemented](#)
+
+Analyze how distraction, task demands, and instructional supports affect opportunities to learn.
+
+##### Feedback in Education
+
+[Not implemented](#)
+
+Distinguish informative performance feedback from judgments about a learner's fixed ability.
+
+##### Motivational Climate
+
+[Not implemented](#)
+
+Explain how autonomy, belonging, and evaluation pressures influence learner engagement.
+
+##### Transfer to New Contexts
+
+[Not implemented](#)
+
+Evaluate whether a learned competency is used in situations different from those in which it was practiced.
+
+#### Work and Organizations
+
+Skills: 4
+
+[Not implemented](#)
+
+Individual motivation, coordination, organizational culture, and workplace design shape performance and wellbeing at work.
+
+##### Work Motivation
+
+[Not implemented](#)
+
+Analyze how perceived fairness, autonomy, incentives, and meaningful goals influence workplace effort.
+
+##### Team Coordination
+
+[Not implemented](#)
+
+Explain how shared expectations, information exchange, and role clarity affect collective performance.
+
+##### Personnel Assessment Fairness
+
+[Not implemented](#)
+
+Evaluate reliability, job relevance, and discriminatory risk in employment selection measures.
+
+##### Organizational Stressors
+
+[Not implemented](#)
+
+Identify how workload, lack of control, and interpersonal conditions contribute to work-related strain.
+
+#### Health Behavior
+
+Skills: 4
+
+[Not implemented](#)
+
+Health psychology examines how beliefs, routines, social surroundings, and perceived barriers affect health-related decisions, without replacing medical guidance.
+
+##### Health Beliefs and Action
+
+[Not implemented](#)
+
+Explain why perceived risk, expected benefit, and practical barriers influence preventive behavior.
+
+##### Behavior Change Interventions
+
+[Not implemented](#)
+
+Evaluate psychological mechanisms behind reminders, planning, feedback, and social support for behavior change.
+
+##### Social Support and Health
+
+[Not implemented](#)
+
+Analyze how perceived and available support may influence coping and health-related behavior.
+
+##### Adherence to Care Plans
+
+[Not implemented](#)
+
+Explain psychological factors affecting follow-through on professional recommendations without independently prescribing treatment.
+
+#### Human Factors and User Research
+
+Skills: 4
+
+[Not implemented](#)
+
+Design decisions benefit from evidence about human attention, memory, perception, workload, and error; implementation remains owned by engineering or informatics.
+
+##### Human Error and System Design
+
+[Not implemented](#)
+
+Analyze how confusing feedback and task demands create foreseeable mistakes rather than attributing all failure to careless users.
+
+##### Cognitive Load in Interfaces
+
+[Not implemented](#)
+
+Explain how limited working memory and divided attention influence task performance with complex controls.
+
+##### Usability Research Methods
+
+[Not implemented](#)
+
+Evaluate observation, task completion evidence, and user reports as complementary sources about interaction difficulty.
+
+##### Accessible Interaction Psychology
+
+[Not implemented](#)
+
+Explain why sensory, cognitive, and motor variation must inform the interpretation of user research and design constraints.
+
+#### Community, Media, and Environment
+
+Skills: 4
+
+[Not implemented](#)
+
+Social structures and mediated information influence beliefs, cooperation, and behavior beyond a single interpersonal exchange.
+
+##### Media Influence on Judgment
+
+[Not implemented](#)
+
+Analyze how repetition, salience, and selective exposure affect perceived norms or risks.
+
+##### Social Norms in Communities
+
+[Not implemented](#)
+
+Explain how descriptive and injunctive norms can shape behavior in shared settings.
+
+##### Environmental Behavior Change
+
+[Not implemented](#)
+
+Evaluate psychological barriers and enabling conditions for pro-environmental choices.
+
+##### Community Intervention Evaluation
+
+[Not implemented](#)
+
+Assess whether a population-level behavior-change initiative demonstrates measurable effects without assuming a persuasive message caused them.
