@@ -550,125 +550,125 @@ Relate sound, smell, movement, or coloration to information received by another 
 
 Explain how cooperative foraging, defense, or care for offspring may improve the success of individuals.
 
-### Мікологія
+### Mycology
 
 Groups: 0 · Skills: 4
 
 [Not implemented](#)
 
-Гриби як окрема гілка клітинного життя: живлення, грибниця, плодові тіла та роль грибів у кругообігу речовин. Мікроскопічні гриби перетинаються за масштабом із предметом мікробіології, але тут ключовими є їхня будова та біологічні особливості.
+Fungi as a distinct branch of cellular life: nutrition, mycelium, fruiting bodies, and the role of fungi in matter cycling. Microscopic fungi overlap with Microbiology in scale, but their structure and biological characteristics are central here.
 
-#### Розпізнавати гриби як окрему групу організмів
-
-[Not implemented](#)
-
-Розрізняти гриби, рослини й тварин з огляду на спосіб отримання органічних речовин та особливості будови.
-
-#### Визначати основні частини плодового тіла шапинкового гриба
+#### Recognize Fungi as a Distinct Group of Organisms
 
 [Not implemented](#)
 
-Знаходити шапинку, ніжку та структури утворення спор на схемі типового шапинкового гриба.
+Distinguish fungi, plants, and animals by how they obtain organic substances and by structural characteristics.
 
-#### Відрізняти грибницю від плодового тіла
-
-[Not implemented](#)
-
-Пояснювати, чому підземна чи прихована мережа гіф — основне тіло багатьох грибів, а видима шапинка — лише структура розмноження.
-
-#### Пояснювати роль грибів у розкладанні органічних решток
+#### Identify the Main Parts of a Mushroom Fruiting Body
 
 [Not implemented](#)
 
-Пов'язувати виділення грибами ферментів із розщепленням решток і повторним використанням речовин в екосистемі.
+Locate the cap, stalk, and spore-producing structures on a diagram of a typical cap-and-stalk mushroom.
 
-### Мікробіологія
+#### Distinguish Mycelium from a Fruiting Body
+
+[Not implemented](#)
+
+Explain why an underground or concealed network of hyphae forms the main body of many fungi, while the visible mushroom cap is only a reproductive structure.
+
+#### Explain the Role of Fungi in Decomposing Organic Remains
+
+[Not implemented](#)
+
+Relate enzymes secreted by fungi to the breakdown of remains and the reuse of substances in an ecosystem.
+
+### Microbiology
 
 Groups: 0 · Skills: 9
 
 [Not implemented](#)
 
-Мікроскопічні клітинні форми життя та їхні процеси, зокрема бактерії, ферментація, розкладання й взаємодія з організмом людини. Мікроскопічний розмір не є ознакою одного таксона; домен розглядає спільний контекст мікробних процесів.
+Microscopic cellular life forms and their processes, including bacteria, fermentation, decomposition, and interactions with the human body. Microscopic size does not define a single taxon; this Domain considers the shared context of microbial processes.
 
-#### Розпізнавати мікроорганізми за описом
-
-[Not implemented](#)
-
-Відрізняти мікроскопічний масштаб від належності до певного таксона: дрібними можуть бути бактерії, одноклітинні еукаріоти й інші організми.
-
-#### Розрізняти бактерії та археї
+#### Recognize Microorganisms from Descriptions
 
 [Not implemented](#)
 
-Пояснювати, що бактерії й археї — окремі еволюційні лінії клітинних організмів без оформленого ядра; відмінності молекулярної будови, зокрема мембранних ліпідів і клітинних оболонок, не можна звести до зовнішньої форми клітини.
+Distinguish microscopic scale from taxonomic membership: bacteria, unicellular eukaryotes, and other organisms may all be very small.
 
-#### Розпізнавати мікроскопічних еукаріотів
-
-[Not implemented](#)
-
-Розпізнавати одноклітинних еукаріотів із ядром, зокрема різноманітних протистів, водоростей і дріжджів; не вважати «мікроорганізми» єдиним біологічним таксоном.
-
-#### Пояснювати будову прокаріотичної клітини
+#### Distinguish Bacteria and Archaea
 
 [Not implemented](#)
 
-Пояснювати організацію клітин бактерій і архей без мембранного ядра, роль мембрани, цитоплазми, генетичного матеріалу та рибосом; відрізняти прокаріотичну будову від будови еукаріотичної клітини.
+Explain that bacteria and archaea are separate evolutionary lineages of cellular organisms without a membrane-bound nucleus; molecular structural differences, including membrane lipids and cell envelopes, cannot be reduced to external cell shape.
 
-#### Пояснювати поділ бактерій
-
-[Not implemented](#)
-
-Пояснювати бінарний поділ бактерії через копіювання її генетичного матеріалу та утворення дочірніх клітин, не плутаючи його з мітозом еукаріотів.
-
-#### Визначати середовища існування бактерій
+#### Recognize Microscopic Eukaryotes
 
 [Not implemented](#)
 
-Пояснювати на прикладах, чому бактерії трапляються в ґрунті, воді, організмах і навіть екстремальних умовах.
+Recognize nucleated unicellular eukaryotes, including diverse protists, algae, and yeasts; do not treat 'microorganisms' as a single biological taxon.
 
-#### Пояснювати роль мікроорганізмів у ферментації
-
-[Not implemented](#)
-
-Пов'язувати перетворення цукрів мікроорганізмами з утворенням нових продуктів у харчових технологіях.
-
-#### Пояснювати їхню роль у розкладанні
+#### Explain Prokaryotic Cell Structure
 
 [Not implemented](#)
 
-Показувати, як бактерії та інші мікроорганізми розкладають органічні залишки й повертають речовини в обіг.
+Explain the organization of bacterial and archaeal cells without a membrane-bound nucleus and the roles of the membrane, cytoplasm, genetic material, and ribosomes; distinguish prokaryotic from eukaryotic cell organization.
 
-#### Розрізняти корисні та шкідливі взаємодії мікроорганізмів із людиною
+#### Explain Bacterial Cell Division
 
 [Not implemented](#)
 
-Відрізняти нормальні, корисні та потенційно хвороботворні взаємодії залежно від мікроорганізму, господаря й умов.
+Explain bacterial binary fission through replication of genetic material and formation of daughter cells, without confusing it with eukaryotic mitosis.
 
-### Вірусологія
+#### Identify Bacterial Habitats
+
+[Not implemented](#)
+
+Use examples to explain why bacteria occur in soil, water, organisms, and even extreme environments.
+
+#### Explain the Role of Microorganisms in Fermentation
+
+[Not implemented](#)
+
+Relate microbial transformations of sugars to the production of new products in food technologies.
+
+#### Explain Their Role in Decomposition
+
+[Not implemented](#)
+
+Show how bacteria and other microorganisms break down organic residues and return substances to circulation.
+
+#### Distinguish Beneficial and Harmful Microbial Interactions with Humans
+
+[Not implemented](#)
+
+Distinguish normal, beneficial, and potentially disease-causing interactions according to the microorganism, host, and conditions.
+
+### Virology
 
 Groups: 0 · Skills: 3
 
 [Not implemented](#)
 
-Віруси як неклітинні інфекційні агенти: будова, розмноження в клітині-хазяїні та шляхи поширення. Вони не є клітинними організмами, хоча вивчаються поруч із ними.
+Viruses as noncellular infectious agents: structure, reproduction inside host cells, and routes of transmission. They are not cellular organisms, although they are studied alongside them.
 
-#### Пояснювати, що таке вірус
-
-[Not implemented](#)
-
-Пояснювати, що вірус — неклітинний інфекційний агент із генетичним матеріалом; власного апарату синтезу білків він не має й відтворюється завдяки клітині-хазяїну.
-
-#### Відрізняти вірус від клітинного організму
+#### Explain What a Virus Is
 
 [Not implemented](#)
 
-Порівнювати наявність клітинної мембрани, цитоплазми й власного обміну речовин у клітинних організмів із відсутністю такої організації в вірусній частинці.
+Explain that a virus is a noncellular infectious agent containing genetic material; it lacks its own protein-synthesis machinery and reproduces using a host cell.
 
-#### Пояснювати механізми поширення вірусів
+#### Distinguish a Virus from a Cellular Organism
 
 [Not implemented](#)
 
-Пояснювати, як віруси передаються між хазяями різними шляхами — через респіраторні частинки, контакт, біологічні рідини, переносників або інші механізми — і чому конкретний шлях залежить від властивостей вірусу та його хазяїв.
+Compare cellular organisms' cell membranes, cytoplasm, and independent metabolism with the absence of this cellular organization in a virus particle.
+
+#### Explain Mechanisms of Viral Transmission
+
+[Not implemented](#)
+
+Explain how viruses spread between hosts by different routes, including respiratory particles, contact, biological fluids, vectors, and other mechanisms, and why a particular route depends on the characteristics of the virus and its hosts.
 
 ### Анатомія та фізіологія людини
 
