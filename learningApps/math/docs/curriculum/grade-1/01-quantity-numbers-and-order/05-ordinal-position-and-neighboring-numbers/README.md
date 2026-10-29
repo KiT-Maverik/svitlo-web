@@ -9,8 +9,8 @@
 
 ## Target Skills
 
-- [Recognizing ordinal position](../../../../../src/data/skillsTaxonomy/counting/ordinal/skills/basicOrdinal.data.ts)
-- [Previous, next and intermediate numbers](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAfterBetween.data.ts)
+- [Basic Ordinal](../../../../../src/data/skillsTaxonomy/counting/ordinal/skills/basicOrdinal.data.ts)
+- [Before After Between](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAfterBetween.data.ts)
 
 ## Prerequisites
 

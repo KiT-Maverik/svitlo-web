@@ -9,7 +9,7 @@
 
 ## Target Skills
 
-- [Reading, writing and matching numbers 0–20](../../../../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite20.data.ts)
+- [Read Write 20](../../../../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite20.data.ts)
 
 ## Prerequisites
 

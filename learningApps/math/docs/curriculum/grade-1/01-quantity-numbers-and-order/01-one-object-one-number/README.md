@@ -9,8 +9,8 @@
 
 ## Target Skills
 
-- [One-to-one correspondence when counting](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/oneToOne.data.ts)
-- [Determining how many objects are in a set](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/basicCardinality.data.ts)
+- [One To One](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/oneToOne.data.ts)
+- [Basic Cardinality](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/basicCardinality.data.ts)
 
 ## Prerequisites
 

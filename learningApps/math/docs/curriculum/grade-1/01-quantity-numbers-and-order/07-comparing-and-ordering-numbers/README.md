@@ -9,8 +9,8 @@
 
 ## Target Skills
 
-- [Comparison symbols <, > and =](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/comparisonSymbols.data.ts)
-- [Ordering numbers 0–20](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/order20.data.ts)
+- [Comparison Symbols](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/comparisonSymbols.data.ts)
+- [Order 20](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/order20.data.ts)
 
 ## Prerequisites
 

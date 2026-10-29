@@ -9,7 +9,7 @@
 
 ## Target Skills
 
-- [Matching representations of a number](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/multipleRepresentations.data.ts)
+- [Multiple Representations](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/multipleRepresentations.data.ts)
 
 ## Prerequisites
 

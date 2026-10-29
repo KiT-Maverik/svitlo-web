@@ -9,8 +9,8 @@
 
 ## Target Skills
 
-- [Counting in steps of 2](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy2.data.ts)
-- [Counting in steps of 5](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.ts)
+- [Count By 2](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy2.data.ts)
+- [Count By 5](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.ts)
 
 ## Prerequisites
 

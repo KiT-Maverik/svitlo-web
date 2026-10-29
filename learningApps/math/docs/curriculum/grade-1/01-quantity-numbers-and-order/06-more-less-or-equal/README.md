@@ -9,8 +9,8 @@
 
 ## Target Skills
 
-- [Comparing sets by matching or counting](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/compareSets.data.ts)
-- [Greater, less or equal quantities](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/moreLessEqual.data.ts)
+- [Compare Sets](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/compareSets.data.ts)
+- [More Less Equal](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/moreLessEqual.data.ts)
 
 ## Prerequisites
 

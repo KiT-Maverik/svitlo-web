@@ -9,8 +9,8 @@
 
 ## Target Skills
 
-- [Counting forward within 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/forward20.data.ts)
-- [Counting backward within 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/backward20.data.ts)
+- [Forward 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/forward20.data.ts)
+- [Backward 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/backward20.data.ts)
 
 ## Prerequisites
 

@@ -9,7 +9,7 @@
 
 ## Target Skills
 
-- [Grouping and ungrouping ten ones](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.data.ts)
+- [Make Ten](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.data.ts)
 
 ## Prerequisites
 

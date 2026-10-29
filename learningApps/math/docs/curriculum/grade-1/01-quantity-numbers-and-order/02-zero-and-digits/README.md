@@ -9,8 +9,8 @@
 
 ## Target Skills
 
-- [Understanding zero as an empty quantity](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/zero.data.ts)
-- [Digits 0–9 and the meaning of a digit](../../../../../src/data/skillsTaxonomy/numeration/notation/skills/digits09.data.ts)
+- [Zero](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/zero.data.ts)
+- [Digits 09](../../../../../src/data/skillsTaxonomy/numeration/notation/skills/digits09.data.ts)
 
 ## Prerequisites
 

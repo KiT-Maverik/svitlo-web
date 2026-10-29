@@ -9,7 +9,7 @@
 
 ## Target Skills
 
-- [Numbers on a line to 20](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine20.data.ts)
+- [Number Line 20](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine20.data.ts)
 
 ## Prerequisites
 
