@@ -2156,7 +2156,7 @@ Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/fractions
 
 Чверть від 20 ягід — п’ять; сюжет вимагає рівного поділу початкової кількості.
 
-#### Задачі на групи
+#### Grouping problems
 
 Skills: 2
 
@@ -2164,19 +2164,19 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/groups.data.ts)
 
-##### Лічити всі прості комбінації вибору по одному з двох наборів (одяг, меню тощо)
+##### Counting combinations from two sets
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/skills/correspondenceCombinations.data.ts)
 
 Для трьох футболок і двох штанів існує шість пар вибору; кожна пара має складатися з одного елемента кожного набору.
 
-##### Розв’язувати задачі на кількість груп, розмір групи та загальну кількість
+##### Solving equal-group problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/groups/skills/equalGroups.data.ts)
 
 Якщо є п’ять пакетів по чотири цукерки, усього 20; за двома із цих трьох величин можна знайти третю.
 
-#### Задачі на величини
+#### Quantity problems
 
 Skills: 3
 
@@ -2184,25 +2184,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/quantities.data.ts)
 
-##### Використовувати зв'язок продуктивність × час = виконаний обсяг у простих задачах
+##### Relating work rate, time and output
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/workRateTime.data.ts)
 
 За продуктивності 3 деталі за годину протягом 4 годин виконано 12 деталей; одиниці часу й продуктивності мають узгоджуватися.
 
-##### Моделювати задачі на вартість через зв’язок ціни, кількості та суми
+##### Relating price, quantity and cost
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/priceQuantityCost.data.ts)
 
 Якщо ціна одиниці 7, а куплено 3 одиниці, модель вартості дає 21; однакова сума може відповідати іншій парі значень.
 
-##### Моделювати задачі на довжину, масу, місткість і час
+##### Modeling measurement problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/quantities/skills/measurementContext.data.ts)
 
 Для шляху, рідини або маси сюжет має визначати доречну величину й одиницю; числове обчислення без цієї відповідності неповне.
 
-### Міркування
+### Reasoning
 
 Groups: 4 · Skills: 11
 
@@ -2210,7 +2210,7 @@ Code: [Code](../../src/data/skillsTaxonomy/reasoning/reasoning.data.ts)
 
 Зосереджується на аргументації математичних тверджень, пошуку контрприкладів, логічних висновках, перевірці розв’язань та переході між формами подання.
 
-#### Аргументація
+#### Mathematical argumentation
 
 Skills: 5
 
@@ -2218,37 +2218,37 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/argumentation.data.ts)
 
-##### Об’єднувати об’єкти чи числа за правилом і пояснювати вибір
+##### Classifying objects or numbers by a rule and justifying the choice
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/classifyAndJustify.data.ts)
 
 До групи можна зарахувати тільки числа, кратні 3; рішення обґрунтовують правилом, а не зовнішньою схожістю записів.
 
-##### Знаходити приклад, який спростовує хибне узагальнення
+##### Finding a counterexample to a false generalization
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/findCounterexample.data.ts)
 
 Твердження «усі парні числа закінчуються на 2» спростовує число 4; одного коректного контрприкладу достатньо.
 
-##### Пояснювати обраний спосіб обчислення словами, схемою чи математичним записом
+##### Explaining a chosen calculation strategy
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/explainStrategy.data.ts)
 
 Запис 19 + 6 = 20 + 5 можна пояснити компенсацією: одну одиницю перенесено між доданками без зміни суми.
 
-##### Відрізняти один приклад від загального правила, яке потребує перевірки
+##### Distinguishing a single example from a general rule
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/distinguishExampleRule.data.ts)
 
 Окремий випадок 2 × 3 = 6 не доводить твердження для всіх чисел; потрібен загальний аргумент або перевірка.
 
-##### Формулювати висновок на основі умов та результатів міркування
+##### Drawing a conclusion from given conditions and reasoning
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/argumentation/skills/drawConclusion.data.ts)
 
 Якщо за умовою всі фігури в наборі мають три сторони, висновок про конкретну фігуру спирається саме на цю передумову.
 
-#### Самоперевірка
+#### Checking solutions
 
 Skills: 3
 
@@ -2256,7 +2256,7 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/verification.data.ts)
 
-##### Оцінювати, чи може відповідь бути правильною за змістом та порядком величини
+##### Assessing whether an answer is reasonable in context and magnitude
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/checkReasonableness.data.ts)
 
