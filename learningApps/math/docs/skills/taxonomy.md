@@ -1038,155 +1038,155 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/divide/skills/errorDetecti
 
 Якщо при 19 ÷ 4 названо остачу 7, модель виявляє, що з неї можна скласти ще одну повну четвірку.
 
-### Алгебра
+### Algebra
 
 Groups: 5 · Skills: 17
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/algebra.data.ts)
 
-Формує перехід від конкретних обчислень до виразів, рівностей, невідомих величин і правил побудови послідовностей без переходу до формальної алгебри вищих класів.
+The domain introduces the progression from concrete computations to expressions, equalities, unknown quantities, and patterns without requiring the formal algebra taught in later school years.
 
-#### Вирази
+#### Expressions
 
 Skills: 5
 
-Зміст математичного запису з діями, дужками й змінними; правильний порядок виконання операцій.
-
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/expressions.data.ts)
 
-##### Читати та записувати числові вирази з арифметичними діями
+Expressions represent numerical operations, parentheses, and simple variables. Their values depend on the correct sequence of operations and, when present, the values assigned to variables.
+
+##### Reading and writing numerical expressions
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/readNumericExpressions.data.ts)
 
-Запис 7 + 5 або 18 ÷ 3 позначає операцію над числами, а не лише словесну команду; значення можна знайти окремо.
+The notation 7 + 5 or 18 ÷ 3 expresses an operation on numbers, not merely a verbal command; its numerical value can be evaluated separately.
 
-##### Обчислювати вирази з дужками, пояснюючи пріоритет дій
+##### Evaluating expressions with parentheses
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/parentheses.data.ts)
 
-У 2 × (3 + 4) спочатку визначають суму в дужках, після чого множать на 2; вилучення дужок може змінити результат.
+In 2 × (3 + 4), first compute the sum inside the parentheses and then multiply by 2. Removing parentheses can change the result.
 
-##### Обчислювати вирази з кількома арифметичними діями за правилами порядку
+##### Applying the order of operations
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/orderOfOperations.data.ts)
 
-У 6 + 2 × 5 множення виконується перед додаванням, тому значення дорівнює 16, а не 40.
+In 6 + 2 × 5, multiplication takes precedence over addition, giving 16 rather than 40.
 
-##### Обчислювати значення найпростішого буквеного виразу за заданого значення змінної
+##### Evaluating simple expressions with a variable
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/variableValue.data.ts)
 
-Якщо a = 4, вираз a + 7 має значення 11; літера замінює визначене число в межах цієї задачі.
+When a = 4, the expression a + 7 has a value of 11. In this problem the letter stands for a specified number.
 
-##### Пояснювати помилку, спричинену неправильним порядком дій
+##### Identifying errors in the order of operations
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/expressions/skills/identifyExpressionError.data.ts)
 
-Результат 6 + 3 × 2 = 18 є наслідком некоректної черговості: множення має передувати додаванню.
+The incorrect claim 6 + 3 × 2 = 18 results from adding before multiplying; multiplication must be performed first.
 
-#### Рівності
+#### Equalities
 
 Skills: 3
 
-Рівність як однаковість значень двох виразів, істинність записів та відновлення пропущеного компонента.
-
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/equalities.data.ts)
 
-##### Сприймати знак рівності як рівність значень обох частин, а не команду «порахуй»
+An equality expresses the sameness of the values on both sides. This group includes checking the truth of numerical relations and restoring a missing value.
+
+##### Understanding the equals sign
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/equalityMeaning.data.ts)
 
-Запис 4 + 3 = 5 + 2 є істинним, хоча справа також вираз, а не просто готова відповідь.
+The statement 4 + 3 = 5 + 2 is true even though the right-hand side is also an expression rather than a completed numerical answer.
 
-##### Перевіряти правильність числової рівності або нерівності
+##### Checking numerical equalities and inequalities
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/trueFalseEquality.data.ts)
 
-Для рівності 8 + 3 = 12 − 1 обидві сторони мають значення 11; нерівність перевіряють за фактичними значеннями.
+Both sides of 8 + 3 = 12 − 1 evaluate to 11. A numerical inequality is assessed by comparing actual values.
 
-##### Добирати пропущене число так, щоб рівність була істинною
+##### Completing a true equality
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/equalities/skills/completeEquality.data.ts)
 
-У 7 + □ = 12 пропуск заповнюють числом 5, щоб обидві частини запису стали рівними.
+In 7 + □ = 12, the blank must be filled with 5 for the two sides to have equal values.
 
-#### Невідомі
+#### Unknown values
 
 Skills: 6
 
-Залежності між компонентами й результатами чотирьох арифметичних дій, що дозволяють визначити невідоме та перевірити його.
-
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/unknowns.data.ts)
 
-##### Знаходити невідомий доданок і перевіряти результат
+Relationships between operands and results of the four basic arithmetic operations allow a missing component to be found and checked.
+
+##### Finding an unknown addend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownAddend.data.ts)
 
-У □ + 6 = 14 шукане знаходять як 14 − 6 і повертають у рівняння для перевірки.
+For □ + 6 = 14, subtract 6 from 14 and substitute the result back into the equation to verify it.
 
-##### Знаходити невідоме зменшуване і перевіряти результат
+##### Finding an unknown minuend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownMinuend.data.ts)
 
-У □ − 4 = 9 початкове число відновлюють додаванням 9 + 4.
+For □ − 4 = 9, reconstruct the original number by adding 9 and 4.
 
-##### Знаходити невідомий від’ємник і перевіряти результат
+##### Finding an unknown subtrahend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownSubtrahend.data.ts)
 
-У 15 − □ = 7 потрібно вилучити вісім, а не шукати різницю як нове невідоме зменшуване.
+For 15 − □ = 7, eight units must be removed. This is distinct from finding an unknown minuend.
 
-##### Знаходити невідомий множник за відомими добутком і множником
+##### Finding an unknown factor
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownFactor.data.ts)
 
-У □ × 5 = 20 значення пропуску дорівнює 4, оскільки 20 ÷ 5 = 4.
+For □ × 5 = 20, the missing factor is 4 because 20 ÷ 5 = 4.
 
-##### Знаходити невідоме ділене в простих рівняннях
+##### Finding an unknown dividend
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownDividend.data.ts)
 
-У □ ÷ 3 = 7 шукане ділене — це сім рівних груп по три одиниці, тобто 21.
+For □ ÷ 3 = 7, the dividend represents seven equal groups of three, giving 21.
 
-##### Знаходити невідомий дільник у простих рівняннях із ненульовими числами
+##### Finding an unknown divisor
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/unknowns/skills/unknownDivisor.data.ts)
 
-У 24 ÷ □ = 6 потрібен дільник 4; його перевіряють множенням 6 × 4.
+For 24 ÷ □ = 6, the missing divisor is 4; the result is verified by 6 × 4.
 
-#### Закономірності
+#### Patterns
 
 Skills: 2
 
-Повторювана зміна чисел за правилом і розпізнавання структури послідовності за кількома членами.
-
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/patterns.data.ts)
 
-##### Знаходити й продовжувати числову закономірність з постійним кроком
+This group examines repeating numerical changes under a rule, including identifying the structure of a sequence from several terms.
+
+##### Continuing numerical patterns with a constant step
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/skills/arithmeticPattern.data.ts)
 
-Ряд 4, 7, 10, 13 зберігає крок три; новий член отримують з попереднього тим самим приростом.
+The sequence 4, 7, 10, 13 repeatedly increases by three. Each new term follows the same increment.
 
-##### Визначати правило зростання закономірності за кількома прикладами
+##### Finding the rule of a growing pattern
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/patterns/skills/growingPattern.data.ts)
 
-За кількома значеннями 2, 6, 10 можна припустити правило +4, але його треба перевірити на решті заданих членів.
+The terms 2, 6, 10 suggest a step of +4, but the hypothesized rule must be checked against the other given terms.
 
-#### Символьне моделювання
+#### Symbolic modeling
 
 Skills: 1
 
-Подання відношень із короткої ситуації арифметичним або простим алгебраїчним записом.
-
 Code: [Code](../../src/data/skillsTaxonomy/algebra/formalization/formalization.data.ts)
 
-##### Перекладати просту ситуацію в числовий вираз або рівняння
+Relationships described in a short situation can be represented by an arithmetic or simple algebraic expression.
+
+##### Representing a situation with an expression or equation
 
 Code: [Code](../../src/data/skillsTaxonomy/algebra/formalization/skills/translateSituation.data.ts)
 
-Ситуацію «три коробки по п’ять олівців» відображає 3 × 5; форма запису повинна відповідати саме відношенню в умові.
+The situation 'three boxes with five pencils each' is represented by 3 × 5. The notation must match the relationship described in the problem.
 
 ### Геометрія
 
