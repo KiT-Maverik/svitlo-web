@@ -13,7 +13,7 @@ A **SkillDomain** denotes a recognizable field within a subject and contains coh
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
-The shared-engine `SkillDomain_Config` has `id`, localized `name`, required `groupIds` and optional direct `skillIds`. A grouped Domain uses nonempty `groupIds`; a direct-Skill Domain uses `groupIds: {}` plus nonempty `skillIds`. The Domain builder validates the exclusive, nonempty mode and individual child UUIDs, but it does **not** prove cross-domain uniqueness or downstream registry, index, UI, ancestry or analytics support. These consumers require their own integration audit. There is no `description` property or learner-progress data.
+The `@svitlo/contracts/taxonomy` `SkillDomain_Config` has `id`, localized `name`, required `groupIds` and optional direct `skillIds`. A grouped Domain uses nonempty `groupIds`; a direct-Skill Domain uses `groupIds: {}` plus nonempty `skillIds`. The Domain builder validates the exclusive, nonempty mode and individual child UUIDs, but it does **not** prove cross-domain uniqueness or downstream registry, index, UI, ancestry or analytics support. These consumers require their own integration audit. There is no `description` property or learner-progress data.
 
 - **Editorial authority:** `<PackageRoot>/docs/skills/taxonomy.md` heading, explanatory paragraph and Group membership **or direct Skill membership**.
 - **Code:** a verified application `*.data.ts` linked from the taxonomy, or `Code: [Not implemented](#)`.
