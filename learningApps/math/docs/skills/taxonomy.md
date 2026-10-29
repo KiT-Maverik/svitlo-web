@@ -2262,19 +2262,19 @@ Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/checkRe
 
 Для 98 + 105 результат 200 правдоподібний за масштабом, а 2000 — ні, навіть без точного обчислення.
 
-##### Знаходити неправильний крок у чужому розв’язанні й пояснювати його
+##### Finding and explaining an incorrect step in a calculation
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/spotCalculationError.data.ts)
 
 Помилка може виникнути в перенесенні розряду або у виборі дії; важливо локалізувати невірний крок, а не лише назвати відповідь хибною.
 
-##### Перевіряти обчислення іншим способом, коли це можливо
+##### Verifying a calculation using another method
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/verification/skills/verifyWithSecondMethod.data.ts)
 
 Результат ділення можна зіставити з множенням, а суму — з відніманням; незалежна стратегія допомагає виявляти збій.
 
-#### Логіка
+#### Logical reasoning
 
 Skills: 2
 
@@ -2282,19 +2282,19 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/logic.data.ts)
 
-##### Доповнювати геометричну або числову закономірність відповідно до встановленого правила
+##### Completing a numerical or geometric pattern using its rule
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/skills/completePattern.data.ts)
 
 У послідовності круг, квадрат, круг, квадрат наступним має бути круг, якщо правило чергування не змінилося.
 
-##### Використовувати виключення неможливих варіантів у простих логічних задачах
+##### Eliminating impossible options in a logical problem
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/logic/skills/logicalElimination.data.ts)
 
 У задачі з трьома дверима та умовами, що виключають два варіанти, третій стає єдиним можливим без вгадування.
 
-#### Способи представлення
+#### Mathematical representations
 
 Skills: 1
 
@@ -2302,7 +2302,7 @@ Skills: 1
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/representations/representations.data.ts)
 
-##### Переходити між предметною моделлю, схемою, словесним поясненням і виразом
+##### Converting between concrete, diagrammatic, verbal and symbolic representations
 
 Code: [Code](../../src/data/skillsTaxonomy/reasoning/representations/skills/multipleRepresentations.data.ts)
 
