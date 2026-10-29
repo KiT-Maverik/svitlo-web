@@ -1,15 +1,15 @@
-# Десяток як група
+# Ten as a Group
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 09**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 09**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Збирає десяток із одиниць та розкладає його назад.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.numbers.make-ten` — `2c9550e7-7e7a-4353-8e29-b12fad0b93af`
+- [Grouping and ungrouping ten ones](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.data.ts)
 
 ## Передумови
 
@@ -57,4 +57,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Навчальний brief вище залишається окремим.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

@@ -1,16 +1,16 @@
-# Порівнюємо й упорядковуємо числа
+# Comparing and Ordering Numbers
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 07**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 07**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Використовує знаки порівняння та впорядковує числа до 20.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.order.comparison-symbols` — `b3fc5e27-fc9d-48cc-b429-7ee2febbefbb`
-- `math.order.order-20` — `a4751cd9-8057-4651-8594-d028bffd02bf`
+- [Comparison symbols <, > and =](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/comparisonSymbols.data.ts)
+- [Ordering numbers 0–20](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/order20.data.ts)
 
 ## Передумови
 
@@ -58,4 +58,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Бриф вище не замінюється сценарієм.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

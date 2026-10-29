@@ -1,16 +1,16 @@
-# Лічба парами та п’ятірками
+# Counting by Twos and Fives
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 10**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 10**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Лічить рівними групами з опорою на предметні моделі.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.count.count-by-2` — `f227f79b-0196-46b8-a227-8b7991729cc5`
-- `math.count.count-by-5` — `422c0a18-53eb-43fb-a816-ba38a9567894`
+- [Counting in steps of 2](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy2.data.ts)
+- [Counting in steps of 5](../../../../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.ts)
 
 ## Передумови
 
@@ -58,4 +58,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методична специфікація вище зберігається.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

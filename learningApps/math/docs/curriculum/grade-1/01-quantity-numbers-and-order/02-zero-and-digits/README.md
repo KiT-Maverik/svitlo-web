@@ -1,16 +1,16 @@
-# Нуль і цифри
+# Zero and Digits
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 02**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 02**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Розпізнає нуль та співвідносить цифри із записом кількості.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.count.zero` — `a08e7d57-e613-4276-b6bf-3f06d7e1589a`
-- `math.numbers.digits-0-9` — `b86b9bc2-f53d-404a-92a3-10de53a83f06`
+- [Understanding zero as an empty quantity](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/zero.data.ts)
+- [Digits 0–9 and the meaning of a digit](../../../../../src/data/skillsTaxonomy/numeration/notation/skills/digits09.data.ts)
 
 ## Передумови
 
@@ -58,4 +58,4 @@
 [Sections — 8 сценарних секцій](./Sections/README.md). Методичний brief вище не замінюється сценарієм.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

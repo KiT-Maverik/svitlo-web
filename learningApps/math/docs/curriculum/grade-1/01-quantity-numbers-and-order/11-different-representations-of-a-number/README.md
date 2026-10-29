@@ -1,15 +1,15 @@
-# Число в різних представленнях
+# Different Representations of a Number
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 11**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 11**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Пов’язує кількість предметів, числовий запис і позначку на прямій.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.numbers.multiple-representations` — `0e2bf14b-81b7-4cca-8fd0-56bb46a11816`
+- [Matching representations of a number](../../../../../src/data/skillsTaxonomy/numeration/placeValue/skills/multipleRepresentations.data.ts)
 
 ## Передумови
 
@@ -57,4 +57,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методичний опис вище залишається незмінним.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

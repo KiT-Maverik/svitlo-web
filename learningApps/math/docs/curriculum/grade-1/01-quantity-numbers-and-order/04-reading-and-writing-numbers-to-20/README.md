@@ -1,15 +1,15 @@
-# Читаємо й записуємо числа до 20
+# Reading and Writing Numbers to 20
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 04**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 04**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Розпізнає та записує числа в межах 20.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.numbers.read-write-20` — `77344ce3-a3dc-4f48-8a4f-369d520b77d4`
+- [Reading, writing and matching numbers 0–20](../../../../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite20.data.ts)
 
 ## Передумови
 
@@ -57,4 +57,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методичні вимоги вище залишаються першоджерелом.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

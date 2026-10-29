@@ -1,15 +1,15 @@
-# Числова пряма до 20
+# Number Line to 20
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 08**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 08**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Розміщує числа на прямій та визначає їхніх сусідів.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.order.number-line-20` — `b0ee8874-a540-48d4-bcc4-8075e49526ce`
+- [Numbers on a line to 20](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine20.data.ts)
 
 ## Передумови
 
@@ -57,4 +57,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методичний бриф вище лишається окремим.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

@@ -1,16 +1,16 @@
-# Порядковий номер і сусіди числа
+# Ordinal Position and Neighboring Numbers
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 05**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 05**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Розрізняє порядковий номер та кількість; називає попереднє й наступне числа.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.count.ordinal` — `5a3fd900-fb88-4017-a8b6-f70dfba3f5cf`
-- `math.order.before-after-between` — `f1f3fcb5-c6ce-4542-817a-a9eca6b79453`
+- [Recognizing ordinal position](../../../../../src/data/skillsTaxonomy/counting/ordinal/skills/basicOrdinal.data.ts)
+- [Previous, next and intermediate numbers](../../../../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAfterBetween.data.ts)
 
 ## Передумови
 
@@ -58,4 +58,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методичні вимоги вище залишаються першоджерелом.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

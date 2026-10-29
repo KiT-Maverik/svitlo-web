@@ -1,16 +1,16 @@
-# Де більше, менше чи порівну
+# More, Less, or Equal
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 06**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 06**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Порівнює множини предметів і числові кількості.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.count.compare-sets` — `4dbb5ddc-9215-451a-8643-c7fce442a3d5`
-- `math.order.more-less-equal` — `0a1c4783-3267-4e3b-be1f-67428a859abc`
+- [Comparing sets by matching or counting](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/compareSets.data.ts)
+- [Greater, less or equal quantities](../../../../../src/data/skillsTaxonomy/numeration/comparison/skills/moreLessEqual.data.ts)
 
 ## Передумови
 
@@ -58,4 +58,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методична специфікація вище залишається першоджерелом.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

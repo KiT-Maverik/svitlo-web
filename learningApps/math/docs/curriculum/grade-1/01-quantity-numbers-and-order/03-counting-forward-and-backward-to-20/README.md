@@ -1,16 +1,16 @@
-# Лічба вперед і назад до 20
+# Counting Forward and Backward to 20
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 03**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 03**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Продовжує послідовність у двох напрямах від заданого числа.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.count.forward-20` — `0fef6118-fa2e-4ffa-a31f-42f26ef94177`
-- `math.count.backward-20` — `6942872f-bd64-47a6-ac8d-3531f3d56668`
+- [Counting forward within 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/forward20.data.ts)
+- [Counting backward within 20](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/backward20.data.ts)
 
 ## Передумови
 
@@ -58,4 +58,4 @@
 [Sections — 7 сценарних секцій](./Sections/README.md). Сценарій не змінює методичних цілей вище.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)

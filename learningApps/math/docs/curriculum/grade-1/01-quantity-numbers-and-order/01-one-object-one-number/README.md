@@ -1,16 +1,16 @@
-# Один предмет — одне число
+# One Object, One Number
 
-> **Curriculum: Grade 1 · Кількість, числа й порядок · урок 01**  
+> **Curriculum: Grade 1 · Quantity, Numbers, and Order · Lesson 01**  
 > Статус: методична чернетка для рев’ю. Це **Learning Brief**, не навчальний сценарій, не готовий Lesson і не Assessment Specification.
 
 **Навчальна мета:** Перелічує об’єкти без пропусків і називає загальну кількість.
 
 **Цільова аудиторія:** початковий рівень математичної підготовки (орієнтовно 6–7 років); віковий орієнтир не обмежує доступ.
 
-**Target Skills** (чинні редакційні ID та статичні UUID):
+**Target Skills:**
 
-- `math.count.one-to-one` — `8d4c247d-8d53-4703-9c83-9072c211a23c`
-- `math.count.cardinality` — `806fb33e-81a3-4e59-b57b-1ea7ed549d9b`
+- [One-to-one correspondence when counting](../../../../../src/data/skillsTaxonomy/counting/sequence/skills/oneToOne.data.ts)
+- [Determining how many objects are in a set](../../../../../src/data/skillsTaxonomy/counting/cardinality/skills/basicCardinality.data.ts)
 
 ## Передумови
 
@@ -58,4 +58,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Методичний brief вище лишається окремим від сценарію.
 
 ---
-[Кількість, числа й порядок](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Quantity, Numbers, and Order](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
