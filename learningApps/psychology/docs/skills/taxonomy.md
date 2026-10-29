@@ -8,17 +8,17 @@ Breadth references, not imposed curricula: [APA Guidelines 3.0](https://www.apa.
 
 ## SUMMARY
 
-Domains: 14
+Domains: 13
 Groups: 57
-Skills: 252
+Skills: 274
 
-Code files: 0/14 Domains · 0/57 Groups · 0/252 Skills
+Code files: 0/13 Domains · 0/57 Groups · 0/274 Skills
 
 ## DOMAINS
 
 ### Psychological Science and Inquiry
 
-Groups: 5 · Skills: 26
+Groups: 5 · Skills: 31
 
 [Not implemented](#)
 
@@ -58,7 +58,7 @@ Evaluate foundational schools of thought in their historical context and assess 
 
 #### Study Designs
 
-Skills: 7
+Skills: 9
 
 [Not implemented](#)
 
@@ -76,11 +76,17 @@ Transform a broad statement about human behavior into a claim with observable va
 
 Use predefined behavioral categories to distinguish structured observations from informal personal impressions.
 
-##### Interviews and Questionnaires
+##### Research Interviews
 
 [Not implemented](#)
 
-Interpret self-reports while accounting for memory error, response wording, and pressure to give socially acceptable answers.
+Interpret conversational accounts of experience while considering interviewer influence, recall limits, and unequal disclosure pressures.
+
+##### Questionnaire Research
+
+[Not implemented](#)
+
+Interpret structured self-reports while considering item wording, response scales, and socially desirable answers.
 
 ##### Correlational Studies
 
@@ -100,11 +106,17 @@ Identify manipulated variables, outcome measures, comparison conditions, and the
 
 Explain how chance allocation to conditions reduces systematic differences without confusing it with population sampling.
 
-##### Blinding and Expectation Effects
+##### Blinding in Research
 
 [Not implemented](#)
 
-Distinguish researcher and participant knowledge of a condition from effects of expectations, and recognize when blinding is impractical.
+Explain how keeping condition assignments unknown to participants or evaluators can reduce some sources of bias, and why blinding is not universally possible.
+
+##### Expectation Effects
+
+[Not implemented](#)
+
+Explain how beliefs about an intervention or condition can change reported experience or behavior independently of its specific mechanism.
 
 #### Measurement and Sampling
 
@@ -146,7 +158,7 @@ Identify systematic distortions from test wording, cultural assumptions, inacces
 
 #### Evidence and Interpretation
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -170,11 +182,17 @@ Consider reversed direction and third-variable explanations when two psychologic
 
 Identify background factors that move with a proposed cause and could produce an observed group difference.
 
-##### Replication and Reproducibility
+##### Study Replication
 
 [Not implemented](#)
 
-Distinguish repeating an investigation from verifying its analysis and explain why both matter.
+Explain why repeating a psychological investigation with new observations helps assess the robustness and generality of a result.
+
+##### Analytical Reproducibility
+
+[Not implemented](#)
+
+Explain why access to reported methods, data, and analytic decisions allows independent verification of a result.
 
 ##### Evidence Quality
 
@@ -184,7 +202,7 @@ Weigh converging studies, effect magnitude, uncertainty, and publication bias in
 
 #### Research Ethics
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
@@ -196,11 +214,17 @@ Studies involving people must respect autonomy, dignity, safety, and confidentia
 
 Identify the information required for a voluntary decision to participate, including procedures, foreseeable risks, and withdrawal.
 
-##### Confidentiality and Anonymity
+##### Research Confidentiality
 
 [Not implemented](#)
 
-Distinguish data with no identifying linkage from protected identifiable records and explain appropriate reporting boundaries.
+Explain how identifiable participant information may be protected through access restrictions and careful reporting.
+
+##### Research Anonymity
+
+[Not implemented](#)
+
+Explain when collected data cannot be linked to a participant and why this differs from merely promising confidentiality.
 
 ##### Risk–Benefit Assessment
 
@@ -208,11 +232,17 @@ Distinguish data with no identifying linkage from protected identifiable records
 
 Identify possible distress, coercion, stigma, and privacy harms and consider less intrusive alternatives.
 
-##### Deception and Debriefing
+##### Deception in Research
 
 [Not implemented](#)
 
-Assess when incomplete disclosure might be justified and why oversight and subsequent explanation are essential.
+Evaluate the rare conditions under which incomplete disclosure might be ethically defensible given oversight, scientific necessity, and risks.
+
+##### Research Debriefing
+
+[Not implemented](#)
+
+Explain the purpose of a meaningful post-participation explanation and support when a study withheld important information.
 
 ##### Research with Vulnerable Participants
 
@@ -222,7 +252,7 @@ Explain additional assent, consent, power-balance, and accessibility considerati
 
 ### Biological Foundations of Behavior
 
-Groups: 4 · Skills: 15
+Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
@@ -230,7 +260,7 @@ Neural, endocrine, genetic, and evolved processes influence experience and actio
 
 #### Neural Communication
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -248,11 +278,17 @@ Connect electrical impulses and synaptic transmission with communication between
 
 Explain modulatory chemical signaling without the misleading claim that a single neurotransmitter directly causes one emotion.
 
-##### Excitation and Inhibition
+##### Neural Excitation
 
 [Not implemented](#)
 
-Explain how combined excitatory and inhibitory influences shape the likelihood of activity in a neural circuit.
+Explain how excitatory signals raise the probability of a target neuron or circuit becoming active under relevant conditions.
+
+##### Neural Inhibition
+
+[Not implemented](#)
+
+Explain how inhibitory signals reduce or regulate activation within a circuit without implying that inhibition means absence of information processing.
 
 ##### Neural Plasticity
 
@@ -262,17 +298,23 @@ Relate experience-dependent changes in neural connections to learning and adapta
 
 #### Brain–Behavior Relationships
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 Distributed neural systems support specific psychological functions; brain scans and localized damage require cautious interpretation.
 
-##### Sensory and Motor Pathways
+##### Sensory Neural Pathways
 
 [Not implemented](#)
 
-Relate incoming signals and motor commands to coordinated processing across the peripheral and central nervous systems.
+Relate incoming bodily signals to coordinated processing that supports detection and response.
+
+##### Motor Neural Pathways
+
+[Not implemented](#)
+
+Relate commands from central nervous processing to coordinated bodily movement and action.
 
 ##### Functional Specialization
 
@@ -598,7 +640,7 @@ Identify psychological consequences of insufficient sleep for attention, mood, a
 
 ### Learning and Behavior Change
 
-Groups: 4 · Skills: 15
+Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
@@ -606,7 +648,7 @@ Past experience modifies responding through predictive cues, consequences, and s
 
 #### Respondent Conditioning
 
-Skills: 4
+Skills: 6
 
 [Not implemented](#)
 
@@ -618,11 +660,17 @@ Previously neutral cues can acquire the capacity to elicit responses through rep
 
 Identify conditioned and unconditioned stimuli and responses within a learned predictive association.
 
-##### Acquisition and Extinction
+##### Conditioned Response Acquisition
 
 [Not implemented](#)
 
-Explain strengthening of a conditioned response and its reduction when a cue stops predicting the expected event.
+Explain how repeated predictive relations can strengthen a newly learned response to a previously neutral cue.
+
+##### Conditioned Response Extinction
+
+[Not implemented](#)
+
+Explain reduced responding when a predictive cue no longer forecasts the expected event, without assuming the original association is erased.
 
 ##### Spontaneous Recovery
 
@@ -630,15 +678,21 @@ Explain strengthening of a conditioned response and its reduction when a cue sto
 
 Explain why a previously weakened conditioned response may reappear after a delay.
 
-##### Stimulus Generalization and Discrimination
+##### Stimulus Generalization
 
 [Not implemented](#)
 
-Distinguish responses to similar cues from learning that distinct cues predict different outcomes.
+Explain why a response acquired for one cue may also occur with similar but untrained cues.
+
+##### Stimulus Discrimination
+
+[Not implemented](#)
+
+Explain learning to respond differently when distinct cues predict different outcomes.
 
 #### Operant Learning
 
-Skills: 4
+Skills: 6
 
 [Not implemented](#)
 
@@ -650,17 +704,29 @@ Consequences influence the future frequency of actions; functional definitions d
 
 Identify behavior–consequence contingencies that alter future responding.
 
-##### Positive and Negative Reinforcement
+##### Positive Reinforcement
 
 [Not implemented](#)
 
-Distinguish adding from removing a consequence that increases the probability of behavior.
+Identify a consequence added after a behavior that increases its future occurrence under the relevant conditions.
 
-##### Positive and Negative Punishment
+##### Negative Reinforcement
 
 [Not implemented](#)
 
-Distinguish adding from removing a consequence that decreases the probability of behavior.
+Identify a consequence removed after a behavior that increases future responding, without confusing removal with punishment.
+
+##### Positive Punishment
+
+[Not implemented](#)
+
+Identify an added consequence followed by a reduction in the future occurrence of a behavior.
+
+##### Negative Punishment
+
+[Not implemented](#)
+
+Identify the removal of a consequence followed by reduced future responding and distinguish it from negative reinforcement.
 
 ##### Reinforcement Schedules
 
@@ -728,7 +794,7 @@ Explain how repeated experience of uncontrollable outcomes can affect perceived 
 
 ### Memory and Metacognition
 
-Groups: 4 · Skills: 18
+Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
@@ -736,17 +802,23 @@ Remembering involves encoding, retention, retrieval, reconstruction, and monitor
 
 #### Memory Systems
 
-Skills: 4
+Skills: 6
 
 [Not implemented](#)
 
 Distinct forms of memory support immediate processing, recall of experiences and facts, and skilled performance.
 
-##### Sensory and Working Memory
+##### Sensory Memory
 
 [Not implemented](#)
 
-Distinguish transient sensory traces from information actively maintained and manipulated during a task.
+Explain short-lived persistence of sensory traces beyond the immediate stimulation.
+
+##### Working Memory
+
+[Not implemented](#)
+
+Explain active maintenance and manipulation of limited information while performing a cognitive task.
 
 ##### Long-Term Retention
 
@@ -754,11 +826,17 @@ Distinguish transient sensory traces from information actively maintained and ma
 
 Describe durable storage of information and why persistence does not guarantee immediate access.
 
-##### Episodic and Semantic Memory
+##### Episodic Memory
 
 [Not implemented](#)
 
-Distinguish recollection of personal events from access to generalized knowledge.
+Explain recollection of personally experienced events within an experienced temporal or situational context.
+
+##### Semantic Memory
+
+[Not implemented](#)
+
+Explain access to acquired concepts, facts, and meanings without needing to mentally relive a specific event.
 
 ##### Procedural Memory
 
@@ -800,17 +878,23 @@ Explain changes in retention after initial learning and how subsequent experienc
 
 #### Retrieval and Distortion
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
 Access is cue-dependent and reconstructive; incorrect recollection does not automatically imply deliberate deception.
 
-##### Recall and Recognition
+##### Memory Recall
 
 [Not implemented](#)
 
-Distinguish producing remembered content from selecting it in the presence of cues.
+Explain retrieving information without the target being presented among answer options or other direct cues.
+
+##### Memory Recognition
+
+[Not implemented](#)
+
+Explain identifying previously encountered information when the candidate item is presented.
 
 ##### Retrieval Cues
 
@@ -818,11 +902,17 @@ Distinguish producing remembered content from selecting it in the presence of cu
 
 Explain how contextual and semantic prompts can facilitate access to previously encoded material.
 
-##### Proactive and Retroactive Interference
+##### Proactive Interference
 
 [Not implemented](#)
 
-Differentiate disruptions caused by earlier learning and by material acquired later.
+Explain how previously learned information may obstruct retrieval of newer learning.
+
+##### Retroactive Interference
+
+[Not implemented](#)
+
+Explain how subsequent learning may obstruct access to previously acquired information.
 
 ##### Misinformation Effects
 
@@ -876,7 +966,7 @@ Compare spacing, retrieval, elaboration, and organization for the demands of a g
 
 ### Thinking and Decision-Making
 
-Groups: 5 · Skills: 25
+Groups: 5 · Skills: 27
 
 [Not implemented](#)
 
@@ -884,7 +974,7 @@ Cognitive processes create concepts, guide inferences, solve problems, and selec
 
 #### Mental Representation
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -896,11 +986,17 @@ Categories, schemas, and internal models compress information, enabling predicti
 
 Explain how shared features and distinguishing properties support useful mental categories.
 
-##### Prototypes and Exemplars
+##### Prototype-Based Categorization
 
 [Not implemented](#)
 
-Distinguish classification by a typical category member from comparison with remembered individual examples.
+Explain how classification can rely on resemblance to a typical or averaged category representation.
+
+##### Exemplar-Based Categorization
+
+[Not implemented](#)
+
+Explain how classification can rely on comparisons with specific remembered category instances.
 
 ##### Mental Models
 
@@ -916,17 +1012,23 @@ Explain how organized expectations influence the interpretation of familiar situ
 
 #### Reasoning and Problem Solving
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
 A person's representation of a challenge constrains which rules, heuristics, and solutions become available.
 
-##### Deductive and Inductive Reasoning
+##### Deductive Reasoning
 
 [Not implemented](#)
 
-Distinguish reasoning from premises to a necessary conclusion from generalizing beyond observed cases.
+Explain drawing conclusions that follow from given premises, distinguishing actual human performance from formal validity.
+
+##### Inductive Reasoning
+
+[Not implemented](#)
+
+Explain generalizing beyond observed cases and why resulting conclusions remain uncertain.
 
 ##### Problem Representation
 
@@ -1074,7 +1176,7 @@ Compare broad and domain-specific models and evaluate how well measures predict 
 
 ### Emotion and Psychological Regulation
 
-Groups: 4 · Skills: 18
+Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
@@ -1190,7 +1292,7 @@ Distinguish self-management from situations in which trusted or qualified assist
 
 #### Stress and Coping
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1202,11 +1304,17 @@ Stress is shaped by demands and perceived resources, with psychological conseque
 
 Explain how a person's interpretation of demands and resources shapes experienced strain.
 
-##### Acute and Chronic Stress
+##### Acute Stress
 
 [Not implemented](#)
 
-Distinguish temporary response to a challenge from sustained exposure with different consequences.
+Explain a relatively short-lived response to demands or threat and how recovery may follow the event.
+
+##### Chronic Stress
+
+[Not implemented](#)
+
+Explain sustained exposure to stressors and why duration and available resources affect psychological consequences.
 
 ##### Problem-Focused Coping
 
@@ -1222,7 +1330,7 @@ Explain responses aimed at managing distress when the situation itself may not b
 
 ### Motivation, Goals, and Habits
 
-Groups: 3 · Skills: 14
+Groups: 3 · Skills: 16
 
 [Not implemented](#)
 
@@ -1230,17 +1338,23 @@ Motivation concerns what initiates, directs, and sustains action. Goals and habi
 
 #### Motivational Mechanisms
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
 Behavior is influenced by internal states and external incentives, with competing explanations and substantial individual variation.
 
-##### Intrinsic and Extrinsic Motivation
+##### Intrinsic Motivation
 
 [Not implemented](#)
 
-Distinguish engaging in an activity for its inherent interest from acting primarily for a separable outcome.
+Explain engaging in an activity because it is personally interesting or satisfying in itself.
+
+##### Extrinsic Motivation
+
+[Not implemented](#)
+
+Explain pursuing an activity because of an outcome separable from the activity, such as recognition, payment, or avoidance of a consequence.
 
 ##### Needs and Drives
 
@@ -1254,11 +1368,17 @@ Explain how physiological and psychological needs can influence the direction an
 
 Analyze how anticipated success and the perceived value of an outcome jointly influence effort.
 
-##### Approach and Avoidance Motivation
+##### Approach Motivation
 
 [Not implemented](#)
 
-Distinguish pursuing desired outcomes from preventing or escaping anticipated negative ones.
+Explain initiation of actions aimed at obtaining anticipated positive outcomes.
+
+##### Avoidance Motivation
+
+[Not implemented](#)
+
+Explain actions aimed at preventing or escaping an anticipated undesirable outcome.
 
 ##### Motivational Crowding
 
@@ -1338,7 +1458,7 @@ Analyze replacing an established response with an alternative to the same cue ra
 
 ### Social Psychology
 
-Groups: 4 · Skills: 21
+Groups: 8 · Skills: 40
 
 [Not implemented](#)
 
@@ -1346,7 +1466,7 @@ Thought and behavior change in the actual or imagined presence of others. Social
 
 #### Social Perception
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -1376,11 +1496,17 @@ Analyze how culturally available categories affect social perception without tre
 
 Explain inferring another person's possible viewpoint while recognizing that their actual experience remains uncertain.
 
-##### Empathy and Compassion
+##### Empathy
 
 [Not implemented](#)
 
-Distinguish understanding someone's perspective, sharing an affective response, and being motivated to support them.
+Explain understanding or affectively responding to another person's possible experience while recognizing that one cannot know it with certainty.
+
+##### Compassion
+
+[Not implemented](#)
+
+Explain concern for another person's suffering accompanied by motivation to offer appropriate help, distinct from understanding alone.
 
 #### Influence and Persuasion
 
@@ -1466,7 +1592,7 @@ Identify pressures toward unanimity that discourage dissent and reduce the scrut
 
 #### Relationships and Communication
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -1496,19 +1622,17 @@ Interpret gesture, tone, and interpersonal distance in cultural and situational 
 
 Analyze how misinterpretation, escalation, apology, and renegotiation affect interpersonal conflict.
 
-##### Personal Boundaries and Consent
+##### Personal Boundaries
 
 [Not implemented](#)
 
-Distinguish voluntary agreement and respect for personal limits from pressure or assumptions about another's wishes.
+Explain how individuals express limits about interactions, information, and bodily or emotional space, and how those limits merit respect.
 
-### Development Across the Lifespan
-
-Groups: 4 · Skills: 17
+##### Voluntary Consent
 
 [Not implemented](#)
 
-Cognition, relationships, identity, and emotional regulation change from infancy through older adulthood. Developmental patterns express interactions of maturation and lived experience, not identical milestones for every person.
+Distinguish an informed, freely given and revocable agreement from silence, coercion, or assumed permission.
 
 #### Mechanisms of Development
 
