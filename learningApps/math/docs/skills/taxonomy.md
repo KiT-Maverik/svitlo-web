@@ -524,7 +524,7 @@ Code: [Code](../../src/data/skillsTaxonomy/arithmetic/arithmetic.data.ts)
 
 Охоплює смисл чотирьох арифметичних дій, способи усних і письмових обчислень, властивості операцій та перевірку результатів у межах початкової математики.
 
-#### Додавання
+#### Addition
 
 Skills: 10
 
@@ -532,67 +532,67 @@ Skills: 10
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/addition.data.ts)
 
-##### Моделювати додавання як об’єднання кількостей або збільшення кількості
+##### Addition — Meaning and models
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/addMeaning.data.ts)
 
 З’єднання наборів із 3 та 4 предметів дає 7; збільшення початкової кількості на 4 має той самий результат.
 
-##### Пояснювати й застосовувати додавання нуля
+##### Addition — Zero
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/addZero.data.ts)
 
 Додавання нічого не змінює початкового значення: 8 + 0 та 0 + 8 обидва дорівнюють 8.
 
-##### Змінювати порядок доданків без зміни суми та застосовувати це для обчислень
+##### Addition — Commutative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/commutativeAddition.data.ts)
 
 У парах наборів 3 + 5 і 5 + 3 загальна кількість однакова, хоча порядок груп різний.
 
-##### Використовувати доповнення до десяти під час додавання
+##### Addition — Making ten
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/makeTenStrategy.data.ts)
 
 У прикладі 8 + 5 можна спочатку взяти 2 до десятка, а далі додати решту 3.
 
-##### Додавати одноцифрові числа з переходом через десяток
+##### Addition — Crossing ten
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/crossTenAddition.data.ts)
 
 Перехід 9 + 7 зручно виконати як 10 + 6 після добору одиниці до десятка.
 
-##### Додавати двоцифрові числа з утворенням нового десятка
+##### Addition — 2-digit · Carrying
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/twoDigitCarry.data.ts)
 
 У 27 + 18 сім і вісім одиниць дають один новий десяток та п’ять одиниць.
 
-##### Групувати доданки у зручному порядку без зміни суми
+##### Addition — Associative property
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/associativeAddition.data.ts)
 
 Суму 7 + 13 + 3 можна перегрупувати як (7 + 3) + 13, не змінюючи жодного доданка.
 
-##### Додавати трицифрові числа з одним або кількома переходами через розряд
+##### Addition — 3-digit · Carrying
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/threeDigitCarry.data.ts)
 
 У 268 + 157 перенос виникає в різних розрядах; проміжні обміни одиниць на десятки не змінюють суми.
 
-##### Коректно записувати та виконувати письмове додавання стовпчиком
+##### Addition — Column method
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/columnAddition.data.ts)
 
 Одиниці записують під одиницями, десятки під десятками; перенесений розряд додають у наступному стовпці.
 
-##### Розпізнавати пропущений перенос десятка чи сотні та пояснювати причину помилки
+##### Addition — Carrying · Error detection
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/addition/skills/carryErrorDetection.data.ts)
 
 Для 48 + 37 пропущений перенос із суми 8 + 7 призводить до заниженого десяткового розряду.
 
-#### Віднімання
+#### Subtraction
 
 Skills: 8
 
@@ -600,25 +600,25 @@ Skills: 8
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/subtraction.data.ts)
 
-##### Моделювати віднімання як вилучення, різницю або пошук невідомої частини
+##### Subtraction — Meaning and models
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractMeaning.data.ts)
 
 Забрати 3 з набору 8 — це знайти 8 − 3; різниця між двома наборами або невідома частина цілого приводять до тієї ж операції.
 
-##### Пояснювати й застосовувати віднімання нуля
+##### Subtraction — Zero
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractZero.data.ts)
 
 Віднімання нуля залишає той самий набір предметів, бо нічого не вилучають.
 
-##### Пояснювати, чому віднімання числа від самого себе дає нуль
+##### Subtraction — Same number
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/subtractSelf.data.ts)
 
 Після вилучення всіх 6 із набору 6 предметів не залишається нічого: результат — 0.
 
-##### Віднімати в межах 20 із переходом через десяток
+##### Subtraction — Crossing ten
 
 Code: [Code](../../src/data/skillsTaxonomy/arithmetic/subtraction/skills/crossTenSubtraction.data.ts)
 
