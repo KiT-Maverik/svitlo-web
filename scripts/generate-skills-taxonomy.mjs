@@ -117,9 +117,38 @@ function fileNames(dir) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter(x => x.endsWith('.data.ts') && x !== 'index.data.ts').sort();
 }
+function verifyIndex(indexFile, expected) {
+  if (!fs.existsSync(indexFile)) fail('Missing index: ' + indexFile);
+  const maps = [];
+  for (const statement of parse(indexFile).statements) {
+    if (!ts.isVariableStatement(statement)) continue;
+    for (const declaration of statement.declarationList.declarations) {
+      if (!declaration.initializer || !declaration.name.getText().endsWith('_Ids')) continue;
+      const value = unwrap(declaration.initializer);
+      if (ts.isObjectLiteralExpression(value)) maps.push(value);
+    }
+  }
+  if (maps.length !== 1) fail('Expected one direct-child IDs map: ' + indexFile);
+  const actual = [];
+  for (const item of maps[0].properties) {
+    if (!ts.isPropertyAssignment(item)) fail('Unsupported dynamic child map entry: ' + indexFile);
+    const child = key(item.name);
+    if (ts.isPropertyAccessExpression(item.initializer) && item.initializer.name.text !== child) {
+      fail('Child ID key does not match child field: ' + indexFile + ':' + child);
+    }
+    actual.push(child);
+  }
+  const expectedSorted = [...expected].sort();
+  if (JSON.stringify(actual.sort()) !== JSON.stringify(expectedSorted)) {
+    fail('Source folders and child ID-map entries differ in ' + indexFile +
+      '\nFolders: ' + expectedSorted.join(', ') + '\nMap: ' + actual.join(', '));
+  }
+}
 function readSkills(folder) {
   const d = path.join(folder, 'skills');
-  return fileNames(d).map(name => readEntity(path.join(d, name), 'Skill'));
+  const names = fileNames(d);
+  if (names.length) verifyIndex(path.join(d, 'index.ids.ts'), names.map(n => n.slice(0, -'.data.ts'.length)));
+  return names.map(name => readEntity(path.join(d, name), 'Skill'));
 }
 function markdownLine(entity, level, output) {
   const link = path.relative(path.dirname(output), entity.file).split(path.sep).join('/');
@@ -133,6 +162,7 @@ for (const folder of subdirs(taxonomyRoot)) {
   const domain = readEntity(domainFile, 'SkillDomain');
   const groups = subdirs(domainFolder);
   const directSkills = readSkills(domainFolder);
+  if (groups.length) verifyIndex(path.join(domainFolder, 'index.ids.ts'), groups);
   if ((groups.length > 0) === (directSkills.length > 0)) fail('Domain must have only Groups or direct Skills: ' + domainFile);
   const content = groups.map(group => {
     const groupFolder = path.join(domainFolder, group);
