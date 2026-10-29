@@ -2,7 +2,7 @@
 
 Date: 2026-10-28
 
-> **Status: OPEN editorial review.** A candidate present in [taxonomy.md](./taxonomy.md) is **not** thereby approved. This document makes granularity decisions and subject boundaries explicit **outside the taxonomy**, so they can be discussed before creating Definitions, UUIDs or Code.
+> **Status: OPEN editorial review.** A candidate present in [taxonomy.md](./taxonomy.md) is **not** thereby approved. This document makes granularity decisions and subject boundaries explicit **outside the taxonomy**, so they can be discussed before implementing UUIDs or Code; the taxonomy itself is the permanent editorial definition.
 
 ## 1. Decisions expressed by the editor — reflected in the draft
 
@@ -21,7 +21,7 @@ Date: 2026-10-28
 | Biotechnology ecological risk | Keep it. | Retained **«Оцінювати екологічний ризик застосування біотехнології»** with a clarified distinction between possible risk and proven harm. |
 | «Хто це?» | Encyclopedia **lesson collection**, not Skill. | No separate Skill or SkillGroup; uses existing identification/classification competencies. |
 | Scope and subject boundaries | Biology includes organisms, their biology and ecosystem relationships; hygiene and safety belong to Health & Safety. | Recorded decisions in Subject Proposition; not redundant rows masquerading as unresolved issues. |
-| Format and descriptions | Metadata first; prose is meaningful explanatory content, not a paraphrase of the heading. | Reordered `Skills/Groups`, `Definition`, `Code` above unlabelled prose, rewrote domain/group/skill descriptions; same requirement applied to Studio skill/template and persona. |
+| Format and descriptions | Metadata first; prose is meaningful explanatory content, not a paraphrase of the heading. | Reordered `Skills/Groups`, `Code` above unlabelled prose and subsequently removed obsolete `Definition` fields, rewrote domain/group/skill descriptions; same requirement applied to Studio skill/template and persona. |
 | Classification and justification | **Approved: one Skill** for status classification **including justification** (2026-10-29). | Removed formerly separate `Обґрунтовувати висновок про належність об'єкта до живої природи`; `Ознаки живого` now has one Skill. |
 | Plant versus animal cell | **Retain biological comparison, not a specific representation** (2026-10-29). | `Розрізняти рослинну та тваринну клітини за особливостями будови` replaces `…за моделлю`. |
 | Mycology, Microbiology, Virology | **Separate Domains with direct Skills** (2026-10-29). | Replaced artificially merged Domain and three namesake Groups with three ungrouped Domains. `Біотехнології` also becomes its own Domain (previously a singleton Group under Applied Biology). |
@@ -121,7 +121,7 @@ The old Domain «Біологічні моделі та біотехнологі
 
 **Remaining reviewable overlap:** «Прогнозувати наслідки вилучення ланки ланцюга» still exists in Ecology → «Харчові зв’язки». It specifically concerns a food chain, while the new interdependence Skill addresses ecological networks and indirect effects more broadly. **Assess whether these justify independent IDs before approving taxonomy**; do not silently remove the more specific Skill.
 
-**Historical inventory after the Observation/Modeling pass:** 9 Domains, 30 Groups, 121 Skills; 160 placeholder Definition/Code links. **Current inventory after subsequent restructuring: 11 Domains, 26 Groups, 122 Skills; 159 placeholders of each kind.**
+**Historical inventory after the Observation/Modeling pass:** 9 Domains, 30 Groups, 121 Skills; 160 placeholder Definition/Code links **at that historical stage**. **Current inventory after subsequent restructuring: 11 Domains, 26 Groups, 122 Skills; 159 Code placeholders only.**
 
 ### Cross-disciplinary ownership audit — OPEN, do not apply silently
 
@@ -143,7 +143,7 @@ The same test must now be applied to additional existing candidates, especially:
 
 **Program-level, locale-sensitive choice:** Local fauna examples (Ukraine, Israel, regions of the Americas, etc.) belong in **optional region-specific Lesson variants** of a Program that target the same canonical Skill. UI locale may suggest an initial region but must not be mistaken for residence or a non-editable decision. Provide user/teacher choice and a broadly relevant fallback. Regional selection and progress substitution are **not implemented merely by this documentation**. Translate **all variants** into the required default languages; no region-based reduction of localization requirements. See [Subject Proposition](../../../../studio/Subject%20Proposition.md) and [Create Curriculum Skill](../../../../studio/skills/create-curriculum.skill.md).
 
-**Current inventory: 11 Domains · 26 Groups · 122 Skills · 159 unimplemented Definition links · 159 unimplemented Code links.**
+**Current inventory: 11 Domains · 26 Groups · 122 Skills · 159 unimplemented Code links. The taxonomy itself is the authoritative definition of each entity.**
 
 ## 4. Additional decisions to review
 
@@ -162,11 +162,11 @@ The [Create Skills Taxonomy Skill](../../../../studio/skills/create-skills-taxon
 
 ## 6. Remaining workflow / stop condition
 
-The **living/dead classification, three virus Skills, removal of four data/source Skills and six inquiry/evidence Skills, plus the Observation/Modeling consolidations are approved**, but the **taxonomy as a whole remains an editorial draft**. Before the **Create Skill Definitions** stage:
+The **living/dead classification, three virus Skills, removal of four data/source Skills and six inquiry/evidence Skills, plus the Observation/Modeling consolidations are approved**, but the **taxonomy as a whole remains an editorial draft**. Before **taxonomy approval and later Implement Skill Code**:
 
 1. Audit the **five Biological Classification Skills** for subject ownership, while retaining the Group; review whether selection vs genetic modification still needs a separate comparison Skill.
 2. Review whether **«Прогнозувати наслідки вилучення ланки ланцюга»** requires a separate ID from the ecosystem-interdependence Skill.
 3. Decide separately where generic scientific/data/model-literacy Skills should live across textbooks; do not create IDs by assumption.
 4. Validate the new optional direct Domain → Skill link through registry/builders/consumers and tests before creating generated Skill Code. Specify region-based Program lesson selection separately; then review atomicity and subject coverage before approving the taxonomy.
 
-**Do not create entity definitions, UUID files, `*.data.ts`, Lessons or Questions on the basis of open decisions.**
+**Do not create per-entity Definition files (that workflow is discontinued), UUID files, `*.data.ts`, Lessons or Questions on the basis of open editorial decisions.**
