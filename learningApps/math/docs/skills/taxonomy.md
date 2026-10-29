@@ -14,7 +14,7 @@ Code files: 13/13 Domains · 60/60 Groups · 285/285 Skills
 
 ## DOMAINS
 
-### Лічба
+### Counting
 
 Groups: 5 · Skills: 15
 
@@ -22,7 +22,7 @@ Code: [Code](../../src/data/skillsTaxonomy/counting/counting.data.ts)
 
 Описує становлення поняття кількості через взаємно однозначне зіставлення предметів і чисел, рух натуральним числовим рядом, порядкові позиції та групування для лічби.
 
-#### Числові послідовності
+#### Number sequences
 
 Skills: 5
 
@@ -30,37 +30,37 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/sequence.data.ts)
 
-##### Перелічувати предмети без пропусків і повторів, встановлюючи відповідність «предмет — одне число»
+##### One-to-one correspondence when counting
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/oneToOne.data.ts)
 
 За довільного розташування елементів кожному відповідає лише одне числове слово; обхід множини не змінює її чисельності.
 
-##### Лічити вперед у межах 20, зокрема від довільного початкового числа
+##### Counting forward within 20
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward20.data.ts)
 
 Від числа 8 наступними є 9, 10, 11; орієнтир — послідовність, а не запам’ятована лічилка від одиниці.
 
-##### Лічити назад у межах 20, зокрема від довільного початкового числа
+##### Counting backward within 20
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/backward20.data.ts)
 
 Від числа 14 попередніми є 13, 12, 11; зменшення на одиницю зберігається і при переході через десяток.
 
-##### Лічити вперед і назад у межах 100, не починаючи щоразу з одиниці
+##### Counting forward and backward within 100
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward100.data.ts)
 
 Початок може бути всередині двоцифрового діапазону: з 48 перейти через 50 і повернутися через 40, не скидаючи рахунок до початку.
 
-##### Продовжувати й відновлювати послідовність натуральних чисел у межах 1000
+##### Continuing number sequences within 1,000
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/sequence/skills/forward1000.data.ts)
 
 Пропущений член визначають через сусідні значення й крок один, зокрема біля меж сотень (299, 300, 301).
 
-#### Кількість
+#### Cardinality
 
 Skills: 4
 
@@ -68,31 +68,31 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/cardinality.data.ts)
 
-##### Визначати кількість предметів за останнім названим числом під час лічби
+##### Determining how many objects are in a set
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/basicCardinality.data.ts)
 
 Після позначення кожного елемента рівно один раз останнє вимовлене число описує розмір усієї множини, а не лише останній предмет.
 
-##### Розпізнавати нуль як кількість елементів порожньої множини
+##### Understanding zero as an empty quantity
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/zero.data.ts)
 
 Порожня коробка має кількість нуль, хоча сам контейнер існує; відсутність елементів не слід плутати з відсутністю об’єкта.
 
-##### Порівнювати дві множини через попарне зіставлення або підрахунок
+##### Comparing sets by matching or counting
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/compareSets.data.ts)
 
 Якщо кожному елементу однієї множини можна поставити у відповідність рівно один елемент іншої, кількості рівні незалежно від розмірів предметів.
 
-##### Визначати кількість великої групи предметів через об’єднання в десятки або сотні
+##### Counting objects in groups of tens or hundreds
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/cardinality/skills/groupAndCount.data.ts)
 
 Об’єднання дрібних елементів у повні десятки чи сотні скорочує підрахунок, а залишок враховується окремо.
 
-#### Крокова лічба
+#### Skip counting
 
 Skills: 4
 
@@ -100,13 +100,13 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/steps.data.ts)
 
-##### Лічити рівними кроками по 2 й пояснювати, які групи перелічуються
+##### Counting in steps of 2
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy2.data.ts)
 
 Послідовність 2, 4, 6, 8 відображає додавання ще однієї пари; групи мають однаковий розмір.
 
-##### Лічити рівними кроками по 5 й пояснювати зв’язок із групуванням
+##### Counting in steps of 5
 
 Code: [Code](../../src/data/skillsTaxonomy/counting/steps/skills/countBy5.data.ts)
 
