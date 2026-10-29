@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const taxonomy = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(taxonomy, 'data');
@@ -108,12 +108,7 @@ describe('Data taxonomy source contracts', () => {
     }
   });
 
-  it('marks exactly the authored skills as Implemented in the inventory', () => {
-    const inventory = read(join(process.cwd(), 'src', 'data', 'skills-inventory.md'));
-    const dataSection = inventory.split('### Domain 10. Дані (15)')[1].split('### Domain 11.')[0];
-    const rows = dataSection.split('\n').filter(line => line.includes('| ' + String.fromCharCode(96) + 'math.data.'));
-    assert.equal(rows.length, 15);
-    for (const row of rows) assert.ok(row.endsWith('| **Implemented** |'));
-    assert.ok(dataSection.includes('3/3 Group configs + 15/15 individual Skills'));
+  it('links all 15 implemented Skills from the canonical taxonomy', () => {
+    assertCanonicalTaxonomyCodeLinks('data', expected);
   });
 });

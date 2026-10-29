@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const base = join(root, 'fractions');
@@ -88,18 +88,7 @@ describe('Math / Fractions taxonomy', () => {
     assert.equal(new Set(ids).size, 24);
   });
 
-  it('marks all 19 Skill rows implemented in the inventory', () => {
-    const inventory = read(process.cwd(), 'src', 'data', 'skills-inventory.md');
-    const begin = inventory.indexOf('### Domain 3. Дроби (19)');
-    const end = inventory.indexOf('### Domain 4. Арифметика (79)');
-    assert.ok(begin >= 0 && end > begin);
-    const section = inventory.slice(begin, end);
-    const implemented = section
-      .split('\n')
-      .filter(
-        line =>
-          line.startsWith('| ' + String.fromCharCode(96) + 'math.fractions.') && line.endsWith('| **Implemented** |'),
-      );
-    assert.equal(implemented.length, 19);
+  it('links all 19 implemented Skills from the canonical taxonomy', () => {
+    assertCanonicalTaxonomyCodeLinks('fractions', groups);
   });
 });

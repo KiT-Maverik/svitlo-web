@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const numeration = join(root, 'numeration');
@@ -146,10 +146,7 @@ describe('Natural Numbers taxonomy integrity', () => {
     assert.equal(new Set(ids).size, 33);
   });
 
-  it('lists the 27 actual Skill configurations as Implemented in the inventory', () => {
-    const inventory = source(join(process.cwd(), 'src', 'data', 'skills-inventory.md'));
-    const section = inventory.split('### Domain 2. Натуральні числа (27)')[1]?.split('### Domain 3. Дроби')[0];
-    assert.ok(section);
-    assert.equal((section.match(/\| \*\*Implemented\*\* \|/g) ?? []).length, 27);
+  it('links all 27 implemented Skills from the canonical taxonomy', () => {
+    assertCanonicalTaxonomyCodeLinks('numeration', groupSkills);
   });
 });

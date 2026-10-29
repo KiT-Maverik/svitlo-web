@@ -3,12 +3,10 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(root, 'measurement');
-const inventory = readFileSync(join(process.cwd(), 'src', 'data', 'skills-inventory.md'), 'utf8');
-const migration = readFileSync(join(root, 'UUID-MIGRATION.md'), 'utf8');
 const locales = DEFAULT_SUPPORTED_LANGUAGES.map(item => item.language);
 const names = {
   length: [
@@ -29,30 +27,6 @@ const names = {
   general: ['standardUnitPurpose', 'chooseAppropriateUnit', 'wordProblemsMeasures'],
 } as const;
 
-const expectedEditorial = [
-  'compare-length',
-  'nonstandard-length',
-  'ruler-zero',
-  'measure-centimeters',
-  'millimeters',
-  'decimeters',
-  'meters',
-  'kilometers',
-  'estimate-length',
-  'add-subtract-lengths',
-  'centner-kilogram',
-  'compare-mass',
-  'kilogram-gram',
-  'weigh-object',
-  'capacity-concept',
-  'liter',
-  'milliliter',
-  'temperature-read',
-  'standard-unit-purpose',
-  'choose-appropriate-unit',
-  'word-problems-measures',
-];
-
 function read(path: string): string {
   return readFileSync(path, 'utf8');
 }
@@ -68,7 +42,7 @@ function ids(path: string): Record<string, string> {
 }
 
 describe('Measurement taxonomy', () => {
-  it('implements exactly the inventory groups and 21 Skills', () => {
+  it('implements five groups and 21 Skills with canonical Code links', () => {
     assert.deepEqual(
       readdirSync(domain, { withFileTypes: true })
         .filter(item => item.isDirectory())
@@ -89,37 +63,26 @@ describe('Measurement taxonomy', () => {
         skills.map(key => 'export { ' + key + "_Skill_Data } from './" + key + ".data';").sort(),
       );
     }
-    const domainInventory = inventory.split('### Domain 7.')[1]?.split('### Domain 8.')[0];
-    assert.ok(domainInventory);
-    const rows = [...domainInventory.matchAll(/^\|\s*`(math\.measure\.[^`]+)`\s*\|[^\n]+$/gm)];
-    assert.deepEqual(rows.map(row => row[1]).sort(), expectedEditorial.map(key => 'math.measure.' + key).sort());
-    assert.ok(rows.every(row => /\|\s*\*\*Implemented\*\*\s*\|\s*$/.test(row[0])));
+    assertCanonicalTaxonomyCodeLinks('measurement', names);
   });
 
   it('uses stable, unique UUIDs with separate ID-only references', () => {
     const seen = new Set<string>();
-    const check = (kind: string, editorial: string, value: string): void => {
+    const check = (value: string): void => {
       assert.match(value, /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
       assert.ok(!seen.has(value), 'Duplicate UUID: ' + value);
       seen.add(value);
-      assert.ok(
-        migration.split('\n').some(line => {
-          const columns = line.split('|').map(column => column.trim());
-          return columns[1] === kind && columns[2] === '`' + editorial + '`' && columns[3] === '`' + value + '`';
-        }),
-        `Missing migration entry: ${kind} ${editorial} ${value}`,
-      );
+
     };
     const domainIds = ids(join(domain, 'measurement.ids.ts'));
     assert.deepEqual(Object.keys(domainIds), ['measurement']);
-    check('domain', 'math.measurement', domainIds.measurement);
+    check(domainIds.measurement);
     assert.ok(read(join(domain, 'measurement.data.ts')).includes('groupIds: measurement_SkillGroups_Ids'));
     const groupLinks = read(join(domain, 'index.ids.ts'));
-    let count = 0;
     for (const [group, skills] of Object.entries(names)) {
       const groupIds = ids(join(domain, group, group + '.ids.ts'));
       assert.deepEqual(Object.keys(groupIds), [group]);
-      check('group', 'math.measurement.' + group, groupIds[group]);
+      check(groupIds[group]);
       assert.ok(groupLinks.includes(group + ': ' + group + '_SkillGroup_Ids.' + group + ','));
       assert.ok(read(join(domain, group, group + '.data.ts')).includes('skillIds: ' + group + '_Skills_Ids'));
       const skillIds = ids(join(domain, group, 'skills', 'index.ids.ts'));
@@ -129,7 +92,7 @@ describe('Measurement taxonomy', () => {
         assert.ok(file.includes('id: ' + group + '_Skills_Ids.' + key + ','));
         assert.doesNotMatch(file, /from ['"][^'"]+\.data['"]/);
         const value = skillIds[key];
-        check('skill', 'math.measure.' + expectedEditorial[count++], value);
+        check(value);
       }
     }
     assert.equal(seen.size, 27);

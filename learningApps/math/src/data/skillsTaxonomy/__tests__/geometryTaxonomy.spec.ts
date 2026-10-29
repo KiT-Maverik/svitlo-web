@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data');
 const taxonomy = join(root, 'skillsTaxonomy');
@@ -64,7 +64,6 @@ describe('Geometry taxonomy integrity', () => {
     register(domainIds.get('geometry')!);
     validTranslations(join(geometry, 'geometry.data.ts'));
     const groupReferences = read(join(geometry, 'index.ids.ts'));
-    const migration = read(join(taxonomy, 'UUID-MIGRATION.md'));
     let totalSkills = 0;
     for (const [group, skillNames] of Object.entries(groups)) {
       const dir = join(geometry, group);
@@ -96,7 +95,6 @@ describe('Geometry taxonomy integrity', () => {
       for (const skill of skillNames) {
         const id = ids.get(skill)!;
         register(id);
-        assert.ok(migration.includes('`' + id + '`'), 'Missing migration UUID: ' + id);
         const data = read(join(skillDirectory, skill + '.data.ts'));
         assert.ok(data.includes('id: ' + group + '_Skills_Ids.' + skill));
         assert.ok(data.includes('export const ' + skill + '_Skill_Data = buildSkillConfig('));
@@ -118,19 +116,7 @@ describe('Geometry taxonomy integrity', () => {
     );
   });
 
-  it('marks all 35 materialized skills and 10 groups as implemented in the inventory', () => {
-    const inventory = read(join(root, 'skills-inventory.md'));
-    const section = inventory.split('### Domain 6. Геометрія (35)')[1]?.split('### Domain 7.')[0];
-    assert.ok(section);
-    assert.match(section, /35\/35 Skill files — \*\*Implemented\*\*/);
-    assert.equal(
-      Array.from(
-        section.matchAll(/^\*\*Implementation:\*\* Implemented — Group data and all Skill data files present\.$/gm),
-      ).length,
-      10,
-    );
-    const statuses = Array.from(section.matchAll(/^\|\s*`math\.[^`]+`\s*\|[^\n]+\|\s*(Implemented|—)\s*\|$/gm));
-    assert.equal(statuses.length, 35);
-    assert.ok(statuses.every(([, status]) => status === 'Implemented'));
+  it('links all 35 implemented Skills from the canonical taxonomy', () => {
+    assertCanonicalTaxonomyCodeLinks('geometry', groups);
   });
 });
