@@ -1532,37 +1532,37 @@ Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/millimeters
 
 Десять міліметрів утворюють сантиметр; мала шкала потрібна там, де цілих сантиметрів недостатньо.
 
-##### Співвідносити дециметр і сантиметр та виконувати прості перетворення
+##### Converting between decimeters and centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/decimeters.data.ts)
 
 Один дециметр дорівнює десяти сантиметрам, тому 3 дм відповідають 30 см.
 
-##### Співвідносити метр, дециметр і сантиметр у практичних вимірах
+##### Relating meters, decimeters and centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/meters.data.ts)
 
 Метр складається із десяти дециметрів або ста сантиметрів; при порівнянні записів величину зберігають.
 
-##### Вибирати кілометри для великих відстаней і співвідносити їх із метрами
+##### Using kilometers for long distances and converting to meters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/kilometers.data.ts)
 
 Великі відстані між населеними пунктами доцільно виражати кілометрами: 2 км дорівнюють 2000 м.
 
-##### Оцінювати довжину та перевіряти результат інструментом
+##### Estimating length and checking by measurement
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/estimateLength.data.ts)
 
 Приблизна довжина зорово оцінюється до виміру, а інструмент показує величину помилки оцінки.
 
-##### Додавати й віднімати довжини в узгоджених одиницях
+##### Adding and subtracting lengths in compatible units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/addSubtractLengths.data.ts)
 
 При обчисленні 30 см + 2 дм спочатку переходять до спільних одиниць: 30 см + 20 см.
 
-#### Маса
+#### Mass
 
 Skills: 4
 
@@ -1570,31 +1570,31 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/mass.data.ts)
 
-##### Застосовувати співвідношення центнера й кілограма у задачах
+##### Using centners and kilograms in problems
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/centnerKilogram.data.ts)
 
 Один центнер містить сто кілограмів; регіональну одиницю не слід плутати з метричною тонною.
 
-##### Порівнювати масу предметів за допомогою терезів або рівноваги
+##### Comparing masses using a balance
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/compareMass.data.ts)
 
 На двочашкових терезах переважує важча сторона; рівновага свідчить про рівність мас двох наборів.
 
-##### Використовувати кілограм і грам та співвідносити їх
+##### Relating kilograms and grams
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/kilogramGram.data.ts)
 
 Один кілограм дорівнює тисячі грамів; для легкого предмета зручні грами, для важкого — кілограми.
 
-##### Зчитувати покази вагів і записувати результат із одиницею
+##### Reading a scale and recording mass with units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/weighObject.data.ts)
 
 Показ 750 на шкалі вагів має сенс лише разом із підписом «г» або іншою одиницею.
 
-#### Місткість
+#### Capacity
 
 Skills: 3
 
@@ -1602,25 +1602,25 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/capacity.data.ts)
 
-##### Порівнювати місткість посудин через переливання або вимірювання
+##### Comparing container capacities by pouring or measuring
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/capacityConcept.data.ts)
 
 Якщо одну посудину наповнити іншою, можна порівняти об’єми рідини незалежно від висоти чи форми ємностей.
 
-##### Вимірювати й оцінювати місткість у літрах
+##### Measuring and estimating capacity in liters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/liter.data.ts)
 
 Літр — стандартна одиниця місткості; високу вузьку посудину не можна автоматично вважати місткішою за низьку широку.
 
-##### Використовувати мілілітри та співвідносити їх із літрами
+##### Relating milliliters and liters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/milliliter.data.ts)
 
 У літрі є 1000 мілілітрів; 500 мл — це пів літра за тієї самої одиниці об’єму.
 
-#### Температура
+#### Temperature
 
 Skills: 1
 
@@ -1628,7 +1628,7 @@ Skills: 1
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/temperature/temperature.data.ts)
 
-##### Зчитувати невід’ємну температуру з простої шкали термометра
+##### Reading nonnegative temperatures on a thermometer
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/temperature/skills/readTemperature.data.ts)
 
