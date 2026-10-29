@@ -15,4 +15,4 @@
 [Sections — 6 сценарних секцій](./Sections/README.md). Сценарій доповнює цю коротку методичну картку, але не перетворює її на повний Learning Brief.
 
 ---
-[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../../grade-1.curriculum.md)
+[Математична мова, рівності та задачі](../README.md) · [Curriculum Grade 1](../../grade-1.curriculum.md)
