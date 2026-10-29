@@ -2,29 +2,29 @@
 
 Date: 2026-10-29
 
-A subject-wide, audience-independent catalog of geographical competencies. It covers orientation, cartography and geospatial evidence, land and water systems, weather and climate, natural regions, human geography, environment–society interactions, and geographic investigation. Domain → Group → Skill denotes **classification**, not grades, lesson order, prerequisites, assessment evidence, or a particular national curriculum. The same competency may support introductory explorations and more demanding learning experiences.
+A subject-wide, audience-independent catalog of geographical competencies. It covers spatial location and time zones, cartography and map types, minerals and Earth history, land and water systems, weather and climate, natural regions, human geography, natural resources, environment–society interactions, and geographic investigation. Domain → Group → Skill denotes **classification**, not grades, lesson order, prerequisites, assessment evidence, or a particular national curriculum. The same competency may support introductory explorations and more demanding learning experiences.
 
-**Boundaries:** Geographic interpretation of the spatial distribution, characteristics, and interaction of Earth systems is in scope. Detailed biology of organisms, physical laws, chemical reactions, astronomy, software implementation, historical chronology, and financial calculations remain primarily in their respective subjects. Geography can draw on those disciplines without duplicating their taxonomies. The subject's optional “What is it?” encyclopedia is a **lesson/content format**, not a Skill or SkillGroup.
+**Boundaries:** Geographic interpretation of the spatial distribution, characteristics, and interaction of Earth systems is in scope. Detailed biology of organisms, physical equations, chemical reaction mechanisms, astronomy beyond geographical explanations, software implementation, historical chronology, and financial calculations remain primarily in their respective subjects. Introductory geology and mineralogy, including geological evidence, resources and hazards, are explicitly within Geography's editorial scope. Geography can draw on those disciplines without duplicating their taxonomies. The subject's optional “What is it?” encyclopedia is a **lesson/content format**, not a Skill or SkillGroup.
 
-**Breadth references:** [NCGE National Geography Standards — six essential elements](https://ncge.org/teacher-resources/national-geography-standards/) and [National Geographic, Geography Standard 1](https://education.nationalgeographic.org/resource/geography-standard-1/), consulted as international scope checks; they are **not** adopted as a mandated national or grade-specific curriculum. This document is an editorial proposal pending review.
+**Breadth references:** [NCGE National Geography Standards — six essential elements](https://ncge.org/teacher-resources/national-geography-standards/) and [National Geographic, Geography Standard 1](https://education.nationalgeographic.org/resource/geography-standard-1/), consulted as international scope checks; they are **not** adopted as a mandated national or grade-specific curriculum. Technical concept checks: [USGS — rocks and minerals](https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral), [USGS — geologic time](https://pubs.usgs.gov/gip/geotime/relative.html), and [US Naval Observatory — civil and solar time](https://aa.usno.navy.mil/faq/eqtime). This document is an editorial proposal pending review.
 
 ## SUMMARY
 
 Domains: 8
-Groups: 25
-Skills: 75
+Groups: 32
+Skills: 116
 
-Code files: 0/8 Domains · 0/25 Groups · 0/75 Skills
+Code files: 0/8 Domains · 0/32 Groups · 0/116 Skills
 
 ## DOMAINS
 
 ### Spatial Orientation
 
-Groups: 3 · Skills: 9
+Groups: 4 · Skills: 15
 
 Code: [Not implemented](#)
 
-Locating a phenomenon requires a reference frame: position can be described relative to other places, by direction and distance, or by recurring arrangements. This domain concerns reasoning about where things are, rather than interpreting the graphic conventions of a map.
+Places can be identified using a reference position, direction, scale, or coordinated spatial framework. The same geographic position also belongs to different local and civil time systems, which depend on Earth's rotation and agreed time conventions. This domain addresses locating, orienting and situating places, rather than the graphic rules of making maps.
 
 #### Location and Reference
 
@@ -32,25 +32,69 @@ Skills: 3
 
 Code: [Not implemented](#)
 
-A place can be specified using nearby landmarks, named areas, or an explicit spatial reference. The important distinction is between a location itself and the descriptions that allow another person to find it.
+A position may be described from a chosen nearby reference or identified within an agreed fixed reference system; both require sufficient precision to tell one place from another. These methods are concepts of locating places, distinct from the specific techniques of reading latitude and longitude in cartography.
 
-##### Describe a place relative to landmarks
-
-Code: [Not implemented](#)
-
-Use a stable, recognizable reference such as a road, river, or building to communicate where a place lies; a description must distinguish it from nearby alternatives.
-
-##### Distinguish relative and absolute location
+##### Describe a location relative to a reference point
 
 Code: [Not implemented](#)
 
-Recognize that “beside the school” depends on a reference place, whereas a coordinate or fixed address identifies a position in an agreed reference system.
+Express where a place lies by referring to another identifiable object or location, such as 'east of the station' or 'next to the bridge'. The statement changes meaning when its reference point changes.
+
+##### Identify a location using an absolute reference
+
+Code: [Not implemented](#)
+
+Use a stable agreed identifier, such as a coordinate pair in a named system or an address within a specified jurisdiction, to locate a place independently of a movable observer. Interpreting latitude and longitude is a separate cartographic competency.
 
 ##### Identify location at local, regional, and global scales
 
 Code: [Not implemented](#)
 
 Relate the same place to nested areas such as a neighborhood, country, and world region without confusing a change of scale with physical movement.
+
+#### Time Zones
+
+Skills: 6
+
+Code: [Not implemented](#)
+
+Earth's rotation gives different longitudes different solar timing, while societies coordinate clocks through geographically assigned civil time rules. The same place can be described by its solar time, legal time-zone assignment, UTC offset and calendar date; these are related but not interchangeable.
+
+##### Explain the concept of local time
+
+Code: [Not implemented](#)
+
+Recognize that time at a particular place can mean its solar timing or the legally observed clock time, and identify which meaning a geographic question uses. Two places may have different solar times yet share the same official clock time.
+
+##### Explain why local solar time varies with longitude
+
+Code: [Not implemented](#)
+
+Connect Earth's rotation with the apparent passage of the Sun across the sky: places at different longitudes reach solar noon at different moments. This geographic tendency is not a rule that political zone boundaries follow exact meridians.
+
+##### Interpret time zones on a geographic map
+
+Code: [Not implemented](#)
+
+Locate places assigned to different civil time zones using a legend or UTC offsets; recognize that boundaries may follow political borders and that some regions use half-hour or quarter-hour offsets.
+
+##### Determine civil time using a specified UTC offset
+
+Code: [Not implemented](#)
+
+Apply a stated positive or negative offset to a known UTC time for a particular date, including when the resulting local date moves to the previous or next day. Do not infer an offset from longitude alone.
+
+##### Explain seasonal changes to civil clock time
+
+Code: [Not implemented](#)
+
+Identify that some jurisdictions change their legal UTC offsets seasonally while others do not, and that the applicable rule depends on place and date rather than a universal daylight-saving schedule.
+
+##### Interpret calendar-date changes across the International Date Line
+
+Code: [Not implemented](#)
+
+Determine why adjacent locations on opposite sides of the approximate Pacific date boundary can have different calendar dates, noting that its actual course follows regional civil-time choices rather than a perfectly straight meridian.
 
 #### Directions and Routes
 
@@ -106,7 +150,7 @@ Explain how a mountain range, river crossing, valley, or road can restrict or en
 
 ### Maps and Geospatial Representations
 
-Groups: 4 · Skills: 12
+Groups: 4 · Skills: 13
 
 Code: [Not implemented](#)
 
@@ -162,7 +206,7 @@ Identify that apparent sizes and shapes can change when the curved surface is fl
 
 Code: [Not implemented](#)
 
-Choose between a street plan, regional map, world map, or globe according to the information needed, not solely its visual detail.
+Choose a globe, world or regional map, or detailed street plan according to the required spatial extent, scale and projection properties. This concerns the *representation and coverage*; choosing the subject matter of a political, geological or population map is a separate Skill.
 
 #### Geographic Coordinates
 
@@ -190,19 +234,25 @@ Code: [Not implemented](#)
 
 Use both coordinates in their proper order and hemispheres to identify a geographic position.
 
-#### Thematic Maps and Layers
+#### Map Types and Thematic Layers
 
-Skills: 3
-
-Code: [Not implemented](#)
-
-A thematic representation displays the geographic variation of one or more properties, such as rainfall, population density, or land use. Interpretation depends on the variable and classification, not merely color intensity.
-
-##### Distinguish reference maps from thematic maps
+Skills: 4
 
 Code: [Not implemented](#)
 
-Recognize whether a map primarily identifies places and features or displays the spatial variation of a selected measured characteristic.
+Maps may emphasize general reference features, political territories, physical relief, topography or specific themes such as geology, population, climate, weather, transport and resources. Categories overlap: for example, a geological or population map is thematic, and many maps combine layers. Choosing the relevant content is distinct from choosing a globe or map scale.
+
+##### Identify common map types by their information content
+
+Code: [Not implemented](#)
+
+Recognize whether a map presents political boundaries, physical relief, topographic detail, geological units, climate, population, resources or transport, using its title, legend and depicted variables. Explain that reference and thematic are broad roles, not mutually exclusive lists of named maps.
+
+##### Select a map type for a geographic question
+
+Code: [Not implemented](#)
+
+Match a question to the type of information a map must show: for example, use a geological map to investigate rock distribution or a population-density map to compare settlement concentration. Do not substitute a visually attractive map lacking the required variable.
 
 ##### Interpret a thematic legend and its value classes
 
@@ -218,11 +268,11 @@ Identify where mapped phenomena coincide or differ without assuming that co-loca
 
 ### Earth Surface and Land Processes
 
-Groups: 3 · Skills: 9
+Groups: 9 · Skills: 42
 
 Code: [Not implemented](#)
 
-The solid surface of Earth contains distinctive relief, materials, and changing landforms shaped by internal and external processes. Geographic understanding emphasizes their visible characteristics and spatial patterns; detailed chemical and physical mechanisms remain in other sciences.
+The solid Earth supplies minerals, rocks, soils and the relief visible on its surface. Their origin, internal organization, change across deep time, and location explain patterns of landscapes, deposits and geological hazards. This is the geography and introductory earth science of materials and land processes, not a substitute for detailed chemical reaction mechanisms or physical derivations.
 
 #### Landforms and Relief
 
@@ -250,25 +300,31 @@ Code: [Not implemented](#)
 
 Read closely spaced elevation contours as a steeper surface than widely spaced contours under the same interval.
 
-#### Rocks, Soil, and Surface Materials
+#### Soils and Surface Sediments
 
-Skills: 3
-
-Code: [Not implemented](#)
-
-Earth materials differ in texture, origin, and the ways they affect drainage and land use. This group covers their geographic occurrence and observable properties without becoming a mineral identification course.
-
-##### Distinguish exposed rock from developed soil
+Skills: 4
 
 Code: [Not implemented](#)
 
-Recognize that soil commonly contains weathered mineral particles, organic matter, water, and air, whereas exposed bedrock is not a soil profile.
+Weathered particles, organic matter, water and air combine into soils, while loose surface sediments vary in grain size and water movement. Their characteristics influence vegetation and land use; mineral identification and consolidated rock origin are covered in separate geology groups.
 
-##### Compare observable properties of surface materials
+##### Explain how a soil profile develops at the surface
 
 Code: [Not implemented](#)
 
-Use features such as grain size, cohesion, and permeability to explain why sand, clay, and gravel behave differently at the ground surface.
+Relate weathered mineral particles, organic input, water and organisms to the gradual development of soil horizons above parent material. An exposed rock surface or loose gravel layer is not automatically a mature soil.
+
+##### Classify unconsolidated sediment by grain size
+
+Code: [Not implemented](#)
+
+Distinguish coarser gravel and sand from finer silt and clay by relative particle size and observed texture, without treating soil categories as identical to rock types.
+
+##### Explain infiltration differences among surface materials
+
+Code: [Not implemented](#)
+
+Use grain size, pore connectivity, compaction and water saturation to explain why water infiltrates into different soil or sediment deposits at different rates. Avoid assuming large grains always guarantee drainage in every setting.
 
 ##### Infer basic land-use constraints from soil conditions
 
@@ -276,19 +332,31 @@ Code: [Not implemented](#)
 
 Relate waterlogging, shallow soils, or steep slopes to limitations on cultivation or construction without predicting engineering safety from appearance alone.
 
-#### Landscape Change
+#### Weathering, Erosion, and Deposition
 
-Skills: 3
-
-Code: [Not implemented](#)
-
-Landforms are altered by erosion, movement and deposition of material, and tectonic activity. The objective is to explain recognizable geographic results and timescales without reducing every landscape to one cause.
-
-##### Distinguish weathering, erosion, and deposition
+Skills: 4
 
 Code: [Not implemented](#)
 
-Identify whether material is being broken down in place, transported away, or accumulated in a new location.
+Rocks and sediment change on the exposed surface as material breaks down in place, is carried by water, wind, ice or gravity, and comes to rest elsewhere. These processes can alter valleys, coasts and plains without being confused with deep tectonic deformation.
+
+##### Explain weathering of exposed rock
+
+Code: [Not implemented](#)
+
+Describe the in-place breakdown or alteration of exposed rock by temperature changes, water, organisms or chemical action; this does not by itself mean that broken material has been transported.
+
+##### Explain how erosion transports surface material
+
+Code: [Not implemented](#)
+
+Trace removal and movement of loose material by flowing water, wind, ice or gravity, distinguishing the transport process from weathering at its source.
+
+##### Explain deposition of transported sediment
+
+Code: [Not implemented](#)
+
+Identify how moving sediment accumulates when transporting conditions change, such as at a river mouth, on a floodplain or in a dune field.
 
 ##### Explain how flowing water reshapes a landscape
 
@@ -296,11 +364,239 @@ Code: [Not implemented](#)
 
 Relate river transport and sediment deposition to features such as valleys, meanders, and deltas while recognizing that conditions vary.
 
-##### Recognize landforms associated with tectonic activity
+#### Minerals and Their Properties
+
+Skills: 6
 
 Code: [Not implemented](#)
 
-Link broad patterns of mountains, volcanic regions, and earthquake zones to plate boundaries without treating every mountain as volcanic.
+Minerals are natural crystalline solids identified by a combination of consistent material properties rather than by color alone. Their distinctive diagnostic features include hardness, streak, luster and modes of breakage; these are different from the characteristics of a whole rock or soil.
+
+##### Explain what makes a natural solid a mineral
+
+Code: [Not implemented](#)
+
+Recognize the criteria used in introductory geology: natural origin, a normally inorganic solid state, characteristic composition and ordered internal structure. A manufactured glass shard or an aggregate of unrelated crystals does not automatically meet the mineral definition.
+
+##### Determine relative mineral hardness using scratching
+
+Code: [Not implemented](#)
+
+Compare whether one sample scratches another or a familiar reference material, distinguishing scratch resistance from the ease of breaking a specimen.
+
+##### Identify a mineral's streak color
+
+Code: [Not implemented](#)
+
+Describe the powdered trace left by a specimen on a suitable streak plate, and explain why its streak may differ from the visible color of the intact crystal.
+
+##### Describe mineral luster from reflected light
+
+Code: [Not implemented](#)
+
+Recognize characteristic appearances such as metallic, glassy or dull reflection, without treating luster as a measurement of hardness or transparency.
+
+##### Distinguish cleavage from fracture in mineral breakage
+
+Code: [Not implemented](#)
+
+Use repeated flat breakage surfaces versus irregular break patterns to describe how a specimen separates, rather than confusing crystal shape with how a mineral fractures.
+
+##### Identify minerals using multiple diagnostic properties
+
+Code: [Not implemented](#)
+
+Combine evidence from observable properties to narrow possible mineral identities, recognizing that a single shared trait such as color rarely identifies a specimen reliably.
+
+#### Rocks and the Rock Cycle
+
+Skills: 6
+
+Code: [Not implemented](#)
+
+Consolidated natural materials record formation through magma cooling, deposition and lithification, or alteration in the solid state. Classifications concern how a rock formed, and the rock cycle describes multiple possible paths between types rather than a mandatory fixed sequence.
+
+##### Distinguish a rock from a mineral
+
+Code: [Not implemented](#)
+
+Recognize that a rock may consist of one or more minerals, mineral fragments or other geological material, whereas a mineral is an individual crystalline substance with characteristic properties.
+
+##### Classify rocks by their mode of origin
+
+Code: [Not implemented](#)
+
+Identify igneous, sedimentary and metamorphic examples by the processes and observable structures that formed them, rather than only by color or common names.
+
+##### Explain the formation of igneous rocks
+
+Code: [Not implemented](#)
+
+Relate cooling and solidification of magma or lava to the formation of new rocks and differences such as coarse versus fine crystal textures.
+
+##### Explain the formation of sedimentary rocks
+
+Code: [Not implemented](#)
+
+Trace deposited particles through burial, compaction and cementation into sedimentary material, distinguishing lithification from simple accumulation of loose sand.
+
+##### Explain the formation of metamorphic rocks
+
+Code: [Not implemented](#)
+
+Describe how heat, pressure and fluids can alter existing solid rock without it first melting into magma, producing new textures or minerals.
+
+##### Trace a pathway through the rock cycle
+
+Code: [Not implemented](#)
+
+Construct a plausible multi-stage change from one rock type to another using weathering, deposition, melting, cooling or metamorphism as applicable; different starting points need not follow one circular order.
+
+#### Earth's Interior and Plate Tectonics
+
+Skills: 5
+
+Code: [Not implemented](#)
+
+Earth has internal layers with different composition and mechanical properties, while its outer lithospheric plates move across a geologically active planet. Plate interactions explain large-scale patterns of faults, relief and geological activity, not every small local feature.
+
+##### Identify Earth's main internal layers
+
+Code: [Not implemented](#)
+
+Locate the crust, mantle, outer core and inner core in a cross-section, and recognize that the mantle is predominantly solid while the outer core is liquid.
+
+##### Explain the concept of tectonic plate movement
+
+Code: [Not implemented](#)
+
+Recognize that the lithosphere is divided into slowly moving plates that can shift relative to one another over geological time, without implying that continents glide freely across a liquid mantle.
+
+##### Identify major types of plate boundaries
+
+Code: [Not implemented](#)
+
+Classify divergent, convergent and transform settings from relative movement arrows or a boundary map, rather than guessing the type from a place name.
+
+##### Relate plate interactions to major geological features
+
+Code: [Not implemented](#)
+
+Connect plate collision, separation or lateral movement with broad patterns of mountain ranges, trenches, rifts and faults while allowing important exceptions.
+
+##### Recognize geographic evidence of plate motion
+
+Code: [Not implemented](#)
+
+Interpret the broad alignment of earthquakes, seafloor age patterns or matching geological features as evidence for moving plates rather than relying on isolated surface observations.
+
+#### Earthquakes and Volcanism
+
+Skills: 5
+
+Code: [Not implemented](#)
+
+Sudden slip on faults and the movement of magma produce recognizable geological events with uneven spatial occurrence. This group addresses causes, observable landforms and spatial exposure; it does not prescribe individual emergency procedures or detailed physical equations.
+
+##### Explain how fault slip produces earthquakes
+
+Code: [Not implemented](#)
+
+Relate accumulated deformation and sudden movement along a fault to ground shaking, while distinguishing the underground source from the mapped epicenter.
+
+##### Interpret earthquake distributions on a map
+
+Code: [Not implemented](#)
+
+Identify clustered earthquake belts and their common relationships to tectonic plate boundaries without treating all earthquakes as occurring on plate edges.
+
+##### Explain how magma reaches Earth's surface
+
+Code: [Not implemented](#)
+
+Describe volcanic eruptions as magma ascending through fractures or vents and becoming lava when erupted, rather than assuming every volcano continually erupts.
+
+##### Recognize landforms created by volcanic activity
+
+Code: [Not implemented](#)
+
+Connect lava flows, volcanic cones, craters and calderas with erupted or collapsed volcanic structures while avoiding a single universal volcano shape.
+
+##### Interpret geographic exposure to geological hazards
+
+Code: [Not implemented](#)
+
+Use an earthquake, volcano or fault map together with settlement locations to identify potentially exposed places, distinguishing hazard location from a precise prediction of future damage.
+
+#### Geological Time and Evidence
+
+Skills: 4
+
+Code: [Not implemented](#)
+
+Rock sequences, fossils and dated materials provide evidence of Earth's long history. Geologists reconstruct events using relative ordering as well as numerical measurements, and a geologic time scale communicates durations far larger than human history.
+
+##### Order undisturbed rock layers by relative age
+
+Code: [Not implemented](#)
+
+Infer that in an originally deposited, undisturbed sedimentary sequence lower layers are generally older than higher layers, and recognize that folding or faulting can complicate the pattern.
+
+##### Use fossils as evidence of past environments
+
+Code: [Not implemented](#)
+
+Infer that marine fossils in rock now exposed on land may indicate earlier marine conditions; fossil evidence is not merely a list of ancient species.
+
+##### Interpret a geological time scale
+
+Code: [Not implemented](#)
+
+Use labeled eons, eras or periods on a proportional timeline to place broad events in Earth's history, distinguishing relative sequence from a numerical estimate of age.
+
+##### Distinguish relative from numerical geological ages
+
+Code: [Not implemented](#)
+
+Recognize that 'older than this layer' orders events, whereas an estimated age in years gives a measured time range; different evidence and uncertainty apply to each.
+
+#### Mineral Deposits and Resource Geography
+
+Skills: 5
+
+Code: [Not implemented](#)
+
+The geological distribution of useful concentrations of minerals is uneven and influenced by rock-forming processes, access and extraction decisions. A deposit is a natural concentration, while whether it can be worked as an ore is partly an economic and technical judgment.
+
+##### Explain what constitutes a mineral deposit
+
+Code: [Not implemented](#)
+
+Recognize a localized natural concentration of a mineral or useful material in rock or sediment, rather than treating every occurrence of a common mineral as a viable mine.
+
+##### Recognize geological controls on mineral occurrence
+
+Code: [Not implemented](#)
+
+Connect deposit patterns with contexts such as igneous activity, sedimentary basins or transported sediments without assuming minerals occur uniformly worldwide.
+
+##### Interpret mineral-resource distribution on a map
+
+Code: [Not implemented](#)
+
+Locate documented mineral occurrences and major mining areas using an appropriate legend, distinguishing reported deposits from evidence that all nearby land contains the same resource.
+
+##### Explain why a mineral deposit may or may not be an ore
+
+Code: [Not implemented](#)
+
+Relate concentration, recoverability, access and prevailing economic or technical conditions to whether extraction is practical, without equating 'ore' with every rock containing metal.
+
+##### Identify geographic consequences of mineral extraction
+
+Code: [Not implemented](#)
+
+Recognize how mine sites, waste storage and transport infrastructure can change land cover or affect nearby water and settlements; detailed chemical pollution mechanisms belong to Chemistry.
 
 ### Water Systems
 
@@ -648,7 +944,7 @@ Relate transport access, resources, population, and environmental constraints to
 
 ### Environment, Resources, and Geographic Inquiry
 
-Groups: 3 · Skills: 9
+Groups: 3 · Skills: 10
 
 Code: [Not implemented](#)
 
@@ -656,17 +952,23 @@ Geography also asks how evidence about places can support responsible choices. T
 
 #### Resources and Human Impact
 
-Skills: 3
+Skills: 4
 
 Code: [Not implemented](#)
 
-Resource availability and land use depend on local physical conditions and human choices. Effects may cross administrative boundaries and emerge over different timescales.
+Natural resources are features, materials or flows people can use; their accessibility and rate of replenishment differ from place to place. Land-use decisions may change local conditions or transfer effects through shared air, water and ecological systems.
 
-##### Distinguish renewable and nonrenewable resource stocks
+##### Explain what makes something a natural resource
 
 Code: [Not implemented](#)
 
-Recognize that renewal rates and extraction rates matter, so a theoretically renewable resource may still be depleted locally.
+Identify when a natural material, living stock or environmental flow is usable to satisfy a human need, distinguishing the resource itself from a manufactured product and recognizing that usefulness can change with available technology or circumstances.
+
+##### Explain replenishment and depletion of natural resources
+
+Code: [Not implemented](#)
+
+Relate regeneration, formation or supply rates to rates of human use: sunlight is a continuing energy flow, managed forests can regrow, while fossil fuels and many mineral deposits form far too slowly to replace extraction on human timescales. Renewable does not mean inexhaustible.
 
 ##### Identify geographic consequences of land-use change
 
