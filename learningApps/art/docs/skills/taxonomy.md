@@ -6,15 +6,15 @@ This is the permanent, textbook-local and audience-independent catalog of indepe
 
 **Scope boundaries:** Artistic architecture concerns spatial and visual experience, while Engineering owns structural performance and building systems. Visual communication concerns expression, legibility and composition, while Informatics owns software implementation and technical UX. Music made with a drum machine remains a musical competency, not a programming requirement. Physics owns acoustical mechanisms; Psychology investigates general perception; Philosophy addresses general aesthetic arguments; History owns broader societal chronology. This Art taxonomy may share concepts with other textbook-local taxonomies without sharing Skill identities.
 
-**Breadth checks:** The [National Core Arts Standards](https://www.nationalartsstandards.org/index.php/content/national-core-arts-standards-anchor-standards) and the [Design Council's Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/) provide nonbinding reference points for creating, presenting, responding, connecting and iterative design; neither is imposed as a subject hierarchy or prescribed curriculum.
+**Breadth checks:** The [National Core Arts Standards](https://www.nationalartsstandards.org/index.php/content/national-core-arts-standards-anchor-standards) and the [Design Council's Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/) offer nonbinding reference points for creating, presenting, responding, connecting and iterative design. For historical coverage, consult the [Met Heilbrunn Timeline](https://www.metmuseum.org/toah/), [Smarthistory](https://smarthistory.org/period-culture-style/modernisms/), [UNESCO Petrykivka record](https://ich.unesco.org/en/RL/petrykivka-decorative-painting-as-a-phenomenon-of-the-ukrainian-ornamental-folk-art-00893) and [Dovzhenko Centre's Ukrainian Poetic Cinema collection](https://online.dovzhenkocentre.org/en/film_collections/ukrainian-poetic-cinema/). These are breadth/context references, not adopted curricula, universal canons or claims of complete global coverage.
 
 ## SUMMARY
 
 Domains: 14
-Groups: 53
-Skills: 243
+Groups: 65
+Skills: 295
 
-Code files: 0/14 Domains · 0/53 Groups · 0/243 Skills
+Code files: 0/14 Domains · 0/65 Groups · 0/295 Skills
 
 ## DOMAINS
 
@@ -290,7 +290,7 @@ Choose a degree of detail and relevant visual conventions suited to intended rea
 
 ### Painting and Color
 
-Groups: 3 · Skills: 15
+Groups: 3 · Skills: 17
 
 [Not implemented](#)
 
@@ -336,7 +336,7 @@ Choose a constrained pigment set that still supports coherent variation within a
 
 #### Painting Techniques
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
@@ -371,6 +371,18 @@ Layer translucent paint over a dry passage to change its optical appearance.
 [Not implemented](#)
 
 Match the properties of paper, canvas or board to adhesion, texture and expressive needs.
+
+##### Use Oil Painting Techniques
+
+[Not implemented](#)
+
+Exploit the slow drying and blending behavior of oil-bound pigment to build controlled passages, revise wet edges and manage successive paint layers with suitable materials and safe handling.
+
+##### Use Acrylic Painting Techniques
+
+[Not implemented](#)
+
+Use the faster drying and film-forming behavior of acrylic-bound pigment to develop deliberate layers, textures and transitions appropriate to the medium.
 
 #### Pictorial Composition
 
@@ -554,7 +566,7 @@ Use stitching, appliqué or similar additions to develop tactile and visual char
 
 ### Photography and Film
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
@@ -626,7 +638,7 @@ Revise color, contrast or framing with attention to both expression and document
 
 #### Film Language
 
-Skills: 5
+Skills: 7
 
 [Not implemented](#)
 
@@ -661,6 +673,18 @@ Juxtapose shots so their combination expresses an idea beyond each separate view
 [Not implemented](#)
 
 Use dialogue, ambience, effects or music to support or complicate visible action.
+
+##### Write a Screenplay
+
+[Not implemented](#)
+
+Develop scenes, dramatic action and spoken dialogue in a form that communicates an intended screen narrative while distinguishing story structure from shot-by-shot visual planning.
+
+##### Storyboard a Film Sequence
+
+[Not implemented](#)
+
+Translate a planned screen action into a sequence of drawn or otherwise represented frames that make camera views, blocking and narrative transitions intelligible.
 
 #### Animation
 
@@ -1602,7 +1626,7 @@ Develop a purposeful artistic relationship between an intervention and built spa
 
 ### Digital and Interactive Arts
 
-Groups: 3 · Skills: 12
+Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
@@ -1704,90 +1728,472 @@ Select, reject or revise generated results according to expressive criteria.
 
 Distinguish contributions from source material, tools, rule choices and human curation.
 
+#### Digital Three-Dimensional Art
+
+Skills: 4
+
+[Not implemented](#)
+
+A digital scene requires modeling of volume, material appearance, lighting and viewpoint; the focus is expressive representation, not implementing a rendering engine.
+
+##### Model Digital Three-Dimensional Forms
+
+[Not implemented](#)
+
+Construct and refine surfaces and volumes with deliberate proportions, contours and relationships appropriate to a digital sculptural or modeled artwork.
+
+##### Apply Digital Three-Dimensional Materials
+
+[Not implemented](#)
+
+Define surface appearance through color, roughness, reflectivity and texture so that objects communicate a selected material or artistic style.
+
+##### Light a Digital Three-Dimensional Scene
+
+[Not implemented](#)
+
+Arrange illumination and shadows to establish form, mood and intended visual emphasis in a three-dimensional composition.
+
+##### Compose a Digital Three-Dimensional Scene
+
+[Not implemented](#)
+
+Position objects and select a viewing frame to create meaningful depth, balance and relationships between subjects.
+
+#### Motion Graphics
+
+Skills: 3
+
+[Not implemented](#)
+
+Moving designed graphics use visual change and pacing for expressive or communicative purposes; they differ from depicting characters in frame-by-frame or stop-motion cinema.
+
+##### Animate Graphic Elements
+
+[Not implemented](#)
+
+Create intentional movement or transformation of shapes, icons and graphical marks to convey emphasis, continuity or visual structure.
+
+##### Design Kinetic Typography
+
+[Not implemented](#)
+
+Use timing, position and transformation of letterforms or words to communicate meaning through their motion as well as their appearance.
+
+##### Sequence Motion Graphics
+
+[Not implemented](#)
+
+Organize distinct moving graphic passages with coherent transitions, rhythm and informational or aesthetic hierarchy.
 ### Art History and Cultures
 
-Groups: 4 · Skills: 18
+Groups: 14 · Skills: 59
 
 [Not implemented](#)
 
-Artistic traditions and innovations arise from situated communities, exchanges, patronage and technologies. This is art-historical interpretation, not a complete political chronology.
+Artworks and artistic practices develop within particular communities, historical debates, patrons and material technologies. Study of art history distinguishes movements and named traditions through their own works and contexts rather than treating an entire continent or historical era as a single skill. This domain examines art-historical interpretation, not general political chronology.
 
-#### Historical Movements
+#### Early Images and Antiquity
 
 Skills: 5
 
 [Not implemented](#)
 
-Styles and movements are interpreted through selected artworks and changing artistic choices rather than memorized dates alone.
+These practices emerged in different historical settings and should be read through their own surviving works, functions and available archaeological evidence. Similar motifs do not imply that their makers shared one artistic tradition.
 
-##### Analyze Classical Art
-
-[Not implemented](#)
-
-Relate selected ideals of representation and proportion to particular classical traditions.
-
-##### Analyze Medieval Art
+##### Interpret Upper Paleolithic Cave Painting
 
 [Not implemented](#)
 
-Connect imagery and materials to specific medieval institutions and practices.
+Relate animal imagery, placement, layered marks and known archaeological context to supported readings while acknowledging uncertainty about original meanings.
 
-##### Analyze Renaissance Art
-
-[Not implemented](#)
-
-Explain selected changes in depiction, patronage and artistic inquiry in their contexts.
-
-##### Analyze Modern Art
+##### Analyze Ancient Egyptian Funerary Imagery
 
 [Not implemented](#)
 
-Examine how selected movements challenged inherited ideas of representation and artistic form.
+Explain how conventions of profile, scale, attributes and prescribed scenes relate to religious beliefs and burial contexts in a specified Egyptian period.
 
-##### Analyze Contemporary Art
+##### Analyze Mesopotamian Narrative Reliefs
 
 [Not implemented](#)
 
-Interpret conceptual or participatory strategies without imposing one defining style.
+Trace registers, figure hierarchy and sequences of actions in particular palace or commemorative reliefs, distinguishing visual depiction from political claims.
 
-#### World Traditions
+##### Analyze Classical Greek Sculpture
+
+[Not implemented](#)
+
+Examine idealized bodily proportion, stance and movement in selected Greek sculptural periods without assuming a single unchanging classical ideal.
+
+##### Analyze Roman Portraiture
+
+[Not implemented](#)
+
+Relate likeness, idealization and signs of public status to the social and political functions of particular Roman portraits.
+
+#### Medieval and Early Modern Arts
 
 Skills: 5
 
 [Not implemented](#)
 
-Cultural traditions must be identified precisely instead of treating continents or communities as homogeneous.
+Comparative analysis here concerns distinct sacred, civic and courtly image practices shaped by differing patrons, techniques and concepts of representation.
 
-##### Analyze African Art Traditions
-
-[Not implemented](#)
-
-Interpret specified works with respect to their makers, communities and functions.
-
-##### Analyze Asian Art Traditions
+##### Analyze Byzantine Icon Painting
 
 [Not implemented](#)
 
-Relate specific practices to their regional histories and aesthetic systems.
+Interpret symbolic poses, materials, visual conventions and devotional functions in a specified Byzantine icon context rather than judging the work by naturalistic realism.
 
-##### Analyze Indigenous Art Traditions
-
-[Not implemented](#)
-
-Interpret living cultural expression with attention to community protocols and meaning.
-
-##### Analyze European Art Traditions
+##### Analyze Gothic Cathedral Sculpture
 
 [Not implemented](#)
 
-Compare distinct regional practices and historical changes across selected contexts.
+Relate sculptural programs on a particular cathedral to architecture, religious narratives and the experience of a medieval audience.
 
-##### Analyze Latin American Art Traditions
+##### Analyze Early Italian Renaissance Painting
 
 [Not implemented](#)
 
-Examine exchanges among Indigenous, African, European and contemporary practices.
+Examine experimentation with spatial construction, human figures and narrative organization within specified early Renaissance workshops and settings.
 
+##### Analyze Northern Renaissance Printmaking
+
+[Not implemented](#)
+
+Explain how woodcut or engraving technologies shaped image detail, circulation and artistic practice in northern European contexts.
+
+##### Analyze Baroque Painting
+
+[Not implemented](#)
+
+Explain how selected painters used dramatic light, movement and theatrical composition within particular seventeenth-century religious or secular settings.
+
+#### Modern Art Movements
+
+Skills: 8
+
+[Not implemented](#)
+
+These named movements generated differing responses to social modernity and established visual conventions. Mastery of one movement does not imply mastery of its neighbors.
+
+##### Analyze Romantic Painting
+
+[Not implemented](#)
+
+Relate expressive landscape, emotion or dramatic subject matter to selected nineteenth-century artists and cultural contexts without treating Romanticism as one uniform style.
+
+##### Analyze Realist Painting
+
+[Not implemented](#)
+
+Explain how selected artists challenged established conventions through depictions of contemporary social life and ordinary subjects.
+
+##### Analyze Impressionism
+
+[Not implemented](#)
+
+Connect broken brushwork, shifting light and scenes of modern life to specific Impressionist practices and their historical reception.
+
+##### Analyze Post-Impressionism
+
+[Not implemented](#)
+
+Compare historically distinct departures from Impressionism, such as structural construction or expressive color, without assuming a unified technique.
+
+##### Analyze Cubism
+
+[Not implemented](#)
+
+Explain how selected Cubist works fragment and reconstruct viewpoints and pictorial space, distinguishing analytical and synthetic approaches when relevant.
+
+##### Analyze German Expressionist Painting
+
+[Not implemented](#)
+
+Relate intensified color, altered forms and expressive subjects to particular Expressionist groups rather than to all expressionist art globally.
+
+##### Analyze Surrealism
+
+[Not implemented](#)
+
+Examine unexpected juxtapositions, dream imagery or automatism in works shaped by Surrealist debates and their wider cultural contexts.
+
+##### Analyze Constructivism
+
+[Not implemented](#)
+
+Relate abstract geometry, material experimentation and the ambition to connect art with social production in selected Constructivist practices.
+
+#### Late Modern and Contemporary Practices
+
+Skills: 5
+
+[Not implemented](#)
+
+Artworks in these practices can privilege ideas, everyday images, participation or spatial conditions over traditional single-object representation.
+
+##### Analyze Pop Art
+
+[Not implemented](#)
+
+Examine appropriation of advertising, mass-media imagery or consumer forms in specified Pop Art settings rather than equating all popular imagery with the movement.
+
+##### Analyze Minimalism
+
+[Not implemented](#)
+
+Explain the roles of repetition, literal materials, scale and viewer space in selected Minimalist works and their reception.
+
+##### Analyze Conceptual Art
+
+[Not implemented](#)
+
+Examine how instructions, propositions or documentary traces may carry artistic significance independently of a conventional crafted object.
+
+##### Analyze Installation Art
+
+[Not implemented](#)
+
+Relate an artwork's arrangement in a particular environment to viewers' movement, perception and site-specific meaning.
+
+##### Analyze Performance Art
+
+[Not implemented](#)
+
+Interpret duration, live action, audience presence and documentation in historically situated practices distinct from theatrical character portrayal.
+
+#### West and Central African Traditions
+
+Skills: 3
+
+[Not implemented](#)
+
+These examples refer to particular peoples and court or community practices. They are not interchangeable illustrations of a supposedly uniform 'African art'.
+
+##### Analyze Gelede Masquerade Traditions
+
+[Not implemented](#)
+
+Interpret mask form, costume, performance and community functions in Yoruba Gelede contexts rather than treating the mask as an isolated sculpture.
+
+##### Analyze Benin Court Plaques
+
+[Not implemented](#)
+
+Explain how Edo court plaques convey royal authority, hierarchy and historical events through relief imagery and material choices.
+
+##### Analyze Kongo Nkisi Figures
+
+[Not implemented](#)
+
+Relate the formal and material features of particular Kongo power figures to the culturally situated purposes and practices associated with them.
+
+#### Asian Artistic Traditions
+
+Skills: 5
+
+[Not implemented](#)
+
+Specific regional practices use different material systems, pictorial conventions and patronage contexts; geographic proximity does not imply shared aesthetic rules.
+
+##### Analyze Chinese Ink Painting
+
+[Not implemented](#)
+
+Examine brushwork, spatial suggestion and the relationship of image and inscription in particular historical Chinese ink-painting traditions.
+
+##### Analyze Japanese Ukiyo-e
+
+[Not implemented](#)
+
+Relate woodblock printing, composition and subjects to the urban markets and cultural life that shaped selected ukiyo-e works.
+
+##### Analyze Mughal Miniature Painting
+
+[Not implemented](#)
+
+Interpret courtly narrative, detailed rendering and manuscript or album contexts in paintings produced in specific Mughal settings.
+
+##### Analyze Korean Celadon
+
+[Not implemented](#)
+
+Examine vessel form, glaze effects and decoration in Korean celadon traditions and connect them to particular periods of production.
+
+##### Analyze Persian Miniature Painting
+
+[Not implemented](#)
+
+Relate stylized space, color and narrative detail to specific Persian manuscript or album-painting contexts.
+
+#### Indigenous Artistic Traditions of the Americas
+
+Skills: 3
+
+[Not implemented](#)
+
+Works are understood within named peoples' histories and living cultural continuities, with attention to provenance and the limits of outsider interpretation.
+
+##### Analyze Classic Maya Relief Sculpture
+
+[Not implemented](#)
+
+Relate figures, glyphic inscriptions and dynastic imagery to specific Classic Maya sites and known historical contexts.
+
+##### Analyze Andean Weaving Traditions
+
+[Not implemented](#)
+
+Interpret textile structure, motifs and social significance in a specified Andean community or period rather than treating all Andean fabrics as one style.
+
+##### Analyze Haida Formline Art
+
+[Not implemented](#)
+
+Examine the formal relationships of ovoids, U-forms and negative space in works connected to Haida visual conventions and cultural contexts.
+
+#### Ukrainian Artistic Traditions
+
+Skills: 3
+
+[Not implemented](#)
+
+These practices distinguish decorative folk art, historical religious painting and a twentieth-century monumental-art movement while acknowledging their exchanges and transformations.
+
+##### Analyze Petrykivka Decorative Painting
+
+[Not implemented](#)
+
+Interpret stylized plant motifs, characteristic brushstrokes and community transmission in the ornamental painting tradition associated with Petrykivka.
+
+##### Analyze Ukrainian Baroque Icon Painting
+
+[Not implemented](#)
+
+Examine changes in figure modeling, ornament and devotional imagery in particular Ukrainian Baroque icon-painting contexts.
+
+##### Analyze Boychukism
+
+[Not implemented](#)
+
+Relate monumental form, references to Byzantine and Ukrainian traditions, and the suppression of the Boychuk school to its twentieth-century artistic development.
+
+#### Oceania Artistic Traditions
+
+Skills: 2
+
+[Not implemented](#)
+
+Material practices in Aotearoa New Zealand and northern Australia are treated as distinct cultural traditions, not as interchangeable decorative vocabularies.
+
+##### Analyze Māori Whakairo Carving
+
+[Not implemented](#)
+
+Interpret carved patterns and forms within a specified Māori community's architectural, genealogical or ceremonial context, respecting relevant cultural authority.
+
+##### Analyze Yolŋu Bark Painting
+
+[Not implemented](#)
+
+Relate visual pattern, materials and authorized meanings to the specific Yolŋu communities and knowledge systems associated with a work.
+
+#### Latin American Art Movements
+
+Skills: 3
+
+[Not implemented](#)
+
+These movements reflect different engagements with Indigenous heritage, colonial institutions, modernism and public expression in specified places.
+
+##### Analyze Mexican Muralism
+
+[Not implemented](#)
+
+Explain how monumental public paintings connect form, political narrative and social aims in works by selected Mexican muralists.
+
+##### Analyze Brazilian Concrete Art
+
+[Not implemented](#)
+
+Examine how Brazilian Concrete artists used precise geometric relationships and modern design debates to reconceive the visual work.
+
+##### Analyze Cusco School Painting
+
+[Not implemented](#)
+
+Relate Andean and European elements in colonial Cuzco-region religious paintings to local workshops, patrons and cultural exchange.
+
+#### Performing Art Traditions
+
+Skills: 5
+
+[Not implemented](#)
+
+Historical traditions in theatre, dance and music are interpreted through the characteristics and cultural roles of their performances, not by requiring a pupil to reproduce their techniques.
+
+##### Analyze Noh Theatre
+
+[Not implemented](#)
+
+Explain how masks, stylized movement, music and dramatic conventions operate within Japanese Noh performance contexts.
+
+##### Analyze Bharatanatyam
+
+[Not implemented](#)
+
+Relate codified movement, expressive gesture, repertoire and historical change to particular South Indian Bharatanatyam performance traditions.
+
+##### Analyze Classical Ballet Traditions
+
+[Not implemented](#)
+
+Interpret codified movement and staging in relation to particular historical ballet institutions, repertoires and changing conventions.
+
+##### Analyze Bebop Jazz
+
+[Not implemented](#)
+
+Explain how improvisation, harmonic language and ensemble roles differentiated bebop within particular jazz histories.
+
+##### Analyze Hip-Hop DJ Culture
+
+[Not implemented](#)
+
+Trace the musical and social significance of breakbeats, turntables and neighborhood performance practices in early hip-hop contexts.
+
+#### Historical Film Movements
+
+Skills: 4
+
+[Not implemented](#)
+
+Movements in film history can be distinguished through camera, staging, editing, narrative and culturally situated aesthetic choices.
+
+##### Analyze German Expressionist Cinema
+
+[Not implemented](#)
+
+Examine distorted sets, stylized light and performance in selected German silent-era films and explain their expressive aims.
+
+##### Analyze French New Wave Cinema
+
+[Not implemented](#)
+
+Relate location shooting, discontinuous editing and authorial experimentation to selected French New Wave works and contexts.
+
+##### Analyze Ukrainian Poetic Cinema
+
+[Not implemented](#)
+
+Interpret visual symbolism, regional cultural imagery and lyrical narrative strategies in Ukrainian poetic cinema and its historical development.
+
+##### Analyze Indian Parallel Cinema
+
+[Not implemented](#)
+
+Explain how selected Indian filmmakers developed alternative social themes and production aesthetics in relation to commercial filmmaking traditions.
 #### Social Context and Exchange
 
 Skills: 4
