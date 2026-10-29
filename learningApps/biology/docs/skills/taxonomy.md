@@ -1030,175 +1030,175 @@ Explain why species listed in national or regional Red Data Books require conser
 
 Explain the repeated transfer and reuse of chemical elements and compounds between organisms and the abiotic environment through uptake, feeding, excretion, and decomposition; distinguish cyclical matter movement from one-way energy flow.
 
-### Генетика та еволюція
+### Genetics and Evolution
 
 Groups: 3 · Skills: 17
 
 [Not implemented](#)
 
-Передавання спадкової інформації, причини подібності й відмінностей потомства, зміни успадкованих ознак у популяціях упродовж поколінь. Індивідуальний ріст не підміняє еволюційний процес.
+Transmission of hereditary information, reasons for similarities and differences among offspring, and changes in inherited traits within populations across generations. An individual's growth is not an evolutionary process.
 
-#### Розмноження та ознаки
+#### Reproduction and Traits
 
 Skills: 4
 
 [Not implemented](#)
 
-Успадковані характеристики можуть повторюватися у потомства, але особини одного виду не є точними копіями; тип розмноження впливає на мінливість.
+Inherited characteristics can recur in offspring, but individuals of one species are not exact copies; reproductive mode affects variation.
 
-##### Розрізняти статеве й нестатеве розмноження
-
-[Not implemented](#)
-
-Відрізняти злиття статевих клітин від відтворення без їхнього злиття, незалежно від зовнішнього способу появи нащадків.
-
-##### Визначати спадкові ознаки на прикладах
+##### Distinguish Sexual and Asexual Reproduction
 
 [Not implemented](#)
 
-Виявляти подібність поколінь, пов'язану з передаванням генетичної інформації.
+Distinguish the fusion of sex cells from reproduction without their fusion, regardless of how offspring outwardly appear.
 
-##### Розрізняти спадкові та набуті ознаки
-
-[Not implemented](#)
-
-Розрізняти зміни, що можуть передаватися потомству через генетичну інформацію, та індивідуально набуті зміни внаслідок досвіду, травм або тренування. Пояснювати, що більшість фенотипових ознак формується через взаємодію генотипу та середовища, тому жорстка двійкова класифікація не є універсальною.
-
-##### Пояснювати відмінності між нащадками одного виду
+##### Identify Hereditary Traits in Examples
 
 [Not implemented](#)
 
-Пояснювати, чому рекомбінація, мутації та умови розвитку можуть створювати відмінності між особинами.
+Identify similarities between generations associated with the transmission of genetic information.
 
-#### Генетика
+##### Distinguish Hereditary and Acquired Traits
+
+[Not implemented](#)
+
+Distinguish changes that can be passed to offspring through genetic information from changes acquired by an individual through experience, injury, or training. Explain that most phenotypic traits arise from interactions between genotype and environment, so a rigid binary classification is not universally applicable.
+
+##### Explain Differences Among Offspring of the Same Species
+
+[Not implemented](#)
+
+Explain why recombination, mutations, and developmental conditions can produce differences among individuals.
+
+#### Genetics
 
 Skills: 5
 
 [Not implemented](#)
 
-Гени як ділянки спадкової інформації допомагають пояснити спорідненість і відмінності; прояв ознаки також залежить від регуляції та середовища.
+Genes, as segments of hereditary information, help explain relatedness and differences; how a trait is expressed also depends on regulation and the environment.
 
-##### Розпізнавати роль ДНК у збереженні спадкової інформації
-
-[Not implemented](#)
-
-Пояснювати роль послідовності ДНК у зберіганні інформації про побудову та регуляцію клітинних структур.
-
-##### Пояснювати передавання спадкової інформації
+##### Recognize DNA’s Role in Storing Hereditary Information
 
 [Not implemented](#)
 
-Пояснювати, як ДНК копіюється і розподіляється під час клітинного поділу та передається між поколіннями через статеві клітини або нестатеве розмноження. Розрізняти передачу молекулярної інформації та її прояв у спостережуваних ознаках.
+Explain the role of DNA sequences in storing information about the construction and regulation of cellular structures.
 
-##### Відрізняти ген від ознаки
-
-[Not implemented](#)
-
-Пояснювати, що ген — ділянка спадкової інформації, а помітна ознака є результатом її роботи та впливу середовища.
-
-##### Пояснювати механізми успадкування ознак
+##### Explain Transmission of Hereditary Information
 
 [Not implemented](#)
 
-Пояснювати роль генів, алелів і хромосом, розходження алелів та утворення їхніх комбінацій у нащадків. Застосовувати закономірності Менделя там, де вони доречні, та відрізняти їх від полігенних і середовищно залежних ознак.
+Explain how DNA is copied and distributed during cell division and passed between generations through sex cells or asexual reproduction. Distinguish transmission of molecular information from its expression in observable traits.
 
-##### Пояснювати реалізацію генетичної інформації
+##### Distinguish a Gene from a Trait
 
 [Not implemented](#)
 
-Пояснювати, як інформація в ДНК може бути транскрибована в РНК і реалізована через синтез білків та регуляцію активності генів; не ототожнювати окремий ген із готовою фенотиповою ознакою.
+Explain that a gene is a segment of hereditary information, while an observable trait results from its activity and environmental influences.
 
-#### Еволюційні зміни
+##### Explain Mechanisms of Trait Inheritance
+
+[Not implemented](#)
+
+Explain the roles of genes, alleles, and chromosomes, segregation of alleles, and formation of their combinations in offspring. Apply Mendelian patterns where appropriate and distinguish them from polygenic and environmentally influenced traits.
+
+##### Explain Expression of Genetic Information
+
+[Not implemented](#)
+
+Explain how DNA information can be transcribed into RNA and realized through protein synthesis and regulation of gene activity; do not equate an individual gene with a ready-made phenotypic trait.
+
+#### Evolutionary Changes
 
 Skills: 8
 
 [Not implemented](#)
 
-Спадкова мінливість і неоднакове розмноження змінюють поширеність ознак у популяціях через покоління; це не те саме, що розвиток окремого організму.
+Hereditary variation and differences in reproductive success alter the prevalence of traits in populations across generations; this is not the same as development of an individual organism.
 
-##### Пояснювати спадкову мінливість особин
-
-[Not implemented](#)
-
-Пов'язувати відмінності, що можуть успадковуватися, з різноманіттям особин і можливістю зміни популяції.
-
-##### Пояснювати природний добір
+##### Explain Hereditary Variation Among Individuals
 
 [Not implemented](#)
 
-Пояснювати, як спадкові відмінності у виживанні та репродуктивному успіху призводять до зміни частот спадкових варіантів у популяції протягом поколінь; добір не є свідомим вибором організмів або рухом до наперед заданої досконалості.
+Relate differences that may be inherited to diversity among individuals and the possibility of population change.
 
-##### Розрізняти зміни особини протягом життя та зміни популяції
-
-[Not implemented](#)
-
-Відрізняти зміни росту чи поведінки однієї особини від зміни частот спадкових ознак у популяції.
-
-##### Інтерпретувати свідчення еволюції
+##### Explain Natural Selection
 
 [Not implemented](#)
 
-Пояснювати узгоджені свідчення історії життя з викопних решток, порівняльної анатомії, біогеографії, ембріології та молекулярних даних, враховуючи обмеження кожного типу джерел.
+Explain how inherited differences in survival and reproductive success change the frequencies of hereditary variants in a population over generations; selection is neither a conscious choice by organisms nor progress toward predetermined perfection.
 
-##### Пояснювати теорію еволюції
-
-[Not implemented](#)
-
-Пояснювати сучасну еволюційну теорію як наукове пояснення змін успадкованих характеристик популяцій і різноманіття життя на основі численних узгоджених доказів. Розрізняти наукову теорію, окремі гіпотези, фактичні спостереження та твердження про цілеспрямований розвиток.
-
-##### Пояснювати спільне походження видів
+##### Distinguish Individual Changes During Life from Population Changes
 
 [Not implemented](#)
 
-Пояснювати, що різні види можуть походити від спільних предків, а еволюційне дерево відображає розгалуження родоводів; відрізняти спільного предка від сучасного виду, який нібито безпосередньо перетворився на інший.
+Distinguish changes in the growth or behavior of one individual from changes in the frequencies of inherited traits in a population.
 
-##### Пояснювати видоутворення
-
-[Not implemented](#)
-
-Пояснювати, як спадкова мінливість, розходження популяцій, обмеження потоку генів і репродуктивна ізоляція можуть спричинити виникнення нових видів; визнавати, що механізми видоутворення різняться між групами організмів.
-
-##### Пояснювати механізми еволюційних змін
+##### Interpret Evidence of Evolution
 
 [Not implemented](#)
 
-Розрізняти мутації, природний добір, генетичний дрейф і потік генів як процеси, що змінюють спадковий склад популяцій; пояснювати їхню відмінну роль і можливу спільну дію, не зводячи всі еволюційні зміни лише до добору.
+Explain convergent evidence for life's history from fossils, comparative anatomy, biogeography, embryology, and molecular data, taking into account the limitations of each type of evidence.
 
-### Біотехнології
+##### Explain the Theory of Evolution
+
+[Not implemented](#)
+
+Explain modern evolutionary theory as a scientific explanation of changes in inherited population characteristics and the diversity of life, supported by multiple converging lines of evidence. Distinguish a scientific theory from individual hypotheses, factual observations, and claims of purpose-directed development.
+
+##### Explain Common Ancestry of Species
+
+[Not implemented](#)
+
+Explain that different species may descend from common ancestors and that an evolutionary tree represents branching lineages; distinguish a common ancestor from a modern species supposedly transforming directly into another.
+
+##### Explain Speciation
+
+[Not implemented](#)
+
+Explain how hereditary variation, population divergence, restricted gene flow, and reproductive isolation may give rise to new species; recognize that mechanisms of speciation differ among groups of organisms.
+
+##### Explain Mechanisms of Evolutionary Change
+
+[Not implemented](#)
+
+Distinguish mutation, natural selection, genetic drift, and gene flow as processes that alter the inherited composition of populations; explain their distinct roles and potential combined action without reducing all evolutionary change to selection.
+
+### Biotechnology
 
 Groups: 0 · Skills: 5
 
 [Not implemented](#)
 
-Застосування властивостей організмів, клітин, ферментів і спадкової інформації для отримання продуктів та цілеспрямованої зміни ознак. Включає селекцію, генетичну модифікацію та аналіз можливих екологічних наслідків втручань; природні екосистемні взаємодії належать до екології, а інженерні застосування біологічних принципів належать до окремого предмета «Інженерія».
+Use of properties of organisms, cells, enzymes, and hereditary information to obtain products and intentionally change traits. Includes selective breeding, genetic modification, and analysis of potential ecological consequences of interventions; natural ecosystem interactions belong to Ecology, while engineering applications of biological principles belong to the separate subject Engineering.
 
-#### Розпізнавати приклади застосування мікроорганізмів людиною
-
-[Not implemented](#)
-
-Визначати, як дріжджі або бактерії використовуються для отримання харчових чи інших продуктів.
-
-#### Пояснювати принцип селекції
+#### Recognize Human Uses of Microorganisms
 
 [Not implemented](#)
 
-Визначати селекцію як цілеспрямований добір і розмноження організмів із бажаними спадковими ознаками протягом поколінь для створення або поліпшення сортів і порід. Усвідомлювати, що селекціонер добирає носіїв спадкових варіантів, а не довільно «замовляє» властивість у кожного нащадка.
+Identify how yeasts or bacteria are used to produce food or other products.
 
-#### Пояснювати принцип генетичної модифікації
-
-[Not implemented](#)
-
-Визначати генетичну модифікацію як цілеспрямовану зміну генетичного матеріалу біотехнологічними методами. Відрізняти зміну ДНК від простого відбору організмів за ознакою, не приписуючи кожній генетичній зміні автоматичну користь або шкоду.
-
-#### Пояснювати мету простої біотехнологічної процедури
+#### Explain the Principle of Selective Breeding
 
 [Not implemented](#)
 
-Пов'язувати застосовані організми, клітини чи ферменти з конкретним продуктом або очікуваним перетворенням.
+Define selective breeding as purposeful selection and reproduction of organisms with desired inherited traits across generations to create or improve crop varieties and animal breeds. Understand that a breeder selects carriers of hereditary variants rather than arbitrarily 'ordering' a characteristic in each offspring.
 
-#### Оцінювати екологічний ризик застосування біотехнології
+#### Explain the Principle of Genetic Modification
 
 [Not implemented](#)
 
-Розглядати ймовірність небажаного впливу на нецільові види, екосистемні зв'язки чи поширення організмів і відділяти ризик від факту шкоди.
+Define genetic modification as the intentional alteration of genetic material by biotechnological methods. Distinguish changing DNA from simply selecting organisms by traits without assuming that every genetic change automatically brings benefits or harm.
+
+#### Explain the Purpose of a Simple Biotechnological Procedure
+
+[Not implemented](#)
+
+Relate organisms, cells, or enzymes used in a procedure to a specific product or expected transformation.
+
+#### Evaluate Ecological Risks of Biotechnology Use
+
+[Not implemented](#)
+
+Consider the likelihood of undesirable effects on nontarget species, ecosystem relationships, or the spread of organisms, distinguishing risk from demonstrated harm.
 
