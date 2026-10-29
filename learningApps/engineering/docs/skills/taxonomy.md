@@ -12,9 +12,9 @@ An audience-independent catalog of abilities for analyzing, designing, construct
 
 Domains: 17
 Groups: 59
-Skills: 240
+Skills: 249
 
-Code files: 0/17 Domains · 0/59 Groups · 0/240 Skills
+Code files: 0/17 Domains · 0/59 Groups · 0/249 Skills
 
 ## DOMAINS
 
@@ -394,7 +394,7 @@ Recognize allowable manufacturing variation and its consequences for fitting par
 
 ### Mechanisms and Machines
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
@@ -402,7 +402,7 @@ Moving assemblies redirect or transmit force, torque and motion to achieve tasks
 
 #### Transmissions
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -426,11 +426,17 @@ Trace rotational transfer between meshing gears and the effect of tooth counts.
 
 Calculate relative rotation or speed using the teeth of a gear pair.
 
-##### Explain belt and chain drives
+##### Explain belt drives
 
 [Not implemented](#)
 
-Distinguish frictional flexible drives from sprocket-and-chain engagement.
+Trace how tensioned flexible belts transfer motion between pulleys through friction or toothed engagement, including likely causes of slip.
+
+##### Explain chain drives
+
+[Not implemented](#)
+
+Describe positive engagement between chain links and sprockets, including the need for alignment, tension and lubrication.
 
 ##### Explain pulley systems
 
@@ -462,17 +468,17 @@ Connect a shaped rotating profile with the timed displacement of a follower.
 
 [Not implemented](#)
 
-Show how threaded rotation creates axial movement or clamping.
+Describe how the pitch and mating threads of a screw convert rotation into controlled axial displacement or a clamping force.
 
 ##### Explain articulated linkages
 
 [Not implemented](#)
 
-Trace how linked bars and pivots constrain output motion.
+Trace how connected rigid bars and pivots restrict the trajectory of an output in tools or articulated machines.
 
 #### Guidance and Retention
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -494,13 +500,19 @@ Relate a lubricant to reduced wear and heating at a moving interface.
 
 [Not implemented](#)
 
-Trace how a brake resists rotation and dissipates energy.
+Trace how contact forces or another braking device oppose a rotating component and transfer motion energy into heat or another form.
 
-##### Explain latches and locks
+##### Explain latches
 
 [Not implemented](#)
 
-Distinguish holding a closure in place from restricting its release.
+Describe how a catch retains a door or moving part in its closed position and permits intentional release.
+
+##### Explain locks
+
+[Not implemented](#)
+
+Identify how a key, code or other authorization mechanism restricts the operation of a secured closure.
 
 #### Integrated Machines
 
@@ -634,7 +646,7 @@ Relate blocked filters, closed valves or narrow passages to delivery problems.
 
 ### Structures and Construction
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -642,7 +654,7 @@ Load-bearing works transfer applied actions into suitable supports while satisfy
 
 #### Structural Elements
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -654,11 +666,17 @@ Characteristic forms route forces differently; a safe structure is not just a vi
 
 Trace bending and load transfer from a span to its supports.
 
-##### Explain columns and bracing
+##### Explain columns
 
 [Not implemented](#)
 
-Identify vertical support and resistance to unwanted lateral movement.
+Recognize how primarily compression-loaded vertical members support loads and why slender members may become unstable.
+
+##### Explain structural bracing
+
+[Not implemented](#)
+
+Trace how diagonal members or other lateral systems prevent unwanted sway and redistribute horizontal actions.
 
 ##### Explain arches
 
@@ -776,7 +794,7 @@ Sequence foundations, supports, structure and services with realistic dependenci
 
 ### Water and Environmental Infrastructure
 
-Groups: 3 · Skills: 11
+Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
@@ -1010,7 +1028,7 @@ Recognize why generation, storage and demand must be coordinated across time.
 
 ### Electrical and Electronic Engineering
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
@@ -1120,7 +1138,7 @@ Distinguish real electrical signaling and connector limitations from software da
 
 #### Electrical Measurement and Protection
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1144,11 +1162,17 @@ Choose an appropriate sensing method and insertion point for a selected branch.
 
 Recognize how properly rated fuses or breakers interrupt damaging excessive current.
 
-##### Explain grounding and electrical isolation
+##### Explain protective grounding
 
 [Not implemented](#)
 
-Distinguish intentional protective or reference connections from barriers separating dangerous circuits.
+Identify intentional fault-current or equipotential connections that reduce electric-shock risk in appropriately designed equipment.
+
+##### Explain electrical isolation
+
+[Not implemented](#)
+
+Describe how barriers or isolating components prevent unintended conductive paths between circuits, including hazardous interfaces.
 
 ### Automation and Robotics
 
@@ -1424,7 +1448,7 @@ Connect intense heating and mechanical loading to vehicle shielding and geometry
 
 ### Communications, Navigation, and Optical Devices
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -1432,7 +1456,7 @@ Real-world devices transmit signals or obtain information through engineered com
 
 #### Communication Hardware
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1444,11 +1468,17 @@ Physical communication chains depend on transducers, suitable electromagnetic or
 
 Identify input conversion, transmission, propagation, reception and output in a practical link.
 
-##### Explain radio transmission and reception
+##### Explain radio transmitters
 
 [Not implemented](#)
 
-Distinguish transmitting circuitry, antenna radiation, receiving and signal recovery.
+Trace how circuitry prepares a signal and supplies suitable electrical excitation to an antenna for radiation.
+
+##### Explain radio receivers
+
+[Not implemented](#)
+
+Trace how an antenna and receiving electronics select and recover useful information from a received signal.
 
 ##### Explain antenna functions
 
@@ -1528,7 +1558,7 @@ Relate satellite, inertial and local-reference approaches to interference, cover
 
 ### Manufacturing and Production
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -1536,17 +1566,17 @@ Finished products require suitable forming processes, assembly, tolerances and i
 
 #### Material Shaping
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
 A manufacturing process imposes specific restrictions on geometry, material, waste and achievable accuracy.
 
-##### Explain machining and cutting
+##### Explain machining processes
 
 [Not implemented](#)
 
-Trace material removal by tools to an intended final geometry and its scrap.
+Describe controlled material removal by tools, such as drilling, milling or turning, and the consequences for accuracy, tool access and waste.
 
 ##### Explain forming processes
 
@@ -1554,11 +1584,17 @@ Trace material removal by tools to an intended final geometry and its scrap.
 
 Identify ways applied force reshapes a material without primarily removing it.
 
-##### Explain molding and casting
+##### Explain molding processes
 
 [Not implemented](#)
 
-Follow liquid or moldable feedstock through shaping and solidification or curing.
+Describe shaping polymer or other moldable feedstock in a cavity under suitable temperature or pressure conditions.
+
+##### Explain casting processes
+
+[Not implemented](#)
+
+Trace a poured molten or fluid material through filling a cavity, solidifying and removing a cast product.
 
 ##### Explain additive manufacturing
 
@@ -1632,7 +1668,7 @@ Recognize avoidable scrap, waiting, transport or rework in a manufacturing proce
 
 ### Process and Agricultural Engineering
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
@@ -1640,7 +1676,7 @@ Some engineered systems transform flowing materials rather than assembling separ
 
 #### Process Architecture
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1658,11 +1694,17 @@ Trace named material streams and equipment blocks to determine the order and pur
 
 Relate input, accumulation, product and waste flows across a specified process boundary without confusing mass conservation with constant volume.
 
-##### Explain mixing and dosing systems
+##### Explain industrial mixing equipment
 
 [Not implemented](#)
 
-Identify the equipment used to combine ingredients or meter a specified amount into a process stream.
+Identify agitation or flow arrangements used to distribute multiple ingredients to a required degree of uniformity.
+
+##### Explain dosing equipment
+
+[Not implemented](#)
+
+Describe metering mechanisms that deliver a measured quantity or rate of material into a process stream.
 
 ##### Identify process bottlenecks
 
@@ -1964,7 +2006,7 @@ Recognize hygiene, safe contact, reliable operation, usability and failure conse
 
 ### Safety, Sustainability, and Responsibility
 
-Groups: 3 · Skills: 12
+Groups: 3 · Skills: 14
 
 [Not implemented](#)
 
@@ -1972,7 +2014,7 @@ Engineering decisions affect people, resources and ecosystems throughout a produ
 
 #### Life Cycle and Resources
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -1990,11 +2032,17 @@ Identify material, energy and waste flows from sourcing through use to end of se
 
 Recognize the importance of accessible parts, reversible fasteners and replacement options.
 
-##### Explain reuse and recycling design
+##### Design products for reuse
 
 [Not implemented](#)
 
-Relate component separation and material compatibility to feasible recovery pathways.
+Identify durable, cleanable or interchangeable features that make repeated service or a second use feasible.
+
+##### Design products for material recycling
+
+[Not implemented](#)
+
+Relate material identification, compatibility and separable assemblies to viable recovery of constituent materials.
 
 ##### Compare environmental trade-offs
 
@@ -2036,7 +2084,7 @@ Relate uncertainty in loading, materials and use conditions to extra design capa
 
 #### Ethics and Public Effects
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -2048,11 +2096,17 @@ Technical solutions create benefits and burdens for users, maintainers, neighbor
 
 Distinguish users, workers, maintainers and others exposed to a product's consequences.
 
-##### Evaluate social and environmental impacts
+##### Evaluate social impacts of a design
 
 [Not implemented](#)
 
-Consider foreseeable external effects alongside direct technical performance.
+Consider foreseeable distribution of access, inconvenience, displacement or other effects on people beyond direct purchasers.
+
+##### Evaluate environmental impacts of a design
+
+[Not implemented](#)
+
+Consider pollution, habitat disruption and resource burdens beyond the immediate operation of the intended product.
 
 ##### Communicate design limitations
 
