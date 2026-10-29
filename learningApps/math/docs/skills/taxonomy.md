@@ -152,215 +152,215 @@ Code: [Code](../../src/data/skillsTaxonomy/counting/parity/skills/evenOdd.data.t
 
 An even quantity can be divided into disjoint pairs with no object left alone; an odd quantity leaves exactly one unpaired object.
 
-### Натуральні числа
+### Natural numbers
 
 Groups: 5 · Skills: 27
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numeration.data.ts)
 
-Визначає, як натуральні числа позначають кількість, як працює десяткова позиційна система та як числові записи порівнюють, розкладають і оцінюють.
+This domain examines how natural-number notation represents quantities, how the decimal place-value system works, and how numbers can be compared, decomposed, and estimated.
 
-#### Числовий запис
+#### Numeral notation
 
 Skills: 4
-
-Цифри як знаки десяткової системи та способи співвіднести усну назву, письмовий запис і кількість для одно-, дво- й трицифрових чисел.
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/notation.data.ts)
 
-##### Розпізнавати та записувати цифри 0–9; відрізняти цифру від числа
+Digits are the symbols of the decimal numeral system. Spoken names, written numerals, and represented quantities must be connected across one-, two-, and three-digit numbers.
+
+##### Digits 0–9 and the meaning of a digit
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/digits09.data.ts)
 
-Одна цифра є символом із набору 0–9, а число може потребувати кількох цифр: 12 не є новою цифрою.
+A digit is a single symbol from 0 to 9; a number may require multiple digits. For example, 12 is not an additional digit.
 
-##### Читати, записувати й співвідносити з кількістю числа 0–20
+##### Reading, writing and matching numbers 0–20
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite20.data.ts)
 
-Записи «сімнадцять», 17 і набір із 17 предметів означають ту саму кількість; нуль також має власний запис.
+The word 'seventeen', the numeral 17, and a collection of seventeen objects represent the same quantity. Zero has its own numeral as well.
 
-##### Читати й записувати числа в межах 100
+##### Reading and writing numbers to 100
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite100.data.ts)
 
-Перехід від 9 до 10 вимагає двох позицій; у 46 цифри 4 та 6 позначають різні розряди.
+Moving from 9 to 10 introduces two positions; in 46, the digits 4 and 6 indicate different place values.
 
-##### Читати й записувати трицифрові числа, включно з нулями всередині запису
+##### Reading and writing three-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/notation/skills/readWrite1000.data.ts)
 
-У 305 відсутні десятки, але позиція нуля необхідна, щоб запис не означав 35.
+In 305, there are no tens, yet the zero placeholder is necessary to keep the numeral distinct from 35.
 
-#### Розрядність
+#### Place value
 
 Skills: 11
 
-Десяткова структура числа, значення розряду, переходи між одиницями, десятками й сотнями та еквівалентні розклади одного значення.
-
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/placeValue.data.ts)
 
-##### Представляти число різними рівносильними розбиттями, не лише за стандартними розрядами (146 = 130 + 16)
+Decimal place value identifies the contribution of each digit and supports exchanges between ones, tens, and hundreds, as well as equivalent decompositions of a quantity.
+
+##### Flexible number partitioning
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/flexiblePartition.data.ts)
 
-Один результат допускає нестандартні розклади: 146 можна скласти як 130 + 16 або 100 + 46 без зміни значення.
+The same value can have non-standard decompositions: 146 can be written as 130 + 16 or 100 + 46 without changing its quantity.
 
-##### Визначати загальну кількість повних десятків чи сотень у трицифровому числі
+##### Total tens and hundreds in a number
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/totalTensInNumber.data.ts)
 
-У числі 348 міститься 34 повні десятки, а не лише 4 десятки в десятковому розряді.
+The number 348 contains 34 complete tens, not merely the four tens shown in its tens position.
 
-##### Групувати десять одиниць в один десяток і виконувати зворотне розгрупування
+##### Grouping and ungrouping ten ones
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeTen.data.ts)
 
-Заміна десяти одиниць одним десятком не змінює загальної кількості; обмін можна виконати і в зворотний бік.
+Exchanging ten individual units for one ten preserves the total. The exchange also works in the reverse direction.
 
-##### Складати й розкладати двоцифрове число на десятки та одиниці
+##### Tens and ones in two-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/tensOnes.data.ts)
 
-У 57 міститься п’ять повних десятків і сім одиниць; спосіб запису пов’язаний із предметними блоками.
+The number 57 has five complete tens and seven ones; positional notation can be linked to physical blocks representing those groups.
 
-##### Пояснювати, що десять десятків утворюють одну сотню
+##### Ten tens make one hundred
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/makeHundred.data.ts)
 
-Десять груп по десять утворюють одну нову розрядну одиницю; це основа переходу 90 → 100.
+Ten groups of ten make one hundred, creating the next place-value unit and explaining transitions such as 90 to 100.
 
-##### Складати й розкладати трицифрове число на сотні, десятки й одиниці
+##### Hundreds, tens and ones in three-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/hundredsTensOnes.data.ts)
 
-У 624 число 6 означає шість сотень, 2 — два десятки, 4 — чотири одиниці, незалежно від вимови.
+In 624, the digits mean six hundreds, two tens, and four ones, regardless of how the number is spoken.
 
-##### Визначати значення цифри залежно від її розряду
+##### Value of a digit by position
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/digitPlaceValue.data.ts)
 
-У записі 232 перша й остання цифри 2 мають різну вартість: 200 і 2.
+In 232, the first and last digit are both 2, but their values differ: 200 and 2.
 
-##### Пояснювати роль нуля як позначення відсутнього розряду
+##### Zero as a place-value placeholder
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/zeroPlaceholder.data.ts)
 
-У 407 середній нуль зберігає місце десятків і запобігає плутанині з 47.
+In 407, the middle zero preserves the tens position and prevents confusion with 47.
 
-##### Записувати число як суму розрядних доданків і відновлювати його з цієї суми
+##### Expanded form of numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/expandedForm.data.ts)
 
-Розклад 583 = 500 + 80 + 3 дає змогу переходити між позиційним записом та сумою розрядних значень.
+The decomposition 583 = 500 + 80 + 3 connects a positional numeral with the sum of its place-value contributions.
 
-##### Обмінювати одну сотню на десять десятків, а десяток — на десять одиниць
+##### Regrouping between place values
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/regroupPlaceValues.data.ts)
 
-Одну сотню можна замінити десятьма десятками, а кожен десяток — десятьма одиницями без зміни числа.
+A hundred can be exchanged for ten tens, and each ten for ten ones, without altering the number.
 
-##### Співвідносити запис числа, модель блоками, числову пряму та кількість предметів
+##### Matching representations of a number
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/placeValue/skills/multipleRepresentations.data.ts)
 
-Те саме 24 можна показати двома десятками й чотирма одиницями, точкою на шкалі або набором предметів.
+The number 24 can be shown by two ten-blocks and four single units, a point on a number line, or a collection of objects.
 
-#### Порівняння чисел
+#### Comparing numbers
 
 Skills: 5
 
-Відношення порядку між кількостями й числовими записами, включно зі знаками порівняння та сортуванням чисел.
-
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/comparison.data.ts)
 
-##### Визначати «більше», «менше», «дорівнює» на конкретних кількостях
+Numerical order relates quantities and written numbers, including their comparison symbols and ascending or descending arrangements.
+
+##### Greater, less or equal quantities
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/moreLessEqual.data.ts)
 
-Більшу групу визначають за чисельністю, а не за площею, масою чи візуальними розмірами предметів.
+The larger collection is identified by its cardinality, not by the area, mass, or visual size of its objects.
 
-##### Правильно використовувати знаки <, >, = для чисел
+##### Comparison symbols <, > and =
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/comparisonSymbols.data.ts)
 
-Запис 8 > 5 показує напрям порівняння; перестановка чисел вимагає змінити знак на протилежний.
+The statement 8 > 5 records which number is larger; swapping the two numbers requires reversing the inequality symbol.
 
-##### Розташовувати числа 0–20 за зростанням або спаданням
+##### Ordering numbers 0–20
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order20.data.ts)
 
-Значення у впорядкованому ряді мають послідовне місце; порядок за спаданням є зворотним до зростання.
+Each number occupies a position in the ordered sequence. Descending order reverses ascending order.
 
-##### Порівнювати й впорядковувати двоцифрові числа за розрядами
+##### Comparing and ordering two-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order100.data.ts)
 
-Під час порівняння 64 і 59 вирішальним стає десятковий розряд, а одиниці зіставляють лише за рівних десятків.
+When comparing 64 and 59, the tens determine the result; ones matter only if the tens are equal.
 
-##### Порівнювати й упорядковувати трицифрові числа за розрядами
+##### Comparing and ordering three-digit numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/comparison/skills/order1000.data.ts)
 
-Для 705 і 699 спочатку зіставляють сотні; нуль у розряді десятків не робить 705 меншим.
+For 705 and 699, first compare the hundreds. The zero in 705's tens position does not make it smaller.
 
-#### Числова пряма
+#### Number line
 
 Skills: 4
 
-Числа як точки на впорядкованій шкалі з рівними інтервалами; розташування, сусідство та відстань залежать від масштабу.
-
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/numberLine.data.ts)
 
-##### Знаходити попереднє, наступне та проміжні числа в заданому діапазоні
+Numbers correspond to positions on an ordered scale with equal intervals; location, adjacency, and distance depend on the scale.
+
+##### Previous, next and intermediate numbers
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/beforeAfterBetween.data.ts)
 
-Між 36 і 38 знаходиться 37; попереднє і наступне відрізняються від заданого на одиницю.
+The number 37 lies between 36 and 38. Previous and next numbers are one unit below and above the specified number.
 
-##### Розміщувати числа та знаходити сусідів на числовій прямій до 20
+##### Numbers on a line to 20
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine20.data.ts)
 
-Рівновіддалені поділки показують, чому 12 розміщене правіше 9, а його сусіди — 11 і 13.
+Evenly spaced ticks show why 12 is to the right of 9 and why its neighboring numbers are 11 and 13.
 
-##### Розміщувати числа на числовій прямій із відповідним масштабом до 1000
+##### Numbers on a scaled line to 1000
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/numberLine1000.data.ts)
 
-У шкалі з позначками через 100 проміжні числа потрібно розташовувати пропорційно, а не за довільною відстанню.
+On a line with marks every 100, intermediate numbers must be placed proportionally rather than at arbitrary distances.
 
-##### Визначати відстань між цілими числами на числовій прямій
+##### Distance between integers on a number line
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/numberLine/skills/distanceOnLine.data.ts)
 
-Різниця координат показує кількість одиничних інтервалів між 4 і 9 — їх п’ять, незалежно від напряму.
+The difference between the coordinates 4 and 9 represents five unit intervals, regardless of direction.
 
-#### Оцінювання чисел
+#### Estimating numbers
 
 Skills: 3
 
-Наближені значення чисел і кількостей, округлення та співвіднесення точності оцінки з реальною величиною.
-
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/estimation.data.ts)
 
-##### Округлювати числа до найближчого десятка й пояснювати вибір
+Estimation concerns approximate numbers and quantities, rounding to chosen place values, and judging an approximation's accuracy.
+
+##### Rounding to the nearest ten
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/roundToTen.data.ts)
 
-При округленні 46 до десятків результат 50, а 44 — 40; орієнтиром є відстань до сусідніх круглих чисел.
+Rounding to tens turns 46 into 50 but 44 into 40, based on distance to the neighboring multiples of ten.
 
-##### Округлювати числа до найближчої сотні й оцінювати похибку
+##### Rounding to the nearest hundred
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/roundToHundred.data.ts)
 
-Для 349 найближча сотня — 300, для 351 — 400; похибка — різниця між точним та округленим числом.
+The nearest hundred to 349 is 300, while 351 rounds to 400. The rounding error is the difference between the exact and approximated numbers.
 
-##### Оцінювати приблизну кількість предметів та перевіряти оцінку підрахунком
+##### Estimating and checking quantities
 
 Code: [Code](../../src/data/skillsTaxonomy/numeration/estimation/skills/estimateQuantity.data.ts)
 
-Оцінку для розсипаних предметів можна зробити за частиною набору, а потім зіставити з точним підрахунком.
+A scattered set of objects can be estimated from a subset and then checked against an exact count.
 
 ### Fractions
 
