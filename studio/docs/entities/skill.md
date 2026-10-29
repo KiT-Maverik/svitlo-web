@@ -27,6 +27,13 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
+### Textbook-local Skill identity
+
+- Each textbook owns an **independent Skills Taxonomy and Skill identities**. The same or semantically similar competency **may occur in multiple textbooks**, each with its own Skill entity and stable ID; cross-textbook similarity is not an error.
+- **Do not require shared Skill UUIDs, a central registry, synchronization, canonical global deduplication or cross-textbook progress analytics.** These are not prerequisites for creating or implementing a textbook.
+- **Within each textbook**, continue checking for redundant Skills, unclear splits/merges, atomicity and stable identities. Cross-textbook duplication permission does **not** authorize needless duplication within one taxonomy.
+- Cross-subject lessons may draw on material from several textbooks without asserting globally unified Skill identity or a combined learner-mastery record.
+
 - A Skill has exactly one primary catalog parent: ordinarily a SkillGroup, or exceptionally a SkillDomain with no Groups. It may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics without duplicate ownership.
 - A multi-Skill Question does not automatically establish separate mastery evidence for each referenced Skill. Assessment attribution and scores belong to assessment/progress entities.
 - Curriculum/Program owns sequencing and prerequisites; the taxonomy owns classification and conceptual descriptions.
@@ -37,7 +44,7 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 `<PackageRoot>/docs/skills/taxonomy.md` is the **permanent, sole editorial definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy (or the approved direct Domain → Skill exception). The explanatory prose appears immediately below the heading and implementation link **without a `Description:` label**. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
 
-Do not copy a Skill heading into its description. Explain the mathematical ability, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
+Do not copy a Skill heading into its description. Explain the subject-specific ability, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
 
 The current shared-engine `Skill_Config` contains a stable `id` and localized `name`, not `description`. The builder adds `collection`; `fileLocation` belongs to separate indexing work, not assumed implemented. **Do not introduce a runtime description field** by copying taxonomy prose.
 
