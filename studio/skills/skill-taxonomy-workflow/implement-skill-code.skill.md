@@ -4,7 +4,7 @@ Read [Skill Taxonomy Workflow](./README.md). Implementation promotes **only veri
 
 **Mandatory first action:** Read [Coding Agent Persona](../../personas/coding-agent.persona.md) in full. Apply the repository's `AGENTS.md` and any package-local instructions. This is an implementation task: do not redesign the catalog, invent Skills, author curriculum, or implement assessment/learner tracking.
 
-**Purpose:** Implement the **approved SkillDomain, SkillGroup, and Skill entries in the canonical Skills Taxonomy** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy (including approved direct Domain → Skill ownership) and separate lightweight Data/ID import surfaces.
+**Purpose:** Implement the **approved SkillDomain, SkillGroup, and Skill entries in the staging Skills Taxonomy** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy (including approved direct Domain → Skill ownership) and separate lightweight Data/ID import surfaces.
 
 ## CROSS-CUTTING RULES
 
@@ -13,7 +13,7 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
 ## REQUIRED SOURCES — READ BEFORE WRITING
 
 1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
-2. **Editorial authority:** read the **approved** `<PackageRoot>/docs/skills/taxonomy.md`, including each in-scope entity’s heading, substantive description, hierarchy position and Code link. This is the sole editorial source of truth; **no individual Markdown Definitions exist or are required**. Missing, ambiguous, unapproved or contradictory taxonomy entries are blockers; report them rather than inventing semantics or silently revising the taxonomy.
+2. **Editorial authority:** read the **approved** `<PackageRoot>/docs/skills/taxonomy.md`, including each in-scope entity’s heading, substantive description, hierarchy position and Code link. For these **unpromoted** entries, this is the editorial authority; implemented/promoted entries instead use reviewed Code. **No individual Markdown Definitions exist or are required**. Missing, ambiguous, unapproved or contradictory taxonomy entries are blockers; report them rather than inventing semantics or silently revising the taxonomy.
 3. **Entity meanings:** read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md), and [Skill](../../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
 4. **Authoritative TypeScript contracts in `@svitlo/contracts`:** inspect the current files under `shared/contracts/src/types/content/` (import types via `@svitlo/contracts/taxonomy`; engine builders are separate):
    - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.

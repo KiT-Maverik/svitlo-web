@@ -101,7 +101,7 @@ Do not reduce a rich competency to mere recognition or conceptual awareness beca
 
 ### Metadata before descriptions
 
-Keep every entity's metadata together directly after its heading. Order is **Domain:** `Groups · Skills` → standalone implementation link → prose; **Group:** `Skills` → standalone implementation link → prose; **Skill:** standalone implementation link → prose. Present substantive descriptions as unlabeled Markdown paragraphs, never as `Description:` fields, and never interrupt metadata with a description. Do not reintroduce `Definition` links: the taxonomy itself is the permanent editorial definition, and the single standalone implementation link is its only per-entity artifact link.
+Keep every entity's metadata together directly after its heading. Order is **Domain:** `Groups · Skills` → standalone implementation link → prose; **Group:** `Skills` → standalone implementation link → prose; **Skill:** standalone implementation link → prose. Present substantive descriptions as unlabeled Markdown paragraphs, never as `Description:` fields, and never interrupt metadata with a description. Do not reintroduce `Definition` links: the staging taxonomy is the editorial definition only until an entry's reviewed promotion to Code, and the single standalone implementation link is its only per-entity artifact link.
 
 ## SKILL TAXONOMY REVIEW — OPTIONAL DATED HISTORY, NOT ANOTHER TAXONOMY
 

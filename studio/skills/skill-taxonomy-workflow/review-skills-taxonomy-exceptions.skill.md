@@ -11,7 +11,7 @@ Read [Skill Taxonomy Workflow](./README.md). This is the independent **exception
 1. Identify the actual textbook package root and read the complete `<PackageRoot>/docs/skills/taxonomy.md`. Inspect the current repository state and applicable `AGENTS.md`; do not audit a remembered or outdated catalog.
 2. Read [Create Skills Taxonomy](./create-skills-taxonomy.skill.md) to understand the editorial taxonomy, its scope and canonical Markdown contract.
 3. Read the entity definitions [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md) and [Skill](../../docs/entities/skill.md) **in full**. In particular, Skill = smallest practically meaningful, **independently assessable competency**.
-4. Read the subject's agreed scope and boundaries, the applicable [Subject Proposition](../../Subject%20Proposition.md), and any existing dated taxonomy history when relevant. Existing history is context, never a substitute for the canonical file.
+4. Read the subject's agreed scope and boundaries, the applicable [Subject Proposition](../../Subject%20Proposition.md), and any existing dated taxonomy history when relevant. Existing history is context, never a substitute for the staging document.
 5. Use credible subject references or named standards when they materially help assess breadth; identify which recommendations are sourced and which are editorial judgments. Do not impose an unrequested national curriculum or grade.
 
 If the staging taxonomy is missing, inspect the implemented Code catalog and report whether no staging entries remain. If an authoring review was specifically requested, report that blocker rather than inventing entries or computing pretend statistics.
