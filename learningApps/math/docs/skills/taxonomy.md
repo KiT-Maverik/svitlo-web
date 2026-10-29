@@ -2054,19 +2054,19 @@ Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/chooseOp
 
 Рівні групи по 4 можна порахувати множенням, а відому суму розподілити на групи діленням.
 
-##### Будувати малюнок, схему або вираз до одноходової задачі
+##### Modeling a one-step problem
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/oneStepModel.data.ts)
 
 Малюнок із трьома кошиками по п’ять яблук має відповідати короткій схемі «3 групи по 5», а не довільному виразу.
 
-##### Складати текстову задачу за малюнком, таблицею чи виразом
+##### Creating a word problem from a model
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/models/skills/createProblem.data.ts)
 
 До запису 4 × 3 можна придумати сюжет про чотири однакові пакети по три предмети; дані й запитання повинні узгоджуватися.
 
-#### Планування розв’язання
+#### Solution planning
 
 Skills: 5
 
@@ -2074,37 +2074,37 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/planning.data.ts)
 
-##### Складати план розв’язання задачі на дві дії та пояснювати порядок
+##### Planning a two-step solution
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/twoStepPlan.data.ts)
 
 Спочатку потрібно визначити проміжну невідому величину, яку використають на другому кроці; порядок обґрунтовують залежністю.
 
-##### Розв’язувати нескладні складені задачі на три дії
+##### Solving a three-step problem
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/threeStepPlan.data.ts)
 
 У трьохдійовій задачі кожна проміжна відповідь має бути потрібною для наступного кроку та не суперечити умові.
 
-##### Складати та розв’язувати обернену задачу
+##### Constructing and solving inverse problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/inverseProblem.data.ts)
 
 Якщо відомі сума й один доданок, обернена задача може просити знайти інший доданок; дані й невідоме міняють ролі.
 
-##### Записувати відповідь із відповідними одиницями та перевіряти змістовну правдоподібність
+##### Checking answer units and reasonableness
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/explainAnswerUnits.data.ts)
 
 Число 12 без позначки «см» не є повною відповіддю про довжину; результат також має бути реалістичним для ситуації.
 
-##### Порівнювати два правильні способи розв’язання тієї самої задачі
+##### Comparing solution strategies
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/planning/skills/multipleSolutionStrategies.data.ts)
 
 До одного результату інколи ведуть групування доданків або послідовні дії; способи порівнюють за коректністю й зручністю.
 
-#### Задачі на порівняння
+#### Comparison problems
 
 Skills: 4
 
@@ -2112,31 +2112,31 @@ Skills: 4
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/comparisons.data.ts)
 
-##### Розв’язувати задачі на «на скільки більше / менше»
+##### Solving additive comparison problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/additiveComparison.data.ts)
 
 Для наборів із 9 і 6 предметів запитання «на скільки» означає різницю 3, а не відношення 9 ÷ 6.
 
-##### Розв’язувати задачі на збільшення або зменшення на задане число
+##### Increasing or decreasing by a given amount
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseNumber.data.ts)
 
 Після збільшення 15 на 4 отримують 19; «на чотири» позначає додаткову кількість, а не множник.
 
-##### Розв’язувати задачі на «у скільки разів більше / менше»
+##### Solving multiplicative comparison problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/multiplicativeComparison.data.ts)
 
 Якщо одна група має 12 предметів, інша — 4, перша більша втричі; відповідь є коефіцієнтом, а не різницею.
 
-##### Розв’язувати задачі на збільшення або зменшення в задану кількість разів
+##### Increasing or decreasing by a given factor
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/comparisons/skills/increaseDecreaseFactor.data.ts)
 
 Після збільшення 6 утричі виходить 18; «у три рази» описує множення, на відміну від «на три».
 
-#### Задачі на частини
+#### Part-whole problems
 
 Skills: 2
 
@@ -2144,13 +2144,13 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/parts.data.ts)
 
-##### Розв’язувати задачі на ціле й частини та складати обернені задачі
+##### Solving part-whole and inverse problems
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/partWholeAddsub.data.ts)
 
 Якщо ціле складається з частин 7 і 5, його можна відновити сумою; відомі ціле та одна частина визначають іншу.
 
-##### Розв’язувати сюжетні задачі на знаходження одиничної частини кількості
+##### Finding a unit fraction of a quantity
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/fractionsContext.data.ts)
 
