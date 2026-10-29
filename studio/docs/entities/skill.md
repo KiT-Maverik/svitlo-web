@@ -17,6 +17,13 @@ A **Skill** identifies the smallest practically meaningful ability that can be e
 
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
+### Textbook-local Skill identity
+
+- Each textbook owns an **independent Skills Taxonomy and Skill identities**. The same or semantically similar competency **may occur in multiple textbooks**, each with its own Skill entity and stable ID; cross-textbook similarity is not an error.
+- **Do not require shared Skill UUIDs, a central registry, synchronization, canonical global deduplication or cross-textbook progress analytics.** These are not prerequisites for creating or implementing a textbook.
+- **Within each textbook**, continue checking for redundant Skills, unclear splits/merges, atomicity and stable identities. Cross-textbook duplication permission does **not** authorize needless duplication within one taxonomy.
+- Cross-subject lessons may draw on material from several textbooks without asserting globally unified Skill identity or a combined learner-mastery record.
+
 - A Skill has one primary SkillGroup in the approved taxonomy and may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics.
 - A multi-Skill Question does not automatically establish separate mastery evidence for each referenced Skill. Assessment attribution and scores belong to assessment/progress entities.
 - Curriculum/Program owns sequencing and prerequisites; the taxonomy owns classification and conceptual descriptions.

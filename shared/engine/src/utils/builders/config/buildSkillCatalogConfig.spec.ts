@@ -71,7 +71,7 @@ describe('Skill catalog builders', () => {
             name: names(),
             groupIds: refs as SkillDomain_Config['groupIds'],
           }),
-        /SkillDomain groupIds/,
+        /SkillDomain (?:groupIds|must contain)/,
       );
     }
     assert.throws(
@@ -82,6 +82,26 @@ describe('Skill catalog builders', () => {
           skillIds: { first: skillId },
         }),
       /Skill id must be a UUID/,
+    );
+  });
+
+  it('supports exactly one Domain membership mode', () => {
+    const direct = buildSkillDomainConfig({
+      id: domainId, name: names(), groupIds: {}, skillIds: { first: skillId },
+    });
+    assert.equal(direct.collection, 'skillDomain');
+    assert.deepEqual(direct.groupIds, {});
+    assert.deepEqual(direct.skillIds, { first: skillId });
+
+    assert.throws(() =>
+      buildSkillDomainConfig({ id: domainId, name: names(), groupIds: {} }),
+      /either non-empty groupIds or non-empty direct skillIds/,
+    );
+    assert.throws(() =>
+      buildSkillDomainConfig({
+        id: domainId, name: names(), groupIds: { group: groupId }, skillIds: { first: skillId },
+      }),
+      /but not both/,
     );
   });
 

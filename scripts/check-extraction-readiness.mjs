@@ -13,6 +13,7 @@ const workspaces = [
   ['learningApps/playground', readJson('learningApps/playground/package.json')],
   ['learningApps/math', readJson('learningApps/math/package.json')],
   ['learningApps/physics', readJson('learningApps/physics/package.json')],
+  ['learningApps/biology', readJson('learningApps/biology/package.json')],
   ['learningApps/geography', readJson('learningApps/geography/package.json')],
   ['learningApps/informatics', readJson('learningApps/informatics/package.json')],
   ['frontend/platform', readJson('frontend/platform/package.json')],
@@ -127,7 +128,7 @@ assert(!/\b(?:apps|learningApps)\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/(?:apps|lear
   'UI Kit Storybook must not read application or monorepo source paths');
 assert(readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
   'UI Kit must own the Storybook build command');
-for (const application of ['learningApps/playground', 'learningApps/math', 'learningApps/physics', 'learningApps/geography', 'learningApps/informatics']) {
+for (const application of ['learningApps/playground', 'learningApps/math', 'learningApps/physics', 'learningApps/geography', 'learningApps/informatics', 'learningApps/biology']) {
   assert(!existsSync(resolve(root, application, '.storybook')),
     'Application Storybook must not depend on shared source trees: ' + application);
   const appManifest = readJson(application + '/package.json');
