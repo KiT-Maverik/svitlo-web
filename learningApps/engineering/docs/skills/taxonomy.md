@@ -10,11 +10,11 @@ An audience-independent catalog of abilities for analyzing, designing, construct
 
 ## SUMMARY
 
-Domains: 16
-Groups: 55
-Skills: 224
+Domains: 17
+Groups: 59
+Skills: 240
 
-Code files: 0/16 Domains · 0/55 Groups · 0/224 Skills
+Code files: 0/17 Domains · 0/59 Groups · 0/240 Skills
 
 ## DOMAINS
 
@@ -872,6 +872,38 @@ Identify isolation, throttling or direction-control functions in piping.
 
 Distinguish free-surface and enclosed conveyance when choosing a route.
 
+#### Environmental Control
+
+Skills: 4
+
+[Not implemented](#)
+
+Public environmental infrastructure also treats polluted air and solid waste. The engineering problem is selecting and integrating collection, containment and treatment equipment rather than merely recognizing that pollution exists.
+
+##### Explain air-filtration equipment
+
+[Not implemented](#)
+
+Trace air through collection, filter media and discharge components while recognizing the importance of particle size and maintenance.
+
+##### Explain industrial emissions control
+
+[Not implemented](#)
+
+Identify capture and treatment stages intended to reduce selected pollutants before a process stream is released.
+
+##### Explain solid-waste processing systems
+
+[Not implemented](#)
+
+Trace collection, sorting, material recovery and residual handling through an engineered waste-management facility.
+
+##### Explain contaminated-site remediation equipment
+
+[Not implemented](#)
+
+Identify how containment, extraction or treatment systems can address a specified contaminant without assuming one method works for every site.
+
 ### Energy Systems
 
 Groups: 3 · Skills: 12
@@ -1597,6 +1629,110 @@ Identify handling mechanisms, sensors, drives and safety boundaries in repetitiv
 [Not implemented](#)
 
 Recognize avoidable scrap, waiting, transport or rework in a manufacturing process.
+
+### Process and Agricultural Engineering
+
+Groups: 3 · Skills: 12
+
+[Not implemented](#)
+
+Some engineered systems transform flowing materials rather than assembling separate mechanical parts. Their design coordinates equipment, transfer rates, process conditions and product quality; agricultural and food technologies adapt these principles to living materials and variable field environments.
+
+#### Process Architecture
+
+Skills: 4
+
+[Not implemented](#)
+
+Large production processes connect material inputs, transformations, recirculation and waste streams in a sequence where one operation constrains others.
+
+##### Interpret a process flow diagram
+
+[Not implemented](#)
+
+Trace named material streams and equipment blocks to determine the order and purpose of operations in a production process.
+
+##### Trace material balances
+
+[Not implemented](#)
+
+Relate input, accumulation, product and waste flows across a specified process boundary without confusing mass conservation with constant volume.
+
+##### Explain mixing and dosing systems
+
+[Not implemented](#)
+
+Identify the equipment used to combine ingredients or meter a specified amount into a process stream.
+
+##### Identify process bottlenecks
+
+[Not implemented](#)
+
+Recognize how limited capacity or interruptions at one processing stage affect the output of a connected plant.
+
+#### Industrial Process Equipment
+
+Skills: 4
+
+[Not implemented](#)
+
+Process apparatus can separate mixtures, support controlled chemical transformations or maintain thermal conditions while containing potentially hazardous materials.
+
+##### Explain industrial separation equipment
+
+[Not implemented](#)
+
+Distinguish practical roles for filtration, sedimentation, distillation or membrane systems based on which property enables separation.
+
+##### Explain chemical reactor systems
+
+[Not implemented](#)
+
+Identify containment, feed, mixing, heat control and product removal functions in a vessel designed for a controlled transformation.
+
+##### Explain process heating systems
+
+[Not implemented](#)
+
+Trace heat delivery and temperature regulation through industrial apparatus rather than treating a heater as an isolated element.
+
+##### Explain process containment
+
+[Not implemented](#)
+
+Relate sealed vessels, piping, ventilation and pressure controls to keeping working materials within suitable operating boundaries.
+
+#### Food and Agricultural Technology
+
+Skills: 4
+
+[Not implemented](#)
+
+Food and field equipment must handle biological materials with variable properties and constraints involving spoilage, hygiene, water use and environmental conditions.
+
+##### Explain food-preservation equipment
+
+[Not implemented](#)
+
+Identify how refrigeration, dehydration, heating or sealed packaging apparatus supports a specified preservation process.
+
+##### Explain fermentation production equipment
+
+[Not implemented](#)
+
+Trace the functions of a vessel, controlled conditions and material handling in an engineered biological production process.
+
+##### Explain irrigation engineering
+
+[Not implemented](#)
+
+Relate water sources, delivery methods and flow control to plant water needs and resource constraints.
+
+##### Explain precision agricultural equipment
+
+[Not implemented](#)
+
+Identify the sensing, positioning and variable-delivery functions of machines that adapt work to field conditions.
 
 ### Human-Centered Engineering and Ergonomics
 
