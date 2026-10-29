@@ -1846,37 +1846,37 @@ Skills: 5
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/collection.data.ts)
 
-##### Групувати об’єкти за однією або двома визначеними ознаками
+##### Classifying objects by attributes
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/classifyByAttribute.data.ts)
 
 Одні й ті самі предмети можна групувати за кольором або формою; дві ознаки утворюють спільні підкатегорії.
 
-##### Формулювати запитання, для відповіді на яке потрібно зібрати дані
+##### Formulating a data investigation question
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/formulateInvestigationQuestion.data.ts)
 
 Запитання «який фрукт найпопулярніший у групі?» вимагає зібрати відповіді людей, а не відразу виконати арифметичну дію.
 
-##### Збирати прості дані підрахунком та фіксувати частоти категорій
+##### Counting category frequencies
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/collectCounts.data.ts)
 
 Для кожної категорії рахують кількість випадків; підсумок частот повинен відповідати загальному числу спостережень.
 
-##### Записувати кількості умовними позначками й відновлювати їх
+##### Recording and reading tally marks
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/tallyMarks.data.ts)
 
 П’ять рисок можуть позначати п’ять відповідей; за позначками відновлюють точні кількості кожної категорії.
 
-##### Заповнювати таблицю результатами спостереження або вимірювання
+##### Recording observations in a table
 
 Code: [Code](../../src/data/skillsTaxonomy/data/collection/skills/fillSimpleTable.data.ts)
 
 Рядки або стовпці мають узгоджені назви, щоб значення вимірювань не втратили одиниці й контекст.
 
-#### Подання даних
+#### Data representation
 
 Skills: 7
 
@@ -1884,49 +1884,49 @@ Skills: 7
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/presentation.data.ts)
 
-##### Фіксувати серію вимірювань на точковій/лінійній діаграмі з числовою віссю (line plot)
+##### Plotting measurements on a number line
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/linePlotMeasurements.data.ts)
 
 На числовій осі повторні вимірювання позначають над відповідними значеннями; число позначок показує частоту.
 
-##### Читати значення з таблиці та відповідати на прості питання за нею
+##### Reading a simple data table
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readSimpleTable.data.ts)
 
 Щоб відповісти, скільки учнів обрали варіант Б, читають потрібний підписаний осередок, а не сусідній стовпець.
 
-##### Читати піктограму, де один символ відповідає одному об’єкту
+##### Reading a one-to-one pictograph
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readPictograph.data.ts)
 
 Кожна картинка означає рівно один об’єкт; кількість зображень тому дорівнює частоті категорії.
 
-##### Будувати просту піктограму за підрахованими даними
+##### Constructing a pictograph
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/buildPictograph.data.ts)
 
 Для значень 3, 2 і 4 потрібно намалювати саме 3, 2 та 4 значки відповідно до підписаних категорій.
 
-##### Читати стовпчикову діаграму й порівнювати висоти стовпчиків
+##### Reading a bar chart
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/readBarChart.data.ts)
 
 Порівнюють стовпчики від спільної базової лінії та з однаковою шкалою; висота кодує число випадків.
 
-##### Створювати просту стовпчикову діаграму за таблицею
+##### Constructing a bar chart
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/buildBarChart.data.ts)
 
 Числа з таблиці переносять у висоти стовпчиків за єдиним масштабом і з підписаними категоріями.
 
-##### Читати діаграму, де одна позначка відповідає кільком одиницям
+##### Reading a scaled chart
 
 Code: [Code](../../src/data/skillsTaxonomy/data/presentation/skills/scaledChart.data.ts)
 
 Якщо одна позначка означає дві одиниці, три позначки дають шість; масштаб легенди не можна ігнорувати.
 
-#### Інтерпретація даних
+#### Data interpretation
 
 Skills: 3
 
@@ -1934,13 +1934,13 @@ Skills: 3
 
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/interpretation.data.ts)
 
-##### Знаходити різницю та суму кількостей за таблицею чи діаграмою
+##### Comparing category totals and differences
 
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/compareCategories.data.ts)
 
 Із категорій 7 та 4 можна визначити різницю 3 і суму 11, зберігаючи той самий контекст даних.
 
-##### Формулювати висновок, який обґрунтовують наведені дані
+##### Drawing conclusions from data
 
 Code: [Code](../../src/data/skillsTaxonomy/data/interpretation/skills/interpretConclusion.data.ts)
 
