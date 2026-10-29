@@ -1486,179 +1486,179 @@ Code: [Code](../../src/data/skillsTaxonomy/geometry/perimeterArea/skills/perimet
 
 Для огорожі потрібна довжина краю, а для покриття підлоги — внутрішня поверхня; одиниці й способи обчислення різні.
 
-### Вимірювання
+### Measurement
 
 Groups: 5 · Skills: 21
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/measurement.data.ts)
 
-Розглядає вимірювання фізичних величин через порівняння з одиницею, інструменти й шкали; охоплює довжину, масу, місткість, температуру та узгодження одиниць.
+Physical quantities are measured by comparison with a unit, using tools and scales. The domain includes length, mass, capacity, temperature, and consistent measurement units.
 
-#### Довжина
+#### Length
 
 Skills: 10
 
-Безпосереднє та інструментальне порівняння відрізків, метричні одиниці різного масштабу й операції з однорідними довжинами.
-
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/length.data.ts)
 
-##### Порівнювати довжини безпосереднім накладанням і непрямим способом
+Lengths can be compared directly or with instruments. This group connects metric units at different scales and arithmetic involving compatible lengths.
+
+##### Comparing lengths directly and indirectly
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/compareLength.data.ts)
 
-Коротший із двох відрізків видно після суміщення початків; порівняти можна і через спільну стрічку-посередник.
+Aligning the starting points of two segments reveals which is shorter. Indirect comparisons can also use a common strip as an intermediate reference.
 
-##### Вимірювати довжину послідовним прикладанням однакових умовних одиниць
+##### Measuring length with repeated nonstandard units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/nonstandardLength.data.ts)
 
-Умовні мірки прикладають без проміжків та накладень: різні за довжиною мірки дадуть різні числові результати.
+Identical units must be placed end to end without gaps or overlap. Units of different lengths produce different numerical measurements of the same segment.
 
-##### Правильно користуватися лінійкою, починаючи вимірювання від нульової позначки
+##### Starting ruler measurements at zero
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
 
-Шкала лінійки рахує проміжки між поділками, а не кількість надрукованих цифр; початок виміру — нуль.
+A ruler measures intervals between marks, not how many printed numerals are visible. Measurements should start at the zero mark.
 
-##### Вимірювати та креслити відрізки заданої довжини в сантиметрах
+##### Measuring and drawing segments in centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
 
-Відрізок 5 см має п’ять сантиметрових проміжків між його кінцями, а не п’ять поділок разом із початковою.
+A five-centimeter segment spans five one-centimeter intervals between its endpoints, not five marks including the starting mark.
 
-##### Вимірювати короткі відрізки в міліметрах і співвідносити мм із см
+##### Measuring in millimeters and relating them to centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/millimeters.data.ts)
 
-Десять міліметрів утворюють сантиметр; мала шкала потрібна там, де цілих сантиметрів недостатньо.
+Ten millimeters equal one centimeter. Millimeter marks permit finer measurements when whole centimeters are insufficient.
 
-##### Співвідносити дециметр і сантиметр та виконувати прості перетворення
+##### Converting between decimeters and centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/decimeters.data.ts)
 
-Один дециметр дорівнює десяти сантиметрам, тому 3 дм відповідають 30 см.
+One decimeter equals ten centimeters, so 3 dm equals 30 cm.
 
-##### Співвідносити метр, дециметр і сантиметр у практичних вимірах
+##### Relating meters, decimeters and centimeters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/meters.data.ts)
 
-Метр складається із десяти дециметрів або ста сантиметрів; при порівнянні записів величину зберігають.
+One meter consists of ten decimeters or one hundred centimeters. A unit conversion preserves the measured quantity.
 
-##### Вибирати кілометри для великих відстаней і співвідносити їх із метрами
+##### Using kilometers for long distances and converting to meters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/kilometers.data.ts)
 
-Великі відстані між населеними пунктами доцільно виражати кілометрами: 2 км дорівнюють 2000 м.
+Distances between towns are appropriately expressed in kilometers: 2 km equals 2,000 m.
 
-##### Оцінювати довжину та перевіряти результат інструментом
+##### Estimating length and checking by measurement
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/estimateLength.data.ts)
 
-Приблизна довжина зорово оцінюється до виміру, а інструмент показує величину помилки оцінки.
+A visual length estimate made before measuring can be compared with an instrument reading to evaluate the error.
 
-##### Додавати й віднімати довжини в узгоджених одиницях
+##### Adding and subtracting lengths in compatible units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/length/skills/addSubtractLengths.data.ts)
 
-При обчисленні 30 см + 2 дм спочатку переходять до спільних одиниць: 30 см + 20 см.
+Before computing 30 cm + 2 dm, convert to a common unit: 30 cm + 20 cm.
 
-#### Маса
+#### Mass
 
 Skills: 4
 
-Порівняння ваги тіл і числове вимірювання маси через рівновагу, покази вагів та співвідношення одиниць.
-
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/mass.data.ts)
 
-##### Застосовувати співвідношення центнера й кілограма у задачах
+Masses can be compared by balance and measured numerically using scales and compatible units.
+
+##### Using centners and kilograms in problems
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/centnerKilogram.data.ts)
 
-Один центнер містить сто кілограмів; регіональну одиницю не слід плутати з метричною тонною.
+One metric centner equals 100 kilograms. This regionally used unit must not be confused with a metric tonne.
 
-##### Порівнювати масу предметів за допомогою терезів або рівноваги
+##### Comparing masses using a balance
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/compareMass.data.ts)
 
-На двочашкових терезах переважує важча сторона; рівновага свідчить про рівність мас двох наборів.
+The heavier pan of a balance tilts downward; equilibrium indicates equal masses for the two collections being compared.
 
-##### Використовувати кілограм і грам та співвідносити їх
+##### Relating kilograms and grams
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/kilogramGram.data.ts)
 
-Один кілограм дорівнює тисячі грамів; для легкого предмета зручні грами, для важкого — кілограми.
+One kilogram equals 1,000 grams. Grams are convenient for light objects, while kilograms suit larger masses.
 
-##### Зчитувати покази вагів і записувати результат із одиницею
+##### Reading a scale and recording mass with units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/mass/skills/weighObject.data.ts)
 
-Показ 750 на шкалі вагів має сенс лише разом із підписом «г» або іншою одиницею.
+The displayed number 750 is meaningful only alongside a unit such as grams. A recorded measurement without its unit is incomplete.
 
-#### Місткість
+#### Capacity
 
 Skills: 3
-
-Кількість рідини, що вміщується в посудині, вимірювання літрами і мілілітрами та їхнє порівняння.
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/capacity.data.ts)
 
-##### Порівнювати місткість посудин через переливання або вимірювання
+Capacity concerns the amount of liquid a container can hold, with comparisons and measurements in liters and milliliters.
+
+##### Comparing container capacities by pouring or measuring
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/capacityConcept.data.ts)
 
-Якщо одну посудину наповнити іншою, можна порівняти об’єми рідини незалежно від висоти чи форми ємностей.
+Transferring liquid between containers can reveal their respective capacities independently of the containers' heights or shapes.
 
-##### Вимірювати й оцінювати місткість у літрах
+##### Measuring and estimating capacity in liters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/liter.data.ts)
 
-Літр — стандартна одиниця місткості; високу вузьку посудину не можна автоматично вважати місткішою за низьку широку.
+The liter is a standard capacity unit. A tall narrow vessel is not necessarily larger in capacity than a shorter wide one.
 
-##### Використовувати мілілітри та співвідносити їх із літрами
+##### Relating milliliters and liters
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/capacity/skills/milliliter.data.ts)
 
-У літрі є 1000 мілілітрів; 500 мл — це пів літра за тієї самої одиниці об’єму.
+One liter equals 1,000 milliliters, so 500 mL equals half a liter.
 
-#### Температура
+#### Temperature
 
 Skills: 1
 
-Визначення невід’ємних показів термометра за поділками шкали та правильне зазначення одиниці.
-
 Code: [Code](../../src/data/skillsTaxonomy/measurement/temperature/temperature.data.ts)
 
-##### Зчитувати невід’ємну температуру з простої шкали термометра
+Nonnegative readings are interpreted from a thermometer's scale and recorded with their temperature units.
+
+##### Reading nonnegative temperatures on a thermometer
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/temperature/skills/readTemperature.data.ts)
 
-Між позначками 0 і 10 на рівномірній шкалі термометра проміжні поділки мають числові значення; без одиниці запис неповний.
+Intermediate divisions between 0 and 10 on a uniform thermometer scale have defined numerical values. A temperature reading without units is incomplete.
 
-#### Вимірювальні навички
+#### General measurement skills
 
 Skills: 3
 
-Загальні принципи вибору одиниці, узгодження вимірів і виконання обчислень із порівнюваними величинами.
-
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/general.data.ts)
 
-##### Пояснювати, чому для порівняння вимірів потрібна узгоджена одиниця
+General principles include choosing an appropriate unit, making measurements comparable, and calculating with physical quantities expressed consistently.
+
+##### Explaining why common measurement units are needed
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/standardUnitPurpose.data.ts)
 
-Значення «10» на шкалах сантиметрів і міліметрів не позначають однакової довжини; одиниці є частиною виміру.
+The numeral 10 on a centimeter scale and a millimeter scale does not represent the same length. Units are essential to the measurement.
 
-##### Вибирати доречну одиницю для довжини, маси чи місткості
+##### Choosing suitable units for length, mass or capacity
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/chooseAppropriateUnit.data.ts)
 
-Шлях між містами зручно задавати в кілометрах, масу яблука — у грамах, місткість пляшки — у літрах.
+A distance between cities is conveniently measured in kilometers, an apple's mass in grams, and a bottle's capacity in liters.
 
-##### Розв’язувати практичні задачі на величини в однакових або сумісних одиницях
+##### Solving measurement word problems with compatible units
 
 Code: [Code](../../src/data/skillsTaxonomy/measurement/general/skills/wordProblemsMeasures.data.ts)
 
-Дії з 2 м і 30 см вимагають спільної одиниці або явного перетворення; відповідь має зберігати фізичний зміст.
+Working with 2 m and 30 cm requires a compatible unit or an explicit conversion. The computed answer must retain its physical meaning.
 
 ### Time
 
