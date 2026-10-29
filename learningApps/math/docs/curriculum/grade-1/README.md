@@ -1,15 +1,13 @@
-# Curriculum: Mathematics — Grade 1
+# Mathematics — Grade 1
 
-> **Статус:** Curriculum та сценарії Grade 1 у статусі draft; повні методичні Learning Briefs для модулів 02–05 ще не написані.
+The [Grade 1 Curriculum](./grade-1.curriculum.md) is the authoritative learning plan. This README is a navigation index, not a duplicate Curriculum.
 
-Це каталог модулів. Загальні результати навчання та повний перелік Skill ID: [Curriculum Grade 1](../grade-1.curriculum.md).
+## Modules
 
-**Сценарне покриття:** 5 модулів · 44 уроки · **267 сценарних секцій**. Кожен модуль має прямі посилання на каталог `Sections/` кожного уроку. Графіка, аудіо, відео й код не реалізовувалися.
+- 01. [Number, Quantity and Order](./01-kilkist-chysla-i-poriadok/README.md)
+- 02. [Addition and Subtraction](./02-dodavannia-ta-vidnimannia/README.md)
+- 03. [Mathematical Language, Equalities and Word Problems](./03-matematychna-mova-rivnosti-ta-zadachi/README.md)
+- 04. [Geometry and Measurement](./04-heometriia-ta-vymiriuvannia/README.md)
+- 05. [Time, Money and Data](./05-chas-hroshi-dani/README.md)
 
-## Модулі
-
-- 01. [Кількість, числа й порядок](./01-kilkist-chysla-i-poriadok/README.md) — 11 уроків, детальні методичні описи готові, 69 сценарних секцій.
-- 02. [Додавання та віднімання](./02-dodavannia-ta-vidnimannia/README.md) — 10 уроків, 60 сценарних секцій.
-- 03. [Математична мова, рівності та задачі](./03-matematychna-mova-rivnosti-ta-zadachi/README.md) — 9 уроків, 54 сценарних секцій.
-- 04. [Геометрія та вимірювання](./04-heometriia-ta-vymiriuvannia/README.md) — 8 уроків, 48 сценарних секцій.
-- 05. [Час, гроші, дані](./05-chas-hroshi-dani/README.md) — 6 уроків, 36 сценарних секцій.
+Supporting lesson briefs and scenarios are editorial drafts, not implemented learning content or assessment specifications.
