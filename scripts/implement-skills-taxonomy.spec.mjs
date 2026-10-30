@@ -311,13 +311,13 @@ let calls = 0; crypto.randomUUID = () => calls++ < ${count} ? '${repeated}' : re
 
 test('global slugs: duplicate Skills in different parents block both Domains, including skip', () => withFixture(f => {
   addIndependentDomain(f);
-  f.updateText(s=>s.replace('Slug: hearRhythm\\nAction: create',
-    'Slug: drawPerspective\\nAction: skip'));
+  f.updateText(s=>s.replace('Slug: hearRhythm\nAction: create',
+    'Slug: drawPerspective\nAction: skip'));
   const r=f.run('--apply');
   assert.notEqual(r.status,0);
   assert.match(r.stderr,/Duplicate taxonomy slug/);
-  assert.match(r.stderr,/drawing\\/perspective\\/drawPerspective/);
-  assert.match(r.stderr,/music\\/drawPerspective/);
+  assert.match(r.stderr,/drawing\/perspective\/drawPerspective/);
+  assert.match(r.stderr,/music\/drawPerspective/);
   assert.equal(fs.existsSync(path.join(f.pkg,'Data/skills/drawing')),false);
   assert.equal(fs.existsSync(path.join(f.pkg,'Data/skills/music')),false);
   assert.ok(fs.existsSync(path.join(f.pkg,'Data/skills/science/science.data.ts')));
@@ -325,8 +325,8 @@ test('global slugs: duplicate Skills in different parents block both Domains, in
 
 test('global slugs: Group and Domain cannot share a slug', () => withFixture(f => {
   addIndependentDomain(f);
-  f.updateText(s=>s.replace('Slug: perspective\\nAction: create',
-    'Slug: music\\nAction: create'));
+  f.updateText(s=>s.replace('Slug: perspective\nAction: create',
+    'Slug: music\nAction: create'));
   const r=f.run('--apply');
   assert.notEqual(r.status,0);
   assert.match(r.stderr,/Duplicate taxonomy slug/);
@@ -336,8 +336,8 @@ test('global slugs: Group and Domain cannot share a slug', () => withFixture(f =
 
 test('global slugs: case-only collisions are rejected', () => withFixture(f => {
   addIndependentDomain(f);
-  f.updateText(s=>s.replace('Slug: hearRhythm\\nAction: create',
-    'Slug: drawperspective\\nAction: create'));
+  f.updateText(s=>s.replace('Slug: hearRhythm\nAction: create',
+    'Slug: drawperspective\nAction: create'));
   const r=f.run('--apply');
   assert.notEqual(r.status,0);
   assert.match(r.stderr,/Duplicate taxonomy slug/);
@@ -377,7 +377,7 @@ test('UUID registry: retries collisions against a preexisting canonical definiti
   const collision='11111111-1111-4111-8111-111111111111';
   const registry=path.join(f.pkg,'Data/skills/other/skills/index.ids.ts');
   fs.mkdirSync(path.dirname(registry),{recursive:true});
-  fs.writeFileSync(registry,`export const other_Skills_Ids = { legacy: '${collision}' } as const;\\n`);
+  fs.writeFileSync(registry,`export const other_Skills_Ids = { legacy: '${collision}' } as const;\n`);
   const r=runWithUuidPreload(f,collision,2);
   assert.equal(r.status,0,r.stderr);
   assert.match(fs.readFileSync(registry,'utf8'),new RegExp(collision));
