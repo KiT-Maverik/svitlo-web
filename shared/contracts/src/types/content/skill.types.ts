@@ -22,6 +22,8 @@ export interface SkillDescription_Config {
 export interface Skill_Config {
   /** Stable UUID, assigned once in a separate *.ids.ts file. */
   id: SkillId;
+  /** Stable English source identifier; optional only for legacy configs not yet migrated. */
+  slug?: string;
   /** One non-empty name for every supported language. */
   name: Readonly<Record<LanguageCode, string>>;
   /** Canonical methodological text and complete frontend text are required for every Skill. */
