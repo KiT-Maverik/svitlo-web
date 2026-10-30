@@ -1533,333 +1533,593 @@ User-friendly description: Understand the biological functions of human reproduc
 
 ### Ecology
 
+Slug: ecology
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
-Dependencies among organisms, populations, nonliving factors, and flows of matter and energy, together with the consequences of disrupted relationships. The geographical distribution of natural zones and climate processes belongs to Geography.
+Methodological description: Dependencies among organisms, populations, nonliving factors, and flows of matter and energy, together with the consequences of disrupted relationships. The geographical distribution of natural zones and climate processes belongs to Geography.
+User-friendly description: Explore how organisms depend on one another and on their environments.
 
 #### Habitats
+
+Slug: habitats
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Temperature, water, light, other organisms, and resources affect the survival prospects of a particular species.
+Methodological description: Temperature, water, light, other organisms, and resources affect the survival prospects of a particular species.
+User-friendly description: Discover how environmental conditions shape the lives of organisms.
 
 ##### Identify an Organism’s Habitat
 
+Slug: identifyAnOrganismsHabitat
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe typical conditions in which a species finds essential resources and can reproduce.
+Methodological description: Describe typical conditions in which a species finds essential resources and can reproduce.
+User-friendly description: Identify the conditions and resources a species needs in its habitat.
 
 ##### Relate Organism Structure to Environmental Conditions
 
+Slug: relateOrganismStructureToEnvironmentalConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain, at the level of ecological niches, how organisms’ structures affect resource use and survival under particular environmental factors. Unlike botanical analysis of individual plant organs, this competency assesses how an organism fits its environment and ecological role.
+Methodological description: Explain, at the level of ecological niches, how organisms’ structures affect resource use and survival under particular environmental factors. Unlike botanical analysis of individual plant organs, this competency assesses how an organism fits its environment and ecological role.
+User-friendly description: Explain how an organism's structure helps it survive and use resources in its environment.
 
 ##### Identify Biotic and Abiotic Factors
 
+Slug: identifyBioticAndAbioticFactors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish influences from other organisms from influences of water, light, soil, or temperature.
+Methodological description: Distinguish influences from other organisms from influences of water, light, soil, or temperature.
+User-friendly description: Distinguish living influences from nonliving environmental factors.
 
 ##### Predict an Organism’s Response to Environmental Change
 
+Slug: predictAnOrganismsResponseToEnvironmentalChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Predict how a change in available resources or temperature will alter the behavior, growth, or survival of a species.
+Methodological description: Predict how a change in available resources or temperature will alter the behavior, growth, or survival of a species.
+User-friendly description: Predict how changing resources or temperature could affect a species.
 
 #### Feeding Relationships
+
+Slug: feedingRelationships
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Matter and energy pass between organisms, and decomposers return matter to the environment; a disrupted relationship affects subsequent links.
+Methodological description: Matter and energy pass between organisms, and decomposers return matter to the environment; a disrupted relationship affects subsequent links.
+User-friendly description: Explore how food relationships transfer matter and energy through ecosystems.
 
 ##### Distinguish Producers and Consumers
 
+Slug: distinguishProducersAndConsumers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine which organisms produce organic substances from inorganic ones and which obtain them by consuming other organisms.
+Methodological description: Determine which organisms produce organic substances from inorganic ones and which obtain them by consuming other organisms.
+User-friendly description: Recognize producers and consumers by how they obtain organic substances.
 
 ##### Recognize Decomposers
 
+Slug: recognizeDecomposers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the role of bacteria, fungi, and other decomposers in transforming dead organic remains.
+Methodological description: Identify the role of bacteria, fungi, and other decomposers in transforming dead organic remains.
+User-friendly description: Identify how decomposers break down organic material.
 
 ##### Construct a Simple Food Chain
 
+Slug: constructASimpleFoodChain
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Correctly arrange the direction of matter and energy transfer between a producer and consumers.
+Methodological description: Correctly arrange the direction of matter and energy transfer between a producer and consumers.
+User-friendly description: Build a food chain showing who obtains energy and matter from whom.
 
 ##### Explain Food Webs
 
+Slug: explainFoodWebs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how interconnected food chains form a network with several food sources for one species and multiple paths for matter and energy transfer; distinguish a web from a single linear chain.
+Methodological description: Explain how interconnected food chains form a network with several food sources for one species and multiple paths for matter and energy transfer; distinguish a web from a single linear chain.
+User-friendly description: Understand how connected food chains form a food web.
 
 ##### Explain Energy Flow in an Ecosystem
 
+Slug: explainEnergyFlowInAnEcosystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain one-way energy transfer through producers, consumers, and decomposers, energy transformations, and dissipation as heat; do not confuse energy flow with matter cycling.
+Methodological description: Explain one-way energy transfer through producers, consumers, and decomposers, energy transformations, and dissipation as heat; do not confuse energy flow with matter cycling.
+User-friendly description: Explain why energy moves through an ecosystem while matter is reused.
 
 #### Interactions Among Organisms
+
+Slug: interactionsAmongOrganisms
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Organisms may use one another as resources, compete, or benefit one another; the nature of an interaction is determined by its consequences for those involved.
+Methodological description: Organisms may use one another as resources, compete, or benefit one another; the nature of an interaction is determined by its consequences for those involved.
+User-friendly description: Explore how organisms compete, feed on one another or cooperate.
 
 ##### Recognize Predation
 
+Slug: recognizePredation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish consumption of one organism by another from competition over a shared resource.
+Methodological description: Distinguish consumption of one organism by another from competition over a shared resource.
+User-friendly description: Recognize when one organism captures and feeds on another.
 
 ##### Recognize Competition
 
+Slug: recognizeCompetition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize situations in which limited food, light, or territory reduces resource availability to others.
+Methodological description: Recognize situations in which limited food, light, or territory reduces resource availability to others.
+User-friendly description: Identify examples of organisms competing for limited resources.
 
 ##### Recognize Mutually Beneficial Relationships
 
+Slug: recognizeMutuallyBeneficialRelationships
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify interactions that increase the fitness of both species rather than only one.
+Methodological description: Identify interactions that increase the fitness of both species rather than only one.
+User-friendly description: Recognize relationships that benefit both species involved.
 
 ##### Explain the Role of Pollinators in Species Interactions
 
+Slug: explainTheRoleOfPollinatorsInSpeciesInteractions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how an animal’s transfer of pollen relates to plant reproduction and to the pollinator’s resources.
+Methodological description: Explain how an animal’s transfer of pollen relates to plant reproduction and to the pollinator’s resources.
+User-friendly description: Explain how pollinators and flowering plants depend on one another.
 
 #### Ecosystems and Biodiversity
+
+Slug: ecosystemsAndBiodiversity
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Individual organisms, populations, and communities interact with one another and with nonliving factors. Changes in species composition or resource availability can have indirect consequences for an entire ecosystem, making these relationships and the role of biodiversity important to understand.
+Methodological description: Individual organisms, populations, and communities interact with one another and with nonliving factors. Changes in species composition or resource availability can have indirect consequences for an entire ecosystem, making these relationships and the role of biodiversity important to understand.
+User-friendly description: Understand how populations, communities and environmental factors form ecosystems.
 
 ##### Distinguish an Organism, Population, and Community
 
+Slug: distinguishAnOrganismPopulationAndCommunity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a single individual from individuals of one species in an area and from a community composed of different species.
+Methodological description: Distinguish a single individual from individuals of one species in an area and from a community composed of different species.
+User-friendly description: Distinguish an individual organism, a population and a community.
 
 ##### Recognize Natural Communities of Ukraine
 
+Slug: recognizeNaturalCommunitiesOfUkraine
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify characteristic combinations of plants, animals, and conditions in Ukrainian forests, steppes, meadows, or bodies of water.
+Methodological description: Identify characteristic combinations of plants, animals, and conditions in Ukrainian forests, steppes, meadows, or bodies of water.
+User-friendly description: Recognize characteristic living communities in Ukrainian forests, steppes and waters.
 
 ##### Explain the Interdependence of Ecosystem Components
 
+Slug: explainTheInterdependenceOfEcosystemComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how organisms, populations, and nonliving ecosystem factors are linked by feeding and other interactions: a change in species abundance, disappearance of a predator, arrival of an invasive organism, or shortage of a resource may affect other participants and the system as a whole. Describe both direct and indirect consequences in particular examples without declaring a species 'beneficial' or 'harmful' merely because of what it eats.
+Methodological description: Explain how organisms, populations, and nonliving ecosystem factors are linked by feeding and other interactions: a change in species abundance, disappearance of a predator, arrival of an invasive organism, or shortage of a resource may affect other participants and the system as a whole. Describe both direct and indirect consequences in particular examples without declaring a species 'beneficial' or 'harmful' merely because of what it eats.
+User-friendly description: Explore how changes to one part of an ecosystem can affect many others.
 
 ##### Explain the Importance of Biodiversity
 
+Slug: explainTheImportanceOfBiodiversity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a diversity of ecological roles and relationships can support ecosystem resilience in the face of change.
+Methodological description: Explain why a diversity of ecological roles and relationships can support ecosystem resilience in the face of change.
+User-friendly description: Explain how biodiversity can help ecosystems respond to change.
 
 ##### Identify Threats to Local Species
 
+Slug: identifyThreatsToLocalSpecies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish habitat loss, pollution, excessive harvesting or removal, and invasive species as threat factors.
+Methodological description: Distinguish habitat loss, pollution, excessive harvesting or removal, and invasive species as threat factors.
+User-friendly description: Identify activities and environmental changes that threaten local species.
 
 ##### Justify Protection of Species Listed in Red Data Books
 
+Slug: justifyProtectionOfSpeciesListedInRedDataBooks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why species listed in national or regional Red Data Books require conservation attention in light of threats and population status. Distinguish the legal and informational status of a particular Red Data Book from the international IUCN Red List: these lists are not equivalent.
+Methodological description: Explain why species listed in national or regional Red Data Books require conservation attention in light of threats and population status. Distinguish the legal and informational status of a particular Red Data Book from the international IUCN Red List: these lists are not equivalent.
+User-friendly description: Explain why threatened species listed in Red Data Books need conservation attention.
 
 ##### Explain Matter Cycling in Ecosystems
 
+Slug: explainMatterCyclingInEcosystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the repeated transfer and reuse of chemical elements and compounds between organisms and the abiotic environment through uptake, feeding, excretion, and decomposition; distinguish cyclical matter movement from one-way energy flow.
+Methodological description: Explain the repeated transfer and reuse of chemical elements and compounds between organisms and the abiotic environment through uptake, feeding, excretion, and decomposition; distinguish cyclical matter movement from one-way energy flow.
+User-friendly description: Discover how matter passes between organisms and the nonliving environment.
 
 ### Genetics and Evolution
+
+Slug: geneticsAndEvolution
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 17
 
 [Not implemented](#)
 
-Transmission of hereditary information, reasons for similarities and differences among offspring, and changes in inherited traits within populations across generations. An individual's growth is not an evolutionary process.
+Methodological description: Transmission of hereditary information, reasons for similarities and differences among offspring, and changes in inherited traits within populations across generations. An individual's growth is not an evolutionary process.
+User-friendly description: Explore how inherited information passes between generations and how populations evolve.
 
 #### Reproduction and Traits
+
+Slug: reproductionAndTraits
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Inherited characteristics can recur in offspring, but individuals of one species are not exact copies; reproductive mode affects variation.
+Methodological description: Inherited characteristics can recur in offspring, but individuals of one species are not exact copies; reproductive mode affects variation.
+User-friendly description: Discover why offspring resemble their relatives but are not always identical.
 
 ##### Distinguish Sexual and Asexual Reproduction
 
+Slug: distinguishSexualAndAsexualReproduction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the fusion of sex cells from reproduction without their fusion, regardless of how offspring outwardly appear.
+Methodological description: Distinguish the fusion of sex cells from reproduction without their fusion, regardless of how offspring outwardly appear.
+User-friendly description: Distinguish reproduction with sex-cell fusion from reproduction without it.
 
 ##### Identify Hereditary Traits in Examples
 
+Slug: identifyHereditaryTraitsInExamples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify similarities between generations associated with the transmission of genetic information.
+Methodological description: Identify similarities between generations associated with the transmission of genetic information.
+User-friendly description: Recognize inherited traits in examples of parents and offspring.
 
 ##### Distinguish Hereditary and Acquired Traits
 
+Slug: distinguishHereditaryAndAcquiredTraits
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish changes that can be passed to offspring through genetic information from changes acquired by an individual through experience, injury, or training. Explain that most phenotypic traits arise from interactions between genotype and environment, so a rigid binary classification is not universally applicable.
+Methodological description: Distinguish changes that can be passed to offspring through genetic information from changes acquired by an individual through experience, injury, or training. Explain that most phenotypic traits arise from interactions between genotype and environment, so a rigid binary classification is not universally applicable.
+User-friendly description: Explore how genes and environments contribute to traits, without relying on a strict either-or rule.
 
 ##### Explain Differences Among Offspring of the Same Species
 
+Slug: explainDifferencesAmongOffspringOfTheSameSpecies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why recombination, mutations, and developmental conditions can produce differences among individuals.
+Methodological description: Explain why recombination, mutations, and developmental conditions can produce differences among individuals.
+User-friendly description: Explain why individuals of the same species can develop different features.
 
 #### Genetics
+
+Slug: genetics
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Genes, as segments of hereditary information, help explain relatedness and differences; how a trait is expressed also depends on regulation and the environment.
+Methodological description: Genes, as segments of hereditary information, help explain relatedness and differences; how a trait is expressed also depends on regulation and the environment.
+User-friendly description: Learn how DNA, genes and their activity shape inherited characteristics.
 
 ##### Recognize DNA’s Role in Storing Hereditary Information
 
+Slug: recognizeDNAsRoleInStoringHereditaryInformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the role of DNA sequences in storing information about the construction and regulation of cellular structures.
+Methodological description: Explain the role of DNA sequences in storing information about the construction and regulation of cellular structures.
+User-friendly description: Explain how DNA stores information used by living cells.
 
 ##### Explain Transmission of Hereditary Information
 
+Slug: explainTransmissionOfHereditaryInformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how DNA is copied and distributed during cell division and passed between generations through sex cells or asexual reproduction. Distinguish transmission of molecular information from its expression in observable traits.
+Methodological description: Explain how DNA is copied and distributed during cell division and passed between generations through sex cells or asexual reproduction. Distinguish transmission of molecular information from its expression in observable traits.
+User-friendly description: Understand how hereditary information is copied and passed on.
 
 ##### Distinguish a Gene from a Trait
 
+Slug: distinguishAGeneFromATrait
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that a gene is a segment of hereditary information, while an observable trait results from its activity and environmental influences.
+Methodological description: Explain that a gene is a segment of hereditary information, while an observable trait results from its activity and environmental influences.
+User-friendly description: Distinguish a gene from the visible trait it may help influence.
 
 ##### Explain Mechanisms of Trait Inheritance
 
+Slug: explainMechanismsOfTraitInheritance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the roles of genes, alleles, and chromosomes, segregation of alleles, and formation of their combinations in offspring. Apply Mendelian patterns where appropriate and distinguish them from polygenic and environmentally influenced traits.
+Methodological description: Explain the roles of genes, alleles, and chromosomes, segregation of alleles, and formation of their combinations in offspring. Apply Mendelian patterns where appropriate and distinguish them from polygenic and environmentally influenced traits.
+User-friendly description: Explore how genes and their variants are inherited across generations.
 
 ##### Explain Expression of Genetic Information
 
+Slug: explainExpressionOfGeneticInformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how DNA information can be transcribed into RNA and realized through protein synthesis and regulation of gene activity; do not equate an individual gene with a ready-made phenotypic trait.
+Methodological description: Explain how DNA information can be transcribed into RNA and realized through protein synthesis and regulation of gene activity; do not equate an individual gene with a ready-made phenotypic trait.
+User-friendly description: Follow how DNA information is used and regulated within cells.
 
 #### Evolutionary Changes
+
+Slug: evolutionaryChanges
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Hereditary variation and differences in reproductive success alter the prevalence of traits in populations across generations; this is not the same as development of an individual organism.
+Methodological description: Hereditary variation and differences in reproductive success alter the prevalence of traits in populations across generations; this is not the same as development of an individual organism.
+User-friendly description: Discover how inherited variation changes within populations over generations.
 
 ##### Explain Hereditary Variation Among Individuals
 
+Slug: explainHereditaryVariationAmongIndividuals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate differences that may be inherited to diversity among individuals and the possibility of population change.
+Methodological description: Relate differences that may be inherited to diversity among individuals and the possibility of population change.
+User-friendly description: Explain why inherited differences exist between individuals.
 
 ##### Explain Natural Selection
 
+Slug: explainNaturalSelection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how inherited differences in survival and reproductive success change the frequencies of hereditary variants in a population over generations; selection is neither a conscious choice by organisms nor progress toward predetermined perfection.
+Methodological description: Explain how inherited differences in survival and reproductive success change the frequencies of hereditary variants in a population over generations; selection is neither a conscious choice by organisms nor progress toward predetermined perfection.
+User-friendly description: Understand how natural selection can change inherited traits across generations.
 
 ##### Distinguish Individual Changes During Life from Population Changes
 
+Slug: distinguishIndividualChangesDuringLifeFromPopulationChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish changes in the growth or behavior of one individual from changes in the frequencies of inherited traits in a population.
+Methodological description: Distinguish changes in the growth or behavior of one individual from changes in the frequencies of inherited traits in a population.
+User-friendly description: Distinguish changes during an individual's life from evolution across generations.
 
 ##### Interpret Evidence of Evolution
 
+Slug: interpretEvidenceOfEvolution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain convergent evidence for life's history from fossils, comparative anatomy, biogeography, embryology, and molecular data, taking into account the limitations of each type of evidence.
+Methodological description: Explain convergent evidence for life's history from fossils, comparative anatomy, biogeography, embryology, and molecular data, taking into account the limitations of each type of evidence.
+User-friendly description: Explore how fossils, anatomy and DNA provide evidence for evolution.
 
 ##### Explain the Theory of Evolution
 
+Slug: explainTheTheoryOfEvolution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain modern evolutionary theory as a scientific explanation of changes in inherited population characteristics and the diversity of life, supported by multiple converging lines of evidence. Distinguish a scientific theory from individual hypotheses, factual observations, and claims of purpose-directed development.
+Methodological description: Explain modern evolutionary theory as a scientific explanation of changes in inherited population characteristics and the diversity of life, supported by multiple converging lines of evidence. Distinguish a scientific theory from individual hypotheses, factual observations, and claims of purpose-directed development.
+User-friendly description: Understand evolution as a scientific explanation supported by multiple kinds of evidence.
 
 ##### Explain Common Ancestry of Species
 
+Slug: explainCommonAncestryOfSpecies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that different species may descend from common ancestors and that an evolutionary tree represents branching lineages; distinguish a common ancestor from a modern species supposedly transforming directly into another.
+Methodological description: Explain that different species may descend from common ancestors and that an evolutionary tree represents branching lineages; distinguish a common ancestor from a modern species supposedly transforming directly into another.
+User-friendly description: Explain how different species can share ancestors in a branching family history.
 
 ##### Explain Speciation
 
+Slug: explainSpeciation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how hereditary variation, population divergence, restricted gene flow, and reproductive isolation may give rise to new species; recognize that mechanisms of speciation differ among groups of organisms.
+Methodological description: Explain how hereditary variation, population divergence, restricted gene flow, and reproductive isolation may give rise to new species; recognize that mechanisms of speciation differ among groups of organisms.
+User-friendly description: Discover how populations can diverge and form new species.
 
 ##### Explain Mechanisms of Evolutionary Change
 
+Slug: explainMechanismsOfEvolutionaryChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish mutation, natural selection, genetic drift, and gene flow as processes that alter the inherited composition of populations; explain their distinct roles and potential combined action without reducing all evolutionary change to selection.
+Methodological description: Distinguish mutation, natural selection, genetic drift, and gene flow as processes that alter the inherited composition of populations; explain their distinct roles and potential combined action without reducing all evolutionary change to selection.
+User-friendly description: Compare mutation, natural selection, genetic drift and gene flow as causes of evolution.
 
 ### Biotechnology
+
+Slug: biotechnology
+Action: create
+Status: pending
 
 Groups: 0 · Skills: 5
 
 [Not implemented](#)
 
-Use of properties of organisms, cells, enzymes, and hereditary information to obtain products and intentionally change traits. Includes selective breeding, genetic modification, and analysis of potential ecological consequences of interventions; natural ecosystem interactions belong to Ecology, while engineering applications of biological principles belong to the separate subject Engineering.
+Methodological description: Use of properties of organisms, cells, enzymes, and hereditary information to obtain products and intentionally change traits. Includes selective breeding, genetic modification, and analysis of potential ecological consequences of interventions; natural ecosystem interactions belong to Ecology, while engineering applications of biological principles belong to the separate subject Engineering.
+User-friendly description: Explore how people use organisms, cells and biological processes to make useful products.
 
 #### Recognize Human Uses of Microorganisms
 
+Slug: recognizeHumanUsesOfMicroorganisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how yeasts or bacteria are used to produce food or other products.
+Methodological description: Identify how yeasts or bacteria are used to produce food or other products.
+User-friendly description: Recognize ways bacteria and yeasts are used to produce foods and other materials.
 
 #### Explain the Principle of Selective Breeding
 
+Slug: explainThePrincipleOfSelectiveBreeding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define selective breeding as purposeful selection and reproduction of organisms with desired inherited traits across generations to create or improve crop varieties and animal breeds. Understand that a breeder selects carriers of hereditary variants rather than arbitrarily 'ordering' a characteristic in each offspring.
+Methodological description: Define selective breeding as purposeful selection and reproduction of organisms with desired inherited traits across generations to create or improve crop varieties and animal breeds. Understand that a breeder selects carriers of hereditary variants rather than arbitrarily 'ordering' a characteristic in each offspring.
+User-friendly description: Understand how selective breeding develops inherited traits over generations.
 
 #### Explain the Principle of Genetic Modification
 
+Slug: explainThePrincipleOfGeneticModification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define genetic modification as the intentional alteration of genetic material by biotechnological methods. Distinguish changing DNA from simply selecting organisms by traits without assuming that every genetic change automatically brings benefits or harm.
+Methodological description: Define genetic modification as the intentional alteration of genetic material by biotechnological methods. Distinguish changing DNA from simply selecting organisms by traits without assuming that every genetic change automatically brings benefits or harm.
+User-friendly description: Explain how genetic modification changes DNA, unlike choosing parents for breeding.
 
 #### Explain the Purpose of a Simple Biotechnological Procedure
 
+Slug: explainThePurposeOfASimpleBiotechnologicalProcedure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate organisms, cells, or enzymes used in a procedure to a specific product or expected transformation.
+Methodological description: Relate organisms, cells, or enzymes used in a procedure to a specific product or expected transformation.
+User-friendly description: Connect the organisms or enzymes in a procedure with its intended product.
 
 #### Evaluate Ecological Risks of Biotechnology Use
 
+Slug: evaluateEcologicalRisksOfBiotechnologyUse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider the likelihood of undesirable effects on nontarget species, ecosystem relationships, or the spread of organisms, distinguishing risk from demonstrated harm.
+Methodological description: Consider the likelihood of undesirable effects on nontarget species, ecosystem relationships, or the spread of organisms, distinguishing risk from demonstrated harm.
+User-friendly description: Explore possible ecological risks of biotechnology without assuming every risk causes harm.
 
