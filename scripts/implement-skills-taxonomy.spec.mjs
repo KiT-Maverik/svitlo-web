@@ -168,15 +168,34 @@ test('implemented source links must resolve to the canonical entity file',()=>wi
   assert.equal(source(f,'music/skills/hearRhythm.data.ts'),before);
 }));
 
-test('delete actions are blocked even if the legacy authorization switch is present',()=>withFixture(f=>{
+test('Action: delete is manual-only; Code/Status are unchanged and independent Domains can update',()=>withFixture(f=>{
   assert.equal(f.run('--apply').status,0);
-  const before=source(f,'music/music.data.ts');
+  const music=source(f,'music/music.data.ts');
+  const musicSkill=source(f,'music/skills/hearRhythm.data.ts');
+  const geometrySkill='geometry/angles/skills/compareAngles.data.ts';
+  const id=uuid(source(f,geometrySkill));
   f.edit(s=>s.replace('Slug: music\nAction: create\nStatus: implemented',
-    'Slug: music\nAction: delete\nStatus: implemented'));
+      'Slug: music\nAction: delete\nStatus: implemented')
+    .replace('Slug: compareAngles\nAction: create\nStatus: implemented',
+      'Slug: compareAngles\nAction: update\nStatus: implemented')
+    .replace('Definition of Compare Angles.', 'Updated concept of Compare Angles.'));
+  const r=f.run('--apply');
+  assert.notEqual(r.status,0);
+  assert.match(r.stderr,/Manual deletion required/);
+  assert.equal(source(f,'music/music.data.ts'),music);
+  assert.equal(source(f,'music/skills/hearRhythm.data.ts'),musicSkill);
+  assert.match(fs.readFileSync(f.md,'utf8'),/Slug: music\nAction: delete\nStatus: implemented/);
+  assert.equal(uuid(source(f,geometrySkill)),id);
+  assert.match(source(f,geometrySkill),/Updated concept of Compare Angles/);
+}));
+
+test('unsupported --allow-delete is rejected without writing or changing status',()=>withFixture(f=>{
+  const originalMarkdown=fs.readFileSync(f.md,'utf8');
   const r=f.run('--apply','--allow-delete');
   assert.notEqual(r.status,0);
-  assert.match(r.stderr,/Deletion disabled/);
-  assert.equal(source(f,'music/music.data.ts'),before);
+  assert.match(r.stderr,/Unknown argument: --allow-delete/);
+  assert.equal(fs.existsSync(data(f)),false);
+  assert.equal(fs.readFileSync(f.md,'utf8'),originalMarkdown);
 }));
 
 test('invalid update never allocates an identity, and another Domain can succeed',()=>withFixture(f=>{

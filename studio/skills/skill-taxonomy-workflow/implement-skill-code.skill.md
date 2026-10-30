@@ -40,7 +40,7 @@ The existing description importer cannot parse the new `Slug:`, `Action:`, and `
 
 ### Markdown → Code generator requirements
 
-The [Markdown → Code generator](../../../scripts/implement-skills-taxonomy.mjs) performs dry-run by default, requires explicit apply, preserves existing entity UUIDs on every update, and validates the planned direct-composition graph before writing. `Action: delete` is currently blocked even with `--allow-delete` until incoming-reference auditing and safe deletion are implemented. Never attempt a destructive workaround. Mark `Status: implemented` only after validation of the full Code graph and localization. Leave failed entities pending and report individual outcomes; allow independent successful changes only when dependencies remain valid.
+The [Markdown → Code generator](../../../scripts/implement-skills-taxonomy.mjs) performs dry-run by default, requires explicit apply, preserves existing entity UUIDs on every update, and validates the planned direct-composition graph before writing. `Action: delete` is a manual-only editorial marker. The generator has no deletion option or implementation: it emits `Manual deletion required` without altering Code or Status for that Domain. Never attempt a destructive workaround; carry out any approved deletion manually after checking references. Mark `Status: implemented` only after validation of the full Code graph and localization. Leave failed entities pending and report individual outcomes; allow independent successful changes only when dependencies remain valid.
 
 ### Approved editorial slugs and Code paths
 
