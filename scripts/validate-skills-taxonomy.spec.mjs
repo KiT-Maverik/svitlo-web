@@ -3,6 +3,8 @@ import { mkdtempSync, mkdirSync, readFileSync, writeFileSync, rmSync, unlinkSync
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import { afterEach, test } from 'node:test';
+import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { validateTaxonomy } from './validate-skills-taxonomy.mjs';
 
 const fixtures = [];
@@ -71,3 +73,21 @@ test('orphan Group is detected', () => { const f = makeFixture(); f.replace('foo
 test('cyclic module import is detected', () => { const f = makeFixture(); f.write('foo/bar/skills/index.data.ts', "export { baz_Skill_Data } from './baz.data';\nimport './index.data';\n"); expectError(f, 'CYCLIC_REFERENCE'); });
 test('explicit source selection never falls back', () => { const f = makeFixture('legacy'); const result = validateTaxonomy({ repo: f.repo, packageRoot: 'book', source: 'new' }); assert.ok(result.diagnostics.some(x => x.category === 'MISSING_ROOT')); });
 test('argument validation refuses implicit source roots', () => { const f = makeFixture(); assert.throws(() => validateTaxonomy({ repo: f.repo, packageRoot: 'book' })); });
+
+test('duplicate sibling slug keys are diagnosed', () => {
+  const f = makeFixture();
+  f.replace('foo/bar/skills/index.ids.ts', `baz: '${uuids.c}'`, `baz: '${uuids.c}', baz: '${uuids.c}'`);
+  expectError(f, 'DUPLICATE_SCOPED_ID');
+});
+test('CLI emits JSON and exit codes without modifying source', () => {
+  const f = makeFixture();
+  const script = fileURLToPath(new URL('./validate-skills-taxonomy.mjs', import.meta.url));
+  const args = ['--repo', f.repo, '--package', 'book', '--source', 'new', '--format', 'json'];
+  const ok = spawnSync(process.execPath, [script, ...args], { encoding: 'utf8' });
+  assert.equal(ok.status, 0, ok.stderr);
+  assert.deepEqual(JSON.parse(ok.stdout).counts, { domains: 2, groups: 1, skills: 2 });
+  f.replace('foo/foo.ids.ts', uuids.a, 'broken');
+  const bad = spawnSync(process.execPath, [script, ...args], { encoding: 'utf8' });
+  assert.equal(bad.status, 1, bad.stderr);
+  assert.ok(JSON.parse(bad.stdout).diagnostics.some(x => x.category === 'INVALID_UUID'));
+});
