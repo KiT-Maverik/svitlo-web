@@ -2055,151 +2055,266 @@ User-friendly description: Learn what deposit protection covers and where its li
 
 ### Макроекономіка
 
+Slug: macroeconomics
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Сукупний випуск, зайнятість, інфляція та економічна динаміка характеризують взаємозв’язки на рівні економіки в цілому. Показники й моделі не тотожні добробуту кожної окремої людини.
+Methodological description: Aggregate production, employment, inflation, and economic change describe economy-wide relationships; their measures and models are not the same as each individual's wellbeing.
+User-friendly description: Explore how national output, prices, employment, and growth are connected.
 
 #### Національні рахунки
+
+Slug: nationalAccounts
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Сукупна економічна діяльність вимірюється через узгоджені категорії виробництва, доходів і витрат.
+Methodological description: Aggregate economic activity is measured using consistent categories of production, income, and expenditure.
+User-friendly description: Learn how economists measure overall economic activity.
 
 ##### Валовий внутрішній продукт
 
+Slug: grossDomesticProduct
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати вартість кінцевого виробництва в межах економіки за визначений період та межі цього показника.
+Methodological description: Interpret the value of final production within an economy over a stated period and recognize the limits of this indicator.
+User-friendly description: Understand what GDP counts and what it leaves out.
 
 ##### Номінальний і реальний випуск
 
+Slug: nominalAndRealOutput
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати зміну цін від зміни фізичного обсягу сукупного виробництва у системі національних рахунків з урахуванням бази та індексів; це конкретне макроекономічне застосування реальних величин.
+Methodological description: Separate changes in prices from changes in aggregate physical output using appropriate bases and indexes in national accounts; this is a specific macroeconomic application of real quantities.
+User-friendly description: Tell whether production increased or only prices rose.
 
 ##### Компоненти сукупних витрат
 
+Slug: aggregateExpenditureComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти споживання, інвестиції, державні закупівлі та чистий експорт у макроекономічних тотожностях.
+Methodological description: Distinguish consumption, investment, government purchases, and net exports in macroeconomic accounting identities.
+User-friendly description: Identify the main categories of spending in an economy.
 
 ##### ВВП на одну особу та добробут
 
+Slug: gdpPerCapitaAndWelfare
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, що середній випуск не відображає розподіл, неоплачувану працю, довкілля або всі складові якості життя.
+Methodological description: Explain why average output does not measure distribution, unpaid work, environmental effects, or every aspect of quality of life.
+User-friendly description: Recognize why GDP per person is not a complete measure of wellbeing.
 
 #### Коливання та сукупний попит
+
+Slug: businessFluctuationsAndAggregateDemand
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Економічні шоки змінюють виробництво й зайнятість через витрати, очікування та реакції виробників.
+Methodological description: Economic shocks affect output and employment through spending, expectations, and firms' responses.
+User-friendly description: Explore why economies experience periods of expansion and slowdown.
 
 ##### Економічний цикл
 
+Slug: businessCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати фази зростання і спаду та відрізняти короткострокові коливання від довгострокової тенденції.
+Methodological description: Identify phases of expansion and contraction and distinguish short-term fluctuations from long-run trends.
+User-friendly description: Recognize the different phases of the business cycle.
 
 ##### Сукупний попит
 
+Slug: aggregateDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зв’язок загальних запланованих витрат з рівнем цін і станом економіки в заданій моделі.
+Methodological description: Analyze the relationship between total planned spending, the overall price level, and economic conditions within a specified model.
+User-friendly description: Explore what shapes overall demand for goods and services.
 
 ##### Ефект мультиплікатора
 
+Slug: multiplierEffect
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як початковий приріст автономних витрат може породжувати подальші зміни доходів та споживання.
+Methodological description: Evaluate how an initial rise in autonomous spending may generate additional changes in income and consumption.
+User-friendly description: Understand why one spending increase may trigger further increases.
 
 ##### Макроекономічні шоки
 
+Slug: macroeconomicShocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти порушення попиту, пропозиції та фінансові збої за їхнім можливим впливом на випуск і ціни.
+Methodological description: Distinguish demand, supply, and financial disturbances by their possible effects on output and prices.
+User-friendly description: Compare how different kinds of shocks affect the economy.
 
 ##### Сукупна пропозиція
 
+Slug: aggregateSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати залежність загального обсягу виробництва від рівня цін, виробничих витрат, ресурсних обмежень і технологій, розрізняючи короткострокові та довгострокові умови.
+Methodological description: Analyze total production in relation to the price level, input costs, resource limits, and technology, distinguishing short- and long-run conditions.
+User-friendly description: Discover what limits the total amount an economy can produce.
 
 #### Ціни та зайнятість
+
+Slug: pricesAndEmployment
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Зміни загального рівня цін і використання робочої сили мають різні причини та наслідки.
+Methodological description: Changes in the general price level and labor utilization have different causes and effects.
+User-friendly description: Explore how inflation and unemployment are measured and explained.
 
 ##### Інфляція та дефляція
 
+Slug: inflationAndDeflation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти стале підвищення і зниження загального рівня цін від зміни ціни одного товару.
+Methodological description: Distinguish a sustained increase or decrease in the general price level from a price change for one product.
+User-friendly description: Tell the difference between inflation and a price rise for one item.
 
 ##### Індекс споживчих цін
 
+Slug: consumerPriceIndex
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати зміну вартості визначеного кошика та пояснювати обмеження індексу для конкретного домогосподарства.
+Methodological description: Interpret changes in the cost of a defined consumption basket and its limitations for a particular household.
+User-friendly description: Learn how a price index tracks changes in living costs.
 
 ##### Види безробіття
 
+Slug: typesOfUnemployment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти фрикційні, структурні та циклічні причини відсутності роботи.
+Methodological description: Distinguish frictional, structural, and cyclical reasons for being out of work.
+User-friendly description: Explore why unemployment can happen for different reasons.
 
 ##### Рівень безробіття
 
+Slug: unemploymentRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити частку безробітних у складі робочої сили відповідно до статистичних критеріїв зайнятості та активного пошуку.
+Methodological description: Interpret the share of unemployed people in the labor force according to statistical criteria for employment and active job search.
+User-friendly description: Understand who is counted when unemployment is measured.
 
 ##### Рівень участі в робочій силі
 
+Slug: laborForceParticipationRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати та інтерпретувати частку людей у визначеній віковій групі, які працюють або належать до безробітних, відрізняючи її від рівня безробіття.
+Methodological description: Calculate and interpret the proportion of a specified age group that is employed or unemployed and seeking work, distinguishing it from the unemployment rate.
+User-friendly description: Compare labor-force participation with the unemployment rate.
 
 ##### Причини та механізми інфляції
 
+Slug: causesAndMechanismsOfInflation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зростання загального рівня цін через зміни сукупного попиту, виробничих витрат, монетарних умов, очікувань і шоків з урахуванням контексту та часових лагів.
+Methodological description: Analyze rises in the overall price level through aggregate demand, production costs, monetary conditions, expectations, and shocks, accounting for context and time lags.
+User-friendly description: Explore the different reasons why prices may rise across an economy.
 
 #### Зростання та продуктивність
+
+Slug: growthAndProductivity
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Тривалий розвиток сукупного випуску залежить від технологій, капіталу, праці та якості інституцій.
+Methodological description: Long-run aggregate output depends on technology, capital, labor, and institutional quality.
+User-friendly description: Discover what helps an economy produce more over the long term.
 
 ##### Економічне зростання
 
+Slug: economicGrowth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зміну реального випуску протягом часу, відрізняючи темп зростання від його абсолютного рівня.
+Methodological description: Evaluate changes in real output over time and distinguish its growth rate from its absolute level.
+User-friendly description: Measure how quickly inflation-adjusted production is growing.
 
 ##### Чинники довгострокового зростання
 
+Slug: driversOfLongTermGrowth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати внесок капіталоутворення, знань, демографії й інституцій у продуктивний потенціал.
+Methodological description: Explain how capital accumulation, knowledge, demographics, and institutions contribute to productive capacity.
+User-friendly description: Explore how skills, technology, investment, and institutions support growth.
 
 ##### Потенційний випуск
 
+Slug: potentialOutput
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти сталий виробничий потенціал від фактичного випуску під час циклічних відхилень.
+Methodological description: Distinguish sustainable production capacity from actual output during cyclical deviations.
+User-friendly description: Understand why an economy may produce below or above its sustainable capacity.
 
 ### Держава та економічна політика
 
