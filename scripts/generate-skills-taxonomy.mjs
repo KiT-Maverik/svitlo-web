@@ -2,7 +2,6 @@
 /**
  * Generate a localized-name, read-only Markdown view from typed taxonomy source.
  * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math
- *   [--source-root src/data/skillsTaxonomy | --source-root Data/skills]
  *   [--locale en] [--check | --stdout]
  *
  * Deliberately parses TypeScript source without executing textbook code.
@@ -15,6 +14,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import ts from 'typescript';
+import { checkTaxonomy } from './check-skills-taxonomy-structure.mjs';
 
 function fail(message) { throw new Error(message); }
 function options(args) {
@@ -26,10 +26,10 @@ function options(args) {
       result[arg.slice(2)] = true;
       continue;
     }
-    if (!['--package', '--locale', '--source-root'].includes(arg) || !args[i + 1] || args[i + 1].startsWith('--')) {
-      fail('Usage: --package <textbook-directory> [--source-root src/data/skillsTaxonomy|Data/skills] [--locale <language-code>] [--check | --stdout]');
+    if (!['--package', '--locale'].includes(arg) || !args[i + 1] || args[i + 1].startsWith('--')) {
+      fail('Usage: --package <textbook-directory> [--locale <language-code>] [--check | --stdout]');
     }
-    const key = arg === '--source-root' ? 'sourceRoot' : arg.slice(2);
+    const key = arg.slice(2);
     if (result[key] !== undefined && (key !== 'locale' || result.locale !== 'en')) fail('Duplicate argument ' + arg);
     result[key] = args[++i];
   }
@@ -40,24 +40,13 @@ const repositoryRoot = path.resolve(import.meta.dirname, '..');
 const opts = options(process.argv.slice(2));
 const packageRoot = path.resolve(repositoryRoot, opts.package);
 if (!packageRoot.startsWith(path.join(repositoryRoot, 'learningApps') + path.sep)) fail('Package must be within learningApps/');
-// Legacy Mathematics invocations retain their original default. New packages must
-// explicitly opt in to Data/skills, and competing populated roots never auto-select.
-const SOURCE_ROOTS = ['src/data/skillsTaxonomy', 'Data/skills'];
-if (opts.sourceRoot && !SOURCE_ROOTS.includes(opts.sourceRoot)) {
-  fail('Unsupported --source-root "' + opts.sourceRoot + '". Choose ' + SOURCE_ROOTS.join(' or '));
-}
-function isPopulated(root) {
-  return fs.existsSync(root) && fs.statSync(root).isDirectory() &&
-    fs.readdirSync(root, { withFileTypes: true }).some(entry =>
-      entry.isDirectory() && fs.existsSync(path.join(root, entry.name, entry.name + '.data.ts')));
-}
-if (!opts.sourceRoot && SOURCE_ROOTS.every(source => isPopulated(path.join(packageRoot, source)))) {
-  fail('Both taxonomy source roots are populated; select one with --source-root');
-}
-const taxonomyRoot = path.join(packageRoot, opts.sourceRoot ?? SOURCE_ROOTS[0]);
+const taxonomyRoot = path.join(packageRoot, 'data/skills');
 if (!fs.existsSync(taxonomyRoot) || !fs.statSync(taxonomyRoot).isDirectory()) {
   fail('No code taxonomy: ' + taxonomyRoot);
 }
+// The shared FastGate checker is the source of truth for entity/UUID/child-link integrity.
+// Reject an invalid graph rather than generating a plausible but misleading Markdown view.
+const graphCounts = checkTaxonomy(taxonomyRoot);
 
 function parse(file) {
   return ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
@@ -166,39 +155,12 @@ function subdirs(dir) {
 }
 function fileNames(dir) {
   if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir).filter(x => x.endsWith('.data.ts') && x !== 'index.data.ts').sort();
+  return fs.readdirSync(dir).filter(x => x.endsWith('.data.ts')).sort();
 }
-function verifyIndex(indexFile, expected) {
-  if (!fs.existsSync(indexFile)) fail('Missing index: ' + indexFile);
-  const maps = [];
-  for (const statement of parse(indexFile).statements) {
-    if (!ts.isVariableStatement(statement)) continue;
-    for (const declaration of statement.declarationList.declarations) {
-      if (!declaration.initializer || !declaration.name.getText().endsWith('_Ids')) continue;
-      const value = unwrap(declaration.initializer);
-      if (ts.isObjectLiteralExpression(value)) maps.push(value);
-    }
-  }
-  if (maps.length !== 1) fail('Expected one direct-child IDs map: ' + indexFile);
-  const actual = [];
-  for (const item of maps[0].properties) {
-    if (!ts.isPropertyAssignment(item)) fail('Unsupported dynamic child map entry: ' + indexFile);
-    const child = key(item.name);
-    if (ts.isPropertyAccessExpression(item.initializer) && item.initializer.name.text !== child) {
-      fail('Child ID key does not match child field: ' + indexFile + ':' + child);
-    }
-    actual.push(child);
-  }
-  const expectedSorted = [...expected].sort();
-  if (JSON.stringify(actual.sort()) !== JSON.stringify(expectedSorted)) {
-    fail('Source folders and child ID-map entries differ in ' + indexFile +
-      '\nFolders: ' + expectedSorted.join(', ') + '\nMap: ' + actual.join(', '));
-  }
-}
+
 function readSkills(folder) {
   const d = path.join(folder, 'skills');
   const names = fileNames(d);
-  if (names.length) verifyIndex(path.join(d, 'index.ids.ts'), names.map(n => n.slice(0, -'.data.ts'.length)));
   return names.map(name => readEntity(path.join(d, name), 'Skill'));
 }
 function markdownLine(entity, level, output, details = '') {
@@ -220,12 +182,6 @@ for (const folder of subdirs(taxonomyRoot)) {
   const domain = readEntity(domainFile, 'SkillDomain');
   const groups = subdirs(domainFolder);
   const directSkills = readSkills(domainFolder);
-  // For grouped Domains the direct children are Groups; for ungrouped Domains
-  // the direct children are Skills. Both use the Domain's ID-only index.
-  if (groups.length || directSkills.length) {
-    verifyIndex(path.join(domainFolder, 'index.ids.ts'),
-      groups.length ? groups : directSkills.map(skill => path.basename(skill.file, '.data.ts')));
-  }
   if ((groups.length > 0) === (directSkills.length > 0)) fail('Domain must have only Groups or direct Skills: ' + domainFile);
   const content = groups.map(group => {
     const groupFolder = path.join(domainFolder, group);
@@ -238,10 +194,12 @@ for (const folder of subdirs(taxonomyRoot)) {
   domains.push({ ...domain, groups: content, skills: directSkills });
 }
 if (!domains.length) fail('No domains found');
+if (domains.length !== graphCounts.domains) fail('Domain count disagrees with validated source graph');
 const out = path.join(packageRoot, 'docs/generated/skills', 'taxonomy.' + opts.locale + '.md');
 const groupCount = domains.reduce((sum, domain) => sum + domain.groups.length, 0);
 const skillCount = domains.reduce((sum, domain) =>
   sum + domain.skills.length + domain.groups.reduce((n, group) => n + group.skills.length, 0), 0);
+if (groupCount !== graphCounts.groups || skillCount !== graphCounts.skills) fail('Entity counts disagree with validated source graph');
 let markdown = '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' + opts.locale + ')\n\n' +
   '> Names and available user-friendly descriptions use the requested locale. Methodological descriptions remain canonical English, not translated. This is a generated Code view, not the editorial staging template.\n\n' +
   '## SUMMARY\n\n' +
