@@ -988,113 +988,198 @@ User-friendly description: See why a profitable business can still run short of 
 
 ### Праця та зайнятість
 
+Slug: laborAndEmployment
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Ринок праці пов’язує робочий час, кваліфікацію, заробітну плату, вакансії та правила найму. Особливу увагу приділено відмінності індивідуальних трудових рішень від загального рівня безробіття.
+Methodological description: Labor markets connect working time, qualifications, pay, vacancies, and hiring rules. This domain distinguishes individual work decisions from aggregate unemployment.
+User-friendly description: Explore how workers and employers make decisions about jobs, skills, and pay.
 
 #### Пропозиція та попит на працю
+
+Slug: laborSupplyAndDemand
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Працівники й роботодавці приймають взаємопов’язані рішення про час, кваліфікацію, оплату та кількість робочих місць.
+Methodological description: Workers and employers make interdependent decisions about working time, skills, wages, and numbers of jobs.
+User-friendly description: Understand how workers and businesses shape the market for labor.
 
 ##### Вибір між працею та дозвіллям
 
+Slug: workLeisureTradeoff
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати компроміс між оплачуваною роботою, вільним часом та неоплачуваними обов’язками за заданих умов.
+Methodological description: Analyze choices between paid work, free time, and unpaid duties under stated constraints.
+User-friendly description: Explore the trade-offs between earning income, rest, and other responsibilities.
 
 ##### Попит на працю
 
+Slug: laborDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати найм працівників з їхнім очікуваним внеском у випуск, цінами продукції та витратами роботодавця.
+Methodological description: Relate hiring decisions to workers' expected contributions to output, product prices, and employers' costs.
+User-friendly description: Explain why firms hire workers and how much labor they need.
 
 ##### Формування заробітної плати
 
+Slug: wageDetermination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати вплив продуктивності, переговорної сили, інституцій та ринкових умов на оплату праці.
+Methodological description: Identify how productivity, bargaining power, institutions, and market conditions affect pay.
+User-friendly description: Discover why wages differ between jobs and workplaces.
 
 ##### Людський капітал
 
+Slug: humanCapital
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати економічні наслідки освіти, досвіду, навичок і здоров’я для продуктивності та доступних можливостей.
+Methodological description: Evaluate the economic effects of education, experience, skills, and health on productivity and opportunities.
+User-friendly description: Explore how education and skills affect earning opportunities.
 
 ##### Пропозиція праці
 
+Slug: laborSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як оплата праці, доступність альтернатив, умови роботи та уподобання впливають на бажану й доступну кількість робочого часу або участь людей у ринку праці.
+Methodological description: Analyze how wages, alternative opportunities, working conditions, and preferences affect desired and feasible working hours and participation in employment.
+User-friendly description: Understand why people choose different amounts and kinds of paid work.
 
 ##### Автоматизація та зайнятість
 
+Slug: automationAndEmployment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати заміщення й доповнення трудових завдань технологіями та можливий вплив на попит на навички.
+Methodological description: Evaluate how technology substitutes for or complements work tasks and how this may affect demand for skills.
+User-friendly description: Explore how automation can replace some tasks and create demand for others.
 
 #### Працевлаштування та мобільність
+
+Slug: employmentAndMobility
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Пошук роботи й зміна професій пов’язані з інформаційними, просторовими та кваліфікаційними обмеженнями.
+Methodological description: Job searches and occupational changes are constrained by information, location, and qualifications.
+User-friendly description: Discover what helps or prevents people from finding or changing jobs.
 
 ##### Пошук роботи та відповідність вакансії
 
+Slug: jobSearchAndMatching
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як доступна інформація, вимоги й витрати пошуку впливають на працевлаштування.
+Methodological description: Analyze how available information, job requirements, and search costs influence employment matches.
+User-friendly description: Learn why finding a suitable vacancy can take time and information.
 
 ##### Професійна мобільність
 
+Slug: occupationalMobility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вигоди, витрати й кваліфікаційні бар’єри переходу між професіями, кваліфікаційними рівнями чи галузями.
+Methodological description: Evaluate benefits, costs, and qualification barriers when changing occupations, skill levels, or industries.
+User-friendly description: Explore the costs and opportunities of changing careers.
 
 ##### Географічна трудова мобільність
 
+Slug: geographicLaborMobility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати рішення про роботу в іншому регіоні чи країні з урахуванням витрат переміщення, заробітку, житлових умов та інституційних обмежень.
+Methodological description: Analyze decisions to work in another region or country, considering relocation costs, pay, housing, and institutional limits.
+User-friendly description: Compare the advantages and challenges of moving for work.
 
 ##### Дискримінація на ринку праці
 
+Slug: laborMarketDiscrimination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти ситуації, де оплата чи доступ до зайнятості залежать від не пов’язаних із продуктивністю характеристик.
+Methodological description: Identify situations where compensation or access to employment depends on characteristics unrelated to productivity.
+User-friendly description: Recognize unfair employment differences not explained by job performance.
 
 #### Трудові інституції
+
+Slug: laborInstitutions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Реальні трудові відносини регулюються контрактами, організованими переговорами та законодавчими гарантіями.
+Methodological description: Employment relationships operate under contracts, collective bargaining, and legal protections.
+User-friendly description: Explore how contracts and labor rules shape working conditions.
 
 ##### Трудовий договір
 
+Slug: employmentContracts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити економічні умови найму, оплати, робочого часу та припинення відносин у межах застосовного права.
+Methodological description: Interpret the economic terms of hiring, wages, working hours, and termination within applicable law.
+User-friendly description: Understand the key economic terms of an employment contract.
 
 ##### Колективні переговори
 
+Slug: collectiveBargaining
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як профспілки та організації роботодавців можуть впливати на умови праці й розподіл переговорної сили.
+Methodological description: Explain how trade unions and employers' organizations can affect working conditions and bargaining power.
+User-friendly description: Discover how groups of workers and employers negotiate employment terms.
 
 ##### Мінімальна оплата праці
 
+Slug: minimumWage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати можливі наслідки законодавчого порогу оплати з урахуванням конкретної структури ринку.
+Methodological description: Analyze potential consequences of a statutory wage floor in light of the relevant labor-market structure.
+User-friendly description: Explore how a minimum wage may affect workers and businesses.
 
 ### Маркетинг і торгівля
 
