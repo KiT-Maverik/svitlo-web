@@ -1827,433 +1827,768 @@ User-friendly description: Plan routes with weather, communication and personal 
 
 ### Emergencies and Civil Protection
 
+Slug: emergenciesAndCivilProtection
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 16
 
 [Not implemented](#)
 
-Collective hazards can overwhelm normal routines and require verified alerts, protective shelter, evacuation, and coordination with responders. Local regulations and emergency numbers belong to contextual lessons, not permanent country-specific Skill identities.
+Methodological description: Collective hazards can overwhelm normal routines and require verified alerts, protective shelter, evacuation, and coordination with responders. Local regulations and emergency numbers belong to contextual lessons, not permanent country-specific Skill identities.
+User-friendly description: Learn to prepare for emergencies, follow reliable warnings and protect others safely.
 
 #### Preparedness and Alerts
+
+Slug: preparednessAndAlerts
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Effective readiness considers local hazards, people requiring assistance, communication failures, and the difference between a warning and an instruction.
+Methodological description: Effective readiness considers local hazards, people requiring assistance, communication failures, and the difference between a warning and an instruction.
+User-friendly description: Discover how official alerts and advance planning support emergency readiness.
 
 ##### Understand emergency alerts
 
+Slug: understandEmergencyAlerts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish authoritative warnings and protective instructions from rumours, outdated messages, or unverified reposts.
+Methodological description: Distinguish authoritative warnings and protective instructions from rumours, outdated messages, or unverified reposts.
+User-friendly description: Distinguish official protective warnings from rumors and outdated messages.
 
 ##### Develop an emergency plan
 
+Slug: developAnEmergencyPlan
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify meeting points, accessible exits, contacts, responsibilities, and alternatives if communication or transport fails.
+Methodological description: Identify meeting points, accessible exits, contacts, responsibilities, and alternatives if communication or transport fails.
+User-friendly description: Plan safe exits, contacts and alternatives for likely disruptions.
 
 ##### Prepare essential emergency supplies
 
+Slug: prepareEssentialEmergencySupplies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match water, medicine, documents, lighting, and other essentials to plausible disruption and household needs.
+Methodological description: Match water, medicine, documents, lighting, and other essentials to plausible disruption and household needs.
+User-friendly description: Choose essential supplies suited to your household's emergency needs.
 
 ##### Contact emergency services
 
+Slug: contactEmergencyServices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Communicate location, type of emergency, persons affected and critical changes clearly, including during medical first aid, while following dispatcher instructions and ensuring the caller's own safety.
+Methodological description: Communicate location, type of emergency, persons affected and critical changes clearly, including during medical first aid, while following dispatcher instructions and ensuring the caller's own safety.
+User-friendly description: Explain an emergency clearly to dispatchers while following their instructions.
 
 #### Evacuation and Shelter
+
+Slug: evacuationAndShelter
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-The correct protective action may be evacuation or remaining under cover, depending on the hazard and official guidance.
+Methodological description: The correct protective action may be evacuation or remaining under cover, depending on the hazard and official guidance.
+User-friendly description: Explore when staying in shelter is safer than evacuating.
 
 ##### Choose evacuation or shelter
 
+Slug: chooseEvacuationOrShelter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret hazard-specific directions and avoid assuming evacuation is always safer than remaining in place.
+Methodological description: Interpret hazard-specific directions and avoid assuming evacuation is always safer than remaining in place.
+User-friendly description: Follow hazard-specific directions about evacuation or staying inside.
 
 ##### Evacuate safely
 
+Slug: evacuateSafely
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use an available route, account for smoke or structural danger, and assist others without entering a hazardous area.
+Methodological description: Use an available route, account for smoke or structural danger, and assist others without entering a hazardous area.
+User-friendly description: Recognize safer evacuation routes without entering hazardous areas.
 
 ##### Shelter during immediate danger
 
+Slug: shelterDuringImmediateDanger
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize suitable protected locations and conditions under which a shelter becomes unsafe.
+Methodological description: Recognize suitable protected locations and conditions under which a shelter becomes unsafe.
+User-friendly description: Choose appropriate shelter during an immediate threat.
 
 #### Natural and Technological Disasters
+
+Slug: naturalAndTechnologicalDisasters
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Floods, earthquakes, chemical releases, and radiation incidents create different exposure pathways and require different protective behaviour.
+Methodological description: Floods, earthquakes, chemical releases, and radiation incidents create different exposure pathways and require different protective behaviour.
+User-friendly description: Learn why floods, earthquakes and contamination demand different responses.
 
 ##### Flood safety
 
+Slug: floodSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Avoid floodwater and unstable crossings, recognize sudden changes in water levels, and follow verified evacuation guidance.
+Methodological description: Avoid floodwater and unstable crossings, recognize sudden changes in water levels, and follow verified evacuation guidance.
+User-friendly description: Avoid floodwater and follow reliable instructions about dangerous rising water.
 
 ##### Respond safely to an earthquake
 
+Slug: respondSafelyToAnEarthquake
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize immediate hazards from shaking and falling objects, use appropriate protective actions and consider aftershocks and structural damage before moving or re-entering unsafe spaces.
+Methodological description: Recognize immediate hazards from shaking and falling objects, use appropriate protective actions and consider aftershocks and structural damage before moving or re-entering unsafe spaces.
+User-friendly description: Protect yourself during earthquake shaking and account for damaged structures afterward.
 
 ##### Chemical incident protection
 
+Slug: chemicalIncidentProtection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow authoritative shelter or evacuation directions and avoid direct exposure or self-directed decontamination beyond safe guidance.
+Methodological description: Follow authoritative shelter or evacuation directions and avoid direct exposure or self-directed decontamination beyond safe guidance.
+User-friendly description: Follow verified protective instructions during a chemical release.
 
 ##### Radiological emergency protection
 
+Slug: radiologicalEmergencyProtection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish external radiation exposure and contamination, following official instructions on shelter, movement, and decontamination.
+Methodological description: Distinguish external radiation exposure and contamination, following official instructions on shelter, movement, and decontamination.
+User-friendly description: Recognize why radiological emergencies require guidance about exposure and contamination.
 
 #### Conflict-Related Dangers
+
+Slug: conflictRelatedDangers
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Armed conflict can produce immediate threats and leave dangerous remnants; civil protection centres on avoidance, shelter, and reporting rather than handling weapons.
+Methodological description: Armed conflict can produce immediate threats and leave dangerous remnants; civil protection centres on avoidance, shelter, and reporting rather than handling weapons.
+User-friendly description: Explore ways to protect civilians from conflict-related threats.
 
 ##### Respond to attack warnings
 
+Slug: respondToAttackWarnings
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use authoritative warnings and preidentified protective locations, accounting for obstacles and people needing assistance.
+Methodological description: Use authoritative warnings and preidentified protective locations, accounting for obstacles and people needing assistance.
+User-friendly description: Use official attack warnings to reach a preidentified safer place.
 
 ##### Respond to an immediate attack
 
+Slug: respondToAnImmediateAttack
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the need for immediate protection if an explosion, gunfire or other attack occurs without warning; seek the safest available cover or shelter and follow verified local civil-protection guidance when feasible.
+Methodological description: Recognize the need for immediate protection if an explosion, gunfire or other attack occurs without warning; seek the safest available cover or shelter and follow verified local civil-protection guidance when feasible.
+User-friendly description: Find immediate cover or shelter when an attack begins without warning.
 
 ##### Recognize explosive ordnance risk
 
+Slug: recognizeExplosiveOrdnanceRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Treat mines, unexploded devices, fragments, and abandoned suspicious objects as potentially lethal even without obvious warning signs.
+Methodological description: Treat mines, unexploded devices, fragments, and abandoned suspicious objects as potentially lethal even without obvious warning signs.
+User-friendly description: Recognize that unknown ordnance and abandoned devices can be lethal.
 
 ##### Respond to a suspected explosive object
 
+Slug: respondToASuspectedExplosiveObject
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Avoid approaching, touching, or moving it; withdraw safely when possible and report its location through authorized services.
+Methodological description: Avoid approaching, touching, or moving it; withdraw safely when possible and report its location through authorized services.
+User-friendly description: Keep away from suspicious explosive objects and report them safely.
 
 ##### Recognize hazards in damaged buildings
 
+Slug: recognizeHazardsInDamagedBuildings
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Avoid compromised structures, debris, unstable utilities, and unauthorized entry until qualified personnel assess the site.
+Methodological description: Avoid compromised structures, debris, unstable utilities, and unauthorized entry until qualified personnel assess the site.
+User-friendly description: Avoid unstable buildings and dangerous infrastructure after damage.
 
 ### First Aid and Immediate Response
+
+Slug: firstAidAndImmediateResponse
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 25
 
 [Not implemented](#)
 
-Immediate assistance aims to recognize danger, activate professional help, and provide appropriate basic interventions within training and scene safety. Clinical treatment and invasive procedures are not implied by inclusion in the taxonomy.
+Methodological description: Immediate assistance aims to recognize danger, activate professional help, and provide appropriate basic interventions within training and scene safety. Clinical treatment and invasive procedures are not implied by inclusion in the taxonomy.
+User-friendly description: Learn to recognize urgent danger, call for help and give appropriate basic assistance.
 
 #### Initial Assessment and Help
+
+Slug: initialAssessmentAndHelp
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Initial response begins with rescuer safety, recognition of urgent changes in responsiveness or breathing, and continued observation. Calling for help uses the shared competency in Emergencies and Civil Protection rather than a duplicate Skill.
+Methodological description: Initial response begins with rescuer safety, recognition of urgent changes in responsiveness or breathing, and continued observation. Calling for help uses the shared competency in Emergencies and Civil Protection rather than a duplicate Skill.
+User-friendly description: Discover the first steps for assessing someone who might need emergency help.
 
 ##### Assess scene safety before helping
 
+Slug: assessSceneSafetyBeforeHelping
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify traffic, fire, electricity, violence, contamination, or unstable surroundings before approaching an affected person.
+Methodological description: Identify traffic, fire, electricity, violence, contamination, or unstable surroundings before approaching an affected person.
+User-friendly description: Check whether approaching an injured person would put you in danger.
 
 ##### Assess responsiveness
 
+Slug: assessResponsiveness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Check whether a person responds and recognize when reduced responsiveness requires immediate escalation.
+Methodological description: Check whether a person responds and recognize when reduced responsiveness requires immediate escalation.
+User-friendly description: Recognize when someone is not responding normally.
 
 ##### Assess breathing
 
+Slug: assessBreathing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize absent or abnormal breathing as a medical emergency without delaying the call for help.
+Methodological description: Recognize absent or abnormal breathing as a medical emergency without delaying the call for help.
+User-friendly description: Recognize abnormal or absent breathing that needs emergency action.
 
 ##### Care for an unresponsive person who is breathing normally
 
+Slug: careForAnUnresponsivePersonWhoIsBreathingNormally
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Provide appropriate positioning and continuous monitoring while arranging urgent help for an unresponsive person who breathes normally; account for possible trauma and avoid unnecessary movement.
+Methodological description: Provide appropriate positioning and continuous monitoring while arranging urgent help for an unresponsive person who breathes normally; account for possible trauma and avoid unnecessary movement.
+User-friendly description: Help an unresponsive person who is breathing while monitoring and awaiting care.
 
 #### Basic Life Support
+
+Slug: basicLifeSupport
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Resuscitation competencies require validated techniques and updated guidance appropriate to the person's age, circumstances, and responder training.
+Methodological description: Resuscitation competencies require validated techniques and updated guidance appropriate to the person's age, circumstances, and responder training.
+User-friendly description: Explore recognized methods of basic life support within current training.
 
 ##### Cardiopulmonary resuscitation
 
+Slug: cardiopulmonaryResuscitation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize when CPR is indicated and apply current age-appropriate basic life support principles within the responder's training.
+Methodological description: Recognize when CPR is indicated and apply current age-appropriate basic life support principles within the responder's training.
+User-friendly description: Recognize when chest compressions and other CPR measures may be needed.
 
 ##### Automated external defibrillator use
 
+Slug: automatedExternalDefibrillatorUse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize an AED, follow its prompts, and coordinate its use with resuscitation while maintaining scene safety.
+Methodological description: Recognize an AED, follow its prompts, and coordinate its use with resuscitation while maintaining scene safety.
+User-friendly description: Understand how to follow an AED's instructions during resuscitation.
 
 ##### First aid for choking
 
+Slug: firstAidForChoking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish effective coughing from severe airway obstruction and follow appropriate age-specific first-aid guidance rather than improvising.
+Methodological description: Distinguish effective coughing from severe airway obstruction and follow appropriate age-specific first-aid guidance rather than improvising.
+User-friendly description: Recognize choking emergencies and appropriate age-specific response.
 
 #### Bleeding and Injuries
+
+Slug: bleedingAndInjuries
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-First aid aims to prevent immediate deterioration while avoiding unnecessary manipulation or delay in definitive medical care.
+Methodological description: First aid aims to prevent immediate deterioration while avoiding unnecessary manipulation or delay in definitive medical care.
+User-friendly description: Learn ways to limit injury and external bleeding while awaiting professional care.
 
 ##### Control external bleeding
 
+Slug: controlExternalBleeding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply appropriate direct pressure and escalation when bleeding is severe, while protecting the responder from body-fluid exposure.
+Methodological description: Apply appropriate direct pressure and escalation when bleeding is severe, while protecting the responder from body-fluid exposure.
+User-friendly description: Use appropriate pressure to control bleeding while protecting yourself.
 
 ##### Use a tourniquet when indicated
 
+Slug: useATourniquetWhenIndicated
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize life-threatening limb bleeding and the need for a correctly applied tourniquet according to current training and guidance.
+Methodological description: Recognize life-threatening limb bleeding and the need for a correctly applied tourniquet according to current training and guidance.
+User-friendly description: Understand when severe limb bleeding may require a trained tourniquet response.
 
 ##### Care for minor wounds
 
+Slug: careForMinorWounds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reduce contamination, control minor bleeding, and recognize wounds requiring professional evaluation.
+Methodological description: Reduce contamination, control minor bleeding, and recognize wounds requiring professional evaluation.
+User-friendly description: Clean and protect minor wounds and recognize when assessment is needed.
 
 ##### Immobilize suspected fractures
 
+Slug: immobilizeSuspectedFractures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Limit movement and provide appropriate support without attempting to straighten a suspected fracture or dislocation.
+Methodological description: Limit movement and provide appropriate support without attempting to straighten a suspected fracture or dislocation.
+User-friendly description: Support a possible broken bone without attempting to realign it.
 
 ##### Recognize head and spinal injury danger
 
+Slug: recognizeHeadAndSpinalInjuryDanger
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify concerning mechanisms or symptoms and avoid unnecessary movement while arranging urgent evaluation.
+Methodological description: Identify concerning mechanisms or symptoms and avoid unnecessary movement while arranging urgent evaluation.
+User-friendly description: Recognize why suspected head or spinal injury requires careful handling.
 
 #### Medical Emergencies
+
+Slug: medicalEmergencies
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Prompt recognition and appropriate escalation are more important than attempting diagnosis or administering unfamiliar medication.
+Methodological description: Prompt recognition and appropriate escalation are more important than attempting diagnosis or administering unfamiliar medication.
+User-friendly description: Learn warning signs that require a rapid medical emergency response.
 
 ##### Recognize signs of stroke
 
+Slug: recognizeSignsOfStroke
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use sudden neurological changes as reasons for urgent emergency response, even if symptoms appear to improve.
+Methodological description: Use sudden neurological changes as reasons for urgent emergency response, even if symptoms appear to improve.
+User-friendly description: Recognize sudden symptoms that may indicate a stroke.
 
 ##### Recognize signs of a heart attack
 
+Slug: recognizeSignsOfAHeartAttack
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify concerning chest discomfort and associated symptoms as possible medical emergencies requiring timely assistance.
+Methodological description: Identify concerning chest discomfort and associated symptoms as possible medical emergencies requiring timely assistance.
+User-friendly description: Recognize symptoms that may indicate a heart attack.
 
 ##### Respond to severe breathing difficulty
 
+Slug: respondToSevereBreathingDifficulty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize major difficulty breathing, severe respiratory distress or rapidly worsening symptoms as reasons to activate emergency assistance and support a safe position while awaiting qualified care.
+Methodological description: Recognize major difficulty breathing, severe respiratory distress or rapidly worsening symptoms as reasons to activate emergency assistance and support a safe position while awaiting qualified care.
+User-friendly description: Seek urgent assistance for severe or worsening breathing problems.
 
 ##### Respond to severe allergic reaction
 
+Slug: respondToSevereAllergicReaction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize possible anaphylaxis and the need for rapid emergency help and appropriate trained use of prescribed rescue medication.
+Methodological description: Recognize possible anaphylaxis and the need for rapid emergency help and appropriate trained use of prescribed rescue medication.
+User-friendly description: Recognize a severe allergic reaction as an emergency requiring prompt care.
 
 ##### Respond to seizures
 
+Slug: respondToSeizures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Protect the person from surrounding injury, avoid harmful restraint, and recognize conditions requiring urgent assistance.
+Methodological description: Protect the person from surrounding injury, avoid harmful restraint, and recognize conditions requiring urgent assistance.
+User-friendly description: Keep a person experiencing a seizure safe without restraining them.
 
 ##### Respond to suspected hypoglycaemia
 
+Slug: respondToSuspectedHypoglycaemia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize possible low blood glucose and distinguish safe assistance for a person who is fully alert and can swallow from the need for urgent help when consciousness or swallowing is impaired.
+Methodological description: Recognize possible low blood glucose and distinguish safe assistance for a person who is fully alert and can swallow from the need for urgent help when consciousness or swallowing is impaired.
+User-friendly description: Recognize possible low blood sugar and when swallowing makes assistance unsafe.
 
 ##### Respond to suspected poisoning
 
+Slug: respondToSuspectedPoisoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify possible toxic exposures, prevent further exposure without risking the helper and seek poison-service or emergency guidance; do not induce vomiting or improvise remedies. Opioid-specific response is addressed separately.
+Methodological description: Identify possible toxic exposures, prevent further exposure without risking the helper and seek poison-service or emergency guidance; do not induce vomiting or improvise remedies. Opioid-specific response is addressed separately.
+User-friendly description: Seek poison or emergency guidance rather than improvising poisoning remedies.
 
 ##### Respond to suspected opioid overdose
 
+Slug: respondToSuspectedOpioidOverdose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize dangerous respiratory depression or unresponsiveness following possible opioid exposure, activate emergency services and understand the role of naloxone and basic life support where available and within training.
+Methodological description: Recognize dangerous respiratory depression or unresponsiveness following possible opioid exposure, activate emergency services and understand the role of naloxone and basic life support where available and within training.
+User-friendly description: Recognize suspected opioid overdose and the need for emergency help and naloxone.
 
 #### Environmental and Acute Injuries
+
+Slug: environmentalAndAcuteInjuries
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Temperature, substances, and water exposure can rapidly worsen an individual's condition and demand hazard-specific first aid.
+Methodological description: Temperature, substances, and water exposure can rapidly worsen an individual's condition and demand hazard-specific first aid.
+User-friendly description: Discover safer responses to burns, exposure, temperature emergencies and drowning.
 
 ##### First aid for thermal burns
 
+Slug: firstAidForThermalBurns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-End thermal exposure when safe, cool a heat burn appropriately and recognize features that require urgent medical assessment; chemical injuries require different hazard-specific precautions.
+Methodological description: End thermal exposure when safe, cool a heat burn appropriately and recognize features that require urgent medical assessment; chemical injuries require different hazard-specific precautions.
+User-friendly description: Understand initial cooling and escalation for thermal burns.
 
 ##### First aid for chemical exposure
 
+Slug: firstAidForChemicalExposure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Prioritize rescuer protection, interruption of exposure when safe and appropriate professional or poison-service instructions for skin, eye or inhalation contact; avoid improvised neutralization or hazardous handling.
+Methodological description: Prioritize rescuer protection, interruption of exposure when safe and appropriate professional or poison-service instructions for skin, eye or inhalation contact; avoid improvised neutralization or hazardous handling.
+User-friendly description: Protect yourself and seek specific guidance after a harmful chemical exposure.
 
 ##### Respond to heat illness
 
+Slug: respondToHeatIllness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish concerning heat-related symptoms and prioritize safe cooling and escalation for severe illness.
+Methodological description: Distinguish concerning heat-related symptoms and prioritize safe cooling and escalation for severe illness.
+User-friendly description: Recognize serious heat illness and the need for cooling and urgent care.
 
 ##### Respond to hypothermia
 
+Slug: respondToHypothermia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Limit further cooling, handle an affected person carefully, and recognize that severe cold exposure needs urgent assessment.
+Methodological description: Limit further cooling, handle an affected person carefully, and recognize that severe cold exposure needs urgent assessment.
+User-friendly description: Reduce further heat loss and seek assessment for dangerous cold exposure.
 
 ##### Provide first aid after drowning
 
+Slug: provideFirstAidAfterDrowning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the special urgency of impaired breathing after submersion, arrange emergency response and apply appropriate current resuscitation and monitoring guidance within training; do not delay vital assistance for nonessential actions.
+Methodological description: Recognize the special urgency of impaired breathing after submersion, arrange emergency response and apply appropriate current resuscitation and monitoring guidance within training; do not delay vital assistance for nonessential actions.
+User-friendly description: Recognize urgent breathing risks after drowning and the need for emergency assistance.
 
 ### Digital and Consumer Safety
+
+Slug: digitalAndConsumerSafety
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Online environments expose people to privacy breaches, coercion, deception, and financial or personal exploitation. Computer security mechanisms belong primarily to Informatics; this domain concerns a person's protective decisions and recourse.
+Methodological description: Online environments expose people to privacy breaches, coercion, deception, and financial or personal exploitation. Computer security mechanisms belong primarily to Informatics; this domain concerns a person's protective decisions and recourse.
+User-friendly description: Discover how to protect personal information and respond to deceptive online behavior.
 
 #### Privacy and Account Protection
+
+Slug: privacyAndAccountProtection
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Limiting disclosure and protecting access reduces vulnerabilities even when platforms or other people behave unpredictably.
+Methodological description: Limiting disclosure and protecting access reduces vulnerabilities even when platforms or other people behave unpredictably.
+User-friendly description: Explore sensible choices for privacy and access to digital accounts.
 
 ##### Protect personal information online
 
+Slug: protectPersonalInformationOnline
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify sensitive details and consider audience, persistence, and consequences before sharing location, documents, or images.
+Methodological description: Identify sensitive details and consider audience, persistence, and consequences before sharing location, documents, or images.
+User-friendly description: Consider who might access sensitive information before posting it.
 
 ##### Recognize unsafe access requests
 
+Slug: recognizeUnsafeAccessRequests
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish legitimate authentication from requests for passwords, verification codes, or remote access by untrusted parties.
+Methodological description: Distinguish legitimate authentication from requests for passwords, verification codes, or remote access by untrusted parties.
+User-friendly description: Recognize suspicious requests for passwords or verification codes.
 
 ##### Secure everyday accounts
 
+Slug: secureEverydayAccounts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply unique credentials, available multifactor authentication, and safe recovery practices without requiring implementation of security systems.
+Methodological description: Apply unique credentials, available multifactor authentication, and safe recovery practices without requiring implementation of security systems.
+User-friendly description: Use strong credentials and account recovery practices to protect access.
 
 #### Fraud and Deceptive Pressure
 
+Slug: fraudAndDeceptivePressure
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Scams often combine impersonation, urgency, emotional leverage, and requests for information or money; persuasive framing is not proof of legitimacy.
+Methodological description: Scams often combine impersonation, urgency, emotional leverage, and requests for information or money; persuasive framing is not proof of legitimacy.
+User-friendly description: Learn to recognize scams based on impersonation, urgency and financial pressure.
 
 ##### Recognize phishing and impersonation
 
+Slug: recognizePhishingAndImpersonation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Inspect suspicious messages, sender claims, and links rather than trusting apparent identity or familiar branding.
+Methodological description: Inspect suspicious messages, sender claims, and links rather than trusting apparent identity or familiar branding.
+User-friendly description: Check suspicious links and messages rather than trusting their appearance.
 
 ##### Recognize financial fraud patterns
 
+Slug: recognizeFinancialFraudPatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify advance-fee demands, fake prizes, fraudulent marketplaces, and requests to transfer funds outside trusted channels.
+Methodological description: Identify advance-fee demands, fake prizes, fraudulent marketplaces, and requests to transfer funds outside trusted channels.
+User-friendly description: Recognize fake prizes, payment demands and fraudulent sales offers.
 
 ##### Resist manipulative offers
 
+Slug: resistManipulativeOffers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-When pressured by an urgent, secretive or fear-based offer, pause the requested action, decline unsafe disclosure or payment, seek independent verification through a known channel and disengage if the pressure continues.
+Methodological description: When pressured by an urgent, secretive or fear-based offer, pause the requested action, decline unsafe disclosure or payment, seek independent verification through a known channel and disengage if the pressure continues.
+User-friendly description: Pause and independently verify offers that demand urgent action.
 
 ##### Respond after suspected fraud
 
+Slug: respondAfterSuspectedFraud
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Stop further interaction, secure affected access, preserve relevant evidence safely, and contact appropriate providers or authorities.
+Methodological description: Stop further interaction, secure affected access, preserve relevant evidence safely, and contact appropriate providers or authorities.
+User-friendly description: Secure your accounts and seek appropriate help after suspected fraud.
 
 #### Online Interaction Safety
+
+Slug: onlineInteractionSafety
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Digital abuse can extend beyond the screen; protective responses should prioritize personal safety, consent, and trustworthy reporting channels.
+Methodological description: Digital abuse can extend beyond the screen; protective responses should prioritize personal safety, consent, and trustworthy reporting channels.
+User-friendly description: Discover how to respond to harmful interactions in digital spaces.
 
 ##### Recognize technology-facilitated harassment
 
+Slug: recognizeTechnologyFacilitatedHarassment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the distinctive risks of persistent unwanted online contact, coordinated targeting, cross-platform stalking and harmful redistribution of content, including online forms of bullying, without duplicating the general recognition of harassment.
+Methodological description: Identify the distinctive risks of persistent unwanted online contact, coordinated targeting, cross-platform stalking and harmful redistribution of content, including online forms of bullying, without duplicating the general recognition of harassment.
+User-friendly description: Recognize persistent harassment and stalking conducted through online platforms.
 
 ##### Protect against online sexual exploitation
 
+Slug: protectAgainstOnlineSexualExploitation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize coercive requests for intimate images, grooming, and image-based threats and identify safe reporting options.
+Methodological description: Recognize coercive requests for intimate images, grooming, and image-based threats and identify safe reporting options.
+User-friendly description: Recognize threats involving intimate images or online exploitation and seek help.
 
 ##### Respond to harmful online contact
 
+Slug: respondToHarmfulOnlineContact
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Disengage, avoid retaliation or additional disclosure, and use appropriate blocking, reporting, or trusted-person support.
+Methodological description: Disengage, avoid retaliation or additional disclosure, and use appropriate blocking, reporting, or trusted-person support.
+User-friendly description: Disengage from harmful contacts and use appropriate reporting channels.
 
 ##### Manage a digital footprint
 
+Slug: manageADigitalFootprint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider persistence, redistribution, and audience of posted information, including the limits of deleting content after sharing.
+Methodological description: Consider persistence, redistribution, and audience of posted information, including the limits of deleting content after sharing.
+User-friendly description: Understand that shared digital information can persist after deletion.
 
