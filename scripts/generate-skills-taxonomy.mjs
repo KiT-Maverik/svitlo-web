@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Generate a localized, read-only Markdown view from typed taxonomy source.
+ * Generate a localized-name, read-only Markdown view from typed taxonomy source.
  * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math [--locale en]
  *
  * Deliberately parses TypeScript source without executing textbook code.
- * Fail closed on absent descriptions: the handwritten taxonomy remains the
+ * Methodological descriptions are always English; optional FE text is localized.\n * Fail closed on absent methodological descriptions: handwritten taxonomy remains the
  * authoritative staging source until every promoted entity is complete.
  */
 import fs from 'node:fs';
@@ -99,15 +99,33 @@ function readEntity(file, kind) {
   }
   visit(sf);
   if (!config) fail('Missing build' + kind + 'Config in ' + file);
+
   const name = dictionary(config, 'name', file);
-  const description = dictionary(config, 'description', file);
+  const descriptionMember = getProperty(config, 'description');
+  if (!descriptionMember) fail('Missing description (taxonomy not yet migrated): ' + file);
+  const description = unwrap(descriptionMember.initializer);
+  if (!ts.isObjectLiteralExpression(description)) fail('Expected description object: ' + file);
+
+  const keys = description.properties.map(prop => {
+    if (!ts.isPropertyAssignment(prop)) fail('Unexpected dynamic description property: ' + file);
+    return key(prop.name);
+  });
+  if (new Set(keys).size !== keys.length || keys.some(k => k !== 'methodological' && k !== 'FE')) {
+    fail('Unexpected or duplicated description keys: ' + file);
+  }
+  const methodological = stringValue(getProperty(description, 'methodological')?.initializer, file + ':methodological');
+
+  const FE = getProperty(description, 'FE') ? dictionary(description, 'FE', file) : undefined;
   for (const locale of locales) {
-    if (!name[locale] || !description[locale]) fail('Missing required locale ' + locale + ': ' + file);
+    if (!name[locale]) fail('Missing required name locale ' + locale + ': ' + file);
+    if (FE && !FE[locale]) fail('Missing required FE locale ' + locale + ': ' + file);
   }
-  for (const map of [name, description]) {
-    for (const locale of Object.keys(map)) if (!locales.includes(locale)) fail('Unexpected locale ' + locale + ': ' + file);
+  for (const map of FE ? [name, FE] : [name]) {
+    for (const locale of Object.keys(map)) {
+      if (!locales.includes(locale)) fail('Unexpected locale ' + locale + ': ' + file);
+    }
   }
-  return { file, name: name[opts.locale], description: description[opts.locale] };
+  return { file, name: name[opts.locale], methodological, frontend: FE?.[opts.locale] };
 }
 function subdirs(dir) {
   if (!fs.existsSync(dir)) return [];
@@ -152,7 +170,12 @@ function readSkills(folder) {
 }
 function markdownLine(entity, level, output) {
   const link = path.relative(path.dirname(output), entity.file).split(path.sep).join('/');
-  return '#'.repeat(level) + ' ' + entity.name + '\n\n[' + path.basename(entity.file) + '](' + encodeURI(link) + ')\n\n' + entity.description + '\n\n';
+  let text = '#'.repeat(level) + ' ' + entity.name + '\n\n[' + path.basename(entity.file) + '](' + encodeURI(link) + ')\n\n';
+  text += '**Methodological description (English):** ' + entity.methodological + '\n\n';
+  if (entity.frontend !== undefined) {
+    text += '**FE description (' + opts.locale + '):** ' + entity.frontend + '\n\n';
+  }
+  return text;
 }
 const domains = [];
 for (const folder of subdirs(taxonomyRoot)) {
@@ -176,7 +199,8 @@ for (const folder of subdirs(taxonomyRoot)) {
 }
 if (!domains.length) fail('No domains found');
 const out = path.join(packageRoot, 'docs/generated/skills', 'taxonomy.' + opts.locale + '.md');
-let markdown = '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' + opts.locale + ')\n\n';
+let markdown = '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' + opts.locale + ')\n\n' +
+  '> Names and optional FE descriptions use the requested locale. Methodological descriptions remain canonical English, not translated.\n\n';
 let groupCount = 0, skillCount = 0;
 for (const domain of domains) {
   markdown += markdownLine(domain, 2, out);
