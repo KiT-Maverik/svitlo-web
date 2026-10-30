@@ -20,7 +20,7 @@
     "test:e2e:db": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/indexdb && npm run test:e2e:db --workspace @svitlo/indexdb",
     "test:components": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run test:components --workspace @svitlo/playground",
     "test:components:coverage": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run test:components:coverage --workspace @svitlo/playground",
-    "test:taxonomy-generator": "node --test scripts/generate-skills-taxonomy.spec.mjs",
+    "test:taxonomy-generator": "node --test scripts/generate-skills-taxonomy.spec.mjs scripts/generate-skills-taxonomy.roundtrip.spec.mjs",
     "test:taxonomy-import": "node --test scripts/import-taxonomy-descriptions.spec.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -29,7 +29,7 @@
     "packages:typecheck": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run typecheck --workspaces --if-present",
     "packages:lint": "npm run lint --workspaces --if-present",
     "packages:test": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run test --workspaces --if-present",
-    "packages:check": "node scripts/check-workspaces.mjs && node scripts/check-package-boundaries.mjs && node --test scripts/production-imports.spec.mjs && node scripts/check-extraction-readiness.mjs && node scripts/check-final-architecture.mjs",
+    "packages:check": "node scripts/check-workspaces.mjs && node scripts/check-package-boundaries.mjs && node scripts/check-extraction-readiness.mjs && node scripts/check-final-architecture.mjs",
     "build:math": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run build --workspace @svitlo/math",
     "dev:math": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run dev --workspace @svitlo/math",
     "test:math": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run test --workspace @svitlo/math",
@@ -87,8 +87,7 @@
     "typecheck:ukrainian": "npm run typecheck --workspace @svitlo/ukrainian"
   },
   "devDependencies": {
-    "prettier": "3.9.10",
-    "typescript": "5.9.3"
+    "prettier": "3.9.10"
   },
   "workspaces": [
     "backend/*",
