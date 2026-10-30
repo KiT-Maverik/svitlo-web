@@ -26,6 +26,10 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 **Biology editorial precedent (2026-10-29):** “Group mammals and reptiles into piles”, “choose a grouping criterion” and “apply a simple identification key” were removed as *separate Biology Skill IDs*, not as learning activities. Their Questions can assess existing animal-identification Skills. “Compare selection and genetic modification” reuses the two respective concept Skills; a predator-removal scenario can assess ecosystem interdependence. **Do not generalize this into an automatic ban on classification, identification keys, comparison or modeling:** a genuinely independent disciplinary competence may justify its own Skill if the editor approves the evidence.
 
+## EDITORIAL SLUG
+
+New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug is unique among Skills under the same SkillGroup, or direct Skills under an ungrouped Domain. Reuse under other parents is valid. An approved slug remains stable across name/translation changes; it is not the UUID or an additional runtime `Skill_Config` field. Preserve existing Code paths and UUIDs without silent renaming.
+
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
 ### Textbook-local Skill identity
@@ -43,7 +47,7 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 ## CANONICAL PEDAGOGICAL SOURCE
 
-Before promotion, `<PackageRoot>/docs/skills/taxonomy.md` is the **editorial staging definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy (or the approved direct Domain → Skill exception). The explanatory prose appears immediately below the heading and implementation link **without a `Description:` label**. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
+Before promotion, `<PackageRoot>/docs/skills/taxonomy.md` is the **editorial staging definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy (or the approved direct Domain → Skill exception). New-format records place `Slug:` immediately below the heading, then the implementation link and the separate single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields. Unlabeled prose is legacy and requires approved migration; there is no generic `Description:` label. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
 
 Do not copy a Skill heading into its description. Explain the subject-specific competency, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
 
