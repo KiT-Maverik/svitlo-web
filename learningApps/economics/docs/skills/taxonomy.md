@@ -22,133 +22,233 @@ Code files: 0/17 Domains · 0/71 Groups · 0/257 Skills
 
 ### Економічне мислення
 
+Slug: economicThinking
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Економічний аналіз вивчає, як люди й організації роблять вибір за обмежених ресурсів, реагують на стимули та координують рішення. Це понятійна основа інших розділів, а не перелік побутових вправ.
+Methodological description: Economic analysis examines how people and organizations choose among alternatives when resources are limited, respond to incentives, and coordinate decisions. It provides the conceptual foundation for other economic domains rather than a collection of everyday exercises.
+User-friendly description: Understand how people make choices, respond to incentives, and share limited resources.
 
 #### Обмеженість і вибір
+
+Slug: scarcityAndChoice
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Неможливість одночасно задовольнити всі бажання змушує розглядати альтернативи та вартість відмови від них.
+Methodological description: Because not all wants can be satisfied at once, economic decisions involve comparing alternatives and considering the value of the options forgone.
+User-friendly description: Explore why limited resources require us to make choices.
 
 ##### Обмеженість ресурсів
 
+Slug: resourceScarcity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, чому час, природні ресурси, праця й виробничі потужності мають альтернативні способи використання, незалежно від кількості грошей.
+Methodological description: Explain why time, natural resources, labor, and productive capacity have alternative uses, independently of how much money is available.
+User-friendly description: Recognize that scarcity concerns more than simply having too little money.
 
 ##### Альтернативна вартість
 
+Slug: opportunityCost
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати цінність найкращої втраченої альтернативи при виборі; не прирівнювати її автоматично до грошових витрат.
+Methodological description: Determine the value of the best alternative given up when choosing an option; do not automatically equate opportunity cost with monetary expenditure.
+User-friendly description: Identify the most valuable option you give up when making a choice.
 
 ##### Компроміси економічного вибору
 
+Slug: economicTradeoffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, які цілі чи вигоди доводиться частково поступатися заради іншої цілі за наявних обмежень.
+Methodological description: Identify the objectives or benefits that must be partly sacrificed to pursue another objective under given constraints.
+User-friendly description: See how pursuing one goal can mean giving up part of another.
 
 ##### Граничний аналіз
 
+Slug: marginalAnalysis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати додаткову вигоду і додаткову вартість наступної одиниці дії, а не лише сукупні результати.
+Methodological description: Compare the additional benefit and additional cost of one more unit of an activity rather than relying only on total outcomes.
+User-friendly description: Decide whether one more unit of an activity is worth its extra cost.
 
 ##### Межа виробничих можливостей
 
+Slug: productionPossibilitiesFrontier
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Будувати або інтерпретувати межу досяжних комбінацій випуску двох благ за наявних ресурсів і технологій; відрізняти точки ефективного використання, невикористаних можливостей та недосяжні комбінації.
+Methodological description: Construct or interpret the frontier of attainable combinations of two goods for given resources and technology; distinguish efficient points, underutilized capacity, and unattainable combinations.
+User-friendly description: Explore the different outputs an economy can produce with its available resources.
 
 #### Стимули та рішення
+
+Slug: incentivesAndDecisions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Вибір змінюється під впливом вигід, витрат, правил та доступної інформації; передбачуваність реакцій залежить від контексту.
+Methodological description: Choices are influenced by benefits, costs, rules, and available information; the predictability of responses depends on context.
+User-friendly description: Discover how rewards, costs, and information affect decisions.
 
 ##### Економічні стимули
 
+Slug: economicIncentives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, як винагорода, штраф, ціна або соціальна норма може змінити поведінку людей чи організацій.
+Methodological description: Identify how a reward, penalty, price, or social norm can change the behavior of individuals or organizations.
+User-friendly description: Explain how rewards and penalties can influence economic choices.
 
 ##### Бюджетні та ресурсні обмеження
 
+Slug: budgetAndResourceConstraints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Будувати множину допустимих економічних альтернатив для будь-якого учасника за фінансовими, часовими, технологічними або іншими ресурсними обмеженнями; оцінка конкретного споживчого набору є спеціалізованим застосуванням.
+Methodological description: Construct the feasible set of economic alternatives available to any decision-maker under financial, time, technological, or other resource constraints; evaluating a specific consumption bundle is a specialized application.
+User-friendly description: Identify which options are possible within money, time, and other limits.
 
 ##### Невизначеність у виборі
 
+Slug: choiceUnderUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти відомі наслідки, ймовірні результати та ситуації, де ймовірності або самі результати невідомі.
+Methodological description: Distinguish outcomes known in advance, probabilistic results, and situations in which probabilities or even the outcomes themselves are unknown.
+User-friendly description: Compare choices when the outcome is certain, risky, or unknown.
 
 #### Обмін та інституції
+
+Slug: exchangeAndInstitutions
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Співпраця й розподіл ресурсів залежать від спеціалізації, домовленостей, прав та механізмів їх дотримання.
+Methodological description: Cooperation and resource allocation depend on specialization, agreements, rights, and mechanisms for enforcing them.
+User-friendly description: Explore how agreements and rules help people cooperate and exchange.
 
 ##### Вигоди добровільного обміну
 
+Slug: gainsFromVoluntaryExchange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Показувати, за яких обставин дві сторони можуть виграти від угоди, не припускаючи, що кожна реальна угода справедлива.
+Methodological description: Show when both parties may benefit from a voluntary transaction without assuming every real-world transaction is fair.
+User-friendly description: Understand how trading can benefit both sides without guaranteeing fairness.
 
 ##### Поділ праці
 
+Slug: divisionOfLabor
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, як розподіл виробничих завдань між виконавцями впливає на продуктивність та взаємозалежність.
+Methodological description: Identify how distributing production tasks among different workers changes productivity and mutual dependence.
+User-friendly description: See how specialized tasks can make work more productive.
 
 ##### Права власності
 
+Slug: propertyRights
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як визначені права володіння, користування й розпорядження впливають на стимули та економічні конфлікти.
+Methodological description: Explain how defined rights to own, use, and transfer property affect incentives and economic conflicts.
+User-friendly description: Explore why clear property rights matter for economic decisions.
 
 ##### Трансакційні витрати
 
+Slug: transactionCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати витрати пошуку, переговорів, перевірки та забезпечення угоди, які існують понад ціну товару.
+Methodological description: Identify the costs of searching, negotiating, verifying, and enforcing an agreement beyond the price of the good itself.
+User-friendly description: Recognize the time and effort involved in making an exchange.
 
 #### Стратегічна взаємодія
+
+Slug: strategicInteraction
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Результат рішення одного учасника може залежати від вибору інших, а індивідуальний інтерес — розходитися зі спільним.
+Methodological description: The consequences of one participant's decision may depend on others' choices, and individual incentives can diverge from collective interests.
+User-friendly description: Discover why your best choice can depend on what others do.
 
 ##### Стратегічна взаємозалежність
 
+Slug: strategicInterdependence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати рішення, де вигода кожного учасника змінюється відповідно до можливих дій інших.
+Methodological description: Analyze choices in which each participant's payoff changes according to the possible actions of other participants.
+User-friendly description: Explore decisions whose outcomes depend on other people's actions.
 
 ##### Рівновага стратегій
 
+Slug: strategicEquilibrium
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати ситуацію, в якій жоден учасник не має стимулу одноосібно змінювати свою стратегію за фіксованих рішень інших.
+Methodological description: Identify a situation in which no participant has an incentive to change strategy unilaterally while others' strategies remain fixed.
+User-friendly description: Recognize when nobody can improve their outcome by changing strategy alone.
 
 ##### Проблема колективної дії
 
+Slug: collectiveActionProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти випадки, коли індивідуально привабливі рішення породжують небажаний спільний результат, і розглядати механізми координації.
+Methodological description: Recognize circumstances in which individually attractive actions produce an undesirable collective outcome, and consider coordination mechanisms.
+User-friendly description: Understand why individually sensible decisions can create problems for everyone.
 
 ### Поведінка споживачів
 
