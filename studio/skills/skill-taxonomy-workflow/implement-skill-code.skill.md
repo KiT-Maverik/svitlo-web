@@ -34,13 +34,13 @@ Current contracts and [Skill](../../docs/entities/skill.md), [SkillGroup](../../
 
 ### Editorial actions and implementation status
 
-For each current-template entity, `Action: skip|create|update|delete` describes a **future generator instruction**; `Status: pending|implemented` describes the presently verified implementation state. Neither is a new runtime `Skill*_Config` property. These metadata fields are not instructions for this manual Coding Agent to create, update or delete files automatically. Scope and human approval are still required. In particular, never interpret `delete` as authorization for destructive changes or `Status: implemented` without verified Code. When explicitly commissioned to implement an entity despite `Action: skip`, reconcile the intended scope with the editor first.
+For each current-template entity, `Action: skip|create|update|delete` describes a **separate generator instruction**; `Status: pending|implemented` describes the presently verified implementation state. Neither is a new runtime `Skill*_Config` property. These metadata fields are not instructions for this manual Coding Agent to create, update or delete files automatically. Scope and human approval are still required. In particular, never interpret `delete` as authorization for destructive changes or `Status: implemented` without verified Code. When explicitly commissioned to implement an entity despite `Action: skip`, reconcile the intended scope with the editor first.
 
 The existing description importer cannot parse the new `Slug:`, `Action:`, and `Status:` lines. Do not run it on new-format Markdown until a separate tooling update is implemented and verified.
 
 ### Markdown → Code generator requirements
 
-The separate generator must perform dry-run by default, require explicit apply, preserve existing entity UUIDs on every update, and never cascade deletes without separate editor authorization and incoming-reference checks. Mark `Status: implemented` only after validation of the full Code graph and localization. Leave failed entities pending and report individual outcomes; allow independent successful changes only when dependencies remain valid.
+The [Markdown → Code generator](../../../scripts/implement-skills-taxonomy.mjs) performs dry-run by default, requires explicit apply, preserves existing entity UUIDs on every update, and validates the planned direct-composition graph before writing. `Action: delete` is currently blocked even with `--allow-delete` until incoming-reference auditing and safe deletion are implemented. Never attempt a destructive workaround. Mark `Status: implemented` only after validation of the full Code graph and localization. Leave failed entities pending and report individual outcomes; allow independent successful changes only when dependencies remain valid.
 
 ### Approved editorial slugs and Code paths
 
