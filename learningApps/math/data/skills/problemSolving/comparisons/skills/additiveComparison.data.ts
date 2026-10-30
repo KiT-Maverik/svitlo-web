@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparisons_Skills_Ids } from './index.ids';
 
 export const additiveComparison_Skill_Data = buildSkillConfig({
-  id: comparisons_Skills_Ids.additiveComparison,
+  id: '6ec0b82a-2cb0-4875-a327-dc292e6624c0',
   name: {
     lt: "Sudėtinių palyginimo uždavinių sprendimas",
     lv: "Saskaitāmu lielumu salīdzināšanas uzdevumu risināšana",
