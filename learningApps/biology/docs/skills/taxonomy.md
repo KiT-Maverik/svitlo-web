@@ -25,531 +25,941 @@ Code files: 0/11 Domains · 0/26 Groups · 0/147 Skills
 
 ### Characteristics of Living Things
 
+Slug: characteristicsOfLivingThings
+Action: create
+Status: pending
+
 Groups: 0 · Skills: 1
 
 [Not implemented](#)
 
-Life processes, biological origin, and the distinction between living organisms, dead remains, and things that have never been alive. This distinction requires consideration of actual life processes rather than appearance or movement alone.
+Methodological description: Life processes, biological origin, and the distinction between living organisms, dead remains, and things that have never been alive. This distinction requires consideration of actual life processes rather than appearance or movement alone.
+User-friendly description: Discover what makes something alive, what was once alive, and what has never been living.
 
 **Methodological note on classification tasks:** generic actions such as “choose a grouping criterion,” “sort organisms by a trait,” “apply an identification key,” “explain a grouping criterion,” and “identify traits for grouping” **do not create separate Biology Skill IDs here**. They are ways to construct interactive Questions, cards, practice, and checks of existing subject knowledge. For example, “sort mammals and reptiles into groups” assesses **knowledge of the respective animals’ distinguishing characteristics**, not a separate universal ability to drag cards. Criteria and identification keys remain permissible tools for Lessons; a separate Skill is warranted only for an independent biological outcome not covered by subject-specific recognition Skills. **Process conclusion:** this editorial precedent does not prohibit all classification or modeling Skills. For any new or existing similar candidate, the methodologist must present the editor with a concrete Question, the competency it might assess, existing Skill(s), and alternatives, and **must not add, remove, or relocate such Skills before the editor’s explicit decision**. Rule: [Create Skills Taxonomy — mandatory editorial stop](../../../../studio/skills/create-skills-taxonomy.skill.md).
 
 #### Classify objects as living, dead, or never alive
 
+Slug: classifyObjectsAsLivingDeadOrNeverAlive
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use evidence of life processes and origin to classify an object and justify the decision through diagnostic features. A living tree carries out life processes, a dead leaf once belonged to a living organism, and a stone has no biological origin. Do not equate dead organisms with their remains or with products of biological origin.
+Methodological description: Use evidence of life processes and origin to classify an object and justify the decision through diagnostic features. A living tree carries out life processes, a dead leaf once belonged to a living organism, and a stone has no biological origin. Do not equate dead organisms with their remains or with products of biological origin.
+User-friendly description: Use evidence to decide whether something is living, dead or has never been alive.
 
 ### General and Cell Biology
+
+Slug: generalAndCellBiology
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Shared principles of cellular organism organization, from the cell to interactions among organs, as well as metabolism, growth, and responses. Specific human systems and particular taxa are addressed in their respective Domains.
+Methodological description: Shared principles of cellular organism organization, from the cell to interactions among organs, as well as metabolism, growth, and responses. Specific human systems and particular taxa are addressed in their respective Domains.
+User-friendly description: Explore how cells and body structures work together to support the processes of life.
 
 #### Cellular Structure
+
+Slug: cellularStructure
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Cells have membranes and internal components that sustain life processes; diagrams help reveal commonalities and differences among different cells.
+Methodological description: Cells have membranes and internal components that sustain life processes; diagrams help reveal commonalities and differences among different cells.
+User-friendly description: Learn what cells are made of and how their structures help them function.
 
 ##### Recognize the Cell as a Structural Unit
 
+Slug: recognizeTheCellAsAStructuralUnit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Understand that the tissues and bodies of cellular organisms consist of microscopic units, each with its own boundary.
+Methodological description: Understand that the tissues and bodies of cellular organisms consist of microscopic units, each with its own boundary.
+User-friendly description: Understand why cells are the basic structural units of living organisms.
 
 ##### Distinguish Unicellular and Multicellular Organisms
 
+Slug: distinguishUnicellularAndMulticellularOrganisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a single cell carries out all functions of an organism or many specialized cells work together.
+Methodological description: Determine whether a single cell carries out all functions of an organism or many specialized cells work together.
+User-friendly description: Distinguish organisms made of one cell from those made of many specialized cells.
 
 ##### Distinguish Plant and Animal Cells by Structural Features
 
+Slug: distinguishPlantAndAnimalCellsByStructuralFeatures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish characteristic cell features: the cell wall and plastids in plant cells and the absence of these structures in animal cells. Do not assume that all plant cells contain chloroplasts (many root cells, for instance, do not). An illustration, a textual description, or an interactive model are alternative ways of assessing the competency, not part of the Skill name.
+Methodological description: Distinguish characteristic cell features: the cell wall and plastids in plant cells and the absence of these structures in animal cells. Do not assume that all plant cells contain chloroplasts (many root cells, for instance, do not). An illustration, a textual description, or an interactive model are alternative ways of assessing the competency, not part of the Skill name.
+User-friendly description: Recognize key features of plant and animal cells without assuming every cell looks the same.
 
 ##### Relate Major Cell Structures to Their Functions
 
+Slug: relateMajorCellStructuresToTheirFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Associate the membrane with selective exchange, the nucleus with genetic information, and other depicted organelles with their main cellular functions.
+Methodological description: Associate the membrane with selective exchange, the nucleus with genetic information, and other depicted organelles with their main cellular functions.
+User-friendly description: Connect the structures inside cells with the jobs they perform.
 
 #### Cell Division
+
+Slug: cellDivision
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-The cell cycle involves division of genetic material and cytoplasm; mitosis supports growth and tissue renewal, while meiosis is associated with sexual reproduction and inherited variation.
+Methodological description: The cell cycle involves division of genetic material and cytoplasm; mitosis supports growth and tissue renewal, while meiosis is associated with sexual reproduction and inherited variation.
+User-friendly description: Discover how cells divide to support growth, renewal and reproduction.
 
 ##### Explain Mitosis
 
+Slug: explainMitosis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain division of a eukaryotic cell nucleus while maintaining the chromosome number and distributing replicated DNA between daughter nuclei. Distinguish mitosis from cytokinesis and explain its roles in growth, tissue renewal, and asexual reproduction.
+Methodological description: Explain division of a eukaryotic cell nucleus while maintaining the chromosome number and distributing replicated DNA between daughter nuclei. Distinguish mitosis from cytokinesis and explain its roles in growth, tissue renewal, and asexual reproduction.
+User-friendly description: Explore how mitosis divides genetic material between daughter nuclei.
 
 ##### Explain Meiosis
 
+Slug: explainMeiosis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain successive divisions following a single round of DNA replication, the halving of chromosome number, recombination, and independent chromosome assortment. Distinguish meiotic products in animals and plants: in plants, meiosis may produce spores rather than gametes directly.
+Methodological description: Explain successive divisions following a single round of DNA replication, the halving of chromosome number, recombination, and independent chromosome assortment. Distinguish meiotic products in animals and plants: in plants, meiosis may produce spores rather than gametes directly.
+User-friendly description: Learn how meiosis produces cells with fewer chromosomes and creates genetic variation.
 
 #### Levels of Organization
+
+Slug: levelsOfOrganization
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Parts of cellular organisms form nested levels; the functioning of a whole depends on the coordinated work of its structures.
+Methodological description: Parts of cellular organisms form nested levels; the functioning of a whole depends on the coordinated work of its structures.
+User-friendly description: Explore how cells, tissues, organs and systems fit together in living organisms.
 
 ##### Distinguish a Part of an Organism from a Whole Organism
 
+Slug: distinguishAPartOfAnOrganismFromAWholeOrganism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the boundary between an individual organ, a part of that organ, and an organism as an independent living system.
+Methodological description: Identify the boundary between an individual organ, a part of that organ, and an organism as an independent living system.
+User-friendly description: Distinguish a single organ or body part from a complete living organism.
 
 ##### Order the Levels “Cell → Tissue → Organ → System”
 
+Slug: orderTheLevelsCellTissueOrganSystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Establish how cells form tissues, tissues form organs, and organs can work together within a system.
+Methodological description: Establish how cells form tissues, tissues form organs, and organs can work together within a system.
+User-friendly description: Arrange cells, tissues, organs and organ systems by their levels of organization.
 
 ##### Explain an Organ’s Function in an Organism
 
+Slug: explainAnOrgansFunctionInAnOrganism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a particular structure contributes to overall life processes, such as absorbing or transporting substances.
+Methodological description: Explain how a particular structure contributes to overall life processes, such as absorbing or transporting substances.
+User-friendly description: Explain how a particular organ helps the entire organism function.
 
 ##### Explain the Interdependence of Organs
 
+Slug: explainTheInterdependenceOfOrgans
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show why a disruption in one system can alter the functioning of another.
+Methodological description: Show why a disruption in one system can alter the functioning of another.
+User-friendly description: Explore why different organs depend on one another.
 
 #### Life Processes
+
+Slug: lifeProcesses
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Exchange of matter and energy, increases in size, changes in form, and responses to conditions are manifestations of life that can be observed or modeled.
+Methodological description: Exchange of matter and energy, increases in size, changes in form, and responses to conditions are manifestations of life that can be observed or modeled.
+User-friendly description: Discover how organisms obtain resources, grow and respond to their surroundings.
 
 ##### Identify Examples of Nutrition
 
+Slug: identifyExamplesOfNutrition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the acquisition and use of nutrients by organisms as nutrition, distinguishing forms of nutrition across different organisms.
+Methodological description: Recognize the acquisition and use of nutrients by organisms as nutrition, distinguishing forms of nutrition across different organisms.
+User-friendly description: Recognize the different ways organisms obtain and use nutrients.
 
 ##### Explain Photosynthesis
 
+Slug: explainPhotosynthesis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the conversion of light energy into chemical energy as photosynthetic organisms form organic substances from carbon dioxide and water; identify the roles of chloroplasts and pigments and the release of oxygen during oxygenic photosynthesis. Do not equate photosynthesis with mineral nutrition or respiration.
+Methodological description: Explain the conversion of light energy into chemical energy as photosynthetic organisms form organic substances from carbon dioxide and water; identify the roles of chloroplasts and pigments and the release of oxygen during oxygenic photosynthesis. Do not equate photosynthesis with mineral nutrition or respiration.
+User-friendly description: Explain how photosynthetic organisms use light to make organic substances.
 
 ##### Explain Cellular Respiration
 
+Slug: explainCellularRespiration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how cells obtain usable energy by breaking down organic compounds while synthesizing ATP. Distinguish aerobic and anaerobic pathways, and do not equate cellular respiration with lung ventilation or gas exchange in respiratory organs.
+Methodological description: Explain how cells obtain usable energy by breaking down organic compounds while synthesizing ATP. Distinguish aerobic and anaerobic pathways, and do not equate cellular respiration with lung ventilation or gas exchange in respiratory organs.
+User-friendly description: Learn how cells release usable energy from organic substances.
 
 ##### Recognize Growth and Development
 
+Slug: recognizeGrowthAndDevelopment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish increases in mass or size from changes in structure and function during transitions between life stages.
+Methodological description: Distinguish increases in mass or size from changes in structure and function during transitions between life stages.
+User-friendly description: Distinguish an increase in size from changes in an organism's development.
 
 ##### Recognize Responses to Stimuli
 
+Slug: recognizeResponsesToStimuli
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Establish how light, touch, or a chemical signal elicits a change in an organism’s state or movement.
+Methodological description: Establish how light, touch, or a chemical signal elicits a change in an organism’s state or movement.
+User-friendly description: Recognize how living things respond to light, touch and other signals.
 
 ### Botany
+
+Slug: botany
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 21
 
 [Not implemented](#)
 
-Study of plants as organisms capable of photosynthesis: vegetative and reproductive organ structure, life cycles, and the dependence of growth on environmental conditions. Unlike Ecology, the focus is on the plant rather than interactions within a community.
+Methodological description: Study of plants as organisms capable of photosynthesis: vegetative and reproductive organ structure, life cycles, and the dependence of growth on environmental conditions. Unlike Ecology, the focus is on the plant rather than interactions within a community.
+User-friendly description: Explore how plants are built, grow, reproduce and respond to their environments.
 
 #### Plant Diversity
+
+Slug: plantDiversity
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-External structure, branching patterns, and seasonality provide grounds for comparing familiar species without equating growth form with biological relatedness.
+Methodological description: External structure, branching patterns, and seasonality provide grounds for comparing familiar species without equating growth form with biological relatedness.
+User-friendly description: Recognize the variety of plants using their distinctive features.
 
 ##### Recognize Common Local Plants
 
+Slug: recognizeCommonLocalPlants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify familiar local species by characteristic combinations of leaves, stems, flowers, or fruits, rather than color alone.
+Methodological description: Identify familiar local species by characteristic combinations of leaves, stems, flowers, or fruits, rather than color alone.
+User-friendly description: Identify familiar local plants using combinations of leaves, stems and other features.
 
 ##### Distinguish Trees, Shrubs, and Herbaceous Plants
 
+Slug: distinguishTreesShrubsAndHerbaceousPlants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine growth form from the type and branching pattern of woody or herbaceous stems.
+Methodological description: Determine growth form from the type and branching pattern of woody or herbaceous stems.
+User-friendly description: Distinguish trees, shrubs and herbaceous plants by how their stems grow.
 
 ##### Distinguish Deciduous and Evergreen Plants
 
+Slug: distinguishDeciduousAndEvergreenPlants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish annual leaf shedding from retaining foliage throughout the year; this is not equivalent to the distinction between conifers and broadleaf plants.
+Methodological description: Distinguish annual leaf shedding from retaining foliage throughout the year; this is not equivalent to the distinction between conifers and broadleaf plants.
+User-friendly description: Recognize how evergreen and deciduous plants differ in leaf retention.
 
 ##### Recognize Bryophyte Characteristics
 
+Slug: recognizeBryophyteCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize nonvascular land plants that produce spores and whose life cycle is dominated by the gametophyte; do not call rhizoids true roots.
+Methodological description: Recognize nonvascular land plants that produce spores and whose life cycle is dominated by the gametophyte; do not call rhizoids true roots.
+User-friendly description: Learn the characteristic features and life cycles of mosses and related plants.
 
 ##### Recognize Fern and Fern-Ally Characteristics
 
+Slug: recognizeFernAndFernAllyCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify vascular spore-producing plants by the structure of their shoots and sporangia; distinguish them from bryophytes and seed plants.
+Methodological description: Identify vascular spore-producing plants by the structure of their shoots and sporangia; distinguish them from bryophytes and seed plants.
+User-friendly description: Recognize ferns and related vascular plants that reproduce using spores.
 
 ##### Distinguish Gymnosperms and Angiosperms
 
+Slug: distinguishGymnospermsAndAngiosperms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the difference between seed plants with exposed ovules and flowering plants whose seeds develop inside a fruit; do not equate this division with evergreen habit or leaf shape.
+Methodological description: Explain the difference between seed plants with exposed ovules and flowering plants whose seeds develop inside a fruit; do not equate this division with evergreen habit or leaf shape.
+User-friendly description: Distinguish gymnosperms from flowering plants by their seed structures.
 
 #### Plant Structure
+
+Slug: plantStructure
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Plant organs perform different tasks: anchorage, absorption, transport, photosynthesis, and reproduction; their functions must be distinguished from their names.
+Methodological description: Plant organs perform different tasks: anchorage, absorption, transport, photosynthesis, and reproduction; their functions must be distinguished from their names.
+User-friendly description: Learn how roots, stems, leaves and reproductive parts serve different purposes.
 
 ##### Identify Major Plant Organs
 
+Slug: identifyMajorPlantOrgans
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-On a plant or model, distinguish roots, stems, leaves, and reproductive organs, including flowers, by their position and distinguishing characteristics.
+Methodological description: On a plant or model, distinguish roots, stems, leaves, and reproductive organs, including flowers, by their position and distinguishing characteristics.
+User-friendly description: Identify the major structures of a plant and where they are found.
 
 ##### Relate Plant Organs to Their Functions
 
+Slug: relatePlantOrgansToTheirFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain which structures enable water absorption, support, substance transport, photosynthesis, and seed production.
+Methodological description: Explain which structures enable water absorption, support, substance transport, photosynthesis, and seed production.
+User-friendly description: Connect each plant organ with the functions it performs.
 
 #### Nutrition and Growth
 
+Slug: nutritionAndGrowth
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Water, light, atmospheric gases, and minerals play different roles; deviations in environmental conditions change the rate and pattern of plant development.
+Methodological description: Water, light, atmospheric gases, and minerals play different roles; deviations in environmental conditions change the rate and pattern of plant development.
+User-friendly description: Explore how water, light, air and minerals support plant growth.
 
 ##### Explain Plants’ Need for Water
 
+Slug: explainPlantsNeedForWater
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain water’s involvement in substance transport, cell maintenance, and photosynthesis rather than treating water merely as a plant’s 'drink'.
+Methodological description: Explain water’s involvement in substance transport, cell maintenance, and photosynthesis rather than treating water merely as a plant’s 'drink'.
+User-friendly description: Understand why plants need water for transport, cell function and photosynthesis.
 
 ##### Explain the Role of Light
 
+Slug: explainTheRoleOfLight
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate illumination to the production of organic substances in photosynthesizing parts of plants.
+Methodological description: Relate illumination to the production of organic substances in photosynthesizing parts of plants.
+User-friendly description: Explain why light is essential for making food through photosynthesis.
 
 ##### Explain the Role of Air
 
+Slug: explainTheRoleOfAir
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the use of carbon dioxide during photosynthesis from the use of oxygen during cellular respiration.
+Methodological description: Distinguish the use of carbon dioxide during photosynthesis from the use of oxygen during cellular respiration.
+User-friendly description: Distinguish plants' use of carbon dioxide and oxygen in different processes.
 
 ##### Identify the Role of Mineral Nutrition
 
+Slug: identifyTheRoleOfMineralNutrition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why mineral elements from soil are necessary for tissue formation, although they do not replace food as an energy source.
+Methodological description: Explain why mineral elements from soil are necessary for tissue formation, although they do not replace food as an energy source.
+User-friendly description: Understand why mineral nutrients help plants build healthy tissues.
 
 ##### Predict Effects of Changing Conditions on Plant Growth
 
+Slug: predictEffectsOfChangingConditionsOnPlantGrowth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Predict observable changes in growth when light, water, or minerals are insufficient, while accounting for other conditions held constant.
+Methodological description: Predict observable changes in growth when light, water, or minerals are insufficient, while accounting for other conditions held constant.
+User-friendly description: Predict how changes in resources affect a plant's growth.
 
 #### Reproduction and Development
+
+Slug: reproductionAndDevelopment
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-A seed plant progresses from a seed through a seedling to producing the next generation; pollination and seed dispersal occur at different stages.
+Methodological description: A seed plant progresses from a seed through a seedling to producing the next generation; pollination and seed dispersal occur at different stages.
+User-friendly description: Follow how plants reproduce and develop through their life cycles.
 
 ##### Identify the Role of a Seed
 
+Slug: identifyTheRoleOfASeed
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Understand that a seed contains an embryo and a store or source of nutrients for initial growth.
+Methodological description: Understand that a seed contains an embryo and a store or source of nutrients for initial growth.
+User-friendly description: Explore how a seed supports the first stage of a new plant's growth.
 
 ##### Describe Germination
 
+Slug: describeGermination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Establish the order in which the embryonic root and shoot emerge, as well as the roles of water and an appropriate temperature.
+Methodological description: Establish the order in which the embryonic root and shoot emerge, as well as the roles of water and an appropriate temperature.
+User-friendly description: Describe how a seed begins growing roots and shoots.
 
 ##### Sequence Stages of a Flowering Plant’s Life Cycle
 
+Slug: sequenceStagesOfAFloweringPlantsLifeCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Order stages from seed to mature plant, flowering, and formation of new seeds.
+Methodological description: Order stages from seed to mature plant, flowering, and formation of new seeds.
+User-friendly description: Follow the stages from seed to mature flowering plant and new seeds.
 
 ##### Explain the Role of Pollination
 
+Slug: explainTheRoleOfPollination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain transfer of pollen to a stigma or another receptive structure as a step preceding fertilization.
+Methodological description: Explain transfer of pollen to a stigma or another receptive structure as a step preceding fertilization.
+User-friendly description: Explain the part pollination plays before fertilization.
 
 ##### Relate Fruit Characteristics to Seed Dispersal Methods
 
+Slug: relateFruitCharacteristicsToSeedDispersalMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare adaptations of fruits and seeds to transport by wind, water, or animals.
+Methodological description: Compare adaptations of fruits and seeds to transport by wind, water, or animals.
+User-friendly description: Connect the shapes of fruits and seeds with the ways they spread.
 
 #### Plant Adaptations
+
+Slug: plantAdaptations
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Leaf, root, and shoot forms and seasonal changes can improve survival when water or light is limited or temperatures are low.
+Methodological description: Leaf, root, and shoot forms and seasonal changes can improve survival when water or light is limited or temperatures are low.
+User-friendly description: See how plant features help them survive in different environments.
 
 ##### Recognize Adaptations to the Environment
 
+Slug: recognizeAdaptationsToTheEnvironment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify particular morphological or physiological adaptations in plants, such as a waxy covering, water storage, or leaf shedding, and distinguish them from incidental characteristics. The central competency is recognizing an adaptation from its characteristic manifestations.
+Methodological description: Identify particular morphological or physiological adaptations in plants, such as a waxy covering, water storage, or leaf shedding, and distinguish them from incidental characteristics. The central competency is recognizing an adaptation from its characteristic manifestations.
+User-friendly description: Recognize special features that help plants cope with their surroundings.
 
 ##### Relate Plant Structural Features to Environmental Conditions
 
+Slug: relatePlantStructuralFeaturesToEnvironmentalConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain causal links between root, leaf, and shoot structure and environmental resources or limitations; compare how different structural solutions affect water balance, access to light, and survival. The central competency is functional explanation rather than merely identifying an adaptation.
+Methodological description: Explain causal links between root, leaf, and shoot structure and environmental resources or limitations; compare how different structural solutions affect water balance, access to light, and survival. The central competency is functional explanation rather than merely identifying an adaptation.
+User-friendly description: Explain why roots, leaves and shoots have forms suited to different conditions.
 
 ##### Describe Seasonal Changes in Plants
 
+Slug: describeSeasonalChangesInPlants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Establish the relationship between changes in day length or temperature and leaf fall, dormancy, or resumption of growth.
+Methodological description: Establish the relationship between changes in day length or temperature and leaf fall, dormancy, or resumption of growth.
+User-friendly description: Connect seasonal changes in plants with temperature and daylight.
 
 ### Zoology
+
+Slug: zoology
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 28
 
 [Not implemented](#)
 
-Comparison of major animal groups, relationships between structure and function, feeding patterns, development, and behavior. Food chains and interspecies networks as whole systems belong to Ecology.
+Methodological description: Comparison of major animal groups, relationships between structure and function, feeding patterns, development, and behavior. Food chains and interspecies networks as whole systems belong to Ecology.
+User-friendly description: Discover how animals differ in structure, movement, growth and behavior.
 
 #### Animal Diversity
+
+Slug: animalDiversity
+Action: create
+Status: pending
 
 Skills: 17
 
 [Not implemented](#)
 
-Identifying major animal groups requires diagnostic characteristics, including skeletal structure, body coverings, limbs, and developmental patterns, rather than incidental external resemblance.
+Methodological description: Identifying major animal groups requires diagnostic characteristics, including skeletal structure, body coverings, limbs, and developmental patterns, rather than incidental external resemblance.
+User-friendly description: Recognize major animal groups by reliable body features rather than superficial similarities.
 
 ##### Recognize Common Local Animals
 
+Slug: recognizeCommonLocalAnimals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify familiar local species from a characteristic combination of body structure, coverings, and modes of movement.
+Methodological description: Identify familiar local species from a characteristic combination of body structure, coverings, and modes of movement.
+User-friendly description: Identify familiar animals using characteristic body structures and coverings.
 
 ##### Distinguish Vertebrates and Invertebrates
 
+Slug: distinguishVertebratesAndInvertebrates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use the presence of a vertebral column as the anatomical dividing line between these two broad groups.
+Methodological description: Use the presence of a vertebral column as the anatomical dividing line between these two broad groups.
+User-friendly description: Distinguish animals with a backbone from those without one.
 
 ##### Recognize Insect Characteristics
 
+Slug: recognizeInsectCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify six legs, three main body regions, and other characteristic features of adult insects.
+Methodological description: Identify six legs, three main body regions, and other characteristic features of adult insects.
+User-friendly description: Recognize insects by their six legs and three main body regions.
 
 ##### Recognize Arachnid Characteristics
 
+Slug: recognizeArachnidCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize arthropods with characteristic chelicerae and usually four pairs of walking legs in adults; distinguish spiders, ticks and mites, and scorpions from insects.
+Methodological description: Recognize arthropods with characteristic chelicerae and usually four pairs of walking legs in adults; distinguish spiders, ticks and mites, and scorpions from insects.
+User-friendly description: Recognize spiders and other arachnids by their distinctive body features.
 
 ##### Recognize Crustacean Characteristics
 
+Slug: recognizeCrustaceanCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize diverse crustaceans by jointed appendages, antennae, and characteristic structural traits; do not treat ten legs as a universal characteristic of crustaceans.
+Methodological description: Recognize diverse crustaceans by jointed appendages, antennae, and characteristic structural traits; do not treat ten legs as a universal characteristic of crustaceans.
+User-friendly description: Recognize the varied structures of crustaceans without assuming all have ten legs.
 
 ##### Recognize Mollusc Characteristics
 
+Slug: recognizeMolluscCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the soft body, mantle, and other characteristic features of gastropods, bivalves, and cephalopods, taking into account that not all molluscs have an external shell.
+Methodological description: Identify the soft body, mantle, and other characteristic features of gastropods, bivalves, and cephalopods, taking into account that not all molluscs have an external shell.
+User-friendly description: Identify molluscs by their characteristic soft bodies and other structures.
 
 ##### Recognize Annelid Characteristics
 
+Slug: recognizeAnnelidCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the segmented body of annelids and distinguish them from nematodes and flatworms, even where all these animals have similarly elongated bodies.
+Methodological description: Recognize the segmented body of annelids and distinguish them from nematodes and flatworms, even where all these animals have similarly elongated bodies.
+User-friendly description: Recognize segmented worms and distinguish them from other worm-shaped animals.
 
 ##### Recognize Flatworm Characteristics
 
+Slug: recognizeFlatwormCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the flattened body and other features of flatworms, including free-living and parasitic forms, without confusing them with annelids.
+Methodological description: Identify the flattened body and other features of flatworms, including free-living and parasitic forms, without confusing them with annelids.
+User-friendly description: Recognize flatworms and distinguish them from segmented worms.
 
 ##### Recognize Nematode Characteristics
 
+Slug: recognizeNematodeCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the unsegmented elongated bodies of roundworms and features of their lifestyles, including free-living and parasitic forms.
+Methodological description: Recognize the unsegmented elongated bodies of roundworms and features of their lifestyles, including free-living and parasitic forms.
+User-friendly description: Recognize roundworms by their unsegmented bodies and other traits.
 
 ##### Recognize Cnidarian Characteristics
 
+Slug: recognizeCnidarianCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize cnidarians by stinging cells and the characteristic body plans of polyps and medusae; do not regard the medusa form as obligatory for every member.
+Methodological description: Recognize cnidarians by stinging cells and the characteristic body plans of polyps and medusae; do not regard the medusa form as obligatory for every member.
+User-friendly description: Recognize animals such as jellyfish and corals by their stinging cells.
 
 ##### Recognize Echinoderm Characteristics
 
+Slug: recognizeEchinodermCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify marine invertebrates with a water vascular system and characteristic adult symmetry, distinguishing sea stars, sea urchins, and other representatives.
+Methodological description: Identify marine invertebrates with a water vascular system and characteristic adult symmetry, distinguishing sea stars, sea urchins, and other representatives.
+User-friendly description: Identify sea stars and other echinoderms by their distinctive structures.
 
 ##### Recognize Sponge Characteristics
 
+Slug: recognizeSpongeCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the porous body structure and filter-feeding of sponges, explaining that they lack true tissues and organs.
+Methodological description: Recognize the porous body structure and filter-feeding of sponges, explaining that they lack true tissues and organs.
+User-friendly description: Recognize sponges by their porous bodies and filter-feeding.
 
 ##### Recognize Fish Characteristics
 
+Slug: recognizeFishCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify typical traits of aquatic vertebrates with gill respiration and fins while accounting for the diversity of fish.
+Methodological description: Identify typical traits of aquatic vertebrates with gill respiration and fins while accounting for the diversity of fish.
+User-friendly description: Identify typical features of fish while recognizing their diversity.
 
 ##### Recognize Amphibian Characteristics
 
+Slug: recognizeAmphibianCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify characteristic features of a group in which development is often associated with water and adults may use lungs and skin for respiration.
+Methodological description: Identify characteristic features of a group in which development is often associated with water and adults may use lungs and skin for respiration.
+User-friendly description: Recognize common features of amphibians and their development.
 
 ##### Recognize Reptile Characteristics
 
+Slug: recognizeReptileCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify members by characteristics of scaled skin and reproductive features of terrestrial amniotes.
+Methodological description: Identify members by characteristics of scaled skin and reproductive features of terrestrial amniotes.
+User-friendly description: Identify reptile characteristics, including skin and reproduction.
 
 ##### Recognize Bird Characteristics
 
+Slug: recognizeBirdCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use feathers as the primary diagnostic characteristic of birds, regardless of their ability to fly.
+Methodological description: Use feathers as the primary diagnostic characteristic of birds, regardless of their ability to fly.
+User-friendly description: Recognize birds by their feathers, even when they cannot fly.
 
 ##### Recognize Mammal Characteristics
 
+Slug: recognizeMammalCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify members by mammary glands and characteristic body coverings without assuming that every mammal gives birth to live young.
+Methodological description: Identify members by mammary glands and characteristic body coverings without assuming that every mammal gives birth to live young.
+User-friendly description: Identify mammals by their defining features without assuming all give live birth.
 
 #### Structure and Functions
 
+Slug: structureAndFunctions
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-The forms of limbs, body coverings, and sensory structures are explained by their roles in locomotion, orientation, and protection against danger.
+Methodological description: The forms of limbs, body coverings, and sensory structures are explained by their roles in locomotion, orientation, and protection against danger.
+User-friendly description: Explore how animal structures help them move, sense and protect themselves.
 
 ##### Relate Limb Structure to Locomotion
 
+Slug: relateLimbStructureToLocomotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the shape of legs, fins, or wings to the requirements of walking, swimming, digging, or flying.
+Methodological description: Relate the shape of legs, fins, or wings to the requirements of walking, swimming, digging, or flying.
+User-friendly description: Connect the shapes of limbs with walking, swimming, digging or flying.
 
 ##### Relate Body Coverings to Their Functions
 
+Slug: relateBodyCoveringsToTheirFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how feathers, fur, scales, and skin provide protection, thermal insulation, or water balance.
+Methodological description: Explain how feathers, fur, scales, and skin provide protection, thermal insulation, or water balance.
+User-friendly description: Explain how fur, feathers, scales and skin protect animal bodies.
 
 ##### Explain the Role of Sensory Organs in Behavior
 
+Slug: explainTheRoleOfSensoryOrgansInBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect perception of sounds, smells, light, or vibrations with orientation and finding food.
+Methodological description: Connect perception of sounds, smells, light, or vibrations with orientation and finding food.
+User-friendly description: See how sensory organs help animals find food and orient themselves.
 
 ##### Identify Protective Adaptations in Animals
 
+Slug: identifyProtectiveAdaptationsInAnimals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the function of camouflage, shells or armor, spines, and other defensive structures in particular situations.
+Methodological description: Identify the function of camouflage, shells or armor, spines, and other defensive structures in particular situations.
+User-friendly description: Recognize structures that help animals defend themselves.
 
 #### Nutrition and Development
+
+Slug: nutritionAndDevelopment
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Food sources differ among animal groups, while their life cycles may involve body transformations or development without a drastic change in form.
+Methodological description: Food sources differ among animal groups, while their life cycles may involve body transformations or development without a drastic change in form.
+User-friendly description: Discover how diets and life cycles differ among animals.
 
 ##### Classify Animals by Diet
 
+Slug: classifyAnimalsByDiet
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify examples as herbivores, carnivores, or omnivores according to actual diets rather than animal names.
+Methodological description: Classify examples as herbivores, carnivores, or omnivores according to actual diets rather than animal names.
+User-friendly description: Classify animals by what they actually eat.
 
 ##### Distinguish Juveniles and Adults
 
+Slug: distinguishJuvenilesAndAdults
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine an individual’s developmental stage by body proportions, coverings, or reproductive maturity.
+Methodological description: Determine an individual’s developmental stage by body proportions, coverings, or reproductive maturity.
+User-friendly description: Recognize differences between juvenile and adult animals.
 
 ##### Explain Complete Metamorphosis in Insects
 
+Slug: explainCompleteMetamorphosisInInsects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the four developmental stages of insects with complete metamorphosis: egg, larva, pupa, and imago; using butterflies, beetles, or flies as examples, distinguish the markedly different functions and structures of larvae and adults.
+Methodological description: Explain the four developmental stages of insects with complete metamorphosis: egg, larva, pupa, and imago; using butterflies, beetles, or flies as examples, distinguish the markedly different functions and structures of larvae and adults.
+User-friendly description: Follow the egg, larva, pupa and adult stages of complete insect metamorphosis.
 
 ##### Compare Development With and Without Metamorphosis
 
+Slug: compareDevelopmentWithAndWithoutMetamorphosis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare life cycles involving radical structural change with cycles in which young individuals resemble adults.
+Methodological description: Compare life cycles involving radical structural change with cycles in which young individuals resemble adults.
+User-friendly description: Compare animals that change form during development with those that do not.
 
 #### Behavior
+
+Slug: behavior
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Animal actions arise in response to signals and needs; observation makes it possible to identify defense, communication, and benefits of living in groups.
+Methodological description: Animal actions arise in response to signals and needs; observation makes it possible to identify defense, communication, and benefits of living in groups.
+User-friendly description: Explore how animal behavior supports communication, protection and group life.
 
 ##### Recognize Defensive Behavior
 
+Slug: recognizeDefensiveBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether fleeing, freezing, distraction, or attacking reduces a threat in a given situation.
+Methodological description: Determine whether fleeing, freezing, distraction, or attacking reduces a threat in a given situation.
+User-friendly description: Recognize behaviors animals use when threatened.
 
 ##### Explain the Role of Signals in Animal Communication
 
+Slug: explainTheRoleOfSignalsInAnimalCommunication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sound, smell, movement, or coloration to information received by another individual.
+Methodological description: Relate sound, smell, movement, or coloration to information received by another individual.
+User-friendly description: Explain how animals communicate using sounds, movement and other signals.
 
 ##### Explain Benefits of Group Behavior
 
+Slug: explainBenefitsOfGroupBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how cooperative foraging, defense, or care for offspring may improve the success of individuals.
+Methodological description: Explain how cooperative foraging, defense, or care for offspring may improve the success of individuals.
+User-friendly description: Discover how group behavior may help animals feed, defend themselves and care for young.
 
 ### Mycology
 
