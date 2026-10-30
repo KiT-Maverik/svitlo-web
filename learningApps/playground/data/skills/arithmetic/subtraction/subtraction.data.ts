@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { subtractMeaning_Skill_Data, subtractZero_Skill_Data, subtractSelf_Skill_Data, crossTenSubtraction_Skill_Data, columnSubtraction_Skill_Data, regrouping_Skill_Data } from './skills';
+import { crossTenSubtraction_Skill_Data, columnSubtraction_Skill_Data } from './skills';
 
 export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
   id: '5953fa57-ee20-48ec-9764-2e9290c97314',
@@ -35,12 +35,8 @@ export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Віднімання",
   },
   skillIds: {
-    subtractMeaning: subtractMeaning_Skill_Data.id,
-    subtractZero: subtractZero_Skill_Data.id,
-    subtractSelf: subtractSelf_Skill_Data.id,
     crossTenSubtraction: crossTenSubtraction_Skill_Data.id,
     columnSubtraction: columnSubtraction_Skill_Data.id,
-    regrouping: regrouping_Skill_Data.id,
   },
   description: {
     methodological: "Removing a part, finding a difference, regrouping place values, and verifying subtraction calculations.",

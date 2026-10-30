@@ -1,10 +1,7 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
-import { addition_SkillGroup_Data } from './addition/addition.data';
 import { subtraction_SkillGroup_Data } from './subtraction/subtraction.data';
-import { additionSubtraction_SkillGroup_Data } from './additionSubtraction/additionSubtraction.data';
 import { multiply_SkillGroup_Data } from './multiply/multiply.data';
-import { divide_SkillGroup_Data } from './divide/divide.data';
 
 export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
   id: '488e1b0d-4c9b-469d-b3ee-dba724111826',
@@ -39,11 +36,8 @@ export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Арифметика",
   },
   groupIds: {
-    addition: addition_SkillGroup_Data.id,
     subtraction: subtraction_SkillGroup_Data.id,
-    additionSubtraction: additionSubtraction_SkillGroup_Data.id,
     multiply: multiply_SkillGroup_Data.id,
-    divide: divide_SkillGroup_Data.id,
   },
   description: {
     methodological: "The meanings and properties of addition, subtraction, multiplication, and division; their relationships; exact and approximate calculation methods; justifications of algorithms; and result verification. The Curriculum determines numerical ranges and degree of formalization.",
