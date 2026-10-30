@@ -1984,262 +1984,462 @@ User-friendly description: Identify natural corridors and barriers between habit
 
 ### Human Geography
 
+Slug: humanGeography
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Settlement, mobility, culture, political territories, livelihoods and economic connections create spatial patterns across inhabited places. The focus is geographic distribution, diffusion, regional relationships and the effects of place, not national political history or business accounting.
+Methodological description: Settlement, mobility, culture, political territories, livelihoods and economic connections create spatial patterns across inhabited places. The focus is geographic distribution, diffusion, regional relationships and the effects of place, not national political history or business accounting.
+User-friendly description: Explore how people, settlements, cultures and economic activities are distributed across places.
 
 #### Population and Settlement
+
+Slug: populationAndSettlement
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Population counts, density, migration, and settlement forms show how human presence is unevenly distributed. The same total population can occupy very different spatial patterns.
+Methodological description: Population counts, density, migration, and settlement forms show how human presence is unevenly distributed. The same total population can occupy very different spatial patterns.
+User-friendly description: Discover why populations and settlements are spread unevenly across regions.
 
 ##### Interpret a population-density map
 
+Slug: interpretAPopulationDensityMap
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish people per unit area from the total number of residents and identify areas with different densities.
+Methodological description: Distinguish people per unit area from the total number of residents and identify areas with different densities.
+User-friendly description: Read how many people live within a given area on a population-density map.
 
 ##### Explain geographic factors shaping settlement patterns
 
+Slug: explainGeographicFactorsShapingSettlementPatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate available water, terrain, transport access, economic activities and other geographic constraints to clustered, linear or dispersed settlements; simple recognition of clustering belongs to the general Spatial Relationships competency.
+Methodological description: Relate available water, terrain, transport access, economic activities and other geographic constraints to clustered, linear or dispersed settlements; simple recognition of clustering belongs to the general Spatial Relationships competency.
+User-friendly description: Explain how water, terrain and access influence where communities settle.
 
 ##### Describe migration as movement between places
 
+Slug: describeMigrationAsMovementBetweenPlaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify origin, destination, and movement direction while distinguishing a migration flow from a static population count.
+Methodological description: Identify origin, destination, and movement direction while distinguishing a migration flow from a static population count.
+User-friendly description: Describe migration by tracing movement from an origin to a destination.
 
 ##### Explain geographic drivers of migration
 
+Slug: explainGeographicDriversOfMigration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect migration patterns with geographic differences in livelihoods, safety, climate, conflict or access to services, distinguishing plausible push and pull conditions from assumptions about any individual's motives.
+Methodological description: Connect migration patterns with geographic differences in livelihoods, safety, climate, conflict or access to services, distinguishing plausible push and pull conditions from assumptions about any individual's motives.
+User-friendly description: Explore geographic reasons why people may move between regions.
 
 ##### Explain urbanization as geographic change
 
+Slug: explainUrbanizationAsGeographicChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how the relative concentration of population and activity in urban areas can grow and reshape settlement networks, land use and infrastructure, without treating all urban growth as the same process.
+Methodological description: Describe how the relative concentration of population and activity in urban areas can grow and reshape settlement networks, land use and infrastructure, without treating all urban growth as the same process.
+User-friendly description: Understand how growing urban populations can reshape land use and settlements.
 
 #### Political Territories
+
+Slug: politicalTerritories
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Jurisdictions organize places using legally and socially defined boundaries that may change over time or be disputed. Political borders may follow rivers or mountains, but they are not the same kind of object as those natural features; cultural-landscape interpretation is covered separately in Cultural Geography.
+Methodological description: Jurisdictions organize places using legally and socially defined boundaries that may change over time or be disputed. Political borders may follow rivers or mountains, but they are not the same kind of object as those natural features; cultural-landscape interpretation is covered separately in Cultural Geography.
+User-friendly description: Discover how political borders and administrative areas organize geographic space.
 
 ##### Locate countries on a map
 
+Slug: locateCountriesOnAMap
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the positions of named sovereign states using a political map and stated time/context, recognizing that boundaries, names and political recognition may be disputed or change. Which countries are studied belongs to the Program, not the Skill identity.
+Methodological description: Identify the positions of named sovereign states using a political map and stated time/context, recognizing that boundaries, names and political recognition may be disputed or change. Which countries are studied belongs to the Program, not the Skill identity.
+User-friendly description: Locate countries while recognizing that boundaries and recognition can change.
 
 ##### Distinguish physical features from political boundaries
 
+Slug: distinguishPhysicalFeaturesFromPoliticalBoundaries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that a river or mountain is a land feature, while a state boundary is a social and legal line that may follow such a feature.
+Methodological description: Recognize that a river or mountain is a land feature, while a state boundary is a social and legal line that may follow such a feature.
+User-friendly description: Distinguish a natural river or mountain from a political boundary.
 
 ##### Interpret administrative territories at different levels
 
+Slug: interpretAdministrativeTerritoriesAtDifferentLevels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate a municipality or region to a country without equating nested administrative units with continents or biomes.
+Methodological description: Relate a municipality or region to a country without equating nested administrative units with continents or biomes.
+User-friendly description: Recognize how municipalities and regions fit into larger administrative areas.
 
 #### Economic Geography
+
+Slug: economicGeography
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Production, services, resources, settlement demand and transport networks are unevenly distributed and connect places. Geographic specialization and cross-regional dependence describe spatial relationships rather than prices or financial accounting.
+Methodological description: Production, services, resources, settlement demand and transport networks are unevenly distributed and connect places. Geographic specialization and cross-regional dependence describe spatial relationships rather than prices or financial accounting.
+User-friendly description: Explore where economic activities happen and how places are linked through transport.
 
 ##### Identify land-use patterns in a settlement or region
 
+Slug: identifyLandUsePatternsInASettlementOrRegion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish residential, agricultural, industrial, and service areas by their spatial functions rather than building appearance alone.
+Methodological description: Distinguish residential, agricultural, industrial, and service areas by their spatial functions rather than building appearance alone.
+User-friendly description: Identify areas used for housing, farming, industry or services.
 
 ##### Trace movement of goods or people through a network
 
+Slug: traceMovementOfGoodsOrPeopleThroughANetwork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow origin, intermediate links, and destination while recognizing the constraints of routes and transfer points.
+Methodological description: Follow origin, intermediate links, and destination while recognizing the constraints of routes and transfer points.
+User-friendly description: Trace how goods or people travel through connected routes and transfer points.
 
 ##### Explain basic geographic factors affecting activity location
 
+Slug: explainBasicGeographicFactorsAffectingActivityLocation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate transport access, resources, population, and environmental constraints to plausible site choices without claiming one universal optimal location.
+Methodological description: Relate transport access, resources, population, and environmental constraints to plausible site choices without claiming one universal optimal location.
+User-friendly description: Explain why access, resources and terrain influence business locations.
 
 ##### Explain geographic specialization of economic activities
 
+Slug: explainGeographicSpecializationOfEconomicActivities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect differences in resources, climate, expertise, access and infrastructure to the concentration of particular types of production or services in different places, without assuming economic specialization is permanent.
+Methodological description: Connect differences in resources, climate, expertise, access and infrastructure to the concentration of particular types of production or services in different places, without assuming economic specialization is permanent.
+User-friendly description: Explore why different regions concentrate on different kinds of economic activity.
 
 ##### Explain geographic interdependence between regions
 
+Slug: explainGeographicInterdependenceBetweenRegions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how exchange of goods, services and resources links different regions so that changes in supply, transport or demand in one place can affect others.
+Methodological description: Describe how exchange of goods, services and resources links different regions so that changes in supply, transport or demand in one place can affect others.
+User-friendly description: Explain how regions depend on one another for goods, services and resources.
 
 #### Cultural Geography
+
+Slug: culturalGeography
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Languages, practices, built environments and cultural identities form geographic distributions that evolve through human movement and interaction. Geographic interpretation describes spatial patterns and diffusion without assigning one culture to all inhabitants of a territory.
+Methodological description: Languages, practices, built environments and cultural identities form geographic distributions that evolve through human movement and interaction. Geographic interpretation describes spatial patterns and diffusion without assigning one culture to all inhabitants of a territory.
+User-friendly description: Discover how cultural practices, languages and landscapes vary across places.
 
 ##### Recognize human influences on a cultural landscape
 
+Slug: recognizeHumanInfluencesOnACulturalLandscape
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify visible patterns such as farmland, places of worship, or historic streets without assuming all communities share one culture.
+Methodological description: Identify visible patterns such as farmland, places of worship, or historic streets without assuming all communities share one culture.
+User-friendly description: Recognize visible human influences on a place's cultural landscape.
 
 ##### Interpret the geographic distribution of cultural characteristics
 
+Slug: interpretTheGeographicDistributionOfCulturalCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use spatial evidence to compare where linguistic, architectural or other cultural practices occur while recognizing overlap, diversity and the limitations of classifications.
+Methodological description: Use spatial evidence to compare where linguistic, architectural or other cultural practices occur while recognizing overlap, diversity and the limitations of classifications.
+User-friendly description: Compare mapped cultural features without assuming everyone in one place is the same.
 
 ##### Explain geographic diffusion of cultural practices
 
+Slug: explainGeographicDiffusionOfCulturalPractices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how cultural ideas or practices may spread between places through migration, exchange and communication, without treating their spatial spread as automatic or uniform.
+Methodological description: Trace how cultural ideas or practices may spread between places through migration, exchange and communication, without treating their spatial spread as automatic or uniform.
+User-friendly description: Explain how cultural practices spread through movement, exchange and communication.
 
 ##### Compare cultural landscapes across places
 
+Slug: compareCulturalLandscapesAcrossPlaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate observable built forms, land use and place meanings to distinctive regional histories and practices, while avoiding stereotypes and one-to-one cultural labels.
+Methodological description: Relate observable built forms, land use and place meanings to distinctive regional histories and practices, while avoiding stereotypes and one-to-one cultural labels.
+User-friendly description: Compare cultural landscapes while respecting local diversity and histories.
 
 ### Environment and Society
+
+Slug: environmentAndSociety
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 6
 
 [Not implemented](#)
 
-Natural resources, environmental constraints and human decisions influence one another across space. Geography examines rates of resource renewal, adaptation to local conditions, transformations of land and the travel of impacts between connected regions.
+Methodological description: Natural resources, environmental constraints and human decisions influence one another across space. Geography examines rates of resource renewal, adaptation to local conditions, transformations of land and the travel of impacts between connected regions.
+User-friendly description: Explore how natural resources, local conditions and human decisions affect one another.
 
 #### Natural Resources
+
+Slug: naturalResources
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-A natural resource is a material, stock or flow valued for human use, and availability depends on formation, replenishment, accessibility and demand. Geographic classifications should not equate renewable with inexhaustible or any deposit with a commercially recoverable resource.
+Methodological description: A natural resource is a material, stock or flow valued for human use, and availability depends on formation, replenishment, accessibility and demand. Geographic classifications should not equate renewable with inexhaustible or any deposit with a commercially recoverable resource.
+User-friendly description: Learn what makes materials and natural processes valuable resources for people.
 
 ##### Explain what makes something a natural resource
 
+Slug: explainWhatMakesSomethingANaturalResource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when a natural material, living stock or environmental flow is usable to satisfy a human need, distinguishing the resource itself from a manufactured product and recognizing that usefulness can change with available technology or circumstances.
+Methodological description: Identify when a natural material, living stock or environmental flow is usable to satisfy a human need, distinguishing the resource itself from a manufactured product and recognizing that usefulness can change with available technology or circumstances.
+User-friendly description: Explain when a natural material or environmental flow can serve human needs.
 
 ##### Explain replenishment and depletion of natural resources
 
+Slug: explainReplenishmentAndDepletionOfNaturalResources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate regeneration, formation or supply rates to rates of human use: sunlight is a continuing energy flow, managed forests can regrow, while fossil fuels and many mineral deposits form far too slowly to replace extraction on human timescales. Renewable does not mean inexhaustible.
+Methodological description: Relate regeneration, formation or supply rates to rates of human use: sunlight is a continuing energy flow, managed forests can regrow, while fossil fuels and many mineral deposits form far too slowly to replace extraction on human timescales. Renewable does not mean inexhaustible.
+User-friendly description: Distinguish resources that can replenish from those depleted faster than they form.
 
 #### Human–Environment Interactions
+
+Slug: humanEnvironmentInteractions
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-People use and alter environmental conditions, while climate, terrain, water and hazards shape the possibilities and constraints for human activities. These influences are reciprocal but not necessarily symmetric; different choices can reduce or intensify impacts.
+Methodological description: People use and alter environmental conditions, while climate, terrain, water and hazards shape the possibilities and constraints for human activities. These influences are reciprocal but not necessarily symmetric; different choices can reduce or intensify impacts.
+User-friendly description: Discover how people adapt to, use and change their environments.
 
 ##### Explain how environmental conditions influence human activities
 
+Slug: explainHowEnvironmentalConditionsInfluenceHumanActivities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate climate, terrain, water or hazard exposure to patterns in settlement, movement, land use or work without suggesting that physical conditions alone determine human choices.
+Methodological description: Relate climate, terrain, water or hazard exposure to patterns in settlement, movement, land use or work without suggesting that physical conditions alone determine human choices.
+User-friendly description: Connect climate, terrain and other conditions with human activities.
 
 ##### Explain how people adapt to geographic environments
 
+Slug: explainHowPeopleAdaptToGeographicEnvironments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect practical geographic responses such as flood-aware settlement planning, water storage or regionally suited construction to environmental constraints without treating every adaptation as risk-free.
+Methodological description: Connect practical geographic responses such as flood-aware settlement planning, water storage or regionally suited construction to environmental constraints without treating every adaptation as risk-free.
+User-friendly description: Recognize ways communities respond to floods, water limits and local terrain.
 
 ##### Identify geographic consequences of land-use change
 
+Slug: identifyGeographicConsequencesOfLandUseChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain plausible effects of paving, deforestation, or irrigation on runoff, habitat, or local conditions.
+Methodological description: Explain plausible effects of paving, deforestation, or irrigation on runoff, habitat, or local conditions.
+User-friendly description: Explain how paving, farming or clearing forests can change local environments.
 
 ##### Trace an environmental impact beyond its source
 
+Slug: traceAnEnvironmentalImpactBeyondItsSource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that air, water, transport, or shared ecosystems can carry effects into downstream or neighboring places.
+Methodological description: Recognize that air, water, transport, or shared ecosystems can carry effects into downstream or neighboring places.
+User-friendly description: Trace how an environmental effect can travel beyond the place where it began.
 
 ### Geographic Inquiry
+
+Slug: geographicInquiry
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 6
 
 [Not implemented](#)
 
-Geographic investigation turns observations about places into reasoned evidence, maps, comparisons and decisions. It includes asking spatial questions, collecting and scrutinizing data, evaluating alternatives and communicating conclusions rather than memorizing a particular set of locations.
+Methodological description: Geographic investigation turns observations about places into reasoned evidence, maps, comparisons and decisions. It includes asking spatial questions, collecting and scrutinizing data, evaluating alternatives and communicating conclusions rather than memorizing a particular set of locations.
+User-friendly description: Use geographic questions, observations and evidence to understand places and make decisions.
 
 #### Evidence and Investigation
 
+Slug: evidenceAndInvestigation
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Geographic claims are supported by observations located in space and time. Evidence may come from fieldwork, maps, images, measurements, or datasets and must be evaluated for limitations.
+Methodological description: Geographic claims are supported by observations located in space and time. Evidence may come from fieldwork, maps, images, measurements, or datasets and must be evaluated for limitations.
+User-friendly description: Discover how to investigate spatial patterns using reliable, located observations.
 
 ##### Formulate a question about a spatial pattern
 
+Slug: formulateAQuestionAboutASpatialPattern
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ask a tractable question involving location, distribution, proximity, or change rather than a factual place-name quiz.
+Methodological description: Ask a tractable question involving location, distribution, proximity, or change rather than a factual place-name quiz.
+User-friendly description: Ask an investigable question about where something is or how its pattern changes.
 
 ##### Collect and record geographically referenced observations
 
+Slug: collectAndRecordGeographicallyReferencedObservations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Associate measurements or descriptions with sufficient place and time context to make comparisons meaningful.
+Methodological description: Associate measurements or descriptions with sufficient place and time context to make comparisons meaningful.
+User-friendly description: Record geographic observations with enough location and time information.
 
 ##### Assess limitations of geographic data sources
 
+Slug: assessLimitationsOfGeographicDataSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Check coverage, age, resolution, classification, and possible bias before drawing conclusions from a map or dataset.
+Methodological description: Check coverage, age, resolution, classification, and possible bias before drawing conclusions from a map or dataset.
+User-friendly description: Recognize when a map or geographic dataset is incomplete, outdated or biased.
 
 #### Decisions and Communication
+
+Slug: decisionsAndCommunication
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-A geographic recommendation combines evidence about places with competing objectives and uncertainty. Maps can communicate reasoning, but they do not settle value judgments on their own.
+Methodological description: A geographic recommendation combines evidence about places with competing objectives and uncertainty. Maps can communicate reasoning, but they do not settle value judgments on their own.
+User-friendly description: Learn to compare places and explain decisions using geographic evidence.
 
 ##### Compare locations against stated geographic criteria
 
+Slug: compareLocationsAgainstStatedGeographicCriteria
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate alternatives using relevant properties such as accessibility, hazard exposure, and resource availability without silently changing the criteria.
+Methodological description: Evaluate alternatives using relevant properties such as accessibility, hazard exposure, and resource availability without silently changing the criteria.
+User-friendly description: Compare possible locations against clearly defined geographic needs.
 
 ##### Explain trade-offs of a proposed spatial decision
 
+Slug: explainTradeOffsOfAProposedSpatialDecision
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how a new road, park, settlement, or conservation area might benefit some needs while creating other costs.
+Methodological description: Show how a new road, park, settlement, or conservation area might benefit some needs while creating other costs.
+User-friendly description: Explain benefits and costs of decisions about roads, parks or settlements.
 
 ##### Communicate a geographic conclusion with evidence
 
+Slug: communicateAGeographicConclusionWithEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use an appropriately labeled map, comparison, or spatial description to support a claim and state material limitations.
+Methodological description: Use an appropriately labeled map, comparison, or spatial description to support a claim and state material limitations.
+User-friendly description: Support a geographic conclusion with an appropriate map or spatial evidence.
