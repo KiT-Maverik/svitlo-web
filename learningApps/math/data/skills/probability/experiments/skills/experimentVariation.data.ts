@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { experiments_Skills_Ids } from './index.ids';
 
 export const experimentVariation_Skill_Data = buildSkillConfig({
-  id: experiments_Skills_Ids.experimentVariation,
+  id: '90f7775d-bb0d-4b7b-85fd-d56870116d3f',
   name: {
     en: "Comparing results of repeated random experiments",
     lt: "Kartojamų atsitiktinių bandymų rezultatų palyginimas",

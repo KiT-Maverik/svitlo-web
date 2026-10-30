@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { circles_Skills_Ids } from './index.ids';
 
 export const radiusDiameter_Skill_Data = buildSkillConfig({
-  id: circles_Skills_Ids.radiusDiameter,
+  id: '200f6633-8027-4330-8218-b6e4c1cc1750',
   name: {
     en: "Relating the center, radius and diameter",
     lt: "Centro, spindulio ir skersmens ryšys",

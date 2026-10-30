@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { lines_Skills_Ids } from './index.ids';
 
 export const linesAndPoints_Skill_Data = buildSkillConfig({
-  id: lines_Skills_Ids.linesAndPoints,
+  id: '32258326-50ad-496c-a202-059bff6828b6',
   name: {
     en: "Distinguishing points and line types",
     lt: "Taškų ir linijų tipų atskyrimas",

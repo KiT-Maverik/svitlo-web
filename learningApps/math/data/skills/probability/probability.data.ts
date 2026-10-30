@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { probability_SkillDomain_Ids } from './probability.ids';
-import { probability_SkillGroups_Ids } from './index.ids';
+import { events_SkillGroup_Data, experiments_SkillGroup_Data } from './index';
 
 export const probability_SkillDomain_Data = buildSkillDomainConfig({
-  id: probability_SkillDomain_Ids.probability,
+  id: '55bc6d54-f5fc-49fc-8e7f-8d31230e1aca',
   name: {
     en: "Probability",
     lt: "Tikimybė",
@@ -34,6 +33,9 @@ export const probability_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Prawdopodobieństwo",
     uk: "Ймовірність",
   },
-  groupIds: probability_SkillGroups_Ids,
+  groupIds: {
+    events: events_SkillGroup_Data.id,
+    experiments: experiments_SkillGroup_Data.id,
+  },
   description: { methodological: "Possible outcomes of random experiments, events and their probabilities, comparisons of chance, independence or dependence of outcomes, and random variability in repeated observations." },
 });

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { circles_Skills_Ids } from './index.ids';
 
 export const circleDisk_Skill_Data = buildSkillConfig({
-  id: circles_Skills_Ids.circleDisk,
+  id: 'e875516d-7466-4b91-b249-1b4e0de6b052',
   name: {
     en: "Distinguishing the circumference and the disk",
     lt: "Apskritimo ir skritulio atskyrimas",

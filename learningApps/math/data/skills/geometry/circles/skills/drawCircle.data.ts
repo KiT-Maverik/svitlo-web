@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { circles_Skills_Ids } from './index.ids';
 
 export const drawCircle_Skill_Data = buildSkillConfig({
-  id: circles_Skills_Ids.drawCircle,
+  id: '66ec42c0-7450-4b2d-93b5-d5fd0ef0f02f',
   name: {
     en: "Drawing circles of a given radius with a compass",
     lt: "Apskritimo braižymas skriestuvu pagal spindulį",

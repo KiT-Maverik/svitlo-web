@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { lines_Skills_Ids } from './index.ids';
 
 export const ray_Skill_Data = buildSkillConfig({
-  id: lines_Skills_Ids.ray,
+  id: '1f1740cd-914a-4945-b564-5124a982c735',
   name: {
     en: "Distinguishing rays, segments and lines",
     lt: "Spindulių, atkarpų ir tiesių atskyrimas",

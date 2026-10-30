@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { transformations_Skills_Ids } from './index.ids';
 
 export const translationsReflections_Skill_Data = buildSkillConfig({
-  id: transformations_Skills_Ids.translationsReflections,
+  id: 'd93e1819-5d86-4cfe-b200-44ad0cc8478c',
   name: {
     en: "Translating and reflecting figures",
     lt: "Figūrų pastūmimas ir atspindėjimas",

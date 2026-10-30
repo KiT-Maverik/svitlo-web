@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { figures_SkillGroup_Ids } from './figures.ids';
-import { figures_Skills_Ids } from './skills/index.ids';
+import { identify2dShapes_Skill_Data, shapeAttributes_Skill_Data, polygon_Skill_Data, triangleRectangleSquare_Skill_Data, composeDecomposeShapes_Skill_Data } from './skills';
 
 export const figures_SkillGroup_Data = buildSkillGroupConfig({
-  id: figures_SkillGroup_Ids.figures,
+  id: 'd4c9c57c-09a9-43f5-a7c5-3544d3133e51',
   name: {
     en: "Plane figures",
     lt: "Plokščiosios figūros",
@@ -34,7 +33,13 @@ export const figures_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Figury płaskie",
     uk: "Плоскі фігури",
   },
-  skillIds: figures_Skills_Ids,
+  skillIds: {
+    identify2dShapes: identify2dShapes_Skill_Data.id,
+    shapeAttributes: shapeAttributes_Skill_Data.id,
+    polygon: polygon_Skill_Data.id,
+    triangleRectangleSquare: triangleRectangleSquare_Skill_Data.id,
+    composeDecomposeShapes: composeDecomposeShapes_Skill_Data.id,
+  },
   description: {
     methodological: "Properties of polygons and other plane figures that remain independent of scale or orientation, and composing shapes from parts.",
     fe: {

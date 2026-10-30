@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { area_Skills_Ids } from './index.ids';
 
 export const rectangleAreaModel_Skill_Data = buildSkillConfig({
-  id: area_Skills_Ids.rectangleAreaModel,
+  id: '18927cbb-05bf-4f99-9d85-aaf60512417f',
   name: {
     en: "Relating rectangle area to side-length multiplication",
     lt: "Stačiakampio ploto siejimas su kraštinių sandauga",

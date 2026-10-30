@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { orientation_Skills_Ids } from './index.ids';
 
 export const positionWords_Skill_Data = buildSkillConfig({
-  id: orientation_Skills_Ids.positionWords,
+  id: '30001f22-2352-4068-a1be-f0e8f0278588',
   name: {
     en: "Describing relative positions",
     lt: "Santykinės padėties apibūdinimas",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { solids_Skills_Ids } from './index.ids';
 
 export const shapeOnSolidSurface_Skill_Data = buildSkillConfig({
-  id: solids_Skills_Ids.shapeOnSolidSurface,
+  id: 'a9355c95-a65a-472e-bb7d-f11c7a23fe49',
   name: {
     en: "Identifying plane figures on solid surfaces",
     lt: "Plokščiųjų figūrų atpažinimas erdvinių kūnų paviršiuose",

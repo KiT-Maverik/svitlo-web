@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { transformations_Skills_Ids } from './index.ids';
 
 export const turnsQuarters_Skill_Data = buildSkillConfig({
-  id: transformations_Skills_Ids.turnsQuarters,
+  id: '578cbf11-a5f5-4ca2-ba07-6957f7c8f510',
   name: {
     en: "Quarter, half and three-quarter turns",
     lt: "Ketvirčio, pusės ir trijų ketvirčių apsisukimai",

@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { geometry_SkillDomain_Ids } from './geometry.ids';
-import { geometry_SkillGroups_Ids } from './index.ids';
+import { orientation_SkillGroup_Data, figures_SkillGroup_Data, solids_SkillGroup_Data, lines_SkillGroup_Data, angles_SkillGroup_Data, circles_SkillGroup_Data, transformations_SkillGroup_Data, perimeter_SkillGroup_Data, area_SkillGroup_Data, perimeterArea_SkillGroup_Data } from './index';
 
 export const geometry_SkillDomain_Data = buildSkillDomainConfig({
-  id: geometry_SkillDomain_Ids.geometry,
+  id: '5586a9c0-8695-49c2-97b8-ea55899eab69',
   name: {
     en: "Geometry",
     lt: "Geometrija",
@@ -34,7 +33,18 @@ export const geometry_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Geometria",
     uk: "Геометрія",
   },
-  groupIds: geometry_SkillGroups_Ids,
+  groupIds: {
+    orientation: orientation_SkillGroup_Data.id,
+    figures: figures_SkillGroup_Data.id,
+    solids: solids_SkillGroup_Data.id,
+    lines: lines_SkillGroup_Data.id,
+    angles: angles_SkillGroup_Data.id,
+    circles: circles_SkillGroup_Data.id,
+    transformations: transformations_SkillGroup_Data.id,
+    perimeter: perimeter_SkillGroup_Data.id,
+    area: area_SkillGroup_Data.id,
+    perimeterArea: perimeterArea_SkillGroup_Data.id,
+  },
   description: {
     methodological: "Spatial relationships, properties of plane figures and solids, lines and angles, geometric transformations, and measurement of perimeter and area.",
     fe: {

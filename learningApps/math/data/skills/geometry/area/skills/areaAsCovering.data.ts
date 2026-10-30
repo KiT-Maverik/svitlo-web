@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { area_Skills_Ids } from './index.ids';
 
 export const areaAsCovering_Skill_Data = buildSkillConfig({
-  id: area_Skills_Ids.areaAsCovering,
+  id: '6b0d5eb1-8d6f-448d-b1db-051779916e97',
   name: {
     en: "Understanding area as coverage by unit squares",
     lt: "Ploto supratimas kaip padengimo vienetiniais kvadratais",

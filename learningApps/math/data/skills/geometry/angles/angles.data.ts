@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { angles_SkillGroup_Ids } from './angles.ids';
-import { angles_Skills_Ids } from './skills/index.ids';
+import { angleAsTurn_Skill_Data, rightAngle_Skill_Data, angleTypes_Skill_Data } from './skills';
 
 export const angles_SkillGroup_Data = buildSkillGroupConfig({
-  id: angles_SkillGroup_Ids.angles,
+  id: '06ab1925-9cd5-41fc-ad2d-52d76270a2cd',
   name: {
     en: "Angles",
     lt: "Kampai",
@@ -34,7 +33,11 @@ export const angles_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Kąty",
     uk: "Кути",
   },
-  skillIds: angles_Skills_Ids,
+  skillIds: {
+    angleAsTurn: angleAsTurn_Skill_Data.id,
+    rightAngle: rightAngle_Skill_Data.id,
+    angleTypes: angleTypes_Skill_Data.id,
+  },
   description: {
     methodological: "Angles as relationships between rays and as measures of turn, with the right angle serving as a reference for classification.",
     fe: {

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { lines_Skills_Ids } from './index.ids';
 
 export const segment_Skill_Data = buildSkillConfig({
-  id: lines_Skills_Ids.segment,
+  id: '174ccc59-ccc9-4c20-83ec-1882af1c3ec8',
   name: {
     en: "Constructing and labeling line segments",
     lt: "Atkarpų braižymas ir žymėjimas",

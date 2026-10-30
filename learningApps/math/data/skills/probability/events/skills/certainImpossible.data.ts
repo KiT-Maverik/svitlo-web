@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { events_Skills_Ids } from './index.ids';
 
 export const certainImpossible_Skill_Data = buildSkillConfig({
-  id: events_Skills_Ids.certainImpossible,
+  id: '96ed02b9-b56e-4498-8e3e-195e76eceaf0',
   name: {
     en: "Distinguishing certain and impossible events",
     lt: "Tikro ir neįmanomo įvykio atskyrimas",

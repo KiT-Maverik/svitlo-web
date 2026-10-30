@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { events_Skills_Ids } from './index.ids';
 
 export const listOutcomes_Skill_Data = buildSkillConfig({
-  id: events_Skills_Ids.listOutcomes,
+  id: '97f45a5a-d5bb-4618-89e5-11be5fb4f02c',
   name: {
     en: "Listing possible outcomes of a simple random experiment",
     lt: "Paprasto atsitiktinio bandymo galimų baigčių išvardijimas",
