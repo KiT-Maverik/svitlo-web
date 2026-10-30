@@ -48,7 +48,7 @@ Use these **current architectural examples**, not mandatory source files to dupl
 | `LightPropagationSimulation` | `theory/resources/scenes/LightPropagationSimulation/LightPropagationSimulation.tsx` and `LightPropagationSimulation.module.css` | Local state, playback/speed controls, reduced-motion preference, CSS logical properties, accessible labels |
 | `Practice` | `practice/resources/scenes/Practice/Practice.tsx`, `Practice.constants.ts` and `Practice.module.css` | Interactive selection, domain constants separated from JSX, localized numbers and text, RTL-aware layout |
 | `Checkpoint` | `theory/resources/scenes/Checkpoint/Checkpoint.tsx` | Prop-free Scene composing an existing widget using localized messages; **child widget props do not violate the Scene-root rule** |
-| `Scene resource registration` | `theory/resources/scenes/scenes.data.ts`, `index.data.ts`, `index.ids.ts`; practice equivalents | Stable resource IDs, `blockType: 'scene'`, `createElement(SceneName)` **without props**, level-specific exports |
+| `Scene resource registration` | `theory/resources/scenes/scenes.data.ts`, `index.ts`, `index.ids.ts`; practice equivalents | Stable resource IDs, `blockType: 'scene'`, `createElement(SceneName)` **without props**, level-specific exports |
 
 Also inspect the exact runtime wiring:
 
@@ -95,7 +95,7 @@ This is an illustrative **split across files**: do not place resource-registrati
 1. Write `<SceneName>.tsx` as a named, zero-prop Scene root. Keep independent data/constants, styles and localizations in co-located files where appropriate.
 2. Define or reuse an **authoring-time stable Scene Resource ID** in the owning Section's `index.ids.ts`. Do not generate random IDs at render time.
 3. Register the actual React element (`createElement(SceneName)`, no props) in the owning Section's `scenes.data.ts` with `id`, `blockType: 'scene'` and `component`, satisfying the actual `SceneResource_Config` type.
-4. Export only the appropriate resource collection from the owning `index.data.ts`; do not flatten unrelated resources into a global barrel.
+4. Export only the appropriate resource collection from the owning `index.ts`; do not flatten unrelated resources into a global barrel.
 5. Add the resource to the **intended ordered Section content** through the current Lesson/Section data contract. Do not assume a Scene auto-renders merely because its file exists.
 6. When Scene text exists, register the complete Scene locale dictionaries under a **unique matching key** in the owning Lesson's `sceneLocales`. The Scene reads that same key from context. Do not inject an independent translation provider inside the Scene.
 7. Verify the Lesson assembles and renders the resource with the correct selected locale and maintains existing Lesson navigation/state behavior.
@@ -186,7 +186,7 @@ Deliver a reviewable code change inside the **actual textbook application** (not
 - `<SceneName>/<SceneName>.locale.ts`: complete typed translations where visible or accessible text exists.
 - `<SceneName>/<SceneName>.module.css` (or existing styling convention), plus optional `*.constants.ts` / helper files if truly needed.
 - **Required** `<SceneName>/<SceneName>.unit.spec.ts` with Scene-specific automated tests compliant with repository-wide and package-local rules, plus optional co-located fixtures/mocks. Parent Lesson or reused-widget tests are not a substitute. UI test fixtures may supply **provider props**, but must not change the Scene root's public zero-prop API.
-- Parent `scenes.data.ts` / `index.data.ts` / `index.ids.ts` updates for the typed `SceneResource_Config`, plus the parent Lesson's `sceneLocales` and intended Section's ordered content.
+- Parent `scenes.data.ts` / `index.ts` / `index.ids.ts` updates for the typed `SceneResource_Config`, plus the parent Lesson's `sceneLocales` and intended Section's ordered content.
 - A concise **chat completion report**: the **approved Screenwriter specification used** (or a clear blocking notice if absent), implementation scope and any deviations, paths changed, **own Scene test file(s)** and test commands/results, LTR/RTL checks, locale coverage, accessible alternatives, **offline asset/dependency readiness and weak-device compromises**, accessibility/performance checks. **Any unresolved disability-access barrier must be called out explicitly, with the location of the final-line `TODO(a11y)`, affected users, functionality impacted and proposed follow-up**; do not bury it under generic 'remaining concerns'.
 
 **Scope guard:** This Skill is an **engineering implementation workflow** under the Coding Agent Persona, **not a instructional design-authoring workflow**. The Educational Screenwriter owns the approved Scene specification and instructional scenario; the Coding Agent owns its faithful technical implementation, artistic animation details and accessibility within that scenario. **Without the Screenwriter's written specification, do not begin work on the Scene.** Do not invent lesson facts, new narrative/learning activities, assessment scoring, unapproved interfaces, or cross-textbook dependencies.

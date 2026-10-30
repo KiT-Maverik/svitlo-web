@@ -22,10 +22,10 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
    - `shared/contracts/src/types/languages.ts` — `LanguageCode`; verify the current supported-language list through the published localization contract.
 5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
 6. **Reference implementation (read-only example):** inspect the **existing Mathematics taxonomy** in `learningApps/math/src/data/skillsTaxonomy/`, especially:
-   - `index.data.ts` and `index.ids.ts`;
+   - `index.ts` and `index.ids.ts`;
    - `arithmetic/arithmetic.data.ts`, `arithmetic/arithmetic.ids.ts`, `arithmetic/index.data.ts`, `arithmetic/index.ids.ts`;
-   - `arithmetic/addition/addition.data.ts`, `addition.ids.ts`, `index.data.ts`;
-   - `arithmetic/addition/skills/addMeaning.data.ts`, `index.data.ts`, `index.ids.ts`;
+   - `arithmetic/addition/addition.data.ts`, `addition.ids.ts`, `index.ts`;
+   - `arithmetic/addition/skills/addMeaning.data.ts`, `index.ts`, `index.ids.ts`;
    - `learningApps/math/src/utils/builders/config/skillTaxonomyIndex.spec.ts` and the taxonomy builder/translation tests.
 
 **Distinguish the two paths:** Math textbook's `src/math/skillsTaxonomy/` is an **existing working reference**, not the destination for a new textbook. The canonical destination for this Skill is **`<PackageRoot>/src/data/skillsTaxonomy/`** (camelCase). Do not copy a stale playground import alias or modify the playground merely because it contains the examples. If a current shared-engine contract differs from a textbook example, the current contract wins; explain a material incompatibility.
@@ -68,27 +68,27 @@ Create or extend only the selected taxonomy subtree in the **specific textbook p
 └── src/
     └── data/
         └── skillsTaxonomy/
-            ├── index.data.ts            # Domain Data exports ONLY
+            ├── index.ts            # Domain Data exports ONLY
             ├── index.ids.ts             # Domain ID-only exports ONLY
             └── <domainCamelCase>/
                 ├── <domainCamelCase>.data.ts    # Domain config
                 ├── <domainCamelCase>.ids.ts     # Domain UUID
-                ├── index.data.ts                # this Domain Data ONLY
+                ├── index.ts                # this Domain Data ONLY
                 ├── index.ids.ts                 # immediate Group or direct Skill ID mapping (based on Domain mode)
                 └── <groupCamelCase>/
                     ├── <groupCamelCase>.data.ts  # Group config
                     ├── <groupCamelCase>.ids.ts   # Group UUID
-                    ├── index.data.ts             # this Group Data ONLY
+                    ├── index.ts             # this Group Data ONLY
                     ├── index.ids.ts              # Group UUID export; no Skill Data
                     └── skills/
                         ├── <skillCamelCase>.data.ts
-                        ├── index.data.ts         # Skills in THIS Group ONLY
+                        ├── index.ts         # Skills in THIS Group ONLY
                         └── index.ids.ts          # Skill UUIDs in THIS Group ONLY
 ~~~
 
-Repeat Domain, Group, and Skill directories strictly according to `docs/skills/taxonomy.md`. Names are **camelCase** directory and filename segments; entity Data files use `*.data.ts`, ID literals/maps use `*.ids.ts`, and two index surfaces are named `index.data.ts` / `index.ids.ts`.
+Repeat Domain, Group, and Skill directories strictly according to `docs/skills/taxonomy.md`. Names are **camelCase** directory and filename segments; entity Data files use `*.data.ts`, ID literals/maps use `*.ids.ts`, and two index surfaces are named `index.ts` / `index.ids.ts`.
 
-The reference Mathematics tree has `index.data.ts` on every collection level, but some legacy Group directories have no `index.ids.ts`. **For new textbook output, create both `index.data.ts` and `index.ids.ts` at each level**, including Groups: the Group-level `index.ids.ts` is a named, ID-only re-export of its existing `<group>.ids.ts`, **not** a second UUID literal or a recursive aggregator. Reuse existing UUIDs, avoid duplicate ID definitions, and never re-export child Skill configurations. Root, Domain, and Skills ID indexes retain their distinct, direct-level responsibilities.
+The reference Mathematics tree has `index.ts` on every collection level, but some legacy Group directories have no `index.ids.ts`. **For new textbook output, create both `index.ts` and `index.ids.ts` at each level**, including Groups: the Group-level `index.ids.ts` is a named, ID-only re-export of its existing `<group>.ids.ts`, **not** a second UUID literal or a recursive aggregator. Reuse existing UUIDs, avoid duplicate ID definitions, and never re-export child Skill configurations. Root, Domain, and Skills ID indexes retain their distinct, direct-level responsibilities.
 
 Use the target package's actual alias/export configuration for imports (`@svitlo/engine/taxonomy` for shared builders where available). Do not assume the reference textbook's `@/utils` alias applies in a different package. Avoid duplicating shared engine types or builders inside `src/data/`.
 
@@ -146,7 +146,7 @@ Use the repo's configured string quote preference independently of the **no-quot
 3. **Implement Skill Data:** write one `<skill>.data.ts` per approved Skill with `buildSkillConfig`, its ID-only import, and full `name` dictionary. Update the local `skills/index.data.ts` with **only the Group's Skill Data**.
 4. **Implement Group Data:** create/update `<group>.data.ts` with `buildSkillGroupConfig`, full `name`, own UUID, and exact `skillIds` from its `skills/index.ids.ts`. Maintain `<group>/index.data.ts` as **Group Data only** and `<group>/index.ids.ts` as the **Group UUID-only** re-export.
 5. **Implement Domain Data:** create/update `<domain>/index.ids.ts` with the direct Groups' UUIDs only; build `<domain>.data.ts` using `buildSkillDomainConfig` with full `name`, own UUID, and exact `groupIds`. Keep `<domain>/index.data.ts` **Domain Data only**.
-6. **Complete root indexes:** update root `index.data.ts` to export the selected Domain Data entries and root `index.ids.ts` to export Domain ID dictionaries. Do not aggregate nested Group/Skill Data into the root.
+6. **Complete root indexes:** update root `index.ts` to export the selected Domain Data entries and root `index.ids.ts` to export Domain ID dictionaries. Do not aggregate nested Group/Skill Data into the root.
 7. **Verify what is currently possible:** cross-check taxonomy names against source paths and immediate-child ID maps, duplicate/missing IDs, wrong-level exports, circular dependencies, dynamic UUID generation, and translations. Report any unverified cross-file identity/registration requirements as **pending build-time integrity checks**; do not misattribute them to current TypeScript builders.
 8. **Update taxonomy implementation links only after verified implementation:** replace the entity's single standalone Markdown link in `<PackageRoot>/docs/skills/taxonomy.md` with a relative link to its actual `*.data.ts` file. The visible link text must be the **complete file basename, including every suffix and the `.ts` extension** (for example, `[addition.data.ts](%VERIFIED_RELATIVE_PATH%)`); do not prefix the link with `Code:`. Recompute only the **Code files** counts. Preserve headings, descriptions, hierarchy and all other implementation links. **Never create or update individual Markdown Definition files.** An unverified/partial implementation retains exactly `[Not implemented](#)`.
 9. **Stop:** report only the bounded task, validations, and anything incomplete. Do not proceed to unrelated Domains, lessons, question generation, or assessment.
@@ -170,7 +170,7 @@ Before reporting success, run the target package's available checks and add/fix 
 Produce a reviewable code change that includes:
 
 1. **Implementations** in `<PackageRoot>/src/data/skillsTaxonomy/` following exactly the approved hierarchy and naming convention.
-2. **Complete source files** for in-scope entities: `*.data.ts`, stable `*.ids.ts` / child ID dictionaries, and correctly scoped `index.data.ts` / `index.ids.ts` at **every** level, with no duplicated UUID values.
+2. **Complete source files** for in-scope entities: `*.data.ts`, stable `*.ids.ts` / child ID dictionaries, and correctly scoped `index.ts` / `index.ids.ts` at **every** level, with no duplicated UUID values.
 3. **Fully translated names** for all required language keys in every new or changed Skill/Group/Domain; no shortcuts.
 4. **Tests or updated verification** covering hierarchy integrity, ID reference independence, complete localization and shallow barrel exports.
 5. **Updated Code links/counts** in `<PackageRoot>/docs/skills/taxonomy.md`, preserving its approved semantic descriptions, entity names and hierarchy. No redundant per-entity Markdown files.
