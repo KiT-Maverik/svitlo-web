@@ -33,4 +33,5 @@ export const moreLessEqual_Skill_Data = buildSkillConfig({
     pl: "Większe, mniejsze lub równe ilości",
     uk: "Більше, менше або дорівнює для кількостей",
   },
+  description: { methodological: "Order relations between quantities depend on set cardinalities, not the size, area, or mass of the objects. Compare by one-to-one matching or by the numbers corresponding to the sets." },
 });

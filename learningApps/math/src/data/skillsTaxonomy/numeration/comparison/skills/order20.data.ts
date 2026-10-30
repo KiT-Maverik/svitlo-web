@@ -33,4 +33,5 @@ export const order20_Skill_Data = buildSkillConfig({
     pl: "Porządkowanie liczb 0–20",
     uk: "Упорядкування чисел 0–20",
   },
+  description: { methodological: "Ordering numbers relies on the order relation: each next value in a nondecreasing sequence is no smaller, and in a nonincreasing sequence no greater. Equal repeated values do not break non-strict order." },
 });

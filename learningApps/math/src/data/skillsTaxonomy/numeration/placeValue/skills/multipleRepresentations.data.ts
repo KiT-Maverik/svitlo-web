@@ -33,4 +33,5 @@ export const multipleRepresentations_Skill_Data = buildSkillConfig({
     pl: "Łączenie reprezentacji tej samej liczby",
     uk: "Співвіднесення різних моделей числа",
   },
+  description: { methodological: "A positional numeral, a set of place-value blocks, a point on a number line, and the cardinality of a finite set can represent the same natural number. Converting among these preserves value rather than appearance." },
 });
