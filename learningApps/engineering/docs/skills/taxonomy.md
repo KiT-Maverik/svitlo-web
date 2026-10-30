@@ -1416,835 +1416,1480 @@ User-friendly description: Order construction steps according to their structura
 
 ### Water and Environmental Infrastructure
 
+Slug: waterAndEnvironmentalInfrastructure
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Public services depend on connected intake, treatment, storage and collection systems. This domain concerns engineered infrastructure rather than natural water circulation or public-health instruction.
+Methodological description: Public services depend on connected intake, treatment, storage and collection systems. This domain concerns engineered infrastructure rather than natural water circulation or public-health instruction.
+User-friendly description: Explore engineered systems for safe water, drainage and environmental protection.
 
 #### Water Supply
 
+Slug: waterSupply
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Safe, reliable distribution requires treatment and controlled hydraulic delivery from sources to users.
+Methodological description: Safe, reliable distribution requires treatment and controlled hydraulic delivery from sources to users.
+User-friendly description: Discover how water reaches homes and other places safely.
 
 ##### Trace drinking-water supply
 
+Slug: traceDrinkingWaterSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow a source through treatment, storage and distribution to a point of use.
+Methodological description: Follow a source through treatment, storage and distribution to a point of use.
+User-friendly description: Trace how water travels from a source through treatment and supply networks.
 
 ##### Drinking-water treatment
 
+Slug: drinkingWaterTreatment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish filtration, particle separation and disinfection as different barriers.
+Methodological description: Distinguish filtration, particle separation and disinfection as different barriers.
+User-friendly description: Recognize the main stages of making drinking water suitable for use.
 
 ##### Pressure management
 
+Slug: pressureManagement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate tanks, pumps and control devices to service pressure and continuity.
+Methodological description: Relate tanks, pumps and control devices to service pressure and continuity.
+User-friendly description: Understand how supply systems maintain appropriate water pressure.
 
 ##### Identify distribution leakage
 
+Slug: identifyDistributionLeakage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret pressure or flow irregularities as possible evidence of lost water.
+Methodological description: Interpret pressure or flow irregularities as possible evidence of lost water.
+User-friendly description: Identify signs of water leaks in distribution infrastructure.
 
 #### Wastewater and Drainage
+
+Slug: wastewaterAndDrainage
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Sewage, storm runoff and treated discharge have different handling requirements; networks must account for capacity and contamination.
+Methodological description: Sewage, storm runoff and treated discharge have different handling requirements; networks must account for capacity and contamination.
+User-friendly description: Explore how wastewater and rainwater are collected and managed.
 
 ##### Trace wastewater collection
 
+Slug: traceWastewaterCollection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow used water from connected properties to treatment facilities.
+Methodological description: Follow used water from connected properties to treatment facilities.
+User-friendly description: Follow wastewater from buildings to collection and treatment facilities.
 
 ##### Wastewater treatment
 
+Slug: wastewaterTreatment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the different purposes of physical and biological treatment processes.
+Methodological description: Identify the different purposes of physical and biological treatment processes.
+User-friendly description: Recognize the physical stages used to treat wastewater.
 
 ##### Stormwater drainage
 
+Slug: stormwaterDrainage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace runoff from a built surface through inlet, conveyance and discharge or retention.
+Methodological description: Trace runoff from a built surface through inlet, conveyance and discharge or retention.
+User-friendly description: Explore how drains and channels carry runoff away from populated areas.
 
 ##### Flood-control structures
 
+Slug: floodControlStructures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate barriers, detention or controlled diversion to flood-risk reduction and its limits.
+Methodological description: Relate barriers, detention or controlled diversion to flood-risk reduction and its limits.
+User-friendly description: Understand how barriers and storage works can reduce flood damage.
 
 #### Hydraulic Infrastructure
+
+Slug: hydraulicInfrastructure
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Flow and water levels can be regulated by built chambers, gates and channels that connect transport or supply routes.
+Methodological description: Flow and water levels can be regulated by built chambers, gates and channels that connect transport or supply routes.
+User-friendly description: Discover how canals, locks and valves manage moving water.
 
 ##### Canal locks
 
+Slug: canalLocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace chamber filling, gates and valves used to move a vessel between levels.
+Methodological description: Trace chamber filling, gates and valves used to move a vessel between levels.
+User-friendly description: Explain how a canal lock raises or lowers a vessel between water levels.
 
 ##### Flow-control valves
 
+Slug: flowControlValves
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify isolation, throttling or direction-control functions in piping.
+Methodological description: Identify isolation, throttling or direction-control functions in piping.
+User-friendly description: Recognize how valves regulate water and other fluid flows.
 
 ##### Compare channels and pipes
 
+Slug: compareChannelsAndPipes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish free-surface and enclosed conveyance when choosing a route.
+Methodological description: Distinguish free-surface and enclosed conveyance when choosing a route.
+User-friendly description: Compare open channels and enclosed pipes for transporting water.
 
 #### Environmental Control
+
+Slug: environmentalControl
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Public environmental infrastructure also treats polluted air and solid waste. The engineering problem is selecting and integrating collection, containment and treatment equipment rather than merely recognizing that pollution exists.
+Methodological description: Public environmental infrastructure also treats polluted air and solid waste. The engineering problem is selecting and integrating collection, containment and treatment equipment rather than merely recognizing that pollution exists.
+User-friendly description: Learn how engineering systems reduce emissions and manage waste.
 
 ##### Air-filtration equipment
 
+Slug: airFiltrationEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace air through collection, filter media and discharge components while recognizing the importance of particle size and maintenance.
+Methodological description: Trace air through collection, filter media and discharge components while recognizing the importance of particle size and maintenance.
+User-friendly description: Recognize how air filters capture unwanted particles.
 
 ##### Industrial emissions control
 
+Slug: industrialEmissionsControl
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify capture and treatment stages intended to reduce selected pollutants before a process stream is released.
+Methodological description: Identify capture and treatment stages intended to reduce selected pollutants before a process stream is released.
+User-friendly description: Identify equipment used to control emissions from industrial processes.
 
 ##### Solid-waste processing systems
 
+Slug: solidWasteProcessingSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace collection, sorting, material recovery and residual handling through an engineered waste-management facility.
+Methodological description: Trace collection, sorting, material recovery and residual handling through an engineered waste-management facility.
+User-friendly description: Trace how facilities sort, transform and process solid waste.
 
 ##### Contaminated-site remediation equipment
 
+Slug: contaminatedSiteRemediationEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how containment, extraction or treatment systems can address a specified contaminant without assuming one method works for every site.
+Methodological description: Identify how containment, extraction or treatment systems can address a specified contaminant without assuming one method works for every site.
+User-friendly description: Understand how equipment helps remove or contain pollution from a site.
 
 ### Energy Systems
+
+Slug: energySystems
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
-Useful energy services depend on conversion, storage, power delivery and load management. The engineering emphasis is on connected equipment and operational limitations, while the principles of energy conservation belong to Physics.
+Methodological description: Useful energy services depend on conversion, storage, power delivery and load management. The engineering emphasis is on connected equipment and operational limitations, while the principles of energy conservation belong to Physics.
+User-friendly description: Discover how engineered systems generate, store, move and use energy.
 
 #### Generation
+
+Slug: generation
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Electricity and heat can be produced through different converter chains with distinct resource and operating constraints.
+Methodological description: Electricity and heat can be produced through different converter chains with distinct resource and operating constraints.
+User-friendly description: Explore different technical ways to produce electrical power.
 
 ##### Electrical generators
 
+Slug: electricalGenerators
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace mechanical input to electricity through a generator assembly.
+Methodological description: Trace mechanical input to electricity through a generator assembly.
+User-friendly description: Recognize how mechanical rotation drives an electrical generator.
 
 ##### Photovoltaic systems
 
+Slug: photovoltaicSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify modules and power electronics used to produce usable electricity from sunlight.
+Methodological description: Identify modules and power electronics used to produce usable electricity from sunlight.
+User-friendly description: Explain how solar cells convert incident light into electricity.
 
 ##### Wind turbines
 
+Slug: windTurbines
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace rotor, drive and generator functions within a wind-energy installation.
+Methodological description: Trace rotor, drive and generator functions within a wind-energy installation.
+User-friendly description: Trace how a wind turbine drives a generator.
 
 ##### Hydropower installations
 
+Slug: hydropowerInstallations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow water through a turbine and generator toward discharge.
+Methodological description: Follow water through a turbine and generator toward discharge.
+User-friendly description: Understand how flowing water drives a hydroelectric installation.
 
 ##### Thermal power stations
 
+Slug: thermalPowerStations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace a heat source and working process to a generator rather than assuming a single fuel.
+Methodological description: Trace a heat source and working process to a generator rather than assuming a single fuel.
+User-friendly description: Explore how thermal power plants convert heat into electrical output.
 
 #### Storage and Delivery
+
+Slug: storageAndDelivery
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Reliable supply requires matching time, location and suitable electrical or thermal interfaces.
+Methodological description: Reliable supply requires matching time, location and suitable electrical or thermal interfaces.
+User-friendly description: Learn how energy is stored and delivered to users.
 
 ##### Rechargeable battery systems
 
+Slug: rechargeableBatterySystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify cells, charging control and protective elements in practical energy storage.
+Methodological description: Identify cells, charging control and protective elements in practical energy storage.
+User-friendly description: Recognize the parts and operating limitations of rechargeable battery systems.
 
 ##### Electrical grid distribution
 
+Slug: electricalGridDistribution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace energy from generation through substations and delivery networks to loads.
+Methodological description: Trace energy from generation through substations and delivery networks to loads.
+User-friendly description: Trace electricity from power stations through distribution networks.
 
 ##### Transformer use
 
+Slug: transformerUse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate changing AC voltage levels to efficient transfer and equipment requirements.
+Methodological description: Relate changing AC voltage levels to efficient transfer and equipment requirements.
+User-friendly description: Understand why transformers change voltage in power networks.
 
 ##### Thermal energy storage
 
+Slug: thermalEnergyStorage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how heat or cooling can be retained for later use.
+Methodological description: Describe how heat or cooling can be retained for later use.
+User-friendly description: Compare ways of storing heat for use at another time.
 
 #### Energy Performance
+
+Slug: energyPerformance
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Consumption varies over time, and practical output is less than input when converters or networks lose energy.
+Methodological description: Consumption varies over time, and practical output is less than input when converters or networks lose energy.
+User-friendly description: Explore how engineers estimate demand and improve energy performance.
 
 ##### Estimate energy demand
 
+Slug: estimateEnergyDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine device power and operating duration to assess required supply or storage.
+Methodological description: Combine device power and operating duration to assess required supply or storage.
+User-friendly description: Estimate how much energy a device or system needs to operate.
 
 ##### Evaluate energy efficiency
 
+Slug: evaluateEnergyEfficiency
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare useful device output with energy input and identify major losses.
+Methodological description: Compare useful device output with energy input and identify major losses.
+User-friendly description: Evaluate whether a system delivers useful output efficiently.
 
 ##### Load balancing
 
+Slug: loadBalancing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize why generation, storage and demand must be coordinated across time.
+Methodological description: Recognize why generation, storage and demand must be coordinated across time.
+User-friendly description: Understand how balancing supply and demand helps power systems operate.
 
 ### Electrical and Electronic Engineering
+
+Slug: electricalAndElectronicEngineering
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 27
 
 [Not implemented](#)
 
-Circuits and electronic hardware distribute power, process signals and connect physical controls to useful outputs. The subject here is device architecture and correct component integration, not the scientific derivation of electromagnetic laws.
+Methodological description: Circuits and electronic hardware distribute power, process signals and connect physical controls to useful outputs. The subject here is device architecture and correct component integration, not the scientific derivation of electromagnetic laws.
+User-friendly description: Explore how electrical and electronic hardware is built, measured and protected.
 
 #### Circuit Construction
 
+Slug: circuitConstruction
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-A functioning assembly requires compatible sources, loads and connections, including means of switching and independent distribution.
+Methodological description: A functioning assembly requires compatible sources, loads and connections, including means of switching and independent distribution.
+User-friendly description: Discover how diagrams guide the construction of practical electrical circuits.
 
 ##### Interpret circuit diagrams
 
+Slug: interpretCircuitDiagrams
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Read the symbols, electrical junctions and conductive paths specific to circuit diagrams, including when apparent crossing wires are not electrically connected. This is more specialized than reading general technical schematics.
+Methodological description: Read the symbols, electrical junctions and conductive paths specific to circuit diagrams, including when apparent crossing wires are not electrically connected. This is more specialized than reading general technical schematics.
+User-friendly description: Read component symbols and connections in electrical drawings.
 
 ##### Assemble a low-voltage circuit
 
+Slug: assembleALowVoltageCircuit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect a suitable power source and load with correctly rated components while avoiding shorts.
+Methodological description: Connect a suitable power source and load with correctly rated components while avoiding shorts.
+User-friendly description: Assemble a simple circuit using safe low-voltage components.
 
 ##### Design a switching circuit
 
+Slug: designASwitchingCircuit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Place controls so a load can be energized or interrupted deliberately.
+Methodological description: Place controls so a load can be energized or interrupted deliberately.
+User-friendly description: Plan a circuit that switches a load on and off.
 
 ##### Series circuit arrangements
 
+Slug: seriesCircuitArrangements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how interruption of one common current path affects dependent loads.
+Methodological description: Identify how interruption of one common current path affects dependent loads.
+User-friendly description: Recognize how series arrangements share one current path.
 
 ##### Parallel circuit arrangements
 
+Slug: parallelCircuitArrangements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify separate supply branches and why loads can operate independently.
+Methodological description: Identify separate supply branches and why loads can operate independently.
+User-friendly description: Understand how parallel branches receive the same voltage.
 
 #### Electronic Components
 
+Slug: electronicComponents
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Components can limit, store, steer or switch electrical signals; their appropriate use depends on ratings and surrounding circuit context.
+Methodological description: Components can limit, store, steer or switch electrical signals; their appropriate use depends on ratings and surrounding circuit context.
+User-friendly description: Learn the functions of common electronic components.
 
 ##### Resistor applications
 
+Slug: resistorApplications
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify current limiting, biasing and voltage division as different practical uses.
+Methodological description: Identify current limiting, biasing and voltage division as different practical uses.
+User-friendly description: Explore why resistors control current and divide voltage.
 
 ##### Diode applications
 
+Slug: diodeApplications
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate directional conduction, rectification or light emission to practical circuits.
+Methodological description: Relate directional conduction, rectification or light emission to practical circuits.
+User-friendly description: Recognize why diodes allow current mainly in one direction.
 
 ##### Transistor switching
 
+Slug: transistorSwitching
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how a relatively small control input governs another electrical path.
+Methodological description: Trace how a relatively small control input governs another electrical path.
+User-friendly description: Use a transistor as an electronically controlled switch.
 
 ##### Capacitor applications
 
+Slug: capacitorApplications
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate short-term charge storage to smoothing, filtering or timing in electronics.
+Methodological description: Relate short-term charge storage to smoothing, filtering or timing in electronics.
+User-friendly description: Understand how capacitors store and release electric charge.
 
 #### Embedded Hardware
+
+Slug: embeddedHardware
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Controllers communicate with sensors and actuators through real physical interfaces; programming concepts are treated separately in Informatics.
+Methodological description: Controllers communicate with sensors and actuators through real physical interfaces; programming concepts are treated separately in Informatics.
+User-friendly description: Discover the hardware connections used in embedded control devices.
 
 ##### Microcontroller architecture
 
+Slug: microcontrollerArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify processor, memory, supply and hardware interfaces in a dedicated controller.
+Methodological description: Identify processor, memory, supply and hardware interfaces in a dedicated controller.
+User-friendly description: Identify a microcontroller's processing, memory and peripheral hardware.
 
 ##### Sensor-interface compatibility
 
+Slug: sensorInterfaceCompatibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether a sensor output, supply voltage, signal level and timing are compatible with a particular data acquisition input.
+Methodological description: Assess whether a sensor output, supply voltage, signal level and timing are compatible with a particular data acquisition input.
+User-friendly description: Check whether sensor signals match a controller's input requirements.
 
 ##### Actuator-driver compatibility
 
+Slug: actuatorDriverCompatibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether voltage, current, protection and command characteristics suit the drive and the expected actuator load.
+Methodological description: Determine whether voltage, current, protection and command characteristics suit the drive and the expected actuator load.
+User-friendly description: Recognize when an actuator needs a suitable driver circuit.
 
 ##### Hardware input-output interfaces
 
+Slug: hardwareInputOutputInterfaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish real electrical signaling and connector limitations from software data semantics.
+Methodological description: Distinguish real electrical signaling and connector limitations from software data semantics.
+User-friendly description: Understand how hardware input and output interfaces connect devices.
 
 #### Electrical Measurement and Protection
+
+Slug: electricalMeasurementAndProtection
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Measurements must be connected correctly, while protective devices prevent harmful operating conditions rather than simply switching equipment normally.
+Methodological description: Measurements must be connected correctly, while protective devices prevent harmful operating conditions rather than simply switching equipment normally.
+User-friendly description: Learn how electrical measurements and protection devices support safety.
 
 ##### Measure circuit voltage
 
+Slug: measureCircuitVoltage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use a suitable meter across selected terminals to determine a potential difference.
+Methodological description: Use a suitable meter across selected terminals to determine a potential difference.
+User-friendly description: Measure the potential difference between two circuit points safely.
 
 ##### Measure circuit current
 
+Slug: measureCircuitCurrent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose an appropriate sensing method and insertion point for a selected branch.
+Methodological description: Choose an appropriate sensing method and insertion point for a selected branch.
+User-friendly description: Measure current through a circuit without connecting the meter incorrectly.
 
 ##### Overcurrent protection
 
+Slug: overcurrentProtection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how properly rated fuses or breakers interrupt damaging excessive current.
+Methodological description: Recognize how properly rated fuses or breakers interrupt damaging excessive current.
+User-friendly description: Explain how fuses and breakers limit dangerous overcurrent.
 
 ##### Protective grounding
 
+Slug: protectiveGrounding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify intentional fault-current or equipotential connections that reduce electric-shock risk in appropriately designed equipment.
+Methodological description: Identify intentional fault-current or equipotential connections that reduce electric-shock risk in appropriately designed equipment.
+User-friendly description: Understand how protective grounding supports electrical safety.
 
 ##### Electrical isolation
 
+Slug: electricalIsolation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how barriers or isolating components prevent unintended conductive paths between circuits, including hazardous interfaces.
+Methodological description: Describe how barriers or isolating components prevent unintended conductive paths between circuits, including hazardous interfaces.
+User-friendly description: Recognize why electrical isolation protects separate circuits and users.
 
 #### Computing Hardware
+
+Slug: computingHardware
+Action: create
+Status: pending
 
 Skills: 9
 
 [Not implemented](#)
 
-Computer hardware combines execution, working memory, persistent storage, electrical interconnects, human input/output and power and thermal management. It is distinct from programming, operating systems and software data structures.
+Methodological description: Computer hardware combines execution, working memory, persistent storage, electrical interconnects, human input/output and power and thermal management. It is distinct from programming, operating systems and software data structures.
+User-friendly description: Explore the physical components of computing devices.
 
 ##### Processor hardware
 
+Slug: processorHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the functions of processing units, registers and internal interfaces in executing machine operations without confusing hardware architecture with the algorithms it runs.
+Methodological description: Identify the functions of processing units, registers and internal interfaces in executing machine operations without confusing hardware architecture with the algorithms it runs.
+User-friendly description: Recognize how processor circuitry performs computing operations.
 
 ##### Main memory hardware
 
+Slug: mainMemoryHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish operational random-access memory from persistent storage using volatility, capacity, latency and connection to processing hardware.
+Methodological description: Distinguish operational random-access memory from persistent storage using volatility, capacity, latency and connection to processing hardware.
+User-friendly description: Understand the hardware role of a computer's main working memory.
 
 ##### Persistent data storage
 
+Slug: persistentDataStorage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate solid-state or magnetic storage media and controllers to retention, transfer, access performance and device reliability.
+Methodological description: Relate solid-state or magnetic storage media and controllers to retention, transfer, access performance and device reliability.
+User-friendly description: Compare physical media that retain information without power.
 
 ##### Printed circuit board interconnects
 
+Slug: printedCircuitBoardInterconnects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace physical conductive pathways and connector functions that distribute signals and electrical power between mounted components.
+Methodological description: Trace physical conductive pathways and connector functions that distribute signals and electrical power between mounted components.
+User-friendly description: Trace electrical connections through a printed circuit board.
 
 ##### Computer hardware buses
 
+Slug: computerHardwareBuses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the communication pathways and electrical interfaces joining processors, memory controllers and peripheral equipment.
+Methodological description: Describe the communication pathways and electrical interfaces joining processors, memory controllers and peripheral equipment.
+User-friendly description: Explain how computer buses transfer data between components.
 
 ##### Display hardware
 
+Slug: displayHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the physical image-forming panel, drive electronics and light-emission or modulation mechanisms independently from displayed software content.
+Methodological description: Identify the physical image-forming panel, drive electronics and light-emission or modulation mechanisms independently from displayed software content.
+User-friendly description: Recognize the main hardware functions of a display.
 
 ##### Input device hardware
 
+Slug: inputDeviceHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how mechanical switches, touch sensing or pointing-device transducers convert user actions into electrical signals.
+Methodological description: Explain how mechanical switches, touch sensing or pointing-device transducers convert user actions into electrical signals.
+User-friendly description: Explore how keyboards, sensors and other devices provide computer input.
 
 ##### Computer power supply architecture
 
+Slug: computerPowerSupplyArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace conversion, regulation and distribution of the electrical supply to devices with differing voltage and current needs.
+Methodological description: Trace conversion, regulation and distribution of the electrical supply to devices with differing voltage and current needs.
+User-friendly description: Understand how a computer converts and distributes power.
 
 ##### Computer thermal management
 
+Slug: computerThermalManagement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate computer component heat production to cooling paths, heat sinks, airflow and protection against excessive temperature.
+Methodological description: Relate computer component heat production to cooling paths, heat sinks, airflow and protection against excessive temperature.
+User-friendly description: Explain why computing hardware needs cooling and heat management.
 
 ### Automation and Robotics
+
+Slug: automationAndRobotics
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Robotic and automated machinery converts physical observations into controlled actions. Engineering competencies concern sensors, actuators, feedback, mechanism geometry and dependable operation; general algorithms and software authoring remain in Informatics.
+Methodological description: Robotic and automated machinery converts physical observations into controlled actions. Engineering competencies concern sensors, actuators, feedback, mechanism geometry and dependable operation; general algorithms and software authoring remain in Informatics.
+User-friendly description: Discover how sensors, controls and actuators make physical systems respond.
 
 #### Sensors and Measurement
 
+Slug: sensorsAndMeasurement
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Reliable decisions depend on selecting an appropriate measured quantity and understanding how placement, calibration and uncertainty shape the signal.
+Methodological description: Reliable decisions depend on selecting an appropriate measured quantity and understanding how placement, calibration and uncertainty shape the signal.
+User-friendly description: Learn how sensors are chosen, calibrated and positioned.
 
 ##### Sensor suitability
 
+Slug: sensorSuitability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess the range, measurement principle, response and environmental limitations against a desired physical measurement. Choosing a catalog item is an assessment task, not a distinct Skill.
+Methodological description: Assess the range, measurement principle, response and environmental limitations against a desired physical measurement. Choosing a catalog item is an assessment task, not a distinct Skill.
+User-friendly description: Choose a sensor that measures the physical condition a system needs.
 
 ##### Calibrate a sensor
 
+Slug: calibrateASensor
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate device readings to known references and correct or qualify the measurements.
+Methodological description: Relate device readings to known references and correct or qualify the measurements.
+User-friendly description: Calibrate a sensor against a known reference.
 
 ##### Interpret sensor error
 
+Slug: interpretSensorError
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish real changes from drift, limited resolution and random noise.
+Methodological description: Distinguish real changes from drift, limited resolution and random noise.
+User-friendly description: Recognize how sensor error can affect a control decision.
 
 ##### Sensor placement
 
+Slug: sensorPlacement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate position and orientation to what a detector can and cannot observe.
+Methodological description: Relate position and orientation to what a detector can and cannot observe.
+User-friendly description: Find a sensor location that provides useful readings.
 
 #### Feedback and Control
 
+Slug: feedbackAndControl
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-A controlled process needs commands, observations and actuation; feedback can improve regulation but also create delay or oscillation.
+Methodological description: A controlled process needs commands, observations and actuation; feedback can improve regulation but also create delay or oscillation.
+User-friendly description: Explore systems that use feedback to regulate physical processes.
 
 ##### Control architecture trade-offs
 
+Slug: controlArchitectureTradeOffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the robustness, sensing cost, responsiveness and stability implications of open-loop versus feedback control as an engineering architecture decision, not merely a definition quiz.
+Methodological description: Compare the robustness, sensing cost, responsiveness and stability implications of open-loop versus feedback control as an engineering architecture decision, not merely a definition quiz.
+User-friendly description: Compare control approaches according to their intended behavior and limitations.
 
 ##### Feedback control loops
 
+Slug: feedbackControlLoops
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate setpoint, sensor, controller, actuator and physical plant in a working system.
+Methodological description: Locate setpoint, sensor, controller, actuator and physical plant in a working system.
+User-friendly description: Trace how measured output feeds back into a controller.
 
 ##### Analyze control response
 
+Slug: analyzeControlResponse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify overshoot, steady error, oscillation or excessive delay in observed behavior.
+Methodological description: Identify overshoot, steady error, oscillation or excessive delay in observed behavior.
+User-friendly description: Interpret how a control system responds over time to a change.
 
 ##### Safe control fallback
 
+Slug: safeControlFallback
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how critical equipment should react to missing power, unreliable sensing or lost communication.
+Methodological description: Describe how critical equipment should react to missing power, unreliable sensing or lost communication.
+User-friendly description: Recognize when a control system needs a safe response to failure.
 
 ##### Open-loop control
 
+Slug: openLoopControl
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe a control process whose command is set without measuring the resulting output for correction, and explain the consequences of changing loads or other disturbances.
+Methodological description: Describe a control process whose command is set without measuring the resulting output for correction, and explain the consequences of changing loads or other disturbances.
+User-friendly description: Understand systems that operate without measuring the result.
 
 #### Drives and Actuators
+
+Slug: drivesAndActuators
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-A controller requires suitable physical mechanisms to turn supplied energy into controllable displacement, rotation or force.
+Methodological description: A controller requires suitable physical mechanisms to turn supplied energy into controllable displacement, rotation or force.
+User-friendly description: Discover how powered actuators move physical components.
 
 ##### Motor-driven actuation
 
+Slug: motorDrivenActuation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace electrical supply and drive control to a rotating mechanical output.
+Methodological description: Trace electrical supply and drive control to a rotating mechanical output.
+User-friendly description: Trace how a motor produces useful mechanical action.
 
 ##### Servo positioning
 
+Slug: servoPositioning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the use of position feedback to command and maintain an actuator's location.
+Methodological description: Identify the use of position feedback to command and maintain an actuator's location.
+User-friendly description: Understand how a servo mechanism controls a position.
 
 ##### Actuator suitability
 
+Slug: actuatorSuitability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate required torque, force, travel, speed and duty cycle to an available driving principle and its energy supply.
+Methodological description: Relate required torque, force, travel, speed and duty cycle to an available driving principle and its energy supply.
+User-friendly description: Choose actuators that fit required motion, forces and operating limits.
 
 ##### Limit switches
 
+Slug: limitSwitches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how end-of-travel signals protect a mechanism from excessive movement.
+Methodological description: Recognize how end-of-travel signals protect a mechanism from excessive movement.
+User-friendly description: Recognize how limit switches detect the end of travel.
 
 ##### Electric motor construction
 
+Slug: electricMotorConstruction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify rotor, stator, magnets or windings, bearings and commutation arrangements that produce rotation in an electrical machine. This differs from incorporating a finished motor into a controlled mechanism.
+Methodological description: Identify rotor, stator, magnets or windings, bearings and commutation arrangements that produce rotation in an electrical machine. This differs from incorporating a finished motor into a controlled mechanism.
+User-friendly description: Explore the internal parts that let an electric motor rotate.
 
 #### Robot Systems
+
+Slug: robotSystems
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Robots combine mobile or articulated structure with localization, motion control, power and protection; not all robots operate autonomously.
+Methodological description: Robots combine mobile or articulated structure with localization, motion control, power and protection; not all robots operate autonomously.
+User-friendly description: Learn to analyze a robot as connected physical subsystems.
 
 ##### Identify robot subsystems
 
+Slug: identifyRobotSubsystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assign roles to structure, power, sensors, actuators and controller in a robot.
+Methodological description: Assign roles to structure, power, sensors, actuators and controller in a robot.
+User-friendly description: Identify the sensors, controller, drives and frame in a robot.
 
 ##### Robot degrees of freedom
 
+Slug: robotDegreesOfFreedom
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect the axes and joints of a mechanism to its possible independent movements.
+Methodological description: Connect the axes and joints of a mechanism to its possible independent movements.
+User-friendly description: Understand how the degrees of freedom describe a robot's possible movement.
 
 ##### Robot localization hardware
 
+Slug: robotLocalizationHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how sensing surroundings or movement contributes to estimating physical position.
+Methodological description: Describe how sensing surroundings or movement contributes to estimating physical position.
+User-friendly description: Recognize hardware used to estimate a robot's location.
 
 ##### Evaluate safe robot operation
 
+Slug: evaluateSafeRobotOperation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify guards, speed limits, stop systems or separation required around moving robots.
+Methodological description: Identify guards, speed limits, stop systems or separation required around moving robots.
+User-friendly description: Assess how a robot's operating conditions affect safety.
 
 ### Transportation and Aerospace Engineering
+
+Slug: transportationAndAerospaceEngineering
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Transport machines coordinate power, support, steering, stopping and protection while moving through land, air, water or space. Each vehicle is a system with characteristic environmental and operating constraints.
+Methodological description: Transport machines coordinate power, support, steering, stopping and protection while moving through land, air, water or space. Each vehicle is a system with characteristic environmental and operating constraints.
+User-friendly description: Explore the engineering systems that move vehicles on land, water and in space.
 
 #### Road and Rail
 
+Slug: roadAndRail
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Surface vehicles depend on transmitting traction, guiding movement, supporting loads and maintaining control during stopping.
+Methodological description: Surface vehicles depend on transmitting traction, guiding movement, supporting loads and maintaining control during stopping.
+User-friendly description: Discover the connected systems that move and control land vehicles.
 
 ##### Vehicle drivetrains
 
+Slug: vehicleDrivetrains
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace prime-mover output through transmissions to driven wheels.
+Methodological description: Trace prime-mover output through transmissions to driven wheels.
+User-friendly description: Trace how a drivetrain transfers power to vehicle wheels.
 
 ##### Steering systems
 
+Slug: steeringSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how wheel or axle orientation controls direction.
+Methodological description: Identify how wheel or axle orientation controls direction.
+User-friendly description: Explain how steering components change a vehicle's direction.
 
 ##### Suspension systems
 
+Slug: suspensionSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate springs, dampers and supports to maintaining contact and controlling motion.
+Methodological description: Relate springs, dampers and supports to maintaining contact and controlling motion.
+User-friendly description: Recognize how suspensions manage loads and road irregularities.
 
 ##### Vehicle braking systems
 
+Slug: vehicleBrakingSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace control input to braking torque and recognize traction limitations.
+Methodological description: Trace control input to braking torque and recognize traction limitations.
+User-friendly description: Understand how braking systems slow or stop vehicles.
 
 #### Aircraft
+
+Slug: aircraft
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Aircraft incorporate propulsion, lifting surfaces, stabilization and control; different layouts solve different flight missions.
+Methodological description: Aircraft incorporate propulsion, lifting surfaces, stabilization and control; different layouts solve different flight missions.
+User-friendly description: Explore the major assemblies used to support and control aircraft.
 
 ##### Fixed-wing aircraft architecture
 
+Slug: fixedWingAircraftArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the functions of wing, fuselage, tail, propulsion and landing gear.
+Methodological description: Identify the functions of wing, fuselage, tail, propulsion and landing gear.
+User-friendly description: Recognize the wing, structure, propulsion and control parts of a fixed-wing aircraft.
 
 ##### Flight control surfaces
 
+Slug: flightControlSurfaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate ailerons, elevators and rudders to changes in orientation rather than thrust.
+Methodological description: Relate ailerons, elevators and rudders to changes in orientation rather than thrust.
+User-friendly description: Explain how movable control surfaces change aircraft orientation.
 
 ##### Rotorcraft control
 
+Slug: rotorcraftControl
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace changes in rotor thrust to hovering and maneuvering.
+Methodological description: Trace changes in rotor thrust to hovering and maneuvering.
+User-friendly description: Understand how rotorcraft control changes lift and direction.
 
 ##### Compare aircraft propulsion technologies
 
+Slug: compareAircraftPropulsionTechnologies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect propeller, jet and other arrangements to operating conditions and mission constraints.
+Methodological description: Connect propeller, jet and other arrangements to operating conditions and mission constraints.
+User-friendly description: Compare propulsion systems suited to different aircraft.
 
 #### Watercraft
+
+Slug: watercraft
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Vessels need suitable hulls, propulsion and steering while managing stability and water resistance.
+Methodological description: Vessels need suitable hulls, propulsion and steering while managing stability and water resistance.
+User-friendly description: Discover how vessel design and equipment affect travel through water.
 
 ##### Hull design choices
 
+Slug: hullDesignChoices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate hull geometry and loading to displacement, stability and resistance.
+Methodological description: Relate hull geometry and loading to displacement, stability and resistance.
+User-friendly description: Compare hull arrangements according to stability and resistance.
 
 ##### Marine propulsion
 
+Slug: marinePropulsion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace motor or engine output to propeller or waterjet thrust.
+Methodological description: Trace motor or engine output to propeller or waterjet thrust.
+User-friendly description: Trace how marine engines and propellers move a vessel.
 
 ##### Marine steering
 
+Slug: marineSteering
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how rudders, steerable drives or differential thrust change course.
+Methodological description: Identify how rudders, steerable drives or differential thrust change course.
+User-friendly description: Explain how a rudder or another mechanism controls a vessel's heading.
 
 #### Spacecraft
+
+Slug: spacecraft
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Space systems must coordinate propulsion and precision orientation with energy supply, thermal protection and mission hardware.
+Methodological description: Space systems must coordinate propulsion and precision orientation with energy supply, thermal protection and mission hardware.
+User-friendly description: Learn how spacecraft operate beyond ordinary atmospheric conditions.
 
 ##### Rocket propulsion systems
 
+Slug: rocketPropulsionSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify propellant supply, energy release and nozzle as functions of a launch engine.
+Methodological description: Identify propellant supply, energy release and nozzle as functions of a launch engine.
+User-friendly description: Recognize how rocket systems produce thrust by ejecting mass.
 
 ##### Identify satellite subsystems
 
+Slug: identifySatelliteSubsystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish payload, power, communications, thermal and attitude-control equipment.
+Methodological description: Distinguish payload, power, communications, thermal and attitude-control equipment.
+User-friendly description: Identify power, communication, structure and control subsystems on a satellite.
 
 ##### Spacecraft attitude control
 
+Slug: spacecraftAttitudeControl
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sensors and actuators to changing orientation rather than simply changing orbit.
+Methodological description: Relate sensors and actuators to changing orientation rather than simply changing orbit.
+User-friendly description: Understand how spacecraft control orientation in space.
 
 ##### Atmospheric re-entry protection
 
+Slug: atmosphericReEntryProtection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect intense heating and mechanical loading to vehicle shielding and geometry.
+Methodological description: Connect intense heating and mechanical loading to vehicle shielding and geometry.
+User-friendly description: Recognize why spacecraft need protection from heating during re-entry.
 
 ### Communication and Measurement Devices
+
+Slug: communicationAndMeasurementDevices
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Radio, optical and navigation equipment generates, propagates, detects and uses physical signals. Competencies concern real emitters, interfaces, receivers and instrumentation, rather than networking programs or generic data-processing algorithms.
+Methodological description: Radio, optical and navigation equipment generates, propagates, detects and uses physical signals. Competencies concern real emitters, interfaces, receivers and instrumentation, rather than networking programs or generic data-processing algorithms.
+User-friendly description: Explore physical devices that transmit signals, form images and determine position.
 
 #### Communication Hardware
 
+Slug: communicationHardware
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Physical communication chains depend on transducers, suitable electromagnetic or wired paths and receiving equipment.
+Methodological description: Physical communication chains depend on transducers, suitable electromagnetic or wired paths and receiving equipment.
+User-friendly description: Discover the components that send and receive information.
 
 ##### Trace a communication signal chain
 
+Slug: traceACommunicationSignalChain
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify input conversion, transmission, propagation, reception and output in a practical link.
+Methodological description: Identify input conversion, transmission, propagation, reception and output in a practical link.
+User-friendly description: Trace a signal through transmission, propagation and reception.
 
 ##### Radio transmitters
 
+Slug: radioTransmitters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how circuitry prepares a signal and supplies suitable electrical excitation to an antenna for radiation.
+Methodological description: Trace how circuitry prepares a signal and supplies suitable electrical excitation to an antenna for radiation.
+User-friendly description: Understand the main functional parts of a radio transmitter.
 
 ##### Radio receivers
 
+Slug: radioReceivers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how an antenna and receiving electronics select and recover useful information from a received signal.
+Methodological description: Trace how an antenna and receiving electronics select and recover useful information from a received signal.
+User-friendly description: Recognize how a receiver selects and interprets radio signals.
 
 ##### Antenna functions
 
+Slug: antennaFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate antenna coupling, placement and orientation to the intended link.
+Methodological description: Relate antenna coupling, placement and orientation to the intended link.
+User-friendly description: Explore how antennas couple signals to electromagnetic waves.
 
 ##### Communications infrastructure
 
+Slug: communicationsInfrastructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the roles of repeaters, base stations and backhaul links in providing coverage.
+Methodological description: Identify the roles of repeaters, base stations and backhaul links in providing coverage.
+User-friendly description: Understand how communication links rely on connected infrastructure.
 
 #### Optical Devices
+
+Slug: opticalDevices
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Optical components manipulate or detect light for imaging, sensing and transmission; lasers require particular source and exposure precautions.
+Methodological description: Optical components manipulate or detect light for imaging, sensing and transmission; lasers require particular source and exposure precautions.
+User-friendly description: Learn how optical devices manipulate light for imaging and communication.
 
 ##### Camera hardware
 
+Slug: cameraHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace light through an optical path onto an image sensor, apart from software image processing.
+Methodological description: Trace light through an optical path onto an image sensor, apart from software image processing.
+User-friendly description: Trace how a camera's optics and sensor produce an image.
 
 ##### Fiber-optic communication systems
 
+Slug: fiberOpticCommunicationSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify source, fiber path, connectors and receiver in an optical link.
+Methodological description: Identify source, fiber path, connectors and receiver in an optical link.
+User-friendly description: Recognize the role of optical fibers in transmitting information.
 
 ##### Laser device architecture
 
+Slug: laserDeviceArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify an energized gain medium, light amplification and relevant resonator or output optics.
+Methodological description: Identify an energized gain medium, light amplification and relevant resonator or output optics.
+User-friendly description: Identify the main components of a laser-based device.
 
 ##### Optical component suitability
 
+Slug: opticalComponentSuitability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess the functional fit of lenses, mirrors, filters or detectors for an imaging, transmission or measurement purpose.
+Methodological description: Assess the functional fit of lenses, mirrors, filters or detectors for an imaging, transmission or measurement purpose.
+User-friendly description: Compare optical components against the function they must serve.
 
 ##### Identify laser-device hazards
 
+Slug: identifyLaserDeviceHazards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect beam intensity and reflection paths with protective measures and controlled operation.
+Methodological description: Connect beam intensity and reflection paths with protective measures and controlled operation.
+User-friendly description: Recognize hazards associated with unsafe laser equipment.
 
 #### Navigation Equipment
+
+Slug: navigationEquipment
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Positioning methods use different physical measurements, and each has characteristic failures and accuracy limitations.
+Methodological description: Positioning methods use different physical measurements, and each has characteristic failures and accuracy limitations.
+User-friendly description: Explore the hardware used for navigation and positioning.
 
 ##### Satellite-navigation receivers
 
+Slug: satelliteNavigationReceivers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how timing signals from multiple satellites support location and time estimates.
+Methodological description: Recognize how timing signals from multiple satellites support location and time estimates.
+User-friendly description: Understand how satellite navigation receivers use transmitted signals.
 
 ##### Inertial navigation hardware
 
+Slug: inertialNavigationHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify accelerometers and gyroscopes and the accumulation of estimation error.
+Methodological description: Identify accelerometers and gyroscopes and the accumulation of estimation error.
+User-friendly description: Recognize how inertial sensors estimate changing movement and orientation.
 
 ##### Compare positioning methods
 
+Slug: comparePositioningMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate satellite, inertial and local-reference approaches to interference, coverage and drift.
+Methodological description: Relate satellite, inertial and local-reference approaches to interference, coverage and drift.
+User-friendly description: Compare positioning technologies by their operating limitations.
 
 ### Manufacturing and Production
 
