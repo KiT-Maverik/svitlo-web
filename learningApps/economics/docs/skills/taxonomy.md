@@ -3380,101 +3380,176 @@ User-friendly description: Recognize uncertainty and different possibilities in 
 
 ### Економічна історія та ідеї
 
+Slug: economicHistoryAndIdeas
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Економічні системи, інституції й теоретичні підходи змінювалися разом із виробництвом, торгівлею та суспільними конфліктами. Історичні інтерпретації потребують контексту й зіставлення джерел.
+Methodological description: Economic systems, institutions, and theories evolved alongside production, trade, and social conflicts. Historical interpretations require context and comparisons of sources.
+User-friendly description: Explore how economies and economic ideas have changed through history.
 
 #### Історичні трансформації
 
+Slug: historicalEconomicTransformations
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Технологічні, торговельні та інституційні зміни перебудовували способи виробництва й розподілу.
+Methodological description: Technological, commercial, and institutional changes have transformed how goods are produced and distributed.
+User-friendly description: Discover how production and trade have changed over time.
 
 ##### Аграрні економіки
 
+Slug: agrarianEconomies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати роль землі, сезонності, власності та надлишку продукту в історичних господарських системах.
+Methodological description: Analyze the roles of land, seasonality, ownership, and agricultural surplus in historical economic systems.
+User-friendly description: Explore how land and farming shaped historical economies.
 
 ##### Індустріалізація
 
+Slug: industrialization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати механізацію, енергетику, фабрики й урбанізацію зі змінами продуктивності та зайнятості.
+Methodological description: Connect mechanization, energy systems, factories, and urbanization with changes in productivity and employment.
+User-friendly description: Understand how industrialization changed work and production.
 
 ##### Глобалізація економічних зв’язків
 
+Slug: globalizationOfEconomicRelations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Простежувати історичне розширення торгівлі й капітальних потоків разом із нерівномірними наслідками та примусом.
+Methodological description: Trace the historical expansion of trade and capital flows alongside unequal consequences and coercion.
+User-friendly description: Explore how international economic connections expanded and affected people differently.
 
 #### Економічні системи
+
+Slug: economicSystems
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Суспільства по-різному поєднують ринки, плани, державну координацію, традиції та форми власності.
+Methodological description: Societies combine markets, planning, public coordination, traditions, and ownership forms in different ways.
+User-friendly description: Compare how different systems organize economic decisions.
 
 ##### Ринкова координація
 
+Slug: marketCoordination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати розподіл ресурсів через децентралізовані цінові сигнали та приватні рішення.
+Methodological description: Explain resource allocation through decentralized price signals and private decisions.
+User-friendly description: See how prices help coordinate choices without central instructions.
 
 ##### Адміністративне планування
 
+Slug: centralPlanning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати розподіл ресурсів через централізовані цілі, нормативи й призначення виробничих завдань.
+Methodological description: Analyze allocation through centrally defined targets, standards, and assigned production tasks.
+User-friendly description: Understand how centralized plans allocate productive resources.
 
 ##### Змішані економічні системи
 
+Slug: mixedEconomies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати різні комбінації ринку, державного сектору, регулювання та суспільних інституцій.
+Methodological description: Compare combinations of markets, public sectors, regulation, and social institutions.
+User-friendly description: Explore why many economies combine markets and government involvement.
 
 #### Напрями економічної думки
+
+Slug: schoolsOfEconomicThought
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Школи економічної науки пропонують різні моделі та припущення щодо ринків, держави, грошей і нерівності.
+Methodological description: Economic schools offer differing models and assumptions concerning markets, government, money, and inequality.
+User-friendly description: Discover how economists have explained economic problems in different ways.
 
 ##### Класична політична економія
 
+Slug: classicalPoliticalEconomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати ключові питання праці, вартості, поділу праці та накопичення в класичних концепціях.
+Methodological description: Identify central questions of labor, value, division of labor, and accumulation in classical economic theories.
+User-friendly description: Explore early economic ideas about labor, trade, and wealth.
 
 ##### Неокласична економіка
 
+Slug: neoclassicalEconomics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати граничний вибір, рівновагу та стимули в моделях індивідуальних учасників.
+Methodological description: Interpret marginal decisions, equilibrium, and incentives in models of individual economic participants.
+User-friendly description: Understand economic models based on incentives and choices at the margin.
 
 ##### Кейнсіанські підходи
 
+Slug: keynesianApproaches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати увагу до сукупного попиту, нестійкості зайнятості й стабілізаційної ролі політики.
+Methodological description: Explain the emphasis on aggregate demand, unstable employment, and the potential stabilizing role of policy.
+User-friendly description: Explore why Keynesian approaches focus on demand and economic downturns.
 
 ##### Інституційна економічна думка
 
+Slug: institutionalEconomicThought
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як формальні правила, неформальні норми, владні відносини й історичний розвиток входять до економічних теорій та пояснень.
+Methodological description: Analyze how formal rules, informal norms, power relations, and historical development enter economic theories and explanations.
+User-friendly description: Understand how institutions and social rules shape economic outcomes.
 
 ##### Поведінкова економічна думка
 
+Slug: behavioralEconomicThought
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як дослідження рішень за обмеженої раціональності, упереджень і соціальних впливів доповнюють або переглядають стандартні економічні моделі.
+Methodological description: Analyze how evidence on bounded rationality, biases, and social influences supplements or revises conventional economic models.
+User-friendly description: Discover how real human decisions challenge simplified economic assumptions.
 
 ### Цифрова економіка
 
