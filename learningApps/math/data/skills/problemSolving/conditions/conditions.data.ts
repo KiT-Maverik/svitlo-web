@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { conditions_SkillGroup_Ids } from './conditions.ids';
-import { conditions_Skills_Ids } from './skills/index.ids';
+import { findExtraneousData_Skill_Data, findMissingData_Skill_Data, identifyKnownUnknown_Skill_Data } from './skills';
 
 export const conditions_SkillGroup_Data = buildSkillGroupConfig({
-  id: conditions_SkillGroup_Ids.conditions,
+  id: 'bd512014-8ad2-4db5-8b53-cd24ee73492b',
   name: {
     en: "Analyzing problem statements",
     lt: "Uždavinių sąlygų analizė",
@@ -34,6 +33,10 @@ export const conditions_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Analiza treści zadania",
     uk: "Аналіз умови задачі",
   },
-  skillIds: conditions_Skills_Ids,
+  skillIds: {
+    identifyKnownUnknown: identifyKnownUnknown_Skill_Data.id,
+    findExtraneousData: findExtraneousData_Skill_Data.id,
+    findMissingData: findMissingData_Skill_Data.id,
+  },
   description: { methodological: "Separating the question, known data, and implicit assumptions in a word problem before choosing an arithmetic operation." },
 });
