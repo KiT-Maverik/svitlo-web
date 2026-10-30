@@ -4153,175 +4153,310 @@ Methodological description: Compare algorithms where fewer operations may requir
 User-friendly description: Understand why faster algorithms may require more temporary memory.
 ### Git and Open Source
 
+Slug: gitAndOpenSource
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-A distinct subject area covering software change history, collaboration in repositories, and licensed cooperative software creation rather than an automatic component of every digital lesson.
+Methodological description: A distinct subject area covering software change history, collaboration in repositories, and licensed cooperative software creation rather than an automatic component of every digital lesson.
+User-friendly description: Explore how developers track changes, collaborate and share software with clear permissions.
 
 #### Git Version Control
+
+Slug: gitVersionControl
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Git provides a history of commits and branches, while change-review processes help combine the work of multiple contributors.
+Methodological description: Git provides a history of commits and branches, while change-review processes help combine the work of multiple contributors.
+User-friendly description: Learn how Git records versions and helps teams combine changes.
 
 ##### Explain a Repository
 
+Slug: explainARepository
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A repository holds a project and its history, allowing earlier versions and author contributions to be examined.
+Methodological description: A repository holds a project and its history, allowing earlier versions and author contributions to be examined.
+User-friendly description: Understand a repository as a project with a record of its changes.
 
 ##### Explain a Commit
 
+Slug: explainACommit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A Git commit captures a coherent state of changes with an identifier and links to preceding history.
+Methodological description: A Git commit captures a coherent state of changes with an identifier and links to preceding history.
+User-friendly description: Recognize a commit as an identified snapshot linked to previous work.
 
 ##### Explain a Branch
 
+Slug: explainABranch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A branch represents a line of development on which commits can be created without immediately changing the main history.
+Methodological description: A branch represents a line of development on which commits can be created without immediately changing the main history.
+User-friendly description: Understand how branches let developers work on separate lines of change.
 
 ##### Explain a Pull Request
 
+Slug: explainAPullRequest
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A pull request on a collaborative development platform organizes review of proposed changes before they are merged.
+Methodological description: A pull request on a collaborative development platform organizes review of proposed changes before they are merged.
+User-friendly description: Explore how pull requests organize proposed changes for review.
 
 ##### Explain Branch Merging
 
+Slug: explainBranchMerging
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Merging combines lines of history; incompatible overlapping changes require conflict resolution.
+Methodological description: Merging combines lines of history; incompatible overlapping changes require conflict resolution.
+User-friendly description: Learn how branches are merged and why conflicts sometimes need resolving.
 
 ##### Distinguish Local and Remote Repositories
 
+Slug: distinguishLocalAndRemoteRepositories
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A local repository supports independent committing, while a remote repository enables sharing between contributors.
+Methodological description: A local repository supports independent committing, while a remote repository enables sharing between contributors.
+User-friendly description: Distinguish work stored on your computer from copies shared through remotes.
 
 #### Open Source
+
+Slug: openSource
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Software openness depends not only on visibility of source code but also on rights to use, modify, and distribute it.
+Methodological description: Software openness depends not only on visibility of source code but also on rights to use, modify, and distribute it.
+User-friendly description: Discover what permissions make software genuinely open source.
 
 ##### Explain Open Source
 
+Slug: explainOpenSource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An open-source license permits studying, using, modifying, and redistributing code under its defined conditions.
+Methodological description: An open-source license permits studying, using, modifying, and redistributing code under its defined conditions.
+User-friendly description: Understand how open-source licenses allow use, modification and redistribution.
 
 ##### Distinguish Open Source from Publicly Visible Code
 
+Slug: distinguishOpenSourceFromPubliclyVisibleCode
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Being able to read a program's source does not automatically grant permission to modify or redistribute it.
+Methodological description: Being able to read a program's source does not automatically grant permission to modify or redistribute it.
+User-friendly description: Recognize that visible source code is not automatically open source.
 
 #### Collaborative Digital Product Development
+
+Slug: collaborativeDigitalProductDevelopment
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Joint development requires agreed contribution and review rules, coordination among contributors, and tracking versions. Collaboration applies to public and private repositories and does not itself determine licensing.
+Methodological description: Joint development requires agreed contribution and review rules, coordination among contributors, and tracking versions. Collaboration applies to public and private repositories and does not itself determine licensing.
+User-friendly description: Explore how teams organize contributions, reviews and project versions.
 
 ##### Explain Contribution Guidelines
 
+Slug: explainContributionGuidelines
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Rules for contributions, code review, and discussing changes help teams maintain a shared project.
+Methodological description: Rules for contributions, code review, and discussing changes help teams maintain a shared project.
+User-friendly description: Understand why contribution rules help people work on the same codebase.
 
 ##### Coordinate Changes in a Shared Digital Project
 
+Slug: coordinateChangesInASharedDigitalProject
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Agree on ownership of changes, merge order, and resolution when contributors edit the same area. Collaboration is not just placing files in a common folder.
+Methodological description: Agree on ownership of changes, merge order, and resolution when contributors edit the same area. Collaboration is not just placing files in a common folder.
+User-friendly description: Plan who changes what and how shared edits will be combined.
 
 ##### Track Digital Product Versions
 
+Slug: trackDigitalProductVersions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare successive file or project states, identify when changes appeared, and restore earlier saved versions where necessary. Multiple files labeled 'final2' do not necessarily form a transparent history.
+Methodological description: Compare successive file or project states, identify when changes appeared, and restore earlier saved versions where necessary. Multiple files labeled 'final2' do not necessarily form a transparent history.
+User-friendly description: Use version history to find when changes happened or restore earlier work.
 ### History of Programming
+
+Slug: historyOfProgramming
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 9
 
 [Not implemented](#)
 
-Traces the origins of algorithmic ideas, programming practices, software tools, networking solutions, and computing machines in historical context. Recognizes individual and collaborative contributions, including women's long-undervalued work, without making every biography a separate competency.
+Methodological description: Traces the origins of algorithmic ideas, programming practices, software tools, networking solutions, and computing machines in historical context. Recognizes individual and collaborative contributions, including women's long-undervalued work, without making every biography a separate competency.
+User-friendly description: Discover how programming ideas and computing machines developed through history.
 
 #### Key Contributions
+
+Slug: keyContributions
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Historical developments in program descriptions, practical machine programming, compilation, software reliability, network protocols, and computability can be examined by the problems they solved and their lasting importance. Specific people and teams remain required examples in the Subject Proposition.
+Methodological description: Historical developments in program descriptions, practical machine programming, compilation, software reliability, network protocols, and computability can be examined by the problems they solved and their lasting importance. Specific people and teams remain required examples in the Subject Proposition.
+User-friendly description: Explore major contributions to programming, reliability and computer networking.
 
 ##### Explain the Origins of Programming
 
+Slug: explainTheOriginsOfProgramming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use descriptions for Charles Babbage's Analytical Engine to show how machine operations could be specified before modern computers existed. Examine Ada Lovelace's work and her vision of computation extending beyond ordinary arithmetic.
+Methodological description: Use descriptions for Charles Babbage's Analytical Engine to show how machine operations could be specified before modern computers existed. Examine Ada Lovelace's work and her vision of computation extending beyond ordinary arithmetic.
+User-friendly description: Learn how early machine designs and Ada Lovelace's work anticipated programming.
 
 ##### Explain Early Electronic Programming
 
+Slug: explainEarlyElectronicProgramming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how teams developed and tested programs for the first large electronic computers despite complex methods of entering instructions. The six ENIAC programmers exemplify substantial contributions that went underrecognized for decades.
+Methodological description: Explain how teams developed and tested programs for the first large electronic computers despite complex methods of entering instructions. The six ENIAC programmers exemplify substantial contributions that went underrecognized for decades.
+User-friendly description: Discover how early electronic-computer teams created and tested programs.
 
 ##### Explain the Development of Compilers
 
+Slug: explainTheDevelopmentOfCompilers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how translating more human-readable program notation into machine instructions changed programming. Include the contributions of Grace Hopper and other researchers to early compilers and languages without confusing a compiler with the language itself.
+Methodological description: Explain how translating more human-readable program notation into machine instructions changed programming. Include the contributions of Grace Hopper and other researchers to early compilers and languages without confusing a compiler with the language itself.
+User-friendly description: Explore how compilers made it easier to write programs using readable languages.
 
 ##### Explain the Development of Software Reliability
 
+Slug: explainTheDevelopmentOfSoftwareReliability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use spaceflight software to explain error handling, execution priorities, and recovery from failures. Include Margaret Hamilton's leadership of Apollo software work and the collaborative nature of its development.
+Methodological description: Use spaceflight software to explain error handling, execution priorities, and recovery from failures. Include Margaret Hamilton's leadership of Apollo software work and the collaborative nature of its development.
+User-friendly description: Understand why error handling and reliable software mattered in the Apollo missions.
 
 ##### Explain the Elimination of Network Loops
 
+Slug: explainTheEliminationOfNetworkLoops
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use the history of local-area network bridges to explain how redundant physical links can create frame-forwarding loops and how Spanning Tree Protocol creates a loop-free logical topology. Credit Radia Perlman's contribution without mistaking STP for an IP routing algorithm.
+Methodological description: Use the history of local-area network bridges to explain how redundant physical links can create frame-forwarding loops and how Spanning Tree Protocol creates a loop-free logical topology. Credit Radia Perlman's contribution without mistaking STP for an IP routing algorithm.
+User-friendly description: Explore how the Spanning Tree Protocol helped prevent loops in local networks.
 
 ##### Explain Computability Theory
 
+Slug: explainComputabilityTheory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the idea of a formal model of universal computation and limits on which problems are algorithmically solvable. Alan Turing's work is a principal historical example; his cryptanalysis and the debate over machine intelligence are separate topics.
+Methodological description: Describe the idea of a formal model of universal computation and limits on which problems are algorithmically solvable. Alan Turing's work is a principal historical example; his cryptanalysis and the debate over machine intelligence are separate topics.
+User-friendly description: Learn how formal models reveal what computers can and cannot calculate.
 
 #### Machines and Cryptanalysis
+
+Slug: machinesAndCryptanalysis
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-The development of computing devices and specialized cryptanalytic machines illustrates how formal instructions and mechanized checking addressed historical problems. Philosophical issues of imitation and understanding belong to AI instead.
+Methodological description: The development of computing devices and specialized cryptanalytic machines illustrates how formal instructions and mechanized checking addressed historical problems. Philosophical issues of imitation and understanding belong to AI instead.
+User-friendly description: Discover how machines and mathematical methods supported historical cryptanalysis.
 
 ##### Explain Historical Cryptanalysis Methods
 
+Slug: explainHistoricalCryptanalysisMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how mathematical analysis of patterns and systematic elimination of possibilities helped find cipher-machine settings. Historical examples include Polish cryptanalysts, Joan Clarke, Alan Turing, Gordon Welchman, and other specialists at Bletchley Park.
+Methodological description: Explain how mathematical analysis of patterns and systematic elimination of possibilities helped find cipher-machine settings. Historical examples include Polish cryptanalysts, Joan Clarke, Alan Turing, Gordon Welchman, and other specialists at Bletchley Park.
+User-friendly description: Explore how cryptanalysts used patterns and systematic testing to break codes.
 
 ##### Explain the Purpose of the Bombe
 
+Slug: explainThePurposeOfTheBombe
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The Bombe was an electromechanical machine used to test possible Enigma key settings, built upon earlier Polish cryptanalytic work.
+Methodological description: The Bombe was an electromechanical machine used to test possible Enigma key settings, built upon earlier Polish cryptanalytic work.
+User-friendly description: Understand how the Bombe helped test possible Enigma settings.
 
 ##### Explain the Development of Programmable Computers
 
+Slug: explainTheDevelopmentOfProgrammableComputers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare how storage of instructions, selection of operations, and execution control evolved from mechanical concepts to electronic machines. This is the history of devices and their architecture, distinct from early hands-on programming techniques.
+Methodological description: Compare how storage of instructions, selection of operations, and execution control evolved from mechanical concepts to electronic machines. This is the history of devices and their architecture, distinct from early hands-on programming techniques.
+User-friendly description: Trace the development from mechanical computing concepts to programmable electronic machines.
