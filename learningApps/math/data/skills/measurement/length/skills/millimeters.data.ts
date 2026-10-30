@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const millimeters_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.millimeters,
+  id: 'fa6cb61c-e83a-49d9-961c-8444e0fa231b',
   name: {
     en: "Measuring in millimeters and relating them to centimeters",
     lt: "Matavimas milimetrais ir ryšys su centimetrais",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const addSubtractLengths_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.addSubtractLengths,
+  id: 'c3226a47-162d-4c7e-8d56-52814767de5f',
   name: {
     en: "Adding and subtracting lengths in compatible units",
     lt: "Ilgių sudėtis ir atimtis suderinamais vienetais",

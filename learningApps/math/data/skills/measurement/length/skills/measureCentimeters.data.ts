@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const measureCentimeters_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.measureCentimeters,
+  id: 'abb9261a-793e-48fd-8262-7cd2ca8df3d3',
   name: {
     en: "Measuring segments in centimeters",
     lt: "Atkarpų matavimas centimetrais",

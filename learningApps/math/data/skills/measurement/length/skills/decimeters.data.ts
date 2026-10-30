@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const decimeters_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.decimeters,
+  id: 'f12c51d8-766f-45ed-beda-28871f4d4d99',
   name: {
     en: "Converting between decimeters and centimeters",
     lt: "Decimetrų ir centimetrų keitimas",
