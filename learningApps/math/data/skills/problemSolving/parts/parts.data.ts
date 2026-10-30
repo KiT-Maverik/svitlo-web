@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { parts_SkillGroup_Ids } from './parts.ids';
-import { parts_Skills_Ids } from './skills/index.ids';
+import { fractionsContext_Skill_Data, partWholeAddsub_Skill_Data } from './skills';
 
 export const parts_SkillGroup_Data = buildSkillGroupConfig({
-  id: parts_SkillGroup_Ids.parts,
+  id: '9e77f69d-5ecb-42df-85b0-e8d19ca27c1b',
   name: {
     en: "Part-whole problems",
     lt: "Dalies ir visumos uždaviniai",
@@ -34,6 +33,9 @@ export const parts_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zadania o części i całości",
     uk: "Задачі на частини й ціле",
   },
-  skillIds: parts_Skills_Ids,
+  skillIds: {
+    partWholeAddsub: partWholeAddsub_Skill_Data.id,
+    fractionsContext: fractionsContext_Skill_Data.id,
+  },
   description: { methodological: "Relationships between a whole and its parts in contextual problems, including unit fractional parts." },
 });
