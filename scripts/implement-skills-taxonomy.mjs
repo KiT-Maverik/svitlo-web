@@ -369,8 +369,9 @@ function domainPlan(d,entities,registry,codes) {
         if (!fs.existsSync(fileOf(e))) throw Error('Skipped entity missing: '+e.key);
         existing(e);
       }
-      if ((e.children||[]).some(x=>x.action!=='skip'))
-        throw Error('Parent must use Action: update/create when children change: '+e.key);
+      if ((e.children||[]).some(x=>x.action==='delete' ||
+        (x.action==='create' && !fs.existsSync(fileOf(x)))))
+        throw Error('Parent must use Action: update when child membership changes: '+e.key);
       continue;
     }
     const file=fileOf(e),found=fs.existsSync(file);
@@ -397,6 +398,7 @@ function domainPlan(d,entities,registry,codes) {
       patchExisting(e,reviewed,e.methodological) :
       render(e,{id,name,fe,methodological:e.methodological},kids);
     if (found && e.action==='create') {
+      if (kids.length && !stableMembership(e,kids)) throw Error('Create cannot change existing parent membership: '+e.key);
       if (prior.methodological!==e.methodological)
         throw Error('Conflicting idempotent create: '+e.key);
     } else if (!found || fs.readFileSync(file,'utf8')!==code) local.set(file,code);
