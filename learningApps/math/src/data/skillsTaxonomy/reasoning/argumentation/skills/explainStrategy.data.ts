@@ -33,7 +33,8 @@ export const explainStrategy_Skill_Data = buildSkillConfig({
     pl: "Wyjaśnianie wybranej strategii obliczeń",
     uk: "Пояснення обраного способу обчислення",
   },
-  description: { methodological: "A mathematical explanation must communicate the actual sequence of transformations and why they preserve the result or justify an approximation. Verbal, visual, and symbolic representations may differ but must express the same underlying reasoning." ,
+  description: {
+    methodological: "A mathematical explanation must communicate the actual sequence of transformations and why they preserve the result or justify an approximation. Verbal, visual, and symbolic representations may differ but must express the same underlying reasoning.",
     fe: {
       en: "You can explain the steps of a calculation or estimate and why they work, using words, diagrams, or mathematical symbols.",
       zh: "你能用语言、图示或数学符号说明计算或估算的步骤，以及这些步骤为什么成立。",

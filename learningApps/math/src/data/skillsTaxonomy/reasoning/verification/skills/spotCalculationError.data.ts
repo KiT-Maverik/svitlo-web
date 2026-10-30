@@ -33,7 +33,8 @@ export const spotCalculationError_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie i wyjaśnianie błędnego kroku obliczeń",
     uk: "Виявлення та пояснення помилкового кроку обчислення",
   },
-  description: { methodological: "A computation can fail because of an incorrect regrouping or an inappropriate operation. The competency is identifying the faulty step, not merely saying that the final answer is wrong." ,
+  description: {
+    methodological: "A computation can fail because of an incorrect regrouping or an inappropriate operation. The competency is identifying the faulty step, not merely saying that the final answer is wrong.",
     fe: {
       en: "You can find the step where a calculation went wrong and explain the mistake, not just say the final answer is wrong.",
       zh: "你能找出计算中出错的步骤并解释错误原因，而不只是指出最终答案不对。",

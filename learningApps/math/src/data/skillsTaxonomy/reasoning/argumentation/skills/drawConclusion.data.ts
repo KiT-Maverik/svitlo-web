@@ -33,7 +33,8 @@ export const drawConclusion_Skill_Data = buildSkillConfig({
     pl: "Wyciąganie wniosku z warunków i rozumowania",
     uk: "Формулювання висновку з умов і міркувань",
   },
-  description: { methodological: "A logical conclusion must follow from established premises and prior statements through valid inference rules. Necessary consequences must be distinguished from plausible guesses and conclusions based on insufficient conditions." ,
+  description: {
+    methodological: "A logical conclusion must follow from established premises and prior statements through valid inference rules. Necessary consequences must be distinguished from plausible guesses and conclusions based on insufficient conditions.",
     fe: {
       en: "You can use the given facts to reach a conclusion that must follow from them, rather than simply making a plausible guess.",
       zh: "你能根据已知事实进行推理，得出必然成立的结论，而不只是作出看似合理的猜测。",

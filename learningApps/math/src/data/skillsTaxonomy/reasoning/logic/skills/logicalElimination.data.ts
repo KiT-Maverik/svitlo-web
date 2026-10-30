@@ -33,7 +33,8 @@ export const logicalElimination_Skill_Data = buildSkillConfig({
     pl: "Eliminowanie niemożliwych opcji w zadaniu logicznym",
     uk: "Виключення неможливих варіантів у логічній задачі",
   },
-  description: { methodological: "In a puzzle with three doors and constraints ruling out two choices, the remaining door is the only possible answer; logical exclusion determines it without guessing." ,
+  description: {
+    methodological: "In a puzzle with three doors and constraints ruling out two choices, the remaining door is the only possible answer; logical exclusion determines it without guessing.",
     fe: {
       en: "You can use the given conditions to rule out impossible choices and find the only valid answer without guessing.",
       zh: "你能根据给定条件排除不可能的选项，不靠猜测找出唯一符合条件的答案。",

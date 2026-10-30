@@ -33,7 +33,8 @@ export const distinguishExampleRule_Skill_Data = buildSkillConfig({
     pl: "Odróżnianie pojedynczego przykładu od reguły ogólnej",
     uk: "Розрізнення окремого прикладу та загального правила",
   },
-  description: { methodological: "A confirming instance does not establish a universal mathematical proposition. A general rule requires justification across the entire specified class, while one valid counterexample refutes it." ,
+  description: {
+    methodological: "A confirming instance does not establish a universal mathematical proposition. A general rule requires justification across the entire specified class, while one valid counterexample refutes it.",
     fe: {
       en: "You can tell a single example from a rule meant to hold in every case. One matching example does not prove a general rule.",
       zh: "你能区分单个例子和适用于所有情况的一般规律。一个符合规律的例子并不能证明规律总是成立。",

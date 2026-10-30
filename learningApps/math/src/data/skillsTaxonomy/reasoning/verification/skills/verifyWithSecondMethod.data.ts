@@ -33,7 +33,8 @@ export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
     pl: "Sprawdzanie obliczeń inną metodą",
     uk: "Перевірка обчислення іншим способом",
   },
-  description: { methodological: "A quotient can be checked by multiplication, and a sum by subtraction; using an independent verification strategy can expose an error." ,
+  description: {
+    methodological: "A quotient can be checked by multiplication, and a sum by subtraction; using an independent verification strategy can expose an error.",
     fe: {
       en: "You can check a calculation in another way, such as using multiplication to check division, to catch mistakes.",
       zh: "你能用另一种方法检查计算，例如用乘法检验除法，从而发现可能的错误。",

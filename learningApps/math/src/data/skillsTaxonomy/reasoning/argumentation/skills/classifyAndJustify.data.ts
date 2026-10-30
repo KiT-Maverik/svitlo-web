@@ -33,7 +33,8 @@ export const classifyAndJustify_Skill_Data = buildSkillConfig({
     pl: "Klasyfikowanie obiektów lub liczb według reguły i uzasadnianie wyboru",
     uk: "Класифікація об’єктів або чисел за правилом з обґрунтуванням вибору",
   },
-  description: { methodological: "Only numbers divisible by three may belong to a specified group; membership must be justified by the mathematical classification rule, not by superficial similarities of notation." ,
+  description: {
+    methodological: "Only numbers divisible by three may belong to a specified group; membership must be justified by the mathematical classification rule, not by superficial similarities of notation.",
     fe: {
       en: "You can group objects or numbers by a clear rule and explain why each item belongs or does not belong.",
       zh: "你能按照明确的规则给物体或数字分组，并说明每一项为什么符合或不符合规则。",
