@@ -1051,693 +1051,1228 @@ User-friendly description: Explore what helps an orbital system remain stable—
 
 ### Earth, Moon and Sun
 
+Slug: earthMoonAndSun
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 14
 
 [Not implemented](#)
 
-Here the distinctive geometry of Earth's viewpoint, rotation and revolution produces observable cycles. The scientific emphasis is on explaining familiar sky events from physical arrangements rather than on general geography or atmospheric meteorology.
+Methodological description: Here the distinctive geometry of Earth's viewpoint, rotation and revolution produces observable cycles. The scientific emphasis is on explaining familiar sky events from physical arrangements rather than on general geography or atmospheric meteorology.
+User-friendly description: Understand how the movements and positions of Earth, the Moon and the Sun create familiar patterns in the sky.
 
 #### Terrestrial Sky Cycles
 
+Slug: terrestrialSkyCycles
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Earth's orientation with respect to sunlight generates daily and annual changes in the visible sky and the duration of daylight.
+Methodological description: Earth's orientation with respect to sunlight generates daily and annual changes in the visible sky and the duration of daylight.
+User-friendly description: Explore how Earth's rotation and tilt shape daylight and seasonal changes.
 
 ##### Day and Night
 
+Slug: dayAndNight
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the alternation of illumination and darkness through Earth's rotation rather than the Sun physically circling Earth.
+Methodological description: Explain the alternation of illumination and darkness through Earth's rotation rather than the Sun physically circling Earth.
+User-friendly description: Explain why Earth's rotation brings alternating daylight and darkness.
 
 ##### Seasons
 
+Slug: seasons
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain seasonal solar illumination using Earth's axial tilt and orbital revolution rather than changes in Earth–Sun distance alone.
+Methodological description: Explain seasonal solar illumination using Earth's axial tilt and orbital revolution rather than changes in Earth–Sun distance alone.
+User-friendly description: Discover how Earth's tilted axis produces the seasons.
 
 ##### Solstices and Equinoxes
 
+Slug: solsticesAndEquinoxes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain these seasonal reference points from the changing Sun–Earth geometry and the distribution of daylight.
+Methodological description: Explain these seasonal reference points from the changing Sun–Earth geometry and the distribution of daylight.
+User-friendly description: Understand what makes solstices and equinoxes special points in the year.
 
 ##### Solar Altitude and Daylight
 
+Slug: solarAltitudeAndDaylight
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the Sun's apparent height and daily path to latitude, date and daylight duration.
+Methodological description: Relate the Sun's apparent height and daily path to latitude, date and daylight duration.
+User-friendly description: See how the Sun's apparent height and the length of daylight change with place and season.
 
 #### Lunar Appearance
+
+Slug: lunarAppearance
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-The Moon's changing appearance follows its illumination and orbital viewing geometry, not changes to its intrinsic light production.
+Methodological description: The Moon's changing appearance follows its illumination and orbital viewing geometry, not changes to its intrinsic light production.
+User-friendly description: Explore how the Moon's movement and sunlight change what we see from Earth.
 
 ##### Lunar Phases
 
+Slug: lunarPhases
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the repeating illuminated shapes visible from Earth through the Sun–Moon–observer geometry.
+Methodological description: Explain the repeating illuminated shapes visible from Earth through the Sun–Moon–observer geometry.
+User-friendly description: Explain the changing shape of the sunlit Moon throughout its phases.
 
 ##### Lunar Motion
 
+Slug: lunarMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace the Moon's changing position against background stars across successive nights.
+Methodological description: Trace the Moon's changing position against background stars across successive nights.
+User-friendly description: Track how the Moon changes position against the stars from night to night.
 
 ##### Lunar Libration
 
+Slug: lunarLibration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why changing perspective exposes slightly different portions of the lunar surface over time.
+Methodological description: Explain why changing perspective exposes slightly different portions of the lunar surface over time.
+User-friendly description: Discover why slightly different parts of the Moon become visible over time.
 
 ##### Near and Far Lunar Hemispheres
 
+Slug: nearAndFarLunarHemispheres
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the hemisphere generally facing Earth from the opposite hemisphere without equating the far side with permanent darkness.
+Methodological description: Distinguish the hemisphere generally facing Earth from the opposite hemisphere without equating the far side with permanent darkness.
+User-friendly description: Understand why the far side of the Moon is not always dark.
 
 #### Eclipses and Alignments
 
+Slug: eclipsesAndAlignments
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Occultation and shadow phenomena depend on an observer's line of sight and the relative positions and apparent sizes of bodies.
+Methodological description: Occultation and shadow phenomena depend on an observer's line of sight and the relative positions and apparent sizes of bodies.
+User-friendly description: Learn how eclipses depend on the alignment of celestial objects and their shadows.
 
 ##### Solar Eclipses
 
+Slug: solarEclipses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the conditions, shadow regions and different observational appearances of a solar eclipse.
+Methodological description: Explain the conditions, shadow regions and different observational appearances of a solar eclipse.
+User-friendly description: Explain when a solar eclipse happens and why its appearance varies by location.
 
 ##### Lunar Eclipses
 
+Slug: lunarEclipses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the conditions and stages of a lunar eclipse as the Moon encounters Earth's shadow.
+Methodological description: Explain the conditions and stages of a lunar eclipse as the Moon encounters Earth's shadow.
+User-friendly description: Understand how Earth casts its shadow on the Moon during a lunar eclipse.
 
 ##### Eclipse Seasons
 
+Slug: eclipseSeasons
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why solar and lunar eclipses are not observed at every new or full Moon, using orbital inclination and alignment.
+Methodological description: Explain why solar and lunar eclipses are not observed at every new or full Moon, using orbital inclination and alignment.
+User-friendly description: Discover why a new or full Moon does not produce an eclipse every month.
 
 #### Earth–Moon Interactions
+
+Slug: earthMoonInteractions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-The Earth–Moon system is a long-term dynamical pair whose interactions create measurable effects on Earth and its satellite.
+Methodological description: The Earth–Moon system is a long-term dynamical pair whose interactions create measurable effects on Earth and its satellite.
+User-friendly description: Explore how the Moon and Earth influence each other through gravity.
 
 ##### Ocean Tides
 
+Slug: oceanTides
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the dominant lunar and solar gravitational contributions to periodic changes in sea level, distinguishing ideal equilibrium tides from local coastal conditions.
+Methodological description: Explain the dominant lunar and solar gravitational contributions to periodic changes in sea level, distinguishing ideal equilibrium tides from local coastal conditions.
+User-friendly description: Understand how the Moon and Sun help produce ocean tides.
 
 ##### Lunar Tidal Evolution
 
+Slug: lunarTidalEvolution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how tidal dissipation affects Earth's rotation and the Moon's orbital distance over long timescales.
+Methodological description: Explain how tidal dissipation affects Earth's rotation and the Moon's orbital distance over long timescales.
+User-friendly description: See how tidal interactions slowly change Earth's rotation and the Moon's orbit.
 
 ##### Lunar Orbit and Month
 
+Slug: lunarOrbitAndMonth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the Moon's orbital cycle from the phase cycle by considering Earth's simultaneous revolution around the Sun.
+Methodological description: Distinguish the Moon's orbital cycle from the phase cycle by considering Earth's simultaneous revolution around the Sun.
+User-friendly description: Compare the Moon's journey around Earth with its repeating cycle of phases.
 
 ### Solar System Structure and Origins
+
+Slug: solarSystemStructureAndOrigins
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-The Solar System is classified by its orbital organization and by evidence of formation from a common disk. Individual worlds are examined in planetary science, while the Sun's internal structure and activity belong to solar astronomy.
+Methodological description: The Solar System is classified by its orbital organization and by evidence of formation from a common disk. Individual worlds are examined in planetary science, while the Sun's internal structure and activity belong to solar astronomy.
+User-friendly description: Explore the arrangement of the Solar System and the evidence for how it formed.
 
 #### System Architecture
 
+Slug: systemArchitecture
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A planetary system includes one or more stars and gravitationally associated objects whose locations are described by nested orbital regions.
+Methodological description: A planetary system includes one or more stars and gravitationally associated objects whose locations are described by nested orbital regions.
+User-friendly description: Discover the different regions and kinds of objects orbiting the Sun.
 
 ##### Solar System Components
 
+Slug: solarSystemComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify the Sun, planets, natural satellites and smaller bodies by their roles in the system's gravitational architecture.
+Methodological description: Classify the Sun, planets, natural satellites and smaller bodies by their roles in the system's gravitational architecture.
+User-friendly description: Recognize the Sun, planets, moons and smaller bodies by their roles in the Solar System.
 
 ##### Planet and Dwarf Planet Classification
 
+Slug: planetAndDwarfPlanetClassification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply the physical and dynamical criteria that distinguish planets, dwarf planets and other orbiting bodies.
+Methodological description: Apply the physical and dynamical criteria that distinguish planets, dwarf planets and other orbiting bodies.
+User-friendly description: Distinguish planets and dwarf planets using their physical and orbital characteristics.
 
 ##### Inner and Outer Solar System
 
+Slug: innerAndOuterSolarSystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the compositions and environments characteristic of regions on opposite sides of the main asteroid belt, allowing for exceptions.
+Methodological description: Compare the compositions and environments characteristic of regions on opposite sides of the main asteroid belt, allowing for exceptions.
+User-friendly description: Compare the inner and outer Solar System and their typical environments.
 
 ##### Small-Body Reservoirs
 
+Slug: smallBodyReservoirs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate and distinguish the asteroid belt, Kuiper Belt and hypothesized Oort Cloud as populations or reservoirs.
+Methodological description: Locate and distinguish the asteroid belt, Kuiper Belt and hypothesized Oort Cloud as populations or reservoirs.
+User-friendly description: Locate the asteroid belt, Kuiper Belt and proposed distant Oort Cloud.
 
 #### Minor Bodies
+
+Slug: minorBodies
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Small populations preserve clues about early formation while showing important differences in composition, orbital origin and activity.
+Methodological description: Small populations preserve clues about early formation while showing important differences in composition, orbital origin and activity.
+User-friendly description: Learn about smaller Solar System bodies and what they reveal about its past.
 
 ##### Asteroids
 
+Slug: asteroids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the properties, diversity and orbital behavior of predominantly rocky or metallic small Solar System bodies.
+Methodological description: Explain the properties, diversity and orbital behavior of predominantly rocky or metallic small Solar System bodies.
+User-friendly description: Explore the variety of rocky and metal-rich asteroids and their orbits.
 
 ##### Comets
 
+Slug: comets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the development of a coma and tails as volatile material responds to solar heating and the solar wind.
+Methodological description: Explain the development of a coma and tails as volatile material responds to solar heating and the solar wind.
+User-friendly description: Discover how sunlight makes comets develop glowing clouds and tails.
 
 ##### Meteoroids, Meteors and Meteorites
 
+Slug: meteoroidsMeteorsAndMeteorites
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a small body in space, its atmospheric luminous phenomenon and surviving material reaching the ground.
+Methodological description: Distinguish a small body in space, its atmospheric luminous phenomenon and surviving material reaching the ground.
+User-friendly description: Distinguish a meteoroid in space, a meteor in the sky and a meteorite on the ground.
 
 ##### Trans-Neptunian Objects
 
+Slug: transNeptunianObjects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify bodies beyond Neptune and relate their diverse orbits to the outer Solar System.
+Methodological description: Classify bodies beyond Neptune and relate their diverse orbits to the outer Solar System.
+User-friendly description: Explore the varied objects orbiting beyond Neptune.
 
 #### Formation and Chronology
+
+Slug: formationAndChronology
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-The formation model must explain both shared planetary characteristics and striking differences among observed worlds.
+Methodological description: The formation model must explain both shared planetary characteristics and striking differences among observed worlds.
+User-friendly description: Trace the evidence for how the Solar System grew and changed over time.
 
 ##### Protoplanetary Disks
 
+Slug: protoplanetaryDisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the role of rotating gas-and-dust disks in producing material for planet formation.
+Methodological description: Explain the role of rotating gas-and-dust disks in producing material for planet formation.
+User-friendly description: See how disks of gas and dust provide the ingredients for forming planets.
 
 ##### Planetary Accretion
 
+Slug: planetaryAccretion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how collisions and gravitational growth build larger bodies from smaller solid material.
+Methodological description: Describe how collisions and gravitational growth build larger bodies from smaller solid material.
+User-friendly description: Explain how smaller material comes together to build larger planetary bodies.
 
 ##### Early Differentiation
 
+Slug: earlyDifferentiation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how heating and density sorting lead young planetary bodies to develop distinct interior layers.
+Methodological description: Explain how heating and density sorting lead young planetary bodies to develop distinct interior layers.
+User-friendly description: Understand how young worlds develop layers as their materials separate.
 
 ##### Age of the Solar System
 
+Slug: ageOfTheSolarSystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret radiometric and meteoritic evidence used to constrain the time of Solar System formation.
+Methodological description: Interpret radiometric and meteoritic evidence used to constrain the time of Solar System formation.
+User-friendly description: Discover how meteorites and radioactive dating help estimate the Solar System's age.
 
 ##### Origin of the Moon
 
+Slug: originOfTheMoon
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate proposed formation scenarios for Earth's Moon, including giant-impact models, using angular momentum, lunar samples, isotopic composition and the limitations of current evidence.
+Methodological description: Evaluate proposed formation scenarios for Earth's Moon, including giant-impact models, using angular momentum, lunar samples, isotopic composition and the limitations of current evidence.
+User-friendly description: Compare evidence for different theories of the Moon's origin, including a giant impact.
 
 ### Planetary Science
+
+Slug: planetaryScience
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Planetary science compares worlds by their surfaces, interiors, atmospheres and volatile materials. It uses Earth as one comparative case, but its categories also apply to moons, dwarf planets and worlds beyond the Solar System.
+Methodological description: Planetary science compares worlds by their surfaces, interiors, atmospheres and volatile materials. It uses Earth as one comparative case, but its categories also apply to moons, dwarf planets and worlds beyond the Solar System.
+User-friendly description: Investigate what worlds are made of and how their surfaces, atmospheres and interiors work.
 
 #### Planetary Classes
 
+Slug: planetaryClasses
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Composition, density and thermal history help explain why planets and moons display very different structures rather than simply different sizes.
+Methodological description: Composition, density and thermal history help explain why planets and moons display very different structures rather than simply different sizes.
+User-friendly description: Compare rocky worlds, giant planets, moons and other planetary bodies.
 
 ##### Terrestrial Planets
 
+Slug: terrestrialPlanets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the characteristic rocky interiors, surfaces and atmospheres of Mercury, Venus, Earth and Mars.
+Methodological description: Compare the characteristic rocky interiors, surfaces and atmospheres of Mercury, Venus, Earth and Mars.
+User-friendly description: Explore what makes Mercury, Venus, Earth and Mars rocky planets with different conditions.
 
 ##### Giant Planets
 
+Slug: giantPlanets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish gas giants from ice giants using composition, interior models and observable atmospheric properties.
+Methodological description: Distinguish gas giants from ice giants using composition, interior models and observable atmospheric properties.
+User-friendly description: Distinguish gas giants and ice giants by their composition and internal structure.
 
 ##### Natural Satellites
 
+Slug: naturalSatellites
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare moons by origin, orbit, composition and geological activity without treating all satellites as Moon-like.
+Methodological description: Compare moons by origin, orbit, composition and geological activity without treating all satellites as Moon-like.
+User-friendly description: Discover how moons differ in size, origin, composition and activity.
 
 ##### Planetary Density and Composition
 
+Slug: planetaryDensityAndComposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use mass, radius and density to constrain plausible bulk material and planetary classification.
+Methodological description: Use mass, radius and density to constrain plausible bulk material and planetary classification.
+User-friendly description: Use a world's mass, size and density to reason about what it contains.
 
 ##### Planetary Ring Systems
 
+Slug: planetaryRingSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the composition, dynamics, formation and evolution of rings around planets or other bodies, including interactions with nearby satellites and differences between dense rings and diffuse dust populations.
+Methodological description: Interpret the composition, dynamics, formation and evolution of rings around planets or other bodies, including interactions with nearby satellites and differences between dense rings and diffuse dust populations.
+User-friendly description: Explore how planetary rings form, change and interact with nearby moons.
 
 #### Surfaces and Geology
 
+Slug: surfacesAndGeology
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Observable terrain records impacts, deformation, volcanism and erosion, with interpretation conditioned by the limits of remote data.
+Methodological description: Observable terrain records impacts, deformation, volcanism and erosion, with interpretation conditioned by the limits of remote data.
+User-friendly description: Read the clues left on planetary surfaces by collisions and geological change.
 
 ##### Impact Cratering
 
+Slug: impactCratering
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how collisions produce craters and why crater populations can reveal relative surface history.
+Methodological description: Explain how collisions produce craters and why crater populations can reveal relative surface history.
+User-friendly description: Understand how impacts create craters and what crater patterns reveal.
 
 ##### Extraterrestrial Volcanism
 
+Slug: extraterrestrialVolcanism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret evidence of past or current volcanic processes on planets and moons.
+Methodological description: Interpret evidence of past or current volcanic processes on planets and moons.
+User-friendly description: Look for signs of volcanoes on worlds beyond Earth.
 
 ##### Planetary Tectonics
 
+Slug: planetaryTectonics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare crustal deformation and tectonic regimes across worlds without assuming Earth-style plate tectonics everywhere.
+Methodological description: Compare crustal deformation and tectonic regimes across worlds without assuming Earth-style plate tectonics everywhere.
+User-friendly description: Compare how the crusts of different worlds bend, break or move.
 
 ##### Surface Age Estimation
 
+Slug: surfaceAgeEstimation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use relative geologic relationships and calibrated crater statistics to infer the chronology of planetary surfaces.
+Methodological description: Use relative geologic relationships and calibrated crater statistics to infer the chronology of planetary surfaces.
+User-friendly description: Estimate when surfaces formed using geological relationships and impact craters.
 
 #### Atmospheres and Weather
+
+Slug: atmospheresAndWeather
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Atmospheric behavior depends on composition, gravity, radiation, pressure and circulation in ways that vary widely from Earth.
+Methodological description: Atmospheric behavior depends on composition, gravity, radiation, pressure and circulation in ways that vary widely from Earth.
+User-friendly description: Discover why different planets have very different weather and atmospheres.
 
 ##### Atmospheric Retention and Escape
 
+Slug: atmosphericRetentionAndEscape
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how gravity, temperature and escape processes influence the presence or loss of planetary atmospheres.
+Methodological description: Explain how gravity, temperature and escape processes influence the presence or loss of planetary atmospheres.
+User-friendly description: Explain why some worlds keep thick atmospheres while others lose gas to space.
 
 ##### Planetary Greenhouse Effects
 
+Slug: planetaryGreenhouseEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how atmospheric absorption and emission influence surface or atmospheric temperatures on different worlds.
+Methodological description: Explain how atmospheric absorption and emission influence surface or atmospheric temperatures on different worlds.
+User-friendly description: Explore how atmospheric gases trap and release heat on different planets.
 
 ##### Planetary Weather
 
+Slug: planetaryWeather
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify and interpret weather phenomena such as storms, clouds and winds under non-Earth conditions.
+Methodological description: Identify and interpret weather phenomena such as storms, clouds and winds under non-Earth conditions.
+User-friendly description: Recognize storms, winds and clouds on worlds with conditions unlike Earth's.
 
 ##### Atmospheric Circulation
 
+Slug: atmosphericCirculation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate global winds and thermal patterns to solar input, rotation and atmospheric structure.
+Methodological description: Relate global winds and thermal patterns to solar input, rotation and atmospheric structure.
+User-friendly description: Understand how a planet's rotation and heating shape large-scale air movement.
 
 #### Interiors and Volatiles
+
+Slug: interiorsAndVolatiles
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Indirect observations of magnetic fields, heat and fluid materials constrain unseen layers and possible activity beneath planetary surfaces.
+Methodological description: Indirect observations of magnetic fields, heat and fluid materials constrain unseen layers and possible activity beneath planetary surfaces.
+User-friendly description: Investigate hidden planetary layers, magnetic fields, water and ice.
 
 ##### Planetary Interior Structure
 
+Slug: planetaryInteriorStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer cores, mantles or other layers from density, seismic, magnetic and gravitational evidence.
+Methodological description: Infer cores, mantles or other layers from density, seismic, magnetic and gravitational evidence.
+User-friendly description: Use indirect evidence to explore a planet's core and interior layers.
 
 ##### Planetary Magnetic Fields
 
+Slug: planetaryMagneticFields
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the conditions under which internal conductive flows can generate global or regional magnetic fields.
+Methodological description: Explain the conditions under which internal conductive flows can generate global or regional magnetic fields.
+User-friendly description: Explain how moving conductive material inside a planet can create a magnetic field.
 
 ##### Water and Ice Beyond Earth
 
+Slug: waterAndIceBeyondEarth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate the physical states and likely reservoirs of water on different Solar System bodies.
+Methodological description: Evaluate the physical states and likely reservoirs of water on different Solar System bodies.
+User-friendly description: Explore where water and ice may exist on other worlds.
 
 ##### Subsurface Oceans
 
+Slug: subsurfaceOceans
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret geophysical and compositional evidence for liquids beneath icy surfaces without assuming biology.
+Methodological description: Interpret geophysical and compositional evidence for liquids beneath icy surfaces without assuming biology.
+User-friendly description: Investigate the clues that some icy moons may hide liquid oceans.
 
 ##### Cryovolcanism
 
+Slug: cryovolcanism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize and explain eruptions driven by volatile liquids and ices rather than molten rock.
+Methodological description: Recognize and explain eruptions driven by volatile liquids and ices rather than molten rock.
+User-friendly description: Discover how cold worlds can erupt icy or volatile materials instead of molten rock.
 
 ### Solar Astronomy
+
+Slug: solarAstronomy
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
-The Sun is examined as a physical star whose radiation, plasma and magnetism affect the Solar System. Stellar populations and the Sun's long-term evolutionary fate are treated in stellar astronomy.
+Methodological description: The Sun is examined as a physical star whose radiation, plasma and magnetism affect the Solar System. Stellar populations and the Sun's long-term evolutionary fate are treated in stellar astronomy.
+User-friendly description: Study the Sun as a star and explore how its energy and activity influence the Solar System.
 
 #### Solar Structure and Energy
 
+Slug: solarStructureAndEnergy
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Solar radiation originates from processes in the interior and travels outward through distinct plasma and atmospheric regions.
+Methodological description: Solar radiation originates from processes in the interior and travels outward through distinct plasma and atmospheric regions.
+User-friendly description: Learn how energy moves from deep inside the Sun to the space around it.
 
 ##### Solar Interior
 
+Slug: solarInterior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the core, radiative zone and convective zone to the transport of energy through the Sun.
+Methodological description: Relate the core, radiative zone and convective zone to the transport of energy through the Sun.
+User-friendly description: Explore the Sun's internal layers and how they transport energy.
 
 ##### Solar Nuclear Fusion
 
+Slug: solarNuclearFusion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how hydrogen fusion powers the Sun, distinguishing nuclear reactions from chemical combustion.
+Methodological description: Explain how hydrogen fusion powers the Sun, distinguishing nuclear reactions from chemical combustion.
+User-friendly description: Explain why fusion—not ordinary burning—powers the Sun.
 
 ##### Solar Atmosphere
 
+Slug: solarAtmosphere
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the photosphere, chromosphere and corona by their observational features and physical conditions.
+Methodological description: Distinguish the photosphere, chromosphere and corona by their observational features and physical conditions.
+User-friendly description: Recognize the distinct visible and outer layers of the Sun's atmosphere.
 
 ##### Solar Luminosity
 
+Slug: solarLuminosity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the Sun's total radiant output and its relationship to illumination received at different distances.
+Methodological description: Interpret the Sun's total radiant output and its relationship to illumination received at different distances.
+User-friendly description: Understand the Sun's total energy output and how received light changes with distance.
 
 #### Magnetic Activity
 
+Slug: magneticActivity
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Magnetic fields in solar plasma produce time-variable surface features and energetic events rather than a perfectly steady star.
+Methodological description: Magnetic fields in solar plasma produce time-variable surface features and energetic events rather than a perfectly steady star.
+User-friendly description: Explore how changing solar magnetic fields produce spots and energetic events.
 
 ##### Sunspots
 
+Slug: sunspots
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the relation between dark solar surface regions, strong magnetic fields and relative temperature.
+Methodological description: Explain the relation between dark solar surface regions, strong magnetic fields and relative temperature.
+User-friendly description: Discover why sunspots look darker and how they relate to magnetic fields.
 
 ##### Solar Activity Cycle
 
+Slug: solarActivityCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret periodic trends in solar magnetic activity without assuming identical cycles.
+Methodological description: Interpret periodic trends in solar magnetic activity without assuming identical cycles.
+User-friendly description: Follow the changing patterns of solar activity without assuming every cycle is identical.
 
 ##### Solar Flares
 
+Slug: solarFlares
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe rapid magnetic-energy release and its observable radiation signatures.
+Methodological description: Describe rapid magnetic-energy release and its observable radiation signatures.
+User-friendly description: Understand how rapid magnetic changes produce solar flares.
 
 ##### Coronal Mass Ejections
 
+Slug: coronalMassEjections
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish large ejections of coronal plasma from flares, including their possible coincidence.
+Methodological description: Distinguish large ejections of coronal plasma from flares, including their possible coincidence.
+User-friendly description: Distinguish massive eruptions of solar material from bursts of flare radiation.
 
 #### Heliospheric Effects
+
+Slug: heliosphericEffects
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Solar material and magnetic fields extend outward and can influence planetary space environments even far from the solar surface.
+Methodological description: Solar material and magnetic fields extend outward and can influence planetary space environments even far from the solar surface.
+User-friendly description: Investigate how the Sun's particles and magnetic fields affect surrounding space.
 
 ##### Solar Wind
 
+Slug: solarWind
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the outward flow of charged solar particles and their transport of magnetic fields through space.
+Methodological description: Explain the outward flow of charged solar particles and their transport of magnetic fields through space.
+User-friendly description: Explore the stream of charged particles flowing outward from the Sun.
 
 ##### Heliosphere
 
+Slug: heliosphere
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the region dominated by the solar wind and distinguish its boundary from a solid surface.
+Methodological description: Explain the region dominated by the solar wind and distinguish its boundary from a solid surface.
+User-friendly description: Discover the enormous region influenced by the solar wind.
 
 ##### Space Weather
 
+Slug: spaceWeather
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret solar-driven changes that can affect spacecraft, radio systems and near-Earth space without equating them with terrestrial weather.
+Methodological description: Interpret solar-driven changes that can affect spacecraft, radio systems and near-Earth space without equating them with terrestrial weather.
+User-friendly description: Learn how solar activity can disrupt space technology and communications.
 
 ##### Auroral Processes
 
+Slug: auroralProcesses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how energetic charged particles interacting with an atmosphere and magnetic field produce auroral emissions.
+Methodological description: Explain how energetic charged particles interacting with an atmosphere and magnetic field produce auroral emissions.
+User-friendly description: Explain how charged particles and atmospheric gases produce auroras.
 
 ### Stellar Properties and Evolution
+
+Slug: stellarPropertiesAndEvolution
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 26
 
 [Not implemented](#)
 
-Stars are understood through measurements of their physical properties and models of formation, fusion, change and eventual remnants. The same competencies apply to the Sun where its properties form a useful comparison.
+Methodological description: Stars are understood through measurements of their physical properties and models of formation, fusion, change and eventual remnants. The same competencies apply to the Sun where its properties form a useful comparison.
+User-friendly description: Explore what stars are like, how they form and how their lives eventually change.
 
 #### Stellar Properties
+
+Slug: stellarProperties
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Observed spectra and brightness are combined with models to infer physical characteristics that cannot be measured by direct sampling.
+Methodological description: Observed spectra and brightness are combined with models to infer physical characteristics that cannot be measured by direct sampling.
+User-friendly description: Learn how astronomers measure and infer the physical properties of stars.
 
 ##### Stellar Mass
 
+Slug: stellarMass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine or constrain stellar mass from orbital dynamics or other model-dependent observations.
+Methodological description: Determine or constrain stellar mass from orbital dynamics or other model-dependent observations.
+User-friendly description: Use orbital measurements and models to estimate a star's mass.
 
 ##### Stellar Radius
 
+Slug: stellarRadius
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer a star's size from luminosity, temperature, eclipses or other relevant evidence.
+Methodological description: Infer a star's size from luminosity, temperature, eclipses or other relevant evidence.
+User-friendly description: Find out how astronomers infer a star's radius from its light and other observations.
 
 ##### Stellar Temperature
 
+Slug: stellarTemperature
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how stellar spectra and emitted energy distributions constrain effective temperature.
+Methodological description: Explain how stellar spectra and emitted energy distributions constrain effective temperature.
+User-friendly description: Use the colors and patterns in starlight to investigate temperature.
 
 ##### Stellar Luminosity
 
+Slug: stellarLuminosity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish total emitted power from the light received by an observer and infer luminosity from suitable measurements.
+Methodological description: Distinguish total emitted power from the light received by an observer and infer luminosity from suitable measurements.
+User-friendly description: Distinguish how much energy a star emits from how bright it looks from Earth.
 
 ##### Stellar Hydrostatic Equilibrium
 
+Slug: stellarHydrostaticEquilibrium
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how the balance of inward gravitational forces and outward pressure gradients sustains an approximately stable star and how disruption of the balance causes structural changes.
+Methodological description: Explain how the balance of inward gravitational forces and outward pressure gradients sustains an approximately stable star and how disruption of the balance causes structural changes.
+User-friendly description: Understand how gravity and internal pressure keep a star balanced.
 
 #### Stellar and Substellar Classification
+
+Slug: stellarAndSubstellarClassification
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Spectra, temperature, luminosity, mass, multiplicity and composition provide complementary ways to group luminous stars and related substellar bodies, while observational class need not imply a unique evolutionary history.
+Methodological description: Spectra, temperature, luminosity, mass, multiplicity and composition provide complementary ways to group luminous stars and related substellar bodies, while observational class need not imply a unique evolutionary history.
+User-friendly description: Explore different kinds of stars and related objects through spectra, mass and brightness.
 
 ##### Stellar Spectral Types
 
+Slug: stellarSpectralTypes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify stars by temperature-sensitive spectral characteristics rather than by color alone.
+Methodological description: Classify stars by temperature-sensitive spectral characteristics rather than by color alone.
+User-friendly description: Identify stellar spectral classes using features in their light.
 
 ##### Hertzsprung–Russell Diagram
 
+Slug: hertzsprungRussellDiagram
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the distribution of stars by luminosity and temperature and identify major evolutionary regions.
+Methodological description: Interpret the distribution of stars by luminosity and temperature and identify major evolutionary regions.
+User-friendly description: Read a Hertzsprung–Russell diagram to compare temperatures, luminosities and stellar stages.
 
 ##### Binary and Multiple Stars
 
+Slug: binaryAndMultipleStars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how gravitationally bound stellar systems are identified and used to estimate stellar properties.
+Methodological description: Explain how gravitationally bound stellar systems are identified and used to estimate stellar properties.
+User-friendly description: Explore how pairs and groups of stars orbit one another.
 
 ##### Stellar Populations
 
+Slug: stellarPopulations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish stellar populations by typical ages, chemical abundances and locations without treating the categories as absolute.
+Methodological description: Distinguish stellar populations by typical ages, chemical abundances and locations without treating the categories as absolute.
+User-friendly description: Compare populations of stars with different ages, compositions and locations.
 
 ##### Brown Dwarfs
 
+Slug: brownDwarfs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish substellar objects below the sustained hydrogen-fusion threshold from stars, including their cooling, atmospheric spectra and uncertain classification near planetary masses.
+Methodological description: Distinguish substellar objects below the sustained hydrogen-fusion threshold from stars, including their cooling, atmospheric spectra and uncertain classification near planetary masses.
+User-friendly description: Find out how brown dwarfs differ from stars and planetary-mass objects.
 
 ##### Variable Stars
 
+Slug: variableStars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify intrinsic stellar brightness variation by physical mechanism, timescale or periodicity, distinguishing it from apparent variation caused by eclipsing companions.
+Methodological description: Classify intrinsic stellar brightness variation by physical mechanism, timescale or periodicity, distinguishing it from apparent variation caused by eclipsing companions.
+User-friendly description: Recognize different causes of changes in a star's brightness.
 
 #### Star Formation
+
+Slug: starFormation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Star birth occurs inside interstellar gas and dust and progresses through distinct gravitational and thermal stages.
+Methodological description: Star birth occurs inside interstellar gas and dust and progresses through distinct gravitational and thermal stages.
+User-friendly description: Investigate how stars begin inside large clouds of gas and dust.
 
 ##### Molecular Cloud Collapse
 
+Slug: molecularCloudCollapse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how gravitational collapse of dense gas can initiate star formation against thermal and other support.
+Methodological description: Explain how gravitational collapse of dense gas can initiate star formation against thermal and other support.
+User-friendly description: Explain how dense regions of gas can collapse to begin forming stars.
 
 ##### Protostars
 
+Slug: protostars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the stage during which a contracting young stellar object has not yet reached stable hydrogen fusion.
+Methodological description: Interpret the stage during which a contracting young stellar object has not yet reached stable hydrogen fusion.
+User-friendly description: Recognize the early stage of a young star before steady hydrogen fusion begins.
 
 ##### Protostellar Disks
 
+Slug: protostellarDisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how circumstellar accretion disks transport matter and angular momentum during the early growth of stars.
+Methodological description: Explain how circumstellar accretion disks transport matter and angular momentum during the early growth of stars.
+User-friendly description: Explore how a disk of material feeds a developing star.
 
 ##### Protostellar Jets
 
+Slug: protostellarJets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the observed collimated outflows from young stellar systems and how their association with disks and magnetic fields constrains star-formation models.
+Methodological description: Explain the observed collimated outflows from young stellar systems and how their association with disks and magnetic fields constrains star-formation models.
+User-friendly description: Learn why young stars may launch narrow jets of moving material.
 
 #### Stellar Evolution
+
+Slug: stellarEvolution
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Mass and composition strongly constrain the duration and physical stages of a star's nuclear-burning lifetime.
+Methodological description: Mass and composition strongly constrain the duration and physical stages of a star's nuclear-burning lifetime.
+User-friendly description: Discover how stars change as they use up their nuclear fuel.
 
 ##### Main Sequence
 
+Slug: mainSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why stars can remain in a long-lived core hydrogen-burning state and why mass changes its duration.
+Methodological description: Explain why stars can remain in a long-lived core hydrogen-burning state and why mass changes its duration.
+User-friendly description: Explain why stars spend much of their lives fusing hydrogen in their cores.
 
 ##### Red Giants
 
+Slug: redGiants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the expansion and cooling of stellar envelopes during post-main-sequence evolution and distinguish the relevant evolutionary paths by progenitor mass.
+Methodological description: Explain the expansion and cooling of stellar envelopes during post-main-sequence evolution and distinguish the relevant evolutionary paths by progenitor mass.
+User-friendly description: Explore how stars expand and cool as they become red giants.
 
 ##### Supergiants
 
+Slug: supergiants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the very large sizes and high luminosities of massive evolved stars and their connection to advanced stellar evolution and mass loss.
+Methodological description: Interpret the very large sizes and high luminosities of massive evolved stars and their connection to advanced stellar evolution and mass loss.
+User-friendly description: Recognize the great size and brightness of evolved massive stars.
 
 ##### Advanced Stellar Fusion
 
+Slug: advancedStellarFusion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how later nuclear-burning stages depend on stellar mass and can create heavier nuclei.
+Methodological description: Explain how later nuclear-burning stages depend on stellar mass and can create heavier nuclei.
+User-friendly description: Discover how some stars fuse heavier elements in later stages of their lives.
 
 ##### Stellar Lifetimes
 
+Slug: stellarLifetimes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the evolutionary timescales of stars with different initial masses.
+Methodological description: Compare the evolutionary timescales of stars with different initial masses.
+User-friendly description: Compare how long stars live depending on their initial masses.
 
 #### Stellar Remnants
+
+Slug: stellarRemnants
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-The final states of stars differ according to progenitor mass, mass loss and binary interactions; extreme events redistribute energy and elements.
+Methodological description: The final states of stars differ according to progenitor mass, mass loss and binary interactions; extreme events redistribute energy and elements.
+User-friendly description: Explore the compact remains and explosive endings of different kinds of stars.
 
 ##### White Dwarfs
 
+Slug: whiteDwarfs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a compact electron-degeneracy-supported remnant forms after some stars shed their outer layers.
+Methodological description: Explain how a compact electron-degeneracy-supported remnant forms after some stars shed their outer layers.
+User-friendly description: Understand how some stars leave behind dense white dwarfs.
 
 ##### Neutron Stars
 
+Slug: neutronStars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the physical properties and formation of ultra-compact neutron-rich remnants supported by dense matter, including limits imposed by mass and rotation.
+Methodological description: Explain the physical properties and formation of ultra-compact neutron-rich remnants supported by dense matter, including limits imposed by mass and rotation.
+User-friendly description: Discover how collapsing stellar cores can form neutron stars.
 
 ##### Pulsars
 
+Slug: pulsars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret periodic electromagnetic pulses as beams from rotating magnetized neutron stars and distinguish an observational pulsar designation from a separate stellar-remnant type.
+Methodological description: Interpret periodic electromagnetic pulses as beams from rotating magnetized neutron stars and distinguish an observational pulsar designation from a separate stellar-remnant type.
+User-friendly description: Explain why rotating neutron stars can produce regular pulses of radiation.
 
 ##### Stellar-Mass Black Holes
 
+Slug: stellarMassBlackHoles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the formation and observational inference of compact remnants with event horizons.
+Methodological description: Explain the formation and observational inference of compact remnants with event horizons.
+User-friendly description: Explore how stellar-mass black holes form and how astronomers detect their effects.
 
 ##### Supernovae
 
+Slug: supernovae
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish major physical mechanisms that produce stellar explosions and interpret their observational signatures.
+Methodological description: Distinguish major physical mechanisms that produce stellar explosions and interpret their observational signatures.
+User-friendly description: Compare the different processes that produce supernova explosions.
 
 ##### Cosmic Element Enrichment
 
+Slug: cosmicElementEnrichment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how stellar nucleosynthesis and explosive or ejective events change the chemical composition of surrounding space.
+Methodological description: Explain how stellar nucleosynthesis and explosive or ejective events change the chemical composition of surrounding space.
+User-friendly description: See how stars and stellar explosions spread elements into surrounding space.
 
 ### Exoplanetary Systems
 
