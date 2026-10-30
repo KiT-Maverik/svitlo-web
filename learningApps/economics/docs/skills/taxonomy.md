@@ -252,113 +252,198 @@ User-friendly description: Understand why individually sensible decisions can cr
 
 ### Поведінка споживачів
 
+Slug: consumerBehavior
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Споживачі оцінюють потреби, якість, альтернативи й інформацію в умовах різних доходів і психологічних обмежень. Тут досліджується їхній вибір, а не методи просування товарів продавцем.
+Methodological description: Consumers evaluate needs, quality, alternatives, and information under varying incomes and psychological constraints. This domain analyzes their choices rather than sellers' methods of promoting goods.
+User-friendly description: Explore how people choose what to buy and what information shapes their decisions.
 
 #### Потреби та вподобання
+
+Slug: needsAndPreferences
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Особисті цілі й уподобання пояснюють, чому однакові товари не мають однакової цінності для всіх покупців.
+Methodological description: Personal goals and preferences explain why identical goods need not have identical value for different buyers.
+User-friendly description: Discover why different people value products and experiences differently.
 
 ##### Потреби й бажання
 
+Slug: needsAndWants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти необхідне для визначеної мети чи умов життя від додаткових уподобань без нав'язування універсального списку бажань.
+Methodological description: Distinguish what is necessary for a specified goal or living conditions from additional preferences without imposing a universal list of desires.
+User-friendly description: Tell the difference between needs and wants in a particular situation.
 
 ##### Споживчі вподобання
 
+Slug: consumerPreferences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Описувати, як людина впорядковує альтернативні набори товарів або послуг відповідно до власних пріоритетів.
+Methodological description: Describe how an individual ranks alternative bundles of goods and services according to their own priorities.
+User-friendly description: Compare how someone might rank different combinations of goods.
 
 ##### Корисність
 
+Slug: utility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати корисність як модель вподобань і цінності споживчих альтернатив для людини без припущення про єдину об’єктивну одиницю задоволення.
+Methodological description: Interpret utility as a model of an individual's preferences and valuation of consumption alternatives without assuming an objective universal unit of satisfaction.
+User-friendly description: Understand utility as a way of describing what someone values.
 
 ##### Гранична корисність
 
+Slug: marginalUtility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зміну корисності від наступної одиниці споживання за незмінності релевантних умов і відрізняти її від загальної корисності.
+Methodological description: Evaluate the change in utility from consuming an additional unit with relevant conditions held constant; distinguish it from total utility.
+User-friendly description: Explore what an extra unit of something adds to its value for you.
 
 ##### Споживчий вибір за обмеженого бюджету
 
+Slug: consumerChoiceWithLimitedBudget
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати доступні набори товарів і послуг за вподобаннями та визначеним доходом і цінами; застосовувати споживче бюджетне обмеження, не підмінюючи ним загальну модель ресурсних обмежень.
+Methodological description: Compare affordable bundles of goods and services according to preferences, income, and prices; apply the consumer budget constraint without treating it as the full model of all resource constraints.
+User-friendly description: Choose between available products when income and prices limit the options.
 
 #### Інформація та права споживача
 
+Slug: consumerInformationAndRights
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Якість рішення залежить не лише від ціни, а й від відомостей про продукт, контрактні умови та можливості захисту.
+Methodological description: Sound consumer decisions depend not only on price but also on product information, contract terms, and possible protections.
+User-friendly description: Learn how information and consumer rights affect purchase decisions.
 
 ##### Повна вартість покупки
 
+Slug: totalCostOfPurchase
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати всі суттєві витрати з погляду покупця — доставку, користування, обслуговування, комісії — для порівняння альтернатив навіть тоді, коли ці витрати зазначені прозоро. Виявлення нав’язаних продавцем опцій належить до комерційних практик.
+Methodological description: Estimate all substantial buyer-side costs, including delivery, operation, maintenance, and fees, when comparing options, even when these costs are disclosed. Seller-imposed optional extras belong to commercial-practices analysis.
+User-friendly description: Compare the true overall cost of purchases, not just the displayed price.
 
 ##### Якість споживчої інформації
 
+Slug: qualityOfConsumerInformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перевіряти походження, актуальність і доказовість тверджень про товари й послуги, зокрема незалежність відгуків, репрезентативність рейтингів і наявність комерційного інтересу джерела.
+Methodological description: Assess the origin, timeliness, and evidence supporting claims about goods and services, including review independence, rating representativeness, and sources' commercial interests.
+User-friendly description: Check whether product claims, ratings, and reviews are reliable.
 
 ##### Права та обов’язки споживача
 
+Slug: consumerRightsAndResponsibilities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити гарантію, повернення, обов’язки продавця і покупця з урахуванням застосовного правового контексту.
+Methodological description: Interpret warranties, returns, and buyer and seller obligations in the applicable legal context.
+User-friendly description: Recognize the rights and responsibilities involved in buying something.
 
 ##### Ціна за одиницю товару
 
+Slug: unitPricing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Приводити вартість пропозицій до порівнянних одиниць маси, об’єму або кількості з урахуванням складу набору, якості й умов акції; нижча ціна упаковки не обов’язково означає нижчу ціну одиниці.
+Methodological description: Convert offer prices into comparable units of mass, volume, or quantity while accounting for bundle contents, quality, and promotional conditions; a cheaper package need not have a cheaper unit price.
+User-friendly description: Compare products fairly by calculating the cost per unit.
 
 #### Поведінкові чинники вибору
+
+Slug: behavioralFactorsInChoice
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Обмежена увага й раціональність, часові уподобання, формат подання та вибір стандартної опції змінюють економічні рішення навіть за однакової формальної множини можливостей.
+Methodological description: Limited attention and rationality, time preferences, presentation formats, and defaults can alter economic choices even when the formal options are unchanged.
+User-friendly description: Discover how the way choices are presented influences decisions.
 
 ##### Обмежена раціональність
 
+Slug: boundedRationality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як нестача часу, знань чи обчислювальних можливостей спричиняє використання спрощених правил вибору.
+Methodological description: Explain how limits of time, knowledge, or computational ability lead decision-makers to use simplified rules.
+User-friendly description: See why people often use shortcuts rather than comparing every option.
 
 ##### Ефект фреймінгу
 
+Slug: framingEffect
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, як еквівалентні відомості, подані як виграші або втрати, здатні змінити оцінку рішення.
+Methodological description: Identify how equivalent information framed as gains or losses can change the assessment of a choice.
+User-friendly description: Explore why the same facts can feel different when described as gains or losses.
 
 ##### Упередження щодо теперішнього
 
+Slug: presentBias
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати систематичне переоцінювання негайних вигід порівняно з відкладеними наслідками.
+Methodological description: Recognize systematic overvaluation of immediate benefits relative to delayed consequences.
+User-friendly description: Understand why immediate rewards may outweigh better future outcomes in our decisions.
 
 ##### Архітектура вибору
 
+Slug: choiceArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вплив стандартних опцій, порядку подання та складності відмови на рішення без зміни самих альтернатив.
+Methodological description: Assess how default options, presentation order, and the difficulty of opting out affect choices without changing the underlying alternatives.
+User-friendly description: Notice how defaults and option layouts can steer a decision.
 
 ### Ринки та конкуренція
 
