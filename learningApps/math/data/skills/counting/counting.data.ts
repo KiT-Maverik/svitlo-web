@@ -1,5 +1,9 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { sequence_SkillGroup_Data, cardinality_SkillGroup_Data, steps_SkillGroup_Data, ordinal_SkillGroup_Data, parity_SkillGroup_Data } from './index';
+import { sequence_SkillGroup_Data } from './sequence/sequence.data';
+import { cardinality_SkillGroup_Data } from './cardinality/cardinality.data';
+import { steps_SkillGroup_Data } from './steps/steps.data';
+import { ordinal_SkillGroup_Data } from './ordinal/ordinal.data';
+import { parity_SkillGroup_Data } from './parity/parity.data';
 
 export const counting_SkillDomain_Data = buildSkillDomainConfig({
   id: 'b41da424-c12f-4563-87d5-c8a58052a922',

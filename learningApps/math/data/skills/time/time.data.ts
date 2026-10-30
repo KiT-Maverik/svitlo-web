@@ -1,5 +1,7 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { calendar_SkillGroup_Data, clock_SkillGroup_Data, duration_SkillGroup_Data } from './index';
+import { calendar_SkillGroup_Data } from './calendar/calendar.data';
+import { clock_SkillGroup_Data } from './clock/clock.data';
+import { duration_SkillGroup_Data } from './duration/duration.data';
 
 export const time_SkillDomain_Data = buildSkillDomainConfig({
   id: 'be33de46-a3d9-4535-8eee-cf1c3c304827',

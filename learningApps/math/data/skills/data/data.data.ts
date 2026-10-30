@@ -1,5 +1,7 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { collection_SkillGroup_Data, presentation_SkillGroup_Data, interpretation_SkillGroup_Data } from './index';
+import { collection_SkillGroup_Data } from './collection/collection.data';
+import { presentation_SkillGroup_Data } from './presentation/presentation.data';
+import { interpretation_SkillGroup_Data } from './interpretation/interpretation.data';
 
 export const data_SkillDomain_Data = buildSkillDomainConfig({
   id: 'ae6d7bb7-0ee8-4bdd-8853-3d8d11233007',

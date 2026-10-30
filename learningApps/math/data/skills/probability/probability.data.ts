@@ -1,5 +1,6 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { events_SkillGroup_Data, experiments_SkillGroup_Data } from './index';
+import { events_SkillGroup_Data } from './events/events.data';
+import { experiments_SkillGroup_Data } from './experiments/experiments.data';
 
 export const probability_SkillDomain_Data = buildSkillDomainConfig({
   id: '55bc6d54-f5fc-49fc-8e7f-8d31230e1aca',
