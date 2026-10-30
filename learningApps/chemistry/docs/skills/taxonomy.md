@@ -1949,655 +1949,1165 @@ User-friendly description: Understand how electricity can drive reactions that w
 
 ### Acid–Base Chemistry
 
+Slug: acidBaseChemistry
+Action: create
+Status: pending
+
 Groups: 2 · Skills: 7
 
 [Not implemented](#)
 
-Acid–base chemistry concerns proton transfer, electron-pair interactions, acidity, and the behavior of chemical systems under relevant conditions. Its models, solution properties, transformations and analytical methods are broader than reaction-pattern classification alone.
+Methodological description: Acid–base chemistry concerns proton transfer, electron-pair interactions, acidity, and the behavior of chemical systems under relevant conditions. Its models, solution properties, transformations and analytical methods are broader than reaction-pattern classification alone.
+User-friendly description: Explore how acids and bases interact and how chemists describe and measure acidity.
 
 #### Acid–Base Fundamentals
+
+Slug: acidBaseFundamentals
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Conceptual acid–base models establish what counts as an acid or base, while strength and pH describe different aspects of chemical behavior and solution conditions.
+Methodological description: Conceptual acid–base models establish what counts as an acid or base, while strength and pH describe different aspects of chemical behavior and solution conditions.
+User-friendly description: Understand different acid–base models, acidity, and acid strength.
 
 ##### Acid–Base Models
 
+Slug: acidBaseModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish common Arrhenius, Brønsted–Lowry and Lewis descriptions by the chemical interactions each includes.
+Methodological description: Distinguish common Arrhenius, Brønsted–Lowry and Lewis descriptions by the chemical interactions each includes.
+User-friendly description: Compare how common chemical models define an acid or a base.
 
 ##### pH
 
+Slug: pH
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret a logarithmic measure of hydrogen-ion activity and its concentration-based approximations.
+Methodological description: Interpret a logarithmic measure of hydrogen-ion activity and its concentration-based approximations.
+User-friendly description: Read pH as a logarithmic way to describe acidity in a solution.
 
 ##### Acid Strength
 
+Slug: acidStrength
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how strongly an acid tends to donate a proton under specified conditions. A stronger acid transfers protons more readily in a comparable system; this does not mean the solution is necessarily more concentrated or more hazardous.
+Methodological description: Describe how strongly an acid tends to donate a proton under specified conditions. A stronger acid transfers protons more readily in a comparable system; this does not mean the solution is necessarily more concentrated or more hazardous.
+User-friendly description: Distinguish an acid's strength from how concentrated or hazardous its solution is.
 
 #### Acid–Base Systems
+
+Slug: acidBaseSystems
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Neutralization, indicator responses, buffer equilibria and titration exemplify how acid–base behavior is observed, controlled and measured under specific conditions.
+Methodological description: Neutralization, indicator responses, buffer equilibria and titration exemplify how acid–base behavior is observed, controlled and measured under specific conditions.
+User-friendly description: Discover how acids and bases react and how their effects are measured.
 
 ##### Neutralization
 
+Slug: neutralization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain net acid–base reactions and avoid assuming every neutralization gives a final pH of seven.
+Methodological description: Explain net acid–base reactions and avoid assuming every neutralization gives a final pH of seven.
+User-friendly description: Explore why reacting an acid with a base does not always produce a neutral pH.
 
 ##### Acid–Base Indicators
 
+Slug: acidBaseIndicators
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why some compounds change observable properties as solution acidity varies.
+Methodological description: Explain why some compounds change observable properties as solution acidity varies.
+User-friendly description: Understand how indicators change appearance as acidity changes.
 
 ##### Buffer Solutions
 
+Slug: bufferSolutions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how paired acid–base species resist moderate pH changes.
+Methodological description: Explain how paired acid–base species resist moderate pH changes.
+User-friendly description: See how buffer mixtures help resist changes in pH.
 
 ##### Acid–Base Titration
 
+Slug: acidBaseTitration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use a measured equivalence relationship to infer an unknown amount or concentration.
+Methodological description: Use a measured equivalence relationship to infer an unknown amount or concentration.
+User-friendly description: Use acid–base titration measurements to determine an unknown amount.
 
 ### Energy, Rates and Equilibrium
+
+Slug: energyRatesAndEquilibrium
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 19
 
 [Not implemented](#)
 
-Chemical systems exchange energy, evolve at finite rates and may approach dynamic equilibrium. These are related but distinct questions: whether change is favorable, how quickly it occurs and what composition persists.
+Methodological description: Chemical systems exchange energy, evolve at finite rates and may approach dynamic equilibrium. These are related but distinct questions: whether change is favorable, how quickly it occurs and what composition persists.
+User-friendly description: Explore energy changes, reaction speeds and the balance between forward and reverse reactions.
 
 #### Chemical Energetics
+
+Slug: chemicalEnergetics
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Energy changes are properties of a system and its processes, not intrinsic fuel labels or a claim that breaking bonds alone releases energy.
+Methodological description: Energy changes are properties of a system and its processes, not intrinsic fuel labels or a claim that breaking bonds alone releases energy.
+User-friendly description: Discover how energy is absorbed, released or redistributed during chemical changes.
 
 ##### Exothermic Processes
 
+Slug: exothermicProcesses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret negative system enthalpy change under stated conditions and distinguish released heat from reaction rate.
+Methodological description: Interpret negative system enthalpy change under stated conditions and distinguish released heat from reaction rate.
+User-friendly description: Recognize when a process releases heat without assuming that it happens quickly.
 
 ##### Endothermic Processes
 
+Slug: endothermicProcesses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret positive system enthalpy change and recognize that absorbing heat need not mean a reaction cannot occur.
+Methodological description: Interpret positive system enthalpy change and recognize that absorbing heat need not mean a reaction cannot occur.
+User-friendly description: Recognize when a process absorbs heat without assuming it cannot proceed.
 
 ##### Reaction Enthalpy
 
+Slug: reactionEnthalpy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate heat at constant pressure to the difference in enthalpy between states.
+Methodological description: Relate heat at constant pressure to the difference in enthalpy between states.
+User-friendly description: Compare the energy before and after a reaction using its enthalpy change.
 
 ##### Calorimetry
 
+Slug: calorimetry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer heat transfer from measured temperature change, heat capacity and appropriate system boundaries, recognizing energy losses and measurement uncertainty.
+Methodological description: Infer heat transfer from measured temperature change, heat capacity and appropriate system boundaries, recognizing energy losses and measurement uncertainty.
+User-friendly description: Use temperature change to estimate heat transfer, accounting for heat losses.
 
 ##### Hess's Law
 
+Slug: hesssLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine known reaction equations and associated enthalpy changes to determine an overall enthalpy change using the state-function character of enthalpy.
+Methodological description: Combine known reaction equations and associated enthalpy changes to determine an overall enthalpy change using the state-function character of enthalpy.
+User-friendly description: Combine known reaction energy changes to calculate another reaction's enthalpy.
 
 ##### Bond Energy Estimates
 
+Slug: bondEnergyEstimates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Approximate enthalpy changes from bonds broken and formed while recognizing average bond-energy limitations.
+Methodological description: Approximate enthalpy changes from bonds broken and formed while recognizing average bond-energy limitations.
+User-friendly description: Estimate reaction energy from bonds broken and formed while recognizing model limits.
 
 ##### Entropy
 
+Slug: entropy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the multiplicity of microscopic arrangements and energy dispersal to changes in thermodynamic entropy.
+Methodological description: Relate the multiplicity of microscopic arrangements and energy dispersal to changes in thermodynamic entropy.
+User-friendly description: Explore how energy dispersal and particle arrangements relate to entropy.
 
 ##### Gibbs Energy
 
+Slug: gibbsEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate enthalpy, temperature and entropy to the direction of spontaneous change at constant temperature and pressure.
+Methodological description: Relate enthalpy, temperature and entropy to the direction of spontaneous change at constant temperature and pressure.
+User-friendly description: Use Gibbs energy to judge when a chemical change is favorable under stated conditions.
 
 #### Reaction Rates
+
+Slug: reactionRates
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Rates describe how fast concentrations or amounts change, which can vary independently of a reaction's net energy change.
+Methodological description: Rates describe how fast concentrations or amounts change, which can vary independently of a reaction's net energy change.
+User-friendly description: Investigate how quickly reactants turn into products.
 
 ##### Reaction Rate
 
+Slug: reactionRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret change in reactant or product amount over time with consistent sign and units.
+Methodological description: Interpret change in reactant or product amount over time with consistent sign and units.
+User-friendly description: Calculate how fast reactants disappear or products appear over time.
 
 ##### Rate Laws
 
+Slug: rateLaws
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate reaction rate to reactant concentrations using an experimentally determined rate expression rather than assuming exponents from equation coefficients.
+Methodological description: Relate reaction rate to reactant concentrations using an experimentally determined rate expression rather than assuming exponents from equation coefficients.
+User-friendly description: Use an experimentally determined relationship between concentration and reaction rate.
 
 ##### Reaction Order
 
+Slug: reactionOrder
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify individual and overall concentration exponents of an empirical rate law and use them to predict rate changes when concentrations vary.
+Methodological description: Identify individual and overall concentration exponents of an empirical rate law and use them to predict rate changes when concentrations vary.
+User-friendly description: Determine how the order of a reaction affects the way its rate changes.
 
 ##### Concentration Effects
 
+Slug: concentrationEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how changing reactant concentration can influence encounter frequency and rate.
+Methodological description: Explain how changing reactant concentration can influence encounter frequency and rate.
+User-friendly description: Explain why changing reactant concentrations can change reaction speed.
 
 ##### Temperature Effects
 
+Slug: temperatureEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect temperature to the distribution of molecular energies and reaction rates.
+Methodological description: Connect temperature to the distribution of molecular energies and reaction rates.
+User-friendly description: Understand how temperature affects the chances of successful particle interactions.
 
 ##### Catalysis
 
+Slug: catalysis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain alternate reaction pathways and activation barriers without treating a catalyst as a stoichiometric reactant consumed overall.
+Methodological description: Explain alternate reaction pathways and activation barriers without treating a catalyst as a stoichiometric reactant consumed overall.
+User-friendly description: Discover how catalysts speed reactions without being used up overall.
 
 #### Chemical Equilibrium
+
+Slug: chemicalEquilibrium
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Forward and reverse processes may continue while bulk composition becomes steady; equilibrium responds to conditions.
+Methodological description: Forward and reverse processes may continue while bulk composition becomes steady; equilibrium responds to conditions.
+User-friendly description: Explore what happens when forward and reverse reactions reach equilibrium.
 
 ##### Reaction Reversibility
 
+Slug: reactionReversibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine when products can reform reactants, distinguishing a possible reverse pathway from a system that has actually reached dynamic equilibrium.
+Methodological description: Determine when products can reform reactants, distinguishing a possible reverse pathway from a system that has actually reached dynamic equilibrium.
+User-friendly description: Recognize reactions that can proceed in both directions.
 
 ##### Dynamic Equilibrium
 
+Slug: dynamicEquilibrium
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish equal forward and reverse rates from absence of reaction.
+Methodological description: Distinguish equal forward and reverse rates from absence of reaction.
+User-friendly description: Understand why chemical reactions continue even when equilibrium concentrations stay constant.
 
 ##### Equilibrium Constants
 
+Slug: equilibriumConstants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret an equilibrium expression as relating activities or their appropriate approximations at a given temperature.
+Methodological description: Interpret an equilibrium expression as relating activities or their appropriate approximations at a given temperature.
+User-friendly description: Read an equilibrium constant as a relationship between reacting substances.
 
 ##### Equilibrium Shifts
 
+Slug: equilibriumShifts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reason about changes in equilibrium composition after concentration, pressure or temperature disturbances.
+Methodological description: Reason about changes in equilibrium composition after concentration, pressure or temperature disturbances.
+User-friendly description: Predict how a change in conditions can shift equilibrium composition.
 
 ##### Solubility Equilibrium
 
+Slug: solubilityEquilibrium
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret precipitation and dissolution in terms of competing ionic concentrations and an equilibrium threshold.
+Methodological description: Interpret precipitation and dissolution in terms of competing ionic concentrations and an equilibrium threshold.
+User-friendly description: Explore how dissolved ions and solids reach a balance between dissolving and precipitating.
 
 ### Inorganic Chemistry
+
+Slug: inorganicChemistry
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-The chemistry of elements and non-carbon-centered substance families provides a systematic account of familiar materials and dissolved ions. Organic chemistry handles carbon-based families in greater detail.
+Methodological description: The chemistry of elements and non-carbon-centered substance families provides a systematic account of familiar materials and dissolved ions. Organic chemistry handles carbon-based families in greater detail.
+User-friendly description: Explore the properties and behavior of elements, inorganic compounds and dissolved ions.
 
 #### Element Families in Context
+
+Slug: elementFamiliesInContext
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Elemental forms can vary in structure, oxidation state and behavior despite shared periodic classification.
+Methodological description: Elemental forms can vary in structure, oxidation state and behavior despite shared periodic classification.
+User-friendly description: Compare chemical behavior among common families of elements.
 
 ##### Metal Reactivity
 
+Slug: metalReactivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare how different metals undergo oxidation, form ions and participate in displacement reactions under relevant conditions, distinct from the detailed mechanisms of corrosion.
+Methodological description: Compare how different metals undergo oxidation, form ions and participate in displacement reactions under relevant conditions, distinct from the detailed mechanisms of corrosion.
+User-friendly description: Explain why different metals react differently under comparable conditions.
 
 ##### Nonmetals
 
+Slug: nonmetals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate elemental forms such as oxygen, nitrogen, sulfur and halogens to characteristic chemical behavior.
+Methodological description: Relate elemental forms such as oxygen, nitrogen, sulfur and halogens to characteristic chemical behavior.
+User-friendly description: Explore how oxygen, nitrogen, sulfur and other nonmetals behave chemically.
 
 ##### Allotropes
 
+Slug: allotropes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize distinct structural forms of one element, such as graphite and diamond, and their different properties.
+Methodological description: Recognize distinct structural forms of one element, such as graphite and diamond, and their different properties.
+User-friendly description: Discover how one element can form materials with different atomic arrangements.
 
 ##### Noble Gases
 
+Slug: nobleGases
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain low typical reactivity from electron structure while recognizing that compounds of some noble gases exist.
+Methodological description: Explain low typical reactivity from electron structure while recognizing that compounds of some noble gases exist.
+User-friendly description: Understand why noble gases are usually unreactive but not completely incapable of bonding.
 
 #### Inorganic Compounds
+
+Slug: inorganicCompounds
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Inorganic formulas and classes describe varied substances whose behavior is not determined by a class name alone.
+Methodological description: Inorganic formulas and classes describe varied substances whose behavior is not determined by a class name alone.
+User-friendly description: Recognize broad categories of inorganic compounds without assuming all members act alike.
 
 ##### Oxides
 
+Slug: oxides
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish oxide composition and broad acidic, basic or amphoteric chemical behavior.
+Methodological description: Distinguish oxide composition and broad acidic, basic or amphoteric chemical behavior.
+User-friendly description: Explore the different types and chemical behavior of oxides.
 
 ##### Hydroxides
 
+Slug: hydroxides
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret hydroxide-containing substances and their dissociation or reactivity in context.
+Methodological description: Interpret hydroxide-containing substances and their dissociation or reactivity in context.
+User-friendly description: Recognize hydroxide compounds and how they behave in chemical reactions.
 
 ##### Salts
 
+Slug: salts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize ionic compounds and their compositional relationship to cations and anions.
+Methodological description: Recognize ionic compounds and their compositional relationship to cations and anions.
+User-friendly description: Identify salts as compounds built from positively and negatively charged ions.
 
 ##### Minerals
 
+Slug: minerals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how naturally occurring crystalline substances are classified by chemistry and structure.
+Methodological description: Explain how naturally occurring crystalline substances are classified by chemistry and structure.
+User-friendly description: Connect mineral compositions and crystal structures with their classification.
 
 ##### Coordination Compounds
 
+Slug: coordinationCompounds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret a central metal species surrounded by ligands as a structure distinct from a simple ionic formula.
+Methodological description: Interpret a central metal species surrounded by ligands as a structure distinct from a simple ionic formula.
+User-friendly description: Understand how ligands surround a central metal species in coordination compounds.
 
 #### Ions in Water
+
+Slug: ionsInWater
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Water permits dissociation and characteristic aqueous reactions, but not every dissolved substance produces free ions.
+Methodological description: Water permits dissociation and characteristic aqueous reactions, but not every dissolved substance produces free ions.
+User-friendly description: Learn how substances behave when dissolved in water.
 
 ##### Electrolytes
 
+Slug: electrolytes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish strong, weak and nonelectrolyte behavior in solution.
+Methodological description: Distinguish strong, weak and nonelectrolyte behavior in solution.
+User-friendly description: Distinguish strong, weak and nonelectrolytes by their behavior in solution.
 
 ##### Ionic Equations
 
+Slug: ionicEquations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent only the species participating in a net aqueous chemical change.
+Methodological description: Represent only the species participating in a net aqueous chemical change.
+User-friendly description: Write equations that show which ions actually take part in an aqueous reaction.
 
 ##### Solubility Rules
 
+Slug: solubilityRules
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use empirical patterns to anticipate precipitation while checking exceptions and conditions.
+Methodological description: Use empirical patterns to anticipate precipitation while checking exceptions and conditions.
+User-friendly description: Use solubility patterns to anticipate precipitates while checking exceptions.
 
 ##### Water Hardness
 
+Slug: waterHardness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate dissolved calcium and magnesium species to characteristic reactions and practical effects.
+Methodological description: Relate dissolved calcium and magnesium species to characteristic reactions and practical effects.
+User-friendly description: Explain how dissolved calcium and magnesium contribute to water hardness.
 
 ### Organic Chemistry
+
+Slug: organicChemistry
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
-Carbon compounds are organized by connectivity, functional groups and reaction pathways. This domain focuses on chemical structure and transformations, distinct from physiological roles discussed in biology.
+Methodological description: Carbon compounds are organized by connectivity, functional groups and reaction pathways. This domain focuses on chemical structure and transformations, distinct from physiological roles discussed in biology.
+User-friendly description: Explore how carbon compounds are structured, classified and transformed.
 
 #### Carbon Frameworks
 
+Slug: carbonFrameworks
+Action: create
+Status: pending
+
 Skills: 7
 
 [Not implemented](#)
 
-Carbon's bonding versatility permits chains, rings and varied structural representations for compounds containing carbon.
+Methodological description: Carbon's bonding versatility permits chains, rings and varied structural representations for compounds containing carbon.
+User-friendly description: Understand how carbon forms chains, rings and varied molecular structures.
 
 ##### Hydrocarbons
 
+Slug: hydrocarbons
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify compounds containing only carbon and hydrogen and distinguish saturated from unsaturated connectivity.
+Methodological description: Identify compounds containing only carbon and hydrogen and distinguish saturated from unsaturated connectivity.
+User-friendly description: Recognize compounds made only of carbon and hydrogen.
 
 ##### Alkanes
 
+Slug: alkanes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize saturated acyclic hydrocarbon structure and characteristic substitution or combustion behavior.
+Methodological description: Recognize saturated acyclic hydrocarbon structure and characteristic substitution or combustion behavior.
+User-friendly description: Identify alkanes and their characteristic saturated carbon frameworks.
 
 ##### Alkenes
 
+Slug: alkenes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate carbon–carbon double bonds to connectivity and common addition chemistry.
+Methodological description: Relate carbon–carbon double bonds to connectivity and common addition chemistry.
+User-friendly description: Explore how carbon–carbon double bonds affect reactions in alkenes.
 
 ##### Alkynes
 
+Slug: alkynes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate carbon–carbon triple bonds to structure and chemical behavior.
+Methodological description: Relate carbon–carbon triple bonds to structure and chemical behavior.
+User-friendly description: Identify alkynes by their carbon–carbon triple bonds.
 
 ##### Aromatic Compounds
 
+Slug: aromaticCompounds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish aromatic conjugated ring systems from any molecule that merely has a ring.
+Methodological description: Distinguish aromatic conjugated ring systems from any molecule that merely has a ring.
+User-friendly description: Distinguish aromatic molecular structures from ordinary carbon rings.
 
 ##### Structural Isomerism
 
+Slug: structuralIsomerism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize compounds with the same molecular formula but different atomic connectivity.
+Methodological description: Recognize compounds with the same molecular formula but different atomic connectivity.
+User-friendly description: Understand how compounds with the same formula can have different connections.
 
 ##### Stereoisomerism
 
+Slug: stereoisomerism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret three-dimensional arrangements that differ without changing atom connectivity.
+Methodological description: Interpret three-dimensional arrangements that differ without changing atom connectivity.
+User-friendly description: Explore how molecules can differ in their three-dimensional arrangement.
 
 #### Functional Groups
+
+Slug: functionalGroups
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Different atom groups create families whose chemical behavior can be predicted more reliably than from molecular size alone.
+Methodological description: Different atom groups create families whose chemical behavior can be predicted more reliably than from molecular size alone.
+User-friendly description: Recognize functional groups that shape the behavior of organic compounds.
 
 ##### Alcohols
 
+Slug: alcohols
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a hydroxyl group attached to an appropriate carbon framework and its characteristic chemistry.
+Methodological description: Recognize a hydroxyl group attached to an appropriate carbon framework and its characteristic chemistry.
+User-friendly description: Identify alcohol structures and the reactions associated with their hydroxyl group.
 
 ##### Carboxylic Acids
 
+Slug: carboxylicAcids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret carboxyl-group acidity and derivative formation.
+Methodological description: Interpret carboxyl-group acidity and derivative formation.
+User-friendly description: Explore how the carboxyl group gives carboxylic acids their characteristic behavior.
 
 ##### Aldehydes
 
+Slug: aldehydes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate terminal carbonyl connectivity to characteristic structure and oxidation behavior.
+Methodological description: Relate terminal carbonyl connectivity to characteristic structure and oxidation behavior.
+User-friendly description: Recognize aldehydes by the position and behavior of their carbonyl group.
 
 ##### Ketones
 
+Slug: ketones
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate internal carbonyl connectivity to characteristic reactions and distinctions from aldehydes.
+Methodological description: Relate internal carbonyl connectivity to characteristic reactions and distinctions from aldehydes.
+User-friendly description: Distinguish ketones from aldehydes by their carbonyl-group structure.
 
 ##### Esters
 
+Slug: esters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the ester linkage and its formation or hydrolysis relationships.
+Methodological description: Recognize the ester linkage and its formation or hydrolysis relationships.
+User-friendly description: Recognize ester linkages and how esters form or break down.
 
 ##### Amines
 
+Slug: amines
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate nitrogen-containing organic groups to basicity and substitution.
+Methodological description: Relate nitrogen-containing organic groups to basicity and substitution.
+User-friendly description: Explore the behavior of nitrogen-containing amine groups.
 
 ##### Amides
 
+Slug: amides
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize carbonyl–nitrogen connectivity and distinguish amides from amines.
+Methodological description: Recognize carbonyl–nitrogen connectivity and distinguish amides from amines.
+User-friendly description: Identify amides and distinguish their carbonyl–nitrogen linkages from amines.
 
 #### Organic Transformations
+
+Slug: organicTransformations
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Reaction family patterns link starting functional groups to plausible products while requiring mechanistic and condition-specific reasoning.
+Methodological description: Reaction family patterns link starting functional groups to plausible products while requiring mechanistic and condition-specific reasoning.
+User-friendly description: Discover common patterns of change in organic reactions.
 
 ##### Addition Reactions
 
+Slug: additionReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reason about new bonds forming across unsaturated sites.
+Methodological description: Reason about new bonds forming across unsaturated sites.
+User-friendly description: Recognize when a reaction adds atoms across an unsaturated bond.
 
 ##### Substitution Reactions
 
+Slug: substitutionReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize replacement of one atom or group while retaining much of a carbon skeleton.
+Methodological description: Recognize replacement of one atom or group while retaining much of a carbon skeleton.
+User-friendly description: Recognize when an atom or group is replaced within an organic molecule.
 
 ##### Elimination Reactions
 
+Slug: eliminationReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize removal of atoms or groups with formation of additional unsaturation.
+Methodological description: Recognize removal of atoms or groups with formation of additional unsaturation.
+User-friendly description: Explain how removing groups can create double or triple bonds.
 
 ##### Condensation Reactions
 
+Slug: condensationReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain bond formation between organic partners accompanied by removal of a small molecule.
+Methodological description: Explain bond formation between organic partners accompanied by removal of a small molecule.
+User-friendly description: Explore how two organic partners join while releasing a small molecule.
 
 
 #### Macromolecules
 
+Slug: macromolecules
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Repeated subunits and molecular architecture create materials with behaviors not predicted by monomer identities alone.
+Methodological description: Repeated subunits and molecular architecture create materials with behaviors not predicted by monomer identities alone.
+User-friendly description: Understand how repeated building blocks produce large molecules with distinctive properties.
 
 ##### Polymerization
 
+Slug: polymerization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate monomers and repeated units to formation of macromolecules.
+Methodological description: Relate monomers and repeated units to formation of macromolecules.
+User-friendly description: Explore how small monomers combine into long polymer molecules.
 
 ##### Addition Polymers
 
+Slug: additionPolymers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize repeat-unit formation from suitable unsaturated monomers.
+Methodological description: Recognize repeat-unit formation from suitable unsaturated monomers.
+User-friendly description: Recognize polymers formed by joining suitable unsaturated monomers.
 
 ##### Condensation Polymers
 
+Slug: condensationPolymers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize repeat-unit formation with elimination of small molecules.
+Methodological description: Recognize repeat-unit formation with elimination of small molecules.
+User-friendly description: Recognize polymers made through reactions that release small molecules.
 
 ##### Polymer Structure and Properties
 
+Slug: polymerStructureAndProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate chain length, branching and cross-linking to bulk material behavior.
+Methodological description: Relate chain length, branching and cross-linking to bulk material behavior.
+User-friendly description: Connect polymer chain shape and cross-links with material properties.
 
 ### Chemistry in the World
+
+Slug: chemistryInTheWorld
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
-Chemical concepts support understanding of manufactured materials, environmental systems and molecules associated with life. The emphasis is composition, transformation and evidence—not industrial process engineering, clinical advice or organism-level biology.
+Methodological description: Chemical concepts support understanding of manufactured materials, environmental systems and molecules associated with life. The emphasis is composition, transformation and evidence—not industrial process engineering, clinical advice or organism-level biology.
+User-friendly description: Discover how chemistry explains everyday materials, the environment and molecules of life.
 
 #### Materials Chemistry
+
+Slug: materialsChemistry
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-A product's useful behavior depends on composition, microscopic structure and conditions of use, not merely its everyday material label.
+Methodological description: A product's useful behavior depends on composition, microscopic structure and conditions of use, not merely its everyday material label.
+User-friendly description: Explore how chemical structure helps determine a material's useful properties.
 
 ##### Metals in Use
 
+Slug: metalsInUse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate elemental metallic structure and processing to characteristic conductivity, deformation and corrosion.
+Methodological description: Relate elemental metallic structure and processing to characteristic conductivity, deformation and corrosion.
+User-friendly description: Connect the structure and processing of metals with their everyday behavior.
 
 ##### Alloys in Use
 
+Slug: alloysInUse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how composition and phase structure can change mechanical or corrosion properties relative to constituent metals.
+Methodological description: Explain how composition and phase structure can change mechanical or corrosion properties relative to constituent metals.
+User-friendly description: Learn why alloys can have different properties from the metals they contain.
 
 ##### Ceramics
 
+Slug: ceramics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate inorganic nonmetallic ceramic composition, microstructure and processing to characteristic mechanical and thermal behavior, recognizing that some ceramics contain glassy phases.
+Methodological description: Relate inorganic nonmetallic ceramic composition, microstructure and processing to characteristic mechanical and thermal behavior, recognizing that some ceramics contain glassy phases.
+User-friendly description: Explore how ceramic composition and structure influence strength and heat resistance.
 
 ##### Glass
 
+Slug: glass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the amorphous structure and glass-transition behavior of glass-forming materials, distinguishing them from ordinary crystalline solids.
+Methodological description: Explain the amorphous structure and glass-transition behavior of glass-forming materials, distinguishing them from ordinary crystalline solids.
+User-friendly description: Discover why glass behaves differently from crystalline solids.
 
 ##### Plastics
 
+Slug: plastics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate polymer chemistry and processing to the shaping, durability and temperature-dependent behavior of plastic materials.
+Methodological description: Relate polymer chemistry and processing to the shaping, durability and temperature-dependent behavior of plastic materials.
+User-friendly description: Understand how polymers and processing influence the properties of plastics.
 
 ##### Elastomers
 
+Slug: elastomers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain recoverable deformation in rubberlike polymer networks through chain mobility and cross-linking, without treating all elastic substances as identical plastics.
+Methodological description: Explain recoverable deformation in rubberlike polymer networks through chain mobility and cross-linking, without treating all elastic substances as identical plastics.
+User-friendly description: Explore why some linked polymer networks can stretch and return to shape.
 
 ##### Corrosion
 
+Slug: corrosion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain electrochemical deterioration and the chemical basis of common protective principles.
+Methodological description: Explain electrochemical deterioration and the chemical basis of common protective principles.
+User-friendly description: Explain how electrochemical reactions cause corrosion and how protection works.
 
 #### Air and Water
+
+Slug: airAndWater
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Environmental samples contain reacting or partitioning chemical species whose measurements require attention to concentration and chemical form.
+Methodological description: Environmental samples contain reacting or partitioning chemical species whose measurements require attention to concentration and chemical form.
+User-friendly description: Investigate the chemistry of air and water, including pollutants and dissolved materials.
 
 ##### Composition of Air
 
+Slug: compositionOfAir
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish major atmospheric components from variable traces and pollutants.
+Methodological description: Distinguish major atmospheric components from variable traces and pollutants.
+User-friendly description: Recognize the major gases in air and distinguish them from trace pollutants.
 
 ##### Water as a Solvent
 
+Slug: waterAsASolvent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain polarity and hydrogen bonding behind water's distinctive solvent behavior.
+Methodological description: Explain polarity and hydrogen bonding behind water's distinctive solvent behavior.
+User-friendly description: Explore why water dissolves many substances through its molecular interactions.
 
 ##### Water Contaminants
 
+Slug: waterContaminants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify dissolved and particulate contaminants by chemical identity and behavior without assuming visible clarity proves safety.
+Methodological description: Classify dissolved and particulate contaminants by chemical identity and behavior without assuming visible clarity proves safety.
+User-friendly description: Recognize different water contaminants without assuming clear water is safe.
 
 ##### Atmospheric Chemical Changes
 
+Slug: atmosphericChemicalChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate pollutant reactions and transformations to phenomena such as acid deposition or photochemical smog.
+Methodological description: Relate pollutant reactions and transformations to phenomena such as acid deposition or photochemical smog.
+User-friendly description: Connect atmospheric chemical reactions with smog and acid deposition.
 
 ##### Carbon Chemistry in the Environment
 
+Slug: carbonChemistryInTheEnvironment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Track carbon among carbon dioxide, dissolved carbonate species and organic matter without conflating chemistry with whole-ecosystem modeling.
+Methodological description: Track carbon among carbon dioxide, dissolved carbonate species and organic matter without conflating chemistry with whole-ecosystem modeling.
+User-friendly description: Track carbon through carbon dioxide, dissolved carbon compounds and organic material.
 
 #### Molecules of Life
 
+Slug: moleculesOfLife
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Chemical structure explains molecular behavior that biology may later place in cellular or organismal context.
+Methodological description: Chemical structure explains molecular behavior that biology may later place in cellular or organismal context.
+User-friendly description: Explore the molecular structures behind important biological materials.
 
 ##### Carbohydrate Chemistry
 
+Slug: carbohydrateChemistry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sugar units, glycosidic connections and chemical properties in small and polymeric carbohydrates.
+Methodological description: Relate sugar units, glycosidic connections and chemical properties in small and polymeric carbohydrates.
+User-friendly description: Recognize how sugars join together to form different carbohydrates.
 
 ##### Lipid Chemistry
 
+Slug: lipidChemistry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize characteristic structures and intermolecular behavior of fats, oils and other lipid families.
+Methodological description: Recognize characteristic structures and intermolecular behavior of fats, oils and other lipid families.
+User-friendly description: Compare the structures and chemical behavior of fats, oils and other lipids.
 
 ##### Protein Chemistry
 
+Slug: proteinChemistry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate amino-acid connectivity and chemical interactions to protein structure.
+Methodological description: Relate amino-acid connectivity and chemical interactions to protein structure.
+User-friendly description: See how amino acids and their interactions shape protein structure.
 
 ##### Nucleic Acid Chemistry
 
+Slug: nucleicAcidChemistry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify nucleotide components and the covalent framework of nucleic acids without teaching genetic inheritance as the primary competency.
+Methodological description: Identify nucleotide components and the covalent framework of nucleic acids without teaching genetic inheritance as the primary competency.
+User-friendly description: Understand the chemical building blocks and backbone of DNA and RNA.
 
 #### Sustainable Chemical Choices
+
+Slug: sustainableChemicalChoices
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Environmental and resource decisions benefit from chemical evidence about composition, persistence, transformations and alternatives.
+Methodological description: Environmental and resource decisions benefit from chemical evidence about composition, persistence, transformations and alternatives.
+User-friendly description: Use chemical evidence to make better decisions about materials, waste and resources.
 
 ##### Chemical Life Cycles
 
+Slug: chemicalLifeCycles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace a substance through sourcing, use, chemical change and waste streams rather than evaluating one stage in isolation.
+Methodological description: Trace a substance through sourcing, use, chemical change and waste streams rather than evaluating one stage in isolation.
+User-friendly description: Trace a chemical substance through production, use and waste rather than examining one step.
 
 ##### Biodegradation and Persistence
 
+Slug: biodegradationAndPersistence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish chemically or biologically degradable compounds from persistent materials under actual environmental conditions.
+Methodological description: Distinguish chemically or biologically degradable compounds from persistent materials under actual environmental conditions.
+User-friendly description: Understand when substances break down in the environment and when they persist.
 
 ##### Recycling Chemistry
 
+Slug: recyclingChemistry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain when chemical composition enables or limits separation, reprocessing and material recovery.
+Methodological description: Explain when chemical composition enables or limits separation, reprocessing and material recovery.
+User-friendly description: Explore how material composition affects recycling and recovery.
 
 ##### Green Chemistry Principles
 
+Slug: greenChemistryPrinciples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate a proposed chemical process by waste prevention, safer inputs, energy demand and material efficiency without assuming any process has zero impact.
+Methodological description: Evaluate a proposed chemical process by waste prevention, safer inputs, energy demand and material efficiency without assuming any process has zero impact.
+User-friendly description: Compare chemical processes by waste, safety, energy needs and material efficiency.
