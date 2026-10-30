@@ -2583,133 +2583,233 @@ User-friendly description: Decide whether a government program achieved its goal
 
 ### Міжнародна економіка
 
+Slug: internationalEconomics
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Країни пов’язані потоками товарів, послуг, капіталу та валютних платежів. Міжнародні ефекти не зводяться до географії маршрутів торгівлі.
+Methodological description: Countries are connected by flows of goods, services, capital, and foreign-currency payments. International economic effects cannot be reduced to the geography of trade routes.
+User-friendly description: Explore how trade, currencies, and investment connect different countries.
 
 #### Спеціалізація та вигоди торгівлі
+
+Slug: specializationAndTradeGains
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Відносні, а не лише абсолютні переваги можуть пояснювати напрям обміну між економіками.
+Methodological description: Relative rather than merely absolute advantages can explain the pattern of exchange between economies.
+User-friendly description: Discover why countries specialize and what they gain from trading.
 
 ##### Абсолютна перевага
 
+Slug: absoluteAdvantage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати можливість виробити продукт із меншою кількістю ресурсів порівняно з іншим виробником.
+Methodological description: Determine whether one producer can make a product with fewer resources than another producer.
+User-friendly description: Recognize who can produce something using fewer resources.
 
 ##### Порівняльна перевага
 
+Slug: comparativeAdvantage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати нижчу альтернативну вартість виробництва й пояснювати можливість вигідної спеціалізації.
+Methodological description: Identify lower opportunity cost in production and explain the possibility of beneficial specialization.
+User-friendly description: Understand why trade can help even when one country produces everything more efficiently.
 
 ##### Вигоди міжнародної торгівлі
 
+Slug: gainsFromInternationalTrade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати розширення можливостей споживання й водночас нерівномірність розподілу здобутків.
+Methodological description: Evaluate expanded consumption possibilities alongside the unequal distribution of gains from trade.
+User-friendly description: Explore how countries can gain from trade while some groups lose out.
 
 ##### Глобальні виробничі ланцюги
 
+Slug: globalValueChains
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Простежувати розподіл доданої вартості й виробничих стадій між країнами та ризики залежності.
+Methodological description: Trace the allocation of production stages and value added among countries and the risks of dependence.
+User-friendly description: See how different countries contribute to making one product.
 
 #### Торговельна політика
+
+Slug: tradePolicy
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Державні бар’єри й домовленості змінюють ціни, конкуренцію, надходження та інтереси різних учасників.
+Methodological description: Government barriers and agreements affect prices, competition, revenue, and the interests of different participants.
+User-friendly description: Explore how trade rules change markets and prices.
 
 ##### Мито
 
+Slug: importTariffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати наслідки імпортного тарифу для внутрішніх цін, виробників, споживачів і бюджету.
+Methodological description: Analyze the effects of an import tariff on domestic prices, producers, consumers, and public revenue.
+User-friendly description: Understand who may gain or lose when imported goods face a tariff.
 
 ##### Квоти та нетарифні бар’єри
 
+Slug: quotasAndNonTariffBarriers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати вплив кількісних обмежень і регуляторних вимог на доступ товарів до ринку.
+Methodological description: Determine how quantitative restrictions and regulatory requirements affect goods' access to markets.
+User-friendly description: Recognize how quotas and rules can limit international trade.
 
 ##### Торговельні угоди
 
+Slug: tradeAgreements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити механізми взаємного зниження бар’єрів і складність узгодження різних галузевих інтересів.
+Methodological description: Interpret mechanisms for reducing barriers reciprocally and the difficulty of reconciling different sectoral interests.
+User-friendly description: Explore why countries negotiate trade agreements.
 
 #### Валюти та зовнішні баланси
 
+Slug: currenciesAndExternalBalances
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Зовнішні угоди супроводжуються валютними курсами, трансакціями та фінансовими вимогами до інших країн.
+Methodological description: International transactions involve exchange rates, payments, and financial claims on other countries.
+User-friendly description: Learn how exchange rates and cross-border accounts work.
 
 ##### Номінальний валютний курс
 
+Slug: nominalExchangeRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати ціну однієї валюти в іншій, враховуючи порядок котирування.
+Methodological description: Interpret the price of one currency in terms of another, accounting for the direction of the quoted rate.
+User-friendly description: Read how much one currency is worth in another.
 
 ##### Реальний валютний курс
 
+Slug: realExchangeRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати номінальний курс із відносними рівнями цін для аналізу конкурентоспроможності.
+Methodological description: Connect nominal exchange rates and relative price levels to assess international competitiveness.
+User-friendly description: Compare prices across countries after allowing for exchange rates.
 
 ##### Платіжний баланс
 
+Slug: balanceOfPayments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти поточні та фінансові міжнародні операції й логіку їхнього бухгалтерського узгодження.
+Methodological description: Distinguish current and financial international transactions and the accounting principles that reconcile them.
+User-friendly description: See how international payments and investments are recorded.
 
 ##### Режими валютного курсу
 
+Slug: exchangeRateRegimes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати плаваючі й керовані режими за можливостями політики, ризиками та потребами в резервах.
+Methodological description: Compare floating and managed exchange-rate systems by policy freedom, risks, and reserve needs.
+User-friendly description: Compare floating exchange rates with rates managed by authorities.
 
 #### Міжнародні фінанси
+
+Slug: internationalFinance
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Капітал перетинає кордони у формі інвестицій, позик та інших вимог із власними вигодами й ризиками.
+Methodological description: Capital crosses borders through investments, loans, and other claims with distinctive benefits and risks.
+User-friendly description: Explore how countries borrow and invest across borders.
 
 ##### Прямі іноземні інвестиції
 
+Slug: foreignDirectInvestment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти довгострокову участь в управлінні підприємством від купівлі фінансових активів без контролю.
+Methodological description: Distinguish long-term managerial participation in a firm from purchasing financial assets without control.
+User-friendly description: Recognize investment that involves a lasting role in a foreign business.
 
 ##### Міжнародні потоки капіталу
 
+Slug: internationalCapitalFlows
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати вплив процентних ставок, очікувань і ризиків на рух фінансування між країнами.
+Methodological description: Analyze how interest rates, expectations, and risks influence movements of financing between countries.
+User-friendly description: Discover why investors move capital across borders.
 
 ##### Валютні кризи
 
+Slug: currencyCrises
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати різке падіння довіри до валюти, відплив капіталу, тиск на курс і можливості валютних інтервенцій чи коригування політики.
+Methodological description: Analyze sudden loss of confidence in a currency, capital outflows, exchange-rate pressure, and the possibilities of intervention or policy adjustment.
+User-friendly description: Explore how a currency crisis can develop.
 
 ##### Боргові кризи
 
+Slug: debtCrises
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати неможливість або ризик невиконання боргових зобов’язань за умов зміни фінансування, платежів і довіри кредиторів.
+Methodological description: Analyze an inability or risk of failing to meet debt obligations as financing conditions, payments, and creditor confidence change.
+User-friendly description: Understand why borrowers or governments can face a debt crisis.
 
 ### Розвиток, добробут та інституції
 
