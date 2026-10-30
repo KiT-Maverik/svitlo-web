@@ -24,9 +24,9 @@ const code = (type, name, withFE = false) =>
   (type === 'SkillDomain' ? ',groupIds: {g:"id"}' : type === 'SkillGroup' ? ',skillIds: {s:"id"}' : '') + '});';
 const skillFile = path.join(taxonomy, 'd/g/skills/s.data.ts');
 const outputFile = locale => path.join(fixtureDir, 'docs/generated/skills', 'taxonomy.' + locale + '.md');
-const run = (locale = 'en') =>
+const run = (locale = 'en', ...flags) =>
   spawnSync(process.execPath, [path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
-    '--package', path.relative(root, fixtureDir), '--locale', locale], { cwd: root, encoding: 'utf8' });
+    '--package', path.relative(root, fixtureDir), '--locale', locale, ...flags], { cwd: root, encoding: 'utf8' });
 
 before(() => {
   write(path.join(taxonomy, 'd/d.data.ts'), code('SkillDomain', 'Domain'));
@@ -49,6 +49,35 @@ test('generates locale names but keeps canonical methodological prose English wh
     assert.doesNotMatch(output, /fe description/);
     assert.match(output, /s\.data\.ts/);
   }
+});
+
+test('preview returns the complete Markdown without writing a file', () => {
+  const original = fs.readFileSync(outputFile('en'), 'utf8');
+  const result = run('en', '--stdout');
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(result.stdout, original);
+  assert.match(result.stdout, /^## SUMMARY$/m);
+  assert.match(result.stdout, /^## DOMAINS$/m);
+  assert.match(result.stdout, /^Domains: 1$/m);
+  assert.match(result.stdout, /^Groups: 1$/m);
+  assert.match(result.stdout, /^Skills: 1$/m);
+  assert.match(result.stdout, /^### Domain en$/m);
+  assert.match(result.stdout, /^#### Group en$/m);
+  assert.match(result.stdout, /^##### Skill en$/m);
+  assert.equal(fs.readFileSync(outputFile('en'), 'utf8'), original);
+});
+
+test('check detects drift without modifying it and generation restores it', () => {
+  assert.equal(run('en', '--check').status, 0);
+  const original = fs.readFileSync(outputFile('en'), 'utf8');
+  fs.writeFileSync(outputFile('en'), original + '\nobsolete');
+  const stale = run('en', '--check');
+  assert.notEqual(stale.status, 0);
+  assert.match(stale.stderr, /missing or stale/);
+  assert.equal(fs.readFileSync(outputFile('en'), 'utf8'), original + '\nobsolete');
+  const updated = run('en');
+  assert.equal(updated.status, 0, updated.stderr);
+  assert.equal(fs.readFileSync(outputFile('en'), 'utf8'), original);
 });
 
 test('includes fully localized fe descriptions when provided', () => {
