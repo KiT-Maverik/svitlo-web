@@ -44,49 +44,7 @@ The separate generator must perform dry-run by default, require explicit apply, 
 
 ### Approved editorial slugs and Code paths
 
-Use each new-template entity's approved `Slug: lowerCamelCase` for its own directory/file stem rather than recomputing identifiers from display names. The `<domainCamelCase>`, `<groupCamelCase>`, and `<skillCamelCase>` placeholders below refer to these approved slugs. Validate `^[a-z][A-Za-z0-9]*# Implement Skill Code Skill
-
-Read [Skill Taxonomy Workflow](./README.md). Implementation promotes **only verified entries** after the separate [Migrate Implemented Taxonomy](./migrate-implemented-taxonomy.skill.md) quality gate; Code file presence alone never authorizes removing a Markdown entry.
-
-**Mandatory first action:** Read [Coding Agent Persona](../../personas/coding-agent.persona.md) in full. Apply the repository's `AGENTS.md` and any package-local instructions. This is an implementation task: do not redesign the catalog, invent Skills, author curriculum, or implement assessment/learner tracking.
-
-**Purpose:** Implement the **approved SkillDomain, SkillGroup, and Skill entries in the staging Skills Taxonomy** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy (including approved direct Domain → Skill ownership) with immediate child Data composition and stable UUID literals owned by each entity.
-
-## CROSS-CUTTING RULES
-
-This implementation must also follow [Git-First Typed Content & AI Authoring](../../docs/architecture/git-first-typed-content.md) and [Internationalization & Inclusive Access](../../docs/architecture/internationalization-and-accessibility.md). Treat every `*.data.ts` entity as reviewed, **strictly typed named-export content**, avoid default exports and undocumented identity aliases, and do not confuse translation dictionaries or stable IDs with a fully registered runtime catalog. Inspect the live Engine types and full locale roster before implementation.
-
-## REQUIRED SOURCES — READ BEFORE WRITING
-
-1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
-2. **Editorial authority:** read the **approved** `<PackageRoot>/docs/skills/taxonomy.md`, including each in-scope entity’s heading, approved `Slug: `, `Action: `, `Status: `, explicit `Methodological description: ` (English), `User-friendly description: ` (working-language draft), hierarchy position and Code link. For these **unpromoted** entries, this is the editorial authority; implemented/promoted entries instead use reviewed Code. **No individual Markdown Definitions exist or are required**. Missing, ambiguous, unapproved or contradictory taxonomy entries are blockers; report them rather than inventing semantics or silently revising the taxonomy.
-3. **Entity meanings:** read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md), and [Skill](../../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
-4. **Authoritative TypeScript contracts in `@svitlo/contracts`:** inspect the current files under `shared/contracts/src/types/content/` (import types via `@svitlo/contracts/taxonomy`; engine builders are separate):
-   - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.
-   - `skillGroup.types.ts` — `SkillGroup_Config`, `skillIds`.
-   - `skillDomain.types.ts` — `SkillDomain_Config`, required `groupIds` and optional direct `skillIds`.
-   - `shared/contracts/src/types/languages.ts` — `LanguageCode`; verify the current supported-language list through the published localization contract.
-5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
-6. **Reference implementation (read-only example):** inspect the current Mathematics taxonomy in `learningApps/math/data/skills/`:
-   - Root `index.ts` exports Domain Data only.
-   - `geometry/geometry.data.ts` imports Group Data directly from `./<group>/<group>.data`.
-   - `geometry/angles/angles.data.ts` imports Skills from `./skills`.
-   - `geometry/angles/skills/index.ts` exports only immediate Skill Data.
-   - There is no index file at a Domain or Group directory root.
-
-**Canonical source destination:** `<PackageRoot>/data/skills/`, outside `src/` and relative to the textbook package root. The legacy `src/data/skillsTaxonomy/`, `*.ids.ts` and `index.data.ts` conventions must not be used for new implementations. Compare the Mathematics example with the live engine contracts.
-
-Current contracts and [Skill](../../docs/entities/skill.md), [SkillGroup](../../docs/entities/skill-group.md), and [SkillDomain](../../docs/entities/skill-domain.md) definitions govern this workflow.
-
-### Editorial actions and implementation status
-
-For each current-template entity, `Action: skip|create|update|delete` describes a **future generator instruction**; `Status: pending|implemented` describes the presently verified implementation state. Neither is a new runtime `Skill*_Config` property. These metadata fields are not instructions for this manual Coding Agent to create, update or delete files automatically. Scope and human approval are still required. In particular, never interpret `delete` as authorization for destructive changes or `Status: implemented` without verified Code. When explicitly commissioned to implement an entity despite `Action: skip`, reconcile the intended scope with the editor first.
-
-The existing description importer cannot parse the new `Slug:`, `Action:`, and `Status:` lines. Do not run it on new-format Markdown until a separate tooling update is implemented and verified.
-
-### Approved editorial slugs and Code paths
-
-Use each new-template entity's approved `Slug: lowerCamelCase` for its own directory/file stem rather than recomputing identifiers from display names. The `<domainCamelCase>`, `<groupCamelCase>`, and `<skillCamelCase>` placeholders below refer to these approved slugs.  and textbook-wide uniqueness across all entity slugs before generating files.
+Use each new-template entity's approved `Slug: lowerCamelCase` for its own directory/file stem rather than recomputing identifiers from display names. The `<domainCamelCase>`, `<groupCamelCase>`, and `<skillCamelCase>` placeholders below refer to these approved slugs. Validate `^[a-z][A-Za-z0-9]*$` and textbook-wide slug uniqueness across all entity kinds before generating files.
 
 A slug is editorial metadata, not a new property of `Skill*_Config`. Keep existing UUIDs and Code paths stable. If an approved slug conflicts with an implemented path/identifier, stop for editorial resolution; do not silently rename files or reassign UUIDs. Treat slugless legacy entries as pending explicit migration.
 
