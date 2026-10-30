@@ -33,4 +33,5 @@ export const kilometers_Skill_Data = buildSkillConfig({
     "pl": "Stosowanie kilometrów dla dużych odległości i przeliczanie na metry",
     "uk": "Використання кілометрів для великих відстаней і перетворення на метри"
   },
+  description: { methodological: "One kilometer equals one thousand meters. It is convenient for large distances, but an appropriate unit depends on context and precision. Conversion does not change the distance." },
 });

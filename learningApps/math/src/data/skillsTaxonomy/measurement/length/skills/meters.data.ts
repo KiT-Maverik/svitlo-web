@@ -33,4 +33,5 @@ export const meters_Skill_Data = buildSkillConfig({
     "pl": "Zależności między metrami, decymetrami i centymetrami",
     "uk": "Співвідношення метрів, дециметрів і сантиметрів"
   },
+  description: { methodological: "1 m = 10 dm = 100 cm: these length units are related by powers of ten. Different unit expressions for the same length must be equivalent; mixed-unit measurement requires consistent scaling." },
 });

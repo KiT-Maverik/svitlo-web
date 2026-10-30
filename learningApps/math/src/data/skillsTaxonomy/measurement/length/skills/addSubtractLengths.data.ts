@@ -33,4 +33,5 @@ export const addSubtractLengths_Skill_Data = buildSkillConfig({
     "pl": "Dodawanie i odejmowanie długości w zgodnych jednostkach",
     "uk": "Додавання й віднімання довжин в узгоджених одиницях"
   },
+  description: { methodological: "Adding and subtracting lengths requires quantities of the same physical dimension. Convert to a common scale or explicitly account for unit changes; the result must remain a length." },
 });

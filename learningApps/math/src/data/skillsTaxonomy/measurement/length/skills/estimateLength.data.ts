@@ -33,4 +33,5 @@ export const estimateLength_Skill_Data = buildSkillConfig({
     "pl": "Szacowanie długości i sprawdzanie pomiarem",
     "uk": "Оцінювання довжини з перевіркою вимірюванням"
   },
+  description: { methodological: "Estimate a length against a reference or a known measure, then verify with an instrument. Interpret discrepancies between estimated and measured values using consistent units." },
 });

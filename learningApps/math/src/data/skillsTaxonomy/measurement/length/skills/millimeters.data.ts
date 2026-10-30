@@ -33,4 +33,5 @@ export const millimeters_Skill_Data = buildSkillConfig({
     "pl": "Mierzenie w milimetrach i przeliczanie na centymetry",
     "uk": "Вимірювання в міліметрах і співвідношення із сантиметрами"
   },
+  description: { methodological: "One millimeter is one tenth of a centimeter; the same length can be expressed equivalently in millimeters and centimeters. Unit choice should reflect the required precision without changing the measured length." },
 });
