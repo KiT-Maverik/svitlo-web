@@ -96,3 +96,45 @@ These descriptions are user-facing prose checked against the existing English `d
 - **Execution limit:** a local working tree and runnable dependency installation are not available through the GitHub connector, so local TypeScript typechecks or npm focused tests **were not run**. Do not interpret static file checks as a TypeScript compile or a passing CI result. Read GitHub Actions status from the PR separately.
 - **Next:** Natural Numbers — 27 Skills, 5 Groups; check the then-current language registry before authoring. Do not change the shared optional `fe` contract yet.
 
+
+## Natural Numbers — English authoring gate (2026-10-30)
+
+All 33 entity descriptions below are newly drafted learner-facing English copy. They were checked against the individual English methodological descriptions and remain distinct from canonical authoring text. Preserve these reference drafts as a checkpoint while translating one Group at a time; do not change taxonomy identities or scope.
+
+| Entity file (under `numeration/`) | English `description.fe.en` |
+|---|---|
+| `numeration.data.ts` | See how natural numbers represent quantities, how each digit's position changes its value, and how to compare, place, and estimate numbers. |
+| `notation/notation.data.ts` | Connect spoken numbers, written digits, and the quantities they represent, including zero and numbers with several digits. |
+| `notation/skills/digits09.data.ts` | A digit is a written symbol from 0 to 9; a number is the value it represents. One number can be written using several digits. |
+| `notation/skills/readWrite20.data.ts` | Connect numbers from 0 to 20 with their spoken names, written forms, and matching quantities. Zero represents none. |
+| `notation/skills/readWrite100.data.ts` | Read and write numbers up to 100, using tens and ones to understand what each digit means. |
+| `notation/skills/readWrite1000.data.ts` | Read and write three-digit numbers using hundreds, tens, and ones. A zero can mark an empty place without changing the positions of other digits. |
+| `placeValue/placeValue.data.ts` | Understand how digits gain value from their place and how ones, tens, and hundreds can be grouped, exchanged, or split without changing a number. |
+| `placeValue/skills/digitPlaceValue.data.ts` | A digit's position changes its value: the two 2s in 232 mean 200 and 2. |
+| `placeValue/skills/expandedForm.data.ts` | Break a number into a sum of its place values and put them back together. For example, 243 = 200 + 40 + 3. |
+| `placeValue/skills/flexiblePartition.data.ts` | Split the same number into different sums without changing its value: 146 can be 100 + 40 + 6 or 130 + 16. |
+| `placeValue/skills/hundredsTensOnes.data.ts` | See how the digits in a three-digit number show hundreds, tens, and ones, including places containing zero. |
+| `placeValue/skills/makeHundred.data.ts` | Ten tens make one hundred, just as one hundred ones do. They are different groupings of the same amount. |
+| `placeValue/skills/makeTen.data.ts` | Group ten ones into a ten, or split a ten back into ten ones. The amount stays the same. |
+| `placeValue/skills/multipleRepresentations.data.ts` | Recognize the same number when shown as digits, counting blocks, a point on a number line, or a collection of objects. |
+| `placeValue/skills/regroupPlaceValues.data.ts` | Exchange one hundred for ten tens, or one ten for ten ones, and reverse the exchange without changing the total. |
+| `placeValue/skills/tensOnes.data.ts` | Build a two-digit number from tens and ones, or split it into them. For example, 47 = 40 + 7. |
+| `placeValue/skills/totalTensInNumber.data.ts` | Find all the complete tens or hundreds inside a number, not just the digit in that place. For example, 348 contains 34 full tens. |
+| `placeValue/skills/zeroPlaceholder.data.ts` | A zero can keep an empty place in a number: in 305, it means there are no tens, so 305 is not 35. |
+| `comparison/comparison.data.ts` | Compare quantities and numbers to tell which is greater, smaller, or equal, and put numbers in order. |
+| `comparison/skills/moreLessEqual.data.ts` | Match or count objects to tell which collection has more, fewer, or the same number. Larger objects do not always mean more objects. |
+| `comparison/skills/comparisonSymbols.data.ts` | Use &lt;, >, and = to show which number is smaller, larger, or equal. Switching two different numbers reverses the inequality sign. |
+| `comparison/skills/order20.data.ts` | Arrange numbers from 0 to 20 from smaller to larger or the other way around. Equal numbers can appear next to each other. |
+| `comparison/skills/order100.data.ts` | Compare two-digit numbers by looking at tens first, then ones when the tens match, and put them in order. |
+| `comparison/skills/order1000.data.ts` | Compare three-digit numbers by hundreds first, then tens, then ones. The first different digit decides which is greater. |
+| `numberLine/numberLine.data.ts` | Place numbers on a line with even spacing; use their positions to see which comes first and how far apart they are. |
+| `numberLine/skills/beforeAfterBetween.data.ts` | Find the number immediately before or after another number, or numbers that lie between two given numbers. |
+| `numberLine/skills/distanceOnLine.data.ts` | Count unit intervals between integer points on a number line. The distance is the same in either direction. |
+| `numberLine/skills/numberLine20.data.ts` | Find numbers up to 20 on an evenly spaced number line. Each move of one unit covers the same distance. |
+| `numberLine/skills/numberLine1000.data.ts` | Find numbers up to 1,000 on a number line using its starting point and scale. Equal number jumps take equal distances. |
+| `estimation/estimation.data.ts` | Make sensible approximations of quantities or values and round numbers to a useful level of precision. |
+| `estimation/skills/estimateQuantity.data.ts` | Estimate how many objects there are by looking at groups or a small part, then check by counting them. |
+| `estimation/skills/roundToTen.data.ts` | Find the nearest multiple of ten by comparing distances to the tens on either side. Exactly halfway requires a rounding rule. |
+| `estimation/skills/roundToHundred.data.ts` | Find the nearest multiple of one hundred and see how much the rounded value differs from the exact one. Halfway needs a rule. |
+
+**Scope:** 4 Notation, 11 Place Value, 5 Comparison, 4 Number Line, 3 Estimation Skills; plus five Groups and one Domain. Do not assume a rounding tie-breaking convention; preserve the methodological distinction between exact and approximate values.
