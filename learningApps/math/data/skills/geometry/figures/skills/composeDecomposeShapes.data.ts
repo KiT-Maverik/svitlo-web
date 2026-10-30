@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { figures_Skills_Ids } from './index.ids';
 
 export const composeDecomposeShapes_Skill_Data = buildSkillConfig({
-  id: figures_Skills_Ids.composeDecomposeShapes,
+  id: '1612d301-b286-45d0-ab5f-b52393bdce31',
   name: {
     en: "Composing and decomposing plane figures",
     lt: "Plokščiųjų figūrų sudarymas ir skaidymas",

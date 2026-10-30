@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { numberLine_Skills_Ids } from './index.ids';
 
 export const numberLine1000_Skill_Data = buildSkillConfig({
-  id: numberLine_Skills_Ids.numberLine1000,
+  id: 'c52e0d8f-5d4d-435b-a283-9fc0f41b4605',
   name: {
     lt: "Skaičiai mastelinėje tiesėje iki 1000",
     lv: "Skaitļi uz mērogotas taisnes līdz 1000",

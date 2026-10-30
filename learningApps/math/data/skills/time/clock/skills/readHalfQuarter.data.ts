@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { clock_Skills_Ids } from './index.ids';
 
 export const readHalfQuarter_Skill_Data = buildSkillConfig({
-  id: clock_Skills_Ids.readHalfQuarter,
+  id: '1b6415de-16f7-4e65-9f82-871d0bdb8b2d',
   name: {
     en: "Reading half-hours and quarter-hours",
     lt: "Pusvalandžių ir ketvirčių valandos skaitymas",

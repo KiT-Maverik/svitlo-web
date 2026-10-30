@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { perimeter_SkillGroup_Ids } from './perimeter.ids';
-import { perimeter_Skills_Ids } from './skills/index.ids';
+import { measurePerimeter_Skill_Data, rectanglePerimeter_Skill_Data, squarePerimeter_Skill_Data, unknownSideFromPerimeter_Skill_Data } from './skills';
 
 export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
-  id: perimeter_SkillGroup_Ids.perimeter,
+  id: 'af8b4afe-5e2e-4412-b46c-330707bf2ee4',
   name: {
     en: "Perimeter",
     lt: "Perimetras",
@@ -34,7 +33,12 @@ export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Obwód",
     uk: "Периметр",
   },
-  skillIds: perimeter_Skills_Ids,
+  skillIds: {
+    measurePerimeter: measurePerimeter_Skill_Data.id,
+    rectanglePerimeter: rectanglePerimeter_Skill_Data.id,
+    squarePerimeter: squarePerimeter_Skill_Data.id,
+    unknownSideFromPerimeter: unknownSideFromPerimeter_Skill_Data.id,
+  },
   description: {
     methodological: "The length of a polygon's closed boundary as the sum of its sides, including rectangles and squares.",
     fe: {

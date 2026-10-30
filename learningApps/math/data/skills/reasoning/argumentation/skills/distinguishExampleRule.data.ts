@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { argumentation_Skills_Ids } from './index.ids';
 
 export const distinguishExampleRule_Skill_Data = buildSkillConfig({
-  id: argumentation_Skills_Ids.distinguishExampleRule,
+  id: 'a7426dcb-f817-41c5-bc9e-47244ea5301b',
   name: {
     en: "Distinguishing a single example from a general rule",
     lt: "Atskiro pavyzdžio ir bendrosios taisyklės atskyrimas",

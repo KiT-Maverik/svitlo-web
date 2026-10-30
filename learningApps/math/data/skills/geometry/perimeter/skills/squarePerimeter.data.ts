@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { perimeter_Skills_Ids } from './index.ids';
 
 export const squarePerimeter_Skill_Data = buildSkillConfig({
-  id: perimeter_Skills_Ids.squarePerimeter,
+  id: '109234af-0003-4dca-9b7a-a0fdfb791835',
   name: {
     en: "Calculating the perimeter of a square",
     lt: "Kvadrato perimetro apskaičiavimas",

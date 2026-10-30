@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const numberLine_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.numberLine,
+  id: '73fb395f-5148-4af6-b5b1-399c4e06beab',
   name: {
     en: "Locating fractions between 0 and 1 on a number line",
     lt: "Trupmenų tarp 0 ir 1 žymėjimas skaičių tiesėje",

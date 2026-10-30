@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { figures_Skills_Ids } from './index.ids';
 
 export const polygon_Skill_Data = buildSkillConfig({
-  id: figures_Skills_Ids.polygon,
+  id: 'a8c08632-974a-477c-8707-e3f8b39f217d',
   name: {
     en: "Recognizing polygons and their parts",
     lt: "Daugiakampių ir jų dalių atpažinimas",

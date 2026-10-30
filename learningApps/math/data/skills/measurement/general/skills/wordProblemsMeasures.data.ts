@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { general_Skills_Ids } from './index.ids';
 
 export const wordProblemsMeasures_Skill_Data = buildSkillConfig({
-  id: general_Skills_Ids.wordProblemsMeasures,
+  id: '64050aaa-4552-4d11-a947-c922f51e89f8',
   name: {
     en: "Solving measurement word problems with compatible units",
     lt: "Matavimo tekstinių uždavinių sprendimas suderinamais vienetais",

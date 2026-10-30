@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { area_SkillGroup_Ids } from './area.ids';
-import { area_Skills_Ids } from './skills/index.ids';
+import { compositeArea_Skill_Data, areaAsCovering_Skill_Data, countUnitSquares_Skill_Data, rectangleAreaModel_Skill_Data } from './skills';
 
 export const area_SkillGroup_Data = buildSkillGroupConfig({
-  id: area_SkillGroup_Ids.area,
+  id: 'c7516022-048d-4c97-92ed-c4f10d254070',
   name: {
     en: "Area",
     lt: "Plotas",
@@ -34,7 +33,12 @@ export const area_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Pole powierzchni",
     uk: "Площа",
   },
-  skillIds: area_Skills_Ids,
+  skillIds: {
+    compositeArea: compositeArea_Skill_Data.id,
+    areaAsCovering: areaAsCovering_Skill_Data.id,
+    countUnitSquares: countUnitSquares_Skill_Data.id,
+    rectangleAreaModel: rectangleAreaModel_Skill_Data.id,
+  },
   description: {
     methodological: "The extent of a planar region occupied by a figure, modeled using unit squares, rectangles, and decomposition of composite shapes.",
     fe: {

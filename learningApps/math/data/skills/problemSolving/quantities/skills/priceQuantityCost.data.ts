@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { quantities_Skills_Ids } from './index.ids';
 
 export const priceQuantityCost_Skill_Data = buildSkillConfig({
-  id: quantities_Skills_Ids.priceQuantityCost,
+  id: 'c5f731c1-be62-495a-8614-ba67ab9ed8a8',
   name: {
     lt: "Kainos, kiekio ir bendros vertės ryšys",
     lv: "Cenas, daudzuma un kopējās vērtības saistība",

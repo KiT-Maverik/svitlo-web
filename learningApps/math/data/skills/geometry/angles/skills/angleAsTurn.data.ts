@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { angles_Skills_Ids } from './index.ids';
 
 export const angleAsTurn_Skill_Data = buildSkillConfig({
-  id: angles_Skills_Ids.angleAsTurn,
+  id: '72f07de3-30ee-4b55-a38c-3d0a12f5de9b',
   name: {
     en: "Comparing angles as turns",
     lt: "Kampų palyginimas kaip posūkių",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { denominations_Skills_Ids } from './index.ids';
 
 export const recognizeDenominations_Skill_Data = buildSkillConfig({
-  id: denominations_Skills_Ids.recognizeDenominations,
+  id: '2086fcee-1737-4cbb-aa46-34cfc4f3fe44',
   name: {
     en: "Recognizing coin and banknote denominations",
     lt: "Monetų ir banknotų nominalų atpažinimas",

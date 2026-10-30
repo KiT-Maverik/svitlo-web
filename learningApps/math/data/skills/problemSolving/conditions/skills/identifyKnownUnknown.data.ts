@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { conditions_Skills_Ids } from './index.ids';
 
 export const identifyKnownUnknown_Skill_Data = buildSkillConfig({
-  id: conditions_Skills_Ids.identifyKnownUnknown,
+  id: '87a8b2f2-0e9e-4b10-aa28-bd52ba0c9b7e',
   name: {
     lt: "Žinomų ir nežinomų dydžių nustatymas",
     lv: "Zināmo un nezināmo lielumu noteikšana",

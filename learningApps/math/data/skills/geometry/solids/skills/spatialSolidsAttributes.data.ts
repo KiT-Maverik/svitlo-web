@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { solids_Skills_Ids } from './index.ids';
 
 export const spatialSolidsAttributes_Skill_Data = buildSkillConfig({
-  id: solids_Skills_Ids.spatialSolidsAttributes,
+  id: '3eec373e-4fff-46e8-a601-fc91759934f0',
   name: {
     en: "Faces, edges and vertices of cubes and cuboids",
     lt: "Kubų ir stačiakampių gretasienių sienos, briaunos ir viršūnės",

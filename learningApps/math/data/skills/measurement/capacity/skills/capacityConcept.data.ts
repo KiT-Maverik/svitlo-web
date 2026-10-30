@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { capacity_Skills_Ids } from './index.ids';
 
 export const capacityConcept_Skill_Data = buildSkillConfig({
-  id: capacity_Skills_Ids.capacityConcept,
+  id: 'a57c2d50-cd76-4614-9e12-f1505ef7f05c',
   name: {
     en: "Comparing container capacities by pouring or measuring",
     lt: "Indų talpos palyginimas pilstant ar matuojant",

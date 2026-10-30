@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const unitFractionRead_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.unitFractionRead,
+  id: '6d176ee8-9b59-4752-b39d-7cf3127d871f',
   name: {
     en: "Reading and writing unit fractions",
     lt: "Vienetinių trupmenų skaitymas ir rašymas",

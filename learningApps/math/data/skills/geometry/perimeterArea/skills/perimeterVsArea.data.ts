@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { perimeterArea_Skills_Ids } from './index.ids';
 
 export const perimeterVsArea_Skill_Data = buildSkillConfig({
-  id: perimeterArea_Skills_Ids.perimeterVsArea,
+  id: '96ab255c-a9f4-40aa-b072-e4f59790dfe5',
   name: {
     en: "Choosing perimeter or area for a measurement",
     lt: "Perimetro arba ploto pasirinkimas matavimui",

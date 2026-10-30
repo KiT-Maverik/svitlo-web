@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { placeValue_Skills_Ids } from './index.ids';
 
 export const flexiblePartition_Skill_Data = buildSkillConfig({
-  id: placeValue_Skills_Ids.flexiblePartition,
+  id: '24a8feb2-e464-4b74-b807-600103edd59e',
   name: {
     lt: "Įvairūs skaičiaus skaidymo būdai",
     lv: "Dažādi skaitļa sadalīšanas veidi",

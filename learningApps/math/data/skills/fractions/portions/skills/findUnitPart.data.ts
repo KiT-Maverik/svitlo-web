@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { portions_Skills_Ids } from './index.ids';
 
 export const findUnitPart_Skill_Data = buildSkillConfig({
-  id: portions_Skills_Ids.findUnitPart,
+  id: '98870d29-e56b-471d-aba8-8ed9f22e3c3a',
   name: {
     en: "Finding 1/n of a quantity by division",
     lt: "Dydžio 1/n dalies radimas dalijant",

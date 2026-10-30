@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { logic_SkillGroup_Ids } from './logic.ids';
-import { logic_Skills_Ids } from './skills/index.ids';
+import { logicalElimination_Skill_Data } from './skills';
 
 export const logic_SkillGroup_Data = buildSkillGroupConfig({
-  id: logic_SkillGroup_Ids.logic,
+  id: '5f3df23c-87ce-411d-87db-6c76d9cd8a48',
   name: {
     en: "Logical reasoning",
     lt: "Loginis samprotavimas",
@@ -34,6 +33,8 @@ export const logic_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Rozumowanie logiczne",
     uk: "Логічне мислення",
   },
-  skillIds: logic_Skills_Ids,
+  skillIds: {
+    logicalElimination: logicalElimination_Skill_Data.id,
+  },
   description: { methodological: "Using given constraints to exclude impossible alternatives and identify the sole valid conclusion. Completing numerical patterns belongs to algebraic competencies, not to a separate skill in this group." },
 });

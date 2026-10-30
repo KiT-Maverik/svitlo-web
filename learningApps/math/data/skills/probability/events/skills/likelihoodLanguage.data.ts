@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { events_Skills_Ids } from './index.ids';
 
 export const likelihoodLanguage_Skill_Data = buildSkillConfig({
-  id: events_Skills_Ids.likelihoodLanguage,
+  id: 'a2a4702d-d512-4459-a699-a4fd874670ac',
   name: {
     en: "Comparing the likelihood of everyday events",
     lt: "Kasdienių įvykių tikimybės palyginimas",

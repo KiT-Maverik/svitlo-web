@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const oneAsFraction_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.oneAsFraction,
+  id: '24ae675d-82dc-4eb4-94fe-adc96f15e452',
   name: {
     en: "Showing one whole as n/n",
     lt: "Vieneto užrašymas trupmena n/n",

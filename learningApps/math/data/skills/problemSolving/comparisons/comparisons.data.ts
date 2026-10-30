@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { comparisons_SkillGroup_Ids } from './comparisons.ids';
-import { comparisons_Skills_Ids } from './skills/index.ids';
+import { additiveComparison_Skill_Data, increaseDecreaseFactor_Skill_Data, increaseDecreaseNumber_Skill_Data, multiplicativeComparison_Skill_Data } from './skills';
 
 export const comparisons_SkillGroup_Data = buildSkillGroupConfig({
-  id: comparisons_SkillGroup_Ids.comparisons,
+  id: '3a803d9d-9b01-444c-8581-2be710069c94',
   name: {
     en: "Comparison problems",
     lt: "Palyginimo uždaviniai",
@@ -34,6 +33,11 @@ export const comparisons_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zadania na porównywanie",
     uk: "Задачі на порівняння",
   },
-  skillIds: comparisons_Skills_Ids,
+  skillIds: {
+    additiveComparison: additiveComparison_Skill_Data.id,
+    increaseDecreaseNumber: increaseDecreaseNumber_Skill_Data.id,
+    multiplicativeComparison: multiplicativeComparison_Skill_Data.id,
+    increaseDecreaseFactor: increaseDecreaseFactor_Skill_Data.id,
+  },
   description: { methodological: "Distinguishing additive comparison ('how many more or fewer') from multiplicative comparison ('how many times as many') and from problems describing a change in a quantity." },
 });

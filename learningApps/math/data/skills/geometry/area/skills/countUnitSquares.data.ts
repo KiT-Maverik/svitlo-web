@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { area_Skills_Ids } from './index.ids';
 
 export const countUnitSquares_Skill_Data = buildSkillConfig({
-  id: area_Skills_Ids.countUnitSquares,
+  id: '4c389e9b-24de-476f-8882-e973d812809a',
   name: {
     en: "Determining area by counting unit squares",
     lt: "Ploto nustatymas skaičiuojant vienetinius kvadratus",

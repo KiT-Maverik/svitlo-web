@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { perimeter_Skills_Ids } from './index.ids';
 
 export const measurePerimeter_Skill_Data = buildSkillConfig({
-  id: perimeter_Skills_Ids.measurePerimeter,
+  id: '13a58a6e-d453-4d8b-bba8-fae79b2a77cd',
   name: {
     en: "Measuring a polygon perimeter by adding its sides",
     lt: "Daugiakampio perimetro matavimas sudedant kraštines",

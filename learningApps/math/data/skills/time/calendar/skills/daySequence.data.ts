@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { calendar_Skills_Ids } from './index.ids';
 
 export const daySequence_Skill_Data = buildSkillConfig({
-  id: calendar_Skills_Ids.daySequence,
+  id: '8dba0c68-4d5b-4e3f-a6fa-119f448baaa4',
   name: {
     en: "Sequencing parts of the day",
     lt: "Paros dalių eiliškumas",

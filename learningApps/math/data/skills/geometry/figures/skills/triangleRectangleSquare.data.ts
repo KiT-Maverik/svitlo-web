@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { figures_Skills_Ids } from './index.ids';
 
 export const triangleRectangleSquare_Skill_Data = buildSkillConfig({
-  id: figures_Skills_Ids.triangleRectangleSquare,
+  id: 'c4186c89-f443-4eb0-8226-e1774c2e76d7',
   name: {
     en: "Properties of triangles, rectangles and squares",
     lt: "Trikampių, stačiakampių ir kvadratų savybės",

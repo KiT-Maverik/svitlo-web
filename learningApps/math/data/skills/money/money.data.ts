@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { money_SkillDomain_Ids } from './money.ids';
-import { money_SkillGroups_Ids } from './index.ids';
+import { denominations_SkillGroup_Data, transactions_SkillGroup_Data } from './index';
 
 export const money_SkillDomain_Data = buildSkillDomainConfig({
-  id: money_SkillDomain_Ids.money,
+  id: 'fc6e1529-7c86-4141-b8b7-9df999eeaea5',
   name: {
     en: "Money",
     lt: "Pinigai",
@@ -34,6 +33,9 @@ export const money_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Pieniądze",
     uk: "Гроші",
   },
-  groupIds: money_SkillGroups_Ids,
+  groupIds: {
+    denominations: denominations_SkillGroup_Data.id,
+    transactions: transactions_SkillGroup_Data.id,
+  },
   description: { methodological: "Applications of arithmetic to monetary denominations, composing and comparing amounts, calculating costs and change, and selecting purchases within a budget." },
 });

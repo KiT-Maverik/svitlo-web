@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { experiments_SkillGroup_Ids } from './experiments.ids';
-import { experiments_Skills_Ids } from './skills/index.ids';
+import { experimentVariation_Skill_Data } from './skills';
 
 export const experiments_SkillGroup_Data = buildSkillGroupConfig({
-  id: experiments_SkillGroup_Ids.experiments,
+  id: 'cbaceeaf-fdb7-44c1-8c11-8b10c20f80ea',
   name: {
     en: "Random experiments",
     lt: "Atsitiktiniai bandymai",
@@ -34,6 +33,8 @@ export const experiments_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Doświadczenia losowe",
     uk: "Експерименти",
   },
-  skillIds: experiments_Skills_Ids,
+  skillIds: {
+    experimentVariation: experimentVariation_Skill_Data.id,
+  },
   description: { methodological: "Variation in observed outcome frequencies across repeated series of random trials even when their conditions remain the same." },
 });

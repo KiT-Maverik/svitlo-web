@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { argumentation_Skills_Ids } from './index.ids';
 
 export const drawConclusion_Skill_Data = buildSkillConfig({
-  id: argumentation_Skills_Ids.drawConclusion,
+  id: 'cda308de-9fd0-4536-8635-2f5ba1a7010d',
   name: {
     en: "Drawing a conclusion from given conditions and reasoning",
     lt: "Išvados darymas remiantis sąlygomis ir samprotavimu",

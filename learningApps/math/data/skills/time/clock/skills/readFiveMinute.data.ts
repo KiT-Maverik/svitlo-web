@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { clock_Skills_Ids } from './index.ids';
 
 export const readFiveMinute_Skill_Data = buildSkillConfig({
-  id: clock_Skills_Ids.readFiveMinute,
+  id: '21d2c77f-39e4-4c54-98fc-b54a8e1568fe',
   name: {
     en: "Reading time to five minutes",
     lt: "Laiko skaitymas penkių minučių tikslumu",

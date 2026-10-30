@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { area_Skills_Ids } from './index.ids';
 
 export const compositeArea_Skill_Data = buildSkillConfig({
-  id: area_Skills_Ids.compositeArea,
+  id: '8dedc81b-faae-489e-9d3c-14331920224e',
   name: {
     en: "Finding the area of a composite rectilinear figure",
     lt: "Sudėtinės stačiakampės figūros ploto radimas",

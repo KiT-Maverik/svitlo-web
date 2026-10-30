@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparison_Skills_Ids } from './index.ids';
 
 export const compareSameNumerator_Skill_Data = buildSkillConfig({
-  id: comparison_Skills_Ids.compareSameNumerator,
+  id: '17d8eb21-df92-4074-a1d2-5a3bded8fea8',
   name: {
     en: "Comparing fractions with the same numerator",
     lt: "Trupmenų su vienodais skaitikliais palyginimas",

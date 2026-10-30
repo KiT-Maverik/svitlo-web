@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { planning_Skills_Ids } from './index.ids';
 
 export const explainAnswerUnits_Skill_Data = buildSkillConfig({
-  id: planning_Skills_Ids.explainAnswerUnits,
+  id: 'cc32ed01-5823-42a0-a32e-810074474d93',
   name: {
     lt: "Atsakymo matavimo vienetų ir pagrįstumo tikrinimas",
     lv: "Atbildes mērvienību un ticamības pārbaude",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparison_Skills_Ids } from './index.ids';
 
 export const compareUnit_Skill_Data = buildSkillConfig({
-  id: comparison_Skills_Ids.compareUnit,
+  id: '733feb81-4849-4e85-8cfa-fc85f32d2679',
   name: {
     en: "Comparing unit fractions of the same whole",
     lt: "To paties vieneto vienetinių trupmenų palyginimas",

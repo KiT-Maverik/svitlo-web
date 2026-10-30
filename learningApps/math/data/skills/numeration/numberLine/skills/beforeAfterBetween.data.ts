@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { numberLine_Skills_Ids } from './index.ids';
 
 export const beforeAfterBetween_Skill_Data = buildSkillConfig({
-  id: numberLine_Skills_Ids.beforeAfterBetween,
+  id: 'f1f3fcb5-c6ce-4542-817a-a9eca6b79453',
   name: {
     lt: "Ankstesni, tolesni ir tarpiniai skaičiai",
     lv: "Iepriekšējie, nākamie un starpskaitļi",

@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { groups_SkillGroup_Ids } from './groups.ids';
-import { groups_Skills_Ids } from './skills/index.ids';
+import { correspondenceCombinations_Skill_Data, equalGroups_Skill_Data } from './skills';
 
 export const groups_SkillGroup_Data = buildSkillGroupConfig({
-  id: groups_SkillGroup_Ids.groups,
+  id: 'fae06e19-607b-485c-88d4-cfe38e26e343',
   name: {
     en: "Grouping problems",
     lt: "Grupavimo uždaviniai",
@@ -34,6 +33,9 @@ export const groups_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zadania o grupach",
     uk: "Задачі на групування",
   },
-  skillIds: groups_Skills_Ids,
+  skillIds: {
+    correspondenceCombinations: correspondenceCombinations_Skill_Data.id,
+    equalGroups: equalGroups_Skill_Data.id,
+  },
   description: { methodological: "Situations involving equal groups and independent selections from two sets, distinguishing multiplication from counting combinations." },
 });

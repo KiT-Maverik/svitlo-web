@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { portions_SkillGroup_Ids } from './portions.ids';
-import { portions_Skills_Ids } from './skills/index.ids';
+import { findUnitPart_Skill_Data, reconstructWhole_Skill_Data } from './skills';
 
 export const portions_SkillGroup_Data = buildSkillGroupConfig({
-  id: portions_SkillGroup_Ids.portions,
+  id: '8e117fee-fc09-41e2-bf8a-fed07ffbd065',
   name: {
     en: "Fractional parts of quantities",
     lt: "Dydžių dalys",
@@ -34,7 +33,10 @@ export const portions_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Ułamkowe części wielkości",
     uk: "Частини величини",
   },
-  skillIds: portions_Skills_Ids,
+  skillIds: {
+    findUnitPart: findUnitPart_Skill_Data.id,
+    reconstructWhole: reconstructWhole_Skill_Data.id,
+  },
   description: {
     methodological: "Moving between a whole quantity and its unit fractional part through division and the inverse operation.",
     fe: {

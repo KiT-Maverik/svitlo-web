@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparison_Skills_Ids } from './index.ids';
 
 export const moreLessEqual_Skill_Data = buildSkillConfig({
-  id: comparison_Skills_Ids.moreLessEqual,
+  id: '0a1c4783-3267-4e3b-be1f-67428a859abc',
   name: {
     lt: "Daugiau, mažiau arba lygu",
     lv: "Vairāk, mazāk vai vienādi daudzumi",

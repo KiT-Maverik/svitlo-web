@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { transformations_Skills_Ids } from './index.ids';
 
 export const reflectionSymmetry_Skill_Data = buildSkillConfig({
-  id: transformations_Skills_Ids.reflectionSymmetry,
+  id: 'f570551e-7d44-4a2c-8567-16ebbffeb142',
   name: {
     en: "Finding symmetry axes and completing reflections",
     lt: "Simetrijos ašių radimas ir atspindžių užbaigimas",

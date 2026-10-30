@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const equivalentVisual_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.equivalentVisual,
+  id: 'fbe8f4a0-92e8-4c98-83c0-3a0d6888bd38',
   name: {
     en: "Showing equivalent fractions with visual models",
     lt: "Lygiaverčių trupmenų vaizdavimas modeliais",

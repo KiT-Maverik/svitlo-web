@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { solids_Skills_Ids } from './index.ids';
 
 export const identify3dSolids_Skill_Data = buildSkillConfig({
-  id: solids_Skills_Ids.identify3dSolids,
+  id: '6aed363a-9049-445d-aa9e-fa35c8018855',
   name: {
     en: "Identifying basic solid figures",
     lt: "Pagrindinių erdvinių figūrų atpažinimas",

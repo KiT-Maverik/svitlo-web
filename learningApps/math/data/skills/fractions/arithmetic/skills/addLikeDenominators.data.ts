@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { arithmetic_Skills_Ids } from './index.ids';
 
 export const addLikeDenominators_Skill_Data = buildSkillConfig({
-  id: arithmetic_Skills_Ids.addLikeDenominators,
+  id: 'bb4932e9-7867-4556-a715-8c4d3afc1553',
   name: {
     en: "Adding fractions with the same denominator within one whole",
     lt: "Trupmenų su vienodais vardikliais sudėtis vieneto ribose",

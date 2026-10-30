@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { comparison_SkillGroup_Ids } from './comparison.ids';
-import { comparison_Skills_Ids } from './skills/index.ids';
+import { compareSameNumerator_Skill_Data, compareUnit_Skill_Data, sameDenominatorModel_Skill_Data } from './skills';
 
 export const comparison_SkillGroup_Data = buildSkillGroupConfig({
-  id: comparison_SkillGroup_Ids.comparison,
+  id: 'c1e510c8-1bd0-475a-a977-e2aac0b0bed7',
   name: {
     en: "Comparing fractions",
     lt: "Trupmenų palyginimas",
@@ -34,7 +33,11 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Porównywanie ułamków",
     uk: "Порівняння дробів",
   },
-  skillIds: comparison_Skills_Ids,
+  skillIds: {
+    compareSameNumerator: compareSameNumerator_Skill_Data.id,
+    compareUnit: compareUnit_Skill_Data.id,
+    sameDenominatorModel: sameDenominatorModel_Skill_Data.id,
+  },
   description: {
     methodological: "Comparing the magnitudes of fractional parts relative to the same whole while holding either the numerator or denominator fixed.",
     fe: {

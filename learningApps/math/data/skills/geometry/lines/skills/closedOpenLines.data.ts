@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { lines_Skills_Ids } from './index.ids';
 
 export const closedOpenLines_Skill_Data = buildSkillConfig({
-  id: lines_Skills_Ids.closedOpenLines,
+  id: 'd52a91eb-a4b7-48c7-8d2c-97aceb88b146',
   name: {
     en: "Identifying closed and open lines",
     lt: "Uždarųjų ir atvirųjų linijų atpažinimas",

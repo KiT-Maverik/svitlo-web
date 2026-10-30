@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { orientation_Skills_Ids } from './index.ids';
 
 export const gridMapNavigation_Skill_Data = buildSkillConfig({
-  id: orientation_Skills_Ids.gridMapNavigation,
+  id: '43b1fdd6-0846-4c0c-a01b-375a6fec3b2f',
   name: {
     en: "Reading and drawing simple grid maps",
     lt: "Paprastų tinklelio planų skaitymas ir braižymas",

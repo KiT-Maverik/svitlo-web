@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { conditions_Skills_Ids } from './index.ids';
 
 export const findMissingData_Skill_Data = buildSkillConfig({
-  id: conditions_Skills_Ids.findMissingData,
+  id: 'f42f6f4a-7183-4ace-862d-e25a58d9a702',
   name: {
     lt: "Trūkstamų duomenų nustatymas",
     lv: "Trūkstošo datu noteikšana",

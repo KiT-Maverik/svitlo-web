@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparisons_Skills_Ids } from './index.ids';
 
 export const increaseDecreaseFactor_Skill_Data = buildSkillConfig({
-  id: comparisons_Skills_Ids.increaseDecreaseFactor,
+  id: '863bc70e-c4f5-4ca2-b65d-94d69638c09d',
   name: {
     lt: "Didinimas ar mažinimas nurodytą kartų skaičių",
     lv: "Palielināšana vai samazināšana noteiktu reižu skaitu",

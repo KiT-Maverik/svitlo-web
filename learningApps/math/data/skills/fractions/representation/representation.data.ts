@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { representation_SkillGroup_Ids } from './representation.ids';
-import { representation_Skills_Ids } from './skills/index.ids';
+import { wholeAndEqualParts_Skill_Data, fractionGreaterThanOne_Skill_Data, tenthsAsDivision_Skill_Data, unitFractionModel_Skill_Data, unitFractionRead_Skill_Data, denominatorMeaning_Skill_Data, numeratorMeaning_Skill_Data, nonUnitModel_Skill_Data, wholeDependence_Skill_Data, numberLine_Skill_Data, oneAsFraction_Skill_Data, equivalentVisual_Skill_Data } from './skills';
 
 export const representation_SkillGroup_Data = buildSkillGroupConfig({
-  id: representation_SkillGroup_Ids.representation,
+  id: 'abd38d75-1cdc-40e0-8ed0-db15e4ea8d98',
   name: {
     en: "Representing fractions",
     lt: "Trupmenų vaizdavimas",
@@ -34,7 +33,20 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Przedstawianie ułamków",
     uk: "Представлення дробів",
   },
-  skillIds: representation_Skills_Ids,
+  skillIds: {
+    wholeAndEqualParts: wholeAndEqualParts_Skill_Data.id,
+    fractionGreaterThanOne: fractionGreaterThanOne_Skill_Data.id,
+    tenthsAsDivision: tenthsAsDivision_Skill_Data.id,
+    unitFractionModel: unitFractionModel_Skill_Data.id,
+    unitFractionRead: unitFractionRead_Skill_Data.id,
+    denominatorMeaning: denominatorMeaning_Skill_Data.id,
+    numeratorMeaning: numeratorMeaning_Skill_Data.id,
+    nonUnitModel: nonUnitModel_Skill_Data.id,
+    wholeDependence: wholeDependence_Skill_Data.id,
+    numberLine: numberLine_Skill_Data.id,
+    oneAsFraction: oneAsFraction_Skill_Data.id,
+    equivalentVisual: equivalentVisual_Skill_Data.id,
+  },
   description: {
     methodological: "Fractional representation relative to a specified whole: unit and nonunit parts, conventional fraction notation, equivalent fractions, geometric models, and values greater than one.",
     fe: {

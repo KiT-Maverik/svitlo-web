@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { placeValue_Skills_Ids } from './index.ids';
 
 export const zeroPlaceholder_Skill_Data = buildSkillConfig({
-  id: placeValue_Skills_Ids.zeroPlaceholder,
+  id: 'c3711187-306a-436d-b10e-0d2ac631bfe9',
   name: {
     lt: "Nulis kaip vietos žymeklis",
     lv: "Nulle kā vietas aizpildītājs",

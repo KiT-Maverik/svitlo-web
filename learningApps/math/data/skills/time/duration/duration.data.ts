@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { duration_SkillGroup_Ids } from './duration.ids';
-import { duration_Skills_Ids } from './skills/index.ids';
+import { convertHoursMinutes_Skill_Data, convertMinutesSeconds_Skill_Data, eventDuration_Skill_Data, findStartOrEnd_Skill_Data } from './skills';
 
 export const duration_SkillGroup_Data = buildSkillGroupConfig({
-  id: duration_SkillGroup_Ids.duration,
+  id: '7bd683f2-1db4-4242-b223-733aa66481f7',
   name: {
     en: "Duration",
     lt: "Trukmė",
@@ -34,6 +33,11 @@ export const duration_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Czas trwania",
     uk: "Тривалість",
   },
-  skillIds: duration_Skills_Ids,
+  skillIds: {
+    convertHoursMinutes: convertHoursMinutes_Skill_Data.id,
+    convertMinutesSeconds: convertMinutesSeconds_Skill_Data.id,
+    eventDuration: eventDuration_Skill_Data.id,
+    findStartOrEnd: findStartOrEnd_Skill_Data.id,
+  },
   description: { methodological: "Relationships among seconds, minutes, and hours, and deriving a time interval or instant from other known time information." },
 });

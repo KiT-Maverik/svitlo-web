@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { duration_Skills_Ids } from './index.ids';
 
 export const convertMinutesSeconds_Skill_Data = buildSkillConfig({
-  id: duration_Skills_Ids.convertMinutesSeconds,
+  id: 'b6540c9a-5a76-405d-ba58-9dc213908443',
   name: {
     en: "Converting minutes and seconds",
     lt: "Minučių ir sekundžių keitimas",

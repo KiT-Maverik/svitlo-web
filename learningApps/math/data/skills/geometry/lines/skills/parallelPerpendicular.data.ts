@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { lines_Skills_Ids } from './index.ids';
 
 export const parallelPerpendicular_Skill_Data = buildSkillConfig({
-  id: lines_Skills_Ids.parallelPerpendicular,
+  id: '983869b9-b9aa-4053-b0fb-be6c3430cff1',
   name: {
     en: "Recognizing parallel and perpendicular lines",
     lt: "Lygiagrečių ir statmenų tiesių atpažinimas",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { figures_Skills_Ids } from './index.ids';
 
 export const identify2dShapes_Skill_Data = buildSkillConfig({
-  id: figures_Skills_Ids.identify2dShapes,
+  id: '54f96aba-7db2-48bb-97ae-5ba2f3436095',
   name: {
     en: "Identifying basic plane figures",
     lt: "Pagrindinių plokščiųjų figūrų atpažinimas",

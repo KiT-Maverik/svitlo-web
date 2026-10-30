@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { transformations_SkillGroup_Ids } from './transformations.ids';
-import { transformations_Skills_Ids } from './skills/index.ids';
+import { turnsQuarters_Skill_Data, translationsReflections_Skill_Data, reflectionSymmetry_Skill_Data } from './skills';
 
 export const transformations_SkillGroup_Data = buildSkillGroupConfig({
-  id: transformations_SkillGroup_Ids.transformations,
+  id: '41302cd8-48f9-4734-96a2-7c32e26a4361',
   name: {
     en: "Geometric transformations",
     lt: "Geometrinės transformacijos",
@@ -34,7 +33,11 @@ export const transformations_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Przekształcenia geometryczne",
     uk: "Геометричні перетворення",
   },
-  skillIds: transformations_Skills_Ids,
+  skillIds: {
+    turnsQuarters: turnsQuarters_Skill_Data.id,
+    translationsReflections: translationsReflections_Skill_Data.id,
+    reflectionSymmetry: reflectionSymmetry_Skill_Data.id,
+  },
   description: {
     methodological: "Changes in a shape's position through rotation, translation, and reflection, along with symmetry about an axis.",
     fe: {
