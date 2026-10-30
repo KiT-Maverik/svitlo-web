@@ -907,523 +907,923 @@ User-friendly description: Offer calm practical assistance without pressuring so
 
 ### Personal Boundaries and Violence Prevention
 
+Slug: personalBoundariesAndViolencePrevention
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Safety in relationships requires bodily autonomy, recognition of coercion, and effective routes to protection. Mechanisms of social influence are studied in Psychology; here the emphasis is on avoiding harm and obtaining help.
+Methodological description: Safety in relationships requires bodily autonomy, recognition of coercion, and effective routes to protection. Mechanisms of social influence are studied in Psychology; here the emphasis is on avoiding harm and obtaining help.
+User-friendly description: Recognize coercion and violence and find ways to protect personal safety and boundaries.
 
 #### Bodily Autonomy and Consent
+
+Slug: bodilyAutonomyAndConsent
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Personal space, privacy, and permission govern respectful contact; consent must not be inferred from silence, fear, or power imbalance.
+Methodological description: Personal space, privacy, and permission govern respectful contact; consent must not be inferred from silence, fear, or power imbalance.
+User-friendly description: Understand permission, privacy and the right to choose what happens to your body.
 
 ##### Recognize personal boundaries
 
+Slug: recognizePersonalBoundaries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish acceptable from unwanted contact and intrusion into personal space, possessions, or sensitive information.
+Methodological description: Distinguish acceptable from unwanted contact and intrusion into personal space, possessions, or sensitive information.
+User-friendly description: Recognize when contact or sharing invades someone's personal limits.
 
 ##### Communicate refusal and limits
 
+Slug: communicateRefusalAndLimits
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State a boundary or leave an unsafe interaction in a way that prioritizes personal safety over politeness.
+Methodological description: State a boundary or leave an unsafe interaction in a way that prioritizes personal safety over politeness.
+User-friendly description: Say no or leave unsafe contact without prioritizing politeness over safety.
 
 ##### Recognize valid consent
 
+Slug: recognizeValidConsent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish voluntary, informed, specific, and reversible permission from pressure or absence of resistance.
+Methodological description: Distinguish voluntary, informed, specific, and reversible permission from pressure or absence of resistance.
+User-friendly description: Understand that real consent must be free, informed and reversible.
 
 #### Pressure and Manipulation
+
+Slug: pressureAndManipulation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Coercion can use threats, secrecy, guilt, status, dependency, or urgency; a protective response need not persuade the aggressor.
+Methodological description: Coercion can use threats, secrecy, guilt, status, dependency, or urgency; a protective response need not persuade the aggressor.
+User-friendly description: Discover how coercion may use guilt, threats or secrecy rather than free choice.
 
 ##### Recognize psychological pressure
 
+Slug: recognizePsychologicalPressure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify demands reinforced by guilt, intimidation, isolation, or threatened consequences rather than genuine choice.
+Methodological description: Identify demands reinforced by guilt, intimidation, isolation, or threatened consequences rather than genuine choice.
+User-friendly description: Identify pressure based on intimidation, isolation or threatened punishment.
 
 ##### Resist unsafe peer pressure
 
+Slug: resistUnsafePeerPressure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use refusal, disengagement, and supportive allies when a group promotes hazardous or humiliating behaviour.
+Methodological description: Use refusal, disengagement, and supportive allies when a group promotes hazardous or humiliating behaviour.
+User-friendly description: Find safe ways to refuse harmful requests from peers.
 
 ##### Recognize grooming and exploitation
 
+Slug: recognizeGroomingAndExploitation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify boundary testing, forced secrecy, rewards, and escalating requests as possible patterns of exploitation without blaming the targeted person.
+Methodological description: Identify boundary testing, forced secrecy, rewards, and escalating requests as possible patterns of exploitation without blaming the targeted person.
+User-friendly description: Recognize secrecy and escalating demands that may signal exploitation.
 
 ##### Set boundaries in unequal relationships
 
+Slug: setBoundariesInUnequalRelationships
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Account for authority, dependency, age, or financial power when judging whether a demand or apparent agreement is free.
+Methodological description: Account for authority, dependency, age, or financial power when judging whether a demand or apparent agreement is free.
+User-friendly description: Understand how authority or dependency can undermine apparent agreement.
 
 #### Violence and Protection
+
+Slug: violenceAndProtection
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Violence can be physical, psychological, sexual, economic, or digital; protection and reporting should avoid exposing affected people to retaliation.
+Methodological description: Violence can be physical, psychological, sexual, economic, or digital; protection and reporting should avoid exposing affected people to retaliation.
+User-friendly description: Recognize harmful behaviors and learn how to seek protection.
 
 ##### Recognize bullying
 
+Slug: recognizeBullying
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a pattern of harmful repeated conduct involving a power imbalance, distinguishing bullying from a mutual disagreement or an isolated conflict.
+Methodological description: Identify a pattern of harmful repeated conduct involving a power imbalance, distinguishing bullying from a mutual disagreement or an isolated conflict.
+User-friendly description: Distinguish repeated bullying involving power imbalance from ordinary conflict.
 
 ##### Recognize harassment
 
+Slug: recognizeHarassment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify intimidating, degrading, discriminatory or otherwise unwanted targeted conduct, which may be serious even without a repeated bullying pattern.
+Methodological description: Identify intimidating, degrading, discriminatory or otherwise unwanted targeted conduct, which may be serious even without a repeated bullying pattern.
+User-friendly description: Identify harassment that can cause harm even when it is not repeated.
 
 ##### Respond safely to bullying
 
+Slug: respondSafelyToBullying
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Prioritize disengagement, trusted assistance, and reporting channels over retaliation or direct confrontation with aggressors.
+Methodological description: Prioritize disengagement, trusted assistance, and reporting channels over retaliation or direct confrontation with aggressors.
+User-friendly description: Choose safer help-seeking and reporting instead of retaliation.
 
 ##### Recognize domestic and sexual violence
 
+Slug: recognizeDomesticAndSexualViolence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify controlling, threatening, non-consensual, or abusive behaviour, including harm by familiar or trusted people.
+Methodological description: Identify controlling, threatening, non-consensual, or abusive behaviour, including harm by familiar or trusted people.
+User-friendly description: Recognize controlling, threatening or non-consensual behavior as violence.
 
 ##### Seek protection after violence
 
+Slug: seekProtectionAfterViolence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify safe contacts, support organizations, emergency services, and appropriate documentation without requiring disclosure to an unsafe person.
+Methodological description: Identify safe contacts, support organizations, emergency services, and appropriate documentation without requiring disclosure to an unsafe person.
+User-friendly description: Find safe people and services to contact after experiencing violence.
 
 ##### Support a person affected by violence
 
+Slug: supportAPersonAffectedByViolence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Respond without blame, respect the person's choices and immediate safety, and facilitate qualified support rather than investigating the incident.
+Methodological description: Respond without blame, respect the person's choices and immediate safety, and facilitate qualified support rather than investigating the incident.
+User-friendly description: Support someone affected by violence without blame or unsafe investigation.
 
 ### Sexual and Reproductive Health
+
+Slug: sexualAndReproductiveHealth
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 7
 
 [Not implemented](#)
 
-Practical knowledge about bodily development, sexual health, prevention, and access to services supports informed and safe choices. Anatomy and reproductive mechanisms are mainly Biology; moral evaluation is not substituted for factual health information.
+Methodological description: Practical knowledge about bodily development, sexual health, prevention, and access to services supports informed and safe choices. Anatomy and reproductive mechanisms are mainly Biology; moral evaluation is not substituted for factual health information.
+User-friendly description: Learn factual information about development, reproductive health and available care.
 
 #### Development and Bodily Care
+
+Slug: developmentAndBodilyCare
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Changes through puberty differ in timing and expression; normal variation and symptoms needing assessment should not be conflated.
+Methodological description: Changes through puberty differ in timing and expression; normal variation and symptoms needing assessment should not be conflated.
+User-friendly description: Explore bodily changes through puberty and appropriate personal care.
 
 ##### Understand pubertal changes
 
+Slug: understandPubertalChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish common physical changes and variations in timing from unsupported claims about a single correct developmental pattern.
+Methodological description: Distinguish common physical changes and variations in timing from unsupported claims about a single correct developmental pattern.
+User-friendly description: Recognize common differences in the timing and nature of pubertal changes.
 
 ##### Manage menstrual health
 
+Slug: manageMenstrualHealth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Understand menstrual variation, choose appropriate hygiene and comfort measures, track relevant changes and recognize symptoms that merit clinical attention without shame or unsupported assumptions.
+Methodological description: Understand menstrual variation, choose appropriate hygiene and comfort measures, track relevant changes and recognize symptoms that merit clinical attention without shame or unsupported assumptions.
+User-friendly description: Manage menstruation with suitable hygiene while noticing concerning symptoms.
 
 ##### Recognize reproductive health concerns
 
+Slug: recognizeReproductiveHealthConcerns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Notice pain, abnormal symptoms, or other changes that may require confidential professional consultation without self-diagnosis.
+Methodological description: Notice pain, abnormal symptoms, or other changes that may require confidential professional consultation without self-diagnosis.
+User-friendly description: Identify reproductive-health changes that warrant confidential professional advice.
 
 #### Sexual and Reproductive Healthcare
+
+Slug: sexualAndReproductiveHealthcare
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Risk reduction and access to care include prevention of sexually transmitted infections, contraception, pregnancy-related care and confidential advice. These are health-service competencies, not a prescribed set of personal choices.
+Methodological description: Risk reduction and access to care include prevention of sexually transmitted infections, contraception, pregnancy-related care and confidential advice. These are health-service competencies, not a prescribed set of personal choices.
+User-friendly description: Understand healthcare options for prevention, pregnancy and sexual health.
 
 ##### Prevent sexually transmitted infections
 
+Slug: preventSexuallyTransmittedInfections
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish routes of transmission and evidence-based protective methods, testing, and vaccination where relevant.
+Methodological description: Distinguish routes of transmission and evidence-based protective methods, testing, and vaccination where relevant.
+User-friendly description: Recognize ways to reduce sexually transmitted infection risks.
 
 ##### Understand contraception
 
+Slug: understandContraception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare major methods by intended function, limitations, access considerations, and need for appropriate professional advice.
+Methodological description: Compare major methods by intended function, limitations, access considerations, and need for appropriate professional advice.
+User-friendly description: Compare the functions and limitations of major contraception methods.
 
 ##### Understand pregnancy-related healthcare
 
+Slug: understandPregnancyRelatedHealthcare
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the roles of testing, timely medical assessment, antenatal care, and support services in different circumstances.
+Methodological description: Identify the roles of testing, timely medical assessment, antenatal care, and support services in different circumstances.
+User-friendly description: Understand the role of testing and professional pregnancy-related care.
 
 ##### Seek confidential sexual health advice
 
+Slug: seekConfidentialSexualHealthAdvice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify appropriate services and questions about privacy, safeguarding, consent, and access to care.
+Methodological description: Identify appropriate services and questions about privacy, safeguarding, consent, and access to care.
+User-friendly description: Find suitable services for confidential reproductive-health questions.
 
 ### Substance Use and Dependence Prevention
+
+Slug: substanceUseAndDependencePrevention
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 8
 
 [Not implemented](#)
 
-Tobacco, alcohol, drugs, and other dependence-forming patterns can affect health and safety. The focus is recognizing hazards, resisting coercion, and seeking care rather than pharmacological synthesis or moral judgment.
+Methodological description: Tobacco, alcohol, drugs, and other dependence-forming patterns can affect health and safety. The focus is recognizing hazards, resisting coercion, and seeking care rather than pharmacological synthesis or moral judgment.
+User-friendly description: Recognize harms linked to substances or dependence and know where to seek help.
 
 #### Substance-Related Risks
 
+Slug: substanceRelatedRisks
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Effects depend on the substance, amount, context, interactions, and vulnerability; legal availability does not imply harmlessness.
+Methodological description: Effects depend on the substance, amount, context, interactions, and vulnerability; legal availability does not imply harmlessness.
+User-friendly description: Explore how substance effects and risks vary with circumstances.
 
 ##### Recognize tobacco and nicotine risks
 
+Slug: recognizeTobaccoAndNicotineRisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect smoking, vaping, and other nicotine exposure with dependence and health harm, including second-hand exposure.
+Methodological description: Connect smoking, vaping, and other nicotine exposure with dependence and health harm, including second-hand exposure.
+User-friendly description: Understand risks from smoking, vaping and nicotine exposure.
 
 ##### Recognize alcohol-related risks
 
+Slug: recognizeAlcoholRelatedRisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify impaired judgment, coordination, poisoning risk, and longer-term health consequences associated with alcohol.
+Methodological description: Identify impaired judgment, coordination, poisoning risk, and longer-term health consequences associated with alcohol.
+User-friendly description: Recognize how alcohol can affect safety, judgment and long-term health.
 
 ##### Recognize drug-related risks
 
+Slug: recognizeDrugRelatedRisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish unpredictable potency, impairment, overdose, and interactions without treating all substances as having identical effects.
+Methodological description: Distinguish unpredictable potency, impairment, overdose, and interactions without treating all substances as having identical effects.
+User-friendly description: Identify impairment, overdose and interaction risks from drugs.
 
 ##### Recognize medicine misuse
 
+Slug: recognizeMedicineMisuse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify hazardous use outside prescribed or labelled purposes, including sharing medication and mixing substances.
+Methodological description: Identify hazardous use outside prescribed or labelled purposes, including sharing medication and mixing substances.
+User-friendly description: Recognize dangerous ways medicines may be shared or misused.
 
 #### Prevention and Access to Help
+
+Slug: preventionAndAccessToHelp
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Dependence involves more than a single behaviour; early support and non-stigmatizing treatment pathways matter.
+Methodological description: Dependence involves more than a single behaviour; early support and non-stigmatizing treatment pathways matter.
+User-friendly description: Discover how to prevent harmful use and find support early.
 
 ##### Recognize signs of problematic use
 
+Slug: recognizeSignsOfProblematicUse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Notice loss of control, increasing harms, and neglected obligations as reasons for further assessment rather than a basis for labeling someone.
+Methodological description: Notice loss of control, increasing harms, and neglected obligations as reasons for further assessment rather than a basis for labeling someone.
+User-friendly description: Recognize when use causes growing harm or loss of control.
 
 ##### Respond to offers of harmful substances
 
+Slug: respondToOffersOfHarmfulSubstances
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use refusal and exit strategies appropriate to pressure, power dynamics, and immediate safety.
+Methodological description: Use refusal and exit strategies appropriate to pressure, power dynamics, and immediate safety.
+User-friendly description: Use safe refusal and exit strategies when offered harmful substances.
 
 ##### Recognize behavioural dependence risks
 
+Slug: recognizeBehaviouralDependenceRisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify patterns of gambling or digital engagement that cause persistent harm without assuming ordinary enjoyment is addiction.
+Methodological description: Identify patterns of gambling or digital engagement that cause persistent harm without assuming ordinary enjoyment is addiction.
+User-friendly description: Notice when gambling or digital activity becomes persistently harmful.
 
 ##### Seek help for substance-related problems
 
+Slug: seekHelpForSubstanceRelatedProblems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify trusted people and health or addiction services, including urgent assistance for suspected poisoning or overdose.
+Methodological description: Identify trusted people and health or addiction services, including urgent assistance for suspected poisoning or overdose.
+User-friendly description: Know when to ask for support or urgent help for substance-related harm.
 
 ### Everyday and Occupational Safety
+
+Slug: everydayAndOccupationalSafety
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
-Injuries often arise from foreseeable hazards in homes, workplaces, educational spaces, and public facilities. Preventive controls and safe equipment use take priority over reacting after an incident.
+Methodological description: Injuries often arise from foreseeable hazards in homes, workplaces, educational spaces, and public facilities. Preventive controls and safe equipment use take priority over reacting after an incident.
+User-friendly description: Learn to identify and prevent everyday hazards at home, school and work.
 
 #### Hazard Recognition and Prevention
+
+Slug: hazardRecognitionAndPrevention
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Risk management involves identifying possible harm, checking exposure, and favouring elimination or protective controls over mere caution.
+Methodological description: Risk management involves identifying possible harm, checking exposure, and favouring elimination or protective controls over mere caution.
+User-friendly description: Discover how to assess and reduce dangers before an accident happens.
 
 ##### Identify hazards in an environment
 
+Slug: identifyHazardsInAnEnvironment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Notice physical, chemical, electrical, and situational dangers without assuming a familiar place is automatically safe.
+Methodological description: Notice physical, chemical, electrical, and situational dangers without assuming a familiar place is automatically safe.
+User-friendly description: Spot unsafe electrical, chemical and physical conditions nearby.
 
 ##### Evaluate injury risk
 
+Slug: evaluateInjuryRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate how an identifiable hazard could cause immediate accidental injury, who may be exposed and how reliably existing controls reduce that danger; chronic disease-risk estimation belongs to Health and Risk.
+Methodological description: Evaluate how an identifiable hazard could cause immediate accidental injury, who may be exposed and how reliably existing controls reduce that danger; chronic disease-risk estimation belongs to Health and Risk.
+User-friendly description: Evaluate how a hazard might cause immediate injury.
 
 ##### Choose protective measures
 
+Slug: chooseProtectiveMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Prefer avoiding or removing a hazard, safe design and procedure, and suitable protection rather than relying solely on warnings.
+Methodological description: Prefer avoiding or removing a hazard, safe design and procedure, and suitable protection rather than relying solely on warnings.
+User-friendly description: Choose protections that remove or control hazards instead of merely warning people.
 
 ##### Respond to unsafe conditions
 
+Slug: respondToUnsafeConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Pause hazardous activity, move to safety, notify a responsible person, and avoid attempting work beyond one's competence.
+Methodological description: Pause hazardous activity, move to safety, notify a responsible person, and avoid attempting work beyond one's competence.
+User-friendly description: Stop unsafe activity and contact someone qualified to help.
 
 #### Household Hazards
+
+Slug: householdHazards
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Ordinary domestic objects and spaces can cause falls, burns, poisoning, cuts, and injury when access or use is unsafe.
+Methodological description: Ordinary domestic objects and spaces can cause falls, burns, poisoning, cuts, and injury when access or use is unsafe.
+User-friendly description: Explore preventable dangers in ordinary household environments.
 
 ##### Prevent falls in living spaces
 
+Slug: preventFallsInLivingSpaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify slipping, tripping, unstable climbing, and unguarded height hazards and match them to safer arrangements.
+Methodological description: Identify slipping, tripping, unstable climbing, and unguarded height hazards and match them to safer arrangements.
+User-friendly description: Recognize how slippery floors or unstable climbing can cause falls.
 
 ##### Safe use of sharp objects
 
+Slug: safeUseOfSharpObjects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply appropriate handling, storage, and supervision to cutting or piercing tools while avoiding unnecessary exposure.
+Methodological description: Apply appropriate handling, storage, and supervision to cutting or piercing tools while avoiding unnecessary exposure.
+User-friendly description: Use sharp objects carefully and store them safely.
 
 ##### Prevent household poisoning
 
+Slug: preventHouseholdPoisoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reduce access to hazardous chemicals, use original labelled containers, and avoid unsafe storage near food or medicine.
+Methodological description: Reduce access to hazardous chemicals, use original labelled containers, and avoid unsafe storage near food or medicine.
+User-friendly description: Keep hazardous household substances properly labeled and away from children.
 
 ##### Safe handling of hot surfaces and liquids
 
+Slug: safeHandlingOfHotSurfacesAndLiquids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize scalding and contact-burn hazards in kitchens, bathrooms, and heating areas.
+Methodological description: Recognize scalding and contact-burn hazards in kitchens, bathrooms, and heating areas.
+User-friendly description: Recognize burn risks from hot objects and liquids.
 
 ##### Prevent entrapment and suffocation hazards
 
+Slug: preventEntrapmentAndSuffocationHazards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify risks from confined spaces, cords, bags, and unsafe storage for vulnerable people.
+Methodological description: Identify risks from confined spaces, cords, bags, and unsafe storage for vulnerable people.
+User-friendly description: Spot situations involving dangerous cords, bags or confined spaces.
 
 #### Personal Safety in Public Places
+
+Slug: personalSafetyInPublicPlaces
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Being approached by unknown people or separated from familiar companions calls for independent judgement about safe distance, exit options and trustworthy assistance, without assuming every unfamiliar person is dangerous.
+Methodological description: Being approached by unknown people or separated from familiar companions calls for independent judgement about safe distance, exit options and trustworthy assistance, without assuming every unfamiliar person is dangerous.
+User-friendly description: Learn how to respond to uncomfortable encounters and separation in public.
 
 ##### Respond to unsafe approaches in public
 
+Slug: respondToUnsafeApproachesInPublic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize unwanted invitations, requests for secrecy, pressure to leave a safe location or other suspicious approaches; maintain distance, decline unsafe requests and seek support from an appropriate trusted person or service.
+Methodological description: Recognize unwanted invitations, requests for secrecy, pressure to leave a safe location or other suspicious approaches; maintain distance, decline unsafe requests and seek support from an appropriate trusted person or service.
+User-friendly description: Recognize unsafe invitations and seek appropriate assistance.
 
 ##### Seek help when lost or separated
 
+Slug: seekHelpWhenLostOrSeparated
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use an appropriate safe location, identifiable helpers and reliable contact channels when separated from companions; avoid sharing unnecessary personal information or following an unverified stranger.
+Methodological description: Use an appropriate safe location, identifiable helpers and reliable contact channels when separated from companions; avoid sharing unnecessary personal information or following an unverified stranger.
+User-friendly description: Find a safe location and verified helpers if you become lost.
 
 #### Electricity, Fire and Gas
+
+Slug: electricityFireAndGas
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Electrical hazards, ignition and fire, fuel-gas leaks, carbon monoxide exposure and heating equipment require different prevention and emergency responses; intervening in faulty systems can endanger bystanders.
+Methodological description: Electrical hazards, ignition and fire, fuel-gas leaks, carbon monoxide exposure and heating equipment require different prevention and emergency responses; intervening in faulty systems can endanger bystanders.
+User-friendly description: Discover distinct risks from electricity, fire, gas and combustion appliances.
 
 ##### Electrical safety
 
+Slug: electricalSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize damaged wiring, water-related hazards, overloaded circuits, and the limits of safe user action.
+Methodological description: Recognize damaged wiring, water-related hazards, overloaded circuits, and the limits of safe user action.
+User-friendly description: Identify dangerous wiring and know when not to touch it.
 
 ##### Fire prevention
 
+Slug: firePrevention
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify ignition sources, flammable materials, and preventive practices appropriate to the setting.
+Methodological description: Identify ignition sources, flammable materials, and preventive practices appropriate to the setting.
+User-friendly description: Reduce ignition risks by recognizing flammable materials and unsafe practices.
 
 ##### Gas leak safety
 
+Slug: gasLeakSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize suspected leakage of combustible fuel gas and the risk of fire or explosion; withdraw from danger, seek appropriate assistance and avoid unsafe attempts to inspect or repair the system.
+Methodological description: Recognize suspected leakage of combustible fuel gas and the risk of fire or explosion; withdraw from danger, seek appropriate assistance and avoid unsafe attempts to inspect or repair the system.
+User-friendly description: Recognize gas-leak concerns and seek safety rather than attempting repairs.
 
 ##### Safe use of heating equipment
 
+Slug: safeUseOfHeatingEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Account for ventilation, clearance, stable installation, and manufacturer instructions rather than improvised operation.
+Methodological description: Account for ventilation, clearance, stable installation, and manufacturer instructions rather than improvised operation.
+User-friendly description: Use heaters with suitable ventilation and safe clearance.
 
 ##### Carbon monoxide safety
 
+Slug: carbonMonoxideSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Understand that carbon monoxide from combustion may be invisible and odorless, recognize alarm or exposure concerns, and prioritize getting to safety and obtaining emergency evaluation rather than relying on smell.
+Methodological description: Understand that carbon monoxide from combustion may be invisible and odorless, recognize alarm or exposure concerns, and prioritize getting to safety and obtaining emergency evaluation rather than relying on smell.
+User-friendly description: Recognize why carbon monoxide can be dangerous without warning smells.
 
 #### Tools and Workplaces
+
+Slug: toolsAndWorkplaces
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Protective procedures depend on the activity, equipment, and conditions; professional work requires role-appropriate training.
+Methodological description: Protective procedures depend on the activity, equipment, and conditions; professional work requires role-appropriate training.
+User-friendly description: Learn to follow protective practices with tools and equipment.
 
 ##### Read safety signs and instructions
 
+Slug: readSafetySignsAndInstructions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret warning symbols, restricted areas, and equipment guidance in context instead of treating a label as complete protection.
+Methodological description: Interpret warning symbols, restricted areas, and equipment guidance in context instead of treating a label as complete protection.
+User-friendly description: Understand workplace warnings and the limits of safety labels.
 
 ##### Use personal protective equipment
 
+Slug: usePersonalProtectiveEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match protection to the hazard and fit, recognizing that protective equipment does not eliminate the hazard.
+Methodological description: Match protection to the hazard and fit, recognizing that protective equipment does not eliminate the hazard.
+User-friendly description: Choose protective equipment that matches a particular hazard.
 
 ##### Follow safe equipment procedures
 
+Slug: followSafeEquipmentProcedures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Respect guards, operating limits, maintenance restrictions, and stop conditions without attempting unauthorized repair.
+Methodological description: Respect guards, operating limits, maintenance restrictions, and stop conditions without attempting unauthorized repair.
+User-friendly description: Respect safety guards, stop conditions and training requirements.
 
 ### Transport, Water and Outdoor Safety
+
+Slug: transportWaterAndOutdoorSafety
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Movement outside controlled environments combines traffic rules, environmental conditions, and limited opportunities for immediate rescue. This domain addresses safe decisions rather than vehicle engineering.
+Methodological description: Movement outside controlled environments combines traffic rules, environmental conditions, and limited opportunities for immediate rescue. This domain addresses safe decisions rather than vehicle engineering.
+User-friendly description: Explore safe decisions when traveling, swimming and spending time outdoors.
 
 #### Road and Transport Safety
+
+Slug: roadAndTransportSafety
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Protection differs for pedestrians, riders, passengers, and drivers; visible signals and protective equipment do not remove every traffic risk.
+Methodological description: Protection differs for pedestrians, riders, passengers, and drivers; visible signals and protective equipment do not remove every traffic risk.
+User-friendly description: Learn how road risks differ for pedestrians, passengers and vehicle users.
 
 ##### Pedestrian road safety
 
+Slug: pedestrianRoadSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess crossings, visibility, traffic movement, signals, and distractions before entering a roadway.
+Methodological description: Assess crossings, visibility, traffic movement, signals, and distractions before entering a roadway.
+User-friendly description: Choose safer crossing points by watching traffic, signals and visibility.
 
 ##### Cycling and micromobility safety
 
+Slug: cyclingAndMicromobilitySafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use protective equipment, safe positioning, visibility, and context-appropriate road rules for bicycles and similar devices.
+Methodological description: Use protective equipment, safe positioning, visibility, and context-appropriate road rules for bicycles and similar devices.
+User-friendly description: Use appropriate protection and visibility when cycling or using micromobility.
 
 ##### Passenger safety
 
+Slug: passengerSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the role of seat belts, appropriate child restraints, safe boarding, and behavior in moving vehicles.
+Methodological description: Recognize the role of seat belts, appropriate child restraints, safe boarding, and behavior in moving vehicles.
+User-friendly description: Understand the protective purpose of seat belts and child restraints.
 
 ##### Safe driving decisions
 
+Slug: safeDrivingDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how fatigue, impairment, speed, distraction, and environmental conditions affect driving risk and the duty not to drive unsafely.
+Methodological description: Recognize how fatigue, impairment, speed, distraction, and environmental conditions affect driving risk and the duty not to drive unsafely.
+User-friendly description: Recognize why distraction, speed and impairment make driving unsafe.
 
 #### Water Safety
+
+Slug: waterSafety
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Drowning can occur quickly and silently; preventing entry into danger and using non-contact rescue options are distinct from trained water rescue.
+Methodological description: Drowning can occur quickly and silently; preventing entry into danger and using non-contact rescue options are distinct from trained water rescue.
+User-friendly description: Discover how to prevent drowning and respond without creating another casualty.
 
 ##### Assess swimming and bathing hazards
 
+Slug: assessSwimmingAndBathingHazards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess water-specific conditions such as depth, currents, temperature, supervision, safe access and local warnings before entering; this applies general hazard judgment to an environment with distinct drowning risks.
+Methodological description: Assess water-specific conditions such as depth, currents, temperature, supervision, safe access and local warnings before entering; this applies general hazard judgment to an environment with distinct drowning risks.
+User-friendly description: Evaluate currents, depth and supervision before entering water.
 
 ##### Use water-safety measures
 
+Slug: useWaterSafetyMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select appropriate flotation, supervision, and activity limitations while recognizing the limits of swimming ability.
+Methodological description: Select appropriate flotation, supervision, and activity limitations while recognizing the limits of swimming ability.
+User-friendly description: Use flotation, supervision and other appropriate swimming precautions.
 
 ##### Respond to a person in danger in water
 
+Slug: respondToAPersonInDangerInWater
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Call for help and use safe reach-or-throw assistance where appropriate without putting an untrained rescuer into the water.
+Methodological description: Call for help and use safe reach-or-throw assistance where appropriate without putting an untrained rescuer into the water.
+User-friendly description: Seek help and use safe non-entry assistance for someone in water danger.
 
 #### Weather and Nature Hazards
+
+Slug: weatherAndNatureHazards
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Outdoor risks vary with temperature, sunlight, storms, terrain, and wildlife; adaptation depends on current conditions and local alerts.
+Methodological description: Outdoor risks vary with temperature, sunlight, storms, terrain, and wildlife; adaptation depends on current conditions and local alerts.
+User-friendly description: Recognize how changing weather and terrain affect outdoor safety.
 
 ##### Prevent heat-related illness
 
+Slug: preventHeatRelatedIllness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adjust clothing, activity, shade, cooling and fluids to temperature and exertion to reduce overheating; distinguish prevention from first aid after heat illness begins.
+Methodological description: Adjust clothing, activity, shade, cooling and fluids to temperature and exertion to reduce overheating; distinguish prevention from first aid after heat illness begins.
+User-friendly description: Adjust clothing, shade, exertion and hydration to prevent overheating.
 
 ##### Protect against harmful UV exposure
 
+Slug: protectAgainstHarmfulUVExposure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose suitable shade, clothing, eye protection and sunscreen practices according to ultraviolet exposure, recognizing that sunburn and eye damage do not depend on high air temperature.
+Methodological description: Choose suitable shade, clothing, eye protection and sunscreen practices according to ultraviolet exposure, recognizing that sunburn and eye damage do not depend on high air temperature.
+User-friendly description: Protect skin and eyes from ultraviolet radiation even on cool days.
 
 ##### Prevent cold exposure injury
 
+Slug: preventColdExposureInjury
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Account for wet clothing, wind, duration, suitable insulation, and warning signs of harmful cooling.
+Methodological description: Account for wet clothing, wind, duration, suitable insulation, and warning signs of harmful cooling.
+User-friendly description: Reduce harmful cold exposure by managing wetness, wind and insulation.
 
 ##### Thunderstorm safety
 
+Slug: thunderstormSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose safer shelter and avoid exposed locations and dangerous structures when lightning threatens.
+Methodological description: Choose safer shelter and avoid exposed locations and dangerous structures when lightning threatens.
+User-friendly description: Choose safer shelter and behavior during thunderstorms.
 
 ##### Wildlife and plant safety
 
+Slug: wildlifeAndPlantSafety
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Respect distance and local guidance for bites, stings, poisonous plants, and animal encounters without attempting unnecessary contact.
+Methodological description: Respect distance and local guidance for bites, stings, poisonous plants, and animal encounters without attempting unnecessary contact.
+User-friendly description: Avoid unnecessary contact with hazardous wildlife or plants.
 
 ##### Safe navigation in unfamiliar terrain
 
+Slug: safeNavigationInUnfamiliarTerrain
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider route reliability, weather change, communications, and the limits of personal capability before and during an outing.
+Methodological description: Consider route reliability, weather change, communications, and the limits of personal capability before and during an outing.
+User-friendly description: Plan routes with weather, communication and personal limits in mind.
 
 ### Emergencies and Civil Protection
 
