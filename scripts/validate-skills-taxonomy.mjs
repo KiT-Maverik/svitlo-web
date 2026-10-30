@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /** Independent, read-only static validator of authored taxonomy TypeScript. */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
-import { resolve, join, relative, dirname, basename, isAbsolute } from 'node:path';
+import { resolve, join, relative, dirname, isAbsolute } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import ts from 'typescript';
 
@@ -188,7 +188,8 @@ export function validateTaxonomy({ repo = process.cwd(), packageRoot, source }) 
     const file = join(dir, `${slug}.data.ts`);
     const symbol = `${slug}_${kind}_Data`;
     const data = builder(file, symbol, `build${kind}Config`);
-    if (data) { counts[kind === 'Skill' ? 'skills' : kind === 'SkillGroup' ? 'groups' : 'domains']++; fields(data, file, symbol, kind); checkUuid(data.id, file, symbol); }
+    if (existsSync(file)) counts[kind === 'Skill' ? 'skills' : kind === 'SkillGroup' ? 'groups' : 'domains']++;
+    if (data) { fields(data, file, symbol, kind); checkUuid(data.id, file, symbol); }
     return { data, file, slug, symbol, dir, kind };
   }
   function matchingIds(entityObj) {
