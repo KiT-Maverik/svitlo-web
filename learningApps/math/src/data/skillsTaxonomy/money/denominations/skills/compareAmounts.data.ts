@@ -33,4 +33,5 @@ export const compareAmounts_Skill_Data = buildSkillConfig({
     pl: "Porównywanie kwot pieniędzy",
     uk: "Порівняння грошових сум",
   },
+  description: { methodological: "Compare the total face value, not the number or physical size of coins and banknotes. Values within one currency can be combined in consistent units, including fractional currency units where applicable." },
 });

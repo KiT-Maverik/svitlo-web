@@ -33,4 +33,5 @@ export const findStartOrEnd_Skill_Data = buildSkillConfig({
     pl: "Wyznaczanie czasu rozpoczęcia lub zakończenia na podstawie długości trwania",
     uk: "Знаходження часу початку або завершення за тривалістю",
   },
+  description: { methodological: "A known instant and a duration determine the other instant by adding or subtracting a time interval. Hour, day, and date rollovers must be handled without confusing clock-time notation with duration units." },
 });

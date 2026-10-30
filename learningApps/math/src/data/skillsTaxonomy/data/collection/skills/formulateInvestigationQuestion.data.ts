@@ -33,4 +33,5 @@ export const formulateInvestigationQuestion_Skill_Data = buildSkillConfig({
     pl: "Formułowanie pytania badawczego dotyczącego danych",
     uk: "Формулювання запитання для дослідження даних",
   },
+  description: { methodological: "A statistical question calls for observations or responses that may vary among members of a population. Distinguish a question requiring data collection from one whose answer follows uniquely from an already known arithmetic expression." },
 });
