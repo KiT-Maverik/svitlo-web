@@ -954,447 +954,792 @@ User-friendly description: Identify inaccurate claims without assuming a speaker
 
 ### Philosophy of Science
 
+Slug: philosophyOfScience
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 26
 
 [Not implemented](#)
 
-Scientific inquiry is examined as a way of building, testing, and revising explanations. The focus is on general methodology and evidential justification; physics, biology, psychology, and other sciences own their domain-specific investigations.
+Methodological description: Scientific inquiry is examined as a way of building, testing, and revising explanations. The focus is on general methodology and evidential justification; physics, biology, psychology, and other sciences own their domain-specific investigations.
+User-friendly description: Explore how scientific claims are tested, supported, revised and challenged.
 
 #### Questions and Hypotheses
+
+Slug: questionsAndHypotheses
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Research design starts with propositions that can be addressed using evidence. Questions, hypotheses, predictions, and observation serve different epistemic roles.
+Methodological description: Research design starts with propositions that can be addressed using evidence. Questions, hypotheses, predictions, and observation serve different epistemic roles.
+User-friendly description: Learn the difference between research questions, hypotheses, predictions and observations.
 
 ##### Formulate an empirically investigable question
 
+Slug: formulateAnEmpiricallyInvestigableQuestion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify observations or comparisons that could bear on a precise research question, while recognizing questions outside empirical testing.
+Methodological description: Identify observations or comparisons that could bear on a precise research question, while recognizing questions outside empirical testing.
+User-friendly description: Ask a question that can be investigated through relevant evidence.
 
 ##### Formulate a testable hypothesis
 
+Slug: formulateATestableHypothesis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State a possible answer whose empirical implications can be investigated rather than relying on an unfalsifiable restatement.
+Methodological description: State a possible answer whose empirical implications can be investigated rather than relying on an unfalsifiable restatement.
+User-friendly description: Propose an explanation that could be tested against observations.
 
 ##### Derive a prediction from a hypothesis
 
+Slug: deriveAPredictionFromAHypothesis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain what should be observed under specified conditions if a proposed explanation is correct.
+Methodological description: Explain what should be observed under specified conditions if a proposed explanation is correct.
+User-friendly description: Predict what should happen if a hypothesis is correct under stated conditions.
 
 ##### Distinguish observation from interpretation
 
+Slug: distinguishObservationFromInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate a recorded outcome from the theory-dependent explanation assigned to that outcome.
+Methodological description: Separate a recorded outcome from the theory-dependent explanation assigned to that outcome.
+User-friendly description: Separate what was recorded from how someone explains it.
 
 ##### Compare observational and experimental research
 
+Slug: compareObservationalAndExperimentalResearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish observing variation as it occurs from deliberately manipulating an explanatory factor.
+Methodological description: Distinguish observing variation as it occurs from deliberately manipulating an explanatory factor.
+User-friendly description: Distinguish watching natural variation from deliberately changing a factor.
 
 #### Experimental Design
+
+Slug: experimentalDesign
+Action: create
+Status: pending
 
 Skills: 9
 
 [Not implemented](#)
 
-Controlled investigations attempt to isolate explanatory factors while managing confounding, expectations, and ethical constraints. Particular safeguards solve different problems and are not interchangeable.
+Methodological description: Controlled investigations attempt to isolate explanatory factors while managing confounding, expectations, and ethical constraints. Particular safeguards solve different problems and are not interchangeable.
+User-friendly description: Discover how research designs can make comparisons more trustworthy.
 
 ##### Identify an independent variable
 
+Slug: identifyAnIndependentVariable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the hypothesized influence, manipulated factor, or explanatory predictor in a specified study, including designs where the researcher observes rather than sets its value.
+Methodological description: Recognize the hypothesized influence, manipulated factor, or explanatory predictor in a specified study, including designs where the researcher observes rather than sets its value.
+User-friendly description: Identify the factor proposed to influence an outcome in a study.
 
 ##### Identify a dependent variable
 
+Slug: identifyADependentVariable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the measured response or outcome whose variation an investigation attempts to account for, distinguishing outcome measurement from factors that may influence it.
+Methodological description: Recognize the measured response or outcome whose variation an investigation attempts to account for, distinguishing outcome measurement from factors that may influence it.
+User-friendly description: Recognize what a study measures as its outcome.
 
 
 ##### Control relevant experimental conditions
 
+Slug: controlRelevantExperimentalConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Hold relevant background conditions stable or account for them so comparisons are not undermined by extraneous differences.
+Methodological description: Hold relevant background conditions stable or account for them so comparisons are not undermined by extraneous differences.
+User-friendly description: Keep relevant background conditions consistent for a fair comparison.
 
 ##### Explain the purpose of a control group
 
+Slug: explainThePurposeOfAControlGroup
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the comparison condition needed to interpret an intervention's effect where a control group is appropriate.
+Methodological description: Identify the comparison condition needed to interpret an intervention's effect where a control group is appropriate.
+User-friendly description: Understand why a control group can help isolate the effect of an intervention.
 
 ##### Explain random assignment
 
+Slug: explainRandomAssignment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how allocating participants or units by chance can reduce systematic pre-existing differences between comparison groups.
+Methodological description: Show how allocating participants or units by chance can reduce systematic pre-existing differences between comparison groups.
+User-friendly description: Explain how assigning groups by chance can reduce pre-existing differences.
 
 ##### Explain single blinding
 
+Slug: explainSingleBlinding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify which party is kept unaware of assigned conditions and how that may reduce particular expectation-related effects.
+Methodological description: Identify which party is kept unaware of assigned conditions and how that may reduce particular expectation-related effects.
+User-friendly description: Understand why hiding assigned conditions from one group can limit expectations.
 
 ##### Explain double blinding
 
+Slug: explainDoubleBlinding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when both participants and interacting researchers or outcome assessors are kept unaware of allocation, and why such a design is neither always feasible nor universally required.
+Methodological description: Identify when both participants and interacting researchers or outcome assessors are kept unaware of allocation, and why such a design is neither always feasible nor universally required.
+User-friendly description: Explore how blinding both participants and researchers can reduce some biases.
 
 ##### Evaluate research ethics
 
+Slug: evaluateResearchEthics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess informed consent, voluntary participation, proportionality of risk, participant protection, and integrity of reporting in proposed research; distinguish ethical permissibility from whether a study can yield valid data.
+Methodological description: Assess informed consent, voluntary participation, proportionality of risk, participant protection, and integrity of reporting in proposed research; distinguish ethical permissibility from whether a study can yield valid data.
+User-friendly description: Consider consent, safety and truthful reporting when evaluating a proposed study.
 
 ##### Explain a placebo control
 
+Slug: explainAPlaceboControl
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a comparison intended to account for expectations or contextual effects from an active treatment or mere absence of intervention.
+Methodological description: Distinguish a comparison intended to account for expectations or contextual effects from an active treatment or mere absence of intervention.
+User-friendly description: Understand why placebo comparisons can help separate treatment and expectation effects.
 
 #### Evidence and Causal Inference
 
+Slug: evidenceAndCausalInference
+Action: create
+Status: pending
+
 Skills: 6
 
 [Not implemented](#)
 
-Observations become informative only through assumptions about measurement, variation, and alternative explanations. The quality of a causal conclusion is not identical to the size of an observed association.
+Methodological description: Observations become informative only through assumptions about measurement, variation, and alternative explanations. The quality of a causal conclusion is not identical to the size of an observed association.
+User-friendly description: Explore what evidence can and cannot establish about causal relationships.
 
 ##### Distinguish correlation from causation
 
+Slug: distinguishCorrelationFromCausation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why two variables varying together does not alone show that changing one produces the other.
+Methodological description: Explain why two variables varying together does not alone show that changing one produces the other.
+User-friendly description: Recognize that two variables changing together need not mean one causes the other.
 
 ##### Identify a confounding factor
 
+Slug: identifyAConfoundingFactor
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Find a plausible third variable or selection process capable of producing an apparent relationship.
+Methodological description: Find a plausible third variable or selection process capable of producing an apparent relationship.
+User-friendly description: Find a third factor that could explain an apparent relationship.
 
 ##### Assess sample representativeness
 
+Slug: assessSampleRepresentativeness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether selection and coverage allow findings to extend to the population named in a conclusion.
+Methodological description: Examine whether selection and coverage allow findings to extend to the population named in a conclusion.
+User-friendly description: Decide whether a study's selected participants represent the wider population.
 
 ##### Evaluate sampling uncertainty
 
+Slug: evaluateSamplingUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how sample size, observed variation, and sampling processes affect the precision of an estimate, distinguishing imprecision from whether the sample represents its target population.
+Methodological description: Assess how sample size, observed variation, and sampling processes affect the precision of an estimate, distinguishing imprecision from whether the sample represents its target population.
+User-friendly description: Explore how sampling choices and variation affect an estimate's precision.
 
 ##### Assess measurement validity
 
+Slug: assessMeasurementValidity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether an operational measure genuinely captures the construct a researcher claims to study.
+Methodological description: Determine whether an operational measure genuinely captures the construct a researcher claims to study.
+User-friendly description: Check whether a measurement actually measures what it claims to measure.
 
 ##### Evaluate a causal conclusion from a study
 
+Slug: evaluateACausalConclusionFromAStudy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Judge how design, alternative explanations, limitations, and observed evidence jointly support or weaken a causal claim.
+Methodological description: Judge how design, alternative explanations, limitations, and observed evidence jointly support or weaken a causal claim.
+User-friendly description: Evaluate causal claims by examining design, evidence and possible alternatives.
 
 #### Theories and Scientific Practice
+
+Slug: theoriesAndScientificPractice
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Scientific conclusions are provisional but not arbitrary: shared procedures, criticism, reproducibility, and explanatory success distinguish responsible inquiry from mere assertion.
+Methodological description: Scientific conclusions are provisional but not arbitrary: shared procedures, criticism, reproducibility, and explanatory success distinguish responsible inquiry from mere assertion.
+User-friendly description: Discover how scientific theories improve through criticism and new evidence.
 
 ##### Distinguish a scientific theory from a hypothesis
 
+Slug: distinguishAScientificTheoryFromAHypothesis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a theory as a broad explanatory framework supported and refined through inquiry, not merely an untested guess.
+Methodological description: Recognize a theory as a broad explanatory framework supported and refined through inquiry, not merely an untested guess.
+User-friendly description: Distinguish a broad tested scientific theory from an individual hypothesis.
 
 ##### Evaluate the falsifiability of a claim
 
+Slug: evaluateTheFalsifiabilityOfAClaim
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether plausible observations could count against a proposition without treating falsifiability as the sole criterion of science.
+Methodological description: Assess whether plausible observations could count against a proposition without treating falsifiability as the sole criterion of science.
+User-friendly description: Ask what observations could count against a scientific claim.
 
 ##### Explain the role of replication
 
+Slug: explainTheRoleOfReplication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show why repeating an investigation can expose chance results, context dependence, or methodological errors.
+Methodological description: Show why repeating an investigation can expose chance results, context dependence, or methodological errors.
+User-friendly description: Understand why repeating research helps check findings.
 
 ##### Evaluate scientific peer review
 
+Slug: evaluateScientificPeerReview
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish expert scrutiny of methods and interpretation from a guarantee that published claims are correct.
+Methodological description: Distinguish expert scrutiny of methods and interpretation from a guarantee that published claims are correct.
+User-friendly description: Recognize the value and limits of expert review of scientific work.
 
 ##### Identify conflicts of interest in research
 
+Slug: identifyConflictsOfInterestInResearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize relationships that may create incentives to bias design, interpretation, or publication without assuming misconduct.
+Methodological description: Recognize relationships that may create incentives to bias design, interpretation, or publication without assuming misconduct.
+User-friendly description: Notice relationships that could influence how researchers conduct or report a study.
 
 ##### Explain scientific self-correction
 
+Slug: explainScientificSelfCorrection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how independent criticism and new evidence can revise established models, without equating uncertainty with lack of knowledge.
+Methodological description: Describe how independent criticism and new evidence can revise established models, without equating uncertainty with lack of knowledge.
+User-friendly description: Explain how new evidence can lead science to revise earlier conclusions.
 
 ### Metaphysics
+
+Slug: metaphysics
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 14
 
 [Not implemented](#)
 
-Metaphysics examines the most general categories of reality, such as what exists, how things persist, and what makes events possible. Its conceptual questions differ from describing particular natural mechanisms in the sciences.
+Methodological description: Metaphysics examines the most general categories of reality, such as what exists, how things persist, and what makes events possible. Its conceptual questions differ from describing particular natural mechanisms in the sciences.
+User-friendly description: Explore philosophical questions about existence, identity, reality, time and possibility.
 
 #### Existence and Categories
 
+Slug: existenceAndCategories
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Different theories posit concrete objects, properties, events, or abstract entities; their classification determines what kinds of ontological commitments a claim makes.
+Methodological description: Different theories posit concrete objects, properties, events, or abstract entities; their classification determines what kinds of ontological commitments a claim makes.
+User-friendly description: Examine different kinds of things that philosophers consider real.
 
 ##### Distinguish concrete from abstract entities
 
+Slug: distinguishConcreteFromAbstractEntities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether a proposed entity has spatial or causal features characteristic of concrete things or is treated as abstract, such as a mathematical object.
+Methodological description: Assess whether a proposed entity has spatial or causal features characteristic of concrete things or is treated as abstract, such as a mathematical object.
+User-friendly description: Distinguish physical objects from entities such as numbers or abstract ideas.
 
 ##### Evaluate an existence claim
 
+Slug: evaluateAnExistenceClaim
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine the criteria by which something is said to exist rather than assuming that naming it settles its ontological status.
+Methodological description: Examine the criteria by which something is said to exist rather than assuming that naming it settles its ontological status.
+User-friendly description: Ask what evidence or reasoning supports saying that something exists.
 
 ##### Distinguish properties from objects
 
+Slug: distinguishPropertiesFromObjects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate a bearer from qualities attributed to it, while recognizing that some metaphysical theories analyze this distinction differently.
+Methodological description: Separate a bearer from qualities attributed to it, while recognizing that some metaphysical theories analyze this distinction differently.
+User-friendly description: Separate an object from the properties attributed to it.
 
 #### Mathematical Reality
+
+Slug: mathematicalReality
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Philosophical accounts of mathematics disagree over whether its objects exist independently, are constructs of formal language, or are positions within structures. These ontological commitments are distinct from learning to perform mathematical operations.
+Methodological description: Philosophical accounts of mathematics disagree over whether its objects exist independently, are constructs of formal language, or are positions within structures. These ontological commitments are distinct from learning to perform mathematical operations.
+User-friendly description: Explore debates about whether mathematical objects exist independently of people.
 
 ##### Evaluate mathematical Platonism
 
+Slug: evaluateMathematicalPlatonism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess the view that mathematical objects or structures exist independently of human thought and how it attempts to explain the apparent objectivity of mathematics.
+Methodological description: Assess the view that mathematical objects or structures exist independently of human thought and how it attempts to explain the apparent objectivity of mathematics.
+User-friendly description: Examine arguments that mathematical entities exist independently of human minds.
 
 ##### Evaluate mathematical nominalism
 
+Slug: evaluateMathematicalNominalism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine strategies for understanding mathematical language and successful reasoning without committing to independently existing abstract mathematical objects.
+Methodological description: Examine strategies for understanding mathematical language and successful reasoning without committing to independently existing abstract mathematical objects.
+User-friendly description: Evaluate how mathematical reasoning might work without independently existing abstract objects.
 
 ##### Analyze mathematical structuralism
 
+Slug: analyzeMathematicalStructuralism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate the claim that mathematical objects are understood through positions and relations in structures rather than through individually identifying intrinsic properties.
+Methodological description: Evaluate the claim that mathematical objects are understood through positions and relations in structures rather than through individually identifying intrinsic properties.
+User-friendly description: Explore whether mathematical objects are best understood by their relationships.
 
 #### Identity and Persistence
 
+Slug: identityAndPersistence
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Questions about sameness arise when material, properties, or relations change over time. Numerical identity is different from merely sharing characteristics.
+Methodological description: Questions about sameness arise when material, properties, or relations change over time. Numerical identity is different from merely sharing characteristics.
+User-friendly description: Ask what makes something remain the same thing through change.
 
 ##### Distinguish numerical from qualitative identity
 
+Slug: distinguishNumericalFromQualitativeIdentity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the difference between being one and the same entity and being indistinguishable in specified properties.
+Methodological description: Identify the difference between being one and the same entity and being indistinguishable in specified properties.
+User-friendly description: Distinguish being the same individual object from merely looking identical.
 
 ##### Evaluate persistence through change
 
+Slug: evaluatePersistenceThroughChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess competing criteria for when an object remains the same despite replacement, growth, or alteration.
+Methodological description: Assess competing criteria for when an object remains the same despite replacement, growth, or alteration.
+User-friendly description: Consider whether replacing parts changes the identity of an object.
 
 ##### Analyze a part–whole relation
 
+Slug: analyzeAPartWholeRelation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether a component and a composite have different identities and what changes follow from replacing parts.
+Methodological description: Examine whether a component and a composite have different identities and what changes follow from replacing parts.
+User-friendly description: Explore how an object's parts relate to the whole they compose.
 
 ##### Analyze a metaphysical paradox
 
+Slug: analyzeAMetaphysicalParadox
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify apparently plausible assumptions that generate inconsistent conclusions in a puzzle about reality.
+Methodological description: Identify apparently plausible assumptions that generate inconsistent conclusions in a puzzle about reality.
+User-friendly description: Uncover conflicting assumptions in puzzles about the nature of reality.
 
 #### Causation, Time, and Possibility
+
+Slug: causationTimeAndPossibility
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Metaphysical inquiry asks what causal dependence means and how temporal or modal claims relate beyond specific measurements.
+Methodological description: Metaphysical inquiry asks what causal dependence means and how temporal or modal claims relate beyond specific measurements.
+User-friendly description: Examine philosophical ideas about cause, time and what could have happened.
 
 ##### Distinguish causation from temporal succession
 
+Slug: distinguishCausationFromTemporalSuccession
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that one event occurring before another does not itself establish a productive or counterfactual dependence.
+Methodological description: Recognize that one event occurring before another does not itself establish a productive or counterfactual dependence.
+User-friendly description: Recognize why an earlier event is not necessarily the cause of a later one.
 
 ##### Compare philosophical accounts of time
 
+Slug: comparePhilosophicalAccountsOfTime
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain differences between views that privilege the present and views treating past, present, and future as equally real.
+Methodological description: Explain differences between views that privilege the present and views treating past, present, and future as equally real.
+User-friendly description: Compare views about whether only the present or all times are equally real.
 
 ##### Distinguish possibility from necessity
 
+Slug: distinguishPossibilityFromNecessity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify claims that could be otherwise and those held to be true in every relevant possible circumstance.
+Methodological description: Identify claims that could be otherwise and those held to be true in every relevant possible circumstance.
+User-friendly description: Distinguish something that might happen from something that must be true.
 
 ##### Evaluate a counterfactual claim
 
+Slug: evaluateACounterfactualClaim
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine what would follow if specified conditions had differed while keeping relevant background assumptions coherent.
+Methodological description: Examine what would follow if specified conditions had differed while keeping relevant background assumptions coherent.
+User-friendly description: Assess what might follow under an imagined alternative set of conditions.
 
 ### Philosophy of Religion
+
+Slug: philosophyOfReligion
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
-Reasoned inquiry into religious and nonreligious worldviews considers ultimate explanations, sources of belief, conceptions of divinity, and coexistence under pluralism. This domain evaluates arguments without prescribing worship, faith, atheism, or other personal commitments.
+Methodological description: Reasoned inquiry into religious and nonreligious worldviews considers ultimate explanations, sources of belief, conceptions of divinity, and coexistence under pluralism. This domain evaluates arguments without prescribing worship, faith, atheism, or other personal commitments.
+User-friendly description: Explore arguments about religious and nonreligious worldviews without prescribing belief.
 
 #### Faith, Reason, and Experience
+
+Slug: faithReasonAndExperience
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Different accounts of religious knowledge appeal to reasoning, testimony, revelation, or experience. Philosophical examination weighs what these sources can justify and remains distinct from taking part in a religious practice.
+Methodological description: Different accounts of religious knowledge appeal to reasoning, testimony, revelation, or experience. Philosophical examination weighs what these sources can justify and remains distinct from taking part in a religious practice.
+User-friendly description: Learn how faith, reasoning and experience are used to justify religious claims.
 
 ##### Distinguish philosophical inquiry from religious practice
 
+Slug: distinguishPhilosophicalInquiryFromReligiousPractice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate reasoning about religious claims from performing rituals, accepting revelation, or participating in a tradition.
+Methodological description: Separate reasoning about religious claims from performing rituals, accepting revelation, or participating in a tradition.
+User-friendly description: Distinguish discussing religious ideas from taking part in religious practices.
 
 ##### Compare faith and reason as sources of justification
 
+Slug: compareFaithAndReasonAsSourcesOfJustification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze philosophical accounts in which faith and reasoning conflict, complement one another, or play different roles, without assuming one universal religious position.
+Methodological description: Analyze philosophical accounts in which faith and reasoning conflict, complement one another, or play different roles, without assuming one universal religious position.
+User-friendly description: Compare views of how faith and reasoning support or challenge one another.
 
 ##### Evaluate religious experience as evidence
 
+Slug: evaluateReligiousExperienceAsEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess the possible warrant of reported transcendent experience, distinguishing the fact of having an experience from the explanation proposed for it.
+Methodological description: Assess the possible warrant of reported transcendent experience, distinguishing the fact of having an experience from the explanation proposed for it.
+User-friendly description: Explore whether a personal religious experience supports a wider claim.
 
 ##### Evaluate a reported miracle claim
 
+Slug: evaluateAReportedMiracleClaim
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Weigh testimony, background assumptions, and plausible alternative explanations when assessing an extraordinary event claim without prejudging its truth.
+Methodological description: Weigh testimony, background assumptions, and plausible alternative explanations when assessing an extraordinary event claim without prejudging its truth.
+User-friendly description: Evaluate an extraordinary event claim by weighing testimony and alternatives.
 
 #### Ultimate Reality and Divinity
+
+Slug: ultimateRealityAndDivinity
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Religious and nonreligious accounts of ultimate reality include competing conceptions of divinity and nontheistic accounts of liberation or existence. Their arguments may invoke experience, explanation, definition, or objections, without settling a worldview by stipulation.
+Methodological description: Religious and nonreligious accounts of ultimate reality include competing conceptions of divinity and nontheistic accounts of liberation or existence. Their arguments may invoke experience, explanation, definition, or objections, without settling a worldview by stipulation.
+User-friendly description: Examine arguments about ultimate explanations and different conceptions of divinity.
 
 ##### Reconstruct a philosophical argument about divinity
 
+Slug: reconstructAPhilosophicalArgumentAboutDivinity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify premises and conclusion in a theistic, atheistic, or agnostic argument without treating the position as settled by its name.
+Methodological description: Identify premises and conclusion in a theistic, atheistic, or agnostic argument without treating the position as settled by its name.
+User-friendly description: Identify the reasons offered in an argument for or against the divine.
 
 ##### Evaluate a proposed ultimate explanation
 
+Slug: evaluateAProposedUltimateExplanation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider whether an account of why anything exists explains more than it assumes and what further questions it raises.
+Methodological description: Consider whether an account of why anything exists explains more than it assumes and what further questions it raises.
+User-friendly description: Ask how much an explanation of existence explains and what it assumes.
 
 ##### Analyze a cosmological argument
 
+Slug: analyzeACosmologicalArgument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate reasoning from existence, dependence, contingency, or causation toward an ultimate explanation, including challenges to its assumptions.
+Methodological description: Evaluate reasoning from existence, dependence, contingency, or causation toward an ultimate explanation, including challenges to its assumptions.
+User-friendly description: Evaluate arguments that reason from dependence or causation to an ultimate cause.
 
 ##### Analyze an ontological argument
 
+Slug: analyzeAnOntologicalArgument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate an a priori argument that moves from a proposed concept of God or maximal greatness toward existence, examining whether its logical premises and modal assumptions warrant the conclusion.
+Methodological description: Evaluate an a priori argument that moves from a proposed concept of God or maximal greatness toward existence, examining whether its logical premises and modal assumptions warrant the conclusion.
+User-friendly description: Explore arguments that attempt to derive divine existence from a definition.
 
 ##### Analyze a design argument
 
+Slug: analyzeADesignArgument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether order or complexity supports an inference to a designer, considering the evidential relevance of natural alternatives.
+Methodological description: Examine whether order or complexity supports an inference to a designer, considering the evidential relevance of natural alternatives.
+User-friendly description: Consider whether complexity or order is evidence of intelligent design.
 
 ##### Analyze an argument from evil
 
+Slug: analyzeAnArgumentFromEvil
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how suffering and wrongdoing challenge particular accounts of divinity and assess the strengths of proposed philosophical responses.
+Methodological description: Explain how suffering and wrongdoing challenge particular accounts of divinity and assess the strengths of proposed philosophical responses.
+User-friendly description: Assess how suffering challenges particular accounts of divinity.
 
 ##### Analyze nontheistic religious accounts of reality
 
+Slug: analyzeNontheisticReligiousAccountsOfReality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how a particular nontheistic religious tradition understands reality, suffering, liberation, or ultimate truth without incorrectly treating absence of a creator deity as absence of religion.
+Methodological description: Examine how a particular nontheistic religious tradition understands reality, suffering, liberation, or ultimate truth without incorrectly treating absence of a creator deity as absence of religion.
+User-friendly description: Explore religious views that do not depend on belief in a creator deity.
 
 ##### Compare philosophical conceptions of divinity
 
+Slug: comparePhilosophicalConceptionsOfDivinity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish personal, impersonal, and plural conceptions of ultimate reality while recognizing significant diversity within traditions.
+Methodological description: Distinguish personal, impersonal, and plural conceptions of ultimate reality while recognizing significant diversity within traditions.
+User-friendly description: Compare personal, impersonal and plural understandings of ultimate reality.
 
 #### Diversity and Meaning
+
+Slug: diversityAndMeaning
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Competing outlooks on religion, nonbelief, and life purpose raise interpretive and normative problems. Dialogue must distinguish a disagreement about truth from respect for people's freedom of conscience.
+Methodological description: Competing outlooks on religion, nonbelief, and life purpose raise interpretive and normative problems. Dialogue must distinguish a disagreement about truth from respect for people's freedom of conscience.
+User-friendly description: Learn to discuss differences in religion, nonbelief and life's meaning respectfully.
 
 ##### Analyze religious pluralism as a philosophical problem
 
+Slug: analyzeReligiousPluralismAsAPhilosophicalProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare accounts of how conflicting ultimate-belief claims might be understood and evaluated while respecting freedom of conscience.
+Methodological description: Compare accounts of how conflicting ultimate-belief claims might be understood and evaluated while respecting freedom of conscience.
+User-friendly description: Explore philosophical responses to competing religious truth claims.
 
 
 ##### Analyze religious tolerance as an ethical principle
 
+Slug: analyzeReligiousToleranceAsAnEthicalPrinciple
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine justifications and limits for respecting divergent religious or nonreligious commitments, distinguishing toleration from endorsement.
+Methodological description: Examine justifications and limits for respecting divergent religious or nonreligious commitments, distinguishing toleration from endorsement.
+User-friendly description: Consider reasons and limits for respecting people with different convictions.
 
 ##### Distinguish religious skepticism from agnosticism
 
+Slug: distinguishReligiousSkepticismFromAgnosticism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate withholding belief about particular religious claims from positions on the possibility of knowing whether divine reality exists.
+Methodological description: Separate withholding belief about particular religious claims from positions on the possibility of knowing whether divine reality exists.
+User-friendly description: Distinguish doubts about religious claims from uncertainty about what can be known.
 
 ### Mind, Self, and Human Existence
 
