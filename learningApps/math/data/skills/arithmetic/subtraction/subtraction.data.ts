@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { subtractMeaning_Skill_Data, subtractZero_Skill_Data, subtractSelf_Skill_Data, crossTenSubtraction_Skill_Data, columnSubtraction_Skill_Data, regrouping_Skill_Data } from './skills';
 
 export const subtraction_SkillGroup_Data = buildSkillGroupConfig({

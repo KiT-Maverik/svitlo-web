@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { length_SkillGroup_Data } from './length/length.data';
 import { mass_SkillGroup_Data } from './mass/mass.data';
 import { capacity_SkillGroup_Data } from './capacity/capacity.data';

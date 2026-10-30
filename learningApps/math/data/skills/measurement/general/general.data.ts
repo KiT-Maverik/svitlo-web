@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { standardUnitPurpose_Skill_Data, chooseAppropriateUnit_Skill_Data, wordProblemsMeasures_Skill_Data } from './skills';
 
 export const general_SkillGroup_Data = buildSkillGroupConfig({

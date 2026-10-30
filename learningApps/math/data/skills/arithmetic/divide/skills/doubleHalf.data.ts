@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const doubleHalf_Skill_Data = buildSkillConfig({
   id: 'cfb05426-4c79-46eb-a49e-53a128a661de',
   name: {

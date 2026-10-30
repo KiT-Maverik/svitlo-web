@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const growingPattern_Skill_Data = buildSkillConfig({
   id: 'ce88fbc1-1607-42c3-8d54-e87e9d368bf6',
   name: {

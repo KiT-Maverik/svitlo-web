@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { denominations_SkillGroup_Data } from './denominations/denominations.data';
 import { transactions_SkillGroup_Data } from './transactions/transactions.data';
 

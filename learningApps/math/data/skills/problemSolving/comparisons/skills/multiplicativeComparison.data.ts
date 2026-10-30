@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const multiplicativeComparison_Skill_Data = buildSkillConfig({
   id: '1d85ddb7-6a08-4972-8458-80d86a41daeb',
   name: {

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const workRateTime_Skill_Data = buildSkillConfig({
   id: '62dbd12e-55c3-40b5-aac4-031dbaee075c',
   name: {

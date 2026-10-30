@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const associativeAddition_Skill_Data = buildSkillConfig({
   id: '4754301d-73dc-4b7f-b146-3c8f14a9a3e1',
   name: {

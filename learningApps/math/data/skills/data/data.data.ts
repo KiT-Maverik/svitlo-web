@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { collection_SkillGroup_Data } from './collection/collection.data';
 import { presentation_SkillGroup_Data } from './presentation/presentation.data';
 import { interpretation_SkillGroup_Data } from './interpretation/interpretation.data';

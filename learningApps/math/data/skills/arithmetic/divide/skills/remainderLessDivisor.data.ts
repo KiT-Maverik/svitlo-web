@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const remainderLessDivisor_Skill_Data = buildSkillConfig({
   id: '46afe67a-e62f-4789-b1e4-b19470544be5',
   name: {

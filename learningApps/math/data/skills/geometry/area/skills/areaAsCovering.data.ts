@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const areaAsCovering_Skill_Data = buildSkillConfig({
   id: '6b0d5eb1-8d6f-448d-b1db-051779916e97',
   name: {

@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { formulateInvestigationQuestion_Skill_Data, collectCounts_Skill_Data, tallyMarks_Skill_Data, fillSimpleTable_Skill_Data } from './skills';
 
 export const collection_SkillGroup_Data = buildSkillGroupConfig({

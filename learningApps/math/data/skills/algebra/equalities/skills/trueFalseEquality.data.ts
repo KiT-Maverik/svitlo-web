@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const trueFalseEquality_Skill_Data = buildSkillConfig({
   id: '7dca0048-581a-4cff-9fa4-670cb7655505',
   name: {

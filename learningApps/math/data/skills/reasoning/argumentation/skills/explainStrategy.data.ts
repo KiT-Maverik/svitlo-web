@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const explainStrategy_Skill_Data = buildSkillConfig({
   id: '195b4494-38ea-4ae0-a6c4-ab4ec583b5ee',
   name: {

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const findExtraneousData_Skill_Data = buildSkillConfig({
   id: 'e77dd73e-0505-41d6-9a38-880f63009084',
   name: {

@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { experimentVariation_Skill_Data } from './skills';
 
 export const experiments_SkillGroup_Data = buildSkillGroupConfig({

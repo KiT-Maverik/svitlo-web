@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { addition_SkillGroup_Data } from './addition/addition.data';
 import { subtraction_SkillGroup_Data } from './subtraction/subtraction.data';
 import { additionSubtraction_SkillGroup_Data } from './additionSubtraction/additionSubtraction.data';

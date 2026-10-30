@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const roundTens_Skill_Data = buildSkillConfig({
   id: '24bd13b3-6bbc-4c37-bcc3-ea9121d165d2',
   name: {

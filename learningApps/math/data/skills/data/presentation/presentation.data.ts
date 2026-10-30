@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { linePlotMeasurements_Skill_Data, readSimpleTable_Skill_Data, readPictograph_Skill_Data, buildPictograph_Skill_Data, readBarChart_Skill_Data, buildBarChart_Skill_Data, scaledChart_Skill_Data } from './skills';
 
 export const presentation_SkillGroup_Data = buildSkillGroupConfig({

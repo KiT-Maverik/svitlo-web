@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const calendarInterval_Skill_Data = buildSkillConfig({
   id: '0fc1cfb2-dd71-439f-8518-09128e47642b',
   name: {

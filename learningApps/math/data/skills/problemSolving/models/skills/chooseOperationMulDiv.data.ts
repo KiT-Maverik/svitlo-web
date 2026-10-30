@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const chooseOperationMulDiv_Skill_Data = buildSkillConfig({
   id: '8abaee79-c7a9-462f-9cd6-b9efaa9ed699',
   name: {

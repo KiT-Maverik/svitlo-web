@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { unknownAddend_Skill_Data, unknownMinuend_Skill_Data, unknownSubtrahend_Skill_Data, unknownFactor_Skill_Data, unknownDividend_Skill_Data, unknownDivisor_Skill_Data } from './skills';
 
 export const unknowns_SkillGroup_Data = buildSkillGroupConfig({

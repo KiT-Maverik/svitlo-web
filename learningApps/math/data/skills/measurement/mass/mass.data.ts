@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { centnerKilogram_Skill_Data, compareMass_Skill_Data, kilogramGram_Skill_Data, weighObject_Skill_Data } from './skills';
 
 export const mass_SkillGroup_Data = buildSkillGroupConfig({

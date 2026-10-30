@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { conditions_SkillGroup_Data } from './conditions/conditions.data';
 import { models_SkillGroup_Data } from './models/models.data';
 import { planning_SkillGroup_Data } from './planning/planning.data';

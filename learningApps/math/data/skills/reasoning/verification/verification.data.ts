@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { checkReasonableness_Skill_Data, verifyWithSecondMethod_Skill_Data } from './skills';
 
 export const verification_SkillGroup_Data = buildSkillGroupConfig({

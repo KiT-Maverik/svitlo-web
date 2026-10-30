@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const estimateQuantity_Skill_Data = buildSkillConfig({
   id: 'a4f386e6-e8f1-4497-8344-b348bcaeaaec',
   name: {

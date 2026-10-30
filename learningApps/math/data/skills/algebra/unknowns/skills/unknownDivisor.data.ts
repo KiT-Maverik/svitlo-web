@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const unknownDivisor_Skill_Data = buildSkillConfig({
   id: 'c820dfa2-a186-4d00-8a53-4b6b4993a76b',
   name: {

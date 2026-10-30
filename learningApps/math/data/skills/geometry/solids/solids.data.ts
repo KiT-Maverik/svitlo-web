@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { shapeOnSolidSurface_Skill_Data, identify3dSolids_Skill_Data, spatialSolidsAttributes_Skill_Data } from './skills';
 
 export const solids_SkillGroup_Data = buildSkillGroupConfig({

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const orderOfOperations_Skill_Data = buildSkillConfig({
   id: '87cd08bd-e276-4a36-88de-77dd23028abf',
   name: {

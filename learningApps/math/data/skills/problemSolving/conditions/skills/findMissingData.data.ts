@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const findMissingData_Skill_Data = buildSkillConfig({
   id: 'f42f6f4a-7183-4ace-862d-e25a58d9a702',
   name: {

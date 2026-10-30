@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { equalities_SkillGroup_Data } from './equalities/equalities.data';
 import { expressions_SkillGroup_Data } from './expressions/expressions.data';
 import { formalization_SkillGroup_Data } from './formalization/formalization.data';

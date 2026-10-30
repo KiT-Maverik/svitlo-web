@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { basicOrdinal_Skill_Data } from './skills';
 
 export const ordinal_SkillGroup_Data = buildSkillGroupConfig({

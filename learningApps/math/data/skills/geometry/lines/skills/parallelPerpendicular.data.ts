@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const parallelPerpendicular_Skill_Data = buildSkillConfig({
   id: '983869b9-b9aa-4053-b0fb-be6c3430cff1',
   name: {

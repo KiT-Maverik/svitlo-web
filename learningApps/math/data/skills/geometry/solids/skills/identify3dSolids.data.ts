@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const identify3dSolids_Skill_Data = buildSkillConfig({
   id: '6aed363a-9049-445d-aa9e-fa35c8018855',
   name: {

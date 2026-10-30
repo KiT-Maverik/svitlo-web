@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { equalGroups_Skill_Data, repeatedAddition_Skill_Data, arrayModel_Skill_Data, readExpression_Skill_Data, by2_Skill_Data, by3_Skill_Data, by4_Skill_Data, by5_Skill_Data, by6_Skill_Data, by7_Skill_Data, by8_Skill_Data, by9_Skill_Data, by10_Skill_Data, by0And1_Skill_Data, commutative_Skill_Data, associative_Skill_Data, distributive_Skill_Data, deriveFacts_Skill_Data, doubleTwice_Skill_Data, roundTens_Skill_Data, roundHundreds_Skill_Data, twoDigitByOne_Skill_Data, threeDigitByOne_Skill_Data, checkProduct_Skill_Data } from './skills';
 
 export const multiply_SkillGroup_Data = buildSkillGroupConfig({

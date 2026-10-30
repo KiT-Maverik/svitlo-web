@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { argumentation_SkillGroup_Data } from './argumentation/argumentation.data';
 import { verification_SkillGroup_Data } from './verification/verification.data';
 import { logic_SkillGroup_Data } from './logic/logic.data';

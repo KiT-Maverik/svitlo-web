@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { turnsQuarters_Skill_Data, translationsReflections_Skill_Data, reflectionSymmetry_Skill_Data } from './skills';
 
 export const transformations_SkillGroup_Data = buildSkillGroupConfig({

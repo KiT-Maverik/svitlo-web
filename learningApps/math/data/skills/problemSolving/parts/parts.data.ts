@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { fractionsContext_Skill_Data, partWholeAddsub_Skill_Data } from './skills';
 
 export const parts_SkillGroup_Data = buildSkillGroupConfig({

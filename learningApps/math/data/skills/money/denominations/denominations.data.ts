@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { recognizeDenominations_Skill_Data, composeAmount_Skill_Data, compareAmounts_Skill_Data } from './skills';
 
 export const denominations_SkillGroup_Data = buildSkillGroupConfig({

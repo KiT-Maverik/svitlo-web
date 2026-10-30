@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const zeroPlaceholder_Skill_Data = buildSkillConfig({
   id: 'c3711187-306a-436d-b10e-0d2ac631bfe9',
   name: {

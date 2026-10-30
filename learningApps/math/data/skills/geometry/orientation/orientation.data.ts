@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { positionWords_Skill_Data, gridMapNavigation_Skill_Data, spatialOrientationPath_Skill_Data } from './skills';
 
 export const orientation_SkillGroup_Data = buildSkillGroupConfig({

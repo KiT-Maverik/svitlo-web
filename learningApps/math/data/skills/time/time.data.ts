@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { calendar_SkillGroup_Data } from './calendar/calendar.data';
 import { clock_SkillGroup_Data } from './clock/clock.data';
 import { duration_SkillGroup_Data } from './duration/duration.data';

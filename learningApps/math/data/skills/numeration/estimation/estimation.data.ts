@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { roundToTen_Skill_Data, roundToHundred_Skill_Data, estimateQuantity_Skill_Data } from './skills';
 
 export const estimation_SkillGroup_Data = buildSkillGroupConfig({

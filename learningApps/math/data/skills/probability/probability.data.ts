@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { events_SkillGroup_Data } from './events/events.data';
 import { experiments_SkillGroup_Data } from './experiments/experiments.data';
 

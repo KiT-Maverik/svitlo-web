@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { convertHoursMinutes_Skill_Data, convertMinutesSeconds_Skill_Data, eventDuration_Skill_Data, findStartOrEnd_Skill_Data } from './skills';
 
 export const duration_SkillGroup_Data = buildSkillGroupConfig({

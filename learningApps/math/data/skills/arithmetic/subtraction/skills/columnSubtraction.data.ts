@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const columnSubtraction_Skill_Data = buildSkillConfig({
   id: '6d74f20c-3203-4bcc-bad2-f356b480c6c0',
   name: {

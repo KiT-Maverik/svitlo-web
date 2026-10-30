@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const columnAddition_Skill_Data = buildSkillConfig({
   id: '5957ed51-2e99-48b2-b86d-8f50b42af05e',
   name: {

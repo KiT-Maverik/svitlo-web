@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { representation_SkillGroup_Data } from './representation/representation.data';
 import { comparison_SkillGroup_Data } from './comparison/comparison.data';
 import { arithmetic_SkillGroup_Data } from './arithmetic/arithmetic.data';

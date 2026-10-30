@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const readHalfQuarter_Skill_Data = buildSkillConfig({
   id: '1b6415de-16f7-4e65-9f82-871d0bdb8b2d',
   name: {

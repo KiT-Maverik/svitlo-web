@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const radiusDiameter_Skill_Data = buildSkillConfig({
   id: '200f6633-8027-4330-8218-b6e4c1cc1750',
   name: {

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const priceQuantityCost_Skill_Data = buildSkillConfig({
   id: 'c5f731c1-be62-495a-8614-ba67ab9ed8a8',
   name: {

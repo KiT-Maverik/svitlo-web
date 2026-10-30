@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { sequence_SkillGroup_Data } from './sequence/sequence.data';
 import { cardinality_SkillGroup_Data } from './cardinality/cardinality.data';
 import { steps_SkillGroup_Data } from './steps/steps.data';

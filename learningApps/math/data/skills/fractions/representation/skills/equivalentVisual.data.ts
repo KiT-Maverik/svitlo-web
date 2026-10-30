@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const equivalentVisual_Skill_Data = buildSkillConfig({
   id: 'fbe8f4a0-92e8-4c98-83c0-3a0d6888bd38',
   name: {

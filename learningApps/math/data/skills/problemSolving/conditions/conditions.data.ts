@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { findExtraneousData_Skill_Data, findMissingData_Skill_Data, identifyKnownUnknown_Skill_Data } from './skills';
 
 export const conditions_SkillGroup_Data = buildSkillGroupConfig({

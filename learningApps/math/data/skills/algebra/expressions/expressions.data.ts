@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { orderOfOperations_Skill_Data, parentheses_Skill_Data, readNumericExpressions_Skill_Data, variableValue_Skill_Data } from './skills';
 
 export const expressions_SkillGroup_Data = buildSkillGroupConfig({

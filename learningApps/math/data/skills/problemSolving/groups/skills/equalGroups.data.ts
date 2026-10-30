@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const equalGroups_Skill_Data = buildSkillConfig({
   id: '30aa7d28-187b-44e7-806b-06457d3a0970',
   name: {

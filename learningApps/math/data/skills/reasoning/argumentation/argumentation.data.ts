@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { classifyAndJustify_Skill_Data, findCounterexample_Skill_Data, explainStrategy_Skill_Data, distinguishExampleRule_Skill_Data, drawConclusion_Skill_Data } from './skills';
 
 export const argumentation_SkillGroup_Data = buildSkillGroupConfig({

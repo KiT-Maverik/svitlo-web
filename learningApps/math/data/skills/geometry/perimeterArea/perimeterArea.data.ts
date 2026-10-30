@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { areaPerimeterContrast_Skill_Data, perimeterVsArea_Skill_Data } from './skills';
 
 export const perimeterArea_SkillGroup_Data = buildSkillGroupConfig({

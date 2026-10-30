@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const turnsQuarters_Skill_Data = buildSkillConfig({
   id: '578cbf11-a5f5-4ca2-ba07-6957f7c8f510',
   name: {

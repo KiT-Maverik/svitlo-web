@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { chooseOperationAddSub_Skill_Data, chooseOperationMulDiv_Skill_Data, createProblem_Skill_Data, oneStepModel_Skill_Data } from './skills';
 
 export const models_SkillGroup_Data = buildSkillGroupConfig({

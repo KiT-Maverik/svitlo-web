@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const drawSegmentCentimeters_Skill_Data = buildSkillConfig({
   id: 'b86b08f1-e24c-4d95-a98c-8d6c664ea915',
   name: {

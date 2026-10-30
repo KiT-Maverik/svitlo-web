@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { calendarInterval_Skill_Data, daySequence_Skill_Data, leapYearDays_Skill_Data, weekMonthYear_Skill_Data } from './skills';
 
 export const calendar_SkillGroup_Data = buildSkillGroupConfig({
