@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate a localized-name, read-only Markdown view from typed taxonomy source.
- * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math [--locale en]
+ * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math [--locale en] [--check | --stdout]
  *
  * Deliberately parses TypeScript source without executing textbook code.
  * Methodological descriptions are always English; optional fe text is localized.
@@ -15,12 +15,22 @@ import ts from 'typescript';
 
 function fail(message) { throw new Error(message); }
 function options(args) {
-  const result = { locale: 'en' };
-  for (let i = 0; i < args.length; i += 2) {
-    if (!['--package', '--locale'].includes(args[i]) || !args[i + 1]) fail('Usage: --package <textbook-directory> [--locale <language-code>]');
-    result[args[i] === '--package' ? 'package' : 'locale'] = args[i + 1];
+  const result = { locale: 'en', check: false, stdout: false };
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    if (arg === '--check' || arg === '--stdout') {
+      if (result[arg.slice(2)]) fail('Duplicate argument ' + arg);
+      result[arg.slice(2)] = true;
+      continue;
+    }
+    if (!['--package', '--locale'].includes(arg) || !args[i + 1] || args[i + 1].startsWith('--')) {
+      fail('Usage: --package <textbook-directory> [--locale <language-code>] [--check | --stdout]');
+    }
+    const key = arg.slice(2);
+    if (result[key] !== undefined && (key !== 'locale' || result.locale !== 'en')) fail('Duplicate argument ' + arg);
+    result[key] = args[++i];
   }
-  if (!result.package) fail('--package is required');
+  if (!result.package || (result.check && result.stdout)) fail('Provide --package and choose at most one of --check, --stdout');
   return result;
 }
 const repositoryRoot = path.resolve(import.meta.dirname, '..');
@@ -169,9 +179,11 @@ function readSkills(folder) {
   if (names.length) verifyIndex(path.join(d, 'index.ids.ts'), names.map(n => n.slice(0, -'.data.ts'.length)));
   return names.map(name => readEntity(path.join(d, name), 'Skill'));
 }
-function markdownLine(entity, level, output) {
+function markdownLine(entity, level, output, details = '') {
   const link = path.relative(path.dirname(output), entity.file).split(path.sep).join('/');
-  let text = '#'.repeat(level) + ' ' + entity.name + '\n\n[' + path.basename(entity.file) + '](' + encodeURI(link) + ')\n\n';
+  let text = '#'.repeat(level) + ' ' + entity.name + '\n\n';
+  if (details) text += details + '\n\n';
+  text += '[' + path.basename(entity.file) + '](' + encodeURI(link) + ')\n\n';
   text += '**Methodological description (English):** ' + entity.methodological + '\n\n';
   if (entity.frontend !== undefined) {
     text += '**fe description (' + opts.locale + '):** ' + entity.frontend + '\n\n';
@@ -200,18 +212,32 @@ for (const folder of subdirs(taxonomyRoot)) {
 }
 if (!domains.length) fail('No domains found');
 const out = path.join(packageRoot, 'docs/generated/skills', 'taxonomy.' + opts.locale + '.md');
+const groupCount = domains.reduce((sum, domain) => sum + domain.groups.length, 0);
+const skillCount = domains.reduce((sum, domain) =>
+  sum + domain.skills.length + domain.groups.reduce((n, group) => n + group.skills.length, 0), 0);
 let markdown = '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' + opts.locale + ')\n\n' +
-  '> Names and optional fe descriptions use the requested locale. Methodological descriptions remain canonical English, not translated.\n\n';
-let groupCount = 0, skillCount = 0;
+  '> Names and optional fe descriptions use the requested locale. Methodological descriptions remain canonical English, not translated.\n\n' +
+  '## SUMMARY\n\n' +
+  'Domains: ' + domains.length + '\n\nGroups: ' + groupCount + '\n\nSkills: ' + skillCount +
+  '\n\n## DOMAINS\n\n';
 for (const domain of domains) {
-  markdown += markdownLine(domain, 2, out);
+  const count = domain.skills.length + domain.groups.reduce((n, group) => n + group.skills.length, 0);
+  markdown += markdownLine(domain, 3, out, 'Groups: ' + domain.groups.length + ' · Skills: ' + count);
   for (const group of domain.groups) {
-    groupCount++;
-    markdown += markdownLine(group, 3, out);
-    for (const skill of group.skills) { skillCount++; markdown += markdownLine(skill, 4, out); }
+    markdown += markdownLine(group, 4, out, 'Skills: ' + group.skills.length);
+    for (const skill of group.skills) markdown += markdownLine(skill, 5, out);
   }
-  for (const skill of domain.skills) { skillCount++; markdown += markdownLine(skill, 3, out); }
+  for (const skill of domain.skills) markdown += markdownLine(skill, 4, out);
 }
-fs.mkdirSync(path.dirname(out), { recursive: true });
-fs.writeFileSync(out, markdown);
-console.log('Generated ' + path.relative(repositoryRoot, out) + ' (' + domains.length + ' Domains, ' + groupCount + ' Groups, ' + skillCount + ' Skills)');
+if (opts.stdout) {
+  process.stdout.write(markdown);
+} else if (opts.check) {
+  if (!fs.existsSync(out) || fs.readFileSync(out, 'utf8') !== markdown) {
+    fail('Generated taxonomy is missing or stale: ' + path.relative(repositoryRoot, out));
+  }
+  console.log('Verified ' + path.relative(repositoryRoot, out) + ' (' + domains.length + '/' + groupCount + '/' + skillCount + ')');
+} else {
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  if (!fs.existsSync(out) || fs.readFileSync(out, 'utf8') !== markdown) fs.writeFileSync(out, markdown);
+  console.log('Generated ' + path.relative(repositoryRoot, out) + ' (' + domains.length + ' Domains, ' + groupCount + ' Groups, ' + skillCount + ' Skills)');
+}
