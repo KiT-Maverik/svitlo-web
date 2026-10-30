@@ -3333,464 +3333,824 @@ Methodological description: Assess trade-offs between stored data volume, compac
 User-friendly description: Compare the storage saved by procedural generation with the computation it requires.
 ### Data Structures
 
+Slug: dataStructures
+Action: create
+Status: pending
+
 Groups: 8 · Skills: 34
 
 [Not implemented](#)
 
-Organization of values in sequences, stacks, queues, dictionaries, sets, trees, and graphs, including access, modification, and selection of appropriate structures. A structure is not an algorithm for processing it.
+Methodological description: Organization of values in sequences, stacks, queues, dictionaries, sets, trees, and graphs, including access, modification, and selection of appropriate structures. A structure is not an algorithm for processing it.
+User-friendly description: Learn how collections, keys, trees and networks organize data for different operations.
 
 #### Sequences
+
+Slug: sequences
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Ordered collections including arrays, lists, and linked representations. Indexing, insertion, removal, and traversal have different requirements and costs.
+Methodological description: Ordered collections including arrays, lists, and linked representations. Indexing, insertion, removal, and traversal have different requirements and costs.
+User-friendly description: Explore ordered collections and how to access, add and remove their elements.
 
 ##### Explain Array Structure
 
+Slug: explainArrayStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An array holds items at defined positions and supports index-based access; rules for length and element types depend on the language.
+Methodological description: An array holds items at defined positions and supports index-based access; rules for length and element types depend on the language.
+User-friendly description: Understand how arrays store items at positions identified by indexes.
 
 ##### Explain List Structure
 
+Slug: explainListStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A list represents an ordered collection with element operations, regardless of whether its underlying representation uses an array or linked nodes.
+Methodological description: A list represents an ordered collection with element operations, regardless of whether its underlying representation uses an array or linked nodes.
+User-friendly description: Recognize lists as ordered collections that can be represented in different ways.
 
 ##### Distinguish Arrays from Linked Lists
 
+Slug: distinguishArraysFromLinkedLists
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Indexed arrays and chains of linked nodes offer different access methods and modification costs.
+Methodological description: Indexed arrays and chains of linked nodes offer different access methods and modification costs.
+User-friendly description: Compare indexed arrays with chains of linked nodes.
 
 ##### Access a Sequence Element by Index
 
+Slug: accessASequenceElementByIndex
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Retrieve an element of an ordered collection by its position, accounting for indexing origin and valid bounds in the selected language.
+Methodological description: Retrieve an element of an ordered collection by its position, accounting for indexing origin and valid bounds in the selected language.
+User-friendly description: Retrieve a sequence item using its index without going outside valid positions.
 
 ##### Insert an Element into a Sequence
 
+Slug: insertAnElementIntoASequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Add a new item at a specified position and predict how it affects the order of other items or links between nodes.
+Methodological description: Add a new item at a specified position and predict how it affects the order of other items or links between nodes.
+User-friendly description: Insert an item at the right place in an ordered sequence.
 
 ##### Remove an Element from a Sequence
 
+Slug: removeAnElementFromASequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Delete an item at a position while preserving the proper order and accessibility of the remaining elements.
+Methodological description: Delete an item at a position while preserving the proper order and accessibility of the remaining elements.
+User-friendly description: Remove an item while preserving the remaining sequence.
 
 ##### Traverse a Sequence
 
+Slug: traverseASequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Visit a collection's elements in order from beginning to end without skipping positions or performing unnecessary repetitions.
+Methodological description: Visit a collection's elements in order from beginning to end without skipping positions or performing unnecessary repetitions.
+User-friendly description: Visit each element in a sequence in order.
 
 #### Stack
 
+Slug: stack
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-A structure using last-in, first-out (LIFO) access to its top element. Pushing, popping, and handling an empty stack are distinct operations.
+Methodological description: A structure using last-in, first-out (LIFO) access to its top element. Pushing, popping, and handling an empty stack are distinct operations.
+User-friendly description: Discover how a stack gives access to the most recently added item.
 
 ##### Explain LIFO
 
+Slug: explainLIFO
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In a stack, the most recently added element is removed first, like the top plate in a pile; this does not mean sorting by value.
+Methodological description: In a stack, the most recently added element is removed first, like the top plate in a pile; this does not mean sorting by value.
+User-friendly description: Understand why a stack returns the latest added item first.
 
 ##### Push an Element onto a Stack
 
+Slug: pushAnElementOntoAStack
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use `push` to place a new value on top without changing the order of previously added elements.
+Methodological description: Use `push` to place a new value on top without changing the order of previously added elements.
+User-friendly description: Place a new element on top of a stack.
 
 ##### Pop an Element from a Stack
 
+Slug: popAnElementFromAStack
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use `pop` to remove the top value while accounting for the special case of an empty stack.
+Methodological description: Use `pop` to remove the top value while accounting for the special case of an empty stack.
+User-friendly description: Remove the most recent element while checking whether a stack is empty.
 
 #### Queue
 
+Slug: queue
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-A structure following first-in, first-out (FIFO) order: elements join at the back and leave from the front.
+Methodological description: A structure following first-in, first-out (FIFO) order: elements join at the back and leave from the front.
+User-friendly description: Learn how a queue processes items in the order they arrived.
 
 ##### Explain FIFO
 
+Slug: explainFIFO
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In a queue, the earliest added element is served first unless separate priority rules apply.
+Methodological description: In a queue, the earliest added element is served first unless separate priority rules apply.
+User-friendly description: Explain why the earliest element in a queue leaves first.
 
 ##### Enqueue an Element
 
+Slug: enqueueAnElement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Add a value to the back without rearranging those already waiting.
+Methodological description: Add a value to the back without rearranging those already waiting.
+User-friendly description: Add a new item to the back of a queue.
 
 ##### Dequeue an Element
 
+Slug: dequeueAnElement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Remove the front element of a FIFO structure, preserving the order of the rest and handling an empty queue.
+Methodological description: Remove the front element of a FIFO structure, preserving the order of the rest and handling an empty queue.
+User-friendly description: Remove the front item from a queue without disturbing the others.
 
 #### Sets
+
+Slug: sets
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Collections of unique elements supporting membership tests, union, and intersection. Positional indexing is not an inherent property of a set.
+Methodological description: Collections of unique elements supporting membership tests, union, and intersection. Positional indexing is not an inherent property of a set.
+User-friendly description: Explore collections of unique values and operations on their membership.
 
 ##### Explain Set Structure
 
+Slug: explainSetStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A set consists of unique elements under a defined equality rule; inserting an existing value does not add another copy.
+Methodological description: A set consists of unique elements under a defined equality rule; inserting an existing value does not add another copy.
+User-friendly description: Understand why a set stores only one copy of each distinct element.
 
 ##### Test Set Membership
 
+Slug: testSetMembership
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a value belongs to a set without requiring its positional index.
+Methodological description: Determine whether a value belongs to a set without requiring its positional index.
+User-friendly description: Check whether a particular value belongs to a set.
 
 ##### Compute Set Union
 
+Slug: computeSetUnion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create the set of all values that occur in either of two sets, eliminating duplicates.
+Methodological description: Create the set of all values that occur in either of two sets, eliminating duplicates.
+User-friendly description: Combine all distinct elements found in either of two sets.
 
 ##### Compute Set Intersection
 
+Slug: computeSetIntersection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Find only values shared by two sets, distinguishing intersection from union.
+Methodological description: Find only values shared by two sets, distinguishing intersection from union.
+User-friendly description: Find only the elements shared by two sets.
 
 #### Dictionaries
+
+Slug: dictionaries
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Key-to-value mappings supporting lookup, updates, and absent-key handling. A key need not be a positional sequence index.
+Methodological description: Key-to-value mappings supporting lookup, updates, and absent-key handling. A key need not be a positional sequence index.
+User-friendly description: Discover how dictionaries connect unique keys with stored values.
 
 ##### Explain Dictionary Structure
 
+Slug: explainDictionaryStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A dictionary maps keys to values; keys need not be numeric or correspond to array positions.
+Methodological description: A dictionary maps keys to values; keys need not be numeric or correspond to array positions.
+User-friendly description: Understand how a dictionary retrieves information by key rather than position.
 
 ##### Retrieve a Dictionary Value by Key
 
+Slug: retrieveADictionaryValueByKey
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Find an entry using its key and handle the case in which the key does not exist.
+Methodological description: Find an entry using its key and handle the case in which the key does not exist.
+User-friendly description: Find a dictionary value by key and handle a missing key.
 
 ##### Update a Dictionary Value
 
+Slug: updateADictionaryValue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Replace the value associated with an existing key without accidentally duplicating the key.
+Methodological description: Replace the value associated with an existing key without accidentally duplicating the key.
+User-friendly description: Change a value stored under an existing dictionary key.
 
 #### Trees
+
+Slug: trees
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Trees organize nodes and edges into acyclic hierarchies; binary search trees also impose an ordering rule on keys.
+Methodological description: Trees organize nodes and edges into acyclic hierarchies; binary search trees also impose an ordering rule on keys.
+User-friendly description: Explore how trees organize information through parent–child connections.
 
 ##### Explain Tree Structure
 
+Slug: explainTreeStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify roots, nodes, edges, and parent–child relationships within a hierarchy; trees need not be binary.
+Methodological description: Identify roots, nodes, edges, and parent–child relationships within a hierarchy; trees need not be binary.
+User-friendly description: Recognize roots, branches, nodes and connections in a tree.
 
 ##### Distinguish Leaf and Internal Tree Nodes
 
+Slug: distinguishLeafAndInternalTreeNodes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A leaf has no children; an internal node has at least one child. The distinction follows the structure, not the node's name.
+Methodological description: A leaf has no children; an internal node has at least one child. The distinction follows the structure, not the node's name.
+User-friendly description: Distinguish nodes with children from leaf nodes without children.
 
 ##### Find a Path in a Tree
 
+Slug: findAPathInATree
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the actual sequence of connected nodes between two positions without inventing nonexistent links.
+Methodological description: Identify the actual sequence of connected nodes between two positions without inventing nonexistent links.
+User-friendly description: Follow the connected route between two nodes in a tree.
 
 ##### Explain Binary Search Trees
 
+Slug: explainBinarySearchTrees
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Keys in a binary search tree obey an ordering rule across subtrees that is not required of an arbitrary tree.
+Methodological description: Keys in a binary search tree obey an ordering rule across subtrees that is not required of an arbitrary tree.
+User-friendly description: Understand the ordering rule that makes a binary search tree searchable.
 
 #### Graphs
+
+Slug: graphs
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Graphs describe vertices and connections, including cycles, directed relationships, and numeric edge weights.
+Methodological description: Graphs describe vertices and connections, including cycles, directed relationships, and numeric edge weights.
+User-friendly description: Discover how graphs represent places, objects and their connections.
 
 ##### Explain Graph Structure
 
+Slug: explainGraphStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent a road or social network as vertices and edges without assuming every graph is a tree.
+Methodological description: Represent a road or social network as vertices and edges without assuming every graph is a tree.
+User-friendly description: Recognize graph vertices and the edges connecting them.
 
 ##### Distinguish Directed and Undirected Graphs
 
+Slug: distinguishDirectedAndUndirectedGraphs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether an edge permits travel only one way or represents a connection that can be traversed in both directions.
+Methodological description: Determine whether an edge permits travel only one way or represents a connection that can be traversed in both directions.
+User-friendly description: Tell whether connections have one-way or two-way direction.
 
 ##### Distinguish Weighted and Unweighted Graphs
 
+Slug: distinguishWeightedAndUnweightedGraphs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how numeric edge weights can represent time, distance, or cost rather than simply whether a link exists.
+Methodological description: Identify how numeric edge weights can represent time, distance, or cost rather than simply whether a link exists.
+User-friendly description: Recognize when graph connections carry numbers such as distance or cost.
 
 ##### Identify Adjacent Vertices
 
+Slug: identifyAdjacentVertices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Find vertices directly connected to a given vertex and distinguish them from vertices reached through intermediate nodes.
+Methodological description: Find vertices directly connected to a given vertex and distinguish them from vertices reached through intermediate nodes.
+User-friendly description: Identify the nodes directly connected to another node.
 
 ##### Find a Path in a Graph
 
+Slug: findAPathInAGraph
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Construct a sequence of connected vertices from start to goal while respecting edge directions.
+Methodological description: Construct a sequence of connected vertices from start to goal while respecting edge directions.
+User-friendly description: Follow a valid path between vertices while respecting connection directions.
 
 ##### Distinguish Trees from Graphs with Cycles
 
+Slug: distinguishTreesFromGraphsWithCycles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A tree has no cycles, whereas a general graph may have cycles and multiple alternative paths between vertices.
+Methodological description: A tree has no cycles, whereas a general graph may have cycles and multiple alternative paths between vertices.
+User-friendly description: Understand why graphs may contain cycles but trees do not.
 
 #### Structure Selection
+
+Slug: structureSelection
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Select data structures based on required operations and evaluate access, insertion, and storage costs. The comparison concerns data organization rather than only algorithms that process it.
+Methodological description: Select data structures based on required operations and evaluate access, insertion, and storage costs. The comparison concerns data organization rather than only algorithms that process it.
+User-friendly description: Choose data structures according to how a program needs to use its data.
 
 ##### Choose a Structure for Required Operations
 
+Slug: chooseAStructureForRequiredOperations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify whether a task needs positional indexing, uniqueness, key lookup, FIFO/LIFO order, or hierarchical relationships.
+Methodological description: Identify whether a task needs positional indexing, uniqueness, key lookup, FIFO/LIFO order, or hierarchical relationships.
+User-friendly description: Select a collection that suits indexing, membership, queues or relationships.
 
 ##### Compare Element Access Costs
 
+Slug: compareElementAccessCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare typical direct access in an indexed array with traversal through a linked list to the desired node.
+Methodological description: Compare typical direct access in an indexed array with traversal through a linked list to the desired node.
+User-friendly description: Compare how quickly arrays and linked lists reach a particular element.
 
 ##### Compare Collection Insertion Costs
 
+Slug: compareCollectionInsertionCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why an array may require moving elements while a linked list may require changing links, although the insertion point still needs to be located.
+Methodological description: Explain why an array may require moving elements while a linked list may require changing links, although the insertion point still needs to be located.
+User-friendly description: Explore why insertion can require shifting array elements or changing links.
 
 ##### Distinguish Data Structures from Algorithms
 
+Slug: distinguishDataStructuresFromAlgorithms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A data structure defines how information is organized and accessed; an algorithm specifies a sequence of operations on that information.
+Methodological description: A data structure defines how information is organized and accessed; an algorithm specifies a sequence of operations on that information.
+User-friendly description: Distinguish organizing data in a structure from processing it with an algorithm.
 ### Algorithms
+
+Slug: algorithms
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 23
 
 [Not implemented](#)
 
-Repeatable procedures for computational problems, organized by purpose: searching, sorting, collection processing, general construction, and analysis. Every named elementary algorithm has its own independent Skill; prerequisites and performance assessments may be separate skills within the same group. Concrete models can explain algorithms without imposing an age limit on the taxonomy.
+Methodological description: Repeatable procedures for computational problems, organized by purpose: searching, sorting, collection processing, general construction, and analysis. Every named elementary algorithm has its own independent Skill; prerequisites and performance assessments may be separate skills within the same group. Concrete models can explain algorithms without imposing an age limit on the taxonomy.
+User-friendly description: Explore how to design, apply and compare repeatable methods for solving problems.
 
 #### Construction
 
+Slug: construction
+Action: create
+Status: pending
+
 Skills: 6
 
 [Not implemented](#)
 
-General ways of specifying an algorithm's goal, sequence, conditions, and repetition, regardless of purpose. Distinguish describing a correct procedure from implementing it in a programming language.
+Methodological description: General ways of specifying an algorithm's goal, sequence, conditions, and repetition, regardless of purpose. Distinguish describing a correct procedure from implementing it in a programming language.
+User-friendly description: Learn to specify the actions, conditions and stopping rules of an algorithm.
 
 ##### Define an Algorithm's Goal
 
+Slug: defineAnAlgorithmsGoal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify a verifiable outcome and acceptable inputs, such as finding the index of a target number in a sorted array or establishing its absence. Separate the objective from the steps of the solution.
+Methodological description: Specify a verifiable outcome and acceptable inputs, such as finding the index of a target number in a sorted array or establishing its absence. Separate the objective from the steps of the solution.
+User-friendly description: State what an algorithm must achieve and which inputs it accepts.
 
 ##### Construct a Sequential Algorithm
 
+Slug: constructASequentialAlgorithm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify a finite ordered sequence of actions in which each uses the state left by the preceding step, without branching. This is a logical solution description; coding the steps as executable instructions belongs to Programming.
+Methodological description: Specify a finite ordered sequence of actions in which each uses the state left by the preceding step, without branching. This is a logical solution description; coding the steps as executable instructions belongs to Programming.
+User-friendly description: Describe a finite series of steps performed in the correct order.
 
 ##### Design Conditional Branching
 
+Slug: designConditionalBranching
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify mutually exclusive or priority-based paths using testable conditions, including the action taken when a condition is false. For example, choose one half of a search range after comparing numbers.
+Methodological description: Specify mutually exclusive or priority-based paths using testable conditions, including the action taken when a condition is false. For example, choose one half of a search range after comparing numbers.
+User-friendly description: Plan different paths through an algorithm according to explicit conditions.
 
 ##### Design Repetition
 
+Slug: designRepetition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define the body of a repeated procedure, its continuation or termination condition, and state changes between steps. This prevents infinite loops and distinguishes repetition from copying identical instructions.
+Methodological description: Define the body of a repeated procedure, its continuation or termination condition, and state changes between steps. This prevents infinite loops and distinguishes repetition from copying identical instructions.
+User-friendly description: Design a repeated procedure with correct updates and a stopping condition.
 
 ##### Implement a Recursive Algorithm
 
+Slug: implementARecursiveAlgorithm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Independently construct a recursive solution with a valid base case and progressively smaller subproblems so calls terminate. Test boundary inputs; being able to explain existing recursion is not equivalent to designing an algorithm.
+Methodological description: Independently construct a recursive solution with a valid base case and progressively smaller subproblems so calls terminate. Test boundary inputs; being able to explain existing recursion is not equivalent to designing an algorithm.
+User-friendly description: Build a recursive algorithm with smaller subproblems and a terminating base case.
 
 ##### Compare Algorithms Against Requirements
 
+Slug: compareAlgorithmsAgainstRequirements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare correct approaches to the same problem based on constraints such as sortedness, number of checks, resources, and clarity. An algorithm with fewer steps may be unsuitable without its prerequisite.
+Methodological description: Compare correct approaches to the same problem based on constraints such as sortedness, number of checks, resources, and clarity. An algorithm with fewer steps may be unsuitable without its prerequisite.
+User-friendly description: Compare possible algorithms according to their requirements and limitations.
 
 #### Search
+
+Slug: search
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Methods of locating target items: scanning in order, halving a sorted range, or traversing an ordered tree. Each named algorithm has its own Skill, with prerequisite and comparison skills where independently meaningful.
+Methodological description: Methods of locating target items: scanning in order, halving a sorted range, or traversing an ordered tree. Each named algorithm has its own Skill, with prerequisite and comparison skills where independently meaningful.
+User-friendly description: Discover how different search methods find an item in a collection.
 
 ##### Apply Linear Search
 
+Slug: applyLinearSearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Inspect items one by one until the target is found or the collection ends; prior sorting is unnecessary. In the no-match case the entire collection may need checking.
+Methodological description: Inspect items one by one until the target is found or the collection ends; prior sorting is unnecessary. In the no-match case the entire collection may need checking.
+User-friendly description: Find a target by inspecting elements one after another.
 
 ##### Apply Binary Search
 
+Slug: applyBinarySearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Inspect the middle element of a sorted range, discard the half that cannot contain the target, and repeat until a match or an empty range.
+Methodological description: Inspect the middle element of a sorted range, discard the half that cannot contain the target, and repeat until a match or an empty range.
+User-friendly description: Find a value in sorted data by repeatedly discarding half the range.
 
 ##### Identify Binary Search Prerequisites
 
+Slug: identifyBinarySearchPrerequisites
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Verify that elements are sorted under a consistent criterion and support less-than/greater-than comparisons; without these properties, eliminating half the candidates may be incorrect.
+Methodological description: Verify that elements are sorted under a consistent criterion and support less-than/greater-than comparisons; without these properties, eliminating half the candidates may be incorrect.
+User-friendly description: Check whether data meets the sorting requirements for binary search.
 
 ##### Predict Search Scaling
 
+Slug: predictSearchScaling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare 100 and 1,000 possible positions: the binary search bound grows from 7 to 10 checks although the dataset is ten times larger; explain this through repeated approximate halving.
+Methodological description: Compare 100 and 1,000 possible positions: the binary search bound grows from 7 to 10 checks although the dataset is ten times larger; explain this through repeated approximate halving.
+User-friendly description: Understand why doubling a dataset adds only about one binary-search check.
 
 ##### Apply Binary Tree Search
 
+Slug: applyBinaryTreeSearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the key with the current tree node and move into the appropriate subtree until the value is found or the path ends.
+Methodological description: Compare the key with the current tree node and move into the appropriate subtree until the value is found or the path ends.
+User-friendly description: Follow the ordered branches of a binary search tree to find a key.
 
 ##### Compare Search Methods by Check Count
 
+Slug: compareSearchMethodsByCheckCount
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the number of opened positions in linear and binary search over the same dataset, distinguishing one lucky result from the algorithm's general guarantees.
+Methodological description: Compare the number of opened positions in linear and binary search over the same dataset, distinguishing one lucky result from the algorithm's general guarantees.
+User-friendly description: Compare how many checks linear and binary searches need.
 
 #### Sorting
 
+Slug: sorting
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Put elements in order according to a criterion using successive selection, insertion into a sorted prefix, or swapping adjacent items. Each method has its own independently assessable Skill.
+Methodological description: Put elements in order according to a criterion using successive selection, insertion into a sorted prefix, or swapping adjacent items. Each method has its own independently assessable Skill.
+User-friendly description: Learn how sorting methods arrange values into a chosen order.
 
 ##### Explain a Sorting Criterion
 
+Slug: explainASortingCriterion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define a key and direction such as ascending numbers or alphabetic names; all comparisons in the algorithm must follow that rule.
+Methodological description: Define a key and direction such as ascending numbers or alphabetic names; all comparisons in the algorithm must follow that rule.
+User-friendly description: Choose the value or property used to order a collection.
 
 ##### Apply Selection Sort
 
+Slug: applySelectionSort
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-On each pass, find the smallest remaining item and move it to the next position in the sorted prefix.
+Methodological description: On each pass, find the smallest remaining item and move it to the next position in the sorted prefix.
+User-friendly description: Sort items by repeatedly selecting the smallest remaining one.
 
 ##### Apply Insertion Sort
 
+Slug: applyInsertionSort
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Take the next item, find its correct place in an already sorted prefix, and shift larger values to the right.
+Methodological description: Take the next item, find its correct place in an already sorted prefix, and shift larger values to the right.
+User-friendly description: Sort by inserting each new item into an already ordered section.
 
 ##### Apply Bubble Sort
 
+Slug: applyBubbleSort
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare adjacent elements and swap out-of-order pairs, repeating passes until the entire collection is correctly sorted.
+Methodological description: Compare adjacent elements and swap out-of-order pairs, repeating passes until the entire collection is correctly sorted.
+User-friendly description: Sort by swapping neighboring values that are in the wrong order.
 
 #### Collection Processing
+
+Slug: collectionProcessing
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Step-by-step procedures that aggregate values while traversing a collection, such as counting, totaling, minimum, and maximum. Objects or cards can illustrate the operations.
+Methodological description: Step-by-step procedures that aggregate values while traversing a collection, such as counting, totaling, minimum, and maximum. Objects or cards can illustrate the operations.
+User-friendly description: Learn how to count, total and find extreme values while scanning data.
 
 ##### Apply Element Counting
 
+Slug: applyElementCounting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Traverse a collection, incrementing a counter for every item that meets the given condition.
+Methodological description: Traverse a collection, incrementing a counter for every item that meets the given condition.
+User-friendly description: Count all collection elements that meet a stated condition.
 
 ##### Apply Sum Accumulation
 
+Slug: applySumAccumulation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Traverse a numeric collection, adding each value to an accumulator initialized to zero.
+Methodological description: Traverse a numeric collection, adding each value to an accumulator initialized to zero.
+User-friendly description: Add collection values into a running total.
 
 ##### Apply Maximum Finding
 
+Slug: applyMaximumFinding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Maintain the largest value seen so far and update it when a larger number appears.
+Methodological description: Maintain the largest value seen so far and update it when a larger number appears.
+User-friendly description: Track the largest value seen while traversing a collection.
 
 ##### Apply Minimum Finding
 
+Slug: applyMinimumFinding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Maintain the smallest value seen so far and update it when a smaller number appears.
+Methodological description: Maintain the smallest value seen so far and update it when a smaller number appears.
+User-friendly description: Track the smallest value seen while traversing a collection.
 
 #### Analysis
+
+Slug: analysis
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Compare procedures using worst-case operation bounds, time growth classes, and memory costs. These are cross-cutting ways to assess algorithms, not additional algorithms themselves.
+Methodological description: Compare procedures using worst-case operation bounds, time growth classes, and memory costs. These are cross-cutting ways to assess algorithms, not additional algorithms themselves.
+User-friendly description: Explore how time and memory needs change with an algorithm's input.
 
 ##### Estimate an Algorithm's Worst Case
 
+Slug: estimateAnAlgorithmsWorstCase
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine an upper bound on checks for a given strategy and rules, without confusing it with the steps taken in one lucky execution.
+Methodological description: Determine an upper bound on checks for a given strategy and rules, without confusing it with the steps taken in one lucky execution.
+User-friendly description: Estimate the most checks an algorithm could require in its worst case.
 
 ##### Distinguish Linear and Logarithmic Growth
 
+Slug: distinguishLinearAndLogarithmicGrowth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the difference between operations that grow approximately in proportion to input size and those tied to repeated halving; formal `O(n)` and `O(log n)` notation can deepen the analysis.
+Methodological description: Explain the difference between operations that grow approximately in proportion to input size and those tied to repeated halving; formal `O(n)` and `O(log n)` notation can deepen the analysis.
+User-friendly description: Compare growth proportional to input size with growth from repeated halving.
 
 ##### Explain Time–Memory Trade-offs
 
+Slug: explainTimeMemoryTradeOffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare algorithms where fewer operations may require extra intermediate data; speed is not the only criterion for a sound choice.
+Methodological description: Compare algorithms where fewer operations may require extra intermediate data; speed is not the only criterion for a sound choice.
+User-friendly description: Understand why faster algorithms may require more temporary memory.
 ### Git and Open Source
 
 Groups: 3 · Skills: 11
