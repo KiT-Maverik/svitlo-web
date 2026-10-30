@@ -33,4 +33,5 @@ export const readExpression_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Odczytywanie wyrażeń",
     uk: "Множення — Читання виразів",
   },
+  description: { methodological: "Factors are the inputs to multiplication and the product is its result. In an equal-groups model, factors represent the group count and group size; distinguish this concrete interpretation from the symbolic expression alone." },
 });

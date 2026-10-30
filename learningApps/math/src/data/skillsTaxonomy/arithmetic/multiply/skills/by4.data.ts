@@ -33,4 +33,5 @@ export const by4_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 4",
     uk: "Множення — × 4",
   },
+  description: { methodological: "Multiplication facts with factor four correspond to four equal groups and can use doubling a doubled amount or other known multiples. A model must distinguish group count from group size." },
 });

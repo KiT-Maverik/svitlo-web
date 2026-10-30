@@ -33,4 +33,5 @@ export const by5_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 5",
     uk: "Множення — × 5",
   },
+  description: { methodological: "Products with factor five relate to successive multiples of five and equal groups. They may be found by repeated addition or decomposition into familiar facts while preserving equal group size." },
 });

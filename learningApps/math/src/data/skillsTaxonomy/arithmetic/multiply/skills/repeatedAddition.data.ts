@@ -33,4 +33,5 @@ export const repeatedAddition_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Powtarzane dodawanie",
     uk: "Множення — Повторюване додавання",
   },
+  description: { methodological: "A product of natural factors can be written as repeated addition of equal addends. Reversing this representation requires equality of the addends; an arbitrary sum is not necessarily one repeated-addition product." },
 });
