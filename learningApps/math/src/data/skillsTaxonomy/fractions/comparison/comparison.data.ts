@@ -35,4 +35,5 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Порівняння дробів",
   },
   skillIds: comparison_Skills_Ids,
+  description: { methodological: "Comparing the magnitudes of fractional parts relative to the same whole while holding either the numerator or denominator fixed." },
 });

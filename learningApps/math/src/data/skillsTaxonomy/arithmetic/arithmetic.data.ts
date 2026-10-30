@@ -35,4 +35,5 @@ export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Арифметика",
   },
   groupIds: arithmetic_SkillGroups_Ids,
+  description: { methodological: "The meanings and properties of addition, subtraction, multiplication, and division; their relationships; exact and approximate calculation methods; justifications of algorithms; and result verification. The Curriculum determines numerical ranges and degree of formalization." },
 });

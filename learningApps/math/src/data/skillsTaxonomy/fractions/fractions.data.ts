@@ -35,4 +35,5 @@ export const fractions_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Дроби",
   },
   groupIds: fractions_SkillGroups_Ids,
+  description: { methodological: "Fractions express part-to-whole relationships and positions on a number line. Their properties involve equal parts, numerator and denominator, equivalence, comparisons, and arithmetic operations; specific models and computational ranges depend on the learning context." },
 });

@@ -35,4 +35,5 @@ export const portions_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Частини величини",
   },
   skillIds: portions_Skills_Ids,
+  description: { methodological: "Moving between a whole quantity and its unit fractional part through division and the inverse operation." },
 });

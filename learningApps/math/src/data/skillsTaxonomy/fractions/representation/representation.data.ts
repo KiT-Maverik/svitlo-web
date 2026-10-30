@@ -35,4 +35,5 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Представлення дробів",
   },
   skillIds: representation_Skills_Ids,
+  description: { methodological: "Fractional representation relative to a specified whole: unit and nonunit parts, conventional fraction notation, equivalent fractions, geometric models, and values greater than one." },
 });
