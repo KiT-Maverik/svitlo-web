@@ -33,4 +33,5 @@ export const compareCategories_Skill_Data = buildSkillConfig({
     pl: "Porównywanie sum i różnic między kategoriami",
     uk: "Порівняння сум і різниць кількостей категорій",
   },
+  description: { methodological: "Arithmetic on frequencies of different categories requires comparable units and a shared observation context. Their sum gives a combined count; their difference gives the numerical gap between categories." },
 });

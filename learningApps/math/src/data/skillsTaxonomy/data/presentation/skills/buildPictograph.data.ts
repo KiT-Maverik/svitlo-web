@@ -33,4 +33,5 @@ export const buildPictograph_Skill_Data = buildSkillConfig({
     pl: "Tworzenie piktogramu",
     uk: "Побудова піктограми",
   },
+  description: { methodological: "A pictograph must faithfully represent frequencies for labeled categories using an agreed key. Identical symbols must encode identical counts, and visual decoration must not distort relationships between values." },
 });

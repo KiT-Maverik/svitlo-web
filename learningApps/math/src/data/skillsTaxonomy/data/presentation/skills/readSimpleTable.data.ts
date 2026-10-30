@@ -33,4 +33,5 @@ export const readSimpleTable_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie prostej tabeli danych",
     uk: "Читання простої таблиці даних",
   },
+  description: { methodological: "Interpreting a table requires locating the relevant row, column, heading, and unit and relating them to the question. A bare number without its category or variable is not a complete interpretation." },
 });

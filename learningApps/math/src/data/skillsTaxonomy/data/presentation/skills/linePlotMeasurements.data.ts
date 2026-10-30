@@ -33,4 +33,5 @@ export const linePlotMeasurements_Skill_Data = buildSkillConfig({
     pl: "Zaznaczanie pomiarów na osi liczbowej",
     uk: "Позначення вимірювань на числовій осі",
   },
+  description: { methodological: "A measurement line plot places observations on a common numerical axis; multiple marks at the same value represent repeated observations. The axis scale and correspondence between marks and frequencies must be explicit." },
 });
