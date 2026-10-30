@@ -160,6 +160,176 @@ Follow [Skill entity ownership](../../docs/entities/skill.md): a textbook's taxo
 - An approved slug stays stable across a display-name or translation change. It is **not** a UUID, localized display name or new runtime config field. Do not silently rename an existing Code file/ID to match a new slug; surface discrepancies and get editorial approval.
 - Existing slugless taxonomies are **legacy** and require separately reviewed migration; do not claim that they follow the current template or invent slug changes for already-promoted Code entities.
 
+## EDITORIAL SLUGS — MANDATORY
+
+Every new or deliberately migrated SkillDomain, SkillGroup and Skill must have one `Slug: lowerCamelCase` field immediately below its heading. Use a meaningful English camelCase identifier matching `^[a-z][A-Za-z0-9]*# Create Skills Taxonomy Skill
+
+Read [Skill Taxonomy Workflow](./README.md) for the staged-to-code authority transition.
+
+**Mandatory first action:** Read [Methodologist Persona](../../personas/methodist.persona.md) in full. Adopt its professional judgment and role boundaries before researching, designing, or editing a taxonomy. Do not assume the persona has been loaded.
+
+**Purpose:** Create or review the **editorial staging catalog of not-yet-migrated or pending Skill taxonomy entities** for one subject: an audience-independent Skills Taxonomy organized as **SkillDomain → SkillGroup → Skill**, with a controlled **SkillDomain → Skill** alternative when there are no meaningful Groups. Author each entity's stable editorial `Slug:`, names, authoritative substantive descriptions, hierarchy, counts, and verified implementation links directly in `<PackageRoot>/docs/skills/taxonomy.md`. There is **no Create Skill Definitions stage, no per-entity Markdown Definition file, and no separate definition template**. Code implementation is a separate stage.
+
+## NON-NEGOTIABLE START CONDITIONS
+
+1. **Package root:** identify the real standalone textbook/application root, not the monorepo root. Inspect the actual repository rather than assuming an example path.
+2. **Scope:** establish the subject, intended breadth, exclusions, working language and whether the taxonomy is new or an approved revision.
+3. **Evidence:** examine credible subject references and any standards the editor explicitly requests; do not silently impose a country, age, grade, course sequence or national curriculum.
+4. **Existing state:** inspect `<PackageRoot>/docs/skills/taxonomy.md`, existing `*.data.ts` source files, repository instructions including applicable `AGENTS.md`, and any existing **`<PackageRoot>/docs/history/skill-taxonomy-review.md`**. The history explains past decisions but cannot override the canonical taxonomy. Preserve approved identities, names, descriptions and placements unless explicitly authorized to revise them.
+
+If a prerequisite is missing, report it accurately rather than inventing files or claiming unverified implementation.
+
+## ENTITY DEFINITIONS — REQUIRED READING
+
+Read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md) and [Skill](../../docs/entities/skill.md) in full. A Skill is an independently assessable competency; the taxonomy never stores grades, assessment evidence, learner progress or mastery data.
+
+## SUBJECT OWNERSHIP GATE — KNOWLEDGE, NOT TASK CONTEXT
+
+**A subject-specific Skill is defined by the disciplinary knowledge or reasoning indispensable to demonstrating the competency, not by the theme of a Lesson, the object named in a dataset, or the subject of a Question.** A generic procedure performed on subject-themed material does not automatically become a subject Skill.
+
+For every candidate Skill, **before** choosing its Domain or splitting/merging it:
+
+1. **Identify essential knowledge:** State which disciplinary concepts or mechanisms a learner must understand to execute the action correctly. If the same operation needs only generic literacy, numeracy, scientific inquiry, source evaluation, or data interpretation, flag it as cross-cutting instead of inflating the subject taxonomy.
+2. **Run a context-substitution test:** Replace the thematic objects or dataset (e.g. plant growth) with a non-biological example (e.g. room temperature). If the action and success criterion remain substantially unchanged, the subject context is incidental, and the Skill must not be claimed as Biology-specific merely by adding a biological noun.
+3. **Separate method from subject inference:** Reading a growth table or interpreting a graph trend is general data literacy; **explaining why reduced light changes plant growth by using photosynthesis** requires biological knowledge. The latter may justify a Biology Skill, but only if the competence explicitly assesses that biological mechanism rather than generic graph reading.
+4. **Assign an owner deliberately:** Record general/cross-disciplinary candidates and possible owners for editorial review. Do not automatically create them under Math, Informatics, another textbook or a new shared taxonomy without an approved cross-subject design. A subject-themed practice Question is not proof that a separate Biology-specific competency is necessary. Similar competencies in different textbooks may have independent local Skill IDs; do not force global deduplication or UUID reuse.
+5. **Re-evaluate Group/Domain coherence:** If all Skills in a Group fail the ownership test, remove that empty Group from the subject taxonomy and reconcile counts. If a broad methods Domain contains generic and disciplinary abilities, flag each boundary separately rather than silently deleting the whole Domain.
+
+### MANDATORY EDITORIAL STOP: Skill versus Question / Practice / Lesson (non-negotiable)
+
+**Lessons learned (Biology, 2026-10-29):** The prior generic rule “a Question format does not make a Skill” was **not strong enough**: an agent still authored five artificial “Biological Classification” Skills representing choosing a criterion, sorting cards, applying a key, identifying traits and explaining a grouping criterion. The editor decided those general operations belong to **Questions/Practice demonstrating existing organism-recognition Skills**, not to additional Biology Skill IDs. Two other candidates (“compare selection with genetic modification” and “predict removal of a food-chain link”) duplicated conceptual Skills already in the taxonomy. This is a **process failure**, not an instruction to ban every classification, key-use, comparison, prediction or modeling Skill.
+
+**Mandatory candidate-by-candidate check BEFORE considering an entry as a new Skill or changing an existing one:**
+
+1. **Underlying competency:** In one subject-specific sentence, state what knowledge or transferable capability the learner should acquire **regardless of how it is presented or tested**.
+2. **Replace the interaction:** Replace a sorting/matching/ordering/drag-and-drop/quiz/model/diagram/key-use task with a materially different activity. Does the *same* learning outcome remain? If yes, the original interaction is likely a **Question/Practice format**, not the Skill.
+3. **Map to existing Skills:** Identify the precise canonical Skill(s) whose knowledge this task would already verify. A Question may reference one or several; a task needing two Skills does **not** create a third “compare/use both” Skill by default.
+4. **Independence and transfer:** Explain what would remain independently useful to assess or track if that Question type and its particular examples disappeared. Apply both the **A-without-B test** and the **subject-ownership/context-substitution test**. Do not automatically exclude genuinely disciplinary identification, classifications, practical procedures or scientific reasoning.
+5. **Editor decision:** Classify each candidate as **(A) clearly a distinct subject Skill**, **(B) an activity/Question/Practice reusing named existing Skill(s)**, **(C) a possible cross-subject capability**, or **(D) ambiguous / overlap**. State the evidence. **Any candidate triggered below must be surfaced in a separate, explicit editor-review question, regardless of the agent's personal confidence.**
+
+**Mandatory escalation triggers:** A proposed or existing Skill names an exercise verb or format (sort, match, choose a criterion, arrange, drag, identify by a presented diagram, use a visual key, explain your answer, simulate); can be completed using previously listed Skills; is only a comparison/integration of two already separately taught concepts; duplicates a broader/narrower Skill; or might actually be a general cross-subject method disguised by subject nouns. The trigger means **review, not automatic deletion**. Some of these could still be legitimate Skills when the editor approves a demonstrated independent, knowledge-based outcome.
+
+**Required editor handoff, separate from the taxonomy:** For every triggered candidate, show (1) proposed Skill and Domain, (2) sample learner task, (3) actual underlying learning outcome and any pre-existing Skill names, (4) the **Question/Practice-only alternative** and any alternative Skill formulation, (5) independent assessment/subject-specificity evidence, and (6) an **explicit editorial question** such as “Keep a standalone Skill, or assess this through existing Skills via Questions?” Include your recommended option **as a proposal, not a decision**. Present this list to the editor **before** creating, splitting, merging, moving, renaming or removing affected Skills/Groups/IDs. Do not bury it in the end of a long taxonomy or represent a provisional assumption as approval.
+
+**STOP RULE:** If the editor has not explicitly resolved an escalated case, mark it `PENDING EDITOR DECISION`, leave existing approved taxonomy entries/IDs unchanged, and do not generate their Code, UUIDs, Questions or dependent Curriculum as if the change were approved. For a new draft taxonomy, keep candidates clearly provisional **outside the canonical approved inventory** until the editor decides. Continue reviewing unrelated, unambiguous entries if safe, but do not silently infer approval from the absence of a reply. This applies even when the agent feels certain that a candidate is “just a Question” or “obviously a Skill”.
+
+**Concrete Biology precedents (already decided, not new rules for every subject):**
+- “Group mammals and reptiles into piles” → **Question** grounded in the existing mammal/reptile recognition Skills; “choose a sorting criterion” is not independently a Biology Skill merely because the cards depict organisms.
+- “Distinguish selection from genetic modification” → **Question** relying on the two foundational concept Skills, not necessarily an extra comparison Skill.
+- “What happens when a predator disappears?” → **Question/lesson example** for “Пояснювати взаємозалежність компонентів екосистеми”, not an extra narrow Skill.
+- “Living / dead / never alive” → a **genuine unified biological classification Skill**; its three answer categories and justifications are not three more Skill IDs.
+
+### Competency vs instructional medium gate
+
+A **Skill** names what a learner can independently know, explain, determine, or do; a **Lesson**, **Question**, **diagram**, **simulation**, **graph**, **model**, or **interactive block** is a way of teaching or assessing it. The availability or use of a particular format **does not itself create a Skill**. Examine whether the intended outcome survives a change of medium: if the same biological prediction can be demonstrated from prose, a diagram, or a simulation, identify the biological reasoning instead of creating redundant "using a simulation" Skills.
+
+**Modeling is not automatically disallowed:** creating a *biologically valid causal representation* or predicting how a biological system changes can be an independently assessable subject competence when it requires disciplinary mechanisms. Generic model literacy (e.g. distinguishing a map/model from reality) may be cross-disciplinary. Apply the subject ownership and atomicity gates to individual candidates; do **not** automatically delete a whole Modeling Group because interactive models are used in Lessons. Review unresolved cases with the editor.
+
+**Group necessity and reuse:** do not create a SkillGroup purely to collect similar interaction formats. If pruning leaves a Group empty or with a single independent Skill, evaluate whether that Skill fits an existing coherent Group; remove empty Groups and revisit parent Domain names. Before inventing a Skill ID, look for an existing subject Skill that already tests the same outcome and update/move it if editorially approved. Physical instrument proficiency may be genuinely assessable in practice, but a virtual textbook Question alone cannot prove real-world proficiency; do not invent digital-only proof of mastery.
+
+**Domain/group flattening gate (editor-approved, 2026-10-28):** Prefer the three-level Domain → Group → Skill tree where the Domain contains **two or more genuinely distinct Groups**. When the Domain has no meaningful internal subdivisions, put Skills **directly** under that Domain (Domain → Skill). **A Domain with exactly one Group is undesirable and must be flagged for explicit editor approval with a substantive justification; it must not be the generator's default.** Never add fake groups named after the Domain or a generic catch-all just to fill the level. Do not mix direct and grouped Skills in a single Domain. Each Skill retains exactly one primary taxonomy parent. In direct mode, Domain metadata reports `Groups: 0 · Skills: N` and Skill headings use `#### <Skill name>` (not `#####`); their metadata remains a standalone implementation link followed by meaningful prose. Reconcile counts by entity kind, **not heading depth alone**, because `####` now represents either a Group (identified by `Skills:` metadata) or a direct Skill (identified by its standalone implementation link and no Group `Skills:` count).
+
+**Contracts/Engine status and ownership:** The `@svitlo/contracts/taxonomy` `SkillDomain_Config` type now optionally declares direct `skillIds` while keeping `groupIds` for compatibility. **The type and Domain builder validate nonempty exclusive membership and UUID syntax, but do not establish registry, renderer, loader or progress/ancestry support.** Implementation must audit those consumers and full-tree referential integrity. Do not implement a duplicate direct Skill in a Group as a workaround.
+
+**Biology precedent (2026-10-28):** «Моделювання біологічних систем» (four mixed generic modeling and biological reasoning Skills) was removed as a Group. Instead of duplicating the same outcome, the existing Ecology Skill «Моделювати взаємодію живих і неживих компонентів» became «Пояснювати взаємозалежність компонентів екосистеми», assessed through explanations of predator removal, invasive species, and cascading consequences, regardless of whether the Lesson uses a simulation. The Observation Group was also removed after its one Biology-specific candidate was moved to Biological Classification; generic observation methods and instrument-use candidates were excluded.
+
+**Concrete Biology editorial precedent (2026-10-28):** Four candidates were removed from Biology: `Інтерпретувати таблицю росту організмів`, `Розпізнавати біологічну закономірність на графіку`, `Порівнювати надійність джерел біологічної інформації`, `Виявляти біологічне твердження, не підтверджене даними`. Their primary operations (table reading, graph reading, source reliability evaluation, evidence checking) remain general when “biological” is replaced by another context. The now-empty `Біологічні дані та наукові твердження` Group was also removed. These competencies were **removed from the Biology catalog, not deleted from the educational scope or assigned new IDs elsewhere**. The Biology draft's working decision log retains the history; this rule stands independently.
+
+## TEXTBOOK-LOCAL IDENTITY
+
+Follow [Skill entity ownership](../../docs/entities/skill.md): a textbook's taxonomy and Skill IDs are **local to that textbook**. Overlapping competencies in other textbooks **are allowed** and must not trigger forced deduplication, cross-textbook ID reuse, a centralized registry, or shared analytics. Audit redundant or compound competencies **within the selected textbook** as usual; looking at other subjects for useful context is optional, not an identity requirement.
+
+## MANDATORY EDITORIAL SLUGS
+
+- Every **newly authored or explicitly migrated** SkillDomain, SkillGroup and Skill has exactly one `Slug: lowerCamelCase` field on its own physical Markdown line directly beneath the entity heading, before counts, implementation link and descriptions. Keep the heading hierarchy; do not use XML/HTML wrappers.
+- Use a concise, semantic **English** lowerCamelCase identifier matching `^[a-z][A-Za-z0-9]*# Create Skills Taxonomy Skill
+
+Read [Skill Taxonomy Workflow](./README.md) for the staged-to-code authority transition.
+
+**Mandatory first action:** Read [Methodologist Persona](../../personas/methodist.persona.md) in full. Adopt its professional judgment and role boundaries before researching, designing, or editing a taxonomy. Do not assume the persona has been loaded.
+
+**Purpose:** Create or review the **editorial staging catalog of not-yet-migrated or pending Skill taxonomy entities** for one subject: an audience-independent Skills Taxonomy organized as **SkillDomain → SkillGroup → Skill**, with a controlled **SkillDomain → Skill** alternative when there are no meaningful Groups. Author each entity's stable editorial `Slug:`, names, authoritative substantive descriptions, hierarchy, counts, and verified implementation links directly in `<PackageRoot>/docs/skills/taxonomy.md`. There is **no Create Skill Definitions stage, no per-entity Markdown Definition file, and no separate definition template**. Code implementation is a separate stage.
+
+## NON-NEGOTIABLE START CONDITIONS
+
+1. **Package root:** identify the real standalone textbook/application root, not the monorepo root. Inspect the actual repository rather than assuming an example path.
+2. **Scope:** establish the subject, intended breadth, exclusions, working language and whether the taxonomy is new or an approved revision.
+3. **Evidence:** examine credible subject references and any standards the editor explicitly requests; do not silently impose a country, age, grade, course sequence or national curriculum.
+4. **Existing state:** inspect `<PackageRoot>/docs/skills/taxonomy.md`, existing `*.data.ts` source files, repository instructions including applicable `AGENTS.md`, and any existing **`<PackageRoot>/docs/history/skill-taxonomy-review.md`**. The history explains past decisions but cannot override the canonical taxonomy. Preserve approved identities, names, descriptions and placements unless explicitly authorized to revise them.
+
+If a prerequisite is missing, report it accurately rather than inventing files or claiming unverified implementation.
+
+## ENTITY DEFINITIONS — REQUIRED READING
+
+Read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md) and [Skill](../../docs/entities/skill.md) in full. A Skill is an independently assessable competency; the taxonomy never stores grades, assessment evidence, learner progress or mastery data.
+
+## SUBJECT OWNERSHIP GATE — KNOWLEDGE, NOT TASK CONTEXT
+
+**A subject-specific Skill is defined by the disciplinary knowledge or reasoning indispensable to demonstrating the competency, not by the theme of a Lesson, the object named in a dataset, or the subject of a Question.** A generic procedure performed on subject-themed material does not automatically become a subject Skill.
+
+For every candidate Skill, **before** choosing its Domain or splitting/merging it:
+
+1. **Identify essential knowledge:** State which disciplinary concepts or mechanisms a learner must understand to execute the action correctly. If the same operation needs only generic literacy, numeracy, scientific inquiry, source evaluation, or data interpretation, flag it as cross-cutting instead of inflating the subject taxonomy.
+2. **Run a context-substitution test:** Replace the thematic objects or dataset (e.g. plant growth) with a non-biological example (e.g. room temperature). If the action and success criterion remain substantially unchanged, the subject context is incidental, and the Skill must not be claimed as Biology-specific merely by adding a biological noun.
+3. **Separate method from subject inference:** Reading a growth table or interpreting a graph trend is general data literacy; **explaining why reduced light changes plant growth by using photosynthesis** requires biological knowledge. The latter may justify a Biology Skill, but only if the competence explicitly assesses that biological mechanism rather than generic graph reading.
+4. **Assign an owner deliberately:** Record general/cross-disciplinary candidates and possible owners for editorial review. Do not automatically create them under Math, Informatics, another textbook or a new shared taxonomy without an approved cross-subject design. A subject-themed practice Question is not proof that a separate Biology-specific competency is necessary. Similar competencies in different textbooks may have independent local Skill IDs; do not force global deduplication or UUID reuse.
+5. **Re-evaluate Group/Domain coherence:** If all Skills in a Group fail the ownership test, remove that empty Group from the subject taxonomy and reconcile counts. If a broad methods Domain contains generic and disciplinary abilities, flag each boundary separately rather than silently deleting the whole Domain.
+
+### MANDATORY EDITORIAL STOP: Skill versus Question / Practice / Lesson (non-negotiable)
+
+**Lessons learned (Biology, 2026-10-29):** The prior generic rule “a Question format does not make a Skill” was **not strong enough**: an agent still authored five artificial “Biological Classification” Skills representing choosing a criterion, sorting cards, applying a key, identifying traits and explaining a grouping criterion. The editor decided those general operations belong to **Questions/Practice demonstrating existing organism-recognition Skills**, not to additional Biology Skill IDs. Two other candidates (“compare selection with genetic modification” and “predict removal of a food-chain link”) duplicated conceptual Skills already in the taxonomy. This is a **process failure**, not an instruction to ban every classification, key-use, comparison, prediction or modeling Skill.
+
+**Mandatory candidate-by-candidate check BEFORE considering an entry as a new Skill or changing an existing one:**
+
+1. **Underlying competency:** In one subject-specific sentence, state what knowledge or transferable capability the learner should acquire **regardless of how it is presented or tested**.
+2. **Replace the interaction:** Replace a sorting/matching/ordering/drag-and-drop/quiz/model/diagram/key-use task with a materially different activity. Does the *same* learning outcome remain? If yes, the original interaction is likely a **Question/Practice format**, not the Skill.
+3. **Map to existing Skills:** Identify the precise canonical Skill(s) whose knowledge this task would already verify. A Question may reference one or several; a task needing two Skills does **not** create a third “compare/use both” Skill by default.
+4. **Independence and transfer:** Explain what would remain independently useful to assess or track if that Question type and its particular examples disappeared. Apply both the **A-without-B test** and the **subject-ownership/context-substitution test**. Do not automatically exclude genuinely disciplinary identification, classifications, practical procedures or scientific reasoning.
+5. **Editor decision:** Classify each candidate as **(A) clearly a distinct subject Skill**, **(B) an activity/Question/Practice reusing named existing Skill(s)**, **(C) a possible cross-subject capability**, or **(D) ambiguous / overlap**. State the evidence. **Any candidate triggered below must be surfaced in a separate, explicit editor-review question, regardless of the agent's personal confidence.**
+
+**Mandatory escalation triggers:** A proposed or existing Skill names an exercise verb or format (sort, match, choose a criterion, arrange, drag, identify by a presented diagram, use a visual key, explain your answer, simulate); can be completed using previously listed Skills; is only a comparison/integration of two already separately taught concepts; duplicates a broader/narrower Skill; or might actually be a general cross-subject method disguised by subject nouns. The trigger means **review, not automatic deletion**. Some of these could still be legitimate Skills when the editor approves a demonstrated independent, knowledge-based outcome.
+
+**Required editor handoff, separate from the taxonomy:** For every triggered candidate, show (1) proposed Skill and Domain, (2) sample learner task, (3) actual underlying learning outcome and any pre-existing Skill names, (4) the **Question/Practice-only alternative** and any alternative Skill formulation, (5) independent assessment/subject-specificity evidence, and (6) an **explicit editorial question** such as “Keep a standalone Skill, or assess this through existing Skills via Questions?” Include your recommended option **as a proposal, not a decision**. Present this list to the editor **before** creating, splitting, merging, moving, renaming or removing affected Skills/Groups/IDs. Do not bury it in the end of a long taxonomy or represent a provisional assumption as approval.
+
+**STOP RULE:** If the editor has not explicitly resolved an escalated case, mark it `PENDING EDITOR DECISION`, leave existing approved taxonomy entries/IDs unchanged, and do not generate their Code, UUIDs, Questions or dependent Curriculum as if the change were approved. For a new draft taxonomy, keep candidates clearly provisional **outside the canonical approved inventory** until the editor decides. Continue reviewing unrelated, unambiguous entries if safe, but do not silently infer approval from the absence of a reply. This applies even when the agent feels certain that a candidate is “just a Question” or “obviously a Skill”.
+
+**Concrete Biology precedents (already decided, not new rules for every subject):**
+- “Group mammals and reptiles into piles” → **Question** grounded in the existing mammal/reptile recognition Skills; “choose a sorting criterion” is not independently a Biology Skill merely because the cards depict organisms.
+- “Distinguish selection from genetic modification” → **Question** relying on the two foundational concept Skills, not necessarily an extra comparison Skill.
+- “What happens when a predator disappears?” → **Question/lesson example** for “Пояснювати взаємозалежність компонентів екосистеми”, not an extra narrow Skill.
+- “Living / dead / never alive” → a **genuine unified biological classification Skill**; its three answer categories and justifications are not three more Skill IDs.
+
+### Competency vs instructional medium gate
+
+A **Skill** names what a learner can independently know, explain, determine, or do; a **Lesson**, **Question**, **diagram**, **simulation**, **graph**, **model**, or **interactive block** is a way of teaching or assessing it. The availability or use of a particular format **does not itself create a Skill**. Examine whether the intended outcome survives a change of medium: if the same biological prediction can be demonstrated from prose, a diagram, or a simulation, identify the biological reasoning instead of creating redundant "using a simulation" Skills.
+
+**Modeling is not automatically disallowed:** creating a *biologically valid causal representation* or predicting how a biological system changes can be an independently assessable subject competence when it requires disciplinary mechanisms. Generic model literacy (e.g. distinguishing a map/model from reality) may be cross-disciplinary. Apply the subject ownership and atomicity gates to individual candidates; do **not** automatically delete a whole Modeling Group because interactive models are used in Lessons. Review unresolved cases with the editor.
+
+**Group necessity and reuse:** do not create a SkillGroup purely to collect similar interaction formats. If pruning leaves a Group empty or with a single independent Skill, evaluate whether that Skill fits an existing coherent Group; remove empty Groups and revisit parent Domain names. Before inventing a Skill ID, look for an existing subject Skill that already tests the same outcome and update/move it if editorially approved. Physical instrument proficiency may be genuinely assessable in practice, but a virtual textbook Question alone cannot prove real-world proficiency; do not invent digital-only proof of mastery.
+
+**Domain/group flattening gate (editor-approved, 2026-10-28):** Prefer the three-level Domain → Group → Skill tree where the Domain contains **two or more genuinely distinct Groups**. When the Domain has no meaningful internal subdivisions, put Skills **directly** under that Domain (Domain → Skill). **A Domain with exactly one Group is undesirable and must be flagged for explicit editor approval with a substantive justification; it must not be the generator's default.** Never add fake groups named after the Domain or a generic catch-all just to fill the level. Do not mix direct and grouped Skills in a single Domain. Each Skill retains exactly one primary taxonomy parent. In direct mode, Domain metadata reports `Groups: 0 · Skills: N` and Skill headings use `#### <Skill name>` (not `#####`); their metadata remains a standalone implementation link followed by meaningful prose. Reconcile counts by entity kind, **not heading depth alone**, because `####` now represents either a Group (identified by `Skills:` metadata) or a direct Skill (identified by its standalone implementation link and no Group `Skills:` count).
+
+**Contracts/Engine status and ownership:** The `@svitlo/contracts/taxonomy` `SkillDomain_Config` type now optionally declares direct `skillIds` while keeping `groupIds` for compatibility. **The type and Domain builder validate nonempty exclusive membership and UUID syntax, but do not establish registry, renderer, loader or progress/ancestry support.** Implementation must audit those consumers and full-tree referential integrity. Do not implement a duplicate direct Skill in a Group as a workaround.
+
+**Biology precedent (2026-10-28):** «Моделювання біологічних систем» (four mixed generic modeling and biological reasoning Skills) was removed as a Group. Instead of duplicating the same outcome, the existing Ecology Skill «Моделювати взаємодію живих і неживих компонентів» became «Пояснювати взаємозалежність компонентів екосистеми», assessed through explanations of predator removal, invasive species, and cascading consequences, regardless of whether the Lesson uses a simulation. The Observation Group was also removed after its one Biology-specific candidate was moved to Biological Classification; generic observation methods and instrument-use candidates were excluded.
+
+**Concrete Biology editorial precedent (2026-10-28):** Four candidates were removed from Biology: `Інтерпретувати таблицю росту організмів`, `Розпізнавати біологічну закономірність на графіку`, `Порівнювати надійність джерел біологічної інформації`, `Виявляти біологічне твердження, не підтверджене даними`. Their primary operations (table reading, graph reading, source reliability evaluation, evidence checking) remain general when “biological” is replaced by another context. The now-empty `Біологічні дані та наукові твердження` Group was also removed. These competencies were **removed from the Biology catalog, not deleted from the educational scope or assigned new IDs elsewhere**. The Biology draft's working decision log retains the history; this rule stands independently.
+
+## TEXTBOOK-LOCAL IDENTITY
+
+Follow [Skill entity ownership](../../docs/entities/skill.md): a textbook's taxonomy and Skill IDs are **local to that textbook**. Overlapping competencies in other textbooks **are allowed** and must not trigger forced deduplication, cross-textbook ID reuse, a centralized registry, or shared analytics. Audit redundant or compound competencies **within the selected textbook** as usual; looking at other subjects for useful context is optional, not an identity requirement.
+
+ (no spaces, hyphens, underscores or transliterated non-English words). The literal key is `Slug: ` with one space after the colon.
+- Domain slugs are unique **within their textbook**. Group slugs are unique **within their parent Domain**. Skill slugs are unique **within their parent Group**; for a Domain with directly attached Skills, they are unique **within that Domain**. The same Group or Skill slug may be reused under a different parent. Reject collisions at the correct level.
+- An approved slug stays stable across a display-name or translation change. It is **not** a UUID, localized display name or new runtime config field. Do not silently rename an existing Code file/ID to match a new slug; surface discrepancies and get editorial approval.
+- Existing slugless taxonomies are **legacy** and require separately reviewed migration; do not claim that they follow the current template or invent slug changes for already-promoted Code entities.
+
+. Keep the field on one physical Markdown line; do not use XML/HTML entity wrappers.
+
+Domain slugs are unique within the textbook; Group slugs within their parent Domain; Skill slugs within their parent Group, or among direct Skills within their Domain. The same Group or Skill slug may occur under different parents. Reject duplicates and invalid identifiers during verification.
+
+An approved slug is stable independently of the displayed name and its translations. It does not replace an entity UUID or add a new runtime config field. Preserve existing Code paths and UUIDs; any discrepancy or proposed slug change requires explicit editorial review. Legacy slugless taxonomies require deliberate migration rather than being presumed current-template compliant.
+
 ## TAXONOMY VS. CURRICULUM — NO LEARNING-DEPTH CEILING
 
 The taxonomy identifies **which distinct competencies exist** in the approved subject scope. It **does not prescribe a maximum or minimum depth of mastery**, nor mandate an age, grade, proficiency target, teaching method or implementation level. **Curriculum determines learning depth, expected outcomes, selection, prerequisites and sequence** for its audience; Lessons and Assessments implement those decisions.
@@ -250,6 +420,8 @@ Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GR
 
 Slug: %DOMAIN_SLUG%
 
+Slug: %DOMAIN_SLUG%
+
 Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
 
 [Not implemented](#)
@@ -258,6 +430,8 @@ Methodological description: %ENGLISH_DOMAIN_MEANING_AND_BOUNDARIES%
 User-friendly description: [Not authored]
 
 #### %GROUP_NAME%
+
+Slug: %GROUP_SLUG%
 
 Slug: %GROUP_SLUG%
 
@@ -272,12 +446,16 @@ User-friendly description: [Not authored]
 
 Slug: %SKILL_SLUG%
 
+Slug: %SKILL_SLUG%
+
 [Not implemented](#)
 
 Methodological description: %ENGLISH_SKILL_COMPETENCY_AND_BOUNDARIES%
 User-friendly description: [Not authored]
 
 ### %DIRECT_SKILLS_DOMAIN_NAME%
+
+Slug: %DIRECT_DOMAIN_SLUG%
 
 Slug: %DIRECT_DOMAIN_SLUG%
 
@@ -289,6 +467,8 @@ Methodological description: %ENGLISH_DIRECT_DOMAIN_MEANING%
 User-friendly description: [Not authored]
 
 #### %DIRECT_SKILL_NAME%
+
+Slug: %DIRECT_SKILL_SLUG%
 
 Slug: %DIRECT_SKILL_SLUG%
 
