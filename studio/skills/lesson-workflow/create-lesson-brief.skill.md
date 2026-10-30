@@ -8,6 +8,8 @@ Create or revise an independent **Methodologist Brief** beside the files of one 
 
 A Lesson is **autonomous and Program-neutral**. It can exist before any Curriculum, be reused in multiple Programs/Curricula, and teach one or several independently meaningful Skills. Its storage path, slug, Skills and potential Curriculum usages are separate concerns. No one-Skill-per-Lesson or one-Lesson-per-Skill quota.
 
+Read the focused [Lesson](../../docs/entities/lesson.md), [Lesson Script](../../docs/entities/lesson-script.md), [Section](../../docs/entities/section.md), and [Program](../../docs/entities/program.md) entity definitions for their distinct responsibilities.
+
 Read [Svitlo Architecture & Product Principles](../../docs/architecture/README.md), particularly [Learning Experience Philosophy](../../docs/architecture/learning-experience-philosophy.md), [Internationalization & Inclusive Access](../../docs/architecture/internationalization-and-accessibility.md), [Offline/Device Compatibility](../../docs/architecture/offline-first-and-device-compatibility.md), and [Lesson Notes](../../docs/architecture/lesson-notes.md). Follow actual textbook instructions, the canonical taxonomy, and [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md), [Skill](../../docs/entities/skill.md). The architecture expresses product intent, not proof of implemented runtime features.
 
 ## REQUIRED INPUTS AND STOP CONDITIONS
@@ -142,4 +144,4 @@ The accompanying editor-facing handoff (chat/PR, not a second mandatory file) re
 
 **Acceptance gates:** genuinely approved Skill definitions read; no invented Skills/IDs; audience and instructional intent supported; observable outcomes and prerequisites; substantive subject content and citations; no unauthorized screenplay, assessment, gamification, code or client serialization; one separate Methodologist Brief; all non-placeholder links verified; no existing Lesson directories relocated; and no approval claimed without an editor decision.
 
-**Handoff:** Once explicitly approved, the separate Brief can be consumed by [Create Nextgen Lesson](./create-nextgen-lesson.skill.md). Its existing Script path convention remains **unchanged for now**; a dedicated later update must reconcile that workflow with these directories. Never automatically launch it.
+**Handoff:** Once explicitly approved, the separate Brief becomes the pedagogical source for [Create Lesson Script](./create-lesson-script.skill.md), which creates `script.md` in the **same existing Lesson directory**. The Screenwriter may not modify the Brief or introduce Program narrative. Never launch the next workflow automatically.
