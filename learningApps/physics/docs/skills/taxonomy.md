@@ -22,497 +22,877 @@ Code files: 0/12 Domains · 0/48 Groups · 0/180 Skills
 
 ### Measurement
 
+Slug: measurement
+Action: create
+Status: pending
+
 Groups: 2 · Skills: 7
 
 [Not implemented](#)
 
-Physical measurement connects an observable property to an agreed method of comparison through the choice of quantity, unit, and instrument. Its purpose is to make descriptions of phenomena reproducible without tying them to formulas or mathematics lessons.
+Methodological description: Physical measurement connects an observable property to an agreed method of comparison through the choice of quantity, unit, and instrument. Its purpose is to make descriptions of phenomena reproducible without tying them to formulas or mathematics lessons.
+User-friendly description: Explore how physicists measure properties using quantities, units and reliable methods.
 
 #### Physical Quantities and Units
+
+Slug: physicalQuantitiesAndUnits
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-A single object can be described using different quantities; comparisons of the same quantity require compatible units and observation conditions.
+Methodological description: A single object can be described using different quantities; comparisons of the same quantity require compatible units and observation conditions.
+User-friendly description: Learn to describe physical properties with appropriate measurements and units.
 
 ##### Distinguish a physical quantity from its unit of measurement
 
+Slug: distinguishAPhysicalQuantityFromItsUnitOfMeasurement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A physical quantity describes a property of a body or phenomenon, whereas a unit establishes an agreed scale for expressing it numerically; length and centimeter serve different roles.
+Methodological description: A physical quantity describes a property of a body or phenomenon, whereas a unit establishes an agreed scale for expressing it numerically; length and centimeter serve different roles.
+User-friendly description: Distinguish the property being measured from the unit used to express it.
 
 ##### Select a unit for a familiar physical quantity
 
+Slug: selectAUnitForAFamiliarPhysicalQuantity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose appropriate units of time, length, and mass in everyday examples without confusing a physical quantity with an object.
+Methodological description: Choose appropriate units of time, length, and mass in everyday examples without confusing a physical quantity with an object.
+User-friendly description: Choose meaningful measurement units for time, mass and length.
 
 ##### Compare measurements of the same quantity
 
+Slug: compareMeasurementsOfTheSameQuantity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Given consistent units and clearly stated conditions, determine which measured value is larger or smaller; this is physical interpretation, not arithmetic practice.
+Methodological description: Given consistent units and clearly stated conditions, determine which measured value is larger or smaller; this is physical interpretation, not arithmetic practice.
+User-friendly description: Compare measurements made under consistent conditions and units.
 
 ##### Explain the physical meaning of a body's mass
 
+Slug: explainThePhysicalMeaningOfABodysMass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Mass characterizes a body's inertia: under the same applied influence, a more massive body is generally harder to change in motion. Mass must not be equated with gravitational force, which can depend on location.
+Methodological description: Mass characterizes a body's inertia: under the same applied influence, a more massive body is generally harder to change in motion. Mass must not be equated with gravitational force, which can depend on location.
+User-friendly description: Understand mass as resistance to changes in motion rather than gravitational force.
 
 #### Instruments and Measurement Methods
+
+Slug: instrumentsAndMeasurementMethods
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-An instrument's reading depends on its scale, units, and correct use; the method of obtaining data matters as much as the number itself.
+Methodological description: An instrument's reading depends on its scale, units, and correct use; the method of obtaining data matters as much as the number itself.
+User-friendly description: Discover how instruments and careful methods make physical measurements useful.
 
 ##### Read temperature from a thermometer
 
+Slug: readTemperatureFromAThermometer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the position of a pointer or liquid column to the temperature scale and units, accounting for the scale origin and measurement limits.
+Methodological description: Relate the position of a pointer or liquid column to the temperature scale and units, accounting for the scale origin and measurement limits.
+User-friendly description: Read a thermometer's scale and units to determine temperature.
 
 ##### Read a simple measuring instrument
 
+Slug: readASimpleMeasuringInstrument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Correctly relate the measured quantity to the position of a pointer on a scale, its units, and the zero reference; a reading has physical meaning only under the relevant measurement conditions.
+Methodological description: Correctly relate the measured quantity to the position of a pointer on a scale, its units, and the zero reference; a reading has physical meaning only under the relevant measurement conditions.
+User-friendly description: Read an instrument's pointer, scale, unit and zero reference correctly.
 
 ##### Explain why repeated measurements may differ
 
+Slug: explainWhyRepeatedMeasurementsMayDiffer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Repeated measurements can differ because of instrument precision limits, reading methods, or changing conditions; a difference in values does not always mean that the measured phenomenon has changed.
+Methodological description: Repeated measurements can differ because of instrument precision limits, reading methods, or changing conditions; a difference in values does not always mean that the measured phenomenon has changed.
+User-friendly description: Explain why repeated readings can differ even when measuring the same object.
 
 ### Mechanics
+
+Slug: mechanics
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 21
 
 [Not implemented](#)
 
-Mechanics describes changes in bodies' positions over time, the inertial properties of motion, and the transmission of mechanical action through simple systems. Basic explanations of types of forces and equilibrium are assigned to the neighboring Domain.
+Methodological description: Mechanics describes changes in bodies' positions over time, the inertial properties of motion, and the transmission of mechanical action through simple systems. Basic explanations of types of forces and equilibrium are assigned to the neighboring Domain.
+User-friendly description: Explore how bodies move, resist changes and transfer motion through mechanical systems.
 
 #### Describing Motion
+
+Slug: describingMotion
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Position, direction, speed, and repetition are needed for a qualitative description of a trajectory; motion is always considered relative to a chosen reference.
+Methodological description: Position, direction, speed, and repetition are needed for a qualitative description of a trajectory; motion is always considered relative to a chosen reference.
+User-friendly description: Learn to describe where things move and how motion changes with time.
 
 ##### Identify motion relative to a reference point
 
+Slug: identifyMotionRelativeToAReferencePoint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Motion is a change in a body's position relative to a reference frame over time; an object can move relative to one reference and remain stationary relative to another.
+Methodological description: Motion is a change in a body's position relative to a reference frame over time; an object can move relative to one reference and remain stationary relative to another.
+User-friendly description: Explain why an object can move relative to one reference and rest relative to another.
 
 ##### Describe the direction of motion
 
+Slug: describeTheDirectionOfMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine the direction of a body's velocity or displacement relative to a selected reference frame, distinguishing direction from the total distance traveled.
+Methodological description: Determine the direction of a body's velocity or displacement relative to a selected reference frame, distinguishing direction from the total distance traveled.
+User-friendly description: Identify the direction of motion from a chosen point of view.
 
 ##### Compare speeds of motion
 
+Slug: compareSpeedsOfMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Speed relates displacement or distance to time; comparisons account for whether the same time intervals or different periods of motion are involved.
+Methodological description: Speed relates displacement or distance to time; comparisons account for whether the same time intervals or different periods of motion are involved.
+User-friendly description: Compare how quickly objects move over specified time intervals.
 
 ##### Recognize periodic motion
 
+Slug: recognizePeriodicMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify recurring physical states and distinguish regular cycles of motion from random or one-time changes in position.
+Methodological description: Identify recurring physical states and distinguish regular cycles of motion from random or one-time changes in position.
+User-friendly description: Recognize motion that repeats in a regular cycle.
 
 #### Inertia and Changes in Motion
+
+Slug: inertiaAndChangesInMotion
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-A body may continue moving after an applied action ceases, while changes in motion are associated with interaction; accessible models do not require equations of motion.
+Methodological description: A body may continue moving after an applied action ceases, while changes in motion are associated with interaction; accessible models do not require equations of motion.
+User-friendly description: Discover inertia and how it relates to changes in motion.
 
 ##### Recognize manifestations of inertia in motion
 
+Slug: recognizeManifestationsOfInertiaInMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why an object or passenger tends to maintain its previous state of motion during an abrupt change in speed.
+Methodological description: Explain why an object or passenger tends to maintain its previous state of motion during an abrupt change in speed.
+User-friendly description: Explain why moving objects tend to keep moving when conditions suddenly change.
 
 ##### Distinguish uniform from nonuniform motion
 
+Slug: distinguishUniformFromNonuniformMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare successive positions of an object to determine whether it travels equal distances in equal time intervals.
+Methodological description: Compare successive positions of an object to determine whether it travels equal distances in equal time intervals.
+User-friendly description: Recognize constant-speed motion and motion that changes over time.
 
 #### Simple Machines
+
+Slug: simpleMachines
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Levers, pulleys, wheels, and gears demonstrate the transmission of force and rotation. The focus here is on physical principles, not selecting a design or engineering a machine.
+Methodological description: Levers, pulleys, wheels, and gears demonstrate the transmission of force and rotation. The focus here is on physical principles, not selecting a design or engineering a machine.
+User-friendly description: Understand how levers, wheels, pulleys and gears transmit motion and force.
 
 ##### Explain how a lever works
 
+Slug: explainHowALeverWorks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A lever's mechanical advantage depends on distances between the fulcrum and the points where forces are applied; gaining force involves a corresponding change in displacement.
+Methodological description: A lever's mechanical advantage depends on distances between the fulcrum and the points where forces are applied; gaining force involves a corresponding change in displacement.
+User-friendly description: Explore how a lever changes the relationship between force and distance.
 
 ##### Explain how a wheel and axle work
 
+Slug: explainHowAWheelAndAxleWork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The shared rotation of a wheel and axle transmits motion and changes the relationship between applied forces and displacements; a wheel can also change the nature of friction.
+Methodological description: The shared rotation of a wheel and axle transmits motion and changes the relationship between applied forces and displacements; a wheel can also change the nature of friction.
+User-friendly description: Understand how a wheel and axle transmit rotation and change applied forces.
 
 ##### Explain how a pulley works
 
+Slug: explainHowAPulleyWorks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A fixed pulley changes the direction of the applied force, whereas a movable pulley can reduce the force needed by distributing the load across rope segments.
+Methodological description: A fixed pulley changes the direction of the applied force, whereas a movable pulley can reduce the force needed by distributing the load across rope segments.
+User-friendly description: Compare how fixed and movable pulleys redirect or distribute a load.
 
 ##### Predict the rotation of meshed gears
 
+Slug: predictTheRotationOfMeshedGears
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A directly meshed pair of gears rotates in opposite directions, and the ratio of their angular velocities depends on the number of teeth.
+Methodological description: A directly meshed pair of gears rotates in opposite directions, and the ratio of their angular velocities depends on the number of teeth.
+User-friendly description: Predict how interlocking gears rotate and how their tooth counts affect speed.
 
 #### Newton's Laws
+
+Slug: newtonsLaws
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Newton's laws establish the relationships among forces, inertia, and changes in bodies' motion in the appropriate reference frames.
+Methodological description: Newton's laws establish the relationships among forces, inertia, and changes in bodies' motion in the appropriate reference frames.
+User-friendly description: Learn how Newton's laws connect forces with changes in motion.
 
 ##### Explain Newton's first law
 
+Slug: explainNewtonsFirstLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-When the net force is zero, a body's velocity in an inertial reference frame remains constant; rest is a special case.
+Methodological description: When the net force is zero, a body's velocity in an inertial reference frame remains constant; rest is a special case.
+User-friendly description: Explain why zero net force means constant velocity in an inertial frame.
 
 ##### Explain Newton's second law
 
+Slug: explainNewtonsSecondLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A body's acceleration is determined by the net force and its mass; under the same force, bodies of different masses change velocity differently.
+Methodological description: A body's acceleration is determined by the net force and its mass; under the same force, bodies of different masses change velocity differently.
+User-friendly description: Explore how force and mass together determine acceleration.
 
 ##### Explain Newton's third law
 
+Slug: explainNewtonsThirdLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The interaction forces between two bodies are equal in magnitude and opposite in direction but act on different bodies, so they do not cancel on a single body.
+Methodological description: The interaction forces between two bodies are equal in magnitude and opposite in direction but act on different bodies, so they do not cancel on a single body.
+User-friendly description: Recognize equal and opposite interaction forces acting on different bodies.
 
 #### Momentum and Collisions
 
+Slug: momentumAndCollisions
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Momentum characterizes a body's motion, while collisions demonstrate momentum transfer and change. In the absence of external impulse, the total momentum of a system is conserved regardless of the type of collision.
+Methodological description: Momentum characterizes a body's motion, while collisions demonstrate momentum transfer and change. In the absence of external impulse, the total momentum of a system is conserved regardless of the type of collision.
+User-friendly description: Discover how moving bodies exchange momentum during collisions.
 
 ##### Explain linear momentum
 
+Slug: explainLinearMomentum
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Momentum depends on a body's mass and velocity and has a direction; equal velocities of bodies with different masses do not imply equal momentum.
+Methodological description: Momentum depends on a body's mass and velocity and has a direction; equal velocities of bodies with different masses do not imply equal momentum.
+User-friendly description: Explain how momentum depends on mass, velocity and direction.
 
 ##### Explain impulse
 
+Slug: explainImpulse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A change in a body's momentum is related to the magnitude and duration of an applied force, which explains physical differences among braking methods.
+Methodological description: A change in a body's momentum is related to the magnitude and duration of an applied force, which explains physical differences among braking methods.
+User-friendly description: Explore how a force acting over time changes momentum.
 
 ##### Distinguish elastic from inelastic collisions
 
+Slug: distinguishElasticFromInelasticCollisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In an elastic collision, the system's kinetic energy is conserved; in an inelastic collision, some becomes internal energy and deformation. Momentum remains conserved in an isolated system.
+Methodological description: In an elastic collision, the system's kinetic energy is conserved; in an inelastic collision, some becomes internal energy and deformation. Momentum remains conserved in an isolated system.
+User-friendly description: Compare elastic and inelastic collisions without confusing energy with momentum conservation.
 
 ##### Explain conservation of linear momentum
 
+Slug: explainConservationOfLinearMomentum
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In the absence of a net external impulse, the total momentum of a system remains constant even though individual bodies change their momenta.
+Methodological description: In the absence of a net external impulse, the total momentum of a system remains constant even though individual bodies change their momenta.
+User-friendly description: Understand why total momentum remains constant without external impulse.
 
 #### Rotational Motion
+
+Slug: rotationalMotion
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Rotation involves torque, mass distribution, and inertial properties. Conservation of angular momentum describes a system's motion when there is no net external torque.
+Methodological description: Rotation involves torque, mass distribution, and inertial properties. Conservation of angular momentum describes a system's motion when there is no net external torque.
+User-friendly description: Explore how turning forces and mass distribution affect rotational motion.
 
 ##### Explain torque
 
+Slug: explainTorque
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The turning effect of a force depends on its direction and lever arm relative to the axis, not merely on the force's magnitude.
+Methodological description: The turning effect of a force depends on its direction and lever arm relative to the axis, not merely on the force's magnitude.
+User-friendly description: Explain why the same force can turn an object differently depending on its lever arm.
 
 ##### Explain rotational inertia
 
+Slug: explainRotationalInertia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The distribution of mass relative to an axis affects how rotation changes, even when the total mass is the same.
+Methodological description: The distribution of mass relative to an axis affects how rotation changes, even when the total mass is the same.
+User-friendly description: Recognize how mass farther from an axis changes resistance to rotation.
 
 ##### Distinguish rotation about an axis from motion along a circle
 
+Slug: distinguishRotationAboutAnAxisFromMotionAlongACircle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A body's rotation about its own axis differs from the motion of its center along a circular path, during which the direction of velocity changes.
+Methodological description: A body's rotation about its own axis differs from the motion of its center along a circular path, during which the direction of velocity changes.
+User-friendly description: Distinguish an object spinning on an axis from traveling along a circular path.
 
 ##### Explain conservation of angular momentum
 
+Slug: explainConservationOfAngularMomentum
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In the absence of net external torque, a system's total angular momentum is conserved.
+Methodological description: In the absence of net external torque, a system's total angular momentum is conserved.
+User-friendly description: Understand why angular momentum stays constant without net external torque.
 
 ### Forces and Interactions
+
+Slug: forcesAndInteractions
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 14
 
 [Not implemented](#)
 
-When bodies touch or affect one another at a distance, their motion, shape, or state of equilibrium may change. This Domain covers general concepts of force, contact, gravity, and stability; specifically magnetic and electric phenomena belong to Electromagnetism.
+Methodological description: When bodies touch or affect one another at a distance, their motion, shape, or state of equilibrium may change. This Domain covers general concepts of force, contact, gravity, and stability; specifically magnetic and electric phenomena belong to Electromagnetism.
+User-friendly description: Discover how forces change motion, deform objects and maintain stability.
 
 #### Contact Forces and Friction
+
+Slug: contactForcesAndFriction
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Contact can produce pushing, pulling, and friction; the direction of interaction and surface properties affect motion.
+Methodological description: Contact can produce pushing, pulling, and friction; the direction of interaction and surface properties affect motion.
+User-friendly description: Explore how pushing, pulling and friction affect contacting objects.
 
 ##### Recognize pushing forces
 
+Slug: recognizePushingForces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A contact push transfers force from the acting body in the direction of pressure on another body; not every change in motion is caused by pushing.
+Methodological description: A contact push transfers force from the acting body in the direction of pressure on another body; not every change in motion is caused by pushing.
+User-friendly description: Recognize how one body pushes another through direct contact.
 
 ##### Recognize pulling forces
 
+Slug: recognizePullingForces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Pulling is a contact interaction through a connection or grip, with force directed toward its source; it differs from pressure and pushing.
+Methodological description: Pulling is a contact interaction through a connection or grip, with force directed toward its source; it differs from pressure and pushing.
+User-friendly description: Recognize a pulling force and the connection through which it acts.
 
 ##### Predict the effect of force direction
 
+Slug: predictTheEffectOfForceDirection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The direction of the net force relative to velocity determines whether motion speeds up, slows down, or changes direction.
+Methodological description: The direction of the net force relative to velocity determines whether motion speeds up, slows down, or changes direction.
+User-friendly description: Predict how force direction affects speeding up, slowing down or turning.
 
 ##### Compare motion on different surfaces
 
+Slug: compareMotionOnDifferentSurfaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interactions between contacting surfaces affect friction and resistance to sliding or rolling, changing mechanical motion under otherwise similar conditions.
+Methodological description: Interactions between contacting surfaces affect friction and resistance to sliding or rolling, changing mechanical motion under otherwise similar conditions.
+User-friendly description: Compare motion on different surfaces by considering friction.
 
 ##### Explain the role of friction in stopping
 
+Slug: explainTheRoleOfFrictionInStopping
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Friction during sliding or rolling can reduce kinetic energy of motion, converting it into the internal energy of the bodies and surroundings.
+Methodological description: Friction during sliding or rolling can reduce kinetic energy of motion, converting it into the internal energy of the bodies and surroundings.
+User-friendly description: Explain how friction slows motion and transfers energy into the surroundings.
 
 #### Equilibrium and Stability
+
+Slug: equilibriumAndStability
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Balanced forces allow a body to remain at rest, while the arrangement of supports and loads affects a model's stability and deformation.
+Methodological description: Balanced forces allow a body to remain at rest, while the arrangement of supports and loads affects a model's stability and deformation.
+User-friendly description: Understand the forces that keep structures balanced and stable.
 
 ##### Recognize balanced forces
 
+Slug: recognizeBalancedForces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-When the net force is zero, there is no acceleration; a body may be at rest or continue moving uniformly in a straight line.
+Methodological description: When the net force is zero, there is no acceleration; a body may be at rest or continue moving uniformly in a straight line.
+User-friendly description: Recognize that balanced forces cause no acceleration, even in a moving object.
 
 ##### Identify structural support elements
 
+Slug: identifyStructuralSupportElements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the elements supporting a model bridge or building.
+Methodological description: Identify the elements supporting a model bridge or building.
+User-friendly description: Identify the parts that support the weight of a model structure.
 
 ##### Predict structural stability
 
+Slug: predictStructuralStability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the stability of two models using basic support-related characteristics.
+Methodological description: Compare the stability of two models using basic support-related characteristics.
+User-friendly description: Compare which supported structures are more likely to remain stable.
 
 ##### Explain load transfer
 
+Slug: explainLoadTransfer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how forces from a load pass through structural elements to supports, and distinguish the force-transmission path from the shape of the structure.
+Methodological description: Identify how forces from a load pass through structural elements to supports, and distinguish the force-transmission path from the shape of the structure.
+User-friendly description: Trace how a load's force passes through structural parts to their supports.
 
 ##### Compare the strength of structural shapes
 
+Slug: compareTheStrengthOfStructuralShapes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Under identical testing conditions, determine which shape better withstands a load.
+Methodological description: Under identical testing conditions, determine which shape better withstands a load.
+User-friendly description: Compare how differently shaped structures resist the same applied load.
 
 ##### Predict the effect of center-of-mass position on stability
 
+Slug: predictTheEffectOfCenterOfMassPositionOnStability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The position of the center of mass relative to the support area affects whether a body can overturn under gravity.
+Methodological description: The position of the center of mass relative to the support area affects whether a body can overturn under gravity.
+User-friendly description: Predict when the center of mass makes an object more likely to tip.
 
 #### Gravity
+
+Slug: gravity
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Bodies with mass interact gravitationally even without touching. Earth's gravity governs falling near its surface, and other celestial bodies also exert gravitational influence.
+Methodological description: Bodies with mass interact gravitationally even without touching. Earth's gravity governs falling near its surface, and other celestial bodies also exert gravitational influence.
+User-friendly description: Explore gravity as an interaction between bodies with mass.
 
 ##### Predict the direction of falling
 
+Slug: predictTheDirectionOfFalling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Near Earth's surface, gravity acts approximately toward Earth's center, so a body in free fall accelerates downward relative to the local vertical.
+Methodological description: Near Earth's surface, gravity acts approximately toward Earth's center, so a body in free fall accelerates downward relative to the local vertical.
+User-friendly description: Predict the direction in which gravity accelerates a freely falling object.
 
 ##### Distinguish a body's mass from Earth's gravitational force
 
+Slug: distinguishABodysMassFromEarthsGravitationalForce
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare a body's unchanged mass with gravitational force, which depends on the gravitational field, using models. Do not equate these quantities or confuse gravitational force with the body's weight as the force it exerts on a support.
+Methodological description: Compare a body's unchanged mass with gravitational force, which depends on the gravitational field, using models. Do not equate these quantities or confuse gravitational force with the body's weight as the force it exerts on a support.
+User-friendly description: Distinguish an object's mass from the gravitational force acting on it.
 
 ##### Explain Earth's gravitational force on a body
 
+Slug: explainEarthsGravitationalForceOnABody
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Earth exerts a gravitational force on a body depending on the body's mass and the gravitational field; distinguish that force from mass and from weight as the body's action on a support.
+Methodological description: Earth exerts a gravitational force on a body depending on the body's mass and the gravitational field; distinguish that force from mass and from weight as the body's action on a support.
+User-friendly description: Understand why Earth's gravity exerts force on an object.
 
 ### Fluid Mechanics
+
+Slug: fluidMechanics
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Water and air transmit pressure, flow, resist bodies' motion, and can provide buoyancy. Familiar containers, floating objects, and airflow make these phenomena accessible.
+Methodological description: Water and air transmit pressure, flow, resist bodies' motion, and can provide buoyancy. Familiar containers, floating objects, and airflow make these phenomena accessible.
+User-friendly description: Explore how liquids and gases flow, exert pressure and support moving bodies.
 
 #### Pressure in Liquids and Gases
+
+Slug: pressureInLiquidsAndGases
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Pressure is transmitted through a medium and changes with depth in still water; container examples help distinguish pressure from the mere amount of water.
+Methodological description: Pressure is transmitted through a medium and changes with depth in still water; container examples help distinguish pressure from the mere amount of water.
+User-friendly description: Discover how liquid and gas pressure acts and changes with conditions.
 
 ##### Explain why water pressure increases with depth
 
+Slug: explainWhyWaterPressureIncreasesWithDepth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In a stationary liquid of constant density, pressure increases with depth because of the weight of the layers above; the container's shape alone does not determine it.
+Methodological description: In a stationary liquid of constant density, pressure increases with depth because of the weight of the layers above; the container's shape alone does not determine it.
+User-friendly description: Explain why still water exerts greater pressure at greater depth.
 
 ##### Recognize liquid pressure acting in different directions
 
+Slug: recognizeLiquidPressureActingInDifferentDirections
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use a model of holes in a container to explain why water exerts pressure in directions other than downward.
+Methodological description: Use a model of holes in a container to explain why water exerts pressure in directions other than downward.
+User-friendly description: Recognize that liquid pressure acts sideways as well as downward.
 
 ##### Identify gas pressure in examples
 
+Slug: identifyGasPressureInExamples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A gas acts on surfaces through collisions of its particles; pressure depends on the gas's physical state and the conditions of its confinement.
+Methodological description: A gas acts on surfaces through collisions of its particles; pressure depends on the gas's physical state and the conditions of its confinement.
+User-friendly description: Identify how confined gas exerts pressure on surrounding surfaces.
 
 ##### Explain pressure transmission in an enclosed liquid
 
+Slug: explainPressureTransmissionInAnEnclosedLiquid
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A pressure change applied to an enclosed liquid at rest is transmitted in every direction, unlike the variation of hydrostatic pressure with depth.
+Methodological description: A pressure change applied to an enclosed liquid at rest is transmitted in every direction, unlike the variation of hydrostatic pressure with depth.
+User-friendly description: Explain how changes in pressure travel through an enclosed liquid.
 
 #### Floating and Buoyancy
+
+Slug: floatingAndBuoyancy
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-A body's behavior in water is determined by gravity together with forces exerted by the liquid; material and shape may affect the outcome through average density.
+Methodological description: A body's behavior in water is determined by gravity together with forces exerted by the liquid; material and shape may affect the outcome through average density.
+User-friendly description: Explore how density and buoyancy determine whether objects float or sink.
 
 ##### Distinguish rising, floating, and sinking
 
+Slug: distinguishRisingFloatingAndSinking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify three possible behaviors of safe objects in water through observation or simulation.
+Methodological description: Identify three possible behaviors of safe objects in water through observation or simulation.
+User-friendly description: Distinguish an object rising, remaining afloat or sinking in water.
 
 ##### Predict how a load affects floating
 
+Slug: predictHowALoadAffectsFloating
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Increasing the mass of a load changes the buoyant force and displaced volume needed for equilibrium, so a body may become more deeply submerged.
+Methodological description: Increasing the mass of a load changes the buoyant force and displaced volume needed for equilibrium, so a body may become more deeply submerged.
+User-friendly description: Predict how extra weight changes how deeply a floating object sits in water.
 
 ##### Explain density
 
+Slug: explainDensity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Density is the mass per unit volume of a substance and helps determine the relationship between a body's properties and those of the surrounding medium.
+Methodological description: Density is the mass per unit volume of a substance and helps determine the relationship between a body's properties and those of the surrounding medium.
+User-friendly description: Understand density as the amount of mass in a given volume.
 
 ##### Explain buoyant force
 
+Slug: explainBuoyantForce
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The pressure difference exerted by a liquid or gas on a submerged body produces a net upward force.
+Methodological description: The pressure difference exerted by a liquid or gas on a submerged body produces a net upward force.
+User-friendly description: Explain how pressure differences create an upward buoyant force.
 
 ##### Explain Archimedes' principle
 
+Slug: explainArchimedesPrinciple
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Under the relevant conditions, the buoyant force equals the weight of the volume of liquid or gas displaced by the body.
+Methodological description: Under the relevant conditions, the buoyant force equals the weight of the volume of liquid or gas displaced by the body.
+User-friendly description: Use Archimedes' principle to relate buoyant force to displaced fluid.
 
 #### Aerodynamics
 
+Slug: aerodynamics
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Air exerts drag on moving bodies; shape and relative speed affect the interaction. Building aircraft or designing hulls are Engineering applications.
+Methodological description: Air exerts drag on moving bodies; shape and relative speed affect the interaction. Building aircraft or designing hulls are Engineering applications.
+User-friendly description: Discover how air influences bodies moving through it.
 
 ##### Predict the effect of shape on motion through air
 
+Slug: predictTheEffectOfShapeOnMotionThroughAir
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A body's shape and orientation affect airflow around it, drag, and, under certain conditions, lift.
+Methodological description: A body's shape and orientation affect airflow around it, drag, and, under certain conditions, lift.
+User-friendly description: Predict how an object's shape or angle changes drag and lift.
 
 ##### Explain the origin of air resistance during motion
 
+Slug: explainTheOriginOfAirResistanceDuringMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using a paper sheet or ball, connect drag to the body's interaction with air; do not claim that drag arises only from an unsuitable shape.
+Methodological description: Using a paper sheet or ball, connect drag to the body's interaction with air; do not claim that drag arises only from an unsuitable shape.
+User-friendly description: Explain why moving through air causes resistance.
 
 ##### Explain aerodynamic lift
 
+Slug: explainAerodynamicLift
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Airflow interacting with a body can produce a force perpendicular to the flow; it should not be explained solely by differences in air-path length.
+Methodological description: Airflow interacting with a body can produce a force perpendicular to the flow; it should not be explained solely by differences in air-path length.
+User-friendly description: Explore how airflow can produce lift without relying on a false equal-path explanation.
 
 #### Hydrodynamics
+
+Slug: hydrodynamics
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Water and other liquids flow under certain conditions and resist bodies moving through the stream; comparison with air explains differences between the media.
+Methodological description: Water and other liquids flow under certain conditions and resist bodies moving through the stream; comparison with air explains differences between the media.
+User-friendly description: Understand how water flows and resists objects moving through it.
 
 ##### Compare resistance to motion in water and air
 
+Slug: compareResistanceToMotionInWaterAndAir
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use qualitative examples to recognize why moving the same object through water and through air feels different.
+Methodological description: Use qualitative examples to recognize why moving the same object through water and through air feels different.
+User-friendly description: Compare resistance experienced by the same object in water and air.
 
 ##### Explain water flow between containers at different levels
 
+Slug: explainWaterFlowBetweenContainersAtDifferentLevels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A hydrostatic pressure difference between connected vessels causes liquid to flow until pressures balance or other forces intervene.
+Methodological description: A hydrostatic pressure difference between connected vessels causes liquid to flow until pressures balance or other forces intervene.
+User-friendly description: Explain why water moves between vessels at different levels.
 
 ##### Explain continuity of incompressible-fluid flow
 
+Slug: explainContinuityOfIncompressibleFluidFlow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-For steady flow without leakage, a change in a channel's cross-sectional area is associated with a change in fluid speed.
+Methodological description: For steady flow without leakage, a change in a channel's cross-sectional area is associated with a change in fluid speed.
+User-friendly description: Connect changes in channel width with the speed of steady incompressible flow.
 
 ### Energy
 
