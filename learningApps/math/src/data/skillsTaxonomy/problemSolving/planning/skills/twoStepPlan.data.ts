@@ -33,4 +33,5 @@ export const twoStepPlan_Skill_Data = buildSkillConfig({
     pl: "Planowanie rozwiązania dwuetapowego",
     uk: "План розв’язання задачі на дві дії",
   },
+  description: { methodological: "A two-step solution includes an intermediate quantity that must be found before the final answer. The order of steps follows dependencies between the given and unknown quantities, not simply the written order of operation signs." },
 });

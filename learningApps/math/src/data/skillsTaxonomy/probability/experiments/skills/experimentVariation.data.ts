@@ -33,4 +33,5 @@ export const experimentVariation_Skill_Data = buildSkillConfig({
     pl: "Porównywanie wyników powtarzanych doświadczeń losowych",
     uk: "Порівняння результатів повторних випадкових експериментів",
   },
+  description: { methodological: "Repetitions of a random experiment under identical conditions can yield different outcome frequencies across finite runs. This natural sampling variation must be distinguished from changes to the experiment's rules, conditions, or probabilities." },
 });

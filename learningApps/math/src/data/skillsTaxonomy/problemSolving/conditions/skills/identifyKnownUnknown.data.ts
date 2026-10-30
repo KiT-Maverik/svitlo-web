@@ -33,4 +33,5 @@ export const identifyKnownUnknown_Skill_Data = buildSkillConfig({
     pl: "Wskazywanie danych i niewiadomych",
     uk: "Визначення відомих і невідомих величин",
   },
+  description: { methodological: "Analyzing a word problem separates given quantities and their relationships from the unknown and the question to be answered. Narrative details need not be mathematical data, and keywords alone do not determine the solution method." },
 });

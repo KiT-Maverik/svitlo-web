@@ -33,4 +33,5 @@ export const listOutcomes_Skill_Data = buildSkillConfig({
     pl: "Wymienianie możliwych wyników prostego doświadczenia losowego",
     uk: "Називання можливих результатів простого випадкового експерименту",
   },
+  description: { methodological: "The sample space follows from a precisely specified random experiment. Listed elementary outcomes must be mutually exclusive and exhaustive at the chosen level of description; none may be added or omitted to favor a conclusion." },
 });
