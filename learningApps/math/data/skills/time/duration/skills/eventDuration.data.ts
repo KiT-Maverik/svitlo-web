@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { duration_Skills_Ids } from './index.ids';
 
 export const eventDuration_Skill_Data = buildSkillConfig({
-  id: duration_Skills_Ids.eventDuration,
+  id: 'c11ad392-6a44-49f4-a2b7-ea246a9a8ae4',
   name: {
     en: "Calculating elapsed time",
     lt: "Praėjusio laiko apskaičiavimas",

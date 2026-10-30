@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { duration_Skills_Ids } from './index.ids';
 
 export const findStartOrEnd_Skill_Data = buildSkillConfig({
-  id: duration_Skills_Ids.findStartOrEnd,
+  id: 'f98b80c1-0692-4ac2-a254-95a20ab13686',
   name: {
     en: "Finding a start or end time from a duration",
     lt: "Pradžios arba pabaigos laiko radimas pagal trukmę",
