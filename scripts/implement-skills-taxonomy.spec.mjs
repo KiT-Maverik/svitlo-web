@@ -158,6 +158,16 @@ test('duplicate slug across Domains or entity kinds fails before write',()=>with
   assert.equal(fs.existsSync(data(f)),false);
 }));
 
+test('implemented source links must resolve to the canonical entity file',()=>withFixture(f=>{
+  assert.equal(f.run('--apply').status,0);
+  const before=source(f,'music/skills/hearRhythm.data.ts');
+  f.edit(s=>s.replace('[hearRhythm.data.ts]','[wrong.data.ts]'));
+  const r=f.run('--apply');
+  assert.notEqual(r.status,0);
+  assert.match(r.stderr,/Code link differs from canonical source path/);
+  assert.equal(source(f,'music/skills/hearRhythm.data.ts'),before);
+}));
+
 test('delete actions are blocked even if the legacy authorization switch is present',()=>withFixture(f=>{
   assert.equal(f.run('--apply').status,0);
   const before=source(f,'music/music.data.ts');
