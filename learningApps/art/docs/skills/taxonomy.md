@@ -3162,476 +3162,846 @@ Methodological description: Organize distinct moving graphic passages with coher
 User-friendly description: Arrange moving graphic passages with purposeful rhythm and transitions.
 ### Art History and Cultures
 
+Slug: artHistoryAndCultures
+Action: create
+Status: pending
+
 Groups: 14 · Skills: 59
 
 [Not implemented](#)
 
-Artworks and artistic practices develop within particular communities, historical debates, patrons and material technologies. Study of art history distinguishes movements and named traditions through their own works and contexts rather than treating an entire continent or historical era as a single skill. This domain examines art-historical interpretation, not general political chronology.
+Methodological description: Artworks and artistic practices develop within particular communities, historical debates, patrons and material technologies. Study of art history distinguishes movements and named traditions through their own works and contexts rather than treating an entire continent or historical era as a single skill. This domain examines art-historical interpretation, not general political chronology.
+User-friendly description: Explore how works of art reflect particular places, communities, periods and artistic debates.
 
 #### Early Images and Antiquity
 
+Slug: earlyImagesAndAntiquity
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-These practices emerged in different historical settings and should be read through their own surviving works, functions and available archaeological evidence. Similar motifs do not imply that their makers shared one artistic tradition.
+Methodological description: These practices emerged in different historical settings and should be read through their own surviving works, functions and available archaeological evidence. Similar motifs do not imply that their makers shared one artistic tradition.
+User-friendly description: Study early images and ancient art through surviving objects and their specific contexts.
 
 ##### Interpret Upper Paleolithic Cave Painting
 
+Slug: interpretUpperPaleolithicCavePainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate animal imagery, placement, layered marks and known archaeological context to supported readings while acknowledging uncertainty about original meanings.
+Methodological description: Relate animal imagery, placement, layered marks and known archaeological context to supported readings while acknowledging uncertainty about original meanings.
+User-friendly description: Explore what cave images and their locations reveal, and what remains unknown.
 
 ##### Analyze Ancient Egyptian Funerary Imagery
 
+Slug: analyzeAncientEgyptianFuneraryImagery
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how conventions of profile, scale, attributes and prescribed scenes relate to religious beliefs and burial contexts in a specified Egyptian period.
+Methodological description: Explain how conventions of profile, scale, attributes and prescribed scenes relate to religious beliefs and burial contexts in a specified Egyptian period.
+User-friendly description: See how ancient Egyptian burial images use symbols, figures and carefully chosen scenes.
 
 ##### Analyze Mesopotamian Narrative Reliefs
 
+Slug: analyzeMesopotamianNarrativeReliefs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace registers, figure hierarchy and sequences of actions in particular palace or commemorative reliefs, distinguishing visual depiction from political claims.
+Methodological description: Trace registers, figure hierarchy and sequences of actions in particular palace or commemorative reliefs, distinguishing visual depiction from political claims.
+User-friendly description: Follow the stories and royal messages carved in ancient Mesopotamian reliefs.
 
 ##### Analyze Classical Greek Sculpture
 
+Slug: analyzeClassicalGreekSculpture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine idealized bodily proportion, stance and movement in selected Greek sculptural periods without assuming a single unchanging classical ideal.
+Methodological description: Examine idealized bodily proportion, stance and movement in selected Greek sculptural periods without assuming a single unchanging classical ideal.
+User-friendly description: Examine how Greek sculptors represented bodies, balance and movement over time.
 
 ##### Analyze Roman Portraiture
 
+Slug: analyzeRomanPortraiture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate likeness, idealization and signs of public status to the social and political functions of particular Roman portraits.
+Methodological description: Relate likeness, idealization and signs of public status to the social and political functions of particular Roman portraits.
+User-friendly description: Explore how Roman portraits represented individuals and public standing.
 
 #### Medieval and Early Modern Arts
+
+Slug: medievalAndEarlyModernArts
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Comparative analysis here concerns distinct sacred, civic and courtly image practices shaped by differing patrons, techniques and concepts of representation.
+Methodological description: Comparative analysis here concerns distinct sacred, civic and courtly image practices shaped by differing patrons, techniques and concepts of representation.
+User-friendly description: Compare sacred and civic artworks in distinct medieval and early modern traditions.
 
 ##### Analyze Byzantine Icon Painting
 
+Slug: analyzeByzantineIconPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret symbolic poses, materials, visual conventions and devotional functions in a specified Byzantine icon context rather than judging the work by naturalistic realism.
+Methodological description: Interpret symbolic poses, materials, visual conventions and devotional functions in a specified Byzantine icon context rather than judging the work by naturalistic realism.
+User-friendly description: Discover how Byzantine icons use symbolic forms and materials in worship.
 
 ##### Analyze Gothic Cathedral Sculpture
 
+Slug: analyzeGothicCathedralSculpture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sculptural programs on a particular cathedral to architecture, religious narratives and the experience of a medieval audience.
+Methodological description: Relate sculptural programs on a particular cathedral to architecture, religious narratives and the experience of a medieval audience.
+User-friendly description: Explore how carved cathedral figures communicate stories within Gothic architecture.
 
 ##### Analyze Early Italian Renaissance Painting
 
+Slug: analyzeEarlyItalianRenaissancePainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine experimentation with spatial construction, human figures and narrative organization within specified early Renaissance workshops and settings.
+Methodological description: Examine experimentation with spatial construction, human figures and narrative organization within specified early Renaissance workshops and settings.
+User-friendly description: See how early Italian Renaissance painters explored space, people and narrative.
 
 ##### Analyze Northern Renaissance Printmaking
 
+Slug: analyzeNorthernRenaissancePrintmaking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how woodcut or engraving technologies shaped image detail, circulation and artistic practice in northern European contexts.
+Methodological description: Explain how woodcut or engraving technologies shaped image detail, circulation and artistic practice in northern European contexts.
+User-friendly description: Discover how northern European printmakers created and circulated detailed images.
 
 ##### Analyze Baroque Painting
 
+Slug: analyzeBaroquePainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how selected painters used dramatic light, movement and theatrical composition within particular seventeenth-century religious or secular settings.
+Methodological description: Explain how selected painters used dramatic light, movement and theatrical composition within particular seventeenth-century religious or secular settings.
+User-friendly description: Explore how Baroque painters used dramatic light, action and composition.
 
 #### Modern Art Movements
+
+Slug: modernArtMovements
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-These named movements generated differing responses to social modernity and established visual conventions. Mastery of one movement does not imply mastery of its neighbors.
+Methodological description: These named movements generated differing responses to social modernity and established visual conventions. Mastery of one movement does not imply mastery of its neighbors.
+User-friendly description: Explore how different modern art movements challenged familiar artistic conventions.
 
 ##### Analyze Romantic Painting
 
+Slug: analyzeRomanticPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate expressive landscape, emotion or dramatic subject matter to selected nineteenth-century artists and cultural contexts without treating Romanticism as one uniform style.
+Methodological description: Relate expressive landscape, emotion or dramatic subject matter to selected nineteenth-century artists and cultural contexts without treating Romanticism as one uniform style.
+User-friendly description: Examine how Romantic painters used landscapes, feeling and dramatic subjects.
 
 ##### Analyze Realist Painting
 
+Slug: analyzeRealistPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how selected artists challenged established conventions through depictions of contemporary social life and ordinary subjects.
+Methodological description: Explain how selected artists challenged established conventions through depictions of contemporary social life and ordinary subjects.
+User-friendly description: See how Realist painters portrayed everyday life and contemporary society.
 
 ##### Analyze Impressionism
 
+Slug: analyzeImpressionism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect broken brushwork, shifting light and scenes of modern life to specific Impressionist practices and their historical reception.
+Methodological description: Connect broken brushwork, shifting light and scenes of modern life to specific Impressionist practices and their historical reception.
+User-friendly description: Notice how Impressionist painters captured changing light and moments of modern life.
 
 ##### Analyze Post-Impressionism
 
+Slug: analyzePostImpressionism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare historically distinct departures from Impressionism, such as structural construction or expressive color, without assuming a unified technique.
+Methodological description: Compare historically distinct departures from Impressionism, such as structural construction or expressive color, without assuming a unified technique.
+User-friendly description: Compare the distinct new directions artists pursued after Impressionism.
 
 ##### Analyze Cubism
 
+Slug: analyzeCubism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how selected Cubist works fragment and reconstruct viewpoints and pictorial space, distinguishing analytical and synthetic approaches when relevant.
+Methodological description: Explain how selected Cubist works fragment and reconstruct viewpoints and pictorial space, distinguishing analytical and synthetic approaches when relevant.
+User-friendly description: See how Cubist artists reshaped objects and showed multiple viewpoints.
 
 ##### Analyze German Expressionist Painting
 
+Slug: analyzeGermanExpressionistPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate intensified color, altered forms and expressive subjects to particular Expressionist groups rather than to all expressionist art globally.
+Methodological description: Relate intensified color, altered forms and expressive subjects to particular Expressionist groups rather than to all expressionist art globally.
+User-friendly description: Explore the vivid colors and altered forms of specific German Expressionist groups.
 
 ##### Analyze Surrealism
 
+Slug: analyzeSurrealism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine unexpected juxtapositions, dream imagery or automatism in works shaped by Surrealist debates and their wider cultural contexts.
+Methodological description: Examine unexpected juxtapositions, dream imagery or automatism in works shaped by Surrealist debates and their wider cultural contexts.
+User-friendly description: Discover how Surrealist artists explored dreams and surprising combinations.
 
 ##### Analyze Constructivism
 
+Slug: analyzeConstructivism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate abstract geometry, material experimentation and the ambition to connect art with social production in selected Constructivist practices.
+Methodological description: Relate abstract geometry, material experimentation and the ambition to connect art with social production in selected Constructivist practices.
+User-friendly description: Explore how Constructivist artists connected geometry, materials and social ideas.
 
 #### Late Modern and Contemporary Practices
 
+Slug: lateModernAndContemporaryPractices
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Artworks in these practices can privilege ideas, everyday images, participation or spatial conditions over traditional single-object representation.
+Methodological description: Artworks in these practices can privilege ideas, everyday images, participation or spatial conditions over traditional single-object representation.
+User-friendly description: Explore artworks that place unusual emphasis on ideas, space, participation or everyday imagery.
 
 ##### Analyze Pop Art
 
+Slug: analyzePopArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine appropriation of advertising, mass-media imagery or consumer forms in specified Pop Art settings rather than equating all popular imagery with the movement.
+Methodological description: Examine appropriation of advertising, mass-media imagery or consumer forms in specified Pop Art settings rather than equating all popular imagery with the movement.
+User-friendly description: Find out how Pop artists used advertising, consumer products and mass media.
 
 ##### Analyze Minimalism
 
+Slug: analyzeMinimalism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the roles of repetition, literal materials, scale and viewer space in selected Minimalist works and their reception.
+Methodological description: Explain the roles of repetition, literal materials, scale and viewer space in selected Minimalist works and their reception.
+User-friendly description: See how Minimalist art uses repetition, simple materials and the viewer's space.
 
 ##### Analyze Conceptual Art
 
+Slug: analyzeConceptualArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how instructions, propositions or documentary traces may carry artistic significance independently of a conventional crafted object.
+Methodological description: Examine how instructions, propositions or documentary traces may carry artistic significance independently of a conventional crafted object.
+User-friendly description: Explore art in which an idea or instruction matters as much as a physical object.
 
 ##### Analyze Installation Art
 
+Slug: analyzeInstallationArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate an artwork's arrangement in a particular environment to viewers' movement, perception and site-specific meaning.
+Methodological description: Relate an artwork's arrangement in a particular environment to viewers' movement, perception and site-specific meaning.
+User-friendly description: Discover how installation art transforms a space that viewers move through.
 
 ##### Analyze Performance Art
 
+Slug: analyzePerformanceArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret duration, live action, audience presence and documentation in historically situated practices distinct from theatrical character portrayal.
+Methodological description: Interpret duration, live action, audience presence and documentation in historically situated practices distinct from theatrical character portrayal.
+User-friendly description: Explore performances where live action and audience presence become art.
 
 #### West and Central African Traditions
+
+Slug: westAndCentralAfricanTraditions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-These examples refer to particular peoples and court or community practices. They are not interchangeable illustrations of a supposedly uniform 'African art'.
+Methodological description: These examples refer to particular peoples and court or community practices. They are not interchangeable illustrations of a supposedly uniform 'African art'.
+User-friendly description: Study distinct artistic traditions connected to named West and Central African communities.
 
 ##### Analyze Gelede Masquerade Traditions
 
+Slug: analyzeGeledeMasqueradeTraditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret mask form, costume, performance and community functions in Yoruba Gelede contexts rather than treating the mask as an isolated sculpture.
+Methodological description: Interpret mask form, costume, performance and community functions in Yoruba Gelede contexts rather than treating the mask as an isolated sculpture.
+User-friendly description: Explore how Yoruba Gelede masks, costumes and performances work together in community life.
 
 ##### Analyze Benin Court Plaques
 
+Slug: analyzeBeninCourtPlaques
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how Edo court plaques convey royal authority, hierarchy and historical events through relief imagery and material choices.
+Methodological description: Explain how Edo court plaques convey royal authority, hierarchy and historical events through relief imagery and material choices.
+User-friendly description: Examine how plaques from the Benin court portray authority, people and events.
 
 ##### Analyze Kongo Nkisi Figures
 
+Slug: analyzeKongoNkisiFigures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the formal and material features of particular Kongo power figures to the culturally situated purposes and practices associated with them.
+Methodological description: Relate the formal and material features of particular Kongo power figures to the culturally situated purposes and practices associated with them.
+User-friendly description: Explore the materials and cultural roles of Kongo nkisi figures.
 
 #### Asian Artistic Traditions
+
+Slug: asianArtisticTraditions
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Specific regional practices use different material systems, pictorial conventions and patronage contexts; geographic proximity does not imply shared aesthetic rules.
+Methodological description: Specific regional practices use different material systems, pictorial conventions and patronage contexts; geographic proximity does not imply shared aesthetic rules.
+User-friendly description: Discover distinct artistic practices across Asia through their own histories and materials.
 
 ##### Analyze Chinese Ink Painting
 
+Slug: analyzeChineseInkPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine brushwork, spatial suggestion and the relationship of image and inscription in particular historical Chinese ink-painting traditions.
+Methodological description: Examine brushwork, spatial suggestion and the relationship of image and inscription in particular historical Chinese ink-painting traditions.
+User-friendly description: See how Chinese ink paintings combine expressive brushwork, space and inscriptions.
 
 ##### Analyze Japanese Ukiyo-e
 
+Slug: analyzeJapaneseUkiyoE
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate woodblock printing, composition and subjects to the urban markets and cultural life that shaped selected ukiyo-e works.
+Methodological description: Relate woodblock printing, composition and subjects to the urban markets and cultural life that shaped selected ukiyo-e works.
+User-friendly description: Explore how Japanese ukiyo-e prints relate to city life and woodblock printing.
 
 ##### Analyze Mughal Miniature Painting
 
+Slug: analyzeMughalMiniaturePainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret courtly narrative, detailed rendering and manuscript or album contexts in paintings produced in specific Mughal settings.
+Methodological description: Interpret courtly narrative, detailed rendering and manuscript or album contexts in paintings produced in specific Mughal settings.
+User-friendly description: Discover the detailed storytelling of Mughal court and manuscript painting.
 
 ##### Analyze Korean Celadon
 
+Slug: analyzeKoreanCeladon
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine vessel form, glaze effects and decoration in Korean celadon traditions and connect them to particular periods of production.
+Methodological description: Examine vessel form, glaze effects and decoration in Korean celadon traditions and connect them to particular periods of production.
+User-friendly description: Examine how Korean celadon ceramics combine shapes, glazes and decoration.
 
 ##### Analyze Persian Miniature Painting
 
+Slug: analyzePersianMiniaturePainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate stylized space, color and narrative detail to specific Persian manuscript or album-painting contexts.
+Methodological description: Relate stylized space, color and narrative detail to specific Persian manuscript or album-painting contexts.
+User-friendly description: Explore how Persian miniature paintings tell stories through color and stylized space.
 
 #### Indigenous Artistic Traditions of the Americas
 
+Slug: indigenousArtisticTraditionsOfTheAmericas
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Works are understood within named peoples' histories and living cultural continuities, with attention to provenance and the limits of outsider interpretation.
+Methodological description: Works are understood within named peoples' histories and living cultural continuities, with attention to provenance and the limits of outsider interpretation.
+User-friendly description: Study artistic traditions of named Indigenous peoples of the Americas in their own contexts.
 
 ##### Analyze Classic Maya Relief Sculpture
 
+Slug: analyzeClassicMayaReliefSculpture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate figures, glyphic inscriptions and dynastic imagery to specific Classic Maya sites and known historical contexts.
+Methodological description: Relate figures, glyphic inscriptions and dynastic imagery to specific Classic Maya sites and known historical contexts.
+User-friendly description: Read how Maya reliefs use figures, inscriptions and dynastic imagery at particular sites.
 
 ##### Analyze Andean Weaving Traditions
 
+Slug: analyzeAndeanWeavingTraditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret textile structure, motifs and social significance in a specified Andean community or period rather than treating all Andean fabrics as one style.
+Methodological description: Interpret textile structure, motifs and social significance in a specified Andean community or period rather than treating all Andean fabrics as one style.
+User-friendly description: Explore how weaving designs and meanings vary across Andean communities and periods.
 
 ##### Analyze Haida Formline Art
 
+Slug: analyzeHaidaFormlineArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine the formal relationships of ovoids, U-forms and negative space in works connected to Haida visual conventions and cultural contexts.
+Methodological description: Examine the formal relationships of ovoids, U-forms and negative space in works connected to Haida visual conventions and cultural contexts.
+User-friendly description: Examine the shapes and spatial patterns of Haida formline art in cultural context.
 
 #### Ukrainian Artistic Traditions
+
+Slug: ukrainianArtisticTraditions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-These practices distinguish decorative folk art, historical religious painting and a twentieth-century monumental-art movement while acknowledging their exchanges and transformations.
+Methodological description: These practices distinguish decorative folk art, historical religious painting and a twentieth-century monumental-art movement while acknowledging their exchanges and transformations.
+User-friendly description: Explore distinct Ukrainian painting and monumental art traditions through their histories.
 
 ##### Analyze Petrykivka Decorative Painting
 
+Slug: analyzePetrykivkaDecorativePainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret stylized plant motifs, characteristic brushstrokes and community transmission in the ornamental painting tradition associated with Petrykivka.
+Methodological description: Interpret stylized plant motifs, characteristic brushstrokes and community transmission in the ornamental painting tradition associated with Petrykivka.
+User-friendly description: Discover the floral motifs and brush techniques of the Petrykivka painting tradition.
 
 ##### Analyze Ukrainian Baroque Icon Painting
 
+Slug: analyzeUkrainianBaroqueIconPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine changes in figure modeling, ornament and devotional imagery in particular Ukrainian Baroque icon-painting contexts.
+Methodological description: Examine changes in figure modeling, ornament and devotional imagery in particular Ukrainian Baroque icon-painting contexts.
+User-friendly description: Explore how Ukrainian Baroque icon painting developed its figures and decoration.
 
 ##### Analyze Boychukism
 
+Slug: analyzeBoychukism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate monumental form, references to Byzantine and Ukrainian traditions, and the suppression of the Boychuk school to its twentieth-century artistic development.
+Methodological description: Relate monumental form, references to Byzantine and Ukrainian traditions, and the suppression of the Boychuk school to its twentieth-century artistic development.
+User-friendly description: Discover the monumental art of Boychukism and the history of the artists behind it.
 
 #### Oceania Artistic Traditions
+
+Slug: oceaniaArtisticTraditions
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Material practices in Aotearoa New Zealand and northern Australia are treated as distinct cultural traditions, not as interchangeable decorative vocabularies.
+Methodological description: Material practices in Aotearoa New Zealand and northern Australia are treated as distinct cultural traditions, not as interchangeable decorative vocabularies.
+User-friendly description: Study distinct artistic traditions of Māori communities and Yolŋu peoples.
 
 ##### Analyze Māori Whakairo Carving
 
+Slug: analyzeMaoriWhakairoCarving
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret carved patterns and forms within a specified Māori community's architectural, genealogical or ceremonial context, respecting relevant cultural authority.
+Methodological description: Interpret carved patterns and forms within a specified Māori community's architectural, genealogical or ceremonial context, respecting relevant cultural authority.
+User-friendly description: Explore the meaning and setting of Māori whakairo carving in its community context.
 
 ##### Analyze Yolŋu Bark Painting
 
+Slug: analyzeYolUBarkPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate visual pattern, materials and authorized meanings to the specific Yolŋu communities and knowledge systems associated with a work.
+Methodological description: Relate visual pattern, materials and authorized meanings to the specific Yolŋu communities and knowledge systems associated with a work.
+User-friendly description: Study Yolŋu bark paintings with respect for community knowledge and authorized meanings.
 
 #### Latin American Art Movements
+
+Slug: latinAmericanArtMovements
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-These movements reflect different engagements with Indigenous heritage, colonial institutions, modernism and public expression in specified places.
+Methodological description: These movements reflect different engagements with Indigenous heritage, colonial institutions, modernism and public expression in specified places.
+User-friendly description: Explore distinct Latin American art movements through their specific settings and aims.
 
 ##### Analyze Mexican Muralism
 
+Slug: analyzeMexicanMuralism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how monumental public paintings connect form, political narrative and social aims in works by selected Mexican muralists.
+Methodological description: Explain how monumental public paintings connect form, political narrative and social aims in works by selected Mexican muralists.
+User-friendly description: See how Mexican muralists connected public painting with history and social ideas.
 
 ##### Analyze Brazilian Concrete Art
 
+Slug: analyzeBrazilianConcreteArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how Brazilian Concrete artists used precise geometric relationships and modern design debates to reconceive the visual work.
+Methodological description: Examine how Brazilian Concrete artists used precise geometric relationships and modern design debates to reconceive the visual work.
+User-friendly description: Explore how Brazilian Concrete artists used precise geometric relationships.
 
 ##### Analyze Cusco School Painting
 
+Slug: analyzeCuscoSchoolPainting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate Andean and European elements in colonial Cuzco-region religious paintings to local workshops, patrons and cultural exchange.
+Methodological description: Relate Andean and European elements in colonial Cuzco-region religious paintings to local workshops, patrons and cultural exchange.
+User-friendly description: Discover how Cusco School paintings combine Andean and European artistic influences.
 
 #### Performing Art Traditions
+
+Slug: performingArtTraditions
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Historical traditions in theatre, dance and music are interpreted through the characteristics and cultural roles of their performances, not by requiring a pupil to reproduce their techniques.
+Methodological description: Historical traditions in theatre, dance and music are interpreted through the characteristics and cultural roles of their performances, not by requiring a pupil to reproduce their techniques.
+User-friendly description: Explore how theatre, dance and music traditions develop within their cultural settings.
 
 ##### Analyze Noh Theatre
 
+Slug: analyzeNohTheatre
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how masks, stylized movement, music and dramatic conventions operate within Japanese Noh performance contexts.
+Methodological description: Explain how masks, stylized movement, music and dramatic conventions operate within Japanese Noh performance contexts.
+User-friendly description: Learn how movement, masks and music shape performances in Japanese Noh theatre.
 
 ##### Analyze Bharatanatyam
 
+Slug: analyzeBharatanatyam
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate codified movement, expressive gesture, repertoire and historical change to particular South Indian Bharatanatyam performance traditions.
+Methodological description: Relate codified movement, expressive gesture, repertoire and historical change to particular South Indian Bharatanatyam performance traditions.
+User-friendly description: Explore Bharatanatyam movement, gesture and repertoire in their changing South Indian contexts.
 
 ##### Analyze Classical Ballet Traditions
 
+Slug: analyzeClassicalBalletTraditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret codified movement and staging in relation to particular historical ballet institutions, repertoires and changing conventions.
+Methodological description: Interpret codified movement and staging in relation to particular historical ballet institutions, repertoires and changing conventions.
+User-friendly description: Examine how classical ballet techniques and staging developed across different settings.
 
 ##### Analyze Bebop Jazz
 
+Slug: analyzeBebopJazz
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how improvisation, harmonic language and ensemble roles differentiated bebop within particular jazz histories.
+Methodological description: Explain how improvisation, harmonic language and ensemble roles differentiated bebop within particular jazz histories.
+User-friendly description: Discover how bebop musicians reshaped jazz improvisation and ensemble roles.
 
 ##### Analyze Hip-Hop DJ Culture
 
+Slug: analyzeHipHopDJCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace the musical and social significance of breakbeats, turntables and neighborhood performance practices in early hip-hop contexts.
+Methodological description: Trace the musical and social significance of breakbeats, turntables and neighborhood performance practices in early hip-hop contexts.
+User-friendly description: Explore the musical and community roots of early hip-hop DJ practices.
 
 #### Historical Film Movements
 
+Slug: historicalFilmMovements
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Movements in film history can be distinguished through camera, staging, editing, narrative and culturally situated aesthetic choices.
+Methodological description: Movements in film history can be distinguished through camera, staging, editing, narrative and culturally situated aesthetic choices.
+User-friendly description: Discover how different film movements developed distinctive visual and narrative choices.
 
 ##### Analyze German Expressionist Cinema
 
+Slug: analyzeGermanExpressionistCinema
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine distorted sets, stylized light and performance in selected German silent-era films and explain their expressive aims.
+Methodological description: Examine distorted sets, stylized light and performance in selected German silent-era films and explain their expressive aims.
+User-friendly description: See how German Expressionist films used sets, light and acting to create atmosphere.
 
 ##### Analyze French New Wave Cinema
 
+Slug: analyzeFrenchNewWaveCinema
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate location shooting, discontinuous editing and authorial experimentation to selected French New Wave works and contexts.
+Methodological description: Relate location shooting, discontinuous editing and authorial experimentation to selected French New Wave works and contexts.
+User-friendly description: Explore the experimental filming and editing of French New Wave cinema.
 
 ##### Analyze Ukrainian Poetic Cinema
 
+Slug: analyzeUkrainianPoeticCinema
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret visual symbolism, regional cultural imagery and lyrical narrative strategies in Ukrainian poetic cinema and its historical development.
+Methodological description: Interpret visual symbolism, regional cultural imagery and lyrical narrative strategies in Ukrainian poetic cinema and its historical development.
+User-friendly description: Discover how Ukrainian poetic cinema uses visual symbolism and lyrical storytelling.
 
 ##### Analyze Indian Parallel Cinema
 
+Slug: analyzeIndianParallelCinema
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how selected Indian filmmakers developed alternative social themes and production aesthetics in relation to commercial filmmaking traditions.
+Methodological description: Explain how selected Indian filmmakers developed alternative social themes and production aesthetics in relation to commercial filmmaking traditions.
+User-friendly description: Explore how Indian Parallel Cinema developed alternatives to mainstream film styles.
 #### Social Context and Exchange
+
+Slug: socialContextAndExchange
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Artistic production responds to institutions, migration and technology without being reducible to them.
+Methodological description: Artistic production responds to institutions, migration and technology without being reducible to them.
+User-friendly description: Examine how people, institutions and technologies shape artistic exchange over time.
 
 ##### Analyze Artistic Patronage
 
+Slug: analyzeArtisticPatronage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how commissions or institutional support affect works and their presentation.
+Methodological description: Explain how commissions or institutional support affect works and their presentation.
+User-friendly description: Explore how patrons and commissions influence what artworks are made.
 
 ##### Trace Artistic Exchange
 
+Slug: traceArtisticExchange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how cultural contact transforms techniques, subjects or artistic conventions.
+Methodological description: Identify how cultural contact transforms techniques, subjects or artistic conventions.
+User-friendly description: Trace how contact between cultures changes artistic techniques and ideas.
 
 ##### Analyze Artistic Technology Historically
 
+Slug: analyzeArtisticTechnologyHistorically
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect changes in tools and media to new artistic possibilities.
+Methodological description: Connect changes in tools and media to new artistic possibilities.
+User-friendly description: See how new tools and materials open different possibilities for artists.
 
 ##### Interpret Art as Historical Evidence
 
+Slug: interpretArtAsHistoricalEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish what an artwork shows from claims requiring corroborating sources.
+Methodological description: Distinguish what an artwork shows from claims requiring corroborating sources.
+User-friendly description: Use artworks as historical clues while checking what other evidence is needed.
 
 #### Cultural Heritage
+
+Slug: culturalHeritage
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Art-historical stewardship requires attention to provenance, preservation and representation of communities.
+Methodological description: Art-historical stewardship requires attention to provenance, preservation and representation of communities.
+User-friendly description: Explore how the origins, care and display of cultural objects affect communities.
 
 ##### Investigate Artwork Provenance
 
+Slug: investigateArtworkProvenance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine documented ownership or custodial history and identify meaningful gaps.
+Methodological description: Examine documented ownership or custodial history and identify meaningful gaps.
+User-friendly description: Follow an artwork's recorded ownership history and notice what is missing.
 
 ##### Distinguish Conservation and Restoration
 
+Slug: distinguishConservationAndRestoration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain stabilization of surviving material versus interventions to recreate an earlier appearance.
+Methodological description: Explain stabilization of surviving material versus interventions to recreate an earlier appearance.
+User-friendly description: Understand how preserving original material differs from recreating lost features.
 
 ##### Evaluate Museum Representation
 
+Slug: evaluateMuseumRepresentation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze whose perspectives and contexts are emphasized or omitted in displays.
+Methodological description: Analyze whose perspectives and contexts are emphasized or omitted in displays.
+User-friendly description: Consider whose histories and perspectives are present or missing in museums.
 
 ##### Assess Cultural Repatriation
 
+Slug: assessCulturalRepatriation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider acquisition circumstances and community claims when discussing return of cultural objects.
+Methodological description: Consider acquisition circumstances and community claims when discussing return of cultural objects.
+User-friendly description: Explore community claims and acquisition histories when discussing an object's return.
 
 ### Aesthetics and Creative Practice
 
