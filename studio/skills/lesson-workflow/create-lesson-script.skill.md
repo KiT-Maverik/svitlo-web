@@ -194,7 +194,7 @@ Use the **existing numbered Lesson directory** chosen by the user. Do not create
 
 ### Lesson Script format (the generated document, not this instruction)
 
-Use these **mandatory sections**, adjusting details and counts to the real Lesson. Write in the approved **learner/editorial language**; do not copy this English guidance verbatim.
+Use these **mandatory sections**, adjusting details and counts to the real Lesson. Replace every placeholder (including the Methodologist link) with verified content and a real path relative to the authored `script.md`. Write in the approved **learner/editorial language**; do not copy this English guidance verbatim.
 
 ~~~md
 # <Lesson Title> — Script
@@ -202,7 +202,7 @@ Use these **mandatory sections**, adjusting details and counts to the real Lesso
 Status: Draft
 Target Lesson: <actual existing Lesson directory and textbook>
 Audience: <age/stage, prior knowledge, language, accessibility constraints>
-Approved Methodologist source: [methodologist-brief.md](./methodologist-brief.md) <or exact approved legacy file>
+Approved Methodologist source: [Methodologist Brief](%VERIFIED_RELATIVE_BRIEF_LINK%) <or exact approved legacy file>
 Learning outcomes: <from the approved Methodologist document>
 Target Skills: <real existing approved references, if supplied>
 Program dependence: None
