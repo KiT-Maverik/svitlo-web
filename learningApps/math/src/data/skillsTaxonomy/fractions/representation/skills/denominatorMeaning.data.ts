@@ -33,4 +33,5 @@ export const denominatorMeaning_Skill_Data = buildSkillConfig({
     pl: "Wyjaśnianie znaczenia mianownika",
     uk: "Пояснення значення знаменника дробу",
   },
+  description: { methodological: "The positive denominator specifies the number of equal parts in the chosen unit whole. It determines the magnitude of one part but not how many parts have been selected." },
 });

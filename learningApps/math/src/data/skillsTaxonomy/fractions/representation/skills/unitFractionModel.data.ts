@@ -33,4 +33,5 @@ export const unitFractionModel_Skill_Data = buildSkillConfig({
     pl: "Modelowanie ułamków jednostkowych 1/n",
     uk: "Моделювання одиничних дробів 1/n",
   },
+  description: { methodological: "For positive integer n, 1/n represents one of n equal parts of a specified whole. In area, length, and discrete-set models, equality concerns the relevant magnitude, not necessarily identical shapes." },
 });

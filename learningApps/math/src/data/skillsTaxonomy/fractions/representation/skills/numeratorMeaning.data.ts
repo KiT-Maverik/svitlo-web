@@ -33,4 +33,5 @@ export const numeratorMeaning_Skill_Data = buildSkillConfig({
     pl: "Wyjaśnianie znaczenia licznika",
     uk: "Пояснення значення чисельника дробу",
   },
+  description: { methodological: "The numerator specifies the count of unit parts determined by the denominator. With a fixed positive denominator, increasing a nonnegative numerator increases the fraction, possibly above one." },
 });
