@@ -35,4 +35,5 @@ export const parts_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Задачі на частини й ціле",
   },
   skillIds: parts_Skills_Ids,
+  description: { methodological: "Relationships between a whole and its parts in contextual problems, including unit fractional parts." },
 });

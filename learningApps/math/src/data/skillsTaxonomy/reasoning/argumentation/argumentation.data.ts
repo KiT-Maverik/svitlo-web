@@ -35,4 +35,5 @@ export const argumentation_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Математична аргументація",
   },
   skillIds: argumentation_Skills_Ids,
+  description: { methodological: "Justifying conclusions from mathematical conditions, evaluating universal statements, and explaining the selected solution method." },
 });

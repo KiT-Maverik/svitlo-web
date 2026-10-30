@@ -35,4 +35,5 @@ export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Міркування",
   },
   groupIds: reasoning_SkillGroups_Ids,
+  description: { methodological: "Justifying mathematical statements, finding counterexamples, drawing logical conclusions, checking solutions, and translating between representations." },
 });

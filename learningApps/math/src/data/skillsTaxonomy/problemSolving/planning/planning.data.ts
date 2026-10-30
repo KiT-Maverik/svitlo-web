@@ -35,4 +35,5 @@ export const planning_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Планування розв’язання",
   },
   skillIds: planning_Skills_Ids,
+  description: { methodological: "Constructing and justifying a sequence of solution steps, checking units and answers, and considering alternative methods." },
 });
