@@ -62,7 +62,7 @@ export const compositeArea_Skill_Data = buildSkillConfig({
       lv: "Sadali no taisnstūriem veidotu figūru nepārklājošās daļās, saskaiti laukumus bez dubultas skaitīšanas.",
       et: "Jaga ristkülikutest koosnev kujund kattumatuteks osadeks, leia iga pindala ja liida ilma topeltarvestuseta.",
       be: "Падзялі фігуру з прастакутнікаў на часткі без накладаньняў, знайдзі іх плошчы й складзі, не лічачы двойчы.",
-      ka: "მართკუთხედებისგან შედგენილი ფიგურა დაუფარავ ნაწილებად დაყავი, მათი ფართობები შეკრიბე და ორჯერ არაფერი დათვალო.",
+      ka: "მართკუთხედებისგან შედგენილი ფიგურა გადაუფარავ ნაწილებად დაყავი, მათი ფართობები შეკრიბე და ორჯერ არაფერი დათვალო.",
       kk: "Тіктөртбұрыштардан құралған фигураны қабаттаспайтын бөліктерге бөліп, аудандарын қайталамай қос.",
     },
   },

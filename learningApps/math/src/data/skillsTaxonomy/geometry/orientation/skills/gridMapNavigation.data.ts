@@ -57,7 +57,7 @@ export const gridMapNavigation_Skill_Data = buildSkillConfig({
       ms: "Baca atau lukis peta berpetak untuk menunjukkan tempat dan laluan. Kekalkan arah dan skala yang konsisten.",
       he: "קראו או ציירו מפה משובצת שמציגה מקומות ומסלולים. שמרו על כיוונים וקנה מידה עקביים.",
       pl: "Czytaj i rysuj mapę w kratkę z miejscami i trasami. Stosuj te same kierunki i skalę.",
-      uk: "Читай або крес­ли карту в клітинку, показуй місця й маршрути. Дотримуйся однакових напрямків і масштабу.",
+      uk: "Читай або кресли карту в клітинку, показуй місця й маршрути. Дотримуйся однакових напрямків і масштабу.",
       lt: "Skaityk arba braižyk langelių žemėlapį su vietomis ir keliais. Išlaikyk nuoseklias kryptis ir mastelį.",
       lv: "Lasi vai zīmē rūtiņu karti, lai parādītu vietas un ceļus. Saglabā vienādus virzienus un mērogu.",
       et: "Loe või joonista ruudustikukaarti, et näidata kohti ja teid. Hoia suunad ja mõõtkava ühesugused.",

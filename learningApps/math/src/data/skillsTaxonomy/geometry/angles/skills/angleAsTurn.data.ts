@@ -51,7 +51,7 @@ export const angleAsTurn_Skill_Data = buildSkillConfig({
       ko: "두 반직선 사이의 회전 크기를 비교합니다. 변을 길게 그려도 각이 커지지 않습니다.",
       tr: "İki ışın arasındaki dönüş miktarını karşılaştır. Kolları uzun çizmek açıyı büyütmez.",
       vi: "So sánh mức quay giữa hai tia. Vẽ cạnh dài hơn không làm góc lớn hơn.",
-      ta: "இரு கதிர்களுக்கு இடையேயான திருப்பத்தை ஒப்பிடு. பக்கங்களை நீளமாக வரைந்தால் கோணம் பெரிதாகாது.",
+      ta: "ஒரே முனையிலிருந்து வரும் இரு கதிர்களுக்கு இடையேயான திருப்பத்தை ஒப்பிடு. பக்கங்களை நீளமாக வரைந்தால் கோணம் பெரிதாகாது.",
       te: "రెండు కిరణాల మధ్య తిరుగుదల ఎంత ఉందో పోల్చండి. భుజాలు పొడవుగా గీసినా కోణం పెరగదు.",
       mr: "दोन किरणांमधील वळणाची तुलना करा. भुजा लांब काढल्या तरी कोन मोठा होत नाही.",
       ms: "Bandingkan jumlah pusingan antara dua sinar. Melukis lengan lebih panjang tidak membesarkan sudut.",

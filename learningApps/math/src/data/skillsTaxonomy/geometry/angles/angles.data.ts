@@ -63,7 +63,7 @@ export const angles_SkillGroup_Data = buildSkillGroupConfig({
       lt: "Žiūrėk į kampus kaip į posūkius ir lygink juos su stačiuoju kampu, kad atpažintum rūšis.",
       lv: "Uztver leņķus kā pagriezienus un salīdzini tos ar taisnu leņķi, lai atpazītu veidus.",
       et: "Vaata nurki pööretena ja võrdle neid täisnurgaga, et eri liike ära tunda.",
-      be: "Глядзі на куты як на павароты й параўноўвай з простым кутом, каб пазнаваць віды.",
+      be: "Глядзі на куты як на павароты й параўноўвай з прамым кутом, каб пазнаваць віды.",
       ka: "კუთხეები ბრუნვებად აღიქვი და მართ კუთხეს შეადარე სხვადასხვა სახეობის გასარჩევად.",
       kk: "Бұрыштарды бұрылыс деп қарап, тік бұрышпен салыстыр және түрлерін таны.",
     },

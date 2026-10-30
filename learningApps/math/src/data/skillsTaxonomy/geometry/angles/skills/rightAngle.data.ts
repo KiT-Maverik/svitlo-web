@@ -61,7 +61,7 @@ export const rightAngle_Skill_Data = buildSkillConfig({
       lt: "Rask ir patikrink stačiuosius kampus net pasvirusius. Kiekvienas stačiasis kampas yra 90 laipsnių.",
       lv: "Atrodi un pārbaudi taisnus leņķus arī slīpā zīmējumā. Katrs taisns leņķis ir 90 grādi.",
       et: "Leia ja kontrolli täisnurki ka kaldus joonistel. Iga täisnurk on 90 kraadi.",
-      be: "Знаходзь і правярай простыя куты, нават нахіленыя. Кожны просты кут мае 90 градусаў.",
+      be: "Знаходзь і правярай прамыя куты, нават нахіленыя. Кожны прамы кут мае 90 градусаў.",
       ka: "იპოვე და შეამოწმე მართი კუთხეები დახრილ ნახატშიც. ყოველი მართი კუთხე 90 გრადუსია.",
       kk: "Көлбеу салынса да тік бұрыштарды тауып тексер. Әр тік бұрыш 90 градус.",
     },

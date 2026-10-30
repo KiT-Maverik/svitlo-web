@@ -58,7 +58,7 @@ export const rectanglePerimeter_Skill_Data = buildSkillConfig({
       he: "חשבו היקף מלבן בחיבור ארבע צלעותיו או בהכפלת סכום האורך והרוחב בשתיים.",
       pl: "Oblicz obwód prostokąta, dodając cztery boki lub podwajając sumę długości i szerokości.",
       uk: "Обчислюй периметр прямокутника, додаючи чотири сторони або подвоюючи суму довжини й ширини.",
-      lt: "Stačiakampio perimetrą rask sudėdamas visas kraštines arba dukart ilgį ir plotį sudėjęs.",
+      lt: "Stačiakampio perimetrą rask sudėdamas visas kraštines arba padvigubindamas ilgio ir pločio sumą.",
       lv: "Taisnstūra perimetru atrodi, saskaitot četras malas vai dubultojot garuma un platuma summu.",
       et: "Leia ristküliku ümbermõõt kõiki külgi liites või pikkuse ja laiuse summat kahekordistades.",
       be: "Вылічы пэрымэтар прастакутніка, склаўшы ўсе чатыры бакі або падвоіўшы суму даўжыні й шырыні.",
