@@ -3704,164 +3704,289 @@ User-friendly description: Recognize how cryptoassets differ from official digit
 
 ### Прикладна економіка
 
+Slug: appliedEconomics
+Action: create
+Status: pending
+
 Groups: 6 · Skills: 18
 
 [Not implemented](#)
 
-Спеціалізовані ринки та інституційні умови міст, житла, транспорту, освіти, охорони здоров’я і сільського господарства створюють відмінні економічні механізми. Цей домен класифікує економічні рішення та наслідки в галузях, не дублюючи географічні, медичні, педагогічні чи агрономічні компетентності.
+Methodological description: Specialized markets and institutional conditions in cities, housing, transport, education, healthcare, and agriculture create distinct economic mechanisms. This domain examines sector-specific choices and consequences without duplicating geographic, medical, educational, or agricultural competencies.
+User-friendly description: Explore how economic principles apply to cities, housing, transport, education, healthcare, and farming.
 
 #### Міста та регіони
 
+Slug: urbanAndRegionalEconomics
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Концентрація людей і підприємств створює вигоди близькості, інфраструктурні обмеження й різну спеціалізацію територій.
+Methodological description: Concentrations of people and firms yield benefits from proximity, infrastructure constraints, and regional specialization.
+User-friendly description: Discover why cities and regions develop different economic strengths.
 
 ##### Агломераційні ефекти
 
+Slug: agglomerationEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати переваги й витрати концентрації виробників і працівників у містах через обмін знаннями, спільні ресурси, транспортні перевантаження та ціни землі.
+Methodological description: Explain benefits and costs of concentrating firms and workers in cities through knowledge exchange, shared resources, congestion, and land prices.
+User-friendly description: Explore why clustering businesses can help productivity but also raise costs.
 
 ##### Регіональна спеціалізація
 
+Slug: regionalSpecialization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, чому різні території концентрують певні види діяльності залежно від доступності ресурсів, ринків, людського капіталу й інституцій.
+Methodological description: Analyze why different territories concentrate particular activities because of resource access, markets, human capital, and institutions.
+User-friendly description: Understand why different regions focus on different industries.
 
 ##### Регіональні економічні відмінності
 
+Slug: regionalEconomicDisparities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати економічні результати територій за продуктивністю, доходами, доступом до роботи та інфраструктури, відрізняючи рівень показника від географічного розташування.
+Methodological description: Compare territories' productivity, incomes, access to jobs, and infrastructure, distinguishing indicator levels from geographical location alone.
+User-friendly description: Compare economic opportunities across regions using relevant measures.
 
 #### Житло та нерухомість
 
+Slug: housingAndRealEstate
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Ціни й доступність житла залежать від землі, будівництва, доходів, іпотечного фінансування, локального попиту й регулювання.
+Methodological description: Housing prices and affordability depend on land, construction, income, mortgage finance, local demand, and regulation.
+User-friendly description: Explore why home prices and rents vary across places.
 
 ##### Ринок житла
 
+Slug: housingMarket
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати формування орендної плати й ціни житла під впливом локального попиту, доступної пропозиції, строків будівництва й фінансування.
+Methodological description: Analyze rents and house prices in relation to local demand, available supply, construction lead times, and financing.
+User-friendly description: Understand how local supply and demand affect housing prices.
 
 ##### Доступність житла
 
+Slug: housingAffordability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити витрати купівлі чи оренди житла з доходом, борговими зобов’язаннями, якістю та розташуванням; відрізняти доступність від самої ринкової ціни.
+Methodological description: Compare purchase or rental expenses with income, debts, quality, and location; distinguish affordability from market price alone.
+User-friendly description: Find out what makes a home affordable for a particular household.
 
 ##### Економіка землекористування
 
+Slug: landUseEconomics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як зонування, обмеження забудови й альтернативні способи використання ділянок впливають на ренту, обсяги будівництва й розміщення діяльності.
+Methodological description: Evaluate how zoning, development limits, and alternative uses of land affect rents, construction volumes, and the location of activity.
+User-friendly description: Explore how land-use rules influence where and what people build.
 
 #### Транспорт та інфраструктура
 
+Slug: transportAndInfrastructure
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Переміщення людей і товарів створює прямі й зовнішні витрати, а інфраструктура має тривалий строк служби та значні початкові вкладення.
+Methodological description: Moving people and goods creates direct and external costs, while infrastructure requires large initial investments and lasts for long periods.
+User-friendly description: Discover the economic trade-offs behind transport and public infrastructure.
 
 ##### Попит на транспортні послуги
 
+Slug: transportDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати вплив ціни, часу в дорозі, частоти, надійності й доступних альтернатив на вибір способу переміщення.
+Methodological description: Analyze how fare or price, travel time, frequency, reliability, and available alternatives affect choice of travel mode.
+User-friendly description: Explore what makes people choose one way of traveling over another.
 
 ##### Економіка транспортних заторів
 
+Slug: congestionEconomics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зовнішні витрати додаткового учасника перевантаженої мережі й порівнювати механізми ціноутворення або управління попитом.
+Methodological description: Evaluate the external costs of adding a user to a congested network and compare pricing or demand-management responses.
+User-friendly description: Understand why each extra vehicle can slow down others.
 
 ##### Оцінка інфраструктурних інвестицій
 
+Slug: infrastructureInvestmentAppraisal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставляти початкові й довгострокові витрати проєкту з економією часу, доступністю та іншими суспільними результатами на визначеному горизонті.
+Methodological description: Compare upfront and long-term project costs with travel-time savings, accessibility, and other social outcomes over a specified horizon.
+User-friendly description: Assess whether a transport project provides benefits worth its full costs.
 
 #### Освіта
 
+Slug: economicsOfEducation
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Інвестиції у знання мають приватну й суспільну віддачу, пов’язані з фінансуванням, доступом та інформаційною невизначеністю.
+Methodological description: Investing in knowledge creates private and social returns and raises questions of financing, access, and uncertain information.
+User-friendly description: Explore the benefits, costs, and funding of education.
 
 ##### Економічна віддача від освіти
 
+Slug: economicReturnsToEducation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати очікувані зміни доходу, продуктивності й можливостей у зіставленні з витратами часу та навчання, не ототожнюючи кореляцію освіти й заробітку з причинністю.
+Methodological description: Assess expected changes in earnings, productivity, and opportunity relative to time and schooling costs without automatically interpreting an education–earnings correlation as causal.
+User-friendly description: Compare the economic value of education with its time and financial costs.
 
 ##### Фінансування освіти
 
+Slug: educationFinancing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати приватне й публічне фінансування освітніх послуг за розподілом витрат, доступом і стимулами учасників.
+Methodological description: Compare private and public financing of education by cost distribution, access, and incentives.
+User-friendly description: Explore who pays for education and how funding choices affect access.
 
 ##### Економічна нерівність в освіті
 
+Slug: economicInequalityInEducation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як доходи сім’ї, місцеві ресурси, інституції й інформація можуть впливати на можливості навчання та подальші економічні результати.
+Methodological description: Analyze how household income, local resources, institutions, and information shape learning opportunities and later economic outcomes.
+User-friendly description: Understand why families and communities face unequal educational opportunities.
 
 #### Охорона здоров’я
 
+Slug: healthEconomics
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Медичні ринки мають суттєву інформаційну асиметрію, страхові механізми та зовнішні ефекти здоров’я населення.
+Methodological description: Healthcare markets involve substantial information asymmetry, insurance arrangements, and external effects of population health.
+User-friendly description: Discover why healthcare markets operate differently from ordinary product markets.
 
 ##### Ринки медичних послуг
 
+Slug: healthcareServiceMarkets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати взаємодію пацієнтів, лікарів, страховиків і закладів за нерівномірного доступу до інформації, цін та якості послуг.
+Methodological description: Analyze interactions among patients, clinicians, insurers, and facilities under unequal access to information, prices, and service quality.
+User-friendly description: Explore why buying healthcare involves complex information and incentives.
 
 ##### Медичне страхування та моральний ризик
 
+Slug: healthInsuranceAndMoralHazard
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як страхове покриття змінює розподіл витрат і стимули щодо користування послугами, не зводячи будь-яке звернення по допомогу до небажаної поведінки.
+Methodological description: Explain how insurance coverage changes the allocation of costs and incentives to use services without labeling all care-seeking as undesirable behavior.
+User-friendly description: Understand how insurance can change both who pays and how services are used.
 
 ##### Фінансування охорони здоров’я
 
+Slug: healthcareFinancing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати податкове, страхове та пряме фінансування за доступністю, фінансовим ризиком для домогосподарств і витратами системи.
+Methodological description: Compare tax-based, insurance-based, and direct payment by access, household financial risk, and system costs.
+User-friendly description: Compare different ways healthcare is funded.
 
 #### Сільське господарство
+
+Slug: agriculturalEconomics
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Біологічні цикли, погодна невизначеність, землекористування й міжнародний обмін формують специфіку аграрних ринків.
+Methodological description: Biological cycles, uncertain weather, land use, and international exchange shape agricultural markets.
+User-friendly description: Discover why farming involves distinctive costs and risks.
 
 ##### Аграрні ринки
 
+Slug: agriculturalMarkets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати формування цін на сільськогосподарську продукцію за сезонності, можливостей зберігання, коливань урожаю та міжнародної торгівлі.
+Methodological description: Analyze farm-product prices in light of seasonality, storage opportunities, harvest variations, and international trade.
+User-friendly description: Explore why food prices change with seasons, harvests, and trade.
 
 ##### Сезонність та аграрні ризики
 
+Slug: agriculturalSeasonalityAndRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вплив сезонних циклів, погодних шоків і змінних витрат на виробничі рішення та можливості страхування чи хеджування.
+Methodological description: Evaluate how seasonal cycles, weather shocks, and variable costs influence production and options for insurance or hedging.
+User-friendly description: Understand how farmers manage seasonal uncertainty and weather risks.
 
 ##### Продовольча безпека як економічна проблема
 
+Slug: foodSecurityAsAnEconomicIssue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати фізичну та економічну доступність продовольства, стабільність постачання й причини, чому достатній загальний випуск не гарантує доступ кожному.
+Methodological description: Analyze physical and economic access to food, stability of supplies, and why sufficient aggregate production does not ensure everyone can obtain food.
+User-friendly description: Explore why enough food being produced does not mean everyone can afford or access it.
