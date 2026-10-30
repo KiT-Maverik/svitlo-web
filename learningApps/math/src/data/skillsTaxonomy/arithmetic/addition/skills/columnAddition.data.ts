@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const columnAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.columnAddition,
   name: {
-    "lt": "Sudėtis — stulpeliu",
-    "lv": "Saskaitīšana — stabiņā",
-    "et": "Liitmine — kirjalik liitmine",
-    "be": "Складаньне — слупком",
-    "ka": "შეკრება — სვეტურად",
-    "kk": "Қосу — баған түрінде",
+    lt: "Sudėtis — stulpeliu",
+    lv: "Saskaitīšana — stabiņā",
+    et: "Liitmine — kirjalik liitmine",
+    be: "Складаньне — слупком",
+    ka: "შეკრება — სვეტურად",
+    kk: "Қосу — баған түрінде",
     en: "Addition — Column method",
     zh: "加法 — 竖式计算",
     hi: "जोड़ — स्तंभ विधि",
@@ -58,12 +58,12 @@ export const columnAddition_Skill_Data = buildSkillConfig({
       "he": "אפשר לחבר מספרים בטורים על ידי יישור הספרות לפי ערך המקום והעברה לטור הבא בעת הצורך.",
       "pl": "Potrafisz dodawać liczby pisemnie, wyrównując cyfry według wartości pozycyjnej i przenosząc do następnej kolumny, gdy trzeba.",
       "uk": "Ти можеш додавати числа стовпчиком, вирівнюючи розряди й переносячи до наступного розряду, коли потрібно.",
-      "lt": "Gali sudėti skaičius stulpeliu, sulygindamas skaitmenis pagal jų skyrius ir prireikus perkeldamas į kitą skyrių.",
-      "lv": "Tu vari saskaitīt skaitļus stabiņā, izlīdzinot ciparus pēc šķirām un vajadzības gadījumā pārnesot uz nākamo šķiru.",
-      "et": "Sa oskad liita arve kirjalikult, joondades numbrid järkude järgi ja kandes vajaduse korral üle järgmisse järku.",
-      "be": "Ты можаш складаць лікі слупком, выраўноўваючы разрады і пераносячы ў наступны разрад, калі гэта патрэбна.",
-      "ka": "შეგიძლია რიცხვები სვეტურად შეკრიბო, ციფრები თანრიგების მიხედვით გაასწორო და საჭიროებისას მომდევნო თანრიგში გადაიტანო.",
-      "kk": "Сандарды разрядтары бойынша туралап, баған түрінде қоса аласың және қажет болса, келесі разрядқа ауыстырасың."
+      lt: "Gali sudėti skaičius stulpeliu, sulygindamas skaitmenis pagal jų skyrius ir prireikus perkeldamas į kitą skyrių.",
+      lv: "Tu vari saskaitīt skaitļus stabiņā, izlīdzinot ciparus pēc šķirām un vajadzības gadījumā pārnesot uz nākamo šķiru.",
+      et: "Sa oskad liita arve kirjalikult, joondades numbrid järkude järgi ja kandes vajaduse korral üle järgmisse järku.",
+      be: "Ты можаш складаць лікі слупком, выраўноўваючы разрады і пераносячы ў наступны разрад, калі гэта патрэбна.",
+      ka: "შეგიძლია რიცხვები სვეტურად შეკრიბო, ციფრები თანრიგების მიხედვით გაასწორო და საჭიროებისას მომდევნო თანრიგში გადაიტანო.",
+      kk: "Сандарды разрядтары бойынша туралап, баған түрінде қоса аласың және қажет болса, келесі разрядқа ауыстырасың."
     },
   },
 });

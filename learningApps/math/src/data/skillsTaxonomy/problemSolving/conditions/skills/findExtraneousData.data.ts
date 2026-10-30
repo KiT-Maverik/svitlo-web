@@ -4,12 +4,12 @@ import { conditions_Skills_Ids } from './index.ids';
 export const findExtraneousData_Skill_Data = buildSkillConfig({
   id: conditions_Skills_Ids.findExtraneousData,
   name: {
-    "lt": "Nereikalingų duomenų atpažinimas",
-    "lv": "Lieku datu atpazīšana",
-    "et": "Üleliigsete andmete tuvastamine",
-    "be": "Выяўленьне лішніх зьвестак",
-    "ka": "ზედმეტი მონაცემების ამოცნობა",
-    "kk": "Артық мәліметтерді анықтау",
+    lt: "Nereikalingų duomenų atpažinimas",
+    lv: "Lieku datu atpazīšana",
+    et: "Üleliigsete andmete tuvastamine",
+    be: "Выяўленьне лішніх зьвестак",
+    ka: "ზედმეტი მონაცემების ამოცნობა",
+    kk: "Артық мәліметтерді анықтау",
     en: "Recognizing irrelevant information",
     zh: "识别无关信息",
     hi: "अनावश्यक जानकारी पहचानना",

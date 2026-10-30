@@ -4,12 +4,12 @@ import { models_Skills_Ids } from './index.ids';
 export const chooseOperationMulDiv_Skill_Data = buildSkillConfig({
   id: models_Skills_Ids.chooseOperationMulDiv,
   name: {
-    "lt": "Daugybos ar dalybos pasirinkimas",
-    "lv": "Reizināšanas vai dalīšanas izvēle",
-    "et": "Korrutamise või jagamise valimine",
-    "be": "Выбар множаньня або дзяленьня",
-    "ka": "გამრავლების ან გაყოფის არჩევა",
-    "kk": "Көбейту немесе бөлу амалын таңдау",
+    lt: "Daugybos ar dalybos pasirinkimas",
+    lv: "Reizināšanas vai dalīšanas izvēle",
+    et: "Korrutamise või jagamise valimine",
+    be: "Выбар множаньня або дзяленьня",
+    ka: "გამრავლების ან გაყოფის არჩევა",
+    kk: "Көбейту немесе бөлу амалын таңдау",
     en: "Choosing multiplication or division",
     zh: "选择乘法或除法",
     hi: "गुणा या भाग चुनना",

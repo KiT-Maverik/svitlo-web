@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const roundTens_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.roundTens,
   name: {
-    "lt": "Daugyba — pilnos dešimtys",
-    "lv": "Reizināšana — pilni desmiti",
-    "et": "Korrutamine — täiskümned",
-    "be": "Множаньне — круглыя дзясяткі",
-    "ka": "გამრავლება — სრული ათეულები",
-    "kk": "Көбейту — толық ондықтар",
+    lt: "Daugyba — pilnos dešimtys",
+    lv: "Reizināšana — pilni desmiti",
+    et: "Korrutamine — täiskümned",
+    be: "Множаньне — круглыя дзясяткі",
+    ka: "გამრავლება — სრული ათეულები",
+    kk: "Көбейту — толық ондықтар",
     en: "Multiplication — Whole tens",
     zh: "乘法 — 整十数",
     hi: "गुणा — पूरे दहाई",
@@ -58,12 +58,12 @@ export const roundTens_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול עשרות שלמות במספר חד־ספרתי ולהמיר עשר עשרות במאה אחת לפי הצורך.",
       "pl": "Możesz mnożyć pełne dziesiątki przez liczbę jednocyfrową i w razie potrzeby zamienić dziesięć dziesiątek na setkę.",
       "uk": "Ти можеш множити круглі десятки на одноцифрове число й за потреби об’єднувати десять десятків в одну сотню.",
-      "lt": "Gali dauginti pilnas dešimtis iš vienaženklio skaičiaus ir prireikus dešimt dešimčių pakeisti vienu šimtu.",
-      "lv": "Tu vari reizināt pilnus desmitus ar viencipara skaitli un vajadzības gadījumā desmit desmitus apvienot vienā simtā.",
-      "et": "Sa saad täiskümnelisi ühekohalise arvuga korrutada ja vajaduse korral kümme kümnelist üheks sajaliseks rühmitada.",
-      "be": "Ты можаш множыць поўныя дзясяткі на адназначны лік і пры патрэбе аб’ядноўваць дзесяць дзясяткаў у адну сотню.",
-      "ka": "შეგიძლია სრული ათეულები ერთნიშნა რიცხვზე გაამრავლო და საჭიროებისას ათი ათეული ერთ ასეულად გადააჯგუფო.",
-      "kk": "Толық ондықтарды бір таңбалы санға көбейтіп, қажет болса он ондықты бір жүздікке біріктіре аласың."
+      lt: "Gali dauginti pilnas dešimtis iš vienaženklio skaičiaus ir prireikus dešimt dešimčių pakeisti vienu šimtu.",
+      lv: "Tu vari reizināt pilnus desmitus ar viencipara skaitli un vajadzības gadījumā desmit desmitus apvienot vienā simtā.",
+      et: "Sa saad täiskümnelisi ühekohalise arvuga korrutada ja vajaduse korral kümme kümnelist üheks sajaliseks rühmitada.",
+      be: "Ты можаш множыць поўныя дзясяткі на адназначны лік і пры патрэбе аб’ядноўваць дзесяць дзясяткаў у адну сотню.",
+      ka: "შეგიძლია სრული ათეულები ერთნიშნა რიცხვზე გაამრავლო და საჭიროებისას ათი ათეული ერთ ასეულად გადააჯგუფო.",
+      kk: "Толық ондықтарды бір таңбалы санға көбейтіп, қажет болса он ондықты бір жүздікке біріктіре аласың."
     },
   },
 });

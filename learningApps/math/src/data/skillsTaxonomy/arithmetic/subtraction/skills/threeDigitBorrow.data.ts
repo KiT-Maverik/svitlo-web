@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const threeDigitBorrow_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.threeDigitBorrow,
   name: {
-    "lt": "Atimtis — triženkliai skaičiai su skolinimusi",
-    "lv": "Atņemšana — trīsciparu skaitļi ar aizņemšanos",
-    "et": "Lahutamine — kolmekohalised arvud laenamisega",
-    "be": "Адніманьне — трохзначныя лікі з разьяднаньнем",
-    "ka": "გამოკლება — სამნიშნა რიცხვები გადაჯგუფებით",
-    "kk": "Азайту — үш таңбалы сандар разрядтан алумен",
+    lt: "Atimtis — triženkliai skaičiai su skolinimusi",
+    lv: "Atņemšana — trīsciparu skaitļi ar aizņemšanos",
+    et: "Lahutamine — kolmekohalised arvud laenamisega",
+    be: "Адніманьне — трохзначныя лікі з разьяднаньнем",
+    ka: "გამოკლება — სამნიშნა რიცხვები გადაჯგუფებით",
+    kk: "Азайту — үш таңбалы сандар разрядтан алумен",
     en: "Subtraction — 3-digit · Borrowing",
     zh: "减法 — 3-位数 · 退位",
     hi: "घटाव — 3-अंकीय · उधार लेना",
@@ -58,12 +58,12 @@ export const threeDigitBorrow_Skill_Data = buildSkillConfig({
       "he": "אפשר לחסר מספרים תלת־ספרתיים על ידי המרת מאה לעשרות או עשרת ליחידות, גם כשבאחד המקומות מופיע אפס.",
       "pl": "Możesz odejmować liczby trzycyfrowe, zamieniając setkę na dziesiątki lub dziesiątkę na jedności, nawet gdy w jednym rzędzie jest zero.",
       "uk": "Ти можеш віднімати трицифрові числа, обмінюючи сотню на десятки або десяток на одиниці, навіть якщо в одному з розрядів є нуль.",
-      "lt": "Gali atimti triženklius skaičius, pakeisdamas šimtą dešimtimis ar dešimtį vienetais, net jei kuriame nors skyriuje yra nulis.",
-      "lv": "Tu vari atņemt trīsciparu skaitļus, vienu simtu apmainot pret desmitiem vai vienu desmitu pret vieniem, pat ja kādā šķirā ir nulle.",
-      "et": "Sa saad kolmekohalisi arve lahutada, vahetades ühe sajalise kümnelisteks või ühe kümnelise ühelisteks, ka siis, kui mõnes järgus on null.",
-      "be": "Ты можаш адымаць трохзначныя лікі, замяняючы сотню дзясяткамі або дзясятак адзінкамі, нават калі ў адным разрадзе нуль.",
-      "ka": "შეგიძლია სამნიშნა რიცხვები გამოაკლო, ერთი ასეული ათეულებად ან ერთი ათეული ერთეულებად გადააქციო, მაშინაც კი, როცა ერთ-ერთ თანრიგში ნულია.",
-      "kk": "Үш таңбалы сандарды азайтқанда бір жүздікті ондықтарға немесе бір ондықты бірліктерге ауыстыра аласың, тіпті бір разрядта нөл болса да."
+      lt: "Gali atimti triženklius skaičius, pakeisdamas šimtą dešimtimis ar dešimtį vienetais, net jei kuriame nors skyriuje yra nulis.",
+      lv: "Tu vari atņemt trīsciparu skaitļus, vienu simtu apmainot pret desmitiem vai vienu desmitu pret vieniem, pat ja kādā šķirā ir nulle.",
+      et: "Sa saad kolmekohalisi arve lahutada, vahetades ühe sajalise kümnelisteks või ühe kümnelise ühelisteks, ka siis, kui mõnes järgus on null.",
+      be: "Ты можаш адымаць трохзначныя лікі, замяняючы сотню дзясяткамі або дзясятак адзінкамі, нават калі ў адным разрадзе нуль.",
+      ka: "შეგიძლია სამნიშნა რიცხვები გამოაკლო, ერთი ასეული ათეულებად ან ერთი ათეული ერთეულებად გადააქციო, მაშინაც კი, როცა ერთ-ერთ თანრიგში ნულია.",
+      kk: "Үш таңбалы сандарды азайтқанда бір жүздікті ондықтарға немесе бір ондықты бірліктерге ауыстыра аласың, тіпті бір разрядта нөл болса да."
     },
   },
 });

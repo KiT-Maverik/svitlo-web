@@ -4,12 +4,12 @@ import { planning_Skills_Ids } from './index.ids';
 export const multipleSolutionStrategies_Skill_Data = buildSkillConfig({
   id: planning_Skills_Ids.multipleSolutionStrategies,
   name: {
-    "lt": "Sprendimo būdų palyginimas",
-    "lv": "Risināšanas paņēmienu salīdzināšana",
-    "et": "Lahendusstrateegiate võrdlemine",
-    "be": "Параўнаньне спосабаў разьвязаньня",
-    "ka": "ამოხსნის სტრატეგიების შედარება",
-    "kk": "Шешу тәсілдерін салыстыру",
+    lt: "Sprendimo būdų palyginimas",
+    lv: "Risināšanas paņēmienu salīdzināšana",
+    et: "Lahendusstrateegiate võrdlemine",
+    be: "Параўнаньне спосабаў разьвязаньня",
+    ka: "ამოხსნის სტრატეგიების შედარება",
+    kk: "Шешу тәсілдерін салыстыру",
     en: "Comparing solution strategies",
     zh: "比较解题策略",
     hi: "समाधान की रणनीतियों की तुलना",

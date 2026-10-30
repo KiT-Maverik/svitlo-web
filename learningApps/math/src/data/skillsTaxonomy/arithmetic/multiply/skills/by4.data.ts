@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by4_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by4,
   name: {
-    "lt": "Daugyba — × 4",
-    "lv": "Reizināšana — × 4",
-    "et": "Korrutamine — × 4",
-    "be": "Множаньне — × 4",
-    "ka": "გამრავლება — × 4",
-    "kk": "Көбейту — × 4",
+    lt: "Daugyba — × 4",
+    lv: "Reizināšana — × 4",
+    et: "Korrutamine — × 4",
+    be: "Множаньне — × 4",
+    ka: "გამრავლება — × 4",
+    kk: "Көбейту — × 4",
     en: "Multiplication — × 4",
     zh: "乘法 — × 4",
     hi: "गुणा — × 4",
@@ -58,12 +58,12 @@ export const by4_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול בארבע באמצעות ארבע קבוצות שוות או על ידי הכפלת כמות פי שניים פעמיים.",
       "pl": "Możesz mnożyć przez cztery, korzystając z czterech równych grup lub podwajając ilość dwa razy.",
       "uk": "Ти можеш множити на чотири за допомогою чотирьох рівних груп або двічі подвоюючи кількість.",
-      "lt": "Gali dauginti iš keturių naudodamas keturias lygias grupes arba du kartus padvigubindamas kiekį.",
-      "lv": "Tu vari reizināt ar četri, izmantojot četras vienādas grupas vai divreiz dubultojot daudzumu.",
-      "et": "Sa saad neljaga korrutada nelja võrdse rühma abil või kogust kaks korda kahekordistades.",
-      "be": "Ты можаш множыць на чатыры праз чатыры роўныя групы або двойчы падвойваючы колькасьць.",
-      "ka": "შეგიძლია ოთხზე გამრავლება ოთხი თანაბარი ჯგუფით ან რაოდენობის ორჯერ გაორმაგებით.",
-      "kk": "Төртке көбейтуді төрт бірдей топ арқылы немесе мөлшерді екі рет екі еселеу арқылы орындай аласың."
+      lt: "Gali dauginti iš keturių naudodamas keturias lygias grupes arba du kartus padvigubindamas kiekį.",
+      lv: "Tu vari reizināt ar četri, izmantojot četras vienādas grupas vai divreiz dubultojot daudzumu.",
+      et: "Sa saad neljaga korrutada nelja võrdse rühma abil või kogust kaks korda kahekordistades.",
+      be: "Ты можаш множыць на чатыры праз чатыры роўныя групы або двойчы падвойваючы колькасьць.",
+      ka: "შეგიძლია ოთხზე გამრავლება ოთხი თანაბარი ჯგუფით ან რაოდენობის ორჯერ გაორმაგებით.",
+      kk: "Төртке көбейтуді төрт бірдей топ арқылы немесе мөлшерді екі рет екі еселеу арқылы орындай аласың."
     },
   },
 });

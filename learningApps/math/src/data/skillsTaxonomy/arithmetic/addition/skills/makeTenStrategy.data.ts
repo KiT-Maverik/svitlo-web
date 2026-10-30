@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const makeTenStrategy_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.makeTenStrategy,
   name: {
-    "lt": "Sudėtis — dešimties sudarymo strategija",
-    "lv": "Saskaitīšana — desmita veidošanas paņēmiens",
-    "et": "Liitmine — kümne moodustamine",
-    "be": "Складаньне — дапаўненьне да дзесяці",
-    "ka": "შეკრება — ათეულამდე შევსება",
-    "kk": "Қосу — ондыққа толықтыру",
+    lt: "Sudėtis — dešimties sudarymo strategija",
+    lv: "Saskaitīšana — desmita veidošanas paņēmiens",
+    et: "Liitmine — kümne moodustamine",
+    be: "Складаньне — дапаўненьне да дзесяці",
+    ka: "შეკრება — ათეულამდე შევსება",
+    kk: "Қосу — ондыққа толықтыру",
     en: "Addition — Making ten",
     zh: "加法 — 凑十法",
     hi: "जोड़ — दस पूरा करना",
@@ -58,12 +58,12 @@ export const makeTenStrategy_Skill_Data = buildSkillConfig({
       "he": "אפשר לפרק אחד המחוברים כדי להגיע קודם לעשרת השלמה הבאה, ואז לחבר את השארית בלי לשנות את הסכום.",
       "pl": "Możesz rozłożyć jeden ze składników, aby najpierw dopełnić do kolejnej pełnej dziesiątki, a potem dodać resztę bez zmiany sumy.",
       "uk": "Ти можеш розкласти один доданок, щоб спершу доповнити інший до наступного десятка, а потім додати решту без зміни суми.",
-      "lt": "Gali išskaidyti vieną dėmenį, kad pirmiausia gautum kitą pilną dešimtį, o tada pridėti likutį nepakeisdamas sumos.",
-      "lv": "Tu vari sadalīt vienu saskaitāmo, lai vispirms sasniegtu nākamo pilno desmitu, un tad pieskaitīt atlikušo daļu, nemainot summu.",
-      "et": "Sa saad ühe liidetava osadeks jaotada, et jõuda esmalt järgmise täiskümneni, ja seejärel lisada ülejäänu, ilma et summa muutuks.",
-      "be": "Ты можаш раскласьці адзін складнік, каб спачатку дапоўніць другі да наступнага дзясятка, а пасьля дадаць рэшту безь зьмены сумы.",
-      "ka": "შეგიძლია ერთი შესაკრები დაშალო, ჯერ მომდევნო სრულ ათეულამდე მიხვიდე, შემდეგ კი დარჩენილი ნაწილი დაუმატო ისე, რომ ჯამი არ შეიცვალოს.",
-      "kk": "Бір қосылғышты бөліктерге ажыратып, алдымен келесі толық ондыққа жетіп, содан кейін қалғанын қоса аласың; қосынды өзгермейді."
+      lt: "Gali išskaidyti vieną dėmenį, kad pirmiausia gautum kitą pilną dešimtį, o tada pridėti likutį nepakeisdamas sumos.",
+      lv: "Tu vari sadalīt vienu saskaitāmo, lai vispirms sasniegtu nākamo pilno desmitu, un tad pieskaitīt atlikušo daļu, nemainot summu.",
+      et: "Sa saad ühe liidetava osadeks jaotada, et jõuda esmalt järgmise täiskümneni, ja seejärel lisada ülejäänu, ilma et summa muutuks.",
+      be: "Ты можаш раскласьці адзін складнік, каб спачатку дапоўніць другі да наступнага дзясятка, а пасьля дадаць рэшту безь зьмены сумы.",
+      ka: "შეგიძლია ერთი შესაკრები დაშალო, ჯერ მომდევნო სრულ ათეულამდე მიხვიდე, შემდეგ კი დარჩენილი ნაწილი დაუმატო ისე, რომ ჯამი არ შეიცვალოს.",
+      kk: "Бір қосылғышты бөліктерге ажыратып, алдымен келесі толық ондыққа жетіп, содан кейін қалғанын қоса аласың; қосынды өзгермейді."
     },
   },
 });

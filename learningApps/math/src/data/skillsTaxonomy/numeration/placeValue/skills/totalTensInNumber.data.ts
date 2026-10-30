@@ -4,12 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const totalTensInNumber_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.totalTensInNumber,
   name: {
-    "lt": "Pilnų dešimčių skaičius skaičiuje",
-    "lv": "Pilnu desmitu skaits skaitlī",
-    "et": "Täiskümnete arv arvus",
-    "be": "Колькасьць поўных дзясяткаў у ліку",
-    "ka": "რიცხვში სრული ათეულების რაოდენობა",
-    "kk": "Сандағы толық ондықтардың саны",
+    lt: "Pilnų dešimčių skaičius skaičiuje",
+    lv: "Pilnu desmitu skaits skaitlī",
+    et: "Täiskümnete arv arvus",
+    be: "Колькасьць поўных дзясяткаў у ліку",
+    ka: "რიცხვში სრული ათეულების რაოდენობა",
+    kk: "Сандағы толық ондықтардың саны",
     en: "Total tens and hundreds in a number",
     zh: "求一个数中完整的十和百的总数",
     hi: "संख्या में कुल दहाइयाँ और सैकड़े",

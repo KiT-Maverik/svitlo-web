@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by4_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by4,
   name: {
-    "lt": "Dalyba — ÷ 4",
-    "lv": "Dalīšana — ÷ 4",
-    "et": "Jagamine — ÷ 4",
-    "be": "Дзяленьне — ÷ 4",
-    "ka": "გაყოფა — ÷ 4",
-    "kk": "Бөлу — ÷ 4",
+    lt: "Dalyba — ÷ 4",
+    lv: "Dalīšana — ÷ 4",
+    et: "Jagamine — ÷ 4",
+    be: "Дзяленьне — ÷ 4",
+    ka: "გაყოფა — ÷ 4",
+    kk: "Бөлу — ÷ 4",
     en: "Division — ÷ 4",
     zh: "除法 — ÷ 4",
     hi: "भाग — ÷ 4",
@@ -58,12 +58,12 @@ export const by4_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בארבע באמצעות קבוצות שוות או עובדות הכפל בארבע, ולעיתים על ידי חצייה פעמיים.",
       "pl": "Możesz dzielić przez cztery za pomocą równych grup lub tabliczki mnożenia, a czasem dzieląc na pół dwa razy.",
       "uk": "Ти можеш ділити на чотири за допомогою рівних груп або відомих добутків, а інколи — двічі навпіл.",
-      "lt": "Gali dalyti iš keturių naudodamasis lygiomis grupėmis ar daugybos faktais, kartais dalydamas pusiau du kartus.",
-      "lv": "Tu vari dalīt ar 4, izmantojot vienādas grupas vai zināmus reizinājumus, dažkārt divreiz dalot uz pusēm.",
-      "et": "Sa saad neljaga jagada võrdsete rühmade või korrutamisfaktide abil, vahel ka kaks korda poolitades.",
-      "be": "Ты можаш дзяліць на чатыры праз роўныя групы або вядомыя здабыткі, а часам — двойчы напалам.",
-      "ka": "შეგიძლია ოთხზე გაყოფა თანაბარი ჯგუფებით ან გამრავლების ფაქტებით, ზოგჯერ კი ორჯერ განახევრებით.",
-      "kk": "Төртке бөлуді бірдей топтар немесе көбейту нәтижелері арқылы, кейде екі рет жартылау арқылы орындай аласың."
+      lt: "Gali dalyti iš keturių naudodamasis lygiomis grupėmis ar daugybos faktais, kartais dalydamas pusiau du kartus.",
+      lv: "Tu vari dalīt ar 4, izmantojot vienādas grupas vai zināmus reizinājumus, dažkārt divreiz dalot uz pusēm.",
+      et: "Sa saad neljaga jagada võrdsete rühmade või korrutamisfaktide abil, vahel ka kaks korda poolitades.",
+      be: "Ты можаш дзяліць на чатыры праз роўныя групы або вядомыя здабыткі, а часам — двойчы напалам.",
+      ka: "შეგიძლია ოთხზე გაყოფა თანაბარი ჯგუფებით ან გამრავლების ფაქტებით, ზოგჯერ კი ორჯერ განახევრებით.",
+      kk: "Төртке бөлуді бірдей топтар немесе көбейту нәтижелері арқылы, кейде екі рет жартылау арқылы орындай аласың."
     },
   },
 });

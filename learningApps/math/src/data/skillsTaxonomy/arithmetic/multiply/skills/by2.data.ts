@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by2_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by2,
   name: {
-    "lt": "Daugyba — × 2",
-    "lv": "Reizināšana — × 2",
-    "et": "Korrutamine — × 2",
-    "be": "Множаньне — × 2",
-    "ka": "გამრავლება — × 2",
-    "kk": "Көбейту — × 2",
+    lt: "Daugyba — × 2",
+    lv: "Reizināšana — × 2",
+    et: "Korrutamine — × 2",
+    be: "Множаньне — × 2",
+    ka: "გამრავლება — × 2",
+    kk: "Көбейту — × 2",
     en: "Multiplication — × 2",
     zh: "乘法 — × 2",
     hi: "गुणा — × 2",
@@ -58,12 +58,12 @@ export const by2_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא פי שניים מכמות על ידי חיבור הכמות לעצמה.",
       "pl": "Możesz znaleźć podwójną ilość, dodając ją do niej samej.",
       "uk": "Ти можеш знайти подвійну кількість, додавши її до самої себе.",
-      "lt": "Gali rasti dvigubą kiekį pridėdamas jį prie jo paties.",
-      "lv": "Tu vari atrast divkāršu daudzumu, pieskaitot daudzumu tam pašam.",
-      "et": "Sa saad koguse kahekordistada, liites selle iseendaga.",
-      "be": "Ты можаш знайсьці падвойную колькасьць, склаўшы яе з самой сабою.",
-      "ka": "შეგიძლია რაოდენობა გააორმაგო, თუ მას თავის თავს მიუმატებ.",
-      "kk": "Мөлшерді өзіне қосып, оның екі есесін таба аласың."
+      lt: "Gali rasti dvigubą kiekį pridėdamas jį prie jo paties.",
+      lv: "Tu vari atrast divkāršu daudzumu, pieskaitot daudzumu tam pašam.",
+      et: "Sa saad koguse kahekordistada, liites selle iseendaga.",
+      be: "Ты можаш знайсьці падвойную колькасьць, склаўшы яе з самой сабою.",
+      ka: "შეგიძლია რაოდენობა გააორმაგო, თუ მას თავის თავს მიუმატებ.",
+      kk: "Мөлшерді өзіне қосып, оның екі есесін таба аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const doubleHalf_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.doubleHalf,
   name: {
-    "lt": "Dalyba — dalijimas pusiau ir dvigubinimas",
-    "lv": "Dalīšana — dalīšana uz pusēm un dubultošana",
-    "et": "Jagamine — poolitamine ja kahekordistamine",
-    "be": "Дзяленьне — палавіна й падваеньне",
-    "ka": "გაყოფა — განახევრება და გაორმაგება",
-    "kk": "Бөлу — жартылау және екі еселеу",
+    lt: "Dalyba — dalijimas pusiau ir dvigubinimas",
+    lv: "Dalīšana — dalīšana uz pusēm un dubultošana",
+    et: "Jagamine — poolitamine ja kahekordistamine",
+    be: "Дзяленьне — палавіна й падваеньне",
+    ka: "გაყოფა — განახევრება და გაორმაგება",
+    kk: "Бөлу — жартылау және екі еселеу",
     en: "Division — Halving and doubling",
     zh: "除法 — 减半与加倍",
     hi: "भाग — आधा और दुगुना",
@@ -58,12 +58,12 @@ export const doubleHalf_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק כמות זוגית לשני חלקים שווים ולבדוק על ידי הכפלת אחד מהם פי שניים.",
       "pl": "Możesz podzielić parzystą ilość na dwie równe części i sprawdzić wynik, podwajając jedną z nich.",
       "uk": "Ти можеш поділити парну кількість на дві рівні частини й перевірити результат, подвоївши одну частину.",
-      "lt": "Gali padalyti lyginį kiekį į dvi lygias dalis ir patikrinti, padvigubindamas vieną dalį.",
-      "lv": "Tu vari sadalīt pāra daudzumu divās vienādās daļās un pārbaudīt, dubultojot vienu daļu.",
-      "et": "Sa saad paarisarvulise koguse jagada kaheks võrdseks osaks ja kontrollida ühe osa kahekordistamisega.",
-      "be": "Ты можаш падзяліць цотную колькасьць на дзьве роўныя часткі й праверыць вынік, падвоіўшы адну частку.",
-      "ka": "შეგიძლია ლუწი რაოდენობა ორ თანაბარ ნაწილად გაყო და ერთი ნაწილის გაორმაგებით შეამოწმო.",
-      "kk": "Жұп мөлшерді екі тең бөлікке бөліп, біреуін екі еселеу арқылы тексере аласың."
+      lt: "Gali padalyti lyginį kiekį į dvi lygias dalis ir patikrinti, padvigubindamas vieną dalį.",
+      lv: "Tu vari sadalīt pāra daudzumu divās vienādās daļās un pārbaudīt, dubultojot vienu daļu.",
+      et: "Sa saad paarisarvulise koguse jagada kaheks võrdseks osaks ja kontrollida ühe osa kahekordistamisega.",
+      be: "Ты можаш падзяліць цотную колькасьць на дзьве роўныя часткі й праверыць вынік, падвоіўшы адну частку.",
+      ka: "შეგიძლია ლუწი რაოდენობა ორ თანაბარ ნაწილად გაყო და ერთი ნაწილის გაორმაგებით შეამოწმო.",
+      kk: "Жұп мөлшерді екі тең бөлікке бөліп, біреуін екі еселеу арқылы тексере аласың."
     },
   },
 });

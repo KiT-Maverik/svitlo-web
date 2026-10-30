@@ -4,12 +4,12 @@ import { notation_Skills_Ids } from './index.ids';
 export const readWrite100_Skill_Data = buildSkillConfig({
   id: notation_Skills_Ids.readWrite100,
   name: {
-    "lt": "Skaičių iki 100 skaitymas ir rašymas",
-    "lv": "Skaitļu līdz 100 lasīšana un rakstīšana",
-    "et": "Arvude 0–100 lugemine ja kirjutamine",
-    "be": "Чытаньне й запіс лікаў да 100",
-    "ka": "100-მდე რიცხვების წაკითხვა და ჩაწერა",
-    "kk": "100-ге дейінгі сандарды оқу және жазу",
+    lt: "Skaičių iki 100 skaitymas ir rašymas",
+    lv: "Skaitļu līdz 100 lasīšana un rakstīšana",
+    et: "Arvude 0–100 lugemine ja kirjutamine",
+    be: "Чытаньне й запіс лікаў да 100",
+    ka: "100-მდე რიცხვების წაკითხვა და ჩაწერა",
+    kk: "100-ге дейінгі сандарды оқу және жазу",
     en: "Reading and writing numbers to 100",
     zh: "读写100以内的数",
     hi: "100 तक की संख्याएँ पढ़ना और लिखना",

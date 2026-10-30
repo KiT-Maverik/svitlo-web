@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const relationToMultiplication_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.relationToMultiplication,
   name: {
-    "lt": "Dalyba — atvirkštiniai veiksmai",
-    "lv": "Dalīšana — pretējās darbības",
-    "et": "Jagamine — pöördtehted",
-    "be": "Дзяленьне — адваротныя дзеяньні",
-    "ka": "გაყოფა — შებრუნებული მოქმედებები",
-    "kk": "Бөлу — кері амалдар",
+    lt: "Dalyba — atvirkštiniai veiksmai",
+    lv: "Dalīšana — pretējās darbības",
+    et: "Jagamine — pöördtehted",
+    be: "Дзяленьне — адваротныя дзеяньні",
+    ka: "გაყოფა — შებრუნებული მოქმედებები",
+    kk: "Бөлу — кері амалдар",
     en: "Division — Inverse operations",
     zh: "除法 — 逆运算",
     hi: "भाग — व्युत्क्रम संक्रियाएँ",
@@ -58,12 +58,12 @@ export const relationToMultiplication_Skill_Data = buildSkillConfig({
       "he": "אפשר להשתמש בכפל כדי למצוא או לבדוק תוצאת חילוק, כי שתי הפעולות הפוכות זו לזו.",
       "pl": "Możesz używać mnożenia do znajdowania lub sprawdzania wyników dzielenia, bo działania są odwrotne.",
       "uk": "Ти можеш використовувати множення, щоб знаходити чи перевіряти частку, адже ці дії обернені.",
-      "lt": "Gali naudoti daugybą dalybos rezultatui rasti ar patikrinti, nes šie veiksmai atvirkštiniai.",
-      "lv": "Tu vari izmantot reizināšanu, lai atrastu vai pārbaudītu dalīšanas rezultātu, jo darbības ir pretējas.",
-      "et": "Sa saad kasutada korrutamist jagamistehte lahendamiseks või kontrollimiseks, sest need on pöördtehted.",
-      "be": "Ты можаш выкарыстоўваць множаньне, каб знаходзіць ці правяраць дзель, бо гэтыя дзеяньні адваротныя.",
-      "ka": "შეგიძლია გამრავლებით გაყოფის შედეგი იპოვო ან შეამოწმო, რადგან ეს მოქმედებები ერთმანეთის შებრუნებულია.",
-      "kk": "Көбейту мен бөлу кері амалдар болғандықтан, көбейту арқылы бөліндіні тауып немесе тексере аласың."
+      lt: "Gali naudoti daugybą dalybos rezultatui rasti ar patikrinti, nes šie veiksmai atvirkštiniai.",
+      lv: "Tu vari izmantot reizināšanu, lai atrastu vai pārbaudītu dalīšanas rezultātu, jo darbības ir pretējas.",
+      et: "Sa saad kasutada korrutamist jagamistehte lahendamiseks või kontrollimiseks, sest need on pöördtehted.",
+      be: "Ты можаш выкарыстоўваць множаньне, каб знаходзіць ці правяраць дзель, бо гэтыя дзеяньні адваротныя.",
+      ka: "შეგიძლია გამრავლებით გაყოფის შედეგი იპოვო ან შეამოწმო, რადგან ეს მოქმედებები ერთმანეთის შებრუნებულია.",
+      kk: "Көбейту мен бөлу кері амалдар болғандықтан, көбейту арқылы бөліндіні тауып немесе тексере аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const checkQuotient_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.checkQuotient,
   name: {
-    "lt": "Dalyba — rezultato tikrinimas",
-    "lv": "Dalīšana — rezultāta pārbaude",
-    "et": "Jagamine — tulemuse kontrollimine",
-    "be": "Дзяленьне — праверка выніку",
-    "ka": "გაყოფა — შედეგის შემოწმება",
-    "kk": "Бөлу — нәтижені тексеру",
+    lt: "Dalyba — rezultato tikrinimas",
+    lv: "Dalīšana — rezultāta pārbaude",
+    et: "Jagamine — tulemuse kontrollimine",
+    be: "Дзяленьне — праверка выніку",
+    ka: "გაყოფა — შედეგის შემოწმება",
+    kk: "Бөлу — нәтижені тексеру",
     en: "Division — Result checking",
     zh: "除法 — 结果检验",
     hi: "भाग — उत्तर की जाँच",
@@ -58,12 +58,12 @@ export const checkQuotient_Skill_Data = buildSkillConfig({
       "he": "אפשר לבדוק חילוק באמצעות כפל המחלק במנה והוספת השארית. השארית חייבת להיות קטנה מהמחלק החיובי.",
       "pl": "Możesz sprawdzić dzielenie, mnożąc dzielnik przez iloraz i dodając resztę. Reszta musi być mniejsza od dodatniego dzielnika.",
       "uk": "Ти можеш перевіряти ділення: помножити дільник на частку й додати остачу. Остача має бути меншою за додатний дільник.",
-      "lt": "Gali patikrinti dalybą padaugindamas daliklį iš dalmens ir pridėdamas liekaną. Liekana turi būti mažesnė už teigiamą daliklį.",
-      "lv": "Tu vari pārbaudīt dalīšanu, reizinot dalītāju ar dalījumu un pieskaitot atlikumu. Atlikumam jābūt mazākam par pozitīvu dalītāju.",
-      "et": "Sa saad jagamist kontrollida, korrutades jagaja jagatisega ja liites jäägi. Jääk peab olema positiivsest jagajast väiksem.",
-      "be": "Ты можаш правяраць дзяленьне: памножыць дзельнік на дзель і дадаць астачу. Астача мусіць быць меншай за дадатны дзельнік.",
-      "ka": "შეგიძლია გაყოფა შეამოწმო გამყოფისა და განაყოფის ნამრავლზე ნაშთის დამატებით. ნაშთი დადებით გამყოფზე ნაკლები უნდა იყოს.",
-      "kk": "Бөлгішті бөліндіге көбейтіп, қалдықты қосу арқылы бөлуді тексере аласың. Қалдық оң бөлгіштен кіші болуы тиіс."
+      lt: "Gali patikrinti dalybą padaugindamas daliklį iš dalmens ir pridėdamas liekaną. Liekana turi būti mažesnė už teigiamą daliklį.",
+      lv: "Tu vari pārbaudīt dalīšanu, reizinot dalītāju ar dalījumu un pieskaitot atlikumu. Atlikumam jābūt mazākam par pozitīvu dalītāju.",
+      et: "Sa saad jagamist kontrollida, korrutades jagaja jagatisega ja liites jäägi. Jääk peab olema positiivsest jagajast väiksem.",
+      be: "Ты можаш правяраць дзяленьне: памножыць дзельнік на дзель і дадаць астачу. Астача мусіць быць меншай за дадатны дзельнік.",
+      ka: "შეგიძლია გაყოფა შეამოწმო გამყოფისა და განაყოფის ნამრავლზე ნაშთის დამატებით. ნაშთი დადებით გამყოფზე ნაკლები უნდა იყოს.",
+      kk: "Бөлгішті бөліндіге көбейтіп, қалдықты қосу арқылы бөлуді тексере аласың. Қалдық оң бөлгіштен кіші болуы тиіс."
     },
   },
 });

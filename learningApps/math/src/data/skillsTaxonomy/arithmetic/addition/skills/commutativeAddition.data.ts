@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const commutativeAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.commutativeAddition,
   name: {
-    "lt": "Sudėtis — perstatomumo dėsnis",
-    "lv": "Saskaitīšana — komutativitātes likums",
-    "et": "Liitmine — vahetuvusseadus",
-    "be": "Складаньне — перастаўляльны закон",
-    "ka": "შეკრება — გადანაცვლებადობის თვისება",
-    "kk": "Қосу — ауыстырымдылық қасиеті",
+    lt: "Sudėtis — perstatomumo dėsnis",
+    lv: "Saskaitīšana — komutativitātes likums",
+    et: "Liitmine — vahetuvusseadus",
+    be: "Складаньне — перастаўляльны закон",
+    ka: "შეკრება — გადანაცვლებადობის თვისება",
+    kk: "Қосу — ауыстырымдылық қасиеті",
     en: "Addition — Commutative property",
     zh: "加法 — 交换律",
     hi: "जोड़ — क्रमविनिमेय नियम",
@@ -58,12 +58,12 @@ export const commutativeAddition_Skill_Data = buildSkillConfig({
       "he": "אפשר להחליף את סדר המספרים שמחברים בלי לשנות את הסכום.",
       "pl": "Możesz zamienić kolejność składników dodawania bez zmiany ich sumy.",
       "uk": "Ти можеш міняти доданки місцями, не змінюючи їхньої суми.",
-      "lt": "Gali sukeisti sudedamųjų skaičių vietas nepakeisdamas sumos.",
-      "lv": "Tu vari mainīt saskaitāmo secību, nemainot summu.",
-      "et": "Sa saad liidetavate järjekorda vahetada, ilma et summa muutuks.",
-      "be": "Ты можаш мяняць складнікі месцамі, не зьмяняючы іх сумы.",
-      "ka": "შეგიძლია შესაკრები რიცხვების ადგილები შეცვალო ისე, რომ ჯამი არ შეიცვალოს.",
-      "kk": "Қосылатын сандардың орнын ауыстырсаң да, қосынды өзгермейді."
+      lt: "Gali sukeisti sudedamųjų skaičių vietas nepakeisdamas sumos.",
+      lv: "Tu vari mainīt saskaitāmo secību, nemainot summu.",
+      et: "Sa saad liidetavate järjekorda vahetada, ilma et summa muutuks.",
+      be: "Ты можаш мяняць складнікі месцамі, не зьмяняючы іх сумы.",
+      ka: "შეგიძლია შესაკრები რიცხვების ადგილები შეცვალო ისე, რომ ჯამი არ შეიცვალოს.",
+      kk: "Қосылатын сандардың орнын ауыстырсаң да, қосынды өзгермейді."
     },
   },
 });

@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const carryErrorDetection_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.carryErrorDetection,
   name: {
-    "lt": "Sudėtis — pernešimo klaidų radimas",
-    "lv": "Saskaitīšana — pārnesuma kļūdu atklāšana",
-    "et": "Liitmine — ülekandevigade tuvastamine",
-    "be": "Складаньне — выяўленьне памылак пераносу разраду",
-    "ka": "შეკრება — გადატანის შეცდომების აღმოჩენა",
-    "kk": "Қосу — разряд ауыстыру қатесін табу",
+    lt: "Sudėtis — pernešimo klaidų radimas",
+    lv: "Saskaitīšana — pārnesuma kļūdu atklāšana",
+    et: "Liitmine — ülekandevigade tuvastamine",
+    be: "Складаньне — выяўленьне памылак пераносу разраду",
+    ka: "შეკრება — გადატანის შეცდომების აღმოჩენა",
+    kk: "Қосу — разряд ауыстыру қатесін табу",
     en: "Addition — Carrying · Error detection",
     zh: "加法 — 进位 · 错误识别",
     hi: "जोड़ — कैरी · त्रुटि पहचान",
@@ -58,12 +58,12 @@ export const carryErrorDetection_Skill_Data = buildSkillConfig({
       "he": "אפשר לזהות ולהסביר שגיאות בחיבור שנגרמות כששוכחים להעביר עשרת או מאה למקום הבא.",
       "pl": "Potrafisz znaleźć i wyjaśnić błędy dodawania wynikające z pominięcia przeniesienia dziesiątki lub setki do następnej pozycji.",
       "uk": "Ти можеш знаходити й пояснювати помилки додавання, коли забули перенести десяток або сотню до наступного розряду.",
-      "lt": "Gali pastebėti ir paaiškinti sudėties klaidas, kai pamirštama perkelti dešimtį ar šimtą į aukštesnį skyrių.",
-      "lv": "Tu vari atrast un izskaidrot saskaitīšanas kļūdas, kas rodas, ja aizmirst pārnest desmitu vai simtu uz nākamo šķiru.",
-      "et": "Sa oskad märgata ja selgitada liitmisvigu, mis tekivad, kui kümneline või sajaline jäetakse järgmisse järku üle kandmata.",
-      "be": "Ты можаш знаходзіць і тлумачыць памылкі складаньня, калі забыліся перанесьці дзясятак або сотню ў наступны разрад.",
-      "ka": "შეგიძლია აღმოაჩინო და ახსნა შეკრების შეცდომები, რომლებიც წარმოიშობა მომდევნო თანრიგში ათეულის ან ასეულის გადატანის დავიწყებით.",
-      "kk": "Келесі разрядқа ондықты не жүзді ауыстыруды ұмытудан туған қосу қатесін тауып, түсіндіре аласың."
+      lt: "Gali pastebėti ir paaiškinti sudėties klaidas, kai pamirštama perkelti dešimtį ar šimtą į aukštesnį skyrių.",
+      lv: "Tu vari atrast un izskaidrot saskaitīšanas kļūdas, kas rodas, ja aizmirst pārnest desmitu vai simtu uz nākamo šķiru.",
+      et: "Sa oskad märgata ja selgitada liitmisvigu, mis tekivad, kui kümneline või sajaline jäetakse järgmisse järku üle kandmata.",
+      be: "Ты можаш знаходзіць і тлумачыць памылкі складаньня, калі забыліся перанесьці дзясятак або сотню ў наступны разрад.",
+      ka: "შეგიძლია აღმოაჩინო და ახსნა შეკრების შეცდომები, რომლებიც წარმოიშობა მომდევნო თანრიგში ათეულის ან ასეულის გადატანის დავიწყებით.",
+      kk: "Келесі разрядқа ондықты не жүзді ауыстыруды ұмытудан туған қосу қатесін тауып, түсіндіре аласың."
     },
   },
 });

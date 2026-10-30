@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const crossTenSubtraction_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.crossTenSubtraction,
   name: {
-    "lt": "Atimtis — peržengiant dešimtį",
-    "lv": "Atņemšana — pāreja pāri desmitam",
-    "et": "Lahutamine — üle kümne lahutamine",
-    "be": "Адніманьне — пераход праз дзясятак",
-    "ka": "გამოკლება — ათეულის გადაცილებით",
-    "kk": "Азайту — ондықтан аттап өту",
+    lt: "Atimtis — peržengiant dešimtį",
+    lv: "Atņemšana — pāreja pāri desmitam",
+    et: "Lahutamine — üle kümne lahutamine",
+    be: "Адніманьне — пераход праз дзясятак",
+    ka: "გამოკლება — ათეულის გადაცილებით",
+    kk: "Азайту — ондықтан аттап өту",
     en: "Subtraction — Crossing ten",
     zh: "减法 — 跨十计算",
     hi: "घटाव — दस पार करना",
@@ -58,12 +58,12 @@ export const crossTenSubtraction_Skill_Data = buildSkillConfig({
       "he": "אפשר לחסר תוך מעבר בעשרת על ידי המרת עשרת אחת בעשר יחידות, בלי לשנות את המספר המקורי.",
       "pl": "Możesz odejmować z przekroczeniem progu dziesiątkowego, zamieniając jedną dziesiątkę na dziesięć jedności bez zmiany liczby początkowej.",
       "uk": "Ти можеш віднімати з переходом через десяток, обмінюючи один десяток на десять одиниць без зміни початкового числа.",
-      "lt": "Gali atimti peržengdamas dešimtį ir pakeisdamas vieną dešimtį dešimčia vienetų, nekeisdamas pradinio skaičiaus.",
-      "lv": "Tu vari atņemt ar pāreju pāri desmitam, vienu desmitu apmainot pret desmit vieniem, nemainot sākotnējo skaitli.",
-      "et": "Sa oskad lahutada üle kümne, vahetades ühe kümnelise kümne ühelise vastu, ilma et algne arv muutuks.",
-      "be": "Ты можаш адымаць з пераходам празь дзясятак, замяняючы адзін дзясятак дзесяцьцю адзінкамі безь зьмены пачатковага ліку.",
-      "ka": "შეგიძლია ათეულის გადალახვით გამოაკლო, ერთი ათეული ათ ერთეულად გადააქციო ისე, რომ საწყისი რიცხვი არ შეიცვალოს.",
-      "kk": "Бастапқы санның мәнін өзгертпей, бір ондықты он бірлікке ауыстырып, ондықтан аттап азайта аласың."
+      lt: "Gali atimti peržengdamas dešimtį ir pakeisdamas vieną dešimtį dešimčia vienetų, nekeisdamas pradinio skaičiaus.",
+      lv: "Tu vari atņemt ar pāreju pāri desmitam, vienu desmitu apmainot pret desmit vieniem, nemainot sākotnējo skaitli.",
+      et: "Sa oskad lahutada üle kümne, vahetades ühe kümnelise kümne ühelise vastu, ilma et algne arv muutuks.",
+      be: "Ты можаш адымаць з пераходам празь дзясятак, замяняючы адзін дзясятак дзесяцьцю адзінкамі безь зьмены пачатковага ліку.",
+      ka: "შეგიძლია ათეულის გადალახვით გამოაკლო, ერთი ათეული ათ ერთეულად გადააქციო ისე, რომ საწყისი რიცხვი არ შეიცვალოს.",
+      kk: "Бастапқы санның мәнін өзгертпей, бір ондықты он бірлікке ауыстырып, ондықтан аттап азайта аласың."
     },
   },
 });

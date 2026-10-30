@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const numberBonds10_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.numberBonds10,
   name: {
-    "lt": "Sudėtis ir atimtis — skaičiaus 10 sudėtis",
-    "lv": "Saskaitīšana un atņemšana — skaitļa 10 sastāvs",
-    "et": "Liitmine ja lahutamine — arvu 10 koosseis",
-    "be": "Складаньне й адніманьне — склад ліку 10",
-    "ka": "შეკრება და გამოკლება — რიცხვი 10-ის შემადგენლობა",
-    "kk": "Қосу және азайту — 10 санының құрамы",
+    lt: "Sudėtis ir atimtis — skaičiaus 10 sudėtis",
+    lv: "Saskaitīšana un atņemšana — skaitļa 10 sastāvs",
+    et: "Liitmine ja lahutamine — arvu 10 koosseis",
+    be: "Складаньне й адніманьне — склад ліку 10",
+    ka: "შეკრება და გამოკლება — რიცხვი 10-ის შემადგენლობა",
+    kk: "Қосу және азайту — 10 санының құрамы",
     en: "Addition and subtraction — Bonds of 10",
     zh: "加减法 — 组成 10",
     hi: "जोड़ और घटाव — संख्या के संयोजन 10",
@@ -58,12 +58,12 @@ export const numberBonds10_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא זוגות שונים של מספרים שסכומם עשר ולהבין איך שינוי בחלק אחד משפיע על האחר.",
       "pl": "Potrafisz znaleźć różne pary liczb dające w sumie dziesięć i zobaczyć, jak zmiana jednej części wpływa na drugą.",
       "uk": "Ти можеш знаходити різні пари чисел із сумою десять і бачити, як зміна однієї частини впливає на іншу.",
-      "lt": "Gali surasti skirtingas skaičių poras, kurių suma lygi dešimčiai, ir pamatyti, kaip vienos dalies pokytis veikia kitą.",
-      "lv": "Tu vari atrast dažādus skaitļu pārus, kuru summa ir desmit, un redzēt, kā vienas daļas maiņa ietekmē otru.",
-      "et": "Sa saad leida erinevaid arvupaare, mille summa on kümme, ja näha, kuidas ühe osa muutumine mõjutab teist.",
-      "be": "Ты можаш знаходзіць розныя пары лікаў, якія разам даюць дзесяць, і бачыць, як зьмена адной часткі ўплывае на другую.",
-      "ka": "შეგიძლია იპოვო რიცხვების სხვადასხვა წყვილი, რომელთა ჯამიც ათია, და დაინახო, როგორ მოქმედებს ერთი ნაწილის ცვლილება მეორეზე.",
-      "kk": "Қосындысы он болатын әртүрлі сан жұптарын тауып, бір бөлік өзгерсе, екіншісі қалай өзгеретінін түсіне аласың."
+      lt: "Gali surasti skirtingas skaičių poras, kurių suma lygi dešimčiai, ir pamatyti, kaip vienos dalies pokytis veikia kitą.",
+      lv: "Tu vari atrast dažādus skaitļu pārus, kuru summa ir desmit, un redzēt, kā vienas daļas maiņa ietekmē otru.",
+      et: "Sa saad leida erinevaid arvupaare, mille summa on kümme, ja näha, kuidas ühe osa muutumine mõjutab teist.",
+      be: "Ты можаш знаходзіць розныя пары лікаў, якія разам даюць дзесяць, і бачыць, як зьмена адной часткі ўплывае на другую.",
+      ka: "შეგიძლია იპოვო რიცხვების სხვადასხვა წყვილი, რომელთა ჯამიც ათია, და დაინახო, როგორ მოქმედებს ერთი ნაწილის ცვლილება მეორეზე.",
+      kk: "Қосындысы он болатын әртүрлі сан жұптарын тауып, бір бөлік өзгерсе, екіншісі қалай өзгеретінін түсіне аласың."
     },
   },
 });

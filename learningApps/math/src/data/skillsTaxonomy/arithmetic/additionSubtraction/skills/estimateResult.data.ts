@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const estimateResult_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.estimateResult,
   name: {
-    "lt": "Sudėtis ir atimtis — rezultato įvertinimas",
-    "lv": "Saskaitīšana un atņemšana — rezultāta novērtēšana",
-    "et": "Liitmine ja lahutamine — tulemuse hindamine",
-    "be": "Складаньне й адніманьне — ацэнка выніку",
-    "ka": "შეკრება და გამოკლება — შედეგის შეფასება",
-    "kk": "Қосу және азайту — нәтижені бағалау",
+    lt: "Sudėtis ir atimtis — rezultato įvertinimas",
+    lv: "Saskaitīšana un atņemšana — rezultāta novērtēšana",
+    et: "Liitmine ja lahutamine — tulemuse hindamine",
+    be: "Складаньне й адніманьне — ацэнка выніку",
+    ka: "შეკრება და გამოკლება — შედეგის შეფასება",
+    kk: "Қосу және азайту — нәтижені бағалау",
     en: "Addition and subtraction — Result estimation",
     zh: "加减法 — 结果估算",
     hi: "जोड़ और घटाव — परिणाम का अनुमान",
@@ -58,12 +58,12 @@ export const estimateResult_Skill_Data = buildSkillConfig({
       "he": "אפשר לעגל מספרים או להשתמש בערך המקום כדי לאמוד סכום או הפרש ולזהות תשובות שרחוקות מאוד מהצפוי.",
       "pl": "Możesz zaokrąglać liczby lub korzystać z wartości pozycyjnej, by szacować sumę lub różnicę i zauważać znacznie błędne wyniki.",
       "uk": "Ти можеш округлювати числа або враховувати розряди, щоб приблизно оцінити суму чи різницю й помітити значну помилку.",
-      "lt": "Gali apvalinti skaičius arba remtis jų skyrių vertėmis, kad įvertintum sumą ar skirtumą ir pastebėtum labai netikslų atsakymą.",
-      "lv": "Tu vari noapaļot skaitļus vai izmantot šķiru vērtības, lai novērtētu summu vai starpību un pamanītu ļoti neprecīzu atbildi.",
-      "et": "Sa saad arve ümardades või kohaväärtust kasutades summat või vahet hinnata ja märgata tugevalt ekslikke vastuseid.",
-      "be": "Ты можаш акругляць лікі або карыстацца разрадамі, каб ацаніць прыблізную суму ці розьніцу і заўважыць вялікую памылку.",
-      "ka": "შეგიძლია რიცხვები დაამრგვალო ან თანრიგობრივი მნიშვნელობები გამოიყენო ჯამისა თუ სხვაობის შესაფასებლად და აშკარად მცდარი პასუხი შეამჩნიო.",
-      "kk": "Сандарды дөңгелектеп немесе разрядтық мәнге сүйеніп, қосындыны не айырманы шамалап, тым алшақ жауаптарды байқай аласың."
+      lt: "Gali apvalinti skaičius arba remtis jų skyrių vertėmis, kad įvertintum sumą ar skirtumą ir pastebėtum labai netikslų atsakymą.",
+      lv: "Tu vari noapaļot skaitļus vai izmantot šķiru vērtības, lai novērtētu summu vai starpību un pamanītu ļoti neprecīzu atbildi.",
+      et: "Sa saad arve ümardades või kohaväärtust kasutades summat või vahet hinnata ja märgata tugevalt ekslikke vastuseid.",
+      be: "Ты можаш акругляць лікі або карыстацца разрадамі, каб ацаніць прыблізную суму ці розьніцу і заўважыць вялікую памылку.",
+      ka: "შეგიძლია რიცხვები დაამრგვალო ან თანრიგობრივი მნიშვნელობები გამოიყენო ჯამისა თუ სხვაობის შესაფასებლად და აშკარად მცდარი პასუხი შეამჩნიო.",
+      kk: "Сандарды дөңгелектеп немесе разрядтық мәнге сүйеніп, қосындыны не айырманы шамалап, тым алшақ жауаптарды байқай аласың."
     },
   },
 });

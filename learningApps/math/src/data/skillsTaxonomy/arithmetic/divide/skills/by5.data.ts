@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by5_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by5,
   name: {
-    "lt": "Dalyba — ÷ 5",
-    "lv": "Dalīšana — ÷ 5",
-    "et": "Jagamine — ÷ 5",
-    "be": "Дзяленьне — ÷ 5",
-    "ka": "გაყოფა — ÷ 5",
-    "kk": "Бөлу — ÷ 5",
+    lt: "Dalyba — ÷ 5",
+    lv: "Dalīšana — ÷ 5",
+    et: "Jagamine — ÷ 5",
+    be: "Дзяленьне — ÷ 5",
+    ka: "გაყოფა — ÷ 5",
+    kk: "Бөлу — ÷ 5",
     en: "Division — ÷ 5",
     zh: "除法 — ÷ 5",
     hi: "भाग — ÷ 5",
@@ -58,12 +58,12 @@ export const by5_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בחמש באמצעות קבוצות שוות וכפולות מוכרות של חמש.",
       "pl": "Możesz dzielić przez pięć za pomocą równych grup i znanych wielokrotności pięciu.",
       "uk": "Ти можеш ділити на п’ять, використовуючи рівні групи й відомі кратні п’яти.",
-      "lt": "Gali dalyti iš penkių naudodamasis lygiomis grupėmis ir žinomais penketo kartotiniais.",
-      "lv": "Tu vari dalīt ar 5, izmantojot vienādas grupas un zināmus piecu daudzkārtņus.",
-      "et": "Sa saad viiega jagada võrdsete rühmade ja tuntud viie kordsete abil.",
-      "be": "Ты можаш дзяліць на пяць, выкарыстоўваючы роўныя групы й вядомыя кратныя пяці.",
-      "ka": "შეგიძლია ხუთზე გაყოფა თანაბარი ჯგუფებითა და ხუთის ცნობილი ჯერადებით.",
-      "kk": "Беске бөлуді бірдей топтар мен бестің белгілі еселіктері арқылы орындай аласың."
+      lt: "Gali dalyti iš penkių naudodamasis lygiomis grupėmis ir žinomais penketo kartotiniais.",
+      lv: "Tu vari dalīt ar 5, izmantojot vienādas grupas un zināmus piecu daudzkārtņus.",
+      et: "Sa saad viiega jagada võrdsete rühmade ja tuntud viie kordsete abil.",
+      be: "Ты можаш дзяліць на пяць, выкарыстоўваючы роўныя групы й вядомыя кратныя пяці.",
+      ka: "შეგიძლია ხუთზე გაყოფა თანაბარი ჯგუფებითა და ხუთის ცნობილი ჯერადებით.",
+      kk: "Беске бөлуді бірдей топтар мен бестің белгілі еселіктері арқылы орындай аласың."
     },
   },
 });

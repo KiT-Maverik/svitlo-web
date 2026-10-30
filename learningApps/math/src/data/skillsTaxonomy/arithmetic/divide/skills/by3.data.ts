@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by3_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by3,
   name: {
-    "lt": "Dalyba — ÷ 3",
-    "lv": "Dalīšana — ÷ 3",
-    "et": "Jagamine — ÷ 3",
-    "be": "Дзяленьне — ÷ 3",
-    "ka": "გაყოფა — ÷ 3",
-    "kk": "Бөлу — ÷ 3",
+    lt: "Dalyba — ÷ 3",
+    lv: "Dalīšana — ÷ 3",
+    et: "Jagamine — ÷ 3",
+    be: "Дзяленьне — ÷ 3",
+    ka: "გაყოფა — ÷ 3",
+    kk: "Бөлу — ÷ 3",
     en: "Division — ÷ 3",
     zh: "除法 — ÷ 3",
     hi: "भाग — ÷ 3",
@@ -58,12 +58,12 @@ export const by3_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בשלוש באמצעות קבוצות שוות ועובדות הכפל בשלוש.",
       "pl": "Możesz dzielić przez trzy, korzystając z równych grup i wyników mnożenia przez trzy.",
       "uk": "Ти можеш ділити на три, використовуючи рівні групи та відомі добутки з трійкою.",
-      "lt": "Gali dalyti iš trijų naudodamasis lygiomis grupėmis ir daugybos iš trijų faktais.",
-      "lv": "Tu vari dalīt ar 3, izmantojot vienādas grupas un reizināšanas ar trīs faktus.",
-      "et": "Sa saad kolmega jagada võrdsete rühmade ja kolme korrutamise faktide abil.",
-      "be": "Ты можаш дзяліць на тры, выкарыстоўваючы роўныя групы й вядомыя здабыткі з тройкай.",
-      "ka": "შეგიძლია სამზე გაყოფა თანაბარი ჯგუფებითა და სამზე გამრავლების ცნობილი ფაქტებით.",
-      "kk": "Үшке бөлуді бірдей топтар мен үшке көбейтудің белгілі нәтижелері арқылы орындай аласың."
+      lt: "Gali dalyti iš trijų naudodamasis lygiomis grupėmis ir daugybos iš trijų faktais.",
+      lv: "Tu vari dalīt ar 3, izmantojot vienādas grupas un reizināšanas ar trīs faktus.",
+      et: "Sa saad kolmega jagada võrdsete rühmade ja kolme korrutamise faktide abil.",
+      be: "Ты можаш дзяліць на тры, выкарыстоўваючы роўныя групы й вядомыя здабыткі з тройкай.",
+      ka: "შეგიძლია სამზე გაყოფა თანაბარი ჯგუფებითა და სამზე გამრავლების ცნობილი ფაქტებით.",
+      kk: "Үшке бөлуді бірдей топтар мен үшке көбейтудің белгілі нәтижелері арқылы орындай аласың."
     },
   },
 });

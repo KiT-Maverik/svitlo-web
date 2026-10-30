@@ -4,12 +4,12 @@ import { numberLine_Skills_Ids } from './index.ids';
 export const numberLine1000_Skill_Data = buildSkillConfig({
   id: numberLine_Skills_Ids.numberLine1000,
   name: {
-    "lt": "Skaičiai mastelinėje tiesėje iki 1000",
-    "lv": "Skaitļi uz mērogotas taisnes līdz 1000",
-    "et": "Arvud mõõtkavaga arvteljel kuni 1000",
-    "be": "Лікі на маштабаванай прамой да 1000",
-    "ka": "რიცხვები მასშტაბიან რიცხვით წრფეზე 1000-მდე",
-    "kk": "1000-ға дейінгі сандар масштабталған сан түзуінде",
+    lt: "Skaičiai mastelinėje tiesėje iki 1000",
+    lv: "Skaitļi uz mērogotas taisnes līdz 1000",
+    et: "Arvud mõõtkavaga arvteljel kuni 1000",
+    be: "Лікі на маштабаванай прамой да 1000",
+    ka: "რიცხვები მასშტაბიან რიცხვით წრფეზე 1000-მდე",
+    kk: "1000-ға дейінгі сандар масштабталған сан түзуінде",
     en: "Numbers on a scaled line to 1000",
     zh: "在带刻度的数轴上标出1000以内的数",
     hi: "1000 तक मापांक वाली संख्या रेखा",

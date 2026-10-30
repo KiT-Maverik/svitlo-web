@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const roundHundreds_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.roundHundreds,
   name: {
-    "lt": "Daugyba — pilni šimtai",
-    "lv": "Reizināšana — pilni simti",
-    "et": "Korrutamine — täissajad",
-    "be": "Множаньне — круглыя сотні",
-    "ka": "გამრავლება — სრული ასეულები",
-    "kk": "Көбейту — толық жүздіктер",
+    lt: "Daugyba — pilni šimtai",
+    lv: "Reizināšana — pilni simti",
+    et: "Korrutamine — täissajad",
+    be: "Множаньне — круглыя сотні",
+    ka: "გამრავლება — სრული ასეულები",
+    kk: "Көбейту — толық жүздіктер",
     en: "Multiplication — Whole hundreds",
     zh: "乘法 — 整百数",
     hi: "गुणा — पूरे सैकड़े",
@@ -58,12 +58,12 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול מאות שלמות במספר חד־ספרתי על ידי חישוב מספר המאות.",
       "pl": "Możesz mnożyć pełne setki przez liczbę jednocyfrową, licząc liczbę setek.",
       "uk": "Ти можеш множити круглі сотні на одноцифрове число, обчислюючи кількість сотень.",
-      "lt": "Gali dauginti pilnus šimtus iš vienaženklio skaičiaus, skaičiuodamas šimtų kiekį.",
-      "lv": "Tu vari reizināt pilnus simtus ar viencipara skaitli, rēķinot simtu skaitu.",
-      "et": "Sa saad täissajalisi ühekohalise arvuga korrutada, arvutades sajaliste arvuga.",
-      "be": "Ты можаш множыць поўныя сотні на адназначны лік, лічачы колькасьць сотняў.",
-      "ka": "შეგიძლია სრული ასეულები ერთნიშნა რიცხვზე გაამრავლო, ასეულების რაოდენობით გამოითვალო.",
-      "kk": "Толық жүздіктерді бір таңбалы санға жүздіктер санын есептеу арқылы көбейте аласың."
+      lt: "Gali dauginti pilnus šimtus iš vienaženklio skaičiaus, skaičiuodamas šimtų kiekį.",
+      lv: "Tu vari reizināt pilnus simtus ar viencipara skaitli, rēķinot simtu skaitu.",
+      et: "Sa saad täissajalisi ühekohalise arvuga korrutada, arvutades sajaliste arvuga.",
+      be: "Ты можаш множыць поўныя сотні на адназначны лік, лічачы колькасьць сотняў.",
+      ka: "შეგიძლია სრული ასეულები ერთნიშნა რიცხვზე გაამრავლო, ასეულების რაოდენობით გამოითვალო.",
+      kk: "Толық жүздіктерді бір таңбалы санға жүздіктер санын есептеу арқылы көбейте аласың."
     },
   },
 });

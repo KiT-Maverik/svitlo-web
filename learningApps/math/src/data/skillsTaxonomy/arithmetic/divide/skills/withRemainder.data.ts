@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const withRemainder_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.withRemainder,
   name: {
-    "lt": "Dalyba — su liekana",
-    "lv": "Dalīšana — ar atlikumu",
-    "et": "Jagamine — jäägiga",
-    "be": "Дзяленьне — з астачай",
-    "ka": "გაყოფა — ნაშთით",
-    "kk": "Бөлу — қалдықпен",
+    lt: "Dalyba — su liekana",
+    lv: "Dalīšana — ar atlikumu",
+    et: "Jagamine — jäägiga",
+    be: "Дзяленьне — з астачай",
+    ka: "გაყოფა — ნაშთით",
+    kk: "Бөлу — қалдықпен",
     en: "Division — Division with remainder",
     zh: "除法 — 有余数的除法",
     hi: "भाग — शेषफल सहित भाग",
@@ -58,12 +58,12 @@ export const withRemainder_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא מנה שלמה ושארית הקטנה מהמחלק החיובי; מחלק כפול מנה ועוד שארית מחזירים את המחולק.",
       "pl": "Możesz znaleźć iloraz całkowity i resztę mniejszą od dodatniego dzielnika; dzielnik razy iloraz plus reszta daje dzielną.",
       "uk": "Ти можеш знаходити цілу частку й остачу, меншу за додатний дільник; дільник, помножений на частку, плюс остача дорівнює діленому.",
-      "lt": "Gali rasti sveikąjį dalmenį ir liekaną, mažesnę už teigiamą daliklį; daliklis kart dalmuo plius liekana duoda dalinį.",
-      "lv": "Tu vari atrast veselu dalījumu un atlikumu, kas ir mazāks par pozitīvu dalītāju; dalītājs reizināts ar dalījumu plus atlikums dod dalāmo.",
-      "et": "Sa saad leida täisarvulise jagatise ja jäägi, mis on positiivsest jagajast väiksem; jagaja korda jagatis pluss jääk annab jagatava.",
-      "be": "Ты можаш знаходзіць цэлую дзель і астачу, меншую за дадатны дзельнік; дзельнік, памножаны на дзель, плюс астача дае дзеліва.",
-      "ka": "შეგიძლია მთელი განაყოფი და დადებით გამყოფზე ნაკლები ნაშთი იპოვო; გამყოფი × განაყოფი + ნაშთი გასაყოფს უდრის.",
-      "kk": "Оң бөлгіштен кіші қалдығы бар бүтін бөліндіні таба аласың; бөлгіш × бөлінді + қалдық бөлінгішке тең."
+      lt: "Gali rasti sveikąjį dalmenį ir liekaną, mažesnę už teigiamą daliklį; daliklis kart dalmuo plius liekana duoda dalinį.",
+      lv: "Tu vari atrast veselu dalījumu un atlikumu, kas ir mazāks par pozitīvu dalītāju; dalītājs reizināts ar dalījumu plus atlikums dod dalāmo.",
+      et: "Sa saad leida täisarvulise jagatise ja jäägi, mis on positiivsest jagajast väiksem; jagaja korda jagatis pluss jääk annab jagatava.",
+      be: "Ты можаш знаходзіць цэлую дзель і астачу, меншую за дадатны дзельнік; дзельнік, памножаны на дзель, плюс астача дае дзеліва.",
+      ka: "შეგიძლია მთელი განაყოფი და დადებით გამყოფზე ნაკლები ნაშთი იპოვო; გამყოფი × განაყოფი + ნაშთი გასაყოფს უდრის.",
+      kk: "Оң бөлгіштен кіші қалдығы бар бүтін бөліндіні таба аласың; бөлгіш × бөлінді + қалдық бөлінгішке тең."
     },
   },
 });

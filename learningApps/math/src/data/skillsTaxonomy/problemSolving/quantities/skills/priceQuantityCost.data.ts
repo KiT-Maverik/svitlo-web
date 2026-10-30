@@ -4,12 +4,12 @@ import { quantities_Skills_Ids } from './index.ids';
 export const priceQuantityCost_Skill_Data = buildSkillConfig({
   id: quantities_Skills_Ids.priceQuantityCost,
   name: {
-    "lt": "Kainos, kiekio ir bendros vertės ryšys",
-    "lv": "Cenas, daudzuma un kopējās vērtības saistība",
-    "et": "Hinna, koguse ja maksumuse seostamine",
-    "be": "Сувязь цаны, колькасьці і кошту",
-    "ka": "ფასის, რაოდენობისა და ღირებულების კავშირი",
-    "kk": "Баға, сан және құн арасындағы байланыс",
+    lt: "Kainos, kiekio ir bendros vertės ryšys",
+    lv: "Cenas, daudzuma un kopējās vērtības saistība",
+    et: "Hinna, koguse ja maksumuse seostamine",
+    be: "Сувязь цаны, колькасьці і кошту",
+    ka: "ფასის, რაოდენობისა და ღირებულების კავშირი",
+    kk: "Баға, сан және құн арасындағы байланыс",
     en: "Relating price, quantity and cost",
     zh: "联系单价、数量与总价",
     hi: "मूल्य, मात्रा और कुल लागत में संबंध",

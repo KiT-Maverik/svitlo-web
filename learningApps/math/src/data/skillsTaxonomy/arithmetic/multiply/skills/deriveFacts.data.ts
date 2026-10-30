@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const deriveFacts_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.deriveFacts,
   name: {
-    "lt": "Daugyba — sandaugų išvedimas",
-    "lv": "Reizināšana — reizināšanas faktu atvasināšana",
-    "et": "Korrutamine — korrutustabeli tulemuste tuletamine",
-    "be": "Множаньне — вывядзеньне здабыткаў",
-    "ka": "გამრავლება — ნამრავლების გამოყვანა",
-    "kk": "Көбейту — көбейту нәтижелерін шығару",
+    lt: "Daugyba — sandaugų išvedimas",
+    lv: "Reizināšana — reizināšanas faktu atvasināšana",
+    et: "Korrutamine — korrutustabeli tulemuste tuletamine",
+    be: "Множаньне — вывядзеньне здабыткаў",
+    ka: "გამრავლება — ნამრავლების გამოყვანა",
+    kk: "Көбейту — көбейту нәтижелерін шығару",
     en: "Multiplication — Deriving multiplication Number facts",
     zh: "乘法 — 推导乘法算式",
     hi: "गुणा — गुणन तथ्य निकालना",
@@ -58,12 +58,12 @@ export const deriveFacts_Skill_Data = buildSkillConfig({
       "he": "אפשר להסיק תוצאות כפל לא מוכרות ממכפלות ידועות באמצעות קיבוץ מחדש, פירוק מספרים או הכפלה פי שניים.",
       "pl": "Możesz wyprowadzać nieznane wyniki mnożenia ze znanych, grupując inaczej, rozkładając liczby lub podwajając.",
       "uk": "Ти можеш виводити невідомі результати множення з відомих, змінюючи групування, розкладаючи числа або подвоюючи.",
-      "lt": "Gali išvesti nežinomas daugybos sandaugas iš žinomų, kitaip grupuodamas, skaidydamas skaičius ar dvigubindamas.",
-      "lv": "Tu vari iegūt nezināmus reizinājumus no zināmiem, pārgrupējot, sadalot skaitļus vai dubultojot.",
-      "et": "Sa saad tundmatuid korrutisi tuletada tuntutest tegureid ümber rühmitades, arve osadeks jaotades või kahekordistades.",
-      "be": "Ты можаш выводзіць невядомыя здабыткі зь вядомых, перагрупоўваючы, раскладаючы лікі або падвойваючы.",
-      "ka": "შეგიძლია უცნობი ნამრავლები ცნობილებიდან მიიღო გადაჯგუფებით, რიცხვების დაშლით ან გაორმაგებით.",
-      "kk": "Белгілі көбейтінділер арқылы белгісіздерін топтастыруды өзгертіп, сандарды жіктеп немесе екі еселеп таба аласың."
+      lt: "Gali išvesti nežinomas daugybos sandaugas iš žinomų, kitaip grupuodamas, skaidydamas skaičius ar dvigubindamas.",
+      lv: "Tu vari iegūt nezināmus reizinājumus no zināmiem, pārgrupējot, sadalot skaitļus vai dubultojot.",
+      et: "Sa saad tundmatuid korrutisi tuletada tuntutest tegureid ümber rühmitades, arve osadeks jaotades või kahekordistades.",
+      be: "Ты можаш выводзіць невядомыя здабыткі зь вядомых, перагрупоўваючы, раскладаючы лікі або падвойваючы.",
+      ka: "შეგიძლია უცნობი ნამრავლები ცნობილებიდან მიიღო გადაჯგუფებით, რიცხვების დაშლით ან გაორმაგებით.",
+      kk: "Белгілі көбейтінділер арқылы белгісіздерін топтастыруды өзгертіп, сандарды жіктеп немесе екі еселеп таба аласың."
     },
   },
 });

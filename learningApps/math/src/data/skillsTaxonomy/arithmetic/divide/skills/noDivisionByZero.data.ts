@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const noDivisionByZero_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.noDivisionByZero,
   name: {
-    "lt": "Dalyba — dalyba iš nulio",
-    "lv": "Dalīšana — dalīšana ar nulli",
-    "et": "Jagamine — nulliga jagamine",
-    "be": "Дзяленьне — дзяленьне на нуль",
-    "ka": "გაყოფა — ნულზე გაყოფა",
-    "kk": "Бөлу — нөлге бөлу",
+    lt: "Dalyba — dalyba iš nulio",
+    lv: "Dalīšana — dalīšana ar nulli",
+    et: "Jagamine — nulliga jagamine",
+    be: "Дзяленьне — дзяленьне на нуль",
+    ka: "გაყოფა — ნულზე გაყოფა",
+    kk: "Бөлу — нөлге бөлу",
     en: "Division — Division by Zero",
     zh: "除法 — 除以零",
     hi: "भाग — शून्य से भाग",
@@ -58,12 +58,12 @@ export const noDivisionByZero_Skill_Data = buildSkillConfig({
       "he": "אי אפשר לחלק באפס: אין מנה אחת מוגדרת, גם כשהמספר המחולק הוא אפס.",
       "pl": "Nie można dzielić przez zero: nie istnieje jeden określony iloraz, nawet gdy dzielna wynosi zero.",
       "uk": "Ділити на нуль не можна: єдиного визначеного значення частки немає, навіть коли ділене дорівнює нулю.",
-      "lt": "Negalima dalyti iš nulio: nėra vienintelio apibrėžto dalmens net tada, kai dalinys lygus nuliui.",
-      "lv": "Dalīt ar nulli nevar: pat tad, ja dalāmais ir nulle, nav viena noteikta dalījuma.",
-      "et": "Nulliga ei saa jagada: isegi nulli jagamisel nulliga ei ole üheselt määratud jagatist.",
-      "be": "Дзяліць на нуль нельга: адзінага вызначанага значэньня дзелі няма, нават калі дзеліва роўнае нулю.",
-      "ka": "ნულზე გაყოფა არ შეიძლება: ერთმნიშვნელოვნად განსაზღვრული განაყოფი არ არსებობს მაშინაც, როცა გასაყოფი ნულია.",
-      "kk": "Нөлге бөлуге болмайды: бөлінетін сан нөл болса да, бірмәнді анықталған бөлінді болмайды."
+      lt: "Negalima dalyti iš nulio: nėra vienintelio apibrėžto dalmens net tada, kai dalinys lygus nuliui.",
+      lv: "Dalīt ar nulli nevar: pat tad, ja dalāmais ir nulle, nav viena noteikta dalījuma.",
+      et: "Nulliga ei saa jagada: isegi nulli jagamisel nulliga ei ole üheselt määratud jagatist.",
+      be: "Дзяліць на нуль нельга: адзінага вызначанага значэньня дзелі няма, нават калі дзеліва роўнае нулю.",
+      ka: "ნულზე გაყოფა არ შეიძლება: ერთმნიშვნელოვნად განსაზღვრული განაყოფი არ არსებობს მაშინაც, როცა გასაყოფი ნულია.",
+      kk: "Нөлге бөлуге болмайды: бөлінетін сан нөл болса да, бірмәнді анықталған бөлінді болмайды."
     },
   },
 });

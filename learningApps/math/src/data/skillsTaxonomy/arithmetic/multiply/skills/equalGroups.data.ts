@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const equalGroups_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.equalGroups,
   name: {
-    "lt": "Daugyba — lygios grupės",
-    "lv": "Reizināšana — vienādas grupas",
-    "et": "Korrutamine — võrdsed rühmad",
-    "be": "Множаньне — роўныя групы",
-    "ka": "გამრავლება — თანაბარი ჯგუფები",
-    "kk": "Көбейту — тең топтар",
+    lt: "Daugyba — lygios grupės",
+    lv: "Reizināšana — vienādas grupas",
+    et: "Korrutamine — võrdsed rühmad",
+    be: "Множаньне — роўныя групы",
+    ka: "გამრავლება — თანაბარი ჯგუფები",
+    kk: "Көбейту — тең топтар",
     en: "Multiplication — Equal groups",
     zh: "乘法 — 等量组",
     hi: "गुणा — समान समूह",
@@ -58,12 +58,12 @@ export const equalGroups_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא את המספר הכולל לפי מספר הקבוצות השוות ומספר הפריטים בכל קבוצה.",
       "pl": "Możesz znaleźć łączną liczbę, znając liczbę równych grup i liczbę elementów w każdej z nich.",
       "uk": "Ти можеш знаходити загальну кількість за числом рівних груп і кількістю предметів у кожній групі.",
-      "lt": "Gali rasti bendrą kiekį iš lygių grupių skaičiaus ir daiktų skaičiaus kiekvienoje grupėje.",
-      "lv": "Tu vari atrast kopējo daudzumu pēc vienādo grupu skaita un priekšmetu skaita katrā grupā.",
-      "et": "Sa saad leida koguarvu võrdsete rühmade arvu ja igas rühmas olevate esemete arvu järgi.",
-      "be": "Ты можаш знаходзіць агульную колькасьць паводле ліку роўных груп і колькасьці прадметаў у кожнай зь іх.",
-      "ka": "შეგიძლია საერთო რაოდენობა იპოვო თანაბარი ჯგუფების რაოდენობისა და თითოეულში საგნების რაოდენობის მიხედვით.",
-      "kk": "Бірдей топтардың саны мен әр топтағы заттар саны арқылы жалпы санын таба аласың."
+      lt: "Gali rasti bendrą kiekį iš lygių grupių skaičiaus ir daiktų skaičiaus kiekvienoje grupėje.",
+      lv: "Tu vari atrast kopējo daudzumu pēc vienādo grupu skaita un priekšmetu skaita katrā grupā.",
+      et: "Sa saad leida koguarvu võrdsete rühmade arvu ja igas rühmas olevate esemete arvu järgi.",
+      be: "Ты можаш знаходзіць агульную колькасьць паводле ліку роўных груп і колькасьці прадметаў у кожнай зь іх.",
+      ka: "შეგიძლია საერთო რაოდენობა იპოვო თანაბარი ჯგუფების რაოდენობისა და თითოეულში საგნების რაოდენობის მიხედვით.",
+      kk: "Бірдей топтардың саны мен әр топтағы заттар саны арқылы жалпы санын таба аласың."
     },
   },
 });

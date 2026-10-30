@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const doubleTwice_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.doubleTwice,
   name: {
-    "lt": "Daugyba — dvigubinimas du kartus",
-    "lv": "Reizināšana — divkāršošana divas reizes",
-    "et": "Korrutamine — kahekordistamine kaks korda",
-    "be": "Множаньне — падвойнае падваеньне",
-    "ka": "გამრავლება — ორჯერ გაორმაგება",
-    "kk": "Көбейту — екі рет еселеу",
+    lt: "Daugyba — dvigubinimas du kartus",
+    lv: "Reizināšana — divkāršošana divas reizes",
+    et: "Korrutamine — kahekordistamine kaks korda",
+    be: "Множаньне — падвойнае падваеньне",
+    ka: "გამრავლება — ორჯერ გაორმაგება",
+    kk: "Көбейту — екі рет еселеу",
     en: "Multiplication — Doubling twice",
     zh: "乘法 — 连续翻倍两次",
     hi: "गुणा — दो बार दुगुना करना",
@@ -58,12 +58,12 @@ export const doubleTwice_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול בארבע על ידי הכפלת מספר פי שניים ואז הכפלת התוצאה פי שניים שוב.",
       "pl": "Możesz mnożyć przez cztery, podwajając liczbę, a następnie jeszcze raz podwajając wynik.",
       "uk": "Ти можеш помножити на чотири, подвоївши число, а потім ще раз подвоївши результат.",
-      "lt": "Gali dauginti iš keturių padvigubindamas skaičių, o tada dar kartą padvigubindamas rezultatą.",
-      "lv": "Tu vari reizināt ar četri, divreiz pēc kārtas dubultojot skaitli.",
-      "et": "Sa saad neljaga korrutada, kahekordistades arvu ja seejärel tulemuse veel kord.",
-      "be": "Ты можаш памножыць на чатыры, падвоіўшы лік, а пасьля яшчэ раз падвоіўшы вынік.",
-      "ka": "შეგიძლია ოთხზე გაამრავლო რიცხვის გაორმაგებით და მიღებული შედეგის კიდევ ერთხელ გაორმაგებით.",
-      "kk": "Санды екі еселеп, нәтижесін қайта екі еселеу арқылы төртке көбейте аласың."
+      lt: "Gali dauginti iš keturių padvigubindamas skaičių, o tada dar kartą padvigubindamas rezultatą.",
+      lv: "Tu vari reizināt ar četri, divreiz pēc kārtas dubultojot skaitli.",
+      et: "Sa saad neljaga korrutada, kahekordistades arvu ja seejärel tulemuse veel kord.",
+      be: "Ты можаш памножыць на чатыры, падвоіўшы лік, а пасьля яшчэ раз падвоіўшы вынік.",
+      ka: "შეგიძლია ოთხზე გაამრავლო რიცხვის გაორმაგებით და მიღებული შედეგის კიდევ ერთხელ გაორმაგებით.",
+      kk: "Санды екі еселеп, нәтижесін қайта екі еселеу арқылы төртке көбейте аласың."
     },
   },
 });

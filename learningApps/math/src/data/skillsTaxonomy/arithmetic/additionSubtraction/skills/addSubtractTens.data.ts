@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const addSubtractTens_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.addSubtractTens,
   name: {
-    "lt": "Sudėtis ir atimtis — pilnos dešimtys",
-    "lv": "Saskaitīšana un atņemšana — pilni desmiti",
-    "et": "Liitmine ja lahutamine — täiskümned",
-    "be": "Складаньне й адніманьне — круглыя дзясяткі",
-    "ka": "შეკრება და გამოკლება — სრული ათეულები",
-    "kk": "Қосу және азайту — толық ондықтар",
+    lt: "Sudėtis ir atimtis — pilnos dešimtys",
+    lv: "Saskaitīšana un atņemšana — pilni desmiti",
+    et: "Liitmine ja lahutamine — täiskümned",
+    be: "Складаньне й адніманьне — круглыя дзясяткі",
+    ka: "შეკრება და გამოკლება — სრული ათეულები",
+    kk: "Қосу және азайту — толық ондықтар",
     en: "Addition and subtraction — Whole tens",
     zh: "加减法 — 整十数",
     hi: "जोड़ और घटाव — पूरे दहाई",
@@ -58,12 +58,12 @@ export const addSubtractTens_Skill_Data = buildSkillConfig({
       "he": "אפשר לחבר או לחסר עשרות שלמות על ידי חישוב מספר העשרות תוך שמירה על ערך המקום שלהן.",
       "pl": "Możesz dodawać i odejmować pełne dziesiątki, licząc ich liczbę i zachowując ich wartość pozycyjną.",
       "uk": "Ти можеш додавати й віднімати круглі десятки, рахуючи кількість десятків і зберігаючи їхню розрядну вартість.",
-      "lt": "Gali sudėti ir atimti pilnas dešimtis, skaičiuodamas dešimčių kiekį ir išlaikydamas jų vietinę vertę.",
-      "lv": "Tu vari pieskaitīt un atņemt pilnus desmitus, rēķinot desmitu skaitu un saglabājot to šķiru vērtību.",
-      "et": "Sa oskad täiskümneid liita ja lahutada, arvutades kümneliste arvuga ning säilitades nende kohaväärtuse.",
-      "be": "Ты можаш складаць і адымаць поўныя дзясяткі, лічачы іх колькасьць і захоўваючы разраднае значэньне.",
-      "ka": "შეგიძლია სრული ათეულები შეკრიბო ან გამოაკლო, ათეულების რაოდენობით გამოთვალო და მათი თანრიგობრივი მნიშვნელობა შეინარჩუნო.",
-      "kk": "Толық ондықтарды олардың санын есептеу арқылы қосып не азайтып, разрядтық мәнін сақтай аласың."
+      lt: "Gali sudėti ir atimti pilnas dešimtis, skaičiuodamas dešimčių kiekį ir išlaikydamas jų vietinę vertę.",
+      lv: "Tu vari pieskaitīt un atņemt pilnus desmitus, rēķinot desmitu skaitu un saglabājot to šķiru vērtību.",
+      et: "Sa oskad täiskümneid liita ja lahutada, arvutades kümneliste arvuga ning säilitades nende kohaväärtuse.",
+      be: "Ты можаш складаць і адымаць поўныя дзясяткі, лічачы іх колькасьць і захоўваючы разраднае значэньне.",
+      ka: "შეგიძლია სრული ათეულები შეკრიბო ან გამოაკლო, ათეულების რაოდენობით გამოთვალო და მათი თანრიგობრივი მნიშვნელობა შეინარჩუნო.",
+      kk: "Толық ондықтарды олардың санын есептеу арқылы қосып не азайтып, разрядтық мәнін сақтай аласың."
     },
   },
 });

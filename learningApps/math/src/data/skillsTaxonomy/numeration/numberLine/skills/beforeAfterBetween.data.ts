@@ -4,12 +4,12 @@ import { numberLine_Skills_Ids } from './index.ids';
 export const beforeAfterBetween_Skill_Data = buildSkillConfig({
   id: numberLine_Skills_Ids.beforeAfterBetween,
   name: {
-    "lt": "Ankstesni, tolesni ir tarpiniai skaičiai",
-    "lv": "Iepriekšējie, nākamie un starpskaitļi",
-    "et": "Eelmised, järgmised ja vahepealsed arvud",
-    "be": "Папярэднія, наступныя й прамежкавыя лікі",
-    "ka": "წინა, მომდევნო და შუალედური რიცხვები",
-    "kk": "Алдыңғы, келесі және аралық сандар",
+    lt: "Ankstesni, tolesni ir tarpiniai skaičiai",
+    lv: "Iepriekšējie, nākamie un starpskaitļi",
+    et: "Eelmised, järgmised ja vahepealsed arvud",
+    be: "Папярэднія, наступныя й прамежкавыя лікі",
+    ka: "წინა, მომდევნო და შუალედური რიცხვები",
+    kk: "Алдыңғы, келесі және аралық сандар",
     en: "Previous, next and intermediate numbers",
     zh: "前一个、后一个与中间的数",
     hi: "पिछली, अगली और बीच की संख्याएँ",

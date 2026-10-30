@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const twoDigitByOne_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.twoDigitByOne,
   name: {
-    "lt": "Daugyba — dviženklis skaičius iš vienaženklio",
-    "lv": "Reizināšana — divciparu skaitlis ar viencipara skaitli",
-    "et": "Korrutamine — kahekohaline arv ühekohalisega",
-    "be": "Множаньне — двухзначны лік на адназначны",
-    "ka": "გამრავლება — ორნიშნა რიცხვი ერთნიშნაზე",
-    "kk": "Көбейту — екі таңбалы санды бір таңбалы санға",
+    lt: "Daugyba — dviženklis skaičius iš vienaženklio",
+    lv: "Reizināšana — divciparu skaitlis ar viencipara skaitli",
+    et: "Korrutamine — kahekohaline arv ühekohalisega",
+    be: "Множаньне — двухзначны лік на адназначны",
+    ka: "გამრავლება — ორნიშნა რიცხვი ერთნიშნაზე",
+    kk: "Көбейту — екі таңбалы санды бір таңбалы санға",
     en: "Multiplication — 2-digit×1-digit",
     zh: "乘法 — 2-位数×1-位数",
     hi: "गुणा — 2-अंकीय×1-अंकीय",
@@ -58,12 +58,12 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול מספר דו־ספרתי במספר חד־ספרתי על ידי פירוק לעשרות וליחידות וחיבור המכפלות החלקיות.",
       "pl": "Możesz mnożyć liczbę dwucyfrową przez jednocyfrową, rozkładając ją na dziesiątki i jedności oraz dodając iloczyny częściowe.",
       "uk": "Ти можеш множити двоцифрове число на одноцифрове, розкладаючи його на десятки й одиниці та додаючи часткові добутки.",
-      "lt": "Gali dauginti dviženklį skaičių iš vienaženklio, išskaidydamas jį į dešimtis ir vienetus ir sudėdamas dalines sandaugas.",
-      "lv": "Tu vari reizināt divciparu skaitli ar viencipara skaitli, sadalot to desmitos un vienos un saskaitot daļējos reizinājumus.",
-      "et": "Sa saad kahekohalist arvu ühekohalisega korrutada, jagades selle kümnelisteks ja ühelisteks ning liites osakorrutised.",
-      "be": "Ты можаш множыць двухзначны лік на адназначны, раскладаючы яго на дзясяткі й адзінкі ды складаючы частковыя здабыткі.",
-      "ka": "შეგიძლია ორნიშნა რიცხვი ერთნიშნაზე გაამრავლო, მისი ათეულებად და ერთეულებად დაშლითა და ნაწილობრივი ნამრავლების შეკრებით.",
-      "kk": "Екі таңбалы санды ондықтар мен бірліктерге бөліп, әр бөлікті бір таңбалыға көбейтіп, аралық көбейтінділерді қоса аласың."
+      lt: "Gali dauginti dviženklį skaičių iš vienaženklio, išskaidydamas jį į dešimtis ir vienetus ir sudėdamas dalines sandaugas.",
+      lv: "Tu vari reizināt divciparu skaitli ar viencipara skaitli, sadalot to desmitos un vienos un saskaitot daļējos reizinājumus.",
+      et: "Sa saad kahekohalist arvu ühekohalisega korrutada, jagades selle kümnelisteks ja ühelisteks ning liites osakorrutised.",
+      be: "Ты можаш множыць двухзначны лік на адназначны, раскладаючы яго на дзясяткі й адзінкі ды складаючы частковыя здабыткі.",
+      ka: "შეგიძლია ორნიშნა რიცხვი ერთნიშნაზე გაამრავლო, მისი ათეულებად და ერთეულებად დაშლითა და ნაწილობრივი ნამრავლების შეკრებით.",
+      kk: "Екі таңбалы санды ондықтар мен бірліктерге бөліп, әр бөлікті бір таңбалыға көбейтіп, аралық көбейтінділерді қоса аласың."
     },
   },
 });

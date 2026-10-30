@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by1AndSelf_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by1AndSelf,
   name: {
-    "lt": "Dalyba — ÷ 1 · a ÷ a",
-    "lv": "Dalīšana — ÷ 1 · a ÷ a",
-    "et": "Jagamine — ÷ 1 · a ÷ a",
-    "be": "Дзяленьне — ÷ 1 · a ÷ a",
-    "ka": "გაყოფა — ÷ 1 · a ÷ a",
-    "kk": "Бөлу — ÷ 1 · a ÷ a",
+    lt: "Dalyba — ÷ 1 · a ÷ a",
+    lv: "Dalīšana — ÷ 1 · a ÷ a",
+    et: "Jagamine — ÷ 1 · a ÷ a",
+    be: "Дзяленьне — ÷ 1 · a ÷ a",
+    ka: "გაყოფა — ÷ 1 · a ÷ a",
+    kk: "Бөлу — ÷ 1 · a ÷ a",
     en: "Division — ÷ 1 · a ÷ a",
     zh: "除法 — ÷ 1 · a ÷ a",
     hi: "भाग — ÷ 1 · a ÷ a",
@@ -58,12 +58,12 @@ export const by1AndSelf_Skill_Data = buildSkillConfig({
       "he": "חילוק מספר באחת אינו משנה אותו. כל מספר שאינו אפס, חלקי עצמו, שווה אחת.",
       "pl": "Dzielenie przez jeden nie zmienia liczby. Każda liczba różna od zera podzielona przez siebie daje jeden.",
       "uk": "Ділення числа на один не змінює його. Будь-яке ненульове число, поділене на себе, дорівнює одному.",
-      "lt": "Dalijimas iš vieneto skaičiaus nekeičia. Bet kurį nelygų nuliui skaičių padalijus iš jo paties gaunamas vienetas.",
-      "lv": "Dalot skaitli ar vienu, tas nemainās. Jebkurš skaitlis, kas nav nulle, dalīts pats ar sevi, ir viens.",
-      "et": "Ühega jagamine ei muuda arvu. Iga nullist erinev arv iseendaga jagatuna on üks.",
-      "be": "Дзяленьне ліку на адзінку не зьмяняе яго. Любы ненулявы лік, падзелены на сябе, роўны адзінцы.",
-      "ka": "რიცხვის ერთზე გაყოფა მას არ ცვლის. ნებისმიერი არანულოვანი რიცხვი თავის თავზე გაყოფისას ერთს უდრის.",
-      "kk": "Санды бірге бөлгенде ол өзгермейді. Нөлден өзге кез келген санды өзіне бөлсең, бір шығады."
+      lt: "Dalijimas iš vieneto skaičiaus nekeičia. Bet kurį nelygų nuliui skaičių padalijus iš jo paties gaunamas vienetas.",
+      lv: "Dalot skaitli ar vienu, tas nemainās. Jebkurš skaitlis, kas nav nulle, dalīts pats ar sevi, ir viens.",
+      et: "Ühega jagamine ei muuda arvu. Iga nullist erinev arv iseendaga jagatuna on üks.",
+      be: "Дзяленьне ліку на адзінку не зьмяняе яго. Любы ненулявы лік, падзелены на сябе, роўны адзінцы.",
+      ka: "რიცხვის ერთზე გაყოფა მას არ ცვლის. ნებისმიერი არანულოვანი რიცხვი თავის თავზე გაყოფისას ერთს უდრის.",
+      kk: "Санды бірге бөлгенде ол өзгермейді. Нөлден өзге кез келген санды өзіне бөлсең, бір шығады."
     },
   },
 });

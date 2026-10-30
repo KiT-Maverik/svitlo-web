@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by10_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by10,
   name: {
-    "lt": "Daugyba — × 10",
-    "lv": "Reizināšana — × 10",
-    "et": "Korrutamine — × 10",
-    "be": "Множаньне — × 10",
-    "ka": "გამრავლება — × 10",
-    "kk": "Көбейту — × 10",
+    lt: "Daugyba — × 10",
+    lv: "Reizināšana — × 10",
+    et: "Korrutamine — × 10",
+    be: "Множаньне — × 10",
+    ka: "გამრავლება — × 10",
+    kk: "Көбейту — × 10",
     en: "Multiplication — × 10",
     zh: "乘法 — × 10",
     hi: "गुणा — × 10",
@@ -58,12 +58,12 @@ export const by10_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול בעשר בעזרת ערך המקום: הערך של כל מקום גדל פי עשרה.",
       "pl": "Możesz mnożyć przez dziesięć, korzystając z wartości pozycyjnej: wartość każdego rzędu wzrasta dziesięciokrotnie.",
       "uk": "Ти можеш множити на десять за допомогою розрядної вартості: значення кожного розряду зростає вдесятеро.",
-      "lt": "Gali dauginti iš dešimties pasitelkdamas vietinę vertę: kiekvieno skyriaus vertė padidėja dešimt kartų.",
-      "lv": "Tu vari reizināt ar desmit, izmantojot šķiru vērtības: katras šķiras vērtība pieaug desmitkārt.",
-      "et": "Sa saad korrutada kümnega kohaväärtuse abil: iga järgu väärtus suureneb kümme korda.",
-      "be": "Ты можаш множыць на дзесяць з дапамогай разраднага значэньня: значэньне кожнага разраду павялічваецца ўдзесяцёра.",
-      "ka": "შეგიძლია ათზე გამრავლება თანრიგობრივი მნიშვნელობით გაიაზრო: თითოეული თანრიგის მნიშვნელობა ათჯერ იზრდება.",
-      "kk": "Разрядтық мән арқылы онға көбейте аласың: әр разрядтың мәні он есе артады."
+      lt: "Gali dauginti iš dešimties pasitelkdamas vietinę vertę: kiekvieno skyriaus vertė padidėja dešimt kartų.",
+      lv: "Tu vari reizināt ar desmit, izmantojot šķiru vērtības: katras šķiras vērtība pieaug desmitkārt.",
+      et: "Sa saad korrutada kümnega kohaväärtuse abil: iga järgu väärtus suureneb kümme korda.",
+      be: "Ты можаш множыць на дзесяць з дапамогай разраднага значэньня: значэньне кожнага разраду павялічваецца ўдзесяцёра.",
+      ka: "შეგიძლია ათზე გამრავლება თანრიგობრივი მნიშვნელობით გაიაზრო: თითოეული თანრიგის მნიშვნელობა ათჯერ იზრდება.",
+      kk: "Разрядтық мән арқылы онға көбейте аласың: әр разрядтың мәні он есе артады."
     },
   },
 });

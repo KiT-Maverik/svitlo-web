@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const checkWithInverse_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.checkWithInverse,
   name: {
-    "lt": "Sudėtis ir atimtis — tikrinimas atvirkštiniais veiksmais",
-    "lv": "Saskaitīšana un atņemšana — pārbaude ar pretējām darbībām",
-    "et": "Liitmine ja lahutamine — kontroll pöördtehetega",
-    "be": "Складаньне й адніманьне — праверка адваротнымі дзеяньнямі",
-    "ka": "შეკრება და გამოკლება — შემოწმება შებრუნებული მოქმედებებით",
-    "kk": "Қосу және азайту — кері амалдармен тексеру",
+    lt: "Sudėtis ir atimtis — tikrinimas atvirkštiniais veiksmais",
+    lv: "Saskaitīšana un atņemšana — pārbaude ar pretējām darbībām",
+    et: "Liitmine ja lahutamine — kontroll pöördtehetega",
+    be: "Складаньне й адніманьне — праверка адваротнымі дзеяньнямі",
+    ka: "შეკრება და გამოკლება — შემოწმება შებრუნებული მოქმედებებით",
+    kk: "Қосу және азайту — кері амалдармен тексеру",
     en: "Addition and subtraction — Result checking · Inverse operations",
     zh: "加减法 — 结果检验 · 逆运算",
     hi: "जोड़ और घटाव — उत्तर की जाँच · व्युत्क्रम संक्रियाएँ",
@@ -58,12 +58,12 @@ export const checkWithInverse_Skill_Data = buildSkillConfig({
       "he": "אפשר לבדוק חיבור באמצעות חיסור וחיסור באמצעות חיבור, ולהיעזר בפעולה ההפוכה כדי לזהות טעויות.",
       "pl": "Możesz sprawdzić dodawanie przez odejmowanie, a odejmowanie przez dodawanie, aby wykryć błędy dzięki działaniu odwrotnemu.",
       "uk": "Ти можеш перевіряти додавання відніманням, а віднімання — додаванням, щоб знаходити помилки за допомогою оберненої дії.",
-      "lt": "Gali patikrinti sudėtį atimtimi, o atimtį sudėtimi ir taip aptikti klaidas naudodamasis atvirkštiniu veiksmu.",
-      "lv": "Tu vari pārbaudīt saskaitīšanu ar atņemšanu un atņemšanu ar saskaitīšanu, izmantojot pretējo darbību kļūdu atrašanai.",
-      "et": "Sa saad kontrollida liitmist lahutamisega ja lahutamist liitmisega ning leida pöördtehte abil vigu.",
-      "be": "Ты можаш правяраць складаньне адніманьнем, а адніманьне — складаньнем, каб знаходзіць памылкі праз адваротнае дзеяньне.",
-      "ka": "შეგიძლია შეკრება გამოკლებით, ხოლო გამოკლება შეკრებით გადაამოწმო და შებრუნებული მოქმედებით შეცდომები აღმოაჩინო.",
-      "kk": "Қосуды азайтумен, ал азайтуды қосумен тексеріп, кері амал арқылы қателерді таба аласың."
+      lt: "Gali patikrinti sudėtį atimtimi, o atimtį sudėtimi ir taip aptikti klaidas naudodamasis atvirkštiniu veiksmu.",
+      lv: "Tu vari pārbaudīt saskaitīšanu ar atņemšanu un atņemšanu ar saskaitīšanu, izmantojot pretējo darbību kļūdu atrašanai.",
+      et: "Sa saad kontrollida liitmist lahutamisega ja lahutamist liitmisega ning leida pöördtehte abil vigu.",
+      be: "Ты можаш правяраць складаньне адніманьнем, а адніманьне — складаньнем, каб знаходзіць памылкі праз адваротнае дзеяньне.",
+      ka: "შეგიძლია შეკრება გამოკლებით, ხოლო გამოკლება შეკრებით გადაამოწმო და შებრუნებული მოქმედებით შეცდომები აღმოაჩინო.",
+      kk: "Қосуды азайтумен, ал азайтуды қосумен тексеріп, кері амал арқылы қателерді таба аласың."
     },
   },
 });

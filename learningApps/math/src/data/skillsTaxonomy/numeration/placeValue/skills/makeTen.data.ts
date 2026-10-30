@@ -4,12 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const makeTen_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.makeTen,
   name: {
-    "lt": "Dešimties vienetų grupavimas ir skaidymas",
-    "lv": "Desmit vienu grupēšana un sadalīšana",
-    "et": "Kümne ühelise rühmitamine ja lahtirühmitamine",
-    "be": "Групаваньне дзесяці адзінак і разьяднаньне",
-    "ka": "ათი ერთეულის დაჯგუფება და დაშლა",
-    "kk": "Он бірлікті топтастыру және қайта жіктеу",
+    lt: "Dešimties vienetų grupavimas ir skaidymas",
+    lv: "Desmit vienu grupēšana un sadalīšana",
+    et: "Kümne ühelise rühmitamine ja lahtirühmitamine",
+    be: "Групаваньне дзесяці адзінак і разьяднаньне",
+    ka: "ათი ერთეულის დაჯგუფება და დაშლა",
+    kk: "Он бірлікті топтастыру және қайта жіктеу",
     en: "Grouping and ungrouping ten ones",
     zh: "十个一组成一个十及逆向拆分",
     hi: "दस इकाइयों का एक दहाई में समूह और विघटन",

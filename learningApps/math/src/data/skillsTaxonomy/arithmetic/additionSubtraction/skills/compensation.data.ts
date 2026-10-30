@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const compensation_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.compensation,
   name: {
-    "lt": "Sudėtis ir atimtis — kompensavimo būdas",
-    "lv": "Saskaitīšana un atņemšana — kompensācijas paņēmiens",
-    "et": "Liitmine ja lahutamine — kompenseerimine",
-    "be": "Складаньне й адніманьне — кампэнсацыя",
-    "ka": "შეკრება და გამოკლება — კომპენსაციის ხერხი",
-    "kk": "Қосу және азайту — компенсация әдісі",
+    lt: "Sudėtis ir atimtis — kompensavimo būdas",
+    lv: "Saskaitīšana un atņemšana — kompensācijas paņēmiens",
+    et: "Liitmine ja lahutamine — kompenseerimine",
+    be: "Складаньне й адніманьне — кампэнсацыя",
+    ka: "შეკრება და გამოკლება — კომპენსაციის ხერხი",
+    kk: "Қосу және азайту — компенсация әдісі",
     en: "Addition and subtraction — Compensation",
     zh: "加减法 — 补偿策略",
     hi: "जोड़ और घटाव — समायोजन विधि",
@@ -58,12 +58,12 @@ export const compensation_Skill_Data = buildSkillConfig({
       "he": "אפשר לשנות מספר כדי להקל על חיבור או חיסור ואז לפצות על השינוי כך שהתוצאה תישאר נכונה.",
       "pl": "Możesz zmienić liczbę, aby ułatwić dodawanie lub odejmowanie, a następnie wyrównać tę zmianę, by wynik pozostał prawidłowy.",
       "uk": "Ти можеш змінити число для зручнішого додавання чи віднімання, а потім компенсувати цю зміну, щоб результат лишився правильним.",
-      "lt": "Gali pakeisti vieną skaičių, kad būtų lengviau sudėti ar atimti, o tada kompensuoti pakeitimą, kad rezultatas liktų teisingas.",
-      "lv": "Tu vari mainīt vienu skaitli, lai atvieglotu saskaitīšanu vai atņemšanu, un pēc tam kompensēt izmaiņu, saglabājot pareizu rezultātu.",
-      "et": "Sa saad arvu muuta, et liitmine või lahutamine oleks lihtsam, ning seejärel muudatuse tasakaalustada, et tulemus jääks õigeks.",
-      "be": "Ты можаш зьмяніць лік для зручнейшага складаньня або адніманьня, а пасьля кампэнсаваць зьмену, каб вынік застаўся правільным.",
-      "ka": "შეგიძლია რიცხვი შეცვალო, რომ შეკრება ან გამოკლება გაიმარტივო, შემდეგ კი ეს ცვლილება დააკომპენსირო და სწორი შედეგი შეინარჩუნო.",
-      "kk": "Қосу не азайтуды жеңілдету үшін бір санды өзгертіп, кейін сол өзгерісті өтеп, дұрыс нәтижені сақтай аласың."
+      lt: "Gali pakeisti vieną skaičių, kad būtų lengviau sudėti ar atimti, o tada kompensuoti pakeitimą, kad rezultatas liktų teisingas.",
+      lv: "Tu vari mainīt vienu skaitli, lai atvieglotu saskaitīšanu vai atņemšanu, un pēc tam kompensēt izmaiņu, saglabājot pareizu rezultātu.",
+      et: "Sa saad arvu muuta, et liitmine või lahutamine oleks lihtsam, ning seejärel muudatuse tasakaalustada, et tulemus jääks õigeks.",
+      be: "Ты можаш зьмяніць лік для зручнейшага складаньня або адніманьня, а пасьля кампэнсаваць зьмену, каб вынік застаўся правільным.",
+      ka: "შეგიძლია რიცხვი შეცვალო, რომ შეკრება ან გამოკლება გაიმარტივო, შემდეგ კი ეს ცვლილება დააკომპენსირო და სწორი შედეგი შეინარჩუნო.",
+      kk: "Қосу не азайтуды жеңілдету үшін бір санды өзгертіп, кейін сол өзгерісті өтеп, дұрыс нәтижені сақтай аласың."
     },
   },
 });

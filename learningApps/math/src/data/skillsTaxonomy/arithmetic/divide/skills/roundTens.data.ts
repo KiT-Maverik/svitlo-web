@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const roundTens_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.roundTens,
   name: {
-    "lt": "Dalyba — pilnos dešimtys",
-    "lv": "Dalīšana — pilni desmiti",
-    "et": "Jagamine — täiskümned",
-    "be": "Дзяленьне — круглыя дзясяткі",
-    "ka": "გაყოფა — სრული ათეულები",
-    "kk": "Бөлу — толық ондықтар",
+    lt: "Dalyba — pilnos dešimtys",
+    lv: "Dalīšana — pilni desmiti",
+    et: "Jagamine — täiskümned",
+    be: "Дзяленьне — круглыя дзясяткі",
+    ka: "გაყოფა — სრული ათეულები",
+    kk: "Бөлу — толық ондықтар",
     en: "Division — Whole tens",
     zh: "除法 — 整十数",
     hi: "भाग — पूरे दहाई",
@@ -58,12 +58,12 @@ export const roundTens_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק עשרות שלמות במספר חד־ספרתי ולהמיר אותן ליחידות קטנות יותר אם אי אפשר לחלק את העשרות בדיוק.",
       "pl": "Możesz dzielić pełne dziesiątki przez liczbę jednocyfrową, zamieniając je na mniejsze jednostki, gdy dziesiątki nie dzielą się dokładnie.",
       "uk": "Ти можеш ділити круглі десятки на одноцифрове число, обмінюючи їх на дрібніші розрядні одиниці, якщо десятки не діляться націло.",
-      "lt": "Gali dalyti pilnas dešimtis iš vienaženklio skaičiaus, prireikus keisdamas į mažesnius skyrius, jei dešimtys nesidalija tiksliai.",
-      "lv": "Tu vari dalīt pilnus desmitus ar viencipara skaitli, apmainot tos pret mazākām šķiru vienībām, ja desmiti nedalās bez atlikuma.",
-      "et": "Sa saad täiskümnelisi ühekohalise arvuga jagada ja vahetada need väiksemateks järguühikuteks, kui kümnelised täpselt ei jagu.",
-      "be": "Ты можаш дзяліць поўныя дзясяткі на адназначны лік, замяняючы іх меншымі разраднымі адзінкамі, калі дзясяткі ня дзеляцца нацэла.",
-      "ka": "შეგიძლია სრული ათეულები ერთნიშნა რიცხვზე გაყო და მცირე თანრიგის ერთეულებად გადააქციო, თუ ათეულები ზუსტად არ იყოფა.",
-      "kk": "Толық ондықтарды бір таңбалы санға бөліп, ондықтар дәл бөлінбесе, оларды кішірек разрядтық бірліктерге ауыстыра аласың."
+      lt: "Gali dalyti pilnas dešimtis iš vienaženklio skaičiaus, prireikus keisdamas į mažesnius skyrius, jei dešimtys nesidalija tiksliai.",
+      lv: "Tu vari dalīt pilnus desmitus ar viencipara skaitli, apmainot tos pret mazākām šķiru vienībām, ja desmiti nedalās bez atlikuma.",
+      et: "Sa saad täiskümnelisi ühekohalise arvuga jagada ja vahetada need väiksemateks järguühikuteks, kui kümnelised täpselt ei jagu.",
+      be: "Ты можаш дзяліць поўныя дзясяткі на адназначны лік, замяняючы іх меншымі разраднымі адзінкамі, калі дзясяткі ня дзеляцца нацэла.",
+      ka: "შეგიძლია სრული ათეულები ერთნიშნა რიცხვზე გაყო და მცირე თანრიგის ერთეულებად გადააქციო, თუ ათეულები ზუსტად არ იყოფა.",
+      kk: "Толық ондықтарды бір таңбалы санға бөліп, ондықтар дәл бөлінбесе, оларды кішірек разрядтық бірліктерге ауыстыра аласың."
     },
   },
 });

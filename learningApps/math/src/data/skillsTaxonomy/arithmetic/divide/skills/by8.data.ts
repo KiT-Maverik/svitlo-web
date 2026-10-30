@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by8_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by8,
   name: {
-    "lt": "Dalyba — ÷ 8",
-    "lv": "Dalīšana — ÷ 8",
-    "et": "Jagamine — ÷ 8",
-    "be": "Дзяленьне — ÷ 8",
-    "ka": "გაყოფა — ÷ 8",
-    "kk": "Бөлу — ÷ 8",
+    lt: "Dalyba — ÷ 8",
+    lv: "Dalīšana — ÷ 8",
+    et: "Jagamine — ÷ 8",
+    be: "Дзяленьне — ÷ 8",
+    ka: "გაყოფა — ÷ 8",
+    kk: "Бөлу — ÷ 8",
     en: "Division — ÷ 8",
     zh: "除法 — ÷ 8",
     hi: "भाग — ÷ 8",
@@ -58,12 +58,12 @@ export const by8_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בשמונה באמצעות קבוצות שוות או מכפלות מוכרות עם שמונה.",
       "pl": "Możesz dzielić przez osiem, korzystając z równych grup lub znanych iloczynów z ósemką.",
       "uk": "Ти можеш ділити на вісім, використовуючи рівні групи або відомі добутки з вісімкою.",
-      "lt": "Gali dalyti iš aštuonių naudodamas lygias grupes arba žinomas sandaugas su aštuonetu.",
-      "lv": "Tu vari dalīt ar 8, izmantojot vienādas grupas vai zināmus reizinājumus ar astoņi.",
-      "et": "Sa saad kaheksaga jagada võrdsete rühmade või tuntud kaheksaga korrutamise tulemuste abil.",
-      "be": "Ты можаш дзяліць на восем праз роўныя групы або вядомыя здабыткі зь васьмёркай.",
-      "ka": "შეგიძლია რვაზე გაყო თანაბარი ჯგუფებით ან რვასთან დაკავშირებული ცნობილი ნამრავლებით.",
-      "kk": "Сегізге бөлуді бірдей топтар немесе сегізге байланысты белгілі көбейтінділер арқылы орындай аласың."
+      lt: "Gali dalyti iš aštuonių naudodamas lygias grupes arba žinomas sandaugas su aštuonetu.",
+      lv: "Tu vari dalīt ar 8, izmantojot vienādas grupas vai zināmus reizinājumus ar astoņi.",
+      et: "Sa saad kaheksaga jagada võrdsete rühmade või tuntud kaheksaga korrutamise tulemuste abil.",
+      be: "Ты можаш дзяліць на восем праз роўныя групы або вядомыя здабыткі зь васьмёркай.",
+      ka: "შეგიძლია რვაზე გაყო თანაბარი ჯგუფებით ან რვასთან დაკავშირებული ცნობილი ნამრავლებით.",
+      kk: "Сегізге бөлуді бірдей топтар немесе сегізге байланысты белгілі көбейтінділер арқылы орындай аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const threeDigitByOne_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.threeDigitByOne,
   name: {
-    "lt": "Dalyba — triženklis skaičius iš vienaženklio",
-    "lv": "Dalīšana — trīsciparu skaitlis ar viencipara skaitli",
-    "et": "Jagamine — kolmekohaline arv ühekohalisega",
-    "be": "Дзяленьне — трохзначны лік на адназначны",
-    "ka": "გაყოფა — სამნიშნა რიცხვი ერთნიშნაზე",
-    "kk": "Бөлу — үш таңбалы санды бір таңбалы санға",
+    lt: "Dalyba — triženklis skaičius iš vienaženklio",
+    lv: "Dalīšana — trīsciparu skaitlis ar viencipara skaitli",
+    et: "Jagamine — kolmekohaline arv ühekohalisega",
+    be: "Дзяленьне — трохзначны лік на адназначны",
+    ka: "გაყოფა — სამნიშნა რიცხვი ერთნიშნაზე",
+    kk: "Бөлу — үш таңбалы санды бір таңбалы санға",
     en: "Division — 3-digit÷1-digit",
     zh: "除法 — 3-位数÷1-位数",
     hi: "भाग — 3-अंकीय÷1-अंकीय",
@@ -58,12 +58,12 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק מספר תלת־ספרתי במספר חד־ספרתי על ידי פירוק לחלקים נוחים וחיבור המנות החלקיות.",
       "pl": "Możesz dzielić liczbę trzycyfrową przez jednocyfrową, rozkładając ją na wygodne części i łącząc ilorazy częściowe.",
       "uk": "Ти можеш ділити трицифрове число на одноцифрове, розкладаючи його на зручні частини й об’єднуючи часткові частки.",
-      "lt": "Gali dalyti triženklį skaičių iš vienaženklio, išskaidydamas jį į patogias dalis ir sudėdamas dalinius dalmenis.",
-      "lv": "Tu vari dalīt trīsciparu skaitli ar viencipara skaitli, sadalot to ērtās daļās un apvienojot daļējos dalījumus.",
-      "et": "Sa saad kolmekohalist arvu ühekohalisega jagada, jaotades selle sobivateks osadeks ja liites osajagatised.",
-      "be": "Ты можаш дзяліць трохзначны лік на адназначны, раскладаючы яго на зручныя часткі й складаючы частковыя дзелі.",
-      "ka": "შეგიძლია სამნიშნა რიცხვი ერთნიშნაზე გაყო, მოსახერხებელ ნაწილებად დაშალო და ნაწილობრივი განაყოფები შეკრიბო.",
-      "kk": "Үш таңбалы санды бір таңбалыға ыңғайлы бөліктерге жіктеп, олардың бөлінділерін қосу арқылы бөле аласың."
+      lt: "Gali dalyti triženklį skaičių iš vienaženklio, išskaidydamas jį į patogias dalis ir sudėdamas dalinius dalmenis.",
+      lv: "Tu vari dalīt trīsciparu skaitli ar viencipara skaitli, sadalot to ērtās daļās un apvienojot daļējos dalījumus.",
+      et: "Sa saad kolmekohalist arvu ühekohalisega jagada, jaotades selle sobivateks osadeks ja liites osajagatised.",
+      be: "Ты можаш дзяліць трохзначны лік на адназначны, раскладаючы яго на зручныя часткі й складаючы частковыя дзелі.",
+      ka: "შეგიძლია სამნიშნა რიცხვი ერთნიშნაზე გაყო, მოსახერხებელ ნაწილებად დაშალო და ნაწილობრივი განაყოფები შეკრიბო.",
+      kk: "Үш таңбалы санды бір таңбалыға ыңғайлы бөліктерге жіктеп, олардың бөлінділерін қосу арқылы бөле аласың."
     },
   },
 });

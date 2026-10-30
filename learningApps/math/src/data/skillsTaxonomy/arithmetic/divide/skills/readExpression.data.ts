@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const readExpression_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.readExpression,
   name: {
-    "lt": "Dalyba — reiškinių skaitymas",
-    "lv": "Dalīšana — izteiksmju lasīšana",
-    "et": "Jagamine — avaldiste lugemine",
-    "be": "Дзяленьне — чытаньне выразаў",
-    "ka": "გაყოფა — გამოსახულებების წაკითხვა",
-    "kk": "Бөлу — өрнектерді оқу",
+    lt: "Dalyba — reiškinių skaitymas",
+    lv: "Dalīšana — izteiksmju lasīšana",
+    et: "Jagamine — avaldiste lugemine",
+    be: "Дзяленьне — чытаньне выразаў",
+    ka: "გაყოფა — გამოსახულებების წაკითხვა",
+    kk: "Бөлу — өрнектерді оқу",
     en: "Division — Reading expressions",
     zh: "除法 — 读算式",
     hi: "भाग — व्यंजक पढ़ना",
@@ -58,12 +58,12 @@ export const readExpression_Skill_Data = buildSkillConfig({
       "he": "אפשר לזהות בתרגיל חילוק את המחולק, המחלק והמנה ולהבין את משמעותם בחלוקה שווה או בקיבוץ.",
       "pl": "Możesz wskazać dzielną, dzielnik i iloraz oraz rozumieć ich znaczenie przy równym podziale i tworzeniu grup.",
       "uk": "Ти можеш визначати ділене, дільник і частку у виразі та розуміти їхню роль у рівному розподілі й групуванні.",
-      "lt": "Gali atpažinti dalinį, daliklį ir dalmenį bei suprasti jų vaidmenį dalijant po lygiai ir sudarant grupes.",
-      "lv": "Tu vari atpazīt dalāmo, dalītāju un dalījumu izteiksmē un saprast to lomu vienādā sadalīšanā un grupēšanā.",
-      "et": "Sa saad jagamistehtes ära tunda jagatava, jagaja ja jagatise ning mõista nende tähendust võrdselt jagamisel või rühmitamisel.",
-      "be": "Ты можаш вызначаць дзеліва, дзельнік і дзель у выразе ды разумець іх ролю ў роўным разьмеркаваньні й групаваньні.",
-      "ka": "შეგიძლია გაყოფის გამოსახულებაში გასაყოფი, გამყოფი და განაყოფი ამოიცნო და თანაბარ განაწილებასა თუ დაჯგუფებაში მათი როლი გაიგო.",
-      "kk": "Бөлу өрнегіндегі бөлінгішті, бөлгішті және бөліндіні анықтап, оларды тең бөлісу мен топтастыруда түсіне аласың."
+      lt: "Gali atpažinti dalinį, daliklį ir dalmenį bei suprasti jų vaidmenį dalijant po lygiai ir sudarant grupes.",
+      lv: "Tu vari atpazīt dalāmo, dalītāju un dalījumu izteiksmē un saprast to lomu vienādā sadalīšanā un grupēšanā.",
+      et: "Sa saad jagamistehtes ära tunda jagatava, jagaja ja jagatise ning mõista nende tähendust võrdselt jagamisel või rühmitamisel.",
+      be: "Ты можаш вызначаць дзеліва, дзельнік і дзель у выразе ды разумець іх ролю ў роўным разьмеркаваньні й групаваньні.",
+      ka: "შეგიძლია გაყოფის გამოსახულებაში გასაყოფი, გამყოფი და განაყოფი ამოიცნო და თანაბარ განაწილებასა თუ დაჯგუფებაში მათი როლი გაიგო.",
+      kk: "Бөлу өрнегіндегі бөлінгішті, бөлгішті және бөліндіні анықтап, оларды тең бөлісу мен топтастыруда түсіне аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by9_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by9,
   name: {
-    "lt": "Daugyba — × 9",
-    "lv": "Reizināšana — × 9",
-    "et": "Korrutamine — × 9",
-    "be": "Множаньне — × 9",
-    "ka": "გამრავლება — × 9",
-    "kk": "Көбейту — × 9",
+    lt: "Daugyba — × 9",
+    lv: "Reizināšana — × 9",
+    et: "Korrutamine — × 9",
+    be: "Множаньне — × 9",
+    ka: "გამრავლება — × 9",
+    kk: "Көбейту — × 9",
     en: "Multiplication — × 9",
     zh: "乘法 — × 9",
     hi: "गुणा — × 9",
@@ -58,12 +58,12 @@ export const by9_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול בתשע באמצעות תשע קבוצות שוות או לכפול בעשר ולהחסיר קבוצה אחת.",
       "pl": "Możesz mnożyć przez dziewięć za pomocą dziewięciu równych grup albo pomnożyć przez dziesięć i odjąć jedną grupę.",
       "uk": "Ти можеш множити на дев’ять за допомогою дев’яти рівних груп або множачи на десять і віднімаючи одну групу.",
-      "lt": "Gali dauginti iš devynių naudodamas devynias lygias grupes arba pirmiausia padaugindamas iš dešimties ir atimdamas vieną grupę.",
-      "lv": "Tu vari reizināt ar deviņi, izmantojot deviņas vienādas grupas vai vispirms reizinot ar desmit un atņemot vienu grupu.",
-      "et": "Sa saad üheksaga korrutada üheksa võrdse rühma abil või esmalt kümnega korrutades ja ühe rühma lahutades.",
-      "be": "Ты можаш множыць на дзевяць празь дзевяць роўных груп або спачатку памножыўшы на дзесяць і адняўшы адну групу.",
-      "ka": "შეგიძლია ცხრაზე გამრავლება ცხრა თანაბარი ჯგუფით ან ათზე გამრავლებით და ერთი ჯგუფის გამოკლებით.",
-      "kk": "Тоғызға көбейтуді тоғыз бірдей топпен немесе онға көбейтіп, бір топты азайту арқылы орындай аласың."
+      lt: "Gali dauginti iš devynių naudodamas devynias lygias grupes arba pirmiausia padaugindamas iš dešimties ir atimdamas vieną grupę.",
+      lv: "Tu vari reizināt ar deviņi, izmantojot deviņas vienādas grupas vai vispirms reizinot ar desmit un atņemot vienu grupu.",
+      et: "Sa saad üheksaga korrutada üheksa võrdse rühma abil või esmalt kümnega korrutades ja ühe rühma lahutades.",
+      be: "Ты можаш множыць на дзевяць празь дзевяць роўных груп або спачатку памножыўшы на дзесяць і адняўшы адну групу.",
+      ka: "შეგიძლია ცხრაზე გამრავლება ცხრა თანაბარი ჯგუფით ან ათზე გამრავლებით და ერთი ჯგუფის გამოკლებით.",
+      kk: "Тоғызға көбейтуді тоғыз бірдей топпен немесе онға көбейтіп, бір топты азайту арқылы орындай аласың."
     },
   },
 });

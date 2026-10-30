@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by7_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by7,
   name: {
-    "lt": "Dalyba — ÷ 7",
-    "lv": "Dalīšana — ÷ 7",
-    "et": "Jagamine — ÷ 7",
-    "be": "Дзяленьне — ÷ 7",
-    "ka": "გაყოფა — ÷ 7",
-    "kk": "Бөлу — ÷ 7",
+    lt: "Dalyba — ÷ 7",
+    lv: "Dalīšana — ÷ 7",
+    et: "Jagamine — ÷ 7",
+    be: "Дзяленьне — ÷ 7",
+    ka: "გაყოფა — ÷ 7",
+    kk: "Бөлу — ÷ 7",
     en: "Division — ÷ 7",
     zh: "除法 — ÷ 7",
     hi: "भाग — ÷ 7",
@@ -58,12 +58,12 @@ export const by7_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בשבע באמצעות קבוצות של שבע ועובדות כפל מוכרות כדי למצוא את המנה.",
       "pl": "Możesz dzielić przez siedem, korzystając z grup po siedem i znanych wyników mnożenia, aby znaleźć iloraz.",
       "uk": "Ти можеш ділити на сім, використовуючи групи по сім і відомі добутки, щоб знайти частку.",
-      "lt": "Gali dalyti iš septynių naudodamas grupes po septynis ir žinomus daugybos faktus, kad rastum dalmenį.",
-      "lv": "Tu vari dalīt ar 7, izmantojot grupas pa septiņiem un zināmus reizināšanas faktus, lai atrastu dalījumu.",
-      "et": "Sa saad seitsmega jagada seitsmest koosnevate rühmade ja tuntud korrutamisfaktide abil, et leida jagatis.",
-      "be": "Ты можаш дзяліць на сем праз групы па сем і вядомыя здабыткі, каб знайсьці дзель.",
-      "ka": "შეგიძლია შვიდზე გაყო შვიდ-შვიდიანი ჯგუფებისა და ცნობილი გამრავლების ფაქტების გამოყენებით და განაყოფი იპოვო.",
-      "kk": "Жетіге бөлуді жетіден тұратын топтар және белгілі көбейту нәтижелері арқылы орындап, бөліндіні таба аласың."
+      lt: "Gali dalyti iš septynių naudodamas grupes po septynis ir žinomus daugybos faktus, kad rastum dalmenį.",
+      lv: "Tu vari dalīt ar 7, izmantojot grupas pa septiņiem un zināmus reizināšanas faktus, lai atrastu dalījumu.",
+      et: "Sa saad seitsmega jagada seitsmest koosnevate rühmade ja tuntud korrutamisfaktide abil, et leida jagatis.",
+      be: "Ты можаш дзяліць на сем праз групы па сем і вядомыя здабыткі, каб знайсьці дзель.",
+      ka: "შეგიძლია შვიდზე გაყო შვიდ-შვიდიანი ჯგუფებისა და ცნობილი გამრავლების ფაქტების გამოყენებით და განაყოფი იპოვო.",
+      kk: "Жетіге бөлуді жетіден тұратын топтар және белгілі көбейту нәтижелері арқылы орындап, бөліндіні таба аласың."
     },
   },
 });

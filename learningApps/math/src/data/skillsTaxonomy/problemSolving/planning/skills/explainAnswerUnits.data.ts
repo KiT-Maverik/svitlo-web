@@ -4,12 +4,12 @@ import { planning_Skills_Ids } from './index.ids';
 export const explainAnswerUnits_Skill_Data = buildSkillConfig({
   id: planning_Skills_Ids.explainAnswerUnits,
   name: {
-    "lt": "Atsakymo matavimo vienetų ir pagrįstumo tikrinimas",
-    "lv": "Atbildes mērvienību un ticamības pārbaude",
-    "et": "Vastuse ühikute ja mõistlikkuse kontrollimine",
-    "be": "Праверка адзінак вымярэньня і праўдападобнасьці адказу",
-    "ka": "პასუხის ერთეულებისა და გონივრულობის შემოწმება",
-    "kk": "Жауап бірліктері мен қисындылығын тексеру",
+    lt: "Atsakymo matavimo vienetų ir pagrįstumo tikrinimas",
+    lv: "Atbildes mērvienību un ticamības pārbaude",
+    et: "Vastuse ühikute ja mõistlikkuse kontrollimine",
+    be: "Праверка адзінак вымярэньня і праўдападобнасьці адказу",
+    ka: "პასუხის ერთეულებისა და გონივრულობის შემოწმება",
+    kk: "Жауап бірліктері мен қисындылығын тексеру",
     en: "Checking answer units and reasonableness",
     zh: "检查答案单位与合理性",
     hi: "उत्तर की इकाइयाँ और युक्तिसंगतता जाँचना",

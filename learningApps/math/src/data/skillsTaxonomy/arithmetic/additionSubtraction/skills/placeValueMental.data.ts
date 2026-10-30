@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const placeValueMental_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.placeValueMental,
   name: {
-    "lt": "Sudėtis ir atimtis — skaičiavimas mintinai pagal skyrius",
-    "lv": "Saskaitīšana un atņemšana — prāta aprēķini pēc šķirām",
-    "et": "Liitmine ja lahutamine — peastarvutamine järkude kaupa",
-    "be": "Складаньне й адніманьне — вусныя вылічэньні па разрадах",
-    "ka": "შეკრება და გამოკლება — ზეპირი გამოთვლა თანრიგებით",
-    "kk": "Қосу және азайту — разряд бойынша ауызша есептеу",
+    lt: "Sudėtis ir atimtis — skaičiavimas mintinai pagal skyrius",
+    lv: "Saskaitīšana un atņemšana — prāta aprēķini pēc šķirām",
+    et: "Liitmine ja lahutamine — peastarvutamine järkude kaupa",
+    be: "Складаньне й адніманьне — вусныя вылічэньні па разрадах",
+    ka: "შეკრება და გამოკლება — ზეპირი გამოთვლა თანრიგებით",
+    kk: "Қосу және азайту — разряд бойынша ауызша есептеу",
     en: "Addition and subtraction — Mental place-value strategy",
     zh: "加减法 — 按位值心算",
     hi: "जोड़ और घटाव — स्थानीय मान से मौखिक गणना",
@@ -58,12 +58,12 @@ export const placeValueMental_Skill_Data = buildSkillConfig({
       "he": "אפשר לפרק מספרים לעשרות וליחידות כדי לחבר או לחסר בראש בלי לשנות את הסכום או ההפרש.",
       "pl": "Możesz rozkładać liczby na dziesiątki i jedności, aby dodawać lub odejmować w pamięci bez zmiany sumy lub różnicy.",
       "uk": "Ти можеш розкладати числа на десятки й одиниці, щоб додавати чи віднімати подумки без зміни суми або різниці.",
-      "lt": "Gali išskaidyti skaičius į dešimtis ir vienetus, kad mintinai sudėtum ar atimtum nepakeisdamas sumos ar skirtumo.",
-      "lv": "Tu vari sadalīt skaitļus desmitos un vienos, lai galvā saskaitītu vai atņemtu, nemainot summu vai starpību.",
-      "et": "Sa saad arve kümnelisteks ja ühelisteks jagada, et peast liita või lahutada nii, et summa või vahe ei muutu.",
-      "be": "Ты можаш раскладаць лікі на дзясяткі і адзінкі, каб складаць або адымаць у думках безь зьмены сумы ці розьніцы.",
-      "ka": "შეგიძლია რიცხვები ათეულებად და ერთეულებად დაშალო და ჯამის ან სხვაობის შეცვლის გარეშე ზეპირად შეკრიბო ან გამოაკლო.",
-      "kk": "Сандарды ондықтар мен бірліктерге жіктеп, қосындыны не айырманы өзгертпей ойша қосып, азайта аласың."
+      lt: "Gali išskaidyti skaičius į dešimtis ir vienetus, kad mintinai sudėtum ar atimtum nepakeisdamas sumos ar skirtumo.",
+      lv: "Tu vari sadalīt skaitļus desmitos un vienos, lai galvā saskaitītu vai atņemtu, nemainot summu vai starpību.",
+      et: "Sa saad arve kümnelisteks ja ühelisteks jagada, et peast liita või lahutada nii, et summa või vahe ei muutu.",
+      be: "Ты можаш раскладаць лікі на дзясяткі і адзінкі, каб складаць або адымаць у думках безь зьмены сумы ці розьніцы.",
+      ka: "შეგიძლია რიცხვები ათეულებად და ერთეულებად დაშალო და ჯამის ან სხვაობის შეცვლის გარეშე ზეპირად შეკრიბო ან გამოაკლო.",
+      kk: "Сандарды ондықтар мен бірліктерге жіктеп, қосындыны не айырманы өзгертпей ойша қосып, азайта аласың."
     },
   },
 });

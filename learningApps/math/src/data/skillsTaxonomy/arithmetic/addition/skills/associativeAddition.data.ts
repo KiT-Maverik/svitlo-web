@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const associativeAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.associativeAddition,
   name: {
-    "lt": "Sudėtis — jungiamumo dėsnis",
-    "lv": "Saskaitīšana — asociativitātes likums",
-    "et": "Liitmine — ühenduvusseadus",
-    "be": "Складаньне — спалучальны закон",
-    "ka": "შეკრება — ჯუფთებადობის თვისება",
-    "kk": "Қосу — терімділік қасиеті",
+    lt: "Sudėtis — jungiamumo dėsnis",
+    lv: "Saskaitīšana — asociativitātes likums",
+    et: "Liitmine — ühenduvusseadus",
+    be: "Складаньне — спалучальны закон",
+    ka: "შეკრება — ჯუფთებადობის თვისება",
+    kk: "Қосу — терімділік қасиеті",
     en: "Addition — Associative property",
     zh: "加法 — 结合律",
     hi: "जोड़ — साहचर्य नियम",
@@ -58,12 +58,12 @@ export const associativeAddition_Skill_Data = buildSkillConfig({
       "he": "אפשר לקבץ שלושה מספרים או יותר בדרכים שונות בזמן חיבור בלי לשנות את הסכום.",
       "pl": "Możesz grupować trzy lub więcej liczb na różne sposoby podczas dodawania, nie zmieniając sumy.",
       "uk": "Ти можеш по-різному групувати три чи більше доданків, не змінюючи їхньої суми.",
-      "lt": "Sudėdamas tris ar daugiau skaičių gali juos įvairiai sugrupuoti, bet suma nepasikeis.",
-      "lv": "Saskaitot trīs vai vairāk skaitļus, tos var sagrupēt dažādi, nemainot summu.",
-      "et": "Kolme või enama arvu liitmisel saad neid rühmitada mitmel viisil, ilma et summa muutuks.",
-      "be": "Ты можаш па-рознаму групаваць тры ці болей складнікаў, не зьмяняючы іх сумы.",
-      "ka": "სამი ან მეტი რიცხვის შეკრებისას შეგიძლია ისინი სხვადასხვაგვარად დააჯგუფო, ჯამი კი არ შეიცვლება.",
-      "kk": "Үш немесе одан көп санды қосқанда оларды әртүрлі топтастырсаң да, қосынды өзгермейді."
+      lt: "Sudėdamas tris ar daugiau skaičių gali juos įvairiai sugrupuoti, bet suma nepasikeis.",
+      lv: "Saskaitot trīs vai vairāk skaitļus, tos var sagrupēt dažādi, nemainot summu.",
+      et: "Kolme või enama arvu liitmisel saad neid rühmitada mitmel viisil, ilma et summa muutuks.",
+      be: "Ты можаш па-рознаму групаваць тры ці болей складнікаў, не зьмяняючы іх сумы.",
+      ka: "სამი ან მეტი რიცხვის შეკრებისას შეგიძლია ისინი სხვადასხვაგვარად დააჯგუფო, ჯამი კი არ შეიცვლება.",
+      kk: "Үш немесе одан көп санды қосқанда оларды әртүрлі топтастырсаң да, қосынды өзгермейді."
     },
   },
 });

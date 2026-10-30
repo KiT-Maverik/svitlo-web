@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const twoDigitBorrow_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.twoDigitBorrow,
   name: {
-    "lt": "Atimtis — dviženkliai skaičiai su skolinimusi",
-    "lv": "Atņemšana — divciparu skaitļi ar aizņemšanos",
-    "et": "Lahutamine — kahekohalised arvud laenamisega",
-    "be": "Адніманьне — двухзначныя лікі з разьяднаньнем",
-    "ka": "გამოკლება — ორნიშნა რიცხვები გადაჯგუფებით",
-    "kk": "Азайту — екі таңбалы сандар разрядтан алумен",
+    lt: "Atimtis — dviženkliai skaičiai su skolinimusi",
+    lv: "Atņemšana — divciparu skaitļi ar aizņemšanos",
+    et: "Lahutamine — kahekohalised arvud laenamisega",
+    be: "Адніманьне — двухзначныя лікі з разьяднаньнем",
+    ka: "გამოკლება — ორნიშნა რიცხვები გადაჯგუფებით",
+    kk: "Азайту — екі таңбалы сандар разрядтан алумен",
     en: "Subtraction — 2-digit · Borrowing",
     zh: "减法 — 2-位数 · 退位",
     hi: "घटाव — 2-अंकीय · उधार लेना",
@@ -58,12 +58,12 @@ export const twoDigitBorrow_Skill_Data = buildSkillConfig({
       "he": "אפשר לחסר מספרים דו־ספרתיים על ידי המרת עשרת אחת בעשר יחידות כשאין מספיק יחידות לחיסור.",
       "pl": "Możesz odejmować liczby dwucyfrowe, zamieniając jedną dziesiątkę na dziesięć jedności, gdy brakuje jedności.",
       "uk": "Ти можеш віднімати двоцифрові числа, обмінюючи один десяток на десять одиниць, коли одиниць бракує.",
-      "lt": "Gali atimti dviženklius skaičius, pakeisdamas vieną dešimtį dešimčia vienetų, kai vienetų nepakanka.",
-      "lv": "Tu vari atņemt divciparu skaitļus, vienu desmitu apmainot pret desmit vieniem, ja vienu nepietiek.",
-      "et": "Sa saad kahekohalisi arve lahutada, vahetades ühe kümnelise kümne ühelise vastu, kui ühelisi ei jätku.",
-      "be": "Ты можаш адымаць двухзначныя лікі, замяняючы адзін дзясятак дзесяцьцю адзінкамі, калі адзінак не хапае.",
-      "ka": "შეგიძლია ორნიშნა რიცხვები გამოაკლო და, როცა ერთეულები არ კმარა, ერთი ათეული ათ ერთეულად გადააქციო.",
-      "kk": "Екі таңбалы сандарды азайтқанда бірліктер жетіспесе, бір ондықты он бірлікке ауыстыра аласың."
+      lt: "Gali atimti dviženklius skaičius, pakeisdamas vieną dešimtį dešimčia vienetų, kai vienetų nepakanka.",
+      lv: "Tu vari atņemt divciparu skaitļus, vienu desmitu apmainot pret desmit vieniem, ja vienu nepietiek.",
+      et: "Sa saad kahekohalisi arve lahutada, vahetades ühe kümnelise kümne ühelise vastu, kui ühelisi ei jätku.",
+      be: "Ты можаш адымаць двухзначныя лікі, замяняючы адзін дзясятак дзесяцьцю адзінкамі, калі адзінак не хапае.",
+      ka: "შეგიძლია ორნიშნა რიცხვები გამოაკლო და, როცა ერთეულები არ კმარა, ერთი ათეული ათ ერთეულად გადააქციო.",
+      kk: "Екі таңбалы сандарды азайтқанда бірліктер жетіспесе, бір ондықты он бірлікке ауыстыра аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.threeDigitNoRegroup,
   name: {
-    "lt": "Sudėtis ir atimtis — triženkliai skaičiai be pergrupavimo",
-    "lv": "Saskaitīšana un atņemšana — trīsciparu skaitļi bez pārgrupēšanas",
-    "et": "Liitmine ja lahutamine — kolmekohalised arvud ümberrühmitamiseta",
-    "be": "Складаньне й адніманьне — трохзначныя лікі без разраднага абмену",
-    "ka": "შეკრება და გამოკლება — სამნიშნა რიცხვები გადაჯგუფების გარეშე",
-    "kk": "Қосу және азайту — үш таңбалы сандар қайта топтастырусыз",
+    lt: "Sudėtis ir atimtis — triženkliai skaičiai be pergrupavimo",
+    lv: "Saskaitīšana un atņemšana — trīsciparu skaitļi bez pārgrupēšanas",
+    et: "Liitmine ja lahutamine — kolmekohalised arvud ümberrühmitamiseta",
+    be: "Складаньне й адніманьне — трохзначныя лікі без разраднага абмену",
+    ka: "შეკრება და გამოკლება — სამნიშნა რიცხვები გადაჯგუფების გარეშე",
+    kk: "Қосу және азайту — үш таңбалы сандар қайта топтастырусыз",
     en: "Addition and subtraction — 3-digit · Without regrouping",
     zh: "加减法 — 3-位数 · 不进退位",
     hi: "जोड़ और घटाव — 3-अंकीय · बिना पुनर्समूहन",
@@ -58,12 +58,12 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
       "he": "אפשר לחבר או לחסר מספרים תלת־ספרתיים על ידי חישוב נפרד של מאות, עשרות ויחידות כאשר אין צורך בהמרה.",
       "pl": "Możesz dodawać i odejmować liczby trzycyfrowe, obliczając osobno setki, dziesiątki i jedności, gdy nie potrzeba zamiany między rzędami.",
       "uk": "Ти можеш додавати й віднімати трицифрові числа окремо за сотнями, десятками й одиницями, коли не потрібен розрядний обмін.",
-      "lt": "Gali sudėti ar atimti triženklius skaičius atskirai skaičiuodamas šimtus, dešimtis ir vienetus, kai nereikia pergrupuoti.",
-      "lv": "Tu vari saskaitīt vai atņemt trīsciparu skaitļus, atsevišķi rēķinot simtus, desmitus un vienus, ja pārgrupēšana nav vajadzīga.",
-      "et": "Sa oskad kolme­kohalisi arve liita või lahutada, arvutades sajalis­ed, kümnelis­ed ja ühelis­ed eraldi, kui ümberrühmitamine pole vajalik.",
-      "be": "Ты можаш складаць і адымаць трохзначныя лікі асобна па сотнях, дзясятках і адзінках, калі разрадны абмен не патрэбны.",
-      "ka": "შეგიძლია სამნიშნა რიცხვები შეკრიბო ან გამოაკლო, ასეულების, ათეულებისა და ერთეულების ცალკე გამოთვლით, როცა გადაჯგუფება საჭირო არ არის.",
-      "kk": "Қайта топтастыру қажет болмағанда үш таңбалы сандардың жүздіктерін, ондықтарын және бірліктерін бөлек есептеп қоса немесе азайта аласың."
+      lt: "Gali sudėti ar atimti triženklius skaičius atskirai skaičiuodamas šimtus, dešimtis ir vienetus, kai nereikia pergrupuoti.",
+      lv: "Tu vari saskaitīt vai atņemt trīsciparu skaitļus, atsevišķi rēķinot simtus, desmitus un vienus, ja pārgrupēšana nav vajadzīga.",
+      et: "Sa oskad kolme­kohalisi arve liita või lahutada, arvutades sajalis­ed, kümnelis­ed ja ühelis­ed eraldi, kui ümberrühmitamine pole vajalik.",
+      be: "Ты можаш складаць і адымаць трохзначныя лікі асобна па сотнях, дзясятках і адзінках, калі разрадны абмен не патрэбны.",
+      ka: "შეგიძლია სამნიშნა რიცხვები შეკრიბო ან გამოაკლო, ასეულების, ათეულებისა და ერთეულების ცალკე გამოთვლით, როცა გადაჯგუფება საჭირო არ არის.",
+      kk: "Қайта топтастыру қажет болмағанда үш таңбалы сандардың жүздіктерін, ондықтарын және бірліктерін бөлек есептеп қоса немесе азайта аласың."
     },
   },
 });

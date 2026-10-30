@@ -4,12 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const digitPlaceValue_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.digitPlaceValue,
   name: {
-    "lt": "Skaitmens vertė pagal jo poziciją",
-    "lv": "Cipara vērtība atkarībā no pozīcijas",
-    "et": "Numbri väärtus asukoha järgi",
-    "be": "Значэньне лічбы паводле разраду",
-    "ka": "ციფრის მნიშვნელობა პოზიციის მიხედვით",
-    "kk": "Цифрдың разрядқа байланысты мәні",
+    lt: "Skaitmens vertė pagal jo poziciją",
+    lv: "Cipara vērtība atkarībā no pozīcijas",
+    et: "Numbri väärtus asukoha järgi",
+    be: "Значэньне лічбы паводле разраду",
+    ka: "ციფრის მნიშვნელობა პოზიციის მიხედვით",
+    kk: "Цифрдың разрядқа байланысты мәні",
     en: "Value of a digit by position",
     zh: "数字在不同数位上的值",
     hi: "स्थान के अनुसार अंक का मान",

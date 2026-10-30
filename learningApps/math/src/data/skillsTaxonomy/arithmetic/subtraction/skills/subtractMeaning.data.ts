@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const subtractMeaning_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.subtractMeaning,
   name: {
-    "lt": "Atimtis — reikšmė ir modeliai",
-    "lv": "Atņemšana — nozīme un modeļi",
-    "et": "Lahutamine — tähendus ja mudelid",
-    "be": "Адніманьне — сэнс і мадэлі",
-    "ka": "გამოკლება — მნიშვნელობა და მოდელები",
-    "kk": "Азайту — мағынасы мен модельдері",
+    lt: "Atimtis — reikšmė ir modeliai",
+    lv: "Atņemšana — nozīme un modeļi",
+    et: "Lahutamine — tähendus ja mudelid",
+    be: "Адніманьне — сэнс і мадэлі",
+    ka: "გამოკლება — მნიშვნელობა და მოდელები",
+    kk: "Азайту — мағынасы мен модельдері",
     en: "Subtraction — Meaning and models",
     zh: "减法 — 含义与模型",
     hi: "घटाव — अर्थ और मॉडल",
@@ -58,12 +58,12 @@ export const subtractMeaning_Skill_Data = buildSkillConfig({
       "he": "אפשר לזהות חיסור כהסרת חלק, השוואה בין כמויות או מציאת חלק חסר, ולייצג כל מצב בתרגיל חיסור.",
       "pl": "Potrafisz rozpoznać odejmowanie jako zabieranie, porównywanie ilości lub znajdowanie brakującej części i zapisać każdą sytuację działaniem.",
       "uk": "Ти можеш розпізнавати віднімання як вилучення частини, порівняння кількостей або пошук невідомої частини й записувати кожен випадок дією віднімання.",
-      "lt": "Gali atpažinti atimtį kaip dalies pašalinimą, kiekių palyginimą ar trūkstamos dalies paiešką ir kiekvieną atvejį užrašyti atimties veiksmu.",
-      "lv": "Tu vari atpazīt atņemšanu kā daļas noņemšanu, daudzumu salīdzināšanu vai trūkstošās daļas atrašanu un katru gadījumu attēlot ar atņemšanu.",
-      "et": "Sa oskad ära tunda lahutamise kui osa eemaldamise, koguste võrdlemise või puuduva osa leidmise ning iga olukorda lahutamistehtega esitada.",
-      "be": "Ты можаш распазнаваць адніманьне як адбіраньне часткі, параўнаньне колькасьцяў або пошук невядомай часткі і запісваць кожны выпадак адніманьнем.",
-      "ka": "შეგიძლია გამოარჩიო, როდის ნიშნავს გამოკლება ნაწილის მოცილებას, რაოდენობების შედარებას ან დაკარგული ნაწილის პოვნას და თითოეული შემთხვევა გამოკლებით გამოსახო.",
-      "kk": "Азайтудың бөлікті алып тастау, екі мөлшерді салыстыру немесе белгісіз бөлікті табу екенін ажыратып, әр жағдайды азайту амалымен көрсете аласың."
+      lt: "Gali atpažinti atimtį kaip dalies pašalinimą, kiekių palyginimą ar trūkstamos dalies paiešką ir kiekvieną atvejį užrašyti atimties veiksmu.",
+      lv: "Tu vari atpazīt atņemšanu kā daļas noņemšanu, daudzumu salīdzināšanu vai trūkstošās daļas atrašanu un katru gadījumu attēlot ar atņemšanu.",
+      et: "Sa oskad ära tunda lahutamise kui osa eemaldamise, koguste võrdlemise või puuduva osa leidmise ning iga olukorda lahutamistehtega esitada.",
+      be: "Ты можаш распазнаваць адніманьне як адбіраньне часткі, параўнаньне колькасьцяў або пошук невядомай часткі і запісваць кожны выпадак адніманьнем.",
+      ka: "შეგიძლია გამოარჩიო, როდის ნიშნავს გამოკლება ნაწილის მოცილებას, რაოდენობების შედარებას ან დაკარგული ნაწილის პოვნას და თითოეული შემთხვევა გამოკლებით გამოსახო.",
+      kk: "Азайтудың бөлікті алып тастау, екі мөлшерді салыстыру немесе белгісіз бөлікті табу екенін ажыратып, әр жағдайды азайту амалымен көрсете аласың."
     },
   },
 });

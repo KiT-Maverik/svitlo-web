@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const twoDigitByOne_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.twoDigitByOne,
   name: {
-    "lt": "Dalyba — dviženklis skaičius iš vienaženklio",
-    "lv": "Dalīšana — divciparu skaitlis ar viencipara skaitli",
-    "et": "Jagamine — kahekohaline arv ühekohalisega",
-    "be": "Дзяленьне — двухзначны лік на адназначны",
-    "ka": "გაყოფა — ორნიშნა რიცხვი ერთნიშნაზე",
-    "kk": "Бөлу — екі таңбалы санды бір таңбалы санға",
+    lt: "Dalyba — dviženklis skaičius iš vienaženklio",
+    lv: "Dalīšana — divciparu skaitlis ar viencipara skaitli",
+    et: "Jagamine — kahekohaline arv ühekohalisega",
+    be: "Дзяленьне — двухзначны лік на адназначны",
+    ka: "გაყოფა — ორნიშნა რიცხვი ერთნიშნაზე",
+    kk: "Бөлу — екі таңбалы санды бір таңбалы санға",
     en: "Division — 2-digit÷1-digit",
     zh: "除法 — 2-位数÷1-位数",
     hi: "भाग — 2-अंकीय÷1-अंकीय",
@@ -58,12 +58,12 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק מספר דו־ספרתי במספר חד־ספרתי על ידי פירוק לחלקים שקל לחלק ולחיבור התוצאות.",
       "pl": "Możesz dzielić liczbę dwucyfrową przez jednocyfrową, rozkładając ją na łatwiejsze do podzielenia części i łącząc wyniki.",
       "uk": "Ти можеш ділити двоцифрове число на одноцифрове, розкладаючи його на частини, які легше поділити, й поєднуючи результати.",
-      "lt": "Gali dalyti dviženklį skaičių iš vienaženklio, išskaidydamas jį į lengviau dalijamas dalis ir sujungdamas rezultatus.",
-      "lv": "Tu vari dalīt divciparu skaitli ar viencipara skaitli, sadalot to vieglāk dalāmās daļās un apvienojot rezultātus.",
-      "et": "Sa saad kahekohalist arvu ühekohalisega jagada, jaotades selle kergemini jagatavateks osadeks ja ühendades tulemused.",
-      "be": "Ты можаш дзяліць двухзначны лік на адназначны, раскладаючы яго на часткі, якія лягчэй падзяліць, і аб’ядноўваючы вынікі.",
-      "ka": "შეგიძლია ორნიშნა რიცხვი ერთნიშნაზე გაყო, უფრო ადვილად გასაყოფ ნაწილებად დაშალო და შედეგები შეაერთო.",
-      "kk": "Екі таңбалы санды бір таңбалыға оңай бөлінетін бөліктерге жіктеп, нәтижелерін біріктіре аласың."
+      lt: "Gali dalyti dviženklį skaičių iš vienaženklio, išskaidydamas jį į lengviau dalijamas dalis ir sujungdamas rezultatus.",
+      lv: "Tu vari dalīt divciparu skaitli ar viencipara skaitli, sadalot to vieglāk dalāmās daļās un apvienojot rezultātus.",
+      et: "Sa saad kahekohalist arvu ühekohalisega jagada, jaotades selle kergemini jagatavateks osadeks ja ühendades tulemused.",
+      be: "Ты можаш дзяліць двухзначны лік на адназначны, раскладаючы яго на часткі, якія лягчэй падзяліць, і аб’ядноўваючы вынікі.",
+      ka: "შეგიძლია ორნიშნა რიცხვი ერთნიშნაზე გაყო, უფრო ადვილად გასაყოფ ნაწილებად დაშალო და შედეგები შეაერთო.",
+      kk: "Екі таңбалы санды бір таңбалыға оңай бөлінетін бөліктерге жіктеп, нәтижелерін біріктіре аласың."
     },
   },
 });

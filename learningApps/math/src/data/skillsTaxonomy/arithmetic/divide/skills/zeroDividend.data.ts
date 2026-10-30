@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const zeroDividend_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.zeroDividend,
   name: {
-    "lt": "Dalyba — nulis kaip dalinys",
-    "lv": "Dalīšana — nulle kā dalāmais",
-    "et": "Jagamine — null jagatav",
-    "be": "Дзяленьне — нуль як дзялімае",
-    "ka": "გაყოფა — ნული გასაყოფის როლში",
-    "kk": "Бөлу — бөлінгіш нөл",
+    lt: "Dalyba — nulis kaip dalinys",
+    lv: "Dalīšana — nulle kā dalāmais",
+    et: "Jagamine — null jagatav",
+    be: "Дзяленьне — нуль як дзялімае",
+    ka: "გაყოფა — ნული გასაყოფის როლში",
+    kk: "Бөлу — бөлінгіш нөл",
     en: "Division — Zero dividend",
     zh: "除法 — 被除数为零",
     hi: "भाग — शून्य भाज्य",
@@ -58,12 +58,12 @@ export const zeroDividend_Skill_Data = buildSkillConfig({
       "he": "אפס חלקי כל מספר שאינו אפס שווה אפס; זה שונה מחילוק באפס.",
       "pl": "Zero podzielone przez dowolną liczbę różną od zera daje zero; to nie jest to samo co dzielenie przez zero.",
       "uk": "Нуль, поділений на будь-яке ненульове число, дорівнює нулю. Це не те саме, що ділити на нуль.",
-      "lt": "Nulis, padalytas iš bet kurio nelygaus nuliui skaičiaus, lygus nuliui; tai ne tas pats, kas dalyti iš nulio.",
-      "lv": "Nulle, dalīta ar jebkuru nenulles skaitli, ir nulle; tas nav tas pats, kas dalīt ar nulli.",
-      "et": "Nulli jagamisel mis tahes nullist erineva arvuga saad nulli; see erineb nulliga jagamisest.",
-      "be": "Нуль, падзелены на любы ненулявы лік, роўны нулю. Гэта ня тое самае, што дзяліць на нуль.",
-      "ka": "ნული ნებისმიერ არანულოვან რიცხვზე გაყოფისას ნულია; ეს ნულზე გაყოფისგან განსხვავდება.",
-      "kk": "Нөлді кез келген нөлден өзге санға бөлсең, нөл шығады; бұл нөлге бөлу емес."
+      lt: "Nulis, padalytas iš bet kurio nelygaus nuliui skaičiaus, lygus nuliui; tai ne tas pats, kas dalyti iš nulio.",
+      lv: "Nulle, dalīta ar jebkuru nenulles skaitli, ir nulle; tas nav tas pats, kas dalīt ar nulli.",
+      et: "Nulli jagamisel mis tahes nullist erineva arvuga saad nulli; see erineb nulliga jagamisest.",
+      be: "Нуль, падзелены на любы ненулявы лік, роўны нулю. Гэта ня тое самае, што дзяліць на нуль.",
+      ka: "ნული ნებისმიერ არანულოვან რიცხვზე გაყოფისას ნულია; ეს ნულზე გაყოფისგან განსხვავდება.",
+      kk: "Нөлді кез келген нөлден өзге санға бөлсең, нөл шығады; бұл нөлге бөлу емес."
     },
   },
 });

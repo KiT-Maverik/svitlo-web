@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by0And1_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by0And1,
   name: {
-    "lt": "Daugyba — × 0 · × 1",
-    "lv": "Reizināšana — × 0 · × 1",
-    "et": "Korrutamine — × 0 · × 1",
-    "be": "Множаньне — × 0 · × 1",
-    "ka": "გამრავლება — × 0 · × 1",
-    "kk": "Көбейту — × 0 · × 1",
+    lt: "Daugyba — × 0 · × 1",
+    lv: "Reizināšana — × 0 · × 1",
+    et: "Korrutamine — × 0 · × 1",
+    be: "Множаньне — × 0 · × 1",
+    ka: "გამრავლება — × 0 · × 1",
+    kk: "Көбейту — × 0 · × 1",
     en: "Multiplication — × 0 · × 1",
     zh: "乘法 — × 0 · × 1",
     hi: "गुणा — × 0 · × 1",
@@ -58,12 +58,12 @@ export const by0And1_Skill_Data = buildSkillConfig({
       "he": "כפל של כל מספר באפס נותן אפס; כפל באחת משאיר את המספר ללא שינוי.",
       "pl": "Każda liczba pomnożona przez zero daje zero, a pomnożona przez jeden pozostaje bez zmian.",
       "uk": "Множення будь-якого числа на нуль дає нуль, а множення на одиницю залишає число незмінним.",
-      "lt": "Bet kurį skaičių padauginus iš nulio gaunamas nulis, o padauginus iš vieneto skaičius nepasikeičia.",
-      "lv": "Jebkuru skaitli reizinot ar nulli, iegūst nulli, bet reizinot ar vienu, skaitlis nemainās.",
-      "et": "Mis tahes arvu korrutamisel nulliga saad nulli; ühega korrutades jääb arv samaks.",
-      "be": "Множаньне любога ліку на нуль дае нуль, а на адзінку пакідае лік нязьменным.",
-      "ka": "ნებისმიერი რიცხვის ნულზე გამრავლების შედეგი ნულია, ხოლო ერთზე გამრავლებისას რიცხვი უცვლელი რჩება.",
-      "kk": "Кез келген санды нөлге көбейтсең нөл шығады, бірге көбейтсең сан өзгермейді."
+      lt: "Bet kurį skaičių padauginus iš nulio gaunamas nulis, o padauginus iš vieneto skaičius nepasikeičia.",
+      lv: "Jebkuru skaitli reizinot ar nulli, iegūst nulli, bet reizinot ar vienu, skaitlis nemainās.",
+      et: "Mis tahes arvu korrutamisel nulliga saad nulli; ühega korrutades jääb arv samaks.",
+      be: "Множаньне любога ліку на нуль дае нуль, а на адзінку пакідае лік нязьменным.",
+      ka: "ნებისმიერი რიცხვის ნულზე გამრავლების შედეგი ნულია, ხოლო ერთზე გამრავლებისას რიცხვი უცვლელი რჩება.",
+      kk: "Кез келген санды нөлге көбейтсең нөл шығады, бірге көбейтсең сан өзгермейді."
     },
   },
 });

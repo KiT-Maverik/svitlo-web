@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const partWhole_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.partWhole,
   name: {
-    "lt": "Sudėtis ir atimtis — dalies ir visumos ryšys",
-    "lv": "Saskaitīšana un atņemšana — daļas un veseluma saikne",
-    "et": "Liitmine ja lahutamine — osa ja terviku seos",
-    "be": "Складаньне й адніманьне — сувязь часткі й цэлага",
-    "ka": "შეკრება და გამოკლება — ნაწილისა და მთელის კავშირი",
-    "kk": "Қосу және азайту — бөлік пен бүтіннің байланысы",
+    lt: "Sudėtis ir atimtis — dalies ir visumos ryšys",
+    lv: "Saskaitīšana un atņemšana — daļas un veseluma saikne",
+    et: "Liitmine ja lahutamine — osa ja terviku seos",
+    be: "Складаньне й адніманьне — сувязь часткі й цэлага",
+    ka: "შეკრება და გამოკლება — ნაწილისა და მთელის კავშირი",
+    kk: "Қосу және азайту — бөлік пен бүтіннің байланысы",
     en: "Addition and subtraction — Part–whole relationship",
     zh: "加减法 — 部分与整体的关系",
     hi: "जोड़ और घटाव — भाग और पूर्ण का संबंध",
@@ -58,12 +58,12 @@ export const partWhole_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא את השלם מתוך חלקיו, או חלק חסר כשמכירים את השלם ואת החלקים האחרים.",
       "pl": "Możesz znaleźć całość na podstawie jej części albo brakującą część, gdy znasz całość i pozostałe części.",
       "uk": "Ти можеш знаходити ціле за його частинами або невідому частину, коли знаєш ціле й решту частин.",
-      "lt": "Gali rasti visumą iš jos dalių arba trūkstamą dalį, kai žinai visumą ir kitas dalis.",
-      "lv": "Tu vari atrast veselo lielumu pēc tā daļām vai trūkstošo daļu, ja zini veselo un pārējās daļas.",
-      "et": "Sa saad leida osade järgi terviku või puuduva osa, kui tervik ja ülejäänud osad on teada.",
-      "be": "Ты можаш знаходзіць цэлае паводле яго частак або невядомую частку, калі ведаеш цэлае ды астатнія часткі.",
-      "ka": "შეგიძლია ნაწილების მიხედვით მთელი იპოვო, ან დაკარგული ნაწილი — თუ მთელი და დანარჩენი ნაწილები ცნობილია.",
-      "kk": "Бөліктері бойынша бүтінді немесе бүтін мен өзге бөліктер белгілі болса, жетіспейтін бөлікті таба аласың."
+      lt: "Gali rasti visumą iš jos dalių arba trūkstamą dalį, kai žinai visumą ir kitas dalis.",
+      lv: "Tu vari atrast veselo lielumu pēc tā daļām vai trūkstošo daļu, ja zini veselo un pārējās daļas.",
+      et: "Sa saad leida osade järgi terviku või puuduva osa, kui tervik ja ülejäänud osad on teada.",
+      be: "Ты можаш знаходзіць цэлае паводле яго частак або невядомую частку, калі ведаеш цэлае ды астатнія часткі.",
+      ka: "შეგიძლია ნაწილების მიხედვით მთელი იპოვო, ან დაკარგული ნაწილი — თუ მთელი და დანარჩენი ნაწილები ცნობილია.",
+      kk: "Бөліктері бойынша бүтінді немесе бүтін мен өзге бөліктер белгілі болса, жетіспейтін бөлікті таба аласың."
     },
   },
 });

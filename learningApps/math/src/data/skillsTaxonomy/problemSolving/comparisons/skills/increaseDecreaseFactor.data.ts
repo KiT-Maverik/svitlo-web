@@ -4,12 +4,12 @@ import { comparisons_Skills_Ids } from './index.ids';
 export const increaseDecreaseFactor_Skill_Data = buildSkillConfig({
   id: comparisons_Skills_Ids.increaseDecreaseFactor,
   name: {
-    "lt": "Didinimas ar mažinimas nurodytą kartų skaičių",
-    "lv": "Palielināšana vai samazināšana noteiktu reižu skaitu",
-    "et": "Suurendamine või vähendamine etteantud kordades",
-    "be": "Павелічэньне або памяншэньне ў зададзеную колькасьць разоў",
-    "ka": "მოცემული ჯერადობით გაზრდა ან შემცირება",
-    "kk": "Берілген есе арттыру немесе кеміту",
+    lt: "Didinimas ar mažinimas nurodytą kartų skaičių",
+    lv: "Palielināšana vai samazināšana noteiktu reižu skaitu",
+    et: "Suurendamine või vähendamine etteantud kordades",
+    be: "Павелічэньне або памяншэньне ў зададзеную колькасьць разоў",
+    ka: "მოცემული ჯერადობით გაზრდა ან შემცირება",
+    kk: "Берілген есе арттыру немесе кеміту",
     en: "Increasing or decreasing by a given factor",
     zh: "按给定倍数增加或减少",
     hi: "दिए गए गुणक से बढ़ाना या घटाना",

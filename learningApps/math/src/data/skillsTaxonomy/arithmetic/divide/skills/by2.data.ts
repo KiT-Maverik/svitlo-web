@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by2_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by2,
   name: {
-    "lt": "Dalyba — ÷ 2",
-    "lv": "Dalīšana — ÷ 2",
-    "et": "Jagamine — ÷ 2",
-    "be": "Дзяленьне — ÷ 2",
-    "ka": "გაყოფა — ÷ 2",
-    "kk": "Бөлу — ÷ 2",
+    lt: "Dalyba — ÷ 2",
+    lv: "Dalīšana — ÷ 2",
+    et: "Jagamine — ÷ 2",
+    be: "Дзяленьне — ÷ 2",
+    ka: "გაყოფა — ÷ 2",
+    kk: "Бөлу — ÷ 2",
     en: "Division — ÷ 2",
     zh: "除法 — ÷ 2",
     hi: "भाग — ÷ 2",
@@ -58,12 +58,12 @@ export const by2_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בשתיים כדי לקבל שני חלקים שווים או לגלות כמה קבוצות של שניים יש בכמות הכוללת.",
       "pl": "Możesz dzielić przez dwa, by znaleźć dwie równe części lub liczbę grup po dwa elementy.",
       "uk": "Ти можеш ділити на два, щоб знайти дві рівні частини або кількість груп по два в цілому.",
-      "lt": "Gali dalyti iš dviejų, kad rastum dvi lygias dalis arba kiek grupių po du telpa visumoje.",
-      "lv": "Tu vari dalīt ar 2, lai atrastu divas vienādas daļas vai noskaidrotu, cik grupu pa diviem ietilpst kopumā.",
-      "et": "Sa saad kahega jagada, et leida kaks võrdset osa või selgitada, mitu kahest rühma tervikus on.",
-      "be": "Ты можаш дзяліць на два, каб знайсьці дзьве роўныя часткі або колькасьць груп па два ў цэлым.",
-      "ka": "შეგიძლია ორზე გაყოფით ორი თანაბარი ნაწილი მიიღო ან გაარკვიო, მთლიანში რამდენი ორ-ორიანი ჯგუფი ეტევა.",
-      "kk": "Екіге бөліп, екі тең бөлікті немесе бүтіндегі екіден тұратын топтардың санын таба аласың."
+      lt: "Gali dalyti iš dviejų, kad rastum dvi lygias dalis arba kiek grupių po du telpa visumoje.",
+      lv: "Tu vari dalīt ar 2, lai atrastu divas vienādas daļas vai noskaidrotu, cik grupu pa diviem ietilpst kopumā.",
+      et: "Sa saad kahega jagada, et leida kaks võrdset osa või selgitada, mitu kahest rühma tervikus on.",
+      be: "Ты можаш дзяліць на два, каб знайсьці дзьве роўныя часткі або колькасьць груп па два ў цэлым.",
+      ka: "შეგიძლია ორზე გაყოფით ორი თანაბარი ნაწილი მიიღო ან გაარკვიო, მთლიანში რამდენი ორ-ორიანი ჯგუფი ეტევა.",
+      kk: "Екіге бөліп, екі тең бөлікті немесе бүтіндегі екіден тұратын топтардың санын таба аласың."
     },
   },
 });

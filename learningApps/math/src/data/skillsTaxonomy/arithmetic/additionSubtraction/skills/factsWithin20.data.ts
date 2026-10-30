@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const factsWithin20_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.factsWithin20,
   name: {
-    "lt": "Sudėtis ir atimtis — skaičių deriniai iki 20",
-    "lv": "Saskaitīšana un atņemšana — skaitļu fakti līdz 20",
-    "et": "Liitmine ja lahutamine — arvufaktid 20 piires",
-    "be": "Складаньне й адніманьне — таблічныя вылічэньні да 20",
-    "ka": "შეკრება და გამოკლება — გამოთვლები 20-ის ფარგლებში",
-    "kk": "Қосу және азайту — 20-ға дейінгі есептеу деректері",
+    lt: "Sudėtis ir atimtis — skaičių deriniai iki 20",
+    lv: "Saskaitīšana un atņemšana — skaitļu fakti līdz 20",
+    et: "Liitmine ja lahutamine — arvufaktid 20 piires",
+    be: "Складаньне й адніманьне — таблічныя вылічэньні да 20",
+    ka: "შეკრება და გამოკლება — გამოთვლები 20-ის ფარგლებში",
+    kk: "Қосу және азайту — 20-ға дейінгі есептеу деректері",
     en: "Addition and subtraction — Number facts ≤ 20",
     zh: "加减法 — 基本算式 ≤ 20",
     hi: "जोड़ और घटाव — गणना तथ्य ≤ 20",
@@ -58,12 +58,12 @@ export const factsWithin20_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא סכומים והפרשים עד עשרים בעזרת עובדות חשבון מוכרות, פירוק מספרים והקשר בין חיבור לחיסור.",
       "pl": "Potrafisz obliczać sumy i różnice w zakresie dwudziestu, korzystając ze znanych działań, rozkładu liczb i związku dodawania z odejmowaniem.",
       "uk": "Ти можеш обчислювати суми й різниці в межах двадцяти, використовуючи відомі факти, розкладання чисел і зв’язок додавання з відніманням.",
-      "lt": "Gali rasti sumas ir skirtumus iki dvidešimties, naudodamasis žinomais veiksmais, skaičių skaidymu ir sudėties bei atimties ryšiu.",
-      "lv": "Tu vari atrast summas un starpības līdz divdesmit, izmantojot zināmus aprēķinus, skaitļu sadalīšanu un saskaitīšanas saikni ar atņemšanu.",
-      "et": "Sa oskad leida summasid ja vahesid kahekümne piires tuntud arvufaktide, arvude osadeks jaotamise ning liitmise ja lahutamise seoste abil.",
-      "be": "Ты можаш знаходзіць сумы і розьніцы ў межах дваццаці, выкарыстоўваючы вядомыя лікавыя факты, раскладаньне лікаў і сувязь складаньня з адніманьнем.",
-      "ka": "შეგიძლია ოცის ფარგლებში ჯამები და სხვაობები ნაცნობი რიცხვითი ფაქტებით, რიცხვების დაშლითა და შეკრება-გამოკლების კავშირით იპოვო.",
-      "kk": "Белгілі есептеу фактілерін, сандарды жіктеуді және қосу мен азайту байланысын пайдаланып, жиырма көлеміндегі қосынды мен айырманы таба аласың."
+      lt: "Gali rasti sumas ir skirtumus iki dvidešimties, naudodamasis žinomais veiksmais, skaičių skaidymu ir sudėties bei atimties ryšiu.",
+      lv: "Tu vari atrast summas un starpības līdz divdesmit, izmantojot zināmus aprēķinus, skaitļu sadalīšanu un saskaitīšanas saikni ar atņemšanu.",
+      et: "Sa oskad leida summasid ja vahesid kahekümne piires tuntud arvufaktide, arvude osadeks jaotamise ning liitmise ja lahutamise seoste abil.",
+      be: "Ты можаш знаходзіць сумы і розьніцы ў межах дваццаці, выкарыстоўваючы вядомыя лікавыя факты, раскладаньне лікаў і сувязь складаньня з адніманьнем.",
+      ka: "შეგიძლია ოცის ფარგლებში ჯამები და სხვაობები ნაცნობი რიცხვითი ფაქტებით, რიცხვების დაშლითა და შეკრება-გამოკლების კავშირით იპოვო.",
+      kk: "Белгілі есептеу фактілерін, сандарды жіктеуді және қосу мен азайту байланысын пайдаланып, жиырма көлеміндегі қосынды мен айырманы таба аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.twoDigitNoRegroup,
   name: {
-    "lt": "Sudėtis ir atimtis — dviženkliai skaičiai be pergrupavimo",
-    "lv": "Saskaitīšana un atņemšana — divciparu skaitļi bez pārgrupēšanas",
-    "et": "Liitmine ja lahutamine — kahekohalised arvud ümberrühmitamiseta",
-    "be": "Складаньне й адніманьне — двухзначныя лікі без разраднага абмену",
-    "ka": "შეკრება და გამოკლება — ორნიშნა რიცხვები გადაჯგუფების გარეშე",
-    "kk": "Қосу және азайту — екі таңбалы сандар қайта топтастырусыз",
+    lt: "Sudėtis ir atimtis — dviženkliai skaičiai be pergrupavimo",
+    lv: "Saskaitīšana un atņemšana — divciparu skaitļi bez pārgrupēšanas",
+    et: "Liitmine ja lahutamine — kahekohalised arvud ümberrühmitamiseta",
+    be: "Складаньне й адніманьне — двухзначныя лікі без разраднага абмену",
+    ka: "შეკრება და გამოკლება — ორნიშნა რიცხვები გადაჯგუფების გარეშე",
+    kk: "Қосу және азайту — екі таңбалы сандар қайта топтастырусыз",
     en: "Addition and subtraction — 2-digit · Without regrouping",
     zh: "加减法 — 2-位数 · 不进退位",
     hi: "जोड़ और घटाव — 2-अंकीय · बिना पुनर्समूहन",
@@ -58,12 +58,12 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
       "he": "אפשר לחבר או לחסר מספרים דו־ספרתיים על ידי חישוב נפרד של עשרות ויחידות כאשר אין צורך בהמרה.",
       "pl": "Możesz dodawać i odejmować liczby dwucyfrowe, obliczając osobno dziesiątki i jedności, gdy nie potrzeba zamiany między rzędami.",
       "uk": "Ти можеш додавати й віднімати двоцифрові числа окремо за десятками й одиницями, коли не потрібен розрядний обмін.",
-      "lt": "Gali sudėti ar atimti dviženklius skaičius atskirai skaičiuodamas dešimtis ir vienetus, kai nereikia pergrupuoti.",
-      "lv": "Tu vari saskaitīt vai atņemt divciparu skaitļus, atsevišķi rēķinot desmitus un vienus, ja pārgrupēšana nav vajadzīga.",
-      "et": "Sa oskad kahekohalisi arve liita või lahutada, arvutades kümnelis­ed ja ühelis­ed eraldi, kui ümberrühmitamine pole vajalik.",
-      "be": "Ты можаш складаць і адымаць двухзначныя лікі асобна па дзясятках і адзінках, калі разрадны абмен не патрэбны.",
-      "ka": "შეგიძლია ორნიშნა რიცხვები შეკრიბო ან გამოაკლო, ათეულებისა და ერთეულების ცალკე გამოთვლით, როცა გადაჯგუფება საჭირო არ არის.",
-      "kk": "Қайта топтастыру қажет болмағанда екі таңбалы сандардың ондықтары мен бірліктерін бөлек есептеп қоса немесе азайта аласың."
+      lt: "Gali sudėti ar atimti dviženklius skaičius atskirai skaičiuodamas dešimtis ir vienetus, kai nereikia pergrupuoti.",
+      lv: "Tu vari saskaitīt vai atņemt divciparu skaitļus, atsevišķi rēķinot desmitus un vienus, ja pārgrupēšana nav vajadzīga.",
+      et: "Sa oskad kahekohalisi arve liita või lahutada, arvutades kümnelis­ed ja ühelis­ed eraldi, kui ümberrühmitamine pole vajalik.",
+      be: "Ты можаш складаць і адымаць двухзначныя лікі асобна па дзясятках і адзінках, калі разрадны абмен не патрэбны.",
+      ka: "შეგიძლია ორნიშნა რიცხვები შეკრიბო ან გამოაკლო, ათეულებისა და ერთეულების ცალკე გამოთვლით, როცა გადაჯგუფება საჭირო არ არის.",
+      kk: "Қайта топтастыру қажет болмағанда екі таңбалы сандардың ондықтары мен бірліктерін бөлек есептеп қоса немесе азайта аласың."
     },
   },
 });

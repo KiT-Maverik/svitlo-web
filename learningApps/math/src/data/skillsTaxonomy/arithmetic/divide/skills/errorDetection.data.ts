@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const errorDetection_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.errorDetection,
   name: {
-    "lt": "Dalyba — klaidų atpažinimas",
-    "lv": "Dalīšana — kļūdu atklāšana",
-    "et": "Jagamine — vigade tuvastamine",
-    "be": "Дзяленьне — выяўленьне памылак",
-    "ka": "გაყოფა — შეცდომების გამოვლენა",
-    "kk": "Бөлу — қателерді анықтау",
+    lt: "Dalyba — klaidų atpažinimas",
+    lv: "Dalīšana — kļūdu atklāšana",
+    et: "Jagamine — vigade tuvastamine",
+    be: "Дзяленьне — выяўленьне памылак",
+    ka: "გაყოფა — შეცდომების გამოვლენა",
+    kk: "Бөлу — қателерді анықтау",
     en: "Division — Error detection",
     zh: "除法 — 错误识别",
     hi: "भाग — त्रुटि पहचान",
@@ -58,12 +58,12 @@ export const errorDetection_Skill_Data = buildSkillConfig({
       "he": "אפשר לזהות טעויות בחילוק, למשל שארית גדולה מספיק כדי ליצור עוד קבוצה מלאה.",
       "pl": "Możesz dostrzec błędy dzielenia, na przykład resztę wystarczającą do utworzenia kolejnej pełnej grupy.",
       "uk": "Ти можеш помічати помилки ділення, наприклад остачу, з якої ще можна утворити повну групу.",
-      "lt": "Gali pastebėti dalybos klaidas, pavyzdžiui, kai liekanos užtenka dar vienai pilnai grupei.",
-      "lv": "Tu vari pamanīt dalīšanas kļūdas, piemēram, atlikumu, no kura vēl var izveidot vienu pilnu grupu.",
-      "et": "Sa oskad märgata jagamisvigu, näiteks jääki, millest saaks veel ühe täieliku rühma.",
-      "be": "Ты можаш заўважаць памылкі дзяленьня, напрыклад астачу, зь якой яшчэ можна ўтварыць поўную групу.",
-      "ka": "შეგიძლია გაყოფაში ისეთი შეცდომები აღმოაჩინო, როგორიცაა იმდენად დიდი ნაშთი, რომ კიდევ ერთი სრული ჯგუფი შეიქმნას.",
-      "kk": "Қалдықтан тағы бір толық топ құруға болатындай үлкен қалдық сияқты бөлу қателерін байқай аласың."
+      lt: "Gali pastebėti dalybos klaidas, pavyzdžiui, kai liekanos užtenka dar vienai pilnai grupei.",
+      lv: "Tu vari pamanīt dalīšanas kļūdas, piemēram, atlikumu, no kura vēl var izveidot vienu pilnu grupu.",
+      et: "Sa oskad märgata jagamisvigu, näiteks jääki, millest saaks veel ühe täieliku rühma.",
+      be: "Ты можаш заўважаць памылкі дзяленьня, напрыклад астачу, зь якой яшчэ можна ўтварыць поўную групу.",
+      ka: "შეგიძლია გაყოფაში ისეთი შეცდომები აღმოაჩინო, როგორიცაა იმდენად დიდი ნაშთი, რომ კიდევ ერთი სრული ჯგუფი შეიქმნას.",
+      kk: "Қалдықтан тағы бір толық топ құруға болатындай үлкен қалдық сияқты бөлу қателерін байқай аласың."
     },
   },
 });

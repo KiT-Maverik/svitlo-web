@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by8_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by8,
   name: {
-    "lt": "Daugyba — × 8",
-    "lv": "Reizināšana — × 8",
-    "et": "Korrutamine — × 8",
-    "be": "Множаньне — × 8",
-    "ka": "გამრავლება — × 8",
-    "kk": "Көбейту — × 8",
+    lt: "Daugyba — × 8",
+    lv: "Reizināšana — × 8",
+    et: "Korrutamine — × 8",
+    be: "Множаньне — × 8",
+    ka: "გამრავლება — × 8",
+    kk: "Көбейту — × 8",
     en: "Multiplication — × 8",
     zh: "乘法 — × 8",
     hi: "गुणा — × 8",
@@ -58,12 +58,12 @@ export const by8_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול בשמונה באמצעות שמונה קבוצות שוות, הכפלה פי שניים או פירוק החישוב לחלקים קלים יותר.",
       "pl": "Możesz mnożyć przez osiem, korzystając z ośmiu równych grup, podwajania lub rozkładania obliczeń na łatwiejsze części.",
       "uk": "Ти можеш множити на вісім за допомогою восьми рівних груп, подвоєння або розкладання обчислення на простіші частини.",
-      "lt": "Gali dauginti iš aštuonių naudodamas aštuonias lygias grupes, dvigubinimą arba skaidydamas skaičiavimą į paprastesnes dalis.",
-      "lv": "Tu vari reizināt ar astoņi, izmantojot astoņas vienādas grupas, dubultošanu vai sadalot aprēķinu vienkāršākās daļās.",
-      "et": "Sa saad kaheksaga korrutada kaheksa võrdse rühma, kahekordistamise või arvutuse lihtsamateks osadeks jagamise abil.",
-      "be": "Ты можаш множыць на восем праз восем роўных груп, падвойваньне або падзел вылічэньня на прасьцейшыя часткі.",
-      "ka": "შეგიძლია რვაზე გამრავლება რვა თანაბარი ჯგუფით, გაორმაგებით ან გამოთვლის მარტივ ნაწილებად დაშლით.",
-      "kk": "Сегізге көбейтуді сегіз бірдей топ, екі еселеу немесе есепті жеңіл бөліктерге жіктеу арқылы орындай аласың."
+      lt: "Gali dauginti iš aštuonių naudodamas aštuonias lygias grupes, dvigubinimą arba skaidydamas skaičiavimą į paprastesnes dalis.",
+      lv: "Tu vari reizināt ar astoņi, izmantojot astoņas vienādas grupas, dubultošanu vai sadalot aprēķinu vienkāršākās daļās.",
+      et: "Sa saad kaheksaga korrutada kaheksa võrdse rühma, kahekordistamise või arvutuse lihtsamateks osadeks jagamise abil.",
+      be: "Ты можаш множыць на восем праз восем роўных груп, падвойваньне або падзел вылічэньня на прасьцейшыя часткі.",
+      ka: "შეგიძლია რვაზე გამრავლება რვა თანაბარი ჯგუფით, გაორმაგებით ან გამოთვლის მარტივ ნაწილებად დაშლით.",
+      kk: "Сегізге көбейтуді сегіз бірдей топ, екі еселеу немесе есепті жеңіл бөліктерге жіктеу арқылы орындай аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const twoDigitCarry_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.twoDigitCarry,
   name: {
-    "lt": "Sudėtis — dviženkliai skaičiai su pernešimu",
-    "lv": "Saskaitīšana — divciparu skaitļi ar pārnesumu",
-    "et": "Liitmine — kahekohalised arvud ülekandega",
-    "be": "Складаньне — двухзначныя лікі з пераносам",
-    "ka": "შეკრება — ორნიშნა რიცხვები გადატანით",
-    "kk": "Қосу — екі таңбалы сандар разряд ауыстырумен",
+    lt: "Sudėtis — dviženkliai skaičiai su pernešimu",
+    lv: "Saskaitīšana — divciparu skaitļi ar pārnesumu",
+    et: "Liitmine — kahekohalised arvud ülekandega",
+    be: "Складаньне — двухзначныя лікі з пераносам",
+    ka: "შეკრება — ორნიშნა რიცხვები გადატანით",
+    kk: "Қосу — екі таңбалы сандар разряд ауыстырумен",
     en: "Addition — 2-digit · Carrying",
     zh: "加法 — 2-位数 · 进位",
     hi: "जोड़ — 2-अंकीय · कैरी",
@@ -58,12 +58,12 @@ export const twoDigitCarry_Skill_Data = buildSkillConfig({
       "he": "אפשר לחבר מספרים דו־ספרתיים על ידי המרת עשר יחידות בעשרת אחת כשצריך, בלי לשנות את הסכום.",
       "pl": "Potrafisz dodawać liczby dwucyfrowe, zamieniając w razie potrzeby dziesięć jedności na dziesiątkę bez zmiany sumy.",
       "uk": "Ти можеш додавати двоцифрові числа, за потреби обмінюючи десять одиниць на десяток, не змінюючи суми.",
-      "lt": "Gali sudėti dviženklius skaičius, prireikus dešimt vienetų pakeisdamas viena dešimtimi ir nepakeisdamas sumos.",
-      "lv": "Tu vari saskaitīt divciparu skaitļus, vajadzības gadījumā desmit vienus apmainot pret vienu desmitu, nemainot summu.",
-      "et": "Sa oskad liita kahekohalisi arve, vahetades vajaduse korral kümme ühelist ühe kümnelise vastu, ilma et summa muutuks.",
-      "be": "Ты можаш складаць двухзначныя лікі, калі трэба замяняючы дзесяць адзінак адным дзясяткам, не зьмяняючы сумы.",
-      "ka": "შეგიძლია ორნიშნა რიცხვები შეკრიბო და საჭიროების შემთხვევაში ათი ერთეული ერთ ათეულად გადააჯგუფო, ჯამის შეცვლის გარეშე.",
-      "kk": "Екі таңбалы сандарды қосқанда қажет болса, он бірлікті бір ондыққа ауыстыра аласың; қосынды өзгермейді."
+      lt: "Gali sudėti dviženklius skaičius, prireikus dešimt vienetų pakeisdamas viena dešimtimi ir nepakeisdamas sumos.",
+      lv: "Tu vari saskaitīt divciparu skaitļus, vajadzības gadījumā desmit vienus apmainot pret vienu desmitu, nemainot summu.",
+      et: "Sa oskad liita kahekohalisi arve, vahetades vajaduse korral kümme ühelist ühe kümnelise vastu, ilma et summa muutuks.",
+      be: "Ты можаш складаць двухзначныя лікі, калі трэба замяняючы дзесяць адзінак адным дзясяткам, не зьмяняючы сумы.",
+      ka: "შეგიძლია ორნიშნა რიცხვები შეკრიბო და საჭიროების შემთხვევაში ათი ერთეული ერთ ათეულად გადააჯგუფო, ჯამის შეცვლის გარეშე.",
+      kk: "Екі таңбалы сандарды қосқанда қажет болса, он бірлікті бір ондыққа ауыстыра аласың; қосынды өзгермейді."
     },
   },
 });

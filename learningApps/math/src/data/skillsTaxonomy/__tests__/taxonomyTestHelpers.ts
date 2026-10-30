@@ -21,7 +21,7 @@ export function assertSupportedTranslations(source: string, label: string): Reco
     const line = raw.trim();
     if (!line) continue;
 
-    // Both 'lt': '...', "lt": "...", and lt: '...' are valid authoring styles.
+    // Both 'lt': '...', lt: "...", and lt: '...' are valid authoring styles.
     const entry = line.match(/^(?:['"])?([a-z]{2})(?:['"])?\s*:\s*(['"])(.*)\2,?$/);
     assert.ok(entry, `Invalid localized name entry in ${label}: ${line}`);
     const [, language, , value] = entry;

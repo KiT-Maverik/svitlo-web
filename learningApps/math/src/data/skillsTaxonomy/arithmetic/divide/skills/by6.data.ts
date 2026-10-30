@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by6_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by6,
   name: {
-    "lt": "Dalyba — ÷ 6",
-    "lv": "Dalīšana — ÷ 6",
-    "et": "Jagamine — ÷ 6",
-    "be": "Дзяленьне — ÷ 6",
-    "ka": "გაყოფა — ÷ 6",
-    "kk": "Бөлу — ÷ 6",
+    lt: "Dalyba — ÷ 6",
+    lv: "Dalīšana — ÷ 6",
+    et: "Jagamine — ÷ 6",
+    be: "Дзяленьне — ÷ 6",
+    ka: "გაყოფა — ÷ 6",
+    kk: "Бөлу — ÷ 6",
     en: "Division — ÷ 6",
     zh: "除法 — ÷ 6",
     hi: "भाग — ÷ 6",
@@ -58,12 +58,12 @@ export const by6_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בשש באמצעות קבוצות שוות או עובדות הכפל כדי למצוא את המנה.",
       "pl": "Możesz dzielić przez sześć za pomocą równych grup lub tabliczki mnożenia, aby znaleźć iloraz.",
       "uk": "Ти можеш ділити на шість за допомогою рівних груп або відомих добутків, щоб знайти частку.",
-      "lt": "Gali dalyti iš šešių naudodamasis lygiomis grupėmis arba daugybos faktais, kad rastum dalmenį.",
-      "lv": "Tu vari dalīt ar 6, izmantojot vienādas grupas vai zināmus reizinājumus, lai atrastu dalījumu.",
-      "et": "Sa saad kuuega jagada võrdsete rühmade või korrutamisfaktide abil, et leida jagatis.",
-      "be": "Ты можаш дзяліць на шэсьць праз роўныя групы або вядомыя здабыткі, каб знайсьці дзель.",
-      "ka": "შეგიძლია ექვსზე გაყოფა თანაბარი ჯგუფებით ან გამრავლების ფაქტებით და განაყოფის პოვნა.",
-      "kk": "Алтыға бөлуді бірдей топтар немесе көбейту нәтижелері арқылы орындап, бөліндіні таба аласың."
+      lt: "Gali dalyti iš šešių naudodamasis lygiomis grupėmis arba daugybos faktais, kad rastum dalmenį.",
+      lv: "Tu vari dalīt ar 6, izmantojot vienādas grupas vai zināmus reizinājumus, lai atrastu dalījumu.",
+      et: "Sa saad kuuega jagada võrdsete rühmade või korrutamisfaktide abil, et leida jagatis.",
+      be: "Ты можаш дзяліць на шэсьць праз роўныя групы або вядомыя здабыткі, каб знайсьці дзель.",
+      ka: "შეგიძლია ექვსზე გაყოფა თანაბარი ჯგუფებით ან გამრავლების ფაქტებით და განაყოფის პოვნა.",
+      kk: "Алтыға бөлуді бірдей топтар немесе көбейту нәтижелері арқылы орындап, бөліндіні таба аласың."
     },
   },
 });

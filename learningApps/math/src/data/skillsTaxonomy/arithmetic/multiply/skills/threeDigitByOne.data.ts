@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const threeDigitByOne_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.threeDigitByOne,
   name: {
-    "lt": "Daugyba — triženklis skaičius iš vienaženklio",
-    "lv": "Reizināšana — trīsciparu skaitlis ar viencipara skaitli",
-    "et": "Korrutamine — kolmekohaline arv ühekohalisega",
-    "be": "Множаньне — трохзначны лік на адназначны",
-    "ka": "გამრავლება — სამნიშნა რიცხვი ერთნიშნაზე",
-    "kk": "Көбейту — үш таңбалы санды бір таңбалы санға",
+    lt: "Daugyba — triženklis skaičius iš vienaženklio",
+    lv: "Reizināšana — trīsciparu skaitlis ar viencipara skaitli",
+    et: "Korrutamine — kolmekohaline arv ühekohalisega",
+    be: "Множаньне — трохзначны лік на адназначны",
+    ka: "გამრავლება — სამნიშნა რიცხვი ერთნიშნაზე",
+    kk: "Көбейту — үш таңбалы санды бір таңбалы санға",
     en: "Multiplication — 3-digit×1-digit",
     zh: "乘法 — 3-位数×1-位数",
     hi: "गुणा — 3-अंकीय×1-अंकीय",
@@ -58,12 +58,12 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול מספר תלת־ספרתי במספר חד־ספרתי לפי מאות, עשרות ויחידות, תוך העברה בעת הצורך.",
       "pl": "Możesz mnożyć liczbę trzycyfrową przez jednocyfrową, korzystając z setek, dziesiątek i jedności oraz przenosząc, gdy trzeba.",
       "uk": "Ти можеш множити трицифрове число на одноцифрове за сотнями, десятками й одиницями, виконуючи перенесення за потреби.",
-      "lt": "Gali dauginti triženklį skaičių iš vienaženklio, atskirai skaičiuodamas šimtus, dešimtis ir vienetus bei prireikus perkeldamas.",
-      "lv": "Tu vari reizināt trīsciparu skaitli ar viencipara skaitli, izmantojot simtus, desmitus un vienus un vajadzības gadījumā pārnesot.",
-      "et": "Sa saad kolmekohalist arvu ühekohalisega korrutada, kasutades sajalisi, kümnelisi ja ühelisi ning vajaduse korral ülekannet.",
-      "be": "Ты можаш множыць трохзначны лік на адназначны паводле сотняў, дзясяткаў і адзінак, калі трэба выконваючы перанос.",
-      "ka": "შეგიძლია სამნიშნა რიცხვი ერთნიშნაზე გაამრავლო ასეულების, ათეულებისა და ერთეულების გამოყენებით და საჭიროებისას გადატანა შეასრულო.",
-      "kk": "Үш таңбалы санды бір таңбалыға жүздіктер, ондықтар және бірліктер арқылы көбейтіп, қажет болса разрядқа ауыстыра аласың."
+      lt: "Gali dauginti triženklį skaičių iš vienaženklio, atskirai skaičiuodamas šimtus, dešimtis ir vienetus bei prireikus perkeldamas.",
+      lv: "Tu vari reizināt trīsciparu skaitli ar viencipara skaitli, izmantojot simtus, desmitus un vienus un vajadzības gadījumā pārnesot.",
+      et: "Sa saad kolmekohalist arvu ühekohalisega korrutada, kasutades sajalisi, kümnelisi ja ühelisi ning vajaduse korral ülekannet.",
+      be: "Ты можаш множыць трохзначны лік на адназначны паводле сотняў, дзясяткаў і адзінак, калі трэба выконваючы перанос.",
+      ka: "შეგიძლია სამნიშნა რიცხვი ერთნიშნაზე გაამრავლო ასეულების, ათეულებისა და ერთეულების გამოყენებით და საჭიროებისას გადატანა შეასრულო.",
+      kk: "Үш таңбалы санды бір таңбалыға жүздіктер, ондықтар және бірліктер арқылы көбейтіп, қажет болса разрядқа ауыстыра аласың."
     },
   },
 });

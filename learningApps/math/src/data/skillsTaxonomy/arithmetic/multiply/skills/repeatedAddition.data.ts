@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const repeatedAddition_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.repeatedAddition,
   name: {
-    "lt": "Daugyba — kartotinė sudėtis",
-    "lv": "Reizināšana — atkārtota saskaitīšana",
-    "et": "Korrutamine — korduv liitmine",
-    "be": "Множаньне — паўторнае складаньне",
-    "ka": "გამრავლება — განმეორებითი შეკრება",
-    "kk": "Көбейту — қайталанатын қосу",
+    lt: "Daugyba — kartotinė sudėtis",
+    lv: "Reizināšana — atkārtota saskaitīšana",
+    et: "Korrutamine — korduv liitmine",
+    be: "Множаньне — паўторнае складаньне",
+    ka: "გამრავლება — განმეორებითი შეკრება",
+    kk: "Көбейту — қайталанатын қосу",
     en: "Multiplication — Repeated addition",
     zh: "乘法 — 连加",
     hi: "गुणा — बार-बार जोड़",
@@ -58,12 +58,12 @@ export const repeatedAddition_Skill_Data = buildSkillConfig({
       "he": "אפשר לכתוב חיבור חוזר של אותה כמות שלמה כתרגיל כפל.",
       "pl": "Możesz zapisać wielokrotne dodawanie tej samej całkowitej ilości jako mnożenie.",
       "uk": "Ти можеш записувати повторюване додавання однакової цілої кількості як множення.",
-      "lt": "Gali pakartotinį to paties sveikojo kiekio sudėjimą užrašyti kaip daugybą.",
-      "lv": "Tu vari vienāda vesela daudzuma atkārtotu saskaitīšanu pierakstīt kā reizināšanu.",
-      "et": "Sa saad sama täisarvulise koguse korduvat liitmist väljendada korrutamisena.",
-      "be": "Ты можаш запісваць паўторнае складаньне аднолькавай цэлай колькасьці як множаньне.",
-      "ka": "შეგიძლია ერთი და იმავე მთელი რაოდენობის განმეორებითი შეკრება გამრავლებით გამოსახო.",
-      "kk": "Бірдей бүтін мөлшерді қайталап қосуды көбейту түрінде көрсете аласың."
+      lt: "Gali pakartotinį to paties sveikojo kiekio sudėjimą užrašyti kaip daugybą.",
+      lv: "Tu vari vienāda vesela daudzuma atkārtotu saskaitīšanu pierakstīt kā reizināšanu.",
+      et: "Sa saad sama täisarvulise koguse korduvat liitmist väljendada korrutamisena.",
+      be: "Ты можаш запісваць паўторнае складаньне аднолькавай цэлай колькасьці як множаньне.",
+      ka: "შეგიძლია ერთი და იმავე მთელი რაოდენობის განმეორებითი შეკრება გამრავლებით გამოსახო.",
+      kk: "Бірдей бүтін мөлшерді қайталап қосуды көбейту түрінде көрсете аласың."
     },
   },
 });

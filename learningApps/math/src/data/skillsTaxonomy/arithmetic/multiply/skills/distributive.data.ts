@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const distributive_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.distributive,
   name: {
-    "lt": "Daugyba — skirstomumo dėsnis",
-    "lv": "Reizināšana — distributivitātes likums",
-    "et": "Korrutamine — jaotuvusseadus",
-    "be": "Множаньне — разьмеркавальны закон",
-    "ka": "გამრავლება — განრიგებადობის თვისება",
-    "kk": "Көбейту — үлестірімділік қасиеті",
+    lt: "Daugyba — skirstomumo dėsnis",
+    lv: "Reizināšana — distributivitātes likums",
+    et: "Korrutamine — jaotuvusseadus",
+    be: "Множаньне — разьмеркавальны закон",
+    ka: "გამრავლება — განრიგებადობის თვისება",
+    kk: "Көбейту — үлестірімділік қасиеті",
     en: "Multiplication — Distributive property",
     zh: "乘法 — 分配律",
     hi: "गुणा — वितरण नियम",
@@ -58,12 +58,12 @@ export const distributive_Skill_Data = buildSkillConfig({
       "he": "אפשר לפרק מספר לחלקים, לכפול כל חלק באותו גורם ולחבר את המכפלות החלקיות כדי לקבל את המכפלה המקורית.",
       "pl": "Możesz rozłożyć liczbę na części, każdą pomnożyć przez ten sam czynnik i dodać iloczyny częściowe, by otrzymać pierwotny iloczyn.",
       "uk": "Ти можеш розкласти число на частини, помножити кожну на той самий множник і додати часткові добутки, щоб отримати початковий результат.",
-      "lt": "Gali išskaidyti skaičių į dalis, kiekvieną padauginti iš to paties daugiklio ir sudėjęs dalines sandaugas gauti pradinę sandaugą.",
-      "lv": "Tu vari sadalīt skaitli daļās, katru reizināt ar vienu un to pašu reizinātāju un saskaitīt daļējos reizinājumus, iegūstot sākotnējo.",
-      "et": "Sa saad arvu osadeks jaotada, iga osa sama teguriga korrutada ning osakorrutised liites algse korrutise leida.",
-      "be": "Ты можаш раскласьці лік на часткі, памножыць кожную на той самы множнік і скласьці частковыя здабыткі, каб атрымаць пачатковы.",
-      "ka": "შეგიძლია რიცხვი ნაწილებად დაშალო, თითოეული იმავე მამრავლზე გაამრავლო და ნაწილობრივი ნამრავლების შეკრებით საწყისი ნამრავლი მიიღო.",
-      "kk": "Санды бөліктерге бөліп, әр бөлікті бірдей көбейткішке көбейтіп, аралық көбейтінділерді қосқанда бастапқы көбейтіндіні аласың."
+      lt: "Gali išskaidyti skaičių į dalis, kiekvieną padauginti iš to paties daugiklio ir sudėjęs dalines sandaugas gauti pradinę sandaugą.",
+      lv: "Tu vari sadalīt skaitli daļās, katru reizināt ar vienu un to pašu reizinātāju un saskaitīt daļējos reizinājumus, iegūstot sākotnējo.",
+      et: "Sa saad arvu osadeks jaotada, iga osa sama teguriga korrutada ning osakorrutised liites algse korrutise leida.",
+      be: "Ты можаш раскласьці лік на часткі, памножыць кожную на той самы множнік і скласьці частковыя здабыткі, каб атрымаць пачатковы.",
+      ka: "შეგიძლია რიცხვი ნაწილებად დაშალო, თითოეული იმავე მამრავლზე გაამრავლო და ნაწილობრივი ნამრავლების შეკრებით საწყისი ნამრავლი მიიღო.",
+      kk: "Санды бөліктерге бөліп, әр бөлікті бірдей көбейткішке көбейтіп, аралық көбейтінділерді қосқанда бастапқы көбейтіндіні аласың."
     },
   },
 });

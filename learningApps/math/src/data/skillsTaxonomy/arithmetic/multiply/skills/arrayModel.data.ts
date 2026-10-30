@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const arrayModel_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.arrayModel,
   name: {
-    "lt": "Daugyba — stačiakampio masyvo modelis",
-    "lv": "Reizināšana — taisnstūrveida masīva modelis",
-    "et": "Korrutamine — ristkülikukujuline punktimudel",
-    "be": "Множаньне — прамавугольны масіў",
-    "ka": "გამრავლება — მართკუთხა მასივის მოდელი",
-    "kk": "Көбейту — тікбұрышты массив моделі",
+    lt: "Daugyba — stačiakampio masyvo modelis",
+    lv: "Reizināšana — taisnstūrveida masīva modelis",
+    et: "Korrutamine — ristkülikukujuline punktimudel",
+    be: "Множаньне — прамавугольны масіў",
+    ka: "გამრავლება — მართკუთხა მასივის მოდელი",
+    kk: "Көбейту — тікбұрышты массив моделі",
     en: "Multiplication — Array model",
     zh: "乘法 — 阵列模型",
     hi: "गुणा — आयताकार सरणी",
@@ -58,12 +58,12 @@ export const arrayModel_Skill_Data = buildSkillConfig({
       "he": "אפשר לסדר עצמים בשורות ובעמודות שוות כדי לייצג כפל ולמצוא את הכמות הכוללת.",
       "pl": "Możesz ułożyć przedmioty w równych rzędach i kolumnach, aby pokazać mnożenie i znaleźć łączną liczbę.",
       "uk": "Ти можеш розташувати предмети рівними рядами й стовпцями, щоб показати множення та знайти загальну кількість.",
-      "lt": "Gali sudėlioti daiktus lygiomis eilėmis ir stulpeliais, kad pavaizduotum daugybą ir rastum bendrą kiekį.",
-      "lv": "Tu vari sakārtot priekšmetus vienādās rindās un kolonnās, lai attēlotu reizināšanu un atrastu kopējo skaitu.",
-      "et": "Sa saad esemeid paigutada võrdsetesse ridadesse ja veergudesse, et näidata korrutamist ja leida koguarv.",
-      "be": "Ты можаш раскласьці прадметы роўнымі радамі і слупкамі, каб паказаць множаньне і знайсьці агульную колькасьць.",
-      "ka": "შეგიძლია საგნები თანაბარ მწკრივებად და სვეტებად დაალაგო, რათა გამრავლება აჩვენო და საერთო რაოდენობა იპოვო.",
-      "kk": "Заттарды бірдей қатарлар мен бағандарға орналастырып, көбейтуді көрсетіп, жалпы санын таба аласың."
+      lt: "Gali sudėlioti daiktus lygiomis eilėmis ir stulpeliais, kad pavaizduotum daugybą ir rastum bendrą kiekį.",
+      lv: "Tu vari sakārtot priekšmetus vienādās rindās un kolonnās, lai attēlotu reizināšanu un atrastu kopējo skaitu.",
+      et: "Sa saad esemeid paigutada võrdsetesse ridadesse ja veergudesse, et näidata korrutamist ja leida koguarv.",
+      be: "Ты можаш раскласьці прадметы роўнымі радамі і слупкамі, каб паказаць множаньне і знайсьці агульную колькасьць.",
+      ka: "შეგიძლია საგნები თანაბარ მწკრივებად და სვეტებად დაალაგო, რათა გამრავლება აჩვენო და საერთო რაოდენობა იპოვო.",
+      kk: "Заттарды бірдей қатарлар мен бағандарға орналастырып, көбейтуді көрсетіп, жалпы санын таба аласың."
     },
   },
 });

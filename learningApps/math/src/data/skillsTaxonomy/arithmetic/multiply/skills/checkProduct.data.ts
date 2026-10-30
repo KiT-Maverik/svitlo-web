@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const checkProduct_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.checkProduct,
   name: {
-    "lt": "Daugyba — rezultato tikrinimas",
-    "lv": "Reizināšana — rezultāta pārbaude",
-    "et": "Korrutamine — tulemuse kontrollimine",
-    "be": "Множаньне — праверка выніку",
-    "ka": "გამრავლება — შედეგის შემოწმება",
-    "kk": "Көбейту — нәтижені тексеру",
+    lt: "Daugyba — rezultato tikrinimas",
+    lv: "Reizināšana — rezultāta pārbaude",
+    et: "Korrutamine — tulemuse kontrollimine",
+    be: "Множаньне — праверка выніку",
+    ka: "გამრავლება — შედეგის შემოწმება",
+    kk: "Көбейту — нәтижені тексеру",
     en: "Multiplication — Result checking",
     zh: "乘法 — 结果检验",
     hi: "गुणा — उत्तर की जाँच",
@@ -58,12 +58,12 @@ export const checkProduct_Skill_Data = buildSkillConfig({
       "he": "אפשר לבדוק תוצאת כפל על ידי אומדן הגודל שלה ואז שימוש בחילוק או בחישוב עצמאי אחר.",
       "pl": "Możesz sprawdzić iloczyn, szacując jego wielkość i korzystając z dzielenia lub innego niezależnego obliczenia.",
       "uk": "Ти можеш перевіряти добуток, оцінюючи його величину й використовуючи ділення або інше незалежне обчислення.",
-      "lt": "Gali patikrinti sandaugą, įvertindamas jos dydį ir pasinaudodamas dalyba ar kitu nepriklausomu skaičiavimu.",
-      "lv": "Tu vari pārbaudīt reizinājumu, novērtējot tā lielumu un izmantojot dalīšanu vai citu neatkarīgu aprēķinu.",
-      "et": "Sa saad korrutist kontrollida, hinnates selle suurust ning kasutades jagamist või muud sõltumatut arvutust.",
-      "be": "Ты можаш правяраць здабытак, ацэньваючы яго велічыню і выкарыстоўваючы дзяленьне або іншае незалежнае вылічэньне.",
-      "ka": "შეგიძლია ნამრავლი შეამოწმო მისი სიდიდის შეფასებით და გაყოფით ან სხვა დამოუკიდებელი გამოთვლით.",
-      "kk": "Көбейтіндінің шамасын бағалап, бөлу немесе басқа тәуелсіз есептеу арқылы нәтижені тексере аласың."
+      lt: "Gali patikrinti sandaugą, įvertindamas jos dydį ir pasinaudodamas dalyba ar kitu nepriklausomu skaičiavimu.",
+      lv: "Tu vari pārbaudīt reizinājumu, novērtējot tā lielumu un izmantojot dalīšanu vai citu neatkarīgu aprēķinu.",
+      et: "Sa saad korrutist kontrollida, hinnates selle suurust ning kasutades jagamist või muud sõltumatut arvutust.",
+      be: "Ты можаш правяраць здабытак, ацэньваючы яго велічыню і выкарыстоўваючы дзяленьне або іншае незалежнае вылічэньне.",
+      ka: "შეგიძლია ნამრავლი შეამოწმო მისი სიდიდის შეფასებით და გაყოფით ან სხვა დამოუკიდებელი გამოთვლით.",
+      kk: "Көбейтіндінің шамасын бағалап, бөлу немесе басқа тәуелсіз есептеу арқылы нәтижені тексере аласың."
     },
   },
 });

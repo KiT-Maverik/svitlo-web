@@ -4,12 +4,12 @@ import { planning_Skills_Ids } from './index.ids';
 export const twoStepPlan_Skill_Data = buildSkillConfig({
   id: planning_Skills_Ids.twoStepPlan,
   name: {
-    "lt": "Dviejų veiksmų sprendimo planavimas",
-    "lv": "Divu darbību risinājuma plānošana",
-    "et": "Kahetehtelise lahenduse kavandamine",
-    "be": "Плянаваньне разьвязаньня задачы на два дзеяньні",
-    "ka": "ორმოქმედებიანი ამოცანის ამოხსნის დაგეგმვა",
-    "kk": "Екі амалдық есептің шешу жоспарын құру",
+    lt: "Dviejų veiksmų sprendimo planavimas",
+    lv: "Divu darbību risinājuma plānošana",
+    et: "Kahetehtelise lahenduse kavandamine",
+    be: "Плянаваньне разьвязаньня задачы на два дзеяньні",
+    ka: "ორმოქმედებიანი ამოცანის ამოხსნის დაგეგმვა",
+    kk: "Екі амалдық есептің шешу жоспарын құру",
     en: "Planning a two-step solution",
     zh: "制定两步解题计划",
     hi: "दो चरणों के समाधान की योजना बनाना",

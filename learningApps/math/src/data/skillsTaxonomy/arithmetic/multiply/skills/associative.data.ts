@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const associative_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.associative,
   name: {
-    "lt": "Daugyba — jungiamumo dėsnis",
-    "lv": "Reizināšana — asociativitātes likums",
-    "et": "Korrutamine — ühenduvusseadus",
-    "be": "Множаньне — спалучальны закон",
-    "ka": "გამრავლება — ჯუფთებადობის თვისება",
-    "kk": "Көбейту — терімділік қасиеті",
+    lt: "Daugyba — jungiamumo dėsnis",
+    lv: "Reizināšana — asociativitātes likums",
+    et: "Korrutamine — ühenduvusseadus",
+    be: "Множаньне — спалучальны закон",
+    ka: "გამრავლება — ჯუფთებადობის თვისება",
+    kk: "Көбейту — терімділік қасиеті",
     en: "Multiplication — Associative property",
     zh: "乘法 — 结合律",
     hi: "गुणा — साहचर्य नियम",
@@ -58,12 +58,12 @@ export const associative_Skill_Data = buildSkillConfig({
       "he": "כשכופלים שלושה מספרים או יותר, אפשר לקבץ את הגורמים בדרכים שונות בלי לשנות את המכפלה.",
       "pl": "Gdy mnożysz trzy lub więcej liczb, możesz inaczej grupować czynniki bez zmiany iloczynu.",
       "uk": "Множачи три чи більше чисел, ти можеш по-різному групувати множники, не змінюючи добутку.",
-      "lt": "Daugindamas tris ar daugiau skaičių gali grupuoti dauginamuosius įvairiai, bet sandauga nesikeis.",
-      "lv": "Reizinot trīs vai vairāk skaitļus, tu vari dažādi grupēt reizinātājus, nemainot reizinājumu.",
-      "et": "Kolme või enama arvu korrutamisel saad tegureid erinevalt rühmitada, ilma et korrutis muutuks.",
-      "be": "Множачы тры ці болей лікаў, ты можаш па-рознаму групаваць множнікі, не зьмяняючы здабытку.",
-      "ka": "სამი ან მეტი რიცხვის გამრავლებისას შეგიძლია მამრავლები სხვადასხვაგვარად დააჯგუფო, ნამრავლი კი არ შეიცვლება.",
-      "kk": "Үш немесе одан көп санды көбейткенде көбейткіштерді әртүрлі топтастырсаң да, көбейтінді өзгермейді."
+      lt: "Daugindamas tris ar daugiau skaičių gali grupuoti dauginamuosius įvairiai, bet sandauga nesikeis.",
+      lv: "Reizinot trīs vai vairāk skaitļus, tu vari dažādi grupēt reizinātājus, nemainot reizinājumu.",
+      et: "Kolme või enama arvu korrutamisel saad tegureid erinevalt rühmitada, ilma et korrutis muutuks.",
+      be: "Множачы тры ці болей лікаў, ты можаш па-рознаму групаваць множнікі, не зьмяняючы здабытку.",
+      ka: "სამი ან მეტი რიცხვის გამრავლებისას შეგიძლია მამრავლები სხვადასხვაგვარად დააჯგუფო, ნამრავლი კი არ შეიცვლება.",
+      kk: "Үш немесе одан көп санды көбейткенде көбейткіштерді әртүрлі топтастырсаң да, көбейтінді өзгермейді."
     },
   },
 });

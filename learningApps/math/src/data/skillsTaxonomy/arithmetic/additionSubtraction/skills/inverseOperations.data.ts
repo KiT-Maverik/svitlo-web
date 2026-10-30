@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const inverseOperations_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.inverseOperations,
   name: {
-    "lt": "Sudėtis ir atimtis — atvirkštiniai veiksmai",
-    "lv": "Saskaitīšana un atņemšana — pretējās darbības",
-    "et": "Liitmine ja lahutamine — pöördtehted",
-    "be": "Складаньне й адніманьне — адваротныя дзеяньні",
-    "ka": "შეკრება და გამოკლება — შებრუნებული მოქმედებები",
-    "kk": "Қосу және азайту — кері амалдар",
+    lt: "Sudėtis ir atimtis — atvirkštiniai veiksmai",
+    lv: "Saskaitīšana un atņemšana — pretējās darbības",
+    et: "Liitmine ja lahutamine — pöördtehted",
+    be: "Складаньне й адніманьне — адваротныя дзеяньні",
+    ka: "შეკრება და გამოკლება — შებრუნებული მოქმედებები",
+    kk: "Қосу және азайту — кері амалдар",
     en: "Addition and subtraction — Inverse operations",
     zh: "加减法 — 逆运算",
     hi: "जोड़ और घटाव — व्युत्क्रम संक्रियाएँ",
@@ -58,12 +58,12 @@ export const inverseOperations_Skill_Data = buildSkillConfig({
       "he": "אפשר לבטל חיבור באמצעות חיסור ולבטל חיסור באמצעות חיבור על סמך הקשר בין המספרים.",
       "pl": "Możesz odwrócić dodawanie przez odejmowanie i odejmowanie przez dodawanie, korzystając z zależności między liczbami.",
       "uk": "Ти можеш скасувати додавання відніманням, а віднімання — додаванням, використовуючи зв’язок між числами.",
-      "lt": "Gali panaikinti sudėties veiksmą atimtimi, o atimties – sudėtimi, naudodamasis skaičių ryšiu.",
-      "lv": "Tu vari atcelt saskaitīšanu ar atņemšanu un atņemšanu ar saskaitīšanu, izmantojot skaitļu savstarpējo saikni.",
-      "et": "Sa saad arvudevahelisi seoseid kasutades liitmise lahutamisega ja lahutamise liitmisega tagasi pöörata.",
-      "be": "Ты можаш адмяніць складаньне адніманьнем, а адніманьне — складаньнем, выкарыстоўваючы сувязь паміж лікамі.",
-      "ka": "შეგიძლია შეკრება გამოკლებით, ხოლო გამოკლება შეკრებით გააუქმო, რიცხვებს შორის კავშირის გამოყენებით.",
-      "kk": "Сандар арасындағы байланысты пайдаланып, қосуды азайтумен, азайтуды қосумен кері қайтара аласың."
+      lt: "Gali panaikinti sudėties veiksmą atimtimi, o atimties – sudėtimi, naudodamasis skaičių ryšiu.",
+      lv: "Tu vari atcelt saskaitīšanu ar atņemšanu un atņemšanu ar saskaitīšanu, izmantojot skaitļu savstarpējo saikni.",
+      et: "Sa saad arvudevahelisi seoseid kasutades liitmise lahutamisega ja lahutamise liitmisega tagasi pöörata.",
+      be: "Ты можаш адмяніць складаньне адніманьнем, а адніманьне — складаньнем, выкарыстоўваючы сувязь паміж лікамі.",
+      ka: "შეგიძლია შეკრება გამოკლებით, ხოლო გამოკლება შეკრებით გააუქმო, რიცხვებს შორის კავშირის გამოყენებით.",
+      kk: "Сандар арасындағы байланысты пайдаланып, қосуды азайтумен, азайтуды қосумен кері қайтара аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const equalSharing_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.equalSharing,
   name: {
-    "lt": "Dalyba — lygiomis dalimis",
-    "lv": "Dalīšana — sadalīšana vienādās daļās",
-    "et": "Jagamine — võrdseteks osadeks jaotamine",
-    "be": "Дзяленьне — роўны падзел",
-    "ka": "გაყოფა — თანაბრად განაწილება",
-    "kk": "Бөлу — тең үлестерге бөлу",
+    lt: "Dalyba — lygiomis dalimis",
+    lv: "Dalīšana — sadalīšana vienādās daļās",
+    et: "Jagamine — võrdseteks osadeks jaotamine",
+    be: "Дзяленьне — роўны падзел",
+    ka: "გაყოფა — თანაბრად განაწილება",
+    kk: "Бөлу — тең үлестерге бөлу",
     en: "Division — Equal sharing",
     zh: "除法 — 平均分配",
     hi: "भाग — समान बाँट",
@@ -58,12 +58,12 @@ export const equalSharing_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק כמות כוללת למספר ידוע של קבוצות שוות ולמצוא כמה יש בכל קבוצה.",
       "pl": "Możesz podzielić całość na znaną liczbę równych grup i ustalić, ile przypada na każdą z nich.",
       "uk": "Ти можеш розподілити ціле на відому кількість рівних груп і знайти, скільки припадає на кожну.",
-      "lt": "Gali padalyti visumą į žinomą skaičių lygių grupių ir rasti, kiek tenka kiekvienai grupei.",
-      "lv": "Tu vari sadalīt kopumu zināmā skaitā vienādu grupu un noskaidrot, cik ir katrā grupā.",
-      "et": "Sa saad terviku jagada teadaolevaks arvuks võrdseteks rühmadeks ja leida iga rühma suuruse.",
-      "be": "Ты можаш разьдзяліць цэлае на вядомую колькасьць роўных груп і знайсьці, колькі прыпадае на кожную.",
-      "ka": "შეგიძლია მთლიანი რაოდენობა ცნობილი რაოდენობის თანაბარ ჯგუფებად გაანაწილო და თითოეულის ზომა იპოვო.",
-      "kk": "Бүтінді белгілі мөлшердегі тең топтарға бөліп, әр топқа қаншадан тиетінін таба аласың."
+      lt: "Gali padalyti visumą į žinomą skaičių lygių grupių ir rasti, kiek tenka kiekvienai grupei.",
+      lv: "Tu vari sadalīt kopumu zināmā skaitā vienādu grupu un noskaidrot, cik ir katrā grupā.",
+      et: "Sa saad terviku jagada teadaolevaks arvuks võrdseteks rühmadeks ja leida iga rühma suuruse.",
+      be: "Ты можаш разьдзяліць цэлае на вядомую колькасьць роўных груп і знайсьці, колькі прыпадае на кожную.",
+      ka: "შეგიძლია მთლიანი რაოდენობა ცნობილი რაოდენობის თანაბარ ჯგუფებად გაანაწილო და თითოეულის ზომა იპოვო.",
+      kk: "Бүтінді белгілі мөлшердегі тең топтарға бөліп, әр топқа қаншадан тиетінін таба аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { parts_Skills_Ids } from './index.ids';
 export const partWholeAddsub_Skill_Data = buildSkillConfig({
   id: parts_Skills_Ids.partWholeAddsub,
   name: {
-    "lt": "Dalies ir visumos bei atvirkštinių uždavinių sprendimas",
-    "lv": "Daļas, veseluma un apgriezto uzdevumu risināšana",
-    "et": "Osa-terviku ja pöördülesannete lahendamine",
-    "be": "Разьвязваньне задач на часткі, цэлае і адваротных задач",
-    "ka": "ნაწილის, მთელისა და შებრუნებული ამოცანების ამოხსნა",
-    "kk": "Бөлік пен бүтінге және кері есептерді шығару",
+    lt: "Dalies ir visumos bei atvirkštinių uždavinių sprendimas",
+    lv: "Daļas, veseluma un apgriezto uzdevumu risināšana",
+    et: "Osa-terviku ja pöördülesannete lahendamine",
+    be: "Разьвязваньне задач на часткі, цэлае і адваротных задач",
+    ka: "ნაწილის, მთელისა და შებრუნებული ამოცანების ამოხსნა",
+    kk: "Бөлік пен бүтінге және кері есептерді шығару",
     en: "Solving part-whole and inverse problems",
     zh: "解决整体与部分及逆向问题",
     hi: "भाग-पूर्ण और उलटी समस्याएँ हल करना",

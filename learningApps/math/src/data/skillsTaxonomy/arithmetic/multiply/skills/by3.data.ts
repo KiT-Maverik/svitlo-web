@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by3_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by3,
   name: {
-    "lt": "Daugyba — × 3",
-    "lv": "Reizināšana — × 3",
-    "et": "Korrutamine — × 3",
-    "be": "Множаньне — × 3",
-    "ka": "გამრავლება — × 3",
-    "kk": "Көбейту — × 3",
+    lt: "Daugyba — × 3",
+    lv: "Reizināšana — × 3",
+    et: "Korrutamine — × 3",
+    be: "Множаньне — × 3",
+    ka: "გამრავლება — × 3",
+    kk: "Көбейту — × 3",
     en: "Multiplication — × 3",
     zh: "乘法 — × 3",
     hi: "गुणा — × 3",
@@ -58,12 +58,12 @@ export const by3_Skill_Data = buildSkillConfig({
       "he": "אפשר להבין כפל בשלוש כשלוש קבוצות שוות ולמצוא כפולות של שלוש בעזרת תוצאות מוכרות.",
       "pl": "Możesz przedstawić mnożenie przez trzy jako trzy równe grupy i wyznaczać wielokrotności trzech z poznanych działań.",
       "uk": "Ти можеш розуміти множення на три як три рівні групи та знаходити кратні трьом за відомими результатами.",
-      "lt": "Gali daugybą iš trijų vaizduoti trimis lygiomis grupėmis ir rasti trejeto kartotinius iš žinomų veiksmų.",
-      "lv": "Tu vari uztvert reizināšanu ar trīs kā trīs vienādas grupas un atrast trīs daudzkārtņus pēc zināmiem rezultātiem.",
-      "et": "Sa saad mõista kolmega korrutamist kolme võrdse rühmana ja leida kolme kordseid tuntud tehete abil.",
-      "be": "Ты можаш разумець множаньне на тры як тры роўныя групы і знаходзіць кратныя тром празь вядомыя вынікі.",
-      "ka": "შეგიძლია სამზე გამრავლება სამ თანაბარ ჯგუფად წარმოიდგინო და სამის ჯერადები ნაცნობი შედეგებით იპოვო.",
-      "kk": "Үшке көбейтуді үш бірдей топ ретінде түсініп, белгілі нәтижелер арқылы үштің еселіктерін таба аласың."
+      lt: "Gali daugybą iš trijų vaizduoti trimis lygiomis grupėmis ir rasti trejeto kartotinius iš žinomų veiksmų.",
+      lv: "Tu vari uztvert reizināšanu ar trīs kā trīs vienādas grupas un atrast trīs daudzkārtņus pēc zināmiem rezultātiem.",
+      et: "Sa saad mõista kolmega korrutamist kolme võrdse rühmana ja leida kolme kordseid tuntud tehete abil.",
+      be: "Ты можаш разумець множаньне на тры як тры роўныя групы і знаходзіць кратныя тром празь вядомыя вынікі.",
+      ka: "შეგიძლია სამზე გამრავლება სამ თანაბარ ჯგუფად წარმოიდგინო და სამის ჯერადები ნაცნობი შედეგებით იპოვო.",
+      kk: "Үшке көбейтуді үш бірдей топ ретінде түсініп, белгілі нәтижелер арқылы үштің еселіктерін таба аласың."
     },
   },
 });

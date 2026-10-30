@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by5_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by5,
   name: {
-    "lt": "Daugyba — × 5",
-    "lv": "Reizināšana — × 5",
-    "et": "Korrutamine — × 5",
-    "be": "Множаньне — × 5",
-    "ka": "გამრავლება — × 5",
-    "kk": "Көбейту — × 5",
+    lt: "Daugyba — × 5",
+    lv: "Reizināšana — × 5",
+    et: "Korrutamine — × 5",
+    be: "Множаньне — × 5",
+    ka: "გამრავლება — × 5",
+    kk: "Көбейту — × 5",
     en: "Multiplication — × 5",
     zh: "乘法 — × 5",
     hi: "गुणा — × 5",
@@ -58,12 +58,12 @@ export const by5_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול בחמש באמצעות חמש קבוצות שוות או בעזרת סכומים מוכרים.",
       "pl": "Możesz mnożyć przez pięć, korzystając z pięciu równych grup lub znanych już sum.",
       "uk": "Ти можеш множити на п’ять за допомогою п’яти рівних груп або спираючись на відомі суми.",
-      "lt": "Gali dauginti iš penkių naudodamas penkias lygias grupes arba jau žinomas sumas.",
-      "lv": "Tu vari reizināt ar pieci, izmantojot piecas vienādas grupas vai zināmas summas.",
-      "et": "Sa saad viiega korrutada viie võrdse rühma või juba tuntud summade abil.",
-      "be": "Ты можаш множыць на пяць празь пяць роўных груп або абапіраючыся на вядомыя сумы.",
-      "ka": "შეგიძლია ხუთზე გამრავლება ხუთი თანაბარი ჯგუფით ან ნაცნობი ჯამების გამოყენებით.",
-      "kk": "Беске көбейтуді бес бірдей топпен немесе бұрыннан белгілі қосындыларға сүйеніп орындай аласың."
+      lt: "Gali dauginti iš penkių naudodamas penkias lygias grupes arba jau žinomas sumas.",
+      lv: "Tu vari reizināt ar pieci, izmantojot piecas vienādas grupas vai zināmas summas.",
+      et: "Sa saad viiega korrutada viie võrdse rühma või juba tuntud summade abil.",
+      be: "Ты можаш множыць на пяць празь пяць роўных груп або абапіраючыся на вядомыя сумы.",
+      ka: "შეგიძლია ხუთზე გამრავლება ხუთი თანაბარი ჯგუფით ან ნაცნობი ჯამების გამოყენებით.",
+      kk: "Беске көбейтуді бес бірдей топпен немесе бұрыннан белгілі қосындыларға сүйеніп орындай аласың."
     },
   },
 });

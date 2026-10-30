@@ -4,12 +4,12 @@ import { additionSubtraction_Skills_Ids } from './index.ids';
 export const hundredsAndTens_Skill_Data = buildSkillConfig({
   id: additionSubtraction_Skills_Ids.hundredsAndTens,
   name: {
-    "lt": "Sudėtis ir atimtis — šimtai ir dešimtys",
-    "lv": "Saskaitīšana un atņemšana — simti un desmiti",
-    "et": "Liitmine ja lahutamine — sajalised ja kümnelised",
-    "be": "Складаньне й адніманьне — сотні й дзясяткі",
-    "ka": "შეკრება და გამოკლება — ასეულები და ათეულები",
-    "kk": "Қосу және азайту — жүздіктер мен ондықтар",
+    lt: "Sudėtis ir atimtis — šimtai ir dešimtys",
+    lv: "Saskaitīšana un atņemšana — simti un desmiti",
+    et: "Liitmine ja lahutamine — sajalised ja kümnelised",
+    be: "Складаньне й адніманьне — сотні й дзясяткі",
+    ka: "შეკრება და გამოკლება — ასეულები და ათეულები",
+    kk: "Қосу және азайту — жүздіктер мен ондықтар",
     en: "Addition and subtraction — Hundreds and tens",
     zh: "加减法 — 整百与整十",
     hi: "जोड़ और घटाव — सैकड़े और दहाई",
@@ -58,12 +58,12 @@ export const hundredsAndTens_Skill_Data = buildSkillConfig({
       "he": "אפשר לחבר ולחסר עשרות ומאות לפי ערך המקום שלהן, תוך המרה בין מקומות לפי הצורך.",
       "pl": "Możesz dodawać i odejmować dziesiątki i setki według wartości pozycyjnej, dokonując zamian, gdy trzeba.",
       "uk": "Ти можеш додавати й віднімати десятки та сотні за розрядною вартістю, за потреби виконуючи розрядний обмін.",
-      "lt": "Gali sudėti ir atimti dešimtis bei šimtus pagal jų vietinę vertę, prireikus pergrupuodamas.",
-      "lv": "Tu vari saskaitīt un atņemt desmitus un simtus pēc to šķiru vērtības, vajadzības gadījumā veicot pārgrupēšanu.",
-      "et": "Sa oskad liita ja lahutada kümnelisi ning sajalisi kohaväärtuse järgi, vajaduse korral ümber rühmitades.",
-      "be": "Ты можаш складаць і адымаць дзясяткі ды сотні паводле разраднага значэньня, калі трэба перагрупоўваючы іх.",
-      "ka": "შეგიძლია ათეულები და ასეულები მათი თანრიგობრივი მნიშვნელობით შეკრიბო ან გამოაკლო და საჭიროებისას გადააჯგუფო.",
-      "kk": "Ондықтар мен жүздіктерді разрядтық мәніне қарай қосып, азайтып, қажет болса қайта топтастыра аласың."
+      lt: "Gali sudėti ir atimti dešimtis bei šimtus pagal jų vietinę vertę, prireikus pergrupuodamas.",
+      lv: "Tu vari saskaitīt un atņemt desmitus un simtus pēc to šķiru vērtības, vajadzības gadījumā veicot pārgrupēšanu.",
+      et: "Sa oskad liita ja lahutada kümnelisi ning sajalisi kohaväärtuse järgi, vajaduse korral ümber rühmitades.",
+      be: "Ты можаш складаць і адымаць дзясяткі ды сотні паводле разраднага значэньня, калі трэба перагрупоўваючы іх.",
+      ka: "შეგიძლია ათეულები და ასეულები მათი თანრიგობრივი მნიშვნელობით შეკრიბო ან გამოაკლო და საჭიროებისას გადააჯგუფო.",
+      kk: "Ондықтар мен жүздіктерді разрядтық мәніне қарай қосып, азайтып, қажет болса қайта топтастыра аласың."
     },
   },
 });

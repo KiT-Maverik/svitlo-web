@@ -4,12 +4,12 @@ import { groups_Skills_Ids } from './index.ids';
 export const correspondenceCombinations_Skill_Data = buildSkillConfig({
   id: groups_Skills_Ids.correspondenceCombinations,
   name: {
-    "lt": "Dviejų rinkinių derinių skaičiavimas",
-    "lv": "Divu kopu kombināciju skaitīšana",
-    "et": "Kahe hulga kombinatsioonide loendamine",
-    "be": "Падлік камбінацыяў двух набораў",
-    "ka": "ორი სიმრავლის კომბინაციების დათვლა",
-    "kk": "Екі жиынның комбинацияларын санау",
+    lt: "Dviejų rinkinių derinių skaičiavimas",
+    lv: "Divu kopu kombināciju skaitīšana",
+    et: "Kahe hulga kombinatsioonide loendamine",
+    be: "Падлік камбінацыяў двух набораў",
+    ka: "ორი სიმრავლის კომბინაციების დათვლა",
+    kk: "Екі жиынның комбинацияларын санау",
     en: "Counting combinations from two sets",
     zh: "计算两个集合的组合数",
     hi: "दो समुच्चयों के संयोजन गिनना",

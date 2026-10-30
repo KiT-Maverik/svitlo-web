@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const remainderLessDivisor_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.remainderLessDivisor,
   name: {
-    "lt": "Dalyba — liekana mažesnė už daliklį",
-    "lv": "Dalīšana — atlikums mazāks par dalītāju",
-    "et": "Jagamine — jääk on jagajast väiksem",
-    "be": "Дзяленьне — астача меншая за дзельнік",
-    "ka": "გაყოფა — ნაშთი გამყოფზე ნაკლებია",
-    "kk": "Бөлу — қалдық бөлгіштен кіші",
+    lt: "Dalyba — liekana mažesnė už daliklį",
+    lv: "Dalīšana — atlikums mazāks par dalītāju",
+    et: "Jagamine — jääk on jagajast väiksem",
+    be: "Дзяленьне — астача меншая за дзельнік",
+    ka: "გაყოფა — ნაშთი გამყოფზე ნაკლებია",
+    kk: "Бөлу — қалдық бөлгіштен кіші",
     en: "Division — Remainder less than divisor",
     zh: "除法 — 余数小于除数",
     hi: "भाग — शेषफल भाजक से कम",
@@ -58,12 +58,12 @@ export const remainderLessDivisor_Skill_Data = buildSkillConfig({
       "he": "בחילוק מספרים שלמים במחלק חיובי, השארית חייבת להיות לפחות אפס וקטנה מהמחלק.",
       "pl": "Przy dzieleniu liczb całkowitych przez liczbę dodatnią reszta musi być nieujemna i mniejsza od dzielnika.",
       "uk": "Під час ділення цілих чисел на додатне число остача має бути невід’ємною та меншою за дільник.",
-      "lt": "Dalijant sveikuosius skaičius iš teigiamo skaičiaus, liekana turi būti neneigiama ir mažesnė už daliklį.",
-      "lv": "Dalot veselus skaitļus ar pozitīvu skaitli, atlikumam jābūt vismaz nullei un mazākam par dalītāju.",
-      "et": "Kui jagad täisarve positiivse arvuga, peab jääk olema null või suurem ja jagajast väiksem.",
-      "be": "Пры дзяленьні цэлых лікаў на дадатны лік астача мусіць быць неадмоўнай і меншай за дзельнік.",
-      "ka": "მთელი რიცხვების დადებით რიცხვზე გაყოფისას ნაშთი არაუარყოფითი და გამყოფზე ნაკლები უნდა იყოს.",
-      "kk": "Бүтін сандарды оң санға бөлгенде қалдық теріс емес және бөлгіштен кіші болуы тиіс."
+      lt: "Dalijant sveikuosius skaičius iš teigiamo skaičiaus, liekana turi būti neneigiama ir mažesnė už daliklį.",
+      lv: "Dalot veselus skaitļus ar pozitīvu skaitli, atlikumam jābūt vismaz nullei un mazākam par dalītāju.",
+      et: "Kui jagad täisarve positiivse arvuga, peab jääk olema null või suurem ja jagajast väiksem.",
+      be: "Пры дзяленьні цэлых лікаў на дадатны лік астача мусіць быць неадмоўнай і меншай за дзельнік.",
+      ka: "მთელი რიცხვების დადებით რიცხვზე გაყოფისას ნაშთი არაუარყოფითი და გამყოფზე ნაკლები უნდა იყოს.",
+      kk: "Бүтін сандарды оң санға бөлгенде қалдық теріс емес және бөлгіштен кіші болуы тиіс."
     },
   },
 });

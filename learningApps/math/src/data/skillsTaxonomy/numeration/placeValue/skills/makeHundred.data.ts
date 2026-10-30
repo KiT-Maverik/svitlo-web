@@ -4,12 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const makeHundred_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.makeHundred,
   name: {
-    "lt": "Dešimt dešimčių sudaro šimtą",
-    "lv": "Desmit desmiti veido simtu",
-    "et": "Kümme kümnelist moodustavad saja",
-    "be": "Дзесяць дзясяткаў утвараюць сотню",
-    "ka": "ათი ათეული ქმნის ასეულს",
-    "kk": "Он ондық бір жүздікті құрайды",
+    lt: "Dešimt dešimčių sudaro šimtą",
+    lv: "Desmit desmiti veido simtu",
+    et: "Kümme kümnelist moodustavad saja",
+    be: "Дзесяць дзясяткаў утвараюць сотню",
+    ka: "ათი ათეული ქმნის ასეულს",
+    kk: "Он ондық бір жүздікті құрайды",
     en: "Ten tens make one hundred",
     zh: "十个十组成一百",
     hi: "दस दहाइयों से एक सैकड़ा",

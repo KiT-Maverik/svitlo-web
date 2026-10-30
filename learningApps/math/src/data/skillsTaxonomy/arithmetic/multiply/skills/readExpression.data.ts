@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const readExpression_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.readExpression,
   name: {
-    "lt": "Daugyba — reiškinių skaitymas",
-    "lv": "Reizināšana — izteiksmju lasīšana",
-    "et": "Korrutamine — avaldiste lugemine",
-    "be": "Множаньне — чытаньне выразаў",
-    "ka": "გამრავლება — გამოსახულებების წაკითხვა",
-    "kk": "Көбейту — өрнектерді оқу",
+    lt: "Daugyba — reiškinių skaitymas",
+    lv: "Reizināšana — izteiksmju lasīšana",
+    et: "Korrutamine — avaldiste lugemine",
+    be: "Множаньне — чытаньне выразаў",
+    ka: "გამრავლება — გამოსახულებების წაკითხვა",
+    kk: "Көбейту — өрнектерді оқу",
     en: "Multiplication — Reading expressions",
     zh: "乘法 — 读算式",
     hi: "गुणा — व्यंजक पढ़ना",
@@ -58,12 +58,12 @@ export const readExpression_Skill_Data = buildSkillConfig({
       "he": "אפשר לקרוא תרגיל כפל, לזהות את הגורמים ואת המכפלה ולקשר אותו לקבוצות שוות.",
       "pl": "Możesz odczytać wyrażenie z mnożeniem, wskazać czynniki i iloczyn oraz powiązać je z równymi grupami.",
       "uk": "Ти можеш читати вираз на множення, визначати множники й добуток і пов’язувати його з рівними групами.",
-      "lt": "Gali perskaityti daugybos reiškinį, atpažinti dauginamuosius ir sandaugą bei susieti su lygiomis grupėmis.",
-      "lv": "Tu vari nolasīt reizināšanas izteiksmi, noteikt reizinātājus un reizinājumu un saistīt to ar vienādām grupām.",
-      "et": "Sa saad lugeda korrutamisavaldist, määrata selle tegurid ja korrutise ning seostada seda võrdsete rühmadega.",
-      "be": "Ты можаш чытаць выраз на множаньне, вызначаць множнікі й здабытак і зьвязваць яго з роўнымі групамі.",
-      "ka": "შეგიძლია გამრავლების გამოსახულება წაიკითხო, განსაზღვრო მამრავლები და ნამრავლი და თანაბარ ჯგუფებს დაუკავშირო.",
-      "kk": "Көбейту өрнегін оқып, көбейткіштері мен көбейтіндісін анықтап, оны бірдей топтармен байланыстыра аласың."
+      lt: "Gali perskaityti daugybos reiškinį, atpažinti dauginamuosius ir sandaugą bei susieti su lygiomis grupėmis.",
+      lv: "Tu vari nolasīt reizināšanas izteiksmi, noteikt reizinātājus un reizinājumu un saistīt to ar vienādām grupām.",
+      et: "Sa saad lugeda korrutamisavaldist, määrata selle tegurid ja korrutise ning seostada seda võrdsete rühmadega.",
+      be: "Ты можаш чытаць выраз на множаньне, вызначаць множнікі й здабытак і зьвязваць яго з роўнымі групамі.",
+      ka: "შეგიძლია გამრავლების გამოსახულება წაიკითხო, განსაზღვრო მამრავლები და ნამრავლი და თანაბარ ჯგუფებს დაუკავშირო.",
+      kk: "Көбейту өрнегін оқып, көбейткіштері мен көбейтіндісін анықтап, оны бірдей топтармен байланыстыра аласың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const subtractSelf_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.subtractSelf,
   name: {
-    "lt": "Atimtis — tas pats skaičius",
-    "lv": "Atņemšana — tas pats skaitlis",
-    "et": "Lahutamine — sama arv",
-    "be": "Адніманьне — той самы лік",
-    "ka": "გამოკლება — იგივე რიცხვი",
-    "kk": "Азайту — бірдей сан",
+    lt: "Atimtis — tas pats skaičius",
+    lv: "Atņemšana — tas pats skaitlis",
+    et: "Lahutamine — sama arv",
+    be: "Адніманьне — той самы лік",
+    ka: "გამოკლება — იგივე რიცხვი",
+    kk: "Азайту — бірдей сан",
     en: "Subtraction — Same number",
     zh: "减法 — 同一个数",
     hi: "घटाव — वही संख्या",
@@ -58,12 +58,12 @@ export const subtractSelf_Skill_Data = buildSkillConfig({
       "he": "כשמחסרים מספר מעצמו, לא נשאר דבר ולכן ההפרש הוא אפס.",
       "pl": "Gdy odejmiesz liczbę od niej samej, nic nie pozostanie, więc różnica wynosi zero.",
       "uk": "Якщо від числа відняти його самого, нічого не залишиться, тому різниця дорівнює нулю.",
-      "lt": "Kai iš skaičiaus atimi tą patį skaičių, nieko nelieka, todėl skirtumas lygus nuliui.",
-      "lv": "Ja no skaitļa atņem to pašu skaitli, nekas nepaliek, tāpēc starpība ir nulle.",
-      "et": "Kui lahutad arvust sama arvu, ei jää midagi järele ja vahe on null.",
-      "be": "Калі ад ліку адняць яго самога, нічога не застанецца, таму розьніца роўная нулю.",
-      "ka": "როცა რიცხვს საკუთარ თავს გამოაკლებ, არაფერი დარჩება, ამიტომ სხვაობა ნულია.",
-      "kk": "Саннан сол санның өзін азайтсаң, ештеңе қалмайды, сондықтан айырма нөлге тең."
+      lt: "Kai iš skaičiaus atimi tą patį skaičių, nieko nelieka, todėl skirtumas lygus nuliui.",
+      lv: "Ja no skaitļa atņem to pašu skaitli, nekas nepaliek, tāpēc starpība ir nulle.",
+      et: "Kui lahutad arvust sama arvu, ei jää midagi järele ja vahe on null.",
+      be: "Калі ад ліку адняць яго самога, нічога не застанецца, таму розьніца роўная нулю.",
+      ka: "როცა რიცხვს საკუთარ თავს გამოაკლებ, არაფერი დარჩება, ამიტომ სხვაობა ნულია.",
+      kk: "Саннан сол санның өзін азайтсаң, ештеңе қалмайды, сондықтан айырма нөлге тең."
     },
   },
 });

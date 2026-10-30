@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const threeDigitCarry_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.threeDigitCarry,
   name: {
-    "lt": "Sudėtis — triženkliai skaičiai su pernešimu",
-    "lv": "Saskaitīšana — trīsciparu skaitļi ar pārnesumu",
-    "et": "Liitmine — kolmekohalised arvud ülekandega",
-    "be": "Складаньне — трохзначныя лікі з пераносам",
-    "ka": "შეკრება — სამნიშნა რიცხვები გადატანით",
-    "kk": "Қосу — үш таңбалы сандар разряд ауыстырумен",
+    lt: "Sudėtis — triženkliai skaičiai su pernešimu",
+    lv: "Saskaitīšana — trīsciparu skaitļi ar pārnesumu",
+    et: "Liitmine — kolmekohalised arvud ülekandega",
+    be: "Складаньне — трохзначныя лікі з пераносам",
+    ka: "შეკრება — სამნიშნა რიცხვები გადატანით",
+    kk: "Қосу — үш таңбалы сандар разряд ауыстырумен",
     en: "Addition — 3-digit · Carrying",
     zh: "加法 — 3-位数 · 进位",
     hi: "जोड़ — 3-अंकीय · कैरी",
@@ -58,12 +58,12 @@ export const threeDigitCarry_Skill_Data = buildSkillConfig({
       "he": "אפשר לחבר מספרים תלת־ספרתיים על ידי המרת עשר יחידות בעשרת אחת ועשר עשרות במאה אחת לפי הצורך.",
       "pl": "Potrafisz dodawać liczby trzycyfrowe, zamieniając w razie potrzeby dziesięć jedności na dziesiątkę i dziesięć dziesiątek na setkę.",
       "uk": "Ти можеш додавати трицифрові числа, за потреби обмінюючи десять одиниць на десяток, а десять десятків — на сотню.",
-      "lt": "Gali sudėti triženklius skaičius, prireikus dešimt vienetų pakeisdamas viena dešimtimi, o dešimt dešimčių – vienu šimtu.",
-      "lv": "Tu vari saskaitīt trīsciparu skaitļus, vajadzības gadījumā desmit vienus apmainot pret vienu desmitu un desmit desmitus pret vienu simtu.",
-      "et": "Sa oskad liita kolmekohalisi arve, vahetades vajaduse korral kümme ühelist ühe kümnelise ja kümme kümnelist ühe sajalise vastu.",
-      "be": "Ты можаш складаць трохзначныя лікі, калі трэба замяняючы дзесяць адзінак адным дзясяткам, а дзесяць дзясяткаў — адной сотняй.",
-      "ka": "შეგიძლია სამნიშნა რიცხვები შეკრიბო და საჭიროების შემთხვევაში ათი ერთეული ერთ ათეულად, ათი ათეული კი ერთ ასეულად გადააჯგუფო.",
-      "kk": "Үш таңбалы сандарды қосқанда қажет болса, он бірлікті бір ондыққа, ал он ондықты бір жүздікке ауыстыра аласың."
+      lt: "Gali sudėti triženklius skaičius, prireikus dešimt vienetų pakeisdamas viena dešimtimi, o dešimt dešimčių – vienu šimtu.",
+      lv: "Tu vari saskaitīt trīsciparu skaitļus, vajadzības gadījumā desmit vienus apmainot pret vienu desmitu un desmit desmitus pret vienu simtu.",
+      et: "Sa oskad liita kolmekohalisi arve, vahetades vajaduse korral kümme ühelist ühe kümnelise ja kümme kümnelist ühe sajalise vastu.",
+      be: "Ты можаш складаць трохзначныя лікі, калі трэба замяняючы дзесяць адзінак адным дзясяткам, а дзесяць дзясяткаў — адной сотняй.",
+      ka: "შეგიძლია სამნიშნა რიცხვები შეკრიბო და საჭიროების შემთხვევაში ათი ერთეული ერთ ათეულად, ათი ათეული კი ერთ ასეულად გადააჯგუფო.",
+      kk: "Үш таңбалы сандарды қосқанда қажет болса, он бірлікті бір ондыққа, ал он ондықты бір жүздікке ауыстыра аласың."
     },
   },
 });

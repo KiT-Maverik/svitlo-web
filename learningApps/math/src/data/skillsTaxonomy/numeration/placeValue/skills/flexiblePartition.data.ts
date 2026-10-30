@@ -4,12 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const flexiblePartition_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.flexiblePartition,
   name: {
-    "lt": "Įvairūs skaičiaus skaidymo būdai",
-    "lv": "Dažādi skaitļa sadalīšanas veidi",
-    "et": "Arvude paindlik osadeks jaotamine",
-    "be": "Гнуткае раскладаньне ліку",
-    "ka": "რიცხვის სხვადასხვა გზით დაშლა",
-    "kk": "Санды әртүрлі тәсілмен жіктеу",
+    lt: "Įvairūs skaičiaus skaidymo būdai",
+    lv: "Dažādi skaitļa sadalīšanas veidi",
+    et: "Arvude paindlik osadeks jaotamine",
+    be: "Гнуткае раскладаньне ліку",
+    ka: "რიცხვის სხვადასხვა გზით დაშლა",
+    kk: "Санды әртүрлі тәсілмен жіктеу",
     en: "Flexible number partitioning",
     zh: "灵活拆分数",
     hi: "संख्याओं का लचीला विभाजन",

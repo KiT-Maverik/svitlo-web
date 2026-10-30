@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const crossTenAddition_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.crossTenAddition,
   name: {
-    "lt": "Sudėtis — peržengiant dešimtį",
-    "lv": "Saskaitīšana — pāreja pāri desmitam",
-    "et": "Liitmine — üle kümne liitmine",
-    "be": "Складаньне — пераход праз дзясятак",
-    "ka": "შეკრება — ათეულის გადაცილებით",
-    "kk": "Қосу — ондықтан аттап өту",
+    lt: "Sudėtis — peržengiant dešimtį",
+    lv: "Saskaitīšana — pāreja pāri desmitam",
+    et: "Liitmine — üle kümne liitmine",
+    be: "Складаньне — пераход праз дзясятак",
+    ka: "შეკრება — ათეულის გადაცილებით",
+    kk: "Қосу — ондықтан аттап өту",
     en: "Addition — Crossing ten",
     zh: "加法 — 跨十计算",
     hi: "जोड़ — दस पार करना",
@@ -58,12 +58,12 @@ export const crossTenAddition_Skill_Data = buildSkillConfig({
       "he": "כשסכום היחידות מגיע לעשר או יותר, אפשר להמיר עשר יחידות בעשרת אחת בלי לשנות את הסכום.",
       "pl": "Gdy suma jedności wynosi dziesięć lub więcej, możesz zamienić dziesięć jedności na jedną dziesiątkę bez zmiany wyniku.",
       "uk": "Коли сума одиниць дорівнює десяти або більше, ти можеш обміняти десять одиниць на один десяток, не змінюючи загальної суми.",
-      "lt": "Kai vienetų suma siekia dešimt ar daugiau, gali dešimt vienetų pakeisti viena dešimtimi, o suma nepasikeis.",
-      "lv": "Kad vienu summa sasniedz desmit vai vairāk, vari desmit vienus aizstāt ar vienu desmitu, nemainot summu.",
-      "et": "Kui üheliste summa on kümme või rohkem, saad kümme ühelist asendada ühe kümnelisega, ilma et summa muutuks.",
-      "be": "Калі сума адзінак роўная дзесяці або большая, можаш замяніць дзесяць адзінак адным дзясяткам, не зьмяняючы сумы.",
-      "ka": "როცა ერთეულების ჯამი ათს ან მეტს აღწევს, შეგიძლია ათი ერთეული ერთ ათეულად გადააჯგუფო ისე, რომ ჯამი არ შეიცვალოს.",
-      "kk": "Бірліктердің қосындысы онға немесе одан көпке жетсе, он бірлікті бір ондыққа ауыстыруға болады; жалпы қосынды өзгермейді."
+      lt: "Kai vienetų suma siekia dešimt ar daugiau, gali dešimt vienetų pakeisti viena dešimtimi, o suma nepasikeis.",
+      lv: "Kad vienu summa sasniedz desmit vai vairāk, vari desmit vienus aizstāt ar vienu desmitu, nemainot summu.",
+      et: "Kui üheliste summa on kümme või rohkem, saad kümme ühelist asendada ühe kümnelisega, ilma et summa muutuks.",
+      be: "Калі сума адзінак роўная дзесяці або большая, можаш замяніць дзесяць адзінак адным дзясяткам, не зьмяняючы сумы.",
+      ka: "როცა ერთეულების ჯამი ათს ან მეტს აღწევს, შეგიძლია ათი ერთეული ერთ ათეულად გადააჯგუფო ისე, რომ ჯამი არ შეიცვალოს.",
+      kk: "Бірліктердің қосындысы онға немесе одан көпке жетсе, он бірлікті бір ондыққа ауыстыруға болады; жалпы қосынды өзгермейді."
     },
   },
 });

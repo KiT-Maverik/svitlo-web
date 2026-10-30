@@ -4,12 +4,12 @@ import { comparison_Skills_Ids } from './index.ids';
 export const moreLessEqual_Skill_Data = buildSkillConfig({
   id: comparison_Skills_Ids.moreLessEqual,
   name: {
-    "lt": "Daugiau, mažiau arba lygu",
-    "lv": "Vairāk, mazāk vai vienādi daudzumi",
-    "et": "Suurem, väiksem või võrdne kogus",
-    "be": "Больш, менш або роўна для колькасьцяў",
-    "ka": "მეტი, ნაკლები ან ტოლი რაოდენობები",
-    "kk": "Көп, аз немесе тең мөлшерлер",
+    lt: "Daugiau, mažiau arba lygu",
+    lv: "Vairāk, mazāk vai vienādi daudzumi",
+    et: "Suurem, väiksem või võrdne kogus",
+    be: "Больш, менш або роўна для колькасьцяў",
+    ka: "მეტი, ნაკლები ან ტოლი რაოდენობები",
+    kk: "Көп, аз немесе тең мөлшерлер",
     en: "Greater, less or equal quantities",
     zh: "比较数量的多、少和相等",
     hi: "मात्राओं में अधिक, कम या बराबर",

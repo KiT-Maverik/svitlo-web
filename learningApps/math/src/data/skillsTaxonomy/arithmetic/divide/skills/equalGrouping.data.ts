@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const equalGrouping_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.equalGrouping,
   name: {
-    "lt": "Dalyba — skirstymas į lygias grupes",
-    "lv": "Dalīšana — sadalīšana vienādās grupās",
-    "et": "Jagamine — võrdsetesse rühmadesse jaotamine",
-    "be": "Дзяленьне — разьмеркаваньне па роўных групах",
-    "ka": "გაყოფა — თანაბარ ჯგუფებად დაყოფა",
-    "kk": "Бөлу — тең топтарға бөлу",
+    lt: "Dalyba — skirstymas į lygias grupes",
+    lv: "Dalīšana — sadalīšana vienādās grupās",
+    et: "Jagamine — võrdsetesse rühmadesse jaotamine",
+    be: "Дзяленьне — разьмеркаваньне па роўных групах",
+    ka: "გაყოფა — თანაბარ ჯგუფებად დაყოფა",
+    kk: "Бөлу — тең топтарға бөлу",
     en: "Division — Equal grouping · Equal groups",
     zh: "除法 — 按相等组分组 · 等量组",
     hi: "भाग — समान समूह बनाना · समान समूह",
@@ -58,12 +58,12 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא כמה קבוצות מלאות בגודל נתון נכנסות בכמות הכוללת וכמה נשאר.",
       "pl": "Możesz ustalić, ile pełnych grup o zadanej wielkości powstanie z całości i ile pozostanie.",
       "uk": "Ти можеш з’ясувати, скільки повних груп заданого розміру вміщується в цілому й скільки залишається.",
-      "lt": "Gali nustatyti, kiek pilnų nurodyto dydžio grupių telpa visumoje ir kiek lieka.",
-      "lv": "Tu vari noskaidrot, cik pilnu noteikta lieluma grupu ietilpst kopumā un cik paliek pāri.",
-      "et": "Sa saad leida, mitu etteantud suurusega täielikku rühma mahub tervikusse ja kui palju jääb üle.",
-      "be": "Ты можаш вызначыць, колькі поўных груп зададзенага памеру зьмяшчаецца ў цэлым і колькі застаецца.",
-      "ka": "შეგიძლია იპოვო, რამდენი სრული, მითითებული ზომის ჯგუფი ეტევა მთლიანში და რამდენი რჩება.",
-      "kk": "Бүтіннен белгілі өлшемдегі қанша толық топ шығатынын және қанша қалатынын анықтай аласың."
+      lt: "Gali nustatyti, kiek pilnų nurodyto dydžio grupių telpa visumoje ir kiek lieka.",
+      lv: "Tu vari noskaidrot, cik pilnu noteikta lieluma grupu ietilpst kopumā un cik paliek pāri.",
+      et: "Sa saad leida, mitu etteantud suurusega täielikku rühma mahub tervikusse ja kui palju jääb üle.",
+      be: "Ты можаш вызначыць, колькі поўных груп зададзенага памеру зьмяшчаецца ў цэлым і колькі застаецца.",
+      ka: "შეგიძლია იპოვო, რამდენი სრული, მითითებული ზომის ჯგუფი ეტევა მთლიანში და რამდენი რჩება.",
+      kk: "Бүтіннен белгілі өлшемдегі қанша толық топ шығатынын және қанша қалатынын анықтай аласың."
     },
   },
 });

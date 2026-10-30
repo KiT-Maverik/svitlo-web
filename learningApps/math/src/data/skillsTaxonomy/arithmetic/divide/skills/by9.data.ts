@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const by9_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.by9,
   name: {
-    "lt": "Dalyba — ÷ 9",
-    "lv": "Dalīšana — ÷ 9",
-    "et": "Jagamine — ÷ 9",
-    "be": "Дзяленьне — ÷ 9",
-    "ka": "გაყოფა — ÷ 9",
-    "kk": "Бөлу — ÷ 9",
+    lt: "Dalyba — ÷ 9",
+    lv: "Dalīšana — ÷ 9",
+    et: "Jagamine — ÷ 9",
+    be: "Дзяленьне — ÷ 9",
+    ka: "გაყოფა — ÷ 9",
+    kk: "Бөлу — ÷ 9",
     en: "Division — ÷ 9",
     zh: "除法 — ÷ 9",
     hi: "भाग — ÷ 9",
@@ -58,12 +58,12 @@ export const by9_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק בתשע באמצעות כפולות של תשע והקשר בין כפל לחילוק.",
       "pl": "Możesz dzielić przez dziewięć, korzystając z wielokrotności dziewięciu i związku mnożenia z dzieleniem.",
       "uk": "Ти можеш ділити на дев’ять за допомогою кратних дев’яти та зв’язку множення з діленням.",
-      "lt": "Gali dalyti iš devynių naudodamas devyneto kartotinius ir daugybos bei dalybos ryšį.",
-      "lv": "Tu vari dalīt ar 9, izmantojot deviņu daudzkārtņus un saikni starp reizināšanu un dalīšanu.",
-      "et": "Sa saad üheksaga jagada üheksa kordsete ja korrutamise-jagamise seoste abil.",
-      "be": "Ты можаш дзяліць на дзевяць, выкарыстоўваючы кратныя дзевяці й сувязь множаньня зь дзяленьнем.",
-      "ka": "შეგიძლია ცხრაზე გაყო ცხრას ჯერადებისა და გამრავლება-გაყოფის კავშირის გამოყენებით.",
-      "kk": "Тоғызға бөлуді тоғыздың еселіктері мен көбейту-бөлу байланысы арқылы орындай аласың."
+      lt: "Gali dalyti iš devynių naudodamas devyneto kartotinius ir daugybos bei dalybos ryšį.",
+      lv: "Tu vari dalīt ar 9, izmantojot deviņu daudzkārtņus un saikni starp reizināšanu un dalīšanu.",
+      et: "Sa saad üheksaga jagada üheksa kordsete ja korrutamise-jagamise seoste abil.",
+      be: "Ты можаш дзяліць на дзевяць, выкарыстоўваючы кратныя дзевяці й сувязь множаньня зь дзяленьнем.",
+      ka: "შეგიძლია ცხრაზე გაყო ცხრას ჯერადებისა და გამრავლება-გაყოფის კავშირის გამოყენებით.",
+      kk: "Тоғызға бөлуді тоғыздың еселіктері мен көбейту-бөлу байланысы арқылы орындай аласың."
     },
   },
 });

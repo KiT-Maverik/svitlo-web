@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by6_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by6,
   name: {
-    "lt": "Daugyba — × 6",
-    "lv": "Reizināšana — × 6",
-    "et": "Korrutamine — × 6",
-    "be": "Множаньне — × 6",
-    "ka": "გამრავლება — × 6",
-    "kk": "Көбейту — × 6",
+    lt: "Daugyba — × 6",
+    lv: "Reizināšana — × 6",
+    et: "Korrutamine — × 6",
+    be: "Множаньне — × 6",
+    ka: "გამრავლება — × 6",
+    kk: "Көбейту — × 6",
     en: "Multiplication — × 6",
     zh: "乘法 — × 6",
     hi: "गुणा — × 6",
@@ -58,12 +58,12 @@ export const by6_Skill_Data = buildSkillConfig({
       "he": "כדי לכפול בשש, אפשר לצרף קבוצה אחת לחמש קבוצות שוות או להשתמש במכפלות ידועות.",
       "pl": "Aby pomnożyć przez sześć, możesz połączyć pięć równych grup z jeszcze jedną albo skorzystać ze znanych iloczynów.",
       "uk": "Щоб помножити на шість, ти можеш додати ще одну рівну групу до п’яти або використати відомі добутки.",
-      "lt": "Norėdamas padauginti iš šešių, gali prie penkių lygių grupių pridėti dar vieną arba pasinaudoti žinomomis sandaugomis.",
-      "lv": "Lai reizinātu ar seši, vari piecām vienādām grupām pievienot vēl vienu vai izmantot zināmus reizinājumus.",
-      "et": "Kuuega korrutamiseks saad viiele võrdsele rühmale ühe lisada või kasutada tuntud korrutisi.",
-      "be": "Каб памножыць на шэсьць, можаш дадаць да пяці роўных груп яшчэ адну або выкарыстаць вядомыя здабыткі.",
-      "ka": "ექვსზე გასამრავლებლად შეგიძლია ხუთ თანაბარ ჯგუფს კიდევ ერთი დაუმატო ან ნაცნობი ნამრავლები გამოიყენო.",
-      "kk": "Алтыға көбейту үшін бес бірдей топқа тағы біреуін қоса аласың немесе белгілі көбейтінділерді пайдаланасың."
+      lt: "Norėdamas padauginti iš šešių, gali prie penkių lygių grupių pridėti dar vieną arba pasinaudoti žinomomis sandaugomis.",
+      lv: "Lai reizinātu ar seši, vari piecām vienādām grupām pievienot vēl vienu vai izmantot zināmus reizinājumus.",
+      et: "Kuuega korrutamiseks saad viiele võrdsele rühmale ühe lisada või kasutada tuntud korrutisi.",
+      be: "Каб памножыць на шэсьць, можаш дадаць да пяці роўных груп яшчэ адну або выкарыстаць вядомыя здабыткі.",
+      ka: "ექვსზე გასამრავლებლად შეგიძლია ხუთ თანაბარ ჯგუფს კიდევ ერთი დაუმატო ან ნაცნობი ნამრავლები გამოიყენო.",
+      kk: "Алтыға көбейту үшін бес бірдей топқа тағы біреуін қоса аласың немесе белгілі көбейтінділерді пайдаланасың."
     },
   },
 });

@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const addMeaning_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.addMeaning,
   name: {
-    "lt": "Sudėtis — reikšmė ir modeliai",
-    "lv": "Saskaitīšana — nozīme un modeļi",
-    "et": "Liitmine — tähendus ja mudelid",
-    "be": "Складаньне — сэнс і мадэлі",
-    "ka": "შეკრება — მნიშვნელობა და მოდელები",
-    "kk": "Қосу — мағынасы мен модельдері",
+    lt: "Sudėtis — reikšmė ir modeliai",
+    lv: "Saskaitīšana — nozīme un modeļi",
+    et: "Liitmine — tähendus ja mudelid",
+    be: "Складаньне — сэнс і мадэлі",
+    ka: "შეკრება — მნიშვნელობა და მოდელები",
+    kk: "Қосу — мағынасы мен модельдері",
     en: "Addition — Meaning and models",
     zh: "加法 — 含义与模型",
     hi: "जोड़ — अर्थ और मॉडल",
@@ -58,12 +58,12 @@ export const addMeaning_Skill_Data = buildSkillConfig({
       "he": "אפשר לזהות מתי חיבור מאחד כמויות נפרדות ומתי הוא מגדיל כמות קיימת, ולייצג את שני המצבים בתרגיל חיבור.",
       "pl": "Potrafisz rozpoznać, kiedy dodawanie łączy osobne ilości, a kiedy zwiększa ilość początkową, i zapisać obie sytuacje jako sumę.",
       "uk": "Ти можеш розпізнавати, коли додавання об’єднує окремі кількості, а коли збільшує початкову, і записувати обидві ситуації як суму.",
-      "lt": "Gali atpažinti, kada sudėtis sujungia atskirus kiekius, o kada padidina pradinį kiekį, ir abi situacijas užrašyti sudėties veiksmu.",
-      "lv": "Tu vari atpazīt, kad saskaitīšana apvieno atsevišķus daudzumus un kad palielina sākotnējo daudzumu, un abus gadījumus attēlot ar summu.",
-      "et": "Sa oskad eristada, millal liitmine ühendab eraldi hulki ja millal suurendab olemasolevat hulka, ning väljendada mõlemat summana.",
-      "be": "Ты можаш распазнаваць, калі складаньне аб’ядноўвае асобныя колькасьці, а калі павялічвае пачатковую, і запісваць абодва выпадкі як суму.",
-      "ka": "შეგიძლია გაარჩიო, როდის აერთიანებს შეკრება ცალკეულ რაოდენობებს და როდის ზრდის საწყის რაოდენობას, და ორივე შემთხვევა ჯამით გამოსახო.",
-      "kk": "Қосудың қай кезде бөлек мөлшерлерді біріктіретінін, қай кезде бастапқы мөлшерді арттыратынын ажыратып, екі жағдайды да қосынды түрінде көрсете аласың."
+      lt: "Gali atpažinti, kada sudėtis sujungia atskirus kiekius, o kada padidina pradinį kiekį, ir abi situacijas užrašyti sudėties veiksmu.",
+      lv: "Tu vari atpazīt, kad saskaitīšana apvieno atsevišķus daudzumus un kad palielina sākotnējo daudzumu, un abus gadījumus attēlot ar summu.",
+      et: "Sa oskad eristada, millal liitmine ühendab eraldi hulki ja millal suurendab olemasolevat hulka, ning väljendada mõlemat summana.",
+      be: "Ты можаш распазнаваць, калі складаньне аб’ядноўвае асобныя колькасьці, а калі павялічвае пачатковую, і запісваць абодва выпадкі як суму.",
+      ka: "შეგიძლია გაარჩიო, როდის აერთიანებს შეკრება ცალკეულ რაოდენობებს და როდის ზრდის საწყის რაოდენობას, და ორივე შემთხვევა ჯამით გამოსახო.",
+      kk: "Қосудың қай кезде бөлек мөлшерлерді біріктіретінін, қай кезде бастапқы мөлшерді арттыратынын ажыратып, екі жағдайды да қосынды түрінде көрсете аласың."
     },
   },
 });

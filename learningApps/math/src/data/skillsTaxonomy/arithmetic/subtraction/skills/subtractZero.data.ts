@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const subtractZero_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.subtractZero,
   name: {
-    "lt": "Atimtis — nulis",
-    "lv": "Atņemšana — nulle",
-    "et": "Lahutamine — null",
-    "be": "Адніманьне — нуль",
-    "ka": "გამოკლება — ნული",
-    "kk": "Азайту — нөл",
+    lt: "Atimtis — nulis",
+    lv: "Atņemšana — nulle",
+    et: "Lahutamine — null",
+    be: "Адніманьне — нуль",
+    ka: "გამოკლება — ნული",
+    kk: "Азайту — нөл",
     en: "Subtraction — Zero",
     zh: "减法 — 零",
     hi: "घटाव — शून्य",
@@ -58,12 +58,12 @@ export const subtractZero_Skill_Data = buildSkillConfig({
       "he": "חיסור אפס אינו משנה את המספר המקורי; החלפת סדר המספרים בחיסור אינה אותו דבר.",
       "pl": "Odjęcie zera nie zmienia liczby początkowej; zamiana kolejności liczb w odejmowaniu to coś innego.",
       "uk": "Віднімання нуля не змінює початкове число, але переставляти числа місцями у відніманні — зовсім інша дія.",
-      "lt": "Atėmus nulį pradinis skaičius nepasikeičia; skaičių sukeisti vietomis atimtyje nėra tas pats.",
-      "lv": "Atņemot nulli, sākotnējais skaitlis nemainās; skaitļu samainīšana vietām atņemšanā nav tas pats.",
-      "et": "Nulli lahutamine ei muuda algset arvu; arvude järjekorra vahetamine lahutamises ei ole sama asi.",
-      "be": "Адніманьне нуля не зьмяняе пачатковы лік, але мяняць лікі месцамі пры адніманьні — ня тое самае.",
-      "ka": "ნულის გამოკლება საწყის რიცხვს არ ცვლის, მაგრამ გამოკლებისას რიცხვების ადგილების შეცვლა სხვა რამეა.",
-      "kk": "Нөлді азайтқанда бастапқы сан өзгермейді, ал азайтуда сандардың орнын ауыстыру — басқа нәрсе."
+      lt: "Atėmus nulį pradinis skaičius nepasikeičia; skaičių sukeisti vietomis atimtyje nėra tas pats.",
+      lv: "Atņemot nulli, sākotnējais skaitlis nemainās; skaitļu samainīšana vietām atņemšanā nav tas pats.",
+      et: "Nulli lahutamine ei muuda algset arvu; arvude järjekorra vahetamine lahutamises ei ole sama asi.",
+      be: "Адніманьне нуля не зьмяняе пачатковы лік, але мяняць лікі месцамі пры адніманьні — ня тое самае.",
+      ka: "ნულის გამოკლება საწყის რიცხვს არ ცვლის, მაგრამ გამოკლებისას რიცხვების ადგილების შეცვლა სხვა რამეა.",
+      kk: "Нөлді азайтқанда бастапқы сан өзгермейді, ал азайтуда сандардың орнын ауыстыру — басқа нәрсе."
     },
   },
 });

@@ -4,12 +4,12 @@ import { addition_Skills_Ids } from './index.ids';
 export const addZero_Skill_Data = buildSkillConfig({
   id: addition_Skills_Ids.addZero,
   name: {
-    "lt": "Sudėtis — nulis",
-    "lv": "Saskaitīšana — nulle",
-    "et": "Liitmine — null",
-    "be": "Складаньне — нуль",
-    "ka": "შეკრება — ნული",
-    "kk": "Қосу — нөл",
+    lt: "Sudėtis — nulis",
+    lv: "Saskaitīšana — nulle",
+    et: "Liitmine — null",
+    be: "Складаньне — нуль",
+    ka: "შეკრება — ნული",
+    kk: "Қосу — нөл",
     en: "Addition — Zero",
     zh: "加法 — 零",
     hi: "जोड़ — शून्य",
@@ -58,12 +58,12 @@ export const addZero_Skill_Data = buildSkillConfig({
       "he": "הוספת אפס אינה משנה את המספר, בין שהאפס נמצא מימין לסימן החיבור ובין שמשמאלו.",
       "pl": "Dodanie zera nie zmienia liczby, niezależnie od tego, po której stronie znaku plus znajduje się zero.",
       "uk": "Додавання нуля не змінює число, незалежно від того, з якого боку знака плюс стоїть нуль.",
-      "lt": "Pridėjus nulį skaičius nepasikeičia, nesvarbu, kurioje pliuso ženklo pusėje yra nulis.",
-      "lv": "Pieskaitot nulli, skaitlis nemainās neatkarīgi no tā, kurā pluszīmes pusē ir nulle.",
-      "et": "Nulli liitmine ei muuda arvu, olenemata sellest, kummal pool plussmärki null asub.",
-      "be": "Дадаваньне нуля не зьмяняе лік, незалежна ад таго, зь якога боку знака плюс стаіць нуль.",
-      "ka": "ნულის მიმატება რიცხვს არ ცვლის, მიუხედავად იმისა, პლუსის ნიშნის რომელ მხარეს დგას ნული.",
-      "kk": "Нөлді қосқанда сан өзгермейді, нөл қосу таңбасының қай жағында тұрса да."
+      lt: "Pridėjus nulį skaičius nepasikeičia, nesvarbu, kurioje pliuso ženklo pusėje yra nulis.",
+      lv: "Pieskaitot nulli, skaitlis nemainās neatkarīgi no tā, kurā pluszīmes pusē ir nulle.",
+      et: "Nulli liitmine ei muuda arvu, olenemata sellest, kummal pool plussmärki null asub.",
+      be: "Дадаваньне нуля не зьмяняе лік, незалежна ад таго, зь якога боку знака плюс стаіць нуль.",
+      ka: "ნულის მიმატება რიცხვს არ ცვლის, მიუხედავად იმისა, პლუსის ნიშნის რომელ მხარეს დგას ნული.",
+      kk: "Нөлді қосқанда сан өзгермейді, нөл қосу таңбасының қай жағында тұрса да."
     },
   },
 });

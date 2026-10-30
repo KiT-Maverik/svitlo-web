@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const by7_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.by7,
   name: {
-    "lt": "Daugyba — × 7",
-    "lv": "Reizināšana — × 7",
-    "et": "Korrutamine — × 7",
-    "be": "Множаньне — × 7",
-    "ka": "გამრავლება — × 7",
-    "kk": "Көбейту — × 7",
+    lt: "Daugyba — × 7",
+    lv: "Reizināšana — × 7",
+    et: "Korrutamine — × 7",
+    be: "Множаньне — × 7",
+    ka: "გამრავლება — × 7",
+    kk: "Көбейту — × 7",
     en: "Multiplication — × 7",
     zh: "乘法 — × 7",
     hi: "गुणा — × 7",
@@ -58,12 +58,12 @@ export const by7_Skill_Data = buildSkillConfig({
       "he": "אפשר לכפול בשבע באמצעות שבע קבוצות שוות ולהסיק מכפלות לא מוכרות ממכפלות קרובות.",
       "pl": "Możesz mnożyć przez siedem za pomocą siedmiu równych grup i wyznaczać nieznane iloczyny z bliskich znanych wyników.",
       "uk": "Ти можеш множити на сім за допомогою семи рівних груп і виводити невідомі добутки з близьких відомих.",
-      "lt": "Gali dauginti iš septynių naudodamas septynias lygias grupes ir iš artimų žinomų sandaugų rasti naujus rezultatus.",
-      "lv": "Tu vari reizināt ar septiņi, izmantojot septiņas vienādas grupas un iegūstot jaunus reizinājumus no līdzīgiem zināmiem.",
-      "et": "Sa saad seitsmega korrutada seitsme võrdse rühma abil ning leida tundmatuid korrutisi lähedaste tuntud tulemuste põhjal.",
-      "be": "Ты можаш множыць на сем празь сем роўных груп і выводзіць невядомыя здабыткі з блізкіх вядомых.",
-      "ka": "შეგიძლია შვიდზე გამრავლება შვიდი თანაბარი ჯგუფით და უცნობი ნამრავლების გამოთვლა ახლომდებარე ცნობილებიდან.",
-      "kk": "Жеті бірдей топ арқылы жетіге көбейтіп, белгісіз көбейтіндіні жақын белгілі нәтижелерден шығара аласың."
+      lt: "Gali dauginti iš septynių naudodamas septynias lygias grupes ir iš artimų žinomų sandaugų rasti naujus rezultatus.",
+      lv: "Tu vari reizināt ar septiņi, izmantojot septiņas vienādas grupas un iegūstot jaunus reizinājumus no līdzīgiem zināmiem.",
+      et: "Sa saad seitsmega korrutada seitsme võrdse rühma abil ning leida tundmatuid korrutisi lähedaste tuntud tulemuste põhjal.",
+      be: "Ты можаш множыць на сем празь сем роўных груп і выводзіць невядомыя здабыткі з блізкіх вядомых.",
+      ka: "შეგიძლია შვიდზე გამრავლება შვიდი თანაბარი ჯგუფით და უცნობი ნამრავლების გამოთვლა ახლომდებარე ცნობილებიდან.",
+      kk: "Жеті бірдей топ арқылы жетіге көбейтіп, белгісіз көбейтіндіні жақын белгілі нәтижелерден шығара аласың."
     },
   },
 });

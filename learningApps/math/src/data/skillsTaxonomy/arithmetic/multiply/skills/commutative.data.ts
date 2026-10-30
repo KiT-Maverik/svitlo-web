@@ -4,12 +4,12 @@ import { multiply_Skills_Ids } from './index.ids';
 export const commutative_Skill_Data = buildSkillConfig({
   id: multiply_Skills_Ids.commutative,
   name: {
-    "lt": "Daugyba — perstatomumo dėsnis",
-    "lv": "Reizināšana — komutativitātes likums",
-    "et": "Korrutamine — vahetuvusseadus",
-    "be": "Множаньне — перастаўляльны закон",
-    "ka": "გამრავლება — გადანაცვლებადობის თვისება",
-    "kk": "Көбейту — ауыстырымдылық қасиеті",
+    lt: "Daugyba — perstatomumo dėsnis",
+    lv: "Reizināšana — komutativitātes likums",
+    et: "Korrutamine — vahetuvusseadus",
+    be: "Множаньне — перастаўляльны закон",
+    ka: "გამრავლება — გადანაცვლებადობის თვისება",
+    kk: "Көбейту — ауыстырымдылық қасиеті",
     en: "Multiplication — Commutative property",
     zh: "乘法 — 交换律",
     hi: "गुणा — क्रमविनिमेय नियम",
@@ -58,12 +58,12 @@ export const commutative_Skill_Data = buildSkillConfig({
       "he": "אפשר לשנות את סדר הגורמים בלי לשנות את המכפלה.",
       "pl": "Możesz zamieniać kolejność czynników bez zmiany iloczynu.",
       "uk": "Ти можеш переставляти множники місцями, не змінюючи добутку.",
-      "lt": "Gali sukeisti dauginamųjų vietas nepakeisdamas sandaugos.",
-      "lv": "Tu vari mainīt reizinātāju secību, nemainot reizinājumu.",
-      "et": "Sa saad tegurite järjekorda vahetada, ilma et korrutis muutuks.",
-      "be": "Ты можаш мяняць множнікі месцамі, не зьмяняючы здабытку.",
-      "ka": "შეგიძლია მამრავლების მიმდევრობა შეცვალო ისე, რომ ნამრავლი არ შეიცვალოს.",
-      "kk": "Көбейткіштердің орнын ауыстырсаң да, көбейтінді өзгермейді."
+      lt: "Gali sukeisti dauginamųjų vietas nepakeisdamas sandaugos.",
+      lv: "Tu vari mainīt reizinātāju secību, nemainot reizinājumu.",
+      et: "Sa saad tegurite järjekorda vahetada, ilma et korrutis muutuks.",
+      be: "Ты можаш мяняць множнікі месцамі, не зьмяняючы здабытку.",
+      ka: "შეგიძლია მამრავლების მიმდევრობა შეცვალო ისე, რომ ნამრავლი არ შეიცვალოს.",
+      kk: "Көбейткіштердің орнын ауыстырсаң да, көбейтінді өзгермейді."
     },
   },
 });

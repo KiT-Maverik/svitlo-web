@@ -4,12 +4,12 @@ import { divide_Skills_Ids } from './index.ids';
 export const roundHundreds_Skill_Data = buildSkillConfig({
   id: divide_Skills_Ids.roundHundreds,
   name: {
-    "lt": "Dalyba — pilni šimtai",
-    "lv": "Dalīšana — pilni simti",
-    "et": "Jagamine — täissajad",
-    "be": "Дзяленьне — круглыя сотні",
-    "ka": "გაყოფა — სრული ასეულები",
-    "kk": "Бөлу — толық жүздіктер",
+    lt: "Dalyba — pilni šimtai",
+    lv: "Dalīšana — pilni simti",
+    et: "Jagamine — täissajad",
+    be: "Дзяленьне — круглыя сотні",
+    ka: "გაყოფა — სრული ასეულები",
+    kk: "Бөлу — толық жүздіктер",
     en: "Division — Whole hundreds",
     zh: "除法 — 整百数",
     hi: "भाग — पूरे सैकड़े",
@@ -58,12 +58,12 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
       "he": "אפשר לחלק מאות שלמות במספר חד־ספרתי ולהמיר מאות לעשרות או ליחידות בעת הצורך.",
       "pl": "Możesz dzielić pełne setki przez liczbę jednocyfrową, w razie potrzeby zamieniając setki na dziesiątki lub jedności.",
       "uk": "Ти можеш ділити круглі сотні на одноцифрове число, за потреби обмінюючи сотні на десятки або одиниці.",
-      "lt": "Gali dalyti pilnus šimtus iš vienaženklio skaičiaus, prireikus keisdamas šimtus į dešimtis ar vienetus.",
-      "lv": "Tu vari dalīt pilnus simtus ar viencipara skaitli, vajadzības gadījumā simtus apmainot pret desmitiem vai vieniem.",
-      "et": "Sa saad täissajalisi ühekohalise arvuga jagada, vahetades vajaduse korral sajalisi kümnelisteks või ühelisteks.",
-      "be": "Ты можаш дзяліць поўныя сотні на адназначны лік, пры патрэбе замяняючы сотні дзясяткамі або адзінкамі.",
-      "ka": "შეგიძლია სრული ასეულები ერთნიშნა რიცხვზე გაყო, საჭიროებისას ასეულები ათეულებად ან ერთეულებად გადააქციო.",
-      "kk": "Толық жүздіктерді бір таңбалы санға бөліп, қажет болса жүздіктерді ондықтарға немесе бірліктерге ауыстыра аласың."
+      lt: "Gali dalyti pilnus šimtus iš vienaženklio skaičiaus, prireikus keisdamas šimtus į dešimtis ar vienetus.",
+      lv: "Tu vari dalīt pilnus simtus ar viencipara skaitli, vajadzības gadījumā simtus apmainot pret desmitiem vai vieniem.",
+      et: "Sa saad täissajalisi ühekohalise arvuga jagada, vahetades vajaduse korral sajalisi kümnelisteks või ühelisteks.",
+      be: "Ты можаш дзяліць поўныя сотні на адназначны лік, пры патрэбе замяняючы сотні дзясяткамі або адзінкамі.",
+      ka: "შეგიძლია სრული ასეულები ერთნიშნა რიცხვზე გაყო, საჭიროებისას ასეულები ათეულებად ან ერთეულებად გადააქციო.",
+      kk: "Толық жүздіктерді бір таңбалы санға бөліп, қажет болса жүздіктерді ондықтарға немесе бірліктерге ауыстыра аласың."
     },
   },
 });

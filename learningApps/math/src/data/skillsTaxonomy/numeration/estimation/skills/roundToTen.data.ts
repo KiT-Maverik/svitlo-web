@@ -4,12 +4,12 @@ import { estimation_Skills_Ids } from './index.ids';
 export const roundToTen_Skill_Data = buildSkillConfig({
   id: estimation_Skills_Ids.roundToTen,
   name: {
-    "lt": "Apvalinimas iki artimiausios dešimties",
-    "lv": "Noapaļošana līdz tuvākajam desmitam",
-    "et": "Ümardamine lähima kümneni",
-    "be": "Акругленьне да найбліжэйшага дзясятка",
-    "ka": "უახლოეს ათეულამდე დამრგვალება",
-    "kk": "Ең жақын ондыққа дейін дөңгелектеу",
+    lt: "Apvalinimas iki artimiausios dešimties",
+    lv: "Noapaļošana līdz tuvākajam desmitam",
+    et: "Ümardamine lähima kümneni",
+    be: "Акругленьне да найбліжэйшага дзясятка",
+    ka: "უახლოეს ათეულამდე დამრგვალება",
+    kk: "Ең жақын ондыққа дейін дөңгелектеу",
     en: "Rounding to the nearest ten",
     zh: "四舍五入到最接近的十",
     hi: "निकटतम दहाई तक पूर्णांकन",

@@ -4,12 +4,12 @@ import { quantities_Skills_Ids } from './index.ids';
 export const measurementContext_Skill_Data = buildSkillConfig({
   id: quantities_Skills_Ids.measurementContext,
   name: {
-    "lt": "Matavimo uždavinių modeliavimas",
-    "lv": "Mērījumu uzdevumu modelēšana",
-    "et": "Mõõtmisülesannete modelleerimine",
-    "be": "Мадэляваньне задач на вымяральныя велічыні",
-    "ka": "გაზომვის ამოცანების მოდელირება",
-    "kk": "Өлшеу есептерін модельдеу",
+    lt: "Matavimo uždavinių modeliavimas",
+    lv: "Mērījumu uzdevumu modelēšana",
+    et: "Mõõtmisülesannete modelleerimine",
+    be: "Мадэляваньне задач на вымяральныя велічыні",
+    ka: "გაზომვის ამოცანების მოდელირება",
+    kk: "Өлшеу есептерін модельдеу",
     en: "Modeling measurement problems",
     zh: "建立测量应用题模型",
     hi: "मापन समस्याओं के मॉडल बनाना",

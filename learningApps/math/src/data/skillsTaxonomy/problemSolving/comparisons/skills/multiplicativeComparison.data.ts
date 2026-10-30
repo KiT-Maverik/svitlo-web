@@ -4,12 +4,12 @@ import { comparisons_Skills_Ids } from './index.ids';
 export const multiplicativeComparison_Skill_Data = buildSkillConfig({
   id: comparisons_Skills_Ids.multiplicativeComparison,
   name: {
-    "lt": "Daugybinių palyginimo uždavinių sprendimas",
-    "lv": "Reizināšanas salīdzināšanas uzdevumu risināšana",
-    "et": "Kordse võrdluse ülesannete lahendamine",
-    "be": "Разьвязваньне задач на кратнае параўнаньне",
-    "ka": "ჯერადი შედარების ამოცანების ამოხსნა",
-    "kk": "Еселік салыстыру есептерін шығару",
+    lt: "Daugybinių palyginimo uždavinių sprendimas",
+    lv: "Reizināšanas salīdzināšanas uzdevumu risināšana",
+    et: "Kordse võrdluse ülesannete lahendamine",
+    be: "Разьвязваньне задач на кратнае параўнаньне",
+    ka: "ჯერადი შედარების ამოცანების ამოხსნა",
+    kk: "Еселік салыстыру есептерін шығару",
     en: "Solving multiplicative comparison problems",
     zh: "解决倍数比较问题",
     hi: "गुणात्मक तुलना की समस्याएँ हल करना",

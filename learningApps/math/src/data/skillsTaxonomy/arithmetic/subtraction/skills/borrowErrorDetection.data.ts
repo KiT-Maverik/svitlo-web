@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const borrowErrorDetection_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.borrowErrorDetection,
   name: {
-    "lt": "Atimtis — skolinimosi klaidų aptikimas",
-    "lv": "Atņemšana — aizņemšanās kļūdu atklāšana",
-    "et": "Lahutamine — laenamisvigade tuvastamine",
-    "be": "Адніманьне — выяўленьне памылак разьяднаньня",
-    "ka": "გამოკლება — გადაჯგუფების შეცდომების ამოცნობა",
-    "kk": "Азайту — разрядтан алу қатесін анықтау",
+    lt: "Atimtis — skolinimosi klaidų aptikimas",
+    lv: "Atņemšana — aizņemšanās kļūdu atklāšana",
+    et: "Lahutamine — laenamisvigade tuvastamine",
+    be: "Адніманьне — выяўленьне памылак разьяднаньня",
+    ka: "გამოკლება — გადაჯგუფების შეცდომების ამოცნობა",
+    kk: "Азайту — разрядтан алу қатесін анықтау",
     en: "Subtraction — Borrowing · Error detection",
     zh: "减法 — 退位 · 错误识别",
     hi: "घटाव — उधार लेना · त्रुटि पहचान",
@@ -58,12 +58,12 @@ export const borrowErrorDetection_Skill_Data = buildSkillConfig({
       "he": "אפשר לזהות ולהסביר טעויות בחיסור כששוכחים לבצע המרה בין מקומות או מבצעים אותה באופן שגוי.",
       "pl": "Potrafisz znaleźć i wyjaśnić błędy odejmowania, gdy pominięto lub źle wykonano zamianę między rzędami.",
       "uk": "Ти можеш знаходити й пояснювати помилки віднімання, коли розрядний обмін пропущено або виконано неправильно.",
-      "lt": "Gali pastebėti ir paaiškinti atimties klaidas, kai pamirštama ar neteisingai atliekama skyrių vertės keitimo operacija.",
-      "lv": "Tu vari atrast un izskaidrot atņemšanas kļūdas, ja šķiru apmaiņa ir izlaista vai veikta nepareizi.",
-      "et": "Sa oskad märgata ja selgitada lahutamisvigu, kui järkude vaheline vahetus jääb tegemata või tehakse valesti.",
-      "be": "Ты можаш знаходзіць і тлумачыць памылкі адніманьня, калі разрадны абмен прапусьцілі або выканалі няправільна.",
-      "ka": "შეგიძლია გამოკლებაში აღმოაჩინო და ახსნა შეცდომები, როცა თანრიგებს შორის გაცვლა გამოტოვებულია ან არასწორად შესრულებული.",
-      "kk": "Азайтуда разрядтық ауыстыру ұмытылғанда немесе қате жасалғанда туатын қатені тауып, түсіндіре аласың."
+      lt: "Gali pastebėti ir paaiškinti atimties klaidas, kai pamirštama ar neteisingai atliekama skyrių vertės keitimo operacija.",
+      lv: "Tu vari atrast un izskaidrot atņemšanas kļūdas, ja šķiru apmaiņa ir izlaista vai veikta nepareizi.",
+      et: "Sa oskad märgata ja selgitada lahutamisvigu, kui järkude vaheline vahetus jääb tegemata või tehakse valesti.",
+      be: "Ты можаш знаходзіць і тлумачыць памылкі адніманьня, калі разрадны абмен прапусьцілі або выканалі няправільна.",
+      ka: "შეგიძლია გამოკლებაში აღმოაჩინო და ახსნა შეცდომები, როცა თანრიგებს შორის გაცვლა გამოტოვებულია ან არასწორად შესრულებული.",
+      kk: "Азайтуда разрядтық ауыстыру ұмытылғанда немесе қате жасалғанда туатын қатені тауып, түсіндіре аласың."
     },
   },
 });

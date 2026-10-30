@@ -4,12 +4,12 @@ import { placeValue_Skills_Ids } from './index.ids';
 export const hundredsTensOnes_Skill_Data = buildSkillConfig({
   id: placeValue_Skills_Ids.hundredsTensOnes,
   name: {
-    "lt": "Šimtai, dešimtys ir vienetai triženkliuose skaičiuose",
-    "lv": "Simti, desmiti un vieni trīsciparu skaitļos",
-    "et": "Sajalised, kümnelised ja ühelised kolmekohalistes arvudes",
-    "be": "Сотні, дзясяткі й адзінкі ў трохзначных ліках",
-    "ka": "ასეულები, ათეულები და ერთეულები სამნიშნა რიცხვებში",
-    "kk": "Үш таңбалы сандардағы жүздіктер, ондықтар және бірліктер",
+    lt: "Šimtai, dešimtys ir vienetai triženkliuose skaičiuose",
+    lv: "Simti, desmiti un vieni trīsciparu skaitļos",
+    et: "Sajalised, kümnelised ja ühelised kolmekohalistes arvudes",
+    be: "Сотні, дзясяткі й адзінкі ў трохзначных ліках",
+    ka: "ასეულები, ათეულები და ერთეულები სამნიშნა რიცხვებში",
+    kk: "Үш таңбалы сандардағы жүздіктер, ондықтар және бірліктер",
     en: "Hundreds, tens and ones in three-digit numbers",
     zh: "三位数的百位、十位和个位",
     hi: "तीन अंकों में सैकड़े, दहाई और इकाई",

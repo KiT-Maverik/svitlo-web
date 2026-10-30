@@ -4,12 +4,12 @@ import { subtraction_Skills_Ids } from './index.ids';
 export const columnSubtraction_Skill_Data = buildSkillConfig({
   id: subtraction_Skills_Ids.columnSubtraction,
   name: {
-    "lt": "Atimtis — stulpeliu",
-    "lv": "Atņemšana — stabiņā",
-    "et": "Lahutamine — kirjalik lahutamine",
-    "be": "Адніманьне — слупком",
-    "ka": "გამოკლება — სვეტურად",
-    "kk": "Азайту — баған түрінде",
+    lt: "Atimtis — stulpeliu",
+    lv: "Atņemšana — stabiņā",
+    et: "Lahutamine — kirjalik lahutamine",
+    be: "Адніманьне — слупком",
+    ka: "გამოკლება — სვეტურად",
+    kk: "Азайту — баған түрінде",
     en: "Subtraction — Column method",
     zh: "减法 — 竖式计算",
     hi: "घटाव — स्तंभ विधि",
@@ -58,12 +58,12 @@ export const columnSubtraction_Skill_Data = buildSkillConfig({
       "he": "אפשר לחסר מספרים בטורים על ידי יישור ערכי המקום והמרה כשאין מספיק יחידות באחד הטורים.",
       "pl": "Potrafisz odejmować liczby pisemnie, wyrównując wartości pozycyjne i dokonując zamiany, gdy w danej kolumnie jest za mało.",
       "uk": "Ти можеш віднімати числа стовпчиком, вирівнюючи розряди й розгруповуючи число, якщо в певному розряді бракує одиниць.",
-      "lt": "Gali atimti skaičius stulpeliu, sulygindamas skaitmenų skyrius ir prireikus pergrupuodamas.",
-      "lv": "Tu vari atņemt skaitļus stabiņā, izlīdzinot šķiras un vajadzības gadījumā pārgrupējot.",
-      "et": "Sa oskad arve kirjalikult lahutada, joondades kohaväärtused ja vajaduse korral ümber rühmitades.",
-      "be": "Ты можаш адымаць лікі слупком, выраўноўваючы разрады і перагрупоўваючы, калі ў нейкім разрадзе не хапае адзінак.",
-      "ka": "შეგიძლია რიცხვები სვეტურად გამოაკლო, თანრიგები გაასწორო და საჭიროებისას გადააჯგუფო.",
-      "kk": "Сандарды разрядтарына қарай туралап, баған түрінде азайта аласың және бір разрядта жеткіліксіз болса, қайта топтастырасың."
+      lt: "Gali atimti skaičius stulpeliu, sulygindamas skaitmenų skyrius ir prireikus pergrupuodamas.",
+      lv: "Tu vari atņemt skaitļus stabiņā, izlīdzinot šķiras un vajadzības gadījumā pārgrupējot.",
+      et: "Sa oskad arve kirjalikult lahutada, joondades kohaväärtused ja vajaduse korral ümber rühmitades.",
+      be: "Ты можаш адымаць лікі слупком, выраўноўваючы разрады і перагрупоўваючы, калі ў нейкім разрадзе не хапае адзінак.",
+      ka: "შეგიძლია რიცხვები სვეტურად გამოაკლო, თანრიგები გაასწორო და საჭიროებისას გადააჯგუფო.",
+      kk: "Сандарды разрядтарына қарай туралап, баған түрінде азайта аласың және бір разрядта жеткіліксіз болса, қайта топтастырасың."
     },
   },
 });
