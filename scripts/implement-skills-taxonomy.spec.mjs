@@ -174,7 +174,7 @@ test('duplicate child slug and conflicting create target are rejected without pa
   f.updateText(s => s + section(4,'Another Rhythm','hearRhythm'));
   const duplicate = f.run('--apply');
   assert.notEqual(duplicate.status,0);
-  assert.match(duplicate.stderr,/Duplicate slug in sibling scope/);
+  assert.match(duplicate.stderr,/Duplicate taxonomy slug/);
   assert.ok(fs.existsSync(path.join(f.pkg,'Data/skills/drawing/perspective/skills/drawPerspective.data.ts')));
   assert.equal(fs.existsSync(path.join(f.pkg,'Data/skills/music')),false);
   f.updateText(s => s.slice(0,s.lastIndexOf('#### Another Rhythm')));
@@ -287,4 +287,118 @@ test('skip does not backfill a missing slug on an implemented entity', () => wit
     'Action: skip\nStatus: implemented\n\n[hearRhythm.data.ts]'));
   assert.equal(f.run('--apply').status, 0);
   assert.equal(fs.readFileSync(file, 'utf8'), legacy);
+}));
+
+function addIndependentDomain(f) {
+  f.updateText(s => s + section(3, 'Science', 'science', 'create', 'pending', 'direct') +
+    section(4, 'Observe Nature', 'observeNature'));
+  const translations = JSON.parse(fs.readFileSync(f.json, 'utf8'));
+  for (const [key,title] of [['science','Science'], ['science/observeNature','Observe Nature']])
+    translations[key] = { name: strings(title,'Reviewed name '+title),
+      fe: strings('Discover meaningful knowledge.','Reviewed friendly '+title) };
+  fs.writeFileSync(f.json, JSON.stringify(translations));
+}
+function runWithUuidPreload(f, repeated, count) {
+  const preload = path.join(f.pkg, 'uuid-preload.mjs');
+  fs.writeFileSync(preload,
+    `import crypto from 'node:crypto'; const real = crypto.randomUUID.bind(crypto);
+let calls = 0; crypto.randomUUID = () => calls++ < ${count} ? '${repeated}' : real();`);
+  return spawnSync(process.execPath,
+    ['--import',preload,script,'--package',path.relative(root,f.pkg),
+      '--translations',path.relative(root,f.json),'--apply'],
+    {cwd:root,encoding:'utf8'});
+}
+
+test('global slugs: duplicate Skills in different parents block both Domains, including skip', () => withFixture(f => {
+  addIndependentDomain(f);
+  f.updateText(s=>s.replace('Slug: hearRhythm\\nAction: create',
+    'Slug: drawPerspective\\nAction: skip'));
+  const r=f.run('--apply');
+  assert.notEqual(r.status,0);
+  assert.match(r.stderr,/Duplicate taxonomy slug/);
+  assert.match(r.stderr,/drawing\\/perspective\\/drawPerspective/);
+  assert.match(r.stderr,/music\\/drawPerspective/);
+  assert.equal(fs.existsSync(path.join(f.pkg,'Data/skills/drawing')),false);
+  assert.equal(fs.existsSync(path.join(f.pkg,'Data/skills/music')),false);
+  assert.ok(fs.existsSync(path.join(f.pkg,'Data/skills/science/science.data.ts')));
+}));
+
+test('global slugs: Group and Domain cannot share a slug', () => withFixture(f => {
+  addIndependentDomain(f);
+  f.updateText(s=>s.replace('Slug: perspective\\nAction: create',
+    'Slug: music\\nAction: create'));
+  const r=f.run('--apply');
+  assert.notEqual(r.status,0);
+  assert.match(r.stderr,/Duplicate taxonomy slug/);
+  assert.ok(fs.existsSync(path.join(f.pkg,'Data/skills/science/science.data.ts')));
+  assert.equal(fs.existsSync(path.join(f.pkg,'Data/skills/music')),false);
+}));
+
+test('global slugs: case-only collisions are rejected', () => withFixture(f => {
+  addIndependentDomain(f);
+  f.updateText(s=>s.replace('Slug: hearRhythm\\nAction: create',
+    'Slug: drawperspective\\nAction: create'));
+  const r=f.run('--apply');
+  assert.notEqual(r.status,0);
+  assert.match(r.stderr,/Duplicate taxonomy slug/);
+  assert.ok(fs.existsSync(path.join(f.pkg,'Data/skills/science/science.data.ts')));
+  assert.equal(fs.existsSync(path.join(f.pkg,'Data/skills/music')),false);
+}));
+
+test('UUID registry: duplicate existing canonical IDs fail both Domains, not an independent Domain', () => withFixture(f => {
+  assert.equal(f.run('--apply').status,0);
+  const group=path.join(f.pkg,'Data/skills/drawing/perspective/perspective.ids.ts');
+  const id=fs.readFileSync(group,'utf8').match(/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/)[0];
+  const direct=path.join(f.pkg,'Data/skills/music/skills/index.ids.ts');
+  fs.writeFileSync(direct,fs.readFileSync(direct,'utf8').replace(
+    /[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/,id));
+  addIndependentDomain(f);
+  const r=f.run('--apply');
+  assert.notEqual(r.status,0);
+  assert.match(r.stderr,/Duplicate taxonomy UUID/);
+  assert.match(r.stderr,/perspective.ids.ts#perspective/);
+  assert.match(r.stderr,/index.ids.ts#hearRhythm/);
+  assert.ok(fs.existsSync(path.join(f.pkg,'Data/skills/science/science.data.ts')));
+}));
+
+test('UUID registry: compares existing IDs case-insensitively', () => withFixture(f => {
+  assert.equal(f.run('--apply').status,0);
+  const id=fs.readFileSync(path.join(f.pkg,'Data/skills/drawing/perspective/perspective.ids.ts'),'utf8')
+    .match(/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/)[0];
+  const direct=path.join(f.pkg,'Data/skills/music/skills/index.ids.ts');
+  fs.writeFileSync(direct,fs.readFileSync(direct,'utf8').replace(
+    /[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/,id.toUpperCase()));
+  const r=f.run('--apply');
+  assert.notEqual(r.status,0);
+  assert.match(r.stderr,/Duplicate taxonomy UUID/);
+}));
+
+test('UUID registry: retries collisions against a preexisting canonical definition', () => withFixture(f => {
+  const collision='11111111-1111-4111-8111-111111111111';
+  const registry=path.join(f.pkg,'Data/skills/other/skills/index.ids.ts');
+  fs.mkdirSync(path.dirname(registry),{recursive:true});
+  fs.writeFileSync(registry,`export const other_Skills_Ids = { legacy: '${collision}' } as const;\\n`);
+  const r=runWithUuidPreload(f,collision,2);
+  assert.equal(r.status,0,r.stderr);
+  assert.match(fs.readFileSync(registry,'utf8'),new RegExp(collision));
+  const ids=['drawing/drawing.ids.ts','drawing/perspective/perspective.ids.ts',
+    'drawing/perspective/skills/index.ids.ts','music/music.ids.ts','music/skills/index.ids.ts']
+    .flatMap(file=>[...fs.readFileSync(path.join(f.pkg,'Data/skills',file),'utf8')
+      .matchAll(/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/g)].map(m=>m[0]));
+  assert.equal(new Set(ids).size,5);
+  assert.ok(ids.every(x=>x!==collision));
+  assert.equal(f.run('--apply').status,0);
+}));
+
+test('UUID registry: retries a repeated generated identity in the same process', () => withFixture(f => {
+  const repeated='22222222-2222-4222-8222-222222222222';
+  const r=runWithUuidPreload(f,repeated,2);
+  assert.equal(r.status,0,r.stderr);
+  const ids=['drawing/drawing.ids.ts','drawing/perspective/perspective.ids.ts',
+    'drawing/perspective/skills/index.ids.ts','music/music.ids.ts','music/skills/index.ids.ts']
+    .flatMap(file=>[...fs.readFileSync(path.join(f.pkg,'Data/skills',file),'utf8')
+      .matchAll(/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/g)].map(m=>m[0]));
+  assert.equal(ids.length,5);
+  assert.equal(new Set(ids).size,5);
+  assert.equal(ids.filter(x=>x===repeated).length,1);
 }));
