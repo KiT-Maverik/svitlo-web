@@ -33,4 +33,5 @@ export const unknownDivisor_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie nieznanego dzielnika",
     uk: "Знаходження невідомого дільника",
   },
+  description: { methodological: "Given a nonzero dividend and nonzero quotient, determine the divisor by dividing the dividend by the quotient in the relevant number domain. Check that the divisor is nonzero and the original division holds." },
 });

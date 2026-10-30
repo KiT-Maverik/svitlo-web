@@ -33,4 +33,5 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie nieznanego składnika sumy",
     uk: "Знаходження невідомого доданка",
   },
+  description: { methodological: "Find an unknown addend by subtracting the known addend from the sum in the relevant number domain. Substitution into the original equation verifies the part-whole relationship." },
 });

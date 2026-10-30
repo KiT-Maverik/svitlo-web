@@ -33,4 +33,5 @@ export const unknownFactor_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie nieznanego czynnika",
     uk: "Знаходження невідомого множника",
   },
+  description: { methodological: "Given a product and a known nonzero factor, determine the missing factor by division within the permitted number domain. Verify by reconstructing the original product." },
 });
