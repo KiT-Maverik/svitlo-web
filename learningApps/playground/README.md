@@ -10,8 +10,14 @@
 - `/topics/demo`: subject-neutral lesson demonstration with navigation, quiz,
   localization and persisted progress, defined in `src/data/demoLesson/demoLesson.ts`
 
-Authored subject content, static skill taxonomies and learning-method documentation
-belong to the corresponding textbook (currently `learningApps/math`).
+The synthetic `data/skills/` fixture mirrors the Mathematics direct-entity
+composition layout. It contains exactly 2 domains, 4 groups and 8 atomic skills
+with stable UUIDs, full supported-language names/descriptions and direct child
+ID references. It is for tooling and structural tests only, not a curriculum.
+Its integrity tests live in `src/data/skillsFixture.unit.spec.ts`.
+
+Production authored subject content, skill taxonomies and learning-method
+documentation belong to the corresponding textbook (currently `learningApps/math`).
 
 Development and checks from repository root:
 
