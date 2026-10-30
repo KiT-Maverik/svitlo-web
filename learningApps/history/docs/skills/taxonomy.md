@@ -2644,308 +2644,548 @@ User-friendly description: Explore how people reached and settled the Caribbean 
 
 ### Океанія
 
+Slug: ancientOceania
+Action: create
+Status: pending
+
 Groups: 2 · Skills: 8
 
 [Not implemented](#)
 
-Заселення Австралії та островів Тихого океану відбувалося різними хвилями протягом дуже тривалого часу та вимагало спеціалізованих знань середовища і навігації.
+Methodological description: The settlement of Australia and Pacific islands occurred through successive waves over a long period and required extensive environmental and navigation knowledge.
+User-friendly description: Explore how ancient people reached and lived across Oceania.
 
 #### Австралія та Нова Гвінея
 
+Slug: australiaAndNewGuinea
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Давня присутність людей на територіях колишнього Сахулу засвідчена археологією та багатими місцевими культурними традиціями.
+Methodological description: Archaeology and living cultural traditions attest to long human presence in the former Sahul landmass.
+User-friendly description: Discover the ancient communities of Australia and New Guinea.
 
 ##### Заселення Сахулу
 
+Slug: peoplingOfSahul
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Морські переходи та рання поява людей на масиві суші, що об'єднував Австралію і Нову Гвінею під час низького рівня моря.
+Methodological description: Trace early sea crossings and settlement of the landmass uniting Australia and New Guinea when sea levels were lower.
+User-friendly description: Understand how early seafarers reached the continent of Sahul.
 
 ##### Давні аборигенні суспільства Австралії
 
+Slug: ancientAboriginalAustralianSocieties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різноманітність способів життя, взаємодії з природним середовищем і тривалість місцевих культурних традицій.
+Methodological description: Examine diverse lifeways, environmental interactions, and the longevity of Aboriginal Australian traditions.
+User-friendly description: Explore the long and varied histories of Aboriginal Australian communities.
 
 ##### Наскельне мистецтво Австралії
 
+Slug: australianRockArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обмеження датування зображень і значення їх для розуміння культурних практик у довгій історичній перспективі.
+Methodological description: Interpret rock images and dating limitations as evidence of practices over long timescales.
+User-friendly description: Learn what ancient Australian rock art may reveal.
 
 ##### Ранні землеробські практики Нової Гвінеї
 
+Slug: earlyNewGuineaFarming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місцеві високогірні системи вирощування рослин та їхня незалежна історична траєкторія.
+Methodological description: Study indigenous highland cultivation and its independent historical trajectory.
+User-friendly description: Discover early farming systems in New Guinea's highlands.
 
 #### Острівний Тихий океан
+
+Slug: pacificIslands
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Мореплавні спільноти заселяли віддалені архіпелаги поетапно, переносячи мови, рослини, тварин і навігаційні знання.
+Methodological description: Seafaring societies progressively settled distant archipelagos, transporting languages, crops, animals, and navigation knowledge.
+User-friendly description: Explore how people traveled among distant Pacific islands.
 
 ##### Австронезійське розселення
 
+Slug: austronesianExpansion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поширення австронезійських мов і морських культур через острови Південно-Східної Азії та Тихого океану.
+Methodological description: Trace the dispersal of Austronesian languages and seafaring cultures across Island Southeast Asia and the Pacific.
+User-friendly description: Follow how Austronesian-speaking communities spread across islands.
 
 ##### Культура Лапіта
 
+Slug: lapitaCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Археологічні свідчення керамічних традицій, поселень і переміщень у західній Океанії.
+Methodological description: Interpret decorated pottery, settlements, and movements documented archaeologically in western Oceania.
+User-friendly description: Discover the pottery and voyaging traditions of Lapita communities.
 
 ##### Океанійська навігація
 
+Slug: oceanicNavigation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Використання вітрів, зірок, хвиль і знань про острови в давніх морських подорожах.
+Methodological description: Explain how knowledge of winds, stars, waves, and islands supported ancient sea voyages.
+User-friendly description: Explore how Pacific navigators crossed open water.
 
 ##### Раннє заселення Західної Полінезії
 
+Slug: earlyWesternPolynesianSettlement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Початкові поселення Тонга та Самоа й їхній зв'язок із культурою Лапіта наприкінці II — на початку I тис. до н. е.; значно пізніше заселення віддалених островів Східної Полінезії не входить до поточного обсягу.
+Methodological description: Trace the initial settlement of Tonga and Samoa with Lapita connections around the late second and early first millennia BCE; later East Polynesian settlement falls outside scope.
+User-friendly description: Learn about the first communities in Tonga and Samoa.
 
 ### Спільні процеси
+
+Slug: crossRegionalHistoricalProcesses
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 30
 
 [Not implemented](#)
 
-Надрегіональні механізми дозволяють досліджувати взаємодію самостійних історичних траєкторій, не створюючи штучної «єдиної цивілізації» давнини.
+Methodological description: Study shared patterns of interaction among independent regional histories without inventing a single unified ancient civilization.
+User-friendly description: Explore historical processes that connected different societies.
 
 #### Торгівля та контакти
+
+Slug: ancientTradeAndContact
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Переміщення матеріалів і практик відбувалося через мережі посередників; поширення речей не завжди означає міграцію їхніх виробників.
+Methodological description: Exchange networks involved intermediaries; the spread of objects does not necessarily mean the migration of their makers.
+User-friendly description: Discover how goods and ideas moved between distant communities.
 
 ##### Шовкові шляхи давньої доби
 
+Slug: ancientSilkRoads
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Раннє формування кількох сухопутних маршрутів Євразії та роль оазових посередників.
+Methodological description: Trace early multiple overland Eurasian routes and the roles of oasis intermediaries.
+User-friendly description: Explore ancient overland routes later known as the Silk Roads.
 
 ##### Торгівля Індійського океану
 
+Slug: ancientIndianOceanTrade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Мусонні маршрути між Південною Азією, Аравією, Африкою та сусідніми узбережжями.
+Methodological description: Examine monsoon-linked routes among South Asia, Arabia, Africa, and neighboring coasts.
+User-friendly description: Follow ships and goods across the ancient Indian Ocean.
 
 ##### Технологічне запозичення
 
+Slug: technologyTransfer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поширення технік і знань між суспільствами з можливими змінами призначення та способів використання.
+Methodological description: Explain how techniques spread between societies and were adapted to new functions or practices.
+User-friendly description: Recognize how communities learned and changed technologies from others.
 
 ##### Культурні взаємовпливи
 
+Slug: culturalExchange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлення контактів, наслідування і свідомого локального переосмислення релігійних, художніх і політичних практик.
+Methodological description: Distinguish contact, imitation, and deliberate local reinterpretation of religious, artistic, and political practices.
+User-friendly description: Discover how people adapted cultural ideas through exchange.
 
 ##### Давні річкові та морські обміни Америк
 
+Slug: ancientAmericanRiverAndSeaExchange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Регіональні мережі переміщення матеріалів і традицій між річковими басейнами, узбережжями та островами.
+Methodological description: Study regional circulation of materials and traditions among river basins, coasts, and islands in the Americas.
+User-friendly description: Trace early trade connections by river and sea in the Americas.
 
 #### Влада і суспільні відносини
+
+Slug: powerAndSocialRelations
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Порівняння інституцій різних регіонів вимагає визначення конкретних функцій, а не автоматичного прирівнювання незнайомих давніх термінів.
+Methodological description: Comparing institutions requires identifying their functions rather than equating unfamiliar ancient names with familiar ones.
+User-friendly description: Explore how ancient people organized power and social relationships.
 
 ##### Формування ранніх держав
 
+Slug: earlyStateFormation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Умови виникнення сталої політичної влади, управління ресурсами та примусу, без припущення єдиного шляху державотворення.
+Methodological description: Examine durable political authority, resource management, and coercion without presuming one universal route to statehood.
+User-friendly description: Discover different ways early states and governments emerged.
 
 ##### Соціальні ієрархії
 
+Slug: socialHierarchies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Форми спадкового статусу, багатства, залежності й престижу, що суттєво різнилися між суспільствами.
+Methodological description: Compare hereditary standing, wealth, dependency, and prestige across societies with differing arrangements.
+User-friendly description: Explore how status and social divisions varied across ancient societies.
 
 ##### Рабство та інші форми залежності
 
+Slug: slaveryAndOtherDependencies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відмінність поневолення від інших правових і економічних форм несвободи в давніх суспільствах.
+Methodological description: Distinguish enslavement from other legal and economic conditions of restricted freedom.
+User-friendly description: Recognize different kinds of unfreedom in ancient societies.
 
 ##### Становище жінок у давньому світі
 
+Slug: womenInAncientSocieties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичні відмінності правового статусу, господарської праці й суспільного впливу жінок та обмеженість джерел, часто створених представниками еліт.
+Methodological description: Examine differences in women's legal status, work, and influence while recognizing that many sources represent elites.
+User-friendly description: Explore women's varied experiences and roles in ancient societies.
 
 #### Повсякденне життя
+
+Slug: everydayLifeInAntiquity
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Матеріальні умови, родинні взаємини й соціальні практики мешканців різних давніх суспільств досліджують за речами, житлами, письмовими та візуальними джерелами; це порівняльний, а не регіональний зріз.
+Methodological description: Compare dwellings, objects, texts, and images to reconstruct family relations and daily practices across regions.
+User-friendly description: Discover what ordinary people did in ancient daily life.
 
 ##### Житло і домашній простір
 
+Slug: housingAndDomesticSpace
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Залежність форми житла, організації домогосподарства та побутових приміщень від ресурсів, клімату й соціальних відмінностей.
+Methodological description: Relate house forms, household organization, and rooms to resources, climates, and social distinctions.
+User-friendly description: Explore how people arranged and used their homes.
 
 ##### Харчування давніх суспільств
 
+Slug: ancientDiets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Раціони, приготування і зберігання їжі, зв'язок місцевих продуктів із господарством та соціально нерівний доступ до харчових ресурсів.
+Methodological description: Study ingredients, cooking, storage, livelihoods, and unequal access to food resources.
+User-friendly description: Compare what different ancient communities ate.
 
 ##### Праця і заняття у давнину
 
+Slug: ancientWorkAndOccupations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поділ занять між землеробством, ремеслами, обміном та домашнім господарством, зокрема соціальні форми залежної праці.
+Methodological description: Examine agriculture, crafts, exchange, household work, and forms of dependent labor.
+User-friendly description: Explore the many kinds of work done in the ancient world.
 
 ##### Сім'я та спорідненість
 
+Slug: familyAndKinship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Форми домогосподарства, шлюбу, спорідненості й спадкування в різних давніх культурах без перенесення на них єдиної сучасної сімейної моделі.
+Methodological description: Compare household, marriage, kinship, and inheritance systems without imposing one modern family model.
+User-friendly description: Discover how families and kinship worked in different ancient cultures.
 
 ##### Дитинство і виховання в давнину
 
+Slug: childhoodAndEducationInAntiquity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історично різні форми дитячого життя, соціалізації, передачі ремісничих знань та доступу до формальної освіти.
+Methodological description: Study varied childhood experiences, socialization, craft learning, and access to formal instruction.
+User-friendly description: Explore how children learned and grew in ancient societies.
 
 ##### Дозвілля та громадський побут
 
+Slug: leisureAndPublicLife
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Свята, ігри, зібрання й інші практики вільного часу та їхні відмінності між соціальними групами, містами й сільськими громадами.
+Methodological description: Compare festivals, games, assemblies, and leisure across social groups and settlements.
+User-friendly description: Discover how ancient communities celebrated and spent free time.
 
 #### Виробництво та знання
+
+Slug: productionAndKnowledge
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Матеріальні винаходи й системи передавання інформації оцінюють через їхні функції, поширення та історичний контекст, а не через списки «першості».
+Methodological description: Evaluate material inventions and systems of information transmission by function, spread, and historical context rather than claims of being first.
+User-friendly description: Explore how ancient societies made things and shared knowledge.
 
 ##### Походження писемності
 
+Slug: originsOfWriting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різні осередки виникнення письма та відмінність повноцінних систем запису мови від знаків обліку або зображень.
+Methodological description: Distinguish independent emergence of writing systems recording language from counting marks or pictures.
+User-friendly description: Discover how different societies began recording language.
 
 ##### Ранні міські інфраструктури
 
+Slug: earlyUrbanInfrastructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Водопостачання, каналізація, шляхи й громадські споруди як результат різних технічних та управлінських рішень.
+Methodological description: Study water supply, drainage, roads, and public buildings as results of technical and administrative choices.
+User-friendly description: Explore how early cities built shared infrastructure.
 
 ##### Металургія та її наслідки
 
+Slug: metallurgyAndHistoricalEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Взаємозв'язок добування руд, паливних ресурсів, ремесел, озброєння й торгівлі в неоднакових регіональних умовах.
+Methodological description: Connect ores, fuel, crafts, weapons, and trade under varying regional conditions.
+User-friendly description: Understand how metalworking affected work and warfare.
 
 ##### Давні календарні системи
 
+Slug: ancientCalendarSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різні способи обліку місяців, сезонів і років та їх застосування у господарстві, державному управлінні й ритуалах давніх суспільств.
+Methodological description: Compare month, season, and year reckoning used in farming, governance, and rituals.
+User-friendly description: Learn how ancient calendars organized time.
 
 ##### Давні системи вимірювання
 
+Slug: ancientMeasurementSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історія локальних мір маси, довжини, об'єму й часу, пов'язаних із торгівлею, ремеслами, податками та будівництвом.
+Methodological description: Trace local measures of mass, length, volume, and time used for trade, taxes, construction, and crafts.
+User-friendly description: Explore how ancient people measured goods and time.
 
 ##### Історія давньої медицини
 
+Slug: historyOfAncientMedicine
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знання про тіло, лікувальні практики та медичні тексти різних культур з розрізненням історичних вірувань і сучасних оцінок дієвості.
+Methodological description: Study medical beliefs, practices, and texts across cultures without confusing historical ideas with modern proof of effectiveness.
+User-friendly description: Discover what ancient societies believed about healing.
 
 ##### Давні астрономічні знання
 
+Slug: ancientAstronomicalKnowledge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Спостереження за небесними явищами, календарні та навігаційні застосування й історичні моделі руху небесних тіл у різних цивілізаціях.
+Methodological description: Examine observations, calendars, navigation, and historical celestial models across civilizations.
+User-friendly description: Explore how ancient people studied the sky.
 
 #### Винаходи та інженерія
 
+Slug: inventionsAndEngineeringHistory
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Історія виникнення, вдосконалення та поширення технічних рішень в різних цивілізаціях, з увагою до матеріалів, потреб і наслідків; не йдеться про сучасне інженерне проєктування.
+Methodological description: Investigate the origins, changes, and transmission of technical solutions in relation to materials, needs, and consequences, not modern design practice.
+User-friendly description: Discover how ancient inventions changed over time.
 
 ##### Колісний транспорт давнини
 
+Slug: ancientWheeledTransport
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поява колісних транспортних засобів і залежність їхнього поширення від розвитку доріг, тягової сили та економічних потреб.
+Methodological description: Relate the spread of wheeled vehicles to roads, draft animals, and economic needs.
+User-friendly description: Learn how wheeled vehicles spread in the ancient world.
 
 ##### Суднобудування давнього світу
 
+Slug: ancientShipbuilding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичні зміни матеріалів, форм корпусів, вітрил і засобів керування суднами у річкових та морських подорожах різних цивілізацій.
+Methodological description: Compare hull shapes, materials, sails, and steering methods across river and maritime societies.
+User-friendly description: Explore how ancient ships were built and guided.
 
 ##### Водогосподарська інженерія
 
+Slug: historicalWaterEngineering
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівняльна історія каналів, резервуарів і систем розподілу води в посушливих та заплавних середовищах поза одним регіональним прикладом.
+Methodological description: Compare canals, reservoirs, and distribution systems across arid and floodplain settings.
+User-friendly description: Discover how people engineered water systems in different regions.
 
 ##### Будівельні та підіймальні механізми давнини
 
+Slug: ancientConstructionAndLiftingMachines
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичне застосування важелів, блоків, похилих площин та інших пристроїв у спорудженні будівель і переміщенні великих вантажів.
+Methodological description: Examine historical use of levers, pulleys, ramps, and other devices to build and move heavy loads.
+User-friendly description: Understand the machines used for ancient building projects.
 
 #### Кризи й трансформації
+
+Slug: crisesAndHistoricalTransformations
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Зміни клімату, конфлікти, хвороби та перебудова господарства могли поєднуватися, не спричиняючи однакових наслідків у всіх регіонах.
+Methodological description: Climate shifts, wars, disease, and economic reorganization interacted but produced different outcomes across regions.
+User-friendly description: Explore why ancient societies experienced major changes and crises.
 
 ##### Екологічні виклики давнини
 
+Slug: ancientEnvironmentalChallenges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичні наслідки посух, повеней, виснаження земель та змін екосистем із врахуванням людської адаптації.
+Methodological description: Analyze historical effects of droughts, floods, land depletion, and ecological changes alongside human adaptation.
+User-friendly description: Discover how ancient communities responded to environmental challenges.
 
 ##### Епідемії та демографічні зрушення
 
+Slug: ancientEpidemicsAndDemography
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Можливий вплив хвороб, мобільності й чисельності населення та межі реконструкції за стародавніми свідченнями.
+Methodological description: Assess possible effects of disease, movement, and population change while recognizing limited evidence.
+User-friendly description: Explore what historians can learn about ancient epidemics.
 
 ##### Політичний занепад і спадкоємність
 
+Slug: politicalDeclineAndContinuity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізнення падіння конкретної державної структури та продовження життя, мов, практик і спільнот після її завершення.
+Methodological description: Distinguish the fall of a political institution from the persistence of communities, languages, and practices.
+User-friendly description: Understand why a state's collapse need not mean its people's disappearance.
 
 ##### Порівняльні історичні трансформації
 
+Slug: comparativeHistoricalTransformations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аргументоване зіставлення причин і наслідків великих змін у кількох регіонах без нав'язування моделі єдиного всесвітнього циклу.
+Methodological description: Compare the causes and consequences of major changes across regions without imposing one worldwide historical cycle.
+User-friendly description: Compare transformations in different societies using historical evidence.
