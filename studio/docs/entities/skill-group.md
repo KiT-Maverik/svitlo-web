@@ -14,17 +14,18 @@ A **SkillGroup** organizes one coherent family of related Skills inside a SkillD
 
 ## EDITORIAL SLUG
 
-Each new-format SkillGroup has one English `Slug: lowerCamelCase` immediately below its heading, unique among Groups of the same Domain. An approved slug remains stable across presentation changes; it is not the Group UUID or a new runtime `SkillGroup_Config` property. Preserve existing Code paths and UUIDs until an explicit migration is approved.
+Each new-format SkillGroup has one English `Slug: lowerCamelCase` immediately below its heading, unique among all Domain, Group and Skill slugs in this textbook. An approved slug remains stable across presentation changes; it is not the Group UUID or a new runtime `SkillGroup_Config` property. Preserve existing Code paths and UUIDs until an explicit migration is approved.
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
-The current `SkillGroup_Config` has `id`, fully localized `name` and a direct-child `skillIds` map. Its `description: { methodological: string; fe?: Readonly<Record<LanguageCode, string>> }` remains **optional** at runtime; reviewed English methodology is required for editorial promotion, and any supplied `fe` must cover every supported language with genuine copy. This differs from the runtime **Skill** contract, where both descriptions are required. There is no teaching order, evaluation evidence or student progress.
+The Group config lives in `<PackageRoot>/data/skills/<domain>/<group>/<group>.data.ts`, imports child Skills from `./skills/index.ts` and populates `skillIds` from their `.id` fields. A Group does not have its own directory-level `index.ts`; only its `skills/index.ts` barrel exports immediate Skill Data.
+
+
+The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It permits transitional optional `description: { methodological: string; fe?: Record<LanguageCode, string> }` (reviewed English methodological text required for promotion; fe absent or complete for all languages), but does not contain teaching order, evaluation evidence or student progress.
 
 - **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological meaning, any optional full fe translations and parent/child placement.
 - **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
-New-format records use separate single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone link. Older unlabeled prose requires migration; there is no generic `Description:` field or per-entity editorial approval file. The editorial `Action: create|update|delete|skip` requests new Code / modification / explicitly authorized and dependency-checked deletion / no Code change. `Status: pending` means not fully verified; `Status: implemented` means complete verified implementation. The planned Markdown → Code generator updates Status only after validation; failures stay pending and do not block unrelated dependency-safe operations. Neither field is a runtime `SkillGroup_Config` property.
-
-**Paths:** new Group Code belongs at `<PackageRoot>/Data/skills/<domainSlug>/<groupSlug>/`, where `<PackageRoot>` is the individual textbook root. Mathematics remains under legacy `learningApps/math/src/data/skillsTaxonomy/`; it has not been migrated. The one-language `User-friendly description:` is a draft, not a complete localized `description.fe` dictionary.
+New-format records use separate single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone link. Older unlabeled prose requires migration; there is no generic `Description:` field or per-entity editorial approval file. The current `Action: skip|create|update|delete` and `Status: pending|implemented` fields instead denote future generator intent and verified Code implementation.
 
 Related entities: [SkillDomain](./skill-domain.md), [Skill](./skill.md).
