@@ -8,10 +8,6 @@
 
 Read the [Learning Experience Philosophy](../docs/architecture/learning-experience-philosophy.md), [Internationalization & Inclusive Access](../docs/architecture/internationalization-and-accessibility.md) and [Offline/Device Compatibility](../docs/architecture/offline-first-and-device-compatibility.md) when selecting outcomes and learning progressions. The Curriculum is a pedagogical plan, **not a pledge that all these runtime capabilities are complete**; it should preserve accessible, internationally applicable and offline-capable learning intent. The [Lesson Notes mechanism](../docs/architecture/lesson-notes.md) is planned and belongs to detailed Lesson authoring, not as fabricated Curriculum runtime fields.
 
-### Deferred regional Lesson variants
-
-A future Program may offer locale-informed, **user-/teacher-selected regional alternatives** for locally relevant examples (such as biodiversity), while keeping universal Skills stable. **This is NOT a supported Program/Engine behavior or a mandatory new Curriculum field yet.** The design questions, internationalization boundaries, fallback and progress policies are tracked as a future task in [Regional Lesson Variants To Do](../To%20Do/curriculum/regional-lesson-variants.md). Do not fabricate Program fields or implement the selection flow during Curriculum authoring; surface context-specific needs as ordinary editorial notes.
-
 ## ENTITY DEFINITIONS — REQUIRED READING
 
 Before inspecting the taxonomy, read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md). These documents own the semantics and boundaries of the referenced entities; this Curriculum Skill owns their pedagogical sequencing and use.
@@ -33,12 +29,12 @@ If a required input is absent or taxonomy files cannot be inspected, **stop Curr
 - **Intent:** desired educational outcomes, depth, boundaries, mandatory source materials, and whether alignment with a specified local standard or accreditation is required.
 - **Taxonomy:** the approved canonical `<PackageRoot>/docs/skills/taxonomy.md` containing the definitions as in-place explanatory prose. Runtime Code is optional for editorial planning. If the taxonomy is inaccessible, stop rather than guessing its location.
 
-Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. If a target-language preference is supplied, write the generated educational material in that language even though this instruction and its template are in English.
+Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. Canonical editorial Curriculum prose and structural identifiers remain in English. Target learner-language requirements are fulfilled through separate localization artifacts, not by changing the canonical Curriculum document.
 
 ## SOURCE OF TRUTH: SKILLS TAXONOMY
 
 - **Canonical inventory:** `<PackageRoot>/docs/skills/taxonomy.md`, as defined by [Create Skills Taxonomy Skill](./create-skills-taxonomy.skill.md). Read the relevant Domain, Group and Skill headings and their explanatory paragraphs directly from this file; there are no separate Skill Definition files.
-- Every taxonomy entry contains the permanent editorial meaning and a single optional, unlabeled implementation link. Missing Code does not block Curriculum planning. Preserve traceability to the taxonomy without copying runtime identifiers or treating TypeScript Code as the semantic source.
+- Every taxonomy entry contains the permanent editorial meaning and a single optional implementation `Code` link. Missing Code does not block Curriculum planning. Preserve traceability to the taxonomy without copying runtime identifiers or treating TypeScript Code as the semantic source.
 - **Check every referenced file exists** and refers to the intended entity. Resolve Markdown links relative to the *generated Curriculum or brief file*, **never** relative to this instruction file.
 - Taxonomy **editorial approval** is distinct from runtime implementation and learner mastery. If approval or the meaning of an in-scope entity is unresolved, report a blocker; do not rely on a nonexistent per-entity Draft/Approved status.
 - Prefer a **specific Skill** as a learning target. Link to a SkillGroup or SkillDomain only for genuinely broad context or prerequisites, and make the intended breadth explicit.
@@ -62,13 +58,13 @@ Clarify optional constraints when they matter: language(s) of output, locale/cul
 
 ## CURRICULUM REVIEW — OPTIONAL DATED HISTORY, NOT A SECOND CURRICULUM
 
-Apply the **mandatory review-history policy** in [Methodologist Persona](../personas/methodist.persona.md), but **only to the Curriculum being authored/reviewed**. Use this **stable path per actual Curriculum**, deriving `<curriculumCamelCase>` from its canonical document's existing directory:
+Apply the **mandatory review-history policy** in [Methodologist Persona](../personas/methodist.persona.md), but **only to the Curriculum being authored/reviewed**. Use this **stable path per actual Curriculum**, deriving `<curriculumSlug>` from its canonical document's actual directory:
 
 ```text
-<PackageRoot>/docs/history/curriculums/<curriculumCamelCase>/curriculum-review.md
+<PackageRoot>/docs/history/curriculums/<curriculumSlug>/curriculum-review.md
 ```
 
-Title: **Curriculum Review**. The canonical Curriculum remains `<PackageRoot>/docs/curriculums/<curriculumCamelCase>/<curriculumCamelCase>.curriculum.md`. Its learning plan, metadata, links and educational decisions must not be replaced by a history file.
+Title: **Curriculum Review**. The canonical Curriculum remains `<PackageRoot>/docs/curriculum/<curriculumSlug>/<curriculumSlug>.curriculum.md`. Its learning plan, metadata, links and educational decisions must not be replaced by a history file.
 
 **Creation versus reuse (mandatory):**
 
@@ -87,7 +83,7 @@ A Curriculum is ready for editorial review only when:
 
 - The briefing and approved canonical `<PackageRoot>/docs/skills/taxonomy.md` (including relevant entity descriptions) are actually read.
 - The plan covers requested outcomes without invented or unverifiable competencies.
-- Every Skill reference points to the real canonical **Skills Taxonomy** and matches an existing named entry. The taxonomy's implementation link may remain `[Not implemented](#)`; a Curriculum need not duplicate it.
+- Every Skill reference points to the real canonical **Skills Taxonomy** and matches an existing named entry. The taxonomy's Code link may remain `[Not implemented](#)`; a Curriculum need not duplicate it.
 - The order is pedagogically defensible, and required prior learning is available or explicitly identified as a gap.
 - Outcomes are observable, specific, appropriate for the audience, and consistent across the Curriculum, modules, and lessons.
 - Subject claims, examples, and calculations are accurate; uncertain or contested material is identified for review.
@@ -96,7 +92,7 @@ A Curriculum is ready for editorial review only when:
 - Any dated Curriculum Review is in its **one stable, artifact-specific history location**, reflects decisions actually approved by the editor, preserves dates and supersession, and was created only after satisfying the explicit creation gate. No per-item or per-meeting Review files.
 - The Curriculum remains a pedagogical specification, not an implementation plan.
 
-Use compact, structured Markdown. English is the working language of this instruction and template; the generated curriculum's language follows the editorial brief. Keep file references clickable in final artifacts and preserve the embedded template's section structure.
+Use compact, structured Markdown. English is the mandatory language of the canonical Curriculum, independent of the learner-facing locale. Keep file references clickable in final artifacts and preserve the embedded template's section structure.
 
 ## CURRICULUM TEMPLATE
 
@@ -110,8 +106,6 @@ Allowed records:
 - SkillDomain: **%SKILL_DOMAIN_NAME%** — [Skills Taxonomy](../../skills/taxonomy.md)
 
 Choose only applicable types. All names must match the approved taxonomy exactly. Link to the existing taxonomy file relative to the actual Curriculum; an entry-specific verified Markdown anchor may be used if helpful. Do not invent per-entity Definition paths, UUIDs or redundant Code links. A Group/Domain prerequisite indicates general familiarity, not mastery of every child.
-
-**File-link formatting (authoring guidance):** The Module and Lesson runtime Code slots in the template are **standalone Markdown links with no `Code:` prefix**. If unimplemented, leave exactly `[Not implemented](#)`; if implemented, replace with a verified relative link whose visible text is the **entire real filename, including suffixes and extension** (for example, `[intro.data.ts](%VERIFIED_RELATIVE_PATH%)`). The same full-filename display convention applies to any implemented Definition link. Keep a Definition slot distinct from its Code slot; never fabricate either target.
 
 **Never include this authoring guidance or template notes in the produced Curriculum document.**
 
@@ -151,13 +145,13 @@ Dependencies: %UNRESOLVED_DEPENDENCIES_OR_GAPS%
 
 ### %MODULE_INDEX_NUMBER% - %MODULE_NAME%
 Definition: %Module Markdown document link. Default [Not implemented](#). Replace only with a verified file link.%
-[Not implemented](#)
+Code: %Module runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
 Goal: %MODULE_GOAL% 
 %Module description in a form of a detailed reasonably long text.%
 
 #### %LESSON_INDEX_NUMBER% - %LESSON_NAME%
 Definition: %Lesson Markdown document/learning brief link. Default [Not implemented](#). Replace only with a verified file link.%
-[Not implemented](#)
+Code: %Lesson runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
@@ -173,12 +167,21 @@ Create or update **one canonical Curriculum document** at (an optional historica
 ```text
 <PackageRoot>/
 └── docs/
-    └── curriculums/
-        └── %CURRICULUM_NAME in camelCase%/
-            └── %CURRICULUM_NAME in camelCase%.curriculum.md
+    └── curriculum/
+        └── %CURRICULUM_SLUG in English kebab-case%/
+            └── %CURRICULUM_SLUG in English kebab-case%.curriculum.md
 ```
 
-- Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Keep `docs/curriculums/` literal and derive the Curriculum name in **camelCase** once for both directory and filename.
+- Use `<PackageRoot>` from the briefing: the **target textbook/package root**, never the monorepo root. Keep `docs/curriculum/` literal and derive a semantic **English kebab-case** Curriculum slug once for both directory and filename (e.g. `grade-1/grade-1.curriculum.md`).
 - Fill the file using the embedded **CURRICULUM TEMPLATE**. Review existing content before updating it; do not create a substitute `README.md` or automatically generate module, lesson, or assessment files.
-- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculums/<name>/`, the canonical taxonomy is exactly `../../skills/taxonomy.md` (the template includes this direct link). For absent **module/lesson** Definitions or Code, use `[Not implemented](#)` independently; these artifacts have their own lifecycle. **Skills** do not have separate Definition files: verify the referenced names and substantive descriptions in the canonical taxonomy. Skill Code may be absent.
+- Verify the output path, replace all template placeholders, and resolve links relative to the **resulting Curriculum file**. From `<PackageRoot>/docs/curriculum/<name>/`, the canonical taxonomy is exactly `../../skills/taxonomy.md` (the template includes this direct link). For absent **module/lesson** Definitions or Code, use `[Not implemented](#)` independently; these artifacts have their own lifecycle. **Skills** do not have separate Definition files: verify the referenced names and substantive descriptions in the canonical taxonomy. Skill Code may be absent.
 - Unless the editor has requested a qualifying history, **do not create a second Curriculum artifact or a Review**. If a matching Review exists and a new editorial agreement was actually approved, append it with its actual date; preserve the original date and record if the same file was reused in the handoff.
+
+## CANONICAL LANGUAGE, FILE OWNERSHIP AND LINK LABELS — MANDATORY
+
+- All editorial Curriculum documents, metadata, headings, module and lesson titles, Markdown link labels, directory names, file names, and URL/path slugs **MUST be written in English**. Use semantic English kebab-case slugs, not Ukrainian or another language transliterated into Latin letters. A requested learner-facing localization belongs in separate localization content; it does not change canonical repository paths or editorial document language.
+- Keep each grade's canonical Curriculum document **inside that grade's own directory** (for example `docs/curriculum/grade-1/grade-1.curriculum.md`), not as a sibling of `grade-1/`. The grade directory's `README.md`, if retained, is a concise index to the canonical Curriculum, modules, and lessons, never a second Curriculum. Module and lesson `README.md` files must have explicitly differentiated index/brief responsibilities; never duplicate the grade-level Curriculum.
+- When referring to a target Skill in a Markdown link, the **visible label must be the exact canonical Skill heading in `docs/skills/taxonomy.md`**, not an invented lesson-specific description or a label inferred from the TypeScript filename. The Code filename is an implementation detail, not the Skill's pedagogical name. For example, a Skill named `Number Bonds to 10` must not be relabeled `Addition and Subtraction Bonds of Ten` merely because the lesson teaches addition.
+- Resolve Skill links against the canonical taxonomy's **actual heading and anchor**, not directly against `*.data.ts`, unless the link is explicitly labeled as implementation Code. Maintain the distinction between pedagogical reference and implementation location.
+- For any rename or relocation, update **all incoming and outgoing relative Markdown links**, references in templates, indexes, history documents, and code where relevant. Verify every local link resolves, and scan for Cyrillic characters in editorial content and transliterated Ukrainian names in canonical paths. Stop review approval on unresolved mismatches or broken links.
+- Apply the language and ownership rules when **reviewing existing documents**, not only when generating new ones. Do not accept a partially translated Curriculum as compliant.
