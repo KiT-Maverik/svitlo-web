@@ -7,7 +7,7 @@ Locale roster: **28** `LanguageCode` values from `shared/contracts/src/types/lan
 ## Domains (code + staging Markdown inventory)
 
 - [x] Counting — 15 Skills, 5 Groups (**completed**)
-- [ ] Natural Numbers — 27 Skills, 5 Groups
+- [x] Natural Numbers — 27 Skills, 5 Groups (**completed**)
 - [ ] Fractions — 19 Skills, 4 Groups
 - [ ] Arithmetic — 79 Skills, 5 Groups
 - [ ] Algebra — 17 Skills, 5 Groups
@@ -36,7 +36,7 @@ Each Domain has **exactly one owner**. Ownership is allocated to balance **Skill
 
 **Cross-branch rules:** Each agent edits only its owned Domain subtrees, keeps a dedicated branch and Draft PR with per-Domain commit checkpoints, and preserves source taxonomy, UUIDs, names and methodological descriptions. Avoid concurrent modifications to shared migration/checklist files across branches; use each agent's PR description for individual progress. Any required shared contracts/builders/workflow changes, especially making `description.fe` mandatory, are deferred to a **separate integration stage** after all affected Skills, Groups and Domains are filled and branches are reconciled. No agent merges without the editor's approval.
 
-## Current stage — Counting
+## Completed stage — Counting
 
 - [x] Verify each English frontend description against the existing English methodological description.
 - [x] Localize 15 Skill descriptions across all supported languages (420 values at 28 languages).
@@ -138,3 +138,14 @@ All 33 entity descriptions below are newly drafted learner-facing English copy. 
 | `estimation/skills/roundToHundred.data.ts` | Find the nearest multiple of one hundred and see how much the rounded value differs from the exact one. Halfway needs a rule. |
 
 **Scope:** 4 Notation, 11 Place Value, 5 Comparison, 4 Number Line, 3 Estimation Skills; plus five Groups and one Domain. Do not assume a rounding tie-breaking convention; preserve the methodological distinction between exact and approximate values.
+
+## Natural Numbers completion checkpoint (2026-10-30)
+
+- **Domain coverage:** 27/27 Skills across 5/5 Groups, plus 1 Domain = 33/33 entities.
+- **Language coverage:** every `description.fe` has all 28 `LanguageCode` keys and a nonempty localized string: 756 Skill + 140 Group + 28 Domain = **924 translations**.
+- **English-first:** reviewed baseline drafts for all 33 entities were committed before translation. All 33 final `fe.en` values match their recorded baseline exactly.
+- **Domain commits:** `1a0ef41` English baselines; `1833986` notation; `b4c245e` place values (part 1); `d7f96c7` place values (part 2); `6f9cdb1` comparison; `bc4d403` number line; `f69d1ed` estimation; `8f15c9b` Domain; followed by this documentation checkpoint.
+- **Static diff validation (GitHub PR patches):** 33/33 files passed registry-key and nonblank-string checks; no missing or duplicate keys. The only removed source line per entity is the old inline `description`, and its `methodological` value matches the new multiline field byte-for-byte. No IDs, names, group membership, exports, UUIDs, or staging taxonomy Markdown were changed.
+- **Mathematical boundaries preserved:** numeral vs numerical value; digits vs place values; flexible decomposition vs standard expanded form; total tens vs tens digit; zero as placeholder; ordering, coordinates and unit distance; approximation vs exact counting; rounding midpoint remains subject to an explicitly selected tie-breaking rule.
+- **Review limits:** translations were authored and checked for mathematical fidelity, terminology, RTL and Belarusian Taraškievica; no independent native-speaker certification was performed. Local TypeScript typechecks and focused npm tests **were not run** in the GitHub connector environment. Check CI runs separately; never claim that static patch checks are compiled or runtime tests.
+- **Next Agent 1 Domain:** Fractions — 19 Skills / 4 Groups. Agent 2 owns Arithmetic + Algebra; Agent 3 owns #7–#13; do not cross ownership.
