@@ -3553,89 +3553,154 @@ User-friendly description: Discover how real human decisions challenge simplifie
 
 ### Цифрова економіка
 
+Slug: digitalEconomy
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 9
 
 [Not implemented](#)
 
-Цифрові продукти й платформи змінюють вартість тиражування, доступ до ринку, конкуренцію та попит на працю. Предметом є економічний механізм, а не програмна реалізація.
+Methodological description: Digital products and platforms change reproduction costs, market access, competition, and demand for labor. The focus is their economic mechanisms, not software implementation.
+User-friendly description: Explore how digital products and platforms change business and markets.
 
 #### Цифрові продукти
+
+Slug: digitalProducts
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Інформаційні блага часто мають високі початкові витрати й низькі витрати відтворення, що змінює бізнес-моделі.
+Methodological description: Information goods often involve large initial costs and low costs of reproduction, enabling different business models.
+User-friendly description: Discover why digital products can be expensive to create but cheap to copy.
 
 ##### Граничні витрати цифрового копіювання
 
+Slug: marginalCostOfDigitalCopying
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати відмінність витрат першого створення продукту від витрат на його додаткове відтворення й доставку.
+Methodological description: Explain how the initial development cost of a digital product differs from the cost of reproducing and delivering an additional copy.
+User-friendly description: Understand why making one more digital copy can cost very little.
 
 ##### Підписка та разова покупка
 
+Slug: subscriptionsVersusOneTimePurchases
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати розподіл платежів і ризиків у різних моделях доступу до цифрового продукту.
+Methodological description: Compare how payment streams and risks are distributed under subscriptions and one-time access purchases.
+User-friendly description: Compare paying once with paying repeatedly for digital access.
 
 ##### Економіка персональних даних
 
+Slug: economicsOfPersonalData
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати обмін даних на послугу, інформаційну асиметрію та економічну цінність приватності.
+Methodological description: Evaluate exchanges of personal data for services, information asymmetry, and the economic value of privacy.
+User-friendly description: Explore the hidden economic trade-offs of services funded by personal data.
 
 #### Платформи та мережеві ефекти
+
+Slug: platformsAndNetworkEffects
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Цінність сервісу може залежати від кількості учасників на кожному боці ринку, правил доступу й ефекту масштабу.
+Methodological description: A service's value may depend on participant numbers on each side of the market, access rules, and economies of scale.
+User-friendly description: Discover how platforms become more useful as more people participate.
 
 ##### Прямі та непрямі мережеві ефекти
 
+Slug: directAndIndirectNetworkEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти вигоди від більшої кількості учасників своєї групи та іншої сторони платформи.
+Methodological description: Distinguish benefits from more members of the same user group from benefits created by users on another side of a platform.
+User-friendly description: Compare network effects within one group and across different groups.
 
 ##### Двосторонні ринки
 
+Slug: twoSidedMarkets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати взаємозалежні рішення двох груп клієнтів, зокрема щодо комісій та приєднання.
+Methodological description: Analyze interdependent participation and pricing decisions of two customer groups, including access fees and joining decisions.
+User-friendly description: Explore how a platform connects two groups such as buyers and sellers.
 
 ##### Конкуренція цифрових платформ
 
+Slug: digitalPlatformCompetition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вплив перемикання, сумісності, багатоплатформеності та накопичених даних на ринкову владу.
+Methodological description: Evaluate the effects of switching costs, compatibility, multihoming, and accumulated data on market power.
+User-friendly description: Understand why switching services or joining multiple platforms affects competition.
 
 ##### Економіка творців
 
+Slug: creatorEconomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати доходи й залежності авторів цифрового контенту від аудиторії, посередників, реклами та прав на продукт.
+Methodological description: Explain digital creators' revenue streams and dependence on audiences, intermediaries, advertising, and intellectual-property rights.
+User-friendly description: Explore how online creators earn money and rely on digital platforms.
 
 #### Фінансові технології
+
+Slug: financialTechnology
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Цифрові платіжні послуги та нові класи активів змінюють фінансове посередництво, швидкість обміну й ризики; їхній технологічний принцип не дорівнює економічному статусу.
+Methodological description: Digital payment services and new asset classes alter financial intermediation, transaction speed, and risks; technological design does not by itself determine economic status.
+User-friendly description: Discover how digital financial services change payments and risk.
 
 ##### Платіжні фінансові технології
 
+Slug: paymentFinancialTechnologies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зручність, комісії, посередників і ризики цифрових фінансових сервісів.
+Methodological description: Analyze convenience, fees, intermediaries, and risks in digital financial services.
+User-friendly description: Compare the costs and benefits of digital payment services.
 
 ##### Криптоактиви та цифрові валюти
 
+Slug: cryptoassetsAndDigitalCurrencies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти приватні криптоактиви, токенізовані вимоги та цифрові валюти центральних банків за природою і ризиками.
+Methodological description: Distinguish privately issued cryptoassets, tokenized claims, and central bank digital currencies by their nature and risks.
+User-friendly description: Recognize how cryptoassets differ from official digital currencies.
 
 ### Прикладна економіка
 
