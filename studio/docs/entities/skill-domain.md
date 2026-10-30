@@ -13,7 +13,7 @@ A **SkillDomain** denotes a recognizable field within a subject and contains coh
 
 ## EDITORIAL SLUG
 
-Each new-format SkillDomain has one English `Slug: lowerCamelCase` beneath its heading, unique among Domains in the textbook. Keep approved slugs stable independently of translated display names; they are not UUIDs or new runtime `SkillDomain_Config` properties. Reconcile existing Code paths without silent renames.
+Each new-format SkillDomain has one English `Slug: lowerCamelCase` beneath its heading, unique across **all Domain, Group and Skill entities in the same textbook taxonomy**, even across parent boundaries and kinds (case-insensitive comparison). Keep approved slugs stable independently of translated display names; the slug is not the UUID and is stored as `SkillDomain_Config.slug` in newly generated Code (optional only for legacy Code). Reconcile existing Code paths without silent renames.
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
