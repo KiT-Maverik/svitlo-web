@@ -233,7 +233,7 @@ function generateCode(e, id, localized) {
     refs = `  skillIds: ${e.slug}_Skills_Ids,\n`;
   }
   return imports.join('\n') + `\n\nexport const ${prefix}_Data = build${e.kind}Config({\n` +
-    `  id: ${own.var}.${key},\n` + nameAndDescription(e, localized) + refs + '});\n';
+    `  id: ${own.var}.${key},\n  slug: ${JSON.stringify(e.slug)},\n` + nameAndDescription(e, localized) + refs + '});\n';
 }
 function replaceLiteral(ast, node, value) {
   literal(node, 'updated field');
@@ -245,6 +245,15 @@ function patchCode(e, existing, localized, codes) {
   const own = entityFiles(e);
   if (idRef !== own.var + '.' + e.slug) throw Error('Existing ID reference conflicts with canonical identity map');
   const edits = [];
+  const slug = optionalProperty(config, 'slug');
+  if (slug) {
+    if (literal(slug.initializer, 'slug') !== e.slug)
+      throw Error('Existing slug conflicts with approved taxonomy Slug: ' + e.key);
+  } else {
+    // Legacy sources can gain the new field without changing their UUID or unrelated values.
+    const start = property(config, 'name').getStart(ast);
+    edits.push({ start, end: start, text: `slug: ${JSON.stringify(e.slug)},\n  ` });
+  }
   const nameObject = unwrap(property(config, 'name').initializer);
   checkLocales(dict(nameObject, 'name'), 'existing name', codes);
   if (localized.name) {
@@ -395,6 +404,16 @@ function run() {
             const current = readCode(f.file, e.kind);
             if (property(current.config, 'id').initializer.getText(current.ast) !== f.var + '.' + e.slug) throw Error('Conflicting create identity reference: ' + e.key);
             e.id = readId(f.ids, f.var, e.slug);
+            const existingSlug = optionalProperty(current.config, 'slug');
+            if (existingSlug) {
+              if (literal(existingSlug.initializer, 'slug') !== e.slug)
+                throw Error('Existing slug conflicts with approved taxonomy Slug: ' + e.key);
+            } else {
+              // A rerun against code generated before slug support safely backfills only slug.
+              const start = property(current.config, 'name').getStart(current.ast);
+              local.set(f.file, current.source.slice(0, start) +
+                `slug: ${JSON.stringify(e.slug)},\n  ` + current.source.slice(start));
+            }
             const n = dict(unwrap(property(current.config, 'name').initializer), 'name');
             const d = unwrap(property(current.config, 'description').initializer);
             if (n.en !== e.title || literal(property(d, 'methodological').initializer, 'methodological') !== e.methodological) throw Error('Conflicting create target: ' + e.key);
