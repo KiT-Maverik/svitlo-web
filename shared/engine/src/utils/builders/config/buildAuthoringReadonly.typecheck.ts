@@ -32,7 +32,10 @@ section.content.push({ id: 'other', blockType: 'text', allLocales: false, value:
 section.name.value.en = 'Changed';
 
 const names = {} as Skill_Config['name'];
-const skill = buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names });
+const skill = buildSkillConfig({
+  id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names,
+  description: { methodological: 'English conceptual boundaries.', fe: names },
+});
 // @ts-expect-error Skill names are readonly.
 skill.name.uk = 'Changed';
 
