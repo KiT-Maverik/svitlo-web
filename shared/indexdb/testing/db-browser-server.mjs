@@ -52,7 +52,7 @@ try {
   writeFileSync(join(appDir, 'layout.tsx'),
     'import type { ReactNode } from "react";\n' +
     'export default function RootLayout({ children }: { children: ReactNode }) {\n' +
-    '  return <html lang="en"><body>{children}</body></html>;\n' +
+    '  return <html lang=en><body>{children}</body></html>;\n' +
     '}\n');
   cpSync(join(packageRoot, 'testing', 'DbBrowserHarness.tsx'), join(routeDir, 'page.tsx'));
   cpSync(join(packageRoot, 'testing', 'db-browser-commands.ts'), join(routeDir, 'db-browser-commands.ts'));

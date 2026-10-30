@@ -93,7 +93,7 @@ test('includes fully localized fe descriptions when provided', () => {
 
 test('rejects partial fe dictionaries and preserves the previous document', () => {
   const before = fs.readFileSync(outputFile('uk'), 'utf8');
-  write(skillFile, code('Skill', 'Skill', true).replace(/"uk":"Frontend Skill uk",?/, ''));
+  write(skillFile, code('Skill', 'Skill', true).replace(/uk:"Frontend Skill uk",?/, ''));
   const result = run('uk');
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Missing required fe locale uk/);
