@@ -33,4 +33,5 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Tworzenie równych grup · Równe grupy",
     uk: "Ділення — Утворення рівних груп · Рівні групи",
   },
+  description: { methodological: "Quotitive division determines how many groups of a specified size can be formed from a total. When division is not exact, distinguish complete groups from the remainder." },
 });

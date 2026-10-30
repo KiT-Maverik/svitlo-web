@@ -33,4 +33,5 @@ export const by4_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 4",
     uk: "Ділення — ÷ 4",
   },
+  description: { methodological: "Division by four uses inverse multiplication-by-four facts and equal groups of four. Halving twice may yield a quotient but is a possible strategy rather than the definition of the competency." },
 });

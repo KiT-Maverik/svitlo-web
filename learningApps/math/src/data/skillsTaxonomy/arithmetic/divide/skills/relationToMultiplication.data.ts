@@ -33,4 +33,5 @@ export const relationToMultiplication_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Działania odwrotne",
     uk: "Ділення — Обернені дії",
   },
+  description: { methodological: "Division is inverse to multiplication: knowing a product and a nonzero factor makes it possible to determine the other factor. This relationship supports checking a quotient by multiplication." },
 });
