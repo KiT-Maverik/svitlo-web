@@ -59,7 +59,7 @@ export const by9_Skill_Data = buildSkillConfig({
       "pl": "Możesz dzielić przez dziewięć, korzystając z wielokrotności dziewięciu i związku mnożenia z dzieleniem.",
       "uk": "Ти можеш ділити на дев’ять за допомогою кратних дев’яти та зв’язку множення з діленням.",
       "lt": "Gali dalyti iš devynių naudodamas devyneto kartotinius ir daugybos bei dalybos ryšį.",
-      "lv": "Tu vari dalīt ar deviņi, izmantojot deviņi daudzkārtņus un saikni starp reizināšanu un dalīšanu.",
+      "lv": "Tu vari dalīt ar 9, izmantojot deviņu daudzkārtņus un saikni starp reizināšanu un dalīšanu.",
       "et": "Sa saad üheksaga jagada üheksa kordsete ja korrutamise-jagamise seoste abil.",
       "be": "Ты можаш дзяліць на дзевяць, выкарыстоўваючы кратныя дзевяці й сувязь множаньня зь дзяленьнем.",
       "ka": "შეგიძლია ცხრაზე გაყო ცხრას ჯერადებისა და გამრავლება-გაყოფის კავშირის გამოყენებით.",

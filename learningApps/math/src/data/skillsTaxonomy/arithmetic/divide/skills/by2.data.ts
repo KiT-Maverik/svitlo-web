@@ -59,10 +59,10 @@ export const by2_Skill_Data = buildSkillConfig({
       "pl": "Możesz dzielić przez dwa, by znaleźć dwie równe części lub liczbę grup po dwa elementy.",
       "uk": "Ти можеш ділити на два, щоб знайти дві рівні частини або кількість груп по два в цілому.",
       "lt": "Gali dalyti iš dviejų, kad rastum dvi lygias dalis arba kiek grupių po du telpa visumoje.",
-      "lv": "Tu vari dalīt ar divi, lai atrastu divas vienādas daļas vai noskaidrotu, cik grupu pa divi ietilpst kopumā.",
+      "lv": "Tu vari dalīt ar 2, lai atrastu divas vienādas daļas vai noskaidrotu, cik grupu pa diviem ietilpst kopumā.",
       "et": "Sa saad kahega jagada, et leida kaks võrdset osa või selgitada, mitu kahest rühma tervikus on.",
       "be": "Ты можаш дзяліць на два, каб знайсьці дзьве роўныя часткі або колькасьць груп па два ў цэлым.",
-      "ka": "შეგიძლია ორზე გაყოფით ორი თანაბარი ნაწილი მიიღო ან გაარკვიო, მთლიანში რამდენი ორკაციანი ჯგუფი ეტევა.",
+      "ka": "შეგიძლია ორზე გაყოფით ორი თანაბარი ნაწილი მიიღო ან გაარკვიო, მთლიანში რამდენი ორ-ორიანი ჯგუფი ეტევა.",
       "kk": "Екіге бөліп, екі тең бөлікті немесе бүтіндегі екіден тұратын топтардың санын таба аласың."
     },
   },

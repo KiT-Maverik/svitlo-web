@@ -59,7 +59,7 @@ export const by7_Skill_Data = buildSkillConfig({
       "pl": "Możesz dzielić przez siedem, korzystając z grup po siedem i znanych wyników mnożenia, aby znaleźć iloraz.",
       "uk": "Ти можеш ділити на сім, використовуючи групи по сім і відомі добутки, щоб знайти частку.",
       "lt": "Gali dalyti iš septynių naudodamas grupes po septynis ir žinomus daugybos faktus, kad rastum dalmenį.",
-      "lv": "Tu vari dalīt ar septiņi, izmantojot grupas pa septiņi un zināmus reizināšanas faktus, lai atrastu dalījumu.",
+      "lv": "Tu vari dalīt ar 7, izmantojot grupas pa septiņiem un zināmus reizināšanas faktus, lai atrastu dalījumu.",
       "et": "Sa saad seitsmega jagada seitsmest koosnevate rühmade ja tuntud korrutamisfaktide abil, et leida jagatis.",
       "be": "Ты можаш дзяліць на сем праз групы па сем і вядомыя здабыткі, каб знайсьці дзель.",
       "ka": "შეგიძლია შვიდზე გაყო შვიდ-შვიდიანი ჯგუფებისა და ცნობილი გამრავლების ფაქტების გამოყენებით და განაყოფი იპოვო.",

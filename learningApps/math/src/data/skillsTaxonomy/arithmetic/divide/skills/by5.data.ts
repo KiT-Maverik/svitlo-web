@@ -59,7 +59,7 @@ export const by5_Skill_Data = buildSkillConfig({
       "pl": "Możesz dzielić przez pięć za pomocą równych grup i znanych wielokrotności pięciu.",
       "uk": "Ти можеш ділити на п’ять, використовуючи рівні групи й відомі кратні п’яти.",
       "lt": "Gali dalyti iš penkių naudodamasis lygiomis grupėmis ir žinomais penketo kartotiniais.",
-      "lv": "Tu vari dalīt ar pieci, izmantojot vienādas grupas un zināmus pieci daudzkārtņus.",
+      "lv": "Tu vari dalīt ar 5, izmantojot vienādas grupas un zināmus piecu daudzkārtņus.",
       "et": "Sa saad viiega jagada võrdsete rühmade ja tuntud viie kordsete abil.",
       "be": "Ты можаш дзяліць на пяць, выкарыстоўваючы роўныя групы й вядомыя кратныя пяці.",
       "ka": "შეგიძლია ხუთზე გაყოფა თანაბარი ჯგუფებითა და ხუთის ცნობილი ჯერადებით.",

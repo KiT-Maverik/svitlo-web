@@ -59,7 +59,7 @@ export const by1AndSelf_Skill_Data = buildSkillConfig({
       "pl": "Dzielenie przez jeden nie zmienia liczby. Każda liczba różna od zera podzielona przez siebie daje jeden.",
       "uk": "Ділення числа на один не змінює його. Будь-яке ненульове число, поділене на себе, дорівнює одному.",
       "lt": "Dalijimas iš vieneto skaičiaus nekeičia. Bet kurį nelygų nuliui skaičių padalijus iš jo paties gaunamas vienetas.",
-      "lv": "Dalīšana ar vienu skaitli nemaina. Jebkurš skaitlis, kas nav nulle, dalīts pats ar sevi, ir viens.",
+      "lv": "Dalot skaitli ar vienu, tas nemainās. Jebkurš skaitlis, kas nav nulle, dalīts pats ar sevi, ir viens.",
       "et": "Ühega jagamine ei muuda arvu. Iga nullist erinev arv iseendaga jagatuna on üks.",
       "be": "Дзяленьне ліку на адзінку не зьмяняе яго. Любы ненулявы лік, падзелены на сябе, роўны адзінцы.",
       "ka": "რიცხვის ერთზე გაყოფა მას არ ცვლის. ნებისმიერი არანულოვანი რიცხვი თავის თავზე გაყოფისას ერთს უდრის.",

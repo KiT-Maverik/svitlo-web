@@ -58,7 +58,7 @@ export const remainderLessDivisor_Skill_Data = buildSkillConfig({
       "he": "בחילוק מספרים שלמים במחלק חיובי, השארית חייבת להיות לפחות אפס וקטנה מהמחלק.",
       "pl": "Przy dzieleniu liczb całkowitych przez liczbę dodatnią reszta musi być nieujemna i mniejsza od dzielnika.",
       "uk": "Під час ділення цілих чисел на додатне число остача має бути невід’ємною та меншою за дільник.",
-      "lt": "Dalijant sveikuosius skaičius iš teigiamo skaičiaus liekana turi būti neigiama negalinti būti ir mažesnė už daliklį.",
+      "lt": "Dalijant sveikuosius skaičius iš teigiamo skaičiaus, liekana turi būti neneigiama ir mažesnė už daliklį.",
       "lv": "Dalot veselus skaitļus ar pozitīvu skaitli, atlikumam jābūt vismaz nullei un mazākam par dalītāju.",
       "et": "Kui jagad täisarve positiivse arvuga, peab jääk olema null või suurem ja jagajast väiksem.",
       "be": "Пры дзяленьні цэлых лікаў на дадатны лік астача мусіць быць неадмоўнай і меншай за дзельнік.",

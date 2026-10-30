@@ -59,7 +59,7 @@ export const by3_Skill_Data = buildSkillConfig({
       "pl": "Możesz dzielić przez trzy, korzystając z równych grup i wyników mnożenia przez trzy.",
       "uk": "Ти можеш ділити на три, використовуючи рівні групи та відомі добутки з трійкою.",
       "lt": "Gali dalyti iš trijų naudodamasis lygiomis grupėmis ir daugybos iš trijų faktais.",
-      "lv": "Tu vari dalīt ar trīs, izmantojot vienādas grupas un reizināšanas ar trīs faktus.",
+      "lv": "Tu vari dalīt ar 3, izmantojot vienādas grupas un reizināšanas ar trīs faktus.",
       "et": "Sa saad kolmega jagada võrdsete rühmade ja kolme korrutamise faktide abil.",
       "be": "Ты можаш дзяліць на тры, выкарыстоўваючы роўныя групы й вядомыя здабыткі з тройкай.",
       "ka": "შეგიძლია სამზე გაყოფა თანაბარი ჯგუფებითა და სამზე გამრავლების ცნობილი ფაქტებით.",

@@ -59,7 +59,7 @@ export const by6_Skill_Data = buildSkillConfig({
       "pl": "Możesz dzielić przez sześć za pomocą równych grup lub tabliczki mnożenia, aby znaleźć iloraz.",
       "uk": "Ти можеш ділити на шість за допомогою рівних груп або відомих добутків, щоб знайти частку.",
       "lt": "Gali dalyti iš šešių naudodamasis lygiomis grupėmis arba daugybos faktais, kad rastum dalmenį.",
-      "lv": "Tu vari dalīt ar seši, izmantojot vienādas grupas vai zināmus reizinājumus, lai atrastu dalījumu.",
+      "lv": "Tu vari dalīt ar 6, izmantojot vienādas grupas vai zināmus reizinājumus, lai atrastu dalījumu.",
       "et": "Sa saad kuuega jagada võrdsete rühmade või korrutamisfaktide abil, et leida jagatis.",
       "be": "Ты можаш дзяліць на шэсьць праз роўныя групы або вядомыя здабыткі, каб знайсьці дзель.",
       "ka": "შეგიძლია ექვსზე გაყოფა თანაბარი ჯგუფებით ან გამრავლების ფაქტებით და განაყოფის პოვნა.",
