@@ -18,11 +18,13 @@ Each new-format SkillGroup has one English `Slug: lowerCamelCase` immediately be
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
-The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It permits transitional optional `description: { methodological: string; fe?: Record<LanguageCode, string> }` (reviewed English methodological text required for promotion; fe absent or complete for all languages), but does not contain teaching order, evaluation evidence or student progress.
+The current `SkillGroup_Config` has `id`, fully localized `name` and a direct-child `skillIds` map. Its `description: { methodological: string; fe?: Readonly<Record<LanguageCode, string>> }` remains **optional** at runtime; reviewed English methodology is required for editorial promotion, and any supplied `fe` must cover every supported language with genuine copy. This differs from the runtime **Skill** contract, where both descriptions are required. There is no teaching order, evaluation evidence or student progress.
 
 - **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological meaning, any optional full fe translations and parent/child placement.
 - **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
-New-format records use separate single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone link. Older unlabeled prose requires migration; there is no generic `Description:` field or per-entity editorial approval file. The current `Action: skip|create|update|delete` and `Status: pending|implemented` fields instead denote future generator intent and verified Code implementation.
+New-format records use separate single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone link. Older unlabeled prose requires migration; there is no generic `Description:` field or per-entity editorial approval file. The editorial `Action: create|update|delete|skip` requests new Code / modification / explicitly authorized and dependency-checked deletion / no Code change. `Status: pending` means not fully verified; `Status: implemented` means complete verified implementation. The planned Markdown → Code generator updates Status only after validation; failures stay pending and do not block unrelated dependency-safe operations. Neither field is a runtime `SkillGroup_Config` property.
+
+**Paths:** new Group Code belongs at `<PackageRoot>/Data/skills/<domainSlug>/<groupSlug>/`, where `<PackageRoot>` is the individual textbook root. Mathematics remains under legacy `learningApps/math/src/data/skillsTaxonomy/`; it has not been migrated. The one-language `User-friendly description:` is a draft, not a complete localized `description.fe` dictionary.
 
 Related entities: [SkillDomain](./skill-domain.md), [Skill](./skill.md).
