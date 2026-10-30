@@ -38,9 +38,55 @@ For each current-template entity, `Action: skip|create|update|delete` describes 
 
 The existing description importer cannot parse the new `Slug:`, `Action:`, and `Status:` lines. Do not run it on new-format Markdown until a separate tooling update is implemented and verified.
 
+### Markdown → Code generator requirements
+
+The separate generator must perform dry-run by default, require explicit apply, preserve existing entity UUIDs on every update, and never cascade deletes without separate editor authorization and incoming-reference checks. Mark `Status: implemented` only after validation of the full Code graph and localization. Leave failed entities pending and report individual outcomes; allow independent successful changes only when dependencies remain valid.
+
 ### Approved editorial slugs and Code paths
 
-Use each new-template entity's approved `Slug: lowerCamelCase` for its own directory/file stem rather than recomputing identifiers from display names. The `<domainCamelCase>`, `<groupCamelCase>`, and `<skillCamelCase>` placeholders below refer to these approved slugs. Validate `^[a-z][A-Za-z0-9]*$` and sibling uniqueness before generating files.
+Use each new-template entity's approved `Slug: lowerCamelCase` for its own directory/file stem rather than recomputing identifiers from display names. The `<domainCamelCase>`, `<groupCamelCase>`, and `<skillCamelCase>` placeholders below refer to these approved slugs. Validate `^[a-z][A-Za-z0-9]*# Implement Skill Code Skill
+
+Read [Skill Taxonomy Workflow](./README.md). Implementation promotes **only verified entries** after the separate [Migrate Implemented Taxonomy](./migrate-implemented-taxonomy.skill.md) quality gate; Code file presence alone never authorizes removing a Markdown entry.
+
+**Mandatory first action:** Read [Coding Agent Persona](../../personas/coding-agent.persona.md) in full. Apply the repository's `AGENTS.md` and any package-local instructions. This is an implementation task: do not redesign the catalog, invent Skills, author curriculum, or implement assessment/learner tracking.
+
+**Purpose:** Implement the **approved SkillDomain, SkillGroup, and Skill entries in the staging Skills Taxonomy** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy (including approved direct Domain → Skill ownership) with immediate child Data composition and stable UUID literals owned by each entity.
+
+## CROSS-CUTTING RULES
+
+This implementation must also follow [Git-First Typed Content & AI Authoring](../../docs/architecture/git-first-typed-content.md) and [Internationalization & Inclusive Access](../../docs/architecture/internationalization-and-accessibility.md). Treat every `*.data.ts` entity as reviewed, **strictly typed named-export content**, avoid default exports and undocumented identity aliases, and do not confuse translation dictionaries or stable IDs with a fully registered runtime catalog. Inspect the live Engine types and full locale roster before implementation.
+
+## REQUIRED SOURCES — READ BEFORE WRITING
+
+1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
+2. **Editorial authority:** read the **approved** `<PackageRoot>/docs/skills/taxonomy.md`, including each in-scope entity’s heading, approved `Slug: `, `Action: `, `Status: `, explicit `Methodological description: ` (English), `User-friendly description: ` (working-language draft), hierarchy position and Code link. For these **unpromoted** entries, this is the editorial authority; implemented/promoted entries instead use reviewed Code. **No individual Markdown Definitions exist or are required**. Missing, ambiguous, unapproved or contradictory taxonomy entries are blockers; report them rather than inventing semantics or silently revising the taxonomy.
+3. **Entity meanings:** read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md), and [Skill](../../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
+4. **Authoritative TypeScript contracts in `@svitlo/contracts`:** inspect the current files under `shared/contracts/src/types/content/` (import types via `@svitlo/contracts/taxonomy`; engine builders are separate):
+   - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.
+   - `skillGroup.types.ts` — `SkillGroup_Config`, `skillIds`.
+   - `skillDomain.types.ts` — `SkillDomain_Config`, required `groupIds` and optional direct `skillIds`.
+   - `shared/contracts/src/types/languages.ts` — `LanguageCode`; verify the current supported-language list through the published localization contract.
+5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
+6. **Reference implementation (read-only example):** inspect the current Mathematics taxonomy in `learningApps/math/data/skills/`:
+   - Root `index.ts` exports Domain Data only.
+   - `geometry/geometry.data.ts` imports Group Data directly from `./<group>/<group>.data`.
+   - `geometry/angles/angles.data.ts` imports Skills from `./skills`.
+   - `geometry/angles/skills/index.ts` exports only immediate Skill Data.
+   - There is no index file at a Domain or Group directory root.
+
+**Canonical source destination:** `<PackageRoot>/data/skills/`, outside `src/` and relative to the textbook package root. The legacy `src/data/skillsTaxonomy/`, `*.ids.ts` and `index.data.ts` conventions must not be used for new implementations. Compare the Mathematics example with the live engine contracts.
+
+Current contracts and [Skill](../../docs/entities/skill.md), [SkillGroup](../../docs/entities/skill-group.md), and [SkillDomain](../../docs/entities/skill-domain.md) definitions govern this workflow.
+
+### Editorial actions and implementation status
+
+For each current-template entity, `Action: skip|create|update|delete` describes a **future generator instruction**; `Status: pending|implemented` describes the presently verified implementation state. Neither is a new runtime `Skill*_Config` property. These metadata fields are not instructions for this manual Coding Agent to create, update or delete files automatically. Scope and human approval are still required. In particular, never interpret `delete` as authorization for destructive changes or `Status: implemented` without verified Code. When explicitly commissioned to implement an entity despite `Action: skip`, reconcile the intended scope with the editor first.
+
+The existing description importer cannot parse the new `Slug:`, `Action:`, and `Status:` lines. Do not run it on new-format Markdown until a separate tooling update is implemented and verified.
+
+### Approved editorial slugs and Code paths
+
+Use each new-template entity's approved `Slug: lowerCamelCase` for its own directory/file stem rather than recomputing identifiers from display names. The `<domainCamelCase>`, `<groupCamelCase>`, and `<skillCamelCase>` placeholders below refer to these approved slugs.  and textbook-wide uniqueness across all entity slugs before generating files.
 
 A slug is editorial metadata, not a new property of `Skill*_Config`. Keep existing UUIDs and Code paths stable. If an approved slug conflicts with an implemented path/identifier, stop for editorial resolution; do not silently rename files or reassign UUIDs. Treat slugless legacy entries as pending explicit migration.
 
@@ -60,7 +106,7 @@ Every runtime entity must be produced through its designated builder, using the 
 | SkillGroup | `id`, `name`, `skillIds` | `buildSkillGroupConfig` | Immediate child Skill IDs |
 | SkillDomain | `id`, `name`, `groupIds`, optional `skillIds` | `buildSkillDomainConfig` | Either immediate SkillGroup IDs or direct Skill IDs, never both |
 
-The shared contracts provide `description?: { methodological: string; fe?: Readonly<Record<LanguageCode, string>> }` on Skill, Group and Domain. For **legacy structured entries without `Slug:`, `Action:` or `Status:`**, [import-taxonomy-descriptions.mjs](../../../scripts/import-taxonomy-descriptions.mjs) can transfer descriptions to already existing Code after a successful dry-run. The current importer must not be used with new-template entries until parser compatibility is implemented and tested; preserve semantic equivalence and seek an approved implementation path in the meantime. It never translates or creates missing Code objects. The `User-friendly description:` draft is not itself a complete all-locale `description.fe` dictionary. A new or promoted entity **must** have `description.methodological`: a substantive, carefully edited **English** description faithful to the approved source text (translate without information loss when the staging taxonomy is in another language). This English text is for the Methodologist, Screenwriter and other agents; it may include useful conceptual distinctions, examples and caveats without becoming a lesson or assessment plan. `description.fe` is **optional** and is only for frontend display; if authored, it must contain truthful, nonblank translations for **every** supported language, never a partial dictionary or fallback. `description` remains optional at type level only to avoid breaking existing legacy code; a missing methodological text blocks Code promotion. Builders enforce shape and completeness, not correctness of language/meaning. No mastery, grade, prerequisites, questions or learner state belong here.
+`Skill_Config` requires `description: { methodological: string; fe: Readonly<Record<LanguageCode, string>> }`; descriptions on Group and Domain remain optional. For **legacy structured entries without `Slug:`, `Action:` or `Status:`**, [import-taxonomy-descriptions.mjs](../../../scripts/import-taxonomy-descriptions.mjs) can transfer descriptions to already existing Code after a successful dry-run. The current importer must not be used with new-template entries until parser compatibility is implemented and tested; preserve semantic equivalence and seek an approved implementation path in the meantime. It never translates or creates missing Code objects. The `User-friendly description:` draft is not itself a complete all-locale `description.fe` dictionary. A new or promoted entity **must** have `description.methodological`: a substantive, carefully edited **English** description faithful to the approved source text (translate without information loss when the staging taxonomy is in another language). This English text is for the Methodologist, Screenwriter and other agents; it may include useful conceptual distinctions, examples and caveats without becoming a lesson or assessment plan. `description.fe` is **required on every Skill** with genuine translations for every supported language; Group/Domain fe is optional but must be complete when present. Missing Skill fe or methodological text blocks promotion; no fallback. Builders enforce shape and completeness, not correctness of language/meaning. No mastery, grade, prerequisites, questions or learner state belong here.
 
 - Match the names, identity, and **exact parent/child placements** approved in the taxonomy; no extra Domains, Groups, Skills, cross-domain duplicates, or synthetic groups.
 - Respect the approved hierarchy: a grouped Domain references nonempty `groupIds`, while an ungrouped Domain uses `groupIds: {}` and nonempty direct `skillIds`. Never mix both. Groups reference Skills through `skillIds`, and Skills have no children. Strongly discourage synthetic singleton Groups.
@@ -137,18 +183,18 @@ Use the repo's configured string quote preference independently of the **no-quot
 8. **Update staging links after approval and verification:** link promoted entities to their `*.data.ts` files, preserving editorial history and outstanding children.
 9. **Stop:** report bounded changes and all unverified checks, without unrelated taxonomy or lesson work.
 
-A partial implementation is not “complete” merely because its UUID or parent mapping exists. Only entities with valid `*.data.ts`, reachable direct source imports and scoped exports, complete name translations, optional all-locale fe copy, reviewed English methodological text and verified references count as **promoted**. Avoid generating empty Group/Domain placeholders that violate current reference validation; if a prerequisite child is missing, complete the approved dependencies within scope or report the blocker.
+A partial implementation is not “complete” merely because its UUID or parent mapping exists. Only entities with valid `*.data.ts`, reachable direct source imports and scoped exports, complete name translations, mandatory all-locale Skill fe (optional Group/Domain fe), reviewed English methodological text and verified references count as **promoted**. Avoid generating empty Group/Domain placeholders that violate current reference validation; if a prerequisite child is missing, complete the approved dependencies within scope or report the blocker.
 
 ## 6. VERIFICATION / ACCEPTANCE GATES
 
 Before reporting success, run the target package's available checks and add/fix focused tests where needed:
 
-- **Type safety:** `Skill_Config` / `SkillGroup_Config` / `SkillDomain_Config` and builders accept all new configs; reviewed English `description.methodological` and optional fully localized `description.fe` on newly implemented/migrated entities; no invented fields; no TypeScript errors.
+- **Type safety:** `Skill_Config` / `SkillGroup_Config` / `SkillDomain_Config` and builders accept all new configs; reviewed English `description.methodological` and mandatory fully localized Skill `description.fe` (optional complete Group/Domain fe); no invented fields; no TypeScript errors.
 - **Localization:** each `name` has **exactly** the current required language-code keys (two-letter unquoted wherever legal), no gaps, duplicates, unexpected keys, empty/placeholder/copy-pasted language values.
 - **Identity:** UUID syntax and stability; check uniqueness and immediate-child mappings against the in-scope files and approved hierarchy. The existing builders **cannot** resolve IDs to actual entity types/registrations; full repo-wide reference validation is deferred to a separate build-time script. Mark unverified items explicitly rather than claiming a builder-level guarantee.
 - **Direct composition:** parent configurations import immediate child Data, referencing `.id` without duplicated ID dictionaries or Domain-/Group-level indexes.
 - **Export boundaries:** root `index.ts` exports Domains only; Domain and Group Data files each export their own entity; `skills/index.ts` exports immediate Skills. Verify imports resolve and no `export *` or recursive barrels appear. Adapt the structural checks exemplified by `learningApps/math/src/utils/builders/config/skillTaxonomyIndex.spec.ts`.
-- **Topology:** physical paths and entries match the approved taxonomy and slugs (including sibling uniqueness), with no accidental duplicate or missing entities. All non-placeholder taxonomy Code links resolve to matching implemented files and counts reconcile; the staging descriptions and approved hierarchy remain unchanged until separately verified promotion.
+- **Topology:** physical paths and entries match the approved taxonomy and slugs (including textbook-wide slug uniqueness), with no accidental duplicate or missing entities. All non-placeholder taxonomy Code links resolve to matching implemented files and counts reconcile; the staging descriptions and approved hierarchy remain unchanged until separately verified promotion.
 - **Tests:** run available package TypeScript, lint, builder, translation and index tests; cite commands/results. Run registry validation only if a real registry/test exists; `fileLocation` and global ID resolution remain separate planned infrastructure, not automatically finished by producing Data files. If tooling is unavailable, mark checks **not run**.
 
 ## RESULT / HANDOFF
