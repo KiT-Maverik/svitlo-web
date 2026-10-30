@@ -2144,7 +2144,7 @@ Skills: 2
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/parts.data.ts)
 
-##### Розв’язувати задачі на ціле й частини та складати обернені задачі
+##### Розв’язувати задачі на ціле й частини
 
 Code: [Code](../../src/data/skillsTaxonomy/problemSolving/parts/skills/partWholeAddsub.data.ts)
 
