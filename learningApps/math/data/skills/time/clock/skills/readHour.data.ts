@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { clock_Skills_Ids } from './index.ids';
 
 export const readHour_Skill_Data = buildSkillConfig({
-  id: clock_Skills_Ids.readHour,
+  id: '587f72d3-5c93-4aa7-9e36-588a1f5483f0',
   name: {
     en: "Reading time to the hour",
     lt: "Laiko skaitymas valandų tikslumu",
