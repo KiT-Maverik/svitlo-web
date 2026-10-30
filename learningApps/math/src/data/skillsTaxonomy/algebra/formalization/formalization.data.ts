@@ -35,4 +35,5 @@ export const formalization_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Символьне моделювання",
   },
   skillIds: formalization_Skills_Ids,
+  description: { methodological: "Representing relationships in a short situation using arithmetic or simple algebraic notation." },
 });

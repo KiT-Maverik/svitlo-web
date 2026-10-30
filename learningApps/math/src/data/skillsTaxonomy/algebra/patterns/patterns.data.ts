@@ -35,4 +35,5 @@ export const patterns_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Закономірності",
   },
   skillIds: patterns_Skills_Ids,
+  description: { methodological: "Regular numerical changes following a rule and recognizing a sequence's structure from several terms." },
 });

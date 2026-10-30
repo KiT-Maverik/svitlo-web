@@ -35,4 +35,5 @@ export const unknowns_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Невідомі величини",
   },
   skillIds: unknowns_Skills_Ids,
+  description: { methodological: "Relationships between components and results of the four arithmetic operations that allow an unknown quantity to be found and verified." },
 });
