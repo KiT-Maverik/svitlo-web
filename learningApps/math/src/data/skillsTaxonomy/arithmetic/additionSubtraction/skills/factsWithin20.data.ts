@@ -33,4 +33,5 @@ export const factsWithin20_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Podstawowe działania ≤ 20",
     uk: "Додавання та віднімання — Табличні обчислення ≤ 20",
   },
+  description: { methodological: "Fluency within twenty combines knowledge of fundamental number facts with deriving sums and differences using decomposition, complements, decimal structure, and inverse operations. Speed alone does not establish correctness." },
 });

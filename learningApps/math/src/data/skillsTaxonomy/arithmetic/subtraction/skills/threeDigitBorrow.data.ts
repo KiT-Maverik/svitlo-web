@@ -33,4 +33,5 @@ export const threeDigitBorrow_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — 3-cyfrowe · Pożyczanie",
     uk: "Віднімання — 3-цифрові · Розгрупування",
   },
+  description: { methodological: "Place-value subtraction may require exchanging one hundred for tens and a ten for ones, including borrowing across a zero in an intermediate place. Every exchange preserves the original minuend's value." },
 });

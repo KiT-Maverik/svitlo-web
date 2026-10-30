@@ -33,4 +33,5 @@ export const columnSubtraction_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — Metoda pisemna",
     uk: "Віднімання — Обчислення стовпчиком",
   },
+  description: { methodological: "Written column subtraction aligns like place values and performs needed exchanges before subtracting corresponding digits. Each exchange must correctly affect adjacent places in the decimal system." },
 });

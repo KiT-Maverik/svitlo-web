@@ -33,4 +33,5 @@ export const inverseOperations_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Działania odwrotne",
     uk: "Додавання та віднімання — Обернені дії",
   },
+  description: { methodological: "Addition and subtraction are inverses in the relevant number domains. For a + b = c, checking c - b = a or c - a = b uses the same mathematical relationship." },
 });
