@@ -4,7 +4,7 @@
 
 ## GENERATOR AND SOURCE BOUNDARIES
 
-The canonical Math-style source is `<PackageRoot>/data/skills/`, not `Data/skills/` or legacy `src/data/skillsTaxonomy/`. UUID literals live in entity-owned `*.data.ts`; no separate ID indexes or Domain/Group root barrels are allowed. Code → Markdown is a **read-only derived view** and never reconstructs editorial `Slug`, `Action` or `Status`. **The current Code → Markdown script still reads the legacy root and ID indexes; adapt and test it before using it on the migrated Math source.** Markdown → Code is a separate, explicitly authorized write operation.
+The canonical Math-style source is `<PackageRoot>/data/skills/`, not `Data/skills/` or legacy `src/data/skillsTaxonomy/`. UUID literals live in entity-owned `*.data.ts`; no separate ID indexes or Domain/Group root barrels are allowed. Code → Markdown is a **read-only derived view** and never reconstructs editorial `Slug`, `Action` or `Status`. **The Code → Markdown generator now reads the canonical `data/skills/` hierarchy and validates structural integrity using the FastGate checker before producing a derived Markdown view.** Markdown → Code is a separate, explicitly authorized write operation.
 
 ## THE FIVE STAGES
 
@@ -34,7 +34,7 @@ For newly authored or deliberately migrated staging taxonomies, `Slug: lowerCame
 
 `Skill_Config` requires `description: { methodological: string; fe: Readonly<Record<LanguageCode, string>> }`: Skills need reviewed English methodology **and** student-facing copy in every supported locale. `SkillGroup_Config` and `SkillDomain_Config` retain transitional optional descriptions; if a Group/Domain supplies `fe`, it must cover every locale. The runtime builders validate these requirements. Code-to-Markdown reads TypeScript source via AST without running the TypeScript checker, so it independently rejects Skills lacking `description.fe` rather than silently omitting the text. Never generate partial dictionaries or fallback text. Type checks and presence tests do not establish translation quality; that requires editorial review. Descriptions are taxonomy semantics, not learning-depth limits, questions or mastery data.
 
-After adapting the Code → Markdown script and its tests to the new `data/skills/` structure:
+For the fully migrated `data/skills/` Code taxonomy:
 
 ```sh
 node scripts/generate-skills-taxonomy.mjs --package learningApps/math
@@ -44,7 +44,7 @@ node scripts/generate-skills-taxonomy.mjs --package learningApps/math --locale u
 npm run test:taxonomy-generator
 ```
 
-The adapted generator must **fail** for missing localized names or English methodology and for missing or incomplete Skill frontend descriptions; Group/Domain frontend dictionaries remain optional but must be complete when present. Mathematics now has **13 Domains, 60 Groups and 277 Skills** in Code; its staging `learningApps/math/docs/skills/taxonomy.md` was removed following the approved editorial migration and must not be recreated. The generator statically reads `*.data.ts` source without executing textbook modules and derives hierarchy from source directories. `--stdout` previews without writes, `--check` compares a previously generated file byte-for-byte and fails on drift, and normal generation writes only changed content. They cannot be used together. The updated regression suite must check the real Code catalog for each supported locale, correct counts, hierarchy, source links, labels, methodological meaning and user-friendly copy. It does not prove translated semantic quality or full UUID graph integrity.
+The generator **fails** for missing localized names or English methodology and for missing or incomplete Skill frontend descriptions; Group/Domain frontend dictionaries remain optional but must be complete when present. Mathematics now has **13 Domains, 60 Groups and 277 Skills** in Code; its staging `learningApps/math/docs/skills/taxonomy.md` was removed following the approved editorial migration and must not be recreated. The generator statically reads `*.data.ts` source without executing textbook modules and derives hierarchy from source directories. `--stdout` previews without writes, `--check` compares a previously generated file byte-for-byte and fails on drift, and normal generation writes only changed content. They cannot be used together. The regression suite checks the real Code catalog for each supported locale, correct counts, hierarchy, source links, labels, methodological meaning and user-friendly copy. It does not prove translated semantic quality or full UUID graph integrity.
 
 ## NO-LOSS RULES
 
