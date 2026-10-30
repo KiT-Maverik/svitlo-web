@@ -33,4 +33,5 @@ export const readBarChart_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie wykresu słupkowego",
     uk: "Читання стовпчикової діаграми",
   },
+  description: { methodological: "The height or length of a bar encodes a numerical value according to a given scale and baseline. Comparisons require reading the axes and categories rather than relying on decorative bar width or area." },
 });

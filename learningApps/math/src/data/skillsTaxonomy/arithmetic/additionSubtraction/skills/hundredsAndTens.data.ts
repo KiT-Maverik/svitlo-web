@@ -33,4 +33,5 @@ export const hundredsAndTens_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Setki i dziesiątki",
     uk: "Додавання та віднімання — Сотні та десятки",
   },
+  description: { methodological: "Multiples of a hundred and ten are calculated as quantities of their corresponding place-value units. Mixed-place computations require equivalent exchanges to preserve overall value." },
 });

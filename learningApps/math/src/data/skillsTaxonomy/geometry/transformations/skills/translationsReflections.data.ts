@@ -33,4 +33,5 @@ export const translationsReflections_Skill_Data = buildSkillConfig({
     pl: "Przesuwanie i odbijanie figur",
     uk: "Зсув і віддзеркалення фігур",
   },
+  description: { methodological: "A translation moves every point of a figure by the same vector, preserving lengths and orientation. Reflection in a line also preserves lengths but reverses orientation; neither changes area or perimeter." },
 });

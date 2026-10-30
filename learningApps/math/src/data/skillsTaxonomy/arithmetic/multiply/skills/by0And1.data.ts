@@ -33,4 +33,5 @@ export const by0And1_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 0 · × 1",
     uk: "Множення — × 0 · × 1",
   },
+  description: { methodological: "Zero is absorbing and one is the identity for multiplication: a × 0 = 0 and a × 1 = a in the relevant number domain. These properties do not depend on a concrete object model." },
 });

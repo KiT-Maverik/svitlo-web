@@ -33,4 +33,5 @@ export const rectangleAreaModel_Skill_Data = buildSkillConfig({
     pl: "Łączenie pola prostokąta z iloczynem długości boków",
     uk: "Зв’язок площі прямокутника з добутком довжин сторін",
   },
+  description: { methodological: "The area of a rectangle is the product of adjacent side lengths expressed in a common length unit. A grid of congruent unit squares explains the formula through row and column counts." },
 });

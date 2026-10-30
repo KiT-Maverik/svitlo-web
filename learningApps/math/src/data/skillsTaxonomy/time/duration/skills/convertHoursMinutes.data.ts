@@ -33,4 +33,5 @@ export const convertHoursMinutes_Skill_Data = buildSkillConfig({
     pl: "Przeliczanie godzin i minut",
     uk: "Перетворення годин на хвилини й навпаки",
   },
+  description: { methodological: "Hours and minutes are duration units related exactly by 1 hour = 60 minutes. Conversion must preserve the same elapsed duration irrespective of its numerical representation." },
 });

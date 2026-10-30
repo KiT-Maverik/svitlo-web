@@ -35,4 +35,5 @@ export const expressions_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Вирази",
   },
   skillIds: expressions_Skills_Ids,
+  description: { methodological: "The meanings of mathematical expressions involving operations, parentheses, and variables, including correct order of operations." },
 });

@@ -33,4 +33,5 @@ export const turnsQuarters_Skill_Data = buildSkillConfig({
     pl: "Obroty o ćwierć, pół i trzy czwarte pełnego obrotu",
     uk: "Чверть-, пів- і три чверті оберту",
   },
+  description: { methodological: "Quarter, half, and three-quarter turns equal 90, 180, and 270 degrees. Rotation direction affects final orientation, though some final positions admit more than one equivalent description of the turn." },
 });

@@ -35,4 +35,5 @@ export const calendar_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Календар",
   },
   skillIds: calendar_Skills_Ids,
+  description: { methodological: "Navigating days, weeks, months, and years while accounting for varying month lengths and leap years." },
 });

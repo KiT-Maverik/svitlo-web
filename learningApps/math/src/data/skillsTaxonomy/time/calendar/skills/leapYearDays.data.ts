@@ -33,4 +33,5 @@ export const leapYearDays_Skill_Data = buildSkillConfig({
     pl: "Rozróżnianie lat zwykłych i przestępnych",
     uk: "Розрізнення звичайного та високосного років",
   },
+  description: { methodological: "The Gregorian calendar distinguishes ordinary years of 365 days from leap years of 366 days, with 29 days in February. Divisibility by four determines leap years except century years not divisible by 400; navigating a calendar also requires correct transitions between dates." },
 });

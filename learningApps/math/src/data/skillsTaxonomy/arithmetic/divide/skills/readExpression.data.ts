@@ -33,4 +33,5 @@ export const readExpression_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Odczytywanie wyrażeń",
     uk: "Ділення — Читання виразів",
   },
+  description: { methodological: "The dividend represents the total, the nonzero divisor is the second operand, and the quotient is the result. In equal sharing the divisor can specify the number of groups, whereas in grouping it specifies each group's size." },
 });

@@ -33,4 +33,5 @@ export const unknownSubtrahend_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie nieznanego odjemnika",
     uk: "Знаходження невідомого від’ємника",
   },
+  description: { methodological: "Given the minuend and difference, find the unknown subtrahend by subtracting the difference from the minuend. Component positions matter: the inverse formulas for unknown minuend and unknown subtrahend are not interchangeable." },
 });

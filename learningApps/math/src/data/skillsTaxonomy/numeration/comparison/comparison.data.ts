@@ -35,4 +35,5 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Порівняння чисел",
   },
   skillIds: comparison_Skills_Ids,
+  description: { methodological: "Order relations between quantities and numerical representations, including comparison symbols and sorting numbers." },
 });

@@ -35,4 +35,5 @@ export const estimation_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Оцінювання чисел",
   },
   skillIds: estimation_Skills_Ids,
+  description: { methodological: "Approximate numerical values and quantities, rounding, and matching estimation precision to the magnitude of the actual quantity." },
 });

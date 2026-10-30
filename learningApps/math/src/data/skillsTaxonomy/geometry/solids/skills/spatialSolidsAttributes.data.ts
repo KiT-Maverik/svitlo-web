@@ -33,4 +33,5 @@ export const spatialSolidsAttributes_Skill_Data = buildSkillConfig({
     pl: "Ściany, krawędzie i wierzchołki sześcianów i prostopadłościanów",
     uk: "Грані, ребра та вершини куба й прямокутного паралелепіпеда",
   },
+  description: { methodological: "A cube and a rectangular cuboid each have six faces, twelve edges, and eight vertices. A cube is a special case with equal edge lengths; a drawing may show only some of the solid's elements." },
 });

@@ -33,4 +33,5 @@ export const calendarInterval_Skill_Data = buildSkillConfig({
     pl: "Liczenie dni między datami",
     uk: "Підрахунок днів між датами",
   },
+  description: { methodological: "The number of days between two dates is the duration of the interval, accounting for month lengths and calendar boundaries. Elapsed days must be distinguished from an inclusive count of the named calendar dates." },
 });

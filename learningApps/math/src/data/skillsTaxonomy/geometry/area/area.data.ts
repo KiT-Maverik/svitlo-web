@@ -35,4 +35,5 @@ export const area_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Площа",
   },
   skillIds: area_Skills_Ids,
+  description: { methodological: "The extent of a planar region occupied by a figure, modeled using unit squares, rectangles, and decomposition of composite shapes." },
 });

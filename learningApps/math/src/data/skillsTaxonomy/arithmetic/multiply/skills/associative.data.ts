@@ -33,4 +33,5 @@ export const associative_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Łączność",
     uk: "Множення — Сполучний закон",
   },
+  description: { methodological: "Multiplication is associative: (ab)c = a(bc). Regrouping factors preserves the product; the law does not permit arbitrary changes to factor values or replacing multiplication with addition." },
 });

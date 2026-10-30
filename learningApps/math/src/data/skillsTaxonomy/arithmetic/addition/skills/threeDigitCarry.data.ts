@@ -33,4 +33,5 @@ export const threeDigitCarry_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — 3-cyfrowe · Przeniesienie",
     uk: "Додавання — 3-цифрові · Перенесення розряду",
   },
+  description: { methodological: "Adding corresponding place values may require exchanging ten ones for one ten and ten tens for one hundred. Multiple carries must be coordinated to preserve the sum's total numerical value." },
 });

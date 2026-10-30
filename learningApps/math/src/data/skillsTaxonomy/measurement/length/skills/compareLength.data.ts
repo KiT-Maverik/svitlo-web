@@ -33,4 +33,5 @@ export const compareLength_Skill_Data = buildSkillConfig({
     "pl": "Porównywanie długości bezpośrednio i pośrednio",
     "uk": "Порівняння довжин безпосередньо та непрямим способом"
   },
+  description: { methodological: "Lengths can be compared by aligning their initial endpoints or through a common intermediate measure. Comparison concerns endpoint separation, not an object's placement or visible thickness." },
 });

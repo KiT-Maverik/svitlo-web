@@ -35,4 +35,5 @@ export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Периметр",
   },
   skillIds: perimeter_Skills_Ids,
+  description: { methodological: "The length of a polygon's closed boundary as the sum of its sides, including rectangles and squares." },
 });

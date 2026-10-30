@@ -33,4 +33,5 @@ export const calculateChange_Skill_Data = buildSkillConfig({
     pl: "Obliczanie reszty",
     uk: "Обчислення решти",
   },
+  description: { methodological: "Change is the difference between the amount actually paid and the amount due, provided the payment is sufficient. It must be expressed in the same currency, and adding the change to the purchase price checks the result." },
 });

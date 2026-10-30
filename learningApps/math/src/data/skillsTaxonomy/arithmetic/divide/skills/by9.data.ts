@@ -33,4 +33,5 @@ export const by9_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 9",
     uk: "Ділення — ÷ 9",
   },
+  description: { methodological: "Division by nine is inverse to the matching products with factor nine. Known multiples or equivalent decompositions can determine the quotient across the family of facts." },
 });

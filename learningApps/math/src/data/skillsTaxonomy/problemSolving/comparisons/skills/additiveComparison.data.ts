@@ -33,4 +33,5 @@ export const additiveComparison_Skill_Data = buildSkillConfig({
     pl: "Rozwiązywanie zadań na porównanie różnicowe",
     uk: "Розв’язування задач на різницеве порівняння",
   },
+  description: { methodological: "Additive comparison determines the nonnegative difference between quantities expressed in compatible units. Asking 'how many more or fewer' is not the multiplicative question 'how many times as many', which requires a different operation." },
 });

@@ -33,4 +33,5 @@ export const angleAsTurn_Skill_Data = buildSkillConfig({
     pl: "Porównywanie kątów jako obrotów",
     uk: "Порівняння кутів як величин повороту",
   },
+  description: { methodological: "Angle magnitude describes the turn between rays sharing an endpoint and does not depend on how long the rays are drawn. A right angle is one quarter of a full turn; acute and obtuse angles are compared with it." },
 });

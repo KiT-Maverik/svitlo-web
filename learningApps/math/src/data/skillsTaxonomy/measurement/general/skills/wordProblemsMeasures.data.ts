@@ -33,4 +33,5 @@ export const wordProblemsMeasures_Skill_Data = buildSkillConfig({
     "pl": "Rozwiązywanie zadań tekstowych o pomiarach ze zgodnymi jednostkami",
     "uk": "Розв’язування практичних задач на величини в сумісних одиницях"
   },
+  description: { methodological: "Calculations with measured quantities require compatible units and dimensionally valid operations. Addition or subtraction is meaningful only for commensurable quantities, and the result must retain the appropriate unit and interpretation." },
 });

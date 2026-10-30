@@ -33,4 +33,5 @@ export const withRemainder_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Dzielenie z resztą",
     uk: "Ділення — Ділення з остачею",
   },
+  description: { methodological: "Integer division with positive divisor b yields quotient q and remainder r satisfying a = bq + r and 0 <= r < b. The quotient counts complete groups and the remainder is what cannot make another full group." },
 });

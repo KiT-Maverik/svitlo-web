@@ -33,4 +33,5 @@ export const by1AndSelf_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 1 · a ÷ a",
     uk: "Ділення — ÷ 1 · a ÷ a",
   },
+  description: { methodological: "Dividing any nonzero number by one leaves it unchanged, and a nonzero number divided by itself equals one. These follow from multiplication and do not define 0/0." },
 });

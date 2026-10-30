@@ -33,4 +33,5 @@ export const countBy2_Skill_Data = buildSkillConfig({
     pl: "Liczenie co 2",
     uk: "Лічба з кроком 2",
   },
+  description: { methodological: "Counting by twos repeatedly adds two, corresponding to equal pairs of objects. The number of pairs and the number of individual elements must be distinguished." },
 });

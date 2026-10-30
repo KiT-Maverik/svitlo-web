@@ -35,4 +35,5 @@ export const sequence_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Числові послідовності",
   },
   skillIds: sequence_Skills_Ids,
+  description: { methodological: "Naming consecutive natural numbers, moving forward and backward, and restoring missing elements of the sequence without necessarily starting from one." },
 });

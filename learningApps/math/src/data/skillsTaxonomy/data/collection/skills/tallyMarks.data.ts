@@ -33,4 +33,5 @@ export const tallyMarks_Skill_Data = buildSkillConfig({
     pl: "Zapisywanie i odczytywanie kresek zliczeniowych",
     uk: "Записування та читання лічильних позначок",
   },
+  description: { methodological: "Tally marks or other agreed symbols represent counted observations in each category. Converting between symbolic marks and numerical frequencies must consistently follow the established encoding rule." },
 });

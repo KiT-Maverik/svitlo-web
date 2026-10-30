@@ -35,4 +35,5 @@ export const addition_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Додавання",
   },
   skillIds: addition_Skills_Ids,
+  description: { methodological: "Combining quantities, properties of sums, place-value regrouping, and methods for calculating and checking results." },
 });

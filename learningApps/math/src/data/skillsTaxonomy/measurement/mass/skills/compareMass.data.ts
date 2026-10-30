@@ -33,4 +33,5 @@ export const compareMass_Skill_Data = buildSkillConfig({
     "pl": "Porównywanie mas za pomocą wagi szalkowej",
     "uk": "Порівняння мас за допомогою терезів"
   },
+  description: { methodological: "On an equal-arm balance, a greater mass outweighs a smaller one under comparable conditions, and balance indicates equal masses. Physical volume or apparent size alone does not determine mass." },
 });

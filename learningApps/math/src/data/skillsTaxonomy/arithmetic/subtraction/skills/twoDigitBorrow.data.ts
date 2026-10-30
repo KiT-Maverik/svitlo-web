@@ -33,4 +33,5 @@ export const twoDigitBorrow_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — 2-cyfrowe · Pożyczanie",
     uk: "Віднімання — 2-цифрові · Розгрупування",
   },
+  description: { methodological: "One ten can be exchanged for ten ones when the ones place of the minuend is insufficient for subtraction. Regrouping changes the place-value representation but not the minuend's numerical value." },
 });

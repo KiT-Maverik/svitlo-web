@@ -35,4 +35,5 @@ export const time_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Час",
   },
   groupIds: time_SkillGroups_Ids,
+  description: { methodological: "Calendar cycles, ways to represent instants, and calculations of event durations, distinguishing a date, a clock reading, and an elapsed interval." },
 });

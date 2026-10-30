@@ -33,4 +33,5 @@ export const by3_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 3",
     uk: "Множення — × 3",
   },
+  description: { methodological: "Multiplication facts with factor three concern equal groups of three and successive multiples of three. The products can be derived using operation properties or neighboring known facts rather than memorized in isolation." },
 });

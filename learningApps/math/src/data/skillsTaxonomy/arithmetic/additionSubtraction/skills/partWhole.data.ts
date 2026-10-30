@@ -33,4 +33,5 @@ export const partWhole_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Zależność część–całość",
     uk: "Додавання та віднімання — Зв’язок частини й цілого",
   },
+  description: { methodological: "The additive part-whole model relates a whole to the sum of its components and permits finding an unknown component from the whole and known parts. Do not confuse the whole's total with a component's amount." },
 });

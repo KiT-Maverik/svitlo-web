@@ -33,4 +33,5 @@ export const readNumericExpressions_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie i zapisywanie wyrażeń liczbowych",
     uk: "Читання та запис числових виразів",
   },
+  description: { methodological: "A numerical expression defines a value using numbers, arithmetic operations, and possibly parentheses. Interpreting its written structure is distinct from calculating its numerical value." },
 });

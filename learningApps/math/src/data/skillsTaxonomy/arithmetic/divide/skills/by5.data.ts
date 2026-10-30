@@ -33,4 +33,5 @@ export const by5_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 5",
     uk: "Ділення — ÷ 5",
   },
+  description: { methodological: "Division by five can be established through multiples of five and inverse multiplication facts. Whether five denotes the group size or group count is determined by context." },
 });

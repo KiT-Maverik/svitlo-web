@@ -95,7 +95,7 @@ Svitlo має створювати багато повторно викорис�
 
 - Використовує наявну архітектуру, типи й компоненти; не винаходить другу паралельну систему Question, Skill або Lesson.
 - Створює/оновлює необхідні `*.data.ts`, `*.ids.ts`, контентні локалі, інтерактивні сцени, адаптери та компоненти.
-- Дотримується правил [Implement Skill Code](./skills/implement-skill-code.skill.md) для UUID, локалізацій, іменованих словників і collection-scoped exports.
+- Дотримується правил [Implement Skill Code](./skills/skill-taxonomy-workflow/implement-skill-code.skill.md) для UUID, локалізацій, іменованих словників і collection-scoped exports.
 - Перевіряє типізацію, unit/integration/component/E2E-тести там, де це доречно, а також accessibility, поведінку на мобільних пристроях, SSR і performance.
 - Зберігає коректну сепарацію: Lesson content ≠ Program narrative ≠ Assessment results ≠ Skill mastery; не прошиває випадкові дані одного уроку в універсальні компоненти.
 - Якщо специфікація неможлива в поточному API, **не вигадує мовчки новий контракт**: описує обмеження, пропонує вузьку зміну та погоджує або явно фіксує рішення відповідно до умов задачі.
@@ -206,7 +206,7 @@ User / Editor: тема, цілі, обмеження, домен
 
 ## 11. Пов'язані матеріали та статус
 
-- [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — семантика сутностей; [Create Skills Taxonomy](./skills/create-skills-taxonomy.skill.md) — методичний процес; [Implement Skill Code](./skills/implement-skill-code.skill.md) — static UUID, локалізація, builders та dependency boundaries.
+- [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — семантика сутностей; [Create Skills Taxonomy](./skills/skill-taxonomy-workflow/create-skills-taxonomy.skill.md) — методичний процес; [Implement Skill Code](./skills/skill-taxonomy-workflow/implement-skill-code.skill.md) — static UUID, локалізація, builders та dependency boundaries.
 - [Long Chat Overture](./Long%20Chat%20Overture.md) — контекст інших архітектурних домовленостей (Lesson/Program, events, injections, генератори, offline).
 - [Mathematics Skills Inventory](../learningApps/math/src/data/skills-inventory.md) — змістовний каталог і фактичний статус `Implemented`.
 - [Lesson types](../shared/engine/src/types/content/lesson.types.ts) і [Question types](../shared/engine/src/types/content/question.types.ts) — **чинні** кодові контракти.

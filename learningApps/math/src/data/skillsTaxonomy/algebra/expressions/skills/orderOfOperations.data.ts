@@ -33,4 +33,5 @@ export const orderOfOperations_Skill_Data = buildSkillConfig({
     pl: "Stosowanie kolejności działań",
     uk: "Застосування порядку арифметичних дій",
   },
+  description: { methodological: "An expression's value follows the agreed order of operations: parentheses, multiplication/division, then addition/subtraction, applying associativity or left-to-right rules where appropriate. Changing the order can change the result." },
 });

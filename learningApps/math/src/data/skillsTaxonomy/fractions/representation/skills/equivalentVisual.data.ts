@@ -33,4 +33,5 @@ export const equivalentVisual_Skill_Data = buildSkillConfig({
     pl: "Pokazywanie ułamków równoważnych na modelach",
     uk: "Показ рівності дробів на наочних моделях",
   },
+  description: { methodological: "Equivalent fractions denote the same part of the same whole despite different numerators and denominators. Multiplying both by the same nonzero factor preserves value, as can be shown using area or line models." },
 });

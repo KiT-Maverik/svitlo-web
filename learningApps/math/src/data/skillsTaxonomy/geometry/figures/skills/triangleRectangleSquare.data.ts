@@ -33,4 +33,5 @@ export const triangleRectangleSquare_Skill_Data = buildSkillConfig({
     pl: "Własności trójkątów, prostokątów i kwadratów",
     uk: "Властивості трикутника, прямокутника та квадрата",
   },
+  description: { methodological: "Triangles, rectangles, and squares are characterized by relations among sides and angles. A square is a rectangle with all sides equal; geometric categories can be nested rather than mutually exclusive." },
 });

@@ -33,4 +33,5 @@ export const parentheses_Skill_Data = buildSkillConfig({
     pl: "Obliczanie wyrażeń z nawiasami",
     uk: "Обчислення виразів із дужками",
   },
+  description: { methodological: "Parentheses specify how subexpressions are grouped and can change the conventional order of operations. Evaluation must respect nesting and operation precedence without arbitrarily moving or removing parentheses." },
 });

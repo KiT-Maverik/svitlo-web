@@ -35,4 +35,5 @@ export const divide_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Ділення",
   },
   skillIds: divide_Skills_Ids,
+  description: { methodological: "Quotients as equal sharing or finding the number of equal groups, basic division facts, remainders, limitations, and verification of division." },
 });

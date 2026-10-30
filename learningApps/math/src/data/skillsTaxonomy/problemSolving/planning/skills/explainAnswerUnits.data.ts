@@ -33,4 +33,5 @@ export const explainAnswerUnits_Skill_Data = buildSkillConfig({
     pl: "Sprawdzanie jednostek i sensowności odpowiedzi",
     uk: "Перевірка одиниць і правдоподібності відповіді",
   },
+  description: { methodological: "A word-problem answer must name the requested quantity in consistent units and satisfy the constraints of its mathematical or real-world context. A bare number without a unit or a plausibility check may fail to answer the question." },
 });

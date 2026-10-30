@@ -33,4 +33,5 @@ export const identifyExpressionError_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie błędów w kolejności działań",
     uk: "Виявлення помилок у порядку арифметичних дій",
   },
+  description: { methodological: "The incorrect result 6 + 3 × 2 = 18 comes from adding before multiplying. Error diagnosis requires applying multiplication precedence rather than reading operation signs only from left to right." },
 });

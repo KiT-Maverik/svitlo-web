@@ -33,4 +33,5 @@ export const budgetConstraint_Skill_Data = buildSkillConfig({
     pl: "Wybieranie zakupów w ramach budżetu",
     uk: "Вибір покупок у межах бюджету",
   },
+  description: { methodological: "Whether a set of purchases is affordable depends on the sum of its costs relative to the available budget. Each item being individually affordable does not make the entire set affordable; quantities and the total-spending limit must be considered." },
 });

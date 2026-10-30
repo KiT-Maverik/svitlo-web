@@ -33,4 +33,5 @@ export const subtractMeaning_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — Znaczenie i modele",
     uk: "Віднімання — Зміст і моделі",
   },
+  description: { methodological: "Subtraction may model removing a part, finding the difference between two quantities, or finding an unknown component of a known whole. These share an arithmetic relation but differ in known and unknown roles." },
 });

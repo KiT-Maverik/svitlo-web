@@ -33,4 +33,5 @@ export const growingPattern_Skill_Data = buildSkillConfig({
     pl: "Odkrywanie reguły rosnącego wzoru",
     uk: "Визначення правила зростаючої закономірності",
   },
+  description: { methodological: "From successive values such as 2, 6, 10, one may infer a growth rule of adding four, but the proposed rule must be tested against all supplied terms before treating it as established." },
 });

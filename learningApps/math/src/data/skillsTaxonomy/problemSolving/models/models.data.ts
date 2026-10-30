@@ -35,4 +35,5 @@ export const models_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Моделювання задач",
   },
   skillIds: models_Skills_Ids,
+  description: { methodological: "Relationships between a concrete situation, drawing, schematic model, and numerical expression representing the required operation." },
 });

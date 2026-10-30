@@ -33,4 +33,5 @@ export const by2_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 2",
     uk: "Ділення — ÷ 2",
   },
+  description: { methodological: "Division facts by two rely on inverse multiplication-by-two facts and models of halving or pairing. Context determines whether the quotient represents a group count or the size of each group." },
 });

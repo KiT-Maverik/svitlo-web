@@ -33,4 +33,5 @@ export const beforeAfterBetween_Skill_Data = buildSkillConfig({
     pl: "Liczby poprzedzające, następne i pośrednie",
     uk: "Попередні, наступні та проміжні числа",
   },
+  description: { methodological: "Where predecessor and successor exist in the relevant set, they differ from a natural number by one. Intermediate numbers are defined by numerical order and can be represented on a number line." },
 });

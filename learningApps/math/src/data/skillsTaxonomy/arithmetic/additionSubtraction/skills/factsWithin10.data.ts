@@ -33,4 +33,5 @@ export const factsWithin10_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Podstawowe działania ≤ 10",
     uk: "Додавання та віднімання — Табличні обчислення ≤ 10",
   },
+  description: { methodological: "Addition and subtraction facts can be recalled or derived without recounting physical objects. Part-whole relations and inverse operations support accurate computation and generalization." },
 });

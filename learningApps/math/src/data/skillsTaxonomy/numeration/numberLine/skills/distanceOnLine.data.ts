@@ -33,4 +33,5 @@ export const distanceOnLine_Skill_Data = buildSkillConfig({
     pl: "Odległość między liczbami całkowitymi na osi",
     uk: "Відстань між цілими числами на числовій прямій",
   },
+  description: { methodological: "Distance between integer coordinates is the nonnegative absolute difference, independent of direction. On the number line it equals the number of unit intervals between them." },
 });

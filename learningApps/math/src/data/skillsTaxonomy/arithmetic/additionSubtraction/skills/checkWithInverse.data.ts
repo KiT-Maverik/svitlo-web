@@ -33,4 +33,5 @@ export const checkWithInverse_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Sprawdzanie wyniku · Działania odwrotne",
     uk: "Додавання та віднімання — Перевірка результату · Обернені дії",
   },
+  description: { methodological: "The result of 63 - 28 can be checked by adding 28 back to the computed difference. A disagreement indicates an error and illustrates inverse operations as a verification method." },
 });

@@ -33,4 +33,5 @@ export const comparisonSymbols_Skill_Data = buildSkillConfig({
     pl: "Znaki porównania <, > i =",
     uk: "Знаки порівняння <, > та =",
   },
+  description: { methodological: "The symbols <, >, and = respectively express less than, greater than, and equality. Operand order determines inequality direction; swapping distinct numbers requires reversing the comparison sign." },
 });

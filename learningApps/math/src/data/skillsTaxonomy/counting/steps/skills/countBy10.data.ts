@@ -33,4 +33,5 @@ export const countBy10_Skill_Data = buildSkillConfig({
     pl: "Liczenie co 10",
     uk: "Лічба з кроком 10",
   },
+  description: { methodological: "Each step of ten changes a number by one complete ten while preserving its remaining ones. Crossing a hundred requires recognizing that ten tens regroup into one hundred." },
 });

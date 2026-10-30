@@ -33,4 +33,5 @@ export const by10_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 10",
     uk: "Множення — × 10",
   },
+  description: { methodological: "Multiplying by ten scales a number by a factor of ten. In decimal positional notation each place-value unit shifts to the next higher place; for natural numbers the product has zero in the ones place." },
 });

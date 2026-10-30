@@ -33,4 +33,5 @@ export const by7_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 7",
     uk: "Множення — × 7",
   },
+  description: { methodological: "Products with factor seven belong to the family of multiples of seven, connected with equal groups and multiplication properties. Unknown facts can be deduced from neighboring known products." },
 });

@@ -33,4 +33,5 @@ export const forward1000_Skill_Data = buildSkillConfig({
     pl: "Kontynuowanie ciągów liczbowych do 1000",
     uk: "Продовження та відновлення числових послідовностей у межах 1000",
   },
+  description: { methodological: "Recover missing or subsequent consecutive natural numbers using adjacency and a step of one. Crossing tens and hundreds does not change the rule; this differs from discovering an arbitrary pattern." },
 });

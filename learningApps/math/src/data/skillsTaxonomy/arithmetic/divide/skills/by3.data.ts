@@ -33,4 +33,5 @@ export const by3_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 3",
     uk: "Ділення — ÷ 3",
   },
+  description: { methodological: "Division facts by three correspond to multiples of three and the inverse of multiplication by three. Derive the quotient from the appropriate product while preserving the chosen sharing or grouping interpretation." },
 });

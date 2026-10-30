@@ -1,18 +1,20 @@
+> **OBSOLETE:** Superseded by [active implement-skill-code.skill.md](../skill-taxonomy-workflow/implement-skill-code.skill.md). Retained for historical reference; do not execute.
+
 # Implement Skill Code Skill
 
-**Mandatory first action:** Read [Coding Agent Persona](../personas/coding-agent.persona.md) in full. Apply the repository's `AGENTS.md` and any package-local instructions. This is an implementation task: do not redesign the catalog, invent Skills, author curriculum, or implement assessment/learner tracking.
+**Mandatory first action:** Read [Coding Agent Persona](../../personas/coding-agent.persona.md) in full. Apply the repository's `AGENTS.md` and any package-local instructions. This is an implementation task: do not redesign the catalog, invent Skills, author curriculum, or implement assessment/learner tracking.
 
 **Purpose:** Implement the **approved SkillDomain, SkillGroup, and Skill entries in the canonical Skills Taxonomy** as a strictly typed, localized, UUID-stable taxonomy for **one standalone textbook application**, preserving the precise editorial hierarchy (including approved direct Domain → Skill ownership) and separate lightweight Data/ID import surfaces.
 
 ## CROSS-CUTTING RULES
 
-This implementation must also follow [Git-First Typed Content & AI Authoring](../docs/architecture/git-first-typed-content.md) and [Internationalization & Inclusive Access](../docs/architecture/internationalization-and-accessibility.md). Treat every `*.data.ts` entity as reviewed, **strictly typed named-export content**, avoid default exports and undocumented identity aliases, and do not confuse translation dictionaries or stable IDs with a fully registered runtime catalog. Inspect the live Engine types and full locale roster before implementation.
+This implementation must also follow [Git-First Typed Content & AI Authoring](../../docs/architecture/git-first-typed-content.md) and [Internationalization & Inclusive Access](../../docs/architecture/internationalization-and-accessibility.md). Treat every `*.data.ts` entity as reviewed, **strictly typed named-export content**, avoid default exports and undocumented identity aliases, and do not confuse translation dictionaries or stable IDs with a fully registered runtime catalog. Inspect the live Engine types and full locale roster before implementation.
 
 ## REQUIRED SOURCES — READ BEFORE WRITING
 
 1. **Target textbook:** identify the actual `<PackageRoot>` (the specific application package, not the monorepo root), the approved scope (one Skill, Group, Domain, or bounded batch), branch, and relevant repository instructions.
 2. **Editorial authority:** read the **approved** `<PackageRoot>/docs/skills/taxonomy.md`, including each in-scope entity’s heading, substantive description, hierarchy position and Code link. This is the sole editorial source of truth; **no individual Markdown Definitions exist or are required**. Missing, ambiguous, unapproved or contradictory taxonomy entries are blockers; report them rather than inventing semantics or silently revising the taxonomy.
-3. **Entity meanings:** read [SkillDomain](../docs/entities/skill-domain.md), [SkillGroup](../docs/entities/skill-group.md), and [Skill](../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
+3. **Entity meanings:** read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md), and [Skill](../../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
 4. **Authoritative TypeScript contracts in `@svitlo/contracts`:** inspect the current files under `shared/contracts/src/types/content/` (import types via `@svitlo/contracts/taxonomy`; engine builders are separate):
    - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.
    - `skillGroup.types.ts` — `SkillGroup_Config`, `skillIds`.
@@ -28,7 +30,7 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
 
 **Distinguish the two paths:** Math textbook's `src/math/skillsTaxonomy/` is an **existing working reference**, not the destination for a new textbook. The canonical destination for this Skill is **`<PackageRoot>/src/data/skillsTaxonomy/`** (camelCase). Do not copy a stale playground import alias or modify the playground merely because it contains the examples. If a current shared-engine contract differs from a textbook example, the current contract wins; explain a material incompatibility.
 
-Current contracts and the canonical [Skill](../docs/entities/skill.md), [SkillGroup](../docs/entities/skill-group.md) and [SkillDomain](../docs/entities/skill-domain.md) rules govern this workflow. The historical conventions have been consolidated here; do not reintroduce obsolete directory layouts or locale counts.
+Current contracts and the canonical [Skill](../../docs/entities/skill.md), [SkillGroup](../../docs/entities/skill-group.md) and [SkillDomain](../../docs/entities/skill-domain.md) rules govern this workflow. The historical conventions have been consolidated here; do not reintroduce obsolete directory layouts or locale counts.
 
 ### Direct-Skill Domains — mandatory compatibility gate
 

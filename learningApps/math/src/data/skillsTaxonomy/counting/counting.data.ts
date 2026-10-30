@@ -35,4 +35,5 @@ export const counting_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Лічба",
   },
   groupIds: counting_SkillGroups_Ids,
+  description: { methodological: "The concept of quantity develops through one-to-one correspondence between objects and number words, movement along the natural-number sequence, ordinal positions, and grouping objects for counting." },
 });

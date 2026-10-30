@@ -33,4 +33,5 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Pełne setki",
     uk: "Ділення — Круглі сотні",
   },
+  description: { methodological: "Divide multiples of a hundred by one-digit numbers by grouping hundreds and, when needed, exchanging them for tens or ones. The result must satisfy the inverse relation between dividend, divisor, and quotient." },
 });

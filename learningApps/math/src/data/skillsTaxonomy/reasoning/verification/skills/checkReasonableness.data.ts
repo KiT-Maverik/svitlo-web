@@ -33,4 +33,5 @@ export const checkReasonableness_Skill_Data = buildSkillConfig({
     pl: "Ocena sensowności odpowiedzi w kontekście i skali wielkości",
     uk: "Оцінювання правдоподібності відповіді за змістом і порядком величини",
   },
+  description: { methodological: "For 98 + 105, a result near 200 is reasonable in scale whereas 2000 is not, even without carrying out an exact calculation." },
 });

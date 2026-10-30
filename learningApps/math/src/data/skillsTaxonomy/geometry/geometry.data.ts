@@ -35,4 +35,5 @@ export const geometry_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Геометрія",
   },
   groupIds: geometry_SkillGroups_Ids,
+  description: { methodological: "Spatial relationships, properties of plane figures and solids, lines and angles, geometric transformations, and measurement of perimeter and area." },
 });

@@ -33,4 +33,5 @@ export const order1000_Skill_Data = buildSkillConfig({
     pl: "Porównywanie i porządkowanie liczb trzycyfrowych",
     uk: "Порівняння й упорядкування трицифрових чисел",
   },
+  description: { methodological: "Compare three-digit decimal numerals from hundreds through tens to ones; the first unequal place determines their order. Lower-place zeros cannot outweigh a larger higher-place digit." },
 });

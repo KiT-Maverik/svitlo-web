@@ -33,4 +33,5 @@ export const roundTens_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Pełne dziesiątki",
     uk: "Ділення — Круглі десятки",
   },
+  description: { methodological: "Division of multiples of ten can operate on whole tens when quotients preserve place-value weights. If the tens do not divide evenly, regroup into smaller units rather than silently discard a remainder." },
 });

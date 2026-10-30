@@ -33,4 +33,5 @@ export const translateSituation_Skill_Data = buildSkillConfig({
     pl: "Przedstawianie sytuacji wyrażeniem lub równaniem",
     uk: "Подання ситуації виразом або рівнянням",
   },
+  description: { methodological: "A symbolic model must preserve the essential quantities and dependencies of a real or mathematical situation, including known and unknown roles. Correct numbers combined by the wrong operation do not yield an appropriate model." },
 });

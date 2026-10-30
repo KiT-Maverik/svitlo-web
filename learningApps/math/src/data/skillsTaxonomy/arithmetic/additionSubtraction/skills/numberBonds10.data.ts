@@ -33,4 +33,5 @@ export const numberBonds10_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Rozkład liczby 10",
     uk: "Додавання та віднімання — Склад числа 10",
   },
+  description: { methodological: "Ten can be decomposed into multiple ordered or unordered pairs of nonnegative addends whose sum is ten. Increasing one part determines a corresponding decrease in the other while the whole stays fixed." },
 });

@@ -33,4 +33,5 @@ export const oneToOne_Skill_Data = buildSkillConfig({
     pl: "Przyporządkowanie jeden do jednego podczas liczenia",
     uk: "Відповідність «один предмет — одне число» під час лічби",
   },
+  description: { methodological: "Counting a set establishes a one-to-one correspondence between each element and the next number word. Traversal order, spatial arrangement, and appearance do not affect cardinality if each element is counted exactly once." },
 });

@@ -33,4 +33,5 @@ export const rightAngle_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie i sprawdzanie kątów prostych",
     uk: "Розпізнавання та перевірка прямих кутів",
   },
+  description: { methodological: "A right angle measures 90 degrees regardless of ray orientation. A reference or measuring tool can verify this property; rotating the drawing does not change the angle type." },
 });

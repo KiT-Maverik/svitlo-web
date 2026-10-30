@@ -33,4 +33,5 @@ export const totalTensInNumber_Skill_Data = buildSkillConfig({
     pl: "Łączna liczba dziesiątek i setek w liczbie",
     uk: "Загальна кількість десятків і сотень у числі",
   },
+  description: { methodological: "Distinguish the total number of complete units of a place value from the digit in that place: 348 contains 34 complete tens, although its tens digit is 4. Smaller-place remainders must be counted separately." },
 });

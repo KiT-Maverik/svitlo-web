@@ -35,4 +35,5 @@ export const quantities_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Задачі на величини",
   },
   skillIds: quantities_Skills_Ids,
+  description: { methodological: "Practical relationships among work rate, time, price, quantity, mass, capacity, and length." },
 });

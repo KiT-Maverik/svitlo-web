@@ -33,4 +33,5 @@ export const doubleHalf_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Połowa i podwojenie",
     uk: "Ділення — Половина й подвоєння",
   },
+  description: { methodological: "Half of an even quantity is one of two equal addends composing the whole. Doubling the half restores the original whole and provides an inverse check." },
 });

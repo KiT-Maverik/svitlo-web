@@ -7,15 +7,15 @@ A **SkillDomain** denotes a recognizable field within a subject and contains coh
 ## SEMANTIC ROLE
 
 - Give each Domain a distinct name and a **substantive description** of its concepts, scope and boundaries. The description must explain more than the heading and must not say only that this is an area with related Skills.
-- Write the description and hierarchy **in-place in the canonical taxonomy**, not in a separate Markdown Definition file.
+- Before promotion, write descriptions and hierarchy **in-place in the staging taxonomy**, not in a separate Markdown Definition file.
 - Distinguish neighboring Domains pedagogically, without forcing balanced counts or fixed sizes. Prefer two or more truly distinct Groups when appropriate; a **single-Group Domain is strongly discouraged**, requiring an explicit editorial exception. With no meaningful internal grouping, attach Skills directly. **Do not mix direct Skills and Groups within one Domain.**
 - The Domain's Group/Skill membership is a catalog classification, not teaching order, prerequisites or assessment metadata.
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
-The `@svitlo/contracts/taxonomy` `SkillDomain_Config` has `id`, localized `name`, required `groupIds` and optional direct `skillIds`. A grouped Domain uses nonempty `groupIds`; a direct-Skill Domain uses `groupIds: {}` plus nonempty `skillIds`. The Domain builder validates the exclusive, nonempty mode and individual child UUIDs, but it does **not** prove cross-domain uniqueness or downstream registry, index, UI, ancestry or analytics support. These consumers require their own integration audit. There is no `description` property or learner-progress data.
+The `@svitlo/contracts/taxonomy` `SkillDomain_Config` has `id`, localized `name`, required `groupIds` and optional direct `skillIds`. A grouped Domain uses nonempty `groupIds`; a direct-Skill Domain uses `groupIds: {}` plus nonempty `skillIds`. The Domain builder validates the exclusive, nonempty mode and individual child UUIDs, but it does **not** prove cross-domain uniqueness or downstream registry, index, UI, ancestry or analytics support. These consumers require their own integration audit. There is a transitional optional `description: { methodological: string; fe?: Record<LanguageCode, string> }`. Promotion requires a reviewed English `methodological` text; optional `fe` must be absent or complete for every supported locale. There is no learner-progress data.
 
-- **Editorial authority:** `<PackageRoot>/docs/skills/taxonomy.md` heading, explanatory paragraph and Group membership **or direct Skill membership**.
+- **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological explanation, optional complete fe copy and Group membership **or direct Skill membership**.
 - **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
 Descriptions appear as ordinary text, never as `Description:` fields. There are no per-Domain Markdown Definition files or redundant editorial `Status` markers.

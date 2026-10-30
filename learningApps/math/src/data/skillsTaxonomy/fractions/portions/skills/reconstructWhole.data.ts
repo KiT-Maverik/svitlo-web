@@ -33,4 +33,5 @@ export const reconstructWhole_Skill_Data = buildSkillConfig({
     pl: "Wyznaczanie całości na podstawie znanej części jednostkowej",
     uk: "Знаходження цілого за відомою одиничною частиною",
   },
+  description: { methodological: "Given one of n equal parts of a whole, find the complete quantity by multiplying the part by positive n. This inverse relationship with division preserves the defined whole and its measurement unit." },
 });

@@ -30,6 +30,19 @@ describe('buildSkillDomainConfig', () => {
     assert.ok(!('collection' in config));
   });
 
+  it('uses the same nested description validation for a Domain', () => {
+    const config = {
+      ...createDomain({ organisms: groupId }),
+      description: { methodological: 'The conceptual scope of the domain.' },
+    };
+    assert.deepEqual(buildSkillDomainConfig(config).description, config.description);
+    const incomplete = {
+      ...config,
+      description: { methodological: 'Valid text', fe: { en: 'Partial locale' } },
+    } as unknown as SkillDomain_Config;
+    assert.throws(() => buildSkillDomainConfig(incomplete), /Skill description.fe/);
+  });
+
   it('allows direct Skills when the domain has zero Groups', () => {
     const config = createDomain({}, { identify: skillId });
     const result = buildSkillDomainConfig(config);

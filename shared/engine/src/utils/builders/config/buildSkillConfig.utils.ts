@@ -31,6 +31,39 @@ export function validateSkillConfig(config: Skill_Config): void {
   if (unexpected.length > 0) {
     throw new Error(`Skill name contains unsupported languages: ${unexpected.join(', ')}`);
   }
+
+  // Existing records may omit description until editorial migration.
+  // Supplied descriptions must include canonical methodological English.
+  if (config.description !== undefined) {
+    const description = config.description;
+    if (!description || typeof description !== 'object' || Array.isArray(description)) {
+      throw new Error('Skill description must be an object with a methodological string');
+    }
+    if (typeof description.methodological !== 'string' || description.methodological.trim() === '') {
+      throw new Error('Skill description.methodological must be non-empty English text');
+    }
+
+    const unexpectedKeys = Object.keys(description).filter(key => key !== 'methodological' && key !== 'fe');
+    if (unexpectedKeys.length > 0) {
+      throw new Error('Skill description contains unsupported fields: ' + unexpectedKeys.join(', '));
+    }
+
+    if (description.fe !== undefined) {
+      if (!description.fe || typeof description.fe !== 'object' || Array.isArray(description.fe)) {
+        throw new Error('Skill description.fe must contain all supported languages');
+      }
+      for (const language of supportedLanguages) {
+        const value = description.fe[language as keyof typeof description.fe];
+        if (typeof value !== 'string' || value.trim() === '') {
+          throw new Error('Skill description.fe must contain a non-empty translation for ' + language);
+        }
+      }
+      const extraLanguages = Object.keys(description.fe).filter(language => !supportedLanguages.has(language));
+      if (extraLanguages.length > 0) {
+        throw new Error('Skill description.fe contains unsupported languages: ' + extraLanguages.join(', '));
+      }
+    }
+  }
 }
 
 /**

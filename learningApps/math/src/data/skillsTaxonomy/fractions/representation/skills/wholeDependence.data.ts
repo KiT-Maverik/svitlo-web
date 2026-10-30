@@ -33,4 +33,5 @@ export const wholeDependence_Skill_Data = buildSkillConfig({
     pl: "Wyjaśnianie zależności wielkości części od całości",
     uk: "Пояснення залежності величини частини від цілого",
   },
+  description: { methodological: "The same fractional notation denotes the same proportion of different wholes, but its absolute magnitude depends on the size of each whole. Comparing parts from different wholes requires a shared unit or comparable magnitude." },
 });

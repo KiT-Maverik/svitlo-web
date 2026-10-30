@@ -33,4 +33,5 @@ export const columnAddition_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Metoda pisemna",
     uk: "Додавання — Обчислення стовпчиком",
   },
+  description: { methodological: "Written column addition aligns operands by place value, adds corresponding positions, and carries complete tens to the next place. Carry marks and the resulting numeral must reflect decimal positional notation." },
 });

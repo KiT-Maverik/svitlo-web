@@ -33,4 +33,5 @@ export const numberLine20_Skill_Data = buildSkillConfig({
     pl: "Liczby na osi do 20",
     uk: "Числа на прямій до 20",
   },
+  description: { methodological: "A number line orders numbers by coordinate; equal numerical increments occupy equal lengths on its scale. The predecessor and successor lie one unit interval to the left and right." },
 });

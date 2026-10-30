@@ -33,4 +33,5 @@ export const expandedForm_Skill_Data = buildSkillConfig({
     pl: "Rozwinięty zapis liczby",
     uk: "Розгорнутий запис числа за розрядами",
   },
+  description: { methodological: "Standard expanded form expresses a number as the sum of its nonzero place values, and recombining the terms restores the number. This is a positional representation of the same value, not a different number." },
 });

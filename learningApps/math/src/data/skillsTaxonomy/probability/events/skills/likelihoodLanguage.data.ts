@@ -33,4 +33,5 @@ export const likelihoodLanguage_Skill_Data = buildSkillConfig({
     pl: "Porównywanie prawdopodobieństwa zdarzeń codziennych",
     uk: "Порівняння ймовірності повсякденних подій",
   },
+  description: { methodological: "Probability describes the chance of an event under specified conditions, not merely whether it is possible. Comparisons require considering outcomes, their likelihoods, and the experimental conditions without assuming outcomes are equally likely." },
 });

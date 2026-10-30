@@ -33,4 +33,5 @@ export const chooseOperationMulDiv_Skill_Data = buildSkillConfig({
     pl: "Wybór mnożenia lub dzielenia",
     uk: "Вибір множення або ділення",
   },
+  description: { methodological: "Multiplication relates the number of equal groups, the size of each group, and their total; division finds an unknown component from the other two. The structure of equal groups determines the operation rather than a particular word in the problem." },
 });

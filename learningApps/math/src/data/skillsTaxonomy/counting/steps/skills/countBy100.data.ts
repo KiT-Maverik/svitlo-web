@@ -33,4 +33,5 @@ export const countBy100_Skill_Data = buildSkillConfig({
     pl: "Liczenie co 100",
     uk: "Лічба з кроком 100",
   },
+  description: { methodological: "A step of one hundred increases the number of complete hundreds by one; the tens and ones stay unchanged as long as the range permits. This relies on decimal place value." },
 });

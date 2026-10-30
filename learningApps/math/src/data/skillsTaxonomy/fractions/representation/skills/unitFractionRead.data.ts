@@ -33,4 +33,5 @@ export const unitFractionRead_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie i zapisywanie ułamków jednostkowych",
     uk: "Читання та запис одиничних дробів",
   },
+  description: { methodological: "A unit fraction has numerator one and a positive denominator stating how many equal parts form the whole. Half, third, and quarter correspond to the fractions 1/2, 1/3, and 1/4." },
 });

@@ -33,4 +33,5 @@ export const doubleTwice_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Dwukrotne podwajanie",
     uk: "Множення — Подвійне подвоєння",
   },
+  description: { methodological: "Four equal groups can be obtained by doubling and then doubling again. This is a calculation strategy for multiplication by four, not necessarily a separate general multiplication concept." },
 });

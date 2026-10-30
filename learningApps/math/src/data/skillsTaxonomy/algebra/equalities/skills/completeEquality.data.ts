@@ -33,4 +33,5 @@ export const completeEquality_Skill_Data = buildSkillConfig({
     pl: "Uzupełnianie prawdziwej równości",
     uk: "Доповнення рівності до істинної",
   },
+  description: { methodological: "A missing value in an equation must make both sides equal. Finding it requires considering the operation structure and relevant number domain, rather than filling a familiar fact without checking." },
 });

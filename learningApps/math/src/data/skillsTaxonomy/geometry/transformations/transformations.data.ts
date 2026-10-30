@@ -35,4 +35,5 @@ export const transformations_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Геометричні перетворення",
   },
   skillIds: transformations_Skills_Ids,
+  description: { methodological: "Changes in a shape's position through rotation, translation, and reflection, along with symmetry about an axis." },
 });

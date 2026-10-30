@@ -33,4 +33,5 @@ export const workRateTime_Skill_Data = buildSkillConfig({
     pl: "Powiązanie wydajności, czasu i wykonanej pracy",
     uk: "Зв’язок продуктивності, часу й обсягу роботи",
   },
+  description: { methodological: "At a constant work rate, the amount of completed work equals rate multiplied by elapsed time. Units must be consistent, and the formula does not directly model varying rates without an additional assumption or model." },
 });

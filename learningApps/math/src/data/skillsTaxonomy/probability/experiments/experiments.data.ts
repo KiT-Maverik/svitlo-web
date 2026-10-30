@@ -35,4 +35,5 @@ export const experiments_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Експерименти",
   },
   skillIds: experiments_Skills_Ids,
+  description: { methodological: "Variation in observed outcome frequencies across repeated series of random trials even when their conditions remain the same." },
 });

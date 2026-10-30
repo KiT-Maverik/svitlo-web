@@ -35,4 +35,5 @@ export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Розв’язування задач",
   },
   groupIds: problemSolving_SkillGroups_Ids,
+  description: { methodological: "Translating real-life situations into mathematical models, selecting operations, planning multi-step solutions, and checking whether answers make sense." },
 });

@@ -33,4 +33,5 @@ export const unitPriceTotal_Skill_Data = buildSkillConfig({
     pl: "Obliczanie łącznego kosztu na podstawie ceny jednostkowej i liczby sztuk",
     uk: "Обчислення загальної вартості за ціною та кількістю",
   },
+  description: { methodological: "When the unit price is fixed, total cost equals unit price multiplied by quantity; knowing any two of these values can determine the third. Monetary totals must be distinguished from prices per unit and the quantity units kept consistent." },
 });

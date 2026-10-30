@@ -33,4 +33,5 @@ export const findExtraneousData_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie zbędnych danych",
     uk: "Виявлення зайвих даних",
   },
+  description: { methodological: "Extraneous information does not affect computing or justifying the answer to the specific question asked. The same detail can become relevant if the unknown changes, so mathematical relationships must be checked rather than merely deleting text." },
 });

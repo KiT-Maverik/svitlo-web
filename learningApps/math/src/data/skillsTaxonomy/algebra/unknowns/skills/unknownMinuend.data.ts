@@ -33,4 +33,5 @@ export const unknownMinuend_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie nieznanej odjemnej",
     uk: "Знаходження невідомого зменшуваного",
   },
+  description: { methodological: "When the minuend is unknown, reconstruct it by adding the subtrahend to the given difference. Verification must satisfy the original equation; this differs from finding an unknown subtrahend." },
 });

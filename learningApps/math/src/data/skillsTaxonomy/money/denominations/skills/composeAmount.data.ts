@@ -33,4 +33,5 @@ export const composeAmount_Skill_Data = buildSkillConfig({
     pl: "Układanie zadanej kwoty pieniędzy",
     uk: "Складання заданої грошової суми",
   },
+  description: { methodological: "The same monetary amount can be composed from different combinations of available denominations in one currency. Exchanging coins or notes must preserve total value, and denominations that do not exist cannot be used." },
 });

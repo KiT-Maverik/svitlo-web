@@ -33,4 +33,5 @@ export const chooseOperationAddSub_Skill_Data = buildSkillConfig({
     pl: "Wybór dodawania lub odejmowania",
     uk: "Вибір додавання або віднімання",
   },
+  description: { methodological: "The choice between addition and subtraction depends on the relationship between known and unknown quantities: combining, changing, comparing, or finding a part. The same wording in different problems does not always imply the same operation." },
 });

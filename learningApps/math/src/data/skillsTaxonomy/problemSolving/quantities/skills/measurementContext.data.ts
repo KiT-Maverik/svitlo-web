@@ -33,4 +33,5 @@ export const measurementContext_Skill_Data = buildSkillConfig({
     pl: "Modelowanie zadań o pomiarach",
     uk: "Моделювання задач на вимірювані величини",
   },
+  description: { methodological: "Modeling a word problem involving measured quantities requires identifying the physical quantity, its unit, and relationships between known and unknown values. Length, mass, capacity, and time are possible contexts rather than mandatory separate parts of this single skill; consistent units and dimensions determine model validity." },
 });

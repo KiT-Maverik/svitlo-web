@@ -33,4 +33,5 @@ export const rulerZero_Skill_Data = buildSkillConfig({
     "pl": "Rozpoczynanie pomiaru od zera na linijce",
     "uk": "Вимірювання лінійкою від нульової позначки"
   },
+  description: { methodological: "A ruler scale counts intervals between tick marks, not the number of printed labels; when starting at the zero mark, the reading at the endpoint gives the measured length." },
 });

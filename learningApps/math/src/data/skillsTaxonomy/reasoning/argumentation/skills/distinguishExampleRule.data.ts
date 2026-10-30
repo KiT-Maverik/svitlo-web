@@ -33,4 +33,5 @@ export const distinguishExampleRule_Skill_Data = buildSkillConfig({
     pl: "Odróżnianie pojedynczego przykładu od reguły ogólnej",
     uk: "Розрізнення окремого прикладу та загального правила",
   },
+  description: { methodological: "A confirming instance does not establish a universal mathematical proposition. A general rule requires justification across the entire specified class, while one valid counterexample refutes it." },
 });

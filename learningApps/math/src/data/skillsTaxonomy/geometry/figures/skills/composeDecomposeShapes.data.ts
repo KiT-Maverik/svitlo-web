@@ -33,4 +33,5 @@ export const composeDecomposeShapes_Skill_Data = buildSkillConfig({
     pl: "Składanie i rozkładanie figur płaskich",
     uk: "Складання та розкладання плоских фігур",
   },
+  description: { methodological: "Decomposition partitions a figure into nonoverlapping pieces without gaps, and recombining them reconstructs the original figure. Rearrangement preserves the combined area but may change the outer boundary and perimeter." },
 });

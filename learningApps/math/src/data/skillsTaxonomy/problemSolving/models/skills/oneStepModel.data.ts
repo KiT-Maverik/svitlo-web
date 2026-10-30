@@ -33,4 +33,5 @@ export const oneStepModel_Skill_Data = buildSkillConfig({
     pl: "Modelowanie zadania jednoetapowego",
     uk: "Модель одноходової задачі",
   },
+  description: { methodological: "A mathematical model must preserve the original problem's quantities, unknown, and relationships, regardless of whether it is a drawing, diagram, or expression. Using the correct numbers to represent a different relationship does not yield a valid model." },
 });

@@ -33,4 +33,5 @@ export const backward20_Skill_Data = buildSkillConfig({
     pl: "Liczenie wstecz od 20",
     uk: "Лічба назад у межах 20",
   },
+  description: { methodological: "Find successive predecessors by subtracting one from any starting number. Backward counting must work across ten boundaries, not merely reproduce a memorized counting rhyme." },
 });

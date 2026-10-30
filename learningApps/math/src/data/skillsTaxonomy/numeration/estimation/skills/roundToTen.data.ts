@@ -33,4 +33,5 @@ export const roundToTen_Skill_Data = buildSkillConfig({
     pl: "Zaokrąglanie do najbliższej dziesiątki",
     uk: "Округлення до найближчого десятка",
   },
+  description: { methodological: "Rounding to the nearest ten replaces a value with the closest multiple of ten, comparing distances to neighboring tens. An exact halfway case needs an agreed tie-breaking convention." },
 });

@@ -33,4 +33,5 @@ export const readWrite1000_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie i zapisywanie liczb trzycyfrowych",
     uk: "Читання й запис трицифрових чисел",
   },
+  description: { methodological: "A three-digit numeral encodes hundreds, tens, and ones. An internal zero indicates the absence of units at that place while retaining the places of following digits and the number's value." },
 });

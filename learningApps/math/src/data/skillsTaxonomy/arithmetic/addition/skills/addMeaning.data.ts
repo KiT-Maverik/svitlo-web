@@ -33,4 +33,5 @@ export const addMeaning_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Znaczenie i modele",
     uk: "Додавання — Зміст і моделі",
   },
+  description: { methodological: "Addition can model the union of disjoint sets or an increase from an initial quantity. The same sum retains its value across scenarios, although the roles of components and the kind of change can differ." },
 });

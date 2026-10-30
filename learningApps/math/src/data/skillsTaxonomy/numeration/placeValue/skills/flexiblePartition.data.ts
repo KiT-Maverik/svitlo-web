@@ -33,4 +33,5 @@ export const flexiblePartition_Skill_Data = buildSkillConfig({
     pl: "Elastyczny rozkład liczb",
     uk: "Гнучке розкладання числа",
   },
+  description: { methodological: "A single number admits several equivalent additive decompositions, including non-place-value partitions. These rely on the associative property of addition and distinguish a value from a particular written representation." },
 });

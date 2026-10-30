@@ -33,4 +33,5 @@ export const shapeAttributes_Skill_Data = buildSkillConfig({
     pl: "Klasyfikowanie figur według boków i wierzchołków",
     uk: "Класифікація фігур за сторонами та вершинами",
   },
+  description: { methodological: "Classify polygons by their side and vertex counts and defining geometric properties. A simple polygon has equally many sides and vertices, though orientation, side lengths, and shape can vary." },
 });

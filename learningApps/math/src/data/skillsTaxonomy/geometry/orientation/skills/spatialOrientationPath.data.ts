@@ -33,4 +33,5 @@ export const spatialOrientationPath_Skill_Data = buildSkillConfig({
     pl: "Podawanie i wykonywanie wskazówek drogi",
     uk: "Складання та виконання маршрутних інструкцій",
   },
+  description: { methodological: "A route is an ordered sequence of moves and turns relative to a fixed initial orientation. Changing command order or starting direction may change the destination even if the set of steps stays the same." },
 });

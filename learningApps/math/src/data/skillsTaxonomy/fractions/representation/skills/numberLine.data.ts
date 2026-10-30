@@ -33,4 +33,5 @@ export const numberLine_Skill_Data = buildSkillConfig({
     pl: "Umieszczanie ułamków między 0 a 1 na osi liczbowej",
     uk: "Розташування дробів між 0 і 1 на числовій прямій",
   },
+  description: { methodological: "For positive b, subdividing the unit interval into b equal parts locates a/b by moving a such steps from zero. The resulting number-line representation must preserve scale and numerical order." },
 });

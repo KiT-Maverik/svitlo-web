@@ -35,4 +35,5 @@ export const groups_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Задачі на групування",
   },
   skillIds: groups_Skills_Ids,
+  description: { methodological: "Situations involving equal groups and independent selections from two sets, distinguishing multiplication from counting combinations." },
 });

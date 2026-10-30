@@ -33,4 +33,5 @@ export const commutativeAddition_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Przemienność",
     uk: "Додавання — Переставний закон",
   },
+  description: { methodological: "Commutativity of addition states a + b = b + a: exchanging addends preserves their sum. This changes operand order, not operand values, and can be used to choose a convenient computation order." },
 });

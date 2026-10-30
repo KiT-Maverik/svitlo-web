@@ -33,4 +33,5 @@ export const shapeOnSolidSurface_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie figur płaskich na powierzchniach brył",
     uk: "Розпізнавання плоских фігур на поверхнях тіл",
   },
+  description: { methodological: "Plane figures can coincide with the faces of solids or their plane sections, but the solid itself remains three-dimensional. Distinguish a two-dimensional part of a surface from the entire three-dimensional object." },
 });

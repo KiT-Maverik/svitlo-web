@@ -33,4 +33,5 @@ export const subtractZero_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — Zero",
     uk: "Віднімання — Нуль",
   },
+  description: { methodological: "Subtracting zero leaves any number unchanged: a - 0 = a. This does not imply that zero minus a positive value is unchanged or that subtraction is commutative." },
 });

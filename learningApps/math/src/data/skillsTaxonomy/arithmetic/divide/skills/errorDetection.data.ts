@@ -33,4 +33,5 @@ export const errorDetection_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Wykrywanie błędów",
     uk: "Ділення — Виявлення помилок",
   },
+  description: { methodological: "If 19 / 4 is reported with remainder 7, a grouping model shows that another full group of four can be formed. Error recognition depends on the remainder being less than the positive divisor." },
 });

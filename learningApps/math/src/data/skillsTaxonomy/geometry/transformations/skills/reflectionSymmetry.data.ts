@@ -33,4 +33,5 @@ export const reflectionSymmetry_Skill_Data = buildSkillConfig({
     pl: "Wyznaczanie osi symetrii i uzupełnianie odbić",
     uk: "Знаходження осі симетрії та добудова відбиття",
   },
+  description: { methodological: "An axis of symmetry defines a reflection that maps a figure onto itself. Corresponding points lie on opposite sides at equal perpendicular distances; points on the axis remain fixed." },
 });
