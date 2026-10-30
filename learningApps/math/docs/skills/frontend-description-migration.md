@@ -149,3 +149,36 @@ All 33 entity descriptions below are newly drafted learner-facing English copy. 
 - **Mathematical boundaries preserved:** numeral vs numerical value; digits vs place values; flexible decomposition vs standard expanded form; total tens vs tens digit; zero as placeholder; ordering, coordinates and unit distance; approximation vs exact counting; rounding midpoint remains subject to an explicitly selected tie-breaking rule.
 - **Review limits:** translations were authored and checked for mathematical fidelity, terminology, RTL and Belarusian Taraškievica; no independent native-speaker certification was performed. Local TypeScript typechecks and focused npm tests **were not run** in the GitHub connector environment. Check CI runs separately; never claim that static patch checks are compiled or runtime tests.
 - **Next Agent 1 Domain:** Fractions — 19 Skills / 4 Groups. Agent 2 owns Arithmetic + Algebra; Agent 3 owns #7–#13; do not cross ownership.
+
+## Fractions — English authoring gate (2026-10-30)
+
+Every English frontend description below was authored first against the existing English `description.methodological`. They preserve the chosen whole, equality of parts, and fraction value, without changing the Skills' scopes or hardcoding a teaching level. They serve as the reference for subsequent translations.
+
+| Entity file (under `fractions/`) | English `description.fe.en` |
+|---|---|
+| `fractions.data.ts` | Fractions show parts of a whole and positions on a number line. Learn how to represent, compare, and calculate with them. |
+| `representation/representation.data.ts` | Show parts of a chosen whole with fraction symbols, pictures, or a number line, including fractions equal to or greater than one. |
+| `representation/skills/denominatorMeaning.data.ts` | The bottom number tells how many equal parts make one whole. It tells the size of each part, not how many parts you have. |
+| `representation/skills/equivalentVisual.data.ts` | Different fractions can represent the same amount of the same whole. See how, for example, 1/2 and 2/4 cover equal amounts. |
+| `representation/skills/fractionGreaterThanOne.data.ts` | When the top number is greater than the bottom number, the fraction is more than one whole. Show it with whole parts, a mixed number, or a number line. |
+| `representation/skills/nonUnitModel.data.ts` | Combine several equal parts of the same whole to show a fraction such as 3/4. The number of parts can reach or exceed one whole. |
+| `representation/skills/numberLine.data.ts` | Split the distance from 0 to 1 into equal steps, then find the position of a fraction such as 3/5. |
+| `representation/skills/numeratorMeaning.data.ts` | The top number tells how many equal parts are counted. With the same bottom number, more parts mean a greater fraction. |
+| `representation/skills/oneAsFraction.data.ts` | All the equal parts together make one whole: 2/2, 3/3, and 5/5 each equal 1. |
+| `representation/skills/tenthsAsDivision.data.ts` | One tenth is one of ten equal parts of a whole. Dividing the whole by 10 gives 1/10, which can also be written 0.1. |
+| `representation/skills/unitFractionModel.data.ts` | Show 1/n as one of n equal parts of the same whole, using shapes, lengths, or groups of objects. |
+| `representation/skills/unitFractionRead.data.ts` | Read and write fractions with 1 on top, such as 1/2 (one half), 1/3 (one third), and 1/4 (one quarter). |
+| `representation/skills/wholeAndEqualParts.data.ts` | Choose the whole and divide it into equal-sized parts to name a fraction. Pieces of different sizes are not equal fractions of that whole. |
+| `representation/skills/wholeDependence.data.ts` | A fraction tells what share of a whole you have. Half of a big whole is larger than half of a small whole. |
+| `portions/portions.data.ts` | Find a fractional part of a quantity or work backward from a known equal part to the whole. |
+| `portions/skills/findUnitPart.data.ts` | To find 1/n of a quantity, divide the quantity into n equal shares. A share can include a fraction of a measurement unit. |
+| `portions/skills/reconstructWhole.data.ts` | If you know one of n equal shares, multiply it by n to find the whole quantity. |
+| `comparison/comparison.data.ts` | Compare fractions of the same whole by looking at the size of equal parts or the number of parts taken. |
+| `comparison/skills/compareSameNumerator.data.ts` | When the top numbers match, a larger positive bottom number means smaller parts and a smaller fraction of the same whole. |
+| `comparison/skills/compareUnit.data.ts` | For fractions with 1 on top, dividing the same whole into more equal parts makes each part smaller: 1/4 is smaller than 1/2. |
+| `comparison/skills/sameDenominatorModel.data.ts` | When the bottom numbers match, the fraction with more equal parts is larger. A picture can show why 3/5 is greater than 2/5. |
+| `arithmetic/arithmetic.data.ts` | Add or subtract fractions made of the same-sized parts of one whole, keeping the denominator unchanged. |
+| `arithmetic/skills/addLikeDenominators.data.ts` | Add fractions with the same bottom number by adding their top numbers. The size of each part stays the same, even if the total exceeds one whole. |
+| `arithmetic/skills/subtractLikeDenominators.data.ts` | Subtract fractions with the same bottom number by subtracting their top numbers. You remove parts without changing their size. |
+
+**Scope:** 19 Skills, 4 Groups, 1 Domain (24 entities, 672 strings at 28 languages). Mathematical checks: same whole and equal-sized parts; larger denominators make smaller parts with numerator held positive; 1/n of a quantity may be nonintegral; denominators must be positive for the comparisons here; like-denominator fraction arithmetic remains valid beyond one whole.
