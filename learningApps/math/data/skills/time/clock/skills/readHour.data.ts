@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const readHour_Skill_Data = buildSkillConfig({
   id: '587f72d3-5c93-4aa7-9e36-588a1f5483f0',
   name: {

@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { logicalElimination_Skill_Data } from './skills';
 
 export const logic_SkillGroup_Data = buildSkillGroupConfig({

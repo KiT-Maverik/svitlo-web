@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const rightAngle_Skill_Data = buildSkillConfig({
   id: '8a62dd2e-68cb-4e4f-b971-14aeb86d5a6e',
   name: {

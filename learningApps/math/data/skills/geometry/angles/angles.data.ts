@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { angleAsTurn_Skill_Data, rightAngle_Skill_Data, angleTypes_Skill_Data } from './skills';
 
 export const angles_SkillGroup_Data = buildSkillGroupConfig({

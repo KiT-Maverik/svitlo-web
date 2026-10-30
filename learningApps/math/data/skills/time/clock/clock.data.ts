@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { read24HourClock_Skill_Data, readFiveMinute_Skill_Data, readHalfQuarter_Skill_Data, readHour_Skill_Data, readMinute_Skill_Data } from './skills';
 
 export const clock_SkillGroup_Data = buildSkillGroupConfig({

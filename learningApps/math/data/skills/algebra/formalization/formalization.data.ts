@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { translateSituation_Skill_Data } from './skills';
 
 export const formalization_SkillGroup_Data = buildSkillGroupConfig({

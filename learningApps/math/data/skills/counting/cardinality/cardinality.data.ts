@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { basicCardinality_Skill_Data, compareSets_Skill_Data, groupAndCount_Skill_Data, zero_Skill_Data } from './skills';
 
 export const cardinality_SkillGroup_Data = buildSkillGroupConfig({

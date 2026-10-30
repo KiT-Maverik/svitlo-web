@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const oneStepModel_Skill_Data = buildSkillConfig({
   id: '64808d1f-bbb7-4252-965f-9f361078720c',
   name: {

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const subtractMeaning_Skill_Data = buildSkillConfig({
   id: '48c9e5d7-43c0-414d-b760-788292403331',
   name: {

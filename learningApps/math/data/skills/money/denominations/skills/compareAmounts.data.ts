@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const compareAmounts_Skill_Data = buildSkillConfig({
   id: '6ac377cf-4d67-4ef4-bdc7-4bb8a0895e81',
   name: {

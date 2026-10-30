@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { beforeAfterBetween_Skill_Data, numberLine20_Skill_Data, numberLine1000_Skill_Data, distanceOnLine_Skill_Data } from './skills';
 
 export const numberLine_SkillGroup_Data = buildSkillGroupConfig({

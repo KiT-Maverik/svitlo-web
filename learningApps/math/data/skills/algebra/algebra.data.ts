@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { equalities_SkillGroup_Data, expressions_SkillGroup_Data, formalization_SkillGroup_Data, patterns_SkillGroup_Data, unknowns_SkillGroup_Data } from './index';
 
 export const algebra_SkillDomain_Data = buildSkillDomainConfig({

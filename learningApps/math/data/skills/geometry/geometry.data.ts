@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { orientation_SkillGroup_Data, figures_SkillGroup_Data, solids_SkillGroup_Data, lines_SkillGroup_Data, angles_SkillGroup_Data, circles_SkillGroup_Data, transformations_SkillGroup_Data, perimeter_SkillGroup_Data, area_SkillGroup_Data, perimeterArea_SkillGroup_Data } from './index';
 
 export const geometry_SkillDomain_Data = buildSkillDomainConfig({

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const eventDuration_Skill_Data = buildSkillConfig({
   id: 'c11ad392-6a44-49f4-a2b7-ea246a9a8ae4',
   name: {

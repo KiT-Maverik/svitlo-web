@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const compositeArea_Skill_Data = buildSkillConfig({
   id: '8dedc81b-faae-489e-9d3c-14331920224e',
   name: {

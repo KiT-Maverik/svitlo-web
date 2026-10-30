@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const rectanglePerimeter_Skill_Data = buildSkillConfig({
   id: 'bd8c28e8-38f7-4a07-a26a-1bec77f0d53c',
   name: {

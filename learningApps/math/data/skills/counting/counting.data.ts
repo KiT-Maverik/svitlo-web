@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { sequence_SkillGroup_Data, cardinality_SkillGroup_Data, steps_SkillGroup_Data, ordinal_SkillGroup_Data, parity_SkillGroup_Data } from './index';
 
 export const counting_SkillDomain_Data = buildSkillDomainConfig({

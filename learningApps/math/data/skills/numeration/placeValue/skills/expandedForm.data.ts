@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const expandedForm_Skill_Data = buildSkillConfig({
   id: 'f78fce9f-6e79-4378-9448-39fcdbc42d0d',
   name: {

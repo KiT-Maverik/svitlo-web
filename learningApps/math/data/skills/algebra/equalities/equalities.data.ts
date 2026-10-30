@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { completeEquality_Skill_Data, equalityMeaning_Skill_Data, trueFalseEquality_Skill_Data } from './skills';
 
 export const equalities_SkillGroup_Data = buildSkillGroupConfig({

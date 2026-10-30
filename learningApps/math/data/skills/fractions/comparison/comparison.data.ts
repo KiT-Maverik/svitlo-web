@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { compareSameNumerator_Skill_Data, compareUnit_Skill_Data, sameDenominatorModel_Skill_Data } from './skills';
 
 export const comparison_SkillGroup_Data = buildSkillGroupConfig({

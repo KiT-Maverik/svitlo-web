@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const reflectionSymmetry_Skill_Data = buildSkillConfig({
   id: 'f570551e-7d44-4a2c-8567-16ebbffeb142',
   name: {

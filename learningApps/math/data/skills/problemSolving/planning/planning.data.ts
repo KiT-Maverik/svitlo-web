@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { constructInverseProblem_Skill_Data, explainAnswerUnits_Skill_Data, multipleSolutionStrategies_Skill_Data, threeStepPlan_Skill_Data, twoStepPlan_Skill_Data } from './skills';
 
 export const planning_SkillGroup_Data = buildSkillGroupConfig({

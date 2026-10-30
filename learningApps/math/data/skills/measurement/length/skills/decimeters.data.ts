@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const decimeters_Skill_Data = buildSkillConfig({
   id: 'f12c51d8-766f-45ed-beda-28871f4d4d99',
   name: {

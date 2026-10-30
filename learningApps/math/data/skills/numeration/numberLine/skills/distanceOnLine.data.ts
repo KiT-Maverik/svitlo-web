@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const distanceOnLine_Skill_Data = buildSkillConfig({
   id: 'c3a0e1b2-2158-4365-be77-cf97d3bace23',
   name: {

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const formulateInvestigationQuestion_Skill_Data = buildSkillConfig({
   id: '9977837d-7e8b-4a51-8a83-89d51242aa8a',
   name: {

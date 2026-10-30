@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { conditions_SkillGroup_Data, models_SkillGroup_Data, planning_SkillGroup_Data, comparisons_SkillGroup_Data, parts_SkillGroup_Data, groups_SkillGroup_Data, quantities_SkillGroup_Data } from './index';
 
 export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({

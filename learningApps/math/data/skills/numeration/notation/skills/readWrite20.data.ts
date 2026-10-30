@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const readWrite20_Skill_Data = buildSkillConfig({
   id: '77344ce3-a3dc-4f48-8a4f-369d520b77d4',
   name: {

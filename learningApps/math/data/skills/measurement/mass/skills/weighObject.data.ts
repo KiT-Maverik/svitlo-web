@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const weighObject_Skill_Data = buildSkillConfig({
   id: '401849ab-d37f-49a3-9179-da85f6704707',
   name: {

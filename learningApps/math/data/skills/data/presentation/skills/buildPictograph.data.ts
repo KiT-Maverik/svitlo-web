@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const buildPictograph_Skill_Data = buildSkillConfig({
   id: 'fdbb130e-d9ff-490f-9979-4b3c3ef67271',
   name: {

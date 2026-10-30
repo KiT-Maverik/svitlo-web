@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const triangleRectangleSquare_Skill_Data = buildSkillConfig({
   id: 'c4186c89-f443-4eb0-8226-e1774c2e76d7',
   name: {

@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { identify2dShapes_Skill_Data, shapeAttributes_Skill_Data, polygon_Skill_Data, triangleRectangleSquare_Skill_Data, composeDecomposeShapes_Skill_Data } from './skills';
 
 export const figures_SkillGroup_Data = buildSkillGroupConfig({

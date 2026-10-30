@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { equalSharing_Skill_Data, equalGrouping_Skill_Data, relationToMultiplication_Skill_Data, readExpression_Skill_Data, by2_Skill_Data, by3_Skill_Data, by4_Skill_Data, by5_Skill_Data, by6_Skill_Data, by7_Skill_Data, by8_Skill_Data, by9_Skill_Data, by1AndSelf_Skill_Data, zeroDividend_Skill_Data, noDivisionByZero_Skill_Data, doubleHalf_Skill_Data, roundTens_Skill_Data, roundHundreds_Skill_Data, twoDigitByOne_Skill_Data, threeDigitByOne_Skill_Data, withRemainder_Skill_Data, remainderLessDivisor_Skill_Data, checkQuotient_Skill_Data } from './skills';
 
 export const divide_SkillGroup_Data = buildSkillGroupConfig({

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const daySequence_Skill_Data = buildSkillConfig({
   id: '8dba0c68-4d5b-4e3f-a6fa-119f448baaa4',
   name: {

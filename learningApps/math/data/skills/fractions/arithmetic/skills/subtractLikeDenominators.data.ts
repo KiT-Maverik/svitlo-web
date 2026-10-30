@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
   id: '80d0e1fc-eda0-4b6f-8aad-a27971ba7650',
   name: {

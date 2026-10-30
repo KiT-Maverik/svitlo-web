@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { digits09_Skill_Data, readWrite20_Skill_Data, readWrite100_Skill_Data, readWrite1000_Skill_Data } from './skills';
 
 export const notation_SkillGroup_Data = buildSkillGroupConfig({

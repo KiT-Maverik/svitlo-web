@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const findStartOrEnd_Skill_Data = buildSkillConfig({
   id: 'f98b80c1-0692-4ac2-a254-95a20ab13686',
   name: {

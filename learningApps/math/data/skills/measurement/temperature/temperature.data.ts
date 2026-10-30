@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { readTemperature_Skill_Data } from './skills';
 
 export const temperature_SkillGroup_Data = buildSkillGroupConfig({

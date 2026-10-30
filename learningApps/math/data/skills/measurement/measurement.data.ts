@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { length_SkillGroup_Data, mass_SkillGroup_Data, capacity_SkillGroup_Data, temperature_SkillGroup_Data, general_SkillGroup_Data } from './index';
 
 export const measurement_SkillDomain_Data = buildSkillDomainConfig({

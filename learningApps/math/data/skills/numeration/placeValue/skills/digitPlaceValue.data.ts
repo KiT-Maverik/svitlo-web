@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const digitPlaceValue_Skill_Data = buildSkillConfig({
   id: 'bfa629a1-292a-4a80-8305-001a2506e4bb',
   name: {

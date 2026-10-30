@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { arithmeticPattern_Skill_Data, growingPattern_Skill_Data } from './skills';
 
 export const patterns_SkillGroup_Data = buildSkillGroupConfig({

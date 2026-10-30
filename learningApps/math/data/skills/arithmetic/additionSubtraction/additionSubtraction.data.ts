@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { partWhole_Skill_Data, factsWithin10_Skill_Data, numberBonds10_Skill_Data, factsWithin20_Skill_Data, inverseOperations_Skill_Data, addSubtractTens_Skill_Data, twoDigitNoRegroup_Skill_Data, placeValueMental_Skill_Data, compensation_Skill_Data, hundredsAndTens_Skill_Data, threeDigitNoRegroup_Skill_Data, estimateResult_Skill_Data, checkWithInverse_Skill_Data } from './skills';
 
 export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({

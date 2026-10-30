@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const drawConclusion_Skill_Data = buildSkillConfig({
   id: 'cda308de-9fd0-4536-8635-2f5ba1a7010d',
   name: {

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const convertHoursMinutes_Skill_Data = buildSkillConfig({
   id: '131741ec-c4d9-4f98-9c52-208326de7cd0',
   name: {

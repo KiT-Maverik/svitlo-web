@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const likelihoodLanguage_Skill_Data = buildSkillConfig({
   id: 'a2a4702d-d512-4459-a699-a4fd874670ac',
   name: {

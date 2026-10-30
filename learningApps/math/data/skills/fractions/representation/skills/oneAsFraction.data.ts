@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const oneAsFraction_Skill_Data = buildSkillConfig({
   id: '24ae675d-82dc-4eb4-94fe-adc96f15e452',
   name: {

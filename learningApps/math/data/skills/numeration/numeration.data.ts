@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { notation_SkillGroup_Data, placeValue_SkillGroup_Data, comparison_SkillGroup_Data, numberLine_SkillGroup_Data, estimation_SkillGroup_Data } from './index';
 
 export const numeration_SkillDomain_Data = buildSkillDomainConfig({

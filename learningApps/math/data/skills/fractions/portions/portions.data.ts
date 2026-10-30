@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { findUnitPart_Skill_Data, reconstructWhole_Skill_Data } from './skills';
 
 export const portions_SkillGroup_Data = buildSkillGroupConfig({

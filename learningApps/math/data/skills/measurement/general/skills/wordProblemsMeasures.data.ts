@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const wordProblemsMeasures_Skill_Data = buildSkillConfig({
   id: '64050aaa-4552-4d11-a947-c922f51e89f8',
   name: {

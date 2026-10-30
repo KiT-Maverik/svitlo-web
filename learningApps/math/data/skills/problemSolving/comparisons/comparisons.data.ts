@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { additiveComparison_Skill_Data, increaseDecreaseFactor_Skill_Data, increaseDecreaseNumber_Skill_Data, multiplicativeComparison_Skill_Data } from './skills';
 
 export const comparisons_SkillGroup_Data = buildSkillGroupConfig({

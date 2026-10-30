@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const multipleRepresentations_Skill_Data = buildSkillConfig({
   id: '0e2bf14b-81b7-4cca-8fd0-56bb46a11816',
   name: {

@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { oneToOne_Skill_Data, forward20_Skill_Data, backward20_Skill_Data, forward100_Skill_Data, forward1000_Skill_Data } from './skills';
 
 export const sequence_SkillGroup_Data = buildSkillGroupConfig({

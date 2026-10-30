@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { multipleRepresentations_Skill_Data } from './skills';
 
 export const representations_SkillGroup_Data = buildSkillGroupConfig({

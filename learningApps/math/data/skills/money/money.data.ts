@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { denominations_SkillGroup_Data, transactions_SkillGroup_Data } from './index';
 
 export const money_SkillDomain_Data = buildSkillDomainConfig({

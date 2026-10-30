@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { compositeArea_Skill_Data, areaAsCovering_Skill_Data, countUnitSquares_Skill_Data, rectangleAreaModel_Skill_Data } from './skills';
 
 export const area_SkillGroup_Data = buildSkillGroupConfig({

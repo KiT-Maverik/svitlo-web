@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { certainImpossible_Skill_Data, likelihoodLanguage_Skill_Data, listOutcomes_Skill_Data } from './skills';
 
 export const events_SkillGroup_Data = buildSkillGroupConfig({

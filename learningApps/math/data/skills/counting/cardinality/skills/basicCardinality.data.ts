@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const basicCardinality_Skill_Data = buildSkillConfig({
   id: '806fb33e-81a3-4e59-b57b-1ea7ed549d9b',
   name: {

@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { measurementContext_Skill_Data, priceQuantityCost_Skill_Data, workRateTime_Skill_Data } from './skills';
 
 export const quantities_SkillGroup_Data = buildSkillGroupConfig({

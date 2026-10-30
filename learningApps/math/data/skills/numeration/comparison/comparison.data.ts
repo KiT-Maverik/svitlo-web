@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { moreLessEqual_Skill_Data, comparisonSymbols_Skill_Data, order20_Skill_Data, order100_Skill_Data, order1000_Skill_Data } from './skills';
 
 export const comparison_SkillGroup_Data = buildSkillGroupConfig({

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const composeDecomposeShapes_Skill_Data = buildSkillConfig({
   id: '1612d301-b286-45d0-ab5f-b52393bdce31',
   name: {

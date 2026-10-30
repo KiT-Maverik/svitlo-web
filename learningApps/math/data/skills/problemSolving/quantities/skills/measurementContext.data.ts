@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const measurementContext_Skill_Data = buildSkillConfig({
   id: '62d74e18-5c86-4038-b3c0-59f30a201da3',
   name: {

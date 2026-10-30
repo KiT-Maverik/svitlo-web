@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const certainImpossible_Skill_Data = buildSkillConfig({
   id: '96ed02b9-b56e-4498-8e3e-195e76eceaf0',
   name: {

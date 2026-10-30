@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { linesAndPoints_Skill_Data, segment_Skill_Data, ray_Skill_Data, closedOpenLines_Skill_Data, parallelPerpendicular_Skill_Data } from './skills';
 
 export const lines_SkillGroup_Data = buildSkillGroupConfig({

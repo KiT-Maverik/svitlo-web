@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { addMeaning_Skill_Data, addZero_Skill_Data, commutativeAddition_Skill_Data, makeTenStrategy_Skill_Data, crossTenAddition_Skill_Data, associativeAddition_Skill_Data, columnAddition_Skill_Data, regrouping_Skill_Data } from './skills';
 
 export const addition_SkillGroup_Data = buildSkillGroupConfig({

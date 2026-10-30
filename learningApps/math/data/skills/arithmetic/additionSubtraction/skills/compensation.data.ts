@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const compensation_Skill_Data = buildSkillConfig({
   id: 'b5de45e3-da6d-4bd7-914b-1ac679cc359a',
   name: {

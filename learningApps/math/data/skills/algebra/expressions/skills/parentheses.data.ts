@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const parentheses_Skill_Data = buildSkillConfig({
   id: '18f96b1d-39bc-46fa-a0fc-2c7a5fee8d5c',
   name: {

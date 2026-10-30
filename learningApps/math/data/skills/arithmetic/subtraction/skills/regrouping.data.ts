@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const regrouping_Skill_Data = buildSkillConfig({
   id: '5ef6de35-c2d8-4073-98d8-d8779eaa7875',
   name: {

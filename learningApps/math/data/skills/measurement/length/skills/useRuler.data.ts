@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const useRuler_Skill_Data = buildSkillConfig({
   id: '02a916c0-937f-41b8-a2d4-c48593b8798a',
   name: {

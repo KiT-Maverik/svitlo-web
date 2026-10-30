@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const milliliter_Skill_Data = buildSkillConfig({
   id: '70f67012-b08c-4ef5-b45e-1fcc9a2dff3d',
   name: {

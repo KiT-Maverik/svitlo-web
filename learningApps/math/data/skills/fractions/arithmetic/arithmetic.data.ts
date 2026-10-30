@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { addLikeDenominators_Skill_Data, subtractLikeDenominators_Skill_Data } from './skills';
 
 export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({

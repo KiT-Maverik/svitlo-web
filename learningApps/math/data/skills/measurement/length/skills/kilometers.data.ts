@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const kilometers_Skill_Data = buildSkillConfig({
   id: 'b0749c5e-742e-40a5-931f-f1dcf93a012f',
   name: {

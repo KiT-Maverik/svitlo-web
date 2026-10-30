@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { evenOdd_Skill_Data } from './skills';
 
 export const parity_SkillGroup_Data = buildSkillGroupConfig({

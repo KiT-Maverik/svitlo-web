@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const polygon_Skill_Data = buildSkillConfig({
   id: 'a8c08632-974a-477c-8707-e3f8b39f217d',
   name: {

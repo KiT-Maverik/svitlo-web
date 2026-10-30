@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const linesAndPoints_Skill_Data = buildSkillConfig({
   id: '32258326-50ad-496c-a202-059bff6828b6',
   name: {

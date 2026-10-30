@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { argumentation_SkillGroup_Data, verification_SkillGroup_Data, logic_SkillGroup_Data, representations_SkillGroup_Data } from './index';
 
 export const reasoning_SkillDomain_Data = buildSkillDomainConfig({

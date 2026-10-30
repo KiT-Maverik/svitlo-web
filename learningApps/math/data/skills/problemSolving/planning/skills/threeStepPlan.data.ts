@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const threeStepPlan_Skill_Data = buildSkillConfig({
   id: 'be6ad385-9004-4823-9f89-ef8c6ae2341a',
   name: {

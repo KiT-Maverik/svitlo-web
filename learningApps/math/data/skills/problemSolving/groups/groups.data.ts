@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { correspondenceCombinations_Skill_Data, equalGroups_Skill_Data } from './skills';
 
 export const groups_SkillGroup_Data = buildSkillGroupConfig({

@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const makeTenStrategy_Skill_Data = buildSkillConfig({
   id: '36dd9741-4d7a-4042-98b4-62b77a8b877f',
   name: {

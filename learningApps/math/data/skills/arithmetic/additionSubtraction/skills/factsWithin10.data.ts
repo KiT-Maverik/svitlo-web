@@ -1,5 +1,6 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
+
 export const factsWithin10_Skill_Data = buildSkillConfig({
   id: '8ea84059-5dba-407d-a75d-e459f63f00f1',
   name: {

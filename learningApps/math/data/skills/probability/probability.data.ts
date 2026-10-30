@@ -1,4 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
+
 import { events_SkillGroup_Data, experiments_SkillGroup_Data } from './index';
 
 export const probability_SkillDomain_Data = buildSkillDomainConfig({

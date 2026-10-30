@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { countBy2_Skill_Data, countBy5_Skill_Data, countBy10_Skill_Data, countBy100_Skill_Data } from './skills';
 
 export const steps_SkillGroup_Data = buildSkillGroupConfig({

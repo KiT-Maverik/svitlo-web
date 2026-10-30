@@ -1,4 +1,5 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { flexiblePartition_Skill_Data, totalTensInNumber_Skill_Data, makeTen_Skill_Data, tensOnes_Skill_Data, makeHundred_Skill_Data, hundredsTensOnes_Skill_Data, digitPlaceValue_Skill_Data, zeroPlaceholder_Skill_Data, expandedForm_Skill_Data, regroupPlaceValues_Skill_Data, multipleRepresentations_Skill_Data } from './skills';
 
 export const placeValue_SkillGroup_Data = buildSkillGroupConfig({
