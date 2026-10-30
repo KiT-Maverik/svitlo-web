@@ -14,7 +14,7 @@ const slugPattern = /^[a-z][A-Za-z0-9]*$/;
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const errors = [];
 const reports = [];
-const opts = { apply: false, allowDelete: false };
+const opts = { apply: false };
 function diagnostic(entity, action, severity, problem) {
   const item = { entity, action, severity, problem };
   reports.push(item);
@@ -25,16 +25,16 @@ function cli() {
   const args = process.argv.slice(2);
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
-    if (arg === '--apply' || arg === '--allow-delete') {
-      if (opts[arg === '--apply' ? 'apply' : 'allowDelete']) throw Error('Duplicate flag: ' + arg);
-      opts[arg === '--apply' ? 'apply' : 'allowDelete'] = true;
+    if (arg === '--apply') {
+      if (opts.apply) throw Error('Duplicate flag: ' + arg);
+      opts.apply = true;
     } else if (arg === '--package' || arg === '--translations') {
       const key = arg.slice(2);
       if (opts[key] || !args[i + 1] || args[i + 1].startsWith('--')) throw Error('Missing/duplicate value: ' + arg);
       opts[key] = args[++i];
     } else throw Error('Unknown argument: ' + arg);
   }
-  if (!opts.package || (opts.allowDelete && !opts.apply)) throw Error('Usage: --package learningApps/<textbook> [--translations <reviewed.json>] [--apply [--allow-delete]]');
+  if (!opts.package) throw Error('Usage: --package learningApps/<textbook> [--translations <reviewed.json>] [--apply]');
   const apps = path.join(root, 'learningApps') + path.sep;
   const pkg = path.resolve(root, opts.package);
   if (!pkg.startsWith(apps) || !fs.existsSync(path.join(pkg, 'package.json'))) throw Error('Expected existing textbook package under learningApps/');
@@ -362,7 +362,7 @@ function domainPlan(d,entities,registry,codes) {
   if (problems.length) throw Error(problems.join('; '));
   if (nodes.every(e=>e.action==='skip')) return {local,done};
   if (nodes.some(e=>e.action==='delete'))
-    throw Error('Deletion disabled pending full incoming-reference audit (no files changed)');
+    throw Error('Manual deletion required: Action: delete is editorial only; this generator never removes Code or changes its Status');
   for (const e of [...nodes].sort((a,b)=>b.depth-a.depth)) {
     if (e.status==='implemented' && e.link!==codeLink(e))
       throw Error('Implemented Code link differs from canonical source path: '+e.key);
