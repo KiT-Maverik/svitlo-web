@@ -33,4 +33,5 @@ export const readMinute_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie i zapisywanie czasu z dokładnością do minuty",
     uk: "Зчитування й записування часу з точністю до хвилини",
   },
+  description: { methodological: "A clock divides an hour into 60 equal minutes; digital notation combines the hour number with minutes elapsed since its start. The competency includes two-digit minute notation and distinguishing an instant from an elapsed interval." },
 });

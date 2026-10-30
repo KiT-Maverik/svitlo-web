@@ -33,4 +33,5 @@ export const daySequence_Skill_Data = buildSkillConfig({
     pl: "Porządkowanie pór dnia",
     uk: "Упорядкування частин доби",
   },
+  description: { methodological: "Parts of the day form a recurring cycle, but their everyday names and boundaries depend on context. The competency concerns their sequence and matching events to approximate periods, without assigning a fixed clock time to each label." },
 });

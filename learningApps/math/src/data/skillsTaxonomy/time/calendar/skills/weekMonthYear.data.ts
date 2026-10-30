@@ -33,4 +33,5 @@ export const weekMonthYear_Skill_Data = buildSkillConfig({
     pl: "Orientacja w dniach, tygodniach i miesiącach w kalendarzu",
     uk: "Орієнтування в днях, тижнях і місяцях календаря",
   },
+  description: { methodological: "A week is a recurring sequence of seven days, while a calendar year consists of months of different lengths. The competency covers ordering days and months, locating dates, and handling transitions between weeks, months, and years." },
 });

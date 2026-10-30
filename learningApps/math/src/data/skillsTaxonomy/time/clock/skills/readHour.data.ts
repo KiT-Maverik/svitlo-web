@@ -33,4 +33,5 @@ export const readHour_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie pełnych godzin",
     uk: "Зчитування часу з точністю до години",
   },
+  description: { methodological: "Analog and digital clocks represent the same instant differently. Reading the hour requires interpreting both clock hands and relating their positions to digital notation; the hour hand moves continuously rather than jumping between hour marks." },
 });
