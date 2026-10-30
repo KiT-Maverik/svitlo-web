@@ -33,4 +33,5 @@ export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie ułamków o jednakowych mianownikach w obrębie całości",
     uk: "Віднімання дробів з однаковими знаменниками в межах одного цілого",
   },
+  description: { methodological: "Subtracting like-denominator fractions removes unit parts without changing their size: a/b - c/b = (a-c)/b. The allowable range of numerators depends on the relevant number domain." },
 });

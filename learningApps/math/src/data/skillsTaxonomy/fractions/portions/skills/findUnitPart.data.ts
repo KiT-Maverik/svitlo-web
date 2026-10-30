@@ -33,4 +33,5 @@ export const findUnitPart_Skill_Data = buildSkillConfig({
     pl: "Wyznaczanie 1/n wielkości przez dzielenie",
     uk: "Знаходження 1/n величини за допомогою ділення",
   },
+  description: { methodological: "Finding 1/n of a quantity divides the whole into n equal parts for positive n. The resulting magnitude retains the physical unit and need not be an integer." },
 });

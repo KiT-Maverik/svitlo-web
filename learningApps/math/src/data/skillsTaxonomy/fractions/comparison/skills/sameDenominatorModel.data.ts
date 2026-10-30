@@ -33,4 +33,5 @@ export const sameDenominatorModel_Skill_Data = buildSkillConfig({
     pl: "Porównywanie ułamków o jednakowych mianownikach za pomocą modeli",
     uk: "Порівняння дробів з однаковими знаменниками на моделі",
   },
+  description: { methodological: "With the same positive denominator and whole, increasing the numerator increases the number of same-sized unit parts and hence the fraction's value. A visual model demonstrates but does not uniquely define the comparison method." },
 });

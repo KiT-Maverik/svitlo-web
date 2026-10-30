@@ -33,4 +33,5 @@ export const compareUnit_Skill_Data = buildSkillConfig({
     pl: "Porównywanie ułamków jednostkowych tej samej całości",
     uk: "Порівняння одиничних дробів одного цілого",
   },
+  description: { methodological: "The unit fraction 1/n denotes one of n equal parts of the same whole. Increasing the positive denominator reduces the size of that part; comparison presupposes the same unit." },
 });
