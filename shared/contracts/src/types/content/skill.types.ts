@@ -11,7 +11,8 @@ export type SkillId = `${string}-${string}-${string}-${string}-${string}`;
 /**
  * Meaning of a Skill, Group or Domain.
  * methodological: canonical English text for the Methodologist and authoring agents.
- * fe: optional frontend text, complete for every supported language when present.
+ * fe: complete frontend text for every supported language when provided. 
+ * Authored Skills require it; Groups and Domains may still be migrating.
  */
 export interface SkillDescription_Config {
   methodological: string;
@@ -23,8 +24,8 @@ export interface Skill_Config {
   id: SkillId;
   /** One non-empty name for every supported language. */
   name: Readonly<Record<LanguageCode, string>>;
-  /** Required for code-authoritative entries; optional during legacy migration. */
-  description?: SkillDescription_Config;
+  /** Canonical methodological text and complete frontend text are required for every Skill. */
+  description: Required<SkillDescription_Config>;
 }
 
 /**

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 
@@ -38,36 +38,29 @@ export function assertSupportedTranslations(source: string, label: string): Reco
 }
 
 /**
- * The reviewed Markdown taxonomy is the permanent editorial source of truth.
- * After the migration there is no skills-inventory.md or UUID-MIGRATION.md.
- *
- * Assert that each materialized Domain, Group and Skill has exactly one Code
- * reference in that canonical document, and that those references resolve.
- * This intentionally checks the source-file paths, not the localized labels.
+ * The typed taxonomy Code files are canonical; staging Markdown can be partial or absent.
+ * Check that declared Skills have matching local Code files and are exported at
+ * the Skill collection level, without importing runtime TypeScript modules.
  */
-export function assertCanonicalTaxonomyCodeLinks(
+export function assertTaxonomyCodeStructure(
   domain: string,
   groups: Record<string, readonly string[]>,
 ): void {
-  const markdown = readFileSync(join(process.cwd(), 'docs', 'skills', 'taxonomy.md'), 'utf8');
-  const paths = [
-    ...markdown.matchAll(/^Code: \[Code\]\(\.\.\/\.\.\/src\/data\/skillsTaxonomy\/([^)]+)\)$/gm),
-  ].map(([, path]) => path);
-
-  const actual = paths.filter(path => path.startsWith(domain + '/')).sort();
-  const expected = [
-    `${domain}/${domain}.data.ts`,
-    ...Object.entries(groups).flatMap(([group, skills]) => [
-      `${domain}/${group}/${group}.data.ts`,
-      ...skills.map(skill => `${domain}/${group}/skills/${skill}.data.ts`),
-    ]),
-  ].sort();
-
-  assert.deepEqual(actual, expected, `Stale or missing canonical Code links for ${domain}`);
-  for (const path of expected) {
-    assert.ok(
-      existsSync(join(process.cwd(), 'src', 'data', 'skillsTaxonomy', path)),
-      `Canonical taxonomy Code link does not resolve: ${path}`,
+  const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy', domain);
+  assert.ok(existsSync(join(root, domain + '.data.ts')), 'Missing Domain Code: ' + domain);
+  for (const [group, skills] of Object.entries(groups)) {
+    const folder = join(root, group);
+    assert.ok(existsSync(join(folder, group + '.data.ts')), 'Missing Group Code: ' + group);
+    const skillFolder = join(folder, 'skills');
+    const actual = readdirSync(skillFolder).filter(name => name.endsWith('.data.ts') && name !== 'index.data.ts').sort();
+    assert.deepEqual(actual, skills.map(name => name + '.data.ts').sort(), 'Source Skill files: ' + group);
+    const ids = readFileSync(join(skillFolder, 'index.ids.ts'), 'utf8');
+    const keys = [...ids.matchAll(/^\s*([A-Za-z]\w*):\s*['"][0-9a-f-]{36}['"],?$/gm)].map(match => match[1]).sort();
+    assert.deepEqual(keys, [...skills].sort(), 'Skill ID dictionary: ' + group);
+    const exports = readFileSync(join(skillFolder, 'index.data.ts'), 'utf8').trim().split('\n').sort();
+    assert.deepEqual(exports,
+      skills.map(key => `export { ${key}_Skill_Data } from './${key}.data';`).sort(),
+      'Skill collection exports: ' + group,
     );
   }
 }

@@ -26,6 +26,10 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 **Biology editorial precedent (2026-10-29):** “Group mammals and reptiles into piles”, “choose a grouping criterion” and “apply a simple identification key” were removed as *separate Biology Skill IDs*, not as learning activities. Their Questions can assess existing animal-identification Skills. “Compare selection and genetic modification” reuses the two respective concept Skills; a predator-removal scenario can assess ecosystem interdependence. **Do not generalize this into an automatic ban on classification, identification keys, comparison or modeling:** a genuinely independent disciplinary competence may justify its own Skill if the editor approves the evidence.
 
+## EDITORIAL SLUG
+
+New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug is unique among Skills under the same SkillGroup, or direct Skills under an ungrouped Domain. Reuse under other parents is valid. An approved slug remains stable across name/translation changes; it is not the UUID or an additional runtime `Skill_Config` field. Preserve existing Code paths and UUIDs without silent renaming.
+
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
 ### Textbook-local Skill identity
@@ -43,12 +47,14 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 ## CANONICAL PEDAGOGICAL SOURCE
 
-Before promotion, `<PackageRoot>/docs/skills/taxonomy.md` is the **editorial staging definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy (or the approved direct Domain → Skill exception). The explanatory prose appears immediately below the heading and implementation link **without a `Description:` label**. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
+Before promotion, `<PackageRoot>/docs/skills/taxonomy.md` is the **editorial staging definition** of the Skill: its human-readable heading, substantive non-duplicative explanation and place in the Domain → Group → Skill hierarchy (or the approved direct Domain → Skill exception). New-format records place `Slug:` immediately below the heading, then the implementation link and the separate single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields. Unlabeled prose is legacy and requires approved migration; there is no generic `Description:` label. New-format records also contain `Action: skip|create|update|delete` (future generator intent) and `Status: pending|implemented` (verified Code state), neither of which is an extra `Skill_Config` field. There are no per-Skill `*.skill.md` Definition files and no independent `Status` field.
 
 Do not copy a Skill heading into its description. Explain the subject-specific competency, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
 
 `Skill_Config` contains stable `id`, fully localized `name`, and transitional optional `description: { methodological: string; fe?: Record<LanguageCode, string> }`. A promoted Skill **must** have a substantive, reviewed English `methodological` text; optional `fe` is absent or complete for all supported languages. Code then becomes the canonical pedagogical meaning. `methodological` is not constrained to UI brevity; `fe` is user-facing copy, never a second authoritative definition. The builder adds `collection`; `fileLocation` belongs to separate indexing work.
 
 The staging taxonomy contains one standalone implementation link per outstanding entity to its verified canonical `*.data.ts` file (full filename displayed); otherwise it contains exactly `[Not implemented](#)` without a field label. UUID literals and identity dictionaries belong in `*.ids.ts`, never Markdown.
+
+**Planned canonical Code location:** `<PackageRoot>/Data/skills/`, outside `src/`, as static textbook authoring configuration. This is a **prospective layout decision**, not a claim that existing Skill files have already migrated; internal nesting is established by the migration. New [Lesson](./lesson.md) Briefs use relative Skill-file links targeting this layout, with full `.data.ts` basenames as link labels. Mark pre-migration links pending rather than reverting their paths to `src/`; verify file existence once the move is complete.
 
 Related entities: [SkillGroup](./skill-group.md), [SkillDomain](./skill-domain.md).

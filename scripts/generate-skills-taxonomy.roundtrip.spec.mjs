@@ -69,8 +69,8 @@ function readEntity(file) {
 function expectedLevel(file) {
   const parts = path.relative(taxonomyRoot, file).split(path.sep);
   if (parts.length === 2) return 3; // Domain
-  if (parts.length === 3 && parts[2].endsWith('.data.ts')) return 4; // Group
   if (parts.length === 3 && parts[1] === 'skills') return 4; // direct Skill
+  if (parts.length === 3 && parts[2].endsWith('.data.ts')) return 4; // Group
   if (parts.length === 4 && parts[2] === 'skills') return 5; // grouped Skill
   throw new Error('Unsupported entity source path: ' + file);
 }
@@ -123,7 +123,7 @@ function parseMarkdown(view, locale) {
     const text = block.match(/^\*\*Methodological description \(English\):\*\* (.+)$/m);
     assert.ok(text, 'Missing methodological description ' + file);
     assert.equal(text[1], original.methodological, 'Meaning changed for ' + file);
-    const fe = block.match(/^\*\*fe description \(([^)]+)\):\*\* (.+)$/m);
+    const fe = block.match(/^\*\*User-friendly description \(([^)]+)\):\*\* (.+)$/m);
     if (original.fe) {
       assert.ok(fe, 'Missing frontend description ' + file);
       assert.equal(fe[1], locale);

@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { builtinModules } from 'node:module';
 import { dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
+import { importedModules } from './production-imports.mjs';
 
 const root = process.cwd();
 const readJson = name => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -44,10 +45,6 @@ function isProductionSource(file) {
     !/\.(spec|test|e2e|stories|typecheck|unit\.fx|unit\.mx)\.(ts|tsx)$/.test(file) &&
     !file.includes(sep + 'testing' + sep);
 }
-function importedModules(source) {
-  return [...source.matchAll(/\b(?:from\s*|import\s*\(\s*|import\s*|require\s*\(\s*)['"]([^'"]+)['"]/g)]
-    .map(match => match[1]);
-}
 function packageName(specifier) {
   return specifier.startsWith('@')
     ? specifier.split('/').slice(0, 2).join('/')
@@ -74,7 +71,7 @@ for (const [path, pkg] of workspaces) {
   const declared = new Set(Object.keys({ ...(pkg.dependencies || {}), ...(pkg.peerDependencies || {}) }));
   const localAliases = readJson(path + '/tsconfig.json').compilerOptions?.paths || {};
   for (const file of walk(join(packageRoot, 'src')).filter(isProductionSource)) {
-    for (const specifier of importedModules(readFileSync(file, 'utf8'))) {
+    for (const specifier of importedModules(readFileSync(file, 'utf8'), file)) {
       const description = relative(root, file) + ' -> ' + specifier;
       if (specifier.startsWith('.')) {
         const target = resolve(dirname(file), specifier);

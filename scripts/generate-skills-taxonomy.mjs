@@ -4,7 +4,8 @@
  * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math [--locale en] [--check | --stdout]
  *
  * Deliberately parses TypeScript source without executing textbook code.
- * Methodological descriptions are always English; optional fe text is localized.
+ * Methodological descriptions are always English; Skill frontend text is mandatory in every locale.
+ * Domain and Group frontend text remains optional during their migration.
  * Fail closed on absent methodological descriptions: handwritten taxonomy remains the
  * authoritative staging source until every promoted entity is complete.
  */
@@ -127,6 +128,9 @@ function readEntity(file, kind) {
   const methodological = stringValue(getProperty(description, 'methodological')?.initializer, file + ':methodological');
 
   const fe = getProperty(description, 'fe') ? dictionary(description, 'fe', file) : undefined;
+  // This source parser does not run tsc: enforce the Skill contract independently
+  // instead of silently generating incomplete documentation from untyped files.
+  if (kind === 'Skill' && !fe) fail('Missing required Skill description.fe: ' + file);
   for (const locale of locales) {
     if (!name[locale]) fail('Missing required name locale ' + locale + ': ' + file);
     if (fe && !fe[locale]) fail('Missing required fe locale ' + locale + ': ' + file);
@@ -186,7 +190,7 @@ function markdownLine(entity, level, output, details = '') {
   text += '[' + path.basename(entity.file) + '](' + encodeURI(link) + ')\n\n';
   text += '**Methodological description (English):** ' + entity.methodological + '\n\n';
   if (entity.frontend !== undefined) {
-    text += '**fe description (' + opts.locale + '):** ' + entity.frontend + '\n\n';
+    text += '**User-friendly description (' + opts.locale + '):** ' + entity.frontend + '\n\n';
   }
   return text;
 }
@@ -216,7 +220,7 @@ const groupCount = domains.reduce((sum, domain) => sum + domain.groups.length, 0
 const skillCount = domains.reduce((sum, domain) =>
   sum + domain.skills.length + domain.groups.reduce((n, group) => n + group.skills.length, 0), 0);
 let markdown = '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' + opts.locale + ')\n\n' +
-  '> Names and optional fe descriptions use the requested locale. Methodological descriptions remain canonical English, not translated.\n\n' +
+  '> Names and available user-friendly descriptions use the requested locale. Methodological descriptions remain canonical English, not translated. This is a generated Code view, not the editorial staging template.\n\n' +
   '## SUMMARY\n\n' +
   'Domains: ' + domains.length + '\n\nGroups: ' + groupCount + '\n\nSkills: ' + skillCount +
   '\n\n## DOMAINS\n\n';

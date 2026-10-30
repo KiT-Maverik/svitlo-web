@@ -11,7 +11,6 @@ const groupSkills = {
     'parentheses',
     'orderOfOperations',
     'variableValue',
-    'identifyExpressionError',
   ],
   equalities: ['equalityMeaning', 'trueFalseEquality', 'completeEquality'],
   unknowns: [
@@ -32,8 +31,8 @@ const readUuidEntries = (content: string) =>
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
 describe('Algebra taxonomy source integrity', () => {
-  it('contains all 5 groups and 17 independently authored Skill files', () => {
-    assert.equal(Object.values(groupSkills).flat().length, 17);
+  it('contains all 5 groups and 16 independently authored Skill files', () => {
+    assert.equal(Object.values(groupSkills).flat().length, 16);
     for (const [group, skills] of Object.entries(groupSkills)) {
       const ids = readUuidEntries(source(`${group}/skills/index.ids.ts`));
       assert.deepEqual(
@@ -63,7 +62,7 @@ describe('Algebra taxonomy source integrity', () => {
         ...readUuidEntries(source(`${group}/skills/index.ids.ts`)),
       ]),
     ];
-    assert.equal(all.length, 23);
+    assert.equal(all.length, 22);
     assert.equal(new Set(all.map(({ id }) => id)).size, all.length);
     for (const { id } of all) assert.match(id, uuidPattern);
     for (const group of Object.keys(groupSkills)) {

@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertTaxonomyCodeStructure, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(root, 'measurement');
@@ -12,8 +12,9 @@ const names = {
   length: [
     'compareLength',
     'nonstandardLength',
-    'rulerZero',
+    'useRuler',
     'measureCentimeters',
+    'drawSegmentCentimeters',
     'millimeters',
     'decimeters',
     'meters',
@@ -42,7 +43,7 @@ function ids(path: string): Record<string, string> {
 }
 
 describe('Measurement taxonomy', () => {
-  it('implements five groups and 21 Skills with canonical Code links', () => {
+  it('implements five groups and 22 Skills with canonical Code links', () => {
     assert.deepEqual(
       readdirSync(domain, { withFileTypes: true })
         .filter(item => item.isDirectory())
@@ -63,7 +64,7 @@ describe('Measurement taxonomy', () => {
         skills.map(key => 'export { ' + key + "_Skill_Data } from './" + key + ".data';").sort(),
       );
     }
-    assertCanonicalTaxonomyCodeLinks('measurement', names);
+    assertTaxonomyCodeStructure('measurement', names);
   });
 
   it('uses stable, unique UUIDs with separate ID-only references', () => {
@@ -95,7 +96,7 @@ describe('Measurement taxonomy', () => {
         check(value);
       }
     }
-    assert.equal(seen.size, 27);
+    assert.equal(seen.size, 28);
   });
 
   it('provides all supported translations with distinct Group and Skill names', () => {
