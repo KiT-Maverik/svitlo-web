@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const nonstandardLength_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.nonstandardLength,
+  id: '8d0cccb9-f078-450a-af0a-b0ab6fbcbb26',
   name: {
     en: "Measuring length with repeated nonstandard units",
     lt: "Ilgio matavimas kartojamais nestandartiniais vienetais",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { transactions_Skills_Ids } from './index.ids';
 
 export const unitPriceTotal_Skill_Data = buildSkillConfig({
-  id: transactions_Skills_Ids.unitPriceTotal,
+  id: '8d0f36a9-7994-427f-8a3a-fae3082c8837',
   name: {
     en: "Calculating total cost from unit price and quantity",
     lt: "Bendros kainos skaičiavimas pagal vieneto kainą ir kiekį",

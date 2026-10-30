@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { verification_SkillGroup_Ids } from './verification.ids';
-import { verification_Skills_Ids } from './skills/index.ids';
+import { checkReasonableness_Skill_Data, verifyWithSecondMethod_Skill_Data } from './skills';
 
 export const verification_SkillGroup_Data = buildSkillGroupConfig({
-  id: verification_SkillGroup_Ids.verification,
+  id: 'a40b2d58-257b-4517-a48d-8e839b9687bf',
   name: {
     en: "Checking solutions",
     lt: "Sprendimų tikrinimas",
@@ -34,6 +33,9 @@ export const verification_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Sprawdzanie rozwiązań",
     uk: "Перевірка розв’язань",
   },
-  skillIds: verification_Skills_Ids,
+  skillIds: {
+    checkReasonableness: checkReasonableness_Skill_Data.id,
+    verifyWithSecondMethod: verifyWithSecondMethod_Skill_Data.id,
+  },
   description: { methodological: "Critically comparing a calculated result with the problem conditions, identifying mistakes, and using independent methods of verification." },
 });

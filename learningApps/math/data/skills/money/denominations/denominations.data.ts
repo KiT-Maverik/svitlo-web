@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { denominations_SkillGroup_Ids } from './denominations.ids';
-import { denominations_Skills_Ids } from './skills/index.ids';
+import { recognizeDenominations_Skill_Data, composeAmount_Skill_Data, compareAmounts_Skill_Data } from './skills';
 
 export const denominations_SkillGroup_Data = buildSkillGroupConfig({
-  id: denominations_SkillGroup_Ids.denominations,
+  id: 'b2a96b3c-533d-4649-98e3-dd1e58566e66',
   name: {
     en: "Money amounts",
     lt: "Pinigų sumos",
@@ -34,6 +33,10 @@ export const denominations_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Kwoty pieniędzy",
     uk: "Грошові суми",
   },
-  skillIds: denominations_Skills_Ids,
+  skillIds: {
+    recognizeDenominations: recognizeDenominations_Skill_Data.id,
+    composeAmount: composeAmount_Skill_Data.id,
+    compareAmounts: compareAmounts_Skill_Data.id,
+  },
   description: { methodological: "Monetary value represented by coins and banknotes of a specific currency, equivalent denomination combinations, and comparisons between amounts." },
 });

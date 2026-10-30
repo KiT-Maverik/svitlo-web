@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const meters_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.meters,
+  id: 'd427dfd0-7501-447b-ad8a-c75e8ec25196',
   name: {
     en: "Relating meters, decimeters and centimeters",
     lt: "Metrų, decimetrų ir centimetrų ryšys",

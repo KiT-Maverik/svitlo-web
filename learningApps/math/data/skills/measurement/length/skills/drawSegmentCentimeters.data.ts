@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const drawSegmentCentimeters_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.drawSegmentCentimeters,
+  id: 'b86b08f1-e24c-4d95-a98c-8d6c664ea915',
   name: {
     en: "Drawing segments of a given length in centimeters",
     lt: "Nurodyto ilgio atkarpų braižymas centimetrais",

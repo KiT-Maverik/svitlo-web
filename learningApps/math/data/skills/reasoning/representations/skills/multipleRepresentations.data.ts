@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representations_Skills_Ids } from './index.ids';
 
 export const multipleRepresentations_Skill_Data = buildSkillConfig({
-  id: representations_Skills_Ids.multipleRepresentations,
+  id: '6e59c042-7eed-4fb0-83dc-836b3808bca7',
   name: {
     en: "Converting between concrete, diagrammatic, verbal and symbolic representations",
     lt: "Perėjimas tarp konkrečių, scheminių, žodinių ir simbolinių vaizdavimo būdų",

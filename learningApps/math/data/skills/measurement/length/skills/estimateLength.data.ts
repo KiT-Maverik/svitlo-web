@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { length_Skills_Ids } from './index.ids';
 
 export const estimateLength_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.estimateLength,
+  id: 'acf47ae5-cf9b-42b3-9f7f-4c2a92e73f1f',
   name: {
     en: "Estimating length and checking by measurement",
     lt: "Ilgio vertinimas ir tikrinimas matuojant",

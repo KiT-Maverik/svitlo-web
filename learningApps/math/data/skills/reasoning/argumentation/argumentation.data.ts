@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { argumentation_SkillGroup_Ids } from './argumentation.ids';
-import { argumentation_Skills_Ids } from './skills/index.ids';
+import { classifyAndJustify_Skill_Data, findCounterexample_Skill_Data, explainStrategy_Skill_Data, distinguishExampleRule_Skill_Data, drawConclusion_Skill_Data } from './skills';
 
 export const argumentation_SkillGroup_Data = buildSkillGroupConfig({
-  id: argumentation_SkillGroup_Ids.argumentation,
+  id: '811e7c20-0dd4-40d2-8ff3-a7bce455d29f',
   name: {
     en: "Mathematical argumentation",
     lt: "Matematinis argumentavimas",
@@ -34,6 +33,12 @@ export const argumentation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Argumentacja matematyczna",
     uk: "Математична аргументація",
   },
-  skillIds: argumentation_Skills_Ids,
+  skillIds: {
+    classifyAndJustify: classifyAndJustify_Skill_Data.id,
+    findCounterexample: findCounterexample_Skill_Data.id,
+    explainStrategy: explainStrategy_Skill_Data.id,
+    distinguishExampleRule: distinguishExampleRule_Skill_Data.id,
+    drawConclusion: drawConclusion_Skill_Data.id,
+  },
   description: { methodological: "Justifying conclusions from mathematical conditions, evaluating universal statements, and explaining the selected solution method." },
 });

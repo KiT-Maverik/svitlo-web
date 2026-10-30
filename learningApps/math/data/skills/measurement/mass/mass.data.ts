@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { mass_SkillGroup_Ids } from './mass.ids';
-import { mass_Skills_Ids } from './skills/index.ids';
+import { centnerKilogram_Skill_Data, compareMass_Skill_Data, kilogramGram_Skill_Data, weighObject_Skill_Data } from './skills';
 
 export const mass_SkillGroup_Data = buildSkillGroupConfig({
-  id: mass_SkillGroup_Ids.mass,
+  id: 'd4886ce5-e4e4-4df9-8482-244fed0d7e3c',
   name: {
     en: "Mass",
     lt: "Masė",
@@ -34,6 +33,11 @@ export const mass_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Masa",
     uk: "Маса"
   },
-  skillIds: mass_Skills_Ids,
+  skillIds: {
+    centnerKilogram: centnerKilogram_Skill_Data.id,
+    compareMass: compareMass_Skill_Data.id,
+    kilogramGram: kilogramGram_Skill_Data.id,
+    weighObject: weighObject_Skill_Data.id,
+  },
   description: { methodological: "Mass as a physical quantity, its comparison with balances, reading its numerical value from instruments, and relationships among established units of mass. Mass is not identical to weight as a force." },
 });

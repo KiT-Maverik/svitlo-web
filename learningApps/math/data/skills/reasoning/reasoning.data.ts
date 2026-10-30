@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { reasoning_SkillDomain_Ids } from './reasoning.ids';
-import { reasoning_SkillGroups_Ids } from './index.ids';
+import { argumentation_SkillGroup_Data, verification_SkillGroup_Data, logic_SkillGroup_Data, representations_SkillGroup_Data } from './index';
 
 export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
-  id: reasoning_SkillDomain_Ids.reasoning,
+  id: '91e2d845-0c04-4a81-b126-8bad16300cad',
   name: {
     en: "Reasoning",
     lt: "Samprotavimas",
@@ -34,6 +33,11 @@ export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Rozumowanie",
     uk: "Міркування",
   },
-  groupIds: reasoning_SkillGroups_Ids,
+  groupIds: {
+    argumentation: argumentation_SkillGroup_Data.id,
+    verification: verification_SkillGroup_Data.id,
+    logic: logic_SkillGroup_Data.id,
+    representations: representations_SkillGroup_Data.id,
+  },
   description: { methodological: "Justifying mathematical statements, finding counterexamples, drawing logical conclusions, checking solutions, and translating between representations." },
 });
