@@ -33,4 +33,5 @@ export const identify3dSolids_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie podstawowych brył",
     uk: "Розпізнавання основних просторових тіл",
   },
+  description: { methodological: "Identify solids by their surface structure and the number or shape of faces, bases, edges, and vertices where applicable. Perspective drawings can distort proportions; geometric properties determine the solid's class." },
 });

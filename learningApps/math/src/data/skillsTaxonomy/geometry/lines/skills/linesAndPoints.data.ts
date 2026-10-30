@@ -33,4 +33,5 @@ export const linesAndPoints_Skill_Data = buildSkillConfig({
     pl: "Rozróżnianie punktów i rodzajów linii",
     uk: "Розрізнення точок і видів ліній",
   },
+  description: { methodological: "A point specifies a position without dimension, a straight line extends infinitely both ways, a general curve need not consist of straight segments, and a polygonal chain consists of consecutive segments. Drawn marks are models, not the abstract objects themselves." },
 });

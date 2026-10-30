@@ -33,4 +33,5 @@ export const segment_Skill_Data = buildSkillConfig({
     pl: "Rysowanie i oznaczanie odcinków",
     uk: "Побудова та позначення відрізків",
   },
+  description: { methodological: "A line segment is the part of a straight line between two endpoints, including those points, and can be named by them. Construction preserves straightness; its length is the distance between endpoints." },
 });
