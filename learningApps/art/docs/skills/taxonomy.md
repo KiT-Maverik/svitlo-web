@@ -20,703 +20,1248 @@ Code files: 0/14 Domains · 0/65 Groups · 0/295 Skills
 
 ### Artistic Understanding and Criticism
 
+Slug: artisticUnderstandingAndCriticism
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Interpretation of artistic work depends on the medium, formal relationships, intentions and cultural contexts. This field supports attentive analysis of existing artworks rather than instruction in a particular material technique.
+Methodological description: Interpretation of artistic work depends on the medium, formal relationships, intentions and cultural contexts. This field supports attentive analysis of existing artworks rather than instruction in a particular material technique.
+User-friendly description: Discover how artistic choices and cultural context help us understand and discuss artworks.
 
 #### Forms and Purposes
 
+Slug: formsAndPurposes
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Art can represent, express, question, commemorate or invite participation; genre labels and purposes are useful but not universal classifications.
+Methodological description: Art can represent, express, question, commemorate or invite participation; genre labels and purposes are useful but not universal classifications.
+User-friendly description: Explore the many ways art can communicate ideas, feelings and experiences.
 
 ##### Distinguish Artistic Media
 
+Slug: distinguishArtisticMedia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how sound, image, movement, language or physical space contributes to an artwork's mode of expression.
+Methodological description: Identify how sound, image, movement, language or physical space contributes to an artwork's mode of expression.
+User-friendly description: See how images, sounds, movement, words and spaces communicate in different art forms.
 
 ##### Classify Artistic Genres
 
+Slug: classifyArtisticGenres
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use established formal conventions to distinguish genres while allowing for hybrid works and evolving traditions.
+Methodological description: Use established formal conventions to distinguish genres while allowing for hybrid works and evolving traditions.
+User-friendly description: Recognize common art genres while noticing works that mix or challenge them.
 
 ##### Interpret Artistic Intent
 
+Slug: interpretArtisticIntent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer plausible aims from artistic choices, distinguishing supported observations from assumptions about the creator.
+Methodological description: Infer plausible aims from artistic choices, distinguishing supported observations from assumptions about the creator.
+User-friendly description: Use clues in an artwork to explore what its creator may have intended.
 
 ##### Distinguish Representation and Abstraction
 
+Slug: distinguishRepresentationAndAbstraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a work may depict recognizable subjects, transform them or rely on nonrepresentational relationships.
+Methodological description: Explain how a work may depict recognizable subjects, transform them or rely on nonrepresentational relationships.
+User-friendly description: Explore the difference between showing recognizable subjects and using abstract forms.
 
 #### Formal Language
 
+Slug: formalLanguage
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Formal choices direct perception and establish relationships within a work. Analysis here is cross-medium rather than the execution of a technical medium-specific method.
+Methodological description: Formal choices direct perception and establish relationships within a work. Analysis here is cross-medium rather than the execution of a technical medium-specific method.
+User-friendly description: Discover how lines, colors, shapes and other features guide our experience of art.
 
 ##### Analyze Line and Shape
 
+Slug: analyzeLineAndShape
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how contours, directional marks and organic or geometric shapes structure a visual work.
+Methodological description: Explain how contours, directional marks and organic or geometric shapes structure a visual work.
+User-friendly description: Notice how lines and shapes lead your eye and organize an image.
 
 ##### Analyze Color Relationships
 
+Slug: analyzeColorRelationships
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate hue, value, saturation and juxtaposition to mood, contrast or visual emphasis in existing art.
+Methodological description: Relate hue, value, saturation and juxtaposition to mood, contrast or visual emphasis in existing art.
+User-friendly description: Explore how combinations of colors affect mood, contrast and attention.
 
 ##### Analyze Texture and Surface
 
+Slug: analyzeTextureAndSurface
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish material texture from its visual depiction and explain its perceptual or expressive effect.
+Methodological description: Distinguish material texture from its visual depiction and explain its perceptual or expressive effect.
+User-friendly description: Notice real and pictured textures and how they change the feel of an artwork.
 
 ##### Analyze Composition
 
+Slug: analyzeComposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how placement, hierarchy, scale and balance guide a viewer through a work.
+Methodological description: Explain how placement, hierarchy, scale and balance guide a viewer through a work.
+User-friendly description: See how artists use placement, scale and balance to direct your attention.
 
 ##### Analyze Artistic Rhythm
 
+Slug: analyzeArtisticRhythm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify significant repetition, variation or pacing in images, movement or sound.
+Methodological description: Identify significant repetition, variation or pacing in images, movement or sound.
+User-friendly description: Find patterns and changes in the rhythm of images, sounds or movement.
 
 #### Interpretation and Evaluation
+
+Slug: interpretationAndEvaluation
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Judgments about art become more useful when observable evidence, contextual claims and chosen evaluative criteria are stated separately.
+Methodological description: Judgments about art become more useful when observable evidence, contextual claims and chosen evaluative criteria are stated separately.
+User-friendly description: Learn to discuss what an artwork might mean using evidence and clear criteria.
 
 ##### Describe Artworks Precisely
 
+Slug: describeArtworksPrecisely
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Report recognizable features and formal relationships before advancing an account of their meaning.
+Methodological description: Report recognizable features and formal relationships before advancing an account of their meaning.
+User-friendly description: Describe the details you can actually see or hear before explaining their meaning.
 
 ##### Distinguish Observation from Interpretation
 
+Slug: distinguishObservationFromInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate directly perceptible details from symbolic, emotional or biographical inferences.
+Methodological description: Separate directly perceptible details from symbolic, emotional or biographical inferences.
+User-friendly description: Tell the difference between what you notice and what you think it means.
 
 ##### Support an Artistic Interpretation
 
+Slug: supportAnArtisticInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Defend a reading with identifiable artistic decisions and context relevant to the work.
+Methodological description: Defend a reading with identifiable artistic decisions and context relevant to the work.
+User-friendly description: Use details from a work to explain and support your interpretation.
 
 ##### Compare Artistic Interpretations
 
+Slug: compareArtisticInterpretations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how different plausible readings explain the same evidence and where each is limited.
+Methodological description: Examine how different plausible readings explain the same evidence and where each is limited.
+User-friendly description: Compare different readings of an artwork and the evidence behind each.
 
 ##### Evaluate Art Using Criteria
 
+Slug: evaluateArtUsingCriteria
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply explicit standards appropriate to a work's purpose without treating personal taste as universal fact.
+Methodological description: Apply explicit standards appropriate to a work's purpose without treating personal taste as universal fact.
+User-friendly description: Judge an artwork using clear criteria suited to its goals, not just your taste.
 
 #### Curation and Presentation
+
+Slug: curationAndPresentation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Exhibiting work creates new relationships between artworks, their physical arrangement and audience access, independent of authoring the artworks.
+Methodological description: Exhibiting work creates new relationships between artworks, their physical arrangement and audience access, independent of authoring the artworks.
+User-friendly description: Explore how selecting and displaying artworks changes the way audiences experience them.
 
 ##### Select Works for an Exhibition
 
+Slug: selectWorksForAnExhibition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose a coherent set of works in response to a theme, audience and available space.
+Methodological description: Choose a coherent set of works in response to a theme, audience and available space.
+User-friendly description: Choose artworks that work together for a particular theme and audience.
 
 ##### Sequence an Exhibition
 
+Slug: sequenceAnExhibition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange works to create purposeful contrasts, transitions or thematic developments.
+Methodological description: Arrange works to create purposeful contrasts, transitions or thematic developments.
+User-friendly description: Arrange artworks so their order creates meaningful connections and contrasts.
 
 ##### Write Exhibition Interpretation Text
 
+Slug: writeExhibitionInterpretationText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Communicate accurate context without forcing one mandatory emotional or symbolic interpretation.
+Methodological description: Communicate accurate context without forcing one mandatory emotional or symbolic interpretation.
+User-friendly description: Write helpful exhibition labels that offer context without dictating what to feel.
 
 ##### Analyze Display Context
 
+Slug: analyzeDisplayContext
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how scale, lighting, placement and accompanying labels affect reception.
+Methodological description: Explain how scale, lighting, placement and accompanying labels affect reception.
+User-friendly description: Explore how light, scale, position and labels influence an artwork's presentation.
 
 ### Drawing and Illustration
+
+Slug: drawingAndIllustration
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
-Drawing creates marks and constructed spatial relationships, whereas illustration connects a visual image to a communicative narrative or concept. Neither is limited to literal realism.
+Methodological description: Drawing creates marks and constructed spatial relationships, whereas illustration connects a visual image to a communicative narrative or concept. Neither is limited to literal realism.
+User-friendly description: Learn how drawing can represent what we see and how illustration can tell stories or share ideas.
 
 #### Observational Drawing
 
+Slug: observationalDrawing
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Close observation of proportions, edges, tonal values and surfaces offers a foundation for describing visible subjects rather than relying on schematic symbols.
+Methodological description: Close observation of proportions, edges, tonal values and surfaces offers a foundation for describing visible subjects rather than relying on schematic symbols.
+User-friendly description: Build drawings by looking closely at shapes, edges, light and surfaces.
 
 ##### Control Drawing Marks
 
+Slug: controlDrawingMarks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Vary pressure, direction and density to create intentional differences in drawn lines and areas.
+Methodological description: Vary pressure, direction and density to create intentional differences in drawn lines and areas.
+User-friendly description: Make different kinds of lines and marks by changing pressure and direction.
 
 ##### Draw from Observation
 
+Slug: drawFromObservation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare visible relations among features and represent them coherently rather than copying a generic symbol.
+Methodological description: Compare visible relations among features and represent them coherently rather than copying a generic symbol.
+User-friendly description: Draw a subject by carefully comparing its visible shapes and relationships.
 
 ##### Construct Contour Drawing
 
+Slug: constructContourDrawing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Translate significant boundaries and overlaps into lines that describe a subject.
+Methodological description: Translate significant boundaries and overlaps into lines that describe a subject.
+User-friendly description: Use outlines and overlapping edges to describe what you see.
 
 ##### Render Light and Shadow
 
+Slug: renderLightAndShadow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use relative tonal values to communicate illuminated and shadowed form.
+Methodological description: Use relative tonal values to communicate illuminated and shadowed form.
+User-friendly description: Show light and shadow through different shades of dark and light.
 
 ##### Render Drawn Texture
 
+Slug: renderDrawnTexture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose marks that suggest a material's visual or tactile character without losing the larger form.
+Methodological description: Choose marks that suggest a material's visual or tactile character without losing the larger form.
+User-friendly description: Use drawing marks to suggest rough, smooth or other surface qualities.
 
 #### Spatial Drawing
 
+Slug: spatialDrawing
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-These methods depict depth and coherent form on flat surfaces, while leaving room for deliberate stylistic distortion.
+Methodological description: These methods depict depth and coherent form on flat surfaces, while leaving room for deliberate stylistic distortion.
+User-friendly description: Create believable space and form on a flat page, or bend perspective deliberately.
 
 ##### Use Relative Proportions
 
+Slug: useRelativeProportions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare parts to a larger whole and correct visible scale relationships in a drawing.
+Methodological description: Compare parts to a larger whole and correct visible scale relationships in a drawing.
+User-friendly description: Compare the sizes of parts to draw a subject in proportion.
 
 ##### Depict Depth with Overlap
 
+Slug: depictDepthWithOverlap
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Establish relative spatial position through occlusion and apparent size.
+Methodological description: Establish relative spatial position through occlusion and apparent size.
+User-friendly description: Make objects appear nearer or farther by showing them overlap.
 
 ##### Construct One-Point Perspective
 
+Slug: constructOnePointPerspective
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize receding directions around one vanishing point in a consistent depicted space.
+Methodological description: Organize receding directions around one vanishing point in a consistent depicted space.
+User-friendly description: Draw a scene in which parallel lines lead toward one vanishing point.
 
 ##### Construct Two-Point Perspective
 
+Slug: constructTwoPointPerspective
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize two sets of horizontal receding directions around distinct vanishing points.
+Methodological description: Organize two sets of horizontal receding directions around distinct vanishing points.
+User-friendly description: Show the corners of a form using two different vanishing points.
 
 ##### Depict Foreshortening
 
+Slug: depictForeshortening
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent forms that appear compressed because their lengths point toward the viewer.
+Methodological description: Represent forms that appear compressed because their lengths point toward the viewer.
+User-friendly description: Draw forms that look shorter when they point toward the viewer.
 
 #### Illustrative Storytelling
+
+Slug: illustrativeStorytelling
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Illustration selects and organizes imagery to clarify actions, ideas and character, including sequences that extend beyond one frame.
+Methodological description: Illustration selects and organizes imagery to clarify actions, ideas and character, including sequences that extend beyond one frame.
+User-friendly description: Use pictures to communicate characters, actions and stories.
 
 ##### Design a Character Silhouette
 
+Slug: designACharacterSilhouette
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Give a figure distinguishable shape characteristics that remain apparent without internal detail.
+Methodological description: Give a figure distinguishable shape characteristics that remain apparent without internal detail.
+User-friendly description: Design a character you can recognize from its outline alone.
 
 ##### Illustrate an Action
 
+Slug: illustrateAnAction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use gesture, position and spatial cues to make a represented event legible.
+Methodological description: Use gesture, position and spatial cues to make a represented event legible.
+User-friendly description: Show an action clearly through a figure's pose and placement.
 
 ##### Illustrate a Sequence
 
+Slug: illustrateASequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Order images so that viewers can infer change, continuity and causal relationships.
+Methodological description: Order images so that viewers can infer change, continuity and causal relationships.
+User-friendly description: Use a series of images to show how events unfold.
 
 ##### Translate Text into Imagery
 
+Slug: translateTextIntoImagery
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select visual details that communicate a written idea instead of literal word-for-word copying.
+Methodological description: Select visual details that communicate a written idea instead of literal word-for-word copying.
+User-friendly description: Turn a written idea into meaningful images rather than copying every word.
 
 ##### Adapt Illustration to an Audience
 
+Slug: adaptIllustrationToAnAudience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose a degree of detail and relevant visual conventions suited to intended readers.
+Methodological description: Choose a degree of detail and relevant visual conventions suited to intended readers.
+User-friendly description: Make illustration choices that suit the people who will read or view it.
 
 ### Painting and Color
+
+Slug: paintingAndColor
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 17
 
 [Not implemented](#)
 
-Painting uses pigment and surfaces to organize color, form and expression. The material behavior of paint and pictorial composition create distinct competencies.
+Methodological description: Painting uses pigment and surfaces to organize color, form and expression. The material behavior of paint and pictorial composition create distinct competencies.
+User-friendly description: Explore how paints, pigments and color choices shape expressive pictures.
 
 #### Color Practice
+
+Slug: colorPractice
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Choosing pigments and their relationships involves both material mixture and organized differences in perceived lightness and intensity.
+Methodological description: Choosing pigments and their relationships involves both material mixture and organized differences in perceived lightness and intensity.
+User-friendly description: Learn how lightness, intensity and mixed pigments change color relationships.
 
 ##### Distinguish Hue Value and Saturation
 
+Slug: distinguishHueValueAndSaturation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify color family, lightness and intensity as separable properties with different visual consequences.
+Methodological description: Identify color family, lightness and intensity as separable properties with different visual consequences.
+User-friendly description: Notice the difference between a color's hue, lightness and vividness.
 
 ##### Mix Pigment Colors
 
+Slug: mixPigmentColors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine available pigments deliberately to approach a chosen target or relation between colors.
+Methodological description: Combine available pigments deliberately to approach a chosen target or relation between colors.
+User-friendly description: Combine paints to create a color or relationship you want.
 
 ##### Construct a Value Scale
 
+Slug: constructAValueScale
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Produce a controlled progression from light to dark that can organize tonal modeling.
+Methodological description: Produce a controlled progression from light to dark that can organize tonal modeling.
+User-friendly description: Make an even progression of tones from light to dark.
 
 ##### Use Complementary Colors
 
+Slug: useComplementaryColors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Employ contrasting color relationships to produce emphasis or modify perceived intensity.
+Methodological description: Employ contrasting color relationships to produce emphasis or modify perceived intensity.
+User-friendly description: Use colors opposite each other to create contrast and emphasis.
 
 ##### Build a Limited Palette
 
+Slug: buildALimitedPalette
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose a constrained pigment set that still supports coherent variation within a work.
+Methodological description: Choose a constrained pigment set that still supports coherent variation within a work.
+User-friendly description: Create a harmonious painting with a carefully chosen small set of colors.
 
 #### Painting Techniques
+
+Slug: paintingTechniques
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Different physical application methods affect transparency, edges, layering and surface appearance.
+Methodological description: Different physical application methods affect transparency, edges, layering and surface appearance.
+User-friendly description: Discover how paint application changes transparency, layers and edges.
 
 ##### Apply Watercolor Washes
 
+Slug: applyWatercolorWashes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control dilution and flow to create intentionally transparent painted regions.
+Methodological description: Control dilution and flow to create intentionally transparent painted regions.
+User-friendly description: Make light, transparent areas by controlling water and paint.
 
 ##### Blend Wet Paint
 
+Slug: blendWetPaint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Manage still-wet passages to form smooth transitions or selected boundaries.
+Methodological description: Manage still-wet passages to form smooth transitions or selected boundaries.
+User-friendly description: Blend colors while paint is wet to create smooth or deliberate transitions.
 
 ##### Build Opaque Layers
 
+Slug: buildOpaqueLayers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use covering paint to revise shapes, intensify accents or replace earlier marks.
+Methodological description: Use covering paint to revise shapes, intensify accents or replace earlier marks.
+User-friendly description: Build and change your picture by placing solid paint over earlier layers.
 
 ##### Apply a Glaze
 
+Slug: applyAGlaze
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Layer translucent paint over a dry passage to change its optical appearance.
+Methodological description: Layer translucent paint over a dry passage to change its optical appearance.
+User-friendly description: Place transparent color over dry paint to subtly change its appearance.
 
 ##### Select Painting Supports
 
+Slug: selectPaintingSupports
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match the properties of paper, canvas or board to adhesion, texture and expressive needs.
+Methodological description: Match the properties of paper, canvas or board to adhesion, texture and expressive needs.
+User-friendly description: Choose paper, canvas or another surface that suits your painting materials.
 
 ##### Use Oil Painting Techniques
 
+Slug: useOilPaintingTechniques
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Exploit the slow drying and blending behavior of oil-bound pigment to build controlled passages, revise wet edges and manage successive paint layers with suitable materials and safe handling.
+Methodological description: Exploit the slow drying and blending behavior of oil-bound pigment to build controlled passages, revise wet edges and manage successive paint layers with suitable materials and safe handling.
+User-friendly description: Work with slowly drying oil paint to blend, layer and adjust painted areas safely.
 
 ##### Use Acrylic Painting Techniques
 
+Slug: useAcrylicPaintingTechniques
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use the faster drying and film-forming behavior of acrylic-bound pigment to develop deliberate layers, textures and transitions appropriate to the medium.
+Methodological description: Use the faster drying and film-forming behavior of acrylic-bound pigment to develop deliberate layers, textures and transitions appropriate to the medium.
+User-friendly description: Use acrylic paint's quick drying to build colors, textures and layers.
 
 #### Pictorial Composition
+
+Slug: pictorialComposition
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Color areas, focal structure and handling of edges determine a painting's organization separately from subject matter.
+Methodological description: Color areas, focal structure and handling of edges determine a painting's organization separately from subject matter.
+User-friendly description: Organize large areas, contrasts and edges to make a painting work as a whole.
 
 ##### Establish a Focal Point
 
+Slug: establishAFocalPoint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Direct attention through controlled contrasts of placement, value, color or detail.
+Methodological description: Direct attention through controlled contrasts of placement, value, color or detail.
+User-friendly description: Guide the viewer's eye toward the most important part of a painting.
 
 ##### Organize Figure and Ground
 
+Slug: organizeFigureAndGround
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate a principal visual form from surrounding space in a chosen pictorial manner.
+Methodological description: Differentiate a principal visual form from surrounding space in a chosen pictorial manner.
+User-friendly description: Use the relationship between a main shape and its background.
 
 ##### Compose with Color Masses
 
+Slug: composeWithColorMasses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Balance large colored areas and their relationships before relying on smaller detail.
+Methodological description: Balance large colored areas and their relationships before relying on smaller detail.
+User-friendly description: Arrange large color areas before adding small details.
 
 ##### Control Painted Edges
 
+Slug: controlPaintedEdges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose sharp, soft or lost boundaries to establish spatial focus or visual hierarchy.
+Methodological description: Choose sharp, soft or lost boundaries to establish spatial focus or visual hierarchy.
+User-friendly description: Choose crisp or soft edges to direct attention and suggest space.
 
 ##### Develop Painterly Expression
 
+Slug: developPainterlyExpression
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate brushwork and application texture to a deliberate expressive character.
+Methodological description: Relate brushwork and application texture to a deliberate expressive character.
+User-friendly description: Use the character of brushstrokes and paint texture to express an idea.
 
 ### Sculpture and Material Arts
+
+Slug: sculptureAndMaterialArts
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Physical media can be shaped, assembled, printed or woven to produce objects, editions and decorative surfaces. This domain concerns expressive material practices rather than engineering manufacture.
+Methodological description: Physical media can be shaped, assembled, printed or woven to produce objects, editions and decorative surfaces. This domain concerns expressive material practices rather than engineering manufacture.
+User-friendly description: Create expressive physical objects using shaping, printing, clay, fabric and other materials.
 
 #### Sculptural Form
+
+Slug: sculpturalForm
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Volume and void, physical viewpoints and material manipulation characterize three-dimensional artistic work.
+Methodological description: Volume and void, physical viewpoints and material manipulation characterize three-dimensional artistic work.
+User-friendly description: Explore how volume, empty space and different viewpoints shape sculpture.
 
 ##### Construct Three-Dimensional Form
 
+Slug: constructThreeDimensionalForm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize masses and proportions to convey a coherent object from several viewing positions.
+Methodological description: Organize masses and proportions to convey a coherent object from several viewing positions.
+User-friendly description: Build a three-dimensional form that works from more than one angle.
 
 ##### Use Positive and Negative Space
 
+Slug: usePositiveAndNegativeSpace
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate solids with surrounding or enclosed voids as active sculptural relationships.
+Methodological description: Coordinate solids with surrounding or enclosed voids as active sculptural relationships.
+User-friendly description: Use solid forms and the spaces between them as parts of a sculpture.
 
 ##### Model Additive Sculpture
 
+Slug: modelAdditiveSculpture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Build volume through controlled accumulation and shaping of pliable material.
+Methodological description: Build volume through controlled accumulation and shaping of pliable material.
+User-friendly description: Add and shape soft material to build a sculptural object.
 
 ##### Carve Subtractive Sculpture
 
+Slug: carveSubtractiveSculpture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Form an object by intentionally removing material while accounting for irreversible changes.
+Methodological description: Form an object by intentionally removing material while accounting for irreversible changes.
+User-friendly description: Remove material carefully to reveal a planned three-dimensional form.
 
 ##### Create Relief Sculpture
 
+Slug: createReliefSculpture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize raised and recessed forms on a supporting plane for legible depth.
+Methodological description: Organize raised and recessed forms on a supporting plane for legible depth.
+User-friendly description: Create raised and recessed shapes on a flat backing.
 
 #### Ceramics and Assemblage
 
+Slug: ceramicsAndAssemblage
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Clay manipulation and found-object combination produce expressive material choices not reducible to sculptural mass alone.
+Methodological description: Clay manipulation and found-object combination produce expressive material choices not reducible to sculptural mass alone.
+User-friendly description: Explore how clay and everyday objects can become expressive artworks.
 
 ##### Hand-Build a Ceramic Form
 
+Slug: handBuildACeramicForm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Shape clay through pinching, coils or slabs while controlling the overall object.
+Methodological description: Shape clay through pinching, coils or slabs while controlling the overall object.
+User-friendly description: Shape clay using your hands, coils or slabs.
 
 ##### Join Clay Components
 
+Slug: joinClayComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Prepare and attach clay elements so that a composite form remains coherent and stable.
+Methodological description: Prepare and attach clay elements so that a composite form remains coherent and stable.
+User-friendly description: Connect separate pieces of clay to make one stable form.
 
 ##### Decorate a Ceramic Surface
 
+Slug: decorateACeramicSurface
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use suitable coatings or applied textures to achieve a selected expressive surface.
+Methodological description: Use suitable coatings or applied textures to achieve a selected expressive surface.
+User-friendly description: Add colors or textures that suit the surface of a clay object.
 
 ##### Create Found-Object Assemblage
 
+Slug: createFoundObjectAssemblage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine preexisting items so their materials, histories or juxtaposition create new meaning.
+Methodological description: Combine preexisting items so their materials, histories or juxtaposition create new meaning.
+User-friendly description: Combine existing objects to create a new artistic meaning.
 
 #### Printmaking
 
+Slug: printmaking
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A designed matrix, stencil or transferable surface generates impressions that can be repeated with deliberate differences.
+Methodological description: A designed matrix, stencil or transferable surface generates impressions that can be repeated with deliberate differences.
+User-friendly description: Make images by transferring designs from prepared surfaces.
 
 ##### Design a Print Matrix
 
+Slug: designAPrintMatrix
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Plan which areas of a printing surface will transfer the desired image.
+Methodological description: Plan which areas of a printing surface will transfer the desired image.
+User-friendly description: Plan which parts of a printing surface will leave an image.
 
 ##### Produce a Relief Print
 
+Slug: produceAReliefPrint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply ink to raised areas and transfer a designed impression to another surface.
+Methodological description: Apply ink to raised areas and transfer a designed impression to another surface.
+User-friendly description: Transfer an image by inking the raised parts of a printing block.
 
 ##### Produce a Stencil Print
 
+Slug: produceAStencilPrint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control masked and open regions so ink transfers the intended image.
+Methodological description: Control masked and open regions so ink transfers the intended image.
+User-friendly description: Use openings in a stencil to print your chosen shapes.
 
 ##### Register Multiple Print Layers
 
+Slug: registerMultiplePrintLayers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Align successive impressions so separate colors or image parts meet deliberately.
+Methodological description: Align successive impressions so separate colors or image parts meet deliberately.
+User-friendly description: Line up printed layers so their colors and shapes meet as intended.
 
 #### Textiles and Decorative Arts
+
+Slug: textilesAndDecorativeArts
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Fabric structures, embellishments and motif repetition embody distinctive artistic design choices and cultural traditions.
+Methodological description: Fabric structures, embellishments and motif repetition embody distinctive artistic design choices and cultural traditions.
+User-friendly description: Explore pattern, weaving and decoration through textile materials.
 
 ##### Create Repeating Ornament
 
+Slug: createRepeatingOrnament
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Develop a motif through planned translations, rotations, reflections or variations.
+Methodological description: Develop a motif through planned translations, rotations, reflections or variations.
+User-friendly description: Repeat and vary shapes to build a decorative pattern.
 
 ##### Design a Textile Pattern
 
+Slug: designATextilePattern
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adapt a visual motif to fabric scale and an appropriate repeat structure.
+Methodological description: Adapt a visual motif to fabric scale and an appropriate repeat structure.
+User-friendly description: Adapt a design so it repeats effectively across fabric.
 
 ##### Create a Woven Structure
 
+Slug: createAWovenStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interlace strands according to a selected structure and visual pattern.
+Methodological description: Interlace strands according to a selected structure and visual pattern.
+User-friendly description: Interlace threads or strips to create a planned woven pattern.
 
 ##### Create Textile Embellishment
 
+Slug: createTextileEmbellishment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use stitching, appliqué or similar additions to develop tactile and visual character.
+Methodological description: Use stitching, appliqué or similar additions to develop tactile and visual character.
+User-friendly description: Decorate textiles with stitching, appliqué or other added details.
 
 ### Photography and Film
+
+Slug: photographyAndFilm
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
-Camera-based arts shape views of reality through frame, light and editing; moving-image forms add duration, sound and sequential meaning.
+Methodological description: Camera-based arts shape views of reality through frame, light and editing; moving-image forms add duration, sound and sequential meaning.
+User-friendly description: Explore how framing, light, image sequences and sound shape photographs and films.
 
 #### Photographic Technique
 
+Slug: photographicTechnique
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Camera controls and light are treated as artistic choices, not as an engineering account of optical devices.
+Methodological description: Camera controls and light are treated as artistic choices, not as an engineering account of optical devices.
+User-friendly description: Use camera and lighting choices to create a photograph with a clear visual effect.
 
 ##### Compose a Photograph
 
+Slug: composeAPhotograph
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange subject and boundaries to establish a chosen relationship within the frame.
+Methodological description: Arrange subject and boundaries to establish a chosen relationship within the frame.
+User-friendly description: Decide what to include in the frame and how to position the subject.
 
 ##### Control Photographic Exposure
 
+Slug: controlPhotographicExposure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate aperture, shutter time and sensitivity to an image's visual result.
+Methodological description: Relate aperture, shutter time and sensitivity to an image's visual result.
+User-friendly description: Adjust camera exposure to make an image brighter, darker or more expressive.
 
 ##### Use Depth of Field
 
+Slug: useDepthOfField
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select an appropriate range of sharpness to guide attention among spatial planes.
+Methodological description: Select an appropriate range of sharpness to guide attention among spatial planes.
+User-friendly description: Choose what stays sharp and what becomes blurred in a photograph.
 
 ##### Use Photographic Lighting
 
+Slug: usePhotographicLighting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange or modify light to reveal the subject's shape, atmosphere and details.
+Methodological description: Arrange or modify light to reveal the subject's shape, atmosphere and details.
+User-friendly description: Shape the appearance and mood of a subject with lighting.
 
 #### Photographic Communication
+
+Slug: photographicCommunication
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-A photograph may document, stage or sequence an event, making truthfulness and narrative intention distinct considerations.
+Methodological description: A photograph may document, stage or sequence an event, making truthfulness and narrative intention distinct considerations.
+User-friendly description: Discover how photographs can document, portray or tell stories in different ways.
 
 ##### Create a Photographic Series
 
+Slug: createAPhotographicSeries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select and sequence related images so the collection conveys more than isolated frames.
+Methodological description: Select and sequence related images so the collection conveys more than isolated frames.
+User-friendly description: Arrange related photographs to communicate a larger story or idea.
 
 ##### Distinguish Documentary and Staged Photography
 
+Slug: distinguishDocumentaryAndStagedPhotography
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how image-making conditions affect claims about events and depicted reality.
+Methodological description: Explain how image-making conditions affect claims about events and depicted reality.
+User-friendly description: Recognize when a photograph records an event and when a scene was arranged.
 
 ##### Create a Photographic Portrait
 
+Slug: createAPhotographicPortrait
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use viewpoint, pose, setting and light to present a considered depiction of a person.
+Methodological description: Use viewpoint, pose, setting and light to present a considered depiction of a person.
+User-friendly description: Make a thoughtful portrait using pose, perspective, setting and light.
 
 ##### Edit Photography Expressively
 
+Slug: editPhotographyExpressively
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Revise color, contrast or framing with attention to both expression and documentary integrity.
+Methodological description: Revise color, contrast or framing with attention to both expression and documentary integrity.
+User-friendly description: Adjust a photograph's color and framing while respecting what it claims to show.
 
 #### Film Language
+
+Slug: filmLanguage
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Relations among shots, timing and sound establish meaning across a moving-image work.
+Methodological description: Relations among shots, timing and sound establish meaning across a moving-image work.
+User-friendly description: Explore how individual shots, edits and sounds work together in film.
 
 ##### Analyze Film Shots
 
+Slug: analyzeFilmShots
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how shot size and camera viewpoint change attention or a depicted power relationship.
+Methodological description: Explain how shot size and camera viewpoint change attention or a depicted power relationship.
+User-friendly description: See how close-ups and camera angles change what a scene communicates.
 
 ##### Plan a Shot Sequence
 
+Slug: planAShotSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select and order views that convey continuous action or a purposeful shift in focus.
+Methodological description: Select and order views that convey continuous action or a purposeful shift in focus.
+User-friendly description: Choose and order camera views to make an action or change of focus clear.
 
 ##### Edit Film Continuity
 
+Slug: editFilmContinuity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange transitions so viewers can understand time, space and action.
+Methodological description: Arrange transitions so viewers can understand time, space and action.
+User-friendly description: Connect shots so the audience can follow where and when events happen.
 
 ##### Create Meaning Through Montage
 
+Slug: createMeaningThroughMontage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Juxtapose shots so their combination expresses an idea beyond each separate view.
+Methodological description: Juxtapose shots so their combination expresses an idea beyond each separate view.
+User-friendly description: Combine shots to create an idea that neither shot expresses alone.
 
 ##### Coordinate Sound and Image
 
+Slug: coordinateSoundAndImage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use dialogue, ambience, effects or music to support or complicate visible action.
+Methodological description: Use dialogue, ambience, effects or music to support or complicate visible action.
+User-friendly description: Use sound and imagery together to support or challenge a scene's meaning.
 
 ##### Write a Screenplay
 
+Slug: writeAScreenplay
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Develop scenes, dramatic action and spoken dialogue in a form that communicates an intended screen narrative while distinguishing story structure from shot-by-shot visual planning.
+Methodological description: Develop scenes, dramatic action and spoken dialogue in a form that communicates an intended screen narrative while distinguishing story structure from shot-by-shot visual planning.
+User-friendly description: Write scenes, actions and dialogue that tell a story for the screen.
 
 ##### Storyboard a Film Sequence
 
+Slug: storyboardAFilmSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Translate a planned screen action into a sequence of drawn or otherwise represented frames that make camera views, blocking and narrative transitions intelligible.
+Methodological description: Translate a planned screen action into a sequence of drawn or otherwise represented frames that make camera views, blocking and narrative transitions intelligible.
+User-friendly description: Plan a film scene through a sequence of pictures showing key camera views.
 
 #### Animation
+
+Slug: animation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Animating involves designing change across successive states and controlling the temporal character of motion.
+Methodological description: Animating involves designing change across successive states and controlling the temporal character of motion.
+User-friendly description: Bring drawings or objects to life by planning changes over time.
 
 ##### Animate Frame-by-Frame
 
+Slug: animateFrameByFrame
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Produce the appearance of motion through successive deliberately varied images.
+Methodological description: Produce the appearance of motion through successive deliberately varied images.
+User-friendly description: Make motion by creating a sequence of slightly different images.
 
 ##### Control Animation Timing
 
+Slug: controlAnimationTiming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Change pose intervals and spacing to suggest acceleration, weight or dramatic emphasis.
+Methodological description: Change pose intervals and spacing to suggest acceleration, weight or dramatic emphasis.
+User-friendly description: Change the timing between poses to suggest speed, weight or emphasis.
 
 ##### Create Stop-Motion Animation
 
+Slug: createStopMotionAnimation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reposition physical objects between exposures to produce an apparent continuous action.
+Methodological description: Reposition physical objects between exposures to produce an apparent continuous action.
+User-friendly description: Move objects between photographs to create the illusion of motion.
 
 ##### Design Animated Transitions
 
+Slug: designAnimatedTransitions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Transform one visible state into another with intended expressive or narrative continuity.
+Methodological description: Transform one visible state into another with intended expressive or narrative continuity.
+User-friendly description: Design a smooth or expressive change from one animated state to another.
 
 ### Music Theory and Listening
 
