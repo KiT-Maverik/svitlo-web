@@ -33,4 +33,5 @@ export const forward20_Skill_Data = buildSkillConfig({
     pl: "Liczenie w przód do 20",
     uk: "Лічба вперед у межах 20",
   },
+  description: { methodological: "Find successive natural numbers by adding one from any starting value within the range. Understand crossing a ten boundary instead of relying on reciting the sequence from one." },
 });
