@@ -192,8 +192,8 @@
 54. **Ціна, кількість, вартість** — Будує математичну модель покупок.
    - **Target Skills:** `math.problems.price-quantity-cost` · `c5f731c1-be62-495a-8614-ba67ab9ed8a8`.
 
-55. **Обернена задача і другий спосіб** — Перевіряє розв’язання іншим способом.
-   - **Target Skills:** `math.problems.inverse-problem` · `75eb4981-4ba2-4e7f-ab31-e1acdcdac4a1`; `math.reasoning.verify-with-second-method` · `b99c90cc-815d-4944-851a-e33ecb43e5b0`.
+55. **Складання оберненої задачі та незалежна перевірка** — Формулює обернену задачу, змінюючи ролі даних і шуканого, а результати перевіряє іншим способом.
+   - **Target Skills:** `math.problems.construct-inverse-problem` · `75eb4981-4ba2-4e7f-ab31-e1acdcdac4a1`; `math.reasoning.verify-with-second-method` · `b99c90cc-815d-4944-851a-e33ecb43e5b0`.
 
 56. **Логічне виключення й обґрунтування** — Знаходить неможливі варіанти й пояснює висновок.
    - **Target Skills:** `math.reasoning.logical-elimination` · `0322e05e-0418-4031-8473-5b84e7ebb363`; `math.reasoning.draw-conclusion` · `cda308de-9fd0-4536-8635-2f5ba1a7010d`.
