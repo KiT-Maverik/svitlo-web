@@ -33,4 +33,5 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — 2-cyfrowe÷1-cyfrowe",
     uk: "Ділення — 2-цифрові÷1-цифрові",
   },
+  description: { methodological: "A dividend may be decomposed into convenient parts that are separately divisible in the chosen number domain, then the partial quotients combined using division's distributivity over a sum. Not every arbitrary partition divides evenly." },
 });
