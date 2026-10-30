@@ -83,6 +83,15 @@ Domain slugs are unique within the textbook. Group slugs are unique within their
 
 Approved slugs remain stable across display-name or translation changes. They do not replace UUIDs or introduce new runtime config fields. Preserve existing Code file paths and UUIDs; seek explicit editorial review of any mismatch or proposed change. Legacy taxonomies without slugs need deliberate migration.
 
+## ENTITY ACTION AND IMPLEMENTATION STATUS — MANDATORY
+
+Every newly authored or explicitly migrated Domain, Group and Skill must also have two independent, case-sensitive, single-line Markdown fields immediately after `Slug:`:
+
+- `Action: skip` | `Action: create` | `Action: update` | `Action: delete`. This is the **future Code-generator instruction**, not an editorial lifecycle status. `skip` means exclude this entity from the future operation without excluding it from taxonomy counts or the subject catalog. `create` requests new Code, `update` requests changing existing Code, and `delete` requests removing existing Code **only after separate explicit editor approval and dependency checks**. No operation is performed just by editing this field. **Default: `Action: skip`**; do not infer a destructive action from a heading change or absence.
+- `Status: pending` | `Status: implemented`. This records **current, verified Code implementation state**, not editorial approval: `pending` means no fully verified Code implementation for this entity; `implemented` requires a real validated `*.data.ts` implementation and appropriate link. **Default: `Status: pending`** when authoring a new unimplemented entry.
+
+The fields are independent: an implemented entity can have `Action: skip`, and a pending entity can remain in the catalog without generation. A `delete` action does not mean an entity has already been deleted. For `Status: pending`, use `[Not implemented](#)` unless a partially implemented/legacy entry requires explicit review; never call a missing or unverified Code file implemented. For `Status: implemented`, require the verified standalone Code link. Flag inconsistent action/status/link combinations for editor review; do not apply automatic operations, resolve destructive dependencies or modify generator scripts in this authoring workflow. These are **Markdown authoring fields**, not new properties of existing runtime entity contracts.
+
 ## TAXONOMY VS. CURRICULUM — NO LEARNING-DEPTH CEILING
 
 The taxonomy identifies **which distinct competencies exist** in the approved subject scope. It **does not prescribe a maximum or minimum depth of mastery**, nor mandate an age, grade, proficiency target, teaching method or implementation level. **Curriculum determines learning depth, expected outcomes, selection, prerequisites and sequence** for its audience; Lessons and Assessments implement those decisions.
@@ -96,20 +105,20 @@ Do not reduce a rich competency to mere recognition or conceptual awareness beca
 3. **Review / hard stop:** prepare and present the **explicit editor handoff for every mandatory escalation trigger** before changing the affected taxonomy entries. Discuss overlaps, missing competencies, accidental bundling, redundant assessment-format Skills and over-fragmentation. Do not independently decide that an ambiguous item is a Skill, Question or a duplicate; do not edit affected approved entries until the editor resolves the named question. An integration Skill C exists only if independently meaningful and explicitly approved; a Question covering A and B does not create C.
 4. **Write structured descriptions in the taxonomy itself:** every Domain, Group and Skill receives exactly two labeled, single-line fields immediately after its standalone implementation link: `Methodological description: <English text>` and `User-friendly description: <working-language UI draft or [Not authored]>`. The methodological field is canonical English editorial meaning: competency, scope, boundaries, misconceptions and useful examples; it must not merely paraphrase the heading, become a Question/lesson plan, or impose a Curriculum depth limit. The user-friendly field is concise learner-facing draft copy in the taxonomy's working language; it is **not** automatically `description.fe`. When frontend copy is not needed, write exactly `User-friendly description: [Not authored]`. A complete `description.fe` can be generated only after separate localization into **all supported locales**. The field labels, colon and one space are mandatory so a parser can safely identify entries. No free-floating unlabeled description paragraph; no fake English translation of existing source.
 5. **Inspect actual implementation files:** when an entity is implemented and validated, link directly to its canonical `*.data.ts` file. The link text **must be the file's exact basename, including every suffix and the extension** (for example, `[kineticEnergy.data.ts](%VERIFIED_RELATIVE_PATH%)`, not `[kineticEnergy]` or `[kineticEnergy.data]`). If implementation is unverified, use exactly `[Not implemented](#)`. The link stands **alone, without `Code:` or any other label**. A reserved UUID, a parent map or a proposed path does not prove implementation.
-6. **Author the canonical taxonomy** using the template below, including unique `Slug:` fields for every entity. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code. A **single optional historical Review** may be created or appended **only** under the narrowly defined gate below, not as a second taxonomy.
-7. **Verify and stop:** validate slug syntax and scoped uniqueness, and check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval. If a historical Review was changed, verify its dates, factual decisions, links and lack of duplication.
+6. **Author the canonical taxonomy** using the template below, including unique `Slug:`, explicit `Action:` and `Status:` fields for every entity. Default to `Action: skip` and `Status: pending` for new, unimplemented entries. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code. A **single optional historical Review** may be created or appended **only** under the narrowly defined gate below, not as a second taxonomy.
+7. **Verify and stop:** validate slug syntax and scoped uniqueness, allowed Action/Status values and Code-link/status consistency, and check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval. If a historical Review was changed, verify its dates, factual decisions, links and lack of duplication.
 
 ## CANONICAL OWNERSHIP
 
 - **Taxonomy Markdown:** staging editorial source of truth for unpromoted entries for approved slugs, pedagogical names, scope, distinctions, descriptions and Domain → Group → Skill membership, or exceptional Domain → Skill membership.
 - **TypeScript Data/IDs:** implementation authority for UUIDs, localized runtime names, typed configs, direct-child ID dictionaries and exports. The shared contracts support a transitional optional `description` object with English `methodological` text and optional fully localized `fe`. Do not regard an entity as migrated until its English `description.methodological` is complete and semantically reviewed, any present `description.fe` covers every supported language, and [Migrate Implemented Taxonomy](./migrate-implemented-taxonomy.skill.md) verifies and approves the promotion.
 - **Implementation link in taxonomy:** one unlabeled Markdown link per entity, with exact full filename (including suffixes and extension) as the link text when implemented, or exactly `[Not implemented](#)` otherwise. Never prefix that link with `Code:`. There is **no Definition link, separate Definition count or editorial Status on individual entities**.
-- **Approval:** a human editorial review gate on the taxonomy or a substantive revision, not a duplicated `Status: Draft/Approved` field on hundreds of documents. Once approved, downstream work must not rename, split, merge or rearrange without explicit review.
+- **Approval:** a human editorial review gate on the taxonomy or a substantive revision. The per-entity `Status: pending|implemented` denotes **implementation**, not editorial approval; never use `Status: Draft/Approved` for these entries. Once approved, downstream work must not rename, split, merge or rearrange without explicit review.
 - **Curricula and Lessons:** reference the canonical taxonomy; they own sequencing, teaching context, prerequisites and assessment choices, not the Skill catalog.
 
 ### Metadata before descriptions
 
-Keep each entity's metadata together directly after its heading. Order: **Domain:** `Slug` → `Groups · Skills` → link → two description fields; **Group:** `Slug` → `Skills` → link → two description fields; **Skill:** `Slug` → link → two description fields. Each label and its value occupy **one physical Markdown line**; the exact labels are `Slug: `, `Methodological description: ` and `User-friendly description: ` (including the space after the colon). Neither field is an implementation link or new entity. Preserve English methodological authority separately from the working-language frontend draft. Never reintroduce Definition links.
+Keep each entity's metadata together directly after its heading. Order: **Domain:** `Slug` → `Action` → `Status` → `Groups · Skills` → link → two description fields; **Group:** `Slug` → `Action` → `Status` → `Skills` → link → two description fields; **Skill:** `Slug` → `Action` → `Status` → link → two description fields. Each field and value occupy **one physical Markdown line**; the exact labels are `Slug: `, `Action: `, `Status: `, `Methodological description: ` and `User-friendly description: ` (including the space after the colon). Neither field is an implementation link or new entity. Preserve English methodological authority separately from the working-language frontend draft. Never reintroduce Definition links.
 
 ## SKILL TAXONOMY REVIEW — OPTIONAL DATED HISTORY, NOT ANOTHER TAXONOMY
 
@@ -143,14 +152,14 @@ Title: **Skill Taxonomy Review**. Keep the **original review date** and append s
 - Editorial uncertainties and source coverage limitations are reported separately; never fabricate a numeric standards-coverage percentage from catalog counts.
 - Domain/Group/Skill counts reconcile at every hierarchy level; membership is unique and matches any approved existing catalog. Ungrouped Domains report zero Groups and directly attached Skills; a singleton Group requires a recorded editorial exception.
 - Each entry has one verified, unlabeled implementation link showing the full filename (suffixes and extension included), or exactly `[Not implemented](#)`; Code counts report actual implementations, not file names guessed from the taxonomy.
-- No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or fake `Status` fields occur in the taxonomy.
-- Every newly authored or migrated Domain, Group and Skill has one valid `Slug: ` unique within its defined sibling scope.
+- No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or editorial-approval statuses occur in the taxonomy. The explicitly permitted `Status: pending|implemented` is implementation metadata only.
+- Every newly authored or migrated Domain, Group and Skill has one valid `Slug: ` unique within its defined sibling scope, exactly one `Action: ` from `skip|create|update|delete`, and exactly one `Status: ` from `pending|implemented`. Check consistency with verified Code links and avoid unauthorised destructive actions.
 - Every Domain, Group and Skill has exactly one nonblank `Methodological description: ` (English) and one `User-friendly description: ` (working-language draft or exact `[Not authored]`) after its metadata and link. No legacy unlabeled prose and no generic `Description:` prefix in newly created or migrated template documents.
 - The **authoring/staging artifact** is `docs/skills/taxonomy.md`. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates; the optional `docs/history/skill-taxonomy-review.md` may be created/updated **only** under the explicit history gate above.
 
 ## TAXONOMY TEMPLATE
 
-Repeat the blocks for each Domain, Group and Skill. **Grouped and direct Domain examples are alternatives, never mixed in one Domain.** Each field is a single Markdown line; use English for methodological text, and the explicitly selected working language for user-friendly draft copy. Use `User-friendly description: [Not authored]` when no frontend text is required. Complete all supported locales in a separate localization stage before publishing `description.fe`. The template is embedded; do not create another template file.
+Repeat the blocks for each Domain, Group and Skill. **Grouped and direct Domain examples are alternatives, never mixed in one Domain.** The templates show safe defaults (`Action: skip`, `Status: pending`); use `Status: implemented` only when Code is verified, and change `Action` only by an explicitly scoped authoring decision. Each field is a single Markdown line; use English for methodological text, and the explicitly selected working language for user-friendly draft copy. Use `User-friendly description: [Not authored]` when no frontend text is required. Complete all supported locales in a separate localization stage before publishing `description.fe`. The template is embedded; do not create another template file.
 
 ~~~md
 # %SUBJECT_NAME% — Skills Taxonomy
@@ -172,6 +181,8 @@ Code files: %DOMAIN_CODE_FILES%/%DOMAIN_COUNT% Domains · %GROUP_CODE_FILES%/%GR
 ### %DOMAIN_NAME%
 
 Slug: %DOMAIN_SLUG%
+Action: skip
+Status: pending
 
 Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
 
@@ -183,6 +194,8 @@ User-friendly description: [Not authored]
 #### %GROUP_NAME%
 
 Slug: %GROUP_SLUG%
+Action: skip
+Status: pending
 
 Skills: %GROUP_SKILL_COUNT%
 
@@ -194,6 +207,8 @@ User-friendly description: [Not authored]
 ##### %SKILL_NAME%
 
 Slug: %SKILL_SLUG%
+Action: skip
+Status: pending
 
 [Not implemented](#)
 
@@ -203,6 +218,8 @@ User-friendly description: [Not authored]
 ### %DIRECT_SKILLS_DOMAIN_NAME%
 
 Slug: %DIRECT_DOMAIN_SLUG%
+Action: skip
+Status: pending
 
 Groups: 0 · Skills: %DIRECT_DOMAIN_SKILL_COUNT%
 
@@ -214,6 +231,8 @@ User-friendly description: [Not authored]
 #### %DIRECT_SKILL_NAME%
 
 Slug: %DIRECT_SKILL_SLUG%
+Action: skip
+Status: pending
 
 [Not implemented](#)
 
