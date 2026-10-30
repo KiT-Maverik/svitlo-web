@@ -1183,215 +1183,380 @@ User-friendly description: Explore how a minimum wage may affect workers and bus
 
 ### Маркетинг і торгівля
 
+Slug: marketingAndTrade
+Action: create
+Status: pending
+
 Groups: 6 · Skills: 26
 
 [Not implemented](#)
 
-Маркетинг вивчає, як підприємство виявляє потреби, формує пропозицію та комунікує її цінність. Окремо розглядаються роздрібне середовище, цінові стимули й добросовісність впливу на покупця.
+Methodological description: Marketing examines how firms identify needs, develop offers, and communicate their value. Retail environments, price incentives, and fair influence on buyers are analyzed separately.
+User-friendly description: Explore how businesses understand customers, present products, and sell responsibly.
 
 #### Дослідження ринку
+
+Slug: marketResearch
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Потреби аудиторії та конкурентне середовище вивчають на основі спостережень, опитувань і перевірки припущень.
+Methodological description: Audience needs and competitive conditions can be studied using observations, surveys, and tests of assumptions.
+User-friendly description: Learn how businesses gather evidence about customers and competitors.
 
 ##### Сегментація споживачів
 
+Slug: consumerSegmentation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виділяти групи з відмінними потребами чи поведінкою за обґрунтованими критеріями, не перетворюючи стереотипи на факти.
+Methodological description: Identify groups with distinct needs or behavior using justified criteria without treating stereotypes as facts.
+User-friendly description: Group customers according to meaningful differences, not stereotypes.
 
 ##### Цільова аудиторія
 
+Slug: targetAudience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, для кого конкретна пропозиція найрелевантніша і які дані підтримують цей вибір.
+Methodological description: Determine who is most likely to benefit from a particular offering and what evidence supports that choice.
+User-friendly description: Identify the customers for whom a product is most relevant.
 
 ##### Перевірка ринкового попиту
 
+Slug: testingMarketDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Добирати свідчення готовності придбати продукт, відрізняючи заявлене зацікавлення від реальної купівельної поведінки.
+Methodological description: Select evidence of willingness to purchase, distinguishing expressed interest from actual buying behavior.
+User-friendly description: Find out whether people will really buy a proposed product.
 
 #### Продукт і ціннісна пропозиція
+
+Slug: productAndValueProposition
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Комерційна пропозиція охоплює користь, якість, сервіс і відмінності від альтернатив, а не лише фізичні властивості.
+Methodological description: A commercial offering combines benefits, quality, service, and differences from alternatives, not just physical features.
+User-friendly description: Discover what makes a product or service valuable to customers.
 
 ##### Ціннісна пропозиція
 
+Slug: valueProposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати, яку проблему покупця розв’язує продукт і за рахунок яких підтверджуваних властивостей.
+Methodological description: Explain which customer problem a product addresses and which verifiable properties support its claimed benefit.
+User-friendly description: Describe the problem a product solves and the evidence for its benefits.
 
 ##### Позиціонування продукту
 
+Slug: productPositioning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Показувати відмінність пропозиції від конкурентних альтернатив для конкретної групи споживачів.
+Methodological description: Show how an offering differs from competing alternatives for a specific customer group.
+User-friendly description: Explain how a product stands out for a particular audience.
 
 ##### Життєвий цикл продукту
 
+Slug: productLifeCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати можливі зміни попиту, конкуренції та маркетингових рішень на різних етапах існування товару.
+Methodological description: Analyze possible changes in demand, competition, and marketing decisions over stages of a product's life.
+User-friendly description: Explore how the market for a product can change over time.
 
 ##### Комерційна роль пакування
 
+Slug: commercialRoleOfPackaging
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як оформлення, написи, обсяг, інформація на етикетці й зручність упаковки змінюють сприйняту пропозицію та її витрати; відрізняти перевірювані характеристики від візуальної привабливості, яку окремо досліджує мистецтво.
+Methodological description: Assess how design, wording, size, labeling, and usability of packaging affect perceived value and costs; separate verifiable attributes from visual appeal, which Art analyzes independently.
+User-friendly description: See how packaging influences expectations and the practical value of a product.
 
 #### Реклама та комунікації
+
+Slug: advertisingAndCommunications
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Повідомлення про товар можуть інформувати, нагадувати чи переконувати; їхня ефективність і правдивість оцінюються окремо.
+Methodological description: Commercial messages can inform, remind, or persuade; effectiveness and truthfulness must be evaluated independently.
+User-friendly description: Learn how advertising communicates and how to judge its claims.
 
 ##### Рекламні цілі та канали
 
+Slug: advertisingObjectivesAndChannels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити мету повідомлення з характеристиками аудиторії, каналом комунікації та обмеженнями.
+Methodological description: Match a message's purpose with audience characteristics, communication channel, and constraints.
+User-friendly description: Choose advertising channels that suit a message and its audience.
 
 ##### Рекламне твердження
 
+Slug: advertisingClaims
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти факт, оцінне судження та обіцянку, яка потребує доказів, у комерційному повідомленні.
+Methodological description: Distinguish facts, value judgments, and promises requiring evidence in commercial communication.
+User-friendly description: Recognize which advertising statements need proof.
 
 ##### Рекламна кампанія
 
+Slug: advertisingCampaign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Планувати узгоджену послідовність повідомлень з визначеною метою, аудиторією й етичними обмеженнями.
+Methodological description: Plan a coordinated sequence of messages with a defined purpose, audience, and ethical limits.
+User-friendly description: Plan a consistent series of messages to reach a particular audience.
 
 ##### Оцінка результативності реклами
 
+Slug: advertisingEffectiveness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати охоплення, переходи, конверсії й витрати, не ототожнюючи увагу з доведеним приростом продажів.
+Methodological description: Interpret reach, clicks, conversions, and costs without equating attention with a proven increase in sales.
+User-friendly description: Use campaign results to judge performance without assuming clicks equal sales.
 
 ##### Спонсорські рекомендації та реклама інфлюенсерів
 
+Slug: sponsoredEndorsementsAndInfluencerAdvertising
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти незалежну думку від оплаченого просування, розкривати комерційну зацікавленість автора та перевіряти доказовість рекламних рекомендацій і заяв про популярність.
+Methodological description: Distinguish independent opinions from paid promotion, disclose creators' commercial interests, and assess evidence behind endorsements and popularity claims.
+User-friendly description: Recognize sponsored recommendations and check whether their claims are credible.
 
 #### Мерчандайзинг і роздріб
+
+Slug: retailMerchandising
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Розміщення, доступність, оформлення та логістика товарів змінюють зручність і ймовірність придбання.
+Methodological description: Product placement, availability, presentation, and logistics affect how easily customers find and buy goods.
+User-friendly description: Explore how store layout and product displays shape shopping.
 
 ##### Асортимент магазину
 
+Slug: storeAssortment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати набір товарів через потреби покупців, обмеження запасів, площі та ризик непроданих залишків.
+Methodological description: Evaluate a product range in light of customer needs, stock limits, available space, and unsold-inventory risk.
+User-friendly description: Understand how stores decide which products to stock.
 
 ##### Викладка товарів
 
+Slug: productDisplay
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати вплив розташування на видимість і доступність товарів без припущень про універсально найкращу полицю.
+Methodological description: Analyze how shelf position affects product visibility and accessibility without assuming a universally best shelf.
+User-friendly description: Explore how a product's position in a store affects what shoppers notice.
 
 ##### Торговельна навігація
 
+Slug: storeNavigation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як зонування, покажчики та шлях покупця впливають на пошук потрібних товарів.
+Methodological description: Assess how zones, signs, and shopper routes affect people's ability to find products.
+User-friendly description: See how signs and layouts help or hinder shopping.
 
 ##### Керування товарними запасами
 
+Slug: inventoryManagement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити потребу в доступності товару з витратами зберігання, псуванням і ризиком дефіциту.
+Methodological description: Balance product availability against storage costs, spoilage, and the risk of shortages.
+User-friendly description: Learn why stores must balance having enough stock with keeping costs down.
 
 #### Канали збуту та дистрибуція
+
+Slug: salesChannelsAndDistribution
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Передача товару від виробника до кінцевого споживача може відбуватися через різну кількість посередників, оптові операції, склади й транспорт; вибір каналу змінює витрати, доступність і контроль за продажами.
+Methodological description: Goods can reach end consumers through different numbers of intermediaries, wholesale transactions, warehouses, and transport; channel choice affects costs, availability, and control over sales.
+User-friendly description: Discover how products travel from producers to customers.
 
 ##### Оптова торгівля
 
+Slug: wholesaleTrade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати роль великих партій, посередництва між виробником і роздрібом та відмінність оптової ціни й функції від роздрібного продажу.
+Methodological description: Analyze bulk transactions and intermediaries linking producers and retailers, distinguishing wholesale pricing and functions from retail sales.
+User-friendly description: Understand how wholesale trading differs from selling directly to consumers.
 
 ##### Канали збуту
 
+Slug: distributionChannels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати прямі й опосередковані способи доставки комерційної пропозиції до покупця за охопленням, комісіями, контролем і витратами.
+Methodological description: Compare direct and intermediary-based routes to buyers by reach, commissions, control, and costs.
+User-friendly description: Compare ways businesses can deliver products to customers.
 
 ##### Витрати дистрибуції
 
+Slug: distributionCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зв’язок складування, транспортування, пакування та логістичних затримок із кінцевою ціною й доступністю товару.
+Methodological description: Assess how warehousing, transport, packaging, and logistical delays influence final price and product availability.
+User-friendly description: See why transport and storage affect what a product costs.
 
 #### Ціни, акції та добросовісність
+
+Slug: pricingPromotionsAndFairness
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Цінові пропозиції мають комерційний ефект, але їхня оцінка потребує перевірки реальної вигоди та способів впливу.
+Methodological description: Price offers have commercial effects, but judging them requires verifying actual savings and methods of influencing buyers.
+User-friendly description: Learn to evaluate sale prices, discounts, and fair selling practices.
 
 ##### Стратегії роздрібного ціноутворення
 
+Slug: retailPricingStrategies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати цінові рішення продавця за витратами, сприйнятою цінністю та конкурентним середовищем.
+Methodological description: Compare sellers' pricing choices in relation to costs, perceived value, and competition.
+User-friendly description: Explore how stores choose prices for their products.
 
 ##### Знижки та акційні пропозиції
 
+Slug: discountsAndPromotions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати фактичну економію відносно перевірюваної базової ціни, кількості й умов придбання; правильно інтерпретувати купони, набори, акції «два за ціною одного» та відсоткові знижки, не ототожнюючи знижку з необхідністю покупки.
+Methodological description: Calculate real savings against a verifiable reference price, quantity, and purchase conditions; interpret coupons, bundles, buy-one-get-one offers, and percentage discounts without assuming any discount makes a purchase necessary.
+User-friendly description: Check whether a discount really saves money before buying.
 
 ##### Приховані витрати й нав’язані опції
 
+Slug: hiddenChargesAndForcedExtras
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти непоказані до оплати збори, платні опції за замовчуванням та додаткові придбання, які змінюють повну вартість угоди. Перешкоди відмови від уже оформленої підписки становлять окрему компетентність.
+Methodological description: Identify fees disclosed only at payment, paid options selected by default, and add-ons that change total transaction costs; obstacles to canceling a completed subscription are a separate competency.
+User-friendly description: Spot extra charges and add-ons that make an offer cost more than it first appears.
 
 ##### Маніпулятивні комерційні прийоми
 
+Slug: manipulativeCommercialTactics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати непідтверджену терміновість, вигаданий дефіцит, оманливі рейтинги, відгуки й повідомлення про популярність, відрізняючи добросовісне переконування від неправдивих комерційних тверджень.
+Methodological description: Recognize unsupported urgency, fake scarcity, misleading ratings, reviews, and popularity claims, distinguishing honest persuasion from deceptive commercial statements.
+User-friendly description: Recognize misleading urgency, fake scarcity, and other shopping pressure tactics.
 
 ##### Етичний маркетинг
 
+Slug: ethicalMarketing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати правдивість, прозорість, повагу до вразливих груп і можливість вільної відмови у комерційній практиці.
+Methodological description: Evaluate truthfulness, transparency, treatment of vulnerable groups, and freedom to decline in commercial practices.
+User-friendly description: Judge whether a selling practice is honest and respects customer choice.
 
 ##### Психологічне ціноутворення
 
+Slug: psychologicalPricing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати роль цінових порогів, закінчень на кшталт 99, порівняльних або закреслених цін та референтної ціни в сприйнятті вигоди. Ефективність прийому залежить від ринку й контексту, а не гарантується форматом числа.
+Methodological description: Analyze the effect of price thresholds, endings such as 99, comparative or crossed-out prices, and reference prices on perceived value; effects vary by market and context and are not guaranteed by a numerical format.
+User-friendly description: Explore why prices ending in 99 or crossed-out comparisons influence perception.
 
 ##### Перешкоди скасуванню підписки
 
+Slug: subscriptionCancellationBarriers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти складні процедури відмови, приховане автоматичне поновлення та асиметрію між легкістю оформлення й скасування договору; відокремлювати таку перешкоду від прозорих умов законного продовження.
+Methodological description: Identify burdensome cancellation steps, hidden automatic renewal, and imbalance between ease of signing up and canceling; distinguish these from transparent lawful renewal terms.
+User-friendly description: Recognize when canceling a subscription is made unnecessarily difficult.
 
 ### Особисті фінанси
 
