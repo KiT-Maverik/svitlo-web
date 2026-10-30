@@ -8,7 +8,7 @@ import ts from 'typescript';
 
 const root = path.resolve(import.meta.dirname, '..');
 const packageRoot = path.join(root, 'learningApps/math');
-const taxonomyRoot = path.join(packageRoot, 'src/data/skillsTaxonomy');
+const taxonomyRoot = path.join(packageRoot, 'data/skills');
 const outputPath = path.join(packageRoot, 'docs/generated/skills/taxonomy.en.md');
 const source = fs.readFileSync(path.join(root, 'shared/contracts/src/types/languages.ts'), 'utf8');
 const registry = source.slice(source.indexOf('export const DEFAULT_SUPPORTED_LANGUAGES'),
@@ -20,7 +20,7 @@ function sourceFiles(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
     const file = path.join(dir, entry.name);
     if (entry.isDirectory()) return entry.name === '__tests__' ? [] : sourceFiles(file);
-    return entry.isFile() && entry.name.endsWith('.data.ts') && entry.name !== 'index.data.ts' ? [file] : [];
+    return entry.isFile() && entry.name.endsWith('.data.ts') ? [file] : [];
   });
 }
 
@@ -133,21 +133,13 @@ function parseMarkdown(view, locale) {
   assert.equal(found.size, expectedFiles.size, 'Not every Code entity was reproduced');
 }
 
-test('Mathematics: Code to Markdown round-trip preserves every entity and all supported locale strings', () => {
+test('Mathematics: new data/skills Code-to-Markdown round-trip preserves every entity and supported locale strings', () => {
   const before = fs.existsSync(outputPath) ? fs.readFileSync(outputPath, 'utf8') : undefined;
   for (const locale of locales) {
     const first = generate(locale);
     assert.equal(generate(locale), first, 'Non-deterministic output for ' + locale);
     parseMarkdown(first, locale);
   }
-  // An explicit legacy source path must reproduce the default output exactly.
-  const explicit = spawnSync(process.execPath, [
-    path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
-    '--package', 'learningApps/math', '--source-root', 'src/data/skillsTaxonomy',
-    '--locale', 'en', '--stdout',
-  ], { cwd: root, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });
-  assert.equal(explicit.status, 0, explicit.stderr);
-  assert.equal(explicit.stdout, generate('en'));
   const after = fs.existsSync(outputPath) ? fs.readFileSync(outputPath, 'utf8') : undefined;
   assert.equal(after, before, '--stdout must not modify generated files');
   assert.equal(entities.length, expectedFiles.size, 'Duplicate Code source files');
