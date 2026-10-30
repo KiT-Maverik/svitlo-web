@@ -22,6 +22,6 @@ The `@svitlo/contracts/taxonomy` `SkillDomain_Config` has `id`, localized `name`
 - **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological explanation, optional complete fe copy and Group membership **or direct Skill membership**.
 - **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
-New-format records use single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone implementation link. Legacy unlabeled prose needs migration; there is no generic `Description:` field, per-Domain Definition file or redundant editorial `Status` marker.
+New-format records use single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone implementation link. Legacy unlabeled prose needs migration; there is no generic `Description:` field, per-Domain Definition file or additional editorial approval state. The new `Action: skip|create|update|delete` and `Status: pending|implemented` taxonomy fields instead describe future generator intent and verified Code implementation.
 
 Related entities: [SkillGroup](./skill-group.md), [Skill](./skill.md).
