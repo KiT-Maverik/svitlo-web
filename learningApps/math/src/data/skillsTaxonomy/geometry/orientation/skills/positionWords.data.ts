@@ -33,4 +33,5 @@ export const positionWords_Skill_Data = buildSkillConfig({
     pl: "Opisywanie położenia względnego",
     uk: "Опис взаємного розташування предметів",
   },
+  description: { methodological: "Spatial relations are defined relative to an object, observer, or coordinate frame. Left, right, and ahead depend on the reference point; distinguish relative orientation from absolute coordinates." },
 });

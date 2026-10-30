@@ -33,4 +33,5 @@ export const polygon_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie wielokątów i ich elementów",
     uk: "Розпізнавання многокутників та їхніх елементів",
   },
+  description: { methodological: "A polygon is a plane figure bounded by a closed polygonal chain of straight segments meeting at vertices. Not every closed curve forms a polygon; the boundary differs from its interior region." },
 });
