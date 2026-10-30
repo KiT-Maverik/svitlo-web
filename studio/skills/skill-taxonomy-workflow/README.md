@@ -28,7 +28,7 @@ Each textbook's authoring taxonomy belongs under `<PackageRoot>/data/skills/`: r
 
 ## EDITORIAL SLUGS
 
-For newly authored or deliberately migrated staging taxonomies, `Slug: lowerCamelCase`, `Action: skip|create|update|delete`, and `Status: pending|implemented` appear in that order directly below each Domain, Group and Skill heading, before counts and the standalone Code link. The default is `Action: skip` and `Status: pending` for new unimplemented entries. `Action` is a plan for a future generator, not authorization to modify Code; `Status` reports verified current implementation, not editorial approval. A skipped entry stays in the taxonomy and counts, and a delete action requires separate explicit human approval and dependency checks. All Domain, Group and Skill slugs are globally unique within a single textbook, across all entity kinds and ancestors. Preserve approved slugs across display-name changes. Slugs are editorial identifiers, not UUIDs or additional runtime `Skill*_Config` fields. Existing slugless documents remain legacy. The Code-to-Markdown generator intentionally omits `Slug`, `Action` and `Status`: these are editorial authoring/implementation-planning metadata, not Code entity fields. Its Code → generated Markdown → parsed-view test proves preservation of fields **stored in Code**, not restoration of the editable editorial template or its slug/action/status mapping. Do not mistake the derived view for a replacement authoring document.
+For newly authored or deliberately migrated staging taxonomies, `Slug: lowerCamelCase`, `Action: skip|create|update|delete`, and `Status: pending|implemented` appear in that order directly below each Domain, Group and Skill heading, before counts and the standalone Code link. The default is `Action: skip` and `Status: pending` for new unimplemented entries. `Action` directs the separate Markdown → Code generator but does not itself authorize writes; `Status` reports verified current implementation, not editorial approval. A skipped entry stays in the taxonomy and counts, and a delete action requires separate explicit human approval and dependency checks. All Domain, Group and Skill slugs are globally unique within a single textbook, across all entity kinds and ancestors. Preserve approved slugs across display-name changes. Slugs are editorial identifiers, not UUIDs or additional runtime `Skill*_Config` fields. Existing slugless documents remain legacy. The Code-to-Markdown generator intentionally omits `Slug`, `Action` and `Status`: these are editorial authoring/implementation-planning metadata, not Code entity fields. Its Code → generated Markdown → parsed-view test proves preservation of fields **stored in Code**, not restoration of the editable editorial template or its slug/action/status mapping. Do not mistake the derived view for a replacement authoring document.
 
 ## CONTRACT AND COMPATIBILITY
 
@@ -51,6 +51,18 @@ The generator **fails** for missing localized names or English methodology and f
 Before changing any staging taxonomy record: preserve exact approved semantic meaning; verify source links; reconcile actual Code UUID and parent; verify locale roster at runtime contract; verify translation quality, not merely presence; inspect all downstream users; keep reportable evidence and editor approval; commit an auditable diff. If any check fails, retain the record. Do not auto-delete all implemented-looking entries. Do not remove archived originals in `studio/skills/Obsolete`; they are marked as historical.
 
 **Localization of generated views:** `--locale` localizes catalog names and available `User-friendly description (<locale>)` copy; the methodological description remains English in *every* output. Generated views do **not** contain editorial Slug/Action/Status metadata and must not claim to be a fully translated methodological document or a round-trip of the editorial staging format.
+
+## Markdown → Code entity generator
+
+The permanent [Markdown → Code generator](../../../scripts/implement-skills-taxonomy.mjs) consumes the approved, editable `docs/skills/taxonomy.md` plus a separately reviewed JSON localization dictionary keyed by scoped entity path (for example `domain/group/skill`). It targets only `<PackageRoot>/data/skills/` with directly composed typed Data entities. UUIDs belong to each entity's own `*.data.ts`; successful updates preserve them. It never emits separate ID files, Data indexes or runtime `slug` fields.
+
+```sh
+node scripts/implement-skills-taxonomy.mjs --package learningApps/<textbook> --translations <reviewed-locales.json>
+node scripts/implement-skills-taxonomy.mjs --package learningApps/<textbook> --translations <reviewed-locales.json> --apply
+node --test scripts/implement-skills-taxonomy.spec.mjs
+```
+
+Dry-run is the default; `--apply` is required for writes. Generated changes are validated against the FastGate Skill graph checker in an isolated temporary tree first. The generator rejects absent or partial Skill frontend locale dictionaries, invalid identity references, and mismatched Code links. `Action: skip` leaves existing Code unchanged. Deletions are currently **disabled even with `--allow-delete`** until a full incoming-reference audit and safe removal of parent relations are implemented. Do not substitute this generated Code for independent editorial promotion review. Mathematics has no staging Markdown and must not be reconstructed to run the generator.
 
 ## Deterministic Markdown → Code description import
 
