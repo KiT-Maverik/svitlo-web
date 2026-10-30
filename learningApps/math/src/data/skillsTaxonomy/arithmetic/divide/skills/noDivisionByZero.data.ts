@@ -33,4 +33,5 @@ export const noDivisionByZero_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Dzielenie przez Zero",
     uk: "Ділення — Ділення на нуль",
   },
+  description: { methodological: "For nonzero a, 0 × x = a has no solution; for a = 0 it has many, so division by zero cannot define a unique inverse of multiplication. This covers a zero as well as a nonzero dividend." },
 });
