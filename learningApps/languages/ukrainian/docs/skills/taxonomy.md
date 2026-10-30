@@ -609,337 +609,592 @@ User-friendly description: Pronounce Ukrainian words and stress according to the
 
 ### Абетка та графіка
 
+Slug: ukrainianAlphabetAndScript
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Охоплює письмові знаки української мови, порядок літер і звуко-буквені відповідності. Правила вибору орфограми й пунктуація винесені до правопису.
+Methodological description: Covers the written signs of Ukrainian, letter order, and sound–letter correspondences. Choosing spellings and using punctuation belong to orthography.
+User-friendly description: Explore Ukrainian letters, alphabetical order, and how writing represents speech.
 
 #### Українська абетка
+
+Slug: ukrainianAlphabet
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Впізнавання та впорядкування літер, що утворюють графічний інвентар сучасного українського письма.
+Methodological description: Recognize and order letters forming the modern Ukrainian writing system.
+User-friendly description: Recognize and arrange the letters of the Ukrainian alphabet.
 
 ##### Букви української абетки
 
+Slug: ukrainianLetterRecognition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Впізнавати графічну форму й назву кожної букви, включно з візуально близькими знаками.
+Methodological description: Identify each letter's written form and name, including visually similar symbols.
+User-friendly description: Identify Ukrainian letters by their shapes and names.
 
 ##### Великі та малі букви
 
+Slug: uppercaseAndLowercaseLetters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити регістрові варіанти однієї літери, не вважаючи їх окремими звуками.
+Methodological description: Match upper- and lowercase forms of the same letter without treating them as different sounds.
+User-friendly description: Match the uppercase and lowercase versions of Ukrainian letters.
 
 ##### Абетковий порядок
 
+Slug: alphabeticalOrder
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Впорядковувати слова за послідовністю літер із урахуванням наступних позицій при збігу початкових.
+Methodological description: Sort words by letter order, considering later positions when their beginnings match.
+User-friendly description: Arrange Ukrainian words in correct alphabetical order.
 
 #### Звуко-буквені відповідності
+
+Slug: soundLetterCorrespondence
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Співвіднесення усних звуків із письмовими знаками з урахуванням неоднозначності деяких відповідностей.
+Methodological description: Connect spoken sounds with written signs, accounting for correspondences that are not one-to-one.
+User-friendly description: Explore how Ukrainian written letters represent spoken sounds.
 
 ##### Відмінність звука від букви
 
+Slug: differenceBetweenSoundAndLetter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розмежовувати одиницю усного мовлення та знак, яким цю одиницю позначають на письмі.
+Methodological description: Distinguish a unit of spoken language from the symbol used to represent it in writing.
+User-friendly description: Tell a spoken sound apart from its written letter.
 
 ##### Співвідношення звуків і букв
 
+Slug: ukrainianSoundLetterRelationships
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставляти фонетичну та графічну будову українського слова, зокрема враховуючи щ як [шч], ї як [йі], позиційне читання я, ю, є та диграфи дж, дз.
+Methodological description: Compare the phonetic and written structure of a Ukrainian word, including щ as [шч], ї as [йі], context-dependent я, ю, є, and дж, дз digraphs.
+User-friendly description: Recognize when the number of sounds differs from the number of letters.
 
 ##### Функції букв я, ю, є та ї
 
+Slug: functionsOfYaYuYeYi
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Враховувати контекстне читання я, ю, є та двозвукову роль ї, не застосовуючи однакове правило скрізь.
+Methodological description: Interpret я, ю, and є according to context and ї as representing two sounds, without applying one rule in every position.
+User-friendly description: Understand how я, ю, є and ї represent sounds in different contexts.
 
 ##### Звуки, позначені дж і дз
 
+Slug: soundsOfDzhAndDz
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати злиті звуки, що передаються двома літерами, і відрізняти їх від збігу двох звуків.
+Methodological description: Recognize affricates written with two letters and distinguish them from sequences of two separate sounds.
+User-friendly description: Identify when дж or дз represents a single sound.
 
 ##### Розрізнення г та ґ
 
+Slug: distinguishHAndG
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відповідно співвідносити букви з різними приголосними, зберігаючи смислові відмінності слів.
+Methodological description: Match г and ґ with their distinct consonants, preserving lexical differences between words.
+User-friendly description: Distinguish the sounds and spellings of Ukrainian г and ґ.
 
 #### Додаткові графічні знаки
+
+Slug: additionalWrittenSymbols
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Знаки, які впливають на читання або межі письмового повідомлення, але не є самостійними буквами.
+Methodological description: Understand signs that affect reading or boundaries in writing without being letters themselves.
+User-friendly description: Explore written symbols that are not letters.
 
 ##### Функція м'якого знака
 
+Slug: softSignFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміти, що ь може позначати м'якість попереднього приголосного без власного звука.
+Methodological description: Understand how ь may indicate softness of the preceding consonant while representing no sound of its own.
+User-friendly description: Recognize what the Ukrainian soft sign ь does.
 
 ##### Функція апострофа
 
+Slug: apostropheFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміти роздільну вимову перед я, ю, є, ї та відмінність апострофа від літери.
+Methodological description: Understand separate pronunciation before я, ю, є, and ї, distinguishing the apostrophe from a letter.
+User-friendly description: Explain why Ukrainian uses an apostrophe in some words.
 
 ##### Букви та небуквені знаки
 
+Slug: lettersAndNonletterSymbols
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати літери від пробілу, дефіса й розділових знаків за їхньою функцією.
+Methodological description: Distinguish letters from spaces, hyphens, and punctuation marks by their functions.
+User-friendly description: Tell letters from spaces, hyphens and punctuation.
 
 ### Читання
+
+Slug: readingUkrainian
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 14
 
 [Not implemented](#)
 
-Об'єднує декодування українського письма, плавність прочитання, розуміння фактичного змісту та свідомі стратегії роботи з ним. Літературознавчу інтерпретацію художніх творів виділено за межі цього підручника.
+Methodological description: Combines decoding Ukrainian script, fluent reading, understanding stated facts, and deliberate comprehension strategies. Literary-critical interpretation belongs outside this textbook.
+User-friendly description: Read Ukrainian words and texts fluently and understand their meaning.
 
 #### Декодування письма
 
+Slug: writtenDecoding
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Перехід від графічного образу букви чи буквосполучення до звучання складу та впізнавання слова.
+Methodological description: Move from written letters and letter groups to syllable sounds and recognition of words.
+User-friendly description: Learn to turn written Ukrainian letters into words you can pronounce.
 
 ##### Читання буквосполучень
 
+Slug: readingLetterCombinations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перетворювати поєднання літер на відповідні звуки з урахуванням їхньої позиції.
+Methodological description: Convert letter combinations into their corresponding sounds according to position.
+User-friendly description: Sound out Ukrainian letter combinations correctly.
 
 ##### Злиття звуків у склад
 
+Slug: blendSoundsIntoSyllables
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поєднувати звукові відповідності під час читання, не вимовляючи ізольовані назви букв.
+Methodological description: Combine sound correspondences during reading without pronouncing isolated letter names.
+User-friendly description: Blend speech sounds into syllables when reading.
 
 ##### Читання незнайомого слова
 
+Slug: readingUnfamiliarWords
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Використовувати відомі графемні відповідності й складову будову для нового словесного запису.
+Methodological description: Apply known grapheme correspondences and syllable structure to new written words.
+User-friendly description: Use familiar sound rules to read words you have not seen before.
 
 ##### Впізнавання знайомого слова
 
+Slug: recognizingFamiliarWords
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Швидко пов'язувати цілісний письмовий образ із відомим словом і його значенням.
+Methodological description: Quickly connect a familiar written word form with the known word and its meaning.
+User-friendly description: Recognize familiar words without sounding out every letter.
 
 #### Плавність та виразність
 
+Slug: readingFluencyAndExpression
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Читання, що зберігає смислове групування слів і передає синтаксичні та інтонаційні відмінності.
+Methodological description: Read with meaningful grouping of words and appropriate syntactic and intonational distinctions.
+User-friendly description: Read smoothly with pauses and intonation that support meaning.
 
 ##### Зв'язне читання
 
+Slug: connectedReading
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поєднувати слова в осмислені фрази, не розбиваючи їх на випадкові звукові відрізки.
+Methodological description: Combine words into meaningful phrases rather than arbitrary fragments of sound.
+User-friendly description: Read words together as understandable phrases.
 
 ##### Смислові паузи
 
+Slug: meaningfulPausesInReading
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Враховувати синтаксичну будову й розділові знаки під час розподілу мовлення на фрагменти.
+Methodological description: Use sentence structure and punctuation to divide spoken reading into meaningful segments.
+User-friendly description: Pause at places that help listeners follow a text.
 
 ##### Інтонація прочитаного
 
+Slug: readingIntonation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати голосом запитання, спонукання, завершеність та смислові акценти.
+Methodological description: Express questions, instructions, completion, and emphasis through the voice when reading.
+User-friendly description: Use your voice to express the meaning of what you read.
 
 #### Розуміння прочитаного
+
+Slug: readingComprehension
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Відновлення прямо повідомленої інформації й суттєвих відношень між фактами в тексті.
+Methodological description: Recover information explicitly stated in a text and important relationships among its facts.
+User-friendly description: Understand facts and relationships described in a Ukrainian text.
 
 ##### Пошук інформації в тексті
 
+Slug: locateInformationInText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити потрібні прямо зазначені факти або умови, не підміняючи їх здогадками.
+Methodological description: Find required facts or conditions that are explicitly stated without substituting guesses.
+User-friendly description: Find exact information that the text provides.
 
 ##### Причина й наслідок у тексті
 
+Slug: causeAndEffectInText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати причинний зв'язок від простого розташування подій одна за одною.
+Methodological description: Distinguish a causal relationship from events simply appearing in succession.
+User-friendly description: Recognize which events in a text caused other events.
 
 ##### Висновок із прочитаного
 
+Slug: inferFromReading
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати твердження, яке випливає з текстових підказок і не суперечить наведеним фактам.
+Methodological description: Formulate a conclusion supported by textual clues that does not contradict the stated facts.
+User-friendly description: Draw a reasonable conclusion from clues in a text.
 
 #### Стратегії читання
+
+Slug: readingStrategies
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Дії читача, що спрямовані на пошук потрібного та на виправлення неточного або неповного розуміння.
+Methodological description: Use deliberate actions to find information and correct incomplete or inaccurate understanding.
+User-friendly description: Learn ways to clarify and remember what you read.
 
 ##### Повторне читання для уточнення
 
+Slug: rereadForClarification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Повертатися до змістовно важливого уривка, коли його перше тлумачення непевне.
+Methodological description: Return to a significant passage when its first interpretation is uncertain.
+User-friendly description: Read a passage again to clear up confusion.
 
 ##### Запитання до прочитаного
 
+Slug: askQuestionsAboutReading
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати змістовний запит про події, невідомі поняття чи зв'язки в тексті.
+Methodological description: Formulate substantive questions about events, unfamiliar concepts, or relations in a text.
+User-friendly description: Ask meaningful questions about what you have read.
 
 ##### Стислий виклад прочитаного
 
+Slug: summarizeReading
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати ключові відомості без зайвих повторень зі збереженням смислу джерела.
+Methodological description: Convey key information without unnecessary repetition while retaining the source's meaning.
+User-friendly description: Summarize the essential ideas of a text.
 
 ##### Орієнтування за структурою тексту
 
+Slug: navigateTextStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Використовувати заголовок, абзаци й позначені частини для пошуку змісту.
+Methodological description: Use titles, paragraphs, and marked sections to locate content.
+User-friendly description: Find information using headings and paragraphs.
 
 ### Письмове мовлення
+
+Slug: writtenExpression
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 12
 
 [Not implemented](#)
 
-Охоплює розбірливий запис і створення власних зв'язних письмових повідомлень. Змістове редагування класифікується тут, а виправлення окремих орфограм — у правописі.
+Methodological description: Covers legible handwriting and producing coherent original texts. Editing meaning is included here, while correcting particular spellings belongs to orthography.
+User-friendly description: Write clear Ukrainian messages and revise them to express your meaning.
 
 #### Рукописне письмо
 
+Slug: handwriting
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Моторне й графічне відтворення рукописних форм так, щоб їх міг прочитати інший користувач мови.
+Methodological description: Reproduce handwritten forms using motor and graphic control so another reader can recognize them.
+User-friendly description: Learn to write Ukrainian letters and words legibly by hand.
 
 ##### Рукописні форми букв
 
+Slug: handwrittenLetterForms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відтворювати великі й малі рукописні літери з достатньо впізнаваними обрисами.
+Methodological description: Produce recognizable upper- and lowercase handwritten letters.
+User-friendly description: Form clear handwritten uppercase and lowercase letters.
 
 ##### Поєднання букв у письмі
 
+Slug: handwrittenLetterConnections
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-З'єднувати рукописні графеми, зберігаючи їхню впізнаваність у слові.
+Methodological description: Join handwritten graphemes while preserving their recognizability within words.
+User-friendly description: Connect handwritten letters without making words hard to read.
 
 ##### Розбірливість запису
 
+Slug: legibleHandwriting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Забезпечувати зрозумілі форми, проміжки та межі слів незалежно від швидкості письма.
+Methodological description: Ensure understandable letter shapes, spacing, and word boundaries regardless of writing speed.
+User-friendly description: Keep handwriting readable with clear spaces between words.
 
 #### Письмове речення
+
+Slug: writtenSentence
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Оформлення однієї завершеної думки засобами письмового мовлення та її смислове уточнення.
+Methodological description: Express a complete thought in writing and refine its meaning.
+User-friendly description: Build a written sentence that clearly conveys one complete idea.
 
 ##### Створення письмового речення
 
+Slug: constructWrittenSentence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перетворювати задум на синтаксично завершене повідомлення з однозначним основним змістом.
+Methodological description: Turn an intended message into a syntactically complete sentence with an unambiguous main meaning.
+User-friendly description: Write a complete sentence that expresses your thought.
 
 ##### Поширення письмового речення
 
+Slug: expandWrittenSentence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Додавати потрібні відомості про місце, час, ознаку чи спосіб без втрати головної думки.
+Methodological description: Add needed details about place, time, property, or manner without losing the central thought.
+User-friendly description: Add relevant details to a sentence while keeping its main point.
 
 ##### Усунення зайвих слів
 
+Slug: removeRedundantWords
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вилучати повтори або вставки, які не додають потрібного змісту й заважають розумінню.
+Methodological description: Delete repetitions or insertions that add no needed information and obstruct comprehension.
+User-friendly description: Remove unnecessary words that make a sentence harder to understand.
 
 #### Письмові жанри
+
+Slug: writtenGenres
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Продукування тексту за різними комунікативними функціями, а не за видом інтерфейсу чи вправи.
+Methodological description: Produce texts with distinct communicative purposes rather than classifying them by interface or exercise format.
+User-friendly description: Explore different purposes for writing messages, stories, and explanations.
 
 ##### Письмове повідомлення
 
+Slug: writtenMessage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати адресатові конкретні відомості в достатній для розуміння формі.
+Methodological description: Communicate specific information to the recipient in a form sufficient for understanding.
+User-friendly description: Write a clear message that tells someone what they need to know.
 
 ##### Письмова розповідь
 
+Slug: writtenNarrative
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Викладати події з логічним і часовим зв'язком між послідовними фрагментами.
+Methodological description: Present events with clear logical and chronological connections between successive parts.
+User-friendly description: Write a story with connected events in a sensible order.
 
 ##### Письмовий опис
 
+Slug: writtenDescription
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відбирати характерні ознаки предмета чи явища й групувати їх у зрозумілий виклад.
+Methodological description: Choose distinguishing characteristics of a person, object, or phenomenon and organize them coherently.
+User-friendly description: Describe an object or event using its important features.
 
 ##### Письмове міркування
 
+Slug: writtenReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати судження та пов'язану з ним підставу, а не повторювати тезу іншими словами.
+Methodological description: State a judgment and a connected supporting reason rather than merely restating the claim.
+User-friendly description: Write an opinion supported by a meaningful reason.
 
 #### Змістове редагування
+
+Slug: contentEditing
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Перевірка вже створеного письмового висловлювання за критеріями повноти, точності й зв'язності.
+Methodological description: Review an existing text for completeness, precision, and coherence rather than just correcting spelling.
+User-friendly description: Improve the meaning and clarity of a text you have written.
 
 ##### Повнота власного тексту
 
+Slug: ownTextCompleteness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти, якої суттєвої інформації бракує читачеві для правильного розуміння.
+Methodological description: Identify essential information a reader still needs in order to understand the intended meaning.
+User-friendly description: Find important information missing from your own writing.
 
 ##### Точність формулювань
 
+Slug: clarityOfWording
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Уточнювати ціле речення або фрагмент власного тексту так, щоб намір читався однозначно, усуваючи нечіткі відношення, зайві узагальнення й двозначності.
+Methodological description: Revise a sentence or passage to make its intended meaning unambiguous, removing vague relationships, overgeneralization, and ambiguity.
+User-friendly description: Rewrite unclear wording so a reader understands exactly what you mean.
 
 ### Лексика
 
