@@ -33,4 +33,5 @@ export const by8_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 8",
     uk: "Множення — × 8",
   },
+  description: { methodological: "Multiplication by eight connects equal groups of eight with their total; doubling, decomposition, and known products provide equivalent computation strategies. The family of facts is distinct from a method of learning it." },
 });
