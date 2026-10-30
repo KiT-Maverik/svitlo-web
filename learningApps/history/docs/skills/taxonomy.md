@@ -23,449 +23,794 @@ Code files: 0/11 Domains · 0/50 Groups · 0/216 Skills
  
 ### Історичне пізнання
 
+Slug: historicalInquiry
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 16
 
 [Not implemented](#)
 
-Методи встановлення й перевірки знань про суспільства минулого: час, простір, джерельні свідчення та побудова історичних висновків. Ці компетентності застосовуються до всіх давніх регіонів і не становлять окремої послідовності уроків.
+Methodological description: Methods for establishing and checking knowledge of past societies through chronology, geography, source evidence, and historical inference. These competencies apply across ancient regions rather than defining a lesson sequence.
+User-friendly description: Learn how historians investigate the past and evaluate what we know.
 
 #### Час і періодизація
+
+Slug: timeAndPeriodization
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Історичний час встановлюють через відносне й абсолютне датування; межі періодів є інструментами аналізу, а не однаковими для всього світу природними рубежами.
+Methodological description: Historical time uses relative and absolute dating; period boundaries are analytical conventions, not universal natural transitions occurring everywhere simultaneously.
+User-friendly description: Explore how dates and historical periods help us organize the past.
 
 ##### Історична хронологія
 
+Slug: historicalChronology
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлення послідовності подій, їхньої тривалості та одночасності, з урахуванням того, що порядок подій не пояснює сам по собі причинність.
+Methodological description: Establish the sequence, duration, and simultaneity of events without assuming temporal order alone establishes causation.
+User-friendly description: Place events in order and recognize when they happened together.
 
 ##### Датування до нашої ери та нашої ери
 
+Slug: bceAndCeDating
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Орієнтування в роках і століттях обох ер та коректне обчислення проміжків без нульового року у традиційному літочисленні.
+Methodological description: Interpret years and centuries in both eras and correctly calculate intervals without a year zero in conventional dating.
+User-friendly description: Read BCE and CE dates and calculate the time between them.
 
 ##### Історична періодизація
 
+Slug: historicalPeriodization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначення підстав для поділу минулого на етапи та розуміння регіональної нерівномірності переходів між ними.
+Methodological description: Explain criteria for dividing the past into periods and recognize that regional transitions occurred at different times.
+User-friendly description: Recognize why different regions use different historical period boundaries.
 
 ##### Синхронізація цивілізацій
 
+Slug: synchronizingCivilizations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвіднесення подій різних регіонів в одному часовому масштабі без припущення, що їхні суспільства мали спільну швидкість розвитку.
+Methodological description: Compare events in separate regions on one timeline without assuming their societies developed at the same rate.
+User-friendly description: See which historical events happened at the same time in different regions.
 
 #### Джерела
+
+Slug: historicalSources
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Матеріальні, текстові й візуальні сліди минулого різняться способом виникнення, збереження, інформативністю та межами достовірності.
+Methodological description: Material, written, and visual traces differ in how they were created, preserved, and interpreted and in their reliability.
+User-friendly description: Explore what artifacts, texts and images can reveal about history.
 
 ##### Археологічні джерела
 
+Slug: archaeologicalSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Висновки за знаряддями, житлами, похованнями та іншими знахідками з урахуванням археологічного контексту й датування.
+Methodological description: Draw contextual and dated inferences from tools, dwellings, burials, and other archaeological remains.
+User-friendly description: Use objects and archaeological sites to understand past lives.
 
 ##### Писемні джерела
 
+Slug: writtenHistoricalSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретація законів, літописів, написів, листів і господарських записів з огляду на автора, мету та цільову аудиторію.
+Methodological description: Interpret laws, chronicles, inscriptions, letters, and records in light of their authors, purposes, and intended audiences.
+User-friendly description: Read old documents while considering who wrote them and why.
 
 ##### Образотворчі джерела
 
+Slug: visualHistoricalSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізнення зображення як свідчення уявлень і практик епохи від буквального фотографічного відтворення подій.
+Methodological description: Treat historical pictures as evidence of practices and ideas rather than literal photographic accounts of events.
+User-friendly description: Understand what historical images can and cannot prove.
 
 ##### Археологічне датування
 
+Slug: archaeologicalDating
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізнення стратиграфії, типологічного порівняння та природничих методів, включно з похибками й обмеженнями дат.
+Methodological description: Distinguish stratigraphy, typological comparison, and scientific dating techniques, including uncertainties and limitations.
+User-friendly description: Explore different ways archaeologists estimate the age of finds.
 
 ##### Критика джерела
 
+Slug: sourceCriticism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявлення походження, упередженості, замовчувань і суперечностей свідчення; перевірка висновку незалежними матеріалами.
+Methodological description: Assess origin, bias, omissions, and contradictions and verify claims with independent evidence.
+User-friendly description: Check whether a historical source deserves confidence.
 
 #### Простір минулого
+
+Slug: historicalGeography
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Ландшафт, клімат, відстані та маршрути допомагають реконструювати розселення, господарство й контакти без географічного детермінізму.
+Methodological description: Landscapes, climate, distances, and routes inform reconstructions of settlement and exchange without assuming geography determines history.
+User-friendly description: Explore how places and routes shaped past societies without deciding their fate.
 
 ##### Історична карта
 
+Slug: historicalMaps
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачення карти з урахуванням її дати, легенди, масштабу, умовних кордонів та того, що відомості про давні території нерідко приблизні.
+Methodological description: Interpret maps by date, legend, scale, provisional boundaries, and the approximate nature of many ancient territorial claims.
+User-friendly description: Read historical maps while accounting for uncertain ancient borders.
 
 ##### Міграції та розселення
 
+Slug: migrationAndSettlement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Реконструкція напрямків переміщень людей за комплексом археологічних, мовних, генетичних та екологічних даних.
+Methodological description: Reconstruct movements using combined archaeological, linguistic, genetic, and environmental evidence.
+User-friendly description: Trace where people moved using several kinds of historical clues.
 
 ##### Природне середовище давніх суспільств
 
+Slug: environmentOfAncientSocieties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювання впливу річок, морів, клімату й ресурсів на можливості людей без твердження, що природа однозначно визначає історію.
+Methodological description: Assess how rivers, seas, climate, and resources shaped opportunities without claiming nature alone decided historical outcomes.
+User-friendly description: Explore the opportunities and challenges ancient environments presented.
 
 #### Історичні пояснення
+
+Slug: historicalExplanations
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Аргументоване знання про минуле потребує розрізнення фактів, пояснювальних моделей, оцінок, непевних реконструкцій і конкуруючих інтерпретацій.
+Methodological description: Distinguish supported facts, explanatory models, values, uncertain reconstructions, and competing interpretations when reasoning about the past.
+User-friendly description: Learn to build historical explanations from evidence.
 
 ##### Історична причинність
 
+Slug: historicalCausality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлення безпосередніх приводів від довготривалих передумов та оцінювання дії кількох причин однієї зміни.
+Methodological description: Separate immediate triggers from long-term conditions and consider multiple causes of a historical change.
+User-friendly description: Explore why historical events usually have more than one cause.
 
 ##### Безперервність і зміни
 
+Slug: continuityAndChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавання того, що інституції, традиції й способи життя можуть змінюватися з різною швидкістю та співіснувати.
+Methodological description: Recognize that institutions, practices, and traditions change at different speeds and can coexist.
+User-friendly description: Notice what changed and what remained in past societies.
 
 ##### Історичне порівняння
 
+Slug: historicalComparison
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставлення суспільств за обраними критеріями без підміни відмінностей ранжуванням народів як «розвинених» і «відсталих».
+Methodological description: Compare societies by explicit criteria without ranking entire peoples as inherently advanced or backward.
+User-friendly description: Compare societies respectfully using meaningful evidence.
 
 ##### Історична невизначеність
 
+Slug: historicalUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розмежування добре підтверджених висновків, наукових гіпотез і невідомого; оновлення тверджень за появи нових свідчень.
+Methodological description: Separate well-supported conclusions from hypotheses and unknowns, updating interpretations when new evidence appears.
+User-friendly description: Understand what historians know, suspect or still cannot determine.
 
 ### Первісна історія людства
+
+Slug: humanPrehistory
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Довга доба до появи писемних держав охоплює еволюцію людей, глобальне розселення, різноманітні способи господарювання та поступові регіональні переходи до осілості й металів.
+Methodological description: The long era before written states encompasses human evolution, global dispersal, varied subsistence, and uneven regional transitions toward settlements and metallurgy.
+User-friendly description: Explore how early people lived and spread across the world.
 
 #### Походження та розселення
 
+Slug: humanOriginsAndDispersal
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Походження людських популяцій досліджують спільно палеоантропологія, археологія й генетика; ключові процеси тривали в різних місцях неодночасно.
+Methodological description: Paleoanthropology, archaeology, and genetics jointly investigate human origins; major developments occurred at different times across regions.
+User-friendly description: Discover what evidence reveals about our ancestors and migrations.
 
 ##### Походження роду Homo
 
+Slug: originsOfHomo
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміння тривалих еволюційних змін і співіснування різних людських видів без лінійної схеми «драбини прогресу».
+Methodological description: Explain long evolutionary change and coexistence of human species without a linear ladder-of-progress model.
+User-friendly description: Recognize that early human species coexisted during evolution.
 
 ##### Поява Homo sapiens
 
+Slug: emergenceOfHomoSapiens
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знання африканського походження сучасної людини та відмінності цього процесу від усіх подальших хвиль розселення.
+Methodological description: Understand the African origin of modern humans as distinct from later waves of migration.
+User-friendly description: Explore where our species emerged and how that differs from later migration.
 
 ##### Заселення континентів
 
+Slug: peoplingOfContinents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлення основних напрямків і приблизної часової послідовності виходу людей до Євразії, Австралії та Америк.
+Methodological description: Reconstruct approximate routes and chronological sequences of dispersal into Eurasia, Australia, and the Americas.
+User-friendly description: Trace how ancient humans reached different continents.
 
 ##### Адаптація до природних умов
 
+Slug: adaptationToEnvironments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявлення способів пристосування людських спільнот до холодних, посушливих, лісових і прибережних середовищ.
+Methodological description: Identify how communities adjusted to cold, arid, forested, and coastal settings.
+User-friendly description: Discover how early communities adapted to different environments.
 
 #### Мисливці та збирачі
 
+Slug: hunterGathererSocieties
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Мобільні й напівосілі спільноти використовували різні екологічні ніші, технології обробки матеріалів і форми соціальної організації.
+Methodological description: Mobile and semi-sedentary societies used varied ecological niches, tools, and social arrangements.
+User-friendly description: Explore life in communities that hunted, fished and gathered food.
 
 ##### Привласнювальне господарство
 
+Slug: foragingEconomies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зв'язок добування дикорослих ресурсів, полювання, рибальства й сезонної рухливості зі змінами місцевого середовища.
+Methodological description: Relate gathering, hunting, fishing, and seasonal movement to local environmental conditions.
+User-friendly description: Understand how early people obtained food from wild resources.
 
 ##### Кам'яні технології
 
+Slug: stoneToolTechnologies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зміна способів виготовлення й використання знарядь від відщепів до спеціалізованих виробів та її наслідки для праці.
+Methodological description: Trace changes from simple flakes to specialized tools and their effects on work.
+User-friendly description: Compare the stone tools used by early humans.
 
 ##### Використання вогню
 
+Slug: controlledUseOfFire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Роль контрольованого вогню у приготуванні їжі, захисті, обробці матеріалів і заселенні різних середовищ.
+Methodological description: Explain the contribution of controlled fire to cooking, protection, materials, and environmental expansion.
+User-friendly description: Explore how controlled fire changed everyday life.
 
 ##### Соціальна взаємодія ранніх людей
 
+Slug: earlyHumanCooperation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Реконструкція кооперації, передачі знань і турботи про членів спільноти без перенесення сучасних інститутів у доісторію.
+Methodological description: Reconstruct cooperation, knowledge transmission, and care without imposing modern institutions on prehistoric communities.
+User-friendly description: Understand how early humans worked together and cared for others.
 
 ##### Символічна культура
 
+Slug: prehistoricSymbolicCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачення прикрас, зображень, поховань і ритуальних слідів із врахуванням багатозначності археологічних свідчень.
+Methodological description: Interpret ornaments, images, burials, and ritual traces while acknowledging ambiguous archaeological evidence.
+User-friendly description: Explore what ancient art and burials may reveal about beliefs.
 
 #### Переходи до виробництва їжі
+
+Slug: transitionToFoodProduction
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Вирощування рослин, приручення тварин та осілі поселення виникали незалежно в кількох центрах і не були одномоментною універсальною революцією.
+Methodological description: Cultivation, herding, and settlements emerged independently in multiple places rather than in one simultaneous universal revolution.
+User-friendly description: Discover how growing food spread in different places and times.
 
 ##### Одомашнення рослин
 
+Slug: plantDomestication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відмінність культивування від тривалого генетичного та господарського перетворення дикорослих рослин на культурні.
+Methodological description: Distinguish initial cultivation from long-term biological and economic domestication of wild plants.
+User-friendly description: Explain how people gradually transformed wild plants into crops.
 
 ##### Одомашнення тварин
 
+Slug: animalDomestication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зміни у взаємодії людей із популяціями тварин та їхні наслідки для харчування, праці й мобільності.
+Methodological description: Explain changing relationships with animal populations and consequences for food, work, and mobility.
+User-friendly description: Explore how humans began raising domesticated animals.
 
 ##### Осілі поселення
 
+Slug: permanentSettlements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Причини виникнення й тривалості постійних поселень та їхній зв'язок зі зберіганням запасів і місцевою екологією.
+Methodological description: Explain the emergence and endurance of settlements through storage, environment, and social choices.
+User-friendly description: Understand why some communities began living in permanent villages.
 
 ##### Первісна кераміка
 
+Slug: prehistoricPottery
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виникнення і поширення випаленої кераміки та її застосування для побуту, приготування і зберігання їжі; кераміка не скрізь виникала після землеробства.
+Methodological description: Trace fired pottery and its uses for cooking and storage without assuming farming always came first.
+User-friendly description: Learn why people began making ceramic containers.
 
 ##### Раннє ткацтво
 
+Slug: earlyWeaving
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Способи обробки волокон, виготовлення тканин і їх використання давніми спільнотами з урахуванням різних регіональних хронологій.
+Methodological description: Describe processing fibers and producing textiles while respecting different regional timelines.
+User-friendly description: Explore how ancient people made and used woven fabrics.
 
 #### Ускладнення спільнот
+
+Slug: growingSocialComplexity
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Зростання поселень та обмінних мереж могли супроводжуватися майновими відмінностями й політичною централізацією, але ці траєкторії не були обов'язковими.
+Methodological description: Larger communities and exchanges sometimes accompanied inequality and centralization but did not inevitably lead to them.
+User-friendly description: Explore how larger settlements sometimes changed society.
 
 ##### Майнова та соціальна нерівність
 
+Slug: prehistoricInequality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявлення нерівного доступу до ресурсів і престижних речей за матеріальними свідченнями з урахуванням альтернативних тлумачень.
+Methodological description: Use material remains to assess unequal access to resources and prestige while considering alternate interpretations.
+User-friendly description: Look for archaeological clues about differences in wealth and status.
 
 ##### Обмін до появи держав
 
+Slug: exchangeBeforeStates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зв'язки між віддаленими спільнотами за поширенням сировини, виробів і технологічних традицій.
+Methodological description: Reconstruct long-distance connections from distributions of raw materials, products, and technical traditions.
+User-friendly description: Trace trade and exchange between communities before states existed.
 
 ##### Мідь, бронза та залізо
 
+Slug: copperBronzeAndIron
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівняння металургійних процесів і регіональних хронологій без уявлення про обов'язкові однакові «віки» для всіх народів.
+Methodological description: Compare metallurgical techniques and local chronologies without assuming uniform metal ages across every society.
+User-friendly description: Discover how metals changed tools at different times around the world.
 
 ##### Поява міських центрів
 
+Slug: emergenceOfUrbanCenters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Умови концентрації населення, ремесел, влади та обмінів; відмінність великого поселення від міста за функціями.
+Methodological description: Assess concentrations of people, craft, power, and exchange and distinguish a city by functions rather than size alone.
+User-friendly description: Explore how the first urban centers differed from large villages.
 
 ### Західна Азія
+
+Slug: ancientWesternAsia
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
-Ранні міста й держави Межиріччя, Леванту, Анатолії, Ірану та Аравії розвивалися через локальні екологічні умови й довготривалі торгові, політичні та культурні контакти.
+Methodological description: Early cities and states in Mesopotamia, the Levant, Anatolia, Iran, and Arabia developed through local environments and enduring trade, political, and cultural contact.
+User-friendly description: Explore the diverse ancient societies of Western Asia.
 
 #### Межиріччя
+
+Slug: mesopotamia
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Річкові долини Тигру і Євфрату стали осередком міст, складної адміністрації, писемності й послідовних надрегіональних держав.
+Methodological description: The Tigris and Euphrates valleys supported cities, complex administration, writing, and successive supraregional states.
+User-friendly description: Learn how river valleys supported Mesopotamian cities and states.
 
 ##### Шумерські міста-держави
 
+Slug: sumerianCityStates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Організація міського життя, храмових господарств і суперництва окремих політичних центрів південного Межиріччя.
+Methodological description: Explain urban life, temple economies, and rivalry among political centers in southern Mesopotamia.
+User-friendly description: Explore the independent cities of ancient Sumer.
 
 ##### Іригація Межиріччя
 
+Slug: mesopotamianIrrigation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зв'язок каналів, сезонної води, колективної праці та екологічних ризиків з продуктивністю землеробства.
+Methodological description: Connect canals, seasonal water, collective labor, and environmental risks with agricultural productivity.
+User-friendly description: Understand why irrigation mattered to Mesopotamian farming.
 
 ##### Клинопис
 
+Slug: cuneiformWriting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Походження письма у господарському обліку й розширення його функцій до права, науки та літератури.
+Methodological description: Trace the emergence of writing from accounting and its expansion to law, scholarship, and literature.
+User-friendly description: Discover how cuneiform writing developed beyond record keeping.
 
 ##### Аккадське царство
 
+Slug: akkadianEmpire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Особливості раннього територіального об'єднання кількох міст і межі його політичної стійкості.
+Methodological description: Examine the early territorial union of multiple cities and limits on its political stability.
+User-friendly description: Understand how the Akkadian rulers united several cities.
 
 ##### Вавилонські царства
 
+Slug: babylonianKingdoms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Централізація влади, правові тексти та міська культура у різні періоди історії Вавилона.
+Methodological description: Explore royal centralization, legal texts, and urban culture across different periods of Babylonian history.
+User-friendly description: Explore government, laws and life in ancient Babylon.
 
 ##### Ассирійська держава
 
+Slug: assyrianEmpire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Військова організація, адміністрація провінцій та практики імперського контролю в Новоассирійській державі.
+Methodological description: Explain military organization, provincial administration, and imperial control in the Neo-Assyrian state.
+User-friendly description: Understand how Assyria governed its empire.
 
 #### Левант
+
+Slug: ancientLevant
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Прибережні міста, внутрішні царства й релігійні традиції розвивалися на перехресті шляхів між Єгиптом, Анатолією та Месопотамією.
+Methodological description: Coastal towns, inland kingdoms, and religious traditions formed at routes connecting Egypt, Anatolia, and Mesopotamia.
+User-friendly description: Explore the trading kingdoms and traditions of the Levant.
 
 ##### Фінікійські міста
 
+Slug: phoenicianCities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Морська торгівля, ремісничі центри й колонізаційні мережі східного Середземномор'я.
+Methodological description: Examine maritime commerce, craft centers, and colonial networks in the eastern Mediterranean.
+User-friendly description: Discover how Phoenician cities connected the Mediterranean.
 
 ##### Фінікійське письмо
 
+Slug: phoenicianWriting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Принципи консонантного алфавітного письма та його вплив на подальші системи письма без змішування з винайденням усіх алфавітів.
+Methodological description: Describe consonantal alphabetic writing and later influence without claiming Phoenicians invented all alphabets.
+User-friendly description: Understand why Phoenician writing influenced later alphabets.
 
 ##### Ізраїль і Юдея
 
+Slug: israelAndJudah
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історія давніх царств Леванту та співвідношення археологічних даних із пізнішими письмовими традиціями.
+Methodological description: Compare histories of ancient Levantine kingdoms with archaeological evidence and later written traditions.
+User-friendly description: Explore Israel and Judah through texts and archaeological finds.
 
 ##### Релігійні традиції давнього Леванту
 
+Slug: religionsOfTheAncientLevant
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різноманіття культів і розвиток ізраїльського монотеїзму в конкретному історичному контексті.
+Methodological description: Study varied cults and the historical development of Israelite monotheism in context.
+User-friendly description: Discover the different religious traditions of the ancient Levant.
 
 #### Анатолія
+
+Slug: anatolia
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Гірські й платоподібні землі між Егейським морем та Межиріччям були осередком самостійних царств і культурного обміну.
+Methodological description: Mountain and plateau regions between the Aegean and Mesopotamia supported distinct kingdoms and cultural exchanges.
+User-friendly description: Explore the ancient kingdoms of Anatolia.
 
 ##### Хетське царство
 
+Slug: hittiteKingdom
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Політична організація, дипломатія й змагання за вплив у Передній Азії доби пізньої бронзи.
+Methodological description: Describe political structures, diplomacy, and competition for influence in the Late Bronze Age.
+User-friendly description: Learn how the Hittites governed and negotiated with neighboring powers.
 
 ##### Анатолійські торгові мережі
 
+Slug: anatolianTradeNetworks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обіг металів, текстилю та інших товарів між анатолійськими центрами й сусідами.
+Methodological description: Trace circulation of metals, textiles, and other goods between Anatolian centers and neighbors.
+User-friendly description: Explore what ancient Anatolian merchants exchanged.
 
 ##### Урарту
 
+Slug: urartu
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Фортифікації, управління і водогосподарські проєкти держави Вірменського нагір'я.
+Methodological description: Examine fortifications, administration, and water-management projects of the Armenian Highland state.
+User-friendly description: Discover the forts and engineering works of Urartu.
 
 #### Іранські держави
+
+Slug: ancientIranianStates
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-На Іранському плато й прилеглих територіях формувалися держави, що поєднували багато народів за допомогою адміністративних систем.
+Methodological description: States on the Iranian plateau and nearby territories governed diverse populations through administrative systems.
+User-friendly description: Explore ancient states formed around the Iranian plateau.
 
 ##### Мідійські об'єднання
 
+Slug: medianConfederations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місце мідійських спільнот у трансформації політичного балансу Передньої Азії з урахуванням обмеженості джерел.
+Methodological description: Explain the role of Median communities in shifting Western Asian power while acknowledging limited sources.
+User-friendly description: Learn what historians can infer about the Medes.
 
 ##### Держава Ахеменідів
 
+Slug: achaemenidEmpire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Сатрапії, царська влада, дороги й локальні традиції керування великою багатонаціональною державою.
+Methodological description: Describe satrapies, royal power, roads, and local administrative traditions in a large multiethnic state.
+User-friendly description: Discover how the Achaemenid Empire governed many peoples.
 
 ##### Експансія Ахеменідів
 
+Slug: achaemenidExpansion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Завоювання й територіальна експансія держави Ахеменідів у Західній Азії, Єгипті та сусідніх регіонах; конфлікти з грецькими полісами висвітлює окремий скіл.
+Methodological description: Trace Persian conquests across Western Asia, Egypt, and neighboring areas; conflicts with Greek poleis are a separate competency.
+User-friendly description: Follow how the Achaemenid state expanded into other regions.
 
 ##### Іранські релігійні уявлення
 
+Slug: ancientIranianReligions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Релігійна різноманітність давнього Ірану та питання датування розвитку зороастрійських традицій.
+Methodological description: Study ancient Iranian religious diversity and uncertainty about when Zoroastrian traditions developed.
+User-friendly description: Explore the diverse beliefs of ancient Iran.
 
 #### Південна Аравія
+
+Slug: ancientSouthArabia
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Оазові й гірські центри півдня Аравійського півострова брали участь у трансрегіональній торгівлі ще до ісламської доби.
+Methodological description: Oasis and mountain centers participated in long-distance trade before the Islamic period.
+User-friendly description: Discover the trading kingdoms of ancient southern Arabia.
 
 ##### Давні південноаравійські царства
 
+Slug: southArabianKingdoms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Соціальна організація Саби та інших царств, пов'язана з місцевим землеробством і торгівлею.
+Methodological description: Examine Saba and other kingdoms through local farming, social organization, and trade.
+User-friendly description: Learn about the kingdoms of Saba and its neighbors.
 
 ##### Аравійські торгові шляхи
 
+Slug: arabianTradeRoutes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обіг пахощів та інших товарів між Червоним морем, Аравією, Африкою й Середземномор'ям.
+Methodological description: Trace incense and other goods across Arabia, the Red Sea, Africa, and the Mediterranean.
+User-friendly description: Follow ancient trade routes carrying incense and other products.
 
 ### Африка
 
