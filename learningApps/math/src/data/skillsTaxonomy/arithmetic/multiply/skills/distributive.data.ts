@@ -33,4 +33,5 @@ export const distributive_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Rozdzielność",
     uk: "Множення — Розподільний закон",
   },
+  description: { methodological: "The distributive law relates a(b + c) to ab + ac. Splitting a factor into convenient addends preserves the product and recombines partial products while maintaining each part's role." },
 });

@@ -33,4 +33,5 @@ export const checkProduct_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Sprawdzanie wyniku",
     uk: "Множення — Перевірка результату",
   },
+  description: { methodological: "An estimate indicates the expected order of magnitude of a product; exactness can be checked by a valid inverse operation or independent calculation. Merely reversing factor order may repeat an earlier error rather than check independently." },
 });

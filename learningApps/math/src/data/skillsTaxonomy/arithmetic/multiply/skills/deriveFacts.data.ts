@@ -33,4 +33,5 @@ export const deriveFacts_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Wyprowadzanie iloczynów",
     uk: "Множення — Виведення добутків",
   },
+  description: { methodological: "An unknown table product may be derived from familiar products using commutativity, associativity, distributivity, doubling, or changing a factor. This demonstrates structural understanding rather than mere fact recall." },
 });

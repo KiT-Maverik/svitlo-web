@@ -33,4 +33,5 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — 3-cyfrowe×1-cyfrowe",
     uk: "Множення — 3-цифрові×1-цифрові",
   },
+  description: { methodological: "Multiplying a three-digit number by a one-digit factor relies on decomposition into hundreds, tens, and ones and the distributive law. Carrying between places must preserve the total product." },
 });
