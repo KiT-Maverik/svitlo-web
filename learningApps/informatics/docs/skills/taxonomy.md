@@ -709,488 +709,868 @@ Methodological description: Compare specifying concrete state-changing steps wit
 User-friendly description: Compare giving explicit instructions with describing the desired result.
 ### Digital Systems and Networks
 
+Slug: digitalSystemsAndNetworks
+Action: create
+Status: pending
+
 Groups: 8 · Skills: 37
 
 [Not implemented](#)
 
-Explains interactions among hardware, software, encoding methods, and communication channels. These competencies concern the operation of digital infrastructure, not merely the use of devices.
+Methodological description: Explains interactions among hardware, software, encoding methods, and communication channels. These competencies concern the operation of digital infrastructure, not merely the use of devices.
+User-friendly description: Discover how computing devices, digital information and networks work together.
 
 #### Digital Device Components
+
+Slug: digitalDeviceComponents
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Roles of computing components: processors execute instructions, memory holds working data, and hardware and software interact. Network transmission belongs to a different group.
+Methodological description: Roles of computing components: processors execute instructions, memory holds working data, and hardware and software interact. Network transmission belongs to a different group.
+User-friendly description: Explore how hardware components and software perform different computing tasks.
 
 ##### Identify Digital Devices
 
+Slug: identifyDigitalDevices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a device uses digital representation and programmable information processing rather than purely mechanical or analog means. The appearance of a screen or buttons is insufficient by itself.
+Methodological description: Determine whether a device uses digital representation and programmable information processing rather than purely mechanical or analog means. The appearance of a screen or buttons is insufficient by itself.
+User-friendly description: Recognize devices that process programmable digital information.
 
 ##### Explain a Processor's Function
 
+Slug: explainAProcessorsFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the CPU to fetching, decoding, and executing instructions and coordinating operations on data; distinguish its computing role from permanent file storage.
+Methodological description: Relate the CPU to fetching, decoding, and executing instructions and coordinating operations on data; distinguish its computing role from permanent file storage.
+User-friendly description: Explain how a processor runs instructions rather than permanently storing files.
 
 ##### Distinguish Hardware from Software
 
+Slug: distinguishHardwareFromSoftware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate tangible device components from instructions and data governing their behavior; explain their interaction, such as software controlling a camera through a hardware interface.
+Methodological description: Differentiate tangible device components from instructions and data governing their behavior; explain their interaction, such as software controlling a camera through a hardware interface.
+User-friendly description: Distinguish physical computer parts from the software that controls them.
 
 #### Representation and Storage
 
+Slug: representationAndStorage
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-How digital devices encode, format, measure, and organize files and data. Distinguish the representation of information from the file system's organization.
+Methodological description: How digital devices encode, format, measure, and organize files and data. Distinguish the representation of information from the file system's organization.
+User-friendly description: Learn how devices represent information and organize stored files.
 
 ##### Explain Binary Representation
 
+Slug: explainBinaryRepresentation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how the symbols 0 and 1 form bits and bit sequences that encode numbers and other data. A bit represents a state, while the meaning of a longer sequence depends on its interpretation.
+Methodological description: Show how the symbols 0 and 1 form bits and bit sequences that encode numbers and other data. A bit represents a state, while the meaning of a longer sequence depends on its interpretation.
+User-friendly description: Understand how sequences of zeros and ones encode different kinds of data.
 
 ##### Distinguish Digital Formats
 
+Slug: distinguishDigitalFormats
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how formats determine the interpretation of stored bits: text files, raster images, and audio recordings have different structures. A filename extension is a clue, not proof of actual contents.
+Methodological description: Explain how formats determine the interpretation of stored bits: text files, raster images, and audio recordings have different structures. A filename extension is a clue, not proof of actual contents.
+User-friendly description: Recognize that file formats determine how stored bits should be interpreted.
 
 ##### Compare Digital File Sizes
 
+Slug: compareDigitalFileSizes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate stored byte counts to file sizes, compare measurement units correctly, and explain why visually similar materials may differ in size because of format or compression.
+Methodological description: Relate stored byte counts to file sizes, compare measurement units correctly, and explain why visually similar materials may differ in size because of format or compression.
+User-friendly description: Compare file sizes and explain why format and compression make a difference.
 
 ##### Organize Files in Directories
 
+Slug: organizeFilesInDirectories
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create a clear directory hierarchy for resources and choose names and locations that allow a file to be found by its path. Directory organization does not determine file format.
+Methodological description: Create a clear directory hierarchy for resources and choose names and locations that allow a file to be found by its path. Directory organization does not determine file format.
+User-friendly description: Arrange files in useful folders so they can be found by their paths.
 
 #### Networks
 
+Slug: networks
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Information exchange between connected devices, the distinction between the Internet and Web services, and communication channels. These competencies concern delivery, not message reliability or trustworthiness.
+Methodological description: Information exchange between connected devices, the distinction between the Internet and Web services, and communication channels. These competencies concern delivery, not message reliability or trustworthiness.
+User-friendly description: Discover how connected devices send messages and share resources.
 
 ##### Explain the Purpose of a Computer Network
 
+Slug: explainThePurposeOfAComputerNetwork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how networking separate devices allows them to exchange messages and share resources while each device maintains its own computing functions.
+Methodological description: Show how networking separate devices allows them to exchange messages and share resources while each device maintains its own computing functions.
+User-friendly description: Explain why networks connect separate devices to exchange information.
 
 ##### Distinguish the Internet from the Web
 
+Slug: distinguishTheInternetFromTheWeb
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that the Internet is interconnected network infrastructure, while the Web is a service for accessing resources through browsers and Web protocols. Email or file transfer can use the Internet without a webpage.
+Methodological description: Explain that the Internet is interconnected network infrastructure, while the Web is a service for accessing resources through browsers and Web protocols. Email or file transfer can use the Internet without a webpage.
+User-friendly description: Distinguish the Internet's network infrastructure from websites on the Web.
 
 ##### Explain Network Message Delivery
 
+Slug: explainNetworkMessageDelivery
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Model a data path from a sender through intermediary network nodes to the recipient; separate destination addressing and transport from message content. Delivery need not occur over one direct physical cable.
+Methodological description: Model a data path from a sender through intermediary network nodes to the recipient; separate destination addressing and transport from message content. Delivery need not occur over one direct physical cable.
+User-friendly description: Trace how messages travel through network devices to their destination.
 
 ##### Explain Wireless Communication
 
+Slug: explainWirelessCommunication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how Wi-Fi and other wireless technologies transmit signals without a dedicated cable to each device while still relying on compatible equipment, protocols, and communications infrastructure.
+Methodological description: Describe how Wi-Fi and other wireless technologies transmit signals without a dedicated cable to each device while still relying on compatible equipment, protocols, and communications infrastructure.
+User-friendly description: Explore how wireless devices communicate using signals rather than direct cables.
 
 #### Numeral Systems
 
+Slug: numeralSystems
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Positional numeral notation, bases, and place values; binary states connect mathematical notation to the technical representation of information.
+Methodological description: Positional numeral notation, bases, and place values; binary states connect mathematical notation to the technical representation of information.
+User-friendly description: Learn how digits represent numbers in systems with different bases.
 
 ##### Explain Positional Numeral Systems
 
+Slug: explainPositionalNumeralSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that digit values depend on position and base, so `10` denotes different quantities in binary and decimal.
+Methodological description: Explain that digit values depend on position and base, so `10` denotes different quantities in binary and decimal.
+User-friendly description: Understand why the place of a digit changes its value in a number.
 
 ##### Convert Between Binary and Decimal
 
+Slug: convertBetweenBinaryAndDecimal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent a small integer as a sum of powers of two and recover a value from its binary positions, distinguishing the notation from the number itself.
+Methodological description: Represent a small integer as a sum of powers of two and recover a value from its binary positions, distinguishing the notation from the number itself.
+User-friendly description: Convert small numbers between binary and decimal notation.
 
 ##### Explain Computer Binary Logic
 
+Slug: explainComputerBinaryLogic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Two reliably distinguishable electronic signal levels allow encoding zeros and ones, even though physical circuits are more complex than two abstract symbols.
+Methodological description: Two reliably distinguishable electronic signal levels allow encoding zeros and ones, even though physical circuits are more complex than two abstract symbols.
+User-friendly description: Connect binary zeros and ones to distinguishable electronic signal states.
 
 ##### Distinguish Binary and Hexadecimal
 
+Slug: distinguishBinaryAndHexadecimal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that one hexadecimal digit corresponds to four bits and shortens the representation without changing the number's value.
+Methodological description: Explain that one hexadecimal digit corresponds to four bits and shortens the representation without changing the number's value.
+User-friendly description: Understand why hexadecimal is a shorter way to write groups of bits.
 
 #### Memory and Storage
 
+Slug: memoryAndStorage
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Distinguishes temporary working memory from nonvolatile file storage, along with the different functions of RAM, ROM, and storage devices.
+Methodological description: Distinguishes temporary working memory from nonvolatile file storage, along with the different functions of RAM, ROM, and storage devices.
+User-friendly description: Discover what temporary memory, firmware memory and file storage each do.
 
 ##### Explain RAM
 
+Slug: explainRAM
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-RAM holds working instructions and data for fast access during execution; its contents are usually lost when power is removed.
+Methodological description: RAM holds working instructions and data for fast access during execution; its contents are usually lost when power is removed.
+User-friendly description: Explore how RAM holds working information while a computer runs.
 
 ##### Explain Persistent Storage
 
+Slug: explainPersistentStorage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An SSD, flash memory, or another nonvolatile medium stores files without continuous power, unlike the typical working state held in RAM.
+Methodological description: An SSD, flash memory, or another nonvolatile medium stores files without continuous power, unlike the typical working state held in RAM.
+User-friendly description: Understand why storage devices preserve files after power is switched off.
 
 ##### Explain the Purpose of ROM
 
+Slug: explainThePurposeOfROM
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that ROM and related nonvolatile technologies can hold device firmware or initial startup instructions without power. The historical name 'read-only memory' does not mean all modern firmware is physically immutable; many devices use reprogrammable flash memory.
+Methodological description: Explain that ROM and related nonvolatile technologies can hold device firmware or initial startup instructions without power. The historical name 'read-only memory' does not mean all modern firmware is physically immutable; many devices use reprogrammable flash memory.
+User-friendly description: Recognize how nonvolatile firmware memory helps devices start up.
 
 ##### Distinguish RAM, ROM, and Storage
 
+Slug: distinguishRAMROMAndStorage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Working memory, firmware memory, and storage for user files serve different purposes; the term 'permanent memory' is ambiguous without context.
+Methodological description: Working memory, firmware memory, and storage for user files serve different purposes; the term 'permanent memory' is ambiguous without context.
+User-friendly description: Compare what RAM, ROM and persistent storage are designed to hold.
 
 #### Operating Systems
+
+Slug: operatingSystems
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-An operating system manages programs, processes, files, and devices; it differs from applications running in its environment.
+Methodological description: An operating system manages programs, processes, files, and devices; it differs from applications running in its environment.
+User-friendly description: Explore how operating systems manage programs, files and devices.
 
 ##### Explain an Operating System's Purpose
 
+Slug: explainAnOperatingSystemsPurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how an OS coordinates launching programs and accessing files and devices so individual applications need not implement all hardware operations themselves.
+Methodological description: Describe how an OS coordinates launching programs and accessing files and devices so individual applications need not implement all hardware operations themselves.
+User-friendly description: Understand how an operating system coordinates software and hardware.
 
 ##### Distinguish Operating System Families
 
+Slug: distinguishOperatingSystemFamilies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify Windows, macOS, Linux, Android, and iOS as different operating systems or related platforms rather than names for computers.
+Methodological description: Identify Windows, macOS, Linux, Android, and iOS as different operating systems or related platforms rather than names for computers.
+User-friendly description: Recognize common operating-system families and how they differ.
 
 ##### Explain an OS Process
 
+Slug: explainAnOSProcess
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A running program has current state and allocated resources; a program file on disk is not itself a process.
+Methodological description: A running program has current state and allocated resources; a program file on disk is not itself a process.
+User-friendly description: Distinguish a running process from the program file stored on disk.
 
 ##### Explain Linus Torvalds' Role in Linux
 
+Slug: explainLinusTorvaldsRoleInLinux
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Torvalds initiated the Linux kernel; a complete operating system also includes other components, and collaborative development sustains its evolution.
+Methodological description: Torvalds initiated the Linux kernel; a complete operating system also includes other components, and collaborative development sustains its evolution.
+User-friendly description: Learn how the Linux kernel began and why many contributors build operating systems.
 
 #### Network Models and Protocols
+
+Slug: networkModelsAndProtocols
+Action: create
+Status: pending
 
 Skills: 11
 
 [Not implemented](#)
 
-Network communication rules include addressing and packet delivery, protocol layers, connection security, and shared-medium access. OSI is a conceptual model, while real technologies implement their functions through different stacks and access methods.
+Methodological description: Network communication rules include addressing and packet delivery, protocol layers, connection security, and shared-medium access. OSI is a conceptual model, while real technologies implement their functions through different stacks and access methods.
+User-friendly description: Discover how networking protocols specify the rules for sending information.
 
 ##### Explain a Network Protocol
 
+Slug: explainANetworkProtocol
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A protocol specifies message formats and rules that enable devices to exchange information correctly.
+Methodological description: A protocol specifies message formats and rules that enable devices to exchange information correctly.
+User-friendly description: Explain why devices need agreed rules for exchanging messages.
 
 ##### Explain the OSI Layers
 
+Slug: explainTheOSILayers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The seven OSI layers describe functions from physical signal transmission to application interaction, without requiring one distinct protocol per layer.
+Methodological description: The seven OSI layers describe functions from physical signal transmission to application interaction, without requiring one distinct protocol per layer.
+User-friendly description: Use the seven-layer OSI model to organize networking functions.
 
 ##### Distinguish OSI from TCP/IP
 
+Slug: distinguishOSIFromTCPIP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The OSI reference model has seven conceptual layers, whereas TCP/IP organizes real Internet protocols into a different set of functional layers.
+Methodological description: The OSI reference model has seven conceptual layers, whereas TCP/IP organizes real Internet protocols into a different set of functional layers.
+User-friendly description: Compare the conceptual OSI layers with the Internet's TCP/IP stack.
 
 ##### Explain the Purpose of IP
 
+Slug: explainThePurposeOfIP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-IP provides network addressing and forwards packets between networks; an IP address is not the same as a website's domain name.
+Methodological description: IP provides network addressing and forwards packets between networks; an IP address is not the same as a website's domain name.
+User-friendly description: Understand how IP addresses and forwards packets across networks.
 
 ##### Distinguish TCP from UDP
 
+Slug: distinguishTCPFromUDP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-TCP provides a managed data stream with acknowledgments; UDP sends datagrams without equivalent delivery guarantees at that layer.
+Methodological description: TCP provides a managed data stream with acknowledgments; UDP sends datagrams without equivalent delivery guarantees at that layer.
+User-friendly description: Compare reliable TCP streams with UDP messages that lack those guarantees.
 
 ##### Explain DNS
 
+Slug: explainDNS
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-DNS resolves domain names to network addresses; it does not replace actual data transmission between devices.
+Methodological description: DNS resolves domain names to network addresses; it does not replace actual data transmission between devices.
+User-friendly description: Explain how DNS helps find network addresses from domain names.
 
 ##### Distinguish HTTP from HTTPS
 
+Slug: distinguishHTTPFromHTTPS
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-HTTPS uses TLS to secure HTTP communication, but a padlock alone does not establish that a website's operator is trustworthy.
+Methodological description: HTTPS uses TLS to secure HTTP communication, but a padlock alone does not establish that a website's operator is trustworthy.
+User-friendly description: Recognize what HTTPS protects and why it does not guarantee a trustworthy site.
 
 ##### Explain CSMA/CD
 
+Slug: explainCSMACD
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how classic shared-medium Ethernet senses channel activity, detects collisions, and retries after a delay. Modern switched full-duplex Ethernet normally does not need this mechanism.
+Methodological description: Describe how classic shared-medium Ethernet senses channel activity, detects collisions, and retries after a delay. Modern switched full-duplex Ethernet normally does not need this mechanism.
+User-friendly description: Learn why older shared Ethernet networks needed collision detection.
 
 ##### Explain CSMA/CA
 
+Slug: explainCSMACA
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe why a wireless network checks whether a radio channel is busy and seeks to reduce collisions through waiting and agreed access rules; avoidance does not guarantee that collisions never occur.
+Methodological description: Describe why a wireless network checks whether a radio channel is busy and seeks to reduce collisions through waiting and agreed access rules; avoidance does not guarantee that collisions never occur.
+User-friendly description: Explain how wireless devices try to avoid transmitting over a busy channel.
 
 ##### Explain Token Ring
 
+Slug: explainTokenRing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how a token grants transmission rights to participants in a defined sequence and how this differs from devices contending for access to a shared medium.
+Methodological description: Describe how a token grants transmission rights to participants in a defined sequence and how this differs from devices contending for access to a shared medium.
+User-friendly description: Explore how passing a token can control which device may send data.
 
 ##### Compare Network Access Methods
 
+Slug: compareNetworkAccessMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select and justify comparisons among collision detection (CSMA/CD), collision avoidance (CSMA/CA), and token passing (Token Ring) according to how sending rights are obtained. These represent different technological settings, not three interchangeable protocols of modern Ethernet.
+Methodological description: Select and justify comparisons among collision detection (CSMA/CD), collision avoidance (CSMA/CA), and token passing (Token Ring) according to how sending rights are obtained. These represent different technological settings, not three interchangeable protocols of modern Ethernet.
+User-friendly description: Compare collision detection, avoidance and token passing in their proper settings.
 
 #### Task Execution
+
+Slug: taskExecution
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Sequential execution, interleaving, and actual simultaneous work by multiple executors affect operation order and resource use. Concurrency organizes overlapping task progress; parallelism means operations truly execute at the same time. They are related but not identical.
+Methodological description: Sequential execution, interleaving, and actual simultaneous work by multiple executors affect operation order and resource use. Concurrency organizes overlapping task progress; parallelism means operations truly execute at the same time. They are related but not identical.
+User-friendly description: Discover the difference between overlapping tasks and truly simultaneous work.
 
 ##### Explain Concurrent Execution
 
+Slug: explainConcurrentExecution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how several tasks make progress through interleaved steps or waiting for events without requiring instructions to run simultaneously. Contrast this with completing each task fully before starting the next.
+Methodological description: Explain how several tasks make progress through interleaved steps or waiting for events without requiring instructions to run simultaneously. Contrast this with completing each task fully before starting the next.
+User-friendly description: Understand how several tasks can make progress without running at exactly the same moment.
 
 ##### Explain Parallel Execution
 
+Slug: explainParallelExecution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when independent operations truly run simultaneously on multiple computing resources. Distinguish parallelism from rapid task switching on one executor; additional resources do not guarantee proportional speedup.
+Methodological description: Identify when independent operations truly run simultaneously on multiple computing resources. Distinguish parallelism from rapid task switching on one executor; additional resources do not guarantee proportional speedup.
+User-friendly description: Recognize when multiple processors actually perform work simultaneously.
 
 ##### Distribute Independent Tasks Across Executors
 
+Slug: distributeIndependentTasksAcrossExecutors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Plan which subtasks can run simultaneously and which must wait for dependent results in a model computing system. For example, process several images independently before combining their outputs.
+Methodological description: Plan which subtasks can run simultaneously and which must wait for dependent results in a model computing system. For example, process several images independently before combining their outputs.
+User-friendly description: Plan which tasks can run together and which must wait for other results.
 ### Information and Data
+
+Slug: informationAndData
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 24
 
 [Not implemented](#)
 
-Obtaining and verifying information, organizing datasets, finding patterns, and reasoning about uncertain events. A digital setting may overlap with mathematics, but these skills are classified locally within Informatics.
+Methodological description: Obtaining and verifying information, organizing datasets, finding patterns, and reasoning about uncertain events. A digital setting may overlap with mathematics, but these skills are classified locally within Informatics.
+User-friendly description: Explore how to find trustworthy information, organize data and reason about uncertainty.
 
 #### Information Search and Verification
 
+Slug: informationSearchAndVerification
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Find relevant facts and determine whether independent sources support a particular claim. Formulating queries, comparing reports, and verifying facts are distinct operations.
+Methodological description: Find relevant facts and determine whether independent sources support a particular claim. Formulating queries, comparing reports, and verifying facts are distinct operations.
+User-friendly description: Learn how to search for evidence and check whether a claim is supported.
 
 ##### Formulate an Information Query
 
+Slug: formulateAnInformationQuery
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Convert a specific information need into search terms and qualifiers likely to retrieve relevant resources. For example, specify an object's name, location, or period instead of an overly general term.
+Methodological description: Convert a specific information need into search terms and qualifiers likely to retrieve relevant resources. For example, specify an object's name, location, or period instead of an overly general term.
+User-friendly description: Choose specific search terms that match what you need to find.
 
 ##### Compare Information Sources
 
+Slug: compareInformationSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare accounts from multiple sources concerning the same claim, separate shared facts from discrepancies, and identify what further evidence is needed to explain the differences.
+Methodological description: Compare accounts from multiple sources concerning the same claim, separate shared facts from discrepancies, and identify what further evidence is needed to explain the differences.
+User-friendly description: Compare multiple sources and identify where their accounts disagree.
 
 ##### Verify a Claim Against a Source
 
+Slug: verifyAClaimAgainstASource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Seek evidence for a particular assertion in the primary source or independent reliable material, considering date, context, and provenance. Repetition of an error across websites does not make it true.
+Methodological description: Seek evidence for a particular assertion in the primary source or independent reliable material, considering date, context, and provenance. Repetition of an error across websites does not make it true.
+User-friendly description: Check a claim against appropriate evidence rather than repeated assertions.
 
 ##### Distinguish Messages from Data
 
+Slug: distinguishMessagesFromData
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate individually recorded values from a message that conveys meaning to an audience in context. For example, the number '18' communicates a temperature only once the unit and measured object are supplied.
+Methodological description: Differentiate individually recorded values from a message that conveys meaning to an audience in context. For example, the number '18' communicates a temperature only once the unit and measured object are supplied.
+User-friendly description: Distinguish a recorded value from the meaning a message gives it.
 
 #### Data Collection and Organization
+
+Slug: dataCollectionAndOrganization
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Identify required fields, record observations consistently, classify by an attribute, and organize a table. Collecting data generates records; tabulation structures existing records.
+Methodological description: Identify required fields, record observations consistently, classify by an attribute, and organize a table. Collecting data generates records; tabulation structures existing records.
+User-friendly description: Learn to collect relevant information and organize comparable records.
 
 ##### Identify Data Needed for a Task
 
+Slug: identifyDataNeededForATask
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine which fields, observations, or measurements are necessary to answer a question and which do not affect the conclusion. Do not collect personal information merely because it can be stored.
+Methodological description: Determine which fields, observations, or measurements are necessary to answer a question and which do not affect the conclusion. Do not collect personal information merely because it can be stored.
+User-friendly description: Decide which fields and observations a question actually requires.
 
 ##### Collect Data Consistently
 
+Slug: collectDataConsistently
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Gather records using a predefined procedure with the same units and attributes for each observation. Changing the procedure midway may make parts of the dataset difficult to compare.
+Methodological description: Gather records using a predefined procedure with the same units and attributes for each observation. Changing the procedure midway may make parts of the dataset difficult to compare.
+User-friendly description: Collect measurements using consistent rules and units.
 
 ##### Group Data by Attribute
 
+Slug: groupDataByAttribute
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply one criterion consistently across items to create categories with a clear membership rule. For example, classify messages by file type without mixing this attribute with file size.
+Methodological description: Apply one criterion consistently across items to create categories with a clear membership rule. For example, classify messages by file type without mixing this attribute with file size.
+User-friendly description: Group records using one clear characteristic.
 
 ##### Present Data in a Table
 
+Slug: presentDataInATable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange comparable records in rows and their attributes in columns with stable headings and units. A table preserves the values and relationships rather than substituting a graphical summary.
+Methodological description: Arrange comparable records in rows and their attributes in columns with stable headings and units. A table preserves the values and relationships rather than substituting a graphical summary.
+User-friendly description: Create a table with labeled rows, columns and consistent values.
 
 #### Databases
+
+Slug: databases
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Structured storage of interrelated information differs from a table laid out only for human reading. Records and fields define the structure, keys identify records, and relationships connect information across tables.
+Methodological description: Structured storage of interrelated information differs from a table laid out only for human reading. Records and fields define the structure, keys identify records, and relationships connect information across tables.
+User-friendly description: Discover how databases structure records and connect related information.
 
 ##### Explain a Database Table
 
+Slug: explainADatabaseTable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how a relational table stores records of one type using a common set of fields, such as a book catalog. A formatted table in a document is not automatically a database.
+Methodological description: Describe how a relational table stores records of one type using a common set of fields, such as a book catalog. A formatted table in a document is not automatically a database.
+User-friendly description: Understand how a database table stores similar kinds of records.
 
 ##### Distinguish Records and Fields
 
+Slug: distinguishRecordsAndFields
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a row as a record of one entity or occurrence, and a column as a named field describing an attribute. A cell's particular value is not the definition of a field.
+Methodological description: Identify a row as a record of one entity or occurrence, and a column as a named field describing an attribute. A cell's particular value is not the definition of a field.
+User-friendly description: Distinguish a record from the fields that describe it.
 
 ##### Explain Primary Keys
 
+Slug: explainPrimaryKeys
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a record needs a stable identifier unique within its table and why a person's name or a title is not always an appropriate key.
+Methodological description: Explain why a record needs a stable identifier unique within its table and why a person's name or a title is not always an appropriate key.
+User-friendly description: Explain why a database needs a stable unique key for each record.
 
 ##### Model Relationships Between Tables
 
+Slug: modelRelationshipsBetweenTables
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how identifiers link records from different tables, such as a `studentId` in a completed-assignment record referencing a particular student. Distinguish a record's own key from a reference to another record.
+Methodological description: Explain how identifiers link records from different tables, such as a `studentId` in a completed-assignment record referencing a particular student. Distinguish a record's own key from a reference to another record.
+User-friendly description: Connect information in different tables using identifiers.
 
 ##### Design a Simple Database Schema
 
+Slug: designASimpleDatabaseSchema
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Independently identify entities, fields, keys, and required relationships for a task without needlessly duplicating facts. For example, model books and loans separately for a library; this designs a coherent schema rather than describing an existing table.
+Methodological description: Independently identify entities, fields, keys, and required relationships for a task without needlessly duplicating facts. For example, model books and loans separately for a library; this designs a coherent schema rather than describing an existing table.
+User-friendly description: Plan a simple database with suitable entities, fields and links.
 
 #### Statistical Investigation
+
+Slug: statisticalInvestigation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Read and create visual representations of datasets, find frequencies, and compare observations. Statistical conclusions describe data and are not equivalent to predicting a random outcome.
+Methodological description: Read and create visual representations of datasets, find frequencies, and compare observations. Statistical conclusions describe data and are not equivalent to predicting a random outcome.
+User-friendly description: Learn to explore data through charts, frequencies and comparisons.
 
 ##### Read a Chart
 
+Slug: readAChart
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the values represented by axes, scales, colors, and element lengths; read the data accurately without making assumptions based on presentation. A truncated axis can visually exaggerate a difference.
+Methodological description: Identify the values represented by axes, scales, colors, and element lengths; read the data accurately without making assumptions based on presentation. A truncated axis can visually exaggerate a difference.
+User-friendly description: Read chart scales, labels and values without being misled by their presentation.
 
 ##### Construct a Simple Chart
 
+Slug: constructASimpleChart
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose a representation suitable for the data type and place numerical or categorical values in labeled elements on an understandable scale. Visual presentation must preserve proportions among source values.
+Methodological description: Choose a representation suitable for the data type and place numerical or categorical values in labeled elements on an understandable scale. Visual presentation must preserve proportions among source values.
+User-friendly description: Create a clear chart that represents data proportions accurately.
 
 ##### Find the Most Frequent Value
 
+Slug: findTheMostFrequentValue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Find or calculate the value with the highest frequency, allowing for multiple equally frequent values. The most frequent value need not equal the arithmetic mean or the largest number.
+Methodological description: Find or calculate the value with the highest frequency, allowing for multiple equally frequent values. The most frequent value need not equal the arithmetic mean or the largest number.
+User-friendly description: Identify the value that appears most frequently in a set.
 
 ##### Compare Sets of Observations
 
+Slug: compareSetsOfObservations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose a common basis for comparing two datasets—categories, ranges, or frequencies—and explain observed differences. A difference alone does not establish its cause.
+Methodological description: Choose a common basis for comparing two datasets—categories, ranges, or frequencies—and explain observed differences. A difference alone does not establish its cause.
+User-friendly description: Compare two datasets using the same measures or categories.
 
 #### Probability and Uncertainty
+
+Slug: probabilityAndUncertainty
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Distinguishing possible and impossible outcomes, probabilistic models, comparisons of likelihoods, and limits of prediction. Randomness as a source of variation in a digital model is distinct from assessing a particular risk.
+Methodological description: Distinguishing possible and impossible outcomes, probabilistic models, comparisons of likelihoods, and limits of prediction. Randomness as a source of variation in a digital model is distinct from assessing a particular risk.
+User-friendly description: Explore possible events, their chances and the limits of prediction.
 
 ##### Distinguish Random and Deterministic Events
 
+Slug: distinguishRandomAndDeterministicEvents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a model's known conditions fully determine its outcome or allow several possible outcomes with an unspecified selection. An outcome unknown to an observer does not itself prove physical randomness.
+Methodological description: Determine whether a model's known conditions fully determine its outcome or allow several possible outcomes with an unspecified selection. An outcome unknown to an observer does not itself prove physical randomness.
+User-friendly description: Distinguish outcomes determined by a rule from those selected randomly.
 
 ##### Explain Event Possibility
 
+Slug: explainEventPossibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether an outcome is allowed by a model's conditions, even if extremely unlikely. If a box contains only blue balls, drawing a red one is impossible under those conditions.
+Methodological description: Determine whether an outcome is allowed by a model's conditions, even if extremely unlikely. If a box contains only blue balls, drawing a red one is impossible under those conditions.
+User-friendly description: Decide whether an outcome is allowed under a given set of conditions.
 
 ##### Explain Event Probability
 
+Slug: explainEventProbability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Estimate or interpret an event's chance using the model and its assumptions, including whether outcomes are equally likely. If a prize is equally likely to occupy any of 100 hiding places, a random first guess has a 1% chance of success.
+Methodological description: Estimate or interpret an event's chance using the model and its assumptions, including whether outcomes are equally likely. If a prize is equally likely to occupy any of 100 hiding places, a random first guess has a 1% chance of success.
+User-friendly description: Estimate the chance of an event using a stated probability model.
 
 ##### Distinguish Possibility from Probability
 
+Slug: distinguishPossibilityFromProbability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate 'it can happen' from an estimated chance and from a promised result: two options labeled 'yes' and 'no' do not imply 50/50 odds. A first-try success among 100 equally likely hidden cells is possible but not as likely as a miss.
+Methodological description: Separate 'it can happen' from an estimated chance and from a promised result: two options labeled 'yes' and 'no' do not imply 50/50 odds. A first-try success among 100 equally likely hidden cells is possible but not as likely as a miss.
+User-friendly description: Understand why an event being possible does not make it likely.
 
 ##### Compare Probabilities of Simple Events
 
+Slug: compareProbabilitiesOfSimpleEvents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare two events' likelihoods under consistent assumptions, such as choosing from two sets of equally likely outcomes. A valid comparison needs distribution information, not merely a count of verbally named outcomes.
+Methodological description: Compare two events' likelihoods under consistent assumptions, such as choosing from two sets of equally likely outcomes. A valid comparison needs distribution information, not merely a count of verbally named outcomes.
+User-friendly description: Compare how likely two outcomes are under the same assumptions.
 
 ##### Explain Limits of Prediction
 
+Slug: explainLimitsOfPrediction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a known probability does not determine the outcome of one trial and why a faulty model can give misleading forecasts. A rare win does not refute a correct low-probability estimate.
+Methodological description: Explain why a known probability does not determine the outcome of one trial and why a faulty model can give misleading forecasts. A rare win does not refute a correct low-probability estimate.
+User-friendly description: Explain why knowing the odds does not predict the result of a single attempt.
 
 ##### Use Randomness in a Model
 
+Slug: useRandomnessInAModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Introduce random selection from an explicitly defined outcome set into a digital simulation and distinguish it from a predetermined scenario. Variable outcomes do not imply equal likelihoods.
+Methodological description: Introduce random selection from an explicitly defined outcome set into a digital simulation and distinguish it from a predetermined scenario. Variable outcomes do not imply equal likelihoods.
+User-friendly description: Add random choices to a model while defining which outcomes can occur.
 ### Software Architecture
 
 Groups: 2 · Skills: 21
