@@ -33,4 +33,5 @@ export const makeTenStrategy_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Dopełnianie do dziesięciu",
     uk: "Додавання — Доповнення до десяти",
   },
+  description: { methodological: "The make-ten strategy decomposes an addend so that a part combines with the other addend to reach a convenient ten; the remainder is then added. Regrouping preserves the original sum by addition properties." },
 });

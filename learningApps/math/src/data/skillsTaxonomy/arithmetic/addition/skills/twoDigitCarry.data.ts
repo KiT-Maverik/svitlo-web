@@ -33,4 +33,5 @@ export const twoDigitCarry_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — 2-cyfrowe · Przeniesienie",
     uk: "Додавання — 2-цифрові · Перенесення розряду",
   },
+  description: { methodological: "Combine units of equal place value; a total of ten or more ones is exchanged for one ten and the remaining ones. Carrying is an equivalent place-value exchange, not an additional independent number." },
 });

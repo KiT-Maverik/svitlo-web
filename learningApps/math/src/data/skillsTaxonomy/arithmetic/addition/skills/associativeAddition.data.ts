@@ -33,4 +33,5 @@ export const associativeAddition_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Łączność",
     uk: "Додавання — Сполучний закон",
   },
+  description: { methodological: "Associativity of addition allows regrouping three or more addends without changing their sum. Alongside commutativity it supports flexible strategies but does not permit arbitrary changes to addend values." },
 });

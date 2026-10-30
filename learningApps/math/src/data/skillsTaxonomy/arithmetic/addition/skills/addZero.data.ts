@@ -33,4 +33,5 @@ export const addZero_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Zero",
     uk: "Додавання — Нуль",
   },
+  description: { methodological: "Zero is the additive identity: for any number a, a + 0 = 0 + a = a. Distinguish the absence of a quantity contributed by an addend from the absence of an operation." },
 });

@@ -33,4 +33,5 @@ export const crossTenAddition_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Przekraczanie progu dziesiątkowego",
     uk: "Додавання — Перехід через десяток",
   },
+  description: { methodological: "If the ones sum exceeds nine, ten ones can be exchanged for one ten with remaining ones. This place-value regrouping preserves the numerical value regardless of calculation method." },
 });
