@@ -1560,165 +1560,290 @@ User-friendly description: Recognize when canceling a subscription is made unnec
 
 ### Особисті фінанси
 
+Slug: personalFinance
+Action: create
+Status: pending
+
 Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
-Домогосподарства отримують доходи, здійснюють платежі й ухвалюють рішення про збереження коштів, борги та ризики. Це практична грамотність, а не індивідуальна інвестиційна рекомендація.
+Methodological description: Households receive income, make payments, and decide how to save, borrow, and manage risks. This domain develops practical literacy rather than personalized investment advice.
+User-friendly description: Learn to plan money, understand borrowing, and manage everyday financial decisions.
 
 #### Доходи та бюджет
+
+Slug: incomeAndBudgeting
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Планування коштів починається з розуміння джерел надходжень, регулярних зобов’язань та меж доступних витрат.
+Methodological description: Money planning begins by understanding sources of income, recurring obligations, and the limits of available spending.
+User-friendly description: Explore how income and expenses shape a household budget.
 
 ##### Джерела особистого доходу
 
+Slug: personalIncomeSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти оплату праці, підприємницький дохід, доходи від активів і трансферти за їхньою природою та стабільністю.
+Methodological description: Distinguish wages, business earnings, returns from assets, and transfers by their nature and stability.
+User-friendly description: Recognize different ways people receive income.
 
 ##### Особистий бюджет
 
+Slug: personalBudget
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Планувати доходи та видатки на визначений період із пріоритетами й резервом на непередбачені потреби.
+Methodological description: Plan income and spending over a specified period, prioritizing needs and allowing for unexpected expenses.
+User-friendly description: Make a budget that balances expected income and spending.
 
 ##### Облік витрат
 
+Slug: expenseTracking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Групувати та відстежувати фактичні витрати для виявлення відхилень від плану.
+Methodological description: Group and monitor actual expenditures to identify departures from a financial plan.
+User-friendly description: Track where money goes and compare it with a budget.
 
 ##### Фінансові цілі
 
+Slug: financialGoals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати суму, строк і реалістичні джерела накопичення з конкретною метою.
+Methodological description: Connect a target amount, deadline, and realistic ways of saving to a specific financial objective.
+User-friendly description: Plan how much to save and when to reach a goal.
 
 #### Розрахунки та платежі
+
+Slug: paymentsAndTransactions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Передача коштів має різні інструменти, витрати, строки, ризики та підтверджувальні документи.
+Methodological description: Money transfers involve different instruments, fees, timing, risks, and documentary evidence.
+User-friendly description: Discover how different payment methods work and what to check.
 
 ##### Платіжні інструменти
 
+Slug: paymentMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти готівку, перекази та карткові чи цифрові платежі за способом виконання і доступними гарантіями.
+Methodological description: Distinguish cash, bank transfers, cards, and digital payments by how they operate and the protections available.
+User-friendly description: Compare paying with cash, a card, or a digital transfer.
 
 ##### Комісії та умови платежів
 
+Slug: paymentFeesAndTerms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ураховувати збори, конвертацію, строки зарахування і можливості оскарження операції.
+Methodological description: Account for fees, currency conversion, settlement time, and options to dispute a transaction.
+User-friendly description: Look for extra payment fees, conversion charges, and transaction terms.
 
 ##### Підтвердження фінансової операції
 
+Slug: transactionConfirmation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити реквізити, статус і призначення чека, виписки чи електронної квитанції.
+Methodological description: Interpret the details, status, and purpose of a receipt, account statement, or electronic payment confirmation.
+User-friendly description: Read a receipt or statement to confirm what happened to a payment.
 
 #### Заощадження й інвестування
+
+Slug: savingAndInvesting
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Перенесення купівельної спроможності в майбутнє пов’язане з ліквідністю, дохідністю, ризиком та інфляцією.
+Methodological description: Moving purchasing power into the future involves liquidity, returns, risk, and inflation.
+User-friendly description: Explore why saving and investing involve different risks and benefits.
 
 ##### Резерв на непередбачені витрати
 
+Slug: emergencySavings
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати призначення та доступність коштів для раптових потреб без універсальної норми для кожної сім’ї.
+Methodological description: Assess the purpose and accessibility of funds reserved for unexpected needs without imposing a universal target on every household.
+User-friendly description: Understand why accessible savings can help with unexpected expenses.
 
 ##### Прості відсотки
 
+Slug: simpleInterest
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати відсоткові нарахування на незмінну початкову базу за визначеними ставкою і тривалістю.
+Methodological description: Calculate interest on an unchanged principal using a specified rate and time period.
+User-friendly description: Calculate interest that is earned only on the original amount.
 
 ##### Складні відсотки
 
+Slug: compoundInterest
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати зростання боргу або заощадження з капіталізацією нарахованих відсотків, ураховуючи періодичність і строк.
+Methodological description: Calculate growth of debt or savings when accrued interest is capitalized, considering compounding frequency and duration.
+User-friendly description: Explore how interest on interest can increase savings or debt.
 
 ##### Реальна дохідність
 
+Slug: realReturn
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати номінальний приріст коштів від зміни їхньої купівельної спроможності.
+Methodological description: Distinguish nominal growth in money from changes in its purchasing power.
+User-friendly description: Find out whether a financial return actually keeps up with inflation.
 
 ##### Диверсифікація інвестицій
 
+Slug: investmentDiversification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як розподіл між активами впливає на специфічні ризики і чому не гарантує відсутності втрат.
+Methodological description: Explain how allocating funds among assets affects idiosyncratic risk without guaranteeing protection from losses.
+User-friendly description: Learn why spreading investments can reduce some risks but not eliminate losses.
 
 #### Позики та борги
+
+Slug: loansAndDebt
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Позикові кошти дають можливість витрачати раніше, але створюють майбутні платежі й зобов’язання.
+Methodological description: Borrowing permits earlier spending but creates future payments and obligations.
+User-friendly description: Understand the costs and commitments of borrowing money.
 
 ##### Повна вартість кредиту
 
+Slug: totalCostOfCredit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати відсотки, комісії, графік та інші обов’язкові платежі за умовами конкретної позики.
+Methodological description: Evaluate interest, fees, repayment schedules, and other mandatory payments under a particular loan agreement.
+User-friendly description: Compare what a loan really costs over its full repayment period.
 
 ##### Платоспроможність позичальника
 
+Slug: borrowerAffordability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставляти боргові платежі, стабільність доходів та інші зобов’язання в різних сценаріях.
+Methodological description: Compare debt payments, income stability, and other obligations under different scenarios.
+User-friendly description: Explore whether expected income can support planned loan payments.
 
 ##### Наслідки прострочення
 
+Slug: latePaymentConsequences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати фінансові й правові ризики невиконання зобов’язань відповідно до договору та місцевих правил.
+Methodological description: Identify financial and legal risks of failing to meet obligations under applicable contracts and local rules.
+User-friendly description: Understand what can happen when repayments are overdue.
 
 ##### Кредитна історія
 
+Slug: creditHistory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як відомості про минулі зобов’язання можуть впливати на умови майбутнього фінансування.
+Methodological description: Explain how records of past borrowing obligations can affect future financing terms.
+User-friendly description: Discover how past repayments can influence future borrowing.
 
 #### Ризики та захист
+
+Slug: financialRisksAndProtection
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Фінансова безпека вимагає розрізнення прийнятного ризику, можливостей страхування та ознак недобросовісних пропозицій.
+Methodological description: Financial security involves understanding acceptable risk, insurance options, and warning signs of deceptive offers.
+User-friendly description: Explore ways to recognize financial risks and protect yourself.
 
 ##### Фінансовий ризик і очікувана винагорода
 
+Slug: financialRiskAndExpectedReward
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати невизначені вигоди, можливі втрати, прийнятність ризику й часовий горизонт у фінансових рішеннях людини без зведення аналізу до характеристик конкретного ринкового активу.
+Methodological description: Evaluate uncertain benefits, possible losses, risk tolerance, and time horizons in personal financial choices without limiting analysis to a single market asset.
+User-friendly description: Compare possible rewards with the risk of losing money.
 
 ##### Принципи страхування
 
+Slug: insurancePrinciples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати внесок, страхову подію, покриття, виключення й компенсацію як механізм розподілу визначених ризиків.
+Methodological description: Explain premiums, insured events, coverage, exclusions, and compensation as mechanisms for pooling specified risks.
+User-friendly description: Understand what insurance covers and why exclusions matter.
 
 ##### Ознаки фінансового шахрайства
 
+Slug: financialFraudWarningSigns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати неправдоподібну гарантовану дохідність, вимогу термінового переказу та непрозорість сторони угоди.
+Methodological description: Recognize implausible guaranteed returns, demands for urgent transfers, and opaque counterparties.
+User-friendly description: Spot warning signs of suspicious or deceptive financial offers.
 
 ### Гроші та фінансова система
 
