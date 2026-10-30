@@ -35,4 +35,5 @@ export const verification_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Перевірка розв’язань",
   },
   skillIds: verification_Skills_Ids,
+  description: { methodological: "Critically comparing a calculated result with the problem conditions, identifying mistakes, and using independent methods of verification." },
 });

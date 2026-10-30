@@ -35,4 +35,5 @@ export const logic_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Логічне мислення",
   },
   skillIds: logic_Skills_Ids,
+  description: { methodological: "Using given constraints to exclude impossible alternatives and identify the sole valid conclusion. Completing numerical patterns belongs to algebraic competencies, not to a separate skill in this group." },
 });
