@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { logic_Skills_Ids } from './index.ids';
 
 export const logicalElimination_Skill_Data = buildSkillConfig({
-  id: logic_Skills_Ids.logicalElimination,
+  id: '0322e05e-0418-4031-8473-5b84e7ebb363',
   name: {
     en: "Eliminating impossible options in a logical problem",
     lt: "Neįmanomų variantų atmetimas loginėje užduotyje",
