@@ -447,179 +447,314 @@ User-friendly description: Notice how defaults and option layouts can steer a de
 
 ### Ринки та конкуренція
 
+Slug: marketsAndCompetition
+Action: create
+Status: pending
+
 Groups: 6 · Skills: 20
 
 [Not implemented](#)
 
-Ринкові ціни й обсяги формуються взаємодією покупців і продавців за певних правил і структур конкуренції. Предметом є механізм ринку, а не індивідуальна техніка продажу.
+Methodological description: Market prices and quantities arise from interactions between buyers and sellers under particular rules and competitive structures. This domain explains market mechanisms, not individual selling techniques.
+User-friendly description: Understand how buyers, sellers, and competition shape markets.
 
 #### Попит
 
+Slug: demand
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Бажаний обсяг покупки залежить від ціни, доходів, вподобань, очікувань і цін пов’язаних продуктів.
+Methodological description: Desired purchase quantities depend on price, income, preferences, expectations, and prices of related products.
+User-friendly description: Discover what affects how much consumers want to buy.
 
 ##### Закон попиту
 
+Slug: lawOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати зв’язок ціни з величиною попиту за незмінності інших факторів, розрізняючи правило й можливі винятки.
+Methodological description: Interpret the relationship between price and quantity demanded when other factors are held constant, distinguishing the general pattern from possible exceptions.
+User-friendly description: Explore why a higher price usually means fewer units are wanted.
 
 ##### Зміна величини попиту
 
+Slug: changeInQuantityDemanded
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати рух уздовж кривої попиту, спричинений зміною власної ціни товару.
+Methodological description: Identify movement along a demand curve caused by a change in the good's own price.
+User-friendly description: Recognize how a price change moves us along a demand curve.
 
 ##### Зміщення попиту
 
+Slug: shiftInDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати вплив доходів, очікувань, уподобань і цін замінників чи доповнень на всю залежність попиту.
+Methodological description: Identify how income, expectations, tastes, and the prices of substitutes and complements change the entire demand relationship.
+User-friendly description: Explain what can shift demand even if a product's price stays the same.
 
 #### Пропозиція
 
+Slug: supply
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Рішення продавця про випуск залежать від ціни, витрат, продуктивності, очікувань і доступності ресурсів.
+Methodological description: Sellers' production decisions depend on price, costs, productivity, expectations, and resource availability.
+User-friendly description: Explore what determines how much producers are willing to offer.
 
 ##### Закон пропозиції
 
+Slug: lawOfSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати звичайну залежність пропонованого обсягу від ціни за незмінності інших умов.
+Methodological description: Interpret the usual positive relationship between price and quantity supplied when other conditions remain constant.
+User-friendly description: Understand why producers often offer more at higher prices.
 
 ##### Зміна величини пропозиції
 
+Slug: changeInQuantitySupplied
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати рух уздовж незмінної кривої пропозиції внаслідок зміни власної ціни товару за незмінності інших факторів. Величина пропозиції — кількість, яку продавці готові та здатні запропонувати, а не обов’язково фактичний обсяг продажу.
+Methodological description: Identify movement along an unchanged supply curve caused by the good's own price, other factors fixed; quantity supplied is what sellers are willing and able to offer, not necessarily actual sales.
+User-friendly description: Distinguish willingness to supply from what is actually sold.
 
 ##### Зміщення пропозиції
 
+Slug: shiftInSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як технології, вартість ресурсів, податки або перебої постачання змінюють пропозицію за кожної ціни.
+Methodological description: Assess how technology, input costs, taxes, or supply disruptions change quantity supplied at each price.
+User-friendly description: Identify events that shift the supply curve.
 
 #### Ринкова рівновага
 
+Slug: marketEquilibrium
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Взаємодія попиту й пропозиції визначає узгодження планів учасників і наслідки порушення цього узгодження.
+Methodological description: The interaction of supply and demand coordinates participants' plans and explains what happens when they do not match.
+User-friendly description: Understand how buyers' and sellers' plans can reach a balance.
 
 ##### Рівноважна ціна та обсяг
 
+Slug: equilibriumPriceAndQuantity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити комбінацію ціни й кількості, за якої заплановані покупки відповідають запланованим продажам у заданій моделі.
+Methodological description: Find the price and quantity at which planned purchases equal planned sales in a specified market model.
+User-friendly description: Find where a demand curve and supply curve meet.
 
 ##### Дефіцит і надлишок товару
 
+Slug: marketShortagesAndSurpluses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Діагностувати надлишковий попит або пропозицію при ціні, що відрізняється від рівноважної.
+Methodological description: Diagnose excess demand or excess supply when a price differs from its equilibrium level.
+User-friendly description: Recognize when a market has too little or too much of a product.
 
 ##### Наслідки зміни попиту
 
+Slug: effectsOfDemandChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передбачати напрям зміни рівноважної ціни й кількості після зсуву попиту за визначених умов пропозиції.
+Methodological description: Predict the direction of changes in equilibrium price and quantity after a demand shift under stated supply conditions.
+User-friendly description: Predict what happens to price when demand rises or falls.
 
 ##### Наслідки зміни пропозиції
 
+Slug: effectsOfSupplyChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передбачати напрям зміни рівноважної ціни й кількості після зсуву пропозиції за визначених умов попиту.
+Methodological description: Predict the direction of equilibrium price and quantity changes following a supply shift under specified demand conditions.
+User-friendly description: Explore how changing supply can affect prices and quantities.
 
 #### Еластичність
+
+Slug: elasticity
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Сила реакції кількості на зміну ціни чи доходу може істотно відрізнятися між товарами та часовими горизонтами.
+Methodological description: Quantity responses to changes in price or income vary across products and time horizons.
+User-friendly description: Discover why buyers and sellers respond differently to price changes.
 
 ##### Цінова еластичність попиту
 
+Slug: priceElasticityOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати відносну зміну величини попиту при зміні ціни й відрізняти її від нахилу кривої.
+Methodological description: Evaluate the proportional change in quantity demanded following a price change and distinguish elasticity from the slope of the demand curve.
+User-friendly description: Measure how strongly buying responds to a change in price.
 
 ##### Цінова еластичність пропозиції
 
+Slug: priceElasticityOfSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, наскільки виробники здатні змінити обсяги у відповідь на ціну, враховуючи часові обмеження.
+Methodological description: Evaluate how much producers can change quantities offered when prices change, taking time constraints into account.
+User-friendly description: Explore how quickly and strongly producers respond to higher prices.
 
 ##### Перехресна еластичність попиту
 
+Slug: crossPriceElasticityOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати реакцію попиту на один товар на зміну ціни іншого й тлумачити можливе заміщення або доповнення товарів.
+Methodological description: Determine how demand for one good responds to another good's price, interpreting possible substitution or complementarity.
+User-friendly description: Find out whether two products are substitutes or complements.
 
 ##### Дохідна еластичність попиту
 
+Slug: incomeElasticityOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати реакцію попиту на зміну доходу покупців і розрізняти типи товарів залежно від знака й величини показника.
+Methodological description: Evaluate the response of demand to changes in buyers' income, distinguishing goods by the sign and size of the measure.
+User-friendly description: Explore how buying habits change as people's incomes change.
 
 #### Конкурентні структури
 
+Slug: competitiveMarketStructures
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Кількість і ринкова сила учасників, диференціація продуктів, інформаційні умови та перешкоди входу визначають поведінку й можливі результати конкуренції.
+Methodological description: Participant numbers and market power, product differentiation, information, and barriers to entry influence competitive behavior and outcomes.
+User-friendly description: Compare markets with many competitors and markets dominated by a few.
 
 ##### Конкурентні ринкові структури
 
+Slug: typesOfMarketCompetition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти досконалу конкуренцію, монополістичну конкуренцію, олігополію та монополію за суттєвими умовами.
+Methodological description: Distinguish perfect competition, monopolistic competition, oligopoly, and monopoly by their defining conditions.
+User-friendly description: Recognize different market structures based on competition.
 
 ##### Економічні бар’єри входу
 
+Slug: barriersToMarketEntry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати технологічні, правові, мережеві та стратегічні перешкоди появі нових конкурентів.
+Methodological description: Recognize technological, legal, network, and strategic obstacles that keep new competitors from entering a market.
+User-friendly description: Identify why entering some markets is difficult for a new firm.
 
 ##### Ринкова влада
 
+Slug: marketPower
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати здатність продавця або покупця впливати на ринкові умови, а не лише приймати задану ціну.
+Methodological description: Identify a seller's or buyer's ability to influence market terms instead of merely accepting prevailing prices.
+User-friendly description: Understand how some participants can influence market prices.
 
 #### Ринкові результати
+
+Slug: marketOutcomes
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Вигоди від обміну та втрачені можливості характеризують добробут, що створюється чи не реалізується через економічні рішення, за визначених ринкових умов.
+Methodological description: Gains from exchange and forgone opportunities help characterize welfare created or lost through economic choices under given market conditions.
+User-friendly description: Explore who gains from market exchanges and when benefits are lost.
 
 ##### Споживчий надлишок
 
+Slug: consumerSurplus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати різницю між готовністю платити та фактичною ціною для відповідних одиниць споживання.
+Methodological description: Estimate the difference between willingness to pay and the actual price for the relevant units of consumption.
+User-friendly description: See how paying less than you were willing to pay creates a benefit.
 
 ##### Надлишок виробника
 
+Slug: producerSurplus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вигоду продавця понад мінімальну прийнятну компенсацію, відрізняючи її від бухгалтерського прибутку.
+Methodological description: Estimate benefits to sellers beyond the minimum compensation they would accept, distinguishing these from accounting profit.
+User-friendly description: Explore the benefit sellers receive beyond their minimum acceptable price.
 
 ##### Втрати ефективності
 
+Slug: deadweightLoss
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати нереалізовані взаємовигідні обміни через обмеження чи спотворення ринкових стимулів.
+Methodological description: Analyze mutually beneficial exchanges that do not occur because of restrictions or distorted market incentives.
+User-friendly description: Recognize when market conditions prevent exchanges that could benefit both sides.
 
 ### Виробництво та підприємництво
 
