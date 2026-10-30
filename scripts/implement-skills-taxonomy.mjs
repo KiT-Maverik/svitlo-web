@@ -300,6 +300,45 @@ function render(e,value,kids) {
   return imports.join('\n')+'\n\nexport const '+e.slug+'_'+e.kind+'_Data = build'+e.kind+
     'Config({\n'+lines.join('\n')+'\n});\n';
 }
+function stableMembership(e,kids) {
+  if (e.kind==='Skill') return true;
+  const old=readCode(fileOf(e),e.kind).config;
+  const key=kids[0].kind==='SkillGroup'?'groupIds':'skillIds';
+  const field=optionalProperty(old,key);
+  if (!field) return false;
+  const obj=unwrap(field.initializer);
+  if (!ts.isObjectLiteralExpression(obj)) return false;
+  const current=obj.properties.map(p=>p.name?.text).sort();
+  const wanted=kids.map(x=>x.slug).sort();
+  return JSON.stringify(current)===JSON.stringify(wanted);
+}
+function sameDictionary(a,b) {
+  return !!a && !!b && Object.keys(a).length===Object.keys(b).length &&
+    Object.keys(a).every(k=>a[k]===b[k]);
+}
+function patchExisting(e,reviewed,methodological) {
+  const file=fileOf(e), info=readCode(file,e.kind),changes=[];
+  const add=(node,text)=>changes.push({start:node.getStart(info.ast),end:node.getEnd(),text});
+  const currentName=unwrap(property(info.config,'name').initializer);
+  if (reviewed.name && !sameDictionary(dict(currentName,'name'),reviewed.name))
+    add(currentName,dictionary(reviewed.name));
+  const desc=unwrap(property(info.config,'description').initializer);
+  const method=property(desc,'methodological').initializer;
+  if (literal(method,'methodological')!==methodological) add(method,JSON.stringify(methodological));
+  const currentFe=optionalProperty(desc,'fe');
+  if (reviewed.fe) {
+    if (currentFe) {
+      const oldFe=unwrap(currentFe.initializer);
+      if (!sameDictionary(dict(oldFe,'fe'),reviewed.fe)) add(oldFe,dictionary(reviewed.fe));
+    } else changes.push({start:desc.getEnd()-1,end:desc.getEnd()-1,
+      text:'\n    fe: '+dictionary(reviewed.fe)+',\n  '});
+  }
+  let content=info.source;
+  for (const x of changes.sort((a,b)=>b.start-a.start))
+    content=content.slice(0,x.start)+x.text+content.slice(x.end);
+  sourceFile(file,content);
+  return content;
+}
 function indexContent(kids) {
   return kids.map(k=>"export { "+k+"_Skill_Data } from './"+k+".data';").sort().join('\n')+'\n';
 }
@@ -354,7 +393,9 @@ function domainPlan(d,entities,registry,codes) {
     } else if (fe) checkLocales(fe,'frontend '+e.key,codes);
     const id=prior?.id??allocateId(registry);
     const kids=e.kind==='Skill'?[]:children(e,local);
-    const code=render(e,{id,name,fe,methodological:e.methodological},kids);
+    const code=found && e.action==='update' && stableMembership(e,kids) ?
+      patchExisting(e,reviewed,e.methodological) :
+      render(e,{id,name,fe,methodological:e.methodological},kids);
     if (found && e.action==='create') {
       if (prior.methodological!==e.methodological)
         throw Error('Conflicting idempotent create: '+e.key);
