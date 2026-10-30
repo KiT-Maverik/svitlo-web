@@ -1803,555 +1803,980 @@ User-friendly description: Explain why gas pressure increases with temperature w
 
 ### Electromagnetism
 
+Slug: electromagnetism
+Action: create
+Status: pending
+
 Groups: 8 · Skills: 31
 
 [Not implemented](#)
 
-Electric charges, currents, and magnetic fields describe related interactions; electricity and magnetism share underlying principles but begin with different observations.
+Methodological description: Electric charges, currents, and magnetic fields describe related interactions; electricity and magnetism share underlying principles but begin with different observations.
+User-friendly description: Explore how charges, electric currents and magnetic fields interact.
 
 #### Electric Charges and Interactions
+
+Slug: electricChargesAndInteractions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Electrification, interactions between charged bodies, and charge transfer obey conservation of electric charge. Electric interaction can occur without direct contact.
+Methodological description: Electrification, interactions between charged bodies, and charge transfer obey conservation of electric charge. Electric interaction can occur without direct contact.
+User-friendly description: Learn how electric charges are transferred and exert forces.
 
 ##### Recognize the charging of objects by friction
 
+Slug: recognizeTheChargingOfObjectsByFriction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using a safe balloon or comb model, connect friction with electrostatic effects rather than attributing them to magnetic attraction.
+Methodological description: Using a safe balloon or comb model, connect friction with electrostatic effects rather than attributing them to magnetic attraction.
+User-friendly description: Recognize how rubbing some objects produces electrostatic effects.
 
 ##### Distinguish attraction from repulsion between electric charges
 
+Slug: distinguishAttractionFromRepulsionBetweenElectricCharges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Like charges repel and unlike charges attract; electric interaction is distinct from magnetic interaction.
+Methodological description: Like charges repel and unlike charges attract; electric interaction is distinct from magnetic interaction.
+User-friendly description: Distinguish attraction between opposite charges from repulsion between like charges.
 
 ##### Explain conservation of electric charge
 
+Slug: explainConservationOfElectricCharge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The total charge of an isolated system is conserved during charge transfer and physical interactions.
+Methodological description: The total charge of an isolated system is conserved during charge transfer and physical interactions.
+User-friendly description: Explain why total electric charge stays constant during transfers.
 
 #### Electric Circuits
+
+Slug: electricCircuits
+Action: create
+Status: pending
 
 Skills: 9
 
 [Not implemented](#)
 
-An electric circuit needs a conducting path, a source, and components whose interactions determine the operation of a safe model.
+Methodological description: An electric circuit needs a conducting path, a source, and components whose interactions determine the operation of a safe model.
+User-friendly description: Discover how sources, switches and loads work together in simple circuits.
 
 ##### Identify an electrical power source
 
+Slug: identifyAnElectricalPowerSource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A source maintains a potential difference between its terminals and converts other forms of energy into electrical energy, unlike a passive conductor.
+Methodological description: A source maintains a potential difference between its terminals and converts other forms of energy into electrical energy, unlike a passive conductor.
+User-friendly description: Identify the component that maintains a potential difference in a circuit.
 
 ##### Identify a consumer of electrical energy
 
+Slug: identifyAConsumerOfElectricalEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An electrical load converts received electrical energy into thermal, mechanical, light, or other forms, rather than merely "using current."
+Methodological description: An electrical load converts received electrical energy into thermal, mechanical, light, or other forms, rather than merely "using current."
+User-friendly description: Recognize loads that transform electrical energy into other forms.
 
 ##### Identify the function of a switch
 
+Slug: identifyTheFunctionOfASwitch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A switch changes the state of a conducting path and can interrupt current in a particular branch, but it is not itself an energy source.
+Methodological description: A switch changes the state of a conducting path and can interrupt current in a particular branch, but it is not itself an energy source.
+User-friendly description: Explain how a switch changes whether a current path is connected.
 
 ##### Recognize a closed electric circuit
 
+Slug: recognizeAClosedElectricCircuit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A closed circuit has a continuous conducting path; sustained current also requires a source of electromotive force.
+Methodological description: A closed circuit has a continuous conducting path; sustained current also requires a source of electromotive force.
+User-friendly description: Recognize when a circuit has a continuous conducting path.
 
 ##### Explain an open circuit
 
+Slug: explainAnOpenCircuit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Opening a branch interrupts its conducting path; in a circuit with parallel branches, other parts may continue to operate.
+Methodological description: Opening a branch interrupts its conducting path; in a circuit with parallel branches, other parts may continue to operate.
+User-friendly description: Explain what happens when a current path is broken.
 
 ##### Predict the effect of a switch in a circuit
 
+Slug: predictTheEffectOfASwitchInACircuit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The consequences of switching depend on where the switch is placed relative to the source, loads, and parallel paths.
+Methodological description: The consequences of switching depend on where the switch is placed relative to the source, loads, and parallel paths.
+User-friendly description: Predict which circuit parts a switch will turn on or off.
 
 ##### Explain series connections of electric circuit components
 
+Slug: explainSeriesConnectionsOfElectricCircuitComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Components connected in series share a common current path: the same current passes through each, and the total voltage across the combination is the sum of the voltages across the individual components. Breaking the single path stops current through all those components.
+Methodological description: Components connected in series share a common current path: the same current passes through each, and the total voltage across the combination is the sum of the voltages across the individual components. Breaking the single path stops current through all those components.
+User-friendly description: Explore how components on one path share current in a series circuit.
 
 ##### Explain parallel connections of electric circuit components
 
+Slug: explainParallelConnectionsOfElectricCircuitComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Parallel branches connect to the same two nodes, so each has the same voltage and the total current is divided among the branches. Opening one branch does not necessarily stop current in the others.
+Methodological description: Parallel branches connect to the same two nodes, so each has the same voltage and the total current is divided among the branches. Opening one branch does not necessarily stop current in the others.
+User-friendly description: Understand how separate parallel branches share voltage and split current.
 
 ##### Explain current balance at a circuit node
 
+Slug: explainCurrentBalanceAtACircuitNode
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Under steady current, charge does not accumulate at a node; the total current entering equals the total current leaving.
+Methodological description: Under steady current, charge does not accumulate at a node; the total current entering equals the total current leaving.
+User-friendly description: Explain why current entering a steady circuit junction equals current leaving.
 
 #### Conductors and Insulators
+
+Slug: conductorsAndInsulators
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Materials differ in how readily they permit electric charge to move; distinguish an electrical property of a material from a device's purpose.
+Methodological description: Materials differ in how readily they permit electric charge to move; distinguish an electrical property of a material from a device's purpose.
+User-friendly description: Explore why some materials let charges move more easily than others.
 
 ##### Identify electrically conductive materials
 
+Slug: identifyElectricallyConductiveMaterials
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine experimentally which materials complete a low-voltage circuit.
+Methodological description: Determine experimentally which materials complete a low-voltage circuit.
+User-friendly description: Test which materials conduct electricity using a safe low-voltage circuit.
 
 ##### Identify electrically insulating materials
 
+Slug: identifyElectricallyInsulatingMaterials
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine experimentally which materials impede the flow of current.
+Methodological description: Determine experimentally which materials impede the flow of current.
+User-friendly description: Identify materials that prevent or greatly limit electric current.
 
 #### Magnetic Properties and Interactions
+
+Slug: magneticPropertiesAndInteractions
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Materials and pole orientation affect interactions; direct contact between magnets is not required.
+Methodological description: Materials and pole orientation affect interactions; direct contact between magnets is not required.
+User-friendly description: Discover how magnetic materials and poles interact.
 
 ##### Identify materials attracted to a magnet
 
+Slug: identifyMaterialsAttractedToAMagnet
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The observable effect of a magnetic field on a material depends on its magnetic properties; not all metals are attracted equally.
+Methodological description: The observable effect of a magnetic field on a material depends on its magnetic properties; not all metals are attracted equally.
+User-friendly description: Recognize materials that respond strongly to magnetic fields.
 
 ##### Classify objects by magnetic interaction
 
+Slug: classifyObjectsByMagneticInteraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classification is based on the direction and magnitude of a material's magnetic response under relevant conditions; this is not the same as determining whether it has its own magnetic field.
+Methodological description: Classification is based on the direction and magnitude of a material's magnetic response under relevant conditions; this is not the same as determining whether it has its own magnetic field.
+User-friendly description: Classify objects by the magnetic response they exhibit.
 
 ##### Recognize magnetic attraction
 
+Slug: recognizeMagneticAttraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a situation in which magnets move toward one another due to their interaction.
+Methodological description: Identify a situation in which magnets move toward one another due to their interaction.
+User-friendly description: Recognize situations in which magnets attract each other.
 
 ##### Recognize magnetic repulsion
 
+Slug: recognizeMagneticRepulsion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a situation in which magnets move apart due to their interaction.
+Methodological description: Identify a situation in which magnets move apart due to their interaction.
+User-friendly description: Recognize situations in which magnets repel each other.
 
 ##### Predict interactions between magnetic poles
 
+Slug: predictInteractionsBetweenMagneticPoles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine attraction or repulsion from a known arrangement of poles.
+Methodological description: Determine attraction or repulsion from a known arrangement of poles.
+User-friendly description: Predict what happens when known magnetic poles approach one another.
 
 ##### Explain magnetic action without contact
 
+Slug: explainMagneticActionWithoutContact
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize magnetic force as an interaction that does not require direct contact.
+Methodological description: Recognize magnetic force as an interaction that does not require direct contact.
+User-friendly description: Explain why a magnet can exert force without touching an object.
 
 #### Electromagnets and Induction
+
+Slug: electromagnetsAndInduction
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Electric current can create a magnetic field, and changing magnetic conditions can produce electrical effects, explaining many systems.
+Methodological description: Electric current can create a magnetic field, and changing magnetic conditions can produce electrical effects, explaining many systems.
+User-friendly description: Discover how currents create magnetic fields and changing fields induce electricity.
 
 ##### Explain the magnetic effect of electric current
 
+Slug: explainTheMagneticEffectOfElectricCurrent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Moving electric charges create a magnetic field; changing the current changes the field it produces and the associated magnetic interactions.
+Methodological description: Moving electric charges create a magnetic field; changing the current changes the field it produces and the associated magnetic interactions.
+User-friendly description: Explain why an electric current produces a magnetic field.
 
 ##### Explain how induced current arises
 
+Slug: explainHowInducedCurrentArises
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A changing magnetic flux through a closed conducting loop can induce an electromotive force and current; constant flux by itself does not generate current.
+Methodological description: A changing magnetic flux through a closed conducting loop can induce an electromotive force and current; constant flux by itself does not generate current.
+User-friendly description: Recognize when changing magnetic flux produces an induced current.
 
 #### Magnetic Effects in Physical Systems
+
+Slug: magneticEffectsInPhysicalSystems
+Action: create
+Status: pending
 
 Skills: 1
 
 [Not implemented](#)
 
-Magnetic forces in real systems are explained by fields and material properties; choosing an engineering design belongs to Engineering.
+Methodological description: Magnetic forces in real systems are explained by fields and material properties; choosing an engineering design belongs to Engineering.
+User-friendly description: Explore the effects of magnetic fields on physical systems.
 
 ##### Explain the physical role of a magnetic field in a system
 
+Slug: explainThePhysicalRoleOfAMagneticFieldInASystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine how magnetic interaction affects a system's motion or state without proceeding to select a technical component.
+Methodological description: Determine how magnetic interaction affects a system's motion or state without proceeding to select a technical component.
+User-friendly description: Explain how a magnetic field influences motion or another physical state.
 
 #### Electric and Magnetic Fields
+
+Slug: electricAndMagneticFields
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Fields describe interactions involving electric charges and magnetic systems without direct contact, but their physical effects differ.
+Methodological description: Fields describe interactions involving electric charges and magnetic systems without direct contact, but their physical effects differ.
+User-friendly description: Learn how electric and magnetic fields exert different kinds of forces.
 
 ##### Explain the electric field
 
+Slug: explainTheElectricField
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An electric field determines the force on an electric charge and exists independently of a test charge.
+Methodological description: An electric field determines the force on an electric charge and exists independently of a test charge.
+User-friendly description: Understand how an electric field affects a charge even without direct contact.
 
 ##### Explain the magnetic field
 
+Slug: explainTheMagneticField
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A magnetic field can act on moving charges and magnetic systems; the direction and magnitude of its effects depend on conditions.
+Methodological description: A magnetic field can act on moving charges and magnetic systems; the direction and magnitude of its effects depend on conditions.
+User-friendly description: Explain how magnetic fields affect moving charges and magnetic objects.
 
 ##### Distinguish electric from magnetic fields
 
+Slug: distinguishElectricFromMagneticFields
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An electric field can act on a stationary charge, whereas the magnetic component of the force on a charge depends on its motion.
+Methodological description: An electric field can act on a stationary charge, whereas the magnetic component of the force on a charge depends on its motion.
+User-friendly description: Distinguish forces on stationary charges from magnetic forces on moving charges.
 
 #### Current, Voltage, and Resistance
+
+Slug: currentVoltageAndResistance
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Current describes the flow of electric charge, voltage is a potential difference, and resistance is opposition to current under specified physical conditions.
+Methodological description: Current describes the flow of electric charge, voltage is a potential difference, and resistance is opposition to current under specified physical conditions.
+User-friendly description: Discover how current, voltage, resistance and power describe circuits.
 
 ##### Explain electric current
 
+Slug: explainElectricCurrent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Electric current involves directed transport of charge, not merely random motion of charge carriers.
+Methodological description: Electric current involves directed transport of charge, not merely random motion of charge carriers.
+User-friendly description: Understand electric current as the directed movement of charge.
 
 ##### Explain electric voltage
 
+Slug: explainElectricVoltage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Voltage specifies the difference in electric potential between two points and is not current itself.
+Methodological description: Voltage specifies the difference in electric potential between two points and is not current itself.
+User-friendly description: Explain voltage as an electric potential difference between two points.
 
 ##### Explain electrical resistance
 
+Slug: explainElectricalResistance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Resistance determines the relationship between voltage and current under given conditions and depends on conductor material and geometry.
+Methodological description: Resistance determines the relationship between voltage and current under given conditions and depends on conductor material and geometry.
+User-friendly description: Explore how resistance affects current under specified conditions.
 
 ##### Explain Ohm's law for an ohmic conductor
 
+Slug: explainOhmsLawForAnOhmicConductor
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Under constant conditions, the current through an ohmic conductor is directly proportional to voltage; this law does not describe every component without exception.
+Methodological description: Under constant conditions, the current through an ohmic conductor is directly proportional to voltage; this law does not describe every component without exception.
+User-friendly description: Use Ohm's law for conductors that behave ohmically under constant conditions.
 
 ##### Explain electrical power
 
+Slug: explainElectricalPower
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Electrical power describes the rate of electrical energy transfer or transformation.
+Methodological description: Electrical power describes the rate of electrical energy transfer or transformation.
+User-friendly description: Understand electrical power as the rate of energy transfer.
 
 ### Optics
+
+Slug: optics
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 11
 
 [Not implemented](#)
 
-Optics studies the propagation of light, image formation, and the interaction of light rays with surfaces, water, and lenses. The broader electromagnetic radiation spectrum is classified separately.
+Methodological description: Optics studies the propagation of light, image formation, and the interaction of light rays with surfaces, water, and lenses. The broader electromagnetic radiation spectrum is classified separately.
+User-friendly description: Explore how visible light travels, reflects, refracts and forms images.
 
 #### Light Sources and Visibility
 
+Slug: lightSourcesAndVisibility
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-An object is visible when light from it reaches the eye; a light source and an illuminated surface play different roles.
+Methodological description: An object is visible when light from it reaches the eye; a light source and an illuminated surface play different roles.
+User-friendly description: Discover why some objects emit light and others are visible by reflection.
 
 ##### Distinguish a light source from an illuminated body
 
+Slug: distinguishALightSourceFromAnIlluminatedBody
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a body that emits light and one that reflects it.
+Methodological description: Recognize a body that emits light and one that reflects it.
+User-friendly description: Distinguish something that emits light from something it illuminates.
 
 ##### Classify natural and artificial light sources
 
+Slug: classifyNaturalAndArtificialLightSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Group light sources according to their origin.
+Methodological description: Group light sources according to their origin.
+User-friendly description: Recognize natural and human-made sources of light.
 
 ##### Explain the condition for an object to be visible
 
+Slug: explainTheConditionForAnObjectToBeVisible
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the need for light from an object to reach the eye.
+Methodological description: Identify the need for light from an object to reach the eye.
+User-friendly description: Explain why we see an object only when light from it reaches the eye.
 
 #### Light and Shadows
+
+Slug: lightAndShadows
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Obstacles and the source's position determine a shadow's appearance, direction, and size; a model enables qualitative predictions.
+Methodological description: Obstacles and the source's position determine a shadow's appearance, direction, and size; a model enables qualitative predictions.
+User-friendly description: Explore how the arrangement of objects and light sources creates shadows.
 
 ##### Explain how a shadow forms
 
+Slug: explainHowAShadowForms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate a shadow to the blocking of light by an opaque object.
+Methodological description: Relate a shadow to the blocking of light by an opaque object.
+User-friendly description: Explain how an opaque object blocks light to form a shadow.
 
 ##### Predict the position of a shadow
 
+Slug: predictThePositionOfAShadow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Predict where a shadow forms given the positions of the source and object.
+Methodological description: Predict where a shadow forms given the positions of the source and object.
+User-friendly description: Predict which side of an object a shadow will appear on.
 
 ##### Predict changes in shadow size
 
+Slug: predictChangesInShadowSize
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine how changing their relative positions affects shadow size.
+Methodological description: Determine how changing their relative positions affects shadow size.
+User-friendly description: Understand how moving a light source or object changes shadow size.
 
 #### Transparency
+
+Slug: transparency
+Action: create
+Status: pending
 
 Skills: 1
 
 [Not implemented](#)
 
-Transparency characterizes the transmission, absorption, and scattering of visible light by a material and its ability to transmit an image.
+Methodological description: Transparency characterizes the transmission, absorption, and scattering of visible light by a material and its ability to transmit an image.
+User-friendly description: Learn how materials differ in the amount and clarity of light they transmit.
 
 ##### Classify materials by transparency
 
+Slug: classifyMaterialsByTransparency
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish transparent, translucent, and opaque materials by their ability to transmit light and form a clear image through the material.
+Methodological description: Distinguish transparent, translucent, and opaque materials by their ability to transmit light and form a clear image through the material.
+User-friendly description: Distinguish transparent, translucent and opaque materials.
 
 #### Light Reflection
 
+Slug: lightReflection
+Action: create
+Status: pending
+
 Skills: 2
 
 [Not implemented](#)
 
-A surface changes the direction of a light ray; mirrors provide a visible model of this behavior.
+Methodological description: A surface changes the direction of a light ray; mirrors provide a visible model of this behavior.
+User-friendly description: Discover how light changes direction when it meets a reflecting surface.
 
 ##### Recognize light reflection
 
+Slug: recognizeLightReflection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify situations in which light returns from a surface.
+Methodological description: Identify situations in which light returns from a surface.
+User-friendly description: Recognize when light bounces back from a surface.
 
 ##### Predict the direction of a reflected ray
 
+Slug: predictTheDirectionOfAReflectedRay
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-According to the law of reflection, the angle between the ray and the surface normal is the same for incident and reflected rays.
+Methodological description: According to the law of reflection, the angle between the ray and the surface normal is the same for incident and reflected rays.
+User-friendly description: Predict reflection angles relative to the normal of a surface.
 
 #### Refraction and Lenses
+
+Slug: refractionAndLenses
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Moving between media and the shape of a lens affect ray direction and image formation.
+Methodological description: Moving between media and the shape of a lens affect ray direction and image formation.
+User-friendly description: Explore how light bends between materials and through lenses.
 
 ##### Explain light refraction at the boundary between media
 
+Slug: explainLightRefractionAtTheBoundaryBetweenMedia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-When light passes between media with different optical properties, its speed changes and, at oblique incidence, so does the direction of the light wave.
+Methodological description: When light passes between media with different optical properties, its speed changes and, at oblique incidence, so does the direction of the light wave.
+User-friendly description: Explain how light can change direction at the boundary between media.
 
 ##### Distinguish converging and diverging lenses
 
+Slug: distinguishConvergingAndDivergingLenses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use a simulation to observe how different lenses change the directions of light rays passing through them.
+Methodological description: Use a simulation to observe how different lenses change the directions of light rays passing through them.
+User-friendly description: Compare lenses that bring light rays together with lenses that spread them apart.
 
 ### Radiation
+
+Slug: radiation
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 5
 
 [Not implemented](#)
 
-Radiation describes energy transfer from a source through space, including invisible parts of the electromagnetic spectrum and their interaction with matter. Geometric image formation with light belongs to Optics.
+Methodological description: Radiation describes energy transfer from a source through space, including invisible parts of the electromagnetic spectrum and their interaction with matter. Geometric image formation with light belongs to Optics.
+User-friendly description: Explore electromagnetic radiation and its interactions with matter.
 
 #### Electromagnetic Radiation
+
+Slug: electromagneticRadiation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Radio waves, infrared, visible, and ultraviolet radiation are different regions of the electromagnetic spectrum.
+Methodological description: Radio waves, infrared, visible, and ultraviolet radiation are different regions of the electromagnetic spectrum.
+User-friendly description: Discover visible and invisible parts of the electromagnetic spectrum.
 
 ##### Distinguish visible from invisible electromagnetic radiation
 
+Slug: distinguishVisibleFromInvisibleElectromagneticRadiation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use lamp light, infrared radiation, and radio waves to demonstrate that not all radiation can be detected by the eye.
+Methodological description: Use lamp light, infrared radiation, and radio waves to demonstrate that not all radiation can be detected by the eye.
+User-friendly description: Recognize that radio and infrared waves are not visible to human eyes.
 
 ##### Relate familiar types of radiation to the electromagnetic spectrum
 
+Slug: relateFamiliarTypesOfRadiationToTheElectromagneticSpectrum
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Radio waves, infrared, visible, and ultraviolet radiation occupy positions in the spectrum according to frequency and wavelength; visibility does not determine their physical nature.
+Methodological description: Radio waves, infrared, visible, and ultraviolet radiation occupy positions in the spectrum according to frequency and wavelength; visibility does not determine their physical nature.
+User-friendly description: Locate familiar radiation types along the electromagnetic spectrum.
 
 ##### Explain the propagation of electromagnetic waves without air
 
+Slug: explainThePropagationOfElectromagneticWavesWithoutAir
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use sunlight to explain why electromagnetic radiation can propagate through the vacuum of space.
+Methodological description: Use sunlight to explain why electromagnetic radiation can propagate through the vacuum of space.
+User-friendly description: Explain why electromagnetic waves travel through the vacuum of space.
 
 #### Radiation and Matter
+
+Slug: radiationAndMatter
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Materials can emit, reflect, transmit, or absorb energy; the outcomes depend on the type of radiation and the properties of matter.
+Methodological description: Materials can emit, reflect, transmit, or absorb energy; the outcomes depend on the type of radiation and the properties of matter.
+User-friendly description: Explore how materials absorb, emit, reflect or transmit radiation.
 
 ##### Explain heating through radiation absorption
 
+Slug: explainHeatingThroughRadiationAbsorption
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using two surfaces in sunlight, relate differences in heating to energy absorption.
+Methodological description: Using two surfaces in sunlight, relate differences in heating to energy absorption.
+User-friendly description: Explain why different surfaces heat differently under the same radiation.
 
 ##### Distinguish energy emission from reflection of received light
 
+Slug: distinguishEnergyEmissionFromReflectionOfReceivedLight
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using the Sun and Moon, explain that a source emits energy while an illuminated body can reflect it.
+Methodological description: Using the Sun and Moon, explain that a source emits energy while an illuminated body can reflect it.
+User-friendly description: Distinguish light emitted by a source from light reflected by an object.
 
 ### Modern Physics
+
+Slug: modernPhysics
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 16
 
 [Not implemented](#)
 
-Models of atoms, quantum and nuclear phenomena, and spacetime explain observations not covered by classical physics alone. Younger children can encounter the concepts without mathematical formalism.
+Methodological description: Models of atoms, quantum and nuclear phenomena, and spacetime explain observations not covered by classical physics alone. Younger children can encounter the concepts without mathematical formalism.
+User-friendly description: Explore quantum phenomena, nuclear changes and the physics of spacetime.
 
 #### Atoms and Quantum Phenomena
+
+Slug: atomsAndQuantumPhenomena
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Atomic models and discrete packets of energy help explain light and properties of matter that cannot be described solely in terms of mechanical motion.
+Methodological description: Atomic models and discrete packets of energy help explain light and properties of matter that cannot be described solely in terms of mechanical motion.
+User-friendly description: Discover how atomic structure and quantum behavior differ from classical models.
 
 ##### Distinguish an atom from its principal components
 
+Slug: distinguishAnAtomFromItsPrincipalComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An atom consists of a nucleus and an electron cloud; electrons' motion and states do not correspond to literal planetary orbits.
+Methodological description: An atom consists of a nucleus and an electron cloud; electrons' motion and states do not correspond to literal planetary orbits.
+User-friendly description: Recognize atoms as nuclei surrounded by electrons in quantum states.
 
 ##### Explain a photon as a quantum of electromagnetic radiation
 
+Slug: explainAPhotonAsAQuantumOfElectromagneticRadiation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A photon is a quantum of the electromagnetic field whose energy is related to radiation frequency; it should not be interpreted as a tiny classical ball.
+Methodological description: A photon is a quantum of the electromagnetic field whose energy is related to radiation frequency; it should not be interpreted as a tiny classical ball.
+User-friendly description: Understand photons as energy quanta of electromagnetic radiation.
 
 ##### Explain light emission by an excited atom
 
+Slug: explainLightEmissionByAnExcitedAtom
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A transition of an atom between energy states may be accompanied by the emission of a photon whose energy is determined by the difference between those states.
+Methodological description: A transition of an atom between energy states may be accompanied by the emission of a photon whose energy is determined by the difference between those states.
+User-friendly description: Explain how atoms can emit photons when changing energy levels.
 
 ##### Explain wave-like and particle-like behavior of quantum objects
 
+Slug: explainWaveLikeAndParticleLikeBehaviorOfQuantumObjects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Light and matter exhibit phenomena that cannot be exhaustively described by only a classical wave or a classical particle picture.
+Methodological description: Light and matter exhibit phenomena that cannot be exhaustively described by only a classical wave or a classical particle picture.
+User-friendly description: Explore why quantum objects show wave-like and particle-like behavior.
 
 ##### Explain discrete atomic energy states
 
+Slug: explainDiscreteAtomicEnergyStates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Bound states of an atom have definite energies, and transitions between states involve energy absorption or emission.
+Methodological description: Bound states of an atom have definite energies, and transitions between states involve energy absorption or emission.
+User-friendly description: Recognize that atoms have discrete bound energy levels.
 
 #### Nuclear Phenomena
+
+Slug: nuclearPhenomena
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Changes in atomic nuclei differ from chemical reactions and may release energy.
+Methodological description: Changes in atomic nuclei differ from chemical reactions and may release energy.
+User-friendly description: Discover how nuclei change and why some transformations release energy.
 
 ##### Distinguish nuclear transformation from chemical change
 
+Slug: distinguishNuclearTransformationFromChemicalChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A nuclear transformation changes an atom's nucleus, whereas chemical reactions primarily change bonds and electronic structure.
+Methodological description: A nuclear transformation changes an atom's nucleus, whereas chemical reactions primarily change bonds and electronic structure.
+User-friendly description: Distinguish changes inside an atomic nucleus from chemical reactions.
 
 ##### Explain radioactivity
 
+Slug: explainRadioactivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Unstable atomic nuclei spontaneously transform while emitting particles or energy; this is not an ordinary chemical reaction.
+Methodological description: Unstable atomic nuclei spontaneously transform while emitting particles or energy; this is not an ordinary chemical reaction.
+User-friendly description: Explain how unstable atomic nuclei undergo radioactive transformations.
 
 ##### Distinguish alpha, beta, and gamma radiation
 
+Slug: distinguishAlphaBetaAndGammaRadiation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Alpha radiation consists of helium nuclei, beta radiation of electrons or positrons, and gamma radiation of high-energy photons.
+Methodological description: Alpha radiation consists of helium nuclei, beta radiation of electrons or positrons, and gamma radiation of high-energy photons.
+User-friendly description: Recognize alpha particles, beta particles and gamma photons.
 
 ##### Explain half-life
 
+Slug: explainHalfLife
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Half-life describes the statistical decline in the number of unstable nuclei in a population, not the lifetime of an individual nucleus.
+Methodological description: Half-life describes the statistical decline in the number of unstable nuclei in a population, not the lifetime of an individual nucleus.
+User-friendly description: Understand half-life as a statistical pattern across many unstable nuclei.
 
 ##### Explain nuclear fission
 
+Slug: explainNuclearFission
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Heavy nuclei can split into lighter fragments and release energy because of changes in binding energy.
+Methodological description: Heavy nuclei can split into lighter fragments and release energy because of changes in binding energy.
+User-friendly description: Explore how splitting heavy nuclei can release energy.
 
 ##### Explain nuclear fusion
 
+Slug: explainNuclearFusion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Light nuclei can combine under suitable conditions, and changes in binding energy can lead to energy release.
+Methodological description: Light nuclei can combine under suitable conditions, and changes in binding energy can lead to energy release.
+User-friendly description: Explain how combining light nuclei can release energy.
 
 #### Relativity
+
+Slug: relativity
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Special relativity describes how measurements of space and time relate to motion, while general relativity describes gravity as spacetime geometry. They should not be confused with the history of astronomy or require formulas in an introductory curriculum.
+Methodological description: Special relativity describes how measurements of space and time relate to motion, while general relativity describes gravity as spacetime geometry. They should not be confused with the history of astronomy or require formulas in an introductory curriculum.
+User-friendly description: Discover how motion and gravity affect measurements of space and time.
 
 ##### Explain how the passage of time depends on observers' relative motion
 
+Slug: explainHowThePassageOfTimeDependsOnObserversRelativeMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using a conceptual model, explain why observers moving relative to one another may measure a time interval differently; this is a physical principle, not an animation-use skill.
+Methodological description: Using a conceptual model, explain why observers moving relative to one another may measure a time interval differently; this is a physical principle, not an animation-use skill.
+User-friendly description: Explore why observers in relative motion may measure different time intervals.
 
 ##### Recognize the constancy of the speed of light in vacuum as a principle of special relativity
 
+Slug: recognizeTheConstancyOfTheSpeedOfLightInVacuumAsAPrincipleOfSpecialRelativity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using qualitative models, distinguish the invariant speed of light in vacuum for inertial observers from ordinary addition of speeds of everyday objects.
+Methodological description: Using qualitative models, distinguish the invariant speed of light in vacuum for inertial observers from ordinary addition of speeds of everyday objects.
+User-friendly description: Understand the invariant speed of light in vacuum in special relativity.
 
 ##### Explain gravity as spacetime curvature
 
+Slug: explainGravityAsSpacetimeCurvature
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the general relativity concept that the distribution of mass and energy affects spacetime geometry; do not treat a rubber-sheet-and-ball analogy as a literal mechanism of gravity.
+Methodological description: Recognize the general relativity concept that the distribution of mass and energy affects spacetime geometry; do not treat a rubber-sheet-and-ball analogy as a literal mechanism of gravity.
+User-friendly description: Recognize gravity as a consequence of curved spacetime in general relativity.
 
 ##### Explain the effect of gravity on the passage of time
 
+Slug: explainTheEffectOfGravityOnThePassageOfTime
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The relative rates of clocks can depend on gravitational potential and observation conditions; this is a physical effect of general relativity.
+Methodological description: The relative rates of clocks can depend on gravitational potential and observation conditions; this is a physical effect of general relativity.
+User-friendly description: Explore how gravity can change the relative rates of clocks.
 
 ##### Explain the gravitational deflection of light
 
+Slug: explainTheGravitationalDeflectionOfLight
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Near massive bodies, spacetime geometry changes light trajectories; this is not refraction at the boundary of two optical media.
+Methodological description: Near massive bodies, spacetime geometry changes light trajectories; this is not refraction at the boundary of two optical media.
+User-friendly description: Explain how gravity bends light trajectories without ordinary optical refraction.
 
