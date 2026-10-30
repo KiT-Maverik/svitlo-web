@@ -33,7 +33,7 @@ test('merged regrouping competencies retain the original two-digit UUIDs without
     }
     const data = read(path + 'regrouping.data.ts');
     assert.match(data, /id: (addition|subtraction)_Skills_Ids.regrouping/);
-    assert.match(data, /description: \{ methodological:/);
+    assert.match(data, /description:\s*\{\s*methodological:/);
     assertSupportedTranslations(data, group + '/regrouping');
   }
 });

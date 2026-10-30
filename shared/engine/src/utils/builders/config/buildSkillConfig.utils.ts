@@ -1,6 +1,6 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 import type { Collection } from '@svitlo/contracts/content';
-import type { Skill_Config } from '@svitlo/contracts/taxonomy';
+import type { Skill_Config, SkillDescription_Config } from '@svitlo/contracts/taxonomy';
 import type { DeepReadonly } from '@svitlo/contracts/content';
 import { validateSkillUuid } from './validateSkillReferences.utils';
 
@@ -10,7 +10,10 @@ const supportedLanguages = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ la
  * Shared validation for all taxonomy authoring configs.
  * This does not create any collection, entity or external relationship.
  */
-export function validateSkillConfig(config: Skill_Config): void {
+export function validateSkillConfig(
+  config: Pick<Skill_Config, 'id' | 'name'> & { description?: SkillDescription_Config },
+  requireFrontendDescription = false,
+): void {
   if (!config) {
     throw new Error('Skill id must be a UUID');
   }
@@ -32,8 +35,10 @@ export function validateSkillConfig(config: Skill_Config): void {
     throw new Error(`Skill name contains unsupported languages: ${unexpected.join(', ')}`);
   }
 
-  // Existing records may omit description until editorial migration.
-  // Supplied descriptions must include canonical methodological English.
+  // Skills require descriptions; Groups and Domains still permit legacy omissions.
+  if (requireFrontendDescription && config.description === undefined) {
+    throw new Error('Skill description is required');
+  }
   if (config.description !== undefined) {
     const description = config.description;
     if (!description || typeof description !== 'object' || Array.isArray(description)) {
@@ -48,6 +53,9 @@ export function validateSkillConfig(config: Skill_Config): void {
       throw new Error('Skill description contains unsupported fields: ' + unexpectedKeys.join(', '));
     }
 
+    if (requireFrontendDescription && description.fe === undefined) {
+      throw new Error('Skill description.fe must contain all supported languages');
+    }
     if (description.fe !== undefined) {
       if (!description.fe || typeof description.fe !== 'object' || Array.isArray(description.fe)) {
         throw new Error('Skill description.fe must contain all supported languages');
@@ -71,7 +79,7 @@ export function validateSkillConfig(config: Skill_Config): void {
  * Authoring config is not mutated; fileLocation is added separately by the registry.
  */
 export function buildSkillConfig<const T extends Skill_Config>(config: T): DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }> {
-  validateSkillConfig(config);
+  validateSkillConfig(config, true);
   const collection: Extract<Collection, 'skill'> = 'skill';
   return { ...config, collection } as DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }>;
 }
