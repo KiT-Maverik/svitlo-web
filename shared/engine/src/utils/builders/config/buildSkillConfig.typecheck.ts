@@ -20,3 +20,15 @@ buildSkillConfig({ name: names });
 
 // @ts-expect-error A skill must have a localized name dictionary.
 buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' });
+
+buildSkillConfig({
+  id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
+  name: names,
+  description: { methodological: 'English conceptual boundaries.', FE: names },
+});
+
+// @ts-expect-error description.methodological is required when description exists.
+buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { FE: names } });
+
+// @ts-expect-error A supplied FE description cannot omit supported language keys.
+buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { methodological: 'English', FE: { en: 'English' } } });
