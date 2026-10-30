@@ -14,6 +14,7 @@ const names = {
     'nonstandardLength',
     'rulerZero',
     'measureCentimeters',
+    'drawSegmentCentimeters',
     'millimeters',
     'decimeters',
     'meters',
@@ -42,7 +43,7 @@ function ids(path: string): Record<string, string> {
 }
 
 describe('Measurement taxonomy', () => {
-  it('implements five groups and 21 Skills with canonical Code links', () => {
+  it('implements five groups and 22 Skills with canonical Code links', () => {
     assert.deepEqual(
       readdirSync(domain, { withFileTypes: true })
         .filter(item => item.isDirectory())
@@ -95,7 +96,7 @@ describe('Measurement taxonomy', () => {
         check(value);
       }
     }
-    assert.equal(seen.size, 27);
+    assert.equal(seen.size, 28);
   });
 
   it('provides all supported translations with distinct Group and Skill names', () => {

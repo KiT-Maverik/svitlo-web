@@ -8,7 +8,6 @@ const taxonomy = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(taxonomy, 'data');
 const expected: Record<string, readonly string[]> = {
   collection: [
-    'classifyByAttribute',
     'formulateInvestigationQuestion',
     'collectCounts',
     'tallyMarks',
@@ -32,7 +31,7 @@ const uuidEntries = (source: string) =>
   );
 
 describe('Data taxonomy source contracts', () => {
-  it('has three groups and fifteen individually authored skills', () => {
+  it('has three groups and fourteen individually authored skills', () => {
     assert.deepEqual(
       readdirSync(domain, { withFileTypes: true })
         .filter(entry => entry.isDirectory())
@@ -54,7 +53,7 @@ describe('Data taxonomy source contracts', () => {
       assert.ok(read(join(domain, group, group + '.data.ts')).includes('skillIds: ' + group + '_Skills_Ids'));
       count += actual.length;
     }
-    assert.equal(count, 15);
+    assert.equal(count, 14);
   });
 
   it('localizes every domain, group and skill name into all supported languages', () => {
@@ -63,7 +62,7 @@ describe('Data taxonomy source contracts', () => {
       paths.push(join(domain, group, group + '.data.ts'));
       for (const key of keys) paths.push(join(domain, group, 'skills', key + '.data.ts'));
     }
-    assert.equal(paths.length, 19);
+    assert.equal(paths.length, 18);
     for (const path of paths) {
       assert.ok(existsSync(path), path);
       const source = read(path);
@@ -89,7 +88,7 @@ describe('Data taxonomy source contracts', () => {
       }
     }
     visit(taxonomy);
-    assert.equal([...seen.values()].filter(path => path.startsWith(domain)).length, 19);
+    assert.equal([...seen.values()].filter(path => path.startsWith(domain)).length, 18);
   });
 
   it('keeps domain, group and skill exports at their own collection levels', () => {
@@ -108,7 +107,7 @@ describe('Data taxonomy source contracts', () => {
     }
   });
 
-  it('links all 15 implemented Skills from the canonical taxonomy', () => {
+  it('links all 14 implemented Skills from the canonical taxonomy', () => {
     assertTaxonomyCodeStructure('data', expected);
   });
 });
