@@ -33,4 +33,5 @@ export const by7_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 7",
     uk: "Ділення — ÷ 7",
   },
+  description: { methodological: "Division by seven draws on multiples of seven and inverse multiplication facts. The relevant quotient is the value that reproduces the dividend when multiplied by seven." },
 });

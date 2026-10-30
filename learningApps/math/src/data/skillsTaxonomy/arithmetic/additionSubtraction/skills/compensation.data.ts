@@ -33,4 +33,5 @@ export const compensation_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Kompensacja",
     uk: "Додавання та віднімання — Компенсація",
   },
+  description: { methodological: "Compensation adjusts one operand to simplify mental calculation and then offsets that change to preserve the result. For 39 + 8, compute 40 + 8 = 48 and subtract the extra one." },
 });

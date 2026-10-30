@@ -33,4 +33,5 @@ export const forward100_Skill_Data = buildSkillConfig({
     pl: "Liczenie w przód i wstecz do 100",
     uk: "Лічба вперед і назад у межах 100",
   },
+  description: { methodological: "Move forward or backward by one from any point within the hundred range. Crossing a ten boundary preserves the succession of neighboring numbers without restarting from one." },
 });

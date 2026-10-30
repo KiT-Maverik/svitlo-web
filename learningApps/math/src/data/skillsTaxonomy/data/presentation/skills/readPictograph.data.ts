@@ -33,4 +33,5 @@ export const readPictograph_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie piktogramu z jednym symbolem na obiekt",
     uk: "Читання піктограми «один символ — один об’єкт»",
   },
+  description: { methodological: "In a pictograph where one symbol represents one object, frequencies are encoded by the count of symbols. Reading it requires the key, category labels, and number of symbols." },
 });

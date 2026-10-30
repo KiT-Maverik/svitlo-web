@@ -35,4 +35,5 @@ export const conditions_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Аналіз умови задачі",
   },
   skillIds: conditions_Skills_Ids,
+  description: { methodological: "Separating the question, known data, and implicit assumptions in a word problem before choosing an arithmetic operation." },
 });

@@ -33,4 +33,5 @@ export const certainImpossible_Skill_Data = buildSkillConfig({
     pl: "Rozróżnianie zdarzeń pewnych i niemożliwych",
     uk: "Розрізнення достовірних і неможливих подій",
   },
+  description: { methodological: "For a specified random experiment, a certain event includes every possible outcome and an impossible event includes none. Other possible events can have different probabilities; possibility does not imply a 50% chance." },
 });

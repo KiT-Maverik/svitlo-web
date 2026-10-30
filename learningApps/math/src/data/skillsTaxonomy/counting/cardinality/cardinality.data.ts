@@ -35,4 +35,5 @@ export const cardinality_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Кількість",
   },
   skillIds: cardinality_Skills_Ids,
+  description: { methodological: "Understanding number as the cardinality of a set, including the empty set, and methods for determining and comparing the sizes of sets." },
 });

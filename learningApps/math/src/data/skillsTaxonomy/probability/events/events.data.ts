@@ -35,4 +35,5 @@ export const events_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Випадкові події",
   },
   skillIds: events_Skills_Ids,
+  description: { methodological: "Events as subsets of outcomes of a random experiment, identifying possible and impossible occurrences, and comparing chances under specified conditions. Mathematical probability is not restricted to qualitative estimates." },
 });

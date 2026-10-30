@@ -33,4 +33,5 @@ export const createProblem_Skill_Data = buildSkillConfig({
     pl: "Układanie zadania tekstowego na podstawie modelu",
     uk: "Складання задачі за моделлю",
   },
+  description: { methodological: "A constructed word problem must match the given mathematical model in its quantities, operations, known information, and unknowns. One expression can support several suitable story contexts, but each must preserve the underlying mathematical structure." },
 });

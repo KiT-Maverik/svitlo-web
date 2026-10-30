@@ -33,4 +33,5 @@ export const findMissingData_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie brakujących danych",
     uk: "Виявлення недостатніх даних",
   },
+  description: { methodological: "A problem has insufficient data when its stated conditions permit different answers to the same question. The missing quantity, relationship, or constraint needed for a unique answer must be identified rather than replaced with an arbitrary assumption." },
 });

@@ -33,4 +33,5 @@ export const identify2dShapes_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie podstawowych figur płaskich",
     uk: "Розпізнавання основних плоских фігур",
   },
+  description: { methodological: "A figure's geometric class depends on its properties, not its size, color, or orientation in a drawing. A rotated square remains a square and is a special case of a rectangle." },
 });

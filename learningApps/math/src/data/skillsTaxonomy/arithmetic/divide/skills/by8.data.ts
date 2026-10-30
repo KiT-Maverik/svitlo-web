@@ -33,4 +33,5 @@ export const by8_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 8",
     uk: "Ділення — ÷ 8",
   },
+  description: { methodological: "Divide by eight using the corresponding multiplication-by-eight fact or a model of equal groups. Apply the relationship to different division facts, not only a single memorized example." },
 });

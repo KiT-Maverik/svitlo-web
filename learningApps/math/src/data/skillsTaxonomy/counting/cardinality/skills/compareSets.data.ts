@@ -33,4 +33,5 @@ export const compareSets_Skill_Data = buildSkillConfig({
     pl: "Porównywanie zbiorów przez dobieranie w pary lub liczenie",
     uk: "Порівняння множин зіставленням або підрахунком",
   },
+  description: { methodological: "Compare set cardinalities through one-to-one matching or by counting each set. Object size, shape, and spatial position do not determine which set has more members." },
 });

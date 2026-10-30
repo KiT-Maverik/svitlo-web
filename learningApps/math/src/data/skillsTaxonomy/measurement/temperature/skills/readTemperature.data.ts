@@ -33,4 +33,5 @@ export const readTemperature_Skill_Data = buildSkillConfig({
     "pl": "Odczytywanie temperatur nieujemnych na termometrze",
     "uk": "Зчитування невід’ємної температури за термометром"
   },
+  description: { methodological: "A temperature scale relates numerical marks to temperature values in specified units, such as degrees Celsius. Reading intermediate divisions relies on the scale and must include the measurement unit." },
 });

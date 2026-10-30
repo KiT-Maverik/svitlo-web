@@ -33,4 +33,5 @@ export const multipleSolutionStrategies_Skill_Data = buildSkillConfig({
     pl: "Porównywanie strategii rozwiązania",
     uk: "Порівняння способів розв’язання",
   },
+  description: { methodological: "Different algorithms or models can reach the same correct answer. Comparing strategies requires mathematical validity, justification of each step, computational complexity, and the conditions under which each method applies." },
 });

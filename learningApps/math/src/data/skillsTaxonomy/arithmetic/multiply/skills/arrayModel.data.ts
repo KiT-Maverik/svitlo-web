@@ -33,4 +33,5 @@ export const arrayModel_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Model tablicowy",
     uk: "Множення — Прямокутний масив",
   },
+  description: { methodological: "A rectangular array with the same number of elements in each row models the product of row count and elements per row. Interchanging row and column roles preserves cardinality and demonstrates multiplication commutativity." },
 });

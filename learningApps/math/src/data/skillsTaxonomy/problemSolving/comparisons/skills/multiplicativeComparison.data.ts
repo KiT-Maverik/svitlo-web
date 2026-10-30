@@ -33,4 +33,5 @@ export const multiplicativeComparison_Skill_Data = buildSkillConfig({
     pl: "Rozwiązywanie zadań na porównanie ilorazowe",
     uk: "Розв’язування задач на кратне порівняння",
   },
+  description: { methodological: "Multiplicative comparison finds the ratio between two positive quantities of the same dimension, not their difference. 'How many times as much' expresses a scale factor rather than an additive comparison." },
 });

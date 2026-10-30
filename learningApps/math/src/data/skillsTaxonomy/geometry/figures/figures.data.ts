@@ -35,4 +35,5 @@ export const figures_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Плоскі фігури",
   },
   skillIds: figures_Skills_Ids,
+  description: { methodological: "Properties of polygons and other plane figures that remain independent of scale or orientation, and composing shapes from parts." },
 });

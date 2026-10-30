@@ -33,4 +33,5 @@ export const kilogramGram_Skill_Data = buildSkillConfig({
     "pl": "Zależność między kilogramami i gramami",
     "uk": "Співвідношення кілограмів і грамів"
   },
+  description: { methodological: "One kilogram equals 1,000 grams. Changing between these mass units alters the numerical measure but not the physical mass." },
 });

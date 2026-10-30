@@ -33,4 +33,5 @@ export const oneAsFraction_Skill_Data = buildSkillConfig({
     pl: "Przedstawianie całości jako n/n",
     uk: "Представлення одного цілого як n/n",
   },
+  description: { methodological: "For nonzero n, n/n equals one whole: n parts of size 1/n reconstruct the unit. This is true independently of the partition or visual model." },
 });

@@ -33,4 +33,5 @@ export const basicCardinality_Skill_Data = buildSkillConfig({
     pl: "Określanie liczby elementów zbioru",
     uk: "Визначення кількості предметів у множині",
   },
+  description: { methodological: "The final number word in a one-to-one count states the cardinality of the entire set. Neither object arrangement nor counting order changes that cardinality." },
 });

@@ -35,4 +35,5 @@ export const representations_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Математичні представлення",
   },
   skillIds: representations_Skills_Ids,
+  description: { methodological: "Translating between concrete depictions, diagrams, verbal rules, and symbolic notation while preserving mathematical meaning." },
 });

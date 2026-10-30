@@ -33,4 +33,5 @@ export const read24HourClock_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie czasu w formacie 24-godzinnym",
     uk: "Зчитування часу у 24-годинному форматі",
   },
+  description: { methodological: "The 24-hour format identifies the hour within a day without AM or PM; 00:00 denotes the start of the day and 12:00 denotes noon. Clock time must be distinguished from duration, and conventions for expressing the end of a day must be considered." },
 });

@@ -35,4 +35,5 @@ export const numberLine_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Числова пряма",
   },
   skillIds: numberLine_Skills_Ids,
+  description: { methodological: "Numbers as points on an ordered scale with equal intervals; location, adjacency, and distance depend on the scale used." },
 });

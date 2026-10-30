@@ -33,4 +33,5 @@ export const eventDuration_Skill_Data = buildSkillConfig({
     pl: "Obliczanie czasu, który upłynął",
     uk: "Обчислення тривалості події",
   },
+  description: { methodological: "Duration is the interval between an event's start and finish, not either individual clock reading. It is found by consistently subtracting time instants and, where needed, accounting for hour, day, or calendar boundaries." },
 });

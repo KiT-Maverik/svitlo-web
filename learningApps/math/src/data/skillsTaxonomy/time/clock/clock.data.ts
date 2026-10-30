@@ -35,4 +35,5 @@ export const clock_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Зчитування часу з годинника",
   },
   skillIds: clock_Skills_Ids,
+  description: { methodological: "Matching clock-hand positions and digital notation to a particular instant of the day at different levels of reading precision." },
 });

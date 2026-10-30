@@ -33,4 +33,5 @@ export const hundredsTensOnes_Skill_Data = buildSkillConfig({
     pl: "Setki, dziesiątki i jedności w liczbach trzycyfrowych",
     uk: "Сотні, десятки й одиниці трицифрових чисел",
   },
+  description: { methodological: "A three-digit number has a unique standard decimal decomposition into hundreds, tens, and ones. Its digits provide coefficients of the corresponding place values; a zero indicates no units of that place." },
 });

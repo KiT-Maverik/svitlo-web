@@ -33,4 +33,5 @@ export const crossTenSubtraction_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — Przekraczanie progu dziesiątkowego",
     uk: "Віднімання — Перехід через десяток",
   },
+  description: { methodological: "When the minuend has insufficient ones, exchange one ten for ten ones without changing its value. Crossing ten also admits other equivalent strategies that preserve the difference." },
 });

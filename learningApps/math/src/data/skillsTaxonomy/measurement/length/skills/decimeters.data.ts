@@ -33,4 +33,5 @@ export const decimeters_Skill_Data = buildSkillConfig({
     "pl": "Przeliczanie decymetrów na centymetry i odwrotnie",
     "uk": "Перетворення дециметрів і сантиметрів"
   },
+  description: { methodological: "One decimeter equals ten centimeters. Converting between them multiplies or divides the numerical measure by ten while preserving the actual length; always state the unit." },
 });

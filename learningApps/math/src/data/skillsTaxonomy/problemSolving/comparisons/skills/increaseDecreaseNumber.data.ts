@@ -33,4 +33,5 @@ export const increaseDecreaseNumber_Skill_Data = buildSkillConfig({
     pl: "Zwiększanie lub zmniejszanie o daną liczbę",
     uk: "Збільшення або зменшення на задане число",
   },
+  description: { methodological: "Changing a quantity additively by a specified amount is represented by addition or subtraction according to the direction of change. An absolute increase must be distinguished from a multiplicative 'times as much' change." },
 });

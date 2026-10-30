@@ -33,4 +33,5 @@ export const estimateResult_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Szacowanie wyniku",
     uk: "Додавання та віднімання — Оцінювання результату",
   },
+  description: { methodological: "Place-value reasoning, rounding, or bounds provide an estimated order of magnitude for a result. Such estimates can reveal large errors but cannot independently establish an exact answer." },
 });

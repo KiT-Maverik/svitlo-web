@@ -35,4 +35,5 @@ export const parity_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Парність",
   },
   skillIds: parity_Skills_Ids,
+  description: { methodological: "Classifying natural numbers by whether a corresponding collection can be divided into pairs with no remainder." },
 });

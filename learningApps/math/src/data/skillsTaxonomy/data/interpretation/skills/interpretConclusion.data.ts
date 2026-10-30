@@ -33,4 +33,5 @@ export const interpretConclusion_Skill_Data = buildSkillConfig({
     pl: "Wyciąganie wniosków z danych",
     uk: "Формулювання висновків на основі даних",
   },
+  description: { methodological: "A conclusion must follow logically from the actual data values, categories, and scale. Distinguish direct observations, supported generalizations, and claims for which the data are insufficient." },
 });

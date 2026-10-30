@@ -35,4 +35,5 @@ export const perimeterArea_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Зв’язок периметра та площі",
   },
   skillIds: perimeterArea_Skills_Ids,
+  description: { methodological: "Perimeter measures the boundary and area measures the interior; the same value for one does not uniquely determine the other." },
 });

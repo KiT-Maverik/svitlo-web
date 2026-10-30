@@ -35,4 +35,5 @@ export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Віднімання",
   },
   skillIds: subtraction_Skills_Ids,
+  description: { methodological: "Removing a part, finding a difference, regrouping place values, and verifying subtraction calculations." },
 });

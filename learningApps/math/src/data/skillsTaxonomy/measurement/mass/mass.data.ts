@@ -35,4 +35,5 @@ export const mass_SkillGroup_Data = buildSkillGroupConfig({
     "uk": "Маса"
   },
   skillIds: mass_Skills_Ids,
+  description: { methodological: "Mass as a physical quantity, its comparison with balances, reading its numerical value from instruments, and relationships among established units of mass. Mass is not identical to weight as a force." },
 });

@@ -35,4 +35,5 @@ export const comparisons_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Задачі на порівняння",
   },
   skillIds: comparisons_Skills_Ids,
+  description: { methodological: "Distinguishing additive comparison ('how many more or fewer') from multiplicative comparison ('how many times as many') and from problems describing a change in a quantity." },
 });

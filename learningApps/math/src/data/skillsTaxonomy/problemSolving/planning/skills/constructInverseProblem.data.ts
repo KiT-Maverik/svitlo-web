@@ -1,0 +1,37 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { planning_Skills_Ids } from './index.ids';
+
+export const constructInverseProblem_Skill_Data = buildSkillConfig({
+  id: planning_Skills_Ids.constructInverseProblem,
+  name: {
+    lt: "Atvirkštinių uždavinių sudarymas",
+    lv: "Apgriezto uzdevumu veidošana",
+    et: "Pöördülesannete koostamine",
+    be: "Складаньне адваротных задач",
+    ka: "შებრუნებული ამოცანების შედგენა",
+    kk: "Кері есептерді құрастыру",
+    en: "Constructing inverse problems",
+    zh: "编写逆向问题",
+    hi: "विलोम प्रश्न बनाना",
+    es: "Crear problemas inversos",
+    ar: "صياغة المسائل العكسية",
+    fr: "Construire des problèmes inverses",
+    bn: "বিপরীত সমস্যা তৈরি করা",
+    pt: "Criar problemas inversos",
+    ur: "معکوس مسائل تشکیل دینا",
+    id: "Menyusun soal kebalikan",
+    de: "Umkehraufgaben erstellen",
+    ja: "逆問題を作る",
+    ko: "역문제 만들기",
+    tr: "Ters problemler oluşturma",
+    vi: "Lập bài toán ngược",
+    ta: "தலைகீழ் கணக்குகளை உருவாக்குதல்",
+    te: "విలోమ సమస్యలను రూపొందించడం",
+    mr: "उलट समस्या तयार करणे",
+    ms: "Membina masalah songsang",
+    he: "יצירת בעיות הפוכות",
+    pl: "Układanie zadań odwrotnych",
+    uk: "Складання обернених задач",
+  },
+  description: { methodological: "Constructing an inverse word problem changes the roles of given and unknown quantities while preserving the mathematical relationship and allowing the original situation to be recovered. The competency is formulating a valid new situation and question; subsequently solving it assesses existing arithmetic and problem-solving skills, not a required part of this skill." },
+});

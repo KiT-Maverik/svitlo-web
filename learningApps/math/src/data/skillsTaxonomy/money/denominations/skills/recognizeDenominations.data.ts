@@ -33,4 +33,5 @@ export const recognizeDenominations_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie nominałów monet i banknotów",
     uk: "Розпізнавання номіналів монет і банкнот",
   },
+  description: { methodological: "A denomination is the established monetary value of a coin or banknote in a specified currency; physical size, material, color, and printed symbols do not independently determine it. Valid denominations depend on the monetary system." },
 });

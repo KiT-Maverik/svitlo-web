@@ -35,4 +35,5 @@ export const lines_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Лінії",
   },
   skillIds: lines_Skills_Ids,
+  description: { methodological: "Points, lines, rays, segments, other line types, their components, relative positions, and graphical representations." },
 });

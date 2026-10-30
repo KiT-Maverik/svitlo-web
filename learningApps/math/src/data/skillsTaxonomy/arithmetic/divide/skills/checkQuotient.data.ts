@@ -33,4 +33,5 @@ export const checkQuotient_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Sprawdzanie wyniku",
     uk: "Ділення — Перевірка результату",
   },
+  description: { methodological: "Verify quotient and remainder using a = bq + r together with 0 <= r < b for positive b. The equation alone does not establish the correctness of canonical integer division." },
 });

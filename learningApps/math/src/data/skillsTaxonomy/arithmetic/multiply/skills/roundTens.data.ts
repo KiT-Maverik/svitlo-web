@@ -33,4 +33,5 @@ export const roundTens_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Pełne dziesiątki",
     uk: "Множення — Круглі десятки",
   },
+  description: { methodological: "A multiple of ten can be multiplied by a one-digit factor by multiplying its count of tens and restoring place-value weight. Exchanging tens for hundreds preserves the product." },
 });

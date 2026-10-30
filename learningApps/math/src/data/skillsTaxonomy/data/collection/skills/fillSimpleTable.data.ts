@@ -33,4 +33,5 @@ export const fillSimpleTable_Skill_Data = buildSkillConfig({
     pl: "Zapisywanie obserwacji w tabeli",
     uk: "Записування спостережень у таблицю",
   },
+  description: { methodological: "A table associates each recorded value with its labeled row, column, variable, category, and required unit. Its structure must preserve which observation each value describes and make later comparisons possible." },
 });

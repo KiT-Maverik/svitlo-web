@@ -35,4 +35,5 @@ export const collection_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Збирання даних",
   },
   skillIds: collection_Skills_Ids,
+  description: { methodological: "Formulating an investigation question, selecting classification attributes, counting occurrences, and recording observations." },
 });

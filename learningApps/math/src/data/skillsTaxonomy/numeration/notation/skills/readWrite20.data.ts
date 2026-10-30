@@ -33,4 +33,5 @@ export const readWrite20_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie, zapisywanie i przyporządkowywanie ilości liczbom 0–20",
     uk: "Читання, запис і співвіднесення чисел 0–20 з кількістю",
   },
+  description: { methodological: "Associate a number's spoken name, its positional numeral, and its representation as a quantity with the same value. Zero also has a numeral and a cardinal meaning; a number is distinct from its representations." },
 });

@@ -33,4 +33,5 @@ export const unknownSideFromPerimeter_Skill_Data = buildSkillConfig({
     pl: "Wyznaczanie nieznanego boku prostokąta z obwodu",
     uk: "Знаходження невідомої сторони прямокутника за периметром",
   },
+  description: { methodological: "For a rectangle, P = 2(a+b) permits recovering an unknown side from the perimeter and known other side: b = P/2 - a. The result must be positive and expressed in compatible length units." },
 });

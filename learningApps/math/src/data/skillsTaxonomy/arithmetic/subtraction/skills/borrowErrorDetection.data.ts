@@ -33,4 +33,5 @@ export const borrowErrorDetection_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — Pożyczanie · Wykrywanie błędów",
     uk: "Віднімання — Розгрупування · Виявлення помилок",
   },
+  description: { methodological: "In 52 - 28, exchanging a ten for ones changes both the ones and the count of tens. Omitting or mishandling the exchange changes the resulting difference." },
 });

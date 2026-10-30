@@ -33,4 +33,5 @@ export const estimateQuantity_Skill_Data = buildSkillConfig({
     pl: "Szacowanie i sprawdzanie ilości",
     uk: "Оцінювання й перевірка кількості",
   },
+  description: { methodological: "Cardinality estimation produces an approximate count without first enumerating every object, using grouping or extrapolation from part of a set. An exact count independently checks the estimate." },
 });

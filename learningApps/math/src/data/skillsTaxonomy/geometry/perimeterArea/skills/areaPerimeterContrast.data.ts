@@ -33,4 +33,5 @@ export const areaPerimeterContrast_Skill_Data = buildSkillConfig({
     pl: "Konstruowanie figur pokazujących różnice między obwodem a polem",
     uk: "Побудова фігур для порівняння периметра та площі",
   },
+  description: { methodological: "Equal perimeter lengths do not determine area: rectangles 1 × 6 and 2 × 5 both have perimeter 14 but areas 6 and 10. Rectangles 1 × 6 and 2 × 3 both have area 6 but different perimeters." },
 });

@@ -35,4 +35,5 @@ export const capacity_SkillGroup_Data = buildSkillGroupConfig({
     "uk": "Місткість"
   },
   skillIds: capacity_Skills_Ids,
+  description: { methodological: "The volume of liquid that a container can hold, its measurement in liters and milliliters, and comparisons of capacities." },
 });

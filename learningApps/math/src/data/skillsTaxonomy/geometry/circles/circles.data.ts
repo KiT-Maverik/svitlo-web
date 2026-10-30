@@ -35,4 +35,5 @@ export const circles_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Коло та круг",
   },
   skillIds: circles_Skills_Ids,
+  description: { methodological: "The circumference as the boundary of a disk, its center, radius and diameter, and constructing a circle at a fixed distance from its center." },
 });

@@ -33,4 +33,5 @@ export const buildBarChart_Skill_Data = buildSkillConfig({
     pl: "Tworzenie wykresu słupkowego",
     uk: "Побудова стовпчикової діаграми",
   },
+  description: { methodological: "Values from a table are represented by bar heights on a consistent numerical scale, with clear category labels and units. All bars must use the same scale to avoid misleading comparisons." },
 });

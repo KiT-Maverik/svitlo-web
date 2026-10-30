@@ -9,7 +9,7 @@ const read = (...path: string[]): string => readFileSync(join(root, ...path), 'u
 const groups = {
   conditions: ['identifyKnownUnknown', 'findExtraneousData', 'findMissingData'],
   models: ['chooseOperationAddSub', 'chooseOperationMulDiv', 'oneStepModel', 'createProblem'],
-  planning: ['twoStepPlan', 'threeStepPlan', 'inverseProblem', 'explainAnswerUnits', 'multipleSolutionStrategies'],
+  planning: ['twoStepPlan', 'threeStepPlan', 'constructInverseProblem', 'explainAnswerUnits', 'multipleSolutionStrategies'],
   comparisons: ['additiveComparison', 'increaseDecreaseNumber', 'multiplicativeComparison', 'increaseDecreaseFactor'],
   parts: ['partWholeAddsub', 'fractionsContext'],
   groups: ['correspondenceCombinations', 'equalGroups'],

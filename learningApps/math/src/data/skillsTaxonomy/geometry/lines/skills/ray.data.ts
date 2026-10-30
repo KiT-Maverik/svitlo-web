@@ -33,4 +33,5 @@ export const ray_Skill_Data = buildSkillConfig({
     pl: "Rozróżnianie półprostych, odcinków i prostych",
     uk: "Розрізнення променя, відрізка та прямої",
   },
+  description: { methodological: "A line extends indefinitely in both directions; a ray has one endpoint and extends indefinitely in one direction; a segment has two endpoints. Drawing orientation does not change these properties." },
 });

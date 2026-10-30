@@ -33,4 +33,5 @@ export const nonUnitModel_Skill_Data = buildSkillConfig({
     pl: "Modelowanie ułamków złożonych z kilku równych części",
     uk: "Моделювання дробів із кількох рівних частин",
   },
+  description: { methodological: "The fraction a/b combines a selected count a of unit parts with their size 1/b for nonzero b. All parts refer to the same whole, and the numerator may equal or exceed the denominator." },
 });

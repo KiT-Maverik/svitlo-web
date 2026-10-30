@@ -33,4 +33,5 @@ export const wholeAndEqualParts_Skill_Data = buildSkillConfig({
     pl: "Rozróżnianie całości oraz części równych i nierównych",
     uk: "Розрізнення цілого, рівних і нерівних частин",
   },
+  description: { methodological: "A fractional part is defined by dividing the same whole into parts of equal magnitude. Arbitrary pieces need not be halves; the visual form of the whole does not remove the equal-parts requirement." },
 });

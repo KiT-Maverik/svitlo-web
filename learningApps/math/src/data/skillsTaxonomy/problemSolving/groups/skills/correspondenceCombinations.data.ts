@@ -33,4 +33,5 @@ export const correspondenceCombinations_Skill_Data = buildSkillConfig({
     pl: "Liczenie kombinacji z dwóch zbiorów",
     uk: "Підрахунок комбінацій двох наборів",
   },
+  description: { methodological: "Choosing one element independently from each of two finite sets produces a number of ordered pairs equal to the product of their sizes. The enumeration must be complete and free of duplicates; using a table, tree, or list does not change the count." },
 });

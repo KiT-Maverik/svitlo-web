@@ -33,4 +33,5 @@ export const tenthsAsDivision_Skill_Data = buildSkillConfig({
     pl: "Łączenie części dziesiątych z dzieleniem przez 10",
     uk: "Зв’язок десятих частин із діленням на 10",
   },
+  description: { methodological: "A tenth results from partitioning the same whole into ten equal parts, with value 1/10 of that whole. Dividing by ten and representing the result as common or decimal fractions preserve the chosen unit." },
 });

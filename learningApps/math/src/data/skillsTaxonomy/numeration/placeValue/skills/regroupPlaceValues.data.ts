@@ -33,4 +33,5 @@ export const regroupPlaceValues_Skill_Data = buildSkillConfig({
     pl: "Przegrupowanie między rzędami",
     uk: "Перегрупування між розрядами",
   },
+  description: { methodological: "Equivalent place-value exchanges work in both directions: one hundred equals ten tens and one ten equals ten ones. The total value is preserved across different representations." },
 });

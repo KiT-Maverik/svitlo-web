@@ -33,4 +33,5 @@ export const equalGroups_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Równe grupy",
     uk: "Множення — Рівні групи",
   },
+  description: { methodological: "Multiplication relates the number of equally sized groups, the size of one group, and the total number of objects. Unequal groups cannot be represented by a single group-count-times-group-size product without another model." },
 });

@@ -33,4 +33,5 @@ export const squarePerimeter_Skill_Data = buildSkillConfig({
     pl: "Obliczanie obwodu kwadratu",
     uk: "Обчислення периметра квадрата",
   },
+  description: { methodological: "All four sides of a square are equal, so its perimeter is four times the side length, P = 4a. Perimeter is a linear magnitude distinct from area a²." },
 });

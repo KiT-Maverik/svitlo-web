@@ -33,4 +33,5 @@ export const by6_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — ÷ 6",
     uk: "Ділення — ÷ 6",
   },
+  description: { methodological: "Division by six is linked to corresponding multiplication-by-six facts. Find the quotient from a known product or an equivalent grouping without restricting competence to one example." },
 });

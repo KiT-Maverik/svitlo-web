@@ -35,4 +35,5 @@ export const probability_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Ймовірність",
   },
   groupIds: probability_SkillGroups_Ids,
+  description: { methodological: "Possible outcomes of random experiments, events and their probabilities, comparisons of chance, independence or dependence of outcomes, and random variability in repeated observations." },
 });

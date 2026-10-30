@@ -33,4 +33,5 @@ export const remainderLessDivisor_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Reszta mniejsza od dzielnika",
     uk: "Ділення — Остача менша за дільник",
   },
+  description: { methodological: "For a positive divisor b, the canonical nonnegative remainder satisfies 0 <= r < b. A remainder at least as large as the divisor means another complete group is still possible." },
 });

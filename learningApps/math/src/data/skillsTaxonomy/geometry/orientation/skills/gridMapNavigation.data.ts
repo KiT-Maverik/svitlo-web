@@ -33,4 +33,5 @@ export const gridMapNavigation_Skill_Data = buildSkillConfig({
     pl: "Czytanie i rysowanie prostych planów na siatce",
     uk: "Читання та складання простих планів на сітці",
   },
+  description: { methodological: "A grid defines a discrete spatial system with consistent directions or coordinates. Plans, paths, and end positions must follow the same reference conventions; cell size and orientation affect interpretation." },
 });

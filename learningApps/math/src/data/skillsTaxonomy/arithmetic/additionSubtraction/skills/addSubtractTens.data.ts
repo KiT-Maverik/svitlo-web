@@ -33,4 +33,5 @@ export const addSubtractTens_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Pełne dziesiątki",
     uk: "Додавання та віднімання — Круглі десятки",
   },
+  description: { methodological: "Multiples of ten can be added or subtracted as quantities of the corresponding place-value unit. Ordinary operation properties still apply, but the decimal place weight must be preserved." },
 });

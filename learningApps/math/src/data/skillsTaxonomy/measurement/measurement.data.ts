@@ -35,4 +35,5 @@ export const measurement_SkillDomain_Data = buildSkillDomainConfig({
     "uk": "Вимірювання"
   },
   groupIds: measurement_SkillGroups_Ids,
+  description: { methodological: "Measurement of physical quantities by comparison with units, instruments, and scales, covering length, mass, capacity, temperature, and consistent use of units." },
 });

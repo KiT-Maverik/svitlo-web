@@ -33,4 +33,5 @@ export const centnerKilogram_Skill_Data = buildSkillConfig({
     "pl": "Stosowanie kwintali i kilogramów w zadaniach",
     "uk": "Застосування співвідношення центнерів і кілограмів у задачах"
   },
+  description: { methodological: "Where the metric centner is used, one centner equals 100 kilograms, while one metric tonne equals 1,000 kilograms. The centner is context-dependent, not universal across countries or curricula." },
 });

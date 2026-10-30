@@ -33,4 +33,5 @@ export const increaseDecreaseFactor_Skill_Data = buildSkillConfig({
     pl: "Zwiększanie lub zmniejszanie daną liczbę razy",
     uk: "Збільшення або зменшення в задану кількість разів",
   },
+  description: { methodological: "Multiplicative change is modeled by multiplying by a positive factor or using the corresponding inverse operation. 'Increase by a factor of k' differs from 'increase by k units', and the result must be meaningful in context." },
 });

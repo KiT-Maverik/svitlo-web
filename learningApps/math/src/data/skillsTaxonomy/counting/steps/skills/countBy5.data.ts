@@ -33,4 +33,5 @@ export const countBy5_Skill_Data = buildSkillConfig({
     pl: "Liczenie co 5",
     uk: "Лічба з кроком 5",
   },
+  description: { methodological: "Counting by fives is repeated addition of equal groups containing five elements. The number of groups and total elements are related independently of visual representation." },
 });

@@ -33,4 +33,5 @@ export const roundToHundred_Skill_Data = buildSkillConfig({
     pl: "Zaokrąglanie do najbliższej setki",
     uk: "Округлення до найближчої сотні",
   },
+  description: { methodological: "Rounding to the nearest hundred replaces a value with the closest multiple of one hundred. Rounding error is the difference between exact and rounded values; equidistant cases need an explicit rounding rule." },
 });

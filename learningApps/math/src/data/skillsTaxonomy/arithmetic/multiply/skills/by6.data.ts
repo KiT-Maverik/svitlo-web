@@ -33,4 +33,5 @@ export const by6_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 6",
     uk: "Множення — × 6",
   },
+  description: { methodological: "Multiplication facts with factor six give multiples of six and may be derived from known multiples of five plus one more equal group or other equivalent decompositions. Strategy does not change product identity." },
 });

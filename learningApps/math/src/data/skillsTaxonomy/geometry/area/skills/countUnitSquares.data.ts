@@ -33,4 +33,5 @@ export const countUnitSquares_Skill_Data = buildSkillConfig({
     pl: "Wyznaczanie pola przez liczenie kwadratów jednostkowych",
     uk: "Визначення площі підрахунком одиничних квадратів",
   },
+  description: { methodological: "When a plane region consists of nonoverlapping unit squares, its area is their count. Distinguish the number of complete squares from side lengths, and account for fractional square units when needed." },
 });

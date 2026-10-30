@@ -33,4 +33,5 @@ export const threeStepPlan_Skill_Data = buildSkillConfig({
     pl: "Rozwiązywanie zadania trzyetapowego",
     uk: "Розв’язування задачі на три дії",
   },
+  description: { methodological: "A three-step solution successively determines intermediate results required to find the primary unknown. Every operation must follow from the problem's conditions and each result must retain its contextual meaning." },
 });

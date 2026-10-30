@@ -33,4 +33,5 @@ export const unknownDividend_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie nieznanej dzielnej",
     uk: "Знаходження невідомого діленого",
   },
+  description: { methodological: "For exact division, the dividend equals the product of divisor and quotient. Finding an unknown dividend uses the inverse relation with multiplication and is checked against the original equality." },
 });

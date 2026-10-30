@@ -35,4 +35,5 @@ export const solids_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Просторові тіла",
   },
   skillIds: solids_Skills_Ids,
+  description: { methodological: "Distinguishing three-dimensional solids from flat depictions and identifying their surfaces, faces, edges, and vertices." },
 });

@@ -35,4 +35,5 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Поєднання додавання та віднімання",
   },
   skillIds: additionSubtraction_Skills_Ids,
+  description: { methodological: "The relationship between inverse addition and subtraction, part-whole relationships, and flexible methods for mental calculation and self-checking." },
 });

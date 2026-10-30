@@ -33,4 +33,5 @@ export const findCounterexample_Skill_Data = buildSkillConfig({
     pl: "Znajdowanie kontrprzykładu obalającego fałszywe uogólnienie",
     uk: "Пошук контрприкладу до хибного узагальнення",
   },
+  description: { methodological: "One valid case satisfying the premises but contradicting the conclusion is enough to refute a universal mathematical claim. A true counterexample must be distinguished from an example that merely fails to support the claim." },
 });

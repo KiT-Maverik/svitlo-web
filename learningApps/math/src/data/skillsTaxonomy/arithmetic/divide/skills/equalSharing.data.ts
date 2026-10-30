@@ -33,4 +33,5 @@ export const equalSharing_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Równy podział",
     uk: "Ділення — Рівний розподіл",
   },
+  description: { methodological: "Partitive division determines the size of each group from the total and the number of equal groups. Nonzero remainders and integer divisibility may require explicit qualification of the mathematical model." },
 });

@@ -33,4 +33,5 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — 2-cyfrowe×1-cyfrowe",
     uk: "Множення — 2-цифрові×1-цифрові",
   },
+  description: { methodological: "Decompose the two-digit factor into tens and ones, distribute multiplication over the resulting sum, and combine partial products. Each component must retain its original place-value weight." },
 });

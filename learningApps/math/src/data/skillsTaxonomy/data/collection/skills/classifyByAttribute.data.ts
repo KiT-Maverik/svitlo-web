@@ -33,4 +33,5 @@ export const classifyByAttribute_Skill_Data = buildSkillConfig({
     pl: "Klasyfikowanie obiektów według cech",
     uk: "Класифікація об’єктів за ознаками",
   },
+  description: { methodological: "The same objects can be classified by a selected attribute, such as color or shape; using two attributes produces intersecting subcategories." },
 });

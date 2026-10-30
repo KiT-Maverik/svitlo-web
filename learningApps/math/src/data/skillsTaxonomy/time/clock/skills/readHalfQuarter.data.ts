@@ -33,4 +33,5 @@ export const readHalfQuarter_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie połówek i kwadransów",
     uk: "Зчитування половин і чвертей години",
   },
+  description: { methodological: "Half an hour is 30 minutes and a quarter of an hour is 15 minutes. On an analog clock, the minute hand indicates the fraction of the hour while the hour hand advances toward the next hour." },
 });

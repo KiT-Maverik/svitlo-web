@@ -33,4 +33,5 @@ export const compareSameNumerator_Skill_Data = buildSkillConfig({
     pl: "Porównywanie ułamków o jednakowych licznikach",
     uk: "Порівняння дробів з однаковими чисельниками",
   },
+  description: { methodological: "Given the same positive numerator and unit whole, a larger denominator means smaller equal parts and therefore a smaller fraction. Comparing parts of different wholes by notation alone is invalid without a common unit." },
 });

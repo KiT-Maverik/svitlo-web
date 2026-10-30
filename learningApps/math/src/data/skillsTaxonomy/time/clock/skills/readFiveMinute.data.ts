@@ -33,4 +33,5 @@ export const readFiveMinute_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie czasu z dokładnością do pięciu minut",
     uk: "Зчитування часу з точністю до п’яти хвилин",
   },
+  description: { methodological: "Each numbered hour interval on a standard twelve-hour clock face represents five minutes. Reading the time combines the minute scale with the hour hand's position, without confusing an hour numeral with a minute count." },
 });

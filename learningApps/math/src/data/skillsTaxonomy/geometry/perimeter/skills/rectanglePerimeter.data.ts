@@ -33,4 +33,5 @@ export const rectanglePerimeter_Skill_Data = buildSkillConfig({
     pl: "Obliczanie obwodu prostokąta",
     uk: "Обчислення периметра прямокутника",
   },
+  description: { methodological: "Opposite sides of a rectangle are equal, so a rectangle with side lengths a and b has perimeter P = 2(a+b). This abbreviates the sum of four side lengths, not the area." },
 });

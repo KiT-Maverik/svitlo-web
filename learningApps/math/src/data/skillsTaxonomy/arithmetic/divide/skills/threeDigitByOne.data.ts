@@ -33,4 +33,5 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — 3-cyfrowe÷1-cyfrowe",
     uk: "Ділення — 3-цифрові÷1-цифрові",
   },
+  description: { methodological: "Decomposing a three-digit dividend into convenient place-value or additive parts allows computing partial quotients and reconstructing the total. Each division must be valid and retain the corresponding place-value weight." },
 });

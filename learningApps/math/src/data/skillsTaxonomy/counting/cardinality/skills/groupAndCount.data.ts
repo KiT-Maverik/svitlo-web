@@ -33,4 +33,5 @@ export const groupAndCount_Skill_Data = buildSkillConfig({
     pl: "Liczenie przedmiotów w grupach po dziesięć lub sto",
     uk: "Лічба предметів групами по десятках або сотнях",
   },
+  description: { methodological: "Determine a large set's cardinality by forming complete groups of ten or one hundred and recording any incomplete group separately. The total is the sum of all grouped and ungrouped elements." },
 });

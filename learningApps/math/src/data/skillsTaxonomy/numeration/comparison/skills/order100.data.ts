@@ -33,4 +33,5 @@ export const order100_Skill_Data = buildSkillConfig({
     pl: "Porównywanie i porządkowanie liczb dwucyfrowych",
     uk: "Порівняння й упорядкування двоцифрових чисел",
   },
+  description: { methodological: "Compare the most significant decimal place first and move to the next place only when values match. For two-digit numbers the tens place takes precedence over the ones." },
 });

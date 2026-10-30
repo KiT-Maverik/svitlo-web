@@ -33,4 +33,5 @@ export const collectCounts_Skill_Data = buildSkillConfig({
     pl: "Zliczanie liczebności kategorii",
     uk: "Підрахунок частот категорій",
   },
+  description: { methodological: "A category's frequency is the number of observations assigned to it. Counting must be consistent and unambiguous, and frequencies of exhaustive, nonoverlapping categories must sum to the total number of observations." },
 });

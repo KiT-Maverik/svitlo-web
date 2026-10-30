@@ -33,4 +33,5 @@ export const missingInformation_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie brakujących informacji",
     uk: "Визначення відсутньої інформації",
   },
+  description: { methodological: "Data sufficiency is relative to a particular question: a necessary category, value, unit, time range, or sample information may be missing. Gaps must not be filled with arbitrary assumptions or invented numbers." },
 });

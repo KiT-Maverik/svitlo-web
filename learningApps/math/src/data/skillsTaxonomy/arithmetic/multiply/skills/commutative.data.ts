@@ -33,4 +33,5 @@ export const commutative_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Przemienność",
     uk: "Множення — Переставний закон",
   },
+  description: { methodological: "Multiplication is commutative: a × b = b × a. Reorienting a rectangular array or establishing another one-to-one mapping can show why exchanging factors does not change the product." },
 });

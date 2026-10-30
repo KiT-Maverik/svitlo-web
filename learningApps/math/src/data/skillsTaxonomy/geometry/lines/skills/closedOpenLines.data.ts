@@ -33,4 +33,5 @@ export const closedOpenLines_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie linii zamkniętych i otwartych",
     uk: "Розпізнавання замкнених і незамкнених ліній",
   },
+  description: { methodological: "A closed line has no distinct start and end points, whereas an open line does not close into a loop. Not every closed line is polygonal, and a line is not the region it encloses." },
 });

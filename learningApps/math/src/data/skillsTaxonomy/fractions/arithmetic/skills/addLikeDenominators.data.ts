@@ -33,4 +33,5 @@ export const addLikeDenominators_Skill_Data = buildSkillConfig({
     pl: "Dodawanie ułamków o jednakowych mianownikach w obrębie całości",
     uk: "Додавання дробів з однаковими знаменниками в межах одного цілого",
   },
+  description: { methodological: "To add fractions with equal nonzero denominators, add the counts of like unit parts: a/b + c/b = (a+c)/b. The rule still holds when the sum exceeds one, although the Skill's examples stay within one whole." },
 });

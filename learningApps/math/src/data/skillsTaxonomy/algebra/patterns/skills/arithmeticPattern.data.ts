@@ -33,4 +33,5 @@ export const arithmeticPattern_Skill_Data = buildSkillConfig({
     pl: "Kontynuowanie ciągów liczbowych o stałym kroku",
     uk: "Продовження числової закономірності зі сталим кроком",
   },
+  description: { methodological: "A number sequence such as 4, 7, 10, 13 has a constant increment of three; extend it by repeatedly applying the same step to the preceding term." },
 });

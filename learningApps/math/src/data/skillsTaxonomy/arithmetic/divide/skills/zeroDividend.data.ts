@@ -33,4 +33,5 @@ export const zeroDividend_Skill_Data = buildSkillConfig({
     pl: "Dzielenie — Dzielna Zero",
     uk: "Ділення — Нульове ділене",
   },
+  description: { methodological: "Zero divided by a nonzero number is zero, because that divisor multiplied by zero gives zero. Distinguish a zero dividend from the undefined operation of division by zero." },
 });

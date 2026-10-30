@@ -35,4 +35,5 @@ export const multiply_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Множення",
   },
   skillIds: multiply_Skills_Ids,
+  description: { methodological: "Products as equal groups or rectangular arrays, multiplication facts and properties, and place-value-based computation methods." },
 });

@@ -33,4 +33,5 @@ export const measureCentimeters_Skill_Data = buildSkillConfig({
     "pl": "Mierzenie i rysowanie odcinków w centymetrach",
     "uk": "Вимірювання й креслення відрізків у сантиметрах"
   },
+  description: { methodological: "A segment's length is the number of centimeter intervals between endpoints, not the number of printed labels. Constructing a segment requires aligning endpoints with the chosen zero or other reference mark." },
 });

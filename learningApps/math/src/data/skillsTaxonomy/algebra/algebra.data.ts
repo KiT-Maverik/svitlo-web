@@ -35,4 +35,5 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Алгебра",
   },
   groupIds: algebra_SkillGroups_Ids,
+  description: { methodological: "Mathematical expressions, equalities, inequalities, variables and unknowns, patterns, generalizations, and symbolic descriptions of relationships. The scope is not constrained to a particular age, numerical range, or notation." },
 });

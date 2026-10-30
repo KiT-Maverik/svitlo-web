@@ -33,4 +33,5 @@ export const radiusDiameter_Skill_Data = buildSkillConfig({
     pl: "Relacje między środkiem, promieniem a średnicą",
     uk: "Зв’язок центра, радіуса та діаметра",
   },
+  description: { methodological: "A circle's center determines its constant distance to every point on the circle; a radius connects center to circle, and a diameter passes through the center to join two circle points. Diameter length is twice radius." },
 });

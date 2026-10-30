@@ -33,4 +33,5 @@ export const equalGroups_Skill_Data = buildSkillConfig({
     pl: "Rozwiązywanie zadań o równych grupach",
     uk: "Розв’язування задач на однакові групи",
   },
+  description: { methodological: "The total number of objects in equal groups is the number of groups multiplied by the size of each group. Any unknown one of the three related quantities can be obtained from the other two by the appropriate inverse operation when division is valid." },
 });

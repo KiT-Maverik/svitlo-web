@@ -33,4 +33,5 @@ export const scaledChart_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie wykresu ze skalą",
     uk: "Читання діаграми з масштабом",
   },
+  description: { methodological: "In scaled pictographs and charts, one mark may represent several items according to the key. To recover a count, multiply the number of marks by the units per mark rather than merely counting marks." },
 });

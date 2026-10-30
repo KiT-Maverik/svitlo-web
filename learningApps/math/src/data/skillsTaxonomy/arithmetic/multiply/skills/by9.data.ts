@@ -33,4 +33,5 @@ export const by9_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 9",
     uk: "Множення — × 9",
   },
+  description: { methodological: "Multiples of nine can be computed from nine equal groups or the relation 9a = 10a - a. Different valid strategies produce the same product without prescribing a single procedure." },
 });

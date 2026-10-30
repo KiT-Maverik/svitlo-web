@@ -33,4 +33,5 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — Pełne setki",
     uk: "Множення — Круглі сотні",
   },
+  description: { methodological: "A multiple of one hundred represents a count of complete hundreds. Multiplication by a one-digit factor changes that count while respecting the factor of one hundred, not merely manipulating digits." },
 });

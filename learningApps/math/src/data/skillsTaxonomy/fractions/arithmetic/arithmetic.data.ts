@@ -35,4 +35,5 @@ export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Обчислення з дробами",
   },
   skillIds: arithmetic_Skills_Ids,
+  description: { methodological: "Changing the number of equal parts of the same whole through addition or subtraction with a common denominator." },
 });

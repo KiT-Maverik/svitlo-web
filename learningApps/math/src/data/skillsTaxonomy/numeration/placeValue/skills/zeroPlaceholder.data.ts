@@ -33,4 +33,5 @@ export const zeroPlaceholder_Skill_Data = buildSkillConfig({
     pl: "Zero jako znak pustej pozycji",
     uk: "Нуль як позначення відсутнього розряду",
   },
+  description: { methodological: "Zero in positional notation can signify no units at a particular place while preserving the place values of neighboring digits. Omitting that position may produce a different number." },
 });

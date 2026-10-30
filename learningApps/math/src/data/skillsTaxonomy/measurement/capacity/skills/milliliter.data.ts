@@ -33,4 +33,5 @@ export const milliliter_Skill_Data = buildSkillConfig({
     "pl": "Zależność między mililitrami i litrami",
     "uk": "Співвідношення мілілітрів і літрів"
   },
+  description: { methodological: "One liter equals 1,000 milliliters. Different numerical unit representations can express the same volume or capacity; conversion must preserve the factor of one thousand." },
 });

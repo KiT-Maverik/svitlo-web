@@ -33,4 +33,5 @@ export const classifyAndJustify_Skill_Data = buildSkillConfig({
     pl: "Klasyfikowanie obiektów lub liczb według reguły i uzasadnianie wyboru",
     uk: "Класифікація об’єктів або чисел за правилом з обґрунтуванням вибору",
   },
+  description: { methodological: "Only numbers divisible by three may belong to a specified group; membership must be justified by the mathematical classification rule, not by superficial similarities of notation." },
 });

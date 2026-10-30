@@ -33,4 +33,5 @@ export const compositeArea_Skill_Data = buildSkillConfig({
     pl: "Obliczanie pola figury złożonej z prostokątów",
     uk: "Обчислення площі складеної прямокутної фігури",
   },
+  description: { methodological: "Area is additive for nonoverlapping regions: a compound figure may be partitioned into rectangles whose areas sum to the original. The partition must cover the figure without gaps or double-counted overlaps." },
 });

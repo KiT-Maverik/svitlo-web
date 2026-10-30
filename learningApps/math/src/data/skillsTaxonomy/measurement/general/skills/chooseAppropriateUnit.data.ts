@@ -33,4 +33,5 @@ export const chooseAppropriateUnit_Skill_Data = buildSkillConfig({
     "pl": "Dobieranie jednostek długości, masy lub pojemności",
     "uk": "Вибір доречних одиниць довжини, маси чи місткості"
   },
+  description: { methodological: "Choose a measurement unit based on the physical quantity, size of the object, and needed precision. The choice must be justified without mixing dimensions or copying a conventional example uncritically." },
 });

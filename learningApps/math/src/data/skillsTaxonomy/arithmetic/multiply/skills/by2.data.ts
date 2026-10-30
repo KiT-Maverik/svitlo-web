@@ -33,4 +33,5 @@ export const by2_Skill_Data = buildSkillConfig({
     pl: "Mnożenie — × 2",
     uk: "Множення — × 2",
   },
+  description: { methodological: "Multiplication by two is doubling: a × 2 = a + a. Equal groups and repeated addition support understanding without making any single representation mandatory." },
 });
