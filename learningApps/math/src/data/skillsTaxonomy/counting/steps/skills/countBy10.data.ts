@@ -53,7 +53,7 @@ export const countBy10_Skill_Data = buildSkillConfig({
       vi: "Mỗi bước cộng mười, chữ số hàng đơn vị giữ nguyên. Khi qua một trăm, mười chục tạo thành một trăm.",
       ta: "ஒவ்வொரு படியிலும் பத்தைக் கூட்டும்போது ஒன்றுகளின் இலக்கம் மாறாது. நூறைக் கடக்கும்போது பத்து பத்துகள் ஒரு நூறாகும்.",
       te: "ప్రతి అడుగులో పది కలిపితే ఒకట్ల స్థానం మారదు. వంద దాటేటప్పుడు పది పదులు ఒక వంద అవుతాయి.",
-      mr: "प्रत्येक टप्प्यावर दहा मिळवा; एककांचा अंक तसाच राहतो. शंभर ओलांडताना दहा दशकांचा एक शतक होतो.",
+      mr: "प्रत्येक टप्प्यावर दहा मिळवा; एककांचा अंक तसाच राहतो. शंभर ओलांडताना दहा दहाचे गट मिळून शंभर होतात.",
       ms: "Tambah sepuluh setiap langkah sementara digit sa tetap sama. Apabila melepasi seratus, sepuluh puluh menjadi satu ratus.",
       he: "הוסיפו עשר בכל צעד; ספרת האחדות נשארת קבועה. במעבר למאה, עשר עשרות יוצרות מאה אחת.",
       pl: "Dodawaj po dziesięć, a jedności pozostaną takie same. Przy przejściu przez setkę dziesięć dziesiątek tworzy jedną setkę.",

@@ -59,7 +59,7 @@ export const countBy5_Skill_Data = buildSkillConfig({
       pl: "Dodawaj po pięć, aby policzyć równe grupy po pięć przedmiotów i znaleźć łączną liczbę.",
       uk: "Щоразу додавай п’ять, щоб порахувати рівні групи по п’ять предметів та знайти їх загальну кількість.",
       lt: "Kaskart pridėk penkis, kad suskaičiuotum grupes po penkis daiktus ir rastum bendrą kiekį.",
-      lv: "Katrā solī pieskaiti pieci, lai saskaitītu grupas pa pieciem priekšmetiem un atrastu kopskaitu.",
+      lv: "Katrā solī pieskaiti piecus, lai saskaitītu grupas pa pieciem priekšmetiem un atrastu kopskaitu.",
       et: "Lisa igal sammul viis, et loendada viiest esemest koosnevaid rühmi ja leida koguarv.",
       be: "Штораз дадавай пяць, каб палічыць групы па пяць прадметаў і знайсьці агульную колькасьць.",
       ka: "ყოველ ნაბიჯზე ხუთი დაამატე, რომ ხუთ-ხუთი საგნის ჯგუფები დათვალო და საერთო რაოდენობა იპოვო.",

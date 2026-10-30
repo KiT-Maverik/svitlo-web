@@ -59,7 +59,7 @@ export const countBy2_Skill_Data = buildSkillConfig({
       pl: "Dodawaj po dwa, aby liczyć parami. Odróżniaj liczbę par od łącznej liczby przedmiotów.",
       uk: "Щоразу додавай два й лічи парами. Розрізняй кількість пар і загальну кількість предметів.",
       lt: "Kaskart pridėk du ir skaičiuok poromis. Atskirai suprask porų skaičių ir bendrą daiktų skaičių.",
-      lv: "Katrā solī pieskaiti divi un skaiti pa pāriem. Atšķir pāru skaitu no kopējā priekšmetu skaita.",
+      lv: "Katrā solī pieskaiti divus un skaiti pa pāriem. Atšķir pāru skaitu no kopējā priekšmetu skaita.",
       et: "Lisa igal sammul kaks ja loenda paarikaupa. Erista paaride arvu esemete koguarvust.",
       be: "Штораз дадавай два й лічы парамі. Адрозьнівай колькасьць пар ад агульнай колькасьці прадметаў.",
       ka: "ყოველ ნაბიჯზე ორი დაამატე და წყვილებად დათვალე. გაარჩიე წყვილების რაოდენობა საგნების საერთო რაოდენობისგან.",

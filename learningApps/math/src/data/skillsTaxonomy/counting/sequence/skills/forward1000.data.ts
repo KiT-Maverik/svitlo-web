@@ -56,7 +56,7 @@ export const forward1000_Skill_Data = buildSkillConfig({
       mr: "१,००० पर्यंत सलग संख्यांतील पुढील किंवा गहाळ संख्या शोधा. दहा किंवा शंभराची सीमा ओलांडतानाही प्रत्येक पाऊल एकाचेच असते.",
       ms: "Cari nombor berturutan seterusnya atau yang tertinggal hingga 1,000. Setiap langkah tetap satu, walaupun melepasi puluh atau ratus.",
       he: "מצאו את המספר העוקב הבא או החסר עד 1,000, גם במעבר בין עשרות או מאות. כל צעד הוא של אחת.",
-      pl: "Znajdź następną albo brakującą liczbę kolejną do 1000, także po przekroczeniu dziesiątki lub setki. Każdy krok wynosi jeden.",
+      pl: "Znajdź następną albo brakującą liczbę w ciągu kolejnych liczb do 1000, także po przekroczeniu dziesiątki lub setki. Każdy krok wynosi jeden.",
       uk: "Знаходь наступне чи пропущене послідовне число в межах 1000, зокрема на переходах через десятки та сотні. Крок завжди дорівнює одиниці.",
       lt: "Rask kitą arba praleistą gretimą skaičių iki 1 000, net peržengdamas dešimtis ar šimtus. Žingsnis visada lygus vienetui.",
       lv: "Atrodi nākamo vai iztrūkstošo secīgo skaitli līdz 1000, arī šķērsojot desmitus vai simtus. Solis vienmēr ir viens.",
