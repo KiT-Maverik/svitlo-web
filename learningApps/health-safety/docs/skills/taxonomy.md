@@ -20,505 +20,890 @@ Code files: 0/13 Domains · 0/42 Groups · 0/169 Skills
 
 ### Health Literacy and Care
 
+Slug: healthLiteracyAndCare
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
-Personal health decisions rely on interpreting bodily changes, credible evidence, and the division of responsibility between self-care and professional services. This domain concerns informed choices and access to care rather than the biological mechanisms of disease.
+Methodological description: Personal health decisions rely on interpreting bodily changes, credible evidence, and the division of responsibility between self-care and professional services. This domain concerns informed choices and access to care rather than the biological mechanisms of disease.
+User-friendly description: Learn to recognize health changes, use reliable information and seek appropriate care.
 
 #### Health and Risk
 
+Slug: healthAndRisk
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Health depends on interacting physical, psychological, social, and environmental conditions. Risk factors affect probability rather than determining an individual's diagnosis.
+Methodological description: Health depends on interacting physical, psychological, social, and environmental conditions. Risk factors affect probability rather than determining an individual's diagnosis.
+User-friendly description: Explore how different conditions and choices can influence health risks.
 
 ##### Recognize changes in health status
 
+Slug: recognizeChangesInHealthStatus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a usual bodily variation from a new or worsening change that deserves monitoring or advice, without treating a single symptom as a definitive diagnosis.
+Methodological description: Distinguish a usual bodily variation from a new or worsening change that deserves monitoring or advice, without treating a single symptom as a definitive diagnosis.
+User-friendly description: Recognize when a new bodily change deserves attention or professional advice.
 
 ##### Interpret basic health measurements
 
+Slug: interpretBasicHealthMeasurements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate observations such as temperature, pulse, or blood pressure to measurement conditions and reference context without making a diagnosis from one reading.
+Methodological description: Relate observations such as temperature, pulse, or blood pressure to measurement conditions and reference context without making a diagnosis from one reading.
+User-friendly description: Interpret basic health readings without treating one result as a diagnosis.
 
 ##### Identify factors affecting health
 
+Slug: identifyFactorsAffectingHealth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect habits, exposures, living conditions, heredity, and access to services with health outcomes while avoiding simplistic one-cause explanations.
+Methodological description: Connect habits, exposures, living conditions, heredity, and access to services with health outcomes while avoiding simplistic one-cause explanations.
+User-friendly description: Identify how habits and environments affect health alongside other factors.
 
 ##### Assess health-related risk
 
+Slug: assessHealthRelatedRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate the likelihood and potential consequences of longer-term health outcomes arising from exposures, behaviours or protective measures, accounting for uncertainty without converting population-level estimates into diagnoses.
+Methodological description: Evaluate the likelihood and potential consequences of longer-term health outcomes arising from exposures, behaviours or protective measures, accounting for uncertainty without converting population-level estimates into diagnoses.
+User-friendly description: Consider the likelihood and possible effects of a health-related risk.
 
 ##### Choose preventive health measures
 
+Slug: choosePreventiveHealthMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match health risks to evidence-based prevention such as vaccination, screening advice or protective daily habits, distinguishing the prevention of illness from first aid, clinical treatment and general accident avoidance.
+Methodological description: Match health risks to evidence-based prevention such as vaccination, screening advice or protective daily habits, distinguishing the prevention of illness from first aid, clinical treatment and general accident avoidance.
+User-friendly description: Choose suitable preventive measures using trustworthy health evidence.
 
 #### Using Healthcare
+
+Slug: usingHealthcare
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Seeking care effectively includes choosing an appropriate service, describing a concern, understanding an agreed plan, and knowing when assistance is urgent.
+Methodological description: Seeking care effectively includes choosing an appropriate service, describing a concern, understanding an agreed plan, and knowing when assistance is urgent.
+User-friendly description: Discover how to access care and work with healthcare professionals.
 
 ##### Choose an appropriate level of healthcare
 
+Slug: chooseAnAppropriateLevelOfHealthcare
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish routine consultation, timely professional assessment, and urgent emergency response by the nature and progression of symptoms.
+Methodological description: Distinguish routine consultation, timely professional assessment, and urgent emergency response by the nature and progression of symptoms.
+User-friendly description: Recognize when a concern needs routine care or urgent help.
 
 ##### Communicate symptoms to a clinician
 
+Slug: communicateSymptomsToAClinician
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Convey onset, duration, relevant changes, treatments already taken, and questions without substituting an assumed diagnosis for observations.
+Methodological description: Convey onset, duration, relevant changes, treatments already taken, and questions without substituting an assumed diagnosis for observations.
+User-friendly description: Describe symptoms and their timing clearly to a healthcare professional.
 
 ##### Understand a care plan
 
+Slug: understandACarePlan
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the purpose, timing, follow-up, and precautions of a clinician's instructions and clarify uncertainty before acting.
+Methodological description: Interpret the purpose, timing, follow-up, and precautions of a clinician's instructions and clarify uncertainty before acting.
+User-friendly description: Understand the purpose, schedule and precautions of an agreed care plan.
 
 ##### Participate in informed healthcare decisions
 
+Slug: participateInInformedHealthcareDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the roles of understandable information, consent, alternatives, privacy, and the right to ask questions in clinical encounters.
+Methodological description: Recognize the roles of understandable information, consent, alternatives, privacy, and the right to ask questions in clinical encounters.
+User-friendly description: Explore consent, privacy and your right to ask questions during healthcare.
 
 #### Health Information and Medicines
+
+Slug: healthInformationAndMedicines
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Claims about prevention and treatment should be evaluated against trustworthy evidence, and medicines require label-aware, safe handling; clinical observations and basic measurements are classified in Health and Risk.
+Methodological description: Claims about prevention and treatment should be evaluated against trustworthy evidence, and medicines require label-aware, safe handling; clinical observations and basic measurements are classified in Health and Risk.
+User-friendly description: Learn to evaluate health advice and handle medicines safely.
 
 ##### Evaluate health information sources
 
+Slug: evaluateHealthInformationSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess provenance, professional consensus, supporting evidence, conflicts of interest, and publication context rather than relying on popularity or testimonials.
+Methodological description: Assess provenance, professional consensus, supporting evidence, conflicts of interest, and publication context rather than relying on popularity or testimonials.
+User-friendly description: Check whether health advice comes from credible, evidence-based sources.
 
 ##### Recognize misleading health claims
 
+Slug: recognizeMisleadingHealthClaims
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify miracle-cure promises, unsupported causal claims, and advertising disguised as medical advice, including claims about supplements.
+Methodological description: Identify miracle-cure promises, unsupported causal claims, and advertising disguised as medical advice, including claims about supplements.
+User-friendly description: Spot unsupported miracle cures and misleading medical advertising.
 
 ##### Use medicines safely
 
+Slug: useMedicinesSafely
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Respect intended use, dosing instructions, contraindications, storage, expiry, and professional guidance; avoid sharing prescription medicine or guessing a dose.
+Methodological description: Respect intended use, dosing instructions, contraindications, storage, expiry, and professional guidance; avoid sharing prescription medicine or guessing a dose.
+User-friendly description: Follow medication guidance and avoid sharing or guessing doses.
 
 ### Hygiene and Infection Prevention
+
+Slug: hygieneAndInfectionPrevention
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
-Disease prevention includes reducing contact with infectious agents and maintaining sanitary conditions. This domain concerns personal and environmental prevention, not microbiological taxonomy or clinical infection treatment.
+Methodological description: Disease prevention includes reducing contact with infectious agents and maintaining sanitary conditions. This domain concerns personal and environmental prevention, not microbiological taxonomy or clinical infection treatment.
+User-friendly description: Explore practical ways to reduce infections through hygiene and safer environments.
 
 #### Personal Hygiene
+
+Slug: personalHygiene
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Effective routines reflect how contamination spreads between hands, body surfaces, shared objects, and everyday environments.
+Methodological description: Effective routines reflect how contamination spreads between hands, body surfaces, shared objects, and everyday environments.
+User-friendly description: Build useful routines that limit contamination of hands and everyday objects.
 
 ##### Hand hygiene
 
+Slug: handHygiene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use washing or an appropriate hand sanitizer at meaningful moments, paying attention to coverage and the circumstances in which soap and water are needed.
+Methodological description: Use washing or an appropriate hand sanitizer at meaningful moments, paying attention to coverage and the circumstances in which soap and water are needed.
+User-friendly description: Recognize when to clean your hands and how to do it effectively.
 
 ##### Oral hygiene
 
+Slug: oralHygiene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Maintain teeth and gums through suitable brushing, interdental care, and preventive dental visits while recognizing that pain or bleeding may require assessment.
+Methodological description: Maintain teeth and gums through suitable brushing, interdental care, and preventive dental visits while recognizing that pain or bleeding may require assessment.
+User-friendly description: Learn daily habits that help protect teeth and gums.
 
 ##### Body hygiene
 
+Slug: bodyHygiene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select suitable cleaning and personal-care routines for skin, hair, and intimate areas without assuming excessive washing is beneficial.
+Methodological description: Select suitable cleaning and personal-care routines for skin, hair, and intimate areas without assuming excessive washing is beneficial.
+User-friendly description: Choose appropriate routines for caring for your skin and body.
 
 ##### Hygiene of personal items
 
+Slug: hygieneOfPersonalItems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reduce contamination from shared towels, grooming tools, and reusable items through appropriate individual use and cleaning.
+Methodological description: Reduce contamination from shared towels, grooming tools, and reusable items through appropriate individual use and cleaning.
+User-friendly description: Keep personal items clean and avoid sharing items that may spread infection.
 
 #### Transmission and Protection
+
+Slug: transmissionAndProtection
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Infectious hazards can spread through different routes and require measures suited to the agent and environment, not one universal precaution.
+Methodological description: Infectious hazards can spread through different routes and require measures suited to the agent and environment, not one universal precaution.
+User-friendly description: Discover how infections spread and which precautions fit each route.
 
 ##### Recognize infection transmission routes
 
+Slug: recognizeInfectionTransmissionRoutes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish respiratory, contact, foodborne, bloodborne, and vector-related exposure when considering prevention.
+Methodological description: Distinguish respiratory, contact, foodborne, bloodborne, and vector-related exposure when considering prevention.
+User-friendly description: Recognize contact, respiratory, foodborne and other transmission pathways.
 
 ##### Respiratory hygiene
 
+Slug: respiratoryHygiene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reduce exposure when coughing, sneezing, or experiencing respiratory symptoms using appropriate etiquette, ventilation, and context-specific precautions.
+Methodological description: Reduce exposure when coughing, sneezing, or experiencing respiratory symptoms using appropriate etiquette, ventilation, and context-specific precautions.
+User-friendly description: Use appropriate coughing, ventilation and illness-related precautions.
 
 ##### Safe contact with blood and body fluids
 
+Slug: safeContactWithBloodAndBodyFluids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Avoid direct unprotected exposure and understand when barriers, handwashing, and professional assistance are necessary.
+Methodological description: Avoid direct unprotected exposure and understand when barriers, handwashing, and professional assistance are necessary.
+User-friendly description: Recognize why blood and body fluids require protective handling.
 
 ##### Vaccination literacy
 
+Slug: vaccinationLiteracy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish how immunization reduces specified disease risks from claims of absolute protection and recognize the role of recommended schedules.
+Methodological description: Distinguish how immunization reduces specified disease risks from claims of absolute protection and recognize the role of recommended schedules.
+User-friendly description: Understand what vaccination can and cannot protect against.
 
 ##### Respond to signs of infectious illness
 
+Slug: respondToSignsOfInfectiousIllness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Decide when to rest, reduce exposure to others, monitor worsening symptoms, and seek professional advice rather than relying solely on home care.
+Methodological description: Decide when to rest, reduce exposure to others, monitor worsening symptoms, and seek professional advice rather than relying solely on home care.
+User-friendly description: Recognize when illness requires reducing contact or seeking medical advice.
 
 #### Sanitary Environments
+
+Slug: sanitaryEnvironments
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Water, indoor air, surfaces, and sanitation infrastructure influence exposure and should be managed according to actual contamination pathways.
+Methodological description: Water, indoor air, surfaces, and sanitation infrastructure influence exposure and should be managed according to actual contamination pathways.
+User-friendly description: Explore how safe water, air and surfaces affect infection risk.
 
 ##### Safe drinking water
 
+Slug: safeDrinkingWater
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish potable from potentially contaminated supplies and recognize when verified treatment or an alternative source is required.
+Methodological description: Distinguish potable from potentially contaminated supplies and recognize when verified treatment or an alternative source is required.
+User-friendly description: Recognize when a water source may be unsafe for drinking.
 
 ##### Indoor air and ventilation
 
+Slug: indoorAirAndVentilation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify circumstances in which fresh-air exchange and source control reduce airborne exposure, while accounting for outdoor hazards.
+Methodological description: Identify circumstances in which fresh-air exchange and source control reduce airborne exposure, while accounting for outdoor hazards.
+User-friendly description: Use ventilation to reduce indoor exposure while considering outside hazards.
 
 ##### Cleaning and disinfection
 
+Slug: cleaningAndDisinfection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish routine removal of dirt from targeted disinfection and avoid unsafe mixing or misuse of cleaning chemicals.
+Methodological description: Distinguish routine removal of dirt from targeted disinfection and avoid unsafe mixing or misuse of cleaning chemicals.
+User-friendly description: Distinguish everyday cleaning from targeted disinfection and chemical misuse.
 
 ### Nutrition and Food Safety
+
+Slug: nutritionAndFoodSafety
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Eating and drinking support health through nutrients, adequate intake, and safe preparation. Nutritional choices and microbial or chemical food hazards are distinct competencies, even though the same meal can involve both.
+Methodological description: Eating and drinking support health through nutrients, adequate intake, and safe preparation. Nutritional choices and microbial or chemical food hazards are distinct competencies, even though the same meal can involve both.
+User-friendly description: Learn how nourishment and careful food handling support health.
 
 #### Nutritional Foundations
 
+Slug: nutritionalFoundations
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Food supplies energy and essential nutrients; dietary adequacy depends on patterns over time rather than judging a single meal as healthy or unhealthy.
+Methodological description: Food supplies energy and essential nutrients; dietary adequacy depends on patterns over time rather than judging a single meal as healthy or unhealthy.
+User-friendly description: Explore nutrition as a pattern of choices rather than one perfect meal.
 
 ##### Balanced dietary patterns
 
+Slug: balancedDietaryPatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider variety, food groups, nutrient adequacy, and individual needs without assuming one fixed menu fits everyone.
+Methodological description: Consider variety, food groups, nutrient adequacy, and individual needs without assuming one fixed menu fits everyone.
+User-friendly description: Build a varied eating pattern suited to individual needs.
 
 ##### Understand the roles of nutrients
 
+Slug: understandTheRolesOfNutrients
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate macronutrients, vitamins, minerals and fibre to their major physiological roles and distinguish nutritional adequacy from the amount of food alone, without reproducing biochemical mechanisms.
+Methodological description: Relate macronutrients, vitamins, minerals and fibre to their major physiological roles and distinguish nutritional adequacy from the amount of food alone, without reproducing biochemical mechanisms.
+User-friendly description: Recognize the different jobs of nutrients and fiber.
 
 ##### Hydration
 
+Slug: hydration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize fluid needs and common signs of insufficient intake while accounting for activity, climate, and health circumstances.
+Methodological description: Recognize fluid needs and common signs of insufficient intake while accounting for activity, climate, and health circumstances.
+User-friendly description: Understand how activity and surroundings affect hydration needs.
 
 ##### Interpret dietary energy balance
 
+Slug: interpretDietaryEnergyBalance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate energy intake to expenditure and changing individual needs while distinguishing energy balance from dietary quality and avoiding unsupported conclusions about a person's health from body size.
+Methodological description: Relate energy intake to expenditure and changing individual needs while distinguishing energy balance from dietary quality and avoiding unsupported conclusions about a person's health from body size.
+User-friendly description: Distinguish energy intake and expenditure from overall diet quality.
 
 #### Food Choices and Information
+
+Slug: foodChoicesAndInformation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Marketing, accessibility, food labels, allergies, and personal circumstances shape real-life nutritional decisions.
+Methodological description: Marketing, accessibility, food labels, allergies, and personal circumstances shape real-life nutritional decisions.
+User-friendly description: Learn to use labels and evidence when selecting foods.
 
 ##### Interpret food labels
 
+Slug: interpretFoodLabels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use ingredient lists, nutritional information, serving quantities, and date markings without treating a marketing slogan as evidence.
+Methodological description: Use ingredient lists, nutritional information, serving quantities, and date markings without treating a marketing slogan as evidence.
+User-friendly description: Read food ingredients, serving sizes and nutritional information.
 
 ##### Recognize dietary misinformation
 
+Slug: recognizeDietaryMisinformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish evidence-based nutritional advice from detox claims, extreme restrictions, and unsupported promises of rapid results.
+Methodological description: Distinguish evidence-based nutritional advice from detox claims, extreme restrictions, and unsupported promises of rapid results.
+User-friendly description: Recognize unsupported claims about diets, detoxes and quick results.
 
 ##### Manage food allergy risks
 
+Slug: manageFoodAllergyRisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify allergens and cross-contact warnings, verify ingredients, take appropriate avoidance precautions and understand when an allergic reaction requires urgent care.
+Methodological description: Identify allergens and cross-contact warnings, verify ingredients, take appropriate avoidance precautions and understand when an allergic reaction requires urgent care.
+User-friendly description: Identify allergens and avoid dangerous ingredient cross-contact.
 
 ##### Adapt food choices to dietary needs
 
+Slug: adaptFoodChoicesToDietaryNeeds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select suitable alternatives for medical, nutritional, ethical or cultural dietary requirements, distinguishing individual preference from a potentially dangerous allergen exposure.
+Methodological description: Select suitable alternatives for medical, nutritional, ethical or cultural dietary requirements, distinguishing individual preference from a potentially dangerous allergen exposure.
+User-friendly description: Adapt food choices for genuine dietary requirements and preferences.
 
 #### Foodborne Hazards
+
+Slug: foodborneHazards
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Food safety depends on separation, temperature, handling, and storage; appearance or smell alone cannot always establish whether food is safe.
+Methodological description: Food safety depends on separation, temperature, handling, and storage; appearance or smell alone cannot always establish whether food is safe.
+User-friendly description: Discover how food preparation and storage can prevent illness.
 
 ##### Maintain hygiene during food preparation
 
+Slug: maintainHygieneDuringFoodPreparation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Maintain clean hands, utensils and work surfaces while preparing meals, limiting microbial contamination without subsuming the distinct task of keeping raw foods separate from ready-to-eat foods.
+Methodological description: Maintain clean hands, utensils and work surfaces while preparing meals, limiting microbial contamination without subsuming the distinct task of keeping raw foods separate from ready-to-eat foods.
+User-friendly description: Keep hands and kitchen surfaces clean while preparing food.
 
 ##### Prevent raw-to-ready food cross-contamination
 
+Slug: preventRawToReadyFoodCrossContamination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Keep raw animal products and their juices from contaminating ready-to-eat food through separate equipment, storage and handling; this concerns foodborne pathogens rather than allergen cross-contact.
+Methodological description: Keep raw animal products and their juices from contaminating ready-to-eat food through separate equipment, storage and handling; this concerns foodborne pathogens rather than allergen cross-contact.
+User-friendly description: Keep raw animal products separate from ready-to-eat foods.
 
 ##### Safe cooking and reheating
 
+Slug: safeCookingAndReheating
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sufficient heating to reducing specified foodborne hazards rather than relying only on colour or texture.
+Methodological description: Relate sufficient heating to reducing specified foodborne hazards rather than relying only on colour or texture.
+User-friendly description: Recognize why proper cooking and reheating are important.
 
 ##### Safe food storage
 
+Slug: safeFoodStorage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select appropriate storage conditions and time limits, distinguishing shelf-stable from perishable foods.
+Methodological description: Select appropriate storage conditions and time limits, distinguishing shelf-stable from perishable foods.
+User-friendly description: Store perishable foods under appropriate conditions.
 
 ##### Recognize unsafe food situations
 
+Slug: recognizeUnsafeFoodSituations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify spoilage, damaged packaging, unsafe water, and uncertain storage histories while understanding that some hazards are invisible.
+Methodological description: Identify spoilage, damaged packaging, unsafe water, and uncertain storage histories while understanding that some hazards are invisible.
+User-friendly description: Spot food-safety concerns even when food looks normal.
 
 ### Movement, Sleep and Everyday Routines
 
+Slug: movementSleepAndEverydayRoutines
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Physical functioning benefits from feasible movement, adequate recovery, and adjustments to daily environments. This domain concerns practical health habits, not the physiology of exercise as a separate science.
+Methodological description: Physical functioning benefits from feasible movement, adequate recovery, and adjustments to daily environments. This domain concerns practical health habits, not the physiology of exercise as a separate science.
+User-friendly description: Explore sustainable habits for movement, recovery and comfortable daily activities.
 
 #### Physical Activity
 
+Slug: physicalActivity
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Activity can vary by intensity, form, and personal ability; protective choices include gradual progression and responding to warning signals.
+Methodological description: Activity can vary by intensity, form, and personal ability; protective choices include gradual progression and responding to warning signals.
+User-friendly description: Discover how to stay active while respecting personal capacities.
 
 ##### Plan regular physical activity
 
+Slug: planRegularPhysicalActivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine suitable types and amounts of movement with individual capacity and opportunities, rather than relying on one sport or a universal target.
+Methodological description: Combine suitable types and amounts of movement with individual capacity and opportunities, rather than relying on one sport or a universal target.
+User-friendly description: Plan achievable movement suited to your needs and circumstances.
 
 ##### Prepare for physical exertion
 
+Slug: prepareForPhysicalExertion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use context-appropriate warm-up, equipment, environment checks, and gradual increases in demand.
+Methodological description: Use context-appropriate warm-up, equipment, environment checks, and gradual increases in demand.
+User-friendly description: Prepare equipment and surroundings before physical exertion.
 
 ##### Recognize warning signs during activity
 
+Slug: recognizeWarningSignsDuringActivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish ordinary exertion from concerning symptoms or conditions requiring stopping, assistance, or medical assessment.
+Methodological description: Distinguish ordinary exertion from concerning symptoms or conditions requiring stopping, assistance, or medical assessment.
+User-friendly description: Recognize symptoms that mean an activity should stop.
 
 ##### Prevent exercise-related injury
 
+Slug: preventExerciseRelatedInjury
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adjust technique, load, recovery, and protective measures to the activity without assuming injury is unavoidable.
+Methodological description: Adjust technique, load, recovery, and protective measures to the activity without assuming injury is unavoidable.
+User-friendly description: Learn ways to reduce preventable injury during exercise.
 
 #### Sleep and Recovery
 
+Slug: sleepAndRecovery
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Sleep quality is affected by timing, environment, individual needs, and habits; persistent difficulty may warrant professional attention.
+Methodological description: Sleep quality is affected by timing, environment, individual needs, and habits; persistent difficulty may warrant professional attention.
+User-friendly description: Explore how sleep and regular rest affect everyday functioning.
 
 ##### Understand sleep needs
 
+Slug: understandSleepNeeds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sufficient sleep and regular timing to functioning while accounting for differences across life stages and circumstances.
+Methodological description: Relate sufficient sleep and regular timing to functioning while accounting for differences across life stages and circumstances.
+User-friendly description: Recognize how sleep needs change with age and circumstances.
 
 ##### Support healthy sleep routines
 
+Slug: supportHealthySleepRoutines
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify modifiable factors such as light, noise, stimulants, and schedule regularity that can affect sleep.
+Methodological description: Identify modifiable factors such as light, noise, stimulants, and schedule regularity that can affect sleep.
+User-friendly description: Adjust routines and surroundings to support better sleep.
 
 ##### Recognize problematic sleep patterns
 
+Slug: recognizeProblematicSleepPatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Notice persistent disruption or dangerous sleepiness and distinguish a need for evaluation from an occasional poor night.
+Methodological description: Notice persistent disruption or dangerous sleepiness and distinguish a need for evaluation from an occasional poor night.
+User-friendly description: Notice when persistent sleep problems deserve professional attention.
 
 #### Ergonomics and Sensory Care
+
+Slug: ergonomicsAndSensoryCare
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Workspaces and devices can be adapted to reduce strain, fatigue, and exposure rather than enforcing a single rigid body position.
+Methodological description: Workspaces and devices can be adapted to reduce strain, fatigue, and exposure rather than enforcing a single rigid body position.
+User-friendly description: Learn how workspaces and devices can reduce strain on the senses and body.
 
 ##### Adapt an ergonomic workspace
 
+Slug: adaptAnErgonomicWorkspace
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adjust screen, seat, reach, lighting, and variation of posture to a person's task and physical needs.
+Methodological description: Adjust screen, seat, reach, lighting, and variation of posture to a person's task and physical needs.
+User-friendly description: Adjust work areas for comfortable reach, lighting and posture changes.
 
 ##### Manage visual strain
 
+Slug: manageVisualStrain
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use suitable lighting, viewing distance, breaks, and symptom awareness during sustained near or screen work.
+Methodological description: Use suitable lighting, viewing distance, breaks, and symptom awareness during sustained near or screen work.
+User-friendly description: Reduce eye strain during extended reading and screen work.
 
 ##### Protect hearing from noise
 
+Slug: protectHearingFromNoise
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate loudness and exposure time to hearing risk, including personal listening devices and noisy environments.
+Methodological description: Relate loudness and exposure time to hearing risk, including personal listening devices and noisy environments.
+User-friendly description: Recognize why volume and listening time both affect hearing safety.
 
 ### Mental Well-being and Support
+
+Slug: mentalWellBeingAndSupport
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Health protection includes noticing psychological strain, choosing supportive coping strategies, and connecting people with qualified help. The psychological mechanisms of emotion and cognition belong principally to Psychology.
+Methodological description: Health protection includes noticing psychological strain, choosing supportive coping strategies, and connecting people with qualified help. The psychological mechanisms of emotion and cognition belong principally to Psychology.
+User-friendly description: Learn to notice emotional strain, seek support and respond safely to crises.
 
 #### Recognizing Strain
+
+Slug: recognizingStrain
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Distress varies in intensity and duration; a sign can indicate a need for support without establishing a psychiatric diagnosis.
+Methodological description: Distress varies in intensity and duration; a sign can indicate a need for support without establishing a psychiatric diagnosis.
+User-friendly description: Recognize changes that may signal a need for psychological support.
 
 ##### Recognize signs of stress
 
+Slug: recognizeSignsOfStress
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect changes in sleep, concentration, mood, behaviour, or bodily tension with potential overload while considering other causes.
+Methodological description: Connect changes in sleep, concentration, mood, behaviour, or bodily tension with potential overload while considering other causes.
+User-friendly description: Identify common signs of stress while considering other causes.
 
 ##### Recognize warning signs of worsening mental health
 
+Slug: recognizeWarningSignsOfWorseningMentalHealth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify persistent impairment, escalating distress, or loss of usual functioning as reasons to seek suitable support.
+Methodological description: Identify persistent impairment, escalating distress, or loss of usual functioning as reasons to seek suitable support.
+User-friendly description: Notice prolonged or worsening difficulties that need additional support.
 
 ##### Recognize harmful coping patterns
 
+Slug: recognizeHarmfulCopingPatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish restorative actions from strategies that may intensify distress or introduce additional risks.
+Methodological description: Distinguish restorative actions from strategies that may intensify distress or introduce additional risks.
+User-friendly description: Recognize coping habits that may create new problems.
 
 #### Everyday Coping and Assistance
+
+Slug: everydayCopingAndAssistance
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Helpful responses can involve self-care, support networks, appropriate boundaries, and referral rather than demanding that a person solve a crisis alone.
+Methodological description: Helpful responses can involve self-care, support networks, appropriate boundaries, and referral rather than demanding that a person solve a crisis alone.
+User-friendly description: Discover everyday coping methods and appropriate sources of assistance.
 
 ##### Use safe coping strategies
 
+Slug: useSafeCopingStrategies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select proportionate methods such as grounding, rest, movement, and social connection without presenting them as substitutes for necessary care.
+Methodological description: Select proportionate methods such as grounding, rest, movement, and social connection without presenting them as substitutes for necessary care.
+User-friendly description: Choose proportionate, safe ways to handle ordinary distress.
 
 ##### Seek mental health support
 
+Slug: seekMentalHealthSupport
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify trusted people, professional services, and ways of communicating a concern, including when ordinary support is insufficient.
+Methodological description: Identify trusted people, professional services, and ways of communicating a concern, including when ordinary support is insufficient.
+User-friendly description: Know how to contact a trusted person or qualified mental-health service.
 
 ##### Support someone experiencing distress
 
+Slug: supportSomeoneExperiencingDistress
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Listen without judgment, respect privacy, avoid diagnosing, and help the person reach appropriate assistance.
+Methodological description: Listen without judgment, respect privacy, avoid diagnosing, and help the person reach appropriate assistance.
+User-friendly description: Support someone by listening and helping them find appropriate care.
 
 ##### Prevent chronic overload
 
+Slug: preventChronicOverload
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Notice sustained imbalance between demands and recovery and identify feasible changes or sources of support.
+Methodological description: Notice sustained imbalance between demands and recovery and identify feasible changes or sources of support.
+User-friendly description: Recognize when sustained demands require rest or practical changes.
 
 #### Mental Health Crises
+
+Slug: mentalHealthCrises
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Immediate safety and connection to competent support take priority over attempting therapy or managing a potentially dangerous situation alone.
+Methodological description: Immediate safety and connection to competent support take priority over attempting therapy or managing a potentially dangerous situation alone.
+User-friendly description: Learn why urgent psychological danger requires competent immediate assistance.
 
 ##### Recognize an acute psychological crisis
 
+Slug: recognizeAnAcutePsychologicalCrisis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify immediate danger, severe disorientation, or expressed intent to self-harm as circumstances requiring prompt adult or professional help.
+Methodological description: Identify immediate danger, severe disorientation, or expressed intent to self-harm as circumstances requiring prompt adult or professional help.
+User-friendly description: Recognize situations where immediate adult or professional help is needed.
 
 ##### Respond to self-harm or suicide risk
 
+Slug: respondToSelfHarmOrSuicideRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Prioritize safety, timely emergency or crisis-service involvement, and staying within one's competence without secrecy promises.
+Methodological description: Prioritize safety, timely emergency or crisis-service involvement, and staying within one's competence without secrecy promises.
+User-friendly description: Understand why self-harm concerns require prompt safety support.
 
 ##### Provide psychological first aid
 
+Slug: providePsychologicalFirstAid
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Offer calm, practical, non-intrusive support, immediate needs assessment, and connection with services without forcing disclosure of traumatic experiences.
+Methodological description: Offer calm, practical, non-intrusive support, immediate needs assessment, and connection with services without forcing disclosure of traumatic experiences.
+User-friendly description: Offer calm practical assistance without pressuring someone to recount trauma.
 
 ### Personal Boundaries and Violence Prevention
 
