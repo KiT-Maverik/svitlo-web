@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const wholeAndEqualParts_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.wholeAndEqualParts,
+  id: '3b27b894-46e8-4a2a-b151-43b52224ba4c',
   name: {
     en: "Distinguishing wholes and equal and unequal parts",
     lt: "Visumos, lygių ir nelygių dalių atskyrimas",

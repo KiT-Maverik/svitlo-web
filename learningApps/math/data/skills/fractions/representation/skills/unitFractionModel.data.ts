@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const unitFractionModel_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.unitFractionModel,
+  id: 'f2d8c7d5-68bd-4c23-8d6a-cc3c122ff0c3',
   name: {
     en: "Modeling unit fractions 1/n",
     lt: "Vienetinių trupmenų 1/n modeliavimas",

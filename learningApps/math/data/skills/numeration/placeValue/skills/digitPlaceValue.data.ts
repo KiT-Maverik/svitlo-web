@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { placeValue_Skills_Ids } from './index.ids';
 
 export const digitPlaceValue_Skill_Data = buildSkillConfig({
-  id: placeValue_Skills_Ids.digitPlaceValue,
+  id: 'bfa629a1-292a-4a80-8305-001a2506e4bb',
   name: {
     lt: "Skaitmens vertė pagal jo poziciją",
     lv: "Cipara vērtība atkarībā no pozīcijas",

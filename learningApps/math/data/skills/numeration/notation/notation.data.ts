@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { notation_SkillGroup_Ids } from './notation.ids';
-import { notation_Skills_Ids } from './skills/index.ids';
+import { digits09_Skill_Data, readWrite20_Skill_Data, readWrite100_Skill_Data, readWrite1000_Skill_Data } from './skills';
 
 export const notation_SkillGroup_Data = buildSkillGroupConfig({
-  id: notation_SkillGroup_Ids.notation,
+  id: '26fde8d8-fc31-499b-892b-0dbe5dfcf09c',
   name: {
     en: "Numeral notation",
     lt: "Skaičių užrašymas",
@@ -34,7 +33,12 @@ export const notation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zapis liczb",
     uk: "Числовий запис",
   },
-  skillIds: notation_Skills_Ids,
+  skillIds: {
+    digits09: digits09_Skill_Data.id,
+    readWrite20: readWrite20_Skill_Data.id,
+    readWrite100: readWrite100_Skill_Data.id,
+    readWrite1000: readWrite1000_Skill_Data.id,
+  },
   description: {
     methodological: "Digits as signs in the decimal system and the correspondence between spoken number names, written notation, and quantities for one-, two-, and three-digit numbers.",
     fe: {

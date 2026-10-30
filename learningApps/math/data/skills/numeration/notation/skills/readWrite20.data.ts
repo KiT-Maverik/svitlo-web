@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { notation_Skills_Ids } from './index.ids';
 
 export const readWrite20_Skill_Data = buildSkillConfig({
-  id: notation_Skills_Ids.readWrite20,
+  id: '77344ce3-a3dc-4f48-8a4f-369d520b77d4',
   name: {
     lt: "Skaičių 0–20 skaitymas, rašymas ir siejimas su kiekiu",
     lv: "Skaitļu 0–20 lasīšana, rakstīšana un sasaistīšana ar daudzumu",

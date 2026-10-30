@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { estimation_SkillGroup_Ids } from './estimation.ids';
-import { estimation_Skills_Ids } from './skills/index.ids';
+import { roundToTen_Skill_Data, roundToHundred_Skill_Data, estimateQuantity_Skill_Data } from './skills';
 
 export const estimation_SkillGroup_Data = buildSkillGroupConfig({
-  id: estimation_SkillGroup_Ids.estimation,
+  id: 'be26668b-7f9a-40dd-b78f-f65acb5f4791',
   name: {
     en: "Estimating numbers",
     lt: "Apytikris skaičių vertinimas",
@@ -34,7 +33,11 @@ export const estimation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Szacowanie liczb",
     uk: "Оцінювання чисел",
   },
-  skillIds: estimation_Skills_Ids,
+  skillIds: {
+    roundToTen: roundToTen_Skill_Data.id,
+    roundToHundred: roundToHundred_Skill_Data.id,
+    estimateQuantity: estimateQuantity_Skill_Data.id,
+  },
   description: {
     methodological: "Approximate numerical values and quantities, rounding, and matching estimation precision to the magnitude of the actual quantity.",
     fe: {

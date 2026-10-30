@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { placeValue_Skills_Ids } from './index.ids';
 
 export const makeHundred_Skill_Data = buildSkillConfig({
-  id: placeValue_Skills_Ids.makeHundred,
+  id: '78bc05cb-9e61-488a-84d6-44b1612a6df9',
   name: {
     lt: "Dešimt dešimčių sudaro šimtą",
     lv: "Desmit desmiti veido simtu",

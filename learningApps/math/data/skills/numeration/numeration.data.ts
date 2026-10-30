@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { numeration_SkillDomain_Ids } from './numeration.ids';
-import { numeration_SkillGroups_Ids } from './index.ids';
+import { notation_SkillGroup_Data, placeValue_SkillGroup_Data, comparison_SkillGroup_Data, numberLine_SkillGroup_Data, estimation_SkillGroup_Data } from './index';
 
 export const numeration_SkillDomain_Data = buildSkillDomainConfig({
-  id: numeration_SkillDomain_Ids.numeration,
+  id: '445d4a85-bebe-4569-bf45-2af8c15a051b',
   name: {
     en: "Natural numbers",
     lt: "Natūralieji skaičiai",
@@ -34,7 +33,13 @@ export const numeration_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Liczby naturalne",
     uk: "Натуральні числа",
   },
-  groupIds: numeration_SkillGroups_Ids,
+  groupIds: {
+    notation: notation_SkillGroup_Data.id,
+    placeValue: placeValue_SkillGroup_Data.id,
+    comparison: comparison_SkillGroup_Data.id,
+    numberLine: numberLine_SkillGroup_Data.id,
+    estimation: estimation_SkillGroup_Data.id,
+  },
   description: {
     methodological: "How natural numbers express quantity, how decimal positional notation works, and how numbers are compared, decomposed, and estimated.",
     fe: {

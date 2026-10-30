@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { estimation_Skills_Ids } from './index.ids';
 
 export const roundToTen_Skill_Data = buildSkillConfig({
-  id: estimation_Skills_Ids.roundToTen,
+  id: 'a421f9f3-cba7-4e85-ae61-ecb06f78d916',
   name: {
     lt: "Apvalinimas iki artimiausios dešimties",
     lv: "Noapaļošana līdz tuvākajam desmitam",

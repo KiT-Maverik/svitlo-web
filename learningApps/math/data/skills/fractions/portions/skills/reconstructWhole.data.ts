@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { portions_Skills_Ids } from './index.ids';
 
 export const reconstructWhole_Skill_Data = buildSkillConfig({
-  id: portions_Skills_Ids.reconstructWhole,
+  id: '187884f4-b528-4f66-aed8-ccd4b5fe5b74',
   name: {
     en: "Finding the whole from a known unit fraction",
     lt: "Visumos radimas žinant vienetinę dalį",

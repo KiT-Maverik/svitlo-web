@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { placeValue_Skills_Ids } from './index.ids';
 
 export const regroupPlaceValues_Skill_Data = buildSkillConfig({
-  id: placeValue_Skills_Ids.regroupPlaceValues,
+  id: 'a0f3d851-b215-4c14-938d-2275831b4148',
   name: {
     lt: "Vienetų pergrupavimas tarp skyrių",
     lv: "Pārgrupēšana starp skaitļa šķirām",

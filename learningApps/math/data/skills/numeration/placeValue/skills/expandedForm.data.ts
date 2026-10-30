@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { placeValue_Skills_Ids } from './index.ids';
 
 export const expandedForm_Skill_Data = buildSkillConfig({
-  id: placeValue_Skills_Ids.expandedForm,
+  id: 'f78fce9f-6e79-4378-9448-39fcdbc42d0d',
   name: {
     lt: "Skaičiaus išskaidyta forma",
     lv: "Skaitļa izvērstā forma",

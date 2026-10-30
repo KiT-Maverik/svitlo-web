@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { numberLine_SkillGroup_Ids } from './numberLine.ids';
-import { numberLine_Skills_Ids } from './skills/index.ids';
+import { beforeAfterBetween_Skill_Data, numberLine20_Skill_Data, numberLine1000_Skill_Data, distanceOnLine_Skill_Data } from './skills';
 
 export const numberLine_SkillGroup_Data = buildSkillGroupConfig({
-  id: numberLine_SkillGroup_Ids.numberLine,
+  id: '4b431caf-b720-4669-8d48-f329c858bf94',
   name: {
     en: "Number line",
     lt: "Skaičių tiesė",
@@ -34,7 +33,12 @@ export const numberLine_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Oś liczbowa",
     uk: "Числова пряма",
   },
-  skillIds: numberLine_Skills_Ids,
+  skillIds: {
+    beforeAfterBetween: beforeAfterBetween_Skill_Data.id,
+    numberLine20: numberLine20_Skill_Data.id,
+    numberLine1000: numberLine1000_Skill_Data.id,
+    distanceOnLine: distanceOnLine_Skill_Data.id,
+  },
   description: {
     methodological: "Numbers as points on an ordered scale with equal intervals; location, adjacency, and distance depend on the scale used.",
     fe: {

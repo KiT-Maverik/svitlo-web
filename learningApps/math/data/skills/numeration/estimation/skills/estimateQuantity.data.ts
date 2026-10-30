@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { estimation_Skills_Ids } from './index.ids';
 
 export const estimateQuantity_Skill_Data = buildSkillConfig({
-  id: estimation_Skills_Ids.estimateQuantity,
+  id: 'a4f386e6-e8f1-4497-8344-b348bcaeaaec',
   name: {
     lt: "Kiekio įvertinimas ir patikrinimas",
     lv: "Daudzuma novērtēšana un pārbaude",
