@@ -9,9 +9,14 @@ const allNames = () =>
     DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, `Skill in ${language}`]),
   ) as Skill_Config['name'];
 
+const frontendCopy = () =>
+  Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) =>
+    [language, 'Frontend description in ' + language])) as Skill_Config['description']['fe'];
+
 const skill = (): Skill_Config => ({
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: allNames(),
+  description: { methodological: 'Mathematical concept and boundaries.', fe: frontendCopy() },
 });
 
 describe('Utils / builders / config / buildSkillConfig', () => {
@@ -64,20 +69,15 @@ describe('Utils / builders / config / buildSkillConfig', () => {
     }
   });
 
-  const frontendCopy = () =>
-    Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) =>
-      [language, 'Frontend description in ' + language])) as NonNullable<Skill_Config['description']>['fe'];
-
-  it('allows missing description only for legacy records', () => {
-    assert.equal(buildSkillConfig(skill()).description, undefined);
+  it('rejects missing descriptions and frontend dictionaries', () => {
+    assert.throws(() => buildSkillConfig({ ...skill(), description: undefined } as unknown as Skill_Config), /Skill description is required/);
+    assert.throws(
+      () => buildSkillConfig({ ...skill(), description: { methodological: 'Valid text' } } as unknown as Skill_Config),
+      /Skill description.fe must contain all supported languages/,
+    );
   });
 
-  it('accepts a methodological description without frontend text', () => {
-    const input = { ...skill(), description: { methodological: 'Mathematical concept and boundaries.' } };
-    assert.deepEqual(buildSkillConfig(input).description, input.description);
-  });
-
-  it('accepts methodological description and complete optional fe dictionary', () => {
+  it('accepts methodological description and complete mandatory fe dictionary', () => {
     const input = {
       ...skill(),
       description: { methodological: 'Mathematical concept and boundaries.', fe: frontendCopy() },
@@ -106,6 +106,6 @@ describe('Utils / builders / config / buildSkillConfig', () => {
 
   it('rejects unsupported extra locale keys', () => {
     const names = { ...allNames(), xx: 'Unknown' };
-    assert.throws(() => buildSkillConfig({ id: skill().id, name: names }), /unsupported languages: xx/);
+    assert.throws(() => buildSkillConfig({ ...skill(), name: names }), /unsupported languages: xx/);
   });
 });
