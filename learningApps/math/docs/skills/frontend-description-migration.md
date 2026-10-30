@@ -22,6 +22,20 @@ Locale roster: **28** `LanguageCode` values from `shared/contracts/src/types/lan
 
 **Total:** 284 Skills, 60 Groups, 13 Domains.
 
+## Parallel agent ownership (agreed 2026-10-30)
+
+Each Domain has **exactly one owner**. Ownership is allocated to balance **Skill counts**, so the blocks are not strictly contiguous. The Domain inventory and Skill counts are authoritative only for this checkpoint; recheck repository data and current language registry before future edits.
+
+| Agent | Domains in processing order | Skills | Dedicated scope |
+| --- | --- | ---: | --- |
+| **Agent 1** (this branch, Draft PR #97) | #1 Counting (15), #2 Natural Numbers (27), #3 Fractions (19), #6 Geometry (35) | **96** | First-to-last through #3, then #6 |
+| **Agent 2** (separate branch and Draft PR) | #4 Arithmetic (79), #5 Algebra (17) | **96** | Split Arithmetic into Groups for manageable commits |
+| **Agent 3** (existing other chat, separate branch and Draft PR) | #13 Reasoning (10), #12 Problem Solving (23), #11 Probability (4), #10 Data (15), #9 Money (6), #8 Time (13), #7 Measurement (21) | **92** | Process in reverse order, starting at #13 |
+
+**Global total:** 284 Skills. Agent 1 already completed #1 Counting; Agent 1's next Domain is #2 Natural Numbers. Never switch into another Agent's assigned Domain without an explicit new allocation.
+
+**Cross-branch rules:** Each agent edits only its owned Domain subtrees, keeps a dedicated branch and Draft PR with per-Domain commit checkpoints, and preserves source taxonomy, UUIDs, names and methodological descriptions. Avoid concurrent modifications to shared migration/checklist files across branches; use each agent's PR description for individual progress. Any required shared contracts/builders/workflow changes, especially making `description.fe` mandatory, are deferred to a **separate integration stage** after all affected Skills, Groups and Domains are filled and branches are reconciled. No agent merges without the editor's approval.
+
 ## Current stage — Counting
 
 - [x] Verify each English frontend description against the existing English methodological description.
