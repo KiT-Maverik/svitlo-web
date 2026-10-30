@@ -23,581 +23,1031 @@ Code files: 0/13 Domains · 0/49 Groups · 0/212 Skills
 
 ### Cosmic Objects
 
+Slug: cosmicObjects
+Action: create
+Status: pending
+
 Groups: 2 · Skills: 7
 
 [Not implemented](#)
 
-An overview of what kinds of physical objects and extended structures exist beyond Earth and how they are identified and organized. It teaches classification across cosmic scales and distinguishes an object's physical nature from its environment or apparent visual form; detailed physics belongs to the specialized planetary, stellar, galactic and cosmological domains.
+Methodological description: An overview of what kinds of physical objects and extended structures exist beyond Earth and how they are identified and organized. It teaches classification across cosmic scales and distinguishes an object's physical nature from its environment or apparent visual form; detailed physics belongs to the specialized planetary, stellar, galactic and cosmological domains.
+User-friendly description: Explore the different kinds of objects and structures found in the universe and how astronomers classify them.
 
 #### Object Families
+
+Slug: objectFamilies
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Classification of astronomical entities requires more than their appearance in a photograph: a point source, a diffuse cloud, a cluster and an extended galaxy may be distinguished by physical evidence and scale.
+Methodological description: Classification of astronomical entities requires more than their appearance in a photograph: a point source, a diffuse cloud, a cluster and an extended galaxy may be distinguished by physical evidence and scale.
+User-friendly description: Learn how astronomers identify different types of objects using physical evidence rather than appearance alone.
 
 ##### Celestial Object Classification
 
+Slug: celestialObjectClassification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify astronomical sources as stellar bodies, planetary bodies, compact remnants, diffuse clouds, star clusters, galaxies or other broad physical types using characteristic evidence rather than appearance alone.
+Methodological description: Classify astronomical sources as stellar bodies, planetary bodies, compact remnants, diffuse clouds, star clusters, galaxies or other broad physical types using characteristic evidence rather than appearance alone.
+User-friendly description: Recognize major categories of celestial objects by their physical properties.
 
 ##### Objects and Phenomena
 
+Slug: objectsAndPhenomena
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish enduring physical objects and systems from observed events or effects such as eclipses, meteors, flares and transient brightenings, even when both occur in object catalogs.
+Methodological description: Distinguish enduring physical objects and systems from observed events or effects such as eclipses, meteors, flares and transient brightenings, even when both occur in object catalogs.
+User-friendly description: Tell the difference between a lasting celestial object and an event such as an eclipse or flare.
 
 ##### Stellar, Substellar and Planetary Boundaries
 
+Slug: stellarSubstellarAndPlanetaryBoundaries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare physically distinct stars, brown dwarfs and planetary-mass bodies using fusion and mass constraints while acknowledging uncertainties near classification boundaries.
+Methodological description: Compare physically distinct stars, brown dwarfs and planetary-mass bodies using fusion and mass constraints while acknowledging uncertainties near classification boundaries.
+User-friendly description: Explore how stars, brown dwarfs and planets differ, including where their categories overlap.
 
 ##### Diffuse and Composite Objects
 
+Slug: diffuseAndCompositeObjects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate diffuse nebulae, gravitationally associated groups and composite galaxies by their constituents, structure and binding rather than surface resemblance.
+Methodological description: Differentiate diffuse nebulae, gravitationally associated groups and composite galaxies by their constituents, structure and binding rather than surface resemblance.
+User-friendly description: Distinguish gas clouds, star groups and galaxies by what they contain and how they are organized.
 
 #### Organization and Membership
+
+Slug: organizationAndMembership
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-A body's membership in a system is a different property from its type; the same class of object can be gravitationally bound, ejected or found in a sparse galactic environment.
+Methodological description: A body's membership in a system is a different property from its type; the same class of object can be gravitationally bound, ejected or found in a sparse galactic environment.
+User-friendly description: Discover how objects belong to larger astronomical systems or travel independently.
 
 ##### Gravitationally Bound Systems
 
+Slug: gravitationallyBoundSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish satellite systems, planetary systems, multiple stars, star clusters, galaxies and galaxy clusters by physical membership and characteristic scales.
+Methodological description: Distinguish satellite systems, planetary systems, multiple stars, star clusters, galaxies and galaxy clusters by physical membership and characteristic scales.
+User-friendly description: Compare planetary systems, star clusters, galaxies and other gravitationally connected systems.
 
 ##### Free-Floating Planets
 
+Slug: freeFloatingPlanets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain planetary-mass objects not gravitationally bound to a host star, including proposed ejection or isolated-formation origins and detection by microlensing or thermal infrared emission; distinguish low illumination from a complete absence of radiation.
+Methodological description: Explain planetary-mass objects not gravitationally bound to a host star, including proposed ejection or isolated-formation origins and detection by microlensing or thermal infrared emission; distinguish low illumination from a complete absence of radiation.
+User-friendly description: Learn how planets without a host star may form, move and be detected.
 
 ##### Object Membership and Isolation
 
+Slug: objectMembershipAndIsolation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether an astronomical object is a member of a larger bound system or is apparently isolated, and explain why gravitational context does not by itself determine intrinsic object type.
+Methodological description: Determine whether an astronomical object is a member of a larger bound system or is apparently isolated, and explain why gravitational context does not by itself determine intrinsic object type.
+User-friendly description: Find out whether an object belongs to a larger system without confusing that with what kind of object it is.
 
 ### Observing the Sky
+
+Slug: observingTheSky
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
-This domain addresses how celestial positions, patterns, brightness and changes are represented from an observer's location on Earth. It treats the sky as an observable system while distinguishing apparent motion from the physical causes developed in celestial mechanics.
+Methodological description: This domain addresses how celestial positions, patterns, brightness and changes are represented from an observer's location on Earth. It treats the sky as an observable system while distinguishing apparent motion from the physical causes developed in celestial mechanics.
+User-friendly description: Learn to describe where objects appear in the sky and how their positions change with time and location.
 
 #### Sky Geometry
+
+Slug: skyGeometry
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Positions and separations in the visible sky can be communicated through directional frames and angular quantities rather than terrestrial distance alone.
+Methodological description: Positions and separations in the visible sky can be communicated through directional frames and angular quantities rather than terrestrial distance alone.
+User-friendly description: Use angles and sky coordinates to describe the direction of objects seen from Earth.
 
 ##### Celestial Sphere
 
+Slug: celestialSphere
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the apparent projection of distant objects onto an imaginary sphere without treating that sphere as a physical shell.
+Methodological description: Interpret the apparent projection of distant objects onto an imaginary sphere without treating that sphere as a physical shell.
+User-friendly description: Understand the imaginary celestial sphere used to map the night sky.
 
 ##### Horizon Coordinates
 
+Slug: horizonCoordinates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate a celestial object using altitude and azimuth relative to an observer's horizon and orientation.
+Methodological description: Locate a celestial object using altitude and azimuth relative to an observer's horizon and orientation.
+User-friendly description: Find a sky object's direction using its height above the horizon and compass bearing.
 
 ##### Equatorial Coordinates
 
+Slug: equatorialCoordinates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret right ascension and declination as a coordinate system tied to Earth's rotational axis.
+Methodological description: Interpret right ascension and declination as a coordinate system tied to Earth's rotational axis.
+User-friendly description: Read right ascension and declination to locate objects on a celestial map.
 
 ##### Angular Separation
 
+Slug: angularSeparation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine or compare angular distances and apparent sizes on the sky independently of an object's physical diameter or distance.
+Methodological description: Determine or compare angular distances and apparent sizes on the sky independently of an object's physical diameter or distance.
+User-friendly description: Compare how far apart objects appear in the sky using angles rather than kilometres.
 
 #### Sky Patterns
+
+Slug: skyPatterns
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Recognizable configurations make celestial scenes navigable, but their visibility and apparent arrangement depend on viewpoint and date.
+Methodological description: Recognizable configurations make celestial scenes navigable, but their visibility and apparent arrangement depend on viewpoint and date.
+User-friendly description: Recognize sky patterns and understand how their visibility changes.
 
 ##### Constellations
 
+Slug: constellations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use officially defined regions of the celestial sphere to locate objects without assuming their member stars form a physical cluster.
+Methodological description: Use officially defined regions of the celestial sphere to locate objects without assuming their member stars form a physical cluster.
+User-friendly description: Use constellation regions to locate objects without assuming their stars are physically close together.
 
 ##### Asterisms
 
+Slug: asterisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize named visual star patterns that can cross constellation boundaries and distinguish them from officially defined regions.
+Methodological description: Recognize named visual star patterns that can cross constellation boundaries and distinguish them from officially defined regions.
+User-friendly description: Identify familiar star patterns that are not necessarily official constellations.
 
 ##### Apparent Brightness
 
+Slug: apparentBrightness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare how bright celestial objects look from Earth without equating observed brightness with intrinsic luminosity.
+Methodological description: Compare how bright celestial objects look from Earth without equating observed brightness with intrinsic luminosity.
+User-friendly description: Compare how bright objects look from Earth, without confusing brightness with their actual light output.
 
 ##### Daily Sky Motion
 
+Slug: dailySkyMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the apparent east-to-west paths of celestial objects across the sky, including circumpolar paths.
+Methodological description: Describe the apparent east-to-west paths of celestial objects across the sky, including circumpolar paths.
+User-friendly description: Describe how stars appear to travel across the sky during a day or night.
 
 ##### Seasonal Sky Visibility
 
+Slug: seasonalSkyVisibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why different stars and constellations become visible at different times of the year.
+Methodological description: Explain why different stars and constellations become visible at different times of the year.
+User-friendly description: Explain why different star patterns are visible in different seasons.
 
 ##### Stellar Proper Motion
 
+Slug: stellarProperMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the slow positional motion of a star relative to distant background sources and distinguish this physical change from the daily apparent rotation of the sky.
+Methodological description: Identify the slow positional motion of a star relative to distant background sources and distinguish this physical change from the daily apparent rotation of the sky.
+User-friendly description: Recognize a star's very slow movement against more distant stars.
 
 #### Observation Practice
+
+Slug: observationPractice
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Reliable sky observation requires choosing conditions, finding objects, maintaining records and avoiding preventable observational hazards.
+Methodological description: Reliable sky observation requires choosing conditions, finding objects, maintaining records and avoiding preventable observational hazards.
+User-friendly description: Plan safe, useful sky observations and keep records that others can understand.
 
 ##### Observing Conditions
 
+Slug: observingConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate how clouds, atmospheric turbulence, transparency, artificial light and horizon obstructions affect a planned observation.
+Methodological description: Evaluate how clouds, atmospheric turbulence, transparency, artificial light and horizon obstructions affect a planned observation.
+User-friendly description: Choose observing times and places with suitable weather, darkness and visibility.
 
 ##### Sky Maps and Star Charts
 
+Slug: skyMapsAndStarCharts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use a chart or planetarium representation to identify celestial directions, objects and visibility for a specified place and time.
+Methodological description: Use a chart or planetarium representation to identify celestial directions, objects and visibility for a specified place and time.
+User-friendly description: Read a sky map for a particular location and date.
 
 ##### Astronomical Observation Records
 
+Slug: astronomicalObservationRecords
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Record the time, location, conditions, method and observed changes so that a sighting can be interpreted or compared.
+Methodological description: Record the time, location, conditions, method and observed changes so that a sighting can be interpreted or compared.
+User-friendly description: Record when, where and how you saw something in the sky.
 
 ##### Safe Solar Observation
 
+Slug: safeSolarObservation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish approved solar-viewing methods from unsafe direct viewing or unfiltered optical magnification.
+Methodological description: Distinguish approved solar-viewing methods from unsafe direct viewing or unfiltered optical magnification.
+User-friendly description: Identify safe ways to view the Sun and avoid methods that can damage eyesight.
 
 #### Astronomical Time
+
+Slug: astronomicalTime
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Timekeeping conventions derived from repeated celestial cycles support observation and comparison across dates, without constituting a curriculum in civil time zones.
+Methodological description: Timekeeping conventions derived from repeated celestial cycles support observation and comparison across dates, without constituting a curriculum in civil time zones.
+User-friendly description: Explore how recurring movements of the Sun, Moon and stars are used to measure time.
 
 ##### Solar Time
 
+Slug: solarTime
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe Sun-referenced time as related to the apparent position of the Sun, including mean and apparent solar conventions.
+Methodological description: Describe Sun-referenced time as related to the apparent position of the Sun, including mean and apparent solar conventions.
+User-friendly description: Understand how the Sun's position relates to solar time.
 
 ##### Sidereal Time
 
+Slug: siderealTime
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how rotation relative to distant stars defines sidereal time and predicts which celestial coordinates cross a local meridian.
+Methodological description: Explain how rotation relative to distant stars defines sidereal time and predicts which celestial coordinates cross a local meridian.
+User-friendly description: Use the stars' apparent motion to understand sidereal time.
 
 ##### Astronomical Dates and Epochs
 
+Slug: astronomicalDatesAndEpochs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret a standard astronomical date or reference epoch when comparing observations made at different times.
+Methodological description: Interpret a standard astronomical date or reference epoch when comparing observations made at different times.
+User-friendly description: Interpret astronomical dates and reference epochs when comparing observations.
 
 ##### Lunar Calendar Cycles
 
+Slug: lunarCalendarCycles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate lunar-based calendar intervals to Moon phases while recognizing different calendar conventions.
+Methodological description: Relate lunar-based calendar intervals to Moon phases while recognizing different calendar conventions.
+User-friendly description: Connect the changing phases of the Moon with lunar calendar cycles.
 
 ##### Solar Calendar Cycles
 
+Slug: solarCalendarCycles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate solar-year calendar intervals to Earth's annual revolution and seasons without assuming universal calendar rules.
+Methodological description: Relate solar-year calendar intervals to Earth's annual revolution and seasons without assuming universal calendar rules.
+User-friendly description: Connect the annual motion of Earth with solar calendar cycles.
 
 ### Astronomical Instruments and Evidence
+
+Slug: astronomicalInstrumentsAndEvidence
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 30
 
 [Not implemented](#)
 
-Astronomy infers properties of remote objects from electromagnetic radiation, gravitational effects, particles and spacecraft observations. This domain covers what an observation can reveal, how instruments and methods constrain the evidence, and how competing interpretations are evaluated, not the engineering construction of observatories and spacecraft.
+Methodological description: Astronomy infers properties of remote objects from electromagnetic radiation, gravitational effects, particles and spacecraft observations. This domain covers what an observation can reveal, how instruments and methods constrain the evidence, and how competing interpretations are evaluated, not the engineering construction of observatories and spacecraft.
+User-friendly description: Discover how astronomers gather evidence from light, gravity, particles and space missions to study distant worlds.
 
 #### Telescopes and Detectors
+
+Slug: telescopesAndDetectors
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Instrumentation alters the detail, wavelengths and measurable signals available to observers; its scientific limitations are as important as its capabilities.
+Methodological description: Instrumentation alters the detail, wavelengths and measurable signals available to observers; its scientific limitations are as important as its capabilities.
+User-friendly description: Explore what telescopes and detectors can reveal and why their measurements have limits.
 
 ##### Light-Gathering Aperture
 
+Slug: lightGatheringAperture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how telescope aperture affects collected light and the visibility of faint astronomical sources.
+Methodological description: Explain how telescope aperture affects collected light and the visibility of faint astronomical sources.
+User-friendly description: Find out why a larger telescope aperture can reveal fainter celestial objects.
 
 ##### Angular Resolution
 
+Slug: angularResolution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the ability to distinguish nearby sources, including effects of aperture, wavelength and atmospheric seeing.
+Methodological description: Explain the ability to distinguish nearby sources, including effects of aperture, wavelength and atmospheric seeing.
+User-friendly description: Explain why two nearby objects may look separate or blend together in a telescope.
 
 ##### Optical Telescope Systems
 
+Slug: opticalTelescopeSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the scientific roles of refractors, reflectors and optical configurations without designing their mechanical construction.
+Methodological description: Interpret the scientific roles of refractors, reflectors and optical configurations without designing their mechanical construction.
+User-friendly description: Compare how refracting and reflecting telescopes collect and focus light.
 
 ##### Astronomical Detectors
 
+Slug: astronomicalDetectors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how detectors capture light or other signals and why exposure, noise, calibration and sensitivity matter.
+Methodological description: Explain how detectors capture light or other signals and why exposure, noise, calibration and sensitivity matter.
+User-friendly description: See how astronomical detectors measure faint signals and why noise and calibration matter.
 
 ##### Radio Astronomy
 
+Slug: radioAstronomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret observations at radio wavelengths, including the kinds of astronomical sources and atmospheric or detector limitations relevant to these measurements.
+Methodological description: Interpret observations at radio wavelengths, including the kinds of astronomical sources and atmospheric or detector limitations relevant to these measurements.
+User-friendly description: Discover what radio signals reveal about the universe.
 
 ##### Astronomical Interferometry
 
+Slug: astronomicalInterferometry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how correlated signals from separated receivers constrain angular structure in radio and optical astronomy and why baseline geometry matters.
+Methodological description: Explain how correlated signals from separated receivers constrain angular structure in radio and optical astronomy and why baseline geometry matters.
+User-friendly description: Understand how combining signals from separated telescopes can reveal finer detail.
 
 ##### Space-Based Observation
 
+Slug: spaceBasedObservation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare observations above and below Earth's atmosphere in terms of accessible wavelengths and atmospheric interference.
+Methodological description: Compare observations above and below Earth's atmosphere in terms of accessible wavelengths and atmospheric interference.
+User-friendly description: Compare observations from space with those made through Earth's atmosphere.
 
 #### Astronomical Spectra
+
+Slug: astronomicalSpectra
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Light encodes information about temperature, composition and motion through its distribution across wavelength and the signatures imprinted by matter.
+Methodological description: Light encodes information about temperature, composition and motion through its distribution across wavelength and the signatures imprinted by matter.
+User-friendly description: Learn how splitting light into wavelengths reveals properties of distant objects.
 
 ##### Continuous Spectra
 
+Slug: continuousSpectra
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer broad thermal properties from the distribution of emitted light across wavelengths while recognizing idealized blackbody assumptions.
+Methodological description: Infer broad thermal properties from the distribution of emitted light across wavelengths while recognizing idealized blackbody assumptions.
+User-friendly description: Use a continuous spectrum to explore an object's temperature and emitted light.
 
 ##### Emission Spectral Lines
 
+Slug: emissionSpectralLines
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret discrete bright features produced by matter radiating at characteristic wavelengths.
+Methodological description: Interpret discrete bright features produced by matter radiating at characteristic wavelengths.
+User-friendly description: Recognize bright spectral lines as clues to the material producing light.
 
 ##### Absorption Spectral Lines
 
+Slug: absorptionSpectralLines
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret dark spectral features produced by matter absorbing characteristic wavelengths from background radiation.
+Methodological description: Interpret dark spectral features produced by matter absorbing characteristic wavelengths from background radiation.
+User-friendly description: Recognize dark spectral lines as clues to material absorbing light.
 
 ##### Doppler Shift
 
+Slug: dopplerShift
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret wavelength shifts due to relative radial motion, distinguishing this local effect from cosmological expansion.
+Methodological description: Interpret wavelength shifts due to relative radial motion, distinguishing this local effect from cosmological expansion.
+User-friendly description: Use shifts in wavelength to investigate motion toward or away from an observer.
 
 ##### Multiwavelength Observation
 
+Slug: multiwavelengthObservation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate observations in different electromagnetic bands to distinct physical components and processes within one object.
+Methodological description: Relate observations in different electromagnetic bands to distinct physical components and processes within one object.
+User-friendly description: Combine images and measurements from different kinds of light to understand a celestial object.
 
 #### Distances and Physical Properties
+
+Slug: distancesAndPhysicalProperties
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Astronomical measurements connect remote observations to inferred size, distance and energy output using explicit models rather than direct contact.
+Methodological description: Astronomical measurements connect remote observations to inferred size, distance and energy output using explicit models rather than direct contact.
+User-friendly description: Explore how astronomers estimate properties they cannot measure directly.
 
 ##### Stellar Parallax
 
+Slug: stellarParallax
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer distances to nearby stars from the apparent displacement caused by changing observing positions.
+Methodological description: Infer distances to nearby stars from the apparent displacement caused by changing observing positions.
+User-friendly description: Use a nearby star's changing apparent position to estimate its distance.
 
 ##### Apparent Magnitude
 
+Slug: apparentMagnitude
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret a logarithmic brightness scale describing how bright a source appears to an observer.
+Methodological description: Interpret a logarithmic brightness scale describing how bright a source appears to an observer.
+User-friendly description: Understand the scale astronomers use to describe how bright a celestial object appears.
 
 ##### Absolute Magnitude
 
+Slug: absoluteMagnitude
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret a source's magnitude at a defined reference distance and use it to compare intrinsic brightness.
+Methodological description: Interpret a source's magnitude at a defined reference distance and use it to compare intrinsic brightness.
+User-friendly description: Compare objects' intrinsic brightness using the same reference distance.
 
 ##### Standard Candles
 
+Slug: standardCandles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how calibrated luminosity indicators support distance estimates beyond direct parallax measurements.
+Methodological description: Explain how calibrated luminosity indicators support distance estimates beyond direct parallax measurements.
+User-friendly description: Discover how objects of known brightness can help estimate distances.
 
 ##### Cosmic Distance Ladder
 
+Slug: cosmicDistanceLadder
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why different distance indicators apply across different ranges and how calibration errors can propagate.
+Methodological description: Explain why different distance indicators apply across different ranges and how calibration errors can propagate.
+User-friendly description: See why astronomers use different methods to measure distances across the universe.
 
 ##### Astronomical Distance Units
 
+Slug: astronomicalDistanceUnits
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret astronomical units, light-years and parsecs as units of length, relate their scales and distinguish light-travel distance from travel duration.
+Methodological description: Interpret astronomical units, light-years and parsecs as units of length, relate their scales and distinguish light-travel distance from travel duration.
+User-friendly description: Compare astronomical units, light-years and parsecs as measures of distance.
 
 #### Evidence and Interpretation
 
+Slug: evidenceAndInterpretation
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Astronomical conclusions require comparisons between predictions and measured signals, including attention to uncertainty and alternative explanations.
+Methodological description: Astronomical conclusions require comparisons between predictions and measured signals, including attention to uncertainty and alternative explanations.
+User-friendly description: Learn to judge astronomical conclusions using measurements, uncertainties and competing explanations.
 
 ##### Astronomical Light Curves
 
+Slug: astronomicalLightCurves
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret changes in brightness over time as evidence for rotation, variability, eclipses or transiting objects.
+Methodological description: Interpret changes in brightness over time as evidence for rotation, variability, eclipses or transiting objects.
+User-friendly description: Read a brightness-over-time graph for clues to changes in a celestial object.
 
 ##### Measurement Uncertainty
 
+Slug: measurementUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate how instrument limits, measurement error and model assumptions affect the confidence of an astronomical inference.
+Methodological description: Evaluate how instrument limits, measurement error and model assumptions affect the confidence of an astronomical inference.
+User-friendly description: Recognize how errors and assumptions affect confidence in astronomical measurements.
 
 ##### Observational Selection Effects
 
+Slug: observationalSelectionEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how detection thresholds and survey methods bias the populations of celestial objects that appear in catalogs.
+Methodological description: Identify how detection thresholds and survey methods bias the populations of celestial objects that appear in catalogs.
+User-friendly description: Discover why telescopes and surveys detect some objects more easily than others.
 
 ##### Astronomical Model Testing
 
+Slug: astronomicalModelTesting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare competing explanations with observations and revised predictions, including historically important planetary models.
+Methodological description: Compare competing explanations with observations and revised predictions, including historically important planetary models.
+User-friendly description: Compare astronomical models against evidence and decide which predictions hold up.
 
 #### Spacecraft Observations
 
+Slug: spacecraftObservations
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Remote flybys, orbiters, landers and sample-return missions provide different access to remote worlds. These competencies concern scientific evidence, temporal coverage, sampling limits and interpretation; they exclude the engineering design of the vehicles.
+Methodological description: Remote flybys, orbiters, landers and sample-return missions provide different access to remote worlds. These competencies concern scientific evidence, temporal coverage, sampling limits and interpretation; they exclude the engineering design of the vehicles.
+User-friendly description: Explore what different spacecraft missions can measure about distant worlds.
 
 ##### Flyby Measurements
 
+Slug: flybyMeasurements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret scientific information obtained during a brief spacecraft encounter, including coverage constraints.
+Methodological description: Interpret scientific information obtained during a brief spacecraft encounter, including coverage constraints.
+User-friendly description: See what a brief spacecraft flyby can reveal—and what it may miss.
 
 ##### Orbital Measurements
 
+Slug: orbitalMeasurements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how repeated observations from an orbiting spacecraft support mapping and temporal monitoring.
+Methodological description: Explain how repeated observations from an orbiting spacecraft support mapping and temporal monitoring.
+User-friendly description: Understand how repeated observations from orbit help map changing worlds.
 
 ##### Landers and Rovers as Scientific Probes
 
+Slug: landersAndRoversAsScientificProbes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the local environmental evidence obtained by landed missions without treating vehicle design as an astronomy competency.
+Methodological description: Interpret the local environmental evidence obtained by landed missions without treating vehicle design as an astronomy competency.
+User-friendly description: Learn what surface probes and rovers can discover from local measurements.
 
 ##### Sample Return Evidence
 
+Slug: sampleReturnEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how collected extraterrestrial materials can be analyzed and how contamination or context loss affects conclusions.
+Methodological description: Explain how collected extraterrestrial materials can be analyzed and how contamination or context loss affects conclusions.
+User-friendly description: Explore what returned space samples reveal and how contamination can affect findings.
 
 #### Gravitational and Particle Probes
+
+Slug: gravitationalAndParticleProbes
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Gravitational lensing, gravitational waves and astrophysical particles supply information that differs from ordinary electromagnetic imaging and spectroscopy; a multimessenger inference combines distinct independent signals. Lensing is observed through light affected by gravity and is not itself a non-electromagnetic measurement.
+Methodological description: Gravitational lensing, gravitational waves and astrophysical particles supply information that differs from ordinary electromagnetic imaging and spectroscopy; a multimessenger inference combines distinct independent signals. Lensing is observed through light affected by gravity and is not itself a non-electromagnetic measurement.
+User-friendly description: Investigate how gravity and particles provide evidence beyond ordinary astronomical images.
 
 ##### Gravitational Lensing
 
+Slug: gravitationalLensing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret bending, magnification and distortion of background light by intervening gravity as evidence about mass and source geometry.
+Methodological description: Interpret bending, magnification and distortion of background light by intervening gravity as evidence about mass and source geometry.
+User-friendly description: See how gravity bends and magnifies light, revealing otherwise hidden mass.
 
 ##### Gravitational-Wave Astronomy
 
+Slug: gravitationalWaveAstronomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret gravitational-wave detections as evidence about accelerating compact massive systems and compare the signals with electromagnetic observations.
+Methodological description: Interpret gravitational-wave detections as evidence about accelerating compact massive systems and compare the signals with electromagnetic observations.
+User-friendly description: Find out what gravitational-wave signals tell us about massive, rapidly changing systems.
 
 ##### Neutrino Astronomy
 
+Slug: neutrinoAstronomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how astrophysical neutrinos probe energetic processes that electromagnetic observations may not reveal.
+Methodological description: Explain how astrophysical neutrinos probe energetic processes that electromagnetic observations may not reveal.
+User-friendly description: Discover how neutrinos reveal energetic events that light may not fully show.
 
 ##### Multimessenger Evidence
 
+Slug: multimessengerEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how electromagnetic light, neutrinos, gravitational waves and particles can offer complementary evidence about an astrophysical event.
+Methodological description: Explain how electromagnetic light, neutrinos, gravitational waves and particles can offer complementary evidence about an astrophysical event.
+User-friendly description: Combine light, gravitational waves and particle detections to investigate one cosmic event.
 
 ### Celestial Mechanics
+
+Slug: celestialMechanics
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
-This domain concerns how gravity and angular momentum govern orbital motion, rotation and mutual perturbations across planetary and stellar systems. Geometrical appearances arising from these motions are addressed separately when the observational phenomenon itself is the competency.
+Methodological description: This domain concerns how gravity and angular momentum govern orbital motion, rotation and mutual perturbations across planetary and stellar systems. Geometrical appearances arising from these motions are addressed separately when the observational phenomenon itself is the competency.
+User-friendly description: Explore how gravity and motion shape the paths and rotations of objects in space.
 
 #### Gravitational Motion
+
+Slug: gravitationalMotion
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Gravitational interactions produce trajectories governed by mass, initial conditions and the reference frame in which motion is described.
+Methodological description: Gravitational interactions produce trajectories governed by mass, initial conditions and the reference frame in which motion is described.
+User-friendly description: Discover how gravity governs the motion of celestial bodies.
 
 ##### Universal Gravitation
 
+Slug: universalGravitation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply the dependence of gravitational attraction on interacting masses and separation to astronomical situations.
+Methodological description: Apply the dependence of gravitational attraction on interacting masses and separation to astronomical situations.
+User-friendly description: Use the masses and distances of objects to reason about gravitational attraction.
 
 ##### Kepler's First Law
 
+Slug: keplersFirstLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply the elliptical-orbit relation, with the central gravitating body at one focus in the idealized two-body model, to the geometry of bound orbits.
+Methodological description: Apply the elliptical-orbit relation, with the central gravitating body at one focus in the idealized two-body model, to the geometry of bound orbits.
+User-friendly description: Recognize how an ideal orbit can follow an ellipse with the central body at one focus.
 
 ##### Kepler's Second Law
 
+Slug: keplersSecondLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use the equal-areas-in-equal-times relation to explain variation in orbital speed as an orbiting body changes its distance from the central focus.
+Methodological description: Use the equal-areas-in-equal-times relation to explain variation in orbital speed as an orbiting body changes its distance from the central focus.
+User-friendly description: Explain why an orbiting body moves faster when it is closer to the central body.
 
 ##### Kepler's Third Law
 
+Slug: keplersThirdLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the square of orbital period to the cube of semi-major axis with the appropriate gravitational mass dependence and limitations of the two-body model.
+Methodological description: Relate the square of orbital period to the cube of semi-major axis with the appropriate gravitational mass dependence and limitations of the two-body model.
+User-friendly description: Relate an object's orbital period to the size of its orbit and the gravitating mass.
 
 ##### Orbital Energy
 
+Slug: orbitalEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate gravitational potential and kinetic energy to bound and unbound orbital trajectories.
+Methodological description: Relate gravitational potential and kinetic energy to bound and unbound orbital trajectories.
+User-friendly description: Explore how energy determines whether an orbit remains bound or escapes.
 
 ##### Barycentric Motion
 
+Slug: barycentricMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why interacting celestial bodies orbit a shared center of mass rather than one body always remaining stationary.
+Methodological description: Explain why interacting celestial bodies orbit a shared center of mass rather than one body always remaining stationary.
+User-friendly description: Understand why two orbiting bodies move around a shared centre of mass.
 
 #### Orbits and Rotations
+
+Slug: orbitsAndRotations
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Orbital shapes and body orientations are specified through distinct physical parameters that affect long-term celestial behavior.
+Methodological description: Orbital shapes and body orientations are specified through distinct physical parameters that affect long-term celestial behavior.
+User-friendly description: Describe and compare the shapes, periods and orientations of celestial motions.
 
 ##### Orbital Elements
 
+Slug: orbitalElements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret inclination, eccentricity and other orbital descriptors when comparing celestial trajectories.
+Methodological description: Interpret inclination, eccentricity and other orbital descriptors when comparing celestial trajectories.
+User-friendly description: Read the parameters that describe an orbit's shape and orientation.
 
 ##### Orbital Periods
 
+Slug: orbitalPeriods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the time needed to complete an orbit and compare sidereal and synodic periods, distinguishing orbital revolution from rotation about the body's own axis.
+Methodological description: Interpret the time needed to complete an orbit and compare sidereal and synodic periods, distinguishing orbital revolution from rotation about the body's own axis.
+User-friendly description: Distinguish the time taken to orbit another body from the time taken to spin.
 
 ##### Axial Rotation
 
+Slug: axialRotation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the spin of a world about its axis, including rotation period and direction, independently of the tilt or precession of that axis.
+Methodological description: Describe the spin of a world about its axis, including rotation period and direction, independently of the tilt or precession of that axis.
+User-friendly description: Describe a celestial body's rotation about its own axis.
 
 ##### Axial Tilt
 
+Slug: axialTilt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the angle between a body's spin axis and orbital reference direction and explain its influence on illumination geometry and seasons.
+Methodological description: Interpret the angle between a body's spin axis and orbital reference direction and explain its influence on illumination geometry and seasons.
+User-friendly description: Explore how the tilt of a world's axis changes the pattern of illumination.
 
 ##### Synchronous Rotation
 
+Slug: synchronousRotation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how spin–orbit coupling can produce a repeating orientation toward an orbital partner.
+Methodological description: Explain how spin–orbit coupling can produce a repeating orientation toward an orbital partner.
+User-friendly description: Explain why some worlds keep nearly the same face toward their orbital partners.
 
 #### Dynamical Interactions
+
+Slug: dynamicalInteractions
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Real celestial systems include many bodies, so resonances, tides and perturbations can alter otherwise idealized orbital motion.
+Methodological description: Real celestial systems include many bodies, so resonances, tides and perturbations can alter otherwise idealized orbital motion.
+User-friendly description: Explore how tides and other gravitational interactions alter celestial motions.
 
 ##### Tidal Forces
 
+Slug: tidalForces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain differences in gravitational pull across an extended body and their consequences for distortion and orbital evolution.
+Methodological description: Explain differences in gravitational pull across an extended body and their consequences for distortion and orbital evolution.
+User-friendly description: See how unequal gravitational pulls across a world create tides.
 
 ##### Orbital Resonances
 
+Slug: orbitalResonances
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize recurring period relationships that can organize or destabilize orbital systems.
+Methodological description: Recognize recurring period relationships that can organize or destabilize orbital systems.
+User-friendly description: Recognize when repeating orbital timing relationships affect a system.
 
 ##### Gravitational Perturbations
 
+Slug: gravitationalPerturbations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret departures from a simple two-body orbit caused by additional gravitational influences.
+Methodological description: Interpret departures from a simple two-body orbit caused by additional gravitational influences.
+User-friendly description: Explain how extra gravitational forces change an otherwise simple orbit.
 
 ##### Orbital Stability
 
+Slug: orbitalStability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate how changing orbital parameters and interactions can affect whether a system remains dynamically stable.
+Methodological description: Evaluate how changing orbital parameters and interactions can affect whether a system remains dynamically stable.
+User-friendly description: Explore what helps an orbital system remain stable—or makes it change.
 
 ### Earth, Moon and Sun
 
