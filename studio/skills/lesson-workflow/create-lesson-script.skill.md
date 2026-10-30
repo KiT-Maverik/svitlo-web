@@ -204,7 +204,7 @@ Target Lesson: <actual existing Lesson directory and textbook>
 Audience: <age/stage, prior knowledge, language, accessibility constraints>
 Approved Methodologist source: [Methodologist Brief](%VERIFIED_RELATIVE_BRIEF_LINK%) <or exact approved legacy file>
 Learning outcomes: <from the approved Methodologist document>
-Target Skills: As approved in the linked Methodologist Brief (read and verify its direct Skill source-file links; do not keep a competing copied list here)
+Target Skills: As approved in the linked Methodologist Brief (inspect the planned `Data/Skills/` source-file links, verify existing targets, disclose any migration-pending targets; do not keep a competing copied list here)
 Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
