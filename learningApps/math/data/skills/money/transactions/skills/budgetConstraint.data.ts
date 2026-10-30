@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { transactions_Skills_Ids } from './index.ids';
 
 export const budgetConstraint_Skill_Data = buildSkillConfig({
-  id: transactions_Skills_Ids.budgetConstraint,
+  id: '945f887d-4370-42b0-aefa-02a88a06f6d8',
   name: {
     en: "Choosing purchases within a budget",
     lt: "Pirkinių pasirinkimas pagal biudžetą",
