@@ -368,7 +368,7 @@ function run() {
     const local = new Map();
     try {
       // Validate before planning writes: nothing in a failed domain is modified.
-      if (subtree.some(e => e.issues.length)) throw Error(subtree.filter(e => e.issues.length).map(e => e.key + ': ' + e.issues.join('; ')).join('; ');
+      if (subtree.some(e => e.issues.length)) throw Error(subtree.filter(e => e.issues.length).map(e => e.key + ': ' + e.issues.join('; ')).join('; '));
       // Skipping a fully pending subtree does not require fabricated child IDs.
       if (subtree.every(e => e.action === 'skip' && e.status === 'pending')) {
         skipped += subtree.length;
