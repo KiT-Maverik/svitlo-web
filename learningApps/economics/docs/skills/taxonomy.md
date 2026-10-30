@@ -22,2246 +22,3971 @@ Code files: 0/17 Domains · 0/71 Groups · 0/257 Skills
 
 ### Економічне мислення
 
+Slug: economicThinking
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Економічний аналіз вивчає, як люди й організації роблять вибір за обмежених ресурсів, реагують на стимули та координують рішення. Це понятійна основа інших розділів, а не перелік побутових вправ.
+Methodological description: Economic analysis examines how people and organizations choose among alternatives when resources are limited, respond to incentives, and coordinate decisions. It provides the conceptual foundation for other economic domains rather than a collection of everyday exercises.
+User-friendly description: Understand how people make choices, respond to incentives, and share limited resources.
 
 #### Обмеженість і вибір
+
+Slug: scarcityAndChoice
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Неможливість одночасно задовольнити всі бажання змушує розглядати альтернативи та вартість відмови від них.
+Methodological description: Because not all wants can be satisfied at once, economic decisions involve comparing alternatives and considering the value of the options forgone.
+User-friendly description: Explore why limited resources require us to make choices.
 
 ##### Обмеженість ресурсів
 
+Slug: resourceScarcity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, чому час, природні ресурси, праця й виробничі потужності мають альтернативні способи використання, незалежно від кількості грошей.
+Methodological description: Explain why time, natural resources, labor, and productive capacity have alternative uses, independently of how much money is available.
+User-friendly description: Recognize that scarcity concerns more than simply having too little money.
 
 ##### Альтернативна вартість
 
+Slug: opportunityCost
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати цінність найкращої втраченої альтернативи при виборі; не прирівнювати її автоматично до грошових витрат.
+Methodological description: Determine the value of the best alternative given up when choosing an option; do not automatically equate opportunity cost with monetary expenditure.
+User-friendly description: Identify the most valuable option you give up when making a choice.
 
 ##### Компроміси економічного вибору
 
+Slug: economicTradeoffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, які цілі чи вигоди доводиться частково поступатися заради іншої цілі за наявних обмежень.
+Methodological description: Identify the objectives or benefits that must be partly sacrificed to pursue another objective under given constraints.
+User-friendly description: See how pursuing one goal can mean giving up part of another.
 
 ##### Граничний аналіз
 
+Slug: marginalAnalysis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати додаткову вигоду і додаткову вартість наступної одиниці дії, а не лише сукупні результати.
+Methodological description: Compare the additional benefit and additional cost of one more unit of an activity rather than relying only on total outcomes.
+User-friendly description: Decide whether one more unit of an activity is worth its extra cost.
 
 ##### Межа виробничих можливостей
 
+Slug: productionPossibilitiesFrontier
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Будувати або інтерпретувати межу досяжних комбінацій випуску двох благ за наявних ресурсів і технологій; відрізняти точки ефективного використання, невикористаних можливостей та недосяжні комбінації.
+Methodological description: Construct or interpret the frontier of attainable combinations of two goods for given resources and technology; distinguish efficient points, underutilized capacity, and unattainable combinations.
+User-friendly description: Explore the different outputs an economy can produce with its available resources.
 
 #### Стимули та рішення
+
+Slug: incentivesAndDecisions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Вибір змінюється під впливом вигід, витрат, правил та доступної інформації; передбачуваність реакцій залежить від контексту.
+Methodological description: Choices are influenced by benefits, costs, rules, and available information; the predictability of responses depends on context.
+User-friendly description: Discover how rewards, costs, and information affect decisions.
 
 ##### Економічні стимули
 
+Slug: economicIncentives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, як винагорода, штраф, ціна або соціальна норма може змінити поведінку людей чи організацій.
+Methodological description: Identify how a reward, penalty, price, or social norm can change the behavior of individuals or organizations.
+User-friendly description: Explain how rewards and penalties can influence economic choices.
 
 ##### Бюджетні та ресурсні обмеження
 
+Slug: budgetAndResourceConstraints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Будувати множину допустимих економічних альтернатив для будь-якого учасника за фінансовими, часовими, технологічними або іншими ресурсними обмеженнями; оцінка конкретного споживчого набору є спеціалізованим застосуванням.
+Methodological description: Construct the feasible set of economic alternatives available to any decision-maker under financial, time, technological, or other resource constraints; evaluating a specific consumption bundle is a specialized application.
+User-friendly description: Identify which options are possible within money, time, and other limits.
 
 ##### Невизначеність у виборі
 
+Slug: choiceUnderUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти відомі наслідки, ймовірні результати та ситуації, де ймовірності або самі результати невідомі.
+Methodological description: Distinguish outcomes known in advance, probabilistic results, and situations in which probabilities or even the outcomes themselves are unknown.
+User-friendly description: Compare choices when the outcome is certain, risky, or unknown.
 
 #### Обмін та інституції
+
+Slug: exchangeAndInstitutions
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Співпраця й розподіл ресурсів залежать від спеціалізації, домовленостей, прав та механізмів їх дотримання.
+Methodological description: Cooperation and resource allocation depend on specialization, agreements, rights, and mechanisms for enforcing them.
+User-friendly description: Explore how agreements and rules help people cooperate and exchange.
 
 ##### Вигоди добровільного обміну
 
+Slug: gainsFromVoluntaryExchange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Показувати, за яких обставин дві сторони можуть виграти від угоди, не припускаючи, що кожна реальна угода справедлива.
+Methodological description: Show when both parties may benefit from a voluntary transaction without assuming every real-world transaction is fair.
+User-friendly description: Understand how trading can benefit both sides without guaranteeing fairness.
 
 ##### Поділ праці
 
+Slug: divisionOfLabor
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, як розподіл виробничих завдань між виконавцями впливає на продуктивність та взаємозалежність.
+Methodological description: Identify how distributing production tasks among different workers changes productivity and mutual dependence.
+User-friendly description: See how specialized tasks can make work more productive.
 
 ##### Права власності
 
+Slug: propertyRights
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як визначені права володіння, користування й розпорядження впливають на стимули та економічні конфлікти.
+Methodological description: Explain how defined rights to own, use, and transfer property affect incentives and economic conflicts.
+User-friendly description: Explore why clear property rights matter for economic decisions.
 
 ##### Трансакційні витрати
 
+Slug: transactionCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати витрати пошуку, переговорів, перевірки та забезпечення угоди, які існують понад ціну товару.
+Methodological description: Identify the costs of searching, negotiating, verifying, and enforcing an agreement beyond the price of the good itself.
+User-friendly description: Recognize the time and effort involved in making an exchange.
 
 #### Стратегічна взаємодія
+
+Slug: strategicInteraction
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Результат рішення одного учасника може залежати від вибору інших, а індивідуальний інтерес — розходитися зі спільним.
+Methodological description: The consequences of one participant's decision may depend on others' choices, and individual incentives can diverge from collective interests.
+User-friendly description: Discover why your best choice can depend on what others do.
 
 ##### Стратегічна взаємозалежність
 
+Slug: strategicInterdependence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати рішення, де вигода кожного учасника змінюється відповідно до можливих дій інших.
+Methodological description: Analyze choices in which each participant's payoff changes according to the possible actions of other participants.
+User-friendly description: Explore decisions whose outcomes depend on other people's actions.
 
 ##### Рівновага стратегій
 
+Slug: strategicEquilibrium
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати ситуацію, в якій жоден учасник не має стимулу одноосібно змінювати свою стратегію за фіксованих рішень інших.
+Methodological description: Identify a situation in which no participant has an incentive to change strategy unilaterally while others' strategies remain fixed.
+User-friendly description: Recognize when nobody can improve their outcome by changing strategy alone.
 
 ##### Проблема колективної дії
 
+Slug: collectiveActionProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти випадки, коли індивідуально привабливі рішення породжують небажаний спільний результат, і розглядати механізми координації.
+Methodological description: Recognize circumstances in which individually attractive actions produce an undesirable collective outcome, and consider coordination mechanisms.
+User-friendly description: Understand why individually sensible decisions can create problems for everyone.
 
 ### Поведінка споживачів
+
+Slug: consumerBehavior
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Споживачі оцінюють потреби, якість, альтернативи й інформацію в умовах різних доходів і психологічних обмежень. Тут досліджується їхній вибір, а не методи просування товарів продавцем.
+Methodological description: Consumers evaluate needs, quality, alternatives, and information under varying incomes and psychological constraints. This domain analyzes their choices rather than sellers' methods of promoting goods.
+User-friendly description: Explore how people choose what to buy and what information shapes their decisions.
 
 #### Потреби та вподобання
+
+Slug: needsAndPreferences
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Особисті цілі й уподобання пояснюють, чому однакові товари не мають однакової цінності для всіх покупців.
+Methodological description: Personal goals and preferences explain why identical goods need not have identical value for different buyers.
+User-friendly description: Discover why different people value products and experiences differently.
 
 ##### Потреби й бажання
 
+Slug: needsAndWants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти необхідне для визначеної мети чи умов життя від додаткових уподобань без нав'язування універсального списку бажань.
+Methodological description: Distinguish what is necessary for a specified goal or living conditions from additional preferences without imposing a universal list of desires.
+User-friendly description: Tell the difference between needs and wants in a particular situation.
 
 ##### Споживчі вподобання
 
+Slug: consumerPreferences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Описувати, як людина впорядковує альтернативні набори товарів або послуг відповідно до власних пріоритетів.
+Methodological description: Describe how an individual ranks alternative bundles of goods and services according to their own priorities.
+User-friendly description: Compare how someone might rank different combinations of goods.
 
 ##### Корисність
 
+Slug: utility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати корисність як модель вподобань і цінності споживчих альтернатив для людини без припущення про єдину об’єктивну одиницю задоволення.
+Methodological description: Interpret utility as a model of an individual's preferences and valuation of consumption alternatives without assuming an objective universal unit of satisfaction.
+User-friendly description: Understand utility as a way of describing what someone values.
 
 ##### Гранична корисність
 
+Slug: marginalUtility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зміну корисності від наступної одиниці споживання за незмінності релевантних умов і відрізняти її від загальної корисності.
+Methodological description: Evaluate the change in utility from consuming an additional unit with relevant conditions held constant; distinguish it from total utility.
+User-friendly description: Explore what an extra unit of something adds to its value for you.
 
 ##### Споживчий вибір за обмеженого бюджету
 
+Slug: consumerChoiceWithLimitedBudget
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати доступні набори товарів і послуг за вподобаннями та визначеним доходом і цінами; застосовувати споживче бюджетне обмеження, не підмінюючи ним загальну модель ресурсних обмежень.
+Methodological description: Compare affordable bundles of goods and services according to preferences, income, and prices; apply the consumer budget constraint without treating it as the full model of all resource constraints.
+User-friendly description: Choose between available products when income and prices limit the options.
 
 #### Інформація та права споживача
 
+Slug: consumerInformationAndRights
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Якість рішення залежить не лише від ціни, а й від відомостей про продукт, контрактні умови та можливості захисту.
+Methodological description: Sound consumer decisions depend not only on price but also on product information, contract terms, and possible protections.
+User-friendly description: Learn how information and consumer rights affect purchase decisions.
 
 ##### Повна вартість покупки
 
+Slug: totalCostOfPurchase
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати всі суттєві витрати з погляду покупця — доставку, користування, обслуговування, комісії — для порівняння альтернатив навіть тоді, коли ці витрати зазначені прозоро. Виявлення нав’язаних продавцем опцій належить до комерційних практик.
+Methodological description: Estimate all substantial buyer-side costs, including delivery, operation, maintenance, and fees, when comparing options, even when these costs are disclosed. Seller-imposed optional extras belong to commercial-practices analysis.
+User-friendly description: Compare the true overall cost of purchases, not just the displayed price.
 
 ##### Якість споживчої інформації
 
+Slug: qualityOfConsumerInformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перевіряти походження, актуальність і доказовість тверджень про товари й послуги, зокрема незалежність відгуків, репрезентативність рейтингів і наявність комерційного інтересу джерела.
+Methodological description: Assess the origin, timeliness, and evidence supporting claims about goods and services, including review independence, rating representativeness, and sources' commercial interests.
+User-friendly description: Check whether product claims, ratings, and reviews are reliable.
 
 ##### Права та обов’язки споживача
 
+Slug: consumerRightsAndResponsibilities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити гарантію, повернення, обов’язки продавця і покупця з урахуванням застосовного правового контексту.
+Methodological description: Interpret warranties, returns, and buyer and seller obligations in the applicable legal context.
+User-friendly description: Recognize the rights and responsibilities involved in buying something.
 
 ##### Ціна за одиницю товару
 
+Slug: unitPricing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Приводити вартість пропозицій до порівнянних одиниць маси, об’єму або кількості з урахуванням складу набору, якості й умов акції; нижча ціна упаковки не обов’язково означає нижчу ціну одиниці.
+Methodological description: Convert offer prices into comparable units of mass, volume, or quantity while accounting for bundle contents, quality, and promotional conditions; a cheaper package need not have a cheaper unit price.
+User-friendly description: Compare products fairly by calculating the cost per unit.
 
 #### Поведінкові чинники вибору
+
+Slug: behavioralFactorsInChoice
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Обмежена увага й раціональність, часові уподобання, формат подання та вибір стандартної опції змінюють економічні рішення навіть за однакової формальної множини можливостей.
+Methodological description: Limited attention and rationality, time preferences, presentation formats, and defaults can alter economic choices even when the formal options are unchanged.
+User-friendly description: Discover how the way choices are presented influences decisions.
 
 ##### Обмежена раціональність
 
+Slug: boundedRationality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як нестача часу, знань чи обчислювальних можливостей спричиняє використання спрощених правил вибору.
+Methodological description: Explain how limits of time, knowledge, or computational ability lead decision-makers to use simplified rules.
+User-friendly description: See why people often use shortcuts rather than comparing every option.
 
 ##### Ефект фреймінгу
 
+Slug: framingEffect
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, як еквівалентні відомості, подані як виграші або втрати, здатні змінити оцінку рішення.
+Methodological description: Identify how equivalent information framed as gains or losses can change the assessment of a choice.
+User-friendly description: Explore why the same facts can feel different when described as gains or losses.
 
 ##### Упередження щодо теперішнього
 
+Slug: presentBias
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати систематичне переоцінювання негайних вигід порівняно з відкладеними наслідками.
+Methodological description: Recognize systematic overvaluation of immediate benefits relative to delayed consequences.
+User-friendly description: Understand why immediate rewards may outweigh better future outcomes in our decisions.
 
 ##### Архітектура вибору
 
+Slug: choiceArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вплив стандартних опцій, порядку подання та складності відмови на рішення без зміни самих альтернатив.
+Methodological description: Assess how default options, presentation order, and the difficulty of opting out affect choices without changing the underlying alternatives.
+User-friendly description: Notice how defaults and option layouts can steer a decision.
 
 ### Ринки та конкуренція
+
+Slug: marketsAndCompetition
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 20
 
 [Not implemented](#)
 
-Ринкові ціни й обсяги формуються взаємодією покупців і продавців за певних правил і структур конкуренції. Предметом є механізм ринку, а не індивідуальна техніка продажу.
+Methodological description: Market prices and quantities arise from interactions between buyers and sellers under particular rules and competitive structures. This domain explains market mechanisms, not individual selling techniques.
+User-friendly description: Understand how buyers, sellers, and competition shape markets.
 
 #### Попит
 
+Slug: demand
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Бажаний обсяг покупки залежить від ціни, доходів, вподобань, очікувань і цін пов’язаних продуктів.
+Methodological description: Desired purchase quantities depend on price, income, preferences, expectations, and prices of related products.
+User-friendly description: Discover what affects how much consumers want to buy.
 
 ##### Закон попиту
 
+Slug: lawOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати зв’язок ціни з величиною попиту за незмінності інших факторів, розрізняючи правило й можливі винятки.
+Methodological description: Interpret the relationship between price and quantity demanded when other factors are held constant, distinguishing the general pattern from possible exceptions.
+User-friendly description: Explore why a higher price usually means fewer units are wanted.
 
 ##### Зміна величини попиту
 
+Slug: changeInQuantityDemanded
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати рух уздовж кривої попиту, спричинений зміною власної ціни товару.
+Methodological description: Identify movement along a demand curve caused by a change in the good's own price.
+User-friendly description: Recognize how a price change moves us along a demand curve.
 
 ##### Зміщення попиту
 
+Slug: shiftInDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати вплив доходів, очікувань, уподобань і цін замінників чи доповнень на всю залежність попиту.
+Methodological description: Identify how income, expectations, tastes, and the prices of substitutes and complements change the entire demand relationship.
+User-friendly description: Explain what can shift demand even if a product's price stays the same.
 
 #### Пропозиція
 
+Slug: supply
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Рішення продавця про випуск залежать від ціни, витрат, продуктивності, очікувань і доступності ресурсів.
+Methodological description: Sellers' production decisions depend on price, costs, productivity, expectations, and resource availability.
+User-friendly description: Explore what determines how much producers are willing to offer.
 
 ##### Закон пропозиції
 
+Slug: lawOfSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати звичайну залежність пропонованого обсягу від ціни за незмінності інших умов.
+Methodological description: Interpret the usual positive relationship between price and quantity supplied when other conditions remain constant.
+User-friendly description: Understand why producers often offer more at higher prices.
 
 ##### Зміна величини пропозиції
 
+Slug: changeInQuantitySupplied
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати рух уздовж незмінної кривої пропозиції внаслідок зміни власної ціни товару за незмінності інших факторів. Величина пропозиції — кількість, яку продавці готові та здатні запропонувати, а не обов’язково фактичний обсяг продажу.
+Methodological description: Identify movement along an unchanged supply curve caused by the good's own price, other factors fixed; quantity supplied is what sellers are willing and able to offer, not necessarily actual sales.
+User-friendly description: Distinguish willingness to supply from what is actually sold.
 
 ##### Зміщення пропозиції
 
+Slug: shiftInSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як технології, вартість ресурсів, податки або перебої постачання змінюють пропозицію за кожної ціни.
+Methodological description: Assess how technology, input costs, taxes, or supply disruptions change quantity supplied at each price.
+User-friendly description: Identify events that shift the supply curve.
 
 #### Ринкова рівновага
 
+Slug: marketEquilibrium
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Взаємодія попиту й пропозиції визначає узгодження планів учасників і наслідки порушення цього узгодження.
+Methodological description: The interaction of supply and demand coordinates participants' plans and explains what happens when they do not match.
+User-friendly description: Understand how buyers' and sellers' plans can reach a balance.
 
 ##### Рівноважна ціна та обсяг
 
+Slug: equilibriumPriceAndQuantity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити комбінацію ціни й кількості, за якої заплановані покупки відповідають запланованим продажам у заданій моделі.
+Methodological description: Find the price and quantity at which planned purchases equal planned sales in a specified market model.
+User-friendly description: Find where a demand curve and supply curve meet.
 
 ##### Дефіцит і надлишок товару
 
+Slug: marketShortagesAndSurpluses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Діагностувати надлишковий попит або пропозицію при ціні, що відрізняється від рівноважної.
+Methodological description: Diagnose excess demand or excess supply when a price differs from its equilibrium level.
+User-friendly description: Recognize when a market has too little or too much of a product.
 
 ##### Наслідки зміни попиту
 
+Slug: effectsOfDemandChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передбачати напрям зміни рівноважної ціни й кількості після зсуву попиту за визначених умов пропозиції.
+Methodological description: Predict the direction of changes in equilibrium price and quantity after a demand shift under stated supply conditions.
+User-friendly description: Predict what happens to price when demand rises or falls.
 
 ##### Наслідки зміни пропозиції
 
+Slug: effectsOfSupplyChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передбачати напрям зміни рівноважної ціни й кількості після зсуву пропозиції за визначених умов попиту.
+Methodological description: Predict the direction of equilibrium price and quantity changes following a supply shift under specified demand conditions.
+User-friendly description: Explore how changing supply can affect prices and quantities.
 
 #### Еластичність
+
+Slug: elasticity
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Сила реакції кількості на зміну ціни чи доходу може істотно відрізнятися між товарами та часовими горизонтами.
+Methodological description: Quantity responses to changes in price or income vary across products and time horizons.
+User-friendly description: Discover why buyers and sellers respond differently to price changes.
 
 ##### Цінова еластичність попиту
 
+Slug: priceElasticityOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати відносну зміну величини попиту при зміні ціни й відрізняти її від нахилу кривої.
+Methodological description: Evaluate the proportional change in quantity demanded following a price change and distinguish elasticity from the slope of the demand curve.
+User-friendly description: Measure how strongly buying responds to a change in price.
 
 ##### Цінова еластичність пропозиції
 
+Slug: priceElasticityOfSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, наскільки виробники здатні змінити обсяги у відповідь на ціну, враховуючи часові обмеження.
+Methodological description: Evaluate how much producers can change quantities offered when prices change, taking time constraints into account.
+User-friendly description: Explore how quickly and strongly producers respond to higher prices.
 
 ##### Перехресна еластичність попиту
 
+Slug: crossPriceElasticityOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати реакцію попиту на один товар на зміну ціни іншого й тлумачити можливе заміщення або доповнення товарів.
+Methodological description: Determine how demand for one good responds to another good's price, interpreting possible substitution or complementarity.
+User-friendly description: Find out whether two products are substitutes or complements.
 
 ##### Дохідна еластичність попиту
 
+Slug: incomeElasticityOfDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати реакцію попиту на зміну доходу покупців і розрізняти типи товарів залежно від знака й величини показника.
+Methodological description: Evaluate the response of demand to changes in buyers' income, distinguishing goods by the sign and size of the measure.
+User-friendly description: Explore how buying habits change as people's incomes change.
 
 #### Конкурентні структури
 
+Slug: competitiveMarketStructures
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Кількість і ринкова сила учасників, диференціація продуктів, інформаційні умови та перешкоди входу визначають поведінку й можливі результати конкуренції.
+Methodological description: Participant numbers and market power, product differentiation, information, and barriers to entry influence competitive behavior and outcomes.
+User-friendly description: Compare markets with many competitors and markets dominated by a few.
 
 ##### Конкурентні ринкові структури
 
+Slug: typesOfMarketCompetition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти досконалу конкуренцію, монополістичну конкуренцію, олігополію та монополію за суттєвими умовами.
+Methodological description: Distinguish perfect competition, monopolistic competition, oligopoly, and monopoly by their defining conditions.
+User-friendly description: Recognize different market structures based on competition.
 
 ##### Економічні бар’єри входу
 
+Slug: barriersToMarketEntry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати технологічні, правові, мережеві та стратегічні перешкоди появі нових конкурентів.
+Methodological description: Recognize technological, legal, network, and strategic obstacles that keep new competitors from entering a market.
+User-friendly description: Identify why entering some markets is difficult for a new firm.
 
 ##### Ринкова влада
 
+Slug: marketPower
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати здатність продавця або покупця впливати на ринкові умови, а не лише приймати задану ціну.
+Methodological description: Identify a seller's or buyer's ability to influence market terms instead of merely accepting prevailing prices.
+User-friendly description: Understand how some participants can influence market prices.
 
 #### Ринкові результати
+
+Slug: marketOutcomes
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Вигоди від обміну та втрачені можливості характеризують добробут, що створюється чи не реалізується через економічні рішення, за визначених ринкових умов.
+Methodological description: Gains from exchange and forgone opportunities help characterize welfare created or lost through economic choices under given market conditions.
+User-friendly description: Explore who gains from market exchanges and when benefits are lost.
 
 ##### Споживчий надлишок
 
+Slug: consumerSurplus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати різницю між готовністю платити та фактичною ціною для відповідних одиниць споживання.
+Methodological description: Estimate the difference between willingness to pay and the actual price for the relevant units of consumption.
+User-friendly description: See how paying less than you were willing to pay creates a benefit.
 
 ##### Надлишок виробника
 
+Slug: producerSurplus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вигоду продавця понад мінімальну прийнятну компенсацію, відрізняючи її від бухгалтерського прибутку.
+Methodological description: Estimate benefits to sellers beyond the minimum compensation they would accept, distinguishing these from accounting profit.
+User-friendly description: Explore the benefit sellers receive beyond their minimum acceptable price.
 
 ##### Втрати ефективності
 
+Slug: deadweightLoss
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати нереалізовані взаємовигідні обміни через обмеження чи спотворення ринкових стимулів.
+Methodological description: Analyze mutually beneficial exchanges that do not occur because of restrictions or distorted market incentives.
+User-friendly description: Recognize when market conditions prevent exchanges that could benefit both sides.
 
 ### Виробництво та підприємництво
+
+Slug: productionAndEntrepreneurship
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Створення цінності поєднує ресурси, технології, організацію й ризик. Цей розділ розглядає рішення підприємства про виробництво та стійкість його діяльності.
+Methodological description: Creating value combines resources, technology, organization, and risk. This domain studies firms' production decisions and the sustainability of their operations.
+User-friendly description: Explore how businesses turn resources and ideas into products and services.
 
 #### Ресурси та технологія
+
+Slug: productiveResourcesAndTechnology
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Праця, капітал, земля, знання і виробничі методи визначають можливості випуску та заміни факторів.
+Methodological description: Labor, capital, land, knowledge, and methods of production determine output possibilities and the substitution of productive inputs.
+User-friendly description: Discover how resources and technology affect what firms can produce.
 
 ##### Фактори виробництва
 
+Slug: factorsOfProduction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Класифікувати ресурси за роллю у створенні товарів і послуг, не ототожнюючи фінансовий капітал із фізичним.
+Methodological description: Classify resources by their roles in creating goods and services without confusing financial capital with physical capital.
+User-friendly description: Recognize the different resources needed to produce goods and services.
 
 ##### Виробнича функція
 
+Slug: productionFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати можливий випуск із кількостями ресурсів та рівнем технології у визначеній моделі.
+Methodological description: Relate feasible output to quantities of inputs and technological capability within a specified model.
+User-friendly description: Connect a firm's inputs and technology with the amount it can make.
 
 ##### Продуктивність
 
+Slug: productivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вимірювати результат відносно використаного фактора й відрізняти показники праці від сукупної факторної продуктивності.
+Methodological description: Measure output relative to a production input and distinguish labor productivity from total factor productivity.
+User-friendly description: Explore how much output is produced from the resources used.
 
 ##### Закон спадної граничної віддачі
 
+Slug: diminishingMarginalReturns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зміну додаткового випуску при нарощуванні одного змінного фактора за незмінності інших ресурсів і технології; відрізняти граничний продукт від загального.
+Methodological description: Analyze changes in additional output when one variable input increases while other inputs and technology are fixed; distinguish marginal product from total output.
+User-friendly description: Understand why adding more of one input may eventually yield less extra output.
 
 #### Витрати та масштаб
+
+Slug: productionCostsAndScale
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Економічні рішення потребують врахування альтернативних витрат, часових горизонтів і зміни собівартості з випуском.
+Methodological description: Economic production decisions account for opportunity costs, time horizons, and how unit costs change with output.
+User-friendly description: Explore how the costs of production change with a firm's scale.
 
 ##### Постійні та змінні витрати
 
+Slug: fixedAndVariableCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розмежовувати витрати, які в заданому часовому горизонті не залежать від обсягу, і ті, що змінюються з ним.
+Methodological description: Distinguish costs that do not depend on output over a stated time horizon from those that vary with production.
+User-friendly description: Tell the difference between costs that stay fixed and those that rise with output.
 
 ##### Середні витрати
 
+Slug: averageProductionCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати витрати на одиницю випуску й пояснювати, як показник залежить від виробничого масштабу та структури витрат.
+Methodological description: Calculate cost per unit of output and explain how it depends on scale and the composition of costs.
+User-friendly description: Find the average cost of producing a unit.
 
 ##### Граничні витрати
 
+Slug: marginalProductionCost
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати додаткові витрати виробництва наступної одиниці продукції та використовувати їх для аналізу рішень про випуск.
+Methodological description: Determine the additional cost of producing the next unit and use it to analyze production decisions.
+User-friendly description: Estimate what it costs to make one additional unit.
 
 ##### Економічний прибуток
 
+Slug: economicProfit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати результат після врахування явних і неявних альтернативних витрат, відмінно від бухгалтерського показника.
+Methodological description: Evaluate a firm's result after both explicit expenditures and implicit opportunity costs, distinguishing economic from accounting profit.
+User-friendly description: See why economic profit considers more than recorded expenses.
 
 ##### Економія від масштабу
 
+Slug: economiesOfScale
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, як тривале збільшення виробничого масштабу може знижувати або підвищувати середні витрати.
+Methodological description: Determine how sustained increases in production scale may lower or raise average costs.
+User-friendly description: Explore why producing on a larger scale can change costs per unit.
 
 #### Рішення та управління фірмою
+
+Slug: firmDecisionMakingAndManagement
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Внутрішні стимули власників, менеджерів і працівників, а також виробничі рішення підприємства визначають організацію його діяльності; структура конкуренції належить до окремого ринкового домену.
+Methodological description: The incentives and decisions of owners, managers, and workers shape a firm's organization and production; competitive market structure is analyzed separately.
+User-friendly description: Discover how people inside a company make economic decisions.
 
 ##### Максимізація прибутку фірми
 
+Slug: firmProfitMaximization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати рішення про обсяг випуску через зв’язок граничного доходу та граничних витрат у заданій моделі.
+Methodological description: Evaluate output decisions using the relationship between marginal revenue and marginal cost in a specified model.
+User-friendly description: Explore how a firm chooses output to improve its profit.
 
 ##### Взаємодія власників, менеджерів і працівників
 
+Slug: ownersManagersAndWorkers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати розподіл рішень та стимули сторін, чиї цілі та інформація можуть відрізнятися.
+Methodological description: Analyze how decision rights and incentives are distributed among owners, managers, and workers whose goals and information may differ.
+User-friendly description: Recognize how owners, managers, and workers can have different priorities.
 
 #### Підприємництво та облік
+
+Slug: entrepreneurshipAndAccounting
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Новий бізнес потребує перевірки цінності пропозиції, організації ресурсів та аналізу фінансового результату.
+Methodological description: A new business requires testing the value offered, organizing resources, and analyzing its financial results.
+User-friendly description: Learn what makes a business idea economically workable.
 
 ##### Підприємницька можливість
 
+Slug: entrepreneurialOpportunity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати незадоволену потребу, потенційного покупця, необхідні ресурси та ризики реалізації ідеї.
+Methodological description: Evaluate an unmet need, potential customers, necessary resources, and risks involved in realizing a business idea.
+User-friendly description: Identify what makes a business opportunity promising or risky.
 
 ##### Бізнес-модель
 
+Slug: businessModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати створювану цінність, клієнтів, джерела доходу та основні витрати в цілісну логіку діяльності.
+Methodological description: Connect the value created, customers served, revenue streams, and main costs into a coherent account of how a business operates.
+User-friendly description: Explain how a business creates value and earns revenue.
 
 ##### Дохід, витрати та прибуток підприємства
 
+Slug: businessRevenueCostsAndProfit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати виручку, витрати й результат діяльності, не плутаючи прибуток з готівкою.
+Methodological description: Interpret turnover, expenses, and operating results without confusing profitability with available cash.
+User-friendly description: Distinguish business revenue, expenses, profit, and cash on hand.
 
 ##### Грошові потоки підприємства
 
+Slug: businessCashFlow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відстежувати надходження та виплати в часі й виявляти потребу в ліквідності навіть за облікового прибутку.
+Methodological description: Track receipts and payments over time and detect liquidity needs even when accounting reports show a profit.
+User-friendly description: See why a profitable business can still run short of cash.
 
 ### Праця та зайнятість
+
+Slug: laborAndEmployment
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Ринок праці пов’язує робочий час, кваліфікацію, заробітну плату, вакансії та правила найму. Особливу увагу приділено відмінності індивідуальних трудових рішень від загального рівня безробіття.
+Methodological description: Labor markets connect working time, qualifications, pay, vacancies, and hiring rules. This domain distinguishes individual work decisions from aggregate unemployment.
+User-friendly description: Explore how workers and employers make decisions about jobs, skills, and pay.
 
 #### Пропозиція та попит на працю
+
+Slug: laborSupplyAndDemand
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Працівники й роботодавці приймають взаємопов’язані рішення про час, кваліфікацію, оплату та кількість робочих місць.
+Methodological description: Workers and employers make interdependent decisions about working time, skills, wages, and numbers of jobs.
+User-friendly description: Understand how workers and businesses shape the market for labor.
 
 ##### Вибір між працею та дозвіллям
 
+Slug: workLeisureTradeoff
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати компроміс між оплачуваною роботою, вільним часом та неоплачуваними обов’язками за заданих умов.
+Methodological description: Analyze choices between paid work, free time, and unpaid duties under stated constraints.
+User-friendly description: Explore the trade-offs between earning income, rest, and other responsibilities.
 
 ##### Попит на працю
 
+Slug: laborDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати найм працівників з їхнім очікуваним внеском у випуск, цінами продукції та витратами роботодавця.
+Methodological description: Relate hiring decisions to workers' expected contributions to output, product prices, and employers' costs.
+User-friendly description: Explain why firms hire workers and how much labor they need.
 
 ##### Формування заробітної плати
 
+Slug: wageDetermination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати вплив продуктивності, переговорної сили, інституцій та ринкових умов на оплату праці.
+Methodological description: Identify how productivity, bargaining power, institutions, and market conditions affect pay.
+User-friendly description: Discover why wages differ between jobs and workplaces.
 
 ##### Людський капітал
 
+Slug: humanCapital
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати економічні наслідки освіти, досвіду, навичок і здоров’я для продуктивності та доступних можливостей.
+Methodological description: Evaluate the economic effects of education, experience, skills, and health on productivity and opportunities.
+User-friendly description: Explore how education and skills affect earning opportunities.
 
 ##### Пропозиція праці
 
+Slug: laborSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як оплата праці, доступність альтернатив, умови роботи та уподобання впливають на бажану й доступну кількість робочого часу або участь людей у ринку праці.
+Methodological description: Analyze how wages, alternative opportunities, working conditions, and preferences affect desired and feasible working hours and participation in employment.
+User-friendly description: Understand why people choose different amounts and kinds of paid work.
 
 ##### Автоматизація та зайнятість
 
+Slug: automationAndEmployment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати заміщення й доповнення трудових завдань технологіями та можливий вплив на попит на навички.
+Methodological description: Evaluate how technology substitutes for or complements work tasks and how this may affect demand for skills.
+User-friendly description: Explore how automation can replace some tasks and create demand for others.
 
 #### Працевлаштування та мобільність
+
+Slug: employmentAndMobility
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Пошук роботи й зміна професій пов’язані з інформаційними, просторовими та кваліфікаційними обмеженнями.
+Methodological description: Job searches and occupational changes are constrained by information, location, and qualifications.
+User-friendly description: Discover what helps or prevents people from finding or changing jobs.
 
 ##### Пошук роботи та відповідність вакансії
 
+Slug: jobSearchAndMatching
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як доступна інформація, вимоги й витрати пошуку впливають на працевлаштування.
+Methodological description: Analyze how available information, job requirements, and search costs influence employment matches.
+User-friendly description: Learn why finding a suitable vacancy can take time and information.
 
 ##### Професійна мобільність
 
+Slug: occupationalMobility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вигоди, витрати й кваліфікаційні бар’єри переходу між професіями, кваліфікаційними рівнями чи галузями.
+Methodological description: Evaluate benefits, costs, and qualification barriers when changing occupations, skill levels, or industries.
+User-friendly description: Explore the costs and opportunities of changing careers.
 
 ##### Географічна трудова мобільність
 
+Slug: geographicLaborMobility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати рішення про роботу в іншому регіоні чи країні з урахуванням витрат переміщення, заробітку, житлових умов та інституційних обмежень.
+Methodological description: Analyze decisions to work in another region or country, considering relocation costs, pay, housing, and institutional limits.
+User-friendly description: Compare the advantages and challenges of moving for work.
 
 ##### Дискримінація на ринку праці
 
+Slug: laborMarketDiscrimination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти ситуації, де оплата чи доступ до зайнятості залежать від не пов’язаних із продуктивністю характеристик.
+Methodological description: Identify situations where compensation or access to employment depends on characteristics unrelated to productivity.
+User-friendly description: Recognize unfair employment differences not explained by job performance.
 
 #### Трудові інституції
+
+Slug: laborInstitutions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Реальні трудові відносини регулюються контрактами, організованими переговорами та законодавчими гарантіями.
+Methodological description: Employment relationships operate under contracts, collective bargaining, and legal protections.
+User-friendly description: Explore how contracts and labor rules shape working conditions.
 
 ##### Трудовий договір
 
+Slug: employmentContracts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити економічні умови найму, оплати, робочого часу та припинення відносин у межах застосовного права.
+Methodological description: Interpret the economic terms of hiring, wages, working hours, and termination within applicable law.
+User-friendly description: Understand the key economic terms of an employment contract.
 
 ##### Колективні переговори
 
+Slug: collectiveBargaining
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як профспілки та організації роботодавців можуть впливати на умови праці й розподіл переговорної сили.
+Methodological description: Explain how trade unions and employers' organizations can affect working conditions and bargaining power.
+User-friendly description: Discover how groups of workers and employers negotiate employment terms.
 
 ##### Мінімальна оплата праці
 
+Slug: minimumWage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати можливі наслідки законодавчого порогу оплати з урахуванням конкретної структури ринку.
+Methodological description: Analyze potential consequences of a statutory wage floor in light of the relevant labor-market structure.
+User-friendly description: Explore how a minimum wage may affect workers and businesses.
 
 ### Маркетинг і торгівля
+
+Slug: marketingAndTrade
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 26
 
 [Not implemented](#)
 
-Маркетинг вивчає, як підприємство виявляє потреби, формує пропозицію та комунікує її цінність. Окремо розглядаються роздрібне середовище, цінові стимули й добросовісність впливу на покупця.
+Methodological description: Marketing examines how firms identify needs, develop offers, and communicate their value. Retail environments, price incentives, and fair influence on buyers are analyzed separately.
+User-friendly description: Explore how businesses understand customers, present products, and sell responsibly.
 
 #### Дослідження ринку
+
+Slug: marketResearch
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Потреби аудиторії та конкурентне середовище вивчають на основі спостережень, опитувань і перевірки припущень.
+Methodological description: Audience needs and competitive conditions can be studied using observations, surveys, and tests of assumptions.
+User-friendly description: Learn how businesses gather evidence about customers and competitors.
 
 ##### Сегментація споживачів
 
+Slug: consumerSegmentation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виділяти групи з відмінними потребами чи поведінкою за обґрунтованими критеріями, не перетворюючи стереотипи на факти.
+Methodological description: Identify groups with distinct needs or behavior using justified criteria without treating stereotypes as facts.
+User-friendly description: Group customers according to meaningful differences, not stereotypes.
 
 ##### Цільова аудиторія
 
+Slug: targetAudience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, для кого конкретна пропозиція найрелевантніша і які дані підтримують цей вибір.
+Methodological description: Determine who is most likely to benefit from a particular offering and what evidence supports that choice.
+User-friendly description: Identify the customers for whom a product is most relevant.
 
 ##### Перевірка ринкового попиту
 
+Slug: testingMarketDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Добирати свідчення готовності придбати продукт, відрізняючи заявлене зацікавлення від реальної купівельної поведінки.
+Methodological description: Select evidence of willingness to purchase, distinguishing expressed interest from actual buying behavior.
+User-friendly description: Find out whether people will really buy a proposed product.
 
 #### Продукт і ціннісна пропозиція
+
+Slug: productAndValueProposition
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Комерційна пропозиція охоплює користь, якість, сервіс і відмінності від альтернатив, а не лише фізичні властивості.
+Methodological description: A commercial offering combines benefits, quality, service, and differences from alternatives, not just physical features.
+User-friendly description: Discover what makes a product or service valuable to customers.
 
 ##### Ціннісна пропозиція
 
+Slug: valueProposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати, яку проблему покупця розв’язує продукт і за рахунок яких підтверджуваних властивостей.
+Methodological description: Explain which customer problem a product addresses and which verifiable properties support its claimed benefit.
+User-friendly description: Describe the problem a product solves and the evidence for its benefits.
 
 ##### Позиціонування продукту
 
+Slug: productPositioning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Показувати відмінність пропозиції від конкурентних альтернатив для конкретної групи споживачів.
+Methodological description: Show how an offering differs from competing alternatives for a specific customer group.
+User-friendly description: Explain how a product stands out for a particular audience.
 
 ##### Життєвий цикл продукту
 
+Slug: productLifeCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати можливі зміни попиту, конкуренції та маркетингових рішень на різних етапах існування товару.
+Methodological description: Analyze possible changes in demand, competition, and marketing decisions over stages of a product's life.
+User-friendly description: Explore how the market for a product can change over time.
 
 ##### Комерційна роль пакування
 
+Slug: commercialRoleOfPackaging
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як оформлення, написи, обсяг, інформація на етикетці й зручність упаковки змінюють сприйняту пропозицію та її витрати; відрізняти перевірювані характеристики від візуальної привабливості, яку окремо досліджує мистецтво.
+Methodological description: Assess how design, wording, size, labeling, and usability of packaging affect perceived value and costs; separate verifiable attributes from visual appeal, which Art analyzes independently.
+User-friendly description: See how packaging influences expectations and the practical value of a product.
 
 #### Реклама та комунікації
+
+Slug: advertisingAndCommunications
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Повідомлення про товар можуть інформувати, нагадувати чи переконувати; їхня ефективність і правдивість оцінюються окремо.
+Methodological description: Commercial messages can inform, remind, or persuade; effectiveness and truthfulness must be evaluated independently.
+User-friendly description: Learn how advertising communicates and how to judge its claims.
 
 ##### Рекламні цілі та канали
 
+Slug: advertisingObjectivesAndChannels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити мету повідомлення з характеристиками аудиторії, каналом комунікації та обмеженнями.
+Methodological description: Match a message's purpose with audience characteristics, communication channel, and constraints.
+User-friendly description: Choose advertising channels that suit a message and its audience.
 
 ##### Рекламне твердження
 
+Slug: advertisingClaims
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти факт, оцінне судження та обіцянку, яка потребує доказів, у комерційному повідомленні.
+Methodological description: Distinguish facts, value judgments, and promises requiring evidence in commercial communication.
+User-friendly description: Recognize which advertising statements need proof.
 
 ##### Рекламна кампанія
 
+Slug: advertisingCampaign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Планувати узгоджену послідовність повідомлень з визначеною метою, аудиторією й етичними обмеженнями.
+Methodological description: Plan a coordinated sequence of messages with a defined purpose, audience, and ethical limits.
+User-friendly description: Plan a consistent series of messages to reach a particular audience.
 
 ##### Оцінка результативності реклами
 
+Slug: advertisingEffectiveness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати охоплення, переходи, конверсії й витрати, не ототожнюючи увагу з доведеним приростом продажів.
+Methodological description: Interpret reach, clicks, conversions, and costs without equating attention with a proven increase in sales.
+User-friendly description: Use campaign results to judge performance without assuming clicks equal sales.
 
 ##### Спонсорські рекомендації та реклама інфлюенсерів
 
+Slug: sponsoredEndorsementsAndInfluencerAdvertising
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти незалежну думку від оплаченого просування, розкривати комерційну зацікавленість автора та перевіряти доказовість рекламних рекомендацій і заяв про популярність.
+Methodological description: Distinguish independent opinions from paid promotion, disclose creators' commercial interests, and assess evidence behind endorsements and popularity claims.
+User-friendly description: Recognize sponsored recommendations and check whether their claims are credible.
 
 #### Мерчандайзинг і роздріб
+
+Slug: retailMerchandising
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Розміщення, доступність, оформлення та логістика товарів змінюють зручність і ймовірність придбання.
+Methodological description: Product placement, availability, presentation, and logistics affect how easily customers find and buy goods.
+User-friendly description: Explore how store layout and product displays shape shopping.
 
 ##### Асортимент магазину
 
+Slug: storeAssortment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати набір товарів через потреби покупців, обмеження запасів, площі та ризик непроданих залишків.
+Methodological description: Evaluate a product range in light of customer needs, stock limits, available space, and unsold-inventory risk.
+User-friendly description: Understand how stores decide which products to stock.
 
 ##### Викладка товарів
 
+Slug: productDisplay
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати вплив розташування на видимість і доступність товарів без припущень про універсально найкращу полицю.
+Methodological description: Analyze how shelf position affects product visibility and accessibility without assuming a universally best shelf.
+User-friendly description: Explore how a product's position in a store affects what shoppers notice.
 
 ##### Торговельна навігація
 
+Slug: storeNavigation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як зонування, покажчики та шлях покупця впливають на пошук потрібних товарів.
+Methodological description: Assess how zones, signs, and shopper routes affect people's ability to find products.
+User-friendly description: See how signs and layouts help or hinder shopping.
 
 ##### Керування товарними запасами
 
+Slug: inventoryManagement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити потребу в доступності товару з витратами зберігання, псуванням і ризиком дефіциту.
+Methodological description: Balance product availability against storage costs, spoilage, and the risk of shortages.
+User-friendly description: Learn why stores must balance having enough stock with keeping costs down.
 
 #### Канали збуту та дистрибуція
+
+Slug: salesChannelsAndDistribution
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Передача товару від виробника до кінцевого споживача може відбуватися через різну кількість посередників, оптові операції, склади й транспорт; вибір каналу змінює витрати, доступність і контроль за продажами.
+Methodological description: Goods can reach end consumers through different numbers of intermediaries, wholesale transactions, warehouses, and transport; channel choice affects costs, availability, and control over sales.
+User-friendly description: Discover how products travel from producers to customers.
 
 ##### Оптова торгівля
 
+Slug: wholesaleTrade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати роль великих партій, посередництва між виробником і роздрібом та відмінність оптової ціни й функції від роздрібного продажу.
+Methodological description: Analyze bulk transactions and intermediaries linking producers and retailers, distinguishing wholesale pricing and functions from retail sales.
+User-friendly description: Understand how wholesale trading differs from selling directly to consumers.
 
 ##### Канали збуту
 
+Slug: distributionChannels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати прямі й опосередковані способи доставки комерційної пропозиції до покупця за охопленням, комісіями, контролем і витратами.
+Methodological description: Compare direct and intermediary-based routes to buyers by reach, commissions, control, and costs.
+User-friendly description: Compare ways businesses can deliver products to customers.
 
 ##### Витрати дистрибуції
 
+Slug: distributionCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зв’язок складування, транспортування, пакування та логістичних затримок із кінцевою ціною й доступністю товару.
+Methodological description: Assess how warehousing, transport, packaging, and logistical delays influence final price and product availability.
+User-friendly description: See why transport and storage affect what a product costs.
 
 #### Ціни, акції та добросовісність
+
+Slug: pricingPromotionsAndFairness
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Цінові пропозиції мають комерційний ефект, але їхня оцінка потребує перевірки реальної вигоди та способів впливу.
+Methodological description: Price offers have commercial effects, but judging them requires verifying actual savings and methods of influencing buyers.
+User-friendly description: Learn to evaluate sale prices, discounts, and fair selling practices.
 
 ##### Стратегії роздрібного ціноутворення
 
+Slug: retailPricingStrategies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати цінові рішення продавця за витратами, сприйнятою цінністю та конкурентним середовищем.
+Methodological description: Compare sellers' pricing choices in relation to costs, perceived value, and competition.
+User-friendly description: Explore how stores choose prices for their products.
 
 ##### Знижки та акційні пропозиції
 
+Slug: discountsAndPromotions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати фактичну економію відносно перевірюваної базової ціни, кількості й умов придбання; правильно інтерпретувати купони, набори, акції «два за ціною одного» та відсоткові знижки, не ототожнюючи знижку з необхідністю покупки.
+Methodological description: Calculate real savings against a verifiable reference price, quantity, and purchase conditions; interpret coupons, bundles, buy-one-get-one offers, and percentage discounts without assuming any discount makes a purchase necessary.
+User-friendly description: Check whether a discount really saves money before buying.
 
 ##### Приховані витрати й нав’язані опції
 
+Slug: hiddenChargesAndForcedExtras
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти непоказані до оплати збори, платні опції за замовчуванням та додаткові придбання, які змінюють повну вартість угоди. Перешкоди відмови від уже оформленої підписки становлять окрему компетентність.
+Methodological description: Identify fees disclosed only at payment, paid options selected by default, and add-ons that change total transaction costs; obstacles to canceling a completed subscription are a separate competency.
+User-friendly description: Spot extra charges and add-ons that make an offer cost more than it first appears.
 
 ##### Маніпулятивні комерційні прийоми
 
+Slug: manipulativeCommercialTactics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати непідтверджену терміновість, вигаданий дефіцит, оманливі рейтинги, відгуки й повідомлення про популярність, відрізняючи добросовісне переконування від неправдивих комерційних тверджень.
+Methodological description: Recognize unsupported urgency, fake scarcity, misleading ratings, reviews, and popularity claims, distinguishing honest persuasion from deceptive commercial statements.
+User-friendly description: Recognize misleading urgency, fake scarcity, and other shopping pressure tactics.
 
 ##### Етичний маркетинг
 
+Slug: ethicalMarketing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати правдивість, прозорість, повагу до вразливих груп і можливість вільної відмови у комерційній практиці.
+Methodological description: Evaluate truthfulness, transparency, treatment of vulnerable groups, and freedom to decline in commercial practices.
+User-friendly description: Judge whether a selling practice is honest and respects customer choice.
 
 ##### Психологічне ціноутворення
 
+Slug: psychologicalPricing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати роль цінових порогів, закінчень на кшталт 99, порівняльних або закреслених цін та референтної ціни в сприйнятті вигоди. Ефективність прийому залежить від ринку й контексту, а не гарантується форматом числа.
+Methodological description: Analyze the effect of price thresholds, endings such as 99, comparative or crossed-out prices, and reference prices on perceived value; effects vary by market and context and are not guaranteed by a numerical format.
+User-friendly description: Explore why prices ending in 99 or crossed-out comparisons influence perception.
 
 ##### Перешкоди скасуванню підписки
 
+Slug: subscriptionCancellationBarriers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти складні процедури відмови, приховане автоматичне поновлення та асиметрію між легкістю оформлення й скасування договору; відокремлювати таку перешкоду від прозорих умов законного продовження.
+Methodological description: Identify burdensome cancellation steps, hidden automatic renewal, and imbalance between ease of signing up and canceling; distinguish these from transparent lawful renewal terms.
+User-friendly description: Recognize when canceling a subscription is made unnecessarily difficult.
 
 ### Особисті фінанси
+
+Slug: personalFinance
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
-Домогосподарства отримують доходи, здійснюють платежі й ухвалюють рішення про збереження коштів, борги та ризики. Це практична грамотність, а не індивідуальна інвестиційна рекомендація.
+Methodological description: Households receive income, make payments, and decide how to save, borrow, and manage risks. This domain develops practical literacy rather than personalized investment advice.
+User-friendly description: Learn to plan money, understand borrowing, and manage everyday financial decisions.
 
 #### Доходи та бюджет
+
+Slug: incomeAndBudgeting
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Планування коштів починається з розуміння джерел надходжень, регулярних зобов’язань та меж доступних витрат.
+Methodological description: Money planning begins by understanding sources of income, recurring obligations, and the limits of available spending.
+User-friendly description: Explore how income and expenses shape a household budget.
 
 ##### Джерела особистого доходу
 
+Slug: personalIncomeSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти оплату праці, підприємницький дохід, доходи від активів і трансферти за їхньою природою та стабільністю.
+Methodological description: Distinguish wages, business earnings, returns from assets, and transfers by their nature and stability.
+User-friendly description: Recognize different ways people receive income.
 
 ##### Особистий бюджет
 
+Slug: personalBudget
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Планувати доходи та видатки на визначений період із пріоритетами й резервом на непередбачені потреби.
+Methodological description: Plan income and spending over a specified period, prioritizing needs and allowing for unexpected expenses.
+User-friendly description: Make a budget that balances expected income and spending.
 
 ##### Облік витрат
 
+Slug: expenseTracking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Групувати та відстежувати фактичні витрати для виявлення відхилень від плану.
+Methodological description: Group and monitor actual expenditures to identify departures from a financial plan.
+User-friendly description: Track where money goes and compare it with a budget.
 
 ##### Фінансові цілі
 
+Slug: financialGoals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати суму, строк і реалістичні джерела накопичення з конкретною метою.
+Methodological description: Connect a target amount, deadline, and realistic ways of saving to a specific financial objective.
+User-friendly description: Plan how much to save and when to reach a goal.
 
 #### Розрахунки та платежі
+
+Slug: paymentsAndTransactions
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Передача коштів має різні інструменти, витрати, строки, ризики та підтверджувальні документи.
+Methodological description: Money transfers involve different instruments, fees, timing, risks, and documentary evidence.
+User-friendly description: Discover how different payment methods work and what to check.
 
 ##### Платіжні інструменти
 
+Slug: paymentMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти готівку, перекази та карткові чи цифрові платежі за способом виконання і доступними гарантіями.
+Methodological description: Distinguish cash, bank transfers, cards, and digital payments by how they operate and the protections available.
+User-friendly description: Compare paying with cash, a card, or a digital transfer.
 
 ##### Комісії та умови платежів
 
+Slug: paymentFeesAndTerms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ураховувати збори, конвертацію, строки зарахування і можливості оскарження операції.
+Methodological description: Account for fees, currency conversion, settlement time, and options to dispute a transaction.
+User-friendly description: Look for extra payment fees, conversion charges, and transaction terms.
 
 ##### Підтвердження фінансової операції
 
+Slug: transactionConfirmation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити реквізити, статус і призначення чека, виписки чи електронної квитанції.
+Methodological description: Interpret the details, status, and purpose of a receipt, account statement, or electronic payment confirmation.
+User-friendly description: Read a receipt or statement to confirm what happened to a payment.
 
 #### Заощадження й інвестування
+
+Slug: savingAndInvesting
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Перенесення купівельної спроможності в майбутнє пов’язане з ліквідністю, дохідністю, ризиком та інфляцією.
+Methodological description: Moving purchasing power into the future involves liquidity, returns, risk, and inflation.
+User-friendly description: Explore why saving and investing involve different risks and benefits.
 
 ##### Резерв на непередбачені витрати
 
+Slug: emergencySavings
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати призначення та доступність коштів для раптових потреб без універсальної норми для кожної сім’ї.
+Methodological description: Assess the purpose and accessibility of funds reserved for unexpected needs without imposing a universal target on every household.
+User-friendly description: Understand why accessible savings can help with unexpected expenses.
 
 ##### Прості відсотки
 
+Slug: simpleInterest
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати відсоткові нарахування на незмінну початкову базу за визначеними ставкою і тривалістю.
+Methodological description: Calculate interest on an unchanged principal using a specified rate and time period.
+User-friendly description: Calculate interest that is earned only on the original amount.
 
 ##### Складні відсотки
 
+Slug: compoundInterest
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати зростання боргу або заощадження з капіталізацією нарахованих відсотків, ураховуючи періодичність і строк.
+Methodological description: Calculate growth of debt or savings when accrued interest is capitalized, considering compounding frequency and duration.
+User-friendly description: Explore how interest on interest can increase savings or debt.
 
 ##### Реальна дохідність
 
+Slug: realReturn
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати номінальний приріст коштів від зміни їхньої купівельної спроможності.
+Methodological description: Distinguish nominal growth in money from changes in its purchasing power.
+User-friendly description: Find out whether a financial return actually keeps up with inflation.
 
 ##### Диверсифікація інвестицій
 
+Slug: investmentDiversification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як розподіл між активами впливає на специфічні ризики і чому не гарантує відсутності втрат.
+Methodological description: Explain how allocating funds among assets affects idiosyncratic risk without guaranteeing protection from losses.
+User-friendly description: Learn why spreading investments can reduce some risks but not eliminate losses.
 
 #### Позики та борги
+
+Slug: loansAndDebt
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Позикові кошти дають можливість витрачати раніше, але створюють майбутні платежі й зобов’язання.
+Methodological description: Borrowing permits earlier spending but creates future payments and obligations.
+User-friendly description: Understand the costs and commitments of borrowing money.
 
 ##### Повна вартість кредиту
 
+Slug: totalCostOfCredit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати відсотки, комісії, графік та інші обов’язкові платежі за умовами конкретної позики.
+Methodological description: Evaluate interest, fees, repayment schedules, and other mandatory payments under a particular loan agreement.
+User-friendly description: Compare what a loan really costs over its full repayment period.
 
 ##### Платоспроможність позичальника
 
+Slug: borrowerAffordability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставляти боргові платежі, стабільність доходів та інші зобов’язання в різних сценаріях.
+Methodological description: Compare debt payments, income stability, and other obligations under different scenarios.
+User-friendly description: Explore whether expected income can support planned loan payments.
 
 ##### Наслідки прострочення
 
+Slug: latePaymentConsequences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати фінансові й правові ризики невиконання зобов’язань відповідно до договору та місцевих правил.
+Methodological description: Identify financial and legal risks of failing to meet obligations under applicable contracts and local rules.
+User-friendly description: Understand what can happen when repayments are overdue.
 
 ##### Кредитна історія
 
+Slug: creditHistory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як відомості про минулі зобов’язання можуть впливати на умови майбутнього фінансування.
+Methodological description: Explain how records of past borrowing obligations can affect future financing terms.
+User-friendly description: Discover how past repayments can influence future borrowing.
 
 #### Ризики та захист
+
+Slug: financialRisksAndProtection
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Фінансова безпека вимагає розрізнення прийнятного ризику, можливостей страхування та ознак недобросовісних пропозицій.
+Methodological description: Financial security involves understanding acceptable risk, insurance options, and warning signs of deceptive offers.
+User-friendly description: Explore ways to recognize financial risks and protect yourself.
 
 ##### Фінансовий ризик і очікувана винагорода
 
+Slug: financialRiskAndExpectedReward
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати невизначені вигоди, можливі втрати, прийнятність ризику й часовий горизонт у фінансових рішеннях людини без зведення аналізу до характеристик конкретного ринкового активу.
+Methodological description: Evaluate uncertain benefits, possible losses, risk tolerance, and time horizons in personal financial choices without limiting analysis to a single market asset.
+User-friendly description: Compare possible rewards with the risk of losing money.
 
 ##### Принципи страхування
 
+Slug: insurancePrinciples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати внесок, страхову подію, покриття, виключення й компенсацію як механізм розподілу визначених ризиків.
+Methodological description: Explain premiums, insured events, coverage, exclusions, and compensation as mechanisms for pooling specified risks.
+User-friendly description: Understand what insurance covers and why exclusions matter.
 
 ##### Ознаки фінансового шахрайства
 
+Slug: financialFraudWarningSigns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати неправдоподібну гарантовану дохідність, вимогу термінового переказу та непрозорість сторони угоди.
+Methodological description: Recognize implausible guaranteed returns, demands for urgent transfers, and opaque counterparties.
+User-friendly description: Spot warning signs of suspicious or deceptive financial offers.
 
 ### Гроші та фінансова система
+
+Slug: moneyAndFinancialSystem
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Фінансові інституції перерозподіляють кошти в часі та між учасниками економіки. Тут вивчають інструменти й механізми системи, тоді як особистий фінансовий вибір належить сусідньому домену.
+Methodological description: Financial institutions redistribute funds across time and among economic participants. The focus is system instruments and mechanisms; personal financial decisions belong to a neighboring domain.
+User-friendly description: Discover how money, banks, and financial markets connect the economy.
 
 #### Природа грошей
 
+Slug: natureOfMoney
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Гроші функціонують як загальноприйнятий засіб платежу та одиниця вимірювання цінності в різних інституційних формах.
+Methodological description: Money functions as a generally accepted means of payment and a unit for measuring value across different institutional forms.
+User-friendly description: Explore what makes something useful as money.
 
 ##### Функції грошей
 
+Slug: functionsOfMoney
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти засіб обміну, одиницю рахунку та засіб збереження вартості з урахуванням обмежень кожної функції.
+Methodological description: Distinguish money as a medium of exchange, unit of account, and store of value, including the limitations of each function.
+User-friendly description: Recognize the different jobs that money performs.
 
 ##### Форми грошей
 
+Slug: formsOfMoney
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти готівкові, депозитні та окремі цифрові форми за емітентом, правовим статусом і ризиками.
+Methodological description: Distinguish cash, bank deposits, and selected digital forms according to issuer, legal status, and risk.
+User-friendly description: Compare cash, deposits, and digital money.
 
 ##### Купівельна спроможність грошей
 
+Slug: purchasingPowerOfMoney
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати суму грошей з обсягом доступних товарів і послуг за заданого рівня цін.
+Methodological description: Relate a sum of money to the amount of goods and services it can buy at a given price level.
+User-friendly description: See how rising prices affect what your money can buy.
 
 #### Банки та кредитне посередництво
+
+Slug: banksAndCreditIntermediation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Фінансові посередники поєднують заощадників і позичальників, керують ліквідністю та платіжною інфраструктурою.
+Methodological description: Financial intermediaries connect savers and borrowers and manage liquidity and payment infrastructure.
+User-friendly description: Understand how banks connect savings, loans, and payments.
 
 ##### Банківські депозити
 
+Slug: bankDeposits
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити залучені банком кошти, умови доступу, відсотки та відмінність депозиту від зберігання готівки.
+Methodological description: Interpret funds placed with banks, access conditions, interest, and the difference between a deposit and holding physical cash.
+User-friendly description: Learn how bank deposits work and what their conditions mean.
 
 ##### Кредитування банками
 
+Slug: bankLending
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати видачу позик, оцінювання ризику та вплив кредитування на банківські баланси й депозитні гроші.
+Methodological description: Explain loan creation, risk assessment, and the effects of bank lending on balance sheets and deposit money.
+User-friendly description: Explore how banks lend and how lending affects bank money.
 
 ##### Банківська ліквідність
 
+Slug: bankLiquidity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти здатність своєчасно виконувати платежі від довгострокової достатності активів для покриття зобов’язань.
+Methodological description: Distinguish the ability to meet payments on time from long-run sufficiency of assets to cover obligations.
+User-friendly description: Understand why a bank can face a cash shortage even if its assets have value.
 
 #### Фінансові ринки
+
+Slug: financialMarkets
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Капітал та ризики передаються через договірні вимоги й права власності, вартість яких залежить від очікувань.
+Methodological description: Capital and risk are transferred through contractual claims and ownership rights whose prices depend on expectations.
+User-friendly description: Explore how people trade financial claims and ownership interests.
 
 ##### Облігації
 
+Slug: bonds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати боргове зобов’язання, купон, строк погашення і зв’язок ринкової ціни з дохідністю.
+Methodological description: Interpret a debt obligation, coupon, maturity, and the relationship between market price and yield.
+User-friendly description: Understand bonds as loans that can be bought and sold.
 
 ##### Акції
 
+Slug: stocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміти частку участі в підприємстві, можливість дивідендів та ризик зміни ринкової вартості.
+Methodological description: Understand equity ownership in a business, possible dividends, and exposure to market-price changes.
+User-friendly description: See what owning shares in a company means.
 
 ##### Відсоткова ставка
 
+Slug: interestRates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати ціну користування коштами в часі, відрізняючи номінальні та реальні ставки.
+Methodological description: Interpret the cost of using money over time and distinguish nominal from real interest rates.
+User-friendly description: Explore how interest rates affect borrowing and saving.
 
 ##### Ризик та дохідність активів
 
+Slug: assetRiskAndReturn
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати властивості фінансових інструментів і портфелів — мінливість цін, очікуваний дохід, ліквідність та їхню ринкову взаємодію — без формування особистої рекомендації.
+Methodological description: Analyze price volatility, expected returns, liquidity, and market relationships of financial assets and portfolios without offering personalized recommendations.
+User-friendly description: Compare the risks, potential returns, and liquidity of financial assets.
 
 #### Стабільність і регулювання
+
+Slug: financialStabilityAndRegulation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Проблеми окремих посередників можуть поширюватися через борги й взаємну довіру на всю економіку.
+Methodological description: Problems at individual intermediaries can spread through debt and confidence to the broader economy.
+User-friendly description: Explore how the financial system can face problems that spread across institutions.
 
 ##### Системний фінансовий ризик
 
+Slug: systemicFinancialRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як мережа зобов’язань, паніка або дефіцит ліквідності поширюють шоки між учасниками.
+Methodological description: Explain how networks of obligations, panic, and liquidity shortages transmit shocks between participants.
+User-friendly description: Recognize why trouble at one financial institution can affect others.
 
 ##### Фінансовий нагляд
 
+Slug: financialSupervision
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити призначення вимог до капіталу, розкриття інформації та контролю ризиків у фінансових установах.
+Methodological description: Explain the purposes of capital requirements, disclosure, and risk oversight at financial institutions.
+User-friendly description: Understand how financial rules aim to reduce risks.
 
 ##### Гарантування вкладів
 
+Slug: depositInsurance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати мету й межі встановленого законом захисту вкладників без припущення про необмежене покриття.
+Methodological description: Explain the purposes and statutory limits of deposit protection without assuming unlimited coverage.
+User-friendly description: Learn what deposit protection covers and where its limits apply.
 
 ### Макроекономіка
+
+Slug: macroeconomics
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Сукупний випуск, зайнятість, інфляція та економічна динаміка характеризують взаємозв’язки на рівні економіки в цілому. Показники й моделі не тотожні добробуту кожної окремої людини.
+Methodological description: Aggregate production, employment, inflation, and economic change describe economy-wide relationships; their measures and models are not the same as each individual's wellbeing.
+User-friendly description: Explore how national output, prices, employment, and growth are connected.
 
 #### Національні рахунки
+
+Slug: nationalAccounts
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Сукупна економічна діяльність вимірюється через узгоджені категорії виробництва, доходів і витрат.
+Methodological description: Aggregate economic activity is measured using consistent categories of production, income, and expenditure.
+User-friendly description: Learn how economists measure overall economic activity.
 
 ##### Валовий внутрішній продукт
 
+Slug: grossDomesticProduct
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати вартість кінцевого виробництва в межах економіки за визначений період та межі цього показника.
+Methodological description: Interpret the value of final production within an economy over a stated period and recognize the limits of this indicator.
+User-friendly description: Understand what GDP counts and what it leaves out.
 
 ##### Номінальний і реальний випуск
 
+Slug: nominalAndRealOutput
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати зміну цін від зміни фізичного обсягу сукупного виробництва у системі національних рахунків з урахуванням бази та індексів; це конкретне макроекономічне застосування реальних величин.
+Methodological description: Separate changes in prices from changes in aggregate physical output using appropriate bases and indexes in national accounts; this is a specific macroeconomic application of real quantities.
+User-friendly description: Tell whether production increased or only prices rose.
 
 ##### Компоненти сукупних витрат
 
+Slug: aggregateExpenditureComponents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти споживання, інвестиції, державні закупівлі та чистий експорт у макроекономічних тотожностях.
+Methodological description: Distinguish consumption, investment, government purchases, and net exports in macroeconomic accounting identities.
+User-friendly description: Identify the main categories of spending in an economy.
 
 ##### ВВП на одну особу та добробут
 
+Slug: gdpPerCapitaAndWelfare
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, що середній випуск не відображає розподіл, неоплачувану працю, довкілля або всі складові якості життя.
+Methodological description: Explain why average output does not measure distribution, unpaid work, environmental effects, or every aspect of quality of life.
+User-friendly description: Recognize why GDP per person is not a complete measure of wellbeing.
 
 #### Коливання та сукупний попит
+
+Slug: businessFluctuationsAndAggregateDemand
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Економічні шоки змінюють виробництво й зайнятість через витрати, очікування та реакції виробників.
+Methodological description: Economic shocks affect output and employment through spending, expectations, and firms' responses.
+User-friendly description: Explore why economies experience periods of expansion and slowdown.
 
 ##### Економічний цикл
 
+Slug: businessCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати фази зростання і спаду та відрізняти короткострокові коливання від довгострокової тенденції.
+Methodological description: Identify phases of expansion and contraction and distinguish short-term fluctuations from long-run trends.
+User-friendly description: Recognize the different phases of the business cycle.
 
 ##### Сукупний попит
 
+Slug: aggregateDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зв’язок загальних запланованих витрат з рівнем цін і станом економіки в заданій моделі.
+Methodological description: Analyze the relationship between total planned spending, the overall price level, and economic conditions within a specified model.
+User-friendly description: Explore what shapes overall demand for goods and services.
 
 ##### Ефект мультиплікатора
 
+Slug: multiplierEffect
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як початковий приріст автономних витрат може породжувати подальші зміни доходів та споживання.
+Methodological description: Evaluate how an initial rise in autonomous spending may generate additional changes in income and consumption.
+User-friendly description: Understand why one spending increase may trigger further increases.
 
 ##### Макроекономічні шоки
 
+Slug: macroeconomicShocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти порушення попиту, пропозиції та фінансові збої за їхнім можливим впливом на випуск і ціни.
+Methodological description: Distinguish demand, supply, and financial disturbances by their possible effects on output and prices.
+User-friendly description: Compare how different kinds of shocks affect the economy.
 
 ##### Сукупна пропозиція
 
+Slug: aggregateSupply
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати залежність загального обсягу виробництва від рівня цін, виробничих витрат, ресурсних обмежень і технологій, розрізняючи короткострокові та довгострокові умови.
+Methodological description: Analyze total production in relation to the price level, input costs, resource limits, and technology, distinguishing short- and long-run conditions.
+User-friendly description: Discover what limits the total amount an economy can produce.
 
 #### Ціни та зайнятість
+
+Slug: pricesAndEmployment
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Зміни загального рівня цін і використання робочої сили мають різні причини та наслідки.
+Methodological description: Changes in the general price level and labor utilization have different causes and effects.
+User-friendly description: Explore how inflation and unemployment are measured and explained.
 
 ##### Інфляція та дефляція
 
+Slug: inflationAndDeflation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти стале підвищення і зниження загального рівня цін від зміни ціни одного товару.
+Methodological description: Distinguish a sustained increase or decrease in the general price level from a price change for one product.
+User-friendly description: Tell the difference between inflation and a price rise for one item.
 
 ##### Індекс споживчих цін
 
+Slug: consumerPriceIndex
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати зміну вартості визначеного кошика та пояснювати обмеження індексу для конкретного домогосподарства.
+Methodological description: Interpret changes in the cost of a defined consumption basket and its limitations for a particular household.
+User-friendly description: Learn how a price index tracks changes in living costs.
 
 ##### Види безробіття
 
+Slug: typesOfUnemployment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти фрикційні, структурні та циклічні причини відсутності роботи.
+Methodological description: Distinguish frictional, structural, and cyclical reasons for being out of work.
+User-friendly description: Explore why unemployment can happen for different reasons.
 
 ##### Рівень безробіття
 
+Slug: unemploymentRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити частку безробітних у складі робочої сили відповідно до статистичних критеріїв зайнятості та активного пошуку.
+Methodological description: Interpret the share of unemployed people in the labor force according to statistical criteria for employment and active job search.
+User-friendly description: Understand who is counted when unemployment is measured.
 
 ##### Рівень участі в робочій силі
 
+Slug: laborForceParticipationRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати та інтерпретувати частку людей у визначеній віковій групі, які працюють або належать до безробітних, відрізняючи її від рівня безробіття.
+Methodological description: Calculate and interpret the proportion of a specified age group that is employed or unemployed and seeking work, distinguishing it from the unemployment rate.
+User-friendly description: Compare labor-force participation with the unemployment rate.
 
 ##### Причини та механізми інфляції
 
+Slug: causesAndMechanismsOfInflation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зростання загального рівня цін через зміни сукупного попиту, виробничих витрат, монетарних умов, очікувань і шоків з урахуванням контексту та часових лагів.
+Methodological description: Analyze rises in the overall price level through aggregate demand, production costs, monetary conditions, expectations, and shocks, accounting for context and time lags.
+User-friendly description: Explore the different reasons why prices may rise across an economy.
 
 #### Зростання та продуктивність
+
+Slug: growthAndProductivity
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Тривалий розвиток сукупного випуску залежить від технологій, капіталу, праці та якості інституцій.
+Methodological description: Long-run aggregate output depends on technology, capital, labor, and institutional quality.
+User-friendly description: Discover what helps an economy produce more over the long term.
 
 ##### Економічне зростання
 
+Slug: economicGrowth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зміну реального випуску протягом часу, відрізняючи темп зростання від його абсолютного рівня.
+Methodological description: Evaluate changes in real output over time and distinguish its growth rate from its absolute level.
+User-friendly description: Measure how quickly inflation-adjusted production is growing.
 
 ##### Чинники довгострокового зростання
 
+Slug: driversOfLongTermGrowth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати внесок капіталоутворення, знань, демографії й інституцій у продуктивний потенціал.
+Methodological description: Explain how capital accumulation, knowledge, demographics, and institutions contribute to productive capacity.
+User-friendly description: Explore how skills, technology, investment, and institutions support growth.
 
 ##### Потенційний випуск
 
+Slug: potentialOutput
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти сталий виробничий потенціал від фактичного випуску під час циклічних відхилень.
+Methodological description: Distinguish sustainable production capacity from actual output during cyclical deviations.
+User-friendly description: Understand why an economy may produce below or above its sustainable capacity.
 
 ### Держава та економічна політика
+
+Slug: governmentAndEconomicPolicy
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 17
 
 [Not implemented](#)
 
-Публічний сектор змінює стимули, фінансує спільні потреби й перерозподіляє ресурси. Різні інструменти мають вигоди, витрати, ризики й політичні компроміси; жоден підхід не приймається як універсально правильний.
+Methodological description: The public sector changes incentives, finances shared needs, and redistributes resources. Policy instruments have benefits, costs, risks, and political trade-offs; no single approach is assumed universally correct.
+User-friendly description: Explore how government decisions influence resources, incentives, and economic outcomes.
 
 #### Податки
 
+Slug: taxes
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Обов’язкові платежі забезпечують публічні надходження й можуть змінювати поведінку покупців, працівників та фірм.
+Methodological description: Mandatory payments finance public revenue and can change the behavior of buyers, workers, and firms.
+User-friendly description: Understand how taxes raise public funds and influence decisions.
 
 ##### Прямі та непрямі податки
 
+Slug: directAndIndirectTaxes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти оподаткування доходу або власності та податки на операції й споживання.
+Methodological description: Distinguish taxes on income or property from taxes on transactions and consumption.
+User-friendly description: Tell the difference between taxes on earnings and taxes on purchases.
 
 ##### Податковий тягар
 
+Slug: taxIncidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, на кого фактично лягає економічна вартість податку за різної еластичності попиту й пропозиції.
+Methodological description: Analyze who ultimately bears the economic cost of a tax under different demand and supply elasticities.
+User-friendly description: Explore who really pays the cost of a tax.
 
 ##### Прогресивність оподаткування
 
+Slug: taxProgressivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти прогресивні, пропорційні й регресивні ефективні ставки залежно від бази та структури доходів.
+Methodological description: Distinguish progressive, proportional, and regressive effective tax rates according to the tax base and income structure.
+User-friendly description: Compare how tax burdens change at different income levels.
 
 #### Бюджет та борг
 
+Slug: publicBudgetAndDebt
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Державні видатки і доходи формуються в часі, а дефіцити створюють майбутні зобов’язання й альтернативні витрати.
+Methodological description: Government revenue and spending occur over time; deficits create future obligations and opportunity costs.
+User-friendly description: Discover how public budgets, deficits, and debt are connected.
 
 ##### Доходи й видатки бюджету
 
+Slug: governmentRevenuesAndExpenditures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Класифікувати основні джерела надходжень та призначення витрат публічних фінансів.
+Methodological description: Classify major sources of public revenue and categories of government expenditure.
+User-friendly description: Recognize where government money comes from and where it goes.
 
 ##### Бюджетний дефіцит і профіцит
 
+Slug: budgetDeficitAndSurplus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати різницю між надходженнями та видатками за період і відрізняти її від накопиченого боргу.
+Methodological description: Calculate the difference between revenue and expenditure over a period and distinguish that flow from accumulated government debt.
+User-friendly description: Understand the difference between a yearly deficit and total public debt.
 
 ##### Стійкість державного боргу
 
+Slug: publicDebtSustainability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати взаємодію боргу, вартості обслуговування, темпів зростання й можливостей фінансування.
+Methodological description: Evaluate how debt, servicing costs, economic growth, and financing capacity interact.
+User-friendly description: Explore what affects a government's ability to manage its debt.
 
 #### Фіскальна та монетарна політика
 
+Slug: fiscalAndMonetaryPolicy
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Макроекономічна стабілізація використовує бюджетні рішення та інструменти центрального банку, але діє із затримками.
+Methodological description: Macroeconomic stabilization employs budget decisions and central-bank instruments, both subject to delays.
+User-friendly description: Compare the main tools used to support economic stability.
 
 ##### Фіскальна стабілізація
 
+Slug: fiscalStabilization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як зміна державних витрат чи податків впливає на сукупний попит і бюджет.
+Methodological description: Analyze how changes in public spending or taxation affect aggregate demand and the government budget.
+User-friendly description: Explore how government spending and taxes may influence economic activity.
 
 ##### Автоматичні стабілізатори
 
+Slug: automaticStabilizers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як податкові надходження та трансферти можуть змінюватися з циклом без нових дискреційних рішень.
+Methodological description: Explain how tax collections and transfers may change through the business cycle without new discretionary decisions.
+User-friendly description: See how taxes and benefits respond automatically when the economy changes.
 
 ##### Монетарна політика
 
+Slug: monetaryPolicy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як центральний банк через ставки й інші інструменти впливає на кредитування, попит і ціни.
+Methodological description: Analyze how central banks use interest rates and other instruments to influence credit, demand, and prices.
+User-friendly description: Explore how a central bank can influence inflation and borrowing.
 
 ##### Трансмісійний механізм монетарної політики
 
+Slug: monetaryTransmissionMechanism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Простежувати передавання змін політичної ставки через ринкові ставки, очікування, валютний курс та витрати.
+Methodological description: Trace how changes in policy interest rates affect market rates, expectations, exchange rates, and spending.
+User-friendly description: Understand how a central bank's decision reaches the wider economy.
 
 #### Суспільні блага та регулювання
+
+Slug: publicGoodsAndRegulation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Не всі корисні послуги можна ефективно забезпечити через індивідуальні ринкові угоди; регулювання також має власні обмеження.
+Methodological description: Not every beneficial service can be efficiently supplied through individual market transactions; regulation also has limitations.
+User-friendly description: Discover why some needs call for collective provision or regulation.
 
 ##### Суспільні блага
 
+Slug: publicGoods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати невиключність і неконкурентність у споживанні та пов’язану проблему безквиткового користування.
+Methodological description: Recognize non-excludability and non-rival consumption and the associated free-rider problem.
+User-friendly description: Understand why some shared goods are difficult to fund through individual purchases.
 
 ##### Зовнішні ефекти
 
+Slug: externalities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти незараховані третім сторонам вигоди чи шкоду та їхнє значення для ефективності ринкових рішень.
+Methodological description: Identify benefits or harms to third parties not reflected in a transaction and their significance for economic efficiency.
+User-friendly description: Spot costs or benefits of economic activity that affect other people.
 
 ##### Недосконалість державного втручання
 
+Slug: governmentFailure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати ризики неякісної інформації, захоплення регулятора, спотворення стимулів і витрат адміністрування.
+Methodological description: Evaluate risks from poor information, regulatory capture, distorted incentives, and administrative costs of intervention.
+User-friendly description: Recognize ways government intervention can fall short of its goals.
 
 ##### Конкурентна політика
 
+Slug: competitionPolicy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати економічні підстави й наслідки протидії картелям, зловживанню ринковою владою та антиконкурентній концентрації; розрізняти захист конкурентного процесу і захист конкретного конкурента.
+Methodological description: Analyze the economic rationale and effects of action against cartels, abuses of market power, and anticompetitive mergers; distinguish protecting the competitive process from protecting a particular competitor.
+User-friendly description: Explore how competition policy addresses cartels and abuses of market power.
 
 #### Перерозподіл та соціальний захист
+
+Slug: redistributionAndSocialProtection
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Трансферти й публічні послуги змінюють розподіл ресурсів і страхують певні соціальні ризики.
+Methodological description: Transfers and public services change resource distribution and insure against specified social risks.
+User-friendly description: Discover how public support can reduce particular financial risks.
 
 ##### Соціальні трансферти
 
+Slug: socialTransfers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати призначення допомог і виплат та їхній вплив на доступні доходи й стимули.
+Methodological description: Analyze the purposes of public benefits and payments and their effects on disposable income and incentives.
+User-friendly description: Explore how social payments change household resources.
 
 ##### Адресність і універсальність підтримки
 
+Slug: targetedAndUniversalBenefits
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати охоплення, адміністративні витрати та ризик виключення нужденних за різного дизайну програм.
+Methodological description: Compare coverage, administrative costs, and the risk of excluding those in need across program designs.
+User-friendly description: Compare support available to everyone with support targeted to particular groups.
 
 ##### Оцінка державної програми
 
+Slug: publicProgramEvaluation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити заявлену мету, фактичні результати, альтернативні витрати та небажані наслідки втручання.
+Methodological description: Assess a program's stated objectives, actual outcomes, opportunity costs, and unintended effects.
+User-friendly description: Decide whether a government program achieved its goals and at what cost.
 
 ### Міжнародна економіка
+
+Slug: internationalEconomics
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Країни пов’язані потоками товарів, послуг, капіталу та валютних платежів. Міжнародні ефекти не зводяться до географії маршрутів торгівлі.
+Methodological description: Countries are connected by flows of goods, services, capital, and foreign-currency payments. International economic effects cannot be reduced to the geography of trade routes.
+User-friendly description: Explore how trade, currencies, and investment connect different countries.
 
 #### Спеціалізація та вигоди торгівлі
+
+Slug: specializationAndTradeGains
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Відносні, а не лише абсолютні переваги можуть пояснювати напрям обміну між економіками.
+Methodological description: Relative rather than merely absolute advantages can explain the pattern of exchange between economies.
+User-friendly description: Discover why countries specialize and what they gain from trading.
 
 ##### Абсолютна перевага
 
+Slug: absoluteAdvantage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати можливість виробити продукт із меншою кількістю ресурсів порівняно з іншим виробником.
+Methodological description: Determine whether one producer can make a product with fewer resources than another producer.
+User-friendly description: Recognize who can produce something using fewer resources.
 
 ##### Порівняльна перевага
 
+Slug: comparativeAdvantage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати нижчу альтернативну вартість виробництва й пояснювати можливість вигідної спеціалізації.
+Methodological description: Identify lower opportunity cost in production and explain the possibility of beneficial specialization.
+User-friendly description: Understand why trade can help even when one country produces everything more efficiently.
 
 ##### Вигоди міжнародної торгівлі
 
+Slug: gainsFromInternationalTrade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати розширення можливостей споживання й водночас нерівномірність розподілу здобутків.
+Methodological description: Evaluate expanded consumption possibilities alongside the unequal distribution of gains from trade.
+User-friendly description: Explore how countries can gain from trade while some groups lose out.
 
 ##### Глобальні виробничі ланцюги
 
+Slug: globalValueChains
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Простежувати розподіл доданої вартості й виробничих стадій між країнами та ризики залежності.
+Methodological description: Trace the allocation of production stages and value added among countries and the risks of dependence.
+User-friendly description: See how different countries contribute to making one product.
 
 #### Торговельна політика
+
+Slug: tradePolicy
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Державні бар’єри й домовленості змінюють ціни, конкуренцію, надходження та інтереси різних учасників.
+Methodological description: Government barriers and agreements affect prices, competition, revenue, and the interests of different participants.
+User-friendly description: Explore how trade rules change markets and prices.
 
 ##### Мито
 
+Slug: importTariffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати наслідки імпортного тарифу для внутрішніх цін, виробників, споживачів і бюджету.
+Methodological description: Analyze the effects of an import tariff on domestic prices, producers, consumers, and public revenue.
+User-friendly description: Understand who may gain or lose when imported goods face a tariff.
 
 ##### Квоти та нетарифні бар’єри
 
+Slug: quotasAndNonTariffBarriers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати вплив кількісних обмежень і регуляторних вимог на доступ товарів до ринку.
+Methodological description: Determine how quantitative restrictions and regulatory requirements affect goods' access to markets.
+User-friendly description: Recognize how quotas and rules can limit international trade.
 
 ##### Торговельні угоди
 
+Slug: tradeAgreements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити механізми взаємного зниження бар’єрів і складність узгодження різних галузевих інтересів.
+Methodological description: Interpret mechanisms for reducing barriers reciprocally and the difficulty of reconciling different sectoral interests.
+User-friendly description: Explore why countries negotiate trade agreements.
 
 #### Валюти та зовнішні баланси
 
+Slug: currenciesAndExternalBalances
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Зовнішні угоди супроводжуються валютними курсами, трансакціями та фінансовими вимогами до інших країн.
+Methodological description: International transactions involve exchange rates, payments, and financial claims on other countries.
+User-friendly description: Learn how exchange rates and cross-border accounts work.
 
 ##### Номінальний валютний курс
 
+Slug: nominalExchangeRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати ціну однієї валюти в іншій, враховуючи порядок котирування.
+Methodological description: Interpret the price of one currency in terms of another, accounting for the direction of the quoted rate.
+User-friendly description: Read how much one currency is worth in another.
 
 ##### Реальний валютний курс
 
+Slug: realExchangeRate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати номінальний курс із відносними рівнями цін для аналізу конкурентоспроможності.
+Methodological description: Connect nominal exchange rates and relative price levels to assess international competitiveness.
+User-friendly description: Compare prices across countries after allowing for exchange rates.
 
 ##### Платіжний баланс
 
+Slug: balanceOfPayments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти поточні та фінансові міжнародні операції й логіку їхнього бухгалтерського узгодження.
+Methodological description: Distinguish current and financial international transactions and the accounting principles that reconcile them.
+User-friendly description: See how international payments and investments are recorded.
 
 ##### Режими валютного курсу
 
+Slug: exchangeRateRegimes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати плаваючі й керовані режими за можливостями політики, ризиками та потребами в резервах.
+Methodological description: Compare floating and managed exchange-rate systems by policy freedom, risks, and reserve needs.
+User-friendly description: Compare floating exchange rates with rates managed by authorities.
 
 #### Міжнародні фінанси
+
+Slug: internationalFinance
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Капітал перетинає кордони у формі інвестицій, позик та інших вимог із власними вигодами й ризиками.
+Methodological description: Capital crosses borders through investments, loans, and other claims with distinctive benefits and risks.
+User-friendly description: Explore how countries borrow and invest across borders.
 
 ##### Прямі іноземні інвестиції
 
+Slug: foreignDirectInvestment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти довгострокову участь в управлінні підприємством від купівлі фінансових активів без контролю.
+Methodological description: Distinguish long-term managerial participation in a firm from purchasing financial assets without control.
+User-friendly description: Recognize investment that involves a lasting role in a foreign business.
 
 ##### Міжнародні потоки капіталу
 
+Slug: internationalCapitalFlows
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати вплив процентних ставок, очікувань і ризиків на рух фінансування між країнами.
+Methodological description: Analyze how interest rates, expectations, and risks influence movements of financing between countries.
+User-friendly description: Discover why investors move capital across borders.
 
 ##### Валютні кризи
 
+Slug: currencyCrises
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати різке падіння довіри до валюти, відплив капіталу, тиск на курс і можливості валютних інтервенцій чи коригування політики.
+Methodological description: Analyze sudden loss of confidence in a currency, capital outflows, exchange-rate pressure, and the possibilities of intervention or policy adjustment.
+User-friendly description: Explore how a currency crisis can develop.
 
 ##### Боргові кризи
 
+Slug: debtCrises
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати неможливість або ризик невиконання боргових зобов’язань за умов зміни фінансування, платежів і довіри кредиторів.
+Methodological description: Analyze an inability or risk of failing to meet debt obligations as financing conditions, payments, and creditor confidence change.
+User-friendly description: Understand why borrowers or governments can face a debt crisis.
 
 ### Розвиток, добробут та інституції
+
+Slug: developmentWellbeingAndInstitutions
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Тривалі відмінності між країнами й групами населення формуються продуктивністю, розподілом ресурсів та правилами суспільної взаємодії. Економічне зростання не завжди означає однакове покращення умов життя.
+Methodological description: Long-term differences between countries and population groups arise from productivity, distribution of resources, and rules of social interaction. Growth does not necessarily improve everyone's living conditions equally.
+User-friendly description: Explore why wealth, opportunities, and quality of life differ across societies.
 
 #### Бідність та добробут
+
+Slug: povertyAndWellbeing
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Оцінювання умов життя має враховувати доходи, можливості та доступ до базових благ.
+Methodological description: Assessing living conditions requires attention to income, opportunities, and access to essential goods.
+User-friendly description: Discover different ways to measure poverty and wellbeing.
 
 ##### Абсолютна й відносна бідність
 
+Slug: absoluteAndRelativePoverty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти нестачу ресурсів відносно базового порогу та відставання від типового рівня життя певного суспільства.
+Methodological description: Distinguish resource shortfalls against a basic threshold from living below a society's typical standard.
+User-friendly description: Tell the difference between lacking essentials and being poor relative to others.
 
 ##### Багатовимірна бідність
 
+Slug: multidimensionalPoverty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати депривації у здоров’ї, освіті й житлових умовах понад суто грошовий дохід.
+Methodological description: Evaluate deprivations in health, education, and housing beyond monetary income alone.
+User-friendly description: Explore why poverty involves more than income.
 
 ##### Індикатори людського розвитку
 
+Slug: humanDevelopmentIndicators
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати комплексні показники життя, освіти й доходу, усвідомлюючи їхні методологічні межі.
+Methodological description: Interpret composite measures of health, education, and income while recognizing their methodological limitations.
+User-friendly description: Understand what human development indexes measure and miss.
 
 #### Нерівність
+
+Slug: inequality
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Розподіл доходів і багатства може відрізнятися навіть між суспільствами з однаковим середнім доходом.
+Methodological description: Distributions of income and wealth can differ even among societies with identical average incomes.
+User-friendly description: Explore why an average income does not reveal how resources are shared.
 
 ##### Розподіл доходів
 
+Slug: incomeDistribution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати частки доходу груп населення та зміни відносного становища.
+Methodological description: Interpret income shares of population groups and changes in their relative positions.
+User-friendly description: Compare how income is distributed among groups.
 
 ##### Коефіцієнт Джині
 
+Slug: giniCoefficient
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити узагальнений індекс нерівності та його обмеження для опису форми розподілу.
+Methodological description: Interpret a summary index of inequality and its limits in describing the shape of a distribution.
+User-friendly description: Read a Gini coefficient without assuming it tells the whole story.
 
 ##### Міжпоколінна економічна мобільність
 
+Slug: intergenerationalEconomicMobility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зв’язок між економічним становищем батьків і доступними можливостями наступного покоління.
+Methodological description: Evaluate the relationship between parents' economic position and the opportunities available to the next generation.
+User-friendly description: Explore how family circumstances can shape future opportunities.
 
 ##### Розподіл багатства
 
+Slug: wealthDistribution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати нерівномірність чистих активів домогосподарств — вартості майна й фінансових прав за вирахуванням боргів — окремо від потоків поточного доходу.
+Methodological description: Analyze inequality in household net assets—property and financial claims less debt—separately from current income flows.
+User-friendly description: Distinguish inequality in wealth from inequality in income.
 
 #### Інституції та розвиток
 
+Slug: institutionsAndDevelopment
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Правила, довіра, спроможність держави й доступ до ресурсів впливають на інвестиції та економічні можливості.
+Methodological description: Rules, trust, state capacity, and access to resources influence investment and economic opportunity.
+User-friendly description: Explore how institutions affect a society's chances of prosperity.
 
 ##### Інклюзивність економічних інституцій
 
+Slug: inclusiveEconomicInstitutions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, наскільки правила забезпечують доступ до участі в економіці та захист від довільного вилучення ресурсів.
+Methodological description: Assess whether rules permit participation in economic life and protect people from arbitrary appropriation of resources.
+User-friendly description: Recognize how fair access and secure rights can widen economic opportunity.
 
 ##### Корупція та економічні стимули
 
+Slug: corruptionAndEconomicIncentives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти, як неформальні платежі та вибіркове застосування правил впливають на витрати й конкуренцію.
+Methodological description: Identify how unofficial payments and selective rule enforcement influence costs and competition.
+User-friendly description: Understand how corruption distorts business decisions and competition.
 
 ##### Доступ до фінансових та базових послуг
 
+Slug: accessToFinanceAndBasicServices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати економічні наслідки доступності інфраструктури, платежів, освіти й охорони здоров’я.
+Methodological description: Evaluate the economic effects of access to infrastructure, payment systems, education, and health services.
+User-friendly description: Explore how essential services affect people's economic opportunities.
 
 #### Структурні зміни
+
+Slug: structuralChange
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Зі зростанням продуктивності змінюються частки галузей, професій та способи організації праці.
+Methodological description: As productivity increases, the shares of industries and occupations and the organization of work change.
+User-friendly description: Discover how an economy's mix of jobs and industries evolves.
 
 ##### Секторальна структура економіки
 
+Slug: sectoralEconomicStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти діяльність у сільському господарстві, промисловості та послугах за внеском у випуск і зайнятість.
+Methodological description: Distinguish agriculture, industry, and services by their contributions to output and employment.
+User-friendly description: Compare the economic roles of farming, industry, and services.
 
 ##### Структурна трансформація
 
+Slug: structuralTransformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати переміщення праці й капіталу між видами діяльності та можливі перехідні витрати.
+Methodological description: Analyze movements of labor and capital between activities and the potential costs of transition.
+User-friendly description: Explore what happens when workers and investment shift between industries.
 
 ##### Технологічне наздоганяння
 
+Slug: technologicalCatchUp
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати умови запозичення технологій і знань та причини різних темпів зближення продуктивності.
+Methodological description: Assess conditions for adopting technology and knowledge from elsewhere and reasons why productivity gaps close at different speeds.
+User-friendly description: Understand how countries learn from technology developed elsewhere.
 
 ### Економіка довкілля та ресурсів
+
+Slug: environmentalAndResourceEconomics
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 9
 
 [Not implemented](#)
 
-Виробництво й споживання залежать від екосистем, ресурсів та здатності довкілля поглинати наслідки діяльності. Фокус — економічні стимули, оцінювання та правила використання природи, а не фізика чи біологія процесів.
+Methodological description: Production and consumption depend on ecosystems, resources, and the environment's capacity to absorb impacts. This domain examines economic incentives, valuation, and rules governing nature rather than the physics or biology of underlying processes.
+User-friendly description: Explore how economic decisions affect natural resources and the environment.
 
 #### Спільні ресурси
+
+Slug: commonPoolResources
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Суперництво у використанні та труднощі обмеження доступу створюють ризики надмірного вилучення.
+Methodological description: Competition for use and difficulty excluding access create the risk of extracting too much from shared resources.
+User-friendly description: Discover why commonly used resources can be overused.
 
 ##### Ресурси спільного користування
 
+Slug: commonPoolResourceCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати умови спільного доступу до ресурсів, де використання однією стороною зменшує доступність для інших.
+Methodological description: Identify shared-access resources where use by one participant reduces availability to others.
+User-friendly description: Recognize resources that become scarcer when many people use them.
 
 ##### Виснаження відновлюваних ресурсів
 
+Slug: renewableResourceDepletion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати баланс природного відновлення та темпу вилучення, не ототожнюючи відновлюваність із невичерпністю.
+Methodological description: Analyze the balance between natural replenishment and extraction rates, without equating renewable resources with inexhaustible ones.
+User-friendly description: Explore why even renewable resources can be depleted.
 
 ##### Управління спільними ресурсами
 
+Slug: commonResourceGovernance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати квоти, права користування, локальні домовленості та моніторинг як способи узгодження стимулів.
+Methodological description: Compare quotas, usage rights, local agreements, and monitoring as ways to align incentives for shared-resource management.
+User-friendly description: Compare rules that can help communities protect shared resources.
 
 #### Екологічні стимули та політика
+
+Slug: environmentalIncentivesAndPolicy
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Забруднення й інші зовнішні ефекти можна коригувати інструментами з різними витратами та наслідками.
+Methodological description: Pollution and other externalities can be addressed with instruments that have differing costs and consequences.
+User-friendly description: Explore economic policies that encourage less pollution.
 
 ##### Соціальна вартість забруднення
 
+Slug: socialCostOfPollution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати шкоду, яка не входить до приватних витрат забруднювача, у межах визначених припущень.
+Methodological description: Evaluate harms not included in a polluter's private costs under stated assumptions.
+User-friendly description: Recognize pollution costs that fall on other people.
 
 ##### Екологічний податок
 
+Slug: environmentalTaxes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як платіж за забруднення змінює стимули скорочувати викиди.
+Methodological description: Analyze how a charge for pollution changes incentives to reduce emissions.
+User-friendly description: See how charging for pollution can encourage cleaner choices.
 
 ##### Торгівля дозволами на викиди
 
+Slug: emissionsPermitTrading
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати механізм обмеження сукупних викидів і передачі дозволів між учасниками.
+Methodological description: Explain limits on total emissions and transfers of allowances among participants.
+User-friendly description: Discover how trading pollution permits works under an emissions cap.
 
 ##### Економічна оцінка екологічного проєкту
 
+Slug: economicAppraisalOfEnvironmentalProjects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставляти фінансові та ширші суспільні вигоди й витрати, вказуючи на невизначеність оцінок.
+Methodological description: Compare financial and wider social benefits and costs while explicitly acknowledging uncertainty in estimates.
+User-friendly description: Assess whether an environmental project offers benefits worth its costs.
 
 #### Стійкість та міжчасовий вибір
+
+Slug: sustainabilityAndIntertemporalChoice
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Рішення сьогодні можуть змінювати майбутню доступність ресурсів, ризики та добробут поколінь.
+Methodological description: Present decisions can change future resource availability, risks, and wellbeing across generations.
+User-friendly description: Explore how today's choices influence the resources left for tomorrow.
 
 ##### Міжпоколінні економічні наслідки
 
+Slug: intergenerationalEconomicImpacts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати розподіл майбутніх вигід і шкоди за рішеннями, прийнятими сьогодні.
+Methodological description: Evaluate how benefits and harms from current decisions are distributed among future generations.
+User-friendly description: Consider who gains or loses from decisions across generations.
 
 ##### Дисконтування майбутніх наслідків
 
+Slug: discountingFutureConsequences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати економічні результати в різні моменти часу й пояснювати етичну чутливість вибору ставки.
+Methodological description: Compare economic consequences arising at different times and explain the ethical sensitivity of selecting a discount rate.
+User-friendly description: Explore why the value assigned to future outcomes changes an evaluation.
 
 ### Економічні дані та дослідження
+
+Slug: economicDataAndResearch
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Економічні твердження перевіряють за допомогою вимірювання, моделей, порівнянь і причинного аналізу. У центрі — обґрунтованість висновку, а не програмування інструмента обробки даних.
+Methodological description: Economic claims are tested through measurement, models, comparison, and causal analysis. The emphasis is on the validity of conclusions rather than programming data-processing tools.
+User-friendly description: Discover how economists use data and models to test claims.
 
 #### Економічні показники
+
+Slug: economicIndicators
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Самі числа не пояснюють ситуацію без знання бази, одиниць, методики збирання й періоду.
+Methodological description: Numbers alone cannot explain economic circumstances without knowing the base, units, collection methods, and period.
+User-friendly description: Learn how to interpret economic statistics in context.
 
 ##### Читання економічних часових рядів
 
+Slug: economicTimeSeries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти рівень показника, абсолютну зміну, темп зміни та можливу сезонність.
+Methodological description: Distinguish an indicator's level, absolute change, rate of change, and possible seasonality.
+User-friendly description: Read how an economic measure changes over time.
 
 ##### Номінальні та реальні величини
 
+Slug: nominalAndRealMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перераховувати грошові показники через відповідні індекси цін, враховуючи базу, період та зіставність. Це загальна методика вимірювання, яка застосовується до доходів, зарплат, випуску та інших величин.
+Methodological description: Convert monetary indicators using appropriate price indexes while considering reference bases, periods, and comparability. This general measurement technique applies to earnings, wages, output, and other quantities.
+User-friendly description: Adjust monetary figures for price changes to compare their real value.
 
 ##### Показники на одну особу та частки
 
+Slug: perCapitaMeasuresAndShares
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити знаменники, масштаби і зіставність відносних показників між групами.
+Methodological description: Interpret denominators, scales, and comparability of ratios between groups.
+User-friendly description: Compare figures per person and percentages between populations.
 
 ##### Якість економічних даних
 
+Slug: economicDataQuality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перевіряти джерело, вибірку, метод вимірювання, ревізії та обмеження порівнянь.
+Methodological description: Check sources, samples, measurement methods, revisions, and limitations of comparisons.
+User-friendly description: Judge whether economic figures come from reliable and comparable data.
 
 #### Економічні моделі
 
+Slug: economicModels
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Спрощення дозволяють ізолювати механізми, але висновки залежать від початкових припущень.
+Methodological description: Simplified representations help isolate mechanisms, but their conclusions depend on starting assumptions.
+User-friendly description: Explore how economists use simplified models to understand decisions.
 
 ##### Побудова економічної моделі
 
+Slug: buildingEconomicModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виділяти суттєвих учасників, змінні, зв’язки та обмеження для конкретного економічного запитання.
+Methodological description: Identify important participants, variables, relationships, and constraints for a particular economic question.
+User-friendly description: Choose the essential parts of an economic situation for a model.
 
 ##### Умовне припущення ceteris paribus
 
+Slug: ceterisParibusAssumption
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відділяти вплив одного фактора від інших у межах явно сформульованої моделі.
+Methodological description: Separate the effect of one factor from others within an explicitly specified model.
+User-friendly description: Understand what it means to hold other conditions constant.
 
 ##### Межі застосування економічної моделі
 
+Slug: limitsOfEconomicModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, які припущення й контексти обмежують достовірність прогнозу або пояснення.
+Methodological description: Identify assumptions and contexts limiting the reliability of a model's prediction or explanation.
+User-friendly description: Recognize when an economic model may not fit real circumstances.
 
 #### Причинність та експерименти
 
+Slug: causalityAndExperiments
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Кореляції не обов’язково означають причинний вплив; дослідницький дизайн має враховувати альтернативні пояснення.
+Methodological description: Correlation does not necessarily demonstrate a causal effect; research design must account for alternative explanations.
+User-friendly description: Discover how economists investigate causes rather than mere associations.
 
 ##### Кореляція і причинність
 
+Slug: correlationAndCausation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти спільну зміну показників та обґрунтований ефект втручання або зміни фактора.
+Methodological description: Distinguish variables changing together from evidence supporting the causal effect of an intervention or changed factor.
+User-friendly description: Explain why two trends moving together does not prove one caused the other.
 
 ##### Змішувальні фактори
 
+Slug: confoundingFactors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти сторонні змінні, здатні створювати оманливий зв’язок між причиною та результатом.
+Methodological description: Identify outside variables that can produce a misleading apparent relationship between a proposed cause and outcome.
+User-friendly description: Spot hidden factors that might explain an apparent economic link.
 
 ##### Контрольна та експериментальна групи
 
+Slug: controlAndExperimentalGroups
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати призначення порівнянних груп та випадкового розподілу для оцінювання впливу.
+Methodological description: Explain why comparable groups and random assignment help estimate the effects of a change.
+User-friendly description: Understand why fair comparisons need suitable control groups.
 
 #### Емпіричні висновки та прогнози
+
+Slug: empiricalConclusionsAndForecasts
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Оцінювання політик і передбачення економічної динаміки спираються на дані, припущення й оцінку невизначеності.
+Methodological description: Policy evaluation and forecasting rely on evidence, explicit assumptions, and uncertainty assessment.
+User-friendly description: Explore how economists draw conclusions and make uncertain forecasts.
 
 ##### Базова регресійна модель
 
+Slug: basicRegressionModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати оцінений зв’язок результату з пояснювальними змінними, не приписуючи коефіцієнтам автоматично причинного значення.
+Methodological description: Interpret an estimated relationship between an outcome and explanatory variables without automatically attributing a causal meaning to coefficients.
+User-friendly description: Read the relationships described by a simple regression model.
 
 ##### Оцінювання ефекту політики
 
+Slug: policyEffectEvaluation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати контрфактичне запитання про те, що сталося б без втручання, та оцінювати придатність доказів.
+Methodological description: Formulate the counterfactual question of what would have occurred without an intervention and assess whether evidence can answer it.
+User-friendly description: Assess what a policy changed compared with what might have happened otherwise.
 
 ##### Невизначеність економічного прогнозу
 
+Slug: economicForecastUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміти сценарії, інтервали й джерела помилки та відрізняти прогноз від гарантованого результату.
+Methodological description: Understand scenarios, intervals, and sources of error, distinguishing forecasts from guaranteed outcomes.
+User-friendly description: Recognize uncertainty and different possibilities in economic predictions.
 
 ### Економічна історія та ідеї
+
+Slug: economicHistoryAndIdeas
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Економічні системи, інституції й теоретичні підходи змінювалися разом із виробництвом, торгівлею та суспільними конфліктами. Історичні інтерпретації потребують контексту й зіставлення джерел.
+Methodological description: Economic systems, institutions, and theories evolved alongside production, trade, and social conflicts. Historical interpretations require context and comparisons of sources.
+User-friendly description: Explore how economies and economic ideas have changed through history.
 
 #### Історичні трансформації
 
+Slug: historicalEconomicTransformations
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Технологічні, торговельні та інституційні зміни перебудовували способи виробництва й розподілу.
+Methodological description: Technological, commercial, and institutional changes have transformed how goods are produced and distributed.
+User-friendly description: Discover how production and trade have changed over time.
 
 ##### Аграрні економіки
 
+Slug: agrarianEconomies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати роль землі, сезонності, власності та надлишку продукту в історичних господарських системах.
+Methodological description: Analyze the roles of land, seasonality, ownership, and agricultural surplus in historical economic systems.
+User-friendly description: Explore how land and farming shaped historical economies.
 
 ##### Індустріалізація
 
+Slug: industrialization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати механізацію, енергетику, фабрики й урбанізацію зі змінами продуктивності та зайнятості.
+Methodological description: Connect mechanization, energy systems, factories, and urbanization with changes in productivity and employment.
+User-friendly description: Understand how industrialization changed work and production.
 
 ##### Глобалізація економічних зв’язків
 
+Slug: globalizationOfEconomicRelations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Простежувати історичне розширення торгівлі й капітальних потоків разом із нерівномірними наслідками та примусом.
+Methodological description: Trace the historical expansion of trade and capital flows alongside unequal consequences and coercion.
+User-friendly description: Explore how international economic connections expanded and affected people differently.
 
 #### Економічні системи
+
+Slug: economicSystems
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Суспільства по-різному поєднують ринки, плани, державну координацію, традиції та форми власності.
+Methodological description: Societies combine markets, planning, public coordination, traditions, and ownership forms in different ways.
+User-friendly description: Compare how different systems organize economic decisions.
 
 ##### Ринкова координація
 
+Slug: marketCoordination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати розподіл ресурсів через децентралізовані цінові сигнали та приватні рішення.
+Methodological description: Explain resource allocation through decentralized price signals and private decisions.
+User-friendly description: See how prices help coordinate choices without central instructions.
 
 ##### Адміністративне планування
 
+Slug: centralPlanning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати розподіл ресурсів через централізовані цілі, нормативи й призначення виробничих завдань.
+Methodological description: Analyze allocation through centrally defined targets, standards, and assigned production tasks.
+User-friendly description: Understand how centralized plans allocate productive resources.
 
 ##### Змішані економічні системи
 
+Slug: mixedEconomies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати різні комбінації ринку, державного сектору, регулювання та суспільних інституцій.
+Methodological description: Compare combinations of markets, public sectors, regulation, and social institutions.
+User-friendly description: Explore why many economies combine markets and government involvement.
 
 #### Напрями економічної думки
+
+Slug: schoolsOfEconomicThought
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Школи економічної науки пропонують різні моделі та припущення щодо ринків, держави, грошей і нерівності.
+Methodological description: Economic schools offer differing models and assumptions concerning markets, government, money, and inequality.
+User-friendly description: Discover how economists have explained economic problems in different ways.
 
 ##### Класична політична економія
 
+Slug: classicalPoliticalEconomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати ключові питання праці, вартості, поділу праці та накопичення в класичних концепціях.
+Methodological description: Identify central questions of labor, value, division of labor, and accumulation in classical economic theories.
+User-friendly description: Explore early economic ideas about labor, trade, and wealth.
 
 ##### Неокласична економіка
 
+Slug: neoclassicalEconomics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати граничний вибір, рівновагу та стимули в моделях індивідуальних учасників.
+Methodological description: Interpret marginal decisions, equilibrium, and incentives in models of individual economic participants.
+User-friendly description: Understand economic models based on incentives and choices at the margin.
 
 ##### Кейнсіанські підходи
 
+Slug: keynesianApproaches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати увагу до сукупного попиту, нестійкості зайнятості й стабілізаційної ролі політики.
+Methodological description: Explain the emphasis on aggregate demand, unstable employment, and the potential stabilizing role of policy.
+User-friendly description: Explore why Keynesian approaches focus on demand and economic downturns.
 
 ##### Інституційна економічна думка
 
+Slug: institutionalEconomicThought
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як формальні правила, неформальні норми, владні відносини й історичний розвиток входять до економічних теорій та пояснень.
+Methodological description: Analyze how formal rules, informal norms, power relations, and historical development enter economic theories and explanations.
+User-friendly description: Understand how institutions and social rules shape economic outcomes.
 
 ##### Поведінкова економічна думка
 
+Slug: behavioralEconomicThought
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як дослідження рішень за обмеженої раціональності, упереджень і соціальних впливів доповнюють або переглядають стандартні економічні моделі.
+Methodological description: Analyze how evidence on bounded rationality, biases, and social influences supplements or revises conventional economic models.
+User-friendly description: Discover how real human decisions challenge simplified economic assumptions.
 
 ### Цифрова економіка
+
+Slug: digitalEconomy
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 9
 
 [Not implemented](#)
 
-Цифрові продукти й платформи змінюють вартість тиражування, доступ до ринку, конкуренцію та попит на працю. Предметом є економічний механізм, а не програмна реалізація.
+Methodological description: Digital products and platforms change reproduction costs, market access, competition, and demand for labor. The focus is their economic mechanisms, not software implementation.
+User-friendly description: Explore how digital products and platforms change business and markets.
 
 #### Цифрові продукти
+
+Slug: digitalProducts
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Інформаційні блага часто мають високі початкові витрати й низькі витрати відтворення, що змінює бізнес-моделі.
+Methodological description: Information goods often involve large initial costs and low costs of reproduction, enabling different business models.
+User-friendly description: Discover why digital products can be expensive to create but cheap to copy.
 
 ##### Граничні витрати цифрового копіювання
 
+Slug: marginalCostOfDigitalCopying
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати відмінність витрат першого створення продукту від витрат на його додаткове відтворення й доставку.
+Methodological description: Explain how the initial development cost of a digital product differs from the cost of reproducing and delivering an additional copy.
+User-friendly description: Understand why making one more digital copy can cost very little.
 
 ##### Підписка та разова покупка
 
+Slug: subscriptionsVersusOneTimePurchases
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати розподіл платежів і ризиків у різних моделях доступу до цифрового продукту.
+Methodological description: Compare how payment streams and risks are distributed under subscriptions and one-time access purchases.
+User-friendly description: Compare paying once with paying repeatedly for digital access.
 
 ##### Економіка персональних даних
 
+Slug: economicsOfPersonalData
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати обмін даних на послугу, інформаційну асиметрію та економічну цінність приватності.
+Methodological description: Evaluate exchanges of personal data for services, information asymmetry, and the economic value of privacy.
+User-friendly description: Explore the hidden economic trade-offs of services funded by personal data.
 
 #### Платформи та мережеві ефекти
+
+Slug: platformsAndNetworkEffects
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Цінність сервісу може залежати від кількості учасників на кожному боці ринку, правил доступу й ефекту масштабу.
+Methodological description: A service's value may depend on participant numbers on each side of the market, access rules, and economies of scale.
+User-friendly description: Discover how platforms become more useful as more people participate.
 
 ##### Прямі та непрямі мережеві ефекти
 
+Slug: directAndIndirectNetworkEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти вигоди від більшої кількості учасників своєї групи та іншої сторони платформи.
+Methodological description: Distinguish benefits from more members of the same user group from benefits created by users on another side of a platform.
+User-friendly description: Compare network effects within one group and across different groups.
 
 ##### Двосторонні ринки
 
+Slug: twoSidedMarkets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати взаємозалежні рішення двох груп клієнтів, зокрема щодо комісій та приєднання.
+Methodological description: Analyze interdependent participation and pricing decisions of two customer groups, including access fees and joining decisions.
+User-friendly description: Explore how a platform connects two groups such as buyers and sellers.
 
 ##### Конкуренція цифрових платформ
 
+Slug: digitalPlatformCompetition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вплив перемикання, сумісності, багатоплатформеності та накопичених даних на ринкову владу.
+Methodological description: Evaluate the effects of switching costs, compatibility, multihoming, and accumulated data on market power.
+User-friendly description: Understand why switching services or joining multiple platforms affects competition.
 
 ##### Економіка творців
 
+Slug: creatorEconomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати доходи й залежності авторів цифрового контенту від аудиторії, посередників, реклами та прав на продукт.
+Methodological description: Explain digital creators' revenue streams and dependence on audiences, intermediaries, advertising, and intellectual-property rights.
+User-friendly description: Explore how online creators earn money and rely on digital platforms.
 
 #### Фінансові технології
+
+Slug: financialTechnology
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Цифрові платіжні послуги та нові класи активів змінюють фінансове посередництво, швидкість обміну й ризики; їхній технологічний принцип не дорівнює економічному статусу.
+Methodological description: Digital payment services and new asset classes alter financial intermediation, transaction speed, and risks; technological design does not by itself determine economic status.
+User-friendly description: Discover how digital financial services change payments and risk.
 
 ##### Платіжні фінансові технології
 
+Slug: paymentFinancialTechnologies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зручність, комісії, посередників і ризики цифрових фінансових сервісів.
+Methodological description: Analyze convenience, fees, intermediaries, and risks in digital financial services.
+User-friendly description: Compare the costs and benefits of digital payment services.
 
 ##### Криптоактиви та цифрові валюти
 
+Slug: cryptoassetsAndDigitalCurrencies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти приватні криптоактиви, токенізовані вимоги та цифрові валюти центральних банків за природою і ризиками.
+Methodological description: Distinguish privately issued cryptoassets, tokenized claims, and central bank digital currencies by their nature and risks.
+User-friendly description: Recognize how cryptoassets differ from official digital currencies.
 
 ### Прикладна економіка
+
+Slug: appliedEconomics
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 18
 
 [Not implemented](#)
 
-Спеціалізовані ринки та інституційні умови міст, житла, транспорту, освіти, охорони здоров’я і сільського господарства створюють відмінні економічні механізми. Цей домен класифікує економічні рішення та наслідки в галузях, не дублюючи географічні, медичні, педагогічні чи агрономічні компетентності.
+Methodological description: Specialized markets and institutional conditions in cities, housing, transport, education, healthcare, and agriculture create distinct economic mechanisms. This domain examines sector-specific choices and consequences without duplicating geographic, medical, educational, or agricultural competencies.
+User-friendly description: Explore how economic principles apply to cities, housing, transport, education, healthcare, and farming.
 
 #### Міста та регіони
 
+Slug: urbanAndRegionalEconomics
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Концентрація людей і підприємств створює вигоди близькості, інфраструктурні обмеження й різну спеціалізацію територій.
+Methodological description: Concentrations of people and firms yield benefits from proximity, infrastructure constraints, and regional specialization.
+User-friendly description: Discover why cities and regions develop different economic strengths.
 
 ##### Агломераційні ефекти
 
+Slug: agglomerationEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати переваги й витрати концентрації виробників і працівників у містах через обмін знаннями, спільні ресурси, транспортні перевантаження та ціни землі.
+Methodological description: Explain benefits and costs of concentrating firms and workers in cities through knowledge exchange, shared resources, congestion, and land prices.
+User-friendly description: Explore why clustering businesses can help productivity but also raise costs.
 
 ##### Регіональна спеціалізація
 
+Slug: regionalSpecialization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, чому різні території концентрують певні види діяльності залежно від доступності ресурсів, ринків, людського капіталу й інституцій.
+Methodological description: Analyze why different territories concentrate particular activities because of resource access, markets, human capital, and institutions.
+User-friendly description: Understand why different regions focus on different industries.
 
 ##### Регіональні економічні відмінності
 
+Slug: regionalEconomicDisparities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати економічні результати територій за продуктивністю, доходами, доступом до роботи та інфраструктури, відрізняючи рівень показника від географічного розташування.
+Methodological description: Compare territories' productivity, incomes, access to jobs, and infrastructure, distinguishing indicator levels from geographical location alone.
+User-friendly description: Compare economic opportunities across regions using relevant measures.
 
 #### Житло та нерухомість
 
+Slug: housingAndRealEstate
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Ціни й доступність житла залежать від землі, будівництва, доходів, іпотечного фінансування, локального попиту й регулювання.
+Methodological description: Housing prices and affordability depend on land, construction, income, mortgage finance, local demand, and regulation.
+User-friendly description: Explore why home prices and rents vary across places.
 
 ##### Ринок житла
 
+Slug: housingMarket
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати формування орендної плати й ціни житла під впливом локального попиту, доступної пропозиції, строків будівництва й фінансування.
+Methodological description: Analyze rents and house prices in relation to local demand, available supply, construction lead times, and financing.
+User-friendly description: Understand how local supply and demand affect housing prices.
 
 ##### Доступність житла
 
+Slug: housingAffordability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити витрати купівлі чи оренди житла з доходом, борговими зобов’язаннями, якістю та розташуванням; відрізняти доступність від самої ринкової ціни.
+Methodological description: Compare purchase or rental expenses with income, debts, quality, and location; distinguish affordability from market price alone.
+User-friendly description: Find out what makes a home affordable for a particular household.
 
 ##### Економіка землекористування
 
+Slug: landUseEconomics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати, як зонування, обмеження забудови й альтернативні способи використання ділянок впливають на ренту, обсяги будівництва й розміщення діяльності.
+Methodological description: Evaluate how zoning, development limits, and alternative uses of land affect rents, construction volumes, and the location of activity.
+User-friendly description: Explore how land-use rules influence where and what people build.
 
 #### Транспорт та інфраструктура
 
+Slug: transportAndInfrastructure
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Переміщення людей і товарів створює прямі й зовнішні витрати, а інфраструктура має тривалий строк служби та значні початкові вкладення.
+Methodological description: Moving people and goods creates direct and external costs, while infrastructure requires large initial investments and lasts for long periods.
+User-friendly description: Discover the economic trade-offs behind transport and public infrastructure.
 
 ##### Попит на транспортні послуги
 
+Slug: transportDemand
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати вплив ціни, часу в дорозі, частоти, надійності й доступних альтернатив на вибір способу переміщення.
+Methodological description: Analyze how fare or price, travel time, frequency, reliability, and available alternatives affect choice of travel mode.
+User-friendly description: Explore what makes people choose one way of traveling over another.
 
 ##### Економіка транспортних заторів
 
+Slug: congestionEconomics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зовнішні витрати додаткового учасника перевантаженої мережі й порівнювати механізми ціноутворення або управління попитом.
+Methodological description: Evaluate the external costs of adding a user to a congested network and compare pricing or demand-management responses.
+User-friendly description: Understand why each extra vehicle can slow down others.
 
 ##### Оцінка інфраструктурних інвестицій
 
+Slug: infrastructureInvestmentAppraisal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставляти початкові й довгострокові витрати проєкту з економією часу, доступністю та іншими суспільними результатами на визначеному горизонті.
+Methodological description: Compare upfront and long-term project costs with travel-time savings, accessibility, and other social outcomes over a specified horizon.
+User-friendly description: Assess whether a transport project provides benefits worth its full costs.
 
 #### Освіта
 
+Slug: economicsOfEducation
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Інвестиції у знання мають приватну й суспільну віддачу, пов’язані з фінансуванням, доступом та інформаційною невизначеністю.
+Methodological description: Investing in knowledge creates private and social returns and raises questions of financing, access, and uncertain information.
+User-friendly description: Explore the benefits, costs, and funding of education.
 
 ##### Економічна віддача від освіти
 
+Slug: economicReturnsToEducation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати очікувані зміни доходу, продуктивності й можливостей у зіставленні з витратами часу та навчання, не ототожнюючи кореляцію освіти й заробітку з причинністю.
+Methodological description: Assess expected changes in earnings, productivity, and opportunity relative to time and schooling costs without automatically interpreting an education–earnings correlation as causal.
+User-friendly description: Compare the economic value of education with its time and financial costs.
 
 ##### Фінансування освіти
 
+Slug: educationFinancing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати приватне й публічне фінансування освітніх послуг за розподілом витрат, доступом і стимулами учасників.
+Methodological description: Compare private and public financing of education by cost distribution, access, and incentives.
+User-friendly description: Explore who pays for education and how funding choices affect access.
 
 ##### Економічна нерівність в освіті
 
+Slug: economicInequalityInEducation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як доходи сім’ї, місцеві ресурси, інституції й інформація можуть впливати на можливості навчання та подальші економічні результати.
+Methodological description: Analyze how household income, local resources, institutions, and information shape learning opportunities and later economic outcomes.
+User-friendly description: Understand why families and communities face unequal educational opportunities.
 
 #### Охорона здоров’я
 
+Slug: healthEconomics
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Медичні ринки мають суттєву інформаційну асиметрію, страхові механізми та зовнішні ефекти здоров’я населення.
+Methodological description: Healthcare markets involve substantial information asymmetry, insurance arrangements, and external effects of population health.
+User-friendly description: Discover why healthcare markets operate differently from ordinary product markets.
 
 ##### Ринки медичних послуг
 
+Slug: healthcareServiceMarkets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати взаємодію пацієнтів, лікарів, страховиків і закладів за нерівномірного доступу до інформації, цін та якості послуг.
+Methodological description: Analyze interactions among patients, clinicians, insurers, and facilities under unequal access to information, prices, and service quality.
+User-friendly description: Explore why buying healthcare involves complex information and incentives.
 
 ##### Медичне страхування та моральний ризик
 
+Slug: healthInsuranceAndMoralHazard
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як страхове покриття змінює розподіл витрат і стимули щодо користування послугами, не зводячи будь-яке звернення по допомогу до небажаної поведінки.
+Methodological description: Explain how insurance coverage changes the allocation of costs and incentives to use services without labeling all care-seeking as undesirable behavior.
+User-friendly description: Understand how insurance can change both who pays and how services are used.
 
 ##### Фінансування охорони здоров’я
 
+Slug: healthcareFinancing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати податкове, страхове та пряме фінансування за доступністю, фінансовим ризиком для домогосподарств і витратами системи.
+Methodological description: Compare tax-based, insurance-based, and direct payment by access, household financial risk, and system costs.
+User-friendly description: Compare different ways healthcare is funded.
 
 #### Сільське господарство
+
+Slug: agriculturalEconomics
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Біологічні цикли, погодна невизначеність, землекористування й міжнародний обмін формують специфіку аграрних ринків.
+Methodological description: Biological cycles, uncertain weather, land use, and international exchange shape agricultural markets.
+User-friendly description: Discover why farming involves distinctive costs and risks.
 
 ##### Аграрні ринки
 
+Slug: agriculturalMarkets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати формування цін на сільськогосподарську продукцію за сезонності, можливостей зберігання, коливань урожаю та міжнародної торгівлі.
+Methodological description: Analyze farm-product prices in light of seasonality, storage opportunities, harvest variations, and international trade.
+User-friendly description: Explore why food prices change with seasons, harvests, and trade.
 
 ##### Сезонність та аграрні ризики
 
+Slug: agriculturalSeasonalityAndRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати вплив сезонних циклів, погодних шоків і змінних витрат на виробничі рішення та можливості страхування чи хеджування.
+Methodological description: Evaluate how seasonal cycles, weather shocks, and variable costs influence production and options for insurance or hedging.
+User-friendly description: Understand how farmers manage seasonal uncertainty and weather risks.
 
 ##### Продовольча безпека як економічна проблема
 
+Slug: foodSecurityAsAnEconomicIssue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати фізичну та економічну доступність продовольства, стабільність постачання й причини, чому достатній загальний випуск не гарантує доступ кожному.
+Methodological description: Analyze physical and economic access to food, stability of supplies, and why sufficient aggregate production does not ensure everyone can obtain food.
+User-friendly description: Explore why enough food being produced does not mean everyone can afford or access it.
