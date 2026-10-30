@@ -51,7 +51,7 @@ export const sameDenominatorModel_Skill_Data = buildSkillConfig({
       ko: "분모가 같다면 같은 크기의 부분을 더 많이 가진 분수가 큽니다. 그림으로 3/5 > 2/5를 확인합니다.",
       tr: "Payda aynıysa daha çok eşit parça içeren kesir büyüktür. Bir çizim 3/5 > 2/5 olduğunu gösterir.",
       vi: "Khi mẫu số bằng nhau, lấy nhiều phần hơn thì phân số lớn hơn. Hình vẽ cho thấy 3/5 > 2/5.",
-      ta: "பகுதி எண்கள் சமமாக இருந்தால் அதிகப் பகுதிகளை எடுத்த பின்னம் பெரியது. 3/5 > 2/5 என்பதைப் படம் காட்டும்.",
+      ta: "கீழெண்கள் சமமாக இருந்தால் அதிகப் பகுதிகளை எடுத்த பின்னம் பெரியது. 3/5 > 2/5 என்பதைப் படம் காட்டும்.",
       te: "హారాలు సమానమైతే ఎక్కువ సమాన భాగాలు ఉన్న భిన్నం పెద్దది. చిత్రంలో 3/5 > 2/5 తెలుస్తుంది.",
       mr: "छेद समान असल्यास अधिक समान भागांचा अपूर्णांक मोठा असतो. चित्रातून ३/५ > २/५ समजते.",
       ms: "Jika penyebut sama, lebih banyak bahagian diambil bermakna pecahan lebih besar. Gambar menunjukkan 3/5 > 2/5.",

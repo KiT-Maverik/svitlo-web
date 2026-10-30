@@ -50,7 +50,7 @@ export const portions_SkillGroup_Data = buildSkillGroupConfig({
       id: "Cari bagian pecahan dari suatu jumlah atau temukan jumlah keseluruhan dari satu bagian yang sama besar.",
       de: "Finde einen Bruchteil einer Menge oder berechne aus einem bekannten gleichen Teil das Ganze.",
       ja: "数量の分数部分を求めたり、わかっている等しい一部分から全体を求めたりします。",
-      ko: "양의 일부를 분수로 구하거나 같은 한 부분의 양에서 전체를 거꾸로 구합니다。",
+      ko: "양의 일부를 분수로 구하거나 같은 한 부분의 양에서 전체를 거꾸로 구합니다.",
       tr: "Bir miktarın kesirli bölümünü bul veya bilinen eşit bir parçadan bütünü hesapla.",
       vi: "Tìm một phần phân số của lượng hoặc suy ngược ra toàn bộ từ một phần bằng nhau đã biết.",
       ta: "ஒரு அளவின் பின்னப் பகுதியைக் கண்டறி அல்லது தெரிந்த சமப் பகுதியிலிருந்து முழு அளவைக் கண்டுபிடி.",

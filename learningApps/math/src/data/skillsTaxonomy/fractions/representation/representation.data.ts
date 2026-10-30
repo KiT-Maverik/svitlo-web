@@ -47,7 +47,7 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
       bn: "নির্দিষ্ট সম্পূর্ণের অংশ ভগ্নাংশ, ছবি বা সংখ্যারেখায় দেখাও; একের সমান বা বড় ভগ্নাংশও।",
       pt: "Represente partes de um todo escolhido com frações, desenhos ou reta numérica, incluindo frações iguais ou maiores que um.",
       ur: "چنے ہوئے کل کے حصے کسروں، تصویروں یا خطِ اعداد پر دکھائیں، ایک کے برابر یا بڑے کسر بھی۔",
-      id: "Tunjukkan bagian dari satu keseluruhan dengan lambang pecahan, gambar, atau garis bilangan, termasuk pecahan senilai atau lebih dari satu.",
+      id: "Tunjukkan bagian dari satu keseluruhan dengan lambang pecahan, gambar, atau garis bilangan, termasuk pecahan yang bernilai satu atau lebih.",
       de: "Stelle Teile eines festgelegten Ganzen mit Brüchen, Bildern oder Zahlenstrahl dar, auch Brüche gleich oder größer als eins.",
       ja: "選んだ全体の部分を分数、図、数直線で表します。1と等しい分数や1より大きい分数も含みます。",
       ko: "정해진 전체의 부분을 분수 기호, 그림, 수직선으로 나타냅니다. 1과 같거나 큰 분수도 포함합니다.",

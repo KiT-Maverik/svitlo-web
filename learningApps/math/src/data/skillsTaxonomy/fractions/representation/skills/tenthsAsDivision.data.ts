@@ -55,7 +55,7 @@ export const tenthsAsDivision_Skill_Data = buildSkillConfig({
       te: "పదవ వంతు అంటే మొత్తం పది సమాన భాగాల్లో ఒకటి. మొత్తాన్ని 10తో భాగిస్తే 1/10 వస్తుంది, దాన్ని 0.1గా కూడా రాస్తారు.",
       mr: "एक दशांश म्हणजे पूर्णाच्या दहा समान भागांपैकी एक. पूर्णाला 10 ने भागल्यास 1/10 मिळतो; तो 0.1 असाही लिहिता येतो.",
       ms: "Satu persepuluh ialah satu daripada sepuluh bahagian sama. Membahagi keseluruhan dengan 10 menghasilkan 1/10, juga ditulis 0.1.",
-      he: "עשירית היא אחת מעשר חלקים שווים של שלם. חלוקה ב־10 נותנת 1/10, שאפשר לכתוב גם 0.1.",
+      he: "עשירית היא חלק אחד מעשרה חלקים שווים של השלם. חלוקה ב־10 נותנת 1/10, שאפשר לכתוב גם 0.1.",
       pl: "Jedna dziesiąta to jedna z dziesięciu równych części całości. Dzielenie przez 10 daje 1/10, zapisywane też jako 0,1.",
       uk: "Одна десята — одна з десяти рівних частин цілого. Ділення цілого на 10 дає 1/10, що також записують 0,1.",
       lt: "Dešimtoji yra viena iš dešimties lygių visumos dalių. Padalijus iš 10 gaunama 1/10, rašoma ir 0,1.",

@@ -61,7 +61,7 @@ export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
       pl: "Dodawaj lub odejmuj ułamki z równych części tej samej całości, pozostawiając mianownik bez zmian.",
       uk: "Додавай або віднімай дроби, що позначають однакові за розміром частини того самого цілого, не змінюючи знаменник.",
       lt: "Sudėk arba atimk trupmenas, sudarytas iš vienodo dydžio tos pačios visumos dalių, nekeisdamas vardiklio.",
-      lv: "Saskaiti vai atņem daļas no vienāda lieluma viena veseluma daļām, nemainot saucēju.",
+      lv: "Saskaiti vai atņem daļskaitļus, kas apzīmē vienāda lieluma daļas no tā paša veseluma, nemainot saucēju.",
       et: "Liida või lahuta sama terviku võrdse suurusega osadest koosnevaid murde, jättes nimetaja samaks.",
       be: "Дадавай або адымай дробы, што абазначаюць роўныя часткі таго самага цэлага, не зьмяняючы назоўніка.",
       ka: "შეკრიბე ან გამოაკელი ერთი მთელის თანაბარი ზომის ნაწილების წილადები მნიშვნელის შეუცვლელად.",

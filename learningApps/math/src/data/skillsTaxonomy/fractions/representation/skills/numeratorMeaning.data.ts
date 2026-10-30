@@ -52,7 +52,7 @@ export const numeratorMeaning_Skill_Data = buildSkillConfig({
       tr: "Pay kaç eşit parçanın alındığını gösterir. Payda aynıysa daha çok parça daha büyük kesir demektir.",
       vi: "Tử số cho biết bao nhiêu phần bằng nhau được lấy. Mẫu số giống nhau thì lấy nhiều phần hơn được phân số lớn hơn.",
       ta: "லவம் எத்தனை சமப் பகுதிகள் எடுக்கப்பட்டன என்பதைக் காட்டும். பகுதி எண் சமமெனில் அதிகப் பகுதிகளைக் கொண்ட பின்னம் பெரியது.",
-      te: "లవం ఎన్ని సమాన భాగాలు తీసుకున్నారో చెబుతుంది. హారం ఒకటైతే ఎక్కువ భాగాలు ఉన్న భిన్నం పెద్దది.",
+      te: "లవం ఎన్ని సమాన భాగాలు తీసుకున్నారో చెబుతుంది. హారాలు సమానమైతే ఎక్కువ భాగాలు ఉన్న భిన్నం పెద్దది.",
       mr: "अंश घेतलेल्या समान भागांची संख्या सांगतो. छेद समान असल्यास अधिक भागांचा अपूर्णांक मोठा.",
       ms: "Pengangka menunjukkan bilangan bahagian sama yang diambil. Dengan penyebut sama, lebih banyak bahagian bermakna pecahan lebih besar.",
       he: "המונה מציין כמה חלקים שווים נלקחו. כשמכנה זהה, יותר חלקים פירושם שבר גדול יותר.",
