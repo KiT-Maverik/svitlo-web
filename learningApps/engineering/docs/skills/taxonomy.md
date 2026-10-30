@@ -20,789 +20,1399 @@ Code files: 0/18 Domains · 0/61 Groups · 0/264 Skills
 
 ### Engineering Design
 
+Slug: engineeringDesign
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
-A design must respond to an actual need, not merely demonstrate a technology. This domain concerns converting uncertain problems into requirements, selecting feasible concepts, communicating designs and improving them using evidence.
+Methodological description: A design must respond to an actual need, not merely demonstrate a technology. This domain concerns converting uncertain problems into requirements, selecting feasible concepts, communicating designs and improving them using evidence.
+User-friendly description: Learn to develop, test and improve technical solutions to practical needs.
 
 #### Problem Definition
 
+Slug: problemDefinition
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-A clear brief distinguishes what needs to change, how success will be measured and which resources or conditions constrain possible solutions.
+Methodological description: A clear brief distinguishes what needs to change, how success will be measured and which resources or conditions constrain possible solutions.
+User-friendly description: Discover how clear requirements begin a successful design.
 
 ##### Identify an engineering need
 
+Slug: identifyAnEngineeringNeed
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a practical problem or unmet function in a physical product or environment rather than assuming a particular invention is necessary.
+Methodological description: Recognize a practical problem or unmet function in a physical product or environment rather than assuming a particular invention is necessary.
+User-friendly description: Identify a real need that engineering could help address.
 
 ##### Formulate a design problem
 
+Slug: formulateADesignProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify the required function, intended users and operating context without predetermining the technical solution.
+Methodological description: Specify the required function, intended users and operating context without predetermining the technical solution.
+User-friendly description: Describe what a technical solution must do and who will use it.
 
 ##### Define performance criteria
 
+Slug: definePerformanceCriteria
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State observable success conditions such as load capacity, flow, travel, access or power consumption.
+Methodological description: State observable success conditions such as load capacity, flow, travel, access or power consumption.
+User-friendly description: Define measurable outcomes that show whether a design succeeds.
 
 ##### Identify design constraints
 
+Slug: identifyDesignConstraints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize limits imposed by cost, materials, dimensions, time, safety and operating environment.
+Methodological description: Recognize limits imposed by cost, materials, dimensions, time, safety and operating environment.
+User-friendly description: Identify limits such as cost, available materials, space and safety.
 
 ##### Prioritize requirements
 
+Slug: prioritizeRequirements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate essential conditions from preferred attributes when several goals compete.
+Methodological description: Separate essential conditions from preferred attributes when several goals compete.
+User-friendly description: Decide which requirements are essential and which are optional.
 
 #### Concept Selection
 
+Slug: conceptSelection
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Competing technical arrangements can meet the same need in different ways; choosing responsibly requires functional comparison and defensible compromises.
+Methodological description: Competing technical arrangements can meet the same need in different ways; choosing responsibly requires functional comparison and defensible compromises.
+User-friendly description: Learn to compare possible ways of meeting a technical need.
 
 ##### Generate alternative design concepts
 
+Slug: generateAlternativeDesignConcepts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Propose more than one functional approach to a need rather than only cosmetic variations of one approach.
+Methodological description: Propose more than one functional approach to a need rather than only cosmetic variations of one approach.
+User-friendly description: Suggest different functional approaches to the same design challenge.
 
 ##### Decompose a design problem
 
+Slug: decomposeADesignProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate a large objective into subsystems or functions with defined interactions.
+Methodological description: Separate a large objective into subsystems or functions with defined interactions.
+User-friendly description: Divide a complex design into smaller connected functions.
 
 ##### Compare design alternatives
 
+Slug: compareDesignAlternatives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use stated criteria to evaluate the advantages and limitations of candidate concepts.
+Methodological description: Use stated criteria to evaluate the advantages and limitations of candidate concepts.
+User-friendly description: Compare candidate designs against clearly stated criteria.
 
 ##### Justify a design trade-off
 
+Slug: justifyADesignTradeOff
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain an accepted sacrifice, such as extra mass in exchange for greater strength.
+Methodological description: Explain an accepted sacrifice, such as extra mass in exchange for greater strength.
+User-friendly description: Explain why improving one feature may require sacrificing another.
 
 ##### Anticipate failure modes
 
+Slug: anticipateFailureModes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Predict credible ways a proposed arrangement might fail to deliver its intended function.
+Methodological description: Predict credible ways a proposed arrangement might fail to deliver its intended function.
+User-friendly description: Predict credible ways a design could fail in use.
 
 #### Representations and Prototypes
+
+Slug: representationsAndPrototypes
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Technical representations communicate geometry, operation and interfaces. A model is useful when it preserves properties that matter to the question being investigated.
+Methodological description: Technical representations communicate geometry, operation and interfaces. A model is useful when it preserves properties that matter to the question being investigated.
+User-friendly description: Discover how drawings and prototypes communicate a technical concept.
 
 ##### Create a functional block diagram
 
+Slug: createAFunctionalBlockDiagram
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show key units and the direction of energy, material or signal flow between them.
+Methodological description: Show key units and the direction of energy, material or signal flow between them.
+User-friendly description: Create a diagram showing parts and flows of energy, materials or signals.
 
 ##### Interpret technical system schematics
 
+Slug: interpretTechnicalSystemSchematics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret functional symbols and relationships in mechanical, hydraulic, pneumatic or block diagrams. Specialized electrical-circuit connectivity and electrical symbols have a separate competency.
+Methodological description: Interpret functional symbols and relationships in mechanical, hydraulic, pneumatic or block diagrams. Specialized electrical-circuit connectivity and electrical symbols have a separate competency.
+User-friendly description: Read diagrams to understand how technical components relate.
 
 ##### Create a dimensioned drawing
 
+Slug: createADimensionedDrawing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify relevant sizes and geometric relations so another person could reproduce a part.
+Methodological description: Specify relevant sizes and geometric relations so another person could reproduce a part.
+User-friendly description: Draw a part with dimensions that communicate its intended size.
 
 ##### Build a functional prototype
 
+Slug: buildAFunctionalPrototype
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Make a physical or computational representation that can demonstrate or investigate a specified design feature.
+Methodological description: Make a physical or computational representation that can demonstrate or investigate a specified design feature.
+User-friendly description: Build a model that tests or demonstrates a particular design idea.
 
 ##### Design rationale
 
+Slug: designRationale
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Communicate why components, arrangements and dimensions were chosen in relation to requirements.
+Methodological description: Communicate why components, arrangements and dimensions were chosen in relation to requirements.
+User-friendly description: Explain why a design uses particular components and arrangements.
 
 #### Testing and Iteration
+
+Slug: testingAndIteration
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-A plausible prototype is not proof of performance. Measurement, failure analysis and controlled revisions provide a basis for improving the proposed product.
+Methodological description: A plausible prototype is not proof of performance. Measurement, failure analysis and controlled revisions provide a basis for improving the proposed product.
+User-friendly description: Use evidence from testing to improve a prototype and check its purpose.
 
 ##### Plan an engineering test
 
+Slug: planAnEngineeringTest
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define the operating conditions, measurement and pass criterion that will evaluate a requirement.
+Methodological description: Define the operating conditions, measurement and pass criterion that will evaluate a requirement.
+User-friendly description: Plan a test with clear operating conditions and a measurable result.
 
 ##### Evaluate prototype performance
 
+Slug: evaluatePrototypePerformance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret observed prototype-test results under defined conditions and compare measured outputs with expected performance. This analysis alone does not establish full design verification or validate user needs.
+Methodological description: Interpret observed prototype-test results under defined conditions and compare measured outputs with expected performance. This analysis alone does not establish full design verification or validate user needs.
+User-friendly description: Compare a prototype's measured performance with its expected performance.
 
 ##### Diagnose a prototype failure
 
+Slug: diagnoseAPrototypeFailure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use symptoms and component relationships to identify a plausible cause of poor performance.
+Methodological description: Use symptoms and component relationships to identify a plausible cause of poor performance.
+User-friendly description: Investigate which component or condition might explain a prototype failure.
 
 ##### Revise a design using evidence
 
+Slug: reviseADesignUsingEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Change an identified feature on the basis of test results and explain the expected benefit.
+Methodological description: Change an identified feature on the basis of test results and explain the expected benefit.
+User-friendly description: Use test results to justify a change to a design.
 
 ##### Verify design requirements
 
+Slug: verifyDesignRequirements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use inspection, test, demonstration or analysis to determine whether stated technical requirements and their acceptance criteria have been met. Passing one test does not establish compliance with untested requirements.
+Methodological description: Use inspection, test, demonstration or analysis to determine whether stated technical requirements and their acceptance criteria have been met. Passing one test does not establish compliance with untested requirements.
+User-friendly description: Check systematically whether a solution satisfies each technical requirement.
 
 ##### Validate user needs
 
+Slug: validateUserNeeds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether the finished or representative solution actually meets the real-world needs of intended users in appropriate conditions, even where formal design requirements have been met.
+Methodological description: Assess whether the finished or representative solution actually meets the real-world needs of intended users in appropriate conditions, even where formal design requirements have been met.
+User-friendly description: Find out whether a finished solution actually serves its intended users.
 
 ##### Measurement uncertainty
 
+Slug: measurementUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Characterize the limits of numerical observations using resolution, calibration, repeatability and error sources, including consequences for a pass-or-fail engineering decision.
+Methodological description: Characterize the limits of numerical observations using resolution, calibration, repeatability and error sources, including consequences for a pass-or-fail engineering decision.
+User-friendly description: Understand how measurement uncertainty can affect an engineering decision.
 
 ### Systems Engineering
 
+Slug: systemsEngineering
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-An engineered system is defined by coordinated functions and exchanges, not just a collection of parts. This domain addresses architecture, interfaces, dependencies, reliability and the consequences of faults.
+Methodological description: An engineered system is defined by coordinated functions and exchanges, not just a collection of parts. This domain addresses architecture, interfaces, dependencies, reliability and the consequences of faults.
+User-friendly description: Explore how components cooperate in complex systems and what happens when they fail.
 
 #### Functional Architecture
 
+Slug: functionalArchitecture
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-The same overall service may be implemented by different assemblies; the function and system boundary must be distinguished from component names.
+Methodological description: The same overall service may be implemented by different assemblies; the function and system boundary must be distinguished from component names.
+User-friendly description: Learn how functions and boundaries define an engineered system.
 
 ##### Identify a system function
 
+Slug: identifyASystemFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State the useful transformation or service that a machine or infrastructure delivers.
+Methodological description: State the useful transformation or service that a machine or infrastructure delivers.
+User-friendly description: Identify the useful task that an engineered system performs.
 
 ##### Identify system boundaries
 
+Slug: identifySystemBoundaries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate the engineered assembly from its users, surroundings and connected external services.
+Methodological description: Separate the engineered assembly from its users, surroundings and connected external services.
+User-friendly description: Distinguish the system being studied from its environment and users.
 
 ##### Trace inputs and outputs
 
+Slug: traceInputsAndOutputs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow energy, materials or signals entering and leaving an operating system, including losses or by-products.
+Methodological description: Follow energy, materials or signals entering and leaving an operating system, including losses or by-products.
+User-friendly description: Trace materials, energy or information entering and leaving a system.
 
 ##### Subsystem functions
 
+Slug: subsystemFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify why each major assembly is necessary to the overall service.
+Methodological description: Identify why each major assembly is necessary to the overall service.
+User-friendly description: Explain the role of each major subsystem in the overall function.
 
 ##### Trace an operating sequence
 
+Slug: traceAnOperatingSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the causal order of events through startup, normal operation or shutdown.
+Methodological description: Describe the causal order of events through startup, normal operation or shutdown.
+User-friendly description: Follow the events involved in starting, using and stopping a system.
 
 #### Interfaces and Interdependencies
 
+Slug: interfacesAndInterdependencies
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Local decisions affect neighboring components through mechanical, electrical, fluid and information connections.
+Methodological description: Local decisions affect neighboring components through mechanical, electrical, fluid and information connections.
+User-friendly description: Discover how connected components depend on each other.
 
 ##### Identify component interfaces
 
+Slug: identifyComponentInterfaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine what must physically cross a boundary between connected assemblies.
+Methodological description: Determine what must physically cross a boundary between connected assemblies.
+User-friendly description: Identify where mechanical, electrical or other connections cross between components.
 
 ##### Analyze subsystem dependencies
 
+Slug: analyzeSubsystemDependencies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how a limitation or interruption in one part influences another part's operation.
+Methodological description: Show how a limitation or interruption in one part influences another part's operation.
+User-friendly description: Explain how a problem in one subsystem affects other parts.
 
 ##### Evaluate system-level compromises
 
+Slug: evaluateSystemLevelCompromises
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why optimizing one part may worsen total cost, complexity, efficiency or reliability.
+Methodological description: Explain why optimizing one part may worsen total cost, complexity, efficiency or reliability.
+User-friendly description: Recognize why making one component better can worsen the complete system.
 
 ##### Predict the effect of component changes
 
+Slug: predictTheEffectOfComponentChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how altered dimensions, rates or capacities affect connected system functions.
+Methodological description: Trace how altered dimensions, rates or capacities affect connected system functions.
+User-friendly description: Predict how changing a component's capacity or dimensions affects other components.
 
 #### Reliability and Maintenance
+
+Slug: reliabilityAndMaintenance
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Operating systems face wear and faults, so diagnosis and continued service require explicit understanding of possible failure paths.
+Methodological description: Operating systems face wear and faults, so diagnosis and continued service require explicit understanding of possible failure paths.
+User-friendly description: Explore how engineers manage failures and maintain reliable operation.
 
 ##### Distinguish component and system failures
 
+Slug: distinguishComponentAndSystemFailures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why the loss of a part may or may not disable the overall function.
+Methodological description: Explain why the loss of a part may or may not disable the overall function.
+User-friendly description: Distinguish a failed part from failure of the complete system.
 
 ##### Trace technical faults
 
+Slug: traceTechnicalFaults
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use symptoms and dependencies to locate a likely malfunction in a connected system.
+Methodological description: Use symptoms and dependencies to locate a likely malfunction in a connected system.
+User-friendly description: Trace the symptoms of a malfunction through dependent components.
 
 ##### System redundancy
 
+Slug: systemRedundancy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how independent backup paths can preserve a critical function during a component failure.
+Methodological description: Recognize how independent backup paths can preserve a critical function during a component failure.
+User-friendly description: Understand how backup paths can keep important functions working.
 
 ##### Plan preventive maintenance
 
+Slug: planPreventiveMaintenance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify inspections, cleaning, adjustments or replacements justified by wear and operating conditions.
+Methodological description: Identify inspections, cleaning, adjustments or replacements justified by wear and operating conditions.
+User-friendly description: Plan inspections and maintenance to reduce predictable failures.
 
 ### Materials and Connections
+
+Slug: materialsAndConnections
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Material choice and the quality of interfaces determine whether parts carry loads, resist their environment, assemble correctly and remain usable. This domain focuses on technical suitability rather than the chemistry of substances.
+Methodological description: Material choice and the quality of interfaces determine whether parts carry loads, resist their environment, assemble correctly and remain usable. This domain focuses on technical suitability rather than the chemistry of substances.
+User-friendly description: Learn to choose materials and joining methods suited to a product's conditions.
 
 #### Material Selection
 
+Slug: materialSelection
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-A component needs a combination of properties matched to its actual loading, manufacturing process and environment.
+Methodological description: A component needs a combination of properties matched to its actual loading, manufacturing process and environment.
+User-friendly description: Explore how material properties affect technical performance.
 
 ##### Identify relevant material properties
 
+Slug: identifyRelevantMaterialProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether toughness, strength, stiffness, conductivity, transparency or mass matters in a specified application.
+Methodological description: Determine whether toughness, strength, stiffness, conductivity, transparency or mass matters in a specified application.
+User-friendly description: Choose the material properties that matter for a specific application.
 
 ##### Distinguish material strength and stiffness
 
+Slug: distinguishMaterialStrengthAndStiffness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why resisting failure and resisting deformation are different requirements.
+Methodological description: Explain why resisting failure and resisting deformation are different requirements.
+User-friendly description: Distinguish resistance to breaking from resistance to deformation.
 
 ##### Evaluate material durability
 
+Slug: evaluateMaterialDurability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect wear, corrosion, fatigue or exposure to the expected lifetime of a part.
+Methodological description: Connect wear, corrosion, fatigue or exposure to the expected lifetime of a part.
+User-friendly description: Compare materials by how well they survive wear and environmental exposure.
 
 ##### Material suitability assessment
 
+Slug: materialSuitabilityAssessment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate which material properties and processing limitations meet the expected loads and service environment. This is a reusable material-compatibility judgment rather than an individual choice question.
+Methodological description: Evaluate which material properties and processing limitations meet the expected loads and service environment. This is a reusable material-compatibility judgment rather than an individual choice question.
+User-friendly description: Evaluate whether a material can meet the demands of a particular use.
 
 ##### Composite material applications
 
+Slug: compositeMaterialApplications
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how combined constituents can deliver useful directional or mixed properties.
+Methodological description: Recognize how combined constituents can deliver useful directional or mixed properties.
+User-friendly description: Recognize how combined materials can offer useful properties.
 
 #### Joints and Fasteners
+
+Slug: jointsAndFasteners
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Connections can be temporary or permanent, transmit different forces and impose different maintenance requirements.
+Methodological description: Connections can be temporary or permanent, transmit different forces and impose different maintenance requirements.
+User-friendly description: Discover how different joints hold parts together and transfer loads.
 
 ##### Threaded fastening
 
+Slug: threadedFastening
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how a bolt or screw retains connected parts and permits suitable disassembly.
+Methodological description: Describe how a bolt or screw retains connected parts and permits suitable disassembly.
+User-friendly description: Understand how threaded connections hold parts and allow disassembly.
 
 ##### Adhesive joints
 
+Slug: adhesiveJoints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate bonding, compatible surfaces and load direction to joint performance.
+Methodological description: Relate bonding, compatible surfaces and load direction to joint performance.
+User-friendly description: Explore how adhesives connect suitable surfaces.
 
 ##### Welded joints
 
+Slug: weldedJoints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a joined material interface from detachable mechanical fasteners.
+Methodological description: Distinguish a joined material interface from detachable mechanical fasteners.
+User-friendly description: Recognize why welding differs from removable fasteners.
 
 ##### Magnetic fastening
 
+Slug: magneticFastening
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how magnetic attraction can retain a part and when an alternative joint is necessary.
+Methodological description: Identify how magnetic attraction can retain a part and when an alternative joint is necessary.
+User-friendly description: Understand when magnets can secure a component.
 
 ##### Joining-method suitability
 
+Slug: joiningMethodSuitability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether detachable, bonded, welded or magnetic joints can transfer loads, provide access and support maintenance. Choosing one particular screw or glue is a task variant.
+Methodological description: Assess whether detachable, bonded, welded or magnetic joints can transfer loads, provide access and support maintenance. Choosing one particular screw or glue is a task variant.
+User-friendly description: Compare joining methods by strength, accessibility and maintenance.
 
 #### Surfaces and Fit
+
+Slug: surfacesAndFit
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Small variations at contacting surfaces affect motion, grip, sealing, protection and assembly.
+Methodological description: Small variations at contacting surfaces affect motion, grip, sealing, protection and assembly.
+User-friendly description: Explore how surface properties and small gaps affect mechanical connections.
 
 ##### Protective surface treatments
 
+Slug: protectiveSurfaceTreatments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate coatings or treatments to corrosion, wear, wetting or other surface properties.
+Methodological description: Relate coatings or treatments to corrosion, wear, wetting or other surface properties.
+User-friendly description: Choose coatings that protect a surface against wear or corrosion.
 
 ##### Evaluate friction at an interface
 
+Slug: evaluateFrictionAtAnInterface
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish contacts that need reliable grip from those requiring easy sliding.
+Methodological description: Distinguish contacts that need reliable grip from those requiring easy sliding.
+User-friendly description: Recognize where friction should provide grip and where it should be reduced.
 
 ##### Fits and clearances
 
+Slug: fitsAndClearances
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate permissible gaps and interference between mating parts to sliding, rotation, retention or sealing. This is distinct from decoding a production drawing's dimensional specification.
+Methodological description: Relate permissible gaps and interference between mating parts to sliding, rotation, retention or sealing. This is distinct from decoding a production drawing's dimensional specification.
+User-friendly description: Understand how clearances and fits affect moving or sealing parts.
 
 ### Mechanisms and Machines
+
+Slug: mechanismsAndMachines
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Moving assemblies redirect or transmit force, torque and motion to achieve tasks. This domain investigates how real mechanical arrangements work, not the underlying laws of mechanics as an independent science.
+Methodological description: Moving assemblies redirect or transmit force, torque and motion to achieve tasks. This domain investigates how real mechanical arrangements work, not the underlying laws of mechanics as an independent science.
+User-friendly description: Discover how mechanical components transmit force and transform movement.
 
 #### Transmissions
+
+Slug: transmissions
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Shafts, flexible elements and meshing components connect input motion to a useful output with potentially different speed, force and direction.
+Methodological description: Shafts, flexible elements and meshing components connect input motion to a useful output with potentially different speed, force and direction.
+User-friendly description: Explore how shafts, gears and flexible drives carry motion between parts.
 
 ##### Lever mechanisms
 
+Slug: leverMechanisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify pivot, input and output arrangement in a lever-driven machine.
+Methodological description: Identify pivot, input and output arrangement in a lever-driven machine.
+User-friendly description: Identify the pivot and input and output forces in a lever mechanism.
 
 ##### Gear transmission
 
+Slug: gearTransmission
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace rotational transfer between meshing gears and the effect of tooth counts.
+Methodological description: Trace rotational transfer between meshing gears and the effect of tooth counts.
+User-friendly description: Trace rotation through connected gears.
 
 ##### Determine a gear ratio
 
+Slug: determineAGearRatio
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Calculate relative rotation or speed using the teeth of a gear pair.
+Methodological description: Calculate relative rotation or speed using the teeth of a gear pair.
+User-friendly description: Calculate how gear tooth counts determine speed ratios.
 
 ##### Belt drives
 
+Slug: beltDrives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how tensioned flexible belts transfer motion between pulleys through friction or toothed engagement, including likely causes of slip.
+Methodological description: Trace how tensioned flexible belts transfer motion between pulleys through friction or toothed engagement, including likely causes of slip.
+User-friendly description: Understand how belt tension and pulley surfaces transfer rotation.
 
 ##### Chain drives
 
+Slug: chainDrives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe positive engagement between chain links and sprockets, including the need for alignment, tension and lubrication.
+Methodological description: Describe positive engagement between chain links and sprockets, including the need for alignment, tension and lubrication.
+User-friendly description: Explore how a chain and sprockets transfer movement without ordinary slipping.
 
 ##### Pulley systems
 
+Slug: pulleySystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace rope paths, supporting segments and moving loads in lifting arrangements.
+Methodological description: Trace rope paths, supporting segments and moving loads in lifting arrangements.
+User-friendly description: Follow the rope path and supporting segments of a pulley arrangement.
 
 #### Motion Conversion
+
+Slug: motionConversion
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Mechanical linkages and profiles transform rotation, translation or oscillation into required movement patterns.
+Methodological description: Mechanical linkages and profiles transform rotation, translation or oscillation into required movement patterns.
+User-friendly description: Discover how moving components transform one kind of motion into another.
 
 ##### Crank-slider mechanisms
 
+Slug: crankSliderMechanisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace conversion between rotary and reciprocating motion in a piston machine.
+Methodological description: Trace conversion between rotary and reciprocating motion in a piston machine.
+User-friendly description: Explain how a crank and slider connect rotation with back-and-forth motion.
 
 ##### Cam mechanisms
 
+Slug: camMechanisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect a shaped rotating profile with the timed displacement of a follower.
+Methodological description: Connect a shaped rotating profile with the timed displacement of a follower.
+User-friendly description: Understand how a rotating cam moves a follower.
 
 ##### Screw mechanisms
 
+Slug: screwMechanisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how the pitch and mating threads of a screw convert rotation into controlled axial displacement or a clamping force.
+Methodological description: Describe how the pitch and mating threads of a screw convert rotation into controlled axial displacement or a clamping force.
+User-friendly description: Recognize how a screw converts turning into forward movement or pressure.
 
 ##### Articulated linkages
 
+Slug: articulatedLinkages
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how connected rigid bars and pivots restrict the trajectory of an output in tools or articulated machines.
+Methodological description: Trace how connected rigid bars and pivots restrict the trajectory of an output in tools or articulated machines.
+User-friendly description: Trace how jointed bars guide a machine's movement.
 
 #### Guidance and Retention
+
+Slug: guidanceAndRetention
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Motion must be supported and limited while interfaces are protected from damaging friction or unintended release.
+Methodological description: Motion must be supported and limited while interfaces are protected from damaging friction or unintended release.
+User-friendly description: Explore the parts that support motion and prevent accidental release.
 
 ##### Bearings
 
+Slug: bearings
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how supported shafts can rotate relative to a machine housing.
+Methodological description: Identify how supported shafts can rotate relative to a machine housing.
+User-friendly description: Recognize how a bearing supports a moving shaft.
 
 ##### Lubrication
 
+Slug: lubrication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate a lubricant to reduced wear and heating at a moving interface.
+Methodological description: Relate a lubricant to reduced wear and heating at a moving interface.
+User-friendly description: Explain why lubrication reduces friction and wear.
 
 ##### Braking mechanisms
 
+Slug: brakingMechanisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how contact forces or another braking device oppose a rotating component and transfer motion energy into heat or another form.
+Methodological description: Trace how contact forces or another braking device oppose a rotating component and transfer motion energy into heat or another form.
+User-friendly description: Trace how braking devices slow a rotating part.
 
 ##### Latches
 
+Slug: latches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how a catch retains a door or moving part in its closed position and permits intentional release.
+Methodological description: Describe how a catch retains a door or moving part in its closed position and permits intentional release.
+User-friendly description: Understand how a latch holds and releases a closure.
 
 ##### Locks
 
+Slug: locks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how a key, code or other authorization mechanism restricts the operation of a secured closure.
+Methodological description: Identify how a key, code or other authorization mechanism restricts the operation of a secured closure.
+User-friendly description: Recognize how locks limit access to an authorized user.
 
 #### Integrated Machines
+
+Slug: integratedMachines
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Machines combine multiple components in a working sequence, so their behavior cannot be inferred from a single named part.
+Methodological description: Machines combine multiple components in a working sequence, so their behavior cannot be inferred from a single named part.
+User-friendly description: Explore how several mechanical mechanisms work together in a machine.
 
 ##### Trace mechanical power transmission
 
+Slug: traceMechanicalPowerTransmission
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow useful motion and energy from a prime mover to the working component.
+Methodological description: Follow useful motion and energy from a prime mover to the working component.
+User-friendly description: Trace energy and motion from the drive to a machine's working component.
 
 ##### Motion-mechanism suitability
 
+Slug: motionMechanismSuitability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the output direction, movement pattern, displacement and force needs to feasible mechanisms and their operating limits.
+Methodological description: Relate the output direction, movement pattern, displacement and force needs to feasible mechanisms and their operating limits.
+User-friendly description: Select mechanisms suited to a required direction and pattern of movement.
 
 ##### Diagnose transmission faults
 
+Slug: diagnoseTransmissionFaults
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect slipping, jamming or unexpected movement to plausible defects.
+Methodological description: Connect slipping, jamming or unexpected movement to plausible defects.
+User-friendly description: Diagnose slipping, jamming and other transmission problems.
 
 ### Thermal and Fluid Devices
+
+Slug: thermalAndFluidDevices
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Practical equipment moves heat, air and other fluids through controlled component chains. Here the object of study is the apparatus and its operating cycle, not the isolated thermodynamic or fluid laws.
+Methodological description: Practical equipment moves heat, air and other fluids through controlled component chains. Here the object of study is the apparatus and its operating cycle, not the isolated thermodynamic or fluid laws.
+User-friendly description: Explore practical machines that control heating, cooling and the flow of fluids.
 
 #### Heat Transfer Equipment
 
+Slug: heatTransferEquipment
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Temperature-control devices combine energy input, circulation and insulation to maintain useful thermal conditions.
+Methodological description: Temperature-control devices combine energy input, circulation and insulation to maintain useful thermal conditions.
+User-friendly description: Learn how equipment transfers heat and maintains chosen temperatures.
 
 ##### Refrigeration equipment
 
+Slug: refrigerationEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace compressor, condenser, expansion device and evaporator in a cooling cycle.
+Methodological description: Trace compressor, condenser, expansion device and evaporator in a cooling cycle.
+User-friendly description: Trace the main stages of a refrigeration cycle.
 
 ##### Heat pumps
 
+Slug: heatPumps
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how heat is transferred from a source to a destination using external work.
+Methodological description: Identify how heat is transferred from a source to a destination using external work.
+User-friendly description: Understand how a heat pump moves heat using external work.
 
 ##### Heat exchangers
 
+Slug: heatExchangers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how two streams transfer heat across a barrier without normally mixing.
+Methodological description: Show how two streams transfer heat across a barrier without normally mixing.
+User-friendly description: Explain how heat flows between separate streams in a heat exchanger.
 
 ##### Thermal insulation suitability
 
+Slug: thermalInsulationSuitability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how an insulating arrangement manages conductive, convective and radiative heat transfer in an intended enclosure.
+Methodological description: Assess how an insulating arrangement manages conductive, convective and radiative heat transfer in an intended enclosure.
+User-friendly description: Compare insulation arrangements by how they reduce unwanted heat transfer.
 
 #### Fluid Machines
+
+Slug: fluidMachines
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Mechanical energy can produce fluid flow, pressure or driven motion using distinct devices with different operating media.
+Methodological description: Mechanical energy can produce fluid flow, pressure or driven motion using distinct devices with different operating media.
+User-friendly description: Discover how pumps and actuators move liquids and gases.
 
 ##### Liquid pumps
 
+Slug: liquidPumps
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace the components responsible for delivering flow or pressure to a liquid circuit.
+Methodological description: Trace the components responsible for delivering flow or pressure to a liquid circuit.
+User-friendly description: Trace how a liquid pump provides flow and pressure.
 
 ##### Gas compressors
 
+Slug: gasCompressors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish increasing gas pressure from merely circulating air.
+Methodological description: Distinguish increasing gas pressure from merely circulating air.
+User-friendly description: Distinguish compressing gas from simply moving air.
 
 ##### Hydraulic actuators
 
+Slug: hydraulicActuators
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace pressurized liquid from a pump and valve to mechanical movement.
+Methodological description: Trace pressurized liquid from a pump and valve to mechanical movement.
+User-friendly description: Understand how pressurized liquid drives a hydraulic actuator.
 
 ##### Pneumatic actuators
 
+Slug: pneumaticActuators
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how compressed gas and control valves drive an output mechanism.
+Methodological description: Identify how compressed gas and control valves drive an output mechanism.
+User-friendly description: Explain how compressed air can move a pneumatic actuator.
 
 #### Ventilation and Air Treatment
+
+Slug: ventilationAndAirTreatment
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Indoor climate equipment needs functional air paths, treatment components and regulation appropriate to occupied spaces.
+Methodological description: Indoor climate equipment needs functional air paths, treatment components and regulation appropriate to occupied spaces.
+User-friendly description: Explore how buildings circulate and treat indoor air.
 
 ##### Ventilation systems
 
+Slug: ventilationSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish outdoor-air exchange from recirculating existing indoor air.
+Methodological description: Distinguish outdoor-air exchange from recirculating existing indoor air.
+User-friendly description: Distinguish bringing in fresh air from circulating the same indoor air.
 
 ##### Air-conditioning systems
 
+Slug: airConditioningSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the cooling, distribution and control functions of a practical installation.
+Methodological description: Identify the cooling, distribution and control functions of a practical installation.
+User-friendly description: Identify the cooling, distribution and control parts of air conditioning.
 
 ##### Diagnose restricted fluid flow
 
+Slug: diagnoseRestrictedFluidFlow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate blocked filters, closed valves or narrow passages to delivery problems.
+Methodological description: Relate blocked filters, closed valves or narrow passages to delivery problems.
+User-friendly description: Diagnose weak flow caused by filters, valves or narrow passages.
 
 ### Structures and Construction
+
+Slug: structuresAndConstruction
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Load-bearing works transfer applied actions into suitable supports while satisfying functional, environmental and construction constraints. This domain treats the built solution rather than architectural style.
+Methodological description: Load-bearing works transfer applied actions into suitable supports while satisfying functional, environmental and construction constraints. This domain treats the built solution rather than architectural style.
+User-friendly description: Explore how buildings, bridges and civil works safely carry loads.
 
 #### Structural Elements
+
+Slug: structuralElements
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Characteristic forms route forces differently; a safe structure is not just a visually plausible shape.
+Methodological description: Characteristic forms route forces differently; a safe structure is not just a visually plausible shape.
+User-friendly description: Learn how different structural parts transfer forces into the ground.
 
 ##### Beams
 
+Slug: beams
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace bending and load transfer from a span to its supports.
+Methodological description: Trace bending and load transfer from a span to its supports.
+User-friendly description: Explain how a beam carries load between supports.
 
 ##### Columns
 
+Slug: columns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how primarily compression-loaded vertical members support loads and why slender members may become unstable.
+Methodological description: Recognize how primarily compression-loaded vertical members support loads and why slender members may become unstable.
+User-friendly description: Recognize how columns support compression and why they may buckle.
 
 ##### Structural bracing
 
+Slug: structuralBracing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace how diagonal members or other lateral systems prevent unwanted sway and redistribute horizontal actions.
+Methodological description: Trace how diagonal members or other lateral systems prevent unwanted sway and redistribute horizontal actions.
+User-friendly description: Understand how braces prevent unwanted sideways motion.
 
 ##### Arches
 
+Slug: arches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how a curved compression path transfers loads and may produce support thrust.
+Methodological description: Show how a curved compression path transfers loads and may produce support thrust.
+User-friendly description: Trace forces through an arch and into its supports.
 
 ##### Trusses
 
+Slug: trusses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate connected triangular members to a framed load path.
+Methodological description: Relate connected triangular members to a framed load path.
+User-friendly description: Recognize how triangular frames carry loads in a truss.
 
 ##### Foundations
 
+Slug: foundations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect bearing and settlement conditions with transferring structural loads to ground.
+Methodological description: Connect bearing and settlement conditions with transferring structural loads to ground.
+User-friendly description: Explain how foundations transfer a structure's weight into the ground.
 
 #### Stability and Testing
 
+Slug: stabilityAndTesting
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Deformation, loss of equilibrium and local failure can all compromise a structure before every component breaks.
+Methodological description: Deformation, loss of equilibrium and local failure can all compromise a structure before every component breaks.
+User-friendly description: Discover how engineers evaluate whether a structure remains stable.
 
 ##### Trace structural load paths
 
+Slug: traceStructuralLoadPaths
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow weight, wind or other loads through elements and supports.
+Methodological description: Follow weight, wind or other loads through elements and supports.
+User-friendly description: Follow forces through connected structural parts and supports.
 
 ##### Evaluate structural stability
 
+Slug: evaluateStructuralStability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify risks of overturning, sway or buckling in a given arrangement.
+Methodological description: Identify risks of overturning, sway or buckling in a given arrangement.
+User-friendly description: Recognize conditions that may cause sway, tipping or buckling.
 
 ##### Interpret structural deformation
 
+Slug: interpretStructuralDeformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate observed bending or settlement to serviceability and possible damage.
+Methodological description: Relate observed bending or settlement to serviceability and possible damage.
+User-friendly description: Interpret bending and settlement as signs of structural deformation.
 
 ##### Compare structural models under load
 
+Slug: compareStructuralModelsUnderLoad
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use consistent supports and loading to evaluate alternatives without treating a model as a certified full-scale design.
+Methodological description: Use consistent supports and loading to evaluate alternatives without treating a model as a certified full-scale design.
+User-friendly description: Compare structural models under consistent loads and supports.
 
 #### Buildings
 
+Slug: buildings
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A complete building combines its main structure with weather protection, spatial access and environmental adaptation.
+Methodological description: A complete building combines its main structure with weather protection, spatial access and environmental adaptation.
+User-friendly description: Explore how buildings combine structural support and environmental protection.
 
 ##### Identify structural building systems
 
+Slug: identifyStructuralBuildingSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish frames or load-bearing walls from internal partitions.
+Methodological description: Distinguish frames or load-bearing walls from internal partitions.
+User-friendly description: Distinguish load-bearing frames or walls from ordinary partitions.
 
 ##### Building envelopes
 
+Slug: buildingEnvelopes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate roofs, walls and openings to control of moisture, weather and heat.
+Methodological description: Relate roofs, walls and openings to control of moisture, weather and heat.
+User-friendly description: Recognize how roofs, walls and windows protect a building from weather.
 
 ##### Relate building design to a site
 
+Slug: relateBuildingDesignToASite
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify consequences of wind, soil, terrain or climate for construction choices.
+Methodological description: Identify consequences of wind, soil, terrain or climate for construction choices.
+User-friendly description: Explain how site conditions influence building decisions.
 
 ##### Design accessible building circulation
 
+Slug: designAccessibleBuildingCirculation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create a proposed arrangement of entrances, corridors, turning spaces and level transitions so people with varying mobility can move through a planned building.
+Methodological description: Create a proposed arrangement of entrances, corridors, turning spaces and level transitions so people with varying mobility can move through a planned building.
+User-friendly description: Plan pathways and entrances usable by people with different mobility needs.
 
 #### Civil Works
+
+Slug: civilWorks
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Large built assets require sequential construction and coordination with the ground and existing infrastructure.
+Methodological description: Large built assets require sequential construction and coordination with the ground and existing infrastructure.
+User-friendly description: Discover how engineers plan major construction projects.
 
 ##### Pavement layers
 
+Slug: pavementLayers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify why different road layers distribute vehicle loads to supporting ground.
+Methodological description: Identify why different road layers distribute vehicle loads to supporting ground.
+User-friendly description: Understand why pavement uses layers that spread traffic loads.
 
 ##### Bridge construction approaches
 
+Slug: bridgeConstructionApproaches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare supported or staged methods for creating a span.
+Methodological description: Compare supported or staged methods for creating a span.
+User-friendly description: Compare different methods for constructing a bridge span.
 
 ##### Tunnel construction constraints
 
+Slug: tunnelConstructionConstraints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate ground stability, lining and ventilation to tunneling methods.
+Methodological description: Relate ground stability, lining and ventilation to tunneling methods.
+User-friendly description: Recognize how ground conditions and ventilation shape tunnel construction.
 
 ##### Plan construction stages
 
+Slug: planConstructionStages
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Sequence foundations, supports, structure and services with realistic dependencies.
+Methodological description: Sequence foundations, supports, structure and services with realistic dependencies.
+User-friendly description: Order construction steps according to their structural dependencies.
 
 ### Water and Environmental Infrastructure
 
