@@ -402,3 +402,40 @@ test('UUID registry: retries a repeated generated identity in the same process',
   assert.equal(new Set(ids).size,5);
   assert.equal(ids.filter(x=>x===repeated).length,1);
 }));
+
+
+test('update of existing Domain, Group and Skills retains every UUID and never requests a new identity', () => withFixture(f => {
+  assert.equal(f.run('--apply').status, 0);
+  const base = path.join(f.pkg, 'Data/skills');
+  const files = [
+    'drawing/drawing.ids.ts',
+    'drawing/perspective/perspective.ids.ts',
+    'drawing/perspective/skills/index.ids.ts',
+    'music/music.ids.ts',
+    'music/skills/index.ids.ts',
+  ];
+  const before = new Map(files.map(file => [file, fs.readFileSync(path.join(base, file), 'utf8')]));
+  f.updateText(s => s.replaceAll('Action: create\nStatus: implemented', 'Action: update\nStatus: implemented')
+    .replace('Canonical English meaning of Drawing.', 'Updated meaning of Drawing.')
+    .replace('Canonical English meaning of Perspective.', 'Updated meaning of Perspective.')
+    .replace('Canonical English meaning of Draw Perspective.', 'Updated meaning of Draw Perspective.')
+    .replace('Canonical English meaning of Music.', 'Updated meaning of Music.')
+    .replace('Canonical English meaning of Hear Rhythm.', 'Updated meaning of Hear Rhythm.'));
+  // Forbid allocating a fresh UUID: the mocked source always returns an already reserved one.
+  const existing = before.get('drawing/drawing.ids.ts')
+    .match(/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/)[0];
+  const preload = path.join(f.pkg, 'update-uuid-guard.mjs');
+  fs.writeFileSync(preload,
+    `import crypto from 'node:crypto'; crypto.randomUUID = () => '${existing}';\n`);
+  const r = spawnSync(process.execPath,
+    ['--import', preload, script, '--package', path.relative(root, f.pkg),
+      '--translations', path.relative(root, f.json), '--apply'],
+    {cwd: root, encoding: 'utf8'});
+  assert.equal(r.status, 0, r.stderr);
+  for (const [file, source] of before) {
+    assert.equal(fs.readFileSync(path.join(base, file), 'utf8'), source,
+      `update must preserve UUID map: ${file}`);
+  }
+  assert.match(fs.readFileSync(path.join(base, 'drawing/drawing.data.ts'), 'utf8'), /Updated meaning of Drawing/);
+  assert.match(fs.readFileSync(path.join(base, 'drawing/perspective/skills/drawPerspective.data.ts'), 'utf8'), /Updated meaning of Draw Perspective/);
+}));
