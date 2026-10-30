@@ -2,7 +2,7 @@
 
 Date: 2026-10-29
 
-A subject-wide, audience-independent catalog of independently assessable philosophical competencies. The taxonomy covers inquiry and dialogue; logic and argumentation; epistemology and critical evaluation of information; philosophy of science and general research methodology; metaphysics; mind and personhood; ethics; social and political philosophy; philosophy of language; aesthetics; philosophy of religion; and philosophical traditions. Classification is not a lesson order, curriculum, assessment plan, age band, or claim that any learner must master the entire catalog.
+A subject-wide, audience-independent catalog of independently assessable philosophical competencies. The taxonomy covers inquiry and dialogue; logic and argumentation; epistemology and critical evaluation of information; philosophy of science and general research methodology; metaphysics; mind, self, and human existence; ethics; social and political philosophy; philosophy of language; aesthetics; philosophy of religion; and philosophical traditions. Classification is not a lesson order, curriculum, assessment plan, age band, or claim that any learner must master the entire catalog.
 
 **Boundaries:** Psychology investigates the empirical mechanisms of cognition, emotion, motivation, persuasion, and behavioral bias; Philosophy examines the validity of arguments, justification of beliefs, fundamental concepts, and normative questions. Scientific disciplines own their subject-specific observations and explanations, while Philosophy of Science examines general evidence, inference, study design, and scientific justification. History studies events and societies; Philosophy studies historical thinkers' actual arguments. Language and Literature owns grammar and composition; Art owns making and analyzing artistic works as practice; Philosophy examines meaning and the grounds of aesthetic evaluation. Philosophy of Religion examines religious and nonreligious arguments rather than confessional instruction. Media literacy here means epistemic appraisal of public claims, not marketing strategy or a psychology of influence. Cross-textbook overlap does not imply shared Skill IDs.
 
@@ -11,10 +11,10 @@ A subject-wide, audience-independent catalog of independently assessable philoso
 ## SUMMARY
 
 Domains: 12
-Groups: 45
-Skills: 207
+Groups: 48
+Skills: 222
 
-Code files: 0/12 Domains · 0/45 Groups · 0/207 Skills
+Code files: 0/12 Domains · 0/48 Groups · 0/222 Skills
 
 ## DOMAINS
 
@@ -102,7 +102,7 @@ Reasoned dialogue seeks understanding and justified revision, not simply winning
 
 [Not implemented](#)
 
-Restate a view in terms its advocate could recognize, distinguishing the claim from a weaker caricature.
+Restate an interlocutor's strongest contextually plausible position accurately and charitably, rather than attacking a weaker caricature; fair reconstruction does not require overlooking genuine contradictions or unsupported claims.
 
 ##### Ask a probing philosophical question
 
@@ -390,7 +390,7 @@ Examine whether expertise is relevant and reliable evidence in context, rather t
 
 ### Epistemology and Critical Evaluation
 
-Groups: 4 · Skills: 17
+Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
@@ -398,7 +398,7 @@ Questions about knowledge concern what can be believed responsibly, what makes c
 
 #### Knowledge and Justification
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -422,6 +422,12 @@ Explain why a claim might be true for reasons its holder cannot supply, or well 
 
 Determine whether offered grounds actually bear on the proposition and withstand plausible objections.
 
+##### Analyze mathematical proof as justification
+
+[Not implemented](#)
+
+Examine why deductive proof has a distinctive epistemic role in mathematics, distinguishing formal derivability from experimental confirmation and acknowledging debates about proof's explanatory value.
+
 ##### Compare a priori and empirical justification
 
 [Not implemented](#)
@@ -430,7 +436,7 @@ Distinguish support based primarily on reasoning from support requiring experien
 
 #### Evidence and Testimony
 
-Skills: 4
+Skills: 5
 
 [Not implemented](#)
 
@@ -447,6 +453,12 @@ Separate what someone asserts from the observations, documents, or arguments pre
 [Not implemented](#)
 
 Consider the speaker's opportunity to know, relevant competence, track record, and possible conflicts without reducing evaluation to popularity.
+
+##### Analyze epistemic injustice
+
+[Not implemented](#)
+
+Examine how prejudicial credibility judgments or unequal interpretive resources can wrong someone in their capacity as a knower, distinct from warranted critical assessment of testimony.
 
 ##### Check corroboration across sources
 
@@ -532,7 +544,7 @@ Identify inaccurate information without asserting an author's intention to decei
 
 ### Philosophy of Science
 
-Groups: 4 · Skills: 23
+Groups: 4 · Skills: 26
 
 [Not implemented](#)
 
@@ -578,17 +590,24 @@ Distinguish observing variation as it occurs from deliberately manipulating an e
 
 #### Experimental Design
 
-Skills: 7
+Skills: 9
 
 [Not implemented](#)
 
 Controlled investigations attempt to isolate explanatory factors while managing confounding, expectations, and ethical constraints. Particular safeguards solve different problems and are not interchangeable.
 
-##### Identify independent and dependent variables
+##### Identify an independent variable
 
 [Not implemented](#)
 
-Distinguish the putative influence under study from the outcome measured in a proposed investigation.
+Recognize the hypothesized influence, manipulated factor, or explanatory predictor in a specified study, including designs where the researcher observes rather than sets its value.
+
+##### Identify a dependent variable
+
+[Not implemented](#)
+
+Recognize the measured response or outcome whose variation an investigation attempts to account for, distinguishing outcome measurement from factors that may influence it.
+
 
 ##### Control relevant experimental conditions
 
@@ -620,6 +639,12 @@ Identify which party is kept unaware of assigned conditions and how that may red
 
 Identify when both participants and interacting researchers or outcome assessors are kept unaware of allocation, and why such a design is neither always feasible nor universally required.
 
+##### Evaluate research ethics
+
+[Not implemented](#)
+
+Assess informed consent, voluntary participation, proportionality of risk, participant protection, and integrity of reporting in proposed research; distinguish ethical permissibility from whether a study can yield valid data.
+
 ##### Explain a placebo control
 
 [Not implemented](#)
@@ -628,7 +653,7 @@ Distinguish a comparison intended to account for expectations or contextual effe
 
 #### Evidence and Causal Inference
 
-Skills: 5
+Skills: 6
 
 [Not implemented](#)
 
@@ -651,6 +676,12 @@ Find a plausible third variable or selection process capable of producing an app
 [Not implemented](#)
 
 Examine whether selection and coverage allow findings to extend to the population named in a conclusion.
+
+##### Evaluate sampling uncertainty
+
+[Not implemented](#)
+
+Assess how sample size, observed variation, and sampling processes affect the precision of an estimate, distinguishing imprecision from whether the sample represents its target population.
 
 ##### Assess measurement validity
 
@@ -710,7 +741,7 @@ Describe how independent criticism and new evidence can revise established model
 
 ### Metaphysics
 
-Groups: 3 · Skills: 11
+Groups: 4 · Skills: 14
 
 [Not implemented](#)
 
@@ -741,6 +772,32 @@ Examine the criteria by which something is said to exist rather than assuming th
 [Not implemented](#)
 
 Separate a bearer from qualities attributed to it, while recognizing that some metaphysical theories analyze this distinction differently.
+
+#### Mathematical Reality
+
+Skills: 3
+
+[Not implemented](#)
+
+Philosophical accounts of mathematics disagree over whether its objects exist independently, are constructs of formal language, or are positions within structures. These ontological commitments are distinct from learning to perform mathematical operations.
+
+##### Evaluate mathematical Platonism
+
+[Not implemented](#)
+
+Assess the view that mathematical objects or structures exist independently of human thought and how it attempts to explain the apparent objectivity of mathematics.
+
+##### Evaluate mathematical nominalism
+
+[Not implemented](#)
+
+Examine strategies for understanding mathematical language and successful reasoning without committing to independently existing abstract mathematical objects.
+
+##### Analyze mathematical structuralism
+
+[Not implemented](#)
+
+Evaluate the claim that mathematical objects are understood through positions and relations in structures rather than through individually identifying intrinsic properties.
 
 #### Identity and Persistence
 
@@ -808,7 +865,7 @@ Examine what would follow if specified conditions had differed while keeping rel
 
 ### Philosophy of Religion
 
-Groups: 3 · Skills: 14
+Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
@@ -846,13 +903,13 @@ Assess the possible warrant of reported transcendent experience, distinguishing 
 
 Weigh testimony, background assumptions, and plausible alternative explanations when assessing an extraordinary event claim without prejudging its truth.
 
-#### Divinity and Ultimate Explanation
+#### Ultimate Reality and Divinity
 
-Skills: 6
+Skills: 8
 
 [Not implemented](#)
 
-The philosophical grounds for theism, atheism, and agnosticism involve explanatory arguments and challenges. They are treated as examinable positions rather than settled requirements.
+Religious and nonreligious accounts of ultimate reality include competing conceptions of divinity and nontheistic accounts of liberation or existence. Their arguments may invoke experience, explanation, definition, or objections, without settling a worldview by stipulation.
 
 ##### Reconstruct a philosophical argument about divinity
 
@@ -872,6 +929,12 @@ Consider whether an account of why anything exists explains more than it assumes
 
 Evaluate reasoning from existence, dependence, contingency, or causation toward an ultimate explanation, including challenges to its assumptions.
 
+##### Analyze an ontological argument
+
+[Not implemented](#)
+
+Evaluate an a priori argument that moves from a proposed concept of God or maximal greatness toward existence, examining whether its logical premises and modal assumptions warrant the conclusion.
+
 ##### Analyze a design argument
 
 [Not implemented](#)
@@ -884,6 +947,12 @@ Examine whether order or complexity supports an inference to a designer, conside
 
 Explain how suffering and wrongdoing challenge particular accounts of divinity and assess the strengths of proposed philosophical responses.
 
+##### Analyze nontheistic religious accounts of reality
+
+[Not implemented](#)
+
+Examine how a particular nontheistic religious tradition understands reality, suffering, liberation, or ultimate truth without incorrectly treating absence of a creator deity as absence of religion.
+
 ##### Compare philosophical conceptions of divinity
 
 [Not implemented](#)
@@ -892,7 +961,7 @@ Distinguish personal, impersonal, and plural conceptions of ultimate reality whi
 
 #### Diversity and Meaning
 
-Skills: 4
+Skills: 3
 
 [Not implemented](#)
 
@@ -904,11 +973,6 @@ Competing outlooks on religion, nonbelief, and life purpose raise interpretive a
 
 Compare accounts of how conflicting ultimate-belief claims might be understood and evaluated while respecting freedom of conscience.
 
-##### Compare religious and secular accounts of life's meaning
-
-[Not implemented](#)
-
-Evaluate arguments that ground human purpose in transcendence, human projects, relationships, or other sources, without requiring commitment to any one answer.
 
 ##### Analyze religious tolerance as an ethical principle
 
@@ -922,13 +986,13 @@ Examine justifications and limits for respecting divergent religious or nonrelig
 
 Separate withholding belief about particular religious claims from positions on the possibility of knowing whether divine reality exists.
 
-### Philosophy of Mind and Personhood
+### Mind, Self, and Human Existence
 
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Mental experience, personal continuity, and purposeful action raise conceptual questions not exhausted by neuroscientific or psychological measurement. This domain examines what such phenomena mean and their normative implications.
+Questions about subjective experience, the continuity of the self, deliberate action, and a meaningful human life cannot be resolved solely through psychological measurement. This domain examines theories of mind, identity, agency, and existential commitments, distinguishing them from empirical mental-health claims.
 
 #### Mind and Consciousness
 
@@ -1050,7 +1114,7 @@ Examine how sustained commitments and values differ from momentary wants when ev
 
 [Not implemented](#)
 
-Contrast views grounding meaning in relationships, achievement, self-authorship, or other sources without assuming universal agreement.
+Contrast accounts that ground human meaning in relationships, achievement, self-authorship, transcendence, religious commitments, or nonreligious purposes, assessing their philosophical reasons without requiring adherence to any worldview.
 
 ##### Analyze authenticity as a philosophical concept
 
@@ -1264,7 +1328,7 @@ Assess responsibility, contestability, fairness, and potential harm when an algo
 
 ### Social and Political Philosophy
 
-Groups: 4 · Skills: 16
+Groups: 6 · Skills: 23
 
 [Not implemented](#)
 
@@ -1366,6 +1430,64 @@ Assess competing grounds for restricting individual actions, such as preventing 
 
 Consider the moral conditions, aims, and limits of nonviolent principled lawbreaking without equating legality with morality.
 
+#### Philosophy of Law
+
+Skills: 4
+
+[Not implemented](#)
+
+Jurisprudence considers what makes a norm legally valid, why legal institutions claim authority, and how rules should be interpreted. These questions are not limited to any country's current statutes or to political legitimacy in general.
+
+##### Analyze legal positivism
+
+[Not implemented](#)
+
+Evaluate accounts that identify valid law through social sources or institutional practices rather than making moral correctness a necessary condition of legal validity.
+
+##### Analyze natural law theory
+
+[Not implemented](#)
+
+Evaluate theories that understand legal authority or validity as importantly connected to morality, distinguishing different versions of this connection.
+
+##### Evaluate theories of legal interpretation
+
+[Not implemented](#)
+
+Assess how text, legislative purpose, precedent, and institutional role support competing interpretations of a legal provision without deciding a real legal dispute.
+
+##### Analyze the rule of law
+
+[Not implemented](#)
+
+Examine principles such as generality, accessibility, prospectivity, consistent application, and constraints on arbitrary power as grounds for evaluating a legal order.
+
+#### Technology and Society
+
+Skills: 3
+
+[Not implemented](#)
+
+Technological artifacts and institutions shape the practical conditions of action, social change, and control. Philosophical analysis evaluates these mediation and agency claims rather than measuring product usage or engineering device performance.
+
+##### Analyze technological mediation
+
+[Not implemented](#)
+
+Examine how a technological artifact changes the available actions, relationships, or choices through which people engage the world, without reducing the issue to the device's technical operation.
+
+##### Evaluate technological determinism
+
+[Not implemented](#)
+
+Assess arguments that technological development determines social arrangements, including objections based on political choice, design, and historical contingency.
+
+##### Analyze human autonomy in technological systems
+
+[Not implemented](#)
+
+Evaluate when reliance on automated or networked systems enhances or constrains meaningful choice and control, separate from the narrower ethics of individual algorithmic decisions.
+
 #### Public Reason and Civic Life
 
 Skills: 4
@@ -1400,7 +1522,7 @@ Consider when citizens may have moral reasons to obey, criticize, or resist laws
 
 ### Philosophy of Language
 
-Groups: 3 · Skills: 11
+Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
@@ -1434,7 +1556,7 @@ Recognize when a sentence admits multiple readings due to a word or syntactic st
 
 #### Communication and Interpretation
 
-Skills: 4
+Skills: 3
 
 [Not implemented](#)
 
@@ -1458,11 +1580,6 @@ Recognize how an utterance functions as a promise, request, warning, or assertio
 
 Compare readings of an utterance using the speaker's context, conventions, and available evidence.
 
-##### Analyze the principle of charity
-
-[Not implemented](#)
-
-Reconstruct an interlocutor's claim in a plausible coherent form while remaining open to real flaws in the argument.
 
 #### Language, Truth, and Power
 
@@ -1600,7 +1717,7 @@ Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
-Historical understanding follows the development, exchange, and contest of philosophical arguments across different cultures. Philosophers are studied as participants in debates, not as a list of unquestionable authorities or biographical facts alone.
+Historically situated philosophical arguments develop through schools, intellectual movements, and traditions across cultures. Interpretation requires understanding both what a thinker argued and the debate that shaped the argument, without privileging one lineage as philosophy's default.
 
 #### Reading Philosophical Works
 
@@ -1634,19 +1751,14 @@ Use contemporaneous debates and available concepts to avoid attributing later as
 
 Assess reasons offered in a source rather than accepting or rejecting a view solely because of the author's reputation.
 
-#### Historical Dialogues
+#### Schools and Movements
 
-Skills: 4
-
-[Not implemented](#)
-
-Philosophical traditions develop through sustained disputes about knowledge, virtue, reality, political power, and interpretation across periods.
-
-##### Compare classical Greek philosophical approaches
+Skills: 3
 
 [Not implemented](#)
 
-Contrast representative methods or commitments in Socratic, Platonic, and Aristotelian arguments without collapsing them into one doctrine.
+Philosophical movements and schools arise around distinctive approaches to knowledge, reason, liberty, and existence; their boundaries and internal disagreements cannot be reduced to dates alone.
+
 
 ##### Compare major modern epistemological approaches
 
@@ -1666,14 +1778,19 @@ Place a claim about reason, liberty, or authority in its intellectual context wh
 
 Identify differences in methods and questions without claiming that either broad family has one uniform answer.
 
-#### Global Philosophical Traditions
+#### Philosophical Traditions
 
-Skills: 7
+Skills: 8
 
 [Not implemented](#)
 
-Philosophy is not confined to a single cultural lineage. Comparative inquiry must treat different traditions as sources of arguments in their own right rather than exotic illustrations of European categories.
+Intellectual traditions developed across many cultures through original arguments and sustained exchanges. Greek, Indian, Chinese, Islamic, African, Latin American, and particular Indigenous lineages are examined as philosophical sources in their own right, without treating a region as a single doctrine.
 
+##### Compare classical Greek philosophical approaches
+
+[Not implemented](#)
+
+Contrast representative methods or commitments in Socratic, Platonic, and Aristotelian arguments without collapsing them into one doctrine.
 ##### Analyze a philosophical argument from an Indian tradition
 
 [Not implemented](#)
