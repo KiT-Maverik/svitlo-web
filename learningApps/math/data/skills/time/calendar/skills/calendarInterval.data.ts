@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { calendar_Skills_Ids } from './index.ids';
 
 export const calendarInterval_Skill_Data = buildSkillConfig({
-  id: calendar_Skills_Ids.calendarInterval,
+  id: '0fc1cfb2-dd71-439f-8518-09128e47642b',
   name: {
     en: "Counting days between dates",
     lt: "Dienų tarp datų skaičiavimas",

@@ -8,6 +8,6 @@ export { measurement_SkillDomain_Data } from './measurement/index.data';
 export { money_SkillDomain_Data } from './money/index.data';
 export { numeration_SkillDomain_Data } from './numeration/numeration.data';
 export { probability_SkillDomain_Data } from './probability/probability.data';
-export { problemSolving_SkillDomain_Data } from './problemSolving/index.data';
+export { problemSolving_SkillDomain_Data } from './problemSolving/problemSolving.data';
 export { reasoning_SkillDomain_Data } from './reasoning/index.data';
-export { time_SkillDomain_Data } from './time/index.data';
+export { time_SkillDomain_Data } from './time/time.data';

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { groups_Skills_Ids } from './index.ids';
 
 export const equalGroups_Skill_Data = buildSkillConfig({
-  id: groups_Skills_Ids.equalGroups,
+  id: '30aa7d28-187b-44e7-806b-06457d3a0970',
   name: {
     lt: "Vienodų grupių uždavinių sprendimas",
     lv: "Vienādu grupu uzdevumu risināšana",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { models_Skills_Ids } from './index.ids';
 
 export const chooseOperationMulDiv_Skill_Data = buildSkillConfig({
-  id: models_Skills_Ids.chooseOperationMulDiv,
+  id: '8abaee79-c7a9-462f-9cd6-b9efaa9ed699',
   name: {
     lt: "Daugybos ar dalybos pasirinkimas",
     lv: "Reizināšanas vai dalīšanas izvēle",

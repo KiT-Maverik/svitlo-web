@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { planning_SkillGroup_Ids } from './planning.ids';
-import { planning_Skills_Ids } from './skills/index.ids';
+import { constructInverseProblem_Skill_Data, explainAnswerUnits_Skill_Data, multipleSolutionStrategies_Skill_Data, threeStepPlan_Skill_Data, twoStepPlan_Skill_Data } from './skills';
 
 export const planning_SkillGroup_Data = buildSkillGroupConfig({
-  id: planning_SkillGroup_Ids.planning,
+  id: 'e6efe33e-ba9c-44c1-85c9-92ac9f83a74e',
   name: {
     en: "Solution planning",
     lt: "Sprendimo planavimas",
@@ -34,6 +33,12 @@ export const planning_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Planowanie rozwiązania",
     uk: "Планування розв’язання",
   },
-  skillIds: planning_Skills_Ids,
+  skillIds: {
+    twoStepPlan: twoStepPlan_Skill_Data.id,
+    threeStepPlan: threeStepPlan_Skill_Data.id,
+    constructInverseProblem: constructInverseProblem_Skill_Data.id,
+    explainAnswerUnits: explainAnswerUnits_Skill_Data.id,
+    multipleSolutionStrategies: multipleSolutionStrategies_Skill_Data.id,
+  },
   description: { methodological: "Constructing and justifying a sequence of solution steps, checking units and answers, and considering alternative methods." },
 });

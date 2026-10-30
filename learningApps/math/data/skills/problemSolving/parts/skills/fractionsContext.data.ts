@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { parts_Skills_Ids } from './index.ids';
 
 export const fractionsContext_Skill_Data = buildSkillConfig({
-  id: parts_Skills_Ids.fractionsContext,
+  id: '44334f70-1eba-4175-8396-dfe9a735b9d2',
   name: {
     lt: "Vienetinės trupmenos dalies radimas",
     lv: "Vienības daļas atrašana no lieluma",

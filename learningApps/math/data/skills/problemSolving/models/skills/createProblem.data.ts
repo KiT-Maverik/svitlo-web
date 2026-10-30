@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { models_Skills_Ids } from './index.ids';
 
 export const createProblem_Skill_Data = buildSkillConfig({
-  id: models_Skills_Ids.createProblem,
+  id: '1752c41c-dedc-4bc3-9b3f-285878f851b4',
   name: {
     lt: "Tekstinio uždavinio kūrimas pagal modelį",
     lv: "Teksta uzdevuma veidošana pēc modeļa",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { planning_Skills_Ids } from './index.ids';
 
 export const multipleSolutionStrategies_Skill_Data = buildSkillConfig({
-  id: planning_Skills_Ids.multipleSolutionStrategies,
+  id: '2be4fa3b-25b6-4c4d-95a3-61e1e1c160c2',
   name: {
     lt: "Sprendimo būdų palyginimas",
     lv: "Risināšanas paņēmienu salīdzināšana",

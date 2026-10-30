@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { calendar_Skills_Ids } from './index.ids';
 
 export const weekMonthYear_Skill_Data = buildSkillConfig({
-  id: calendar_Skills_Ids.weekMonthYear,
+  id: '3fccd9a5-9094-400e-8401-be2fa98cbfa6',
   name: {
     en: "Navigating days, weeks, and months in a calendar",
     lt: "Orientavimasis kalendoriaus dienose, savaitėse ir mėnesiuose",

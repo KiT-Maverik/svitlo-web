@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { groups_Skills_Ids } from './index.ids';
 
 export const correspondenceCombinations_Skill_Data = buildSkillConfig({
-  id: groups_Skills_Ids.correspondenceCombinations,
+  id: 'e2a50956-57c9-44c5-a871-6ce071a147be',
   name: {
     lt: "Dviejų rinkinių derinių skaičiavimas",
     lv: "Divu kopu kombināciju skaitīšana",

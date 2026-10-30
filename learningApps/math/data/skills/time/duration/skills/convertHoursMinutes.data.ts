@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { duration_Skills_Ids } from './index.ids';
 
 export const convertHoursMinutes_Skill_Data = buildSkillConfig({
-  id: duration_Skills_Ids.convertHoursMinutes,
+  id: '131741ec-c4d9-4f98-9c52-208326de7cd0',
   name: {
     en: "Converting hours and minutes",
     lt: "Valandų ir minučių keitimas",

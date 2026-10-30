@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { conditions_Skills_Ids } from './index.ids';
 
 export const findExtraneousData_Skill_Data = buildSkillConfig({
-  id: conditions_Skills_Ids.findExtraneousData,
+  id: 'e77dd73e-0505-41d6-9a38-880f63009084',
   name: {
     lt: "Nereikalingų duomenų atpažinimas",
     lv: "Lieku datu atpazīšana",
