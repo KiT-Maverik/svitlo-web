@@ -1215,693 +1215,1233 @@ User-friendly description: Recognize how insufficient sleep can affect focus, mo
 
 ### Learning and Behavior Change
 
+Slug: learningAndBehaviorChange
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
-Past experience modifies responding through predictive cues, consequences, and social observation. This domain explains mechanisms of behavioral acquisition and flexibility rather than memory storage or a teaching sequence.
+Methodological description: Past experience modifies responding through predictive cues, consequences, and social observation. This domain explains mechanisms of behavioral acquisition and flexibility rather than memory storage or a teaching sequence.
+User-friendly description: Explore how experience, consequences and observation change behavior over time.
 
 #### Respondent Conditioning
 
+Slug: respondentConditioning
+Action: create
+Status: pending
+
 Skills: 6
 
 [Not implemented](#)
 
-Previously neutral cues can acquire the capacity to elicit responses through repeated relationships with consequential events.
+Methodological description: Previously neutral cues can acquire the capacity to elicit responses through repeated relationships with consequential events.
+User-friendly description: Discover how associations between stimuli can produce learned responses.
 
 ##### Classical Conditioning
 
+Slug: classicalConditioning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify conditioned and unconditioned stimuli and responses within a learned predictive association.
+Methodological description: Identify conditioned and unconditioned stimuli and responses within a learned predictive association.
+User-friendly description: Understand how a neutral signal can come to trigger a learned response.
 
 ##### Conditioned Response Acquisition
 
+Slug: conditionedResponseAcquisition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how repeated predictive relations can strengthen a newly learned response to a previously neutral cue.
+Methodological description: Explain how repeated predictive relations can strengthen a newly learned response to a previously neutral cue.
+User-friendly description: Recognize how a conditioned response develops through repeated pairings.
 
 ##### Conditioned Response Extinction
 
+Slug: conditionedResponseExtinction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain reduced responding when a predictive cue no longer forecasts the expected event, without assuming the original association is erased.
+Methodological description: Explain reduced responding when a predictive cue no longer forecasts the expected event, without assuming the original association is erased.
+User-friendly description: Explore why a learned response can weaken without continued pairing.
 
 ##### Spontaneous Recovery
 
+Slug: spontaneousRecovery
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a previously weakened conditioned response may reappear after a delay.
+Methodological description: Explain why a previously weakened conditioned response may reappear after a delay.
+User-friendly description: Understand why an extinguished response can sometimes return.
 
 ##### Stimulus Generalization
 
+Slug: stimulusGeneralization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a response acquired for one cue may also occur with similar but untrained cues.
+Methodological description: Explain why a response acquired for one cue may also occur with similar but untrained cues.
+User-friendly description: Explain why similar signals can trigger a learned response.
 
 ##### Stimulus Discrimination
 
+Slug: stimulusDiscrimination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain learning to respond differently when distinct cues predict different outcomes.
+Methodological description: Explain learning to respond differently when distinct cues predict different outcomes.
+User-friendly description: Learn how people distinguish a learned signal from other stimuli.
 
 #### Operant Learning
+
+Slug: operantLearning
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Consequences influence the future frequency of actions; functional definitions depend on observed behavioral change rather than whether an outcome seems pleasant.
+Methodological description: Consequences influence the future frequency of actions; functional definitions depend on observed behavioral change rather than whether an outcome seems pleasant.
+User-friendly description: Explore how rewards and consequences influence behavior.
 
 ##### Operant Conditioning
 
+Slug: operantConditioning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify behavior–consequence contingencies that alter future responding.
+Methodological description: Identify behavior–consequence contingencies that alter future responding.
+User-friendly description: Explain how actions change according to their consequences.
 
 ##### Positive Reinforcement
 
+Slug: positiveReinforcement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a consequence added after a behavior that increases its future occurrence under the relevant conditions.
+Methodological description: Identify a consequence added after a behavior that increases its future occurrence under the relevant conditions.
+User-friendly description: Recognize when adding a desirable consequence makes behavior more likely.
 
 ##### Negative Reinforcement
 
+Slug: negativeReinforcement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a consequence removed after a behavior that increases future responding, without confusing removal with punishment.
+Methodological description: Identify a consequence removed after a behavior that increases future responding, without confusing removal with punishment.
+User-friendly description: Understand how removing an unpleasant condition can strengthen behavior.
 
 ##### Positive Punishment
 
+Slug: positivePunishment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify an added consequence followed by a reduction in the future occurrence of a behavior.
+Methodological description: Identify an added consequence followed by a reduction in the future occurrence of a behavior.
+User-friendly description: Recognize when adding a consequence reduces the chance of an action.
 
 ##### Negative Punishment
 
+Slug: negativePunishment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the removal of a consequence followed by reduced future responding and distinguish it from negative reinforcement.
+Methodological description: Identify the removal of a consequence followed by reduced future responding and distinguish it from negative reinforcement.
+User-friendly description: Recognize when removing something desirable discourages a behavior.
 
 ##### Reinforcement Schedules
 
+Slug: reinforcementSchedules
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how timing and predictability of consequences alter response rates and persistence.
+Methodological description: Explain how timing and predictability of consequences alter response rates and persistence.
+User-friendly description: Explore how the timing and frequency of rewards influence learning.
 
 #### Social Learning
+
+Slug: socialLearning
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Observing models informs anticipated outcomes and possible actions even without immediate imitation.
+Methodological description: Observing models informs anticipated outcomes and possible actions even without immediate imitation.
+User-friendly description: Discover how observing other people changes what we learn.
 
 ##### Observational Learning
 
+Slug: observationalLearning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze roles of attention, retention, opportunity, and motivation in learning from others.
+Methodological description: Analyze roles of attention, retention, opportunity, and motivation in learning from others.
+User-friendly description: Explain how people can learn behavior by watching others.
 
 ##### Vicarious Reinforcement
 
+Slug: vicariousReinforcement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how observing consequences experienced by another person can shift expectations about one's own action.
+Methodological description: Explain how observing consequences experienced by another person can shift expectations about one's own action.
+User-friendly description: Recognize why seeing someone else rewarded can influence behavior.
 
 ##### Model Characteristics
 
+Slug: modelCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate how perceived similarity, credibility, and context shape imitation.
+Methodological description: Evaluate how perceived similarity, credibility, and context shape imitation.
+User-friendly description: Explore which characteristics of a demonstrator affect learning.
 
 #### Transfer and Behavioral Flexibility
+
+Slug: transferAndBehavioralFlexibility
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Acquired responses must generalize appropriately across contexts while remaining sensitive to meaningful differences.
+Methodological description: Acquired responses must generalize appropriately across contexts while remaining sensitive to meaningful differences.
+User-friendly description: Learn why practiced skills do not always transfer automatically to new situations.
 
 ##### Context-Dependent Learning
 
+Slug: contextDependentLearning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a response learned in one setting may not transfer unchanged to another.
+Methodological description: Explain why a response learned in one setting may not transfer unchanged to another.
+User-friendly description: Recognize when learning depends strongly on the setting where it occurred.
 
 ##### Transfer of Learning
 
+Slug: transferOfLearning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how prior learning assists, interferes with, or fails to transfer to a new task or context, accounting for meaningful similarities and differences.
+Methodological description: Assess how prior learning assists, interferes with, or fails to transfer to a new task or context, accounting for meaningful similarities and differences.
+User-friendly description: Explain how learning in one context can help in a different context.
 
 ##### Feedback and Skill Acquisition
 
+Slug: feedbackAndSkillAcquisition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how informative outcome feedback changes later performance differently from simple repetition.
+Methodological description: Explain how informative outcome feedback changes later performance differently from simple repetition.
+User-friendly description: Understand how informative feedback helps people improve a skill.
 
 ##### Learned Helplessness
 
+Slug: learnedHelplessness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how repeated experience of uncontrollable outcomes can affect perceived agency and effort without labeling a person.
+Methodological description: Explain how repeated experience of uncontrollable outcomes can affect perceived agency and effort without labeling a person.
+User-friendly description: Explore why repeated lack of control can weaken future attempts to act.
 
 ### Memory and Metacognition
+
+Slug: memoryAndMetacognition
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
-Remembering involves encoding, retention, retrieval, reconstruction, and monitoring. Memory science explains why familiar material can be difficult to recall and why subjective confidence may mislead.
+Methodological description: Remembering involves encoding, retention, retrieval, reconstruction, and monitoring. Memory science explains why familiar material can be difficult to recall and why subjective confidence may mislead.
+User-friendly description: Discover how memories form, change and can be monitored during learning.
 
 #### Memory Systems
+
+Slug: memorySystems
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Distinct forms of memory support immediate processing, recall of experiences and facts, and skilled performance.
+Methodological description: Distinct forms of memory support immediate processing, recall of experiences and facts, and skilled performance.
+User-friendly description: Explore the different memory systems involved in remembering.
 
 ##### Sensory Memory
 
+Slug: sensoryMemory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain short-lived persistence of sensory traces beyond the immediate stimulation.
+Methodological description: Explain short-lived persistence of sensory traces beyond the immediate stimulation.
+User-friendly description: Understand how sensory information is briefly retained after stimulation.
 
 ##### Working Memory
 
+Slug: workingMemory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain active maintenance and manipulation of limited information while performing a cognitive task.
+Methodological description: Explain active maintenance and manipulation of limited information while performing a cognitive task.
+User-friendly description: Recognize the limited information we can actively hold and use.
 
 ##### Long-Term Retention
 
+Slug: longTermRetention
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe durable storage of information and why persistence does not guarantee immediate access.
+Methodological description: Describe durable storage of information and why persistence does not guarantee immediate access.
+User-friendly description: Explore how information can be retained over longer periods.
 
 ##### Episodic Memory
 
+Slug: episodicMemory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain recollection of personally experienced events within an experienced temporal or situational context.
+Methodological description: Explain recollection of personally experienced events within an experienced temporal or situational context.
+User-friendly description: Distinguish memories of personal experiences from other knowledge.
 
 ##### Semantic Memory
 
+Slug: semanticMemory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain access to acquired concepts, facts, and meanings without needing to mentally relive a specific event.
+Methodological description: Explain access to acquired concepts, facts, and meanings without needing to mentally relive a specific event.
+User-friendly description: Recognize memory for facts, concepts and meanings.
 
 ##### Procedural Memory
 
+Slug: proceduralMemory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how acquired routines guide performance without constant conscious recollection of their steps.
+Methodological description: Explain how acquired routines guide performance without constant conscious recollection of their steps.
+User-friendly description: Understand memory for practiced procedures and skills.
 
 #### Encoding and Consolidation
+
+Slug: encodingAndConsolidation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Attention, meaningful structure, and subsequent processing influence what can later be remembered.
+Methodological description: Attention, meaningful structure, and subsequent processing influence what can later be remembered.
+User-friendly description: Discover processes that help new information enter and stabilize in memory.
 
 ##### Elaborative Encoding
 
+Slug: elaborativeEncoding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how connections to existing knowledge improve the accessibility of newly learned material.
+Methodological description: Explain how connections to existing knowledge improve the accessibility of newly learned material.
+User-friendly description: Connect new information with meaningful prior knowledge.
 
 ##### Organization and Chunking
 
+Slug: organizationAndChunking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate meaningful grouping to reduced processing demands and more efficient retrieval.
+Methodological description: Relate meaningful grouping to reduced processing demands and more efficient retrieval.
+User-friendly description: Explore how organizing information into chunks helps memory.
 
 ##### Spacing Effects
 
+Slug: spacingEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret why appropriately distributed study episodes often support longer-lasting recall than massed review.
+Methodological description: Interpret why appropriately distributed study episodes often support longer-lasting recall than massed review.
+User-friendly description: Understand why spreading practice over time can improve retention.
 
 ##### Memory Consolidation
 
+Slug: memoryConsolidation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain changes in retention after initial learning and how subsequent experience or sleep can affect them.
+Methodological description: Explain changes in retention after initial learning and how subsequent experience or sleep can affect them.
+User-friendly description: Explain how newly formed memories can become more stable.
 
 #### Retrieval and Distortion
+
+Slug: retrievalAndDistortion
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Access is cue-dependent and reconstructive; incorrect recollection does not automatically imply deliberate deception.
+Methodological description: Access is cue-dependent and reconstructive; incorrect recollection does not automatically imply deliberate deception.
+User-friendly description: Explore why remembering involves retrieval and sometimes distortion.
 
 ##### Memory Recall
 
+Slug: memoryRecall
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain retrieving information without the target being presented among answer options or other direct cues.
+Methodological description: Explain retrieving information without the target being presented among answer options or other direct cues.
+User-friendly description: Recall information without being shown the original answer.
 
 ##### Memory Recognition
 
+Slug: memoryRecognition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain identifying previously encountered information when the candidate item is presented.
+Methodological description: Explain identifying previously encountered information when the candidate item is presented.
+User-friendly description: Recognize previously encountered information among alternatives.
 
 ##### Retrieval Cues
 
+Slug: retrievalCues
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how contextual and semantic prompts can facilitate access to previously encoded material.
+Methodological description: Explain how contextual and semantic prompts can facilitate access to previously encoded material.
+User-friendly description: Use contextual clues to help retrieve stored information.
 
 ##### Proactive Interference
 
+Slug: proactiveInterference
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how previously learned information may obstruct retrieval of newer learning.
+Methodological description: Explain how previously learned information may obstruct retrieval of newer learning.
+User-friendly description: Recognize how earlier learning can interfere with new learning.
 
 ##### Retroactive Interference
 
+Slug: retroactiveInterference
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how subsequent learning may obstruct access to previously acquired information.
+Methodological description: Explain how subsequent learning may obstruct access to previously acquired information.
+User-friendly description: Recognize how new information can interfere with older memories.
 
 ##### Misinformation Effects
 
+Slug: misinformationEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how post-event suggestions can alter later reports of remembered events.
+Methodological description: Analyze how post-event suggestions can alter later reports of remembered events.
+User-friendly description: Explore how misleading information can change later recollection.
 
 ##### Memory Confidence and Accuracy
 
+Slug: memoryConfidenceAndAccuracy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why vivid or confident recollection does not always predict correctness.
+Methodological description: Explain why vivid or confident recollection does not always predict correctness.
+User-friendly description: Understand why feeling certain about a memory does not guarantee accuracy.
 
 #### Monitoring and Learning Strategies
+
+Slug: monitoringAndLearningStrategies
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Monitoring performance and choosing strategies require evidence beyond feelings of fluency or familiarity.
+Methodological description: Monitoring performance and choosing strategies require evidence beyond feelings of fluency or familiarity.
+User-friendly description: Learn to choose and check effective study strategies.
 
 ##### Retrieval Practice
 
+Slug: retrievalPractice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how attempting to remember influences later retention differently from rereading.
+Methodological description: Explain how attempting to remember influences later retention differently from rereading.
+User-friendly description: Practice retrieving information to strengthen future memory.
 
 ##### Interleaved Practice
 
+Slug: interleavedPractice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate when alternating related task types supports discrimination and when it raises unnecessary difficulty.
+Methodological description: Evaluate when alternating related task types supports discrimination and when it raises unnecessary difficulty.
+User-friendly description: Understand why mixing related kinds of practice can improve discrimination.
 
 ##### Illusions of Learning
 
+Slug: illusionsOfLearning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how fluent rereading or immediate performance may be confused with durable mastery.
+Methodological description: Identify how fluent rereading or immediate performance may be confused with durable mastery.
+User-friendly description: Recognize when familiar-looking material creates a false sense of mastery.
 
 ##### Self-Testing and Calibration
 
+Slug: selfTestingAndCalibration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use attempted retrieval and feedback to compare judged understanding with actual performance.
+Methodological description: Use attempted retrieval and feedback to compare judged understanding with actual performance.
+User-friendly description: Check understanding by testing yourself and comparing confidence with results.
 
 ##### Strategy Selection for Learning
 
+Slug: strategySelectionForLearning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare spacing, retrieval, elaboration, and organization for the demands of a given task rather than declaring a universal technique.
+Methodological description: Compare spacing, retrieval, elaboration, and organization for the demands of a given task rather than declaring a universal technique.
+User-friendly description: Select learning strategies according to the skill, evidence and context.
 
 ### Thinking and Decision-Making
+
+Slug: thinkingAndDecisionMaking
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 27
 
 [Not implemented](#)
 
-Cognitive processes create concepts, guide inferences, solve problems, and select actions under limited information. The focus is what people actually do, not whether their reasoning satisfies a formal philosophical standard.
+Methodological description: Cognitive processes create concepts, guide inferences, solve problems, and select actions under limited information. The focus is what people actually do, not whether their reasoning satisfies a formal philosophical standard.
+User-friendly description: Explore how people form concepts, solve problems and make imperfect decisions.
 
 #### Mental Representation
+
+Slug: mentalRepresentation
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Categories, schemas, and internal models compress information, enabling predictions while sometimes concealing important differences.
+Methodological description: Categories, schemas, and internal models compress information, enabling predictions while sometimes concealing important differences.
+User-friendly description: Discover how mental concepts and representations organize information.
 
 ##### Concept Formation
 
+Slug: conceptFormation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how shared features and distinguishing properties support useful mental categories.
+Methodological description: Explain how shared features and distinguishing properties support useful mental categories.
+User-friendly description: Explain how people learn which examples belong to a concept.
 
 ##### Prototype-Based Categorization
 
+Slug: prototypeBasedCategorization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how classification can rely on resemblance to a typical or averaged category representation.
+Methodological description: Explain how classification can rely on resemblance to a typical or averaged category representation.
+User-friendly description: Understand how typical examples can guide category decisions.
 
 ##### Exemplar-Based Categorization
 
+Slug: exemplarBasedCategorization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how classification can rely on comparisons with specific remembered category instances.
+Methodological description: Explain how classification can rely on comparisons with specific remembered category instances.
+User-friendly description: Explore how remembered individual examples shape classification.
 
 ##### Mental Models
 
+Slug: mentalModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how simplified internal representations predict outcomes and where neglected details cause errors.
+Methodological description: Analyze how simplified internal representations predict outcomes and where neglected details cause errors.
+User-friendly description: Use a mental model to reason about how a situation might work.
 
 ##### Cognitive Schemas
 
+Slug: cognitiveSchemas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how organized expectations influence the interpretation of familiar situations.
+Methodological description: Explain how organized expectations influence the interpretation of familiar situations.
+User-friendly description: Recognize how familiar mental structures affect expectations and interpretation.
 
 #### Reasoning and Problem Solving
+
+Slug: reasoningAndProblemSolving
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-A person's representation of a challenge constrains which rules, heuristics, and solutions become available.
+Methodological description: A person's representation of a challenge constrains which rules, heuristics, and solutions become available.
+User-friendly description: Explore psychological processes involved in reasoning and solving problems.
 
 ##### Deductive Reasoning
 
+Slug: deductiveReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain drawing conclusions that follow from given premises, distinguishing actual human performance from formal validity.
+Methodological description: Explain drawing conclusions that follow from given premises, distinguishing actual human performance from formal validity.
+User-friendly description: Distinguish conclusions that necessarily follow from stated premises.
 
 ##### Inductive Reasoning
 
+Slug: inductiveReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain generalizing beyond observed cases and why resulting conclusions remain uncertain.
+Methodological description: Explain generalizing beyond observed cases and why resulting conclusions remain uncertain.
+User-friendly description: Recognize how examples support tentative broader conclusions.
 
 ##### Problem Representation
 
+Slug: problemRepresentation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how changing the formulation of a problem changes the possible solution search.
+Methodological description: Explain how changing the formulation of a problem changes the possible solution search.
+User-friendly description: Explore why defining the problem differently can reveal a solution.
 
 ##### Means–Ends Analysis
 
+Slug: meansEndsAnalysis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe selecting intermediate actions that reduce a discrepancy between a current state and a goal.
+Methodological description: Describe selecting intermediate actions that reduce a discrepancy between a current state and a goal.
+User-friendly description: Break the gap between the current state and a goal into manageable steps.
 
 ##### Functional Fixedness
 
+Slug: functionalFixedness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how familiar uses of an object can inhibit a different effective use.
+Methodological description: Identify how familiar uses of an object can inhibit a different effective use.
+User-friendly description: Recognize when an object's familiar use blocks a new solution.
 
 ##### Insight and Restructuring
 
+Slug: insightAndRestructuring
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain abrupt reinterpretation during problem solving without treating the feeling of insight as proof.
+Methodological description: Explain abrupt reinterpretation during problem solving without treating the feeling of insight as proof.
+User-friendly description: Understand how changing a problem's representation can produce an insight.
 
 #### Heuristics and Biases
+
+Slug: heuristicsAndBiases
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Fast judgments exploit convenient cues but may be systematically distorted by memory, presentation, or expectations.
+Methodological description: Fast judgments exploit convenient cues but may be systematically distorted by memory, presentation, or expectations.
+User-friendly description: Discover shortcuts and biases that influence judgments.
 
 ##### Availability Heuristic
 
+Slug: availabilityHeuristic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain using the ease of recalling examples as a substitute for estimating real frequency.
+Methodological description: Explain using the ease of recalling examples as a substitute for estimating real frequency.
+User-friendly description: Explain why easily recalled examples may seem more common.
 
 ##### Representativeness Heuristic
 
+Slug: representativenessHeuristic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain judging likelihood by resemblance to a familiar category while neglecting relevant background information.
+Methodological description: Explain judging likelihood by resemblance to a familiar category while neglecting relevant background information.
+User-friendly description: Recognize when similarity to a stereotype replaces relevant probability.
 
 ##### Anchoring Bias
 
+Slug: anchoringBias
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how an initial number or reference shifts later quantitative estimates.
+Methodological description: Describe how an initial number or reference shifts later quantitative estimates.
+User-friendly description: Understand how an initial number can bias later judgments.
 
 ##### Confirmation Bias
 
+Slug: confirmationBias
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze selective search or interpretation of evidence that favors an existing belief.
+Methodological description: Analyze selective search or interpretation of evidence that favors an existing belief.
+User-friendly description: Identify the tendency to favor evidence supporting an existing belief.
 
 ##### Hindsight Bias
 
+Slug: hindsightBias
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why knowing an outcome retrospectively makes it seem more predictable.
+Methodological description: Explain why knowing an outcome retrospectively makes it seem more predictable.
+User-friendly description: Recognize why past outcomes can seem more predictable after they happen.
 
 ##### Framing Effects
 
+Slug: framingEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how equivalent choices described differently can produce different judgments.
+Methodological description: Assess how equivalent choices described differently can produce different judgments.
+User-friendly description: Explore why describing equivalent choices differently can change decisions.
 
 ##### Fundamental Attribution Error
 
+Slug: fundamentalAttributionError
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe overemphasizing dispositions and neglecting situational constraints when explaining another person's behavior.
+Methodological description: Describe overemphasizing dispositions and neglecting situational constraints when explaining another person's behavior.
+User-friendly description: Recognize when others' behavior is explained too strongly by their personality.
 
 #### Choices Under Uncertainty
+
+Slug: choicesUnderUncertainty
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Decisions depend on reference points, delayed consequences, uncertainty, and how alternatives are presented.
+Methodological description: Decisions depend on reference points, delayed consequences, uncertainty, and how alternatives are presented.
+User-friendly description: Explore how uncertainty, probability and presentation influence choices.
 
 ##### Base-Rate Neglect
 
+Slug: baseRateNeglect
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain failures to incorporate prior frequencies when a compelling individual example is present.
+Methodological description: Explain failures to incorporate prior frequencies when a compelling individual example is present.
+User-friendly description: Recognize when people overlook background frequencies in their judgments.
 
 ##### Loss Aversion
 
+Slug: lossAversion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a loss relative to a reference point may carry greater subjective weight than an equivalent gain.
+Methodological description: Explain why a loss relative to a reference point may carry greater subjective weight than an equivalent gain.
+User-friendly description: Understand why losses can feel more significant than equivalent gains.
 
 ##### Delay Discounting
 
+Slug: delayDiscounting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain changing subjective value of an outcome as its delivery becomes more distant.
+Methodological description: Explain changing subjective value of an outcome as its delivery becomes more distant.
+User-friendly description: Explore why distant rewards can be valued less than immediate ones.
 
 ##### Risk Perception
 
+Slug: riskPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze why vividness, familiarity, controllability, and dread affect judgments of risk.
+Methodological description: Analyze why vividness, familiarity, controllability, and dread affect judgments of risk.
+User-friendly description: Recognize that perceived danger depends on more than statistical odds.
 
 ##### Choice Architecture
 
+Slug: choiceArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how defaults, option ordering, and information load shift behavior without assuming every nudge is harmless.
+Methodological description: Identify how defaults, option ordering, and information load shift behavior without assuming every nudge is harmless.
+User-friendly description: See how defaults and arrangement of options can influence decisions.
 
 #### Language and Cognitive Abilities
+
+Slug: languageAndCognitiveAbilities
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Psychological research investigates language processing and performance differences rather than literary quality or innate worth.
+Methodological description: Psychological research investigates language processing and performance differences rather than literary quality or innate worth.
+User-friendly description: Explore how people process language and how cognitive abilities are measured.
 
 ##### Language Comprehension
 
+Slug: languageComprehension
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate context and prior knowledge to the interpretation of ambiguous expressions.
+Methodological description: Relate context and prior knowledge to the interpretation of ambiguous expressions.
+User-friendly description: Understand how listeners and readers build meaning from language.
 
 ##### Language Production
 
+Slug: languageProduction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain planning and word selection in speaking, including what errors reveal about processing.
+Methodological description: Explain planning and word selection in speaking, including what errors reveal about processing.
+User-friendly description: Explore how people plan and produce spoken or written language.
 
 ##### Cognitive Test Interpretation
 
+Slug: cognitiveTestInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a measured score from a complete account of intellectual capacity, considering error and conditions.
+Methodological description: Distinguish a measured score from a complete account of intellectual capacity, considering error and conditions.
+User-friendly description: Recognize what a cognitive test can and cannot tell us about someone.
 
 ##### Theories of Intelligence
 
+Slug: theoriesOfIntelligence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare broad and domain-specific models and evaluate how well measures predict relevant outcomes.
+Methodological description: Compare broad and domain-specific models and evaluate how well measures predict relevant outcomes.
+User-friendly description: Compare different scientific theories about intelligence and abilities.
 
 ### Emotion and Psychological Regulation
+
+Slug: emotionAndPsychologicalRegulation
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
-Emotional responses combine appraisal, bodily activation, expression, and action tendencies. Regulation concerns responding flexibly to emotions, not suppressing every uncomfortable experience.
+Methodological description: Emotional responses combine appraisal, bodily activation, expression, and action tendencies. Regulation concerns responding flexibly to emotions, not suppressing every uncomfortable experience.
+User-friendly description: Explore how emotions arise, communicate information and can be managed.
 
 #### Emotional Processes
+
+Slug: emotionalProcesses
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Emotions emerge from interpretations, physiological changes, and situational information that interact in complex ways.
+Methodological description: Emotions emerge from interpretations, physiological changes, and situational information that interact in complex ways.
+User-friendly description: Discover the functions, bodily responses and interpretations involved in emotion.
 
 ##### Emotion Functions
 
+Slug: emotionFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how emotion can signal needs, orient attention, and prepare action while avoiding fixed rules for every person.
+Methodological description: Explain how emotion can signal needs, orient attention, and prepare action while avoiding fixed rules for every person.
+User-friendly description: Understand how emotions help signal needs, threats and opportunities.
 
 ##### Emotional Appraisal
 
+Slug: emotionalAppraisal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how interpretations of an event influence feelings when the physical event is otherwise unchanged.
+Methodological description: Analyze how interpretations of an event influence feelings when the physical event is otherwise unchanged.
+User-friendly description: Explore how interpreting a situation influences emotional response.
 
 ##### Physiology of Emotion
 
+Slug: physiologyOfEmotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate changes in arousal and bodily responses to experienced emotion without assuming a unique bodily signature for each state.
+Methodological description: Relate changes in arousal and bodily responses to experienced emotion without assuming a unique bodily signature for each state.
+User-friendly description: Recognize bodily changes that can accompany different emotional states.
 
 ##### Emotion Theories
 
+Slug: emotionTheories
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare explanatory accounts of the relationship among bodily changes, appraisal, and conscious experience.
+Methodological description: Compare explanatory accounts of the relationship among bodily changes, appraisal, and conscious experience.
+User-friendly description: Compare theories describing how feelings and bodily responses relate.
 
 ##### Mood and Emotion
 
+Slug: moodAndEmotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish relatively persistent affective states from briefer reactions focused on a specific event.
+Methodological description: Distinguish relatively persistent affective states from briefer reactions focused on a specific event.
+User-friendly description: Distinguish a short emotional episode from a longer-lasting mood.
 
 #### Recognition and Expression
+
+Slug: recognitionAndExpression
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Emotional information is conveyed through multiple channels, but neither facial expression nor tone is an infallible window into another mind.
+Methodological description: Emotional information is conveyed through multiple channels, but neither facial expression nor tone is an infallible window into another mind.
+User-friendly description: Learn how emotions can be recognized and expressed in different contexts.
 
 ##### Emotion Vocabulary
 
+Slug: emotionVocabulary
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate related affective states to communicate distinctions in intensity, quality, or cause.
+Methodological description: Differentiate related affective states to communicate distinctions in intensity, quality, or cause.
+User-friendly description: Use words that describe emotional experiences precisely.
 
 ##### Reading Emotional Cues
 
+Slug: readingEmotionalCues
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret facial, vocal, and contextual signals cautiously rather than equating one expression with a definite inner state.
+Methodological description: Interpret facial, vocal, and contextual signals cautiously rather than equating one expression with a definite inner state.
+User-friendly description: Interpret emotional cues without treating expressions as certain proof of feelings.
 
 ##### Cultural Variation in Expression
 
+Slug: culturalVariationInExpression
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how social norms can influence whether and how feelings are displayed.
+Methodological description: Explain how social norms can influence whether and how feelings are displayed.
+User-friendly description: Recognize how social and cultural rules affect emotional expression.
 
 ##### Emotional Self-Awareness
 
+Slug: emotionalSelfAwareness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify feelings, accompanying sensations, and possible triggers without assuming a single interpretation is certain.
+Methodological description: Identify feelings, accompanying sensations, and possible triggers without assuming a single interpretation is certain.
+User-friendly description: Observe and describe your own emotional state without assuming its cause.
 
 #### Regulation Strategies
 
+Slug: regulationStrategies
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-People can influence attention, interpretation, expression, or behavior in response to emotion, with different strategies fitting different circumstances.
+Methodological description: People can influence attention, interpretation, expression, or behavior in response to emotion, with different strategies fitting different circumstances.
+User-friendly description: Explore strategies for responding to difficult emotional experiences.
 
 ##### Cognitive Reappraisal
 
+Slug: cognitiveReappraisal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how reconsidering an event's meaning can change the emotional response without denying the event.
+Methodological description: Explain how reconsidering an event's meaning can change the emotional response without denying the event.
+User-friendly description: Reconsider the meaning of a situation to change an emotional response.
 
 ##### Attentional Regulation
 
+Slug: attentionalRegulation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how directing focus alters emotional intensity or persistence, including limits of distraction.
+Methodological description: Explain how directing focus alters emotional intensity or persistence, including limits of distraction.
+User-friendly description: Redirect attention intentionally when a different focus is helpful.
 
 ##### Expressive Suppression
 
+Slug: expressiveSuppression
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate potential immediate and interpersonal costs of withholding outward emotional expression.
+Methodological description: Evaluate potential immediate and interpersonal costs of withholding outward emotional expression.
+User-friendly description: Recognize how hiding outward emotion differs from changing the feeling.
 
 ##### Regulation Strategy Flexibility
 
+Slug: regulationStrategyFlexibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select and justify possible responses to changing situations instead of treating one technique as universally best.
+Methodological description: Select and justify possible responses to changing situations instead of treating one technique as universally best.
+User-friendly description: Choose emotional regulation strategies suited to a particular situation.
 
 ##### Seeking Appropriate Support
 
+Slug: seekingAppropriateSupport
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish self-management from situations in which trusted or qualified assistance is an appropriate response.
+Methodological description: Distinguish self-management from situations in which trusted or qualified assistance is an appropriate response.
+User-friendly description: Identify when seeking support from a trusted person is appropriate.
 
 #### Stress and Coping
+
+Slug: stressAndCoping
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Stress is shaped by demands and perceived resources, with psychological consequences depending partly on duration and opportunities for recovery.
+Methodological description: Stress is shaped by demands and perceived resources, with psychological consequences depending partly on duration and opportunities for recovery.
+User-friendly description: Discover how people appraise, experience and cope with stress.
 
 ##### Stress Appraisal
 
+Slug: stressAppraisal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a person's interpretation of demands and resources shapes experienced strain.
+Methodological description: Explain how a person's interpretation of demands and resources shapes experienced strain.
+User-friendly description: Recognize how interpreting demands influences stress responses.
 
 ##### Acute Stress
 
+Slug: acuteStress
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain a relatively short-lived response to demands or threat and how recovery may follow the event.
+Methodological description: Explain a relatively short-lived response to demands or threat and how recovery may follow the event.
+User-friendly description: Understand short-term psychological responses to immediate challenges.
 
 ##### Chronic Stress
 
+Slug: chronicStress
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain sustained exposure to stressors and why duration and available resources affect psychological consequences.
+Methodological description: Explain sustained exposure to stressors and why duration and available resources affect psychological consequences.
+User-friendly description: Recognize how ongoing stress differs from a brief stressful event.
 
 ##### Problem-Focused Coping
 
+Slug: problemFocusedCoping
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain responses aimed at modifying a controllable source of difficulty.
+Methodological description: Explain responses aimed at modifying a controllable source of difficulty.
+User-friendly description: Explore coping by changing the problem or conditions causing stress.
 
 ##### Emotion-Focused Coping
 
+Slug: emotionFocusedCoping
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain responses aimed at managing distress when the situation itself may not be immediately alterable.
+Methodological description: Explain responses aimed at managing distress when the situation itself may not be immediately alterable.
+User-friendly description: Explore ways to manage emotional responses when circumstances cannot be changed.
 
 ### Motivation, Goals, and Habits
 
