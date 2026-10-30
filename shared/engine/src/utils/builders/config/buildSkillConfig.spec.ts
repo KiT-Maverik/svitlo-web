@@ -108,4 +108,17 @@ describe('Utils / builders / config / buildSkillConfig', () => {
     const names = { ...allNames(), xx: 'Unknown' };
     assert.throws(() => buildSkillConfig({ ...skill(), name: names }), /unsupported languages: xx/);
   });
+
+  it('preserves valid authored slugs and permits legacy configs without them', () => {
+    const authored = { ...skill(), slug: 'countObjects' };
+    assert.equal(buildSkillConfig(authored).slug, 'countObjects');
+    assert.equal(buildSkillConfig(skill()).slug, undefined);
+  });
+
+  it('rejects invalid authored slugs without changing legacy Mathematics inputs', () => {
+    for (const slug of ['', 'BadSlug', 'bad-slug', 'bad_slug', 'bad slug', 1, null]) {
+      const invalid = { ...skill(), slug } as unknown as Skill_Config;
+      assert.throws(() => buildSkillConfig(invalid), /Taxonomy slug must be an English lowerCamelCase identifier/);
+    }
+  });
 });
