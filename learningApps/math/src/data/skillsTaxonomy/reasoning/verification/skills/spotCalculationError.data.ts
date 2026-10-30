@@ -41,7 +41,7 @@ export const spotCalculationError_Skill_Data = buildSkillConfig({
       hi: "आप गणना में गलती वाला चरण ढूँढ़कर उसका कारण समझा सकते हैं, केवल अंतिम उत्तर को गलत नहीं कहेंगे।",
       es: "Puedes localizar el paso equivocado de un cálculo y explicar el error, no solo decir que el resultado final es incorrecto.",
       ar: "يمكنك تحديد الخطوة التي وقع فيها الخطأ في الحساب وشرح سبب الخطأ، لا مجرد القول إن النتيجة النهائية خاطئة.",
-      fr: "Tu peux retrouver l’étape où un calcul dérape et expliquer l’erreur, au lieu de seulement dire que le résultat est faux.",
+      fr: "Tu peux retrouver l’étape où une erreur s’est produite dans un calcul et l’expliquer, au lieu de seulement dire que le résultat est faux.",
       bn: "তুমি হিসাবের কোন ধাপে ভুল হয়েছে তা খুঁজে ব্যাখ্যা করতে পারো, শুধু শেষ উত্তর ভুল বলেই থেমে যাও না।",
       pt: "Você consegue encontrar a etapa em que um cálculo deu errado e explicar o erro, em vez de apenas dizer que a resposta final está incorreta.",
       ur: "آپ حساب میں غلطی والا مرحلہ تلاش کر کے اس کی وجہ سمجھا سکتے ہیں، صرف آخری جواب غلط نہیں کہیں گے۔",
