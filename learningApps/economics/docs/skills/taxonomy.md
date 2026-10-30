@@ -2813,121 +2813,211 @@ User-friendly description: Understand why borrowers or governments can face a de
 
 ### Розвиток, добробут та інституції
 
+Slug: developmentWellbeingAndInstitutions
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Тривалі відмінності між країнами й групами населення формуються продуктивністю, розподілом ресурсів та правилами суспільної взаємодії. Економічне зростання не завжди означає однакове покращення умов життя.
+Methodological description: Long-term differences between countries and population groups arise from productivity, distribution of resources, and rules of social interaction. Growth does not necessarily improve everyone's living conditions equally.
+User-friendly description: Explore why wealth, opportunities, and quality of life differ across societies.
 
 #### Бідність та добробут
+
+Slug: povertyAndWellbeing
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Оцінювання умов життя має враховувати доходи, можливості та доступ до базових благ.
+Methodological description: Assessing living conditions requires attention to income, opportunities, and access to essential goods.
+User-friendly description: Discover different ways to measure poverty and wellbeing.
 
 ##### Абсолютна й відносна бідність
 
+Slug: absoluteAndRelativePoverty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти нестачу ресурсів відносно базового порогу та відставання від типового рівня життя певного суспільства.
+Methodological description: Distinguish resource shortfalls against a basic threshold from living below a society's typical standard.
+User-friendly description: Tell the difference between lacking essentials and being poor relative to others.
 
 ##### Багатовимірна бідність
 
+Slug: multidimensionalPoverty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати депривації у здоров’ї, освіті й житлових умовах понад суто грошовий дохід.
+Methodological description: Evaluate deprivations in health, education, and housing beyond monetary income alone.
+User-friendly description: Explore why poverty involves more than income.
 
 ##### Індикатори людського розвитку
 
+Slug: humanDevelopmentIndicators
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати комплексні показники життя, освіти й доходу, усвідомлюючи їхні методологічні межі.
+Methodological description: Interpret composite measures of health, education, and income while recognizing their methodological limitations.
+User-friendly description: Understand what human development indexes measure and miss.
 
 #### Нерівність
+
+Slug: inequality
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Розподіл доходів і багатства може відрізнятися навіть між суспільствами з однаковим середнім доходом.
+Methodological description: Distributions of income and wealth can differ even among societies with identical average incomes.
+User-friendly description: Explore why an average income does not reveal how resources are shared.
 
 ##### Розподіл доходів
 
+Slug: incomeDistribution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати частки доходу груп населення та зміни відносного становища.
+Methodological description: Interpret income shares of population groups and changes in their relative positions.
+User-friendly description: Compare how income is distributed among groups.
 
 ##### Коефіцієнт Джині
 
+Slug: giniCoefficient
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити узагальнений індекс нерівності та його обмеження для опису форми розподілу.
+Methodological description: Interpret a summary index of inequality and its limits in describing the shape of a distribution.
+User-friendly description: Read a Gini coefficient without assuming it tells the whole story.
 
 ##### Міжпоколінна економічна мобільність
 
+Slug: intergenerationalEconomicMobility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати зв’язок між економічним становищем батьків і доступними можливостями наступного покоління.
+Methodological description: Evaluate the relationship between parents' economic position and the opportunities available to the next generation.
+User-friendly description: Explore how family circumstances can shape future opportunities.
 
 ##### Розподіл багатства
 
+Slug: wealthDistribution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати нерівномірність чистих активів домогосподарств — вартості майна й фінансових прав за вирахуванням боргів — окремо від потоків поточного доходу.
+Methodological description: Analyze inequality in household net assets—property and financial claims less debt—separately from current income flows.
+User-friendly description: Distinguish inequality in wealth from inequality in income.
 
 #### Інституції та розвиток
 
+Slug: institutionsAndDevelopment
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Правила, довіра, спроможність держави й доступ до ресурсів впливають на інвестиції та економічні можливості.
+Methodological description: Rules, trust, state capacity, and access to resources influence investment and economic opportunity.
+User-friendly description: Explore how institutions affect a society's chances of prosperity.
 
 ##### Інклюзивність економічних інституцій
 
+Slug: inclusiveEconomicInstitutions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, наскільки правила забезпечують доступ до участі в економіці та захист від довільного вилучення ресурсів.
+Methodological description: Assess whether rules permit participation in economic life and protect people from arbitrary appropriation of resources.
+User-friendly description: Recognize how fair access and secure rights can widen economic opportunity.
 
 ##### Корупція та економічні стимули
 
+Slug: corruptionAndEconomicIncentives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти, як неформальні платежі та вибіркове застосування правил впливають на витрати й конкуренцію.
+Methodological description: Identify how unofficial payments and selective rule enforcement influence costs and competition.
+User-friendly description: Understand how corruption distorts business decisions and competition.
 
 ##### Доступ до фінансових та базових послуг
 
+Slug: accessToFinanceAndBasicServices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати економічні наслідки доступності інфраструктури, платежів, освіти й охорони здоров’я.
+Methodological description: Evaluate the economic effects of access to infrastructure, payment systems, education, and health services.
+User-friendly description: Explore how essential services affect people's economic opportunities.
 
 #### Структурні зміни
+
+Slug: structuralChange
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Зі зростанням продуктивності змінюються частки галузей, професій та способи організації праці.
+Methodological description: As productivity increases, the shares of industries and occupations and the organization of work change.
+User-friendly description: Discover how an economy's mix of jobs and industries evolves.
 
 ##### Секторальна структура економіки
 
+Slug: sectoralEconomicStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти діяльність у сільському господарстві, промисловості та послугах за внеском у випуск і зайнятість.
+Methodological description: Distinguish agriculture, industry, and services by their contributions to output and employment.
+User-friendly description: Compare the economic roles of farming, industry, and services.
 
 ##### Структурна трансформація
 
+Slug: structuralTransformation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати переміщення праці й капіталу між видами діяльності та можливі перехідні витрати.
+Methodological description: Analyze movements of labor and capital between activities and the potential costs of transition.
+User-friendly description: Explore what happens when workers and investment shift between industries.
 
 ##### Технологічне наздоганяння
 
+Slug: technologicalCatchUp
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати умови запозичення технологій і знань та причини різних темпів зближення продуктивності.
+Methodological description: Assess conditions for adopting technology and knowledge from elsewhere and reasons why productivity gaps close at different speeds.
+User-friendly description: Understand how countries learn from technology developed elsewhere.
 
 ### Економіка довкілля та ресурсів
 
