@@ -43,24 +43,24 @@ export function validateSkillConfig(config: Skill_Config): void {
       throw new Error('Skill description.methodological must be non-empty English text');
     }
 
-    const unexpectedKeys = Object.keys(description).filter(key => key !== 'methodological' && key !== 'FE');
+    const unexpectedKeys = Object.keys(description).filter(key => key !== 'methodological' && key !== 'fe');
     if (unexpectedKeys.length > 0) {
       throw new Error('Skill description contains unsupported fields: ' + unexpectedKeys.join(', '));
     }
 
-    if (description.FE !== undefined) {
-      if (!description.FE || typeof description.FE !== 'object' || Array.isArray(description.FE)) {
-        throw new Error('Skill description.FE must contain all supported languages');
+    if (description.fe !== undefined) {
+      if (!description.fe || typeof description.fe !== 'object' || Array.isArray(description.fe)) {
+        throw new Error('Skill description.fe must contain all supported languages');
       }
       for (const language of supportedLanguages) {
-        const value = description.FE[language as keyof typeof description.FE];
+        const value = description.fe[language as keyof typeof description.fe];
         if (typeof value !== 'string' || value.trim() === '') {
-          throw new Error('Skill description.FE must contain a non-empty translation for ' + language);
+          throw new Error('Skill description.fe must contain a non-empty translation for ' + language);
         }
       }
-      const extraLanguages = Object.keys(description.FE).filter(language => !supportedLanguages.has(language));
+      const extraLanguages = Object.keys(description.fe).filter(language => !supportedLanguages.has(language));
       if (extraLanguages.length > 0) {
-        throw new Error('Skill description.FE contains unsupported languages: ' + extraLanguages.join(', '));
+        throw new Error('Skill description.fe contains unsupported languages: ' + extraLanguages.join(', '));
       }
     }
   }

@@ -4,7 +4,7 @@
  * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math [--locale en]
  *
  * Deliberately parses TypeScript source without executing textbook code.
- * Methodological descriptions are always English; optional FE text is localized.
+ * Methodological descriptions are always English; optional fe text is localized.
  * Fail closed on absent methodological descriptions: handwritten taxonomy remains the
  * authoritative staging source until every promoted entity is complete.
  */
@@ -111,22 +111,22 @@ function readEntity(file, kind) {
     if (!ts.isPropertyAssignment(prop)) fail('Unexpected dynamic description property: ' + file);
     return key(prop.name);
   });
-  if (new Set(keys).size !== keys.length || keys.some(k => k !== 'methodological' && k !== 'FE')) {
+  if (new Set(keys).size !== keys.length || keys.some(k => k !== 'methodological' && k !== 'fe')) {
     fail('Unexpected or duplicated description keys: ' + file);
   }
   const methodological = stringValue(getProperty(description, 'methodological')?.initializer, file + ':methodological');
 
-  const FE = getProperty(description, 'FE') ? dictionary(description, 'FE', file) : undefined;
+  const fe = getProperty(description, 'fe') ? dictionary(description, 'fe', file) : undefined;
   for (const locale of locales) {
     if (!name[locale]) fail('Missing required name locale ' + locale + ': ' + file);
-    if (FE && !FE[locale]) fail('Missing required FE locale ' + locale + ': ' + file);
+    if (fe && !fe[locale]) fail('Missing required fe locale ' + locale + ': ' + file);
   }
-  for (const map of FE ? [name, FE] : [name]) {
+  for (const map of fe ? [name, fe] : [name]) {
     for (const locale of Object.keys(map)) {
       if (!locales.includes(locale)) fail('Unexpected locale ' + locale + ': ' + file);
     }
   }
-  return { file, name: name[opts.locale], methodological, frontend: FE?.[opts.locale] };
+  return { file, name: name[opts.locale], methodological, frontend: fe?.[opts.locale] };
 }
 function subdirs(dir) {
   if (!fs.existsSync(dir)) return [];
@@ -174,7 +174,7 @@ function markdownLine(entity, level, output) {
   let text = '#'.repeat(level) + ' ' + entity.name + '\n\n[' + path.basename(entity.file) + '](' + encodeURI(link) + ')\n\n';
   text += '**Methodological description (English):** ' + entity.methodological + '\n\n';
   if (entity.frontend !== undefined) {
-    text += '**FE description (' + opts.locale + '):** ' + entity.frontend + '\n\n';
+    text += '**fe description (' + opts.locale + '):** ' + entity.frontend + '\n\n';
   }
   return text;
 }
@@ -201,7 +201,7 @@ for (const folder of subdirs(taxonomyRoot)) {
 if (!domains.length) fail('No domains found');
 const out = path.join(packageRoot, 'docs/generated/skills', 'taxonomy.' + opts.locale + '.md');
 let markdown = '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' + opts.locale + ')\n\n' +
-  '> Names and optional FE descriptions use the requested locale. Methodological descriptions remain canonical English, not translated.\n\n';
+  '> Names and optional fe descriptions use the requested locale. Methodological descriptions remain canonical English, not translated.\n\n';
 let groupCount = 0, skillCount = 0;
 for (const domain of domains) {
   markdown += markdownLine(domain, 2, out);

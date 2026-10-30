@@ -20,7 +20,7 @@ const dictionary = prefix => '{' + locales.map(locale => JSON.stringify(locale) 
 const code = (type, name, withFE = false) =>
   'export const fixture = build' + type + 'Config({ id: "10bbac60-7f3b-4d65-b926-875ee447397e", ' +
   'name:' + dictionary(name) + ', description: {methodological: ' + JSON.stringify('English methodological meaning of ' + name) +
-  (withFE ? ', FE:' + dictionary('Frontend ' + name) : '') + '}' +
+  (withFE ? ', fe:' + dictionary('Frontend ' + name) : '') + '}' +
   (type === 'SkillDomain' ? ',groupIds: {g:"id"}' : type === 'SkillGroup' ? ',skillIds: {s:"id"}' : '') + '});';
 const skillFile = path.join(taxonomy, 'd/g/skills/s.data.ts');
 const outputFile = locale => path.join(fixtureDir, 'docs/generated/skills', 'taxonomy.' + locale + '.md');
@@ -37,7 +37,7 @@ before(() => {
 });
 after(() => fs.rmSync(fixtureDir, { recursive: true, force: true }));
 
-test('generates locale names but keeps canonical methodological prose English when FE is absent', () => {
+test('generates locale names but keeps canonical methodological prose English when fe is absent', () => {
   for (const locale of ['en', 'uk']) {
     const result = run(locale);
     assert.equal(result.status, 0, result.stderr);
@@ -46,26 +46,26 @@ test('generates locale names but keeps canonical methodological prose English wh
     assert.match(output, new RegExp('Group ' + locale));
     assert.match(output, new RegExp('Skill ' + locale));
     assert.match(output, /Methodological description \(English\):.*English methodological meaning of Skill/);
-    assert.doesNotMatch(output, /FE description/);
+    assert.doesNotMatch(output, /fe description/);
     assert.match(output, /s\.data\.ts/);
   }
 });
 
-test('includes fully localized FE descriptions when provided', () => {
+test('includes fully localized fe descriptions when provided', () => {
   write(skillFile, code('Skill', 'Skill', true));
   const result = run('uk');
   assert.equal(result.status, 0, result.stderr);
   const output = fs.readFileSync(outputFile('uk'), 'utf8');
-  assert.match(output, /FE description \(uk\):.*Frontend Skill uk/);
+  assert.match(output, /fe description \(uk\):.*Frontend Skill uk/);
   assert.match(output, /Methodological description \(English\):.*English methodological meaning of Skill/);
 });
 
-test('rejects partial FE dictionaries and preserves the previous document', () => {
+test('rejects partial fe dictionaries and preserves the previous document', () => {
   const before = fs.readFileSync(outputFile('uk'), 'utf8');
   write(skillFile, code('Skill', 'Skill', true).replace(/"uk":"Frontend Skill uk",?/, ''));
   const result = run('uk');
   assert.notEqual(result.status, 0);
-  assert.match(result.stderr, /Missing required FE locale uk/);
+  assert.match(result.stderr, /Missing required fe locale uk/);
   assert.equal(fs.readFileSync(outputFile('uk'), 'utf8'), before);
 });
 
