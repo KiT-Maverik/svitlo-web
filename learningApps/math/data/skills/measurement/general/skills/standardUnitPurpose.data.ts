@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { general_Skills_Ids } from './index.ids';
 
 export const standardUnitPurpose_Skill_Data = buildSkillConfig({
-  id: general_Skills_Ids.standardUnitPurpose,
+  id: '543a4960-c0e1-43cf-911b-4c59b6c36571',
   name: {
     en: "Explaining why common measurement units are needed",
     lt: "Bendrų matavimo vienetų poreikio aiškinimas",

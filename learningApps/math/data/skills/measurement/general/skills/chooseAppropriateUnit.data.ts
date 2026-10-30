@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { general_Skills_Ids } from './index.ids';
 
 export const chooseAppropriateUnit_Skill_Data = buildSkillConfig({
-  id: general_Skills_Ids.chooseAppropriateUnit,
+  id: 'bc720d51-24c5-43a2-b034-0b58055a0efd',
   name: {
     en: "Choosing suitable units for length, mass or capacity",
     lt: "Tinkamų ilgio, masės ar talpos matavimo vienetų pasirinkimas",
