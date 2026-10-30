@@ -33,4 +33,5 @@ export const multipleRepresentations_Skill_Data = buildSkillConfig({
     pl: "Przekształcanie między reprezentacjami konkretnymi, schematycznymi, słownymi i symbolicznymi",
     uk: "Перехід між предметною моделлю, схемою, поясненням і математичним виразом",
   },
+  description: { methodological: "Physical models, diagrams, verbal descriptions, and symbolic expressions can encode the same mathematical relationship. A valid translation preserves quantities, the roles of values, and their relationships, not just the written numerals." },
 });

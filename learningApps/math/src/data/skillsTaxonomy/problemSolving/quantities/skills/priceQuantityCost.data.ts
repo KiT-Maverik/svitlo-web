@@ -33,4 +33,5 @@ export const priceQuantityCost_Skill_Data = buildSkillConfig({
     pl: "Powiązanie ceny, liczby i kosztu",
     uk: "Зв’язок ціни, кількості й вартості",
   },
+  description: { methodological: "When unit price is constant, total cost is price multiplied by quantity. The model must distinguish price per unit from the monetary total, and recognize that different price-and-quantity pairs can give the same total." },
 });

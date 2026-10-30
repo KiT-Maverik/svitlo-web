@@ -33,4 +33,5 @@ export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
     pl: "Sprawdzanie obliczeń inną metodą",
     uk: "Перевірка обчислення іншим способом",
   },
+  description: { methodological: "A quotient can be checked by multiplication, and a sum by subtraction; using an independent verification strategy can expose an error." },
 });
