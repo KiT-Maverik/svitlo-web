@@ -58,7 +58,7 @@ export const unknownMinuend_Skill_Data = buildSkillConfig({
       "he": "אפשר למצוא את המספר ההתחלתי החסר בחיסור על ידי חיבור המספר שמחסרים עם ההפרש.",
       "pl": "Możesz znaleźć nieznaną odjemną, dodając odjemnik do różnicy.",
       "uk": "Ти можеш знайти невідоме зменшуване, додавши від’ємник до різниці.",
-      "lt": "Gali rasti nežinomą turinį atimdami pridėdamas atėminį prie skirtumo.",
+      "lt": "Gali rasti nežinomą turinį, prie skirtumo pridėdamas atėminį.",
       "lv": "Tu vari atrast nezināmo mazināmo, pieskaitot atņemamo starpībai.",
       "et": "Sa saad leida puuduva vähendatava, liites lahutatava ja vahe.",
       "be": "Ты можаш знайсьці невядомае зьмяншаемае, дадаўшы аднімаемае да розьніцы.",
