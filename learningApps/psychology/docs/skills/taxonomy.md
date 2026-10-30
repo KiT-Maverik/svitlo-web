@@ -3517,304 +3517,539 @@ User-friendly description: Avoid treating group averages as fixed psychological 
 
 ### Mental Health and Clinical Science
 
+Slug: mentalHealthAndClinicalScience
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Clinical psychology investigates distress, impaired functioning, and evidence-based assessment and intervention. Learning these concepts does not authorize students to diagnose themselves or others, deliver therapy, or replace qualified professional care.
+Methodological description: Clinical psychology investigates distress, impaired functioning, and evidence-based assessment and intervention. Learning these concepts does not authorize students to diagnose themselves or others, deliver therapy, or replace qualified professional care.
+User-friendly description: Explore psychological wellbeing, mental-health difficulties and professional care through evidence.
 
 #### Wellbeing and Impairment
+
+Slug: wellbeingAndImpairment
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Psychological wellbeing is multidimensional, and the presence of an unpleasant emotion alone is not evidence of a disorder.
+Methodological description: Psychological wellbeing is multidimensional, and the presence of an unpleasant emotion alone is not evidence of a disorder.
+User-friendly description: Learn how wellbeing and distress differ from clinical impairment.
 
 ##### Psychological Wellbeing
 
+Slug: psychologicalWellbeing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain dimensions such as functioning, connection, and life satisfaction without assuming permanent happiness.
+Methodological description: Explain dimensions such as functioning, connection, and life satisfaction without assuming permanent happiness.
+User-friendly description: Recognize that psychological wellbeing involves more than feeling happy.
 
 ##### Distress versus Disorder
 
+Slug: distressVersusDisorder
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish common emotional responses from patterns involving persistence, severity, and functional impairment.
+Methodological description: Distinguish common emotional responses from patterns involving persistence, severity, and functional impairment.
+User-friendly description: Distinguish ordinary distress from persistent difficulties affecting daily functioning.
 
 ##### Mental Health Stigma
 
+Slug: mentalHealthStigma
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how stereotypes and discriminatory assumptions affect people seeking understanding or care.
+Methodological description: Analyze how stereotypes and discriminatory assumptions affect people seeking understanding or care.
+User-friendly description: Explore how stereotypes and stigma can harm people facing psychological difficulties.
 
 ##### Psychological Resilience
 
+Slug: psychologicalResilience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain adaptive functioning amid adversity as a dynamic process involving resources and context rather than an unchangeable personal trait.
+Methodological description: Explain adaptive functioning amid adversity as a dynamic process involving resources and context rather than an unchangeable personal trait.
+User-friendly description: Understand resilience as adaptation supported by personal and social resources.
 
 #### Patterns of Psychological Difficulty
+
+Slug: patternsOfPsychologicalDifficulty
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Clinical categories summarize heterogeneous symptom patterns; they should not be inferred from a few ordinary behaviors or applied as labels to peers.
+Methodological description: Clinical categories summarize heterogeneous symptom patterns; they should not be inferred from a few ordinary behaviors or applied as labels to peers.
+User-friendly description: Learn about broad patterns of difficulty without diagnosing people from everyday traits.
 
 ##### Anxiety-Related Difficulties
 
+Slug: anxietyRelatedDifficulties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how excessive fear or worry may interfere with functioning while distinguishing them from common situational anxiety.
+Methodological description: Explain how excessive fear or worry may interfere with functioning while distinguishing them from common situational anxiety.
+User-friendly description: Recognize when excessive fear or worry can affect functioning.
 
 ##### Depressive Difficulties
 
+Slug: depressiveDifficulties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe persistent changes in mood, interest, or functioning without confusing an episode of sadness with a diagnosis.
+Methodological description: Describe persistent changes in mood, interest, or functioning without confusing an episode of sadness with a diagnosis.
+User-friendly description: Understand why lasting depressive difficulties differ from a temporary sad mood.
 
 ##### Trauma-Related Responses
 
+Slug: traumaRelatedResponses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how exposure to threatening events can affect memory, arousal, and avoidance, with outcomes varying across people.
+Methodological description: Explain how exposure to threatening events can affect memory, arousal, and avoidance, with outcomes varying across people.
+User-friendly description: Explore how responses to threatening experiences vary among individuals.
 
 ##### Compulsive and Repetitive Patterns
 
+Slug: compulsiveAndRepetitivePatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish persistent unwanted thoughts and ritualized behavior associated with impairment from ordinary habits.
+Methodological description: Distinguish persistent unwanted thoughts and ritualized behavior associated with impairment from ordinary habits.
+User-friendly description: Distinguish impairing unwanted thoughts and rituals from ordinary routines.
 
 ##### Clinically Significant Neurodevelopmental Conditions
 
+Slug: clinicallySignificantNeurodevelopmentalConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how developmental-onset patterns of cognition, communication, or behavior may warrant clinical assessment when accompanied by meaningful impairment or support needs. Distinguish clinical evaluation from ordinary developmental variation without diagnosing people from isolated traits.
+Methodological description: Explain how developmental-onset patterns of cognition, communication, or behavior may warrant clinical assessment when accompanied by meaningful impairment or support needs. Distinguish clinical evaluation from ordinary developmental variation without diagnosing people from isolated traits.
+User-friendly description: Understand why developmental differences require context and professional assessment.
 
 #### Assessment and Professional Support
 
+Slug: assessmentAndProfessionalSupport
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Clinical decisions use trained judgment, validated measures, and context; ethical education focuses on how professional care works rather than practicing diagnosis.
+Methodological description: Clinical decisions use trained judgment, validated measures, and context; ethical education focuses on how professional care works rather than practicing diagnosis.
+User-friendly description: Discover how trained professionals assess difficulties and provide support.
 
 ##### Clinical Interview Purpose
 
+Slug: clinicalInterviewPurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain what a structured history can contribute to understanding a person's reported difficulties and context.
+Methodological description: Explain what a structured history can contribute to understanding a person's reported difficulties and context.
+User-friendly description: Explore what a clinical interview can reveal about a person's experiences and context.
 
 ##### Psychological Screening versus Diagnosis
 
+Slug: psychologicalScreeningVersusDiagnosis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish preliminary indicators from comprehensive professional assessment.
+Methodological description: Distinguish preliminary indicators from comprehensive professional assessment.
+User-friendly description: Distinguish an initial screening result from a professional diagnosis.
 
 ##### Clinical Formulation
 
+Slug: clinicalFormulation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain combining developmental, social, behavioral, and situational evidence into a provisional account of a person's difficulties.
+Methodological description: Explain combining developmental, social, behavioral, and situational evidence into a provisional account of a person's difficulties.
+User-friendly description: Understand how clinicians combine evidence to develop a provisional explanation.
 
 ##### Professional Roles and Referral
 
+Slug: professionalRolesAndReferral
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish roles of psychological practitioners and medical professionals and identify why appropriate referral may be needed.
+Methodological description: Distinguish roles of psychological practitioners and medical professionals and identify why appropriate referral may be needed.
+User-friendly description: Recognize when different kinds of qualified professionals or referrals are needed.
 
 #### Intervention Evidence and Ethics
+
+Slug: interventionEvidenceAndEthics
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Treatment approaches propose different mechanisms and require evaluation for effectiveness, suitability, potential harm, and professional standards.
+Methodological description: Treatment approaches propose different mechanisms and require evaluation for effectiveness, suitability, potential harm, and professional standards.
+User-friendly description: Explore why treatment claims require evidence, safeguards and professional ethics.
 
 ##### Cognitive Behavioral Interventions
 
+Slug: cognitiveBehavioralInterventions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how changing learned response patterns and examining interpretations can support psychological treatment without treating the explanation as therapy training.
+Methodological description: Explain how changing learned response patterns and examining interpretations can support psychological treatment without treating the explanation as therapy training.
+User-friendly description: Understand the principles behind cognitive and behavioral treatment approaches.
 
 ##### Behavioral Exposure Principles
 
+Slug: behavioralExposurePrinciples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the rationale of supported, appropriately supervised exposure approaches while avoiding instructions for unsupervised self-treatment.
+Methodological description: Explain the rationale of supported, appropriately supervised exposure approaches while avoiding instructions for unsupervised self-treatment.
+User-friendly description: Learn why supported exposure approaches require suitable professional oversight.
 
 ##### Therapeutic Alliance
 
+Slug: therapeuticAlliance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why collaboration, trust, and agreement on goals matter for outcomes across psychological therapies.
+Methodological description: Explain why collaboration, trust, and agreement on goals matter for outcomes across psychological therapies.
+User-friendly description: Recognize how trust and cooperation contribute to therapeutic care.
 
 ##### Evaluating Treatment Claims
 
+Slug: evaluatingTreatmentClaims
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess evidence from controlled studies, meaningful outcomes, adverse effects, and follow-up rather than testimonials or guaranteed-cure marketing.
+Methodological description: Assess evidence from controlled studies, meaningful outcomes, adverse effects, and follow-up rather than testimonials or guaranteed-cure marketing.
+User-friendly description: Evaluate treatment claims using studies and outcomes rather than testimonials.
 
 ### Applied Psychology
+
+Slug: appliedPsychology
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
-Psychological knowledge informs educational, occupational, health, design, and community settings. Applications translate evidence about people into context-sensitive decisions without claiming that a single intervention suits everyone.
+Methodological description: Psychological knowledge informs educational, occupational, health, design, and community settings. Applications translate evidence about people into context-sensitive decisions without claiming that a single intervention suits everyone.
+User-friendly description: Explore how psychological evidence informs education, workplaces, health and communities.
 
 #### Learning Environments
+
+Slug: learningEnvironments
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Educational psychology examines attention, feedback, motivation, and differences among learners to understand conditions for effective learning.
+Methodological description: Educational psychology examines attention, feedback, motivation, and differences among learners to understand conditions for effective learning.
+User-friendly description: Discover how attention, motivation and feedback affect opportunities to learn.
 
 ##### Learning Environment Design
 
+Slug: learningEnvironmentDesign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how distraction, task demands, and instructional supports affect opportunities to learn.
+Methodological description: Analyze how distraction, task demands, and instructional supports affect opportunities to learn.
+User-friendly description: Consider how distractions, supports and task demands shape a learning setting.
 
 ##### Feedback in Education
 
+Slug: feedbackInEducation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish informative performance feedback from judgments about a learner's fixed ability.
+Methodological description: Distinguish informative performance feedback from judgments about a learner's fixed ability.
+User-friendly description: Recognize feedback that helps improve performance rather than labeling ability.
 
 ##### Motivational Climate
 
+Slug: motivationalClimate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how autonomy, belonging, and evaluation pressures influence learner engagement.
+Methodological description: Explain how autonomy, belonging, and evaluation pressures influence learner engagement.
+User-friendly description: Explore how autonomy, belonging and pressure affect motivation to learn.
 
 #### Work and Organizations
 
+Slug: workAndOrganizations
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Individual motivation, coordination, organizational culture, and workplace design shape performance and wellbeing at work.
+Methodological description: Individual motivation, coordination, organizational culture, and workplace design shape performance and wellbeing at work.
+User-friendly description: Learn how psychology explains cooperation, stress and motivation at work.
 
 ##### Work Motivation
 
+Slug: workMotivation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how perceived fairness, autonomy, incentives, and meaningful goals influence workplace effort.
+Methodological description: Analyze how perceived fairness, autonomy, incentives, and meaningful goals influence workplace effort.
+User-friendly description: Explore why autonomy, fairness and clear goals affect motivation at work.
 
 ##### Team Coordination
 
+Slug: teamCoordination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how shared expectations, information exchange, and role clarity affect collective performance.
+Methodological description: Explain how shared expectations, information exchange, and role clarity affect collective performance.
+User-friendly description: Understand how shared roles and information help teams work effectively.
 
 ##### Personnel Assessment Fairness
 
+Slug: personnelAssessmentFairness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate reliability, job relevance, and discriminatory risk in employment selection measures.
+Methodological description: Evaluate reliability, job relevance, and discriminatory risk in employment selection measures.
+User-friendly description: Evaluate whether employee assessments are reliable, relevant and fair.
 
 ##### Organizational Stressors
 
+Slug: organizationalStressors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how workload, lack of control, and interpersonal conditions contribute to work-related strain.
+Methodological description: Identify how workload, lack of control, and interpersonal conditions contribute to work-related strain.
+User-friendly description: Recognize workplace conditions that can contribute to stress.
 
 #### Health Behavior
 
+Slug: healthBehavior
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Health psychology examines how beliefs, routines, social surroundings, and perceived barriers affect health-related decisions, without replacing medical guidance.
+Methodological description: Health psychology examines how beliefs, routines, social surroundings, and perceived barriers affect health-related decisions, without replacing medical guidance.
+User-friendly description: Discover how beliefs and social settings influence health-related choices.
 
 ##### Health Beliefs and Action
 
+Slug: healthBeliefsAndAction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why perceived risk, expected benefit, and practical barriers influence preventive behavior.
+Methodological description: Explain why perceived risk, expected benefit, and practical barriers influence preventive behavior.
+User-friendly description: Explore how perceived risk, benefits and barriers influence preventive actions.
 
 ##### Behavior Change Interventions
 
+Slug: behaviorChangeInterventions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate psychological mechanisms behind reminders, planning, feedback, and social support for behavior change.
+Methodological description: Evaluate psychological mechanisms behind reminders, planning, feedback, and social support for behavior change.
+User-friendly description: Examine how reminders, planning and feedback can support behavior change.
 
 ##### Social Support and Health
 
+Slug: socialSupportAndHealth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how perceived and available support may influence coping and health-related behavior.
+Methodological description: Analyze how perceived and available support may influence coping and health-related behavior.
+User-friendly description: Recognize the different ways social support can affect coping and health behavior.
 
 ##### Adherence to Care Plans
 
+Slug: adherenceToCarePlans
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain psychological factors affecting follow-through on professional recommendations without independently prescribing treatment.
+Methodological description: Explain psychological factors affecting follow-through on professional recommendations without independently prescribing treatment.
+User-friendly description: Explore why people may struggle to follow professional care recommendations.
 
 #### Human Factors and User Research
 
+Slug: humanFactorsAndUserResearch
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Design decisions benefit from evidence about human attention, memory, perception, workload, and error; implementation remains owned by engineering or informatics.
+Methodological description: Design decisions benefit from evidence about human attention, memory, perception, workload, and error; implementation remains owned by engineering or informatics.
+User-friendly description: Learn how attention, memory and perception inform the study of usable systems.
 
 ##### Human Error and System Design
 
+Slug: humanErrorAndSystemDesign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how confusing feedback and task demands create foreseeable mistakes rather than attributing all failure to careless users.
+Methodological description: Analyze how confusing feedback and task demands create foreseeable mistakes rather than attributing all failure to careless users.
+User-friendly description: Recognize how confusing systems make mistakes more likely even for careful users.
 
 ##### Cognitive Load in Interfaces
 
+Slug: cognitiveLoadInInterfaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how limited working memory and divided attention influence task performance with complex controls.
+Methodological description: Explain how limited working memory and divided attention influence task performance with complex controls.
+User-friendly description: Explore how limited attention and memory affect the use of complex interfaces.
 
 ##### Usability Research Methods
 
+Slug: usabilityResearchMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate observation, task completion evidence, and user reports as complementary sources about interaction difficulty.
+Methodological description: Evaluate observation, task completion evidence, and user reports as complementary sources about interaction difficulty.
+User-friendly description: Compare observations, task results and user reports when investigating usability.
 
 ##### Accessible Interaction Psychology
 
+Slug: accessibleInteractionPsychology
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why sensory, cognitive, and motor variation must inform the interpretation of user research and design constraints.
+Methodological description: Explain why sensory, cognitive, and motor variation must inform the interpretation of user research and design constraints.
+User-friendly description: Understand why user research must include different abilities and ways of interacting.
 
 #### Community, Media, and Environment
+
+Slug: communityMediaAndEnvironment
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Social structures and mediated information influence beliefs, cooperation, and behavior beyond a single interpersonal exchange.
+Methodological description: Social structures and mediated information influence beliefs, cooperation, and behavior beyond a single interpersonal exchange.
+User-friendly description: Explore how media and community conditions shape shared behavior and beliefs.
 
 ##### Media Influence on Judgment
 
+Slug: mediaInfluenceOnJudgment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how repetition, salience, and selective exposure affect perceived norms or risks.
+Methodological description: Analyze how repetition, salience, and selective exposure affect perceived norms or risks.
+User-friendly description: Recognize how repeated or prominent media messages influence perceived risks.
 
 ##### Social Norms in Communities
 
+Slug: socialNormsInCommunities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how descriptive and injunctive norms can shape behavior in shared settings.
+Methodological description: Explain how descriptive and injunctive norms can shape behavior in shared settings.
+User-friendly description: Distinguish what people commonly do from what others expect them to do.
 
 ##### Environmental Behavior Change
 
+Slug: environmentalBehaviorChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate psychological barriers and enabling conditions for pro-environmental choices.
+Methodological description: Evaluate psychological barriers and enabling conditions for pro-environmental choices.
+User-friendly description: Explore psychological obstacles and supports for environmentally responsible behavior.
 
 ##### Community Intervention Evaluation
 
+Slug: communityInterventionEvaluation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether a population-level behavior-change initiative demonstrates measurable effects without assuming a persuasive message caused them.
+Methodological description: Assess whether a population-level behavior-change initiative demonstrates measurable effects without assuming a persuasive message caused them.
+User-friendly description: Evaluate whether a community program measurably changed behavior.
