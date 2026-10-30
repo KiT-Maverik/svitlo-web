@@ -105,6 +105,7 @@ test('update preserves entity UUID, existing locales and unrelated source',()=>w
   assert.equal(f.run('--apply').status,0);
   const p='music/skills/hearRhythm.data.ts',id=uuid(source(f,p));
   const geometry=source(f,'geometry/geometry.data.ts');
+  const sourceBefore=source(f,p);
   f.edit(s=>s.replace('Action: create\nStatus: implemented\n\n[hearRhythm.data.ts]',
     'Action: update\nStatus: implemented\n\n[hearRhythm.data.ts]')
     .replace('Definition of Hear Rhythm.','Revised concept of Hear Rhythm.'));
@@ -115,6 +116,8 @@ test('update preserves entity UUID, existing locales and unrelated source',()=>w
   assert.equal(r.status,0,r.stderr);
   assert.equal(uuid(source(f,p)),id);
   assert.match(source(f,p),/Revised concept of Hear Rhythm/);
+  assert.equal(source(f,p).replace('Revised concept of Hear Rhythm.','Definition of Hear Rhythm.'),sourceBefore,
+    'Updating a stable Skill changes only the approved text, not its layout');
   assert.equal(source(f,'geometry/geometry.data.ts'),geometry);
 }));
 
@@ -140,8 +143,8 @@ test('duplicate slug across Domains or entity kinds fails before write',()=>with
 test('delete actions are blocked even if the legacy authorization switch is present',()=>withFixture(f=>{
   assert.equal(f.run('--apply').status,0);
   const before=source(f,'music/music.data.ts');
-  f.edit(s=>s.replace('Action: create\nStatus: implemented\n\n[music.data.ts]',
-    'Action: delete\nStatus: implemented\n\n[music.data.ts]'));
+  f.edit(s=>s.replace('Slug: music\nAction: create\nStatus: implemented',
+    'Slug: music\nAction: delete\nStatus: implemented'));
   const r=f.run('--apply','--allow-delete');
   assert.notEqual(r.status,0);
   assert.match(r.stderr,/Deletion disabled/);
