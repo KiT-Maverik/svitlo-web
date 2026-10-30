@@ -33,4 +33,5 @@ export const basicOrdinal_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie pozycji w kolejności",
     uk: "Визначення порядкового номера об’єкта",
   },
+  description: { methodological: "An ordinal number gives an object's position in an ordered sequence relative to a specified direction. It does not give the set's cardinality: changing the order can change positions without changing the total." },
 });

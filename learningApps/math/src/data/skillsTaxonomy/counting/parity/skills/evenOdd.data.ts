@@ -33,4 +33,5 @@ export const evenOdd_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie liczb parzystych i nieparzystych przez dobieranie w pary",
     uk: "Розрізнення парних і непарних чисел через утворення пар",
   },
+  description: { methodological: "An even number of objects can be divided into disjoint pairs with none left over; an odd number leaves one. This criterion for integer parity is independent of object arrangement or appearance." },
 });

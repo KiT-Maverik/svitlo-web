@@ -33,4 +33,5 @@ export const readWrite100_Skill_Data = buildSkillConfig({
     pl: "Odczytywanie i zapisywanie liczb do 100",
     uk: "Читання й запис чисел до 100",
   },
+  description: { methodological: "A two-digit decimal numeral represents tens and ones according to their positions. Reading, writing, and converting between spoken and written forms must preserve the same numerical value." },
 });

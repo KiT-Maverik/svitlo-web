@@ -33,4 +33,5 @@ export const digits09_Skill_Data = buildSkillConfig({
     pl: "Cyfry 0–9 i różnica między cyfrą a liczbą",
     uk: "Цифри 0–9 і відмінність цифри від числа",
   },
+  description: { methodological: "A digit is a symbol in decimal notation, whereas a number is a mathematical value expressible using one or more digits or another representation. Distinguish the written sign from quantity or numerical value." },
 });
