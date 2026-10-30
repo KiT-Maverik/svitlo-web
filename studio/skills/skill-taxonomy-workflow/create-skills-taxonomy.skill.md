@@ -8,7 +8,7 @@ Read [Skill Taxonomy Workflow](./README.md) for the staged-to-code authority tra
 
 ## NON-NEGOTIABLE START CONDITIONS
 
-1. **Package root:** identify the real standalone textbook/application root, not the monorepo root. Inspect the actual repository rather than assuming an example path.
+1. **Package root:** identify the real standalone textbook/application root, not the monorepo root. Inspect the actual repository rather than assuming an example path. The editable source is `<PackageRoot>/docs/skills/taxonomy.md`; the canonical destination for **future/new** Code is `<PackageRoot>/Data/skills/`. Existing Mathematics Code in `learningApps/math/src/data/skillsTaxonomy/` is legacy and has **not** been migrated. This authoring Skill does not generate or relocate Code.
 2. **Scope:** establish the subject, intended breadth, exclusions, working language and whether the taxonomy is new or an approved revision.
 3. **Evidence:** examine credible subject references and any standards the editor explicitly requests; do not silently impose a country, age, grade, course sequence or national curriculum.
 4. **Existing state:** inspect `<PackageRoot>/docs/skills/taxonomy.md`, existing `*.data.ts` source files, repository instructions including applicable `AGENTS.md`, and any existing **`<PackageRoot>/docs/history/skill-taxonomy-review.md`**. The history explains past decisions but cannot override the canonical taxonomy. Preserve approved identities, names, descriptions and placements unless explicitly authorized to revise them.
