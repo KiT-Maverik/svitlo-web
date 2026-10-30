@@ -2276,500 +2276,885 @@ User-friendly description: See how stars and stellar explosions spread elements 
 
 ### Exoplanetary Systems
 
+Slug: exoplanetarySystems
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Planetary systems beyond the Sun provide evidence about the diversity of worlds and formation outcomes. Detection, physical inference and habitability are separated to avoid treating an apparent signal as proof of a specific environment.
+Methodological description: Planetary systems beyond the Sun provide evidence about the diversity of worlds and formation outcomes. Detection, physical inference and habitability are separated to avoid treating an apparent signal as proof of a specific environment.
+User-friendly description: Explore planets beyond our Solar System and what their discoveries reveal about other planetary systems.
 
 #### Exoplanet Detection
+
+Slug: exoplanetDetection
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Finding planets around distant stars relies on measured effects and each method has a characteristic sensitivity and ambiguity.
+Methodological description: Finding planets around distant stars relies on measured effects and each method has a characteristic sensitivity and ambiguity.
+User-friendly description: Discover the methods astronomers use to find planets around distant stars.
 
 ##### Transit Detection
 
+Slug: transitDetection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how repeated stellar dimming can indicate a planet crossing a star's disk and why geometry matters.
+Methodological description: Explain how repeated stellar dimming can indicate a planet crossing a star's disk and why geometry matters.
+User-friendly description: Recognize how a repeating dip in starlight may reveal a planet passing in front of its star.
 
 ##### Radial-Velocity Detection
 
+Slug: radialVelocityDetection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret periodic stellar spectral shifts as evidence for an orbiting companion and constrain its mass.
+Methodological description: Interpret periodic stellar spectral shifts as evidence for an orbiting companion and constrain its mass.
+User-friendly description: Use a star's changing spectral motion to infer the pull of an orbiting planet.
 
 ##### Direct Imaging
 
+Slug: directImaging
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain when a planet can be resolved separately from its host star and why brightness contrast is challenging.
+Methodological description: Explain when a planet can be resolved separately from its host star and why brightness contrast is challenging.
+User-friendly description: Explore why photographing a planet beside its bright host star is difficult.
 
 ##### Gravitational Microlensing
 
+Slug: gravitationalMicrolensing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how temporary lensing signatures can reveal otherwise difficult-to-detect planetary companions.
+Methodological description: Explain how temporary lensing signatures can reveal otherwise difficult-to-detect planetary companions.
+User-friendly description: Understand how gravity can briefly magnify a distant star's light and reveal a planet.
 
 #### Exoplanet Characterization
+
+Slug: exoplanetCharacterization
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Planet properties are inferred by combining signals and interpreting assumptions, with important differences between measured quantities and theoretical models.
+Methodological description: Planet properties are inferred by combining signals and interpreting assumptions, with important differences between measured quantities and theoretical models.
+User-friendly description: Learn how researchers infer the properties of exoplanets from indirect observations.
 
 ##### Exoplanet Radius
 
+Slug: exoplanetRadius
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer a planet's size from transit or other observations and explain its dependence on stellar parameters.
+Methodological description: Infer a planet's size from transit or other observations and explain its dependence on stellar parameters.
+User-friendly description: Estimate a distant planet's size using a transit and information about its star.
 
 ##### Exoplanet Mass
 
+Slug: exoplanetMass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer a planet's mass from orbital effects, including limits set by viewing geometry and models.
+Methodological description: Infer a planet's mass from orbital effects, including limits set by viewing geometry and models.
+User-friendly description: Explore how a planet's gravitational effects help estimate its mass.
 
 ##### Exoplanet Bulk Composition
 
+Slug: exoplanetBulkComposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate a planet's mass-radius behavior to plausible internal materials while recognizing model degeneracy.
+Methodological description: Relate a planet's mass-radius behavior to plausible internal materials while recognizing model degeneracy.
+User-friendly description: Use mass and radius to investigate possible planetary materials without assuming one answer.
 
 ##### Exoplanet Atmospheric Spectra
 
+Slug: exoplanetAtmosphericSpectra
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret transit or emission spectra as evidence about atmospheric constituents and conditions.
+Methodological description: Interpret transit or emission spectra as evidence about atmospheric constituents and conditions.
+User-friendly description: See how a planet's spectrum provides clues to its atmosphere.
 
 ##### Exoplanet Orbital Properties
 
+Slug: exoplanetOrbitalProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer or compare orbital period, eccentricity and star–planet distance using available data.
+Methodological description: Infer or compare orbital period, eccentricity and star–planet distance using available data.
+User-friendly description: Compare the periods, shapes and sizes of exoplanet orbits.
 
 #### System Diversity
+
+Slug: systemDiversity
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Comparing observed systems reveals patterns and exceptions relative to Solar System expectations.
+Methodological description: Comparing observed systems reveals patterns and exceptions relative to Solar System expectations.
+User-friendly description: Discover how planetary systems can differ greatly from our own.
 
 ##### Exoplanet System Architectures
 
+Slug: exoplanetSystemArchitectures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare tightly packed, resonant, eccentric and other planetary arrangements using orbital evidence.
+Methodological description: Compare tightly packed, resonant, eccentric and other planetary arrangements using orbital evidence.
+User-friendly description: Compare systems with tightly packed planets, unusual orbits or orbital resonances.
 
 ##### Planetary Migration
 
+Slug: planetaryMigration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how interactions with disks or other planets can change orbital locations after formation.
+Methodological description: Explain how interactions with disks or other planets can change orbital locations after formation.
+User-friendly description: Explore how planets may move to different orbits after forming.
 
 ##### Circumstellar Habitable Zones
 
+Slug: circumstellarHabitableZones
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the range of stellar irradiation permitting surface liquid water under stated atmospheric assumptions.
+Methodological description: Interpret the range of stellar irradiation permitting surface liquid water under stated atmospheric assumptions.
+User-friendly description: Understand what a star's habitable zone does—and does not—tell us about liquid water.
 
 ##### Limits of Habitability Indicators
 
+Slug: limitsOfHabitabilityIndicators
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate why receiving suitable starlight or being Earth-sized does not establish a habitable world.
+Methodological description: Evaluate why receiving suitable starlight or being Earth-sized does not establish a habitable world.
+User-friendly description: Recognize why an Earth-sized planet in the right orbit is not automatically habitable.
 
 ### Interstellar and Galactic Astronomy
+
+Slug: interstellarAndGalacticAstronomy
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 16
 
 [Not implemented](#)
 
-This domain investigates matter between stars and the structure, dynamics and transformations of galaxies. The Milky Way is one case, while distant galaxies reveal different environments and stages of evolution.
+Methodological description: This domain investigates matter between stars and the structure, dynamics and transformations of galaxies. The Milky Way is one case, while distant galaxies reveal different environments and stages of evolution.
+User-friendly description: Explore the matter between stars and how galaxies form, behave and evolve.
 
 #### Interstellar Matter
 
+Slug: interstellarMatter
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Gas, dust, radiation and magnetic fields between stars are active participants in the cycling of matter across galaxies.
+Methodological description: Gas, dust, radiation and magnetic fields between stars are active participants in the cycling of matter across galaxies.
+User-friendly description: Discover how gas, dust and magnetic fields influence the space between stars.
 
 ##### Interstellar Gas
 
+Slug: interstellarGas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret evidence for diffuse ionized, neutral and molecular gas and the conditions associated with these phases.
+Methodological description: Interpret evidence for diffuse ionized, neutral and molecular gas and the conditions associated with these phases.
+User-friendly description: Distinguish different forms of gas found between stars.
 
 ##### Interstellar Dust
 
+Slug: interstellarDust
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
+Methodological description: Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
+User-friendly description: See how interstellar dust dims, reddens and re-emits starlight.
 
 ##### Nebulae
 
+Slug: nebulae
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish emission, reflection and dark nebulae by their observable mechanisms and relation to surrounding light sources.
+Methodological description: Distinguish emission, reflection and dark nebulae by their observable mechanisms and relation to surrounding light sources.
+User-friendly description: Recognize different kinds of nebulae by the way they interact with light.
 
 ##### Interstellar Chemical Cycling
 
+Slug: interstellarChemicalCycling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how stellar outflows and explosive events replenish and alter material available for new star formation.
+Methodological description: Explain how stellar outflows and explosive events replenish and alter material available for new star formation.
+User-friendly description: Explore how dying stars return material to space for new generations of stars.
 
 #### The Milky Way
 
+Slug: theMilkyWay
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Our galaxy is mapped from an interior viewpoint by combining stellar distributions, gas, motions and distance measurements.
+Methodological description: Our galaxy is mapped from an interior viewpoint by combining stellar distributions, gas, motions and distance measurements.
+User-friendly description: Learn how astronomers map the Milky Way from inside it.
 
 ##### Milky Way Structure
 
+Slug: milkyWayStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the disk, spiral structure, bulge and halo and explain how they are inferred from our position within the galaxy.
+Methodological description: Interpret the disk, spiral structure, bulge and halo and explain how they are inferred from our position within the galaxy.
+User-friendly description: Identify the disk, central bulge and halo of our galaxy.
 
 ##### Solar System's Galactic Location
 
+Slug: solarSystemsGalacticLocation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate the Sun approximately within the Galactic disk, distinguishing its local spiral-arm environment from the Galactic center.
+Methodological description: Locate the Sun approximately within the Galactic disk, distinguishing its local spiral-arm environment from the Galactic center.
+User-friendly description: Locate the Solar System within the Milky Way rather than at its centre.
 
 ##### Galactic Rotation
 
+Slug: galacticRotation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how orbital motions and measured velocities reveal the distribution of mass in the Milky Way.
+Methodological description: Explain how orbital motions and measured velocities reveal the distribution of mass in the Milky Way.
+User-friendly description: Use the motion of stars and gas to learn how mass is distributed in our galaxy.
 
 ##### Star Clusters
 
+Slug: starClusters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish open and globular clusters by structure, typical populations and galactic environments.
+Methodological description: Distinguish open and globular clusters by structure, typical populations and galactic environments.
+User-friendly description: Compare open and globular star clusters and where they are found.
 
 #### Galaxies and Their Evolution
 
+Slug: galaxiesAndTheirEvolution
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Galaxies differ in morphology, stellar content, formation history and interaction, rather than representing fixed shapes throughout cosmic time.
+Methodological description: Galaxies differ in morphology, stellar content, formation history and interaction, rather than representing fixed shapes throughout cosmic time.
+User-friendly description: Explore different galaxy shapes and how galaxies change over time.
 
 ##### Galaxy Morphology
 
+Slug: galaxyMorphology
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish spiral, elliptical and irregular galaxies while recognizing that visual shape alone does not determine history.
+Methodological description: Distinguish spiral, elliptical and irregular galaxies while recognizing that visual shape alone does not determine history.
+User-friendly description: Recognize spiral, elliptical and irregular galaxies without treating shape as their full history.
 
 ##### Galaxy Stellar Populations
 
+Slug: galaxyStellarPopulations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer differences in star formation and past evolution from stellar colors, spectra and age indicators.
+Methodological description: Infer differences in star formation and past evolution from stellar colors, spectra and age indicators.
+User-friendly description: Use a galaxy's light to infer differences in its stars and star-formation history.
 
 ##### Galaxy Interactions and Mergers
 
+Slug: galaxyInteractionsAndMergers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how gravitational encounters alter galaxy structures, gas and star formation.
+Methodological description: Explain how gravitational encounters alter galaxy structures, gas and star formation.
+User-friendly description: See how encounters and mergers can reshape galaxies and trigger new stars.
 
 ##### Galaxy Groups and Clusters
 
+Slug: galaxyGroupsAndClusters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret gravitationally associated galaxy populations and their larger-scale environments.
+Methodological description: Interpret gravitationally associated galaxy populations and their larger-scale environments.
+User-friendly description: Discover how gravity gathers galaxies into groups and clusters.
 
 #### Active Galactic Nuclei
+
+Slug: activeGalacticNuclei
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-In some galaxies, accretion onto a central supermassive black hole generates radiation and outflows that differ from normal starlight.
+Methodological description: In some galaxies, accretion onto a central supermassive black hole generates radiation and outflows that differ from normal starlight.
+User-friendly description: Investigate galaxy centres where material falling toward black holes generates immense energy.
 
 ##### Supermassive Black Holes
 
+Slug: supermassiveBlackHoles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret evidence for compact massive objects in galaxy centers and their influence on nearby orbits.
+Methodological description: Interpret evidence for compact massive objects in galaxy centers and their influence on nearby orbits.
+User-friendly description: Explore the evidence for massive black holes at the centres of galaxies.
 
 ##### Accretion-Powered Emission
 
+Slug: accretionPoweredEmission
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how infalling material can release substantial radiation before crossing an event horizon.
+Methodological description: Explain how infalling material can release substantial radiation before crossing an event horizon.
+User-friendly description: Learn how material falling toward a black hole can produce powerful radiation.
 
 ##### Quasars
 
+Slug: quasars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify quasars as luminous manifestations of active galactic nuclei, including the implications of their cosmological distances.
+Methodological description: Identify quasars as luminous manifestations of active galactic nuclei, including the implications of their cosmological distances.
+User-friendly description: Recognize quasars as extremely bright examples of active galactic nuclei.
 
 ##### Relativistic Jets
 
+Slug: relativisticJets
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the observed collimated outflows in some active galaxies and the role of viewing geometry.
+Methodological description: Explain the observed collimated outflows in some active galaxies and the role of viewing geometry.
+User-friendly description: Explore the narrow, fast-moving jets produced by some active galaxies.
 
 ### Cosmology
+
+Slug: cosmology
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 17
 
 [Not implemented](#)
 
-Cosmology tests models for the Universe's large-scale composition, history and expansion using observations with known horizons and uncertainties. Unresolved questions must remain distinguishable from established evidence.
+Methodological description: Cosmology tests models for the Universe's large-scale composition, history and expansion using observations with known horizons and uncertainties. Unresolved questions must remain distinguishable from established evidence.
+User-friendly description: Investigate the Universe's expansion, history and large-scale structure using astronomical evidence.
 
 #### Cosmic Scales
 
+Slug: cosmicScales
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Distances and times become linked by the finite speed of light, which limits how much of the Universe can be observed.
+Methodological description: Distances and times become linked by the finite speed of light, which limits how much of the Universe can be observed.
+User-friendly description: Explore the immense distances and times involved in observing the cosmos.
 
 ##### Observable Universe
 
+Slug: observableUniverse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the observable region set by signal travel and cosmic history from claims about the entire Universe.
+Methodological description: Distinguish the observable region set by signal travel and cosmic history from claims about the entire Universe.
+User-friendly description: Understand why the observable Universe is not necessarily the whole Universe.
 
 ##### Lookback Time
 
+Slug: lookbackTime
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why distant observations show objects at earlier cosmic epochs.
+Methodological description: Explain why distant observations show objects at earlier cosmic epochs.
+User-friendly description: Discover why looking farther into space also means looking into the past.
 
 ##### Cosmic Distance Measures
 
+Slug: cosmicDistanceMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish common cosmological distance concepts when relating observed brightness, redshift and scale.
+Methodological description: Distinguish common cosmological distance concepts when relating observed brightness, redshift and scale.
+User-friendly description: Compare the different ways cosmologists define and measure distance.
 
 ##### Cosmic Horizons
 
+Slug: cosmicHorizons
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret limits on observable or causally connected regions without treating them as physical walls.
+Methodological description: Interpret limits on observable or causally connected regions without treating them as physical walls.
+User-friendly description: Explore limits on how far signals can reach us or influence other regions.
 
 #### Cosmic Expansion
 
+Slug: cosmicExpansion
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Large-scale redshift patterns support an evolving cosmic geometry, not an ordinary explosion into pre-existing empty space.
+Methodological description: Large-scale redshift patterns support an evolving cosmic geometry, not an ordinary explosion into pre-existing empty space.
+User-friendly description: Learn what observations reveal about the expansion of the Universe.
 
 ##### Cosmological Redshift
 
+Slug: cosmologicalRedshift
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain wavelength stretching associated with the expansion of space, distinguishing it from local Doppler motion.
+Methodological description: Explain wavelength stretching associated with the expansion of space, distinguishing it from local Doppler motion.
+User-friendly description: Understand how expanding space stretches the wavelengths of travelling light.
 
 ##### Hubble–Lemaître Relation
 
+Slug: hubbleLemaitreRelation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate galaxy recession measurements and distance to empirical evidence for expansion within its domain of applicability.
+Methodological description: Relate galaxy recession measurements and distance to empirical evidence for expansion within its domain of applicability.
+User-friendly description: Relate measured galaxy distances and redshifts to evidence for cosmic expansion.
 
 ##### Expansion Versus Bound Systems
 
+Slug: expansionVersusBoundSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why the expansion of the Universe does not automatically enlarge gravitationally bound local systems.
+Methodological description: Explain why the expansion of the Universe does not automatically enlarge gravitationally bound local systems.
+User-friendly description: See why expanding space does not simply stretch planets, stars or galaxies apart.
 
 ##### Cosmological Models
 
+Slug: cosmologicalModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the predictions and assumptions of simplified expanding-Universe models against observations.
+Methodological description: Compare the predictions and assumptions of simplified expanding-Universe models against observations.
+User-friendly description: Compare models of cosmic expansion with their assumptions and predictions.
 
 #### Early-Universe Models and Evidence
+
+Slug: earlyUniverseModelsAndEvidence
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-The early hot and dense Universe is reconstructed from relic radiation, primordial abundances and theoretical models whose predictions and evidence have different degrees of support.
+Methodological description: The early hot and dense Universe is reconstructed from relic radiation, primordial abundances and theoretical models whose predictions and evidence have different degrees of support.
+User-friendly description: Explore the evidence used to reconstruct the early, hot Universe.
 
 ##### Hot Big Bang Model
 
+Slug: hotBigBangModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the evidence-supported early evolution of the observable Universe without claiming that the model fully explains its ultimate origin.
+Methodological description: Explain the evidence-supported early evolution of the observable Universe without claiming that the model fully explains its ultimate origin.
+User-friendly description: Discover what the hot Big Bang model explains—and what it does not establish.
 
 ##### Cosmic Microwave Background
 
+Slug: cosmicMicrowaveBackground
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret relic microwave radiation and its spatial variations as evidence about the early Universe.
+Methodological description: Interpret relic microwave radiation and its spatial variations as evidence about the early Universe.
+User-friendly description: Investigate the faint microwave glow left from the early Universe.
 
 ##### Primordial Nucleosynthesis
 
+Slug: primordialNucleosynthesis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the predicted formation of light nuclei and why their observed abundances test early-Universe models.
+Methodological description: Explain the predicted formation of light nuclei and why their observed abundances test early-Universe models.
+User-friendly description: See how early-universe models predict the amounts of light elements.
 
 ##### Cosmic Inflation
 
+Slug: cosmicInflation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the hypothesized early accelerated-expansion phase, distinguish its predicted consequences from direct observation and evaluate what existing cosmic evidence can and cannot establish.
+Methodological description: Explain the hypothesized early accelerated-expansion phase, distinguish its predicted consequences from direct observation and evaluate what existing cosmic evidence can and cannot establish.
+User-friendly description: Explore the idea of cosmic inflation and distinguish predictions from confirmed evidence.
 
 #### Cosmic Components and Constraints
+
+Slug: cosmicComponentsAndConstraints
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Gravitational and expansion measurements constrain otherwise unseen components, while cosmological parameters and theoretical uncertainties limit the interpretations that can be supported by available evidence.
+Methodological description: Gravitational and expansion measurements constrain otherwise unseen components, while cosmological parameters and theoretical uncertainties limit the interpretations that can be supported by available evidence.
+User-friendly description: Learn how cosmic measurements point to components and questions we cannot yet fully explain.
 
 ##### Dark Matter Evidence
 
+Slug: darkMatterEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret dynamical, lensing and cosmological evidence for unseen gravitating mass while recognizing remaining theoretical alternatives.
+Methodological description: Interpret dynamical, lensing and cosmological evidence for unseen gravitating mass while recognizing remaining theoretical alternatives.
+User-friendly description: Explore why astronomers infer unseen matter from gravitational evidence.
 
 ##### Dark Energy Evidence
 
+Slug: darkEnergyEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why observations of accelerated expansion motivate a dark-energy component or changes to gravitational models.
+Methodological description: Explain why observations of accelerated expansion motivate a dark-energy component or changes to gravitational models.
+User-friendly description: Examine the evidence that cosmic expansion is accelerating.
 
 ##### Limits of Cosmological Knowledge
 
+Slug: limitsOfCosmologicalKnowledge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish empirical constraints from open problems concerning early conditions, dark components and the global extent of the Universe.
+Methodological description: Distinguish empirical constraints from open problems concerning early conditions, dark components and the global extent of the Universe.
+User-friendly description: Distinguish what observations establish about the Universe from major unanswered questions.
 
 #### Cosmic Structure and Evolution
+
+Slug: cosmicStructureAndEvolution
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Density perturbations, gravity and cosmic expansion shape the cosmic web over time. This branch focuses on spatial organization and dynamical evolution, as distinct from the initial hot state or the physical nature of the Universe's dark components.
+Methodological description: Density perturbations, gravity and cosmic expansion shape the cosmic web over time. This branch focuses on spatial organization and dynamical evolution, as distinct from the initial hot state or the physical nature of the Universe's dark components.
+User-friendly description: Investigate how gravity shapes matter into large structures over cosmic history.
 
 ##### Cosmic Structure Formation
 
+Slug: cosmicStructureFormation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how initially small matter-density differences grow into galaxies and large-scale structure.
+Methodological description: Explain how initially small matter-density differences grow into galaxies and large-scale structure.
+User-friendly description: See how tiny early differences in matter density developed into cosmic structure.
 
 ##### Cosmic Web
 
+Slug: cosmicWeb
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how filaments, clusters and voids trace the large-scale distribution of matter.
+Methodological description: Describe how filaments, clusters and voids trace the large-scale distribution of matter.
+User-friendly description: Explore the vast network of galactic filaments, clusters and empty regions.
 
 ### Astrobiology
+
+Slug: astrobiology
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
-Scientific investigation of the possibility, conditions and evidence of life beyond Earth, including chemical origins, habitability and contamination risks. The methods of spacecraft observation are classified with astronomical instrumentation and evidence rather than presented as a separate astrobiological subject.
+Methodological description: Scientific investigation of the possibility, conditions and evidence of life beyond Earth, including chemical origins, habitability and contamination risks. The methods of spacecraft observation are classified with astronomical instrumentation and evidence rather than presented as a separate astrobiological subject.
+User-friendly description: Explore what life beyond Earth might require and how scientists could recognize credible evidence of it.
 
 #### Conditions for Life
+
+Slug: conditionsForLife
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Evaluating environments for life requires explicit biological and geochemical assumptions; familiar Earth conditions are useful evidence, not universal proof.
+Methodological description: Evaluating environments for life requires explicit biological and geochemical assumptions; familiar Earth conditions are useful evidence, not universal proof.
+User-friendly description: Consider the environments and chemistry that might allow life to exist.
 
 ##### Habitability
 
+Slug: habitability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate energy sources, chemical building blocks, solvent availability and environmental stability as possible prerequisites for known life.
+Methodological description: Evaluate energy sources, chemical building blocks, solvent availability and environmental stability as possible prerequisites for known life.
+User-friendly description: Explore the energy, chemistry, liquids and stability that could make an environment habitable.
 
 ##### Extremophile Analogues
 
+Slug: extremophileAnalogues
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret how Earth organisms in extreme environments inform hypotheses about extraterrestrial habitats without proving life exists there.
+Methodological description: Interpret how Earth organisms in extreme environments inform hypotheses about extraterrestrial habitats without proving life exists there.
+User-friendly description: Use life's survival in extreme places on Earth to investigate possible extraterrestrial habitats.
 
 ##### Prebiotic Chemistry
 
+Slug: prebioticChemistry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain plausible nonliving chemical pathways relevant to life's origins while distinguishing hypotheses from established histories.
+Methodological description: Explain plausible nonliving chemical pathways relevant to life's origins while distinguishing hypotheses from established histories.
+User-friendly description: Discover how nonliving chemistry might produce ingredients relevant to life's origins.
 
 ##### Habitability Through Time
 
+Slug: habitabilityThroughTime
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how a world's environmental history may change its potential to support life.
+Methodological description: Assess how a world's environmental history may change its potential to support life.
+User-friendly description: Investigate how a world's changing environment affects its potential to support life.
 
 #### Evidence of Life
+
+Slug: evidenceOfLife
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-A proposed sign of life must be weighed against nonbiological processes and the limits of the measuring instrument.
+Methodological description: A proposed sign of life must be weighed against nonbiological processes and the limits of the measuring instrument.
+User-friendly description: Learn how to distinguish possible signs of life from nonliving explanations.
 
 ##### Biosignatures
 
+Slug: biosignatures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate chemical, morphological or other candidate indicators that might be produced by living systems.
+Methodological description: Evaluate chemical, morphological or other candidate indicators that might be produced by living systems.
+User-friendly description: Recognize candidate chemical or physical clues that could be linked to living systems.
 
 ##### Abiotic False Positives
 
+Slug: abioticFalsePositives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify nonbiological processes capable of producing signals superficially similar to biosignatures.
+Methodological description: Identify nonbiological processes capable of producing signals superficially similar to biosignatures.
+User-friendly description: Discover how nonliving processes can imitate signs that might suggest life.
 
 ##### Life-Detection Evidence Standards
 
+Slug: lifeDetectionEvidenceStandards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish suggestive observations from convergent, independently checked evidence sufficient to support a life claim.
+Methodological description: Distinguish suggestive observations from convergent, independently checked evidence sufficient to support a life claim.
+User-friendly description: Explore why extraordinary claims of extraterrestrial life need multiple independent checks.
 
 ##### Technosignatures
 
+Slug: technosignatures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret possible observable indicators of technology without confusing an unexplained signal with confirmed intelligence.
+Methodological description: Interpret possible observable indicators of technology without confusing an unexplained signal with confirmed intelligence.
+User-friendly description: Consider what an unusual signal might reveal about technology without calling it proof of intelligence.
 
 ##### Planetary Protection
 
+Slug: planetaryProtection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why forward and backward biological contamination controls matter for mission science and credible life-detection results.
+Methodological description: Explain why forward and backward biological contamination controls matter for mission science and credible life-detection results.
+User-friendly description: Understand why avoiding contamination matters in the search for extraterrestrial life.
 
 #### Search Environments
+
+Slug: searchEnvironments
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Search strategies differ for nearby worlds whose material can be sampled and distant worlds known mainly through remote measurements.
+Methodological description: Search strategies differ for nearby worlds whose material can be sampled and distant worlds known mainly through remote measurements.
+User-friendly description: Compare scientific methods for searching different worlds and environments for life.
 
 ##### Solar System Life Searches
 
+Slug: solarSystemLifeSearches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare scientific search approaches for places such as Mars and icy moons using expected environmental indicators.
+Methodological description: Compare scientific search approaches for places such as Mars and icy moons using expected environmental indicators.
+User-friendly description: Explore how scientists look for signs of habitability or life on Mars and icy moons.
 
 ##### Exoplanet Life Searches
 
+Slug: exoplanetLifeSearches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the capabilities and limitations of remote atmospheric and planetary measurements in searches for life.
+Methodological description: Interpret the capabilities and limitations of remote atmospheric and planetary measurements in searches for life.
+User-friendly description: Learn what distant planetary measurements can reveal—and cannot reveal—about possible life.
 
 ##### Subsurface Habitats
 
+Slug: subsurfaceHabitats
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why liquid environments protected under ice or rock can be relevant even when a surface is hostile.
+Methodological description: Explain why liquid environments protected under ice or rock can be relevant even when a surface is hostile.
+User-friendly description: Discover why oceans hidden beneath ice or rock could be promising places to investigate.
