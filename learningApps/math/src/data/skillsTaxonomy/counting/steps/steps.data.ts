@@ -35,4 +35,5 @@ export const steps_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Крокова лічба",
   },
   skillIds: steps_Skills_Ids,
+  description: { methodological: "Moving through the number sequence by fixed increments, connected with equal groups, tens, and hundreds rather than counting individual units." },
 });

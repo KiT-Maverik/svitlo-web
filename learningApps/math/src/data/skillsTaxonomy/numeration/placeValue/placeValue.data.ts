@@ -35,4 +35,5 @@ export const placeValue_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Розрядність",
   },
   skillIds: placeValue_Skills_Ids,
+  description: { methodological: "The decimal structure of numbers, place values, exchanges between ones, tens, and hundreds, and equivalent decompositions of the same quantity." },
 });

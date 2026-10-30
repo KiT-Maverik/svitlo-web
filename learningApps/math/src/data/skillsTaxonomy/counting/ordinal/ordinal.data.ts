@@ -35,4 +35,5 @@ export const ordinal_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Порядкова лічба",
   },
   skillIds: ordinal_Skills_Ids,
+  description: { methodological: "The distinction between an element's position in an ordered sequence and the total number of elements, separating 'which position?' from 'how many?'." },
 });

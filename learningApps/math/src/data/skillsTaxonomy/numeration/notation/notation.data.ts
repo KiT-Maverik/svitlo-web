@@ -35,4 +35,5 @@ export const notation_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Числовий запис",
   },
   skillIds: notation_Skills_Ids,
+  description: { methodological: "Digits as signs in the decimal system and the correspondence between spoken number names, written notation, and quantities for one-, two-, and three-digit numbers." },
 });

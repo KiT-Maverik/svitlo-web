@@ -35,4 +35,5 @@ export const numeration_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Натуральні числа",
   },
   groupIds: numeration_SkillGroups_Ids,
+  description: { methodological: "How natural numbers express quantity, how decimal positional notation works, and how numbers are compared, decomposed, and estimated." },
 });
