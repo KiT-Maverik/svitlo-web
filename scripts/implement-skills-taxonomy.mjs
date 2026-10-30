@@ -353,11 +353,92 @@ function atomicApply(changes) {
     throw error;
   } finally { for (const tmp of staging) fs.rmSync(tmp, { force: true }); }
 }
+
+/** Canonical UUID owners are Domain/Group *.ids.ts and Skills index.ids.ts.
+ * Parent/child maps and ID barrels only reference those UUIDs.
+ */
+function scanUuidRegistry() {
+  const byId = new Map();
+  const issues = new Map();
+  const report = (domain, message) => {
+    const current = issues.get(domain) ?? [];
+    current.push(message);
+    issues.set(domain, current);
+  };
+  if (!fs.existsSync(opts.targetRoot)) return { byId, issues };
+  function scan(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const file = path.join(dir, entry.name);
+      const parts = path.relative(opts.targetRoot, file).split(path.sep);
+      const domain = parts[0];
+      if (entry.isSymbolicLink()) {
+        report(domain, 'Symlink in taxonomy UUID tree: ' + rel(file));
+        continue;
+      }
+      if (entry.isDirectory()) { scan(file); continue; }
+      if (!entry.isFile() || !entry.name.endsWith('.ids.ts')) continue;
+      let variable;
+      if (parts.length === 2 && entry.name === domain + '.ids.ts')
+        variable = domain + '_SkillDomain_Ids';
+      else if (parts.length === 3 && parts[1] !== 'skills' && entry.name === parts[1] + '.ids.ts')
+        variable = parts[1] + '_SkillGroup_Ids';
+      else if (parts.length === 3 && parts[1] === 'skills' && entry.name === 'index.ids.ts')
+        variable = domain + '_Skills_Ids';
+      else if (parts.length === 4 && parts[2] === 'skills' && entry.name === 'index.ids.ts')
+        variable = parts[1] + '_Skills_Ids';
+      else continue; // not an owner map
+      try {
+        const ast = sourceFile(file, fs.readFileSync(file, 'utf8'));
+        const declarations = ast.statements.filter(ts.isVariableStatement)
+          .flatMap(st => [...st.declarationList.declarations])
+          .filter(decl => decl.name.getText(ast) === variable);
+        if (declarations.length !== 1) throw Error('Expected one ' + variable + ' identity map');
+        const map = unwrap(declarations[0].initializer);
+        if (!ts.isObjectLiteralExpression(map)) throw Error('Nonliteral UUID identity map');
+        const seenKeys = new Set();
+        for (const member of map.properties) {
+          if (!ts.isPropertyAssignment(member) ||
+              !(ts.isIdentifier(member.name) || ts.isStringLiteral(member.name)))
+            throw Error('Unsupported UUID map member');
+          const key = member.name.text;
+          if (seenKeys.has(key)) throw Error('Repeated key ' + key);
+          seenKeys.add(key);
+          const id = literal(member.initializer, 'UUID identity');
+          if (!uuidPattern.test(id)) throw Error('Malformed UUID for ' + key);
+          const owner = { file, key, domain };
+          const canonicalId = id.toLowerCase();
+          const first = byId.get(canonicalId);
+          if (first) {
+            const problem = `Duplicate taxonomy UUID ${id} at ${rel(first.file)}#${first.key} and ${rel(file)}#${key}`;
+            report(first.domain, problem);
+            if (first.domain !== domain) report(domain, problem);
+          } else byId.set(canonicalId, owner);
+        }
+      } catch (error) { report(domain, `Invalid UUID registry ${rel(file)}: ${error.message}`); }
+    }
+  }
+  scan(opts.targetRoot);
+  return { byId, issues };
+}
+function newUniqueUuid(registry, entity) {
+  // Cryptographic v4 IDs are reserved before planning the next entity.
+  for (let attempt = 0; attempt < 64; attempt++) {
+    const id = crypto.randomUUID();
+    if (!uuidPattern.test(id)) throw Error('UUID generator produced malformed identity');
+    if (registry.byId.has(id.toLowerCase())) continue;
+    const f = entityFiles(entity);
+    registry.byId.set(id.toLowerCase(), { file: f.ids, key: entity.slug, domain: entity.domain.slug });
+    return id;
+  }
+  throw Error('Unable to generate unique UUID after 64 collisions: ' + entity.key);
+}
+
 function run() {
   cli();
   const codes = locales();
   const original = fs.readFileSync(opts.markdown, 'utf8');
   const entities = parse(original);
+  const uuidRegistry = scanUuidRegistry();
   const domains = entities.filter(e => e.kind === 'SkillDomain');
   const written = new Map();
   const status = new Map();
@@ -368,7 +449,12 @@ function run() {
     const local = new Map();
     try {
       // Validate before planning writes: nothing in a failed domain is modified.
-      if (subtree.some(e => e.issues.length)) throw Error(subtree.filter(e => e.issues.length).map(e => e.key + ': ' + e.issues.join('; ')).join('; '));
+      const registryProblems = uuidRegistry.issues.get(domain.slug) ?? [];
+      if (registryProblems.length || subtree.some(e => e.issues.length)) {
+        const authored = subtree.filter(e => e.issues.length)
+          .map(e => e.key + ': ' + e.issues.join('; '));
+        throw Error([...registryProblems, ...authored].join('; '));
+      }
       // Skipping a fully pending subtree does not require fabricated child IDs.
       if (subtree.every(e => e.action === 'skip' && e.status === 'pending')) {
         skipped += subtree.length;
@@ -438,7 +524,7 @@ function run() {
             checkLocales(t.name, 'name ' + e.key, codes);
             if (e.kind === 'Skill' || e.friendly !== '[Not authored]') checkLocales(t.fe, 'fe ' + e.key, codes);
             if (e.kind === 'Skill' && e.friendly === '[Not authored]') throw Error('Skill user-friendly description is not authored');
-            e.id = crypto.randomUUID();
+            e.id = newUniqueUuid(uuidRegistry, e);
             local.set(f.file, generateCode(e, e.id, t));
           }
           status.set(e, 'implemented');
@@ -556,6 +642,12 @@ function run() {
       diagnostic(domain.key, domain.action, 'error', error.message);
       skipped += subtree.length;
     }
+  }
+  // Registry errors in unauthored Domains are still reported (no accidental overwrite).
+  const known = new Set(domains.map(d => d.slug));
+  for (const [domain, problems] of uuidRegistry.issues) {
+    if (!known.has(domain)) for (const problem of problems)
+      diagnostic(domain, 'uuid-validation', 'error', problem);
   }
   // Merge root exports without dropping source for failed/untouched Domains.
   // An invalid Domain must not prevent independently valid sibling Domains from being indexed.
