@@ -69,6 +69,14 @@ test('creates grouped and direct Skills, complete locales and stable ID maps; re
   assert.ok(fs.existsSync(skillFile));
   assert.ok(fs.existsSync(directFile));
   assert.match(fs.readFileSync(skillFile,'utf8'),/buildSkillConfig/);
+  for (const [file, slug] of [
+    ['drawing/drawing.data.ts', 'drawing'],
+    ['drawing/perspective/perspective.data.ts', 'perspective'],
+    ['drawing/perspective/skills/drawPerspective.data.ts', 'drawPerspective'],
+    ['music/music.data.ts', 'music'],
+    ['music/skills/hearRhythm.data.ts', 'hearRhythm'],
+  ]) assert.match(fs.readFileSync(path.join(data, file), 'utf8'),
+    new RegExp('\\bslug: "' + slug + '",'));
   assert.match(fs.readFileSync(path.join(data,'music/music.data.ts'),'utf8'),/groupIds: \{\},\s+skillIds: music_Skills_Ids/);
   const ids = fs.readFileSync(path.join(data,'drawing/perspective/skills/index.ids.ts'),'utf8');
   assert.match(ids,/drawPerspective: "[0-9a-f-]{36}"/);
@@ -228,4 +236,55 @@ test('symlinked destination is rejected without touching files outside the textb
     assert.match(r.stderr,/Refusing symlinked output path/);
     assert.deepEqual(fs.readdirSync(outside),[]);
   } finally { fs.rmSync(outside,{recursive:true,force:true}); }
+}));
+
+
+test('update backfills a legacy absent slug without modifying the existing UUID', () => withFixture(f => {
+  assert.equal(f.run('--apply').status, 0);
+  const file = path.join(f.pkg, 'Data/skills/music/skills/hearRhythm.data.ts');
+  const ids = path.join(f.pkg, 'Data/skills/music/skills/index.ids.ts');
+  const beforeIds = fs.readFileSync(ids, 'utf8');
+  fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replace('  slug: "hearRhythm",\n', ''));
+  f.updateText(s => s.replace('Action: create\nStatus: implemented\n\n[hearRhythm.data.ts]',
+    'Action: update\nStatus: implemented\n\n[hearRhythm.data.ts]'));
+  const r = f.run('--apply');
+  assert.equal(r.status, 0, r.stderr);
+  assert.match(fs.readFileSync(file, 'utf8'), /slug: "hearRhythm",/);
+  assert.equal(fs.readFileSync(ids, 'utf8'), beforeIds);
+}));
+
+test('create rerun backfills slug only for a verified entity, and is idempotent', () => withFixture(f => {
+  assert.equal(f.run('--apply').status, 0);
+  const file = path.join(f.pkg, 'Data/skills/drawing/drawing.data.ts');
+  const ids = path.join(f.pkg, 'Data/skills/drawing/drawing.ids.ts');
+  const originalId = fs.readFileSync(ids, 'utf8');
+  fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replace('  slug: "drawing",\n', ''));
+  assert.equal(f.run('--apply').status, 0);
+  assert.match(fs.readFileSync(file, 'utf8'), /slug: "drawing",/);
+  assert.equal(fs.readFileSync(ids, 'utf8'), originalId);
+  const stable = fs.readFileSync(file, 'utf8');
+  assert.equal(f.run('--apply').status, 0);
+  assert.equal(fs.readFileSync(file, 'utf8'), stable);
+}));
+
+test('a conflicting code slug is rejected without an overwrite', () => withFixture(f => {
+  assert.equal(f.run('--apply').status, 0);
+  const file = path.join(f.pkg, 'Data/skills/music/skills/hearRhythm.data.ts');
+  const tampered = fs.readFileSync(file, 'utf8').replace('slug: "hearRhythm"', 'slug: "unrelated"');
+  fs.writeFileSync(file, tampered);
+  const r = f.run('--apply');
+  assert.notEqual(r.status, 0);
+  assert.match(r.stderr, /Existing slug conflicts with approved taxonomy Slug/);
+  assert.equal(fs.readFileSync(file, 'utf8'), tampered);
+}));
+
+test('skip does not backfill a missing slug on an implemented entity', () => withFixture(f => {
+  assert.equal(f.run('--apply').status, 0);
+  const file = path.join(f.pkg, 'Data/skills/music/skills/hearRhythm.data.ts');
+  const legacy = fs.readFileSync(file, 'utf8').replace('  slug: "hearRhythm",\n', '');
+  fs.writeFileSync(file, legacy);
+  f.updateText(s => s.replace('Action: create\nStatus: implemented\n\n[hearRhythm.data.ts]',
+    'Action: skip\nStatus: implemented\n\n[hearRhythm.data.ts]'));
+  assert.equal(f.run('--apply').status, 0);
+  assert.equal(fs.readFileSync(file, 'utf8'), legacy);
 }));
