@@ -18,7 +18,7 @@ Do not author a Lesson Brief until these inputs are available and checked:
 
 1. **Package root and Lesson scope:** the specific standalone textbook application root, a proposed or existing Lesson, and a meaningful topic/educational purpose. Never default to the monorepo root or Playground.
 2. **Approved Skills Taxonomy:** read `<PackageRoot>/docs/generated/skills/taxonomy.en.md` for relevant Domains, Groups, Skills and English methodological descriptions. **If absent**, run `node scripts/generate-skills-taxonomy.mjs --package learningApps/<textbook> --locale en` from the **monorepo root**, substituting the actual package path; then read the result. The generated document is a read-only view of `*.data.ts` Code, **not** a separate canonical authority or proof of editorial approval. During staged migration, additionally consult approved but not-yet-promoted entries in `<PackageRoot>/docs/skills/taxonomy.md`, if present; this staging file can disappear after complete migration. If generation fails, a relevant entry is unavailable, or approval cannot be verified, **stop and report the blocker**, rather than guessing or treating partial output as complete.
-3. **Target Skills:** one or more *existing*, exact canonical Skill headings (or unambiguous references that can be resolved to them). Verify that this one Lesson can meaningfully address the requested selection; overlapping or overly broad selections require editor review.
+3. **Target Skills:** identify one or more **approved, independently meaningful Skills**, and resolve the **actual canonical `*.data.ts` file that defines each Skill object**. Record each in the Brief as a direct relative Markdown link whose visible text is the **complete source filename, including `.data.ts`**, never a Skill title, generic link label or ID. Verify the Lesson can coherently teach the selected Skills. If a proposed Skill has not been implemented in Code, do not invent a file path or link to staging Markdown as a replacement; report the missing Code artifact and stop authoring until the target can be resolved.
 4. **Audience:** intended learners, approximate prior knowledge and language/literacy context, and relevant accessibility needs; do not automatically assume a school grade.
 5. **Intent and constraints:** intended learning outcomes or instructional problem, content boundaries, required depth, known prerequisites, references and any mandatory standards or safety requirements. Surface missing **material** constraints instead of inventing them.
 
@@ -69,7 +69,7 @@ Program dependence: None
 
 ## Target Skills
 
-- **%EXACT_CANONICAL_SKILL_HEADING%** — [Canonical Skill source](%VERIFIED_RELATIVE_APPROVED_SKILL_SOURCE_PATH_AND_OPTIONAL_ANCHOR%)
+- [%EXACT_SKILL_SOURCE_FILENAME_WITH_EXTENSION%](%VERIFIED_RELATIVE_PATH_TO_EXISTING_SKILL_DATA_TS%)
 
 ## Expected learning outcomes
 
@@ -110,7 +110,15 @@ Program dependence: None
 
 **Metadata rules:** `Code` references the **Lesson implementation**, not a Skill Code link and not a directive to embed Methodologist prose in runtime configuration. Leave exactly `Code: [Not implemented](#)` unless a real Lesson implementation has been verified, in which case use its actual relative Markdown link and exact filename. Do not fabricate a runtime UUID, registry, approval date or implementation status. The Lesson slug is a file locator, not a verified runtime ID.
 
-**Target Skills rules:** visible names must match the verified **approved** Skill names, not guessed names, UUIDs or implementation identifiers. Use generated English Markdown to *read* promoted Skills; link to each verified canonical `*.data.ts` source from the Brief, or to the approved staging Markdown heading for not-yet-promoted Skills. This avoids depending on a generated view remaining checked in. Resolve all links relative to the actual numbered Lesson directory; never invent Markdown anchors.
+**Target Skills rules:** Write a simple Markdown list with **one direct source-file link per approved Skill**, formatted exactly as `- [completeFilename.data.ts](relative/path/to/completeFilename.data.ts)`. The **link label must equal the target file's full basename**, including `.data.ts`; do not add bold Skill headings, friendly names, `Canonical Skill source` labels, UUIDs, `index.data.ts` aggregators, `*.ids.ts` dictionaries, generated taxonomy Markdown, or placeholder `#` links. Link directly to the `*.data.ts` file defining that **Skill**, not a Group/Domain.
+
+The intended future code location is `<PackageRoot>/Data/Skills/`, but **use the real repository path at authoring time**: existing Mathematics Skills currently reside under `<PackageRoot>/src/data/skillsTaxonomy/`. Example of a verified source link **from** `learningApps/math/Data/Lessons/1/understandingNumbers/methodologist-brief.md`:
+
+~~~md
+- [addMeaning.data.ts](../../../../src/data/skillsTaxonomy/arithmetic/addition/skills/addMeaning.data.ts)
+~~~
+
+Compute relative links from the actual Brief directory, and verify that **every link resolves and its label exactly matches the target basename**. When Skills are later migrated to `Data/Skills/`, author new links against the **existing moved files** and repair affected older references as part of that migration; do not preemptively point to nonexistent paths. Generated taxonomy Markdown is **only a read-only discovery aid** and approved staging entries can help identify intended Skills, but neither substitutes for a real source-file link in the final Target Skills list. If a required Skill lacks a canonical Code file, explicitly report it as blocked rather than linking to staging Markdown or fabricating a destination.
 
 ## FILE PLACEMENT AND STABLE 100-LESSON BUCKET RULE
 
@@ -137,11 +145,11 @@ Lessons remain Program-neutral and can be reused from multiple Curricula.
 
 The accompanying editor-facing handoff (chat/PR, not a second mandatory file) reports:
 - The actual Brief path, Lesson slug, numbered bucket, and create/update operation.
-- Verified Target Skills and their approved source, learning outcomes, scope and prerequisite decisions.
+- Verified Target Skills as direct `*.data.ts` links labeled with exact filenames, plus learning outcomes, scope and prerequisite decisions.
 - Optional Curriculum/Program compatibility checks, or that none was requested.
 - Factual sources, open editorial questions, approval status and the handoff requirements for the Screenwriter.
 - Verified Code link or `[Not implemented](#)`, and any generation or taxonomy blockers.
 
-**Acceptance gates:** genuinely approved Skill definitions read; no invented Skills/IDs; audience and instructional intent supported; observable outcomes and prerequisites; substantive subject content and citations; no unauthorized screenplay, assessment, gamification, code or client serialization; one separate Methodologist Brief; all non-placeholder links verified; no existing Lesson directories relocated; and no approval claimed without an editor decision.
+**Acceptance gates:** genuinely approved Skill definitions read; every Target Skill is represented by a verified direct relative `*.data.ts` link whose label exactly matches the file basename; no missing-source placeholders; no invented Skills/IDs; audience and instructional intent supported; observable outcomes and prerequisites; substantive subject content and citations; no unauthorized screenplay, assessment, gamification, code or client serialization; one separate Methodologist Brief; all non-placeholder links verified; no existing Lesson directories relocated; and no approval claimed without an editor decision.
 
 **Handoff:** Once explicitly approved, the separate Brief becomes the pedagogical source for [Create Lesson Script](./create-lesson-script.skill.md), which creates `script.md` in the **same existing Lesson directory**. The Screenwriter may not modify the Brief or introduce Program narrative. Never launch the next workflow automatically.
