@@ -86,7 +86,7 @@ Do not reduce a rich competency to mere recognition or conceptual awareness beca
 1. **Research:** establish the complete subject landscape, practical scope boundaries and uncertainty. Use references to check breadth rather than copying a syllabus.
 2. **Decompose:** identify coherent Domains and **only necessary Groups**, then atomic observable Skills. Apply the **mandatory Skill-versus-Question check above to every candidate** before admitting it to the taxonomy; run the A-without-B, subject-ownership and Group-flattening gates. Commas, classification verbs and task formats are review triggers, not permission to split or delete automatically.
 3. **Review / hard stop:** prepare and present the **explicit editor handoff for every mandatory escalation trigger** before changing the affected taxonomy entries. Discuss overlaps, missing competencies, accidental bundling, redundant assessment-format Skills and over-fragmentation. Do not independently decide that an ambiguous item is a Skill, Question or a duplicate; do not edit affected approved entries until the editor resolves the named question. An integration Skill C exists only if independently meaningful and explicitly approved; a Question covering A and B does not create C.
-4. **Write authoritative descriptions in the taxonomy itself:** immediately after each Domain, Group and Skill heading's metadata, provide a substantive paragraph explaining **what the concept/competency means, what is included and what distinguishes it from neighboring entries**. Names identify; descriptions explain. A Description **must not repeat, paraphrase or mechanically expand the heading**, nor merely say that a Domain contains related Groups or a Group contains related Skills. For Skills, clarify the observable subject-specific competency, meaningful scope or distinguishing case; give a concrete example where it improves understanding, without turning the description into a lesson, grading rubric, question format or implementation plan. Every entry receives its own relevant description. Use ordinary prose below the heading: **never emit a `Description:` prefix**.
+4. **Write structured descriptions in the taxonomy itself:** every Domain, Group and Skill receives exactly two labeled, single-line fields immediately after its standalone implementation link: `Methodological description: <English text>` and `User-friendly description: <working-language UI draft or [Not authored]>`. The methodological field is canonical English editorial meaning: competency, scope, boundaries, misconceptions and useful examples; it must not merely paraphrase the heading, become a Question/lesson plan, or impose a Curriculum depth limit. The user-friendly field is concise learner-facing draft copy in the taxonomy's working language; it is **not** automatically `description.fe`. When frontend copy is not needed, write exactly `User-friendly description: [Not authored]`. A complete `description.fe` can be generated only after separate localization into **all supported locales**. The field labels, colon and one space are mandatory so a parser can safely identify entries. No free-floating unlabeled description paragraph; no fake English translation of existing source.
 5. **Inspect actual implementation files:** when an entity is implemented and validated, link directly to its canonical `*.data.ts` file. The link text **must be the file's exact basename, including every suffix and the extension** (for example, `[kineticEnergy.data.ts](%VERIFIED_RELATIVE_PATH%)`, not `[kineticEnergy]` or `[kineticEnergy.data]`). If implementation is unverified, use exactly `[Not implemented](#)`. The link stands **alone, without `Code:` or any other label**. A reserved UUID, a parent map or a proposed path does not prove implementation.
 6. **Author the canonical taxonomy** using the template below. Use accurate counts, link targets and current editorial scope. Do not create `*.skill.md`, `*.skill-group.md`, `*.skill-domain.md`, intermediate Definitions, or runtime code. A **single optional historical Review** may be created or appended **only** under the narrowly defined gate below, not as a second taxonomy.
 7. **Verify and stop:** check every Domain/Group/Skill count, standalone package boundaries, all non-placeholder Code links, unique primary membership, title-description differentiation and unresolved issues. Return the taxonomy for an explicit editorial approval decision. Never silently assume approval. If a historical Review was changed, verify its dates, factual decisions, links and lack of duplication.
@@ -101,7 +101,7 @@ Do not reduce a rich competency to mere recognition or conceptual awareness beca
 
 ### Metadata before descriptions
 
-Keep every entity's metadata together directly after its heading. Order is **Domain:** `Groups · Skills` → standalone implementation link → prose; **Group:** `Skills` → standalone implementation link → prose; **Skill:** standalone implementation link → prose. Present substantive descriptions as unlabeled Markdown paragraphs, never as `Description:` fields, and never interrupt metadata with a description. Do not reintroduce `Definition` links: the staging taxonomy is the editorial definition only until an entry's reviewed promotion to Code, and the single standalone implementation link is its only per-entity artifact link.
+Keep each entity's metadata together directly after its heading. Order: **Domain:** `Groups · Skills` → standalone implementation link → two description fields; **Group:** `Skills` → link → two description fields; **Skill:** link → two description fields. Each label and its value occupy **one logical Markdown line**; the exact labels are `Methodological description: ` and `User-friendly description: ` (including the space after the colon). Neither field is an implementation link or new entity. Preserve English methodological authority separately from the working-language frontend draft. Never reintroduce Definition links.
 
 ## SKILL TAXONOMY REVIEW — OPTIONAL DATED HISTORY, NOT ANOTHER TAXONOMY
 
@@ -136,12 +136,12 @@ Title: **Skill Taxonomy Review**. Keep the **original review date** and append s
 - Domain/Group/Skill counts reconcile at every hierarchy level; membership is unique and matches any approved existing catalog. Ungrouped Domains report zero Groups and directly attached Skills; a singleton Group requires a recorded editorial exception.
 - Each entry has one verified, unlabeled implementation link showing the full filename (suffixes and extension included), or exactly `[Not implemented](#)`; Code counts report actual implementations, not file names guessed from the taxonomy.
 - No old per-entity Definition references, UUIDs, grade assignments, runtime IDs or fake `Status` fields occur in the taxonomy.
-- Markdown descriptions do **not** start with `Description:` and always follow all of the entity's metadata (any Group/Skill counts and the standalone implementation link).
+- Every Domain, Group and Skill has exactly one nonblank `Methodological description: ` (English) and one `User-friendly description: ` (working-language draft or exact `[Not authored]`) after its metadata and link. No legacy unlabeled prose and no generic `Description:` prefix in newly created or migrated template documents.
 - The **authoring/staging artifact** is `docs/skills/taxonomy.md`. No TypeScript, curricula, lessons, individual Skill Markdown or invented templates; the optional `docs/history/skill-taxonomy-review.md` may be created/updated **only** under the explicit history gate above.
 
 ## TAXONOMY TEMPLATE
 
-Repeat the following blocks for each Domain, Group and Skill. **Grouped and direct Domain examples are alternatives, never mixed in one Domain.** Replace placeholders with substantive, *non-duplicative* prose and independently verified implementation paths. Implemented link labels must use the exact filename including suffixes and extension; never prepend a field label to a Markdown link. The template is embedded; do not create another template file.
+Repeat the blocks for each Domain, Group and Skill. **Grouped and direct Domain examples are alternatives, never mixed in one Domain.** Each field is a single Markdown line; use English for methodological text, and the explicitly selected working language for user-friendly draft copy. Use `User-friendly description: [Not authored]` when no frontend text is required. Complete all supported locales in a separate localization stage before publishing `description.fe`. The template is embedded; do not create another template file.
 
 ~~~md
 # %SUBJECT_NAME% — Skills Taxonomy
@@ -166,7 +166,8 @@ Groups: %DOMAIN_GROUP_COUNT% · Skills: %DOMAIN_SKILL_COUNT%
 
 [Not implemented](#)
 
-%SUBSTANTIVE_DOMAIN_DESCRIPTION_NOT_A_RESTATEMENT_OF_NAME%
+Methodological description: %ENGLISH_DOMAIN_MEANING_AND_BOUNDARIES%
+User-friendly description: %WORKING_LANGUAGE_DOMAIN_TEXT_OR_[Not authored]%
 
 #### %GROUP_NAME%
 
@@ -174,13 +175,15 @@ Skills: %GROUP_SKILL_COUNT%
 
 [Not implemented](#)
 
-%SUBSTANTIVE_GROUP_DESCRIPTION_EXPLAINING_SCOPE_AND_BOUNDARIES%
+Methodological description: %ENGLISH_GROUP_MEANING_AND_BOUNDARIES%
+User-friendly description: %WORKING_LANGUAGE_GROUP_TEXT_OR_[Not authored]%
 
 ##### %SKILL_NAME%
 
 [Not implemented](#)
 
-%SUBSTANTIVE_SKILL_DESCRIPTION_CLARIFYING_MEANING_AND_DISTINCTION%
+Methodological description: %ENGLISH_SKILL_COMPETENCY_AND_BOUNDARIES%
+User-friendly description: %WORKING_LANGUAGE_SKILL_TEXT_OR_[Not authored]%
 
 ### %DIRECT_SKILLS_DOMAIN_NAME%
 
@@ -188,13 +191,15 @@ Groups: 0 · Skills: %DIRECT_DOMAIN_SKILL_COUNT%
 
 [Not implemented](#)
 
-%SUBSTANTIVE_DIRECT_DOMAIN_DESCRIPTION%
+Methodological description: %ENGLISH_DIRECT_DOMAIN_MEANING%
+User-friendly description: %WORKING_LANGUAGE_DIRECT_DOMAIN_TEXT_OR_[Not authored]%
 
 #### %DIRECT_SKILL_NAME%
 
 [Not implemented](#)
 
-%SUBSTANTIVE_DIRECT_SKILL_DESCRIPTION%
+Methodological description: %ENGLISH_DIRECT_SKILL_COMPETENCY%
+User-friendly description: %WORKING_LANGUAGE_DIRECT_SKILL_TEXT_OR_[Not authored]%
 ~~~
 
 ## RESULT
