@@ -33,4 +33,5 @@ export const equalityMeaning_Skill_Data = buildSkillConfig({
     pl: "Rozumienie znaku równości",
     uk: "Розуміння значення знака рівності",
   },
+  description: { methodological: "The equality sign asserts equal values on both sides, not a prompt to compute an answer. Either side may contain numbers, expressions, or other mathematical objects; equality is determined by their values." },
 });

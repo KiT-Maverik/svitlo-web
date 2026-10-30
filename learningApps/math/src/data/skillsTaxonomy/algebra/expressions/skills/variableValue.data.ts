@@ -33,4 +33,5 @@ export const variableValue_Skill_Data = buildSkillConfig({
     pl: "Obliczanie wartości prostego wyrażenia ze zmienną",
     uk: "Обчислення значення простого буквеного виразу",
   },
+  description: { methodological: "A letter in an expression may represent a variable assigned a value under given conditions. Substituting that value and performing operations evaluates the expression; symbolic notation does not establish a different arithmetic law." },
 });
