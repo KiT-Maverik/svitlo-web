@@ -95,6 +95,11 @@ function runGate(changed) {
     const pkg = all.get(name);
     if (!pkg?.scripts?.typecheck) continue;
     ensureSharedDependencies(name);
+    // Some shared packages typecheck their own public dist exports (e.g. IndexDB browser tests).
+    if (pkg.path.startsWith('shared/') && pkg.scripts?.build && !built.has(name)) {
+      exec('npm', ['run', 'build', '--workspace', name]);
+      built.add(name);
+    }
     exec('npm', ['run', 'typecheck', '--workspace', name]);
   }
   for (const name of targets) {
