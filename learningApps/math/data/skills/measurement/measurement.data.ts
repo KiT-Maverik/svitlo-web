@@ -1,6 +1,10 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
-import { length_SkillGroup_Data, mass_SkillGroup_Data, capacity_SkillGroup_Data, temperature_SkillGroup_Data, general_SkillGroup_Data } from './index';
+import { length_SkillGroup_Data } from './length/length.data';
+import { mass_SkillGroup_Data } from './mass/mass.data';
+import { capacity_SkillGroup_Data } from './capacity/capacity.data';
+import { temperature_SkillGroup_Data } from './temperature/temperature.data';
+import { general_SkillGroup_Data } from './general/general.data';
 
 export const measurement_SkillDomain_Data = buildSkillDomainConfig({
   id: '01fcc12a-a71d-4741-a245-e3a4e045f9cd',

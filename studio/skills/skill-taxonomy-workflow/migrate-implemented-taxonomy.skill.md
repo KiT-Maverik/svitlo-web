@@ -9,7 +9,7 @@ Walk the existing `<PackageRoot>/docs/skills/taxonomy.md` from **top to bottom**
 ## REQUIRED INPUT
 
 - Specific textbook PackageRoot; actual current staging Markdown file and its last approved revision; an approved list/scope of entries to promote.
-- The code tree, package source exports, `Skill_Config` / `SkillGroup_Config` / `SkillDomain_Config`, builders, `*.ids.ts` and current `DEFAULT_SUPPORTED_LANGUAGES`.
+- The code tree, package source exports, `Skill_Config` / `SkillGroup_Config` / `SkillDomain_Config`, builders, entity-owned UUID literals, scoped `skills/index.ts` exports and current `DEFAULT_SUPPORTED_LANGUAGES`.
 - Any editor-approved semantic changes since the original taxonomy, and documented national/subject-specific terminology exceptions.
 
 If there is no staging Markdown, verify Code and report that no staging items remain; **do not manufacture a parallel hand-authored taxonomy**. If the intended staging source is ambiguous, the Code object is absent, or approval history is unclear, stop that item rather than guessing.

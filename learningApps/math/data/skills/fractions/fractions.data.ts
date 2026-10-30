@@ -1,6 +1,9 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
-import { representation_SkillGroup_Data, comparison_SkillGroup_Data, arithmetic_SkillGroup_Data, portions_SkillGroup_Data } from './index';
+import { representation_SkillGroup_Data } from './representation/representation.data';
+import { comparison_SkillGroup_Data } from './comparison/comparison.data';
+import { arithmetic_SkillGroup_Data } from './arithmetic/arithmetic.data';
+import { portions_SkillGroup_Data } from './portions/portions.data';
 
 export const fractions_SkillDomain_Data = buildSkillDomainConfig({
   id: 'f41a81b9-b6ba-46db-94a6-b687a239e6b9',

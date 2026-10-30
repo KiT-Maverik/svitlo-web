@@ -1,6 +1,15 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
-import { orientation_SkillGroup_Data, figures_SkillGroup_Data, solids_SkillGroup_Data, lines_SkillGroup_Data, angles_SkillGroup_Data, circles_SkillGroup_Data, transformations_SkillGroup_Data, perimeter_SkillGroup_Data, area_SkillGroup_Data, perimeterArea_SkillGroup_Data } from './index';
+import { orientation_SkillGroup_Data } from './orientation/orientation.data';
+import { figures_SkillGroup_Data } from './figures/figures.data';
+import { solids_SkillGroup_Data } from './solids/solids.data';
+import { lines_SkillGroup_Data } from './lines/lines.data';
+import { angles_SkillGroup_Data } from './angles/angles.data';
+import { circles_SkillGroup_Data } from './circles/circles.data';
+import { transformations_SkillGroup_Data } from './transformations/transformations.data';
+import { perimeter_SkillGroup_Data } from './perimeter/perimeter.data';
+import { area_SkillGroup_Data } from './area/area.data';
+import { perimeterArea_SkillGroup_Data } from './perimeterArea/perimeterArea.data';
 
 export const geometry_SkillDomain_Data = buildSkillDomainConfig({
   id: '5586a9c0-8695-49c2-97b8-ea55899eab69',

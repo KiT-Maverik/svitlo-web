@@ -10,6 +10,10 @@
 4. **[Migrate Implemented Taxonomy](./migrate-implemented-taxonomy.skill.md)** — independently compare every staging entry against its verified code object and all required name translations, the English methodological meaning, any present frontend translations and parent/child membership. Only remove a fully verified item once the editor approves its promotion. Never lose unimplemented descendants.
 5. **[Generate Skills Taxonomy](../../../scripts/generate-skills-taxonomy.mjs)** — optional, repeatable **read-only-from-Code** generation of Markdown with localized names, complete localized Skill user-friendly descriptions (available Group/Domain frontend copy), and canonical English methodological prose in `<PackageRoot>/docs/generated/skills/taxonomy.<locale>.md`. Default `en`. Generated material is not authoring input.
 
+## CANONICAL CODE STRUCTURE
+
+Each textbook's authoring taxonomy belongs under `<PackageRoot>/data/skills/`: root `index.ts` exports Domain Data; each Domain `<domain>.data.ts` imports immediate Groups directly without a Domain `index.ts`; each Group `<group>.data.ts` imports Skills through the Group's `skills/index.ts`. A direct-Skill Domain may use its own `skills/index.ts` instead of Groups. There is no Group-directory `index.ts` and no `*.ids.ts`/ID index layer. Every entity's stable UUID literal lives in its own `*.data.ts`; parents derive member IDs through the imported children's `.id`.
+
 ## SOURCE OF TRUTH BY STAGE
 
 - **Before promotion:** the approved `docs/skills/taxonomy.md` is the editorial authority for outstanding, not-yet-migrated entries and required hierarchical scaffolding. The code objects, if already present but incomplete, do **not** supersede the approved prose.

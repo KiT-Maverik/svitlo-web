@@ -1,6 +1,9 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
-import { argumentation_SkillGroup_Data, verification_SkillGroup_Data, logic_SkillGroup_Data, representations_SkillGroup_Data } from './index';
+import { argumentation_SkillGroup_Data } from './argumentation/argumentation.data';
+import { verification_SkillGroup_Data } from './verification/verification.data';
+import { logic_SkillGroup_Data } from './logic/logic.data';
+import { representations_SkillGroup_Data } from './representations/representations.data';
 
 export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
   id: '91e2d845-0c04-4a81-b126-8bad16300cad',

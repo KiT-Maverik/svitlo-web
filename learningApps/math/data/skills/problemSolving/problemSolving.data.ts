@@ -1,6 +1,12 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
-import { conditions_SkillGroup_Data, models_SkillGroup_Data, planning_SkillGroup_Data, comparisons_SkillGroup_Data, parts_SkillGroup_Data, groups_SkillGroup_Data, quantities_SkillGroup_Data } from './index';
+import { conditions_SkillGroup_Data } from './conditions/conditions.data';
+import { models_SkillGroup_Data } from './models/models.data';
+import { planning_SkillGroup_Data } from './planning/planning.data';
+import { comparisons_SkillGroup_Data } from './comparisons/comparisons.data';
+import { parts_SkillGroup_Data } from './parts/parts.data';
+import { groups_SkillGroup_Data } from './groups/groups.data';
+import { quantities_SkillGroup_Data } from './quantities/quantities.data';
 
 export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
   id: '695fd427-aaea-4cbb-bd07-2d1702f36a17',

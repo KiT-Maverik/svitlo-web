@@ -1,6 +1,10 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
-import { notation_SkillGroup_Data, placeValue_SkillGroup_Data, comparison_SkillGroup_Data, numberLine_SkillGroup_Data, estimation_SkillGroup_Data } from './index';
+import { notation_SkillGroup_Data } from './notation/notation.data';
+import { placeValue_SkillGroup_Data } from './placeValue/placeValue.data';
+import { comparison_SkillGroup_Data } from './comparison/comparison.data';
+import { numberLine_SkillGroup_Data } from './numberLine/numberLine.data';
+import { estimation_SkillGroup_Data } from './estimation/estimation.data';
 
 export const numeration_SkillDomain_Data = buildSkillDomainConfig({
   id: '445d4a85-bebe-4569-bf45-2af8c15a051b',
