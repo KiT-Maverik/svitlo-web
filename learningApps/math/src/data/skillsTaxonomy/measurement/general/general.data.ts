@@ -35,4 +35,5 @@ export const general_SkillGroup_Data = buildSkillGroupConfig({
     "uk": "Загальні вимірювальні навички"
   },
   skillIds: general_Skills_Ids,
+  description: { methodological: "General principles for choosing units, reconciling measurements, and calculating with comparable quantities." },
 });

@@ -35,4 +35,5 @@ export const duration_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Тривалість",
   },
   skillIds: duration_Skills_Ids,
+  description: { methodological: "Relationships among seconds, minutes, and hours, and deriving a time interval or instant from other known time information." },
 });

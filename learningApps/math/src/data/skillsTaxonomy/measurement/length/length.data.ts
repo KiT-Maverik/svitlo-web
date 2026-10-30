@@ -35,4 +35,5 @@ export const length_SkillGroup_Data = buildSkillGroupConfig({
     "uk": "Довжина"
   },
   skillIds: length_Skills_Ids,
+  description: { methodological: "Direct and instrument-based comparison of lengths, metric units of differing magnitudes, and operations on homogeneous length quantities." },
 });
