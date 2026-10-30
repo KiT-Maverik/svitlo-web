@@ -35,4 +35,5 @@ export const money_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Гроші",
   },
   groupIds: money_SkillGroups_Ids,
+  description: { methodological: "Applications of arithmetic to monetary denominations, composing and comparing amounts, calculating costs and change, and selecting purchases within a budget." },
 });

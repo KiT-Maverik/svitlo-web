@@ -35,4 +35,5 @@ export const transactions_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Покупки",
   },
   skillIds: transactions_Skills_Ids,
+  description: { methodological: "Using monetary calculations for unit prices, quantities, purchase totals, change, and limited budgets." },
 });

@@ -35,4 +35,5 @@ export const denominations_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Грошові суми",
   },
   skillIds: denominations_Skills_Ids,
+  description: { methodological: "Monetary value represented by coins and banknotes of a specific currency, equivalent denomination combinations, and comparisons between amounts." },
 });

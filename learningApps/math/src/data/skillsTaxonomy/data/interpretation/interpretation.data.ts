@@ -35,4 +35,5 @@ export const interpretation_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Інтерпретація даних",
   },
   skillIds: interpretation_Skills_Ids,
+  description: { methodological: "Drawing conclusions from quantitative data, computing comparisons, and identifying missing information." },
 });

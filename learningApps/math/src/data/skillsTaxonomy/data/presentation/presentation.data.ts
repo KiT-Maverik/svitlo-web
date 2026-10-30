@@ -35,4 +35,5 @@ export const presentation_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Подання даних",
   },
   skillIds: presentation_Skills_Ids,
+  description: { methodological: "Representing collected counts in tables, pictographs, and charts while correctly interpreting the scales and values of marks." },
 });
