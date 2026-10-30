@@ -14,9 +14,9 @@ A **SkillGroup** organizes one coherent family of related Skills inside a SkillD
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
-The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It permits an optional transitional localized `description` (mandatory for promotion), but does not contain teaching order, evaluation evidence or student progress.
+The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It permits transitional optional `description: { methodological: string; FE?: Record<LanguageCode, string> }` (reviewed English methodological text required for promotion; FE absent or complete for all languages), but does not contain teaching order, evaluation evidence or student progress.
 
-- **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, localized Code heading, explanation and parent/child placement.
+- **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological meaning, any optional full FE translations and parent/child placement.
 - **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
 Descriptions use plain prose with **no `Description:` prefix**, and per-entity editorial `Status` files are not created.
