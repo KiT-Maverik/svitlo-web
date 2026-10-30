@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { placeValue_Skills_Ids } from './index.ids';
 
 export const hundredsTensOnes_Skill_Data = buildSkillConfig({
-  id: placeValue_Skills_Ids.hundredsTensOnes,
+  id: 'e622e480-71c3-430e-b20a-200fad8377b2',
   name: {
     lt: "Šimtai, dešimtys ir vienetai triženkliuose skaičiuose",
     lv: "Simti, desmiti un vieni trīsciparu skaitļos",

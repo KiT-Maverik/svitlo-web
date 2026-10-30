@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const tenthsAsDivision_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.tenthsAsDivision,
+  id: '07f83714-554b-4dd3-8e1a-3abeb1c065b0',
   name: {
     en: "Relating tenths to division by 10",
     lt: "Dešimtųjų dalių ryšys su dalyba iš 10",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const fractionGreaterThanOne_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.fractionGreaterThanOne,
+  id: '59f5bbe7-63e4-4f1b-a23e-47f3e59c1ac7',
   name: {
     en: "Representing fractions greater than one",
     lt: "Trupmenų, didesnių už vienetą, vaizdavimas",

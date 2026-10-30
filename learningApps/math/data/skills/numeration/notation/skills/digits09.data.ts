@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { notation_Skills_Ids } from './index.ids';
 
 export const digits09_Skill_Data = buildSkillConfig({
-  id: notation_Skills_Ids.digits09,
+  id: 'b86b9bc2-f53d-404a-92a3-10de53a83f06',
   name: {
     lt: "Skaitmenys 0–9 ir skaitmens reikšmė",
     lv: "Cipari 0–9 un cipara nozīme",

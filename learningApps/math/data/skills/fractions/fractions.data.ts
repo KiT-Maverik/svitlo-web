@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { fractions_SkillDomain_Ids } from './fractions.ids';
-import { fractions_SkillGroups_Ids } from './index.ids';
+import { representation_SkillGroup_Data, comparison_SkillGroup_Data, arithmetic_SkillGroup_Data, portions_SkillGroup_Data } from './index';
 
 export const fractions_SkillDomain_Data = buildSkillDomainConfig({
-  id: fractions_SkillDomain_Ids.fractions,
+  id: 'f41a81b9-b6ba-46db-94a6-b687a239e6b9',
   name: {
     en: "Fractions",
     lt: "Trupmenos",
@@ -34,7 +33,12 @@ export const fractions_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Ułamki",
     uk: "Дроби",
   },
-  groupIds: fractions_SkillGroups_Ids,
+  groupIds: {
+    representation: representation_SkillGroup_Data.id,
+    comparison: comparison_SkillGroup_Data.id,
+    arithmetic: arithmetic_SkillGroup_Data.id,
+    portions: portions_SkillGroup_Data.id,
+  },
   description: {
     methodological: "Fractions express part-to-whole relationships and positions on a number line. Their properties involve equal parts, numerator and denominator, equivalence, comparisons, and arithmetic operations; specific models and computational ranges depend on the learning context.",
     fe: {

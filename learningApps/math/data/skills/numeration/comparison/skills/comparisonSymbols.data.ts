@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparison_Skills_Ids } from './index.ids';
 
 export const comparisonSymbols_Skill_Data = buildSkillConfig({
-  id: comparison_Skills_Ids.comparisonSymbols,
+  id: 'b3fc5e27-fc9d-48cc-b429-7ee2febbefbb',
   name: {
     lt: "Palyginimo ženklai <, > ir =",
     lv: "Salīdzināšanas zīmes <, > un =",

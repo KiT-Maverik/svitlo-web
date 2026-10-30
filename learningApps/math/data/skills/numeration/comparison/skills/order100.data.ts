@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparison_Skills_Ids } from './index.ids';
 
 export const order100_Skill_Data = buildSkillConfig({
-  id: comparison_Skills_Ids.order100,
+  id: '299e8e1c-d426-403f-a73a-9111bcc65939',
   name: {
     lt: "Dviženklių skaičių lyginimas ir rikiavimas",
     lv: "Divciparu skaitļu salīdzināšana un sakārtošana",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { representation_Skills_Ids } from './index.ids';
 
 export const numeratorMeaning_Skill_Data = buildSkillConfig({
-  id: representation_Skills_Ids.numeratorMeaning,
+  id: 'a0eac2ec-b5d3-4042-8ebc-f8fb28089999',
   name: {
     en: "Explaining the numerator of a fraction",
     lt: "Trupmenos skaitiklio reikšmės aiškinimas",

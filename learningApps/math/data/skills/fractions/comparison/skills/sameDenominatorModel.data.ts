@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { comparison_Skills_Ids } from './index.ids';
 
 export const sameDenominatorModel_Skill_Data = buildSkillConfig({
-  id: comparison_Skills_Ids.sameDenominatorModel,
+  id: '78e25627-943c-4912-bde5-37d05a6045ac',
   name: {
     en: "Comparing fractions with the same denominator using models",
     lt: "Trupmenų su vienodais vardikliais palyginimas pagal modelius",

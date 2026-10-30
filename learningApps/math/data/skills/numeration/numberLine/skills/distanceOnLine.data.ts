@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { numberLine_Skills_Ids } from './index.ids';
 
 export const distanceOnLine_Skill_Data = buildSkillConfig({
-  id: numberLine_Skills_Ids.distanceOnLine,
+  id: 'c3a0e1b2-2158-4365-be77-cf97d3bace23',
   name: {
     lt: "Atstumas tarp sveikųjų skaičių skaičių tiesėje",
     lv: "Attālums starp veseliem skaitļiem uz skaitļu taisnes",
