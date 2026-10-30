@@ -896,515 +896,910 @@ User-friendly description: Connect changes in channel width with the speed of st
 
 ### Energy
 
+Slug: energy
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 12
 
 [Not implemented](#)
 
-Energy is a quantity that helps describe physical changes and connect phenomena involving motion, heating, light, and electricity. The emphasis is on energy transfer, transformation, and conservation rather than arithmetic formulas.
+Methodological description: Energy is a quantity that helps describe physical changes and connect phenomena involving motion, heating, light, and electricity. The emphasis is on energy transfer, transformation, and conservation rather than arithmetic formulas.
+User-friendly description: Explore how energy is stored, transferred, transformed and conserved in physical systems.
 
 #### Forms of Energy
+
+Slug: formsOfEnergy
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Motion, position, deformation, and internal state can be associated with different forms of energy; descriptions should refer to a specific physical system.
+Methodological description: Motion, position, deformation, and internal state can be associated with different forms of energy; descriptions should refer to a specific physical system.
+User-friendly description: Recognize different forms of energy in changing physical situations.
 
 ##### Classify forms of energy
 
+Slug: classifyFormsOfEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish energy of motion, energy related to bodies' positions, elastic deformation energy, and internal energy based on the physical properties of a system.
+Methodological description: Distinguish energy of motion, energy related to bodies' positions, elastic deformation energy, and internal energy based on the physical properties of a system.
+User-friendly description: Distinguish energy of motion, position, deformation and internal state.
 
 ##### Distinguish energy from its source
 
+Slug: distinguishEnergyFromItsSource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Energy characterizes the state and changes of a system, whereas a source is a body or process from which energy is transferred to another system; the source does not create it from nothing.
+Methodological description: Energy characterizes the state and changes of a system, whereas a source is a body or process from which energy is transferred to another system; the source does not create it from nothing.
+User-friendly description: Separate the energy of a system from the source transferring it.
 
 ##### Explain kinetic energy as energy of motion
 
+Slug: explainKineticEnergyAsEnergyOfMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Kinetic energy is associated with a body's motion relative to a reference frame and depends on mass and speed, but it is not the same as momentum.
+Methodological description: Kinetic energy is associated with a body's motion relative to a reference frame and depends on mass and speed, but it is not the same as momentum.
+User-friendly description: Explain how a moving body's mass and speed affect its kinetic energy.
 
 ##### Explain potential energy
 
+Slug: explainPotentialEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Potential energy is related to a physical system's configuration and interactions among its components, including bodies' positions in a gravitational field or elastic deformation. Its value is specified relative to a chosen zero level; this competency addresses physical meaning rather than calculation.
+Methodological description: Potential energy is related to a physical system's configuration and interactions among its components, including bodies' positions in a gravitational field or elastic deformation. Its value is specified relative to a chosen zero level; this competency addresses physical meaning rather than calculation.
+User-friendly description: Understand potential energy as related to configuration and a chosen reference level.
 
 ##### Calculate gravitational potential energy
 
+Slug: calculateGravitationalPotentialEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine the change in a body's gravitational potential energy near Earth's surface from its mass, gravitational acceleration, and change in height, correctly accounting for the chosen reference level and units. This calculation assumes an approximately uniform gravitational field and differs from calculating elastic potential energy.
+Methodological description: Determine the change in a body's gravitational potential energy near Earth's surface from its mass, gravitational acceleration, and change in height, correctly accounting for the chosen reference level and units. This calculation assumes an approximately uniform gravitational field and differs from calculating elastic potential energy.
+User-friendly description: Calculate changes in gravitational potential energy from mass, gravity and height.
 
 #### Energy Transfer and Transformation
+
+Slug: energyTransferAndTransformation
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Energy can pass between objects and change form; the sequence of events matters more than the name of a particular device.
+Methodological description: Energy can pass between objects and change form; the sequence of events matters more than the name of a particular device.
+User-friendly description: Discover how energy moves between bodies and changes form.
 
 ##### Identify energy transfer between bodies
 
+Slug: identifyEnergyTransferBetweenBodies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using colliding balls or water heating, show which body transfers energy to which other body.
+Methodological description: Using colliding balls or water heating, show which body transfers energy to which other body.
+User-friendly description: Identify which body gives energy to another during an interaction.
 
 ##### Explain energy transformation in a physical process
 
+Slug: explainEnergyTransformationInAPhysicalProcess
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Energy changes form during physical processes, for example when energy shifts between motion and position; the total energy of an isolated system is conserved.
+Methodological description: Energy changes form during physical processes, for example when energy shifts between motion and position; the total energy of an isolated system is conserved.
+User-friendly description: Trace an energy transformation while accounting for conservation.
 
 #### Conservation of Energy
+
+Slug: conservationOfEnergy
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-The total energy of an isolated system is conserved even as its form or distribution among bodies changes. A decrease in energy available for useful work is not its disappearance; for an open system, exchange with the surroundings must be considered.
+Methodological description: The total energy of an isolated system is conserved even as its form or distribution among bodies changes. A decrease in energy available for useful work is not its disappearance; for an open system, exchange with the surroundings must be considered.
+User-friendly description: Understand why the total energy of an isolated system is conserved.
 
 ##### Explain the law of conservation of energy
 
+Slug: explainTheLawOfConservationOfEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The total energy of an isolated system remains unchanged; for an open system, energy exchange with the surroundings must be taken into account.
+Methodological description: The total energy of an isolated system remains unchanged; for an open system, energy exchange with the surroundings must be taken into account.
+User-friendly description: Explain how energy remains conserved even when forms or locations change.
 
 ##### Explain the loss of useful energy
 
+Slug: explainTheLossOfUsefulEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Dissipation into forms of energy less suitable for a particular task reduces a process's usefulness but does not violate conservation of total energy.
+Methodological description: Dissipation into forms of energy less suitable for a particular task reduces a process's usefulness but does not violate conservation of total energy.
+User-friendly description: Recognize why energy spread into less useful forms has not disappeared.
 
 ##### Refute the idea that energy disappears
 
+Slug: refuteTheIdeaThatEnergyDisappears
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify unaccounted energy transfers and transformations instead of attributing a system's change of state to energy disappearing.
+Methodological description: Identify unaccounted energy transfers and transformations instead of attributing a system's change of state to energy disappearing.
+User-friendly description: Find where energy goes instead of assuming it simply vanishes.
 
 #### Work and Power
+
+Slug: workAndPower
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Work describes energy transfer by a force during displacement, while power describes the rate of energy transfer.
+Methodological description: Work describes energy transfer by a force during displacement, while power describes the rate of energy transfer.
+User-friendly description: Explore the physical meaning of mechanical work and power.
 
 ##### Explain mechanical work
 
+Slug: explainMechanicalWork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Mechanical work involves the component of force along displacement; exerting force without displacement does not perform mechanical work.
+Methodological description: Mechanical work involves the component of force along displacement; exerting force without displacement does not perform mechanical work.
+User-friendly description: Explain why a force transfers energy through displacement.
 
 ##### Explain the physical meaning of power
 
+Slug: explainThePhysicalMeaningOfPower
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Power describes the rate of doing work or transferring energy and is not a separate form of energy.
+Methodological description: Power describes the rate of doing work or transferring energy and is not a separate form of energy.
+User-friendly description: Understand power as the rate at which energy is transferred or work is done.
 
 ### Waves
+
+Slug: waves
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 23
 
 [Not implemented](#)
 
-Oscillations produce recurring disturbances that can propagate through water, air, and other media. Sound is one manifestation, while wave patterns are visible on the surface of water.
+Methodological description: Oscillations produce recurring disturbances that can propagate through water, air, and other media. Sound is one manifestation, while wave patterns are visible on the surface of water.
+User-friendly description: Explore vibrations, sound and the ways wave disturbances travel and interact.
 
 #### Oscillations
+
+Slug: oscillations
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Repetitive motion around a given state allows vibration, periodicity, and sound sources to be described.
+Methodological description: Repetitive motion around a given state allows vibration, periodicity, and sound sources to be described.
+User-friendly description: Learn how repeating motion creates oscillations and sound sources.
 
 ##### Recognize oscillatory motion
 
+Slug: recognizeOscillatoryMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Oscillation is a change in a physical state around equilibrium that may recur; not every motion involving reversals is harmonic oscillation.
+Methodological description: Oscillation is a change in a physical state around equilibrium that may recur; not every motion involving reversals is harmonic oscillation.
+User-friendly description: Recognize when a physical state oscillates around equilibrium.
 
 ##### Relate sound to vibration
 
+Slug: relateSoundToVibration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Sound arises when an oscillating source disturbs an elastic medium; oscillation without a medium does not produce a mechanical sound wave.
+Methodological description: Sound arises when an oscillating source disturbs an elastic medium; oscillation without a medium does not produce a mechanical sound wave.
+User-friendly description: Connect a vibrating source with the sound disturbance it produces.
 
 ##### Detect vibrations of a sound source
 
+Slug: detectVibrationsOfASoundSource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the oscillating part of a system that generates a sound disturbance, as distinct from components that merely transmit vibration onward.
+Methodological description: Identify the oscillating part of a system that generates a sound disturbance, as distinct from components that merely transmit vibration onward.
+User-friendly description: Identify the part of an object that actually vibrates to create sound.
 
 ##### Recognize the periodicity of oscillations
 
+Slug: recognizeThePeriodicityOfOscillations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A periodic oscillation repeats a physical state at equal time intervals; not every motion that changes direction is periodic.
+Methodological description: A periodic oscillation repeats a physical state at equal time intervals; not every motion that changes direction is periodic.
+User-friendly description: Recognize an oscillation that repeats at regular intervals.
 
 #### Wave Properties
+
+Slug: waveProperties
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Waves have a direction of propagation, a characteristic rhythm, and a disturbance magnitude; observing water waves distinguishes wave propagation from transport of all the water.
+Methodological description: Waves have a direction of propagation, a characteristic rhythm, and a disturbance magnitude; observing water waves distinguishes wave propagation from transport of all the water.
+User-friendly description: Discover how waves propagate and how their properties are measured.
 
 ##### Distinguish source oscillation from wave propagation
 
+Slug: distinguishSourceOscillationFromWavePropagation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An oscillating source creates a disturbance that propagates through a medium, while the medium's particles do not necessarily move along with the wavefront.
+Methodological description: An oscillating source creates a disturbance that propagates through a medium, while the medium's particles do not necessarily move along with the wavefront.
+User-friendly description: Distinguish a vibrating source from the disturbance traveling away from it.
 
 ##### Compare wave frequencies by observable rhythm
 
+Slug: compareWaveFrequenciesByObservableRhythm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In two animations, identify which produces more recurring crests in the same amount of time.
+Methodological description: In two animations, identify which produces more recurring crests in the same amount of time.
+User-friendly description: Compare waves by how many cycles occur during the same time.
 
 ##### Explain wave amplitude
 
+Slug: explainWaveAmplitude
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Amplitude is the greatest deviation of a physical quantity from its equilibrium value, not the wave's frequency.
+Methodological description: Amplitude is the greatest deviation of a physical quantity from its equilibrium value, not the wave's frequency.
+User-friendly description: Understand amplitude as the largest deviation from an equilibrium state.
 
 ##### Explain wavelength
 
+Slug: explainWavelength
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Wavelength is the distance between adjacent points at the same phase of the disturbance, such as two successive crests.
+Methodological description: Wavelength is the distance between adjacent points at the same phase of the disturbance, such as two successive crests.
+User-friendly description: Identify wavelength as the spacing between matching points in a wave.
 
 ##### Explain wave speed
 
+Slug: explainWaveSpeed
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Wave speed describes the propagation of a disturbance and differs from the motion of particles within the medium.
+Methodological description: Wave speed describes the propagation of a disturbance and differs from the motion of particles within the medium.
+User-friendly description: Distinguish the speed of a wave from the motion of material particles.
 
 ##### Distinguish wave energy transfer from matter transport
 
+Slug: distinguishWaveEnergyTransferFromMatterTransport
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A wave carries energy without necessarily transporting the entire medium over the corresponding distance.
+Methodological description: A wave carries energy without necessarily transporting the entire medium over the corresponding distance.
+User-friendly description: Explain how waves transfer energy without transporting an entire medium.
 
 #### Acoustics
+
+Slug: acoustics
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Loudness, pitch, and the propagation of sound through a medium are related to oscillation properties; auditory experiences can be explored with safe simulations.
+Methodological description: Loudness, pitch, and the propagation of sound through a medium are related to oscillation properties; auditory experiences can be explored with safe simulations.
+User-friendly description: Explore how vibration and sound propagation affect what we hear.
 
 ##### Compare the loudness of sounds
 
+Slug: compareTheLoudnessOfSounds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Loudness is the perception of sound intensity and also depends on frequency and hearing sensitivity; compare it independently of pitch.
+Methodological description: Loudness is the perception of sound intensity and also depends on frequency and hearing sensitivity; compare it independently of pitch.
+User-friendly description: Compare how loud sounds seem without confusing volume with pitch.
 
 ##### Distinguish high-pitched from low-pitched sounds
 
+Slug: distinguishHighPitchedFromLowPitchedSounds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Pitch is primarily related to the frequency of sound oscillations, not amplitude, which affects intensity.
+Methodological description: Pitch is primarily related to the frequency of sound oscillations, not amplitude, which affects intensity.
+User-friendly description: Recognize high and low pitches by the frequency of sound waves.
 
 ##### Recognize sound transmission through a medium
 
+Slug: recognizeSoundTransmissionThroughAMedium
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Sound requires an elastic material medium, in which pressure or deformation oscillations pass between adjacent parts of matter; mechanical sound does not propagate in a vacuum.
+Methodological description: Sound requires an elastic material medium, in which pressure or deformation oscillations pass between adjacent parts of matter; mechanical sound does not propagate in a vacuum.
+User-friendly description: Explain why sound needs a medium through which vibrations can travel.
 
 ##### Explain sound attenuation with distance
 
+Slug: explainSoundAttenuationWithDistance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-As a wave spreads from a localized source, its energy is generally distributed over an increasing area, reducing intensity; absorption also affects sound levels.
+Methodological description: As a wave spreads from a localized source, its energy is generally distributed over an increasing area, reducing intensity; absorption also affects sound levels.
+User-friendly description: Understand why sounds from a source usually weaken with distance.
 
 ##### Explain an echo as sound reflection
 
+Slug: explainAnEchoAsSoundReflection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using an echo in an empty room, recognize a returning sound wave after it interacts with a surface.
+Methodological description: Using an echo in an empty room, recognize a returning sound wave after it interacts with a surface.
+User-friendly description: Explain an echo as a sound wave reflecting from a surface.
 
 ##### Explain the change in perceived pitch during relative motion of source and listener
 
+Slug: explainTheChangeInPerceivedPitchDuringRelativeMotionOfSourceAndListener
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-For an unchanged sound emitted by a source, explain the Doppler effect: the frequency heard by the observer is higher as the source approaches and lower as it moves away. Do not confuse this frequency change with loudness or engine revolutions.
+Methodological description: For an unchanged sound emitted by a source, explain the Doppler effect: the frequency heard by the observer is higher as the source approaches and lower as it moves away. Do not confuse this frequency change with loudness or engine revolutions.
+User-friendly description: Explore why moving sound sources can change the pitch someone hears.
 
 ##### Explain how sound pitch depends on oscillation frequency
 
+Slug: explainHowSoundPitchDependsOnOscillationFrequency
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-All else being equal, a higher sound frequency corresponds to a higher pitch; it is not the same as increased loudness.
+Methodological description: All else being equal, a higher sound frequency corresponds to a higher pitch; it is not the same as increased loudness.
+User-friendly description: Connect higher sound frequency with higher perceived pitch.
 
 ##### Explain how sound loudness depends on oscillation amplitude
 
+Slug: explainHowSoundLoudnessDependsOnOscillationAmplitude
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-All else being equal, a greater sound-pressure amplitude means greater intensity, although perceived loudness also depends on frequency.
+Methodological description: All else being equal, a greater sound-pressure amplitude means greater intensity, although perceived loudness also depends on frequency.
+User-friendly description: Connect greater sound amplitude with intensity while accounting for perception.
 
 #### Wave Phenomena
+
+Slug: wavePhenomena
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Reflection, refraction, interference, diffraction, and resonance can occur in different kinds of physical waves.
+Methodological description: Reflection, refraction, interference, diffraction, and resonance can occur in different kinds of physical waves.
+User-friendly description: Discover how waves reflect, bend, overlap, spread and resonate.
 
 ##### Explain wave reflection
 
+Slug: explainWaveReflection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Part of a disturbance may return from a boundary between media, changing its direction of propagation.
+Methodological description: Part of a disturbance may return from a boundary between media, changing its direction of propagation.
+User-friendly description: Explain how a wave can turn back when it reaches a boundary.
 
 ##### Explain wave refraction
 
+Slug: explainWaveRefraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A change in propagation speed at a boundary between media can change a wave's direction while the source frequency stays the same.
+Methodological description: A change in propagation speed at a boundary between media can change a wave's direction while the source frequency stays the same.
+User-friendly description: Understand why wave direction may change when propagation speed changes.
 
 ##### Explain wave interference
 
+Slug: explainWaveInterference
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Superposed waves may reinforce or weaken the resulting disturbance depending on their phases.
+Methodological description: Superposed waves may reinforce or weaken the resulting disturbance depending on their phases.
+User-friendly description: Recognize when overlapping waves reinforce or cancel one another.
 
 ##### Explain wave diffraction
 
+Slug: explainWaveDiffraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Waves may bend around obstacles or spread after passing through openings depending on relative dimensions and wavelength.
+Methodological description: Waves may bend around obstacles or spread after passing through openings depending on relative dimensions and wavelength.
+User-friendly description: Explore how waves spread around obstacles or through openings.
 
 ##### Explain resonance
 
+Slug: explainResonance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A periodic driving force near a system's natural frequency can substantially increase the amplitude of its oscillations.
+Methodological description: A periodic driving force near a system's natural frequency can substantially increase the amplitude of its oscillations.
+User-friendly description: Understand how repeated driving near a natural frequency can amplify oscillations.
 
 ### Thermodynamics
+
+Slug: thermodynamics
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Thermal processes describe changes in temperature, energy transfer, and transitions between states of matter. Macroscopic observations are distinguished from particle-level explanations in the neighboring Domain.
+Methodological description: Thermal processes describe changes in temperature, energy transfer, and transitions between states of matter. Macroscopic observations are distinguished from particle-level explanations in the neighboring Domain.
+User-friendly description: Explore temperature, heating, energy transfer and changes of state.
 
 #### Temperature and Heating
+
+Slug: temperatureAndHeating
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Temperature characterizes thermal state but is not the same as a subjective feeling of warmth or cold; heating and cooling are changes of state.
+Methodological description: Temperature characterizes thermal state but is not the same as a subjective feeling of warmth or cold; heating and cooling are changes of state.
+User-friendly description: Learn to distinguish temperature measurements from feelings of warmth.
 
 ##### Compare objects' temperatures
 
+Slug: compareObjectsTemperatures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Temperature characterizes a body's thermal state; valid comparisons rely on measurements, not the intensity of subjective warmth.
+Methodological description: Temperature characterizes a body's thermal state; valid comparisons rely on measurements, not the intensity of subjective warmth.
+User-friendly description: Compare temperatures using instruments rather than touch alone.
 
 ##### Distinguish temperature from the sensation of warmth
 
+Slug: distinguishTemperatureFromTheSensationOfWarmth
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why the sensation of touch is not always an accurate measure of temperature.
+Methodological description: Explain why the sensation of touch is not always an accurate measure of temperature.
+User-friendly description: Explain why two objects at the same temperature can feel different.
 
 ##### Recognize heating
 
+Slug: recognizeHeating
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-An increase in temperature reflects a change in thermal state, but energy input does not always increase temperature during a phase transition.
+Methodological description: An increase in temperature reflects a change in thermal state, but energy input does not always increase temperature during a phase transition.
+User-friendly description: Recognize changes in thermal state during heating.
 
 ##### Recognize cooling
 
+Slug: recognizeCooling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A decrease in temperature can accompany energy transfer to the surroundings or changes in a system's physical state.
+Methodological description: A decrease in temperature can accompany energy transfer to the surroundings or changes in a system's physical state.
+User-friendly description: Recognize cooling as a physical change in thermal state.
 
 #### Heat-Transfer Mechanisms
+
+Slug: heatTransferMechanisms
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Thermal energy is transferred through particle interactions, liquid or gas motion, or electromagnetic radiation. Several mechanisms may act simultaneously in a single process.
+Methodological description: Thermal energy is transferred through particle interactions, liquid or gas motion, or electromagnetic radiation. Several mechanisms may act simultaneously in a single process.
+User-friendly description: Discover how heat transfers through matter, flowing fluids and radiation.
 
 ##### Predict the direction of heat transfer
 
+Slug: predictTheDirectionOfHeatTransfer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In the absence of external work, heat spontaneously flows from a warmer body to a colder one until thermal equilibrium is reached.
+Methodological description: In the absence of external work, heat spontaneously flows from a warmer body to a colder one until thermal equilibrium is reached.
+User-friendly description: Predict which way thermal energy flows between objects at different temperatures.
 
 ##### Explain conduction as energy transfer through matter
 
+Slug: explainConductionAsEnergyTransferThroughMatter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using a metal spoon heated in hot water, explain energy transfer without bulk movement of the entire substance.
+Methodological description: Using a metal spoon heated in hot water, explain energy transfer without bulk movement of the entire substance.
+User-friendly description: Explain heat conduction without requiring the substance to flow.
 
 ##### Explain convection as energy transfer by fluid flow
 
+Slug: explainConvectionAsEnergyTransferByFluidFlow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Convection carries thermal energy with macroscopic motion of a liquid or gas; distinguish it from conduction without bulk material flow.
+Methodological description: Convection carries thermal energy with macroscopic motion of a liquid or gas; distinguish it from conduction without bulk material flow.
+User-friendly description: Recognize how moving liquids and gases carry thermal energy.
 
 ##### Explain radiative heat transfer
 
+Slug: explainRadiativeHeatTransfer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using heat from the Sun or fire, demonstrate energy transfer by electromagnetic waves without contact or moving air.
+Methodological description: Using heat from the Sun or fire, demonstrate energy transfer by electromagnetic waves without contact or moving air.
+User-friendly description: Explain how electromagnetic radiation transfers heat without a material medium.
 
 ##### Identify the heat-transfer mechanism from a physical situation
 
+Slug: identifyTheHeatTransferMechanismFromAPhysicalSituation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-For a hot spoon, heated water, or sunlight, select and justify conduction, convection, radiation, or a combination of them. This is an integrative competency, not three separate tests combined in one task.
+Methodological description: For a hot spoon, heated water, or sunlight, select and justify conduction, convection, radiation, or a combination of them. This is an integrative competency, not three separate tests combined in one task.
+User-friendly description: Identify which heat-transfer processes operate in a given situation.
 
 #### Thermal Insulation
+
+Slug: thermalInsulation
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Insulating materials slow down energy transfer but do not create energy themselves; this differs from describing the three mechanisms of heat exchange.
+Methodological description: Insulating materials slow down energy transfer but do not create energy themselves; this differs from describing the three mechanisms of heat exchange.
+User-friendly description: Explore how insulation slows the transfer of heat.
 
 ##### Compare materials' thermal-insulation properties
 
+Slug: compareMaterialsThermalInsulationProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine from experimental results which material slows heat transfer more effectively.
+Methodological description: Determine from experimental results which material slows heat transfer more effectively.
+User-friendly description: Compare materials by how well they reduce unwanted heat transfer.
 
 ##### Select a material for maintaining temperature
 
+Slug: selectAMaterialForMaintainingTemperature
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose an insulator for a simple everyday task and justify the choice using the material's properties.
+Methodological description: Choose an insulator for a simple everyday task and justify the choice using the material's properties.
+User-friendly description: Choose an insulating material for a practical temperature-control need.
 
 #### Phase Transitions
+
+Slug: phaseTransitions
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Melting, freezing, evaporation, and condensation link thermal conditions to changes of state of the same substance.
+Methodological description: Melting, freezing, evaporation, and condensation link thermal conditions to changes of state of the same substance.
+User-friendly description: Discover how heating and cooling can change matter's physical state.
 
 ##### Distinguish melting from freezing of water
 
+Slug: distinguishMeltingFromFreezingOfWater
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Melting changes a substance from solid to liquid, while freezing is the reverse; both are phase transitions of the same substance.
+Methodological description: Melting changes a substance from solid to liquid, while freezing is the reverse; both are phase transitions of the same substance.
+User-friendly description: Distinguish ice melting from liquid water freezing.
 
 ##### Explain evaporation
 
+Slug: explainEvaporation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaporation is the transition of particles from the surface of a liquid into the gas phase and can occur without boiling.
+Methodological description: Evaporation is the transition of particles from the surface of a liquid into the gas phase and can occur without boiling.
+User-friendly description: Explain evaporation from a liquid's surface without boiling.
 
 ##### Explain condensation
 
+Slug: explainCondensation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Condensation is the transition of matter from gas to liquid, including the formation of droplets from water vapor.
+Methodological description: Condensation is the transition of matter from gas to liquid, including the formation of droplets from water vapor.
+User-friendly description: Recognize gas turning into liquid through condensation.
 
 ##### Distinguish evaporation from boiling
 
+Slug: distinguishEvaporationFromBoiling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Boiling produces vapor bubbles throughout the volume of a liquid, whereas evaporation occurs at its surface.
+Methodological description: Boiling produces vapor bubbles throughout the volume of a liquid, whereas evaporation occurs at its surface.
+User-friendly description: Distinguish bubbles formed during boiling from surface evaporation.
 
 ### Molecular Physics
+
+Slug: molecularPhysics
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Particle models help explain physical properties and changes in states of matter. Unlike chemistry, this Domain focuses on particle movement, interactions, and arrangement rather than chemical reactions.
+Methodological description: Particle models help explain physical properties and changes in states of matter. Unlike chemistry, this Domain focuses on particle movement, interactions, and arrangement rather than chemical reactions.
+User-friendly description: Explore how the movement and arrangement of particles explain matter's behavior.
 
 #### Particle Model of Matter
+
+Slug: particleModelOfMatter
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Substances consist of particles with spaces and interactions between them; the model explains properties without requiring complex formulas.
+Methodological description: Substances consist of particles with spaces and interactions between them; the model explains properties without requiring complex formulas.
+User-friendly description: Learn how invisible particles interact to make up physical substances.
 
 ##### Explain the particulate structure of matter
 
+Slug: explainTheParticulateStructureOfMatter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Demonstrate that even water in a transparent glass consists of particles invisible to the naked eye.
+Methodological description: Demonstrate that even water in a transparent glass consists of particles invisible to the naked eye.
+User-friendly description: Explain why ordinary matter is made of particles too small to see directly.
 
 ##### Compare particle arrangements in solids, liquids, and gases
 
+Slug: compareParticleArrangementsInSolidsLiquidsAndGases
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Particles in solids mostly oscillate around fixed positions; in liquids, particles can move relative to one another; and in gases they have much greater freedom of movement and characteristic interparticle distances.
+Methodological description: Particles in solids mostly oscillate around fixed positions; in liquids, particles can move relative to one another; and in gases they have much greater freedom of movement and characteristic interparticle distances.
+User-friendly description: Compare particle arrangements in solids, liquids and gases.
 
 ##### Relate particle motion to temperature changes
 
+Slug: relateParticleMotionToTemperatureChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Using an animation, explain why average particle motion generally becomes more vigorous when heated.
+Methodological description: Using an animation, explain why average particle motion generally becomes more vigorous when heated.
+User-friendly description: Connect heating with changes in the typical motion of particles.
 
 ##### Explain random thermal motion of particles
 
+Slug: explainRandomThermalMotionOfParticles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Particles of matter are constantly moving, but not all at the same speed; the type of motion depends on the physical state.
+Methodological description: Particles of matter are constantly moving, but not all at the same speed; the type of motion depends on the physical state.
+User-friendly description: Understand why particles continually move in different ways and speeds.
 
 ##### Explain gas pressure through particle motion
 
+Slug: explainGasPressureThroughParticleMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-The combined collisions of particles with the vessel walls produce force per unit area, that is, pressure.
+Methodological description: The combined collisions of particles with the vessel walls produce force per unit area, that is, pressure.
+User-friendly description: Explain gas pressure through many particle collisions with a surface.
 
 ##### Explain thermal expansion through particle motion and interactions
 
+Slug: explainThermalExpansionThroughParticleMotionAndInteractions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Heating often changes the average distances between particles, not the sizes of the molecules themselves.
+Methodological description: Heating often changes the average distances between particles, not the sizes of the molecules themselves.
+User-friendly description: Recognize why expansion usually changes particle spacing, not particle size.
 
 ##### Explain the properties of states of matter through particle motion
 
+Slug: explainThePropertiesOfStatesOfMatterThroughParticleMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differences in the arrangement, motion, and interactions of particles explain the properties of solids, liquids, and gases.
+Methodological description: Differences in the arrangement, motion, and interactions of particles explain the properties of solids, liquids, and gases.
+User-friendly description: Use particle motion and interactions to explain the properties of states of matter.
 
 #### Diffusion and Mixing
+
+Slug: diffusionAndMixing
+Action: create
+Status: pending
 
 Skills: 1
 
 [Not implemented](#)
 
-Random thermal motion can cause particles to spread gradually without deliberate stirring.
+Methodological description: Random thermal motion can cause particles to spread gradually without deliberate stirring.
+User-friendly description: Discover how random particle movement causes substances to spread and mix.
 
 ##### Explain diffusion
 
+Slug: explainDiffusion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Diffusion results from particles' thermal motion and the gradual equalization of their concentrations without the need for macroscopic mixing.
+Methodological description: Diffusion results from particles' thermal motion and the gradual equalization of their concentrations without the need for macroscopic mixing.
+User-friendly description: Explain how diffusion can occur without stirring.
 
 #### Gas Properties
+
+Slug: gasProperties
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-The compressibility of gases and the dependence of their pressure on conditions follow from particle motion and the spaces between particles.
+Methodological description: The compressibility of gases and the dependence of their pressure on conditions follow from particle motion and the spaces between particles.
+User-friendly description: Explore the physical properties of gases using the particle model.
 
 ##### Explain gas compressibility
 
+Slug: explainGasCompressibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compressing a gas reduces the average distances between particles while the sizes of the molecules remain virtually unchanged.
+Methodological description: Compressing a gas reduces the average distances between particles while the sizes of the molecules remain virtually unchanged.
+User-friendly description: Understand why gases can be squeezed into a smaller volume.
 
 ##### Explain how gas pressure depends on temperature at constant volume
 
+Slug: explainHowGasPressureDependsOnTemperatureAtConstantVolume
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-At constant volume, increasing a gas's temperature generally increases its pressure because the particles move more vigorously.
+Methodological description: At constant volume, increasing a gas's temperature generally increases its pressure because the particles move more vigorously.
+User-friendly description: Explain why gas pressure increases with temperature when volume stays fixed.
 
 ### Electromagnetism
 
