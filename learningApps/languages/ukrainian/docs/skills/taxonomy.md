@@ -1824,417 +1824,737 @@ User-friendly description: Recognize when не functions as a separate negative 
 
 ### Речення та текст
 
+Slug: sentencesAndTexts
+Action: create
+Status: pending
+
 Groups: 5 · Skills: 20
 
 [Not implemented](#)
 
-Синтаксичні зв'язки в реченні й побудова цілісного змісту з кількох речень. Комунікативна структура тут відділена від технічного розставлення пунктуаційних знаків.
+Methodological description: Study syntactic links within sentences and how several sentences build coherent meaning. Communicative structure is separate from the mechanical placement of punctuation marks.
+User-friendly description: Explore how Ukrainian sentences connect to create meaningful texts.
 
 #### Будова речення
+
+Slug: sentenceStructure
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Підпорядкування слів і організація граматичної основи, які забезпечують завершеність повідомлення.
+Methodological description: Examine how words depend on one another and how a grammatical core makes a sentence complete.
+User-friendly description: Understand how the parts of a Ukrainian sentence work together.
 
 ##### Слово, словосполучення і речення
 
+Slug: wordPhraseAndSentence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти лексичну одиницю, залежне поєднання слів і синтаксично завершену конструкцію.
+Methodological description: Distinguish a lexical item, a dependent combination of words, and a syntactically complete construction.
+User-friendly description: Tell a word apart from a phrase and a complete sentence.
 
 ##### Зв'язки слів у реченні
 
+Slug: wordRelationshipsInSentence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Установлювати, від якого слова залежить інше та який змістовий зв'язок виражає.
+Methodological description: Identify which word depends on another and what semantic relationship is expressed.
+User-friendly description: Recognize how words are connected inside a sentence.
 
 ##### Підмет
 
+Slug: sentenceSubject
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати головний член речення, про який повідомляється дія, стан або ознака.
+Methodological description: Identify the principal sentence member about which an action, state, or property is stated.
+User-friendly description: Find the subject of a Ukrainian sentence.
 
 ##### Присудок
 
+Slug: sentencePredicate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати головний член, що стверджує дію, стан чи ознаку підмета.
+Methodological description: Identify the principal sentence member expressing the subject's action, state, or property.
+User-friendly description: Find what the predicate says about the subject.
 
 ##### Однорідні члени речення
 
+Slug: homogeneousSentenceMembers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати синтаксично рівноправні члени, що стосуються того самого слова, відрізняючи їх від різнотипних залежних конструкцій.
+Methodological description: Recognize syntactically equal members related to the same word and distinguish them from different dependent constructions.
+User-friendly description: Recognize coordinated sentence members that have an equal role.
 
 ##### Звертання в реченні
 
+Slug: directAddressInSentence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати називання адресата мовлення, яке не входить до граматичної основи речення, і відрізняти його від підмета.
+Methodological description: Identify the person being addressed, who is not part of the grammatical core, and distinguish direct address from the subject.
+User-friendly description: Recognize words directly addressing someone in a sentence.
 
 #### Типи речень
 
+Slug: sentenceTypes
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Функціональні відмінності синтаксичних конструкцій за метою та інтонаційним оформленням.
+Methodological description: Distinguish the communicative purposes and intonational forms of sentence constructions.
+User-friendly description: Explore statements, questions, requests and expressive sentences.
 
 ##### Мета висловлювання речення
 
+Slug: sentenceCommunicativePurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти розповідні, питальні та спонукальні конструкції за змістом.
+Methodological description: Distinguish declarative, interrogative, and imperative constructions by their meaning.
+User-friendly description: Tell whether a sentence states, asks or tells someone to act.
 
 ##### Окличні та неокличні речення
 
+Slug: exclamatoryAndNonexclamatorySentences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розмежовувати емоційне виділення й саму комунікативну функцію речення.
+Methodological description: Distinguish emotional emphasis from a sentence's basic communicative function.
+User-friendly description: Recognize exclamatory sentences without confusing emotion and purpose.
 
 ##### Побудова речень за комунікативною метою
 
+Slug: constructSentencesByPurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Створювати граматично відповідні твердження, запитання та спонукання з урахуванням змісту, інтонації й можливостей адресата; продуктивне вживання відрізняється від розпізнавання виду.
+Methodological description: Produce grammatically appropriate statements, questions, and directives for their meaning, intonation, and audience; producing them differs from recognizing sentence types.
+User-friendly description: Write or say sentences that suit a chosen communicative purpose.
 
 #### Зв'язність тексту
 
+Slug: textCoherence
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Засоби смислового поєднання речень в одне повідомлення та поділу його на частини.
+Methodological description: Study how language connects sentences into one message and divides it into meaningful units.
+User-friendly description: Understand what makes several sentences belong together in a text.
 
 ##### Текст і набір речень
 
+Slug: textVersusSentenceCollection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти послідовне розкриття спільної теми від випадкового сусідства висловлювань.
+Methodological description: Distinguish development of a common topic from a random sequence of neighboring statements.
+User-friendly description: Tell a coherent text from an unrelated list of sentences.
 
 ##### Логічна послідовність тексту
 
+Slug: logicalTextSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати часовий або причинний порядок смислових фрагментів, у тому числі виправляючи невдалу послідовність у власному тексті, без втрати основної думки.
+Methodological description: Determine temporal or causal order among content sections, including revising a poor sequence in one's own writing while preserving the central point.
+User-friendly description: Put parts of a text into a logical order that supports its main idea.
 
 ##### Мовні засоби зв'язності
 
+Slug: linguisticCohesionDevices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Використовувати повтор, займенникову заміну й сполучні слова для з'єднання смислу.
+Methodological description: Use repetition, pronoun substitution, and linking words to connect meanings across sentences.
+User-friendly description: Connect sentences with suitable repeated words, pronouns and links.
 
 ##### Абзацний поділ
 
+Slug: paragraphDivision
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виділяти окремі смислові частини й знаходити природне місце переходу до нової думки.
+Methodological description: Identify separate units of meaning and the natural point where a new thought begins.
+User-friendly description: Divide a text into paragraphs at meaningful changes of idea.
 
 #### Змістова структура
+
+Slug: textContentStructure
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Організація змісту через назву, спільну тему, головну думку та план викладу.
+Methodological description: Organize content through its title, shared topic, main idea, and outline.
+User-friendly description: Explore how a title, topic, central idea and plan structure a text.
 
 ##### Заголовок тексту
 
+Slug: textTitle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Створювати коротку назву, що орієнтує читача на предмет або провідний акцент тексту, не підміняючи її повним викладом теми чи тези.
+Methodological description: Create a concise title directing readers to the subject or chief focus without turning it into a complete summary or thesis.
+User-friendly description: Choose a title that suggests what a text is about.
 
 ##### Тема тексту
 
+Slug: textTopic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати предмет мовлення, спільний для основних смислових частин тексту, незалежно від його наявного чи можливого заголовка.
+Methodological description: Identify the subject shared by the main parts of a text independently of its existing or possible title.
+User-friendly description: Identify what a whole text is about.
 
 ##### Основна думка тексту
 
+Slug: textMainIdea
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати головне повідомлення, заради якого наведено факти й приклади.
+Methodological description: State the central message that the supporting facts and examples serve.
+User-friendly description: Find the main idea supported by a text's details.
 
 ##### План тексту
 
+Slug: textOutline
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виділяти послідовні змістові частини й стисло визначати роль кожної.
+Methodological description: Identify consecutive meaningful sections and concisely describe each one's role.
+User-friendly description: Create a short plan showing the order of ideas in a text.
 
 #### Типи тексту
+
+Slug: textTypes
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Різні способи розгортання змісту через події, ознаки або обґрунтування певної тези.
+Methodological description: Distinguish ways to develop content through events, characteristics, or reasons for a claim.
+User-friendly description: Recognize whether a text narrates, describes or reasons.
 
 ##### Текст-розповідь
 
+Slug: narrativeText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати виклад, що організований перебігом подій і зміною ситуації.
+Methodological description: Recognize a text structured around a sequence of events and changing circumstances.
+User-friendly description: Identify a text that tells events as a story.
 
 ##### Текст-опис
 
+Slug: descriptiveText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати виклад, що зосереджений на характерних властивостях об'єкта.
+Methodological description: Recognize a text centered on the distinguishing properties of an object.
+User-friendly description: Identify a text that describes someone's or something's features.
 
 ##### Текст-міркування
 
+Slug: reasoningText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати тезу та пов'язані з нею підстави, відрізняючи їх від простого повтору.
+Methodological description: Identify a thesis and its supporting reasons, distinguishing reasoning from repetition.
+User-friendly description: Find a claim and the reasons that support it in a text.
 
 ### Орфографія та пунктуація
+
+Slug: orthographyAndPunctuation
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
-Нормативні правила запису українських слів і позначення синтаксичних меж. На відміну від фонетичного аналізу, тут розглядається вибір правильного написання, а не лише звучання.
+Methodological description: Study normative spellings of Ukrainian words and the marks used for syntactic boundaries. Unlike phonetic analysis, the focus is choosing correct written forms rather than merely describing sounds.
+User-friendly description: Learn to spell Ukrainian words and punctuate sentences correctly.
 
 #### Звуко-буквений правопис
 
+Slug: soundBasedOrthography
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Вибір букв у випадках, коли орфографічне написання залежить від будови слова чи особливостей української вимови.
+Methodological description: Choose letters where standard spelling depends on word structure or features of Ukrainian pronunciation.
+User-friendly description: Apply spelling rules involving sounds and letter combinations.
 
 ##### Ненаголошені е та и в корені
 
+Slug: unstressedEAndYInRoots
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перевіряти сумнівну букву формою чи спорідненим словом з наголосом або словником.
+Methodological description: Verify uncertain root letters е and и using a related stressed form or a dictionary.
+User-friendly description: Check whether an unstressed root vowel should be written е or и.
 
 ##### Написання дзвінких і глухих приголосних
 
+Slug: spellingVoicedAndVoicelessConsonants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зберігати нормативні графеми, враховуючи вплив сусідніх звуків на вимову.
+Methodological description: Preserve standard spellings while accounting for neighboring sounds influencing pronunciation.
+User-friendly description: Spell voiced and voiceless consonants correctly despite changes in pronunciation.
 
 ##### Буквосполучення йо та ьо
 
+Slug: spellingYoAndSoftYoCombinations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вибирати написання за звуковою будовою й позицією відповідної сполуки.
+Methodological description: Choose йо or ьо according to the pronunciation and position of the relevant sound sequence.
+User-friendly description: Decide when Ukrainian spelling uses йо or ьо.
 
 ##### Буквосполучення дж та дз
 
+Slug: spellingDzhAndDzCombinations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати звуки нормативними поєднаннями букв з урахуванням морфемних меж.
+Methodological description: Represent affricates with their standard letter combinations while accounting for morpheme boundaries.
+User-friendly description: Write дж and дз correctly in different words.
 
 #### М'якість і роздільна вимова
+
+Slug: softnessAndSeparatePronunciation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Письмове розрізнення м'якості приголосного та наявності роздільної вимови.
+Methodological description: Distinguish in writing between consonant softness and separate pronunciation of following sounds.
+User-friendly description: Recognize written signs of softness and separated pronunciation.
 
 ##### Правопис м'якого знака
 
+Slug: softSignSpelling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Використовувати ь у нормативних позиціях без механічного додавання після кожного м'якого звука.
+Methodological description: Use ь in standard positions without mechanically placing it after every soft consonant.
+User-friendly description: Apply rules for writing the Ukrainian soft sign.
 
 ##### Правопис апострофа
 
+Slug: apostropheSpelling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Позначати роздільну вимову перед я, ю, є, ї відповідно до орфографічних умов.
+Methodological description: Mark separate pronunciation before я, ю, є, and ї according to orthographic conditions.
+User-friendly description: Know when Ukrainian words require an apostrophe.
 
 ##### Правопис я, ю, є та ї
 
+Slug: spellingYaYuYeYi
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вибирати графеми відповідно до голосного, звука [й] і м'якості попереднього приголосного.
+Methodological description: Choose the graphemes я, ю, є, and ї according to the vowel, [й] sound, and softness of the preceding consonant.
+User-friendly description: Choose the correct letters я, ю, є and ї in Ukrainian words.
 
 ##### Подвоєння букв
 
+Slug: doubleConsonantLetters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відтворювати нормативне подвоєння чи подовження приголосних у відповідних словах.
+Methodological description: Write standard doubled or lengthened consonants in words where the rules require them.
+User-friendly description: Recognize when a consonant letter is doubled in Ukrainian spelling.
 
 #### Написання слів
+
+Slug: wholeWordSpelling
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Графічні межі слова, великі букви, написання окремих часток і нормативний поділ слова між рядками; ця група розглядає цілісне оформлення, а не окремий добір звукових букв.
+Methodological description: Study word boundaries, capitalization, separate particles, and conventional line breaking rather than individual sound-to-letter choices.
+User-friendly description: Learn rules for capitals, spacing, word division and separate particles.
 
 ##### Велика буква на початку речення
 
+Slug: capitalAtSentenceStart
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Позначати графічний початок самостійного речення незалежно від його мети.
+Methodological description: Mark the beginning of an independent sentence with a capital letter regardless of its purpose.
+User-friendly description: Start each independent sentence with a capital letter.
 
 ##### Велика буква у власних назвах
 
+Slug: capitalizationOfProperNouns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти написання індивідуальних найменувань і загальних назв.
+Methodological description: Distinguish the written forms of individual names from general category names.
+User-friendly description: Use capitals correctly for proper names.
 
 ##### Пробіли між словами
 
+Slug: spacesBetweenWords
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати графічні межі лексичних одиниць без злиття сусідніх слів.
+Methodological description: Mark lexical boundaries without combining adjacent words.
+User-friendly description: Separate written Ukrainian words with appropriate spaces.
 
 ##### Окреме написання не з дієсловами
 
+Slug: separateNeWithVerbs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати заперечну частку окремо, враховуючи лексикалізовані винятки.
+Methodological description: Write the negative particle не separately from verbs, accounting for lexicalized exceptions.
+User-friendly description: Apply the usual rule for writing не separately from Ukrainian verbs.
 
 ##### Перенос слів за правилами
 
+Slug: wordDivisionAtLineBreaks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ураховувати склади, неподільні буквосполучення та заборону відриву однієї букви.
+Methodological description: Account for syllables, indivisible letter combinations, and the prohibition on leaving a single letter isolated.
+User-friendly description: Divide a word correctly when moving part of it to the next line.
 
 #### Розділові знаки
+
+Slug: punctuationMarks
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Позначення кінця речення та синтаксичних відношень за допомогою пунктуації.
+Methodological description: Use punctuation to indicate sentence endings and syntactic relationships.
+User-friendly description: Learn which punctuation marks Ukrainian sentences need.
 
 ##### Знаки завершення речення
 
+Slug: sentenceEndingMarks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вибирати крапку, знак питання чи знак оклику за змістом та інтонацією.
+Methodological description: Choose a period, question mark, or exclamation mark based on meaning and intonation.
+User-friendly description: Choose the right mark to finish a sentence.
 
 ##### Кома між однорідними членами
 
+Slug: commasBetweenHomogeneousMembers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Позначати межі перелічуваних елементів відповідно до способу їх поєднання.
+Methodological description: Mark the boundaries of listed or coordinated members according to how they are connected.
+User-friendly description: Place commas correctly between coordinated sentence parts.
 
 ##### Знаки при звертанні
 
+Slug: punctuationWithDirectAddress
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виділяти звертання розділовими знаками, не плутаючи його з підметом.
+Methodological description: Set off direct addresses with punctuation, without confusing them with subjects.
+User-friendly description: Punctuate names and expressions used to address someone.
 
 ##### Пунктуація діалогу
 
+Slug: dialoguePunctuation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати на письмі межі реплік співрозмовників нормативними знаками.
+Methodological description: Mark the boundaries of different speakers' turns according to standard written conventions.
+User-friendly description: Use punctuation to show where dialogue turns begin and end.
 
 #### Правописна самоперевірка
+
+Slug: spellingSelfCheck
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Самостійне знаходження сумнівних написань і вибір надійного способу їх уточнення.
+Methodological description: Independently locate doubtful spellings and choose a dependable verification method.
+User-friendly description: Learn to check your own writing for spelling mistakes.
 
 ##### Виявлення орфографічної помилки
 
+Slug: identifySpellingError
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Помічати місце, де написання потребує перевірки за правилом або словником.
+Methodological description: Find a position in a word where the spelling needs confirmation from a rule or dictionary.
+User-friendly description: Spot words whose spelling needs to be verified.
 
 ##### Перевірка написання за джерелом
 
+Slug: verifySpellingWithSource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обґрунтовувати написання застосовним правилом чи достовірним словниковим записом.
+Methodological description: Justify a written form with an applicable spelling rule or reliable dictionary entry.
+User-friendly description: Check a Ukrainian spelling using a trusted rule or dictionary.
 
 ### Медіакомунікація
+
+Slug: mediaCommunication
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 9
 
 [Not implemented](#)
 
-Мовні способи сприймання, тлумачення та створення повідомлень, у яких зміст передається словами, звуком, зображенням чи їх поєднанням. Аналізує комунікативну мету й організацію повідомлення, а не технічну роботу з пристроями, загальну кібербезпеку або економічні механізми реклами.
+Methodological description: Study how meaning is understood and created through words, sound, images, or their combination. Focus on communicative purpose and message organization, not device operation, general cybersecurity, or advertising economics.
+User-friendly description: Explore messages that combine Ukrainian words, images and sounds.
 
 #### Сприймання медіаповідомлень
 
+Slug: understandingMediaMessages
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Відновлення змісту повідомлень із поєднаних усних, письмових і візуальних елементів, у яких жоден із каналів не обов'язково передає зміст повністю.
+Methodological description: Interpret messages combining speech, writing, and visuals, where no single channel necessarily carries the full meaning.
+User-friendly description: Understand the combined meaning of pictures, words and sounds.
 
 ##### Зміст медіаповідомлення
 
+Slug: mediaMessageContent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати основне повідомлення, яке складається зі словесного, звукового чи зображального змісту, враховуючи їхню спільну роль.
+Methodological description: Identify the central message built by verbal, acoustic, and visual information, considering how they work together.
+User-friendly description: Find the main point of a message using more than one medium.
 
 ##### Зв'язок словесної та зображальної інформації
 
+Slug: verbalVisualRelationship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Установлювати, як підпис, висловлювання чи текст співвідносяться із зображенням: підтверджують, доповнюють, уточнюють або змінюють інтерпретацію повідомлення.
+Methodological description: Determine whether a caption, statement, or written text confirms, adds to, clarifies, or changes the interpretation of an image.
+User-friendly description: Understand how captions and pictures work together.
 
 ##### Зв'язок звукової та зображальної інформації
 
+Slug: audioVisualRelationship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати смислові відповідності між почутими словами чи звуками та зображенням, помічаючи випадки, коли вони створюють різні враження.
+Methodological description: Identify meaningful correspondences between heard words or sounds and images, including cases that create conflicting impressions.
+User-friendly description: Notice when audio and visuals support or contradict each other.
 
 #### Мовний намір і оцінка
 
+Slug: communicativeIntentAndEvaluation
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Тлумачення адресата, завдання повідомлення та лексичних засобів впливу; мовні ознаки оцінки відокремлюються від незалежної перевірки достовірності інформації.
+Methodological description: Interpret audience, purpose, and linguistic influence cues while keeping linguistic evidence of evaluation separate from independent fact-checking.
+User-friendly description: Recognize a message's audience, purpose and evaluative language.
 
 ##### Адресат і мета медіаповідомлення
 
+Slug: mediaAudienceAndPurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати адресата та намір автора за словами, звертаннями, інтонацією і формою подачі, розрізняючи інформування, переконування та спонукання.
+Methodological description: Identify intended recipients and an author's purpose from words, address, intonation, and presentation; distinguish informing, persuading, and urging action.
+User-friendly description: Recognize who a media message addresses and what it wants to achieve.
 
 ##### Мовне вираження факту та оцінки
 
+Slug: linguisticFactAndOpinion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати фактичне повідомлення від оцінних суджень за використаними автором словами, зокрема оцінними прикметниками та формулюваннями; це не рівнозначне перевірці достовірності фактів.
+Methodological description: Distinguish factual communication from evaluative judgments through word choice, especially evaluative adjectives and wording; this is not the same as verifying the facts.
+User-friendly description: Recognize language that states facts versus expresses opinions.
 
 ##### Мовні засоби переконування
 
+Slug: languageOfPersuasion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати заклики, емоційно забарвлені слова та способи звернення до адресата, через які автор прагне вплинути на його ставлення чи дію.
+Methodological description: Identify appeals, emotionally charged words, and forms of address used to influence an audience's attitudes or actions.
+User-friendly description: Spot language used to persuade or encourage an audience.
 
 #### Створення медіаповідомлень
+
+Slug: creatingMediaMessages
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Добір змісту й взаємодоповнювальних засобів висловлювання для конкретного адресата та комунікативного результату.
+Methodological description: Choose content and complementary modes of expression for a particular audience and intended communicative outcome.
+User-friendly description: Create messages suited to their audience and purpose.
 
 ##### Створення медіаповідомлення для адресата
 
+Slug: composeMediaMessageForAudience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формувати власне коротке інформаційне або спонукальне повідомлення, добираючи зміст і мовний регістр до потреб адресата.
+Methodological description: Produce a short informative or persuasive message, adapting content and language register to its intended audience.
+User-friendly description: Write a short media message that suits the people receiving it.
 
 ##### Поєднання слова та зображення у власному повідомленні
 
+Slug: combineWordsAndImages
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Створювати погоджений словесно-зображальний зміст, де підпис і візуальний елемент мають спільне значення, а не випадково сусідять.
+Methodological description: Create coherent verbal and visual content whose caption and image share meaning rather than merely appearing beside each other.
+User-friendly description: Make words and pictures work together to convey one idea.
 
 ##### Висловлення ставлення до медіаповідомлення
 
+Slug: expressResponseToMedia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати власну реакцію на зміст та комунікативну мету повідомлення, відділяючи своє ставлення від слів автора.
+Methodological description: Formulate a personal reaction to a message's content and communicative purpose while separating one's view from the author's words.
+User-friendly description: Express your response to a media message without misquoting its author.
 
