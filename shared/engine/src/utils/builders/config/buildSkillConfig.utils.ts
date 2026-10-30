@@ -11,13 +11,19 @@ const supportedLanguages = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ la
  * This does not create any collection, entity or external relationship.
  */
 export function validateSkillConfig(
-  config: Pick<Skill_Config, 'id' | 'name'> & { description?: SkillDescription_Config },
+  config: Pick<Skill_Config, 'id' | 'name' | 'slug'> & { description?: SkillDescription_Config },
   requireFrontendDescription = false,
 ): void {
   if (!config) {
     throw new Error('Skill id must be a UUID');
   }
   validateSkillUuid(config.id, 'Skill id');
+
+  // Older Mathematics configs may omit slug until their independently owned migration.
+  if (config.slug !== undefined &&
+      (typeof config.slug !== 'string' || !/^[a-z][A-Za-z0-9]*$/.test(config.slug))) {
+    throw new Error('Taxonomy slug must be an English lowerCamelCase identifier');
+  }
 
   if (!config.name || typeof config.name !== 'object' || Array.isArray(config.name)) {
     throw new Error('Skill name must contain all supported languages');
