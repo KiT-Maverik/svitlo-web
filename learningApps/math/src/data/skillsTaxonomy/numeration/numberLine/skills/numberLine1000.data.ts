@@ -33,4 +33,5 @@ export const numberLine1000_Skill_Data = buildSkillConfig({
     pl: "Liczby na skalowanej osi do 1000",
     uk: "Числа на масштабованій прямій до 1000",
   },
+  description: { methodological: "A point's location on a number line depends on its coordinate, origin, and unit length. Equal numeric changes require equal distances on a uniform scale; arbitrary spacing distorts the model." },
 });

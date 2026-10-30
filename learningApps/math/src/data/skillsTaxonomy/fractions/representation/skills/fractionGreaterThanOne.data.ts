@@ -33,4 +33,5 @@ export const fractionGreaterThanOne_Skill_Data = buildSkillConfig({
     pl: "Przedstawianie ułamków większych od jedności",
     uk: "Представлення дробів, більших за одиницю",
   },
+  description: { methodological: "An improper fraction whose numerator exceeds its positive denominator is greater than one. It can be represented as a mixed number or a point to the right of one on a positive number line; the unit whole stays fixed." },
 });
