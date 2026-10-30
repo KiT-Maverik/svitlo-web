@@ -963,323 +963,573 @@ User-friendly description: Discover how group behavior may help animals feed, de
 
 ### Mycology
 
+Slug: mycology
+Action: create
+Status: pending
+
 Groups: 0 · Skills: 4
 
 [Not implemented](#)
 
-Fungi as a distinct branch of cellular life: nutrition, mycelium, fruiting bodies, and the role of fungi in matter cycling. Microscopic fungi overlap with Microbiology in scale, but their structure and biological characteristics are central here.
+Methodological description: Fungi as a distinct branch of cellular life: nutrition, mycelium, fruiting bodies, and the role of fungi in matter cycling. Microscopic fungi overlap with Microbiology in scale, but their structure and biological characteristics are central here.
+User-friendly description: Explore how fungi are structured, obtain nutrients and help recycle matter.
 
 #### Recognize Fungi as a Distinct Group of Organisms
 
+Slug: recognizeFungiAsADistinctGroupOfOrganisms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish fungi, plants, and animals by how they obtain organic substances and by structural characteristics.
+Methodological description: Distinguish fungi, plants, and animals by how they obtain organic substances and by structural characteristics.
+User-friendly description: Distinguish fungi from plants and animals using how they feed and how they are built.
 
 #### Identify the Main Parts of a Mushroom Fruiting Body
 
+Slug: identifyTheMainPartsOfAMushroomFruitingBody
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate the cap, stalk, and spore-producing structures on a diagram of a typical cap-and-stalk mushroom.
+Methodological description: Locate the cap, stalk, and spore-producing structures on a diagram of a typical cap-and-stalk mushroom.
+User-friendly description: Identify the cap, stalk and spore-producing structures of a familiar mushroom.
 
 #### Distinguish Mycelium from a Fruiting Body
 
+Slug: distinguishMyceliumFromAFruitingBody
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why an underground or concealed network of hyphae forms the main body of many fungi, while the visible mushroom cap is only a reproductive structure.
+Methodological description: Explain why an underground or concealed network of hyphae forms the main body of many fungi, while the visible mushroom cap is only a reproductive structure.
+User-friendly description: Discover how a fungus's hidden mycelium differs from its visible fruiting body.
 
 #### Explain the Role of Fungi in Decomposing Organic Remains
 
+Slug: explainTheRoleOfFungiInDecomposingOrganicRemains
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate enzymes secreted by fungi to the breakdown of remains and the reuse of substances in an ecosystem.
+Methodological description: Relate enzymes secreted by fungi to the breakdown of remains and the reuse of substances in an ecosystem.
+User-friendly description: Explain how fungi break down organic remains and return materials to ecosystems.
 
 ### Microbiology
+
+Slug: microbiology
+Action: create
+Status: pending
 
 Groups: 0 · Skills: 9
 
 [Not implemented](#)
 
-Microscopic cellular life forms and their processes, including bacteria, fermentation, decomposition, and interactions with the human body. Microscopic size does not define a single taxon; this Domain considers the shared context of microbial processes.
+Methodological description: Microscopic cellular life forms and their processes, including bacteria, fermentation, decomposition, and interactions with the human body. Microscopic size does not define a single taxon; this Domain considers the shared context of microbial processes.
+User-friendly description: Discover the diversity of microscopic cellular life and its roles in nature and human activities.
 
 #### Recognize Microorganisms from Descriptions
 
+Slug: recognizeMicroorganismsFromDescriptions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish microscopic scale from taxonomic membership: bacteria, unicellular eukaryotes, and other organisms may all be very small.
+Methodological description: Distinguish microscopic scale from taxonomic membership: bacteria, unicellular eukaryotes, and other organisms may all be very small.
+User-friendly description: Recognize that many different kinds of living things can be microscopic.
 
 #### Distinguish Bacteria and Archaea
 
+Slug: distinguishBacteriaAndArchaea
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that bacteria and archaea are separate evolutionary lineages of cellular organisms without a membrane-bound nucleus; molecular structural differences, including membrane lipids and cell envelopes, cannot be reduced to external cell shape.
+Methodological description: Explain that bacteria and archaea are separate evolutionary lineages of cellular organisms without a membrane-bound nucleus; molecular structural differences, including membrane lipids and cell envelopes, cannot be reduced to external cell shape.
+User-friendly description: Distinguish bacteria and archaea as different groups of cellular organisms.
 
 #### Recognize Microscopic Eukaryotes
 
+Slug: recognizeMicroscopicEukaryotes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize nucleated unicellular eukaryotes, including diverse protists, algae, and yeasts; do not treat 'microorganisms' as a single biological taxon.
+Methodological description: Recognize nucleated unicellular eukaryotes, including diverse protists, algae, and yeasts; do not treat 'microorganisms' as a single biological taxon.
+User-friendly description: Recognize microscopic organisms whose cells contain nuclei.
 
 #### Explain Prokaryotic Cell Structure
 
+Slug: explainProkaryoticCellStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the organization of bacterial and archaeal cells without a membrane-bound nucleus and the roles of the membrane, cytoplasm, genetic material, and ribosomes; distinguish prokaryotic from eukaryotic cell organization.
+Methodological description: Explain the organization of bacterial and archaeal cells without a membrane-bound nucleus and the roles of the membrane, cytoplasm, genetic material, and ribosomes; distinguish prokaryotic from eukaryotic cell organization.
+User-friendly description: Explore how bacterial and archaeal cells function without a membrane-bound nucleus.
 
 #### Explain Bacterial Cell Division
 
+Slug: explainBacterialCellDivision
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain bacterial binary fission through replication of genetic material and formation of daughter cells, without confusing it with eukaryotic mitosis.
+Methodological description: Explain bacterial binary fission through replication of genetic material and formation of daughter cells, without confusing it with eukaryotic mitosis.
+User-friendly description: Explain how bacterial cells reproduce by dividing in two.
 
 #### Identify Bacterial Habitats
 
+Slug: identifyBacterialHabitats
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use examples to explain why bacteria occur in soil, water, organisms, and even extreme environments.
+Methodological description: Use examples to explain why bacteria occur in soil, water, organisms, and even extreme environments.
+User-friendly description: Discover why bacteria can live in many kinds of environments.
 
 #### Explain the Role of Microorganisms in Fermentation
 
+Slug: explainTheRoleOfMicroorganismsInFermentation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate microbial transformations of sugars to the production of new products in food technologies.
+Methodological description: Relate microbial transformations of sugars to the production of new products in food technologies.
+User-friendly description: Explain how microorganisms transform ingredients during fermentation.
 
 #### Explain Their Role in Decomposition
 
+Slug: explainTheirRoleInDecomposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how bacteria and other microorganisms break down organic residues and return substances to circulation.
+Methodological description: Show how bacteria and other microorganisms break down organic residues and return substances to circulation.
+User-friendly description: Explore how microscopic organisms break down dead organic matter.
 
 #### Distinguish Beneficial and Harmful Microbial Interactions with Humans
 
+Slug: distinguishBeneficialAndHarmfulMicrobialInteractionsWithHumans
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish normal, beneficial, and potentially disease-causing interactions according to the microorganism, host, and conditions.
+Methodological description: Distinguish normal, beneficial, and potentially disease-causing interactions according to the microorganism, host, and conditions.
+User-friendly description: Distinguish helpful, harmless and harmful interactions between microbes and people.
 
 ### Virology
+
+Slug: virology
+Action: create
+Status: pending
 
 Groups: 0 · Skills: 3
 
 [Not implemented](#)
 
-Viruses as noncellular infectious agents: structure, reproduction inside host cells, and routes of transmission. They are not cellular organisms, although they are studied alongside them.
+Methodological description: Viruses as noncellular infectious agents: structure, reproduction inside host cells, and routes of transmission. They are not cellular organisms, although they are studied alongside them.
+User-friendly description: Explore what viruses are, how they reproduce in host cells and how they spread.
 
 #### Explain What a Virus Is
 
+Slug: explainWhatAVirusIs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that a virus is a noncellular infectious agent containing genetic material; it lacks its own protein-synthesis machinery and reproduces using a host cell.
+Methodological description: Explain that a virus is a noncellular infectious agent containing genetic material; it lacks its own protein-synthesis machinery and reproduces using a host cell.
+User-friendly description: Explain why viruses need living cells to make more viruses.
 
 #### Distinguish a Virus from a Cellular Organism
 
+Slug: distinguishAVirusFromACellularOrganism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare cellular organisms' cell membranes, cytoplasm, and independent metabolism with the absence of this cellular organization in a virus particle.
+Methodological description: Compare cellular organisms' cell membranes, cytoplasm, and independent metabolism with the absence of this cellular organization in a virus particle.
+User-friendly description: Understand how viruses differ from organisms made of cells.
 
 #### Explain Mechanisms of Viral Transmission
 
+Slug: explainMechanismsOfViralTransmission
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how viruses spread between hosts by different routes, including respiratory particles, contact, biological fluids, vectors, and other mechanisms, and why a particular route depends on the characteristics of the virus and its hosts.
+Methodological description: Explain how viruses spread between hosts by different routes, including respiratory particles, contact, biological fluids, vectors, and other mechanisms, and why a particular route depends on the characteristics of the virus and its hosts.
+User-friendly description: Compare the different routes by which viruses can pass between hosts.
 
 ### Human Anatomy and Physiology
+
+Slug: humanAnatomyAndPhysiology
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 24
 
 [Not implemented](#)
 
-The structure of the body, organ functions, and interactions among systems that allow humans to move, perceive, breathe, and sustain life. Rules of hygiene, first aid, and safe behavior belong to a separate textbook.
+Methodological description: The structure of the body, organ functions, and interactions among systems that allow humans to move, perceive, breathe, and sustain life. Rules of hygiene, first aid, and safe behavior belong to a separate textbook.
+User-friendly description: Explore how the structures and systems of the human body work together to sustain life.
 
 #### Body Structure
+
+Slug: bodyStructure
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-External and internal body parts form organs and systems, each performing a particular function in the organism.
+Methodological description: External and internal body parts form organs and systems, each performing a particular function in the organism.
+User-friendly description: Learn how body parts, organs and systems fit together.
 
 ##### Identify Major Body Parts
 
+Slug: identifyMajorBodyParts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate the head, trunk, limbs, and important external structures on a model of the human body.
+Methodological description: Locate the head, trunk, limbs, and important external structures on a model of the human body.
+User-friendly description: Recognize the major external parts of the human body.
 
 ##### Relate Organs to Their Functions
 
+Slug: relateOrgansToTheirFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Associate the lungs with gas exchange, the heart with blood movement, and the stomach and intestines with food processing.
+Methodological description: Associate the lungs with gas exchange, the heart with blood movement, and the stomach and intestines with food processing.
+User-friendly description: Connect organs such as the lungs, heart and intestines with their functions.
 
 ##### Distinguish an Organ from an Organ System
 
+Slug: distinguishAnOrganFromAnOrganSystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a single anatomical structure from a functional association of several organs.
+Methodological description: Distinguish a single anatomical structure from a functional association of several organs.
+User-friendly description: Distinguish an individual organ from a system of cooperating organs.
 
 #### Sensory Organs and the Nervous System
+
+Slug: sensoryOrgansAndTheNervousSystem
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Receptors detect different stimuli, the nervous system processes signals, and the skin also protects the body as a physical barrier.
+Methodological description: Receptors detect different stimuli, the nervous system processes signals, and the skin also protects the body as a physical barrier.
+User-friendly description: Discover how senses and nerves detect and respond to information.
 
 ##### Relate a Sense Organ to the Information It Detects
 
+Slug: relateASenseOrganToTheInformationItDetects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate light, sound, smell, taste, and touch to receptors capable of detecting those signals.
+Methodological description: Relate light, sound, smell, taste, and touch to receptors capable of detecting those signals.
+User-friendly description: Match each sense organ with the kinds of information it can detect.
 
 ##### Explain Responses to Stimuli
 
+Slug: explainResponsesToStimuli
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a sensory signal can trigger a muscle response or a change in behavior.
+Methodological description: Explain how a sensory signal can trigger a muscle response or a change in behavior.
+User-friendly description: Explore how sensed information can lead to movement or changes in behavior.
 
 ##### Recognize the Brain’s Role in Perception
 
+Slug: recognizeTheBrainsRoleInPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Understand that nerve signals from the sense organs are processed in the brain rather than being turned into conscious sensations by the eyes or ears themselves.
+Methodological description: Understand that nerve signals from the sense organs are processed in the brain rather than being turned into conscious sensations by the eyes or ears themselves.
+User-friendly description: Explain why the brain plays a central role in interpreting sensory information.
 
 ##### Identify the Skin’s Protective Function
 
+Slug: identifyTheSkinsProtectiveFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how intact skin reduces water loss and the penetration of harmful agents.
+Methodological description: Explain how intact skin reduces water loss and the penetration of harmful agents.
+User-friendly description: Discover how healthy skin helps protect the body and retain moisture.
 
 #### Support and Movement
+
+Slug: supportAndMovement
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Bones provide support and levers, muscles exert force, and joints determine the possible directions of movement.
+Methodological description: Bones provide support and levers, muscles exert force, and joints determine the possible directions of movement.
+User-friendly description: Explore how bones, muscles and joints work together in movement.
 
 ##### Explain the Role of the Skeleton
 
+Slug: explainTheRoleOfTheSkeleton
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how bones maintain body shape and provide some protection to internal organs.
+Methodological description: Show how bones maintain body shape and provide some protection to internal organs.
+User-friendly description: Explain how the skeleton supports the body and protects some organs.
 
 ##### Explain the Role of Muscles in Movement
 
+Slug: explainTheRoleOfMusclesInMovement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate contraction of muscle tissue to the generation of force that changes the positions of body parts.
+Methodological description: Relate contraction of muscle tissue to the generation of force that changes the positions of body parts.
+User-friendly description: Connect muscle contractions with the forces needed to move.
 
 ##### Describe Interactions Between Bones and Muscles
 
+Slug: describeInteractionsBetweenBonesAndMuscles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain movement at a joint through muscle attachments to bones and the interaction of muscles acting in opposite directions.
+Methodological description: Explain movement at a joint through muscle attachments to bones and the interaction of muscles acting in opposite directions.
+User-friendly description: Understand how muscles pull on bones to move joints.
 
 #### Maintaining Life Processes
+
+Slug: maintainingLifeProcesses
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Nutrients, oxygen, and blood travel along different pathways; their coordinated operation provides cells with resources.
+Methodological description: Nutrients, oxygen, and blood travel along different pathways; their coordinated operation provides cells with resources.
+User-friendly description: Investigate how digestion, breathing and circulation supply the body's cells.
 
 ##### Explain the Passage of Food Through the Digestive System
 
+Slug: explainThePassageOfFoodThroughTheDigestiveSystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the sequential passage of food through the mouth, esophagus, stomach, and intestines, the role of peristalsis, and the difference between food movement, digestion, and nutrient absorption.
+Methodological description: Explain the sequential passage of food through the mouth, esophagus, stomach, and intestines, the role of peristalsis, and the difference between food movement, digestion, and nutrient absorption.
+User-friendly description: Follow the path food travels through the digestive tract and distinguish its different functions.
 
 ##### Explain Lung Ventilation
 
+Slug: explainLungVentilation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain inhalation and exhalation as air movement caused by respiratory muscle activity, changes in thoracic cavity volume, and pressure differences; distinguish ventilation from alveolar gas exchange and cellular respiration.
+Methodological description: Explain inhalation and exhalation as air movement caused by respiratory muscle activity, changes in thoracic cavity volume, and pressure differences; distinguish ventilation from alveolar gas exchange and cellular respiration.
+User-friendly description: Explain how breathing muscles move air into and out of the lungs.
 
 ##### Explain Digestion of Nutrients
 
+Slug: explainDigestionOfNutrients
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the mechanical and enzymatic processing of food in the digestive tract and the role of digestive juices in breaking large molecules into components available for absorption.
+Methodological description: Explain the mechanical and enzymatic processing of food in the digestive tract and the role of digestive juices in breaking large molecules into components available for absorption.
+User-friendly description: Discover how digestive processes break food into smaller usable substances.
 
 ##### Explain Nutrient Absorption
 
+Slug: explainNutrientAbsorption
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how digestive products pass through the intestinal epithelium into blood and lymph; distinguish chemical digestion from transport of already broken-down nutrients.
+Methodological description: Explain how digestive products pass through the intestinal epithelium into blood and lymph; distinguish chemical digestion from transport of already broken-down nutrients.
+User-friendly description: Learn how digested nutrients move from the intestine into the body.
 
 ##### Explain the Role of the Kidneys in Excretion
 
+Slug: explainTheRoleOfTheKidneysInExcretion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain blood filtration, selective reabsorption of water and needed substances, and urine formation as means of removing metabolic waste and maintaining the internal environment.
+Methodological description: Explain blood filtration, selective reabsorption of water and needed substances, and urine formation as means of removing metabolic waste and maintaining the internal environment.
+User-friendly description: Explain how kidneys filter blood and help maintain the body's internal balance.
 
 ##### Explain Gas Exchange in the Lungs
 
+Slug: explainGasExchangeInTheLungs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the exchange of oxygen and carbon dioxide between the alveoli and blood.
+Methodological description: Explain the exchange of oxygen and carbon dioxide between the alveoli and blood.
+User-friendly description: Understand how oxygen and carbon dioxide move between lung air spaces and blood.
 
 ##### Explain the Heart’s Role in Circulation
 
+Slug: explainTheHeartsRoleInCirculation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the heart as a pump that drives blood through vessels to organs and back.
+Methodological description: Describe the heart as a pump that drives blood through vessels to organs and back.
+User-friendly description: Explore how the heart pumps blood around the body.
 
 ##### Identify Breathing Changes During Physical Activity
 
+Slug: identifyBreathingChangesDuringPhysicalActivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate faster and deeper breathing to the increased need of working muscles for oxygen and removal of CO₂.
+Methodological description: Relate faster and deeper breathing to the increased need of working muscles for oxygen and removal of CO₂.
+User-friendly description: Explain why breathing changes during physical activity.
 
 #### Regulation and Homeostasis
+
+Slug: regulationAndHomeostasis
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Nervous and hormonal signals coordinate organ functions, while feedback mechanisms maintain key internal conditions within viable ranges.
+Methodological description: Nervous and hormonal signals coordinate organ functions, while feedback mechanisms maintain key internal conditions within viable ranges.
+User-friendly description: Discover how hormones, nerves and feedback help regulate body functions.
 
 ##### Explain Endocrine Regulation
 
+Slug: explainEndocrineRegulation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how hormones secreted by endocrine glands affect cells and organs, including metabolism, growth, and responses to environmental changes; compare the duration of hormonal and neural signals without claiming that these always act independently.
+Methodological description: Explain how hormones secreted by endocrine glands affect cells and organs, including metabolism, growth, and responses to environmental changes; compare the duration of hormonal and neural signals without claiming that these always act independently.
+User-friendly description: Explore how hormones send signals that affect growth and other body processes.
 
 ##### Explain Maintenance of Homeostasis
 
+Slug: explainMaintenanceOfHomeostasis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how temperature, water balance, and blood glucose are maintained through regulation and negative feedback; distinguish dynamic stability of the internal environment from a total absence of change.
+Methodological description: Explain how temperature, water balance, and blood glucose are maintained through regulation and negative feedback; distinguish dynamic stability of the internal environment from a total absence of change.
+User-friendly description: Understand how the body keeps internal conditions within workable ranges.
 
 #### Development and Protection of the Organism
+
+Slug: developmentAndProtectionOfTheOrganism
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Changes from childhood to adulthood, immune mechanisms, and physiological recovery help maintain bodily functions over time.
+Methodological description: Changes from childhood to adulthood, immune mechanisms, and physiological recovery help maintain bodily functions over time.
+User-friendly description: Explore how development, immune defenses and recovery help sustain the body.
 
 ##### Distinguish Stages of Human Development
 
+Slug: distinguishStagesOfHumanDevelopment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate observable growth and pubertal changes to the main stages of human life, without making normative judgments about a 'correct' developmental pace.
+Methodological description: Relate observable growth and pubertal changes to the main stages of human life, without making normative judgments about a 'correct' developmental pace.
+User-friendly description: Recognize stages of human development without assuming everyone develops at the same pace.
 
 ##### Explain the Immune System’s Protective Role
 
+Slug: explainTheImmuneSystemsProtectiveRole
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how the body recognizes foreign agents and initiates a protective response without confusing this with absolute protection against disease.
+Methodological description: Explain how the body recognizes foreign agents and initiates a protective response without confusing this with absolute protection against disease.
+User-friendly description: Explain how the immune system detects and responds to potentially harmful agents.
 
 ##### Explain the Importance of Sleep for Recovery
 
+Slug: explainTheImportanceOfSleepForRecovery
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sleep to neural regulation, memory, and restoration of functions without replacing explanations of mechanisms with rules about sleep schedules.
+Methodological description: Relate sleep to neural regulation, memory, and restoration of functions without replacing explanations of mechanisms with rules about sleep schedules.
+User-friendly description: Discover how sleep supports brain function, memory and recovery.
 
 ##### Explain Functions of the Human Reproductive System
 
+Slug: explainFunctionsOfTheHumanReproductiveSystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the biological functions of reproductive organs, production of sex cells, and the role of fertilization in human sexual reproduction, distinguishing physiological facts from individual differences in development.
+Methodological description: Explain the biological functions of reproductive organs, production of sex cells, and the role of fertilization in human sexual reproduction, distinguishing physiological facts from individual differences in development.
+User-friendly description: Understand the biological functions of human reproductive organs and processes.
 
 ### Ecology
 
