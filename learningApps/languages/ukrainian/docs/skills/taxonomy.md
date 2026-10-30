@@ -1198,359 +1198,629 @@ User-friendly description: Rewrite unclear wording so a reader understands exact
 
 ### Лексика
 
+Slug: ukrainianVocabulary
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 12
 
 [Not implemented](#)
 
-Значення українських слів, відношення між ними та доречність їх уживання. Лексичний вибір відділено від граматичного словозмінювання й побудови речень.
+Methodological description: Covers the meanings of Ukrainian words, semantic relationships, and appropriate word usage. Lexical choice is separate from inflection and sentence structure.
+User-friendly description: Explore Ukrainian word meanings and how to choose words appropriately.
 
 #### Значення слова
+
+Slug: wordMeaning
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Співвідношення назви, позначуваного поняття й контексту, який визначає актуальне тлумачення.
+Methodological description: Relate a word to the concept it names and the context determining its intended interpretation.
+User-friendly description: Learn how context determines what a Ukrainian word means.
 
 ##### Контекстне значення слова
 
+Slug: contextualWordMeaning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-З'ясовувати потрібне тлумачення за сусідніми словами та змістом повідомлення.
+Methodological description: Determine the appropriate interpretation of a word from surrounding words and the message's content.
+User-friendly description: Use surrounding sentences to understand a word's meaning.
 
 ##### Пряме та переносне значення
 
+Slug: literalAndFigurativeMeaning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати буквальне називання ознаки чи дії від образного перенесення.
+Methodological description: Distinguish literal naming of a characteristic or action from its figurative transfer to another context.
+User-friendly description: Tell literal word meanings from figurative expressions.
 
 ##### Багатозначність слова
 
+Slug: wordPolysemy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати пов'язані значення однієї словесної форми в різних контекстах.
+Methodological description: Recognize several related meanings of a single word form in different contexts.
+User-friendly description: Explore why one word can have several connected meanings.
 
 ##### Тематичні групи слів
 
+Slug: semanticWordGroups
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Об'єднувати лексику за спільною предметною сферою, не вважаючи всі такі слова синонімами.
+Methodological description: Group vocabulary by a shared subject area without treating every word in that group as synonymous.
+User-friendly description: Group words that relate to the same topic.
 
 #### Лексичні відношення
 
+Slug: lexicalRelationships
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Смислова подібність, протилежність і формальний збіг різних словесних одиниць.
+Methodological description: Analyze similarities and oppositions of meaning and identical forms belonging to different lexical units.
+User-friendly description: Explore how words can have similar, opposite or unrelated meanings.
 
 ##### Синоніми
 
+Slug: synonyms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити слова з близьким значенням, враховуючи можливі відтінки й контекст.
+Methodological description: Identify words with related meanings, considering shades of meaning and context.
+User-friendly description: Find synonyms while noticing differences in nuance.
 
 ##### Антоніми
 
+Slug: antonyms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Установлювати протилежні значення там, де для слів існує змістовне протиставлення.
+Methodological description: Identify opposite meanings where a meaningful lexical contrast exists.
+User-friendly description: Recognize words with opposite meanings.
 
 ##### Омоніми
 
+Slug: homonyms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти слова, однакові за формою, але не пов'язані спільним лексичним значенням.
+Methodological description: Distinguish words identical in form whose lexical meanings are unrelated.
+User-friendly description: Identify words that sound or look alike but mean unrelated things.
 
 #### Доречне слововживання
+
+Slug: appropriateWordUse
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Добір лексеми відповідно до задуму, сполучуваності слів і ситуації спілкування.
+Methodological description: Choose vocabulary according to the intended meaning, conventional combinations, and communicative setting.
+User-friendly description: Choose Ukrainian words that suit your meaning and situation.
 
 ##### Точність вибору слова
 
+Slug: preciseWordChoice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обирати лексему з потрібним значенням і відтінком серед близьких варіантів, не змінюючи обов'язково побудову цілого речення.
+Methodological description: Select a word with the required meaning and nuance among related options without necessarily restructuring the entire sentence.
+User-friendly description: Pick the word that best expresses an exact idea.
 
 ##### Лексична сполучуваність
 
+Slug: lexicalCollocations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поєднувати слова в природні для української мови змістові конструкції.
+Methodological description: Combine words in phrases that are natural and meaningful in Ukrainian.
+User-friendly description: Recognize which Ukrainian words naturally go together.
 
 ##### Ситуативна доречність лексики
 
+Slug: situationalVocabulary
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вибирати нейтральні або розмовні мовні засоби з урахуванням адресата й контексту.
+Methodological description: Choose neutral or colloquial language according to the addressee and situation.
+User-friendly description: Choose a suitable level of formality when speaking or writing.
 
 #### Користування словником
+
+Slug: dictionaryUse
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Звернення до словникового опису для уточнення форми, змісту й нормативного вживання слова.
+Methodological description: Use dictionary entries to check word form, meaning, and accepted usage.
+User-friendly description: Learn to use a Ukrainian dictionary to check word meanings and forms.
 
 ##### Пошук слова у словнику
 
+Slug: dictionaryWordLookup
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати початкову словникову форму змінюваного слова, знаходити відповідну статтю за алфавітом і розрізняти кілька можливих заголовних форм; просте сортування слів тут недостатнє.
+Methodological description: Determine the lemma of an inflected word, find its alphabetic entry, and distinguish possible headword forms; merely alphabetizing words is insufficient.
+User-friendly description: Find a word in a dictionary even when it appears in a changed form.
 
 ##### Тлумачення словникової статті
 
+Slug: interpretDictionaryEntry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти пояснення значення від прикладу й зіставляти його з конкретним текстом.
+Methodological description: Distinguish a definition from an example and relate the explanation to the current text.
+User-friendly description: Use a dictionary entry to understand a word in context.
 
 ### Будова слова та словотвір
+
+Slug: wordStructureAndFormation
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 8
 
 [Not implemented](#)
 
-Значущі частини слова, спільність коренів і способи утворення нових лексем. Розрізняє словотворення й зміну граматичної форми одного слова.
+Methodological description: Study meaningful word parts, common roots, and methods of forming new lexical units. Distinguish word formation from grammatical inflection of one word.
+User-friendly description: Explore roots, prefixes, suffixes and how new Ukrainian words are formed.
 
 #### Спорідненість слів
+
+Slug: wordFamilies
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Спільність лексичного походження та значення, яку не можна встановити за випадковим збігом літер.
+Methodological description: Recognize shared lexical origin and meaning rather than inferring relatedness from coincidental letters.
+User-friendly description: Discover how related words share origins and meanings.
 
 ##### Спільнокореневі слова
 
+Slug: sameRootWords
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Добирати семантично споріднені слова, не покладаючись лише на однакову послідовність букв.
+Methodological description: Identify semantically related words without relying only on matching letter sequences.
+User-friendly description: Find words that truly share a root and meaning.
 
 ##### Споріднені слова і форми слова
 
+Slug: wordFamilyVersusInflectedForms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відокремлювати нову лексему від граматично зміненої форми тієї самої лексеми.
+Methodological description: Distinguish a newly formed lexical unit from a grammatical form of the same word.
+User-friendly description: Tell a new word apart from a changed form of one word.
 
 #### Морфеми
+
+Slug: morphemes
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Частини слова, що виконують різні функції в його лексичному значенні та граматичному оформленні.
+Methodological description: Identify word parts that contribute differently to lexical meaning and grammatical form.
+User-friendly description: Learn what different meaningful word parts do.
 
 ##### Корінь слова
 
+Slug: wordRoot
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити центральну значущу частину через порівняння зі спорідненими словами.
+Methodological description: Identify the central meaningful element by comparing words in the same family.
+User-friendly description: Find the root shared by related Ukrainian words.
 
 ##### Префікс
 
+Slug: prefix
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити частину перед коренем, яка бере участь у створенні нового слова.
+Methodological description: Recognize a meaningful element before the root involved in forming a new word.
+User-friendly description: Recognize prefixes and how they change a word's meaning.
 
 ##### Суфікс
 
+Slug: suffix
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати частину після кореня, яка може створювати нові слова або відтінки значення.
+Methodological description: Identify an element after the root that can create new words or nuances of meaning.
+User-friendly description: Find suffixes and understand the meanings they add.
 
 ##### Закінчення
 
+Slug: inflectionalEnding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відділяти змінний граматичний показник від основи шляхом зіставлення форм слова.
+Methodological description: Separate a changeable grammatical marker from the stem by comparing forms of a word.
+User-friendly description: Find an ending by comparing different forms of a word.
 
 #### Способи словотворення
+
+Slug: wordFormationMethods
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Отримання нових лексичних одиниць через додавання морфем до відомої основи.
+Methodological description: Form new lexical units by adding meaningful morphemes to an existing base.
+User-friendly description: Explore how affixes help form new Ukrainian words.
 
 ##### Префіксальний словотвір
 
+Slug: prefixalWordFormation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Утворювати лексеми додаванням префікса, з'ясовуючи зміну значення.
+Methodological description: Produce new words by adding a prefix and identify the resulting change in meaning.
+User-friendly description: Make new words with prefixes and explain their meanings.
 
 ##### Суфіксальний словотвір
 
+Slug: suffixalWordFormation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Утворювати лексеми за допомогою суфікса, враховуючи нове або уточнене значення.
+Methodological description: Produce new words using suffixes, accounting for new or refined meanings.
+User-friendly description: Make words with suffixes and recognize what changes.
 
 ### Частини мови
+
+Slug: partsOfSpeech
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 18
 
 [Not implemented](#)
 
-Граматичні класи українських слів, їхні ознаки та типові форми. Синтаксичну будову речення описано в сусідньому Domain, а конкретні правила написання — у правописі.
+Methodological description: Study Ukrainian grammatical word classes, their distinguishing features, and typical forms. Sentence syntax belongs to a neighboring domain, while spelling rules belong to orthography.
+User-friendly description: Recognize Ukrainian word classes and how their grammatical forms change.
 
 #### Іменник
 
+Slug: nouns
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Позначення предметів, осіб та явищ зі специфічними для іменника граматичними категоріями.
+Methodological description: Describe people, things, and phenomena through the noun class and its grammatical categories.
+User-friendly description: Explore Ukrainian nouns and the forms they can take.
 
 ##### Розпізнавання іменників
 
+Slug: identifyNouns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати предметне значення та характерні питання цієї частини мови.
+Methodological description: Identify nominal meaning and the characteristic questions associated with nouns.
+User-friendly description: Recognize nouns by what they name and the questions they answer.
 
 ##### Власні й загальні іменники
 
+Slug: properAndCommonNouns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відділяти індивідуальну назву від назви класу предметів, осіб або місць.
+Methodological description: Distinguish individual names from general names of categories of people, objects, or places.
+User-friendly description: Distinguish proper names from common nouns.
 
 ##### Число іменника
 
+Slug: nounNumber
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати граматичну одиничність чи множинність за формою слова.
+Methodological description: Determine grammatical singularity or plurality from the form of a noun.
+User-friendly description: Recognize singular and plural noun forms.
 
 ##### Рід іменника
 
+Slug: nounGender
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати граматичний рід з урахуванням форми й можливого узгодження.
+Methodological description: Determine grammatical gender from the noun's form and possible agreement patterns.
+User-friendly description: Identify the grammatical gender of Ukrainian nouns.
 
 #### Прикметник
 
+Slug: adjectives
+Action: create
+Status: pending
+
 Skills: 2
 
 [Not implemented](#)
 
-Лексико-граматичне позначення ознак предметів і залежність прикметникових форм від іменників.
+Methodological description: Describe words naming properties of nouns and the grammatical dependence of adjective forms on nouns.
+User-friendly description: Explore how Ukrainian adjectives describe nouns.
 
 ##### Розпізнавання прикметників
 
+Slug: identifyAdjectives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати слова, що називають ознаку та пов'язані з іменником.
+Methodological description: Identify words expressing a property or characteristic and relating to a noun.
+User-friendly description: Find adjectives that name characteristics of people or things.
 
 ##### Узгодження прикметника з іменником
 
+Slug: adjectiveNounAgreement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Добирати відповідну граматичну форму означення до назви предмета.
+Methodological description: Select the appropriate grammatical adjective form to match the noun it modifies.
+User-friendly description: Make adjective forms agree with the nouns they describe.
 
 #### Дієслово
 
+Slug: verbs
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Позначення дій, процесів і станів, а також граматичні форми їх часової й особової характеристики.
+Methodological description: Describe words naming actions, processes, or states and their grammatical tense and person forms.
+User-friendly description: Explore Ukrainian verbs and how they express actions and time.
 
 ##### Розпізнавання дієслів
 
+Slug: identifyVerbs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати процесуальне значення слова та характерні питання дієслова.
+Methodological description: Identify the process or action meaning and characteristic grammatical questions of verbs.
+User-friendly description: Recognize verbs by the actions or states they express.
 
 ##### Час дієслова
 
+Slug: verbTense
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити дієслівну форму з теперішнім, минулим або майбутнім.
+Methodological description: Relate a verb form to past, present, or future time.
+User-friendly description: Tell whether a Ukrainian verb refers to the past, present, or future.
 
 ##### Число дієслова
 
+Slug: verbNumber
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти форми за їхньою відповідністю одному або кільком виконавцям.
+Methodological description: Distinguish verb forms corresponding to one or several performers of an action.
+User-friendly description: Recognize singular and plural verb forms.
 
 ##### Форма дієслова відповідно до підмета
 
+Slug: verbSubjectAgreement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Узгоджувати присудкову форму з граматичними ознаками виконавця дії.
+Methodological description: Make the predicate verb form agree with the grammatical properties of its subject.
+User-friendly description: Choose the verb form that fits the subject.
 
 #### Займенники
 
+Slug: pronouns
+Action: create
+Status: pending
+
 Skills: 2
 
 [Not implemented](#)
 
-Слова-вказівники на учасників або об'єкти, предметне значення яких визначається контекстом мовлення.
+Methodological description: Describe words referring to participants or objects whose specific referent depends on context.
+User-friendly description: Explore how pronouns refer to people and things in context.
 
 ##### Особові займенники
 
+Slug: personalPronouns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, на кого в контексті вказують я, ти, він, вона, ми та інші форми.
+Methodological description: Identify whom я, ти, він, вона, ми, and other personal pronouns refer to in a particular context.
+User-friendly description: Find the person or group referred to by a pronoun.
 
 ##### Займенникове уникнення повторів
 
+Slug: avoidRepetitionWithPronouns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Замінювати назву займенником тоді, коли її предметна віднесеність лишається ясною.
+Methodological description: Replace repeated nouns with pronouns when the intended referent remains clear.
+User-friendly description: Use pronouns to avoid repetition without confusing the reader.
 
 #### Числівники
+
+Slug: numerals
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Назви кількості та порядку, що уточнюють числові характеристики предметів і подій.
+Methodological description: Describe words naming quantities and order that specify numerical features of people, objects, or events.
+User-friendly description: Recognize Ukrainian words that express number and order.
 
 ##### Кількісні й порядкові числівники
 
+Slug: cardinalAndOrdinalNumerals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти позначення чисельності та позначення позиції в упорядкованому ряду.
+Methodological description: Distinguish expressions of quantity from expressions of position in an ordered sequence.
+User-friendly description: Tell counting words apart from words giving an item's position.
 
 ##### Розпізнавання числівників
 
+Slug: identifyNumerals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, що слово безпосередньо називає число, кількість або порядок при лічбі, відрізняючи його від інших частин мови, пов'язаних із кількісним значенням.
+Methodological description: Identify words directly naming a number, quantity, or counting order, distinguishing other word classes with quantity-related meaning.
+User-friendly description: Recognize numerals rather than other words related to quantity.
 
 #### Службові слова
+
+Slug: functionWords
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Одиниці, які виражають відношення між повнозначними словами чи частинами висловлювання.
+Methodological description: Study words expressing grammatical relations between content words or parts of an utterance.
+User-friendly description: Explore small words that connect and qualify Ukrainian expressions.
 
 ##### Розпізнавання прийменників
 
+Slug: identifyPrepositions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відділяти службове слово від іменника та інших повнозначних слів.
+Methodological description: Distinguish prepositions from nouns and other words with independent lexical meaning.
+User-friendly description: Recognize prepositions in Ukrainian sentences.
 
 ##### Добір прийменників
 
+Slug: choosePrepositions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати місце, напрям, час або інші відношення відповідною конструкцією.
+Methodological description: Express location, direction, time, and other relationships through suitable prepositional constructions.
+User-friendly description: Choose prepositions that correctly express a relationship.
 
 ##### Розпізнавання сполучників
 
+Slug: identifyConjunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти слова, які поєднують однорідні елементи або частини висловлювання.
+Methodological description: Recognize words connecting coordinated elements or parts of utterances.
+User-friendly description: Identify words that join phrases or clauses.
 
 ##### Заперечна частка не
 
+Slug: negativeParticleNe
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти заперечення як граматичне значення й лексичну частину іншого слова.
+Methodological description: Distinguish the grammatical negative particle не from a lexical element inside another word.
+User-friendly description: Recognize when не functions as a separate negative particle.
 
 ### Речення та текст
 
