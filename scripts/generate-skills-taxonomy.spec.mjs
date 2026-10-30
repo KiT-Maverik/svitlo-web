@@ -111,8 +111,8 @@ test('rejects missing required Skill fe even without a TypeScript typecheck', ()
 });
 
 test('fails closed on missing methodological description', () => {
-  write(skillFile, code('Skill', 'Skill', true).replace(/, description: \{methodological: "[^"]+"\}/, ''));
+  write(skillFile, code('Skill', 'Skill', true).replace(/methodological: "[^"]+",\s*/, ''));
   const result = run('en');
   assert.notEqual(result.status, 0);
-  assert.match(result.stderr, /Missing description/);
+  assert.match(result.stderr, /Expected literal localized text: .*:methodological/);
 });
