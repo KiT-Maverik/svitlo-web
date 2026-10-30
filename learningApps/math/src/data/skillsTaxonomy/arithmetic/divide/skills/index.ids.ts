@@ -22,5 +22,4 @@ export const divide_Skills_Ids = {
   withRemainder: 'da1f2939-6c7e-4257-a9a2-36e5c0201c11',
   remainderLessDivisor: '46afe67a-e62f-4789-b1e4-b19470544be5',
   checkQuotient: '5daba1b4-4221-4349-a1a7-c12e209051b1',
-  errorDetection: '06ea981c-0bfb-411b-9386-e04d83c92907',
 } as const;

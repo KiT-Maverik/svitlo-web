@@ -11,7 +11,6 @@ export { checkQuotient_Skill_Data } from './checkQuotient.data';
 export { doubleHalf_Skill_Data } from './doubleHalf.data';
 export { equalGrouping_Skill_Data } from './equalGrouping.data';
 export { equalSharing_Skill_Data } from './equalSharing.data';
-export { errorDetection_Skill_Data } from './errorDetection.data';
 export { noDivisionByZero_Skill_Data } from './noDivisionByZero.data';
 export { readExpression_Skill_Data } from './readExpression.data';
 export { relationToMultiplication_Skill_Data } from './relationToMultiplication.data';

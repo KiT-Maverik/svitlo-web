@@ -1,0 +1,37 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { subtraction_Skills_Ids } from './index.ids';
+
+export const regrouping_Skill_Data = buildSkillConfig({
+  id: subtraction_Skills_Ids.regrouping,
+  name: {
+    en: "Subtraction with regrouping",
+    lt: "Atimtis su pergrupavimu",
+    lv: "Atņemšana ar pārgrupēšanu",
+    et: "Lahutamine järguühikute ümberrühmitamisega",
+    be: "Адніманьне з разьменьваньнем разрадаў",
+    ka: "გამოკლება თანრიგების გადაჯგუფებით",
+    kk: "Разрядтарды түрлендіріп азайту",
+    zh: "退位减法",
+    hi: "स्थानमान का पुनर्समूहन करके घटाना",
+    es: "Resta con llevadas",
+    ar: "الطرح مع إعادة التجميع",
+    fr: "Soustraction avec emprunt",
+    bn: "স্থানীয় মান পুনর্বিন্যাস করে বিয়োগ",
+    pt: "Subtração com reagrupamento",
+    ur: "ادھار لے کر تفریق کرنا",
+    id: "Pengurangan dengan meminjam",
+    de: "Subtraktion mit Entbündeln",
+    ja: "繰り下がりのあるひき算",
+    ko: "받아내림이 있는 뺄셈",
+    tr: "Onluk bozarak çıkarma",
+    vi: "Phép trừ có nhớ",
+    ta: "இடமதிப்பில் மாற்றிக் கழித்தல்",
+    te: "స్థాన విలువల మార్పుతో తీసివేత",
+    mr: "उसने घेऊन वजाबाकी",
+    ms: "Penolakan dengan mengumpul semula",
+    he: "חיסור עם פריטה",
+    pl: "Odejmowanie z pożyczaniem",
+    uk: "Віднімання з розгрупуванням",
+  },
+  description: { methodological: "Subtraction with place-value regrouping exchanges a higher-place unit for ten lower-place units when needed, including exchanges across a zero. The same invariant holds for two-digit, three-digit and larger minuends: regrouping changes representation without changing value." },
+});

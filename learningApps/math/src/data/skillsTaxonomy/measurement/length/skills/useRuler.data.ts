@@ -1,0 +1,37 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { length_Skills_Ids } from './index.ids';
+
+export const useRuler_Skill_Data = buildSkillConfig({
+  id: length_Skills_Ids.useRuler,
+  name: {
+    en: "Using a ruler",
+    lt: "Naudojimasis liniuote",
+    lv: "Lineāla lietošana",
+    et: "Joonlaua kasutamine",
+    be: "Карыстаньне лінейкай",
+    ka: "სახაზავის გამოყენება",
+    kk: "Сызғышты қолдану",
+    zh: "使用直尺",
+    hi: "रूलर का उपयोग करना",
+    es: "Utilizar una regla",
+    ar: "استخدام المسطرة",
+    fr: "Utiliser une règle",
+    bn: "স্কেল ব্যবহার করা",
+    pt: "Utilizar uma régua",
+    ur: "پیمانے کا استعمال",
+    id: "Menggunakan penggaris",
+    de: "Ein Lineal verwenden",
+    ja: "定規の使い方",
+    ko: "자 사용하기",
+    tr: "Cetvel kullanma",
+    vi: "Sử dụng thước kẻ",
+    ta: "அளவுகோலைப் பயன்படுத்துதல்",
+    te: "రూలర్‌ను ఉపయోగించడం",
+    mr: "पट्टी वापरणे",
+    ms: "Menggunakan pembaris",
+    he: "שימוש בסרגל",
+    pl: "Posługiwanie się linijką",
+    uk: "Користування лінійкою",
+  },
+  description: { methodological: "Use a ruler as a measurement instrument: recognize its zero mark and equal scale intervals, align the scale with a straight segment, and read the numbered centimeter marks. Basic use starts at zero; determining the length of an unknown segment is assessed separately." },
+});

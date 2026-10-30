@@ -1,4 +1,3 @@
-export { classifyByAttribute_Skill_Data } from './classifyByAttribute.data';
 export { collectCounts_Skill_Data } from './collectCounts.data';
 export { fillSimpleTable_Skill_Data } from './fillSimpleTable.data';
 export { formulateInvestigationQuestion_Skill_Data } from './formulateInvestigationQuestion.data';

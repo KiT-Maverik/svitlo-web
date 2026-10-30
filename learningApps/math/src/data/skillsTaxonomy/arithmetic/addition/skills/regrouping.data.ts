@@ -1,0 +1,37 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { addition_Skills_Ids } from './index.ids';
+
+export const regrouping_Skill_Data = buildSkillConfig({
+  id: addition_Skills_Ids.regrouping,
+  name: {
+    en: "Addition with regrouping",
+    lt: "Sudėtis su pergrupavimu",
+    lv: "Saskaitīšana ar pārgrupēšanu",
+    et: "Liitmine järguühikute ümberrühmitamisega",
+    be: "Складаньне зь перагрупаваньнем разрадаў",
+    ka: "შეკრება თანრიგების გადაჯგუფებით",
+    kk: "Разрядтарды ауыстырып қосу",
+    zh: "进位加法",
+    hi: "स्थानमान का पुनर्समूहन करके जोड़ना",
+    es: "Suma con llevadas",
+    ar: "الجمع مع إعادة التجميع",
+    fr: "Addition avec retenue",
+    bn: "স্থানীয় মান পুনর্বিন্যাস করে যোগ",
+    pt: "Adição com reagrupamento",
+    ur: "دہائیاں منتقل کر کے جمع کرنا",
+    id: "Penjumlahan dengan menyimpan",
+    de: "Addition mit Übertrag",
+    ja: "繰り上がりのあるたし算",
+    ko: "받아올림이 있는 덧셈",
+    tr: "Eldeli toplama",
+    vi: "Phép cộng có nhớ",
+    ta: "இடமதிப்பில் மாற்றிக் கூட்டுதல்",
+    te: "స్థాన విలువల మార్పుతో కూడిక",
+    mr: "हातचा घेऊन बेरीज",
+    ms: "Penambahan dengan mengumpul semula",
+    he: "חיבור עם המרה בין ערכי מקום",
+    pl: "Dodawanie z przenoszeniem",
+    uk: "Додавання з перенесенням розряду",
+  },
+  description: { methodological: "Addition with place-value regrouping exchanges ten units of one place for one unit of the next place (ones to tens, tens to hundreds). The same principle applies regardless of how many digits the addends have; single or multiple carries preserve the total sum." },
+});
