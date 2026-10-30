@@ -4,7 +4,8 @@
  * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math [--locale en]
  *
  * Deliberately parses TypeScript source without executing textbook code.
- * Methodological descriptions are always English; optional FE text is localized.\n * Fail closed on absent methodological descriptions: handwritten taxonomy remains the
+ * Methodological descriptions are always English; optional FE text is localized.
+ * Fail closed on absent methodological descriptions: handwritten taxonomy remains the
  * authoritative staging source until every promoted entity is complete.
  */
 import fs from 'node:fs';
