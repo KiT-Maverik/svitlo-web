@@ -33,4 +33,5 @@ export const partWholeAddsub_Skill_Data = buildSkillConfig({
     pl: "Rozwiązywanie zadań o części i całości oraz odwrotnych",
     uk: "Задачі на частини, ціле й обернені задачі",
   },
+  description: { methodological: "When a whole consists of parts of 7 and 5, adding the parts reconstructs the whole; when the whole and one part are known, the other part is determined by subtraction." },
 });

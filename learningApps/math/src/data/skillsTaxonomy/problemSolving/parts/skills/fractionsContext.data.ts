@@ -33,4 +33,5 @@ export const fractionsContext_Skill_Data = buildSkillConfig({
     pl: "Wyznaczanie ułamka jednostkowego danej ilości",
     uk: "Знаходження одиничної частини кількості",
   },
+  description: { methodological: "A unit fraction 1/n of a nonnegative quantity is obtained by dividing the whole into n equal parts for positive n. The situation must identify the chosen unit whole, and the selected part must be relative to that same whole." },
 });
