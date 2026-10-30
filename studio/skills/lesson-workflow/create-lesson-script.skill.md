@@ -20,7 +20,7 @@ This Skill works on **existing Lesson directories selected or identified by the 
 
 **Do not generate a Lesson Script until the following are verified:**
 
-1. **Approved Methodologist input in each chosen Lesson directory:** read `methodologist-brief.md` with `Methodologist status: Approved`, or an explicitly verified, editor-approved legacy methodology outline with equivalent substance. Confirm target outcomes, factual content/sources, audience, prerequisites, Skill references and restrictions. A draft, a Curriculum label or the folder slug alone is **not enough**. If missing/unapproved, stop authoring for that Lesson and report the blocker; do not create or approve the Brief on the Screenwriter's behalf.
+1. **Approved Methodologist input in each chosen Lesson directory:** read `methodologist-brief.md` with `Methodologist status: Approved`, or an explicitly verified, editor-approved legacy methodology outline with equivalent substance. Confirm target outcomes, factual content/sources, audience, prerequisites, **the direct canonical `*.data.ts` links in the Brief's Target Skills list (complete filenames as link labels)** and restrictions. Verify these sources actually exist relative to the Brief; do not replace the approved Skill set with inferred descriptions, generated-taxonomy links or invented file paths. A draft, a Curriculum label or the folder slug alone is **not enough**. If missing/unapproved, stop authoring for that Lesson and report the blocker; do not create or approve the Brief on the Screenwriter's behalf.
 2. **Selected Lesson folder and context:** identify the standalone textbook package root (`<PackageRoot>`), actual numbered Lesson folder, intended output language and learner profile. The user determines the scope. The Script is stored **beside the Brief**, never in `studio/` or an automatically chosen Playground directory.
 3. **Read relevant architecture:** all [Svitlo Architecture & Product Principles](../../docs/architecture/README.md), particularly the [Learning Philosophy](../../docs/architecture/learning-experience-philosophy.md), [Notes concept](../../docs/architecture/lesson-notes.md), [Localization & Accessibility](../../docs/architecture/internationalization-and-accessibility.md) and [Offline/Device Compatibility](../../docs/architecture/offline-first-and-device-compatibility.md). Also read [Roles Proposition](../../Roles%20Proposition.md), [Long Chat Overture](../../Long%20Chat%20Overture.md), the current code contracts/renderers below, applicable `AGENTS.md` and local instructions. Historical concepts are design intent, not evidence of already implemented APIs.
 4. **Inspect existing lesson content:** read any applicable existing Lesson, Section, Question, Scene, content-resource and accessibility/localization patterns in the selected app, plus useful reference demonstrations in `learningApps/playground`. Verify the *present* implementation before authoring platform-specific specifications.
@@ -204,7 +204,7 @@ Target Lesson: <actual existing Lesson directory and textbook>
 Audience: <age/stage, prior knowledge, language, accessibility constraints>
 Approved Methodologist source: [Methodologist Brief](%VERIFIED_RELATIVE_BRIEF_LINK%) <or exact approved legacy file>
 Learning outcomes: <from the approved Methodologist document>
-Target Skills: <real existing approved references, if supplied>
+Target Skills: As approved in the linked Methodologist Brief (read and verify its direct Skill source-file links; do not keep a competing copied list here)
 Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
@@ -302,7 +302,7 @@ including LTR, RTL, reduced motion and assistive-technology use>
 
 ## 7. ACCEPTANCE CHECKLIST
 
-- [ ] User-selected Lesson scope resolved; every assigned Lesson has an approved Methodologist Brief **actually read**; discovery-only searches do not auto-author.
+- [ ] User-selected Lesson scope resolved; every assigned Lesson has an approved Methodologist Brief **actually read**; each Target Skill link resolves to its canonical `*.data.ts` file and is labeled with the exact source filename; discovery-only searches do not auto-author.
 - [ ] Lesson is genuinely **Program-neutral**, factually correct and independently useful; pedagogical scenario is distinguished from Program story.
 - [ ] Section plan uses actual `LessonSection_Content` semantics and **ordered, single-column typed Resource blocks**; distinguishes `Section`, `Resource` and `Question`.
 - [ ] All **eight declared Resource_Type labels** are understood, including the **unimplemented `youtube` config**, and renderer readiness was checked rather than inferred.
