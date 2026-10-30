@@ -21,6 +21,7 @@
     "test:components": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run test:components --workspace @svitlo/playground",
     "test:components:coverage": "npm run build --workspace @svitlo/contracts && npm run build --workspace @svitlo/engine && npm run build --workspace @svitlo/indexdb && npm run build --workspace @svitlo/ui-kit && npm run test:components:coverage --workspace @svitlo/playground",
     "test:taxonomy-generator": "node --test scripts/generate-skills-taxonomy.spec.mjs scripts/generate-skills-taxonomy.roundtrip.spec.mjs",
+    "test:taxonomy-codegen": "node --test scripts/implement-skills-taxonomy.spec.mjs",
     "test:taxonomy-import": "node --test scripts/import-taxonomy-descriptions.spec.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
