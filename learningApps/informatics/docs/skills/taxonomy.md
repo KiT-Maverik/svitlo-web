@@ -1573,660 +1573,1180 @@ Methodological description: Introduce random selection from an explicitly define
 User-friendly description: Add random choices to a model while defining which outcomes can occur.
 ### Software Architecture
 
+Slug: softwareArchitecture
+Action: create
+Status: pending
+
 Groups: 2 · Skills: 21
 
 [Not implemented](#)
 
-Explains program structure through objects, contracts, responsibilities, and dependencies. Design patterns form a separate domain of reusable solutions to object creation, composition, and behavior.
+Methodological description: Explains program structure through objects, contracts, responsibilities, and dependencies. Design patterns form a separate domain of reusable solutions to object creation, composition, and behavior.
+User-friendly description: Explore how objects, responsibilities and dependencies organize reliable software.
 
 #### Object Model
+
+Slug: objectModel
+Action: create
+Status: pending
 
 Skills: 13
 
 [Not implemented](#)
 
-Organizing program behavior around objects: state, methods, classes, abstraction, encapsulation, and relationships between types. Describing an individual object and explaining class relationships are distinct abilities.
+Methodological description: Organizing program behavior around objects: state, methods, classes, abstraction, encapsulation, and relationships between types. Describing an individual object and explaining class relationships are distinct abilities.
+User-friendly description: Discover how software objects combine their state and behavior.
 
 ##### Identify an Object's State and Behavior
 
+Slug: identifyAnObjectsStateAndBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Form a mental model of a real or imaginary object in terms of state (its characteristics and how they may change) and behavior (what it can do or what actions are possible). For example, a car has speed and fuel level and can accelerate or brake. This conceptual description does not require defining software properties and methods or writing code.
+Methodological description: Form a mental model of a real or imaginary object in terms of state (its characteristics and how they may change) and behavior (what it can do or what actions are possible). For example, a car has speed and fuel level and can accelerate or brake. This conceptual description does not require defining software properties and methods or writing code.
+User-friendly description: Describe an object's characteristics and the actions it can perform.
 
 ##### Explain the Concept of a Class
 
+Slug: explainTheConceptOfAClass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Understand a class as a definition of the structure and available operations of objects instantiated from it, such as the properties and methods of a hypothetical Counter. The class definition itself is not an instance with its own current count.
+Methodological description: Understand a class as a definition of the structure and available operations of objects instantiated from it, such as the properties and methods of a hypothetical Counter. The class definition itself is not an instance with its own current count.
+User-friendly description: Understand a class as a definition from which individual objects are created.
 
 ##### Distinguish a Class from an Object
 
+Slug: distinguishAClassFromAnObject
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare a type's template with particular instances holding their own values: one Robot class can produce several robots with different coordinates. A state change in one instance need not affect the others.
+Methodological description: Compare a type's template with particular instances holding their own values: one Robot class can produce several robots with different coordinates. A state change in one instance need not affect the others.
+User-friendly description: Distinguish the blueprint of a class from objects with their own current values.
 
 ##### Apply Object Abstraction
 
+Slug: applyObjectAbstraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the minimal set of operations or properties relevant to a component's user while hiding details that do not affect the contract. For example, a 'move' operation need not expose a robot's motor-control logic.
+Methodological description: Identify the minimal set of operations or properties relevant to a component's user while hiding details that do not affect the contract. For example, a 'move' operation need not expose a robot's motor-control logic.
+User-friendly description: Choose the essential operations a component should reveal to its users.
 
 ##### Explain Encapsulation
 
+Slug: explainEncapsulation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how an object restricts direct access to internal state and provides controlled operations that preserve its rules. For example, a bank account changes through a withdrawal method that validates the transaction.
+Methodological description: Show how an object restricts direct access to internal state and provides controlled operations that preserve its rules. For example, a bank account changes through a withdrawal method that validates the transaction.
+User-friendly description: Understand how objects protect their internal state through controlled methods.
 
 ##### Explain Inheritance
 
+Slug: explainInheritance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain relationships between base and derived types, where a derived type inherits defined properties or operations and may specialize them. Inheritance denotes an 'is a kind of' relationship, not a 'contains a part' relationship.
+Methodological description: Explain relationships between base and derived types, where a derived type inherits defined properties or operations and may specialize them. Inheritance denotes an 'is a kind of' relationship, not a 'contains a part' relationship.
+User-friendly description: Explain how a specialized class can inherit behavior from a broader class.
 
 ##### Explain Polymorphism
 
+Slug: explainPolymorphism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how different implementations fulfill a shared operation under the same contract, such as `draw()` for a circle and rectangle. The call remains consistent although concrete behavior depends on the implementation.
+Methodological description: Explain how different implementations fulfill a shared operation under the same contract, such as `draw()` for a circle and rectangle. The call remains consistent although concrete behavior depends on the implementation.
+User-friendly description: See how different objects can fulfill the same operation in different ways.
 
 ##### Model Object Composition
 
+Slug: modelObjectComposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Construct a system from components with distinct roles, such as a robot comprising a controller, sensors, and actuators. Composition is a 'has a part' relationship, unlike inheritance's 'is a kind of' relationship.
+Methodological description: Construct a system from components with distinct roles, such as a robot comprising a controller, sensors, and actuators. Composition is a 'has a part' relationship, unlike inheritance's 'is a kind of' relationship.
+User-friendly description: Build larger software objects from smaller parts with distinct responsibilities.
 
 ##### Explain the Structure of a Software Object
 
+Slug: explainTheStructureOfASoftwareObject
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze a given object's identity, the properties storing state values, and methods defining its operations. For example, two Counter instances can share `increment()` yet have different `count` values. This concerns understanding an existing software structure rather than independently choosing its parts.
+Methodological description: Analyze a given object's identity, the properties storing state values, and methods defining its operations. For example, two Counter instances can share `increment()` yet have different `count` values. This concerns understanding an existing software structure rather than independently choosing its parts.
+User-friendly description: Identify the identity, properties and methods of an existing software object.
 
 ##### Explain an Object Property
 
+Slug: explainAnObjectProperty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish an attribute as a named state value from a method as an available action, such as a robot's coordinate versus its movement command.
+Methodological description: Distinguish an attribute as a named state value from a method as an available action, such as a robot's coordinate versus its movement command.
+User-friendly description: Distinguish an object's stored property from the operations it can perform.
 
 ##### Explain an Object Method
 
+Slug: explainAnObjectMethod
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how invoking an object operation reads or changes its state; a method definition does not mean the operation has already run.
+Methodological description: Show how invoking an object operation reads or changes its state; a method definition does not mean the operation has already run.
+User-friendly description: Explain how calling a method can read or change an object's state.
 
 ##### Model a Domain Entity as a Software Object
 
+Slug: modelADomainEntityAsASoftwareObject
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Independently design a software representation of a real or imaginary entity for a specific task by selecting relevant properties and methods, excluding unnecessary detail, and justifying those choices. For a car-rental service, model availability and renting/returning rather than current speed. The result can be a diagram, pseudocode, or code; designing the structure differs from analyzing an existing object.
+Methodological description: Independently design a software representation of a real or imaginary entity for a specific task by selecting relevant properties and methods, excluding unnecessary detail, and justifying those choices. For a car-rental service, model availability and renting/returning rather than current speed. The result can be a diagram, pseudocode, or code; designing the structure differs from analyzing an existing object.
+User-friendly description: Design a useful software object by selecting relevant properties and operations.
 
 ##### Distinguish a Real Object from Its Abstract Model
 
+Slug: distinguishARealObjectFromItsAbstractModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that a software object represents only selected characteristics of a thing or concept; a fictional entity can also have a useful object model.
+Methodological description: Explain that a software object represents only selected characteristics of a thing or concept; a fictional entity can also have a useful object model.
+User-friendly description: Recognize that a software model represents only selected features of something.
 
 #### Design Principles
+
+Slug: designPrinciples
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Quality criteria for software structure: limiting duplication and unnecessary complexity, separating responsibilities, enabling extension, and managing dependencies. Each principle addresses a different reason why a program may need to change.
+Methodological description: Quality criteria for software structure: limiting duplication and unnecessary complexity, separating responsibilities, enabling extension, and managing dependencies. Each principle addresses a different reason why a program may need to change.
+User-friendly description: Learn principles for keeping software understandable and adaptable.
 
 ##### Identify Unnecessary Duplication (DRY)
 
+Slug: identifyUnnecessaryDuplicationDRY
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Find repeated logic or a repeated rule in several locations that requires fixes to be replicated. Similar-looking lines are not necessarily duplication when they represent independent rules.
+Methodological description: Find repeated logic or a repeated rule in several locations that requires fixes to be replicated. Similar-looking lines are not necessarily duplication when they represent independent rules.
+User-friendly description: Find duplicated rules that could cause inconsistent future changes.
 
 ##### Reduce Unnecessary Complexity (KISS)
 
+Slug: reduceUnnecessaryComplexityKISS
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare a solution with actual requirements and remove mechanisms that add nothing to needed behavior. Simplicity means reducing unjustified complexity, not ignoring important constraints or correctness.
+Methodological description: Compare a solution with actual requirements and remove mechanisms that add nothing to needed behavior. Simplicity means reducing unjustified complexity, not ignoring important constraints or correctness.
+User-friendly description: Simplify software by removing mechanisms the requirements do not justify.
 
 ##### Defer Unnecessary Features (YAGNI)
 
+Slug: deferUnnecessaryFeaturesYAGNI
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish functionality needed now from a merely imagined future scenario and avoid building the latter prematurely. Unlike KISS, the question is whether the feature is needed, not how complex its implementation is.
+Methodological description: Distinguish functionality needed now from a merely imagined future scenario and avoid building the latter prematurely. Unlike KISS, the question is whether the feature is needed, not how complex its implementation is.
+User-friendly description: Avoid implementing features that are only imagined future possibilities.
 
 ##### Isolate a Single Responsibility (SRP)
 
+Slug: isolateASingleResponsibilitySRP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a module should be organized around one coherent reason to change rather than independent needs of different stakeholders. A class can have many methods if they all support that responsibility.
+Methodological description: Explain why a module should be organized around one coherent reason to change rather than independent needs of different stakeholders. A class can have many methods if they all support that responsibility.
+User-friendly description: Organize a module around one coherent reason to change.
 
 ##### Extend Behavior Without Modifying the Core (OCP)
 
+Slug: extendBehaviorWithoutModifyingTheCoreOCP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify extension points that allow a new implementation through a contract without rewriting tested shared logic. A stable core is a goal, not an absolute prohibition on changing existing code.
+Methodological description: Identify extension points that allow a new implementation through a contract without rewriting tested shared logic. A stable core is a goal, not an absolute prohibition on changing existing code.
+User-friendly description: Design extension points for new behavior without rewriting stable core logic.
 
 ##### Verify Substitutability (LSP)
 
+Slug: verifySubstitutabilityLSP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify where a subtype or new implementation violates the expected preconditions, outcomes, or invariants of a shared contract. For example, replacing ordinary storage with read-only storage can break a client legitimately attempting a write.
+Methodological description: Identify where a subtype or new implementation violates the expected preconditions, outcomes, or invariants of a shared contract. For example, replacing ordinary storage with read-only storage can break a client legitimately attempting a write.
+User-friendly description: Check whether an implementation respects the promises of a shared contract.
 
 ##### Separate Narrow Interfaces (ISP)
 
+Slug: separateNarrowInterfacesISP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Split a large contract into role-specific interfaces so consumers depend only on needed operations. A read-only viewing device should not be required to implement editing or printing.
+Methodological description: Split a large contract into role-specific interfaces so consumers depend only on needed operations. A read-only viewing device should not be required to implement editing or printing.
+User-friendly description: Make interfaces small enough that clients need only the operations they use.
 
 ##### Design Dependencies on Contracts (DIP)
 
+Slug: designDependenciesOnContractsDIP
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate business rules from concrete data-access mechanisms through an interface admitting multiple implementations. High-level logic receives dependencies from outside instead of instantiating a fixed service internally.
+Methodological description: Separate business rules from concrete data-access mechanisms through an interface admitting multiple implementations. High-level logic receives dependencies from outside instead of instantiating a fixed service internally.
+User-friendly description: Separate business logic from concrete services by depending on contracts.
 ### Design Patterns
+
+Slug: designPatterns
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 23
 
 [Not implemented](#)
 
-The classic Gang of Four catalog describes 23 reusable structures for common object-design problems. Its three families focus on instance creation, component composition, and interactions. The existence of a pattern does not mean every problem should be made more complex to use one.
+Methodological description: The classic Gang of Four catalog describes 23 reusable structures for common object-design problems. Its three families focus on instance creation, component composition, and interactions. The existence of a pattern does not mean every problem should be made more complex to use one.
+User-friendly description: Explore reusable ways to create, combine and coordinate software objects.
 
 #### Creational
+
+Slug: creational
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Five approaches to constructing instances and object families that separate creation logic from usage.
+Methodological description: Five approaches to constructing instances and object families that separate creation logic from usage.
+User-friendly description: Learn patterns for constructing objects without tying clients to concrete types.
 
 ##### Factory Method
 
+Slug: factoryMethod
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Delegate product instantiation to an overridable factory method so clients use a shared contract without knowing the concrete class.
+Methodological description: Delegate product instantiation to an overridable factory method so clients use a shared contract without knowing the concrete class.
+User-friendly description: Let subclasses choose which concrete object a factory method creates.
 
 ##### Abstract Factory
 
+Slug: abstractFactory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use one factory to supply a compatible family of related products, such as interface elements for a particular platform, while hiding concrete types.
+Methodological description: Use one factory to supply a compatible family of related products, such as interface elements for a particular platform, while hiding concrete types.
+User-friendly description: Use a factory that builds matching families of related objects.
 
 ##### Builder
 
+Slug: builder
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Construct a complex object step by step through a separate builder, with sequences of steps reusable for different results.
+Methodological description: Construct a complex object step by step through a separate builder, with sequences of steps reusable for different results.
+User-friendly description: Assemble a complex object one step at a time using a builder.
 
 ##### Prototype
 
+Slug: prototype
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create a new object by copying a configured exemplar, considering shared nested data and the new object's identity.
+Methodological description: Create a new object by copying a configured exemplar, considering shared nested data and the new object's identity.
+User-friendly description: Create new objects by copying a configured example.
 
 ##### Singleton
 
+Slug: singleton
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Maintain one shared instance within a defined scope and control access to it while recognizing the risks of hidden global state.
+Methodological description: Maintain one shared instance within a defined scope and control access to it while recognizing the risks of hidden global state.
+User-friendly description: Control access to a single shared instance while considering global-state risks.
 
 #### Structural
+
+Slug: structural
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Seven methods of combining components through adaptation, wrapping, nesting, intermediaries, or shared state.
+Methodological description: Seven methods of combining components through adaptation, wrapping, nesting, intermediaries, or shared state.
+User-friendly description: Discover patterns for connecting, wrapping and sharing software components.
 
 ##### Adapter
 
+Slug: adapter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Translate the interface expected by a client into that of an existing component without rewriting that component.
+Methodological description: Translate the interface expected by a client into that of an existing component without rewriting that component.
+User-friendly description: Connect incompatible interfaces by translating between them.
 
 ##### Bridge
 
+Slug: bridge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate abstraction and implementation into two independent hierarchies so each dimension can vary without an explosion of class combinations.
+Methodological description: Separate abstraction and implementation into two independent hierarchies so each dimension can vary without an explosion of class combinations.
+User-friendly description: Separate a component's abstraction from the implementation it uses.
 
 ##### Composite
 
+Slug: composite
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Provide a common contract for individual objects and nested groups, allowing leaves and branches in a tree-like structure to be treated uniformly.
+Methodological description: Provide a common contract for individual objects and nested groups, allowing leaves and branches in a tree-like structure to be treated uniformly.
+User-friendly description: Treat individual objects and groups of objects through a common interface.
 
 ##### Decorator
 
+Slug: decorator
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Add behavior through successive wrappers sharing an interface instead of creating a separate subclass for every combination.
+Methodological description: Add behavior through successive wrappers sharing an interface instead of creating a separate subclass for every combination.
+User-friendly description: Add behavior by wrapping an object instead of multiplying subclasses.
 
 ##### Facade
 
+Slug: facade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Provide a simplified entry point hiding complex sequences of subsystem calls without replacing the entire subsystem interface.
+Methodological description: Provide a simplified entry point hiding complex sequences of subsystem calls without replacing the entire subsystem interface.
+User-friendly description: Offer a simple entry point to a complex collection of components.
 
 ##### Flyweight
 
+Slug: flyweight
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Share the immutable portion of state among many similar objects to reduce memory consumption.
+Methodological description: Share the immutable portion of state among many similar objects to reduce memory consumption.
+User-friendly description: Share reusable object data to reduce unnecessary memory use.
 
 ##### Proxy
 
+Slug: proxy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control access to another object through a proxy sharing its interface—for example, to check authorization, cache results, or defer loading.
+Methodological description: Control access to another object through a proxy sharing its interface—for example, to check authorization, cache results, or defer loading.
+User-friendly description: Control access to an object using another object with the same interface.
 
 #### Behavioral
+
+Slug: behavioral
+Action: create
+Status: pending
 
 Skills: 11
 
 [Not implemented](#)
 
-Eleven approaches to handling requests, selecting algorithms, delivering notifications, managing state, and distributing responsibility.
+Methodological description: Eleven approaches to handling requests, selecting algorithms, delivering notifications, managing state, and distributing responsibility.
+User-friendly description: Explore ways objects coordinate requests and change behavior.
 
 ##### Chain of Responsibility
 
+Slug: chainOfResponsibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Pass a request through a chain of handlers until one processes it or passes it onward.
+Methodological description: Pass a request through a chain of handlers until one processes it or passes it onward.
+User-friendly description: Pass a request through handlers until one can process it.
 
 ##### Command
 
+Slug: command
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent an action as a request object that can be stored, queued, or executed later.
+Methodological description: Represent an action as a request object that can be stored, queued, or executed later.
+User-friendly description: Represent an operation as an object that can be stored or scheduled.
 
 ##### Interpreter
 
+Slug: interpreter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent the rules of a small domain-specific language as an expression structure with defined interpretation behavior.
+Methodological description: Represent the rules of a small domain-specific language as an expression structure with defined interpretation behavior.
+User-friendly description: Interpret a small language using rules represented as expressions.
 
 ##### Iterator
 
+Slug: iterator
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Traverse collection elements through a defined interface without exposing their internal representation.
+Methodological description: Traverse collection elements through a defined interface without exposing their internal representation.
+User-friendly description: Visit collection elements without exposing how the collection is stored.
 
 ##### Mediator
 
+Slug: mediator
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Move interactions between several components into a mediator so each component need not depend directly on every other one.
+Methodological description: Move interactions between several components into a mediator so each component need not depend directly on every other one.
+User-friendly description: Coordinate component interactions through a central mediator.
 
 ##### Memento
 
+Slug: memento
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Save an external snapshot that allows restoring an object's state without revealing its internal implementation.
+Methodological description: Save an external snapshot that allows restoring an object's state without revealing its internal implementation.
+User-friendly description: Save an object's state so it can later be restored.
 
 ##### Observer
 
+Slug: observer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Notify subscribers when a source changes without knowing which particular action each subscriber will take.
+Methodological description: Notify subscribers when a source changes without knowing which particular action each subscriber will take.
+User-friendly description: Notify interested subscribers when an observed object changes.
 
 ##### State
 
+Slug: state
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Delegate an object's reaction to a given command to its current state object instead of using an extensive conditional tree.
+Methodological description: Delegate an object's reaction to a given command to its current state object instead of using an extensive conditional tree.
+User-friendly description: Change how an object reacts according to its current state.
 
 ##### Strategy
 
+Slug: strategy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interchange algorithms sharing an interface so the solution method can change independently of the client.
+Methodological description: Interchange algorithms sharing an interface so the solution method can change independently of the client.
+User-friendly description: Swap between algorithms that all follow one shared interface.
 
 ##### Template Method
 
+Slug: templateMethod
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define an algorithm skeleton with fixed steps while subclasses implement selected details through specified extension points.
+Methodological description: Define an algorithm skeleton with fixed steps while subclasses implement selected details through specified extension points.
+User-friendly description: Keep an algorithm's main steps fixed while allowing selected steps to vary.
 
 ##### Visitor
 
+Slug: visitor
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Move operations on a family of types into a separate visitor while keeping the element structure relatively stable.
+Methodological description: Move operations on a family of types into a separate visitor while keeping the element structure relatively stable.
+User-friendly description: Separate operations from the object structures on which they act.
 ### Artificial Intelligence
+
+Slug: artificialIntelligence
+Action: create
+Status: pending
 
 Groups: 7 · Skills: 34
 
 [Not implemented](#)
 
-Examines systems performing recognition, prediction, generation, and other forms of intelligent information processing. Includes explicitly programmed rules and trained models, how they work, prompting, technical trade-offs, and reliability verification.
+Methodological description: Examines systems performing recognition, prediction, generation, and other forms of intelligent information processing. Includes explicitly programmed rules and trained models, how they work, prompting, technical trade-offs, and reliability verification.
+User-friendly description: Discover how artificial intelligence systems learn, predict, generate and sometimes fail.
 
 #### AI Fundamentals
+
+Slug: aIFundamentals
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Explores the roles of programmed rules and training data in AI, common task objectives, and limits of result reliability. Classify tasks by their desired outputs, not only by a model's name or underlying mathematical technique.
+Methodological description: Explores the roles of programmed rules and training data in AI, common task objectives, and limits of result reliability. Classify tasks by their desired outputs, not only by a model's name or underlying mathematical technique.
+User-friendly description: Explore the differences between programmed rules, trained models and AI tasks.
 
 ##### Distinguish Rules from Trained Models
 
+Slug: distinguishRulesFromTrainedModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish systems governed by explicitly programmed rules from models whose parameters are adjusted through training on data. Both use algorithms and may be combined in one product; not every AI system necessarily relies on machine learning.
+Methodological description: Distinguish systems governed by explicitly programmed rules from models whose parameters are adjusted through training on data. Both use algorithms and may be combined in one product; not every AI system necessarily relies on machine learning.
+User-friendly description: Distinguish explicitly programmed decision rules from systems trained on data.
 
 ##### Explain Learning from Examples
 
+Slug: explainLearningFromExamples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how training adjusts model parameters using examples and a quality criterion to generalize to new data. Memorizing training examples alone does not establish reliable performance on unseen data.
+Methodological description: Show how training adjusts model parameters using examples and a quality criterion to generalize to new data. Memorizing training examples alone does not establish reliable performance on unseen data.
+User-friendly description: Explain how examples help a model improve its performance on new inputs.
 
 ##### Classify AI Tasks
 
+Slug: classifyAITasks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a task aims to recognize a category or property of existing data, predict an unknown or future value, or generate new content. Object recognition in a photo, demand forecasting, and image generation have distinct desired outcomes. A generative language model also predicts successive tokens internally, so its mechanism is not identical to the task's objective.
+Methodological description: Determine whether a task aims to recognize a category or property of existing data, predict an unknown or future value, or generate new content. Object recognition in a photo, demand forecasting, and image generation have distinct desired outcomes. A generative language model also predicts successive tokens internally, so its mechanism is not identical to the task's objective.
+User-friendly description: Recognize whether an AI task classifies, predicts or generates content.
 
 ##### Identify a Potential AI Error
 
+Slug: identifyAPotentialAIError
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize signs of an unreliable response, such as implausibly specific details, contradictions with context, or unverifiable references. A confident tone is not evidence of truth; material claims need independent verification.
+Methodological description: Recognize signs of an unreliable response, such as implausibly specific details, contradictions with context, or unverifiable references. A confident tone is not evidence of truth; material claims need independent verification.
+User-friendly description: Spot warning signs that an AI answer may need independent checking.
 
 ##### Explain Generative AI
 
+Slug: explainGenerativeAI
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how models create new text, images, or other content based on input context and patterns learned during training.
+Methodological description: Describe how models create new text, images, or other content based on input context and patterns learned during training.
+User-friendly description: Understand how generative models create text, images or other content.
 
 ##### Explain Predictive AI
 
+Slug: explainPredictiveAI
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe estimating a numerical value, category, or event probability from known features, for example forecasting rainfall.
+Methodological description: Describe estimating a numerical value, category, or event probability from known features, for example forecasting rainfall.
+User-friendly description: Explore how predictive systems estimate values, categories or event chances.
 
 #### Imitation and Understanding
+
+Slug: imitationAndUnderstanding
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Discussions of machine intelligence distinguish outward similarity of responses from claims of internal understanding. A behavioral criterion and a philosophical thought experiment ask different questions; neither alone proves or disproves consciousness.
+Methodological description: Discussions of machine intelligence distinguish outward similarity of responses from claims of internal understanding. A behavioral criterion and a philosophical thought experiment ask different questions; neither alone proves or disproves consciousness.
+User-friendly description: Examine the difference between convincing imitation and genuine understanding.
 
 ##### Explain the Turing Test
 
+Slug: explainTheTuringTest
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain Alan Turing's proposed approach to evaluating whether a machine can produce dialogue that a person cannot distinguish from human responses under test conditions. Successful imitation does not establish consciousness or comprehensive understanding.
+Methodological description: Explain Alan Turing's proposed approach to evaluating whether a machine can produce dialogue that a person cannot distinguish from human responses under test conditions. Successful imitation does not establish consciousness or comprehensive understanding.
+User-friendly description: Understand what the Turing Test evaluates and what it cannot establish.
 
 ##### Explain Searle's Chinese Room
 
+Slug: explainSearlesChineseRoom
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze John Searle's thought experiment about rule-based symbol manipulation without necessarily understanding their meaning. Distinguish a debated philosophical argument from a proven fact about the internal states of all AI systems.
+Methodological description: Analyze John Searle's thought experiment about rule-based symbol manipulation without necessarily understanding their meaning. Distinguish a debated philosophical argument from a proven fact about the internal states of all AI systems.
+User-friendly description: Explore the Chinese Room thought experiment and the debate it raises.
 
 #### Prompting
+
+Slug: prompting
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Specifying requirements for an AI request: objective, context, constraints, desired output format, and iterative refinement. Prompt components can vary independently; checking whether answers are true belongs to AI reliability.
+Methodological description: Specifying requirements for an AI request: objective, context, constraints, desired output format, and iterative refinement. Prompt components can vary independently; checking whether answers are true belongs to AI reliability.
+User-friendly description: Learn to give AI systems clearer instructions, context and constraints.
 
 ##### Specify a Prompt Objective
 
+Slug: specifyAPromptObjective
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Give a model a defined task and desired outcome, such as 'compare three explanations and highlight their differences,' instead of 'tell me something.' The objective specifies the work, not the output format.
+Methodological description: Give a model a defined task and desired outcome, such as 'compare three explanations and highlight their differences,' instead of 'tell me something.' The objective specifies the work, not the output format.
+User-friendly description: State the precise task you want an AI assistant to accomplish.
 
 ##### Provide Prompt Context
 
+Slug: providePromptContext
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Supply relevant facts, intended audience or use, and conditions needed to interpret a request correctly. Context helps but should exclude unnecessary personal information.
+Methodological description: Supply relevant facts, intended audience or use, and conditions needed to interpret a request correctly. Context helps but should exclude unnecessary personal information.
+User-friendly description: Give relevant background information that helps an AI interpret your request.
 
 ##### Specify Prompt Constraints
 
+Slug: specifyPromptConstraints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define the boundaries of acceptable output, such as permitted sources, length, exclusions, or a prohibition on inventing missing data. Unlike the objective, constraints define which responses are not acceptable.
+Methodological description: Define the boundaries of acceptable output, such as permitted sources, length, exclusions, or a prohibition on inventing missing data. Unlike the objective, constraints define which responses are not acceptable.
+User-friendly description: Specify boundaries such as length, sources and information that must not be invented.
 
 ##### Specify an Output Format
 
+Slug: specifyAnOutputFormat
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the required structure, such as a table with named columns or JSON with defined fields, without confusing formatting with factual correctness.
+Methodological description: Describe the required structure, such as a table with named columns or JSON with defined fields, without confusing formatting with factual correctness.
+User-friendly description: Ask for an explicit output structure such as a table or defined fields.
 
 ##### Refine a Prompt Based on Results
 
+Slug: refineAPromptBasedOnResults
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare output with the original goal and adjust specific parts of a prompt responsible for discrepancies. Rewording cannot substitute for fact-checking the model's claims.
+Methodological description: Compare output with the original goal and adjust specific parts of a prompt responsible for discrepancies. Rewording cannot substitute for fact-checking the model's claims.
+User-friendly description: Improve an AI request after checking what its previous response missed.
 
 ##### Specify a Role in a Prompt
 
+Slug: specifyARoleInAPrompt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State a desired subject-matter role or response style without treating the declared role as evidence of actual professional experience.
+Methodological description: State a desired subject-matter role or response style without treating the declared role as evidence of actual professional experience.
+User-friendly description: Set a useful perspective or style without mistaking it for real expertise.
 
 ##### Break a Complex Prompt into Subtasks
 
+Slug: breakAComplexPromptIntoSubtasks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Split a multi-stage request into sequential prompts with verifiable intermediate outcomes while preserving the original objective.
+Methodological description: Split a multi-stage request into sequential prompts with verifiable intermediate outcomes while preserving the original objective.
+User-friendly description: Divide a complicated request into smaller steps with results you can verify.
 
 #### Model Architectures and Resources
+
+Slug: modelArchitecturesAndResources
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Compare AI model characteristics: activation of components, numerical precision, latency, memory requirements, and fit for a task. These depend on the model and execution conditions, not on a universal AI ranking.
+Methodological description: Compare AI model characteristics: activation of components, numerical precision, latency, memory requirements, and fit for a task. These depend on the model and execution conditions, not on a universal AI ranking.
+User-friendly description: Explore how different AI model architectures affect performance and resource needs.
 
 ##### Compare Dense and MoE Models
 
+Slug: compareDenseAndMoEModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish an architecture activating all relevant dense computation from a mixture-of-experts architecture where a router activates only some expert blocks. Total parameter count is not the same as the number of parameters active for each token.
+Methodological description: Distinguish an architecture activating all relevant dense computation from a mixture-of-experts architecture where a router activates only some expert blocks. Total parameter count is not the same as the number of parameters active for each token.
+User-friendly description: Compare models that activate many parameters with models using selected experts.
 
 ##### Explain Quantization
 
+Slug: explainQuantization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show how representing weights or activations with fewer bits reduces memory use and may improve speed, while potentially changing numerical accuracy and output quality. This is a trade-off, not cost-free compression.
+Methodological description: Show how representing weights or activations with fewer bits reduces memory use and may improve speed, while potentially changing numerical accuracy and output quality. This is a trade-off, not cost-free compression.
+User-friendly description: Understand how reduced numerical precision can save memory but change quality.
 
 ##### Compare Response Latency
 
+Slug: compareResponseLatency
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare the time between submitting a request and receiving the first useful output under consistent conditions. Time to first token is different from subsequent generation speed: a short initial delay does not guarantee that a long response finishes quickly.
+Methodological description: Compare the time between submitting a request and receiving the first useful output under consistent conditions. Time to first token is different from subsequent generation speed: a short initial delay does not guarantee that a long response finishes quickly.
+User-friendly description: Compare the delay before an AI response begins separately from generation speed.
 
 ##### Compare Model Memory Requirements
 
+Slug: compareModelMemoryRequirements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Estimate RAM or GPU memory needed for model weights and runtime working data at a specified numerical precision and context length. Disk file size is not the same as peak runtime memory use.
+Methodological description: Estimate RAM or GPU memory needed for model weights and runtime working data at a specified numerical precision and context length. Disk file size is not the same as peak runtime memory use.
+User-friendly description: Estimate the memory required to run a model rather than just store its files.
 
 ##### Choose a Model for a Task
 
+Slug: chooseAModelForATask
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Weigh independent constraints for a scenario—accuracy, latency, available memory, cost, and privacy—and justify the selection. No single model is best on every criterion simultaneously.
+Methodological description: Weigh independent constraints for a scenario—accuracy, latency, available memory, cost, and privacy—and justify the selection. No single model is best on every criterion simultaneously.
+User-friendly description: Choose a model based on task quality, speed, cost, privacy and available memory.
 
 #### Reliability and Responsible AI Use
+
+Slug: reliabilityAndResponsibleAIUse
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Protecting data and identifying unreliable results or unfair consequences of AI use. Fact-checking, bias assessment, and human accountability address different risks.
+Methodological description: Protecting data and identifying unreliable results or unfair consequences of AI use. Fact-checking, bias assessment, and human accountability address different risks.
+User-friendly description: Learn to check AI outputs and consider their effects on people.
 
 ##### Verify Facts in an AI Response
 
+Slug: verifyFactsInAnAIResponse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify verifiable claims from model output and compare them with independent trustworthy sources, checking provenance, date, and context. An AI response cannot confirm itself or another retelling of the same response.
+Methodological description: Identify verifiable claims from model output and compare them with independent trustworthy sources, checking provenance, date, and context. An AI response cannot confirm itself or another retelling of the same response.
+User-friendly description: Check factual claims from an AI response using reliable independent sources.
 
 ##### Recognize AI Bias Risks
 
+Slug: recognizeAIBiasRisks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Notice how training data or deployment rules may produce systematically different outcomes for groups or individuals. One erroneous output does not necessarily establish systematic bias.
+Methodological description: Notice how training data or deployment rules may produce systematically different outcomes for groups or individuals. One erroneous output does not necessarily establish systematic bias.
+User-friendly description: Recognize when AI systems might treat groups or individuals unfairly.
 
 ##### Protect Personal Data in Prompts
 
+Slug: protectPersonalDataInPrompts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify information about individuals that should not be disclosed to an external AI service and remove or generalize it without defeating the task objective. Public access to a model does not imply that submitted data stays private.
+Methodological description: Identify information about individuals that should not be disclosed to an external AI service and remove or generalize it without defeating the task objective. Public access to a model does not imply that submitted data stays private.
+User-friendly description: Remove unnecessary personal information before submitting an AI request.
 
 ##### Explain Human Responsibility for AI-Assisted Decisions
 
+Slug: explainHumanResponsibilityForAIAssistedDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish an automatically generated recommendation from a decision for which a person or organization is accountable. Verification of grounds, the ability to contest results, and control over final action matter.
+Methodological description: Distinguish an automatically generated recommendation from a decision for which a person or organization is accountable. Verification of grounds, the ability to contest results, and control over final action matter.
+User-friendly description: Understand why people remain accountable for decisions assisted by AI.
 
 #### Language Model Tokens and Context
+
+Slug: languageModelTokensAndContext
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Language models process tokens, evaluate possible continuations, and operate within a limited context window; model parameter count does not determine context length.
+Methodological description: Language models process tokens, evaluate possible continuations, and operate within a limited context window; model parameter count does not determine context length.
+User-friendly description: Discover how language models divide text into tokens and use context.
 
 ##### Explain Tokens
 
+Slug: explainTokens
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Understand a token as a unit defined by a tokenizer: single letters, word fragments, whole words, or punctuation may be encoded in different ways.
+Methodological description: Understand a token as a unit defined by a tokenizer: single letters, word fragments, whole words, or punctuation may be encoded in different ways.
+User-friendly description: Understand tokens as model-specific units of text representation.
 
 ##### Distinguish Tokens, Characters, and Words
 
+Slug: distinguishTokensCharactersAndWords
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show that a word may contain several tokens and a token may contain several characters; the segmentation depends on the model and language.
+Methodological description: Show that a word may contain several tokens and a token may contain several characters; the segmentation depends on the model and language.
+User-friendly description: Recognize why characters, words and tokens are not the same thing.
 
 ##### Explain Next-Token Selection
 
+Slug: explainNextTokenSelection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A model computes a probability distribution over continuations given the available context, then incorporates the chosen token into the context for the next step.
+Methodological description: A model computes a probability distribution over continuations given the available context, then incorporates the chosen token into the context for the next step.
+User-friendly description: Explain how language models choose a possible next token from context.
 
 ##### Distinguish Sampling from Choosing the Most Likely Token
 
+Slug: distinguishSamplingFromChoosingTheMostLikelyToken
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare decoding by sampling from a probability distribution with deterministically selecting its highest-probability continuation.
+Methodological description: Compare decoding by sampling from a probability distribution with deterministically selecting its highest-probability continuation.
+User-friendly description: Compare choosing the most likely token with sampling other possible continuations.
 
 ##### Explain a Language Model's Context Window
 
+Slug: explainALanguageModelsContextWindow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the limit on how many tokens a system can use for a request and understand that different models have different limits.
+Methodological description: Identify the limit on how many tokens a system can use for a request and understand that different models have different limits.
+User-friendly description: Understand why a language model can use only a limited amount of context.
 
 ##### Explain Context Window Overflow
 
+Slug: explainContextWindowOverflow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that when the limit is exceeded, a service may reject the request, truncate earlier content, or summarize parts of it.
+Methodological description: Explain that when the limit is exceeded, a service may reject the request, truncate earlier content, or summarize parts of it.
+User-friendly description: Explore what can happen when a request exceeds a model's context limit.
 
 #### Safe Interaction with AI
+
+Slug: safeInteractionWithAI
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Recognizing unjustified model confidence, excessive agreement, dependency risks, and the need for continued human judgment.
+Methodological description: Recognizing unjustified model confidence, excessive agreement, dependency risks, and the need for continued human judgment.
+User-friendly description: Recognize interaction patterns that can make AI advice misleading or unhealthy.
 
 ##### Recognize AI Sycophancy
 
+Slug: recognizeAISycophancy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish evidence-based support from unfounded praise and reinforcement of an incorrect belief; a positive tone does not establish correctness.
+Methodological description: Distinguish evidence-based support from unfounded praise and reinforcement of an incorrect belief; a positive tone does not establish correctness.
+User-friendly description: Spot AI agreement or praise that is not supported by evidence.
 
 ##### Explain Risks of Overreliance on AI
 
+Slug: explainRisksOfOverrelianceOnAI
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why extended conversations with chatbots should not replace interactions with people, independent checks, or asking for help.
+Methodological description: Explain why extended conversations with chatbots should not replace interactions with people, independent checks, or asking for help.
+User-friendly description: Understand why AI should not replace independent thinking or human support.
 
 ##### Identify Untrusted Instructions in AI Input
 
+Slug: identifyUntrustedInstructionsInAIInput
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the content of an external document being analyzed from the user's instructions; third-party text should not automatically control system behavior.
+Methodological description: Distinguish the content of an external document being analyzed from the user's instructions; third-party text should not automatically control system behavior.
+User-friendly description: Recognize instructions hidden in external material that should not control an assistant.
 
 ##### Protect Secrets When Using AI
 
+Slug: protectSecretsWhenUsingAI
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Avoid entering passwords, confirmation codes, access keys, or confidential information into chatbots without proper authorization and verified safeguards.
+Methodological description: Avoid entering passwords, confirmation codes, access keys, or confidential information into chatbots without proper authorization and verified safeguards.
+User-friendly description: Protect passwords, access keys and confidential information when working with AI.
 ### Robotics and Automation
+
+Slug: roboticsAndAutomation
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 8
 
 [Not implemented](#)
 
-Programming the control logic of physical or simulated actuators in response to sensor readings. Engineering may also study mechanical design; this taxonomy emphasizes the relationship among information, rules, and actions.
+Methodological description: Programming the control logic of physical or simulated actuators in response to sensor readings. Engineering may also study mechanical design; this taxonomy emphasizes the relationship among information, rules, and actions.
+User-friendly description: Explore how sensors, programming and actuators allow robots to respond to their surroundings.
 
 #### Robotic System Components
 
+Slug: roboticSystemComponents
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Information-processing roles of sensors, controllers, and actuators: receive a reading, apply a control rule, and change a state. This examines functional relationships rather than mechanical component design.
+Methodological description: Information-processing roles of sensors, controllers, and actuators: receive a reading, apply a control rule, and change a state. This examines functional relationships rather than mechanical component design.
+User-friendly description: Learn how a robot detects conditions, decides what to do and acts.
 
 ##### Identify a Sensor's Purpose
 
+Slug: identifyASensorsPurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine which physical quantity or environmental state a sensor converts into a signal for the controller, such as distance, light, or temperature. A sensor supplies information but does not itself make control decisions.
+Methodological description: Determine which physical quantity or environmental state a sensor converts into a signal for the controller, such as distance, light, or temperature. A sensor supplies information but does not itself make control decisions.
+User-friendly description: Recognize sensors that measure light, distance, temperature or other conditions.
 
 ##### Identify an Actuator's Purpose
 
+Slug: identifyAnActuatorsPurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a device that receives a command and performs a physical action: a motor rotates a wheel while an LED changes light output. An actuator is not a sensor even if connected to the same controller.
+Methodological description: Recognize a device that receives a command and performs a physical action: a motor rotates a wheel while an LED changes light output. An actuator is not a sensor even if connected to the same controller.
+User-friendly description: Explain how motors, lights and other actuators carry out commands.
 
 ##### Identify a Robot Controller
 
+Slug: identifyARobotController
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the component that reads inputs, executes programmed rules, and sends commands to actuators. The controller connects information with action and need not resemble a large standalone computer.
+Methodological description: Explain the component that reads inputs, executes programmed rules, and sends commands to actuators. The controller connects information with action and need not resemble a large standalone computer.
+User-friendly description: Identify the controller that converts sensor inputs into programmed actions.
 
 ##### Model the Sensor-to-Action Relationship
 
+Slug: modelTheSensorToActionRelationship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate a measured condition, a controller rule, and an actuator command, such as 'stop the motor if distance falls below the threshold.' Distinguish the sensor reading from the programmed decision.
+Methodological description: Relate a measured condition, a controller rule, and an actuator command, such as 'stop the motor if distance falls below the threshold.' Distinguish the sensor reading from the programmed decision.
+User-friendly description: Link a sensor measurement, a decision rule and an actuator response.
 
 #### Robot Control
+
+Slug: robotControl
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Construct and adjust commands for movement, obstacle response, and repeated robot operations. Unlike general programming, these algorithms interact with a physical or simulated environment.
+Methodological description: Construct and adjust commands for movement, obstacle response, and repeated robot operations. Unlike general programming, these algorithms interact with a physical or simulated environment.
+User-friendly description: Create and improve instructions for a robot's movements and responses.
 
 ##### Create a Robot Movement Sequence
 
+Slug: createARobotMovementSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Plan the ordered movement, orientation, and stopping commands that take a robot from its initial to its target state, accounting for direction. This is a motion-control problem, not simply a sequence of abstract words.
+Methodological description: Plan the ordered movement, orientation, and stopping commands that take a robot from its initial to its target state, accounting for direction. This is a motion-control problem, not simply a sequence of abstract words.
+User-friendly description: Plan the ordered commands that move a robot to its destination.
 
 ##### Implement Robot Obstacle Response
 
+Slug: implementRobotObstacleResponse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Link a sensor reading or simulated state to a maneuver such as stopping, turning, or bypassing an obstacle, and verify the action occurs only under the intended condition.
+Methodological description: Link a sensor reading or simulated state to a maneuver such as stopping, turning, or bypassing an obstacle, and verify the action occurs only under the intended condition.
+User-friendly description: Make a robot stop, turn or avoid an obstacle when a sensor detects it.
 
 ##### Configure a Repeated Robot Action
 
+Slug: configureARepeatedRobotAction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control the number of repetitions or termination condition of a physical or simulated operation, such as repeatedly checking a sensor while moving. Account for environmental changes between iterations.
+Methodological description: Control the number of repetitions or termination condition of a physical or simulated operation, such as repeatedly checking a sensor while moving. Account for environmental changes between iterations.
+User-friendly description: Set how many times a robot repeats an action or when it should stop.
 
 ##### Debug Robot Behavior
 
+Slug: debugRobotBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a navigation or response error arises from a sensor reading, controller condition, or actuator command, and correct the appropriate rule. Debugging requires comparing expected and observed actions.
+Methodological description: Determine whether a navigation or response error arises from a sensor reading, controller condition, or actuator command, and correct the appropriate rule. Debugging requires comparing expected and observed actions.
+User-friendly description: Find whether a robot's unexpected behavior comes from sensing, logic or action.
 ### Digital Safety and Responsibility
 
 Groups: 4 · Skills: 20
