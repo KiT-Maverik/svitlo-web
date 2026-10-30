@@ -140,6 +140,14 @@ test('Mathematics: Code to Markdown round-trip preserves every entity and all su
     assert.equal(generate(locale), first, 'Non-deterministic output for ' + locale);
     parseMarkdown(first, locale);
   }
+  // An explicit legacy source path must reproduce the default output exactly.
+  const explicit = spawnSync(process.execPath, [
+    path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
+    '--package', 'learningApps/math', '--source-root', 'src/data/skillsTaxonomy',
+    '--locale', 'en', '--stdout',
+  ], { cwd: root, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });
+  assert.equal(explicit.status, 0, explicit.stderr);
+  assert.equal(explicit.stdout, generate('en'));
   const after = fs.existsSync(outputPath) ? fs.readFileSync(outputPath, 'utf8') : undefined;
   assert.equal(after, before, '--stdout must not modify generated files');
   assert.equal(entities.length, expectedFiles.size, 'Duplicate Code source files');
