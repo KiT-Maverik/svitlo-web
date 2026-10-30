@@ -2692,313 +2692,553 @@ User-friendly description: Explore reasons people might follow, challenge or res
 
 ### Philosophy of Language
 
+Slug: philosophyOfLanguage
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Language is examined as a system for conveying meaning, referring to the world, performing actions, and shaping interpretation. Grammar instruction and literary composition remain primarily in Language and Literature.
+Methodological description: Language is examined as a system for conveying meaning, referring to the world, performing actions, and shaping interpretation. Grammar instruction and literary composition remain primarily in Language and Literature.
+User-friendly description: Explore how words convey meaning, refer to things and shape understanding.
 
 #### Meaning and Reference
 
+Slug: meaningAndReference
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Words and sentences can express meanings beyond identifying objects; context, concepts, and the distinction between expression and referent affect analysis.
+Methodological description: Words and sentences can express meanings beyond identifying objects; context, concepts, and the distinction between expression and referent affect analysis.
+User-friendly description: Discover the difference between a word, its meaning and what it refers to.
 
 ##### Distinguish a word from its referent
 
+Slug: distinguishAWordFromItsReferent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a linguistic expression and the person, object, or kind it denotes are not identical.
+Methodological description: Explain why a linguistic expression and the person, object, or kind it denotes are not identical.
+User-friendly description: Distinguish a word from the thing or person it names.
 
 ##### Distinguish sense from reference
 
+Slug: distinguishSenseFromReference
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how different expressions can pick out the same entity while presenting it in different ways.
+Methodological description: Analyze how different expressions can pick out the same entity while presenting it in different ways.
+User-friendly description: Recognize how different expressions can refer to the same entity in different ways.
 
 ##### Identify semantic ambiguity
 
+Slug: identifySemanticAmbiguity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize when a sentence admits multiple readings due to a word or syntactic structure rather than simply lacking evidence.
+Methodological description: Recognize when a sentence admits multiple readings due to a word or syntactic structure rather than simply lacking evidence.
+User-friendly description: Find sentences with more than one possible meaning.
 
 #### Communication and Interpretation
+
+Slug: communicationAndInterpretation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-What a speaker says can differ from what a speaker conveys or does by saying it. Interpretation must take context and plausible alternatives into account.
+Methodological description: What a speaker says can differ from what a speaker conveys or does by saying it. Interpretation must take context and plausible alternatives into account.
+User-friendly description: Learn how context affects what people say and communicate.
 
 ##### Distinguish literal meaning from implication
 
+Slug: distinguishLiteralMeaningFromImplication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify content explicitly expressed versus a reasonable conversational inference that could be cancelled or revised.
+Methodological description: Identify content explicitly expressed versus a reasonable conversational inference that could be cancelled or revised.
+User-friendly description: Distinguish the literal meaning of a statement from what it suggests.
 
 ##### Identify a speech act
 
+Slug: identifyASpeechAct
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how an utterance functions as a promise, request, warning, or assertion beyond its sentence structure.
+Methodological description: Recognize how an utterance functions as a promise, request, warning, or assertion beyond its sentence structure.
+User-friendly description: Recognize when saying something performs an action such as promising or requesting.
 
 ##### Evaluate contextual interpretations
 
+Slug: evaluateContextualInterpretations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare readings of an utterance using the speaker's context, conventions, and available evidence.
+Methodological description: Compare readings of an utterance using the speaker's context, conventions, and available evidence.
+User-friendly description: Choose between interpretations by considering context and available evidence.
 
 
 #### Language, Truth, and Power
+
+Slug: languageTruthAndPower
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Descriptive categories, framing, and public speech influence which interpretations appear available. Evaluating their justification differs from explaining psychological persuasion.
+Methodological description: Descriptive categories, framing, and public speech influence which interpretations appear available. Evaluating their justification differs from explaining psychological persuasion.
+User-friendly description: Explore how language expresses judgments and shapes public discussion.
 
 ##### Distinguish descriptive from evaluative language
 
+Slug: distinguishDescriptiveFromEvaluativeLanguage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how apparently factual wording can also express approval, disapproval, or a contested standard.
+Methodological description: Identify how apparently factual wording can also express approval, disapproval, or a contested standard.
+User-friendly description: Recognize when seemingly factual wording also expresses an evaluation.
 
 ##### Analyze a framing choice
 
+Slug: analyzeAFramingChoice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how alternate labels foreground different aspects of one issue and test what evidence each framing leaves out.
+Methodological description: Explain how alternate labels foreground different aspects of one issue and test what evidence each framing leaves out.
+User-friendly description: Compare labels that highlight different aspects of the same issue.
 
 ##### Evaluate a claim about linguistic representation
 
+Slug: evaluateAClaimAboutLinguisticRepresentation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether a label fairly describes people or phenomena without equating linguistic conventions with objective essences.
+Methodological description: Assess whether a label fairly describes people or phenomena without equating linguistic conventions with objective essences.
+User-friendly description: Consider whether descriptions of people and things are fair and well supported.
 
 ##### Analyze a truth-conditional claim
 
+Slug: analyzeATruthConditionalClaim
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify circumstances under which an assertion would count as true or false while recognizing context-dependent expressions.
+Methodological description: Identify circumstances under which an assertion would count as true or false while recognizing context-dependent expressions.
+User-friendly description: Identify which circumstances would make a statement true or false.
 
 ### Aesthetics and Philosophy of Art
+
+Slug: aestheticsAndPhilosophyOfArt
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Aesthetic inquiry asks why experiences, works, and environments are judged beautiful, expressive, meaningful, or artistically valuable. Its focus is justification and concepts of value, not techniques of making art.
+Methodological description: Aesthetic inquiry asks why experiences, works, and environments are judged beautiful, expressive, meaningful, or artistically valuable. Its focus is justification and concepts of value, not techniques of making art.
+User-friendly description: Explore why people consider experiences and artworks beautiful or valuable.
 
 #### Aesthetic Judgment
 
+Slug: aestheticJudgment
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-An aesthetic evaluation can invoke perceptual qualities, interpretation, tradition, or standards that other observers may dispute.
+Methodological description: An aesthetic evaluation can invoke perceptual qualities, interpretation, tradition, or standards that other observers may dispute.
+User-friendly description: Discover how aesthetic opinions can be supported by reasons.
 
 ##### Distinguish aesthetic from instrumental value
 
+Slug: distinguishAestheticFromInstrumentalValue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why something may be appreciated for its appearance or experience rather than its practical usefulness.
+Methodological description: Explain why something may be appreciated for its appearance or experience rather than its practical usefulness.
+User-friendly description: Distinguish an object's beauty or expressive value from its practical use.
 
 ##### Justify an aesthetic judgment
 
+Slug: justifyAnAestheticJudgment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Support an appraisal with relevant features and criteria rather than simply reporting that one likes or dislikes an object.
+Methodological description: Support an appraisal with relevant features and criteria rather than simply reporting that one likes or dislikes an object.
+User-friendly description: Explain an aesthetic evaluation using relevant features instead of personal taste alone.
 
 ##### Compare objective and subjective accounts of beauty
 
+Slug: compareObjectiveAndSubjectiveAccountsOfBeauty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether aesthetic assessments can be reasoned about beyond individual preference without assuming universal consensus.
+Methodological description: Examine whether aesthetic assessments can be reasoned about beyond individual preference without assuming universal consensus.
+User-friendly description: Compare views about whether beauty can be judged beyond individual preference.
 
 ##### Analyze the role of context in aesthetic experience
 
+Slug: analyzeTheRoleOfContextInAestheticExperience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how setting, background knowledge, and cultural conventions can alter interpretation while the object remains unchanged.
+Methodological description: Explain how setting, background knowledge, and cultural conventions can alter interpretation while the object remains unchanged.
+User-friendly description: Explore how context or background knowledge changes an aesthetic experience.
 
 #### Art and Interpretation
+
+Slug: artAndInterpretation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-A work can bear meanings and values that are not reducible to the creator's stated intent or a viewer's immediate reaction.
+Methodological description: A work can bear meanings and values that are not reducible to the creator's stated intent or a viewer's immediate reaction.
+User-friendly description: Consider how artworks can communicate meanings beyond what their makers intended.
 
 ##### Evaluate a definition of art
 
+Slug: evaluateADefinitionOfArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Test a proposed criterion against borderline cases, changing practices, and works that challenge established categories.
+Methodological description: Test a proposed criterion against borderline cases, changing practices, and works that challenge established categories.
+User-friendly description: Test definitions of art against unusual or borderline examples.
 
 ##### Distinguish artistic intention from interpretation
 
+Slug: distinguishArtisticIntentionFromInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess what a creator reportedly intended separately from meanings supported by the work and its reception.
+Methodological description: Assess what a creator reportedly intended separately from meanings supported by the work and its reception.
+User-friendly description: Separate an artist's intentions from interpretations supported by the work.
 
 ##### Compare interpretations of an artwork
 
+Slug: compareInterpretationsOfAnArtwork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate rival readings by their attention to the work's features and context rather than assuming every reading is equally supported.
+Methodological description: Evaluate rival readings by their attention to the work's features and context rather than assuming every reading is equally supported.
+User-friendly description: Compare interpretations of an artwork using evidence from its features and history.
 
 ##### Analyze the ethical evaluation of art
 
+Slug: analyzeTheEthicalEvaluationOfArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explore whether and how moral concerns about content, production, or reception bear on artistic appraisal.
+Methodological description: Explore whether and how moral concerns about content, production, or reception bear on artistic appraisal.
+User-friendly description: Examine whether moral concerns should influence artistic judgment.
 
 #### Value and Taste
+
+Slug: valueAndTaste
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Debates about taste raise questions about expertise, social convention, and the relation of appreciation to human flourishing.
+Methodological description: Debates about taste raise questions about expertise, social convention, and the relation of appreciation to human flourishing.
+User-friendly description: Explore how personal taste, expertise and cultural traditions influence appreciation.
 
 ##### Distinguish taste from an argued evaluation
 
+Slug: distinguishTasteFromAnArguedEvaluation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that a personal reaction and a defensible public judgment may overlap but require different kinds of support.
+Methodological description: Recognize that a personal reaction and a defensible public judgment may overlap but require different kinds of support.
+User-friendly description: Recognize the difference between liking something and defending an evaluation of it.
 
 ##### Evaluate the role of expertise in aesthetic judgment
 
+Slug: evaluateTheRoleOfExpertiseInAestheticJudgment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider how practiced perception and historical knowledge may inform an assessment without making expert preferences infallible.
+Methodological description: Consider how practiced perception and historical knowledge may inform an assessment without making expert preferences infallible.
+User-friendly description: Consider how expertise informs judgments without making experts infallible.
 
 ##### Analyze aesthetic pluralism
 
+Slug: analyzeAestheticPluralism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how multiple traditions can sustain meaningful standards without requiring one global ranking of their forms.
+Methodological description: Examine how multiple traditions can sustain meaningful standards without requiring one global ranking of their forms.
+User-friendly description: Explore how different artistic traditions can have meaningful standards of value.
 
 ### History and Traditions of Philosophy
+
+Slug: historyAndTraditionsOfPhilosophy
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
-Historically situated philosophical arguments develop through schools, intellectual movements, and traditions across cultures. Interpretation requires understanding both what a thinker argued and the debate that shaped the argument, without privileging one lineage as philosophy's default.
+Methodological description: Historically situated philosophical arguments develop through schools, intellectual movements, and traditions across cultures. Interpretation requires understanding both what a thinker argued and the debate that shaped the argument, without privileging one lineage as philosophy's default.
+User-friendly description: Explore philosophical ideas across cultures and historical periods through their arguments.
 
 #### Reading Philosophical Works
+
+Slug: readingPhilosophicalWorks
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Texts require interpreting claims, their argumentative context, and the questions the author sought to answer; historical wording cannot always be mapped directly to modern categories.
+Methodological description: Texts require interpreting claims, their argumentative context, and the questions the author sought to answer; historical wording cannot always be mapped directly to modern categories.
+User-friendly description: Learn to read philosophical works with attention to their questions and context.
 
 ##### Identify the central problem in a philosophical text
 
+Slug: identifyTheCentralProblemInAPhilosophicalText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine which issue motivates an argument rather than treating every illustrative passage as the main thesis.
+Methodological description: Determine which issue motivates an argument rather than treating every illustrative passage as the main thesis.
+User-friendly description: Identify the main problem a philosopher is trying to address.
 
 ##### Reconstruct a historical philosophical argument
 
+Slug: reconstructAHistoricalPhilosophicalArgument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Extract claims and reasons from a source while distinguishing a philosopher's stated position from later summaries.
+Methodological description: Extract claims and reasons from a source while distinguishing a philosopher's stated position from later summaries.
+User-friendly description: Reconstruct a historical argument using what the philosopher actually wrote.
 
 ##### Interpret a philosopher in historical context
 
+Slug: interpretAPhilosopherInHistoricalContext
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use contemporaneous debates and available concepts to avoid attributing later assumptions to an earlier author.
+Methodological description: Use contemporaneous debates and available concepts to avoid attributing later assumptions to an earlier author.
+User-friendly description: Interpret philosophical views in light of the debates of their own time.
 
 ##### Evaluate a philosophical text critically
 
+Slug: evaluateAPhilosophicalTextCritically
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess reasons offered in a source rather than accepting or rejecting a view solely because of the author's reputation.
+Methodological description: Assess reasons offered in a source rather than accepting or rejecting a view solely because of the author's reputation.
+User-friendly description: Evaluate the reasons in a classic philosophical text, not just its author's reputation.
 
 #### Schools and Movements
+
+Slug: schoolsAndMovements
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Philosophical movements and schools arise around distinctive approaches to knowledge, reason, liberty, and existence; their boundaries and internal disagreements cannot be reduced to dates alone.
+Methodological description: Philosophical movements and schools arise around distinctive approaches to knowledge, reason, liberty, and existence; their boundaries and internal disagreements cannot be reduced to dates alone.
+User-friendly description: Discover how different philosophical schools approach shared questions.
 
 ##### Compare major modern epistemological approaches
 
+Slug: compareMajorModernEpistemologicalApproaches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the distinct emphases of rationalist, empiricist, and critical traditions through representative arguments.
+Methodological description: Explain the distinct emphases of rationalist, empiricist, and critical traditions through representative arguments.
+User-friendly description: Compare how rationalism, empiricism and critical philosophy approach knowledge.
 
 ##### Analyze an Enlightenment philosophical argument
 
+Slug: analyzeAnEnlightenmentPhilosophicalArgument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Place a claim about reason, liberty, or authority in its intellectual context while acknowledging diverse and conflicting Enlightenment positions.
+Methodological description: Place a claim about reason, liberty, or authority in its intellectual context while acknowledging diverse and conflicting Enlightenment positions.
+User-friendly description: Explore Enlightenment arguments about reason, authority and freedom.
 
 ##### Compare existentialist and analytic approaches to a problem
 
+Slug: compareExistentialistAndAnalyticApproachesToAProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify differences in methods and questions without claiming that either broad family has one uniform answer.
+Methodological description: Identify differences in methods and questions without claiming that either broad family has one uniform answer.
+User-friendly description: Compare existentialist and analytic approaches without oversimplifying either tradition.
 
 #### Philosophical Traditions
+
+Slug: philosophicalTraditions
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Intellectual traditions developed across many cultures through original arguments and sustained exchanges. Greek, Indian, Chinese, Islamic, African, Latin American, and particular Indigenous lineages are examined as philosophical sources in their own right, without treating a region as a single doctrine.
+Methodological description: Intellectual traditions developed across many cultures through original arguments and sustained exchanges. Greek, Indian, Chinese, Islamic, African, Latin American, and particular Indigenous lineages are examined as philosophical sources in their own right, without treating a region as a single doctrine.
+User-friendly description: Examine philosophical arguments developed in many distinct cultural traditions.
 
 ##### Compare classical Greek philosophical approaches
 
+Slug: compareClassicalGreekPhilosophicalApproaches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Contrast representative methods or commitments in Socratic, Platonic, and Aristotelian arguments without collapsing them into one doctrine.
+Methodological description: Contrast representative methods or commitments in Socratic, Platonic, and Aristotelian arguments without collapsing them into one doctrine.
+User-friendly description: Compare ideas associated with Socrates, Plato and Aristotle.
 
 ##### Analyze a philosophical argument from an Indian tradition
 
+Slug: analyzeAPhilosophicalArgumentFromAnIndianTradition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify claims and reasons in a specific Indian philosophical school while preserving its distinctive terms and internal disagreements.
+Methodological description: Identify claims and reasons in a specific Indian philosophical school while preserving its distinctive terms and internal disagreements.
+User-friendly description: Explore an argument from a specific Indian philosophical school.
 
 ##### Analyze a philosophical argument from a Chinese tradition
 
+Slug: analyzeAPhilosophicalArgumentFromAChineseTradition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret a position in a specific Chinese philosophical lineage, such as Confucian or Daoist thinking, without conflating them.
+Methodological description: Interpret a position in a specific Chinese philosophical lineage, such as Confucian or Daoist thinking, without conflating them.
+User-friendly description: Interpret a philosophical claim from a Chinese tradition in its proper context.
 
 ##### Analyze a philosophical argument from an Islamic tradition
 
+Slug: analyzeAPhilosophicalArgumentFromAnIslamicTradition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain a selected debate in Islamic philosophy using its intellectual context rather than assuming theology and philosophy are identical.
+Methodological description: Explain a selected debate in Islamic philosophy using its intellectual context rather than assuming theology and philosophy are identical.
+User-friendly description: Examine a debate within Islamic philosophy using its historical setting.
 
 ##### Analyze a philosophical argument from an African tradition
 
+Slug: analyzeAPhilosophicalArgumentFromAnAfricanTradition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine a representative argument concerning persons, community, knowledge, or values while avoiding claims that Africa has a single philosophy.
+Methodological description: Examine a representative argument concerning persons, community, knowledge, or values while avoiding claims that Africa has a single philosophy.
+User-friendly description: Analyze a philosophical argument from a particular African tradition.
 
 ##### Analyze a philosophical argument from a Latin American tradition
 
+Slug: analyzeAPhilosophicalArgumentFromALatinAmericanTradition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reconstruct an argument from a specific Latin American current, such as liberation or decolonial philosophy, in its intellectual and social context without reducing the region to one doctrine.
+Methodological description: Reconstruct an argument from a specific Latin American current, such as liberation or decolonial philosophy, in its intellectual and social context without reducing the region to one doctrine.
+User-friendly description: Explore Latin American philosophical arguments in their social and intellectual context.
 
 ##### Analyze a philosophical argument from an Indigenous tradition
 
+Slug: analyzeAPhilosophicalArgumentFromAnIndigenousTradition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret philosophical claims from a particular Indigenous people or intellectual tradition on their own conceptual terms, recognizing differences among communities and avoiding a generic 'Indigenous worldview'.
+Methodological description: Interpret philosophical claims from a particular Indigenous people or intellectual tradition on their own conceptual terms, recognizing differences among communities and avoiding a generic 'Indigenous worldview'.
+User-friendly description: Consider philosophical ideas from a particular Indigenous tradition on its own terms.
 
 ##### Compare positions across philosophical traditions
 
+Slug: comparePositionsAcrossPhilosophicalTraditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a genuine shared problem and meaningful conceptual differences without forcing one tradition's categories onto another.
+Methodological description: Identify a genuine shared problem and meaningful conceptual differences without forcing one tradition's categories onto another.
+User-friendly description: Compare how different traditions address similar philosophical questions.
