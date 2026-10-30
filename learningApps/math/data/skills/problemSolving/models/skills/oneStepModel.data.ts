@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { models_Skills_Ids } from './index.ids';
 
 export const oneStepModel_Skill_Data = buildSkillConfig({
-  id: models_Skills_Ids.oneStepModel,
+  id: '64808d1f-bbb7-4252-965f-9f361078720c',
   name: {
     lt: "Vieno veiksmo uždavinio modeliavimas",
     lv: "Viena soļa uzdevuma modelēšana",
