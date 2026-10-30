@@ -224,7 +224,7 @@ function existing(e) {
 }
 function scanRegistry() {
   const registry = new Set(), seenSlugs = new Map();
-  if (!fs.existsSync(opts.targetRoot)) return registry;
+  if (!fs.existsSync(opts.targetRoot)) return {ids:registry,slugs:seenSlugs};
   function walk(dir) {
     for (const ent of fs.readdirSync(dir,{withFileTypes:true})) {
       const f = path.join(dir,ent.name);
@@ -245,7 +245,7 @@ function scanRegistry() {
     }
   }
   walk(opts.targetRoot);
-  return registry;
+  return {ids:registry,slugs:seenSlugs};
 }
 function allocateId(used) {
   for (let i=0;i<64;i++) {
@@ -392,7 +392,10 @@ function domainPlan(d,entities,registry,codes) {
       checkLocales(fe,'frontend '+e.key,codes);
       if (fe.en!==e.friendly) throw Error('English frontend text differs from approved draft: '+e.key);
     } else if (fe) checkLocales(fe,'frontend '+e.key,codes);
-    const id=prior?.id??allocateId(registry);
+    if (!found && registry.slugs.has(e.slug.toLowerCase()) &&
+      registry.slugs.get(e.slug.toLowerCase())!==file)
+      throw Error('Slug already exists elsewhere in source: '+e.slug);
+    const id=prior?.id??allocateId(registry.ids);
     const kids=e.kind==='Skill'?[]:children(e,local);
     const code=found && e.action==='update' && stableMembership(e,kids) ?
       patchExisting(e,reviewed,e.methodological) :
