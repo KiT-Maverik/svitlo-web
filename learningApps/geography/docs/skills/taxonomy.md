@@ -974,573 +974,1013 @@ User-friendly description: Connect river flow and sediment movement to meanders,
 
 ### Geology
 
+Slug: geology
+Action: create
+Status: pending
+
 Groups: 6 · Skills: 28
 
 [Not implemented](#)
 
-Minerals and rocks, Earth's internal structure, tectonic activity, geological evidence and mineral deposits reveal the solid planet's origins and evolution through deep time. Its focus is recognizing materials, processes and spatial evidence, distinct from describing everyday terrain or individual surface features.
+Methodological description: Minerals and rocks, Earth's internal structure, tectonic activity, geological evidence and mineral deposits reveal the solid planet's origins and evolution through deep time. Its focus is recognizing materials, processes and spatial evidence, distinct from describing everyday terrain or individual surface features.
+User-friendly description: Discover what rocks and minerals reveal about Earth's structure, history and resources.
 
 #### Minerals and Their Properties
+
+Slug: mineralsAndTheirProperties
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-A mineral is a naturally occurring crystalline substance with characteristic structure and material properties. Its identity is inferred using complementary evidence such as scratch resistance, streak, luster and cleavage rather than relying on color or one test in isolation.
+Methodological description: A mineral is a naturally occurring crystalline substance with characteristic structure and material properties. Its identity is inferred using complementary evidence such as scratch resistance, streak, luster and cleavage rather than relying on color or one test in isolation.
+User-friendly description: Explore how physical properties help describe and identify minerals.
 
 ##### Explain what makes a natural solid a mineral
 
+Slug: explainWhatMakesANaturalSolidAMineral
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the criteria used in introductory geology: natural origin, a normally inorganic solid state, characteristic composition and ordered internal structure. A manufactured glass shard or an aggregate of unrelated crystals does not automatically meet the mineral definition.
+Methodological description: Recognize the criteria used in introductory geology: natural origin, a normally inorganic solid state, characteristic composition and ordered internal structure. A manufactured glass shard or an aggregate of unrelated crystals does not automatically meet the mineral definition.
+User-friendly description: Recognize what makes a natural crystalline solid a mineral.
 
 ##### Characterize minerals using diagnostic physical properties
 
+Slug: characterizeMineralsUsingDiagnosticPhysicalProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Observe and describe a mineral specimen using hardness, streak, luster and breakage patterns, distinguishing what each property reveals. Individual scratch, streak or cleavage demonstrations are variations of one broader characterization competency.
+Methodological description: Observe and describe a mineral specimen using hardness, streak, luster and breakage patterns, distinguishing what each property reveals. Individual scratch, streak or cleavage demonstrations are variations of one broader characterization competency.
+User-friendly description: Describe minerals using hardness, streak, luster and how they break.
 
 ##### Identify minerals using multiple diagnostic properties
 
+Slug: identifyMineralsUsingMultipleDiagnosticProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine evidence from observable properties to narrow possible mineral identities, recognizing that a single shared trait such as color rarely identifies a specimen reliably.
+Methodological description: Combine evidence from observable properties to narrow possible mineral identities, recognizing that a single shared trait such as color rarely identifies a specimen reliably.
+User-friendly description: Identify a mineral by comparing several properties instead of relying on color.
 
 #### Rocks and the Rock Cycle
+
+Slug: rocksAndTheRockCycle
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Consolidated natural materials record formation through magma cooling, deposition and lithification, or alteration in the solid state. Classifications concern how a rock formed, and the rock cycle describes multiple possible paths between types rather than a mandatory fixed sequence.
+Methodological description: Consolidated natural materials record formation through magma cooling, deposition and lithification, or alteration in the solid state. Classifications concern how a rock formed, and the rock cycle describes multiple possible paths between types rather than a mandatory fixed sequence.
+User-friendly description: Learn how rocks form, change and move through different geological pathways.
 
 ##### Distinguish a rock from a mineral
 
+Slug: distinguishARockFromAMineral
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that a rock may consist of one or more minerals, mineral fragments or other geological material, whereas a mineral is an individual crystalline substance with characteristic properties.
+Methodological description: Recognize that a rock may consist of one or more minerals, mineral fragments or other geological material, whereas a mineral is an individual crystalline substance with characteristic properties.
+User-friendly description: Understand the difference between a rock and the minerals it contains.
 
 ##### Classify rocks by their mode of origin
 
+Slug: classifyRocksByTheirModeOfOrigin
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify igneous, sedimentary and metamorphic examples by the processes and observable structures that formed them, rather than only by color or common names.
+Methodological description: Identify igneous, sedimentary and metamorphic examples by the processes and observable structures that formed them, rather than only by color or common names.
+User-friendly description: Classify rocks by whether they formed through cooling, deposition or alteration.
 
 ##### Explain the formation of igneous rocks
 
+Slug: explainTheFormationOfIgneousRocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate cooling and solidification of magma or lava to the formation of new rocks and differences such as coarse versus fine crystal textures.
+Methodological description: Relate cooling and solidification of magma or lava to the formation of new rocks and differences such as coarse versus fine crystal textures.
+User-friendly description: Explain how cooling lava or magma produces igneous rocks.
 
 ##### Explain the formation of sedimentary rocks
 
+Slug: explainTheFormationOfSedimentaryRocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace deposited particles through burial, compaction and cementation into sedimentary material, distinguishing lithification from simple accumulation of loose sand.
+Methodological description: Trace deposited particles through burial, compaction and cementation into sedimentary material, distinguishing lithification from simple accumulation of loose sand.
+User-friendly description: Explore how sediments become solid rock through compaction and cementation.
 
 ##### Explain the formation of metamorphic rocks
 
+Slug: explainTheFormationOfMetamorphicRocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how heat, pressure and fluids can alter existing solid rock without it first melting into magma, producing new textures or minerals.
+Methodological description: Describe how heat, pressure and fluids can alter existing solid rock without it first melting into magma, producing new textures or minerals.
+User-friendly description: Explain how heat and pressure change solid rock without fully melting it.
 
 ##### Trace a pathway through the rock cycle
 
+Slug: traceAPathwayThroughTheRockCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Construct a plausible multi-stage change from one rock type to another using weathering, deposition, melting, cooling or metamorphism as applicable; different starting points need not follow one circular order.
+Methodological description: Construct a plausible multi-stage change from one rock type to another using weathering, deposition, melting, cooling or metamorphism as applicable; different starting points need not follow one circular order.
+User-friendly description: Trace more than one possible path between types of rock.
 
 #### Earth's Interior and Plate Tectonics
 
+Slug: earthsInteriorAndPlateTectonics
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Earth has internal layers with different composition and mechanical properties, while its outer lithospheric plates move across a geologically active planet. Plate interactions explain large-scale patterns of faults, relief and geological activity, not every small local feature.
+Methodological description: Earth has internal layers with different composition and mechanical properties, while its outer lithospheric plates move across a geologically active planet. Plate interactions explain large-scale patterns of faults, relief and geological activity, not every small local feature.
+User-friendly description: Explore Earth's internal layers and the movement of its tectonic plates.
 
 ##### Identify Earth's main internal layers
 
+Slug: identifyEarthsMainInternalLayers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate the crust, mantle, outer core and inner core in a cross-section, and recognize that the mantle is predominantly solid while the outer core is liquid.
+Methodological description: Locate the crust, mantle, outer core and inner core in a cross-section, and recognize that the mantle is predominantly solid while the outer core is liquid.
+User-friendly description: Identify the crust, mantle, outer core and inner core.
 
 ##### Explain the concept of tectonic plate movement
 
+Slug: explainTheConceptOfTectonicPlateMovement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that the lithosphere is divided into slowly moving plates that can shift relative to one another over geological time, without implying that continents glide freely across a liquid mantle.
+Methodological description: Recognize that the lithosphere is divided into slowly moving plates that can shift relative to one another over geological time, without implying that continents glide freely across a liquid mantle.
+User-friendly description: Explain how large plates of Earth's outer shell move over geological time.
 
 ##### Identify major types of plate boundaries
 
+Slug: identifyMajorTypesOfPlateBoundaries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify divergent, convergent and transform settings from relative movement arrows or a boundary map, rather than guessing the type from a place name.
+Methodological description: Classify divergent, convergent and transform settings from relative movement arrows or a boundary map, rather than guessing the type from a place name.
+User-friendly description: Recognize boundaries where plates move apart, collide or slide past.
 
 ##### Relate plate interactions to major geological features
 
+Slug: relatePlateInteractionsToMajorGeologicalFeatures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect plate collision, separation or lateral movement with broad patterns of mountain ranges, trenches, rifts and faults while allowing important exceptions.
+Methodological description: Connect plate collision, separation or lateral movement with broad patterns of mountain ranges, trenches, rifts and faults while allowing important exceptions.
+User-friendly description: Connect plate movement with mountains, trenches, rifts and faults.
 
 ##### Recognize geographic evidence of plate motion
 
+Slug: recognizeGeographicEvidenceOfPlateMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the broad alignment of earthquakes, seafloor age patterns or matching geological features as evidence for moving plates rather than relying on isolated surface observations.
+Methodological description: Interpret the broad alignment of earthquakes, seafloor age patterns or matching geological features as evidence for moving plates rather than relying on isolated surface observations.
+User-friendly description: Find geographic evidence that tectonic plates have moved.
 
 #### Earthquakes and Volcanism
+
+Slug: earthquakesAndVolcanism
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Sudden slip on faults and the movement of magma produce recognizable geological events with uneven spatial occurrence. This group addresses causes, observable landforms and spatial exposure; it does not prescribe individual emergency procedures or detailed physical equations.
+Methodological description: Sudden slip on faults and the movement of magma produce recognizable geological events with uneven spatial occurrence. This group addresses causes, observable landforms and spatial exposure; it does not prescribe individual emergency procedures or detailed physical equations.
+User-friendly description: Discover how earthquakes and volcanic activity shape different regions.
 
 ##### Explain how fault slip produces earthquakes
 
+Slug: explainHowFaultSlipProducesEarthquakes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate accumulated deformation and sudden movement along a fault to ground shaking, while distinguishing the underground source from the mapped epicenter.
+Methodological description: Relate accumulated deformation and sudden movement along a fault to ground shaking, while distinguishing the underground source from the mapped epicenter.
+User-friendly description: Explain how sudden movement along faults causes earthquakes.
 
 ##### Interpret earthquake distributions on a map
 
+Slug: interpretEarthquakeDistributionsOnAMap
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify clustered earthquake belts and their common relationships to tectonic plate boundaries without treating all earthquakes as occurring on plate edges.
+Methodological description: Identify clustered earthquake belts and their common relationships to tectonic plate boundaries without treating all earthquakes as occurring on plate edges.
+User-friendly description: Identify earthquake belts and their relation to plate boundaries on maps.
 
 ##### Explain how magma reaches Earth's surface
 
+Slug: explainHowMagmaReachesEarthsSurface
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe volcanic eruptions as magma ascending through fractures or vents and becoming lava when erupted, rather than assuming every volcano continually erupts.
+Methodological description: Describe volcanic eruptions as magma ascending through fractures or vents and becoming lava when erupted, rather than assuming every volcano continually erupts.
+User-friendly description: Describe how magma reaches the surface and becomes lava.
 
 ##### Recognize landforms created by volcanic activity
 
+Slug: recognizeLandformsCreatedByVolcanicActivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect lava flows, volcanic cones, craters and calderas with erupted or collapsed volcanic structures while avoiding a single universal volcano shape.
+Methodological description: Connect lava flows, volcanic cones, craters and calderas with erupted or collapsed volcanic structures while avoiding a single universal volcano shape.
+User-friendly description: Recognize volcano-related forms such as cones, craters and lava fields.
 
 ##### Interpret geographic exposure to geological hazards
 
+Slug: interpretGeographicExposureToGeologicalHazards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use an earthquake, volcano or fault map together with settlement locations to identify potentially exposed places, distinguishing hazard location from a precise prediction of future damage.
+Methodological description: Use an earthquake, volcano or fault map together with settlement locations to identify potentially exposed places, distinguishing hazard location from a precise prediction of future damage.
+User-friendly description: Use hazard maps to find settlements exposed to geological events.
 
 #### Geological Time and Evidence
+
+Slug: geologicalTimeAndEvidence
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Rock sequences, fossils and dated materials provide evidence of Earth's long history. Geologists reconstruct events using relative ordering as well as numerical measurements, and a geologic time scale communicates durations far larger than human history.
+Methodological description: Rock sequences, fossils and dated materials provide evidence of Earth's long history. Geologists reconstruct events using relative ordering as well as numerical measurements, and a geologic time scale communicates durations far larger than human history.
+User-friendly description: Explore how rocks and fossils provide evidence of Earth's long past.
 
 ##### Order undisturbed rock layers by relative age
 
+Slug: orderUndisturbedRockLayersByRelativeAge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer that in an originally deposited, undisturbed sedimentary sequence lower layers are generally older than higher layers, and recognize that folding or faulting can complicate the pattern.
+Methodological description: Infer that in an originally deposited, undisturbed sedimentary sequence lower layers are generally older than higher layers, and recognize that folding or faulting can complicate the pattern.
+User-friendly description: Use rock-layer order to infer which layers are older in an undisturbed sequence.
 
 ##### Use fossils as evidence of past environments
 
+Slug: useFossilsAsEvidenceOfPastEnvironments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer that marine fossils in rock now exposed on land may indicate earlier marine conditions; fossil evidence is not merely a list of ancient species.
+Methodological description: Infer that marine fossils in rock now exposed on land may indicate earlier marine conditions; fossil evidence is not merely a list of ancient species.
+User-friendly description: Use fossils to learn about environments that existed long ago.
 
 ##### Interpret a geological time scale
 
+Slug: interpretAGeologicalTimeScale
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use labeled eons, eras or periods on a proportional timeline to place broad events in Earth's history, distinguishing relative sequence from a numerical estimate of age.
+Methodological description: Use labeled eons, eras or periods on a proportional timeline to place broad events in Earth's history, distinguishing relative sequence from a numerical estimate of age.
+User-friendly description: Read a geological timeline to place events in Earth's history.
 
 ##### Distinguish relative from numerical geological ages
 
+Slug: distinguishRelativeFromNumericalGeologicalAges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that 'older than this layer' orders events, whereas an estimated age in years gives a measured time range; different evidence and uncertainty apply to each.
+Methodological description: Recognize that 'older than this layer' orders events, whereas an estimated age in years gives a measured time range; different evidence and uncertainty apply to each.
+User-friendly description: Distinguish saying one rock is older from estimating its age in years.
 
 #### Mineral Deposits
+
+Slug: mineralDeposits
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-The geological distribution of useful concentrations of minerals is uneven and influenced by rock-forming processes, access and extraction decisions. A deposit is a natural concentration, while whether it can be worked as an ore is partly an economic and technical judgment.
+Methodological description: The geological distribution of useful concentrations of minerals is uneven and influenced by rock-forming processes, access and extraction decisions. A deposit is a natural concentration, while whether it can be worked as an ore is partly an economic and technical judgment.
+User-friendly description: Explore why useful mineral resources are concentrated in particular places.
 
 ##### Explain what constitutes a mineral deposit
 
+Slug: explainWhatConstitutesAMineralDeposit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a localized natural concentration of a mineral or useful material in rock or sediment, rather than treating every occurrence of a common mineral as a viable mine.
+Methodological description: Recognize a localized natural concentration of a mineral or useful material in rock or sediment, rather than treating every occurrence of a common mineral as a viable mine.
+User-friendly description: Recognize what makes a natural concentration of useful minerals a deposit.
 
 ##### Recognize geological controls on mineral occurrence
 
+Slug: recognizeGeologicalControlsOnMineralOccurrence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect deposit patterns with contexts such as igneous activity, sedimentary basins or transported sediments without assuming minerals occur uniformly worldwide.
+Methodological description: Connect deposit patterns with contexts such as igneous activity, sedimentary basins or transported sediments without assuming minerals occur uniformly worldwide.
+User-friendly description: Connect mineral deposits with the geological conditions that created them.
 
 ##### Interpret mineral-resource distribution on a map
 
+Slug: interpretMineralResourceDistributionOnAMap
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate documented mineral occurrences and major mining areas using an appropriate legend, distinguishing reported deposits from evidence that all nearby land contains the same resource.
+Methodological description: Locate documented mineral occurrences and major mining areas using an appropriate legend, distinguishing reported deposits from evidence that all nearby land contains the same resource.
+User-friendly description: Use maps to locate mineral resources and mining areas.
 
 ##### Explain why a mineral deposit may or may not be an ore
 
+Slug: explainWhyAMineralDepositMayOrMayNotBeAnOre
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate concentration, recoverability, access and prevailing economic or technical conditions to whether extraction is practical, without equating 'ore' with every rock containing metal.
+Methodological description: Relate concentration, recoverability, access and prevailing economic or technical conditions to whether extraction is practical, without equating 'ore' with every rock containing metal.
+User-friendly description: Explain why some deposits are practical to extract and others are not.
 
 ##### Identify geographic consequences of mineral extraction
 
+Slug: identifyGeographicConsequencesOfMineralExtraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how mine sites, waste storage and transport infrastructure can change land cover or affect nearby water and settlements; detailed chemical pollution mechanisms belong to Chemistry.
+Methodological description: Recognize how mine sites, waste storage and transport infrastructure can change land cover or affect nearby water and settlements; detailed chemical pollution mechanisms belong to Chemistry.
+User-friendly description: Recognize how mining can change land, water and nearby settlements.
 
 ### Water Systems
+
+Slug: waterSystems
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Water connects landscapes through drainage networks, oceans, atmosphere, and underground storage. Geographic questions center on where water moves and accumulates, how its distribution varies, and how water features shape places.
+Methodological description: Water connects landscapes through drainage networks, oceans, atmosphere, and underground storage. Geographic questions center on where water moves and accumulates, how its distribution varies, and how water features shape places.
+User-friendly description: Explore where Earth's water is stored, how it moves and how it shapes places.
 
 #### Rivers and Drainage Basins
+
+Slug: riversAndDrainageBasins
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Flowing water links sources, tributaries and outlets into networks, while topography governs the surface catchment of a river. Describing different types of water bodies as objects belongs to Geographic Objects.
+Methodological description: Flowing water links sources, tributaries and outlets into networks, while topography governs the surface catchment of a river. Describing different types of water bodies as objects belongs to Geographic Objects.
+User-friendly description: Discover how streams and rivers connect into drainage networks.
 
 ##### Identify the main parts of a river network
 
+Slug: identifyTheMainPartsOfARiverNetwork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish source, tributary, confluence, channel, and mouth by their roles in connected flow.
+Methodological description: Distinguish source, tributary, confluence, channel, and mouth by their roles in connected flow.
+User-friendly description: Recognize a river's source, tributaries, confluences, channel and mouth.
 
 ##### Delineate a drainage basin from terrain
 
+Slug: delineateADrainageBasinFromTerrain
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer the land area contributing runoff to an outlet using divides and slopes rather than administrative borders.
+Methodological description: Infer the land area contributing runoff to an outlet using divides and slopes rather than administrative borders.
+User-friendly description: Identify the land that drains toward a particular river outlet.
 
 #### Marine and Coastal Processes
+
+Slug: marineAndCoastalProcesses
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Coastal and marine environments differ in exposure, enclosure, water movement, and relation to land. The emphasis is on geographic patterns and coastal form rather than detailed fluid dynamics.
+Methodological description: Coastal and marine environments differ in exposure, enclosure, water movement, and relation to land. The emphasis is on geographic patterns and coastal form rather than detailed fluid dynamics.
+User-friendly description: Explore how waves, tides and currents affect coasts and oceans.
 
 ##### Identify coastal erosion and deposition features
 
+Slug: identifyCoastalErosionAndDepositionFeatures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate cliffs, beaches, spits, or deltas to material removal and accumulation in their coastal setting.
+Methodological description: Relate cliffs, beaches, spits, or deltas to material removal and accumulation in their coastal setting.
+User-friendly description: Recognize coastal features created by erosion and sediment deposition.
 
 ##### Interpret geographic patterns of ocean tides
 
+Slug: interpretGeographicPatternsOfOceanTides
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify regional and temporal variations in tidal water levels and their implications for coastlines and navigation, distinguishing tidal cycles from persistent ocean currents.
+Methodological description: Identify regional and temporal variations in tidal water levels and their implications for coastlines and navigation, distinguishing tidal cycles from persistent ocean currents.
+User-friendly description: Compare how tides vary by location and time along coastlines.
 
 ##### Interpret geographic patterns of ocean currents
 
+Slug: interpretGeographicPatternsOfOceanCurrents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize major surface-current directions and geographic effects on coastal climate, transport and marine conditions, without confusing circulation with periodic tidal change.
+Methodological description: Recognize major surface-current directions and geographic effects on coastal climate, transport and marine conditions, without confusing circulation with periodic tidal change.
+User-friendly description: Interpret ocean-current patterns and their effects on coastal regions.
 
 #### Hydrologic Connections
 
+Slug: hydrologicConnections
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Water changes location and state among the atmosphere, surface, living systems, and subsurface. This is a connected circulation model rather than a single linear loop.
+Methodological description: Water changes location and state among the atmosphere, surface, living systems, and subsurface. This is a connected circulation model rather than a single linear loop.
+User-friendly description: See how water circulates between air, land, organisms and underground stores.
 
 ##### Explain the hydrologic cycle
 
+Slug: explainTheHydrologicCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the movement and storage of water among atmosphere, surface, living systems, ice and subsurface through evaporation, condensation, precipitation and flow. The cycles are multiple interconnected paths, not one mandatory linear sequence.
+Methodological description: Describe the movement and storage of water among atmosphere, surface, living systems, ice and subsurface through evaporation, condensation, precipitation and flow. The cycles are multiple interconnected paths, not one mandatory linear sequence.
+User-friendly description: Explain the connected processes of evaporation, precipitation, storage and flow.
 
 ##### Compare geographic water availability across regions
 
+Slug: compareGeographicWaterAvailabilityAcrossRegions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate precipitation, storage, seasonal variation, and demand to differences in accessible fresh water, rather than equating wet weather with secure supply.
+Methodological description: Relate precipitation, storage, seasonal variation, and demand to differences in accessible fresh water, rather than equating wet weather with secure supply.
+User-friendly description: Compare the availability of fresh water in different regions.
 
 ##### Explain surface runoff as a water pathway
 
+Slug: explainSurfaceRunoffAsAWaterPathway
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe water moving across land toward lower terrain and drainage networks when rainfall or melt exceeds infiltration and storage, distinguishing the process from water already stored underground.
+Methodological description: Describe water moving across land toward lower terrain and drainage networks when rainfall or melt exceeds infiltration and storage, distinguishing the process from water already stored underground.
+User-friendly description: Describe how excess rainwater or meltwater flows over the land.
 
 ##### Explain infiltration and groundwater recharge
 
+Slug: explainInfiltrationAndGroundwaterRecharge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect water entering permeable soils and rock to subsurface flow and replenishment of groundwater storage, distinguishing a downward pathway from direct surface runoff.
+Methodological description: Connect water entering permeable soils and rock to subsurface flow and replenishment of groundwater storage, distinguishing a downward pathway from direct surface runoff.
+User-friendly description: Explain how water enters soil and rock and replenishes groundwater.
 
 #### Frozen and Subsurface Water
+
+Slug: frozenAndSubsurfaceWater
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Snow, ice and groundwater store freshwater for different durations and interact with landscapes and human supplies. Their accumulation and discharge vary with climate, geology and geography rather than being visible only in rivers.
+Methodological description: Snow, ice and groundwater store freshwater for different durations and interact with landscapes and human supplies. Their accumulation and discharge vary with climate, geology and geography rather than being visible only in rivers.
+User-friendly description: Discover how snow, ice and underground water store fresh water.
 
 ##### Explain how glaciers form and move
 
+Slug: explainHowGlaciersFormAndMove
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sustained snow accumulation and compaction to slowly flowing land ice, distinguishing glaciers from seasonal snow cover and floating sea ice.
+Methodological description: Relate sustained snow accumulation and compaction to slowly flowing land ice, distinguishing glaciers from seasonal snow cover and floating sea ice.
+User-friendly description: Explain how accumulated snow becomes a glacier that slowly flows.
 
 ##### Explain how glaciers reshape terrain
 
+Slug: explainHowGlaciersReshapeTerrain
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize broad erosional and depositional outcomes of moving land ice, such as glacial valleys, moraines and transported sediment, without treating all U-shaped valleys as proof of one event.
+Methodological description: Recognize broad erosional and depositional outcomes of moving land ice, such as glacial valleys, moraines and transported sediment, without treating all U-shaped valleys as proof of one event.
+User-friendly description: Recognize landscape features carved or left behind by glaciers.
 
 ##### Explain the concept of a groundwater aquifer
 
+Slug: explainTheConceptOfAGroundwaterAquifer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a permeable geological layer or formation that can store and transmit useful groundwater, distinguishing an aquifer from an open underground lake.
+Methodological description: Identify a permeable geological layer or formation that can store and transmit useful groundwater, distinguishing an aquifer from an open underground lake.
+User-friendly description: Understand how permeable rock can store and transmit groundwater.
 
 ##### Interpret geographic variations in freshwater storage
 
+Slug: interpretGeographicVariationsInFreshwaterStorage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare places in which ice, aquifers, lakes or rivers hold accessible freshwater, recognizing differences in replenishment, seasonal availability and extraction limits.
+Methodological description: Compare places in which ice, aquifers, lakes or rivers hold accessible freshwater, recognizing differences in replenishment, seasonal availability and extraction limits.
+User-friendly description: Compare ice, aquifers, lakes and rivers as water stores in different regions.
 
 ### Atmosphere, Weather, and Climate
+
+Slug: atmosphereWeatherAndClimate
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 16
 
 [Not implemented](#)
 
-Weather describes atmospheric conditions at a place and time, whereas climate characterizes their long-term distributions and change. Geographic inquiry examines how clouds, precipitation, air motion and circulation vary across places, and how hazards and climate trends influence regions.
+Methodological description: Weather describes atmospheric conditions at a place and time, whereas climate characterizes their long-term distributions and change. Geographic inquiry examines how clouds, precipitation, air motion and circulation vary across places, and how hazards and climate trends influence regions.
+User-friendly description: Explore atmospheric conditions, long-term climate patterns and weather-related hazards.
 
 #### Weather Observations
 
+Slug: weatherObservations
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Weather is described by measurable conditions at a particular location and time. Observations must be interpreted with appropriate units and temporal context.
+Methodological description: Weather is described by measurable conditions at a particular location and time. Observations must be interpreted with appropriate units and temporal context.
+User-friendly description: Learn how to record and interpret weather at a particular place and time.
 
 ##### Explain the concept of weather
 
+Slug: explainTheConceptOfWeather
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe weather as the atmospheric conditions experienced at a particular place and time, including temperature, moisture, wind, cloud and precipitation. Individual observations can change rapidly and do not alone characterize a regional climate.
+Methodological description: Describe weather as the atmospheric conditions experienced at a particular place and time, including temperature, moisture, wind, cloud and precipitation. Individual observations can change rapidly and do not alone characterize a regional climate.
+User-friendly description: Understand weather as the conditions of the atmosphere at a specific moment.
 
 ##### Identify weather variables in an observation
 
+Slug: identifyWeatherVariablesInAnObservation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate air temperature, precipitation, wind, cloud cover, and pressure as different properties rather than a single “good or bad weather” rating.
+Methodological description: Separate air temperature, precipitation, wind, cloud cover, and pressure as different properties rather than a single “good or bad weather” rating.
+User-friendly description: Distinguish temperature, rain, wind, clouds and pressure as weather variables.
 
 ##### Read temperature and precipitation observations
 
+Slug: readTemperatureAndPrecipitationObservations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret a basic station table or chart with units and dates, separating amount of rain from air temperature.
+Methodological description: Interpret a basic station table or chart with units and dates, separating amount of rain from air temperature.
+User-friendly description: Read temperature and rainfall measurements with their units and dates.
 
 ##### Interpret standard weather symbols on a map
 
+Slug: interpretStandardWeatherSymbolsOnAMap
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use an explicit legend to identify rain, cloud, or wind indicators without relying on color alone.
+Methodological description: Use an explicit legend to identify rain, cloud, or wind indicators without relying on color alone.
+User-friendly description: Use a legend to interpret weather symbols on a map.
 
 #### Atmospheric Processes
+
+Slug: atmosphericProcesses
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Water vapor, atmospheric pressure differences, moving air masses and energy exchanges explain the geographic formation and movement of weather systems. The focus is observable and spatially significant processes rather than equations of fluid mechanics.
+Methodological description: Water vapor, atmospheric pressure differences, moving air masses and energy exchanges explain the geographic formation and movement of weather systems. The focus is observable and spatially significant processes rather than equations of fluid mechanics.
+User-friendly description: Discover what causes clouds, rainfall, wind and changing weather systems.
 
 ##### Explain how clouds form
 
+Slug: explainHowCloudsForm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect cooling moist air and condensation onto tiny particles with cloud formation, distinguishing suspended droplets or ice crystals from rainfall already reaching the ground.
+Methodological description: Connect cooling moist air and condensation onto tiny particles with cloud formation, distinguishing suspended droplets or ice crystals from rainfall already reaching the ground.
+User-friendly description: Explain how moisture condenses to form tiny cloud droplets or ice crystals.
 
 ##### Explain how precipitation forms
 
+Slug: explainHowPrecipitationForms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how condensed water or ice particles can grow and fall to the surface as rain, snow or other precipitation under suitable atmospheric conditions.
+Methodological description: Recognize how condensed water or ice particles can grow and fall to the surface as rain, snow or other precipitation under suitable atmospheric conditions.
+User-friendly description: Explore how droplets or ice grow and fall as precipitation.
 
 ##### Explain the formation of wind
 
+Slug: explainTheFormationOfWind
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate air motion to geographic differences in atmospheric pressure and temperature, recognizing that terrain and Earth's rotation can modify its direction and strength.
+Methodological description: Relate air motion to geographic differences in atmospheric pressure and temperature, recognizing that terrain and Earth's rotation can modify its direction and strength.
+User-friendly description: Explain how pressure differences and other factors produce wind.
 
 ##### Interpret the movement of air masses and fronts
 
+Slug: interpretTheMovementOfAirMassesAndFronts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate contrasting air-mass properties and their boundaries to changing conditions across a region, using maps or descriptions without assuming every front guarantees the same weather.
+Methodological description: Relate contrasting air-mass properties and their boundaries to changing conditions across a region, using maps or descriptions without assuming every front guarantees the same weather.
+User-friendly description: Recognize how moving air masses and fronts can change regional weather.
 
 #### Climate Patterns
+
+Slug: climatePatterns
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Climate summarizes the long-term distribution and variability of weather, not simply a typical day. Latitude, elevation, land–sea contrast, and circulation contribute to regional differences.
+Methodological description: Climate summarizes the long-term distribution and variability of weather, not simply a typical day. Latitude, elevation, land–sea contrast, and circulation contribute to regional differences.
+User-friendly description: Explore why different regions experience different long-term climate patterns.
 
 ##### Explain the concept of climate
 
+Slug: explainTheConceptOfClimate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe climate through long-term patterns, variability and typical ranges of weather conditions in a region. A short cold spell is an event and does not by itself define climate or overturn a documented long-term trend.
+Methodological description: Describe climate through long-term patterns, variability and typical ranges of weather conditions in a region. A short cold spell is an event and does not by itself define climate or overturn a documented long-term trend.
+User-friendly description: Distinguish long-term climate patterns from the weather on any particular day.
 
 ##### Interpret a basic climate diagram
 
+Slug: interpretABasicClimateDiagram
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare monthly temperature and precipitation patterns to identify seasonality without treating averages as daily forecasts.
+Methodological description: Compare monthly temperature and precipitation patterns to identify seasonality without treating averages as daily forecasts.
+User-friendly description: Read graphs of average monthly rainfall and temperature.
 
 ##### Explain broad climate differences using geographic factors
 
+Slug: explainBroadClimateDifferencesUsingGeographicFactors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use latitude, elevation, coastal influence, and prevailing wind patterns to account for contrasts between places, while allowing multiple causes.
+Methodological description: Use latitude, elevation, coastal influence, and prevailing wind patterns to account for contrasts between places, while allowing multiple causes.
+User-friendly description: Use latitude, altitude and coastal influence to explain climate differences.
 
 ##### Interpret long-term climate trends
 
+Slug: interpretLongTermClimateTrends
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish persistent changes in climate indicators over long observation periods from short-term variability, considering trends, baselines and the geographic coverage of measurements.
+Methodological description: Distinguish persistent changes in climate indicators over long observation periods from short-term variability, considering trends, baselines and the geographic coverage of measurements.
+User-friendly description: Identify long-term changes in climate measurements without confusing them with short events.
 
 ##### Explain geographic impacts of climate change
 
+Slug: explainGeographicImpactsOfClimateChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect documented climate changes with shifting regional water, temperature, ice, ecosystems or hazard patterns, noting that impacts vary by location and exposure and should not be inferred from one local weather event.
+Methodological description: Connect documented climate changes with shifting regional water, temperature, ice, ecosystems or hazard patterns, noting that impacts vary by location and exposure and should not be inferred from one local weather event.
+User-friendly description: Explore how climate change affects places differently around the world.
 
 #### Atmospheric Hazards
+
+Slug: atmosphericHazards
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Drought, storms, extreme temperatures, and heavy precipitation become hazards through the interaction of physical exposure and human vulnerability. Geographic representation helps identify where impacts are likely.
+Methodological description: Drought, storms, extreme temperatures, and heavy precipitation become hazards through the interaction of physical exposure and human vulnerability. Geographic representation helps identify where impacts are likely.
+User-friendly description: Learn why hazardous weather affects different places and people in different ways.
 
 ##### Recognize areas exposed to weather-related hazards
 
+Slug: recognizeAreasExposedToWeatherRelatedHazards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match a described event such as a flood-producing storm or drought with plausible geographic exposure conditions.
+Methodological description: Match a described event such as a flood-producing storm or drought with plausible geographic exposure conditions.
+User-friendly description: Recognize locations more exposed to floods, droughts, storms or extreme heat.
 
 ##### Interpret a weather warning area on a map
 
+Slug: interpretAWeatherWarningAreaOnAMap
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify affected places and the warning's time scope without mistaking a forecast zone for an exact prediction at every point.
+Methodological description: Identify affected places and the warning's time scope without mistaking a forecast zone for an exact prediction at every point.
+User-friendly description: Read a weather-warning map to identify affected areas and time periods.
 
 ##### Compare ways to reduce weather-hazard risk
 
+Slug: compareWaysToReduceWeatherHazardRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate options such as early warning, shelter, land-use planning, or water storage for the specific hazard and local context.
+Methodological description: Evaluate options such as early warning, shelter, land-use planning, or water storage for the specific hazard and local context.
+User-friendly description: Compare ways to reduce risks from weather hazards in a specific place.
 
 ### Natural Regions and Biogeography
+
+Slug: naturalRegionsAndBiogeography
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Natural conditions create geographic variation in ecosystems, biodiversity and habitat patterns on land and in water. This field describes where ecological regions occur, how their distributions vary and how landscape changes affect them; organism physiology and detailed food-web mechanisms belong primarily to Biology.
+Methodological description: Natural conditions create geographic variation in ecosystems, biodiversity and habitat patterns on land and in water. This field describes where ecological regions occur, how their distributions vary and how landscape changes affect them; organism physiology and detailed food-web mechanisms belong primarily to Biology.
+User-friendly description: Explore how climate, terrain and water influence the geography of living systems.
 
 #### Biomes and Habitats
 
+Slug: biomesAndHabitats
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Broad vegetation and habitat patterns reflect environmental conditions while local ecosystems can be more varied than a single biome label suggests.
+Methodological description: Broad vegetation and habitat patterns reflect environmental conditions while local ecosystems can be more varied than a single biome label suggests.
+User-friendly description: Discover why broad types of habitat occur in different parts of the world.
 
 ##### Identify major terrestrial biome patterns
 
+Slug: identifyMajorTerrestrialBiomePatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Associate broad forest, grassland, desert, and tundra patterns with environmental conditions rather than treating them as isolated species lists.
+Methodological description: Associate broad forest, grassland, desert, and tundra patterns with environmental conditions rather than treating them as isolated species lists.
+User-friendly description: Recognize global patterns of forests, grasslands, deserts and tundra.
 
 ##### Compare habitat conditions between geographic locations
 
+Slug: compareHabitatConditionsBetweenGeographicLocations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use temperature, moisture, altitude, and land cover to explain contrasts in living conditions for organisms.
+Methodological description: Use temperature, moisture, altitude, and land cover to explain contrasts in living conditions for organisms.
+User-friendly description: Compare conditions that create different habitats in different locations.
 
 ##### Recognize transition zones between biomes
 
+Slug: recognizeTransitionZonesBetweenBiomes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify that vegetation and environmental conditions may change gradually across boundaries rather than at a perfectly sharp line.
+Methodological description: Identify that vegetation and environmental conditions may change gradually across boundaries rather than at a perfectly sharp line.
+User-friendly description: Understand why biome boundaries can change gradually rather than abruptly.
 
 #### Environmental Gradients
+
+Slug: environmentalGradients
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Natural conditions often vary systematically with elevation, latitude, and proximity to water. Such gradients help explain patterns without implying that every place at the same latitude is identical.
+Methodological description: Natural conditions often vary systematically with elevation, latitude, and proximity to water. Such gradients help explain patterns without implying that every place at the same latitude is identical.
+User-friendly description: Explore how nature changes with latitude, height and proximity to water.
 
 ##### Explain broad environmental variation with latitude
 
+Slug: explainBroadEnvironmentalVariationWithLatitude
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect differences in solar input and circulation to large-scale environmental belts while allowing local exceptions.
+Methodological description: Connect differences in solar input and circulation to large-scale environmental belts while allowing local exceptions.
+User-friendly description: Connect latitude with broad differences in sunlight and natural conditions.
 
 ##### Recognize altitudinal changes in natural conditions
 
+Slug: recognizeAltitudinalChangesInNaturalConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how cooler temperatures and vegetation zones can occur higher on mountains without assuming identical patterns everywhere.
+Methodological description: Describe how cooler temperatures and vegetation zones can occur higher on mountains without assuming identical patterns everywhere.
+User-friendly description: Recognize how habitats and temperatures change up mountain slopes.
 
 ##### Identify environmental shifts from comparative geographic evidence
 
+Slug: identifyEnvironmentalShiftsFromComparativeGeographicEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use two dated distributions or observations to describe a change in habitat range, without automatically assigning a single cause.
+Methodological description: Use two dated distributions or observations to describe a change in habitat range, without automatically assigning a single cause.
+User-friendly description: Use maps or observations from different dates to notice habitat shifts.
 
 #### Ecosystems
+
+Slug: ecosystems
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Ecosystems develop under different physical conditions on land and in water, and can vary markedly in spatial extent and connectivity. Geography focuses on the distributions of terrestrial, marine and freshwater environments, their boundaries, fragmentation and regional relationships, rather than organism physiology.
+Methodological description: Ecosystems develop under different physical conditions on land and in water, and can vary markedly in spatial extent and connectivity. Geography focuses on the distributions of terrestrial, marine and freshwater environments, their boundaries, fragmentation and regional relationships, rather than organism physiology.
+User-friendly description: Explore where different ecosystems occur and how they connect across landscapes.
 
 ##### Distinguish marine and freshwater ecosystems
 
+Slug: distinguishMarineAndFreshwaterEcosystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate aquatic ecosystems shaped by saline ocean or sea water from those associated with predominantly fresh rivers, lakes and wetlands. Use salinity, water movement and geographic connections to explain broad habitat differences; recognize estuaries and other brackish transitional environments instead of forcing every location into one of two categories.
+Methodological description: Differentiate aquatic ecosystems shaped by saline ocean or sea water from those associated with predominantly fresh rivers, lakes and wetlands. Use salinity, water movement and geographic connections to explain broad habitat differences; recognize estuaries and other brackish transitional environments instead of forcing every location into one of two categories.
+User-friendly description: Distinguish marine, freshwater and transitional brackish environments.
 
 ##### Interpret geographic patterns of biodiversity
 
+Slug: interpretGeographicPatternsOfBiodiversity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify broad differences in variety of living organisms across mapped regions and relate them cautiously to climate, habitat complexity, disturbance and observation coverage.
+Methodological description: Identify broad differences in variety of living organisms across mapped regions and relate them cautiously to climate, habitat complexity, disturbance and observation coverage.
+User-friendly description: Use maps to compare biodiversity across regions, accounting for observation differences.
 
 ##### Explain habitat fragmentation as a geographic process
 
+Slug: explainHabitatFragmentationAsAGeographicProcess
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate roads, land-cover change or other barriers to the separation of formerly connected habitat areas, recognizing that the ecological consequences depend on species and landscape context.
+Methodological description: Relate roads, land-cover change or other barriers to the separation of formerly connected habitat areas, recognizing that the ecological consequences depend on species and landscape context.
+User-friendly description: Explain how roads or land-use change can divide formerly connected habitats.
 
 ##### Interpret connectivity between natural habitats
 
+Slug: interpretConnectivityBetweenNaturalHabitats
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether geographic corridors or barriers link habitat patches and enable movement across a landscape, without claiming that proximity automatically guarantees ecological connection.
+Methodological description: Assess whether geographic corridors or barriers link habitat patches and enable movement across a landscape, without claiming that proximity automatically guarantees ecological connection.
+User-friendly description: Identify natural corridors and barriers between habitat patches.
 
 ### Human Geography
 
