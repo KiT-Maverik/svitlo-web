@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { verification_Skills_Ids } from './index.ids';
 
 export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
-  id: verification_Skills_Ids.verifyWithSecondMethod,
+  id: 'b99c90cc-815d-4944-851a-e33ecb43e5b0',
   name: {
     en: "Verifying a calculation using another method",
     lt: "Skaičiavimo tikrinimas kitu būdu",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { verification_Skills_Ids } from './index.ids';
 
 export const checkReasonableness_Skill_Data = buildSkillConfig({
-  id: verification_Skills_Ids.checkReasonableness,
+  id: 'd9a090cc-ab44-4e08-babd-357a9b7a3154',
   name: {
     en: "Assessing whether an answer is reasonable in context and magnitude",
     lt: "Atsakymo pagrįstumo pagal kontekstą ir dydį vertinimas",
