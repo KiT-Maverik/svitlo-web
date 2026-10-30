@@ -16,392 +16,697 @@ Code files: 0/15 Domains · 0/65 Groups · 0/311 Skills
 
 ### Computational Thinking
 
+Slug: computationalThinking
+Action: create
+Status: pending
+
 Groups: 2 · Skills: 12
 
 [Not implemented](#)
 
-Turning open-ended problems into formalized tasks by identifying relevant information, defining rules, and constructing solutions that can be repeated and checked. Unlike programming, this does not necessarily require expressing the solution as executable code.
+Methodological description: Turning open-ended problems into formalized tasks by identifying relevant information, defining rules, and constructing solutions that can be repeated and checked. Unlike programming, this does not necessarily require expressing the solution as executable code.
+User-friendly description: Explore how to break complex problems into clear steps, patterns and rules.
 
 #### Decomposition and Abstraction
+
+Slug: decompositionAndAbstraction
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Defining a problem's boundaries by breaking it into subproblems, identifying meaningful characteristics, and constructing a simplified model. These operations precede selecting a specific algorithm or class structure.
+Methodological description: Defining a problem's boundaries by breaking it into subproblems, identifying meaningful characteristics, and constructing a simplified model. These operations precede selecting a specific algorithm or class structure.
+User-friendly description: Learn to simplify problems by identifying their essential parts and relationships.
 
 ##### Decompose a Problem
 
+Slug: decomposeAProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify independent subproblems with distinct outcomes that collectively solve the original problem. For example, finding a route involves identifying the start, destination, and allowed transitions.
+Methodological description: Identify independent subproblems with distinct outcomes that collectively solve the original problem. For example, finding a route involves identifying the start, destination, and allowed transitions.
+User-friendly description: Break a large problem into smaller tasks that can be solved separately.
 
 ##### Identify Essential Object Properties
 
+Slug: identifyEssentialObjectProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose only characteristics relevant to the given task: sorting books by author depends on the author's name, not the cover color. Properties omitted from one model may matter in another.
+Methodological description: Choose only characteristics relevant to the given task: sorting books by author depends on the author's name, not the cover color. Properties omitted from one model may matter in another.
+User-friendly description: Choose the details that matter for a task and set irrelevant details aside.
 
 ##### Build an Abstract System Model
 
+Slug: buildAnAbstractSystemModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent a complex situation with a simplified account of the elements, states, and relationships needed to investigate a question. For example, connections between rooms can be modeled as a graph without recreating each room's interior.
+Methodological description: Represent a complex situation with a simplified account of the elements, states, and relationships needed to investigate a question. For example, connections between rooms can be modeled as a graph without recreating each room's interior.
+User-friendly description: Create a simplified representation of a complex situation or system.
 
 ##### Generalize a Repeated Method
 
+Slug: generalizeARepeatedMethod
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Extract an invariant sequence of actions from several specific solutions and formulate a rule applicable to new cases. This requires separating the method from incidental numbers or objects in the examples.
+Methodological description: Extract an invariant sequence of actions from several specific solutions and formulate a rule applicable to new cases. This requires separating the method from incidental numbers or objects in the examples.
+User-friendly description: Find a reusable method shared by several specific problems.
 
 #### Logic and Patterns
+
+Slug: logicAndPatterns
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Reasoning from explicit rules includes finding patterns, evaluating simple statements, applying independent logical operations, combining conditions, and detecting contradictions. The focus is on truth and consequences, not necessarily executable code.
+Methodological description: Reasoning from explicit rules includes finding patterns, evaluating simple statements, applying independent logical operations, combining conditions, and detecting contradictions. The focus is on truth and consequences, not necessarily executable code.
+User-friendly description: Discover how rules, patterns and logical conditions support problem solving.
 
 ##### Recognize a Pattern
 
+Slug: recognizeAPattern
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer a rule governing changes in a sequence's values or structure and test it against several elements. An observed repetition suggests a rule but does not guarantee what unseen data will contain.
+Methodological description: Infer a rule governing changes in a sequence's values or structure and test it against several elements. An observed repetition suggests a rule but does not guarantee what unseen data will contain.
+User-friendly description: Recognize patterns in sequences and check whether a proposed rule fits.
 
 ##### Predict an Outcome from a Rule
 
+Slug: predictAnOutcomeFromARule
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Derive the next state or value from an explicit rule and initial conditions, such as one transition of a finite-state machine. Unlike statistical forecasting, the rule determines the outcome here.
+Methodological description: Derive the next state or value from an explicit rule and initial conditions, such as one transition of a finite-state machine. Unlike statistical forecasting, the rule determines the outcome here.
+User-friendly description: Work out what happens next when a rule and starting state are known.
 
 ##### Evaluate a Simple Condition
 
+Slug: evaluateASimpleCondition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Given known facts, determine whether a single elementary condition holds, such as `temperature > 20` or `isOpen = true`. Distinguish a false statement from one whose truth cannot be determined with the available information; combining conditions is a separate logical operation.
+Methodological description: Given known facts, determine whether a single elementary condition holds, such as `temperature > 20` or `isOpen = true`. Distinguish a false statement from one whose truth cannot be determined with the available information; combining conditions is a separate logical operation.
+User-friendly description: Decide whether a single condition is true, false or cannot yet be determined.
 
 ##### Apply Logical AND
 
+Slug: applyLogicalAND
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate the conjunction of two conditions: it is true only when both conditions are true. For example, access requires both a correct code and authorization; do not confuse this with an alternative condition.
+Methodological description: Evaluate the conjunction of two conditions: it is true only when both conditions are true. For example, access requires both a correct code and authorization; do not confuse this with an alternative condition.
+User-friendly description: Use AND to check whether two requirements are both satisfied.
 
 ##### Apply Logical OR
 
+Slug: applyLogicalOR
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate the disjunction of two conditions: it is true when at least one condition holds, including when both hold. For example, a discount may be available with a student ID or a promotional code; this is inclusive OR unless otherwise specified.
+Methodological description: Evaluate the disjunction of two conditions: it is true when at least one condition holds, including when both hold. For example, a discount may be available with a student ID or a promotional code; this is inclusive OR unless otherwise specified.
+User-friendly description: Use OR to check whether at least one of two conditions is satisfied.
 
 ##### Apply Logical NOT
 
+Slug: applyLogicalNOT
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Negate a condition's truth value: `NOT isLocked` is true when `isLocked` is false. Negation changes the truth value of the condition, not the underlying facts.
+Methodological description: Negate a condition's truth value: `NOT isLocked` is true when `isLocked` is false. Negation changes the truth value of the condition, not the underlying facts.
+User-friendly description: Use NOT to reverse the truth value of a condition.
 
 ##### Evaluate Compound Logical Expressions
 
+Slug: evaluateCompoundLogicalExpressions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compute expressions involving multiple conditions and AND, OR, and NOT while observing parentheses and operator precedence. For example, distinguish `(A OR B) AND C` from `A OR (B AND C)` for the same inputs.
+Methodological description: Compute expressions involving multiple conditions and AND, OR, and NOT while observing parentheses and operator precedence. For example, distinguish `(A OR B) AND C` from `A OR (B AND C)` for the same inputs.
+User-friendly description: Evaluate logical expressions with several operators in the right order.
 
 ##### Detect Contradictory Rules
 
+Slug: detectContradictoryRules
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show when two or more requirements cannot hold under the same conditions: for example, an object cannot simultaneously be located exclusively in room A and exclusively in room B. The focus is rule consistency rather than program execution order.
+Methodological description: Show when two or more requirements cannot hold under the same conditions: for example, an object cannot simultaneously be located exclusively in room A and exclusively in room B. The focus is rule consistency rather than program execution order.
+User-friendly description: Recognize when two requirements cannot both be true.
 ### Programming
+
+Slug: programming
+Action: create
+Status: pending
 
 Groups: 8 · Skills: 37
 
 [Not implemented](#)
 
-Reading, writing, running, and testing executable instructions that modify program state or produce results. Unlike abstract algorithm design, these competencies concern the behavior of an actual program.
+Methodological description: Reading, writing, running, and testing executable instructions that modify program state or produce results. Unlike abstract algorithm design, these competencies concern the behavior of an actual program.
+User-friendly description: Learn to understand, write and test instructions that a computer executes.
 
 #### Reading Programs
+
+Slug: readingPrograms
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Interpreting existing commands and their execution order, including intermediate state changes and final outcomes. This differs from writing new instructions or fixing an identified defect.
+Methodological description: Interpreting existing commands and their execution order, including intermediate state changes and final outcomes. This differs from writing new instructions or fixing an identified defect.
+User-friendly description: Discover how to read a program and follow what it does.
 
 ##### Explain a Command's Purpose
 
+Slug: explainACommandsPurpose
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the operation performed by an instruction and which values or effects it changes given the initial state. For example, assignment stores a new value but does not necessarily display it.
+Methodological description: Identify the operation performed by an instruction and which values or effects it changes given the initial state. For example, assignment stores a new value but does not necessarily display it.
+User-friendly description: Explain what an individual programming command does to a program's state.
 
 ##### Trace Program State
 
+Slug: traceProgramState
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Calculate intermediate values of variables, objects, and execution position across several commands; use a trace table to record when state changes. The final output may conceal those intermediate changes.
+Methodological description: Calculate intermediate values of variables, objects, and execution position across several commands; use a trace table to record when state changes. The final output may conceal those intermediate changes.
+User-friendly description: Follow changes to variables and other values while a program runs.
 
 ##### Predict Program Output
 
+Slug: predictProgramOutput
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine exactly what a program prints, draws, or returns for particular inputs and execution order. This concerns the externally observable result, not every internal state.
+Methodological description: Determine exactly what a program prints, draws, or returns for particular inputs and execution order. This concerns the externally observable result, not every internal state.
+User-friendly description: Work out the visible result a program will produce for given inputs.
 
 ##### Predict Consequences of Execution Order
 
+Slug: predictConsequencesOfExecutionOrder
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine how the order of assignments, calls, or checks affects program state and outcomes, especially when intuitive code reading is misleading. For example, a later instruction operates on a value already changed by an earlier one; unlike merely predicting output, this analyzes causal dependencies on order.
+Methodological description: Determine how the order of assignments, calls, or checks affects program state and outcomes, especially when intuitive code reading is misleading. For example, a later instruction operates on a value already changed by an earlier one; unlike merely predicting output, this analyzes causal dependencies on order.
+User-friendly description: Explain why changing the order of commands can change the result.
 
 #### Programming Constructs
+
+Slug: programmingConstructs
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Using executable commands, conditions, loops, and event responses to control a program. Unlike algorithm design, the constructs must be implemented in a particular execution environment.
+Methodological description: Using executable commands, conditions, loops, and event responses to control a program. Unlike algorithm design, the constructs must be implemented in a particular execution environment.
+User-friendly description: Learn to control programs using sequences, conditions, loops and events.
 
 ##### Write a Sequence of Commands
 
+Slug: writeASequenceOfCommands
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Translate specified steps into syntactically valid instructions for an environment that executes them in order. Unlike describing an algorithm in prose, this requires observing language rules and command effects.
+Methodological description: Translate specified steps into syntactically valid instructions for an environment that executes them in order. Unlike describing an algorithm in prose, this requires observing language rules and command effects.
+User-friendly description: Write valid commands that perform actions in the intended order.
 
 ##### Implement Conditional Behavior
 
+Slug: implementConditionalBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Write a Boolean test and the corresponding executable branches, ensuring that the intended branch runs for each anticipated condition value.
+Methodological description: Write a Boolean test and the corresponding executable branches, ensuring that the intended branch runs for each anticipated condition value.
+User-friendly description: Make a program choose different actions when conditions change.
 
 ##### Implement a Loop
 
+Slug: implementALoop
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Express repeated instructions using a counter or termination condition and correctly update state between iterations. An instruction repeats by rule rather than through manual duplication.
+Methodological description: Express repeated instructions using a counter or termination condition and correctly update state between iterations. An instruction repeats by rule rather than through manual duplication.
+User-friendly description: Use loops to repeat instructions until the right stopping point.
 
 ##### Handle an Event
 
+Slug: handleAnEvent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Associate a programmed response with a signal such as a button press, message, or state change, distinguishing the event's arrival from execution of its handler. This is not simply a condition checked sequentially at every step.
+Methodological description: Associate a programmed response with a signal such as a button press, message, or state change, distinguishing the event's arrival from execution of its handler. This is not simply a condition checked sequentially at every step.
+User-friendly description: Make a program respond when a button, message or another event occurs.
 
 ##### Detect an Infinite Loop
 
+Slug: detectAnInfiniteLoop
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when a loop's termination condition can never be reached because a counter stays unchanged or state is updated incorrectly; explain the consequences for program execution.
+Methodological description: Identify when a loop's termination condition can never be reached because a counter stays unchanged or state is updated incorrectly; explain the consequences for program execution.
+User-friendly description: Find a loop that cannot stop because its condition never becomes false.
 
 ##### Move Loop-Invariant Computations Outside a Loop
 
+Slug: moveLoopInvariantComputationsOutsideALoop
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize an expression whose value remains unchanged between iterations and safely calculate it once outside the loop, provided that doing so does not change required side effects or execution order.
+Methodological description: Recognize an expression whose value remains unchanged between iterations and safely calculate it once outside the loop, provided that doing so does not change required side effects or execution order.
+User-friendly description: Move calculations out of loops when they do not change during repetition.
 
 ##### Order Overlapping Conditional Checks
 
+Slug: orderOverlappingConditionalChecks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In an `if/else if` chain, explain why a broad condition may make a more specific branch unreachable and place the specific check first when appropriate; do not automatically apply this rule to independent `if` statements.
+Methodological description: In an `if/else if` chain, explain why a broad condition may make a more specific branch unreachable and place the specific check first when appropriate; do not automatically apply this rule to independent `if` statements.
+User-friendly description: Arrange conditional checks so specific cases can still be reached.
 
 #### Program Data
+
+Slug: programData
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Working with values received, stored, and changed at runtime: variables, types, inputs, and state transitions. This concerns data during code execution rather than external datasets for statistical analysis.
+Methodological description: Working with values received, stored, and changed at runtime: variables, types, inputs, and state transitions. This concerns data during code execution rather than external datasets for statistical analysis.
+User-friendly description: Work with the values and changing state used by a running program.
 
 ##### Use a Variable
 
+Slug: useAVariable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define a named location for a value and access its current contents at runtime; distinguish the variable's name from the value it stores.
+Methodological description: Define a named location for a value and access its current contents at runtime; distinguish the variable's name from the value it stores.
+User-friendly description: Store a value under a variable name and read it when needed.
 
 ##### Update Program State
 
+Slug: updateProgramState
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compute and store a new state from the previous one, such as incrementing a counter after an event. Unlike simply reading a variable, changing state affects subsequent operations.
+Methodological description: Compute and store a new state from the previous one, such as incrementing a counter after an event. Unlike simply reading a variable, changing state affects subsequent operations.
+User-friendly description: Change a program's stored state based on what happened before.
 
 ##### Use Input Data
 
+Slug: useInputData
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Accept an external value as program input and use it in a computation or choice of action. The output should depend on input rather than on a fixed example.
+Methodological description: Accept an external value as program input and use it in a computation or choice of action. The output should depend on input rather than on a fixed example.
+User-friendly description: Use information entered from outside the program to determine its behavior.
 
 #### Testing and Debugging
+
+Slug: testingAndDebugging
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Compare actual program behavior with requirements, find the cause of deviations, correct them, and test again. Detecting a defect, diagnosing it, changing code, and testing multiple cases are distinct abilities.
+Methodological description: Compare actual program behavior with requirements, find the cause of deviations, correct them, and test again. Detecting a defect, diagnosing it, changing code, and testing multiple cases are distinct abilities.
+User-friendly description: Discover how to find, explain and correct mistakes in programs.
 
 ##### Detect Incorrect Program Behavior
 
+Slug: detectIncorrectProgramBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare actual results or responses with requirements and identify a specific deviation such as a wrong value, missing response, or crash. An incorrect result need not be a runtime error; finding its root cause is a separate skill.
+Methodological description: Compare actual results or responses with requirements and identify a specific deviation such as a wrong value, missing response, or crash. An incorrect result need not be a runtime error; finding its root cause is a separate skill.
+User-friendly description: Recognize when a program's behavior differs from its requirements.
 
 ##### Locate the Cause of an Error
 
+Slug: locateTheCauseOfAnError
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Narrow a defect to a particular instruction, condition, or state transition by tracing execution and testing hypotheses. Recognizing a wrong result does not by itself identify its cause.
+Methodological description: Narrow a defect to a particular instruction, condition, or state transition by tracing execution and testing hypotheses. Recognizing a wrong result does not by itself identify its cause.
+User-friendly description: Trace a programming error to the instruction or condition causing it.
 
 ##### Fix a Program Defect
 
+Slug: fixAProgramDefect
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Change the specific code or rule responsible for a confirmed defect without breaking the required behavior of other cases. Retest the original failure after making the correction.
+Methodological description: Change the specific code or rule responsible for a confirmed defect without breaking the required behavior of other cases. Retest the original failure after making the correction.
+User-friendly description: Correct a specific defect and check that the required behavior still works.
 
 ##### Test a Program with Different Inputs
 
+Slug: testAProgramWithDifferentInputs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose valid and boundary input sets, compare actual with expected results, and identify cases where the program behaves differently. One successful run does not establish overall correctness.
+Methodological description: Choose valid and boundary input sets, compare actual with expected results, and identify cases where the program behaves differently. One successful run does not establish overall correctness.
+User-friendly description: Test a program using different inputs, including boundary cases.
 
 #### Functions and Reuse
+
+Slug: functionsAndReuse
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Named sections of programs with inputs, outputs, and defined responsibilities that help divide tasks and avoid repeating the same logic.
+Methodological description: Named sections of programs with inputs, outputs, and defined responsibilities that help divide tasks and avoid repeating the same logic.
+User-friendly description: Learn to organize reusable operations as functions.
 
 ##### Explain the Purpose of a Function
 
+Slug: explainThePurposeOfAFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe a function as a named operation that performs a particular action or returns a value and can be called repeatedly without rewriting its body.
+Methodological description: Describe a function as a named operation that performs a particular action or returns a value and can be called repeatedly without rewriting its body.
+User-friendly description: Explain how a named function performs an operation when called.
 
 ##### Define a Function with Parameters
 
+Slug: defineAFunctionWithParameters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create a function whose input parameters represent values used inside its body rather than hard-coding a single example.
+Methodological description: Create a function whose input parameters represent values used inside its body rather than hard-coding a single example.
+User-friendly description: Write a function that accepts parameters rather than fixed example values.
 
 ##### Call a Function with Arguments
 
+Slug: callAFunctionWithArguments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Supply concrete values at a call site and trace how they bind to formal parameters; distinguish defining a function from calling it.
+Methodological description: Supply concrete values at a call site and trace how they bind to formal parameters; distinguish defining a function from calling it.
+User-friendly description: Call a function with arguments and follow how they are used.
 
 ##### Use a Function's Return Value
 
+Slug: useAFunctionsReturnValue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Obtain a returned value and use it in another computation, distinguishing returned data from text printed to the screen.
+Methodological description: Obtain a returned value and use it in another computation, distinguishing returned data from text printed to the screen.
+User-friendly description: Use a returned result in further calculations rather than merely displaying it.
 
 ##### Explain Recursion
 
+Slug: explainRecursion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace a function that calls itself on a simpler case and identify the base condition that ends the calls. For example, computing a factorial involves both reducing the argument and terminating at the base case.
+Methodological description: Trace a function that calls itself on a simpler case and identify the base condition that ends the calls. For example, computing a factorial involves both reducing the argument and terminating at the base case.
+User-friendly description: Understand how a recursive function solves smaller cases and eventually stops.
 
 #### Data Types and References
+
+Slug: dataTypesAndReferences
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Types determine valid forms of values and operations; storage and state-passing behavior depend on the programming language. Do not assume every language draws the same boundary between primitives and objects.
+Methodological description: Types determine valid forms of values and operations; storage and state-passing behavior depend on the programming language. Do not assume every language draws the same boundary between primitives and objects.
+User-friendly description: Explore how types and references affect the values programs can use.
 
 ##### Distinguish Value Types
 
+Slug: distinguishValueTypes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify whether a value is numeric, textual, or Boolean and which operations are meaningful for it. Numeric addition and string concatenation may look similar but follow different rules.
+Methodological description: Identify whether a value is numeric, textual, or Boolean and which operations are meaningful for it. Numeric addition and string concatenation may look similar but follow different rules.
+User-friendly description: Tell whether a value is numeric, textual or Boolean and what it can do.
 
 ##### Explain Primitive Values in a Language
 
+Slug: explainPrimitiveValuesInALanguage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use a selected programming language to describe simple values such as numbers, Boolean values, or text and how that language classifies them; do not assume strings are primitive in every language.
+Methodological description: Use a selected programming language to describe simple values such as numbers, Boolean values, or text and how that language classifies them; do not assume strings are primitive in every language.
+User-friendly description: Identify simple value types as defined by a chosen programming language.
 
 ##### Explain Composite Data Structures
 
+Slug: explainCompositeDataStructures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize arrays, lists, records, and dictionaries as organizations of several values and their relationships; separate a structure's form from its current contents.
+Methodological description: Recognize arrays, lists, records, and dictionaries as organizations of several values and their relationships; separate a structure's form from its current contents.
+User-friendly description: Recognize lists, arrays and records that organize multiple values.
 
 ##### Distinguish Value Copying from Shared References
 
+Slug: distinguishValueCopyingFromSharedReferences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In a particular language, demonstrate when modifying a reference affects a shared mutable object and when a new value remains independent; do not equate this universally with a primitive/reference type distinction.
+Methodological description: In a particular language, demonstrate when modifying a reference affects a shared mutable object and when a new value remains independent; do not equate this universally with a primitive/reference type distinction.
+User-friendly description: Explain when two variables share an object and when values are independent.
 
 ##### Explain a Data Type Contract
 
+Slug: explainADataTypeContract
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine what type or form of value a declared input contract requires for a function, component, or call; text cannot always safely substitute for a number.
+Methodological description: Determine what type or form of value a declared input contract requires for a function, component, or call; text cannot always safely substitute for a number.
+User-friendly description: Understand the kind of value a program function expects to receive.
 
 ##### Validate Data Against a Contract
 
+Slug: validateDataAgainstAContract
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when received values violate an expected type or format and use validation or explicit conversion instead of silently assuming compatibility.
+Methodological description: Identify when received values violate an expected type or format and use validation or explicit conversion instead of silently assuming compatibility.
+User-friendly description: Check whether input matches a required type or structure before using it.
 
 #### Program Structure and Syntax
 
+Slug: programStructureAndSyntax
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-The language units of executable code include keywords, operators, identifiers, expressions, statements, and blocks. Editor highlighting helps identify them but does not prove a program correct.
+Methodological description: The language units of executable code include keywords, operators, identifiers, expressions, statements, and blocks. Editor highlighting helps identify them but does not prove a program correct.
+User-friendly description: Learn how programming languages organize keywords, expressions and blocks.
 
 ##### Distinguish Keywords from Identifiers
 
+Slug: distinguishKeywordsFromIdentifiers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate reserved language constructs from programmer-chosen names for variables and functions; naming rules vary by language.
+Methodological description: Separate reserved language constructs from programmer-chosen names for variables and functions; naming rules vary by language.
+User-friendly description: Distinguish language keywords from names chosen by programmers.
 
 ##### Distinguish Operators, Expressions, and Statements
 
+Slug: distinguishOperatorsExpressionsAndStatements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain that an operator acts on operands, an expression produces a value, and a statement directs an action; one line of code may contain several such units.
+Methodological description: Explain that an operator acts on operands, an expression produces a value, and a statement directs an action; one line of code may contain several such units.
+User-friendly description: Recognize the difference between operators, expressions and statements.
 
 ##### Explain Statement Block Boundaries
 
+Slug: explainStatementBlockBoundaries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify which instructions belong to a function, loop, or conditional branch based on braces or indentation in a language, without confusing a block with an entire file.
+Methodological description: Identify which instructions belong to a function, loop, or conditional branch based on braces or indentation in a language, without confusing a block with an entire file.
+User-friendly description: Find which commands belong inside a loop, function or conditional block.
 
 ##### Explain Syntax Highlighting
 
+Slug: explainSyntaxHighlighting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize editor coloring of keywords, strings, comments, and names as a visual aid; correctly colored code is not necessarily correct.
+Methodological description: Recognize editor coloring of keywords, strings, comments, and names as a visual aid; correctly colored code is not necessarily correct.
+User-friendly description: Understand what syntax coloring helps reveal and what it cannot prove.
 
 #### Programming Paradigms
+
+Slug: programmingParadigms
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Compare code organization through stepwise state changes, functional transformation of values, object modeling, and description of desired results. A language may support several paradigms.
+Methodological description: Compare code organization through stepwise state changes, functional transformation of values, object modeling, and description of desired results. A language may support several paradigms.
+User-friendly description: Discover different ways of organizing program logic and behavior.
 
 ##### Explain Procedural Programming
 
+Slug: explainProceduralProgramming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize tasks into named procedures and sequences of state-changing instructions without requiring a class for each action.
+Methodological description: Organize tasks into named procedures and sequences of state-changing instructions without requiring a class for each action.
+User-friendly description: Explore programs organized around step-by-step procedures.
 
 ##### Explain Functional Programming
 
+Slug: explainFunctionalProgramming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe computation through function composition and transformations of values; demonstrate that pure functions do not modify external state.
+Methodological description: Describe computation through function composition and transformations of values; demonstrate that pure functions do not modify external state.
+User-friendly description: Understand programs that transform values by combining functions.
 
 ##### Explain Object-Oriented Programming
 
+Slug: explainObjectOrientedProgramming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize a program around interacting objects with state and methods, rather than as a list of global procedures.
+Methodological description: Organize a program around interacting objects with state and methods, rather than as a list of global procedures.
+User-friendly description: Explore programs built from interacting objects with state and behavior.
 
 ##### Distinguish Imperative and Declarative Approaches
 
+Slug: distinguishImperativeAndDeclarativeApproaches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare specifying concrete state-changing steps with specifying desired results or rules from which the environment chooses an execution strategy.
+Methodological description: Compare specifying concrete state-changing steps with specifying desired results or rules from which the environment chooses an execution strategy.
+User-friendly description: Compare giving explicit instructions with describing the desired result.
 ### Digital Systems and Networks
 
 Groups: 8 · Skills: 37
