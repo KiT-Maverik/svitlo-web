@@ -33,4 +33,5 @@ export const perimeterVsArea_Skill_Data = buildSkillConfig({
     pl: "Dobieranie obwodu lub pola do pomiaru",
     uk: "Вибір між периметром і площею для вимірювання",
   },
+  description: { methodological: "Perimeter measures the length of a closed plane boundary in length units, while area measures the enclosed region in square units. Neither determines the other automatically, and they require different measurement procedures." },
 });

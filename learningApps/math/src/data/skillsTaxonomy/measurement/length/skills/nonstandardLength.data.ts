@@ -33,4 +33,5 @@ export const nonstandardLength_Skill_Data = buildSkillConfig({
     "pl": "Mierzenie długości powtarzanymi jednostkami niestandardowymi",
     "uk": "Вимірювання довжини повторенням однакових умовних одиниць"
   },
+  description: { methodological: "Measuring length means counting consecutive equal unit intervals along an object without gaps or overlaps. The numerical result depends on the unit, but the physical length does not." },
 });
