@@ -13,17 +13,18 @@ A **SkillDomain** denotes a recognizable field within a subject and contains coh
 
 ## EDITORIAL SLUG
 
-Each new-format SkillDomain has one English `Slug: lowerCamelCase` beneath its heading, unique among Domains in the textbook. Keep approved slugs stable independently of translated display names; they are not UUIDs or new runtime `SkillDomain_Config` properties. Reconcile existing Code paths without silent renames.
+Each new-format SkillDomain has one English `Slug: lowerCamelCase` beneath its heading, unique among all Domain, Group and Skill slugs in this textbook. Keep approved slugs stable independently of translated display names; they are not UUIDs or new runtime `SkillDomain_Config` properties. Reconcile existing Code paths without silent renames.
 
 ## RUNTIME CONTRACT AND ARTIFACTS
+
+The Domain config lives in `<PackageRoot>/data/skills/<domain>/<domain>.data.ts` and directly imports immediate Group Data from `./<group>/<group>.data`, or direct Skill Data from `./skills` for an ungrouped Domain. It maps child `.id` values into `groupIds` or `skillIds`. **No Domain-directory `index.ts` is required or allowed**; `<PackageRoot>/data/skills/index.ts` exports the Domain to consumers.
+
 
 The `@svitlo/contracts/taxonomy` `SkillDomain_Config` has `id`, localized `name`, required `groupIds` and optional direct `skillIds`. A grouped Domain uses nonempty `groupIds`; a direct-Skill Domain uses `groupIds: {}` plus nonempty `skillIds`. The Domain builder validates the exclusive, nonempty mode and individual child UUIDs, but it does **not** prove cross-domain uniqueness or downstream registry, index, UI, ancestry or analytics support. These consumers require their own integration audit. There is a transitional optional `description: { methodological: string; fe?: Record<LanguageCode, string> }`. Promotion requires a reviewed English `methodological` text; optional `fe` must be absent or complete for every supported locale. There is no learner-progress data.
 
 - **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological explanation, optional complete fe copy and Group membership **or direct Skill membership**.
 - **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
-New-format records use single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone implementation link. Legacy unlabeled prose needs migration; there is no generic `Description:` field, per-Domain Definition file or additional editorial approval state. The editorial `Action: create|update|delete|skip` fields request new Code / modification / explicitly authorized and dependency-checked deletion / no Code change. `Status: pending` means implementation is not completely verified; `Status: implemented` means fully verified Code. A planned Markdown → Code generator updates Status only after verification; failures remain pending and unrelated dependency-safe entities may still succeed. Neither field is a runtime `SkillDomain_Config` property.
-
-**Paths:** new Domain Code belongs under `<PackageRoot>/Data/skills/<domainSlug>/` in the individual textbook package, not the monorepo root. The existing `learningApps/math/src/data/skillsTaxonomy/` is unmigrated legacy Code. The editable taxonomy stays at `<PackageRoot>/docs/skills/taxonomy.md`; a single-language `User-friendly description:` is not a complete localized `description.fe` dictionary.
+New-format records use single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone implementation link. Legacy unlabeled prose needs migration; there is no generic `Description:` field, per-Domain Definition file or additional editorial approval state. The new `Action: skip|create|update|delete` and `Status: pending|implemented` taxonomy fields instead describe future generator intent and verified Code implementation.
 
 Related entities: [SkillGroup](./skill-group.md), [Skill](./skill.md).
