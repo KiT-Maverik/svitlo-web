@@ -18,675 +18,1200 @@ Code files: 0/14 Domains · 0/58 Groups · 0/282 Skills
 
 ### Psychological Science and Inquiry
 
+Slug: psychologicalScienceAndInquiry
+Action: create
+Status: pending
+
 Groups: 5 · Skills: 31
 
 [Not implemented](#)
 
-Psychology explains behavior and mental processes through empirical evidence, multiple levels of analysis, and ethical inquiry. Its explanations are provisional and require stronger support than anecdote or authority.
+Methodological description: Psychology explains behavior and mental processes through empirical evidence, multiple levels of analysis, and ethical inquiry. Its explanations are provisional and require stronger support than anecdote or authority.
+User-friendly description: Explore how psychologists investigate behavior and mental processes through careful research.
 
 #### Foundations and Perspectives
+
+Slug: foundationsAndPerspectives
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Scientific accounts distinguish description, prediction, and causal explanation while combining cognitive, biological, behavioral, and sociocultural perspectives.
+Methodological description: Scientific accounts distinguish description, prediction, and causal explanation while combining cognitive, biological, behavioral, and sociocultural perspectives.
+User-friendly description: Discover different perspectives and scientific goals in psychology.
 
 ##### Scope of Psychological Science
 
+Slug: scopeOfPsychologicalScience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the empirical study of behavior and experience from philosophical evaluation of arguments and from medical diagnosis or treatment.
+Methodological description: Distinguish the empirical study of behavior and experience from philosophical evaluation of arguments and from medical diagnosis or treatment.
+User-friendly description: Distinguish psychological research from philosophy and clinical treatment.
 
 ##### Psychological Perspectives
 
+Slug: psychologicalPerspectives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare how behavioral, cognitive, biological, developmental, and sociocultural models explain different aspects of the same phenomenon.
+Methodological description: Compare how behavioral, cognitive, biological, developmental, and sociocultural models explain different aspects of the same phenomenon.
+User-friendly description: Compare how different psychological approaches explain the same behavior.
 
 ##### Explanation and Prediction
 
+Slug: explanationAndPrediction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate a description of observed behavior, a forecast about future behavior, and a proposed mechanism responsible for it.
+Methodological description: Separate a description of observed behavior, a forecast about future behavior, and a proposed mechanism responsible for it.
+User-friendly description: Separate describing behavior from predicting or explaining its causes.
 
 ##### Historical Psychological Approaches
 
+Slug: historicalPsychologicalApproaches
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate foundational schools of thought in their historical context and assess why some claims have been revised by later evidence.
+Methodological description: Evaluate foundational schools of thought in their historical context and assess why some claims have been revised by later evidence.
+User-friendly description: Explore how early psychological theories evolved as evidence improved.
 
 #### Study Designs
+
+Slug: studyDesigns
+Action: create
+Status: pending
 
 Skills: 9
 
 [Not implemented](#)
 
-Different ways of collecting evidence answer different questions and support different levels of causal inference.
+Methodological description: Different ways of collecting evidence answer different questions and support different levels of causal inference.
+User-friendly description: Learn why different research designs support different conclusions.
 
 ##### Researchable Hypotheses
 
+Slug: researchableHypotheses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Transform a broad statement about human behavior into a claim with observable variables and possible disconfirming evidence.
+Methodological description: Transform a broad statement about human behavior into a claim with observable variables and possible disconfirming evidence.
+User-friendly description: Turn an everyday claim about behavior into a researchable hypothesis.
 
 ##### Systematic Observation
 
+Slug: systematicObservation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use predefined behavioral categories to distinguish structured observations from informal personal impressions.
+Methodological description: Use predefined behavioral categories to distinguish structured observations from informal personal impressions.
+User-friendly description: Record behavior using consistent observation rules rather than impressions.
 
 ##### Research Interviews
 
+Slug: researchInterviews
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret conversational accounts of experience while considering interviewer influence, recall limits, and unequal disclosure pressures.
+Methodological description: Interpret conversational accounts of experience while considering interviewer influence, recall limits, and unequal disclosure pressures.
+User-friendly description: Explore what interviews can reveal and how questions influence responses.
 
 ##### Questionnaire Research
 
+Slug: questionnaireResearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret structured self-reports while considering item wording, response scales, and socially desirable answers.
+Methodological description: Interpret structured self-reports while considering item wording, response scales, and socially desirable answers.
+User-friendly description: Interpret questionnaires while accounting for wording and response bias.
 
 ##### Correlational Studies
 
+Slug: correlationalStudies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine what an association between measured variables reveals without treating co-occurrence as proof of cause.
+Methodological description: Determine what an association between measured variables reveals without treating co-occurrence as proof of cause.
+User-friendly description: Recognize what correlations show and what they cannot prove.
 
 ##### Controlled Experiments
 
+Slug: controlledExperiments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify manipulated variables, outcome measures, comparison conditions, and the logic of an experimental contrast.
+Methodological description: Identify manipulated variables, outcome measures, comparison conditions, and the logic of an experimental contrast.
+User-friendly description: Identify manipulated factors, measured outcomes and controls in an experiment.
 
 ##### Random Assignment
 
+Slug: randomAssignment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how chance allocation to conditions reduces systematic differences without confusing it with population sampling.
+Methodological description: Explain how chance allocation to conditions reduces systematic differences without confusing it with population sampling.
+User-friendly description: Understand how random assignment can make study groups more comparable.
 
 ##### Blinding in Research
 
+Slug: blindingInResearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how keeping condition assignments unknown to participants or evaluators can reduce some sources of bias, and why blinding is not universally possible.
+Methodological description: Explain how keeping condition assignments unknown to participants or evaluators can reduce some sources of bias, and why blinding is not universally possible.
+User-friendly description: Explain how blinding participants or evaluators can reduce certain biases.
 
 ##### Expectation Effects
 
+Slug: expectationEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how beliefs about an intervention or condition can change reported experience or behavior independently of its specific mechanism.
+Methodological description: Explain how beliefs about an intervention or condition can change reported experience or behavior independently of its specific mechanism.
+User-friendly description: Recognize how expectations can influence behavior or reported experience.
 
 #### Measurement and Sampling
+
+Slug: measurementAndSampling
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Operational measures offer imperfect indicators of psychological constructs, and recruitment choices limit generalization.
+Methodological description: Operational measures offer imperfect indicators of psychological constructs, and recruitment choices limit generalization.
+User-friendly description: Explore how psychologists measure constructs and choose research participants.
 
 ##### Operational Definitions
 
+Slug: operationalDefinitions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Translate an abstract concept such as stress or attention into an observable indicator and identify what it leaves out.
+Methodological description: Translate an abstract concept such as stress or attention into an observable indicator and identify what it leaves out.
+User-friendly description: Translate an abstract psychological idea into observable measurements.
 
 ##### Reliability of Measures
 
+Slug: reliabilityOfMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate whether repeated or equivalent measurements are consistent enough for their intended interpretation.
+Methodological description: Evaluate whether repeated or equivalent measurements are consistent enough for their intended interpretation.
+User-friendly description: Check whether a psychological measure gives consistent results.
 
 ##### Construct Validity
 
+Slug: constructValidity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether a test actually captures the intended psychological attribute rather than a convenient proxy.
+Methodological description: Assess whether a test actually captures the intended psychological attribute rather than a convenient proxy.
+User-friendly description: Evaluate whether a test captures the concept it claims to measure.
 
 ##### Representative Sampling
 
+Slug: representativeSampling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how sampling, recruitment, and nonresponse affect the generalizability of findings.
+Methodological description: Explain how sampling, recruitment, and nonresponse affect the generalizability of findings.
+User-friendly description: Recognize how recruiting a sample limits conclusions about a population.
 
 ##### Measurement Bias
 
+Slug: measurementBias
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify systematic distortions from test wording, cultural assumptions, inaccessible formats, or observer expectations.
+Methodological description: Identify systematic distortions from test wording, cultural assumptions, inaccessible formats, or observer expectations.
+User-friendly description: Find ways a measurement could systematically disadvantage or misrepresent people.
 
 #### Evidence and Interpretation
+
+Slug: evidenceAndInterpretation
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Quantitative summaries and research transparency help discriminate robust patterns from noise and misleading causal stories.
+Methodological description: Quantitative summaries and research transparency help discriminate robust patterns from noise and misleading causal stories.
+User-friendly description: Learn how evidence and transparent analysis support research conclusions.
 
 ##### Descriptive Statistics in Research
 
+Slug: descriptiveStatisticsInResearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret distributions, typical values, and variability without treating a group average as every participant's experience.
+Methodological description: Interpret distributions, typical values, and variability without treating a group average as every participant's experience.
+User-friendly description: Read typical values and variation without assuming everyone matches the average.
 
 ##### Correlation and Causation
 
+Slug: correlationAndCausation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider reversed direction and third-variable explanations when two psychological measures vary together.
+Methodological description: Consider reversed direction and third-variable explanations when two psychological measures vary together.
+User-friendly description: Distinguish association from evidence that one psychological factor causes another.
 
 ##### Confounding Variables
 
+Slug: confoundingVariables
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify background factors that move with a proposed cause and could produce an observed group difference.
+Methodological description: Identify background factors that move with a proposed cause and could produce an observed group difference.
+User-friendly description: Identify other factors that might explain a difference between groups.
 
 ##### Study Replication
 
+Slug: studyReplication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why repeating a psychological investigation with new observations helps assess the robustness and generality of a result.
+Methodological description: Explain why repeating a psychological investigation with new observations helps assess the robustness and generality of a result.
+User-friendly description: Understand why repeating a study helps test whether a finding is robust.
 
 ##### Analytical Reproducibility
 
+Slug: analyticalReproducibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why access to reported methods, data, and analytic decisions allows independent verification of a result.
+Methodological description: Explain why access to reported methods, data, and analytic decisions allows independent verification of a result.
+User-friendly description: Recognize why clear methods and analysis choices allow independent checking.
 
 ##### Evidence Quality
 
+Slug: evidenceQuality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Weigh converging studies, effect magnitude, uncertainty, and publication bias instead of relying on one striking result.
+Methodological description: Weigh converging studies, effect magnitude, uncertainty, and publication bias instead of relying on one striking result.
+User-friendly description: Compare research findings by their strength, uncertainty and possible biases.
 
 #### Research Ethics
+
+Slug: researchEthics
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Studies involving people must respect autonomy, dignity, safety, and confidentiality, including additional safeguards for vulnerable participants.
+Methodological description: Studies involving people must respect autonomy, dignity, safety, and confidentiality, including additional safeguards for vulnerable participants.
+User-friendly description: Discover how research can respect people's autonomy, dignity and safety.
 
 ##### Informed Consent
 
+Slug: informedConsent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the information required for a voluntary decision to participate, including procedures, foreseeable risks, and withdrawal.
+Methodological description: Identify the information required for a voluntary decision to participate, including procedures, foreseeable risks, and withdrawal.
+User-friendly description: Recognize what participants should know before agreeing to join a study.
 
 ##### Research Confidentiality
 
+Slug: researchConfidentiality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how identifiable participant information may be protected through access restrictions and careful reporting.
+Methodological description: Explain how identifiable participant information may be protected through access restrictions and careful reporting.
+User-friendly description: Understand how researchers protect identifiable participant data.
 
 ##### Research Anonymity
 
+Slug: researchAnonymity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain when collected data cannot be linked to a participant and why this differs from merely promising confidentiality.
+Methodological description: Explain when collected data cannot be linked to a participant and why this differs from merely promising confidentiality.
+User-friendly description: Distinguish anonymous research data from information kept confidential.
 
 ##### Risk–Benefit Assessment
 
+Slug: riskBenefitAssessment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify possible distress, coercion, stigma, and privacy harms and consider less intrusive alternatives.
+Methodological description: Identify possible distress, coercion, stigma, and privacy harms and consider less intrusive alternatives.
+User-friendly description: Compare potential research benefits with risks of distress, harm or coercion.
 
 ##### Deception in Research
 
+Slug: deceptionInResearch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate the rare conditions under which incomplete disclosure might be ethically defensible given oversight, scientific necessity, and risks.
+Methodological description: Evaluate the rare conditions under which incomplete disclosure might be ethically defensible given oversight, scientific necessity, and risks.
+User-friendly description: Consider when withholding information in research might be ethically defensible.
 
 ##### Research Debriefing
 
+Slug: researchDebriefing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the purpose of a meaningful post-participation explanation and support when a study withheld important information.
+Methodological description: Explain the purpose of a meaningful post-participation explanation and support when a study withheld important information.
+User-friendly description: Explain why researchers sometimes need to debrief people after a study.
 
 ##### Research with Vulnerable Participants
 
+Slug: researchWithVulnerableParticipants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain additional assent, consent, power-balance, and accessibility considerations involving children or dependent groups.
+Methodological description: Explain additional assent, consent, power-balance, and accessibility considerations involving children or dependent groups.
+User-friendly description: Recognize additional protections needed for children and vulnerable participants.
 
 ### Biological Foundations of Behavior
+
+Slug: biologicalFoundationsOfBehavior
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Neural, endocrine, genetic, and evolved processes influence experience and action through interaction with environments. This field emphasizes explanatory mechanisms rather than rote anatomical detail or biological determinism.
+Methodological description: Neural, endocrine, genetic, and evolved processes influence experience and action through interaction with environments. This field emphasizes explanatory mechanisms rather than rote anatomical detail or biological determinism.
+User-friendly description: Explore how brains, hormones, inherited traits and environments influence behavior.
 
 #### Neural Communication
 
+Slug: neuralCommunication
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Communication within nervous systems depends on electrical signals, chemical modulation, and changing connections that relate to behavioral functions.
+Methodological description: Communication within nervous systems depends on electrical signals, chemical modulation, and changing connections that relate to behavioral functions.
+User-friendly description: Discover how neurons send signals and change their connections.
 
 ##### Neural Signaling
 
+Slug: neuralSignaling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect electrical impulses and synaptic transmission with communication between neurons and the timing of responses.
+Methodological description: Connect electrical impulses and synaptic transmission with communication between neurons and the timing of responses.
+User-friendly description: Explain how nerve cells transmit electrical and chemical signals.
 
 ##### Neurotransmitter Action
 
+Slug: neurotransmitterAction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain modulatory chemical signaling without the misleading claim that a single neurotransmitter directly causes one emotion.
+Methodological description: Explain modulatory chemical signaling without the misleading claim that a single neurotransmitter directly causes one emotion.
+User-friendly description: Recognize why one neurotransmitter does not determine a single emotion.
 
 ##### Neural Excitation
 
+Slug: neuralExcitation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how excitatory signals raise the probability of a target neuron or circuit becoming active under relevant conditions.
+Methodological description: Explain how excitatory signals raise the probability of a target neuron or circuit becoming active under relevant conditions.
+User-friendly description: Understand how excitatory signals increase the chance of neural activity.
 
 ##### Neural Inhibition
 
+Slug: neuralInhibition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how inhibitory signals reduce or regulate activation within a circuit without implying that inhibition means absence of information processing.
+Methodological description: Explain how inhibitory signals reduce or regulate activation within a circuit without implying that inhibition means absence of information processing.
+User-friendly description: Explain how inhibitory signals help regulate neural activity.
 
 ##### Neural Plasticity
 
+Slug: neuralPlasticity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate experience-dependent changes in neural connections to learning and adaptation without claiming unlimited voluntary control.
+Methodological description: Relate experience-dependent changes in neural connections to learning and adaptation without claiming unlimited voluntary control.
+User-friendly description: Explore how experience can change neural connections over time.
 
 #### Brain–Behavior Relationships
+
+Slug: brainBehaviorRelationships
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Distributed neural systems support specific psychological functions; brain scans and localized damage require cautious interpretation.
+Methodological description: Distributed neural systems support specific psychological functions; brain scans and localized damage require cautious interpretation.
+User-friendly description: Learn how interacting brain systems support different behaviors.
 
 ##### Sensory Neural Pathways
 
+Slug: sensoryNeuralPathways
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate incoming bodily signals to coordinated processing that supports detection and response.
+Methodological description: Relate incoming bodily signals to coordinated processing that supports detection and response.
+User-friendly description: Trace how sensory signals are processed to support perception and action.
 
 ##### Motor Neural Pathways
 
+Slug: motorNeuralPathways
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate commands from central nervous processing to coordinated bodily movement and action.
+Methodological description: Relate commands from central nervous processing to coordinated bodily movement and action.
+User-friendly description: Explain how the nervous system helps coordinate movement.
 
 ##### Functional Specialization
 
+Slug: functionalSpecialization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain distinctive contributions of brain regions while rejecting the idea that complex experience lives in one isolated location.
+Methodological description: Explain distinctive contributions of brain regions while rejecting the idea that complex experience lives in one isolated location.
+User-friendly description: Recognize specialized brain functions without assigning complex thoughts to one spot.
 
 ##### Executive-Control Networks
 
+Slug: executiveControlNetworks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate interacting brain systems to working-memory updating, flexible planning, and response inhibition.
+Methodological description: Relate interacting brain systems to working-memory updating, flexible planning, and response inhibition.
+User-friendly description: Explore how brain networks support planning, memory and self-control.
 
 ##### Neuroimaging Inference
 
+Slug: neuroimagingInference
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish an imaged physiological signal from an inferred thought and identify the limits of reverse inference.
+Methodological description: Distinguish an imaged physiological signal from an inferred thought and identify the limits of reverse inference.
+User-friendly description: Understand why brain activity images cannot directly reveal particular thoughts.
 
 #### Biological Differences and Context
+
+Slug: biologicalDifferencesAndContext
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Inherited characteristics, hormones, and environmental exposures jointly shape outcomes, without fixing a person's future.
+Methodological description: Inherited characteristics, hormones, and environmental exposures jointly shape outcomes, without fixing a person's future.
+User-friendly description: Discover how inherited factors, hormones and environments jointly shape behavior.
 
 ##### Gene–Environment Interaction
 
+Slug: geneEnvironmentInteraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why an inherited predisposition can have different behavioral consequences in different surroundings.
+Methodological description: Explain why an inherited predisposition can have different behavioral consequences in different surroundings.
+User-friendly description: Explore why genetic predispositions can have different outcomes in different settings.
 
 ##### Heritability Interpretation
 
+Slug: heritabilityInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish statistical variation within a studied population from a fixed percentage of one individual's trait attributed to genes.
+Methodological description: Distinguish statistical variation within a studied population from a fixed percentage of one individual's trait attributed to genes.
+User-friendly description: Understand why heritability is a population statistic, not a person's percentage.
 
 ##### Hormonal Influences
 
+Slug: hormonalInfluences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how endocrine signals can change arousal or behavior without implying that their effects are universal or direct.
+Methodological description: Explain how endocrine signals can change arousal or behavior without implying that their effects are universal or direct.
+User-friendly description: Recognize how hormones can influence arousal and behavior in context.
 
 ##### Physiological Stress Responses
 
+Slug: physiologicalStressResponses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate autonomic and hormonal changes to perceived demands and subsequent recovery.
+Methodological description: Relate autonomic and hormonal changes to perceived demands and subsequent recovery.
+User-friendly description: Explore how the body responds to demands and returns toward recovery.
 
 #### Evolutionary Accounts
+
+Slug: evolutionaryAccounts
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Evolutionary explanations generate testable hypotheses about behavior but require evidence beyond a plausible adaptation story.
+Methodological description: Evolutionary explanations generate testable hypotheses about behavior but require evidence beyond a plausible adaptation story.
+User-friendly description: Learn how evolutionary theories make testable proposals about behavior.
 
 ##### Selection and Behavioral Variation
 
+Slug: selectionAndBehavioralVariation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how inherited variation and differential reproduction could change behavioral predispositions across generations.
+Methodological description: Explain how inherited variation and differential reproduction could change behavioral predispositions across generations.
+User-friendly description: Explain how inherited behavioral tendencies may change across generations.
 
 ##### Evaluating Evolutionary Claims
 
+Slug: evaluatingEvolutionaryClaims
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess behavioral adaptation hypotheses against comparative evidence and plausible developmental or cultural alternatives.
+Methodological description: Assess behavioral adaptation hypotheses against comparative evidence and plausible developmental or cultural alternatives.
+User-friendly description: Evaluate evolutionary explanations using evidence rather than plausible stories alone.
 
 ##### Adaptive Trade-offs
 
+Slug: adaptiveTradeOffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a tendency advantageous in one context may impose costs in another rather than treating all traits as optimal.
+Methodological description: Explain why a tendency advantageous in one context may impose costs in another rather than treating all traits as optimal.
+User-friendly description: Understand why a useful tendency in one environment may have costs in another.
 
 ### Sensation and Perception
+
+Slug: sensationAndPerception
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 23
 
 [Not implemented](#)
 
-Sensory information is detected, selected, organized, and interpreted into an experienced world. Psychological perception differs from simple measurement of physical stimuli or anatomy of sense organs.
+Methodological description: Sensory information is detected, selected, organized, and interpreted into an experienced world. Psychological perception differs from simple measurement of physical stimuli or anatomy of sense organs.
+User-friendly description: Discover how sensory signals become experiences of the world around us.
 
 #### Sensory Detection
+
+Slug: sensoryDetection
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Sensitivity depends on stimulus intensity, adaptation, and detection conditions rather than a perfectly fixed threshold.
+Methodological description: Sensitivity depends on stimulus intensity, adaptation, and detection conditions rather than a perfectly fixed threshold.
+User-friendly description: Explore how the strength and conditions of stimulation affect detection.
 
 ##### Sensation versus Perception
 
+Slug: sensationVersusPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish sensory encoding of stimulation from the interpretation of what that stimulation represents.
+Methodological description: Distinguish sensory encoding of stimulation from the interpretation of what that stimulation represents.
+User-friendly description: Distinguish detecting a stimulus from interpreting what it means.
 
 ##### Detection Thresholds
 
+Slug: detectionThresholds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how signal strength and competing noise affect the likelihood of noticing a stimulus.
+Methodological description: Explain how signal strength and competing noise affect the likelihood of noticing a stimulus.
+User-friendly description: Explain why stronger signals may be easier to notice amid noise.
 
 ##### Difference Thresholds
 
+Slug: differenceThresholds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the detectable difference between stimuli to their starting intensity and context.
+Methodological description: Relate the detectable difference between stimuli to their starting intensity and context.
+User-friendly description: Recognize when a difference between two stimuli becomes noticeable.
 
 ##### Sensory Transduction
 
+Slug: sensoryTransduction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how sensory receptors transform light, mechanical stimulation, or chemical signals into neural activity, distinguishing this initial encoding from later perception.
+Methodological description: Explain how sensory receptors transform light, mechanical stimulation, or chemical signals into neural activity, distinguishing this initial encoding from later perception.
+User-friendly description: Understand how sensory receptors convert stimulation into neural signals.
 
 ##### Sensory Adaptation
 
+Slug: sensoryAdaptation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe changed sensitivity after sustained stimulation without mistaking it for change in the source.
+Methodological description: Describe changed sensitivity after sustained stimulation without mistaking it for change in the source.
+User-friendly description: Explore how sensitivity can change after exposure to a constant stimulus.
 
 #### Perceptual Organization
 
+Slug: perceptualOrganization
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-The mind uses grouping cues and expectations to construct coherent objects from ambiguous sensory input.
+Methodological description: The mind uses grouping cues and expectations to construct coherent objects from ambiguous sensory input.
+User-friendly description: Learn how the mind groups sensory information into recognizable objects.
 
 ##### Figure–Ground Organization
 
+Slug: figureGroundOrganization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how context changes which part of a scene is experienced as a foreground object.
+Methodological description: Identify how context changes which part of a scene is experienced as a foreground object.
+User-friendly description: Recognize which parts of a scene appear as foreground or background.
 
 ##### Gestalt Grouping
 
+Slug: gestaltGrouping
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply similarity, proximity, closure, and continuity to explain grouping of visible elements.
+Methodological description: Apply similarity, proximity, closure, and continuity to explain grouping of visible elements.
+User-friendly description: Use proximity, similarity and continuity to explain visual grouping.
 
 ##### Perceptual Constancy
 
+Slug: perceptualConstancy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain relatively stable perceived size, shape, or color across changing sensory conditions.
+Methodological description: Explain relatively stable perceived size, shape, or color across changing sensory conditions.
+User-friendly description: Understand why size, shape or color can seem stable under changing conditions.
 
 ##### Bottom-Up and Top-Down Processing
 
+Slug: bottomUpAndTopDownProcessing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish stimulus-driven evidence from prior expectations and explain their interaction in perception.
+Methodological description: Distinguish stimulus-driven evidence from prior expectations and explain their interaction in perception.
+User-friendly description: Explore how expectations and incoming sensations jointly shape perception.
 
 #### Visual and Auditory Experience
+
+Slug: visualAndAuditoryExperience
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Spatial, chromatic, and speech experiences emerge from interpreting patterns of visual or acoustic information.
+Methodological description: Spatial, chromatic, and speech experiences emerge from interpreting patterns of visual or acoustic information.
+User-friendly description: Discover how we interpret visual and auditory patterns.
 
 ##### Depth Perception
 
+Slug: depthPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the contributions of binocular and monocular cues to estimating distance.
+Methodological description: Explain the contributions of binocular and monocular cues to estimating distance.
+User-friendly description: Identify visual cues that help us judge how far away something is.
 
 ##### Color Perception
 
+Slug: colorPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate wavelengths, relative context, and neural processing to perceived colors without equating color with one wavelength.
+Methodological description: Relate wavelengths, relative context, and neural processing to perceived colors without equating color with one wavelength.
+User-friendly description: Explore why perceived color depends on context and neural processing.
 
 ##### Sound Localization
 
+Slug: soundLocalization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how timing and level differences between ears contribute to perceived sound direction.
+Methodological description: Explain how timing and level differences between ears contribute to perceived sound direction.
+User-friendly description: Understand how differences between ears help locate a sound.
 
 ##### Speech Perception
 
+Slug: speechPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how acoustic cues, noise, and language expectations shape understanding of spoken messages.
+Methodological description: Analyze how acoustic cues, noise, and language expectations shape understanding of spoken messages.
+User-friendly description: Recognize how sound and language expectations affect speech understanding.
 
 #### Body and Chemical Senses
+
+Slug: bodyAndChemicalSenses
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Touch, pain, balance, body position, smell, and taste rely on partly distinct receptor and processing pathways. Their psychological importance lies in how signals become conscious experiences and guide action, not in cataloguing anatomy alone.
+Methodological description: Touch, pain, balance, body position, smell, and taste rely on partly distinct receptor and processing pathways. Their psychological importance lies in how signals become conscious experiences and guide action, not in cataloguing anatomy alone.
+User-friendly description: Explore how touch, pain, smell, taste and body senses guide experience.
 
 ##### Touch Perception
 
+Slug: touchPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how contact, pressure, vibration, and texture are discriminated through somatosensory processing, and why perceived touch depends on stimulus location and context.
+Methodological description: Explain how contact, pressure, vibration, and texture are discriminated through somatosensory processing, and why perceived touch depends on stimulus location and context.
+User-friendly description: Understand how pressure and vibration become the experience of touch.
 
 ##### Pain Perception
 
+Slug: painPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how nociceptive input, context, attention, and expectations interact in the experience of pain, without equating its intensity with a single tissue measurement.
+Methodological description: Explain how nociceptive input, context, attention, and expectations interact in the experience of pain, without equating its intensity with a single tissue measurement.
+User-friendly description: Explore why pain experience depends on more than one tissue signal.
 
 ##### Smell Perception
 
+Slug: smellPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how patterns of odorant stimulation contribute to identifying smells and why learning, adaptation, and context can alter odor judgments.
+Methodological description: Describe how patterns of odorant stimulation contribute to identifying smells and why learning, adaptation, and context can alter odor judgments.
+User-friendly description: Recognize how prior experience and context affect identifying smells.
 
 ##### Taste Perception
 
+Slug: tastePerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how gustatory information supports basic taste qualities and interacts with smell and other sensory cues in experienced flavor.
+Methodological description: Explain how gustatory information supports basic taste qualities and interacts with smell and other sensory cues in experienced flavor.
+User-friendly description: Explore how taste and smell combine to create flavor.
 
 ##### Proprioception
 
+Slug: proprioception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how information about muscle and joint state supports awareness of limb position and movement even without vision.
+Methodological description: Explain how information about muscle and joint state supports awareness of limb position and movement even without vision.
+User-friendly description: Understand how your body senses limb position without looking.
 
 ##### Vestibular Perception
 
+Slug: vestibularPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how sensed head motion and orientation contribute to balance and spatial perception, including interactions with vision and proprioception.
+Methodological description: Explain how sensed head motion and orientation contribute to balance and spatial perception, including interactions with vision and proprioception.
+User-friendly description: Explain how head movement and orientation help maintain balance.
 
 #### Illusions and Multisensory Perception
+
+Slug: illusionsAndMultisensoryPerception
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Systematic distortions and interactions across senses reveal how perception infers likely causes of stimulation.
+Methodological description: Systematic distortions and interactions across senses reveal how perception infers likely causes of stimulation.
+User-friendly description: Discover what sensory illusions reveal about how perception works.
 
 ##### Visual Illusions
 
+Slug: visualIllusions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how contextual cues create reliable differences between an object's measured property and its appearance.
+Methodological description: Explain how contextual cues create reliable differences between an object's measured property and its appearance.
+User-friendly description: Explain why a visual illusion can differ from a measured physical feature.
 
 ##### Cross-Modal Integration
 
+Slug: crossModalIntegration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how combined sensory cues can modify a percept compared with cues considered separately.
+Methodological description: Explain how combined sensory cues can modify a percept compared with cues considered separately.
+User-friendly description: Explore how cues from different senses change the same experience.
 
 ##### Perceptual Expectations
 
+Slug: perceptualExpectations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze the influence of prior knowledge or priming while distinguishing interpretation from the actual stimulus.
+Methodological description: Analyze the influence of prior knowledge or priming while distinguishing interpretation from the actual stimulus.
+User-friendly description: Recognize when prior knowledge changes interpretation of an unchanged stimulus.
 
 ##### Eyewitness Perception
 
+Slug: eyewitnessPerception
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess the effects of attention, conditions, and later interpretation on the reliability of witnessed events.
+Methodological description: Assess the effects of attention, conditions, and later interpretation on the reliability of witnessed events.
+User-friendly description: Consider the limits of eyewitness observations under distracting conditions.
 
 ### Attention and Consciousness
+
+Slug: attentionAndConsciousness
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Not all available information receives equal processing or enters reportable awareness. Focus, automaticity, waking states, and sleep have related but distinct psychological mechanisms.
+Methodological description: Not all available information receives equal processing or enters reportable awareness. Focus, automaticity, waking states, and sleep have related but distinct psychological mechanisms.
+User-friendly description: Explore how attention, awareness and sleep affect mental processing.
 
 #### Attention Allocation
+
+Slug: attentionAllocation
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Competing demands determine which inputs or tasks are prioritized and when performance degrades.
+Methodological description: Competing demands determine which inputs or tasks are prioritized and when performance degrades.
+User-friendly description: Discover how attention prioritizes some information over competing demands.
 
 ##### Selective Attention
 
+Slug: selectiveAttention
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain priority given to task-relevant information amid competing signals.
+Methodological description: Explain priority given to task-relevant information amid competing signals.
+User-friendly description: Explain how a person focuses on relevant information amid distractions.
 
 ##### Divided Attention
 
+Slug: dividedAttention
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze performance costs when simultaneous activities compete for limited processing resources.
+Methodological description: Analyze performance costs when simultaneous activities compete for limited processing resources.
+User-friendly description: Recognize why doing two demanding tasks at once can reduce performance.
 
 ##### Sustained Attention
 
+Slug: sustainedAttention
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain changes in vigilance over extended periods of cognitive effort.
+Methodological description: Explain changes in vigilance over extended periods of cognitive effort.
+User-friendly description: Explore how concentration and alertness change during prolonged tasks.
 
 ##### Inattentional Blindness
 
+Slug: inattentionalBlindness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe failing to notice an unexpected event while engaged in a demanding task.
+Methodological description: Describe failing to notice an unexpected event while engaged in a demanding task.
+User-friendly description: Understand why a focused person may miss an unexpected visible event.
 
 ##### Attentional Capture
 
+Slug: attentionalCapture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why salient, novel, or personally relevant cues can involuntarily redirect focus.
+Methodological description: Explain why salient, novel, or personally relevant cues can involuntarily redirect focus.
+User-friendly description: Recognize when a new or striking cue automatically attracts attention.
 
 #### Awareness and Automaticity
 
+Slug: awarenessAndAutomaticity
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Deliberate processing differs from practiced routines, and retrospective introspection is an imperfect account of causes.
+Methodological description: Deliberate processing differs from practiced routines, and retrospective introspection is an imperfect account of causes.
+User-friendly description: Explore differences between deliberate effort and practiced automatic processes.
 
 ##### Effortful and Automatic Processing
 
+Slug: effortfulAndAutomaticProcessing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare deliberately controlled thought with processing that occurs with reduced attentional demand.
+Methodological description: Compare deliberately controlled thought with processing that occurs with reduced attentional demand.
+User-friendly description: Compare consciously controlled thinking with actions that need less attention.
 
 ##### Skill Automaticity
 
+Slug: skillAutomaticity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how repeated practice changes processing effort while not eliminating every possible error.
+Methodological description: Explain how repeated practice changes processing effort while not eliminating every possible error.
+User-friendly description: Understand how practice can make a task feel more automatic.
 
 ##### Limits of Introspection
 
+Slug: limitsOfIntrospection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify why a person may report experiences accurately yet misidentify mechanisms that produced them.
+Methodological description: Identify why a person may report experiences accurately yet misidentify mechanisms that produced them.
+User-friendly description: Recognize why people may misjudge the causes of their own decisions.
 
 ##### Altered States of Consciousness
 
+Slug: alteredStatesOfConsciousness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate subjective reports of changed awareness alongside independently observable task effects.
+Methodological description: Evaluate subjective reports of changed awareness alongside independently observable task effects.
+User-friendly description: Explore how changes in awareness can be studied through reports and behavior.
 
 #### Sleep and Daily Rhythms
+
+Slug: sleepAndDailyRhythms
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Circadian timing and sleep states influence subsequent cognitive functioning, distinct from clinical sleep diagnosis.
+Methodological description: Circadian timing and sleep states influence subsequent cognitive functioning, distinct from clinical sleep diagnosis.
+User-friendly description: Discover how daily biological rhythms and sleep affect mental performance.
 
 ##### Circadian Timing
 
+Slug: circadianTiming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate internal rhythms, environmental light, and daily changes in alertness.
+Methodological description: Relate internal rhythms, environmental light, and daily changes in alertness.
+User-friendly description: Connect light and internal rhythms with daily changes in alertness.
 
 ##### Sleep Stages
 
+Slug: sleepStages
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate REM and non-REM sleep in terms of characteristic patterns without attributing a single exclusive purpose to each.
+Methodological description: Differentiate REM and non-REM sleep in terms of characteristic patterns without attributing a single exclusive purpose to each.
+User-friendly description: Distinguish REM from non-REM sleep without assigning exclusive functions.
 
 ##### Sleep and Memory
 
+Slug: sleepAndMemory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate how sleep can support stabilization and reorganization of learned information.
+Methodological description: Evaluate how sleep can support stabilization and reorganization of learned information.
+User-friendly description: Understand how sleep can help stabilize and reorganize learned information.
 
 ##### Sleep Deprivation Effects
 
+Slug: sleepDeprivationEffects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify psychological consequences of insufficient sleep for attention, mood, and judgment.
+Methodological description: Identify psychological consequences of insufficient sleep for attention, mood, and judgment.
+User-friendly description: Recognize how insufficient sleep can affect focus, mood and judgment.
 
 ### Learning and Behavior Change
 
