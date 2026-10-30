@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { denominations_Skills_Ids } from './index.ids';
 
 export const compareAmounts_Skill_Data = buildSkillConfig({
-  id: denominations_Skills_Ids.compareAmounts,
+  id: '6ac377cf-4d67-4ef4-bdc7-4bb8a0895e81',
   name: {
     en: "Comparing money amounts",
     lt: "Pinigų sumų palyginimas",
