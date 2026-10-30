@@ -1265,773 +1265,1373 @@ User-friendly description: Design a smooth or expressive change from one animate
 
 ### Music Theory and Listening
 
+Slug: musicTheoryAndListening
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
-Musical listening distinguishes acoustic character and patterned relationships among events. Theoretical models vary across traditions and are not confined to Western staff notation.
+Methodological description: Musical listening distinguishes acoustic character and patterned relationships among events. Theoretical models vary across traditions and are not confined to Western staff notation.
+User-friendly description: Explore how music creates patterns of sound, rhythm, melody and form across different traditions.
 
 #### Musical Sound and Texture
 
+Slug: musicalSoundAndTexture
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Timbre, sound sources and simultaneous parts provide perceptual distinctions beyond the height or intensity of a note.
+Methodological description: Timbre, sound sources and simultaneous parts provide perceptual distinctions beyond the height or intensity of a note.
+User-friendly description: Discover the sounds and layers that make musical performances recognizable.
 
 ##### Distinguish Pitch from Loudness
 
+Slug: distinguishPitchFromLoudness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify perceived note height separately from sound intensity rather than conflating them.
+Methodological description: Identify perceived note height separately from sound intensity rather than conflating them.
+User-friendly description: Tell whether a sound is high or low without confusing it with loudness.
 
 ##### Identify Musical Timbre
 
+Slug: identifyMusicalTimbre
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the character of a sound independently of its pitch or volume.
+Methodological description: Recognize the character of a sound independently of its pitch or volume.
+User-friendly description: Recognize the unique sound qualities of different voices and instruments.
 
 ##### Classify Musical Instruments
 
+Slug: classifyMusicalInstruments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use a named system of sound-source families while recognizing alternative cultural classifications.
+Methodological description: Use a named system of sound-source families while recognizing alternative cultural classifications.
+User-friendly description: Group instruments by how they produce sound, while respecting different traditions.
 
 ##### Identify Musical Texture
 
+Slug: identifyMusicalTexture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish solo, unison, accompaniment and simultaneous independent lines by listening.
+Methodological description: Distinguish solo, unison, accompaniment and simultaneous independent lines by listening.
+User-friendly description: Hear when music has one line, shared notes or several parts together.
 
 ##### Follow Musical Phrases
 
+Slug: followMusicalPhrases
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Perceive the beginnings, continuations and closures of recognizable musical ideas.
+Methodological description: Perceive the beginnings, continuations and closures of recognizable musical ideas.
+User-friendly description: Follow where a musical idea starts, develops and comes to a close.
 
 #### Pulse and Rhythm
 
+Slug: pulseAndRhythm
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-A steady temporal reference can coexist with differing performed durations, accents and layered rhythmic cycles.
+Methodological description: A steady temporal reference can coexist with differing performed durations, accents and layered rhythmic cycles.
+User-friendly description: Explore how a steady pulse supports different rhythmic patterns.
 
 ##### Maintain a Steady Beat
 
+Slug: maintainASteadyBeat
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Preserve an underlying pulse independently of changing performed rhythmic patterns.
+Methodological description: Preserve an underlying pulse independently of changing performed rhythmic patterns.
+User-friendly description: Keep a steady beat even when the music's rhythm changes.
 
 ##### Reproduce a Rhythmic Pattern
 
+Slug: reproduceARhythmicPattern
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent an ordered arrangement of relative durations, onsets and rests.
+Methodological description: Represent an ordered arrangement of relative durations, onsets and rests.
+User-friendly description: Clap, tap or play a sequence of note lengths and rests.
 
 ##### Interpret Musical Meter
 
+Slug: interpretMusicalMeter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate recurring metric emphasis to the organization of beats or measures.
+Methodological description: Relate recurring metric emphasis to the organization of beats or measures.
+User-friendly description: Hear how repeating strong and weak beats organize a musical pattern.
 
 ##### Perform Syncopation
 
+Slug: performSyncopation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Place rhythmic emphasis against expected strong beats while preserving metric orientation.
+Methodological description: Place rhythmic emphasis against expected strong beats while preserving metric orientation.
+User-friendly description: Emphasize unexpected beats while keeping the underlying pulse.
 
 ##### Use Polyrhythm
 
+Slug: usePolyrhythm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate different simultaneous rhythmic cycles as a deliberate musical relationship.
+Methodological description: Coordinate different simultaneous rhythmic cycles as a deliberate musical relationship.
+User-friendly description: Combine different rhythmic patterns that happen at the same time.
 
 #### Pitch and Melody
 
+Slug: pitchAndMelody
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Melodic patterns rely on relative pitch motion, intervals and a selected pitch collection.
+Methodological description: Melodic patterns rely on relative pitch motion, intervals and a selected pitch collection.
+User-friendly description: Explore how notes move and combine to make melodies.
 
 ##### Recognize Melodic Contour
 
+Slug: recognizeMelodicContour
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace rising, falling and repeated pitches across an audible musical phrase.
+Methodological description: Trace rising, falling and repeated pitches across an audible musical phrase.
+User-friendly description: Hear whether a melody rises, falls or stays on the same note.
 
 ##### Distinguish Musical Intervals
 
+Slug: distinguishMusicalIntervals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare distances between pitches in melodic or simultaneous relationships.
+Methodological description: Compare distances between pitches in melodic or simultaneous relationships.
+User-friendly description: Compare how far apart two musical notes sound.
 
 ##### Use Musical Scales
 
+Slug: useMusicalScales
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize a pitch collection within a specified tonal, modal or other musical system.
+Methodological description: Organize a pitch collection within a specified tonal, modal or other musical system.
+User-friendly description: Use a chosen set of notes to create musical patterns.
 
 ##### Compose a Melody
 
+Slug: composeAMelody
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange pitch and duration into an intentional and recognizable musical idea.
+Methodological description: Arrange pitch and duration into an intentional and recognizable musical idea.
+User-friendly description: Make a tune by choosing how notes and rhythms fit together.
 
 ##### Read Pitch Notation
 
+Slug: readPitchNotation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Decode pitch relationships in an identified notation system without making it globally universal.
+Methodological description: Decode pitch relationships in an identified notation system without making it globally universal.
+User-friendly description: Read note pitches using a particular musical notation system.
 
 #### Harmony and Musical Form
+
+Slug: harmonyAndMusicalForm
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Vertical sonorities and large-scale repetition create musical expectation within a chosen tradition.
+Methodological description: Vertical sonorities and large-scale repetition create musical expectation within a chosen tradition.
+User-friendly description: Discover how groups of notes and repeated sections shape a piece of music.
 
 ##### Interpret Consonance and Dissonance
 
+Slug: interpretConsonanceAndDissonance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain perceived stability or tension with reference to style and musical context.
+Methodological description: Explain perceived stability or tension with reference to style and musical context.
+User-friendly description: Hear how musical tension and rest depend on the style and context.
 
 ##### Construct a Musical Chord
 
+Slug: constructAMusicalChord
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine pitches into an intended harmonic sonority under a given tuning or harmonic system.
+Methodological description: Combine pitches into an intended harmonic sonority under a given tuning or harmonic system.
+User-friendly description: Combine notes to make a chord with a chosen musical sound.
 
 ##### Recognize Harmonic Progressions
 
+Slug: recognizeHarmonicProgressions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace changes of harmonic support and their contribution to musical direction.
+Methodological description: Trace changes of harmonic support and their contribution to musical direction.
+User-friendly description: Follow how changing chords help music move forward.
 
 ##### Identify Musical Motifs
 
+Slug: identifyMusicalMotifs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a short characteristic idea that recurs or changes across a work.
+Methodological description: Recognize a short characteristic idea that recurs or changes across a work.
+User-friendly description: Recognize a short musical idea when it returns in different forms.
 
 ##### Analyze Musical Form
 
+Slug: analyzeMusicalForm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain repetition, contrast and development within a work's sectional organization.
+Methodological description: Explain repetition, contrast and development within a work's sectional organization.
+User-friendly description: Find repetition, contrast and development in the structure of a piece.
 
 ### Music Making and Production
+
+Slug: musicMakingAndProduction
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 21
 
 [Not implemented](#)
 
-Expressive music-making includes voice, instruments, improvisation, arrangement, and manipulation of recorded sounds. The use of electronic tools does not convert a musical outcome into an Informatics Skill.
+Methodological description: Expressive music-making includes voice, instruments, improvisation, arrangement, and manipulation of recorded sounds. The use of electronic tools does not convert a musical outcome into an Informatics Skill.
+User-friendly description: Make expressive music with your voice, instruments, improvisation and recorded sounds.
 
 #### Voice and Body Percussion
 
+Slug: voiceAndBodyPercussion
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Vocal articulation, breath and deliberate bodily sounds allow melodic and rhythmic performance without external instruments.
+Methodological description: Vocal articulation, breath and deliberate bodily sounds allow melodic and rhythmic performance without external instruments.
+User-friendly description: Create melodies and rhythms using singing and sounds made with your body.
 
 ##### Control Sung Pitch
 
+Slug: controlSungPitch
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match and intentionally change notes while preserving the chosen melodic relationships.
+Methodological description: Match and intentionally change notes while preserving the chosen melodic relationships.
+User-friendly description: Sing notes at the intended pitch and move between them deliberately.
 
 ##### Phrase a Vocal Performance
 
+Slug: phraseAVocalPerformance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate breath, articulation and timing across a musical phrase.
+Methodological description: Coordinate breath, articulation and timing across a musical phrase.
+User-friendly description: Shape a sung phrase through breathing, clear words and timing.
 
 ##### Perform Body Percussion
 
+Slug: performBodyPercussion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize sounds made by clapping, stepping or tapping the body into a rhythmic line.
+Methodological description: Organize sounds made by clapping, stepping or tapping the body into a rhythmic line.
+User-friendly description: Build rhythms by clapping, stepping, tapping or using other body sounds.
 
 ##### Perform Beatboxing
 
+Slug: performBeatboxing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine vocal percussion techniques into intelligible rhythmic grooves.
+Methodological description: Combine vocal percussion techniques into intelligible rhythmic grooves.
+User-friendly description: Make a rhythmic groove with controlled vocal percussion sounds.
 
 ##### Sing Vocal Harmony
 
+Slug: singVocalHarmony
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Maintain an independent pitch part in relation to other simultaneous voices.
+Methodological description: Maintain an independent pitch part in relation to other simultaneous voices.
+User-friendly description: Sing your own harmony part while other voices sound at the same time.
 
 #### Instrument and Ensemble Performance
 
+Slug: instrumentAndEnsemblePerformance
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Sound production and responsiveness to fellow performers support coherent realization of musical ideas.
+Methodological description: Sound production and responsiveness to fellow performers support coherent realization of musical ideas.
+User-friendly description: Develop musical expression through instrument technique and playing together.
 
 ##### Produce Instrumental Tone
 
+Slug: produceInstrumentalTone
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control instrument-appropriate technique to shape a chosen quality of sound.
+Methodological description: Control instrument-appropriate technique to shape a chosen quality of sound.
+User-friendly description: Shape the sound of an instrument to suit the music you want to play.
 
 ##### Perform an Instrumental Phrase
 
+Slug: performAnInstrumentalPhrase
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Realize a sequence with intentional articulation, timing and musical expression.
+Methodological description: Realize a sequence with intentional articulation, timing and musical expression.
+User-friendly description: Play a connected musical idea with expressive timing and articulation.
 
 ##### Maintain an Ensemble Part
 
+Slug: maintainAnEnsemblePart
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Sustain a distinct contribution while following shared tempo and structure.
+Methodological description: Sustain a distinct contribution while following shared tempo and structure.
+User-friendly description: Keep your own musical part steady while performing with others.
 
 ##### Respond to Musical Cues
 
+Slug: respondToMusicalCues
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adjust timing, entrances or dynamics in response to conductor or performer signals.
+Methodological description: Adjust timing, entrances or dynamics in response to conductor or performer signals.
+User-friendly description: Notice musical signals and respond together at the right moment.
 
 ##### Shape Performance Dynamics
 
+Slug: shapePerformanceDynamics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Vary intensity and articulation to develop a musical gesture.
+Methodological description: Vary intensity and articulation to develop a musical gesture.
+User-friendly description: Use changes in volume and articulation to make a performance expressive.
 
 #### Composition and Improvisation
+
+Slug: compositionAndImprovisation
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Generating new musical phrases, forming completed pieces and arranging existing material require distinct authorial choices.
+Methodological description: Generating new musical phrases, forming completed pieces and arranging existing material require distinct authorial choices.
+User-friendly description: Invent, combine and organize musical ideas into complete pieces.
 
 ##### Improvise a Rhythm
 
+Slug: improviseARhythm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Invent a coherent rhythmic phrase in real time against a chosen pulse.
+Methodological description: Invent a coherent rhythmic phrase in real time against a chosen pulse.
+User-friendly description: Make up a rhythmic idea as you play along with a steady beat.
 
 ##### Improvise a Melody
 
+Slug: improviseAMelody
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Produce new pitch patterns in real time within an established musical context.
+Methodological description: Produce new pitch patterns in real time within an established musical context.
+User-friendly description: Invent a melody in the moment while following a musical setting.
 
 ##### Compose a Rhythmic Groove
 
+Slug: composeARhythmicGroove
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine complementary patterns of accents, rests and onsets into a recurring foundation.
+Methodological description: Combine complementary patterns of accents, rests and onsets into a recurring foundation.
+User-friendly description: Combine repeating rhythms into a groove with complementary parts.
 
 ##### Compose a Musical Piece
 
+Slug: composeAMusicalPiece
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize musical ideas through development, contrast and a deliberate sense of closure.
+Methodological description: Organize musical ideas through development, contrast and a deliberate sense of closure.
+User-friendly description: Develop musical ideas into a piece with contrast and a satisfying ending.
 
 ##### Arrange Music for an Ensemble
 
+Slug: arrangeMusicForAnEnsemble
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Redistribute musical roles among instruments or voices for a selected expressive result.
+Methodological description: Redistribute musical roles among instruments or voices for a selected expressive result.
+User-friendly description: Adapt existing music for a chosen group of instruments or singers.
 
 #### Sampling and Electronic Music
+
+Slug: samplingAndElectronicMusic
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Sequencers, drum machines and recorded excerpts are instruments for musical organization, not programming subjects in their own right.
+Methodological description: Sequencers, drum machines and recorded excerpts are instruments for musical organization, not programming subjects in their own right.
+User-friendly description: Use recordings and electronic tools to create and organize musical sounds.
 
 ##### Record a Musical Sample
 
+Slug: recordAMusicalSample
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Capture an intentional sonic excerpt for subsequent creative use with appropriate source awareness.
+Methodological description: Capture an intentional sonic excerpt for subsequent creative use with appropriate source awareness.
+User-friendly description: Capture a sound that you can use creatively in your music.
 
 ##### Edit a Musical Sample
 
+Slug: editAMusicalSample
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trim or reshape captured sound to meet a rhythmic or expressive aim.
+Methodological description: Trim or reshape captured sound to meet a rhythmic or expressive aim.
+User-friendly description: Cut or reshape a recorded sound to fit your musical idea.
 
 ##### Program Drum-Machine Patterns
 
+Slug: programDrumMachinePatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Place percussion events into time positions to produce a repeatable beat.
+Methodological description: Place percussion events into time positions to produce a repeatable beat.
+User-friendly description: Place drum sounds on a time grid to make a repeating beat.
 
 ##### Layer Electronic Rhythms
 
+Slug: layerElectronicRhythms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate different percussive sound roles into a structured electronic groove.
+Methodological description: Coordinate different percussive sound roles into a structured electronic groove.
+User-friendly description: Combine different electronic percussion parts into one groove.
 
 ##### Arrange Music in a Sequencer
 
+Slug: arrangeMusicInASequencer
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize sound parts over time into sections, transitions and variations.
+Methodological description: Organize sound parts over time into sections, transitions and variations.
+User-friendly description: Arrange recorded or electronic musical parts into sections over time.
 
 ##### Balance a Music Mix
 
+Slug: balanceAMusicMix
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adjust relative levels and spatial placement so the intended relationships remain audible.
+Methodological description: Adjust relative levels and spatial placement so the intended relationships remain audible.
+User-friendly description: Adjust the balance of sounds so important musical parts can be heard.
 
 ### Theatre and Dramatic Arts
+
+Slug: theatreAndDramaticArts
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Theatre creates meaning through embodied roles, dramatic situations, live collaboration and staging. Its practical focus differs from general literary theory or building stage machinery.
+Methodological description: Theatre creates meaning through embodied roles, dramatic situations, live collaboration and staging. Its practical focus differs from general literary theory or building stage machinery.
+User-friendly description: Explore how actors, stories, staging and collaboration bring live drama to life.
 
 #### Acting
+
+Slug: acting
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-A character's objectives and relationships are expressed through controlled physical, vocal and responsive choices.
+Methodological description: A character's objectives and relationships are expressed through controlled physical, vocal and responsive choices.
+User-friendly description: Use your body, voice and responses to make a character believable.
 
 ##### Establish a Character Objective
 
+Slug: establishACharacterObjective
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify what a performed figure wants in a given scene and how that guides actions.
+Methodological description: Identify what a performed figure wants in a given scene and how that guides actions.
+User-friendly description: Decide what a character wants and how that affects their actions.
 
 ##### Express Character Through Gesture
 
+Slug: expressCharacterThroughGesture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use deliberate posture and movement to convey a role's intention or circumstances.
+Methodological description: Use deliberate posture and movement to convey a role's intention or circumstances.
+User-friendly description: Use posture and gestures to show what a character feels or intends.
 
 ##### Use Expressive Stage Voice
 
+Slug: useExpressiveStageVoice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adjust articulation, projection and quality to communicate dramatic meaning.
+Methodological description: Adjust articulation, projection and quality to communicate dramatic meaning.
+User-friendly description: Speak on stage with clear, expressive projection and tone.
 
 ##### Perform Dramatic Interaction
 
+Slug: performDramaticInteraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Respond consistently to another actor within the agreed fictional circumstances.
+Methodological description: Respond consistently to another actor within the agreed fictional circumstances.
+User-friendly description: Respond to other performers while staying within the scene's imagined world.
 
 ##### Maintain Stage Presence
 
+Slug: maintainStagePresence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Sustain expressive focus and character continuity throughout a performance.
+Methodological description: Sustain expressive focus and character continuity throughout a performance.
+User-friendly description: Keep your attention and character consistent throughout a performance.
 
 #### Improvisation and Devising
 
+Slug: improvisationAndDevising
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Co-created drama develops from shared offers, emergent situations and meaningful conflict rather than only a finished script.
+Methodological description: Co-created drama develops from shared offers, emergent situations and meaningful conflict rather than only a finished script.
+User-friendly description: Create theatre together by inventing situations, actions and conflicts.
 
 ##### Improvise a Dramatic Scene
 
+Slug: improviseADramaticScene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Develop actions consistent with a given premise and new information from performers.
+Methodological description: Develop actions consistent with a given premise and new information from performers.
+User-friendly description: Invent a scene while responding to new ideas from fellow performers.
 
 ##### Develop Dramatic Offers
 
+Slug: developDramaticOffers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Build on another performer's contribution while preserving the shared imaginary situation.
+Methodological description: Build on another performer's contribution while preserving the shared imaginary situation.
+User-friendly description: Build on another actor's ideas to keep a shared scene moving.
 
 ##### Create Dramatic Conflict
 
+Slug: createDramaticConflict
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Establish competing objectives that generate meaningful action.
+Methodological description: Establish competing objectives that generate meaningful action.
+User-friendly description: Create tension between characters who want different things.
 
 ##### Devise a Scene Collaboratively
 
+Slug: deviseASceneCollaboratively
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assemble contributions into a coherent performable dramatic episode.
+Methodological description: Assemble contributions into a coherent performable dramatic episode.
+User-friendly description: Work with others to shape ideas into a scene that can be performed.
 
 #### Dramaturgy and Direction
 
+Slug: dramaturgyAndDirection
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Interpreting dramatic structure and organizing performers in space makes a chosen reading performable.
+Methodological description: Interpreting dramatic structure and organizing performers in space makes a chosen reading performable.
+User-friendly description: Explore how a dramatic story is structured and brought to the stage.
 
 ##### Analyze Dramatic Structure
 
+Slug: analyzeDramaticStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify changes in circumstance, turning points and their contributions to a scene's development.
+Methodological description: Identify changes in circumstance, turning points and their contributions to a scene's development.
+User-friendly description: Find the moments that change a scene's direction or meaning.
 
 ##### Interpret Stage Directions
 
+Slug: interpretStageDirections
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Turn indications of movement or delivery into plausible dramatic action.
+Methodological description: Turn indications of movement or delivery into plausible dramatic action.
+User-friendly description: Turn written stage instructions into purposeful actions.
 
 ##### Block a Stage Scene
 
+Slug: blockAStageScene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize performers' positions and movements in relation to the audience and dramatic focus.
+Methodological description: Organize performers' positions and movements in relation to the audience and dramatic focus.
+User-friendly description: Plan where actors stand and move so the scene is clear to the audience.
 
 ##### Direct a Scene
 
+Slug: directAScene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate actors' interpretive choices toward a legible dramatic intention.
+Methodological description: Coordinate actors' interpretive choices toward a legible dramatic intention.
+User-friendly description: Guide performers' choices to communicate a shared dramatic idea.
 
 #### Stage Expression and Puppetry
+
+Slug: stageExpressionAndPuppetry
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Scenery, costumes, light and animated objects carry expressive functions in a performance beyond decoration.
+Methodological description: Scenery, costumes, light and animated objects carry expressive functions in a performance beyond decoration.
+User-friendly description: Use sets, clothing, light and puppets to express meaning on stage.
 
 ##### Design Scenic Atmosphere
 
+Slug: designScenicAtmosphere
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate setting details, spatial arrangement and visual character to a dramatic situation.
+Methodological description: Relate setting details, spatial arrangement and visual character to a dramatic situation.
+User-friendly description: Choose stage details that help establish the mood and setting.
 
 ##### Design Character Costume
 
+Slug: designCharacterCostume
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use clothing form and visual cues to communicate role, time or transformation.
+Methodological description: Use clothing form and visual cues to communicate role, time or transformation.
+User-friendly description: Design clothing that reveals a character's role or transformation.
 
 ##### Design Stage Lighting
 
+Slug: designStageLighting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use light placement, intensity and color to focus attention or express mood.
+Methodological description: Use light placement, intensity and color to focus attention or express mood.
+User-friendly description: Use stage lighting to direct attention and create atmosphere.
 
 ##### Animate a Puppet
 
+Slug: animateAPuppet
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control an object's timing, direction and gestures so audiences perceive dramatic agency.
+Methodological description: Control an object's timing, direction and gestures so audiences perceive dramatic agency.
+User-friendly description: Bring a puppet to life through carefully timed and directed movements.
 
 ### Dance and Choreography
+
+Slug: danceAndChoreography
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 15
 
 [Not implemented](#)
 
-Dance organizes bodily movement as expressive and culturally situated form. Its aim is choreographic communication rather than athletic conditioning.
+Methodological description: Dance organizes bodily movement as expressive and culturally situated form. Its aim is choreographic communication rather than athletic conditioning.
+User-friendly description: Explore how expressive movement, movement patterns and cultural traditions create dance.
 
 #### Movement Language
 
+Slug: movementLanguage
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Bodily alignment, energy, pathways and temporal decisions distinguish expressive movement from simply moving between points.
+Methodological description: Bodily alignment, energy, pathways and temporal decisions distinguish expressive movement from simply moving between points.
+User-friendly description: Use body position, energy, space and time to shape expressive movement.
 
 ##### Control Movement Alignment
 
+Slug: controlMovementAlignment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate body parts to create an intentional line and quality of movement in a dance form.
+Methodological description: Coordinate body parts to create an intentional line and quality of movement in a dance form.
+User-friendly description: Position your body parts deliberately to create clear dance lines.
 
 ##### Vary Movement Dynamics
 
+Slug: varyMovementDynamics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Change weight, force, continuity or sharpness to express different qualities.
+Methodological description: Change weight, force, continuity or sharpness to express different qualities.
+User-friendly description: Change the force, weight and flow of movement to express different qualities.
 
 ##### Use Spatial Levels
 
+Slug: useSpatialLevels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Move deliberately among high, middle and low positions and spatial pathways.
+Methodological description: Move deliberately among high, middle and low positions and spatial pathways.
+User-friendly description: Move through high, middle and low positions with intention.
 
 ##### Coordinate Dance with Pulse
 
+Slug: coordinateDanceWithPulse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate bodily movement to a chosen rhythmic reference while preserving movement intent.
+Methodological description: Relate bodily movement to a chosen rhythmic reference while preserving movement intent.
+User-friendly description: Connect your movements with a musical beat without losing their expression.
 
 ##### Perform a Dance Phrase
 
+Slug: performADancePhrase
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect movements into a coherent phrase with expressive continuity.
+Methodological description: Connect movements into a coherent phrase with expressive continuity.
+User-friendly description: Join movements into a phrase that feels connected and purposeful.
 
 #### Choreography
 
+Slug: choreography
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Movement motifs and their transformations create deliberate time-space relationships among dancers.
+Methodological description: Movement motifs and their transformations create deliberate time-space relationships among dancers.
+User-friendly description: Create and transform movement phrases to make a complete dance.
 
 ##### Create a Movement Motif
 
+Slug: createAMovementMotif
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Develop a short distinctive sequence suitable for reuse or transformation.
+Methodological description: Develop a short distinctive sequence suitable for reuse or transformation.
+User-friendly description: Invent a short, recognizable sequence of dance movements.
 
 ##### Vary a Movement Motif
 
+Slug: varyAMovementMotif
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Transform a recognizable phrase through timing, scale, direction or body-part choices.
+Methodological description: Transform a recognizable phrase through timing, scale, direction or body-part choices.
+User-friendly description: Change a movement idea through direction, size, speed or body position.
 
 ##### Structure a Dance Composition
 
+Slug: structureADanceComposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine phrases through development, repetition and contrast across a complete work.
+Methodological description: Combine phrases through development, repetition and contrast across a complete work.
+User-friendly description: Arrange dance phrases using repetition, contrast and development.
 
 ##### Design Dance Formations
 
+Slug: designDanceFormations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate dancers' positions and changing distances to establish purposeful spatial patterns.
+Methodological description: Coordinate dancers' positions and changing distances to establish purposeful spatial patterns.
+User-friendly description: Plan how dancers move together and form patterns in space.
 
 ##### Choreograph to Music
 
+Slug: choreographToMusic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate movement phrases to music's accents, rhythms or structural contrasts.
+Methodological description: Relate movement phrases to music's accents, rhythms or structural contrasts.
+User-friendly description: Match movements to musical rhythms, accents and changes.
 
 #### Traditions and Interpretation
+
+Slug: traditionsAndInterpretation
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Dance forms have social and historical purposes that must be understood on their own cultural terms.
+Methodological description: Dance forms have social and historical purposes that must be understood on their own cultural terms.
+User-friendly description: Explore the meaning and cultural context of different dance traditions.
 
 ##### Distinguish Dance Genres
 
+Slug: distinguishDanceGenres
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify conventions of specific social, folk, concert or contemporary dance forms.
+Methodological description: Identify conventions of specific social, folk, concert or contemporary dance forms.
+User-friendly description: Recognize how different dance styles use movement and social conventions.
 
 ##### Interpret Expressive Movement
 
+Slug: interpretExpressiveMovement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Support a reading of movement choices using dynamics, space and phrasing.
+Methodological description: Support a reading of movement choices using dynamics, space and phrasing.
+User-friendly description: Use movement details to explain what a dance may express.
 
 ##### Analyze Dance in Cultural Context
 
+Slug: analyzeDanceInCulturalContext
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect a particular dance's forms to its community, occasion and transmission.
+Methodological description: Connect a particular dance's forms to its community, occasion and transmission.
+User-friendly description: Explore how a dance relates to its community and occasion.
 
 ##### Adapt Traditional Movement Responsibly
 
+Slug: adaptTraditionalMovementResponsibly
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Transform source material with attention to permission, context and attribution.
+Methodological description: Transform source material with attention to permission, context and attribution.
+User-friendly description: Rework traditional movements while respecting their sources and meanings.
 
 ##### Evaluate Dance Performance
 
+Slug: evaluateDancePerformance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess a work through stated expressive and technical criteria rather than preference alone.
+Methodological description: Assess a work through stated expressive and technical criteria rather than preference alone.
+User-friendly description: Discuss a dance performance using clear artistic and technical criteria.
 
 ### Design and Visual Communication
+
+Slug: designAndVisualCommunication
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 22
 
 [Not implemented](#)
 
-Design communicates through typography, symbols, layout, applied graphics and wearable forms. In clothing, artistic choices also concern silhouette, fabric behavior and the body; industrial manufacturing and commercial strategy remain outside this domain.
+Methodological description: Design communicates through typography, symbols, layout, applied graphics and wearable forms. In clothing, artistic choices also concern silhouette, fabric behavior and the body; industrial manufacturing and commercial strategy remain outside this domain.
+User-friendly description: Use shapes, words, images and materials to communicate ideas through design.
 
 #### Typography and Layout
 
+Slug: typographyAndLayout
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Text legibility, typographic tone and systematic spatial organization shape how designed information is read.
+Methodological description: Text legibility, typographic tone and systematic spatial organization shape how designed information is read.
+User-friendly description: Make written information clear and expressive through type and layout.
 
 ##### Select a Typeface
 
+Slug: selectATypeface
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match letterform characteristics to the purpose, tone and audience of communication.
+Methodological description: Match letterform characteristics to the purpose, tone and audience of communication.
+User-friendly description: Choose letter styles that fit the message and its intended readers.
 
 ##### Establish Typographic Hierarchy
 
+Slug: establishTypographicHierarchy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish levels of information through relative scale, weight and spacing.
+Methodological description: Distinguish levels of information through relative scale, weight and spacing.
+User-friendly description: Use size, weight and spacing to show which information matters most.
 
 ##### Apply a Layout Grid
 
+Slug: applyALayoutGrid
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize content with deliberate alignments and a consistent spatial framework.
+Methodological description: Organize content with deliberate alignments and a consistent spatial framework.
+User-friendly description: Arrange text and images using a consistent grid.
 
 ##### Design Readable Text
 
+Slug: designReadableText
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Balance contrast, spacing and line length for legible visual communication.
+Methodological description: Balance contrast, spacing and line length for legible visual communication.
+User-friendly description: Make text easy to read through suitable contrast, spacing and line lengths.
 
 #### Graphic Identity
 
+Slug: graphicIdentity
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Distinctive visual signs and consistent combinations establish recognizable communication across formats.
+Methodological description: Distinctive visual signs and consistent combinations establish recognizable communication across formats.
+User-friendly description: Build recognizable visual identities using connected graphic choices.
 
 ##### Design a Graphic Symbol
 
+Slug: designAGraphicSymbol
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Condense an idea into a distinctive sign appropriate to its intended context.
+Methodological description: Condense an idea into a distinctive sign appropriate to its intended context.
+User-friendly description: Create a simple symbol that communicates a particular idea.
 
 ##### Build a Visual Identity
 
+Slug: buildAVisualIdentity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate type, color and form into a consistent set of related expressions.
+Methodological description: Coordinate type, color and form into a consistent set of related expressions.
+User-friendly description: Combine colors, lettering and shapes into a consistent visual identity.
 
 ##### Design a Poster
 
+Slug: designAPoster
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize image, headline and details around a clear primary message.
+Methodological description: Organize image, headline and details around a clear primary message.
+User-friendly description: Design a poster that makes its main message clear at a glance.
 
 ##### Adapt Graphics Across Formats
 
+Slug: adaptGraphicsAcrossFormats
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Retain communicative priority when moving a design between sizes or media.
+Methodological description: Retain communicative priority when moving a design between sizes or media.
+User-friendly description: Adapt a visual design for different sizes without losing its message.
 
 #### Applied Graphics
+
+Slug: appliedGraphics
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Packaging, editorial designs and pictograms require visual decisions constrained by surfaces or public information.
+Methodological description: Packaging, editorial designs and pictograms require visual decisions constrained by surfaces or public information.
+User-friendly description: Design graphics for packages, publications and public information.
 
 ##### Design Packaging Graphics
 
+Slug: designPackagingGraphics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange images and information on a package so visual hierarchy remains intelligible.
+Methodological description: Arrange images and information on a package so visual hierarchy remains intelligible.
+User-friendly description: Place graphics and information on packaging in a clear visual order.
 
 ##### Design an Editorial Spread
 
+Slug: designAnEditorialSpread
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate text, image and whitespace across a composed reading surface.
+Methodological description: Relate text, image and whitespace across a composed reading surface.
+User-friendly description: Arrange words, pictures and empty space across pages or a spread.
 
 ##### Design a Pictogram Family
 
+Slug: designAPictogramFamily
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create related signs that are both mutually consistent and distinguishable.
+Methodological description: Create related signs that are both mutually consistent and distinguishable.
+User-friendly description: Design a family of signs that look related but remain easy to tell apart.
 
 ##### Check Visual Accessibility
 
+Slug: checkVisualAccessibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Revise barriers arising from low contrast, inappropriate text scale or color-only distinctions.
+Methodological description: Revise barriers arising from low contrast, inappropriate text scale or color-only distinctions.
+User-friendly description: Spot and fix visual barriers such as weak contrast or color-only cues.
 
 #### Fashion and Apparel Design
+
+Slug: fashionAndApparelDesign
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Garment design applies artistic decisions to forms worn on the body. Silhouette, material behavior, construction planning and coordinated collections distinguish this practice from textile-surface ornament and theatre-specific costume design.
+Methodological description: Garment design applies artistic decisions to forms worn on the body. Silhouette, material behavior, construction planning and coordinated collections distinguish this practice from textile-surface ornament and theatre-specific costume design.
+User-friendly description: Explore how garment shape, fabric and detail turn a fashion idea into clothing.
 
 ##### Design Garment Silhouettes
 
+Slug: designGarmentSilhouettes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Develop a clothing form through deliberate decisions about outline, volume and proportion in relation to the moving human body.
+Methodological description: Develop a clothing form through deliberate decisions about outline, volume and proportion in relation to the moving human body.
+User-friendly description: Shape a garment's outline and volume around a moving body.
 
 ##### Select Textiles for Garments
 
+Slug: selectTextilesForGarments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose fabric properties such as weight, drape, texture and opacity to serve a particular garment form and expressive intention.
+Methodological description: Choose fabric properties such as weight, drape, texture and opacity to serve a particular garment form and expressive intention.
+User-friendly description: Choose fabrics whose weight, texture and drape fit a garment design.
 
 ##### Draft Garment Patterns
 
+Slug: draftGarmentPatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Translate a proposed three-dimensional clothing form into two-dimensional pattern pieces whose shapes and joins produce the intended fit and volume.
+Methodological description: Translate a proposed three-dimensional clothing form into two-dimensional pattern pieces whose shapes and joins produce the intended fit and volume.
+User-friendly description: Turn a clothing concept into pattern pieces that can be assembled.
 
 ##### Drape Fabric on a Form
 
+Slug: drapeFabricOnAForm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Shape and arrange fabric directly on a body or dress form to explore volume, folds and construction relationships in three dimensions.
+Methodological description: Shape and arrange fabric directly on a body or dress form to explore volume, folds and construction relationships in three dimensions.
+User-friendly description: Arrange fabric on a body or form to explore folds, fit and volume.
 
 ##### Design Garment Surface Details
 
+Slug: designGarmentSurfaceDetails
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Place trims, motifs or decorative features in relation to garment shape, seams and movement rather than designing an isolated textile repeat.
+Methodological description: Place trims, motifs or decorative features in relation to garment shape, seams and movement rather than designing an isolated textile repeat.
+User-friendly description: Place decorative details where they work with a garment's shape and movement.
 
 ##### Develop a Fashion Collection
 
+Slug: developAFashionCollection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create a coherent series of garment designs that explores a shared expressive concept through intentional variations of silhouette, material or detail.
+Methodological description: Create a coherent series of garment designs that explores a shared expressive concept through intentional variations of silhouette, material or detail.
+User-friendly description: Design a related series of outfits with thoughtful differences.
 
 #### Information Design
+
+Slug: informationDesign
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Visualization makes relationships understandable through disciplined selection of visual encodings.
+Methodological description: Visualization makes relationships understandable through disciplined selection of visual encodings.
+User-friendly description: Turn complex information into understandable visual relationships.
 
 ##### Choose a Visual Encoding
 
+Slug: chooseAVisualEncoding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match a category, quantity or relationship to an appropriate graphic representation.
+Methodological description: Match a category, quantity or relationship to an appropriate graphic representation.
+User-friendly description: Choose a visual form that suits the kind of information you want to show.
 
 ##### Design a Visual Diagram
 
+Slug: designAVisualDiagram
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange labeled components and connections to clarify a process or structure.
+Methodological description: Arrange labeled components and connections to clarify a process or structure.
+User-friendly description: Organize labels, shapes and connections to explain how something works.
 
 ##### Design a Data Graphic
 
+Slug: designADataGraphic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Depict sourced quantities without distorting comparative scale or context.
+Methodological description: Depict sourced quantities without distorting comparative scale or context.
+User-friendly description: Show numerical information clearly without distorting the comparisons.
 
 ##### Detect Misleading Graphics
 
+Slug: detectMisleadingGraphics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify omitted baselines, scale manipulation and decorative choices that bias interpretation.
+Methodological description: Identify omitted baselines, scale manipulation and decorative choices that bias interpretation.
+User-friendly description: Recognize when a graph's scale or design gives a misleading impression.
 
 ### Architecture and Urban Arts
 
