@@ -136,7 +136,6 @@ function parse(markdown) {
   const headings = [...markdown.matchAll(/^(#{3,5}) ([^\r\n]+)\s*$/gm)];
   const entries = [];
   let domain, group;
-  const seen = new Set();
   for (let i = 0; i < headings.length; i++) {
     const h = headings[i];
     const start = h.index, end = headings[i + 1]?.index ?? markdown.length;
@@ -179,12 +178,23 @@ function parse(markdown) {
       if (kind === 'Skill' && lines.some(l => /^Skills:|^Groups:/.test(l))) throw Error('Skill has parent count metadata');
       const parentKey = entry.parent?.key;
       entry.key = parentKey ? parentKey + '/' + entry.slug : entry.slug;
-      if (seen.has(entry.key)) throw Error('Duplicate slug in sibling scope: ' + entry.key);
-      seen.add(entry.key);
     } catch (error) { entry.issues.push(error.message); entry.action ??= 'invalid'; entry.key ??= entry.title; }
     entries.push(entry);
   }
   if (!entries.length) throw Error('No taxonomy entries');
+  // Slugs are globally unique among Domain/Group/Skill records in this textbook.
+  // Check skipped/pending entries too, case-insensitively for filesystem portability.
+  const slugOwners = new Map();
+  for (const e of entries) {
+    if (!slugPattern.test(e.slug ?? '')) continue;
+    const canonicalSlug = e.slug.toLowerCase();
+    const first = slugOwners.get(canonicalSlug);
+    if (first) {
+      const problem = `Duplicate taxonomy slug "${e.slug}" across ${first.key} (${first.kind}) and ${e.key} (${e.kind})`;
+      first.issues.push(problem);
+      e.issues.push(problem);
+    } else slugOwners.set(canonicalSlug, e);
+  }
   for (const e of entries) {
     if (e.kind === 'SkillDomain') e.children = entries.filter(x => x.parent === e);
     if (e.kind === 'SkillGroup') e.children = entries.filter(x => x.parent === e);
@@ -357,13 +367,13 @@ function run() {
     const subtree = entities.filter(e => e.domain === domain);
     const local = new Map();
     try {
+      // Validate before planning writes: nothing in a failed domain is modified.
+      if (subtree.some(e => e.issues.length)) throw Error(subtree.filter(e => e.issues.length).map(e => e.key + ': ' + e.issues.join('; ')).join('; ');
       // Skipping a fully pending subtree does not require fabricated child IDs.
-      if (subtree.every(e => e.action === 'skip' && e.status === 'pending' && e.issues.length === 0)) {
+      if (subtree.every(e => e.action === 'skip' && e.status === 'pending')) {
         skipped += subtree.length;
         continue;
       }
-      // Validate before planning writes: nothing in a failed domain is modified.
-      if (subtree.some(e => e.issues.length)) throw Error(subtree.filter(e => e.issues.length).map(e => e.key + ': ' + e.issues.join('; ')).join('; '));
       for (const e of subtree) {
         const f = entityFiles(e);
         if (!path.resolve(f.file).startsWith(opts.targetRoot + path.sep)) throw Error('Unsafe destination for ' + e.key);
