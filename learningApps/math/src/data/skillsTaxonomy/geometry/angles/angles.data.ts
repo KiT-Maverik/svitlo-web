@@ -35,4 +35,5 @@ export const angles_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Кути",
   },
   skillIds: angles_Skills_Ids,
+  description: { methodological: "Angles as relationships between rays and as measures of turn, with the right angle serving as a reference for classification." },
 });
