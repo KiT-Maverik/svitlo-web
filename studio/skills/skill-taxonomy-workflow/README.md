@@ -27,9 +27,14 @@ For a fully migrated Code taxonomy:
 ```sh
 node scripts/generate-skills-taxonomy.mjs --package learningApps/math
 node scripts/generate-skills-taxonomy.mjs --package learningApps/math --locale uk
+node scripts/generate-skills-taxonomy.mjs --package learningApps/math --locale uk --stdout
+node scripts/generate-skills-taxonomy.mjs --package learningApps/math --locale uk --check
+npm run test:taxonomy-generator
 ```
 
-The generator deliberately **fails** if any Code entity lacks a complete localized name or its required English methodological text, or supplies a partial fe dictionary. Existing Mathematics code is not complete in that sense; do not represent the generator as already succeeding. It statically reads `*.data.ts` objects, without executing arbitrary textbook modules, and derives the display hierarchy from the established source directory convention. Validate the graph/ID relationships separately during promotion and build checks.
+The generator deliberately **fails** if any Code entity lacks a complete localized name or its required English methodological text, or supplies a partial fe dictionary. Mathematics currently contains 13 Domains, 60 Groups and 284 Skills with Code methodological descriptions; these must still undergo the independent editorial promotion gate before removing staging Markdown. It statically reads `*.data.ts` objects, without executing textbook modules, and derives the display hierarchy from the established source directory convention. Validate the full ID/reference graph separately during promotion and build checks.
+
+**Generated-view verification:** `--stdout` prints the complete Markdown without touching disk, suitable for previews and source-to-view comparisons. `--check` compares an existing generated file byte-for-byte with a fresh rendering and exits nonzero on missing/stale output; run the normal command first to create/update the file. These flags are mutually exclusive. Generated documents have Domain/Group/Skill headings, inventory counts, source links, localized titles, English methodology and optional locale-specific `fe`. The regression suite includes a real Mathematics Code → Markdown → parsed-view comparison for every supported language and every entity. It proves field-level reconstruction and deterministic output—not that the original Ukrainian editorial paragraphs are text-identical to English Code, not that translations are semantically perfect, and not that the entire UUID graph has been validated.
 
 ## NO-LOSS RULES
 
@@ -47,4 +52,4 @@ node scripts/import-taxonomy-descriptions.mjs --package learningApps/math --writ
 npm run test:taxonomy-import
 ```
 
-**Math migration boundary:** the existing Ukrainian Mathematics Markdown does **not** yet follow the new labels or contain approved English methodological prose. Do not run `--write` on it until the edited English values have been reviewed and authoritatively inserted into the staging taxonomy. A partly hand-translated Code branch is **not** proof of completed promotion. Generating entirely new entities also requires approved IDs, names in every supported language, and validated parent/child export maps, not descriptions alone.
+**Math migration boundary:** the existing Ukrainian Mathematics staging Markdown still uses legacy unlabeled descriptions; the Code catalog has English methodological descriptions, but staging content has not been pruned or promoted automatically. The strict importer cannot accept these legacy paragraphs as labeled English authoring text. Do not run `--write` on that document without first translating and approving its source records. Code → Markdown generation does not authorize deleting the approved staging catalog. Generating entirely new entities also requires approved IDs, names in every supported language, and validated parent/child export maps, not descriptions alone.
