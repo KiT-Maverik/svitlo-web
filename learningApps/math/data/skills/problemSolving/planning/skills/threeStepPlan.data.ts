@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { planning_Skills_Ids } from './index.ids';
 
 export const threeStepPlan_Skill_Data = buildSkillConfig({
-  id: planning_Skills_Ids.threeStepPlan,
+  id: 'be6ad385-9004-4823-9f89-ef8c6ae2341a',
   name: {
     lt: "Trijų veiksmų uždavinio sprendimas",
     lv: "Trīs darbību uzdevuma risināšana",
