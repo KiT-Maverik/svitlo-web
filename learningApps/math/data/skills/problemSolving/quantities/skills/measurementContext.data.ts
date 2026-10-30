@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { quantities_Skills_Ids } from './index.ids';
 
 export const measurementContext_Skill_Data = buildSkillConfig({
-  id: quantities_Skills_Ids.measurementContext,
+  id: '62d74e18-5c86-4038-b3c0-59f30a201da3',
   name: {
     lt: "Matavimo uždavinių modeliavimas",
     lv: "Mērījumu uzdevumu modelēšana",

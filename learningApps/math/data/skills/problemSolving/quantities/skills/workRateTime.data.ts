@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { quantities_Skills_Ids } from './index.ids';
 
 export const workRateTime_Skill_Data = buildSkillConfig({
-  id: quantities_Skills_Ids.workRateTime,
+  id: '62dbd12e-55c3-40b5-aac4-031dbaee075c',
   name: {
     lt: "Darbo našumo, laiko ir atlikto darbo ryšys",
     lv: "Darba ražīguma, laika un paveiktā darba saistība",
