@@ -1783,489 +1783,864 @@ User-friendly description: Explore the oasis cities that connected ancient trade
 
 ### Середземномор'я
 
+Slug: ancientMediterranean
+Action: create
+Status: pending
+
 Groups: 6 · Skills: 27
 
 [Not implemented](#)
 
-Егейські суспільства, грецькі поліси, елліністичні царства й Рим створили взаємопов'язаний, але неоднорідний середземноморський простір.
+Methodological description: Aegean societies, Greek poleis, Hellenistic kingdoms, and Rome formed an interconnected but heterogeneous Mediterranean world.
+User-friendly description: Explore how different ancient societies shaped the Mediterranean.
 
 #### Егейська бронзова доба
+
+Slug: aegeanBronzeAge
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Острівні та материкові палацові центри відомі через археологію, матеріальний обмін і збережені форми письма.
+Methodological description: Island and mainland palace centers are known through archaeology, material exchange, and surviving writing systems.
+User-friendly description: Discover the palace societies of the Bronze Age Aegean.
 
 ##### Мінойська цивілізація
 
+Slug: minoanCivilization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Палацові осередки Криту, морські зв'язки та межі знання про нерозшифроване лінійне письмо А.
+Methodological description: Examine Cretan palaces and maritime links while acknowledging that Linear A remains undeciphered.
+User-friendly description: Explore ancient Crete and the limits of what its writing reveals.
 
 ##### Мікенська цивілізація
 
+Slug: mycenaeanCivilization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Палацова економіка, фортифіковані центри й лінійне письмо Б як джерело ранньої грецької мови.
+Methodological description: Study palace economies, fortified centers, and Linear B evidence of early Greek.
+User-friendly description: Learn what the Mycenaean palaces and records reveal about early Greeks.
 
 ##### Криза пізньої бронзи
 
+Slug: lateBronzeAgeCollapse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різні наслідки політичних і господарських потрясінь у східному Середземномор'ї, для яких обговорюють кілька причин.
+Methodological description: Evaluate multiple causes and uneven impacts of political and economic disruptions in the eastern Mediterranean.
+User-friendly description: Explore why Bronze Age states changed or collapsed differently.
 
 #### Грецькі поліси
+
+Slug: greekPoleis
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Самоврядні громадянські спільноти відрізнялися формами правління, військовою організацією й складом населення з політичними правами.
+Methodological description: Self-governing citizen communities varied in political institutions, warfare, and who possessed political rights.
+User-friendly description: Compare how different Greek city-states were governed.
 
 ##### Поліс
 
+Slug: greekPolis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зв'язок міської громади, прилеглої території, інститутів і статусу громадян у давньогрецькому світі.
+Methodological description: Relate civic community, surrounding land, institutions, and citizenship in the ancient Greek world.
+User-friendly description: Understand the city-state as a community and political institution.
 
 ##### Афінська демократія
 
+Slug: athenianDemocracy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Участь громадян у зборах та судах з одночасним урахуванням виключення жінок, рабів і метеків із політичного корпусу.
+Methodological description: Study citizens' assemblies and courts while recognizing the political exclusion of women, enslaved people, and metics.
+User-friendly description: Explore who could participate in Athenian democracy and who could not.
 
 ##### Спартанський устрій
 
+Slug: spartanSystem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відмінні політичні й виховні інституції Спарти та роль залежного населення в її господарстві.
+Methodological description: Analyze distinctive Spartan political and educational institutions and dependent labor's role in its economy.
+User-friendly description: Discover how Sparta organized government, training and labor.
 
 ##### Грецька колонізація
 
+Slug: greekColonization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Причини заснування поселень за межами Балкан і взаємини поселенців із місцевими суспільствами.
+Methodological description: Explain settlements beyond the Balkans and varied relationships with local societies.
+User-friendly description: Trace where Greek communities founded settlements and met other peoples.
 
 ##### Греко-перські війни
 
+Slug: grecoPersianWars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ключові конфлікти між державою Ахеменідів та союзами грецьких полісів і зміни балансу сил.
+Methodological description: Trace major conflicts between Achaemenid Persia and coalitions of Greek poleis and changes in regional power.
+User-friendly description: Understand the wars between Greek city-states and Persia.
 
 ##### Пелопоннеська війна
 
+Slug: peloponnesianWar
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Суперництво Афін і Спарти, союзна політика та довготривалі наслідки міжполісних війн.
+Methodological description: Explain rivalry between Athens and Sparta, alliances, and long-term effects of interstate wars.
+User-friendly description: Explore why Athens and Sparta fought and what followed.
 
 #### Культура та інтелектуальні традиції
+
+Slug: greekCultureAndIdeas
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Релігія, філософія та мистецтво грецьких громад мали різні соціальні й регіональні форми та не становили єдиної незмінної культурної моделі.
+Methodological description: Greek religion, philosophy, and art varied across communities and periods rather than forming one fixed culture.
+User-friendly description: Discover the diversity of ancient Greek beliefs, thought and art.
 
 ##### Грецька релігія та міфологія
 
+Slug: greekReligionAndMythology
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Функції міфів, культів, свят і святилищ у житті різних грецьких громад без трактування міфологічних оповідей як літопису.
+Methodological description: Study myths, cults, festivals, and sanctuaries without treating mythological accounts as literal chronicles.
+User-friendly description: Understand how myths and religious practices shaped Greek community life.
 
 ##### Грецька філософія
 
+Slug: greekPhilosophy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формування раціонального дослідження природи, етики та політики у різних античних школах.
+Methodological description: Trace rational inquiry into nature, ethics, and politics across different ancient philosophical schools.
+User-friendly description: Explore questions asked by ancient Greek philosophers.
 
 ##### Давньогрецьке мистецтво
 
+Slug: ancientGreekArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розвиток скульптури, архітектури й образотворчих форм у суспільному та релігійному контекстах архаїчної, класичної й елліністичної доби.
+Methodological description: Examine sculpture, architecture, and imagery in the social and religious settings of archaic, classical, and Hellenistic eras.
+User-friendly description: Recognize how Greek art changed and what roles it served.
 
 ##### Давньогрецький театр
 
+Slug: ancientGreekTheater
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історія трагедії та комедії, зв'язок публічних вистав з релігійними святами та життям давньогрецьких полісів.
+Methodological description: Study tragedy, comedy, and public performance in relation to festivals and civic life.
+User-friendly description: Discover why theater mattered in ancient Greek cities.
 
 #### Македонія та елліністичний світ
+
+Slug: macedoniaAndHellenisticWorld
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Піднесення Македонії, походи Александра та держави його наступників змінили політичні відносини Балкан, Єгипту й Азії, породивши нові форми культурної взаємодії.
+Methodological description: Macedon's rise, Alexander's campaigns, and successor kingdoms transformed Balkan, Egyptian, and Asian politics and exchanges.
+User-friendly description: Explore the empires and cultures of the Hellenistic world.
 
 ##### Македонське піднесення
 
+Slug: riseOfMacedonia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перетворення Македонії на провідну силу за Філіппа II та розвиток її відносин із полісами.
+Methodological description: Analyze Philip II's consolidation and Macedon's relationships with Greek poleis.
+User-friendly description: Understand how Macedonia became a regional power.
 
 ##### Завоювання Александра
 
+Slug: conquestsOfAlexander
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Масштаби походів, зміни політичних структур та межі особистої імперії Александра Македонського.
+Methodological description: Trace the reach of Alexander's campaigns, changed governments, and the limits of his short-lived personal empire.
+User-friendly description: Follow Alexander's conquests and their political consequences.
 
 ##### Елліністичні держави
 
+Slug: hellenisticKingdoms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Царства наступників Александра й культурна взаємодія грекомовних та місцевих традицій.
+Methodological description: Examine successor states and interaction between Greek-speaking and local traditions.
+User-friendly description: Explore the different kingdoms formed after Alexander.
 
 #### Римська республіка
+
+Slug: romanRepublic
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Республіканські інститути змінювалися в процесі завоювань і соціальних конфліктів, що поступово створювало передумови одноосібної влади.
+Methodological description: Conquests and social conflicts reshaped republican institutions and helped produce concentrated individual rule.
+User-friendly description: Discover how Rome's republic grew and changed.
 
 ##### Ранні римські громади
 
+Slug: earlyRomanCommunities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місце Рима серед народів Італії та вплив етруських і латинських традицій на його становлення.
+Methodological description: Locate Rome among Italian peoples and trace Etruscan and Latin influences.
+User-friendly description: Learn how Rome developed among neighboring communities in Italy.
 
 ##### Республіканські інститути
 
+Slug: romanRepublicanInstitutions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ролі сенату, магістратів і народних зборів та фактичні соціальні обмеження політичної участі.
+Methodological description: Describe the Senate, magistrates, assemblies, and actual social restrictions on participation.
+User-friendly description: Understand who held power in the Roman Republic.
 
 ##### Боротьба патриціїв і плебеїв
 
+Slug: patricianPlebeianConflict
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичне розширення політичного й правового становища плебсу та зміни республіканських правил.
+Methodological description: Trace expansion of plebeian rights and revisions to republican institutions.
+User-friendly description: Discover how ordinary Roman citizens gained political rights.
 
 ##### Пунічні війни
 
+Slug: punicWars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Суперництво Рима й Карфагена за вплив у західному Середземномор'ї.
+Methodological description: Explain Rome and Carthage's competition for influence in the western Mediterranean.
+User-friendly description: Explore the wars between Rome and Carthage.
 
 ##### Криза Республіки
 
+Slug: crisisOfRomanRepublic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вплив масштабних завоювань, особистих армій та громадянських війн на занепад республіканського механізму.
+Methodological description: Connect expansion, personal armies, and civil wars with the weakening of republican governance.
+User-friendly description: Understand why Roman republican government became unstable.
 
 #### Римська імперія
+
+Slug: romanEmpire
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Величезна держава поєднувала різні народи через військо, провінційне управління, право, міста й інфраструктуру, а пізніше зазнала глибоких трансформацій.
+Methodological description: A huge diverse state relied on armies, provincial rule, law, cities, and infrastructure before profound later transformations.
+User-friendly description: Explore how the Roman Empire governed many different peoples.
 
 ##### Принципат Августа
 
+Slug: augustanPrincipate
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формування імператорської влади за зовнішнього збереження частини республіканських форм.
+Methodological description: Explain imperial rule emerging under Augustus while some republican forms remained outwardly in place.
+User-friendly description: Discover how Augustus established Roman imperial power.
 
 ##### Провінційне управління
 
+Slug: romanProvincialGovernment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різні моделі місцевої адміністрації, податків, громадянства й співпраці з локальними елітами.
+Methodological description: Compare regional administration, taxes, citizenship, and cooperation with local elites.
+User-friendly description: Understand how Roman provinces were governed.
 
 ##### Римське право
 
+Slug: romanLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Еволюція правових понять, громадянського статусу та юридичних інституцій без ототожнення давніх норм із сучасними правами.
+Methodological description: Trace legal concepts and citizenship without equating ancient norms with modern human rights.
+User-friendly description: Explore the role and changing ideas of law in Roman society.
 
 ##### Повсякденне життя Римської імперії
 
+Slug: dailyLifeInRomanEmpire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Житло, праця, харчування й нерівність досвідів міських, сільських, вільних і поневолених мешканців.
+Methodological description: Compare homes, work, diets, and unequal experiences of urban, rural, free, and enslaved people.
+User-friendly description: Discover how everyday life varied across the Roman Empire.
 
 ##### Поширення християнства
 
+Slug: spreadOfChristianity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виникнення ранніх християнських громад і зміна їхнього становища в межах імперії.
+Methodological description: Trace early Christian communities and changing positions within the Roman Empire.
+User-friendly description: Explore how Christianity spread under Roman rule.
 
 ##### Трансформація Римської імперії
 
+Slug: transformationOfRomanEmpire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Політичні, військові, економічні й релігійні зміни пізньої античності та неоднакові долі західної й східної частин імперії.
+Methodological description: Examine late-antique political, military, economic, and religious change and divergent western and eastern trajectories.
+User-friendly description: Understand why the Roman Empire changed in different ways.
 
 ### Європа поза Середземномор'ям
+
+Slug: ancientEuropeBeyondMediterranean
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 12
 
 [Not implemented](#)
 
-Більшість європейських спільнот давнини розвивалася поза політичними рамками грецьких полісів і Риму, підтримуючи різноманітні місцеві та далекі контакти.
+Methodological description: Most European communities existed beyond the political frameworks of Greek poleis and Rome while sustaining diverse local and distant connections.
+User-friendly description: Discover ancient European societies beyond Greece and Rome.
 
 #### Центральна та Західна Європа
 
+Slug: centralAndWesternEurope
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Металургійні центри, поселення й племінні союзи відомі переважно за археологією та нерівномірними зовнішніми описами.
+Methodological description: Study metallurgy, settlements, and confederations primarily through archaeological evidence and uneven external descriptions.
+User-friendly description: Explore Bronze and Iron Age cultures in Central and Western Europe.
 
 ##### Європейська бронзова доба
 
+Slug: europeanBronzeAge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зміни виробництва, поселень і обмінних мереж поза Середземномор'ям за локальними археологічними хронологіями.
+Methodological description: Trace production, settlements, and exchange networks using local archaeological chronologies outside the Mediterranean.
+User-friendly description: Discover how Bronze Age people worked and traded in Europe.
 
 ##### Кельтські культури залізної доби
 
+Slug: celticIronAgeCultures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Риси гальштатської та латенської культур і межі співвіднесення археологічних знахідок з етнічними назвами.
+Methodological description: Study Hallstatt and La Tène material cultures and the limits of assigning archaeological finds to ethnic names.
+User-friendly description: Explore Celtic-related Iron Age cultures through archaeological finds.
 
 ##### Давні германські спільноти
 
+Slug: ancientGermanicCommunities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різноманітні суспільства Центральної й Північної Європи та їхні контакти з Римом.
+Methodological description: Examine diverse Central and Northern European societies and their contacts with Rome.
+User-friendly description: Discover the variety of ancient Germanic-speaking communities.
 
 ##### Британія до і під час римського панування
 
+Slug: britainBeforeAndUnderRome
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місцеві суспільства, римське завоювання й різні форми взаємодії на острові.
+Methodological description: Compare indigenous British communities, Roman conquest, and forms of interaction on the island.
+User-friendly description: Explore Britain before and during Roman rule.
 
 #### Північне Причорномор'я
+
+Slug: northernBlackSeaRegion
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Степові, лісостепові та приморські землі на теренах сучасної України були простором різних населень, без анахронічного приписування їм сучасної державності.
+Methodological description: The steppe, forest-steppe, and coasts of today's Ukraine held diverse ancient populations without modern state identities being imposed on them.
+User-friendly description: Explore ancient societies in the northern Black Sea region.
 
 ##### Степові культури ранньої доби
 
+Slug: earlySteppeCultures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Археологічні свідчення мобільності, пастушого господарства й курганних традицій у Причорномор'ї.
+Methodological description: Use archaeological evidence of mobility, herding, and mound-burial traditions in the Black Sea steppe.
+User-friendly description: Learn what ancient steppe burial mounds and settlements reveal.
 
 ##### Скіфські суспільства
 
+Slug: scythianSocieties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різноманітні групи скіфського світу, їхня культура, господарство та контакти з сусідами.
+Methodological description: Examine diverse Scythian groups, livelihoods, material culture, and regional contacts.
+User-friendly description: Explore how Scythian communities lived and traded.
 
 ##### Сармати
 
+Slug: sarmatians
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поширення сарматських груп, кінне військо й обмінні зв'язки в степах Північного Причорномор'я.
+Methodological description: Trace Sarmatian dispersal, cavalry, and exchange networks in the northern Black Sea steppes.
+User-friendly description: Discover the history of Sarmatian groups in the steppe.
 
 ##### Грецькі міста Причорномор'я
 
+Slug: greekCitiesOfBlackSea
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Міське життя та торгівля Ольвії, Херсонеса, Пантікапея й взаємодія з довколишнім населенням.
+Methodological description: Study civic life and trade at Olbia, Chersonesus, and Panticapaeum and interaction with nearby peoples.
+User-friendly description: Explore Greek cities along the northern Black Sea coast.
 
 #### Східна Європа раннього Середньовіччя
+
+Slug: earlyMedievalEasternEurope
+Action: create
+Status: pending
 
 Skills: 1
 
 [Not implemented](#)
 
-Державні утворення ранньосередньовічної Східної Європи, їхні зв'язки з Балтійським, Чорноморським та Візантійським світом. Цей часовий зріз виділений як обмежений виняток із переважно давньої хронології таксономії.
+Methodological description: Study early medieval Eastern European polities and links with the Baltic, Black Sea, and Byzantine worlds as a limited chronological exception to the ancient focus.
+User-friendly description: Explore early medieval states and trade connections in Eastern Europe.
 
 ##### Київська Русь
 
+Slug: kyivanRus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виникнення та розвиток середньовічної політичної спільноти з центром у Києві наприкінці IX — у XIII столітті, її система князівської влади, культурна й етнічна багатоманітність, зв'язки з Візантією, поширення християнства та річкова торгівля, зокрема шлях «із варягів у греки». Розрізнення історично підтверджених процесів, літописної традиції та пізніших національних інтерпретацій.
+Methodological description: Trace the Kyiv-centered polity of the late ninth through thirteenth centuries, princely government, diverse populations, Byzantine relations, Christianization, and river trade, including the Varangians-to-Greeks route. Distinguish evidence from chronicle traditions and later nationalist interpretations.
+User-friendly description: Explore the people, rulers and trade routes of medieval Kyivan Rus.
 
 #### Північна та Балтійська Європа
+
+Slug: northernAndBalticEurope
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Річкові й морські шляхи підтримували контакти регіонів з різними традиціями землеробства, скотарства та ремесел.
+Methodological description: Rivers and seas connected communities with differing farming, herding, and craft traditions.
+User-friendly description: Discover how northern Europeans connected through waterways.
 
 ##### Давнє господарство Північної Європи
 
+Slug: ancientNorthernEuropeanEconomies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Регіональні відмінності між землеробськими, пастушими та мисливсько-рибальськими спільнотами.
+Methodological description: Compare regional farming, pastoral, hunting, and fishing economies.
+User-friendly description: Learn how ancient northern communities made a living.
 
 ##### Балтійська бурштинова торгівля
 
+Slug: balticAmberTrade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Роль бурштину як археологічного індикатора далеких маршрутів і обміну в давнину.
+Methodological description: Use amber as archaeological evidence of distant ancient exchange routes.
+User-friendly description: Trace how Baltic amber traveled through ancient trade networks.
 
 ##### Залізна доба Скандинавії
 
+Slug: scandinavianIronAge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Матеріальна культура, поселення та соціальні зміни регіону до початку доби вікінгів.
+Methodological description: Study settlements, material culture, and social change before the Viking Age.
+User-friendly description: Explore Scandinavian life before the Viking period.
 
 ### Америки
+
+Slug: ancientAmericas
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 18
 
 [Not implemented](#)
 
-Історія Америк охоплює раннє заселення, незалежне виникнення землеробства, складні міста й держави та різноманітні неміські суспільства.
+Methodological description: American history includes early peopling, independent agriculture, complex cities and states, and diverse societies without major cities.
+User-friendly description: Explore the variety of ancient societies throughout the Americas.
 
 #### Раннє населення
+
+Slug: earliestAmericanPopulations
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Датування першого заселення та розмаїття способів життя досліджують за археологічними, природничими й генетичними джерелами.
+Methodological description: Examine early settlement dates and lifeways through archaeology, environmental research, and genetics.
+User-friendly description: Discover how researchers investigate the Americas' earliest inhabitants.
 
 ##### Заселення Америк
 
+Slug: peoplingOfTheAmericas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Основні наукові моделі шляхів і часу прибуття людей та межі сучасних доказів.
+Methodological description: Compare scientific models of arrival routes and dates while acknowledging limits of current evidence.
+User-friendly description: Explore how people first reached the Americas.
 
 ##### Адаптація до американських екосистем
 
+Slug: adaptationToAmericanEcosystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Господарські стратегії ранніх популяцій від арктичних просторів до тропічних лісів і високогір'я.
+Methodological description: Trace livelihoods from Arctic and tropical environments to highlands.
+User-friendly description: See how early Americans adapted to varied ecosystems.
 
 ##### Незалежне одомашнення рослин в Америках
 
+Slug: independentAmericanCropDomestication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місцеві центри вирощування кукурудзи, гарбузів, картоплі та інших культур із різними хронологіями.
+Methodological description: Examine separately evolving centers for maize, squash, potato, and other crops with their own chronologies.
+User-friendly description: Discover plants domesticated by ancient American communities.
 
 #### Мезоамерика
+
+Slug: mesoamerica
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-У регіоні розвинулися самостійні центри урбанізації, ритуальної архітектури, письма та політичної влади задовго до європейської колонізації.
+Methodological description: Independent urban centers, monumental ritual spaces, writing, and polities developed before European colonization.
+User-friendly description: Explore the ancient cities and cultures of Mesoamerica.
 
 ##### Ольмецькі центри
 
+Slug: olmecCenters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Монументальна пластика, ритуальні простори й питання культурних впливів ранньої Мезоамерики.
+Methodological description: Study early Mesoamerican monumental sculpture, ritual spaces, and debated cultural influence.
+User-friendly description: Discover what the Olmec centers reveal about early Mesoamerica.
 
 ##### Ранні міста майя
 
+Slug: earlyMayaCities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виникнення міських центрів і царських інституцій у докласичну та ранньокласичну добу майя.
+Methodological description: Trace emerging urban centers and royal institutions of Preclassic and Early Classic Maya periods.
+User-friendly description: Explore how the early Maya built cities and kingdoms.
 
 ##### Маянське письмо
 
+Slug: mayaWriting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Принципи логосилабічної системи та її зв'язок із політичними текстами й календарними записами.
+Methodological description: Explain logosyllabic writing in political texts and calendar records.
+User-friendly description: Understand how Maya writing recorded language and dates.
 
 ##### Теотіуакан
 
+Slug: teotihuacan
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Масштабне містобудування, багатокультурний склад і регіональний вплив давнього міста.
+Methodological description: Study the monumental city's urban planning, multicultural population, and regional influence.
+User-friendly description: Discover how Teotihuacan became a major ancient city.
 
 ##### Мезоамериканські календарі
 
+Slug: mesoamericanCalendars
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичні функції циклічних систем відліку часу без ототожнення різних календарних традицій.
+Methodological description: Distinguish different cyclical time-reckoning systems and their historical functions.
+User-friendly description: Explore how Mesoamerican calendars measured time.
 
 #### Анди
+
+Slug: ancientAndes
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Прибережні долини й високогірні екосистеми сприяли різним формам землеробства, містобудування та соціальної координації.
+Methodological description: Coastal valleys and highlands supported diverse farming, cities, and social coordination.
+User-friendly description: Discover the societies that developed in the Andes.
 
 ##### Караль та ранні центри Анд
 
+Slug: caralAndEarlyAndeanCenters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Монументальна архітектура та громадська координація ранніх поселень Норте-Чико.
+Methodological description: Examine monumental architecture and public coordination in Norte Chico settlements.
+User-friendly description: Explore the early monumental centers of Caral and Norte Chico.
 
 ##### Чавін
 
+Slug: chavinCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ритуальні центри та мистецькі традиції Анд першого тисячоліття до нашої ери.
+Methodological description: Study ritual centers and Andean artistic traditions of the first millennium BCE.
+User-friendly description: Discover the beliefs and art of the Chavín culture.
 
 ##### Культура Наска
 
+Slug: nazcaCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Господарство посушливих долин, кераміка та геогліфи без псевдонаукових пояснень їхнього походження.
+Methodological description: Examine dry-valley economies, pottery, and geoglyphs without pseudoscientific origin stories.
+User-friendly description: Explore the Nazca geoglyphs and the society that made them.
 
 ##### Культура Моче
 
+Slug: mocheCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Іригаційне землеробство, ремесла та політичні центри північного Перу давньої доби.
+Methodological description: Study irrigation farming, crafts, and ancient political centers in northern Peru.
+User-friendly description: Learn about Moche farmers, craftspeople and rulers.
 
 #### Північна Америка поза Мезоамерикою
 
+Slug: northAmericaBeyondMesoamerica
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Річкові басейни й посушливі території мали власні давні мережі обміну, ритуальні простори й форми колективної праці.
+Methodological description: River basins and arid regions had independent exchange networks, ritual spaces, and collective works.
+User-friendly description: Discover ancient societies of North America beyond Mesoamerica.
 
 ##### Поверті-Пойнт
 
+Slug: povertyPoint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Монументальні земляні споруди та міжрегіональний обмін у Північній Америці архаїчної доби.
+Methodological description: Study monumental earthworks and interregional exchanges in Archaic-period North America.
+User-friendly description: Explore the large earthworks built at Poverty Point.
 
 ##### Традиції Адена та Гоупвелл
 
+Slug: adenaAndHopewellTraditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ритуальні земляні комплекси й мережі матеріальних контактів у східній частині Північної Америки.
+Methodological description: Examine ceremonial earthworks and material connections in eastern North America.
+User-friendly description: Learn what Adena and Hopewell sites reveal about ancient communities.
 
 ##### Давні суспільства південного заходу Північної Америки
 
+Slug: ancientSouthwesternNorthAmerica
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Регіональні форми пристосування до посушливого середовища та ранні аграрні традиції без перенесення пізніших культур на давній період.
+Methodological description: Describe dry-environment adaptations and early agriculture without projecting later cultures into ancient periods.
+User-friendly description: Explore early settlements and farming in the American Southwest.
 
 #### Амазонія та Карибський басейн
+
+Slug: amazonAndCaribbean
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Річкові й острівні середовища підтримували різноманітні господарські та культурні традиції, які не можна оцінювати лише за наявністю великих кам'яних міст.
+Methodological description: River and island environments supported diverse cultures that cannot be judged only by the presence of stone cities.
+User-friendly description: Discover ancient Amazonian and Caribbean communities.
 
 ##### Ранні суспільства Амазонії
 
+Slug: earlyAmazonianSocieties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Археологічні сліди поселень, керованих ландшафтів і локальних форм землеробства в тропічних лісах.
+Methodological description: Use archaeology of settlements, managed landscapes, and local cultivation in tropical forests.
+User-friendly description: Explore evidence of early settlements within the Amazon.
 
 ##### Давнє землеробство тропічної Південної Америки
 
+Slug: tropicalSouthAmericanFarming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місцеві системи вирощування культурних рослин і поступової трансформації природних ландшафтів.
+Methodological description: Trace indigenous cultivation and gradual reshaping of tropical landscapes.
+User-friendly description: Discover how communities farmed in tropical South America.
 
 ##### Заселення Карибських островів
 
+Slug: caribbeanIslandSettlement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поетапні морські переселення та відмінні господарські й культурні практики давніх острівних спільнот.
+Methodological description: Reconstruct successive sea migrations and varied island livelihoods and cultures.
+User-friendly description: Explore how people reached and settled the Caribbean islands.
 
 ### Океанія
 
