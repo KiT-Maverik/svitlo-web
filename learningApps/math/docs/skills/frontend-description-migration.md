@@ -194,3 +194,58 @@ Every English frontend description below was authored first against the existing
 - **Proofreading:** corrected identifiable Polish, Tamil, Telugu, Indonesian, Hebrew, Latvian, and Korean copy issues while preserving the English source. No independent native-speaker review was available; this is editorial authoring and static verification, not linguistic certification.
 - **Execution limits:** GitHub connector supports file and patch validation, not local npm/TypeScript execution. Focused tests and typechecks **not run**; GitHub Actions status must be inspected separately and cannot be presumed passing.
 - **Next Agent 1 domain:** Geometry (35 Skills, 10 Groups). The final shared `description.fe` contract migration remains deferred until all affected entities are populated and reviewed across the three agents.
+
+## Geometry — English-first learner-description drafts (2026-10-30)
+
+The following learner-facing English copy is checked against each existing methodological description. No skill definitions, IDs, numerical ranges, membership, or canonical staging taxonomy are changed. These are the approved editorial basis **for translation within this coding task**, not independently signed-off native-language reviews.
+
+| Entity (under `geometry/`) | English `description.fe.en` |
+|---|---|
+| `geometry.data.ts` | Explore positions, lines, flat and solid shapes, angles, movements, perimeter, and area. |
+| `orientation/orientation.data.ts` | Describe where things are and how to move between places using directions, routes, and simple maps. |
+| `orientation/skills/positionWords.data.ts` | Use words such as left, right, above, behind, and ahead to describe positions. The answer can change with your viewpoint. |
+| `orientation/skills/spatialOrientationPath.data.ts` | Give or follow directions in the right order. Changing where you face or the order of turns may lead somewhere else. |
+| `orientation/skills/gridMapNavigation.data.ts` | Read or draw a grid map to show positions and routes. Follow the same directions and grid scale throughout. |
+| `lines/lines.data.ts` | Recognize points, straight and curved lines, rays, and segments, and how lines meet or relate to one another. |
+| `lines/skills/linesAndPoints.data.ts` | Tell a point, a straight line, a curved line, and a line made of straight segments apart. A drawing represents each of them. |
+| `lines/skills/segment.data.ts` | Draw a straight segment between two endpoints, label them, and understand its length. |
+| `lines/skills/ray.data.ts` | Tell a line that continues both ways from a ray that starts at one point and a segment with two endpoints. |
+| `lines/skills/closedOpenLines.data.ts` | Tell whether a line forms a closed loop or stays open. A closed loop is not always made of straight sides. |
+| `lines/skills/parallelPerpendicular.data.ts` | Recognize parallel lines that never meet and perpendicular lines that cross at a right angle, even when tilted. |
+| `figures/figures.data.ts` | Recognize flat shapes by their sides, corners, and other properties, and build new shapes from parts. |
+| `figures/skills/identify2dShapes.data.ts` | Recognize flat shapes even when turned, resized, or recolored. A square is also a kind of rectangle. |
+| `figures/skills/shapeAttributes.data.ts` | Sort polygons by the number of sides and corners and by their geometric features, not by how they are drawn. |
+| `figures/skills/polygon.data.ts` | Recognize a polygon as a closed shape bounded by straight sides that meet at corners. |
+| `figures/skills/triangleRectangleSquare.data.ts` | Recognize triangles, rectangles, and squares by their sides and angles. Every square is a rectangle. |
+| `figures/skills/composeDecomposeShapes.data.ts` | Split a flat shape into pieces without gaps or overlaps, then fit the pieces together. Rearranging them keeps the total area but can change the outline. |
+| `solids/solids.data.ts` | Recognize three-dimensional objects and their faces, edges, corners, and curved surfaces. |
+| `solids/skills/identify3dSolids.data.ts` | Recognize solid shapes by their surfaces, faces, edges, and corners, even when drawn from another viewpoint. |
+| `solids/skills/spatialSolidsAttributes.data.ts` | A cube and a rectangular box each have 6 faces, 12 edges, and 8 corners. In a cube, all edges are equal. |
+| `solids/skills/shapeOnSolidSurface.data.ts` | Find flat shapes on the faces or slices of solid objects. A flat face is not the whole three-dimensional shape. |
+| `transformations/transformations.data.ts` | Move, turn, and reflect shapes while noticing which features stay the same. |
+| `transformations/skills/translationsReflections.data.ts` | Slide a shape without turning it, or flip it across a line. Its lengths, area, and perimeter stay the same. |
+| `transformations/skills/reflectionSymmetry.data.ts` | Find a line that divides a shape into mirror-image halves, or finish drawing its reflection. |
+| `transformations/skills/turnsQuarters.data.ts` | Use quarter turns, half turns, and three-quarter turns, clockwise or counterclockwise, to change a shape’s direction. |
+| `angles/angles.data.ts` | Look at angles as turns and compare them with a right angle to recognize different kinds. |
+| `angles/skills/angleAsTurn.data.ts` | Compare how far two rays turn away from each other. Longer drawn arms do not make a bigger angle. |
+| `angles/skills/rightAngle.data.ts` | Find and check right angles, including ones tilted in a drawing. Every right angle is 90 degrees. |
+| `angles/skills/angleTypes.data.ts` | Tell acute angles (less than 90°), right angles (90°), and obtuse angles (between 90° and 180°) apart. |
+| `circles/circles.data.ts` | Explore round boundaries and filled disks, their centers, radii, and diameters, and how to draw circles. |
+| `circles/skills/circleDisk.data.ts` | Tell the curved boundary of a circle from the filled disk inside it. The boundary is not the area. |
+| `circles/skills/radiusDiameter.data.ts` | Find the center, radius, and diameter of a circle. The diameter crosses the center and is twice the radius. |
+| `circles/skills/drawCircle.data.ts` | Use a compass to draw a circle with a chosen center and radius. The compass opening sets its size. |
+| `perimeter/perimeter.data.ts` | Measure the distance all the way around a polygon by adding the lengths of its sides. |
+| `perimeter/skills/measurePerimeter.data.ts` | Add all side lengths of a polygon to find its perimeter, measured in units of length. |
+| `perimeter/skills/rectanglePerimeter.data.ts` | Find a rectangle’s perimeter by adding all four sides or doubling the sum of its length and width. |
+| `perimeter/skills/squarePerimeter.data.ts` | Find a square’s perimeter by multiplying one side length by four. |
+| `perimeter/skills/unknownSideFromPerimeter.data.ts` | Use a rectangle’s known perimeter and one side to calculate the length of the other side. |
+| `area/area.data.ts` | Measure the inside of flat shapes in square units, including rectangles and shapes made of several pieces. |
+| `area/skills/areaAsCovering.data.ts` | Area tells how much flat space a shape covers. Cover it with equal unit squares without gaps or overlaps. |
+| `area/skills/countUnitSquares.data.ts` | Find area by counting square units inside a shape, including parts of squares when needed. |
+| `area/skills/rectangleAreaModel.data.ts` | Find a rectangle’s area by multiplying its length and width. Rows and columns of equal squares show why this works. |
+| `area/skills/compositeArea.data.ts` | Split a shape made of rectangles into nonoverlapping pieces, find each area, and add them without counting space twice. |
+| `perimeterArea/perimeterArea.data.ts` | Understand the difference between the distance around a shape and the amount of space inside it. |
+| `perimeterArea/skills/perimeterVsArea.data.ts` | Choose perimeter to measure the boundary in length units or area to measure the inside in square units. |
+| `perimeterArea/skills/areaPerimeterContrast.data.ts` | Build shapes with the same perimeter but different areas, or the same area but different perimeters. |
+
+**Inventory:** 35 Skills + 10 Groups + 1 Domain = 46 entities × 28 supported locales = 1,288 localized descriptions. Preserve geometry concepts (open vs closed curves; line/ray/segment; square ⊂ rectangle; 2D vs 3D; area in squares vs perimeter in lengths; circle boundary vs filled disk; orientation-dependent directions). Keep shared contract optional until all agents finish.
