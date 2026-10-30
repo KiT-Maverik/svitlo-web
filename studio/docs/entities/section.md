@@ -17,7 +17,7 @@ A **Section** is one navigable learning step that groups content for a recogniza
 
 **Binding authoring invariant:** within each general Section, render/plan Resource blocks as a **single vertical column**, from top to bottom, in their declared order. Do not design side-by-side **sibling Resource blocks** or treat a Section as an arbitrary multi-column grid. A **Scene** is one typed block and may implement its own internal interactive layout, including diagrams or columns, without breaking the outer Section order.
 
-A content block is strictly typed by [`Resource_Config`](../../../shared/contracts/src/types/content/resource.types.ts) and `blockType` (currently `text`, `markdown`, `code`, `audio`, `video`, `image`, `scene`; `youtube` appears in the label type but not the config union). The actual generic Lesson renderer currently supports only `text`, `markdown`, `scene`; other typed blocks are **not automatically renderable**. A Script must distinguish supported, typed-only/partial and proposed functionality. Read the live renderer before declaring readiness.
+A content block is strictly typed by [`Resource_Config`](../../../shared/contracts/src/types/content/resource.types.ts) and `blockType` (currently `text`, `markdown`, `code`, `audio`, `video`, `image`, `scene`; `youtube` appears in the label type but not the config union). The actual generic Lesson renderer currently supports only `text`, `markdown`, `scene`; other typed blocks are **not automatically renderable**. A Content must distinguish supported, typed-only/partial and proposed functionality. Read the live renderer before declaring readiness.
 
 ## KNOWLEDGE CHECKPOINT
 
@@ -29,4 +29,4 @@ The existing [`KnowledgeCheckpoint`](../../../shared/ui-kit/src/components/widge
 - **Existing integration:** in `learningApps/playground/src/data/howLightMoves`, a prop-free `Checkpoint` Scene wraps the widget and is placed as a `blockType: 'scene'` Resource in the Theory Section. `KnowledgeCheckpoint` itself is not a `Resource_Config.blockType` and not a `Quiz_Config`.
 - The Screenwriter must specify meaningful questions, reveal content and placement; a Coding Agent verifies actual integration, locale, keyboard/RTL and progress semantics before implementation.
 
-Related: [Lesson](./lesson.md), [Lesson Script](./lesson-script.md), [Program](./program.md).
+Related: [Lesson](./lesson.md), [Lesson Content](./lesson-content.md), [Program](./program.md).

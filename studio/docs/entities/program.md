@@ -2,7 +2,7 @@
 
 **Entity category:** learning-journey orchestration and contextual narrative around independent Lessons.
 
-A **Program** selects, sequences and provides context to reusable [Lessons](./lesson.md). It can define progression, optional story or characters, missions, rewards, contextual transitions and other learner-journey mechanics. These are **Program responsibilities**, not content that must be hard-coded into a Lesson or its [Lesson Script](./lesson-script.md).
+A **Program** selects, sequences and provides context to reusable [Lessons](./lesson.md). It can define progression, optional story or characters, missions, rewards, contextual transitions and other learner-journey mechanics. These are **Program responsibilities**, not content that must be hard-coded into a Lesson or its [Lesson Content](./lesson-content.md).
 
 ## SEMANTIC BOUNDARY
 
@@ -15,4 +15,4 @@ A **Program** selects, sequences and provides context to reusable [Lessons](./le
 
 This describes the **intended architecture**, not evidence that Program runtime, injections, event APIs, missions or rewards have been implemented. Verify each capability before use; avoid inventing program hooks, fields or platform integrations. Product ideas appear in [System Boundaries](../architecture/system-boundaries.md) and the Program backlog.
 
-Related: [Lesson](./lesson.md), [Lesson Script](./lesson-script.md), [Section](./section.md).
+Related: [Lesson](./lesson.md), [Lesson Content](./lesson-content.md), [Section](./section.md).

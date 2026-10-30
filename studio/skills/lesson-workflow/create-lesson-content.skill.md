@@ -1,8 +1,8 @@
-# Create Lesson Script Skill
+# Create Lesson Content Skill
 
-**Mandatory first action:** Read [Educational Screenwriter Persona](../../personas/educational-screenwriter.persona.md) **in full**, then follow this task-specific workflow. This is a **Lesson screenplay/specification authoring task**, **not** application implementation. The persona owns the creative/pedagogical presentation; this Skill defines required inputs, actual platform contracts, deliverables, editorial gates and handoffs.
+**Mandatory first action:** Read [Educational Screenwriter Persona](../../personas/educational-screenwriter.persona.md) **in full**, then follow this task-specific workflow. This is a **Lesson content/specification authoring task**, **not** application implementation. The persona owns the creative/pedagogical presentation; this Skill defines required inputs, actual platform contracts, deliverables, editorial gates and handoffs.
 
-**Mission:** Transform an **approved Methodologist Brief** of a specifically selected Lesson into a factual, audience-native, rich, **Program-neutral Lesson Script**: an editorial plan of ordered, typed Sections and content blocks, with separate Scene specifications when bespoke Scenes are needed. Refer to [Lesson](../../docs/entities/lesson.md), [Lesson Script](../../docs/entities/lesson-script.md), [Section](../../docs/entities/section.md) and [Program](../../docs/entities/program.md) for authoritative entity boundaries; do not duplicate their definitions in this Skill. [Design Scene](../design-scene.skill.md) implements approved Scene specifications later.
+**Mission:** Transform an **approved Methodologist Brief** of a specifically selected Lesson into a factual, audience-native, rich, **Program-neutral Lesson Content**: an editorial plan of ordered, typed Sections and content blocks, with separate Scene specifications when bespoke Scenes are needed. Refer to [Lesson](../../docs/entities/lesson.md), [Lesson Content](../../docs/entities/lesson-content.md), [Section](../../docs/entities/section.md) and [Program](../../docs/entities/program.md) for authoritative entity boundaries; do not duplicate their definitions in this Skill. [Design Scene](../design-scene.skill.md) implements approved Scene specifications later.
 
 The Lesson must **teach, illustrate, invite prediction and meaningful action, explain results, and support understanding/transfer** as the subject requires. Reject the default pattern of a long Markdown lecture followed by a token quiz. Do **not** force a fixed recipe or gratuitous activity quota: the best experience is the simplest one that makes the particular learning goal clear and memorable.
 
@@ -11,27 +11,27 @@ The Lesson must **teach, illustrate, invite prediction and meaningful action, ex
 This Skill works on **existing Lesson directories selected or identified by the user**, not arbitrary new Lesson topics.
 
 - If the user names a textbook, directory, one Lesson, several Lessons or another unambiguous natural-language selection, resolve the exact existing directories under `<PackageRoot>/Data/Lessons/<bucketNumber>/<lessonSlug>/`. Read those folders; **do not ask the user to repeat already clear scope**.
-- The user may also ask to **find Lessons with a Methodologist Brief / methodology outline but no Script**. Inspect the specified textbook or subtree across numbered buckets, recognizing `methodologist-brief.md` and verifiable legacy methodical filenames. Treat `script.md` as the canonical Script filename; inspect relevant legacy script filenames before calling a Lesson missing a Script. Report the matching Lesson paths and methodical approval states. **Discovery alone does not authorize generating scripts**.
+- The user may also ask to **find Lessons with a Methodologist Brief / methodology outline but no Content**. Inspect the specified textbook or subtree across numbered buckets, recognizing `methodologist-brief.md` and verifiable legacy methodical filenames. Treat `content.md` as the canonical Lesson Content filename; inspect legacy `script.md`, `*.lesson-script.md`, and other existing authored content documents before calling a Lesson missing Content. A legacy file is not an instruction to overwrite or silently duplicate it. Report the matching Lesson paths and methodical approval states. **Discovery alone does not authorize generating scripts**.
 - If the user has not identified any textbook/Lesson/search scope, ask **which Lesson(s) or textbook/folder** to work with. Do not choose Playground or random Lessons as a substitute.
-- For multiple explicitly assigned Lessons, read and audit each Brief independently, preserve each Lesson's folder/bucket, write **one Script per approved Lesson**, and report blocked/unapproved Lessons rather than silently skipping them or applying one Brief to another.
-- Do not create a Lesson folder, move Lessons between buckets, change a Lesson's camelCase slug, or write scripts for unspecified Lessons. Revisions edit the existing `script.md` in place after reviewing it.
+- For multiple explicitly assigned Lessons, read and audit each Brief independently, preserve each Lesson's folder/bucket, write **one Content per approved Lesson**, and report blocked/unapproved Lessons rather than silently skipping them or applying one Brief to another.
+- Do not create a Lesson folder, move Lessons between buckets, change a Lesson's camelCase slug, or write scripts for unspecified Lessons. Revisions edit the existing `content.md` in place after reviewing it.
 
 ## NON-NEGOTIABLE START CONDITIONS
 
-**Do not generate a Lesson Script until the following are verified:**
+**Do not generate a Lesson Content until the following are verified:**
 
 1. **Approved Methodologist input in each chosen Lesson directory:** read `methodologist-brief.md` with `Methodologist status: Approved`, or an explicitly verified, editor-approved legacy methodology outline with equivalent substance. Confirm target outcomes, factual content/sources, audience, prerequisites, **the direct canonical `*.data.ts` links in the Brief's Target Skills list (complete filenames as link labels)** and restrictions. Confirm that every relative link structurally targets the **planned `<PackageRoot>/Data/skills/` tree**, not `src/`, and its label matches the target `.data.ts` filename. If the destination does not yet exist because Skills migration is pending, **report the unresolved link explicitly**, consult the approved Skill semantics from currently available canonical/staging sources, and do not claim the future file exists. Do not replace the approved Skill set with inferred descriptions, generated-taxonomy links or invented locations. A draft, a Curriculum label or the folder slug alone is **not enough**. If missing/unapproved, stop authoring for that Lesson and report the blocker; do not create or approve the Brief on the Screenwriter's behalf.
-2. **Selected Lesson folder and context:** identify the standalone textbook package root (`<PackageRoot>`), actual numbered Lesson folder, intended output language and learner profile. The user determines the scope. The Script is stored **beside the Brief**, never in `studio/` or an automatically chosen Playground directory.
+2. **Selected Lesson folder and context:** identify the standalone textbook package root (`<PackageRoot>`), actual numbered Lesson folder, intended output language and learner profile. The user determines the scope. The Content is stored **beside the Brief**, never in `studio/` or an automatically chosen Playground directory.
 3. **Read relevant architecture:** all [Svitlo Architecture & Product Principles](../../docs/architecture/README.md), particularly the [Learning Philosophy](../../docs/architecture/learning-experience-philosophy.md), [Notes concept](../../docs/architecture/lesson-notes.md), [Localization & Accessibility](../../docs/architecture/internationalization-and-accessibility.md) and [Offline/Device Compatibility](../../docs/architecture/offline-first-and-device-compatibility.md). Also read [Roles Proposition](../../Roles%20Proposition.md), [Long Chat Overture](../../Long%20Chat%20Overture.md), the current code contracts/renderers below, applicable `AGENTS.md` and local instructions. Historical concepts are design intent, not evidence of already implemented APIs.
 4. **Inspect existing lesson content:** read any applicable existing Lesson, Section, Question, Scene, content-resource and accessibility/localization patterns in the selected app, plus useful reference demonstrations in `learningApps/playground`. Verify the *present* implementation before authoring platform-specific specifications.
 5. **Editorial integrity:** where the Methodologist input conflicts with reliable facts, is ambiguous, or presupposes nonexistent assessment behavior, **report the exact blocker and proposed clarification**. Do not silently change competencies, learning goals or scoring rules.
 
 ## 1. ENTITY MODEL AND TYPED CONTENT
 
-**Mandatory reading:** [Lesson](../../docs/entities/lesson.md), [Lesson Script](../../docs/entities/lesson-script.md), [Section](../../docs/entities/section.md), [Program](../../docs/entities/program.md). These focused documents define autonomy, Program-neutrality, independent methodology/Script ownership, Section purposes, verified types and the single-column ordering invariant.
+**Mandatory reading:** [Lesson](../../docs/entities/lesson.md), [Lesson Content](../../docs/entities/lesson-content.md), [Section](../../docs/entities/section.md), [Program](../../docs/entities/program.md). These focused documents define autonomy, Program-neutrality, independent methodology/Content ownership, Section purposes, verified types and the single-column ordering invariant.
 
 - **Actual Section contract:** `LessonSection_Content = LessonSection_Config | Quiz_Config`; `LessonSection_Config.content` is a **nonempty ordered Resource array**. A Quiz is a distinct section-like assessment config, **not** a normal resource-column Section. See [Section](../../docs/entities/section.md) for examples of Theory, Practice, interactive activity, flashcards, coding and kids' block-based coding **pedagogical purposes**, which are *not* currently separate TypeScript Section discriminants.
-- **Actual Resource contract:** generic Section blocks are discriminated by `Resource_Config.blockType`. Every block in a Script must name an existing `blockType` or be unambiguously labeled **proposed**; a UI widget or Question type is not automatically a Resource type.
+- **Actual Resource contract:** generic Section blocks are discriminated by `Resource_Config.blockType`. Every block in a Content must name an existing `blockType` or be unambiguously labeled **proposed**; a UI widget or Question type is not automatically a Resource type.
 - **Binding layout invariant:** a general Section is a **single vertical column of content blocks in specified top-to-bottom order**. Never propose arbitrary side-by-side sibling Resources. One custom Scene block can internally use flexible 2D/3D layouts without changing the outer Section order.
 - **No Program plot inside Lesson material:** the Lesson's explanatory pacing, prediction, interaction and reveal are pedagogical sequencing; Program characters, quests, missions and rewards are external. An independently authored Lesson must teach coherently with no Program attached.
 - **No fixed Section recipe:** choose as many/few Sections as necessary to meet approved outcomes. `Theory → Practice → Flashcards → Quiz` is an example of *purposes*, not an implemented universal type list or prescribed sequence.
@@ -69,7 +69,7 @@ The following are **direct links to the current repository's source of truth**. 
 | `video` | Short demonstrations, recordings and media requiring pause/captions/transcripts | **Typed resource/builder available; generic Section renderer does not currently handle it**; verify actual player support |
 | `youtube` | Externally hosted video — conceptual/embed option | The literal occurs in `Resource_Type` but is **not in the current `Resource_Config` union or generic renderer**. Treat it as **not implemented** for authoring |
 
-**Static `image` authoring rule:** For each proposed `image` resource, provide an **Image prompt** in one or two clear sentences: what the image should show, its essential objects, and any spatial/action relationships needed to explain the concept. Add detail only if it is instructionally or factually necessary; do not produce long artistic prompts, model parameters or exhaustive styling instructions. Alongside (not inside) the prompt, note the **educational purpose**, **accessibility/alt-text intent**, and **asset status: pending editor/media production**. Do **not** generate the image, invent its URL/path, or claim it has been produced. This is a screenplay/media brief, **not** a new `Resource_Config` field. Classify a generic Section `image` block as **typed-only** until its actual renderer is verified; distinguish a static image from a custom interactive `scene` requiring its own specification.
+**Static `image` authoring rule:** For each proposed `image` resource, provide an **Image prompt** in one or two clear sentences: what the image should show, its essential objects, and any spatial/action relationships needed to explain the concept. Add detail only if it is instructionally or factually necessary; do not produce long artistic prompts, model parameters or exhaustive styling instructions. Alongside (not inside) the prompt, note the **educational purpose**, **accessibility/alt-text intent**, and **asset status: pending editor/media production**. Do **not** generate the image, invent its URL/path, or claim it has been produced. This is a instructional media brief, **not** a new `Resource_Config` field. Classify a generic Section `image` block as **typed-only** until its actual renderer is verified; distinguish a static image from a custom interactive `scene` requiring its own specification.
 
 **Renderer caveat:** The currently inspected generic `LessonSectionContent` handles **only `text`, `markdown` and `scene`**; unsupported kinds cause an error. `buildResource` can build other typed resources without automatically making them renderable. Existing nested widgets may render image/audio/video in their own slots, which is **not** general-section support.
 
@@ -88,7 +88,7 @@ The widget is already in UI Kit, but `knowledgeCheckpoint` is **not** a `Resourc
 - **Typed/partially integrated:** defined contracts or existing widgets, but required Section wiring is missing.
 - **New capability / proposed:** new component, custom Scene, renderer, backend, generator, browser integration, API or Program feature; **no implementation claim**.
 
-A Screenwriter may **pitch ambitious features**, but the script must clearly mark their feasibility status and include an accessible, pedagogically adequate alternative or **explicit dependency for approval**. Do not downgrade the entire Lesson to passive text simply because a richer feature requires engineering.
+A Screenwriter may **pitch ambitious features**, but the content must clearly mark their feasibility status and include an accessible, pedagogically adequate alternative or **explicit dependency for approval**. Do not downgrade the entire Lesson to passive text simply because a richer feature requires engineering.
 
 ## 3. SCREENWRITER PEDAGOGICAL AND EXPERIENCE DESIGN
 
@@ -154,7 +154,7 @@ Plan meaningful access for users with visual, auditory, motor, cognitive and oth
 | Interaction stages, visible states, valid/invalid model behavior and feedback meaning | Question scoring, diagnostic validity, grading threshold or mastery inference |
 | Media directions and alternatives for accessibility/localization | Already-working SDKs, APIs, offline sync, injection/event pipeline or browser-wide WebGPU support |
 | Opportunities for practice, retrieval and reflection | A working spaced scheduler or analytics system without evidence |
-| What the Coding Agent must build and what remains blocked | Changes to existing app, shared engine and tests merely by writing this Script |
+| What the Coding Agent must build and what remains blocked | Changes to existing app, shared engine and tests merely by writing this Content |
 
 A visually sophisticated experience may legitimately require a new **Scene** or renderer. Specify the **experience contract**, ask for a technical feasibility review where necessary, and preserve design intent through the handoff. Do not hide speculative functionality in prose as if already available.
 
@@ -169,10 +169,10 @@ For **Quiz/question** sequences, describe the pedagogical **purpose and position
 5. **Compose ordered content blocks in one vertical column.** Within each general Section, document **every** block in exact top-to-bottom presentation order, with its real `blockType`, pedagogical purpose, substantive content, learner action/feedback, locale/accessibility requirements and **readiness status**. Do not place sibling resource blocks side by side. Custom Scene internals may have spatial layouts. Use a Knowledge Checkpoint for a reflective pause where warranted, never as a scored Quiz.
 6. **Write audience-ready educational content.** Provide actual examples of key explanations, prompts, model annotations and feedback in the output language; do not hand engineers "put something engaging here". Use verifiable sources and the Methodologist's approved terminology.
 7. **Author each custom Scene specification separately.** Include goal and factual model, trigger/entry, objects/variables, sequence of events, learner inputs, state transitions, expected visual/auditory/text outputs, constraints, feedback content, edge cases, RTL/localization, accessibility alternatives, reduced motion and acceptance scenarios. **Do not author the implementation**. The spec must stand alone as the mandatory input for [Design Scene](../design-scene.skill.md).
-8. **Plan unlocked Lesson Notes.** In the Lesson Script, include **short, atomic recall cues** for significant concepts (not paragraph summaries), each with its intended Section/teaching moment and **proposed unlock trigger**. Author the Notes plan even though the runtime is not implemented; mark it **planned / not wired** and do not invent Note fields or note-unlocked events. Follow the [Notes concept](../../docs/architecture/lesson-notes.md).
+8. **Plan unlocked Lesson Notes.** In the Lesson Content, include **short, atomic recall cues** for significant concepts (not paragraph summaries), each with its intended Section/teaching moment and **proposed unlock trigger**. Author the Notes plan even though the runtime is not implemented; mark it **planned / not wired** and do not invent Note fields or note-unlocked events. Follow the [Notes concept](../../docs/architecture/lesson-notes.md).
 9. **Design practice/review handoffs.** Locate retrieval/checkpoints, useful flashcards or practice where warranted; identify **Assessment Architect-owned** questions and validity/scoring decisions. Mark spacing/repetition needs as future-system dependencies unless actually supported.
 10. **Audit for realism and pedagogy.** Check accuracy, target learner voice, cognitive load, meaningful interactivity, lack of Program plot, type/renderer feasibility, section flow, accessibility, RTL, locale, **complete offline-content design and low-device compatibility without silently reducing learning functionality**, copyright/source attribution, Notes plan and explicit gaps. Raise any genuine educational/performance trade-off for editorial review.
-11. **Stop for editor review.** Deliver the Lesson Script + Scene specs and a short **readiness/dependency report**. Do not auto-run Scene Design, Question implementation, application coding, Program scripting or the next authoring Skill.
+11. **Stop for editor review.** Deliver the Lesson Content + Scene specs and a short **readiness/dependency report**. Do not auto-run Scene Design, Question implementation, application coding, Program scripting or the next authoring Skill.
 
 ## 6. REQUIRED DOCUMENT OUTPUTS
 
@@ -185,20 +185,20 @@ For **Quiz/question** sequences, describe the pedagogical **purpose and position
         └── <existingBucketNumber>/
             └── <existingLessonSlug>/
                 ├── methodologist-brief.md    # existing; do not modify
-                ├── script.md                 # Screenwriter-authored output
+                ├── content.md                 # Screenwriter-authored output
                 └── scenes/                  # only if custom Scenes are specified
                     ├── <sceneNameCamelCase>.scene-spec.md
                     └── ...
 ~~~
 
-Use the **existing numbered Lesson directory** chosen by the user. Do not create a parallel `docs/lessons` tree, move a Lesson, or invent its bucket/slug. Keep the Methodologist Brief unchanged and write or update only `script.md` plus independently required `scenes/*.scene-spec.md` artifacts. Scan the directory for an existing legacy Script before creating a new canonical file; flag migration conflicts rather than silently duplicate.
+Use the **existing numbered Lesson directory** chosen by the user. Do not create a parallel `docs/lessons` tree, move a Lesson, or invent its bucket/slug. Keep the Methodologist Brief unchanged and write or update only `content.md` plus independently required `scenes/*.scene-spec.md` artifacts. Scan the directory for an existing legacy `script.md`, `*.lesson-script.md`, or other authored Lesson content before creating `content.md`; flag migration conflicts rather than silently duplicating or moving it.
 
-### Lesson Script format (the generated document, not this instruction)
+### Lesson Content format (the generated document, not this instruction)
 
-Use these **mandatory sections**, adjusting details and counts to the real Lesson. Replace every placeholder (including the Methodologist link) with verified content and a real path relative to the authored `script.md`. Write in the approved **learner/editorial language**; do not copy this English guidance verbatim.
+Use these **mandatory sections**, adjusting details and counts to the real Lesson. Replace every placeholder (including the Methodologist link) with verified content and a real path relative to the authored `content.md`. Write in the approved **learner/editorial language**; do not copy this English guidance verbatim.
 
 ~~~md
-# <Lesson Title> — Script
+# <Lesson Title> — Content
 
 Status: Draft
 Target Lesson: <actual existing Lesson directory and textbook>
@@ -299,7 +299,7 @@ including LTR, RTL, reduced motion and assistive-technology use>
 <Existing Scene/renderer capabilities vs explicitly proposed work>
 ~~~
 
-**Critical handoff contract:** The Scene Specification is the **approved mandatory scenario input** consumed by [Design Scene Skill](../design-scene.skill.md). On initial creation it is `Draft` and must receive editor approval **before** a Coding Agent starts that Scene. Keep Lesson Script and Scene specs in sync through explicit editorial review, not by silently improvising changes during implementation.
+**Critical handoff contract:** The Scene Specification is the **approved mandatory scenario input** consumed by [Design Scene Skill](../design-scene.skill.md). On initial creation it is `Draft` and must receive editor approval **before** a Coding Agent starts that Scene. Keep Lesson Content and Scene specs in sync through explicit editorial review, not by silently improvising changes during implementation.
 
 ## 7. ACCEPTANCE CHECKLIST
 
@@ -308,24 +308,24 @@ including LTR, RTL, reduced motion and assistive-technology use>
 - [ ] Section plan uses actual `LessonSection_Content` semantics and **ordered, single-column typed Resource blocks**; distinguishes `Section`, `Resource` and `Question`.
 - [ ] All **eight declared Resource_Type labels** are understood, including the **unimplemented `youtube` config**, and renderer readiness was checked rather than inferred.
 - [ ] Theory, practice, flashcards, coding, kids' block coding, interactive activities and Quiz are classified by **real** current contracts vs editorial purposes; no fictional Section types/widgets.
-- [ ] Script contains actual learner-facing explanations, demonstrations and interactions, not a generic Markdown lecture or vague creative wish list; any Knowledge Checkpoint is a reflection/reveal via `scene`, not a scored quiz.
+- [ ] Content contains actual learner-facing explanations, demonstrations and interactions, not a generic Markdown lecture or vague creative wish list; any Knowledge Checkpoint is a reflection/reveal via `scene`, not a scored quiz.
 - [ ] Language, examples, interface interactions, instructions, media, feedback, reading load and pacing are suitable for the audience specified in the approved Methodologist Brief (including age and prior experience).
 - [ ] Activity choices make pedagogical sense: cognitive load, meaningful retrieval/feedback, worked examples and transfer are considered without compulsory gimmicks.
 - [ ] Each custom Scene has an independent **full specification**, with observable behavior, accurate model, states, learner actions, accessible alternatives and acceptance scenarios.
-- [ ] The Lesson Script contains a **planned, concise Notes/unlock plan** for recall, without reproducing entire Sections or claiming Note APIs/sync exist.
+- [ ] The Lesson Content contains a **planned, concise Notes/unlock plan** for recall, without reproducing entire Sections or claiming Note APIs/sync exist.
 - [ ] Every proposed `image` resource has a concise scene/object Image prompt, separate learning purpose and accessibility intent, and an explicit pending-asset status. No image was generated and no nonexistent asset URL/path or renderer was presented as implemented.
 - [ ] Every specialized or unsupported experience has an honest feasibility classification and clear engineering dependency; no imaginary API/schema.
 - [ ] Accessibility, localization, responsive/mobile/low-end delivery, reduced motion, LTR/RTL, cultural adaptation and **complete offline lesson delivery** were planned. Any case requiring an actual sacrifice of functionality to support weak devices was escalated; no content was silently dropped.
 - [ ] Quiz/Question scoring, correct-answer validity, mastery and retry policies are left to **Assessment Architect**, not silently decided by Screenwriter.
 - [ ] Links to approved sources, Methodologist brief, existing Skills and Scene specs are **real and relative to output files**; all uncertainties and unresolved dependencies are explicit.
-- [ ] Generated Lesson Script and Scene specs are handed off for **editor approval**, with no automatic runtime implementation.
+- [ ] Generated Lesson Content and Scene specs are handed off for **editor approval**, with no automatic runtime implementation.
 
 ## RESULT
 
 Provide:
 
-1. **One** draft `script.md` per explicitly assigned, approved Lesson, **including a planned Lesson Notes/unlock section**, inside that Lesson's existing `Data/Lessons/<bucket>/<slug>/` folder.
-2. **One specification per custom Scene**, with real relative links from the Lesson Script. A purely text or existing-widget Lesson need not create an empty Scene specification.
+1. **One** draft `content.md` per explicitly assigned, approved Lesson, **including a planned Lesson Notes/unlock section**, inside that Lesson's existing `Data/Lessons/<bucket>/<slug>/` folder.
+2. **One specification per custom Scene**, with real relative links from the Lesson Content. A purely text or existing-widget Lesson need not create an empty Scene specification.
 3. A concise editorial report stating the **most important interactive concepts**, how the Lesson avoids passive content without losing clarity, the chosen Sections/Resource blocks, **verified runtime capabilities vs proposed features**, accessibility/localization decisions, any source/technical gaps and which artifacts are waiting for approval.
 
 **Stop after documentation and handoff.** The Coding Agent, Design Scene and Learning Assessment Architect perform their own separately authorized stages. Never author production code, invent new Question correctness rules, register fake resource types, or attach a Program narrative to the canonical Lesson.
@@ -335,5 +335,5 @@ Provide:
 
 **Status: proposal only; not a new runtime field.** The former proposal to make ordered Section content a **single vertical column** is now approved and incorporated above, so it is no longer an open issue.
 
-A separate proposal would have the Script explicitly describe each content block's supported locales, including cases equivalent to "all", "all except a named set" or "only a named set". Current resource configs vary: many expose `allLocales: true | false` and locale-keyed values; Scenes have Lesson-level `sceneLocales`. A literal `all-except` type or locale visibility policy is **not established**. For now describe actual localization needs and known exceptions without inventing TypeScript fields, fallback semantics or a general locale-visibility system. Escalate requests for a new universal per-block locale scheme to the editor/engineering workflow.
+A separate proposal would have the Content explicitly describe each content block's supported locales, including cases equivalent to "all", "all except a named set" or "only a named set". Current resource configs vary: many expose `allLocales: true | false` and locale-keyed values; Scenes have Lesson-level `sceneLocales`. A literal `all-except` type or locale visibility policy is **not established**. For now describe actual localization needs and known exceptions without inventing TypeScript fields, fallback semantics or a general locale-visibility system. Escalate requests for a new universal per-block locale scheme to the editor/engineering workflow.
 
