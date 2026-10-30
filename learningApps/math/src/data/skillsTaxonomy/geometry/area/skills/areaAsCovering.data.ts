@@ -33,4 +33,5 @@ export const areaAsCovering_Skill_Data = buildSkillConfig({
     pl: "Rozumienie pola jako pokrycia kwadratami jednostkowymi",
     uk: "Розуміння площі як покриття одиничними квадратами",
   },
+  description: { methodological: "Area measures the size of a plane region in square units; covering it with identical squares without gaps or overlap yields a numerical measure. Equal area after changing shape does not imply equal perimeter." },
 });

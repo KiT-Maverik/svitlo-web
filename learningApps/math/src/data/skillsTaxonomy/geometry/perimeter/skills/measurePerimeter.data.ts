@@ -33,4 +33,5 @@ export const measurePerimeter_Skill_Data = buildSkillConfig({
     pl: "Mierzenie obwodu wielokąta przez sumowanie boków",
     uk: "Вимірювання периметра многокутника сумою сторін",
   },
+  description: { methodological: "The perimeter of a polygon is the sum of the lengths of all successive sides of its closed boundary. It is a linear measurement expressed in length units, unlike the area of its interior." },
 });
