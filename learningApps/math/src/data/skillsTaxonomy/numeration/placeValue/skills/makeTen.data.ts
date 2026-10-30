@@ -33,4 +33,5 @@ export const makeTen_Skill_Data = buildSkillConfig({
     pl: "Grupowanie i rozdzielanie dziesięciu jedności",
     uk: "Утворення десятка з одиниць і зворотне розгрупування",
   },
+  description: { methodological: "Ten units of a given place are equivalent to one unit of the next higher place. Regrouping and ungrouping preserve the number's value and underpin decimal notation and carrying." },
 });

@@ -33,4 +33,5 @@ export const makeHundred_Skill_Data = buildSkillConfig({
     pl: "Dziesięć dziesiątek tworzy setkę",
     uk: "Десять десятків утворюють сотню",
   },
+  description: { methodological: "Ten tens are equivalent to one hundred, or one hundred ones. This relation enables crossing the hundred boundary and understanding positional decimal notation." },
 });

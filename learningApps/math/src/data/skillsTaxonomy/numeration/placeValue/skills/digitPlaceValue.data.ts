@@ -33,4 +33,5 @@ export const digitPlaceValue_Skill_Data = buildSkillConfig({
     pl: "Wartość cyfry zależna od pozycji",
     uk: "Значення цифри залежно від розряду",
   },
+  description: { methodological: "A digit's value depends on its position: the two digits 2 in 232 represent 200 and 2. Place value is distinct from the digit's graphic form." },
 });

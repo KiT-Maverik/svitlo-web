@@ -33,4 +33,5 @@ export const tensOnes_Skill_Data = buildSkillConfig({
     pl: "Dziesiątki i jedności w liczbach dwucyfrowych",
     uk: "Десятки й одиниці двоцифрових чисел",
   },
+  description: { methodological: "Express a two-digit number as a multiple of ten plus its remaining ones without changing the value. The numeral, place-value blocks, and addition expression are equivalent representations of one number." },
 });
