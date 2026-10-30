@@ -6,7 +6,7 @@ A subject-wide, audience-independent catalog of independently assessable philoso
 
 **Boundaries:** Psychology investigates the empirical mechanisms of cognition, emotion, motivation, persuasion, and behavioral bias; Philosophy examines the validity of arguments, justification of beliefs, fundamental concepts, and normative questions. Scientific disciplines own their subject-specific observations and explanations, while Philosophy of Science examines general evidence, inference, study design, and scientific justification. History studies events and societies; Philosophy studies historical thinkers' actual arguments. Language and Literature owns grammar and composition; Art owns making and analyzing artistic works as practice; Philosophy examines meaning and the grounds of aesthetic evaluation. Philosophy of Religion examines religious and nonreligious arguments rather than confessional instruction. Media literacy here means epistemic appraisal of public claims, not marketing strategy or a psychology of influence. Cross-textbook overlap does not imply shared Skill IDs.
 
-**Evidence used for breadth checks:** [American Philosophical Association — Philosophy: A brief guide](https://www.apaonline.org/page/undergraduates), [Stanford Encyclopedia of Philosophy — Table of Contents](https://plato.stanford.edu/contents.html), and [Studio Subject Proposition](../../../../studio/Subject%20Proposition.md). These guide subject coverage without imposing one national syllabus, one philosophical school, or a grade-based mastery ceiling. Philosophical positions are presented as examinable arguments, not institutional doctrine. This first edition is a proposal pending explicit editorial approval.
+**Evidence used for breadth checks:** [American Philosophical Association — Philosophy: A brief guide](https://www.apaonline.org/page/undergraduates), [Stanford Encyclopedia of Philosophy — Table of Contents](https://plato.stanford.edu/contents.html), and [Studio Subject Proposition](../../../../studio/Subject%20Proposition.md). Focused subject-coverage checks: [Philosophy of Mathematics](https://plato.stanford.edu/entries/philosophy-mathematics/), [The Nature of Law](https://plato.stanford.edu/entries/lawphil-nature/), [Philosophy of Technology](https://plato.stanford.edu/entries/technology/), [Virtue Epistemology](https://plato.stanford.edu/entries/epistemology-virtue/), and [Philosophy of Religion](https://plato.stanford.edu/entries/philosophy-religion/). These guide subject coverage without imposing one national syllabus, one philosophical school, or a grade-based mastery ceiling. Philosophical positions are presented as examinable arguments, not institutional doctrine. This first edition is a proposal pending explicit editorial approval.
 
 ## SUMMARY
 
@@ -1759,7 +1759,6 @@ Skills: 3
 
 Philosophical movements and schools arise around distinctive approaches to knowledge, reason, liberty, and existence; their boundaries and internal disagreements cannot be reduced to dates alone.
 
-
 ##### Compare major modern epistemological approaches
 
 [Not implemented](#)
@@ -1791,6 +1790,7 @@ Intellectual traditions developed across many cultures through original argument
 [Not implemented](#)
 
 Contrast representative methods or commitments in Socratic, Platonic, and Aristotelian arguments without collapsing them into one doctrine.
+
 ##### Analyze a philosophical argument from an Indian tradition
 
 [Not implemented](#)
