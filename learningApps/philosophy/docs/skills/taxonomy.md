@@ -20,527 +20,937 @@ Code files: 0/12 Domains · 0/48 Groups · 0/222 Skills
 
 ### Philosophical Inquiry
 
+Slug: philosophicalInquiry
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
-Philosophy investigates conceptual, normative, and foundational questions whose answers require reasons rather than observation alone. This domain concerns the practices used to formulate, refine, and discuss such questions; it is distinct from the formal evaluation of arguments in Logic.
+Methodological description: Philosophy investigates conceptual, normative, and foundational questions whose answers require reasons rather than observation alone. This domain concerns the practices used to formulate, refine, and discuss such questions; it is distinct from the formal evaluation of arguments in Logic.
+User-friendly description: Explore questions about meaning, values and assumptions through reasoned discussion.
 
 #### Questions and Problems
 
+Slug: questionsAndProblems
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A productive philosophical problem can be examined through competing answers, explicit concepts, and reasons. The object is to make a question discussable without assuming that every question has a single empirical test.
+Methodological description: A productive philosophical problem can be examined through competing answers, explicit concepts, and reasons. The object is to make a question discussable without assuming that every question has a single empirical test.
+User-friendly description: Learn to turn puzzling ideas into questions that can be discussed thoughtfully.
 
 ##### Distinguish philosophical questions from empirical questions
 
+Slug: distinguishPhilosophicalQuestionsFromEmpiricalQuestions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when an issue asks what a concept means, what ought to be done, or what ultimately explains something, rather than only requesting a measurable fact; many questions have both aspects.
+Methodological description: Identify when an issue asks what a concept means, what ought to be done, or what ultimately explains something, rather than only requesting a measurable fact; many questions have both aspects.
+User-friendly description: Recognize how philosophical questions differ from questions answered by measurement.
 
 ##### Formulate a philosophical question
 
+Slug: formulateAPhilosophicalQuestion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Turn an ordinary puzzlement into an open question about meaning, reasons, values, or assumptions that admits more than a yes-or-no preference.
+Methodological description: Turn an ordinary puzzlement into an open question about meaning, reasons, values, or assumptions that admits more than a yes-or-no preference.
+User-friendly description: Ask an open question about reasons, meaning or values rather than a simple preference.
 
 ##### Identify assumptions in a philosophical problem
 
+Slug: identifyAssumptionsInAPhilosophicalProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Expose propositions that a question or proposed answer takes for granted, such as what counts as a person or what makes an action fair.
+Methodological description: Expose propositions that a question or proposed answer takes for granted, such as what counts as a person or what makes an action fair.
+User-friendly description: Find the hidden assumptions behind a philosophical question or proposed answer.
 
 ##### Distinguish a philosophical problem from an example
 
+Slug: distinguishAPhilosophicalProblemFromAnExample
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate the general issue, such as whether promises create obligations, from the particular story used to make it vivid.
+Methodological description: Separate the general issue, such as whether promises create obligations, from the particular story used to make it vivid.
+User-friendly description: Distinguish a general philosophical issue from a story illustrating it.
 
 #### Conceptual Analysis
 
+Slug: conceptualAnalysis
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Careful discussion depends on tracking the boundaries of concepts, especially when ordinary words cover multiple cases. These abilities refine meanings rather than merely memorize technical vocabulary.
+Methodological description: Careful discussion depends on tracking the boundaries of concepts, especially when ordinary words cover multiple cases. These abilities refine meanings rather than merely memorize technical vocabulary.
+User-friendly description: Explore how clear definitions and carefully chosen examples improve philosophical thinking.
 
 ##### Clarify a contested concept
 
+Slug: clarifyAContestedConcept
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify relevant conditions or uses of a term such as freedom so interlocutors can determine what their disagreement concerns.
+Methodological description: Specify relevant conditions or uses of a term such as freedom so interlocutors can determine what their disagreement concerns.
+User-friendly description: Clarify the meaning of a term when people disagree about how it is used.
 
 ##### Distinguish necessary from sufficient conditions
 
+Slug: distinguishNecessaryFromSufficientConditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a proposed property is required for a concept to apply, enough for it to apply, or both; a condition can fail one test and pass the other.
+Methodological description: Determine whether a proposed property is required for a concept to apply, enough for it to apply, or both; a condition can fail one test and pass the other.
+User-friendly description: Determine whether a condition is required, sufficient, both or neither.
 
 ##### Test a definition with a counterexample
 
+Slug: testADefinitionWithACounterexample
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Find a case included or excluded incorrectly by a proposed definition and explain what the case reveals about its limits.
+Methodological description: Find a case included or excluded incorrectly by a proposed definition and explain what the case reveals about its limits.
+User-friendly description: Challenge a definition by finding a case it handles incorrectly.
 
 ##### Use a thought experiment to examine a concept
 
+Slug: useAThoughtExperimentToExamineAConcept
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Vary features of an imagined situation to isolate a philosophical principle; make clear which assumptions are stipulated rather than observed.
+Methodological description: Vary features of an imagined situation to isolate a philosophical principle; make clear which assumptions are stipulated rather than observed.
+User-friendly description: Use an imagined scenario to test an idea while keeping its assumptions clear.
 
 #### Dialogue and Disagreement
+
+Slug: dialogueAndDisagreement
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Reasoned dialogue seeks understanding and justified revision, not simply winning assent. Participants must fairly represent alternatives and keep interpersonal respect separate from agreement.
+Methodological description: Reasoned dialogue seeks understanding and justified revision, not simply winning assent. Participants must fairly represent alternatives and keep interpersonal respect separate from agreement.
+User-friendly description: Discover how respectful disagreement can help us reconsider ideas.
 
 ##### Reconstruct another person's position fairly
 
+Slug: reconstructAnotherPersonsPositionFairly
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Restate an interlocutor's strongest contextually plausible position accurately and charitably, rather than attacking a weaker caricature; fair reconstruction does not require overlooking genuine contradictions or unsupported claims.
+Methodological description: Restate an interlocutor's strongest contextually plausible position accurately and charitably, rather than attacking a weaker caricature; fair reconstruction does not require overlooking genuine contradictions or unsupported claims.
+User-friendly description: Restate someone else's position accurately before criticizing it.
 
 ##### Ask a probing philosophical question
 
+Slug: askAProbingPhilosophicalQuestion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Request a reason, distinction, implication, or counterexample that can advance inquiry without demanding personal disclosure.
+Methodological description: Request a reason, distinction, implication, or counterexample that can advance inquiry without demanding personal disclosure.
+User-friendly description: Ask a question that tests another person's reasons or clarifies their view.
 
 ##### Respond to a philosophical objection
 
+Slug: respondToAPhilosophicalObjection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Address the actual challenge to a claim, rather than diverting to the objector's identity or motives.
+Methodological description: Address the actual challenge to a claim, rather than diverting to the objector's identity or motives.
+User-friendly description: Address the substance of an objection instead of attacking its author.
 
 ##### Revise a position in light of reasons
 
+Slug: reviseAPositionInLightOfReasons
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify which premise or conclusion should change when a cogent objection defeats an earlier commitment.
+Methodological description: Identify which premise or conclusion should change when a cogent objection defeats an earlier commitment.
+User-friendly description: Change a belief or argument when a stronger reason shows it needs revision.
 
 ### Logic and Argumentation
+
+Slug: logicAndArgumentation
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 35
 
 [Not implemented](#)
 
-The central question is whether reasons support a conclusion and in what way. Formal entailment, defeasible inference, and argumentative defects are distinguished from psychological causes of belief, which belong chiefly to Psychology.
+Methodological description: The central question is whether reasons support a conclusion and in what way. Formal entailment, defeasible inference, and argumentative defects are distinguished from psychological causes of belief, which belong chiefly to Psychology.
+User-friendly description: Learn to evaluate whether reasons support a conclusion and recognize faulty reasoning.
 
 #### Arguments and Inference
+
+Slug: argumentsAndInference
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Arguments connect propositions through an inferential claim; assertions, explanations, and rhetorical appeals may occur nearby without playing the same role.
+Methodological description: Arguments connect propositions through an inferential claim; assertions, explanations, and rhetorical appeals may occur nearby without playing the same role.
+User-friendly description: Discover how premises and conclusions form an argument.
 
 ##### Identify premises in an argument
 
+Slug: identifyPremisesInAnArgument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Locate the reasons offered in support of a conclusion, including unstated propositions when context makes them indispensable.
+Methodological description: Locate the reasons offered in support of a conclusion, including unstated propositions when context makes them indispensable.
+User-friendly description: Find the statements offered as reasons for a claim.
 
 ##### Identify an argument's conclusion
 
+Slug: identifyAnArgumentsConclusion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine which proposition is supposed to follow or gain support, regardless of its position in a passage.
+Methodological description: Determine which proposition is supposed to follow or gain support, regardless of its position in a passage.
+User-friendly description: Identify the central claim an argument is trying to establish.
 
 ##### Distinguish an argument from an explanation
 
+Slug: distinguishAnArgumentFromAnExplanation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Tell reasoning intended to establish a claim from an account of why an already accepted event or fact occurred.
+Methodological description: Tell reasoning intended to establish a claim from an account of why an already accepted event or fact occurred.
+User-friendly description: Tell a reason for believing something apart from an explanation of an accepted fact.
 
 ##### Reconstruct an argument in standard form
 
+Slug: reconstructAnArgumentInStandardForm
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange its relevant premises and conclusion explicitly while preserving the original reasoning rather than improving it silently.
+Methodological description: Arrange its relevant premises and conclusion explicitly while preserving the original reasoning rather than improving it silently.
+User-friendly description: Rewrite an argument as clear premises followed by its conclusion.
 
 #### Deductive Reasoning
+
+Slug: deductiveReasoning
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Deduction concerns whether it is possible for premises to be true while a conclusion is false. Logical form is evaluated separately from whether the premises describe the world correctly.
+Methodological description: Deduction concerns whether it is possible for premises to be true while a conclusion is false. Logical form is evaluated separately from whether the premises describe the world correctly.
+User-friendly description: Explore when conclusions necessarily follow from given premises.
 
 ##### Assess deductive validity
 
+Slug: assessDeductiveValidity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether a conclusion must hold if the premises hold, using logical structure rather than agreement with the conclusion.
+Methodological description: Determine whether a conclusion must hold if the premises hold, using logical structure rather than agreement with the conclusion.
+User-friendly description: Check whether premises could all be true while a conclusion is false.
 
 ##### Distinguish validity from soundness
 
+Slug: distinguishValidityFromSoundness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that a sound deductive argument requires both a valid inference and true premises.
+Methodological description: Recognize that a sound deductive argument requires both a valid inference and true premises.
+User-friendly description: Understand why a logically valid argument can still have false premises.
 
 ##### Apply modus ponens
 
+Slug: applyModusPonens
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer a consequent from a conditional and its antecedent without treating the inverse conditional as equivalent.
+Methodological description: Infer a consequent from a conditional and its antecedent without treating the inverse conditional as equivalent.
+User-friendly description: Apply the rule that if A implies B and A holds, then B follows.
 
 ##### Apply modus tollens
 
+Slug: applyModusTollens
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reject the antecedent of a conditional from the denial of its consequent, under the conditional as stated.
+Methodological description: Reject the antecedent of a conditional from the denial of its consequent, under the conditional as stated.
+User-friendly description: Use a conditional and the denial of its result to reject its antecedent.
 
 ##### Evaluate a categorical syllogism
 
+Slug: evaluateACategoricalSyllogism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether relations among classes support the proposed conclusion, rather than relying on familiar subject matter.
+Methodological description: Examine whether relations among classes support the proposed conclusion, rather than relying on familiar subject matter.
+User-friendly description: Determine whether statements about categories logically support a conclusion.
 
 ##### Identify a contradiction in a set of claims
 
+Slug: identifyAContradictionInASetOfClaims
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show where commitments cannot all be true together under the same meanings and conditions.
+Methodological description: Show where commitments cannot all be true together under the same meanings and conditions.
+User-friendly description: Recognize claims that cannot all be true under the same conditions.
 
 #### Non-deductive Reasoning
+
+Slug: nonDeductiveReasoning
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Many reasonable arguments support conclusions without guaranteeing them. Their strength depends on evidence, alternatives, sampling, or explanatory power rather than formal certainty.
+Methodological description: Many reasonable arguments support conclusions without guaranteeing them. Their strength depends on evidence, alternatives, sampling, or explanatory power rather than formal certainty.
+User-friendly description: Learn to assess reasoning that offers support without guaranteeing certainty.
 
 ##### Evaluate an inductive generalization
 
+Slug: evaluateAnInductiveGeneralization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Judge how well observed cases support a claim about a broader population, including the relevance of selection and variation.
+Methodological description: Judge how well observed cases support a claim about a broader population, including the relevance of selection and variation.
+User-friendly description: Evaluate how well observed examples support a broader generalization.
 
 ##### Evaluate analogical reasoning
 
+Slug: evaluateAnalogicalReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Check whether compared cases share features relevant to the proposed conclusion rather than merely superficial similarities.
+Methodological description: Check whether compared cases share features relevant to the proposed conclusion rather than merely superficial similarities.
+User-friendly description: Compare cases by similarities that actually matter to the conclusion.
 
 ##### Evaluate an inference to the best explanation
 
+Slug: evaluateAnInferenceToTheBestExplanation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare hypotheses by how well they explain evidence, their assumptions, and their fit with alternative explanations.
+Methodological description: Compare hypotheses by how well they explain evidence, their assumptions, and their fit with alternative explanations.
+User-friendly description: Choose between possible explanations using evidence and assumptions.
 
 ##### Distinguish deductive certainty from probabilistic support
 
+Slug: distinguishDeductiveCertaintyFromProbabilisticSupport
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that a well-supported conclusion can remain revisable when the reasoning is non-deductive.
+Methodological description: Recognize that a well-supported conclusion can remain revisable when the reasoning is non-deductive.
+User-friendly description: Distinguish logically certain deductions from conclusions supported by probability.
 
 #### Propositional Logic
+
+Slug: propositionalLogic
+Action: create
+Status: pending
 
 Skills: 9
 
 [Not implemented](#)
 
-Truth-functional connections between propositions determine the logical properties of compound statements. Symbolic operators and truth tables clarify implications independent of the subject matter used in examples.
+Methodological description: Truth-functional connections between propositions determine the logical properties of compound statements. Symbolic operators and truth tables clarify implications independent of the subject matter used in examples.
+User-friendly description: Discover how truth conditions work for statements joined by logical operators.
 
 ##### Distinguish atomic from compound propositions
 
+Slug: distinguishAtomicFromCompoundPropositions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-A proposition can stand alone or form part of a statement built with logical connectives; truth-functional structure differs from the number of words in an ordinary sentence.
+Methodological description: A proposition can stand alone or form part of a statement built with logical connectives; truth-functional structure differs from the number of words in an ordinary sentence.
+User-friendly description: Tell a single proposition apart from one assembled with logical connectives.
 
 ##### Interpret logical negation
 
+Slug: interpretLogicalNegation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine when the denial of a proposition is true and distinguish negation from a stronger contrary statement.
+Methodological description: Determine when the denial of a proposition is true and distinguish negation from a stronger contrary statement.
+User-friendly description: Understand how negating a claim changes its truth conditions.
 
 ##### Interpret logical conjunction
 
+Slug: interpretLogicalConjunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply the truth conditions of logical 'and' while distinguishing conjunction from a chronological or causal relationship.
+Methodological description: Apply the truth conditions of logical 'and' while distinguishing conjunction from a chronological or causal relationship.
+User-friendly description: Recognize when a logical AND statement is true.
 
 ##### Interpret logical disjunction
 
+Slug: interpretLogicalDisjunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply the truth conditions of inclusive 'or' and distinguish these from interpretations that require exactly one alternative.
+Methodological description: Apply the truth conditions of inclusive 'or' and distinguish these from interpretations that require exactly one alternative.
+User-friendly description: Interpret inclusive OR without assuming only one option can be true.
 
 ##### Interpret material implication
 
+Slug: interpretMaterialImplication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine when a conditional is true in classical propositional logic without confusing logical implication with causation.
+Methodological description: Determine when a conditional is true in classical propositional logic without confusing logical implication with causation.
+User-friendly description: Understand when a conditional is true in classical propositional logic.
 
 ##### Interpret logical biconditional
 
+Slug: interpretLogicalBiconditional
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess 'if and only if' statements as two-way conditional relationships, rather than treating either one-way conditional as sufficient.
+Methodological description: Assess 'if and only if' statements as two-way conditional relationships, rather than treating either one-way conditional as sufficient.
+User-friendly description: Recognize that 'if and only if' requires implications in both directions.
 
 ##### Construct a truth table
 
+Slug: constructATruthTable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Enumerate truth-value combinations for atomic propositions and systematically compute outcomes of logical expressions.
+Methodological description: Enumerate truth-value combinations for atomic propositions and systematically compute outcomes of logical expressions.
+User-friendly description: Construct a table of possible truth assignments for a logical expression.
 
 ##### Classify a proposition using a truth table
 
+Slug: classifyAPropositionUsingATruthTable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish tautological, contradictory, and contingent expressions through their truth values under all assignments.
+Methodological description: Distinguish tautological, contradictory, and contingent expressions through their truth values under all assignments.
+User-friendly description: Use truth tables to recognize always-true, always-false and contingent statements.
 
 ##### Test deductive validity using a truth table
 
+Slug: testDeductiveValidityUsingATruthTable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Search for a case in which all premises are true but the conclusion false to determine propositional validity.
+Methodological description: Search for a case in which all premises are true but the conclusion false to determine propositional validity.
+User-friendly description: Check a deduction by searching for true premises with a false conclusion.
 
 #### Predicate Logic
 
+Slug: predicateLogic
+Action: create
+Status: pending
+
 Skills: 6
 
 [Not implemented](#)
 
-Variables and quantifiers permit reasoning about individuals and collections. The relevant universe and scope of each quantifier must be made explicit to evaluate meaning and inference.
+Methodological description: Variables and quantifiers permit reasoning about individuals and collections. The relevant universe and scope of each quantifier must be made explicit to evaluate meaning and inference.
+User-friendly description: Explore how quantifiers express claims about all or some members of a group.
 
 ##### Distinguish predicates from propositions
 
+Slug: distinguishPredicatesFromPropositions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a predicate with an unbound variable as an open expression and a proposition as a statement with specified truth conditions.
+Methodological description: Recognize a predicate with an unbound variable as an open expression and a proposition as a statement with specified truth conditions.
+User-friendly description: Distinguish an open expression about a variable from a complete proposition.
 
 ##### Interpret universal quantification
 
+Slug: interpretUniversalQuantification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine what it means for a property to hold for every element of a specified domain and how one counterexample would matter.
+Methodological description: Determine what it means for a property to hold for every element of a specified domain and how one counterexample would matter.
+User-friendly description: Read a statement that applies to every member of a specified group.
 
 ##### Interpret existential quantification
 
+Slug: interpretExistentialQuantification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine what it means for at least one element of a specified domain to satisfy a property, without implying uniqueness.
+Methodological description: Determine what it means for at least one element of a specified domain to satisfy a property, without implying uniqueness.
+User-friendly description: Understand how 'there exists' means at least one matching example.
 
 ##### Negate a quantified proposition
 
+Slug: negateAQuantifiedProposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use the relationships between not-all and some-not, and between none and there-exists, to interpret negation accurately.
+Methodological description: Use the relationships between not-all and some-not, and between none and there-exists, to interpret negation accurately.
+User-friendly description: Negate statements involving 'all' or 'some' without changing their meaning incorrectly.
 
 ##### Analyze the scope of a quantifier
 
+Slug: analyzeTheScopeOfAQuantifier
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify which variables and expressions are governed by a quantifier and how scope changes the meaning of a formula.
+Methodological description: Identify which variables and expressions are governed by a quantifier and how scope changes the meaning of a formula.
+User-friendly description: Recognize how the placement of a quantifier changes the meaning of a statement.
 
 ##### Evaluate an inference with quantifiers
 
+Slug: evaluateAnInferenceWithQuantifiers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Check whether a conclusion about all or some members of a domain follows from quantified premises under a stated interpretation.
+Methodological description: Check whether a conclusion about all or some members of a domain follows from quantified premises under a stated interpretation.
+User-friendly description: Check whether quantified premises really imply a proposed conclusion.
 
 #### Argumentative Fallacies
+
+Slug: argumentativeFallacies
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-A flaw concerns the relation between claims and reasons, not necessarily the speaker's motives or a named cognitive bias. Context matters: surface wording alone rarely proves fallaciousness.
+Methodological description: A flaw concerns the relation between claims and reasons, not necessarily the speaker's motives or a named cognitive bias. Context matters: surface wording alone rarely proves fallaciousness.
+User-friendly description: Learn to recognize common flaws in the support offered for claims.
 
 ##### Detect an ad hominem fallacy
 
+Slug: detectAnAdHominemFallacy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when a personal attack substitutes for addressing reasons, while distinguishing relevant credibility evidence from irrelevant insults.
+Methodological description: Identify when a personal attack substitutes for addressing reasons, while distinguishing relevant credibility evidence from irrelevant insults.
+User-friendly description: Recognize when a personal attack replaces relevant reasoning.
 
 ##### Detect a straw-man argument
 
+Slug: detectAStrawManArgument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Show where a position is distorted into an easier target and recover the actual view before evaluating it.
+Methodological description: Show where a position is distorted into an easier target and recover the actual view before evaluating it.
+User-friendly description: Notice when someone's position is distorted into an easier argument to attack.
 
 ##### Detect a false dilemma
 
+Slug: detectAFalseDilemma
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify a purported exhaustive choice that overlooks meaningful alternatives or combined possibilities.
+Methodological description: Identify a purported exhaustive choice that overlooks meaningful alternatives or combined possibilities.
+User-friendly description: Find meaningful alternatives hidden by a misleading either-or choice.
 
 ##### Detect circular reasoning
 
+Slug: detectCircularReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize when the offered support presupposes the very claim at issue without independent justification.
+Methodological description: Recognize when the offered support presupposes the very claim at issue without independent justification.
+User-friendly description: Recognize arguments that assume the conclusion they claim to prove.
 
 ##### Detect an equivocation fallacy
 
+Slug: detectAnEquivocationFallacy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace a shift between meanings of the same expression that makes an inference appear stronger than it is.
+Methodological description: Trace a shift between meanings of the same expression that makes an inference appear stronger than it is.
+User-friendly description: Spot when the meaning of a word shifts within an argument.
 
 ##### Evaluate an appeal to authority
 
+Slug: evaluateAnAppealToAuthority
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether expertise is relevant and reliable evidence in context, rather than assuming that invoking any authority proves a conclusion.
+Methodological description: Examine whether expertise is relevant and reliable evidence in context, rather than assuming that invoking any authority proves a conclusion.
+User-friendly description: Decide whether cited expertise is relevant evidence rather than automatic proof.
 
 ### Epistemology and Critical Evaluation
+
+Slug: epistemologyAndCriticalEvaluation
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
-Questions about knowledge concern what can be believed responsibly, what makes claims true, and when confidence should change. This domain applies general standards of justification to testimony and public information; scientific experimental design has its own domain.
+Methodological description: Questions about knowledge concern what can be believed responsibly, what makes claims true, and when confidence should change. This domain applies general standards of justification to testimony and public information; scientific experimental design has its own domain.
+User-friendly description: Explore what makes a belief justified and how to evaluate public information.
 
 #### Knowledge and Justification
 
+Slug: knowledgeAndJustification
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Belief, truth, evidence, and knowledge have distinct roles in epistemic evaluation. Competing theories of knowledge can disagree about exactly how those roles connect.
+Methodological description: Belief, truth, evidence, and knowledge have distinct roles in epistemic evaluation. Competing theories of knowledge can disagree about exactly how those roles connect.
+User-friendly description: Discover how belief, truth, evidence and knowledge relate but differ.
 
 ##### Distinguish belief from knowledge
 
+Slug: distinguishBeliefFromKnowledge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that sincerely accepting a proposition does not by itself establish that it is known, even when the speaker is confident.
+Methodological description: Recognize that sincerely accepting a proposition does not by itself establish that it is known, even when the speaker is confident.
+User-friendly description: Understand why believing a claim sincerely does not automatically make it knowledge.
 
 ##### Distinguish truth from justification
 
+Slug: distinguishTruthFromJustification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why a claim might be true for reasons its holder cannot supply, or well supported yet ultimately false.
+Methodological description: Explain why a claim might be true for reasons its holder cannot supply, or well supported yet ultimately false.
+User-friendly description: Distinguish a claim being true from having good reasons to believe it.
 
 ##### Evaluate reasons for a belief
 
+Slug: evaluateReasonsForABelief
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether offered grounds actually bear on the proposition and withstand plausible objections.
+Methodological description: Determine whether offered grounds actually bear on the proposition and withstand plausible objections.
+User-friendly description: Check whether the reasons offered actually support a belief.
 
 ##### Analyze mathematical proof as justification
 
+Slug: analyzeMathematicalProofAsJustification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine why deductive proof has a distinctive epistemic role in mathematics, distinguishing formal derivability from experimental confirmation and acknowledging debates about proof's explanatory value.
+Methodological description: Examine why deductive proof has a distinctive epistemic role in mathematics, distinguishing formal derivability from experimental confirmation and acknowledging debates about proof's explanatory value.
+User-friendly description: Explore why mathematical proof differs from evidence gathered through experiments.
 
 ##### Compare a priori and empirical justification
 
+Slug: compareAPrioriAndEmpiricalJustification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish support based primarily on reasoning from support requiring experience, without assuming the boundary is universally uncontested.
+Methodological description: Distinguish support based primarily on reasoning from support requiring experience, without assuming the boundary is universally uncontested.
+User-friendly description: Compare knowledge grounded in reasoning with knowledge grounded in experience.
 
 #### Evidence and Testimony
+
+Slug: evidenceAndTestimony
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Knowledge often depends on information supplied by other people or institutions. Source reliability, independence, and evidential fit require appraisal without treating every source as equally trustworthy.
+Methodological description: Knowledge often depends on information supplied by other people or institutions. Source reliability, independence, and evidential fit require appraisal without treating every source as equally trustworthy.
+User-friendly description: Learn to assess claims and evidence passed on by other people.
 
 ##### Distinguish a claim from its evidence
 
+Slug: distinguishAClaimFromItsEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate what someone asserts from the observations, documents, or arguments presented to support it.
+Methodological description: Separate what someone asserts from the observations, documents, or arguments presented to support it.
+User-friendly description: Separate an assertion from the evidence used to support it.
 
 ##### Evaluate testimonial credibility
 
+Slug: evaluateTestimonialCredibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider the speaker's opportunity to know, relevant competence, track record, and possible conflicts without reducing evaluation to popularity.
+Methodological description: Consider the speaker's opportunity to know, relevant competence, track record, and possible conflicts without reducing evaluation to popularity.
+User-friendly description: Evaluate a witness or expert using relevant experience and possible conflicts.
 
 ##### Analyze epistemic injustice
 
+Slug: analyzeEpistemicInjustice
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how prejudicial credibility judgments or unequal interpretive resources can wrong someone in their capacity as a knower, distinct from warranted critical assessment of testimony.
+Methodological description: Examine how prejudicial credibility judgments or unequal interpretive resources can wrong someone in their capacity as a knower, distinct from warranted critical assessment of testimony.
+User-friendly description: Explore how unfair judgments about credibility can prevent people from being heard.
 
 ##### Check corroboration across sources
 
+Slug: checkCorroborationAcrossSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether apparently agreeing accounts are genuinely independent or reproduce one underlying report.
+Methodological description: Determine whether apparently agreeing accounts are genuinely independent or reproduce one underlying report.
+User-friendly description: Check whether several agreeing sources truly provide independent evidence.
 
 ##### Distinguish direct evidence from hearsay
 
+Slug: distinguishDirectEvidenceFromHearsay
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize what a record or witness directly establishes and what depends on another person's retelling.
+Methodological description: Recognize what a record or witness directly establishes and what depends on another person's retelling.
+User-friendly description: Distinguish firsthand records from claims repeated through others.
 
 #### Uncertainty and Skepticism
+
+Slug: uncertaintyAndSkepticism
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Rational inquiry must accommodate incomplete evidence and the possibility of error without collapsing into indiscriminate doubt.
+Methodological description: Rational inquiry must accommodate incomplete evidence and the possibility of error without collapsing into indiscriminate doubt.
+User-friendly description: Discover how to think responsibly when evidence is incomplete.
 
 ##### Calibrate confidence to evidence
 
+Slug: calibrateConfidenceToEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Express degrees of certainty proportionate to the support available and identify what new information could change them.
+Methodological description: Express degrees of certainty proportionate to the support available and identify what new information could change them.
+User-friendly description: Adjust how certain you feel about a claim to match the available evidence.
 
 ##### Recognize the limits of personal knowledge
 
+Slug: recognizeTheLimitsOfPersonalKnowledge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Differentiate what one has observed, inferred, learned from others, or cannot currently establish.
+Methodological description: Differentiate what one has observed, inferred, learned from others, or cannot currently establish.
+User-friendly description: Recognize the difference between what you observed and what you only inferred.
 
 ##### Evaluate a skeptical challenge
 
+Slug: evaluateASkepticalChallenge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether a proposed possibility of error undermines a specific knowledge claim or sets an unrealistically absolute standard.
+Methodological description: Assess whether a proposed possibility of error undermines a specific knowledge claim or sets an unrealistically absolute standard.
+User-friendly description: Evaluate whether a skeptical objection genuinely challenges a particular claim.
 
 ##### Identify a disagreement about evidence standards
 
+Slug: identifyADisagreementAboutEvidenceStandards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish people contesting a factual premise from people applying different thresholds for accepting the same evidence.
+Methodological description: Distinguish people contesting a factual premise from people applying different thresholds for accepting the same evidence.
+User-friendly description: Spot disagreements about the standard of evidence, not only the facts.
 
 #### Media and Public Information
+
+Slug: mediaAndPublicInformation
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Information environments combine reporting, interpretation, promotion, and falsehood. Epistemic evaluation concerns the warrant for public claims, not the psychological mechanics by which messages persuade audiences.
+Methodological description: Information environments combine reporting, interpretation, promotion, and falsehood. Epistemic evaluation concerns the warrant for public claims, not the psychological mechanics by which messages persuade audiences.
+User-friendly description: Learn to investigate reporting, opinions and claims shared in public.
 
 ##### Distinguish reporting from opinion
 
+Slug: distinguishReportingFromOpinion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify whether a passage presents checkable occurrences, interpretation, advocacy, or a mixture requiring separate evaluation.
+Methodological description: Identify whether a passage presents checkable occurrences, interpretation, advocacy, or a mixture requiring separate evaluation.
+User-friendly description: Distinguish factual reporting from interpretation and advocacy.
 
 ##### Trace a public claim to its original source
 
+Slug: traceAPublicClaimToItsOriginalSource
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Follow citations or reposts to determine what a primary document, recording, or dataset actually says.
+Methodological description: Follow citations or reposts to determine what a primary document, recording, or dataset actually says.
+User-friendly description: Follow a claim back to what its original document or recording actually says.
 
 ##### Evaluate evidence behind a headline
 
+Slug: evaluateEvidenceBehindAHeadline
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare a summary with the underlying article or evidence and identify claims that exceed what is documented.
+Methodological description: Compare a summary with the underlying article or evidence and identify claims that exceed what is documented.
+User-friendly description: Compare a headline's promise with evidence provided in the underlying report.
 
 ##### Recognize misleading context in presented evidence
 
+Slug: recognizeMisleadingContextInPresentedEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Detect how cropping, omitted baselines, selective examples, or missing dates can alter the apparent meaning of otherwise genuine material.
+Methodological description: Detect how cropping, omitted baselines, selective examples, or missing dates can alter the apparent meaning of otherwise genuine material.
+User-friendly description: Recognize how omitted dates, cropped images or missing context can mislead.
 
 ##### Distinguish misinformation from deliberate deception claims
 
+Slug: distinguishMisinformationFromDeliberateDeceptionClaims
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify inaccurate information without asserting an author's intention to deceive unless independent evidence supports that inference.
+Methodological description: Identify inaccurate information without asserting an author's intention to deceive unless independent evidence supports that inference.
+User-friendly description: Identify inaccurate claims without assuming a speaker intended to deceive.
 
 ### Philosophy of Science
 
