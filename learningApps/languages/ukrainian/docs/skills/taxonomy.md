@@ -20,337 +20,592 @@ Code files: 0/12 Domains · 0/48 Groups · 0/160 Skills
 
 ### Сприймання усного мовлення
 
+Slug: listeningComprehension
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Зосереджується на розумінні висловлювань, сприйнятих на слух: змістових одиниць, взаємозв'язків і намірів мовця. Відтворення почутого не ототожнюється зі створенням власного усного повідомлення.
+Methodological description: Focuses on understanding spoken utterances: units of meaning, relationships, and the speaker's intent. Reproducing what was heard is distinct from creating an original spoken message.
+User-friendly description: Understand spoken Ukrainian, including the speaker's meaning and intentions.
 
 #### Зміст почутого
+
+Slug: spokenContent
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Виділення смислу й фактів із мовленнєвого потоку, де неможливо спиратися на постійно видимий друкований текст.
+Methodological description: Extract meaning and facts from a stream of speech without relying on permanently visible printed text.
+User-friendly description: Find the important facts and ideas in something you hear.
 
 ##### Тема усного повідомлення
 
+Slug: topicOfSpokenMessage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, про кого або про що йдеться в почутому, не підміняючи тему випадковою подробицею.
+Methodological description: Identify whom or what a spoken message concerns without confusing the subject with an incidental detail.
+User-friendly description: Recognize the subject of a spoken message.
 
 ##### Основна думка усного повідомлення
 
+Slug: mainIdeaOfSpokenMessage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити центральне твердження чи повідомлення, яке об'єднує наведені факти та приклади.
+Methodological description: Identify the central claim or message connecting the facts and examples that were heard.
+User-friendly description: Find the main point behind the details in a spoken message.
 
 ##### Суттєві деталі почутого
 
+Slug: essentialListeningDetails
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зберігати важливі для змісту відомості про учасників, місце, час або умови події.
+Methodological description: Retain information relevant to the meaning, including participants, place, time, or conditions of an event.
+User-friendly description: Remember details that matter to understanding a spoken account.
 
 ##### Послідовність почутих подій
 
+Slug: sequenceOfHeardEvents
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відновлювати порядок дій за почутою розповіддю та словесними вказівками на час.
+Methodological description: Reconstruct the order of actions in a spoken story using verbal time cues.
+User-friendly description: Put events you heard into their correct order.
 
 #### Усні запитання та інструкції
 
+Slug: spokenQuestionsAndInstructions
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Сприймання мовлення, що спрямовує наступну дію слухача або визначає потрібну відповідь.
+Methodological description: Understand speech that guides a listener's next action or specifies the response required.
+User-friendly description: Understand what someone is asking you to do or answer.
 
 ##### Розуміння усної інструкції
 
+Slug: understandSpokenInstruction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати потрібну дію й суттєві обмеження в послідовності словесних вказівок.
+Methodological description: Determine the required action and significant restrictions in a sequence of spoken directions.
+User-friendly description: Follow verbal instructions while noticing their important conditions.
 
 ##### Розуміння усного запитання
 
+Slug: understandSpokenQuestion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, які відомості запитуються: особа, предмет, дія, місце, час, причина чи спосіб.
+Methodological description: Determine what information a spoken question requests: person, object, action, place, time, cause, or manner.
+User-friendly description: Recognize exactly what information a spoken question asks for.
 
 ##### Виявлення незрозумілого в повідомленні
 
+Slug: identifyUnclearSpokenContent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Помічати слово, умову чи зв'язок, без уточнення якого повідомлення може бути витлумачене неправильно.
+Methodological description: Notice a word, condition, or relationship that needs clarification to avoid misunderstanding a message.
+User-friendly description: Recognize when you need clarification to understand what you heard.
 
 #### Намір та інтонація
+
+Slug: spokenIntentAndIntonation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Інтерпретація функції репліки й смислових сигналів, які передаються голосом понад буквальне значення слів.
+Methodological description: Interpret the purpose of an utterance and meaning conveyed by voice beyond the literal words.
+User-friendly description: Use intonation to understand how a speaker means something.
 
 ##### Комунікативна мета почутої репліки
 
+Slug: purposeOfHeardUtterance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти повідомлення, запитання і спонукання за поєднанням змісту та звучання.
+Methodological description: Distinguish statements, questions, and requests or commands using both wording and vocal delivery.
+User-friendly description: Tell whether someone is stating, asking, or requesting something.
 
 ##### Інтонаційний акцент
 
+Slug: intonationalEmphasis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, яку частину висловлювання мовець смислово виділяє зміною голосу.
+Methodological description: Identify which part of an utterance the speaker emphasizes through a change in voice.
+User-friendly description: Notice which words a speaker emphasizes.
 
 ##### Прямо сказане та припущене
 
+Slug: explicitAndInferredContent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відділяти справді повідомлені відомості від власних висновків і здогадів слухача.
+Methodological description: Separate information actually stated by the speaker from the listener's own inferences and guesses.
+User-friendly description: Tell what was actually said from what you only inferred.
 
 ### Усне мовлення та взаємодія
+
+Slug: spokenProductionAndInteraction
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 14
 
 [Not implemented](#)
 
-Охоплює продукування українських усних висловлювань, участь у діалозі й добір мовних засобів до адресата. Монолог, діалог і мовленнєвий етикет розглядаються як різні компетентності.
+Methodological description: Covers producing spoken Ukrainian, participating in dialogue, and adapting language to an audience. Monologue, dialogue, and conversational etiquette are separate competencies.
+User-friendly description: Speak Ukrainian clearly, take part in conversations, and choose appropriate expressions.
 
 #### Формулювання думки
 
+Slug: expressingIdeas
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Створення завершених усних тверджень та обґрунтувань, зрозумілих поза внутрішнім задумом мовця.
+Methodological description: Produce complete spoken statements and reasons that are understandable beyond the speaker's unexpressed intentions.
+User-friendly description: Express complete ideas so listeners can understand your point.
 
 ##### Завершене усне повідомлення
 
+Slug: completeSpokenStatement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати думку так, щоб слухач міг установити предмет і зміст висловлювання.
+Methodological description: Formulate an idea so a listener can identify both its subject and its intended meaning.
+User-friendly description: Make a spoken statement that explains what you mean.
 
 ##### Точність повідомлення фактів
 
+Slug: accurateOralFacts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати відомі дані без додавання непідтверджених обставин і довільних деталей.
+Methodological description: Communicate known information without adding unverified circumstances or arbitrary details.
+User-friendly description: Share facts accurately without inventing details.
 
 ##### Висловлення власної позиції
 
+Slug: expressPersonalPosition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати судження або вподобання як власне ставлення, а не встановлений для всіх факт.
+Methodological description: Present judgments or preferences as one's own views rather than universally established facts.
+User-friendly description: Say what you think while making clear it is your opinion.
 
 ##### Обґрунтування усної думки
 
+Slug: justifySpokenOpinion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Підкріплювати висловлену тезу причиною, спостереженням або змістовним прикладом.
+Methodological description: Support a spoken claim with a reason, observation, or substantive example.
+User-friendly description: Give a reason or example supporting your spoken opinion.
 
 #### Діалог
+
+Slug: dialogue
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Підтримання спільної розмови, в якій кожна нова репліка враховує зміст попередніх.
+Methodological description: Sustain a shared conversation in which each new response takes account of preceding utterances.
+User-friendly description: Take turns in a conversation and respond to what others said.
 
 ##### Постановка запитань
 
+Slug: askRelevantQuestions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати запити, відповідь на які дає справді потрібну для розмови інформацію.
+Methodological description: Formulate questions whose answers provide information genuinely needed for the conversation.
+User-friendly description: Ask questions that help the conversation move forward.
 
 ##### Відповідь по суті
 
+Slug: answerRelevantQuestion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Добирати повідомлення до конкретного запитання, а не замінювати відповідь сторонньою розповіддю.
+Methodological description: Choose a response addressing the actual question rather than substituting an unrelated story.
+User-friendly description: Answer the question you were asked without going off topic.
 
 ##### Уточнення репліки співрозмовника
 
+Slug: clarifyInterlocutorStatement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Просити конкретизувати незрозуміле слово чи думку і перевіряти правильність її сприйняття.
+Methodological description: Ask for a difficult word or idea to be explained and check whether it has been understood correctly.
+User-friendly description: Ask for clarification when someone's meaning is unclear.
 
 ##### Підтримання теми діалогу
 
+Slug: maintainDialogueTopic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов'язувати власну репліку з попередніми, зберігаючи спільний предмет обговорення.
+Methodological description: Connect one's response to earlier turns while maintaining the shared subject of discussion.
+User-friendly description: Keep your replies connected to the conversation's topic.
 
 #### Розповідь, опис та переказ
 
+Slug: narrationDescriptionAndRetelling
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Різні принципи організації монологу: відтворення чужого повідомлення, опис ознак або виклад подій.
+Methodological description: Organize a monologue by retelling another message, describing attributes, or presenting events; these are distinct methods.
+User-friendly description: Explore different ways to retell, narrate, or describe something aloud.
 
 ##### Усний переказ
 
+Slug: oralRetelling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Передавати головний зміст джерела зі збереженням значущих подій і зв'язків без дослівного повтору.
+Methodological description: Reproduce a source's main meaning, significant events, and relationships without repeating it word for word.
+User-friendly description: Retell what you heard or read using your own words.
 
 ##### Усна розповідь
 
+Slug: oralNarration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Організовувати власне повідомлення навколо подій у зрозумілому часовому чи причинному порядку.
+Methodological description: Organize an original account of events in a clear chronological or causal sequence.
+User-friendly description: Tell a story with events in an understandable order.
 
 ##### Усний опис
 
+Slug: oralDescription
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Добирати характерні ознаки предмета, особи чи явища, щоб слухач міг їх уявити або впізнати.
+Methodological description: Select characteristic features of an object, person, or phenomenon so listeners can imagine or recognize it.
+User-friendly description: Describe a person or object so others can picture it.
 
 #### Мовленнєвий етикет
+
+Slug: speechEtiquette
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Доречне використання соціально усталених форм спілкування, які виражають повагу до адресата.
+Methodological description: Use socially established forms of interaction appropriately to show respect for the addressee.
+User-friendly description: Choose polite Ukrainian expressions that suit the situation.
 
 ##### Форми звертання
 
+Slug: appropriateFormsOfAddress
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Добирати звернення з урахуванням адресата, зокрема кличний відмінок і ввічливі форми.
+Methodological description: Select forms of address for the listener, including the vocative case and polite forms.
+User-friendly description: Address people appropriately using Ukrainian forms of politeness.
 
 ##### Етикетні формули
 
+Slug: etiquetteExpressions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Доречно використовувати вітання, прохання, подяку, вибачення і прощання.
+Methodological description: Appropriately use greetings, requests, thanks, apologies, and farewells.
+User-friendly description: Use greetings, thanks, and apologies in suitable situations.
 
 ##### Коректне висловлення незгоди
 
+Slug: respectfulDisagreement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Заперечувати зміст думки без образи особи, підтримуючи предметне обговорення.
+Methodological description: Disagree with the content of a claim without insulting the person, keeping the discussion substantive.
+User-friendly description: Disagree with an idea without attacking the person who expressed it.
 
 ### Звукова система мови
+
+Slug: speechSoundSystem
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Описує звукові одиниці, їхні розрізнювальні ознаки, складову структуру й наголос. Усні звуки тут відокремлено від букв, а норму вимови — від правил написання.
+Methodological description: Describes speech sounds, their distinguishing features, syllable structure, and stress. Spoken sounds are distinguished from letters, and pronunciation standards from spelling rules.
+User-friendly description: Explore the sounds, syllables, and stress patterns of spoken Ukrainian.
 
 #### Звуковий аналіз
+
+Slug: phonemicAnalysis
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Усвідомлення наявності, позиції та порядку звуків у вимовленому слові незалежно від його письмової форми.
+Methodological description: Recognize the presence, position, and order of sounds in a pronounced word independently of how it is written.
+User-friendly description: Identify the sounds you hear inside Ukrainian words.
 
 ##### Виділення звука у слові
 
+Slug: identifySoundInWord
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Впізнавати потрібну звукову одиницю без підміни її назвою відповідної букви.
+Methodological description: Recognize a target speech sound without replacing it with the name of its corresponding letter.
+User-friendly description: Find a particular sound in a spoken word.
 
 ##### Позиція звука у слові
 
+Slug: soundPositionInWord
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, чи стоїть конкретний звук на початку, всередині або наприкінці слова.
+Methodological description: Determine whether a given sound occurs at the beginning, middle, or end of a word.
+User-friendly description: Recognize where a sound appears within a word.
 
 ##### Послідовність звуків
 
+Slug: soundSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати порядок окремих звуків у вимові, зберігаючи повторення й пропуски.
+Methodological description: Determine the order of individual sounds in pronunciation while preserving repetitions and omissions.
+User-friendly description: Put the sounds of a spoken word into the correct order.
 
 ##### Звуковий синтез
 
+Slug: soundBlending
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поєднувати послідовно подані звуки у впізнаване слово української мови.
+Methodological description: Combine sequentially presented speech sounds into a recognizable Ukrainian word.
+User-friendly description: Blend separate sounds to recognize a word.
 
 #### Класи звуків
+
+Slug: soundClasses
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Суттєві фонетичні протиставлення приголосних та голосних, що впливають на вимову й розрізнення слів.
+Methodological description: Identify meaningful phonetic contrasts among consonants and vowels that affect pronunciation and distinguish words.
+User-friendly description: Learn how Ukrainian vowels and consonants differ.
 
 ##### Голосні та приголосні звуки
 
+Slug: vowelAndConsonantSounds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти класи звуків за артикуляцією та звучанням, а не формою літер.
+Methodological description: Distinguish sound classes by articulation and acoustic properties rather than letter shapes.
+User-friendly description: Tell vowel sounds from consonant sounds by how they are spoken.
 
 ##### Тверді й м'які приголосні
 
+Slug: hardAndSoftConsonants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати м'якість як звукову ознаку приголосного, здатну змінювати звуковий образ слова.
+Methodological description: Identify palatalization as a consonant property capable of changing the sound pattern of a word.
+User-friendly description: Recognize the difference between hard and soft Ukrainian consonants.
 
 ##### Дзвінкі й глухі приголосні
 
+Slug: voicedAndVoicelessConsonants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати участь голосу й шуму у звуках та розпізнавати відповідні протиставлення.
+Methodological description: Identify voicing and noise in consonants and recognize the corresponding sound contrasts.
+User-friendly description: Tell voiced and voiceless consonants apart.
 
 #### Склади та наголос
+
+Slug: syllablesAndWordStress
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Ритмічна структура слова, сформована складотворчими голосними та виділенням наголошеного складу.
+Methodological description: Analyze the rhythmic structure of words through syllable-forming vowels and prominence of a stressed syllable.
+User-friendly description: Learn how syllables and stress shape the rhythm of words.
 
 ##### Поділ на склади
 
+Slug: syllableDivision
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати вимовні частини слова, відрізняючи складову межу від межі букв.
+Methodological description: Identify pronounced syllables and distinguish syllable boundaries from boundaries between written letters.
+User-friendly description: Divide spoken words into their syllables.
 
 ##### Кількість складів
 
+Slug: syllableCount
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Установлювати число складових частин за звучанням слова, не рахуючи літери замість них.
+Methodological description: Count syllables by the spoken structure of a word rather than by its letters.
+User-friendly description: Count the syllables you can hear in a word.
 
 ##### Наголошений склад
 
+Slug: stressedSyllable
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Знаходити склад, який мовець виділяє голосом у нормативній вимові.
+Methodological description: Identify the syllable highlighted by stress in standard pronunciation.
+User-friendly description: Find which syllable carries the stress.
 
 ##### Смислорозрізнювальна роль наголосу
 
+Slug: meaningDistinguishingStress
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти випадки, коли місце наголосу змінює значення чи граматичну форму.
+Methodological description: Recognize instances where changing stress position changes lexical meaning or grammatical form.
+User-friendly description: Explore how stress can change what a Ukrainian word means.
 
 #### Фонеми та вимова
+
+Slug: phonemesAndPronunciation
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Смислорозрізнювальна роль звуків та усталені норми їхнього вживання у звучанні українських слів; побудова умовних схем належить до засобів навчання й перевірки.
+Methodological description: Study sounds as meaning-distinguishing units and their standard use in spoken Ukrainian; diagramming them is a teaching or assessment method, not a separate skill.
+User-friendly description: Explore how pronunciation and sound differences affect meaning.
 
 ##### Смислорозрізнювальна функція звука
 
+Slug: phonemicMeaningContrast
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміти, що відмінність між окремими фонемами здатна розрізняти лексичні значення слів; заміна звука є лише одним із способів це показати.
+Methodological description: Understand how differences among phonemes can distinguish lexical meanings; sound replacement is only one way to demonstrate this.
+User-friendly description: Recognize when changing one sound changes a word's meaning.
 
 ##### Нормативна вимова
 
+Slug: standardPronunciation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відтворювати звуки й наголос за літературною нормою, не ототожнюючи вимову з написанням.
+Methodological description: Produce sounds and stress according to standard literary pronunciation without equating pronunciation with spelling.
+User-friendly description: Pronounce Ukrainian words and stress according to the standard.
 
 ### Абетка та графіка
 
