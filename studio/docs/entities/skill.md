@@ -51,6 +51,6 @@ Do not copy a Skill heading into its description. Explain the subject-specific c
 
 The staging taxonomy contains one standalone implementation link per outstanding entity to its verified canonical `*.data.ts` file (full filename displayed); otherwise it contains exactly `[Not implemented](#)` without a field label. UUID literals and identity dictionaries belong in `*.ids.ts`, never Markdown.
 
-**Planned canonical Code location:** `<PackageRoot>/Data/Skills/`, outside `src/`, as static textbook authoring configuration. This is a **prospective layout decision**, not a claim that existing Skill files have already migrated; internal nesting is established by the migration. New [Lesson](./lesson.md) Briefs use relative Skill-file links targeting this layout, with full `.data.ts` basenames as link labels. Mark pre-migration links pending rather than reverting their paths to `src/`; verify file existence once the move is complete.
+**Planned canonical Code location:** `<PackageRoot>/Data/skills/`, outside `src/`, as static textbook authoring configuration. This is a **prospective layout decision**, not a claim that existing Skill files have already migrated; internal nesting is established by the migration. New [Lesson](./lesson.md) Briefs use relative Skill-file links targeting this layout, with full `.data.ts` basenames as link labels. Mark pre-migration links pending rather than reverting their paths to `src/`; verify file existence once the move is complete.
 
 Related entities: [SkillGroup](./skill-group.md), [SkillDomain](./skill-domain.md).
