@@ -28,7 +28,7 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 ## EDITORIAL SLUG
 
-New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug is unique among Skills under the same SkillGroup, or direct Skills under an ungrouped Domain. Reuse under other parents is valid. An approved slug remains stable across name/translation changes; it is not the UUID or an additional runtime `Skill_Config` field. Preserve existing Code paths and UUIDs without silent renaming.
+New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug must be unique across **all Domain, Group and Skill entities in the same textbook taxonomy**, regardless of parent or entity kind; compare case-insensitively. Reuse is allowed only in a different textbook. An approved slug remains stable across name/translation changes; it is distinct from the UUID and is persisted in the generated `Skill_Config.slug` field (optional only for unmigrated legacy Code). Preserve existing Code paths and UUIDs without silent renaming.
 
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
