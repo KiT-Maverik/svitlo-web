@@ -2318,153 +2318,268 @@ User-friendly description: Understand why an economy may produce below or above 
 
 ### Держава та економічна політика
 
+Slug: governmentAndEconomicPolicy
+Action: create
+Status: pending
+
 Groups: 5 · Skills: 17
 
 [Not implemented](#)
 
-Публічний сектор змінює стимули, фінансує спільні потреби й перерозподіляє ресурси. Різні інструменти мають вигоди, витрати, ризики й політичні компроміси; жоден підхід не приймається як універсально правильний.
+Methodological description: The public sector changes incentives, finances shared needs, and redistributes resources. Policy instruments have benefits, costs, risks, and political trade-offs; no single approach is assumed universally correct.
+User-friendly description: Explore how government decisions influence resources, incentives, and economic outcomes.
 
 #### Податки
 
+Slug: taxes
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Обов’язкові платежі забезпечують публічні надходження й можуть змінювати поведінку покупців, працівників та фірм.
+Methodological description: Mandatory payments finance public revenue and can change the behavior of buyers, workers, and firms.
+User-friendly description: Understand how taxes raise public funds and influence decisions.
 
 ##### Прямі та непрямі податки
 
+Slug: directAndIndirectTaxes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти оподаткування доходу або власності та податки на операції й споживання.
+Methodological description: Distinguish taxes on income or property from taxes on transactions and consumption.
+User-friendly description: Tell the difference between taxes on earnings and taxes on purchases.
 
 ##### Податковий тягар
 
+Slug: taxIncidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, на кого фактично лягає економічна вартість податку за різної еластичності попиту й пропозиції.
+Methodological description: Analyze who ultimately bears the economic cost of a tax under different demand and supply elasticities.
+User-friendly description: Explore who really pays the cost of a tax.
 
 ##### Прогресивність оподаткування
 
+Slug: taxProgressivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти прогресивні, пропорційні й регресивні ефективні ставки залежно від бази та структури доходів.
+Methodological description: Distinguish progressive, proportional, and regressive effective tax rates according to the tax base and income structure.
+User-friendly description: Compare how tax burdens change at different income levels.
 
 #### Бюджет та борг
 
+Slug: publicBudgetAndDebt
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Державні видатки і доходи формуються в часі, а дефіцити створюють майбутні зобов’язання й альтернативні витрати.
+Methodological description: Government revenue and spending occur over time; deficits create future obligations and opportunity costs.
+User-friendly description: Discover how public budgets, deficits, and debt are connected.
 
 ##### Доходи й видатки бюджету
 
+Slug: governmentRevenuesAndExpenditures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Класифікувати основні джерела надходжень та призначення витрат публічних фінансів.
+Methodological description: Classify major sources of public revenue and categories of government expenditure.
+User-friendly description: Recognize where government money comes from and where it goes.
 
 ##### Бюджетний дефіцит і профіцит
 
+Slug: budgetDeficitAndSurplus
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати різницю між надходженнями та видатками за період і відрізняти її від накопиченого боргу.
+Methodological description: Calculate the difference between revenue and expenditure over a period and distinguish that flow from accumulated government debt.
+User-friendly description: Understand the difference between a yearly deficit and total public debt.
 
 ##### Стійкість державного боргу
 
+Slug: publicDebtSustainability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати взаємодію боргу, вартості обслуговування, темпів зростання й можливостей фінансування.
+Methodological description: Evaluate how debt, servicing costs, economic growth, and financing capacity interact.
+User-friendly description: Explore what affects a government's ability to manage its debt.
 
 #### Фіскальна та монетарна політика
 
+Slug: fiscalAndMonetaryPolicy
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Макроекономічна стабілізація використовує бюджетні рішення та інструменти центрального банку, але діє із затримками.
+Methodological description: Macroeconomic stabilization employs budget decisions and central-bank instruments, both subject to delays.
+User-friendly description: Compare the main tools used to support economic stability.
 
 ##### Фіскальна стабілізація
 
+Slug: fiscalStabilization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як зміна державних витрат чи податків впливає на сукупний попит і бюджет.
+Methodological description: Analyze how changes in public spending or taxation affect aggregate demand and the government budget.
+User-friendly description: Explore how government spending and taxes may influence economic activity.
 
 ##### Автоматичні стабілізатори
 
+Slug: automaticStabilizers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як податкові надходження та трансферти можуть змінюватися з циклом без нових дискреційних рішень.
+Methodological description: Explain how tax collections and transfers may change through the business cycle without new discretionary decisions.
+User-friendly description: See how taxes and benefits respond automatically when the economy changes.
 
 ##### Монетарна політика
 
+Slug: monetaryPolicy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як центральний банк через ставки й інші інструменти впливає на кредитування, попит і ціни.
+Methodological description: Analyze how central banks use interest rates and other instruments to influence credit, demand, and prices.
+User-friendly description: Explore how a central bank can influence inflation and borrowing.
 
 ##### Трансмісійний механізм монетарної політики
 
+Slug: monetaryTransmissionMechanism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Простежувати передавання змін політичної ставки через ринкові ставки, очікування, валютний курс та витрати.
+Methodological description: Trace how changes in policy interest rates affect market rates, expectations, exchange rates, and spending.
+User-friendly description: Understand how a central bank's decision reaches the wider economy.
 
 #### Суспільні блага та регулювання
+
+Slug: publicGoodsAndRegulation
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Не всі корисні послуги можна ефективно забезпечити через індивідуальні ринкові угоди; регулювання також має власні обмеження.
+Methodological description: Not every beneficial service can be efficiently supplied through individual market transactions; regulation also has limitations.
+User-friendly description: Discover why some needs call for collective provision or regulation.
 
 ##### Суспільні блага
 
+Slug: publicGoods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розпізнавати невиключність і неконкурентність у споживанні та пов’язану проблему безквиткового користування.
+Methodological description: Recognize non-excludability and non-rival consumption and the associated free-rider problem.
+User-friendly description: Understand why some shared goods are difficult to fund through individual purchases.
 
 ##### Зовнішні ефекти
 
+Slug: externalities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти незараховані третім сторонам вигоди чи шкоду та їхнє значення для ефективності ринкових рішень.
+Methodological description: Identify benefits or harms to third parties not reflected in a transaction and their significance for economic efficiency.
+User-friendly description: Spot costs or benefits of economic activity that affect other people.
 
 ##### Недосконалість державного втручання
 
+Slug: governmentFailure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати ризики неякісної інформації, захоплення регулятора, спотворення стимулів і витрат адміністрування.
+Methodological description: Evaluate risks from poor information, regulatory capture, distorted incentives, and administrative costs of intervention.
+User-friendly description: Recognize ways government intervention can fall short of its goals.
 
 ##### Конкурентна політика
 
+Slug: competitionPolicy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати економічні підстави й наслідки протидії картелям, зловживанню ринковою владою та антиконкурентній концентрації; розрізняти захист конкурентного процесу і захист конкретного конкурента.
+Methodological description: Analyze the economic rationale and effects of action against cartels, abuses of market power, and anticompetitive mergers; distinguish protecting the competitive process from protecting a particular competitor.
+User-friendly description: Explore how competition policy addresses cartels and abuses of market power.
 
 #### Перерозподіл та соціальний захист
+
+Slug: redistributionAndSocialProtection
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Трансферти й публічні послуги змінюють розподіл ресурсів і страхують певні соціальні ризики.
+Methodological description: Transfers and public services change resource distribution and insure against specified social risks.
+User-friendly description: Discover how public support can reduce particular financial risks.
 
 ##### Соціальні трансферти
 
+Slug: socialTransfers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати призначення допомог і виплат та їхній вплив на доступні доходи й стимули.
+Methodological description: Analyze the purposes of public benefits and payments and their effects on disposable income and incentives.
+User-friendly description: Explore how social payments change household resources.
 
 ##### Адресність і універсальність підтримки
 
+Slug: targetedAndUniversalBenefits
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати охоплення, адміністративні витрати та ризик виключення нужденних за різного дизайну програм.
+Methodological description: Compare coverage, administrative costs, and the risk of excluding those in need across program designs.
+User-friendly description: Compare support available to everyone with support targeted to particular groups.
 
 ##### Оцінка державної програми
 
+Slug: publicProgramEvaluation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідносити заявлену мету, фактичні результати, альтернативні витрати та небажані наслідки втручання.
+Methodological description: Assess a program's stated objectives, actual outcomes, opportunity costs, and unintended effects.
+User-friendly description: Decide whether a government program achieved its goals and at what cost.
 
 ### Міжнародна економіка
 
