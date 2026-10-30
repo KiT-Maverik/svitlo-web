@@ -18,7 +18,8 @@
 | [Internationalization & Inclusive Access](./internationalization-and-accessibility.md) | Broad locale coverage, semantic LTR/RTL, disability-aware accessibility as a default requirement |
 | [Offline-First & Device Compatibility](./offline-first-and-device-compatibility.md) | Downloadable PWA objective, complete offline learning, media and state storage, capability trade-offs |
 | [Lesson Notes](./lesson-notes.md) | Planned concise recall notes revealed during a lesson and assembled into a learner's revision sheet |
-| [Lesson Editorial Document](./lesson-editorial-document.md) | One canonical Lesson specification shared across role-owned authoring stages; current downstream migration boundary |
+| [Lesson, Content, Section & Program](../entities/lesson.md) | Read entity definitions at [Lesson](../entities/lesson.md), [Lesson Content](../entities/lesson-content.md), [Section](../entities/section.md) and [Program](../entities/program.md) before authoring |
+| [Lesson Editorial Artifacts](./lesson-editorial-document.md) | Separate Methodologist Brief and Screenwriter Content beside each Lesson; independent role ownership and approval |
 | [System Boundaries & Roadmap](./system-boundaries.md) | Lesson vs Program, progress vs assessment, injection/events, IDs and planned registries/sync |
 | [Coding Agent Specializations](./coding-agent-specializations.md) | Existing specialized Skills (including Remotion) and prioritized future ones; specialist subskills supplement one Coding Agent Persona |
 | [Monorepo & Standalone Textbook Architecture](./monorepo-and-textbook.md) | Live `frontend/` / `learningApps/` / `backend/` / `shared/` / `studio/` layout, eight workspaces, dependency graph, extraction constraints |\n| [Stage 8 Migration Audit](./migration-stage-8-audit.md) | Verified extraction owners, CI/guard evidence, known identical Math/Playground source files and remaining work |
