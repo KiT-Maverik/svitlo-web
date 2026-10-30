@@ -3021,89 +3021,154 @@ User-friendly description: Understand how countries learn from technology develo
 
 ### Економіка довкілля та ресурсів
 
+Slug: environmentalAndResourceEconomics
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 9
 
 [Not implemented](#)
 
-Виробництво й споживання залежать від екосистем, ресурсів та здатності довкілля поглинати наслідки діяльності. Фокус — економічні стимули, оцінювання та правила використання природи, а не фізика чи біологія процесів.
+Methodological description: Production and consumption depend on ecosystems, resources, and the environment's capacity to absorb impacts. This domain examines economic incentives, valuation, and rules governing nature rather than the physics or biology of underlying processes.
+User-friendly description: Explore how economic decisions affect natural resources and the environment.
 
 #### Спільні ресурси
+
+Slug: commonPoolResources
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Суперництво у використанні та труднощі обмеження доступу створюють ризики надмірного вилучення.
+Methodological description: Competition for use and difficulty excluding access create the risk of extracting too much from shared resources.
+User-friendly description: Discover why commonly used resources can be overused.
 
 ##### Ресурси спільного користування
 
+Slug: commonPoolResourceCharacteristics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати умови спільного доступу до ресурсів, де використання однією стороною зменшує доступність для інших.
+Methodological description: Identify shared-access resources where use by one participant reduces availability to others.
+User-friendly description: Recognize resources that become scarcer when many people use them.
 
 ##### Виснаження відновлюваних ресурсів
 
+Slug: renewableResourceDepletion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати баланс природного відновлення та темпу вилучення, не ототожнюючи відновлюваність із невичерпністю.
+Methodological description: Analyze the balance between natural replenishment and extraction rates, without equating renewable resources with inexhaustible ones.
+User-friendly description: Explore why even renewable resources can be depleted.
 
 ##### Управління спільними ресурсами
 
+Slug: commonResourceGovernance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати квоти, права користування, локальні домовленості та моніторинг як способи узгодження стимулів.
+Methodological description: Compare quotas, usage rights, local agreements, and monitoring as ways to align incentives for shared-resource management.
+User-friendly description: Compare rules that can help communities protect shared resources.
 
 #### Екологічні стимули та політика
+
+Slug: environmentalIncentivesAndPolicy
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Забруднення й інші зовнішні ефекти можна коригувати інструментами з різними витратами та наслідками.
+Methodological description: Pollution and other externalities can be addressed with instruments that have differing costs and consequences.
+User-friendly description: Explore economic policies that encourage less pollution.
 
 ##### Соціальна вартість забруднення
 
+Slug: socialCostOfPollution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати шкоду, яка не входить до приватних витрат забруднювача, у межах визначених припущень.
+Methodological description: Evaluate harms not included in a polluter's private costs under stated assumptions.
+User-friendly description: Recognize pollution costs that fall on other people.
 
 ##### Екологічний податок
 
+Slug: environmentalTaxes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати, як платіж за забруднення змінює стимули скорочувати викиди.
+Methodological description: Analyze how a charge for pollution changes incentives to reduce emissions.
+User-friendly description: See how charging for pollution can encourage cleaner choices.
 
 ##### Торгівля дозволами на викиди
 
+Slug: emissionsPermitTrading
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати механізм обмеження сукупних викидів і передачі дозволів між учасниками.
+Methodological description: Explain limits on total emissions and transfers of allowances among participants.
+User-friendly description: Discover how trading pollution permits works under an emissions cap.
 
 ##### Економічна оцінка екологічного проєкту
 
+Slug: economicAppraisalOfEnvironmentalProjects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зіставляти фінансові та ширші суспільні вигоди й витрати, вказуючи на невизначеність оцінок.
+Methodological description: Compare financial and wider social benefits and costs while explicitly acknowledging uncertainty in estimates.
+User-friendly description: Assess whether an environmental project offers benefits worth its costs.
 
 #### Стійкість та міжчасовий вибір
+
+Slug: sustainabilityAndIntertemporalChoice
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Рішення сьогодні можуть змінювати майбутню доступність ресурсів, ризики та добробут поколінь.
+Methodological description: Present decisions can change future resource availability, risks, and wellbeing across generations.
+User-friendly description: Explore how today's choices influence the resources left for tomorrow.
 
 ##### Міжпоколінні економічні наслідки
 
+Slug: intergenerationalEconomicImpacts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати розподіл майбутніх вигід і шкоди за рішеннями, прийнятими сьогодні.
+Methodological description: Evaluate how benefits and harms from current decisions are distributed among future generations.
+User-friendly description: Consider who gains or loses from decisions across generations.
 
 ##### Дисконтування майбутніх наслідків
 
+Slug: discountingFutureConsequences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Порівнювати економічні результати в різні моменти часу й пояснювати етичну чутливість вибору ставки.
+Methodological description: Compare economic consequences arising at different times and explain the ethical sensitivity of selecting a discount rate.
+User-friendly description: Explore why the value assigned to future outcomes changes an evaluation.
 
 ### Економічні дані та дослідження
 
