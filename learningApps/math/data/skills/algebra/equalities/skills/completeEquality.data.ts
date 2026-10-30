@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { equalities_Skills_Ids } from './index.ids';
 
 export const completeEquality_Skill_Data = buildSkillConfig({
-  id: equalities_Skills_Ids.completeEquality,
+  id: 'b10f275e-3774-4e50-8450-b3da6be099af',
   name: {
     en: "Completing a true equality",
     lt: "Teisingos lygybės užpildymas",

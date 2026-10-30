@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { equalities_SkillGroup_Ids } from './equalities.ids';
 import { equalities_Skills_Ids } from './skills/index.ids';
 
 export const equalities_SkillGroup_Data = buildSkillGroupConfig({
-  id: equalities_SkillGroup_Ids.equalities,
+  id: 'b5bc6d15-c8cb-41ad-8227-54a473c1dc38',
   name: {
     en: "Equalities",
     lt: "Lygybės",

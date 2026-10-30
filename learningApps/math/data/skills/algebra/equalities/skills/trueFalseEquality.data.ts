@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { equalities_Skills_Ids } from './index.ids';
 
 export const trueFalseEquality_Skill_Data = buildSkillConfig({
-  id: equalities_Skills_Ids.trueFalseEquality,
+  id: '7dca0048-581a-4cff-9fa4-670cb7655505',
   name: {
     en: "Checking numerical equalities and inequalities",
     lt: "Skaitinių lygybių ir nelygybių tikrinimas",

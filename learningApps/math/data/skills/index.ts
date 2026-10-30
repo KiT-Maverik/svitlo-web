@@ -1,4 +1,4 @@
-export { algebra_SkillDomain_Data } from './algebra/index.data';
+export { algebra_SkillDomain_Data } from './algebra/algebra.data';
 export { arithmetic_SkillDomain_Data } from './arithmetic/index.data';
 export { counting_SkillDomain_Data } from './counting/index.data';
 export { data_SkillDomain_Data } from './data/index.data';

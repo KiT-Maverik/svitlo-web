@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { algebra_SkillDomain_Ids } from './algebra.ids';
 import { algebra_SkillGroups_Ids } from './index.ids';
 
 export const algebra_SkillDomain_Data = buildSkillDomainConfig({
-  id: algebra_SkillDomain_Ids.algebra,
+  id: '5b1cb581-be28-4de4-a854-b32fbfea95d7',
   name: {
     en: "Algebra",
     lt: "Algebra",

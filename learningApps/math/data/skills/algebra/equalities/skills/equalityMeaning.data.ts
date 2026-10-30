@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { equalities_Skills_Ids } from './index.ids';
 
 export const equalityMeaning_Skill_Data = buildSkillConfig({
-  id: equalities_Skills_Ids.equalityMeaning,
+  id: '974af868-5b72-4a5a-a88e-8f7e03e48661',
   name: {
     en: "Understanding the equals sign",
     lt: "Lygybės ženklo reikšmės supratimas",
