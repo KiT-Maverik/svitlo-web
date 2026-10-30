@@ -318,11 +318,12 @@ Target skills:
 
 #### 06 - Лінійка та сантиметр
 File: [Лінійка та сантиметр](./grade-1/04-heometriia-ta-vymiriuvannia/06-liniika-ta-santymetr/README.md)
-Goal: Measure from a ruler's zero mark and draw a given length.
+Goal: Use a ruler, measure a segment in centimeters, and draw a segment of a given length.
 Count centimeter intervals rather than tick marks; use a consistent virtual scale.
 Target skills:
-- [Starting ruler measurements at zero](../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
-- [Measuring and drawing segments in centimeters](../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
+- [Using a ruler](../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
+- [Measuring segments in centimeters](../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
+- [Drawing segments of a given length in centimeters](../../src/data/skillsTaxonomy/measurement/length/skills/drawSegmentCentimeters.data.ts)
 
 #### 07 - Важче та місткіше
 File: [Важче та місткіше](./grade-1/04-heometriia-ta-vymiriuvannia/07-vazhche-ta-mistkishe/README.md)
@@ -370,10 +371,9 @@ Target skills:
 
 #### 04 - Сортуємо й рахуємо дані
 File: [Сортуємо й рахуємо дані](./grade-1/05-chas-hroshi-dani/04-sortuiemo-i-rakhuiemo-dani/README.md)
-Goal: Classify objects and count each category.
-Choose a sorting attribute, assign each item once, and check category totals.
+Goal: Collect and count observations in each category.
+Use predefined categories, tally each observation once, and check category totals.
 Target skills:
-- [Classifying objects by attributes](../../src/data/skillsTaxonomy/data/collection/skills/classifyByAttribute.data.ts)
 - [Counting category frequencies](../../src/data/skillsTaxonomy/data/collection/skills/collectCounts.data.ts)
 
 #### 05 - Прості таблиці й піктограми

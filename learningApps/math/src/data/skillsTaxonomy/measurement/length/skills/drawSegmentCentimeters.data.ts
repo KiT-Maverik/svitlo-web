@@ -1,0 +1,37 @@
+import { buildSkillConfig } from '@svitlo/engine/taxonomy';
+import { length_Skills_Ids } from './index.ids';
+
+export const drawSegmentCentimeters_Skill_Data = buildSkillConfig({
+  id: length_Skills_Ids.drawSegmentCentimeters,
+  name: {
+    en: "Drawing segments of a given length in centimeters",
+    lt: "Nurodyto ilgio atkarpų braižymas centimetrais",
+    lv: "Noteikta garuma nogriežņu zīmēšana centimetros",
+    et: "Etteantud pikkusega lõikude joonestamine sentimeetrites",
+    be: "Пабудова адрэзкаў зададзенай даўжыні ў сантымэтрах",
+    ka: "მოცემული სიგრძის მონაკვეთების დახაზვა სანტიმეტრებში",
+    kk: "Берілген ұзындықтағы кесінділерді сантиметрмен сызу",
+    zh: "画出指定厘米长度的线段",
+    hi: "सेंटीमीटर में दी गई लंबाई के रेखाखंड बनाना",
+    es: "Trazar segmentos de una longitud dada en centímetros",
+    ar: "رسم قطع مستقيمة بطول محدد بالسنتيمتر",
+    fr: "Tracer des segments d'une longueur donnée en centimètres",
+    bn: "সেন্টিমিটারে নির্দিষ্ট দৈর্ঘ্যের রেখাংশ আঁকা",
+    pt: "Traçar segmentos de comprimento dado em centímetros",
+    ur: "سینٹی میٹر میں دی گئی لمبائی کے خطی قطعے کھینچنا",
+    id: "Menggambar ruas garis dengan panjang tertentu dalam sentimeter",
+    de: "Strecken vorgegebener Länge in Zentimetern zeichnen",
+    ja: "指定された長さの線分をセンチメートルで描く",
+    ko: "주어진 센티미터 길이로 선분 그리기",
+    tr: "Santimetre cinsinden verilen uzunlukta doğru parçası çizme",
+    vi: "Vẽ đoạn thẳng có độ dài cho trước bằng xăng-ti-mét",
+    ta: "சென்டிமீட்டரில் கொடுக்கப்பட்ட நீளத்தில் கோட்டுத்துண்டு வரைதல்",
+    te: "సెంటీమీటర్లలో ఇచ్చిన పొడవుతో రేఖాఖండాన్ని గీయడం",
+    mr: "सेंटिमीटरमध्ये दिलेल्या लांबीचा रेषाखंड काढणे",
+    ms: "Melukis segmen garis dengan panjang yang diberikan dalam sentimeter",
+    he: "שרטוט קטעים באורך נתון בסנטימטרים",
+    pl: "Rysowanie odcinków o zadanej długości w centymetrach",
+    uk: "Креслення відрізків заданої довжини в сантиметрах",
+  },
+  description: { methodological: "Construct a straight line segment of a specified length in centimeters: align a ruler at zero, mark the required endpoint, and draw the segment with the correct length. This is a construction competency distinct from reading the length of an existing segment." },
+});

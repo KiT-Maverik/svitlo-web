@@ -1,6 +1,7 @@
 export { addSubtractLengths_Skill_Data } from './addSubtractLengths.data';
 export { compareLength_Skill_Data } from './compareLength.data';
 export { decimeters_Skill_Data } from './decimeters.data';
+export { drawSegmentCentimeters_Skill_Data } from './drawSegmentCentimeters.data';
 export { estimateLength_Skill_Data } from './estimateLength.data';
 export { kilometers_Skill_Data } from './kilometers.data';
 export { measureCentimeters_Skill_Data } from './measureCentimeters.data';
