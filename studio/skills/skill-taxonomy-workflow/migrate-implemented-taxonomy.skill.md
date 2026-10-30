@@ -8,7 +8,7 @@ Walk the existing `<PackageRoot>/docs/skills/taxonomy.md` from **top to bottom**
 
 ## REQUIRED INPUT
 
-- Specific textbook PackageRoot; actual current staging Markdown file and its last approved revision; an approved list/scope of entries to promote.
+- Specific textbook PackageRoot; actual current staging Markdown file and its last approved revision; an approved list/scope of entries to promote. The canonical **new** Code destination is `<PackageRoot>/Data/skills/` (individual textbook root, not monorepo root). Mathematics' `learningApps/math/src/data/skillsTaxonomy/` remains legacy and unmigrated; inspect the explicitly selected source root and never silently mix populated roots.
 - The code tree, package source exports, `Skill_Config` / `SkillGroup_Config` / `SkillDomain_Config`, builders, `*.ids.ts` and current `DEFAULT_SUPPORTED_LANGUAGES`.
 - Any editor-approved semantic changes since the original taxonomy, and documented national/subject-specific terminology exceptions.
 
