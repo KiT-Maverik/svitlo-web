@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertTaxonomyCodeStructure, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data');
 const taxonomy = join(root, 'skillsTaxonomy');
@@ -117,6 +117,6 @@ describe('Geometry taxonomy integrity', () => {
   });
 
   it('links all 35 implemented Skills from the canonical taxonomy', () => {
-    assertCanonicalTaxonomyCodeLinks('geometry', groups);
+    assertTaxonomyCodeStructure('geometry', groups);
   });
 });

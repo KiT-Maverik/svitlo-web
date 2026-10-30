@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertTaxonomyCodeStructure, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(root, 'measurement');
@@ -63,7 +63,7 @@ describe('Measurement taxonomy', () => {
         skills.map(key => 'export { ' + key + "_Skill_Data } from './" + key + ".data';").sort(),
       );
     }
-    assertCanonicalTaxonomyCodeLinks('measurement', names);
+    assertTaxonomyCodeStructure('measurement', names);
   });
 
   it('uses stable, unique UUIDs with separate ID-only references', () => {

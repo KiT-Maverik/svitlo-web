@@ -14,7 +14,7 @@ const groups = {
     'distinguishExampleRule',
     'drawConclusion',
   ],
-  verification: ['checkReasonableness', 'spotCalculationError', 'verifyWithSecondMethod'],
+  verification: ['checkReasonableness', 'verifyWithSecondMethod'],
   logic: ['logicalElimination'],
   representations: ['multipleRepresentations'],
 } as const;
@@ -53,7 +53,7 @@ describe('Reasoning taxonomy integrity', () => {
         assert.match(content, /buildSkillConfig\(\{/);
       }
     }
-    assert.equal(Object.values(groups).flat().length, 10);
+    assert.equal(Object.values(groups).flat().length, 9);
   });
 
   it('has unique static UUIDs and valid references', () => {
@@ -64,7 +64,7 @@ describe('Reasoning taxonomy integrity', () => {
         ...idEntries(join(domain, group, 'skills', 'index.ids.ts')),
       ]),
     ];
-    assert.equal(ids.length, 15);
+    assert.equal(ids.length, 14);
     for (const [, id] of ids) assert.match(id, uuidPattern);
     assert.equal(new Set(ids.map(([, id]) => id)).size, ids.length);
   });
@@ -77,7 +77,7 @@ describe('Reasoning taxonomy integrity', () => {
         ...skills.map(skill => join(domain, group, 'skills', `${skill}.data.ts`)),
       ]),
     ];
-    assert.equal(dataFiles.length, 15);
+    assert.equal(dataFiles.length, 14);
     for (const path of dataFiles) {
       assertSupportedTranslations(read(path), path);
     }

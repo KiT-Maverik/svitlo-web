@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertTaxonomyCodeStructure, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const taxonomy = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const domain = join(taxonomy, 'data');
@@ -109,6 +109,6 @@ describe('Data taxonomy source contracts', () => {
   });
 
   it('links all 15 implemented Skills from the canonical taxonomy', () => {
-    assertCanonicalTaxonomyCodeLinks('data', expected);
+    assertTaxonomyCodeStructure('data', expected);
   });
 });

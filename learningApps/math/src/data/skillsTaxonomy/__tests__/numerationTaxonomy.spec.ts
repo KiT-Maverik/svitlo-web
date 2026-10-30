@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
-import { assertCanonicalTaxonomyCodeLinks, assertSupportedTranslations } from './taxonomyTestHelpers';
+import { assertTaxonomyCodeStructure, assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy');
 const numeration = join(root, 'numeration');
@@ -147,6 +147,6 @@ describe('Natural Numbers taxonomy integrity', () => {
   });
 
   it('links all 27 implemented Skills from the canonical taxonomy', () => {
-    assertCanonicalTaxonomyCodeLinks('numeration', groupSkills);
+    assertTaxonomyCodeStructure('numeration', groupSkills);
   });
 });

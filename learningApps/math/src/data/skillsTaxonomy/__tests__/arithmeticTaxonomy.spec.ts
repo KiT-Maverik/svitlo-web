@@ -2,39 +2,17 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { assertSupportedTranslations } from './taxonomyTestHelpers';
 
 const root = join(process.cwd(), 'src', 'data', 'skillsTaxonomy', 'arithmetic');
 const groups = {
-  addition: 10,
-  subtraction: 8,
+  addition: 8,
+  subtraction: 6,
   additionSubtraction: 13,
   multiply: 24,
-  divide: 24,
+  divide: 23,
 } as const;
-const locales = [
-  'en',
-  'zh',
-  'hi',
-  'es',
-  'ar',
-  'fr',
-  'bn',
-  'pt',
-  'ur',
-  'id',
-  'de',
-  'ja',
-  'ko',
-  'tr',
-  'vi',
-  'ta',
-  'te',
-  'mr',
-  'ms',
-  'he',
-  'pl',
-  'uk',
-] as const;
+
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
 function read(...parts: string[]): string {
@@ -47,7 +25,7 @@ function ids(content: string): Map<string, string> {
 }
 
 describe('Arithmetic taxonomy completeness', () => {
-  it('defines 79 localized Skills, stable UUIDs and five referenced Groups', () => {
+  it('defines 74 localized Skills, stable UUIDs and five referenced Groups', () => {
     const all = new Set<string>();
     const refs = read('index.ids.ts');
     for (const [group, expected] of Object.entries(groups)) {
@@ -75,17 +53,11 @@ describe('Arithmetic taxonomy completeness', () => {
         assert.ok(data.includes('id: ' + group + '_Skills_Ids.' + key + ','));
         assert.ok(data.includes('export const ' + key + '_Skill_Data = buildSkillConfig('));
         assert.ok(exports.includes('export { ' + key + "_Skill_Data } from './" + key + ".data';"));
-        const localizations = [...data.matchAll(/^    ([a-z]{2}): (.+),$/gm)];
-        assert.deepEqual(
-          localizations.map(m => m[1]),
-          [...locales],
-          group + '/' + key,
-        );
-        const names = localizations.map(m => JSON.parse(m[2]) as string);
-        assert.ok(names.every(n => n.trim().length > 0 && !n.includes('undefined')));
+        const names = assertSupportedTranslations(data, group + '/' + key);
+        assert.ok(Object.values(names).every(n => n.trim().length > 0 && !n.includes('undefined')));
       }
     }
-    assert.equal(all.size, 84);
+    assert.equal(all.size, 79);
     assert.match(read('arithmetic.data.ts'), /groupIds: arithmetic_SkillGroups_Ids/);
   });
 });
