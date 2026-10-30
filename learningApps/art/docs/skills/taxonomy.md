@@ -2635,301 +2635,531 @@ User-friendly description: Recognize when a graph's scale or design gives a misl
 
 ### Architecture and Urban Arts
 
+Slug: architectureAndUrbanArts
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 16
 
 [Not implemented](#)
 
-Buildings, streets and public spaces are experienced as artistic spatial compositions and cultural symbols. Structural mechanics, building safety and infrastructure engineering remain elsewhere.
+Methodological description: Buildings, streets and public spaces are experienced as artistic spatial compositions and cultural symbols. Structural mechanics, building safety and infrastructure engineering remain elsewhere.
+User-friendly description: Discover how buildings, streets and public spaces create visual and cultural experiences.
 
 #### Architectural Space
 
+Slug: architecturalSpace
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Proportion, enclosure and movement shape the sensory experience of a building.
+Methodological description: Proportion, enclosure and movement shape the sensory experience of a building.
+User-friendly description: Explore how the sizes and connections of spaces shape what a building feels like.
 
 ##### Analyze Spatial Proportions
 
+Slug: analyzeSpatialProportions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the sizes of rooms and openings to apparent scale and atmosphere.
+Methodological description: Relate the sizes of rooms and openings to apparent scale and atmosphere.
+User-friendly description: Notice how room sizes and openings influence the sense of scale and atmosphere.
 
 ##### Read Architectural Plans
 
+Slug: readArchitecturalPlans
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret spatial symbols to infer rooms, paths and relationships of enclosure.
+Methodological description: Interpret spatial symbols to infer rooms, paths and relationships of enclosure.
+User-friendly description: Use plan symbols to understand rooms, connections and routes through a building.
 
 ##### Analyze Building Circulation
 
+Slug: analyzeBuildingCirculation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how entrances, routes and thresholds guide movement through a building.
+Methodological description: Explain how entrances, routes and thresholds guide movement through a building.
+User-friendly description: See how entrances and pathways guide people through a space.
 
 ##### Compose a Spatial Sequence
 
+Slug: composeASpatialSequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange connected spaces to create deliberate changes in focus or openness.
+Methodological description: Arrange connected spaces to create deliberate changes in focus or openness.
+User-friendly description: Arrange connected spaces to create purposeful changes in openness and focus.
 
 #### Architectural Form and Style
 
+Slug: architecturalFormAndStyle
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Building volumes, facade rhythms and ornament carry expressive meaning independently of engineering feasibility.
+Methodological description: Building volumes, facade rhythms and ornament carry expressive meaning independently of engineering feasibility.
+User-friendly description: Explore how building shapes and decorative details express architectural ideas.
 
 ##### Analyze a Building Facade
 
+Slug: analyzeABuildingFacade
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the organization of solids, openings and repeated exterior features.
+Methodological description: Explain the organization of solids, openings and repeated exterior features.
+User-friendly description: Read the visual pattern of walls, windows and openings on a building's exterior.
 
 ##### Compose Architectural Massing
 
+Slug: composeArchitecturalMassing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange volumes and voids into a coherent visual building form.
+Methodological description: Arrange volumes and voids into a coherent visual building form.
+User-friendly description: Combine building volumes and open spaces into a balanced visual form.
 
 ##### Interpret Architectural Ornament
 
+Slug: interpretArchitecturalOrnament
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate decorative features to meaning, period or cultural context.
+Methodological description: Relate decorative features to meaning, period or cultural context.
+User-friendly description: Explore what architectural decoration communicates in its historical setting.
 
 ##### Compare Architectural Styles
 
+Slug: compareArchitecturalStyles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish formal conventions in specific historical and regional settings.
+Methodological description: Distinguish formal conventions in specific historical and regional settings.
+User-friendly description: Compare architectural styles using their forms and cultural contexts.
 
 #### Urban Composition
 
+Slug: urbanComposition
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-The arrangement of streets, building fronts and public gathering places contributes to city identity and experience.
+Methodological description: The arrangement of streets, building fronts and public gathering places contributes to city identity and experience.
+User-friendly description: Discover how the arrangement of streets and public places shapes a city's character.
 
 ##### Analyze a Streetscape
 
+Slug: analyzeAStreetscape
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how paths, buildings and edges shape the appearance of a street.
+Methodological description: Explain how paths, buildings and edges shape the appearance of a street.
+User-friendly description: Examine how buildings, paths and edges make a street feel distinctive.
 
 ##### Design a Public Square
 
+Slug: designAPublicSquare
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize activity, movement and visual emphasis in an inclusive civic place.
+Methodological description: Organize activity, movement and visual emphasis in an inclusive civic place.
+User-friendly description: Arrange a welcoming public square for gathering, movement and visual interest.
 
 ##### Interpret Urban Landmarks
 
+Slug: interpretUrbanLandmarks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how distinctive spaces support orientation and shared identity.
+Methodological description: Explain how distinctive spaces support orientation and shared identity.
+User-friendly description: Explore how distinctive places help people find their way and feel connected.
 
 ##### Compare Urban Spatial Patterns
 
+Slug: compareUrbanSpatialPatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate street grids, irregular networks and open spaces to urban experience.
+Methodological description: Relate street grids, irregular networks and open spaces to urban experience.
+User-friendly description: Compare different street patterns and the experiences they create.
 
 #### Landscape and Public Art
+
+Slug: landscapeAndPublicArt
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Outdoor artworks and landscape compositions respond to specific sites and the people who use them.
+Methodological description: Outdoor artworks and landscape compositions respond to specific sites and the people who use them.
+User-friendly description: Use landscape and outdoor art to respond to places and their communities.
 
 ##### Compose a Landscape View
 
+Slug: composeALandscapeView
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange depth planes, plant forms and focal elements within an outdoor scene.
+Methodological description: Arrange depth planes, plant forms and focal elements within an outdoor scene.
+User-friendly description: Arrange plants, views and focal features into a compelling outdoor composition.
 
 ##### Design Site-Specific Art
 
+Slug: designSiteSpecificArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Adapt artistic form to a location's scale, history and use.
+Methodological description: Adapt artistic form to a location's scale, history and use.
+User-friendly description: Create art that responds to the location where people encounter it.
 
 ##### Analyze Public Art
 
+Slug: analyzePublicArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how placement and community context affect access and reception.
+Methodological description: Explain how placement and community context affect access and reception.
+User-friendly description: Explore how a public artwork's location affects its meaning and accessibility.
 
 ##### Integrate Art with Architecture
 
+Slug: integrateArtWithArchitecture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Develop a purposeful artistic relationship between an intervention and built space.
+Methodological description: Develop a purposeful artistic relationship between an intervention and built space.
+User-friendly description: Design an artistic addition that relates purposefully to a building or space.
 
 ### Digital and Interactive Arts
+
+Slug: digitalAndInteractiveArts
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 19
 
 [Not implemented](#)
 
-Digital creative techniques provide editable imagery, audience-responsive experiences and rule-generated variation. The artistic design of outcomes is distinct from computer science implementation.
+Methodological description: Digital creative techniques provide editable imagery, audience-responsive experiences and rule-generated variation. The artistic design of outcomes is distinct from computer science implementation.
+User-friendly description: Create expressive digital images, interactive experiences and art shaped by rules and variation.
 
 #### Digital Images
 
+Slug: digitalImages
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Pixel and path-based media allow complementary approaches to composition and selective revision.
+Methodological description: Pixel and path-based media allow complementary approaches to composition and selective revision.
+User-friendly description: Make digital pictures using pixels, shapes, layers and selective changes.
 
 ##### Create Raster Art
 
+Slug: createRasterArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Build an intentional pixel-based image using marks, tone and layered edits.
+Methodological description: Build an intentional pixel-based image using marks, tone and layered edits.
+User-friendly description: Build pixel-based images with deliberate colors, marks and layers.
 
 ##### Create Vector Art
 
+Slug: createVectorArt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize curves and shapes that remain coherent across changes in display scale.
+Methodological description: Organize curves and shapes that remain coherent across changes in display scale.
+User-friendly description: Create scalable images using editable digital curves and shapes.
 
 ##### Use Digital Masks
 
+Slug: useDigitalMasks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control selective visibility and alteration of parts of a composition.
+Methodological description: Control selective visibility and alteration of parts of a composition.
+User-friendly description: Hide or reveal parts of an image to make precise changes.
 
 ##### Create Digital Collage
 
+Slug: createDigitalCollage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine images or fragments so their juxtaposition creates a new meaning.
+Methodological description: Combine images or fragments so their juxtaposition creates a new meaning.
+User-friendly description: Combine digital images to create new relationships and meanings.
 
 #### Participatory Art
 
+Slug: participatoryArt
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Interaction and visitor choices can form part of a work's artistic expression rather than merely controlling a viewer.
+Methodological description: Interaction and visitor choices can form part of a work's artistic expression rather than merely controlling a viewer.
+User-friendly description: Explore artworks in which audience choices become part of the experience.
 
 ##### Design Artistic Interaction
 
+Slug: designArtisticInteraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect an audience action with an intentional aesthetic state change.
+Methodological description: Connect an audience action with an intentional aesthetic state change.
+User-friendly description: Design an interaction that changes an artwork in an expressive way.
 
 ##### Create Branching Art Narratives
 
+Slug: createBranchingArtNarratives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize viewer decisions that lead to meaningfully different narrative experiences.
+Methodological description: Organize viewer decisions that lead to meaningfully different narrative experiences.
+User-friendly description: Let an audience's choices lead to different meaningful story paths.
 
 ##### Analyze Audience Participation
 
+Slug: analyzeAudienceParticipation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how participant contributions alter authorship, sequence or interpretation.
+Methodological description: Examine how participant contributions alter authorship, sequence or interpretation.
+User-friendly description: Explore how participation can change who shapes an artwork and what it means.
 
 ##### Design Multisensory Relationships
 
+Slug: designMultisensoryRelationships
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate image, movement, sound or tactile response as expressive elements.
+Methodological description: Coordinate image, movement, sound or tactile response as expressive elements.
+User-friendly description: Combine sound, images, movement or touch into one artistic experience.
 
 #### Generative Art
 
+Slug: generativeArt
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Constraints, transformations and automated variation offer materials that still require deliberate artistic decisions.
+Methodological description: Constraints, transformations and automated variation offer materials that still require deliberate artistic decisions.
+User-friendly description: Explore how simple rules and controlled variation can make visual art.
 
 ##### Create Generative Visual Rules
 
+Slug: createGenerativeVisualRules
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define a transformation that yields a coherent family of related visual outcomes.
+Methodological description: Define a transformation that yields a coherent family of related visual outcomes.
+User-friendly description: Create a visual rule that produces different but related images.
 
 ##### Use Artistic Randomness
 
+Slug: useArtisticRandomness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Control ranges and distributions to produce bounded and purposeful variation.
+Methodological description: Control ranges and distributions to produce bounded and purposeful variation.
+User-friendly description: Use controlled chance to create surprising variations within your artistic plan.
 
 ##### Curate Generative Outputs
 
+Slug: curateGenerativeOutputs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select, reject or revise generated results according to expressive criteria.
+Methodological description: Select, reject or revise generated results according to expressive criteria.
+User-friendly description: Choose and improve generated images based on your artistic goals.
 
 ##### Analyze Generative Authorship
 
+Slug: analyzeGenerativeAuthorship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish contributions from source material, tools, rule choices and human curation.
+Methodological description: Distinguish contributions from source material, tools, rule choices and human curation.
+User-friendly description: Explore how artists, tools, source material and rules contribute to generated art.
 
 #### Digital Three-Dimensional Art
+
+Slug: digitalThreeDimensionalArt
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-A digital scene requires modeling of volume, material appearance, lighting and viewpoint; the focus is expressive representation, not implementing a rendering engine.
+Methodological description: A digital scene requires modeling of volume, material appearance, lighting and viewpoint; the focus is expressive representation, not implementing a rendering engine.
+User-friendly description: Build expressive virtual spaces through modeling, materials, light and composition.
 
 ##### Model Digital Three-Dimensional Forms
 
+Slug: modelDigitalThreeDimensionalForms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Construct and refine surfaces and volumes with deliberate proportions, contours and relationships appropriate to a digital sculptural or modeled artwork.
+Methodological description: Construct and refine surfaces and volumes with deliberate proportions, contours and relationships appropriate to a digital sculptural or modeled artwork.
+User-friendly description: Shape a three-dimensional digital object with intentional form and proportion.
 
 ##### Apply Digital Three-Dimensional Materials
 
+Slug: applyDigitalThreeDimensionalMaterials
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define surface appearance through color, roughness, reflectivity and texture so that objects communicate a selected material or artistic style.
+Methodological description: Define surface appearance through color, roughness, reflectivity and texture so that objects communicate a selected material or artistic style.
+User-friendly description: Give a digital object a chosen surface through texture, shine and color.
 
 ##### Light a Digital Three-Dimensional Scene
 
+Slug: lightADigitalThreeDimensionalScene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Arrange illumination and shadows to establish form, mood and intended visual emphasis in a three-dimensional composition.
+Methodological description: Arrange illumination and shadows to establish form, mood and intended visual emphasis in a three-dimensional composition.
+User-friendly description: Use digital lighting and shadows to create mood and reveal form.
 
 ##### Compose a Digital Three-Dimensional Scene
 
+Slug: composeADigitalThreeDimensionalScene
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Position objects and select a viewing frame to create meaningful depth, balance and relationships between subjects.
+Methodological description: Position objects and select a viewing frame to create meaningful depth, balance and relationships between subjects.
+User-friendly description: Position virtual objects and select a viewpoint to compose a scene.
 
 #### Motion Graphics
+
+Slug: motionGraphics
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Moving designed graphics use visual change and pacing for expressive or communicative purposes; they differ from depicting characters in frame-by-frame or stop-motion cinema.
+Methodological description: Moving designed graphics use visual change and pacing for expressive or communicative purposes; they differ from depicting characters in frame-by-frame or stop-motion cinema.
+User-friendly description: Use moving graphics to communicate ideas, rhythm and visual change.
 
 ##### Animate Graphic Elements
 
+Slug: animateGraphicElements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create intentional movement or transformation of shapes, icons and graphical marks to convey emphasis, continuity or visual structure.
+Methodological description: Create intentional movement or transformation of shapes, icons and graphical marks to convey emphasis, continuity or visual structure.
+User-friendly description: Animate shapes and icons to guide attention or create expressive motion.
 
 ##### Design Kinetic Typography
 
+Slug: designKineticTypography
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use timing, position and transformation of letterforms or words to communicate meaning through their motion as well as their appearance.
+Methodological description: Use timing, position and transformation of letterforms or words to communicate meaning through their motion as well as their appearance.
+User-friendly description: Make moving words communicate through their timing and transformations.
 
 ##### Sequence Motion Graphics
 
+Slug: sequenceMotionGraphics
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize distinct moving graphic passages with coherent transitions, rhythm and informational or aesthetic hierarchy.
+Methodological description: Organize distinct moving graphic passages with coherent transitions, rhythm and informational or aesthetic hierarchy.
+User-friendly description: Arrange moving graphic passages with purposeful rhythm and transitions.
 ### Art History and Cultures
 
 Groups: 14 · Skills: 59
@@ -3405,161 +3635,286 @@ Consider acquisition circumstances and community claims when discussing return o
 
 ### Aesthetics and Creative Practice
 
+Slug: aestheticsAndCreativePractice
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
-Artistic experience, imagination, revision and ethical decisions cross individual media. This domain avoids prescribing a universal theory of beauty or one compulsory creative workflow.
+Methodological description: Artistic experience, imagination, revision and ethical decisions cross individual media. This domain avoids prescribing a universal theory of beauty or one compulsory creative workflow.
+User-friendly description: Explore how art affects us, communicates meaning and grows through creative choices.
 
 #### Aesthetic Perception
+
+Slug: aestheticPerception
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Responses to art involve attentive perception, prior expectations and variable values without establishing universal audience reactions.
+Methodological description: Responses to art involve attentive perception, prior expectations and variable values without establishing universal audience reactions.
+User-friendly description: Notice how different experiences and expectations shape our responses to art.
 
 ##### Describe an Aesthetic Experience
 
+Slug: describeAnAestheticExperience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Articulate a response while separating felt qualities from unsupported assertions about the work.
+Methodological description: Articulate a response while separating felt qualities from unsupported assertions about the work.
+User-friendly description: Describe how an artwork feels to you while distinguishing feelings from observations.
 
 ##### Analyze Perceptual Ambiguity
 
+Slug: analyzePerceptualAmbiguity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how one artistic configuration supports different perceptual organizations.
+Methodological description: Explain how one artistic configuration supports different perceptual organizations.
+User-friendly description: Explore why the same picture or form can be perceived in different ways.
 
 ##### Relate Contrast to Attention
 
+Slug: relateContrastToAttention
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how salient differences draw attention to parts of an artwork.
+Methodological description: Explain how salient differences draw attention to parts of an artwork.
+User-friendly description: See how strong differences in color, shape or sound attract attention.
 
 ##### Compare Aesthetic Criteria
 
+Slug: compareAestheticCriteria
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how harmony, novelty or expressiveness matter differently across traditions.
+Methodological description: Examine how harmony, novelty or expressiveness matter differently across traditions.
+User-friendly description: Compare what different artistic traditions value in an artwork.
 
 ##### Distinguish Beauty and Artistic Value
 
+Slug: distinguishBeautyAndArtisticValue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how significant art can challenge conventional ideals of visual attractiveness.
+Methodological description: Explain how significant art can challenge conventional ideals of visual attractiveness.
+User-friendly description: Discover why an important artwork does not always aim to look beautiful.
 
 #### Expression and Meaning
+
+Slug: expressionAndMeaning
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Symbolism and emotional character require interpretations anchored in artistic choices and context.
+Methodological description: Symbolism and emotional character require interpretations anchored in artistic choices and context.
+User-friendly description: Explore how symbols, emotions and formal choices communicate artistic meaning.
 
 ##### Interpret Artistic Symbols
 
+Slug: interpretArtisticSymbols
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect an image, sound or gesture to contextually supported meanings.
+Methodological description: Connect an image, sound or gesture to contextually supported meanings.
+User-friendly description: Look for clues that help explain what an artistic symbol might mean.
 
 ##### Analyze Emotional Expression
 
+Slug: analyzeEmotionalExpression
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate formal choices to perceived affect without assuming everyone responds identically.
+Methodological description: Relate formal choices to perceived affect without assuming everyone responds identically.
+User-friendly description: Connect an artwork's expressive features with feelings it may suggest.
 
 ##### Analyze Artistic Metaphor
 
+Slug: analyzeArtisticMetaphor
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how artistic choices transfer a relationship from one domain of experience to another.
+Methodological description: Explain how artistic choices transfer a relationship from one domain of experience to another.
+User-friendly description: Explore how an artwork can communicate an idea through metaphor.
 
 ##### Relate Artistic Form to Content
 
+Slug: relateArtisticFormToContent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how medium and organization shape what an expressive subject communicates.
+Methodological description: Explain how medium and organization shape what an expressive subject communicates.
+User-friendly description: See how the way something is made changes the meaning it conveys.
 
 #### Creative Development
+
+Slug: creativeDevelopment
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Original work grows through choices, experiments and refinement, but this catalog does not impose a fixed teaching sequence.
+Methodological description: Original work grows through choices, experiments and refinement, but this catalog does not impose a fixed teaching sequence.
+User-friendly description: Turn creative possibilities into artworks through experimentation and thoughtful revision.
 
 ##### Generate Artistic Ideas
 
+Slug: generateArtisticIdeas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Develop distinct possible creative directions from a premise or material constraint.
+Methodological description: Develop distinct possible creative directions from a premise or material constraint.
+User-friendly description: Develop several distinct artistic possibilities from one starting idea.
 
 ##### Produce Artistic Studies
 
+Slug: produceArtisticStudies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use exploratory sketches or sound experiments to investigate creative possibilities.
+Methodological description: Use exploratory sketches or sound experiments to investigate creative possibilities.
+User-friendly description: Try sketches or sound experiments to discover what a creative idea could become.
 
 ##### Revise an Artwork
 
+Slug: reviseAnArtwork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Make purposeful changes after comparing an intended effect with the observed result.
+Methodological description: Make purposeful changes after comparing an intended effect with the observed result.
+User-friendly description: Improve an artwork by comparing its effect with what you intended.
 
 ##### Explain Artistic Decisions
 
+Slug: explainArtisticDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate material and expressive choices to intention and actual constraints.
+Methodological description: Relate material and expressive choices to intention and actual constraints.
+User-friendly description: Explain why you chose particular materials, forms or artistic approaches.
 
 ##### Develop an Artistic Series
 
+Slug: developAnArtisticSeries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Create related works that sustain a coherent inquiry through selected variations.
+Methodological description: Create related works that sustain a coherent inquiry through selected variations.
+User-friendly description: Create a related set of artworks that explores one idea in different ways.
 
 #### Artistic Collaboration and Ethics
+
+Slug: artisticCollaborationAndEthics
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Making and sharing art also demands communication, credit and respect for the rights and meanings of others' creative work.
+Methodological description: Making and sharing art also demands communication, credit and respect for the rights and meanings of others' creative work.
+User-friendly description: Make and share art thoughtfully while respecting collaborators, creators and communities.
 
 ##### Collaborate Artistically
 
+Slug: collaborateArtistically
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Coordinate shared decisions and complementary contributions toward an expressive outcome.
+Methodological description: Coordinate shared decisions and complementary contributions toward an expressive outcome.
+User-friendly description: Combine different people's creative contributions into a shared artwork.
 
 ##### Present an Artwork
 
+Slug: presentAnArtwork
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose an appropriate display or performance setting for an intended audience.
+Methodological description: Choose an appropriate display or performance setting for an intended audience.
+User-friendly description: Choose how and where to share an artwork with its intended audience.
 
 ##### Give Artistic Feedback
 
+Slug: giveArtisticFeedback
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Offer specific observations and actionable suggestions aligned with a maker's goals.
+Methodological description: Offer specific observations and actionable suggestions aligned with a maker's goals.
+User-friendly description: Offer useful, specific suggestions that support another artist's goals.
 
 ##### Credit Artistic Sources
 
+Slug: creditArtisticSources
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the relevant original creators and materials incorporated into another work.
+Methodological description: Identify the relevant original creators and materials incorporated into another work.
+User-friendly description: Acknowledge the artists and materials that contribute to your work.
 
 ##### Assess Cultural Appropriation
 
+Slug: assessCulturalAppropriation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Weigh permission, cultural significance and power relationships when adapting artistic material.
+Methodological description: Weigh permission, cultural significance and power relationships when adapting artistic material.
+User-friendly description: Consider cultural meaning, permission and unequal power when using others' traditions.
 
 ##### Respect Creative Rights
 
+Slug: respectCreativeRights
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish licenses, attribution and permitted reuse from an assumption that access equals permission.
+Methodological description: Distinguish licenses, attribution and permitted reuse from an assumption that access equals permission.
+User-friendly description: Check whether artwork may be reused and give the credit its rights require.
 
