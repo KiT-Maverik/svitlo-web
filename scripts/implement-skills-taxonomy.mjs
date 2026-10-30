@@ -364,6 +364,8 @@ function domainPlan(d,entities,registry,codes) {
   if (nodes.some(e=>e.action==='delete'))
     throw Error('Deletion disabled pending full incoming-reference audit (no files changed)');
   for (const e of [...nodes].sort((a,b)=>b.depth-a.depth)) {
+    if (e.status==='implemented' && e.link!==codeLink(e))
+      throw Error('Implemented Code link differs from canonical source path: '+e.key);
     if (e.action==='skip') {
       if (e.status==='implemented') {
         if (!fs.existsSync(fileOf(e))) throw Error('Skipped entity missing: '+e.key);
