@@ -15,7 +15,7 @@ A **Lesson** independently teaches **one or more approved Skills**. It must make
 
 Lesson files live under `<PackageRoot>/Data/Lessons/<bucketNumber>/<englishCamelCaseSlug>/`. The Lesson folder is stable once created; buckets have at most 100 Lesson directories each, without automatic relocation or compaction.
 
-- `methodologist-brief.md`: approved *what/why/for whom*, prerequisite and Skill scope; an editorial-only source **not included in runtime configuration or client bundles**.
+- `methodologist-brief.md`: approved *what/why/for whom*, prerequisite and Skill scope; an editorial-only source **not included in runtime configuration or client bundles**. Its `Target Skills` contains one verified relative Markdown link per Skill **to the actual canonical Skill `*.data.ts` file**, with the full source filename (including extension) as the link label. The anticipated `Data/Skills/` location is not yet the current Code path in every textbook; never link to paths that do not exist.
 - `script.md`: Screenwriter-owned *how to teach*, ordered Section/block plan, learner-facing content and interaction specifications; a **separate editorial document**, not the runtime config.
 - `scenes/`: separate Scene specifications **only when needed**, later consumed by the Scene implementation workflow.
 - Typed `*.data.ts` configuration and published resources are owned by implementation/build workflows, not by either editorial document.
