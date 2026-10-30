@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { calendar_Skills_Ids } from './index.ids';
 
 export const leapYearDays_Skill_Data = buildSkillConfig({
-  id: calendar_Skills_Ids.leapYearDays,
+  id: '653b69ae-2576-4b9c-a2af-959bb675b8d1',
   name: {
     en: "Distinguishing common and leap years",
     lt: "Paprastųjų ir keliamųjų metų atskyrimas",
