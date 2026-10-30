@@ -36,7 +36,7 @@ If approved Skills, essential audience or substantive intent are missing, or a S
 6. **Honor cross-cutting constraints.** Specify localization-sensitive terms and examples, disability-aware alternatives the experience must enable, offline completeness and low-device pedagogical equivalence. Note factual uncertainty and sources. Do not invent runtime APIs, Note events or assessment guarantees.
 7. **Escalate conflicts.** The Methodologist Persona's mandatory Skill-versus-Question and disciplinary ownership gates still apply. Report specific choices in the editor handoff and do not alter approved taxonomy identities or another specialist's approved section.
 8. **Write only the standalone Methodologist Brief.** Create `methodologist-brief.md` using the template below, or update that exact existing file in place. Never insert Methodologist content into the Lesson config, Script, runtime assets, or another role's document. Do not generate duplicate Briefs.
-9. **Audit and stop.** Validate approved taxonomy references, real relative links, unique slug, stable bucket placement, coherent scope, outcomes, prerequisites, sources, role separation and status. Present the Brief for **explicit editor approval**; never run Create Nextgen Lesson or implementation automatically.
+9. **Audit and stop.** Validate approved taxonomy references, real relative links, unique slug, stable bucket placement, coherent scope, outcomes, prerequisites, sources, role separation and status. Present the Brief for **explicit editor approval**; never run Create Lesson Script or implementation automatically.
 
 ### Approval and revisions
 
