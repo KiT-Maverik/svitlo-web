@@ -16,12 +16,17 @@ const write = (file, contents) => {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, contents);
 };
-const dictionary = (prefix) => '{' + locales.map(locale => JSON.stringify(locale) + ':' + JSON.stringify(prefix + ' ' + locale)).join(',') + '}';
-const code = (type, name) =>
+const dictionary = prefix => '{' + locales.map(locale => JSON.stringify(locale) + ':' + JSON.stringify(prefix + ' ' + locale)).join(',') + '}';
+const code = (type, name, withFE = false) =>
   'export const fixture = build' + type + 'Config({ id: "10bbac60-7f3b-4d65-b926-875ee447397e", ' +
-  'name:' + dictionary(name) + ', description:' + dictionary('Description of ' + name) +
+  'name:' + dictionary(name) + ', description: {methodological: ' + JSON.stringify('English methodological meaning of ' + name) +
+  (withFE ? ', FE:' + dictionary('Frontend ' + name) : '') + '}' +
   (type === 'SkillDomain' ? ',groupIds: {g:"id"}' : type === 'SkillGroup' ? ',skillIds: {s:"id"}' : '') + '});';
 const skillFile = path.join(taxonomy, 'd/g/skills/s.data.ts');
+const outputFile = locale => path.join(fixtureDir, 'docs/generated/skills', 'taxonomy.' + locale + '.md');
+const run = (locale = 'en') =>
+  spawnSync(process.execPath, [path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
+    '--package', path.relative(root, fixtureDir), '--locale', locale], { cwd: root, encoding: 'utf8' });
 
 before(() => {
   write(path.join(taxonomy, 'd/d.data.ts'), code('SkillDomain', 'Domain'));
@@ -32,29 +37,41 @@ before(() => {
 });
 after(() => fs.rmSync(fixtureDir, { recursive: true, force: true }));
 
-const run = (locale = 'en') =>
-  spawnSync(process.execPath, [path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
-    '--package', path.relative(root, fixtureDir), '--locale', locale], { cwd: root, encoding: 'utf8' });
-
-test('generates faithful linked markdown for en and uk', () => {
+test('generates locale names but keeps canonical methodological prose English when FE is absent', () => {
   for (const locale of ['en', 'uk']) {
     const result = run(locale);
     assert.equal(result.status, 0, result.stderr);
-    const output = fs.readFileSync(path.join(fixtureDir, 'docs/generated/skills', 'taxonomy.' + locale + '.md'), 'utf8');
+    const output = fs.readFileSync(outputFile(locale), 'utf8');
     assert.match(output, new RegExp('Domain ' + locale));
     assert.match(output, new RegExp('Group ' + locale));
     assert.match(output, new RegExp('Skill ' + locale));
-    assert.match(output, new RegExp('Description of Skill ' + locale));
+    assert.match(output, /Methodological description \(English\):.*English methodological meaning of Skill/);
+    assert.doesNotMatch(output, /FE description/);
     assert.match(output, /s\.data\.ts/);
   }
 });
 
-test('fails closed when a description is missing and preserves prior output', () => {
-  const outputFile = path.join(fixtureDir, 'docs/generated/skills/taxonomy.en.md');
-  const before = fs.readFileSync(outputFile, 'utf8');
-  fs.writeFileSync(skillFile, code('Skill', 'Skill').replace(/, description:\{[^}]+\}/, ''));
+test('includes fully localized FE descriptions when provided', () => {
+  write(skillFile, code('Skill', 'Skill', true));
+  const result = run('uk');
+  assert.equal(result.status, 0, result.stderr);
+  const output = fs.readFileSync(outputFile('uk'), 'utf8');
+  assert.match(output, /FE description \(uk\):.*Frontend Skill uk/);
+  assert.match(output, /Methodological description \(English\):.*English methodological meaning of Skill/);
+});
+
+test('rejects partial FE dictionaries and preserves the previous document', () => {
+  const before = fs.readFileSync(outputFile('uk'), 'utf8');
+  write(skillFile, code('Skill', 'Skill', true).replace(/"uk":"Frontend Skill uk",?/, ''));
+  const result = run('uk');
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /Missing required FE locale uk/);
+  assert.equal(fs.readFileSync(outputFile('uk'), 'utf8'), before);
+});
+
+test('fails closed on missing methodological description', () => {
+  write(skillFile, code('Skill', 'Skill').replace(/, description: \{methodological: "[^"]+"\}/, ''));
   const result = run('en');
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Missing description/);
-  assert.equal(fs.readFileSync(outputFile, 'utf8'), before);
 });
