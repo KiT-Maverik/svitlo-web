@@ -1847,121 +1847,211 @@ User-friendly description: Spot warning signs of suspicious or deceptive financi
 
 ### Гроші та фінансова система
 
+Slug: moneyAndFinancialSystem
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Фінансові інституції перерозподіляють кошти в часі та між учасниками економіки. Тут вивчають інструменти й механізми системи, тоді як особистий фінансовий вибір належить сусідньому домену.
+Methodological description: Financial institutions redistribute funds across time and among economic participants. The focus is system instruments and mechanisms; personal financial decisions belong to a neighboring domain.
+User-friendly description: Discover how money, banks, and financial markets connect the economy.
 
 #### Природа грошей
 
+Slug: natureOfMoney
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Гроші функціонують як загальноприйнятий засіб платежу та одиниця вимірювання цінності в різних інституційних формах.
+Methodological description: Money functions as a generally accepted means of payment and a unit for measuring value across different institutional forms.
+User-friendly description: Explore what makes something useful as money.
 
 ##### Функції грошей
 
+Slug: functionsOfMoney
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти засіб обміну, одиницю рахунку та засіб збереження вартості з урахуванням обмежень кожної функції.
+Methodological description: Distinguish money as a medium of exchange, unit of account, and store of value, including the limitations of each function.
+User-friendly description: Recognize the different jobs that money performs.
 
 ##### Форми грошей
 
+Slug: formsOfMoney
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти готівкові, депозитні та окремі цифрові форми за емітентом, правовим статусом і ризиками.
+Methodological description: Distinguish cash, bank deposits, and selected digital forms according to issuer, legal status, and risk.
+User-friendly description: Compare cash, deposits, and digital money.
 
 ##### Купівельна спроможність грошей
 
+Slug: purchasingPowerOfMoney
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати суму грошей з обсягом доступних товарів і послуг за заданого рівня цін.
+Methodological description: Relate a sum of money to the amount of goods and services it can buy at a given price level.
+User-friendly description: See how rising prices affect what your money can buy.
 
 #### Банки та кредитне посередництво
+
+Slug: banksAndCreditIntermediation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Фінансові посередники поєднують заощадників і позичальників, керують ліквідністю та платіжною інфраструктурою.
+Methodological description: Financial intermediaries connect savers and borrowers and manage liquidity and payment infrastructure.
+User-friendly description: Understand how banks connect savings, loans, and payments.
 
 ##### Банківські депозити
 
+Slug: bankDeposits
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити залучені банком кошти, умови доступу, відсотки та відмінність депозиту від зберігання готівки.
+Methodological description: Interpret funds placed with banks, access conditions, interest, and the difference between a deposit and holding physical cash.
+User-friendly description: Learn how bank deposits work and what their conditions mean.
 
 ##### Кредитування банками
 
+Slug: bankLending
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати видачу позик, оцінювання ризику та вплив кредитування на банківські баланси й депозитні гроші.
+Methodological description: Explain loan creation, risk assessment, and the effects of bank lending on balance sheets and deposit money.
+User-friendly description: Explore how banks lend and how lending affects bank money.
 
 ##### Банківська ліквідність
 
+Slug: bankLiquidity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти здатність своєчасно виконувати платежі від довгострокової достатності активів для покриття зобов’язань.
+Methodological description: Distinguish the ability to meet payments on time from long-run sufficiency of assets to cover obligations.
+User-friendly description: Understand why a bank can face a cash shortage even if its assets have value.
 
 #### Фінансові ринки
+
+Slug: financialMarkets
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Капітал та ризики передаються через договірні вимоги й права власності, вартість яких залежить від очікувань.
+Methodological description: Capital and risk are transferred through contractual claims and ownership rights whose prices depend on expectations.
+User-friendly description: Explore how people trade financial claims and ownership interests.
 
 ##### Облігації
 
+Slug: bonds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати боргове зобов’язання, купон, строк погашення і зв’язок ринкової ціни з дохідністю.
+Methodological description: Interpret a debt obligation, coupon, maturity, and the relationship between market price and yield.
+User-friendly description: Understand bonds as loans that can be bought and sold.
 
 ##### Акції
 
+Slug: stocks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміти частку участі в підприємстві, можливість дивідендів та ризик зміни ринкової вартості.
+Methodological description: Understand equity ownership in a business, possible dividends, and exposure to market-price changes.
+User-friendly description: See what owning shares in a company means.
 
 ##### Відсоткова ставка
 
+Slug: interestRates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати ціну користування коштами в часі, відрізняючи номінальні та реальні ставки.
+Methodological description: Interpret the cost of using money over time and distinguish nominal from real interest rates.
+User-friendly description: Explore how interest rates affect borrowing and saving.
 
 ##### Ризик та дохідність активів
 
+Slug: assetRiskAndReturn
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати властивості фінансових інструментів і портфелів — мінливість цін, очікуваний дохід, ліквідність та їхню ринкову взаємодію — без формування особистої рекомендації.
+Methodological description: Analyze price volatility, expected returns, liquidity, and market relationships of financial assets and portfolios without offering personalized recommendations.
+User-friendly description: Compare the risks, potential returns, and liquidity of financial assets.
 
 #### Стабільність і регулювання
+
+Slug: financialStabilityAndRegulation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Проблеми окремих посередників можуть поширюватися через борги й взаємну довіру на всю економіку.
+Methodological description: Problems at individual intermediaries can spread through debt and confidence to the broader economy.
+User-friendly description: Explore how the financial system can face problems that spread across institutions.
 
 ##### Системний фінансовий ризик
 
+Slug: systemicFinancialRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати, як мережа зобов’язань, паніка або дефіцит ліквідності поширюють шоки між учасниками.
+Methodological description: Explain how networks of obligations, panic, and liquidity shortages transmit shocks between participants.
+User-friendly description: Recognize why trouble at one financial institution can affect others.
 
 ##### Фінансовий нагляд
 
+Slug: financialSupervision
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити призначення вимог до капіталу, розкриття інформації та контролю ризиків у фінансових установах.
+Methodological description: Explain the purposes of capital requirements, disclosure, and risk oversight at financial institutions.
+User-friendly description: Understand how financial rules aim to reduce risks.
 
 ##### Гарантування вкладів
 
+Slug: depositInsurance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати мету й межі встановленого законом захисту вкладників без припущення про необмежене покриття.
+Methodological description: Explain the purposes and statutory limits of deposit protection without assuming unlimited coverage.
+User-friendly description: Learn what deposit protection covers and where its limits apply.
 
 ### Макроекономіка
 
