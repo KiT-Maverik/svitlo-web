@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const doubleHalf_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.doubleHalf,
+  id: 'cfb05426-4c79-46eb-a49e-53a128a661de',
   name: {
     lt: "Dalyba — dalijimas pusiau ir dvigubinimas",
     lv: "Dalīšana — dalīšana uz pusēm un dubultošana",

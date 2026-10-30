@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { cardinality_Skills_Ids } from './index.ids';
 
 export const basicCardinality_Skill_Data = buildSkillConfig({
-  id: cardinality_Skills_Ids.basicCardinality,
+  id: '806fb33e-81a3-4e59-b57b-1ea7ed549d9b',
   name: {
     en: "Determining how many objects are in a set",
     lt: "Daiktų kiekio nustatymas",

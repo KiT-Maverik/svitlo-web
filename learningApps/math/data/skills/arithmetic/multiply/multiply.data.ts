@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { multiply_SkillGroup_Ids } from './multiply.ids';
-import { multiply_Skills_Ids } from './skills/index.ids';
+import { equalGroups_Skill_Data, repeatedAddition_Skill_Data, arrayModel_Skill_Data, readExpression_Skill_Data, by2_Skill_Data, by3_Skill_Data, by4_Skill_Data, by5_Skill_Data, by6_Skill_Data, by7_Skill_Data, by8_Skill_Data, by9_Skill_Data, by10_Skill_Data, by0And1_Skill_Data, commutative_Skill_Data, associative_Skill_Data, distributive_Skill_Data, deriveFacts_Skill_Data, doubleTwice_Skill_Data, roundTens_Skill_Data, roundHundreds_Skill_Data, twoDigitByOne_Skill_Data, threeDigitByOne_Skill_Data, checkProduct_Skill_Data } from './skills';
 
 export const multiply_SkillGroup_Data = buildSkillGroupConfig({
-  id: multiply_SkillGroup_Ids.multiply,
+  id: '1cb60869-1e45-44c0-bc72-aab0a8df8af7',
   name: {
     en: "Multiplication",
     lt: "Daugyba",
@@ -34,7 +33,32 @@ export const multiply_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Mnożenie",
     uk: "Множення",
   },
-  skillIds: multiply_Skills_Ids,
+  skillIds: {
+    equalGroups: equalGroups_Skill_Data.id,
+    repeatedAddition: repeatedAddition_Skill_Data.id,
+    arrayModel: arrayModel_Skill_Data.id,
+    readExpression: readExpression_Skill_Data.id,
+    by2: by2_Skill_Data.id,
+    by3: by3_Skill_Data.id,
+    by4: by4_Skill_Data.id,
+    by5: by5_Skill_Data.id,
+    by6: by6_Skill_Data.id,
+    by7: by7_Skill_Data.id,
+    by8: by8_Skill_Data.id,
+    by9: by9_Skill_Data.id,
+    by10: by10_Skill_Data.id,
+    by0And1: by0And1_Skill_Data.id,
+    commutative: commutative_Skill_Data.id,
+    associative: associative_Skill_Data.id,
+    distributive: distributive_Skill_Data.id,
+    deriveFacts: deriveFacts_Skill_Data.id,
+    doubleTwice: doubleTwice_Skill_Data.id,
+    roundTens: roundTens_Skill_Data.id,
+    roundHundreds: roundHundreds_Skill_Data.id,
+    twoDigitByOne: twoDigitByOne_Skill_Data.id,
+    threeDigitByOne: threeDigitByOne_Skill_Data.id,
+    checkProduct: checkProduct_Skill_Data.id,
+  },
   description: {
     methodological: "Products as equal groups or rectangular arrays, multiplication facts and properties, and place-value-based computation methods.",
     fe: {

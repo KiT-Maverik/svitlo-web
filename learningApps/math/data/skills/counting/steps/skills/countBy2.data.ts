@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { steps_Skills_Ids } from './index.ids';
 
 export const countBy2_Skill_Data = buildSkillConfig({
-  id: steps_Skills_Ids.countBy2,
+  id: 'f227f79b-0196-46b8-a227-8b7991729cc5',
   name: {
     en: "Counting in steps of 2",
     lt: "Skaičiavimas po du",

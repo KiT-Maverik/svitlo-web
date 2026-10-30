@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { collection_Skills_Ids } from './index.ids';
 
 export const formulateInvestigationQuestion_Skill_Data = buildSkillConfig({
-  id: collection_Skills_Ids.formulateInvestigationQuestion,
+  id: '9977837d-7e8b-4a51-8a83-89d51242aa8a',
   name: {
     en: "Formulating a data investigation question",
     lt: "Duomenų tyrimo klausimo formulavimas",

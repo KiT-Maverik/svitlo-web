@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const inverseOperations_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.inverseOperations,
+  id: '99807d43-bd91-498f-86d6-553f1cd3b51b',
   name: {
     lt: "Sudėtis ir atimtis — atvirkštiniai veiksmai",
     lv: "Saskaitīšana un atņemšana — pretējās darbības",

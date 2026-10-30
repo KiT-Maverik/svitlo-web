@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { addition_Skills_Ids } from './index.ids';
 
 export const addZero_Skill_Data = buildSkillConfig({
-  id: addition_Skills_Ids.addZero,
+  id: '97f896aa-10ee-47a1-9348-25b222ca748d',
   name: {
     lt: "Sudėtis — nulis",
     lv: "Saskaitīšana — nulle",

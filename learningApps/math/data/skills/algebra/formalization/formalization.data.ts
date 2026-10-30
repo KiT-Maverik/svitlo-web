@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { formalization_SkillGroup_Ids } from './formalization.ids';
-import { formalization_Skills_Ids } from './skills/index.ids';
+import { translateSituation_Skill_Data } from './skills';
 
 export const formalization_SkillGroup_Data = buildSkillGroupConfig({
-  id: formalization_SkillGroup_Ids.formalization,
+  id: 'b0e684f5-3064-41ab-9bca-f7e2fce2514f',
   name: {
     en: "Symbolic modeling",
     lt: "Simbolinis modeliavimas",
@@ -34,7 +33,9 @@ export const formalization_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Modelowanie symboliczne",
     uk: "Символьне моделювання",
   },
-  skillIds: formalization_Skills_Ids,
+  skillIds: {
+    translateSituation: translateSituation_Skill_Data.id,
+  },
   description: {
     methodological: "Representing relationships in a short situation using arithmetic or simple algebraic notation.",
     fe: {

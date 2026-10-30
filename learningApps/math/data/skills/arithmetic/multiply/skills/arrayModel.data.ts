@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const arrayModel_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.arrayModel,
+  id: '8405ea12-80bf-41f6-b854-41b396902bed',
   name: {
     lt: "Daugyba — stačiakampio masyvo modelis",
     lv: "Reizināšana — taisnstūrveida masīva modelis",

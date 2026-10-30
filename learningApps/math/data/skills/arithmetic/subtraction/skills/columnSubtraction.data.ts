@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { subtraction_Skills_Ids } from './index.ids';
 
 export const columnSubtraction_Skill_Data = buildSkillConfig({
-  id: subtraction_Skills_Ids.columnSubtraction,
+  id: '6d74f20c-3203-4bcc-bad2-f356b480c6c0',
   name: {
     lt: "Atimtis — stulpeliu",
     lv: "Atņemšana — stabiņā",

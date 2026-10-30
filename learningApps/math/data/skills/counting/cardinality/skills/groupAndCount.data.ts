@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { cardinality_Skills_Ids } from './index.ids';
 
 export const groupAndCount_Skill_Data = buildSkillConfig({
-  id: cardinality_Skills_Ids.groupAndCount,
+  id: '8efbfcb0-c600-40ff-b8e3-e15891c5359c',
   name: {
     en: "Counting objects in groups of tens or hundreds",
     lt: "Daiktų skaičiavimas dešimtimis ar šimtais",

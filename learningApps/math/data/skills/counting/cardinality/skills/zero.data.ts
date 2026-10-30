@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { cardinality_Skills_Ids } from './index.ids';
 
 export const zero_Skill_Data = buildSkillConfig({
-  id: cardinality_Skills_Ids.zero,
+  id: 'a08e7d57-e613-4276-b6bf-3f06d7e1589a',
   name: {
     en: "Understanding zero as an empty quantity",
     lt: "Nulio kaip tuščio kiekio supratimas",

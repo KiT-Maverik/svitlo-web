@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { addition_SkillGroup_Ids } from './addition.ids';
-import { addition_Skills_Ids } from './skills/index.ids';
+import { addMeaning_Skill_Data, addZero_Skill_Data, commutativeAddition_Skill_Data, makeTenStrategy_Skill_Data, crossTenAddition_Skill_Data, associativeAddition_Skill_Data, columnAddition_Skill_Data, regrouping_Skill_Data } from './skills';
 
 export const addition_SkillGroup_Data = buildSkillGroupConfig({
-  id: addition_SkillGroup_Ids.addition,
+  id: 'd7008a9f-2674-4f99-b11d-c6edae4ee778',
   name: {
     en: "Addition",
     lt: "Sudėtis",
@@ -34,7 +33,16 @@ export const addition_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Dodawanie",
     uk: "Додавання",
   },
-  skillIds: addition_Skills_Ids,
+  skillIds: {
+    addMeaning: addMeaning_Skill_Data.id,
+    addZero: addZero_Skill_Data.id,
+    commutativeAddition: commutativeAddition_Skill_Data.id,
+    makeTenStrategy: makeTenStrategy_Skill_Data.id,
+    crossTenAddition: crossTenAddition_Skill_Data.id,
+    associativeAddition: associativeAddition_Skill_Data.id,
+    columnAddition: columnAddition_Skill_Data.id,
+    regrouping: regrouping_Skill_Data.id,
+  },
   description: {
     methodological: "Combining quantities, properties of sums, place-value regrouping, and methods for calculating and checking results.",
     fe: {

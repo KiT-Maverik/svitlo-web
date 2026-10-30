@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { addition_Skills_Ids } from './index.ids';
 
 export const columnAddition_Skill_Data = buildSkillConfig({
-  id: addition_Skills_Ids.columnAddition,
+  id: '5957ed51-2e99-48b2-b86d-8f50b42af05e',
   name: {
     lt: "Sudėtis — stulpeliu",
     lv: "Saskaitīšana — stabiņā",

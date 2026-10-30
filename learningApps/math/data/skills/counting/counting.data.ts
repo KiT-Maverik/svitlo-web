@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { counting_SkillDomain_Ids } from './counting.ids';
-import { counting_SkillGroups_Ids } from './index.ids';
+import { sequence_SkillGroup_Data, cardinality_SkillGroup_Data, steps_SkillGroup_Data, ordinal_SkillGroup_Data, parity_SkillGroup_Data } from './index';
 
 export const counting_SkillDomain_Data = buildSkillDomainConfig({
-  id: counting_SkillDomain_Ids.counting,
+  id: 'b41da424-c12f-4563-87d5-c8a58052a922',
   name: {
     en: "Counting",
     lt: "Skaičiavimas",
@@ -34,7 +33,13 @@ export const counting_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Liczenie",
     uk: "Лічба",
   },
-  groupIds: counting_SkillGroups_Ids,
+  groupIds: {
+    sequence: sequence_SkillGroup_Data.id,
+    cardinality: cardinality_SkillGroup_Data.id,
+    steps: steps_SkillGroup_Data.id,
+    ordinal: ordinal_SkillGroup_Data.id,
+    parity: parity_SkillGroup_Data.id,
+  },
   description: {
     methodological: "The concept of quantity develops through one-to-one correspondence between objects and number words, movement along the natural-number sequence, ordinal positions, and grouping objects for counting.",
     fe: {

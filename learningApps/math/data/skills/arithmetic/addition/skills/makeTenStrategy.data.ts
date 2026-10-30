@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { addition_Skills_Ids } from './index.ids';
 
 export const makeTenStrategy_Skill_Data = buildSkillConfig({
-  id: addition_Skills_Ids.makeTenStrategy,
+  id: '36dd9741-4d7a-4042-98b4-62b77a8b877f',
   name: {
     lt: "Sudėtis — dešimties sudarymo strategija",
     lv: "Saskaitīšana — desmita veidošanas paņēmiens",

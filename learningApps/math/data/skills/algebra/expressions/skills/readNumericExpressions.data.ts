@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { expressions_Skills_Ids } from './index.ids';
 
 export const readNumericExpressions_Skill_Data = buildSkillConfig({
-  id: expressions_Skills_Ids.readNumericExpressions,
+  id: '2429be16-34f7-4857-8144-f2d550931872',
   name: {
     en: "Reading and writing numerical expressions",
     lt: "Skaitinių reiškinių skaitymas ir rašymas",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { unknowns_Skills_Ids } from './index.ids';
 
 export const unknownFactor_Skill_Data = buildSkillConfig({
-  id: unknowns_Skills_Ids.unknownFactor,
+  id: '86d61e77-3ad4-4d9c-bf1a-5646ffc15f24',
   name: {
     en: "Finding an unknown factor",
     lt: "Nežinomo daugiklio radimas",

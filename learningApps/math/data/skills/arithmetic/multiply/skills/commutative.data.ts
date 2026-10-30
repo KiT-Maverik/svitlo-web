@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const commutative_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.commutative,
+  id: '1750b60b-9e8d-4426-b307-1b6c7a4d641b',
   name: {
     lt: "Daugyba — perstatomumo dėsnis",
     lv: "Reizināšana — komutativitātes likums",

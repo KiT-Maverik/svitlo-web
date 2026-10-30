@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { patterns_Skills_Ids } from './index.ids';
 
 export const arithmeticPattern_Skill_Data = buildSkillConfig({
-  id: patterns_Skills_Ids.arithmeticPattern,
+  id: '80600511-51d8-411c-a132-4a17836d680d',
   name: {
     en: "Continuing numerical patterns with a constant step",
     lt: "Skaitinio dėsningumo tęsimas pastoviu žingsniu",

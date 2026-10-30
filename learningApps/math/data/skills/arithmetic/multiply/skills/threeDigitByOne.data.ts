@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const threeDigitByOne_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.threeDigitByOne,
+  id: '035e48c3-be50-4fd1-b5c7-a9c087624e6b',
   name: {
     lt: "Daugyba — triženklis skaičius iš vienaženklio",
     lv: "Reizināšana — trīsciparu skaitlis ar viencipara skaitli",

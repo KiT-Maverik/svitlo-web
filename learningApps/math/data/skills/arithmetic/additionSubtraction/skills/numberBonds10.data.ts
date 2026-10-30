@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const numberBonds10_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.numberBonds10,
+  id: '43d5def4-faee-41d1-b9a8-b4e120120bb6',
   name: {
     lt: "Sudėtis ir atimtis — skaičiaus 10 sudėtis",
     lv: "Saskaitīšana un atņemšana — skaitļa 10 sastāvs",

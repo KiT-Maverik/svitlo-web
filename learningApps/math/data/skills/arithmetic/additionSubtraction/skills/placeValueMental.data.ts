@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const placeValueMental_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.placeValueMental,
+  id: '00fd194d-e4c8-4703-b927-f1709cf23613',
   name: {
     lt: "Sudėtis ir atimtis — skaičiavimas mintinai pagal skyrius",
     lv: "Saskaitīšana un atņemšana — prāta aprēķini pēc šķirām",

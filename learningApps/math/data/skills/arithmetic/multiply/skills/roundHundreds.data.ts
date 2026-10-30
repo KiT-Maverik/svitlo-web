@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const roundHundreds_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.roundHundreds,
+  id: '650e7e05-3e7e-4e80-8f0e-e23df595ed22',
   name: {
     lt: "Daugyba — pilni šimtai",
     lv: "Reizināšana — pilni simti",

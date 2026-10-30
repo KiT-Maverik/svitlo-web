@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const relationToMultiplication_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.relationToMultiplication,
+  id: 'aeda65fb-0667-443b-8842-73cee12965a4',
   name: {
     lt: "Dalyba — atvirkštiniai veiksmai",
     lv: "Dalīšana — pretējās darbības",

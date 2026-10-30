@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { cardinality_Skills_Ids } from './index.ids';
 
 export const compareSets_Skill_Data = buildSkillConfig({
-  id: cardinality_Skills_Ids.compareSets,
+  id: '4dbb5ddc-9215-451a-8643-c7fce442a3d5',
   name: {
     en: "Comparing sets by matching or counting",
     lt: "Aibių palyginimas poruojant ar skaičiuojant",

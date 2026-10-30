@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.twoDigitNoRegroup,
+  id: '3e712df5-1468-4ade-9539-f74986e61ea3',
   name: {
     lt: "Sudėtis ir atimtis — dviženkliai skaičiai be pergrupavimo",
     lv: "Saskaitīšana un atņemšana — divciparu skaitļi bez pārgrupēšanas",

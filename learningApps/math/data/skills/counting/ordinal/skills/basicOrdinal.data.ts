@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { ordinal_Skills_Ids } from './index.ids';
 
 export const basicOrdinal_Skill_Data = buildSkillConfig({
-  id: ordinal_Skills_Ids.basicOrdinal,
+  id: '5a3fd900-fb88-4017-a8b6-f70dfba3f5cf',
   name: {
     en: "Recognizing ordinal position",
     lt: "Kelintinės vietos atpažinimas",

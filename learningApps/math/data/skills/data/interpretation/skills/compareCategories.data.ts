@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { interpretation_Skills_Ids } from './index.ids';
 
 export const compareCategories_Skill_Data = buildSkillConfig({
-  id: interpretation_Skills_Ids.compareCategories,
+  id: 'b245a322-1c1f-4977-9a0b-838ac058392a',
   name: {
     en: "Comparing category totals and differences",
     lt: "Kategorijų sumų ir skirtumų palyginimas",

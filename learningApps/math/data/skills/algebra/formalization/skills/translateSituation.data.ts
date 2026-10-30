@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { formalization_Skills_Ids } from './index.ids';
 
 export const translateSituation_Skill_Data = buildSkillConfig({
-  id: formalization_Skills_Ids.translateSituation,
+  id: '616323a8-423c-4ff8-9d1a-f19435a0dd26',
   name: {
     en: "Representing a situation with an expression or equation",
     lt: "Situacijos užrašymas reiškiniu arba lygtimi",

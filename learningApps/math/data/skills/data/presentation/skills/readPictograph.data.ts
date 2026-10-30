@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { presentation_Skills_Ids } from './index.ids';
 
 export const readPictograph_Skill_Data = buildSkillConfig({
-  id: presentation_Skills_Ids.readPictograph,
+  id: '4d9532aa-f47a-416f-a0a6-c219943ceb24',
   name: {
     en: "Reading a one-to-one pictograph",
     lt: "Piktogramos su viena žyme skaitymas",

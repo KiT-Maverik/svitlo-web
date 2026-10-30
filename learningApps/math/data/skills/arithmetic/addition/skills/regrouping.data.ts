@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { addition_Skills_Ids } from './index.ids';
 
 export const regrouping_Skill_Data = buildSkillConfig({
-  id: addition_Skills_Ids.regrouping,
+  id: 'a1ff147a-bf4c-4cc9-ab9d-ccacd0a5fa47',
   name: {
     en: "Addition with regrouping",
     lt: "Sudėtis su pergrupavimu",

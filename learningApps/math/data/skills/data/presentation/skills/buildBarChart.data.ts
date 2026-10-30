@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { presentation_Skills_Ids } from './index.ids';
 
 export const buildBarChart_Skill_Data = buildSkillConfig({
-  id: presentation_Skills_Ids.buildBarChart,
+  id: '5dd18314-5344-4219-9ffb-1b9df9fc7ec7',
   name: {
     en: "Constructing a bar chart",
     lt: "Stulpelinės diagramos sudarymas",

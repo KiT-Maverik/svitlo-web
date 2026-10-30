@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { unknowns_Skills_Ids } from './index.ids';
 
 export const unknownAddend_Skill_Data = buildSkillConfig({
-  id: unknowns_Skills_Ids.unknownAddend,
+  id: 'a01ad4cb-5aeb-44ee-ba4b-913b384b3178',
   name: {
     en: "Finding an unknown addend",
     lt: "Nežinomo dėmens radimas",

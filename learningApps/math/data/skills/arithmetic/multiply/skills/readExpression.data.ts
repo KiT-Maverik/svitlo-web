@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const readExpression_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.readExpression,
+  id: 'cb983432-175a-41ae-8655-468c2325f7cd',
   name: {
     lt: "Daugyba — reiškinių skaitymas",
     lv: "Reizināšana — izteiksmju lasīšana",

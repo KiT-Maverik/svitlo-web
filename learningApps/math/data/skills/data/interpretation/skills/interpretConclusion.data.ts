@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { interpretation_Skills_Ids } from './index.ids';
 
 export const interpretConclusion_Skill_Data = buildSkillConfig({
-  id: interpretation_Skills_Ids.interpretConclusion,
+  id: '57c71e4d-0641-42e2-856d-b2282f308374',
   name: {
     en: "Drawing conclusions from data",
     lt: "Išvadų darymas iš duomenų",

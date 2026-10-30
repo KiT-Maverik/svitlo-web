@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const withRemainder_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.withRemainder,
+  id: 'da1f2939-6c7e-4257-a9a2-36e5c0201c11',
   name: {
     lt: "Dalyba — su liekana",
     lv: "Dalīšana — ar atlikumu",

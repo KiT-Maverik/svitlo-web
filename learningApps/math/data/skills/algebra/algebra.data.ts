@@ -1,5 +1,5 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { algebra_SkillGroups_Ids } from './index.ids';
+import { equalities_SkillGroup_Data, expressions_SkillGroup_Data, formalization_SkillGroup_Data, patterns_SkillGroup_Data, unknowns_SkillGroup_Data } from './index';
 
 export const algebra_SkillDomain_Data = buildSkillDomainConfig({
   id: '5b1cb581-be28-4de4-a854-b32fbfea95d7',
@@ -33,7 +33,13 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Algebra",
     uk: "Алгебра",
   },
-  groupIds: algebra_SkillGroups_Ids,
+  groupIds: {
+    equalities: equalities_SkillGroup_Data.id,
+    expressions: expressions_SkillGroup_Data.id,
+    formalization: formalization_SkillGroup_Data.id,
+    patterns: patterns_SkillGroup_Data.id,
+    unknowns: unknowns_SkillGroup_Data.id,
+  },
   description: {
     methodological: "Mathematical expressions, equalities, inequalities, variables and unknowns, patterns, generalizations, and symbolic descriptions of relationships. The scope is not constrained to a particular age, numerical range, or notation.",
     fe: {

@@ -1,9 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
-import { data_SkillDomain_Ids } from './data.ids';
-import { data_SkillGroups_Ids } from './index.ids';
+import { collection_SkillGroup_Data, presentation_SkillGroup_Data, interpretation_SkillGroup_Data } from './index';
 
 export const data_SkillDomain_Data = buildSkillDomainConfig({
-  id: data_SkillDomain_Ids.data,
+  id: 'ae6d7bb7-0ee8-4bdd-8853-3d8d11233007',
   name: {
     en: "Data",
     lt: "Duomenys",
@@ -34,6 +33,10 @@ export const data_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Dane",
     uk: "Дані",
   },
-  groupIds: data_SkillGroups_Ids,
+  groupIds: {
+    collection: collection_SkillGroup_Data.id,
+    presentation: presentation_SkillGroup_Data.id,
+    interpretation: interpretation_SkillGroup_Data.id,
+  },
   description: { methodological: "Formulating questions, collecting and classifying information, representing it in tables and charts, and drawing conclusions supported by the data." },
 });

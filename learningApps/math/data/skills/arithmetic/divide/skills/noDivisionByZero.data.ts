@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const noDivisionByZero_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.noDivisionByZero,
+  id: '531a8f3a-537c-4e2a-985f-a9b57e7dab9a',
   name: {
     lt: "Dalyba — dalyba iš nulio",
     lv: "Dalīšana — dalīšana ar nulli",

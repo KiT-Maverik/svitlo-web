@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const checkProduct_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.checkProduct,
+  id: '3305fde5-63ba-4f32-92a8-42032b805e99',
   name: {
     lt: "Daugyba — rezultato tikrinimas",
     lv: "Reizināšana — rezultāta pārbaude",

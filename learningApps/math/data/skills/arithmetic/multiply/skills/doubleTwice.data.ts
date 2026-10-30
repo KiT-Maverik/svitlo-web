@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const doubleTwice_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.doubleTwice,
+  id: 'dcaa33ea-4bd8-42d5-8b22-27dd75d13c53',
   name: {
     lt: "Daugyba — dvigubinimas du kartus",
     lv: "Reizināšana — divkāršošana divas reizes",

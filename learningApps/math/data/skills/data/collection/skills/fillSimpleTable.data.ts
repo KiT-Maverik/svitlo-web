@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { collection_Skills_Ids } from './index.ids';
 
 export const fillSimpleTable_Skill_Data = buildSkillConfig({
-  id: collection_Skills_Ids.fillSimpleTable,
+  id: '03c02752-3921-4349-b7b0-ad955248e511',
   name: {
     en: "Recording observations in a table",
     lt: "Stebėjimų užrašymas lentelėje",

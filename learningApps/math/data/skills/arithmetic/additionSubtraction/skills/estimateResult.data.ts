@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const estimateResult_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.estimateResult,
+  id: 'ddaf0423-4cd8-45ed-8e8c-7f88038c0fcd',
   name: {
     lt: "Sudėtis ir atimtis — rezultato įvertinimas",
     lv: "Saskaitīšana un atņemšana — rezultāta novērtēšana",

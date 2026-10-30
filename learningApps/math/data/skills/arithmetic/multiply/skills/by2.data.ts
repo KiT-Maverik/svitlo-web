@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const by2_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.by2,
+  id: '84be4238-5118-40ec-9dde-9b97172e19b2',
   name: {
     lt: "Daugyba — × 2",
     lv: "Reizināšana — × 2",

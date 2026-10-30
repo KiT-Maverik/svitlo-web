@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const checkQuotient_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.checkQuotient,
+  id: '5daba1b4-4221-4349-a1a7-c12e209051b1',
   name: {
     lt: "Dalyba — rezultato tikrinimas",
     lv: "Dalīšana — rezultāta pārbaude",

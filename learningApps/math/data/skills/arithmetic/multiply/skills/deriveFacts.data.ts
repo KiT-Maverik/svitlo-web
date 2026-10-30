@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const deriveFacts_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.deriveFacts,
+  id: '3785f833-039d-49f7-a70f-4a1ebdb6654a',
   name: {
     lt: "Daugyba — sandaugų išvedimas",
     lv: "Reizināšana — reizināšanas faktu atvasināšana",

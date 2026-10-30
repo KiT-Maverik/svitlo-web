@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { presentation_Skills_Ids } from './index.ids';
 
 export const linePlotMeasurements_Skill_Data = buildSkillConfig({
-  id: presentation_Skills_Ids.linePlotMeasurements,
+  id: '3dbc0531-ff4b-4921-99cd-22c6a7d6b827',
   name: {
     en: "Plotting measurements on a number line",
     lt: "Matavimų žymėjimas skaičių tiesėje",

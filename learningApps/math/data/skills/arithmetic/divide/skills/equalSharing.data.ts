@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const equalSharing_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.equalSharing,
+  id: '9a201a1d-c00d-4375-91c5-aaba7c579060',
   name: {
     lt: "Dalyba — lygiomis dalimis",
     lv: "Dalīšana — sadalīšana vienādās daļās",

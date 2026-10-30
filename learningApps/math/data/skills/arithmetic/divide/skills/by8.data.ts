@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const by8_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.by8,
+  id: '391496e3-22de-455a-bc28-cc1f249115cc',
   name: {
     lt: "Dalyba — ÷ 8",
     lv: "Dalīšana — ÷ 8",

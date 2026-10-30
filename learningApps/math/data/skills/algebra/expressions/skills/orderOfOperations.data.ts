@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { expressions_Skills_Ids } from './index.ids';
 
 export const orderOfOperations_Skill_Data = buildSkillConfig({
-  id: expressions_Skills_Ids.orderOfOperations,
+  id: '87cd08bd-e276-4a36-88de-77dd23028abf',
   name: {
     en: "Applying the order of operations",
     lt: "Veiksmų atlikimo tvarkos taikymas",

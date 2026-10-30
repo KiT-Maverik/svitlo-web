@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { subtraction_Skills_Ids } from './index.ids';
 
 export const subtractMeaning_Skill_Data = buildSkillConfig({
-  id: subtraction_Skills_Ids.subtractMeaning,
+  id: '48c9e5d7-43c0-414d-b760-788292403331',
   name: {
     lt: "Atimtis — reikšmė ir modeliai",
     lv: "Atņemšana — nozīme un modeļi",

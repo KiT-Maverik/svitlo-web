@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const remainderLessDivisor_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.remainderLessDivisor,
+  id: '46afe67a-e62f-4789-b1e4-b19470544be5',
   name: {
     lt: "Dalyba — liekana mažesnė už daliklį",
     lv: "Dalīšana — atlikums mazāks par dalītāju",

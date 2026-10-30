@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { addition_Skills_Ids } from './index.ids';
 
 export const addMeaning_Skill_Data = buildSkillConfig({
-  id: addition_Skills_Ids.addMeaning,
+  id: '00b48cb0-13c2-4531-84ac-1b8d44f11055',
   name: {
     lt: "Sudėtis — reikšmė ir modeliai",
     lv: "Saskaitīšana — nozīme un modeļi",

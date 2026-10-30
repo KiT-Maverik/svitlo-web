@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const zeroDividend_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.zeroDividend,
+  id: '656c998e-5fd5-412c-b6ba-7ae3f4a38cad',
   name: {
     lt: "Dalyba — nulis kaip dalinys",
     lv: "Dalīšana — nulle kā dalāmais",

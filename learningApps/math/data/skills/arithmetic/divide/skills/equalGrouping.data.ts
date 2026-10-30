@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { divide_Skills_Ids } from './index.ids';
 
 export const equalGrouping_Skill_Data = buildSkillConfig({
-  id: divide_Skills_Ids.equalGrouping,
+  id: '29ffb036-c9f2-415e-a464-f07e5d8ef05b',
   name: {
     lt: "Dalyba — skirstymas į lygias grupes",
     lv: "Dalīšana — sadalīšana vienādās grupās",

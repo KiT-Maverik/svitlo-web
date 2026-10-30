@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { presentation_Skills_Ids } from './index.ids';
 
 export const buildPictograph_Skill_Data = buildSkillConfig({
-  id: presentation_Skills_Ids.buildPictograph,
+  id: 'fdbb130e-d9ff-490f-9979-4b3c3ef67271',
   name: {
     en: "Constructing a pictograph",
     lt: "Piktogramos sudarymas",

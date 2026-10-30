@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const partWhole_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.partWhole,
+  id: 'edd12274-ab3e-4409-bbc0-9847140ec465',
   name: {
     lt: "Sudėtis ir atimtis — dalies ir visumos ryšys",
     lv: "Saskaitīšana un atņemšana — daļas un veseluma saikne",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { addition_Skills_Ids } from './index.ids';
 
 export const associativeAddition_Skill_Data = buildSkillConfig({
-  id: addition_Skills_Ids.associativeAddition,
+  id: '4754301d-73dc-4b7f-b146-3c8f14a9a3e1',
   name: {
     lt: "Sudėtis — jungiamumo dėsnis",
     lv: "Saskaitīšana — asociativitātes likums",

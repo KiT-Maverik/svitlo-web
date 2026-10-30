@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { patterns_Skills_Ids } from './index.ids';
 
 export const growingPattern_Skill_Data = buildSkillConfig({
-  id: patterns_Skills_Ids.growingPattern,
+  id: 'ce88fbc1-1607-42c3-8d54-e87e9d368bf6',
   name: {
     en: "Finding the rule of a growing pattern",
     lt: "Didėjančio dėsningumo taisyklės radimas",

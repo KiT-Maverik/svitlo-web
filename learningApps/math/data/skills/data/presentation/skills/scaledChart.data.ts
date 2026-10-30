@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { presentation_Skills_Ids } from './index.ids';
 
 export const scaledChart_Skill_Data = buildSkillConfig({
-  id: presentation_Skills_Ids.scaledChart,
+  id: '97aeb6ee-f087-4793-a9e4-60129d11d974',
   name: {
     en: "Reading a scaled chart",
     lt: "Diagramos su masteliu skaitymas",

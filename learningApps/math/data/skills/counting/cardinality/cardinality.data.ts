@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { cardinality_SkillGroup_Ids } from './cardinality.ids';
-import { cardinality_Skills_Ids } from './skills/index.ids';
+import { basicCardinality_Skill_Data, compareSets_Skill_Data, groupAndCount_Skill_Data, zero_Skill_Data } from './skills';
 
 export const cardinality_SkillGroup_Data = buildSkillGroupConfig({
-  id: cardinality_SkillGroup_Ids.cardinality,
+  id: '0a3584de-bb32-4932-8f8d-c0fe908ce71d',
   name: {
     en: "Cardinality",
     lt: "Kiekybinis skaičiavimas",
@@ -34,7 +33,12 @@ export const cardinality_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Liczebność",
     uk: "Кількість",
   },
-  skillIds: cardinality_Skills_Ids,
+  skillIds: {
+    basicCardinality: basicCardinality_Skill_Data.id,
+    compareSets: compareSets_Skill_Data.id,
+    groupAndCount: groupAndCount_Skill_Data.id,
+    zero: zero_Skill_Data.id,
+  },
   description: {
     methodological: "Understanding number as the cardinality of a set, including the empty set, and methods for determining and comparing the sizes of sets.",
     fe: {

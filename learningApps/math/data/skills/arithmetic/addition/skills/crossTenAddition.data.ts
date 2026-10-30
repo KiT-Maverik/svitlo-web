@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { addition_Skills_Ids } from './index.ids';
 
 export const crossTenAddition_Skill_Data = buildSkillConfig({
-  id: addition_Skills_Ids.crossTenAddition,
+  id: 'e2d79a7d-611e-4c74-b344-aba08db29c38',
   name: {
     lt: "Sudėtis — peržengiant dešimtį",
     lv: "Saskaitīšana — pāreja pāri desmitam",

@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { ordinal_SkillGroup_Ids } from './ordinal.ids';
-import { ordinal_Skills_Ids } from './skills/index.ids';
+import { basicOrdinal_Skill_Data } from './skills';
 
 export const ordinal_SkillGroup_Data = buildSkillGroupConfig({
-  id: ordinal_SkillGroup_Ids.ordinal,
+  id: 'e7661e0a-4758-4f27-9754-3d75cc7afc12',
   name: {
     en: "Ordinal counting",
     lt: "Kelintinių skaičių vartojimas",
@@ -34,7 +33,9 @@ export const ordinal_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Liczenie porządkowe",
     uk: "Порядкова лічба",
   },
-  skillIds: ordinal_Skills_Ids,
+  skillIds: {
+    basicOrdinal: basicOrdinal_Skill_Data.id,
+  },
   description: {
     methodological: "The distinction between an element's position in an ordered sequence and the total number of elements, separating 'which position?' from 'how many?'.",
     fe: {

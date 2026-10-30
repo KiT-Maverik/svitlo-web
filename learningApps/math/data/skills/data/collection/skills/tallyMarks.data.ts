@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { collection_Skills_Ids } from './index.ids';
 
 export const tallyMarks_Skill_Data = buildSkillConfig({
-  id: collection_Skills_Ids.tallyMarks,
+  id: '8930fd33-d7d2-448f-a97c-637053e95731',
   name: {
     en: "Recording and reading tally marks",
     lt: "Skaičiavimo brūkšnelių užrašymas ir skaitymas",

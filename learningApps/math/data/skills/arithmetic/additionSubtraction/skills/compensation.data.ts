@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const compensation_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.compensation,
+  id: 'b5de45e3-da6d-4bd7-914b-1ac679cc359a',
   name: {
     lt: "Sudėtis ir atimtis — kompensavimo būdas",
     lv: "Saskaitīšana un atņemšana — kompensācijas paņēmiens",

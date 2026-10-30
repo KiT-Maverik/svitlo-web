@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { additionSubtraction_Skills_Ids } from './index.ids';
 
 export const addSubtractTens_Skill_Data = buildSkillConfig({
-  id: additionSubtraction_Skills_Ids.addSubtractTens,
+  id: '7f04c06b-e844-4dff-8417-d7a9b6fadaca',
   name: {
     lt: "Sudėtis ir atimtis — pilnos dešimtys",
     lv: "Saskaitīšana un atņemšana — pilni desmiti",

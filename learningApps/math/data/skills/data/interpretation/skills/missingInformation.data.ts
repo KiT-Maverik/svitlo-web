@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { interpretation_Skills_Ids } from './index.ids';
 
 export const missingInformation_Skill_Data = buildSkillConfig({
-  id: interpretation_Skills_Ids.missingInformation,
+  id: '893df2c3-30b3-48b7-a961-11378d742022',
   name: {
     en: "Identifying missing information",
     lt: "Trūkstamos informacijos nustatymas",

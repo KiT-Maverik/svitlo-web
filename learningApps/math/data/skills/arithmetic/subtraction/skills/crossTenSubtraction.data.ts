@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { subtraction_Skills_Ids } from './index.ids';
 
 export const crossTenSubtraction_Skill_Data = buildSkillConfig({
-  id: subtraction_Skills_Ids.crossTenSubtraction,
+  id: '31be8d1e-5c8c-44cb-b8da-bf811b46c4f7',
   name: {
     lt: "Atimtis — peržengiant dešimtį",
     lv: "Atņemšana — pāreja pāri desmitam",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { multiply_Skills_Ids } from './index.ids';
 
 export const equalGroups_Skill_Data = buildSkillConfig({
-  id: multiply_Skills_Ids.equalGroups,
+  id: 'a3a6ab42-2285-4d6f-a65e-f2a4d8140a88',
   name: {
     lt: "Daugyba — lygios grupės",
     lv: "Reizināšana — vienādas grupas",

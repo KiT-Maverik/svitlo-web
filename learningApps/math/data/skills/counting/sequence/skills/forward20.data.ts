@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { sequence_Skills_Ids } from './index.ids';
 
 export const forward20_Skill_Data = buildSkillConfig({
-  id: sequence_Skills_Ids.forward20,
+  id: '0fef6118-fa2e-4ffa-a31f-42f26ef94177',
   name: {
     en: "Counting forward within 20",
     lt: "Skaičiavimas pirmyn iki 20",

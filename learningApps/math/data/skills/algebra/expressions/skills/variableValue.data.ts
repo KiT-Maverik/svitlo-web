@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { expressions_Skills_Ids } from './index.ids';
 
 export const variableValue_Skill_Data = buildSkillConfig({
-  id: expressions_Skills_Ids.variableValue,
+  id: 'a8b94c00-522c-4a04-8fe1-4038a1b1a019',
   name: {
     en: "Evaluating simple expressions with a variable",
     lt: "Paprastų reiškinių su kintamuoju reikšmės apskaičiavimas",

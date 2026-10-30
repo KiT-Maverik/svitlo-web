@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { unknowns_Skills_Ids } from './index.ids';
 
 export const unknownSubtrahend_Skill_Data = buildSkillConfig({
-  id: unknowns_Skills_Ids.unknownSubtrahend,
+  id: 'c57e5b0b-8b7d-4e24-a50c-9ee848ebadfd',
   name: {
     en: "Finding an unknown subtrahend",
     lt: "Nežinomo atėminio radimas",

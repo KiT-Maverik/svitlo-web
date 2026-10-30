@@ -1,9 +1,8 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
-import { expressions_SkillGroup_Ids } from './expressions.ids';
-import { expressions_Skills_Ids } from './skills/index.ids';
+import { orderOfOperations_Skill_Data, parentheses_Skill_Data, readNumericExpressions_Skill_Data, variableValue_Skill_Data } from './skills';
 
 export const expressions_SkillGroup_Data = buildSkillGroupConfig({
-  id: expressions_SkillGroup_Ids.expressions,
+  id: 'ffd2e448-8471-4b32-88ce-6fc921f7d76c',
   name: {
     en: "Expressions",
     lt: "Reiškiniai",
@@ -34,7 +33,12 @@ export const expressions_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Wyrażenia",
     uk: "Вирази",
   },
-  skillIds: expressions_Skills_Ids,
+  skillIds: {
+    orderOfOperations: orderOfOperations_Skill_Data.id,
+    parentheses: parentheses_Skill_Data.id,
+    readNumericExpressions: readNumericExpressions_Skill_Data.id,
+    variableValue: variableValue_Skill_Data.id,
+  },
   description: {
     methodological: "The meanings of mathematical expressions involving operations, parentheses, and variables, including correct order of operations.",
     fe: {
