@@ -8,4 +8,4 @@ export { measureCentimeters_Skill_Data } from './measureCentimeters.data';
 export { meters_Skill_Data } from './meters.data';
 export { millimeters_Skill_Data } from './millimeters.data';
 export { nonstandardLength_Skill_Data } from './nonstandardLength.data';
-export { rulerZero_Skill_Data } from './rulerZero.data';
+export { useRuler_Skill_Data } from './useRuler.data';

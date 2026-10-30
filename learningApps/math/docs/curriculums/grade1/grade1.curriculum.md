@@ -321,7 +321,7 @@ File: [Лінійка та сантиметр](./grade-1/04-heometriia-ta-vymiri
 Goal: Use a ruler, measure a segment in centimeters, and draw a segment of a given length.
 Count centimeter intervals rather than tick marks; use a consistent virtual scale.
 Target skills:
-- [Using a ruler](../../src/data/skillsTaxonomy/measurement/length/skills/rulerZero.data.ts)
+- [Using a ruler](../../src/data/skillsTaxonomy/measurement/length/skills/useRuler.data.ts)
 - [Measuring segments in centimeters](../../src/data/skillsTaxonomy/measurement/length/skills/measureCentimeters.data.ts)
 - [Drawing segments of a given length in centimeters](../../src/data/skillsTaxonomy/measurement/length/skills/drawSegmentCentimeters.data.ts)
 

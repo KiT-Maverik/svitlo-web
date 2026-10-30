@@ -12,7 +12,7 @@ const names = {
   length: [
     'compareLength',
     'nonstandardLength',
-    'rulerZero',
+    'useRuler',
     'measureCentimeters',
     'drawSegmentCentimeters',
     'millimeters',

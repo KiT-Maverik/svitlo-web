@@ -1,8 +1,8 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 import { length_Skills_Ids } from './index.ids';
 
-export const rulerZero_Skill_Data = buildSkillConfig({
-  id: length_Skills_Ids.rulerZero,
+export const useRuler_Skill_Data = buildSkillConfig({
+  id: length_Skills_Ids.useRuler,
   name: {
     en: "Using a ruler",
     lt: "Naudojimasis liniuote",
