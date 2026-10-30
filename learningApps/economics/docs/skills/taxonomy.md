@@ -3172,121 +3172,211 @@ User-friendly description: Explore why the value assigned to future outcomes cha
 
 ### Економічні дані та дослідження
 
+Slug: economicDataAndResearch
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 13
 
 [Not implemented](#)
 
-Економічні твердження перевіряють за допомогою вимірювання, моделей, порівнянь і причинного аналізу. У центрі — обґрунтованість висновку, а не програмування інструмента обробки даних.
+Methodological description: Economic claims are tested through measurement, models, comparison, and causal analysis. The emphasis is on the validity of conclusions rather than programming data-processing tools.
+User-friendly description: Discover how economists use data and models to test claims.
 
 #### Економічні показники
+
+Slug: economicIndicators
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Самі числа не пояснюють ситуацію без знання бази, одиниць, методики збирання й періоду.
+Methodological description: Numbers alone cannot explain economic circumstances without knowing the base, units, collection methods, and period.
+User-friendly description: Learn how to interpret economic statistics in context.
 
 ##### Читання економічних часових рядів
 
+Slug: economicTimeSeries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відрізняти рівень показника, абсолютну зміну, темп зміни та можливу сезонність.
+Methodological description: Distinguish an indicator's level, absolute change, rate of change, and possible seasonality.
+User-friendly description: Read how an economic measure changes over time.
 
 ##### Номінальні та реальні величини
 
+Slug: nominalAndRealMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перераховувати грошові показники через відповідні індекси цін, враховуючи базу, період та зіставність. Це загальна методика вимірювання, яка застосовується до доходів, зарплат, випуску та інших величин.
+Methodological description: Convert monetary indicators using appropriate price indexes while considering reference bases, periods, and comparability. This general measurement technique applies to earnings, wages, output, and other quantities.
+User-friendly description: Adjust monetary figures for price changes to compare their real value.
 
 ##### Показники на одну особу та частки
 
+Slug: perCapitaMeasuresAndShares
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Тлумачити знаменники, масштаби і зіставність відносних показників між групами.
+Methodological description: Interpret denominators, scales, and comparability of ratios between groups.
+User-friendly description: Compare figures per person and percentages between populations.
 
 ##### Якість економічних даних
 
+Slug: economicDataQuality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Перевіряти джерело, вибірку, метод вимірювання, ревізії та обмеження порівнянь.
+Methodological description: Check sources, samples, measurement methods, revisions, and limitations of comparisons.
+User-friendly description: Judge whether economic figures come from reliable and comparable data.
 
 #### Економічні моделі
 
+Slug: economicModels
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Спрощення дозволяють ізолювати механізми, але висновки залежать від початкових припущень.
+Methodological description: Simplified representations help isolate mechanisms, but their conclusions depend on starting assumptions.
+User-friendly description: Explore how economists use simplified models to understand decisions.
 
 ##### Побудова економічної моделі
 
+Slug: buildingEconomicModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виділяти суттєвих учасників, змінні, зв’язки та обмеження для конкретного економічного запитання.
+Methodological description: Identify important participants, variables, relationships, and constraints for a particular economic question.
+User-friendly description: Choose the essential parts of an economic situation for a model.
 
 ##### Умовне припущення ceteris paribus
 
+Slug: ceterisParibusAssumption
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відділяти вплив одного фактора від інших у межах явно сформульованої моделі.
+Methodological description: Separate the effect of one factor from others within an explicitly specified model.
+User-friendly description: Understand what it means to hold other conditions constant.
 
 ##### Межі застосування економічної моделі
 
+Slug: limitsOfEconomicModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати, які припущення й контексти обмежують достовірність прогнозу або пояснення.
+Methodological description: Identify assumptions and contexts limiting the reliability of a model's prediction or explanation.
+User-friendly description: Recognize when an economic model may not fit real circumstances.
 
 #### Причинність та експерименти
 
+Slug: causalityAndExperiments
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Кореляції не обов’язково означають причинний вплив; дослідницький дизайн має враховувати альтернативні пояснення.
+Methodological description: Correlation does not necessarily demonstrate a causal effect; research design must account for alternative explanations.
+User-friendly description: Discover how economists investigate causes rather than mere associations.
 
 ##### Кореляція і причинність
 
+Slug: correlationAndCausation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розрізняти спільну зміну показників та обґрунтований ефект втручання або зміни фактора.
+Methodological description: Distinguish variables changing together from evidence supporting the causal effect of an intervention or changed factor.
+User-friendly description: Explain why two trends moving together does not prove one caused the other.
 
 ##### Змішувальні фактори
 
+Slug: confoundingFactors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Виявляти сторонні змінні, здатні створювати оманливий зв’язок між причиною та результатом.
+Methodological description: Identify outside variables that can produce a misleading apparent relationship between a proposed cause and outcome.
+User-friendly description: Spot hidden factors that might explain an apparent economic link.
 
 ##### Контрольна та експериментальна групи
 
+Slug: controlAndExperimentalGroups
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пояснювати призначення порівнянних груп та випадкового розподілу для оцінювання впливу.
+Methodological description: Explain why comparable groups and random assignment help estimate the effects of a change.
+User-friendly description: Understand why fair comparisons need suitable control groups.
 
 #### Емпіричні висновки та прогнози
+
+Slug: empiricalConclusionsAndForecasts
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Оцінювання політик і передбачення економічної динаміки спираються на дані, припущення й оцінку невизначеності.
+Methodological description: Policy evaluation and forecasting rely on evidence, explicit assumptions, and uncertainty assessment.
+User-friendly description: Explore how economists draw conclusions and make uncertain forecasts.
 
 ##### Базова регресійна модель
 
+Slug: basicRegressionModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати оцінений зв’язок результату з пояснювальними змінними, не приписуючи коефіцієнтам автоматично причинного значення.
+Methodological description: Interpret an estimated relationship between an outcome and explanatory variables without automatically attributing a causal meaning to coefficients.
+User-friendly description: Read the relationships described by a simple regression model.
 
 ##### Оцінювання ефекту політики
 
+Slug: policyEffectEvaluation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формулювати контрфактичне запитання про те, що сталося б без втручання, та оцінювати придатність доказів.
+Methodological description: Formulate the counterfactual question of what would have occurred without an intervention and assess whether evidence can answer it.
+User-friendly description: Assess what a policy changed compared with what might have happened otherwise.
 
 ##### Невизначеність економічного прогнозу
 
+Slug: economicForecastUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розуміти сценарії, інтервали й джерела помилки та відрізняти прогноз від гарантованого результату.
+Methodological description: Understand scenarios, intervals, and sources of error, distinguishing forecasts from guaranteed outcomes.
+User-friendly description: Recognize uncertainty and different possibilities in economic predictions.
 
 ### Економічна історія та ідеї
 
