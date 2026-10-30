@@ -758,133 +758,233 @@ User-friendly description: Recognize when market conditions prevent exchanges th
 
 ### Виробництво та підприємництво
 
+Slug: productionAndEntrepreneurship
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Створення цінності поєднує ресурси, технології, організацію й ризик. Цей розділ розглядає рішення підприємства про виробництво та стійкість його діяльності.
+Methodological description: Creating value combines resources, technology, organization, and risk. This domain studies firms' production decisions and the sustainability of their operations.
+User-friendly description: Explore how businesses turn resources and ideas into products and services.
 
 #### Ресурси та технологія
+
+Slug: productiveResourcesAndTechnology
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Праця, капітал, земля, знання і виробничі методи визначають можливості випуску та заміни факторів.
+Methodological description: Labor, capital, land, knowledge, and methods of production determine output possibilities and the substitution of productive inputs.
+User-friendly description: Discover how resources and technology affect what firms can produce.
 
 ##### Фактори виробництва
 
+Slug: factorsOfProduction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Класифікувати ресурси за роллю у створенні товарів і послуг, не ототожнюючи фінансовий капітал із фізичним.
+Methodological description: Classify resources by their roles in creating goods and services without confusing financial capital with physical capital.
+User-friendly description: Recognize the different resources needed to produce goods and services.
 
 ##### Виробнича функція
 
+Slug: productionFunction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати можливий випуск із кількостями ресурсів та рівнем технології у визначеній моделі.
+Methodological description: Relate feasible output to quantities of inputs and technological capability within a specified model.
+User-friendly description: Connect a firm's inputs and technology with the amount it can make.
 
 ##### Продуктивність
 
+Slug: productivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Вимірювати результат відносно використаного фактора й відрізняти показники праці від сукупної факторної продуктивності.
+Methodological description: Measure output relative to a production input and distinguish labor productivity from total factor productivity.
+User-friendly description: Explore how much output is produced from the resources used.
 
 ##### Закон спадної граничної віддачі
 
+Slug: diminishingMarginalReturns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати зміну додаткового випуску при нарощуванні одного змінного фактора за незмінності інших ресурсів і технології; відрізняти граничний продукт від загального.
+Methodological description: Analyze changes in additional output when one variable input increases while other inputs and technology are fixed; distinguish marginal product from total output.
+User-friendly description: Understand why adding more of one input may eventually yield less extra output.
 
 #### Витрати та масштаб
+
+Slug: productionCostsAndScale
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Економічні рішення потребують врахування альтернативних витрат, часових горизонтів і зміни собівартості з випуском.
+Methodological description: Economic production decisions account for opportunity costs, time horizons, and how unit costs change with output.
+User-friendly description: Explore how the costs of production change with a firm's scale.
 
 ##### Постійні та змінні витрати
 
+Slug: fixedAndVariableCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розмежовувати витрати, які в заданому часовому горизонті не залежать від обсягу, і ті, що змінюються з ним.
+Methodological description: Distinguish costs that do not depend on output over a stated time horizon from those that vary with production.
+User-friendly description: Tell the difference between costs that stay fixed and those that rise with output.
 
 ##### Середні витрати
 
+Slug: averageProductionCosts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Обчислювати витрати на одиницю випуску й пояснювати, як показник залежить від виробничого масштабу та структури витрат.
+Methodological description: Calculate cost per unit of output and explain how it depends on scale and the composition of costs.
+User-friendly description: Find the average cost of producing a unit.
 
 ##### Граничні витрати
 
+Slug: marginalProductionCost
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Визначати додаткові витрати виробництва наступної одиниці продукції та використовувати їх для аналізу рішень про випуск.
+Methodological description: Determine the additional cost of producing the next unit and use it to analyze production decisions.
+User-friendly description: Estimate what it costs to make one additional unit.
 
 ##### Економічний прибуток
 
+Slug: economicProfit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати результат після врахування явних і неявних альтернативних витрат, відмінно від бухгалтерського показника.
+Methodological description: Evaluate a firm's result after both explicit expenditures and implicit opportunity costs, distinguishing economic from accounting profit.
+User-friendly description: See why economic profit considers more than recorded expenses.
 
 ##### Економія від масштабу
 
+Slug: economiesOfScale
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Встановлювати, як тривале збільшення виробничого масштабу може знижувати або підвищувати середні витрати.
+Methodological description: Determine how sustained increases in production scale may lower or raise average costs.
+User-friendly description: Explore why producing on a larger scale can change costs per unit.
 
 #### Рішення та управління фірмою
+
+Slug: firmDecisionMakingAndManagement
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Внутрішні стимули власників, менеджерів і працівників, а також виробничі рішення підприємства визначають організацію його діяльності; структура конкуренції належить до окремого ринкового домену.
+Methodological description: The incentives and decisions of owners, managers, and workers shape a firm's organization and production; competitive market structure is analyzed separately.
+User-friendly description: Discover how people inside a company make economic decisions.
 
 ##### Максимізація прибутку фірми
 
+Slug: firmProfitMaximization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати рішення про обсяг випуску через зв’язок граничного доходу та граничних витрат у заданій моделі.
+Methodological description: Evaluate output decisions using the relationship between marginal revenue and marginal cost in a specified model.
+User-friendly description: Explore how a firm chooses output to improve its profit.
 
 ##### Взаємодія власників, менеджерів і працівників
 
+Slug: ownersManagersAndWorkers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Аналізувати розподіл рішень та стимули сторін, чиї цілі та інформація можуть відрізнятися.
+Methodological description: Analyze how decision rights and incentives are distributed among owners, managers, and workers whose goals and information may differ.
+User-friendly description: Recognize how owners, managers, and workers can have different priorities.
 
 #### Підприємництво та облік
+
+Slug: entrepreneurshipAndAccounting
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Новий бізнес потребує перевірки цінності пропозиції, організації ресурсів та аналізу фінансового результату.
+Methodological description: A new business requires testing the value offered, organizing resources, and analyzing its financial results.
+User-friendly description: Learn what makes a business idea economically workable.
 
 ##### Підприємницька можливість
 
+Slug: entrepreneurialOpportunity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оцінювати незадоволену потребу, потенційного покупця, необхідні ресурси та ризики реалізації ідеї.
+Methodological description: Evaluate an unmet need, potential customers, necessary resources, and risks involved in realizing a business idea.
+User-friendly description: Identify what makes a business opportunity promising or risky.
 
 ##### Бізнес-модель
 
+Slug: businessModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Пов’язувати створювану цінність, клієнтів, джерела доходу та основні витрати в цілісну логіку діяльності.
+Methodological description: Connect the value created, customers served, revenue streams, and main costs into a coherent account of how a business operates.
+User-friendly description: Explain how a business creates value and earns revenue.
 
 ##### Дохід, витрати та прибуток підприємства
 
+Slug: businessRevenueCostsAndProfit
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Інтерпретувати виручку, витрати й результат діяльності, не плутаючи прибуток з готівкою.
+Methodological description: Interpret turnover, expenses, and operating results without confusing profitability with available cash.
+User-friendly description: Distinguish business revenue, expenses, profit, and cash on hand.
 
 ##### Грошові потоки підприємства
 
+Slug: businessCashFlow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відстежувати надходження та виплати в часі й виявляти потребу в ліквідності навіть за облікового прибутку.
+Methodological description: Track receipts and payments over time and detect liquidity needs even when accounting reports show a profit.
+User-friendly description: See why a profitable business can still run short of cash.
 
 ### Праця та зайнятість
 
