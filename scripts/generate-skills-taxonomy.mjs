@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 /**
  * Generate a localized-name, read-only Markdown view from typed taxonomy source.
- * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math [--locale en] [--check | --stdout]
+ * Usage: node scripts/generate-skills-taxonomy.mjs --package learningApps/math
+ *   [--source-root src/data/skillsTaxonomy | --source-root Data/skills]
+ *   [--locale en] [--check | --stdout]
  *
  * Deliberately parses TypeScript source without executing textbook code.
  * Methodological descriptions are always English; Skill frontend text is mandatory in every locale.
@@ -24,10 +26,10 @@ function options(args) {
       result[arg.slice(2)] = true;
       continue;
     }
-    if (!['--package', '--locale'].includes(arg) || !args[i + 1] || args[i + 1].startsWith('--')) {
-      fail('Usage: --package <textbook-directory> [--locale <language-code>] [--check | --stdout]');
+    if (!['--package', '--locale', '--source-root'].includes(arg) || !args[i + 1] || args[i + 1].startsWith('--')) {
+      fail('Usage: --package <textbook-directory> [--source-root src/data/skillsTaxonomy|Data/skills] [--locale <language-code>] [--check | --stdout]');
     }
-    const key = arg.slice(2);
+    const key = arg === '--source-root' ? 'sourceRoot' : arg.slice(2);
     if (result[key] !== undefined && (key !== 'locale' || result.locale !== 'en')) fail('Duplicate argument ' + arg);
     result[key] = args[++i];
   }
@@ -38,8 +40,24 @@ const repositoryRoot = path.resolve(import.meta.dirname, '..');
 const opts = options(process.argv.slice(2));
 const packageRoot = path.resolve(repositoryRoot, opts.package);
 if (!packageRoot.startsWith(path.join(repositoryRoot, 'learningApps') + path.sep)) fail('Package must be within learningApps/');
-const taxonomyRoot = path.join(packageRoot, 'src/data/skillsTaxonomy');
-if (!fs.existsSync(taxonomyRoot)) fail('No code taxonomy: ' + taxonomyRoot);
+// Legacy Mathematics invocations retain their original default. New packages must
+// explicitly opt in to Data/skills, and competing populated roots never auto-select.
+const SOURCE_ROOTS = ['src/data/skillsTaxonomy', 'Data/skills'];
+if (opts.sourceRoot && !SOURCE_ROOTS.includes(opts.sourceRoot)) {
+  fail('Unsupported --source-root "' + opts.sourceRoot + '". Choose ' + SOURCE_ROOTS.join(' or '));
+}
+function isPopulated(root) {
+  return fs.existsSync(root) && fs.statSync(root).isDirectory() &&
+    fs.readdirSync(root, { withFileTypes: true }).some(entry =>
+      entry.isDirectory() && fs.existsSync(path.join(root, entry.name, entry.name + '.data.ts')));
+}
+if (!opts.sourceRoot && SOURCE_ROOTS.every(source => isPopulated(path.join(packageRoot, source)))) {
+  fail('Both taxonomy source roots are populated; select one with --source-root');
+}
+const taxonomyRoot = path.join(packageRoot, opts.sourceRoot ?? SOURCE_ROOTS[0]);
+if (!fs.existsSync(taxonomyRoot) || !fs.statSync(taxonomyRoot).isDirectory()) {
+  fail('No code taxonomy: ' + taxonomyRoot);
+}
 
 function parse(file) {
   return ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
@@ -202,7 +220,12 @@ for (const folder of subdirs(taxonomyRoot)) {
   const domain = readEntity(domainFile, 'SkillDomain');
   const groups = subdirs(domainFolder);
   const directSkills = readSkills(domainFolder);
-  if (groups.length) verifyIndex(path.join(domainFolder, 'index.ids.ts'), groups);
+  // For grouped Domains the direct children are Groups; for ungrouped Domains
+  // the direct children are Skills. Both use the Domain's ID-only index.
+  if (groups.length || directSkills.length) {
+    verifyIndex(path.join(domainFolder, 'index.ids.ts'),
+      groups.length ? groups : directSkills.map(skill => path.basename(skill.file, '.data.ts')));
+  }
   if ((groups.length > 0) === (directSkills.length > 0)) fail('Domain must have only Groups or direct Skills: ' + domainFile);
   const content = groups.map(group => {
     const groupFolder = path.join(domainFolder, group);
