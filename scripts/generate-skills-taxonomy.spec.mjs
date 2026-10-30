@@ -220,9 +220,13 @@ test('Data/skills AST parser rejects missing required Skill fe without changing 
 });
 
 test('source-root selection rejects ambiguous populated roots and unsupported paths', () => {
-  const wrong = runNew('en', '--source-root', '../../wrong', '--stdout');
+  const wrong = spawnSync(process.execPath, [
+    path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
+    '--package', path.relative(root, newFixtureDir),
+    '--source-root', '../../wrong', '--stdout',
+  ], { cwd: root, encoding: 'utf8' });
   assert.notEqual(wrong.status, 0);
-  assert.match(wrong.stderr, /Duplicate argument|Unsupported --source-root/);
+  assert.match(wrong.stderr, /Unsupported --source-root/);
 
   // Populate a legacy root in the new-layout textbook to prove selection is not implicit.
   write(path.join(newFixtureDir, 'src/data/skillsTaxonomy/legacy/legacy.data.ts'),
