@@ -1,17 +1,17 @@
 # Lesson Editorial Artifacts — Separate Methodology and Script
 
-**Status:** approved new authoring arrangement for Methodologist Briefs; downstream Create Nextgen Lesson migration remains pending. The previous single-canonical-Lesson-document policy is superseded. This file retains its historical filename to avoid breaking links. This is editorial guidance and does not change TypeScript `Lesson_Config`.
+**Status:** approved separate-file editorial arrangement for Methodologist Briefs and Lesson Scripts. The previous single-canonical-Lesson-document policy is superseded. This file retains its historical filename to avoid breaking links. This is editorial guidance and does not change TypeScript `Lesson_Config`.
 
 ## DECISION
 
 A Lesson has **separate role-owned Markdown artifacts**, not a single document extended by all specialists.
 
 - **Methodologist Brief:** `<PackageRoot>/Data/Lessons/<bucketNumber>/<lessonSlug>/methodologist-brief.md`. It specifies learner profile, prerequisites, approved Skills, educational outcomes, essential content and pedagogical boundaries. It stays beside the Lesson but **must not be embedded in runtime configuration or published to the client by default**.
-- **Educational Screenwriter:** authors a **different Lesson Script Markdown** based on the approved Brief, without rewriting the Methodologist's approved content. Its output convention will be updated in a separate workflow task.
+- **Educational Screenwriter:** writes `<PackageRoot>/Data/Lessons/<bucketNumber>/<lessonSlug>/script.md` alongside the approved Brief, without editing the Methodologist's content. Custom Scenes have separate `scenes/*.scene-spec.md` documents when needed.
 - **Other specialists:** Scene specifications, assessment designs, media and implementation each remain separate role-owned artifacts as defined by their own workflows.
 - **Coding Agent:** creates typed runtime Lesson configuration independently of Methodologist prose; documentation is not application code.
 
-The Lesson remains **Program-neutral**, can be reused across Curricula, and may target several approved Skills. Filesystem buckets do not imply pedagogical categories or sequence.
+The Lesson remains **Program-neutral**, can be reused across Curricula, and may target several approved Skills. Filesystem buckets do not imply pedagogical categories or sequence. Read canonical definitions: [Lesson](../entities/lesson.md), [Lesson Script](../entities/lesson-script.md), [Section](../entities/section.md), [Program](../entities/program.md).
 
 ## STORAGE AND REVIEW RULES
 
@@ -22,6 +22,6 @@ The Lesson remains **Program-neutral**, can be reused across Curricula, and may 
 - Use `Code: [Not implemented](#)` in a new Brief unless an actual Lesson implementation file can be verified. Never infer runtime IDs from slugs.
 - Never silently migrate legacy files or change existing paths; migration requires explicit review and link reconciliation.
 
-## DOWNSTREAM BOUNDARY
+## WORKFLOW OWNERSHIP
 
-[Create Nextgen Lesson](../../skills/lesson-workflow/create-nextgen-lesson.skill.md) still uses its existing `docs/lessons` Script location. It is **intentionally untouched** here; reconcile its Script output and inputs with the separate-file model in a subsequent change.
+[Create Lesson Brief](../../skills/lesson-workflow/create-lesson-brief.skill.md) creates `methodologist-brief.md`. After its explicit approval, [Create Lesson Script](../../skills/lesson-workflow/create-lesson-script.skill.md) creates an independent `script.md` in that **same Lesson folder** and optionally Scene specifications. Scene implementation, Question/Quiz authoring, runtime configuration, Program narratives and editorial approvals are separate, subsequently authorized stages.
