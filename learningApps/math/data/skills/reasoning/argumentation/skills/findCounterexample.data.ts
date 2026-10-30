@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { argumentation_Skills_Ids } from './index.ids';
 
 export const findCounterexample_Skill_Data = buildSkillConfig({
-  id: argumentation_Skills_Ids.findCounterexample,
+  id: 'dde55a58-c038-4375-9b1d-b9ecfb4a9219',
   name: {
     en: "Finding a counterexample to a false generalization",
     lt: "Klaidingo apibendrinimo kontrpavyzdžio radimas",

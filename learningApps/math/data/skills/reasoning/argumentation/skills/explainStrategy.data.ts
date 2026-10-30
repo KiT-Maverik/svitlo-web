@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { argumentation_Skills_Ids } from './index.ids';
 
 export const explainStrategy_Skill_Data = buildSkillConfig({
-  id: argumentation_Skills_Ids.explainStrategy,
+  id: '195b4494-38ea-4ae0-a6c4-ab4ec583b5ee',
   name: {
     en: "Explaining a chosen calculation strategy",
     lt: "Pasirinktos skaičiavimo strategijos paaiškinimas",
