@@ -2749,333 +2749,588 @@ Methodological description: Determine whether a navigation or response error ari
 User-friendly description: Find whether a robot's unexpected behavior comes from sensing, logic or action.
 ### Digital Safety and Responsibility
 
+Slug: digitalSafetyAndResponsibility
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 20
 
 [Not implemented](#)
 
-Protection of personal information and accounts, respect for others, and the consequences of digital technologies. Designing and testing digital interface UX belongs to a separate Informatics domain.
+Methodological description: Protection of personal information and accounts, respect for others, and the consequences of digital technologies. Designing and testing digital interface UX belongs to a separate Informatics domain.
+User-friendly description: Learn to protect information, respect other people and understand digital technology's effects.
 
 #### Privacy
+
+Slug: privacy
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Identifying personal information, deciding who may receive it, and evaluating long-term consequences of disclosure. Privacy is not identical to password protection or responding to fraud.
+Methodological description: Identifying personal information, deciding who may receive it, and evaluating long-term consequences of disclosure. Privacy is not identical to password protection or responding to fraud.
+User-friendly description: Discover how sharing information online can affect privacy.
 
 ##### Identify Personal Data
 
+Slug: identifyPersonalData
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize information that identifies a person directly or in combination: name with address, photograph, contact details, or location. Even a seemingly harmless fact may be personal in context.
+Methodological description: Recognize information that identifies a person directly or in combination: name with address, photograph, contact details, or location. Even a seemingly harmless fact may be personal in context.
+User-friendly description: Recognize information that can identify a person, even when combined with other details.
 
 ##### Choose Safe Data-Sharing Methods
 
+Slug: chooseSafeDataSharingMethods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select an appropriate audience and channel, considering privacy, permissions, and the risk of forwarding. Public information may remain accessible even after deletion from its original service.
+Methodological description: Select an appropriate audience and channel, considering privacy, permissions, and the risk of forwarding. Public information may remain accessible even after deletion from its original service.
+User-friendly description: Choose who may receive sensitive information and how to share it safely.
 
 ##### Recognize a Digital Footprint
 
+Slug: recognizeADigitalFootprint
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect online actions with records retained by services or other people, such as posts, comments, and access history. Visibility only to friends does not ensure the consequences disappear.
+Methodological description: Connect online actions with records retained by services or other people, such as posts, comments, and access history. Visibility only to friends does not ensure the consequences disappear.
+User-friendly description: Understand how posts and online actions can leave records that persist.
 
 ##### Distinguish a Private Chat from a Public Link
 
+Slug: distinguishAPrivateChatFromAPublicLink
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Check who can access a shared conversation or document; do not automatically assume a link is private.
+Methodological description: Check who can access a shared conversation or document; do not automatically assume a link is private.
+User-friendly description: Check who can open a shared chat or document rather than assuming its link is private.
 
 ##### Explain Data Re-identification
 
+Slug: explainDataReIdentification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how supposedly anonymized records can sometimes be linked to a person through external clues, such as habitual routes and times.
+Methodological description: Explain how supposedly anonymized records can sometimes be linked to a person through external clues, such as habitual routes and times.
+User-friendly description: Explain how separately collected details can identify a person again.
 
 #### Account Protection
+
+Slug: accountProtection
+Action: create
+Status: pending
 
 Skills: 9
 
 [Not implemented](#)
 
-Reducing unauthorized access involves strong passwords, independent authentication factors, phishing detection, link risk assessment, address verification, and safe responses to contacts. Technical security settings and behavioral choices reinforce one another.
+Methodological description: Reducing unauthorized access involves strong passwords, independent authentication factors, phishing detection, link risk assessment, address verification, and safe responses to contacts. Technical security settings and behavioral choices reinforce one another.
+User-friendly description: Explore how to protect accounts and respond to suspicious messages.
 
 ##### Create a Strong Passphrase
 
+Slug: createAStrongPassphrase
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Select a sufficiently long, unpredictable, account-specific sequence of words or symbols without readily accessible personal details. Do not require daily password changes without a reason or mistake character variety for overall security.
+Methodological description: Select a sufficiently long, unpredictable, account-specific sequence of words or symbols without readily accessible personal details. Do not require daily password changes without a reason or mistake character variety for overall security.
+User-friendly description: Create long, unpredictable passphrases that are different for each account.
 
 ##### Explain Multi-Factor Authentication
 
+Slug: explainMultiFactorAuthentication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how different factor categories can be combined for sign-in: knowledge (password), possession (device or security key), and biometrics. Two passwords are not two independent factors; MFA lowers risk but cannot make an account invulnerable.
+Methodological description: Explain how different factor categories can be combined for sign-in: knowledge (password), possession (device or security key), and biometrics. Two passwords are not two independent factors; MFA lowers risk but cannot make an account invulnerable.
+User-friendly description: Understand how a second independent authentication factor protects an account.
 
 ##### Configure Multi-Factor Authentication
 
+Slug: configureMultiFactorAuthentication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-In a safe practice or personal environment, choose and activate a supported additional factor and plan account recovery. Distinguish configuring protection from merely explaining it; never require disclosure of secret codes.
+Methodological description: In a safe practice or personal environment, choose and activate a supported additional factor and plan account recovery. Distinguish configuring protection from merely explaining it; never require disclosure of secret codes.
+User-friendly description: Set up an additional sign-in factor and plan how to recover access safely.
 
 ##### Recognize a Phishing Message
 
+Slug: recognizeAPhishingMessage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify attempts to elicit passwords, confirmation codes, or secrets through impersonation, urgency, threats, or fake forms. This examines intent and social-engineering tactics; technical domain checks and safe responses are separate skills.
+Methodological description: Identify attempts to elicit passwords, confirmation codes, or secrets through impersonation, urgency, threats, or fake forms. This examines intent and social-engineering tactics; technical domain checks and safe responses are separate skills.
+User-friendly description: Recognize messages that impersonate others to steal passwords or codes.
 
 ##### Respond to Suspicious Digital Contact
 
+Slug: respondToSuspiciousDigitalContact
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose an immediate safe response to an unclear request or online pressure: do not reveal secrets, stop engaging, verify identity through an independent channel, and contact a trusted adult or official support.
+Methodological description: Choose an immediate safe response to an unclear request or online pressure: do not reveal secrets, stop engaging, verify identity through an independent channel, and contact a trusted adult or official support.
+User-friendly description: Respond safely to suspicious contacts and verify requests independently.
 
 ##### Explain Why Software Updates Matter
 
+Slug: explainWhySoftwareUpdatesMatter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how trusted updates can patch vulnerabilities and defects exploited by attackers; distinguish official updates from fake prompts to install unfamiliar files.
+Methodological description: Explain how trusted updates can patch vulnerabilities and defects exploited by attackers; distinguish official updates from fake prompts to install unfamiliar files.
+User-friendly description: Learn why official software updates can help fix security weaknesses.
 
 ##### Assess the Risk of Following a Link
 
+Slug: assessTheRiskOfFollowingALink
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Based on context, requested actions, and warning signs, predict possible consequences such as fake login forms, suspicious downloads, or other unwanted behavior. Opening a page does not automatically cause infection; identifying the true domain is a different skill.
+Methodological description: Based on context, requested actions, and warning signs, predict possible consequences such as fake login forms, suspicious downloads, or other unwanted behavior. Opening a page does not automatically cause infection; identifying the true domain is a different skill.
+User-friendly description: Assess what could happen when a suspicious link is opened or followed.
 
 ##### Verify a Website's Domain
 
+Slug: verifyAWebsitesDomain
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine the actual domain in a link, separating it from subdomains, paths, and button labels, and detect impersonation through minor spelling changes or lookalike characters. In `facebook.com.example.org` the domain is `example.org`; visual similarity or HTTPS does not prove that an operator is trustworthy.
+Methodological description: Determine the actual domain in a link, separating it from subdomains, paths, and button labels, and detect impersonation through minor spelling changes or lookalike characters. In `facebook.com.example.org` the domain is `example.org`; visual similarity or HTTPS does not prove that an operator is trustworthy.
+User-friendly description: Read the real domain in a website address and spot misleading lookalikes.
 
 ##### Assess an Email Sender's Authenticity
 
+Slug: assessAnEmailSendersAuthenticity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that a sender's displayed name and image do not prove identity; check the address and an independent communication channel.
+Methodological description: Recognize that a sender's displayed name and image do not prove identity; check the address and an independent communication channel.
+User-friendly description: Check an email sender's identity beyond the displayed name or picture.
 
 #### Ethics of Digital Interaction
+
+Slug: ethicsOfDigitalInteraction
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Respect for other users and creators' rights, including recognizing bullying, attribution, and licensing conditions. Social norms and copyright differ from technical account protection.
+Methodological description: Respect for other users and creators' rights, including recognizing bullying, attribution, and licensing conditions. Social norms and copyright differ from technical account protection.
+User-friendly description: Learn to communicate respectfully and respect creators' permissions.
 
 ##### Identify Appropriate Online Behavior
 
+Slug: identifyAppropriateOnlineBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish respectful communication from repeated humiliation, threats, and bullying. Disagreement alone is not cyberbullying, and anonymity does not make harmful messages acceptable.
+Methodological description: Distinguish respectful communication from repeated humiliation, threats, and bullying. Disagreement alone is not cyberbullying, and anonymity does not make harmful messages acceptable.
+User-friendly description: Recognize threats, harassment and bullying in digital communication.
 
 ##### Attribute Digital Materials
 
+Slug: attributeDigitalMaterials
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-When using another person's text, images, sound, or code, credit the creator and original source in an appropriate format. Attribution does not replace permission and does not override licensing terms.
+Methodological description: When using another person's text, images, sound, or code, credit the creator and original source in an appropriate format. Attribution does not replace permission and does not override licensing terms.
+User-friendly description: Credit the original creators of digital content you use.
 
 ##### Choose a Safe Way to Report a Problem
 
+Slug: chooseASafeWayToReportAProblem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine when to contact a trusted adult, moderator, or official support and what minimum information to share without exposing other people's data. Selecting a reporting recipient differs from the immediate response to a dangerous message.
+Methodological description: Determine when to contact a trusted adult, moderator, or official support and what minimum information to share without exposing other people's data. Selecting a reporting recipient differs from the immediate response to a dangerous message.
+User-friendly description: Choose appropriate trusted people or official channels to report online problems.
 
 ##### Distinguish Digital Content Licenses
 
+Slug: distinguishDigitalContentLicenses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Read basic permissions and restrictions for copying, changing, and sharing text, images, sounds, or programs. Free access, the public domain, and open licenses are different legal conditions.
+Methodological description: Read basic permissions and restrictions for copying, changing, and sharing text, images, sounds, or programs. Free access, the public domain, and open licenses are different legal conditions.
+User-friendly description: Distinguish copyright restrictions, open licenses and public-domain content.
 
 #### Social and Environmental Impact of Computing
+
+Slug: socialAndEnvironmentalImpactOfComputing
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Digital systems may affect social groups and the environment through uneven benefits and harms, energy consumption, material use, and electronic waste. Evaluation requires a specific context, not an abstract 'good/bad' label.
+Methodological description: Digital systems may affect social groups and the environment through uneven benefits and harms, energy consumption, material use, and electronic waste. Evaluation requires a specific context, not an abstract 'good/bad' label.
+User-friendly description: Explore how computing affects fairness, resource use and the environment.
 
 ##### Assess an Algorithm's Impact on User Groups
 
+Slug: assessAnAlgorithmsImpactOnUserGroups
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare whether an automated rule produces different consequences for people with different characteristics or needs, and explain potential reasons. An identical formal rule does not necessarily yield an equally fair outcome.
+Methodological description: Compare whether an automated rule produces different consequences for people with different characteristics or needs, and explain potential reasons. An identical formal rule does not necessarily yield an equally fair outcome.
+User-friendly description: Consider whether an algorithm's outcomes differ unfairly between user groups.
 
 ##### Assess Computing's Environmental Impact
 
+Slug: assessComputingsEnvironmentalImpact
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect devices and services with energy consumption, resource extraction, hardware lifespan, and electronic waste. Comparing alternatives requires more than electricity used during one run.
+Methodological description: Connect devices and services with energy consumption, resource extraction, hardware lifespan, and electronic waste. Comparing alternatives requires more than electricity used during one run.
+User-friendly description: Compare computing's energy, material and electronic-waste impacts.
 ### Digital Product UX
+
+Slug: digitalProductUX
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 8
 
 [Not implemented](#)
 
-An Informatics perspective on people's experience with programs, digital devices, and electronic interfaces: goals, navigation, feedback, accessibility, usability, and ethics. Engineering separately studies UX for physical products and engineering systems; a shared discipline name does not imply shared Skill identities across textbooks.
+Methodological description: An Informatics perspective on people's experience with programs, digital devices, and electronic interfaces: goals, navigation, feedback, accessibility, usability, and ethics. Engineering separately studies UX for physical products and engineering systems; a shared discipline name does not imply shared Skill identities across textbooks.
+User-friendly description: Design digital experiences that people can understand, navigate and use accessibly.
 
 #### Digital Interaction Design
+
+Slug: digitalInteractionDesign
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Designing user action flows in applications and digital devices, understandable transitions, status feedback, and safeguards against common errors.
+Methodological description: Designing user action flows in applications and digital devices, understandable transitions, status feedback, and safeguards against common errors.
+User-friendly description: Explore how to plan intuitive actions and helpful responses in digital interfaces.
 
 ##### Identify a Digital Product User's Goal
 
+Slug: identifyADigitalProductUsersGoal
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine the specific action a person intends to perform in a program or on a digital device, distinguishing the user goal from internal technical system operations.
+Methodological description: Determine the specific action a person intends to perform in a program or on a digital device, distinguishing the user goal from internal technical system operations.
+User-friendly description: Identify what someone wants to accomplish in an app or digital device.
 
 ##### Design Digital Interface Navigation
 
+Slug: designDigitalInterfaceNavigation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Organize transitions among screens, sections, or states so users can find desired actions and understand their current position within a digital product.
+Methodological description: Organize transitions among screens, sections, or states so users can find desired actions and understand their current position within a digital product.
+User-friendly description: Arrange screens and navigation so people can find the right actions.
 
 ##### Design Digital Interface Feedback
 
+Slug: designDigitalInterfaceFeedback
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Provide clear feedback about taps, loading, errors, and completed actions so people need not guess whether the system has responded.
+Methodological description: Provide clear feedback about taps, loading, errors, and completed actions so people need not guess whether the system has responded.
+User-friendly description: Make buttons, loading states and errors give understandable feedback.
 
 ##### Prevent Common Digital Interaction Errors
 
+Slug: preventCommonDigitalInteractionErrors
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify actions that are easy to perform incorrectly and choose digital safeguards, such as clear labels, input validation, or confirmation before irreversible operations.
+Methodological description: Identify actions that are easy to perform incorrectly and choose digital safeguards, such as clear labels, input validation, or confirmation before irreversible operations.
+User-friendly description: Use labels, validation and confirmation to prevent avoidable mistakes.
 
 #### Accessibility
 
+Slug: accessibility
+Action: create
+Status: pending
+
 Skills: 2
 
 [Not implemented](#)
 
-Address different ways people perceive and operate interfaces and verify actual usability rather than judging only visual appeal.
+Methodological description: Address different ways people perceive and operate interfaces and verify actual usability rather than judging only visual appeal.
+User-friendly description: Discover how different abilities and input methods affect digital access.
 
 ##### Identify Needs of Users with Different Abilities
 
+Slug: identifyNeedsOfUsersWithDifferentAbilities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine how people with different vision, hearing, motor abilities, or input methods access information and control a digital product. Mouse-only controls, for example, create barriers for keyboard users.
+Methodological description: Determine how people with different vision, hearing, motor abilities, or input methods access information and control a digital product. Mouse-only controls, for example, create barriers for keyboard users.
+User-friendly description: Recognize needs of people who use keyboards, enlarged text or assistive technology.
 
 ##### Test Digital Interaction Accessibility
 
+Slug: testDigitalInteractionAccessibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Test concrete interaction methods without a mouse, without sound, or with enlarged text and record barriers. No complaints or an attractive design do not prove accessibility.
+Methodological description: Test concrete interaction methods without a mouse, without sound, or with enlarged text and record barriers. No complaints or an attractive design do not prove accessibility.
+User-friendly description: Test an interface without a mouse or sound and record obstacles.
 
 #### Experience Evaluation and Ethics
+
+Slug: experienceEvaluationAndEthics
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Test whether an interface supports real tasks and identify designs that covertly restrict users' informed choices.
+Methodological description: Test whether an interface supports real tasks and identify designs that covertly restrict users' informed choices.
+User-friendly description: Explore how user testing and honest design improve digital products.
 
 ##### Test Digital Interface Usability
 
+Slug: testDigitalInterfaceUsability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Give a person a concrete task on a device or in an app and observe whether they find the necessary actions without hints; identify confusing transitions and messages.
+Methodological description: Give a person a concrete task on a device or in an app and observe whether they find the necessary actions without hints; identify confusing transitions and messages.
+User-friendly description: Observe whether a person can complete a real task without extra hints.
 
 ##### Identify Manipulative Interface Patterns
 
+Slug: identifyManipulativeInterfacePatterns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize designs that covertly steer people toward unwanted choices, such as confusing cancellation, preselected add-ons, or deceptive button wording. Distinguish persuasive design from hidden restrictions on informed choice.
+Methodological description: Recognize designs that covertly steer people toward unwanted choices, such as confusing cancellation, preselected add-ons, or deceptive button wording. Distinguish persuasive design from hidden restrictions on informed choice.
+User-friendly description: Recognize interface tricks that hide costs, force choices or obstruct cancellation.
 ### Digital Creativity and Games
+
+Slug: digitalCreativityAndGames
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 10
 
 [Not implemented](#)
 
-Creating and editing digital content, game mechanics and rules, and procedural generation of resources. Digital product UX has its own domain, while the use of musical or engineering learning tools does not in itself create Informatics skills.
+Methodological description: Creating and editing digital content, game mechanics and rules, and procedural generation of resources. Digital product UX has its own domain, while the use of musical or engineering learning tools does not in itself create Informatics skills.
+User-friendly description: Create digital media, design playable rules and explore procedural generation.
 
 #### Digital Materials
 
+Slug: digitalMaterials
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Creating, modifying, and selecting tools for digital outcomes with specific purposes. Editing an existing file, for example, is a distinct action from choosing a tool for future work.
+Methodological description: Creating, modifying, and selecting tools for digital outcomes with specific purposes. Editing an existing file, for example, is a distinct action from choosing a tool for future work.
+User-friendly description: Learn to create, edit and choose tools for purposeful digital content.
 
 ##### Create a Simple Digital Artifact
 
+Slug: createASimpleDigitalArtifact
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine text, images, or other elements into a finished artifact with a defined message and audience, such as an explanatory card. Meaningful coherence matters more than a particular editor.
+Methodological description: Combine text, images, or other elements into a finished artifact with a defined message and audience, such as an explanatory card. Meaningful coherence matters more than a particular editor.
+User-friendly description: Make a coherent digital card, image or other artifact for a particular audience.
 
 ##### Edit a Digital Artifact
 
+Slug: editADigitalArtifact
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Make purposeful changes to an existing file while preserving intended meaning: correct a caption, reorder elements, or resize an image. This is distinct from creating a new artifact.
+Methodological description: Make purposeful changes to an existing file while preserving intended meaning: correct a caption, reorder elements, or resize an image. This is distinct from creating a new artifact.
+User-friendly description: Improve an existing digital file without losing its intended meaning.
 
 ##### Choose a Digital Creative Tool
 
+Slug: chooseADigitalCreativeTool
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Match a tool's technical capabilities to desired outcomes, such as distinguishing an image editor from a spreadsheet tool. This competency does not require Informatics to teach the internal structure of tools students happen to use in other subjects.
+Methodological description: Match a tool's technical capabilities to desired outcomes, such as distinguishing an image editor from a spreadsheet tool. This competency does not require Informatics to teach the internal structure of tools students happen to use in other subjects.
+User-friendly description: Choose creative software that matches what you need to produce.
 
 #### Game Design
+
+Slug: gameDesign
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Define game rules, create mechanics, and evaluate their effects on gameplay. Describing a rule, implementing it as interaction, and testing balance are related but independently assessable.
+Methodological description: Define game rules, create mechanics, and evaluate their effects on gameplay. Describing a rule, implementing it as interaction, and testing balance are related but independently assessable.
+User-friendly description: Explore how rules and player actions shape the experience of a game.
 
 ##### Formulate a Game Rule
 
+Slug: formulateAGameRule
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State a condition, permitted action, or consequence clearly enough that players interpret it consistently—for example, when points are awarded and when a round ends.
+Methodological description: State a condition, permitted action, or consequence clearly enough that players interpret it consistently—for example, when points are awarded and when a round ends.
+User-friendly description: Write a game rule clearly enough that players know what is allowed.
 
 ##### Design a Game Mechanic
 
+Slug: designAGameMechanic
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define the relationship between a player's action, a change in game state, and feedback: pressing a control initiates movement; collision with an object changes the score. A mechanic makes a rule operative, not just a written description.
+Methodological description: Define the relationship between a player's action, a change in game state, and feedback: pressing a control initiates movement; collision with an object changes the score. A mechanic makes a rule operative, not just a written description.
+User-friendly description: Connect a player's action to changes in game state and feedback.
 
 ##### Test the Balance of a Simple Game
 
+Slug: testTheBalanceOfASimpleGame
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Test whether rules and limitations make one choice always winning or render a game impossible to finish; compare outcomes with the design goal. Balance depends on game objectives; equal odds for every action are not universal requirements.
+Methodological description: Test whether rules and limitations make one choice always winning or render a game impossible to finish; compare outcomes with the design goal. Balance depends on game objectives; equal odds for every action are not universal requirements.
+User-friendly description: Test whether a game's rules make it fair, challenging and possible to finish.
 
 #### Procedural Generation
+
+Slug: proceduralGeneration
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Produce images, sounds, objects, or game worlds through rules and parameters instead of storing every finished variant. Distinguish parameter changes, reproducibility through a seed, and resource trade-offs.
+Methodological description: Produce images, sounds, objects, or game worlds through rules and parameters instead of storing every finished variant. Distinguish parameter changes, reproducibility through a seed, and resource trade-offs.
+User-friendly description: Discover how algorithms can create many content variations from compact rules.
 
 ##### Explain Procedural Resource Generation
 
+Slug: explainProceduralResourceGeneration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish storing a finished image, sound, or world from running rules that generate one from parameters. Compact rules can create a large resource but require computation at generation time.
+Methodological description: Distinguish storing a finished image, sound, or world from running rules that generate one from parameters. Compact rules can create a large resource but require computation at generation time.
+User-friendly description: Explain how a generator creates resources instead of storing every finished variation.
 
 ##### Configure Generator Parameters
 
+Slug: configureGeneratorParameters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine how changing object count, color palette, or another parameter alters generated results while the algorithm stays the same. Parameter adjustment is not rewriting the generation rules.
+Methodological description: Determine how changing object count, color palette, or another parameter alters generated results while the algorithm stays the same. Parameter adjustment is not rewriting the generation rules.
+User-friendly description: Change generator settings to control the appearance or quantity of output.
 
 ##### Reproduce Results Using a Generation Seed
 
+Slug: reproduceResultsUsingAGenerationSeed
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why the same pseudorandom seed, algorithm, parameters, and call order produce identical results. Changing any of these may break reproducibility.
+Methodological description: Explain why the same pseudorandom seed, algorithm, parameters, and call order produce identical results. Changing any of these may break reproducibility.
+User-friendly description: Understand how a fixed seed and unchanged rules reproduce the same result.
 
 ##### Compare Resource Storage and Generation
 
+Slug: compareResourceStorageAndGeneration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess trade-offs between stored data volume, compact rule descriptions, initialization time, and CPU/GPU/RAM use. Procedural generation is not the same as lossless or lossy compression of a ready-made file.
+Methodological description: Assess trade-offs between stored data volume, compact rule descriptions, initialization time, and CPU/GPU/RAM use. Procedural generation is not the same as lossless or lossy compression of a ready-made file.
+User-friendly description: Compare the storage saved by procedural generation with the computation it requires.
 ### Data Structures
 
 Groups: 8 · Skills: 34
