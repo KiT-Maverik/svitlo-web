@@ -33,4 +33,5 @@ export const angleTypes_Skill_Data = buildSkillConfig({
     pl: "Rozróżnianie kątów ostrych, prostych i rozwartych",
     uk: "Розрізнення гострих, прямих і тупих кутів",
   },
+  description: { methodological: "An acute angle has measure strictly between 0 and 90 degrees, a right angle measures 90 degrees, and an obtuse angle lies strictly between 90 and 180 degrees. The drawn lengths of the arms do not affect classification." },
 });

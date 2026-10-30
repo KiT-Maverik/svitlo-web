@@ -33,4 +33,5 @@ export const drawCircle_Skill_Data = buildSkillConfig({
     pl: "Rysowanie okręgów o zadanym promieniu cyrklem",
     uk: "Побудова кола заданого радіуса циркулем",
   },
+  description: { methodological: "When constructing a circle, a compass point establishes its center and a fixed opening establishes its radius. Changing the opening changes the radius; the principle is independent of a particular compass design." },
 });

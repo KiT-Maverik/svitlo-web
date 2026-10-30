@@ -33,4 +33,5 @@ export const circleDisk_Skill_Data = buildSkillConfig({
     pl: "Rozróżnianie okręgu i koła",
     uk: "Розрізнення кола та круга",
   },
+  description: { methodological: "A circle is the set of points in a plane at a fixed distance from a center; a disk includes those points and its enclosed region. Distinguish boundary from filled area, and circumference from the disk's area." },
 });

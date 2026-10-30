@@ -33,4 +33,5 @@ export const parallelPerpendicular_Skill_Data = buildSkillConfig({
     pl: "Rozpoznawanie prostych równoległych i prostopadłych",
     uk: "Розпізнавання паралельних і перпендикулярних прямих",
   },
+  description: { methodological: "Distinct parallel lines in the same plane do not intersect; perpendicular lines meet at a right angle. These relations depend on geometric structure, not merely a familiar horizontal or vertical drawing." },
 });
