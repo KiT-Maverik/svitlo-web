@@ -38,7 +38,8 @@ function packageFor(file, workspaces) {
 export function chooseChecks(changed, workspaces) {
   const affected = new Set();
   const packages = new Map(workspaces.map(w => [w.name, w]));
-  const global = changed.some(f => ['package.json', 'package-lock.json'].includes(f) || f.startsWith('scripts/check-workspaces'));
+  const global = changed.some(f => f === 'package.json' || f.startsWith('scripts/check-workspaces'));
+  const lockChange = changed.includes('package-lock.json');
   for (const file of changed) {
     const pkg = packageFor(file, workspaces);
     if (pkg) affected.add(pkg.name);
@@ -48,7 +49,10 @@ export function chooseChecks(changed, workspaces) {
     }
   }
   if (global) for (const name of packages.keys()) affected.add(name);
-  const taxonomy = global || changed.some(f => f.startsWith('learningApps/math/data/skills/') ||
+  if (lockChange) for (const name of ['@svitlo/contracts', '@svitlo/engine', '@svitlo/indexdb', '@svitlo/ui-kit', '@svitlo/math']) {
+    if (packages.has(name)) affected.add(name);
+  }
+  const taxonomy = global || lockChange || changed.some(f => f.startsWith('learningApps/math/data/skills/') ||
     f.startsWith('scripts/check-skills-taxonomy-structure') ||
     f.startsWith('shared/contracts/') || f.startsWith('shared/engine/'));
   const mathComponents = changed.some(f => f.startsWith('learningApps/math/src/') && /\.(ts|tsx|js|jsx)$/.test(f));

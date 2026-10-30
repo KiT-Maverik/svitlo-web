@@ -24,8 +24,12 @@ test('selects each changed app and Math UI tests only for source', () => {
   assert.deepEqual([...p.affected].sort(), ['@svitlo/biology', '@svitlo/math']);
   assert.equal(p.mathComponents, true);
 });
-test('shared root manifest changes select all workspaces', () => {
+test('root package-lock changes select core workspaces and Math, not every textbook', () => {
   const p = chooseChecks(['package-lock.json'], packages);
-  assert.equal(p.affected.size, packages.length);
+  assert.deepEqual([...p.affected].sort(), ['@svitlo/contracts', '@svitlo/engine', '@svitlo/math']);
   assert.equal(p.taxonomy, true);
+});
+test('root package.json changes select all workspaces', () => {
+  const p = chooseChecks(['package.json'], packages);
+  assert.equal(p.affected.size, packages.length);
 });
