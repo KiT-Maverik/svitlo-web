@@ -1743,537 +1743,952 @@ User-friendly description: Distinguish doubts about religious claims from uncert
 
 ### Mind, Self, and Human Existence
 
+Slug: mindSelfAndHumanExistence
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Questions about subjective experience, the continuity of the self, deliberate action, and a meaningful human life cannot be resolved solely through psychological measurement. This domain examines theories of mind, identity, agency, and existential commitments, distinguishing them from empirical mental-health claims.
+Methodological description: Questions about subjective experience, the continuity of the self, deliberate action, and a meaningful human life cannot be resolved solely through psychological measurement. This domain examines theories of mind, identity, agency, and existential commitments, distinguishing them from empirical mental-health claims.
+User-friendly description: Explore philosophical questions about consciousness, personal identity, freedom and meaning.
 
 #### Mind and Consciousness
 
+Slug: mindAndConsciousness
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A first-person experience and a third-person physical description offer different perspectives on mental life. Philosophical theories disagree about how these perspectives relate.
+Methodological description: A first-person experience and a third-person physical description offer different perspectives on mental life. Philosophical theories disagree about how these perspectives relate.
+User-friendly description: Discover different ways of understanding subjective experience and the mind.
 
 ##### Distinguish mental from physical descriptions
 
+Slug: distinguishMentalFromPhysicalDescriptions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when a claim describes subjective experience, observable behavior, or bodily processes, and why they are not automatically equivalent.
+Methodological description: Identify when a claim describes subjective experience, observable behavior, or bodily processes, and why they are not automatically equivalent.
+User-friendly description: Distinguish descriptions of feelings from descriptions of physical brain processes.
 
 ##### Compare theories of the mind–body relation
 
+Slug: compareTheoriesOfTheMindBodyRelation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Contrast representative views such as physicalism and dualism by their commitments and explanatory challenges.
+Methodological description: Contrast representative views such as physicalism and dualism by their commitments and explanatory challenges.
+User-friendly description: Compare philosophical explanations of how mind and body are related.
 
 ##### Explain the problem of other minds
 
+Slug: explainTheProblemOfOtherMinds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe why another being's subjective experiences are not observed in the same way as one's own, and what kinds of inferences are used.
+Methodological description: Describe why another being's subjective experiences are not observed in the same way as one's own, and what kinds of inferences are used.
+User-friendly description: Ask how we can know whether another being has subjective experiences.
 
 ##### Analyze a philosophical problem of artificial consciousness
 
+Slug: analyzeAPhilosophicalProblemOfArtificialConsciousness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess what would and would not count as evidence of experience in an artificial system, without claiming a settled test exists.
+Methodological description: Assess what would and would not count as evidence of experience in an artificial system, without claiming a settled test exists.
+User-friendly description: Consider what evidence could support a claim about artificial consciousness.
 
 #### Personal Identity
+
+Slug: personalIdentity
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-The self may be characterized by bodily, psychological, narrative, or relational continuity. The question is what makes someone the same person, not how memory works empirically.
+Methodological description: The self may be characterized by bodily, psychological, narrative, or relational continuity. The question is what makes someone the same person, not how memory works empirically.
+User-friendly description: Explore what makes someone the same person despite changes over time.
 
 ##### Distinguish personal identity from similarity
 
+Slug: distinguishPersonalIdentityFromSimilarity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why sharing a personality or appearance is not enough to establish that two persons are numerically identical.
+Methodological description: Explain why sharing a personality or appearance is not enough to establish that two persons are numerically identical.
+User-friendly description: Recognize why two similar people are not necessarily the same individual.
 
 ##### Compare bodily and psychological continuity accounts
 
+Slug: compareBodilyAndPsychologicalContinuityAccounts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how different criteria handle change, memory loss, and hypothetical transfer scenarios.
+Methodological description: Assess how different criteria handle change, memory loss, and hypothetical transfer scenarios.
+User-friendly description: Compare body-based and psychology-based accounts of personal identity.
 
 ##### Evaluate the role of memory in personal identity
 
+Slug: evaluateTheRoleOfMemoryInPersonalIdentity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine the philosophical significance and limitations of remembered experience as a criterion of persistence.
+Methodological description: Examine the philosophical significance and limitations of remembered experience as a criterion of persistence.
+User-friendly description: Examine whether memories are enough to establish personal continuity.
 
 ##### Analyze a personhood criterion
 
+Slug: analyzeAPersonhoodCriterion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Test a proposed condition of being a person against borderline cases without assigning anyone lesser real-world dignity.
+Methodological description: Test a proposed condition of being a person against borderline cases without assigning anyone lesser real-world dignity.
+User-friendly description: Test ideas about personhood against difficult cases without denying human dignity.
 
 #### Agency and Free Will
+
+Slug: agencyAndFreeWill
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Acting for reasons, selecting among alternatives, and being accountable are connected but separable philosophical ideas.
+Methodological description: Acting for reasons, selecting among alternatives, and being accountable are connected but separable philosophical ideas.
+User-friendly description: Explore how choice, reasons and responsibility relate to freedom.
 
 ##### Distinguish an action from an event
 
+Slug: distinguishAnActionFromAnEvent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify whether a description invokes an agent's intention or reason rather than only something that happened to a body.
+Methodological description: Identify whether a description invokes an agent's intention or reason rather than only something that happened to a body.
+User-friendly description: Distinguish an intentional action from something that merely happens.
 
 ##### Distinguish reasons for action from causes of behavior
 
+Slug: distinguishReasonsForActionFromCausesOfBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate justifying considerations from causal explanations, recognizing that the two may be related.
+Methodological description: Separate justifying considerations from causal explanations, recognizing that the two may be related.
+User-friendly description: Separate reasons that justify acting from causes that explain behavior.
 
 ##### Compare determinism and indeterminism
 
+Slug: compareDeterminismAndIndeterminism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the different claims about how events are determined and why randomness alone does not establish control.
+Methodological description: Explain the different claims about how events are determined and why randomness alone does not establish control.
+User-friendly description: Compare a fully determined world with one that allows indeterminate events.
 
 ##### Compare compatibilist and incompatibilist freedom
 
+Slug: compareCompatibilistAndIncompatibilistFreedom
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether meaningful free action is possible under determinism and how rival views define freedom.
+Methodological description: Examine whether meaningful free action is possible under determinism and how rival views define freedom.
+User-friendly description: Examine whether freedom and responsibility can coexist with determinism.
 
 ##### Evaluate conditions of moral responsibility
 
+Slug: evaluateConditionsOfMoralResponsibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider knowledge, control, intention, and coercion in judging whether blame or praise is warranted.
+Methodological description: Consider knowledge, control, intention, and coercion in judging whether blame or praise is warranted.
+User-friendly description: Consider the knowledge and control needed for moral responsibility.
 
 #### Human Existence and Meaning
+
+Slug: humanExistenceAndMeaning
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Existential reflection examines how people understand purpose, authenticity, finitude, and commitments, without prescribing a single life ideal or substituting for mental-health care.
+Methodological description: Existential reflection examines how people understand purpose, authenticity, finitude, and commitments, without prescribing a single life ideal or substituting for mental-health care.
+User-friendly description: Explore philosophical approaches to living a meaningful and authentic life.
 
 ##### Distinguish a life purpose from a passing preference
 
+Slug: distinguishALifePurposeFromAPassingPreference
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how sustained commitments and values differ from momentary wants when evaluating an account of a meaningful life.
+Methodological description: Examine how sustained commitments and values differ from momentary wants when evaluating an account of a meaningful life.
+User-friendly description: Distinguish long-term life commitments from momentary wishes.
 
 ##### Compare philosophical accounts of meaning in life
 
+Slug: comparePhilosophicalAccountsOfMeaningInLife
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Contrast accounts that ground human meaning in relationships, achievement, self-authorship, transcendence, religious commitments, or nonreligious purposes, assessing their philosophical reasons without requiring adherence to any worldview.
+Methodological description: Contrast accounts that ground human meaning in relationships, achievement, self-authorship, transcendence, religious commitments, or nonreligious purposes, assessing their philosophical reasons without requiring adherence to any worldview.
+User-friendly description: Compare different ideas about what gives human life meaning.
 
 ##### Analyze authenticity as a philosophical concept
 
+Slug: analyzeAuthenticityAsAPhilosophicalConcept
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate competing claims about acting from one's commitments, social expectations, and self-understanding.
+Methodological description: Evaluate competing claims about acting from one's commitments, social expectations, and self-understanding.
+User-friendly description: Explore whether acting authentically requires independence from social expectations.
 
 ##### Analyze the philosophical significance of mortality
 
+Slug: analyzeThePhilosophicalSignificanceOfMortality
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how finitude affects arguments about priorities and meaning rather than making predictions about an individual's emotional response.
+Methodological description: Examine how finitude affects arguments about priorities and meaning rather than making predictions about an individual's emotional response.
+User-friendly description: Reflect on how human mortality can shape arguments about life's priorities.
 
 ### Ethics and Moral Reasoning
+
+Slug: ethicsAndMoralReasoning
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 25
 
 [Not implemented](#)
 
-Ethics studies what ought to be done, what makes actions right or wrong, and how moral reasons apply to individuals and institutions. It evaluates normative standards rather than describing the psychological development of moral feelings.
+Methodological description: Ethics studies what ought to be done, what makes actions right or wrong, and how moral reasons apply to individuals and institutions. It evaluates normative standards rather than describing the psychological development of moral feelings.
+User-friendly description: Explore what makes actions right or wrong and how to justify moral judgments.
 
 #### Moral Concepts
+
+Slug: moralConcepts
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Ethical claims use concepts such as duty, harm, intention, and virtue that cannot be reduced to personal approval.
+Methodological description: Ethical claims use concepts such as duty, harm, intention, and virtue that cannot be reduced to personal approval.
+User-friendly description: Learn to recognize concepts such as duty, intention, harm and moral responsibility.
 
 ##### Distinguish moral from non-moral judgments
 
+Slug: distinguishMoralFromNonMoralJudgments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when a claim concerns obligations or rights rather than taste, etiquette, prudence, or mere legality.
+Methodological description: Identify when a claim concerns obligations or rights rather than taste, etiquette, prudence, or mere legality.
+User-friendly description: Tell ethical claims apart from personal taste, etiquette and legal rules.
 
 ##### Distinguish intentions from consequences
 
+Slug: distinguishIntentionsFromConsequences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why an action's aim and its actual effects may be evaluated separately in moral reasoning.
+Methodological description: Explain why an action's aim and its actual effects may be evaluated separately in moral reasoning.
+User-friendly description: Evaluate an action's intended purpose separately from its effects.
 
 ##### Analyze moral duty
 
+Slug: analyzeMoralDuty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify what it means to hold that a person is obligated to act even when doing so is inconvenient.
+Methodological description: Identify what it means to hold that a person is obligated to act even when doing so is inconvenient.
+User-friendly description: Understand why moral obligations can apply even when fulfilling them is inconvenient.
 
 ##### Distinguish moral responsibility from causal responsibility
 
+Slug: distinguishMoralResponsibilityFromCausalResponsibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate causing an outcome from being appropriately accountable for it under relevant knowledge and control conditions.
+Methodological description: Separate causing an outcome from being appropriately accountable for it under relevant knowledge and control conditions.
+User-friendly description: Distinguish responsibility for causing something from deserving moral blame.
 
 #### Metaethics
+
+Slug: metaethics
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Inquiry into the meaning, objectivity, and epistemic standing of moral discourse underlies but does not itself prescribe codes of conduct. Normative theories decide how to act; metaethical theories examine the status of such judgments.
+Methodological description: Inquiry into the meaning, objectivity, and epistemic standing of moral discourse underlies but does not itself prescribe codes of conduct. Normative theories decide how to act; metaethical theories examine the status of such judgments.
+User-friendly description: Explore what moral claims mean and whether moral truths depend on personal beliefs.
 
 ##### Distinguish metaethical from normative questions
 
+Slug: distinguishMetaethicalFromNormativeQuestions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate questions about which actions are right from questions about what moral claims mean and whether their truth is objective.
+Methodological description: Separate questions about which actions are right from questions about what moral claims mean and whether their truth is objective.
+User-friendly description: Distinguish asking what is right from asking what moral judgments mean.
 
 ##### Compare moral realism and anti-realism
 
+Slug: compareMoralRealismAndAntiRealism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess opposing views about whether moral truths exist independently of attitudes, and distinguish this ontological disagreement from practical moral choices.
+Methodological description: Assess opposing views about whether moral truths exist independently of attitudes, and distinguish this ontological disagreement from practical moral choices.
+User-friendly description: Compare views that affirm objective moral truths with views that reject them.
 
 ##### Evaluate moral relativism
 
+Slug: evaluateMoralRelativism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Test the view that moral truth or justification varies by culture or individual against cases involving disagreement, criticism, and reform.
+Methodological description: Test the view that moral truth or justification varies by culture or individual against cases involving disagreement, criticism, and reform.
+User-friendly description: Examine whether right and wrong depend on culture or individual perspective.
 
 ##### Distinguish moral cognitivism from non-cognitivism
 
+Slug: distinguishMoralCognitivismFromNonCognitivism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether moral utterances express truth-apt beliefs or instead function as prescriptions, commitments, or other attitudes.
+Methodological description: Examine whether moral utterances express truth-apt beliefs or instead function as prescriptions, commitments, or other attitudes.
+User-friendly description: Explore whether moral sentences state facts or express attitudes and commitments.
 
 ##### Analyze moral disagreement
 
+Slug: analyzeMoralDisagreement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify whether disputants differ about facts, principles, or the status of moral claims, and what kinds of reasons could address those differences.
+Methodological description: Identify whether disputants differ about facts, principles, or the status of moral claims, and what kinds of reasons could address those differences.
+User-friendly description: Separate disagreements over facts from disagreements over moral standards.
 
 ##### Examine moral motivation
 
+Slug: examineMoralMotivation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare philosophical positions on whether sincerely judging an act right necessarily motivates someone to perform it, without substituting a psychological causal theory.
+Methodological description: Compare philosophical positions on whether sincerely judging an act right necessarily motivates someone to perform it, without substituting a psychological causal theory.
+User-friendly description: Consider whether believing something is right necessarily motivates action.
 
 #### Ethical Frameworks
 
+Slug: ethicalFrameworks
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Normative theories emphasize different criteria of moral assessment. A theory is not a universal formula that automatically resolves every difficult case.
+Methodological description: Normative theories emphasize different criteria of moral assessment. A theory is not a universal formula that automatically resolves every difficult case.
+User-friendly description: Compare major theories for evaluating right and wrong actions.
 
 ##### Apply consequentialist reasoning
 
+Slug: applyConsequentialistReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate an action by outcomes and the welfare or values its consequences affect, accounting for affected parties.
+Methodological description: Evaluate an action by outcomes and the welfare or values its consequences affect, accounting for affected parties.
+User-friendly description: Consider likely outcomes and everyone affected when evaluating a choice.
 
 ##### Apply duty-based reasoning
 
+Slug: applyDutyBasedReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether an act respects a rule, obligation, or person's standing even when violating it might have beneficial effects.
+Methodological description: Assess whether an act respects a rule, obligation, or person's standing even when violating it might have beneficial effects.
+User-friendly description: Judge an action in light of duties and rights as well as its consequences.
 
 ##### Apply virtue-ethical reasoning
 
+Slug: applyVirtueEthicalReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider the traits and practical judgment exemplified by an action rather than evaluating only isolated rules or outcomes.
+Methodological description: Consider the traits and practical judgment exemplified by an action rather than evaluating only isolated rules or outcomes.
+User-friendly description: Ask what an action shows about character and practical wisdom.
 
 ##### Apply care-ethical reasoning
 
+Slug: applyCareEthicalReasoning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate obligations arising from dependence, relationships, vulnerability, and context without treating care as the absence of principles.
+Methodological description: Evaluate obligations arising from dependence, relationships, vulnerability, and context without treating care as the absence of principles.
+User-friendly description: Consider vulnerability, relationships and care when evaluating obligations.
 
 ##### Compare ethical frameworks on one dilemma
 
+Slug: compareEthicalFrameworksOnOneDilemma
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why distinct normative standards may support different recommendations even when the underlying facts are shared.
+Methodological description: Explain why distinct normative standards may support different recommendations even when the underlying facts are shared.
+User-friendly description: Compare how different moral theories reach conclusions about one dilemma.
 
 #### Moral Deliberation
 
+Slug: moralDeliberation
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Difficult cases require identifying who is affected, which reasons conflict, and whether an apparent compromise respects relevant obligations.
+Methodological description: Difficult cases require identifying who is affected, which reasons conflict, and whether an apparent compromise respects relevant obligations.
+User-friendly description: Learn to reason through difficult choices with competing ethical considerations.
 
 ##### Identify stakeholders in an ethical dilemma
 
+Slug: identifyStakeholdersInAnEthicalDilemma
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize persons or other morally relevant parties affected directly or indirectly by a proposed choice.
+Methodological description: Recognize persons or other morally relevant parties affected directly or indirectly by a proposed choice.
+User-friendly description: Identify all the people and other parties affected by a moral choice.
 
 ##### Identify conflicting moral obligations
 
+Slug: identifyConflictingMoralObligations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify duties or values that cannot all be fully honored in a concrete case without assuming that all conflicts are irresolvable.
+Methodological description: Specify duties or values that cannot all be fully honored in a concrete case without assuming that all conflicts are irresolvable.
+User-friendly description: Recognize when two ethical obligations cannot both be fully honored.
 
 ##### Justify a moral judgment
 
+Slug: justifyAMoralJudgment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect a normative conclusion to stated values, principles, and case facts rather than mere personal preference.
+Methodological description: Connect a normative conclusion to stated values, principles, and case facts rather than mere personal preference.
+User-friendly description: Support a moral judgment using explicit principles and relevant facts.
 
 ##### Evaluate a moral counterargument
 
+Slug: evaluateAMoralCounterargument
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Test whether an objection exposes an overlooked harm, inconsistency, or relevant exception to a principle.
+Methodological description: Test whether an objection exposes an overlooked harm, inconsistency, or relevant exception to a principle.
+User-friendly description: Consider objections that reveal harms, exceptions or inconsistencies.
 
 ##### Assess proportionality in moral decisions
 
+Slug: assessProportionalityInMoralDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider whether a harmful burden or restriction is justified in relation to its aim and less harmful alternatives.
+Methodological description: Consider whether a harmful burden or restriction is justified in relation to its aim and less harmful alternatives.
+User-friendly description: Evaluate whether harms or restrictions are proportionate to a justified aim.
 
 #### Applied Ethics
+
+Slug: appliedEthics
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Ethical principles face distinctive challenges when rights, vulnerable people, nonhuman life, and emerging technologies are involved.
+Methodological description: Ethical principles face distinctive challenges when rights, vulnerable people, nonhuman life, and emerging technologies are involved.
+User-friendly description: Explore ethical questions about consent, privacy, animals, nature and technology.
 
 ##### Evaluate consent in an ethical scenario
 
+Slug: evaluateConsentInAnEthicalScenario
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess whether a decision is adequately informed, voluntary, and within the decision-maker's authority.
+Methodological description: Assess whether a decision is adequately informed, voluntary, and within the decision-maker's authority.
+User-friendly description: Check whether consent is informed, voluntary and given by the right person.
 
 ##### Evaluate privacy as an ethical value
 
+Slug: evaluatePrivacyAsAnEthicalValue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reason about informational control, trust, and harms of disclosure beyond compliance with a particular law.
+Methodological description: Reason about informational control, trust, and harms of disclosure beyond compliance with a particular law.
+User-friendly description: Consider why privacy matters even beyond legal requirements.
 
 ##### Evaluate duties toward nonhuman animals
 
+Slug: evaluateDutiesTowardNonhumanAnimals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare grounds for considering animal welfare or moral status in choices that affect sentient beings.
+Methodological description: Compare grounds for considering animal welfare or moral status in choices that affect sentient beings.
+User-friendly description: Examine moral reasons for considering the welfare of nonhuman animals.
 
 ##### Evaluate environmental obligations
 
+Slug: evaluateEnvironmentalObligations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine duties to ecosystems and future generations, including trade-offs between present and long-term interests.
+Methodological description: Examine duties to ecosystems and future generations, including trade-offs between present and long-term interests.
+User-friendly description: Explore obligations to ecosystems and future generations.
 
 ##### Evaluate ethical implications of automated decisions
 
+Slug: evaluateEthicalImplicationsOfAutomatedDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess responsibility, contestability, fairness, and potential harm when an algorithm influences consequential choices.
+Methodological description: Assess responsibility, contestability, fairness, and potential harm when an algorithm influences consequential choices.
+User-friendly description: Evaluate fairness, accountability and harm in decisions influenced by algorithms.
 
 ### Social and Political Philosophy
+
+Slug: socialAndPoliticalPhilosophy
+Action: create
+Status: pending
 
 Groups: 6 · Skills: 23
 
 [Not implemented](#)
 
-Political and social philosophy examines the justification of collective rules, institutions, authority, rights, and distributions of benefits and burdens. It asks normative questions rather than describing the chronology of regimes or the mechanics of markets.
+Methodological description: Political and social philosophy examines the justification of collective rules, institutions, authority, rights, and distributions of benefits and burdens. It asks normative questions rather than describing the chronology of regimes or the mechanics of markets.
+User-friendly description: Examine the moral foundations of laws, rights, authority and shared social decisions.
 
 #### Justice and Equality
 
+Slug: justiceAndEquality
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Claims of fairness depend on what is distributed, who qualifies for consideration, and which differences are morally relevant.
+Methodological description: Claims of fairness depend on what is distributed, who qualifies for consideration, and which differences are morally relevant.
+User-friendly description: Explore how different concepts of fairness shape social arrangements.
 
 ##### Distinguish equality from equity
 
+Slug: distinguishEqualityFromEquity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare giving identical treatment with responding to relevant differences in needs or disadvantage, without assuming one always settles justice.
+Methodological description: Compare giving identical treatment with responding to relevant differences in needs or disadvantage, without assuming one always settles justice.
+User-friendly description: Compare treating people identically with accounting for relevant differences.
 
 ##### Compare distributive principles
 
+Slug: compareDistributivePrinciples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate allocation by need, merit, equality, entitlement, or sufficiency and identify conflicts between principles.
+Methodological description: Evaluate allocation by need, merit, equality, entitlement, or sufficiency and identify conflicts between principles.
+User-friendly description: Evaluate whether resources should be distributed by need, merit, rights or equality.
 
 ##### Analyze procedural fairness
 
+Slug: analyzeProceduralFairness
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess the transparency, consistency, and opportunity to contest a decision independent of who benefits from its outcome.
+Methodological description: Assess the transparency, consistency, and opportunity to contest a decision independent of who benefits from its outcome.
+User-friendly description: Decide whether a decision-making process is fair even when its result is disputed.
 
 ##### Evaluate a claim about discrimination
 
+Slug: evaluateAClaimAboutDiscrimination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine whether a distinction in treatment is relevantly justified or imposes an unfair burden on a protected or vulnerable group.
+Methodological description: Examine whether a distinction in treatment is relevantly justified or imposes an unfair burden on a protected or vulnerable group.
+User-friendly description: Examine whether differences in treatment are justified or discriminatory.
 
 #### Rights and Liberty
 
+Slug: rightsAndLiberty
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A right may protect a person's action, claim, or status and create obligations for others. Competing rights can require principled reconciliation.
+Methodological description: A right may protect a person's action, claim, or status and create obligations for others. Competing rights can require principled reconciliation.
+User-friendly description: Explore what people may claim as rights and what liberty involves.
 
 ##### Distinguish rights from privileges
 
+Slug: distinguishRightsFromPrivileges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify whether a claim concerns an entitlement owed to a person or an advantage conditional on discretionary permission.
+Methodological description: Identify whether a claim concerns an entitlement owed to a person or an advantage conditional on discretionary permission.
+User-friendly description: Distinguish a claim owed to a person from a privilege granted conditionally.
 
 ##### Distinguish negative and positive liberty
 
+Slug: distinguishNegativeAndPositiveLiberty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Contrast freedom from interference with capacities or opportunities to act, while recognizing debates about their relationship.
+Methodological description: Contrast freedom from interference with capacities or opportunities to act, while recognizing debates about their relationship.
+User-friendly description: Compare freedom from interference with the ability to act effectively.
 
 ##### Analyze a conflict between rights
 
+Slug: analyzeAConflictBetweenRights
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify whose claims compete and evaluate justified limits without assuming one right automatically cancels all others.
+Methodological description: Identify whose claims compete and evaluate justified limits without assuming one right automatically cancels all others.
+User-friendly description: Consider how conflicts between important rights might be resolved.
 
 ##### Explain freedom of conscience
 
+Slug: explainFreedomOfConscience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess why protecting personal belief and nonbelief may matter independently of agreement with any particular worldview.
+Methodological description: Assess why protecting personal belief and nonbelief may matter independently of agreement with any particular worldview.
+User-friendly description: Explore why people should be free to hold religious or nonreligious convictions.
 
 #### Political Authority
 
+Slug: politicalAuthority
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Institutions exercise collective power that requires justification. Political legitimacy, coercion, and obedience are distinct concepts.
+Methodological description: Institutions exercise collective power that requires justification. Political legitimacy, coercion, and obedience are distinct concepts.
+User-friendly description: Examine what makes political authority legitimate rather than merely powerful.
 
 ##### Evaluate the legitimacy of political authority
 
+Slug: evaluateTheLegitimacyOfPoliticalAuthority
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine reasons offered to justify the right to make binding public decisions, not merely whether an institution controls force.
+Methodological description: Examine reasons offered to justify the right to make binding public decisions, not merely whether an institution controls force.
+User-friendly description: Compare arguments that justify government through consent, security or cooperation.
 
 ##### Compare social contract arguments
 
+Slug: compareSocialContractArguments
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how alternative accounts use consent, cooperation, security, or fairness to justify political obligations.
+Methodological description: Explain how alternative accounts use consent, cooperation, security, or fairness to justify political obligations.
+User-friendly description: Evaluate the reasons offered for public institutions' authority to make rules.
 
 ##### Evaluate the limits of state coercion
 
+Slug: evaluateTheLimitsOfStateCoercion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess competing grounds for restricting individual actions, such as preventing harm or protecting rights.
+Methodological description: Assess competing grounds for restricting individual actions, such as preventing harm or protecting rights.
+User-friendly description: Consider when restrictions on personal freedom might be justified.
 
 ##### Analyze civil disobedience
 
+Slug: analyzeCivilDisobedience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider the moral conditions, aims, and limits of nonviolent principled lawbreaking without equating legality with morality.
+Methodological description: Consider the moral conditions, aims, and limits of nonviolent principled lawbreaking without equating legality with morality.
+User-friendly description: Discuss moral arguments about principled, nonviolent disobedience of laws.
 
 #### Philosophy of Law
+
+Slug: philosophyOfLaw
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Jurisprudence considers what makes a norm legally valid, why legal institutions claim authority, and how rules should be interpreted. These questions are not limited to any country's current statutes or to political legitimacy in general.
+Methodological description: Jurisprudence considers what makes a norm legally valid, why legal institutions claim authority, and how rules should be interpreted. These questions are not limited to any country's current statutes or to political legitimacy in general.
+User-friendly description: Explore what makes legal rules authoritative and how they should be interpreted.
 
 ##### Analyze legal positivism
 
+Slug: analyzeLegalPositivism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate accounts that identify valid law through social sources or institutional practices rather than making moral correctness a necessary condition of legal validity.
+Methodological description: Evaluate accounts that identify valid law through social sources or institutional practices rather than making moral correctness a necessary condition of legal validity.
+User-friendly description: Examine the view that legal validity depends on social sources rather than moral merit.
 
 ##### Analyze natural law theory
 
+Slug: analyzeNaturalLawTheory
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate theories that understand legal authority or validity as importantly connected to morality, distinguishing different versions of this connection.
+Methodological description: Evaluate theories that understand legal authority or validity as importantly connected to morality, distinguishing different versions of this connection.
+User-friendly description: Compare views that connect the authority of law with moral principles.
 
 ##### Evaluate theories of legal interpretation
 
+Slug: evaluateTheoriesOfLegalInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how text, legislative purpose, precedent, and institutional role support competing interpretations of a legal provision without deciding a real legal dispute.
+Methodological description: Assess how text, legislative purpose, precedent, and institutional role support competing interpretations of a legal provision without deciding a real legal dispute.
+User-friendly description: Consider how text, purpose and precedent affect interpretations of a legal rule.
 
 ##### Analyze the rule of law
 
+Slug: analyzeTheRuleOfLaw
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine principles such as generality, accessibility, prospectivity, consistent application, and constraints on arbitrary power as grounds for evaluating a legal order.
+Methodological description: Examine principles such as generality, accessibility, prospectivity, consistent application, and constraints on arbitrary power as grounds for evaluating a legal order.
+User-friendly description: Explore principles that keep laws public, predictable and free from arbitrary power.
 
 #### Technology and Society
+
+Slug: technologyAndSociety
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Technological artifacts and institutions shape the practical conditions of action, social change, and control. Philosophical analysis evaluates these mediation and agency claims rather than measuring product usage or engineering device performance.
+Methodological description: Technological artifacts and institutions shape the practical conditions of action, social change, and control. Philosophical analysis evaluates these mediation and agency claims rather than measuring product usage or engineering device performance.
+User-friendly description: Learn to analyze how technologies affect human action and society.
 
 ##### Analyze technological mediation
 
+Slug: analyzeTechnologicalMediation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine how a technological artifact changes the available actions, relationships, or choices through which people engage the world, without reducing the issue to the device's technical operation.
+Methodological description: Examine how a technological artifact changes the available actions, relationships, or choices through which people engage the world, without reducing the issue to the device's technical operation.
+User-friendly description: Examine how technology changes the choices and relationships available to people.
 
 ##### Evaluate technological determinism
 
+Slug: evaluateTechnologicalDeterminism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess arguments that technological development determines social arrangements, including objections based on political choice, design, and historical contingency.
+Methodological description: Assess arguments that technological development determines social arrangements, including objections based on political choice, design, and historical contingency.
+User-friendly description: Question whether technological change alone determines how societies develop.
 
 ##### Analyze human autonomy in technological systems
 
+Slug: analyzeHumanAutonomyInTechnologicalSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate when reliance on automated or networked systems enhances or constrains meaningful choice and control, separate from the narrower ethics of individual algorithmic decisions.
+Methodological description: Evaluate when reliance on automated or networked systems enhances or constrains meaningful choice and control, separate from the narrower ethics of individual algorithmic decisions.
+User-friendly description: Explore when technology increases or reduces a person's control over their decisions.
 
 #### Public Reason and Civic Life
+
+Slug: publicReasonAndCivicLife
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-People with incompatible values must still make shared decisions. Philosophical inquiry examines how disagreements can be handled under pluralism and institutional accountability.
+Methodological description: People with incompatible values must still make shared decisions. Philosophical inquiry examines how disagreements can be handled under pluralism and institutional accountability.
+User-friendly description: Discover how people with different values can justify decisions affecting everyone.
 
 ##### Distinguish public reasons from private preferences
 
+Slug: distinguishPublicReasonsFromPrivatePreferences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify justifications aimed at principles others can evaluate, rather than asserting that a personal desire must settle collective policy.
+Methodological description: Identify justifications aimed at principles others can evaluate, rather than asserting that a personal desire must settle collective policy.
+User-friendly description: Distinguish public reasons from preferences that others have no reason to share.
 
 ##### Analyze democratic legitimacy
 
+Slug: analyzeDemocraticLegitimacy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate the roles of participation, representation, minority protections, and accountability in justifying collective decisions.
+Methodological description: Evaluate the roles of participation, representation, minority protections, and accountability in justifying collective decisions.
+User-friendly description: Consider how participation, representation and accountability justify democracy.
 
 ##### Assess an argument about the common good
 
+Slug: assessAnArgumentAboutTheCommonGood
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Examine who benefits, who bears costs, and whether a proposed collective interest disregards legitimate dissent.
+Methodological description: Examine who benefits, who bears costs, and whether a proposed collective interest disregards legitimate dissent.
+User-friendly description: Examine whose interests a claim about the common good represents.
 
 ##### Evaluate competing views of political obligation
 
+Slug: evaluateCompetingViewsOfPoliticalObligation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider when citizens may have moral reasons to obey, criticize, or resist laws irrespective of mere fear of punishment.
+Methodological description: Consider when citizens may have moral reasons to obey, criticize, or resist laws irrespective of mere fear of punishment.
+User-friendly description: Explore reasons people might follow, challenge or resist political laws.
 
 ### Philosophy of Language
 
