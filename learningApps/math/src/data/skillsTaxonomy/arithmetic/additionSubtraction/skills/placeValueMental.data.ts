@@ -33,4 +33,5 @@ export const placeValueMental_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — Pamięciowe obliczenia z wartością pozycyjną",
     uk: "Додавання та віднімання — Усні обчислення за розрядами",
   },
+  description: { methodological: "Mental place-value decomposition replaces an expression by equivalent calculations on tens and ones. Each step must preserve the sum or difference and be justified by operation properties." },
 });

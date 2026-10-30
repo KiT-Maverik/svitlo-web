@@ -33,4 +33,5 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — 3-cyfrowe · Bez zamiany jednostek",
     uk: "Додавання та віднімання — 3-цифрові · Без розрядного обміну",
   },
+  description: { methodological: "Where no carrying or borrowing is required, corresponding hundreds, tens, and ones can be computed separately. Combining the place values produces the same sum or difference." },
 });

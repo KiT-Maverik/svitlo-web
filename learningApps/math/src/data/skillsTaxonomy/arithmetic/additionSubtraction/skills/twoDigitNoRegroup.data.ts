@@ -33,4 +33,5 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
     pl: "Dodawanie i odejmowanie — 2-cyfrowe · Bez zamiany jednostek",
     uk: "Додавання та віднімання — 2-цифрові · Без розрядного обміну",
   },
+  description: { methodological: "Without a place-value exchange, tens and ones can be computed separately and their values recombined. This is a special case of general positional arithmetic rather than a different operation." },
 });
