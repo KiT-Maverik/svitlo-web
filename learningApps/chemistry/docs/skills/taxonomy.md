@@ -20,561 +20,996 @@ Code files: 0/13 Domains · 0/43 Groups · 0/215 Skills
 
 ### Chemical Inquiry
 
+Slug: chemicalInquiry
+Action: create
+Status: pending
+
 Groups: 4 · Skills: 19
 
 [Not implemented](#)
 
-Chemical knowledge connects observations of substances with explanations, testable models and reliable evidence. This domain covers chemistry-specific investigation and communication; general research methodology remains a cross-disciplinary concern.
+Methodological description: Chemical knowledge connects observations of substances with explanations, testable models and reliable evidence. This domain covers chemistry-specific investigation and communication; general research methodology remains a cross-disciplinary concern.
+User-friendly description: Explore how chemists investigate substances, test explanations and use trustworthy evidence.
 
 #### Questions and Models
+
+Slug: questionsAndModels
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Chemical claims can be examined by specifying substances, observable properties, conditions and possible particle-level explanations.
+Methodological description: Chemical claims can be examined by specifying substances, observable properties, conditions and possible particle-level explanations.
+User-friendly description: Learn how chemical questions are framed and explained using evidence and models.
 
 ##### Chemistry as a Discipline
 
+Slug: chemistryAsADiscipline
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish questions about composition, properties and transformations of matter from neighboring questions about motion, organisms or technological design.
+Methodological description: Distinguish questions about composition, properties and transformations of matter from neighboring questions about motion, organisms or technological design.
+User-friendly description: Discover which questions chemistry can answer about matter and its changes.
 
 ##### Macroscopic and Particle Explanations
 
+Slug: macroscopicAndParticleExplanations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate an observable change, such as dissolving or gas formation, to a possible account of particles without confusing the model with direct observation.
+Methodological description: Relate an observable change, such as dissolving or gas formation, to a possible account of particles without confusing the model with direct observation.
+User-friendly description: Connect visible chemical changes with possible explanations about particles.
 
 ##### Chemical Models
 
+Slug: chemicalModels
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use and critique diagrams, formulas and physical or computational representations according to what they show and omit.
+Methodological description: Use and critique diagrams, formulas and physical or computational representations according to what they show and omit.
+User-friendly description: Use chemical diagrams and formulas while recognizing what they cannot show.
 
 ##### Testable Chemical Predictions
 
+Slug: testableChemicalPredictions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State a predicted chemical outcome and the evidence that could support or contradict it.
+Methodological description: State a predicted chemical outcome and the evidence that could support or contradict it.
+User-friendly description: Make a testable prediction about a chemical change and identify supporting evidence.
 
 #### Measurements and Evidence
+
+Slug: measurementsAndEvidence
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Chemical conclusions depend on measured quantities, recorded conditions and the distinction between observed patterns and explanatory claims.
+Methodological description: Chemical conclusions depend on measured quantities, recorded conditions and the distinction between observed patterns and explanatory claims.
+User-friendly description: Explore how measurements and careful observation support chemical explanations.
 
 ##### Observing Chemical Properties
 
+Slug: observingChemicalProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Record color, phase, odor when safely available from existing observations, and other relevant features without turning an inference into a measurement.
+Methodological description: Record color, phase, odor when safely available from existing observations, and other relevant features without turning an inference into a measurement.
+User-friendly description: Record observable properties without confusing them with inferred causes.
 
 ##### Measuring Mass
 
+Slug: measuringMass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine and interpret the mass of a sample, including appropriate units and the effects of container mass.
+Methodological description: Determine and interpret the mass of a sample, including appropriate units and the effects of container mass.
+User-friendly description: Measure the mass of a sample while accounting for its container and units.
 
 ##### Measuring Volume
 
+Slug: measuringVolume
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine liquid or gas volume with suitable measurement conventions and acknowledge instrument limitations.
+Methodological description: Determine liquid or gas volume with suitable measurement conventions and acknowledge instrument limitations.
+User-friendly description: Measure liquid or gas volumes and recognize the limits of the instruments.
 
 ##### Measurement Uncertainty
 
+Slug: measurementUncertainty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the precision and uncertainty of experimental measurements rather than treating every reported digit as exact.
+Methodological description: Interpret the precision and uncertainty of experimental measurements rather than treating every reported digit as exact.
+User-friendly description: Understand why measured values have uncertainty rather than perfect precision.
 
 ##### Chemical Data Interpretation
 
+Slug: chemicalDataInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use tables and graphs to relate changing composition, time, temperature or measured property to chemical behavior.
+Methodological description: Use tables and graphs to relate changing composition, time, temperature or measured property to chemical behavior.
+User-friendly description: Use chemical data to explore relationships between conditions and outcomes.
 
 #### Laboratory Reasoning
+
+Slug: laboratoryReasoning
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Working with substances involves controlling exposure, maintaining traceability of samples and drawing conclusions that do not exceed the evidence.
+Methodological description: Working with substances involves controlling exposure, maintaining traceability of samples and drawing conclusions that do not exceed the evidence.
+User-friendly description: Learn how to reason safely and draw justified conclusions when working with substances.
 
 ##### Chemical Hazard Symbols
 
+Slug: chemicalHazardSymbols
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret common chemical hazard pictograms and distinguish hazard from actual exposure and risk.
+Methodological description: Interpret common chemical hazard pictograms and distinguish hazard from actual exposure and risk.
+User-friendly description: Recognize chemical hazard symbols and understand that risk depends on exposure.
 
 ##### Chemical Handling Decisions
 
+Slug: chemicalHandlingDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose risk-appropriate handling and disposal principles from substance identity, concentration and safety information rather than assuming familiar products are harmless.
+Methodological description: Choose risk-appropriate handling and disposal principles from substance identity, concentration and safety information rather than assuming familiar products are harmless.
+User-friendly description: Choose safe handling principles based on chemical information and conditions.
 
 ##### Experimental Variables
 
+Slug: experimentalVariables
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish the manipulated chemical condition, observed response and controlled conditions in an investigation.
+Methodological description: Distinguish the manipulated chemical condition, observed response and controlled conditions in an investigation.
+User-friendly description: Identify which chemical condition changes and what is measured in a fair investigation.
 
 ##### Evidence-Based Chemical Conclusions
 
+Slug: evidenceBasedChemicalConclusions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate whether observations justify a claim about composition or reaction, including alternative explanations.
+Methodological description: Evaluate whether observations justify a claim about composition or reaction, including alternative explanations.
+User-friendly description: Decide whether chemical observations really support a proposed explanation.
 
 #### Analytical Chemistry
+
+Slug: analyticalChemistry
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Analytical chemistry identifies particular components in samples and determines their amounts. Sample treatment, chemical selectivity and calibration govern whether signals justify a conclusion; general observation and bulk property comparison are distinct competencies.
+Methodological description: Analytical chemistry identifies particular components in samples and determines their amounts. Sample treatment, chemical selectivity and calibration govern whether signals justify a conclusion; general observation and bulk property comparison are distinct competencies.
+User-friendly description: Discover how chemists identify substances and measure their amounts in samples.
 
 ##### Qualitative Analyte Identification
 
+Slug: qualitativeAnalyteIdentification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use selective reactions or instrumental signatures to identify a target chemical species in a sample, recognizing that shared responses may prevent a unique identification.
+Methodological description: Use selective reactions or instrumental signatures to identify a target chemical species in a sample, recognizing that shared responses may prevent a unique identification.
+User-friendly description: Use chemical tests or instrument signals to identify a substance in a mixture.
 
 ##### Quantitative Analyte Determination
 
+Slug: quantitativeAnalyteDetermination
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Infer the amount or concentration of a specified analyte from a justified measured signal and calculation, accounting for relevant dilution or recovery factors.
+Methodological description: Infer the amount or concentration of a specified analyte from a justified measured signal and calculation, accounting for relevant dilution or recovery factors.
+User-friendly description: Determine how much of a target substance is present from appropriate measurements.
 
 ##### Sample Preparation for Analysis
 
+Slug: samplePreparationForAnalysis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose sample treatment, such as dissolution, extraction or dilution, to make a specified analyte measurable while considering contamination and analyte loss.
+Methodological description: Choose sample treatment, such as dissolution, extraction or dilution, to make a specified analyte measurable while considering contamination and analyte loss.
+User-friendly description: Choose ways to prepare a sample while avoiding contamination or material loss.
 
 ##### Analytical Interferences
 
+Slug: analyticalInterferences
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify when other sample components alter a chemical signal or selective response and determine whether a method can distinguish the target analyte.
+Methodological description: Identify when other sample components alter a chemical signal or selective response and determine whether a method can distinguish the target analyte.
+User-friendly description: Recognize when other chemicals interfere with an analytical measurement.
 
 ##### Spectroscopic Evidence
 
+Slug: spectroscopicEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret absorption, emission or related spectral patterns as information about chemical species, structure or concentration.
+Methodological description: Interpret absorption, emission or related spectral patterns as information about chemical species, structure or concentration.
+User-friendly description: Explore how spectra reveal clues about chemical identity, structure or amount.
 
 ##### Calibration Curves
 
+Slug: calibrationCurves
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate an instrument signal to known standards while recognizing background response, limited range and uncertainty.
+Methodological description: Relate an instrument signal to known standards while recognizing background response, limited range and uncertainty.
+User-friendly description: Read a calibration curve to connect instrument signals with known concentrations.
 
 ### Substances and Properties
+
+Slug: substancesAndProperties
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 11
 
 [Not implemented](#)
 
-Chemists classify samples by composition and characterize them through reproducible properties. This domain focuses on observable and bulk descriptions before explaining them through atomic structure or bonding.
+Methodological description: Chemists classify samples by composition and characterize them through reproducible properties. This domain focuses on observable and bulk descriptions before explaining them through atomic structure or bonding.
+User-friendly description: Discover how chemists identify substances through their composition, properties and changes.
 
 #### Composition
 
+Slug: composition
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A specimen may be a single chemical substance or a combination of substances; its everyday name does not establish its composition.
+Methodological description: A specimen may be a single chemical substance or a combination of substances; its everyday name does not establish its composition.
+User-friendly description: Learn to distinguish a single substance from combinations of different substances.
 
 ##### Pure Substances
 
+Slug: pureSubstances
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish a chemically defined substance from a sample containing additional components, even when the sample appears uniform.
+Methodological description: Distinguish a chemically defined substance from a sample containing additional components, even when the sample appears uniform.
+User-friendly description: Recognize when a sample is one pure substance rather than a mixture.
 
 ##### Elements and Compounds
 
+Slug: elementsAndCompounds
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish matter containing one element from substances whose constituent elements occur in fixed chemical proportions.
+Methodological description: Distinguish matter containing one element from substances whose constituent elements occur in fixed chemical proportions.
+User-friendly description: Distinguish chemical elements from compounds made of different elements.
 
 ##### Mixtures
 
+Slug: mixtures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize combinations whose component proportions can vary without making a new substance.
+Methodological description: Recognize combinations whose component proportions can vary without making a new substance.
+User-friendly description: Recognize mixtures whose ingredients can be present in different proportions.
 
 ##### Homogeneous and Heterogeneous Samples
 
+Slug: homogeneousAndHeterogeneousSamples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Classify samples by whether their composition and phases are uniform at the relevant scale.
+Methodological description: Classify samples by whether their composition and phases are uniform at the relevant scale.
+User-friendly description: Tell whether a sample is uniform or contains visibly different parts or phases.
 
 #### Characteristic Properties
+
+Slug: characteristicProperties
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Physical and chemical properties supply different evidence about substances, and measurements are meaningful only under stated conditions.
+Methodological description: Physical and chemical properties supply different evidence about substances, and measurements are meaningful only under stated conditions.
+User-friendly description: Explore measurable properties that help describe and identify substances.
 
 ##### Physical Properties
 
+Slug: physicalProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use density, conductivity, hardness, melting point or other properties that do not require changing chemical identity.
+Methodological description: Use density, conductivity, hardness, melting point or other properties that do not require changing chemical identity.
+User-friendly description: Identify properties that can be measured without changing a substance's identity.
 
 ##### Chemical Properties
 
+Slug: chemicalProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how reactivity or resistance to chemical change characterizes a substance under specified conditions.
+Methodological description: Identify how reactivity or resistance to chemical change characterizes a substance under specified conditions.
+User-friendly description: Recognize how a substance's reactivity describes its chemical properties.
 
 ##### Density
 
+Slug: density
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sample mass and volume to an intensive property and use it to distinguish plausible materials.
+Methodological description: Relate sample mass and volume to an intensive property and use it to distinguish plausible materials.
+User-friendly description: Use mass and volume to reason about a material's density.
 
 ##### Property-Based Identification
 
+Slug: propertyBasedIdentification
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare multiple measured properties with reference information while acknowledging that one matching property may be insufficient.
+Methodological description: Compare multiple measured properties with reference information while acknowledging that one matching property may be insufficient.
+User-friendly description: Compare several measured properties to identify a likely substance.
 
 #### Changes and Conservation
+
+Slug: changesAndConservation
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Changes in form and changes in composition are distinct, while matter is conserved in appropriately defined systems.
+Methodological description: Changes in form and changes in composition are distinct, while matter is conserved in appropriately defined systems.
+User-friendly description: See how changes to matter differ from the creation of new substances.
 
 ##### Physical Changes
 
+Slug: physicalChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize changes in form or phase that do not by themselves establish a different chemical identity.
+Methodological description: Recognize changes in form or phase that do not by themselves establish a different chemical identity.
+User-friendly description: Recognize melting, cutting and other changes that preserve chemical identity.
 
 ##### Chemical Changes
 
+Slug: chemicalChanges
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the formation of new substances, distinguishing reaction evidence from suggestive but inconclusive visual signs.
+Methodological description: Recognize the formation of new substances, distinguishing reaction evidence from suggestive but inconclusive visual signs.
+User-friendly description: Use appropriate evidence to decide whether a chemical reaction occurred.
 
 ##### Mass Conservation
 
+Slug: massConservation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Account for matter in physical and chemical processes, including gases that cross an open-system boundary.
+Methodological description: Account for matter in physical and chemical processes, including gases that cross an open-system boundary.
+User-friendly description: Explain how matter is conserved even when gases enter or leave a container.
 
 ### Particles and States
+
+Slug: particlesAndStates
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 18
 
 [Not implemented](#)
 
-Particle arrangements and motion explain properties of solids, liquids and gases, including transitions between phases. Detailed equations of thermodynamics belong to their own chemical energy competencies.
+Methodological description: Particle arrangements and motion explain properties of solids, liquids and gases, including transitions between phases. Detailed equations of thermodynamics belong to their own chemical energy competencies.
+User-friendly description: Explore how the movement and arrangement of particles explain solids, liquids, gases and phase changes.
 
 #### Particle Behavior
 
+Slug: particleBehavior
+Action: create
+Status: pending
+
 Skills: 9
 
 [Not implemented](#)
 
-Models of matter distinguish constituent particles, the spaces between them and their collective motion.
+Methodological description: Models of matter distinguish constituent particles, the spaces between them and their collective motion.
+User-friendly description: Discover how tiny particles move, interact and make up the materials around us.
 
 ##### Particle Nature of Matter
 
+Slug: particleNatureOfMatter
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how an enormous number of microscopic constituents can account for a continuous-looking sample.
+Methodological description: Explain how an enormous number of microscopic constituents can account for a continuous-looking sample.
+User-friendly description: Explain why a sample that looks continuous is made of many tiny particles.
 
 ##### Particle Motion
 
+Slug: particleMotion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate microscopic movement to spreading, mixing and temperature-dependent behavior.
+Methodological description: Relate microscopic movement to spreading, mixing and temperature-dependent behavior.
+User-friendly description: Connect particles' motion with spreading, mixing and temperature changes.
 
 ##### Diffusion
 
+Slug: diffusion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain net spreading by random particle motion and concentration differences.
+Methodological description: Explain net spreading by random particle motion and concentration differences.
+User-friendly description: Explain why particles spread from more concentrated to less concentrated regions.
 
 ##### Gas Pressure
 
+Slug: gasPressure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate collisions of gas particles with surfaces to measured pressure and changes in conditions.
+Methodological description: Relate collisions of gas particles with surfaces to measured pressure and changes in conditions.
+User-friendly description: See how collisions with surfaces create pressure in a gas.
 
 ##### Gas Pressure–Volume Relationship
 
+Slug: gasPressureVolumeRelationship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate gas pressure and volume at constant temperature and amount of substance, recognizing the limits of the inverse ideal-gas relationship.
+Methodological description: Relate gas pressure and volume at constant temperature and amount of substance, recognizing the limits of the inverse ideal-gas relationship.
+User-friendly description: Explore how changing volume affects gas pressure when temperature stays constant.
 
 ##### Gas Volume–Temperature Relationship
 
+Slug: gasVolumeTemperatureRelationship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate gas volume to absolute temperature when pressure and gas amount remain fixed under appropriate conditions.
+Methodological description: Relate gas volume to absolute temperature when pressure and gas amount remain fixed under appropriate conditions.
+User-friendly description: Connect gas volume with absolute temperature under fixed pressure.
 
 ##### Gas Pressure–Temperature Relationship
 
+Slug: gasPressureTemperatureRelationship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate gas pressure to absolute temperature when volume and gas amount remain fixed under appropriate conditions.
+Methodological description: Relate gas pressure to absolute temperature when volume and gas amount remain fixed under appropriate conditions.
+User-friendly description: Explore how heating a confined gas changes its pressure.
 
 ##### Gas Volume–Amount Relationship
 
+Slug: gasVolumeAmountRelationship
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate the volume of a gas to its amount of substance at fixed temperature and pressure under appropriate conditions.
+Methodological description: Relate the volume of a gas to its amount of substance at fixed temperature and pressure under appropriate conditions.
+User-friendly description: Relate gas volume to the amount of gas at constant temperature and pressure.
 
 ##### Ideal Gas Model
 
+Slug: idealGasModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use the ideal-gas equation as an approximation and identify conditions in which real gases deviate.
+Methodological description: Use the ideal-gas equation as an approximation and identify conditions in which real gases deviate.
+User-friendly description: Use the ideal-gas model while recognizing when it becomes inaccurate.
 
 #### Phases and Transitions
+
+Slug: phasesAndTransitions
+Action: create
+Status: pending
 
 Skills: 9
 
 [Not implemented](#)
 
-The balance of particle interactions and thermal motion changes whether matter forms a solid, liquid or gas.
+Methodological description: The balance of particle interactions and thermal motion changes whether matter forms a solid, liquid or gas.
+User-friendly description: Discover what happens to particles when matter changes between solid, liquid and gas.
 
 ##### Solids
 
+Slug: solids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate stable shape and structure to constrained particle motion without assuming every solid is crystalline.
+Methodological description: Relate stable shape and structure to constrained particle motion without assuming every solid is crystalline.
+User-friendly description: Explain why solids hold their shape even though their particles are not still.
 
 ##### Liquids
 
+Slug: liquids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate flow and nearly fixed volume to mobile particles that remain close together.
+Methodological description: Relate flow and nearly fixed volume to mobile particles that remain close together.
+User-friendly description: Explore how nearby moving particles allow liquids to flow.
 
 ##### Gases
 
+Slug: gases
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate compressibility and expansion to widely spaced particles and their motion.
+Methodological description: Relate compressibility and expansion to widely spaced particles and their motion.
+User-friendly description: Explain why gases spread out and can be compressed.
 
 ##### Melting
 
+Slug: melting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a solid becomes liquid under appropriate temperature and pressure conditions, without requiring a change in chemical identity.
+Methodological description: Explain how a solid becomes liquid under appropriate temperature and pressure conditions, without requiring a change in chemical identity.
+User-friendly description: Understand how a solid becomes a liquid without changing into a new substance.
 
 ##### Freezing
 
+Slug: freezing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a liquid transforms into a solid through changes in particle arrangement and energy exchange.
+Methodological description: Explain how a liquid transforms into a solid through changes in particle arrangement and energy exchange.
+User-friendly description: Explain how cooling can arrange liquid particles into a solid.
 
 ##### Vaporization
 
+Slug: vaporization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain transformation of liquid to gas, distinguishing surface evaporation from boiling within a liquid under suitable pressure.
+Methodological description: Explain transformation of liquid to gas, distinguishing surface evaporation from boiling within a liquid under suitable pressure.
+User-friendly description: Distinguish evaporation at a surface from boiling throughout a liquid.
 
 ##### Condensation
 
+Slug: condensation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain formation of liquid from vapor as conditions favor a more closely associated particle arrangement.
+Methodological description: Explain formation of liquid from vapor as conditions favor a more closely associated particle arrangement.
+User-friendly description: Understand why vapor can turn back into liquid droplets.
 
 ##### Sublimation
 
+Slug: sublimation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain direct conversion from solid to vapor without passage through a bulk liquid phase.
+Methodological description: Explain direct conversion from solid to vapor without passage through a bulk liquid phase.
+User-friendly description: Explain how some solids change directly into vapor.
 
 ##### Deposition
 
+Slug: deposition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain direct formation of a solid from a vapor without passage through a bulk liquid phase.
+Methodological description: Explain direct formation of a solid from a vapor without passage through a bulk liquid phase.
+User-friendly description: Explain how vapor can form a solid without becoming liquid first.
 
 ### Atoms and Periodicity
+
+Slug: atomsAndPeriodicity
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 21
 
 [Not implemented](#)
 
-The organization and electronic structure of atoms underpin elemental identity, isotopes, ions and recurring chemical behavior. This domain describes atomic constituents and trends; bond formation is treated separately.
+Methodological description: The organization and electronic structure of atoms underpin elemental identity, isotopes, ions and recurring chemical behavior. This domain describes atomic constituents and trends; bond formation is treated separately.
+User-friendly description: Explore the particles inside atoms and the patterns connecting chemical elements.
 
 #### Atomic Structure
+
+Slug: atomicStructure
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Chemical element identity is determined by proton number; other atomic characteristics vary independently.
+Methodological description: Chemical element identity is determined by proton number; other atomic characteristics vary independently.
+User-friendly description: Learn what determines an element's identity and how atoms of the same element can differ.
 
 ##### Protons and Atomic Number
 
+Slug: protonsAndAtomicNumber
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use proton count to establish elemental identity and locate an element in the periodic table.
+Methodological description: Use proton count to establish elemental identity and locate an element in the periodic table.
+User-friendly description: Use the number of protons to identify an element.
 
 ##### Neutrons and Isotopes
 
+Slug: neutronsAndIsotopes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate neutron count to isotopic identity without treating isotopes as different elements.
+Methodological description: Relate neutron count to isotopic identity without treating isotopes as different elements.
+User-friendly description: Understand why isotopes of an element have different neutron numbers.
 
 ##### Electrons and Charge
 
+Slug: electronsAndCharge
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate electron gain or loss to ionic charge while preserving an element's identity.
+Methodological description: Relate electron gain or loss to ionic charge while preserving an element's identity.
+User-friendly description: Explain how losing or gaining electrons changes an atom's charge.
 
 ##### Atomic Mass
 
+Slug: atomicMass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret atomic mass and relative atomic mass, including why a tabulated average may not be a whole number.
+Methodological description: Interpret atomic mass and relative atomic mass, including why a tabulated average may not be a whole number.
+User-friendly description: Explore why average atomic masses are not always whole numbers.
 
 #### Electronic Structure
+
+Slug: electronicStructure
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Electron occupancy and energetic organization help explain reactivity and the behavior of valence electrons.
+Methodological description: Electron occupancy and energetic organization help explain reactivity and the behavior of valence electrons.
+User-friendly description: Learn how electrons are arranged and why that affects chemical behavior.
 
 ##### Electron Shells
 
+Slug: electronShells
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use shell organization and principal energy levels to explain patterns of electron distribution without treating shells as literal paths of electrons.
+Methodological description: Use shell organization and principal energy levels to explain patterns of electron distribution without treating shells as literal paths of electrons.
+User-friendly description: Use electron shells to explain patterns without imagining fixed planetary orbits.
 
 ##### Atomic Orbitals
 
+Slug: atomicOrbitals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret orbitals as probability-based descriptions of electron states and their occupancy rather than fixed electron trajectories.
+Methodological description: Interpret orbitals as probability-based descriptions of electron states and their occupancy rather than fixed electron trajectories.
+User-friendly description: Understand atomic orbitals as regions described by electron probabilities.
 
 ##### Electron Configurations
 
+Slug: electronConfigurations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent electron occupation for atoms and ions, respecting the applicable filling rules and exceptions.
+Methodological description: Represent electron occupation for atoms and ions, respecting the applicable filling rules and exceptions.
+User-friendly description: Represent how electrons occupy states in atoms and ions.
 
 ##### Valence Electrons
 
+Slug: valenceElectrons
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use outer-electron arrangements to reason about common chemical behavior and bonding possibilities.
+Methodological description: Use outer-electron arrangements to reason about common chemical behavior and bonding possibilities.
+User-friendly description: Use outer electrons to explain similarities in how elements react.
 
 ##### Ion Formation
 
+Slug: ionFormation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Predict plausible monatomic ion charges from electron gain or loss while recognizing chemical context.
+Methodological description: Predict plausible monatomic ion charges from electron gain or loss while recognizing chemical context.
+User-friendly description: Predict common ion charges while accounting for the chemical setting.
 
 #### Periodic Organization
 
+Slug: periodicOrganization
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-The periodic table encodes repeating patterns in electron configurations and useful chemical categories.
+Methodological description: The periodic table encodes repeating patterns in electron configurations and useful chemical categories.
+User-friendly description: Discover how the periodic table organizes elements into useful patterns.
 
 ##### Periodic Table Structure
 
+Slug: periodicTableStructure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret periods, groups and element symbols as an organized classification rather than a list ordered by bulk mass.
+Methodological description: Interpret periods, groups and element symbols as an organized classification rather than a list ordered by bulk mass.
+User-friendly description: Read the groups, periods and symbols of the periodic table.
 
 ##### Metals, Nonmetals and Metalloids
 
+Slug: metalsNonmetalsAndMetalloids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use the broad distinctions and their limitations to infer plausible chemical and physical behavior.
+Methodological description: Use the broad distinctions and their limitations to infer plausible chemical and physical behavior.
+User-friendly description: Distinguish metals, nonmetals and metalloids while allowing for exceptions.
 
 ##### Element Families
 
+Slug: elementFamilies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate alkali metals, alkaline earth metals, halogens and noble gases to shared chemical tendencies.
+Methodological description: Relate alkali metals, alkaline earth metals, halogens and noble gases to shared chemical tendencies.
+User-friendly description: Recognize common tendencies of major periodic-table families.
 
 ##### Periodicity
 
+Slug: periodicity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why some element properties recur as atomic number increases.
+Methodological description: Explain why some element properties recur as atomic number increases.
+User-friendly description: Explain why certain element properties repeat across the periodic table.
 
 #### Periodic Trends
 
+Slug: periodicTrends
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Atomic size and electrostatic attraction influence recurring patterns and their important exceptions.
+Methodological description: Atomic size and electrostatic attraction influence recurring patterns and their important exceptions.
+User-friendly description: Explore trends in atomic size and attraction for electrons.
 
 ##### Atomic Radius Trends
 
+Slug: atomicRadiusTrends
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain broad size trends across periods and down groups using nuclear charge and shielding.
+Methodological description: Explain broad size trends across periods and down groups using nuclear charge and shielding.
+User-friendly description: Compare how atomic sizes change across the periodic table.
 
 ##### Ionization Energy
 
+Slug: ionizationEnergy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the energy needed to remove an electron and its relation to atomic structure.
+Methodological description: Interpret the energy needed to remove an electron and its relation to atomic structure.
+User-friendly description: Understand the energy required to remove an electron from an atom.
 
 ##### Electronegativity
 
+Slug: electronegativity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use relative electron-attracting tendency to reason about bonds and polarity.
+Methodological description: Use relative electron-attracting tendency to reason about bonds and polarity.
+User-friendly description: Use electronegativity to reason about how atoms share electrons.
 
 ##### Electron Affinity
 
+Slug: electronAffinity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish electron-addition energetics from electronegativity and ionization energy.
+Methodological description: Distinguish electron-addition energetics from electronegativity and ionization energy.
+User-friendly description: Distinguish energy changes from electron attachment from other atomic trends.
 
 #### Nuclear Chemistry
+
+Slug: nuclearChemistry
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Changes within atomic nuclei alter nuclide identities rather than ordinary electron bonding. The chemical emphasis is isotopic substances, decay and analytical applications; general nuclear-force physics belongs to Physics.
+Methodological description: Changes within atomic nuclei alter nuclide identities rather than ordinary electron bonding. The chemical emphasis is isotopic substances, decay and analytical applications; general nuclear-force physics belongs to Physics.
+User-friendly description: Explore how changes to atomic nuclei differ from ordinary chemical reactions.
 
 ##### Radioactive Decay
 
+Slug: radioactiveDecay
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish spontaneous nuclear transformation from chemical reaction, including emissions and daughter nuclides.
+Methodological description: Distinguish spontaneous nuclear transformation from chemical reaction, including emissions and daughter nuclides.
+User-friendly description: Identify radioactive changes that transform one nuclide into another.
 
 ##### Half-Life
 
+Slug: halfLife
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the characteristic decay time of a radioactive population without implying that individual nuclei have predictable lifetimes.
+Methodological description: Interpret the characteristic decay time of a radioactive population without implying that individual nuclei have predictable lifetimes.
+User-friendly description: Understand half-life as a pattern for many radioactive atoms, not a clock for one atom.
 
 ##### Nuclear Transmutation
 
+Slug: nuclearTransmutation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Account for changes in proton and nucleon number across nuclear reactions and decays.
+Methodological description: Account for changes in proton and nucleon number across nuclear reactions and decays.
+User-friendly description: Track changes in proton and nucleon counts during nuclear transformations.
 
 ##### Isotope Tracers
 
+Slug: isotopeTracers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how detectable isotopic signatures can trace material pathways or provide chemical analytical evidence.
+Methodological description: Explain how detectable isotopic signatures can trace material pathways or provide chemical analytical evidence.
+User-friendly description: Discover how isotopes can help trace materials through chemical processes.
 
 ### Bonding and Structure
 
