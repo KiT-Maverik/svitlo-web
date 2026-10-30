@@ -54,7 +54,7 @@ Inspect **every Domain, Group and Skill**, both headings and substantive descrip
 ### 5. Editorial and structural integrity
 
 - Flag heading/description tautology, descriptions that provide no substantive scope, or descriptions contradicting their entity names or neighbors.
-- Verify declared counts and the entity heading/metadata/description order from [Create Skills Taxonomy](./create-skills-taxonomy.skill.md). Examine standalone implementation links only as evidence: verify actual targets and full filename link labels (including suffixes and extension) where implemented; otherwise expect exactly `[Not implemented](#)` without a `Code:` prefix. Do not invent runtime files or UUIDs.
+- Verify declared counts and the entity heading/metadata/description order from [Create Skills Taxonomy](./create-skills-taxonomy.skill.md). For taxonomy files authored with the current template, require exactly one explicit `Methodological description: ` and `User-friendly description: ` on each Domain, Group and Skill. The first must be substantive English; the second is an optional working-language draft value (using `[Not authored]` if absent). Historical unlabeled entries require a separately approved migration and must never be treated as ready-to-import English. Examine standalone implementation links only as evidence: verify actual targets and full filename link labels (including suffixes and extension) where implemented; otherwise expect exactly `[Not implemented](#)` without a `Code:` prefix. Do not invent runtime files or UUIDs.
 - Identify factual uncertainty, unsubstantiated universality (e.g. a classification convention valid only in one country), and unsupported claims of reference/standard coverage.
 
 ## OUTPUT — PRIORITIZED EXCEPTION REPORT

@@ -36,3 +36,15 @@ The generator deliberately **fails** if any Code entity lacks a complete localiz
 Before changing any staging taxonomy record: preserve exact approved semantic meaning; verify source links; reconcile actual Code UUID and parent; verify locale roster at runtime contract; verify translation quality, not merely presence; inspect all downstream users; keep reportable evidence and editor approval; commit an auditable diff. If any check fails, retain the record. Do not auto-delete all implemented-looking entries. Do not remove archived originals in `studio/skills/Obsolete`; they are marked as historical.
 
 **Localization of generated views:** `--locale` localizes catalog names and optional fe descriptions; the methodological contract remains English in *every* output. The generated page labels that limitation explicitly and must not claim to be a fully translated methodological document.
+
+## Deterministic Markdown → Code description import
+
+The [description importer](../../../scripts/import-taxonomy-descriptions.mjs) reads the **new, labeled** `Methodological description: ` and `User-friendly description: ` fields of every Domain, Group and Skill. It uses verified standalone implementation links to update **existing** `*.data.ts` configs in a safe, dry-run-first process. The first field must already be approved English; the second is working-language frontend draft copy **only**, never automatically mapped to `description.fe`. It rejects unknown fields, legacy free-form descriptions, incomplete Code links and conflicting values rather than guessing or overwriting. It does not create missing UUIDs, translate material or generate new Skill files.
+
+```sh
+node scripts/import-taxonomy-descriptions.mjs --package learningApps/math
+node scripts/import-taxonomy-descriptions.mjs --package learningApps/math --write
+npm run test:taxonomy-import
+```
+
+**Math migration boundary:** the existing Ukrainian Mathematics Markdown does **not** yet follow the new labels or contain approved English methodological prose. Do not run `--write` on it until the edited English values have been reviewed and authoritatively inserted into the staging taxonomy. A partly hand-translated Code branch is **not** proof of completed promotion. Generating entirely new entities also requires approved IDs, names in every supported language, and validated parent/child export maps, not descriptions alone.
