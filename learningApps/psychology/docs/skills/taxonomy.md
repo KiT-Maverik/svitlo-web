@@ -2445,605 +2445,1075 @@ User-friendly description: Explore ways to manage emotional responses when circu
 
 ### Motivation, Goals, and Habits
 
+Slug: motivationGoalsAndHabits
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 16
 
 [Not implemented](#)
 
-Motivation concerns what initiates, directs, and sustains action. Goals and habits reflect interactions among needs, rewards, expectations, self-control, and environmental cues rather than an unchanging amount of willpower.
+Methodological description: Motivation concerns what initiates, directs, and sustains action. Goals and habits reflect interactions among needs, rewards, expectations, self-control, and environmental cues rather than an unchanging amount of willpower.
+User-friendly description: Explore why people act, pursue goals and develop automatic routines.
 
 #### Motivational Mechanisms
+
+Slug: motivationalMechanisms
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Behavior is influenced by internal states and external incentives, with competing explanations and substantial individual variation.
+Methodological description: Behavior is influenced by internal states and external incentives, with competing explanations and substantial individual variation.
+User-friendly description: Discover different sources of motivation behind human action.
 
 ##### Intrinsic Motivation
 
+Slug: intrinsicMotivation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain engaging in an activity because it is personally interesting or satisfying in itself.
+Methodological description: Explain engaging in an activity because it is personally interesting or satisfying in itself.
+User-friendly description: Recognize the desire to do an activity for its own satisfaction.
 
 ##### Extrinsic Motivation
 
+Slug: extrinsicMotivation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain pursuing an activity because of an outcome separable from the activity, such as recognition, payment, or avoidance of a consequence.
+Methodological description: Explain pursuing an activity because of an outcome separable from the activity, such as recognition, payment, or avoidance of a consequence.
+User-friendly description: Explore how outside rewards and pressures can influence motivation.
 
 ##### Needs and Drives
 
+Slug: needsAndDrives
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how physiological and psychological needs can influence the direction and intensity of behavior.
+Methodological description: Explain how physiological and psychological needs can influence the direction and intensity of behavior.
+User-friendly description: Understand how psychological and bodily needs can shape behavior.
 
 ##### Expectancy and Value
 
+Slug: expectancyAndValue
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how anticipated success and the perceived value of an outcome jointly influence effort.
+Methodological description: Analyze how anticipated success and the perceived value of an outcome jointly influence effort.
+User-friendly description: Explain why expectations and perceived value affect effort.
 
 ##### Approach Motivation
 
+Slug: approachMotivation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain initiation of actions aimed at obtaining anticipated positive outcomes.
+Methodological description: Explain initiation of actions aimed at obtaining anticipated positive outcomes.
+User-friendly description: Recognize motivation to move toward a desired outcome.
 
 ##### Avoidance Motivation
 
+Slug: avoidanceMotivation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain actions aimed at preventing or escaping an anticipated undesirable outcome.
+Methodological description: Explain actions aimed at preventing or escaping an anticipated undesirable outcome.
+User-friendly description: Recognize motivation to avoid an unwanted outcome.
 
 ##### Motivational Crowding
 
+Slug: motivationalCrowding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate circumstances in which external incentives change an existing interest rather than simply adding more motivation.
+Methodological description: Evaluate circumstances in which external incentives change an existing interest rather than simply adding more motivation.
+User-friendly description: Explore why external rewards can sometimes weaken intrinsic interest.
 
 #### Goal Pursuit and Self-Control
+
+Slug: goalPursuitAndSelfControl
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Persistent action requires monitoring progress, choosing responses, and adapting goals to changing conditions.
+Methodological description: Persistent action requires monitoring progress, choosing responses, and adapting goals to changing conditions.
+User-friendly description: Learn how people set goals, stay on course and adapt when circumstances change.
 
 ##### Goal Specificity
 
+Slug: goalSpecificity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how a clearly defined target can guide action and progress monitoring differently from a vague intention.
+Methodological description: Explain how a clearly defined target can guide action and progress monitoring differently from a vague intention.
+User-friendly description: Understand how clear, specific goals can guide action.
 
 ##### Implementation Intentions
 
+Slug: implementationIntentions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how linking a situational cue to a planned response can bridge an intention–action gap.
+Methodological description: Explain how linking a situational cue to a planned response can bridge an intention–action gap.
+User-friendly description: Use if-then plans to connect a situation with an intended action.
 
 ##### Self-Control and Inhibition
 
+Slug: selfControlAndInhibition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe delaying or redirecting an immediate impulse in service of a competing aim, including contextual limitations.
+Methodological description: Describe delaying or redirecting an immediate impulse in service of a competing aim, including contextual limitations.
+User-friendly description: Explore why resisting an impulse requires attentional and cognitive control.
 
 ##### Self-Efficacy
 
+Slug: selfEfficacy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how beliefs about one's capability influence attempts, persistence, and response to setbacks without guaranteeing outcomes.
+Methodological description: Explain how beliefs about one's capability influence attempts, persistence, and response to setbacks without guaranteeing outcomes.
+User-friendly description: Recognize how belief in one's capability affects effort and persistence.
 
 ##### Goal Revision and Disengagement
 
+Slug: goalRevisionAndDisengagement
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate when adjusting or abandoning an unattainable objective may be more adaptive than persisting.
+Methodological description: Evaluate when adjusting or abandoning an unattainable objective may be more adaptive than persisting.
+User-friendly description: Understand when changing or abandoning a goal can be adaptive.
 
 #### Habit Mechanisms
+
+Slug: habitMechanisms
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Repeated actions become cue-sensitive routines that can operate with reduced deliberation, though habits remain dependent on context.
+Methodological description: Repeated actions become cue-sensitive routines that can operate with reduced deliberation, though habits remain dependent on context.
+User-friendly description: Discover how repeated actions become cues and habits.
 
 ##### Habit Formation
 
+Slug: habitFormation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate repetition in stable contexts and reinforcing outcomes to increasing automaticity.
+Methodological description: Relate repetition in stable contexts and reinforcing outcomes to increasing automaticity.
+User-friendly description: Explore how repetition in stable conditions can make actions automatic.
 
 ##### Habit Cues
 
+Slug: habitCues
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify environmental or internal signals that trigger a learned routine.
+Methodological description: Identify environmental or internal signals that trigger a learned routine.
+User-friendly description: Identify contextual signals that trigger a habitual response.
 
 ##### Habit Disruption
 
+Slug: habitDisruption
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how changed surroundings or interruption of familiar cues can alter routine behavior.
+Methodological description: Explain how changed surroundings or interruption of familiar cues can alter routine behavior.
+User-friendly description: Understand how changing cues can interrupt an established habit.
 
 ##### Habit Substitution
 
+Slug: habitSubstitution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze replacing an established response with an alternative to the same cue rather than relying only on suppression.
+Methodological description: Analyze replacing an established response with an alternative to the same cue rather than relying only on suppression.
+User-friendly description: Explore replacing an unwanted routine with a different response.
 
 ### Social Psychology
+
+Slug: socialPsychology
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 24
 
 [Not implemented](#)
 
-Thought and behavior change in the actual or imagined presence of others. Social processes involve interpretation, group membership, influence, and relationships without assuming all people respond alike.
+Methodological description: Thought and behavior change in the actual or imagined presence of others. Social processes involve interpretation, group membership, influence, and relationships without assuming all people respond alike.
+User-friendly description: Discover how other people influence our beliefs, actions and relationships.
 
 #### Social Perception
 
+Slug: socialPerception
+Action: create
+Status: pending
+
 Skills: 6
 
 [Not implemented](#)
 
-Judgments about other people are inferred from limited evidence and shaped by expectations, roles, and context.
+Methodological description: Judgments about other people are inferred from limited evidence and shaped by expectations, roles, and context.
+User-friendly description: Explore how we interpret people's actions, intentions and feelings.
 
 ##### Social Attribution
 
+Slug: socialAttribution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish explanations invoking a person's dispositions from those emphasizing circumstances and available choices.
+Methodological description: Distinguish explanations invoking a person's dispositions from those emphasizing circumstances and available choices.
+User-friendly description: Understand how people infer causes of others' behavior.
 
 ##### First Impressions
 
+Slug: firstImpressions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how early information can disproportionately influence expectations about a person.
+Methodological description: Explain how early information can disproportionately influence expectations about a person.
+User-friendly description: Recognize how first impressions form and why they can mislead.
 
 ##### Stereotype Activation
 
+Slug: stereotypeActivation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how culturally available categories affect social perception without treating stereotypes as reliable descriptions.
+Methodological description: Analyze how culturally available categories affect social perception without treating stereotypes as reliable descriptions.
+User-friendly description: Explore how stereotypes can influence judgments before conscious reflection.
 
 ##### Perspective Taking
 
+Slug: perspectiveTaking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain inferring another person's possible viewpoint while recognizing that their actual experience remains uncertain.
+Methodological description: Explain inferring another person's possible viewpoint while recognizing that their actual experience remains uncertain.
+User-friendly description: Practice considering a situation from someone else's perspective.
 
 ##### Empathy
 
+Slug: empathy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain understanding or affectively responding to another person's possible experience while recognizing that one cannot know it with certainty.
+Methodological description: Explain understanding or affectively responding to another person's possible experience while recognizing that one cannot know it with certainty.
+User-friendly description: Understand empathy as recognizing and sharing aspects of another's experience.
 
 ##### Compassion
 
+Slug: compassion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain concern for another person's suffering accompanied by motivation to offer appropriate help, distinct from understanding alone.
+Methodological description: Explain concern for another person's suffering accompanied by motivation to offer appropriate help, distinct from understanding alone.
+User-friendly description: Distinguish compassionate concern from simply understanding another's feelings.
 
 #### Influence and Persuasion
+
+Slug: influenceAndPersuasion
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Other people's behavior, claims, and group norms can shift beliefs or actions through identifiable social mechanisms.
+Methodological description: Other people's behavior, claims, and group norms can shift beliefs or actions through identifiable social mechanisms.
+User-friendly description: Discover how groups, authority and messages influence choices.
 
 ##### Conformity
 
+Slug: conformity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain changes in expressed judgments or behavior under perceived group pressure.
+Methodological description: Explain changes in expressed judgments or behavior under perceived group pressure.
+User-friendly description: Recognize changes in behavior made to match a group's expectations.
 
 ##### Obedience to Authority
 
+Slug: obedienceToAuthority
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how authority cues and situational pressures influence compliance, including ethical limits of classic research.
+Methodological description: Analyze how authority cues and situational pressures influence compliance, including ethical limits of classic research.
+User-friendly description: Explore why authority can influence decisions without guaranteeing correctness.
 
 ##### Informational Social Influence
 
+Slug: informationalSocialInfluence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain adopting others' judgments when they appear to provide useful evidence about uncertainty.
+Methodological description: Explain adopting others' judgments when they appear to provide useful evidence about uncertainty.
+User-friendly description: Understand when others provide information we use to guide decisions.
 
 ##### Normative Social Influence
 
+Slug: normativeSocialInfluence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain compliance motivated by social approval or avoidance of rejection.
+Methodological description: Explain compliance motivated by social approval or avoidance of rejection.
+User-friendly description: Recognize when the desire to fit in changes a person's behavior.
 
 ##### Persuasion Routes
 
+Slug: persuasionRoutes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare careful evaluation of arguments with reliance on source or presentation cues.
+Methodological description: Compare careful evaluation of arguments with reliance on source or presentation cues.
+User-friendly description: Compare different routes through which persuasive messages influence attitudes.
 
 ##### Recognizing Psychological Manipulation
 
+Slug: recognizingPsychologicalManipulation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify exploitative uses of urgency, isolation, guilt, or unequal power without teaching techniques to manipulate others.
+Methodological description: Identify exploitative uses of urgency, isolation, guilt, or unequal power without teaching techniques to manipulate others.
+User-friendly description: Identify pressure tactics that exploit fear, guilt or social expectations.
 
 #### Group Dynamics
+
+Slug: groupDynamics
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Belonging and coordination can alter performance, responsibility, intergroup attitudes, and collective decisions.
+Methodological description: Belonging and coordination can alter performance, responsibility, intergroup attitudes, and collective decisions.
+User-friendly description: Explore how group identities and discussions shape behavior.
 
 ##### Social Identity
 
+Slug: socialIdentity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how membership in meaningful groups contributes to self-description and intergroup interpretation.
+Methodological description: Explain how membership in meaningful groups contributes to self-description and intergroup interpretation.
+User-friendly description: Understand how belonging to a group influences social identity.
 
 ##### In-Group and Out-Group Bias
 
+Slug: inGroupAndOutGroupBias
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze unequal evaluation of people based on group membership even without direct personal experience.
+Methodological description: Analyze unequal evaluation of people based on group membership even without direct personal experience.
+User-friendly description: Recognize unjustified favoritism toward one's own group.
 
 ##### Bystander Effect
 
+Slug: bystanderEffect
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how others' presence can change perceived responsibility or interpretations of a situation.
+Methodological description: Explain how others' presence can change perceived responsibility or interpretations of a situation.
+User-friendly description: Explore why people may hesitate to help when many others are present.
 
 ##### Group Polarization
 
+Slug: groupPolarization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe how discussion among similarly inclined people can shift collective judgments toward more extreme positions.
+Methodological description: Describe how discussion among similarly inclined people can shift collective judgments toward more extreme positions.
+User-friendly description: Understand why group discussion can make shared positions more extreme.
 
 ##### Groupthink
 
+Slug: groupthink
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify pressures toward unanimity that discourage dissent and reduce the scrutiny of alternatives.
+Methodological description: Identify pressures toward unanimity that discourage dissent and reduce the scrutiny of alternatives.
+User-friendly description: Recognize when pressure for agreement prevents critical evaluation in a group.
 
 #### Relationships and Communication
+
+Slug: relationshipsAndCommunication
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Relationships develop through mutual interpretation, reciprocal actions, boundaries, and social context rather than perfect reading of another's intentions.
+Methodological description: Relationships develop through mutual interpretation, reciprocal actions, boundaries, and social context rather than perfect reading of another's intentions.
+User-friendly description: Learn to recognize healthy communication, boundaries and relational challenges.
 
 ##### Attachment in Relationships
 
+Slug: attachmentInRelationships
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how expectations about availability and support can influence close relationships while avoiding rigid labeling of individuals.
+Methodological description: Explain how expectations about availability and support can influence close relationships while avoiding rigid labeling of individuals.
+User-friendly description: Explore how attachment patterns can influence relationships over time.
 
 ##### Active Listening
 
+Slug: activeListening
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish checking understanding and attending to another person's meaning from merely waiting to reply.
+Methodological description: Distinguish checking understanding and attending to another person's meaning from merely waiting to reply.
+User-friendly description: Practice attending to and clarifying what someone is communicating.
 
 ##### Nonverbal Communication
 
+Slug: nonverbalCommunication
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret gesture, tone, and interpersonal distance in cultural and situational context rather than through universal decoding rules.
+Methodological description: Interpret gesture, tone, and interpersonal distance in cultural and situational context rather than through universal decoding rules.
+User-friendly description: Recognize how facial expression, gesture and tone convey information.
 
 ##### Interpersonal Conflict
 
+Slug: interpersonalConflict
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how unmet expectations, differing interpretations, communication patterns, and situational pressures contribute to the emergence or escalation of disagreements between people.
+Methodological description: Analyze how unmet expectations, differing interpretations, communication patterns, and situational pressures contribute to the emergence or escalation of disagreements between people.
+User-friendly description: Explore how disagreements escalate or can be resolved constructively.
 
 ##### Relationship Repair
 
+Slug: relationshipRepair
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how acknowledgment, apology, changed behavior, and negotiated expectations can help restore trust after interpersonal harm without assuming reconciliation is always safe or obligatory.
+Methodological description: Explain how acknowledgment, apology, changed behavior, and negotiated expectations can help restore trust after interpersonal harm without assuming reconciliation is always safe or obligatory.
+User-friendly description: Understand what helps restore trust after a disagreement.
 
 ##### Personal Boundaries
 
+Slug: personalBoundaries
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how individuals express limits about interactions, information, and bodily or emotional space, and how those limits merit respect.
+Methodological description: Explain how individuals express limits about interactions, information, and bodily or emotional space, and how those limits merit respect.
+User-friendly description: Identify the limits a person sets around their body, time and information.
 
 ##### Voluntary Consent
 
+Slug: voluntaryConsent
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish an informed, freely given and revocable agreement from silence, coercion, or assumed permission.
+Methodological description: Distinguish an informed, freely given and revocable agreement from silence, coercion, or assumed permission.
+User-friendly description: Understand that consent must be voluntary and can be withdrawn.
 
 ### Development Across the Lifespan
+
+Slug: developmentAcrossTheLifespan
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 17
 
 [Not implemented](#)
 
-Cognition, relationships, identity, and emotional regulation change from infancy through older adulthood. Developmental patterns express interactions of maturation and lived experience, not identical milestones for every person.
+Methodological description: Cognition, relationships, identity, and emotional regulation change from infancy through older adulthood. Developmental patterns express interactions of maturation and lived experience, not identical milestones for every person.
+User-friendly description: Explore how people change and adapt from infancy through later adulthood.
 
 #### Mechanisms of Development
+
+Slug: mechanismsOfDevelopment
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Research examines change over time, developmental diversity, and how environments interact with biological processes.
+Methodological description: Research examines change over time, developmental diversity, and how environments interact with biological processes.
+User-friendly description: Discover how biology, experience and context shape developmental changes.
 
 ##### Maturation and Experience
 
+Slug: maturationAndExperience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how developmental changes reflect interacting biological processes and opportunities for learning.
+Methodological description: Explain how developmental changes reflect interacting biological processes and opportunities for learning.
+User-friendly description: Recognize how maturation and experience influence development together.
 
 ##### Developmental Research Designs
 
+Slug: developmentalResearchDesigns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare cross-sectional and longitudinal evidence, including age, cohort, and attrition limitations.
+Methodological description: Compare cross-sectional and longitudinal evidence, including age, cohort, and attrition limitations.
+User-friendly description: Compare research methods for studying change at different ages.
 
 ##### Developmental Plasticity
 
+Slug: developmentalPlasticity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain why abilities may change with experience across life while acknowledging sensitive periods and contextual constraints.
+Methodological description: Explain why abilities may change with experience across life while acknowledging sensitive periods and contextual constraints.
+User-friendly description: Understand how development remains adaptable to experience over time.
 
 ##### Individual Developmental Variation
 
+Slug: individualDevelopmentalVariation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret population patterns without treating a different pace or pathway as proof of disorder.
+Methodological description: Interpret population patterns without treating a different pace or pathway as proof of disorder.
+User-friendly description: Recognize normal variation between individual developmental pathways.
 
 #### Early and Middle Childhood
+
+Slug: earlyAndMiddleChildhood
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Rapid changes in attention, symbolic representation, relationships, and self-regulation create different opportunities for learning.
+Methodological description: Rapid changes in attention, symbolic representation, relationships, and self-regulation create different opportunities for learning.
+User-friendly description: Explore how young children develop relationships, reasoning and self-control.
 
 ##### Early Social Attachment
 
+Slug: earlySocialAttachment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how caregiving relationships support expectations of safety and connection without assigning permanent attachment labels.
+Methodological description: Explain how caregiving relationships support expectations of safety and connection without assigning permanent attachment labels.
+User-friendly description: Understand how early bonds support the development of social relationships.
 
 ##### Object Permanence
 
+Slug: objectPermanence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain understanding that objects continue to exist when temporarily outside direct perception.
+Methodological description: Explain understanding that objects continue to exist when temporarily outside direct perception.
+User-friendly description: Explore when children grasp that objects continue existing when out of view.
 
 ##### Theory of Mind Development
 
+Slug: theoryOfMindDevelopment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe increasing ability to represent that others may have beliefs or knowledge different from one's own.
+Methodological description: Describe increasing ability to represent that others may have beliefs or knowledge different from one's own.
+User-friendly description: Recognize the growing ability to think about others' beliefs and knowledge.
 
 ##### Executive Function Development
 
+Slug: executiveFunctionDevelopment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain changes in inhibitory control, updating, and flexible rule use during childhood.
+Methodological description: Explain changes in inhibitory control, updating, and flexible rule use during childhood.
+User-friendly description: Understand the development of attention, planning and impulse regulation.
 
 ##### Play and Learning
 
+Slug: playAndLearning
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess how different forms of play afford practice in imagination, cooperation, or problem solving without claiming all play has identical effects.
+Methodological description: Assess how different forms of play afford practice in imagination, cooperation, or problem solving without claiming all play has identical effects.
+User-friendly description: Discover how play supports social, cognitive and emotional learning.
 
 #### Adolescence and Identity
 
+Slug: adolescenceAndIdentity
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Developing autonomy, identity, peer relationships, and cognitive control interact with social expectations and opportunities.
+Methodological description: Developing autonomy, identity, peer relationships, and cognitive control interact with social expectations and opportunities.
+User-friendly description: Explore changes in identity, relationships and autonomy during adolescence.
 
 ##### Identity Exploration
 
+Slug: identityExploration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain exploration of personal commitments and roles without prescribing a single identity pathway.
+Methodological description: Explain exploration of personal commitments and roles without prescribing a single identity pathway.
+User-friendly description: Understand how young people explore and develop a sense of identity.
 
 ##### Peer Influence in Adolescence
 
+Slug: peerInfluenceInAdolescence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how peers affect preferences and behavior, considering protective as well as risky social effects.
+Methodological description: Analyze how peers affect preferences and behavior, considering protective as well as risky social effects.
+User-friendly description: Recognize how peers can influence adolescent decisions and behavior.
 
 ##### Adolescent Risk Taking
 
+Slug: adolescentRiskTaking
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the interaction between reward sensitivity, control, context, and opportunity without stereotyping all adolescents.
+Methodological description: Explain the interaction between reward sensitivity, control, context, and opportunity without stereotyping all adolescents.
+User-friendly description: Explore the social and developmental factors behind adolescent risk taking.
 
 ##### Autonomy Development
 
+Slug: autonomyDevelopment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe changes in independent decision-making and negotiated responsibilities across relationships.
+Methodological description: Describe changes in independent decision-making and negotiated responsibilities across relationships.
+User-friendly description: Understand how independence and decision-making abilities develop.
 
 #### Adulthood and Aging
+
+Slug: adulthoodAndAging
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Psychological development continues through adulthood, including shifting roles, accumulated experience, and heterogeneous cognitive trajectories.
+Methodological description: Psychological development continues through adulthood, including shifting roles, accumulated experience, and heterogeneous cognitive trajectories.
+User-friendly description: Discover psychological changes and adaptations across adult life.
 
 ##### Adult Role Transitions
 
+Slug: adultRoleTransitions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how work, family, and social changes can reshape self-concept and coping.
+Methodological description: Analyze how work, family, and social changes can reshape self-concept and coping.
+User-friendly description: Explore how major changes in responsibilities affect adult development.
 
 ##### Cognitive Aging
 
+Slug: cognitiveAging
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish average age-related changes in some processing abilities from preserved or improved knowledge and variation among people.
+Methodological description: Distinguish average age-related changes in some processing abilities from preserved or improved knowledge and variation among people.
+User-friendly description: Recognize different patterns of cognitive change with age.
 
 ##### Socioemotional Selectivity
 
+Slug: socioemotionalSelectivity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how perceived time horizons may affect prioritization of goals and close relationships.
+Methodological description: Explain how perceived time horizons may affect prioritization of goals and close relationships.
+User-friendly description: Understand how priorities in relationships may shift across adulthood.
 
 ##### Lifelong Adaptation
 
+Slug: lifelongAdaptation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate how learning, context, and support influence functioning at different adult life stages.
+Methodological description: Evaluate how learning, context, and support influence functioning at different adult life stages.
+User-friendly description: Explore how people continue to learn and adapt throughout life.
 
 ### Personality and Individual Variation
+
+Slug: personalityAndIndividualVariation
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-People differ in characteristic patterns of thought, feeling, and behavior, but measurement requires caution about situations, cultural meaning, and fairness. Describing a tendency never fixes a person's worth or destiny.
+Methodological description: People differ in characteristic patterns of thought, feeling, and behavior, but measurement requires caution about situations, cultural meaning, and fairness. Describing a tendency never fixes a person's worth or destiny.
+User-friendly description: Explore how personalities and cognitive abilities vary across people and situations.
 
 #### Traits and Personality Models
 
+Slug: traitsAndPersonalityModels
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-Trait models summarize recurring behavioral tendencies while leaving room for situational variation and change.
+Methodological description: Trait models summarize recurring behavioral tendencies while leaving room for situational variation and change.
+User-friendly description: Discover how personality traits are described and assessed.
 
 ##### Trait versus State
 
+Slug: traitVersusState
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish relatively stable tendencies from temporary conditions affecting behavior.
+Methodological description: Distinguish relatively stable tendencies from temporary conditions affecting behavior.
+User-friendly description: Distinguish a lasting personality tendency from a temporary state.
 
 ##### Big Five Trait Model
 
+Slug: bigFiveTraitModel
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the five broad personality dimensions as descriptive continua rather than categorical diagnoses.
+Methodological description: Explain the five broad personality dimensions as descriptive continua rather than categorical diagnoses.
+User-friendly description: Understand the five broad dimensions used in a common personality model.
 
 ##### Trait–Situation Interaction
 
+Slug: traitSituationInteraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze why the same person may behave differently under different incentives or social demands.
+Methodological description: Analyze why the same person may behave differently under different incentives or social demands.
+User-friendly description: Recognize how personality and situation jointly affect behavior.
 
 ##### Personality Assessment
 
+Slug: personalityAssessment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate self-report and informant measures for reliability, validity, and response distortion.
+Methodological description: Evaluate self-report and informant measures for reliability, validity, and response distortion.
+User-friendly description: Explore what personality tests can and cannot measure reliably.
 
 ##### Personality Stability and Change
 
+Slug: personalityStabilityAndChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain both rank-order consistency and mean-level changes across the lifespan.
+Methodological description: Explain both rank-order consistency and mean-level changes across the lifespan.
+User-friendly description: Understand why some personality tendencies persist while others change.
 
 #### Cognitive and Learning Differences
+
+Slug: cognitiveAndLearningDifferences
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Performance varies across abilities, experiences, and testing contexts, with no one score capturing every capability.
+Methodological description: Performance varies across abilities, experiences, and testing contexts, with no one score capturing every capability.
+User-friendly description: Explore different patterns of cognitive strengths and learning needs.
 
 ##### Individual Cognitive Profiles
 
+Slug: individualCognitiveProfiles
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret strengths and difficulties across different cognitive tasks without treating one performance as global ability.
+Methodological description: Interpret strengths and difficulties across different cognitive tasks without treating one performance as global ability.
+User-friendly description: Recognize individual profiles of strengths rather than one fixed ability label.
 
 ##### Neurodevelopmental Variability
 
+Slug: neurodevelopmentalVariability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain differences in developmental trajectories of attention, communication, sensory processing, and executive functions, accounting for the role of environment and support without treating variation itself as a disorder.
+Methodological description: Explain differences in developmental trajectories of attention, communication, sensory processing, and executive functions, accounting for the role of environment and support without treating variation itself as a disorder.
+User-friendly description: Understand that neurodevelopmental differences vary widely between people.
 
 ##### Nature and Nurture in Ability
 
+Slug: natureAndNurtureInAbility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze interplay among heredity, learning opportunities, and environmental conditions in measured performance.
+Methodological description: Analyze interplay among heredity, learning opportunities, and environmental conditions in measured performance.
+User-friendly description: Explore how inherited traits and environments influence abilities together.
 
 ##### Standardized Score Interpretation
 
+Slug: standardizedScoreInterpretation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain norm-referenced scores and why reference populations and test conditions matter.
+Methodological description: Explain norm-referenced scores and why reference populations and test conditions matter.
+User-friendly description: Interpret standardized scores with their reference groups and limitations.
 
 ##### Fairness in Cognitive Assessment
 
+Slug: fairnessInCognitiveAssessment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify language, cultural, disability, and resource factors that can undermine an interpretation.
+Methodological description: Identify language, cultural, disability, and resource factors that can undermine an interpretation.
+User-friendly description: Recognize how cognitive tests may be unfair across different contexts.
 
 #### Self-Concept and Identity
 
+Slug: selfConceptAndIdentity
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Accounts people hold about themselves are shaped through experience and relationships and may not match external observations.
+Methodological description: Accounts people hold about themselves are shaped through experience and relationships and may not match external observations.
+User-friendly description: Discover how people's beliefs about themselves develop and change.
 
 ##### Self-Concept
 
+Slug: selfConcept
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how people organize beliefs about their characteristics, roles, and competencies.
+Methodological description: Explain how people organize beliefs about their characteristics, roles, and competencies.
+User-friendly description: Understand the ideas and characteristics that form someone's self-concept.
 
 ##### Self-Esteem
 
+Slug: selfEsteem
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish an overall evaluation of self-worth from domain-specific confidence or demonstrated skill.
+Methodological description: Distinguish an overall evaluation of self-worth from domain-specific confidence or demonstrated skill.
+User-friendly description: Distinguish a person's general self-evaluation from specific abilities.
 
 ##### Self-Serving Attributions
 
+Slug: selfServingAttributions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how explanations of successes and failures may protect a favorable self-image.
+Methodological description: Explain how explanations of successes and failures may protect a favorable self-image.
+User-friendly description: Recognize when people take credit for success but blame circumstances for failure.
 
 ##### Identity and Social Context
 
+Slug: identityAndSocialContext
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Analyze how roles, belonging, and social expectations shape self-descriptions.
+Methodological description: Analyze how roles, belonging, and social expectations shape self-descriptions.
+User-friendly description: Explore how personal identity is shaped by relationships and social settings.
 
 #### Culture and Diversity
+
+Slug: cultureAndDiversity
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Human psychological patterns must be examined against differences in context, institutions, and ways of interpreting experience.
+Methodological description: Human psychological patterns must be examined against differences in context, institutions, and ways of interpreting experience.
+User-friendly description: Learn how culture and diversity affect psychological experience.
 
 ##### Cultural Variation in Behavior
 
+Slug: culturalVariationInBehavior
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how norms and practices shape psychological expression without assuming uniformity within any culture.
+Methodological description: Explain how norms and practices shape psychological expression without assuming uniformity within any culture.
+User-friendly description: Recognize that behavior can vary with cultural norms and circumstances.
 
 ##### Cross-Cultural Research Comparability
 
+Slug: crossCulturalResearchComparability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Evaluate whether tasks and concepts carry comparable meaning across studied populations.
+Methodological description: Evaluate whether tasks and concepts carry comparable meaning across studied populations.
+User-friendly description: Compare psychological studies across cultures without assuming measures are identical.
 
 ##### Bias in Psychological Norms
 
+Slug: biasInPsychologicalNorms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how a reference sample can cause ordinary differences to be misclassified as deviations.
+Methodological description: Identify how a reference sample can cause ordinary differences to be misclassified as deviations.
+User-friendly description: Explore how assessment norms can disadvantage some people or groups.
 
 ##### Avoiding Psychological Essentialism
 
+Slug: avoidingPsychologicalEssentialism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Challenge explanations that attribute complex traits to immutable characteristics of a social group.
+Methodological description: Challenge explanations that attribute complex traits to immutable characteristics of a social group.
+User-friendly description: Avoid treating group averages as fixed psychological qualities of each individual.
 
 ### Mental Health and Clinical Science
 
