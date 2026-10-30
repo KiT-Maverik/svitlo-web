@@ -814,547 +814,972 @@ User-friendly description: Follow ancient trade routes carrying incense and othe
 
 ### Африка
 
+Slug: ancientAfrica
+Action: create
+Status: pending
+
 Groups: 5 · Skills: 28
 
 [Not implemented](#)
 
-Історія континенту включає не лише долину Нілу: незалежні політичні традиції, міграції, ремесла, торгівлю й адаптації до різних природних зон.
+Methodological description: Africa's ancient history extends beyond the Nile through independent political traditions, migrations, crafts, trade, and adaptation to varied environments.
+User-friendly description: Explore the varied societies and cultures of ancient Africa.
 
 #### Єгипет
+
+Slug: ancientEgypt
+Action: create
+Status: pending
 
 Skills: 12
 
 [Not implemented](#)
 
-Нільська держава поєднувала багатовікові форми царської влади, управління водними ресурсами, писемну культуру й взаємодію із сусідами.
+Methodological description: The Nile state combined long-standing kingship, water management, written culture, and contact with neighbors.
+User-friendly description: Discover how the Nile supported ancient Egyptian society and government.
 
 ##### Ніл і господарство
 
+Slug: nileAndEgyptianEconomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Залежність землеробства та поселень від сезонних розливів, каналів і організації обробітку землі.
+Methodological description: Relate farming and settlements to seasonal floods, canals, and organized land cultivation.
+User-friendly description: Understand why Nile flooding mattered to Egyptian farming.
 
 ##### Об'єднання Єгипту
 
+Slug: unificationOfEgypt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формування ранньої централізованої держави та значення археологічних і зображальних свідчень для його реконструкції.
+Methodological description: Reconstruct early centralization using archaeological and visual evidence.
+User-friendly description: Explore how early Egyptian lands came under centralized rule.
 
 ##### Стародавнє царство Єгипту
 
+Slug: oldKingdomOfEgypt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Централізована монархія III–VI династій, будівництво пірамідних комплексів та взаємодія царської влади з ресурсами регіонів.
+Methodological description: Study centralized monarchy of Dynasties III–VI, pyramid complexes, and royal control of regional resources.
+User-friendly description: Learn about Old Kingdom rulers and the building of pyramids.
 
 ##### Середнє царство Єгипту
 
+Slug: middleKingdomOfEgypt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відновлення централізації, управлінські зміни та розширення політичних інтересів у Нубії й сусідніх землях за XI–XIII династій.
+Methodological description: Trace renewed centralization, administrative change, and interests in Nubia during Dynasties XI–XIII.
+User-friendly description: Explore how the Middle Kingdom restored and expanded Egyptian power.
 
 ##### Нове царство Єгипту
 
+Slug: newKingdomOfEgypt
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Завоювання, дипломатія, зростання ролі храмових інституцій та перетворення політичної влади за XVIII–XX династій.
+Methodological description: Examine conquest, diplomacy, temple institutions, and political transformations in Dynasties XVIII–XX.
+User-friendly description: Discover how New Kingdom Egypt interacted with neighboring lands.
 
 ##### Перехідні періоди Єгипту
 
+Slug: egyptianIntermediatePeriods
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Причини й різні форми децентралізації та зміни династій між великими періодами централізації, без уявлення про суцільний або тотальний занепад.
+Methodological description: Explain varied changes of dynasty and decentralization between centralized eras without treating them as total collapse.
+User-friendly description: Understand why Egyptian rule was sometimes divided among competing powers.
 
 ##### Фараонська влада
 
+Slug: pharaonicRule
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співвідношення сакралізованої монархії, чиновництва, жерців та місцевого управління в різні епохи.
+Methodological description: Describe relations among sacral kingship, officials, priests, and local administration across different eras.
+User-friendly description: Explore how pharaohs governed alongside officials and priests.
 
 ##### Єгипетська писемність
 
+Slug: egyptianWriting
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Принципи ієрогліфічного письма та співіснування різних форм запису в адміністративній і культурній практиці.
+Methodological description: Explain hieroglyphic principles and parallel writing forms used in administration and culture.
+User-friendly description: Discover how Egyptians wrote and recorded information.
 
 ##### Релігійні уявлення Єгипту
 
+Slug: egyptianReligiousBeliefs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Божества, космологічні уявлення, храмові культи та зміни вірувань у різних регіонах і періодах історії Єгипту.
+Methodological description: Study deities, cosmology, temple cults, and changing beliefs across Egyptian regions and periods.
+User-friendly description: Explore the many religious beliefs of ancient Egyptians.
 
 ##### Поховальні практики Єгипту
 
+Slug: egyptianBurialPractices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Роль гробниць, поховального інвентарю, муміфікації й ритуальних текстів з урахуванням соціальних та історичних відмінностей обрядів.
+Methodological description: Interpret tombs, burial goods, mummification, and ritual texts while noting social and historical variation.
+User-friendly description: Learn what Egyptian burials reveal about beliefs and social life.
 
 ##### Єгипетське будівництво
 
+Slug: egyptianConstruction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Організація праці, матеріали й інженерні рішення великих споруд без відтворення псевдоісторичних легенд.
+Methodological description: Examine labor organization, building materials, and engineering of major monuments without pseudohistorical myths.
+User-friendly description: Discover how ancient Egyptians organized large building projects.
 
 ##### Єгипетські міжнародні відносини
 
+Slug: egyptianForeignRelations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Торгівля, дипломатія та воєнні зіткнення з Нубією і державами Передньої Азії.
+Methodological description: Trace Egypt's trade, diplomacy, and military relations with Nubia and Western Asian states.
+User-friendly description: Explore how Egypt traded and negotiated with neighbors.
 
 #### Нубія та Куш
+
+Slug: nubiaAndKush
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Суспільства середньої течії Нілу були активними політичними й культурними центрами з власними інституціями та складними взаєминами з Єгиптом.
+Methodological description: Middle Nile societies formed independent political and cultural centers with complex relations to Egypt.
+User-friendly description: Discover the independent societies of ancient Nubia and Kush.
 
 ##### Культура Керми
 
+Slug: kermaCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Міський центр, поховальні пам'ятки та регіональна держава Верхньої Нубії бронзової доби.
+Methodological description: Study the Bronze Age urban center, burials, and regional state of Upper Nubia.
+User-friendly description: Explore the archaeological remains of ancient Kerma.
 
 ##### Царство Куш
 
+Slug: kingdomOfKush
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Політичне становлення кушитів, включно з напатським періодом і правлінням XXV династії в Єгипті.
+Methodological description: Trace Kushite political history, including Napata and the Twenty-Fifth Dynasty in Egypt.
+User-friendly description: Learn how Kushite kings ruled their own kingdom and Egypt.
 
 ##### Мерое
 
+Slug: meroe
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Міська й царська культура, металургія та власна писемність пізнішого Кушу.
+Methodological description: Explore the later Kushite city's royal culture, metallurgy, and distinct writing.
+User-friendly description: Discover the city and culture of Meroë.
 
 ##### Нільський культурний обмін
 
+Slug: nileCulturalExchange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Взаємовпливи Єгипту й Нубії без уявлення, що вся нубійська культура була лише похідною від єгипетської.
+Methodological description: Study mutual influences between Egypt and Nubia without reducing Nubian culture to an Egyptian derivative.
+User-friendly description: Understand how Egyptian and Nubian societies influenced each other.
 
 #### Африканський Ріг
+
+Slug: hornOfAfrica
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Район Червоного моря поєднував високогірні землеробські суспільства й морські мережі між Африкою та Аравією.
+Methodological description: Red Sea connections linked highland farming societies with maritime exchanges between Africa and Arabia.
+User-friendly description: Explore ancient societies near the Red Sea and Ethiopian highlands.
 
 ##### Ранні держави Ефіопського нагір'я
 
+Slug: earlyEthiopianHighlandStates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місцеві політичні центри й зв'язки північного Африканського Рогу з південноаравійським світом.
+Methodological description: Examine local political centers and southern Arabian contacts in the northern Horn of Africa.
+User-friendly description: Discover the early states of the Ethiopian highlands.
 
 ##### Аксумське царство
 
+Slug: aksumiteKingdom
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Царська влада, міжнародна торгівля, монетна справа та монументальна культура держави пізньої античності.
+Methodological description: Study late-antique Aksumite kingship, international trade, coinage, and monuments.
+User-friendly description: Explore how Aksum traded and governed in late antiquity.
 
 ##### Християнізація Аксума
 
+Slug: christianizationOfAksum
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поширення християнства у IV столітті й поступовість змін релігійних інституцій.
+Methodological description: Trace Christianity's spread in the fourth century and the gradual transformation of institutions.
+User-friendly description: Understand how Christianity became important in Aksum.
 
 #### Сахара та землі на південь від неї
+
+Slug: saharaAndSubSaharanAfrica
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Зміни природного середовища, різні способи господарювання та локальні технології формували історію просторів далеко за межами великих нільських держав.
+Methodological description: Environmental change, diverse livelihoods, and local technologies shaped societies beyond the Nile states.
+User-friendly description: Explore early African cultures across the Sahara and farther south.
 
 ##### Зміни клімату Сахари
 
+Slug: saharanClimateChange
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Зв'язок давніх вологіших періодів, пізнішого висушення, маршрутів і поселень із багаторівневими екологічними свідченнями.
+Methodological description: Connect wetter ancient periods and later drying to settlement and routes using several kinds of environmental evidence.
+User-friendly description: See how changing Saharan climate influenced settlement and travel.
 
 ##### Давні пастуші суспільства Сахари
 
+Slug: ancientSaharanPastoralists
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Худоба, мобільність та наскельні зображення як джерела щодо життя в умовах змінного клімату.
+Methodological description: Interpret herding, mobility, and rock art as evidence of life under changing environmental conditions.
+User-friendly description: Discover how ancient Saharan pastoral communities lived.
 
 ##### Раннє розселення бантомовних спільнот
 
+Slug: earlyBantuSpeakingDispersals
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поширення мов, господарських практик і населення Центральною та Південною Африкою без моделі одномоментної «міграції одного народу».
+Methodological description: Reconstruct spreading languages, farming practices, and populations without treating the process as one simultaneous migration.
+User-friendly description: Explore how Bantu-speaking communities spread across parts of Africa.
 
 ##### Культура Нок
 
+Slug: nokCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Теракотова пластика й ранні технології заліза в регіоні сучасної Нігерії з урахуванням прогалин джерельної бази.
+Methodological description: Study terracotta art and early iron use in present-day Nigeria while recognizing gaps in evidence.
+User-friendly description: Discover what Nok artifacts reveal about an ancient West African culture.
 
 ##### Ранні міські центри Західної Африки
 
+Slug: earlyWestAfricanUrbanCenters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Археологічна історія поселень внутрішньої дельти Нігеру, зокрема Дженне-Джено від приблизно III ст. до н. е.; раннє заселення та ремесла не тотожні значно пізнішому міському розквіту.
+Methodological description: Examine Inland Niger Delta sites, including Djenné-Djeno from about the third century BCE, distinguishing early settlement and crafts from later urban florescence.
+User-friendly description: Explore how early towns developed in the Inland Niger Delta.
 
 #### Північна Африка поза долиною Нілу
+
+Slug: northAfricaBeyondTheNile
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Карфагенські, нумідійські та сахарські суспільства розвивалися в контактах із Середземномор'ям і внутрішніми районами Африки, зберігаючи власні політичні традиції.
+Methodological description: Carthaginian, Numidian, and Saharan societies maintained their own political traditions amid Mediterranean and inland contacts.
+User-friendly description: Discover ancient North African societies beyond Egypt.
 
 ##### Карфаген
 
+Slug: carthage
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Походження фінікійського міста та розвиток його торгових, військових і державних інституцій у західному Середземномор'ї.
+Methodological description: Trace the Phoenician city's origins and development of trade, military, and state institutions in the western Mediterranean.
+User-friendly description: Explore how Carthage became a major Mediterranean power.
 
 ##### Нумідійські царства
 
+Slug: numidianKingdoms
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Політичні об'єднання північноафриканських спільнот і їхні взаємини з Карфагеном та Римом.
+Methodological description: Study North African political confederations and relations with Carthage and Rome.
+User-friendly description: Learn how Numidian kingdoms interacted with Mediterranean powers.
 
 ##### Гараманти
 
+Slug: garamantes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Оазова цивілізація Феццану з власним господарством, поселеннями й транссахарськими контактами.
+Methodological description: Examine the Fezzan oasis civilization's agriculture, settlements, and trans-Saharan contacts.
+User-friendly description: Discover how Garamantes communities lived in Saharan oases.
 
 ##### Північноафриканські культурні взаємодії
 
+Slug: northAfricanCulturalInteractions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Співіснування місцевих мов і традицій із фінікійськими, грецькими та римськими впливами в античну добу.
+Methodological description: Explore coexistence of local languages and traditions with Phoenician, Greek, and Roman influences in antiquity.
+User-friendly description: Explore cultural exchanges in ancient North Africa.
 
 ### Південна та Південно-Східна Азія
+
+Slug: southAndSoutheastAsia
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 18
 
 [Not implemented](#)
 
-Від індських міст до індійських імперій і ранніх держав Південно-Східної Азії регіон демонструє кілька різних траєкторій урбанізації, релігійного й торгового розвитку.
+Methodological description: From Indus cities to South Asian empires and early Southeast Asian states, the region followed diverse urban, religious, and commercial trajectories.
+User-friendly description: Explore the ancient societies of South and Southeast Asia.
 
 #### Індська цивілізація
 
+Slug: indusCivilization
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Міські центри басейну Інду вирізнялися плануванням, ремеслами й торговими зв'язками, хоча частина політичних і мовних питань лишається відкритою.
+Methodological description: Indus cities showed planning, crafts, and trade, while political and linguistic questions remain unresolved.
+User-friendly description: Discover what makes the Indus cities remarkable and mysterious.
 
 ##### Міста Індської цивілізації
 
+Slug: citiesOfTheIndusCivilization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Особливості планування Мохенджо-Даро, Хараппи та інших поселень, систем водовідведення й міського управління.
+Methodological description: Examine planning, drainage, and administration at Mohenjo-daro, Harappa, and other settlements.
+User-friendly description: Explore how people organized streets and water in Indus cities.
 
 ##### Індське господарство
 
+Slug: indusEconomy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Сільське господарство, виробництво й сухопутна та морська торгівля населення долини Інду.
+Methodological description: Describe farming, manufacturing, and land and maritime trade in the Indus region.
+User-friendly description: Learn how Indus communities produced and exchanged goods.
 
 ##### Індські знаки
 
+Slug: indusSigns
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Відмінність наявних написів від прочитаного тексту: їхня система залишається недешифрованою.
+Methodological description: Distinguish surviving inscriptions from deciphered text, acknowledging that the script remains undeciphered.
+User-friendly description: Understand why Indus signs are still difficult to read.
 
 ##### Трансформація індських міст
 
+Slug: transformationOfIndusCities
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Регіональні зміни поселень та гіпотези про їхні причини без спрощеної історії одного раптового «зникнення».
+Methodological description: Analyze regional settlement changes and competing explanations without claiming a single sudden disappearance.
+User-friendly description: Explore what may explain the changes in Indus cities.
 
 #### Суспільства та держави давньої Індії
 
+Slug: societiesAndStatesOfAncientIndia
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Після ведійської доби на субконтиненті виникали регіональні царства й великі імперські утворення з відмінними формами управління.
+Methodological description: After the Vedic period, regional kingdoms and larger empires arose with differing political systems.
+User-friendly description: Discover how states developed in ancient India.
 
 ##### Ведійські суспільства
 
+Slug: vedicSocieties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Роль усних текстових традицій, господарства та змін суспільних структур у давній Північній Індії.
+Methodological description: Examine oral traditions, economic activity, and changing social structures in northern India.
+User-friendly description: Learn about the people and oral traditions of Vedic India.
 
 ##### Махаджанапади
 
+Slug: mahajanapadas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розвиток великих царств і республіканських об'єднань та другої урбанізації в долині Гангу.
+Methodological description: Trace major monarchies, republican polities, and renewed urbanization in the Ganges valley.
+User-friendly description: Explore the states that emerged in the Ganges region.
 
 ##### Імперія Маур'їв
 
+Slug: mauryanEmpire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Принципи управління великою державою та політика Ашоки, відома з едиктів та інших джерел.
+Methodological description: Explain imperial administration and Ashoka's policies using edicts and other sources.
+User-friendly description: Discover how Mauryan rulers governed and what Ashoka's edicts reveal.
 
 ##### Держава Гуптів
 
+Slug: guptaKingdom
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Влада, культурні центри й наукові традиції пізньоантичної Північної Індії без перенесення сучасного поняття однорідної «золотої доби» на все населення.
+Methodological description: Examine northern Indian politics, scholarship, and cultural centers without calling the period a uniform golden age for all.
+User-friendly description: Learn about Gupta-era government, science and culture.
 
 #### Релігійні та інтелектуальні традиції
+
+Slug: religiousAndIntellectualTraditions
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Учення, тексти й школи формувалися протягом століть, взаємодіяли з державами та згодом поширювалися далеко поза субконтинент.
+Methodological description: Teachings, texts, and schools evolved over centuries and spread far beyond the subcontinent.
+User-friendly description: Explore how ancient South Asian religious and intellectual ideas developed.
 
 ##### Ранні індуїстські традиції
 
+Slug: earlyHinduTraditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Еволюція ведійських ритуалів, філософських уявлень і практик, що не зводяться до одного засновника.
+Methodological description: Trace changing Vedic rituals, philosophy, and practices without inventing one founder.
+User-friendly description: Learn how different traditions contributed to early Hinduism.
 
 ##### Буддизм у давній Індії
 
+Slug: buddhismInAncientIndia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичний контекст виникнення вчення Будди та формування громад і напрямів буддійської традиції.
+Methodological description: Examine the Buddha's historical setting and the growth of Buddhist communities and schools.
+User-friendly description: Explore how Buddhism arose and spread in ancient India.
 
 ##### Джайнізм
 
+Slug: jainism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Релігійно-етичні ідеї й монастирські практики, пов'язані з учителями джайнської традиції.
+Methodological description: Explain the ethical teachings and monastic traditions associated with Jain teachers.
+User-friendly description: Discover the teachings and communities of Jainism.
 
 ##### Індійська наукова культура
 
+Slug: ancientIndianScience
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Давні підходи до обчислень, медицини й астрономії з дотриманням датування конкретних досягнень.
+Methodological description: Study early mathematics, medicine, and astronomy while dating individual developments accurately.
+User-friendly description: Learn about ancient Indian ideas in science and calculation.
 
 #### Південно-Східна Азія
+
+Slug: ancientSoutheastAsia
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Річкові долини, острівні мережі та прибережні порти взаємодіяли з Індією й Китаєм без втрати місцевих культурних особливостей.
+Methodological description: River valleys, islands, and ports exchanged ideas with India and China while retaining local traditions.
+User-friendly description: Explore early Southeast Asian societies and maritime links.
 
 ##### Ранні землеробські спільноти
 
+Slug: earlySoutheastAsianFarming
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поширення рисівництва, ремесел і поселень материкової Південно-Східної Азії.
+Methodological description: Trace rice cultivation, crafts, and settlement on the Southeast Asian mainland.
+User-friendly description: Discover how agriculture shaped early communities in Southeast Asia.
 
 ##### Морська торгівля регіону
 
+Slug: maritimeTradeOfSoutheastAsia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Роль проток, мусонних маршрутів і портів у циркуляції товарів та ідей.
+Methodological description: Explain the roles of straits, monsoon routes, and ports in exchanges of goods and ideas.
+User-friendly description: Follow the sea routes connecting Southeast Asian trading ports.
 
 ##### Ранні державні утворення
 
+Slug: earlySoutheastAsianStates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формування політичних центрів на кшталт Фунані за археологічними й зовнішніми письмовими свідченнями.
+Methodological description: Reconstruct centers such as Funan from archaeology and external written accounts.
+User-friendly description: Explore how the first states of Southeast Asia formed.
 
 ##### Культурні контакти з Індією
 
+Slug: culturalContactsWithIndia
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Місцеве переосмислення писемності, релігій і владних символів, а не механічне «копіювання» індійської цивілізації.
+Methodological description: Examine local adaptation of scripts, religions, and royal symbols rather than passive copying of Indian models.
+User-friendly description: Discover how local societies adapted ideas brought from India.
 
 ##### Культура Донгшон
 
+Slug: dongSonCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Бронзоливарство, обрядові традиції й контакти спільнот долини Червоної річки, відомі, зокрема, за поширенням оздоблених бронзових барабанів.
+Methodological description: Study Bronze Age craft, rituals, and Red River exchanges, including decorated bronze drums.
+User-friendly description: Learn what bronze drums reveal about Dong Son communities.
 
 ##### Ранні острівні культури Південно-Східної Азії
 
+Slug: earlyIslandSoutheastAsianCultures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поселення, ремесла та місцеві морські контакти Індонезійського й Філіппінського архіпелагів до становлення середньовічних морських держав.
+Methodological description: Examine settlements, crafts, and local sea connections in Indonesian and Philippine archipelagos before medieval maritime states.
+User-friendly description: Explore life on Southeast Asian islands before later empires.
 
 ### Східна та Центральна Азія
+
+Slug: eastAndCentralAsia
+Action: create
+Status: pending
 
 Groups: 5 · Skills: 22
 
 [Not implemented](#)
 
-Історія Китаю, Корейського півострова, Японського архіпелагу та внутрішньоазійських степів відображає співіснування осілих і мобільних суспільств.
+Methodological description: China, Korea, Japan, and Inner Asian steppe regions show coexistence and interaction between settled and mobile societies.
+User-friendly description: Explore the diverse ancient societies of East and Central Asia.
 
 #### Ранній Китай
+
+Slug: earlyChina
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Бронзова культура, ритуальні системи та конкуруючі держави заклали підвалини багатьох пізніших інституцій без прямої неперервності кожної практики.
+Methodological description: Bronze culture, ritual, and rival states shaped later institutions without requiring unchanged continuity.
+User-friendly description: Discover how early Chinese states and traditions developed.
 
 ##### Культура Шан
 
+Slug: shangCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Бронзоливарство, царська влада й ворожильні написи як джерела для найдавнішої достовірно письмової історії Китаю.
+Methodological description: Use bronze casting, royal institutions, and oracle-bone texts to interpret early documented Chinese history.
+User-friendly description: Learn what Shang bronze objects and oracle texts reveal.
 
 ##### Династія Чжоу
 
+Slug: zhouDynasty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Трансформація політичної влади та ідея Небесного мандата у відносинах царя й регіональних володарів.
+Methodological description: Trace political changes and the idea of Heaven's Mandate between Zhou rulers and regional elites.
+User-friendly description: Explore how Zhou rulers explained and shared authority.
 
 ##### Період Чуньцю
 
+Slug: springAndAutumnPeriod
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Суперництво князівств і зміни політичних зв'язків за послаблення влади Чжоу.
+Methodological description: Analyze rivalry among states and changing political ties during the weakening of Zhou power.
+User-friendly description: Explore competing states in China's Spring and Autumn era.
 
 ##### Період Чжаньґо
 
+Slug: warringStatesPeriod
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Військово-адміністративні реформи й конкуренція великих держав перед об'єднанням Китаю.
+Methodological description: Examine military and administrative reforms before China's political unification.
+User-friendly description: Discover how Warring States governments competed and reformed.
 
 ##### Конфуціанська традиція
 
+Slug: confucianTradition
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ідеї морального вдосконалення, суспільних відносин та управління у вченні Конфуція та його послідовників.
+Methodological description: Study Confucius and followers on ethical improvement, social relations, and government.
+User-friendly description: Explore Confucian ideas about conduct and good government.
 
 ##### Даоські традиції
 
+Slug: daoistTraditions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Ранні уявлення про Дао, природність і недіяння в неоднорідних філософських текстах.
+Methodological description: Interpret diverse early texts discussing the Dao, spontaneity, and nonaction.
+User-friendly description: Discover Daoist ideas without treating every text as identical.
 
 #### Імперський Китай
+
+Slug: imperialChina
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Об'єднання різних територій супроводжувалося спробами уніфікації інститутів, а також суперечками щодо методів управління.
+Methodological description: Territorial unification prompted administrative standardization and debate about rule.
+User-friendly description: Explore how Chinese dynasties governed large territories.
 
 ##### Імперія Цінь
 
+Slug: qinEmpire
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Адміністративна централізація та стандартизаційні реформи першої імператорської династії.
+Methodological description: Explain centralization and standardization under China's first imperial dynasty.
+User-friendly description: Discover the policies that helped the Qin unite China.
 
 ##### Династія Хань
 
+Slug: hanDynasty
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Бюрократія, військово-прикордонна політика та розвиток господарських зв'язків великої імперії.
+Methodological description: Trace bureaucracy, border policy, and economic networks in the Han Empire.
+User-friendly description: Learn how Han rulers administered and connected their empire.
 
 ##### Виробництво паперу в давньому Китаї
 
+Slug: papermakingInAncientChina
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Розвиток матеріалів і методів виготовлення паперу, зокрема за династії Хань, та наслідки для письма, обліку й передавання знань.
+Methodological description: Trace materials and methods of papermaking, including Han developments, and their effects on writing and record keeping.
+User-friendly description: Explore how Chinese papermaking changed the spread of information.
 
 ##### Металургія давнього Китаю
 
+Slug: ancientChineseMetallurgy
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Історичний розвиток бронзоливарних і залізоробних технологій, у тому числі чавунного литва, та їх господарські й військові застосування.
+Methodological description: Explain bronze and iron technologies including cast iron and their economic and military applications.
+User-friendly description: Discover how metalworking developed in ancient China.
 
 ##### Розпад Хань та наступні держави
 
+Slug: fallOfHanAndSuccessorStates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Політична децентралізація й культурні зміни наприкінці давньої доби Китаю.
+Methodological description: Analyze political decentralization and cultural changes at the end of the ancient Han era.
+User-friendly description: Explore what happened after Han imperial rule weakened.
 
 #### Корея
+
+Slug: ancientKorea
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Політичні об'єднання Корейського півострова й суміжної Маньчжурії відомі з різночасових текстових та археологічних джерел, які не завжди підтверджують традиційні дати заснування.
+Methodological description: Study early Korean and Manchurian polities through texts and archaeology that do not always corroborate traditional founding dates.
+User-friendly description: Explore the early kingdoms of the Korean peninsula.
 
 ##### Кочосон (Давній Чосон)
 
+Slug: gojoseon
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Археологічна та письмова історія раннього корейського політичного утворення і його відносин із сусідами; легендарні дати заснування не вважаються підтвердженими подіями.
+Methodological description: Interpret archaeological and written evidence about early Gojoseon without treating legendary founding dates as proven.
+User-friendly description: Discover what historians know and debate about Gojoseon.
 
 ##### Когурьо
 
+Slug: goguryeo
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Формування державного центру на півночі Корейського півострова та в Маньчжурії, його ранні політичні й військові відносини з китайськими династіями.
+Methodological description: Trace early state formation in northern Korea and Manchuria and contacts with Chinese dynasties.
+User-friendly description: Explore the beginnings of Goguryeo and its neighbors.
 
 ##### Пекче
 
+Slug: baekje
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Становлення ранньої держави на заході й південному заході Корейського півострова, її політичні союзи й культурні контакти.
+Methodological description: Examine early statehood in western and southwestern Korea, political alliances, and cultural contacts.
+User-friendly description: Discover Baekje's early rulers and connections.
 
 ##### Сілла
 
+Slug: silla
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поступове формування ранньої державної організації на південному сході Корейського півострова та становлення її владних інституцій у давню добу.
+Methodological description: Trace gradual state formation in southeastern Korea and development of institutions.
+User-friendly description: Explore how Silla developed from regional communities.
 
 #### Японія
+
+Slug: ancientJapan
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Археологічні культури Японського архіпелагу від ранньої кераміки до рисівництва та поховальних курганів засвідчують неоднакові регіональні зміни господарства й влади.
+Methodological description: Archaeological traditions from pottery to rice farming and burial mounds show uneven regional changes.
+User-friendly description: Discover the ancient cultures of the Japanese archipelago.
 
 ##### Культура Дзьомон
 
+Slug: jomonCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Господарство й матеріальна культура давніх мешканців Японського архіпелагу, зокрема керамічні традиції.
+Methodological description: Study Jomon livelihoods and material culture, especially pottery traditions.
+User-friendly description: Learn about the people and pottery of Jomon Japan.
 
 ##### Культура Яйой
 
+Slug: yayoiCulture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Поширення рисівництва, металообробки й зміни поселень на Японському архіпелазі.
+Methodological description: Trace rice agriculture, metalworking, and settlement changes in Yayoi Japan.
+User-friendly description: Explore how rice cultivation and metal tools changed Japan.
 
 ##### Період Кофун
 
+Slug: kofunPeriod
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Монументальні поховання та формування ранніх владних союзів Ямато.
+Methodological description: Study monumental tombs and early Yamato political coalitions.
+User-friendly description: Discover what Kofun burial mounds reveal about early authority.
 
 #### Внутрішня Азія
+
+Slug: innerAsia
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Степові й оазові суспільства створювали політичні об'єднання та забезпечували важливі зв'язки між великими аграрними державами.
+Methodological description: Steppe and oasis societies created polities and connections among large agricultural states.
+User-friendly description: Explore the mobile and settled societies of Inner Asia.
 
 ##### Кочове скотарство степів
 
+Slug: steppePastoralism
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Екологічні підстави сезонної мобільності, соціальні відносини й поєднання скотарства з торгівлею та іншими заняттями.
+Methodological description: Examine seasonal mobility, ecology, social relations, and mixed herding and trade economies.
+User-friendly description: Discover why steppe communities moved with their livestock.
 
 ##### Саки та споріднені степові культури
 
+Slug: sakaAndRelatedSteppeCultures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Різноманіття іраномовних та інших груп Центральної Азії, відомих через археологію й зовнішні назви.
+Methodological description: Recognize diverse Iranian-speaking and other Inner Asian groups from archaeology and external ethnonyms.
+User-friendly description: Explore what is known about the Saka and related cultures.
 
 ##### Сюнну
 
+Slug: xiongnu
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Політична конфедерація та дипломатично-воєнні відносини з імперією Хань.
+Methodological description: Examine the Xiongnu political confederation and diplomatic or military ties with Han China.
+User-friendly description: Discover how the Xiongnu interacted with the Han Empire.
 
 ##### Оазові центри Центральної Азії
 
+Slug: centralAsianOasisCenters
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Міста, караванний обмін і культурне посередництво на ранніх сухопутних маршрутах.
+Methodological description: Study towns, caravans, and cultural mediation along early inland trade routes.
+User-friendly description: Explore the oasis cities that connected ancient trade routes.
 
 ### Середземномор'я
 
