@@ -6,7 +6,7 @@ Locale roster: **28** `LanguageCode` values from `shared/contracts/src/types/lan
 
 ## Domains (code + staging Markdown inventory)
 
-- [ ] Counting — 15 Skills, 5 Groups (**current stage**)
+- [x] Counting — 15 Skills, 5 Groups (**completed**)
 - [ ] Natural Numbers — 27 Skills, 5 Groups
 - [ ] Fractions — 19 Skills, 4 Groups
 - [ ] Arithmetic — 79 Skills, 5 Groups
@@ -24,12 +24,12 @@ Locale roster: **28** `LanguageCode` values from `shared/contracts/src/types/lan
 
 ## Current stage — Counting
 
-- [ ] Verify each English frontend description against the existing English methodological description.
-- [ ] Localize 15 Skill descriptions across all supported languages (420 values at 28 languages).
-- [ ] Localize five Group descriptions and the Counting Domain description (168 values at 28 languages).
-- [ ] Confirm all language keys are present and nonblank; verify the distinct mathematical competencies.
-- [ ] Confirm existing IDs, name dictionaries, taxonomy membership and methodological descriptions are unchanged.
-- [ ] Commit the finished stage and record its revision SHA in this checklist.
+- [x] Verify each English frontend description against the existing English methodological description.
+- [x] Localize 15 Skill descriptions across all supported languages (420 values at 28 languages).
+- [x] Localize five Group descriptions and the Counting Domain description (168 values at 28 languages).
+- [x] Confirm all language keys are present and nonblank; verify the distinct mathematical competencies.
+- [x] Confirm existing IDs, name dictionaries, taxonomy membership and methodological descriptions are unchanged.
+- [x] Commit the finished stage and record its revision SHA in this checklist.
 
 ## Final stage — shared-contract migration (not yet authorized to enact)
 
@@ -69,3 +69,16 @@ These descriptions are user-facing prose checked against the existing English `d
 | evenOdd | Make pairs to check whether a number is even or odd. An even number leaves none unpaired; an odd number leaves one. |
 
 **Editorial note:** The names and methodological descriptions above are existing Code authority. This stage modifies `fe` only and adds no new mathematical competency.
+
+## Counting completion checkpoint (2026-10-30)
+
+- **Domain coverage:** 15/15 Skills, 5/5 Groups, 1/1 Domain.
+- **Language coverage:** 28/28 language codes in each of 21 dictionaries; 420 Skill translations + 140 Group translations + 28 Domain translations = **588 nonempty values**.
+- **Sequence of review:** all 21 English frontend drafts recorded above before localization; translations added in separate small Group commits. A separate proofreading commit corrected identified wording issues.
+- **Diff validation:** in all 21 entity files the only removed line is the prior inline `description`; its English `methodological` value appears unchanged in the expanded block. UUIDs, IDs, names, memberships, exports and staging Markdown were not edited.
+- **Automated static validation through GitHub file patches:** compared 28 `fe` keys in each changed entity with the actual current `DEFAULT_SUPPORTED_LANGUAGES` registry; checked that every value is nonempty, no language key is duplicated/missing, and all existing methodological values are byte-for-byte unchanged. **Result: 21/21 pass.**
+- **Localized language checks:** RTL text authored in Arabic, Urdu and Hebrew; `be` text uses Taraškievica. English copy and linguistic issues found during revision were corrected without altering Skill meanings. These are authoring checks, not an independent native-speaker certification.
+- **First Domain checkpoint revision:** `7b05f08df69b84b62110f8b81160e8df4caaa240` (through proofreading), followed by this documentation checkpoint.
+- **Execution limit:** a local working tree and runnable dependency installation are not available through the GitHub connector, so local TypeScript typechecks or npm focused tests **were not run**. Do not interpret static file checks as a TypeScript compile or a passing CI result. Read GitHub Actions status from the PR separately.
+- **Next:** Natural Numbers — 27 Skills, 5 Groups; check the then-current language registry before authoring. Do not change the shared optional `fe` contract yet.
+
