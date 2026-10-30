@@ -17,6 +17,9 @@ Each new-format SkillDomain has one English `Slug: lowerCamelCase` beneath its h
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
+The Domain config lives in `<PackageRoot>/data/skills/<domain>/<domain>.data.ts` and directly imports immediate Group Data from `./<group>/<group>.data`, or direct Skill Data from `./skills` for an ungrouped Domain. It maps child `.id` values into `groupIds` or `skillIds`. **No Domain-directory `index.ts` is required or allowed**; `<PackageRoot>/data/skills/index.ts` exports the Domain to consumers.
+
+
 The `@svitlo/contracts/taxonomy` `SkillDomain_Config` has `id`, localized `name`, required `groupIds` and optional direct `skillIds`. A grouped Domain uses nonempty `groupIds`; a direct-Skill Domain uses `groupIds: {}` plus nonempty `skillIds`. The Domain builder validates the exclusive, nonempty mode and individual child UUIDs, but it does **not** prove cross-domain uniqueness or downstream registry, index, UI, ancestry or analytics support. These consumers require their own integration audit. There is a transitional optional `description: { methodological: string; fe?: Record<LanguageCode, string> }`. Promotion requires a reviewed English `methodological` text; optional `fe` must be absent or complete for every supported locale. There is no learner-progress data.
 
 - **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological explanation, optional complete fe copy and Group membership **or direct Skill membership**.
