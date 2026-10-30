@@ -1013,529 +1013,939 @@ User-friendly description: Discover how isotopes can help trace materials throug
 
 ### Bonding and Structure
 
+Slug: bondingAndStructure
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 12
 
 [Not implemented](#)
 
-Chemical properties arise partly from how atoms and ions are connected and how neighboring particles interact. This domain distinguishes intraparticle bonds from interactions between particles and from bulk structural arrangements.
+Methodological description: Chemical properties arise partly from how atoms and ions are connected and how neighboring particles interact. This domain distinguishes intraparticle bonds from interactions between particles and from bulk structural arrangements.
+User-friendly description: Discover how chemical bonds and attractions between particles shape material properties.
 
 #### Chemical Bonds
 
+Slug: chemicalBonds
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Different electron distributions support different limiting models of chemical bonding; real substances can have mixed characteristics.
+Methodological description: Different electron distributions support different limiting models of chemical bonding; real substances can have mixed characteristics.
+User-friendly description: Explore how atoms and ions form chemical bonds with different electron arrangements.
 
 ##### Ionic Bonding
 
+Slug: ionicBonding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain electrostatic attraction in extended ionic structures after electron transfer is represented conceptually.
+Methodological description: Explain electrostatic attraction in extended ionic structures after electron transfer is represented conceptually.
+User-friendly description: Explain how opposite charges hold ions together in ionic structures.
 
 ##### Covalent Bonding
 
+Slug: covalentBonding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain electron sharing in bonds between atoms, including differences between single and multiple bonds.
+Methodological description: Explain electron sharing in bonds between atoms, including differences between single and multiple bonds.
+User-friendly description: Understand how atoms share electrons in single and multiple covalent bonds.
 
 ##### Metallic Bonding
 
+Slug: metallicBonding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate delocalized electrons and ordered metal atoms to common metallic properties.
+Methodological description: Relate delocalized electrons and ordered metal atoms to common metallic properties.
+User-friendly description: Connect mobile electrons in metals with their characteristic properties.
 
 ##### Bond Polarity
 
+Slug: bondPolarity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use electronegativity differences to characterize unequal electron sharing without equating every polar bond with a polar molecule.
+Methodological description: Use electronegativity differences to characterize unequal electron sharing without equating every polar bond with a polar molecule.
+User-friendly description: Explore why electrons can be shared unevenly in a chemical bond.
 
 #### Molecular and Extended Structure
 
+Slug: molecularAndExtendedStructure
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Spatial arrangement and connectedness influence substance behavior independently of a simple formula.
+Methodological description: Spatial arrangement and connectedness influence substance behavior independently of a simple formula.
+User-friendly description: Learn how the arrangement of particles influences the behavior of materials.
 
 ##### Molecular Geometry
 
+Slug: molecularGeometry
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Predict or interpret molecular shapes from electron-group arrangements and their limitations.
+Methodological description: Predict or interpret molecular shapes from electron-group arrangements and their limitations.
+User-friendly description: Use electron arrangements to reason about the shapes of molecules.
 
 ##### Molecular Polarity
 
+Slug: molecularPolarity
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Combine bond polarities with geometry to infer whether a molecule has a net dipole.
+Methodological description: Combine bond polarities with geometry to infer whether a molecule has a net dipole.
+User-friendly description: Combine bond polarity and molecular shape to understand overall molecular polarity.
 
 ##### Ionic Lattices
 
+Slug: ionicLattices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate repeating ionic arrangements to melting behavior, brittleness and conduction conditions.
+Methodological description: Relate repeating ionic arrangements to melting behavior, brittleness and conduction conditions.
+User-friendly description: Connect repeating ionic structures with brittleness, melting and electrical conduction.
 
 ##### Network Solids
 
+Slug: networkSolids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Contrast extended covalent structures with discrete molecular solids using examples such as diamond and silica.
+Methodological description: Contrast extended covalent structures with discrete molecular solids using examples such as diamond and silica.
+User-friendly description: Explore why extended covalent networks behave differently from individual molecules.
 
 #### Interparticle Interactions
+
+Slug: interparticleInteractions
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Attractions between distinct particles influence phase behavior, solubility and material properties without changing covalent connectivity.
+Methodological description: Attractions between distinct particles influence phase behavior, solubility and material properties without changing covalent connectivity.
+User-friendly description: Discover how particles attract one another without forming new chemical bonds.
 
 ##### Dispersion Forces
 
+Slug: dispersionForces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain attractions arising from fluctuating electron distributions and their broad dependence on particle polarizability.
+Methodological description: Explain attractions arising from fluctuating electron distributions and their broad dependence on particle polarizability.
+User-friendly description: Explore the weak attractions caused by constantly shifting electron distributions.
 
 ##### Dipole Interactions
 
+Slug: dipoleInteractions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate permanent molecular polarity to orientation-dependent attractions between molecules.
+Methodological description: Relate permanent molecular polarity to orientation-dependent attractions between molecules.
+User-friendly description: Understand how polar molecules attract one another according to their orientation.
 
 ##### Hydrogen Bonding
 
+Slug: hydrogenBonding
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the conditions for stronger directional interactions involving hydrogen bound to suitable electronegative atoms.
+Methodological description: Recognize the conditions for stronger directional interactions involving hydrogen bound to suitable electronegative atoms.
+User-friendly description: Recognize when molecular structures can form hydrogen bonds.
 
 ##### Structure–Property Relationships
 
+Slug: structurePropertyRelationships
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use bonding and intermolecular interactions jointly to explain contrasting boiling points, hardness or conductivity.
+Methodological description: Use bonding and intermolecular interactions jointly to explain contrasting boiling points, hardness or conductivity.
+User-friendly description: Use bonds and particle interactions to explain differences between materials.
 
 ### Mixtures and Solutions
+
+Slug: mixturesAndSolutions
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 22
 
 [Not implemented](#)
 
-Components of mixtures retain their chemical identities while distribution, solubility and relative amounts determine useful properties. Separation methods exploit differences in physical behavior rather than requiring reaction.
+Methodological description: Components of mixtures retain their chemical identities while distribution, solubility and relative amounts determine useful properties. Separation methods exploit differences in physical behavior rather than requiring reaction.
+User-friendly description: Explore how substances combine in mixtures, dissolve and can be separated again.
 
 #### Mixture Systems
+
+Slug: mixtureSystems
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Mixtures may contain more than one phase or dispersed material with properties depending on particle size and composition.
+Methodological description: Mixtures may contain more than one phase or dispersed material with properties depending on particle size and composition.
+User-friendly description: Recognize different kinds of mixtures based on their components and phases.
 
 ##### Solutions
 
+Slug: solutions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize a homogeneous mixture in which solute is distributed within a solvent.
+Methodological description: Recognize a homogeneous mixture in which solute is distributed within a solvent.
+User-friendly description: Identify a solution where dissolved material is evenly distributed.
 
 ##### Suspensions
 
+Slug: suspensions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify dispersed particles large enough to separate or settle under appropriate conditions.
+Methodological description: Identify dispersed particles large enough to separate or settle under appropriate conditions.
+User-friendly description: Recognize suspensions containing dispersed particles that can settle.
 
 ##### Colloids
 
+Slug: colloids
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish stable dispersions of intermediate-scale particles from molecular solutions and coarse suspensions.
+Methodological description: Distinguish stable dispersions of intermediate-scale particles from molecular solutions and coarse suspensions.
+User-friendly description: Distinguish colloids from true solutions and coarse suspensions.
 
 ##### Alloys
 
+Slug: alloys
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret metallic mixtures or solid solutions without assuming every alloy has a fixed compound formula.
+Methodological description: Interpret metallic mixtures or solid solutions without assuming every alloy has a fixed compound formula.
+User-friendly description: Understand how metals combine to form alloys without always making a new compound.
 
 #### Dissolution and Solubility
+
+Slug: dissolutionAndSolubility
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Dissolution reflects competing interactions and may depend strongly on substance and conditions.
+Methodological description: Dissolution reflects competing interactions and may depend strongly on substance and conditions.
+User-friendly description: Explore what controls whether and how much of a substance dissolves.
 
 ##### Dissolving
 
+Slug: dissolving
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain distribution of solute species among solvent particles while distinguishing dissolution from reaction.
+Methodological description: Explain distribution of solute species among solvent particles while distinguishing dissolution from reaction.
+User-friendly description: Explain how solute particles spread among solvent particles.
 
 ##### Solubility
 
+Slug: solubility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret the maximum equilibrium amount of solute under specified conditions.
+Methodological description: Interpret the maximum equilibrium amount of solute under specified conditions.
+User-friendly description: Understand how solubility limits the amount that dissolves under specific conditions.
 
 ##### Temperature and Solubility
 
+Slug: temperatureAndSolubility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize that temperature affects dissolution equilibria differently for different solute–solvent systems.
+Methodological description: Recognize that temperature affects dissolution equilibria differently for different solute–solvent systems.
+User-friendly description: Explore why temperature can change how much of a substance dissolves.
 
 ##### Gas Solubility and Pressure
 
+Slug: gasSolubilityAndPressure
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate gas dissolution to partial pressure and equilibrium under relevant conditions.
+Methodological description: Relate gas dissolution to partial pressure and equilibrium under relevant conditions.
+User-friendly description: Explain how gas pressure influences the amount of gas dissolved in a liquid.
 
 ##### Saturation
 
+Slug: saturation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish unsaturated, saturated and supersaturated states and their practical stability.
+Methodological description: Distinguish unsaturated, saturated and supersaturated states and their practical stability.
+User-friendly description: Distinguish unsaturated, saturated and supersaturated solutions.
 
 ##### Solvent–Solute Compatibility
 
+Slug: solventSoluteCompatibility
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reason about dissolution from particle interactions, polarity and molecular structure without treating “like dissolves like” as an absolute rule.
+Methodological description: Reason about dissolution from particle interactions, polarity and molecular structure without treating “like dissolves like” as an absolute rule.
+User-friendly description: Use particle interactions to predict whether substances may dissolve together.
 
 #### Concentration
+
+Slug: concentration
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-A solution's composition can be represented in several quantitatively distinct ways, each with an appropriate denominator.
+Methodological description: A solution's composition can be represented in several quantitatively distinct ways, each with an appropriate denominator.
+User-friendly description: Learn different ways to describe how much material a solution contains.
 
 ##### Mass Fraction
 
+Slug: massFraction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate solute mass to total solution mass rather than to solvent mass.
+Methodological description: Relate solute mass to total solution mass rather than to solvent mass.
+User-friendly description: Understand mass fraction as the solute's share of the whole solution's mass.
 
 ##### Molar Concentration
 
+Slug: molarConcentration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate dissolved amount of substance to solution volume and suitable units.
+Methodological description: Relate dissolved amount of substance to solution volume and suitable units.
+User-friendly description: Use moles per volume to describe the concentration of dissolved substances.
 
 ##### Dilution
 
+Slug: dilution
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use conservation of solute amount to relate concentrations and volumes before and after adding solvent.
+Methodological description: Use conservation of solute amount to relate concentrations and volumes before and after adding solvent.
+User-friendly description: Calculate how adding solvent changes concentration without changing solute amount.
 
 ##### Concentration Comparisons
 
+Slug: concentrationComparisons
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare dilute and concentrated samples without confusing concentration with solubility or toxicity.
+Methodological description: Compare dilute and concentrated samples without confusing concentration with solubility or toxicity.
+User-friendly description: Compare concentration levels without equating them with safety or solubility.
 
 ##### Colligative Properties
 
+Slug: colligativeProperties
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate changes such as freezing-point depression to dissolved particle concentration under appropriate assumptions.
+Methodological description: Relate changes such as freezing-point depression to dissolved particle concentration under appropriate assumptions.
+User-friendly description: Explore why dissolved particles can change freezing and boiling behavior.
 
 #### Separation
+
+Slug: separation
+Action: create
+Status: pending
 
 Skills: 7
 
 [Not implemented](#)
 
-Choosing a technique requires identifying which physical property differs between the components.
+Methodological description: Choosing a technique requires identifying which physical property differs between the components.
+User-friendly description: Discover how differences in physical properties help separate mixtures.
 
 ##### Filtration
 
+Slug: filtration
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain separation of suspended solids from fluids by passage through a suitable barrier.
+Methodological description: Explain separation of suspended solids from fluids by passage through a suitable barrier.
+User-friendly description: Explain how a filter traps suspended solids while a fluid passes through.
 
 ##### Evaporative Separation
 
+Slug: evaporativeSeparation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recover nonvolatile dissolved material by removing a volatile solvent, accounting for possible sample loss or decomposition.
+Methodological description: Recover nonvolatile dissolved material by removing a volatile solvent, accounting for possible sample loss or decomposition.
+User-friendly description: Recover dissolved solids by removing a solvent through evaporation.
 
 ##### Crystallization
 
+Slug: crystallization
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Exploit changes in solubility and the organization of solid particles to obtain crystals from a solution.
+Methodological description: Exploit changes in solubility and the organization of solid particles to obtain crystals from a solution.
+User-friendly description: Use controlled crystal formation to separate a substance from a solution.
 
 ##### Distillation
 
+Slug: distillation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain selective vaporization and condensation using differences in volatility.
+Methodological description: Explain selective vaporization and condensation using differences in volatility.
+User-friendly description: Explore how different boiling behaviors allow distillation to separate substances.
 
 ##### Chromatography
 
+Slug: chromatography
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret differential movement or partitioning of mixture components between phases.
+Methodological description: Interpret differential movement or partitioning of mixture components between phases.
+User-friendly description: Understand how chromatography separates components through different movement between phases.
 
 ##### Decantation
 
+Slug: decantation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate layers or sediment by pouring off a liquid after gravitational settling without claiming complete purification.
+Methodological description: Separate layers or sediment by pouring off a liquid after gravitational settling without claiming complete purification.
+User-friendly description: Separate settled solids or liquid layers by carefully pouring off a layer.
 
 ##### Centrifugation
 
+Slug: centrifugation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how accelerated sedimentation separates components with different effective buoyant densities.
+Methodological description: Explain how accelerated sedimentation separates components with different effective buoyant densities.
+User-friendly description: Explore how spinning a mixture speeds the separation of particles.
 
 ### Chemical Language and Quantities
+
+Slug: chemicalLanguageAndQuantities
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 18
 
 [Not implemented](#)
 
-Chemists represent composition and transformation with conventional symbols and use amounts to connect microscopic entities to measurable samples. This domain covers representational and quantitative relationships, not specific reaction mechanisms.
+Methodological description: Chemists represent composition and transformation with conventional symbols and use amounts to connect microscopic entities to measurable samples. This domain covers representational and quantitative relationships, not specific reaction mechanisms.
+User-friendly description: Learn the symbols, formulas and calculations chemists use to describe substances and reactions.
 
 #### Chemical Notation
+
+Slug: chemicalNotation
+Action: create
+Status: pending
 
 Skills: 8
 
 [Not implemented](#)
 
-Symbols and formulas must preserve elemental identity, proportions and charge while being read according to their convention.
+Methodological description: Symbols and formulas must preserve elemental identity, proportions and charge while being read according to their convention.
+User-friendly description: Discover how chemical symbols and formulas communicate composition and charge.
 
 ##### Element Symbols
 
+Slug: elementSymbols
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret standard element symbols and distinguish capitalization changes that create different meanings.
+Methodological description: Interpret standard element symbols and distinguish capitalization changes that create different meanings.
+User-friendly description: Read element symbols correctly, including important differences in capitalization.
 
 ##### Chemical Formulas
 
+Slug: chemicalFormulas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Read subscripts as composition information rather than reaction coefficients.
+Methodological description: Read subscripts as composition information rather than reaction coefficients.
+User-friendly description: Understand how formula subscripts indicate the proportions of different atoms.
 
 ##### Molecular Formulas
 
+Slug: molecularFormulas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret how many atoms of each element are present in a specified discrete molecule.
+Methodological description: Interpret how many atoms of each element are present in a specified discrete molecule.
+User-friendly description: Read a molecular formula to identify the atoms in one molecule.
 
 ##### Empirical Formulas
 
+Slug: empiricalFormulas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Derive or interpret the simplest whole-number elemental ratio without assuming that it specifies one molecule.
+Methodological description: Derive or interpret the simplest whole-number elemental ratio without assuming that it specifies one molecule.
+User-friendly description: Interpret the simplest whole-number ratio of elements in a substance.
 
 ##### Ionic Compound Formulas
 
+Slug: ionicCompoundFormulas
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use ion charges to derive electrically neutral formula units.
+Methodological description: Use ion charges to derive electrically neutral formula units.
+User-friendly description: Use ion charges to write formulas for electrically neutral ionic compounds.
 
 ##### Oxidation States
 
+Slug: oxidationStates
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assign formal oxidation numbers under established conventions without mistaking them for measured atomic charges.
+Methodological description: Assign formal oxidation numbers under established conventions without mistaking them for measured atomic charges.
+User-friendly description: Work with formal oxidation numbers without treating them as literal charges.
 
 ##### Inorganic Nomenclature
 
+Slug: inorganicNomenclature
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Apply systematic naming conventions to inorganic compounds, considering ionic or covalent composition and oxidation states where relevant.
+Methodological description: Apply systematic naming conventions to inorganic compounds, considering ionic or covalent composition and oxidation states where relevant.
+User-friendly description: Use naming rules to identify inorganic compounds.
 
 ##### Organic Nomenclature
 
+Slug: organicNomenclature
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use parent structures, locants and functional groups to relate organic compound names to their molecular connectivity.
+Methodological description: Use parent structures, locants and functional groups to relate organic compound names to their molecular connectivity.
+User-friendly description: Connect systematic names of organic compounds with their molecular structures.
 
 #### Reaction Equations
+
+Slug: reactionEquations
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-An equation records reactants, products and stoichiometric relationships but is not, by itself, a mechanism.
+Methodological description: An equation records reactants, products and stoichiometric relationships but is not, by itself, a mechanism.
+User-friendly description: Explore how equations represent chemical transformations and their proportions.
 
 ##### Word Equations
 
+Slug: wordEquations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Represent a described change by naming initial and resulting substances.
+Methodological description: Represent a described change by naming initial and resulting substances.
+User-friendly description: Describe a reaction using the names of its starting substances and products.
 
 ##### Symbolic Equations
 
+Slug: symbolicEquations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Translate a chemical transformation into formulas with correct reactant and product identities.
+Methodological description: Translate a chemical transformation into formulas with correct reactant and product identities.
+User-friendly description: Write chemical formulas that correctly represent reactants and products.
 
 ##### Balancing Equations
 
+Slug: balancingEquations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose coefficients that conserve the number of each element without altering chemical formulas.
+Methodological description: Choose coefficients that conserve the number of each element without altering chemical formulas.
+User-friendly description: Balance a chemical equation while keeping the formulas unchanged.
 
 ##### Equation State Symbols
 
+Slug: equationStateSymbols
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret notation for solid, liquid, gas and aqueous species as information about conditions or phases.
+Methodological description: Interpret notation for solid, liquid, gas and aqueous species as information about conditions or phases.
+User-friendly description: Read symbols showing whether reaction components are solid, liquid, gas or dissolved.
 
 #### Amount of Substance
+
+Slug: amountOfSubstance
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-The mole and associated quantities link atom-scale counting to bulk mass, volume and reaction proportions.
+Methodological description: The mole and associated quantities link atom-scale counting to bulk mass, volume and reaction proportions.
+User-friendly description: Connect numbers of particles with measurable masses and reaction amounts.
 
 ##### The Mole
 
+Slug: theMole
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret amount of substance as a count-based quantity defined through Avogadro's constant.
+Methodological description: Interpret amount of substance as a count-based quantity defined through Avogadro's constant.
+User-friendly description: Understand a mole as a defined number of chemical entities.
 
 ##### Molar Mass
 
+Slug: molarMass
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect formula composition to mass per mole using atomic masses.
+Methodological description: Connect formula composition to mass per mole using atomic masses.
+User-friendly description: Use molar mass to relate a chemical formula to the mass of a mole.
 
 ##### Mass–Mole Conversion
 
+Slug: massMoleConversion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Convert between measured mass and amount of substance for a specified chemical entity.
+Methodological description: Convert between measured mass and amount of substance for a specified chemical entity.
+User-friendly description: Convert between the mass of a substance and its amount in moles.
 
 ##### Stoichiometric Ratios
 
+Slug: stoichiometricRatios
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Use balanced coefficients to relate amounts of reactants and products.
+Methodological description: Use balanced coefficients to relate amounts of reactants and products.
+User-friendly description: Use a balanced equation to compare amounts of reactants and products.
 
 ##### Limiting Reactants
 
+Slug: limitingReactants
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine which available reactant sets the theoretical upper bound on product formation.
+Methodological description: Determine which available reactant sets the theoretical upper bound on product formation.
+User-friendly description: Identify which reactant limits the maximum amount of product possible.
 
 ##### Reaction Yield
 
+Slug: reactionYield
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish theoretical yield, observed yield and percentage yield without attributing every shortfall to one cause.
+Methodological description: Distinguish theoretical yield, observed yield and percentage yield without attributing every shortfall to one cause.
+User-friendly description: Compare theoretical and actual reaction yields and explain percentage yield.
 
 ### Chemical Reactions
+
+Slug: chemicalReactions
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-This domain identifies and explains transformations in which constituent atoms are rearranged or electron/proton transfer occurs. Chemical equation notation and amount calculations remain in their dedicated domain.
+Methodological description: This domain identifies and explains transformations in which constituent atoms are rearranged or electron/proton transfer occurs. Chemical equation notation and amount calculations remain in their dedicated domain.
+User-friendly description: Explore how chemical reactions change substances by rearranging atoms and transferring particles.
 
 #### Recognizing Reactions
+
+Slug: recognizingReactions
+Action: create
+Status: pending
 
 Skills: 2
 
 [Not implemented](#)
 
-Recognizing chemical change requires identifying initial and resulting chemical species and examining observations critically rather than treating any visible sign as proof.
+Methodological description: Recognizing chemical change requires identifying initial and resulting chemical species and examining observations critically rather than treating any visible sign as proof.
+User-friendly description: Learn how observations can support a conclusion that a reaction occurred.
 
 ##### Reaction Evidence
 
+Slug: reactionEvidence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Interpret gas evolution, precipitates, color changes or thermal effects as possible evidence, with appropriate alternative explanations.
+Methodological description: Interpret gas evolution, precipitates, color changes or thermal effects as possible evidence, with appropriate alternative explanations.
+User-friendly description: Assess whether bubbles, colors or temperature changes indicate a chemical reaction.
 
 ##### Reactants and Products
 
+Slug: reactantsAndProducts
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify starting and resulting chemical species while distinguishing them from catalysts and solvents.
+Methodological description: Identify starting and resulting chemical species while distinguishing them from catalysts and solvents.
+User-friendly description: Distinguish starting reactants and resulting products from catalysts or solvents.
 
 #### Reaction Patterns
+
+Slug: reactionPatterns
+Action: create
+Status: pending
 
 Skills: 6
 
 [Not implemented](#)
 
-Reaction patterns classify transformations such as combination, decomposition, precipitation, displacement, combustion and hydrolysis. Some categories may overlap and do not by themselves determine a detailed reaction mechanism.
+Methodological description: Reaction patterns classify transformations such as combination, decomposition, precipitation, displacement, combustion and hydrolysis. Some categories may overlap and do not by themselves determine a detailed reaction mechanism.
+User-friendly description: Discover common ways chemical reactions can be classified.
 
 ##### Synthesis Reactions
 
+Slug: synthesisReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize processes producing a new compound from simpler starting substances.
+Methodological description: Recognize processes producing a new compound from simpler starting substances.
+User-friendly description: Recognize when simpler substances combine to form a new compound.
 
 ##### Decomposition Reactions
 
+Slug: decompositionReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize processes in which one chemical species gives rise to multiple products.
+Methodological description: Recognize processes in which one chemical species gives rise to multiple products.
+User-friendly description: Recognize when a chemical substance breaks into multiple products.
 
 ##### Precipitation Reactions
 
+Slug: precipitationReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain the formation of an insoluble product from reacting dissolved species.
+Methodological description: Explain the formation of an insoluble product from reacting dissolved species.
+User-friendly description: Explain why a reaction can produce an insoluble solid from dissolved substances.
 
 ##### Combustion
 
+Slug: combustion
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Characterize reactions with an oxidant that release energy, distinguishing combustion from mere heating.
+Methodological description: Characterize reactions with an oxidant that release energy, distinguishing combustion from mere heating.
+User-friendly description: Understand combustion as an energy-releasing reaction involving an oxidant.
 
 ##### Displacement Reactions
 
+Slug: displacementReactions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reason about when one element can replace another in a compound.
+Methodological description: Reason about when one element can replace another in a compound.
+User-friendly description: Explore when one chemical element can replace another in a compound.
 
 ##### Hydrolysis
 
+Slug: hydrolysis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize reactions in which water participates in bond cleavage or chemical conversion.
+Methodological description: Recognize reactions in which water participates in bond cleavage or chemical conversion.
+User-friendly description: Recognize reactions in which water helps break or change chemical bonds.
 
 #### Oxidation and Reduction
+
+Slug: oxidationAndReduction
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Electron bookkeeping describes an important class of reactions even when electrons are not explicitly transferred between discrete ions.
+Methodological description: Electron bookkeeping describes an important class of reactions even when electrons are not explicitly transferred between discrete ions.
+User-friendly description: Explore how oxidation and reduction relate to electron changes.
 
 ##### Oxidation
 
+Slug: oxidation
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify increases in formal oxidation state or electron loss in appropriate reaction descriptions.
+Methodological description: Identify increases in formal oxidation state or electron loss in appropriate reaction descriptions.
+User-friendly description: Identify oxidation through electron loss or an increase in oxidation state.
 
 ##### Reduction
 
+Slug: reduction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify decreases in formal oxidation state or electron gain in appropriate reaction descriptions.
+Methodological description: Identify decreases in formal oxidation state or electron gain in appropriate reaction descriptions.
+User-friendly description: Identify reduction through electron gain or a decrease in oxidation state.
 
 ##### Redox Couples
 
+Slug: redoxCouples
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate oxidation of one participant to reduction of another and identify oxidizing or reducing agents.
+Methodological description: Relate oxidation of one participant to reduction of another and identify oxidizing or reducing agents.
+User-friendly description: Explain how one participant is oxidized while another is reduced.
 
 ##### Galvanic Cells
 
+Slug: galvanicCells
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how spontaneous, spatially separated oxidation and reduction reactions deliver electrical work through an external circuit while charge also flows through the electrolyte.
+Methodological description: Explain how spontaneous, spatially separated oxidation and reduction reactions deliver electrical work through an external circuit while charge also flows through the electrolyte.
+User-friendly description: See how separated redox reactions can generate electrical energy in a cell.
 
 ##### Electrolysis
 
+Slug: electrolysis
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how externally supplied electrical energy drives non-spontaneous redox reactions at electrodes, including transformations such as electroplating.
+Methodological description: Explain how externally supplied electrical energy drives non-spontaneous redox reactions at electrodes, including transformations such as electroplating.
+User-friendly description: Understand how electricity can drive reactions that would not occur spontaneously.
 
 ### Acid–Base Chemistry
 
