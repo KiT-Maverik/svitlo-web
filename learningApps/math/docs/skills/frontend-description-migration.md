@@ -11,7 +11,7 @@ Locale roster: **28** `LanguageCode` values from `shared/contracts/src/types/lan
 - [x] Fractions — 19 Skills, 4 Groups (**completed**)
 - [ ] Arithmetic — 79 Skills, 5 Groups
 - [ ] Algebra — 17 Skills, 5 Groups
-- [ ] Geometry — 35 Skills, 10 Groups
+- [x] Geometry — 35 Skills, 10 Groups (**completed**)
 - [ ] Measurement — 21 Skills, 5 Groups
 - [ ] Time — 13 Skills, 3 Groups
 - [ ] Money — 6 Skills, 2 Groups
@@ -249,3 +249,14 @@ The following learner-facing English copy is checked against each existing metho
 | `perimeterArea/skills/areaPerimeterContrast.data.ts` | Build shapes with the same perimeter but different areas, or the same area but different perimeters. |
 
 **Inventory:** 35 Skills + 10 Groups + 1 Domain = 46 entities × 28 supported locales = 1,288 localized descriptions. Preserve geometry concepts (open vs closed curves; line/ray/segment; square ⊂ rectangle; 2D vs 3D; area in squares vs perimeter in lengths; circle boundary vs filled disk; orientation-dependent directions). Keep shared contract optional until all agents finish.
+
+## Geometry completed checkpoint (2026-10-30)
+
+- **Inventory:** all 35 Skills, 10 Groups, 1 Domain = **46/46 entities**, each with exactly 28 full `description.fe` translations. **980 Skill + 280 Group + 28 Domain = 1,288 localized strings.**
+- **English-first:** 46 English learner-facing descriptions were reviewed against each original English `description.methodological` and recorded above before translation. All 46 `fe.en` values exactly match their recorded English baselines.
+- **Group commits:** `1b4c417` orientation; `5dc237c` lines; `6d6d3ce` figures; `fc1b9b6` solids; `9572407` transformations; `bd66374` angles; `2ded6b4` circles; `3fefd0a` perimeter; `c0928c0` area; `75828b7` perimeter-vs-area; `677d10c` Domain; `06a5d32` proofreading; this documentation checkpoint.
+- **Static validation:** GitHub PR patch-based validation confirmed 46 files, 28 registry language codes per file, 1,288 nonempty strings, no duplicate/missing code keys, no English used unchanged for other locales, and original `description.methodological` preserved exactly. No existing UUIDs, identifiers, localized names, group memberships, exports or staging Markdown taxonomy content changed.
+- **Semantic boundaries:** points vs lines vs rays vs segments; open vs closed curves; squares are special rectangles; 2D faces vs 3D solids; direction changes with reference frame; reflecting vs translating; right angle 90° even if rotated; circle line vs filled disk; perimeter in length units and area in square units; rearranged pieces preserve area but need not preserve perimeter.
+- **Proofreading:** corrected an accidental hidden soft hyphen in Ukrainian copy, Belarusian right-angle vocabulary, and a few Lithuanian, Georgian and Tamil formulations. A native-speaker linguistic audit across 28 languages has **not** been independently performed.
+- **Limitations:** GitHub connector permits repository inspection and commit/patch checks, but not a local dependency-backed TypeScript compiler/test runner. Focused typechecks and tests **not run locally**; GitHub Actions status must be checked separately.
+- **Agent 1 ownership complete:** Counting (15) + Natural Numbers (27) + Fractions (19) + Geometry (35) = **96/96 Skills**. This branch and Draft PR #97 contain only Agent 1's owned domains and local checkpoint document. The final shared `description.fe` contract/builder migration must happen **only after** all three agents finish and their PRs are coordinated, with explicit user approval for merging.
