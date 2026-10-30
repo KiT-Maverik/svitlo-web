@@ -8,7 +8,7 @@ Locale roster: **28** `LanguageCode` values from `shared/contracts/src/types/lan
 
 - [x] Counting — 15 Skills, 5 Groups (**completed**)
 - [x] Natural Numbers — 27 Skills, 5 Groups (**completed**)
-- [ ] Fractions — 19 Skills, 4 Groups
+- [x] Fractions — 19 Skills, 4 Groups (**completed**)
 - [ ] Arithmetic — 79 Skills, 5 Groups
 - [ ] Algebra — 17 Skills, 5 Groups
 - [ ] Geometry — 35 Skills, 10 Groups
@@ -182,3 +182,15 @@ Every English frontend description below was authored first against the existing
 | `arithmetic/skills/subtractLikeDenominators.data.ts` | Subtract fractions with the same bottom number by subtracting their top numbers. You remove parts without changing their size. |
 
 **Scope:** 19 Skills, 4 Groups, 1 Domain (24 entities, 672 strings at 28 languages). Mathematical checks: same whole and equal-sized parts; larger denominators make smaller parts with numerator held positive; 1/n of a quantity may be nonintegral; denominators must be positive for the comparisons here; like-denominator fraction arithmetic remains valid beyond one whole.
+
+## Fractions completion checkpoint (2026-10-30)
+
+- **Scope completed:** 19/19 Skills, 4/4 Groups, and 1/1 Domain = **24/24 entities**.
+- **Localization:** each entity has exactly 28 genuine, nonempty `description.fe` values using current `LanguageCode` keys. Totals: **532 Skill + 112 Group + 28 Domain = 672 frontend descriptions**.
+- **English-first:** all 24 English drafts were recorded in the preceding review table before translating. Every committed `fe.en` exactly matches its reviewed draft.
+- **Commits:** `6c32e0b` English drafts; `b1cd657` portions; `82b61bf` comparison; `1d41203` arithmetic; `6b425bd` representation (part 1); `753b303` representation (part 2); `af05141` representation (part 3); `bbd48fb` Domain; `4d1560e` proofreading; then this checkpoint.
+- **Verified structural invariants:** 24/24 source patches preserve the original `description.methodological` verbatim. No existing UUIDs, IDs, names, membership, exports, or staged taxonomy Markdown were changed. No missing/duplicate/blank language keys, English copy used as a non-English fallback, or unreviewed English frontend draft mismatches were detected. Static patch validation passed.
+- **Pedagogical distinctions checked:** fractions refer to a specified same whole; equal parts and positive denominators matter; numerators count parts while denominators give the partition; `1/n` of a quantity can be non-integral; comparisons hold the whole and the relevant numerator/denominator fixed; equivalent representations preserve value; fractions can exceed one; arithmetic on like denominators retains the denominator even if a result exceeds one.
+- **Proofreading:** corrected identifiable Polish, Tamil, Telugu, Indonesian, Hebrew, Latvian, and Korean copy issues while preserving the English source. No independent native-speaker review was available; this is editorial authoring and static verification, not linguistic certification.
+- **Execution limits:** GitHub connector supports file and patch validation, not local npm/TypeScript execution. Focused tests and typechecks **not run**; GitHub Actions status must be inspected separately and cannot be presumed passing.
+- **Next Agent 1 domain:** Geometry (35 Skills, 10 Groups). The final shared `description.fe` contract migration remains deferred until all affected entities are populated and reviewed across the three agents.
