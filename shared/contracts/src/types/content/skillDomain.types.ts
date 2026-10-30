@@ -6,6 +6,8 @@ import type { Skill } from './skill.types';
 
 export interface SkillDomain_Config {
   id: SkillGroup['id'];
+  /** Stable English source identifier; optional only for legacy configs not yet migrated. */
+  slug?: string;
   name: Readonly<Record<LanguageCode, string>>;
   /** Canonical English methodological text and optional complete frontend translations. */
   description?: SkillDescription_Config;
