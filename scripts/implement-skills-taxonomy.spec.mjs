@@ -121,6 +121,24 @@ test('update preserves entity UUID, existing locales and unrelated source',()=>w
   assert.equal(source(f,'geometry/geometry.data.ts'),geometry);
 }));
 
+test('a Skill update does not force unchanged ancestor Data to be regenerated',()=>withFixture(f=>{
+  assert.equal(f.run('--apply').status,0);
+  const beforeDomain=source(f,'geometry/geometry.data.ts');
+  const beforeGroup=source(f,'geometry/angles/angles.data.ts');
+  const leaf='geometry/angles/skills/compareAngles.data.ts';
+  const beforeId=uuid(source(f,leaf));
+  f.edit(s=>s.replace('Slug: geometry\nAction: create','Slug: geometry\nAction: skip')
+    .replace('Slug: angles\nAction: create','Slug: angles\nAction: skip')
+    .replace('Slug: compareAngles\nAction: create','Slug: compareAngles\nAction: update')
+    .replace('Definition of Compare Angles.','Updated angle comparison description.'));
+  const r=f.run('--apply');
+  assert.equal(r.status,0,r.stderr);
+  assert.equal(source(f,'geometry/geometry.data.ts'),beforeDomain);
+  assert.equal(source(f,'geometry/angles/angles.data.ts'),beforeGroup);
+  assert.equal(uuid(source(f,leaf)),beforeId);
+  assert.match(source(f,leaf),/Updated angle comparison description/);
+}));
+
 test('missing localization blocks only affected Domain',()=>withFixture(f=>{
   const loc=JSON.parse(fs.readFileSync(f.tFile,'utf8'));
   delete loc['geometry/angles/compareAngles'].fe.uk;
