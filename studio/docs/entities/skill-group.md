@@ -14,7 +14,7 @@ A **SkillGroup** organizes one coherent family of related Skills inside a SkillD
 
 ## EDITORIAL SLUG
 
-Each new-format SkillGroup has one English `Slug: lowerCamelCase` immediately below its heading, unique among Groups of the same Domain. An approved slug remains stable across presentation changes; it is not the Group UUID or a new runtime `SkillGroup_Config` property. Preserve existing Code paths and UUIDs until an explicit migration is approved.
+Each new-format SkillGroup has one English `Slug: lowerCamelCase` immediately below its heading, unique across **every Domain, Group and Skill in the same textbook taxonomy**, even across different Domains and kinds (case-insensitive comparison). An approved slug remains stable across presentation changes; it is distinct from the Group UUID and is stored as `SkillGroup_Config.slug` in newly generated Code (optional only for legacy Code). Preserve existing Code paths and UUIDs until an explicit migration is approved.
 
 ## RUNTIME CONTRACT AND ARTIFACTS
 
