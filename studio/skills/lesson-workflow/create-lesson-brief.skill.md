@@ -1,10 +1,10 @@
 # Create Lesson Brief Skill
 
-**Mandatory first action:** Read [Methodologist Persona](../../personas/methodist.persona.md) **in full** and apply its professional judgment, editorial escalation rules and role boundaries. This Skill is the task-specific workflow for designing the **methodological specification of one independent Lesson**. It does not run Create Curriculum and does not author the Lesson content, Questions, Scene specifications, gamification, or code.
+**Mandatory first action:** Read [Methodologist Persona](../../personas/methodist.persona.md) **in full** and apply its professional judgment, editorial escalation rules and role boundaries. This Skill is the task-specific workflow for designing the **methodological specification of one independent Lesson**. It does not run Create Curriculum and does not author the Screenwriter-owned Lesson Content document, Questions, Scene specifications, gamification, or code.
 
 ## PURPOSE AND ARTIFACT OWNERSHIP
 
-Create or revise an independent **Methodologist Brief** beside the files of one Lesson, following [Lesson Editorial Artifacts](../../docs/architecture/lesson-editorial-document.md). The Brief defines **what the learner should learn, why, for whom, under which prerequisites and constraints**. It is an **editorial-only Markdown file**, not Lesson runtime configuration or content to serialize into a client bundle. The Educational Screenwriter will author a **separate Lesson Content** in its own workflow. Never edit or create a Content with this Skill.
+Create or revise an independent **Methodologist Brief** beside the files of one Lesson, following [Lesson Editorial Artifacts](../../docs/architecture/lesson-editorial-document.md). The Brief defines **what the learner should learn, why, for whom, under which prerequisites and constraints**. It is an **editorial-only Markdown file**, not Lesson runtime configuration or content to serialize into a client bundle. The Educational Screenwriter will author a **separate `content.md`** in its own workflow. Never edit or create that file with this Skill.
 
 A Lesson is **autonomous and Program-neutral**. It can exist before any Curriculum, be reused in multiple Programs/Curricula, and teach one or several independently meaningful Skills. Its storage path, slug, Skills and potential Curriculum usages are separate concerns. No one-Skill-per-Lesson or one-Lesson-per-Skill quota.
 
@@ -30,7 +30,7 @@ If approved Skills, essential audience or substantive intent are missing, or a S
 
 1. **Inspect before authoring.** Resolve the textbook path, existing Lesson directory/Methodologist Brief (if any), generated taxonomy descriptions, approved unpromoted staging entries when applicable, relevant references and actual implementation only if needed to validate the Code link. Preserve all existing unrelated specialist files.
 2. **Establish the pedagogical contract.** Describe the desired conceptual change, observable outcomes, prior knowledge, prerequisite gaps, depth appropriate to the audience, and why the selected Skills belong together. Distinguish teaching a Skill from assessing its mastery.
-3. **Specify the subject matter.** Identify essential facts, concepts, mechanisms, relationships, terminology, valid examples or counterexamples, common misconceptions, and hard exclusions. Include enough accurate substance for the Educational Screenwriter to work without inventing facts or objectives; do not write a scene-by-scene content.
+3. **Specify the subject matter.** Identify essential facts, concepts, mechanisms, relationships, terminology, valid examples or counterexamples, common misconceptions, and hard exclusions. Include enough accurate substance for the Educational Screenwriter to work without inventing facts or objectives; do not write a Section-by-Section instructional plan.
 4. **Design the learning progression conceptually.** Identify conceptual dependencies and the necessary transition from known to new material. Suggest appropriate kinds of understanding and transfer, without prescribing Section count, UI widgets, concrete Questions, scoring, gamification or narrative.
 5. **Check scope and independence.** One Lesson may target multiple Skills when they form a coherent learning objective; if it becomes an entire course, propose a split for editor approval rather than silently splitting, merging, adding or renaming Skills. No grade ceilings or instructional modes may be written back into the taxonomy.
 6. **Honor cross-cutting constraints.** Specify localization-sensitive terms and examples, disability-aware alternatives the experience must enable, offline completeness and low-device pedagogical equivalence. Note factual uncertainty and sources. Do not invent runtime APIs, Note events or assessment guarantees.
@@ -135,13 +135,13 @@ Example: `learningApps/math/Data/Lessons/1/understandingNumbers/methodologist-br
 - Buckets are numbered `1`, `2`, ...; count **Lesson directories**, not files. Put each new Lesson into the **highest-numbered existing bucket** until it holds **100** Lesson directories. When full, create the next bucket and place new Lessons there. No separate counter or registry is required.
 - **Never automatically move, rename, rebalance, renumber or compact existing Lesson directories.** Deletions may leave gaps. Do not fill older buckets merely to remove those gaps. Buckets are technical groupings, not Lesson sequence numbers or runtime IDs.
 - For revisions, find the existing Lesson across all numbered buckets and edit its Brief **in place**, retaining its path and slug. Before creation, check for duplicate slugs across all buckets; re-read the tree if concurrent writers may have changed the last bucket.
-- This Skill does **not** create or modify a Lesson Content, runtime Lesson configuration, assets or Scene specifications. The Brief stays adjacent to them but is editorial-only and **must not be embedded in published Lesson config or client resources**.
+- This Skill does **not** create or modify `content.md`, runtime Lesson configuration, assets or Scene specifications. The Brief stays adjacent to them but is editorial-only and **must not be embedded in published Lesson config or client resources**.
 
 Lessons remain Program-neutral and can be reused from multiple Curricula.
 
 ## DELIVERABLES AND ACCEPTANCE
 
-**Output exactly one authored/updated `methodologist-brief.md`** in the selected Lesson's stable numbered directory, with explicit `Draft` status and a verified Lesson Code link or the specified placeholder. Do not write companion Lesson Briefs, Lesson Contents, runtime configs, or duplicate methodical content. Leave existing specialist and implementation artifacts untouched.
+**Output exactly one authored/updated `methodologist-brief.md`** in the selected Lesson's stable numbered directory, with explicit `Draft` status and a verified Lesson Code link or the specified placeholder. Do not write companion Lesson Briefs, Lesson Content documents, runtime configs, or duplicate methodical content. Leave existing specialist and implementation artifacts untouched.
 
 The accompanying editor-facing handoff (chat/PR, not a second mandatory file) reports:
 - The actual Brief path, Lesson slug, numbered bucket, and create/update operation.
