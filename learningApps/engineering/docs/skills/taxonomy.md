@@ -2893,598 +2893,1058 @@ User-friendly description: Compare positioning technologies by their operating l
 
 ### Manufacturing and Production
 
+Slug: manufacturingAndProduction
+Action: create
+Status: pending
+
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Finished products require suitable forming processes, assembly, tolerances and inspection. Production engineering addresses repeatable manufacture under resource, quality and throughput limits.
+Methodological description: Finished products require suitable forming processes, assembly, tolerances and inspection. Production engineering addresses repeatable manufacture under resource, quality and throughput limits.
+User-friendly description: Explore how materials are shaped, products assembled and production quality controlled.
 
 #### Material Shaping
 
+Slug: materialShaping
+Action: create
+Status: pending
+
 Skills: 5
 
 [Not implemented](#)
 
-A manufacturing process imposes specific restrictions on geometry, material, waste and achievable accuracy.
+Methodological description: A manufacturing process imposes specific restrictions on geometry, material, waste and achievable accuracy.
+User-friendly description: Learn to distinguish methods of creating shapes from raw material.
 
 ##### Machining processes
 
+Slug: machiningProcesses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe controlled material removal by tools, such as drilling, milling or turning, and the consequences for accuracy, tool access and waste.
+Methodological description: Describe controlled material removal by tools, such as drilling, milling or turning, and the consequences for accuracy, tool access and waste.
+User-friendly description: Recognize when material is cut away to make a component.
 
 ##### Forming processes
 
+Slug: formingProcesses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify ways applied force reshapes a material without primarily removing it.
+Methodological description: Identify ways applied force reshapes a material without primarily removing it.
+User-friendly description: Understand how a material is bent or pressed into a new shape.
 
 ##### Molding processes
 
+Slug: moldingProcesses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe shaping polymer or other moldable feedstock in a cavity under suitable temperature or pressure conditions.
+Methodological description: Describe shaping polymer or other moldable feedstock in a cavity under suitable temperature or pressure conditions.
+User-friendly description: Explore how molds define the shape of manufactured parts.
 
 ##### Casting processes
 
+Slug: castingProcesses
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace a poured molten or fluid material through filling a cavity, solidifying and removing a cast product.
+Methodological description: Trace a poured molten or fluid material through filling a cavity, solidifying and removing a cast product.
+User-friendly description: Recognize how liquid material solidifies in a casting form.
 
 ##### Additive manufacturing
 
+Slug: additiveManufacturing
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe incremental material placement or fusion used to produce three-dimensional parts.
+Methodological description: Describe incremental material placement or fusion used to produce three-dimensional parts.
+User-friendly description: Understand how additive processes build components in layers.
 
 #### Assembly and Quality
 
+Slug: assemblyAndQuality
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Making components separately is insufficient when fits, order of installation or verification are wrong.
+Methodological description: Making components separately is insufficient when fits, order of installation or verification are wrong.
+User-friendly description: Discover how assembly plans and checks help produce reliable products.
 
 ##### Plan an assembly sequence
 
+Slug: planAnAssemblySequence
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose an order that provides access and establishes correct component alignment.
+Methodological description: Choose an order that provides access and establishes correct component alignment.
+User-friendly description: Order assembly steps so later operations can be completed correctly.
 
 ##### Interpret manufacturing tolerances
 
+Slug: interpretManufacturingTolerances
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Read permissible dimensions and deviations from a specified manufacturing drawing, deciding whether a measured component meets its stated production limits.
+Methodological description: Read permissible dimensions and deviations from a specified manufacturing drawing, deciding whether a measured component meets its stated production limits.
+User-friendly description: Read permitted dimensional variations in a manufacturing drawing.
 
 ##### Quality inspection
 
+Slug: qualityInspection
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare specified product attributes with actual measurements instead of relying on appearance.
+Methodological description: Compare specified product attributes with actual measurements instead of relying on appearance.
+User-friendly description: Check a produced part against measurable quality requirements.
 
 ##### Diagnose manufacturing defects
 
+Slug: diagnoseManufacturingDefects
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate observed nonconformity to possible processing or assembly causes.
+Methodological description: Relate observed nonconformity to possible processing or assembly causes.
+User-friendly description: Identify likely causes of defects in a manufacturing process.
 
 #### Production Flow
+
+Slug: productionFlow
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Repeated manufacture introduces throughput limits and choices between flexible batches and continuous processes.
+Methodological description: Repeated manufacture introduces throughput limits and choices between flexible batches and continuous processes.
+User-friendly description: Explore how resources and components move through production.
 
 ##### Trace production workflow
 
+Slug: traceProductionWorkflow
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify stations and movement of parts from raw inputs to completed products.
+Methodological description: Identify stations and movement of parts from raw inputs to completed products.
+User-friendly description: Trace a product through successive stages of manufacturing.
 
 ##### Compare batch and continuous production
 
+Slug: compareBatchAndContinuousProduction
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish discrete runs from ongoing manufacture and their changeover implications.
+Methodological description: Distinguish discrete runs from ongoing manufacture and their changeover implications.
+User-friendly description: Compare making products in batches with continuous production.
 
 ##### Automated manufacturing cells
 
+Slug: automatedManufacturingCells
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify handling mechanisms, sensors, drives and safety boundaries in repetitive production.
+Methodological description: Identify handling mechanisms, sensors, drives and safety boundaries in repetitive production.
+User-friendly description: Understand how automated workstations coordinate production steps.
 
 ##### Identify production waste
 
+Slug: identifyProductionWaste
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize avoidable scrap, waiting, transport or rework in a manufacturing process.
+Methodological description: Recognize avoidable scrap, waiting, transport or rework in a manufacturing process.
+User-friendly description: Recognize wasted materials, movement or time in a production process.
 
 ### Process and Agricultural Engineering
+
+Slug: processAndAgriculturalEngineering
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 13
 
 [Not implemented](#)
 
-Some engineered systems transform flowing materials rather than assembling separate mechanical parts. Their design coordinates equipment, transfer rates, process conditions and product quality; agricultural and food technologies adapt these principles to living materials and variable field environments.
+Methodological description: Some engineered systems transform flowing materials rather than assembling separate mechanical parts. Their design coordinates equipment, transfer rates, process conditions and product quality; agricultural and food technologies adapt these principles to living materials and variable field environments.
+User-friendly description: Explore systems that transform materials and support food and agricultural production.
 
 #### Process Architecture
+
+Slug: processArchitecture
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Large production processes connect material inputs, transformations, recirculation and waste streams in a sequence where one operation constrains others.
+Methodological description: Large production processes connect material inputs, transformations, recirculation and waste streams in a sequence where one operation constrains others.
+User-friendly description: Learn how industrial processes organize equipment and material flows.
 
 ##### Interpret a process flow diagram
 
+Slug: interpretAProcessFlowDiagram
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace named material streams and equipment blocks to determine the order and purpose of operations in a production process.
+Methodological description: Trace named material streams and equipment blocks to determine the order and purpose of operations in a production process.
+User-friendly description: Read a diagram showing how a production process connects its equipment.
 
 ##### Trace material balances
 
+Slug: traceMaterialBalances
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate input, accumulation, product and waste flows across a specified process boundary without confusing mass conservation with constant volume.
+Methodological description: Relate input, accumulation, product and waste flows across a specified process boundary without confusing mass conservation with constant volume.
+User-friendly description: Track material entering, leaving and accumulating in a processing system.
 
 ##### Industrial mixing equipment
 
+Slug: industrialMixingEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify agitation or flow arrangements used to distribute multiple ingredients to a required degree of uniformity.
+Methodological description: Identify agitation or flow arrangements used to distribute multiple ingredients to a required degree of uniformity.
+User-friendly description: Understand how industrial equipment mixes substances.
 
 ##### Dosing equipment
 
+Slug: dosingEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe metering mechanisms that deliver a measured quantity or rate of material into a process stream.
+Methodological description: Describe metering mechanisms that deliver a measured quantity or rate of material into a process stream.
+User-friendly description: Recognize systems that measure and deliver controlled quantities.
 
 ##### Identify process bottlenecks
 
+Slug: identifyProcessBottlenecks
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize how limited capacity or interruptions at one processing stage affect the output of a connected plant.
+Methodological description: Recognize how limited capacity or interruptions at one processing stage affect the output of a connected plant.
+User-friendly description: Identify which process stage limits the output of the whole system.
 
 #### Industrial Process Equipment
 
+Slug: industrialProcessEquipment
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Process apparatus can separate mixtures, support controlled chemical transformations or maintain thermal conditions while containing potentially hazardous materials.
+Methodological description: Process apparatus can separate mixtures, support controlled chemical transformations or maintain thermal conditions while containing potentially hazardous materials.
+User-friendly description: Discover equipment used to separate, react, heat and contain process materials.
 
 ##### Industrial separation equipment
 
+Slug: industrialSeparationEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish practical roles for filtration, sedimentation, distillation or membrane systems based on which property enables separation.
+Methodological description: Distinguish practical roles for filtration, sedimentation, distillation or membrane systems based on which property enables separation.
+User-friendly description: Recognize equipment that separates substances by physical properties.
 
 ##### Chemical reactor systems
 
+Slug: chemicalReactorSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify containment, feed, mixing, heat control and product removal functions in a vessel designed for a controlled transformation.
+Methodological description: Identify containment, feed, mixing, heat control and product removal functions in a vessel designed for a controlled transformation.
+User-friendly description: Identify the controlled functions of chemical reaction vessels.
 
 ##### Process heating systems
 
+Slug: processHeatingSystems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace heat delivery and temperature regulation through industrial apparatus rather than treating a heater as an isolated element.
+Methodological description: Trace heat delivery and temperature regulation through industrial apparatus rather than treating a heater as an isolated element.
+User-friendly description: Trace how heating equipment transfers energy to a process stream.
 
 ##### Process containment
 
+Slug: processContainment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate sealed vessels, piping, ventilation and pressure controls to keeping working materials within suitable operating boundaries.
+Methodological description: Relate sealed vessels, piping, ventilation and pressure controls to keeping working materials within suitable operating boundaries.
+User-friendly description: Explain why containers and seals must prevent uncontrolled releases.
 
 #### Food and Agricultural Technology
+
+Slug: foodAndAgriculturalTechnology
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Food and field equipment must handle biological materials with variable properties and constraints involving spoilage, hygiene, water use and environmental conditions.
+Methodological description: Food and field equipment must handle biological materials with variable properties and constraints involving spoilage, hygiene, water use and environmental conditions.
+User-friendly description: Explore machines that store food and support modern agriculture.
 
 ##### Food-preservation equipment
 
+Slug: foodPreservationEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify how refrigeration, dehydration, heating or sealed packaging apparatus supports a specified preservation process.
+Methodological description: Identify how refrigeration, dehydration, heating or sealed packaging apparatus supports a specified preservation process.
+User-friendly description: Recognize equipment that helps keep food safe and slow spoilage.
 
 ##### Fermentation production equipment
 
+Slug: fermentationProductionEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace the functions of a vessel, controlled conditions and material handling in an engineered biological production process.
+Methodological description: Trace the functions of a vessel, controlled conditions and material handling in an engineered biological production process.
+User-friendly description: Understand the controlled equipment used in fermentation production.
 
 ##### Irrigation engineering
 
+Slug: irrigationEngineering
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate water sources, delivery methods and flow control to plant water needs and resource constraints.
+Methodological description: Relate water sources, delivery methods and flow control to plant water needs and resource constraints.
+User-friendly description: Trace how engineered systems deliver water to crops.
 
 ##### Precision agricultural equipment
 
+Slug: precisionAgriculturalEquipment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the sensing, positioning and variable-delivery functions of machines that adapt work to field conditions.
+Methodological description: Identify the sensing, positioning and variable-delivery functions of machines that adapt work to field conditions.
+User-friendly description: Explore machines that adjust agricultural operations using measured field conditions.
 
 ### Human-Centered Engineering and Ergonomics
+
+Slug: humanCenteredEngineeringAndErgonomics
+Action: create
+Status: pending
 
 Groups: 4 · Skills: 15
 
 [Not implemented](#)
 
-Physical controls and built environments must suit real human capabilities. Engineering UX concerns shape, reach, grip, affordance, safe handling and access; digital navigation and software feedback are separate Informatics competencies.
+Methodological description: Physical controls and built environments must suit real human capabilities. Engineering UX concerns shape, reach, grip, affordance, safe handling and access; digital navigation and software feedback are separate Informatics competencies.
+User-friendly description: Discover how physical products and spaces can work for people with different needs.
 
 #### User Needs
 
+Slug: userNeeds
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Design briefs must address users with differing abilities and usage contexts rather than projecting the designer's own preferences.
+Methodological description: Design briefs must address users with differing abilities and usage contexts rather than projecting the designer's own preferences.
+User-friendly description: Learn to investigate the practical activities and limitations of product users.
 
 ##### Identify physical user scenarios
 
+Slug: identifyPhysicalUserScenarios
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Specify who uses an object, what task they perform and relevant conditions.
+Methodological description: Specify who uses an object, what task they perform and relevant conditions.
+User-friendly description: Describe the physical actions people need to perform with a product.
 
 ##### Identify accessibility barriers
 
+Slug: identifyAccessibilityBarriers
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize force, reach, mobility, hearing, sight or dexterity obstacles introduced by a design.
+Methodological description: Recognize force, reach, mobility, hearing, sight or dexterity obstacles introduced by a design.
+User-friendly description: Recognize obstacles that prevent people with different abilities from using a space.
 
 ##### Observe physical usability problems
 
+Slug: observePhysicalUsabilityProblems
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish witnessed hesitation or failed handling from assumptions about users.
+Methodological description: Distinguish witnessed hesitation or failed handling from assumptions about users.
+User-friendly description: Observe where someone struggles with a product's physical operation.
 
 ##### Translate use observations into requirements
 
+Slug: translateUseObservationsIntoRequirements
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Define a physical success condition based on an observed problem.
+Methodological description: Define a physical success condition based on an observed problem.
+User-friendly description: Convert user observations into specific technical requirements.
 
 #### Product Ergonomics
 
+Slug: productErgonomics
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-Geometry, loads and posture influence whether a device can be operated comfortably and dependably.
+Methodological description: Geometry, loads and posture influence whether a device can be operated comfortably and dependably.
+User-friendly description: Explore how body dimensions, grip and posture affect product usability.
 
 ##### Evaluate control reachability
 
+Slug: evaluateControlReachability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Check access to buttons, handles or levers from intended operating positions.
+Methodological description: Check access to buttons, handles or levers from intended operating positions.
+User-friendly description: Check whether people can comfortably reach a product's controls.
 
 ##### Evaluate grip and handling
 
+Slug: evaluateGripAndHandling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate handle dimensions, texture and operating force to controlled manipulation.
+Methodological description: Relate handle dimensions, texture and operating force to controlled manipulation.
+User-friendly description: Evaluate how well an object can be held and manipulated.
 
 ##### Evaluate operating posture
 
+Slug: evaluateOperatingPosture
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify strain caused by working height, repeated movement or sustained position.
+Methodological description: Identify strain caused by working height, repeated movement or sustained position.
+User-friendly description: Recognize postures that make a task uncomfortable or difficult.
 
 ##### Adapt product dimensions
 
+Slug: adaptProductDimensions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Choose adjustable or alternative dimensions to accommodate different users.
+Methodological description: Choose adjustable or alternative dimensions to accommodate different users.
+User-friendly description: Adjust product sizes to suit different bodies and activities.
 
 #### Physical Interaction
+
+Slug: physicalInteraction
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Users should perceive the purpose of controls and the effects of their actions through appropriately designed physical cues.
+Methodological description: Users should perceive the purpose of controls and the effects of their actions through appropriately designed physical cues.
+User-friendly description: Learn to improve how people discover and operate physical controls.
 
 ##### Evaluate physical control discoverability
 
+Slug: evaluatePhysicalControlDiscoverability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Judge whether location, form and tactile cues make a function apparent.
+Methodological description: Judge whether location, form and tactile cues make a function apparent.
+User-friendly description: Recognize whether a person can find the right physical control.
 
 ##### Evaluate physical feedback
 
+Slug: evaluatePhysicalFeedback
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Determine whether resistance, movement or another signal communicates that an action occurred.
+Methodological description: Determine whether resistance, movement or another signal communicates that an action occurred.
+User-friendly description: Check whether a product clearly communicates what its controls have done.
 
 ##### Design error-resistant controls
 
+Slug: designErrorResistantControls
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Reduce unintended activation or confusion through control geometry and spacing.
+Methodological description: Reduce unintended activation or confusion through control geometry and spacing.
+User-friendly description: Design controls that reduce predictable mistakes.
 
 ##### Test physical product usability
 
+Slug: testPhysicalProductUsability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Observe representative tasks and record whether operation meets defined requirements.
+Methodological description: Observe representative tasks and record whether operation meets defined requirements.
+User-friendly description: Observe people completing real tasks with a physical prototype.
 
 #### Accessible Environments
+
+Slug: accessibleEnvironments
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Inclusive infrastructure requires usable routes and fixtures as well as accessible individual devices.
+Methodological description: Inclusive infrastructure requires usable routes and fixtures as well as accessible individual devices.
+User-friendly description: Explore how environments can support accessible movement and use.
 
 ##### Evaluate continuous access routes
 
+Slug: evaluateContinuousAccessRoutes
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess an existing connected journey through buildings and public spaces, testing whether doors, surfaces, widths and level changes preserve access. This is different from designing a new internal circulation layout.
+Methodological description: Assess an existing connected journey through buildings and public spaces, testing whether doors, surfaces, widths and level changes preserve access. This is different from designing a new internal circulation layout.
+User-friendly description: Evaluate whether an entire route remains accessible without barriers.
 
 ##### Accessible fixture design
 
+Slug: accessibleFixtureDesign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess fixtures for reachable placement, operating force, usable grip and adequate clearance across varied physical abilities.
+Methodological description: Assess fixtures for reachable placement, operating force, usable grip and adequate clearance across varied physical abilities.
+User-friendly description: Plan fittings and fixtures usable by people with different abilities.
 
 ##### Compare inclusive design solutions
 
+Slug: compareInclusiveDesignSolutions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider who benefits or remains excluded when choosing a physical design alternative.
+Methodological description: Consider who benefits or remains excluded when choosing a physical design alternative.
+User-friendly description: Compare accessibility solutions by the needs they accommodate.
 
 ### Biomimicry
+
+Slug: biomimicry
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 8
 
 [Not implemented](#)
 
-Nature-inspired engineering abstracts useful functional strategies from living systems and subjects technical adaptations to testing. Evolution is not intentional design, and merely studying an organism is not itself an engineering competency.
+Methodological description: Nature-inspired engineering abstracts useful functional strategies from living systems and subjects technical adaptations to testing. Evolution is not intentional design, and merely studying an organism is not itself an engineering competency.
+User-friendly description: Explore how nature's working strategies inspire useful technical designs.
 
 #### Nature-Inspired Design
 
+Slug: natureInspiredDesign
+Action: create
+Status: pending
+
 Skills: 4
 
 [Not implemented](#)
 
-A valid biological analogy extracts a function and tests whether it can work with different materials, geometry and scale.
+Methodological description: A valid biological analogy extracts a function and tests whether it can work with different materials, geometry and scale.
+User-friendly description: Learn to translate biological functions into engineering principles.
 
 ##### Identify functional biological strategies
 
+Slug: identifyFunctionalBiologicalStrategies
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Describe the useful effect of a natural structure without portraying evolution as intentional invention.
+Methodological description: Describe the useful effect of a natural structure without portraying evolution as intentional invention.
+User-friendly description: Identify how a living organism solves a functional problem.
 
 ##### Abstract a biological principle
 
+Slug: abstractABiologicalPrinciple
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Separate a transferable mechanism from the organism's particular form or habitat.
+Methodological description: Separate a transferable mechanism from the organism's particular form or habitat.
+User-friendly description: Describe a biological mechanism without copying irrelevant natural details.
 
 ##### Apply a natural principle to a design
 
+Slug: applyANaturalPrincipleToADesign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Propose a technical arrangement based on an identified biological mechanism.
+Methodological description: Propose a technical arrangement based on an identified biological mechanism.
+User-friendly description: Use a principle observed in nature to develop a technical solution.
 
 ##### Evaluate biomimetic performance
 
+Slug: evaluateBiomimeticPerformance
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Compare a resulting prototype with functional criteria and acknowledge limitations of the analogy.
+Methodological description: Compare a resulting prototype with functional criteria and acknowledge limitations of the analogy.
+User-friendly description: Test whether a nature-inspired design really meets its performance goal.
 
 #### Bio-Inspired Technologies
+
+Slug: bioInspiredTechnologies
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Distinct examples show recurring design strategies, not a separate Skill for every organism.
+Methodological description: Distinct examples show recurring design strategies, not a separate Skill for every organism.
+User-friendly description: Discover devices and materials inspired by biological forms and surfaces.
 
 ##### Bio-inspired attachment
 
+Slug: bioInspiredAttachment
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate hooks or structured surfaces to engineered removable fasteners or adhesion.
+Methodological description: Relate hooks or structured surfaces to engineered removable fasteners or adhesion.
+User-friendly description: Explore attachment mechanisms inspired by organisms.
 
 ##### Self-cleaning surfaces
 
+Slug: selfCleaningSurfaces
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Connect surface texture and wetting behavior with liquid and dirt removal.
+Methodological description: Connect surface texture and wetting behavior with liquid and dirt removal.
+User-friendly description: Understand how natural surface structures inspire self-cleaning materials.
 
 ##### Biomimetic streamlining
 
+Slug: biomimeticStreamlining
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate a biological shape to a proposed drag-reducing vehicle design requiring testing.
+Methodological description: Relate a biological shape to a proposed drag-reducing vehicle design requiring testing.
+User-friendly description: Recognize how biological shapes can reduce drag in technical designs.
 
 ##### Lightweight bio-inspired structures
 
+Slug: lightweightBioInspiredStructures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify shells, cellular patterns or branching that motivate efficient material placement.
+Methodological description: Identify shells, cellular patterns or branching that motivate efficient material placement.
+User-friendly description: Explore how natural structures inspire light yet strong engineered forms.
 
 ### Biomedical and Assistive Engineering
+
+Slug: biomedicalAndAssistiveEngineering
+Action: create
+Status: pending
 
 Groups: 2 · Skills: 6
 
 [Not implemented](#)
 
-Devices supporting, measuring or interacting with human bodies must satisfy suitable physical interfaces, reliability and safe-use constraints. Clinical diagnosis and the biology of the human body remain outside this engineering domain.
+Methodological description: Devices supporting, measuring or interacting with human bodies must satisfy suitable physical interfaces, reliability and safe-use constraints. Clinical diagnosis and the biology of the human body remain outside this engineering domain.
+User-friendly description: Explore technical products that support health, mobility and medical measurement.
 
 #### Assistive and Medical Products
 
+Slug: assistiveAndMedicalProducts
+Action: create
+Status: pending
+
 Skills: 3
 
 [Not implemented](#)
 
-Devices that contact or support human bodies require function, fit and safety considerations beyond an ordinary consumer gadget.
+Methodological description: Devices that contact or support human bodies require function, fit and safety considerations beyond an ordinary consumer gadget.
+User-friendly description: Discover the engineering functions of assistive and medical devices.
 
 ##### Prosthetic device functions
 
+Slug: prostheticDeviceFunctions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify attachment, structural support, alignment and intended functional replacement.
+Methodological description: Identify attachment, structural support, alignment and intended functional replacement.
+User-friendly description: Explain how a prosthetic device can replace or support a physical function.
 
 ##### Hearing-assistance devices
 
+Slug: hearingAssistanceDevices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Trace sound pickup, processing, amplification or other output and fitting.
+Methodological description: Trace sound pickup, processing, amplification or other output and fitting.
+User-friendly description: Recognize how hearing-assistance equipment processes or delivers sound.
 
 ##### Evaluate medical-device design constraints
 
+Slug: evaluateMedicalDeviceDesignConstraints
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize hygiene, safe contact, reliable operation, usability and failure consequences.
+Methodological description: Recognize hygiene, safe contact, reliable operation, usability and failure consequences.
+User-friendly description: Identify safety, reliability and user requirements for medical equipment.
 
 #### Medical Measurement Devices
+
+Slug: medicalMeasurementDevices
+Action: create
+Status: pending
 
 Skills: 3
 
 [Not implemented](#)
 
-Biomedical devices measure physiological or physical signals with specialized coupling, safety and reliability concerns distinct from ordinary industrial sensing.
+Methodological description: Biomedical devices measure physiological or physical signals with specialized coupling, safety and reliability concerns distinct from ordinary industrial sensing.
+User-friendly description: Learn how devices measure and image physiological conditions.
 
 ##### Physiological monitoring devices
 
+Slug: physiologicalMonitoringDevices
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify the sensing, acquisition and physical protection subsystems used to measure temperature, electrical activity or oxygen saturation without inferring clinical diagnoses.
+Methodological description: Identify the sensing, acquisition and physical protection subsystems used to measure temperature, electrical activity or oxygen saturation without inferring clinical diagnoses.
+User-friendly description: Trace how monitoring equipment converts physical signals into measurements.
 
 ##### Diagnostic imaging hardware
 
+Slug: diagnosticImagingHardware
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish sources, detectors, positioning and associated hardware in ultrasound, radiographic or magnetic-resonance equipment without teaching clinical image interpretation.
+Methodological description: Distinguish sources, detectors, positioning and associated hardware in ultrasound, radiographic or magnetic-resonance equipment without teaching clinical image interpretation.
+User-friendly description: Explore hardware used to create images for medical investigation.
 
 ##### Biomedical measurement reliability
 
+Slug: biomedicalMeasurementReliability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Assess calibration, interference, patient-contact conditions and signal reliability limits relevant to measurements by a medical device.
+Methodological description: Assess calibration, interference, patient-contact conditions and signal reliability limits relevant to measurements by a medical device.
+User-friendly description: Recognize the limits and uncertainty of biomedical measurements.
 
 ### Safety, Sustainability, and Responsibility
+
+Slug: safetySustainabilityAndResponsibility
+Action: create
+Status: pending
 
 Groups: 3 · Skills: 14
 
 [Not implemented](#)
 
-Engineering decisions affect people, resources and ecosystems throughout a product's service life. This domain examines foreseeable hazards, life-cycle choices and accountable technical judgment without turning an untested model into a safety certification.
+Methodological description: Engineering decisions affect people, resources and ecosystems throughout a product's service life. This domain examines foreseeable hazards, life-cycle choices and accountable technical judgment without turning an untested model into a safety certification.
+User-friendly description: Explore how engineering choices affect safety, resources and society over time.
 
 #### Life Cycle and Resources
+
+Slug: lifeCycleAndResources
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Manufacture, operation, repair and disposal can create different impacts; improving one stage does not prove that the whole design is better.
+Methodological description: Manufacture, operation, repair and disposal can create different impacts; improving one stage does not prove that the whole design is better.
+User-friendly description: Discover how products consume resources from manufacture to disposal.
 
 ##### Trace a product life cycle
 
+Slug: traceAProductLifeCycle
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify material, energy and waste flows from sourcing through use to end of service.
+Methodological description: Identify material, energy and waste flows from sourcing through use to end of service.
+User-friendly description: Follow a product from raw materials through use to end of life.
 
 ##### Evaluate repairability
 
+Slug: evaluateRepairability
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize the importance of accessible parts, reversible fasteners and replacement options.
+Methodological description: Recognize the importance of accessible parts, reversible fasteners and replacement options.
+User-friendly description: Evaluate how easily a product can be serviced or repaired.
 
 ##### Design products for reuse
 
+Slug: designProductsForReuse
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Identify durable, cleanable or interchangeable features that make repeated service or a second use feasible.
+Methodological description: Identify durable, cleanable or interchangeable features that make repeated service or a second use feasible.
+User-friendly description: Consider design choices that allow a product to be used again.
 
 ##### Design products for material recycling
 
+Slug: designProductsForMaterialRecycling
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate material identification, compatibility and separable assemblies to viable recovery of constituent materials.
+Methodological description: Relate material identification, compatibility and separable assemblies to viable recovery of constituent materials.
+User-friendly description: Plan for recovering materials when a product reaches the end of use.
 
 ##### Compare environmental trade-offs
 
+Slug: compareEnvironmentalTradeOffs
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Judge alternatives over a stated service life rather than a single operational measure.
+Methodological description: Judge alternatives over a stated service life rather than a single operational measure.
+User-friendly description: Compare environmental benefits and harms of alternative technical designs.
 
 #### Risk and Protection
+
+Slug: riskAndProtection
+Action: create
+Status: pending
 
 Skills: 4
 
 [Not implemented](#)
 
-Hazard control should be integrated into the physical design and take precedence over simple warnings.
+Methodological description: Hazard control should be integrated into the physical design and take precedence over simple warnings.
+User-friendly description: Learn to identify engineering hazards and reduce risks.
 
 ##### Identify engineering hazards
 
+Slug: identifyEngineeringHazards
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Recognize hazardous motion, temperature, electricity, pressure or stored energy in intended use.
+Methodological description: Recognize hazardous motion, temperature, electricity, pressure or stored energy in intended use.
+User-friendly description: Identify physical dangers associated with a technical design.
 
 ##### Evaluate technical risk
 
+Slug: evaluateTechnicalRisk
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider plausible consequence and occurrence in an explicitly described operating situation.
+Methodological description: Consider plausible consequence and occurrence in an explicitly described operating situation.
+User-friendly description: Assess how likely a hazard is and how serious its consequences may be.
 
 ##### Hazard-control measures
 
+Slug: hazardControlMeasures
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish elimination, guarding, isolation, automatic protection and warnings by the actual risks each addresses. Selecting a particular safeguard for an exercise is a task variant.
+Methodological description: Distinguish elimination, guarding, isolation, automatic protection and warnings by the actual risks each addresses. Selecting a particular safeguard for an exercise is a task variant.
+User-friendly description: Choose technical measures that reduce exposure to hazards.
 
 ##### Safety margins
 
+Slug: safetyMargins
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Relate uncertainty in loading, materials and use conditions to extra design capacity.
+Methodological description: Relate uncertainty in loading, materials and use conditions to extra design capacity.
+User-friendly description: Understand why safety factors account for uncertainty and unexpected loads.
 
 #### Ethics and Public Effects
+
+Slug: ethicsAndPublicEffects
+Action: create
+Status: pending
 
 Skills: 5
 
 [Not implemented](#)
 
-Technical solutions create benefits and burdens for users, maintainers, neighbors and communities; limitations must be disclosed.
+Methodological description: Technical solutions create benefits and burdens for users, maintainers, neighbors and communities; limitations must be disclosed.
+User-friendly description: Explore responsibility toward everyone affected by engineered products.
 
 ##### Identify affected stakeholders
 
+Slug: identifyAffectedStakeholders
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Distinguish users, workers, maintainers and others exposed to a product's consequences.
+Methodological description: Distinguish users, workers, maintainers and others exposed to a product's consequences.
+User-friendly description: Identify the groups who may benefit from or be harmed by a design.
 
 ##### Evaluate social impacts of a design
 
+Slug: evaluateSocialImpactsOfADesign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider foreseeable distribution of access, inconvenience, displacement or other effects on people beyond direct purchasers.
+Methodological description: Consider foreseeable distribution of access, inconvenience, displacement or other effects on people beyond direct purchasers.
+User-friendly description: Evaluate how a technical product may affect people's lives and opportunities.
 
 ##### Evaluate environmental impacts of a design
 
+Slug: evaluateEnvironmentalImpactsOfADesign
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Consider pollution, habitat disruption and resource burdens beyond the immediate operation of the intended product.
+Methodological description: Consider pollution, habitat disruption and resource burdens beyond the immediate operation of the intended product.
+User-friendly description: Examine a design's possible effects on the surrounding environment.
 
 ##### Communicate design limitations
 
+Slug: communicateDesignLimitations
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-State assumptions and unverified safety claims instead of generalizing from limited tests.
+Methodological description: State assumptions and unverified safety claims instead of generalizing from limited tests.
+User-friendly description: State what a technical solution cannot safely or reliably do.
 
 ##### Justify responsible design decisions
 
+Slug: justifyResponsibleDesignDecisions
+Action: create
+Status: pending
+
 [Not implemented](#)
 
-Explain how safety, access, resource use and cost influenced a choice.
+Methodological description: Explain how safety, access, resource use and cost influenced a choice.
+User-friendly description: Justify engineering choices using evidence, safety and social consequences.
