@@ -126,7 +126,7 @@ Program може декларативно описувати правила: «�
 
 **Не копіювати сюди повну специфікацію.** Для наступного агента канонічні джерела:
 
-- [Skill entity rules](./docs/entities/skill.md) та [Implement Skill Code](./skills/implement-skill-code.skill.md) — правила сутностей, UUID та файловий контракт;
+- [Skill entity rules](./docs/entities/skill.md) та [Implement Skill Code](./skills/skill-taxonomy-workflow/implement-skill-code.skill.md) — правила сутностей, UUID та файловий контракт;
 - [Approved Mathematics Skills Taxonomy](../learningApps/math/docs/skills/taxonomy.md) — актуальна педагогічна ієрархія, змістовні описи та перевірені посилання на реалізації; сумнівні нові зміни виносити на окреме редакційне погодження.
 
 ## 6. Questions, Flashcards, Practice і генерація задач
@@ -178,7 +178,7 @@ Program може декларативно описувати правила: «�
 2. Поточний Lesson має **array секцій**, хоча обговорювали об’єкт зі стабільними ключами. Не міняти публічний API потай під час іншого рефакторингу.
 3. **Слоти та події — два різні механізми.** Статична вставка не замінює реакцію на `question.answered`/retry; реакція не дає права підмінювати оцінювання.
 4. **Педагогічний прогрес ≠ сюжетний прогрес ≠ оцінка тесту ≠ Skill mastery.**
-5. Зміни в **Skills Taxonomy** мають проходити за [Skill entity rules](./docs/entities/skill.md) та [Create Skills Taxonomy Skill](./skills/create-skills-taxonomy.skill.md), а реальну завершеність перевіряти за Code-посиланнями в [таксономії](../learningApps/math/docs/skills/taxonomy.md) та фактичними TypeScript-файлами. UUID-посилання не є готовими Skill-файлами.
+5. Зміни в **Skills Taxonomy** мають проходити за [Skill entity rules](./docs/entities/skill.md) та [Create Skills Taxonomy Skill](./skills/skill-taxonomy-workflow/create-skills-taxonomy.skill.md), а реальну завершеність перевіряти за Code-посиланнями в [таксономії](../learningApps/math/docs/skills/taxonomy.md) та фактичними TypeScript-файлами. UUID-посилання не є готовими Skill-файлами.
 6. **Сумнівні Skill** (об’єднання кількох компетенцій, дублікати, невизначена семантика) — винести на рев’ю, не переписувати тихо.
 7. При продовженні роботи спочатку подивитися **актуальний HEAD і CI**; назви PR/демо з попередніх бесід не гарантують поточного стану гілки.
 
@@ -194,7 +194,7 @@ Program може декларативно описувати правила: «�
 
 ## 12. Орієнтири в репозиторії
 
-- [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — актуальні правила сутностей; [Implement Skill Code](./skills/implement-skill-code.skill.md) — UUID, локалізація та рівневі експорти.
+- [Skill](./docs/entities/skill.md), [SkillGroup](./docs/entities/skill-group.md), [SkillDomain](./docs/entities/skill-domain.md) — актуальні правила сутностей; [Implement Skill Code](./skills/skill-taxonomy-workflow/implement-skill-code.skill.md) — UUID, локалізація та рівневі експорти.
 - [Approved Mathematics Skills Taxonomy](../learningApps/math/docs/skills/taxonomy.md) — чинна методична структура й описи; runtime UUID знаходяться в `*.ids.ts`, реалізації — у `*.data.ts`.
 - [Lesson types](../shared/engine/src/types/content/lesson.types.ts) — **поточні** контракти Lesson та LessonState.
 - [Lesson assembler](../learningApps/playground/src/components/pages/Lesson/Lesson.tsx) — поточна data-driven реалізація.

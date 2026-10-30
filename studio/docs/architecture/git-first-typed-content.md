@@ -8,6 +8,8 @@ The canonical **authored educational content** lives in a Git repository: lesson
 
 Git is **not** the store for learner answers, private progress, account data, runtime mastery, sync queues or personal Notes collections. These are operational/learner data, with appropriate local/remote stores and privacy controls.
 
+**For the Skills Taxonomy specifically:** the [Skill Taxonomy Workflow](../../skills/skill-taxonomy-workflow/README.md) promotes reviewed English methodological descriptions from editorial Markdown into strictly typed Code (with optional complete all-locale frontend copy). Before promotion Markdown is authoritative for pending items; after promotion Code is authoritative for those items. Generated Markdown is a derived view, not a parallel definition.
+
 **Derived runtime artifacts** (compiled bundles, indexes, generated views, manifests, delivery packages and, later, possibly a Notes-derived study sheet) should be **reproducible from their canonical source inputs**, rather than manually curated parallel truths. Do not claim an end-to-end content generator or renderer already exists just because a convention is specified.
 
 ## Authoring source conventions
