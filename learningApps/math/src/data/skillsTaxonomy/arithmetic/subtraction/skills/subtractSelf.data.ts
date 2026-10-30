@@ -33,4 +33,5 @@ export const subtractSelf_Skill_Data = buildSkillConfig({
     pl: "Odejmowanie — Ta sama liczba",
     uk: "Віднімання — Те саме число",
   },
+  description: { methodological: "For every number a, a - a = 0: removing an amount equal to the initial quantity leaves no remainder. This is consistent with the relationship between a number and its additive inverse." },
 });

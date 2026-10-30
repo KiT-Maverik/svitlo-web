@@ -33,4 +33,5 @@ export const carryErrorDetection_Skill_Data = buildSkillConfig({
     pl: "Dodawanie — Przeniesienie · Wykrywanie błędów",
     uk: "Додавання — Перенесення розряду · Виявлення помилок",
   },
+  description: { methodological: "In 48 + 37, omitting the carry from 8 + 7 produces an incorrect tens place. The diagnostic competency concerns the relationship between regrouping and value, not only this particular example." },
 });
