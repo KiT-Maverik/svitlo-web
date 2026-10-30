@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { mass_Skills_Ids } from './index.ids';
 
 export const weighObject_Skill_Data = buildSkillConfig({
-  id: mass_Skills_Ids.weighObject,
+  id: '401849ab-d37f-49a3-9179-da85f6704707',
   name: {
     en: "Reading a scale and recording mass with units",
     lt: "Svarstyklių rodmenų skaitymas ir masės užrašymas vienetais",

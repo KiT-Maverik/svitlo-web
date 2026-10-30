@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { mass_Skills_Ids } from './index.ids';
 
 export const compareMass_Skill_Data = buildSkillConfig({
-  id: mass_Skills_Ids.compareMass,
+  id: 'c2be8e28-ceb6-45c8-8c45-e8c39181c044',
   name: {
     en: "Comparing masses using a balance",
     lt: "Masių palyginimas svarstyklėmis",

@@ -1,8 +1,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
-import { mass_Skills_Ids } from './index.ids';
 
 export const centnerKilogram_Skill_Data = buildSkillConfig({
-  id: mass_Skills_Ids.centnerKilogram,
+  id: '3eb50b43-90c3-4a4a-ae8b-1cfa460fab1d',
   name: {
     en: "Using centners and kilograms in problems",
     lt: "Centnerių ir kilogramų naudojimas uždaviniuose",
