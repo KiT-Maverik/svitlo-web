@@ -33,4 +33,5 @@ export const zero_Skill_Data = buildSkillConfig({
     pl: "Rozumienie zera jako braku elementów",
     uk: "Розуміння нуля як порожньої кількості",
   },
+  description: { methodological: "Zero is the cardinality of a set without elements; a container with nothing inside is not itself absent. Zero is a number that participates in the number sequence and arithmetic." },
 });
