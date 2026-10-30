@@ -33,4 +33,5 @@ export const weighObject_Skill_Data = buildSkillConfig({
     "pl": "Odczytywanie wagi i zapisywanie masy z jednostką",
     "uk": "Зчитування показів вагів і запис маси з одиницею"
   },
+  description: { methodological: "A mass reading is meaningful only with its unit and the instrument's scale. Interpret divisions, graduation intervals, and the physical quantity being measured." },
 });

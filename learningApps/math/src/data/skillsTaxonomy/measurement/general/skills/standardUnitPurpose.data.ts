@@ -33,4 +33,5 @@ export const standardUnitPurpose_Skill_Data = buildSkillConfig({
     "pl": "Wyjaśnianie potrzeby wspólnych jednostek miary",
     "uk": "Пояснення потреби в узгоджених одиницях вимірювання"
   },
+  description: { methodological: "Measurements can be compared meaningfully only with their quantities and units. Equivalent units require conversion to a common scale; equal numerals in different units can represent different magnitudes." },
 });
