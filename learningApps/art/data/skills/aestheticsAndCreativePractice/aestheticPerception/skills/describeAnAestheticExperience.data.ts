@@ -30,6 +30,6 @@ export const describeAnAestheticExperience_Skill_Data = buildSkillConfig({
           "et": "Kirjelda, milliseid tundeid kunstiteos sinus tekitab, eristades tundeid tähelepanekutest.",
           "be": "Апішыце, якія пачуцці выклікае твор, адрозніваючы эмоцыі ад назіранняў.",
           "ka": "აღწერეთ, რა განცდებს იწვევს ნამუშევარი თქვენში და განასხვავეთ გრძნობები დაკვირვებებისგან.",
-          "kk": "Írja le, milyen érzéseket kelt Önben egy műalkotás, megkülönböztetve az érzéseket a megfigyelésektől。"
+          "kk": "Өнер туындысы тудыратын сезімдерді бақылаулардан ажыратып, сипаттаңыз."
     } },
 });
