@@ -64,7 +64,7 @@ export const blockAStageScene_Skill_Data = buildSkillConfig({
   "et": "Kavanda näitlejate asukohad ja liikumine, et stseen oleks publikule arusaadav.",
   "be": "Сплануйце размяшчэнне і рух акцёраў, каб сцэна была зразумелай гледачам.",
   "ka": "დაგეგმეთ მსახიობების განლაგება და მოძრაობა, რათა სცენა მაყურებლისთვის გასაგები იყოს.",
-  "kk": "Ж көрерменге көрініс анық болуы үшін актерлердің орындары мен қозғалысын жоспарлаңыз.",
+  "kk": "Көрерменге көрініс анық болуы үшін актерлердің орындары мен қозғалысын жоспарлаңыз.",
   "qm": "Seyircige sahneniñ añlaşılır olması içün oyuncılarnıñ turuş yerlerini ve areketlerini planlañız."
 },
   },
