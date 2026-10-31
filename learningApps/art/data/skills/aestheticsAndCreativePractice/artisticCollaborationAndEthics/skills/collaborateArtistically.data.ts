@@ -30,6 +30,6 @@ export const collaborateArtistically_Skill_Data = buildSkillConfig({
           "et": "Ühenda eri inimeste loominguline panus ühiseks kunstiteoseks.",
           "be": "Аб’ядноўвайце творчы ўклад розных людзей у супольны мастацкі твор.",
           "ka": "გააერთიანეთ სხვადასხვა ადამიანის შემოქმედებითი წვლილი ერთობლივ ნამუშევარში.",
-          "kk": "Egyesítse különböző emberek kreatív hozzájárulását közös műalkotásban。"
+          "kk": "Әртүрлі адамдардың шығармашылық үлестерін біріктіріп, ортақ өнер туындысын жасаңыз."
     } },
 });
