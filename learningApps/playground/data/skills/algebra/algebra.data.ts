@@ -4,6 +4,8 @@ import { equalities_SkillGroup_Data } from './equalities/equalities.data';
 import { patterns_SkillGroup_Data } from './patterns/patterns.data';
 import { unknowns_SkillGroup_Data } from './unknowns/unknowns.data';
 
+import { expressions_SkillGroup_Data } from './expressions/expressions.data';
+
 export const algebra_SkillDomain_Data = buildSkillDomainConfig({
   id: '5b1cb581-be28-4de4-a854-b32fbfea95d7',
   name: {
@@ -37,6 +39,7 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Алгебра",
   },
   groupIds: {
+    expressions: expressions_SkillGroup_Data.id,
     equalities: equalities_SkillGroup_Data.id,
     patterns: patterns_SkillGroup_Data.id,
     unknowns: unknowns_SkillGroup_Data.id,
