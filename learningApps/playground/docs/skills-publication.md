@@ -8,6 +8,7 @@ static JSON from `public/Data/Skills`; it must not import authoring Data at runt
 
 ```text
 public/Data/Skills/
+  index.json                      # Domain slugs and supported language codes
   testColors/
     en.json                         # Domain, including Groups and their Skills
     uk.json
