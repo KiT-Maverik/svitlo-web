@@ -3,6 +3,8 @@ import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { conditions_SkillGroup_Data } from './conditions/conditions.data';
 import { models_SkillGroup_Data } from './models/models.data';
 
+import { planning_SkillGroup_Data } from './planning/planning.data';
+
 export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
   id: '695fd427-aaea-4cbb-bd07-2d1702f36a17',
   name: {
@@ -36,6 +38,7 @@ export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Розв’язування задач",
   },
   groupIds: {
+    planning: planning_SkillGroup_Data.id,
     conditions: conditions_SkillGroup_Data.id,
     models: models_SkillGroup_Data.id,
   },
