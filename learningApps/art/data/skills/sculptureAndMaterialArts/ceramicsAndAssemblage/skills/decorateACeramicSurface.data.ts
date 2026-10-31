@@ -32,6 +32,7 @@ export const decorateACeramicSurface_Skill_Data = buildSkillConfig({
     be: "Упрыгожваць керамічную паверхню",
     ka: "კერამიკული ზედაპირის გაფორმება",
     kk: "Керамика бетін безендіру",
+      qm: "Keramika yüzüni bezemek",
   },
   description: {
     methodological: "Use suitable coatings or applied textures to achieve a selected expressive surface.",
@@ -64,6 +65,7 @@ export const decorateACeramicSurface_Skill_Data = buildSkillConfig({
       be: "Дадавайце колеры або фактуры, якія пасуюць да паверхні глінянага вырабу.",
       ka: "დაამატეთ თიხის საგნის ზედაპირისთვის შესაფერისი ფერები ან ფაქტურები.",
       kk: "Саздан жасалған бұйымның бетіне үйлесімді түстер немесе фактуралар қосыңыз.",
+          qm: "Balçıq eşyanıñ yüzüne uyğun tüsler ya da teksturalar qoşuñız.",
     },
   },
 });
