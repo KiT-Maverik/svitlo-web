@@ -1,8 +1,0 @@
-{
-  "id": "00000000-0000-4000-8000-000000000008",
-  "slug": "testRecognizeCircle",
-  "collection": "skill",
-  "name": "[TEST tr] Recognize a circle",
-  "description": "[TEST tr] Recognize a circle in a simple visual example.",
-  "language": "tr"
-}

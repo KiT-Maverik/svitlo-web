@@ -1,8 +1,0 @@
-{
-  "id": "00000000-0000-4000-8000-000000000012",
-  "slug": "testRecognizeSquare",
-  "collection": "skill",
-  "name": "[TEST ms] Recognize a square",
-  "description": "[TEST ms] Recognize a square in a simple visual example.",
-  "language": "ms"
-}

@@ -1,8 +1,0 @@
-{
-  "id": "00000000-0000-4000-8000-000000000011",
-  "slug": "testRecognizeTriangle",
-  "collection": "skill",
-  "name": "[TEST pl] Recognize a triangle",
-  "description": "[TEST pl] Recognize a triangle in a simple visual example.",
-  "language": "pl"
-}

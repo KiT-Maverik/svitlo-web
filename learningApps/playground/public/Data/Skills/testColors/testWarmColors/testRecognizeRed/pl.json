@@ -1,8 +1,0 @@
-{
-  "id": "00000000-0000-4000-8000-000000000001",
-  "slug": "testRecognizeRed",
-  "collection": "skill",
-  "name": "[TEST pl] Recognize red",
-  "description": "[TEST pl] Recognize the color red in a simple visual example.",
-  "language": "pl"
-}
