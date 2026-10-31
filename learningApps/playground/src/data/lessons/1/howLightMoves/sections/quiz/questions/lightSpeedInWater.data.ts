@@ -1,15 +1,12 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
-import type { Quiz_Config } from '@svitlo/engine/content';
-import { quiz_Questions_Ids } from './index.ids';
-import { createTextResource } from '@svitlo/engine/builders';
+import type { HowLightMoves_Quiz_Question_Data } from '../quiz.types';
 
 export const lightSpeedInWater_Question_Data = {
-  id: quiz_Questions_Ids.lightSpeedInWater.question,
-  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.interpretation,
+  id: 'f42370dc-1de2-59bf-93a0-0e304f9021f0',
+  assessmentMethod: 'interpretation',
   type: 'select-one-answer',
   restrictions: [],
   content: [
-    createTextResource(quiz_Questions_Ids.lightSpeedInWater.content, {
+    {
       en: 'How does the speed of light change in water compared with a vacuum?',
       qm: 'Vakuumğa nisbeten suvda yarıqnıñ sürati nasıl deñişe?',
       lt: 'Kaip pasikeičia šviesos greitis vandenyje, palyginti su vakuumu?',
@@ -39,9 +36,9 @@ export const lightSpeedInWater_Question_Data = {
       he: 'כיצד משתנה מהירות האור במים בהשוואה לריק?',
       pl: 'Jak zmienia się prędkość światła w wodzie w porównaniu z próżnią?',
       uk: 'Як змінюється швидкість світла у воді порівняно з вакуумом?',
-    }),
+    },
   ],
-  explanation: createTextResource(quiz_Questions_Ids.lightSpeedInWater.explanation, {
+  explanation: {
     en: 'Light travels more slowly in water than in a vacuum.',
     qm: 'Yarıq suvda vakuumğa nisbeten yavaşraq yayıla.',
     lt: 'Vandenyje šviesa sklinda lėčiau nei vakuume.',
@@ -71,12 +68,9 @@ export const lightSpeedInWater_Question_Data = {
     he: 'האור מתקדם לאט יותר במים מאשר בריק.',
     pl: 'Światło rozchodzi się w wodzie wolniej niż w próżni.',
     uk: 'У воді світло рухається повільніше, ніж у вакуумі.',
-  }),
-  flashcardConfig: { includeInLessonSet: true },
-  number: 4,
-  weight: 1,
+  },
   answers: {
-    correct: createTextResource(quiz_Questions_Ids.lightSpeedInWater.correct, {
+    correct: {
       en: 'It decreases.',
       qm: 'Azaya.',
       lt: 'Sumažėja.',
@@ -106,9 +100,9 @@ export const lightSpeedInWater_Question_Data = {
       he: 'היא פוחתת.',
       pl: 'Maleje.',
       uk: 'Зменшується.',
-    }),
+    },
     incorrect: [
-      createTextResource(quiz_Questions_Ids.lightSpeedInWater.incorrectFirst, {
+      {
         en: 'It increases.',
         qm: 'Arta.',
         lt: 'Padidėja.',
@@ -138,10 +132,10 @@ export const lightSpeedInWater_Question_Data = {
         he: 'היא גדלה.',
         pl: 'Rośnie.',
         uk: 'Збільшується.',
-      }),
+      },
     ],
     distractors: [
-      createTextResource(quiz_Questions_Ids.lightSpeedInWater.incorrectSecond, {
+      {
         en: 'It does not change.',
         qm: 'Deñişmey.',
         lt: 'Nepasikeičia.',
@@ -171,7 +165,7 @@ export const lightSpeedInWater_Question_Data = {
         he: 'היא אינה משתנה.',
         pl: 'Nie zmienia się.',
         uk: 'Не змінюється.',
-      }),
+      },
     ],
   },
-} satisfies Quiz_Config['questionBank'][number];
+} satisfies HowLightMoves_Quiz_Question_Data;

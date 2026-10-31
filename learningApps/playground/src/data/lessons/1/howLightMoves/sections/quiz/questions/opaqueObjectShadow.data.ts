@@ -1,15 +1,12 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
-import type { Quiz_Config } from '@svitlo/engine/content';
-import { quiz_Questions_Ids } from './index.ids';
-import { createTextResource } from '@svitlo/engine/builders';
+import type { HowLightMoves_Quiz_Question_Data } from '../quiz.types';
 
 export const opaqueObjectShadow_Question_Data = {
-  id: quiz_Questions_Ids.opaqueObjectShadow.question,
-  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.prediction,
+  id: 'fbc29fba-d44d-5658-b6e7-ef1733ce81b5',
+  assessmentMethod: 'prediction',
   type: 'select-one-answer',
   restrictions: [],
   content: [
-    createTextResource(quiz_Questions_Ids.opaqueObjectShadow.content, {
+    {
       en: 'What forms behind an opaque object that blocks light?',
       qm: 'Yarıqnı keçirmegen bir şeyniñ artında ne peyda ola?',
       lt: 'Kas susidaro už nepermatomo daikto, kuris užstoja šviesą?',
@@ -39,9 +36,9 @@ export const opaqueObjectShadow_Question_Data = {
       he: 'מה נוצר מאחורי עצם אטום שחוסם אור?',
       pl: 'Co powstaje za nieprzezroczystym przedmiotem blokującym światło?',
       uk: 'Що утворюється за непрозорим предметом, який перекриває світло?',
-    }),
+    },
   ],
-  explanation: createTextResource(quiz_Questions_Ids.opaqueObjectShadow.explanation, {
+  explanation: {
     en: 'A shadow forms behind an opaque object.',
     qm: 'Yarıqnı keçirmegen şeyniñ artında kölge peyda ola.',
     lt: 'Už nepermatomo daikto susidaro šešėlis.',
@@ -71,12 +68,9 @@ export const opaqueObjectShadow_Question_Data = {
     he: 'מאחורי עצם אטום נוצר צל.',
     pl: 'Za nieprzezroczystym przedmiotem powstaje cień.',
     uk: 'За непрозорим предметом утворюється тінь.',
-  }),
-  flashcardConfig: { includeInLessonSet: true },
-  number: 6,
-  weight: 1,
+  },
   answers: {
-    correct: createTextResource(quiz_Questions_Ids.opaqueObjectShadow.correct, {
+    correct: {
       en: 'A shadow.',
       qm: 'Kölge.',
       lt: 'Šešėlis.',
@@ -106,9 +100,9 @@ export const opaqueObjectShadow_Question_Data = {
       he: 'צל.',
       pl: 'Cień.',
       uk: 'Тінь.',
-    }),
+    },
     incorrect: [
-      createTextResource(quiz_Questions_Ids.opaqueObjectShadow.incorrectFirst, {
+      {
         en: 'A new light source.',
         qm: 'Yañı yarıq menbası.',
         lt: 'Naujas šviesos šaltinis.',
@@ -138,10 +132,10 @@ export const opaqueObjectShadow_Question_Data = {
         he: 'מקור אור חדש.',
         pl: 'Nowe źródło światła.',
         uk: 'Нове джерело світла.',
-      }),
+      },
     ],
     distractors: [
-      createTextResource(quiz_Questions_Ids.opaqueObjectShadow.incorrectSecond, {
+      {
         en: 'A vacuum.',
         qm: 'Vakuum.',
         lt: 'Vakuumas.',
@@ -171,7 +165,7 @@ export const opaqueObjectShadow_Question_Data = {
         he: 'ריק.',
         pl: 'Próżnia.',
         uk: 'Вакуум.',
-      }),
+      },
     ],
   },
-} satisfies Quiz_Config['questionBank'][number];
+} satisfies HowLightMoves_Quiz_Question_Data;

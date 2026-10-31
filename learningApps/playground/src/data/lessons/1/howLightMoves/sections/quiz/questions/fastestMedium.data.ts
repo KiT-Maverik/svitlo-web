@@ -1,15 +1,12 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
-import type { Quiz_Config } from '@svitlo/engine/content';
-import { quiz_Questions_Ids } from './index.ids';
-import { createTextResource } from '@svitlo/engine/builders';
+import type { HowLightMoves_Quiz_Question_Data } from '../quiz.types';
 
 export const fastestMedium_Question_Data = {
-  id: quiz_Questions_Ids.fastestMedium.question,
-  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.retrieval,
+  id: '08c3bae5-081a-5afc-bccf-e44078e137f2',
+  assessmentMethod: 'retrieval',
   type: 'select-one-answer',
   restrictions: [],
   content: [
-    createTextResource(quiz_Questions_Ids.fastestMedium.content, {
+    {
       en: 'Where does light travel fastest: in a vacuum, air, or water?',
       qm: 'Yarıq qayda eñ tez yayıla: vakuumda, avada yoqsa suvda?',
       lt: 'Kur šviesa sklinda greičiausiai: vakuume, ore ar vandenyje?',
@@ -39,9 +36,9 @@ export const fastestMedium_Question_Data = {
       he: 'היכן האור מתקדם במהירות הגבוהה ביותר: בריק, באוויר או במים?',
       pl: 'Gdzie światło rozchodzi się najszybciej: w próżni, powietrzu czy wodzie?',
       uk: 'Де світло поширюється найшвидше: у вакуумі, повітрі чи воді?',
-    }),
+    },
   ],
-  explanation: createTextResource(quiz_Questions_Ids.fastestMedium.explanation, {
+  explanation: {
     en: 'Light travels fastest in a vacuum—about 300,000 km/s.',
     qm: 'Yarıq eñ tez vakuumda yayıla — taqriben saniyede 300 000 kilometr.',
     lt: 'Greičiausiai šviesa sklinda vakuume – apie 300 000 km/s.',
@@ -71,12 +68,9 @@ export const fastestMedium_Question_Data = {
     he: 'האור מתקדם במהירות הגבוהה ביותר בריק, כ־300,000 ק״מ לשנייה.',
     pl: 'Światło rozchodzi się najszybciej w próżni, z prędkością około 300 000 km/s.',
     uk: 'У вакуумі світло поширюється найшвидше — приблизно 300 000 км/с.',
-  }),
-  flashcardConfig: { includeInLessonSet: true },
-  number: 3,
-  weight: 1,
+  },
   answers: {
-    correct: createTextResource(quiz_Questions_Ids.fastestMedium.correct, {
+    correct: {
       en: 'In a vacuum.',
       qm: 'Vakuumda.',
       lt: 'Vakuume.',
@@ -106,9 +100,9 @@ export const fastestMedium_Question_Data = {
       he: 'בריק.',
       pl: 'W próżni.',
       uk: 'У вакуумі.',
-    }),
+    },
     incorrect: [
-      createTextResource(quiz_Questions_Ids.fastestMedium.incorrectFirst, {
+      {
         en: 'In air.',
         qm: 'Avada.',
         lt: 'Ore.',
@@ -138,10 +132,10 @@ export const fastestMedium_Question_Data = {
         he: 'באוויר.',
         pl: 'W powietrzu.',
         uk: 'У повітрі.',
-      }),
+      },
     ],
     distractors: [
-      createTextResource(quiz_Questions_Ids.fastestMedium.incorrectSecond, {
+      {
         en: 'In water.',
         qm: 'Suvda.',
         lt: 'Vandenyje.',
@@ -171,7 +165,7 @@ export const fastestMedium_Question_Data = {
         he: 'במים.',
         pl: 'W wodzie.',
         uk: 'У воді.',
-      }),
+      },
     ],
   },
-} satisfies Quiz_Config['questionBank'][number];
+} satisfies HowLightMoves_Quiz_Question_Data;

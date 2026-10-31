@@ -1,15 +1,12 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
-import type { Quiz_Config } from '@svitlo/engine/content';
-import { quiz_Questions_Ids } from './index.ids';
-import { createTextResource } from '@svitlo/engine/builders';
+import type { HowLightMoves_Quiz_Question_Data } from '../quiz.types';
 
 export const lightRayDirection_Question_Data = {
-  id: quiz_Questions_Ids.lightRayDirection.question,
-  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.interpretation,
+  id: '26b09f82-f8db-5b7a-9a0f-7e7937fba45c',
+  assessmentMethod: 'interpretation',
   type: 'select-one-answer',
   restrictions: [],
   content: [
-    createTextResource(quiz_Questions_Ids.lightRayDirection.content, {
+    {
       en: 'What does a light ray show?',
       qm: 'Yarıq şavlesi ne köstere?',
       lt: 'Ką parodo šviesos spindulys?',
@@ -39,9 +36,9 @@ export const lightRayDirection_Question_Data = {
       he: 'מה מייצגת קרן אור?',
       pl: 'Co pokazuje promień światła?',
       uk: 'Що показує світловий промінь?',
-    }),
+    },
   ],
-  explanation: createTextResource(quiz_Questions_Ids.lightRayDirection.explanation, {
+  explanation: {
     en: 'A light ray shows the direction in which light travels.',
     qm: 'Yarıq şavlesi yarıqnıñ yayılma yönelişini köstere.',
     lt: 'Šviesos spindulys parodo šviesos sklidimo kryptį.',
@@ -71,12 +68,9 @@ export const lightRayDirection_Question_Data = {
     he: 'קרן אור מייצגת את הכיוון שבו האור מתקדם.',
     pl: 'Promień światła pokazuje kierunek, w którym rozchodzi się światło.',
     uk: 'Світловий промінь показує напрямок поширення світла.',
-  }),
-  flashcardConfig: { includeInLessonSet: true },
-  number: 2,
-  weight: 1,
+  },
   answers: {
-    correct: createTextResource(quiz_Questions_Ids.lightRayDirection.correct, {
+    correct: {
       en: 'The direction light travels.',
       qm: 'Yarıqnıñ yayılma yönelişini.',
       lt: 'Šviesos sklidimo kryptį.',
@@ -106,9 +100,9 @@ export const lightRayDirection_Question_Data = {
       he: 'את כיוון התקדמות האור.',
       pl: 'Kierunek rozchodzenia się światła.',
       uk: 'Напрямок поширення світла.',
-    }),
+    },
     incorrect: [
-      createTextResource(quiz_Questions_Ids.lightRayDirection.incorrectFirst, {
+      {
         en: 'The temperature of the source.',
         qm: 'Menbanıñ araretini.',
         lt: 'Šaltinio temperatūrą.',
@@ -138,10 +132,10 @@ export const lightRayDirection_Question_Data = {
         he: 'את הטמפרטורה של מקור האור.',
         pl: 'Temperaturę źródła.',
         uk: 'Температуру джерела.',
-      }),
+      },
     ],
     distractors: [
-      createTextResource(quiz_Questions_Ids.lightRayDirection.incorrectSecond, {
+      {
         en: 'The size of a light particle.',
         qm: 'Yarıq zerresiniñ ölçüsini.',
         lt: 'Šviesos dalelės dydį.',
@@ -171,7 +165,7 @@ export const lightRayDirection_Question_Data = {
         he: 'את גודלו של חלקיק אור.',
         pl: 'Rozmiar cząstki światła.',
         uk: 'Розмір частинки світла.',
-      }),
+      },
     ],
   },
-} satisfies Quiz_Config['questionBank'][number];
+} satisfies HowLightMoves_Quiz_Question_Data;

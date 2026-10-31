@@ -1,15 +1,12 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
-import type { Quiz_Config } from '@svitlo/engine/content';
-import { quiz_Questions_Ids } from './index.ids';
-import { createTextResource } from '@svitlo/engine/builders';
+import type { HowLightMoves_Quiz_Question_Data } from '../quiz.types';
 
 export const lightTravelsStraight_Question_Data = {
-  id: quiz_Questions_Ids.lightTravelsStraight.question,
-  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.retrieval,
+  id: 'a4f1e4aa-3831-5e3f-aece-1df57f757d82',
+  assessmentMethod: 'retrieval',
   type: 'select-one-answer',
   restrictions: [],
   content: [
-    createTextResource(quiz_Questions_Ids.lightTravelsStraight.content, {
+    {
       en: 'How does light travel in a uniform transparent medium?',
       qm: 'Yarıq bir cıns şeffaf ortamda nasıl yayıla?',
       lt: 'Kaip šviesa sklinda vienalytėje skaidrioje terpėje?',
@@ -39,9 +36,9 @@ export const lightTravelsStraight_Question_Data = {
       he: 'כיצד האור מתקדם בתווך שקוף ואחיד?',
       pl: 'Jak rozchodzi się światło w jednorodnym, przezroczystym ośrodku?',
       uk: 'Як поширюється світло в прозорому однорідному середовищі?',
-    }),
+    },
   ],
-  explanation: createTextResource(quiz_Questions_Ids.lightTravelsStraight.explanation, {
+  explanation: {
     en: 'In a uniform transparent medium, light travels in a straight line.',
     qm: 'Bir cıns şeffaf ortamda yarıq doğru sızıq boyunca yayıla.',
     lt: 'Vienalytėje skaidrioje terpėje šviesa sklinda tiesia linija.',
@@ -71,12 +68,9 @@ export const lightTravelsStraight_Question_Data = {
     he: 'בתווך שקוף ואחיד האור מתקדם בקו ישר.',
     pl: 'W jednorodnym, przezroczystym ośrodku światło rozchodzi się po linii prostej.',
     uk: 'У прозорому однорідному середовищі світло поширюється прямолінійно.',
-  }),
-  flashcardConfig: { includeInLessonSet: true },
-  number: 1,
-  weight: 1,
+  },
   answers: {
-    correct: createTextResource(quiz_Questions_Ids.lightTravelsStraight.correct, {
+    correct: {
       en: 'In a straight line.',
       qm: 'Doğru sızıq boyunca.',
       lt: 'Tiesia linija.',
@@ -106,9 +100,9 @@ export const lightTravelsStraight_Question_Data = {
       he: 'בקו ישר.',
       pl: 'Po linii prostej.',
       uk: 'Прямолінійно.',
-    }),
+    },
     incorrect: [
-      createTextResource(quiz_Questions_Ids.lightTravelsStraight.incorrectFirst, {
+      {
         en: 'In a circle.',
         qm: 'Daire boyunca.',
         lt: 'Apskritimu.',
@@ -138,10 +132,10 @@ export const lightTravelsStraight_Question_Data = {
         he: 'במעגל.',
         pl: 'Po okręgu.',
         uk: 'По колу.',
-      }),
+      },
     ],
     distractors: [
-      createTextResource(quiz_Questions_Ids.lightTravelsStraight.incorrectSecond, {
+      {
         en: 'Always along a curve.',
         qm: 'Daima egri sızıq boyunca.',
         lt: 'Visada kreive.',
@@ -171,7 +165,7 @@ export const lightTravelsStraight_Question_Data = {
         he: 'תמיד במסלול מעוקל.',
         pl: 'Zawsze po krzywej.',
         uk: 'Завжди по кривій.',
-      }),
+      },
     ],
   },
-} satisfies Quiz_Config['questionBank'][number];
+} satisfies HowLightMoves_Quiz_Question_Data;

@@ -1,15 +1,12 @@
-import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
-import type { Quiz_Config } from '@svitlo/engine/content';
-import { quiz_Questions_Ids } from './index.ids';
-import { createTextResource } from '@svitlo/engine/builders';
+import type { HowLightMoves_Quiz_Question_Data } from '../quiz.types';
 
 export const airVacuumSpeed_Question_Data = {
-  id: quiz_Questions_Ids.airVacuumSpeed.question,
-  assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.retrieval,
+  id: '21733db1-2e1a-55cc-80c2-08e68fec1d90',
+  assessmentMethod: 'retrieval',
   type: 'select-one-answer',
   restrictions: [],
   content: [
-    createTextResource(quiz_Questions_Ids.airVacuumSpeed.content, {
+    {
       en: 'Is the speed of light the same in air and in a vacuum?',
       qm: 'Yarıq avada ve vakuumda aynı süratnen yayılamı?',
       lt: 'Ar šviesos greitis ore ir vakuume yra vienodas?',
@@ -39,9 +36,9 @@ export const airVacuumSpeed_Question_Data = {
       he: 'האם מהירות האור זהה באוויר ובריק?',
       pl: 'Czy prędkość światła w powietrzu i w próżni jest taka sama?',
       uk: 'Чи однакова швидкість світла у повітрі та вакуумі?',
-    }),
+    },
   ],
-  explanation: createTextResource(quiz_Questions_Ids.airVacuumSpeed.explanation, {
+  explanation: {
     en: 'Light travels slightly slower in air than in a vacuum.',
     qm: 'Yarıq avada vakuumğa nisbeten biraz yavaşraq yayıla.',
     lt: 'Ore šviesa sklinda šiek tiek lėčiau nei vakuume.',
@@ -71,12 +68,9 @@ export const airVacuumSpeed_Question_Data = {
     he: 'האור מתקדם באוויר מעט לאט יותר מאשר בריק.',
     pl: 'Światło rozchodzi się w powietrzu nieco wolniej niż w próżni.',
     uk: 'У повітрі світло трохи повільніше, ніж у вакуумі.',
-  }),
-  flashcardConfig: { includeInLessonSet: true },
-  number: 5,
-  weight: 1,
+  },
   answers: {
-    correct: createTextResource(quiz_Questions_Ids.airVacuumSpeed.correct, {
+    correct: {
       en: 'No, it is slightly slower in air.',
       qm: 'Yoq, avada biraz yavaşraq yayıla.',
       lt: 'Ne, ore ji sklinda šiek tiek lėčiau.',
@@ -106,9 +100,9 @@ export const airVacuumSpeed_Question_Data = {
       he: 'לא, באוויר היא מעט נמוכה יותר.',
       pl: 'Nie, w powietrzu jest nieco mniejsza.',
       uk: 'Ні, у повітрі трохи повільніше.',
-    }),
+    },
     incorrect: [
-      createTextResource(quiz_Questions_Ids.airVacuumSpeed.incorrectFirst, {
+      {
         en: 'Yes, it is exactly the same.',
         qm: 'Ebet, sürati tam aynı.',
         lt: 'Taip, jis visiškai vienodas.',
@@ -138,10 +132,10 @@ export const airVacuumSpeed_Question_Data = {
         he: 'כן, היא זהה לחלוטין.',
         pl: 'Tak, jest dokładnie taka sama.',
         uk: 'Так, абсолютно однакова.',
-      }),
+      },
     ],
     distractors: [
-      createTextResource(quiz_Questions_Ids.airVacuumSpeed.incorrectSecond, {
+      {
         en: 'No, it is twice as fast in air.',
         qm: 'Yoq, avada eki qat tez yayıla.',
         lt: 'Ne, ore ji sklinda dvigubai greičiau.',
@@ -171,7 +165,7 @@ export const airVacuumSpeed_Question_Data = {
         he: 'לא, באוויר היא כפולה.',
         pl: 'Nie, w powietrzu jest dwa razy większa.',
         uk: 'Ні, у повітрі вдвічі швидше.',
-      }),
+      },
     ],
   },
-} satisfies Quiz_Config['questionBank'][number];
+} satisfies HowLightMoves_Quiz_Question_Data;
