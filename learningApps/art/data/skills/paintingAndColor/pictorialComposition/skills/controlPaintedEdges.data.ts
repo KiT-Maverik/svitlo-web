@@ -32,6 +32,7 @@ export const controlPaintedEdges_Skill_Data = buildSkillConfig({
     be: "Кіраваць краямі мазкоў",
     ka: "მოხატული კიდეების კონტროლი",
     kk: "Боялған жиектерді басқару",
+    qm: "Boyalğan kenarlarnı idare etmek",
   },
   description: {
     methodological: "Choose sharp, soft or lost boundaries to establish spatial focus or visual hierarchy.",
@@ -64,6 +65,7 @@ export const controlPaintedEdges_Skill_Data = buildSkillConfig({
       be: "Выбірайце выразныя або мяккія краі, каб накіроўваць увагу і перадаваць прастору.",
       ka: "აირჩიეთ მკვეთრი ან რბილი კიდეები ყურადღების მისაქცევად და სივრცის გამოსახატავად.",
       kk: "Назарды бағыттап, кеңістікті білдіру үшін айқын немесе жұмсақ жиектерді таңдаңыз.",
+      qm: "Dikkatni yöneltmek ve mekân hissini bermek içün keskin ya da yumşaq kenarlarnı saylañız."
     },
   },
 });
