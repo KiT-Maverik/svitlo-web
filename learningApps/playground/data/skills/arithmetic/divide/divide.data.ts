@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { equalSharing_Skill_Data, equalGrouping_Skill_Data, readExpression_Skill_Data, relationToMultiplication_Skill_Data } from './skills';
+import { equalSharing_Skill_Data, equalGrouping_Skill_Data, readExpression_Skill_Data, relationToMultiplication_Skill_Data, by1AndSelf_Skill_Data, by2_Skill_Data, doubleHalf_Skill_Data, zeroDividend_Skill_Data, noDivisionByZero_Skill_Data, by3_Skill_Data } from './skills';
 
 export const divide_SkillGroup_Data = buildSkillGroupConfig({
   id: 'ddb45d35-6e28-4e55-b934-949c3f0a21b2',
@@ -39,6 +39,12 @@ export const divide_SkillGroup_Data = buildSkillGroupConfig({
     equalGrouping: equalGrouping_Skill_Data.id,
     readExpression: readExpression_Skill_Data.id,
     relationToMultiplication: relationToMultiplication_Skill_Data.id,
+    by1AndSelf: by1AndSelf_Skill_Data.id,
+    by2: by2_Skill_Data.id,
+    doubleHalf: doubleHalf_Skill_Data.id,
+    zeroDividend: zeroDividend_Skill_Data.id,
+    noDivisionByZero: noDivisionByZero_Skill_Data.id,
+    by3: by3_Skill_Data.id,
   },
   description: {
     methodological: "Quotients as equal sharing or finding the number of equal groups, basic division facts, remainders, limitations, and verification of division.",
