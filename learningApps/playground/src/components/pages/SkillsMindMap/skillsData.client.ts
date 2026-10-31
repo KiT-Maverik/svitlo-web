@@ -1,64 +1,98 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import {
-  assemblePublishedSkillNode, flattenSkillNodes, languagePattern,
-  parsePublishedSkillCopy, parsePublishedSkillMeta, slugPattern,
+  flattenSkillNodes, languagePattern, slugPattern,
   type SkillNode, type SkillNodeKind,
 } from './skillsMindMap.utils';
 
-/**
- * Textbook-agnostic transport adapter. A future UI Kit Skills view receives
- * its textbook's Domain slugs as input; it never imports authoring data.
- * No index.json, automatic directory listing, or implicit English fallback.
- */
+/** Page-specific data transport. Static subject taxonomy; no learner mastery. */
 export function resolveSkillLanguage(value: string): string {
   const item = DEFAULT_SUPPORTED_LANGUAGES.find(
-    entry => entry.locale === value || entry.language === value,
-  );
+    entry => entry.locale === value || entry.language === value);
   if (!item) throw new Error('Непідтримувана мова Skills: ' + value);
   return item.language;
 }
 
-async function fetchJson(url: string, signal: AbortSignal): Promise<unknown> {
-  const response = await fetch(url, { signal });
-  if (!response.ok) throw new Error('Не вдалося завантажити ' + url + ' (' + response.status + ')');
-  return response.json() as Promise<unknown>;
-}
-
-async function loadNode(
-  pathSegments: readonly string[], kind: SkillNodeKind, language: string, signal: AbortSignal,
-): Promise<SkillNode> {
-  if (!pathSegments.length || pathSegments.some(slug => !slugPattern.test(slug))) {
-    throw new Error('Некоректний шлях Skill');
+const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+type SourceRecord = Record<string, unknown>;
+function record(value: unknown, path: string): SourceRecord {
+  if (value === null || typeof value !== 'object' || Array.isArray(value)) {
+    throw new Error('Некоректна сутність skillAnalytics: ' + path);
   }
-  const base = '/data/skills/' + pathSegments.map(encodeURIComponent).join('/');
-  const [rawMeta, rawCopy] = await Promise.all([
-    fetchJson(base + '/meta.json', signal),
-    fetchJson(base + '/' + encodeURIComponent(language) + '.json', signal),
-  ]);
-  const meta = parsePublishedSkillMeta(rawMeta, kind);
-  const copy = parsePublishedSkillCopy(rawCopy, kind);
-  const descendants = [
-    ...(meta.groups ?? []).map(slug => ({ slug, kind: 'skillGroup' as const })),
-    ...(meta.skills ?? []).map(slug => ({ slug, kind: 'skill' as const })),
-  ];
-  const children = await Promise.all(descendants.map(child =>
-    loadNode([...pathSegments, child.slug], child.kind, language, signal)));
-  return assemblePublishedSkillNode(meta, copy, pathSegments[pathSegments.length - 1], children);
+  return value as SourceRecord;
+}
+function string(value: unknown, path: string): string {
+  if (typeof value !== 'string' || !value.trim()) throw new Error('Некоректне поле: ' + path);
+  return value;
 }
 
-/** Fetch one locale for each node and one cacheable metadata file per entity. */
-export async function loadPublishedSkills(
-  domainSlugs: readonly string[], language: string, signal: AbortSignal,
+/** The same typed graph may be consumed by a Mind Map or future analytical charts. */
+export function parseSkillAnalyticsPage(value: unknown): SkillNode[] {
+  const page = record(value, 'page');
+  if (Object.keys(page).some(key => key !== 'domains') || !Array.isArray(page.domains) ||
+      !page.domains.length) throw new Error('Некоректний список доменів skillAnalytics');
+  const ids = new Set<string>();
+  function node(source: unknown, parent: SkillNodeKind | null, path: string): SkillNode {
+    const data = record(source, path);
+    const allowed = ['id', 'slug', 'collection', 'name', 'description', 'children'];
+    if (Object.keys(data).some(key => !allowed.includes(key))) {
+      throw new Error('Зайві поля skillAnalytics: ' + path);
+    }
+    const id = string(data.id, path + '.id');
+    const slug = string(data.slug, path + '.slug');
+    const name = string(data.name, path + '.name');
+    if (!uuidPattern.test(id) || ids.has(id)) throw new Error('Некоректний або повторюваний UUID: ' + path);
+    ids.add(id);
+    if (!slugPattern.test(slug)) throw new Error('Некоректний slug: ' + path);
+    const collection = data.collection;
+    if (collection !== 'skillDomain' && collection !== 'skillGroup' && collection !== 'skill') {
+      throw new Error('Некоректний Collection: ' + path);
+    }
+    const kind: SkillNodeKind = collection;
+    if ((parent === null && kind !== 'skillDomain') ||
+        (parent === 'skillGroup' && kind !== 'skill') ||
+        (parent === 'skill' || (parent === 'skillDomain' && kind === 'skillDomain'))) {
+      throw new Error('Некоректний порядок сутностей: ' + path);
+    }
+    if (kind === 'skill' && data.description === undefined) {
+      throw new Error('Скіл без фронтенд-опису: ' + path);
+    }
+    const description = data.description === undefined ? undefined : string(data.description, path + '.description');
+    if (data.children !== undefined && !Array.isArray(data.children)) {
+      throw new Error('Некоректні дочірні сутності: ' + path);
+    }
+    const rawChildren = (data.children ?? []) as unknown[];
+    if ((kind === 'skill' && rawChildren.length) || (kind !== 'skill' && !rawChildren.length)) {
+      throw new Error('Некоректне дерево Skills: ' + path);
+    }
+    const children = rawChildren.map((entry, index) => node(entry, kind, path + '.children.' + index));
+    if (new Set(children.map(child => child.slug)).size !== children.length) {
+      throw new Error('Повторювані slug дочірніх сутностей: ' + path);
+    }
+    return { id, slug, kind, name,
+      ...(description === undefined ? {} : { description }), children };
+  }
+  const domains = page.domains.map((entry, index) => node(entry, null, 'domains.' + index));
+  if (new Set(domains.map(domain => domain.slug)).size !== domains.length) {
+    throw new Error('Повторювані slug доменів');
+  }
+  flattenSkillNodes(domains);
+  return domains;
+}
+
+/** Exactly one locale-specific request. No per-entity meta or locale traversal. */
+export async function loadSkillAnalyticsPage(
+  language: string, signal: AbortSignal,
+  domainSlugs?: readonly string[],
 ): Promise<SkillNode[]> {
-  if (!domainSlugs.length || domainSlugs.some(slug => !slugPattern.test(slug)) ||
-      new Set(domainSlugs).size !== domainSlugs.length) {
-    throw new Error('Некоректний список доменів Skills');
-  }
   if (!languagePattern.test(language) || resolveSkillLanguage(language) !== language) {
     throw new Error('Непідтримувана мова Skills: ' + language);
   }
-  const domains = await Promise.all(domainSlugs.map(slug =>
-    loadNode([slug], 'skillDomain', language, signal)));
-  flattenSkillNodes(domains); // validates global UUID uniqueness
-  return domains;
+  const response = await fetch('/data/Pages/skillAnalytics/' + encodeURIComponent(language) + '.json', { signal });
+  if (!response.ok) throw new Error('Не вдалося завантажити Skill Analytics (' + response.status + ')');
+  const domains = parseSkillAnalyticsPage(await response.json() as unknown);
+  if (domainSlugs && (!domainSlugs.length || new Set(domainSlugs).size !== domainSlugs.length ||
+      domainSlugs.some(slug => !slugPattern.test(slug) || !domains.some(domain => domain.slug === slug)))) {
+    throw new Error('Невідомі або повторювані домени Skill Analytics');
+  }
+  return domainSlugs ? domainSlugs.map(slug => domains.find(domain => domain.slug === slug)!) : domains;
 }
