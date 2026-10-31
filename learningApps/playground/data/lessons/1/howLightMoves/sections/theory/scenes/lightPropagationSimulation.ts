@@ -1,7 +1,7 @@
 import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
 import type { StringObjectToLocale } from '../../../transformer.types';
 type Locale = StringObjectToLocale<
-  HowLightMoves_Lesson_Locale['section']['theory']['scene']['LightPropagationSimulation']
+  HowLightMoves_Lesson_Locale['section']['theory']['scene']['lightPropagationSimulation']
 >;
 const lightPropagationSimulation = {
   scene: {

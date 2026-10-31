@@ -12,6 +12,6 @@ export type Theory_Section_Locale = {
   scene: {
     checkpoint: Checkpoint_Locale;
     lightRayDiagram: LightRayDiagram_Locale;
-    LightPropagationSimulation: LightPropagationSimulation_Locale;
+    lightPropagationSimulation: LightPropagationSimulation_Locale;
   }
 }
