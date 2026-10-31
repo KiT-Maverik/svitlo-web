@@ -5,115 +5,92 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import {
-  languageCodes,
-  loadSkillGraph,
-  renderSkillFiles,
-  writePublishedFiles,
-  checkPublishedFiles,
+  languageCodes, loadSkillGraph, renderSkillFiles,
+  writePublishedFiles, checkPublishedFiles,
 } from './publish-skills-data.mjs';
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const fixture = path.join(repo, 'learningApps/playground/data/skills');
 
-test('publishes all 2 domains, 4 groups, 8 Skills into localized standalone and nested JSON', () => {
+function resources() {
   const codes = languageCodes();
-  const graph = loadSkillGraph(fixture, codes);
-  const files = renderSkillFiles(graph, codes);
+  return { codes, graph: loadSkillGraph(fixture, codes),
+    files: renderSkillFiles(loadSkillGraph(fixture, codes), codes) };
+}
+
+test('publishes one immutable meta and one localization per entity, without index.json', () => {
+  const { codes, graph, files } = resources();
   assert.equal(graph.length, 2);
   assert.equal(graph.reduce((sum, domain) => sum + domain.groups.length, 0), 4);
   assert.equal(graph.reduce((sum, domain) =>
-    sum + domain.groups.reduce((groupSum, group) => groupSum + group.skills.length, 0), 0), 8);
-  assert.equal(files.size, 14 * codes.length + 1);
-  assert.deepEqual(JSON.parse(files.get('index.json')), {
-    version: 1,
-    languages: codes,
-    domains: ['testColors', 'testShapes'],
-  });
-  assert(codes.includes('en') && codes.includes('uk'));
-  assert.equal(new Set(codes).size, codes.length);
+    sum + domain.groups.reduce((total, group) => total + group.skills.length, 0), 0), 8);
+  assert.equal(files.size, 14 * (codes.length + 1));
+  assert.equal(files.has('index.json'), false);
 
-  const domain = JSON.parse(files.get('testColors/en.json'));
-  assert.equal(domain.collection, 'skillDomain');
-  assert.equal(domain.language, 'en');
-  assert.equal(typeof domain.name, 'string');
-  assert.equal(domain.groups.length, 2);
-  assert.equal(domain.groups[0].skills.length, 2);
-  assert.equal(domain.groups[0].skills[0].collection, 'skill');
-  assert.equal(domain.groups[0].skills[0].name.includes('[TEST en]'), true);
+  const domainMeta = JSON.parse(files.get('testColors/meta.json'));
+  assert.deepEqual(Object.keys(domainMeta).sort(), ['collection', 'groups', 'id']);
+  assert.equal(domainMeta.collection, 'skillDomain');
+  assert.deepEqual(domainMeta.groups, ['testCoolColors', 'testWarmColors']);
+  const groupMeta = JSON.parse(files.get('testColors/testWarmColors/meta.json'));
+  assert.equal(groupMeta.collection, 'skillGroup');
+  assert.deepEqual(groupMeta.skills, ['testRecognizeOrange', 'testRecognizeRed']);
+  const skillMeta = JSON.parse(files.get('testColors/testWarmColors/testRecognizeRed/meta.json'));
+  assert.deepEqual(Object.keys(skillMeta).sort(), ['collection', 'id']);
+  assert.equal(skillMeta.collection, 'skill');
 
-  const group = JSON.parse(files.get('testColors/testWarmColors/uk.json'));
-  assert.equal(group.collection, 'skillGroup');
-  assert.equal(group.language, 'uk');
-  assert.equal(group.skills.length, 2);
-  assert.equal(typeof group.skills[0].name, 'string');
-
-  const skill = JSON.parse(files.get('testColors/testWarmColors/testRecognizeRed/en.json'));
-  assert.equal(skill.slug, 'testRecognizeRed');
-  assert.equal(skill.collection, 'skill');
-  assert.equal(skill.language, 'en');
-  assert.equal(typeof skill.name, 'string');
-  assert.equal(typeof skill.description, 'string');
-  assert(!JSON.stringify(domain).includes('methodological'));
-  assert(!JSON.stringify(domain).includes('\"fe\"'));
-  assert(!Object.hasOwn(skill, 'groups'));
-  assert(!Object.hasOwn(skill, 'skills'));
-
+  const locale = JSON.parse(files.get('testColors/testWarmColors/testRecognizeRed/uk.json'));
+  assert.deepEqual(Object.keys(locale).sort(), ['description', 'name']);
+  assert(locale.name.includes('[TEST uk]'));
+  assert(locale.description.includes('[TEST uk]'));
   for (const code of codes) {
-    assert(files.has('testShapes/' + code + '.json'));
-    assert(files.has('testShapes/testPolygonShapes/' + code + '.json'));
-    assert(files.has('testShapes/testPolygonShapes/testRecognizeTriangle/' + code + '.json'));
+    const filename = 'testShapes/testPolygonShapes/testRecognizeTriangle/' + code + '.json';
+    const copy = JSON.parse(files.get(filename));
+    assert.equal(typeof copy.name, 'string');
+    assert.equal(typeof copy.description, 'string');
+    assert.equal(Object.hasOwn(copy, 'id'), false);
+    assert.equal(Object.hasOwn(copy, 'language'), false);
+    assert.equal(Object.hasOwn(copy, 'slug'), false);
+    assert.equal(Object.hasOwn(copy, 'collection'), false);
   }
+  assert(![...files.values()].some(value =>
+    value.includes('"methodological"') || value.includes('"frontend"')));
+  assert(codes.includes('en') && codes.includes('uk'));
 });
 
-test('requires every supported locale and refuses incomplete input before publishing', () => {
-  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'skills-locale-missing-'));
+test('strictly rejects missing translations, authored slugs and frontend descriptions', () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'skills-publishing-'));
   try {
     const copied = path.join(temp, 'skills');
     fs.cpSync(fixture, copied, { recursive: true });
     const target = path.join(copied, 'testColors/testWarmColors/skills/testRecognizeRed.data.ts');
     const original = fs.readFileSync(target, 'utf8');
-    const changed = original.replace('    en: "[TEST en] Recognize red",\n', '');
-    assert.notEqual(original, changed);
-    fs.writeFileSync(target, changed);
-    assert.throws(() => loadSkillGraph(copied, languageCodes()), /missing \[en\]/);
+    function fails(replacement, pattern) {
+      assert.notEqual(replacement, original, 'The test mutation must alter input');
+      fs.writeFileSync(target, replacement);
+      assert.throws(() => loadSkillGraph(copied, languageCodes()), pattern);
+    }
+    fails(original.replace('    en: "[TEST en] Recognize red",\\n', ''), /missing \\[en\\]/);
+    fails(original.replace("  slug: 'testRecognizeRed',\\n", ''), /slug/);
+    fails(original.replace('    frontend: {', '    fe: {'), /frontend|Unexpected/);
+    fails(original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\\n', ''),
+      /missing \\[uk\\]/);
   } finally {
     fs.rmSync(temp, { recursive: true, force: true });
   }
 });
 
-test('rejects missing canonical slugs and incomplete frontend descriptions', () => {
-  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'skills-contract-'));
-  try {
-    const copied = path.join(temp, 'skills');
-    fs.cpSync(fixture, copied, { recursive: true });
-    const target = path.join(copied, 'testColors/testWarmColors/skills/testRecognizeRed.data.ts');
-    const original = fs.readFileSync(target, 'utf8');
-
-    fs.writeFileSync(target, original.replace("  slug: 'testRecognizeRed',\n", ''));
-    assert.throws(() => loadSkillGraph(copied, languageCodes()), /slug/);
-
-    fs.writeFileSync(target, original.replace('    frontend: {', '    fe: {'));
-    assert.throws(() => loadSkillGraph(copied, languageCodes()), /frontend|nonliteral|Unexpected/);
-
-    fs.writeFileSync(target, original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\n', ''));
-    assert.throws(() => loadSkillGraph(copied, languageCodes()), /missing \[uk\]/);
-  } finally {
-    fs.rmSync(temp, { recursive: true, force: true });
-  }
-});
-
-test('checks deterministic output and removes obsolete files only inside the generated tree', () => {
-  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'skills-publish-'));
+test('writes atomically, detects stale/changed files and deletes only the generated tree', () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'skills-public-'));
   try {
     const output = path.join(temp, 'public/data/skills');
-    const files = renderSkillFiles(loadSkillGraph(fixture, languageCodes()), languageCodes());
+    const { files } = resources();
     assert.equal(checkPublishedFiles(output, files).missing.length, files.size);
     writePublishedFiles(output, files);
     assert.deepEqual(checkPublishedFiles(output, files), { missing: [], changed: [], stale: [] });
     fs.writeFileSync(path.join(output, 'obsolete.json'), '{}');
     assert.deepEqual(checkPublishedFiles(output, files).stale, ['obsolete.json']);
-    fs.writeFileSync(path.join(output, 'testColors/en.json'), 'broken');
-    assert.deepEqual(checkPublishedFiles(output, files).changed, ['testColors/en.json']);
+    fs.writeFileSync(path.join(output, 'testColors/meta.json'), 'broken');
+    assert.deepEqual(checkPublishedFiles(output, files).changed, ['testColors/meta.json']);
     writePublishedFiles(output, files);
     assert.deepEqual(checkPublishedFiles(output, files), { missing: [], changed: [], stale: [] });
     assert.equal(fs.existsSync(path.join(output, 'obsolete.json')), false);
