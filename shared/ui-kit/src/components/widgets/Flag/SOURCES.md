@@ -27,7 +27,7 @@ The SVG images were imported by the project author from Wikipedia/Wikimedia-rela
 | `tr.svg`  | `Flag_of_Turkey.svg`                                                 |
 | `ua.svg`  | `Flag_of_Ukraine_3.svg`                                              |
 | `vn.svg`  | `Flag_of_Vietnam.svg`                                                |
-| `crh.svg` | `Flag_of_the_Crimeans.svg`                                           |
+| `qm.svg` | `Flag_of_the_Crimeans.svg`                                           |
 | `cn.svg`  | `Flag_of_the_People's_Republic_of_China.svg`                         |
 | `us.svg`  | `Flag_of_the_United_States.svg`                                      |
 

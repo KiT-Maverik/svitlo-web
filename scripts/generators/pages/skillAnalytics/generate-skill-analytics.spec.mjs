@@ -47,7 +47,7 @@ test('output remains deterministic, isolated by locale and strictly validated', 
   assert.throws(() => renderSkillAnalyticsFiles(malformed, codes), /Missing uk frontend description/);
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'skill-analytics-'));
   try {
-    const dest = path.join(tmp, 'public/data/Pages/skillAnalytics');
+    const dest = path.join(tmp, 'public/data/pages/skillAnalytics');
     writePublishedFiles(dest, files);
     assert.deepEqual(checkPublishedFiles(dest, files), { missing: [], changed: [], stale: [] });
     assert.deepEqual(fs.readdirSync(dest).sort(), codes.map(c => c + '.json').sort());

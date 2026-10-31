@@ -87,7 +87,7 @@ export async function loadSkillAnalyticsPage(
   if (!languagePattern.test(language) || resolveSkillLanguage(language) !== language) {
     throw new Error('Непідтримувана мова Skills: ' + language);
   }
-  const response = await fetch('/data/Pages/skillAnalytics/' + encodeURIComponent(language) + '.json', { signal });
+  const response = await fetch('/data/pages/skillAnalytics/' + encodeURIComponent(language) + '.json', { signal });
   if (!response.ok) throw new Error('Не вдалося завантажити Skill Analytics (' + response.status + ')');
   const domains = parseSkillAnalyticsPage(await response.json() as unknown);
   if (domainSlugs && (!domainSlugs.length || new Set(domainSlugs).size !== domainSlugs.length ||

@@ -102,7 +102,7 @@ function main() {
   const codes = languageCodes();
   const graph = loadSkillGraph(path.join(pkg, 'data/skills'), codes);
   const files = renderSkillAnalyticsFiles(graph, codes);
-  const output = path.join(pkg, 'public/data/Pages/skillAnalytics');
+  const output = path.join(pkg, 'public/data/pages/skillAnalytics');
   if (action === '--measure') {
     const metrics = measureSkillAnalyticsFiles(files);
     console.log(JSON.stringify(metrics, null, 2));
