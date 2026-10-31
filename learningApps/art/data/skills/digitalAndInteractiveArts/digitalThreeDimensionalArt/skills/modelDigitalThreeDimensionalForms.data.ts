@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const modelDigitalThreeDimensionalForms_Skill_Data = buildSkillConfig({
   slug: "modelDigitalThreeDimensionalForms",
   id: "4ecb1014-c8ac-4cef-8a31-6ebabfdd23bf",
-  name: { en: "Model Digital Three-Dimensional Forms" },
+  name: {
+    en: "Model Digital Three-Dimensional Forms",
+    zh: "建模数字三维形体",
+    hi: "डिजिटल त्रि-आयामी रूपों का मॉडल बनाएँ",
+    es: "Modelar formas digitales tridimensionales",
+    ar: "نمذجة أشكال رقمية ثلاثية الأبعاد",
+    fr: "Modéliser des formes numériques tridimensionnelles",
+    bn: "ডিজিটাল ত্রিমাত্রিক আকৃতির মডেল তৈরি করুন",
+    pt: "Modelar formas digitais tridimensionais",
+    ur: "ڈیجیٹل سہ جہتی اشکال کا ماڈل بنائیں",
+    id: "Memodelkan Bentuk Digital Tiga Dimensi",
+    de: "Digitale dreidimensionale Formen modellieren",
+    ja: "デジタルの三次元形状をモデリングする",
+    ko: "디지털 3차원 형태 모델링하기",
+    tr: "Dijital Üç Boyutlu Biçimleri Modellemek",
+    vi: "Tạo mô hình hình khối kỹ thuật số ba chiều",
+    ta: "மின்னிலக்க முப்பரிமாண வடிவங்களை மாதிரியாக்குங்கள்",
+    te: "డిజిటల్ త్రిమితీయ రూపాలను మోడల్ చేయండి",
+    mr: "डिजिटल त्रिमितीय आकारांचे मॉडेल तयार करा",
+    ms: "Memodelkan Bentuk Digital Tiga Dimensi",
+    he: "מידול צורות דיגיטליות תלת־ממדיות",
+    pl: "Modelować cyfrowe formy trójwymiarowe",
+    uk: "Моделювати цифрові тривимірні форми",
+    lt: "Modeliuoti skaitmenines trimates formas",
+    lv: "Modelēt digitālas trīsdimensiju formas",
+    et: "Digitaalsete kolmemõõtmeliste vormide modelleerimine",
+    be: "Мадэляваць лічбавыя трохмерныя формы",
+    ka: "ციფრული სამგანზომილებიანი ფორმების მოდელირება",
+    kk: "Цифрлық үшөлшемді пішіндерді модельдеу",
+    qm: "Raqemiy üç ölçemli şekillerge model bermek",
+  },
   description: {
     methodological: "Construct and refine surfaces and volumes with deliberate proportions, contours and relationships appropriate to a digital sculptural or modeled artwork.",
     frontend: {
@@ -35,6 +65,7 @@ export const modelDigitalThreeDimensionalForms_Skill_Data = buildSkillConfig({
           "be": "Фармуйце трохмерны лічбавы аб’ект з прадуманай формай і прапорцыямі.",
           "ka": "შექმენით სამგანზომილებიანი ციფრული ობიექტი გააზრებული ფორმითა და პროპორციებით.",
           "kk": "Ойластырылған пішін мен пропорция арқылы үшөлшемді цифрлық нысанды модельдеңіз。"
-    },
+    
+      qm: "Maqsatlı şekil ve nisbet ile üç ölçemli raqemiy obyektni şekillendiriñiz.",},
   },
 });
