@@ -4,6 +4,7 @@ import { orientation_SkillGroup_Data } from './orientation/orientation.data';
 import { figures_SkillGroup_Data } from './figures/figures.data';
 import { lines_SkillGroup_Data } from './lines/lines.data';
 import { solids_SkillGroup_Data } from './solids/solids.data';
+import { area_SkillGroup_Data } from './area/area.data';
 
 export const geometry_SkillDomain_Data = buildSkillDomainConfig({
   id: '5586a9c0-8695-49c2-97b8-ea55899eab69',
@@ -42,6 +43,7 @@ export const geometry_SkillDomain_Data = buildSkillDomainConfig({
     figures: figures_SkillGroup_Data.id,
     lines: lines_SkillGroup_Data.id,
     solids: solids_SkillGroup_Data.id,
+    area: area_SkillGroup_Data.id,
   },
   description: {
     methodological: "Spatial relationships, properties of plane figures and solids, lines and angles, geometric transformations, and measurement of perimeter and area.",

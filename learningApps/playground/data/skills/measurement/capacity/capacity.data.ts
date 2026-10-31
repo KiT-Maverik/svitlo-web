@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { capacityConcept_Skill_Data } from './skills';
+import { capacityConcept_Skill_Data, liter_Skill_Data } from './skills';
 
 export const capacity_SkillGroup_Data = buildSkillGroupConfig({
   id: '4ab3d3b7-3c90-4805-ad05-cf27cb9ae725',
@@ -36,6 +36,7 @@ export const capacity_SkillGroup_Data = buildSkillGroupConfig({
   },
   skillIds: {
     capacityConcept: capacityConcept_Skill_Data.id,
+    liter: liter_Skill_Data.id,
   },
   description: { methodological: "The volume of liquid that a container can hold, its measurement in liters and milliliters, and comparisons of capacities." },
 });
