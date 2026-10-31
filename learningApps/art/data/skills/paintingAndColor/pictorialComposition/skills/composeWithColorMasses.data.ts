@@ -32,6 +32,7 @@ export const composeWithColorMasses_Skill_Data = buildSkillConfig({
     be: "Кампанаваць з дапамогай каляровых мас",
     ka: "კომპოზიციის შექმნა ფერადი ლაქებით",
     kk: "Түстік дақтар арқылы композиция құру",
+    qm: "Büyük tüs alanları ile kompozitsiya qurmaq",
   },
   description: {
     methodological: "Balance large colored areas and their relationships before relying on smaller detail.",
@@ -64,6 +65,7 @@ export const composeWithColorMasses_Skill_Data = buildSkillConfig({
       be: "Спачатку размясціце вялікія каляровыя плоскасці, а потым дадавайце дробныя дэталі.",
       ka: "პატარა დეტალების დამატებამდე დიდი ფერადი არეები დაალაგეთ.",
       kk: "Ұсақ бөлшектерді қоспас бұрын үлкен түстік аймақтарды орналастырыңыз.",
+      qm: "Kiçik tafsilatlarnı qoşmazdan evel büyük tüs alanlarını tertip etiñiz."
     },
   },
 });
