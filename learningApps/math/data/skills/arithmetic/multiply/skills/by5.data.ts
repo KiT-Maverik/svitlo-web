@@ -11,6 +11,7 @@ export const by5_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — × 5',
     kk: 'Көбейту — × 5',
     en: 'Multiplication — × 5',
+    qm: 'Arttıruv — × 5',
     zh: '乘法 — × 5',
     hi: 'गुणा — × 5',
     es: 'Multiplicación — × 5',
@@ -38,6 +39,7 @@ export const by5_Skill_Data = buildSkillConfig({
       'Products with factor five relate to successive multiples of five and equal groups. They may be found by repeated addition or decomposition into familiar facts while preserving equal group size.',
     frontend: {
       en: 'You can multiply by five using five equal groups or by building on sums you already know.',
+      qm: 'Beş teñ topar ya da evelden bilgen toplamlarıñ yardımınen beşke arttıra bilesiñ.',
       zh: '你能用五个相等的组表示乘以五，也能利用熟悉的加法求出结果。',
       hi: 'तुम पाँच बराबर समूहों से या ज्ञात जोड़ के परिणामों की मदद से पाँच से गुणा कर सकते हो।',
       es: 'Puedes multiplicar por cinco con cinco grupos iguales o apoyándote en sumas conocidas.',

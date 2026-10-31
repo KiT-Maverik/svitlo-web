@@ -11,6 +11,7 @@ export const associative_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — ჯუფთებადობის თვისება',
     kk: 'Көбейту — терімділік қасиеті',
     en: 'Multiplication — Associative property',
+    qm: 'Arttıruv — birleştirüv hasiyeti',
     zh: '乘法 — 结合律',
     hi: 'गुणा — साहचर्य नियम',
     es: 'Multiplicación — Propiedad asociativa',
@@ -38,6 +39,7 @@ export const associative_Skill_Data = buildSkillConfig({
       'Multiplication is associative: (ab)c = a(bc). Regrouping factors preserves the product; the law does not permit arbitrary changes to factor values or replacing multiplication with addition.',
     frontend: {
       en: 'When multiplying three or more numbers, you can group the factors differently without changing the product.',
+      qm: 'Üç ya da daa çoq sayını arttırğanda arttırıcıları başqa-başqa şekilde toparlasañ da, arttıruv neticesi deñişmey.',
       zh: '三个或更多数相乘时，你可以改变因数的分组方式，积仍然不变。',
       hi: 'तीन या अधिक संख्याओं का गुणा करते समय गुणनखंडों के समूह बदल सकते हो, लेकिन गुणनफल नहीं बदलता।',
       es: 'Al multiplicar tres o más números, puedes agrupar los factores de otra manera sin cambiar el producto.',

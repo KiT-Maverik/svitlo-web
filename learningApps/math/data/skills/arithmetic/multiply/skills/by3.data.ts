@@ -11,6 +11,7 @@ export const by3_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — × 3',
     kk: 'Көбейту — × 3',
     en: 'Multiplication — × 3',
+    qm: 'Arttıruv — × 3',
     zh: '乘法 — × 3',
     hi: 'गुणा — × 3',
     es: 'Multiplicación — × 3',
@@ -38,6 +39,7 @@ export const by3_Skill_Data = buildSkillConfig({
       'Multiplication facts with factor three concern equal groups of three and successive multiples of three. The products can be derived using operation properties or neighboring known facts rather than memorized in isolation.',
     frontend: {
       en: 'You can multiply by three as three equal groups and work out multiples of three from facts you know.',
+      qm: 'Üç teñ toparnı qullanıp üçke arttıra ve bilgen neticeleriñden üçniñ eselerini tapa bilesiñ.',
       zh: '你能把乘以三看成三个相等的组，并利用已知算式求出三的倍数。',
       hi: 'तुम तीन से गुणा को तीन बराबर समूहों के रूप में समझ सकते हो और ज्ञात तथ्यों से तीन के गुणज निकाल सकते हो।',
       es: 'Puedes representar la multiplicación por tres con tres grupos iguales y deducir múltiplos de tres a partir de resultados conocidos.',
