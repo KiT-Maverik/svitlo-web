@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const analyzePublicArt_Skill_Data = buildSkillConfig({
   slug: "analyzePublicArt",
   id: "08d19e7d-ddf7-4ed0-a561-4f549de7196e",
-  name: { en: "Analyze Public Art" },
+  name: {
+    en: "Analyze Public Art",
+    zh: "分析公共艺术",
+    hi: "सार्वजनिक कला का विश्लेषण करें",
+    es: "Analizar el arte público",
+    ar: "تحليل الفن العام",
+    fr: "Analyser l’art public",
+    bn: "গণশিল্প বিশ্লেষণ করুন",
+    pt: "Analisar a arte pública",
+    ur: "عوامی فن کا تجزیہ کریں",
+    id: "Menganalisis Seni Publik",
+    de: "Öffentliche Kunst analysieren",
+    ja: "パブリックアートを分析する",
+    ko: "공공 예술 분석하기",
+    tr: "Kamusal Sanatı Çözümlemek",
+    vi: "Phân tích nghệ thuật công cộng",
+    ta: "பொதுக் கலையைப் பகுப்பாய்வு செய்யுங்கள்",
+    te: "ప్రజా కళను విశ్లేషించండి",
+    mr: "सार्वजनिक कलेचे विश्लेषण करा",
+    ms: "Menganalisis Seni Awam",
+    he: "ניתוח אמנות ציבורית",
+    pl: "Analizować sztukę publiczną",
+    uk: "Аналізувати публічне мистецтво",
+    lt: "Analizuoti viešąjį meną",
+    lv: "Analizēt publisko mākslu",
+    et: "Avaliku kunsti analüüsimine",
+    be: "Аналізаваць публічнае мастацтва",
+    ka: "საჯარო ხელოვნების ანალიზი",
+    kk: "Қоғамдық өнерді талдау",
+    qm: "Cemaat sanatını tahlil etüv",
+  },
   description: {
     methodological: "Explain how placement and community context affect access and reception.",
     frontend: {
@@ -35,6 +65,7 @@ export const analyzePublicArt_Skill_Data = buildSkillConfig({
           "be": "Даследуйце, як размяшчэнне публічнага мастацкага твора ўплывае на яго значэнне і даступнасць.",
           "ka": "შეისწავლეთ, როგორ მოქმედებს საჯარო ხელოვნების ნიმუშის მდებარეობა მის მნიშვნელობასა და ხელმისაწვდომობაზე.",
           "kk": "Қоғамдық өнер туындысының орналасуы оның мәні мен қолжетімділігіне қалай әсер ететінін зерттеңіз。"
-    },
+    
+      qm: "Cemaat sanat eseriniñ yeriniñ mana ve qolaylıqqa nasıl tesir etkenini keşf etiñiz.",},
   },
 });
