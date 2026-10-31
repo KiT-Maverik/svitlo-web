@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareSameNumerator_Skill_Data = buildSkillConfig({
+  slug: 'compareSameNumerator',
   id: '17d8eb21-df92-4074-a1d2-5a3bded8fea8',
   name: {
     en: "Comparing fractions with the same numerator",
@@ -35,7 +36,7 @@ export const compareSameNumerator_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Given the same positive numerator and unit whole, a larger denominator means smaller equal parts and therefore a smaller fraction. Comparing parts of different wholes by notation alone is invalid without a common unit.",
-    fe: {
+    frontend: {
       en: "When the top numbers match, a larger positive bottom number means smaller parts and a smaller fraction of the same whole.",
       zh: "分子是相同的正数时，分母越大，每份越小，表示同一整体的分数也越小。",
       hi: "समान धनात्मक अंश होने पर बड़ा हर छोटे भाग और उसी पूरे का छोटा भिन्न दर्शाता है।",

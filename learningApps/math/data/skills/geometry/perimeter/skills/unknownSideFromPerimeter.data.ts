@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unknownSideFromPerimeter_Skill_Data = buildSkillConfig({
+  slug: 'unknownSideFromPerimeter',
   id: '41da7699-fdbd-4872-bb37-615a456a92c3',
   name: {
     en: "Finding an unknown rectangle side from its perimeter",
@@ -35,7 +36,7 @@ export const unknownSideFromPerimeter_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "For a rectangle, P = 2(a+b) permits recovering an unknown side from the perimeter and known other side: b = P/2 - a. The result must be positive and expressed in compatible length units.",
-    fe: {
+    frontend: {
       en: "Use a rectangle’s known perimeter and one side to calculate the length of the other side.",
       zh: "已知长方形的周长和一条边，算出另一条边的长度。",
       hi: "आयत का परिमाप और एक भुजा जानकर दूसरी भुजा की लंबाई निकालें।",

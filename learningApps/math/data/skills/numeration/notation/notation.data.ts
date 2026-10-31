@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { digits09_Skill_Data, readWrite20_Skill_Data, readWrite100_Skill_Data, readWrite1000_Skill_Data } from './skills';
 
 export const notation_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'notation',
   id: '26fde8d8-fc31-499b-892b-0dbe5dfcf09c',
   name: {
     en: "Numeral notation",
@@ -34,15 +35,15 @@ export const notation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zapis liczb",
     uk: "Числовий запис",
   },
-  skillIds: {
-    digits09: digits09_Skill_Data.id,
-    readWrite20: readWrite20_Skill_Data.id,
-    readWrite100: readWrite100_Skill_Data.id,
-    readWrite1000: readWrite1000_Skill_Data.id,
+  skills: {
+    digits09: digits09_Skill_Data,
+    readWrite20: readWrite20_Skill_Data,
+    readWrite100: readWrite100_Skill_Data,
+    readWrite1000: readWrite1000_Skill_Data,
   },
   description: {
     methodological: "Digits as signs in the decimal system and the correspondence between spoken number names, written notation, and quantities for one-, two-, and three-digit numbers.",
-    fe: {
+    frontend: {
       en: "Connect spoken numbers, written digits, and the quantities they represent, including zero and numbers with several digits.",
       zh: "把数的读法、数字写法和它表示的数量联系起来，包括零和多位数。",
       hi: "संख्याओं के बोले गए नाम, लिखे अंक और उनसे व्यक्त मात्राएँ जोड़ें, शून्य व कई अंकों वाली संख्याएँ भी।",

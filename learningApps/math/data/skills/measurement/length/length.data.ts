@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { compareLength_Skill_Data, nonstandardLength_Skill_Data, useRuler_Skill_Data, measureCentimeters_Skill_Data, drawSegmentCentimeters_Skill_Data, millimeters_Skill_Data, decimeters_Skill_Data, meters_Skill_Data, kilometers_Skill_Data, estimateLength_Skill_Data, addSubtractLengths_Skill_Data } from './skills';
 
 export const length_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'length',
   id: 'fd424287-b12e-47a3-92e7-931819d5e3df',
   name: {
     en: "Length",
@@ -34,18 +35,18 @@ export const length_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Długość",
     uk: "Довжина"
   },
-  skillIds: {
-    compareLength: compareLength_Skill_Data.id,
-    nonstandardLength: nonstandardLength_Skill_Data.id,
-    useRuler: useRuler_Skill_Data.id,
-    measureCentimeters: measureCentimeters_Skill_Data.id,
-    drawSegmentCentimeters: drawSegmentCentimeters_Skill_Data.id,
-    millimeters: millimeters_Skill_Data.id,
-    decimeters: decimeters_Skill_Data.id,
-    meters: meters_Skill_Data.id,
-    kilometers: kilometers_Skill_Data.id,
-    estimateLength: estimateLength_Skill_Data.id,
-    addSubtractLengths: addSubtractLengths_Skill_Data.id,
+  skills: {
+    compareLength: compareLength_Skill_Data,
+    nonstandardLength: nonstandardLength_Skill_Data,
+    useRuler: useRuler_Skill_Data,
+    measureCentimeters: measureCentimeters_Skill_Data,
+    drawSegmentCentimeters: drawSegmentCentimeters_Skill_Data,
+    millimeters: millimeters_Skill_Data,
+    decimeters: decimeters_Skill_Data,
+    meters: meters_Skill_Data,
+    kilometers: kilometers_Skill_Data,
+    estimateLength: estimateLength_Skill_Data,
+    addSubtractLengths: addSubtractLengths_Skill_Data,
   },
   description: { methodological: "Direct and instrument-based comparison of lengths, metric units of differing magnitudes, and operations on homogeneous length quantities." },
 });

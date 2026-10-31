@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const oneAsFraction_Skill_Data = buildSkillConfig({
+  slug: 'oneAsFraction',
   id: '24ae675d-82dc-4eb4-94fe-adc96f15e452',
   name: {
     en: "Showing one whole as n/n",
@@ -35,7 +36,7 @@ export const oneAsFraction_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "For nonzero n, n/n equals one whole: n parts of size 1/n reconstruct the unit. This is true independently of the partition or visual model.",
-    fe: {
+    frontend: {
       en: "All the equal parts together make one whole: 2/2, 3/3, and 5/5 each equal 1.",
       zh: "所有等份合起来就是一个整体：2/2、3/3和5/5都等于1。",
       hi: "सभी बराबर भाग मिलकर एक पूरा बनाते हैं: 2/2, 3/3 और 5/5 सभी 1 के बराबर हैं।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const formulateInvestigationQuestion_Skill_Data = buildSkillConfig({
+  slug: 'formulateInvestigationQuestion',
   id: '9977837d-7e8b-4a51-8a83-89d51242aa8a',
   name: {
     en: "Formulating a data investigation question",
@@ -34,7 +35,7 @@ export const formulateInvestigationQuestion_Skill_Data = buildSkillConfig({
     uk: "Формулювання запитання для дослідження даних",
   },
   description: { methodological: "A statistical question calls for observations or responses that may vary among members of a population. Distinguish a question requiring data collection from one whose answer follows uniquely from an already known arithmetic expression.",
-    fe: {
+    frontend: {
       en: "You can ask a question that needs data from several observations or people because the answers may differ.",
       zh: "你能提出一个需要收集多个观察结果或不同人的回答才能解答的问题，因为答案可能不同。",
       hi: "आप ऐसा प्रश्न पूछ सकते हैं जिसका उत्तर अलग-अलग अवलोकनों या लोगों से डेटा इकट्ठा करके मिले, क्योंकि उत्तर भिन्न हो सकते हैं।",

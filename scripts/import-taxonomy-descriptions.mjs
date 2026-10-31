@@ -8,7 +8,7 @@
  *   node scripts/import-taxonomy-descriptions.mjs --package learningApps/math --write
  *
  * Dry-run is the default. No translation, ID generation, file creation,
- * export rewrites, hierarchy changes, or FE localization is performed.
+ * export rewrites, hierarchy changes, or frontend localization is performed.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -76,7 +76,7 @@ function parseSection(entry) {
   }
   const methodological = field('Methodological description: ');
   const friendly = field('User-friendly description: ');
-  // This is editorial draft copy only. Publishing a single locale to fe is forbidden.
+  // This is editorial draft copy only. Publishing a single locale to frontend is forbidden.
   const accepted = new Set([...count.map(x => x.number), linkLines[0].number,
     ...lines.filter(x => /^Methodological description: |^User-friendly description: /.test(x.line)).map(x => x.number)]);
   const unexpected = lines.filter(x => !accepted.has(x.number));
@@ -150,4 +150,4 @@ if (write) {
   for (const item of pending) fs.writeFileSync(item.target, item.after);
 }
 process.stdout.write((write ? 'Updated ' : 'Would update ') + pending.length +
-  '/' + changes.length + ' Code entities. User-friendly drafts are NOT published to description.fe.\n');
+  '/' + changes.length + ' Code entities. User-friendly drafts are NOT published to description.frontend.\n');

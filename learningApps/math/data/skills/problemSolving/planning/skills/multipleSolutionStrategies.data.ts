@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const multipleSolutionStrategies_Skill_Data = buildSkillConfig({
+  slug: 'multipleSolutionStrategies',
   id: '2be4fa3b-25b6-4c4d-95a3-61e1e1c160c2',
   name: {
     lt: "Sprendimo būdų palyginimas",
@@ -34,7 +35,7 @@ export const multipleSolutionStrategies_Skill_Data = buildSkillConfig({
     uk: "Порівняння способів розв’язання",
   },
   description: { methodological: "Different algorithms or models can reach the same correct answer. Comparing strategies requires mathematical validity, justification of each step, computational complexity, and the conditions under which each method applies.",
-    fe: {
+    frontend: {
       en: "You can compare two correct ways to solve a problem and explain when each works and which is more efficient.",
       zh: "你能比较同一道题的两种正确解法，说明各自何时适用以及哪种更高效。",
       hi: "आप किसी समस्या के दो सही समाधान तरीकों की तुलना करके बता सकते हैं कि प्रत्येक कब काम करता है और कौन-सा अधिक कुशल है।",

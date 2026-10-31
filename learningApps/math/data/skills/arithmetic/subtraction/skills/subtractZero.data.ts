@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const subtractZero_Skill_Data = buildSkillConfig({
+  slug: 'subtractZero',
   id: '8481e65e-c9b4-4ac0-b336-03fe1a17cfcb',
   name: {
     lt: "Atimtis — nulis",
@@ -35,7 +36,7 @@ export const subtractZero_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Subtracting zero leaves any number unchanged: a - 0 = a. This does not imply that zero minus a positive value is unchanged or that subtraction is commutative.",
-    fe: {
+    frontend: {
       en: "Subtracting zero leaves the starting number unchanged; reversing the numbers in a subtraction is not the same thing.",
       zh: "减去零不会改变原数；减法中把两个数交换位置并不一样。",
       hi: "शून्य घटाने से मूल संख्या नहीं बदलती; घटाव में संख्याओं का क्रम उलटना अलग बात है।",

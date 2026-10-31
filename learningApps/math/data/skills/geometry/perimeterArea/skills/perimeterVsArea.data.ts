@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const perimeterVsArea_Skill_Data = buildSkillConfig({
+  slug: 'perimeterVsArea',
   id: '96ab255c-a9f4-40aa-b072-e4f59790dfe5',
   name: {
     en: "Choosing perimeter or area for a measurement",
@@ -35,7 +36,7 @@ export const perimeterVsArea_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Perimeter measures the length of a closed plane boundary in length units, while area measures the enclosed region in square units. Neither determines the other automatically, and they require different measurement procedures.",
-    fe: {
+    frontend: {
       en: "Choose perimeter to measure the boundary in length units or area to measure the inside in square units.",
       zh: "需要测量边界时选周长，用长度单位；测量内部时选面积，用平方单位。",
       hi: "सीमा नापने के लिए लंबाई की इकाइयों में परिमाप चुनें, भीतर की जगह के लिए वर्ग इकाइयों में क्षेत्रफल।",

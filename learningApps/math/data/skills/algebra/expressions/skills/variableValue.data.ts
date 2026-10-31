@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const variableValue_Skill_Data = buildSkillConfig({
+  slug: 'variableValue',
   id: 'a8b94c00-522c-4a04-8fe1-4038a1b1a019',
   name: {
     en: "Evaluating simple expressions with a variable",
@@ -35,7 +36,7 @@ export const variableValue_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A letter in an expression may represent a variable assigned a value under given conditions. Substituting that value and performing operations evaluates the expression; symbolic notation does not establish a different arithmetic law.",
-    fe: {
+    frontend: {
       en: "When a letter stands for a number, you can replace it with a given value and calculate the expression.",
       zh: "当字母代表一个数时，你能代入给定的值并计算表达式。",
       hi: "जब कोई अक्षर संख्या को दर्शाता है, तब उसका दिया गया मान रखकर व्यंजक का मान निकाल सकते हो।",

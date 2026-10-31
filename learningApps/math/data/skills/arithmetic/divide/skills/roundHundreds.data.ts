@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const roundHundreds_Skill_Data = buildSkillConfig({
+  slug: 'roundHundreds',
   id: '1299877e-f1df-44ec-9b36-6d0b11026de9',
   name: {
     lt: "Dalyba — pilni šimtai",
@@ -35,7 +36,7 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Divide multiples of a hundred by one-digit numbers by grouping hundreds and, when needed, exchanging them for tens or ones. The result must satisfy the inverse relation between dividend, divisor, and quotient.",
-    fe: {
+    frontend: {
       en: "You can divide whole hundreds by a one-digit number, regrouping hundreds into tens or ones when needed.",
       zh: "你能用一位数除整百数，必要时把百换成十或一再计算。",
       hi: "तुम पूरी सैकड़ों की संख्या को एक अंक से भाग दे सकते हो और ज़रूरत पर सैकड़ों को दहाइयों या इकाइयों में बदल सकते हो।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const numberBonds10_Skill_Data = buildSkillConfig({
+  slug: 'numberBonds10',
   id: '43d5def4-faee-41d1-b9a8-b4e120120bb6',
   name: {
     lt: "Sudėtis ir atimtis — skaičiaus 10 sudėtis",
@@ -35,7 +36,7 @@ export const numberBonds10_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Ten can be decomposed into multiple ordered or unordered pairs of nonnegative addends whose sum is ten. Increasing one part determines a corresponding decrease in the other while the whole stays fixed.",
-    fe: {
+    frontend: {
       en: "You can find different pairs of numbers that add up to ten and see how changing one part affects the other.",
       zh: "你能找出相加等于十的不同数对，并理解其中一个数变化时另一个怎样变化。",
       hi: "तुम ऐसे अलग-अलग संख्या-युग्म खोज सकते हो जिनका योग दस हो और समझ सकते हो कि एक भाग बदलने पर दूसरा कैसे बदलता है।",

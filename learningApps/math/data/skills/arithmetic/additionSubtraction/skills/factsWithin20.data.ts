@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const factsWithin20_Skill_Data = buildSkillConfig({
+  slug: 'factsWithin20',
   id: '1ffee805-7302-4069-a2ae-1639b07ce718',
   name: {
     lt: "Sudėtis ir atimtis — skaičių deriniai iki 20",
@@ -35,7 +36,7 @@ export const factsWithin20_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Fluency within twenty combines knowledge of fundamental number facts with deriving sums and differences using decomposition, complements, decimal structure, and inverse operations. Speed alone does not establish correctness.",
-    fe: {
+    frontend: {
       en: "You can find sums and differences within twenty using known number facts, decomposing numbers, and the link between addition and subtraction.",
       zh: "你能利用已知算式、拆分数字以及加减法的互逆关系，求出二十以内的和与差。",
       hi: "तुम ज्ञात संख्या तथ्यों, संख्याओं को तोड़ने और जोड़-घटाव के संबंध से बीस के भीतर योग और अंतर निकाल सकते हो।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const expandedForm_Skill_Data = buildSkillConfig({
+  slug: 'expandedForm',
   id: 'f78fce9f-6e79-4378-9448-39fcdbc42d0d',
   name: {
     lt: "Skaičiaus išskaidyta forma",
@@ -35,7 +36,7 @@ export const expandedForm_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Standard expanded form expresses a number as the sum of its nonzero place values, and recombining the terms restores the number. This is a positional representation of the same value, not a different number.",
-    fe: {
+    frontend: {
       en: "Break a number into a sum of its place values and put them back together. For example, 243 = 200 + 40 + 3.",
       zh: "把一个数写成各数位的和，再重新合成它，例如243 = 200 + 40 + 3。",
       hi: "संख्या को स्थानिक मानों के योग में तोड़ें और फिर जोड़ें, जैसे 243 = 200 + 40 + 3।",

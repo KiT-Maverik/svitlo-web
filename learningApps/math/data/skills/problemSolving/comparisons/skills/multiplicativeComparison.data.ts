@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const multiplicativeComparison_Skill_Data = buildSkillConfig({
+  slug: 'multiplicativeComparison',
   id: '1d85ddb7-6a08-4972-8458-80d86a41daeb',
   name: {
     lt: "Daugybinių palyginimo uždavinių sprendimas",
@@ -34,7 +35,7 @@ export const multiplicativeComparison_Skill_Data = buildSkillConfig({
     uk: "Розв’язування задач на кратне порівняння",
   },
   description: { methodological: "Multiplicative comparison finds the ratio between two positive quantities of the same dimension, not their difference. 'How many times as much' expresses a scale factor rather than an additive comparison.",
-    fe: {
+    frontend: {
       en: "You can find how many times one positive quantity is as large as another by comparing their ratio, not their difference.",
       zh: "你能通过两个正数量的比值，求出一个是另一个的几倍，而不是比较它们的差。",
       hi: "आप दो धनात्मक मात्राओं का अनुपात देखकर बता सकते हैं कि एक दूसरी से कितने गुना है, उनके अंतर से नहीं।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const spatialOrientationPath_Skill_Data = buildSkillConfig({
+  slug: 'spatialOrientationPath',
   id: '1defe702-c0b3-4760-aea0-2d2861933d5f',
   name: {
     en: "Giving and following route directions",
@@ -35,7 +36,7 @@ export const spatialOrientationPath_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A route is an ordered sequence of moves and turns relative to a fixed initial orientation. Changing command order or starting direction may change the destination even if the set of steps stays the same.",
-    fe: {
+    frontend: {
       en: "Give or follow directions in the right order. Changing where you face or the order of turns may lead somewhere else.",
       zh: "按正确顺序给出或执行路线指令。改变面朝方向或转弯顺序，终点可能不同。",
       hi: "सही क्रम में रास्ते के निर्देश दें या मानें। दिशा या मोड़ों का क्रम बदलने से मंज़िल बदल सकती है।",

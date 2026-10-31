@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const closedOpenLines_Skill_Data = buildSkillConfig({
+  slug: 'closedOpenLines',
   id: 'd52a91eb-a4b7-48c7-8d2c-97aceb88b146',
   name: {
     en: "Identifying closed and open lines",
@@ -35,7 +36,7 @@ export const closedOpenLines_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A closed line has no distinct start and end points, whereas an open line does not close into a loop. Not every closed line is polygonal, and a line is not the region it encloses.",
-    fe: {
+    frontend: {
       en: "Tell whether a line forms a closed loop or stays open. A closed loop is not always made of straight sides.",
       zh: "判断线是否围成闭合的圈，还是保持开口。闭合的线不一定由直线段组成。",
       hi: "बताएँ रेखा बंद घेरा बनाती है या खुली रहती है। बंद रेखा हमेशा सीधी भुजाओं की नहीं होती।",

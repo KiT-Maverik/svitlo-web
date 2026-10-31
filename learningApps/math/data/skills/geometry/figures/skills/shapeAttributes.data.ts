@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const shapeAttributes_Skill_Data = buildSkillConfig({
+  slug: 'shapeAttributes',
   id: '91ac826f-9b38-4dee-8e19-bd7883514afe',
   name: {
     en: "Classifying figures by sides and vertices",
@@ -35,7 +36,7 @@ export const shapeAttributes_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Classify polygons by their side and vertex counts and defining geometric properties. A simple polygon has equally many sides and vertices, though orientation, side lengths, and shape can vary.",
-    fe: {
+    frontend: {
       en: "Sort polygons by the number of sides and corners and by their geometric features, not by how they are drawn.",
       zh: "根据多边形的边数、顶点数及几何性质分类，而不受画法影响。",
       hi: "बहुभुजों को भुजाओं, शीर्षों की संख्या और गुणों से वर्गीकृत करें, चित्र की दिशा से नहीं।",

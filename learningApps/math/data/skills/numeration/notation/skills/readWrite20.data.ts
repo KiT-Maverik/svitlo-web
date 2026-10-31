@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readWrite20_Skill_Data = buildSkillConfig({
+  slug: 'readWrite20',
   id: '77344ce3-a3dc-4f48-8a4f-369d520b77d4',
   name: {
     lt: "Skaičių 0–20 skaitymas, rašymas ir siejimas su kiekiu",
@@ -35,7 +36,7 @@ export const readWrite20_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Associate a number's spoken name, its positional numeral, and its representation as a quantity with the same value. Zero also has a numeral and a cardinal meaning; a number is distinct from its representations.",
-    fe: {
+    frontend: {
       en: "Connect numbers from 0 to 20 with their spoken names, written forms, and matching quantities. Zero represents none.",
       zh: "把0到20的数、读法、写法和相应数量对应起来；零表示一个也没有。",
       hi: "0 से 20 तक संख्याओं के नाम, लिखावट और मात्राओं का मेल समझें। शून्य का अर्थ कोई वस्तु नहीं है।",

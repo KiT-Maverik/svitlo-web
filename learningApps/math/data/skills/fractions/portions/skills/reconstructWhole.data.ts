@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const reconstructWhole_Skill_Data = buildSkillConfig({
+  slug: 'reconstructWhole',
   id: '187884f4-b528-4f66-aed8-ccd4b5fe5b74',
   name: {
     en: "Finding the whole from a known unit fraction",
@@ -35,7 +36,7 @@ export const reconstructWhole_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Given one of n equal parts of a whole, find the complete quantity by multiplying the part by positive n. This inverse relationship with division preserves the defined whole and its measurement unit.",
-    fe: {
+    frontend: {
       en: "If you know one of n equal shares, multiply it by n to find the whole quantity.",
       zh: "如果知道整体平均分成n份后其中一份的量，乘以n就能求出整体。",
       hi: "यदि n बराबर हिस्सों में से एक का मान पता हो, तो उसे n से गुणा करके पूरी मात्रा खोजें।",

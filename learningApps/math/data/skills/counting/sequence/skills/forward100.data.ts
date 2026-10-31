@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const forward100_Skill_Data = buildSkillConfig({
+  slug: 'forward100',
   id: '64ecb242-b1d9-4967-a020-5f6fc711aa93',
   name: {
     en: "Counting forward and backward within 100",
@@ -35,7 +36,7 @@ export const forward100_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Move forward or backward by one from any point within the hundred range. Crossing a ten boundary preserves the succession of neighboring numbers without restarting from one.",
-    fe: {
+    frontend: {
       en: "Start anywhere within 100 and move to the next or previous number by one, even across a multiple of ten.",
       zh: "从100以内任意一个数开始，每次加一或减一，跨过整十也能继续。",
       hi: "100 के भीतर कहीं से भी एक जोड़कर या घटाकर अगली या पिछली संख्या खोजें, दहाई पार करते समय भी।",

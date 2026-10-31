@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const twoDigitByOne_Skill_Data = buildSkillConfig({
+  slug: 'twoDigitByOne',
   id: 'd2a66536-011d-4d97-b85b-707e2b55919d',
   name: {
     lt: "Daugyba — dviženklis skaičius iš vienaženklio",
@@ -35,7 +36,7 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Decompose the two-digit factor into tens and ones, distribute multiplication over the resulting sum, and combine partial products. Each component must retain its original place-value weight.",
-    fe: {
+    frontend: {
       en: "You can multiply a two-digit number by a one-digit number by splitting it into tens and ones and combining the partial products.",
       zh: "你能把两位数拆成十和一，分别乘以一位数，再将部分乘积相加。",
       hi: "तुम दो अंकों की संख्या को दहाइयों और इकाइयों में बाँटकर हर हिस्से का एक अंक से गुणा कर सकते हो और आंशिक गुणनफल जोड़ सकते हो।",

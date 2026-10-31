@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const addLikeDenominators_Skill_Data = buildSkillConfig({
+  slug: 'addLikeDenominators',
   id: 'bb4932e9-7867-4556-a715-8c4d3afc1553',
   name: {
     en: "Adding fractions with the same denominator within one whole",
@@ -35,7 +36,7 @@ export const addLikeDenominators_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "To add fractions with equal nonzero denominators, add the counts of like unit parts: a/b + c/b = (a+c)/b. The rule still holds when the sum exceeds one, although the Skill's examples stay within one whole.",
-    fe: {
+    frontend: {
       en: "Add fractions with the same bottom number by adding their top numbers. The size of each part stays the same, even if the total exceeds one whole.",
       zh: "分母相同的分数相加，只要把分子相加。每份大小不变，和也可能超过一个整体。",
       hi: "समान हर वाले भिन्नों को जोड़ने के लिए अंश जोड़ें। भागों का आकार नहीं बदलता, चाहे योग एक से बड़ा हो।",

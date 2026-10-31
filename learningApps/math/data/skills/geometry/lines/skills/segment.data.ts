@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const segment_Skill_Data = buildSkillConfig({
+  slug: 'segment',
   id: '174ccc59-ccc9-4c20-83ec-1882af1c3ec8',
   name: {
     en: "Constructing and labeling line segments",
@@ -35,7 +36,7 @@ export const segment_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A line segment is the part of a straight line between two endpoints, including those points, and can be named by them. Construction preserves straightness; its length is the distance between endpoints.",
-    fe: {
+    frontend: {
       en: "Draw a straight segment between two endpoints, label them, and understand its length.",
       zh: "在两个端点之间画直线段，标记端点并理解线段的长度。",
       hi: "दो सिरों के बीच सीधा रेखाखंड बनाएँ, सिरों के नाम लिखें और उसकी लंबाई समझें।",

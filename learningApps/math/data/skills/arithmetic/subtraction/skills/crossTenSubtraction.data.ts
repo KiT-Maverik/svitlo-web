@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const crossTenSubtraction_Skill_Data = buildSkillConfig({
+  slug: 'crossTenSubtraction',
   id: '31be8d1e-5c8c-44cb-b8da-bf811b46c4f7',
   name: {
     lt: "Atimtis — peržengiant dešimtį",
@@ -35,7 +36,7 @@ export const crossTenSubtraction_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "When the minuend has insufficient ones, exchange one ten for ten ones without changing its value. Crossing ten also admits other equivalent strategies that preserve the difference.",
-    fe: {
+    frontend: {
       en: "You can subtract across ten by exchanging one ten for ten ones without changing the starting number.",
       zh: "你能在跨十减法中把一个十换成十个一，而不改变原数。",
       hi: "तुम एक दहाई को दस इकाइयों में बदलकर दस की सीमा पार करते हुए घटा सकते हो, बिना शुरुआती संख्या बदले।",

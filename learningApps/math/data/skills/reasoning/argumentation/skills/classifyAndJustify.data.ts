@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const classifyAndJustify_Skill_Data = buildSkillConfig({
+  slug: 'classifyAndJustify',
   id: '1e440f3e-c2b3-4a1c-ba51-01ece6aea896',
   name: {
     en: "Classifying objects or numbers by a rule and justifying the choice",
@@ -35,7 +36,7 @@ export const classifyAndJustify_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Only numbers divisible by three may belong to a specified group; membership must be justified by the mathematical classification rule, not by superficial similarities of notation.",
-    fe: {
+    frontend: {
       en: "You can group objects or numbers by a clear rule and explain why each item belongs or does not belong.",
       zh: "你能按照明确的规则给物体或数字分组，并说明每一项为什么符合或不符合规则。",
       hi: "आप किसी स्पष्ट नियम के अनुसार वस्तुओं या संख्याओं को समूहों में रख सकते हैं और बता सकते हैं कि कौन-सी चीज़ उस समूह में क्यों आती है या नहीं आती।",

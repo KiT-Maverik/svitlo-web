@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const threeDigitByOne_Skill_Data = buildSkillConfig({
+  slug: 'threeDigitByOne',
   id: '94d69b03-cf2e-47bf-8e81-91d83098f45d',
   name: {
     lt: "Dalyba — triženklis skaičius iš vienaženklio",
@@ -35,7 +36,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Decomposing a three-digit dividend into convenient place-value or additive parts allows computing partial quotients and reconstructing the total. Each division must be valid and retain the corresponding place-value weight.",
-    fe: {
+    frontend: {
       en: "You can divide a three-digit number by a one-digit number by splitting it into convenient parts and combining their quotients.",
       zh: "你能把三位数拆成便于计算的部分，分别除以一位数，再合并各部分的商。",
       hi: "तुम तीन अंकों की संख्या को सुविधाजनक भागों में बाँटकर हर भाग को एक अंक से भाग दे सकते हो और भागफल जोड़ सकते हो।",

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { roundToTen_Skill_Data, roundToHundred_Skill_Data, estimateQuantity_Skill_Data } from './skills';
 
 export const estimation_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'estimation',
   id: 'be26668b-7f9a-40dd-b78f-f65acb5f4791',
   name: {
     en: "Estimating numbers",
@@ -34,14 +35,14 @@ export const estimation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Szacowanie liczb",
     uk: "Оцінювання чисел",
   },
-  skillIds: {
-    roundToTen: roundToTen_Skill_Data.id,
-    roundToHundred: roundToHundred_Skill_Data.id,
-    estimateQuantity: estimateQuantity_Skill_Data.id,
+  skills: {
+    roundToTen: roundToTen_Skill_Data,
+    roundToHundred: roundToHundred_Skill_Data,
+    estimateQuantity: estimateQuantity_Skill_Data,
   },
   description: {
     methodological: "Approximate numerical values and quantities, rounding, and matching estimation precision to the magnitude of the actual quantity.",
-    fe: {
+    frontend: {
       en: "Make sensible approximations of quantities or values and round numbers to a useful level of precision.",
       zh: "对数量或数值作出合理估计，并按需要的精度四舍五入。",
       hi: "मात्राओं या मानों का उचित अनुमान लगाएँ और आवश्यक सटीकता तक संख्याएँ पूर्णांकित करें।",

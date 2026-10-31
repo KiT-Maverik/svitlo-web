@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const makeHundred_Skill_Data = buildSkillConfig({
+  slug: 'makeHundred',
   id: '78bc05cb-9e61-488a-84d6-44b1612a6df9',
   name: {
     lt: "Dešimt dešimčių sudaro šimtą",
@@ -35,7 +36,7 @@ export const makeHundred_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Ten tens are equivalent to one hundred, or one hundred ones. This relation enables crossing the hundred boundary and understanding positional decimal notation.",
-    fe: {
+    frontend: {
       en: "Ten tens make one hundred, just as one hundred ones do. They are different groupings of the same amount.",
       zh: "十个十等于一百，一百个一也等于一百；只是分组方式不同。",
       hi: "दस दहाइयाँ या सौ इकाइयाँ, दोनों मिलकर एक सैकड़ा बनाती हैं। समूह बदलता है, मात्रा नहीं।",

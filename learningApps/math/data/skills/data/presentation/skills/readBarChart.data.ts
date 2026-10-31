@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readBarChart_Skill_Data = buildSkillConfig({
+  slug: 'readBarChart',
   id: '391638bc-6f41-49cf-b499-a35253bb0ef7',
   name: {
     en: "Reading a bar chart",
@@ -34,7 +35,7 @@ export const readBarChart_Skill_Data = buildSkillConfig({
     uk: "Читання стовпчикової діаграми",
   },
   description: { methodological: "The height or length of a bar encodes a numerical value according to a given scale and baseline. Comparisons require reading the axes and categories rather than relying on decorative bar width or area.",
-    fe: {
+    frontend: {
       en: "You can read a bar chart by using the labels and number scale to find and compare values, not by judging how wide the bars look.",
       zh: "你能根据标签和数值刻度读取条形图并比较数据，而不是凭条形的宽度判断数量。",
       hi: "आप नामों और संख्यात्मक पैमाने से स्तंभ आलेख के मान पढ़कर उनकी तुलना कर सकते हैं, केवल स्तंभों की चौड़ाई देखकर नहीं।",

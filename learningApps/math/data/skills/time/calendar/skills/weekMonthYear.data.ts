@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const weekMonthYear_Skill_Data = buildSkillConfig({
+  slug: 'weekMonthYear',
   id: '3fccd9a5-9094-400e-8401-be2fa98cbfa6',
   name: {
     en: "Navigating days, weeks, and months in a calendar",
@@ -34,7 +35,7 @@ export const weekMonthYear_Skill_Data = buildSkillConfig({
     uk: "Орієнтування в днях, тижнях і місяцях календаря",
   },
   description: { methodological: "A week is a recurring sequence of seven days, while a calendar year consists of months of different lengths. The competency covers ordering days and months, locating dates, and handling transitions between weeks, months, and years.",
-    fe: {
+    frontend: {
       en: "You can find dates on a calendar, name days of the week and months in order, and follow changes from one week, month, or year to the next.",
       zh: "你能在日历上查找日期，按顺序说出星期和月份，并理解跨周、跨月或跨年的变化。",
       hi: "आप कैलेंडर में तारीखें ढूँढ़ सकते हैं, सप्ताह के दिन और महीने क्रम से बता सकते हैं तथा सप्ताह, महीने और साल बदलने को समझ सकते हैं।",

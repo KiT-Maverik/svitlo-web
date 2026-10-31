@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const partWhole_Skill_Data = buildSkillConfig({
+  slug: 'partWhole',
   id: 'edd12274-ab3e-4409-bbc0-9847140ec465',
   name: {
     lt: "Sudėtis ir atimtis — dalies ir visumos ryšys",
@@ -35,7 +36,7 @@ export const partWhole_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The additive part-whole model relates a whole to the sum of its components and permits finding an unknown component from the whole and known parts. Do not confuse the whole's total with a component's amount.",
-    fe: {
+    frontend: {
       en: "You can find a whole from its parts or find a missing part when you know the whole and the other parts.",
       zh: "你能根据各部分求出整体，也能在知道整体和其他部分时求出缺少的部分。",
       hi: "तुम हिस्सों से पूरा ज्ञात कर सकते हो या पूरा और बाकी हिस्से मालूम होने पर गायब हिस्सा निकाल सकते हो।",

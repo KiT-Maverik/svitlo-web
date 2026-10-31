@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const equalSharing_Skill_Data = buildSkillConfig({
+  slug: 'equalSharing',
   id: '9a201a1d-c00d-4375-91c5-aaba7c579060',
   name: {
     lt: "Dalyba — lygiomis dalimis",
@@ -35,7 +36,7 @@ export const equalSharing_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Partitive division determines the size of each group from the total and the number of equal groups. Nonzero remainders and integer divisibility may require explicit qualification of the mathematical model.",
-    fe: {
+    frontend: {
       en: "You can share a total into a known number of equal groups and find how much belongs in each group.",
       zh: "你能把总量平均分成已知数量的组，并求出每组有多少。",
       hi: "तुम किसी कुल मात्रा को दी गई संख्या के बराबर समूहों में बाँटकर हर समूह का हिस्सा निकाल सकते हो।",

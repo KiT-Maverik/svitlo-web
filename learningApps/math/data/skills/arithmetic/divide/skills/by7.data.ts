@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const by7_Skill_Data = buildSkillConfig({
+  slug: 'by7',
   id: '07df03fa-2c82-4f13-8654-faf0a08145a5',
   name: {
     lt: "Dalyba — ÷ 7",
@@ -35,7 +36,7 @@ export const by7_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division by seven draws on multiples of seven and inverse multiplication facts. The relevant quotient is the value that reproduces the dividend when multiplied by seven.",
-    fe: {
+    frontend: {
       en: "You can divide by seven using groups of seven and known multiplication facts to find the quotient.",
       zh: "你能利用每组七个的分组和已知乘法口诀求出除以七的商。",
       hi: "तुम सात-सात के समूह और ज्ञात गुणा के तथ्यों की मदद से सात से भाग देकर भागफल निकाल सकते हो।",

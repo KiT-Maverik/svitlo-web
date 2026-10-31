@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const createProblem_Skill_Data = buildSkillConfig({
+  slug: 'createProblem',
   id: '1752c41c-dedc-4bc3-9b3f-285878f851b4',
   name: {
     lt: "Tekstinio uždavinio kūrimas pagal modelį",
@@ -34,7 +35,7 @@ export const createProblem_Skill_Data = buildSkillConfig({
     uk: "Складання задачі за моделлю",
   },
   description: { methodological: "A constructed word problem must match the given mathematical model in its quantities, operations, known information, and unknowns. One expression can support several suitable story contexts, but each must preserve the underlying mathematical structure.",
-    fe: {
+    frontend: {
       en: "You can write a word problem that matches a picture, table, or expression, keeping the same quantities and mathematical relationships.",
       zh: "你能根据图画、表格或算式编写应用题，同时保持数量和数学关系不变。",
       hi: "आप किसी चित्र, तालिका या व्यंजक के अनुरूप शब्द-समस्या बना सकते हैं, जिसमें मात्राएँ और गणितीय संबंध वही रहें।",

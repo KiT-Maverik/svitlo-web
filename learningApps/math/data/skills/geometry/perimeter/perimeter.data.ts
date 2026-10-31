@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { measurePerimeter_Skill_Data, rectanglePerimeter_Skill_Data, squarePerimeter_Skill_Data, unknownSideFromPerimeter_Skill_Data } from './skills';
 
 export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'perimeter',
   id: 'af8b4afe-5e2e-4412-b46c-330707bf2ee4',
   name: {
     en: "Perimeter",
@@ -34,15 +35,15 @@ export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Obwód",
     uk: "Периметр",
   },
-  skillIds: {
-    measurePerimeter: measurePerimeter_Skill_Data.id,
-    rectanglePerimeter: rectanglePerimeter_Skill_Data.id,
-    squarePerimeter: squarePerimeter_Skill_Data.id,
-    unknownSideFromPerimeter: unknownSideFromPerimeter_Skill_Data.id,
+  skills: {
+    measurePerimeter: measurePerimeter_Skill_Data,
+    rectanglePerimeter: rectanglePerimeter_Skill_Data,
+    squarePerimeter: squarePerimeter_Skill_Data,
+    unknownSideFromPerimeter: unknownSideFromPerimeter_Skill_Data,
   },
   description: {
     methodological: "The length of a polygon's closed boundary as the sum of its sides, including rectangles and squares.",
-    fe: {
+    frontend: {
       en: "Measure the distance all the way around a polygon by adding the lengths of its sides.",
       zh: "把多边形各边的长度加起来，求出绕一周的总长度。",
       hi: "बहुभुज की सभी भुजाओं की लंबाई जोड़कर उसके चारों ओर की दूरी नापें।",

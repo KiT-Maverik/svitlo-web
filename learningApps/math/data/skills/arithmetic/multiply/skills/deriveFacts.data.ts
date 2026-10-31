@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const deriveFacts_Skill_Data = buildSkillConfig({
+  slug: 'deriveFacts',
   id: '3785f833-039d-49f7-a70f-4a1ebdb6654a',
   name: {
     lt: "Daugyba — sandaugų išvedimas",
@@ -35,7 +36,7 @@ export const deriveFacts_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "An unknown table product may be derived from familiar products using commutativity, associativity, distributivity, doubling, or changing a factor. This demonstrates structural understanding rather than mere fact recall.",
-    fe: {
+    frontend: {
       en: "You can work out unfamiliar multiplication facts from familiar ones by regrouping, splitting numbers, or doubling.",
       zh: "你能通过重新分组、拆分数字或翻倍，利用熟悉的乘法事实推算不熟悉的结果。",
       hi: "तुम ज्ञात गुणा के तथ्यों से समूह बदलकर, संख्याएँ तोड़कर या दोगुना करके नए गुणनफल निकाल सकते हो।",

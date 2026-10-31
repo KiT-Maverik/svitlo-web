@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const fillSimpleTable_Skill_Data = buildSkillConfig({
+  slug: 'fillSimpleTable',
   id: '03c02752-3921-4349-b7b0-ad955248e511',
   name: {
     en: "Recording observations in a table",
@@ -34,7 +35,7 @@ export const fillSimpleTable_Skill_Data = buildSkillConfig({
     uk: "Записування спостережень у таблицю",
   },
   description: { methodological: "A table associates each recorded value with its labeled row, column, variable, category, and required unit. Its structure must preserve which observation each value describes and make later comparisons possible.",
-    fe: {
+    frontend: {
       en: "You can record observations or measurements in a table with the correct rows, columns, labels, and units.",
       zh: "你能把观察或测量结果填入表格，使用正确的行、列、标签和单位。",
       hi: "आप अवलोकन या मापन को सही पंक्तियों, स्तंभों, शीर्षकों और इकाइयों वाली तालिका में दर्ज कर सकते हैं।",

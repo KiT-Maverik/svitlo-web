@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const sameDenominatorModel_Skill_Data = buildSkillConfig({
+  slug: 'sameDenominatorModel',
   id: '78e25627-943c-4912-bde5-37d05a6045ac',
   name: {
     en: "Comparing fractions with the same denominator using models",
@@ -35,7 +36,7 @@ export const sameDenominatorModel_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "With the same positive denominator and whole, increasing the numerator increases the number of same-sized unit parts and hence the fraction's value. A visual model demonstrates but does not uniquely define the comparison method.",
-    fe: {
+    frontend: {
       en: "When the bottom numbers match, the fraction with more equal parts is larger. A picture can show why 3/5 is greater than 2/5.",
       zh: "分母相同时，取的等份越多，分数越大。图形能说明3/5大于2/5。",
       hi: "समान हर वाले भिन्नों में अधिक बराबर भागों वाला भिन्न बड़ा है। चित्र से 3/5 > 2/5 समझें।",

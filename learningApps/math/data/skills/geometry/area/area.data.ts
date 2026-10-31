@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { compositeArea_Skill_Data, areaAsCovering_Skill_Data, countUnitSquares_Skill_Data, rectangleAreaModel_Skill_Data } from './skills';
 
 export const area_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'area',
   id: 'c7516022-048d-4c97-92ed-c4f10d254070',
   name: {
     en: "Area",
@@ -34,15 +35,15 @@ export const area_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Pole powierzchni",
     uk: "Площа",
   },
-  skillIds: {
-    compositeArea: compositeArea_Skill_Data.id,
-    areaAsCovering: areaAsCovering_Skill_Data.id,
-    countUnitSquares: countUnitSquares_Skill_Data.id,
-    rectangleAreaModel: rectangleAreaModel_Skill_Data.id,
+  skills: {
+    compositeArea: compositeArea_Skill_Data,
+    areaAsCovering: areaAsCovering_Skill_Data,
+    countUnitSquares: countUnitSquares_Skill_Data,
+    rectangleAreaModel: rectangleAreaModel_Skill_Data,
   },
   description: {
     methodological: "The extent of a planar region occupied by a figure, modeled using unit squares, rectangles, and decomposition of composite shapes.",
-    fe: {
+    frontend: {
       en: "Measure the inside of flat shapes in square units, including rectangles and shapes made of several pieces.",
       zh: "用平方单位测量平面图形内部的大小，包括长方形和拼合图形。",
       hi: "आयत और कई हिस्सों की आकृतियों सहित सपाट आकृतियों का क्षेत्रफल वर्ग इकाइयों में नापें।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const increaseDecreaseNumber_Skill_Data = buildSkillConfig({
+  slug: 'increaseDecreaseNumber',
   id: '4b3a53a2-c2dc-49b6-beb8-c81a0544978b',
   name: {
     lt: "Didinimas ar mažinimas nurodytu skaičiumi",
@@ -34,7 +35,7 @@ export const increaseDecreaseNumber_Skill_Data = buildSkillConfig({
     uk: "Збільшення або зменшення на задане число",
   },
   description: { methodological: "Changing a quantity additively by a specified amount is represented by addition or subtraction according to the direction of change. An absolute increase must be distinguished from a multiplicative 'times as much' change.",
-    fe: {
+    frontend: {
       en: "You can increase or decrease a quantity by a given amount using addition or subtraction, without confusing this with a change by a factor.",
       zh: "你能用加法或减法让数量增加或减少指定的数值，不把它与按倍数变化混淆。",
       hi: "आप जोड़ या घटाव से मात्रा में तय संख्या की वृद्धि या कमी कर सकते हैं और इसे कई गुना परिवर्तन से अलग समझ सकते हैं।",

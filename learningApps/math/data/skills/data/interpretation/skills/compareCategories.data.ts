@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareCategories_Skill_Data = buildSkillConfig({
+  slug: 'compareCategories',
   id: 'b245a322-1c1f-4977-9a0b-838ac058392a',
   name: {
     en: "Comparing category totals and differences",
@@ -34,7 +35,7 @@ export const compareCategories_Skill_Data = buildSkillConfig({
     uk: "Порівняння сум і різниць кількостей категорій",
   },
   description: { methodological: "Arithmetic on frequencies of different categories requires comparable units and a shared observation context. Their sum gives a combined count; their difference gives the numerical gap between categories.",
-    fe: {
+    frontend: {
       en: "You can use values from a table or chart to find the combined total or the difference between categories, comparing only compatible quantities.",
       zh: "你能用表格或图表中的数据计算不同类别的合计或差值，同时只比较单位相容的数量。",
       hi: "आप तालिका या आलेख के मानों से श्रेणियों का संयुक्त कुल या उनका अंतर निकाल सकते हैं, केवल संगत मात्राओं की तुलना करके।",

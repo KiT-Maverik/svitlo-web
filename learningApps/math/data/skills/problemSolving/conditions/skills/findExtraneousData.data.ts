@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const findExtraneousData_Skill_Data = buildSkillConfig({
+  slug: 'findExtraneousData',
   id: 'e77dd73e-0505-41d6-9a38-880f63009084',
   name: {
     lt: "Nereikalingų duomenų atpažinimas",
@@ -34,7 +35,7 @@ export const findExtraneousData_Skill_Data = buildSkillConfig({
     uk: "Виявлення зайвих даних",
   },
   description: { methodological: "Extraneous information does not affect computing or justifying the answer to the specific question asked. The same detail can become relevant if the unknown changes, so mathematical relationships must be checked rather than merely deleting text.",
-    fe: {
+    frontend: {
       en: "You can spot information that is not needed to answer a word problem's particular question, while keeping facts that affect the answer.",
       zh: "你能判断哪些信息与应用题当前的问题无关，同时保留会影响答案的条件。",
       hi: "आप समझ सकते हैं कि किसी शब्द-समस्या के खास प्रश्न का उत्तर देने के लिए कौन-सी जानकारी आवश्यक नहीं है और कौन-सी जानकारी उत्तर को प्रभावित करती है।",

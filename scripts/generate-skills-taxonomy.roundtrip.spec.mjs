@@ -62,9 +62,9 @@ function readEntity(file) {
   const desc = prop(config, 'description');
   const methodological = prop(desc, 'methodological');
   assert.ok(ts.isStringLiteral(methodological) || ts.isNoSubstitutionTemplateLiteral(methodological));
-  const feProp = desc.properties.find(p => ts.isPropertyAssignment(p) && p.name.text === 'fe');
-  const fe = feProp ? dictionary(feProp.initializer) : null;
-  return { file, name, methodological: methodological.text, fe };
+  const feProp = desc.properties.find(p => ts.isPropertyAssignment(p) && p.name.text === 'frontend');
+  const frontend = feProp ? dictionary(feProp.initializer) : null;
+  return { file, name, methodological: methodological.text, frontend };
 }
 function expectedLevel(file) {
   const parts = path.relative(taxonomyRoot, file).split(path.sep);
@@ -123,12 +123,12 @@ function parseMarkdown(view, locale) {
     const text = block.match(/^\*\*Methodological description \(English\):\*\* (.+)$/m);
     assert.ok(text, 'Missing methodological description ' + file);
     assert.equal(text[1], original.methodological, 'Meaning changed for ' + file);
-    const fe = block.match(/^\*\*User-friendly description \(([^)]+)\):\*\* (.+)$/m);
-    if (original.fe) {
-      assert.ok(fe, 'Missing frontend description ' + file);
-      assert.equal(fe[1], locale);
-      assert.equal(fe[2], original.fe.get(locale), 'Frontend text changed ' + file);
-    } else assert.equal(fe, null, 'Invented frontend description ' + file);
+    const frontend = block.match(/^\*\*User-friendly description \(([^)]+)\):\*\* (.+)$/m);
+    if (original.frontend) {
+      assert.ok(frontend, 'Missing frontend description ' + file);
+      assert.equal(frontend[1], locale);
+      assert.equal(frontend[2], original.frontend.get(locale), 'Frontend text changed ' + file);
+    } else assert.equal(frontend, null, 'Invented frontend description ' + file);
   }
   assert.equal(found.size, expectedFiles.size, 'Not every Code entity was reproduced');
 }

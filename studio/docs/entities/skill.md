@@ -28,7 +28,7 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 ## EDITORIAL SLUG
 
-New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug must be unique among **all Domain, Group and Skill slugs in the textbook**, including unrelated parents and entity kinds. An approved slug remains stable across name/translation changes; it is not the UUID or an additional runtime `Skill_Config` field. Preserve existing Code paths and UUIDs without silent renaming.
+New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug must be unique among **all Domain, Group and Skill slugs in the textbook**, including unrelated parents and entity kinds. An approved slug remains stable across name/translation changes; it is a required `Skill_Config.slug` field distinct from the UUID. Preserve existing Code paths and UUIDs without silent renaming.
 
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
@@ -39,7 +39,7 @@ New-format Skills have one English `Slug: lowerCamelCase` immediately beneath th
 - **Within each textbook**, continue checking for redundant Skills, unclear splits/merges, atomicity and stable identities. Cross-textbook duplication permission does **not** authorize needless duplication within one taxonomy.
 - Cross-subject lessons may draw on material from several textbooks without asserting globally unified Skill identity or a combined learner-mastery record.
 
-- A Skill has exactly one primary catalog parent: ordinarily a SkillGroup, or exceptionally a SkillDomain with no Groups. It may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics without duplicate ownership.
+- A Skill has exactly one primary catalog parent: ordinarily a SkillGroup, or directly a SkillDomain, including one that also contains Groups. It may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics without duplicate ownership.
 - A multi-Skill Question does not automatically establish separate mastery evidence for each referenced Skill. Assessment attribution and scores belong to assessment/progress entities.
 - Curriculum/Program owns sequencing and prerequisites; the taxonomy owns classification and conceptual descriptions.
 - Age, school grade, teaching instructions, difficulty, exercise format, prerequisites, learner history, outcomes and scores are **not Skill fields**.
@@ -51,7 +51,7 @@ Before promotion, `<PackageRoot>/docs/skills/taxonomy.md` is the **editorial sta
 
 Do not copy a Skill heading into its description. Explain the subject-specific competency, scope, conceptual boundaries, and meaningful distinctions from neighbors. A concrete example may clarify what is included, but does not become a separate competency or assessment method.
 
-`Skill_Config` contains stable `id`, fully localized `name`, and required `description: { methodological: string; fe: Readonly<Record<LanguageCode, string>> }`. A promoted Skill **must** have reviewed English `methodological` text and genuine `fe` translations for every supported language; absent, partial or fallback frontend text blocks promotion. Code then becomes the canonical pedagogical meaning. `methodological` is not constrained to UI brevity; `fe` is user-facing copy, never a second authoritative definition. The builder adds `collection`; `fileLocation` belongs to separate indexing work.
+`Skill_Config` contains stable `id`, fully localized `name`, and required `description: { methodological: string; frontend: Readonly<Record<LanguageCode, string>> }`. A promoted Skill **must** have reviewed English `methodological` text and genuine `frontend` translations for every supported language; absent, partial or fallback frontend text blocks promotion. Code then becomes the canonical pedagogical meaning. `methodological` is not constrained to UI brevity; `frontend` is user-facing copy, never a second authoritative definition. The builder adds `collection`; `fileLocation` belongs to separate indexing work.
 
 The staging taxonomy contains one standalone implementation link per outstanding entity to its verified canonical `*.data.ts` file (full filename displayed); otherwise it contains exactly `[Not implemented](#)` without a field label. UUID literals belong in each entity's `*.data.ts` and must remain stable across updates; there are no separate identity dictionary files.
 

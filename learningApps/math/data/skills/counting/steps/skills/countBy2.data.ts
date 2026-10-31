@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const countBy2_Skill_Data = buildSkillConfig({
+  slug: 'countBy2',
   id: 'f227f79b-0196-46b8-a227-8b7991729cc5',
   name: {
     en: "Counting in steps of 2",
@@ -35,7 +36,7 @@ export const countBy2_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Counting by twos repeatedly adds two, corresponding to equal pairs of objects. The number of pairs and the number of individual elements must be distinguished.",
-    fe: {
+    frontend: {
       en: "Add two at each step to count in pairs. Distinguish the number of pairs from the total number of objects.",
       zh: "每次加2来按对计数。注意有多少对和一共有多少个物品并不相同。",
       hi: "हर कदम पर दो जोड़कर जोड़ियों में गिनें। जोड़ियों की संख्या और कुल वस्तुओं की संख्या में अंतर समझें।",

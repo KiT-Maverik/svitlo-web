@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const basicCardinality_Skill_Data = buildSkillConfig({
+  slug: 'basicCardinality',
   id: '806fb33e-81a3-4e59-b57b-1ea7ed549d9b',
   name: {
     en: "Determining how many objects are in a set",
@@ -35,7 +36,7 @@ export const basicCardinality_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The final number word in a one-to-one count states the cardinality of the entire set. Neither object arrangement nor counting order changes that cardinality.",
-    fe: {
+    frontend: {
       en: "Count every object once and use the last number you say to tell how many there are. The total stays the same if you rearrange them or count in a different order.",
       zh: "每个物品只数一次，最后说出的数就是总数。改变摆放或计数顺序不会改变总数。",
       hi: "हर वस्तु को केवल एक बार गिनें। आख़िरी बोली गई संख्या कुल वस्तुओं की संख्या बताती है, जो क्रम या स्थान बदलने पर भी वही रहती है।",

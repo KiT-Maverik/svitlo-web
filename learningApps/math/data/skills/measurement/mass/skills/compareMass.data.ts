@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareMass_Skill_Data = buildSkillConfig({
+  slug: 'compareMass',
   id: 'c2be8e28-ceb6-45c8-8c45-e8c39181c044',
   name: {
     en: "Comparing masses using a balance",
@@ -34,7 +35,7 @@ export const compareMass_Skill_Data = buildSkillConfig({
     uk: "Порівняння мас за допомогою терезів"
   },
   description: { methodological: "On an equal-arm balance, a greater mass outweighs a smaller one under comparable conditions, and balance indicates equal masses. Physical volume or apparent size alone does not determine mass.",
-    fe: {
+    frontend: {
       en: "You can compare the masses of objects with a balance or scale, rather than assuming the larger-looking object has more mass.",
       zh: "你能使用天平或秤比较物体的质量，而不认为看起来更大的物体就一定更重。",
       hi: "आप तराजू से वस्तुओं के द्रव्यमान की तुलना कर सकते हैं, बिना यह माने कि दिखने में बड़ी वस्तु का द्रव्यमान भी अधिक होगा।",

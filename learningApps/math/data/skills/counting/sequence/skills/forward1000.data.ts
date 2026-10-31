@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const forward1000_Skill_Data = buildSkillConfig({
+  slug: 'forward1000',
   id: 'e789a4fd-8ea2-4309-b19d-eaede0ed9c37',
   name: {
     en: "Continuing number sequences within 1,000",
@@ -35,7 +36,7 @@ export const forward1000_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Recover missing or subsequent consecutive natural numbers using adjacency and a step of one. Crossing tens and hundreds does not change the rule; this differs from discovering an arbitrary pattern.",
-    fe: {
+    frontend: {
       en: "Find the next or missing consecutive number within 1,000, including when crossing tens or hundreds. The step is always one.",
       zh: "找出1000以内连续数列的下一个数或缺少的数，跨过整十、整百时也是每次相差一。",
       hi: "1,000 के भीतर लगातार संख्याओं में अगली या छूटी संख्या खोजें, दहाई या सैकड़ा पार करते समय भी। हर कदम एक का है।",

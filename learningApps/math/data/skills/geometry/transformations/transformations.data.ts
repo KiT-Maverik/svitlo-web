@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { turnsQuarters_Skill_Data, translationsReflections_Skill_Data, reflectionSymmetry_Skill_Data } from './skills';
 
 export const transformations_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'transformations',
   id: '41302cd8-48f9-4734-96a2-7c32e26a4361',
   name: {
     en: "Geometric transformations",
@@ -34,14 +35,14 @@ export const transformations_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Przekształcenia geometryczne",
     uk: "Геометричні перетворення",
   },
-  skillIds: {
-    turnsQuarters: turnsQuarters_Skill_Data.id,
-    translationsReflections: translationsReflections_Skill_Data.id,
-    reflectionSymmetry: reflectionSymmetry_Skill_Data.id,
+  skills: {
+    turnsQuarters: turnsQuarters_Skill_Data,
+    translationsReflections: translationsReflections_Skill_Data,
+    reflectionSymmetry: reflectionSymmetry_Skill_Data,
   },
   description: {
     methodological: "Changes in a shape's position through rotation, translation, and reflection, along with symmetry about an axis.",
-    fe: {
+    frontend: {
       en: "Move, turn, and reflect shapes while noticing which features stay the same.",
       zh: "移动、旋转和翻转图形，观察哪些性质保持不变。",
       hi: "आकृतियाँ खिसकाएँ, घुमाएँ या प्रतिबिंबित करें और देखें कौन से गुण समान रहते हैं।",

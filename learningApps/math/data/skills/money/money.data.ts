@@ -4,6 +4,7 @@ import { denominations_SkillGroup_Data } from './denominations/denominations.dat
 import { transactions_SkillGroup_Data } from './transactions/transactions.data';
 
 export const money_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'money',
   id: 'fc6e1529-7c86-4141-b8b7-9df999eeaea5',
   name: {
     en: "Money",
@@ -35,9 +36,9 @@ export const money_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Pieniądze",
     uk: "Гроші",
   },
-  groupIds: {
-    denominations: denominations_SkillGroup_Data.id,
-    transactions: transactions_SkillGroup_Data.id,
+  groups: {
+    denominations: denominations_SkillGroup_Data,
+    transactions: transactions_SkillGroup_Data,
   },
   description: { methodological: "Applications of arithmetic to monetary denominations, composing and comparing amounts, calculating costs and change, and selecting purchases within a budget." },
 });

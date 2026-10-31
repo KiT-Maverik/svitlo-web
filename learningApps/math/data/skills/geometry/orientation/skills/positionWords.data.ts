@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const positionWords_Skill_Data = buildSkillConfig({
+  slug: 'positionWords',
   id: '30001f22-2352-4068-a1be-f0e8f0278588',
   name: {
     en: "Describing relative positions",
@@ -35,7 +36,7 @@ export const positionWords_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Spatial relations are defined relative to an object, observer, or coordinate frame. Left, right, and ahead depend on the reference point; distinguish relative orientation from absolute coordinates.",
-    fe: {
+    frontend: {
       en: "Use words such as left, right, above, behind, and ahead to describe positions. The answer can change with your viewpoint.",
       zh: "用左、右、上方、后方、前方等词描述位置。观察方向变了，答案也可能变。",
       hi: "बाएँ, दाएँ, ऊपर, पीछे और आगे जैसे शब्दों से स्थान बताएँ। देखने की दिशा बदलने पर उत्तर बदल सकता है।",

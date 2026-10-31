@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const interpretConclusion_Skill_Data = buildSkillConfig({
+  slug: 'interpretConclusion',
   id: '57c71e4d-0641-42e2-856d-b2282f308374',
   name: {
     en: "Drawing conclusions from data",
@@ -34,7 +35,7 @@ export const interpretConclusion_Skill_Data = buildSkillConfig({
     uk: "Формулювання висновків на основі даних",
   },
   description: { methodological: "A conclusion must follow logically from the actual data values, categories, and scale. Distinguish direct observations, supported generalizations, and claims for which the data are insufficient.",
-    fe: {
+    frontend: {
       en: "You can make a conclusion that is supported by the actual numbers in a table or chart, without claiming more than the data show.",
       zh: "你能根据表格或图表中的实际数字得出有依据的结论，而不作出数据无法支持的推断。",
       hi: "आप तालिका या आलेख की वास्तविक संख्याओं के आधार पर निष्कर्ष निकाल सकते हैं, बिना डेटा से अधिक दावा किए।",

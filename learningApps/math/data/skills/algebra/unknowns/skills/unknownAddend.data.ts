@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unknownAddend_Skill_Data = buildSkillConfig({
+  slug: 'unknownAddend',
   id: 'a01ad4cb-5aeb-44ee-ba4b-913b384b3178',
   name: {
     en: "Finding an unknown addend",
@@ -35,7 +36,7 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Find an unknown addend by subtracting the known addend from the sum in the relevant number domain. Substitution into the original equation verifies the part-whole relationship.",
-    fe: {
+    frontend: {
       en: "You can find a missing addend by subtracting the known addend from the sum, then check by adding.",
       zh: "你能用和减去已知加数来求出未知加数，再用加法验算。",
       hi: "तुम योग में से ज्ञात जोड़ने वाली संख्या घटाकर अज्ञात संख्या निकाल सकते हो और जोड़कर जाँच सकते हो।",

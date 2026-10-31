@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { beforeAfterBetween_Skill_Data, numberLine20_Skill_Data, numberLine1000_Skill_Data, distanceOnLine_Skill_Data } from './skills';
 
 export const numberLine_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'numberLine',
   id: '4b431caf-b720-4669-8d48-f329c858bf94',
   name: {
     en: "Number line",
@@ -34,15 +35,15 @@ export const numberLine_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Oś liczbowa",
     uk: "Числова пряма",
   },
-  skillIds: {
-    beforeAfterBetween: beforeAfterBetween_Skill_Data.id,
-    numberLine20: numberLine20_Skill_Data.id,
-    numberLine1000: numberLine1000_Skill_Data.id,
-    distanceOnLine: distanceOnLine_Skill_Data.id,
+  skills: {
+    beforeAfterBetween: beforeAfterBetween_Skill_Data,
+    numberLine20: numberLine20_Skill_Data,
+    numberLine1000: numberLine1000_Skill_Data,
+    distanceOnLine: distanceOnLine_Skill_Data,
   },
   description: {
     methodological: "Numbers as points on an ordered scale with equal intervals; location, adjacency, and distance depend on the scale used.",
-    fe: {
+    frontend: {
       en: "Place numbers on a line with even spacing; use their positions to see which comes first and how far apart they are.",
       zh: "把数放在间隔均匀的数轴上，通过位置判断顺序和距离。",
       hi: "संख्याओं को समान अंतर वाली रेखा पर रखें; उनके स्थान से क्रम और दूरी समझें।",

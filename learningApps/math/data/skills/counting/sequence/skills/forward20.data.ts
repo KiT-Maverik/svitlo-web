@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const forward20_Skill_Data = buildSkillConfig({
+  slug: 'forward20',
   id: '0fef6118-fa2e-4ffa-a31f-42f26ef94177',
   name: {
     en: "Counting forward within 20",
@@ -35,7 +36,7 @@ export const forward20_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Find successive natural numbers by adding one from any starting value within the range. Understand crossing a ten boundary instead of relying on reciting the sequence from one.",
-    fe: {
+    frontend: {
       en: "Start from any number within 20 and find the next number by adding one, even when crossing ten.",
       zh: "从20以内任意一个数开始，每次加一找到下一个数，包括跨过十的时候。",
       hi: "20 के भीतर किसी भी संख्या से शुरू करके एक जोड़ते हुए अगली संख्या खोजें, दस पार करते समय भी।",

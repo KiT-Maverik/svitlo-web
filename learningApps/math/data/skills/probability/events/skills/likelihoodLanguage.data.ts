@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const likelihoodLanguage_Skill_Data = buildSkillConfig({
+  slug: 'likelihoodLanguage',
   id: 'a2a4702d-d512-4459-a699-a4fd874670ac',
   name: {
     en: "Comparing the likelihood of everyday events",
@@ -34,7 +35,7 @@ export const likelihoodLanguage_Skill_Data = buildSkillConfig({
     uk: "Порівняння ймовірності повсякденних подій",
   },
   description: { methodological: "Probability describes the chance of an event under specified conditions, not merely whether it is possible. Comparisons require considering outcomes, their likelihoods, and the experimental conditions without assuming outcomes are equally likely.",
-    fe: {
+    frontend: {
       en: "You can compare which everyday events are more or less likely under given conditions, without assuming that all outcomes have the same chance.",
       zh: "你能根据给定条件比较日常事件发生的可能性大小，而不假定所有结果的概率都相同。",
       hi: "आप दी गई परिस्थितियों में रोज़मर्रा की घटनाओं की संभावना की तुलना कर सकते हैं, बिना यह माने कि सभी परिणाम समान रूप से संभावित हैं।",

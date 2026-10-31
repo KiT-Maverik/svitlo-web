@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const roundToTen_Skill_Data = buildSkillConfig({
+  slug: 'roundToTen',
   id: 'a421f9f3-cba7-4e85-ae61-ecb06f78d916',
   name: {
     lt: "Apvalinimas iki artimiausios dešimties",
@@ -35,7 +36,7 @@ export const roundToTen_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Rounding to the nearest ten replaces a value with the closest multiple of ten, comparing distances to neighboring tens. An exact halfway case needs an agreed tie-breaking convention.",
-    fe: {
+    frontend: {
       en: "Find the nearest multiple of ten by comparing distances to the tens on either side. Exactly halfway requires a rounding rule.",
       zh: "比较一个数与相邻两个整十数的距离，找出最近的整十数。正好在中间时需要约定规则。",
       hi: "पास की दोनों दहाइयों से दूरी देखकर निकटतम दहाई चुनें। ठीक आधे पर एक तय नियम चाहिए।",

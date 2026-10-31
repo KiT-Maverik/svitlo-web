@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const translationsReflections_Skill_Data = buildSkillConfig({
+  slug: 'translationsReflections',
   id: 'd93e1819-5d86-4cfe-b200-44ad0cc8478c',
   name: {
     en: "Translating and reflecting figures",
@@ -35,7 +36,7 @@ export const translationsReflections_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A translation moves every point of a figure by the same vector, preserving lengths and orientation. Reflection in a line also preserves lengths but reverses orientation; neither changes area or perimeter.",
-    fe: {
+    frontend: {
       en: "Slide a shape without turning it, or flip it across a line. Its lengths, area, and perimeter stay the same.",
       zh: "平移图形而不旋转，或沿一条直线作镜像翻转。边长、面积和周长都不变。",
       hi: "आकृति को बिना घुमाए सरकाएँ या रेखा के पार पलटें। लंबाई, क्षेत्रफल और परिमाप वही रहते हैं।",

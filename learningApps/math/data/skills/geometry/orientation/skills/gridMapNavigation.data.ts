@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const gridMapNavigation_Skill_Data = buildSkillConfig({
+  slug: 'gridMapNavigation',
   id: '43b1fdd6-0846-4c0c-a01b-375a6fec3b2f',
   name: {
     en: "Reading and drawing simple grid maps",
@@ -35,7 +36,7 @@ export const gridMapNavigation_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A grid defines a discrete spatial system with consistent directions or coordinates. Plans, paths, and end positions must follow the same reference conventions; cell size and orientation affect interpretation.",
-    fe: {
+    frontend: {
       en: "Read or draw a grid map to show positions and routes. Follow the same directions and grid scale throughout.",
       zh: "读懂或画出方格地图来表示位置和路线，始终使用一致的方向和方格比例。",
       hi: "खानों वाले नक्शे को पढ़ें या बनाएँ और स्थान व रास्ते दिखाएँ। दिशा और खानों का पैमाना एक सा रखें।",

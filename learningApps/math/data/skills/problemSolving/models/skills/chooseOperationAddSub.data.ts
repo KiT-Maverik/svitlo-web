@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const chooseOperationAddSub_Skill_Data = buildSkillConfig({
+  slug: 'chooseOperationAddSub',
   id: '52f1bc76-4795-452b-b241-4dc3099063e6',
   name: {
     lt: "Sudėties ar atimties pasirinkimas",
@@ -34,7 +35,7 @@ export const chooseOperationAddSub_Skill_Data = buildSkillConfig({
     uk: "Вибір додавання або віднімання",
   },
   description: { methodological: "The choice between addition and subtraction depends on the relationship between known and unknown quantities: combining, changing, comparing, or finding a part. The same wording in different problems does not always imply the same operation.",
-    fe: {
+    frontend: {
       en: "You can choose addition or subtraction by understanding how the known and unknown quantities relate, instead of relying on clue words alone.",
       zh: "你能根据已知量和未知量之间的关系选择加法或减法，而不是只依靠提示词。",
       hi: "आप केवल संकेत देने वाले शब्दों पर निर्भर हुए बिना, ज्ञात और अज्ञात मात्राओं के संबंध को समझकर जोड़ या घटाव चुन सकते हैं।",

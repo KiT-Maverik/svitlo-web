@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readNumericExpressions_Skill_Data = buildSkillConfig({
+  slug: 'readNumericExpressions',
   id: '2429be16-34f7-4857-8144-f2d550931872',
   name: {
     en: "Reading and writing numerical expressions",
@@ -35,7 +36,7 @@ export const readNumericExpressions_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A numerical expression defines a value using numbers, arithmetic operations, and possibly parentheses. Interpreting its written structure is distinct from calculating its numerical value.",
-    fe: {
+    frontend: {
       en: "You can read and write expressions using numbers, operation signs, and parentheses to show a calculation without necessarily working out its value.",
       zh: "你能使用数字、运算符号和括号读写算式，不一定要立即算出结果。",
       hi: "तुम संख्याओं, संक्रिया चिह्नों और कोष्ठकों से व्यंजक पढ़-लिख सकते हो, बिना ज़रूरी तौर पर उसका मान निकाले।",

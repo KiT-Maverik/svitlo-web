@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { basicOrdinal_Skill_Data } from './skills';
 
 export const ordinal_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'ordinal',
   id: 'e7661e0a-4758-4f27-9754-3d75cc7afc12',
   name: {
     en: "Ordinal counting",
@@ -34,12 +35,12 @@ export const ordinal_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Liczenie porządkowe",
     uk: "Порядкова лічба",
   },
-  skillIds: {
-    basicOrdinal: basicOrdinal_Skill_Data.id,
+  skills: {
+    basicOrdinal: basicOrdinal_Skill_Data,
   },
   description: {
     methodological: "The distinction between an element's position in an ordered sequence and the total number of elements, separating 'which position?' from 'how many?'.",
-    fe: {
+    frontend: {
       en: "Tell an object's position in a chosen order, such as first or fourth. Position is different from the total number of objects.",
       zh: "用第一、第四等序数表示物品在指定顺序中的位置。位置与物品总数不同。",
       hi: "किसी तय क्रम में वस्तु का स्थान बताएं, जैसे पहला या चौथा। उसका स्थान वस्तुओं की कुल संख्या से अलग है।",

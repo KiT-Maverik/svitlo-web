@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const estimateQuantity_Skill_Data = buildSkillConfig({
+  slug: 'estimateQuantity',
   id: 'a4f386e6-e8f1-4497-8344-b348bcaeaaec',
   name: {
     lt: "Kiekio įvertinimas ir patikrinimas",
@@ -35,7 +36,7 @@ export const estimateQuantity_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Cardinality estimation produces an approximate count without first enumerating every object, using grouping or extrapolation from part of a set. An exact count independently checks the estimate.",
-    fe: {
+    frontend: {
       en: "Estimate how many objects there are by looking at groups or a small part, then check by counting them.",
       zh: "观察一部分或按组估计物品总数，再逐个计数验证。",
       hi: "समूहों या छोटे हिस्से को देखकर वस्तुओं की अनुमानित संख्या निकालें, फिर गिनकर जाँचें।",

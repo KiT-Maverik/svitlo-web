@@ -1,25 +1,25 @@
 import type { Collection } from '../misc.types';
-import type { SkillDescription_Config } from './skill.types';
+import type { SkillDescription_Config, SkillData } from './skill.types';
 import type { LanguageCode } from '../languages';
-import type { SkillGroup } from './skillGroup.types';
-import type { Skill } from './skill.types';
+import type { SkillGroupData } from './skillGroup.types';
 
 export interface SkillDomain_Config {
-  id: SkillGroup['id'];
+  /** Stable editorial slug, matching the entity's data filename. */
+  slug: string;
+  id: SkillData['id'];
   name: Readonly<Record<LanguageCode, string>>;
-  /** Canonical English methodological text and optional complete frontend translations. */
   description?: SkillDescription_Config;
-  /** Child Groups in grouped mode; use {} when Skills are attached directly. */
-  groupIds: Readonly<Record<string, SkillGroup['id']>>;
-  /**
-   * Direct child Skills for a Domain without meaningful Groups.
-   * The builder requires exactly one non-empty mode: groupIds or skillIds.
-   */
-  skillIds?: Readonly<Record<string, Skill['id']>>;
+  /** Child Group entities, which may coexist with direct Skills. */
+  groups: Readonly<Record<string, SkillGroupData>>;
+  /** Child Skill entities that have no Group parent. */
+  skills?: Readonly<Record<string, SkillData>>;
 }
 
-/** fileLocation is added by a build-time source registry. */
+/** fileLocation is assigned by the source registry, not the authoring builder. */
 export interface SkillDomain extends SkillDomain_Config {
   readonly collection: Extract<Collection, 'skillDomain'>;
   fileLocation: string;
 }
+
+/** Built Domain entity, before fileLocation is attached by the source registry. */
+export type SkillDomainData = Omit<SkillDomain, 'fileLocation'>;

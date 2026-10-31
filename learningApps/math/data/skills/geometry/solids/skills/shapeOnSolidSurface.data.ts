@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const shapeOnSolidSurface_Skill_Data = buildSkillConfig({
+  slug: 'shapeOnSolidSurface',
   id: 'a9355c95-a65a-472e-bb7d-f11c7a23fe49',
   name: {
     en: "Identifying plane figures on solid surfaces",
@@ -35,7 +36,7 @@ export const shapeOnSolidSurface_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Plane figures can coincide with the faces of solids or their plane sections, but the solid itself remains three-dimensional. Distinguish a two-dimensional part of a surface from the entire three-dimensional object.",
-    fe: {
+    frontend: {
       en: "Find flat shapes on the faces or slices of solid objects. A flat face is not the whole three-dimensional shape.",
       zh: "在立体物体的面或截面上找出平面图形。平面的一面不是整个立体图形。",
       hi: "ठोस वस्तु के फलकों या काटने से बने हिस्सों पर सपाट आकृतियाँ पहचानें। सपाट फलक पूरा ठोस नहीं होता।",

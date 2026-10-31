@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const equalGrouping_Skill_Data = buildSkillConfig({
+  slug: 'equalGrouping',
   id: '29ffb036-c9f2-415e-a464-f07e5d8ef05b',
   name: {
     lt: "Dalyba — skirstymas į lygias grupes",
@@ -35,7 +36,7 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Quotitive division determines how many groups of a specified size can be formed from a total. When division is not exact, distinguish complete groups from the remainder.",
-    fe: {
+    frontend: {
       en: "You can find how many complete groups of a given size fit into a total and identify anything left over.",
       zh: "你能求出总量中可以分成多少个指定大小的完整组，并找出剩余数量。",
       hi: "तुम देख सकते हो कि कुल में दिए गए आकार के कितने पूरे समूह बनते हैं और कितना बचता है।",
