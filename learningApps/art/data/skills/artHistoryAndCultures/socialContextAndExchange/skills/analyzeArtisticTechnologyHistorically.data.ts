@@ -32,6 +32,7 @@ export const analyzeArtisticTechnologyHistorically_Skill_Data = buildSkillConfig
     be: "Гістарычна аналізаваць мастацкія тэхналогіі",
     ka: "ხელოვნების ტექნოლოგიების ისტორიული ანალიზი",
     kk: "Өнер технологияларын тарихи тұрғыдан талдау",
+    qm: "Sanat tehnologiyalarını tarihiy baqıştan tahlil etmek"
   },
   description: {
     methodological: "Connect changes in tools and media to new artistic possibilities.",
@@ -64,6 +65,7 @@ export const analyzeArtisticTechnologyHistorically_Skill_Data = buildSkillConfig
       be: "Паглядзіце, як новыя інструменты і матэрыялы адкрываюць для мастакоў розныя магчымасці.",
       ka: "ნახეთ, როგორ უხსნის ახალი ხელსაწყოები და მასალები მხატვრებს განსხვავებულ შესაძლებლობებს.",
       kk: "Көркем құралдар мен материалдар суретшілерге жаңа мүмкіндіктерді қалай ашатынын көріңіз.",
+      qm: "Yañı aletler ve materiallar sanatçılarğa çeşit imkânlarnı nasıl açqanını ögreniniz."
     },
   },
 });

@@ -32,6 +32,7 @@ export const analyzeSurrealism_Skill_Data = buildSkillConfig({
     be: "Аналізаваць сюррэалізм",
     ka: "სიურრეალიზმის გაანალიზება",
     kk: "Сюрреализмді талдау",
+    qm: "Sürrealizmni tahlil etmek"
   },
   description: {
     methodological: "Examine unexpected juxtapositions, dream imagery or automatism in works shaped by Surrealist debates and their wider cultural contexts.",
@@ -64,6 +65,7 @@ export const analyzeSurrealism_Skill_Data = buildSkillConfig({
       be: "Даведайцеся, як мастакі-сюррэалісты даследавалі сны і нечаканыя спалучэнні.",
       ka: "გაიგეთ, როგორ იკვლევდნენ სიურრეალისტი მხატვრები სიზმრებსა და მოულოდნელ შეხამებებს.",
       kk: "Сюрреалист суретшілердің түстер мен тосын үйлесімдерді қалай зерттегенін біліңіз.",
+      qm: "Sürrealist sanatçılarnıñ ruyalarnı ve beklenmegen birleşmelerni nasıl araştırğanını ögreniniz."
     },
   },
 });

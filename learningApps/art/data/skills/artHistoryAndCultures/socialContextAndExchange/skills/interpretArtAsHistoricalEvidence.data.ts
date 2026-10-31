@@ -32,6 +32,7 @@ export const interpretArtAsHistoricalEvidence_Skill_Data = buildSkillConfig({
     be: "Інтэрпрэтаваць мастацтва як гістарычнае сведчанне",
     ka: "ხელოვნების ისტორიულ მტკიცებულებად ინტერპრეტაცია",
     kk: "Өнерді тарихи айғақ ретінде түсіндіру",
+    qm: "Sanatnı tarihiy delil olaraq talil etmek"
   },
   description: {
     methodological: "Distinguish what an artwork shows from claims requiring corroborating sources.",
@@ -64,6 +65,7 @@ export const interpretArtAsHistoricalEvidence_Skill_Data = buildSkillConfig({
       be: "Выкарыстоўвайце творы мастацтва як гістарычныя падказкі і правярайце, якія іншыя доказы патрэбныя.",
       ka: "გამოიყენეთ ხელოვნების ნიმუშები ისტორიულ მინიშნებებად და შეამოწმეთ, კიდევ რა მტკიცებულებებია საჭირო.",
       kk: "Өнер туындыларын тарихи дерек ретінде пайдаланып, тағы қандай дәлелдер қажет екенін тексеріңіз.",
+      qm: "Sanat eserlerini tarihiy işaretler olaraq qullanıp, daa başqa deliller kerek olıp-olmağanını tekşiriñiz."
     },
   },
 });

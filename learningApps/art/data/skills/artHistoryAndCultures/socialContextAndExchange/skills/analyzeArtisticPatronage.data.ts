@@ -32,6 +32,7 @@ export const analyzeArtisticPatronage_Skill_Data = buildSkillConfig({
     be: "Аналізаваць мастацкае мецэнацтва",
     ka: "ხელოვნების მფარველობის გაანალიზება",
     kk: "Өнерге қамқорлық жасауды талдау",
+    qm: "Sanatqa berilgen destekni tahlil etmek"
   },
   description: {
     methodological: "Explain how commissions or institutional support affect works and their presentation.",
@@ -64,6 +65,7 @@ export const analyzeArtisticPatronage_Skill_Data = buildSkillConfig({
       be: "Даведайцеся, як мецэнаты і замовы ўплываюць на тое, якія творы мастацтва ствараюцца.",
       ka: "გაიგეთ, როგორ მოქმედებენ მფარველები და შეკვეთები იმაზე, თუ რა ხელოვნების ნიმუშები იქმნება.",
       kk: "Зерттеушілер мен тапсырыстардың қандай өнер туындылары жасалатынына қалай әсер ететінін біліңіз.",
+      qm: "Sanatqa destek bergen insanlar ve buyurtmalar yaratılğan eserlerge nasıl tesir etkenini ögreniniz."
     },
   },
 });

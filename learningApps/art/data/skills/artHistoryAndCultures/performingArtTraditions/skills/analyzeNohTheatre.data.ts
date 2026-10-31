@@ -6,7 +6,7 @@ export const analyzeNohTheatre_Skill_Data = buildSkillConfig({
   name: {
     en: "Analyze Noh Theatre",
     zh: "分析能乐",
-    hi: "能楽を分析する",
+    hi: "जापानी नो रंगमंच का विश्लेषण करें",
     es: "Analizar el teatro nō",
     ar: "تحليل مسرح نوه",
     fr: "Analyser le théâtre nô",
@@ -16,7 +16,7 @@ export const analyzeNohTheatre_Skill_Data = buildSkillConfig({
     id: "Menganalisis Teater Noh",
     de: "Nō-Theater analysieren",
     ja: "能楽を分析する",
-    ko: "노 теат르 분석하기",
+    ko: "노 연극을 분석하기",
     tr: "Nō tiyatrosunu analiz etmek",
     vi: "Phân tích sân khấu Noh",
     ta: "நோ நாடகத்தைக் பகுப்பாய்வு செய்யுங்கள்",
@@ -32,6 +32,7 @@ export const analyzeNohTheatre_Skill_Data = buildSkillConfig({
     be: "Аналізаваць тэатр но",
     ka: "ნოს თეატრის გაანალიზება",
     kk: "Но театрын талдау",
+    qm: "Noh teatrını tahlil etmek"
   },
   description: {
     methodological: "Explain how masks, stylized movement, music and dramatic conventions operate within Japanese Noh performance contexts.",
@@ -64,6 +65,7 @@ export const analyzeNohTheatre_Skill_Data = buildSkillConfig({
       be: "Даведайцеся, як рух, маскі і музыка фарміруюць спектаклі японскага тэатра но.",
       ka: "შეიტყვეთ, როგორ აყალიბებს მოძრაობა, ნიღბები და მუსიკა იაპონური ნოს წარმოდგენებს.",
       kk: "Біл, қимыл, бетперде мен музыка жапон но театрының қойылымдарын қалай қалыптастыратынын біліңіз.",
+      qm: "Yapon Noh teatrında areket, maskalar ve muzıka sahne gösterilerini nasıl şekillendirgenini ögreniniz."
     },
   },
 });
