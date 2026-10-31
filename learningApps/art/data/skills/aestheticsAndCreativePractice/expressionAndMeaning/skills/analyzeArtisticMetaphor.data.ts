@@ -60,7 +60,7 @@ export const analyzeArtisticMetaphor_Skill_Data = buildSkillConfig({
           "et": "Uuri, kuidas kunstiteos võib metafoori abil ideed edasi anda.",
           "be": "Даследуйце, як мастацкі твор можа перадаваць ідэю праз метафару.",
           "ka": "შეისწავლეთ, როგორ შეუძლია ნამუშევარს მეტაფორის საშუალებით იდეის გადმოცემა.",
-          "kk": "Өнер туындысының метафора арқылы идеяны қалай жеткізе алатынын зерттеңіз."
+          "kk": "Өнер туындысының метафора арқылы идеяны қалай жеткізе алатынын зерттеңіз.",
     
       qm: "Sanat eseriniñ bir fikirni mecaz vastasınen nasıl bildirebildigini keşf etiñiz.",} },
 });
