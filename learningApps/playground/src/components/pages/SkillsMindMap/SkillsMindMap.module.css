@@ -328,6 +328,7 @@
   width: 100%;
   padding: 8px 18px 11px;
 }
+.mastery[data-tier='neutral'] { --mastery-color: #728094; }
 .mastery[data-tier='starting'] { --mastery-color: #d98332; }
 .mastery[data-tier='growing'] { --mastery-color: #587bd5; }
 .mastery[data-tier='strong'] { --mastery-color: #248e73; }
