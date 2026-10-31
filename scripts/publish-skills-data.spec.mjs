@@ -96,7 +96,7 @@ test('rejects missing canonical slugs and incomplete frontend descriptions', () 
     assert.throws(() => loadSkillGraph(copied, languageCodes()), /frontend|nonliteral|Unexpected/);
 
     fs.writeFileSync(target, original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\n', ''));
-    assert.throws(() => loadSkillGraph(copied, languageCodes()), /missing \\[uk\\]/);
+    assert.throws(() => loadSkillGraph(copied, languageCodes()), /missing \[uk\]/);
   } finally {
     fs.rmSync(temp, { recursive: true, force: true });
   }
