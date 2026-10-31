@@ -1,14 +1,12 @@
-import {LanguageCode} from "@svitlo/engine";
 import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
 
 import type { StringObjectToLocale } from '../../transformer.types';
-import {checkpoint} from "./scenes/checkpoint";
-import lightPropagationSimulation from "./scenes/lightPropagationSimulation";
-import {lightRayDiagram} from "./scenes/lightRayDiagram";
+import { checkpoint } from './scenes/checkpoint';
+import lightPropagationSimulation from './scenes/lightPropagationSimulation';
+import { lightRayDiagram } from './scenes/lightRayDiagram';
+import { getMarkdownLocale } from '../../generators/getMarkdownLocale';
 
 type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['theory']>;
-
-const getMarkdownLocale = (path: string): Record<LanguageCode, string> => 4
 
 export const theory: Locale = {
   name: {
@@ -42,7 +40,7 @@ export const theory: Locale = {
     vi: 'Lý thuyết',
     zh: '理论',
   },
-  markdown:{
+  markdown: {
     p1: getMarkdownLocale('./markdown/p1'),
     p2: getMarkdownLocale('./markdown/p2'),
     p3: getMarkdownLocale('./markdown/p3'),
@@ -51,5 +49,5 @@ export const theory: Locale = {
     checkpoint,
     lightRayDiagram,
     lightPropagationSimulation,
-  }
+  },
 };
