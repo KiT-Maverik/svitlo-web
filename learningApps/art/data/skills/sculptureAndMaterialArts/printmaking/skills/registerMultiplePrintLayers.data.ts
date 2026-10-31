@@ -2,7 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const registerMultiplePrintLayers_Skill_Data = buildSkillConfig({
   slug: "registerMultiplePrintLayers",
-  id: "991e68905c3011a3881c79509b90b620ddd618df",
+  id: "a8a4c111-e2fa-4ca4-96bb-0b02c9bc698a",
   name: {
     en: "Register Multiple Print Layers",
     zh: "套准多层印版",
