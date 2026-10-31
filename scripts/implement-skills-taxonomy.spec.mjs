@@ -78,10 +78,10 @@ test('English-only create needs no reviewed translations and keeps locales visib
   const skill=source(f,'geometry/angles/skills/compareAngles.data.ts');
   const domain=source(f,'geometry/geometry.data.ts');
   assert.match(skill,/"en": "Compare Angles"/);
-  assert.match(skill,/"en": "Explore this topic\\."/);
-  assert.match(skill,/methodological: "Definition of Compare Angles\\."/);
+  assert.match(skill,/"en": "Explore this topic\."/);
+  assert.match(skill,/methodological: "Definition of Compare Angles\."/);
   assert.match(domain,/"en": "Geometry"/);
-  assert.doesNotMatch(skill,/"uk":|\\bas\\s+Record\\b|\\bas\\s+any\\b/);
+  assert.doesNotMatch(skill,/"uk":|\bas\s+Record\b|\bas\s+any\b/);
   assert.doesNotMatch(domain,/"uk":/);
   assert.equal(f.runEnglishOnly('--apply').status,0,'Second application should be idempotent');
 }));
@@ -91,8 +91,8 @@ test('English Markdown updates preserve existing non-English translations withou
   const p='music/skills/hearRhythm.data.ts';
   const id=uuid(source(f,p));
   const before=source(f,p);
-  f.edit(s=>s.replace('#### Hear Rhythm\\n\\nSlug: hearRhythm','#### Hear Rhythms\\n\\nSlug: hearRhythm')
-    .replace('Slug: hearRhythm\\nAction: create','Slug: hearRhythm\\nAction: update'));
+  f.edit(s=>s.replace('#### Hear Rhythm\n\nSlug: hearRhythm','#### Hear Rhythms\n\nSlug: hearRhythm')
+    .replace('Slug: hearRhythm\nAction: create','Slug: hearRhythm\nAction: update'));
   const r=f.runEnglishOnly('--apply');
   assert.equal(r.status,0,r.stderr);
   const after=source(f,p);
@@ -116,7 +116,7 @@ test('optional partial reviewed translations only populate the supplied locales'
   const translated=source(f,'geometry/angles/skills/compareAngles.data.ts');
   assert.match(translated,/"en": "Compare Angles"/);
   assert.match(translated,/"uk": "Порівнювати кути"/);
-  assert.match(translated,/"uk": "Досліджуй кути\\."/);
+  assert.match(translated,/"uk": "Досліджуй кути\."/);
   const unreviewed=source(f,'music/skills/hearRhythm.data.ts');
   assert.match(unreviewed,/"en": "Hear Rhythm"/);
   assert.doesNotMatch(unreviewed,/"uk":/);
