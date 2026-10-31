@@ -60,7 +60,7 @@ export const presentAnArtwork_Skill_Data = buildSkillConfig({
           "et": "Vali, kuidas ja kus oma kunstiteost sihtrühmale tutvustada.",
           "be": "Выберыце, як і дзе прадставіць твор мэтавай аўдыторыі.",
           "ka": "აირჩიეთ, როგორ და სად გაუზიაროთ ნამუშევარი მის სამიზნე აუდიტორიას.",
-          "kk": "Көрерменге сай өнер туындысын қалай және қайда ұсынатыныңызды таңдаңыз."
+          "kk": "Көрерменге сай өнер туындысын қалай және қайда ұсынатыныңызды таңдаңыз.",
     
       qm: "Sanat eserini közde tutulğan seyircige nasıl ve qayda paylaşacağını saylañız.",} },
 });
