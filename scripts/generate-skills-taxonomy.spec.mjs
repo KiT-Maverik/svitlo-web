@@ -22,11 +22,11 @@ const ids = {
 };
 const write = (file, value) => { fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, value); };
 const dictionary = prefix => '{' + locales.map(locale => JSON.stringify(locale) + ': ' + JSON.stringify(prefix + ' ' + locale)).join(', ') + '}';
-function entity(kind, slug, name, membership, withFe = kind === 'Skill') {
+function entity(kind, slug, name, membership, withFrontend = kind === 'Skill') {
   return 'export const ' + slug + '_' + kind + '_Data = build' + kind + 'Config({' +
     'id: ' + JSON.stringify(ids[slug]) + ', name: ' + dictionary(name) +
     ', description: {methodological: ' + JSON.stringify('English explanation for ' + name) +
-    (withFe ? ', frontend: ' + dictionary('Frontend ' + name) : '') + '}' +
+    (withFrontend ? ', frontend: ' + dictionary('Frontend ' + name) : '') + '}' +
     (membership ? ', ' + membership : '') + '});\n';
 }
 const groupedSkill = path.join(taxonomy, 'd/g/skills/s.data.ts');
