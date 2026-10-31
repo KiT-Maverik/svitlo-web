@@ -23,7 +23,7 @@ describe('Skills mind-map touch gestures', () => {
 
   beforeEach(() => {
     document.documentElement.lang = 'uk';
-    window.history.replaceState({}, '', '/skills');
+    window.history.replaceState({}, '', '/skillAnalytics');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
       const data: unknown = fixtureJsonForSkillUrl(url);
       return { ok: data !== null, status: data !== null ? 200 : 404, json: async () => data };

@@ -2,7 +2,7 @@ import { beforeEach, afterEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { aria } from '@svitlo/ui-kit/learning-layout/constants';
-import { SkillsPageShell } from './SkillsPageShell';
+import { SkillAnalyticsPage } from './SkillAnalyticsPage';
 import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 const theme = createTheme({ cssVariables: true, colorSchemes: { light: true, dark: true } });
@@ -10,7 +10,7 @@ describe('Skills page in shared LearningLayout', () => {
   const originalFetch = globalThis.fetch;
   beforeEach(() => {
     document.documentElement.lang = 'uk';
-    window.history.replaceState({}, '', '/skills');
+    window.history.replaceState({}, '', '/skillAnalytics');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
       const data: unknown = fixtureJsonForSkillUrl(url);
       return { ok: data !== null, status: data === null ? 404 : 200, json: async () => data };
@@ -22,7 +22,7 @@ describe('Skills page in shared LearningLayout', () => {
   });
 
   it('opens the existing navbar settings drawer and changes page-owned Skill cards', async () => {
-    render(<ThemeProvider theme={theme}><SkillsPageShell domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></ThemeProvider>);
+    render(<ThemeProvider theme={theme}><SkillAnalyticsPage domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></ThemeProvider>);
     const card = await screen.findByTestId('skill-node-testRed');
     expect(within(card).getByRole('progressbar')).toBeInTheDocument();
     expect(screen.getByRole('navigation', { name: aria.navigation.top })).toBeInTheDocument();

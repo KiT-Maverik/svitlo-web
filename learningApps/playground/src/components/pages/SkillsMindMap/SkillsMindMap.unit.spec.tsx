@@ -11,7 +11,7 @@ describe('SkillsMindMap', () => {
 
   beforeEach(() => {
     document.documentElement.lang = 'uk';
-    window.history.replaceState({}, '', '/skills');
+    window.history.replaceState({}, '', '/skillAnalytics');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
       const data: unknown = fixtureJsonForSkillUrl(url);
       return { ok: data !== null, status: data ? 200 : 404, json: async () => data };
@@ -35,7 +35,7 @@ describe('SkillsMindMap', () => {
     fireEvent.click(screen.getByTestId('skill-node-testWarmColors'));
     expect(screen.getByTestId('skill-node-testRed')).toBeInTheDocument();
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/data/skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/Pages/skillAnalytics/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('starts compact with visible mastery, expands the description and Pump action, then collapses again', async () => {
@@ -136,14 +136,14 @@ describe('SkillsMindMap', () => {
     await waitFor(() => expect(screen.getByTestId('skill-node-testRed')).toHaveTextContent('Red'));
     expect(window.location.search).toBe('?lang=en');
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/data/skills/testColors/en.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/Pages/skillAnalytics/en.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('displays a hard error for an unsupported requested language', async () => {
-    window.history.replaceState({}, '', '/skills?lang=ru');
+    window.history.replaceState({}, '', '/skillAnalytics?lang=ru');
     render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     expect(await screen.findByRole('alert')).toHaveTextContent('відсутня');
     expect(globalThis.fetch).not.toHaveBeenCalledWith(
-      '/data/skills/testColors/ru.json', expect.anything());
+      '/data/Pages/skillAnalytics/ru.json', expect.anything());
   });
 });

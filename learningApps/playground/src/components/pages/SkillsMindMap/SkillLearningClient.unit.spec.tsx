@@ -27,10 +27,10 @@ describe('Skill learning destination', () => {
     expect(screen.getByText('Розпізнавати червоний.')).toBeInTheDocument();
     expect(screen.getByRole('progressbar', { name: /Демонстраційний рівень/ })).toHaveAttribute('aria-valuenow');
     expect(screen.getByText(/немає пов'язаних матеріалів/)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Повернутися до карти Skills/ }))
-      .toHaveAttribute('href', '/skills?lang=uk');
+    expect(screen.getByRole('link', { name: /Повернутися до аналітики навичок/ }))
+      .toHaveAttribute('href', '/skillAnalytics?lang=uk');
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/data/skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/Pages/skillAnalytics/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('reports an unknown skill rather than substituting a different lesson', async () => {
@@ -38,6 +38,6 @@ describe('Skill learning destination', () => {
     const alert = await screen.findByRole('alert');
     expect(alert).toHaveTextContent('не знайдено');
     expect(within(alert).getByRole('link', { name: /Повернутися/ }))
-      .toHaveAttribute('href', '/skills');
+      .toHaveAttribute('href', '/skillAnalytics');
   });
 });
