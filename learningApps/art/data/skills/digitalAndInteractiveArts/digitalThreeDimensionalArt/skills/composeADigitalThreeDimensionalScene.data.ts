@@ -64,7 +64,7 @@ export const composeADigitalThreeDimensionalScene_Skill_Data = buildSkillConfig(
           "et": "Paiguta virtuaalsed objektid ja vali stseenile vaatepunkt.",
           "be": "Размясціце віртуальныя аб’екты і выберыце пункт гледжання, каб скампанаваць сцэну.",
           "ka": "განალაგეთ ვირტუალური ობიექტები და აირჩიეთ ხედვის წერტილი სცენის შესაქმნელად.",
-          "kk": "Көріністі құрастыру үшін виртуалды нысандарды орналастырып, көру нүктесін таңдаңыз。"
+          "kk": "Көріністі құрастыру үшін виртуалды нысандарды орналастырып, көру нүктесін таңдаңыз。",
     
       qm: "Sanal obyektlerni yerleştirip, sahneni qurmaq içün körüniş noqtasını saylañız.",},
   },
