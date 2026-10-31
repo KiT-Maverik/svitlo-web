@@ -11,6 +11,7 @@ export const identifyKnownUnknown_Skill_Data = buildSkillConfig({
     ka: 'ცნობილი და უცნობი სიდიდეების განსაზღვრა',
     kk: 'Белгілі және белгісіз шамаларды анықтау',
     en: 'Identifying known and unknown quantities',
+    qm: 'Belli ve belli olmağan miqdarlarnı tanımaq',
     zh: '识别已知量与未知量',
     hi: 'ज्ञात और अज्ञात राशियाँ पहचानना',
     es: 'Identificar datos conocidos e incógnitas',
@@ -38,6 +39,7 @@ export const identifyKnownUnknown_Skill_Data = buildSkillConfig({
       'Analyzing a word problem separates given quantities and their relationships from the unknown and the question to be answered. Narrative details need not be mathematical data, and keywords alone do not determine the solution method.',
     frontend: {
       en: 'You can identify the facts, quantities, and relationships in a word problem, and what it asks you to find, without being distracted by story details.',
+      qm: 'Sözlü meselede berilgen delil, miqdar ve bağlılıqlarnı, ne tapmaq kerek olğanını tanı. İkayeniñ artıq tafsilâtına aldanma.',
       zh: '你能从应用题中找出已知事实、数量及其关系，弄清需要求什么，而不被故事细节干扰。',
       hi: 'आप शब्दों में दी गई गणित की समस्या में तथ्य, राशियाँ और उनके संबंध पहचान सकते हैं और समझ सकते हैं कि क्या निकालना है, बिना कहानी के अनावश्यक विवरणों में उलझे।',
       es: 'Puedes identificar los datos, las cantidades y sus relaciones en un problema de enunciado, y qué te piden averiguar, sin distraerte con los detalles de la historia.',
