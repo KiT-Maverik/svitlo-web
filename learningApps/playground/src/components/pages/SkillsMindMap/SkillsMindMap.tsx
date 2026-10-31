@@ -48,9 +48,10 @@ interface OutlineProps {
   nodes: readonly SkillNode[];
   collapsed: ReadonlySet<string>;
   selectedId: string | null;
+  language: string;
   onNodeClick: (node: SkillNode) => void;
 }
-function SkillOutline({ nodes, collapsed, selectedId, onNodeClick }: OutlineProps) {
+function SkillOutline({ nodes, collapsed, selectedId, language, onNodeClick }: OutlineProps) {
   return (
     <ul className={styles.outlineList}>
       {nodes.map(node => {
@@ -67,10 +68,10 @@ function SkillOutline({ nodes, collapsed, selectedId, onNodeClick }: OutlineProp
               <span className={styles.outlineGlyph} aria-hidden="true">
                 {hasChildren ? (expanded ? '−' : '+') : '•'}
               </span>
-              <span>{node.name}</span>
+              <span lang={language} dir={language === 'ar' || language === 'ur' || language === 'he' ? 'rtl' : 'ltr'}>{node.name}</span>
               {hasChildren && <span className={styles.outlineCount}>{node.children.length}</span>}
             </button>
-            {expanded && <SkillOutline nodes={node.children} collapsed={collapsed} selectedId={selectedId} onNodeClick={onNodeClick} />}
+            {expanded && <SkillOutline nodes={node.children} collapsed={collapsed} selectedId={selectedId} language={language} onNodeClick={onNodeClick} />}
           </li>
         );
       })}
@@ -298,7 +299,7 @@ export function SkillsMindMap() {
                 <AccountCircleRoundedIcon fontSize="large" /> Учень
                 <span>{profileIsExpanded ? '−' : '+'}</span>
               </button>
-              {!rootCollapsed && <SkillOutline nodes={domains} collapsed={collapsed} selectedId={selectedId} onNodeClick={onNodeClick} />}
+              {!rootCollapsed && <SkillOutline nodes={domains} collapsed={collapsed} selectedId={selectedId} language={language!} onNodeClick={onNodeClick} />}
             </section>
           ) : (
             <section className={styles.mapFrame} aria-label="Радіальна мапа навичок">
