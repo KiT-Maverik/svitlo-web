@@ -64,7 +64,7 @@ export const analyzeGenerativeAuthorship_Skill_Data = buildSkillConfig({
           "et": "Uuri, kuidas kunstnikud, tööriistad, lähtematerjal ja reeglid panustavad generatiivsesse kunsti.",
           "be": "Даследуйце, як мастакі, інструменты, зыходныя матэрыялы і правілы ўдзельнічаюць у генератыўным мастацтве.",
           "ka": "შეისწავლეთ, როგორ მონაწილეობენ მხატვრები, ხელსაწყოები, საწყისი მასალა და წესები გენერაციულ ხელოვნებაში.",
-          "kk": "Суретшілер, құралдар, бастапқы материалдар мен ережелер генеративті өнерге қалай үлес қосатынын зерттеңіз。"
+          "kk": "Суретшілер, құралдар, бастапқы материалдар мен ережелер генеративті өнерге қалай үлес қосатынын зерттеңіз。",
     
       qm: "Sanatçı, aletler, menba materialı ve qaideleñgen qaide-niñ yaratılğan sanatqa qatqısını keşf etiñiz.",},
   },
