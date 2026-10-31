@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { SkillNode } from './skillsMindMap.utils';
 import { mockSkillMastery, skillLearningHref } from './skillsMindMap.utils';
 import styles from './SkillsMindMap.module.css';
+import { useSkillsPageSettings } from './SkillsPageSettingsContext';
 
 type MasteryTier = 'starting' | 'growing' | 'strong';
 
@@ -12,12 +13,13 @@ function masteryTier(value: number): MasteryTier {
 interface SkillMasteryProps {
   skillId: string;
   compact?: boolean;
+  colored?: boolean;
 }
 
-export function SkillMastery({ skillId, compact = false }: SkillMasteryProps) {
+export function SkillMastery({ skillId, compact = false, colored = true }: SkillMasteryProps) {
   const value = mockSkillMastery(skillId);
   return (
-    <div className={styles.mastery} data-tier={masteryTier(value)}
+    <div className={styles.mastery} data-tier={colored ? masteryTier(value) : 'neutral'}
       data-compact={compact ? 'true' : 'false'} data-testid={'mastery-' + skillId}>
       <div className={styles.masteryHeading}>
         <span>{compact ? 'Володіння' : 'Володіння навичкою'}</span>
@@ -65,7 +67,8 @@ export function SkillLeafCard({
   node, language, selected, expanded, onSelect, onToggle, left, top,
 }: SkillLeafCardProps) {
   const direction = language === 'ar' || language === 'he' || language === 'ur' ? 'rtl' : 'ltr';
-  const tier = masteryTier(mockSkillMastery(node.id));
+  const { settings } = useSkillsPageSettings();
+  const tier = settings.showMastery && settings.colorMastery ? masteryTier(mockSkillMastery(node.id)) : undefined;
   return (
     <article className={styles.node + ' ' + styles.skillNode +
       (expanded ? ' ' + styles.expandedSkillNode : ' ' + styles.compactSkillNode) +
@@ -92,8 +95,8 @@ export function SkillLeafCard({
           <p className={styles.nodeDescription} lang={language} dir={direction}>{node.description}</p>
         )}
       </div>
-      <SkillMastery skillId={node.id} compact={!expanded} />
-      {expanded && (
+      {settings.showMastery && <SkillMastery skillId={node.id} compact={!expanded} colored={settings.colorMastery} />}
+      {expanded && settings.showPump && (
         <div className={styles.skillCardFooter}>
           <SkillAction skillId={node.id} language={language} />
         </div>
