@@ -32,7 +32,7 @@ export const adaptIllustrationToAnAudience_Skill_Data = buildSkillConfig({
     be: "Адаптаваць ілюстрацыю да аўдыторыі",
     ka: "ილუსტრაციის მორგება აუდიტორიაზე",
     kk: "Иллюстрацияны аудиторияға бейімдеу",
-    qm: "Resimleməni seyircilerge uyğunlaştırmaq",
+    qm: "Resimlemeni seyircilerge uyğunlaştırmaq",
   },
   description: {
     methodological: "Choose a degree of detail and relevant visual conventions suited to intended readers.",
@@ -65,7 +65,7 @@ export const adaptIllustrationToAnAudience_Skill_Data = buildSkillConfig({
       be: "Падбірайце спосабы ілюстраваньня для людзей, якія будуць яе чытаць ці разглядаць.",
       ka: "შეარჩიეთ გამოსახვის ხერხები იმ ადამიანებისთვის, რომლებიც ილუსტრაციას წაიკითხავენ ან დაათვალიერებენ.",
       kk: "Иллюстрацияны оқитын немесе көретін адамдарға лайық бейнелеу тәсілдерін таңдаңыз.",
-      qm: "Resimleməni oquycaq ya da baqacaq adamlarğa uyğun tasvir usullarını saylañız.",
+      qm: "Resimlemeni oquycaq ya da baqacaq adamlarğa uyğun tasvir usullarını saylañız.",
     },
   },
 });
