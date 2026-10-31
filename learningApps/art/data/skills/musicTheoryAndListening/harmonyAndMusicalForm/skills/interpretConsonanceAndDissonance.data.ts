@@ -30,7 +30,7 @@ export const interpretConsonanceAndDissonance_Skill_Data = buildSkillConfig({
       lv: "Interpretēt konsonansi un disonansi",
       et: "Tõlgendada konsonantsi ja dissonantsi",
       be: "Тлумачыць кансананс і дысананс",
-      ka: "კონ consonანსისა და დისონანსის ინტერპრეტაცია",
+      ka: "კონსონანსისა და დისონანსის განმარტება",
       kk: "Консонанс пен диссонансты түсіндіру",
       qm: "Konsonans və dissonansı şərh etmək",
     },
