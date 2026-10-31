@@ -148,7 +148,7 @@ describe('Fit visible Skills in the viewport', () => {
 
   it('fits the avatar when all descendants are hidden and handles unavailable sizes', () => {
     const rootOnly = layoutSkillMindMap([], new Set());
-    const result = fitVisibleSkillNodes(rootOnly, new Set(), 900, 480);
+    const result = fitVisibleSkillNodes(rootOnly, new Set(), 900, 700);
     expect(result.pan).toEqual({ x: 0, y: 0 });
     expect(result.zoom).toBe(2.5);
     expect(fitVisibleSkillNodes(rootOnly, new Set(), 0, 0))
