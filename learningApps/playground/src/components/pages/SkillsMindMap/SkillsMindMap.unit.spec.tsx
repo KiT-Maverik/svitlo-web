@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { SkillsMindMap } from './SkillsMindMap';
+import { SkillsPageSettingsProvider } from './SkillsPageSettingsContext';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
 const domain = (language: 'en' | 'uk') => ({
@@ -46,7 +47,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('loads only the selected language and toggles an individual Group', async () => {
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     const node = await screen.findByTestId('skill-node-testWarmColors');
     expect(node).toHaveAttribute('aria-expanded', 'true');
     expect(screen.getByTestId('skill-node-testRed')).toBeVisible();
@@ -61,7 +62,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('starts compact with visible mastery, expands the description and Pump action, then collapses again', async () => {
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     const leaf = await screen.findByTestId('skill-node-testRed');
     expect(leaf).toHaveTextContent('Червоний');
     expect(leaf).toHaveAttribute('data-expanded', 'false');
@@ -93,7 +94,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('preserves compact mastery and expanded CTA in the accessible list view', async () => {
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testRed');
     fireEvent.click(screen.getByRole('button', { name: 'Список' }));
     const list = screen.getByRole('region', { name: 'Навички за доменами' });
@@ -114,7 +115,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('keeps different Skill card sizes independent of the Group collapse state', async () => {
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     const leaf = await screen.findByTestId('skill-node-testRed');
     const group = screen.getByTestId('skill-node-testWarmColors');
     fireEvent.click(within(leaf).getByRole('button', { name: /Інформація про скіл/ }));
@@ -130,7 +131,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('collapses all branches, expands them, and supports a keyboard-friendly list view', async () => {
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testRed');
     fireEvent.click(screen.getByRole('button', { name: 'Згорнути все' }));
     expect(screen.queryByTestId('skill-node-testRed')).not.toBeInTheDocument();
@@ -142,7 +143,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('allows collapsing the avatar root to just the learner profile', async () => {
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testColors');
     fireEvent.click(screen.getByTestId('skills-profile'));
     expect(screen.queryByTestId('skill-node-testColors')).not.toBeInTheDocument();
@@ -152,7 +153,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('switches to the requested language without loading all locale files', async () => {
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testRed');
     fireEvent.change(screen.getByRole('combobox', { name: 'Мова даних Skills' }), { target: { value: 'en' } });
     await waitFor(() => expect(screen.getByTestId('skill-node-testRed')).toHaveTextContent('Red'));
@@ -163,7 +164,7 @@ describe('SkillsMindMap', () => {
 
   it('displays a hard error for an unsupported requested language', async () => {
     window.history.replaceState({}, '', '/skills?lang=ru');
-    render(<SkillsMindMap />);
+    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
     expect(await screen.findByRole('alert')).toHaveTextContent('відсутня');
     expect(globalThis.fetch).not.toHaveBeenCalledWith(
       '/Data/Skills/testColors/ru.json', expect.anything());
