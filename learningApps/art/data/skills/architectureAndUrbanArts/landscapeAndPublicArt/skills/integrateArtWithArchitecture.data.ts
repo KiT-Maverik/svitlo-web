@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const integrateArtWithArchitecture_Skill_Data = buildSkillConfig({
   slug: "integrateArtWithArchitecture",
   id: "7bc80a38-f97f-434b-aeef-df503785e6c2",
-  name: { en: "Integrate Art with Architecture" },
+  name: {
+    en: "Integrate Art with Architecture",
+    zh: "将艺术融入建筑",
+    hi: "कला को वास्तुकला के साथ एकीकृत करें",
+    es: "Integrar el arte con la arquitectura",
+    ar: "دمج الفن مع العمارة",
+    fr: "Intégrer l’art à l’architecture",
+    bn: "স্থাপত্যের সঙ্গে শিল্পকে একীভূত করুন",
+    pt: "Integrar arte à arquitetura",
+    ur: "فن کو فنِ تعمیر کے ساتھ مربوط کریں",
+    id: "Mengintegrasikan Seni dengan Arsitektur",
+    de: "Kunst in Architektur integrieren",
+    ja: "芸術を建築と統合する",
+    ko: "예술과 건축 통합하기",
+    tr: "Sanatı Mimariyle Bütünleştirmek",
+    vi: "Tích hợp nghệ thuật với kiến trúc",
+    ta: "கலையை கட்டிடக்கலையுடன் ஒருங்கிணையுங்கள்",
+    te: "కళను వాస్తుశిల్పంతో సమగ్రపరచండి",
+    mr: "कलेचे वास्तुकलेशी एकत्रीकरण करा",
+    ms: "Mengintegrasikan Seni dengan Seni Bina",
+    he: "שילוב אמנות באדריכלות",
+    pl: "Integrować sztukę z architekturą",
+    uk: "Інтегрувати мистецтво з архітектурою",
+    lt: "Integruoti meną į architektūrą",
+    lv: "Integrēt mākslu arhitektūrā",
+    et: "Kunsti arhitektuuriga lõimimine",
+    be: "Інтэграваць мастацтва з архітэктурай",
+    ka: "ხელოვნების არქიტექტურასთან ინტეგრირება",
+    kk: "Өнерді сәулетпен кіріктіру",
+    qm: "Sanatnı mimariy ile birleştirmek",
+  },
   description: {
     methodological: "Develop a purposeful artistic relationship between an intervention and built space.",
     frontend: {
@@ -35,6 +65,7 @@ export const integrateArtWithArchitecture_Skill_Data = buildSkillConfig({
           "be": "Стварыце мастацкае дапаўненне, якое мэтанакіравана звязана з будынкам або прасторай.",
           "ka": "შექმენით მხატვრული დამატება, რომელიც გააზრებულად უკავშირდება შენობას ან სივრცეს.",
           "kk": "Ғимаратпен немесе кеңістікпен мақсатты байланыс орнататын көркемдік толықтыру жобалаңыз。"
-    },
+    
+      qm: "Bina ya da meydan ile maqsatlı bağ qurğan sanat qoşuntısını tasarlayıñız.",},
   },
 });
