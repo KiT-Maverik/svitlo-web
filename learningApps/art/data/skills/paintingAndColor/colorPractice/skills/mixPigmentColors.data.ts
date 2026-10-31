@@ -47,7 +47,7 @@ export const mixPigmentColors_Skill_Data = buildSkillConfig({
       ur: "اپنی پسند کا رنگ یا رنگوں کا امتزاج بنانے کے لیے پینٹ ملائیں۔",
       id: "Campurkan cat untuk menghasilkan warna atau hubungan warna yang diinginkan.",
       de: "Mische Farben, um den gewünschten Farbton oder ein bestimmtes Farbverhältnis zu erzielen.",
-      ja: "絵の具を混ぜて、 원하는 색や色の調和を作りましょう。",
+      ja: "絵の具を混ぜて、望む色や色の調和を作りましょう。",
       ko: "물감을 섞어 원하는 색이나 색의 조화를 만들어 보세요.",
       tr: "İstediğiniz rengi veya renk ilişkisini elde etmek için boyaları karıştırın.",
       vi: "Pha màu để tạo ra màu sắc hoặc mối quan hệ màu sắc mà bạn mong muốn.",
