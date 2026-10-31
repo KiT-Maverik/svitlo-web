@@ -77,7 +77,7 @@ export const digitalAndInteractiveArts_SkillDomain_Data = buildSkillDomainConfig
           "et": "Loo väljendusrikkaid digipilte, interaktiivseid kogemusi ja reeglite ning varieeruvuse kujundatud kunsti.",
           "be": "Стварайце выразныя лічбавыя выявы, інтэрактыўныя ўражанні і мастацтва, сфарміраванае правіламі і разнастайнасцю.",
           "ka": "შექმენით გამომსახველობითი ციფრული გამოსახულებები, ინტერაქტიული გამოცდილებები და წესებითა და ვარიაციით ფორმირებული ხელოვნება.",
-          "kk": "Ережелер мен өзгерістер арқылы қалыптасатын әсерлі цифрлық кескіндер, интерактивті тәжірибелер және өнер жасаңыз。"
+          "kk": "Ережелер мен өзгерістер арқылы қалыптасатын әсерлі цифрлық кескіндер, интерактивті тәжірибелер және өнер жасаңыз。",
     
       qm: "İfadeleyici raqemiy suretler, interaktiv tecribeler ve qaide-çeşitliknen şekillengen sanat yaratıñız.",},
   },
