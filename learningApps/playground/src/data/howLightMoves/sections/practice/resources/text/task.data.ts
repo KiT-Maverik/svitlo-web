@@ -3,6 +3,7 @@ import { practice_TextResources_Ids } from './index.ids';
 
 export const task_TextResource_Data = createTextResource(practice_TextResources_Ids.task, {
   en: 'Compare the speed of light in vacuum, air and water.',
+  qm: "Yarıqnıñ vakuumda, avada ve suvda yayılma süratini tenleştir.",
     lt: "Palygink šviesos greitį vakuume, ore ir vandenyje.",
     lv: "Salīdzini gaismas ātrumu vakuumā, gaisā un ūdenī.",
     et: "Võrdle valguse kiirust vaakumis, õhus ja vees.",
