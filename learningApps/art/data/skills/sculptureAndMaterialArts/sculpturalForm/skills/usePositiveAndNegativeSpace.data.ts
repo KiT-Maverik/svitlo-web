@@ -5,11 +5,11 @@ export const usePositiveAndNegativeSpace_Skill_Data = buildSkillConfig({
   id: "01c0f64f-96bd-49e8-9ea6-8988fa70a839",
   name: {
     en: "Use Positive and Negative Space",
-    zh: "运用正形与负形空间",
+    zh: "运用正负空间",
     hi: "सकारात्मक और नकारात्मक स्थान का उपयोग करें",
     es: "Utilizar el espacio positivo y negativo",
     ar: "استخدام الحيز الموجب والسالب",
-    fr: "Utiliser l’espace positif et négatif",
+    fr: "Utiliser les espaces positifs et négatifs",
     bn: "ধনাত্মক ও ঋণাত্মক স্থান ব্যবহার করুন",
     pt: "Utilizar o espaço positivo e negativo",
     ur: "مثبت اور منفی جگہ استعمال کریں",
