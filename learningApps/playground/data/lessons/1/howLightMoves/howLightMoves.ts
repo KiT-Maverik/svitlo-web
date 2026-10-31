@@ -1,17 +1,9 @@
-import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
 import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
 
 import {practice} from "./sections/practice/practice";
 import {theory} from "./sections/theory/theory";
 import {quiz} from "./sections/quiz/quiz";
-
-export type DeepLocalized<T> = T extends string
-  ? Record<DefaultSupportedLanguage['language'], string>
-  : T extends readonly (infer Item)[]
-    ? readonly DeepLocalized<Item>[]
-    : T extends object
-      ? { [Key in keyof T]: DeepLocalized<T[Key]> }
-      : T;
+import {DeepLocalized} from "./transformer.types";
 
 export type HowLightMoves_Lesson_Locales = DeepLocalized<HowLightMoves_Lesson_Locale>;
 

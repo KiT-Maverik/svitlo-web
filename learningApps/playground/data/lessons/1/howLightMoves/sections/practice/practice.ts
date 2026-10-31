@@ -1,6 +1,11 @@
-import {showcase} from "./scenes/showcase";
+import type {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
 
-export const practice = {
+import {showcase} from "./scenes/showcase";
+import {DeepLocalized} from "../../transformer.types";
+
+type Locale = DeepLocalized<HowLightMoves_Lesson_Locale['section']['practice']>;
+
+export const practice: Locale = {
   name: {
     en: 'Practice',
     qm: 'Ameliyat',
