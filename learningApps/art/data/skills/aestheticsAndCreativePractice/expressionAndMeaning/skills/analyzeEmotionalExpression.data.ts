@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const analyzeEmotionalExpression_Skill_Data = buildSkillConfig({
-  slug: "analyzeEmotionalExpression", id: "2d04d66f-a2c4-4fa6-bbb5-b37e374bbca8", name: { en: "Analyze Emotional Expression" },
+  slug: "analyzeEmotionalExpression", id: "2d04d66f-a2c4-4fa6-bbb5-b37e374bbca8", name: {
+    en: "Analyze Emotional Expression",
+    zh: "分析情感表达",
+    hi: "भावनात्मक अभिव्यक्ति का विश्लेषण करें",
+    es: "Analizar la expresión emocional",
+    ar: "تحليل التعبير العاطفي",
+    fr: "Analyser l’expression émotionnelle",
+    bn: "আবেগের প্রকাশ বিশ্লেষণ করুন",
+    pt: "Analisar a expressão emocional",
+    ur: "جذباتی اظہار کا تجزیہ کریں",
+    id: "Menganalisis Ekspresi Emosional",
+    de: "Emotionalen Ausdruck analysieren",
+    ja: "感情表現を分析する",
+    ko: "감정 표현 분석하기",
+    tr: "Duygusal İfadeyi Çözümlemek",
+    vi: "Phân tích biểu đạt cảm xúc",
+    ta: "உணர்ச்சி வெளிப்பாட்டைப் பகுப்பாய்வு செய்யுங்கள்",
+    te: "భావోద్వేగ వ్యక్తీకరణను విశ్లేషించండి",
+    mr: "भावनिक अभिव्यक्तीचे विश्लेषण करा",
+    ms: "Menganalisis Ekspresi Emosi",
+    he: "ניתוח הבעה רגשית",
+    pl: "Analizować ekspresję emocjonalną",
+    uk: "Аналізувати емоційне вираження",
+    lt: "Analizuoti emocinę raišką",
+    lv: "Analizēt emocionālo izteiksmi",
+    et: "Emotsionaalse väljenduse analüüsimine",
+    be: "Аналізаваць эмацыйнае выяўленне",
+    ka: "ემოციური გამოხატვის ანალიზი",
+    kk: "Эмоциялық көріністі талдау",
+    qm: "Duyğusal ifadeni tahlil etüv",
+  },
   description: { methodological: "Relate formal choices to perceived affect without assuming everyone responds identically.", frontend: {
           "en": "Connect an artwork's expressive features with feelings it may suggest.",
           "zh": "将作品的表现特征与它可能引发的感受联系起来。",
@@ -31,5 +61,6 @@ export const analyzeEmotionalExpression_Skill_Data = buildSkillConfig({
           "be": "Звяжыце выразныя асаблівасці твора з пачуццямі, якія ён можа выклікаць.",
           "ka": "დააკავშირეთ ნამუშევრის გამომსახველობითი ნიშნები იმ გრძნობებთან, რომლებსაც ის შეიძლება აღძრავდეს.",
           "kk": "Өнер туындысының мәнерлі белгілерін ол білдіретін сезімдермен байланыстырыңыз."
-    } },
+    
+      qm: "Sanat eseriniñ ifade hususiyetlerini onıñ bildire bilecek duyğularınen bağlañız.",} },
 });
