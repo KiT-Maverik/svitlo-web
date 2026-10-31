@@ -47,8 +47,8 @@ The English examples are **canonical editorial source text**, not completed lear
 
 ## Sources and factual verification
 
-- [verifyWithSecondMethod.data.ts](../../../../data/skills/reasoning/verification/skills/verifyWithSecondMethod.data.ts) — canonical approved Mathematics Skill object copied verbatim from `main`; UUID and methodological definition must not be altered.
-- [Svitlo Lesson Editorial Artifacts](../../../../../studio/docs/architecture/lesson-editorial-document.md) — separation of Brief, Content and Scene ownership.
+- [verifyWithSecondMethod.data.ts](../../../../data/skills/reasoning/verification/skills/verifyWithSecondMethod.data.ts) — canonical Mathematics Skill object transferred from `main`; UUID and methodological definition must not be altered.
+- [Svitlo Lesson Editorial Artifacts](../../../../../../studio/docs/architecture/lesson-editorial-document.md) — separation of Brief, Content and Scene ownership.
 - [Common Core State Standards for Mathematics](https://corestandards.org/mathematics-standards/) — supplementary progression reference; **not** evidence of a named Curriculum's alignment or a substitute for editorial approval.
 
 ## Curriculum / Program compatibility
