@@ -10,7 +10,7 @@ Domains: 2
 
 Groups: 4
 
-Skills: 8
+Skills: 12
 
 ## DOMAINS
 
@@ -78,7 +78,7 @@ Skills: 2
 
 ### Arithmetic
 
-Groups: 2 · Skills: 4
+Groups: 2 · Skills: 8
 
 [arithmetic.data.ts](../../../data/skills/arithmetic/arithmetic.data.ts)
 
@@ -114,7 +114,7 @@ Skills: 2
 
 #### Subtraction
 
-Skills: 2
+Skills: 6
 
 [subtraction.data.ts](../../../data/skills/arithmetic/subtraction/subtraction.data.ts)
 
@@ -137,4 +137,36 @@ Skills: 2
 **Methodological description (English):** When the minuend has insufficient ones, exchange one ten for ten ones without changing its value. Crossing ten also admits other equivalent strategies that preserve the difference.
 
 **User-friendly description (en):** You can subtract across ten by exchanging one ten for ten ones without changing the starting number.
+
+##### Subtraction with regrouping
+
+[regrouping.data.ts](../../../data/skills/arithmetic/subtraction/skills/regrouping.data.ts)
+
+**Methodological description (English):** Subtraction with place-value regrouping exchanges a higher-place unit for ten lower-place units when needed, including exchanges across a zero. The same invariant holds for two-digit, three-digit and larger minuends: regrouping changes representation without changing value.
+
+**User-friendly description (en):** You can subtract numbers by exchanging one ten for ten ones, or one hundred for ten tens, when there are not enough units in a place.
+
+##### Subtraction — Meaning and models
+
+[subtractMeaning.data.ts](../../../data/skills/arithmetic/subtraction/skills/subtractMeaning.data.ts)
+
+**Methodological description (English):** Subtraction may model removing a part, finding the difference between two quantities, or finding an unknown component of a known whole. These share an arithmetic relation but differ in known and unknown roles.
+
+**User-friendly description (en):** You can recognize subtraction as taking away, comparing quantities, or finding a missing part, and show each situation with a subtraction.
+
+##### Subtraction — Same number
+
+[subtractSelf.data.ts](../../../data/skills/arithmetic/subtraction/skills/subtractSelf.data.ts)
+
+**Methodological description (English):** For every number a, a - a = 0: removing an amount equal to the initial quantity leaves no remainder. This is consistent with the relationship between a number and its additive inverse.
+
+**User-friendly description (en):** When you subtract a number from itself, nothing remains, so the difference is zero.
+
+##### Subtraction — Zero
+
+[subtractZero.data.ts](../../../data/skills/arithmetic/subtraction/skills/subtractZero.data.ts)
+
+**Methodological description (English):** Subtracting zero leaves any number unchanged: a - 0 = a. This does not imply that zero minus a positive value is unchanged or that subtraction is commutative.
+
+**User-friendly description (en):** Subtracting zero leaves the starting number unchanged; reversing the numbers in a subtraction is not the same thing.
 
