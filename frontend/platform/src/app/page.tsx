@@ -1,56 +1,65 @@
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Chip from '@mui/material/Chip';
-import Container from '@mui/material/Container';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
-import { getLearningApps } from '@/catalog/learningApps';
+import Link from 'next/link';
+
+const features = [
+  { index: '01', title: 'Навчання через цікавість', text: 'Не просто читати правила, а досліджувати, пробувати й знаходити відповіді.', motif: '✦' },
+  { index: '02', title: 'У власному темпі', text: 'Невеликі кроки, зрозумілі пояснення та свобода повертатися до складного.', motif: '◌' },
+  { index: '03', title: 'Відкрито для кожного', text: 'Ми створюємо освітні матеріали, до яких можна долучитися незалежно від обставин.', motif: '↗' },
+] as const;
 
 export default function Home() {
-  const apps = getLearningApps();
-
   return (
-    <Container component="main" maxWidth="md" sx={{ py: { xs: 6, md: 10 } }}>
-      <Stack spacing={5}>
-        <Box component="header">
-          <Typography component="h1" variant="h3" sx={{ fontWeight: 800, letterSpacing: -1 }}>
-            Світло — інтерактивні підручники
-          </Typography>
-          <Typography variant="h6" color="text.secondary" sx={{ mt: 2, maxWidth: 660 }}>
-            Безплатна навчальна платформа. Обирайте підручник та навчайтеся у власному темпі.
-          </Typography>
-        </Box>
-        <Box component="section" aria-labelledby="textbooks-heading">
-          <Typography id="textbooks-heading" variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
-            Підручники
-          </Typography>
-          <Stack spacing={2}>
-            {apps.map(app => (
-              <Card variant="outlined" component="article" key={app.id}>
-                <CardContent>
-                  <Stack direction="row" sx={{ alignItems: 'center', justifyContent: 'space-between', gap: 2 }}>
-                    <Typography variant="h6" component="h3">{app.name}</Typography>
-                    <Chip size="small" label={app.url ? 'Доступний' : 'Готується'} />
-                  </Stack>
-                  <Typography color="text.secondary" sx={{ mt: 1 }}>{app.description}</Typography>
-                </CardContent>
-                <CardActions sx={{ px: 2, pb: 2 }}>
-                  {app.url ? (
-                    <Button variant="contained" href={app.url}>Відкрити підручник</Button>
-                  ) : (
-                    <Typography variant="body2" color="text.secondary">
-                      Посилання з’явиться після публікації підручника.
-                    </Typography>
-                  )}
-                </CardActions>
-              </Card>
-            ))}
-          </Stack>
-        </Box>
-      </Stack>
-    </Container>
+    <main>
+      <section className="hero">
+        <div className="site-container hero__grid">
+          <div className="hero__copy">
+            <span className="eyebrow"><span className="eyebrow__spark">✳</span> НОВЕ ПОКОЛІННЯ ОСВІТИ</span>
+            <h1>Світло<br /><span>Academy</span><span className="hero__period">.</span></h1>
+            <p className="hero__tagline">NextGen Learning<span> ✳</span></p>
+            <p className="hero__description">Світ, у якому навчатися цікаво. Створюємо інтерактивні підручники, що перетворюють допитливість на знання, а знання — на можливості.</p>
+            <div className="hero__actions">
+              <Link className="button button--primary" href="/materials">Відкрити навчальні матеріали <span aria-hidden="true">↗</span></Link>
+              <a className="button button--outline" href="#mission">Дізнатися більше <span aria-hidden="true">↓</span></a>
+            </div>
+            <div className="hero__signature"><span className="signature__asterisk">✳</span><span>Створено з любов’ю до дитячої цікавості.</span></div>
+          </div>
+          <div className="hero-art" aria-hidden="true">
+            <div className="hero-art__orbit hero-art__orbit--outer" />
+            <div className="hero-art__orbit hero-art__orbit--inner" />
+            <div className="hero-art__sun"><span>✳</span></div>
+            <div className="hero-art__bubble hero-art__bubble--a">Aa</div>
+            <div className="hero-art__bubble hero-art__bubble--pi">π</div>
+            <div className="hero-art__bubble hero-art__bubble--star">✦</div>
+            <div className="hero-art__note"><span className="hero-art__note-icon">↗</span><strong>Вчитися —<br />це пригода!</strong></div>
+            <div className="hero-art__caption">ЗНАННЯ БЕЗ МЕЖ · 2026</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--features">
+        <div className="site-container">
+          <div className="section-heading"><span className="eyebrow">ІДЕЯ СВІТЛА</span><h2>Майбутнє починається<br />з одного <em>«чому?»</em></h2></div>
+          <div className="feature-grid">{features.map(feature => (
+            <article className="feature-card" key={feature.index}>
+              <div className="feature-card__top"><span>{feature.index} / 03</span><span className="feature-card__motif" aria-hidden="true">{feature.motif}</span></div>
+              <h3>{feature.title}</h3><p>{feature.text}</p>
+            </article>
+          ))}</div>
+        </div>
+      </section>
+
+      <section className="section section--mission" id="mission">
+        <div className="site-container mission-panel">
+          <div><span className="eyebrow">НАША МІСІЯ</span><h2>Дати кожному дитинству <em>більше можливостей.</em></h2></div>
+          <div><p>Світло — це простір, де складні речі стають зрозумілими, помилки — частиною відкриттів, а бажання дізнатися більше завжди має підтримку.</p><Link className="text-link" href="/scholarships">Дізнатись про стипендії <span aria-hidden="true">↗</span></Link></div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="site-container join-panel">
+          <div><span className="eyebrow">БУДУЄМО РАЗОМ</span><h2>За кожним великим світлом — люди.</h2><p>Знайомтеся з командою, підтримуйте ідею та допомагайте робити знання доступними.</p></div>
+          <Link className="button button--light" href="/team">Знайомитися з командою <span aria-hidden="true">↗</span></Link>
+        </div>
+      </section>
+    </main>
   );
 }

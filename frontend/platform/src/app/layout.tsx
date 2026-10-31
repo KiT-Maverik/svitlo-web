@@ -4,11 +4,12 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import CssBaseline from '@mui/material/CssBaseline';
 import InitColorSchemeScript from '@mui/material/InitColorSchemeScript';
 import PlatformThemeProvider from './ThemeProvider';
+import { SiteFooter, SiteHeader } from '@/components/SiteChrome';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Світло — інтерактивні підручники',
-  description: 'Безплатні інтерактивні підручники з відкритим доступом до навчання.',
+  title: { default: 'Світло Academy — NextGen Learning', template: '%s | Світло Academy' },
+  description: 'Світло Academy — проєкт безплатних інтерактивних підручників та доступного навчання для кожної дитини.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -19,7 +20,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <PlatformThemeProvider>
             <CssBaseline />
-            {children}
+            <div className="site-shell">
+              <SiteHeader />
+              {children}
+              <SiteFooter />
+            </div>
           </PlatformThemeProvider>
         </AppRouterCacheProvider>
       </body>

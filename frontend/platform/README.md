@@ -1,29 +1,26 @@
-# @svitlo/platform — Svitlo web platform (Stage 7)
+# @svitlo/platform — Світло Academy
 
-Independent **Next.js 16 App Router** application with React 19, TypeScript, Material UI and the initial Ukrainian textbook catalog. This is a standalone deployable frontend, **not a host for embedded textbook source code**. Math and Playground remain separate applications; Platform never imports their source or workspace packages.
+Standalone Next.js 16 App Router public website with React 19 and TypeScript. The platform is a presentation and discovery site, not a runtime container for textbook source code.
 
-## Local development
+## Routes
 
-Run from the monorepo root:
+- / — Academy / NextGen Learning landing page
+- /team — team portraits and role chips
+- /hall-of-fame — justified country-flag + name pairs (demonstration data)
+- /scholarships — six editorial concepts from studio/To Do/growth/scholarships-ukraine.md
+- /sponsors — interactive tabs for patrons, organizations and media
+- /materials — textbook catalog with separate-app deployment links
 
-```bash
-npm ci
-npm run dev:platform
-npm run build:platform
-npm run typecheck:platform
-npm run lint --workspace @svitlo/platform
-npm run test:e2e:platform # Requires a production build and Playwright Chromium
-```
+## Running
 
-The platform dev server uses Next.js default port 3000; choose a different port if another app is running. Smoke E2E uses isolated port 3111.
+From the repository root, use npm ci, followed by npm run dev:platform, npm run build:platform, npm run typecheck:platform and npm run lint --workspace @svitlo/platform.
 
-## Textbook links
+The Playwright smoke suite (npm run test:e2e:platform) uses port 3111 and requires a built production app. Navigation, scholarship previews and informational pages need no external service.
 
-Configure `NEXT_PUBLIC_MATH_APP_URL` to the **absolute HTTP(S) URL** of the separately deployed Math application (see `.env.example`). Without that configuration, the catalog shows "Готується" instead of linking to a nonexistent URL. Environment variables prefixed `NEXT_PUBLIC_` are resolved at build time; rebuild the platform when changing this destination.
+## Deployment URLs and placeholders
 
-## Scope
+Only Mathematics has a configurable external URL, via NEXT_PUBLIC_MATH_APP_URL in .env.example. The catalog never links to invented textbook URLs. Other textbook cards are clearly labeled as works in progress.
 
-- Landing page, metadata, responsive MUI styling and accessible catalog
-- Workspace scripts, isolated TypeScript/ESLint config, CI build and browser smoke tests
-- No authentication, payment, marketplace, database, backend integration, hardcoded deployment domains or shared lesson implementation — those require separate scoped work
-- Keep platform-specific code and assets under `frontend/platform/`. Extracting this app must not require imports from `learningApps/*`.
+Team photos are temporary Unsplash images served from the external image host and **do not depict the named team members**. Replace them with consented portraits before launch. The Hall of Fame contains invented demonstration names; it must not be presented as a list of real donors. The scholarship proposals are **not launched programs**; no application form, entitlement rules, donor roster or funding claim is implemented.
+
+Keep this package independent from learningApps/* source and from runtime configuration objects in other packages.
