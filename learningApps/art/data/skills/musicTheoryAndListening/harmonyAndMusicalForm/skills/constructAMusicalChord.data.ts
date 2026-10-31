@@ -32,7 +32,7 @@ export const constructAMusicalChord_Skill_Data = buildSkillConfig({
       be: "Стварыць музычны акорд",
       ka: "მუსიკალური აკორდის შექმნა",
       kk: "Музыкалық аккорд құрастыру",
-      qm: "Musiqi akkordu qurmaq",
+      qm: "Musiqiy akkord qurmaq",
     },
   description: {
     methodological: "Combine pitches into an intended harmonic sonority under a given tuning or harmonic system.",
@@ -65,7 +65,7 @@ export const constructAMusicalChord_Skill_Data = buildSkillConfig({
       be: "Аб'яднайце ноты, каб стварыць акорд з абраным музычным гучаннем.",
       ka: "შეაერთეთ ნოტები სასურველი ჟღერადობის აკორდის შესაქმნელად.",
       kk: "Ноталарды біріктіріп, таңдалған музыкалық дыбысталуы бар аккорд құрастырыңыз.",
-      qm: "Seçilmiş musiqi səslənişinə malik akkord yaratmaq üçün notları birləşdirin.",
+      qm: "Saylanğan musiqiy seske sahip akkord yaratmaq içün notalarnı birleştiriñiz.",
     }
   },
 });
