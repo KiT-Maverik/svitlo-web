@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const designArtisticInteraction_Skill_Data = buildSkillConfig({
   slug: "designArtisticInteraction",
   id: "4024242e-6be3-4ec7-abfc-8b032a4b2b45",
-  name: { en: "Design Artistic Interaction" },
+  name: {
+    en: "Design Artistic Interaction",
+    zh: "设计艺术互动",
+    hi: "कलात्मक सहभागिता डिज़ाइन करें",
+    es: "Diseñar una interacción artística",
+    ar: "تصميم تفاعل فني",
+    fr: "Concevoir une interaction artistique",
+    bn: "শৈল্পিক মিথস্ক্রিয়া নকশা করুন",
+    pt: "Projetar uma interação artística",
+    ur: "فنّی تعامل ڈیزائن کریں",
+    id: "Merancang Interaksi Artistik",
+    de: "Künstlerische Interaktion gestalten",
+    ja: "芸術的なインタラクションを設計する",
+    ko: "예술적 상호작용 설계하기",
+    tr: "Sanatsal Etkileşim Tasarlamak",
+    vi: "Thiết kế tương tác nghệ thuật",
+    ta: "கலைநயமான ஊடாட்டத்தை வடிவமைக்குங்கள்",
+    te: "కళాత్మక పరస్పర చర్యను రూపకల్పన చేయండి",
+    mr: "कलात्मक परस्परसंवादाची रचना करा",
+    ms: "Mereka Bentuk Interaksi Artistik",
+    he: "עיצוב אינטראקציה אמנותית",
+    pl: "Projektować interakcję artystyczną",
+    uk: "Проєктувати мистецьку взаємодію",
+    lt: "Kurti meninę sąveiką",
+    lv: "Veidot māksliniecisku mijiedarbību",
+    et: "Kunstilise interaktsiooni kujundamine",
+    be: "Праектаваць мастацкае ўзаемадзеянне",
+    ka: "მხატვრული ურთიერთქმედების დიზაინი",
+    kk: "Көркем өзара әрекеттесуді жобалау",
+    qm: "Sanat tesirleşüvini tasarlamaq",
+  },
   description: {
     methodological: "Connect an audience action with an intentional aesthetic state change.",
     frontend: {
@@ -35,6 +65,7 @@ export const designArtisticInteraction_Skill_Data = buildSkillConfig({
           "be": "Спраектуйце ўзаемадзеянне, якое выразна змяняе мастацкі твор.",
           "ka": "შექმენით ინტერაქცია, რომელიც ნამუშევარს გამომსახველობითად ცვლის.",
           "kk": "Жұмысты мәнерлі түрде өзгертетін өзара әрекеттесуді жобалаңыз。"
-    },
+    
+      qm: "Sanat eserini ifadeleyici bir şekilde deñiştirecek tesirleşüvni tasarlayıñız.",},
   },
 });
