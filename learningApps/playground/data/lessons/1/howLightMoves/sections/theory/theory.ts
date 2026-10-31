@@ -1,38 +1,47 @@
 import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
+
 import type { StringObjectToLocale } from '../../transformer.types';
+import {checkpoint} from "./scenes/checkpoint";
+import lightPropagationSimulation from "./scenes/lightPropagationSimulation";
+import {lightRayDiagram} from "./scenes/lightRayDiagram";
 
-type Locale = StringObjectToLocale<Pick<HowLightMoves_Lesson_Locale['section']['theory'], 'name'>>;
+type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['theory']>;
 
-export const theory = {
+export const theory: Locale = {
   name: {
-    en: 'Theory',
-    qm: 'Nazariye',
-    lt: 'Teorija',
-    lv: 'Teorija',
-    et: 'Teooria',
+    ar: 'النظرية',
     be: 'Тэорыя',
+    bn: 'তত্ত্ব',
+    de: 'Theorie',
+    en: 'Theory',
+    es: 'Teoría',
+    et: 'Teooria',
+    fr: 'Théorie',
+    he: 'תיאוריה',
+    hi: 'सिद्धांत',
+    id: 'Teori',
+    ja: '理論',
     ka: 'თეორია',
     kk: 'Теория',
-    zh: '理论',
-    hi: 'सिद्धांत',
-    es: 'Teoría',
-    ar: 'النظرية',
-    fr: 'Théorie',
-    bn: 'তত্ত্ব',
-    pt: 'Teoria',
-    ur: 'نظریہ',
-    id: 'Teori',
-    de: 'Theorie',
-    ja: '理論',
     ko: '이론',
-    tr: 'Teori',
-    vi: 'Lý thuyết',
-    ta: 'கோட்பாடு',
-    te: 'సిద్ధాంతం',
+    lt: 'Teorija',
+    lv: 'Teorija',
     mr: 'सिद्धांत',
     ms: 'Teori',
-    he: 'תיאוריה',
     pl: 'Teoria',
+    pt: 'Teoria',
+    qm: 'Nazariye',
+    ta: 'கோட்பாடு',
+    te: 'సిద్ధాంతం',
+    tr: 'Teori',
     uk: 'Теорія',
+    ur: 'نظریہ',
+    vi: 'Lý thuyết',
+    zh: '理论',
   },
-} satisfies Locale;
+  scene: {
+    checkpoint,
+    lightRayDiagram,
+    lightPropagationSimulation,
+  }
+};
