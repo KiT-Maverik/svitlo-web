@@ -5,6 +5,7 @@ export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
   id: 'b99c90cc-815d-4944-851a-e33ecb43e5b0',
   name: {
     en: 'Verifying a calculation using another method',
+    qm: 'Esaplavnı başqa usulnen teşkere etmek',
     lt: 'Skaičiavimo tikrinimas kitu būdu',
     lv: 'Aprēķina pārbaude ar citu metodi',
     et: 'Arvutuse kontrollimine teise meetodiga',
@@ -38,6 +39,7 @@ export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
       'A quotient can be checked by multiplication, and a sum by subtraction; using an independent verification strategy can expose an error.',
     frontend: {
       en: 'You can check a calculation in another way, such as using multiplication to check division, to catch mistakes.',
+      qm: 'Yañlışlarnı tapmaq içün esaplavnı başqa usulnen teşkere ete bilesiñ. Meselâ, bölüvniñ neticesini arttıruv yardımınen teşkere et.',
       zh: '你能用另一种方法检查计算，例如用乘法检验除法，从而发现可能的错误。',
       hi: 'आप गलती पकड़ने के लिए गणना को दूसरे तरीके से जाँच सकते हैं, जैसे भाग को गुणा से जाँचना।',
       es: 'Puedes comprobar un cálculo de otra manera, por ejemplo usando la multiplicación para verificar una división y detectar errores.',

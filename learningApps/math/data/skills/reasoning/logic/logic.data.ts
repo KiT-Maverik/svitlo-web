@@ -7,6 +7,7 @@ export const logic_SkillGroup_Data = buildSkillGroupConfig({
   id: '5f3df23c-87ce-411d-87db-6c76d9cd8a48',
   name: {
     en: 'Logical reasoning',
+    qm: 'Mantıqiy fikir yürsetüv',
     lt: 'Loginis samprotavimas',
     lv: 'Loģiskā spriešana',
     et: 'Loogiline arutlus',
