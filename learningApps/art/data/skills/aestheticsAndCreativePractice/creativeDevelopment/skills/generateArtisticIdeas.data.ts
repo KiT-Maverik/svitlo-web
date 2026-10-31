@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const generateArtisticIdeas_Skill_Data = buildSkillConfig({
-  slug: "generateArtisticIdeas",
-  id: "f3fecd9b-1db8-4fee-af67-5df3077f128d",
-  name: {
-    en: "Generate Artistic Ideas",
-  },
-  description: {
-    methodological: "Develop distinct possible creative directions from a premise or material constraint.",
-    frontend: {
-      en: "Develop several distinct artistic possibilities from one starting idea.",
-    },
-  },
+  slug: "generateArtisticIdeas", id: "f3fecd9b-1db8-4fee-af67-5df3077f128d", name: { en: "Generate Artistic Ideas" },
+  description: { methodological: "Develop distinct possible creative directions from a premise or material constraint.", frontend: {
+          "en": "Develop several distinct artistic possibilities from one starting idea.",
+          "zh": "从一个起始想法发展出几种不同的艺术可能性。",
+          "hi": "एक शुरुआती विचार से कई अलग-अलग कलात्मक संभावनाएँ विकसित करें।",
+          "es": "Desarrolla varias posibilidades artísticas distintas a partir de una idea inicial.",
+          "ar": "طوّر عدة إمكانات فنية مختلفة انطلاقاً من فكرة واحدة.",
+          "fr": "Développez plusieurs possibilités artistiques distinctes à partir d’une idée de départ.",
+          "bn": "একটি প্রাথমিক ধারণা থেকে বেশ কয়েকটি স্বতন্ত্র শিল্পসম্ভাবনা তৈরি করুন।",
+          "pt": "Desenvolva várias possibilidades artísticas distintas a partir de uma ideia inicial.",
+          "ur": "ایک ابتدائی خیال سے فنّی امکانات کی کئی الگ صورتیں تیار کریں۔",
+          "id": "Kembangkan beberapa kemungkinan artistik yang berbeda dari satu gagasan awal.",
+          "de": "Entwickle aus einer Ausgangsidee mehrere unterschiedliche künstlerische Möglichkeiten.",
+          "ja": "一つの出発点となるアイデアから、複数の異なる芸術的な可能性を展開します。",
+          "ko": "하나의 출발 아이디어에서 여러 가지 서로 다른 예술적 가능성을 발전시켜 보세요.",
+          "tr": "Tek bir başlangıç fikrinden farklı sanatsal olasılıklar geliştirin.",
+          "vi": "Phát triển nhiều khả năng nghệ thuật khác nhau từ một ý tưởng ban đầu.",
+          "ta": "ஒரு தொடக்கக் கருத்திலிருந்து பல்வேறு தனித்துவமான கலைச் சாத்தியங்களை உருவாக்குங்கள்.",
+          "te": "ఒక ప్రారంభ ఆలోచన నుంచి అనేక విభిన్న కళాత్మక అవకాశాలను అభివృద్ధి చేయండి.",
+          "mr": "एका सुरुवातीच्या कल्पनेतून अनेक वेगवेगळ्या कलात्मक शक्यता विकसित करा.",
+          "ms": "Kembangkan beberapa kemungkinan artistik yang berbeza daripada satu idea permulaan.",
+          "he": "פתחו כמה אפשרויות אמנותיות שונות מתוך רעיון התחלתי אחד.",
+          "pl": "Opracuj kilka odrębnych możliwości artystycznych na podstawie jednej idei wyjściowej.",
+          "uk": "Розвиньте кілька різних мистецьких можливостей на основі однієї початкової ідеї.",
+          "lt": "Iš vienos pradinės idėjos išplėtokite kelias skirtingas menines galimybes.",
+          "lv": "Attīstiet vairākas atšķirīgas mākslinieciskās iespējas, sākot ar vienu ideju.",
+          "et": "Arenda ühest lähteideest mitu erinevat kunstilist võimalust.",
+          "be": "Развівайце некалькі розных мастацкіх магчымасцей на аснове адной пачатковай ідэі.",
+          "ka": "განავითარეთ რამდენიმე განსხვავებული მხატვრული შესაძლებლობა ერთი საწყისი იდეიდან.",
+          "kk": "Dolgozzon ki több különböző művészi lehetőséget egy kiinduló ötletből。"
+    } },
 });
