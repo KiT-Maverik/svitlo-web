@@ -5,6 +5,7 @@ export const countBy100_Skill_Data = buildSkillConfig({
   id: '130326b8-210c-41f7-8da3-3db1ceef5950',
   name: {
     en: 'Counting in steps of 100',
+    qm: 'Yüzerlep saymaq',
     lt: 'Skaičiavimas šimtais',
     lv: 'Skaitīšana ar soli 100',
     et: 'Saja kaupa loendamine',
@@ -38,6 +39,7 @@ export const countBy100_Skill_Data = buildSkillConfig({
       'A step of one hundred increases the number of complete hundreds by one; the tens and ones stay unchanged as long as the range permits. This relies on decimal place value.',
     frontend: {
       en: 'Add one hundred at each step while the tens and ones stay the same.',
+      qm: 'Er adımda bir yüz qoş, onluqlar ve birlikler ise aynı qalsın.',
       zh: '每次加100，百位增加，十位和个位保持不变。',
       hi: 'हर कदम पर सौ जोड़ें; दहाइयों और इकाइयों के अंक वही रहते हैं।',
       es: 'Suma cien en cada paso; las decenas y las unidades permanecen iguales.',

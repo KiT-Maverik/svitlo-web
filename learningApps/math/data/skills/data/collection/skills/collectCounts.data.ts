@@ -5,6 +5,7 @@ export const collectCounts_Skill_Data = buildSkillConfig({
   id: 'cfe3e619-a2bf-42db-8b4e-6cc3ff707f01',
   name: {
     en: 'Counting category frequencies',
+    qm: 'Kategoriyalarnıñ qaytalanma sayısını esaplav',
     lt: 'Kategorijų dažnių skaičiavimas',
     lv: 'Kategoriju biežuma skaitīšana',
     et: 'Kategooriate sageduste loendamine',
@@ -38,6 +39,7 @@ export const collectCounts_Skill_Data = buildSkillConfig({
       "A category's frequency is the number of observations assigned to it. Counting must be consistent and unambiguous, and frequencies of exhaustive, nonoverlapping categories must sum to the total number of observations.",
     frontend: {
       en: 'You can count how often each category appears in a set of observations and check that the category counts add up to the total.',
+      qm: 'Müşaedeler toplumında er kategoriyanıñ qaç kere rastkelgenini sayıp, kategoriyalarnıñ sayıları umumiy sayığa teñ olğanını teşkere bilesiñ.',
       zh: '你能统计每类在观察记录中出现的次数，并核对各类数量之和是否等于总数。',
       hi: 'आप गिन सकते हैं कि अवलोकनों में हर श्रेणी कितनी बार आई और जाँच सकते हैं कि सभी श्रेणियों की गिनती कुल के बराबर है।',
       es: 'Puedes contar cuántas veces aparece cada categoría entre las observaciones y comprobar que las cantidades suman el total.',

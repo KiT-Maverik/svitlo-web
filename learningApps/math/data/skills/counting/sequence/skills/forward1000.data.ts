@@ -5,6 +5,7 @@ export const forward1000_Skill_Data = buildSkillConfig({
   id: 'e789a4fd-8ea2-4309-b19d-eaede0ed9c37',
   name: {
     en: 'Continuing number sequences within 1,000',
+    qm: '1000 içinde sayı silsilelerini devam ettirmek',
     lt: 'Skaičių sekų tęsimas iki 1000',
     lv: 'Skaitļu virkņu turpināšana 1000 robežās',
     et: 'Arvujadade jätkamine 1000 piires',
@@ -38,6 +39,7 @@ export const forward1000_Skill_Data = buildSkillConfig({
       'Recover missing or subsequent consecutive natural numbers using adjacency and a step of one. Crossing tens and hundreds does not change the rule; this differs from discovering an arbitrary pattern.',
     frontend: {
       en: 'Find the next or missing consecutive number within 1,000, including when crossing tens or hundreds. The step is always one.',
+      qm: '1000 içinde ketme-ket kelgen sayılarnıñ soñrakisini ya da eksik olğanını tap. Onluq ya da yüzlüq sıñırından keçkende de, adım er vaqıt birge teñ.',
       zh: '找出1000以内连续数列的下一个数或缺少的数，跨过整十、整百时也是每次相差一。',
       hi: '1,000 के भीतर लगातार संख्याओं में अगली या छूटी संख्या खोजें, दहाई या सैकड़ा पार करते समय भी। हर कदम एक का है।',
       es: 'Encuentra el número consecutivo que sigue o falta hasta 1.000, incluso al cambiar de decena o centena. Cada paso es de uno.',
