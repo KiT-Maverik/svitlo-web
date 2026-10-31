@@ -214,8 +214,10 @@ function codeLink(e) {
   const f = fileOf(e);
   return '[' + path.basename(f) + '](' + encodeURI(path.relative(path.dirname(opts.markdown),f).split(path.sep).join('/')) + ')';
 }
-function dictionary(obj) {
-  return '{\n' + Object.entries(obj).map(([k,v]) => '    ' + (/^[A-Za-z_$][\w$]*$/.test(k) ? k : JSON.stringify(k)) + ': ' + JSON.stringify(v) + ',').join('\n') + '\n  }';
+function dictionary(obj, indentation = 2) {
+  const inner = ' '.repeat(indentation + 2);
+  const outer = ' '.repeat(indentation);
+  return '{\n' + Object.entries(obj).map(([k,v]) => inner + (/^[A-Za-z_$][\w$]*$/.test(k) ? k : JSON.stringify(k)) + ': ' + JSON.stringify(v) + ',').join('\n') + '\n' + outer + '}';
 }
 function existing(e) {
   const f = fileOf(e), code = readCode(f,e.kind);
@@ -294,6 +296,7 @@ function render(e,value,kids) {
   const imports=["import { build"+e.kind+"Config } from '@svitlo/engine/taxonomy';"];
   const lines=['  id: '+JSON.stringify(value.id)+',','  name: '+dictionary(value.name)+','];
   if (kids.length) {
+    imports.push(''); // Separate engine builder from child Data imports.
     if (kids[0].kind==='SkillGroup') for (const x of kids)
       imports.push("import { "+x.slug+"_SkillGroup_Data } from './"+x.slug+"/"+x.slug+".data';");
     else imports.push("import { "+kids.map(x=>x.slug+"_Skill_Data").join(', ')+" } from './skills';");
@@ -304,7 +307,7 @@ function render(e,value,kids) {
   }
   lines.push('  description: {');
   lines.push('    methodological: '+JSON.stringify(value.methodological)+',');
-  if (value.frontend) lines.push('    frontend: '+dictionary(value.frontend)+',');
+  if (value.frontend) lines.push('    frontend: '+dictionary(value.frontend,4)+',');
   lines.push('  },');
   return imports.join('\n')+'\n\nexport const '+e.slug+'_'+e.kind+'_Data = build'+e.kind+
     'Config({\n'+lines.join('\n')+'\n});\n';
@@ -338,9 +341,9 @@ function patchExisting(e,reviewed,methodological) {
   if (reviewed.frontend) {
     if (currentFrontend) {
       const oldFrontend=unwrap(currentFrontend.initializer);
-      if (!sameDictionary(dict(oldFrontend,'frontend'),reviewed.frontend)) add(oldFrontend,dictionary(reviewed.frontend));
+      if (!sameDictionary(dict(oldFrontend,'frontend'),reviewed.frontend)) add(oldFrontend,dictionary(reviewed.frontend,4));
     } else changes.push({start:desc.getEnd()-1,end:desc.getEnd()-1,
-      text:'\n    frontend: '+dictionary(reviewed.frontend)+',\n  '});
+      text:'\n    frontend: '+dictionary(reviewed.frontend,4)+',\n  '});
   }
   let content=info.source;
   for (const x of changes.sort((a,b)=>b.start-a.start))
