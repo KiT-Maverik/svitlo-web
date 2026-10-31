@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const curateGenerativeOutputs_Skill_Data = buildSkillConfig({
   slug: "curateGenerativeOutputs",
   id: "886757e1-e7ef-46e4-8d92-d7ef53c5a49e",
-  name: { en: "Curate Generative Outputs" },
+  name: {
+    en: "Curate Generative Outputs",
+    zh: "策选生成结果",
+    hi: "जनरेटिव परिणामों का चयन और संयोजन करें",
+    es: "Seleccionar y organizar resultados generativos",
+    ar: "تنسيق المخرجات التوليدية",
+    fr: "Sélectionner et organiser les résultats génératifs",
+    bn: "জেনারেটিভ ফলাফল বাছাই ও বিন্যস্ত করুন",
+    pt: "Selecionar e organizar resultados generativos",
+    ur: "جنریٹو نتائج کا انتخاب اور ترتیب کریں",
+    id: "Mengurasi Hasil Generatif",
+    de: "Generative Ergebnisse kuratieren",
+    ja: "生成された成果をキュレーションする",
+    ko: "생성 결과 큐레이션하기",
+    tr: "Üretken Çıktıları Seçip Düzenlemek",
+    vi: "Tuyển chọn kết quả tạo sinh",
+    ta: "உருவாக்கப்பட்ட விளைவுகளைத் தேர்ந்தெடுத்து ஒழுங்குபடுத்துங்கள்",
+    te: "ఉత్పాదక ఫలితాలను ఎంపిక చేసి కూర్చండి",
+    mr: "जनरेटिव्ह परिणामांचे संकलन करा",
+    ms: "Mengkurasi Hasil Generatif",
+    he: "אוצרות של תוצרים גנרטיביים",
+    pl: "Kuratorować wyniki generatywne",
+    uk: "Добирати й упорядковувати генеративні результати",
+    lt: "Atrinkti generatyvius rezultatus",
+    lv: "Atlasīt un kārtot ģeneratīvos rezultātus",
+    et: "Generatiivsete väljundite kureerimine",
+    be: "Адбіраць генератыўныя вынікі",
+    ka: "გენერაციული შედეგების კურაცია",
+    kk: "Генеративті нәтижелерді іріктеу",
+    qm: "Yaratılğan neticelerni saylap tertip etmek",
+  },
   description: {
     methodological: "Select, reject or revise generated results according to expressive criteria.",
     frontend: {
@@ -35,6 +65,7 @@ export const curateGenerativeOutputs_Skill_Data = buildSkillConfig({
           "be": "Выбірайце і ўдасканальвайце згенераваныя выявы ў адпаведнасці з мастацкімі мэтамі.",
           "ka": "შეარჩიეთ და გააუმჯობესეთ გენერირებული გამოსახულებები თქვენი მხატვრული მიზნების შესაბამისად.",
           "kk": "Өнерлік мақсаттарыңызға сай жасалған кескіндерді таңдап, жетілдіріңіз。"
-    },
+    
+      qm: "Yaratılğan suretlerni öz sanat maqsatlarıñızğa köre saylañız ve yahşılañız.",},
   },
 });
