@@ -6,7 +6,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
   slug: "digitalImages",
   id: "a8166fd3-1aab-4794-a7cc-606ce922ce96",
   name: {
-    en: "Create digital pictures with pixels, shapes, layers and selective edits.",
+    en: "Digital Images",
     zh: "使用像素、形状、图层和局部调整创作数字图像。",
     hi: "पिक्सेल, आकृतियों, परतों और चुनिंदा बदलावों से डिजिटल चित्र बनाएँ।",
     es: "Crear imágenes digitales con píxeles, formas, capas y ediciones selectivas.",
