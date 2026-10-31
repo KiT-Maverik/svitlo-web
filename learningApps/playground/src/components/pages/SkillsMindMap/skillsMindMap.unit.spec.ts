@@ -1,0 +1,98 @@
+import { describe, expect, it } from 'vitest';
+import {
+  expandableSkillIds,
+  fitMindMapZoom,
+  flattenSkillNodes,
+  layoutSkillMindMap,
+  parseSkillsDomain,
+  parseSkillsManifest,
+} from './skillsMindMap.utils';
+import type { SkillNode } from './skillsMindMap.utils';
+
+const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
+const skill = (n: number, slug: string) => ({
+  id: uuid(n), slug, collection: 'skill', name: slug, description: 'About ' + slug,
+});
+const fixture = {
+  id: uuid(1), slug: 'testColors', collection: 'skillDomain', name: 'Colors', language: 'en',
+  groups: [
+    {
+      id: uuid(2), slug: 'warm', collection: 'skillGroup', name: 'Warm',
+      skills: [skill(3, 'red'), skill(4, 'orange')],
+    },
+    {
+      id: uuid(5), slug: 'cool', collection: 'skillGroup', name: 'Cool',
+      skills: [skill(6, 'blue'), skill(7, 'green')],
+    },
+  ],
+};
+
+const sample = (): SkillNode => parseSkillsDomain(fixture, 'en', 'testColors');
+
+describe('Skills mind map publishing contract', () => {
+  it('reads the catalog manifest and keeps languages separate from domain data', () => {
+    expect(parseSkillsManifest({ version: 1, languages: ['en', 'uk'], domains: ['testColors'] }))
+      .toEqual({ version: 1, languages: ['en', 'uk'], domains: ['testColors'] });
+    expect(() => parseSkillsManifest({ version: 2, languages: ['en'], domains: ['testColors'] }))
+      .toThrow(/версія/);
+    expect(() => parseSkillsManifest({ version: 1, languages: ['en', 'en'], domains: ['testColors'] }))
+      .toThrow(/повторювані/);
+  });
+
+  it('parses a Domain → Group → Skill tree from one localized JSON resource', () => {
+    const domain = sample();
+    expect(domain.children).toHaveLength(2);
+    expect(domain.children[0].children).toHaveLength(2);
+    expect(flattenSkillNodes([domain])).toHaveLength(7);
+    expect(expandableSkillIds([domain])).toEqual([uuid(1), uuid(2), uuid(5)]);
+  });
+
+  it('does not fall back on unsupported languages, missing translations or malformed content', () => {
+    expect(() => parseSkillsDomain(fixture, 'uk', 'testColors')).toThrow(/мова/);
+    expect(() => parseSkillsDomain(fixture, 'en', 'wrongDomain')).toThrow(/адреса/);
+    const malformed = { ...fixture, groups: [{ ...fixture.groups[0], skills: [{ ...skill(3, 'red'), name: { uk: 'Червоний' } }] }] };
+    expect(() => parseSkillsDomain(malformed, 'en', 'testColors')).toThrow(/Некоректне поле/);
+  });
+
+  it('supports direct Skills without groups', () => {
+    const direct = {
+      id: uuid(10), slug: 'simple', collection: 'skillDomain', name: 'Simple', language: 'en',
+      groupIds: undefined, skills: [skill(11, 'red')],
+    };
+    const node = parseSkillsDomain(direct, 'en', 'simple');
+    expect(node.children.map(item => item.kind)).toEqual(['skill']);
+  });
+});
+
+describe('Radial Skills layout', () => {
+  it('places every visible node and a connector on concentric rings', () => {
+    const layout = layoutSkillMindMap([sample()], new Set());
+    expect(layout.nodes).toHaveLength(7);
+    expect(layout.edges).toHaveLength(7);
+    expect(layout.nodes.every(node => Number.isFinite(node.x) && Number.isFinite(node.y))).toBe(true);
+    const radii = layout.nodes.map(node => Math.hypot(node.x, node.y));
+    expect(radii[0]).toBeLessThan(radii[1]);
+    expect(radii[1]).toBeLessThan(radii[2]);
+    expect(layout.worldSize).toBeGreaterThan(0);
+    expect(fitMindMapZoom(layout, 1100, 660)).toBeGreaterThan(0);
+  });
+
+  it('hides descendants of one collapsed Group without hiding siblings', () => {
+    const domain = sample();
+    const layout = layoutSkillMindMap([domain], new Set([uuid(2)]));
+    expect(layout.nodes.map(node => node.slug)).toEqual(['testColors', 'warm', 'cool', 'blue', 'green']);
+    expect(layout.nodes.find(node => node.slug === 'warm')?.expanded).toBe(false);
+    expect(layout.nodes.find(node => node.slug === 'cool')?.expanded).toBe(true);
+  });
+
+  it('preserves Domain nodes when the entire tree is collapsed', () => {
+    const domain = sample();
+    const layout = layoutSkillMindMap([domain], new Set(expandableSkillIds([domain])));
+    expect(layout.nodes).toHaveLength(1);
+    expect(layout.nodes[0].kind).toBe('skillDomain');
+  });
+
+  it('rejects duplicate entity IDs rather than merging unrelated nodes', () => {
+    expect(() => flattenSkillNodes([sample(), sample()])).toThrow(/UUID/);
+  });
+});
