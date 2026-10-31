@@ -36,7 +36,7 @@ function SkillsPageContent() {
         <NavbarPreferences locale={locale} onLocaleChange={setLocale}
           mode={mode} systemMode={systemMode} onThemeChange={setMode} />
       }
-      settingsContent={<SkillsPagePreferences />}
+      settingsContent={({ closeSettings }) => <SkillsPagePreferences onFitToScreen={closeSettings} />}
     >
       <Container maxWidth={false}
         sx={{ maxWidth: '1480px', py: { xs: 2, sm: 4 }, px: { xs: 2, md: 4 } }}>
