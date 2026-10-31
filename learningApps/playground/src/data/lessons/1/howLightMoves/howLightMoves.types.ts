@@ -1,4 +1,4 @@
-import { Practice_Locale} from "./sections/practice/resources/scenes/Practice/Practice.types";
+import { Showcase_Locale } from './sections/practice/resources/scenes/Showcase/Showcase.types';
 
 export type HowLightMoves_Sections = 'practice' | 'quiz' | 'theory';
 
@@ -9,7 +9,7 @@ export type HowLightMoves_Locale = {
       name: string;
       task: string;
       scene: {
-        practice: Practice_Locale;
+        practice: Showcase_Locale;
       }
     }
     quiz: {

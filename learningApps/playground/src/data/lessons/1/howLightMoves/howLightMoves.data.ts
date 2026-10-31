@@ -2,7 +2,7 @@ import { buildLessonConfig } from '@svitlo/engine/builders';
 import { locales as rayLocales } from './sections/theory/resources/scenes/LightRayDiagram/lightRayDiagram.locale';
 import { locales as simulationLocales } from './sections/theory/resources/scenes/LightPropagationSimulation/lightPropagationSimulation.locale';
 import { locales as checkpointLocales } from './sections/theory/resources/scenes/Checkpoint/Checkpoint.locale';
-import { locales as practiceLocales } from './sections/practice/resources/scenes/Practice/Practice.locale';
+import { locales as practiceLocales } from './sections/practice/resources/scenes/Showcase/Showcase.locale';
 import { howLightMoves_Lesson_Ids } from './howLightMoves.ids';
 import { howLightMoves_Sections_Ids } from './sections/index.ids';
 import { howLightMoves_TextResources_Ids } from './resources/text/index.ids';
