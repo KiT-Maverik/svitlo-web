@@ -32,6 +32,7 @@ export const organizeFigureAndGround_Skill_Data = buildSkillConfig({
     be: "Арганізоўваць фігуру і фон",
     ka: "ფიგურისა და ფონის ორგანიზება",
     kk: "Пішін мен фонды ұйымдастыру",
+    qm: "Şekil ve fon munasebetini tertip etmek",
   },
   description: {
     methodological: "Differentiate a principal visual form from surrounding space in a chosen pictorial manner.",
@@ -64,6 +65,7 @@ export const organizeFigureAndGround_Skill_Data = buildSkillConfig({
       be: "Выкарыстоўвайце суадносіны асноўнай формы і яе фону.",
       ka: "გამოიყენეთ ძირითადი ფორმისა და მისი ფონის ურთიერთკავშირი.",
       kk: "Негізгі пішін мен оның фонының арақатынасын пайдаланыңыз.",
+      qm: "Esas şekil ile onıñ fonı arasındaki munasebetten faydalaniñız."
     },
   },
 });
