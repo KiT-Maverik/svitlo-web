@@ -94,9 +94,9 @@ describe('Utils / builders / config / buildSkillConfig', () => {
   });
 
   it('rejects frontend when incomplete, malformed, blank or containing unexpected locales', () => {
-    const frontend = frontendCopy();
+    const completeFrontend = frontendCopy();
     for (const frontend of [null, [], 'text', {}, { en: 'Only English' },
-      { ...frontend, uk: ' ' }, { ...frontend, xx: 'Unsupported' }]) {
+      { ...completeFrontend, uk: ' ' }, { ...completeFrontend, xx: 'Unsupported' }]) {
       assert.throws(
         () => buildSkillConfig({ ...skill(), description: { methodological: 'Valid', frontend: frontend } } as unknown as Skill_Config),
         /Skill description.frontend/,
