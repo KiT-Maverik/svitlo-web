@@ -30,6 +30,6 @@ export const compareAestheticCriteria_Skill_Data = buildSkillConfig({
           "et": "Võrdle, mida eri kunstipärandid kunstiteoses väärtustavad.",
           "be": "Параўнайце, што розныя мастацкія традыцыі цэняць у творы.",
           "ka": "შეადარეთ, რას აფასებს სხვადასხვა მხატვრული ტრადიცია ნამუშევარში.",
-          "kk": "Hasonlítsa össze, mit értékelnek a különböző művészeti hagyományok egy alkotásban。"
+          "kk": "Әртүрлі өнер дәстүрлері туындыда нені бағалайтынын салыстырыңыз."
     } },
 });
