@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const creditArtisticSources_Skill_Data = buildSkillConfig({
-  slug: "creditArtisticSources", id: "cafeb05e-b8d5-45d9-a52b-573692fdb3fd", name: { en: "Credit Artistic Sources" },
+  slug: "creditArtisticSources", id: "cafeb05e-b8d5-45d9-a52b-573692fdb3fd", name: {
+    en: "Credit Artistic Sources",
+    zh: "注明艺术来源",
+    hi: "कलात्मक स्रोतों को श्रेय दें",
+    es: "Dar crédito a las fuentes artísticas",
+    ar: "توثيق المصادر الفنية",
+    fr: "Créditer les sources artistiques",
+    bn: "শৈল্পিক উৎসের কৃতিত্ব স্বীকার করুন",
+    pt: "Dar crédito às fontes artísticas",
+    ur: "فنّی ذرائع کا حوالہ دیں",
+    id: "Mencantumkan Sumber Artistik",
+    de: "Künstlerische Quellen angeben",
+    ja: "芸術的な出典を明記する",
+    ko: "예술적 출처 표시하기",
+    tr: "Sanatsal Kaynakları Belirtmek",
+    vi: "Ghi công các nguồn nghệ thuật",
+    ta: "கலை ஆதாரங்களுக்குப் பாராட்டளியுங்கள்",
+    te: "కళాత్మక మూలాలకు గుర్తింపు ఇవ్వండి",
+    mr: "कलात्मक स्रोतांचे श्रेय द्या",
+    ms: "Memberi Pengiktirafan kepada Sumber Artistik",
+    he: "מתן קרדיט למקורות אמנותיים",
+    pl: "Podawać źródła artystyczne",
+    uk: "Зазначати мистецькі джерела",
+    lt: "Nurodyti meninius šaltinius",
+    lv: "Norādīt mākslinieciskos avotus",
+    et: "Kunstiallikatele viitamine",
+    be: "Пазначаць мастацкія крыніцы",
+    ka: "მხატვრული წყაროების მითითება",
+    kk: "Өнер дереккөздерін көрсету",
+    qm: "Sanat menbalarına atıf etüv",
+  },
   description: { methodological: "Identify the relevant original creators and materials incorporated into another work.", frontend: {
           "en": "Acknowledge the artists and materials that contribute to your work.",
           "zh": "注明对作品有所贡献的艺术家和素材来源。",
@@ -31,5 +61,6 @@ export const creditArtisticSources_Skill_Data = buildSkillConfig({
           "be": "Адзначайце мастакоў і матэрыялы, якія паўплывалі на вашу працу.",
           "ka": "მიუთითეთ მხატვრები და მასალები, რომლებმაც წვლილი შეიტანეს თქვენს ნამუშევარში.",
           "kk": "Өз туындыңызға үлес қосқан суретшілер мен материалдардың авторларын көрсетіңіз."
-    } },
+    
+      qm: "Eseriñizge qatqı qoşqan sanatkârlarnı ve materiallarnı tanıñız.",} },
 });
