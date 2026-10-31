@@ -216,6 +216,7 @@ export function renderSkillFiles(graph, codes) {
       }
     }
   }
+  files.set('index.json', JSON.stringify({ version: 1, languages: codes, domains: graph.map(domain => domain.slug) }, null, 2) + '\n');
   return files;
 }
 
