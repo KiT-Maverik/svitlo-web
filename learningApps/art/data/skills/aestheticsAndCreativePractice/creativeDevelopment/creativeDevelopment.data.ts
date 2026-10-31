@@ -33,6 +33,6 @@ export const creativeDevelopment_SkillGroup_Data = buildSkillGroupConfig({
           "et": "Muuda loomingulised võimalused kunstiteosteks katsetamise ja läbimõeldud parandamise abil.",
           "be": "Ператварайце творчыя магчымасці ў мастацкія творы праз эксперыменты і прадуманае дапрацоўванне.",
           "ka": "ექსპერიმენტითა და გააზრებული გადამუშავებით აქციეთ შემოქმედებითი შესაძლებლობები ნამუშევრებად.",
-          "kk": "Kísérletezéssel és átgondolt átdolgozással alakítsa a kreatív lehetőségeket műalkotásokká。"
+          "kk": "Тәжірибе жасап, ойластыра қайта өңдеу арқылы шығармашылық мүмкіндіктерді өнер туындыларына айналдырыңыз."
     } },
 });
