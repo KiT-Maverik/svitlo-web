@@ -44,7 +44,7 @@ export const carveSubtractiveSculpture_Skill_Data = buildSkillConfig({
       ar: "أزل المادة بعناية للكشف عن شكل ثلاثي الأبعاد مخطط له.",
       fr: "Retirez la matière avec soin pour révéler une forme tridimensionnelle prévue.",
       bn: "সতর্কভাবে উপাদান সরিয়ে পরিকল্পিত ত্রিমাত্রিক রূপ ফুটিয়ে তুলুন।",
-      pt: "Remova o material com cuidado para revelar uma forma tridimensional planeada.",
+      pt: "Remova o material com cuidado para revelar uma forma tridimensional planejada.",
       ur: "احتیاط سے مواد ہٹا کر پہلے سے طے شدہ سہ جہتی شکل نمایاں کریں۔",
       id: "Singkirkan bahan dengan hati-hati untuk menampilkan bentuk tiga dimensi yang direncanakan.",
       de: "Trage Material vorsichtig ab, um eine geplante dreidimensionale Form freizulegen.",
