@@ -34,6 +34,7 @@ export const paintingTechniques_SkillGroup_Data = buildSkillGroupConfig({
     be: "Тэхнікі жывапісу",
     ka: "ფერწერის ტექნიკები",
     kk: "Кескіндеме техникасы",
+    qm: "Boya sürüv usulları",
   },
   skills: {
     applyAGlaze: applyAGlaze_Skill_Data,
@@ -75,6 +76,7 @@ export const paintingTechniques_SkillGroup_Data = buildSkillGroupConfig({
       be: "Даведайцеся, як спосаб нанясення фарбы ўплывае на празрыстасць, слаі і краі.",
       ka: "გაიგეთ, როგორ ცვლის საღებავის დატანის მეთოდი გამჭვირვალობას, ფენებსა და კიდეებს.",
       kk: "Бояуды жағу тәсілдері мөлдірлікке, қабаттарға және жиектерге қалай әсер ететінін біліңіз.",
+      qm: "Boyanı sürüv usulları şeffaflıqnı, qatlamlarnı ve kenarlarnı nasıl deñiştirgenini keşf etiñiz.",
     },
   },
 });
