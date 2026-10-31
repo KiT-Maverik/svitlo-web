@@ -60,7 +60,7 @@ export const relateContrastToAttention_Skill_Data = buildSkillConfig({
           "et": "Vaata, kuidas tugevad värvi-, kuju- või helierinevused tähelepanu köidavad.",
           "be": "Паглядзіце, як выразныя адрозненні колеру, формы ці гуку прыцягваюць увагу.",
           "ka": "ნახეთ, როგორ იპყრობს ყურადღებას ფერის, ფორმისა თუ ხმის მკვეთრი განსხვავება.",
-          "kk": "Түс, пішін немесе дыбыстағы айқын айырмашылықтар назарды қалай аударатынын байқаңыз."
+          "kk": "Түс, пішін немесе дыбыстағы айқын айырмашылықтар назарды қалай аударатынын байқаңыз.",
     
       qm: "Tüs, şekil ya da ses arasındaki küçlü farqlarniñ diqqetni nasıl çekkenini körüñiz.",} },
 });
