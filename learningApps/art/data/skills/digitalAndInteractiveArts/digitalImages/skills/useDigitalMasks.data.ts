@@ -64,7 +64,7 @@ export const useDigitalMasks_Skill_Data = buildSkillConfig({
           "et": "Peida või näita pildi osi, et teha täpseid muudatusi.",
           "be": "Хавайце або паказвайце часткі выявы, каб уносіць дакладныя змены.",
           "ka": "დამალეთ ან გამოაჩინეთ გამოსახულების ნაწილები ზუსტი ცვლილებების შესატანად.",
-          "kk": "Нақты өзгерістер енгізу үшін кескіннің бөліктерін жасырыңыз немесе көрсетіңіз。"
+          "kk": "Нақты өзгерістер енгізу үшін кескіннің бөліктерін жасырыңыз немесе көрсетіңіз。",
     
       qm: "Maqsatlı deñiştirmeler yapmaq içün suretniñ bir qısımını gizleñ ya da kösteriñ.",},
   },
