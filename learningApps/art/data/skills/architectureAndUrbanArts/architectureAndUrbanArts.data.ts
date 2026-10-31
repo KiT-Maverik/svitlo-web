@@ -57,7 +57,7 @@ export const architectureAndUrbanArts_SkillDomain_Data = buildSkillDomainConfig(
           "et": "Avasta, kuidas hooned, tänavad ja avalikud ruumid loovad visuaalseid ja kultuurilisi kogemusi.",
           "be": "Даследуйце, як будынкі, вуліцы і грамадскія прасторы ствараюць візуальны і культурны досвед.",
           "ka": "შეისწავლეთ, როგორ ქმნის შენობები, ქუჩები და საჯარო სივრცეები ვიზუალურ და კულტურულ გამოცდილებას.",
-          "kk": "Ғимараттар, көшелер мен қоғамдық кеңістіктер визуалды және мәдени тәжірибені қалай қалыптастыратынын зерттеңіз。",
+          "kk": "Ғимараттар, көшелер мен қоғамдық кеңістіктер визуалды және мәдени тәжірибені қалай қалыптастыратынын зерттеңіз.",
           "qm": "Binalar, sokaklar ve cemaat yerleri körüniş ve medeniy tecribeni nasıl yarata, keşf etiñiz."
     },
   },
