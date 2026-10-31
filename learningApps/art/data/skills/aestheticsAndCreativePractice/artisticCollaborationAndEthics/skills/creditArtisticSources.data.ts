@@ -30,6 +30,6 @@ export const creditArtisticSources_Skill_Data = buildSkillConfig({
           "et": "Tunnusta kunstnikke ja materjale, mis on sinu teose loomisse panustanud.",
           "be": "Адзначайце мастакоў і матэрыялы, якія паўплывалі на вашу працу.",
           "ka": "მიუთითეთ მხატვრები და მასალები, რომლებმაც წვლილი შეიტანეს თქვენს ნამუშევარში.",
-          "kk": "Ismerje el azokat a művészeket és anyagokat, amelyek hozzájárultak az alkotásához。"
+          "kk": "Өз туындыңызға үлес қосқан суретшілер мен материалдардың авторларын көрсетіңіз."
     } },
 });
