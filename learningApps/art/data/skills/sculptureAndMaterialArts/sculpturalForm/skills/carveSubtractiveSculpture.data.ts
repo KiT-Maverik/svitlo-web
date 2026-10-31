@@ -32,6 +32,7 @@ export const carveSubtractiveSculpture_Skill_Data = buildSkillConfig({
     be: "Ствараць скульптуру метадам аднімання матэрыялу",
     ka: "მასალის მოცილებით ქანდაკების გამოკვეთა",
     kk: "Материалды алып тастау арқылы мүсін қашау",
+      qm: "Materialnı alıp heykel oymak",
   },
   description: {
     methodological: "Form an object by intentionally removing material while accounting for irreversible changes.",
@@ -64,6 +65,7 @@ export const carveSubtractiveSculpture_Skill_Data = buildSkillConfig({
       be: "Асцярожна здымайце матэрыял, каб выявіць задуманую трохмерную форму.",
       ka: "ფრთხილად მოაცილეთ მასალა, რათა დაგეგმილი სამგანზომილებიანი ფორმა გამოავლინოთ.",
       kk: "Материалды абайлап алып, жоспарланған үшөлшемді пішінді ашыңыз.",
+          qm: "Planlanğan üçölçemli şekilni ortaya çıqarmaq içün materialnı ihtiyatnen alıñız.",
     },
   },
 });
