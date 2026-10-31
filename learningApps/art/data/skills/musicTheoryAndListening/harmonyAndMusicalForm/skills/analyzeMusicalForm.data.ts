@@ -32,7 +32,7 @@ export const analyzeMusicalForm_Skill_Data = buildSkillConfig({
       be: "Аналізаваць музычную форму",
       ka: "მუსიკალური ფორმის ანალიზი",
       kk: "Музыкалық форманы талдау",
-      qm: "Muzikı formasını analiz etmek",
+      qm: "Musiqiy formanı tahlil etmek",
     },
   description: {
     methodological: "Explain repetition, contrast and development within a work's sectional organization.",
@@ -65,7 +65,7 @@ export const analyzeMusicalForm_Skill_Data = buildSkillConfig({
       be: "Знайдзіце паўторы, кантраст і развіццё ў структуры музычнага твора.",
       ka: "მუსიკალური ნაწარმოების სტრუქტურაში იპოვეთ გამეორება, კონტრასტი და განვითარება.",
       kk: "Музыкалық шығарма құрылымындағы қайталауды, қарама-қарсылықты және дамуды анықтаңыз.",
-      qm: "Musiqi əsərinin quruluşunda təkrarı, təzadı və inkişafı müəyyən edin.",
+      qm: "Musiqiy eseriniñ quruluşında tekrarlav, qarşıtlıq ve inkişafnı tapıñız.",
     }
   },
 });
