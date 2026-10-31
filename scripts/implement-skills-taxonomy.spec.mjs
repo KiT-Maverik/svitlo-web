@@ -37,7 +37,7 @@ function fixture() {
     ['geometry/angles/compareAngles','Compare Angles'],['music','Music'],['music/hearRhythm','Hear Rhythm']];
   const translations=Object.fromEntries(defs.map(([key,title])=>[key,{
     name:Object.fromEntries(locales.map(l=>[l,l==='en'?title:'Translated '+title+' '+l])),
-    fe:Object.fromEntries(locales.map(l=>[l,l==='en'?friendly:'Frontend '+title+' '+l])),
+    frontend:Object.fromEntries(locales.map(l=>[l,l==='en'?friendly:'Frontend '+title+' '+l])),
   }]));
   const tFile=path.join(pkg,'locales.json');
   fs.writeFileSync(tFile,JSON.stringify(translations));
@@ -90,12 +90,12 @@ test('English-only create needs no reviewed translations and keeps locales visib
   assert.match(applied.stdout,/"success":5/);
   const skill=source(f,'geometry/angles/skills/compareAngles.data.ts');
   const domain=source(f,'geometry/geometry.data.ts');
-  assert.match(skill,/"en": "Compare Angles"/);
-  assert.match(skill,/"en": "Explore this topic\."/);
+  assert.match(skill,/en: "Compare Angles"/);
+  assert.match(skill,/en: "Explore this topic\."/);
   assert.match(skill,/methodological: "Definition of Compare Angles\."/);
-  assert.match(domain,/"en": "Geometry"/);
-  assert.doesNotMatch(skill,/"uk":|\bas\s+Record\b|\bas\s+any\b/);
-  assert.doesNotMatch(domain,/"uk":/);
+  assert.match(domain,/en: "Geometry"/);
+  assert.doesNotMatch(skill,/uk:|\bas\s+Record\b|\bas\s+any\b/);
+  assert.doesNotMatch(domain,/uk:/);
   assert.equal(f.runEnglishOnly('--apply').status,0,'Second application should be idempotent');
 }));
 
@@ -110,9 +110,9 @@ test('English Markdown updates preserve existing non-English translations withou
   assert.equal(r.status,0,r.stderr);
   const after=source(f,p);
   assert.equal(uuid(after),id);
-  assert.match(after,/"en": "Hear Rhythms"/);
-  assert.match(after,/"uk": "Translated Hear Rhythm uk"/);
-  assert.match(after,/"uk": "Frontend Hear Rhythm uk"/);
+  assert.match(after,/en: "Hear Rhythms"/);
+  assert.match(after,/uk: "Translated Hear Rhythm uk"/);
+  assert.match(after,/uk: "Frontend Hear Rhythm uk"/);
   assert.notEqual(after,before);
 }));
 
@@ -120,19 +120,19 @@ test('optional partial reviewed translations only populate the supplied locales'
   const additions={
     'geometry/angles/compareAngles':{
       name:{uk:'Порівнювати кути'},
-      fe:{uk:'Досліджуй кути.'},
+      frontend:{uk:'Досліджуй кути.'},
     },
   };
   fs.writeFileSync(f.tFile,JSON.stringify(additions));
   const r=f.run('--apply');
   assert.equal(r.status,0,r.stderr);
   const translated=source(f,'geometry/angles/skills/compareAngles.data.ts');
-  assert.match(translated,/"en": "Compare Angles"/);
-  assert.match(translated,/"uk": "Порівнювати кути"/);
-  assert.match(translated,/"uk": "Досліджуй кути\."/);
+  assert.match(translated,/en: "Compare Angles"/);
+  assert.match(translated,/uk: "Порівнювати кути"/);
+  assert.match(translated,/uk: "Досліджуй кути\."/);
   const unreviewed=source(f,'music/skills/hearRhythm.data.ts');
-  assert.match(unreviewed,/"en": "Hear Rhythm"/);
-  assert.doesNotMatch(unreviewed,/"uk":/);
+  assert.match(unreviewed,/en: "Hear Rhythm"/);
+  assert.doesNotMatch(unreviewed,/uk:/);
 }));
 
 test('create emits entity-owned IDs, direct imports and only allowed indexes',()=>withFixture(f=>{
@@ -212,7 +212,7 @@ test('a Skill update does not force unchanged ancestor Data to be regenerated',(
 
 test('invalid supplied translations block only the affected Domain',()=>withFixture(f=>{
   const loc=JSON.parse(fs.readFileSync(f.tFile,'utf8'));
-  loc['geometry/angles/compareAngles'].fe.uk='  ';
+  loc['geometry/angles/compareAngles'].frontend.uk='  ';
   fs.writeFileSync(f.tFile,JSON.stringify(loc));
   const r=f.run('--apply');
   assert.notEqual(r.status,0);
