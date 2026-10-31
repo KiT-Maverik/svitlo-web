@@ -32,6 +32,7 @@ export const blendWetPaint_Skill_Data = buildSkillConfig({
     be: "Растушоўваць вільготную фарбу",
     ka: "სველი საღებავის შერწყმა",
     kk: "Ылғал бояуды араластыру",
+    qm: "Islaq boyanı qarıştırmaq",
   },
   description: {
     methodological: "Manage still-wet passages to form smooth transitions or selected boundaries.",
@@ -42,7 +43,7 @@ export const blendWetPaint_Skill_Data = buildSkillConfig({
       es: "Mezcla los colores mientras la pintura está húmeda para crear transiciones suaves o intencionadas.",
       ar: "امزج الألوان والطلاء لا يزال رطبًا لإنشاء انتقالات ناعمة أو مقصودة.",
       fr: "Mélangez les couleurs tant que la peinture est humide pour créer des transitions douces ou délibérées.",
-      bn: "রং ভেজা থাকতেই মিশিয়ে মসৃণ বা পরিকল্পিত রঙের переход তৈরি করুন।",
+      bn: "রং ভেজা থাকতেই মিশিয়ে মসৃণ বা পরিকল্পিত রঙের রূপান্তর তৈরি করুন।",
       pt: "Misture as cores enquanto a tinta ainda estiver úmida para criar transições suaves ou intencionais.",
       ur: "رنگ کے گیلا رہنے کے دوران اسے ملائیں تاکہ ہموار یا ارادی تبدیلیاں پیدا ہوں۔",
       id: "Campurkan warna saat cat masih basah untuk menghasilkan peralihan yang halus atau disengaja.",
@@ -64,6 +65,7 @@ export const blendWetPaint_Skill_Data = buildSkillConfig({
       be: "Змешвайце колеры, пакуль фарба яшчэ вільготная, каб ствараць плаўныя або наўмысныя пераходы.",
       ka: "შეურიეთ ფერები, სანამ საღებავი სველია, რათა შექმნათ გლუვი ან განზრახ გამოკვეთილი გადასვლები.",
       kk: "Бояу кеппей тұрғанда түстерді араластырып, бірқалыпты немесе әдейі жасалған ауысуларды қалыптастырыңыз.",
+      qm: "Yumşaq ya da mahsus deñişimler yaratmaq içün boyalarnı daa islaq olğanında qarıştırıñız.",
     },
   },
 });
