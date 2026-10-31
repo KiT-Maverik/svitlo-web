@@ -74,6 +74,7 @@ export const interpretationAndEvaluation_SkillGroup_Data = buildSkillGroupConfig
       be: "Вучыся абмяркоўваць магчымы сэнс мастацкага твора, абапіраючыся на доказы й выразныя крытэрыі.",
       ka: "ისწავლეთ ნამუშევრის შესაძლო მნიშვნელობის განხილვა მტკიცებულებებისა და მკაფიო კრიტერიუმების გამოყენებით.",
       kk: "Дәлелдер мен нақты өлшемдерді пайдаланып, өнер туындысы нені білдіруі мүмкін екенін талқылауды үйреніңіз.",
+      qm: "Sanat eserleriniñ manasını añlatmaq içün deliller ve açıq ölçülerge esaslanıp fikir yürütüñiz.",
     },
   },
 });
