@@ -64,7 +64,7 @@ export const designAPublicSquare_Skill_Data = buildSkillConfig({
           "et": "Kujunda külalislahke avalik väljak kohtumiseks, liikumiseks ja visuaalseks naudinguks.",
           "be": "Арганізуйце гасцінную грамадскую плошчу для сустрэч, руху і візуальнай выразнасці.",
           "ka": "მოაწყვეთ მიმზიდველი საჯარო მოედანი შეხვედრებისთვის, გადაადგილებისა და ვიზუალური ინტერესისთვის.",
-          "kk": "Кездесуге, қозғалысқа және көркемдік тартымдылыққа арналған жайлы қоғамдық алаң ұйымдастырыңыз。"
+          "kk": "Кездесуге, қозғалысқа және көркемдік тартымдылыққа арналған жайлы қоғамдық алаң ұйымдастырыңыз。",
     
       qm: "Toplanış, qatnav ve körüniş cazibesi içün quçaqlayıcı bir cemaat meydanını tertip etiñiz.",},
   },
