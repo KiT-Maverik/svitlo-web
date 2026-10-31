@@ -14,7 +14,7 @@ import {
   expandableSkillIds, fitVisibleSkillNodes, flattenSkillNodes, layoutSkillMindMap,
 } from './skillsMindMap.utils';
 import type { SkillNode, MapEdge } from './skillsMindMap.utils';
-import { loadPublishedSkills, resolveSkillLanguage } from './skillsData.client';
+import { loadSkillAnalyticsPage, resolveSkillLanguage } from './skillsData.client';
 import styles from './SkillsMindMap.module.css';
 import { SkillAction, SkillLeafCard, SkillMastery } from './SkillLeafCard';
 import { useSkillsPageSettings } from './SkillsPageSettingsContext';
@@ -97,6 +97,7 @@ function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, 
   );
 }
 
+/** Map visualization within the reusable skillAnalytics page. */
 export function SkillsMindMap({ domainSlugs }: { domainSlugs: readonly string[] }) {
   const { locale, localeError, setLanguageCode, registerMapActions } = useSkillsPageSettings();
   const language = resolveSkillLanguage(locale);
@@ -138,7 +139,7 @@ export function SkillsMindMap({ domainSlugs }: { domainSlugs: readonly string[] 
     setError('');
     void (async () => {
       try {
-        const loaded = await loadPublishedSkills(domainSlugs, language, controller.signal);
+        const loaded = await loadSkillAnalyticsPage(language, controller.signal, domainSlugs);
         if (controller.signal.aborted) return;
         const all = flattenSkillNodes(loaded);
         setDomains(loaded);
@@ -358,7 +359,7 @@ export function SkillsMindMap({ domainSlugs }: { domainSlugs: readonly string[] 
           <Typography variant="overline" color="primary" sx={{ letterSpacing: '0.19em', fontWeight: 800 }}>
             SVITLO · PLAYGROUND
           </Typography>
-          <Typography component="h1" variant="h3" sx={{ fontWeight: 800 }}>Skills</Typography>
+          <Typography component="h1" variant="h3" sx={{ fontWeight: 800 }}>Аналітика навичок</Typography>
           <Typography color="text.secondary">
             Натисніть на скіл, щоб розгорнути опис і кнопку «Прокачати». Домен і група згортають свої гілки.
           </Typography>

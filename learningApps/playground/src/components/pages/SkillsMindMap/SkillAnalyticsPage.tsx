@@ -5,7 +5,7 @@ import { Box, Container } from '@mui/material';
 import { useColorScheme } from '@mui/material/styles';
 import { LearningLayout, NavbarPreferences } from '@svitlo/ui-kit/learning-layout';
 import { SkillsMindMap } from './SkillsMindMap';
-import { PLAYGROUND_SKILL_DOMAINS } from './skillsPageConfig';
+import { PLAYGROUND_SKILL_ANALYTICS_DOMAINS } from './skillsPageConfig';
 import { SkillsPagePreferences } from './SkillsPagePreferences';
 import { SkillsPageSettingsProvider, useSkillsPageSettings } from './SkillsPageSettingsContext';
 
@@ -18,7 +18,7 @@ const idleProgress = {
 } as const;
 const unusedActions = { back: () => {}, next: () => {}, skip: () => {} };
 
-function SkillsPageContent({ domainSlugs }: { domainSlugs: readonly string[] }) {
+function SkillAnalyticsContent({ domainSlugs }: { domainSlugs: readonly string[] }) {
   const { locale, setLocale, ready, localeError } = useSkillsPageSettings();
   const { mode, systemMode, setMode } = useColorScheme();
 
@@ -27,10 +27,10 @@ function SkillsPageContent({ domainSlugs }: { domainSlugs: readonly string[] }) 
   return (
     <LearningLayout
       locale={locale}
-      pathname="/skills"
+      pathname="/skillAnalytics"
       progress={idleProgress}
       actions={unusedActions}
-      topics={[{ id: 'skills', title: 'Skills', href: '/skills' }]}
+      topics={[{ id: 'skillAnalytics', title: 'Аналітика навичок', href: '/skillAnalytics' }]}
       linkComponent={Link}
       showBottomNavbar={false}
       preferences={
@@ -52,12 +52,12 @@ function SkillsPageContent({ domainSlugs }: { domainSlugs: readonly string[] }) 
   );
 }
 
-export function SkillsPageShell({ domainSlugs = PLAYGROUND_SKILL_DOMAINS }: {
+export function SkillAnalyticsPage({ domainSlugs = PLAYGROUND_SKILL_ANALYTICS_DOMAINS }: {
   domainSlugs?: readonly string[];
 } = {}) {
   return (
     <SkillsPageSettingsProvider>
-      <SkillsPageContent domainSlugs={domainSlugs} />
+      <SkillAnalyticsContent domainSlugs={domainSlugs} />
     </SkillsPageSettingsProvider>
   );
 }

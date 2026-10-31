@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Alert, Box, CircularProgress, Paper, Stack, Typography } from '@mui/material';
 import { SkillMastery } from '@/components/pages/SkillsMindMap/SkillLeafCard';
 import { flattenSkillNodes } from '@/components/pages/SkillsMindMap/skillsMindMap.utils';
-import { loadPublishedSkills, resolveSkillLanguage } from '@/components/pages/SkillsMindMap/skillsData.client';
+import { loadSkillAnalyticsPage, resolveSkillLanguage } from '@/components/pages/SkillsMindMap/skillsData.client';
 import type { SkillNode } from '@/components/pages/SkillsMindMap/skillsMindMap.utils';
 
 interface SkillLearningClientProps {
@@ -33,7 +33,7 @@ export function SkillLearningClient({ skillId, domainSlugs }: SkillLearningClien
       try {
         const language = resolveSkillLanguage(
           new URLSearchParams(window.location.search).get('lang') ?? document.documentElement.lang);
-        const domains = await loadPublishedSkills(domainSlugs, language, controller.signal);
+        const domains = await loadSkillAnalyticsPage(language, controller.signal, domainSlugs);
         const match = flattenSkillNodes(domains).find(node => node.kind === 'skill' && node.id === skillId);
         if (!match) throw new Error('Скіл із таким UUID не знайдено в каталозі.');
         if (!controller.signal.aborted) setState({ status: 'ready', node: match, language });
@@ -55,11 +55,11 @@ export function SkillLearningClient({ skillId, domainSlugs }: SkillLearningClien
   if (state.status === 'error') return (
     <Alert severity="error" role="alert" sx={{ mt: 3 }}>
       {state.message}
-      <Box sx={{ mt: 2 }}><Link href="/skills">Повернутися до мапи навичок</Link></Box>
+      <Box sx={{ mt: 2 }}><Link href="/skillAnalytics">Повернутися до мапи навичок</Link></Box>
     </Alert>
   );
   const dir = state.language === 'ar' || state.language === 'he' || state.language === 'ur' ? 'rtl' : 'ltr';
-  const returnHref = '/skills?lang=' + encodeURIComponent(state.language);
+  const returnHref = '/skillAnalytics?lang=' + encodeURIComponent(state.language);
   return (
     <Stack spacing={3} sx={{ pt: 2 }}>
       <Box>
@@ -84,7 +84,7 @@ export function SkillLearningClient({ skillId, domainSlugs }: SkillLearningClien
           У цьому тестовому Playground ще не створено зв'язків між UUID навички та уроками або програмами.
           Коли такі зв'язки з'являться, тут можна буде показувати матеріали саме для цієї навички.
         </Typography>
-        <Box sx={{ mt: 3 }}><Link href={returnHref}>← Повернутися до карти Skills</Link></Box>
+        <Box sx={{ mt: 3 }}><Link href={returnHref}>← Повернутися до аналітики навичок</Link></Box>
       </Paper>
     </Stack>
   );
