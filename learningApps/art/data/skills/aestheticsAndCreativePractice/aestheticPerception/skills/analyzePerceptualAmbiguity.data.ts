@@ -30,6 +30,6 @@ export const analyzePerceptualAmbiguity_Skill_Data = buildSkillConfig({
           "et": "Uuri, miks sama pilti või vormi võib tajuda erinevalt.",
           "be": "Даследуйце, чаму адну і тую ж выяву або форму можна ўспрымаць па-рознаму.",
           "ka": "შეისწავლეთ, რატომ შეიძლება ერთი და იგივე გამოსახულება ან ფორმა სხვადასხვაგვარად აღიქმებოდეს.",
-          "kk": "Fedezze fel, miért érzékelhető ugyanaz a kép vagy forma többféleképpen。"
+          "kk": "Бір сурет немесе пішін неге әртүрлі қабылданатынын зерттеңіз."
     } },
 });
