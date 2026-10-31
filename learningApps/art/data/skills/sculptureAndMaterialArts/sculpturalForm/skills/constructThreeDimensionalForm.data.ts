@@ -32,6 +32,7 @@ export const constructThreeDimensionalForm_Skill_Data = buildSkillConfig({
     be: "Канструяваць трохмерную форму",
     ka: "სამგანზომილებიანი ფორმის აგება",
     kk: "Үшөлшемді пішін құрастыру",
+      qm: "Üçölçemli şekil qurmaq",
   },
   description: {
     methodological: "Organize masses and proportions to convey a coherent object from several viewing positions.",
@@ -64,6 +65,7 @@ export const constructThreeDimensionalForm_Skill_Data = buildSkillConfig({
       be: "Стварыце трохмерную форму, якая выглядае цэласна з розных ракурсаў.",
       ka: "შექმენით სამგანზომილებიანი ფორმა, რომელიც რამდენიმე კუთხიდან დანახვისას მთლიანია.",
       kk: "Құрылымды бірнеше бұрыштан қарағанда да тұтас көрінетін үшөлшемді пішін жасаңыз.",
+          qm: "Bir qaç açıdan körüngen ve işlegen üçölçemli şekil yapıñız.",
     },
   },
 });
