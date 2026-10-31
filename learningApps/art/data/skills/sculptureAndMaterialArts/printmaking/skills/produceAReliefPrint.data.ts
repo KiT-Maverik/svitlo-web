@@ -32,6 +32,7 @@ export const produceAReliefPrint_Skill_Data = buildSkillConfig({
     be: "Ствараць рэльефны адбітак",
     ka: "რელიეფური ანაბეჭდის შექმნა",
     kk: "Бедерлі баспа жасау",
+      qm: "Qabarıq baskı yaratmaq",
   },
   description: {
     methodological: "Apply ink to raised areas and transfer a designed impression to another surface.",
@@ -64,6 +65,7 @@ export const produceAReliefPrint_Skill_Data = buildSkillConfig({
       be: "Пераносце выяву, наносячы фарбу на выступаючыя часткі друкарскай формы.",
       ka: "გადაიტანეთ გამოსახულება საბეჭდი ფორმის ამობურცულ ნაწილებზე მელნის დატანით.",
       kk: "Баспа қалыптың шығыңқы бөліктеріне бояу жағып, кескінді көшіріңіз.",
+          qm: "Baskı kalıbınıñ qabarıq yerlerine boya sürüp suretni kağıtqa keçiriñiz.",
     },
   },
 });
