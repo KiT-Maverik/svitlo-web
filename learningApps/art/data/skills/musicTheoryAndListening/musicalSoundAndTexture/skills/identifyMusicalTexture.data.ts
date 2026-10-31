@@ -61,7 +61,7 @@ export const identifyMusicalTexture_Skill_Data = buildSkillConfig({
   uk: "На слух визначай, чи має музика одну лінію, унісон або кілька партій одночасно.",
   lt: "Iš klausos atpažinkite, ar muzikoje skamba viena linija, unisonas ar kelios partijos vienu metu.",
   lv: "Pēc dzirdes nosakiet, vai mūzikā ir viena līnija, unisons vai vairākas partijas vienlaikus.",
-  et: "Kuulake, kas muusikas on üks meloodiali in, unisoon või mitu samaaegset partiid.",
+  et: "Kuulake, kas muusikas on üks meloodialiin, unisoon või mitu samaaegset partiid.",
   be: "На слых вызначайце, ці мае музыка адну лінію, унісон або некалькі партый адначасова.",
   ka: "მოსმენით გაარჩიეთ, მუსიკაში ერთი ხაზი, უნისონი თუ რამდენიმე ერთდროული პარტიაა.",
   kk: "Тыңдау арқылы музыкада бір әуен желісі, унисон немесе бірнеше партия қатар орындалатынын анықтаңыз.",
