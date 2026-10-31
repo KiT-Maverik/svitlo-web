@@ -3,7 +3,37 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { assessCulturalAppropriation_Skill_Data, collaborateArtistically_Skill_Data, creditArtisticSources_Skill_Data, giveArtisticFeedback_Skill_Data, presentAnArtwork_Skill_Data, respectCreativeRights_Skill_Data } from './skills';
 
 export const artisticCollaborationAndEthics_SkillGroup_Data = buildSkillGroupConfig({
-  slug: "artisticCollaborationAndEthics", id: "d36c709b-bc41-442b-9841-b21ee379ff6d", name: { en: "Artistic Collaboration and Ethics" },
+  slug: "artisticCollaborationAndEthics", id: "d36c709b-bc41-442b-9841-b21ee379ff6d", name: {
+    en: "Artistic Collaboration and Ethics",
+    zh: "艺术协作与伦理",
+    hi: "कलात्मक सहयोग और नैतिकता",
+    es: "Colaboración artística y ética",
+    ar: "التعاون الفني والأخلاقيات",
+    fr: "Collaboration artistique et éthique",
+    bn: "শৈল্পিক সহযোগিতা ও নৈতিকতা",
+    pt: "Colaboração artística e ética",
+    ur: "فنّی تعاون اور اخلاقیات",
+    id: "Kolaborasi Artistik dan Etika",
+    de: "Künstlerische Zusammenarbeit und Ethik",
+    ja: "芸術的な協働と倫理",
+    ko: "예술적 협업과 윤리",
+    tr: "Sanatsal İşbirliği ve Etik",
+    vi: "Hợp tác nghệ thuật và đạo đức",
+    ta: "கலை ஒத்துழைப்பும் நெறிமுறைகளும்",
+    te: "కళాత్మక సహకారం మరియు నైతికత",
+    mr: "कलात्मक सहकार्य आणि नीतिमत्ता",
+    ms: "Kerjasama Artistik dan Etika",
+    he: "שיתוף פעולה אמנותי ואתיקה",
+    pl: "Współpraca artystyczna i etyka",
+    uk: "Мистецька співпраця та етика",
+    lt: "Meninis bendradarbiavimas ir etika",
+    lv: "Mākslinieciskā sadarbība un ētika",
+    et: "Kunstiline koostöö ja eetika",
+    be: "Мастацкае супрацоўніцтва і этыка",
+    ka: "მხატვრული თანამშრომლობა და ეთიკა",
+    kk: "Өнердегі ынтымақтастық және этика",
+    qm: "Sanat işbirligi ve etika",
+  },
   skills: { assessCulturalAppropriation: assessCulturalAppropriation_Skill_Data, collaborateArtistically: collaborateArtistically_Skill_Data, creditArtisticSources: creditArtisticSources_Skill_Data, giveArtisticFeedback: giveArtisticFeedback_Skill_Data, presentAnArtwork: presentAnArtwork_Skill_Data, respectCreativeRights: respectCreativeRights_Skill_Data },
   description: { methodological: "Making and sharing art also demands communication, credit and respect for the rights and meanings of others' creative work.", frontend: {
           "en": "Make and share art thoughtfully while respecting collaborators, creators and communities.",
@@ -34,5 +64,6 @@ export const artisticCollaborationAndEthics_SkillGroup_Data = buildSkillGroupCon
           "be": "Стварайце і дзяліцеся мастацтвам удумліва, паважаючы супрацоўнікаў, аўтараў і супольнасці.",
           "ka": "შექმენით და გააზიარეთ ხელოვნება თანამშრომლების, შემქმნელებისა და საზოგადოებების პატივისცემით.",
           "kk": "Өнерді ойланып жасап, бөлісіңіз; бірге жұмыс істейтін авторларды, суретшілерді және қауымдастықтарды құрметтеңіз."
-    } },
+    
+      qm: "Birlikte sanat yaratıp paylaşqanda, iştirakçılarnı, yaratıcılarnı ve cemaatlerni sayıp, ehtiyatnen davranıñız.",} },
 });
