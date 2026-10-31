@@ -64,7 +64,7 @@ export const createVectorArt_Skill_Data = buildSkillConfig({
           "et": "Loo skaleeritavaid pilte muudetavate digikõverate ja kujundite abil.",
           "be": "Стварайце маштабаваныя выявы з дапамогай рэдагаваных лічбавых крывых і фігур.",
           "ka": "შექმენით მასშტაბირებადი გამოსახულებები რედაქტირებადი ციფრული მრუდებისა და ფორმების გამოყენებით.",
-          "kk": "Өңдеуге болатын цифрлық қисықтар мен пішіндер арқылы өлшемі өзгеретін кескіндер жасаңыз。"
+          "kk": "Өңдеуге болатын цифрлық қисықтар мен пішіндер арқылы өлшемі өзгеретін кескіндер жасаңыз。",
     
       qm: "Deñiştirilebilen raqemiy egri ve şekiller ile ölçeklenebilir suretler yaratmaq.",},
   },
