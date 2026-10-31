@@ -3,9 +3,9 @@ import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves
 import {practice} from "./sections/practice/practice";
 import {theory} from "./sections/theory/theory";
 import {quiz} from "./sections/quiz/quiz";
-import {DeepLocalized} from "./transformer.types";
+import {StringObjectToLocale} from "./transformer.types";
 
-export type HowLightMoves_Lesson_Locales = DeepLocalized<HowLightMoves_Lesson_Locale>;
+export type HowLightMoves_Lesson_Locales = StringObjectToLocale<HowLightMoves_Lesson_Locale>;
 
 export const howLightMoves_Locale: HowLightMoves_Lesson_Locales = {
   name: {
