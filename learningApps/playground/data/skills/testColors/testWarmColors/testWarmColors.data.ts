@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { testRecognizeRed_Skill_Data, testRecognizeOrange_Skill_Data } from './skills';
 
 export const testWarmColors_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'testWarmColors',
   id: '00000000-0000-4000-8000-000000000003',
   name: {
     en: "[TEST en] Warm colors",
@@ -34,8 +35,8 @@ export const testWarmColors_SkillGroup_Data = buildSkillGroupConfig({
     ka: "[TEST ka] Warm colors",
     kk: "[TEST kk] Warm colors",
   },
-  skillIds: {
-    testRecognizeRed: testRecognizeRed_Skill_Data.id,
-    testRecognizeOrange: testRecognizeOrange_Skill_Data.id,
+  skills: {
+    testRecognizeRed: testRecognizeRed_Skill_Data,
+    testRecognizeOrange: testRecognizeOrange_Skill_Data,
   },
 });

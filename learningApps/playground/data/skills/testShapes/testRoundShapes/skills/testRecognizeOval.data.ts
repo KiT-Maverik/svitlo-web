@@ -2,6 +2,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const testRecognizeOval_Skill_Data = buildSkillConfig({
+  slug: 'testRecognizeOval',
   id: '00000000-0000-4000-8000-000000000009',
   name: {
     en: "[TEST en] Recognize an oval",
@@ -35,7 +36,7 @@ export const testRecognizeOval_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Synthetic fixture skill for recognize an oval; it exists solely to exercise the Playground Skill Data graph.",
-    fe: {
+    frontend: {
       en: "[TEST en] Recognize an oval in a simple visual example.",
       zh: "[TEST zh] Recognize an oval in a simple visual example.",
       hi: "[TEST hi] Recognize an oval in a simple visual example.",

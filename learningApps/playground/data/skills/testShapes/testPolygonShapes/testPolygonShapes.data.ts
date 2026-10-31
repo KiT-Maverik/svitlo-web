@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { testRecognizeTriangle_Skill_Data, testRecognizeSquare_Skill_Data } from './skills';
 
 export const testPolygonShapes_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'testPolygonShapes',
   id: '00000000-0000-4000-8000-000000000013',
   name: {
     en: "[TEST en] Polygon shapes",
@@ -34,8 +35,8 @@ export const testPolygonShapes_SkillGroup_Data = buildSkillGroupConfig({
     ka: "[TEST ka] Polygon shapes",
     kk: "[TEST kk] Polygon shapes",
   },
-  skillIds: {
-    testRecognizeTriangle: testRecognizeTriangle_Skill_Data.id,
-    testRecognizeSquare: testRecognizeSquare_Skill_Data.id,
+  skills: {
+    testRecognizeTriangle: testRecognizeTriangle_Skill_Data,
+    testRecognizeSquare: testRecognizeSquare_Skill_Data,
   },
 });

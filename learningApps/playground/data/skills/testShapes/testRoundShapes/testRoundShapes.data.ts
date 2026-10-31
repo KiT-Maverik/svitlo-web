@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { testRecognizeCircle_Skill_Data, testRecognizeOval_Skill_Data } from './skills';
 
 export const testRoundShapes_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'testRoundShapes',
   id: '00000000-0000-4000-8000-000000000010',
   name: {
     en: "[TEST en] Round shapes",
@@ -34,8 +35,8 @@ export const testRoundShapes_SkillGroup_Data = buildSkillGroupConfig({
     ka: "[TEST ka] Round shapes",
     kk: "[TEST kk] Round shapes",
   },
-  skillIds: {
-    testRecognizeCircle: testRecognizeCircle_Skill_Data.id,
-    testRecognizeOval: testRecognizeOval_Skill_Data.id,
+  skills: {
+    testRecognizeCircle: testRecognizeCircle_Skill_Data,
+    testRecognizeOval: testRecognizeOval_Skill_Data,
   },
 });

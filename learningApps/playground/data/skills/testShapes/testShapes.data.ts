@@ -4,6 +4,7 @@ import { testRoundShapes_SkillGroup_Data } from './testRoundShapes/testRoundShap
 import { testPolygonShapes_SkillGroup_Data } from './testPolygonShapes/testPolygonShapes.data';
 
 export const testShapes_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'testShapes',
   id: '00000000-0000-4000-8000-000000000014',
   name: {
     en: "[TEST en] Shape recognition",
@@ -35,8 +36,8 @@ export const testShapes_SkillDomain_Data = buildSkillDomainConfig({
     ka: "[TEST ka] Shape recognition",
     kk: "[TEST kk] Shape recognition",
   },
-  groupIds: {
-    testRoundShapes: testRoundShapes_SkillGroup_Data.id,
-    testPolygonShapes: testPolygonShapes_SkillGroup_Data.id,
+  groups: {
+    testRoundShapes: testRoundShapes_SkillGroup_Data,
+    testPolygonShapes: testPolygonShapes_SkillGroup_Data,
   },
 });

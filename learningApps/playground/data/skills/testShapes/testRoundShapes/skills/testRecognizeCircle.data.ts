@@ -2,6 +2,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const testRecognizeCircle_Skill_Data = buildSkillConfig({
+  slug: 'testRecognizeCircle',
   id: '00000000-0000-4000-8000-000000000008',
   name: {
     en: "[TEST en] Recognize a circle",
@@ -35,7 +36,7 @@ export const testRecognizeCircle_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Synthetic fixture skill for recognize a circle; it exists solely to exercise the Playground Skill Data graph.",
-    fe: {
+    frontend: {
       en: "[TEST en] Recognize a circle in a simple visual example.",
       zh: "[TEST zh] Recognize a circle in a simple visual example.",
       hi: "[TEST hi] Recognize a circle in a simple visual example.",

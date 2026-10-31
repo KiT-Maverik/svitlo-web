@@ -4,6 +4,7 @@ import { testWarmColors_SkillGroup_Data } from './testWarmColors/testWarmColors.
 import { testCoolColors_SkillGroup_Data } from './testCoolColors/testCoolColors.data';
 
 export const testColors_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'testColors',
   id: '00000000-0000-4000-8000-000000000007',
   name: {
     en: "[TEST en] Color recognition",
@@ -35,8 +36,8 @@ export const testColors_SkillDomain_Data = buildSkillDomainConfig({
     ka: "[TEST ka] Color recognition",
     kk: "[TEST kk] Color recognition",
   },
-  groupIds: {
-    testWarmColors: testWarmColors_SkillGroup_Data.id,
-    testCoolColors: testCoolColors_SkillGroup_Data.id,
+  groups: {
+    testWarmColors: testWarmColors_SkillGroup_Data,
+    testCoolColors: testCoolColors_SkillGroup_Data,
   },
 });

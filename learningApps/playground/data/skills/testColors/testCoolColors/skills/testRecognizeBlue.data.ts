@@ -2,6 +2,7 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const testRecognizeBlue_Skill_Data = buildSkillConfig({
+  slug: 'testRecognizeBlue',
   id: '00000000-0000-4000-8000-000000000004',
   name: {
     en: "[TEST en] Recognize blue",
@@ -35,7 +36,7 @@ export const testRecognizeBlue_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Synthetic fixture skill for recognize blue; it exists solely to exercise the Playground Skill Data graph.",
-    fe: {
+    frontend: {
       en: "[TEST en] Recognize the color blue in a simple visual example.",
       zh: "[TEST zh] Recognize the color blue in a simple visual example.",
       hi: "[TEST hi] Recognize the color blue in a simple visual example.",
