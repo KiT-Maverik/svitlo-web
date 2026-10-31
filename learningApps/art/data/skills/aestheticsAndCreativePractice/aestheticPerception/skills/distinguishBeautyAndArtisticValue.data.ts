@@ -30,6 +30,6 @@ export const distinguishBeautyAndArtisticValue_Skill_Data = buildSkillConfig({
           "et": "Avasta, miks oluline kunstiteos ei püüa alati ilus välja näha.",
           "be": "Даведайцеся, чаму важны мастацкі твор не заўсёды імкнецца выглядаць прыгожа.",
           "ka": "გაიგეთ, რატომ არ ცდილობს მნიშვნელოვანი ნამუშევარი ყოველთვის ლამაზად გამოიყურებოდეს.",
-          "kk": "Fedezze fel, miért nem törekszik egy jelentős műalkotás mindig arra, hogy szépnek tűnjön。"
+          "kk": "Маңызды өнер туындысы әрдайым әдемі көрінуді мақсат етпейтінінің себебін зерттеңіз."
     } },
 });
