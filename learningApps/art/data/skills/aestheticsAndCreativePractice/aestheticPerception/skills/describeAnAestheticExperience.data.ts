@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const describeAnAestheticExperience_Skill_Data = buildSkillConfig({
-  slug: "describeAnAestheticExperience", id: "bcf94c6e-f4e6-433f-b4fd-b3742eeab413", name: { en: "Describe an Aesthetic Experience" },
+  slug: "describeAnAestheticExperience", id: "bcf94c6e-f4e6-433f-b4fd-b3742eeab413", name: {
+    en: "Describe an Aesthetic Experience",
+    zh: "描述审美体验",
+    hi: "सौंदर्यात्मक अनुभव का वर्णन करें",
+    es: "Describir una experiencia estética",
+    ar: "وصف تجربة جمالية",
+    fr: "Décrire une expérience esthétique",
+    bn: "নান্দনিক অভিজ্ঞতার বর্ণনা দিন",
+    pt: "Descrever uma experiência estética",
+    ur: "جمالیاتی تجربے کی وضاحت کریں",
+    id: "Mendeskripsikan Pengalaman Estetis",
+    de: "Ein ästhetisches Erlebnis beschreiben",
+    ja: "美的体験を説明する",
+    ko: "미적 경험 묘사하기",
+    tr: "Estetik Bir Deneyimi Betimlemek",
+    vi: "Mô tả trải nghiệm thẩm mỹ",
+    ta: "அழகியல் அனுபவத்தை விவரியுங்கள்",
+    te: "సౌందర్య అనుభవాన్ని వివరించండి",
+    mr: "सौंदर्यात्मक अनुभवाचे वर्णन करा",
+    ms: "Menghuraikan Pengalaman Estetik",
+    he: "תיאור חוויה אסתטית",
+    pl: "Opisywanie doświadczenia estetycznego",
+    uk: "Описувати естетичний досвід",
+    lt: "Apibūdinti estetinę patirtį",
+    lv: "Aprakstīt estētisku pieredzi",
+    et: "Esteetilise kogemuse kirjeldamine",
+    be: "Апісваць эстэтычны досвед",
+    ka: "ესთეტიკური გამოცდილების აღწერა",
+    kk: "Эстетикалық тәжірибені сипаттау",
+    qm: "Estetik tecribeni tasvir etüv",
+  },
   description: { methodological: "Articulate a response while separating felt qualities from unsupported assertions about the work.", frontend: {
           "en": "Describe how an artwork feels to you while distinguishing feelings from observations.",
           "zh": "描述作品带给你的感受，并区分感受与观察。",
@@ -31,5 +61,6 @@ export const describeAnAestheticExperience_Skill_Data = buildSkillConfig({
           "be": "Апішыце, якія пачуцці выклікае твор, адрозніваючы эмоцыі ад назіранняў.",
           "ka": "აღწერეთ, რა განცდებს იწვევს ნამუშევარი თქვენში და განასხვავეთ გრძნობები დაკვირვებებისგან.",
           "kk": "Өнер туындысы тудыратын сезімдерді бақылаулардан ажыратып, сипаттаңыз."
-    } },
+    
+      qm: "Bir sanat eseriniñ sizde uyandırğan duyğularını tasvir etiñiz, duyğularnı közlemden ayırıñız.",} },
 });
