@@ -47,7 +47,7 @@ export const analyzeABuildingFacade_Skill_Data = buildSkillConfig({
       be: "Прааналізуй візуальны рытм сцен, вокнаў і праёмаў на знешнім баку будынка.",
       ka: "წაიკითხეთ შენობის გარე კედლების, ფანჯრებისა და ღიობების ვიზუალური წყობა.",
       kk: "Ғимараттың сыртқы қабырғалары, терезелері мен ойықтарының көрнекі өрнегін талдаңыз.",
-      qm: "Mimariy üslüplerni şekilleri ve medeniy bağlamları boyunca qarşılaştırıñız.",
+      qm: "Bina dış yüzündeki divar, pencereler ve açılışlarnıñ körüniş tertibini oquñız.",
     },
   },
 });
