@@ -37,17 +37,17 @@ function imported(source, file) {
   }
   return result;
 }
-function childRefs(config, name, file) {
-  const p = field(config, name);
+function childRefs(config, name, file, optional = false) {
+  const p = field(config,name);
+  if (!p && optional) return new Map();
   check(p && ts.isObjectLiteralExpression(p.initializer), 'Missing literal ' + name + ': ' + file);
   const result = new Map();
   for (const child of p.initializer.properties) {
     check(ts.isPropertyAssignment(child) && ts.isIdentifier(child.name) &&
-      identifier.test(child.name.text) && ts.isPropertyAccessExpression(child.initializer) &&
-      child.initializer.name.text === 'id' && ts.isIdentifier(child.initializer.expression),
-      'Invalid child ID reference: ' + file);
+      identifier.test(child.name.text) && ts.isIdentifier(child.initializer),
+      'Invalid child entity reference: ' + file);
     check(!result.has(child.name.text), 'Duplicate child slug ' + child.name.text + ': ' + file);
-    result.set(child.name.text, child.initializer.expression.text);
+    result.set(child.name.text, child.initializer.text);
   }
   return result;
 }
@@ -72,6 +72,9 @@ export function checkTaxonomy(root = defaultRoot) {
         d.initializer.arguments.length === 1 && ts.isObjectLiteralExpression(d.initializer.arguments[0]));
     check(matches.length === 1, 'Missing ' + symbol + ' builder: ' + file);
     const config = matches[0].initializer.arguments[0];
+    const authoredSlug = field(config, 'slug')?.initializer;
+    check(authoredSlug && ts.isStringLiteral(authoredSlug) && authoredSlug.text === slug,
+      'Missing/mismatched slug: ' + file);
     const id = field(config, 'id')?.initializer;
     check(id && ts.isStringLiteral(id) && uuid.test(id.text), 'Invalid literal UUID: ' + file);
     check(!ids.has(id.text), 'Duplicate UUID ' + id.text + ': ' + file + ' and ' + ids.get(id.text));
@@ -99,7 +102,7 @@ export function checkTaxonomy(root = defaultRoot) {
     check(slugs.length > 0, 'Empty Skills collection: ' + dir);
     same(entries(dir, 'file'), ['index.ts', ...slugs.map(s => s + '.data.ts')], 'Skill files: ' + dir);
     barrel(dir, slugs);
-    const refs = childRefs(parent.config, 'skillIds', parent.source.fileName);
+    const refs = childRefs(parent.config, 'skills', parent.source.fileName);
     same(refs.keys(), slugs, 'Skill membership: ' + parent.source.fileName);
     for (const slug of slugs) {
       const symbol = slug + '_Skill_Data';
@@ -133,32 +136,30 @@ export function checkTaxonomy(root = defaultRoot) {
       'Broken root Domain export: ' + domain);
     const parent = entity(path.join(dir, domain + '.data.ts'), 'SkillDomain', domain);
     const childDirs = entries(dir, 'directory');
-    if (childDirs.includes('skills')) {
-      same(childDirs, ['skills'], 'Direct-Skill Domain mixed with Groups: ' + dir);
-      check(childRefs(parent.config, 'groupIds', parent.source.fileName).size === 0,
-        'Direct-Skill Domain has Groups: ' + dir);
-      skills(path.join(dir, 'skills'), parent);
-    } else {
-      check(childDirs.length > 0, 'Empty Domain: ' + dir);
-      const refs = childRefs(parent.config, 'groupIds', parent.source.fileName);
-      same(refs.keys(), childDirs, 'Group membership: ' + dir);
-      const direct = field(parent.config, 'skillIds');
-      check(!direct || (ts.isObjectLiteralExpression(direct.initializer) &&
-        direct.initializer.properties.length === 0), 'Grouped Domain has direct Skills: ' + dir);
-      for (const group of childDirs) {
-        const symbol = group + '_SkillGroup_Data', imp = parent.imports.get(symbol);
-        check(refs.get(group) === symbol && imp?.module === './' + group + '/' + group + '.data' &&
-          imp.name === symbol, 'Missing direct Group reference: ' + dir + '/' + group);
-        const groupDir = path.join(dir, group);
-        same(entries(groupDir, 'file'), [group + '.data.ts'], 'Group directory indexes not allowed: ' + groupDir);
-        same(entries(groupDir, 'directory'), ['skills'], 'Group children: ' + groupDir);
-        const g = entity(path.join(groupDir, group + '.data.ts'), 'SkillGroup', group);
-        skills(path.join(groupDir, 'skills'), g);
-        count.groups++;
-      }
-      same([...parent.imports.keys()].filter(x => x.endsWith('_SkillGroup_Data')),
-        childDirs.map(g => g + '_SkillGroup_Data'), 'Imported Groups: ' + dir);
+    const groups = childDirs.filter(x => x !== 'skills');
+    const directSkills = childDirs.includes('skills');
+    check(groups.length > 0 || directSkills, 'Empty Domain: ' + dir);
+    check(!field(parent.config,'groupIds') && !field(parent.config,'skillIds'),
+      'Obsolete ID-only Domain children: ' + dir);
+    const groupRefs = childRefs(parent.config, 'groups', parent.source.fileName);
+    same(groupRefs.keys(), groups, 'Group membership: ' + dir);
+    const directRefs = childRefs(parent.config, 'skills', parent.source.fileName, !directSkills);
+    if (!directSkills) check(directRefs.size === 0, 'Direct Skills without directory: ' + dir);
+    if (directSkills) skills(path.join(dir, 'skills'), parent);
+    for (const group of groups) {
+      const symbol = group + '_SkillGroup_Data', imp = parent.imports.get(symbol);
+      check(groupRefs.get(group) === symbol && imp?.module === './' + group + '/' + group + '.data' &&
+        imp.name === symbol, 'Missing direct Group reference: ' + dir + '/' + group);
+      const groupDir = path.join(dir, group);
+      same(entries(groupDir, 'file'), [group + '.data.ts'], 'Group directory indexes not allowed: ' + groupDir);
+      same(entries(groupDir, 'directory'), ['skills'], 'Group children: ' + groupDir);
+      const g = entity(path.join(groupDir, group + '.data.ts'), 'SkillGroup', group);
+      check(!field(g.config,'skillIds'), 'Obsolete ID-only Group children: ' + groupDir);
+      skills(path.join(groupDir, 'skills'), g);
+      count.groups++;
     }
+    same([...parent.imports.keys()].filter(x => x.endsWith('_SkillGroup_Data')),
+      groups.map(g => g + '_SkillGroup_Data'), 'Imported Groups: ' + dir);
     count.domains++;
   }
   return count;
