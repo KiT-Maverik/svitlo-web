@@ -23,14 +23,16 @@ future data generators; additions should be recorded here before implementation.
   **Always use lower-case `data` and `skills` in paths**.
 - The entire `**/public/data/` subtree is Git-ignored and must contain no tracked
   files. It is regenerated for `predev` and `prebuild`.
-- Data generation scripts and their unit tests live under
-  `scripts/generators/data/`; use paths relative to each script rather than
-  assuming the current working directory.
+- Entity-oriented generators and tests live under `scripts/generators/data/`.
+  Purpose-built page generators live under
+  `scripts/generators/pages/<camelCasePageName>/`. Paths are relative to each
+  script rather than depending on the current working directory.
 
-## 3. Identity/metadata versus localized payloads
+## 3. Optional entity-level metadata projection
 
-For every Skill, SkillGroup and SkillDomain, publish one directory corresponding
-to its stable editorial path, with:
+Only when an entity-oriented runtime consumer specifically requires it, the
+legacy entity-level publisher may publish one directory per Skill, SkillGroup
+and SkillDomain, with:
 
 ```text
 public/data/skills/<domain>/
@@ -85,7 +87,7 @@ Example `uk.json` for the same Group:
 { "name": "Теплі кольори" }
 ```
 
-## 4. No generated catalog index
+## 4. No generated catalog index for entity projections
 
 - Do **not** generate `public/data/skills/index.json`: no `version`,
   no `languages` list, and no `domains` list in published resources.
@@ -96,9 +98,12 @@ Example `uk.json` for the same Group:
 - The textbook declares its root SkillDomain slugs in its own typed page/config
   boundary, which may be passed to a reusable UI Kit component later.
   Do not import authoring `*.data.ts` to discover root domains in browser code.
-- The loader traverses child path segments from `meta.json`, fetches the
-  requested locale for each node, verifies the runtime schema and reconstructs
-  entities in memory. Missing files or unknown Collection values are hard errors.
+- An entity-level loader, when used, traverses child path segments from
+  `meta.json`, fetches the requested locale for each node, validates the
+  runtime schema and reconstructs entities in memory. **The current
+  skillAnalytics page intentionally does not use this projection**: its own
+  generator publishes one complete localized page JSON instead. Missing
+  files or unknown Collection values remain hard errors.
 - Offline packs may cache shared `meta.json` once and only the selected locales.
   Browser caches are independent of source-control tracking.
 
