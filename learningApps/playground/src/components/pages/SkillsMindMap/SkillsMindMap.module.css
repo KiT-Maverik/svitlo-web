@@ -161,11 +161,17 @@
   background: linear-gradient(160deg, #ebfcfb, #fff);
 }
 .skillNode {
-  width: 180px;
-  min-height: 86px;
+  width: 278px;
+  min-height: 258px;
+  max-height: 334px;
+  justify-content: stretch;
+  gap: 0;
+  padding: 0;
+  cursor: default;
   border-color: #e9cb92;
-  border-radius: 17px;
-  background: linear-gradient(160deg, #fff7e9, #fff);
+  border-radius: 19px;
+  background: linear-gradient(160deg, #fff9ee, #fff);
+  overflow: hidden;
 }
 .selectedNode {
   outline: 4px solid #4d63d9;
@@ -200,6 +206,133 @@
   font-weight: 700;
   font-size: 12px;
 }
+
+
+/* Skill leaf cards have two independent actions: inspect and practice. */
+.skillCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  padding: 17px 17px 12px;
+}
+.skillTitleButton {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+.skillTitleButton:hover .nodeName { text-decoration: underline; }
+.skillTitleButton:focus-visible,
+.pumpLink:focus-visible {
+  outline: 4px solid #f29a42;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.skillNode .nodeName {
+  font-size: 17px;
+  -webkit-line-clamp: 3;
+}
+.nodeDescription {
+  color: #53607b;
+  font-size: 12px;
+  line-height: 1.36;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.mastery {
+  --mastery-color: #5277c6;
+  width: 100%;
+  padding: 8px 18px 11px;
+}
+.mastery[data-tier='starting'] { --mastery-color: #d98332; }
+.mastery[data-tier='growing'] { --mastery-color: #587bd5; }
+.mastery[data-tier='strong'] { --mastery-color: #248e73; }
+.masteryHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #596784;
+}
+.masteryHeading strong {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--mastery-color);
+  font-variant-numeric: tabular-nums;
+}
+.masteryTrack {
+  width: 100%;
+  height: 8px;
+  background: #e9edf5;
+  overflow: hidden;
+  border-radius: 999px;
+}
+.masteryFill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--mastery-color);
+}
+.skillCardFooter {
+  width: 100%;
+  padding: 10px 15px 13px;
+  border-top: 1px solid #ece3d4;
+}
+.pumpLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 10px 14px;
+  background: #6554be;
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2;
+  border-radius: 11px;
+  text-decoration: none;
+  transition: background-color .15s ease;
+}
+.pumpLink:hover { background: #43319e; }
+.compactPump {
+  max-width: 210px;
+  margin-top: 12px;
+}
+.outlineSkillDetails {
+  margin-left: 32px;
+  margin-bottom: 12px;
+  max-width: 480px;
+  padding: 8px 16px 16px;
+  border: 1px solid #e8e5dc;
+  background: #fffdf7;
+  border-radius: 13px;
+}
+.outlineSkillDetails p {
+  margin-bottom: 8px;
+  color: #52607a;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.outlineSkillDetails .mastery { padding: 4px 0 5px; }
 
 .zoomControls {
   position: absolute;
