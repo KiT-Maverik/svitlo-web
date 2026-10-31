@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const relateArtisticFormToContent_Skill_Data = buildSkillConfig({
-  slug: "relateArtisticFormToContent", id: "aef86e64-86f7-46c1-baa1-b131cfe7369a", name: { en: "Relate Artistic Form to Content" },
+  slug: "relateArtisticFormToContent", id: "aef86e64-86f7-46c1-baa1-b131cfe7369a", name: {
+    en: "Relate Artistic Form to Content",
+    zh: "联系艺术形式与内容",
+    hi: "कलात्मक रूप को विषयवस्तु से जोड़ें",
+    es: "Relacionar la forma artística con el contenido",
+    ar: "ربط الشكل الفني بالمحتوى",
+    fr: "Relier la forme artistique au contenu",
+    bn: "শৈল্পিক রূপের সঙ্গে বিষয়বস্তুর সম্পর্ক স্থাপন করুন",
+    pt: "Relacionar a forma artística ao conteúdo",
+    ur: "فنّی شکل کو مواد سے جوڑیں",
+    id: "Mengaitkan Bentuk Artistik dengan Isi",
+    de: "Künstlerische Form und Inhalt in Beziehung setzen",
+    ja: "芸術形式と内容を関連付ける",
+    ko: "예술 형식과 내용 연결하기",
+    tr: "Sanatsal Biçimi İçerikle İlişkilendirmek",
+    vi: "Liên hệ hình thức nghệ thuật với nội dung",
+    ta: "கலை வடிவத்தை உள்ளடக்கத்துடன் தொடர்புபடுத்துங்கள்",
+    te: "కళారూపాన్ని విషయంతో అనుసంధానించండి",
+    mr: "कलात्मक स्वरूपाचा आशयाशी संबंध जोडणे",
+    ms: "Mengaitkan Bentuk Artistik dengan Kandungan",
+    he: "קישור בין צורה אמנותית לתוכן",
+    pl: "Łączyć formę artystyczną z treścią",
+    uk: "Пов’язувати мистецьку форму зі змістом",
+    lt: "Sieti meninę formą su turiniu",
+    lv: "Saistīt māksliniecisko formu ar saturu",
+    et: "Kunstilise vormi ja sisu seostamine",
+    be: "Звязваць мастацкую форму са зместам",
+    ka: "მხატვრული ფორმის შინაარსთან დაკავშირება",
+    kk: "Көркем пішінді мазмұнмен байланыстыру",
+    qm: "Sanat şeklini mana ile bağlamaq",
+  },
   description: { methodological: "Explain how medium and organization shape what an expressive subject communicates.", frontend: {
           "en": "See how the way something is made changes the meaning it conveys.",
           "zh": "观察作品的制作方式如何改变它所传达的意义。",
@@ -31,5 +61,6 @@ export const relateArtisticFormToContent_Skill_Data = buildSkillConfig({
           "be": "Паглядзіце, як спосаб стварэння змяняе сэнс, які перадае твор.",
           "ka": "ნახეთ, როგორ ცვლის შექმნის გზა იმ მნიშვნელობას, რომელსაც ნამუშევარი გადმოსცემს.",
           "kk": "Туындының жасалу тәсілі жеткізілетін мағынаны қалай өзгертетінін байқаңыз."
-    } },
+    
+      qm: "Bir şeyniñ nasıl yapılğanınıñ onıñ bildirdigi mananı nasıl deñiştirgenini körüñiz.",} },
 });
