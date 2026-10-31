@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const giveArtisticFeedback_Skill_Data = buildSkillConfig({
-  slug: "giveArtisticFeedback", id: "b1723767-0061-4f30-98c5-e6148c5ec3f0", name: { en: "Give Artistic Feedback" },
+  slug: "giveArtisticFeedback", id: "b1723767-0061-4f30-98c5-e6148c5ec3f0", name: {
+    en: "Give Artistic Feedback",
+    zh: "提供艺术反馈",
+    hi: "कलात्मक प्रतिक्रिया दें",
+    es: "Dar comentarios artísticos",
+    ar: "تقديم ملاحظات فنية",
+    fr: "Donner un retour artistique",
+    bn: "শৈল্পিক প্রতিক্রিয়া দিন",
+    pt: "Dar feedback artístico",
+    ur: "فنّی رائے دیں",
+    id: "Memberikan Umpan Balik Artistik",
+    de: "Künstlerisches Feedback geben",
+    ja: "芸術的なフィードバックを伝える",
+    ko: "예술적 피드백 제공하기",
+    tr: "Sanatsal Geri Bildirim Vermek",
+    vi: "Đưa ra phản hồi nghệ thuật",
+    ta: "கலை சார்ந்த கருத்தளியுங்கள்",
+    te: "కళాత్మక అభిప్రాయాన్ని ఇవ్వండి",
+    mr: "कलात्मक अभिप्राय द्या",
+    ms: "Memberi Maklum Balas Artistik",
+    he: "מתן משוב אמנותי",
+    pl: "Udzielać informacji zwrotnej o sztuce",
+    uk: "Надавати мистецький зворотний зв’язок",
+    lt: "Teikti meninį grįžtamąjį ryšį",
+    lv: "Sniegt mākslinisko atgriezenisko saiti",
+    et: "Kunstialase tagasiside andmine",
+    be: "Даваць мастацкую зваротную сувязь",
+    ka: "მხატვრული უკუკავშირის მიცემა",
+    kk: "Өнер туралы кері байланыс беру",
+    qm: "Sanat aqqında faydalı fikir bildirmek",
+  },
   description: { methodological: "Offer specific observations and actionable suggestions aligned with a maker's goals.", frontend: {
           "en": "Offer useful, specific suggestions that support another artist's goals.",
           "zh": "提出具体且有用的建议，帮助其他艺术家实现目标。",
@@ -31,5 +61,6 @@ export const giveArtisticFeedback_Skill_Data = buildSkillConfig({
           "be": "Давайце карысныя і канкрэтныя парады, якія дапамагаюць іншаму мастаку дасягнуць мэт.",
           "ka": "მიეცით სასარგებლო და კონკრეტული რჩევები, რომლებიც სხვა ხელოვანის მიზნებს ეხმარება.",
           "kk": "Басқа суретшінің мақсатын қолдайтын пайдалы әрі нақты ұсыныстар беріңіз."
-    } },
+    
+      qm: "Başqa sanatkârnıñ maqsatlarına yardım etken faydalı ve belli tekliflerde bulunuñız.",} },
 });
