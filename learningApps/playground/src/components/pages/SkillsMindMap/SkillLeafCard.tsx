@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { SkillNode } from './skillsMindMap.utils';
 import { mockSkillMastery, skillLearningHref } from './skillsMindMap.utils';
 import styles from './SkillsMindMap.module.css';
@@ -44,11 +43,11 @@ interface SkillActionProps {
 
 export function SkillAction({ skillId, language, compact = false }: SkillActionProps) {
   return (
-    <Link className={styles.pumpLink + (compact ? ' ' + styles.compactPump : '')}
+    <a className={styles.pumpLink + (compact ? ' ' + styles.compactPump : '')}
       href={skillLearningHref(skillId, language)}
       aria-label="Прокачати навичку: перейти до уроків і програм">
       Прокачати <span aria-hidden="true">↗</span>
-    </Link>
+    </a>
   );
 }
 
