@@ -30,6 +30,6 @@ export const generateArtisticIdeas_Skill_Data = buildSkillConfig({
           "et": "Arenda ühest lähteideest mitu erinevat kunstilist võimalust.",
           "be": "Развівайце некалькі розных мастацкіх магчымасцей на аснове адной пачатковай ідэі.",
           "ka": "განავითარეთ რამდენიმე განსხვავებული მხატვრული შესაძლებლობა ერთი საწყისი იდეიდან.",
-          "kk": "Dolgozzon ki több különböző művészi lehetőséget egy kiinduló ötletből。"
+          "kk": "Бастапқы идеядан бірнеше түрлі көркемдік мүмкіндікті дамытыңыз."
     } },
 });
