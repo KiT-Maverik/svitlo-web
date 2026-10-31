@@ -77,6 +77,7 @@
   overflow: hidden;
   cursor: grab;
   touch-action: none;
+  overscroll-behavior: contain;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -313,7 +314,7 @@
 
 .nodeDescription {
   color: #53607b;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.36;
   text-align: center;
   overflow: hidden;
@@ -564,11 +565,61 @@
   .header h1 { font-size: 36px; }
   .mapFrame { border-radius: 17px; }
   .viewport { min-height: 530px; height: 70vh; }
-  .mapHint { font-size: 11px; bottom: 13px; left: 8px; max-width: calc(100% - 72px); }
+  .mapHint { font-size: 12px; bottom: 14px; left: 8px; max-width: calc(100% - 78px); }
   .zoomControls { right: 9px; bottom: 10px; }
-  .zoomControls button { width: 40px; height: 40px; }
+  .zoomControls button { width: 44px; height: 44px; }
   .detail { padding: 17px; }
 }
+
+
+/* Match the existing MUI data-dark theme selector, including Skill mastery. */
+:global([data-dark]) .root { --map-ink: #eef2ff; --map-muted: #acb7d1; }
+:global([data-dark]) .mapFrame {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(106, 86, 190, .2), transparent 48%),
+    radial-gradient(circle, rgba(178, 190, 240, .15) 1px, transparent 1px);
+  background-color: #141c2e;
+  background-size: auto, 24px 24px;
+}
+:global([data-dark]) .node { color: var(--map-ink); background: #1d2941; box-shadow: 0 8px 24px rgba(0, 0, 0, .3); }
+:global([data-dark]) .domainNode { border-color: #8d80cb; background: linear-gradient(155deg, #30294f, #222a40); }
+:global([data-dark]) .groupNode { border-color: #478e97; background: linear-gradient(155deg, #1c414c, #202b42); }
+:global([data-dark]) .skillNode { border-color: #9c8557; background: linear-gradient(155deg, #383324, #252c40); }
+:global([data-dark]) .compactSkillNode[data-tier='starting'] {
+  border-color: #b88451; background: linear-gradient(155deg, #453528, #262b3a);
+}
+:global([data-dark]) .compactSkillNode[data-tier='growing'] {
+  border-color: #7288cb; background: linear-gradient(155deg, #293759, #252c43);
+}
+:global([data-dark]) .compactSkillNode[data-tier='strong'] {
+  border-color: #4c9e83; background: linear-gradient(155deg, #21453e, #222e40);
+}
+:global([data-dark]) .nodeKind { color: #b9a8fc; }
+:global([data-dark]) .groupNode .nodeKind { color: #8ed4d7; }
+:global([data-dark]) .skillNode .nodeKind { color: #efcd89; }
+:global([data-dark]) .nodeCount { color: #e5e6ff; background: rgba(168, 160, 255, .14); }
+:global([data-dark]) .nodeDescription,
+:global([data-dark]) .masteryHeading,
+:global([data-dark]) .outlineSkillDetails p { color: #c2cce0; }
+:global([data-dark]) .masteryTrack { background: #303c58; }
+:global([data-dark]) .mastery[data-tier='neutral'] { --mastery-color: #b6c3d8; }
+:global([data-dark]) .mastery[data-tier='starting'] { --mastery-color: #f2aa6a; }
+:global([data-dark]) .mastery[data-tier='growing'] { --mastery-color: #a0b5ff; }
+:global([data-dark]) .mastery[data-tier='strong'] { --mastery-color: #7ce0b7; }
+:global([data-dark]) .skillExpandIcon { border-color: #66718c; color: #d5d9fa; background: #343f59; }
+:global([data-dark]) .skillCardFooter { border-color: #4b4960; }
+:global([data-dark]) .pumpLink { background: #7762c6; color: #fff; }
+:global([data-dark]) .pumpLink:hover { background: #6450aa; }
+:global([data-dark]) .zoomControls button:hover { background: #313f61; color: #fff; }
+:global([data-dark]) .mapHint { color: #d9e2f1; background: rgba(29, 39, 59, .94); }
+:global([data-dark]) .selectedNode { outline-color: #98a5ff; }
+:global([data-dark]) .outlineProfile { background: #342b59; color: #eee8ff; }
+:global([data-dark]) .outlineSkillDetails { background: #242d43; border-color: #4a5267; }
+:global([data-dark]) .outlineSkillDetails[data-expanded='false'] { background: #242d43; }
+:global([data-dark]) .outlineGlyph { color: #e2d9ff; background: #39415f; }
+:global([data-dark]) .outlineList { border-left-color: #46516c; }
+:global([data-dark]) .outlineButton:hover,
+:global([data-dark]) .outlineSelected { background: rgba(148, 137, 232, .2); }
 
 @media (prefers-reduced-motion: reduce) {
   .profile, .node { transition: none; }
