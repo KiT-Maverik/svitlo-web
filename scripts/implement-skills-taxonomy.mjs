@@ -458,7 +458,7 @@ function domainPlan(d,entities,registry,codes) {
     if (!found || fs.readFileSync(file,'utf8')!==code) local.set(file,code);
     if (kids.length && kids[0].kind==='Skill') {
       const f=path.join(path.dirname(file),'skills/index.ts');
-      const body=indexContent(kids.map(x=>x.slug));
+      const body=indexContent(kids.filter(x=>x.kind==='Skill').map(x=>x.slug));
       if (!fs.existsSync(f) || fs.readFileSync(f,'utf8')!==body) local.set(f,body);
     }
     done.add(e);
