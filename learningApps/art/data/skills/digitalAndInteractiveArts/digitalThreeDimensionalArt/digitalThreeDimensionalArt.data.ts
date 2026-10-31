@@ -72,7 +72,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
           "et": "Loo väljendusrikkaid virtuaalseid ruume modelleerimise, materjalide, valguse ja kompositsiooni abil.",
           "be": "Стварайце выразныя віртуальныя прасторы з дапамогай мадэлявання, матэрыялаў, святла і кампазіцыі.",
           "ka": "მოდელირებით, მასალებით, განათებითა და კომპოზიციით შექმენით გამომსახველობითი ვირტუალური სივრცეები.",
-          "kk": "Модельдеу, материалдар, жарық пен композиция арқылы әсерлі виртуалды кеңістіктер құрыңыз."
+          "kk": "Модельдеу, материалдар, жарық пен композиция арқылы әсерлі виртуалды кеңістіктер құрыңыз.",
     
       qm: "Modelleme, material, yarıq ve kompozitsiya vastasınen ifadeleyici sanal meydanlar qurmaq.",},
   },
