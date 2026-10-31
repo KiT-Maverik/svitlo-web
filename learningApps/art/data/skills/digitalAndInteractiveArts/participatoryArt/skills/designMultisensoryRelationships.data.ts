@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const designMultisensoryRelationships_Skill_Data = buildSkillConfig({
   slug: "designMultisensoryRelationships",
   id: "b076bad5-eec8-4b77-93ce-b74b1ed425d0",
-  name: { en: "Design Multisensory Relationships" },
+  name: {
+    en: "Design Multisensory Relationships",
+    zh: "设计多感官关系",
+    hi: "बहु-संवेदी संबंध डिज़ाइन करें",
+    es: "Diseñar relaciones multisensoriales",
+    ar: "تصميم علاقات متعددة الحواس",
+    fr: "Concevoir des relations multisensorielles",
+    bn: "বহুসংবেদী সম্পর্ক নকশা করুন",
+    pt: "Projetar relações multissensoriais",
+    ur: "کثیر حسی تعلقات ڈیزائن کریں",
+    id: "Merancang Hubungan Multisensori",
+    de: "Multisensorische Beziehungen gestalten",
+    ja: "多感覚の関係を設計する",
+    ko: "다감각 관계 설계하기",
+    tr: "Çok Duyulu İlişkiler Tasarlamak",
+    vi: "Thiết kế mối liên hệ đa giác quan",
+    ta: "பல்புலன் உறவுகளை வடிவமைக்குங்கள்",
+    te: "బహుఇంద్రియ సంబంధాలను రూపకల్పన చేయండి",
+    mr: "बहुसंवेदनात्मक संबंधांची रचना करा",
+    ms: "Mereka Bentuk Hubungan Pelbagai Deria",
+    he: "עיצוב קשרים רב־חושיים",
+    pl: "Projektować relacje wielozmysłowe",
+    uk: "Проєктувати мультисенсорні зв’язки",
+    lt: "Kurti daugiajutes sąsajas",
+    lv: "Veidot daudzsensoras attiecības",
+    et: "Mitmetaju seoste kujundamine",
+    be: "Праектаваць мультысэнсорныя сувязі",
+    ka: "მრავალსენსორული კავშირების დიზაინი",
+    kk: "Көпсезімді байланыстарды жобалау",
+    qm: "Çoqusuliy bağlarnı tasarlamaq",
+  },
   description: {
     methodological: "Coordinate image, movement, sound or tactile response as expressive elements.",
     frontend: {
@@ -35,6 +65,7 @@ export const designMultisensoryRelationships_Skill_Data = buildSkillConfig({
           "be": "Аб’ядноўвайце гук, выявы, рух або дотык у адным мастацкім досведзе.",
           "ka": "შეაერთეთ ხმა, გამოსახულებები, მოძრაობა ან შეხება ერთ მხატვრულ გამოცდილებაში.",
           "kk": "Дыбыс, кескін, қозғалыс немесе жанасуды бір өнер тәжірибесіне біріктіріңіз。"
-    },
+    
+      qm: "Ses, suret, hareket ya da toqunuvnı bir sanat tecribesine birleştiriñiz.",},
   },
 });
