@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const sequenceMotionGraphics_Skill_Data = buildSkillConfig({
   slug: "sequenceMotionGraphics",
   id: "48dfcdff-074f-430f-b7e2-45e29edc5536",
-  name: { en: "Sequence Motion Graphics" },
+  name: {
+    en: "Sequence Motion Graphics",
+    zh: "编排动态图形序列",
+    hi: "मोशन ग्राफ़िक्स का क्रम बनाएँ",
+    es: "Secuenciar gráficos en movimiento",
+    ar: "ترتيب الرسوم المتحركة",
+    fr: "Séquençer des graphismes animés",
+    bn: "মোশন গ্রাফিক্সের ক্রম সাজান",
+    pt: "Sequenciar motion graphics",
+    ur: "موشن گرافکس کی ترتیب بنائیں",
+    id: "Menyusun Urutan Grafik Bergerak",
+    de: "Bewegte Grafiken sequenzieren",
+    ja: "モーショングラフィックスを順序立てる",
+    ko: "모션 그래픽 시퀀스 구성하기",
+    tr: "Hareketli Grafikleri Sıralamak",
+    vi: "Sắp xếp trình tự đồ họa chuyển động",
+    ta: "இயக்க வரைகலைகளை வரிசைப்படுத்துங்கள்",
+    te: "చలన గ్రాఫిక్స్‌ను క్రమపరచండి",
+    mr: "मोशन ग्राफिक्सचा क्रम लावा",
+    ms: "Menyusun Jujukan Grafik Gerak",
+    he: "רצף של גרפיקה בתנועה",
+    pl: "Układać sekwencje grafiki ruchomej",
+    uk: "Упорядковувати моушн-графіку",
+    lt: "Seka išdėstyti judančią grafiką",
+    lv: "Veidot kustīgās grafikas secību",
+    et: "Liikuva graafika järjestamine",
+    be: "Упарадкоўваць рухомую графіку",
+    ka: "მოძრავი გრაფიკის თანმიმდევრობა",
+    kk: "Қозғалыс графикасын реттеу",
+    qm: "Hareketli grafikni silsilege tertip etmek",
+  },
   description: {
     methodological: "Organize distinct moving graphic passages with coherent transitions, rhythm and informational or aesthetic hierarchy.",
     frontend: {
@@ -35,6 +65,7 @@ export const sequenceMotionGraphics_Skill_Data = buildSkillConfig({
           "be": "Размяшчайце фрагменты рухомай графікі з прадуманым рытмам і пераходамі.",
           "ka": "დაალაგეთ მოძრავი გრაფიკის მონაკვეთები გააზრებული რიტმითა და გადასვლებით.",
           "kk": "Қозғалмалы графика бөліктерін мақсатты ырғақ пен ауысулар арқылы реттеңіз。"
-    },
+    
+      qm: "Hareketli grafik elementlerini maqsatlı bir zaman tertibinde birleştiriñiz.",},
   },
 });
