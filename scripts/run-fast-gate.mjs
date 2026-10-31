@@ -72,6 +72,12 @@ function runGate(changed) {
   for (const f of plan.jsFiles) exec('node', ['--check', f]);
   for (const f of plan.jsonFiles) json(f);
   exec('node', ['--test', 'scripts/check-skills-taxonomy-structure.spec.mjs', 'scripts/run-fast-gate.spec.mjs']);
+  if (changed.some(f => f.startsWith('scripts/generators/pages/skillAnalytics/') ||
+    f.startsWith('learningApps/playground/data/skills/'))) {
+    exec('node', ['--test', 'scripts/generators/pages/skillAnalytics/generate-skill-analytics.spec.mjs']);
+    exec('node', ['scripts/generators/pages/skillAnalytics/generate-skill-analytics.mjs',
+      '--package', 'learningApps/playground', '--measure']);
+  }
   if (changed.some(f => /^scripts\/(?:implement-skills-taxonomy|generate-skills-taxonomy)(?:\.mjs|\.spec\.mjs|\.roundtrip\.spec\.mjs)$/.test(f))) {
     exec('node', ['--test',
       'scripts/implement-skills-taxonomy.spec.mjs',

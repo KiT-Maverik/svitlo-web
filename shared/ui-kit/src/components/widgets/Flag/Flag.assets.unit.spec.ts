@@ -39,6 +39,12 @@ describe('Static SVG flags', () => {
     }
   });
 
+  it('uses only lowercase qm for the Crimean Tatar flag asset', () => {
+    expect(svgFiles).toContain('qm.svg');
+    expect(svgFiles).not.toContain('crh.svg');
+    expect(svgFiles).not.toContain('QM.svg');
+  });
+
   it('renders the Ukrainian coat of arms as vector geometry inside ua.svg', () => {
     const svg = readFileSync(join(directory, 'ua.svg'), 'utf8');
     expect(svg).toContain('id="ua-crest-side"');

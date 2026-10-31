@@ -4,9 +4,9 @@ SVG assets live in `public/flags/<code>.svg`. The `Flag` component uses Next.js 
 
 - No new supported languages or translations are registered.
 - 22 existing locales map to 19 country flag assets; Hindi, Tamil, Telugu and Marathi share `in.svg`.
-- Seven future-ready assets are included, but not selectable by the dispatcher: Belarusian Taraškievica (`by.svg`), Crimean Tatar (`crh.svg`), Lithuanian (`lt.svg`), Latvian (`lv.svg`), Estonian (`ee.svg`), Georgian (`ge.svg`), Kazakh (`kz.svg`).
+- Seven future-ready assets are included, but not selectable by the dispatcher: Belarusian Taraškievica (`by.svg`), Crimean Tatar (`qm.svg`), Lithuanian (`lt.svg`), Latvian (`lv.svg`), Estonian (`ee.svg`), Georgian (`ge.svg`), Kazakh (`kz.svg`).
 - `pt.svg` is Portugal's flag, retained as an unused asset; `pt-BR` intentionally maps to `br.svg`, **not** `pt.svg`.
-- `crh.svg` uses the three-letter ISO 639-3 _language_ code, because the Crimean Tatar people have no ISO 3166-1 two-letter country code. All other asset names use ISO 3166-1 alpha-2 country codes.
+- `qm.svg` uses the project's custom lowercase `qm` asset code, not ISO 3166-1. All other asset names use ISO 3166-1 alpha-2 country codes.
 
 ## Dimensions and vector safety
 

@@ -36,6 +36,10 @@ export interface LearningLayoutProps {
   progress: LearningLayoutProgress;
   actions: { back: () => void; next: () => void; skip: () => void };
   preferences?: ReactNode;
+  /** Optional page-specific controls inside the existing right settings drawer. */
+  settingsContent?: ReactNode | ((actions: { closeSettings: () => void }) => ReactNode);
+  /** Non-lesson pages can reuse the navbar and sidebars without lesson navigation. */
+  showBottomNavbar?: boolean;
   linkComponent?: ElementType;
 }
 
@@ -50,6 +54,8 @@ export default function LearningLayout({
   progress,
   actions,
   preferences,
+  settingsContent,
+  showBottomNavbar = true,
   linkComponent,
 }: LearningLayoutProps) {
   const messages = getLearningLayoutMessages(locale);
@@ -75,7 +81,7 @@ export default function LearningLayout({
       sx={{
         height: '100dvh',
         display: 'grid',
-        gridTemplateRows: 'auto minmax(0, 1fr) auto',
+        gridTemplateRows: showBottomNavbar ? 'auto minmax(0, 1fr) auto' : 'auto minmax(0, 1fr)',
         overflow: 'hidden',
         bgcolor: 'background.default',
         color: 'text.primary',
@@ -248,7 +254,9 @@ export default function LearningLayout({
               </IconButton>
             </Box>
             <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', p: 2 }}>
-              <Typography color="text.secondary">{messages.settingsDescription}</Typography>
+              {typeof settingsContent === 'function'
+                ? settingsContent({ closeSettings: () => setSettingsOpen(false) })
+                : settingsContent ?? <Typography color="text.secondary">{messages.settingsDescription}</Typography>}
             </Box>
           </Box>
         </Drawer>
@@ -267,7 +275,7 @@ export default function LearningLayout({
         </Box>
       </Box>
 
-      <BottomNavbar
+      {showBottomNavbar && <BottomNavbar
         aria-label={aria.navigation.bottom}
         slots={{
           center: (
@@ -310,7 +318,7 @@ export default function LearningLayout({
           ),
         }}
         slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }}
-      />
+      />}
     </Box>
   );
 }

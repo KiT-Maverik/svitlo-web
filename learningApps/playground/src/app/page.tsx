@@ -20,6 +20,7 @@ export default function Home() {
             Інтерактивні запитання
           </Button>
           <Button href="/questions/api">API запитань</Button>
+          <Button variant="contained" color="secondary" href="/skillAnalytics">Аналітика навичок</Button>
         </Stack>
       </Stack>
     </Container>
