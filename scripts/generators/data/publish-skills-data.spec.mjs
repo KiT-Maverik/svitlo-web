@@ -69,11 +69,11 @@ test('strictly rejects missing translations, authored slugs and frontend descrip
       fs.writeFileSync(target, replacement);
       assert.throws(() => loadSkillGraph(copied, languageCodes()), pattern);
     }
-    fails(original.replace('    en: "[TEST en] Recognize red",\\n', ''), /missing \\[en\\]/);
-    fails(original.replace("  slug: 'testRecognizeRed',\\n", ''), /slug/);
+    fails(original.replace('    en: "[TEST en] Recognize red",\n', ''), /missing \[en\]/);
+    fails(original.replace("  slug: 'testRecognizeRed',\n", ''), /slug/);
     fails(original.replace('    frontend: {', '    fe: {'), /frontend|Unexpected/);
-    fails(original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\\n', ''),
-      /missing \\[uk\\]/);
+    fails(original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\n', ''),
+      /missing \[uk\]/);
   } finally {
     fs.rmSync(temp, { recursive: true, force: true });
   }
