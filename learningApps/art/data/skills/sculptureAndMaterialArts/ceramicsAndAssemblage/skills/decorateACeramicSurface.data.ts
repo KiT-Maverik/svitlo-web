@@ -50,7 +50,7 @@ export const decorateACeramicSurface_Skill_Data = buildSkillConfig({
       de: "Verziere die Oberfläche eines Tonobjekts mit passenden Farben oder Strukturen.",
       ja: "粘土作品の表面に合った色や質感を加えましょう。",
       ko: "점토 작품의 표면에 어울리는 색이나 질감을 더하세요.",
-      tr: "Kil bir nesnenin yüzeyine uygun renkler veya dokular ekleyin.",
+      tr: "Kilden yapılmış bir nesnenin yüzeyine uygun renkler veya dokular ekleyin.",
       vi: "Thêm màu sắc hoặc kết cấu phù hợp với bề mặt của đồ vật bằng đất sét.",
       ta: "களிமண் பொருளின் மேற்பரப்புக்கு ஏற்ற வண்ணங்கள் அல்லது மேற்பரப்புத் தன்மைகளைச் சேர்க்கவும்.",
       te: "మట్టి వస్తువు ఉపరితలానికి సరిపోయే రంగులు లేదా ఆకృతులను జోడించండి.",
