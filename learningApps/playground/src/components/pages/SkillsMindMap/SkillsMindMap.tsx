@@ -5,6 +5,7 @@ import type { PointerEvent as ReactPointerEvent } from 'react';
 import { Alert, Box, Button, Chip, CircularProgress, Stack, Typography } from '@mui/material';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
+import CenterFocusStrongRoundedIcon from '@mui/icons-material/CenterFocusStrongRounded';
 import ViewListRoundedIcon from '@mui/icons-material/ViewListRounded';
 import ZoomInRoundedIcon from '@mui/icons-material/ZoomInRounded';
 import ZoomOutRoundedIcon from '@mui/icons-material/ZoomOutRounded';
@@ -438,8 +439,8 @@ export function SkillsMindMap() {
                   onClick={() => setZoom(value => Math.min(2.5, value * 1.2))}><ZoomInRoundedIcon /></button>
                 <button type="button" aria-label="Зменшити масштаб"
                   onClick={() => setZoom(value => Math.max(0.01, value / 1.2))}><ZoomOutRoundedIcon /></button>
-                <button type="button" aria-label="Показати всю мапу" onClick={resetView}>
-                  <ZoomOutRoundedIcon /></button>
+                <button type="button" aria-label="Вмістити в екран" onClick={resetView}>
+                  <CenterFocusStrongRoundedIcon /></button>
               </div>
               <p className={styles.mapHint}>Перетягніть для переміщення · Колесо миші для масштабу</p>
             </section>
