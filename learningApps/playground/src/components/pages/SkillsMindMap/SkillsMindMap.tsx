@@ -366,7 +366,7 @@ export function SkillsMindMap({ domainSlugs }: { domainSlugs: readonly string[] 
             Значення володіння навичками — тестові, не результати оцінювання учня.
           </Typography>
         </Box>
-        <Stack direction="row" sx={{ flexWrap: "wrap" }} gap={1}>
+        <Stack direction="row" sx={{ flexWrap: 'wrap', gap: 1 }}>
           <Chip label={totalDomains + ' домени'} variant="outlined" />
           <Chip label={totalGroups + ' групи'} variant="outlined" />
           <Chip label={totalSkills + ' скіли'} color="primary" variant="outlined" />
@@ -381,7 +381,7 @@ export function SkillsMindMap({ domainSlugs }: { domainSlugs: readonly string[] 
               <option key={item.language} value={item.language}>{readableLanguage(item.language)} · {item.language}</option>)}
           </select>
         </label>
-        <Stack direction="row" sx={{ flexWrap: "wrap" }} gap={1} alignItems="center">
+        <Stack direction="row" sx={{ flexWrap: 'wrap', gap: 1, alignItems: 'center' }}>
           <Button size="small" variant={listView ? 'contained' : 'outlined'}
             startIcon={listView ? <AccountTreeRoundedIcon /> : <ViewListRoundedIcon />}
             onClick={() => setListView(value => !value)} disabled={status !== 'ready'}>
