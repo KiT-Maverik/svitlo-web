@@ -11,12 +11,12 @@ const allNames = () =>
 
 const frontendCopy = () =>
   Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) =>
-    [language, 'Frontend description in ' + language])) as Skill_Config['description']['fe'];
+    [language, 'Frontend description in ' + language])) as Skill_Config['description']['frontend'];
 
 const skill = (): Skill_Config => ({
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: allNames(),
-  description: { methodological: 'Mathematical concept and boundaries.', fe: frontendCopy() },
+  description: { methodological: 'Mathematical concept and boundaries.', frontend: frontendCopy() },
 });
 
 describe('Utils / builders / config / buildSkillConfig', () => {
@@ -73,33 +73,33 @@ describe('Utils / builders / config / buildSkillConfig', () => {
     assert.throws(() => buildSkillConfig({ ...skill(), description: undefined } as unknown as Skill_Config), /Skill description is required/);
     assert.throws(
       () => buildSkillConfig({ ...skill(), description: { methodological: 'Valid text' } } as unknown as Skill_Config),
-      /Skill description.fe must contain all supported languages/,
+      /Skill description.frontend must contain all supported languages/,
     );
   });
 
-  it('accepts methodological description and complete mandatory fe dictionary', () => {
+  it('accepts methodological description and complete mandatory frontend dictionary', () => {
     const input = {
       ...skill(),
-      description: { methodological: 'Mathematical concept and boundaries.', fe: frontendCopy() },
+      description: { methodological: 'Mathematical concept and boundaries.', frontend: frontendCopy() },
     };
     assert.deepEqual(buildSkillConfig(input).description, input.description);
   });
 
   it('rejects missing, blank, malformed and extra methodological fields', () => {
-    for (const description of [null, [], 'text', {}, { fe: frontendCopy() },
+    for (const description of [null, [], 'text', {}, { frontend: frontendCopy() },
       { methodological: '' }, { methodological: '  ' }, { methodological: 17 },
       { methodological: 'Valid', extra: 'Unsupported' }]) {
       assert.throws(() => buildSkillConfig({ ...skill(), description } as unknown as Skill_Config), /Skill description/);
     }
   });
 
-  it('rejects fe when incomplete, malformed, blank or containing unexpected locales', () => {
-    const fe = frontendCopy();
+  it('rejects frontend when incomplete, malformed, blank or containing unexpected locales', () => {
+    const frontend = frontendCopy();
     for (const frontend of [null, [], 'text', {}, { en: 'Only English' },
-      { ...fe, uk: ' ' }, { ...fe, xx: 'Unsupported' }]) {
+      { ...frontend, uk: ' ' }, { ...frontend, xx: 'Unsupported' }]) {
       assert.throws(
-        () => buildSkillConfig({ ...skill(), description: { methodological: 'Valid', fe: frontend } } as unknown as Skill_Config),
-        /Skill description.fe/,
+        () => buildSkillConfig({ ...skill(), description: { methodological: 'Valid', frontend: frontend } } as unknown as Skill_Config),
+        /Skill description.frontend/,
       );
     }
   });
