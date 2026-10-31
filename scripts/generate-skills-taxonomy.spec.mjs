@@ -26,7 +26,7 @@ function entity(kind, slug, name, membership, withFe = kind === 'Skill') {
   return 'export const ' + slug + '_' + kind + '_Data = build' + kind + 'Config({' +
     'id: ' + JSON.stringify(ids[slug]) + ', name: ' + dictionary(name) +
     ', description: {methodological: ' + JSON.stringify('English explanation for ' + name) +
-    (withFe ? ', fe: ' + dictionary('Frontend ' + name) : '') + '}' +
+    (withFe ? ', frontend: ' + dictionary('Frontend ' + name) : '') + '}' +
     (membership ? ', ' + membership : '') + '});\n';
 }
 const groupedSkill = path.join(taxonomy, 'd/g/skills/s.data.ts');
@@ -99,7 +99,7 @@ test('invalid or incomplete Skill localization fails closed without changing gen
   try {
     const result = run('en');
     assert.notEqual(result.status, 0);
-    assert.match(result.stderr, /Missing required Skill description\.fe/);
+    assert.match(result.stderr, /Missing required Skill description\.frontend/);
     assert.equal(fs.readFileSync(output('en'), 'utf8'), beforeText);
   } finally {
     write(groupedSkill, entity('Skill', 's', 'Grouped Skill'));
@@ -108,7 +108,7 @@ test('invalid or incomplete Skill localization fails closed without changing gen
   try {
     const result = run('en');
     assert.notEqual(result.status, 0);
-    assert.match(result.stderr, /Missing required fe locale uk/);
+    assert.match(result.stderr, /Missing required frontend locale uk/);
   } finally {
     write(groupedSkill, entity('Skill', 's', 'Grouped Skill'));
   }
