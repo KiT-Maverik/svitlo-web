@@ -32,6 +32,7 @@ export const applyAGlaze_Skill_Data = buildSkillConfig({
     be: "Наносіць лесіровачны слой",
     ka: "ლასურის ფენის დატანა",
     kk: "Лессировка қабатын жағу",
+    qm: "Lazur qatını sürmek",
   },
   description: {
     methodological: "Layer translucent paint over a dry passage to change its optical appearance.",
@@ -64,6 +65,7 @@ export const applyAGlaze_Skill_Data = buildSkillConfig({
       be: "Нанясіце празрысты колер на высахлую фарбу, каб далікатна змяніць яе выгляд.",
       ka: "გამშრალ საღებავზე გამჭვირვალე ფერი დაიტანეთ, რათა მისი იერსახე ნაზად შეცვალოთ.",
       kk: "Кепкен бояудың үстіне мөлдір түс жағып, оның көрінісін сәл өзгертіңіз.",
+      qm: "Körünüşini yavaşça deñiştirmek içün qurı boya üstüne şeffaf boya qatını sürüñiz.",
     },
   },
 });
