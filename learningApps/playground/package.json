@@ -17,8 +17,8 @@
     "test:e2e:db": "npm run test:e2e:db --workspace @svitlo/indexdb",
     "test:components": "vitest run",
     "test:components:coverage": "vitest run --coverage",
-    "prebuild": "node --import @svitlo/ui-kit/sync-flags",
-    "predev": "node --import @svitlo/ui-kit/sync-flags"
+    "prebuild": "node --import @svitlo/ui-kit/sync-flags && node ../../scripts/publish-skills-data.mjs --package learningApps/playground --write",
+    "predev": "node --import @svitlo/ui-kit/sync-flags && node ../../scripts/publish-skills-data.mjs --package learningApps/playground --write"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
