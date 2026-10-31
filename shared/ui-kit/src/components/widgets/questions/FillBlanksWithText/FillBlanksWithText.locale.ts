@@ -7,4 +7,5 @@ const et = { blankInput: 'Täida lünk' } satisfies FillBlanksWithText_Locale;
 const be = { blankInput: 'Запоўніць пропуск' } satisfies FillBlanksWithText_Locale;
 const ka = { blankInput: 'შეავსე გამოტოვებული ადგილი' } satisfies FillBlanksWithText_Locale;
 const kk = { blankInput: 'Бос орынды толтыру' } satisfies FillBlanksWithText_Locale;
-export const locales = { uk, lt, lv, et, be, ka, kk } as const;
+const qm = { blankInput: 'Boş yerni toldur' } satisfies FillBlanksWithText_Locale;
+export const locales = { uk, lt, lv, et, be, ka, kk, qm } as const;
