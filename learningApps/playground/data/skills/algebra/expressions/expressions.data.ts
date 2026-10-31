@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { readNumericExpressions_Skill_Data } from './skills';
+import { parentheses_Skill_Data, readNumericExpressions_Skill_Data } from './skills';
 
 export const expressions_SkillGroup_Data = buildSkillGroupConfig({
   id: 'ffd2e448-8471-4b32-88ce-6fc921f7d76c',
@@ -35,6 +35,7 @@ export const expressions_SkillGroup_Data = buildSkillGroupConfig({
     uk: "Вирази",
   },
   skillIds: {
+    parentheses: parentheses_Skill_Data.id,
     readNumericExpressions: readNumericExpressions_Skill_Data.id,
   },
   description: {
