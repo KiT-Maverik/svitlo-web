@@ -60,34 +60,73 @@ describe('SkillsMindMap', () => {
       '/Data/Skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
-  it('shows frontend description, demo mastery and a working per-Skill Pump destination', async () => {
+  it('starts compact with visible mastery, expands the description and Pump action, then collapses again', async () => {
     render(<SkillsMindMap />);
     const leaf = await screen.findByTestId('skill-node-testRed');
     expect(leaf).toHaveTextContent('Червоний');
-    expect(leaf).toHaveTextContent('Розпізнавати червоний.');
+    expect(leaf).toHaveAttribute('data-expanded', 'false');
+    expect(leaf).not.toHaveTextContent('Розпізнавати червоний.');
+    expect(within(leaf).queryByRole('link', { name: /Прокачати навичку/ })).not.toBeInTheDocument();
     const meter = within(leaf).getByRole('progressbar', { name: /Демонстраційний рівень/ });
     const score = Number(meter.getAttribute('aria-valuenow'));
     expect(score).toBeGreaterThanOrEqual(0);
     expect(score).toBeLessThanOrEqual(100);
     expect(within(leaf).getByText(score + '%')).toBeInTheDocument();
+    expect(meter.parentElement).toHaveAttribute('data-compact', 'true');
+
+    const title = within(leaf).getByRole('button', { name: /Інформація про скіл/ });
+    expect(title).toHaveAttribute('aria-expanded', 'false');
+    fireEvent.click(title);
+    expect(leaf).toHaveAttribute('data-expanded', 'true');
+    expect(title).toHaveAttribute('aria-expanded', 'true');
+    expect(leaf).toHaveTextContent('Розпізнавати червоний.');
     expect(within(leaf).getByRole('link', { name: /Прокачати навичку/ }))
       .toHaveAttribute('href', '/skills/' + uuid(3) + '/learn?lang=uk');
-
-    fireEvent.click(within(leaf).getByRole('button', { name: /Інформація про скіл/ }));
     expect(screen.getByRole('region', { name: 'Інформація про вибраний вузол' }))
       .toHaveTextContent('Розпізнавати червоний.');
     expect(screen.getByTestId('skill-node-testWarmColors')).toHaveAttribute('aria-expanded', 'true');
+
+    fireEvent.click(title);
+    expect(leaf).toHaveAttribute('data-expanded', 'false');
+    expect(within(leaf).queryByRole('link', { name: /Прокачати навичку/ })).not.toBeInTheDocument();
+    expect(within(leaf).getByRole('progressbar')).toHaveAttribute('aria-valuenow', String(score));
   });
 
-  it('also exposes the mastery and learning CTA in the accessible list view', async () => {
+  it('preserves compact mastery and expanded CTA in the accessible list view', async () => {
     render(<SkillsMindMap />);
     await screen.findByTestId('skill-node-testRed');
     fireEvent.click(screen.getByRole('button', { name: 'Список' }));
     const list = screen.getByRole('region', { name: 'Навички за доменами' });
-    expect(within(list).getByText('Розпізнавати червоний.')).toBeInTheDocument();
     expect(within(list).getByRole('progressbar')).toHaveAttribute('aria-valuenow');
+    expect(within(list).queryByText('Розпізнавати червоний.')).not.toBeInTheDocument();
+    expect(within(list).queryByRole('link', { name: /Прокачати навичку/ })).not.toBeInTheDocument();
+
+    const leafControl = within(list).getByRole('button', { name: /Скіл: Червоний/ });
+    expect(leafControl).toHaveAttribute('aria-expanded', 'false');
+    fireEvent.click(leafControl);
+    expect(leafControl).toHaveAttribute('aria-expanded', 'true');
+    expect(within(list).getByText('Розпізнавати червоний.')).toBeInTheDocument();
     expect(within(list).getByRole('link', { name: /Прокачати навичку/ }))
       .toHaveAttribute('href', '/skills/' + uuid(3) + '/learn?lang=uk');
+
+    fireEvent.click(screen.getByRole('button', { name: 'Мапа' }));
+    expect(screen.getByTestId('skill-node-testRed')).toHaveAttribute('data-expanded', 'true');
+  });
+
+  it('keeps different Skill card sizes independent of the Group collapse state', async () => {
+    render(<SkillsMindMap />);
+    const leaf = await screen.findByTestId('skill-node-testRed');
+    const group = screen.getByTestId('skill-node-testWarmColors');
+    fireEvent.click(within(leaf).getByRole('button', { name: /Інформація про скіл/ }));
+    expect(leaf).toHaveAttribute('data-expanded', 'true');
+    fireEvent.click(group);
+    expect(screen.queryByTestId('skill-node-testRed')).not.toBeInTheDocument();
+    fireEvent.click(group);
+    expect(screen.getByTestId('skill-node-testRed')).toHaveAttribute('data-expanded', 'true');
+    fireEvent.click(screen.getByRole('button', { name: 'Згорнути все' }));
+    expect(screen.queryByTestId('skill-node-testRed')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Розгорнути все' }));
+    expect(screen.getByTestId('skill-node-testRed')).toHaveAttribute('data-expanded', 'true');
   });
 
   it('collapses all branches, expands them, and supports a keyboard-friendly list view', async () => {
