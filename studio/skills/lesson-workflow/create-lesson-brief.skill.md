@@ -112,7 +112,7 @@ Program dependence: None
 
 **Target Skills rules:** Write a simple Markdown list with **one direct source-file link per approved Skill**, formatted exactly as `- [completeFilename.data.ts](relative/path/to/completeFilename.data.ts)`. The **link label must equal the target file's full basename**, including `.data.ts`; do not add bold Skill headings, friendly names, `Canonical Skill source` labels, UUIDs, `index.ts` aggregators, `*.ids.ts` dictionaries, generated taxonomy Markdown, or placeholder `#` links. Link directly to the `*.data.ts` file defining that **Skill**, not a Group/Domain.
 
-The **canonical Target Skills destination is `<PackageRoot>/data/skills/`**, the existing static authoring-data tree at the textbook application root, independent of `src/`. For a Brief in `learningApps/math/Data/Lessons/1/understandingNumbers/`, an **illustrative existing** Skill location `learningApps/math/data/skills/arithmetic/addition/skills/addMeaning.data.ts` would be linked as:
+The **canonical Target Skills destination is `<PackageRoot>/data/skills/`**, the existing static authoring-data tree at the textbook application root, independent of `src/`. For a Brief in `learningApps/math/data/lessons/1/understandingNumbers/`, an **illustrative existing** Skill location `learningApps/math/data/skills/arithmetic/addition/skills/addMeaning.data.ts` would be linked as:
 
 ~~~md
 - [addMeaning.data.ts](../../../../data/skills/arithmetic/addition/skills/addMeaning.data.ts)
@@ -125,12 +125,12 @@ The intermediate folders `arithmetic/addition/skills/` are an **example only**; 
 The independent Methodologist Brief is stored at:
 
 ~~~text
-<PackageRoot>/Data/Lessons/<bucketNumber>/<lessonSlug>/methodologist-brief.md
+<PackageRoot>/data/lessons/<bucketNumber>/<lessonSlug>/methodologist-brief.md
 ~~~
 
-Example: `learningApps/math/Data/Lessons/1/understandingNumbers/methodologist-brief.md`.
+Example: `learningApps/math/data/lessons/1/understandingNumbers/methodologist-brief.md`.
 
-- Resolve the actual standalone textbook root; do not use the monorepo root or Playground by default. When creating the first Lesson, create `Data/`, `Data/Lessons/` and `1/` if absent. Preserve the exact capitalization `Data/Lessons`.
+- Resolve the actual standalone textbook root; do not use the monorepo root or Playground by default. When creating the first Lesson, create `data/`, `data/lessons/` and `1/` if absent. Preserve the exact capitalization `Data/Lessons`.
 - Choose a unique, semantic **English camelCase** `lessonSlug` across every bucket in the textbook. Do not derive paths from grades, Curriculum, Modules, Chapters, Domains or Groups.
 - Buckets are numbered `1`, `2`, ...; count **Lesson directories**, not files. Put each new Lesson into the **highest-numbered existing bucket** until it holds **100** Lesson directories. When full, create the next bucket and place new Lessons there. No separate counter or registry is required.
 - **Never automatically move, rename, rebalance, renumber or compact existing Lesson directories.** Deletions may leave gaps. Do not fill older buckets merely to remove those gaps. Buckets are technical groupings, not Lesson sequence numbers or runtime IDs.

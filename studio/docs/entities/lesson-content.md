@@ -9,7 +9,7 @@ This **Lesson Content specification is not** a fictional storyline, Program ques
 ## OWNERSHIP AND SOURCE
 
 - **Owner:** Educational Screenwriter. Begin only from the intended Lesson's **approved**, factual `methodologist-brief.md`; do not revise the Methodologist's outcomes, target Skills or subject boundaries silently.
-- **File:** `<PackageRoot>/Data/Lessons/<bucketNumber>/<lessonSlug>/content.md`. The surrounding Lesson directory already identifies the Lesson; avoid `lesson-content.md` as the authored output filename.
+- **File:** `<PackageRoot>/data/lessons/<bucketNumber>/<lessonSlug>/content.md`. The surrounding Lesson directory already identifies the Lesson; avoid `lesson-content.md` as the authored output filename.
 - **Status:** Draft until explicit editorial approval. Approval of `content.md` and approval of individual Scene specs are separate from Methodologist, assessment and implementation approvals.
 - **Hand-off:** Coding Agent implements code and resource assembly; Assessment Architect owns graded Question/Quiz validity, correct answers and mastery rules. Custom Scenes have individually reviewable Screenwriter specifications in `scenes/`, not a vague note to improvise.
 

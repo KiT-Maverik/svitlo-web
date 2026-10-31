@@ -13,7 +13,7 @@ A **Lesson** independently teaches **one or more approved Skills**. It must make
 
 ## EDITORIAL ARTIFACTS AND IMPLEMENTATION
 
-Lesson files live under `<PackageRoot>/Data/Lessons/<bucketNumber>/<englishCamelCaseSlug>/`. The Lesson folder is stable once created; buckets have at most 100 Lesson directories each, without automatic relocation or compaction.
+Lesson files live under `<PackageRoot>/data/lessons/<bucketNumber>/<englishCamelCaseSlug>/`. The Lesson folder is stable once created; buckets have at most 100 Lesson directories each, without automatic relocation or compaction.
 
 - `methodologist-brief.md`: approved *what/why/for whom*, prerequisite and Skill scope; an editorial-only source **not included in runtime configuration or client bundles**. Its `Target Skills` contains one direct relative Markdown link per Skill **to the canonical Skill `*.data.ts` path under `data/skills/`**, with the full source filename (including extension) as the link label. New Briefs **target `<PackageRoot>/data/skills/`** for Skill `*.data.ts` references. Validate every link to an existing source file. If that package has not migrated, report the gap as a blocker rather than writing broken links or pointing to `src/`.
 - `content.md`: Screenwriter-owned *how to teach*, ordered Section/block plan, learner-facing content and interaction specifications; a **separate editorial document**, not the runtime config.
