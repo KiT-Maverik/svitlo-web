@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readWrite100_Skill_Data = buildSkillConfig({
+  slug: 'readWrite100',
   id: 'c9ff45cf-3fe7-4f2c-9380-ce1a5c463cf2',
   name: {
     lt: "Skaičių iki 100 skaitymas ir rašymas",

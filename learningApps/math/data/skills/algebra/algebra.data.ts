@@ -7,6 +7,7 @@ import { patterns_SkillGroup_Data } from './patterns/patterns.data';
 import { unknowns_SkillGroup_Data } from './unknowns/unknowns.data';
 
 export const algebra_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'algebra',
   id: '5b1cb581-be28-4de4-a854-b32fbfea95d7',
   name: {
     en: "Algebra",
@@ -38,12 +39,12 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Algebra",
     uk: "Алгебра",
   },
-  groupIds: {
-    equalities: equalities_SkillGroup_Data.id,
-    expressions: expressions_SkillGroup_Data.id,
-    formalization: formalization_SkillGroup_Data.id,
-    patterns: patterns_SkillGroup_Data.id,
-    unknowns: unknowns_SkillGroup_Data.id,
+  groups: {
+    equalities: equalities_SkillGroup_Data,
+    expressions: expressions_SkillGroup_Data,
+    formalization: formalization_SkillGroup_Data,
+    patterns: patterns_SkillGroup_Data,
+    unknowns: unknowns_SkillGroup_Data,
   },
   description: {
     methodological: "Mathematical expressions, equalities, inequalities, variables and unknowns, patterns, generalizations, and symbolic descriptions of relationships. The scope is not constrained to a particular age, numerical range, or notation.",

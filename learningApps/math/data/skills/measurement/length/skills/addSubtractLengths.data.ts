@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const addSubtractLengths_Skill_Data = buildSkillConfig({
+  slug: 'addSubtractLengths',
   id: 'c3226a47-162d-4c7e-8d56-52814767de5f',
   name: {
     en: "Adding and subtracting lengths in compatible units",

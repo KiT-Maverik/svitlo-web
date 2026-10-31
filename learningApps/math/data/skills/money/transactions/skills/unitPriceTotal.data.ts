@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unitPriceTotal_Skill_Data = buildSkillConfig({
+  slug: 'unitPriceTotal',
   id: '8d0f36a9-7994-427f-8a3a-fae3082c8837',
   name: {
     en: "Calculating total cost from unit price and quantity",

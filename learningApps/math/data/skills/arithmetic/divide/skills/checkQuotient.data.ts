@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const checkQuotient_Skill_Data = buildSkillConfig({
+  slug: 'checkQuotient',
   id: '5daba1b4-4221-4349-a1a7-c12e209051b1',
   name: {
     lt: "Dalyba — rezultato tikrinimas",

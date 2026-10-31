@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { compareCategories_Skill_Data, interpretConclusion_Skill_Data, missingInformation_Skill_Data } from './skills';
 
 export const interpretation_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'interpretation',
   id: '6a6d3bce-2ed3-42d6-b155-6a50bd403936',
   name: {
     en: "Data interpretation",
@@ -34,10 +35,10 @@ export const interpretation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Interpretacja danych",
     uk: "Інтерпретація даних",
   },
-  skillIds: {
-    compareCategories: compareCategories_Skill_Data.id,
-    interpretConclusion: interpretConclusion_Skill_Data.id,
-    missingInformation: missingInformation_Skill_Data.id,
+  skills: {
+    compareCategories: compareCategories_Skill_Data,
+    interpretConclusion: interpretConclusion_Skill_Data,
+    missingInformation: missingInformation_Skill_Data,
   },
   description: { methodological: "Drawing conclusions from quantitative data, computing comparisons, and identifying missing information." },
 });

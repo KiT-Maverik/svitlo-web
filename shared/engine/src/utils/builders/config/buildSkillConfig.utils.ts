@@ -2,7 +2,7 @@ import { DEFAULT_SUPPORTED_LANGUAGES } from '../../../types/languages';
 import type { Collection } from '@svitlo/contracts/content';
 import type { Skill_Config, SkillDescription_Config } from '@svitlo/contracts/taxonomy';
 import type { DeepReadonly } from '@svitlo/contracts/content';
-import { validateSkillUuid } from './validateSkillReferences.utils';
+import { validateSkillUuid } from './validateSkillChildren.utils';
 
 const supportedLanguages = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language));
 
@@ -11,13 +11,16 @@ const supportedLanguages = new Set<string>(DEFAULT_SUPPORTED_LANGUAGES.map(({ la
  * This does not create any collection, entity or external relationship.
  */
 export function validateSkillConfig(
-  config: Pick<Skill_Config, 'id' | 'name'> & { description?: SkillDescription_Config },
+  config: Pick<Skill_Config, 'id' | 'slug' | 'name'> & { description?: SkillDescription_Config },
   requireFrontendDescription = false,
 ): void {
   if (!config) {
     throw new Error('Skill id must be a UUID');
   }
   validateSkillUuid(config.id, 'Skill id');
+  if (typeof config.slug !== 'string' || !/^[a-z][A-Za-z0-9]*$/.test(config.slug)) {
+    throw new Error('Skill slug must be lowerCamelCase');
+  }
 
   if (!config.name || typeof config.name !== 'object' || Array.isArray(config.name)) {
     throw new Error('Skill name must contain all supported languages');
@@ -75,7 +78,7 @@ export function validateSkillConfig(
 }
 
 /**
- * Adds the static taxonomy discriminator. IDs remain imported from *.ids.ts.
+ * Adds the static taxonomy discriminator to entity-owned UUID data.
  * Authoring config is not mutated; fileLocation is added separately by the registry.
  */
 export function buildSkillConfig<const T extends Skill_Config>(config: T): DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }> {

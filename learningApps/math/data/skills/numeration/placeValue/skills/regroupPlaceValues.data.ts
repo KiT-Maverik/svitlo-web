@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const regroupPlaceValues_Skill_Data = buildSkillConfig({
+  slug: 'regroupPlaceValues',
   id: 'a0f3d851-b215-4c14-938d-2275831b4148',
   name: {
     lt: "Vienetų pergrupavimas tarp skyrių",

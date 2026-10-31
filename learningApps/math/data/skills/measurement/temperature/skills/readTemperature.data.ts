@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readTemperature_Skill_Data = buildSkillConfig({
+  slug: 'readTemperature',
   id: '3987a9c5-a8df-44e1-86e4-373aeebd9d02',
   name: {
     en: "Reading nonnegative temperatures on a thermometer",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
+  slug: 'verifyWithSecondMethod',
   id: 'b99c90cc-815d-4944-851a-e33ecb43e5b0',
   name: {
     en: "Verifying a calculation using another method",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const addZero_Skill_Data = buildSkillConfig({
+  slug: 'addZero',
   id: '97f896aa-10ee-47a1-9348-25b222ca748d',
   name: {
     lt: "Sudėtis — nulis",

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { certainImpossible_Skill_Data, likelihoodLanguage_Skill_Data, listOutcomes_Skill_Data } from './skills';
 
 export const events_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'events',
   id: 'd41710f5-a1ce-4a10-ae8f-65b9ad51026c',
   name: {
     en: "Random events",
@@ -34,10 +35,10 @@ export const events_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zdarzenia losowe",
     uk: "Випадкові події",
   },
-  skillIds: {
-    certainImpossible: certainImpossible_Skill_Data.id,
-    likelihoodLanguage: likelihoodLanguage_Skill_Data.id,
-    listOutcomes: listOutcomes_Skill_Data.id,
+  skills: {
+    certainImpossible: certainImpossible_Skill_Data,
+    likelihoodLanguage: likelihoodLanguage_Skill_Data,
+    listOutcomes: listOutcomes_Skill_Data,
   },
   description: { methodological: "Events as subsets of outcomes of a random experiment, identifying possible and impossible occurrences, and comparing chances under specified conditions. Mathematical probability is not restricted to qualitative estimates." },
 });

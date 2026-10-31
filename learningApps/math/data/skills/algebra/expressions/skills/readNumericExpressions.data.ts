@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readNumericExpressions_Skill_Data = buildSkillConfig({
+  slug: 'readNumericExpressions',
   id: '2429be16-34f7-4857-8144-f2d550931872',
   name: {
     en: "Reading and writing numerical expressions",

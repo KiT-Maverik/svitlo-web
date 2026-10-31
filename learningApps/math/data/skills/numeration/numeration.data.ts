@@ -7,6 +7,7 @@ import { numberLine_SkillGroup_Data } from './numberLine/numberLine.data';
 import { estimation_SkillGroup_Data } from './estimation/estimation.data';
 
 export const numeration_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'numeration',
   id: '445d4a85-bebe-4569-bf45-2af8c15a051b',
   name: {
     en: "Natural numbers",
@@ -38,12 +39,12 @@ export const numeration_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Liczby naturalne",
     uk: "Натуральні числа",
   },
-  groupIds: {
-    notation: notation_SkillGroup_Data.id,
-    placeValue: placeValue_SkillGroup_Data.id,
-    comparison: comparison_SkillGroup_Data.id,
-    numberLine: numberLine_SkillGroup_Data.id,
-    estimation: estimation_SkillGroup_Data.id,
+  groups: {
+    notation: notation_SkillGroup_Data,
+    placeValue: placeValue_SkillGroup_Data,
+    comparison: comparison_SkillGroup_Data,
+    numberLine: numberLine_SkillGroup_Data,
+    estimation: estimation_SkillGroup_Data,
   },
   description: {
     methodological: "How natural numbers express quantity, how decimal positional notation works, and how numbers are compared, decomposed, and estimated.",

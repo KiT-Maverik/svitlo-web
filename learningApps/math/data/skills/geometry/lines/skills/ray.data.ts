@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const ray_Skill_Data = buildSkillConfig({
+  slug: 'ray',
   id: '1f1740cd-914a-4945-b564-5124a982c735',
   name: {
     en: "Distinguishing rays, segments and lines",

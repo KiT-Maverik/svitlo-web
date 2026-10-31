@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const roundToHundred_Skill_Data = buildSkillConfig({
+  slug: 'roundToHundred',
   id: '03fe2ab7-993c-4568-a426-4e47eb52aeb1',
   name: {
     lt: "Apvalinimas iki artimiausio šimto",

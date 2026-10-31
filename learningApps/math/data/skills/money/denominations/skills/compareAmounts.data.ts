@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareAmounts_Skill_Data = buildSkillConfig({
+  slug: 'compareAmounts',
   id: '6ac377cf-4d67-4ef4-bdc7-4bb8a0895e81',
   name: {
     en: "Comparing money amounts",

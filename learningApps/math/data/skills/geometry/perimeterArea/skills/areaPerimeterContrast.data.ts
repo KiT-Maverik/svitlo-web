@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const areaPerimeterContrast_Skill_Data = buildSkillConfig({
+  slug: 'areaPerimeterContrast',
   id: '1c1b7595-df14-4cb6-aa67-0831d6c4425d',
   name: {
     en: "Constructing shapes with contrasting perimeters and areas",

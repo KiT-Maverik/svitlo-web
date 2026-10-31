@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unknownSideFromPerimeter_Skill_Data = buildSkillConfig({
+  slug: 'unknownSideFromPerimeter',
   id: '41da7699-fdbd-4872-bb37-615a456a92c3',
   name: {
     en: "Finding an unknown rectangle side from its perimeter",

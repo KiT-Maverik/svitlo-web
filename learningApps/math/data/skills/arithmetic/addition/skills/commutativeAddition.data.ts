@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const commutativeAddition_Skill_Data = buildSkillConfig({
+  slug: 'commutativeAddition',
   id: 'cdd703ab-2b89-4f9a-8bd5-475c5713d758',
   name: {
     lt: "Sudėtis — perstatomumo dėsnis",

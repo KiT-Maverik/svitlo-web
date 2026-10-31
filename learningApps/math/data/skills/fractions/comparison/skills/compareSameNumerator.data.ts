@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareSameNumerator_Skill_Data = buildSkillConfig({
+  slug: 'compareSameNumerator',
   id: '17d8eb21-df92-4074-a1d2-5a3bded8fea8',
   name: {
     en: "Comparing fractions with the same numerator",

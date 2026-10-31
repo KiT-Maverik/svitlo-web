@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readHalfQuarter_Skill_Data = buildSkillConfig({
+  slug: 'readHalfQuarter',
   id: '1b6415de-16f7-4e65-9f82-871d0bdb8b2d',
   name: {
     en: "Reading half-hours and quarter-hours",

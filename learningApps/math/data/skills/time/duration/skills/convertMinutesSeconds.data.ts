@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const convertMinutesSeconds_Skill_Data = buildSkillConfig({
+  slug: 'convertMinutesSeconds',
   id: 'b6540c9a-5a76-405d-ba58-9dc213908443',
   name: {
     en: "Converting minutes and seconds",

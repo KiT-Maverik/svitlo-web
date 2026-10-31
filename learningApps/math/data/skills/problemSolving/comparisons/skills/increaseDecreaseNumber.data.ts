@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const increaseDecreaseNumber_Skill_Data = buildSkillConfig({
+  slug: 'increaseDecreaseNumber',
   id: '4b3a53a2-c2dc-49b6-beb8-c81a0544978b',
   name: {
     lt: "Didinimas ar mažinimas nurodytu skaičiumi",

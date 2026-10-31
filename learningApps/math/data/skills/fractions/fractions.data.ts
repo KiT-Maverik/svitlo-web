@@ -6,6 +6,7 @@ import { arithmetic_SkillGroup_Data } from './arithmetic/arithmetic.data';
 import { portions_SkillGroup_Data } from './portions/portions.data';
 
 export const fractions_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'fractions',
   id: 'f41a81b9-b6ba-46db-94a6-b687a239e6b9',
   name: {
     en: "Fractions",
@@ -37,11 +38,11 @@ export const fractions_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Ułamki",
     uk: "Дроби",
   },
-  groupIds: {
-    representation: representation_SkillGroup_Data.id,
-    comparison: comparison_SkillGroup_Data.id,
-    arithmetic: arithmetic_SkillGroup_Data.id,
-    portions: portions_SkillGroup_Data.id,
+  groups: {
+    representation: representation_SkillGroup_Data,
+    comparison: comparison_SkillGroup_Data,
+    arithmetic: arithmetic_SkillGroup_Data,
+    portions: portions_SkillGroup_Data,
   },
   description: {
     methodological: "Fractions express part-to-whole relationships and positions on a number line. Their properties involve equal parts, numerator and denominator, equivalence, comparisons, and arithmetic operations; specific models and computational ranges depend on the learning context.",

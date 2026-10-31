@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const checkProduct_Skill_Data = buildSkillConfig({
+  slug: 'checkProduct',
   id: '3305fde5-63ba-4f32-92a8-42032b805e99',
   name: {
     lt: "Daugyba — rezultato tikrinimas",

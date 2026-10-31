@@ -222,15 +222,18 @@ function existing(e) {
   const f = fileOf(e), code = readCode(f,e.kind);
   const id = literal(property(code.config,'id').initializer,'UUID');
   if (!uuidPattern.test(id)) throw Error('Invalid UUID: ' + rel(f));
+  const slugProp = optionalProperty(code.config,'slug');
+  const slug = slugProp ? literal(slugProp.initializer,'slug') : undefined;
+  if (slug && slug !== e.slug) throw Error('Slug differs from canonical source filename: ' + rel(f));
   const name = dict(unwrap(property(code.config,'name').initializer),'name');
   const desc = unwrap(property(code.config,'description').initializer);
   const methodological = literal(property(desc,'methodological').initializer,'methodological');
   const frontendProp = optionalProperty(desc,'frontend');
   const frontend = frontendProp ? dict(unwrap(frontendProp.initializer),'frontend') : undefined;
   for (const p of code.config.properties)
-    if (!ts.isPropertyAssignment(p) || !['id','name','description','groupIds','skillIds'].includes(p.name.text))
+    if (!ts.isPropertyAssignment(p) || !['slug','id','name','description','groups','skills'].includes(p.name.text))
       throw Error('Unsupported config property; refusing rewrite: ' + rel(f));
-  return {id,name,frontend,methodological};
+  return {slug,id,name,frontend,methodological};
 }
 function scanRegistry() {
   const registry = new Set(), seenSlugs = new Map();
@@ -248,6 +251,9 @@ function scanRegistry() {
       if (!slugPattern.test(slug)) throw Error('Bad source slug: ' + rel(f));
       const info = readCode(f,kind);
       const id = literal(property(info.config,'id').initializer,'UUID');
+      const authoredSlug = optionalProperty(info.config, 'slug');
+      if (authoredSlug && literal(authoredSlug.initializer, 'slug') !== slug)
+        throw Error('Slug differs from canonical source filename: ' + rel(f));
       if (!uuidPattern.test(id) || registry.has(id.toLowerCase())) throw Error('Invalid/duplicate UUID: ' + rel(f));
       if (seenSlugs.has(slug.toLowerCase())) throw Error('Duplicate existing source slug: ' + slug);
       registry.add(id.toLowerCase());
@@ -265,43 +271,60 @@ function allocateId(used) {
   throw Error('Unable to allocate unique UUID');
 }
 function listDiskChildren(e) {
-  const folder=path.dirname(fileOf(e));
+  const folder = path.dirname(fileOf(e));
   if (!fs.existsSync(folder)) return [];
-  if (e.kind === 'SkillGroup' || fs.existsSync(path.join(folder,'skills'))) {
-    const f=path.join(folder,'skills');
-    return fs.existsSync(f) ? fs.readdirSync(f).filter(n=>n.endsWith('.data.ts')).map(n=>n.slice(0,-8)) : [];
+  const results = [];
+  const skillFolder = path.join(folder, 'skills');
+  if (fs.existsSync(skillFolder)) {
+    for (const name of fs.readdirSync(skillFolder).filter(n => n.endsWith('.data.ts')))
+      results.push({ slug: name.slice(0, -8), kind: 'Skill' });
   }
-  return fs.readdirSync(folder,{withFileTypes:true})
-    .filter(x=>x.isDirectory() && x.name!=='skills').map(x=>x.name);
+  if (e.kind === 'SkillDomain') {
+    for (const entry of fs.readdirSync(folder, { withFileTypes: true })) {
+      if (entry.isDirectory() && entry.name !== 'skills')
+        results.push({ slug: entry.name, kind: 'SkillGroup' });
+    }
+  }
+  return results;
 }
 function children(e,local) {
-  if (e.kind==='Skill') return [];
-  const authored=e.children || [];
-  const groupMode=e.kind==='SkillDomain' &&
-    (authored.some(x=>x.kind==='SkillGroup') ||
-      (!authored.some(x=>x.kind==='Skill') && !fs.existsSync(path.join(path.dirname(fileOf(e)),'skills'))));
-  const kind=e.kind==='SkillGroup'?'Skill':groupMode?'SkillGroup':'Skill';
-  if (authored.some(x=>x.kind!==kind)) throw Error('Mixed Domain child modes: ' + e.key);
-  const slugs=[...new Set([...listDiskChildren(e),...authored.map(x=>x.slug)])].sort();
-  if (!slugs.length) throw Error('Empty taxonomy parent: ' + e.key);
-  return slugs.map(slug=>{
-    const f=kind==='SkillGroup'?path.join(path.dirname(fileOf(e)),slug,slug+'.data.ts'):
-      path.join(path.dirname(fileOf(e)),'skills',slug+'.data.ts');
+  if (e.kind === 'Skill') return [];
+  const authored = e.children || [];
+  if (e.kind === 'SkillGroup' && authored.some(x => x.kind !== 'Skill'))
+    throw Error('SkillGroup can contain only Skills: ' + e.key);
+  const candidates = new Map();
+  for (const child of [...listDiskChildren(e), ...authored]) {
+    const key = child.kind + ':' + child.slug;
+    candidates.set(key, { slug: child.slug, kind: child.kind });
+  }
+  if (!candidates.size) throw Error('Empty taxonomy parent: ' + e.key);
+  return [...candidates.values()].sort((a,b) =>
+    a.kind.localeCompare(b.kind) || a.slug.localeCompare(b.slug)).map(child => {
+    const f = child.kind === 'SkillGroup' ?
+      path.join(path.dirname(fileOf(e)), child.slug, child.slug + '.data.ts') :
+      path.join(path.dirname(fileOf(e)), 'skills', child.slug + '.data.ts');
     if (!local.has(f) && !fs.existsSync(f)) throw Error('Missing approved child: ' + rel(f));
-    return {slug,kind,file:f};
+    return { ...child, file: f };
   });
 }
 function render(e,value,kids) {
   const imports=["import { build"+e.kind+"Config } from '@svitlo/engine/taxonomy';"];
-  const lines=['  id: '+JSON.stringify(value.id)+',','  name: '+dictionary(value.name)+','];
-  if (kids.length) {
-    imports.push(''); // Separate engine builder from child Data imports.
-    if (kids[0].kind==='SkillGroup') for (const x of kids)
-      imports.push("import { "+x.slug+"_SkillGroup_Data } from './"+x.slug+"/"+x.slug+".data';");
-    else imports.push("import { "+kids.map(x=>x.slug+"_Skill_Data").join(', ')+" } from './skills';");
-    if (e.kind==='SkillDomain' && kids[0].kind==='Skill') lines.push('  groupIds: {},');
-    lines.push('  '+(kids[0].kind==='SkillGroup'?'groupIds':'skillIds')+': {');
-    for (const x of kids) lines.push('    '+x.slug+': '+x.slug+'_'+x.kind+'_Data.id,');
+  const lines=['  slug: '+JSON.stringify(e.slug)+',','  id: '+JSON.stringify(value.id)+',','  name: '+dictionary(value.name)+','];
+  const groups = kids.filter(x => x.kind === 'SkillGroup');
+  const skills = kids.filter(x => x.kind === 'Skill');
+  if (kids.length) imports.push(''); // Separate builder from entity imports.
+  for (const x of groups)
+    imports.push("import { " + x.slug + "_SkillGroup_Data } from './" + x.slug + "/" + x.slug + ".data';");
+  if (skills.length)
+    imports.push("import { " + skills.map(x => x.slug + "_Skill_Data").join(', ') + " } from './skills';");
+  if (e.kind === 'SkillDomain') {
+    lines.push('  groups: {');
+    for (const x of groups) lines.push('    ' + x.slug + ': ' + x.slug + '_SkillGroup_Data,');
+    lines.push('  },');
+  }
+  if (skills.length) {
+    lines.push('  skills: {');
+    for (const x of skills) lines.push('    ' + x.slug + ': ' + x.slug + '_Skill_Data,');
     lines.push('  },');
   }
   lines.push('  description: {');
@@ -312,16 +335,25 @@ function render(e,value,kids) {
     'Config({\n'+lines.join('\n')+'\n});\n';
 }
 function stableMembership(e,kids) {
-  if (e.kind==='Skill') return true;
-  const old=readCode(fileOf(e),e.kind).config;
-  const key=kids[0].kind==='SkillGroup'?'groupIds':'skillIds';
-  const field=optionalProperty(old,key);
-  if (!field) return false;
-  const obj=unwrap(field.initializer);
-  if (!ts.isObjectLiteralExpression(obj)) return false;
-  const current=obj.properties.map(p=>p.name?.text).sort();
-  const wanted=kids.map(x=>x.slug).sort();
-  return JSON.stringify(current)===JSON.stringify(wanted);
+  if (e.kind === 'Skill') return true;
+  const old = readCode(fileOf(e), e.kind).config;
+  if (optionalProperty(old, 'groupIds') || optionalProperty(old, 'skillIds')) return false;
+  for (const [field,kind] of [['groups','SkillGroup'], ['skills','Skill']]) {
+    if (field === 'groups' && e.kind === 'SkillGroup') continue;
+    const members = kids.filter(x => x.kind === kind);
+    const prop = optionalProperty(old,field);
+    if (!prop && field === 'groups') return false; // Domain groups is required.
+    if (!prop) { if (members.length) return false; continue; }
+    const obj = unwrap(prop.initializer);
+    if (!ts.isObjectLiteralExpression(obj) || obj.properties.length !== members.length) return false;
+    for (const member of members) {
+      const entry = obj.properties.find(p =>
+        ts.isPropertyAssignment(p) && p.name?.text === member.slug);
+      if (!entry || !ts.isIdentifier(entry.initializer) ||
+        entry.initializer.text !== member.slug + '_' + kind + '_Data') return false;
+    }
+  }
+  return true;
 }
 function sameDictionary(a,b) {
   return !!a && !!b && Object.keys(a).length===Object.keys(b).length &&
@@ -333,6 +365,9 @@ function patchExisting(e,reviewed,methodological) {
   const currentName=unwrap(property(info.config,'name').initializer);
   if (reviewed.name && !sameDictionary(dict(currentName,'name'),reviewed.name))
     add(currentName,dictionary(reviewed.name));
+  if (!optionalProperty(info.config,'slug'))
+    changes.push({start:info.config.getStart(info.ast)+1,end:info.config.getStart(info.ast)+1,
+      text:'\n  slug: '+JSON.stringify(e.slug)+','});
   const desc=unwrap(property(info.config,'description').initializer);
   const method=property(desc,'methodological').initializer;
   if (literal(method,'methodological')!==methodological) add(method,JSON.stringify(methodological));
@@ -416,11 +451,11 @@ function domainPlan(d,entities,registry,codes) {
     const code=found && e.action==='update' && stableMembership(e,kids) ?
       patchExisting(e,{name,frontend},e.methodological) :
       render(e,{id,name,frontend,methodological:e.methodological},kids);
-    if (found && e.action==='create') {
-      if (kids.length && !stableMembership(e,kids)) throw Error('Create cannot change existing parent membership: '+e.key);
-      if (prior.methodological!==e.methodological)
-        throw Error('Conflicting idempotent create: '+e.key);
-    } else if (!found || fs.readFileSync(file,'utf8')!==code) local.set(file,code);
+    if (found && e.action==='create' && prior.methodological!==e.methodological)
+      throw Error('Conflicting idempotent create: '+e.key);
+    // Safe idempotent create also upgrades previously generated ID-only/slugless code:
+    // keep existing UUID and translations, but emit canonical full-entity children.
+    if (!found || fs.readFileSync(file,'utf8')!==code) local.set(file,code);
     if (kids.length && kids[0].kind==='Skill') {
       const f=path.join(path.dirname(file),'skills/index.ts');
       const body=indexContent(kids.map(x=>x.slug));

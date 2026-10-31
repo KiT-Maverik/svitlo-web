@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const oneToOne_Skill_Data = buildSkillConfig({
+  slug: 'oneToOne',
   id: '8d4c247d-8d53-4703-9c83-9072c211a23c',
   name: {
     en: "One-to-one correspondence when counting",

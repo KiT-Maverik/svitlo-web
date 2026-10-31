@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const triangleRectangleSquare_Skill_Data = buildSkillConfig({
+  slug: 'triangleRectangleSquare',
   id: 'c4186c89-f443-4eb0-8226-e1774c2e76d7',
   name: {
     en: "Properties of triangles, rectangles and squares",

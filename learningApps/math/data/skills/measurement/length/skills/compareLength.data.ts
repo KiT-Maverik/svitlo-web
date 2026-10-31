@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareLength_Skill_Data = buildSkillConfig({
+  slug: 'compareLength',
   id: '49a806ae-35f5-4e85-afad-94418ac02e10',
   name: {
     en: "Comparing lengths directly and indirectly",

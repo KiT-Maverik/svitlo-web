@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const makeTen_Skill_Data = buildSkillConfig({
+  slug: 'makeTen',
   id: '2c9550e7-7e7a-4353-8e29-b12fad0b93af',
   name: {
     lt: "Dešimties vienetų grupavimas ir skaidymas",

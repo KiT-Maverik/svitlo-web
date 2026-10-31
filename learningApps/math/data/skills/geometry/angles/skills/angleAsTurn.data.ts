@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const angleAsTurn_Skill_Data = buildSkillConfig({
+  slug: 'angleAsTurn',
   id: '72f07de3-30ee-4b55-a38c-3d0a12f5de9b',
   name: {
     en: "Comparing angles as turns",

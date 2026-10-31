@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const constructInverseProblem_Skill_Data = buildSkillConfig({
+  slug: 'constructInverseProblem',
   id: '75eb4981-4ba2-4e7f-ab31-e1acdcdac4a1',
   name: {
     lt: "Atvirkštinių uždavinių sudarymas",

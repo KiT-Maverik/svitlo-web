@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const backward20_Skill_Data = buildSkillConfig({
+  slug: 'backward20',
   id: '6942872f-bd64-47a6-ac8d-3531f3d56668',
   name: {
     en: "Counting backward within 20",

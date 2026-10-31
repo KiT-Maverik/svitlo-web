@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const inverseOperations_Skill_Data = buildSkillConfig({
+  slug: 'inverseOperations',
   id: '99807d43-bd91-498f-86d6-553f1cd3b51b',
   name: {
     lt: "Sudėtis ir atimtis — atvirkštiniai veiksmai",

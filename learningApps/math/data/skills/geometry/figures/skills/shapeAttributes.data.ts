@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const shapeAttributes_Skill_Data = buildSkillConfig({
+  slug: 'shapeAttributes',
   id: '91ac826f-9b38-4dee-8e19-bd7883514afe',
   name: {
     en: "Classifying figures by sides and vertices",

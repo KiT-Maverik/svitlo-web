@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareMass_Skill_Data = buildSkillConfig({
+  slug: 'compareMass',
   id: 'c2be8e28-ceb6-45c8-8c45-e8c39181c044',
   name: {
     en: "Comparing masses using a balance",

@@ -1,38 +1,51 @@
 import type { SkillGroup_Config } from '../../../taxonomy';
-import { buildSkillGroupConfig } from '../../../taxonomy';
-import { buildSkillDomainConfig } from '../../../taxonomy';
+import { buildSkillConfig, buildSkillGroupConfig, buildSkillDomainConfig } from '../../../taxonomy';
 
 declare const names: SkillGroup_Config['name'];
+const child = buildSkillConfig({
+  slug: 'testEntity', id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd', name: names,
+  description: { methodological: 'A defined Skill.', frontend: names },
+});
 const group = buildSkillGroupConfig({
-  id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
+  slug: 'testEntity', id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: names,
-  skillIds: { basic: '9de735b7-4bcd-4b58-8832-d2d5d15846cd' } as const,
+  skills: { basic: child },
 });
 const groupId: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' = group.id;
 void groupId;
 const groupCollection: 'skillGroup' = group.collection;
 void groupCollection;
+const childCollection: 'skill' = group.skills.basic.collection;
+void childCollection;
 const domain = buildSkillDomainConfig({
-  id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd',
+  slug: 'testEntity', id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd',
   name: names,
-  groupIds: { group: group.id },
+  groups: { group },
+  skills: { direct: child },
 });
-const domainId: '9de735b7-4bcd-4b58-8832-d2d5d15846cd' = domain.id;
-void domainId;
 const domainCollection: 'skillDomain' = domain.collection;
 void domainCollection;
+const nestedSkill: 'skill' = domain.groups.group.skills.basic.collection;
+void nestedSkill;
 // @ts-expect-error Missing localized name.
 buildSkillGroupConfig({
-  id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
-  skillIds: { basic: '9de735b7-4bcd-4b58-8832-d2d5d15846cd' },
+  slug: 'testEntity', id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
+  skills: { basic: child },
 });
-// @ts-expect-error Missing group references.
-buildSkillDomainConfig({ id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd', name: names });
+// @ts-expect-error Missing Groups collection.
+buildSkillDomainConfig({ slug: 'testDomain', id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd', name: names });
 buildSkillGroupConfig({
-  id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
+  slug: 'testEntity', id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: names,
-  // @ts-expect-error Reference lists must be keyed objects.
-  skillIds: ['9de735b7-4bcd-4b58-8832-d2d5d15846cd'],
+  skills: {
+    // @ts-expect-error A UUID string is not a built Skill entity.
+    basic: '9de735b7-4bcd-4b58-8832-d2d5d15846cd',
+  },
 });
-// @ts-expect-error Semantic slugs are not UUID values.
-buildSkillDomainConfig({ id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd', name: names, groupIds: { bad: 'math.counting' } });
+buildSkillDomainConfig({
+  slug: 'testEntity', id: '9de735b7-4bcd-4b58-8832-d2d5d15846cd', name: names,
+  groups: {
+    // @ts-expect-error A UUID string is not a built Group entity.
+    bad: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
+  },
+});

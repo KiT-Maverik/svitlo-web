@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const numeratorMeaning_Skill_Data = buildSkillConfig({
+  slug: 'numeratorMeaning',
   id: 'a0eac2ec-b5d3-4042-8ebc-f8fb28089999',
   name: {
     en: "Explaining the numerator of a fraction",

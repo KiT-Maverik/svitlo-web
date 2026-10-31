@@ -24,7 +24,7 @@ const write = (file, value) => { fs.mkdirSync(path.dirname(file), { recursive: t
 const dictionary = prefix => '{' + locales.map(locale => JSON.stringify(locale) + ': ' + JSON.stringify(prefix + ' ' + locale)).join(', ') + '}';
 function entity(kind, slug, name, membership, withFrontend = kind === 'Skill') {
   return 'export const ' + slug + '_' + kind + '_Data = build' + kind + 'Config({' +
-    'id: ' + JSON.stringify(ids[slug]) + ', name: ' + dictionary(name) +
+    'slug: ' + JSON.stringify(slug) + ', id: ' + JSON.stringify(ids[slug]) + ', name: ' + dictionary(name) +
     ', description: {methodological: ' + JSON.stringify('English explanation for ' + name) +
     (withFrontend ? ', frontend: ' + dictionary('Frontend ' + name) : '') + '}' +
     (membership ? ', ' + membership : '') + '});\n';
@@ -42,17 +42,17 @@ before(() => {
     "export { direct_SkillDomain_Data } from './direct/direct.data';\n");
   write(path.join(taxonomy, 'd/d.data.ts'),
     "import { g_SkillGroup_Data } from './g/g.data';\n" +
-    entity('SkillDomain', 'd', 'Grouped Domain', 'groupIds: {g: g_SkillGroup_Data.id}'));
+    entity('SkillDomain', 'd', 'Grouped Domain', 'groups: {g: g_SkillGroup_Data}'));
   write(path.join(taxonomy, 'd/g/g.data.ts'),
     "import { s_Skill_Data } from './skills';\n" +
-    entity('SkillGroup', 'g', 'Group', 'skillIds: {s: s_Skill_Data.id}'));
+    entity('SkillGroup', 'g', 'Group', 'skills: {s: s_Skill_Data}'));
   write(path.join(taxonomy, 'd/g/skills/index.ts'),
     "export { s_Skill_Data } from './s.data';\n");
   write(groupedSkill, entity('Skill', 's', 'Grouped Skill'));
   write(path.join(taxonomy, 'direct/direct.data.ts'),
     "import { t_Skill_Data } from './skills';\n" +
     entity('SkillDomain', 'direct', 'Direct Domain',
-      'groupIds: {}, skillIds: {t: t_Skill_Data.id}', true));
+      'groups: {}, skills: {t: t_Skill_Data}', true));
   write(path.join(taxonomy, 'direct/skills/index.ts'),
     "export { t_Skill_Data } from './t.data';\n");
   write(directSkill, entity('Skill', 't', 'Direct Skill'));

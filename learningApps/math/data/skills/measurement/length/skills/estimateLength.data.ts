@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const estimateLength_Skill_Data = buildSkillConfig({
+  slug: 'estimateLength',
   id: 'acf47ae5-cf9b-42b3-9f7f-4c2a92e73f1f',
   name: {
     en: "Estimating length and checking by measurement",

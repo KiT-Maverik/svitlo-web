@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const equalGroups_Skill_Data = buildSkillConfig({
+  slug: 'equalGroups',
   id: 'a3a6ab42-2285-4d6f-a65e-f2a4d8140a88',
   name: {
     lt: "Daugyba — lygios grupės",

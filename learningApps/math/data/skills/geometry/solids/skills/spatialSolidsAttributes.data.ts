@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const spatialSolidsAttributes_Skill_Data = buildSkillConfig({
+  slug: 'spatialSolidsAttributes',
   id: '3eec373e-4fff-46e8-a601-fc91759934f0',
   name: {
     en: "Faces, edges and vertices of cubes and cuboids",

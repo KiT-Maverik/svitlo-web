@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const listOutcomes_Skill_Data = buildSkillConfig({
+  slug: 'listOutcomes',
   id: '97f45a5a-d5bb-4618-89e5-11be5fb4f02c',
   name: {
     en: "Listing possible outcomes of a simple random experiment",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const nonUnitModel_Skill_Data = buildSkillConfig({
+  slug: 'nonUnitModel',
   id: 'ee8b4be0-4de7-4f66-9a05-7eca8f524caa',
   name: {
     en: "Modeling fractions with multiple equal parts",

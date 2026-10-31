@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const checkWithInverse_Skill_Data = buildSkillConfig({
+  slug: 'checkWithInverse',
   id: 'e336b8c9-07bf-44fa-beda-80663c3a87a4',
   name: {
     lt: "Sudėtis ir atimtis — tikrinimas atvirkštiniais veiksmais",

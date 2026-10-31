@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readSimpleTable_Skill_Data = buildSkillConfig({
+  slug: 'readSimpleTable',
   id: '68637838-f4bd-4a06-a40f-a86a53a27d19',
   name: {
     en: "Reading a simple data table",

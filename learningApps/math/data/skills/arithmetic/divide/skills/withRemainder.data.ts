@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const withRemainder_Skill_Data = buildSkillConfig({
+  slug: 'withRemainder',
   id: 'da1f2939-6c7e-4257-a9a2-36e5c0201c11',
   name: {
     lt: "Dalyba — su liekana",

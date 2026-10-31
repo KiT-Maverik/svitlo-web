@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareUnit_Skill_Data = buildSkillConfig({
+  slug: 'compareUnit',
   id: '733feb81-4849-4e85-8cfa-fc85f32d2679',
   name: {
     en: "Comparing unit fractions of the same whole",

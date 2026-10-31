@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { correspondenceCombinations_Skill_Data, equalGroups_Skill_Data } from './skills';
 
 export const groups_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'groups',
   id: 'fae06e19-607b-485c-88d4-cfe38e26e343',
   name: {
     en: "Grouping problems",
@@ -34,9 +35,9 @@ export const groups_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zadania o grupach",
     uk: "Задачі на групування",
   },
-  skillIds: {
-    correspondenceCombinations: correspondenceCombinations_Skill_Data.id,
-    equalGroups: equalGroups_Skill_Data.id,
+  skills: {
+    correspondenceCombinations: correspondenceCombinations_Skill_Data,
+    equalGroups: equalGroups_Skill_Data,
   },
   description: { methodological: "Situations involving equal groups and independent selections from two sets, distinguishing multiplication from counting combinations." },
 });

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { formulateInvestigationQuestion_Skill_Data, collectCounts_Skill_Data, tallyMarks_Skill_Data, fillSimpleTable_Skill_Data } from './skills';
 
 export const collection_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'collection',
   id: 'fbff6de3-3855-4c1f-9ec6-025693e12adf',
   name: {
     en: "Data collection",
@@ -34,11 +35,11 @@ export const collection_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zbieranie danych",
     uk: "Збирання даних",
   },
-  skillIds: {
-    formulateInvestigationQuestion: formulateInvestigationQuestion_Skill_Data.id,
-    collectCounts: collectCounts_Skill_Data.id,
-    tallyMarks: tallyMarks_Skill_Data.id,
-    fillSimpleTable: fillSimpleTable_Skill_Data.id,
+  skills: {
+    formulateInvestigationQuestion: formulateInvestigationQuestion_Skill_Data,
+    collectCounts: collectCounts_Skill_Data,
+    tallyMarks: tallyMarks_Skill_Data,
+    fillSimpleTable: fillSimpleTable_Skill_Data,
   },
   description: { methodological: "Formulating an investigation question, selecting classification attributes, counting occurrences, and recording observations." },
 });

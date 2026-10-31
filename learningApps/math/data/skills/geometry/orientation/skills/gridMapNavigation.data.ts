@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const gridMapNavigation_Skill_Data = buildSkillConfig({
+  slug: 'gridMapNavigation',
   id: '43b1fdd6-0846-4c0c-a01b-375a6fec3b2f',
   name: {
     en: "Reading and drawing simple grid maps",

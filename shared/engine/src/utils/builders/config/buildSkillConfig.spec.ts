@@ -14,6 +14,7 @@ const frontendCopy = () =>
     [language, 'Frontend description in ' + language])) as Skill_Config['description']['frontend'];
 
 const skill = (): Skill_Config => ({
+  slug: 'testSkill',
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: allNames(),
   description: { methodological: 'Mathematical concept and boundaries.', frontend: frontendCopy() },
@@ -26,6 +27,7 @@ describe('Utils / builders / config / buildSkillConfig', () => {
     assert.notStrictEqual(result, input);
     assert.equal(result.collection, 'skill');
     assert.equal(result.id, input.id);
+    assert.equal(result.slug, input.slug);
     assert.equal(Object.keys(result.name).length, DEFAULT_SUPPORTED_LANGUAGES.length);
     assert.deepEqual(result.name, input.name);
   });
@@ -44,6 +46,13 @@ describe('Utils / builders / config / buildSkillConfig', () => {
     }
   });
 
+  it('rejects missing or invalid slugs', () => {
+    for (const slug of [undefined, null, '', 'UPPER', 'bad-slug', 123]) {
+      assert.throws(() => buildSkillConfig({ ...skill(), slug } as unknown as Skill_Config),
+        /Skill slug must be lowerCamelCase/);
+    }
+  });
+
   it('rejects a missing or malformed name dictionary', () => {
     for (const name of [undefined, null, [], 'name']) {
       const invalid = { ...skill(), name } as unknown as Skill_Config;
@@ -56,7 +65,7 @@ describe('Utils / builders / config / buildSkillConfig', () => {
       const names: Record<string, string> = { ...allNames() };
       delete names[language];
       assert.throws(
-        () => buildSkillConfig({ id: skill().id, name: names } as unknown as Skill_Config),
+        () => buildSkillConfig({ slug: skill().slug, id: skill().id, name: names } as unknown as Skill_Config),
         new RegExp(language),
       );
     }
@@ -65,7 +74,7 @@ describe('Utils / builders / config / buildSkillConfig', () => {
   it('rejects blank and non-string localized names', () => {
     for (const value of ['', '  ', null, 5]) {
       const invalid = { ...allNames(), uk: value };
-      assert.throws(() => buildSkillConfig({ id: skill().id, name: invalid } as unknown as Skill_Config), /uk/);
+      assert.throws(() => buildSkillConfig({ slug: skill().slug, id: skill().id, name: invalid } as unknown as Skill_Config), /uk/);
     }
   });
 

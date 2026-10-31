@@ -95,6 +95,10 @@ test('English-only create needs no reviewed translations and keeps locales visib
   assert.match(domain,/^import \{ buildSkillDomainConfig \} from '@svitlo\/engine\/taxonomy';\n\nimport \{ angles_SkillGroup_Data \} from '\.\/angles\/angles\.data';/);
   assert.match(group,/^import \{ buildSkillGroupConfig \} from '@svitlo\/engine\/taxonomy';\n\nimport \{ compareAngles_Skill_Data \} from '\.\/skills';/);
   assert.match(directDomain,/^import \{ buildSkillDomainConfig \} from '@svitlo\/engine\/taxonomy';\n\nimport \{ hearRhythm_Skill_Data \} from '\.\/skills';/);
+  assert.match(skill,/^  slug: "compareAngles",$/m);
+  assert.match(group,/^  slug: "angles",$/m);
+  assert.match(domain,/^  slug: "geometry",$/m);
+  assert.match(directDomain,/^  slug: "music",$/m);
   assert.match(skill,/en: "Compare Angles"/);
   assert.match(skill,/en: "Explore this topic\."/);
   assert.match(skill,/name: \{\s*en: /);
@@ -108,6 +112,22 @@ test('English-only create needs no reviewed translations and keeps locales visib
   assert.doesNotMatch(skill,/uk:|\bas\s+Record\b|\bas\s+any\b/);
   assert.doesNotMatch(domain,/uk:/);
   assert.equal(f.runEnglishOnly('--apply').status,0,'Second application should be idempotent');
+}));
+
+test('mixed Domain contains both full SkillGroup and direct Skill entities',()=>withFixture(f=>{
+  f.edit(s=>s.replace('### Music\n\n',
+    section(4,'Recognize Shapes','recognizeShapes')+'### Music\n\n')
+    .replace('Groups: 1 · Skills: 1','Groups: 1 · Skills: 2'));
+  const r=f.runEnglishOnly('--apply');
+  assert.equal(r.status,0,r.stderr);
+  const domain=source(f,'geometry/geometry.data.ts');
+  assert.match(domain,/groups: \{/);
+  assert.match(domain,/angles: angles_SkillGroup_Data,/);
+  assert.match(domain,/skills: \{/);
+  assert.match(domain,/recognizeShapes: recognizeShapes_Skill_Data,/);
+  assert.doesNotMatch(domain,/groupIds|skillIds|_Data\.id/);
+  assert.match(source(f,'geometry/skills/index.ts'),/recognizeShapes_Skill_Data/);
+  assert.ok(fs.existsSync(path.join(data(f),'geometry/skills/recognizeShapes.data.ts')));
 }));
 
 test('English Markdown updates preserve existing non-English translations without a JSON file',()=>withFixture(f=>{
@@ -168,10 +188,10 @@ test('create emits entity-owned IDs, direct imports and only allowed indexes',()
     assert.doesNotMatch(content,/\bslug\s*:/);
   }
   assert.equal(ids.size,5);
-  assert.match(source(f,'geometry/geometry.data.ts'),/angles: angles_SkillGroup_Data\.id/);
-  assert.match(source(f,'geometry/angles/angles.data.ts'),/compareAngles: compareAngles_Skill_Data\.id/);
-  assert.match(source(f,'music/music.data.ts'),/groupIds: \{\}/);
-  assert.match(source(f,'music/music.data.ts'),/hearRhythm: hearRhythm_Skill_Data\.id/);
+  assert.match(source(f,'geometry/geometry.data.ts'),/angles: angles_SkillGroup_Data,/);
+  assert.match(source(f,'geometry/angles/angles.data.ts'),/compareAngles: compareAngles_Skill_Data,/);
+  assert.match(source(f,'music/music.data.ts'),/groups: \{\}/);
+  assert.match(source(f,'music/music.data.ts'),/hearRhythm: hearRhythm_Skill_Data,/);
   assert.match(source(f,'index.ts'),/geometry_SkillDomain_Data/);
   assert.match(source(f,'geometry/angles/skills/index.ts'),/compareAngles_Skill_Data/);
   assert.match(source(f,'music/skills/index.ts'),/hearRhythm_Skill_Data/);

@@ -7,7 +7,7 @@ const description = { methodological: 'English conceptual boundaries.', frontend
 // @ts-expect-error A semantic slug is not a UUID.
 buildSkillConfig({ id: 'math.multiply.by-2', name: names });
 
-const valid = buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description });
+const valid = buildSkillConfig({ slug: 'testSkill', id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description });
 const literalId: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' = valid.id;
 void literalId;
 const collection: 'skill' = valid.collection;
@@ -26,6 +26,7 @@ buildSkillConfig({ name: names });
 buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' });
 
 buildSkillConfig({
+  slug: 'testSkill',
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: names,
   description: { methodological: 'English conceptual boundaries.', frontend: names },

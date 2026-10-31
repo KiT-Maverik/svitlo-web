@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const numberLine_Skill_Data = buildSkillConfig({
+  slug: 'numberLine',
   id: '73fb395f-5148-4af6-b5b1-399c4e06beab',
   name: {
     en: "Locating fractions between 0 and 1 on a number line",

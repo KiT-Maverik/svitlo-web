@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const positionWords_Skill_Data = buildSkillConfig({
+  slug: 'positionWords',
   id: '30001f22-2352-4068-a1be-f0e8f0278588',
   name: {
     en: "Describing relative positions",

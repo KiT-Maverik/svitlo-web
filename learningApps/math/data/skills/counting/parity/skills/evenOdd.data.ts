@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const evenOdd_Skill_Data = buildSkillConfig({
+  slug: 'evenOdd',
   id: '1945f222-d833-4897-b9c1-71f16d81fd74',
   name: {
     en: "Identifying even and odd numbers using pairs",

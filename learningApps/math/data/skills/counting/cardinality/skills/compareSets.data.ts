@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareSets_Skill_Data = buildSkillConfig({
+  slug: 'compareSets',
   id: '4dbb5ddc-9215-451a-8643-c7fce442a3d5',
   name: {
     en: "Comparing sets by matching or counting",

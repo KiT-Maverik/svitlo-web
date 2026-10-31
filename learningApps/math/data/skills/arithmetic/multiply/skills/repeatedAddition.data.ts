@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const repeatedAddition_Skill_Data = buildSkillConfig({
+  slug: 'repeatedAddition',
   id: '5c08d331-b6ba-44ee-ab1d-0f1781f23f73',
   name: {
     lt: "Daugyba — kartotinė sudėtis",

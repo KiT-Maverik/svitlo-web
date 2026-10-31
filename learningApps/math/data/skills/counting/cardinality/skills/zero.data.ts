@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const zero_Skill_Data = buildSkillConfig({
+  slug: 'zero',
   id: 'a08e7d57-e613-4276-b6bf-3f06d7e1589a',
   name: {
     en: "Understanding zero as an empty quantity",

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { evenOdd_Skill_Data } from './skills';
 
 export const parity_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'parity',
   id: '77e6c4eb-a1ee-4cfd-a286-7180e3b51e9f',
   name: {
     en: "Even and odd numbers",
@@ -34,8 +35,8 @@ export const parity_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Liczby parzyste i nieparzyste",
     uk: "Парність",
   },
-  skillIds: {
-    evenOdd: evenOdd_Skill_Data.id,
+  skills: {
+    evenOdd: evenOdd_Skill_Data,
   },
   description: {
     methodological: "Classifying natural numbers by whether a corresponding collection can be divided into pairs with no remainder.",

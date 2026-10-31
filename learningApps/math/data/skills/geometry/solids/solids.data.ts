@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { shapeOnSolidSurface_Skill_Data, identify3dSolids_Skill_Data, spatialSolidsAttributes_Skill_Data } from './skills';
 
 export const solids_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'solids',
   id: 'bdf41fea-033a-41dd-8f37-8ab78f9a45cf',
   name: {
     en: "Solid figures",
@@ -34,10 +35,10 @@ export const solids_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Bryły geometryczne",
     uk: "Просторові тіла",
   },
-  skillIds: {
-    shapeOnSolidSurface: shapeOnSolidSurface_Skill_Data.id,
-    identify3dSolids: identify3dSolids_Skill_Data.id,
-    spatialSolidsAttributes: spatialSolidsAttributes_Skill_Data.id,
+  skills: {
+    shapeOnSolidSurface: shapeOnSolidSurface_Skill_Data,
+    identify3dSolids: identify3dSolids_Skill_Data,
+    spatialSolidsAttributes: spatialSolidsAttributes_Skill_Data,
   },
   description: {
     methodological: "Distinguishing three-dimensional solids from flat depictions and identifying their surfaces, faces, edges, and vertices.",

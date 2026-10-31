@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const tensOnes_Skill_Data = buildSkillConfig({
+  slug: 'tensOnes',
   id: 'cbe7c10a-de6d-42cc-9526-f4019d797727',
   name: {
     lt: "Dešimtys ir vienetai dviženkliuose skaičiuose",

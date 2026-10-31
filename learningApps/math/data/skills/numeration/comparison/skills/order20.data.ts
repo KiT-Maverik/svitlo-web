@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const order20_Skill_Data = buildSkillConfig({
+  slug: 'order20',
   id: 'a4751cd9-8057-4651-8594-d028bffd02bf',
   name: {
     lt: "Skaičių nuo 0 iki 20 rikiavimas",

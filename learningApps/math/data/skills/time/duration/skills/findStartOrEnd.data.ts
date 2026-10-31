@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const findStartOrEnd_Skill_Data = buildSkillConfig({
+  slug: 'findStartOrEnd',
   id: 'f98b80c1-0692-4ac2-a254-95a20ab13686',
   name: {
     en: "Finding a start or end time from a duration",

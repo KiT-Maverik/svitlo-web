@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const perimeterVsArea_Skill_Data = buildSkillConfig({
+  slug: 'perimeterVsArea',
   id: '96ab255c-a9f4-40aa-b072-e4f59790dfe5',
   name: {
     en: "Choosing perimeter or area for a measurement",

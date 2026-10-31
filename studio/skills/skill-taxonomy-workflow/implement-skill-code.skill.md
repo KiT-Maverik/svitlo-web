@@ -17,10 +17,10 @@ This implementation must also follow [Git-First Typed Content & AI Authoring](..
 3. **Entity meanings:** read [SkillDomain](../../docs/entities/skill-domain.md), [SkillGroup](../../docs/entities/skill-group.md), and [Skill](../../docs/entities/skill.md). These are lightweight catalog categories, **not** assessment rubrics, learner results, or lessons.
 4. **Authoritative TypeScript contracts in `@svitlo/contracts`:** inspect the current files under `shared/contracts/src/types/content/` (import types via `@svitlo/contracts/taxonomy`; engine builders are separate):
    - `skill.types.ts` — `SkillId`, `Skill_Config` and `Skill`.
-   - `skillGroup.types.ts` — `SkillGroup_Config`, `skillIds`.
-   - `skillDomain.types.ts` — `SkillDomain_Config`, required `groupIds` and optional direct `skillIds`.
+   - `skillGroup.types.ts` — `SkillGroup_Config`, `skills`.
+   - `skillDomain.types.ts` — `SkillDomain_Config`, required `groups` and optional direct `skills`.
    - `shared/contracts/src/types/languages.ts` — `LanguageCode`; verify the current supported-language list through the published localization contract.
-5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillReferences.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
+5. **Authoritative builders:** inspect `shared/engine/src/utils/builders/config/buildSkillConfig.utils.ts`, `buildSkillGroupConfig.utils.ts`, `buildSkillDomainConfig.utils.ts`, and `validateSkillChildren.utils.ts`. Prefer their public exports from `@svitlo/engine/taxonomy` instead of copying builders into the textbook.
 6. **Reference implementation (read-only example):** inspect the current Mathematics taxonomy in `learningApps/math/data/skills/`:
    - Root `index.ts` exports Domain Data only.
    - `geometry/geometry.data.ts` imports Group Data directly from `./<group>/<group>.data`.
@@ -46,30 +46,28 @@ The [Markdown → Code generator](../../../scripts/implement-skills-taxonomy.mjs
 
 Use each new-template entity's approved `Slug: lowerCamelCase` for its own directory/file stem rather than recomputing identifiers from display names. The `<domainCamelCase>`, `<groupCamelCase>`, and `<skillCamelCase>` placeholders below refer to these approved slugs. Validate `^[a-z][A-Za-z0-9]*$` and textbook-wide slug uniqueness across all entity kinds before generating files.
 
-A slug is editorial metadata, not a new property of `Skill*_Config`. Keep existing UUIDs and Code paths stable. If an approved slug conflicts with an implemented path/identifier, stop for editorial resolution; do not silently rename files or reassign UUIDs. Treat slugless legacy entries as pending explicit migration.
+A slug is a required `Skill*_Config.slug` property and must match the approved editorial slug and source filename. Keep existing UUIDs and Code paths stable. If an approved slug conflicts with an implemented path/identifier, stop for editorial resolution; do not silently rename files or reassign UUIDs. Treat slugless legacy entries as pending explicit migration.
 
-### Direct-Skill Domains — mandatory compatibility gate
+### Direct and mixed Domain children
 
-Before implementing a Domain with **zero Groups**, inspect and verify the `@svitlo/contracts` `SkillDomain_Config`, the `@svitlo/engine` `buildSkillDomainConfig`, validation, **source registry and every downstream taxonomy index, exporter, loader and display/ancestry consumer**. The engine type and builder now permit `skillIds` with `groupIds: {}`, but this **does not prove** an existing textbook's grouped-only index, builder composition or UI supports direct Skills. Add focused tests for direct and grouped membership and for no mixed/empty Domain. Stop and report a blocker rather than generating a synthetic Group or falsely claiming end-to-end integration. No new Skill IDs may be invented to satisfy a directory layout.
-
-**Direct Domain source layout:** place Skills under `<domainCamelCase>/skills/<skillCamelCase>.data.ts`, export them through that directory's `skills/index.ts`, and import those Skills into `<domainCamelCase>.data.ts`. Set `groupIds: {}` and populate `skillIds` from their `.id` values. There is no Domain-level `index.ts` and no synthetic Group. Confirm the downstream loader supports direct Skills before promotion.
+A Domain can embed Groups and direct Skills **at the same time**, or only one kind, but must not be empty. Group children live at `<domain>/<group>/<group>.data.ts`; direct Skills at `<domain>/skills/<skill>.data.ts`. A Group embeds its immediate Skill entities. Both `groups` and `skills` dictionaries contain the complete imported `*_Data` objects, **not** `.id` strings. No synthetic Group is required. Check all source registries and UI consumers for this topology.
 
 ## 1. STRICT TYPE AND ENTITY CONTRACT
 
 Every runtime entity must be produced through its designated builder, using the real shared-engine types. Do not hand-author the `collection` discriminator or `fileLocation` (the latter is supplied by the source registry).
 
-| Entity | Authored configuration | Builder | References |
+| Entity | Authored configuration | Builder | Children |
 | --- | --- | --- | --- |
-| Skill | `id`, `name` | `buildSkillConfig` | None |
-| SkillGroup | `id`, `name`, `skillIds` | `buildSkillGroupConfig` | Immediate child Skill IDs |
-| SkillDomain | `id`, `name`, `groupIds`, optional `skillIds` | `buildSkillDomainConfig` | Either immediate SkillGroup IDs or direct Skill IDs, never both |
+| Skill | `slug`, `id`, `name`, `description` | `buildSkillConfig` | None |
+| SkillGroup | `slug`, `id`, `name`, `skills` | `buildSkillGroupConfig` | Complete immediate Skill entities |
+| SkillDomain | `slug`, `id`, `name`, `groups`, optional `skills` | `buildSkillDomainConfig` | Complete immediate Groups and/or direct Skills |
 
 `Skill_Config` requires `description: { methodological: string; frontend: Readonly<Record<LanguageCode, string>> }`; descriptions on Group and Domain remain optional. For **legacy structured entries without `Slug:`, `Action:` or `Status:`**, [import-taxonomy-descriptions.mjs](../../../scripts/import-taxonomy-descriptions.mjs) can transfer descriptions to already existing Code after a successful dry-run. The current importer must not be used with new-template entries until parser compatibility is implemented and tested; preserve semantic equivalence and seek an approved implementation path in the meantime. It never translates or creates missing Code objects. The English `User-friendly description:` supplies `description.frontend.en` to Markdown → Code; it does not supply the remaining language keys. Those keys are added by a separate translation pass. A new or promoted entity **must** have `description.methodological`: a substantive, carefully edited **English** description faithful to the approved source text (translate without information loss when the staging taxonomy is in another language). This English text is for the Methodologist, Screenwriter and other agents; it may include useful conceptual distinctions, examples and caveats without becoming a lesson or assessment plan. `description.frontend` is **required on every Skill** with genuine translations for every supported language; Group/Domain frontend is optional but must be complete when present. Missing Skill frontend translations or methodological text blocks final promotion and runtime use, but do not block generating English-first Code drafts; no fallback. Builders enforce shape and completeness, not correctness of language/meaning. No mastery, grade, prerequisites, questions or learner state belong here.
 
 - Match the names, identity, and **exact parent/child placements** approved in the taxonomy; no extra Domains, Groups, Skills, cross-domain duplicates, or synthetic groups.
-- Respect the approved hierarchy: a grouped Domain references nonempty `groupIds`, while an ungrouped Domain uses `groupIds: {}` and nonempty direct `skillIds`. Never mix both. Groups reference Skills through `skillIds`, and Skills have no children. Strongly discourage synthetic singleton Groups.
+- Respect the approved hierarchy: a grouped Domain references nonempty `groups`, while an ungrouped Domain uses `groups: {}` and nonempty direct `skills`. Both may coexist. Groups reference Skills through `skills`, and Skills have no children. Strongly discourage synthetic singleton Groups.
 - Use stable, **literal UUID values**, owned by the entity's own `*.data.ts` file. Reuse existing UUIDs for existing identities. Generate fresh collision-free UUIDs **once** for genuinely new approved entities; never generate UUIDs during application runtime, derive them from paths, or reassign IDs during a rename/move.
-- Build explicit immediate-child ID maps from imported child `*.data.ts` objects and their `.id` properties. Never copy or duplicate a child's UUID in its parent.
+- Embed complete immediate child Data objects in the parent, not just their IDs. Never copy or duplicate a child's UUID in its parent.
 - Cross-check that every ID reference represents the intended immediate child and that there are no missing, duplicated, or unintended entities. **The current builders validate UUID syntax, duplicate values, and nonempty exclusive Domain membership (grouped or direct); they do not prove that a UUID belongs to the correct entity type, exists in a registry, or is globally unique.** Complete referential/type integrity is a separate **future build-time validation** responsibility. Use available static/file-level cross-checks now, but never claim the current builders enforce a full taxonomy graph.
 
 ## 2. REQUIRED DESTINATION AND FILE HIERARCHY
@@ -93,15 +91,15 @@ For the selected textbook package only:
                     └── index.ts          # immediate Skill Data named exports
 ~~~
 
-For an approved direct-Skill Domain, omit the Group directory and place its Skills in `<domainCamelCase>/skills/` with `skills/index.ts`. Both grouped and direct-Skill Domain Data import immediate child Data objects and derive child references from their `.id`. **No `index.ts` exists in the Domain or Group directory root**. Do not create `*.ids.ts`, `index.ids.ts`, or `index.data.ts`.
+For an approved direct-Skill Domain, omit the Group directory and place its Skills in `<domainCamelCase>/skills/` with `skills/index.ts`. Both grouped and direct-Skill Domain Data import immediate child Data objects and embed the child objects themselves. **No `index.ts` exists in the Domain or Group directory root**. Do not create `*.ids.ts`, `index.ids.ts`, or `index.data.ts`.
 
 Use approved lowerCamelCase slugs as directory and file stems; preserve old UUIDs on update and check collision-free UUIDs for new identities.
 
 ## 3. DIRECT COMPOSITION AND EXPORT BOUNDARIES
 
 - **Root:** `data/skills/index.ts` exports only Domain Data from `./<domain>/<domain>.data`; no recursive descendants.
-- **Domain:** `<domain>.data.ts` exports its own Domain and imports Group Data via direct paths `./<group>/<group>.data`; `groupIds` takes imported Group `.id` values. For a direct-Skill Domain, import from `./skills`, set `groupIds: {}` and populate `skillIds` from Skill `.id` values. **No Domain-level index.**
-- **Group:** `<group>.data.ts` exports its own Group and imports immediate Skill Data through `./skills`; `skillIds` takes imported Skill `.id` values. **No Group-level index.**
+- **Domain:** `<domain>.data.ts` exports its own Domain and imports Group Data via direct paths `./<group>/<group>.data`; `groups` takes imported Group `.id` values. For a direct-Skill Domain, import from `./skills`, set `groups: {}` and populate `skills` from Skill `.id` values. **No Domain-level index.**
+- **Group:** `<group>.data.ts` exports its own Group and imports immediate Skill Data through `./skills`; `skills` takes imported Skill `.id` values. **No Group-level index.**
 - **Skills:** `<group>/skills/index.ts`, or `<domain>/skills/index.ts` for a direct-Skill Domain, exports immediate Skill Data only, with explicit named exports and no `export *`.
 - **UUIDs:** each entity owns its original UUID literal in its own `*.data.ts`; do not reintroduce separate ID dictionaries, aliases or compatibility re-exports.
 
@@ -134,8 +132,8 @@ Use the repo's configured string quote preference independently of the **no-quot
 1. **Inspect and reconcile:** read the approved editorial taxonomy, builder/contracts, language roster and current Math source tree. Plan exact file paths and direct-child membership.
 2. **Preserve identity:** reuse existing `id` literals in `*.data.ts`; allocate a fresh UUID only for a genuinely new approved entity. Never replace an existing entity's UUID on update.
 3. **Implement Skills:** write/update `<skill>.data.ts` using `buildSkillConfig`, reviewed English descriptions and own stable UUID; finish all required translations before promotion. Maintain `skills/index.ts` for immediate Skill exports only.
-4. **Implement Groups:** write/update `<group>.data.ts` using `buildSkillGroupConfig`; import immediate Skills from `./skills` and map their `.id` into `skillIds`. No Group-level index.
-5. **Implement Domains:** write/update `<domain>.data.ts` using `buildSkillDomainConfig`; directly import Groups via `./<group>/<group>.data` or direct Skills via `./skills`. Map child `.id` values into `groupIds` or `skillIds`. No Domain-level index.
+4. **Implement Groups:** write/update `<group>.data.ts` using `buildSkillGroupConfig`; import immediate Skills from `./skills` and embed the full Skill objects in `skills`. No Group-level index.
+5. **Implement Domains:** write/update `<domain>.data.ts` using `buildSkillDomainConfig`; directly import Groups via `./<group>/<group>.data` or direct Skills via `./skills`. Embed complete child objects in `groups` and optional `skills`. No Domain-level index.
 6. **Update root exports:** `data/skills/index.ts` uses named exports of Domain Data from `./<domain>/<domain>.data` only.
 7. **Verify:** test UUID preservation, child membership, unresolved imports, paths, localization, TypeScript/build, index export boundaries and absence of obsolete ID index files. Do not equate builder validity with full referential integrity.
 8. **Update staging links after approval and verification:** link promoted entities to their `*.data.ts` files, preserving editorial history and outstanding children.
@@ -150,7 +148,7 @@ Before reporting success, run the target package's available checks and add/fix 
 - **Type safety:** `Skill_Config` / `SkillGroup_Config` / `SkillDomain_Config` and builders accept all new configs; reviewed English `description.methodological` and mandatory fully localized Skill `description.frontend` (optional complete Group/Domain frontend); no invented fields; no TypeScript errors.
 - **Localization:** each `name` has **exactly** the current required language-code keys (two-letter unquoted wherever legal), no gaps, duplicates, unexpected keys, empty/placeholder/copy-pasted language values.
 - **Identity:** UUID syntax and stability; check uniqueness and immediate-child mappings against the in-scope files and approved hierarchy. The existing builders **cannot** resolve IDs to actual entity types/registrations; full repo-wide reference validation is deferred to a separate build-time script. Mark unverified items explicitly rather than claiming a builder-level guarantee.
-- **Direct composition:** parent configurations import immediate child Data, referencing `.id` without duplicated ID dictionaries or Domain-/Group-level indexes.
+- **Direct composition:** parent configurations import immediate child Data, embedding full entities without duplicated ID dictionaries or Domain-/Group-level indexes.
 - **Export boundaries:** root `index.ts` exports Domains only; Domain and Group Data files each export their own entity; `skills/index.ts` exports immediate Skills. Verify imports resolve and no `export *` or recursive barrels appear. Adapt the structural checks exemplified by `learningApps/math/src/utils/builders/config/skillTaxonomyIndex.spec.ts`.
 - **Topology:** physical paths and entries match the approved taxonomy and slugs (including textbook-wide slug uniqueness), with no accidental duplicate or missing entities. All non-placeholder taxonomy Code links resolve to matching implemented files and counts reconcile; the staging descriptions and approved hierarchy remain unchanged until separately verified promotion.
 - **Tests:** run available package TypeScript, lint, builder, translation and index tests; cite commands/results. Run registry validation only if a real registry/test exists; `fileLocation` and global ID resolution remain separate planned infrastructure, not automatically finished by producing Data files. If tooling is unavailable, mark checks **not run**.

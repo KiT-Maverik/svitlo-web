@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const tenthsAsDivision_Skill_Data = buildSkillConfig({
+  slug: 'tenthsAsDivision',
   id: '07f83714-554b-4dd3-8e1a-3abeb1c065b0',
   name: {
     en: "Relating tenths to division by 10",

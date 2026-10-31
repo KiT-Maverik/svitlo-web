@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const budgetConstraint_Skill_Data = buildSkillConfig({
+  slug: 'budgetConstraint',
   id: '945f887d-4370-42b0-aefa-02a88a06f6d8',
   name: {
     en: "Choosing purchases within a budget",

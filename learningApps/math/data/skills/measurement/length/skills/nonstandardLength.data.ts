@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const nonstandardLength_Skill_Data = buildSkillConfig({
+  slug: 'nonstandardLength',
   id: '8d0cccb9-f078-450a-af0a-b0ab6fbcbb26',
   name: {
     en: "Measuring length with repeated nonstandard units",

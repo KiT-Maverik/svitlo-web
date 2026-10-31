@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const findCounterexample_Skill_Data = buildSkillConfig({
+  slug: 'findCounterexample',
   id: 'dde55a58-c038-4375-9b1d-b9ecfb4a9219',
   name: {
     en: "Finding a counterexample to a false generalization",

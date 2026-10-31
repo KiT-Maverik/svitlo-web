@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { measurementContext_Skill_Data, priceQuantityCost_Skill_Data, workRateTime_Skill_Data } from './skills';
 
 export const quantities_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'quantities',
   id: '08a71b06-f1c4-4596-aca4-ff7ec78cce31',
   name: {
     en: "Quantity problems",
@@ -34,10 +35,10 @@ export const quantities_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Zadania o wielkościach",
     uk: "Задачі на величини",
   },
-  skillIds: {
-    workRateTime: workRateTime_Skill_Data.id,
-    priceQuantityCost: priceQuantityCost_Skill_Data.id,
-    measurementContext: measurementContext_Skill_Data.id,
+  skills: {
+    workRateTime: workRateTime_Skill_Data,
+    priceQuantityCost: priceQuantityCost_Skill_Data,
+    measurementContext: measurementContext_Skill_Data,
   },
   description: { methodological: "Practical relationships among work rate, time, price, quantity, mass, capacity, and length." },
 });

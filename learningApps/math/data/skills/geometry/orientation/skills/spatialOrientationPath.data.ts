@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const spatialOrientationPath_Skill_Data = buildSkillConfig({
+  slug: 'spatialOrientationPath',
   id: '1defe702-c0b3-4760-aea0-2d2861933d5f',
   name: {
     en: "Giving and following route directions",
