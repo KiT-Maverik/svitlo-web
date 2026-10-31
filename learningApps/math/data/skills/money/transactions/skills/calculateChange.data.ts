@@ -5,6 +5,7 @@ export const calculateChange_Skill_Data = buildSkillConfig({
   id: '56a4bd47-1221-489d-a11a-577d07bcb9af',
   name: {
     en: 'Calculating change',
+    qm: 'Qaytım aqçasını esaplav',
     lt: 'Grąžos apskaičiavimas',
     lv: 'Atlikuma aprēķināšana',
     et: 'Tagasiraha arvutamine',
@@ -38,6 +39,7 @@ export const calculateChange_Skill_Data = buildSkillConfig({
       'Change is the difference between the amount actually paid and the amount due, provided the payment is sufficient. It must be expressed in the same currency, and adding the change to the purchase price checks the result.',
     frontend: {
       en: 'You can calculate the change you should receive when you pay enough money for a purchase and check it against the price.',
+      qm: 'Satın aluv içün yeterli aqça bergen soñ almalı olğan qaytım aqçasını esaplay ve onı eşyanıñ fiyatına köre teşkere bilesiñ.',
       zh: '你能在付款足够时算出购物应找回的零钱，并核对找零与商品价格是否相符。',
       hi: 'आप पर्याप्त भुगतान करने पर मिलने वाली बाकी रकम निकाल सकते हैं और खरीद के दाम से उसकी जाँच कर सकते हैं।',
       es: 'Puedes calcular el cambio que debes recibir cuando pagas suficiente por una compra y comprobarlo con el precio.',

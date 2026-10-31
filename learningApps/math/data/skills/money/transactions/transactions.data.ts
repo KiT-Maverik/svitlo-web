@@ -7,6 +7,7 @@ export const transactions_SkillGroup_Data = buildSkillGroupConfig({
   id: '15c170e7-d86b-43d3-b08a-64a642f93f0b',
   name: {
     en: 'Purchases',
+    qm: 'Satın aluvlar',
     lt: 'Pirkimai',
     lv: 'Pirkumi',
     et: 'Ostud',

@@ -11,6 +11,7 @@ export const order100_Skill_Data = buildSkillConfig({
     ka: 'ორნიშნა რიცხვების შედარება და დალაგება',
     kk: 'Екі таңбалы сандарды салыстыру және реттеу',
     en: 'Comparing and ordering two-digit numbers',
+    qm: 'Eki raqamlı sayılarnı qıyaslav ve tertiplemek',
     zh: '比较并排列两位数',
     hi: 'दो अंकों की संख्याओं की तुलना और क्रम',
     es: 'Comparar y ordenar números de dos cifras',
@@ -38,6 +39,7 @@ export const order100_Skill_Data = buildSkillConfig({
       'Compare the most significant decimal place first and move to the next place only when values match. For two-digit numbers the tens place takes precedence over the ones.',
     frontend: {
       en: 'Compare two-digit numbers by looking at tens first, then ones when the tens match, and put them in order.',
+      qm: 'Eki raqamlı sayılarnı evelâ onluqlarğa, olar teñ olsa birliklerge köre qıyasla ve sayılarnı tertipke qoy.',
       zh: '比较两位数时先看十位，十位相同再看个位，然后按大小排序。',
       hi: 'दो अंकों की तुलना में पहले दहाई देखें, दहाइयाँ समान हों तो इकाई; फिर क्रम लगाएँ।',
       es: 'Compara números de dos cifras mirando primero las decenas y, si coinciden, las unidades; después ordénalos.',

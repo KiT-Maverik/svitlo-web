@@ -5,6 +5,7 @@ export const composeAmount_Skill_Data = buildSkillConfig({
   id: 'bb0e7ba7-3325-4dac-80cc-0070988cc5ef',
   name: {
     en: 'Composing a money amount',
+    qm: 'Aqça miqdarını tüzmek',
     lt: 'Pinigų sumos sudarymas',
     lv: 'Naudas summas veidošana',
     et: 'Rahasumma koostamine',
@@ -38,6 +39,7 @@ export const composeAmount_Skill_Data = buildSkillConfig({
       'The same monetary amount can be composed from different combinations of available denominations in one currency. Exchanging coins or notes must preserve total value, and denominations that do not exist cannot be used.',
     frontend: {
       en: 'You can make the same amount of money using different combinations of real coins and banknotes from one currency.',
+      qm: 'Bir para birligindeki aqiqiy tanga ve banknotlarnıñ türlü birikmelerinen aynı aqça miqdarını tüzebilesiñ.',
       zh: '你能使用同一种货币中实际存在的不同硬币和纸币组合，凑出相同的金额。',
       hi: 'आप एक ही मुद्रा के असली सिक्कों और नोटों के अलग-अलग संयोजनों से एक समान धनराशि बना सकते हैं।',
       es: 'Puedes formar la misma cantidad de dinero con distintas combinaciones de monedas y billetes reales de una misma moneda.',
