@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const collaborateArtistically_Skill_Data = buildSkillConfig({
-  slug: "collaborateArtistically",
-  id: "5750d84f-a518-4d89-b106-31b3e9e5ffd2",
-  name: {
-    en: "Collaborate Artistically",
-  },
-  description: {
-    methodological: "Coordinate shared decisions and complementary contributions toward an expressive outcome.",
-    frontend: {
-      en: "Combine different people's creative contributions into a shared artwork.",
-    },
-  },
+  slug: "collaborateArtistically", id: "5750d84f-a518-4d89-b106-31b3e9e5ffd2", name: { en: "Collaborate Artistically" },
+  description: { methodological: "Coordinate shared decisions and complementary contributions toward an expressive outcome.", frontend: {
+          "en": "Combine different people's creative contributions into a shared artwork.",
+          "zh": "将不同人的创意贡献结合为共同的艺术作品。",
+          "hi": "अलग-अलग लोगों के रचनात्मक योगदान को एक साझा कलाकृति में जोड़ें।",
+          "es": "Combina las aportaciones creativas de distintas personas en una obra compartida.",
+          "ar": "اجمع المساهمات الإبداعية لأشخاص مختلفين في عمل فني مشترك.",
+          "fr": "Réunissez les contributions créatives de différentes personnes dans une œuvre commune.",
+          "bn": "বিভিন্ন মানুষের সৃজনশীল অবদান একত্র করে একটি যৌথ শিল্পকর্ম তৈরি করুন।",
+          "pt": "Combine as contribuições criativas de diferentes pessoas em uma obra compartilhada.",
+          "ur": "مختلف لوگوں کی تخلیقی شراکت کو ایک مشترکہ فن پارے میں یکجا کریں۔",
+          "id": "Gabungkan kontribusi kreatif dari berbagai orang menjadi satu karya bersama.",
+          "de": "Führe die kreativen Beiträge verschiedener Menschen zu einem gemeinsamen Kunstwerk zusammen.",
+          "ja": "異なる人々の創造的な貢献を組み合わせ、共同作品をつくります。",
+          "ko": "여러 사람의 창의적 기여를 하나의 공동 작품으로 결합해 보세요.",
+          "tr": "Farklı kişilerin yaratıcı katkılarını ortak bir sanat eserinde birleştirin.",
+          "vi": "Kết hợp đóng góp sáng tạo của nhiều người thành một tác phẩm chung.",
+          "ta": "வெவ்வேறு நபர்களின் படைப்புப் பங்களிப்புகளை ஒரு கூட்டுக் கலைப்படைப்பாக இணைக்கவும்.",
+          "te": "వేర్వేరు వ్యక్తుల సృజనాత్మక సహకారాలను ఒక ఉమ్మడి కళాకృతిగా కలపండి.",
+          "mr": "वेगवेगळ्या लोकांचे सर्जनशील योगदान एका सामायिक कलाकृतीत एकत्र करा.",
+          "ms": "Gabungkan sumbangan kreatif daripada individu yang berbeza menjadi satu karya bersama.",
+          "he": "שלבו תרומות יצירתיות של אנשים שונים ביצירה משותפת.",
+          "pl": "Połącz twórczy wkład różnych osób we wspólne dzieło.",
+          "uk": "Поєднуйте творчий внесок різних людей у спільний мистецький твір.",
+          "lt": "Sujunkite skirtingų žmonių kūrybinį indėlį į bendrą meno kūrinį.",
+          "lv": "Apvienojiet dažādu cilvēku radošo ieguldījumu kopīgā mākslas darbā.",
+          "et": "Ühenda eri inimeste loominguline panus ühiseks kunstiteoseks.",
+          "be": "Аб’ядноўвайце творчы ўклад розных людзей у супольны мастацкі твор.",
+          "ka": "გააერთიანეთ სხვადასხვა ადამიანის შემოქმედებითი წვლილი ერთობლივ ნამუშევარში.",
+          "kk": "Egyesítse különböző emberek kreatív hozzájárulását közös műalkotásban。"
+    } },
 });
