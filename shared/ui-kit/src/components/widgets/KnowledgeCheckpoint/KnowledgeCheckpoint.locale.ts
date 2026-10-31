@@ -105,6 +105,8 @@ const be = { title: 'Правер свае веды', check: 'Праверыць
 const ka = { title: 'შეამოწმე შენი ცოდნა', check: 'შემოწმება', checked: 'შემოწმებულია' } satisfies KnowledgeCheckpoint_Locale;
 const kk = { title: 'Біліміңді тексер', check: 'Тексеру', checked: 'Тексерілді' } satisfies KnowledgeCheckpoint_Locale;
 
+const qm = { title: 'Bilgiñni tekşer', check: 'Tekşer', checked: 'Tekşirildi' } satisfies KnowledgeCheckpoint_Locale;
+
 export const locales = {
   en,
   zh,
@@ -128,5 +130,5 @@ export const locales = {
   he,
   pl,
   uk,
-  lt, lv, et, be, ka, kk,
+  lt, lv, et, be, ka, kk, qm,
 } satisfies Record<DefaultSupportedLanguage['language'], KnowledgeCheckpoint_Locale>;
