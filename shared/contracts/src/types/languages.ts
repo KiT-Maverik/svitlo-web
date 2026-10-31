@@ -105,6 +105,9 @@ export const DEFAULT_SUPPORTED_LANGUAGES = [
   { locale: 'be-tarask', language: 'be', name: 'Belarusian (Taraškievica)', nativeName: 'Беларуская (тарашкевіца)', nameUk: 'Білоруська (тарашкевиця)', direction: 'ltr' },
   { locale: 'ka-GE', language: 'ka', name: 'Georgian', nativeName: 'ქართული', nameUk: 'Грузинська', direction: 'ltr' },
   { locale: 'kk-Cyrl-KZ', language: 'kk', name: 'Kazakh (Cyrillic)', nativeName: 'Қазақша', nameUk: 'Казахська', direction: 'ltr' },
+  // Svitlo-specific internal language key: 'qm' = Crimean Tatar (not an ISO 639 code).
+  // Use the standard BCP 47 locale 'crh-Latn-UA' for external language identification.
+  { locale: 'crh-Latn-UA', language: 'qm', name: 'Crimean Tatar', nativeName: 'Qırımtatar tili', nameUk: 'Кримськотатарська', direction: 'ltr' },
 ] as const satisfies readonly LanguageDefinition[];
 
 export type DefaultSupportedLanguage = (typeof DEFAULT_SUPPORTED_LANGUAGES)[number];
