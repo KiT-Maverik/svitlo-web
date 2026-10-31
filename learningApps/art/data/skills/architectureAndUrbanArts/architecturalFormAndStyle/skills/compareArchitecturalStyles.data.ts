@@ -47,7 +47,7 @@ export const compareArchitecturalStyles_Skill_Data = buildSkillConfig({
       be: "Параўноўвай архітэктурныя стылі паводле іх формаў і культурных кантэкстаў.",
       ka: "შეადარეთ არქიტექტურული სტილები მათი ფორმებისა და კულტურული კონტექსტის მიხედვით.",
       kk: "Сәулет стильдерін пішіндері мен мәдени контексті бойынша салыстырыңыз.",
-      qm: "Bina hacimlerini ve boş meydanlarnı teñleşken körüniş şekline birleştiriñiz.",
+      qm: "Mimariy üslüplerni şekilleri ve medeniy bağlamları boyunca qarşılaştırıñız.",
     },
   },
 });
