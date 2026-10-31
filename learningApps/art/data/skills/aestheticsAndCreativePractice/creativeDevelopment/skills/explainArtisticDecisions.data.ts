@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const explainArtisticDecisions_Skill_Data = buildSkillConfig({
-  slug: "explainArtisticDecisions",
-  id: "99cb8606-3805-4c89-8461-0252e2bb3d19",
-  name: {
-    en: "Explain Artistic Decisions",
-  },
-  description: {
-    methodological: "Relate material and expressive choices to intention and actual constraints.",
-    frontend: {
-      en: "Explain why you chose particular materials, forms or artistic approaches.",
-    },
-  },
+  slug: "explainArtisticDecisions", id: "99cb8606-3805-4c89-8461-0252e2bb3d19", name: { en: "Explain Artistic Decisions" },
+  description: { methodological: "Relate material and expressive choices to intention and actual constraints.", frontend: {
+          "en": "Explain why you chose particular materials, forms or artistic approaches.",
+          "zh": "解释选择特定材料、形式或艺术方法的原因。",
+          "hi": "समझाएँ कि आपने विशेष सामग्री, रूप या कलात्मक तरीका क्यों चुना।",
+          "es": "Explica por qué elegiste determinados materiales, formas o enfoques artísticos.",
+          "ar": "اشرح سبب اختيارك مواد أو أشكالاً أو أساليب فنية معينة.",
+          "fr": "Expliquez pourquoi vous avez choisi certains matériaux, formes ou approches artistiques.",
+          "bn": "নির্দিষ্ট উপকরণ, আকার বা শিল্পপদ্ধতি কেন বেছে নিয়েছেন তা ব্যাখ্যা করুন।",
+          "pt": "Explique por que você escolheu determinados materiais, formas ou abordagens artísticas.",
+          "ur": "وضاحت کریں کہ آپ نے مخصوص مواد، شکلیں یا فنّی طریقے کیوں منتخب کیے۔",
+          "id": "Jelaskan alasan Anda memilih bahan, bentuk, atau pendekatan artistik tertentu.",
+          "de": "Erkläre, warum du bestimmte Materialien, Formen oder künstlerische Ansätze gewählt hast.",
+          "ja": "特定の素材や形、芸術的な手法を選んだ理由を説明します。",
+          "ko": "특정 재료와 형태, 예술적 접근 방식을 선택한 이유를 설명해 보세요.",
+          "tr": "Belirli malzemeleri, biçimleri veya sanatsal yaklaşımları neden seçtiğinizi açıklayın.",
+          "vi": "Giải thích lý do bạn chọn vật liệu, hình thức hoặc cách tiếp cận nghệ thuật cụ thể.",
+          "ta": "குறிப்பிட்ட பொருட்கள், வடிவங்கள் அல்லது கலை அணுகுமுறைகளை ஏன் தேர்ந்தெடுத்தீர்கள் என்பதை விளக்குங்கள்.",
+          "te": "నిర్దిష్ట పదార్థాలు, రూపాలు లేదా కళాత్మక విధానాలను ఎందుకు ఎంచుకున్నారో వివరించండి.",
+          "mr": "विशिष्ट साहित्य, आकार किंवा कलात्मक दृष्टिकोन का निवडले ते स्पष्ट करा.",
+          "ms": "Jelaskan sebab anda memilih bahan, bentuk atau pendekatan artistik tertentu.",
+          "he": "הסבירו מדוע בחרתם בחומרים, בצורות או בגישות אמנותיות מסוימות.",
+          "pl": "Wyjaśnij, dlaczego wybrano określone materiały, formy lub podejścia artystyczne.",
+          "uk": "Поясніть, чому ви обрали певні матеріали, форми чи мистецькі підходи.",
+          "lt": "Paaiškinkite, kodėl pasirinkote konkrečias medžiagas, formas ar meninius būdus.",
+          "lv": "Paskaidrojiet, kāpēc izvēlējāties konkrētus materiālus, formas vai mākslinieciskās pieejas.",
+          "et": "Selgita, miks valisid kindlad materjalid, vormid või kunstilised lähenemisviisid.",
+          "be": "Растлумачце, чаму вы выбралі пэўныя матэрыялы, формы або мастацкія падыходы.",
+          "ka": "განმარტეთ, რატომ აირჩიეთ კონკრეტული მასალები, ფორმები ან მხატვრული მიდგომები.",
+          "kk": "Magyarázza el, miért választott bizonyos anyagokat, formákat vagy művészi megközelítéseket。"
+    } },
 });
