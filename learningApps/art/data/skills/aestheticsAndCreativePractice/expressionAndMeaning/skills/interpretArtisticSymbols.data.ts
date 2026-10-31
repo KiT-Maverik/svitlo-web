@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const interpretArtisticSymbols_Skill_Data = buildSkillConfig({
-  slug: "interpretArtisticSymbols", id: "f8be8696-5278-4f15-b025-49cc3c1b17cf", name: { en: "Interpret Artistic Symbols" },
+  slug: "interpretArtisticSymbols", id: "f8be8696-5278-4f15-b025-49cc3c1b17cf", name: {
+    en: "Interpret Artistic Symbols",
+    zh: "解读艺术符号",
+    hi: "कलात्मक प्रतीकों की व्याख्या करें",
+    es: "Interpretar símbolos artísticos",
+    ar: "تفسير الرموز الفنية",
+    fr: "Interpréter les symboles artistiques",
+    bn: "শৈল্পিক প্রতীকের ব্যাখ্যা করুন",
+    pt: "Interpretar símbolos artísticos",
+    ur: "فنّی علامات کی تشریح کریں",
+    id: "Menafsirkan Simbol Artistik",
+    de: "Künstlerische Symbole interpretieren",
+    ja: "芸術的な象徴を解釈する",
+    ko: "예술적 상징 해석하기",
+    tr: "Sanatsal Sembolleri Yorumlamak",
+    vi: "Diễn giải biểu tượng nghệ thuật",
+    ta: "கலைக் குறியீடுகளைப் பொருள்கொள்ளுங்கள்",
+    te: "కళాత్మక చిహ్నాలను అర్థం చేసుకోండి",
+    mr: "कलात्मक प्रतीकांचा अर्थ लावा",
+    ms: "Mentafsir Simbol Artistik",
+    he: "פרשנות של סמלים אמנותיים",
+    pl: "Interpretować symbole artystyczne",
+    uk: "Інтерпретувати мистецькі символи",
+    lt: "Interpretuoti meninius simbolius",
+    lv: "Interpretēt mākslas simbolus",
+    et: "Kunstisümbolite tõlgendamine",
+    be: "Інтэрпрэтаваць мастацкія сімвалы",
+    ka: "მხატვრული სიმბოლოების ინტერპრეტაცია",
+    kk: "Көркем таңбаларды түсіндіру",
+    qm: "Sanat remizlerini tefsir etüv",
+  },
   description: { methodological: "Connect an image, sound or gesture to contextually supported meanings.", frontend: {
           "en": "Look for clues that help explain what an artistic symbol might mean.",
           "zh": "寻找线索，帮助解释艺术符号可能代表的含义。",
@@ -31,5 +61,6 @@ export const interpretArtisticSymbols_Skill_Data = buildSkillConfig({
           "be": "Шукайце падказкі, якія дапамагаюць растлумачыць магчымы сэнс мастацкага сімвала.",
           "ka": "მოძებნეთ მინიშნებები, რომლებიც მხატვრული სიმბოლოს შესაძლო მნიშვნელობის ახსნაში დაგეხმარებათ.",
           "kk": "Көркемдік нышанның ықтимал мағынасын түсіндіруге көмектесетін белгілерді іздеңіз."
-    } },
+    
+      qm: "Sanat remiziniñ ne mananı bildire bilecegini añlatmağa yardım etken işaretlerni izleştiñiz.",} },
 });
