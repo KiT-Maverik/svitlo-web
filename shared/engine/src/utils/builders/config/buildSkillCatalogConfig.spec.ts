@@ -44,7 +44,7 @@ describe('Skill catalog builders', () => {
   it('rejects malformed child collections and duplicate child identities', () => {
     for (const children of [[], null, { first: '' }, { first: skillId }]) {
       assert.throws(() => buildSkillGroupConfig({
-        slug: 'testGroup', id: groupId, name: names(), skills: children as SkillGroup_Config['skills'],
+        slug: 'testGroup', id: groupId, name: names(), skills: children as unknown as SkillGroup_Config['skills'],
       }), /SkillGroup skills/);
     }
     assert.throws(() => buildSkillGroupConfig({
