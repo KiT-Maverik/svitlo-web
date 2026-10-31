@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { MouseEvent as ReactMouseEvent, PointerEvent as ReactPointerEvent } from 'react';
 import { Alert, Box, Button, Chip, CircularProgress, Stack, Typography } from '@mui/material';
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
 import CenterFocusStrongRoundedIcon from '@mui/icons-material/CenterFocusStrongRounded';
@@ -11,9 +12,9 @@ import ZoomInRoundedIcon from '@mui/icons-material/ZoomInRounded';
 import ZoomOutRoundedIcon from '@mui/icons-material/ZoomOutRounded';
 import {
   expandableSkillIds, fitVisibleSkillNodes, flattenSkillNodes, layoutSkillMindMap,
-  parseSkillsDomain, parseSkillsManifest,
 } from './skillsMindMap.utils';
-import type { SkillNode, SkillsManifest, MapEdge } from './skillsMindMap.utils';
+import type { SkillNode, MapEdge } from './skillsMindMap.utils';
+import { loadPublishedSkills, resolveSkillLanguage } from './skillsData.client';
 import styles from './SkillsMindMap.module.css';
 import { SkillAction, SkillLeafCard, SkillMastery } from './SkillLeafCard';
 import { useSkillsPageSettings } from './SkillsPageSettingsContext';
@@ -31,14 +32,6 @@ function readableLanguage(code: string): string {
   } catch {
     return code;
   }
-}
-async function readJson(url: string, signal: AbortSignal): Promise<unknown> {
-  const response = await fetch(url, { signal });
-  if (!response.ok) throw new Error('Не вдалося завантажити ' + url + ' (' + response.status + ')');
-  return response.json() as Promise<unknown>;
-}
-function pathForDomain(slug: string, language: string): string {
-  return '/Data/Skills/' + encodeURIComponent(slug) + '/' + encodeURIComponent(language) + '.json';
 }
 function edgePath(edge: MapEdge, midpoint: number): string {
   const x1 = midpoint + edge.x1, y1 = midpoint + edge.y1;
@@ -104,10 +97,9 @@ function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, 
   );
 }
 
-export function SkillsMindMap() {
+export function SkillsMindMap({ domainSlugs }: { domainSlugs: readonly string[] }) {
   const { locale, localeError, setLanguageCode, registerMapActions } = useSkillsPageSettings();
-  const [manifest, setManifest] = useState<SkillsManifest | null>(null);
-  const [language, setLanguage] = useState<string | null>(null);
+  const language = resolveSkillLanguage(locale);
   const [domains, setDomains] = useState<SkillNode[]>([]);
   const [status, setStatus] = useState<LoadingStatus>('loading');
   const [error, setError] = useState('');
@@ -142,48 +134,15 @@ export function SkillsMindMap() {
 
   useEffect(() => {
     const controller = new AbortController();
-    void (async () => {
-      try {
-        const data = parseSkillsManifest(await readJson('/Data/Skills/index.json', controller.signal));
-        if (controller.signal.aborted) return;
-        setManifest(data);
-      } catch (cause) {
-        if (!controller.signal.aborted) {
-          setStatus('error');
-          setError(cause instanceof Error ? cause.message : 'Не вдалося прочитати каталог Skills.');
-        }
-      }
-    })();
-    return () => controller.abort();
-  }, []);
-
-  useEffect(() => {
-    if (!manifest) return;
-    const code = locale.split('-')[0];
-    if (!manifest.languages.includes(code)) {
-      setError('Мова "' + code + '" відсутня в опублікованому каталозі Skills.');
-      setStatus('error');
-      return;
-    }
-    setLanguage(code);
-  }, [manifest, locale]);
-
-  useEffect(() => {
-    if (!manifest || !language) return;
-    const controller = new AbortController();
     setStatus('loading');
     setError('');
     void (async () => {
       try {
-        const loaded = await Promise.all(manifest.domains.map(async slug => {
-          const json = await readJson(pathForDomain(slug, language), controller.signal);
-          return parseSkillsDomain(json, language, slug);
-        }));
-        const all = flattenSkillNodes(loaded);
+        const loaded = await loadPublishedSkills(domainSlugs, language, controller.signal);
         if (controller.signal.aborted) return;
+        const all = flattenSkillNodes(loaded);
         setDomains(loaded);
         if (firstLoad.current) {
-          // Fold groups in large catalogs; small Playground fixtures show all Skills.
           setCollapsed(new Set(all.length > 45
             ? all.filter(node => node.kind === 'skillGroup' && node.children.length > 0).map(node => node.id)
             : []));
@@ -193,12 +152,12 @@ export function SkillsMindMap() {
       } catch (cause) {
         if (!controller.signal.aborted) {
           setStatus('error');
-          setError(cause instanceof Error ? cause.message : 'Не вдалося завантажити домени.');
+          setError(cause instanceof Error ? cause.message : 'Не вдалося завантажити скіли.');
         }
       }
     })();
     return () => controller.abort();
-  }, [manifest, language]);
+  }, [domainSlugs, language]);
 
   useEffect(() => {
     const element = viewportRef.current;
@@ -379,7 +338,7 @@ export function SkillsMindMap() {
   };
 
   const onLanguageChange = (next: string) => {
-    if (!manifest?.languages.includes(next)) return;
+    if (!DEFAULT_SUPPORTED_LANGUAGES.some(item => item.language === next)) return;
     setLanguageCode(next);
   };
 
@@ -416,11 +375,10 @@ export function SkillsMindMap() {
       <Box className={styles.controls}>
         <label className={styles.languageControl}>
           <span>Мова даних</span>
-          <select aria-label="Мова даних Skills" value={language ?? ''}
-            onChange={event => onLanguageChange(event.target.value)} disabled={!manifest}>
-            {!manifest && <option value="">Завантаження…</option>}
-            {manifest?.languages.map(code =>
-              <option key={code} value={code}>{readableLanguage(code)} · {code}</option>)}
+          <select aria-label="Мова даних Skills" value={language}
+            onChange={event => onLanguageChange(event.target.value)}>
+            {DEFAULT_SUPPORTED_LANGUAGES.map(item =>
+              <option key={item.language} value={item.language}>{readableLanguage(item.language)} · {item.language}</option>)}
           </select>
         </label>
         <Stack direction="row" flexWrap="wrap" gap={1} alignItems="center">
