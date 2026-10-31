@@ -8,7 +8,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync, brotliCompressSync } from 'node:zlib';
 import {
-  languageCodes, loadSkillGraph, writePublishedFiles, checkPublishedFiles,
+  languageCodes, loadSkillGraph, writePublishedFiles, checkPublishedFiles, taxonomyCollections,
 } from '../../data/publish-skills-data.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../..');
@@ -20,6 +20,10 @@ function assert(ok, message) { if (!ok) throw new Error(message); }
 
 /** The page gets the exact fields it renders; no per-entity metadata lookups. */
 export function renderSkillAnalyticsFiles(graph, codes) {
+  const collections = taxonomyCollections();
+  for (const name of Object.values(collectionByKind)) {
+    assert(collections.has(name), 'Unsupported canonical Collection: ' + name);
+  }
   const files = new Map();
   const ids = new Set();
   function node(entity, language) {

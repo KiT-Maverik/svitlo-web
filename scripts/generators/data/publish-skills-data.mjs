@@ -180,7 +180,7 @@ export function loadSkillGraph(root, codes = languageCodes()) {
 /** Collection is a shared discriminated union, not an author-defined config field.
  * Ensure each Skill kind belongs to @svitlo/contracts/content's Collection type.
  */
-function taxonomyCollections() {
+export function taxonomyCollections() {
   const file = path.join(repositoryRoot, 'shared/contracts/src/types/misc.types.ts');
   const source = parse(file);
   const declaration = source.statements.find(item =>
