@@ -32,6 +32,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
     be: "Стварыць шкалу танальных значэнняў",
     ka: "ტონალური მნიშვნელობების სკალის შექმნა",
     kk: "Реңк мәндерінің шкаласын құрастыру",
+    qm: "Açıq-qaranqlıq derecesi cedvelini qurmaq",
   },
   description: {
     methodological: "Produce a controlled progression from light to dark that can organize tonal modeling.",
@@ -64,6 +65,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
       be: "Стварыце раўнамерны пераход тонаў ад светлага да цёмнага.",
       ka: "შექმენით ტონების თანაბარი გადასვლა ღიადან მუქისკენ.",
       kk: "Ашық түстен қою түске дейін біркелкі реңк ауысуын жасаңыз.",
+      qm: "Açıqtan qaranlıqqa doğru tonlarnıñ bir-birine teñ keçişini yapın.",
     },
   },
 });
