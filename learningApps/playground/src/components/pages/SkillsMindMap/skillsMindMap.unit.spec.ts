@@ -4,6 +4,8 @@ import {
   fitMindMapZoom,
   flattenSkillNodes,
   layoutSkillMindMap,
+  mockSkillMastery,
+  skillLearningHref,
   parseSkillsDomain,
   parseSkillsManifest,
 } from './skillsMindMap.utils';
@@ -94,5 +96,25 @@ describe('Radial Skills layout', () => {
 
   it('rejects duplicate entity IDs rather than merging unrelated nodes', () => {
     expect(() => flattenSkillNodes([sample(), sample()])).toThrow(/UUID/);
+  });
+});
+
+describe('Preview Skill mastery and learning CTA', () => {
+  it('returns a stable integer from 0 to 100 for each UUID, independent of language', () => {
+    const ids = Array.from({ length: 14 }, (_, index) => uuid(index + 1));
+    const values = ids.map(mockSkillMastery);
+    expect(values.every(score => Number.isInteger(score) && score >= 0 && score <= 100)).toBe(true);
+    expect(new Set(values).size).toBeGreaterThan(5);
+    expect(ids.map(mockSkillMastery)).toEqual(values);
+    expect(mockSkillMastery(uuid(3))).toBe(mockSkillMastery(uuid(3)));
+    expect(() => mockSkillMastery('not-a-uuid')).toThrow(/UUID/);
+  });
+
+  it('builds a language-specific destination for a stable Skill ID', () => {
+    expect(skillLearningHref(uuid(3), 'uk'))
+      .toBe('/skills/' + uuid(3) + '/learn?lang=uk');
+    expect(skillLearningHref(uuid(3), 'en'))
+      .toBe('/skills/' + uuid(3) + '/learn?lang=en');
+    expect(() => skillLearningHref(uuid(3), '../en')).toThrow(/мова/);
   });
 });
