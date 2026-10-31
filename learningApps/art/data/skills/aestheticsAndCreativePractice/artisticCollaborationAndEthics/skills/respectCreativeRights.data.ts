@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const respectCreativeRights_Skill_Data = buildSkillConfig({
-  slug: "respectCreativeRights", id: "cecf4513-eb92-4159-bae8-bdbec53c9960", name: { en: "Respect Creative Rights" },
+  slug: "respectCreativeRights", id: "cecf4513-eb92-4159-bae8-bdbec53c9960", name: {
+    en: "Respect Creative Rights",
+    zh: "尊重创作权利",
+    hi: "रचनात्मक अधिकारों का सम्मान करें",
+    es: "Respetar los derechos creativos",
+    ar: "احترام الحقوق الإبداعية",
+    fr: "Respecter les droits de création",
+    bn: "সৃজনশীল অধিকারকে সম্মান করুন",
+    pt: "Respeitar os direitos criativos",
+    ur: "تخلیقی حقوق کا احترام کریں",
+    id: "Menghormati Hak Cipta Kreatif",
+    de: "Kreative Rechte respektieren",
+    ja: "創作上の権利を尊重する",
+    ko: "창작 권리 존중하기",
+    tr: "Yaratıcı Haklara Saygı Duymak",
+    vi: "Tôn trọng quyền sáng tạo",
+    ta: "படைப்புரிமைகளை மதியுங்கள்",
+    te: "సృజనాత్మక హక్కులను గౌరవించండి",
+    mr: "सर्जनशील हक्कांचा आदर करा",
+    ms: "Menghormati Hak Kreatif",
+    he: "כיבוד זכויות יוצרים",
+    pl: "Szanować prawa twórcze",
+    uk: "Поважати творчі права",
+    lt: "Gerbti kūrybines teises",
+    lv: "Cienīt radošās tiesības",
+    et: "Loominguliste õiguste austamine",
+    be: "Паважаць творчыя правы",
+    ka: "შემოქმედებითი უფლებების პატივისცემა",
+    kk: "Шығармашылық құқықтарды құрметтеу",
+    qm: "Yaratıcılıq aqq-huquqlarına sayğı",
+  },
   description: { methodological: "Distinguish licenses, attribution and permitted reuse from an assumption that access equals permission.", frontend: {
           "en": "Check whether artwork may be reused and give the credit its rights require.",
           "zh": "确认作品是否允许再利用，并按照权利要求注明出处。",
@@ -31,5 +61,6 @@ export const respectCreativeRights_Skill_Data = buildSkillConfig({
           "be": "Правярайце, ці дазволена паўторна выкарыстоўваць твор, і пазначайце аўтарства паводле ўмоў правоў.",
           "ka": "შეამოწმეთ, ნებადართულია თუ არა ნამუშევრის ხელახლა გამოყენება და მიუთითეთ ავტორობა უფლებების შესაბამისად.",
           "kk": "Туындыны қайта пайдалануға болатынын тексеріп, құқық иелері талап еткен авторлық атрибуцияны көрсетіңіз."
-    } },
+    
+      qm: "Sanat eserini qayta qullanmağa izin bar-yoqluğını tekşiriñiz ve kerekli müelliflikni bildiriñiz.",} },
 });
