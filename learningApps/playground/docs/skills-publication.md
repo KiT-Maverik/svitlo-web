@@ -137,3 +137,20 @@ interaction until Fit is explicitly requested. The map's bottom-right fit icon
 invokes the exact same action. The right drawer closes after using Fit, so it
 cannot obscure the newly fitted graph. Removed redundant collapse/expand buttons from the
 top-of-page controls.
+
+## Touch interaction and visual styling
+
+The map viewport uses Pointer Events and `touch-action: none`. One touch pans;
+two concurrent touches pan and pinch-zoom around their moving midpoint. Pinch
+coordinates are computed in viewport space, so the same world point remains
+under the fingers instead of jumping towards the center. A short tap on a node
+still selects or expands it; multi-finger gestures do not activate node links.
+Mouse drag, zoom buttons and wheel zoom remain available, with wheel zoom
+anchored at the pointer. Both wheel and touch gestures share the same zoom limits.
+
+The UI uses separate Domain, Group and Skill shapes, numeric mastery meters and
+color bands. Mobile zoom controls have 44px touch targets and visible gesture
+instructions. The node/label palette includes a dark-mode variant for the
+`data-dark` MUI color scheme. Real-device Safari/Android multitouch interaction,
+font clipping with long translations, and visual WCAG contrast still need
+browser verification before a production release.
