@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const analyzePerceptualAmbiguity_Skill_Data = buildSkillConfig({
-  slug: "analyzePerceptualAmbiguity", id: "cb6e249e-37cc-4241-83a0-91760639c1a2", name: { en: "Analyze Perceptual Ambiguity" },
+  slug: "analyzePerceptualAmbiguity", id: "cb6e249e-37cc-4241-83a0-91760639c1a2", name: {
+    en: "Analyze Perceptual Ambiguity",
+    zh: "分析知觉歧义",
+    hi: "प्रत्यक्षण की अस्पष्टता का विश्लेषण करें",
+    es: "Analizar la ambigüedad perceptiva",
+    ar: "تحليل الالتباس الإدراكي",
+    fr: "Analyser l’ambiguïté perceptive",
+    bn: "উপলব্ধিগত দ্ব্যর্থতা বিশ্লেষণ করুন",
+    pt: "Analisar a ambiguidade perceptiva",
+    ur: "ادراکی ابہام کا تجزیہ کریں",
+    id: "Menganalisis Ambiguitas Persepsi",
+    de: "Wahrnehmungsmehrdeutigkeit analysieren",
+    ja: "知覚の曖昧さを分析する",
+    ko: "지각적 모호성 분석하기",
+    tr: "Algısal Belirsizliği Çözümlemek",
+    vi: "Phân tích tính đa nghĩa trong tri giác",
+    ta: "புலனுணர்வு தெளிவின்மையைப் பகுப்பாய்வு செய்யுங்கள்",
+    te: "గ్రహణ అస్పష్టతను విశ్లేషించండి",
+    mr: "आकलनातील संदिग्धतेचे विश्लेषण करा",
+    ms: "Menganalisis Kekaburan Persepsi",
+    he: "ניתוח עמימות תפיסתית",
+    pl: "Analizowanie wieloznaczności percepcyjnej",
+    uk: "Аналізувати перцептивну неоднозначність",
+    lt: "Analizuoti suvokimo dviprasmiškumą",
+    lv: "Analizēt uztveres daudznozīmību",
+    et: "Tajulise mitmetähenduslikkuse analüüsimine",
+    be: "Аналізаваць перцэптыўную неадназначнасць",
+    ka: "აღქმის ორაზროვნების ანალიზი",
+    kk: "Қабылдаудағы көпмағыналылықты талдау",
+    qm: "Idrakiy eki türlülikni tahlil etüv",
+  },
   description: { methodological: "Explain how one artistic configuration supports different perceptual organizations.", frontend: {
           "en": "Explore why the same picture or form can be perceived in different ways.",
           "zh": "探索同一图像或形式为何会产生不同的感知方式。",
@@ -31,5 +61,6 @@ export const analyzePerceptualAmbiguity_Skill_Data = buildSkillConfig({
           "be": "Даследуйце, чаму адну і тую ж выяву або форму можна ўспрымаць па-рознаму.",
           "ka": "შეისწავლეთ, რატომ შეიძლება ერთი და იგივე გამოსახულება ან ფორმა სხვადასხვაგვარად აღიქმებოდეს.",
           "kk": "Бір сурет немесе пішін неге әртүрлі қабылданатынын зерттеңіз."
-    } },
+    
+      qm: "Aynı resim ya da şekilniñ ne içün çeşit türlü idrak etilgenini araştırıñız.",} },
 });
