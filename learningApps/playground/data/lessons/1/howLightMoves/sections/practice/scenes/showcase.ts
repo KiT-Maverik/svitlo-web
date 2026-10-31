@@ -1,5 +1,6 @@
-import type {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
 import {LanguageCode} from "@svitlo/engine";
+
+import type {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
 
 type Locale = HowLightMoves_Lesson_Locale['section']['practice']['scene']['showcase'];
 
