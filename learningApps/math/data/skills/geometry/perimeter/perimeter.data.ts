@@ -12,6 +12,7 @@ export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
   id: 'af8b4afe-5e2e-4412-b46c-330707bf2ee4',
   name: {
     en: 'Perimeter',
+    qm: 'Perimetr',
     lt: 'Perimetras',
     lv: 'Perimetrs',
     et: 'Ümbermõõt',
@@ -51,6 +52,7 @@ export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
       "The length of a polygon's closed boundary as the sum of its sides, including rectangles and squares.",
     frontend: {
       en: 'Measure the distance all the way around a polygon by adding the lengths of its sides.',
+      qm: 'Çoqköşeliniñ bütün taraflarınıñ uzunlıqlarını qoşaraq onıñ etrafındaki umumiy mesafeni ölç.',
       zh: '把多边形各边的长度加起来，求出绕一周的总长度。',
       hi: 'बहुभुज की सभी भुजाओं की लंबाई जोड़कर उसके चारों ओर की दूरी नापें।',
       es: 'Mide la distancia alrededor de un polígono sumando las longitudes de sus lados.',
