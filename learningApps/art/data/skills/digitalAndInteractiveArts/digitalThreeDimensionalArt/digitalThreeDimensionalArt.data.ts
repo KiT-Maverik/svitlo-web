@@ -1,5 +1,7 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
+import { applyDigitalThreeDimensionalMaterials_Skill_Data, composeADigitalThreeDimensionalScene_Skill_Data, lightADigitalThreeDimensionalScene_Skill_Data, modelDigitalThreeDimensionalForms_Skill_Data } from './skills';
+
 export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig({
   slug: "digitalThreeDimensionalArt",
   id: "7a47dab9-19a9-4d22-9308-e97353302f3f",
