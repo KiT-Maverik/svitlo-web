@@ -32,6 +32,7 @@ describe('Widgets/Flag', () => {
     expect(flagCountryByLocale['lt-LT']).toBe('lt');
     expect(flagCountryByLocale['lv-LV']).toBe('lv');
     expect(flagCountryByLocale['et-EE']).toBe('ee');
+    expect(flagCountryByLocale['crh-Latn-UA']).toBe('crh');
   });
 
   it('reuses India for all four Indian-language locales', () => {
