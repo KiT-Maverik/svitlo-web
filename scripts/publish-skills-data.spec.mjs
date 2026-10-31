@@ -48,6 +48,7 @@ test('publishes all 2 domains, 4 groups, 8 Skills into localized standalone and 
   assert.equal(typeof group.skills[0].name, 'string');
 
   const skill = JSON.parse(files.get('testColors/testWarmColors/testRecognizeRed/en.json'));
+  assert.equal(skill.slug, 'testRecognizeRed');
   assert.equal(skill.collection, 'skill');
   assert.equal(skill.language, 'en');
   assert.equal(typeof skill.name, 'string');
@@ -75,6 +76,27 @@ test('requires every supported locale and refuses incomplete input before publis
     assert.notEqual(original, changed);
     fs.writeFileSync(target, changed);
     assert.throws(() => loadSkillGraph(copied, languageCodes()), /missing \[en\]/);
+  } finally {
+    fs.rmSync(temp, { recursive: true, force: true });
+  }
+});
+
+test('rejects missing canonical slugs and incomplete frontend descriptions', () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'skills-contract-'));
+  try {
+    const copied = path.join(temp, 'skills');
+    fs.cpSync(fixture, copied, { recursive: true });
+    const target = path.join(copied, 'testColors/testWarmColors/skills/testRecognizeRed.data.ts');
+    const original = fs.readFileSync(target, 'utf8');
+
+    fs.writeFileSync(target, original.replace("  slug: 'testRecognizeRed',\n", ''));
+    assert.throws(() => loadSkillGraph(copied, languageCodes()), /slug/);
+
+    fs.writeFileSync(target, original.replace('    frontend: {', '    fe: {'));
+    assert.throws(() => loadSkillGraph(copied, languageCodes()), /frontend|nonliteral|Unexpected/);
+
+    fs.writeFileSync(target, original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\n', ''));
+    assert.throws(() => loadSkillGraph(copied, languageCodes()), /missing \\[uk\\]/);
   } finally {
     fs.rmSync(temp, { recursive: true, force: true });
   }
