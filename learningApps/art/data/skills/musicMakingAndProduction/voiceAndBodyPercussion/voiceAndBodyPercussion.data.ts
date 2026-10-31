@@ -34,7 +34,7 @@ export const voiceAndBodyPercussion_SkillGroup_Data = buildSkillGroupConfig({
       be: "Голас і перкусія цела",
       ka: "ხმა და სხეულის პერკუსია",
       kk: "Дауыс және дене перкуссиясы",
-      qm: "Sәs vә bәdәn perkussiyası",
+      qm: "Ses ve beden perkussiyası",
     },
   skills: {
     controlSungPitch: controlSungPitch_Skill_Data,
@@ -74,7 +74,7 @@ export const voiceAndBodyPercussion_SkillGroup_Data = buildSkillGroupConfig({
       be: "Стварайце мелодыі і рытмы з дапамогай спеваў і гукаў, якія стварае цела.",
       ka: "შექმენით მელოდიები და რიტმები სიმღერითა და სხეულით წარმოქმნილი ხმებით.",
       kk: "Ән айту және денеден шығатын дыбыстар арқылы әуен мен ырғақ жасаңыз.",
-      qm: "Mahnı oxumaq vә bәdәnin yaratdığı sәslәrlә melodiyalar vә ritmlәr yaradın.",
+      qm: "Yırlav ve beden seslerinden faydalanıp melodiyalar ve ritmler yaratıñız.",
     }
   },
 });
