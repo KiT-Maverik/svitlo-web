@@ -60,7 +60,7 @@ export const giveArtisticFeedback_Skill_Data = buildSkillConfig({
           "et": "Anna kasulikke ja konkreetseid soovitusi, mis toetavad teise kunstniku eesmärke.",
           "be": "Давайце карысныя і канкрэтныя парады, якія дапамагаюць іншаму мастаку дасягнуць мэт.",
           "ka": "მიეცით სასარგებლო და კონკრეტული რჩევები, რომლებიც სხვა ხელოვანის მიზნებს ეხმარება.",
-          "kk": "Басқа суретшінің мақсатын қолдайтын пайдалы әрі нақты ұсыныстар беріңіз."
+          "kk": "Басқа суретшінің мақсатын қолдайтын пайдалы әрі нақты ұсыныстар беріңіз.",
     
       qm: "Başqa sanatkârnıñ maqsatlarına yardım etken faydalı ve belli tekliflerde bulunuñız.",} },
 });
