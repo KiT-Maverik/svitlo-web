@@ -60,7 +60,7 @@ export const produceArtisticStudies_Skill_Data = buildSkillConfig({
           "et": "Katseta visandeid või helikatsetusi, et avastada, milleks loominguline idee võib kujuneda.",
           "be": "Паспрабуйце эскізы або гукавыя эксперыменты, каб даведацца, у што можа ператварыцца творчая ідэя.",
           "ka": "სცადეთ ესკიზები ან ხმოვანი ექსპერიმენტები, რათა აღმოაჩინოთ, რად შეიძლება იქცეს შემოქმედებითი იდეა.",
-          "kk": "Шығармашылық идеяның қалай дамуы мүмкін екенін зерттеу үшін нобайлар немесе дыбыс тәжірибелерін жасаңыз."
+          "kk": "Шығармашылық идеяның қалай дамуы мүмкін екенін зерттеу үшін нобайлар немесе дыбыс тәжірибелерін жасаңыз.",
     
       qm: "Qaralama ya da ses tecribelerini yapıp, yaratıcılıq fikriniñ nelerge dönüşebilecegini keşf etiñiz.",} },
 });
