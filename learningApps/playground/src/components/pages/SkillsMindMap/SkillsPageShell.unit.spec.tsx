@@ -43,6 +43,10 @@ describe('Skills page in shared LearningLayout', () => {
     fireEvent.click(screen.getByRole('button', { name: aria.actions.openSettings }));
     const sidebar = await screen.findByRole('complementary', { name: aria.navigation.settings });
     expect(within(sidebar).getByRole('region', { name: 'Налаштування сторінки Skills' })).toBeInTheDocument();
+    const mapControls = within(sidebar).getByRole('region', { name: 'Керування мапою Skills' });
+    expect(within(mapControls).getByRole('button', { name: 'Згорнути все' })).toBeEnabled();
+    expect(within(mapControls).getByRole('button', { name: 'Розгорнути все' })).toBeEnabled();
+    expect(within(mapControls).getByRole('button', { name: 'Вмістити в екран' })).toBeEnabled();
     fireEvent.click(within(sidebar).getByRole('checkbox', { name: 'Показувати володіння навичкою' }));
     expect(within(card).queryByRole('progressbar')).not.toBeInTheDocument();
     fireEvent.click(within(sidebar).getByRole('checkbox', { name: 'Показувати володіння навичкою' }));
