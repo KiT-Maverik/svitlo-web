@@ -4,6 +4,8 @@ import { verification_SkillGroup_Data } from './verification/verification.data';
 
 import { representations_SkillGroup_Data } from './representations/representations.data';
 
+import { argumentation_SkillGroup_Data } from './argumentation/argumentation.data';
+
 export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
   id: '91e2d845-0c04-4a81-b126-8bad16300cad',
   name: {
@@ -37,6 +39,7 @@ export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Міркування",
   },
   groupIds: {
+    argumentation: argumentation_SkillGroup_Data.id,
     representations: representations_SkillGroup_Data.id,
     verification: verification_SkillGroup_Data.id,
   },
