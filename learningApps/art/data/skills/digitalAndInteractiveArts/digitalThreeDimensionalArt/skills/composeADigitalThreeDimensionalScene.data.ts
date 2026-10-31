@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const composeADigitalThreeDimensionalScene_Skill_Data = buildSkillConfig({
   slug: "composeADigitalThreeDimensionalScene",
   id: "a00f427a-6b68-4b89-8a2d-66229e13787f",
-  name: { en: "Compose a Digital Three-Dimensional Scene" },
+  name: {
+    en: "Compose a Digital Three-Dimensional Scene",
+    zh: "构成数字三维场景",
+    hi: "डिजिटल त्रि-आयामी दृश्य की रचना करें",
+    es: "Componer una escena digital tridimensional",
+    ar: "تكوين مشهد رقمي ثلاثي الأبعاد",
+    fr: "Composer une scène numérique tridimensionnelle",
+    bn: "ডিজিটাল ত্রিমাত্রিক দৃশ্য সাজান",
+    pt: "Compor uma cena digital tridimensional",
+    ur: "ڈیجیٹل سہ جہتی منظر ترتیب دیں",
+    id: "Menyusun Adegan Digital Tiga Dimensi",
+    de: "Eine digitale dreidimensionale Szene komponieren",
+    ja: "デジタルの三次元シーンを構成する",
+    ko: "디지털 3차원 장면 구성하기",
+    tr: "Dijital Üç Boyutlu Bir Sahne Oluşturmak",
+    vi: "Bố cục cảnh ba chiều kỹ thuật số",
+    ta: "மின்னிலக்க முப்பரிமாணக் காட்சியை அமைக்குங்கள்",
+    te: "డిజిటల్ త్రిమితీయ దృశ్యాన్ని కూర్చండి",
+    mr: "डिजिटल त्रिमितीय दृश्याची रचना करा",
+    ms: "Menyusun Adegan Digital Tiga Dimensi",
+    he: "יצירת סצנה דיגיטלית תלת־ממדית",
+    pl: "Komponować cyfrową scenę trójwymiarową",
+    uk: "Компонувати цифрову тривимірну сцену",
+    lt: "Komponuoti skaitmeninę trimatę sceną",
+    lv: "Veidot digitālu trīsdimensiju ainu",
+    et: "Digitaalse kolmemõõtmelise stseeni loomine",
+    be: "Кампанаваць лічбавую трохмерную сцэну",
+    ka: "ციფრული სამგანზომილებიანი სცენის კომპოზიცია",
+    kk: "Цифрлық үшөлшемді көріністі құрастыру",
+    qm: "Raqemiy üç ölçemli körünişni tertip etmek",
+  },
   description: {
     methodological: "Position objects and select a viewing frame to create meaningful depth, balance and relationships between subjects.",
     frontend: {
@@ -35,6 +65,7 @@ export const composeADigitalThreeDimensionalScene_Skill_Data = buildSkillConfig(
           "be": "Размясціце віртуальныя аб’екты і выберыце пункт гледжання, каб скампанаваць сцэну.",
           "ka": "განალაგეთ ვირტუალური ობიექტები და აირჩიეთ ხედვის წერტილი სცენის შესაქმნელად.",
           "kk": "Көріністі құрастыру үшін виртуалды нысандарды орналастырып, көру нүктесін таңдаңыз。"
-    },
+    
+      qm: "Sanal obyektlerni yerleştirip, sahneni qurmaq içün körüniş noqtasını saylañız.",},
   },
 });
