@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const collaborateArtistically_Skill_Data = buildSkillConfig({
-  slug: "collaborateArtistically", id: "5750d84f-a518-4d89-b106-31b3e9e5ffd2", name: { en: "Collaborate Artistically" },
+  slug: "collaborateArtistically", id: "5750d84f-a518-4d89-b106-31b3e9e5ffd2", name: {
+    en: "Collaborate Artistically",
+    zh: "开展艺术合作",
+    hi: "कलात्मक सहयोग करें",
+    es: "Colaborar artísticamente",
+    ar: "التعاون الفني",
+    fr: "Collaborer artistiquement",
+    bn: "শৈল্পিকভাবে সহযোগিতা করুন",
+    pt: "Colaborar artisticamente",
+    ur: "فنّی تعاون کریں",
+    id: "Berkolaborasi secara Artistik",
+    de: "Künstlerisch zusammenarbeiten",
+    ja: "芸術的に協働する",
+    ko: "예술적으로 협업하기",
+    tr: "Sanatsal İşbirliği Yapmak",
+    vi: "Cộng tác sáng tạo nghệ thuật",
+    ta: "கலைநயத்துடன் இணைந்து செயல்படுங்கள்",
+    te: "కళాత్మకంగా సహకరించండి",
+    mr: "कलात्मक सहकार्य करा",
+    ms: "Bekerjasama secara Artistik",
+    he: "שיתוף פעולה אמנותי",
+    pl: "Współpracować artystycznie",
+    uk: "Співпрацювати творчо",
+    lt: "Bendradarbiauti kuriant meną",
+    lv: "Sadarboties mākslinieciski",
+    et: "Kunstiline koostöö",
+    be: "Мастацкае супрацоўніцтва",
+    ka: "მხატვრული თანამშრომლობა",
+    kk: "Өнерде бірлесіп жұмыс істеу",
+    qm: "Sanat yolunda işbirlik etmek",
+  },
   description: { methodological: "Coordinate shared decisions and complementary contributions toward an expressive outcome.", frontend: {
           "en": "Combine different people's creative contributions into a shared artwork.",
           "zh": "将不同人的创意贡献结合为共同的艺术作品。",
@@ -31,5 +61,6 @@ export const collaborateArtistically_Skill_Data = buildSkillConfig({
           "be": "Аб’ядноўвайце творчы ўклад розных людзей у супольны мастацкі твор.",
           "ka": "გააერთიანეთ სხვადასხვა ადამიანის შემოქმედებითი წვლილი ერთობლივ ნამუშევარში.",
           "kk": "Әртүрлі адамдардың шығармашылық үлестерін біріктіріп, ортақ өнер туындысын жасаңыз."
-    } },
+    
+      qm: "Ayrı insanlarnıñ yaratıcılıq qatqılarını bir ortaq sanat eserinde birleştiriñiz.",} },
 });
