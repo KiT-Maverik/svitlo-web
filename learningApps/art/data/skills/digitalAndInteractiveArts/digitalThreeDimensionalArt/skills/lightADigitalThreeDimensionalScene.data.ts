@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const lightADigitalThreeDimensionalScene_Skill_Data = buildSkillConfig({
   slug: "lightADigitalThreeDimensionalScene",
   id: "3e861a92-d8a9-4cf7-94d0-9e8ac34c0d3f",
-  name: { en: "Light a Digital Three-Dimensional Scene" },
+  name: {
+    en: "Light a Digital Three-Dimensional Scene",
+    zh: "为数字三维场景布光",
+    hi: "डिजिटल त्रि-आयामी दृश्य में प्रकाश व्यवस्था करें",
+    es: "Iluminar una escena digital tridimensional",
+    ar: "إضاءة مشهد رقمي ثلاثي الأبعاد",
+    fr: "Éclairer une scène numérique tridimensionnelle",
+    bn: "ডিজিটাল ত্রিমাত্রিক দৃশ্যে আলো দিন",
+    pt: "Iluminar uma cena digital tridimensional",
+    ur: "ڈیجیٹل سہ جہتی منظر کو روشن کریں",
+    id: "Memberi Pencahayaan pada Adegan Digital Tiga Dimensi",
+    de: "Eine digitale dreidimensionale Szene beleuchten",
+    ja: "デジタルの三次元シーンに照明を当てる",
+    ko: "디지털 3차원 장면 조명하기",
+    tr: "Dijital Üç Boyutlu Bir Sahneyi Aydınlatmak",
+    vi: "Chiếu sáng cảnh ba chiều kỹ thuật số",
+    ta: "மின்னிலக்க முப்பரிமாணக் காட்சிக்கு ஒளியூட்டுங்கள்",
+    te: "డిజిటల్ త్రిమితీయ దృశ్యానికి వెలుతురు ఇవ్వండి",
+    mr: "डिजिटल त्रिमितीय दृश्याला प्रकाश द्या",
+    ms: "Menerangi Adegan Digital Tiga Dimensi",
+    he: "תאורה לסצנה דיגיטלית תלת־ממדית",
+    pl: "Oświetlać cyfrową scenę trójwymiarową",
+    uk: "Освітлювати цифрову тривимірну сцену",
+    lt: "Apšviesti skaitmeninę trimatę sceną",
+    lv: "Apgaismot digitālu trīsdimensiju ainu",
+    et: "Digitaalse kolmemõõtmelise stseeni valgustamine",
+    be: "Асвятляць лічбавую трохмерную сцэну",
+    ka: "ციფრული სამგანზომილებიანი სცენის განათება",
+    kk: "Цифрлық үшөлшемді көріністі жарықтандыру",
+    qm: "Raqemiy üç ölçemli körünişni yarıtmaq",
+  },
   description: {
     methodological: "Arrange illumination and shadows to establish form, mood and intended visual emphasis in a three-dimensional composition.",
     frontend: {
@@ -35,6 +65,7 @@ export const lightADigitalThreeDimensionalScene_Skill_Data = buildSkillConfig({
           "be": "Выкарыстоўвайце лічбавае асвятленне і цені, каб стварыць настрой і выявіць форму.",
           "ka": "გამოიყენეთ ციფრული განათება და ჩრდილები განწყობის შესაქმნელად და ფორმის გამოსაკვეთად.",
           "kk": "Көңіл күй қалыптастырып, пішінді айқындау үшін цифрлық жарық пен көлеңкені пайдаланыңыз。"
-    },
+    
+      qm: "Köñül vaziyetini yaratmaq ve şekilni köstermek içün raqemiy yarıq ve kölgeler qullanıñız.",},
   },
 });
