@@ -5,6 +5,7 @@ export const useRuler_Skill_Data = buildSkillConfig({
   id: '02a916c0-937f-41b8-a2d4-c48593b8798a',
   name: {
     en: 'Using a ruler',
+    qm: 'Cetvelni qullanmaq',
     lt: 'Naudojimasis liniuote',
     lv: 'Lineāla lietošana',
     et: 'Joonlaua kasutamine',
@@ -38,6 +39,7 @@ export const useRuler_Skill_Data = buildSkillConfig({
       'Use a ruler as a measurement instrument: recognize its zero mark and equal scale intervals, align the scale with a straight segment, and read the numbered centimeter marks. Basic use starts at zero; determining the length of an unknown segment is assessed separately.',
     frontend: {
       en: 'You can find the zero mark on a ruler, line it up with a straight segment, and read the evenly spaced centimeter marks.',
+      qm: 'Cetvelde sıfır belgisin tap, onı doğru kesiknen uyğunlaştır ve teñ aralıqlı santimetr belgilerini oqu.',
       zh: '你能找到直尺上的零刻度，把直尺沿线段对齐，并读懂间隔均匀的厘米刻度。',
       hi: 'तुम पैमाने पर शून्य का निशान ढूँढ़ सकते हो, उसे सीधे रेखाखंड के साथ सही रख सकते हो और बराबर दूरी वाले सेंटीमीटर के निशान पढ़ सकते हो।',
       es: 'Puedes localizar el cero de una regla, alinearla con un segmento recto y leer sus marcas de centímetros espaciadas por igual.',

@@ -12,6 +12,7 @@ export const mass_SkillGroup_Data = buildSkillGroupConfig({
   id: 'd4886ce5-e4e4-4df9-8482-244fed0d7e3c',
   name: {
     en: 'Mass',
+    qm: 'Kütle',
     lt: 'Masė',
     lv: 'Masa',
     et: 'Mass',
