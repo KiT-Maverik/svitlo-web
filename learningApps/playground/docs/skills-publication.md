@@ -60,3 +60,13 @@ child references fail generation instead of falling back to English.
 
 The synthetic Playground `[TEST <code>]` values are temporary fixtures, **not**
 valid translations for production use.
+
+## Playground Skills visualizer
+
+The `/skills` page loads `public/Data/Skills/index.json` to discover domain slugs and
+language codes. It then fetches only the selected language's Domain JSON files,
+so no client imports authoring `*.data.ts` files or downloads other languages.
+The radial view has an avatar root, collapsible Domain and Group branches,
+pan/zoom, an accessible outline mode, and an information panel. Skills are
+leaf nodes; selecting a leaf shows its description. The central avatar is an
+anonymous placeholder until a user-profile data source is connected.
