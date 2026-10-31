@@ -29,7 +29,7 @@ describe('Skills published data transport', () => {
     expect(data[0].children[0].children[0]).toMatchObject({
       id: uuid(3), slug: 'testRed', name: 'Червоний', description: 'Розпізнавати червоний.',
     });
-    const urls = vi.mocked(globalThis.fetch).mock.calls.map(([url]) => url);
+    const urls = vi.mocked(globalThis.fetch).mock.calls.map(([url]) => String(url));
     expect(urls).toHaveLength(6);
     expect(urls).toContain('/data/skills/testColors/meta.json');
     expect(urls).toContain('/data/skills/testColors/testWarmColors/testRed/uk.json');
@@ -40,7 +40,7 @@ describe('Skills published data transport', () => {
   it('loads another locale without downloading unrelated language files', async () => {
     const domains = await loadPublishedSkills(TEST_SKILLS_DOMAIN_SLUGS, 'en', new AbortController().signal);
     expect(domains[0].children[0].children[0].name).toBe('Red');
-    const urls = vi.mocked(globalThis.fetch).mock.calls.map(([url]) => url);
+    const urls = vi.mocked(globalThis.fetch).mock.calls.map(([url]) => String(url));
     expect(urls.filter(url => url.endsWith('/uk.json'))).toHaveLength(0);
   });
 
