@@ -32,6 +32,7 @@ export const produceAStencilPrint_Skill_Data = buildSkillConfig({
     be: "Ствараць трафарэтны адбітак",
     ka: "შაბლონური ანაბეჭდის შექმნა",
     kk: "Трафареттік баспа жасау",
+      qm: "Şablon baskısı yaratmaq",
   },
   description: {
     methodological: "Control masked and open regions so ink transfers the intended image.",
@@ -64,6 +65,7 @@ export const produceAStencilPrint_Skill_Data = buildSkillConfig({
       be: "Выкарыстоўвайце адтуліны ў трафарэце, каб надрукаваць выбраныя формы.",
       ka: "გამოიყენეთ შაბლონის ღიობები არჩეული ფორმების დასაბეჭდად.",
       kk: "Таңдаған пішіндерді басып шығару үшін трафареттегі ашық жерлерді пайдаланыңыз.",
+          qm: "Saylağan şekilleri baskı etmek içün şablondaki açıq yerlerden boya keçiriñiz.",
     },
   },
 });
