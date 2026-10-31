@@ -11,6 +11,7 @@ export const additiveComparison_Skill_Data = buildSkillConfig({
     ka: 'შეკრებით შედარების ამოცანების ამოხსნა',
     kk: 'Айырмалық салыстыру есептерін шығару',
     en: 'Solving additive comparison problems',
+    qm: 'Qoşuv ve çıqaruvnen qıyaslav meselelerini çezmek',
     zh: '解决加法比较问题',
     hi: 'योगात्मक तुलना की समस्याएँ हल करना',
     es: 'Resolver comparaciones aditivas',
@@ -38,6 +39,7 @@ export const additiveComparison_Skill_Data = buildSkillConfig({
       "Additive comparison determines the nonnegative difference between quantities expressed in compatible units. Asking 'how many more or fewer' is not the multiplicative question 'how many times as many', which requires a different operation.",
     frontend: {
       en: 'You can find how many more or fewer items one quantity has than another by comparing their difference, not by finding how many times as many.',
+      qm: 'Bir miqdarda digerinden qaç eşya artıq ya da eksik olğanını bilmek içün olarnıñ farqını tap. Neçe qat büyük olğanını tapmaqnen qarıştırma.',
       zh: '你能通过求差知道一个数量比另一个多多少或少多少，而不是求它是另一个的几倍。',
       hi: 'आप दो मात्राओं का अंतर निकालकर बता सकते हैं कि एक में दूसरी से कितना अधिक या कम है, न कि कितने गुना अधिक।',
       es: 'Puedes averiguar cuánto más o menos hay de una cantidad respecto a otra calculando su diferencia, no cuántas veces es mayor.',
