@@ -3,9 +3,9 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { analyzeArtisticMetaphor_Skill_Data, analyzeEmotionalExpression_Skill_Data, interpretArtisticSymbols_Skill_Data, relateArtisticFormToContent_Skill_Data } from './skills';
 
 export const expressionAndMeaning_SkillGroup_Data = buildSkillGroupConfig({
-  slug: "expressionAndMeaning", id: "", name: { en: "Expression and Meaning" },
+  slug: "expressionAndMeaning", id: "433ef00c-63d4-43d7-9d6f-764d0ba50c2b", name: { en: "Expression and Meaning" },
   skills: { analyzeArtisticMetaphor: analyzeArtisticMetaphor_Skill_Data, analyzeEmotionalExpression: analyzeEmotionalExpression_Skill_Data, interpretArtisticSymbols: interpretArtisticSymbols_Skill_Data, relateArtisticFormToContent: relateArtisticFormToContent_Skill_Data },
-  description: { methodological: "", frontend: {
+  description: { methodological: "Symbolism and emotional character require interpretations anchored in artistic choices and context.", frontend: {
           "en": "Explore how art communicates meaning through metaphor, emotion and form.",
           "zh": "探索艺术如何通过隐喻、情感和形式传达意义。",
           "hi": "जानें कि कला रूपक, भावना और रूप के माध्यम से अर्थ कैसे व्यक्त करती है।",
