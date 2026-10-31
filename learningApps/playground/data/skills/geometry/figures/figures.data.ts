@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { identify2dShapes_Skill_Data } from './skills';
+import { identify2dShapes_Skill_Data, shapeAttributes_Skill_Data } from './skills';
 
 export const figures_SkillGroup_Data = buildSkillGroupConfig({
   id: 'd4c9c57c-09a9-43f5-a7c5-3544d3133e51',
@@ -36,6 +36,7 @@ export const figures_SkillGroup_Data = buildSkillGroupConfig({
   },
   skillIds: {
     identify2dShapes: identify2dShapes_Skill_Data.id,
+    shapeAttributes: shapeAttributes_Skill_Data.id,
   },
   description: {
     methodological: "Properties of polygons and other plane figures that remain independent of scale or orientation, and composing shapes from parts.",
