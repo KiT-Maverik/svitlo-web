@@ -1,5 +1,7 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { collection_SkillGroup_Data } from './collection/collection.data';
+import { presentation_SkillGroup_Data } from './presentation/presentation.data';
+import { interpretation_SkillGroup_Data } from './interpretation/interpretation.data';
 
 
 export const data_SkillDomain_Data = buildSkillDomainConfig({
@@ -36,6 +38,8 @@ export const data_SkillDomain_Data = buildSkillDomainConfig({
   },
   groupIds: {
     collection: collection_SkillGroup_Data.id,
+    presentation: presentation_SkillGroup_Data.id,
+    interpretation: interpretation_SkillGroup_Data.id,
   },
   description: { methodological: "Formulating questions, collecting and classifying information, representing it in tables and charts, and drawing conclusions supported by the data." },
 });
