@@ -60,7 +60,7 @@ export const explainArtisticDecisions_Skill_Data = buildSkillConfig({
           "et": "Selgita, miks valisid kindlad materjalid, vormid või kunstilised lähenemisviisid.",
           "be": "Растлумачце, чаму вы выбралі пэўныя матэрыялы, формы або мастацкія падыходы.",
           "ka": "განმარტეთ, რატომ აირჩიეთ კონკრეტული მასალები, ფორმები ან მხატვრული მიდგომები.",
-          "kk": "Неліктен белгілі бір материалдарды, пішіндерді немесе көркемдік тәсілдерді таңдағаныңызды түсіндіріңіз."
+          "kk": "Неліктен белгілі бір материалдарды, пішіндерді немесе көркемдік тәсілдерді таңдағаныңызды түсіндіріңіз.",
     
       qm: "Sanatqa mahsus material, şekil ya da usullarnı ne içün saylağanıñıznı añlatıñız.",} },
 });
