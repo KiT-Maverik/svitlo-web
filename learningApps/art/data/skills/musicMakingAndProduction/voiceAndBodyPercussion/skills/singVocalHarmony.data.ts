@@ -32,7 +32,7 @@ export const singVocalHarmony_Skill_Data = buildSkillConfig({
       be: "Спяваць вакальную гармонію",
       ka: "ვოკალური ჰარმონიის შესრულება",
       kk: "Вокалдық үйлесімділікті айту",
-      qm: "Vokal harmoniyasını oxumaq",
+      qm: "Vokal armoniyanı yırlamaq",
     },
   description: {
     methodological: "Maintain an independent pitch part in relation to other simultaneous voices.",
@@ -65,7 +65,7 @@ export const singVocalHarmony_Skill_Data = buildSkillConfig({
       be: "Спявайце сваю гарманічную партыю, пакуль іншыя галасы гучаць адначасова.",
       ka: "საკუთარი ჰარმონიული პარტია იმღერეთ, სანამ სხვა ხმებიც ერთდროულად ჟღერს.",
       kk: "Басқа дауыстар қатар естілгенде, өзіңіздің гармониялық партияңызды айтыңыз.",
-      qm: "Başqa səslər eyni vaxtda eşidilərkən öz harmoniya partiyanızı oxuyun.",
+      qm: "Başqa sesler aynı vaqıtta eşitilgende, öz armoniya partiyañıznı yırlañız.",
     }
   },
 });
