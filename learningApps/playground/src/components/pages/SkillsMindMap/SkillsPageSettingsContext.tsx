@@ -1,7 +1,7 @@
 'use client';
 
 import {
-  createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode,
+  createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode,
 } from 'react';
 import { DEFAULT_SUPPORTED_LANGUAGES, getLocaleDirection, type Locale } from '@svitlo/engine/localization';
 
@@ -17,11 +17,20 @@ export const DEFAULT_SKILLS_PAGE_SETTINGS: SkillsPageSettings = {
   showPump: true,
 };
 
+export interface SkillsMapActions {
+  collapseAll: () => void;
+  expandAll: () => void;
+  fitToScreen: () => void;
+}
+
 interface SkillsPageContextValue {
   readonly settings: SkillsPageSettings;
   readonly locale: Locale;
   readonly ready: boolean;
   readonly localeError: string | null;
+  readonly mapReady: boolean;
+  readonly registerMapActions: (actions: SkillsMapActions | null) => void;
+  readonly runMapAction: (action: keyof SkillsMapActions) => void;
   readonly updateSetting: <K extends keyof SkillsPageSettings>(key: K, value: SkillsPageSettings[K]) => void;
   readonly setLocale: (locale: Locale) => void;
   readonly setLanguageCode: (code: string) => void;
@@ -40,6 +49,16 @@ export function SkillsPageSettingsProvider({ children }: { children: ReactNode }
   const [locale, updateLocale] = useState<Locale>('uk-UA');
   const [localeError, setLocaleError] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
+  const actionsRef = useRef<SkillsMapActions | null>(null);
+  const [mapReady, setMapReady] = useState(false);
+
+  const registerMapActions = useCallback((actions: SkillsMapActions | null) => {
+    actionsRef.current = actions;
+    setMapReady(actions !== null);
+  }, []);
+  const runMapAction = useCallback((action: keyof SkillsMapActions) => {
+    actionsRef.current?.[action]();
+  }, []);
 
   useEffect(() => {
     const requested = new URLSearchParams(window.location.search).get('lang');
@@ -88,8 +107,8 @@ export function SkillsPageSettingsProvider({ children }: { children: ReactNode }
   }, [setLocale]);
 
   const value = useMemo<SkillsPageContextValue>(
-    () => ({ settings, locale, localeError, ready, updateSetting, setLocale, setLanguageCode }),
-    [settings, locale, localeError, ready, updateSetting, setLocale, setLanguageCode],
+    () => ({ settings, locale, localeError, ready, mapReady, registerMapActions, runMapAction, updateSetting, setLocale, setLanguageCode }),
+    [settings, locale, localeError, ready, mapReady, registerMapActions, runMapAction, updateSetting, setLocale, setLanguageCode],
   );
   return <SkillsPageContext.Provider value={value}>{children}</SkillsPageContext.Provider>;
 }
