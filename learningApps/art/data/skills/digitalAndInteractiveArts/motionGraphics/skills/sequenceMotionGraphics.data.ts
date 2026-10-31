@@ -64,7 +64,7 @@ export const sequenceMotionGraphics_Skill_Data = buildSkillConfig({
           "et": "Järjesta liikuvad graafikaosad läbimõeldud rütmi ja üleminekutega.",
           "be": "Размяшчайце фрагменты рухомай графікі з прадуманым рытмам і пераходамі.",
           "ka": "დაალაგეთ მოძრავი გრაფიკის მონაკვეთები გააზრებული რიტმითა და გადასვლებით.",
-          "kk": "Қозғалмалы графика бөліктерін мақсатты ырғақ пен ауысулар арқылы реттеңіз。"
+          "kk": "Қозғалмалы графика бөліктерін мақсатты ырғақ пен ауысулар арқылы реттеңіз。",
     
       qm: "Hareketli grafik elementlerini maqsatlı bir zaman tertibinde birleştiriñiz.",},
   },
