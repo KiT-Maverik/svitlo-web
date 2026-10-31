@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const animateGraphicElements_Skill_Data = buildSkillConfig({
   slug: "animateGraphicElements",
   id: "d3914770-5d7c-4bb6-b169-f7b435084ddb",
-  name: { en: "Animate Graphic Elements" },
+  name: {
+    en: "Animate Graphic Elements",
+    zh: "制作图形元素动画",
+    hi: "ग्राफ़िक तत्वों को एनिमेट करें",
+    es: "Animar elementos gráficos",
+    ar: "تحريك العناصر الرسومية",
+    fr: "Animer des éléments graphiques",
+    bn: "গ্রাফিক উপাদানে অ্যানিমেশন দিন",
+    pt: "Animar elementos gráficos",
+    ur: "گرافک عناصر کو متحرک کریں",
+    id: "Menganimasikan Elemen Grafis",
+    de: "Grafische Elemente animieren",
+    ja: "グラフィック要素をアニメーション化する",
+    ko: "그래픽 요소 애니메이션 만들기",
+    tr: "Grafik Öğelerini Canlandırmak",
+    vi: "Tạo chuyển động cho các yếu tố đồ họa",
+    ta: "வரைகலைக் கூறுகளை அசைவூட்டுங்கள்",
+    te: "గ్రాఫిక్ అంశాలకు యానిమేషన్ ఇవ్వండి",
+    mr: "ग्राफिक घटकांना अ‍ॅनिमेट करा",
+    ms: "Menganimasikan Unsur Grafik",
+    he: "הנפשת רכיבים גרפיים",
+    pl: "Animować elementy graficzne",
+    uk: "Анімувати графічні елементи",
+    lt: "Animuoti grafinius elementus",
+    lv: "Animēt grafiskos elementus",
+    et: "Graafiliste elementide animeerimine",
+    be: "Анімаваць графічныя элементы",
+    ka: "გრაფიკული ელემენტების ანიმირება",
+    kk: "Графикалық элементтерді жандандыру",
+    qm: "Grafik elementlerni canlandırmaq",
+  },
   description: {
     methodological: "Create intentional movement or transformation of shapes, icons and graphical marks to convey emphasis, continuity or visual structure.",
     frontend: {
@@ -35,6 +65,7 @@ export const animateGraphicElements_Skill_Data = buildSkillConfig({
           "be": "Анімуйце формы і значкі, каб накіроўваць увагу або ствараць выразны рух.",
           "ka": "გააცოცხლეთ ფორმები და ხატულები ყურადღების მისაპყრობად ან გამომსახველობითი მოძრაობის შესაქმნელად.",
           "kk": "Назарды бағыттау немесе мәнерлі қозғалыс жасау үшін пішіндер мен белгішелерді жандандырыңыз。"
-    },
+    
+      qm: "Grafik şekillerge zaman içinde hereket beriñiz.",},
   },
 });
