@@ -32,7 +32,7 @@ export const recognizeHarmonicProgressions_Skill_Data = buildSkillConfig({
       be: "Распазнаваць гарманічныя паслядоўнасці",
       ka: "ჰარმონიული პროგრესიების ამოცნობა",
       kk: "Гармониялық тізбектерді тану",
-      qm: "Harmonik ardıcıllıqları tanımaq",
+      qm: "Armonik silsilelerni tanımaq",
     },
   description: {
     methodological: "Trace changes of harmonic support and their contribution to musical direction.",
@@ -65,7 +65,7 @@ export const recognizeHarmonicProgressions_Skill_Data = buildSkillConfig({
       be: "Сачыце, як змены акордаў дапамагаюць музыцы рухацца наперад.",
       ka: "დააკვირდით, როგორ ეხმარება აკორდების ცვლილება მუსიკას წინსვლაში.",
       kk: "Бақылаңыз: аккордтардың өзгеруі музыканы қалай алға жетелейді.",
-      qm: "Akkordların dəyişməsinin musiqini necə irəli apardığını izləyin.",
+      qm: "Akkordlarnıñ deñişüvi musiqanı nasıl ileriletkenini takip etiñiz.",
     }
   },
 });
