@@ -68,7 +68,7 @@ export const aestheticsAndCreativePractice_SkillDomain_Data = buildSkillDomainCo
           "et": "Uuri, kuidas kunst meid mõjutab, tähendust edastab ja loominguliste valikute kaudu areneb.",
           "be": "Даследуйце, як мастацтва ўплывае на нас, перадае сэнс і развіваецца дзякуючы творчым выбарам.",
           "ka": "შეისწავლეთ, როგორ მოქმედებს ხელოვნება ჩვენზე, გადმოსცემს მნიშვნელობას და ვითარდება შემოქმედებითი არჩევანით.",
-          "kk": "Зерде өнердің бізге қалай әсер ететінін, мағынаны қалай жеткізетінін және шығармашылық таңдаулар арқылы қалай дамитынын зерттеңіз。"
+          "kk": "Зерде өнердің бізге қалай әсер ететінін, мағынаны қалай жеткізетінін және шығармашылық таңдаулар арқылы қалай дамитынын зерттеңіз。",
     
       qm: "Sanat bizge nasıl tesir etkenini, mana bildirgenini ve yaratıcılıq seçimlerinen öskenini keşf etiñiz.",} },
 });
