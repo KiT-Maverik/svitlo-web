@@ -119,6 +119,27 @@ export function flattenSkillNodes(domains: readonly SkillNode[]): SkillNode[] {
   return nodes;
 }
 
+/**
+ * Preview-only mastery. Stable per Skill UUID (no Math.random on render), with
+ * no claim that this represents a learner's assessed competence.
+ * Replace this adapter with per-profile Skill mastery data when available.
+ */
+export function mockSkillMastery(skillId: string): number {
+  if (!uuidPattern.test(skillId)) throw new Error('Некоректний UUID скіла');
+  let hash = 2166136261;
+  for (const char of skillId) {
+    hash ^= char.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0) % 101;
+}
+
+export function skillLearningHref(skillId: string, language: string): string {
+  if (!uuidPattern.test(skillId)) throw new Error('Некоректний UUID скіла');
+  if (!languagePattern.test(language)) throw new Error('Некоректна мова');
+  return '/skills/' + encodeURIComponent(skillId) + '/learn?lang=' + encodeURIComponent(language);
+}
+
 export function expandableSkillIds(domains: readonly SkillNode[]): string[] {
   return flattenSkillNodes(domains).filter(node => node.children.length > 0).map(node => node.id);
 }
@@ -150,7 +171,7 @@ export function layoutSkillMindMap(domains: readonly SkillNode[], collapsed: Rea
     0,
   ];
   rings[2] = Math.max(rings[1] + 270, size(visibleCount[2], 0, 236));
-  rings[3] = Math.max(rings[2] + 275, size(visibleCount[3], 0, 224));
+  rings[3] = Math.max(rings[2] + 300, size(visibleCount[3], 0, 340));
   const lastDepth = visibleCount[3] ? 3 : visibleCount[2] ? 2 : 1;
   const extent = rings[lastDepth] + 170;
   const worldSize = Math.ceil(extent * 2);
