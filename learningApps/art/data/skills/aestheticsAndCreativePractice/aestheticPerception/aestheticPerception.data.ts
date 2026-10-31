@@ -3,7 +3,37 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { analyzePerceptualAmbiguity_Skill_Data, compareAestheticCriteria_Skill_Data, describeAnAestheticExperience_Skill_Data, distinguishBeautyAndArtisticValue_Skill_Data, relateContrastToAttention_Skill_Data } from './skills';
 
 export const aestheticPerception_SkillGroup_Data = buildSkillGroupConfig({
-  slug: "aestheticPerception", id: "7b4b3464-c383-4a38-b5a3-80942fa21937", name: { en: "Aesthetic Perception" },
+  slug: "aestheticPerception", id: "7b4b3464-c383-4a38-b5a3-80942fa21937", name: {
+    en: "Aesthetic Perception",
+    zh: "审美感知",
+    hi: "सौंदर्यबोध",
+    es: "Percepción estética",
+    ar: "الإدراك الجمالي",
+    fr: "Perception esthétique",
+    bn: "নান্দনিক উপলব্ধি",
+    pt: "Percepção estética",
+    ur: "جمالياتي ادراک",
+    id: "Persepsi Estetis",
+    de: "Ästhetische Wahrnehmung",
+    ja: "美的知覚",
+    ko: "미적 지각",
+    tr: "Estetik Algı",
+    vi: "Nhận thức thẩm mỹ",
+    ta: "அழகியல் உணர்தல்",
+    te: "సౌందర్య గ్రహణం",
+    mr: "सौंदर्यात्मक आकलन",
+    ms: "Persepsi Estetik",
+    he: "תפיסה אסתטית",
+    pl: "Percepcja estetyczna",
+    uk: "Естетичне сприйняття",
+    lt: "Estetinis suvokimas",
+    lv: "Estētiskā uztvere",
+    et: "Esteetiline taju",
+    be: "Эстэтычнае ўспрыманне",
+    ka: "ესთეტიკური აღქმა",
+    kk: "Эстетикалық қабылдау",
+    qm: "Estetik idrak",
+  },
   skills: { analyzePerceptualAmbiguity: analyzePerceptualAmbiguity_Skill_Data, compareAestheticCriteria: compareAestheticCriteria_Skill_Data, describeAnAestheticExperience: describeAnAestheticExperience_Skill_Data, distinguishBeautyAndArtisticValue: distinguishBeautyAndArtisticValue_Skill_Data, relateContrastToAttention: relateContrastToAttention_Skill_Data },
   description: { methodological: "Responses to art involve attentive perception, prior expectations and variable values without establishing universal audience reactions.", frontend: {
           "en": "Notice how different experiences and expectations shape our responses to art.",
@@ -34,5 +64,6 @@ export const aestheticPerception_SkillGroup_Data = buildSkillGroupConfig({
           "be": "Звяртайце ўвагу, як розны досвед і чаканні фарміруюць нашу рэакцыю на мастацтва.",
           "ka": "დააკვირდით, როგორ აყალიბებს განსხვავებული გამოცდილება და მოლოდინები ჩვენს რეაქციას ხელოვნებაზე.",
           "kk": "Әртүрлі тәжірибе мен күту өнерге деген көзқарасымызды қалай қалыптастыратынын байқаңыз."
-    } },
+    
+      qm: "Sanatqa bergen cevaplarımızğa tecribemiz ve beklentilerimiz tesir ete.",} },
 });
