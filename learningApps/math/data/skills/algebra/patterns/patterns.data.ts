@@ -7,6 +7,7 @@ export const patterns_SkillGroup_Data = buildSkillGroupConfig({
   id: '391a608f-ebba-4587-9c15-39437e736e36',
   name: {
     en: 'Patterns',
+    qm: 'Sayı nümüneleri',
     lt: 'Dėsningumai',
     lv: 'Likumsakarības',
     et: 'Seaduspärasused',
@@ -44,6 +45,7 @@ export const patterns_SkillGroup_Data = buildSkillGroupConfig({
       "Regular numerical changes following a rule and recognizing a sequence's structure from several terms.",
     frontend: {
       en: 'Explore number patterns by finding consistent changes, checking the rule, and using it to continue a sequence.',
+      qm: 'Sayılar arasındaki muntazam deñişmelerini tapıp, qaidesini teşkere et ve bu qaidege köre silsileni devam ettir.',
       zh: '探索数字规律：发现一致的变化、检验规律，并用它续写数列。',
       hi: 'संख्या-पैटर्न में नियमित बदलाव खोजो, नियम की जाँच करो और उसी से क्रम आगे बढ़ाओ।',
       es: 'Explora patrones numéricos encontrando cambios constantes, comprobando la regla y continuando la secuencia.',

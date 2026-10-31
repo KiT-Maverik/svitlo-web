@@ -5,6 +5,7 @@ export const completeEquality_Skill_Data = buildSkillConfig({
   id: 'b10f275e-3774-4e50-8450-b3da6be099af',
   name: {
     en: 'Completing a true equality',
+    qm: 'Doğru musaviylikni tamamlamaq',
     lt: 'Teisingos lygybės užpildymas',
     lv: 'Patiesas vienādības papildināšana',
     et: 'Tõese võrduse täiendamine',
@@ -38,6 +39,7 @@ export const completeEquality_Skill_Data = buildSkillConfig({
       'A missing value in an equation must make both sides equal. Finding it requires considering the operation structure and relevant number domain, rather than filling a familiar fact without checking.',
     frontend: {
       en: 'You can find a missing number that makes both sides of an equation have the same value.',
+      qm: 'Musaviylikniñ eki tarafınıñ qıymetini bir etken eksik sayını tapa bilesiñ.',
       zh: '你能找出缺少的数，使等式两边的值相等。',
       hi: 'तुम वह लुप्त संख्या खोज सकते हो जिससे समीकरण के दोनों पक्षों का मान बराबर हो।',
       es: 'Puedes encontrar el número que falta para que ambos lados de una igualdad tengan el mismo valor.',
