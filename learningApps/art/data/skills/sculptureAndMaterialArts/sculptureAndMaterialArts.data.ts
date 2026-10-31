@@ -58,7 +58,7 @@ export const sculptureAndMaterialArts_SkillDomain_Data = buildSkillDomainConfig(
       ar: "أنشئ أعمالًا مادية معبّرة باستخدام التشكيل والطباعة والطين والأقمشة ومواد أخرى.",
       fr: "Créez des objets physiques expressifs par le façonnage, l’impression, l’argile, le tissu et d’autres matériaux.",
       bn: "আকার দেওয়া, মুদ্রণ, মাটি, কাপড় ও অন্যান্য উপকরণ ব্যবহার করে অভিব্যক্তিপূর্ণ বস্তু তৈরি করুন।",
-      pt: "Crie objetos físicos expressivos através da modelação, impressão, argila, tecido e outros materiais.",
+      pt: "Crie objetos físicos expressivos com técnicas de modelagem, impressão, argila, tecido e outros materiais.",
       ur: "شکل سازی، پرنٹنگ، مٹی، کپڑے اور دیگر مواد سے اظہار انگیز اشیا بنائیں۔",
       id: "Buat objek fisik ekspresif dengan membentuk, mencetak, tanah liat, kain, dan bahan lainnya.",
       de: "Gestalte ausdrucksstarke Objekte durch Formen, Drucken, Ton, Stoff und andere Materialien.",
