@@ -92,6 +92,9 @@ test('English-only create needs no reviewed translations and keeps locales visib
   const domain=source(f,'geometry/geometry.data.ts');
   assert.match(skill,/en: "Compare Angles"/);
   assert.match(skill,/en: "Explore this topic\."/);
+  assert.match(skill,/name: \{\s*en: /);
+  assert.match(skill,/frontend: \{\s*en: /);
+  assert.doesNotMatch(skill,/["'](?:en|uk)["']\s*:/);
   assert.match(skill,/methodological: "Definition of Compare Angles\."/);
   assert.match(domain,/en: "Geometry"/);
   assert.doesNotMatch(skill,/uk:|\bas\s+Record\b|\bas\s+any\b/);
