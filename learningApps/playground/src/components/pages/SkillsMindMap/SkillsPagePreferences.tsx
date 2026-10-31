@@ -28,7 +28,7 @@ const OPTIONS: readonly {
   },
 ];
 
-export function SkillsPagePreferences() {
+export function SkillsPagePreferences({ onFitToScreen }: { onFitToScreen?: () => void } = {}) {
   const { settings, updateSetting, mapReady, runMapAction } = useSkillsPageSettings();
   return (
     <Box component="section" aria-label="Налаштування сторінки Skills">
@@ -77,7 +77,7 @@ export function SkillsPagePreferences() {
           </Button>
           <Button variant="contained" fullWidth disabled={!mapReady}
             startIcon={<CenterFocusStrongRoundedIcon />}
-            onClick={() => runMapAction('fitToScreen')}>
+            onClick={() => { runMapAction('fitToScreen'); onFitToScreen?.(); }}>
             Вмістити в екран
           </Button>
         </Stack>
