@@ -32,6 +32,7 @@ export const selectPaintingSupports_Skill_Data = buildSkillConfig({
     be: "Выбіраць асновы для жывапісу",
     ka: "ფერწერის საფუძვლების შერჩევა",
     kk: "Кескіндеме негіздерін таңдау",
+    qm: "Resim içün zemin saylamaq",
   },
   description: {
     methodological: "Match the properties of paper, canvas or board to adhesion, texture and expressive needs.",
@@ -64,6 +65,7 @@ export const selectPaintingSupports_Skill_Data = buildSkillConfig({
       be: "Абярыце паперу, палатно або іншую паверхню, якая падыходзіць для вашых матэрыялаў для жывапісу.",
       ka: "შეარჩიეთ ქაღალდი, ტილო ან სხვა ზედაპირი, რომელიც თქვენს სახატავ მასალებს შეესაბამება.",
       kk: "Кескіндеме материалдарыңызға сай қағазды, кенепті немесе басқа бетті таңдаңыз.",
+      qm: "Resim malzemeleriñizge uyğun qağıt, tuval ya da başqa bir zemin saylañız."
     },
   },
 });
