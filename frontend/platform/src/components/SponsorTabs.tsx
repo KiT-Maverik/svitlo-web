@@ -57,14 +57,14 @@ export default function SponsorTabs() {
             type="button"
             role="tab"
             aria-selected={active === tab.id}
-            aria-controls={'sponsor-panel-' + tab.id}
+            aria-controls="sponsor-panel"
             tabIndex={active === tab.id ? 0 : -1}
             onClick={() => setActive(tab.id)}
             onKeyDown={event => onKeyDown(event, index)}
           >{tab.label}</button>
         ))}
       </div>
-      <section className="sponsor-panel" id={'sponsor-panel-' + selected.id} role="tabpanel" aria-labelledby={'sponsor-tab-' + selected.id} tabIndex={0}>
+      <section className="sponsor-panel" id="sponsor-panel" role="tabpanel" aria-labelledby={'sponsor-tab-' + selected.id} tabIndex={0}>
         <div className="sponsor-panel__graphic" aria-hidden="true"><span>✳</span><i>✦</i></div>
         <div>
           <span className="eyebrow">ДЯКУЄМО ЗА ПІДТРИМКУ</span>

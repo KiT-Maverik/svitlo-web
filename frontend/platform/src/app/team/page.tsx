@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { PageIntro } from '@/components/PageIntro';
 
 export const metadata: Metadata = { title: 'Команда' };
@@ -41,7 +42,7 @@ export default function TeamPage() {
               <article className="team-card" key={person.name}>
                 <div className={'team-card__image team-card__image--' + person.style}>
                   {/* Demonstration images are not photographs of the named team members. */}
-                  <img src={person.photo} alt={'Ілюстративний портрет для картки «' + person.name + '»'} loading="lazy" />
+                  <Image unoptimized src={person.photo} alt={'Ілюстративний портрет для картки «' + person.name + '»'} loading="lazy" width={900} height={900} />
                   <span className="team-card__photo-note">Ілюстративне фото</span>
                 </div>
                 <div className="team-card__body">
