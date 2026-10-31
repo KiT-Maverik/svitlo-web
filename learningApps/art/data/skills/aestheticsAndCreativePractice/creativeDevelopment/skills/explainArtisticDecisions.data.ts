@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const explainArtisticDecisions_Skill_Data = buildSkillConfig({
-  slug: "explainArtisticDecisions", id: "99cb8606-3805-4c89-8461-0252e2bb3d19", name: { en: "Explain Artistic Decisions" },
+  slug: "explainArtisticDecisions", id: "99cb8606-3805-4c89-8461-0252e2bb3d19", name: {
+    en: "Explain Artistic Decisions",
+    zh: "解释艺术决策",
+    hi: "कलात्मक निर्णयों की व्याख्या करें",
+    es: "Explicar las decisiones artísticas",
+    ar: "شرح القرارات الفنية",
+    fr: "Expliquer les choix artistiques",
+    bn: "শৈল্পিক সিদ্ধান্ত ব্যাখ্যা করুন",
+    pt: "Explicar as decisões artísticas",
+    ur: "فنّی فیصلوں کی وضاحت کریں",
+    id: "Menjelaskan Keputusan Artistik",
+    de: "Künstlerische Entscheidungen erklären",
+    ja: "芸術的な選択を説明する",
+    ko: "예술적 선택 설명하기",
+    tr: "Sanatsal Kararları Açıklamak",
+    vi: "Giải thích các lựa chọn nghệ thuật",
+    ta: "கலைத் தேர்வுகளை விளக்குங்கள்",
+    te: "కళాత్మక నిర్ణయాలను వివరించండి",
+    mr: "कलात्मक निर्णय स्पष्ट करा",
+    ms: "Menjelaskan Keputusan Artistik",
+    he: "הסבר בחירות אמנותיות",
+    pl: "Wyjaśniać decyzje artystyczne",
+    uk: "Пояснювати мистецькі рішення",
+    lt: "Paaiškinti meninius sprendimus",
+    lv: "Paskaidrot mākslinieciskos lēmumus",
+    et: "Kunstiliste valikute selgitamine",
+    be: "Тлумачыць мастацкія рашэнні",
+    ka: "მხატვრული გადაწყვეტილებების ახსნა",
+    kk: "Өнерлік шешімдерді түсіндіру",
+    qm: "Sanatqa mahsus material, şekil ya da usullarnı ne içün saylağanıñıznı añlatıñız",
+  },
   description: { methodological: "Relate material and expressive choices to intention and actual constraints.", frontend: {
           "en": "Explain why you chose particular materials, forms or artistic approaches.",
           "zh": "解释选择特定材料、形式或艺术方法的原因。",
@@ -31,5 +61,6 @@ export const explainArtisticDecisions_Skill_Data = buildSkillConfig({
           "be": "Растлумачце, чаму вы выбралі пэўныя матэрыялы, формы або мастацкія падыходы.",
           "ka": "განმარტეთ, რატომ აირჩიეთ კონკრეტული მასალები, ფორმები ან მხატვრული მიდგომები.",
           "kk": "Неліктен белгілі бір материалдарды, пішіндерді немесе көркемдік тәсілдерді таңдағаныңызды түсіндіріңіз."
-    } },
+    
+      qm: "Sanatqa mahsus material, şekil ya da usullarnı ne içün saylağanıñıznı añlatıñız.",} },
 });
