@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const designKineticTypography_Skill_Data = buildSkillConfig({
   slug: "designKineticTypography",
   id: "5b04bfdb-9766-482f-8dd7-125a012fa600",
-  name: { en: "Design Kinetic Typography" },
+  name: {
+    en: "Design Kinetic Typography",
+    zh: "设计动态字体",
+    hi: "काइनेटिक टाइपोग्राफी डिज़ाइन करें",
+    es: "Diseñar tipografía cinética",
+    ar: "تصميم الطباعة الحركية",
+    fr: "Concevoir une typographie cinétique",
+    bn: "গতিশীল টাইপোগ্রাফি নকশা করুন",
+    pt: "Projetar tipografia cinética",
+    ur: "حرکی نوعِ خط ڈیزائن کریں",
+    id: "Merancang Tipografi Kinetik",
+    de: "Kinetische Typografie gestalten",
+    ja: "キネティックタイポグラフィをデザインする",
+    ko: "키네틱 타이포그래피 디자인하기",
+    tr: "Hareketli Tipografi Tasarlamak",
+    vi: "Thiết kế kiểu chữ động",
+    ta: "இயக்க அச்சுக்கலையை வடிவமைக்குங்கள்",
+    te: "కైనెటిక్ టైపోగ్రఫీని రూపకల్పన చేయండి",
+    mr: "कायनेटिक टायपोग्राफी तयार करा",
+    ms: "Mereka Bentuk Tipografi Kinetik",
+    he: "עיצוב טיפוגרפיה קינטית",
+    pl: "Projektować typografię kinetyczną",
+    uk: "Проєктувати кінетичну типографіку",
+    lt: "Kurti kinetinę tipografiją",
+    lv: "Veidot kinētisko tipogrāfiju",
+    et: "Kineetilise tüpograafia kujundamine",
+    be: "Праектаваць кінетычную тыпаграфіку",
+    ka: "კინეტიკური ტიპოგრაფიის დიზაინი",
+    kk: "Кинетикалық типографияны жобалау",
+    qm: "Hareketli tipografiyanı tasarlamaq",
+  },
   description: {
     methodological: "Use timing, position and transformation of letterforms or words to communicate meaning through their motion as well as their appearance.",
     frontend: {
@@ -35,6 +65,7 @@ export const designKineticTypography_Skill_Data = buildSkillConfig({
           "be": "Перадавайце сэнс рухомымі словамі праз іх рытм і трансфармацыі.",
           "ka": "მოძრავი სიტყვებით გადმოეცით აზრი დროისა და გარდაქმნების საშუალებით.",
           "kk": "Қозғалыстағы сөздердің уақытын және түрленуін басқарып, мағына жеткізіңіз."
-    },
+    
+      qm: "Yazı şekilleriniñ hareketi vastasınen mana ve tesir yaratqan tasarımını yapıñız.",},
   },
 });
