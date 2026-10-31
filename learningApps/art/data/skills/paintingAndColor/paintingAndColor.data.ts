@@ -36,6 +36,7 @@ export const paintingAndColor_SkillDomain_Data = buildSkillDomainConfig({
     be: "Жывапіс і колер",
     ka: "ფერწერა და ფერი",
     kk: "Кескіндеме және түс",
+    qm: "Resim ve tüs",
   },
   groups: {
     colorPractice: colorPractice_SkillGroup_Data,
@@ -73,6 +74,7 @@ export const paintingAndColor_SkillDomain_Data = buildSkillDomainConfig({
       be: "Даследуйце, як фарбы, пігменты і выбар колераў фарміруюць выразныя выявы.",
       ka: "შეისწავლეთ, როგორ ქმნის საღებავები, პიგმენტები და ფერების არჩევანი გამომსახველ სურათებს.",
       kk: "Бояулар, пигменттер және түстерді таңдау мәнерлі бейнелерді қалай қалыптастыратынын зерттеңіз.",
+      qm: "Boyalar, pigmentler ve tüs saylavı ifadeleyici resimlerni nasıl şekillendirgenini keşf etiñiz.",
     },
   },
 });
