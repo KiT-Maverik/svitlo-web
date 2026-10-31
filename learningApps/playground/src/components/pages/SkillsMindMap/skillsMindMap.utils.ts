@@ -222,3 +222,40 @@ export function fitMindMapZoom(layout: MindMapLayout, width: number, height: num
   const dimension = Math.max(1, layout.extent * 2);
   return Math.max(0.18, Math.min(1.2, (width - 30) / dimension, (height - 30) / dimension));
 }
+
+/** Fit the actually visible cards (compact or expanded), not an estimated ring radius. */
+export function fitVisibleSkillNodes(
+  layout: MindMapLayout,
+  expandedSkills: ReadonlySet<string>,
+  viewportWidth: number,
+  viewportHeight: number,
+): { zoom: number; pan: { x: number; y: number } } {
+  if (viewportWidth <= 0 || viewportHeight <= 0) {
+    return { zoom: 0.65, pan: { x: 0, y: 0 } };
+  }
+  // Profile avatar. The background halo is decorative and need not be fitted.
+  let left = -99, right = 99, top = -99, bottom = 99;
+  for (const node of layout.nodes) {
+    const halfWidth = node.kind === 'skill' ? (expandedSkills.has(node.id) ? 139 : 109)
+      : node.kind === 'skillDomain' ? 107 : 99;
+    const halfHeight = node.kind === 'skill' ? (expandedSkills.has(node.id) ? 167 : 75)
+      : node.kind === 'skillDomain' ? 57 : 54;
+    left = Math.min(left, node.x - halfWidth);
+    right = Math.max(right, node.x + halfWidth);
+    top = Math.min(top, node.y - halfHeight);
+    bottom = Math.max(bottom, node.y + halfHeight);
+  }
+  const margin = 56;
+  const zoom = Math.max(0.01, Math.min(
+    2.5,
+    (viewportWidth - margin) / (right - left),
+    (viewportHeight - margin) / (bottom - top),
+  ));
+  return {
+    zoom,
+    pan: {
+      x: -((right + left) / 2) * zoom,
+      y: -((bottom + top) / 2) * zoom,
+    },
+  };
+}
