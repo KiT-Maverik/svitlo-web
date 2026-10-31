@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const assessCulturalAppropriation_Skill_Data = buildSkillConfig({
-  slug: "assessCulturalAppropriation", id: "b537ef6c-162b-4dc4-bf91-de5836942ab9", name: { en: "Assess Cultural Appropriation" },
+  slug: "assessCulturalAppropriation", id: "b537ef6c-162b-4dc4-bf91-de5836942ab9", name: {
+    en: "Assess Cultural Appropriation",
+    zh: "评估文化挪用",
+    hi: "सांस्कृतिक विनियोग का आकलन करें",
+    es: "Evaluar la apropiación cultural",
+    ar: "تقييم الاستحواذ الثقافي",
+    fr: "Évaluer l’appropriation culturelle",
+    bn: "সাংস্কৃতিক আত্মসাৎ মূল্যায়ন করুন",
+    pt: "Avaliar a apropriação cultural",
+    ur: "ثقافتی appropriation کا جائزہ لیں",
+    id: "Menilai Apropriasi Budaya",
+    de: "Kulturelle Aneignung beurteilen",
+    ja: "文化的盗用を評価する",
+    ko: "문화적 전유 평가하기",
+    tr: "Kültürel Ödünç Almayı Değerlendirmek",
+    vi: "Đánh giá sự chiếm dụng văn hóa",
+    ta: "பண்பாட்டுத் தன்வயப்படுத்தலை மதிப்பிடுங்கள்",
+    te: "సాంస్కృతిక స్వాధీనాన్ని అంచనా వేయండి",
+    mr: "सांस्कृतिक विनियोगाचे मूल्यांकन करा",
+    ms: "Menilai Apropriasi Budaya",
+    he: "הערכת ניכוס תרבותי",
+    pl: "Ocena przywłaszczenia kulturowego",
+    uk: "Оцінювати культурне привласнення",
+    lt: "Įvertinti kultūrinį pasisavinimą",
+    lv: "Novērtēt kultūras piesavināšanos",
+    et: "Kultuurilise omastamise hindamine",
+    be: "Ацэньваць культурнае прысваенне",
+    ka: "კულტურული მითვისების შეფასება",
+    kk: "Мәдени иемденуді бағалау",
+    qm: "Medeniy özgeçirmecilikni baqıv",
+  },
   description: { methodological: "Weigh permission, cultural significance and power relationships when adapting artistic material.", frontend: {
           "en": "Consider cultural meaning, permission and unequal power when using others' traditions.",
           "zh": "使用他人传统时，考虑其文化意义、许可和权力不平等。",
@@ -31,5 +61,6 @@ export const assessCulturalAppropriation_Skill_Data = buildSkillConfig({
           "be": "Выкарыстоўваючы чужыя традыцыі, улічвайце культурнае значэнне, дазвол і няроўнасць улады.",
           "ka": "სხვების ტრადიციების გამოყენებისას გაითვალისწინეთ კულტურული მნიშვნელობა, ნებართვა და ძალაუფლების უთანასწორობა.",
           "kk": "Өзге мәдени дәстүрлерді қолданғанда олардың мәнін, рұқсатты және билік теңсіздігін ескеріңіз."
-    } },
+    
+      qm: "Başqa cemaatlerniñ ananelerini qullanğanda, medeniy mananı, izin ve quvet farqlarını köz ögüne alıñız.",} },
 });
