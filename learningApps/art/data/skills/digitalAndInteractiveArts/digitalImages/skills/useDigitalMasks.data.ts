@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const useDigitalMasks_Skill_Data = buildSkillConfig({
   slug: "useDigitalMasks",
   id: "42e3c5c8-422a-4c86-a014-aa1ffda952c2",
-  name: { en: "Use Digital Masks" },
+  name: {
+    en: "Use Digital Masks",
+    zh: "使用数字蒙版",
+    hi: "डिजिटल मास्क का उपयोग करें",
+    es: "Usar máscaras digitales",
+    ar: "استخدام الأقنعة الرقمية",
+    fr: "Utiliser des masques numériques",
+    bn: "ডিজিটাল মাস্ক ব্যবহার করুন",
+    pt: "Usar máscaras digitais",
+    ur: "ڈیجیٹل ماسک استعمال کریں",
+    id: "Menggunakan Masker Digital",
+    de: "Digitale Masken verwenden",
+    ja: "デジタルマスクを使う",
+    ko: "디지털 마스크 사용하기",
+    tr: "Dijital Maskeleri Kullanmak",
+    vi: "Sử dụng mặt nạ kỹ thuật số",
+    ta: "மின்னிலக்க முகமூடிகளைப் பயன்படுத்துங்கள்",
+    te: "డిజిటల్ మాస్క్‌లను ఉపయోగించండి",
+    mr: "डिजिटल मास्क वापरा",
+    ms: "Menggunakan Topeng Digital",
+    he: "שימוש במסכות דיגיטליות",
+    pl: "Używać masek cyfrowych",
+    uk: "Використовувати цифрові маски",
+    lt: "Naudoti skaitmenines kaukes",
+    lv: "Izmantot digitālās maskas",
+    et: "Digitaalsete maskide kasutamine",
+    be: "Выкарыстоўваць лічбавыя маскі",
+    ka: "ციფრული ნიღბების გამოყენება",
+    kk: "Цифрлық бүркеніштерді пайдалану",
+    qm: "Raqemiy maskalarnı qullanmaq",
+  },
   description: {
     methodological: "Control selective visibility and alteration of parts of a composition.",
     frontend: {
@@ -35,6 +65,7 @@ export const useDigitalMasks_Skill_Data = buildSkillConfig({
           "be": "Хавайце або паказвайце часткі выявы, каб уносіць дакладныя змены.",
           "ka": "დამალეთ ან გამოაჩინეთ გამოსახულების ნაწილები ზუსტი ცვლილებების შესატანად.",
           "kk": "Нақты өзгерістер енгізу үшін кескіннің бөліктерін жасырыңыз немесе көрсетіңіз。"
-    },
+    
+      qm: "Maqsatlı deñiştirmeler yapmaq içün suretniñ bir qısımını gizleñ ya da kösteriñ.",},
   },
 });
