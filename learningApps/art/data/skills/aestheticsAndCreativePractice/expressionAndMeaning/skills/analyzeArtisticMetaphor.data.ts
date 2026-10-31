@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const analyzeArtisticMetaphor_Skill_Data = buildSkillConfig({
-  slug: "analyzeArtisticMetaphor",
-  id: "578f26db-2e1d-4325-939a-2752e177b352",
-  name: {
-    en: "Analyze Artistic Metaphor",
-  },
-  description: {
-    methodological: "Explain how artistic choices transfer a relationship from one domain of experience to another.",
-    frontend: {
-      en: "Explore how an artwork can communicate an idea through metaphor.",
-    },
-  },
+  slug: "analyzeArtisticMetaphor", id: "578f26db-2e1d-4325-939a-2752e177b352", name: { en: "Analyze Artistic Metaphor" },
+  description: { methodological: "Explain how artistic choices transfer a relationship from one domain of experience to another.", frontend: {
+          "en": "Explore how an artwork can communicate an idea through metaphor.",
+          "zh": "探索艺术作品如何通过隐喻传达想法。",
+          "hi": "जानें कि कलाकृति रूपक के माध्यम से किसी विचार को कैसे व्यक्त कर सकती है।",
+          "es": "Explora cómo una obra puede comunicar una idea mediante la metáfora.",
+          "ar": "استكشف كيف يمكن للعمل الفني إيصال فكرة من خلال الاستعارة.",
+          "fr": "Découvrez comment une œuvre peut communiquer une idée par la métaphore.",
+          "bn": "রূপকের মাধ্যমে একটি শিল্পকর্ম কীভাবে ধারণা প্রকাশ করতে পারে তা জানুন।",
+          "pt": "Explore como uma obra pode comunicar uma ideia por meio da metáfora.",
+          "ur": "جانیں کہ فن پارہ استعارے کے ذریعے کسی خیال کو کیسے پہنچا سکتا ہے۔",
+          "id": "Jelajahi bagaimana karya seni dapat menyampaikan gagasan melalui metafora.",
+          "de": "Entdecke, wie ein Kunstwerk eine Idee durch Metaphern vermitteln kann.",
+          "ja": "芸術作品が比喩を通じてどのようにアイデアを伝えるかを探ります。",
+          "ko": "작품이 은유를 통해 어떻게 생각을 전달할 수 있는지 살펴보세요.",
+          "tr": "Bir sanat eserinin metafor yoluyla bir fikri nasıl aktarabileceğini keşfedin.",
+          "vi": "Khám phá cách tác phẩm nghệ thuật truyền tải ý tưởng thông qua phép ẩn dụ.",
+          "ta": "உருவகத்தின் மூலம் ஒரு கலைப்படைப்பு கருத்தை எவ்வாறு தெரிவிக்க முடியும் என்பதை ஆராயுங்கள்.",
+          "te": "రూపకం ద్వారా కళాకృతి ఒక ఆలోచనను ఎలా తెలియజేయగలదో తెలుసుకోండి.",
+          "mr": "रूपकाच्या माध्यमातून कलाकृती एखादी कल्पना कशी व्यक्त करू शकते ते जाणून घ्या.",
+          "ms": "Terokai bagaimana karya seni dapat menyampaikan idea melalui metafora.",
+          "he": "גלו כיצד יצירת אמנות יכולה להעביר רעיון באמצעות מטפורה.",
+          "pl": "Odkryj, jak dzieło sztuki może przekazywać ideę za pomocą metafory.",
+          "uk": "Дослідіть, як мистецький твір може передавати ідею за допомогою метафори.",
+          "lt": "Sužinokite, kaip meno kūrinys gali perteikti idėją pasitelkdamas metaforą.",
+          "lv": "Izpētiet, kā mākslas darbs var paust ideju ar metaforas palīdzību.",
+          "et": "Uuri, kuidas kunstiteos võib metafoori abil ideed edasi anda.",
+          "be": "Даследуйце, як мастацкі твор можа перадаваць ідэю праз метафару.",
+          "ka": "შეისწავლეთ, როგორ შეუძლია ნამუშევარს მეტაფორის საშუალებით იდეის გადმოცემა.",
+          "kk": "Fedezze fel, hogyan közvetíthet egy műalkotás gondolatot metaforán keresztül。"
+    } },
 });
