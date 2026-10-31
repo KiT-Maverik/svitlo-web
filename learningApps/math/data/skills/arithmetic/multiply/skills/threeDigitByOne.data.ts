@@ -35,7 +35,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplying a three-digit number by a one-digit factor relies on decomposition into hundreds, tens, and ones and the distributive law. Carrying between places must preserve the total product.",
-    fe: {
+    frontend: {
       en: "You can multiply a three-digit number by a one-digit number using hundreds, tens, and ones, carrying when needed.",
       zh: "你能按百位、十位和个位计算三位数乘一位数，必要时进位。",
       hi: "तुम सैकड़े, दहाइयाँ और इकाइयाँ लेकर तीन अंकों की संख्या का एक अंक से गुणा कर सकते हो और ज़रूरत पर हासिल आगे ले जा सकते हो।",

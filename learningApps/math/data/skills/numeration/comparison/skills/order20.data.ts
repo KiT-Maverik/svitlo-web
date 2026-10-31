@@ -35,7 +35,7 @@ export const order20_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Ordering numbers relies on the order relation: each next value in a nondecreasing sequence is no smaller, and in a nonincreasing sequence no greater. Equal repeated values do not break non-strict order.",
-    fe: {
+    frontend: {
       en: "Arrange numbers from 0 to 20 from smaller to larger or the other way around. Equal numbers can appear next to each other.",
       zh: "把0到20的数按从小到大或从大到小排列，相等的数也可以相邻出现。",
       hi: "0 से 20 तक संख्याएँ बढ़ते या घटते क्रम में रखें। समान संख्याएँ साथ आ सकती हैं।",

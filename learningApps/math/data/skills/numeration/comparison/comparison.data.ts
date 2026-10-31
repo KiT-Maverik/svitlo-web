@@ -43,7 +43,7 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Order relations between quantities and numerical representations, including comparison symbols and sorting numbers.",
-    fe: {
+    frontend: {
       en: "Compare quantities and numbers to tell which is greater, smaller, or equal, and put numbers in order.",
       zh: "比较数量和数的大小或相等关系，并按顺序排列数字。",
       hi: "मात्राओं और संख्याओं की तुलना करके बड़ी, छोटी या बराबर पहचानें और उन्हें क्रम में रखें।",

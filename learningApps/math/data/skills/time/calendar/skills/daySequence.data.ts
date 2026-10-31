@@ -34,7 +34,7 @@ export const daySequence_Skill_Data = buildSkillConfig({
     uk: "Упорядкування частин доби",
   },
   description: { methodological: "Parts of the day form a recurring cycle, but their everyday names and boundaries depend on context. The competency concerns their sequence and matching events to approximate periods, without assigning a fixed clock time to each label.",
-    fe: {
+    frontend: {
       en: "You can put morning, afternoon, evening, and night in order and connect them to everyday activities, knowing their exact times can vary.",
       zh: "你能按顺序排列早晨、下午、傍晚和夜晚，并联系日常活动，知道这些时段没有统一的精确起止时间。",
       hi: "आप सुबह, दोपहर, शाम और रात को क्रम में रखकर दैनिक कामों से जोड़ सकते हैं और समझ सकते हैं कि इनके सटीक समय अलग हो सकते हैं।",

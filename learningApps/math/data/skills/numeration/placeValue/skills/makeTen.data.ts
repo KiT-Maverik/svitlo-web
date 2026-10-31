@@ -35,7 +35,7 @@ export const makeTen_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Ten units of a given place are equivalent to one unit of the next higher place. Regrouping and ungrouping preserve the number's value and underpin decimal notation and carrying.",
-    fe: {
+    frontend: {
       en: "Group ten ones into a ten, or split a ten back into ten ones. The amount stays the same.",
       zh: "十个一可以合成一个十，一个十也可以拆成十个一；总量不变。",
       hi: "दस इकाइयों को एक दहाई बनाएँ या एक दहाई को फिर दस इकाइयों में बाँटें। मात्रा वही रहती है।",

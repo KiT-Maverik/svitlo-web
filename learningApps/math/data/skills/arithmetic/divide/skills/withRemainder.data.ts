@@ -35,7 +35,7 @@ export const withRemainder_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Integer division with positive divisor b yields quotient q and remainder r satisfying a = bq + r and 0 <= r < b. The quotient counts complete groups and the remainder is what cannot make another full group.",
-    fe: {
+    frontend: {
       en: "You can find a whole-number quotient and remainder, where the remainder is smaller than the positive divisor and the two together reconstruct the dividend.",
       zh: "你能求出整数商和余数，其中余数小于正除数，而除数乘商加余数等于被除数。",
       hi: "तुम पूर्णांक भागफल और शेष निकाल सकते हो, जहाँ शेष धनात्मक भाजक से छोटा हो और भाजक × भागफल + शेष से मूल संख्या मिले।",

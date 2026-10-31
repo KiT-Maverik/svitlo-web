@@ -35,7 +35,7 @@ export const wholeAndEqualParts_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A fractional part is defined by dividing the same whole into parts of equal magnitude. Arbitrary pieces need not be halves; the visual form of the whole does not remove the equal-parts requirement.",
-    fe: {
+    frontend: {
       en: "Choose the whole and divide it into equal-sized parts to name a fraction. Pieces of different sizes are not equal fractions of that whole.",
       zh: "选定一个整体，把它平均分成大小相同的份数，才能用分数表示；大小不同的部分不能算相等的份。",
       hi: "एक पूरा तय करके उसे बराबर आकार के भागों में बाँटें। अलग आकार के टुकड़े बराबर भिन्न भाग नहीं हैं।",

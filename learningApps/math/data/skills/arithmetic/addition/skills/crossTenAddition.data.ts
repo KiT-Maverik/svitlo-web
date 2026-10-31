@@ -35,7 +35,7 @@ export const crossTenAddition_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "If the ones sum exceeds nine, ten ones can be exchanged for one ten with remaining ones. This place-value regrouping preserves the numerical value regardless of calculation method.",
-    fe: {
+    frontend: {
       en: "When the ones in an addition make ten or more, you can regroup ten ones as one ten while keeping the total unchanged.",
       zh: "相加时，如果个位相加得到十或更多，你可以把十个一换成一个十，总数不变。",
       hi: "जब जोड़ में इकाइयों का योग दस या अधिक हो, तो दस इकाइयों को एक दहाई में बदल सकते हैं, बिना कुल योग बदले।",

@@ -35,7 +35,7 @@ export const triangleRectangleSquare_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Triangles, rectangles, and squares are characterized by relations among sides and angles. A square is a rectangle with all sides equal; geometric categories can be nested rather than mutually exclusive.",
-    fe: {
+    frontend: {
       en: "Recognize triangles, rectangles, and squares by their sides and angles. Every square is a rectangle.",
       zh: "根据边和角认识三角形、长方形及正方形。所有正方形都是长方形。",
       hi: "भुजाओं और कोणों से त्रिभुज, आयत और वर्ग पहचानें। हर वर्ग एक आयत है।",

@@ -35,7 +35,7 @@ export const checkProduct_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "An estimate indicates the expected order of magnitude of a product; exactness can be checked by a valid inverse operation or independent calculation. Merely reversing factor order may repeat an earlier error rather than check independently.",
-    fe: {
+    frontend: {
       en: "You can check a multiplication result by estimating its size and using division or another independent calculation.",
       zh: "你能先估算乘积的大小，再用除法或另一种独立算法检查乘法结果。",
       hi: "तुम गुणनफल का अनुमान लगाकर और भाग या किसी दूसरी स्वतंत्र गणना से गुणा का उत्तर जाँच सकते हो।",

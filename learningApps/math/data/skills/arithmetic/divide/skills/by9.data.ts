@@ -35,7 +35,7 @@ export const by9_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division by nine is inverse to the matching products with factor nine. Known multiples or equivalent decompositions can determine the quotient across the family of facts.",
-    fe: {
+    frontend: {
       en: "You can divide by nine using multiples of nine and the link between multiplication and division.",
       zh: "你能利用九的倍数以及乘除法之间的关系来计算除以九。",
       hi: "तुम नौ के गुणजों और गुणा-भाग के संबंध से नौ से भाग कर सकते हो।",

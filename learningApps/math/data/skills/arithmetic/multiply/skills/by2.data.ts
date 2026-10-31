@@ -35,7 +35,7 @@ export const by2_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplication by two is doubling: a × 2 = a + a. Equal groups and repeated addition support understanding without making any single representation mandatory.",
-    fe: {
+    frontend: {
       en: "You can find twice a quantity by adding it to itself.",
       zh: "你能把一个数量与它自身相加，求出它的两倍。",
       hi: "किसी मात्रा को उसी मात्रा में जोड़कर उसका दोगुना निकाल सकते हो।",

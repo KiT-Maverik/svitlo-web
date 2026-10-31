@@ -34,7 +34,7 @@ export const wordProblemsMeasures_Skill_Data = buildSkillConfig({
     uk: "Розв’язування практичних задач на величини в сумісних одиницях"
   },
   description: { methodological: "Calculations with measured quantities require compatible units and dimensionally valid operations. Addition or subtraction is meaningful only for commensurable quantities, and the result must retain the appropriate unit and interpretation.",
-    fe: {
+    frontend: {
       en: "You can solve practical problems with measured quantities by using compatible units and giving the answer with the correct unit.",
       zh: "你能用相容的单位解决涉及测量量的实际问题，并在答案中写出正确的单位。",
       hi: "आप मापी गई मात्राओं वाले व्यावहारिक प्रश्न संगत इकाइयों से हल कर सकते हैं और उत्तर सही इकाई में लिख सकते हैं।",

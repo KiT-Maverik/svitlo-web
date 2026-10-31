@@ -35,7 +35,7 @@ export const fractionGreaterThanOne_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "An improper fraction whose numerator exceeds its positive denominator is greater than one. It can be represented as a mixed number or a point to the right of one on a positive number line; the unit whole stays fixed.",
-    fe: {
+    frontend: {
       en: "When the top number is greater than the bottom number, the fraction is more than one whole. Show it with whole parts, a mixed number, or a number line.",
       zh: "分子大于分母时，分数大于1。可以用整份、带分数或数轴来表示。",
       hi: "अंश हर से बड़ा हो तो भिन्न एक से बड़ा है। इसे पूरे भागों, मिश्रित संख्या या संख्या रेखा पर दिखाएँ।",

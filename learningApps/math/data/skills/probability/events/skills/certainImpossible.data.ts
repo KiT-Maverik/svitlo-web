@@ -34,7 +34,7 @@ export const certainImpossible_Skill_Data = buildSkillConfig({
     uk: "Розрізнення достовірних і неможливих подій",
   },
   description: { methodological: "For a specified random experiment, a certain event includes every possible outcome and an impossible event includes none. Other possible events can have different probabilities; possibility does not imply a 50% chance.",
-    fe: {
+    frontend: {
       en: "You can recognize which events must happen and which cannot happen in a given random experiment. An event can be possible without having a 50% chance.",
       zh: "你能判断在指定的随机试验中哪些事件必然发生，哪些不可能发生。事件有可能发生，并不代表它有50%的概率。",
       hi: "आप किसी यादृच्छिक प्रयोग में पहचान सकते हैं कि कौन-सी घटनाएँ निश्चित रूप से होंगी और कौन-सी नहीं हो सकतीं। किसी घटना के संभव होने का अर्थ यह नहीं कि उसकी संभावना 50% है।",

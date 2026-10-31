@@ -34,7 +34,7 @@ export const calculateChange_Skill_Data = buildSkillConfig({
     uk: "Обчислення решти",
   },
   description: { methodological: "Change is the difference between the amount actually paid and the amount due, provided the payment is sufficient. It must be expressed in the same currency, and adding the change to the purchase price checks the result.",
-    fe: {
+    frontend: {
       en: "You can calculate the change you should receive when you pay enough money for a purchase and check it against the price.",
       zh: "你能在付款足够时算出购物应找回的零钱，并核对找零与商品价格是否相符。",
       hi: "आप पर्याप्त भुगतान करने पर मिलने वाली बाकी रकम निकाल सकते हैं और खरीद के दाम से उसकी जाँच कर सकते हैं।",

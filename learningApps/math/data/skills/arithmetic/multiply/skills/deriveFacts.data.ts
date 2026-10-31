@@ -35,7 +35,7 @@ export const deriveFacts_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "An unknown table product may be derived from familiar products using commutativity, associativity, distributivity, doubling, or changing a factor. This demonstrates structural understanding rather than mere fact recall.",
-    fe: {
+    frontend: {
       en: "You can work out unfamiliar multiplication facts from familiar ones by regrouping, splitting numbers, or doubling.",
       zh: "你能通过重新分组、拆分数字或翻倍，利用熟悉的乘法事实推算不熟悉的结果。",
       hi: "तुम ज्ञात गुणा के तथ्यों से समूह बदलकर, संख्याएँ तोड़कर या दोगुना करके नए गुणनफल निकाल सकते हो।",

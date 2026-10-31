@@ -35,7 +35,7 @@ export const countBy100_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A step of one hundred increases the number of complete hundreds by one; the tens and ones stay unchanged as long as the range permits. This relies on decimal place value.",
-    fe: {
+    frontend: {
       en: "Add one hundred at each step while the tens and ones stay the same.",
       zh: "每次加100，百位增加，十位和个位保持不变。",
       hi: "हर कदम पर सौ जोड़ें; दहाइयों और इकाइयों के अंक वही रहते हैं।",

@@ -35,7 +35,7 @@ export const inverseOperations_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Addition and subtraction are inverses in the relevant number domains. For a + b = c, checking c - b = a or c - a = b uses the same mathematical relationship.",
-    fe: {
+    frontend: {
       en: "You can undo an addition with subtraction and undo a subtraction with addition by using the relationship between the numbers.",
       zh: "你能用减法撤销加法、用加法撤销减法，理解算式中各个数之间的关系。",
       hi: "तुम संख्याओं के संबंध का उपयोग कर जोड़ को घटाव से और घटाव को जोड़ से उलट सकते हो।",

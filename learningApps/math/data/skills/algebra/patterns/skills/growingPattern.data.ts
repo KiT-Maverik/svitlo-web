@@ -35,7 +35,7 @@ export const growingPattern_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "From successive values such as 2, 6, 10, one may infer a growth rule of adding four, but the proposed rule must be tested against all supplied terms before treating it as established.",
-    fe: {
+    frontend: {
       en: "You can find a rule that describes how a number sequence grows and check that it fits all the given numbers.",
       zh: "你能发现数列增长的规律，并检查它是否符合所有给出的数。",
       hi: "तुम बढ़ते संख्या-क्रम का नियम खोज सकते हो और जाँच सकते हो कि वह सभी दिए गए पदों पर लागू होता है।",

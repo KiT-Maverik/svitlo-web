@@ -35,7 +35,7 @@ export const relationToMultiplication_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division is inverse to multiplication: knowing a product and a nonzero factor makes it possible to determine the other factor. This relationship supports checking a quotient by multiplication.",
-    fe: {
+    frontend: {
       en: "You can use multiplication to find or check a division answer because the two operations are inverses.",
       zh: "你能利用乘法求出或检查除法结果，因为乘法和除法互为逆运算。",
       hi: "तुम गुणा का उपयोग कर भाग का उत्तर निकाल या जाँच सकते हो, क्योंकि ये दोनों एक-दूसरे की उलटी संक्रियाएँ हैं।",

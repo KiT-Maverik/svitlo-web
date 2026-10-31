@@ -35,7 +35,7 @@ export const tensOnes_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Express a two-digit number as a multiple of ten plus its remaining ones without changing the value. The numeral, place-value blocks, and addition expression are equivalent representations of one number.",
-    fe: {
+    frontend: {
       en: "Build a two-digit number from tens and ones, or split it into them. For example, 47 = 40 + 7.",
       zh: "用十和一组成两位数，也能拆回去，例如47 = 40 + 7。",
       hi: "दहाई और इकाई से दो अंकों की संख्या बनाएँ या तोड़ें, जैसे 47 = 40 + 7।",

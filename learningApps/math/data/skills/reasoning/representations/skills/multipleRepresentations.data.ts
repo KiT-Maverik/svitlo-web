@@ -35,7 +35,7 @@ export const multipleRepresentations_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Physical models, diagrams, verbal descriptions, and symbolic expressions can encode the same mathematical relationship. A valid translation preserves quantities, the roles of values, and their relationships, not just the written numerals.",
-    fe: {
+    frontend: {
       en: "You can show the same mathematical relationship with objects, diagrams, words, or expressions while keeping the quantities and their connections unchanged.",
       zh: "你能用实物、图示、文字或算式表示同一个数学关系，同时保持数量及其相互关系不变。",
       hi: "आप वस्तुओं, चित्रों, शब्दों या व्यंजकों से एक ही गणितीय संबंध दिखा सकते हैं और मात्राओं तथा उनके संबंधों को सही रख सकते हैं।",

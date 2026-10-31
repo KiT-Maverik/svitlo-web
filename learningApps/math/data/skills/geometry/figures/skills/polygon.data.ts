@@ -35,7 +35,7 @@ export const polygon_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A polygon is a plane figure bounded by a closed polygonal chain of straight segments meeting at vertices. Not every closed curve forms a polygon; the boundary differs from its interior region.",
-    fe: {
+    frontend: {
       en: "Recognize a polygon as a closed shape bounded by straight sides that meet at corners.",
       zh: "认识多边形：由相接于顶点的直线段围成的封闭图形。",
       hi: "बहुभुज को पहचानें: सीधी भुजाओं से घिरी बंद आकृति जिनकी जोड़ पर कोने होते हैं।",

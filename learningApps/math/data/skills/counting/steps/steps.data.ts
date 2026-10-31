@@ -42,7 +42,7 @@ export const steps_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Moving through the number sequence by fixed increments, connected with equal groups, tens, and hundreds rather than counting individual units.",
-    fe: {
+    frontend: {
       en: "Count equal groups by adding the same amount each time. Use steps of 2, 5, 10, or 100 instead of counting each object separately.",
       zh: "每次数相同的数量，就能按组数数。可以每次加2、5、10或100，不必逐个数物品。",
       hi: "हर बार समान मात्रा जोड़कर बराबर समूहों की गिनती करें। हर वस्तु अलग गिनने के बजाय 2, 5, 10 या 100 के कदम लें।",

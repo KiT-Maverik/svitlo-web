@@ -47,7 +47,7 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
   },
   description: {
     methodological: "Mathematical expressions, equalities, inequalities, variables and unknowns, patterns, generalizations, and symbolic descriptions of relationships. The scope is not constrained to a particular age, numerical range, or notation.",
-    fe: {
+    frontend: {
       en: "Explore how equations, expressions, letters standing for numbers, and patterns can describe relationships and help you find unknown values.",
       zh: "探索方程、表达式、代表数字的字母和数列规律怎样描述数量关系并帮助求出未知值。",
       hi: "जानो कि समीकरण, व्यंजक, संख्याओं के स्थान पर अक्षर और संख्या-पैटर्न संबंध कैसे दिखाते हैं तथा अज्ञात मान खोजने में मदद करते हैं।",

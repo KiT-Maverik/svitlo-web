@@ -34,7 +34,7 @@ export const decimeters_Skill_Data = buildSkillConfig({
     uk: "Перетворення дециметрів і сантиметрів"
   },
   description: { methodological: "One decimeter equals ten centimeters. Converting between them multiplies or divides the numerical measure by ten while preserving the actual length; always state the unit.",
-    fe: {
+    frontend: {
       en: "You can change decimeters into centimeters and back, knowing that 1 dm = 10 cm and the actual length stays the same.",
       zh: "你能把分米换算成厘米，也能反向换算，知道1分米等于10厘米，实际长度不变。",
       hi: "आप डेसीमीटर को सेंटीमीटर में और वापस बदल सकते हैं, जानते हुए कि 1 डेसीमीटर = 10 सेंटीमीटर और लंबाई वही रहती है।",

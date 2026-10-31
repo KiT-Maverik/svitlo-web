@@ -35,7 +35,7 @@ export const denominatorMeaning_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The positive denominator specifies the number of equal parts in the chosen unit whole. It determines the magnitude of one part but not how many parts have been selected.",
-    fe: {
+    frontend: {
       en: "The bottom number tells how many equal parts make one whole. It tells the size of each part, not how many parts you have.",
       zh: "分母表示一个整体平均分成多少份，决定每份大小，但不表示取了几份。",
       hi: "हर बताता है कि पूरा कितने बराबर भागों में बँटा है। इससे एक भाग का आकार पता चलता है, लिए गए भागों की संख्या नहीं।",

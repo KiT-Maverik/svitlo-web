@@ -41,7 +41,7 @@ export const estimation_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Approximate numerical values and quantities, rounding, and matching estimation precision to the magnitude of the actual quantity.",
-    fe: {
+    frontend: {
       en: "Make sensible approximations of quantities or values and round numbers to a useful level of precision.",
       zh: "对数量或数值作出合理估计，并按需要的精度四舍五入。",
       hi: "मात्राओं या मानों का उचित अनुमान लगाएँ और आवश्यक सटीकता तक संख्याएँ पूर्णांकित करें।",

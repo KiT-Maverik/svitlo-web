@@ -35,7 +35,7 @@ export const parentheses_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Parentheses specify how subexpressions are grouped and can change the conventional order of operations. Evaluation must respect nesting and operation precedence without arbitrarily moving or removing parentheses.",
-    fe: {
+    frontend: {
       en: "You can work out expressions with parentheses by calculating the grouped parts first, including parentheses inside parentheses.",
       zh: "你能先计算括号内的部分，包括嵌套括号，求出表达式的值。",
       hi: "तुम कोष्ठकों वाले व्यंजक में पहले कोष्ठकों के भीतर की गणना कर सकते हो, चाहे उनके अंदर और कोष्ठक हों।",

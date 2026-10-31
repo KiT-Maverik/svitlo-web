@@ -35,7 +35,7 @@ export const hundredsTensOnes_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A three-digit number has a unique standard decimal decomposition into hundreds, tens, and ones. Its digits provide coefficients of the corresponding place values; a zero indicates no units of that place.",
-    fe: {
+    frontend: {
       en: "See how the digits in a three-digit number show hundreds, tens, and ones, including places containing zero.",
       zh: "三位数的数字分别表示百、十和个，某一数位也可能用零占位。",
       hi: "तीन अंकों वाली संख्या में सैकड़ा, दहाई और इकाई पहचानें, जहाँ शून्य भी किसी खाली स्थान को दिखा सकता है।",

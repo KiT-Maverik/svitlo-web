@@ -35,7 +35,7 @@ export const angleTypes_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "An acute angle has measure strictly between 0 and 90 degrees, a right angle measures 90 degrees, and an obtuse angle lies strictly between 90 and 180 degrees. The drawn lengths of the arms do not affect classification.",
-    fe: {
+    frontend: {
       en: "Tell acute angles (less than 90°), right angles (90°), and obtuse angles (between 90° and 180°) apart.",
       zh: "区分锐角（小于90°）、直角（90°）和钝角（大于90°且小于180°）。",
       hi: "न्यून कोण (90° से कम), समकोण (90°) और अधिक कोण (90° से 180° के बीच) पहचानें।",

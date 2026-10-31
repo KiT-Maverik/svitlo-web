@@ -35,7 +35,7 @@ export const by2_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division facts by two rely on inverse multiplication-by-two facts and models of halving or pairing. Context determines whether the quotient represents a group count or the size of each group.",
-    fe: {
+    frontend: {
       en: "You can divide by two to find two equal shares or work out how many groups of two fit into a total.",
       zh: "你能通过除以二，把总量分成两等份，或求出其中包含多少组两个。",
       hi: "तुम दो से भाग देकर दो बराबर हिस्से निकाल सकते हो या देख सकते हो कि कुल में दो-दो के कितने समूह हैं।",

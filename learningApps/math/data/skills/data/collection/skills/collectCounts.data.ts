@@ -34,7 +34,7 @@ export const collectCounts_Skill_Data = buildSkillConfig({
     uk: "Підрахунок частот категорій",
   },
   description: { methodological: "A category's frequency is the number of observations assigned to it. Counting must be consistent and unambiguous, and frequencies of exhaustive, nonoverlapping categories must sum to the total number of observations.",
-    fe: {
+    frontend: {
       en: "You can count how often each category appears in a set of observations and check that the category counts add up to the total.",
       zh: "你能统计每类在观察记录中出现的次数，并核对各类数量之和是否等于总数。",
       hi: "आप गिन सकते हैं कि अवलोकनों में हर श्रेणी कितनी बार आई और जाँच सकते हैं कि सभी श्रेणियों की गिनती कुल के बराबर है।",

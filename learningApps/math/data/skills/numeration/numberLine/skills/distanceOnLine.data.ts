@@ -35,7 +35,7 @@ export const distanceOnLine_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Distance between integer coordinates is the nonnegative absolute difference, independent of direction. On the number line it equals the number of unit intervals between them.",
-    fe: {
+    frontend: {
       en: "Count unit intervals between integer points on a number line. The distance is the same in either direction.",
       zh: "数出数轴上两个整数点之间的单位间隔。无论从哪边量，距离都相同。",
       hi: "संख्या रेखा पर दो पूर्णांक बिंदुओं के बीच इकाई-अंतराल गिनें। दोनों दिशाओं में दूरी समान है।",

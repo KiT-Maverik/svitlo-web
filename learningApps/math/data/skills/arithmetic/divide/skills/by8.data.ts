@@ -35,7 +35,7 @@ export const by8_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Divide by eight using the corresponding multiplication-by-eight fact or a model of equal groups. Apply the relationship to different division facts, not only a single memorized example.",
-    fe: {
+    frontend: {
       en: "You can divide by eight using equal groups or known products involving eight.",
       zh: "你能利用相等的组或包含八的已知乘积来计算除以八。",
       hi: "तुम बराबर समूहों या आठ वाले ज्ञात गुणनफल से आठ से भाग कर सकते हो।",

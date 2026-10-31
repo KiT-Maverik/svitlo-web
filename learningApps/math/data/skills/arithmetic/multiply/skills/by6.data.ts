@@ -35,7 +35,7 @@ export const by6_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplication facts with factor six give multiples of six and may be derived from known multiples of five plus one more equal group or other equivalent decompositions. Strategy does not change product identity.",
-    fe: {
+    frontend: {
       en: "To multiply by six, you can combine five equal groups with one more or use other known products.",
       zh: "计算乘以六时，你能先算五个相等的组再加一组，或利用其他已知乘积。",
       hi: "छह से गुणा करने के लिए पाँच बराबर समूहों में एक और समूह जोड़ सकते हो या ज्ञात गुणनफल इस्तेमाल कर सकते हो।",

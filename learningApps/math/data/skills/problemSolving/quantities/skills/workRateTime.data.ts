@@ -34,7 +34,7 @@ export const workRateTime_Skill_Data = buildSkillConfig({
     uk: "Зв’язок продуктивності, часу й обсягу роботи",
   },
   description: { methodological: "At a constant work rate, the amount of completed work equals rate multiplied by elapsed time. Units must be consistent, and the formula does not directly model varying rates without an additional assumption or model.",
-    fe: {
+    frontend: {
       en: "You can relate a steady work rate, elapsed time, and completed work: multiplying the rate by time gives the amount done when the rate stays constant.",
       zh: "你能联系恒定的工作速度、经过的时间和完成的工作量：速度不变时，速度乘时间就是工作量。",
       hi: "आप स्थिर कार्य-दर, बीते समय और किए गए काम का संबंध समझ सकते हैं: दर स्थिर हो तो दर को समय से गुणा करने पर काम की मात्रा मिलती है।",

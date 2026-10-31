@@ -42,7 +42,7 @@ export const perimeter_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "The length of a polygon's closed boundary as the sum of its sides, including rectangles and squares.",
-    fe: {
+    frontend: {
       en: "Measure the distance all the way around a polygon by adding the lengths of its sides.",
       zh: "把多边形各边的长度加起来，求出绕一周的总长度。",
       hi: "बहुभुज की सभी भुजाओं की लंबाई जोड़कर उसके चारों ओर की दूरी नापें।",

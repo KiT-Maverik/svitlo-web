@@ -35,7 +35,7 @@ export const zero_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Zero is the cardinality of a set without elements; a container with nothing inside is not itself absent. Zero is a number that participates in the number sequence and arithmetic.",
-    fe: {
+    frontend: {
       en: "Zero means there are no objects in a collection. An empty container still exists, and zero is a number.",
       zh: "零表示一组中没有任何物品。空容器仍然存在，零也仍然是一个数。",
       hi: "शून्य का मतलब है कि समूह में कोई वस्तु नहीं है। खाली डिब्बा फिर भी मौजूद है, और शून्य एक संख्या है।",

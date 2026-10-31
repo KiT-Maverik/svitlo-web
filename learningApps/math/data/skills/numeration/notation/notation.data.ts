@@ -42,7 +42,7 @@ export const notation_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Digits as signs in the decimal system and the correspondence between spoken number names, written notation, and quantities for one-, two-, and three-digit numbers.",
-    fe: {
+    frontend: {
       en: "Connect spoken numbers, written digits, and the quantities they represent, including zero and numbers with several digits.",
       zh: "把数的读法、数字写法和它表示的数量联系起来，包括零和多位数。",
       hi: "संख्याओं के बोले गए नाम, लिखे अंक और उनसे व्यक्त मात्राएँ जोड़ें, शून्य व कई अंकों वाली संख्याएँ भी।",

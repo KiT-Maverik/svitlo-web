@@ -50,7 +50,7 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Fractional representation relative to a specified whole: unit and nonunit parts, conventional fraction notation, equivalent fractions, geometric models, and values greater than one.",
-    fe: {
+    frontend: {
       en: "Show parts of a chosen whole with fraction symbols, pictures, or a number line, including fractions equal to or greater than one.",
       zh: "用分数符号、图形或数轴表示选定整体的部分，包括等于或大于1的分数。",
       hi: "चुने हुए पूरे के भागों को भिन्न, चित्र या संख्या रेखा से दिखाएँ, जिनमें एक के बराबर या उससे बड़े भिन्न भी हों।",

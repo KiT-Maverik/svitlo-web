@@ -43,7 +43,7 @@ export const figures_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Properties of polygons and other plane figures that remain independent of scale or orientation, and composing shapes from parts.",
-    fe: {
+    frontend: {
       en: "Recognize flat shapes by their sides, corners, and other properties, and build new shapes from parts.",
       zh: "根据边、角和其他性质认识平面图形，并用部分拼出新图形。",
       hi: "भुजाओं, कोनों और गुणों से सपाट आकृतियाँ पहचानें तथा हिस्सों से नई आकृतियाँ बनाएँ।",

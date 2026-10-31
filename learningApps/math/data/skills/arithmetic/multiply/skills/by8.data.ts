@@ -35,7 +35,7 @@ export const by8_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplication by eight connects equal groups of eight with their total; doubling, decomposition, and known products provide equivalent computation strategies. The family of facts is distinct from a method of learning it.",
-    fe: {
+    frontend: {
       en: "You can multiply by eight using eight equal groups, doubling, or breaking the calculation into easier parts.",
       zh: "你能用八个相等的组、翻倍或拆分计算来求出乘以八的结果。",
       hi: "तुम आठ बराबर समूहों, दोगुना करने या गणना को आसान भागों में बाँटने से आठ से गुणा कर सकते हो।",

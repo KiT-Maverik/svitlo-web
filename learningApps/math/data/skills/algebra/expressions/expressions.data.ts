@@ -42,7 +42,7 @@ export const expressions_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "The meanings of mathematical expressions involving operations, parentheses, and variables, including correct order of operations.",
-    fe: {
+    frontend: {
       en: "Explore how to read expressions, use parentheses and operation order, and calculate values when a letter represents a number.",
       zh: "学习如何读懂表达式、使用括号和运算顺序，以及求出含字母表达式的值。",
       hi: "व्यंजक पढ़ना, कोष्ठक और संक्रियाओं का क्रम इस्तेमाल करना तथा अक्षर वाली गणनाओं का मान निकालना सीखो।",

@@ -35,7 +35,7 @@ export const regroupPlaceValues_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Equivalent place-value exchanges work in both directions: one hundred equals ten tens and one ten equals ten ones. The total value is preserved across different representations.",
-    fe: {
+    frontend: {
       en: "Exchange one hundred for ten tens, or one ten for ten ones, and reverse the exchange without changing the total.",
       zh: "一百可以换成十个十，一个十可以换成十个一；反过来换也不改变总量。",
       hi: "एक सैकड़े को दस दहाइयों या एक दहाई को दस इकाइयों में बदलें और उल्टा करें। कुल मान वही रहता है।",

@@ -35,7 +35,7 @@ export const unitFractionModel_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "For positive integer n, 1/n represents one of n equal parts of a specified whole. In area, length, and discrete-set models, equality concerns the relevant magnitude, not necessarily identical shapes.",
-    fe: {
+    frontend: {
       en: "Show 1/n as one of n equal parts of the same whole, using shapes, lengths, or groups of objects.",
       zh: "用图形、长度或一组物品，把1/n表示成同一整体的n个等份中的一份。",
       hi: "आकारों, लंबाइयों या वस्तुओं के समूह से दिखाएँ कि 1/n एक ही पूरे के n बराबर भागों में से एक है।",

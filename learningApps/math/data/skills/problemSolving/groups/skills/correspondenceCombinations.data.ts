@@ -34,7 +34,7 @@ export const correspondenceCombinations_Skill_Data = buildSkillConfig({
     uk: "Підрахунок комбінацій двох наборів",
   },
   description: { methodological: "Choosing one element independently from each of two finite sets produces a number of ordered pairs equal to the product of their sizes. The enumeration must be complete and free of duplicates; using a table, tree, or list does not change the count.",
-    fe: {
+    frontend: {
       en: "You can count every possible pair made by choosing one item from each of two sets, without missing or repeating any combination.",
       zh: "你能从两组物品中各选一个，数出所有可能的搭配，不遗漏也不重复。",
       hi: "आप दो समूहों में से एक-एक वस्तु चुनकर बनने वाली सभी संभावित जोड़ियाँ बिना छोड़े या दोहराए गिन सकते हैं।",

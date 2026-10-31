@@ -35,7 +35,7 @@ export const doubleHalf_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Half of an even quantity is one of two equal addends composing the whole. Doubling the half restores the original whole and provides an inverse check.",
-    fe: {
+    frontend: {
       en: "You can halve an even quantity into two equal parts and check by doubling one part.",
       zh: "你能把偶数数量平分为两份，再把其中一份翻倍来检查。",
       hi: "तुम सम मात्रा को दो बराबर हिस्सों में बाँट सकते हो और एक हिस्से को दोगुना करके जाँच सकते हो।",

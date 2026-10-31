@@ -35,7 +35,7 @@ export const columnAddition_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Written column addition aligns operands by place value, adds corresponding positions, and carries complete tens to the next place. Carry marks and the resulting numeral must reflect decimal positional notation.",
-    fe: {
+    frontend: {
       en: "You can add numbers in columns by lining up place values and carrying to the next column when needed.",
       zh: "你能按数位对齐进行竖式加法，必要时向高一位进位。",
       hi: "आप स्थान-मूल्यों को एक सीध में रखकर स्तंभ विधि से जोड़ सकते हैं और ज़रूरत पड़ने पर हासिल आगे ले जा सकते हैं।",

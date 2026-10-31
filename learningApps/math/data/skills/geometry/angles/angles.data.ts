@@ -41,7 +41,7 @@ export const angles_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Angles as relationships between rays and as measures of turn, with the right angle serving as a reference for classification.",
-    fe: {
+    frontend: {
       en: "Look at angles as turns and compare them with a right angle to recognize different kinds.",
       zh: "把角看作旋转的程度，与直角比较，认识不同种类的角。",
       hi: "कोण को घुमाव मानकर समकोण से तुलना करें और प्रकार पहचानें।",

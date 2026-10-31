@@ -40,7 +40,7 @@ export const patterns_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Regular numerical changes following a rule and recognizing a sequence's structure from several terms.",
-    fe: {
+    frontend: {
       en: "Explore number patterns by finding consistent changes, checking the rule, and using it to continue a sequence.",
       zh: "探索数字规律：发现一致的变化、检验规律，并用它续写数列。",
       hi: "संख्या-पैटर्न में नियमित बदलाव खोजो, नियम की जाँच करो और उसी से क्रम आगे बढ़ाओ।",

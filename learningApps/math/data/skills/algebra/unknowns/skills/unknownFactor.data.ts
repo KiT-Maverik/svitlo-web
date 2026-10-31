@@ -35,7 +35,7 @@ export const unknownFactor_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Given a product and a known nonzero factor, determine the missing factor by division within the permitted number domain. Verify by reconstructing the original product.",
-    fe: {
+    frontend: {
       en: "When a product and a nonzero factor are known, you can divide to find the other factor and check by multiplying.",
       zh: "已知积和一个非零因数时，你能用除法求出另一个因数，再用乘法验算。",
       hi: "गुणनफल और शून्य से अलग गुणनखंड ज्ञात हों, तो भाग से दूसरा गुणनखंड निकालकर गुणा से जाँच सकते हो।",

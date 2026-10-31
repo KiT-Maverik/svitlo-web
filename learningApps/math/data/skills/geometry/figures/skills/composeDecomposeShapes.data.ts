@@ -35,7 +35,7 @@ export const composeDecomposeShapes_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Decomposition partitions a figure into nonoverlapping pieces without gaps, and recombining them reconstructs the original figure. Rearrangement preserves the combined area but may change the outer boundary and perimeter.",
-    fe: {
+    frontend: {
       en: "Split a flat shape into pieces without gaps or overlaps, then fit the pieces together. Rearranging them keeps the total area but can change the outline.",
       zh: "把平面图形无缝且不重叠地拆成几块，再重新拼起来。重排不改变总面积，却可能改变外边界。",
       hi: "सपाट आकृति को बिना खाली जगह या दोहराव के हिस्सों में बाँटें और फिर जोड़ें। क्षेत्रफल वही, बाहरी सीमा बदल सकती है।",

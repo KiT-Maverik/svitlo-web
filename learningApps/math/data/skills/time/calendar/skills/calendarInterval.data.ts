@@ -34,7 +34,7 @@ export const calendarInterval_Skill_Data = buildSkillConfig({
     uk: "Підрахунок днів між датами",
   },
   description: { methodological: "The number of days between two dates is the duration of the interval, accounting for month lengths and calendar boundaries. Elapsed days must be distinguished from an inclusive count of the named calendar dates.",
-    fe: {
+    frontend: {
       en: "You can count how many days pass between two dates, taking month lengths into account and not confusing elapsed days with counting both dates.",
       zh: "你能考虑不同月份的天数，算出两个日期之间经过了多少天，不把经过的天数与包含首尾日期的计数混淆。",
       hi: "आप महीनों के दिनों को ध्यान में रखकर दो तारीखों के बीच बीते दिन गिन सकते हैं और बीते दिनों को दोनों तारीखों सहित गिनती से अलग समझ सकते हैं।",

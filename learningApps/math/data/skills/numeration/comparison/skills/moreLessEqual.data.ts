@@ -35,7 +35,7 @@ export const moreLessEqual_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Order relations between quantities depend on set cardinalities, not the size, area, or mass of the objects. Compare by one-to-one matching or by the numbers corresponding to the sets.",
-    fe: {
+    frontend: {
       en: "Match or count objects to tell which collection has more, fewer, or the same number. Larger objects do not always mean more objects.",
       zh: "通过一一配对或计数判断哪组物品更多、更少或一样多。物品更大不代表数量更多。",
       hi: "वस्तुएँ मिलाकर या गिनकर जानें किस समूह में अधिक, कम या बराबर हैं। बड़ी वस्तुओं का मतलब अधिक वस्तुएँ नहीं।",

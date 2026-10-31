@@ -40,7 +40,7 @@ export const perimeterArea_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Perimeter measures the boundary and area measures the interior; the same value for one does not uniquely determine the other.",
-    fe: {
+    frontend: {
       en: "Understand the difference between the distance around a shape and the amount of space inside it.",
       zh: "理解图形周围一圈的长度与内部所占面积的区别。",
       hi: "आकृति के चारों ओर की लंबाई और अंदर के स्थान के बीच अंतर समझें।",

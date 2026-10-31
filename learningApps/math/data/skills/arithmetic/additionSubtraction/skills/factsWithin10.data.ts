@@ -35,7 +35,7 @@ export const factsWithin10_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Addition and subtraction facts can be recalled or derived without recounting physical objects. Part-whole relations and inverse operations support accurate computation and generalization.",
-    fe: {
+    frontend: {
       en: "You can find sums and differences within ten using number relationships rather than counting each item.",
       zh: "你能利用数字之间的关系求出十以内的和与差，而不必逐个数数。",
       hi: "तुम हर वस्तु को गिने बिना संख्याओं के संबंधों से दस के भीतर योग और अंतर निकाल सकते हो।",

@@ -42,7 +42,7 @@ export const area_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "The extent of a planar region occupied by a figure, modeled using unit squares, rectangles, and decomposition of composite shapes.",
-    fe: {
+    frontend: {
       en: "Measure the inside of flat shapes in square units, including rectangles and shapes made of several pieces.",
       zh: "用平方单位测量平面图形内部的大小，包括长方形和拼合图形。",
       hi: "आयत और कई हिस्सों की आकृतियों सहित सपाट आकृतियों का क्षेत्रफल वर्ग इकाइयों में नापें।",

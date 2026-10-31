@@ -35,7 +35,7 @@ export const makeTenStrategy_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The make-ten strategy decomposes an addend so that a part combines with the other addend to reach a convenient ten; the remainder is then added. Regrouping preserves the original sum by addition properties.",
-    fe: {
+    frontend: {
       en: "You can split one addend to reach the next ten first, then add what remains without changing the sum.",
       zh: "你可以拆分一个加数，先凑到下一个整十数，再加上剩余部分，和不变。",
       hi: "तुम एक जोड़ने वाली संख्या को तोड़कर पहले अगली पूरी दहाई बना सकते हो, फिर बचा हिस्सा जोड़ सकते हो; योग वही रहता है।",

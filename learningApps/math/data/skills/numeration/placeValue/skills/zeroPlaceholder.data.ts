@@ -35,7 +35,7 @@ export const zeroPlaceholder_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Zero in positional notation can signify no units at a particular place while preserving the place values of neighboring digits. Omitting that position may produce a different number.",
-    fe: {
+    frontend: {
       en: "A zero can keep an empty place in a number: in 305, it means there are no tens, so 305 is not 35.",
       zh: "零能占住没有单位的数位：305中的0表示没有十，所以305不同于35。",
       hi: "शून्य खाली स्थान बनाए रखता है: 305 में दहाई नहीं है, इसलिए 305 और 35 अलग हैं।",

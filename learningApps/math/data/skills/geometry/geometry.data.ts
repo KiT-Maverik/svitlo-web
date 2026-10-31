@@ -57,7 +57,7 @@ export const geometry_SkillDomain_Data = buildSkillDomainConfig({
   },
   description: {
     methodological: "Spatial relationships, properties of plane figures and solids, lines and angles, geometric transformations, and measurement of perimeter and area.",
-    fe: {
+    frontend: {
       en: "Explore positions, lines, flat and solid shapes, angles, movements, perimeter, and area.",
       zh: "探索位置、直线和平面及立体图形、角、图形变换、周长和面积。",
       hi: "स्थान, रेखाएँ, सपाट और ठोस आकृतियाँ, कोण, गति, परिमाप और क्षेत्रफल समझें।",

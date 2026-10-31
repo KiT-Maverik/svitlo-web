@@ -35,7 +35,7 @@ export const compensation_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Compensation adjusts one operand to simplify mental calculation and then offsets that change to preserve the result. For 39 + 8, compute 40 + 8 = 48 and subtract the extra one.",
-    fe: {
+    frontend: {
       en: "You can make a number easier to add or subtract, then balance the change so the result stays correct.",
       zh: "你能适当调整一个数，让加减计算更容易，再补偿这一变化，使结果不变。",
       hi: "तुम जोड़ या घटाव को आसान बनाने के लिए किसी संख्या को बदलकर फिर उस बदलाव की भरपाई कर सकते हो, ताकि उत्तर सही रहे।",

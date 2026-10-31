@@ -35,7 +35,7 @@ export const roundToHundred_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Rounding to the nearest hundred replaces a value with the closest multiple of one hundred. Rounding error is the difference between exact and rounded values; equidistant cases need an explicit rounding rule.",
-    fe: {
+    frontend: {
       en: "Find the nearest multiple of one hundred and see how much the rounded value differs from the exact one. Halfway needs a rule.",
       zh: "找出最接近的整百数，并比较取整值和准确值的差。正好在中间时需要规定取整规则。",
       hi: "निकटतम सैकड़ा खोजें और वास्तविक तथा पूर्णांकित मान का अंतर समझें। ठीक बीच के लिए नियम चाहिए।",

@@ -35,7 +35,7 @@ export const regrouping_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Addition with place-value regrouping exchanges ten units of one place for one unit of the next place (ones to tens, tens to hundreds). The same principle applies regardless of how many digits the addends have; single or multiple carries preserve the total sum.",
-    fe: {
+    frontend: {
       en: "You can add numbers by exchanging ten ones for one ten, or ten tens for one hundred, whenever regrouping is needed.",
       zh: "你能在加法中按需要把十个一换成一个十，或把十个十换成一个百。",
       hi: "तुम जोड़ करते समय ज़रूरत पड़ने पर दस इकाइयों को एक दहाई या दस दहाइयों को एक सैकड़े में बदल सकते हो।",

@@ -35,7 +35,7 @@ export const arithmeticPattern_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A number sequence such as 4, 7, 10, 13 has a constant increment of three; extend it by repeatedly applying the same step to the preceding term.",
-    fe: {
+    frontend: {
       en: "You can continue a sequence by repeatedly adding or subtracting the same amount.",
       zh: "你能通过每次加上或减去相同的数来续写数列。",
       hi: "तुम हर बार समान मात्रा जोड़कर या घटाकर संख्या-क्रम आगे बढ़ा सकते हो।",

@@ -44,7 +44,7 @@ export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Removing a part, finding a difference, regrouping place values, and verifying subtraction calculations.",
-    fe: {
+    frontend: {
       en: "Learn how subtraction finds what remains, how much quantities differ, or which part is missing, and how place value helps you calculate and check answers.",
       zh: "了解减法怎样求剩余数量、两个数量的差或缺少的部分，以及怎样利用数位进行计算和验算。",
       hi: "समझो कि घटाव से कितना बचता है, दो मात्राओं में कितना अंतर है या कौन-सा भाग गायब है, और स्थान-मूल्य से उत्तर कैसे निकालते तथा जाँचते हैं।",

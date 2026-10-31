@@ -41,7 +41,7 @@ export const orientation_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Verbal descriptions of relative positions and movements, following and giving route instructions, and navigating a simple grid.",
-    fe: {
+    frontend: {
       en: "Describe where things are and how to move between places using directions, routes, and simple maps.",
       zh: "用方向、路线和简单地图描述物体的位置以及如何到达目的地。",
       hi: "दिशाओं, रास्तों और सरल नक्शों से बताएँ कि चीज़ें कहाँ हैं और एक जगह से दूसरी कैसे जाएँ।",

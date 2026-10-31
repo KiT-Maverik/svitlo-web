@@ -43,7 +43,7 @@ export const sequence_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Naming consecutive natural numbers, moving forward and backward, and restoring missing elements of the sequence without necessarily starting from one.",
-    fe: {
+    frontend: {
       en: "Move through consecutive numbers from different starting points, forward or backward. Find which number comes next or is missing, even across tens or hundreds.",
       zh: "从不同的起点按顺序向前或向后数数。即使跨过整十或整百，也能找出下一个数或缺少的数。",
       hi: "किसी भी शुरुआती संख्या से क्रम में आगे या पीछे बढ़ें। दहाई या सैकड़े की सीमा पार करते हुए अगली या छूटी संख्या पहचानें।",

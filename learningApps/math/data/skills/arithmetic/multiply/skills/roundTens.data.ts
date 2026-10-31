@@ -35,7 +35,7 @@ export const roundTens_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A multiple of ten can be multiplied by a one-digit factor by multiplying its count of tens and restoring place-value weight. Exchanging tens for hundreds preserves the product.",
-    fe: {
+    frontend: {
       en: "You can multiply whole tens by a one-digit number and regroup tens into hundreds when needed.",
       zh: "你能用一位数乘整十数，必要时把十个十换成一个百。",
       hi: "तुम पूरी दहाइयों को एक अंक से गुणा कर सकते हो और ज़रूरत पर दस दहाइयों को एक सैकड़े में बदल सकते हो।",

@@ -45,7 +45,7 @@ export const fractions_SkillDomain_Data = buildSkillDomainConfig({
   },
   description: {
     methodological: "Fractions express part-to-whole relationships and positions on a number line. Their properties involve equal parts, numerator and denominator, equivalence, comparisons, and arithmetic operations; specific models and computational ranges depend on the learning context.",
-    fe: {
+    frontend: {
       en: "Fractions show parts of a whole and positions on a number line. Learn how to represent, compare, and calculate with them.",
       zh: "分数表示整体的一部分，也能表示数轴上的位置。学习怎样表示、比较分数以及进行分数运算。",
       hi: "भिन्न पूरे के भाग और संख्या रेखा पर स्थान दिखाते हैं। इन्हें लिखना, तुलना करना और इनसे गणना करना सीखें।",

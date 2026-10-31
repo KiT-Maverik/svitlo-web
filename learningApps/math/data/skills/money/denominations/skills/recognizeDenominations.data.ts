@@ -34,7 +34,7 @@ export const recognizeDenominations_Skill_Data = buildSkillConfig({
     uk: "Розпізнавання номіналів монет і банкнот",
   },
   description: { methodological: "A denomination is the established monetary value of a coin or banknote in a specified currency; physical size, material, color, and printed symbols do not independently determine it. Valid denominations depend on the monetary system.",
-    fe: {
+    frontend: {
       en: "You can recognize how much different coins and banknotes are worth in a given currency, regardless of their size or color.",
       zh: "你能认出指定货币中不同硬币和纸币的面值，而不受它们大小或颜色的影响。",
       hi: "आप किसी मुद्रा में अलग-अलग सिक्कों और नोटों का मूल्य पहचान सकते हैं, चाहे उनका आकार या रंग कुछ भी हो।",

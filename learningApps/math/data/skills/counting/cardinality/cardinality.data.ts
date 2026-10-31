@@ -42,7 +42,7 @@ export const cardinality_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Understanding number as the cardinality of a set, including the empty set, and methods for determining and comparing the sizes of sets.",
-    fe: {
+    frontend: {
       en: "Find how many objects are in a collection, including when it is empty. Compare collections by their number of objects, not by size or arrangement.",
       zh: "了解一组物品有多少个，包括一个也没有的情况。比较数量时看个数，而不是物品的大小或摆放方式。",
       hi: "किसी समूह में कितनी वस्तुएँ हैं, यह जानें, चाहे समूह खाली ही क्यों न हो। तुलना वस्तुओं की संख्या से करें, उनके आकार या सजावट से नहीं।",

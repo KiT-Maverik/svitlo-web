@@ -35,7 +35,7 @@ export const evenOdd_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "An even number of objects can be divided into disjoint pairs with none left over; an odd number leaves one. This criterion for integer parity is independent of object arrangement or appearance.",
-    fe: {
+    frontend: {
       en: "Make pairs to check whether a number is even or odd. An even number leaves none unpaired; an odd number leaves one.",
       zh: "通过两两配对判断一个数是偶数还是奇数。偶数没有剩余，奇数会剩下一个。",
       hi: "वस्तुओं की जोड़ियाँ बनाकर जाँचें कि संख्या सम है या विषम। सम में कुछ नहीं बचता और विषम में एक वस्तु बचती है।",

@@ -41,7 +41,7 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Comparing the magnitudes of fractional parts relative to the same whole while holding either the numerator or denominator fixed.",
-    fe: {
+    frontend: {
       en: "Compare fractions of the same whole by looking at the size of equal parts or the number of parts taken.",
       zh: "比较同一整体的分数，可以看每份有多大，或取了多少份。",
       hi: "एक ही पूरे के भिन्नों की तुलना बराबर भागों के आकार या लिए गए भागों की संख्या से करें।",

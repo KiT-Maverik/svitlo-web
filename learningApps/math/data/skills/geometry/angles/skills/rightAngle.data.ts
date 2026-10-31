@@ -35,7 +35,7 @@ export const rightAngle_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A right angle measures 90 degrees regardless of ray orientation. A reference or measuring tool can verify this property; rotating the drawing does not change the angle type.",
-    fe: {
+    frontend: {
       en: "Find and check right angles, including ones tilted in a drawing. Every right angle is 90 degrees.",
       zh: "找出并检查直角，包括图中倾斜的直角。每个直角都是90度。",
       hi: "झुके हुए चित्र में भी समकोण खोजें और जाँचें। हर समकोण 90 डिग्री होता है।",

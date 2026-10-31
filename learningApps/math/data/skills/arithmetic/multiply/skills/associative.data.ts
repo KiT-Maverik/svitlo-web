@@ -35,7 +35,7 @@ export const associative_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplication is associative: (ab)c = a(bc). Regrouping factors preserves the product; the law does not permit arbitrary changes to factor values or replacing multiplication with addition.",
-    fe: {
+    frontend: {
       en: "When multiplying three or more numbers, you can group the factors differently without changing the product.",
       zh: "三个或更多数相乘时，你可以改变因数的分组方式，积仍然不变。",
       hi: "तीन या अधिक संख्याओं का गुणा करते समय गुणनखंडों के समूह बदल सकते हो, लेकिन गुणनफल नहीं बदलता।",

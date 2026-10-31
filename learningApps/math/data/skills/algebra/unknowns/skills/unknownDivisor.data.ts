@@ -35,7 +35,7 @@ export const unknownDivisor_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Given a nonzero dividend and nonzero quotient, determine the divisor by dividing the dividend by the quotient in the relevant number domain. Check that the divisor is nonzero and the original division holds.",
-    fe: {
+    frontend: {
       en: "When the dividend and a nonzero quotient are known, you can find the missing divisor and check it is not zero.",
       zh: "已知被除数和非零的商时，你能求出未知除数，并检查它不等于零。",
       hi: "भाज्य और शून्य से अलग भागफल ज्ञात हों, तो अज्ञात भाजक निकाल सकते हो और जाँच सकते हो कि वह शून्य नहीं है।",

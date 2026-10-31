@@ -35,7 +35,7 @@ export const addSubtractTens_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiples of ten can be added or subtracted as quantities of the corresponding place-value unit. Ordinary operation properties still apply, but the decimal place weight must be preserved.",
-    fe: {
+    frontend: {
       en: "You can add or subtract whole tens by working with the number of tens and keeping their place value.",
       zh: "你能把整十数看成若干个十来相加或相减，同时保持正确的数位值。",
       hi: "तुम पूरी दहाइयों को दहाइयों की संख्या के रूप में जोड़ या घटा सकते हो और उनका स्थान-मूल्य सही रख सकते हो।",

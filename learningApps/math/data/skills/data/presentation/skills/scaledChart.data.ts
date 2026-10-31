@@ -34,7 +34,7 @@ export const scaledChart_Skill_Data = buildSkillConfig({
     uk: "Читання діаграми з масштабом",
   },
   description: { methodological: "In scaled pictographs and charts, one mark may represent several items according to the key. To recover a count, multiply the number of marks by the units per mark rather than merely counting marks.",
-    fe: {
+    frontend: {
       en: "You can read a chart where each symbol stands for several items by using the key and multiplying the number of symbols by the value of each.",
       zh: "你能借助图例读懂每个符号代表多个物品的统计图，用符号个数乘以每个符号代表的数量。",
       hi: "आप ऐसे चित्र या आलेख को पढ़ सकते हैं जिसमें एक चिह्न कई वस्तुओं का प्रतिनिधित्व करता है, चिह्नों की संख्या को हर चिह्न के मान से गुणा करके।",

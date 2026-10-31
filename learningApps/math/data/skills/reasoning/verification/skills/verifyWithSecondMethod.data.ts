@@ -35,7 +35,7 @@ export const verifyWithSecondMethod_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A quotient can be checked by multiplication, and a sum by subtraction; using an independent verification strategy can expose an error.",
-    fe: {
+    frontend: {
       en: "You can check a calculation in another way, such as using multiplication to check division, to catch mistakes.",
       zh: "你能用另一种方法检查计算，例如用乘法检验除法，从而发现可能的错误。",
       hi: "आप गलती पकड़ने के लिए गणना को दूसरे तरीके से जाँच सकते हैं, जैसे भाग को गुणा से जाँचना।",

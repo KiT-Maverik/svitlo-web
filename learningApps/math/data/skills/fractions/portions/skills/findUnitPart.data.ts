@@ -35,7 +35,7 @@ export const findUnitPart_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Finding 1/n of a quantity divides the whole into n equal parts for positive n. The resulting magnitude retains the physical unit and need not be an integer.",
-    fe: {
+    frontend: {
       en: "To find 1/n of a quantity, divide the quantity into n equal shares. A share can include a fraction of a measurement unit.",
       zh: "要找出一个量的1/n，把它平均分成n份。每份也可能包含不足一个单位的量。",
       hi: "किसी मात्रा का 1/n पाने के लिए उसे n बराबर भागों में बाँटें। एक भाग में माप की इकाई का अंश भी हो सकता है।",

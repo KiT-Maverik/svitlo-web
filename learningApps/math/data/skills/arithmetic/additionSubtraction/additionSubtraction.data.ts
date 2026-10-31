@@ -51,7 +51,7 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "The relationship between inverse addition and subtraction, part-whole relationships, and flexible methods for mental calculation and self-checking.",
-    fe: {
+    frontend: {
       en: "See how addition and subtraction connect parts with a whole, and use place value, estimates, and inverse operations to calculate and check results.",
       zh: "了解加减法怎样连接部分与整体，并利用数位、估算和互逆运算进行计算与验算。",
       hi: "समझो कि जोड़ और घटाव हिस्सों को पूरे से कैसे जोड़ते हैं और स्थान-मूल्य, अनुमान तथा उलटी संक्रियाएँ हिसाब और जाँच में कैसे मदद करती हैं।",

@@ -35,7 +35,7 @@ export const oneToOne_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Counting a set establishes a one-to-one correspondence between each element and the next number word. Traversal order, spatial arrangement, and appearance do not affect cardinality if each element is counted exactly once.",
-    fe: {
+    frontend: {
       en: "Give each object exactly one counting word, without skipping or counting any twice. Counting order does not change the total.",
       zh: "给每个物品对应一个数词，不漏数也不重复数。计数顺序不会改变总数。",
       hi: "हर वस्तु के लिए गिनती का ठीक एक शब्द बोलें; कोई वस्तु न छूटे, न दोबारा गिनी जाए। क्रम बदलने से कुल नहीं बदलता।",

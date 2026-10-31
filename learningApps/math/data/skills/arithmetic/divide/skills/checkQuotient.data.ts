@@ -35,7 +35,7 @@ export const checkQuotient_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Verify quotient and remainder using a = bq + r together with 0 <= r < b for positive b. The equation alone does not establish the correctness of canonical integer division.",
-    fe: {
+    frontend: {
       en: "You can check division by multiplying the divisor by the quotient and adding any remainder. The remainder must be smaller than a positive divisor.",
       zh: "你能用除数乘商，再加余数来验算除法；余数必须小于正除数。",
       hi: "तुम भाजक को भागफल से गुणा करके और शेष जोड़कर भाग की जाँच कर सकते हो। शेष धनात्मक भाजक से कम होना चाहिए।",

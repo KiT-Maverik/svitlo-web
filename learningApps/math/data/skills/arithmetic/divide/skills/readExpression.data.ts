@@ -35,7 +35,7 @@ export const readExpression_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The dividend represents the total, the nonzero divisor is the second operand, and the quotient is the result. In equal sharing the divisor can specify the number of groups, whereas in grouping it specifies each group's size.",
-    fe: {
+    frontend: {
       en: "You can identify the dividend, divisor, and quotient in a division expression and understand what they mean in equal sharing or grouping.",
       zh: "你能指出除法算式中的被除数、除数和商，并理解它们在平均分配或分组中的含义。",
       hi: "तुम भाग के व्यंजक में भाज्य, भाजक और भागफल पहचान सकते हो और समझ सकते हो कि बराबर बाँटने या समूह बनाने में उनका क्या अर्थ है।",

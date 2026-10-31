@@ -62,7 +62,7 @@ export const multiply_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Products as equal groups or rectangular arrays, multiplication facts and properties, and place-value-based computation methods.",
-    fe: {
+    frontend: {
       en: "Explore multiplication through equal groups and arrays, use its properties to find products, and learn how place value helps with larger calculations.",
       zh: "通过相等的组和方阵理解乘法，利用乘法的规律求积，并了解数位怎样帮助计算更大的数。",
       hi: "बराबर समूहों और पंक्ति-स्तंभों से गुणा समझो, उसके नियमों से गुणनफल निकालो और जानो कि स्थान-मूल्य बड़ी गणनाओं में कैसे मदद करता है।",

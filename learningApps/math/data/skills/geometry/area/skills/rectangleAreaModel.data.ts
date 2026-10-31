@@ -35,7 +35,7 @@ export const rectangleAreaModel_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The area of a rectangle is the product of adjacent side lengths expressed in a common length unit. A grid of congruent unit squares explains the formula through row and column counts.",
-    fe: {
+    frontend: {
       en: "Find a rectangle’s area by multiplying its length and width. Rows and columns of equal squares show why this works.",
       zh: "长方形面积等于长乘宽。相同大小的单位正方形排成的行和列说明原因。",
       hi: "आयत का क्षेत्रफल लंबाई और चौड़ाई का गुणनफल है। समान वर्गों की कतारें व स्तंभ वजह समझाते हैं।",

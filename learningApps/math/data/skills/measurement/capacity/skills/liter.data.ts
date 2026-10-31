@@ -34,7 +34,7 @@ export const liter_Skill_Data = buildSkillConfig({
     uk: "Вимірювання й оцінювання місткості в літрах"
   },
   description: { methodological: "A liter is a volume unit commonly used for container capacity. Estimation must use an appropriate unit reference; container shape alone does not reliably determine capacity without other dimensions.",
-    fe: {
+    frontend: {
       en: "You can estimate or measure how much a container holds in liters, using one liter as a reference.",
       zh: "你能以一升为参照，用升估计或测量容器的容量。",
       hi: "आप एक लीटर को आधार बनाकर किसी बर्तन की धारिता लीटर में अनुमानित या माप सकते हैं।",

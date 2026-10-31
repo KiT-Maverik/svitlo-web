@@ -35,7 +35,7 @@ export const placeValueMental_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Mental place-value decomposition replaces an expression by equivalent calculations on tens and ones. Each step must preserve the sum or difference and be justified by operation properties.",
-    fe: {
+    frontend: {
       en: "You can split numbers into tens and ones to add or subtract mentally while keeping the sum or difference unchanged.",
       zh: "你能把数字拆成十位和个位进行心算，同时保持和或差不变。",
       hi: "तुम संख्याओं को दहाइयों और इकाइयों में बाँटकर मन में जोड़ या घटा सकते हो, ताकि योग या अंतर वही रहे।",

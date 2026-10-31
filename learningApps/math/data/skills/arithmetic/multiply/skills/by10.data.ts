@@ -35,7 +35,7 @@ export const by10_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplying by ten scales a number by a factor of ten. In decimal positional notation each place-value unit shifts to the next higher place; for natural numbers the product has zero in the ones place.",
-    fe: {
+    frontend: {
       en: "You can multiply by ten using place value: each place becomes worth ten times as much.",
       zh: "你能利用数位知识乘以十：每个数位上的值都扩大为原来的十倍。",
       hi: "तुम स्थान-मूल्य की मदद से दस से गुणा कर सकते हो: हर स्थान का मान दस गुना हो जाता है।",

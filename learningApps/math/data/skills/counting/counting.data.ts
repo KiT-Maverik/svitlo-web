@@ -47,7 +47,7 @@ export const counting_SkillDomain_Data = buildSkillDomainConfig({
   },
   description: {
     methodological: "The concept of quantity develops through one-to-one correspondence between objects and number words, movement along the natural-number sequence, ordinal positions, and grouping objects for counting.",
-    fe: {
+    frontend: {
       en: "Learn how numbers tell how many things there are, where things are in order, and how to count forward, backward, or in equal steps.",
       zh: "了解数字如何表示物品的数量、排列的位置，以及怎样顺数、倒数或按固定步长数数。",
       hi: "जानें कि संख्याएँ वस्तुओं की मात्रा और क्रम में स्थान कैसे बताती हैं तथा आगे, पीछे या समान अंतर से कैसे गिनते हैं।",

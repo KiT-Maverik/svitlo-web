@@ -35,7 +35,7 @@ export const numberLine1000_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A point's location on a number line depends on its coordinate, origin, and unit length. Equal numeric changes require equal distances on a uniform scale; arbitrary spacing distorts the model.",
-    fe: {
+    frontend: {
       en: "Find numbers up to 1,000 on a number line using its starting point and scale. Equal number jumps take equal distances.",
       zh: "根据数轴的起点和刻度找到1000以内的数。相同的数值差对应相同的距离。",
       hi: "आरंभ बिंदु और पैमाने से संख्या रेखा पर 1,000 तक संख्याएँ खोजें। समान संख्यात्मक अंतर की दूरी समान होती है।",

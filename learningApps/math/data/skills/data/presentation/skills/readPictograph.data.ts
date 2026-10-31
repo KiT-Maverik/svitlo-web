@@ -34,7 +34,7 @@ export const readPictograph_Skill_Data = buildSkillConfig({
     uk: "Читання піктограми «один символ — один об’єкт»",
   },
   description: { methodological: "In a pictograph where one symbol represents one object, frequencies are encoded by the count of symbols. Reading it requires the key, category labels, and number of symbols.",
-    fe: {
+    frontend: {
       en: "You can read a pictograph where one symbol means one item, using the key and category names to count each category correctly.",
       zh: "你能借助图例和类别名称读懂每个符号代表一个物品的象形统计图，正确数出各类数量。",
       hi: "आप चित्र आलेख में जहाँ एक प्रतीक एक वस्तु दिखाता है, संकेत और श्रेणियों के नाम देखकर प्रत्येक की सही गिनती कर सकते हैं।",

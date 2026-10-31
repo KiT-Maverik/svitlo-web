@@ -39,7 +39,7 @@ export const parity_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Classifying natural numbers by whether a corresponding collection can be divided into pairs with no remainder.",
-    fe: {
+    frontend: {
       en: "Tell whether a number is even or odd by making pairs. An even amount pairs up completely; an odd amount leaves one unpaired.",
       zh: "把物品两两配对，判断数量是偶数还是奇数。偶数能全部配对，奇数会剩下一个。",
       hi: "जोड़ियाँ बनाकर पहचानें कि संख्या सम है या विषम। सम संख्या में कोई नहीं बचता, विषम में एक बचता है।",

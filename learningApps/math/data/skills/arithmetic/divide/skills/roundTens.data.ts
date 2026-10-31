@@ -35,7 +35,7 @@ export const roundTens_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division of multiples of ten can operate on whole tens when quotients preserve place-value weights. If the tens do not divide evenly, regroup into smaller units rather than silently discard a remainder.",
-    fe: {
+    frontend: {
       en: "You can divide whole tens by a one-digit number, changing tens into smaller place-value units if they do not divide evenly.",
       zh: "你能用一位数除整十数，如果十位不能整除，可以把十换成更小的数位单位。",
       hi: "तुम पूरी दहाइयों को एक अंक से भाग दे सकते हो और दहाइयाँ पूरी न बँटें तो छोटी स्थान-मूल्य इकाइयों में बदल सकते हो।",

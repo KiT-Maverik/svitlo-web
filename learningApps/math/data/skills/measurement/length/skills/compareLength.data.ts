@@ -34,7 +34,7 @@ export const compareLength_Skill_Data = buildSkillConfig({
     uk: "Порівняння довжин безпосередньо та непрямим способом"
   },
   description: { methodological: "Lengths can be compared by aligning their initial endpoints or through a common intermediate measure. Comparison concerns endpoint separation, not an object's placement or visible thickness.",
-    fe: {
+    frontend: {
       en: "You can compare which object or segment is longer by aligning their ends or using the same reference length, not by their position or thickness.",
       zh: "你能对齐端点或使用同一参照长度，比较物体或线段谁更长，而不受位置或粗细影响。",
       hi: "आप सिरों को मिलाकर या समान माप से तुलना करके बता सकते हैं कि कौन-सी वस्तु या रेखाखंड लंबा है, उनकी स्थिति या मोटाई से नहीं।",

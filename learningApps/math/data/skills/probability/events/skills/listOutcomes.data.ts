@@ -34,7 +34,7 @@ export const listOutcomes_Skill_Data = buildSkillConfig({
     uk: "Називання можливих результатів простого випадкового експерименту",
   },
   description: { methodological: "The sample space follows from a precisely specified random experiment. Listed elementary outcomes must be mutually exclusive and exhaustive at the chosen level of description; none may be added or omitted to favor a conclusion.",
-    fe: {
+    frontend: {
       en: "You can list every possible outcome of a simple random experiment without missing an outcome or counting one twice.",
       zh: "你能列出简单随机试验的所有可能结果，不遗漏任何结果，也不重复计算。",
       hi: "आप सरल यादृच्छिक प्रयोग के सभी संभावित परिणाम गिना सकते हैं, बिना किसी को छोड़े या दो बार गिने।",

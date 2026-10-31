@@ -41,7 +41,7 @@ export const solids_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Distinguishing three-dimensional solids from flat depictions and identifying their surfaces, faces, edges, and vertices.",
-    fe: {
+    frontend: {
       en: "Recognize three-dimensional objects and their faces, edges, corners, and curved surfaces.",
       zh: "认识立体图形及它们的面、棱、顶点和曲面。",
       hi: "त्रिआयामी ठोस आकृतियाँ और उनके फलक, किनारे, कोने तथा घुमावदार सतहें पहचानें।",

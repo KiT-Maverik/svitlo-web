@@ -35,7 +35,7 @@ export const subtractMeaning_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Subtraction may model removing a part, finding the difference between two quantities, or finding an unknown component of a known whole. These share an arithmetic relation but differ in known and unknown roles.",
-    fe: {
+    frontend: {
       en: "You can recognize subtraction as taking away, comparing quantities, or finding a missing part, and show each situation with a subtraction.",
       zh: "你能辨认减法表示拿走一部分、比较两个数量或求缺少的部分，并用减法算式表示。",
       hi: "तुम समझ सकते हो कि घटाव कब कुछ हटाने, मात्राओं की तुलना करने या गायब हिस्सा ढूँढ़ने के लिए होता है और उसे घटाव से दिखा सकते हो।",

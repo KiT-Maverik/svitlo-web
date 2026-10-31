@@ -35,7 +35,7 @@ export const commutativeAddition_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Commutativity of addition states a + b = b + a: exchanging addends preserves their sum. This changes operand order, not operand values, and can be used to choose a convenient computation order.",
-    fe: {
+    frontend: {
       en: "You can swap the order of the numbers being added without changing their sum.",
       zh: "相加时，你可以交换两个加数的位置，而它们的和不变。",
       hi: "जोड़ी जाने वाली संख्याओं का क्रम बदलने पर भी उनका योग वही रहता है।",

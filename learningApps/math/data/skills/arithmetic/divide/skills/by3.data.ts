@@ -35,7 +35,7 @@ export const by3_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division facts by three correspond to multiples of three and the inverse of multiplication by three. Derive the quotient from the appropriate product while preserving the chosen sharing or grouping interpretation.",
-    fe: {
+    frontend: {
       en: "You can divide by three using equal groups and the multiplication facts for three.",
       zh: "你能利用相等的组和三的乘法口诀来计算除以三。",
       hi: "तुम बराबर समूहों और तीन के गुणा के तथ्यों से तीन से भाग कर सकते हो।",

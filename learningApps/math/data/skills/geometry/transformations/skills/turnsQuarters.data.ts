@@ -35,7 +35,7 @@ export const turnsQuarters_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Quarter, half, and three-quarter turns equal 90, 180, and 270 degrees. Rotation direction affects final orientation, though some final positions admit more than one equivalent description of the turn.",
-    fe: {
+    frontend: {
       en: "Use quarter turns, half turns, and three-quarter turns, clockwise or counterclockwise, to change a shape’s direction.",
       zh: "用四分之一圈、半圈和四分之三圈的顺时针或逆时针旋转改变图形的方向。",
       hi: "दक्षिणावर्त या वामावर्त चौथाई, आधा और तीन-चौथाई घुमाकर आकृति की दिशा बदलें।",

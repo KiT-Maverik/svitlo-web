@@ -46,7 +46,7 @@ export const addition_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Combining quantities, properties of sums, place-value regrouping, and methods for calculating and checking results.",
-    fe: {
+    frontend: {
       en: "Explore how addition combines or increases quantities, and how its rules and place values help you calculate and check sums.",
       zh: "了解加法怎样合并或增加数量，以及加法的规律和数位怎样帮助你计算并检查结果。",
       hi: "समझो कि जोड़ मात्राओं को कैसे मिलाता या बढ़ाता है, और उसके नियम तथा स्थान-मूल्य जोड़ निकालने और जाँचने में कैसे मदद करते हैं।",

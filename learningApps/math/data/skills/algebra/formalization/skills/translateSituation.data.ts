@@ -35,7 +35,7 @@ export const translateSituation_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A symbolic model must preserve the essential quantities and dependencies of a real or mathematical situation, including known and unknown roles. Correct numbers combined by the wrong operation do not yield an appropriate model.",
-    fe: {
+    frontend: {
       en: "You can turn a situation into a mathematical expression or equation that correctly shows the known quantities and what is unknown.",
       zh: "你能把实际情况表示成数学表达式或方程，正确反映已知量和未知量。",
       hi: "तुम किसी स्थिति को ऐसे गणितीय व्यंजक या समीकरण से दिखा सकते हो जिसमें ज्ञात और अज्ञात मात्राएँ सही तरह से जुड़ी हों।",

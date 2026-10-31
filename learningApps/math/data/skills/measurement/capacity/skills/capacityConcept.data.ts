@@ -34,7 +34,7 @@ export const capacityConcept_Skill_Data = buildSkillConfig({
     uk: "Порівняння місткості посудин переливанням або вимірюванням"
   },
   description: { methodological: "Capacity is the maximum volume a container can hold. It can be compared by transferring contents under consistent conditions or measuring volume; height or shape alone does not determine capacity.",
-    fe: {
+    frontend: {
       en: "You can compare how much different containers can hold by pouring or measuring, rather than judging only by their height or shape.",
       zh: "你能通过倒水或测量比较不同容器能装多少，而不只看它们的高度或形状。",
       hi: "आप पानी उँडेलकर या मापकर तुलना कर सकते हैं कि अलग-अलग बर्तनों में कितना समा सकता है, केवल उनकी ऊँचाई या आकार देखकर नहीं।",

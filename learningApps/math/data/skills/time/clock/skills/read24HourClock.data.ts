@@ -34,7 +34,7 @@ export const read24HourClock_Skill_Data = buildSkillConfig({
     uk: "Зчитування часу у 24-годинному форматі",
   },
   description: { methodological: "The 24-hour format identifies the hour within a day without AM or PM; 00:00 denotes the start of the day and 12:00 denotes noon. Clock time must be distinguished from duration, and conventions for expressing the end of a day must be considered.",
-    fe: {
+    frontend: {
       en: "You can read 24-hour clock times, knowing that 00:00 starts a day and 12:00 is noon, without confusing a time of day with a duration.",
       zh: "你能读懂24小时制，知道00:00是一天的开始、12:00是正午，并区分时刻与持续时间。",
       hi: "आप 24-घंटे वाली घड़ी पढ़ सकते हैं और समझ सकते हैं कि 00:00 दिन की शुरुआत और 12:00 दोपहर है, समय-बिंदु को अवधि से अलग रखते हुए।",

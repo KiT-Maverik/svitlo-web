@@ -35,7 +35,7 @@ export const backward20_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Find successive predecessors by subtracting one from any starting number. Backward counting must work across ten boundaries, not merely reproduce a memorized counting rhyme.",
-    fe: {
+    frontend: {
       en: "Start from any number within 20 and count backward one at a time, including across ten.",
       zh: "从20以内任意一个数开始，每次减一向后数，包括跨过十的时候。",
       hi: "20 के भीतर किसी भी संख्या से शुरू करके एक-एक घटाते हुए पीछे गिनें, दस की सीमा पार करते समय भी।",

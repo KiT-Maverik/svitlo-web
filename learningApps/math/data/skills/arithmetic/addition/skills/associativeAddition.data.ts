@@ -35,7 +35,7 @@ export const associativeAddition_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Associativity of addition allows regrouping three or more addends without changing their sum. Alongside commutativity it supports flexible strategies but does not permit arbitrary changes to addend values.",
-    fe: {
+    frontend: {
       en: "You can group three or more numbers in different ways when adding them, without changing the total.",
       zh: "三个或更多的数相加时，你可以改变分组方式，而总和不变。",
       hi: "तीन या अधिक संख्याएँ जोड़ते समय आप उनका समूह बदल सकते हैं, लेकिन योग वही रहता है।",

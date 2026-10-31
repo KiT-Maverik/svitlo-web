@@ -34,7 +34,7 @@ export const readTemperature_Skill_Data = buildSkillConfig({
     uk: "Зчитування невід’ємної температури за термометром"
   },
   description: { methodological: "A temperature scale relates numerical marks to temperature values in specified units, such as degrees Celsius. Reading intermediate divisions relies on the scale and must include the measurement unit.",
-    fe: {
+    frontend: {
       en: "You can read a temperature of zero degrees or higher from a thermometer, using its scale marks and writing the correct unit, such as °C.",
       zh: "你能根据温度计的刻度读出零度及以上的温度，并写出正确的单位，例如°C。",
       hi: "आप थर्मामीटर के पैमाने के निशान पढ़कर शून्य या उससे ऊपर का तापमान बता सकते हैं और °C जैसी सही इकाई लिख सकते हैं।",

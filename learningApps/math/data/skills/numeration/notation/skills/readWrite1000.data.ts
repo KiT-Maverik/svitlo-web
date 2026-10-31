@@ -35,7 +35,7 @@ export const readWrite1000_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A three-digit numeral encodes hundreds, tens, and ones. An internal zero indicates the absence of units at that place while retaining the places of following digits and the number's value.",
-    fe: {
+    frontend: {
       en: "Read and write three-digit numbers using hundreds, tens, and ones. A zero can mark an empty place without changing the positions of other digits.",
       zh: "用百位、十位和个位读写三位数。中间的零表示该数位没有相应单位，但其他数字的位置不变。",
       hi: "सैकड़ा, दहाई और इकाई से तीन अंकों वाली संख्याएँ पढ़ें और लिखें। बीच का शून्य खाली स्थान दिखाता है, बाकी अंकों की जगह नहीं बदलता।",

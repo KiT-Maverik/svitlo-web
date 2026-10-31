@@ -35,7 +35,7 @@ export const identify2dShapes_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A figure's geometric class depends on its properties, not its size, color, or orientation in a drawing. A rotated square remains a square and is a special case of a rectangle.",
-    fe: {
+    frontend: {
       en: "Recognize flat shapes even when turned, resized, or recolored. A square is also a kind of rectangle.",
       zh: "无论平面图形旋转、放大、缩小或变色，都能认出它；正方形也是一种长方形。",
       hi: "घुमाने, आकार या रंग बदलने पर भी सपाट आकृतियाँ पहचानें। वर्ग भी एक प्रकार का आयत है।",

@@ -35,7 +35,7 @@ export const arrayModel_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A rectangular array with the same number of elements in each row models the product of row count and elements per row. Interchanging row and column roles preserves cardinality and demonstrates multiplication commutativity.",
-    fe: {
+    frontend: {
       en: "You can arrange objects in equal rows and columns to show multiplication and find the total.",
       zh: "你能把物体排成行列数目相等的方阵，用来表示乘法并求出总数。",
       hi: "तुम वस्तुओं को बराबर पंक्तियों और स्तंभों में सजाकर गुणा दिखा सकते हो और कुल संख्या निकाल सकते हो।",

@@ -35,7 +35,7 @@ export const digits09_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A digit is a symbol in decimal notation, whereas a number is a mathematical value expressible using one or more digits or another representation. Distinguish the written sign from quantity or numerical value.",
-    fe: {
+    frontend: {
       en: "A digit is a written symbol from 0 to 9; a number is the value it represents. One number can be written using several digits.",
       zh: "数字0到9是书写符号，而数是它们表示的值。一个数可以用多个数字写出来。",
       hi: "0 से 9 तक अंक लिखित चिह्न हैं, जबकि संख्या उनका व्यक्त किया हुआ मान है। एक संख्या कई अंकों से लिखी जा सकती है।",

@@ -34,7 +34,7 @@ export const kilogramGram_Skill_Data = buildSkillConfig({
     uk: "Співвідношення кілограмів і грамів"
   },
   description: { methodological: "One kilogram equals 1,000 grams. Changing between these mass units alters the numerical measure but not the physical mass.",
-    fe: {
+    frontend: {
       en: "You can measure mass in kilograms or grams and convert between them, knowing that 1 kilogram equals 1,000 grams.",
       zh: "你能用千克或克表示质量并进行换算，知道1千克等于1000克。",
       hi: "आप द्रव्यमान को किलोग्राम या ग्राम में माप और बदल सकते हैं, जानते हुए कि 1 किलोग्राम = 1,000 ग्राम।",

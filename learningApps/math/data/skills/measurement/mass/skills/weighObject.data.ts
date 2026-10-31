@@ -34,7 +34,7 @@ export const weighObject_Skill_Data = buildSkillConfig({
     uk: "Зчитування показів вагів і запис маси з одиницею"
   },
   description: { methodological: "A mass reading is meaningful only with its unit and the instrument's scale. Interpret divisions, graduation intervals, and the physical quantity being measured.",
-    fe: {
+    frontend: {
       en: "You can read a scale to find an object's mass and write the result with the right unit, paying attention to the scale marks.",
       zh: "你能根据秤的刻度读出物体的质量，并用正确的单位记录测量结果。",
       hi: "आप तराजू के निशान ध्यान से पढ़कर वस्तु का द्रव्यमान जान सकते हैं और परिणाम सही इकाई में लिख सकते हैं।",

@@ -47,7 +47,7 @@ export const numeration_SkillDomain_Data = buildSkillDomainConfig({
   },
   description: {
     methodological: "How natural numbers express quantity, how decimal positional notation works, and how numbers are compared, decomposed, and estimated.",
-    fe: {
+    frontend: {
       en: "See how natural numbers represent quantities, how each digit's position changes its value, and how to compare, place, and estimate numbers.",
       zh: "了解自然数怎样表示数量、数字的数位怎样决定它的值，以及如何比较、定位和估计数字。",
       hi: "समझें कि प्राकृतिक संख्याएँ मात्रा कैसे दिखाती हैं, स्थान के अनुसार अंक का मान कैसे बदलता है और संख्याएँ कैसे तुलना व अनुमान की जाती हैं।",

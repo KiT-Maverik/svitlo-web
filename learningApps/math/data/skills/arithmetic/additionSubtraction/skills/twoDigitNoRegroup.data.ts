@@ -35,7 +35,7 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Without a place-value exchange, tens and ones can be computed separately and their values recombined. This is a special case of general positional arithmetic rather than a different operation.",
-    fe: {
+    frontend: {
       en: "You can add or subtract two-digit numbers by working with tens and ones separately when no regrouping is needed.",
       zh: "不需要进位或退位时，你能分别计算两位数的十位和个位来完成加减法。",
       hi: "जब पुनर्गठन की ज़रूरत न हो, तुम दो अंकों की संख्याओं में दहाइयाँ और इकाइयाँ अलग-अलग जोड़ या घटा सकते हो।",

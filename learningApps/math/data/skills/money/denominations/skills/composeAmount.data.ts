@@ -34,7 +34,7 @@ export const composeAmount_Skill_Data = buildSkillConfig({
     uk: "Складання заданої грошової суми",
   },
   description: { methodological: "The same monetary amount can be composed from different combinations of available denominations in one currency. Exchanging coins or notes must preserve total value, and denominations that do not exist cannot be used.",
-    fe: {
+    frontend: {
       en: "You can make the same amount of money using different combinations of real coins and banknotes from one currency.",
       zh: "你能使用同一种货币中实际存在的不同硬币和纸币组合，凑出相同的金额。",
       hi: "आप एक ही मुद्रा के असली सिक्कों और नोटों के अलग-अलग संयोजनों से एक समान धनराशि बना सकते हैं।",

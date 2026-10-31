@@ -61,7 +61,7 @@ export const divide_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Quotients as equal sharing or finding the number of equal groups, basic division facts, remainders, limitations, and verification of division.",
-    fe: {
+    frontend: {
       en: "Learn to share quantities equally or count how many equal-sized groups fit into a total, and use multiplication to check quotients and remainders.",
       zh: "学习如何平均分配数量，或求出总量中能分成多少个相等大小的组，并用乘法检查商和余数。",
       hi: "सीखो कि मात्राओं को बराबर कैसे बाँटते हैं या कुल में समान आकार के कितने समूह आते हैं, और गुणा से भागफल व शेष कैसे जाँचते हैं।",

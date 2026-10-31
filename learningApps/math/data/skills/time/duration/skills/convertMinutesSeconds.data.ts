@@ -34,7 +34,7 @@ export const convertMinutesSeconds_Skill_Data = buildSkillConfig({
     uk: "Перетворення хвилин на секунди й навпаки",
   },
   description: { methodological: "Minutes and seconds are duration units related exactly by 1 minute = 60 seconds. Conversion preserves the physical interval; a second hand's current reading is not the total elapsed seconds of a long event.",
-    fe: {
+    frontend: {
       en: "You can change minutes into seconds and seconds into minutes, knowing that one minute is exactly 60 seconds and the duration stays the same.",
       zh: "你能把分钟换算成秒，也能把秒换算成分钟，知道1分钟恰好等于60秒，时间长度不变。",
       hi: "आप मिनट को सेकंड और सेकंड को मिनट में बदल सकते हैं, जानते हुए कि एक मिनट में ठीक 60 सेकंड होते हैं और अवधि वही रहती है।",

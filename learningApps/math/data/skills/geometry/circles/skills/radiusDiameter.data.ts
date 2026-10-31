@@ -35,7 +35,7 @@ export const radiusDiameter_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A circle's center determines its constant distance to every point on the circle; a radius connects center to circle, and a diameter passes through the center to join two circle points. Diameter length is twice radius.",
-    fe: {
+    frontend: {
       en: "Find the center, radius, and diameter of a circle. The diameter crosses the center and is twice the radius.",
       zh: "找到圆心、半径和直径。直径经过圆心，长度是半径的两倍。",
       hi: "केंद्र, त्रिज्या और व्यास खोजें। व्यास केंद्र से गुजरता है और त्रिज्या से दोगुना है।",

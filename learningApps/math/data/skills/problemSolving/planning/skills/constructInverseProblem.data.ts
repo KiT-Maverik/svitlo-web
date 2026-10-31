@@ -34,7 +34,7 @@ export const constructInverseProblem_Skill_Data = buildSkillConfig({
     uk: "Складання обернених задач",
   },
   description: { methodological: "Constructing an inverse word problem changes the roles of given and unknown quantities while preserving the mathematical relationship and allowing the original situation to be recovered. The competency is formulating a valid new situation and question; subsequently solving it assesses existing arithmetic and problem-solving skills, not a required part of this skill.",
-    fe: {
+    frontend: {
       en: "You can create an inverse word problem by switching what is known and what must be found, while keeping the original mathematical relationship.",
       zh: "你能把已知量和未知量的角色互换，编出一道逆向应用题，同时保持原来的数学关系。",
       hi: "आप ज्ञात और खोजी जाने वाली मात्राओं की भूमिकाएँ बदलकर उलटी शब्द-समस्या बना सकते हैं, जबकि मूल गणितीय संबंध बना रहे।",

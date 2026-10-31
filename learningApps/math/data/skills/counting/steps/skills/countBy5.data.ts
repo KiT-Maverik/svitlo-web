@@ -35,7 +35,7 @@ export const countBy5_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Counting by fives is repeated addition of equal groups containing five elements. The number of groups and total elements are related independently of visual representation.",
-    fe: {
+    frontend: {
       en: "Add five at each step to count equal groups of five and find their total.",
       zh: "每次加5，数一数每组五个的物品一共有多少个。",
       hi: "हर कदम पर पाँच जोड़कर पाँच-पाँच वस्तुओं के बराबर समूहों की कुल संख्या निकालें।",

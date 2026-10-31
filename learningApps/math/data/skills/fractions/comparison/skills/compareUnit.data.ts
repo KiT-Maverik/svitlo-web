@@ -35,7 +35,7 @@ export const compareUnit_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The unit fraction 1/n denotes one of n equal parts of the same whole. Increasing the positive denominator reduces the size of that part; comparison presupposes the same unit.",
-    fe: {
+    frontend: {
       en: "For fractions with 1 on top, dividing the same whole into more equal parts makes each part smaller: 1/4 is smaller than 1/2.",
       zh: "分子为1时，同一整体分成的等份越多，每份越小：1/4小于1/2。",
       hi: "अंश 1 हो तो एक ही पूरे को जितने अधिक बराबर भागों में बाँटेंगे, भाग उतना छोटा होगा: 1/4 < 1/2।",

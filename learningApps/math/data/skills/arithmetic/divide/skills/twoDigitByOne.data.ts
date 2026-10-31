@@ -35,7 +35,7 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A dividend may be decomposed into convenient parts that are separately divisible in the chosen number domain, then the partial quotients combined using division's distributivity over a sum. Not every arbitrary partition divides evenly.",
-    fe: {
+    frontend: {
       en: "You can divide a two-digit number by a one-digit number by splitting it into parts that are easier to divide and combining the results.",
       zh: "你能把两位数拆成容易整除的部分，分别除以一位数，再合并结果。",
       hi: "तुम दो अंकों की संख्या को आसानी से विभाजित होने वाले भागों में बाँटकर एक अंक से भाग दे सकते हो और उत्तर मिला सकते हो।",

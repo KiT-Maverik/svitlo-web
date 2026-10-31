@@ -41,7 +41,7 @@ export const circles_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "The circumference as the boundary of a disk, its center, radius and diameter, and constructing a circle at a fixed distance from its center.",
-    fe: {
+    frontend: {
       en: "Explore round boundaries and filled disks, their centers, radii, and diameters, and how to draw circles.",
       zh: "认识圆形边界和实心圆盘、圆心、半径、直径，以及如何画圆。",
       hi: "वृत्त की सीमा और भरे वृत्ताकार भाग, केंद्र, त्रिज्या, व्यास तथा वृत्त बनाना सीखें।",

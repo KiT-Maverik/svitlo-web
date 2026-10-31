@@ -35,7 +35,7 @@ export const wholeDependence_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The same fractional notation denotes the same proportion of different wholes, but its absolute magnitude depends on the size of each whole. Comparing parts from different wholes requires a shared unit or comparable magnitude.",
-    fe: {
+    frontend: {
       en: "A fraction tells what share of a whole you have. Half of a big whole is larger than half of a small whole.",
       zh: "分数表示占整体的比例。同样是二分之一，大整体的一半比小整体的一半大。",
       hi: "भिन्न पूरे का हिस्सा बताता है। बड़े पूरे का आधा, छोटे पूरे के आधे से बड़ा होता है।",

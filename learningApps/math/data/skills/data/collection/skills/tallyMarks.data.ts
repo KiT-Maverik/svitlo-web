@@ -34,7 +34,7 @@ export const tallyMarks_Skill_Data = buildSkillConfig({
     uk: "Записування та читання лічильних позначок",
   },
   description: { methodological: "Tally marks or other agreed symbols represent counted observations in each category. Converting between symbolic marks and numerical frequencies must consistently follow the established encoding rule.",
-    fe: {
+    frontend: {
       en: "You can record counts with tally marks or agreed symbols and turn those marks back into the correct numbers.",
       zh: "你能用计数符号或约定的标记记录数量，也能把标记准确地换回数字。",
       hi: "आप गिनती को मिलान चिह्नों या तय प्रतीकों से लिख सकते हैं और उन चिह्नों से सही संख्या वापस बता सकते हैं।",

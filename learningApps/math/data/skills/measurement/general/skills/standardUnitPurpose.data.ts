@@ -34,7 +34,7 @@ export const standardUnitPurpose_Skill_Data = buildSkillConfig({
     uk: "Пояснення потреби в узгоджених одиницях вимірювання"
   },
   description: { methodological: "Measurements can be compared meaningfully only with their quantities and units. Equivalent units require conversion to a common scale; equal numerals in different units can represent different magnitudes.",
-    fe: {
+    frontend: {
       en: "You can explain why measurements need matching units to be compared and convert them when necessary, instead of comparing numbers alone.",
       zh: "你能解释为什么比较测量结果需要统一单位，必要时进行换算，而不只是比较数字大小。",
       hi: "आप बता सकते हैं कि मापों की तुलना के लिए संगत इकाइयाँ क्यों ज़रूरी हैं, और केवल संख्याएँ देखने के बजाय ज़रूरत पर इकाइयाँ बदल सकते हैं।",

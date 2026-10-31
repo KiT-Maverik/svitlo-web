@@ -35,7 +35,7 @@ export const comparisonSymbols_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The symbols <, >, and = respectively express less than, greater than, and equality. Operand order determines inequality direction; swapping distinct numbers requires reversing the comparison sign.",
-    fe: {
+    frontend: {
       en: "Use <, >, and = to show which number is smaller, larger, or equal. Switching two different numbers reverses the inequality sign.",
       zh: "用<、>和=表示小于、大于或等于。交换两个不同数的位置时，不等号的方向也要改变。",
       hi: "<, > और = से छोटी, बड़ी या बराबर संख्याएँ दिखाएँ। दो अलग संख्याओं की जगह बदलने पर असमानता का चिह्न उलटता है।",

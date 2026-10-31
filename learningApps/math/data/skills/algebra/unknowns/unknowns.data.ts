@@ -44,7 +44,7 @@ export const unknowns_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Relationships between components and results of the four arithmetic operations that allow an unknown quantity to be found and verified.",
-    fe: {
+    frontend: {
       en: "Learn to find and check missing numbers in addition, subtraction, multiplication, and division by using relationships between the operations.",
       zh: "学习利用运算之间的联系，在加减乘除中求出并检查未知数。",
       hi: "जोड़, घटाव, गुणा और भाग के संबंधों से अज्ञात संख्याएँ निकालना और जाँचना सीखो।",

@@ -41,7 +41,7 @@ export const transformations_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Changes in a shape's position through rotation, translation, and reflection, along with symmetry about an axis.",
-    fe: {
+    frontend: {
       en: "Move, turn, and reflect shapes while noticing which features stay the same.",
       zh: "移动、旋转和翻转图形，观察哪些性质保持不变。",
       hi: "आकृतियाँ खिसकाएँ, घुमाएँ या प्रतिबिंबित करें और देखें कौन से गुण समान रहते हैं।",

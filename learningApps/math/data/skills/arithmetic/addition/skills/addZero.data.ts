@@ -35,7 +35,7 @@ export const addZero_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Zero is the additive identity: for any number a, a + 0 = 0 + a = a. Distinguish the absence of a quantity contributed by an addend from the absence of an operation.",
-    fe: {
+    frontend: {
       en: "Adding zero leaves a number unchanged, no matter which side of the plus sign the zero is on.",
       zh: "加上零不会改变原来的数，无论零在加号的哪一边。",
       hi: "शून्य जोड़ने से संख्या नहीं बदलती, चाहे शून्य जोड़ के चिह्न के किसी भी ओर हो।",

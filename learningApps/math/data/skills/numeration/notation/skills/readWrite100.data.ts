@@ -35,7 +35,7 @@ export const readWrite100_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A two-digit decimal numeral represents tens and ones according to their positions. Reading, writing, and converting between spoken and written forms must preserve the same numerical value.",
-    fe: {
+    frontend: {
       en: "Read and write numbers up to 100, using tens and ones to understand what each digit means.",
       zh: "读写100以内的数，理解十位和个位分别表示多少。",
       hi: "100 तक संख्याएँ पढ़ें और लिखें तथा दहाई और इकाई से उनके अंकों का अर्थ समझें।",

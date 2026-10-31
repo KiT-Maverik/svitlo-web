@@ -35,7 +35,7 @@ export const remainderLessDivisor_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "For a positive divisor b, the canonical nonnegative remainder satisfies 0 <= r < b. A remainder at least as large as the divisor means another complete group is still possible.",
-    fe: {
+    frontend: {
       en: "When dividing whole numbers by a positive number, the remainder must be at least zero and smaller than the divisor.",
       zh: "正数作除数进行整数除法时，余数必须不小于零且小于除数。",
       hi: "धनात्मक भाजक से पूर्णांक भाग में शेष शून्य या अधिक और भाजक से कम होना चाहिए।",

@@ -40,7 +40,7 @@ export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Changing the number of equal parts of the same whole through addition or subtraction with a common denominator.",
-    fe: {
+    frontend: {
       en: "Add or subtract fractions made of the same-sized parts of one whole, keeping the denominator unchanged.",
       zh: "同一整体中每份大小相同的分数可以相加或相减，分母不变。",
       hi: "एक ही पूरे के बराबर आकार के भागों वाले भिन्नों को जोड़ें या घटाएँ, हर वही रखें।",

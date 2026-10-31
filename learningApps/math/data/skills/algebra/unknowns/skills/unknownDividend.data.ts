@@ -35,7 +35,7 @@ export const unknownDividend_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "For exact division, the dividend equals the product of divisor and quotient. Finding an unknown dividend uses the inverse relation with multiplication and is checked against the original equality.",
-    fe: {
+    frontend: {
       en: "In an exact division, you can find the missing dividend by multiplying the divisor by the quotient.",
       zh: "在没有余数的除法中，你能用除数乘商求出未知的被除数。",
       hi: "पूरी तरह विभाजित होने वाले भाग में भाजक को भागफल से गुणा करके अज्ञात भाज्य निकाल सकते हो।",

@@ -40,7 +40,7 @@ export const portions_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Moving between a whole quantity and its unit fractional part through division and the inverse operation.",
-    fe: {
+    frontend: {
       en: "Find a fractional part of a quantity or work backward from a known equal part to the whole.",
       zh: "求一个数量的几分之一，或从已知的等份反推出整体。",
       hi: "किसी मात्रा का भिन्न भाग खोजें या बराबर भाग से पूरी मात्रा निकालें।",

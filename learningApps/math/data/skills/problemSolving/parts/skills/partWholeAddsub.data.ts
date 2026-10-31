@@ -34,7 +34,7 @@ export const partWholeAddsub_Skill_Data = buildSkillConfig({
     uk: "Розв’язувати задачі на ціле й частини",
   },
   description: { methodological: "When a whole consists of parts of 7 and 5, adding the parts reconstructs the whole; when the whole and one part are known, the other part is determined by subtraction.",
-    fe: {
+    frontend: {
       en: "You can solve problems about a whole and its parts: add known parts to find the whole, or subtract a known part from the whole to find what is missing.",
       zh: "你能解决整体与部分的问题：将已知部分相加求整体，或从整体减去已知部分求剩余部分。",
       hi: "आप पूर्ण और उसके भागों की समस्याएँ हल कर सकते हैं: ज्ञात भाग जोड़कर पूरा निकालना या पूरे में से ज्ञात भाग घटाकर बचा भाग खोजना।",

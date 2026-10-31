@@ -35,7 +35,7 @@ export const by6_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division by six is linked to corresponding multiplication-by-six facts. Find the quotient from a known product or an equivalent grouping without restricting competence to one example.",
-    fe: {
+    frontend: {
       en: "You can divide by six using equal groups or multiplication facts to find the quotient.",
       zh: "你能利用相等的组或六的乘法口诀求出除以六的商。",
       hi: "तुम बराबर समूहों या छह के गुणा के तथ्यों से छह से भाग देकर भागफल निकाल सकते हो।",

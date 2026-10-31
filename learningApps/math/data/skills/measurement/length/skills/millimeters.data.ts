@@ -34,7 +34,7 @@ export const millimeters_Skill_Data = buildSkillConfig({
     uk: "Вимірювання в міліметрах і співвідношення із сантиметрами"
   },
   description: { methodological: "One millimeter is one tenth of a centimeter; the same length can be expressed equivalently in millimeters and centimeters. Unit choice should reflect the required precision without changing the measured length.",
-    fe: {
+    frontend: {
       en: "You can measure short lengths in millimeters and convert between millimeters and centimeters, knowing that 10 mm = 1 cm.",
       zh: "你能用毫米测量较短的长度，并在毫米和厘米之间换算，知道10毫米等于1厘米。",
       hi: "आप छोटी लंबाइयाँ मिलीमीटर में माप सकते हैं और मिलीमीटर तथा सेंटीमीटर के बीच बदल सकते हैं, जानते हुए कि 10 मिमी = 1 सेमी।",

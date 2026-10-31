@@ -35,7 +35,7 @@ export const by7_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Products with factor seven belong to the family of multiples of seven, connected with equal groups and multiplication properties. Unknown facts can be deduced from neighboring known products.",
-    fe: {
+    frontend: {
       en: "You can multiply by seven using seven equal groups and work out unfamiliar products from nearby ones.",
       zh: "你能用七个相等的组表示乘以七，并从相邻的已知乘积推算不熟悉的结果。",
       hi: "तुम सात बराबर समूहों से सात से गुणा कर सकते हो और पास के ज्ञात गुणनफल से नया उत्तर निकाल सकते हो।",

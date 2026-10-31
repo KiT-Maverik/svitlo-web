@@ -35,7 +35,7 @@ export const zeroDividend_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Zero divided by a nonzero number is zero, because that divisor multiplied by zero gives zero. Distinguish a zero dividend from the undefined operation of division by zero.",
-    fe: {
+    frontend: {
       en: "Zero divided by any nonzero number is zero; this is different from trying to divide by zero.",
       zh: "零除以任何非零数都等于零；这和除以零不同。",
       hi: "शून्य को किसी भी शून्य से अलग संख्या से भाग देने पर शून्य मिलता है; यह शून्य से भाग देने से अलग है।",

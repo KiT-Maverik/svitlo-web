@@ -35,7 +35,7 @@ export const order100_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Compare the most significant decimal place first and move to the next place only when values match. For two-digit numbers the tens place takes precedence over the ones.",
-    fe: {
+    frontend: {
       en: "Compare two-digit numbers by looking at tens first, then ones when the tens match, and put them in order.",
       zh: "比较两位数时先看十位，十位相同再看个位，然后按大小排序。",
       hi: "दो अंकों की तुलना में पहले दहाई देखें, दहाइयाँ समान हों तो इकाई; फिर क्रम लगाएँ।",

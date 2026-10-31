@@ -34,7 +34,7 @@ export const linePlotMeasurements_Skill_Data = buildSkillConfig({
     uk: "Позначення вимірювань на числовій осі",
   },
   description: { methodological: "A measurement line plot places observations on a common numerical axis; multiple marks at the same value represent repeated observations. The axis scale and correspondence between marks and frequencies must be explicit.",
-    fe: {
+    frontend: {
       en: "You can place measurements on a numbered line, stacking marks when a value occurs more than once and keeping the scale consistent.",
       zh: "你能把测量值标在同一条数轴上，数值重复出现时叠加标记，并保持刻度一致。",
       hi: "आप मापन को अंकित संख्या रेखा पर दिखा सकते हैं, दोहराए गए मान के ऊपर कई चिह्न लगाकर और एक समान पैमाना रखकर।",

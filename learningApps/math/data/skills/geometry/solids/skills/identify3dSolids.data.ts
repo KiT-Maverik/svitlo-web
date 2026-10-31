@@ -35,7 +35,7 @@ export const identify3dSolids_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Identify solids by their surface structure and the number or shape of faces, bases, edges, and vertices where applicable. Perspective drawings can distort proportions; geometric properties determine the solid's class.",
-    fe: {
+    frontend: {
       en: "Recognize solid shapes by their surfaces, faces, edges, and corners, even when drawn from another viewpoint.",
       zh: "根据表面、面、棱和顶点识别立体图形，即使观察角度不同。",
       hi: "ठोस आकृतियों को सतह, फलक, किनारों और कोनों से पहचानें, चाहे चित्र दूसरे कोण से हो।",

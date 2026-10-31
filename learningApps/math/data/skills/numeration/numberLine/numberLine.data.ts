@@ -42,7 +42,7 @@ export const numberLine_SkillGroup_Data = buildSkillGroupConfig({
   },
   description: {
     methodological: "Numbers as points on an ordered scale with equal intervals; location, adjacency, and distance depend on the scale used.",
-    fe: {
+    frontend: {
       en: "Place numbers on a line with even spacing; use their positions to see which comes first and how far apart they are.",
       zh: "把数放在间隔均匀的数轴上，通过位置判断顺序和距离。",
       hi: "संख्याओं को समान अंतर वाली रेखा पर रखें; उनके स्थान से क्रम और दूरी समझें।",

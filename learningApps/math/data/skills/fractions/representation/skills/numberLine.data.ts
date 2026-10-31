@@ -35,7 +35,7 @@ export const numberLine_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "For positive b, subdividing the unit interval into b equal parts locates a/b by moving a such steps from zero. The resulting number-line representation must preserve scale and numerical order.",
-    fe: {
+    frontend: {
       en: "Split the distance from 0 to 1 into equal steps, then find the position of a fraction such as 3/5.",
       zh: "把数轴上0到1的距离平均分成等长的小段，再找到3/5这样的分数所在的位置。",
       hi: "संख्या रेखा पर 0 से 1 की दूरी बराबर भागों में बाँटें और 3/5 जैसे भिन्न की जगह खोजें।",

@@ -35,7 +35,7 @@ export const parallelPerpendicular_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Distinct parallel lines in the same plane do not intersect; perpendicular lines meet at a right angle. These relations depend on geometric structure, not merely a familiar horizontal or vertical drawing.",
-    fe: {
+    frontend: {
       en: "Recognize parallel lines that never meet and perpendicular lines that cross at a right angle, even when tilted.",
       zh: "认识永不相交的平行线和成直角相交的垂线，即使它们是倾斜的。",
       hi: "कभी न मिलने वाली समांतर रेखाएँ और समकोण पर मिलने वाली लंब रेखाएँ पहचानें, चाहे वे तिरछी हों।",

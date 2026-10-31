@@ -35,7 +35,7 @@ export const drawSegmentCentimeters_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Construct a straight line segment of a specified length in centimeters: align a ruler at zero, mark the required endpoint, and draw the segment with the correct length. This is a construction competency distinct from reading the length of an existing segment.",
-    fe: {
+    frontend: {
       en: "You can draw a straight segment of a given length in centimeters by starting at the ruler's zero mark and marking the correct endpoint.",
       zh: "你能从直尺的零刻度开始，标出指定厘米长度的终点，再画出相应长度的直线段。",
       hi: "तुम पैमाने के शून्य से शुरू करके सही अंतिम बिंदु पर निशान लगाते हुए सेंटीमीटर में दी गई लंबाई का सीधा रेखाखंड बना सकते हो।",
