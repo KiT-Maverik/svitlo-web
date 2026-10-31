@@ -17,6 +17,10 @@ import type { SkillNode, SkillsManifest, MapEdge } from './skillsMindMap.utils';
 import styles from './SkillsMindMap.module.css';
 import { SkillAction, SkillLeafCard, SkillMastery } from './SkillLeafCard';
 import { useSkillsPageSettings } from './SkillsPageSettingsContext';
+import {
+  clampSkillZoom, gesturePair, moveAndScaleSkillMap, panSkillMap,
+  type SkillMapView,
+} from './skillsMindMap.gestures';
 
 type LoadingStatus = 'loading' | 'ready' | 'error';
 const KIND_LABELS = { skillDomain: 'Домен', skillGroup: 'Група', skill: 'Скіл' } as const;
@@ -117,7 +121,20 @@ export function SkillsMindMap() {
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [viewport, setViewport] = useState({ width: 960, height: 640 });
   const viewportRef = useRef<HTMLDivElement | null>(null);
-  const dragRef = useRef<{ pointerId: number; x: number; y: number } | null>(null);
+  const viewRef = useRef<SkillMapView>({ zoom: 0.65, pan: { x: 0, y: 0 } });
+  const pointersRef = useRef(new Map<number, {
+    x: number; y: number; startX: number; startY: number;
+    interactive: boolean; dragging: boolean;
+  }>());
+  const suppressTapRef = useRef(false);
+  const applyView = useCallback((next: SkillMapView) => {
+    viewRef.current = next;
+    setZoom(next.zoom);
+    setPan(next.pan);
+  }, []);
+  useEffect(() => {
+    viewRef.current = { zoom, pan };
+  }, [zoom, pan]);
   const firstLoad = useRef(true);
   const didInitialFit = useRef(false);
   const handledFitRequest = useRef(0);
@@ -200,11 +217,17 @@ export function SkillsMindMap() {
     if (!element || status !== 'ready' || listView) return;
     const handleWheel = (event: WheelEvent) => {
       event.preventDefault();
-      setZoom(current => Math.max(0.18, Math.min(2.5, current * (event.deltaY < 0 ? 1.1 : 0.9))));
+      const rect = element.getBoundingClientRect();
+      const point = { x: event.clientX - rect.left, y: event.clientY - rect.top };
+      const current = viewRef.current;
+      applyView(moveAndScaleSkillMap(
+        current, point, point, current.zoom * (event.deltaY < 0 ? 1.1 : 0.9),
+        { width: rect.width || element.clientWidth, height: rect.height || element.clientHeight },
+      ));
     };
     element.addEventListener('wheel', handleWheel, { passive: false });
     return () => element.removeEventListener('wheel', handleWheel);
-  }, [status, listView]);
+  }, [status, listView, applyView]);
 
   const allNodes = useMemo(() => flattenSkillNodes(domains), [domains]);
   const selectable = useMemo(() => new Map(allNodes.map(node => [node.id, node])), [allNodes]);
@@ -281,22 +304,80 @@ export function SkillsMindMap() {
     setSelectedId(null);
   };
   const resetView = requestFitToScreen;
+  const capturePointer = (event: ReactPointerEvent<HTMLDivElement>, pointerId: number) => {
+    if (!event.currentTarget.hasPointerCapture(pointerId)) {
+      event.currentTarget.setPointerCapture(pointerId);
+    }
+  };
+
   const onPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
-    if ((event.target as HTMLElement).closest('button, a, select, input')) return;
-    dragRef.current = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
-    event.currentTarget.setPointerCapture(event.pointerId);
+    const interactive = Boolean((event.target as HTMLElement).closest('button, a, select, input'));
+    if (event.pointerType !== 'touch' && interactive) return;
+    const pointers = pointersRef.current;
+    if (pointers.size === 0) suppressTapRef.current = false;
+    pointers.set(event.pointerId, {
+      x: event.clientX, y: event.clientY,
+      startX: event.clientX, startY: event.clientY,
+      interactive, dragging: !interactive,
+    });
+    if (pointers.size === 1 && !interactive) capturePointer(event, event.pointerId);
+    if (pointers.size >= 2) {
+      // A second touch converts a pending tap or one-finger drag into a pinch.
+      // Capture both pointers at the viewport so they can leave the card bounds.
+      suppressTapRef.current = true;
+      for (const id of pointers.keys()) capturePointer(event, id);
+    }
   };
   const onPointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if (!dragRef.current || dragRef.current.pointerId !== event.pointerId) return;
-    const dx = event.clientX - dragRef.current.x, dy = event.clientY - dragRef.current.y;
-    dragRef.current = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
-    setPan(position => ({ x: position.x + dx, y: position.y + dy }));
+    const pointers = pointersRef.current;
+    const previous = pointers.get(event.pointerId);
+    if (!previous) return;
+    const before = Array.from(pointers.values()).slice(0, 2);
+    const dx = event.clientX - previous.x;
+    const dy = event.clientY - previous.y;
+    pointers.set(event.pointerId, { ...previous, x: event.clientX, y: event.clientY });
+
+    if (pointers.size >= 2) {
+      const after = Array.from(pointers.values()).slice(0, 2);
+      const older = gesturePair(before[0], before[1]);
+      const newer = gesturePair(after[0], after[1]);
+      const element = event.currentTarget;
+      const rect = element.getBoundingClientRect();
+      const anchorBefore = { x: older.midpoint.x - rect.left, y: older.midpoint.y - rect.top };
+      const anchorAfter = { x: newer.midpoint.x - rect.left, y: newer.midpoint.y - rect.top };
+      const current = viewRef.current;
+      const factor = older.distance > 1 ? newer.distance / older.distance : 1;
+      applyView(moveAndScaleSkillMap(current, anchorBefore, anchorAfter,
+        current.zoom * factor,
+        { width: rect.width || element.clientWidth, height: rect.height || element.clientHeight }));
+      return;
+    }
+    if (!previous.dragging && previous.interactive) {
+      if (Math.hypot(event.clientX - previous.startX, event.clientY - previous.startY) < 7) return;
+      // Do not prevent normal button/link activation on a stationary touch.
+      pointers.set(event.pointerId, { ...previous, x: event.clientX, y: event.clientY, dragging: true });
+      capturePointer(event, event.pointerId);
+    }
+    if (Math.hypot(event.clientX - previous.startX, event.clientY - previous.startY) > 4) {
+      suppressTapRef.current = true;
+    }
+    applyView(panSkillMap(viewRef.current, dx, dy));
   };
-  const onPointerUp = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if (dragRef.current?.pointerId === event.pointerId) dragRef.current = null;
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
+  const endPointer = (event: ReactPointerEvent<HTMLDivElement>) => {
+    pointersRef.current.delete(event.pointerId);
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
   };
+  const onClickCapture = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (suppressTapRef.current) {
+      event.preventDefault();
+      event.stopPropagation();
+      suppressTapRef.current = false;
+    }
+  };
+
   const onLanguageChange = (next: string) => {
     if (!manifest?.languages.includes(next)) return;
     setLanguageCode(next);
@@ -379,7 +460,8 @@ export function SkillsMindMap() {
             <section className={styles.mapFrame} aria-label="Радіальна мапа навичок">
               <div ref={viewportRef} className={styles.viewport}
                 onPointerDown={onPointerDown} onPointerMove={onPointerMove}
-                onPointerUp={onPointerUp} onPointerCancel={onPointerUp}
+                onPointerUp={endPointer} onPointerCancel={endPointer}
+                onClickCapture={onClickCapture}
                 data-testid="skills-map-viewport">
                 <div className={styles.world} data-testid="skills-map-world"
                   data-zoom={zoom} data-pan-x={pan.x} data-pan-y={pan.y} style={{
@@ -436,13 +518,13 @@ export function SkillsMindMap() {
               </div>
               <div className={styles.zoomControls} role="group" aria-label="Масштаб мапи">
                 <button type="button" aria-label="Збільшити масштаб"
-                  onClick={() => setZoom(value => Math.min(2.5, value * 1.2))}><ZoomInRoundedIcon /></button>
+                  onClick={() => setZoom(value => clampSkillZoom(value * 1.2))}><ZoomInRoundedIcon /></button>
                 <button type="button" aria-label="Зменшити масштаб"
-                  onClick={() => setZoom(value => Math.max(0.01, value / 1.2))}><ZoomOutRoundedIcon /></button>
+                  onClick={() => setZoom(value => clampSkillZoom(value / 1.2))}><ZoomOutRoundedIcon /></button>
                 <button type="button" aria-label="Вмістити в екран" onClick={resetView}>
                   <CenterFocusStrongRoundedIcon /></button>
               </div>
-              <p className={styles.mapHint}>Перетягніть для переміщення · Колесо миші для масштабу</p>
+              <p className={styles.mapHint}>Перетягуйте одним пальцем або мишею · Масштабуйте двома пальцями чи колесом</p>
             </section>
           )}
           <section className={styles.detail} aria-live="polite" aria-label="Інформація про вибраний вузол">
