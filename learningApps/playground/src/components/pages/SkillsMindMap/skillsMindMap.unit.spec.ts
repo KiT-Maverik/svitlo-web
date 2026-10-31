@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   expandableSkillIds,
   fitMindMapZoom,
+  fitVisibleSkillNodes,
   flattenSkillNodes,
   layoutSkillMindMap,
   mockSkillMastery,
@@ -116,5 +117,41 @@ describe('Preview Skill mastery and learning CTA', () => {
     expect(skillLearningHref(uuid(3), 'en'))
       .toBe('/skills/' + uuid(3) + '/learn?lang=en');
     expect(() => skillLearningHref(uuid(3), '../en')).toThrow(/мова/);
+  });
+});
+
+describe('Fit visible Skills in the viewport', () => {
+  it('fits the whole map including card dimensions and respects expanded Skill height', () => {
+    const graph = layoutSkillMindMap([sample()], new Set());
+    const viewport = { width: 900, height: 540 };
+    const compact = fitVisibleSkillNodes(graph, new Set(), viewport.width, viewport.height);
+    const expanded = fitVisibleSkillNodes(graph, new Set([uuid(3), uuid(4), uuid(6), uuid(7)]),
+      viewport.width, viewport.height);
+    expect(expanded.zoom).toBeLessThanOrEqual(compact.zoom);
+    for (const state of [compact, expanded]) {
+      expect(state.zoom).toBeGreaterThan(0);
+      expect(state.zoom).toBeLessThanOrEqual(2.5);
+      expect(Number.isFinite(state.pan.x)).toBe(true);
+      expect(Number.isFinite(state.pan.y)).toBe(true);
+    }
+    for (const node of graph.nodes) {
+      const halfWidth = node.kind === 'skill' ? 139 : node.kind === 'skillGroup' ? 99 : 107;
+      const halfHeight = node.kind === 'skill' ? 167 : node.kind === 'skillGroup' ? 54 : 57;
+      const px = expanded.pan.x + node.x * expanded.zoom + viewport.width / 2;
+      const py = expanded.pan.y + node.y * expanded.zoom + viewport.height / 2;
+      expect(px - halfWidth * expanded.zoom).toBeGreaterThanOrEqual(0);
+      expect(px + halfWidth * expanded.zoom).toBeLessThanOrEqual(viewport.width);
+      expect(py - halfHeight * expanded.zoom).toBeGreaterThanOrEqual(0);
+      expect(py + halfHeight * expanded.zoom).toBeLessThanOrEqual(viewport.height);
+    }
+  });
+
+  it('fits the avatar when all descendants are hidden and handles unavailable sizes', () => {
+    const rootOnly = layoutSkillMindMap([], new Set());
+    const result = fitVisibleSkillNodes(rootOnly, new Set(), 900, 480);
+    expect(result.pan).toEqual({ x: 0, y: 0 });
+    expect(result.zoom).toBe(2.5);
+    expect(fitVisibleSkillNodes(rootOnly, new Set(), 0, 0))
+      .toEqual({ zoom: 0.65, pan: { x: 0, y: 0 } });
   });
 });
