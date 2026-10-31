@@ -100,7 +100,7 @@ test('English-only create needs no reviewed translations and keeps locales visib
   assert.match(skill,/name: \{\s*en: /);
   assert.match(skill,/frontend: \{\s*en: /);
   assert.match(skill,/^  name: \{\n    en: "Compare Angles",\n  \},$/m);
-  assert.match(skill,/^    frontend: \{\n      en: "Explore this topic\\.",\n    \},$/m);
+  assert.match(skill,/^    frontend: \{\n      en: "Explore this topic\.",\n    \},$/m);
   assert.match(skill,/^import \{ buildSkillConfig \} from '@svitlo\/engine\/taxonomy';\n\nexport const compareAngles_Skill_Data/m);
   assert.doesNotMatch(skill,/["'](?:en|uk)["']\s*:/);
   assert.match(skill,/methodological: "Definition of Compare Angles\."/);
@@ -126,8 +126,8 @@ test('English Markdown updates preserve existing non-English translations withou
   assert.match(after,/en: "Hear Rhythms"/);
   assert.match(after,/uk: "Translated Hear Rhythm uk"/);
   assert.match(after,/uk: "Frontend Hear Rhythm uk"/);
-  assert.match(after,/^    frontend: \{\n      uk: |^      en: "Explore rhythms together\.",/m);
-  assert.match(after,/^      en: "Explore rhythms together\.",$/m);
+  assert.match(after,/^    frontend: \{\n      en: "Explore rhythms together\.",\n      zh: /m);
+  assert.match(after,/^      uk: "Frontend Hear Rhythm uk",$/m);
   assert.match(after,/^    \},$/m);
   assert.notEqual(after,before);
 }));
