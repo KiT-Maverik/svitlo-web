@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const reviseAnArtwork_Skill_Data = buildSkillConfig({
-  slug: "reviseAnArtwork", id: "502c81e6-87a6-483a-8030-920e6e988f9b", name: { en: "Revise an Artwork" },
+  slug: "reviseAnArtwork", id: "502c81e6-87a6-483a-8030-920e6e988f9b", name: {
+    en: "Revise an Artwork",
+    zh: "修改艺术作品",
+    hi: "कलाकृति में संशोधन करें",
+    es: "Revisar una obra de arte",
+    ar: "مراجعة عمل فني",
+    fr: "Réviser une œuvre d’art",
+    bn: "শিল্পকর্ম সংশোধন করুন",
+    pt: "Revisar uma obra de arte",
+    ur: "فن پارے پر نظرِ ثانی کریں",
+    id: "Merevisi Karya Seni",
+    de: "Ein Kunstwerk überarbeiten",
+    ja: "作品を改訂する",
+    ko: "작품 수정하기",
+    tr: "Bir Sanat Eserini Gözden Geçirmek",
+    vi: "Chỉnh sửa tác phẩm nghệ thuật",
+    ta: "கலைப்படைப்பைத் திருத்துங்கள்",
+    te: "కళాకృతిని సవరించండి",
+    mr: "कलाकृतीत सुधारणा करा",
+    ms: "Menyemak Semula Karya Seni",
+    he: "עריכת יצירת אמנות מחדש",
+    pl: "Poprawiać dzieło sztuki",
+    uk: "Переглядати мистецький твір",
+    lt: "Tobulinti meno kūrinį",
+    lv: "Pārstrādāt mākslas darbu",
+    et: "Kunstiteose läbivaatamine",
+    be: "Пераглядаць мастацкі твор",
+    ka: "ხელოვნების ნიმუშის გადამუშავება",
+    kk: "Өнер туындысын қайта қарау",
+    qm: "Sanat eserini qayta işlemek",
+  },
   description: { methodological: "Make purposeful changes after comparing an intended effect with the observed result.", frontend: {
           "en": "Improve an artwork by comparing its effect with what you intended.",
           "zh": "比较预期效果与实际效果，并据此有目的地改进作品。",
@@ -31,5 +61,6 @@ export const reviseAnArtwork_Skill_Data = buildSkillConfig({
           "be": "Удасканальвайце твор, параўноўваючы яго ўздзеянне з задуманым вынікам.",
           "ka": "გააუმჯობესეთ ნამუშევარი მისი ეფექტის თქვენს განზრახვასთან შედარებით.",
           "kk": "Өнер туындысының әсерін көздеген нәтижемен салыстырып, оны жетілдіріңіз."
-    } },
+    
+      qm: "Eserniñ tesirini öz maqsadıñıznen qarşılaştırıp, sanat eserini yahşılañız.",} },
 });
