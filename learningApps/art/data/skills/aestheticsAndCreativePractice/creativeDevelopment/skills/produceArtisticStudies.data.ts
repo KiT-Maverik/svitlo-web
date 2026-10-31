@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const produceArtisticStudies_Skill_Data = buildSkillConfig({
-  slug: "produceArtisticStudies", id: "5373d6bf-fe99-43bc-bd5b-cef11c290dec", name: { en: "Produce Artistic Studies" },
+  slug: "produceArtisticStudies", id: "5373d6bf-fe99-43bc-bd5b-cef11c290dec", name: {
+    en: "Produce Artistic Studies",
+    zh: "创作艺术习作",
+    hi: "कलात्मक अध्ययन तैयार करें",
+    es: "Realizar estudios artísticos",
+    ar: "إنجاز دراسات فنية",
+    fr: "Réaliser des études artistiques",
+    bn: "শৈল্পিক অনুশীলন তৈরি করুন",
+    pt: "Produzir estudos artísticos",
+    ur: "فنّی مطالعات تیار کریں",
+    id: "Membuat Studi Artistik",
+    de: "Künstlerische Studien anfertigen",
+    ja: "芸術的な習作を制作する",
+    ko: "예술적 습작 제작하기",
+    tr: "Sanatsal Etütler Üretmek",
+    vi: "Thực hiện nghiên cứu nghệ thuật",
+    ta: "கலை ஆய்வுப் படைப்புகளை உருவாக்குங்கள்",
+    te: "కళాత్మక అధ్యయనాలను రూపొందించండి",
+    mr: "कलात्मक अभ्यास तयार करा",
+    ms: "Menghasilkan Kajian Artistik",
+    he: "יצירת מחקרים אמנותיים",
+    pl: "Tworzyć studia artystyczne",
+    uk: "Створювати мистецькі етюди",
+    lt: "Kurti menines studijas",
+    lv: "Veidot mākslinieciskus pētījumus",
+    et: "Kunstiliste uurimuste loomine",
+    be: "Ствараць мастацкія эцюды",
+    ka: "მხატვრული ესკიზების შექმნა",
+    kk: "Өнерлік этюдтер жасау",
+    qm: "Sanat tecribelerini yaratmaq",
+  },
   description: { methodological: "Use exploratory sketches or sound experiments to investigate creative possibilities.", frontend: {
           "en": "Try sketches or sound experiments to discover what a creative idea could become.",
           "zh": "通过草图或声音实验，探索一个创意可以发展成什么。",
@@ -31,5 +61,6 @@ export const produceArtisticStudies_Skill_Data = buildSkillConfig({
           "be": "Паспрабуйце эскізы або гукавыя эксперыменты, каб даведацца, у што можа ператварыцца творчая ідэя.",
           "ka": "სცადეთ ესკიზები ან ხმოვანი ექსპერიმენტები, რათა აღმოაჩინოთ, რად შეიძლება იქცეს შემოქმედებითი იდეა.",
           "kk": "Шығармашылық идеяның қалай дамуы мүмкін екенін зерттеу үшін нобайлар немесе дыбыс тәжірибелерін жасаңыз."
-    } },
+    
+      qm: "Qaralama ya da ses tecribelerini yapıp, yaratıcılıq fikriniñ nelerge dönüşebilecegini keşf etiñiz.",} },
 });
