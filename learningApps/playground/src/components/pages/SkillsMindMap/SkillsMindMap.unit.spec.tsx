@@ -72,6 +72,16 @@ describe('SkillsMindMap', () => {
     expect(screen.getByRole('button', { name: /Група: Теплі кольори/ })).toBeInTheDocument();
   });
 
+  it('allows collapsing the avatar root to just the learner profile', async () => {
+    render(<SkillsMindMap />);
+    await screen.findByTestId('skill-node-testColors');
+    fireEvent.click(screen.getByTestId('skills-profile'));
+    expect(screen.queryByTestId('skill-node-testColors')).not.toBeInTheDocument();
+    expect(screen.getByTestId('skills-profile')).toHaveAttribute('aria-expanded', 'false');
+    fireEvent.click(screen.getByTestId('skills-profile'));
+    expect(screen.getByTestId('skill-node-testColors')).toBeInTheDocument();
+  });
+
   it('switches to the requested language without loading all locale files', async () => {
     render(<SkillsMindMap />);
     await screen.findByTestId('skill-node-testRed');
