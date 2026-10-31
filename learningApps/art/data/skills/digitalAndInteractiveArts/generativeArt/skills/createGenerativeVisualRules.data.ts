@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const createGenerativeVisualRules_Skill_Data = buildSkillConfig({
   slug: "createGenerativeVisualRules",
   id: "ad63c2ef-ea7e-4449-9a02-c8bcecf8a9b1",
-  name: { en: "Create Generative Visual Rules" },
+  name: {
+    en: "Create Generative Visual Rules",
+    zh: "创建生成式视觉规则",
+    hi: "जनरेटिव दृश्य नियम बनाएँ",
+    es: "Crear reglas visuales generativas",
+    ar: "إنشاء قواعد بصرية توليدية",
+    fr: "Créer des règles visuelles génératives",
+    bn: "জেনারেটিভ দৃশ্যমান নিয়ম তৈরি করুন",
+    pt: "Criar regras visuais generativas",
+    ur: "جنریٹو بصری اصول بنائیں",
+    id: "Membuat Aturan Visual Generatif",
+    de: "Generative visuelle Regeln erstellen",
+    ja: "生成的な視覚ルールを作成する",
+    ko: "생성형 시각 규칙 만들기",
+    tr: "Üretken Görsel Kurallar Oluşturmak",
+    vi: "Tạo quy tắc hình ảnh tạo sinh",
+    ta: "உருவாக்கக் காட்சிக் விதிகளை உருவாக்குங்கள்",
+    te: "ఉత్పాదక దృశ్య నియమాలను సృష్టించండి",
+    mr: "जनरेटिव्ह दृश्य नियम तयार करा",
+    ms: "Mencipta Peraturan Visual Generatif",
+    he: "יצירת כללים חזותיים גנרטיביים",
+    pl: "Tworzyć generatywne reguły wizualne",
+    uk: "Створювати генеративні візуальні правила",
+    lt: "Kurti generatyviąsias vizualines taisykles",
+    lv: "Veidot ģeneratīvus vizuālos noteikumus",
+    et: "Generatiivsete visuaalreeglite loomine",
+    be: "Ствараць генератыўныя візуальныя правілы",
+    ka: "გენერაციული ვიზუალური წესების შექმნა",
+    kk: "Генеративті визуалды ережелер жасау",
+    qm: "Yaratıcı körüniş qaidelerini yaratmaq",
+  },
   description: {
     methodological: "Define a transformation that yields a coherent family of related visual outcomes.",
     frontend: {
@@ -35,6 +65,7 @@ export const createGenerativeVisualRules_Skill_Data = buildSkillConfig({
           "be": "Стварыце візуальнае правіла, якое стварае розныя, але звязаныя паміж сабой выявы.",
           "ka": "შექმენით ვიზუალური წესი, რომელიც განსხვავებულ, მაგრამ ერთმანეთთან დაკავშირებულ გამოსახულებებს წარმოქმნის.",
           "kk": "Әртүрлі болғанымен өзара байланысты кескіндер жасайтын визуалды ереже құрыңыз。"
-    },
+    
+      qm: "Bir-birine bağlı, amma ayrı suretlerni doğurğan körüniş qaidesini yaratıñız.",},
   },
 });
