@@ -10,7 +10,7 @@ Program dependence: None
 
 Compare outcome frequencies from two finite runs of the same fair random experiment and explain why differing counts can arise without any change to the experiment's possible outcomes, conditions or chances.
 
-**Pedagogical rationale and placement:** Having identified possible outcomes and compared chances, learners can now distinguish the *fixed rule* of a fair experiment from the *variable tally* observed in finite repeated runs. This is the domain's final canonical Skill; the depth is Grade 3 without numeric probability calculations.
+**Pedagogical rationale and placement:** Having identified possible outcomes and compared chances, learners can now distinguish the _fixed rule_ of a fair experiment from the _variable tally_ observed in finite repeated runs. This is the domain's final canonical Skill; the depth is Grade 3 without numeric probability calculations.
 
 The single canonical target Skill is a competency, not an interaction format or an assessed mastery state.
 
@@ -52,12 +52,12 @@ These observable outcomes state what the Lesson intends to teach and invite lear
 
 ## Conceptual progression and dependencies
 
-Build on the listed prerequisites, expose the *reference* (whole size, hour and minute scale, pictograph key, or random-experiment conditions) before asking the learner to reason. Move from a familiar case to an interactive contrast that makes a common misconception visible, then apply the correct rule in an independent fresh example. The Screenwriter chooses presentation, interactions and number of Sections; the Methodologist owns content limits and accuracy. Supporting representations teach a Skill; they do not create additional Skill IDs.
+Build on the listed prerequisites, expose the _reference_ (whole size, hour and minute scale, pictograph key, or random-experiment conditions) before asking the learner to reason. Move from a familiar case to an interactive contrast that makes a common misconception visible, then apply the correct rule in an independent fresh example. The Screenwriter chooses presentation, interactions and number of Sections; the Methodologist owns content limits and accuracy. Supporting representations teach a Skill; they do not create additional Skill IDs.
 
 ## Misconceptions, examples and boundaries
 
 - An exactly fair two-color spinner must produce five and five in every set of ten spins.
-- An outcome appearing seven times must be more likely on the *next* spin under unchanged independent fair conditions.
+- An outcome appearing seven times must be more likely on the _next_ spin under unchanged independent fair conditions.
 - Different observed counts prove that somebody changed the spinner.
 - A spinner redesigned with three blue sectors and one yellow sector is exactly the same random experiment as before.
 - A recorded example sequence is a guaranteed future prediction rather than one possible result.
@@ -86,4 +86,4 @@ Not specified. Standalone and Program-neutral. Do not claim formal Ukrainian or 
 
 ## Methodologist handoff
 
-**Draft pending editorial approval.** Companion Content and Scene specifications are *provisional* under the explicit batch instruction; their creation does not satisfy or bypass the Methodologist approval gate. No runtime Lesson_Config, Question, Quiz, React Scene, scoring, storage API or Note implementation is authorized by this handoff.
+**Draft pending editorial approval.** Companion Content and Scene specifications are _provisional_ under the explicit batch instruction; their creation does not satisfy or bypass the Methodologist approval gate. No runtime Lesson_Config, Question, Quiz, React Scene, scoring, storage API or Note implementation is authorized by this handoff.

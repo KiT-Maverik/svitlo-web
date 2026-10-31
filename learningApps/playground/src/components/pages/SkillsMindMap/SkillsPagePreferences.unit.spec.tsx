@@ -12,10 +12,13 @@ describe('Skills page-scoped settings', () => {
   beforeEach(() => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skillAnalytics');
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const result: unknown = fixtureJsonForSkillUrl(url);
-      return { ok: result !== null, status: result === null ? 404 : 200, json: async () => result };
-    }));
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (url: string) => {
+        const result: unknown = fixtureJsonForSkillUrl(url);
+        return { ok: result !== null, status: result === null ? 404 : 200, json: async () => result };
+      }),
+    );
   });
 
   afterEach(() => {

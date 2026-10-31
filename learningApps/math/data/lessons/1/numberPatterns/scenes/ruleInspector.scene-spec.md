@@ -16,7 +16,7 @@ Source learner-facing wording: “A rule should fit every jump we can see. Check
 - A proposed rule of the form “add/subtract the same amount each time” fits **all shown transitions** only when each observed consecutive difference equals the proposed signed step.
 - **Opening nonexample:** 2, 5, 9 with candidate +3: 2→5 is +3 (matches), 5→9 is +4 (does not match).
 - **True contrast:** 3, 6, 9, 12 with candidate +3: all gaps +3 (matches).
-- **Second contrast:** 3, 6, 10, 15 with candidate +3: gaps +3, +4, +5 (does not match); do not say these numbers cannot obey *any* rule.
+- **Second contrast:** 3, 6, 10, 15 with candidate +3: gaps +3, +4, +5 (does not match); do not say these numbers cannot obey _any_ rule.
 - **Optional decrease:** 12, 10, 8, 6 with candidate −2: all gaps −2 (matches).
 - **Independent transfer:** 7, 10, 13, 16, ?; gaps +3, +3, +3, proposed continuation 19 if the constant +3 rule is maintained; choices 18 / 19 / 20.
 - Limit terms to the age-appropriate 0–30 range. These examples are not evidence that a finite list mathematically determines a uniquely necessary next number. Say “if we keep this step,” not “19 is the only next number possible.”
@@ -24,6 +24,7 @@ Source learner-facing wording: “A rule should fit every jump we can see. Check
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Placement A / Section 3 — Check the claim**
+
 1. Show large ordered numerals **2, 5, 9** and a card **“Add 3 each time.”** Ask **“Does it fit the whole row? Check both jumps.”**
 2. Reveal the first gap by explicit action: **“2 to 5: 3 more. This matches.”** Highlight the pair; let the child predict whether the next gap will also match.
 3. Reveal second gap: **“5 to 9: 4 more. This does NOT match +3.”** Keep the first result visible so the contradiction is unmistakable.
@@ -33,6 +34,7 @@ Source learner-facing wording: “A rule should fit every jump we can see. Check
 7. Reflection: **“Was checking the first jump enough?”** After thought, reveal **“No. We need to check every jump we can see.”**
 
 **Placement B / Section 4 — Independent use**
+
 1. Show **7, 10, 13, 16, ?**; no candidate step is revealed. Ask **“Check the changes. Which number would come next if we keep the same jump?”**
 2. The learner may inspect the gaps in order: **7→10: +3**, **10→13: +3**, **13→16: +3**; hints do not automatically disclose the final value. Optional hint: **“Compare each pair of neighbors, not only the first two numbers.”**
 3. Allow selection from **18 / 19 / 20**. 18: **“16 to 18 adds 2; the earlier gaps were 3.”** 20: **“16 to 20 adds 4; the earlier gaps were 3.”** 19: **“16 to 19 adds 3, just like each earlier gap.”**

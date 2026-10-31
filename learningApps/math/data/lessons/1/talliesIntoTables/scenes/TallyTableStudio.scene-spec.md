@@ -5,6 +5,7 @@
 **Lesson Content:** [From Tally Marks to a Table](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Target Skills:**
+
 - [tallyMarks.data.ts](../../../../../data/skills/data/collection/skills/tallyMarks.data.ts)
 - [fillSimpleTable.data.ts](../../../../../data/skills/data/collection/skills/fillSimpleTable.data.ts)
 
@@ -18,15 +19,15 @@ The root Scene is proposed as a self-contained **prop-free component** with loca
 
 ## Visual/conceptual model and required states
 
-| State / preset | What the learner can inspect | Correct mathematical / logical condition |
-|---|---|---|
-| First observation | The first of 12 bird/cat/dog cards unprocessed; three tally rows empty | Total assigned 0. |
-| Five birds | Bird row: four vertical marks crossed by a fifth; count five | Exactly five recorded observations, not six. |
-| Six birds | Bird row: complete five-group + one straight mark; count six | 5+1=6. |
-| Final dataset A | Bird 6; Cat 4; Dog 2; 12 cards processed | 6+4+2=12. |
-| Table mismatched | Cat row tally 4 but editable numeral 6 | Show row-specific mismatch; no silent correction. |
-| Dataset B transfer | Star 5; Moon 2; Sun 1; eight cards | 5+2+1=8. |
-| Undo | One previously processed card returned to unprocessed status | Its one tally stroke and affected count are removed consistently. |
+| State / preset     | What the learner can inspect                                           | Correct mathematical / logical condition                          |
+| ------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| First observation  | The first of 12 bird/cat/dog cards unprocessed; three tally rows empty | Total assigned 0.                                                 |
+| Five birds         | Bird row: four vertical marks crossed by a fifth; count five           | Exactly five recorded observations, not six.                      |
+| Six birds          | Bird row: complete five-group + one straight mark; count six           | 5+1=6.                                                            |
+| Final dataset A    | Bird 6; Cat 4; Dog 2; 12 cards processed                               | 6+4+2=12.                                                         |
+| Table mismatched   | Cat row tally 4 but editable numeral 6                                 | Show row-specific mismatch; no silent correction.                 |
+| Dataset B transfer | Star 5; Moon 2; Sun 1; eight cards                                     | 5+2+1=8.                                                          |
+| Undo               | One previously processed card returned to unprocessed status           | Its one tally stroke and affected count are removed consistently. |
 
 All representations preserve the chosen whole, complete inventory, reference clock or observed tokens as appropriate. Do not silently change model conditions while an answer is being explained.
 

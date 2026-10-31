@@ -4,6 +4,7 @@
 **Lesson:** [Which Outcome Is More Likely? — Content](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [likelihoodLanguage.data.ts](../../../../../data/skills/probability/events/skills/likelihoodLanguage.data.ts)
 
 ## Pedagogical role
@@ -16,14 +17,14 @@ This Scene is a **proposed self-contained, prop-free root**. A renderer for the 
 
 ## Model, essential visual states and verifiable answers
 
-| State / preset | Concrete representation | Explanation / correct conclusion |
-|---|---|---|
-| Five equal sectors | B,B,B,B,Y; each 72°; uniform pointer direction | Blue more likely than yellow; yellow possible |
-| Four equal sectors | B,B,Y,Y; each 90°; uniform pointer direction | Blue and yellow equally likely; neither certain |
-| Unequal sector contrast | Blue region 180°; yellow regions 90°+90°; uniform direction | Each color covers half of total angle; chances equal despite 1 versus 2 sectors |
-| Transfer six sectors | Y,Y,Y,Y,B,B; each 60°; uniform pointer direction | Yellow more likely than blue; blue remains possible |
-| No spin taken | Current spinner unchanged, no observed outcomes | The chance comparison follows from stated conditions, not a recorded trial |
-| Learner choice mistake | Any possible-but-less-likely choice incorrectly marked impossible | Explicit available-sector evidence and retry |
+| State / preset          | Concrete representation                                           | Explanation / correct conclusion                                                |
+| ----------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Five equal sectors      | B,B,B,B,Y; each 72°; uniform pointer direction                    | Blue more likely than yellow; yellow possible                                   |
+| Four equal sectors      | B,B,Y,Y; each 90°; uniform pointer direction                      | Blue and yellow equally likely; neither certain                                 |
+| Unequal sector contrast | Blue region 180°; yellow regions 90°+90°; uniform direction       | Each color covers half of total angle; chances equal despite 1 versus 2 sectors |
+| Transfer six sectors    | Y,Y,Y,Y,B,B; each 60°; uniform pointer direction                  | Yellow more likely than blue; blue remains possible                             |
+| No spin taken           | Current spinner unchanged, no observed outcomes                   | The chance comparison follows from stated conditions, not a recorded trial      |
+| Learner choice mistake  | Any possible-but-less-likely choice incorrectly marked impossible | Explicit available-sector evidence and retry                                    |
 
 **Model scope and limitation:** Comparison assumes a uniform pointer direction over angular positions and no physical spin bias. Without the stated fairness model, the number of colored slices alone may not establish real probabilities.
 

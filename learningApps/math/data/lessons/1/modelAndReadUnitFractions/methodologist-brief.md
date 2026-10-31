@@ -44,7 +44,7 @@ An instructional interaction shows what was taught or practiced, not validated m
 - A unit fraction `1/n` means one of `n` equal-magnitude parts of a specified whole. The `n` is a positive integer, and all `n` parts together form exactly that whole.
 - The symbols are read one half `1/2`, one third `1/3`, one quarter `1/4`. The slash/fraction bar separates a count of selected parts from a count of equal whole-parts.
 - A 12-square strip split into three four-square strips yields `1/3` per strip. Split into four three-square strips yields `1/4` per strip.
-- The same language applies to discrete sets, provided the *set* is the whole and the members are partitioned into equal groups. One of four equal groups of a 12-counter set contains three counters.
+- The same language applies to discrete sets, provided the _set_ is the whole and the members are partitioned into equal groups. One of four equal groups of a 12-counter set contains three counters.
 - Equal division is an essential condition: a strip with lengths 2, 3 and 7 cannot call any of those pieces `1/3` of the strip.
 
 **Instructional depth and hard scope:** Positive integer partition counts 2, 3 and 4 only. Unit fractions with exactly one selected equal part; area/length strip models and one discrete-set model with 12 counters. The chosen whole must be shown and held constant for comparisons. Do not introduce non-unit fractions, general numerator mastery, equivalence proofs, operations, number-line arithmetic or fractions beyond one.

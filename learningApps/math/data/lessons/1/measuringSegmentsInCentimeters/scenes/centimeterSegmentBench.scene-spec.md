@@ -11,7 +11,7 @@ Methodologist objectives: [Draft Brief](../methodologist-brief.md) — find leng
 
 ## ACCURATE CONTENT AND MODEL LIMITATIONS
 
-- A segment is a **fixed straight path** between two endpoint dots; its length in the model is a *positive integer* number of centimeter intervals, 1…10. Only specified examples 3, 4, 5, 6, 7 cm appear in this Lesson. No drawing or resizing segments by the learner.
+- A segment is a **fixed straight path** between two endpoint dots; its length in the model is a _positive integer_ number of centimeter intervals, 1…10. Only specified examples 3, 4, 5, 6, 7 cm appear in this Lesson. No drawing or resizing segments by the learner.
 - Scale ticks **0…10** form ten equal conceptual 1 cm intervals. The scale has a small unnumbered plastic margin; the zero tick, not the body edge, is used for alignment. A correct reading has start dot at mark **0**, end dot at mark **L**, giving **L cm** for preset L.
 - If the ruler is offset, the printed endpoint label alone is **not** the length. Example: segment length **5 cm** starts opposite mark **1** and ends opposite **6**; after shifting the ruler so its zero aligns to the segment's start, the endpoint matches **5**. This Lesson corrects by moving to zero; it does not require subtracting marks.
 - Tilt is a distinct incorrect preparation state; aligning a mis-angled scale or trusting its end label is not permitted.
@@ -33,7 +33,7 @@ Methodologist objectives: [Draft Brief](../methodologist-brief.md) — find leng
 1. Fixed **7 cm** segment. Ruler initially parallel but shifted **left by two model unit intervals** relative to correct position, so first endpoint is over printed mark **2**, far endpoint over printed mark **9**.
 2. Learner may use "Align zero" or **"Move ruler right one mark" twice** (the ruler's zero moves toward the segment's start). At final alignment, dots are over **0 and 7**.
 3. Ask learner to read the far mark and report "**7 cm**", optionally reveal a log of intervals 0→1 through 6→7.
-4. Reading far mark 9 *before* alignment triggers: "The ruler's zero does not meet the first dot. Move the scale before reading length."
+4. Reading far mark 9 _before_ alignment triggers: "The ruler's zero does not meet the first dot. Move the scale before reading length."
 5. Additional preset **3 cm** starts already aligned 0→3; moving the segment vertically or changing stroke thickness does not change its length or ruler labels.
 
 ### Placement C — Detect a False Six (Section 3)
@@ -42,7 +42,7 @@ Methodologist objectives: [Draft Brief](../methodologist-brief.md) — find leng
 2. Choices: "Move zero to the first dot" (appropriate), "Keep 6", "Count all six printed labels as spaces" (inappropriate).
 3. Corrected position: ruler shifts **right by one unit interval**, so segment spans **0 to 5**, exactly **five** equal spaces. Final explanation "5 cm".
 4. For wrong 6: "That is the number printed at the far end, but our scale started at 1. The result does not follow from the correct zero method."
-5. The child's choice to shift the ruler changes only displayed *instrument placement*, never the segment's true length. Do not teach arithmetic subtraction as the required strategy.
+5. The child's choice to shift the ruler changes only displayed _instrument placement_, never the segment's true length. Do not teach arithmetic subtraction as the required strategy.
 
 ### Placement D — Independent Unseen Segment (Section 4)
 

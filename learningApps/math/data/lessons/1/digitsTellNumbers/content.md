@@ -6,12 +6,15 @@ Program dependence: None
 Code: Not implemented
 
 ## Instructional concept
+
 Read the ten digits 0–9 as symbols that represent numbers and corresponding quantities. Every Section invites prediction or observation, meaningful learner control, explanatory feedback, and a chance to apply the reasoning to a changed representation, not an extended lecture followed by a token quiz.
 
 ## Learner journey / ordered Section plan
+
 Each Section is a proposed `LessonSection_Config` with vertically ordered existing Resource types: `text` → proposed new `scene` → `markdown`. The generic scene resource type exists; the custom Scene specified here is **not implemented**. Independent prop-free placements have their own starting states and no external mode prop.
 
 ### Section 1 — One mark for three
+
 **text / learner invitation:** “Three apples are here. Which one symbol can say how many?”
 
 **scene / learner action:** [digitsTellNumbers Lab](./scenes/digitsTellNumbersLab.scene-spec.md), placement 1. Count three apples and select a digit card among 2, 3 and 5. Child may predict, inspect, revise or reveal a full worked model.
@@ -25,6 +28,7 @@ Each Section is a proposed `LessonSection_Config` with vertically ordered existi
 **Accessibility:** Ordered object list with clearly announced count/status changes and keyboard/touch controls gives identical mathematical information.
 
 ### Section 2 — The empty basket
+
 **text / learner invitation:** “Which digit represents the empty basket's contents?”
 
 **scene / learner action:** [digitsTellNumbers Lab](./scenes/digitsTellNumbersLab.scene-spec.md), placement 2. Switch basket contents between zero, one and six balls; choose matching digit. Child may predict, inspect, revise or reveal a full worked model.
@@ -38,6 +42,7 @@ Each Section is a proposed `LessonSection_Config` with vertically ordered existi
 **Accessibility:** Ordered object list with clearly announced count/status changes and keyboard/touch controls gives identical mathematical information.
 
 ### Section 3 — Digit gallery
+
 **text / learner invitation:** “Can you match each symbol to its number of dots?”
 
 **scene / learner action:** [digitsTellNumbers Lab](./scenes/digitsTellNumbersLab.scene-spec.md), placement 3. Explore accessible cards 0–9 with spoken and printed number words, ten-frame models. Child may predict, inspect, revise or reveal a full worked model.
@@ -51,6 +56,7 @@ Each Section is a proposed `LessonSection_Config` with vertically ordered existi
 **Accessibility:** Ordered object list with clearly announced count/status changes and keyboard/touch controls gives identical mathematical information.
 
 ### Section 4 — The shelf label
+
 **text / learner invitation:** “A shelf is labeled 7. How many blocks should you place?”
 
 **scene / learner action:** [digitsTellNumbers Lab](./scenes/digitsTellNumbersLab.scene-spec.md), placement 4. Add or remove blocks until a new shelf contains exactly seven blocks. Child may predict, inspect, revise or reveal a full worked model.
@@ -64,16 +70,21 @@ Each Section is a proposed `LessonSection_Config` with vertically ordered existi
 **Accessibility:** Ordered object list with clearly announced count/status changes and keyboard/touch controls gives identical mathematical information.
 
 ## Custom Scene specification
+
 - [digitsTellNumbers Lab](./scenes/digitsTellNumbersLab.scene-spec.md) — four independently instantiated prop-free Scenes, proposed only.
 
 ## Lesson Notes — proposed
+
 Potential concise later recall cue: “Three apples → 3.” Notes, unlocking, persistence and review scheduling are **not** claimed implemented.
 
 ## Practice, retrieval, transfer and assessment boundaries
+
 Section 4 provides independent application in a changed context. Revisit countable evidence if answers differ. No Question, Quiz, scoring, mastery or persistence is designed here.
 
 ## Localization, accessibility and offline
+
 Provide complete genuine translation of every caption, feedback, numeral word and accessible label to all supported locales (no English fallback). RTL mirrors semantic layout without reversing mathematical sequence. Provide WCAG 2.2 AA alternatives, reduced motion, screen-reader count ledger, small-screen support and fully selected-locale offline behavior as planned requirements, not implemented claims.
 
 ## Editorial dependencies
+
 Provisional only: explicit Methodologist approval, Screenwriter review, Scene implementation, localization, and independent Scene tests remain necessary. Shared Skill index and generated taxonomy are coordinator-owned.

@@ -48,6 +48,7 @@ Compare two numbers already grounded in concrete quantities → apply the relati
 **Instructional depth and hard boundaries:** Whole numbers 0–20; no special `comparisonSymbols` Skill teaching, no measured number-line distances or generalized place-value rules; sorted rows are logical sequences, not physical left/right requirements in RTL.
 
 **Concrete reference models:**
+
 - 4, 6, 9 in nondecreasing order.
 - 3, 8, 8, 10; 8 followed by 8 is acceptable.
 - 20, 19, 12, 0.

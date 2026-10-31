@@ -37,7 +37,7 @@ Use a **4×4 grid of cells**; rows A–D run from map top to bottom, columns 1�
 
 ## Conceptual progression and dependencies
 
-1) Locate a single landmark from fixed row/column labels and compare B2 versus 2B. 2) Trace the B2→A4 route one neighboring cell at a time. 3) Draw a small map by placing three named landmarks into labeled cells, then inspect whether two readers obtain the same placements. 4) Transfer to a new 4×4 map with different landmarks and a route, explaining an intentionally wrong coordinate convention.
+1. Locate a single landmark from fixed row/column labels and compare B2 versus 2B. 2) Trace the B2→A4 route one neighboring cell at a time. 3) Draw a small map by placing three named landmarks into labeled cells, then inspect whether two readers obtain the same placements. 4) Transfer to a new 4×4 map with different landmarks and a route, explaining an intentionally wrong coordinate convention.
 
 ## Misconceptions, examples and boundaries
 

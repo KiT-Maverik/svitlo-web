@@ -20,12 +20,12 @@ Display analog and digital clocks together, use a manually controlled clock with
 
 ## Required observable states and correct explanations
 
-| State | Required representation | Mathematical truth |
-|---|---|---|
-| Initial | Static 3:00 clock, short hour hand at 3, long minute hand at 12; labels displayed separately. | Both roles identifiable regardless of color. |
-| Hour 4 | 4:00 with short hand at 4 and long hand at 12; digital form hidden until reveal. | Hour changes, minute condition stays fixed. |
-| Hour 5 | 5:00 same pattern; no claim hour hand teleports in reality. | Exact-hour snapshots only. |
-| Transfer | 8:00 clock with distractors 8:00, 12:08, 8:30. | Short vs long hand reasoning. |
+| State    | Required representation                                                                       | Mathematical truth                           |
+| -------- | --------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| Initial  | Static 3:00 clock, short hour hand at 3, long minute hand at 12; labels displayed separately. | Both roles identifiable regardless of color. |
+| Hour 4   | 4:00 with short hand at 4 and long hand at 12; digital form hidden until reveal.              | Hour changes, minute condition stays fixed.  |
+| Hour 5   | 5:00 same pattern; no claim hour hand teleports in reality.                                   | Exact-hour snapshots only.                   |
+| Transfer | 8:00 clock with distractors 8:00, 12:08, 8:30.                                                | Short vs long hand reasoning.                |
 
 ## Interaction protocol (pedagogical, not an API)
 

@@ -14,7 +14,7 @@ Skip-count by two as repeated addition of equal pairs of objects, explaining why
 
 **What must become clear:** A pair contains exactly two items, so each additional separate pair increases the total number of items by two, while the count of pairs increases by one. Starting with zero objects and adding pairs gives totals 0,2,4,6,8,10: one pair has 2 objects, three pairs 6, five pairs 10. Six pairs contain 12 individual items; seven pairs contain 14. Counting by twos means repeated +2 and can also start at 1: one loose object plus successive pairs gives 1,3,5,7,9. Thus 'count by twos' does not mean every starting number is even; the start is a separate fact. Group count and item count are distinct.
 
-**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains *why* an answer differs from the model.
+**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains _why_ an answer differs from the model.
 
 ## LEARNER JOURNEY
 
@@ -136,15 +136,15 @@ These documents include **English editorial source text only**. Full real transl
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Capability | Status | Owner / next work |
-| --- | --- | --- |
-| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract | Coding Agent builds Lesson later |
-| Generic `text`, `markdown`, `scene` renderer | Observed in Playground `LessonSectionContent.tsx` | New Scene is *not* provided by generic support |
-| Pair-Step Workbench and Two-Step Transfer | **Proposed** Scene specifications only | Editor approval, separate Scene design, implementation and own tests |
-| Genuine locale translations and RTL/nonvisual equivalence | Product requirements, not produced here | Localization and accessibility QA |
-| Complete downloaded-offline experience | Product target; not verified implemented | PWA/dependency integration and airplane-mode E2E |
-| Lesson Notes and unlock/storage | Planned, unverified runtime | Separate architecture and implementation |
-| Scored Questions, Quizzes, mastery and progress claims | Not authored | Separate Assessment Architect |
+| Capability                                                    | Status                                            | Owner / next work                                                    |
+| ------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
+| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract                      | Coding Agent builds Lesson later                                     |
+| Generic `text`, `markdown`, `scene` renderer                  | Observed in Playground `LessonSectionContent.tsx` | New Scene is _not_ provided by generic support                       |
+| Pair-Step Workbench and Two-Step Transfer                     | **Proposed** Scene specifications only            | Editor approval, separate Scene design, implementation and own tests |
+| Genuine locale translations and RTL/nonvisual equivalence     | Product requirements, not produced here           | Localization and accessibility QA                                    |
+| Complete downloaded-offline experience                        | Product target; not verified implemented          | PWA/dependency integration and airplane-mode E2E                     |
+| Lesson Notes and unlock/storage                               | Planned, unverified runtime                       | Separate architecture and implementation                             |
+| Scored Questions, Quizzes, mastery and progress claims        | Not authored                                      | Separate Assessment Architect                                        |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

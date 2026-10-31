@@ -10,9 +10,9 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-An exact division describes a *whole*, a *number of groups* and *a quantity in each group*. In the initial model, “share equally among three groups” means the divisor 3 is the **group count** and quotient 4 is the **number in each group**. If the whole is hidden, rebuild it: three groups with four counters each contain 4 + 4 + 4 = 12 counters, or 3 × 4 = 12. Check the actual division: 12 ÷ 3 = 4.
+An exact division describes a _whole_, a _number of groups_ and _a quantity in each group_. In the initial model, “share equally among three groups” means the divisor 3 is the **group count** and quotient 4 is the **number in each group**. If the whole is hidden, rebuild it: three groups with four counters each contain 4 + 4 + 4 = 12 counters, or 3 × 4 = 12. Check the actual division: 12 ÷ 3 = 4.
 
-Keep the inverse relation concrete before introducing names: dividend = divisor × quotient for exact division with nonzero divisor. This relation has another valid grouping interpretation: □ ÷ 3 = 4 can mean making groups *of three*, which gives four groups. Never claim the 3 always counts groups in all models; the verbal story selects that interpretation. The underlying arithmetic gives the same total.
+Keep the inverse relation concrete before introducing names: dividend = divisor × quotient for exact division with nonzero divisor. This relation has another valid grouping interpretation: □ ÷ 3 = 4 can mean making groups _of three_, which gives four groups. Never claim the 3 always counts groups in all models; the verbal story selects that interpretation. The underlying arithmetic gives the same total.
 
 Only nonnegative whole numbers, small factors (2–5), remainder-free examples and totals up to 20. No division by zero, long division, fractions, remainder cases or formal algebra transformations. This Lesson is not a substitute for prior understanding of division and multiplication. A readiness notice belongs to the Lesson metadata/entry experience; the Screenwriter cannot falsely certify that every 6–8-year-old is prepared.
 
@@ -37,7 +37,7 @@ Navigation, visual reveals and number choices are self-paced, unscored instructi
   3. **markdown — available:** “We made 3 equal groups. Each group has 4. That means **12 ÷ 3 = 4**. Twelve is the whole; three is the number of groups; four is how many are in each group.”
 - Core explanation and learner-facing text: Equal sharing gives the same number in every group, without leftovers. In this model each group must have four, and there must be exactly twelve across all groups.
 - Illustration / model / experiment: Three separate containers each with four counters; totals and grouping labels remain visible and countable. An explicit accessible text list describes group 1: 4, group 2: 4, group 3: 4, total: 12.
-- Learner action, observations and explanatory feedback: “Share the counters,” “Show one group,” “Count all,” and “Show explanation.” If learner interprets three as the count in each group, contrast the two possible readings and restate *this story* (“among three groups”) rather than calling the mathematical operation itself wrong.
+- Learner action, observations and explanatory feedback: “Share the counters,” “Show one group,” “Count all,” and “Show explanation.” If learner interprets three as the count in each group, contrast the two possible readings and restate _this story_ (“among three groups”) rather than calling the mathematical operation itself wrong.
 - Navigation and transition: Show the known relationship before hiding the whole next.
 - Accessibility, locale and RTL: No drag required; keyboard buttons can construct and inspect the groups. Labels name each group independently of color and layout. Read mathematical operands in correct order under RTL.
 - Proposed unlocked Note(s): No Note yet; check prerequisite understanding informally without a score.
@@ -53,7 +53,7 @@ Navigation, visual reveals and number choices are self-paced, unscored instructi
   3. **markdown — available:** “We counted four three times: **4 + 4 + 4 = 12**. Multiplication says the same thing: **3 × 4 = 12**. The missing total is 12.”
 - Core explanation and learner-facing text: Multiplication reconstructs the missing whole: divisor × quotient = dividend for exact division. In this story, **3 groups × 4 per group** is the selected interpretation.
 - Illustration / model / experiment: Each group remains countable and highlighted without increasing any group’s size. The total is hidden as a numeral at first, not hidden as objects. Repeated addition stacks the known equal quantities.
-- Learner action, observations and explanatory feedback: Choices 7 / 12 / 14 or “Count with me.” For 7: “Three groups of four contain more than seven counters. Count 4 + 4 + 4.” For 14: “Four, eight, twelve: fourteen is two too many.” For 12: “Three equal groups of four make twelve.” Choosing “add 3 + 4 = 7” is addressed as counting only two *labels*, not every group’s members.
+- Learner action, observations and explanatory feedback: Choices 7 / 12 / 14 or “Count with me.” For 7: “Three groups of four contain more than seven counters. Count 4 + 4 + 4.” For 14: “Four, eight, twelve: fourteen is two too many.” For 12: “Three equal groups of four make twelve.” Choosing “add 3 + 4 = 7” is addressed as counting only two _labels_, not every group’s members.
 - Navigation and transition: Once the total is visible, ask how to check that the original division remains true.
 - Accessibility, locale and RTL: Each group has a readable ordinal and quantity. Repeated addition available as localized verbal/text explanation. No sound-only counting or timing.
 - Proposed unlocked Note(s): Note 1 “Missing whole = number of groups × each group’s size,” revealed after the 3 × 4 = 12 model is explained (planned, not wired).
@@ -107,7 +107,7 @@ Both are editorially proposed, not wired. Actual Notes IDs, per-learner unlock s
 
 ## PRACTICE, RETRIEVAL AND ASSESSMENT HANDOFF
 
-The scenes invite prediction, concrete counting, repeated addition, inverse multiplication and verification in the original equality. The optional independent □ ÷ 4 = 3 example is a *formative teaching prompt*, not a validated scored Question. Assessment Architect decides whether and how to assess the target Skill, its prerequisites, the effects of hints, permissible problem variants, scoring and any readiness check; current Playground Lesson adapter supports select-one-answer only despite broader QuestionType contracts. A program may revisit inverse operations later; there is no implied spaced scheduler or guaranteed grade-level suitability.
+The scenes invite prediction, concrete counting, repeated addition, inverse multiplication and verification in the original equality. The optional independent □ ÷ 4 = 3 example is a _formative teaching prompt_, not a validated scored Question. Assessment Architect decides whether and how to assess the target Skill, its prerequisites, the effects of hints, permissible problem variants, scoring and any readiness check; current Playground Lesson adapter supports select-one-answer only despite broader QuestionType contracts. A program may revisit inverse operations later; there is no implied spaced scheduler or guaranteed grade-level suitability.
 
 ## GLOBAL ACCESSIBILITY AND LOCALIZATION
 
@@ -115,15 +115,15 @@ Source teaching copy is English, requiring genuine localization to every support
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Readiness and owner |
-| --- | --- |
-| LessonSection_Config with ordered text, markdown and scene resources | Verified in contract and current generic renderer; Coding Agent wires reviewed resources |
-| Equal Groups Builder; Division Equality Checker | **Proposed** interactive Scenes; Scene Designer builds from separately approved specs and tests |
-| Distinct prop-free Scene placements, locale context, persistence | Integration review by Coding Agent; do not invent mode props or existing state APIs |
-| Quiz_Config and additional Question kinds | Contracts exist, current Lesson widget adapter supports select-one-answer; Assessment Architect owns scored work |
-| Image, video, audio and code generic blocks | Typed-only in current generic renderer; not needed here |
-| YouTube | Label only, no supported Resource_Config; not used |
-| Notes, spaced repetition, complete offline delivery | Product intentions, not claimed implemented; engineering dependency |
+| Feature                                                              | Readiness and owner                                                                                              |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| LessonSection_Config with ordered text, markdown and scene resources | Verified in contract and current generic renderer; Coding Agent wires reviewed resources                         |
+| Equal Groups Builder; Division Equality Checker                      | **Proposed** interactive Scenes; Scene Designer builds from separately approved specs and tests                  |
+| Distinct prop-free Scene placements, locale context, persistence     | Integration review by Coding Agent; do not invent mode props or existing state APIs                              |
+| Quiz_Config and additional Question kinds                            | Contracts exist, current Lesson widget adapter supports select-one-answer; Assessment Architect owns scored work |
+| Image, video, audio and code generic blocks                          | Typed-only in current generic renderer; not needed here                                                          |
+| YouTube                                                              | Label only, no supported Resource_Config; not used                                                               |
+| Notes, spaced repetition, complete offline delivery                  | Product intentions, not claimed implemented; engineering dependency                                              |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 
@@ -131,7 +131,7 @@ Source teaching copy is English, requiring genuine localization to every support
 - [Generated Playground Skill taxonomy](../../../../docs/generated/skills/taxonomy.en.md), a read-only Code view of the approved Skill semantics.
 - [Create Lesson Content](../../../../../../studio/skills/lesson-workflow/create-lesson-content.skill.md), authoring workflow and Scene handoff.
 - [Common Core Math Standards](https://corestandards.org/mathematics-standards/) Grade 3 multiplication/division as comparative context, **not** certification of grade 1–2 curriculum alignment; [IES/WWC Elementary Mathematics Intervention](https://ies.ed.gov/ncee/wwc/PracticeGuide/26) as already listed by Methodologist.
-- **Editor choice preserved:** Must remain optional enrichment for children with demonstrated prerequisites or be deferred to older learners; treating the Brief as approved for *this test* does not make advanced division universally age-appropriate. Approve the audience gate before publication.
+- **Editor choice preserved:** Must remain optional enrichment for children with demonstrated prerequisites or be deferred to older learners; treating the Brief as approved for _this test_ does not make advanced division universally age-appropriate. Approve the audience gate before publication.
 - Current Methodologist Brief still says Draft on disk despite conversational authorization for this experiment. Do not alter the Methodologist-owned file in this Screenwriter stage.
 - Editorial review of exact language, two interpretations of division and small-factors scope; technical review of isolation, accessibility and offline readiness.
 

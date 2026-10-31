@@ -19,7 +19,6 @@ Each new-format SkillDomain has one English `Slug: lowerCamelCase` beneath its h
 
 The Domain config lives in `<PackageRoot>/data/skills/<domain>/<domain>.data.ts` and directly imports immediate Group Data from `./<group>/<group>.data`, or direct Skill Data from `./skills` for an ungrouped Domain. It embeds full imported child entities into `groups` and optional direct `skills`, not just their `.id` fields. **No Domain-directory `index.ts` is required or allowed**; `<PackageRoot>/data/skills/index.ts` exports the Domain to consumers.
 
-
 The `@svitlo/contracts/taxonomy` `SkillDomain_Config` includes `slug`, `id`, localized `name`, required `groups` and optional direct `skills`. Both dictionaries contain complete built child entities, and may be populated simultaneously. At least one child must exist. The builder validates child entities and UUIDs, while the source graph checker validates canonical slug-to-path and import relationships. The registry supplies `fileLocation` separately. Optional `description: { methodological: string; frontend?: Record<LanguageCode, string> }` retains existing localization rules; no learner progress belongs here.
 
 - **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological explanation, optional complete frontend copy and both Group and direct Skill membership.

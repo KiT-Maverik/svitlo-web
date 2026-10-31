@@ -34,7 +34,7 @@ Previously transferred, pedagogically adjacent Skills: `wholeAndEqualParts`, `un
 ## Expected learning outcomes
 
 - In a small 4×2 rectangle and a large 8×2 rectangle, identify half of each as 4 and 8 equal unit squares respectively.
-- State that the fraction 1/2 is the same *share* of each own whole but does not imply identical absolute areas.
+- State that the fraction 1/2 is the same _share_ of each own whole but does not imply identical absolute areas.
 - Reconstruct a complete selected whole as 2/2, 3/3 or 4/4 when all equal parts are selected.
 - Explain why the symbol 1 (one whole) is valid for each 2/2, 3/3 and 4/4 even when the partition count changes.
 - Independently distinguish 3/3 of a six-cell rectangle from 3/3 of a twelve-cell rectangle: both are complete wholes, with different absolute areas.
@@ -46,14 +46,14 @@ These observable outcomes state what the Lesson intends to teach and invite lear
 - A fraction is a proportion relative to one explicitly chosen reference whole. The same fraction of differently sized wholes may have different areas, lengths or quantities.
 - A 4×2 whole has area eight congruent unit squares; half of it contains four. An 8×2 whole has area sixteen; half contains eight. Neither fraction label changes when the reference whole changes.
 - For any positive n, selecting all n equal parts of the same whole gives n/n. Two halves 2/2, three thirds 3/3, and four quarters 4/4 each cover exactly the chosen whole, so each equals 1.
-- The same mathematical proportion can be represented by different partitions of the same whole (2/2 versus 4/4), and can represent a different absolute amount if the *whole* changes.
+- The same mathematical proportion can be represented by different partitions of the same whole (2/2 versus 4/4), and can represent a different absolute amount if the _whole_ changes.
 - A fair comparison of actual amounts requires the units to be comparable; both models use congruent unit squares, not differently scaled pictures.
 
 **Depth selected for this audience:** Rectangles measured in congruent grid squares; halves, thirds, quarters and n/n for n=2,3,4 only. Show same-share/different-amount and complete-whole reconstruction. Exclude comparisons of unrelated units, formal fraction equivalence beyond the full-whole identity, fractions above one, fraction multiplication or calculating a fraction of arbitrary quantities.
 
 ## Conceptual progression and dependencies
 
-Build on the listed prerequisites, expose the *reference* (whole size, hour and minute scale, pictograph key, or random-experiment conditions) before asking the learner to reason. Move from a familiar case to an interactive contrast that makes a common misconception visible, then apply the correct rule in an independent fresh example. The Screenwriter chooses presentation, interactions and number of Sections; the Methodologist owns content limits and accuracy. Supporting representations teach a Skill; they do not create additional Skill IDs.
+Build on the listed prerequisites, expose the _reference_ (whole size, hour and minute scale, pictograph key, or random-experiment conditions) before asking the learner to reason. Move from a familiar case to an interactive contrast that makes a common misconception visible, then apply the correct rule in an independent fresh example. The Screenwriter chooses presentation, interactions and number of Sections; the Methodologist owns content limits and accuracy. Supporting representations teach a Skill; they do not create additional Skill IDs.
 
 ## Misconceptions, examples and boundaries
 
@@ -87,4 +87,4 @@ Not specified. Standalone and Program-neutral. Do not claim formal Ukrainian or 
 
 ## Methodologist handoff
 
-**Draft pending editorial approval.** Companion Content and Scene specifications are *provisional* under the explicit batch instruction; their creation does not satisfy or bypass the Methodologist approval gate. No runtime Lesson_Config, Question, Quiz, React Scene, scoring, storage API or Note implementation is authorized by this handoff.
+**Draft pending editorial approval.** Companion Content and Scene specifications are _provisional_ under the explicit batch instruction; their creation does not satisfy or bypass the Methodologist approval gate. No runtime Lesson_Config, Question, Quiz, React Scene, scoring, storage API or Note implementation is authorized by this handoff.

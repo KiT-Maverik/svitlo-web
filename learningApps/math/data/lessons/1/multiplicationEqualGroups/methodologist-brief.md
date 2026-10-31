@@ -65,4 +65,3 @@ Not specified. As standalone early multiplication foundations, this Lesson may p
 ## Methodologist handoff
 
 Draft for explicit editor approval. After approval, the Screenwriter can illustrate why the two notations describe a common quantity and invite reasoning about equal versus unequal groups. Do not invent a third combination Skill or treat one correct multiplication fact as sufficient mastery of both Skills.
-

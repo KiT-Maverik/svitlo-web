@@ -20,12 +20,12 @@ Treat a fixed collection of eight shapes as observations. Sorting by shape is de
 
 ## Required observable states and correct explanations
 
-| State | Required representation | Mathematical truth |
-|---|---|---|
-| Original unsorted | Eight named tokens: C1–C4 circles, T1–T3 triangles, S1 square; all unassigned. | Total = 8; category totals start 0. |
-| Partly sorted | Any subset assigned; counters equal actual distinct assigned tokens. | No token can belong to two groups simultaneously. |
-| Fully sorted | C = 4, T = 3, S = 1; assigned count 8, unassigned 0. | 4+3+1=8 reconciles with original total. |
-| New collection | Stars 5, circles 2, squares 2; initial counts zero. | Independent transfer total is 9. |
+| State             | Required representation                                                        | Mathematical truth                                |
+| ----------------- | ------------------------------------------------------------------------------ | ------------------------------------------------- |
+| Original unsorted | Eight named tokens: C1–C4 circles, T1–T3 triangles, S1 square; all unassigned. | Total = 8; category totals start 0.               |
+| Partly sorted     | Any subset assigned; counters equal actual distinct assigned tokens.           | No token can belong to two groups simultaneously. |
+| Fully sorted      | C = 4, T = 3, S = 1; assigned count 8, unassigned 0.                           | 4+3+1=8 reconciles with original total.           |
+| New collection    | Stars 5, circles 2, squares 2; initial counts zero.                            | Independent transfer total is 9.                  |
 
 ## Interaction protocol (pedagogical, not an API)
 

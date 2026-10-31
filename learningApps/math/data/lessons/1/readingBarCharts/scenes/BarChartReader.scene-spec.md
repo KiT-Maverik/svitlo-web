@@ -22,12 +22,12 @@ Use apples=4, pears=2, plums=5, y-axis 0 to 6 in unit steps; 5 > 4 > 2. For tran
 
 ## Required observable states
 
-| State | Data or model facts | Correct interpretation |
-|---|---|---|
-| Initial chart | Apples 4, pears 2, plums 5; all bars equal width; scale 0–6. | Bar height encodes category count. |
-| Selected category | Apples selected; highlight baseline 0, tick 4, bar top at 4. | Apples count equals 4. |
-| Misleading decoration | Pear bar artificially wide but still ends at 2; warning states width is not count. | Pears remain 2, plums remain 5. |
-| New dataset | Three equally wide bars red=3, blue=5, yellow=1 with same baseline. | Smallest yellow 1; highest blue 5. |
+| State                 | Data or model facts                                                                | Correct interpretation             |
+| --------------------- | ---------------------------------------------------------------------------------- | ---------------------------------- |
+| Initial chart         | Apples 4, pears 2, plums 5; all bars equal width; scale 0–6.                       | Bar height encodes category count. |
+| Selected category     | Apples selected; highlight baseline 0, tick 4, bar top at 4.                       | Apples count equals 4.             |
+| Misleading decoration | Pear bar artificially wide but still ends at 2; warning states width is not count. | Pears remain 2, plums remain 5.    |
+| New dataset           | Three equally wide bars red=3, blue=5, yellow=1 with same baseline.                | Smallest yellow 1; highest blue 5. |
 
 ## Required learning interaction
 

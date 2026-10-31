@@ -4,8 +4,9 @@
 **Audience:** Grade 3, approximately ages 8–9.
 **Source brief:** [Draft Methodologist Brief](./methodologist-brief.md).
 **Target Skills:**
+
 - [readFiveMinute.data.ts](../../../../data/skills/time/clock/skills/readFiveMinute.data.ts)
-**Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
+  **Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
 
 ## The learner's experience
 
@@ -44,8 +45,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Five minutes at numeral 5*: “Each jump is five minutes. Five jumps make twenty-five, not five.”
-- *25 minutes*: “Yes: five equal intervals times five minutes each make 25 minutes.”
+- _Five minutes at numeral 5_: “Each jump is five minutes. Five jumps make twenty-five, not five.”
+- _25 minutes_: “Yes: five equal intervals times five minutes each make 25 minutes.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Expose a numeric transcript 'after 4 jumps: 20 minutes' on each action. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -67,8 +68,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *2:05*: “The long hand is at numeral 5, not numeral 1. Count five jumps to 25 minutes.”
-- *5:25*: “The long hand shows 25 minutes; the short hand is between 2 and 3, so the hour is two.”
+- _2:05_: “The long hand is at numeral 5, not numeral 1. Count five jumps to 25 minutes.”
+- _5:25_: “The long hand shows 25 minutes; the short hand is between 2 and 3, so the hour is two.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Read-out available: 'short hand between 2 and 3, nearer 2; long hand at 5'. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -90,8 +91,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *7:40 chosen for 6:40*: “The short hand has not passed 7. It is still after 6; the minute hand does not name the hour.”
-- *12:55 chosen for 11:55*: “The short hand is almost at 12, not one hour beyond. It is 11:55 until the minute hand returns to 12.”
+- _7:40 chosen for 6:40_: “The short hand has not passed 7. It is still after 6; the minute hand does not name the hour.”
+- _12:55 chosen for 11:55_: “The short hand is almost at 12, not one hour beyond. It is 11:55 until the minute hand returns to 12.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Text descriptions include the short hand's interval endpoints so no subtle pointer angle must be perceived. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -113,8 +114,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *10:35*: “The hour hand is still between nine and ten, so nine is the current hour.”
-- *7:09*: “The hand at seven is the minute hand; seven jumps of five minutes make 35.”
+- _10:35_: “The hour hand is still between nine and ten, so nine is the current hour.”
+- _7:09_: “The hand at seven is the minute hand; seven jumps of five minutes make 35.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. All answer choices and reasoning can be selected through labelled buttons with no drag or time pressure. The explanation remains available even if the learner chooses not to answer before moving on.
 

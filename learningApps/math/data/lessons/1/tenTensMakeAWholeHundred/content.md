@@ -94,19 +94,19 @@ Guided manipulation in Section 1, short verbal retrieval in Section 2 and differ
 
 All learner-facing prompts, controls, errors, numerals/number words, object identities, accessible state messages and Notes require **genuine translations for every current Engine-supported locale**, with no fallback. Mathematical order, operand identities, currency units and grouping must be preserved in semantic RTL, not flipped mechanically. WCAG 2.2 AA: touch/keyboard/switch controls, visible focus, nonvisual ordered evidence ledger, color-independent status, reduced motion, high zoom and mobile support. Equivalent selected-language instructional data and interaction must remain usable once downloaded offline; these are **requirements, not delivered production features**.
 
-Learner-facing samples in this Markdown are **English editorial source only**. No translation dictionaries or alternative locale content are falsely claimed. 
+Learner-facing samples in this Markdown are **English editorial source only**. No translation dictionaries or alternative locale content are falsely claimed.
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Verified / proposed | Later responsibility |
-| --- | --- | --- |
-| `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract | Coding Agent assembles only after editorial approval |
-| Generic `text`, `markdown`, `scene` renderer | Observed in Playground | Bespoke Scenes remain unimplemented |
-| Hundred-Bundle Exchange, Ten-Step Crossing | **Proposed** Screenwriter specifications | Editor approval, Scene Designer, independent tests |
-| Genuine locales, RTL and nonvisual controls | Product requirements, not delivered | Localization and accessibility QA |
-| Selected-language offline Lesson and asset download | Product target, unverified | PWA/integration and offline E2E |
-| Notes, revision sheet, progress, persistent mastery | Planned or unverified, not wired | Separate architecture |
-| Questions, Quizzes, grading | Not authored | Assessment Architect |
+| Feature                                               | Verified / proposed                      | Later responsibility                                 |
+| ----------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
+| `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract             | Coding Agent assembles only after editorial approval |
+| Generic `text`, `markdown`, `scene` renderer          | Observed in Playground                   | Bespoke Scenes remain unimplemented                  |
+| Hundred-Bundle Exchange, Ten-Step Crossing            | **Proposed** Screenwriter specifications | Editor approval, Scene Designer, independent tests   |
+| Genuine locales, RTL and nonvisual controls           | Product requirements, not delivered      | Localization and accessibility QA                    |
+| Selected-language offline Lesson and asset download   | Product target, unverified               | PWA/integration and offline E2E                      |
+| Notes, revision sheet, progress, persistent mastery   | Planned or unverified, not wired         | Separate architecture                                |
+| Questions, Quizzes, grading                           | Not authored                             | Assessment Architect                                 |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

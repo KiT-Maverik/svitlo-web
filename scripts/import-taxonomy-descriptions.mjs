@@ -15,7 +15,9 @@ import path from 'node:path';
 import process from 'node:process';
 import ts from 'typescript';
 
-function fail(message) { throw new Error(message); }
+function fail(message) {
+  throw new Error(message);
+}
 const root = path.resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 let packageName;
@@ -49,9 +51,14 @@ function parseSection(entry) {
   const lines = entry.lines.filter(x => x.line.trim());
   if (lines.some(x => /^Code:/.test(x.line))) fail(prefix + 'legacy Code: links require template migration');
   const count = lines.filter(x => /^Skills:|^Groups:/.test(x.line));
-  const kind = entry.depth === 3 ? 'SkillDomain' :
-    entry.depth === 5 ? 'Skill' :
-    count.some(x => x.line.startsWith('Skills:')) ? 'SkillGroup' : 'Skill';
+  const kind =
+    entry.depth === 3
+      ? 'SkillDomain'
+      : entry.depth === 5
+        ? 'Skill'
+        : count.some(x => x.line.startsWith('Skills:'))
+          ? 'SkillGroup'
+          : 'Skill';
   if (entry.depth === 3 && !count.some(x => x.line.startsWith('Groups:'))) {
     fail(prefix + 'Domain metadata missing');
   }
@@ -77,8 +84,11 @@ function parseSection(entry) {
   const methodological = field('Methodological description: ');
   const friendly = field('User-friendly description: ');
   // This is editorial draft copy only. Publishing a single locale to frontend is forbidden.
-  const accepted = new Set([...count.map(x => x.number), linkLines[0].number,
-    ...lines.filter(x => /^Methodological description: |^User-friendly description: /.test(x.line)).map(x => x.number)]);
+  const accepted = new Set([
+    ...count.map(x => x.number),
+    linkLines[0].number,
+    ...lines.filter(x => /^Methodological description: |^User-friendly description: /.test(x.line)).map(x => x.number),
+  ]);
   const unexpected = lines.filter(x => !accepted.has(x.number));
   if (unexpected.length) fail(prefix + 'unexpected unlabeled content at line ' + unexpected[0].number);
   if (friendly !== '[Not authored]' && friendly.startsWith('[')) fail(prefix + 'invalid user-friendly placeholder');
@@ -97,9 +107,13 @@ function patch(entry) {
   if (ast.parseDiagnostics.length) fail('Cannot import into invalid TypeScript: ' + entry.target);
   let object = null;
   function visit(node) {
-    if (ts.isCallExpression(node) && ts.isIdentifier(node.expression) &&
+    if (
+      ts.isCallExpression(node) &&
+      ts.isIdentifier(node.expression) &&
       node.expression.text === 'build' + entry.kind + 'Config' &&
-      node.arguments.length === 1 && ts.isObjectLiteralExpression(node.arguments[0])) {
+      node.arguments.length === 1 &&
+      ts.isObjectLiteralExpression(node.arguments[0])
+    ) {
       if (object) fail('Multiple entity objects in ' + entry.target);
       object = node.arguments[0];
     }
@@ -107,18 +121,27 @@ function patch(entry) {
   }
   visit(ast);
   if (!object) fail('Missing build' + entry.kind + 'Config in ' + entry.target);
-  const existing = object.properties.filter(p => p.name &&
-    (ts.isIdentifier(p.name) || ts.isStringLiteral(p.name)) && p.name.text === 'description');
+  const existing = object.properties.filter(
+    p => p.name && (ts.isIdentifier(p.name) || ts.isStringLiteral(p.name)) && p.name.text === 'description',
+  );
   if (existing.length > 1) fail('Duplicate descriptions in ' + entry.target);
   if (existing.length === 1) {
     const prop = existing[0];
     if (!ts.isPropertyAssignment(prop) || !ts.isObjectLiteralExpression(prop.initializer)) {
       fail('Unrecognized existing description in ' + entry.target);
     }
-    const desc = prop.initializer.properties.find(p => ts.isPropertyAssignment(p) &&
-      (ts.isIdentifier(p.name) || ts.isStringLiteral(p.name)) && p.name.text === 'methodological');
-    if (!desc || !ts.isPropertyAssignment(desc) ||
-      !ts.isStringLiteral(desc.initializer) || desc.initializer.text !== entry.methodological) {
+    const desc = prop.initializer.properties.find(
+      p =>
+        ts.isPropertyAssignment(p) &&
+        (ts.isIdentifier(p.name) || ts.isStringLiteral(p.name)) &&
+        p.name.text === 'methodological',
+    );
+    if (
+      !desc ||
+      !ts.isPropertyAssignment(desc) ||
+      !ts.isStringLiteral(desc.initializer) ||
+      desc.initializer.text !== entry.methodological
+    ) {
       fail('Conflicting/partial existing methodological description: ' + entry.target);
     }
     return { ...entry, before, after: before, state: 'already-matched' };
@@ -134,8 +157,7 @@ function patch(entry) {
   }
   if (!prefix.endsWith('\n')) fail('Config closing brace must be on its own line: ' + entry.target);
   const suffix = before.slice(close);
-  const after = prefix + '  description: { methodological: ' +
-    JSON.stringify(entry.methodological) + ' },\n' + suffix;
+  const after = prefix + '  description: { methodological: ' + JSON.stringify(entry.methodological) + ' },\n' + suffix;
   return { ...entry, before, after, state: 'would-update' };
 }
 
@@ -149,5 +171,10 @@ for (const item of changes) {
 if (write) {
   for (const item of pending) fs.writeFileSync(item.target, item.after);
 }
-process.stdout.write((write ? 'Updated ' : 'Would update ') + pending.length +
-  '/' + changes.length + ' Code entities. User-friendly drafts are NOT published to description.frontend.\n');
+process.stdout.write(
+  (write ? 'Updated ' : 'Would update ') +
+    pending.length +
+    '/' +
+    changes.length +
+    ' Code entities. User-friendly drafts are NOT published to description.frontend.\n',
+);

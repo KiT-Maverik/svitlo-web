@@ -2122,4 +2122,3 @@ Status: pending
 
 Methodological description: Consider the likelihood of undesirable effects on nontarget species, ecosystem relationships, or the spread of organisms, distinguishing risk from demonstrated harm.
 User-friendly description: Explore possible ecological risks of biotechnology without assuming every risk causes harm.
-

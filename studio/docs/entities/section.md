@@ -10,7 +10,7 @@ A **Section** is one navigable learning step that groups content for a recogniza
 
 - **`LessonSection_Config`** holds an ordered, **nonempty** `content: NonEmptyArray<Resource_Config>`, a Section name/ID, parent Lesson ID, skippable policy and optional presentation icon. Use it for general teaching/practice/exploration content when the necessary blocks are actually supported.
 - **`Quiz_Config`** is a **different** Section-shaped assessment structure with a question bank and settings; it is **not** a regular vertical array of general Resource blocks. Scoring, mastery attribution and correct-response validity are assessment-owned, not Screenwriter-owned.
-- **Theory, practice, flashcards, interactive, coding, kids' block coding** are currently *editorial categories/capability proposals* rather than established additional `Section` discriminators. Do not add `sectionType: 'theory'` or a new `Quiz_Config` field merely because a category is useful. A first-class type requires explicit architecture and implementation approval.
+- **Theory, practice, flashcards, interactive, coding, kids' block coding** are currently _editorial categories/capability proposals_ rather than established additional `Section` discriminators. Do not add `sectionType: 'theory'` or a new `Quiz_Config` field merely because a category is useful. A first-class type requires explicit architecture and implementation approval.
 - Existing shared Flashcard widgets do **not** by themselves imply a supported standalone Flashcard Section. Likewise, a coding editor or block programming area needs verified renderer/integration or a proposed Scene.
 
 ## VERTICAL CONTENT-BLOCK CONTRACT

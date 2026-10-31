@@ -20,7 +20,6 @@ Code files: 0/11 Domains · 0/50 Groups · 0/216 Skills
 
 ## DOMAINS
 
- 
 ### Історичне пізнання
 
 Slug: historicalInquiry

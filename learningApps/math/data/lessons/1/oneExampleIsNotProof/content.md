@@ -10,7 +10,7 @@ A single true example is informative but cannot prove a statement about **every*
 
 ### Section 1 — “This worked” is not “This always works”
 
-*Purpose: distinguish observation of one case from a general rule.*
+_Purpose: distinguish observation of one case from a general rule._
 
 1. **`text` Resource:** “Try **1 + 3 = 4**. Both numbers we added are odd, and the answer is four. Can we now say **every pair of odd numbers adds up to four**?”
 2. **`scene` Resource (proposed):** [Counterexample Detective](./scenes/counterexampleDetective.scene-spec.md), entry A. Let the learner verify 1 and 3 are odd and total four. Then offer a different pair 3+5=**8**, so the claim about **every pair** giving four fails. “The first example was true, but it tested only one pair.”
@@ -19,25 +19,25 @@ A single true example is informative but cannot prove a statement about **every*
 
 ### Section 2 — Find a real counterexample
 
-*Purpose: refute a clearly false universal claim with a case inside its premises.*
+_Purpose: refute a clearly false universal claim with a case inside its premises._
 
 1. **`text`:** “A card says: **Every sum of two odd whole numbers is odd**. What numbers would you test to check whether that is true?”
 2. **`scene` Resource (proposed):** Detective entry B presents pairs **3+5**, **4+5**, **1+3**, and learner-selected small odd numbers. The child must check **both operands are odd** before using the sum. For **3+5=8**, show eight is even: the case satisfies the premises and contradicts the conclusion, so it is a real counterexample.
-3. **`text`, feedback:** For **4+5=9**: “Nine is odd, but four is **even**, so that pair does not test a claim about two *odd* numbers. It is not a valid counterexample.” For 3+5: “Both inputs are odd and eight is even, so one valid case disproves ‘every sum is odd’.”
+3. **`text`, feedback:** For **4+5=9**: “Nine is odd, but four is **even**, so that pair does not test a claim about two _odd_ numbers. It is not a valid counterexample.” For 3+5: “Both inputs are odd and eight is even, so one valid case disproves ‘every sum is odd’.”
 4. **`markdown`:** “A **counterexample** must satisfy the rule's conditions but fail its claimed result. One valid counterexample is enough to show a universal claim is false.”
 
 ### Section 3 — One example may support a true rule without proving it
 
-*Purpose: prevent the misunderstanding that 'no counterexample so far' guarantees a rule.*
+_Purpose: prevent the misunderstanding that 'no counterexample so far' guarantees a rule._
 
 1. **`text`:** “A student checks **4 + 0 = 4** and proposes **adding zero never changes a whole number**. Is the example true? Does this single example by itself prove the rule for every whole number?”
-2. **`scene` Resource (proposed):** Detective entry C lets learners try 7+0=7 and 12+0=12. Explain: “These are true supporting cases. Trying more cases is helpful, but examples alone are not a proof for every whole number.” Include a simple conceptual visual: a collection with zero added stays unchanged, as an *informal explanation* rather than a formal quantified proof.
+2. **`scene` Resource (proposed):** Detective entry C lets learners try 7+0=7 and 12+0=12. Explain: “These are true supporting cases. Trying more cases is helpful, but examples alone are not a proof for every whole number.” Include a simple conceptual visual: a collection with zero added stays unchanged, as an _informal explanation_ rather than a formal quantified proof.
 3. **`text`, feedback:** “You may have good reasons for the rule, but simply listing three examples still doesn't establish **all** cases.” If a learner claims examples were false, reveal the exact sums and set separation of verified instance vs universal justification.
 4. **`markdown`:** “No counterexample found **yet** is not the same thing as proving a rule. First decide what the rule claims about all cases.”
 
 ### Section 4 — Independent transfer: refute a new “every” statement
 
-*Purpose: construct a counterexample with a full premise/result explanation.*
+_Purpose: construct a counterexample with a full premise/result explanation._
 
 1. **`text`:** “Someone claims: **Every whole number greater than five is odd**. Find one number that proves this claim wrong. Explain why it fits the first part and fails the second.”
 2. **`scene` Resource (proposed):** Detective entry D lets the learner choose a whole number from 0–20 via accessible stepper/typing. **6** is the simplest counterexample: 6 > 5 and 6 is even. Other eligible examples include 8, 10, 12 and so on. For choice 4: “Four is not greater than five, so it cannot test the claim.” For 7: “Seven is greater than five **and odd**; it supports the claim in one case but does not refute it.” For 6: “Six is greater than five, yet it is even; the rule says **every** such number is odd, so it is false.”

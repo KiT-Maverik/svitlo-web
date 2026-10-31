@@ -10,7 +10,7 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-In a division, the **starting total** and the **answer per group** may be known while the **number of equal groups** is missing. For the explicit sharing story, “Twelve counters shared evenly into some groups give four counters in each,” ask how many groups can be made. Forming groups of four from twelve gives three, so **12 ÷ 4 = 3** finds the group count. The *original* statement is **12 ÷ □ = 4**; putting three in the box gives **12 ÷ 3 = 4**. This exact check, not merely the finding calculation, completes the reasoning.
+In a division, the **starting total** and the **answer per group** may be known while the **number of equal groups** is missing. For the explicit sharing story, “Twelve counters shared evenly into some groups give four counters in each,” ask how many groups can be made. Forming groups of four from twelve gives three, so **12 ÷ 4 = 3** finds the group count. The _original_ statement is **12 ÷ □ = 4**; putting three in the box gives **12 ÷ 3 = 4**. This exact check, not merely the finding calculation, completes the reasoning.
 
 Only exact division with nonzero dividend, nonzero quotient and positive integer divisor in examples ≤25; a divisor of zero is never allowed. For this story the divisor is a **group count**. Another valid division story uses divisor as group **size**, but the lesson must identify that model separately rather than making a secret switch. This is advanced enrichment after multiplication and exact division prerequisites.
 
@@ -31,7 +31,7 @@ Only exact division with nonzero dividend, nonzero quotient and positive integer
   1. **text — available:** “Twelve counters are shared equally among **3 groups**. Each group has **4**. What does each number tell us?”
   2. **scene — generic Scene resource available, custom implementation proposed:** [Missing Divisor Sharing Lab](./scenes/missingDivisorSharingLab.scene-spec.md), known-division placement with three labeled groups of four and three separate role labels.
   3. **markdown — available:** “**12 ÷ 3 = 4**. Twelve was the total. Three was the number of groups. Four was in each group. The number after ÷ is called the divisor.”
-- Core explanation: Dividend = total twelve; divisor = three groups *in this story*; quotient = four per group. No automatic promotion to formal language before seeing quantities.
+- Core explanation: Dividend = total twelve; divisor = three groups _in this story_; quotient = four per group. No automatic promotion to formal language before seeing quantities.
 - Learner action/feedback: “Inspect total,” “Inspect group count,” “Inspect each group” (keyboard-operable). If the child confuses three with four: “Three groups. Four counters **inside each**.” No score.
 - Navigation: Hide only the number of groups, with all twelve counters still countable.
 - Accessibility/RTL: Ordered group ledger and full mathematical expression; distinct semantic labels not inferred from spatial left/right.

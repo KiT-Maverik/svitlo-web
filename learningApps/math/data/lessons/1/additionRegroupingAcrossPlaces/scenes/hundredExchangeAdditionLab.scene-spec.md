@@ -43,7 +43,7 @@ Three labeled Hundreds/Tens/Ones columns linked to physical base-ten blocks with
 
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 
-Every prompt, error, step, role, place name, label, status, aria text and Note genuinely localized for all supported locales; no English fallback. In RTL, preserve exact operand identities and place values rather than mechanically flipping number order. A fully interactive ordered text ledger mirrors *each exchange and arithmetic step* via native keyboard/touch/switch buttons and screen reader status, providing full access without vision or dragging. Large child-friendly controls, visible focus, high contrast, zoom/mobile and reduced-motion parity. Entire deterministic operation and locale data must work offline after download on low-end devices.
+Every prompt, error, step, role, place name, label, status, aria text and Note genuinely localized for all supported locales; no English fallback. In RTL, preserve exact operand identities and place values rather than mechanically flipping number order. A fully interactive ordered text ledger mirrors _each exchange and arithmetic step_ via native keyboard/touch/switch buttons and screen reader status, providing full access without vision or dragging. Large child-friendly controls, visible focus, high contrast, zoom/mobile and reduced-motion parity. Entire deterministic operation and locale data must work offline after download on low-end devices.
 
 ## ACCEPTANCE SCENARIOS
 

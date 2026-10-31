@@ -64,4 +64,3 @@ Not specified. The Lesson remains autonomous and can be placed in an appropriate
 ## Methodologist handoff
 
 Draft for explicit editor approval. After approval, the Screenwriter can develop ways to reveal an unknown part through quantity models, inverse operations and substitution, but must not equate a single correct response with independent mastery.
-

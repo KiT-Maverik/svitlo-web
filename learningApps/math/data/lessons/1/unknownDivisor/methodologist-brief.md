@@ -8,7 +8,7 @@ Program dependence: None
 
 ## Educational purpose
 
-Teach how to recover an unknown **divisor** in an exact division when both the dividend and a **nonzero quotient** are supplied, by dividing the dividend by the quotient. Emphasize that the divisor is the number *after* the division symbol in the original equality and is never zero; verify by substituting the candidate into the **original division**. In 12 ÷ □ = 4, the missing divisor is 3, not the known quotient 4.
+Teach how to recover an unknown **divisor** in an exact division when both the dividend and a **nonzero quotient** are supplied, by dividing the dividend by the quotient. Emphasize that the divisor is the number _after_ the division symbol in the original equality and is never zero; verify by substituting the candidate into the **original division**. In 12 ÷ □ = 4, the missing divisor is 3, not the known quotient 4.
 
 ## Target audience
 
@@ -35,7 +35,7 @@ Teach how to recover an unknown **divisor** in an exact division when both the d
 
 ## Essential subject matter
 
-For exact whole-number division A ÷ d = q with A and q **nonzero** here, a missing divisor satisfies d = A ÷ q, provided d is a positive integer and the original division is exact. **d = 0 is not permitted**, even when the other values are zero. The quotient is *not* the missing divisor: in 12 ÷ □ = 4, q=4 and d=3. In an equal-sharing story, the total twelve is shared into an unknown number of groups with four in each; grouping four counters repeatedly produces **three** groups. In an equal-group-size story, the same 12 ÷ 3 = 4 instead means four groups of size three. Both interpretations are valid but their quantity labels must not be swapped mid-explanation. Reconstruct d via 12 ÷ 4 = 3 and validate by 12 ÷ 3 = 4. This contrasts with finding unknown dividend, □ ÷ 3 = 4, which needs multiplication 3 × 4 = 12.
+For exact whole-number division A ÷ d = q with A and q **nonzero** here, a missing divisor satisfies d = A ÷ q, provided d is a positive integer and the original division is exact. **d = 0 is not permitted**, even when the other values are zero. The quotient is _not_ the missing divisor: in 12 ÷ □ = 4, q=4 and d=3. In an equal-sharing story, the total twelve is shared into an unknown number of groups with four in each; grouping four counters repeatedly produces **three** groups. In an equal-group-size story, the same 12 ÷ 3 = 4 instead means four groups of size three. Both interpretations are valid but their quantity labels must not be swapped mid-explanation. Reconstruct d via 12 ÷ 4 = 3 and validate by 12 ÷ 3 = 4. This contrasts with finding unknown dividend, □ ÷ 3 = 4, which needs multiplication 3 × 4 = 12.
 
 ## Conceptual progression and dependencies
 

@@ -37,7 +37,7 @@ An **estimate** is an approximate number informed by a known reference; a **meas
 
 ## Conceptual progression and dependencies
 
-1) Use a fixed 10 cm benchmark and compare visually/semantically with an unknown strip. Commit an approximate prediction without a visible ruler. 2) Reveal a ruler and count intervals to compare measured value, name the difference in centimeters. 3) Contrast estimates above and below the result and expose a deliberately mismatched unit as invalid comparison; ask what makes a benchmark useful. 4) Transfer to a new hidden-length strip; learner selects a reasoned estimate and verbalizes the post-measurement difference. No accuracy scores or random rewards.
+1. Use a fixed 10 cm benchmark and compare visually/semantically with an unknown strip. Commit an approximate prediction without a visible ruler. 2) Reveal a ruler and count intervals to compare measured value, name the difference in centimeters. 3) Contrast estimates above and below the result and expose a deliberately mismatched unit as invalid comparison; ask what makes a benchmark useful. 4) Transfer to a new hidden-length strip; learner selects a reasoned estimate and verbalizes the post-measurement difference. No accuracy scores or random rewards.
 
 ## Misconceptions, examples and boundaries
 

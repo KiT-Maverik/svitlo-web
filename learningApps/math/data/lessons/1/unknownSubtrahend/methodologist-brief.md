@@ -8,7 +8,7 @@ Program dependence: None
 
 ## Educational purpose
 
-Develop the understanding that when a subtraction's starting whole and remainder are known, the *amount taken away* can be found by subtracting the remainder from the original whole. In 11 − □ = 7, the unknown is 4 because 11 − 7 = 4, verified by 11 − 4 = 7. This is distinct from finding the minuend, where the starting amount itself is missing.
+Develop the understanding that when a subtraction's starting whole and remainder are known, the _amount taken away_ can be found by subtracting the remainder from the original whole. In 11 − □ = 7, the unknown is 4 because 11 − 7 = 4, verified by 11 − 4 = 7. This is distinct from finding the minuend, where the starting amount itself is missing.
 
 ## Target audience
 
@@ -26,14 +26,14 @@ Children aged 6–8 in grades 1–2 with counting, taking-away and part–whole 
 
 ## Expected learning outcomes
 
-- Point to or name □ in 11 − □ = 7 as the *removed* amount rather than the starting whole or remainder.
+- Point to or name □ in 11 − □ = 7 as the _removed_ amount rather than the starting whole or remainder.
 - Use a known whole of 11 and leftover of 7 to find four removed: 11 − 7 = 4.
 - Describe the relationship using a model with precisely eleven initial counters, seven remaining and four removed.
 - Verify by substituting 4 into **11 − 4 = 7**, and distinguish the method from □ − 4 = 7.
 
 ## Essential subject matter
 
-In a − □ = c for nonnegative whole-number quantities with 0 ≤ c ≤ a, the removed quantity is a − c. The difference is the remainder, and it must not be subtracted from itself to find the unknown. For 11 − □ = 7, 11 − 7 = 4, then 11 − 4 = 7. When instead □ − 4 = 7, finding the unknown *starting* number uses 7 + 4 = 11. Both examples share the same quantities but assign them different known/unknown roles. This distinction must be made explicit in each explanation.
+In a − □ = c for nonnegative whole-number quantities with 0 ≤ c ≤ a, the removed quantity is a − c. The difference is the remainder, and it must not be subtracted from itself to find the unknown. For 11 − □ = 7, 11 − 7 = 4, then 11 − 4 = 7. When instead □ − 4 = 7, finding the unknown _starting_ number uses 7 + 4 = 11. Both examples share the same quantities but assign them different known/unknown roles. This distinction must be made explicit in each explanation.
 
 ## Conceptual progression and dependencies
 

@@ -117,7 +117,7 @@ Learners should first predict or justify their thinking without copying the orig
 
 The canonical [formulateInvestigationQuestion.data.ts](../../../../data/skills/data/collection/skills/formulateInvestigationQuestion.data.ts) governs Skill meaning; its UUID, definition and multilingual translations are unchanged. Use the fictional group A–F with six responses to ‘Which fruit would you pick today?’: apple, banana, apple, pear, banana, apple. The categories are three apples, two bananas, one pear. A separate fictional group where all six choose apples is still a valid example of a potentially variable survey question.
 
-All runtime copy requires complete, authentic translation into every configured locale; this English editorial script is *not* runtime locale coverage. The proposed Scene's essential functions need nonvisual equivalence, mobile usability, semantic RTL, and offline availability. These are requirements for implementation review, not a declaration that they pass.
+All runtime copy requires complete, authentic translation into every configured locale; this English editorial script is _not_ runtime locale coverage. The proposed Scene's essential functions need nonvisual equivalence, mobile usability, semantic RTL, and offline availability. These are requirements for implementation review, not a declaration that they pass.
 
 ## Approvals and implementation boundary
 

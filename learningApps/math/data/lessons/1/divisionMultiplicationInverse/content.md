@@ -13,7 +13,7 @@ Teach that exact division and multiplication undo one another, so a product and 
 
 For exact whole-number division A÷d=q with d>0, d×q=A. With 3 groups of 4 there are 12 counters, so 3×4=12, 12÷3=4, and 12÷4=3 in the appropriate grouping interpretation; both division expressions are exact because 12=3×4. For 20÷5=4, 5×4=20 confirms the proposed quotient. A wrong proposed 20÷5=5 would imply 5×5=25, which does NOT reconstruct twenty. For 12÷3=5, check 3×5=15 and reject. This is not a claim that every possible division yields a whole-number quotient; work only with exact divisions and nonzero divisors. Avoid division by zero, multiplication of negative/fractional factors and automatic interchange of symbolic roles in a story.
 
-The learner should discover that a numerical result also has a *meaning and unit*. Use explicit models, inspectable symbolic roles, accurate formative counterexamples and transparent check procedures rather than treating division as merely reading characters aloud.
+The learner should discover that a numerical result also has a _meaning and unit_. Use explicit models, inspectable symbolic roles, accurate formative counterexamples and transparent check procedures rather than treating division as merely reading characters aloud.
 
 ## LEARNER JOURNEY
 
@@ -112,7 +112,7 @@ The general `LessonSection_Config` renderer supports text, markdown and scene Re
 - [Methodologist Brief](./methodologist-brief.md), newly drafted and requiring explicit approval.
 - [Canonical Skill source](../../../../data/skills/arithmetic/divide/skills/relationToMultiplication.data.ts), byte-identical to Mathematics source.
 - [Create Lesson Content workflow](../../../../../../studio/skills/lesson-workflow/create-lesson-content.skill.md).
-- Ensure the inverse-check procedure always compares the reconstructed product against the *original dividend*, not against the proposed quotient. One fact family is an example, not a claim to assess full division fluency.
+- Ensure the inverse-check procedure always compares the reconstructed product against the _original dividend_, not against the proposed quotient. One fact family is an example, not a claim to assess full division fluency.
 - Coordinator-owned generated taxonomy is intentionally left unchanged until PR integration.
 
 ## HANDOFF

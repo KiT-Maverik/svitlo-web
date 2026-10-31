@@ -4,6 +4,7 @@
 **Lesson Content:** [Same Fraction, Different Whole](../content.md)
 **Methodologist:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [wholeDependence.data.ts](../../../../../data/skills/fractions/representation/skills/wholeDependence.data.ts)
 - [oneAsFraction.data.ts](../../../../../data/skills/fractions/representation/skills/oneAsFraction.data.ts)
 
@@ -17,15 +18,15 @@ An interactive area explorer showing reference whole explicitly; identical cell-
 
 ## Exact factual models and required states
 
-| Preset/state | Model shown or described | Correct observation and explanatory result |
-|---|---|---|
-| **Small half** | 4×2 whole, 8 equal unit squares, split 2+2 columns, 1 of 2 equal parts selected | 1/2 of 8 square units = 4 square units |
-| **Large half** | 8×2 whole, 16 equal unit squares, split 4+4 columns, 1 of 2 equal parts selected | 1/2 of 16 square units = 8 square units |
-| **Small complete** | 4×2 whole, 2/2 selected | 2/2 = 1 small whole; area 8 square units |
-| **Complete by thirds** | 12-square strip, 3 equal groups of 4 squares, all groups selected | 3/3 = 1 whole; area 12 square units |
-| **Complete by quarters** | 12-square strip, 4 equal groups of 3 squares, all groups selected | 4/4 = 1 whole; area 12 square units |
-| **Fresh small complete** | 2×3 rectangle, three strips each 2 squares, all selected | 3/3=1 of this six-square whole |
-| **Fresh large complete** | 4×3 rectangle, three strips each 4 squares, all selected | 3/3=1 of this twelve-square whole |
+| Preset/state             | Model shown or described                                                         | Correct observation and explanatory result |
+| ------------------------ | -------------------------------------------------------------------------------- | ------------------------------------------ |
+| **Small half**           | 4×2 whole, 8 equal unit squares, split 2+2 columns, 1 of 2 equal parts selected  | 1/2 of 8 square units = 4 square units     |
+| **Large half**           | 8×2 whole, 16 equal unit squares, split 4+4 columns, 1 of 2 equal parts selected | 1/2 of 16 square units = 8 square units    |
+| **Small complete**       | 4×2 whole, 2/2 selected                                                          | 2/2 = 1 small whole; area 8 square units   |
+| **Complete by thirds**   | 12-square strip, 3 equal groups of 4 squares, all groups selected                | 3/3 = 1 whole; area 12 square units        |
+| **Complete by quarters** | 12-square strip, 4 equal groups of 3 squares, all groups selected                | 4/4 = 1 whole; area 12 square units        |
+| **Fresh small complete** | 2×3 rectangle, three strips each 2 squares, all selected                         | 3/3=1 of this six-square whole             |
+| **Fresh large complete** | 4×3 rectangle, three strips each 4 squares, all selected                         | 3/3=1 of this twelve-square whole          |
 
 **Validity boundary:** Rectangles measured in congruent grid squares; halves, thirds, quarters and n/n for n=2,3,4 only. Show same-share/different-amount and complete-whole reconstruction. Exclude comparisons of unrelated units, formal fraction equivalence beyond the full-whole identity, fractions above one, fraction multiplication or calculating a fraction of arbitrary quantities.
 
@@ -44,7 +45,7 @@ Select the reference whole with named buttons, select one half or all equal part
 
 - **Which whole did we start with?: Same number.** “The wholes are different sizes: 8 versus 16 squares. Their halves cover 4 versus 8 squares, even though both are written 1/2.”
 - **Which whole did we start with?: One half confirmed.** “Correct share, but also check the area: 4 of 8 squares versus 8 of 16.”
-- **One whole from all its parts: Three wholes.** “Three thirds are three *parts* of one whole. They fit within its original border and fill it once.”
+- **One whole from all its parts: Three wholes.** “Three thirds are three _parts_ of one whole. They fit within its original border and fill it once.”
 - **One whole from all its parts: 2/3 for all.** “Two of the three equal pieces leave one unselected; to cover the whole we need three of three.”
 - **The number of cuts does not change 'all': 4/4 greater than 2/2.** “Both select every equal part of one unchanged strip. They cover the same whole, even though four cuts make smaller parts.”
 - **The number of cuts does not change 'all': 12/12 assumed.** “Our examples use 2, 3 or 4 equal parts; the fraction counts parts, not individual drawn grid squares.”

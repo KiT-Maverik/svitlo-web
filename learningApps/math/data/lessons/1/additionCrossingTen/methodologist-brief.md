@@ -9,7 +9,7 @@ Program dependence: None
 
 ## Educational purpose
 
-When two collections of ones together contain ten or more, exchange exactly ten ones for one ten while conserving the value. This lesson makes a base-ten exchange visible. It is distinct from the existing make-ten mental strategy: here the child records and justifies the *new ten* after the ones sum, not only decomposes an addend to reach ten.
+When two collections of ones together contain ten or more, exchange exactly ten ones for one ten while conserving the value. This lesson makes a base-ten exchange visible. It is distinct from the existing make-ten mental strategy: here the child records and justifies the _new ten_ after the ones sum, not only decomposes an addend to reach ten.
 
 ## Target audience
 
@@ -45,7 +45,7 @@ For 8+5, count thirteen one-counters, trade ten for one ten-bundle, retain three
 
 ## Misconceptions, examples and boundaries
 
-A child may retain all thirteen loose counters plus a new ten (23), confuse ten-bundle with one object worth one, or think because a ten is created the sum grows by ten. A child may confuse the make-ten strategy (split a contributing addend) with exchanging the *sum* of ones; show their conceptual connection but preserve the new Skill focus.
+A child may retain all thirteen loose counters plus a new ten (23), confuse ten-bundle with one object worth one, or think because a ten is created the sum grows by ten. A child may confuse the make-ten strategy (split a contributing addend) with exchanging the _sum_ of ones; show their conceptual connection but preserve the new Skill focus.
 
 ## Localization, accessibility and offline intent
 

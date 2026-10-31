@@ -34,25 +34,29 @@ function SkillAnalyticsContent({ domainSlugs }: { domainSlugs: readonly string[]
       linkComponent={Link}
       showBottomNavbar={false}
       preferences={
-        <NavbarPreferences locale={locale} onLocaleChange={setLocale}
-          mode={mode} systemMode={systemMode} onThemeChange={setMode} />
+        <NavbarPreferences
+          locale={locale}
+          onLocaleChange={setLocale}
+          mode={mode}
+          systemMode={systemMode}
+          onThemeChange={setMode}
+        />
       }
       settingsContent={({ closeSettings }) => <SkillsPagePreferences onFitToScreen={closeSettings} />}
     >
-      <Container maxWidth={false}
-        sx={{ maxWidth: '1480px', py: { xs: 2, sm: 4 }, px: { xs: 2, md: 4 } }}>
-        <Box sx={{ mb: 2, fontSize: 14 }}><Link href="/">← Світло · Playground</Link></Box>
-        {ready && (
-          localeError
-            ? <Box role="alert">{localeError}</Box>
-            : <SkillsMindMap domainSlugs={domainSlugs} />
-        )}
+      <Container maxWidth={false} sx={{ maxWidth: '1480px', py: { xs: 2, sm: 4 }, px: { xs: 2, md: 4 } }}>
+        <Box sx={{ mb: 2, fontSize: 14 }}>
+          <Link href="/">← Світло · Playground</Link>
+        </Box>
+        {ready && (localeError ? <Box role="alert">{localeError}</Box> : <SkillsMindMap domainSlugs={domainSlugs} />)}
       </Container>
     </LearningLayout>
   );
 }
 
-export function SkillAnalyticsPage({ domainSlugs = PLAYGROUND_SKILL_ANALYTICS_DOMAINS }: {
+export function SkillAnalyticsPage({
+  domainSlugs = PLAYGROUND_SKILL_ANALYTICS_DOMAINS,
+}: {
   domainSlugs?: readonly string[];
 } = {}) {
   return (

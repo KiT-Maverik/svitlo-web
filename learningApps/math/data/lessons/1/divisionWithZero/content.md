@@ -19,7 +19,7 @@ Learners act on a controlled model or interpret an original equation, test a pre
 
 1. **Share Nothing into Four Groups:** Show four labeled empty groups, zero original counters, accessible ledger; allow learner to inspect every empty group and check 4×0=0.
 2. **Try Dividing Six by Zero:** Show the original 6÷0, allow inspection of nonzero six total and zero group-count boundary, and test the equation 0×q=6 with candidate q 0/1/6, all yielding 0, never six.
-3. **What About Zero Divided by Zero?:** Keep 0÷0 visibly *undefined*, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined.
+3. **What About Zero Divided by Zero?:** Keep 0÷0 visibly _undefined_, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined.
 4. **Read the Divisor Carefully:** Offer four independent expression cards with native labels for first/second operand and explanatory classification. Check 3×0=0 and 3×3=9; for either /0 explicitly show 'undefined'.
 
 ## SECTION PLAN
@@ -59,9 +59,9 @@ Learners act on a controlled model or interpret an original equation, test a pre
 - **Outcome:** Explain why 0 ÷ 0 is also undefined: 0 × q = 0 holds for many q and gives no single answer.
 - **One ordered LessonSection_Config:** text → scene → markdown.
 - **Text Resource (supported):** “Is 0 ÷ 0 equal to one, zero, or another number?”
-- **Scene Resource (generic integration supported; bespoke component proposed):** [Zero Division Boundary Lab](./scenes/zeroDivisionBoundaryLab.scene-spec.md), independent entry 3. Keep 0÷0 visibly *undefined*, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined.
+- **Scene Resource (generic integration supported; bespoke component proposed):** [Zero Division Boundary Lab](./scenes/zeroDivisionBoundaryLab.scene-spec.md), independent entry 3. Keep 0÷0 visibly _undefined_, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined.
 - **Markdown Resource (supported):** “All three candidates work as a product, so none is selected as the one division answer. Zero as divisor is not allowed even when dividend is zero.” Mathematical record: **0 ÷ 0 is undefined**.
-- **Learner action and reflection:** Keep 0÷0 visibly *undefined*, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined. Full model, arithmetic and “Show why” are accessible even without a trial. Predictions are formative, with clear original-operand labels.
+- **Learner action and reflection:** Keep 0÷0 visibly _undefined_, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined. Full model, arithmetic and “Show why” are accessible even without a trial. Predictions are formative, with clear original-operand labels.
 - **Specific misconception feedback:** If learner assumes self-division makes one, note a÷a=1 only applies when a is nonzero.
 - **Exact state model:** Original dividend, divisor, unit role, quotient or expressly undefined state, object/group/step count, multiplication check and a fully operable text ledger.
 - **Navigation:** Invite the next example after a complete explanation, with independent replay/reset and no success threshold.

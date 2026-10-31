@@ -13,7 +13,7 @@ Teach a strategically useful addition decomposition: split one addend so part fi
 
 Use nonnegative whole-number examples with results at most 20. For 8+5, 8 needs 2 to reach 10, so 5 = 2+3 and 8+5 = (8+2)+3 = 10+3 =13. For 9+6, 9 needs 1 and 6=1+5, total 15. For 7+6, 7 needs 3 and 6=3+3, total 13. The decomposition and rearrangement preserve five/six exactly. Do not claim make-ten is the only valid mental strategy or teach the full associative law as the independent target.
 
-The experience must teach the *reason for the mathematical rule* through inspectable quantities and controlled transformations, never through purely visual validation or a decontextualized quiz.
+The experience must teach the _reason for the mathematical rule_ through inspectable quantities and controlled transformations, never through purely visual validation or a decontextualized quiz.
 
 ## LEARNER JOURNEY
 
@@ -29,6 +29,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** Identify how many more counters are needed to fill a ten-frame when eight are shown.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “Eight counters fill eight places in a ten-frame. How many places are empty?”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Ten Bridge Builder](./scenes/tenBridgeBuilder.scene-spec.md), entry 1. Show one ten-frame with eight occupied cells and two empty. Child selects 'Count empty places', fills precisely two when offered and labels full ten.
 3. **markdown — renderer supported:** “Eight needs two more to make ten. The empty places tell us the exact number to take from the next addend.” Mathematical statement: **8 + 2 = 10**.
@@ -52,6 +53,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** Decompose five into two and three, make a full ten, then find 8+5=13 while conserving all counters.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “We want to add five to eight. Can we give two to finish the ten and keep the other three?”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Ten Bridge Builder](./scenes/tenBridgeBuilder.scene-spec.md), entry 2. Show separate source tray of exactly five counters. 'Move two to frame' transfers two actual IDs into the last empty cells; remaining tray now visibly has THREE, not five.
 3. **markdown — renderer supported:** “We used two of the five counters to complete the ten. Three of the same five remain to add later. We did not create any new counters.” Mathematical statement: **5 = 2 + 3; 8 + 2 = 10**.
@@ -75,6 +77,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** Explain why 8+2+3 and 8+5 have the same total and reject a decomposition that changes five.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “Ten is full. Three counters are still waiting. How many counters altogether?”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Ten Bridge Builder](./scenes/tenBridgeBuilder.scene-spec.md), entry 3. Use separate visible full ten-frame (10) and remaining three counters; learner controls 'Add the three' while text shows original eight plus five unchanged across transformation.
 3. **markdown — renderer supported:** “We started with eight and five: thirteen counters. The split let us make ten first, then add three. Nothing was lost or duplicated.” Mathematical statement: **8 + 5 = (8 + 2) + 3 = 10 + 3 = 13**.
@@ -98,6 +101,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** Apply the make-ten strategy to 9+6=15 and 7+6=13 with hints if necessary.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “Try nine plus six. How much makes ten? How many of the six remain? Then try seven plus six.”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Ten Bridge Builder](./scenes/tenBridgeBuilder.scene-spec.md), entry 4. Two staged transfer problems: 9+6 uses 1 and 5, yielding 15; on explicit request, 7+6 uses 3 and 3, yielding 13. Child predicts then steps through frame/split/add or requests entire worked model.
 3. **markdown — renderer supported:** “Nine needs one to reach ten; six splits one and five, giving fifteen. Seven needs three; six splits three and three, giving thirteen. Use the same method, but each number needs a different complement.” Mathematical statement: **9 + 6 = (9 + 1) + 5 = 15; 7 + 6 = (7 + 3) + 3 = 13**.

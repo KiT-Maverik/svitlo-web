@@ -101,7 +101,8 @@ export function parsePublishedSkillMeta(value: unknown, expected: SkillNodeKind)
   const skills = value.skills === undefined ? [] : childSlugs(value.skills, 'domain.skills');
   if (!groups.length && !skills.length) throw new Error('Порожній домен Skills');
   return {
-    id, collection: expected,
+    id,
+    collection: expected,
     ...(value.groups === undefined ? {} : { groups }),
     ...(value.skills === undefined ? {} : { skills }),
   };
@@ -119,7 +120,9 @@ export function parsePublishedSkillCopy(value: unknown, kind: SkillNodeKind): Pu
 
 /** Rebuild one runtime node from validated independent resources. */
 export function assemblePublishedSkillNode(
-  meta: PublishedSkillMeta, copy: PublishedSkillCopy, slug: string,
+  meta: PublishedSkillMeta,
+  copy: PublishedSkillCopy,
+  slug: string,
   children: readonly SkillNode[],
 ): SkillNode {
   if (!slugPattern.test(slug)) throw new Error('Некоректний slug із шляху');
@@ -127,13 +130,18 @@ export function assemblePublishedSkillNode(
     ...(meta.groups ?? []).map(childSlug => ({ slug: childSlug, kind: 'skillGroup' })),
     ...(meta.skills ?? []).map(childSlug => ({ slug: childSlug, kind: 'skill' })),
   ];
-  if (expected.length !== children.length ||
-      expected.some((child, index) => children[index].slug !== child.slug || children[index].kind !== child.kind)) {
+  if (
+    expected.length !== children.length ||
+    expected.some((child, index) => children[index].slug !== child.slug || children[index].kind !== child.kind)
+  ) {
     throw new Error('Неповна або некоректна структура дітей для ' + slug);
   }
   return {
-    id: meta.id, slug, kind: meta.collection,
-    name: copy.name, ...(copy.description === undefined ? {} : { description: copy.description }),
+    id: meta.id,
+    slug,
+    kind: meta.collection,
+    name: copy.name,
+    ...(copy.description === undefined ? {} : { description: copy.description }),
     children,
   };
 }
@@ -179,7 +187,9 @@ export function skillLearningHref(skillId: string, language: string): string {
 }
 
 export function expandableSkillIds(domains: readonly SkillNode[]): string[] {
-  return flattenSkillNodes(domains).filter(node => node.children.length > 0).map(node => node.id);
+  return flattenSkillNodes(domains)
+    .filter(node => node.children.length > 0)
+    .map(node => node.id);
 }
 
 /**
@@ -200,14 +210,8 @@ export function layoutSkillMindMap(domains: readonly SkillNode[], collapsed: Rea
     }
   };
   for (const domain of domains) countVisible(domain, 1);
-  const size = (count: number, min: number, width: number) =>
-    Math.max(min, (count * width) / (Math.PI * 2));
-  const rings = [
-    0,
-    size(visibleCount[1], 245, 264),
-    0,
-    0,
-  ];
+  const size = (count: number, min: number, width: number) => Math.max(min, (count * width) / (Math.PI * 2));
+  const rings = [0, size(visibleCount[1], 245, 264), 0, 0];
   rings[2] = Math.max(rings[1] + 270, size(visibleCount[2], 0, 236));
   rings[3] = Math.max(rings[2] + 300, size(visibleCount[3], 0, 340));
   const lastDepth = visibleCount[3] ? 3 : visibleCount[2] ? 2 : 1;
@@ -266,23 +270,25 @@ export function fitVisibleSkillNodes(
     return { zoom: 0.65, pan: { x: 0, y: 0 } };
   }
   // Profile avatar. The background halo is decorative and need not be fitted.
-  let left = -99, right = 99, top = -99, bottom = 99;
+  let left = -99,
+    right = 99,
+    top = -99,
+    bottom = 99;
   for (const node of layout.nodes) {
-    const halfWidth = node.kind === 'skill' ? (expandedSkills.has(node.id) ? 139 : 109)
-      : node.kind === 'skillDomain' ? 107 : 99;
-    const halfHeight = node.kind === 'skill' ? (expandedSkills.has(node.id) ? 167 : 75)
-      : node.kind === 'skillDomain' ? 57 : 54;
+    const halfWidth =
+      node.kind === 'skill' ? (expandedSkills.has(node.id) ? 139 : 109) : node.kind === 'skillDomain' ? 107 : 99;
+    const halfHeight =
+      node.kind === 'skill' ? (expandedSkills.has(node.id) ? 167 : 75) : node.kind === 'skillDomain' ? 57 : 54;
     left = Math.min(left, node.x - halfWidth);
     right = Math.max(right, node.x + halfWidth);
     top = Math.min(top, node.y - halfHeight);
     bottom = Math.max(bottom, node.y + halfHeight);
   }
   const margin = 56;
-  const zoom = Math.max(0.01, Math.min(
-    2.5,
-    (viewportWidth - margin) / (right - left),
-    (viewportHeight - margin) / (bottom - top),
-  ));
+  const zoom = Math.max(
+    0.01,
+    Math.min(2.5, (viewportWidth - margin) / (right - left), (viewportHeight - margin) / (bottom - top)),
+  );
   return {
     zoom,
     pan: {

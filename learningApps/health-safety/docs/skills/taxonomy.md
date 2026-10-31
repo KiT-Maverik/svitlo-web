@@ -2591,4 +2591,3 @@ Status: pending
 
 Methodological description: Consider persistence, redistribution, and audience of posted information, including the limits of deleting content after sharing.
 User-friendly description: Understand that shared digital information can persist after deletion.
-

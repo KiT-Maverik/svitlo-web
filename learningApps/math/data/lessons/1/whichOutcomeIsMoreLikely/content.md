@@ -4,8 +4,9 @@
 **Audience:** Grade 3, approximately ages 8–9.
 **Source brief:** [Draft Methodologist Brief](./methodologist-brief.md).
 **Target Skills:**
+
 - [likelihoodLanguage.data.ts](../../../../data/skills/probability/events/skills/likelihoodLanguage.data.ts)
-**Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
+  **Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
 
 ## The learner's experience
 
@@ -44,8 +45,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Yellow impossible*: “The yellow sector is small in number, not missing. The pointer could land there.”
-- *Equal chances*: “The five slices are equally sized and have equal chance individually. Four are blue and one is yellow.”
+- _Yellow impossible_: “The yellow sector is small in number, not missing. The pointer could land there.”
+- _Equal chances_: “The five slices are equally sized and have equal chance individually. Four are blue and one is yellow.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Provide a text inventory 'sectors B,B,B,B,Y equal chance each' and counts in addition to color. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -67,8 +68,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Blue more likely*: “Both colors cover exactly two equal-sized slices. Neither has more of the circle.”
-- *Blue certain*: “There are yellow slices too. Equal chances do not tell us the next result.”
+- _Blue more likely_: “Both colors cover exactly two equal-sized slices. Neither has more of the circle.”
+- _Blue certain_: “There are yellow slices too. Equal chances do not tell us the next result.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Express '2 equal sectors versus 2 equal sectors' in text, not only shaded wedges. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -90,8 +91,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Yellow more likely because two slices*: “The yellow slices are each smaller. Together they cover one half, the same as blue's single half.”
-- *Blue certain*: “Half the circle is yellow. Yellow remains possible.”
+- _Yellow more likely because two slices_: “The yellow slices are each smaller. Together they cover one half, the same as blue's single half.”
+- _Blue certain_: “Half the circle is yellow. Yellow remains possible.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Provide numerical angle totals 180°/180° plus simple 'half of circle versus half'; the angle degree value is optional, not a new required Skill. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -113,9 +114,9 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Blue impossible*: “There are two blue slices. Blue can happen even though there are more yellow slices.”
-- *Yellow certain*: “The spinner also has blue slices. More likely does not mean guaranteed.”
-- *Equal chance*: “Four equally likely slices are yellow, while only two are blue. The coverage is not the same.”
+- _Blue impossible_: “There are two blue slices. Blue can happen even though there are more yellow slices.”
+- _Yellow certain_: “The spinner also has blue slices. More likely does not mean guaranteed.”
+- _Equal chance_: “Four equally likely slices are yellow, while only two are blue. The coverage is not the same.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Choose via keyboard-labelled chance options and verify from an ordered sector list. The explanation remains available even if the learner chooses not to answer before moving on.
 

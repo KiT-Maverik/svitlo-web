@@ -10,7 +10,7 @@ The learner will work with **one stable two-part partition** in several forms. T
 
 ### Section 1 — Two pieces of the same collection
 
-*Purpose: observe a known-part/known-part situation and reconstruct the unknown whole.*
+_Purpose: observe a known-part/known-part situation and reconstruct the unknown whole._
 
 1. **`text` Resource:** “There are **6 red buttons** and **4 blue buttons** in a box. These are all the buttons. How many buttons altogether?” Ask for a prediction. Do not display a total before the child sees the pieces.
 2. **`scene` Resource (proposed):** [Part–Whole Partition Lab](./scenes/partWholePartitionLab.scene-spec.md), entry A. Show six individually countable red tokens and four blue tokens. The learner groups both parts into one visible tray with the group labels preserved. Reveal **6 + 4 = 10 buttons**.
@@ -19,7 +19,7 @@ The learner will work with **one stable two-part partition** in several forms. T
 
 ### Section 2 — Same collection, different unknown
 
-*Purpose: distinguish a known whole from a missing part.*
+_Purpose: distinguish a known whole from a missing part._
 
 1. **`text`:** “This time the box has **10 buttons in total**. **6 are red; all the rest are blue.** How many are blue? We still have the same ten buttons.”
 2. **`scene` Resource (proposed):** Partition Lab entry B starts with a full ten-unit tray labeled “whole 10”, six marked red and four unnamed “rest”. The child identifies which amount is **already included** in the ten and predicts the unknown part. Let them uncover 10 − 6 = **4 blue buttons**, then rejoin parts.
@@ -28,7 +28,7 @@ The learner will work with **one stable two-part partition** in several forms. T
 
 ### Section 3 — The question can change, not the objects
 
-*Purpose: practice shifting which quantity is unknown, not guessing keywords.*
+_Purpose: practice shifting which quantity is unknown, not guessing keywords._
 
 1. **`text`:** “Here are 10 counters: 6 belong to the red group and 4 to the blue group. If we hide **the total**, what would we need to find? If we hide **the blue part**, what changes?”
 2. **`scene` Resource (proposed):** Entry C offers the same 6/4/10 partition with one role hidden at a time: unknown total: **6 + 4 = ?**; unknown second part: **10 − 6 = ?**; unknown first part: **10 − 4 = ?**. The learner chooses the matching role, not a word trigger. Give immediate reasoned feedback and reveal on demand. Values are 10, 4 and 6 respectively.
@@ -37,7 +37,7 @@ The learner will work with **one stable two-part partition** in several forms. T
 
 ### Section 4 — Independent transfer in a new context
 
-*Purpose: discover an unknown part from a total and check by recombining.*
+_Purpose: discover an unknown part from a total and check by recombining._
 
 1. **`text`:** “A bag has **15 marbles**. **9** are green. **All the remaining marbles are yellow**. How many yellow marbles? Show why your answer makes one whole.”
 2. **`scene` Resource (proposed):** Partition Lab entry D supplies a fifteen-unit model with nine labeled green; child fills the unknown yellow group using a number picker or counter increment/decrement, then checks **15 − 9 = 6** and **9 + 6 = 15**. First hint: “Fifteen includes the nine green.” Second hint: “What goes with nine to make fifteen?”

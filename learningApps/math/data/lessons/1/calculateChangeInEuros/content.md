@@ -98,15 +98,15 @@ Learner-facing samples in this Markdown are **English editorial source only**. N
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Verified / proposed | Later responsibility |
-| --- | --- | --- |
-| `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract | Coding Agent assembles only after editorial approval |
-| Generic `text`, `markdown`, `scene` renderer | Observed in Playground | Bespoke Scenes remain unimplemented |
-| Cashier's Change Workbench, Receipt and Payment Inspector | **Proposed** Screenwriter specifications | Editor approval, Scene Designer, independent tests |
-| Genuine locales, RTL and nonvisual controls | Product requirements, not delivered | Localization and accessibility QA |
-| Selected-language offline Lesson and asset download | Product target, unverified | PWA/integration and offline E2E |
-| Notes, revision sheet, progress, persistent mastery | Planned or unverified, not wired | Separate architecture |
-| Questions, Quizzes, grading | Not authored | Assessment Architect |
+| Feature                                                   | Verified / proposed                      | Later responsibility                                 |
+| --------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
+| `LessonSection_Config` with ordered `Resource_Config`     | Existing TypeScript contract             | Coding Agent assembles only after editorial approval |
+| Generic `text`, `markdown`, `scene` renderer              | Observed in Playground                   | Bespoke Scenes remain unimplemented                  |
+| Cashier's Change Workbench, Receipt and Payment Inspector | **Proposed** Screenwriter specifications | Editor approval, Scene Designer, independent tests   |
+| Genuine locales, RTL and nonvisual controls               | Product requirements, not delivered      | Localization and accessibility QA                    |
+| Selected-language offline Lesson and asset download       | Product target, unverified               | PWA/integration and offline E2E                      |
+| Notes, revision sheet, progress, persistent mastery       | Planned or unverified, not wired         | Separate architecture                                |
+| Questions, Quizzes, grading                               | Not authored                             | Assessment Architect                                 |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

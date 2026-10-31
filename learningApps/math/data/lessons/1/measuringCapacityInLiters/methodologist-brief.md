@@ -36,7 +36,7 @@ One **liter (L)** is a standard unit of **volume**, often used for container cap
 
 ## Conceptual progression and dependencies
 
-Revisit the capacity comparison without numerical labels: tall and short containers can hold different amounts. Present a sealed/fixed *reference* model labeled 1 L (the amount when filled to its marked line). Invite a rough estimate 'about 2 L, 3 L or 4 L' for a known-looking target before pouring. Repeatedly empty a **full 1 L** portion into the empty 3 L target; after the third it reaches full, 3 L. Contrast two differently shaped 3 L containers. Test unfair measurement with a half-full reference, then transfer to an unfamiliar 4 L target with prediction first and complete counts afterward.
+Revisit the capacity comparison without numerical labels: tall and short containers can hold different amounts. Present a sealed/fixed _reference_ model labeled 1 L (the amount when filled to its marked line). Invite a rough estimate 'about 2 L, 3 L or 4 L' for a known-looking target before pouring. Repeatedly empty a **full 1 L** portion into the empty 3 L target; after the third it reaches full, 3 L. Contrast two differently shaped 3 L containers. Test unfair measurement with a half-full reference, then transfer to an unfamiliar 4 L target with prediction first and complete counts afterward.
 
 ## Misconceptions, examples and boundaries
 

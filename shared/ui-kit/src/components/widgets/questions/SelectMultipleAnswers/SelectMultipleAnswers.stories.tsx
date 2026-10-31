@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import { QuestionAttempt, type QuestionAttemptProps } from '../helpers';
 import { multipleSelectQuestion } from '../../../../../.storybook/fixtures/questions';
 
-
 type StoryProps = QuestionAttemptProps<'multiple-select'>;
 
 function SelectMultipleAnswersStory(props: StoryProps) {

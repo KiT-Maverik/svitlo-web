@@ -34,7 +34,7 @@ The commutative property holds for addition: a+b=b+a. For children use nonnegati
 - **Four independent prop-free Scene entries** with their own initial examples and internal state; do not introduce a public `mode` prop or new Resource_Config discriminators.
 - **Objects:** numbered countable counter IDs, trays or ten-frame as appropriate, explicit addend/remaining labels, full original equality, optional candidate controls and deterministic textual result ledger, reset and explanation panels.
 - **State:** pair of nonnegative addend counts, unique counter IDs in each tray, displayed term order, optional added counter for comparison, selected prediction and explanation visibility; each Scene placement independent.
-- **Invariant:** Reordering 3/5 or 4/7 changes expression order and reading labels ONLY, never counter cardinality. A value-change action from 3+5 to 3+6 adds exactly one counter and changes total from eight to nine. On every accepted transition compute the correct quantity, and mark a mistaken prediction as a *trial* rather than changing the model to make it true.
+- **Invariant:** Reordering 3/5 or 4/7 changes expression order and reading labels ONLY, never counter cardinality. A value-change action from 3+5 to 3+6 adds exactly one counter and changes total from eight to nine. On every accepted transition compute the correct quantity, and mark a mistaken prediction as a _trial_ rather than changing the model to make it true.
 - Children can get the full worked explanation without guessing; no stored score, threshold, mastery event, reward or Quiz/Question object.
 
 ## VISUAL / AUDIO / MEDIA DIRECTION

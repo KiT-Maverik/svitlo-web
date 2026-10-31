@@ -20,6 +20,7 @@ A child substitutes a proposed total into the very expression that had the box, 
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Guided entry / Section 3**
+
 1. Display “□ ÷ 3 = 4”. Ask “What number could go into the box?” A child can first select “Show 3 groups of 4”, revealing the equal-group drawing/list, before choosing.
 2. Choices 9, 12, 15 are native controls; picking one replaces only □ in the original displayed equality. Show evaluated left side and fixed right side in words and numerals.
 3. 9: “Nine shared among three groups makes three in each. Our equality says four. This candidate does not fit.” 12: “Twelve shared among three gives four in each. Both sides say four.” 15: “Fifteen shared among three makes five in each, not four.”
@@ -27,6 +28,7 @@ A child substitutes a proposed total into the very expression that had the box, 
 5. Reveal “3 groups × 4 each = 12” and then **“12 ÷ 3 = 4”**. Optionally show the second exact grouping interpretation, twelve arranged into groups of three yields four groups, with a verbal label explaining how the story changes.
 
 **Independent entry / Section 4**
+
 1. New state: “□ ÷ 4 = 3” and prompt “If there are four equal groups with three in each, how many objects altogether?” Initially no answer or illustrated result.
 2. Choices 8, 12, 16 and “Show groups”/“Hint”/“Show explanation”. Hint: “Count three once for each of the four groups.”
 3. 8 produces “8 ÷ 4 = 2, not 3”. 12 produces “12 ÷ 4 = 3. Both sides equal three”. 16 produces “16 ÷ 4 = 4, not 3”. Reconstruct as 3 + 3 + 3 + 3 = 12; 4×3=12.

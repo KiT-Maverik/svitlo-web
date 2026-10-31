@@ -20,14 +20,14 @@ Every educational resource, Scene, Question, layout and interaction must be desi
 
 [`Disability` union](../../../shared/engine/src/types/disabilities.types.ts) presently lists the following **question-related limitation categories**:
 
-| Area | Declared values |
-| --- | --- |
-| Color & vision | `color-vision-deficiency`, `visual-impairment`, `blindness` |
-| Hearing | `hearing-impairment`, `deafness` |
-| Speech & language | `speech-impairment`, `speech-language-disorder` |
-| Movement & motor | `motor-impairment`, `movement-disorder`, `fine-motor-impairment` |
+| Area                 | Declared values                                                                                                                               |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Color & vision       | `color-vision-deficiency`, `visual-impairment`, `blindness`                                                                                   |
+| Hearing              | `hearing-impairment`, `deafness`                                                                                                              |
+| Speech & language    | `speech-impairment`, `speech-language-disorder`                                                                                               |
+| Movement & motor     | `motor-impairment`, `movement-disorder`, `fine-motor-impairment`                                                                              |
 | Cognitive & learning | `cognitive-impairment`, `intellectual-disability`, `learning-disability`, `dyslexia`, `dyscalculia`, `attention-deficit`, `memory-impairment` |
-| Sensitivity | `photosensitivity`, `seizure-susceptibility` |
+| Sensitivity          | `photosensitivity`, `seizure-susceptibility`                                                                                                  |
 
 The [Question types](../../../shared/engine/src/types/content/question.types.ts) include a `restrictions: Disability[]` field. **This is a declaration, not proof that the platform detects learner disabilities, adapts the UI, blocks inaccessible content, or offers an alternative renderer.** Do not infer a medical diagnosis, disability or access limitation from activity or performance.
 

@@ -15,18 +15,20 @@ for (const name of packages) {
     if (subpath.includes('*') || subpath === './sync-flags') continue;
     for (const key of ['default', 'types']) {
       const target = entry[key];
-      assert(typeof target === 'string' && target.startsWith('./dist/'),
-        `${pkg.name}${subpath}: invalid ${key} export target`);
-      assert(existsSync(resolve(root, path, target)),
-        `${pkg.name}${subpath}: missing built ${key} target ${target}`);
+      assert(
+        typeof target === 'string' && target.startsWith('./dist/'),
+        `${pkg.name}${subpath}: invalid ${key} export target`,
+      );
+      assert(existsSync(resolve(root, path, target)), `${pkg.name}${subpath}: missing built ${key} target ${target}`);
       checked++;
     }
   }
   if (name === 'ui-kit') {
-    assert(existsSync(resolve(root, path, 'assets/flags')),
-      'UI Kit packaged flag assets missing');
-    assert(existsSync(resolve(root, path, 'scripts/sync-flags.mjs')),
-      'UI Kit packaged flag synchronization script missing');
+    assert(existsSync(resolve(root, path, 'assets/flags')), 'UI Kit packaged flag assets missing');
+    assert(
+      existsSync(resolve(root, path, 'scripts/sync-flags.mjs')),
+      'UI Kit packaged flag synchronization script missing',
+    );
   }
 }
 console.log(`Built shared export entrypoints verified: ${checked} JavaScript/declaration paths`);

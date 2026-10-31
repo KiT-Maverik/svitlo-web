@@ -4,6 +4,7 @@
 **Lesson Content:** [Pictures That Count](../content.md)
 **Methodologist:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [buildPictograph.data.ts](../../../../../data/skills/data/presentation/skills/buildPictograph.data.ts)
 - [readPictograph.data.ts](../../../../../data/skills/data/presentation/skills/readPictograph.data.ts)
 
@@ -17,14 +18,14 @@ A learner-manipulable table-to-pictograph builder and a separate read-only examp
 
 ## Exact factual models and required states
 
-| Preset/state | Model shown or described | Correct observation and explanatory result |
-|---|---|---|
-| **Builder initial** | Source table Apple=4, Pear=3, Plum=2; all pictograph rows empty; key one icon = one item | Chart needs 4/3/2 count icons |
-| **Builder complete** | Apple row four tokens, Pear row three, Plum row two | 4+3+2=9, matches table total |
-| **Builder error** | Apple row five tokens while source table says four | One extra Apple icon; repair by removing one |
-| **Reader A** | Cat row five equal icons, Dog row two, Bird row four; one=one key | Five cats, two dogs, four birds; total eleven |
-| **Empty category test** | A category count of zero with a labelled empty row | Zero icons for that category, not missing data |
-| **Transfer** | New table Star=2, Moon=4, Sun=1; key one icon = one item | 2+4+1=7 icons in correctly labelled rows |
+| Preset/state            | Model shown or described                                                                 | Correct observation and explanatory result     |
+| ----------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| **Builder initial**     | Source table Apple=4, Pear=3, Plum=2; all pictograph rows empty; key one icon = one item | Chart needs 4/3/2 count icons                  |
+| **Builder complete**    | Apple row four tokens, Pear row three, Plum row two                                      | 4+3+2=9, matches table total                   |
+| **Builder error**       | Apple row five tokens while source table says four                                       | One extra Apple icon; repair by removing one   |
+| **Reader A**            | Cat row five equal icons, Dog row two, Bird row four; one=one key                        | Five cats, two dogs, four birds; total eleven  |
+| **Empty category test** | A category count of zero with a labelled empty row                                       | Zero icons for that category, not missing data |
+| **Transfer**            | New table Star=2, Moon=4, Sun=1; key one icon = one item                                 | 2+4+1=7 icons in correctly labelled rows       |
 
 **Validity boundary:** Strictly one identical accessible counting symbol per observed item and unscaled keys (1 icon = 1 item); two or three categories and counts of 0–6, with totals at most twelve. No half-icons, scaled pictographs, bar charts, averages, percentages or inferential claims. Distinguish reading the chart from making it.
 

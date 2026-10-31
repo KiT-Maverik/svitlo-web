@@ -49,6 +49,7 @@ The pedagogically related Skills remain independently assessable objects with th
 **Target depth and exclusions:** Whole-euro prices/payments through €15, authentic €1,€2 coins and €5,€10 notes, simple paid≥price core examples and insufficient/exact boundary. No cents, budgeting, unit prices, taxes, discounts or speed calculations.
 
 **Exact examples:**
+
 - €10−€6=€4; €6+€4=€10.
 - €10−€7=€3; €7+€2+€1=€10.
 - €10+€5=€15; €15−€11=€4; €11+€4=€15.

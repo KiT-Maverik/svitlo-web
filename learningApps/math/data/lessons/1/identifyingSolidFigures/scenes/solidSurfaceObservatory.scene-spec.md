@@ -46,7 +46,7 @@ Learner voice: "**I can look for flat faces, curved parts, bases and corners. Tu
 
 ### C — Compare Sphere, Cylinder and Cone (Section 3)
 
-1. Show three **separately selectable** ideal solids of equal-ish *display prominence* but different geometric properties (display size is irrelevant). Choices "Sphere", "Cylinder", "Cone" remain hidden until learner predicts which is which, if appropriate.
+1. Show three **separately selectable** ideal solids of equal-ish _display prominence_ but different geometric properties (display size is irrelevant). Choices "Sphere", "Cylinder", "Cone" remain hidden until learner predicts which is which, if appropriate.
 2. Model ledger:
    - Sphere: zero flat bases, continuous curved outside, no apex.
    - Cylinder: **two** flat disk bases, curved outside between, no apex tip.
@@ -67,7 +67,7 @@ Learner voice: "**I can look for flat faces, curved parts, bases and corners. Tu
 ## INTERACTIVE OBJECTS, STATES AND RULES
 
 - **Objects:** five ideal solid model definitions, fixed textual property inventory per model, preset face/top/side viewpoint controls, prediction and reveal choices, definition labels, face/base highlighting and selection, reset.
-- **Per-placement state:** fixed Section-specific preset A–D, selected model, viewpoint, property currently highlighted, prediction, reveal step. Shared model definitions are immutable; resetting a Section returns *its own* preset without leaking state into another Section.
+- **Per-placement state:** fixed Section-specific preset A–D, selected model, viewpoint, property currently highlighted, prediction, reveal step. Shared model definitions are immutable; resetting a Section returns _its own_ preset without leaking state into another Section.
 - **Rule 1:** changing viewpoint is not morphing; preserve faces/bases/edge relations. A 2D view may be insufficient for identification; never silently force a false unique solution.
 - **Rule 2:** cube ⊂ rectangular cuboid; a sphere has zero flat bases, cylinder two, cone one. Rims/curved surfaces are not arbitrary planar faces.
 - **Rule 3:** no "physical geometry" via CSS/SVG pixel distances. Dimensions 2 and 4 are schematic relative proportions only.
@@ -95,4 +95,4 @@ Authentic translation for all configured locales of solid names, base/face/edge/
 
 ## IMPLEMENTATION DEPENDENCIES AND OPEN QUESTIONS
 
-The generic `scene` Resource is supported in Playground, but **Solid Surface Observatory is proposed and not implemented**. Scene Designer/Coding Agent must verify actual Section/locale provider contract, implement component/tested mathematical inventories, render complete nonvisual states and assure offline packaging *after editorial approval*. No runtime Lesson, Question, Quiz, Note unlock API, scoring or invented props. Editor to review technical face/curvature terminology at Grade 2.
+The generic `scene` Resource is supported in Playground, but **Solid Surface Observatory is proposed and not implemented**. Scene Designer/Coding Agent must verify actual Section/locale provider contract, implement component/tested mathematical inventories, render complete nonvisual states and assure offline packaging _after editorial approval_. No runtime Lesson, Question, Quiz, Note unlock API, scoring or invented props. Editor to review technical face/curvature terminology at Grade 2.

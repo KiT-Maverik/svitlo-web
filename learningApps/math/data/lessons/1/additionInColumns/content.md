@@ -97,11 +97,11 @@ Notes are **not wired** and do not imply a real Note API, state events, per-chil
 
 ## PRACTICE, RETRIEVAL AND ASSESSMENT HANDOFF
 
-Section 4 introduces a fresh case with optional scaffolds and worked feedback, remaining a *formative experience*. Assessment Architect independently validates graded problems, decomposition variants, Skill evidence, retry thresholds, scores and mastery. A correct column total alone does not establish the full canonical Skill; current Quiz select-one adapter is separate from proposed Scenes. No scored Question_Config produced.
+Section 4 introduces a fresh case with optional scaffolds and worked feedback, remaining a _formative experience_. Assessment Architect independently validates graded problems, decomposition variants, Skill evidence, retry thresholds, scores and mastery. A correct column total alone does not establish the full canonical Skill; current Quiz select-one adapter is separate from proposed Scenes. No scored Question_Config produced.
 
 ## GLOBAL ACCESSIBILITY AND LOCALIZATION
 
-Translate all child-facing English prompts, errors, explanations, number-role terms, columns, accessible names and planned Notes into every supported locale, never silently falling back to English. An equivalent ordered accessible numeric ledger offers all exchange/undo/add/check actions for keyboard, touch, switches and screen readers, not merely a static picture label. RTL aligns each digit by *semantic place value* rather than naive mirroring; mathematical operand order remains true. WCAG 2.2 AA focus, large controls, low-resource mobile, 200% zoom, reduced motion and full downloaded offline calculation/feedback must preserve exactly the same intermediate and final mathematical states. No sound, video, WebGL, drag-only or remote checker required.
+Translate all child-facing English prompts, errors, explanations, number-role terms, columns, accessible names and planned Notes into every supported locale, never silently falling back to English. An equivalent ordered accessible numeric ledger offers all exchange/undo/add/check actions for keyboard, touch, switches and screen readers, not merely a static picture label. RTL aligns each digit by _semantic place value_ rather than naive mirroring; mathematical operand order remains true. WCAG 2.2 AA focus, large controls, low-resource mobile, 200% zoom, reduced motion and full downloaded offline calculation/feedback must preserve exactly the same intermediate and final mathematical states. No sound, video, WebGL, drag-only or remote checker required.
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
@@ -112,7 +112,7 @@ Current `LessonSection_Config` and generic renderer support text, markdown, scen
 - [Methodologist Brief](./methodologist-brief.md), Draft, not approved.
 - [Canonical Skill](../../../../data/skills/arithmetic/addition/skills/columnAddition.data.ts) unchanged from Mathematics.
 - [Create Lesson Content workflow](../../../../../../studio/skills/lesson-workflow/create-lesson-content.skill.md).
-- Confirm this Lesson's single-carry Grade 2 depth and separation from `additionRegroupingAcrossPlaces`, which extends the *value-preserving exchange* across tens and hundreds.
+- Confirm this Lesson's single-carry Grade 2 depth and separation from `additionRegroupingAcrossPlaces`, which extends the _value-preserving exchange_ across tens and hundreds.
 - Shared generated taxonomy is coordinator-owned and intentionally left unmodified in this branch.
 
 ## HANDOFF

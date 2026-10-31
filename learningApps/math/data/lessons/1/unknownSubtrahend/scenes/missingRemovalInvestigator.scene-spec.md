@@ -12,7 +12,7 @@ The child does not see the removal happen, but can reconstruct its amount from a
 ## ACCURATE CONTENT AND MODEL LIMITATIONS
 
 - 11 initial, 7 remaining, 4 removed. Finding formula 11−7=4; checking formula 11−4=7.
-- 11−□=7: candidates 3/4/7 yield remainders 8/7/4. A guess of 7 is the observed *remainder*, not the amount taken away.
+- 11−□=7: candidates 3/4/7 yield remainders 8/7/4. A guess of 7 is the observed _remainder_, not the amount taken away.
 - □−4=7 as a brief position contrast has missing beginning 11, not a missing removed amount.
 - Transfer 14−□=9: 14−9=5; candidates 4/5/6 produce 10/9/8 and checked value five.
 - Model only nonnegative whole numbers within 20, with removed ∈ [0, initial]. No negative results, counters silently duplicated or invalid equality presented as accepted.
@@ -29,7 +29,7 @@ The child does not see the removal happen, but can reconstruct its amount from a
 
 ## INTERACTIVE OBJECTS, STATES AND RULES
 
-Four distinct prop-free Scene entries for the Sections, with no invented runtime mode prop. Objects: indexed original counters, remaining/removed categories, hidden label, original equation with tagged operand roles, candidate buttons, exact arithmetic feedback, accessible state ledger and reset/reveal controls. Invariant total=removed+remaining for each example. Incorrect candidate C is evaluated as total−C (not as total−remaining) and explicitly labeled a *trial* when it disagrees. A change of example resets state and explanation; no forced retries, mastery or QuestionState.
+Four distinct prop-free Scene entries for the Sections, with no invented runtime mode prop. Objects: indexed original counters, remaining/removed categories, hidden label, original equation with tagged operand roles, candidate buttons, exact arithmetic feedback, accessible state ledger and reset/reveal controls. Invariant total=removed+remaining for each example. Incorrect candidate C is evaluated as total−C (not as total−remaining) and explicitly labeled a _trial_ when it disagrees. A change of example resets state and explanation; no forced retries, mastery or QuestionState.
 
 ## VISUAL / AUDIO / MEDIA DIRECTION
 

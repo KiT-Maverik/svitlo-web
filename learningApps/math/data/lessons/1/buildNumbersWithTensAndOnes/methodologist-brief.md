@@ -50,6 +50,7 @@ Known ten objects → physically exchange a complete group for one labelled ten 
 **Instructional depth and hard boundaries:** Build and read 10–49 with bundling visuals, optional extension to 99 only after editor approval. Zero loose units may occur (20), but treatment of zero as a general positional placeholder is reserved for `zeroPlaceholder`. No written regrouping algorithm or calculation fluency, no `readWrite100` mastery assumed. No scoring.
 
 **Concrete reference models:**
+
 - Ten objects before, ten objects after; regrouping changes organization only.
 - Both layouts show seventeen objects; only standard packing has 1 ten and 7 remaining ones.
 - Two tens plus six ones equals 26.

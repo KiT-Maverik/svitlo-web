@@ -34,7 +34,7 @@ Core explanation: "**Zero is the scale's start. The space between neighboring ma
 ### B. See Intervals as Spaces (Section 2)
 
 1. Start at zero and reveal labeled brackets **0–1**, **1–2**, **2–3**, **3–4**, each exactly one conceptual ruler unit.
-2. Prompt: "There are marks 0, 1, 2. How many *spaces* from zero to two?" Offer two or three, then explain **two** spaces with 3 marks.
+2. Prompt: "There are marks 0, 1, 2. How many _spaces_ from zero to two?" Offer two or three, then explain **two** spaces with 3 marks.
 3. Ask "Which mark has printed number 4?" and show exact label-to-tick relationship; this is **mark reading**, not determining the length of an unknown object.
 4. Allow "Show interval n" (n from 1…4), "Read all intervals" and "Back"; a nonvisual log states one range at a time.
 
@@ -87,7 +87,7 @@ Large schematic ruler, visible zero tick and printed numerals, separate plastic 
 6. New ruler margin size does not change its printed mark order or equal interval spacing.
 7. Reset and Section placement separation clear prior predictions; no props or cross-Scene state.
 8. Keyboard, RTL, screen reader, reduced motion, mobile zoom and fully offline use preserve the same correct ruler semantics.
-9. Browser zoom/resizing changes *display size* only, never asserts that a rendered spacing equals one physical centimeter.
+9. Browser zoom/resizing changes _display size_ only, never asserts that a rendered spacing equals one physical centimeter.
 
 ## IMPLEMENTATION DEPENDENCIES AND OPEN QUESTIONS
 

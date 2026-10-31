@@ -50,6 +50,7 @@ The pedagogically related Skills remain independently assessable objects with th
 **Target depth and exclusions:** Ten-tens and one-hundred equivalence plus brief step cases to 105/110. No general three-digit reading curriculum, multiplication algorithm, counting by 100, or calculation beyond demonstrated full ten-bundles.
 
 **Exact examples:**
+
 - 10+10+10+10+10+10+10+10+10+10=100.
 - 10 tens = 1 hundred = 100 ones, with zero added or removed.
 - 75+10=85, 85+10=95, 95+10=105; ones remainder stays 5.
@@ -66,7 +67,6 @@ English is editorial source copy, not a completed locale implementation. For the
 - Canonical Skill source files in the Target Skills section, preserved byte-for-byte in the earlier migration from Mathematics `main`.
 - [Lesson Editorial Architecture](../../../../../../studio/docs/architecture/lesson-editorial-document.md), [Learning Philosophy](../../../../../../studio/docs/architecture/learning-experience-philosophy.md).
 - [Internationalization/Accessibility](../../../../../../studio/docs/architecture/internationalization-and-accessibility.md) and [Offline Architecture](../../../../../../studio/docs/architecture/offline-first-and-device-compatibility.md).
-
 
 No named national Curriculum or attainment standards are claimed.
 

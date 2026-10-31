@@ -5,6 +5,7 @@
 **Lesson Content:** [One Part Has a Name](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Target Skills:**
+
 - [unitFractionModel.data.ts](../../../../../data/skills/fractions/representation/skills/unitFractionModel.data.ts)
 - [unitFractionRead.data.ts](../../../../../data/skills/fractions/representation/skills/unitFractionRead.data.ts)
 
@@ -18,15 +19,15 @@ The root Scene is proposed as a self-contained **prop-free component** with loca
 
 ## Visual/conceptual model and required states
 
-| State / preset | What the learner can inspect | Correct mathematical / logical condition |
-|---|---|---|
-| A equal | 12-unit rectangular strip; three segments of four squares | One segment can truthfully be called 1/3. |
-| A unequal | Same strip; widths 2, 3, 7 units | No segment is 1/3 by equal partition. |
-| B half | 12-unit strip split 6+6, select one | 1/2, one half; selected length 6 units. |
-| B third | 12-unit strip split 4+4+4, select one | 1/3, one third; selected length 4 units. |
-| B quarter | 12-unit strip split 3+3+3+3, select one | 1/4, one quarter; selected length 3 units. |
-| C collection | 12 counters into four labelled groups of three; select group of three | 1/4 of twelve is three counters; one of four groups. |
-| D transfer | Eight-unit ribbon split 2+2+2+2; one group selected | 1/4; all four parts equal. |
+| State / preset | What the learner can inspect                                          | Correct mathematical / logical condition             |
+| -------------- | --------------------------------------------------------------------- | ---------------------------------------------------- |
+| A equal        | 12-unit rectangular strip; three segments of four squares             | One segment can truthfully be called 1/3.            |
+| A unequal      | Same strip; widths 2, 3, 7 units                                      | No segment is 1/3 by equal partition.                |
+| B half         | 12-unit strip split 6+6, select one                                   | 1/2, one half; selected length 6 units.              |
+| B third        | 12-unit strip split 4+4+4, select one                                 | 1/3, one third; selected length 4 units.             |
+| B quarter      | 12-unit strip split 3+3+3+3, select one                               | 1/4, one quarter; selected length 3 units.           |
+| C collection   | 12 counters into four labelled groups of three; select group of three | 1/4 of twelve is three counters; one of four groups. |
+| D transfer     | Eight-unit ribbon split 2+2+2+2; one group selected                   | 1/4; all four parts equal.                           |
 
 All representations preserve the chosen whole, complete inventory, reference clock or observed tokens as appropriate. Do not silently change model conditions while an answer is being explained.
 

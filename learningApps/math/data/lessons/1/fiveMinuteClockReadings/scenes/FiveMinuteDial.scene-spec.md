@@ -4,6 +4,7 @@
 **Lesson:** [Read the Clock in Five-Minute Steps — Content](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [readFiveMinute.data.ts](../../../../../data/skills/time/clock/skills/readFiveMinute.data.ts)
 
 ## Pedagogical role
@@ -16,16 +17,16 @@ This Scene is a **proposed self-contained, prop-free root**. A renderer for the 
 
 ## Model, essential visual states and verifiable answers
 
-| State / preset | Concrete representation | Explanation / correct conclusion |
-|---|---|---|
-| At 3:00 | Minute hand at 12, hour hand exactly 3 | 00 minutes |
-| First step | Long hand at 1, short hand just past 3 | 3:05; one step × five minutes |
-| Five jumps | Long hand at 5, hour hand 2 + 25/60 | 2:25; five jumps × five = 25 |
-| Late hour | Long hand at 8, hour hand 6 + 40/60 | 6:40; not 7:40 |
-| Contrast hour | Long hand at 8, hour hand 7 + 40/60 | 7:40; different short-hand interval |
-| Almost next hour | Long hand at 11, short hand 11 + 55/60 | 11:55; not 12:55 |
-| Boundary | Long hand at 12, short hand 12 | 12:00; exactly at boundary |
-| Transfer | Long hand at 7, short hand 9 + 35/60 | 9:35; seven five-minute jumps |
+| State / preset   | Concrete representation                | Explanation / correct conclusion    |
+| ---------------- | -------------------------------------- | ----------------------------------- |
+| At 3:00          | Minute hand at 12, hour hand exactly 3 | 00 minutes                          |
+| First step       | Long hand at 1, short hand just past 3 | 3:05; one step × five minutes       |
+| Five jumps       | Long hand at 5, hour hand 2 + 25/60    | 2:25; five jumps × five = 25        |
+| Late hour        | Long hand at 8, hour hand 6 + 40/60    | 6:40; not 7:40                      |
+| Contrast hour    | Long hand at 8, hour hand 7 + 40/60    | 7:40; different short-hand interval |
+| Almost next hour | Long hand at 11, short hand 11 + 55/60 | 11:55; not 12:55                    |
+| Boundary         | Long hand at 12, short hand 12         | 12:00; exactly at boundary          |
+| Transfer         | Long hand at 7, short hand 9 + 35/60   | 9:35; seven five-minute jumps       |
 
 **Model scope and limitation:** A clock state represents a time on a twelve-hour dial; morning/evening cannot be inferred from the dial alone. Animated hand movement, if implemented, illustrates continuity but must have equal static access.
 

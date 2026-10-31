@@ -35,7 +35,7 @@ The outcomes are intentions for formative explanation, not validated Skill-maste
 
 ## Essential subject matter
 
-A written two-digit numeral represents complete tens and remaining ones: 42 has four tens and two ones, whereas 24 has two tens and four ones; 70 has seven tens and zero ones and is not 7. Each neighboring number differs by exactly one: 28→29→30→31, 31→30→29→28, 98→99→100 and 100→99. At 100, ten complete tens become one hundred; this is a *three-digit endpoint*, not an example of a two-digit numeral. The selected 0–100 exercise range has boundaries but the wider number sequence does not end at 100.
+A written two-digit numeral represents complete tens and remaining ones: 42 has four tens and two ones, whereas 24 has two tens and four ones; 70 has seven tens and zero ones and is not 7. Each neighboring number differs by exactly one: 28→29→30→31, 31→30→29→28, 98→99→100 and 100→99. At 100, ten complete tens become one hundred; this is a _three-digit endpoint_, not an example of a two-digit numeral. The selected 0–100 exercise range has boundaries but the wider number sequence does not end at 100.
 
 ## Conceptual progression and dependencies
 
@@ -50,6 +50,7 @@ The pedagogically related Skills remain independently assessable objects with th
 **Target depth and exclusions:** Only numbers 0–100 and one-by-one forward/backward changes, with concrete tens and ones. No tens-addition algorithms, arbitrary hundreds operations, negative numbers, score or rapid number-recitation test.
 
 **Exact examples:**
+
 - 4×10+2=42; 2×10+4=24.
 - 7 tens +0 ones=70, not 7.
 - 28,29,30,31 and 31,30,29,28, each adjacent difference is one.
@@ -66,7 +67,6 @@ English is editorial source copy, not a completed locale implementation. For the
 - Canonical Skill source files in the Target Skills section, preserved byte-for-byte in the earlier migration from Mathematics `main`.
 - [Lesson Editorial Architecture](../../../../../../studio/docs/architecture/lesson-editorial-document.md), [Learning Philosophy](../../../../../../studio/docs/architecture/learning-experience-philosophy.md).
 - [Internationalization/Accessibility](../../../../../../studio/docs/architecture/internationalization-and-accessibility.md) and [Offline Architecture](../../../../../../studio/docs/architecture/offline-first-and-device-compatibility.md).
-
 
 No named national Curriculum or attainment standards are claimed.
 

@@ -12,7 +12,7 @@ Transfer the rule into a changed number/item context without the first Scene's s
 
 ## ACCURATE CONTENT AND MODEL LIMITATIONS
 
-**Canonical mathematical rule:** A written two-digit numeral represents complete tens and remaining ones: 42 has four tens and two ones, whereas 24 has two tens and four ones; 70 has seven tens and zero ones and is not 7. Each neighboring number differs by exactly one: 28→29→30→31, 31→30→29→28, 98→99→100 and 100→99. At 100, ten complete tens become one hundred; this is a *three-digit endpoint*, not an example of a two-digit numeral. The selected 0–100 exercise range has boundaries but the wider number sequence does not end at 100.
+**Canonical mathematical rule:** A written two-digit numeral represents complete tens and remaining ones: 42 has four tens and two ones, whereas 24 has two tens and four ones; 70 has seven tens and zero ones and is not 7. Each neighboring number differs by exactly one: 28→29→30→31, 31→30→29→28, 98→99→100 and 100→99. At 100, ten complete tens become one hundred; this is a _three-digit endpoint_, not an example of a two-digit numeral. The selected 0–100 exercise range has boundaries but the wider number sequence does not end at 100.
 
 **Initial state:** A contiguous 0–100 counting model at 28, with independent presets 31,98,58. Counters are grouped into full tens and loose ones; the 100 endpoint displays ten groups of ten.
 

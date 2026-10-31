@@ -11,7 +11,7 @@ Parentheses define a subexpression whose result is used by the outer expression.
 
 ## Entry A — two subtraction groupings (Section 1)
 
-Display two complete expressions **(10 − 4) − 2** and **10 − (4 − 2)** side by side *within the self-contained Scene*; their outer Section remains vertically ordered. Prompt “Same numbers and signs: same result?” The learner selects the first grouped portion to inspect, then the outer stage. First: evaluate **10 − 4 = 6**, then **6 − 2 = 4**. Second: **4 − 2 = 2**, then **10 − 2 = 8**. Show both full calculations in a structured text ledger. For “same”: “One expression ends at four and the other at eight; the parenthesized group differs.” For “different”: “The brackets change which subtraction happens first.” Preserve minus operand order even if the viewport/layout is RTL.
+Display two complete expressions **(10 − 4) − 2** and **10 − (4 − 2)** side by side _within the self-contained Scene_; their outer Section remains vertically ordered. Prompt “Same numbers and signs: same result?” The learner selects the first grouped portion to inspect, then the outer stage. First: evaluate **10 − 4 = 6**, then **6 − 2 = 4**. Second: **4 − 2 = 2**, then **10 − 2 = 8**. Show both full calculations in a structured text ledger. For “same”: “One expression ends at four and the other at eight; the parenthesized group differs.” For “different”: “The brackets change which subtraction happens first.” Preserve minus operand order even if the viewport/layout is RTL.
 
 ## Entry B — multiplication plus addition (Section 2)
 
@@ -19,15 +19,15 @@ Start with **2 × (3 + 4)**, represented as two equal groups of **seven** counte
 
 ## Entry C — different grouping, same total (Section 3)
 
-Display **(2 + 3) + 4** versus **2 + (3 + 4)** with explicit controllable reveal steps. Left: **2+3=5**, **5+4=9**. Right: **3+4=7**, **2+7=9**. Ask whether parentheses *always* force a different answer. Feedback for “always”: “Both groups were evaluated as written, but both totals are nine.” Feedback for “not always”: “Yes, parentheses still determine a step, even if two arrangements yield the same final value.” A display of nine counted objects can optionally reinforce this but is not the sole evidence.
+Display **(2 + 3) + 4** versus **2 + (3 + 4)** with explicit controllable reveal steps. Left: **2+3=5**, **5+4=9**. Right: **3+4=7**, **2+7=9**. Ask whether parentheses _always_ force a different answer. Feedback for “always”: “Both groups were evaluated as written, but both totals are nine.” Feedback for “not always”: “Yes, parentheses still determine a step, even if two arrangements yield the same final value.” A display of nine counted objects can optionally reinforce this but is not the sole evidence.
 
 ## Entry D — independent transfer (Section 4)
 
-New expression **3 × (2 + 5)** with empty stage ledgers. Learner chooses the parenthesized group **2+5**, enters **7**, then uses 3×7=**21**. Distractor **11** comes from incorrectly treating expression as **3×2+5**; explain explicitly that 3×2+5 would be a *different written expression*. Show “first the group; next the outside multiplication.” Hints “Find what's inside ( )” then “How many groups of seven?” are optional, and “Reveal complete reasoning” is always available without a guess or score.
+New expression **3 × (2 + 5)** with empty stage ledgers. Learner chooses the parenthesized group **2+5**, enters **7**, then uses 3×7=**21**. Distractor **11** comes from incorrectly treating expression as **3×2+5**; explain explicitly that 3×2+5 would be a _different written expression_. Show “first the group; next the outside multiplication.” Hints “Find what's inside ( )” then “How many groups of seven?” are optional, and “Reveal complete reasoning” is always available without a guess or score.
 
 ## Data, interactive controls, and numeric invariants
 
-Each entry owns fixed complete expression AST/parsed structure *as an implementation concern*; the editorial spec requires operands/operation/grouping to remain immutable unless a separate comparison expression is explicitly shown. It owns learner's prediction, current focused subexpression, revealed step results, hints and explanation visibility. The nested displayed segment must correspond exactly to the original parentheses; evaluate numeric values consistently. Do not infer “always different” based on the mere presence of parentheses. Never allow a learner choice to silently change the expression while marking it correct. Public Scene has **no props**, no shared state between Sections, no Question/Quiz score, API call or Note persistence.
+Each entry owns fixed complete expression AST/parsed structure _as an implementation concern_; the editorial spec requires operands/operation/grouping to remain immutable unless a separate comparison expression is explicitly shown. It owns learner's prediction, current focused subexpression, revealed step results, hints and explanation visibility. The nested displayed segment must correspond exactly to the original parentheses; evaluate numeric values consistently. Do not infer “always different” based on the mere presence of parentheses. Never allow a learner choice to silently change the expression while marking it correct. Public Scene has **no props**, no shared state between Sections, no Question/Quiz score, API call or Note persistence.
 
 ## Visual/audio, inclusive access and localization
 

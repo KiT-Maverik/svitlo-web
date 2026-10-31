@@ -11,7 +11,7 @@ Implementation state: editorial plan only; custom Scene is not implemented.
 
 ## INSTRUCTIONAL CONCEPT
 
-**"A map is useful only if we agree what its squares and labels mean."** A shared 4×4 cell grid gives repeatable directions: rows A, B, C, D start **at map top**, columns 1–4 start **at map left**. The name **B2 means row B, column 2**, the whole square cell—not a crossing of lines. Each adjacent move on this map is *one cell*. The child uses this fixed convention to locate landmarks, trace a route and build a small map for another person. Display size may vary with device, but the **grid cell-to-cell convention** does not.
+**"A map is useful only if we agree what its squares and labels mean."** A shared 4×4 cell grid gives repeatable directions: rows A, B, C, D start **at map top**, columns 1–4 start **at map left**. The name **B2 means row B, column 2**, the whole square cell—not a crossing of lines. Each adjacent move on this map is _one cell_. The child uses this fixed convention to locate landmarks, trace a route and build a small map for another person. Display size may vary with device, but the **grid cell-to-cell convention** does not.
 
 Use a modest map with park, tree and pond icons and corresponding text labels. These are orientation examples, not a Program quest, timed treasure hunt or real geography.
 
@@ -32,7 +32,7 @@ Use a modest map with park, tree and pond icons and corresponding text labels. T
   1. **text — existing renderer:** "Look at our little map. The letters A, B, C, D name the rows. The numbers 1, 2, 3, 4 name the columns. Where is **B2**—the second square of row B, or a line where the labels cross?"
   2. **scene — existing Resource type, custom Scene proposed:** [Grid Map Workshop](./scenes/gridMapWorkshop.scene-spec.md), stage A. Show 4×4 cells with labeled rows/columns. Learner selects a **cell** by row choice and column choice (not precision clicking). Tree at **B2**, park at **A4**, pond at **C3**. "Read chosen cell" reveals "B2: tree"; "Show row B" highlights four cells and names them B1–B4.
   3. **markdown — existing renderer:** "First find the **row letter**, then the **column number**. B2 is **one square** in row B and column 2. A square is an area on the map; the grid lines are its borders. Names help two people talk about the same place."
-- **Feedback:** Selecting C2 for B2: "You kept column 2 but moved one row down. Find the row labeled B." Selecting B3: "You kept row B, but moved to column 3. Check the number 2." If child chooses a line crossing: "We name the *inside of a square* on this map."
+- **Feedback:** Selecting C2 for B2: "You kept column 2 but moved one row down. Find the row labeled B." Selecting B3: "You kept row B, but moved to column 3. Check the number 2." If child chooses a line crossing: "We name the _inside of a square_ on this map."
 - **Access:** Row/column selectors plus a 16-row logical cell list "A1 empty; …; B2 tree …". Use no unstated visual coordinates. Planned Note: "Read the row letter, then the column number."
 
 ### Section 2 — From the Tree to the Park

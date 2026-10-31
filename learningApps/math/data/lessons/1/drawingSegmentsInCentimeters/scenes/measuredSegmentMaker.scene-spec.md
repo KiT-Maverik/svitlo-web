@@ -13,7 +13,7 @@ Learner voice: "**Start A at 0. Mark B at the length we need. Connect them with 
 
 ## ACCURATE CONTENT AND MODEL LIMITATIONS
 
-- All constructions are schematic, fixed **whole-centimeter** lengths L in `{3,4,5,6,7}`, ruler major marks `0…10` equally spaced. A ruler body may extend a small unnumbered distance before zero. Model tick n is at distance n *one modeled centimeter interval* from tick 0.
+- All constructions are schematic, fixed **whole-centimeter** lengths L in `{3,4,5,6,7}`, ruler major marks `0…10` equally spaced. A ruler body may extend a small unnumbered distance before zero. Model tick n is at distance n _one modeled centimeter interval_ from tick 0.
 - A geometric segment AB includes two **distinct** endpoints; the target construction uses A at the printed ruler **0** and B at printed ruler **L**, with exactly L intervals between. One **straight** connecting stroke AB is required. A bent trace through a third point C off AB is not a straight segment even if it visits both endpoints.
 - The **first number** is zero, not one. From marks 0 to 4 are **four** spaces, although five printed tick labels. From mark 1 to mark 5 are also **four** spaces; this is not the taught zero-origin construction of five.
 - The paper/ruler picture is not physically calibrated to actual screen dimensions, zoom, portrait/landscape device size or browser pixel units. Label "model centimeter interval" accurately. A real-world physical ruler is an optional transfer, not an assumed built-in app feature.
@@ -48,7 +48,7 @@ Learner voice: "**Start A at 0. Mark B at the length we need. Connect them with 
    - **Case 1:** A at printed mark **1**, B at mark **5**, connection straight. Their separation is only **4 cm** (intervals 1–2,2–3,3–4,4–5).
    - **Case 2:** A at **0**, B at **5**, path A→C→B via an off-line bend C. The endpoints are five modeled centimeter intervals apart, but the drawn **path** is not straight.
 2. Ask "What is wrong?" before showing the fix. Case 1 fixes by **placing A at 0 while B remains at 5** (or by starting the construction from scratch at zero). Case 2 fixes by replacing the bent connector with a **single straight** AB while retaining A0 and B5.
-3. For Case1 an alternative mathematically correct 5 cm nonzero-start construction could use **1→6**, but this Lesson deliberately applies the validated beginner **zero-start procedure**; never say that a nonzero start *can never* yield five cm. The editorial counterexample's error is the actual **1→5 four-interval span**.
+3. For Case1 an alternative mathematically correct 5 cm nonzero-start construction could use **1→6**, but this Lesson deliberately applies the validated beginner **zero-start procedure**; never say that a nonzero start _can never_ yield five cm. The editorial counterexample's error is the actual **1→5 four-interval span**.
 4. For Case2 do not claim the total bent-route length equals five centimeters; the endpoint separation is five, while the bent trace may be longer and is not the specified straight segment.
 5. After repair, reveal the two conditions as independent checked statements: "Endpoints 0 and 5 = five equal cm spaces" and "Single straight connection". No hidden scoring.
 
@@ -86,7 +86,7 @@ Use SVG/HTML ruler at a stable schematic proportional scale. Display printed **0
 1. Target **4 cm**, A0 B4 straight yields exactly intervals 0–1,1–2,2–3,3–4 and a **4 cm** model segment.
 2. For target **3**, 0→3 yields **3 cm**; for **5**, 0→5 yields **5 cm**; for **7**, 0→7 yields **7 cm**.
 3. Target 5, 0→6 straight: six intervals and feedback "one too many"; 0→4: four intervals and feedback "one too few".
-4. Target 5, 1→5 straight: **4 cm**, *not* 5; explanatory correction repositions A to 0 while B stays at 5.
+4. Target 5, 1→5 straight: **4 cm**, _not_ 5; explanatory correction repositions A to 0 while B stays at 5.
 5. Target 5, 0→5 connected by a bent A→C→B path does **not** count as the required straight segment, even though endpoint separation is five intervals.
 6. Stage D target **6 cm**, A0 B6 straight produces six intervals and the exact answer **6 cm**; B5/B7 diagnoses are correct.
 7. Ruler margin, display zoom, screen dimension, optional rotation and line thickness never silently change the modeled centimeter count or claim physical calibration.

@@ -56,10 +56,10 @@ A Domain can embed Groups and direct Skills **at the same time**, or only one ki
 
 Every runtime entity must be produced through its designated builder, using the real shared-engine types. Do not hand-author the `collection` discriminator or `fileLocation` (the latter is supplied by the source registry).
 
-| Entity | Authored configuration | Builder | Children |
-| --- | --- | --- | --- |
-| Skill | `slug`, `id`, `name`, `description` | `buildSkillConfig` | None |
-| SkillGroup | `slug`, `id`, `name`, `skills` | `buildSkillGroupConfig` | Complete immediate Skill entities |
+| Entity      | Authored configuration                            | Builder                  | Children                                       |
+| ----------- | ------------------------------------------------- | ------------------------ | ---------------------------------------------- |
+| Skill       | `slug`, `id`, `name`, `description`               | `buildSkillConfig`       | None                                           |
+| SkillGroup  | `slug`, `id`, `name`, `skills`                    | `buildSkillGroupConfig`  | Complete immediate Skill entities              |
 | SkillDomain | `slug`, `id`, `name`, `groups`, optional `skills` | `buildSkillDomainConfig` | Complete immediate Groups and/or direct Skills |
 
 `Skill_Config` requires `description: { methodological: string; frontend: Readonly<Record<LanguageCode, string>> }`; descriptions on Group and Domain remain optional. For **legacy structured entries without `Slug:`, `Action:` or `Status:`**, [import-taxonomy-descriptions.mjs](../../../scripts/import-taxonomy-descriptions.mjs) can transfer descriptions to already existing Code after a successful dry-run. The current importer must not be used with new-template entries until parser compatibility is implemented and tested; preserve semantic equivalence and seek an approved implementation path in the meantime. It never translates or creates missing Code objects. The English `User-friendly description:` supplies `description.frontend.en` to Markdown → Code; it does not supply the remaining language keys. Those keys are added by a separate translation pass. A new or promoted entity **must** have `description.methodological`: a substantive, carefully edited **English** description faithful to the approved source text (translate without information loss when the staging taxonomy is in another language). This English text is for the Methodologist, Screenwriter and other agents; it may include useful conceptual distinctions, examples and caveats without becoming a lesson or assessment plan. `description.frontend` is **required on every Skill** with genuine translations for every supported language; Group/Domain frontend is optional but must be complete when present. Missing Skill frontend translations or methodological text blocks final promotion and runtime use, but do not block generating English-first Code drafts; no fallback. Builders enforce shape and completeness, not correctness of language/meaning. No mastery, grade, prerequisites, questions or learner state belong here.
@@ -74,7 +74,7 @@ Every runtime entity must be produced through its designated builder, using the 
 
 For the selected textbook package only:
 
-~~~text
+```text
 <PackageRoot>/
 ├── docs/
 │   └── skills/
@@ -89,7 +89,7 @@ For the selected textbook package only:
                 └── skills/
                     ├── <skillCamelCase>.data.ts # Skill config, UUID
                     └── index.ts          # immediate Skill Data named exports
-~~~
+```
 
 For an approved direct-Skill Domain, omit the Group directory and place its Skills in `<domainCamelCase>/skills/` with `skills/index.ts`. Both grouped and direct-Skill Domain Data import immediate child Data objects and embed the child objects themselves. **No `index.ts` exists in the Domain or Group directory root**. Do not create `*.ids.ts`, `index.ids.ts`, or `index.data.ts`.
 
@@ -116,14 +116,14 @@ Import builders from `@svitlo/engine/taxonomy` where available. Verify actual pa
 
 Example of the **key style only** (not a complete `name` object; production must include every supported key):
 
-~~~ts
+```ts
 name: {
   en: 'Addition',
   uk: 'Додавання',
   pl: 'Dodawanie',
   be: 'Складаньне',
 }
-~~~
+```
 
 Use the repo's configured string quote preference independently of the **no-quotation language keys** rule.
 

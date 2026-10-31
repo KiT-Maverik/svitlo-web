@@ -4,24 +4,25 @@
 
 ## Separation of concerns
 
-| Concern | Owns | Explicitly does not own |
-| --- | --- | --- |
-| Git authored content | Approved facts, configurations, resources, localized media, IDs and version history | Per-learner answers or account-specific runtime state |
-| Lesson | Reusable instructional content, ordered Sections and teaching interactions | External Program story, learner's account/sync service |
-| Section | Ordered learning step and its typed content blocks or Quiz composition | Entire Program or global prerequisites graph |
-| Resource | A typed presentation/content object (e.g. text, Markdown, image, audio, video, Scene) | Assessment evidence or user profile |
-| Skill | Atomic independently assessable catalog competency | Assessment method, score, grade, prereqs, learner mastery |
-| Question / Quiz / Assessment | Actual answers, checks, attempts, validity and scoring/evidence rules | Skill identity or Program narrative |
-| Lesson Progress | Section visits/completion, Lesson-specific progress | Proving a Skill is mastered |
-| Program (planned) | Selection/order of Lessons, optional character/story, extra activities and triggers | Rewriting an original Lesson's correct answers/content |
-| Notes (planned) | Git-authored concise recall cues and user-specific unlock status in separate stores | Lesson transcript or automatically scored mastery |
-| Local repository and optional sync | Learner state and offline access, later cross-device replication | Authorial educational truth maintained outside Git |
+| Concern                            | Owns                                                                                  | Explicitly does not own                                   |
+| ---------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Git authored content               | Approved facts, configurations, resources, localized media, IDs and version history   | Per-learner answers or account-specific runtime state     |
+| Lesson                             | Reusable instructional content, ordered Sections and teaching interactions            | External Program story, learner's account/sync service    |
+| Section                            | Ordered learning step and its typed content blocks or Quiz composition                | Entire Program or global prerequisites graph              |
+| Resource                           | A typed presentation/content object (e.g. text, Markdown, image, audio, video, Scene) | Assessment evidence or user profile                       |
+| Skill                              | Atomic independently assessable catalog competency                                    | Assessment method, score, grade, prereqs, learner mastery |
+| Question / Quiz / Assessment       | Actual answers, checks, attempts, validity and scoring/evidence rules                 | Skill identity or Program narrative                       |
+| Lesson Progress                    | Section visits/completion, Lesson-specific progress                                   | Proving a Skill is mastered                               |
+| Program (planned)                  | Selection/order of Lessons, optional character/story, extra activities and triggers   | Rewriting an original Lesson's correct answers/content    |
+| Notes (planned)                    | Git-authored concise recall cues and user-specific unlock status in separate stores   | Lesson transcript or automatically scored mastery         |
+| Local repository and optional sync | Learner state and offline access, later cross-device replication                      | Authorial educational truth maintained outside Git        |
 
 A Quiz question can cite multiple Skill IDs. That does not create an extra integrational Skill merely because an exercise uses several capabilities, and one combined correct answer does not automatically validate all of them independently.
 
 ## Important implementation boundaries
 
 **Confirmed in currently inspected Contracts / Engine / apps (recheck current code):**
+
 - [Lesson types](../../../shared/contracts/src/types/content/lesson.types.ts) include a `Lesson_Config` and array-based ordered `sections.content`, `LessonState`, and a Lesson/Section vs Quiz distinction.
 - [Resource types](../../../shared/contracts/src/types/content/resource.types.ts) distinguish typed content resources; full renderer support **does not follow from TypeScript declarations**.
 - The current [Lesson renderer](../../../learningApps/playground/src/components/pages/Lesson/LessonSectionContent/LessonSectionContent.tsx) directly handles `text`, `markdown`, `scene` for generic Sections; other declared resource configs need additional verification/integration.
@@ -29,6 +30,7 @@ A Quiz question can cite multiple Skill IDs. That does not create an extra integ
 - [Engine languages](../../../shared/engine/src/types/languages.ts) include locale and `ltr`/`rtl` definitions; complete translation and semantic RTL still require implementation/testing per component.
 
 **Not a completed universal runtime (do not invent these APIs):**
+
 - **Program Runtime:** reusable Lesson sequencing/enrichment with characters, story, rewards and conditional contexts.
 - **Static Program injections:** deterministic insertion before/after Lesson or Section, or into a named slot with stable anchors. Do not search the DOM or mutate the original Lesson to emulate this.
 - **Event-driven Program reactions:** a public factual `question.*`, `section.*` and `lesson.*` event contract, handlers, retry/replay ordering, deduplication and asynchronous safety. Events must report facts, **not instruct components** or change scoring.

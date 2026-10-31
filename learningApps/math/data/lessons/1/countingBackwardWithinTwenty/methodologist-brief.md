@@ -48,6 +48,7 @@ Already know forward +1 → reverse one move from 5 to 4 with a visible item dis
 **Instructional depth and hard boundaries:** Numbers 0–20 inclusive; no negative values or formal subtraction algorithm, no timed recital, no scoring. A descending number strip can support speech but must not turn into a mere memorize-and-tap exercise.
 
 **Concrete reference models:**
+
 - 6 lit − 1 lit = 5 lit, with five visible remaining.
 - 12 objects: 10+2; after three distinct removals 9 remain.
 - Four backward moves from 8 end at 4.

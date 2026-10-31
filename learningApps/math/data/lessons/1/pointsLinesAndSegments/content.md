@@ -11,7 +11,7 @@ Implementation state: **editorial only**. A `scene` Resource is renderable in th
 
 ## INSTRUCTIONAL CONCEPT
 
-**"A dot shows where. A line keeps going. A segment starts and stops at two points."** Start with a familiar pencil mark and challenge the assumption that the ink itself *is* a perfect geometric object. Children predict what a drawn mark represents, trace alternative paths, then produce an exact straight segment AB. A point does not become larger when its display dot is enlarged; a mathematical straight line does not terminate because its picture is cropped. A segment has two named endpoints and a finite straight-line span; the learner can construct it without a touchscreen pencil.
+**"A dot shows where. A line keeps going. A segment starts and stops at two points."** Start with a familiar pencil mark and challenge the assumption that the ink itself _is_ a perfect geometric object. Children predict what a drawn mark represents, trace alternative paths, then produce an exact straight segment AB. A point does not become larger when its display dot is enlarged; a mathematical straight line does not terminate because its picture is cropped. A segment has two named endpoints and a finite straight-line span; the learner can construct it without a touchscreen pencil.
 
 The Lesson proceeds from recognition to investigation to construction, never relying on remembering a name alone. Keep each Section short and active. No points, correctness records, timed performance or hidden mastery flags.
 
@@ -31,7 +31,7 @@ The Lesson proceeds from recognition to investigation to construction, never rel
 - **Ordered Resources:**
   1. **text — existing renderer:** "This dot stands for a point named A. If I draw the dot much bigger, have I moved A or made the mathematical point wider? Choose what you think."
   2. **scene — contract and generic renderer available, custom Scene proposed:** [Point and Line Explorer](./scenes/pointAndLineExplorer.scene-spec.md), stage A. A dot centered at diagram position (2,2) changes from small to large mark while its exact center remains (2,2); a second dot at (4,2) shows a genuinely different position. Two prediction actions: "same point" and "new position".
-  3. **markdown — existing renderer:** "A **point** tells us *where*. We draw a dot so we can see it, but a geometric point itself has **no width or thickness**. A bigger dot can mark the **same** point A. Moving the center to a new place marks a *different* position."
+  3. **markdown — existing renderer:** "A **point** tells us _where_. We draw a dot so we can see it, but a geometric point itself has **no width or thickness**. A bigger dot can mark the **same** point A. Moving the center to a new place marks a _different_ position."
 - **Explanatory feedback:** If "new position" for a bigger dot: "Look at the dot's center. The center stayed exactly where A was. Only the ink got bigger." If A moves from (2,2) to (4,2): "Now the center moved, so the marked position changed." No metric coordinates appear in the child's text.
 - **Interaction and access:** "Enlarge marker", "Move marker", "Read point positions", "Reset"; no precision touch needed. Nonvisual state: "Point A stays in the same place; its marker grew." Reveal only after prediction. A simple localized Note about a point as a position is **planned**, not implemented.
 
@@ -64,7 +64,7 @@ The Lesson proceeds from recognition to investigation to construction, never rel
 - **Ordered Resources:**
   1. **text — existing:** "Place A and B in **different** places. Make **one straight segment** from A to B, then label the two endpoints. Would BA show a different segment?"
   2. **scene — proposed:** [Point and Line Explorer](./scenes/pointAndLineExplorer.scene-spec.md), stage D. Provide discrete position buttons on a 5×5 board to choose A at (1,1), B at (4,3) as starting preset; learner can select alternate distinct grid positions. "Connect straight" draws a single straight AB; "Connect via third point" produces visibly bent A→C→B if C lies off the straight span and asks the learner to identify it as **not** AB. "Switch name AB/BA" preserves the geometry. Show the two endpoint labels and text.
-  3. **markdown — existing:** "You chose two distinct endpoints. Exactly **one straight segment** connects them. It does not matter which end you name first: **AB = BA** as geometric segments. We can find its *length* later by measuring between the ends."
+  3. **markdown — existing:** "You chose two distinct endpoints. Exactly **one straight segment** connects them. It does not matter which end you name first: **AB = BA** as geometric segments. We can find its _length_ later by measuring between the ends."
 - **Independent transfer:** New, unlabeled endpoints are offered without hints. Learner assigns labels, chooses straight connection and says why a two-part bend is not the same segment. For a coincident A/B selection, explain that **this Lesson needs two distinct endpoints** and ask learner to move one; do not silently generate a nonzero segment.
 - **Feedback and progression:** The Scene reveals conceptual reasons, not numeric lengths or scoring. A child with no drag facility completes via labeled position controls. Optional physical paper-and-pencil extension is not required for equivalent online/offline learning.
 

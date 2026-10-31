@@ -21,6 +21,7 @@ For ascending (nondecreasing) order, each adjacent value must be at least the on
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 ### Beat 1: Put 9, 4 and 6 from smallest to largest.
+
 - **Exact learner-facing invitation:** “Put 9, 4 and 6 from smallest to largest.”
 - **Action / teacher model:** Learner selects a card then an ordered slot, or uses Move earlier/later controls. After each placement, offer a visual quantity helper for the selected number.
 - **Expected state change / observation:** Correct ascending arrangement 4, 6, 9.
@@ -29,6 +30,7 @@ For ascending (nondecreasing) order, each adjacent value must be at least the on
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 2: Two cards both say 8. Can the row still be sorted?
+
 - **Exact learner-facing invitation:** “Two cards both say 8. Can the row still be sorted?”
 - **Action / teacher model:** New deck 8, 3, 10, 8; learner orders all cards without discarding either 8 and sees a narrated adjacent-pair check.
 - **Expected state change / observation:** Correct 3, 8, 8, 10. The equal adjacent pair is valid.
@@ -41,6 +43,7 @@ For ascending (nondecreasing) order, each adjacent value must be at least the on
 **Objects:** Modelled quantity cards/items, their stable semantic identities, count/representation ledger, native controls and visible explanation. Choose challenge, Place/move card, Check each neighbor (formative), Show worked order, Reset. All cards must remain present once placed. No opaque drag requirement.
 
 **Local state and invariants:**
+
 - Initial values come from deterministic constants within the standalone Scene module, **not** a Lesson prop, global store, new Resource subtype, invented platform API or fake locale prop.
 - Only an explicit learner action may change represented quantity, grouping or order; all labels and accessible counts derive from the same authoritative local model.
 - Do not allow an object to be consumed/paired/placed twice when that would alter the mathematics. **Reset** restores exactly this Scene's initial state, not any other Section; scenario changes cannot leak answers or counters from the previous state.

@@ -74,7 +74,7 @@ Standalone and Program-neutral: no presumed national curriculum endorsement, sto
 
 ## Open editorial decisions
 
-- **Methodologist:** Review whether the exact wording communicates *potential* variability rather than requiring observed variation, and confirm that fictional responses are not presented as real population evidence.
+- **Methodologist:** Review whether the exact wording communicates _potential_ variability rather than requiring observed variation, and confirm that fictional responses are not presented as real population evidence.
 - **Methodologist:** accept the Grade 2 audience, prerequisites and observable learning outcomes.
 - **Screenwriter / Scene reviewer:** review the separate provisional documents after explicit Methodologist sign-off.
 - **Coding Agent / QA:** eventually verify true locale completeness, LTR/RTL, nonvisual parity, offline delivery, tests and weak-device behavior. No implementation is claimed.

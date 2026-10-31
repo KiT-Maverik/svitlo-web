@@ -51,7 +51,9 @@ export default function SponsorTabs() {
         {tabs.map((tab, index) => (
           <button
             key={tab.id}
-            ref={element => { refs.current[index] = element; }}
+            ref={element => {
+              refs.current[index] = element;
+            }}
             id={'sponsor-tab-' + tab.id}
             className={'sponsor-tab' + (active === tab.id ? ' sponsor-tab--active' : '')}
             type="button"
@@ -61,11 +63,22 @@ export default function SponsorTabs() {
             tabIndex={active === tab.id ? 0 : -1}
             onClick={() => setActive(tab.id)}
             onKeyDown={event => onKeyDown(event, index)}
-          >{tab.label}</button>
+          >
+            {tab.label}
+          </button>
         ))}
       </div>
-      <section className="sponsor-panel" id="sponsor-panel" role="tabpanel" aria-labelledby={'sponsor-tab-' + selected.id} tabIndex={0}>
-        <div className="sponsor-panel__graphic" aria-hidden="true"><span>✳</span><i>✦</i></div>
+      <section
+        className="sponsor-panel"
+        id="sponsor-panel"
+        role="tabpanel"
+        aria-labelledby={'sponsor-tab-' + selected.id}
+        tabIndex={0}
+      >
+        <div className="sponsor-panel__graphic" aria-hidden="true">
+          <span>✳</span>
+          <i>✦</i>
+        </div>
         <div>
           <span className="eyebrow">ДЯКУЄМО ЗА ПІДТРИМКУ</span>
           <h2>{selected.heading}</h2>

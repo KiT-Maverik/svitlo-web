@@ -64,4 +64,3 @@ Not specified. The Lesson is standalone and Program-neutral; numerical depth is 
 ## Methodologist handoff
 
 Ready for editor review of scope, prerequisites and both Skill references. Once approved, the Screenwriter may design accessible ways to discover, justify, and continue an additive pattern, including short recall cues. Do not infer Skill mastery from merely extending one sequence.
-

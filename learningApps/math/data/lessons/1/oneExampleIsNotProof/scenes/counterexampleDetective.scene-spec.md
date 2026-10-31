@@ -16,14 +16,15 @@ Begin with **1 + 3 = 4**, both addends odd, sum four. Ask whether observing this
 ## Entry B — a valid counterexample must fit conditions (Section 2)
 
 Claim: **“Every sum of two odd whole numbers is odd.”** Offer candidate pairs **3 + 5**, **4 + 5**, **1 + 3**, each as an inspectable card:
+
 - **3 and 5:** both odd (premise met), sum **8** (even; conclusion fails) → VALID counterexample.
 - **4 and 5:** one addend even (premise NOT met), sum **9** odd → NOT a counterexample to this claim.
 - **1 and 3:** both odd, sum **4** even → ALSO valid counterexample.
-Ask two independent questions for each candidate: “Do BOTH numbers satisfy the conditions?” and “Does the conclusion hold for this case?” Only if first yes and second no may the Scene label it a counterexample. If 4+5 selected as a refutation, give “Four is even, so this pair doesn't fit the rule's two-odd condition.” If 3+5 selected: “Both are odd, but eight is even. One valid counterexample refutes ‘every sum is odd’.” Do not reject 1+3 as another valid counterexample.
+  Ask two independent questions for each candidate: “Do BOTH numbers satisfy the conditions?” and “Does the conclusion hold for this case?” Only if first yes and second no may the Scene label it a counterexample. If 4+5 selected as a refutation, give “Four is even, so this pair doesn't fit the rule's two-odd condition.” If 3+5 selected: “Both are odd, but eight is even. One valid counterexample refutes ‘every sum is odd’.” Do not reject 1+3 as another valid counterexample.
 
 ## Entry C — supporting instances do not establish universality (Section 3)
 
-Claim: “**Adding zero to a whole number leaves that number unchanged**.” Offer 4+0=4, 7+0=7, 12+0=12, all genuinely true. The child checks each, then chooses between “These cases support the claim” and “These cases by themselves prove it for all whole numbers.” Explain: “They are examples; confirming more cases still does not by itself cover every possible whole number.” Show a simple model of putting an *empty* extra collection next to any counted collection as an intuitive invariant rationale, but do not present a formal infinitely quantified proof. Distinguish “we did not find a counterexample” from “we proved the claim.”
+Claim: “**Adding zero to a whole number leaves that number unchanged**.” Offer 4+0=4, 7+0=7, 12+0=12, all genuinely true. The child checks each, then chooses between “These cases support the claim” and “These cases by themselves prove it for all whole numbers.” Explain: “They are examples; confirming more cases still does not by itself cover every possible whole number.” Show a simple model of putting an _empty_ extra collection next to any counted collection as an intuitive invariant rationale, but do not present a formal infinitely quantified proof. Distinguish “we did not find a counterexample” from “we proved the claim.”
 
 ## Entry D — independent counterexample (Section 4)
 

@@ -10,7 +10,7 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-A whole collection can be completely removed. The difference then is **zero because nothing remains**, not because the symbols magically cancel. The same-number subtraction **a − a = 0** is a statement about removing *the full amount*. The previous lesson’s zero subtraction **a − 0 = a** asks something different. A child will examine both on one set so that similar-looking expressions do not become interchangeable chants.
+A whole collection can be completely removed. The difference then is **zero because nothing remains**, not because the symbols magically cancel. The same-number subtraction **a − a = 0** is a statement about removing _the full amount_. The previous lesson’s zero subtraction **a − 0 = a** asks something different. A child will examine both on one set so that similar-looking expressions do not become interchangeable chants.
 
 ## LEARNER JOURNEY
 

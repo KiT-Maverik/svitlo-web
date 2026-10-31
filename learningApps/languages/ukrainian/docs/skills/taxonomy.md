@@ -2557,4 +2557,3 @@ Status: pending
 
 Methodological description: Formulate a personal reaction to a message's content and communicative purpose while separating one's view from the author's words.
 User-friendly description: Express your response to a media message without misquoting its author.
-

@@ -34,7 +34,7 @@ Build a dependency-aware plan for a word problem requiring an intermediate unkno
 
 ## Essential subject matter
 
-For ‘A shelf has 8 red books and 7 blue books; 6 books are borrowed; how many remain?’, first find 8+7=15 books (original total), then 15−6=9 books (remain). The first answer is an **intermediate**, not the final result. A second structure: ‘Ava has 12 stickers; Sam has 3 fewer than Ava; how many have they together?’ first Sam=12−3=9 stickers; then 12+9=21 stickers. A child who only calculates 12−3 answers Sam's amount, not the *combined* question. Other mathematically valid strategies may exist, so never assert an arbitrary sequence of arithmetic symbols is the unique legitimate plan; dependency and units are central.
+For ‘A shelf has 8 red books and 7 blue books; 6 books are borrowed; how many remain?’, first find 8+7=15 books (original total), then 15−6=9 books (remain). The first answer is an **intermediate**, not the final result. A second structure: ‘Ava has 12 stickers; Sam has 3 fewer than Ava; how many have they together?’ first Sam=12−3=9 stickers; then 12+9=21 stickers. A child who only calculates 12−3 answers Sam's amount, not the _combined_ question. Other mathematically valid strategies may exist, so never assert an arbitrary sequence of arithmetic symbols is the unique legitimate plan; dependency and units are central.
 
 ## Conceptual progression and dependencies
 

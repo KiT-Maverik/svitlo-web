@@ -21,6 +21,7 @@ A predecessor immediately before an integer n differs by one. For positive value
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 ### Beat 1: You stand at step 8. Move back four steps. Where will you be?
+
 - **Exact learner-facing invitation:** “You stand at step 8. Move back four steps. Where will you be?”
 - **Action / teacher model:** Choose 'one step back' four times, with a prediction of the destination available before moving; marker follows positions 8,7,6,5,4.
 - **Expected state change / observation:** Marker ends at step 4; each step exactly one earlier ordinal number.
@@ -29,6 +30,7 @@ A predecessor immediately before an integer n differs by one. For positive value
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 2: Start at 17. Find the number immediately before it. Then before 11.
+
 - **Exact learner-facing invitation:** “Start at 17. Find the number immediately before it. Then before 11.”
 - **Action / teacher model:** Learner selects the preceding label 16 for 17, then 10 for 11; provide a one-move marker explanation and optional full reveal.
 - **Expected state change / observation:** Pred(17)=16 and Pred(11)=10, chosen independently with no restart at twenty.
@@ -41,6 +43,7 @@ A predecessor immediately before an integer n differs by one. For positive value
 **Objects:** Modelled quantity cards/items, their stable semantic identities, count/representation ledger, native controls and visible explanation. Select challenge, Predict destination, Move back, Reset, Show path ledger; never automatic movement.
 
 **Local state and invariants:**
+
 - Initial values come from deterministic constants within the standalone Scene module, **not** a Lesson prop, global store, new Resource subtype, invented platform API or fake locale prop.
 - Only an explicit learner action may change represented quantity, grouping or order; all labels and accessible counts derive from the same authoritative local model.
 - Do not allow an object to be consumed/paired/placed twice when that would alter the mathematics. **Reset** restores exactly this Scene's initial state, not any other Section; scenario changes cannot leak answers or counters from the previous state.

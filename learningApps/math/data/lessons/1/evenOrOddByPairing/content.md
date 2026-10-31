@@ -81,7 +81,6 @@ The first Scene uses guided formative decisions and worked contrast; Section 2 r
 
 English text here is editorial source, not production locale assets. Complete truthful translation of instructional language, count words, denomination labels, error messages, aria names and Notes is required for every Engine-supported locale with no silent fallback. RTL must preserve number order, identities, explicit START or EUR units and pair semantics. Equivalent keyboard/switch/touch/nonvisual controls, focus, contrast, reduced motion, zoom and mobile experience are WCAG 2.2 AA targets. All lesson assets, selected-language explanations and computation must be usable offline after download; actual PWA completeness is not claimed.
 
-
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
 - Existing general Lesson Section contract: ordered vertical nonempty Resource list.

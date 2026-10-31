@@ -13,7 +13,7 @@ Help the learner discover and justify that swapping addends changes their order,
 
 The commutative property holds for addition: a+b=b+a. For children use nonnegative whole-number addends and totals ≤20: 3+5=5+3=8, 4+7=7+4=11, and a comparison 3+6=9. A change in temporal order can change a story's wording, but not the arithmetic total of the two quantities. Do not imply commutativity of subtraction, or introduce negative-number examples.
 
-The experience must teach the *reason for the mathematical rule* through inspectable quantities and controlled transformations, never through purely visual validation or a decontextualized quiz.
+The experience must teach the _reason for the mathematical rule_ through inspectable quantities and controlled transformations, never through purely visual validation or a decontextualized quiz.
 
 ## LEARNER JOURNEY
 
@@ -29,6 +29,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** Count two disjoint groups in either order and justify that 3+5 and 5+3 both equal eight.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “One tray holds three counters. Another holds five. How many are there in both?”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Addend Swap Workbench](./scenes/addendSwapWorkbench.scene-spec.md), entry 1. Show separate trays with exactly 3 and 5 countable objects, names 'first tray three' and 'second tray five'; count 3 then 5, finishing at eight.
 3. **markdown — renderer supported:** “Three from one tray and five from the other make eight. These are the same eight objects whichever tray we count first.” Mathematical statement: **3 + 5 = 8**.
@@ -52,6 +53,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** State which values swapped places and what remained unchanged, using the term addends after concrete exploration.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “What if we count the five first and the three second? Did any counters arrive?”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Addend Swap Workbench](./scenes/addendSwapWorkbench.scene-spec.md), entry 2. A learner-selected 'Swap order' button switches the expression 3+5 to 5+3 and reading order of tray descriptions while leaving the underlying eight counter IDs unchanged.
 3. **markdown — renderer supported:** “Five plus three also equals eight. We swapped which addend came first, not how many objects we had.” Mathematical statement: **5 + 3 = 8**.
@@ -75,6 +77,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** Contrast swapping factors/addends with altering a quantity; see that 3+6 differs from 3+5.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “Compare swapping 3 and 5 with changing the five into six. Which action keeps the sum?”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Addend Swap Workbench](./scenes/addendSwapWorkbench.scene-spec.md), entry 3. Offer two explicit actions: 'Swap the two groups' gives 5+3=8; 'Add one to the second group' gives 3+6=9. Read an ordered ledger describing whether object count changed.
 3. **markdown — renderer supported:** “Swapping the addends keeps the total eight. Adding one more object makes nine; that is not only a swap.” Mathematical statement: **3 + 5 = 5 + 3 = 8; 3 + 6 = 9**.
@@ -98,6 +101,7 @@ The experience must teach the *reason for the mathematical rule* through inspect
 **Purpose / learner outcome:** Use a fresh model to find 4+7 and 7+4 and explain why both equal eleven.
 
 **Ordered Resource blocks in one vertical LessonSection_Config:**
+
 1. **text — renderer supported:** “Four counters plus seven makes how many? Will seven plus four have the same total?”
 2. **scene — renderer supported, NEW custom Scene proposed:** [Addend Swap Workbench](./scenes/addendSwapWorkbench.scene-spec.md), entry 4. Display 4+7 as two trays, 11 distinct counters. Before showing result ask predicted sum and swap; reveal both 4+7=11 and 7+4=11 through same counter IDs.
 3. **markdown — renderer supported:** “There are eleven counters in both orders. We can choose whichever addend to count first; the sum is eleven.” Mathematical statement: **4 + 7 = 7 + 4 = 11**.

@@ -43,7 +43,7 @@ Learner voice: "**I used a length I know, made an estimate in centimeters, then 
 
 ### Placement C: Two Estimates of One Fixed Strip (Section 3)
 
-1. Display the **same fixed target of 18 cm**, reference 10 cm, with already declared estimates **20 cm** and **25 cm**; these are *given examples*, not the learner's hidden initial guess.
+1. Display the **same fixed target of 18 cm**, reference 10 cm, with already declared estimates **20 cm** and **25 cm**; these are _given examples_, not the learner's hidden initial guess.
 2. After "Measure", show 0→18 from a ruler and exact comparison:
    - **20 cm estimate** vs 18 measured ⇒ **2 cm above**.
    - **25 cm estimate** vs 18 measured ⇒ **7 cm above**.
@@ -58,14 +58,14 @@ Learner voice: "**I used a length I know, made an estimate in centimeters, then 
 2. Learner selects an integer estimate **e ∈ {18,19,…,28}** via accessible stepper/select plus a reason e.g. "just above 20" / "near two and a half reference strips" / "unsure; show a clue". Never require a typed paragraph.
 3. "Confirm my estimate" then deliberately "Check with ruler" reveals a correctly zero-aligned scale 0…25 or 0…30, with endpoint **23**. Record exact measured "**23 cm**".
 4. Feedback calculated for any allowed e: if **e < 23**, show "**23−e cm below**"; if **e > 23**, show "**e−23 cm above**"; if equal, "**matches**". Specific examples: e=20 ⇒ **3 cm below**; e=22 ⇒ **1 cm below**; e=24 ⇒ **1 cm above**; e=28 ⇒ **5 cm above**. Explain the difference through the fixed 10 cm benchmark after reveal.
-5. A learner may say "the estimate was far too large for this reference", compare two 10 cm spans to the target and revise their next future estimate. They may retry but no grade or hidden performance label is stored. An independent new estimate after a reset is always a new *practice* event, not spaced scheduling.
+5. A learner may say "the estimate was far too large for this reference", compare two 10 cm spans to the target and revise their next future estimate. They may retry but no grade or hidden performance label is stored. An independent new estimate after a reset is always a new _practice_ event, not spaced scheduling.
 6. Keep everything locally deterministic, including all feedback and no scoring state. A physical ruler is an optional outside-the-Scene extension and not required.
 
 ## INTERACTIVE OBJECTS, STATES AND RULES
 
 - **Objects:** fixed 10 cm reference strip, fixed but pre-reveal unlabeled target strip, optional proportional length-comparison brackets, estimate selection control (integer centimeters), reason choices, explicit "Confirm estimate" / "Reveal measurement", schematic ruler/tick intervals, measured result with unit, difference sentence and reflect/retry/reset controls.
 - **State:** per placement fixed internal reference and target length, learner estimate (nullable), chosen reason, confirmation status, ruler reveal status, possibly selected interval for inspection and feedback. All UI localization must come from actual verified context, **not** public props.
-- **Invariant:** mystery strip's underlying length NEVER changes when measured or resized; before reveal no exact target value leaked in learner-perceivable text/UI; ruler ticks equal and zero-aligned after reveal; difference magnitude and direction computed correctly using *the same unit*.
+- **Invariant:** mystery strip's underlying length NEVER changes when measured or resized; before reveal no exact target value leaked in learner-perceivable text/UI; ruler ticks equal and zero-aligned after reveal; difference magnitude and direction computed correctly using _the same unit_.
 - **Reason checks:** show explanatory commentary ("estimate not informed by reference") without treating guesses as pass/fail. If estimate omitted, pressing "Measure" requests a provisional estimate and a reason **or offers an explicit 'show anyway' route for accessibility**; avoid permanently blocking learning.
 - **No public props:** Section-specific Scene roots must each be self-contained and **prop-free**. They can share private model functions but may not require invented `targetLength`, `language`, `mode`, `onAnswered` or learner-state event props.
 - **No persistence/quiz:** chosen local estimate is a transient instructional variable. No recorded results, mastery validation, scoring, Note events or external network dependency.
@@ -78,7 +78,7 @@ Use a stable, clean SVG strip comparison showing the known 10cm reference; the m
 
 - Translate all unit-bearing values, comparative cues, choice labels, numeral/plural display, messages, reflection sentences, ruler descriptions and Note text genuinely for all supported locales. Use suitable localized grammar for 1/2/3+ centimeters and avoid idioms where "above/below" might be mistaken for vertical placement; pair with "greater/less than the measured value".
 - **RTL:** UI text/control order may mirror, but the ruler's chosen numeric orientation (0 increasing consistently) and the reference/target length relation **must not** reverse. Avoid whole SVG mirroring that changes mapped tick labels.
-- **Pre-reveal nonvisual equity:** a screen reader gets the same *coarse* relational clue as visual learners, but not the target's exact numeric value; no exact endpoint mark in aria labels until measured. After reveal, provide an exhaustive interval-based text explanation if requested. The optional visual ruler isn't a secret answer channel in another modality.
+- **Pre-reveal nonvisual equity:** a screen reader gets the same _coarse_ relational clue as visual learners, but not the target's exact numeric value; no exact endpoint mark in aria labels until measured. After reveal, provide an exhaustive interval-based text explanation if requested. The optional visual ruler isn't a secret answer channel in another modality.
 - Keyboard/switch accessible integer stepper and reason buttons, visible focus, ample touch targets, no precision pointer measuring, no time limit, no mandatory speech, no color-only encoding, controlled announcements and reduced motion.
 - Must meet WCAG 2.2 AA intent and preserve full learning on mobile, low-end or offline after successful package/locale download. These are **implementation requirements** awaiting verification, not claims that current UI supports them.
 

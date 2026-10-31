@@ -40,7 +40,7 @@ For any three whole-number addends a,b,c, (a+b)+c = a+(b+c). Concrete case (2+3)
 
 1. Three Collections Make Nine: Display 2,3,4 counters as three persistently labeled disjoint collections with unique IDs; allow learner to count all nine without grouping first.
 2. First Two Together: Learner selects a bracket around first pair (2+3), sees a subtotal of five, then includes the third group of four to obtain nine; labels stay attached to original groups.
-3. Last Two Together: On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side *inside the Scene*.
+3. Last Two Together: On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side _inside the Scene_.
 4. Group Six, Four and Three: A transfer set 6,4,3 keeps thirteen unique counters; learner chooses (6+4)+3 or 6+(4+3) and inspects first subtotal ten vs seven. Both finish at thirteen.
 
 ## Misconceptions, examples and boundaries

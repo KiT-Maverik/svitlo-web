@@ -22,6 +22,7 @@ Core copy: “A ten is ten ones. We can open the ten, but thirteen is still thir
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Section 1: exchange without subtraction**
+
 1. Show one labeled ten-bundle and three separate units; text: “One ten and three ones make thirteen.”
 2. Ask “If we open the bundle, will there be more, fewer or the same number of counters?” Choices are optional; “Show me” always provides the explanation without judging.
 3. “Exchange one ten”: the bundle visibly separates into ten constituent ones. The three original ones remain. Count all thirteen and display “0 tens + 13 ones = 13”.
@@ -29,6 +30,7 @@ Core copy: “A ten is ten ones. We can open the ten, but thirteen is still thir
 5. “Undo exchange” reconstructs the single ten-bundle from precisely ten of those same units; never adds or duplicates. “Reset” restores starting state.
 
 **Section 2: crossing-ten subtraction**
+
 1. Begin independently at 13, one ten and three ones, with a subtraction request “Take away seven.”
 2. Route A “Open the ten”: exchange ten for ten ones. Let learner activate “Remove one” up to seven times or “Remove seven”, with explicit count ledger showing remaining and removed. After seven, six remain; display “13 − 7 = 6”.
 3. Route B “Reach ten first”: start a separate 13 representation and remove 3 ones, yielding 10. Then remove 4 from the ten, yielding 6. Show “13 − 3 = 10”, “10 − 4 = 6” and “3 + 4 = 7”. All amounts remain countable, and removing four from ten may visually open the bundle as necessary without representing a different original total.

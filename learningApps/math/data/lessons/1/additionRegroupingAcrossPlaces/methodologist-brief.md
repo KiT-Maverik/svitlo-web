@@ -68,4 +68,4 @@ Not specified. Grade 3 is the selected primary audience, not a grade limit on th
 
 ## Methodologist handoff
 
-**Draft, not approved.** The adjoining Screenwriter Content is *provisional*, not an official Methodologist sign-off. No React Scene, Question, Quiz, Score or production wiring is authorized by this Draft.
+**Draft, not approved.** The adjoining Screenwriter Content is _provisional_, not an official Methodologist sign-off. No React Scene, Question, Quiz, Score or production wiring is authorized by this Draft.

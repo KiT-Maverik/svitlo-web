@@ -20,14 +20,16 @@ This interactive place-value board links physical bundles, named hundreds/tens/o
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Guided placement / Section 3**
-1. Display the *original* expression 302−175 in labeled columns “Hundreds / Tens / Ones”. Beside/underneath it show source 3H,0T,2O for 302 and a clearly distinct “take away” reference 1H,7T,5O.
+
+1. Display the _original_ expression 302−175 in labeled columns “Hundreds / Tens / Ones”. Beside/underneath it show source 3H,0T,2O for 302 and a clearly distinct “take away” reference 1H,7T,5O.
 2. Ask “We need to remove five ones, but only two are loose. Where can the extra ones come from?” Show no tens at first. Native “Exchange one hundred” converts 3H0T2O→2H10T2O.
 3. “Exchange one ten” converts 2H10T2O→2H9T12O, updating the written column annotations and exact numeric ledger. Allow an explanation reveal for each step and optional replay.
 4. “Subtract ones” shows 12−5=7; “Subtract tens” shows 9−7=2; “Subtract hundreds” shows 2−1=1. Reveal the assembled 127 only after the steps or a user-selected “Show solution.”
-5. “Check addition” displays 127+175=302 in complete terms; may show group recomposition but text must be sufficient. If an invalid trial retained all ten tens, explain that one ten was *converted* to ten ones; “2H10T12O=312” cannot be the original 302.
+5. “Check addition” displays 127+175=302 in complete terms; may show group recomposition but text must be sufficient. If an invalid trial retained all ten tens, explain that one ten was _converted_ to ten ones; “2H10T12O=312” cannot be the original 302.
 6. Offer “Inspect a mistake”: a wrongly retained hundreds count or right-to-left digit subtraction yields an explicit value mismatch, with correction to actual exchange, not a red icon alone.
 
 **Independent transfer / Section 4**
+
 1. Start fresh with **403−186**, written and labeled by place. Prompt “The tens place has zero. What could you exchange first?” Initial help hidden, but available.
 2. Learner may perform both exchanges or request “Show first step,” getting 4H0T3O→3H10T3O→3H9T13O. Keep values readable after each step.
 3. Learner selects or types the ones/tens/hundreds remainders, with accessible alternatives and explanatory feedback. 13−6=7, 9−8=1, 3−1=2; assemble 217.

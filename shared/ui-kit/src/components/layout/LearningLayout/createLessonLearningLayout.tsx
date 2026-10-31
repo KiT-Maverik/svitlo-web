@@ -48,7 +48,15 @@ export function createLessonLearningLayout(bindings: LessonLearningLayoutBinding
           next: () => dispatch({ type: 'next' }),
           skip: () => dispatch({ type: 'skip' }),
         }}
-        preferences={<NavbarPreferences locale={locale} onLocaleChange={setLocale} mode={mode} systemMode={systemMode} onThemeChange={setMode} />}
+        preferences={
+          <NavbarPreferences
+            locale={locale}
+            onLocaleChange={setLocale}
+            mode={mode}
+            systemMode={systemMode}
+            onThemeChange={setMode}
+          />
+        }
         linkComponent={bindings.linkComponent}
       >
         {children}

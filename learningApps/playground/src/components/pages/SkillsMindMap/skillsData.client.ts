@@ -1,13 +1,15 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import {
-  flattenSkillNodes, languagePattern, slugPattern,
-  type SkillNode, type SkillNodeKind,
+  flattenSkillNodes,
+  languagePattern,
+  slugPattern,
+  type SkillNode,
+  type SkillNodeKind,
 } from './skillsMindMap.utils';
 
 /** Page-specific data transport. Static subject taxonomy; no learner mastery. */
 export function resolveSkillLanguage(value: string): string {
-  const item = DEFAULT_SUPPORTED_LANGUAGES.find(
-    entry => entry.locale === value || entry.language === value);
+  const item = DEFAULT_SUPPORTED_LANGUAGES.find(entry => entry.locale === value || entry.language === value);
   if (!item) throw new Error('Непідтримувана мова Skills: ' + value);
   return item.language;
 }
@@ -28,8 +30,8 @@ function string(value: unknown, path: string): string {
 /** The same typed graph may be consumed by a Mind Map or future analytical charts. */
 export function parseSkillAnalyticsPage(value: unknown): SkillNode[] {
   const page = record(value, 'page');
-  if (Object.keys(page).some(key => key !== 'domains') || !Array.isArray(page.domains) ||
-      !page.domains.length) throw new Error('Некоректний список доменів skillAnalytics');
+  if (Object.keys(page).some(key => key !== 'domains') || !Array.isArray(page.domains) || !page.domains.length)
+    throw new Error('Некоректний список доменів skillAnalytics');
   const ids = new Set<string>();
   function node(source: unknown, parent: SkillNodeKind | null, path: string): SkillNode {
     const data = record(source, path);
@@ -48,9 +50,12 @@ export function parseSkillAnalyticsPage(value: unknown): SkillNode[] {
       throw new Error('Некоректний Collection: ' + path);
     }
     const kind: SkillNodeKind = collection;
-    if ((parent === null && kind !== 'skillDomain') ||
-        (parent === 'skillGroup' && kind !== 'skill') ||
-        (parent === 'skill' || (parent === 'skillDomain' && kind === 'skillDomain'))) {
+    if (
+      (parent === null && kind !== 'skillDomain') ||
+      (parent === 'skillGroup' && kind !== 'skill') ||
+      parent === 'skill' ||
+      (parent === 'skillDomain' && kind === 'skillDomain')
+    ) {
       throw new Error('Некоректний порядок сутностей: ' + path);
     }
     if (kind === 'skill' && data.description === undefined) {
@@ -68,8 +73,7 @@ export function parseSkillAnalyticsPage(value: unknown): SkillNode[] {
     if (new Set(children.map(child => child.slug)).size !== children.length) {
       throw new Error('Повторювані slug дочірніх сутностей: ' + path);
     }
-    return { id, slug, kind, name,
-      ...(description === undefined ? {} : { description }), children };
+    return { id, slug, kind, name, ...(description === undefined ? {} : { description }), children };
   }
   const domains = page.domains.map((entry, index) => node(entry, null, 'domains.' + index));
   if (new Set(domains.map(domain => domain.slug)).size !== domains.length) {
@@ -81,7 +85,8 @@ export function parseSkillAnalyticsPage(value: unknown): SkillNode[] {
 
 /** Exactly one locale-specific request. No per-entity meta or locale traversal. */
 export async function loadSkillAnalyticsPage(
-  language: string, signal: AbortSignal,
+  language: string,
+  signal: AbortSignal,
   domainSlugs?: readonly string[],
 ): Promise<SkillNode[]> {
   if (!languagePattern.test(language) || resolveSkillLanguage(language) !== language) {
@@ -89,9 +94,13 @@ export async function loadSkillAnalyticsPage(
   }
   const response = await fetch('/data/pages/skillAnalytics/' + encodeURIComponent(language) + '.json', { signal });
   if (!response.ok) throw new Error('Не вдалося завантажити Skill Analytics (' + response.status + ')');
-  const domains = parseSkillAnalyticsPage(await response.json() as unknown);
-  if (domainSlugs && (!domainSlugs.length || new Set(domainSlugs).size !== domainSlugs.length ||
-      domainSlugs.some(slug => !slugPattern.test(slug) || !domains.some(domain => domain.slug === slug)))) {
+  const domains = parseSkillAnalyticsPage((await response.json()) as unknown);
+  if (
+    domainSlugs &&
+    (!domainSlugs.length ||
+      new Set(domainSlugs).size !== domainSlugs.length ||
+      domainSlugs.some(slug => !slugPattern.test(slug) || !domains.some(domain => domain.slug === slug)))
+  ) {
     throw new Error('Невідомі або повторювані домени Skill Analytics');
   }
   return domainSlugs ? domainSlugs.map(slug => domains.find(domain => domain.slug === slug)!) : domains;

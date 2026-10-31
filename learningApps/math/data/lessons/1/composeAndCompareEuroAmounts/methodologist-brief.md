@@ -48,6 +48,7 @@ Counting coins as euros regardless of value; five-euro note as five notes; assum
 **Instructional depth and hard exclusions:** Grade 2, 0–15 whole euros; legitimate €1 and €2 coins, €5 and €10 notes; no cents, rates, transactions, purchase totals, budgets, change, scoring, or automatically substituted locale-specific currency.
 
 **Verified numerical examples:**
+
 - €5+€1=€6.
 - €2+€2+€2=€6.
 - €2+€1=€3; no standard €3 coin.

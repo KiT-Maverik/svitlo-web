@@ -5,7 +5,9 @@ import { validateSkillConfig } from './buildSkillConfig.utils';
 import { validateSkillChildren } from './validateSkillChildren.utils';
 
 /** Build a Domain retaining both Group and direct Skill children. */
-export function buildSkillDomainConfig<const T extends SkillDomain_Config>(config: T): DeepReadonly<T & { readonly collection: Extract<Collection, 'skillDomain'> }> {
+export function buildSkillDomainConfig<const T extends SkillDomain_Config>(
+  config: T,
+): DeepReadonly<T & { readonly collection: Extract<Collection, 'skillDomain'> }> {
   validateSkillConfig(config);
   validateSkillChildren('SkillDomain', 'groups', config.groups, true);
   if (config.skills !== undefined) validateSkillChildren('SkillDomain', 'skills', config.skills, true);

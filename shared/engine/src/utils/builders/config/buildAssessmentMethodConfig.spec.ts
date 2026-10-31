@@ -5,9 +5,10 @@ import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/contracts/conten
 import type { AssessmentMethod_Config } from '../../../content';
 import { buildAssessmentMethodConfig } from './buildAssessmentMethodConfig.utils';
 
-const translations = () => Object.fromEntries(
-  DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'Assessment']),
-) as AssessmentMethod_Config['title'];
+const translations = () =>
+  Object.fromEntries(
+    DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'Assessment']),
+  ) as AssessmentMethod_Config['title'];
 const config = (): AssessmentMethod_Config => ({
   id: assessmentMethods_AssessmentMethod_Ids.application,
   title: translations(),
@@ -22,10 +23,14 @@ describe('Framework-independent Assessment Method config builder', () => {
   it('rejects missing and extra localized values', () => {
     const value = config();
     assert.throws(() => buildAssessmentMethodConfig({ ...value, title: { ...value.title, uk: '' } }), /non-empty uk/);
-    assert.throws(() => buildAssessmentMethodConfig({
-      ...value,
-      description: { ...value.description, unsupported: 'Extra' },
-    }), /unsupported languages/);
+    assert.throws(
+      () =>
+        buildAssessmentMethodConfig({
+          ...value,
+          description: { ...value.description, unsupported: 'Extra' },
+        }),
+      /unsupported languages/,
+    );
   });
   it('rejects malformed UUIDs', () => {
     assert.throws(

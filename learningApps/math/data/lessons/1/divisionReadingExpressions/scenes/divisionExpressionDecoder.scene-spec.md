@@ -32,14 +32,14 @@ Dividend = total, divisor = nonzero second operand, quotient = result. In 12÷3=
 ## INTERACTIVE OBJECTS, STATES AND RULES
 
 - Four **independent, prop-free** Scene entries; Section entry selection is internal/editorial, not a new React public `mode` prop or Resource_Config discriminator.
-- **Objects / presentation:** Stable large equation with semantic token focus/selection, two strongly labeled story panels, exact numeric group-role ledger, and lightweight countable groups. Every accessible role labels its *value and unit*, not just its visual location. All controls are native focusable role/number selectors, example/reveal/check controls and independent undo/reset.
+- **Objects / presentation:** Stable large equation with semantic token focus/selection, two strongly labeled story panels, exact numeric group-role ledger, and lightweight countable groups. Every accessible role labels its _value and unit_, not just its visual location. All controls are native focusable role/number selectors, example/reveal/check controls and independent undo/reset.
 - **State:** Per entry: immutable ordered numeric tokens (dividend, operator, divisor, equals, quotient), story interpretation, explicitly tagged group count/size/total, selected role or story, optional revealed count model, explanation/reset. No shared state between placements.
 - **Required invariants:** An expression's ordered operands and numerical truth never change when only the contextual interpretation changes. For 12÷3=4, sharing is 3 groups of 4; grouping is 4 groups of 3. For 20÷5=4, sharing is 5 groups of 4; grouping is 4 groups of 5. Divisor must be nonzero. All counters are counted exactly once. Any candidate result must be compared to the ORIGINAL expression, without changing its known operands to manufacture a true statement.
 - A wrong prediction is an explanatory unscored trial. A learner can reveal the full answer and every step without passing an interaction or speaking. No mastery, ScoreState, Question result, note event or reward.
 
 ## VISUAL / AUDIO / MEDIA DIRECTION
 
-Stable large equation with semantic token focus/selection, two strongly labeled story panels, exact numeric group-role ledger, and lightweight countable groups. Every accessible role labels its *value and unit*, not just its visual location. Lightweight HTML/SVG for group counts and a readable expression with stable labels; any transformation is user-triggered and can show immediate static states in reduced motion. No remote video/imagery, audio, animation-only meaning, WebGL or extra image asset necessary.
+Stable large equation with semantic token focus/selection, two strongly labeled story panels, exact numeric group-role ledger, and lightweight countable groups. Every accessible role labels its _value and unit_, not just its visual location. Lightweight HTML/SVG for group counts and a readable expression with stable labels; any transformation is user-triggered and can show immediate static states in reduced motion. No remote video/imagery, audio, animation-only meaning, WebGL or extra image asset necessary.
 
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 

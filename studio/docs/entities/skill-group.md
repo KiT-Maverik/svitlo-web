@@ -20,7 +20,6 @@ Each new-format SkillGroup has one English `Slug: lowerCamelCase` immediately be
 
 The Group config lives in `<PackageRoot>/data/skills/<domain>/<group>/<group>.data.ts`, imports child Skills from `./skills/index.ts` and embeds complete Skill entities in the `skills` dictionary, not UUID-only references. A Group does not have its own directory-level `index.ts`; only its `skills/index.ts` barrel exports immediate Skill Data.
 
-
 The shared-contract `SkillGroup_Config` has `slug`, `id`, localized `name` and a direct-child `skills` dictionary containing complete built Skill entities. It permits transitional optional `description: { methodological: string; frontend?: Record<LanguageCode, string> }` (reviewed English methodological text required for promotion; frontend absent or complete for all languages), but does not contain teaching order, evaluation evidence or student progress.
 
 - **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological meaning, any optional full frontend translations and parent/child placement.

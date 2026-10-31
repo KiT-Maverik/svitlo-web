@@ -8,7 +8,7 @@ Program dependence: None
 
 ## Educational purpose
 
-Progress from understanding the equals sign and constructing matching expressions to evaluating *complete* mathematical claims. Include the order relations < and > as true/false statements, not only numerical equalities.
+Progress from understanding the equals sign and constructing matching expressions to evaluating _complete_ mathematical claims. Include the order relations < and > as true/false statements, not only numerical equalities.
 
 ## Target audience
 

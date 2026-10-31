@@ -4,6 +4,7 @@
 **Lesson Content:** [Reading Every Minute](../content.md)
 **Methodologist:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [readMinute.data.ts](../../../../../data/skills/time/clock/skills/readMinute.data.ts)
 
 ## Educational purpose and intended web interaction
@@ -16,16 +17,16 @@ A learner-controlled 60-minute dial with five-minute anchor labels and interveni
 
 ## Exact factual models and required states
 
-| Preset/state | Model shown or described | Correct observation and explanatory result |
-|---|---|---|
-| **Whole hour** | 5:00, long hand at top (minute 00), short hand on 5 | Exact hour; field 00 |
-| **First fine ticks** | 5:03, long hand third small tick after 12, hour hand just past 5 | 5:03 uses two-digit field 03 |
-| **Quarter anchor** | 2:15, long hand on numeral 3 | 15 minutes after 2 |
-| **Two beyond quarter** | 2:17, long hand at tick 17, short hand between 2 and 3 | 2:17 = 15+2 after two |
-| **Beyond forty** | 7:42, long hand at tick 42 (two after 8), hour hand 7+42/60 toward 8 | 7:42 = 40+2 after seven |
-| **Almost new hour** | 11:59, minute hand at tick 59 and hour hand nearly 12 | Still 11:59, not 12:59 |
-| **Boundary** | 12:00, long hand back at top, hour hand on 12 | Time after one minute from 11:59 |
-| **New transfer** | 9:28, minute hand at tick 28 (three after 5), short hand between 9 and 10 | 9:28 = 25+3 after nine |
+| Preset/state           | Model shown or described                                                  | Correct observation and explanatory result |
+| ---------------------- | ------------------------------------------------------------------------- | ------------------------------------------ |
+| **Whole hour**         | 5:00, long hand at top (minute 00), short hand on 5                       | Exact hour; field 00                       |
+| **First fine ticks**   | 5:03, long hand third small tick after 12, hour hand just past 5          | 5:03 uses two-digit field 03               |
+| **Quarter anchor**     | 2:15, long hand on numeral 3                                              | 15 minutes after 2                         |
+| **Two beyond quarter** | 2:17, long hand at tick 17, short hand between 2 and 3                    | 2:17 = 15+2 after two                      |
+| **Beyond forty**       | 7:42, long hand at tick 42 (two after 8), hour hand 7+42/60 toward 8      | 7:42 = 40+2 after seven                    |
+| **Almost new hour**    | 11:59, minute hand at tick 59 and hour hand nearly 12                     | Still 11:59, not 12:59                     |
+| **Boundary**           | 12:00, long hand back at top, hour hand on 12                             | Time after one minute from 11:59           |
+| **New transfer**       | 9:28, minute hand at tick 28 (three after 5), short hand between 9 and 10 | 9:28 = 25+3 after nine                     |
 
 **Validity boundary:** Grade-3 conceptual and practical precision for 1-minute increments 00–59 only, using a 12-hour clock. Include small-tick counting, two-digit digital minutes, and instant-versus-duration distinction. Exclude 24-hour formatting, AM/PM determination from the clock alone, time arithmetic, seconds, variable clock precision and time-zone concerns.
 

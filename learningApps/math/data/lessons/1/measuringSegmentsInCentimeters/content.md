@@ -12,7 +12,7 @@ Implementation state: editorial proposal; no runtime Lesson, Scene or measuring 
 
 "**Count the spaces, start at zero, say the unit.**" The learner now uses the ruler correctly to find the length of an **existing** straight segment. The endpoint labels are not the answer by themselves: they represent a scale with **equal centimeter intervals**. When the ruler's 0 aligns with one endpoint, a segment reaching printed mark 4 spans 0→1, 1→2, 2→3, 3→4, hence **4 cm**.
 
-Learners must not infer that a 4-unit diagram on a phone measures four *physical* centimeters; the app is an exact **schematic model** with declared units, not an instrument calibrated to screen size. Physical measurement can be optional transfer with a real ruler.
+Learners must not infer that a 4-unit diagram on a phone measures four _physical_ centimeters; the app is an exact **schematic model** with declared units, not an instrument calibrated to screen size. Physical measurement can be optional transfer with a real ruler.
 
 ## LEARNER JOURNEY
 
@@ -30,7 +30,7 @@ No segment construction; drawing a new segment is the separate Skill `drawSegmen
 - **Purpose:** Link standard unit intervals to a correct number-with-unit result.
 - **Section contract:** `LessonSection_Config`, one vertical sequence.
 - **Ordered blocks:**
-  1. **text — existing:** "The first dot is beside **0**. The other dot is beside **4**. How many *spaces* of one centimeter fit between them? Let's count, then say a length with its unit."
+  1. **text — existing:** "The first dot is beside **0**. The other dot is beside **4**. How many _spaces_ of one centimeter fit between them? Let's count, then say a length with its unit."
   2. **scene — existing Resource type; custom proposed:** [Centimeter Segment Bench](./scenes/centimeterSegmentBench.scene-spec.md), stage A: fixed pre-drawn segment with model length **4 cm**, 0 mark exactly at first endpoint; second endpoint at 4. Learner reveals 0→1, 1→2, 2→3, 3→4 interval brackets separately and selects "4 cm", "5 cm", or "4 (no unit)".
   3. **markdown — existing:** "The segment has **4 equal centimeter spaces**. The marks are 0, 1, 2, 3, 4—**five printed labels, but four intervals**. We say **4 centimeters**, written **4 cm**."
 - **Feedback:** For 5 cm: "You counted both end marks. Count the gaps **between** them." For bare 4: "The number is correct, but a measurement also needs its unit." For 4 cm: "Yes: four one-centimeter intervals, from 0 to 4."
@@ -45,7 +45,7 @@ No segment construction; drawing a new segment is the separate Skill `drawSegmen
   1. **markdown — existing:** "Before reading: find the segment's starting dot, put the ruler's **0** beside it, and follow the straight line with the scale. Then read where the other dot lands."
   2. **scene — proposed [Centimeter Segment Bench](./scenes/centimeterSegmentBench.scene-spec.md):** stage B; preset segment **7 cm** long, ruler initially shifted so mark 2 is at the first endpoint. Use discrete actions "Move ruler right 1 mark" twice or "Align zero" (equivalent actions); after alignment, second endpoint maps to mark **7**, and learner counts 7 equal unit spaces. Response "7 cm" with optional "Show each space".
   3. **text — existing:** "When the **0** met the first dot, the other dot met **7**. That means **7 centimeters** from one endpoint to the other."
-- **Misconception feedback:** If learner selects the number at the far end *before* alignment: "We haven't started at 0. Move the scale first, then read." Never silently show an answer from a misaligned ruler as if valid.
+- **Misconception feedback:** If learner selects the number at the far end _before_ alignment: "We haven't started at 0. Move the scale first, then read." Never silently show an answer from a misaligned ruler as if valid.
 - **Transfer within Section:** A second preset segment **3 cm** long, correct alignment, endpoint mark 3. Length stays constant if the diagram moves vertically or line thickness changes.
 
 ### Section 3 — Spot the False Measure

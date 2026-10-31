@@ -117,7 +117,7 @@ Learners should first predict or justify their thinking without copying the orig
 
 The canonical [readBarChart.data.ts](../../../../data/skills/data/presentation/skills/readBarChart.data.ts) governs Skill meaning; its UUID, definition and multilingual translations are unchanged. Use apples=4, pears=2, plums=5, y-axis 0 to 6 in unit steps; 5 > 4 > 2. For transfer, use books read by three fictional readers or library shelf categories: red=3, blue=5, yellow=1 with a zero baseline and count unit 1. All charts have explicit unit names and source context.
 
-All runtime copy requires complete, authentic translation into every configured locale; this English editorial script is *not* runtime locale coverage. The proposed Scene's essential functions need nonvisual equivalence, mobile usability, semantic RTL, and offline availability. These are requirements for implementation review, not a declaration that they pass.
+All runtime copy requires complete, authentic translation into every configured locale; this English editorial script is _not_ runtime locale coverage. The proposed Scene's essential functions need nonvisual equivalence, mobile usability, semantic RTL, and offline availability. These are requirements for implementation review, not a declaration that they pass.
 
 ## Approvals and implementation boundary
 

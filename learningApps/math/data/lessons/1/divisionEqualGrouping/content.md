@@ -13,7 +13,7 @@ Introduce quotitive division as discovering the NUMBER of equal-sized groups tha
 
 Quotitive division knows total 12 and group size 3, and determines four groups, written 12÷3=4 because 3+3+3+3=12. This story differs from 12 shared AMONG 3 groups, where 12÷3=4 reports four in each. Both are valid interpretations with different units for divisor and quotient. If total 14 and fixed size 4, create 3 complete groups (12 counters) with 2 left over; no statement 14÷4=3 as an exact whole-number equality. Transfer 20 objects at 5 each gives 4 complete groups.
 
-Learners must identify the *unit* counted in the answer, not merely choose a numeral. Native controls permit fair grouping and inspection without dragging or reading a long word problem. The representation is not a scored quiz.
+Learners must identify the _unit_ counted in the answer, not merely choose a numeral. Native controls permit fair grouping and inspection without dragging or reading a long word problem. The representation is not a scored quiz.
 
 ## LEARNER JOURNEY
 

@@ -11,10 +11,15 @@ const packageRoot = path.join(root, 'learningApps/math');
 const taxonomyRoot = path.join(packageRoot, 'data/skills');
 const outputPath = path.join(packageRoot, 'docs/generated/skills/taxonomy.en.md');
 const source = fs.readFileSync(path.join(root, 'shared/contracts/src/types/languages.ts'), 'utf8');
-const registry = source.slice(source.indexOf('export const DEFAULT_SUPPORTED_LANGUAGES'),
-  source.indexOf('] as const satisfies readonly LanguageDefinition[];'));
+const registry = source.slice(
+  source.indexOf('export const DEFAULT_SUPPORTED_LANGUAGES'),
+  source.indexOf('] as const satisfies readonly LanguageDefinition[];'),
+);
 const locales = [...registry.matchAll(/language:\s*'([^']+)'/g)].map(match => match[1]);
-assert.ok(locales.length > 1 && new Set(locales).size === locales.length, 'Supported language registry must be readable');
+assert.ok(
+  locales.length > 1 && new Set(locales).size === locales.length,
+  'Supported language registry must be readable',
+);
 
 function sourceFiles(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
@@ -26,8 +31,9 @@ function sourceFiles(dir) {
 
 function prop(object, name) {
   assert.ok(ts.isObjectLiteralExpression(object));
-  const entries = object.properties.filter(p => ts.isPropertyAssignment(p) &&
-    (ts.isIdentifier(p.name) || ts.isStringLiteral(p.name)) && p.name.text === name);
+  const entries = object.properties.filter(
+    p => ts.isPropertyAssignment(p) && (ts.isIdentifier(p.name) || ts.isStringLiteral(p.name)) && p.name.text === name,
+  );
   assert.equal(entries.length, 1, 'Expected unique property ' + name);
   return entries[0].initializer;
 }
@@ -48,9 +54,13 @@ function readEntity(file) {
   assert.equal(ast.parseDiagnostics.length, 0, 'Invalid TypeScript in ' + file);
   let config;
   function visit(node) {
-    if (ts.isCallExpression(node) && ts.isIdentifier(node.expression) &&
+    if (
+      ts.isCallExpression(node) &&
+      ts.isIdentifier(node.expression) &&
       /^buildSkill(Domain|Group)?Config$/.test(node.expression.text) &&
-      node.arguments.length === 1 && ts.isObjectLiteralExpression(node.arguments[0])) {
+      node.arguments.length === 1 &&
+      ts.isObjectLiteralExpression(node.arguments[0])
+    ) {
       assert.ok(!config, 'Multiple entity configs in ' + file);
       config = node.arguments[0];
     }
@@ -75,10 +85,18 @@ function expectedLevel(file) {
   throw new Error('Unsupported entity source path: ' + file);
 }
 function generate(locale) {
-  const run = spawnSync(process.execPath, [
-    path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
-    '--package', 'learningApps/math', '--locale', locale, '--stdout',
-  ], { cwd: root, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });
+  const run = spawnSync(
+    process.execPath,
+    [
+      path.join(root, 'scripts/generate-skills-taxonomy.mjs'),
+      '--package',
+      'learningApps/math',
+      '--locale',
+      locale,
+      '--stdout',
+    ],
+    { cwd: root, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 },
+  );
   assert.equal(run.status, 0, 'Generation ' + locale + ' failed: ' + run.stderr);
   assert.equal(run.stderr, '');
   return run.stdout;
@@ -100,7 +118,11 @@ function parseMarkdown(view, locale) {
   assert.match(view, /^<!-- GENERATED FROM CODE; DO NOT EDIT\. -->/);
   assert.match(view, /^## SUMMARY$/m);
   assert.match(view, /^## DOMAINS$/m);
-  for (const [key, label] of [['domains', 'Domains'], ['groups', 'Groups'], ['skills', 'Skills']]) {
+  for (const [key, label] of [
+    ['domains', 'Domains'],
+    ['groups', 'Groups'],
+    ['skills', 'Skills'],
+  ]) {
     assert.match(view, new RegExp('^' + label + ': ' + expectedCounts[key] + '$', 'm'));
   }
   const headings = [...view.matchAll(/^(#{3,5}) ([^\r\n]+)$/gm)];

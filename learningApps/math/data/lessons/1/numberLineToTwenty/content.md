@@ -14,7 +14,7 @@ Treat a number line as a sequence of equally spaced numerical positions, not as 
 
 **What must become clear:** The number line has positions 0,1,…,20 in numerical order with one **equal-length unit interval** between adjacent integers. In conventional number-line coordinates, larger values lie to the right and smaller values to the left; the arrow labelled increasing and ordered tick list always determine meaning, regardless of interface RTL direction. From tick 10, two unit moves reach 12 (via 11); from 5, three unit moves reach 8 (5→6, 6→7, 7→8). Immediately before 10 is 9, immediately after 10 is 11. Strictly between 7 and 11 lie 8,9,10 (not the endpoints). Inside the shown 0–20 segment, no predecessor of 0 and no successor of 20 are displayed; this is a display boundary, not a claim numbers do not continue.
 
-**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains *why* an answer differs from the model.
+**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains _why_ an answer differs from the model.
 
 ## LEARNER JOURNEY
 
@@ -136,15 +136,15 @@ These documents include **English editorial source text only**. Full real transl
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Capability | Status | Owner / next work |
-| --- | --- | --- |
-| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract | Coding Agent builds Lesson later |
-| Generic `text`, `markdown`, `scene` renderer | Observed in Playground `LessonSectionContent.tsx` | New Scene is *not* provided by generic support |
-| Equal-Tick Trail and Between the Ticks | **Proposed** Scene specifications only | Editor approval, separate Scene design, implementation and own tests |
-| Genuine locale translations and RTL/nonvisual equivalence | Product requirements, not produced here | Localization and accessibility QA |
-| Complete downloaded-offline experience | Product target; not verified implemented | PWA/dependency integration and airplane-mode E2E |
-| Lesson Notes and unlock/storage | Planned, unverified runtime | Separate architecture and implementation |
-| Scored Questions, Quizzes, mastery and progress claims | Not authored | Separate Assessment Architect |
+| Capability                                                    | Status                                            | Owner / next work                                                    |
+| ------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
+| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract                      | Coding Agent builds Lesson later                                     |
+| Generic `text`, `markdown`, `scene` renderer                  | Observed in Playground `LessonSectionContent.tsx` | New Scene is _not_ provided by generic support                       |
+| Equal-Tick Trail and Between the Ticks                        | **Proposed** Scene specifications only            | Editor approval, separate Scene design, implementation and own tests |
+| Genuine locale translations and RTL/nonvisual equivalence     | Product requirements, not produced here           | Localization and accessibility QA                                    |
+| Complete downloaded-offline experience                        | Product target; not verified implemented          | PWA/dependency integration and airplane-mode E2E                     |
+| Lesson Notes and unlock/storage                               | Planned, unverified runtime                       | Separate architecture and implementation                             |
+| Scored Questions, Quizzes, mastery and progress claims        | Not authored                                      | Separate Assessment Architect                                        |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

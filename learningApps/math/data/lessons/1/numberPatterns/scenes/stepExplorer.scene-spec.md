@@ -23,13 +23,15 @@ Source learner voice: “Each time we jump, the number changes. If the jump stay
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Section 1, prediction placement**
-1. Display large terms “4   7   10   13   ?” and “What might come next if we make the same jump?” Offer choices **12 / 15 / 16 / 17** and an accessible “Show the jumps” action. Prediction is optional.
+
+1. Display large terms “4 7 10 13 ?” and “What might come next if we make the same jump?” Offer choices **12 / 15 / 16 / 17** and an accessible “Show the jumps” action. Prediction is optional.
 2. Reveal the first hop with a labeled difference “4 to 7: 3 more”; repeated actions reveal “7 to 10: 3 more” and “10 to 13: 3 more”. Do not autoplay through the reasoning without a chance to stop/inspect.
 3. Ask “What jump could we make now?” Then reveal the matching hop 13 to 16, with “13 + 3 = 16.”
 4. For 16: “Yes. We added 3 again.” For 15: “That is 2 more, but the earlier jumps were 3.” For 17: “That is 4 more, not 3.” For 12: “That goes backward. This row went up by 3.” An incorrect choice offers “Try again” and “Show me”; no grading, timer or congratulation screen.
 5. The child can review each already visible pair and can ask “Read the row” for an equivalent ordered textual description.
 
 **Section 2, exploration placement**
+
 1. Begin with a new independent state at 2, +4, with step controls visible. Learner uses “Next jump” three times to get 2, 6, 10, 14. Show each +4 visibly and in text.
 2. Offer “Increase” or “Decrease”, then 1/2/3/4 increments (or 1/2/3 decrements). On changing settings, announce that a new row starts and reset the current row to the chosen preset; never retain old differences.
 3. A clear preset “Try taking away 2” displays start 12 and step −2. Three advances make 12, 10, 8, 6; the same numeric gap is shown in each transition.
@@ -75,4 +77,4 @@ Use modest SVG/HTML: large numerals, stable number-line scale and discrete label
 - Generic scene Resource contract and renderer exist in Playground, but **this Scene is proposed and not implemented**; requires editor approval then Design Scene skill, self-contained prop-free component(s), localization and tests.
 - Coding Agent must verify locale context, independent Section placement and state initialization. No fabricated app API or runtime field is part of this spec.
 - Optional counters are editorially adjustable provided the numeric step/accessible equivalence is not lost.
-- Predictions and feedback are *instructional* and do not create a Quiz, score, a mastered Skill or persistent user analytics.
+- Predictions and feedback are _instructional_ and do not create a Quiz, score, a mastered Skill or persistent user analytics.

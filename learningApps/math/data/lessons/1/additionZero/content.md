@@ -29,6 +29,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Explain that 6+0=6 using six objects and an empty contribution.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “One tray has six counters. The other is empty. How many in both trays together?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Zero Addition Explorer](./scenes/zeroAdditionExplorer.scene-spec.md), Section 1 entry. Show six countable counters in one labeled tray and an empty tray labeled 0. Learner counts both, may reveal '6 from first, 0 from second' and sees six total.
 3. **markdown (supported):** “We combined six counters with no counters. None were added to the six, so there are still six.” Display the mathematical statement **6 + 0 = 6** as readable symbolic text.
@@ -52,6 +53,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Explain that 0+6=6 gives the same total despite different zero position.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “If the empty tray is written first, does the answer change?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Zero Addition Explorer](./scenes/zeroAdditionExplorer.scene-spec.md), Section 2 entry. Learner changes from 6+0 to 0+6, with exactly six objects still present. Accessible 'first tray zero; second six; total six' counters.
 3. **markdown (supported):** “The first addend is zero, but the second has six. Together they still make six. The place of zero doesn't make the counters disappear.” Display the mathematical statement **0 + 6 = 6** as readable symbolic text.
@@ -75,6 +77,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Distinguish an empty addend from an empty total and from an actual new contribution.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “What happens when we add zero to six? What if we add two instead?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Zero Addition Explorer](./scenes/zeroAdditionExplorer.scene-spec.md), Section 3 entry. Two independent trials begin with six: 6+0=6 and 6+2=8. Learner picks the added amount and sees exact resulting count without modifying the other trial.
 3. **markdown (supported):** “Zero adds no objects. Two adds two objects. The difference is the amount contributed, not a magical rule changing all totals to zero.” Display the mathematical statement **6 + 0 = 6; 6 + 2 = 8** as readable symbolic text.
@@ -98,6 +101,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Predict the sum for a fresh number (9+0 and 0+9) and verify without compulsory counting.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “What is nine plus zero? What about zero plus nine? What about zero plus zero?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Zero Addition Explorer](./scenes/zeroAdditionExplorer.scene-spec.md), Section 4 entry. Offer three independent cases, predict/reveal totals nine, nine and zero, with explicit text ledger and optional counter pictures.
 3. **markdown (supported):** “A number plus zero stays the number, whichever side zero is on. Zero plus zero is zero because neither addend contributes any objects.” Display the mathematical statement **9 + 0 = 9; 0 + 9 = 9; 0 + 0 = 0** as readable symbolic text.

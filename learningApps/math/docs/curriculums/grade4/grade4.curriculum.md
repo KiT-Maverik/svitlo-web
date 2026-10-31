@@ -50,56 +50,72 @@
    - **Target Skills:** `math.fractions.equivalent-visual` · `fbe8f4a0-92e8-4c98-83c0-3a0d6888bd38`.
 
 10. **Порівняння дробів зі спільним знаменником** — Обґрунтовує порівняння на спільній моделі.
-   - **Target Skills:** `math.fractions.same-denominator-model` · `78e25627-943c-4912-bde5-37d05a6045ac`.
+
+- **Target Skills:** `math.fractions.same-denominator-model` · `78e25627-943c-4912-bde5-37d05a6045ac`.
 
 ### 03. [Площа, периметр і геометрія](./grade-4/03-ploshcha-perymetr-i-heometriia/README.md)
 
 11. **Площа як покриття поверхні** — Пояснює площу через одиничні квадрати.
-   - **Target Skills:** `math.geomeasure.area-as-covering` · `6b0d5eb1-8d6f-448d-b1db-051779916e97`.
+
+- **Target Skills:** `math.geomeasure.area-as-covering` · `6b0d5eb1-8d6f-448d-b1db-051779916e97`.
 
 12. **Вимірювання площі клітинками** — Підраховує одиничні квадрати.
-   - **Target Skills:** `math.geomeasure.count-unit-squares` · `4c389e9b-24de-476f-8882-e973d812809a`.
+
+- **Target Skills:** `math.geomeasure.count-unit-squares` · `4c389e9b-24de-476f-8882-e973d812809a`.
 
 13. **Площа прямокутника** — Пов’язує площу з добутком довжин сторін.
-   - **Target Skills:** `math.geomeasure.rectangle-area-model` · `18927cbb-05bf-4f99-9d85-aaf60512417f`.
+
+- **Target Skills:** `math.geomeasure.rectangle-area-model` · `18927cbb-05bf-4f99-9d85-aaf60512417f`.
 
 14. **Площа складеної фігури** — Розбиває фігуру на частини та складає їхні площі.
-   - **Target Skills:** `math.geomeasure.composite-area` · `8dedc81b-faae-489e-9d3c-14331920224e`.
+
+- **Target Skills:** `math.geomeasure.composite-area` · `8dedc81b-faae-489e-9d3c-14331920224e`.
 
 15. **Периметр і площа — різні величини** — Порівнює фігури за площею й периметром та обирає правильне вимірювання.
-   - **Target Skills:** `math.geomeasure.perimeter-vs-area` · `96ab255c-a9f4-40aa-b072-e4f59790dfe5`; `math.geomeasure.area-perimeter-contrast` · `1c1b7595-df14-4cb6-aa67-0831d6c4425d`.
+
+- **Target Skills:** `math.geomeasure.perimeter-vs-area` · `96ab255c-a9f4-40aa-b072-e4f59790dfe5`; `math.geomeasure.area-perimeter-contrast` · `1c1b7595-df14-4cb6-aa67-0831d6c4425d`.
 
 16. **Невідома сторона за периметром** — Знаходить сторону прямокутника за відомим периметром.
-   - **Target Skills:** `math.geomeasure.unknown-side-from-perimeter` · `41da7699-fdbd-4872-bb37-615a456a92c3`.
+
+- **Target Skills:** `math.geomeasure.unknown-side-from-perimeter` · `41da7699-fdbd-4872-bb37-615a456a92c3`.
 
 17. **Паралельні й перпендикулярні прямі** — Розпізнає відношення прямих у плані чи рисунку.
-   - **Target Skills:** `math.geometry.parallel-perpendicular` · `983869b9-b9aa-4053-b0fb-be6c3430cff1`.
+
+- **Target Skills:** `math.geometry.parallel-perpendicular` · `983869b9-b9aa-4053-b0fb-be6c3430cff1`.
 
 18. **Гострий, прямий і тупий кут** — Класифікує кути за порівнянням із прямим.
-   - **Target Skills:** `math.geometry.angle-types` · `3b0bc126-23d9-4350-82f3-11df0c34b571`.
+
+- **Target Skills:** `math.geometry.angle-types` · `3b0bc126-23d9-4350-82f3-11df0c34b571`.
 
 19. **Грані, ребра та вершини** — Описує властивості куба й прямокутного паралелепіпеда.
-   - **Target Skills:** `math.geometry.spatial-solids-attributes` · `3eec373e-4fff-46e8-a601-fc91759934f0`.
+
+- **Target Skills:** `math.geometry.spatial-solids-attributes` · `3eec373e-4fff-46e8-a601-fc91759934f0`.
 
 ### 04. [Величини, інформація, аргументація](./grade-4/04-velychyny-informatsiia-arhumentatsiia/README.md)
 
 20. **Мілілітри та літри** — Порівнює одиниці місткості й виконує прості перетворення.
-   - **Target Skills:** `math.measure.milliliter` · `70f67012-b08c-4ef5-b45e-1fcc9a2dff3d`.
+
+- **Target Skills:** `math.measure.milliliter` · `70f67012-b08c-4ef5-b45e-1fcc9a2dff3d`.
 
 21. **Читання температури** — Зчитує невід’ємну температуру зі шкали.
-   - **Target Skills:** `math.measure.temperature-read` · `3987a9c5-a8df-44e1-86e4-373aeebd9d02`.
+
+- **Target Skills:** `math.measure.temperature-read` · `3987a9c5-a8df-44e1-86e4-373aeebd9d02`.
 
 22. **Масштабована діаграма** — Інтерпретує діаграму, в якій позначка означає декілька одиниць.
-   - **Target Skills:** `math.data.scaled-chart` · `97aeb6ee-f087-4793-a9e4-60129d11d974`.
+
+- **Target Skills:** `math.data.scaled-chart` · `97aeb6ee-f087-4793-a9e4-60129d11d974`.
 
 23. **Приклад і правило** — Відрізняє окремий випадок від загального твердження.
-   - **Target Skills:** `math.reasoning.distinguish-example-rule` · `a7426dcb-f817-41c5-bc9e-47244ea5301b`.
+
+- **Target Skills:** `math.reasoning.distinguish-example-rule` · `a7426dcb-f817-41c5-bc9e-47244ea5301b`.
 
 24. **Контрприклад** — Знаходить приклад, який спростовує хибне узагальнення.
-   - **Target Skills:** `math.reasoning.find-counterexample` · `dde55a58-c038-4375-9b1d-b9ecfb4a9219`.
+
+- **Target Skills:** `math.reasoning.find-counterexample` · `dde55a58-c038-4375-9b1d-b9ecfb4a9219`.
 
 25. **Інтегровані задачі на величини й дані** — Планує перевірку, співвідносить математичну модель із результатом.
-   - **Target Skills:** `math.problems.measurement-context` · `62d74e18-5c86-4038-b3c0-59f30a201da3`; `math.reasoning.check-reasonableness` · `d9a090cc-ab44-4e08-babd-357a9b7a3154`; `math.data.interpret-conclusion` · `57c71e4d-0641-42e2-856d-b2282f308374`.
+
+- **Target Skills:** `math.problems.measurement-context` · `62d74e18-5c86-4038-b3c0-59f30a201da3`; `math.reasoning.check-reasonableness` · `d9a090cc-ab44-4e08-babd-357a9b7a3154`; `math.data.interpret-conclusion` · `57c71e4d-0641-42e2-856d-b2282f308374`.
 
 ## Методичні межі й редакційні примітки
 
@@ -117,4 +133,3 @@
 - Алгоритми багатоцифрового множення й ділення, які не зводяться до поточних Skills множення/ділення на одноцифрове число.
 - Систематичні десяткові дроби та операції з ними; це свідомо поза чинними межами каталогу.
 - Розширений курс дробів, одиниць площі й перетворень мір, якщо вони будуть потрібні для обраної ширшої програми.
-

@@ -20,13 +20,13 @@ Use a closed conceptual bag with a completely disclosed inventory before predict
 
 ## Required observable states and correct explanations
 
-| State | Required representation | Mathematical truth |
-|---|---|---|
-| Bag A inventory | Exactly three tokens: B1 blue, B2 blue, R1 red. All contents visible before event prediction. | Possible colors are blue and red only. |
-| Bag A green event | Zero tokens satisfy green. | Impossible. |
-| Bag A blue-or-red event | Three of three tokens satisfy the disjunction. | Certain. |
-| Bag A red event | One of three tokens satisfies red; two do not. | Possible but not certain; no numeric probability teaching. |
-| Bag B inventory | Exactly three blue tokens, no other colors. | Blue certain; red impossible; blue or red certain. |
+| State                   | Required representation                                                                       | Mathematical truth                                         |
+| ----------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Bag A inventory         | Exactly three tokens: B1 blue, B2 blue, R1 red. All contents visible before event prediction. | Possible colors are blue and red only.                     |
+| Bag A green event       | Zero tokens satisfy green.                                                                    | Impossible.                                                |
+| Bag A blue-or-red event | Three of three tokens satisfy the disjunction.                                                | Certain.                                                   |
+| Bag A red event         | One of three tokens satisfies red; two do not.                                                | Possible but not certain; no numeric probability teaching. |
+| Bag B inventory         | Exactly three blue tokens, no other colors.                                                   | Blue certain; red impossible; blue or red certain.         |
 
 ## Interaction protocol (pedagogical, not an API)
 

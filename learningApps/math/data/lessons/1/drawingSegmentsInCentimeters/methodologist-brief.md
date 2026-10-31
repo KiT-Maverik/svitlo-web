@@ -37,7 +37,7 @@ Given a target such as **5 cm**, choose point A at the ruler's 0 tick, count uni
 
 ## Conceptual progression and dependencies
 
-1) Recall correct measurement of existing AB from 0 to 4 cm. 2) Show an empty ruler: to **make** a 4 cm segment, start at zero and mark the far dot at 4. 3) Let the learner choose target 3/5/7 and author the endpoints, then create a straight connection and verify. 4) Diagnose start-at-1 and bent-stroke counterexamples; finally construct an unseen 6 cm segment independently. Keep the creative construction challenge separate from prior 'what length is this existing segment?' task.
+1. Recall correct measurement of existing AB from 0 to 4 cm. 2) Show an empty ruler: to **make** a 4 cm segment, start at zero and mark the far dot at 4. 3) Let the learner choose target 3/5/7 and author the endpoints, then create a straight connection and verify. 4) Diagnose start-at-1 and bent-stroke counterexamples; finally construct an unseen 6 cm segment independently. Keep the creative construction challenge separate from prior 'what length is this existing segment?' task.
 
 ## Misconceptions, examples and boundaries
 

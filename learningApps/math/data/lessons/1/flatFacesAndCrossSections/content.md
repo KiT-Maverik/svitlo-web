@@ -11,7 +11,7 @@ Implementation: **editorial only**; custom Scene not built and no runtime Lesson
 
 ## INSTRUCTIONAL CONCEPT
 
-**"A flat piece of a solid is not the whole solid."** A cube has a square-shaped flat face, but a cube is not a square. A canlike cylinder has flat circular **disk** bases but its long exterior side is **curved**, not a planar rectangle. A virtual plane can pass through a solid and show a **flat region inside**, called a *plane section* or *cross-section*: that region may be a rectangle or circular disk, depending on the solid **and the cut direction**.
+**"A flat piece of a solid is not the whole solid."** A cube has a square-shaped flat face, but a cube is not a square. A canlike cylinder has flat circular **disk** bases but its long exterior side is **curved**, not a planar rectangle. A virtual plane can pass through a solid and show a **flat region inside**, called a _plane section_ or _cross-section_: that region may be a rectangle or circular disk, depending on the solid **and the cut direction**.
 
 This Lesson uses safe, imagined **virtual slicing only**. No physical knife, cutting of containers or adult materials. The everyday word "circle" often names a round filled shape, but the mathematical **circle** refers to the boundary while the **disk** includes its filled interior; explain this gently with a rim-versus-plate analogy, not advanced topology.
 
@@ -20,7 +20,7 @@ The source Skill includes both faces **and sections**; limiting the Lesson only 
 ## LEARNER JOURNEY
 
 1. Find one flat **face** on a cube or cuboid and compare its 2D boundary with the 3D object.
-2. Inspect a cylinder's flat disk bases and curved exterior; contrast sphere with no flat *exterior* face.
+2. Inspect a cylinder's flat disk bases and curved exterior; contrast sphere with no flat _exterior_ face.
 3. Predict which 2D filled region a **specific virtual plane** would reveal in a cuboid, cylinder or sphere; examine same solid before and after cut.
 4. Transfer to unfamiliar view and explain whether an offered flat shape is **an exterior face, a virtual section, or merely a silhouette**.
 
@@ -48,7 +48,7 @@ Each Section remains a single-column ordered list of typed Resource blocks; any 
   1. **text — available:** "A can has a flat round **top** and **bottom**. Is its wrapped-around side flat too? A ball looks round; does it have a flat outside face?"
   2. **scene — proposed:** [Faces and Virtual Sections](./scenes/facesAndVirtualSections.scene-spec.md), stage B. Ideal right circular cylinder: **top and bottom circular disk flat bases**, lateral side curved. Ideal sphere: **no flat exterior face**. Controls "Show disk face", "Show curved part", "Inspect sphere's outside" with explicit rule status. Use a rim-outline when naming the **circle** versus a filled flat disk for base area.
   3. **markdown — available:** "The cylinder's base is a **flat disk**: its outer rim is a **circle**. The long side wraps around and is **curved**, not a flat rectangle. A sphere has no flat exterior face at all. But that doesn't tell us what an imaginary flat slice through it might show."
-- **Feedback:** "The cylinder side *looks* rectangular in a drawing, but the actual side curves" if mistaken for flat. If sphere labeled as having a circular flat face: "A sphere has a round **outline** in a picture, not an outside flat disk."
+- **Feedback:** "The cylinder side _looks_ rectangular in a drawing, but the actual side curves" if mistaken for flat. If sphere labeled as having a circular flat face: "A sphere has a round **outline** in a picture, not an outside flat disk."
 - **Accessibility and direction:** A structured textual description lists outside areas and flat/curved property. Same semantic names in LTR and RTL. Rotate model among fixed views only on demand.
 
 ### Section 3 — A Virtual Flat Slice
@@ -107,4 +107,4 @@ Genuine translations required for exterior face, curved side, flat disk, circle 
 
 ## HANDOFF
 
-Methodologist reviews concept completeness and grade suitability; Screenwriter/editor verifies exact planar geometry and verbal cues; Scene Designer implements from *approved* specs later. Assessment Architect owns future scoring separately.
+Methodologist reviews concept completeness and grade suitability; Screenwriter/editor verifies exact planar geometry and verbal cues; Scene Designer implements from _approved_ specs later. Assessment Architect owns future scoring separately.

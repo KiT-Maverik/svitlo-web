@@ -33,7 +33,7 @@ Teach deliberate conversion among concrete objects, a quantified diagram, a verb
 
 ## Essential subject matter
 
-For ‘There are 8 beads and 3 are added’, equivalent forms are eight counters joined with three incoming counters; a diagram with known part 8 and incoming part 3 with unknown total; ‘eight, then three more’; and 8 + 3 = 11 if evaluated. For ‘There are 12 tokens and 5 are taken away’, a correct diagram begins with 12 and marks 5 as removed, leaving 7; numerical relation 12 − 5 = 7. A picture with eight counters and three *removed* cannot represent ‘three added’ merely because it features 8 and 3. Diagram bar lengths must follow equal-unit counts or explicit scales; shape/color/layout is not an independent mathematical fact.
+For ‘There are 8 beads and 3 are added’, equivalent forms are eight counters joined with three incoming counters; a diagram with known part 8 and incoming part 3 with unknown total; ‘eight, then three more’; and 8 + 3 = 11 if evaluated. For ‘There are 12 tokens and 5 are taken away’, a correct diagram begins with 12 and marks 5 as removed, leaving 7; numerical relation 12 − 5 = 7. A picture with eight counters and three _removed_ cannot represent ‘three added’ merely because it features 8 and 3. Diagram bar lengths must follow equal-unit counts or explicit scales; shape/color/layout is not an independent mathematical fact.
 
 ## Conceptual progression and dependencies
 
@@ -60,7 +60,7 @@ Not specified. This Lesson is standalone and Program-neutral.
 
 ## Open editorial decisions
 
-- This represents conversion *between* modes rather than a repeat of oneStepModel model construction; the editor must verify that transfer between representations is independently demonstrated.
+- This represents conversion _between_ modes rather than a repeat of oneStepModel model construction; the editor must verify that transfer between representations is independently demonstrated.
 - The generated Playground taxonomy view is a shared coordinator-owned artifact and may not yet include newly migrated SkillGroups; formal taxonomy approval must be independently confirmed. Do not mistake the presence of a canonical source Code object for a new editorial sign-off.
 - Methodologist/editor must explicitly approve this Draft Brief before Content or Scene specifications become formally approved; current parallel drafts are **provisional**.
 

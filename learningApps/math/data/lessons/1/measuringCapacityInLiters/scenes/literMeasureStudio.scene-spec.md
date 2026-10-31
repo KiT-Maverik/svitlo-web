@@ -19,8 +19,8 @@ Core learner phrase: "**A full reference is one liter. Count how many full liter
 - A reference at 0 L cannot execute a full-liter pour: require filling first, with explanatory feedback. A target at `v=C` is full; a further attempted full-liter pour is **blocked**, not silently clipped or consumed. When target has <1 L of space in a later extension, do not apply a full-liter step or claim an exact whole-liter measure; current Lesson uses only integral capacities and complete portions.
 - Stages: A `C_reference=1 L`; B target `C=3 L`; C both different-shaped targets `C_A=3 L`, `C_B=3 L`; D new target `C=4 L`. All model arithmetic is explicit and deterministic.
 - Visual height alone cannot be used to infer capacity in arbitrary-shaped containers. The model may show simple fill states as **labelled qualitative levels**; actual capacity values derive from the discrete calibrated volumes, **not** pixel height/shape calculations. The two differently shaped 3 L containers should be drawn plausibly as different volumes with intentionally equal internal model capacities and a clear 'schematic' label.
-- The prior `capacityConcept` Lesson established the distinction between **maximum possible volume** and amount **currently inside**. This one measures in *liters* and includes a pre-measure estimate. No fractional liter arithmetic, mL conversion, density, weight or physical calibration to actual on-screen containers is taught.
-- **Fairness:** Count repeated **full 1 L** transfers into an initially empty target. A partly filled reference is *not* a one-liter portion and must never increment "number of completed full 1 L transfers".
+- The prior `capacityConcept` Lesson established the distinction between **maximum possible volume** and amount **currently inside**. This one measures in _liters_ and includes a pre-measure estimate. No fractional liter arithmetic, mL conversion, density, weight or physical calibration to actual on-screen containers is taught.
+- **Fairness:** Count repeated **full 1 L** transfers into an initially empty target. A partly filled reference is _not_ a one-liter portion and must never increment "number of completed full 1 L transfers".
 - A digital interface may present fluid as icons or progress bars, but a screen reader gets **the same unit-bearing values and state transitions**. UI never implies that an empty 3 L container's capacity becomes 0 L.
 
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
@@ -60,7 +60,7 @@ Core learner phrase: "**A full reference is one liter. Count how many full liter
 
 1. New target **C=4 L**, contents0; same fixed reference1 L, contents0. No numeric target reveal before estimate. Coarse cue: "Clearly bigger than one reference vessel" with comparable shape illustration, not exact readout. Estimate choices2,3,4 L; short optional justification.
 2. On confirmed estimate, cycle "Fill 1 L reference" and "Pour full measure" four times. Target contents **0→1→2→3→4 L**; current reference returns to0 after each transfer. Count **four full 1 L transfers** and reveal "**Capacity 4 L**".
-3. At intermediate target contents3 L, ask: "Does the container have 3 L capacity or 3 L *inside*?" Correct: **contains3 L; capacity4 L**. No claim that the model water level reads a precise fraction based on pixels.
+3. At intermediate target contents3 L, ask: "Does the container have 3 L capacity or 3 L _inside_?" Correct: **contains3 L; capacity4 L**. No claim that the model water level reads a precise fraction based on pixels.
 4. After full, a fifth full reference pour must be refused without consuming volume; state remains target4 L and reference1 L if it was refilled. Message: "It is already full. A further liter cannot be added."
 5. Feedback if estimate2: two more full portions than expected; estimate3: one more; estimate4: matches; reasoning refers to the observed full-liter portions, no grades. Reset to blank new target with no leaked previous answer.
 6. A new container style, changed language or increased zoom may not alter volume states or true capacity. No external fluid/pour animation required.
@@ -82,7 +82,7 @@ Minimal high-contrast schematic marked reference and target vessels with distinc
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 
 - All visible and screen-reader messages, unit expressions, button labels, prediction choices, feedback, status, "full/empty/contains/can hold" and future Notes need **genuine translations** into every supported locale, including correct singular/plural for liter and code **L**. Missing translations block implementation rather than falling back silently.
-- UI may be semantic RTL but no diagram mirror may change transferred quantities or which container has C=3/4. Do not reverse the numerical relation of *maximum capacity* and *current contents*.
+- UI may be semantic RTL but no diagram mirror may change transferred quantities or which container has C=3/4. Do not reverse the numerical relation of _maximum capacity_ and _current contents_.
 - A nonvisual learner can choose an estimate from coarse cues, fill and pour through native labeled buttons, inspect a transfer history and receive the exact same measured capacity at the same instructional point. No audio, drag, fine pour, color-only fill bar, timed action or water simulation required.
 - Screen-reader announcements should report meaningful changes once per action; keyboard/switch focus, large touch controls, 200% text, reduced motion, WCAG 2.2 AA, mobile and low-end device equivalence, and full offline operation after verified package/locale download are all **future release acceptance requirements**, not existing platform assertions.
 

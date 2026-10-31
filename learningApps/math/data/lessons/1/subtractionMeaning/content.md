@@ -10,7 +10,7 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-**Subtraction can answer three different questions using one number relationship.** We keep the values nine, four and five stable while changing the story, so a child sees the difference between what the numbers *do* in the situation and the operation written as 9 − 4 = 5. We do not present comparing groups as secretly removing counters. This avoids teaching subtraction as just an action of taking objects away.
+**Subtraction can answer three different questions using one number relationship.** We keep the values nine, four and five stable while changing the story, so a child sees the difference between what the numbers _do_ in the situation and the operation written as 9 − 4 = 5. We do not present comparing groups as secretly removing counters. This avoids teaching subtraction as just an action of taking objects away.
 
 ## LEARNER JOURNEY
 

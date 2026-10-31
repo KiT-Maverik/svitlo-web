@@ -22,12 +22,12 @@ Use morning → afternoon → evening → night → next morning. Activities are
 
 ## Required observable states
 
-| State | Data or model facts | Correct interpretation |
-|---|---|---|
-| Initial | Four named periods, focus on morning; night leads back to morning. | Cycle has four recurring states. |
-| Evening forward | Evening selected; next step highlights night. | Evening precedes night. |
-| Night forward | Night selected; next step highlights morning. | Night precedes next morning. |
-| Independent transfer | Evening chosen as a start; three hidden successors. | Next states are night, morning, afternoon. |
+| State                | Data or model facts                                                | Correct interpretation                     |
+| -------------------- | ------------------------------------------------------------------ | ------------------------------------------ |
+| Initial              | Four named periods, focus on morning; night leads back to morning. | Cycle has four recurring states.           |
+| Evening forward      | Evening selected; next step highlights night.                      | Evening precedes night.                    |
+| Night forward        | Night selected; next step highlights morning.                      | Night precedes next morning.               |
+| Independent transfer | Evening chosen as a start; three hidden successors.                | Next states are night, morning, afternoon. |
 
 ## Required learning interaction
 

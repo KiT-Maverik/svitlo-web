@@ -42,10 +42,10 @@ Before implementing a Domain with **zero Groups**, inspect and verify the `@svit
 
 Every runtime entity must be produced through its designated builder, using the real shared-engine types. Do not hand-author the `collection` discriminator or `fileLocation` (the latter is supplied by the source registry).
 
-| Entity | Authored configuration | Builder | References |
-| --- | --- | --- | --- |
-| Skill | `id`, `name` | `buildSkillConfig` | None |
-| SkillGroup | `id`, `name`, `skillIds` | `buildSkillGroupConfig` | Immediate child Skill IDs |
+| Entity      | Authored configuration                        | Builder                  | References                                                      |
+| ----------- | --------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
+| Skill       | `id`, `name`                                  | `buildSkillConfig`       | None                                                            |
+| SkillGroup  | `id`, `name`, `skillIds`                      | `buildSkillGroupConfig`  | Immediate child Skill IDs                                       |
 | SkillDomain | `id`, `name`, `groupIds`, optional `skillIds` | `buildSkillDomainConfig` | Either immediate SkillGroup IDs or direct Skill IDs, never both |
 
 The current contracts do **not** contain `description`. The explanatory prose in the permanent Markdown taxonomy is editorial; **never invent** a runtime field or copy a description into TypeScript without an approved engine contract change. Likewise, no mastery evidence, assessment rules, scores, learner records, grade, prerequisites, question references, or UI state belong to these configs.
@@ -60,7 +60,7 @@ The current contracts do **not** contain `description`. The explanatory prose in
 
 Create or extend only the selected taxonomy subtree in the **specific textbook package**:
 
-~~~text
+```text
 <PackageRoot>/
 ├── docs/
 │   └── skills/
@@ -84,7 +84,7 @@ Create or extend only the selected taxonomy subtree in the **specific textbook p
                         ├── <skillCamelCase>.data.ts
                         ├── index.ts         # Skills in THIS Group ONLY
                         └── index.ids.ts          # Skill UUIDs in THIS Group ONLY
-~~~
+```
 
 Repeat Domain, Group, and Skill directories strictly according to `docs/skills/taxonomy.md`. Names are **camelCase** directory and filename segments; entity Data files use `*.data.ts`, ID literals/maps use `*.ids.ts`, and two index surfaces are named `index.ts` / `index.ids.ts`.
 
@@ -98,12 +98,12 @@ Use the target package's actual alias/export configuration for imports (`@svitlo
 
 ### Data barrels: own level only, never recursively flatten children
 
-| File | It may export | It MUST NOT export |
-| --- | --- | --- |
-| `skillsTaxonomy/index.data.ts` | Domain Data from each direct Domain | Group or Skill Data; recursive child `export *` |
-| `skillsTaxonomy/<domain>/index.data.ts` | That Domain Data | Any Group/Skill Data |
-| `skillsTaxonomy/<domain>/<group>/index.data.ts` | That Group Data | Any Skill or Domain Data |
-| `skillsTaxonomy/<domain>/<group>/skills/index.data.ts` | This Group's individual Skill Data | Group, Domain, or unrelated Group's Skills |
+| File                                                   | It may export                       | It MUST NOT export                              |
+| ------------------------------------------------------ | ----------------------------------- | ----------------------------------------------- |
+| `skillsTaxonomy/index.data.ts`                         | Domain Data from each direct Domain | Group or Skill Data; recursive child `export *` |
+| `skillsTaxonomy/<domain>/index.data.ts`                | That Domain Data                    | Any Group/Skill Data                            |
+| `skillsTaxonomy/<domain>/<group>/index.data.ts`        | That Group Data                     | Any Skill or Domain Data                        |
+| `skillsTaxonomy/<domain>/<group>/skills/index.data.ts` | This Group's individual Skill Data  | Group, Domain, or unrelated Group's Skills      |
 
 Use explicit, named, locally scoped exports in stable/alphabetical order; no `export *`, recursive barrels, indirect export of nested Data, side-effect imports, or eager aggregation of the full taxonomy. Export **only the entity collection represented by that level**. Consumers obtain all Domains from the root Data barrel; obtain a particular Group via its own Group Data barrel; obtain the Skills belonging to a Group via that Group's Skills Data barrel. A **global list of all Group or Skill Data** is not silently supplied by the root barrel.
 
@@ -128,14 +128,14 @@ The distinction is deliberate: **Data barrels are same-level**, while an **ID ma
 
 Example of the **key style only** (not a complete `name` object; production must include every supported key):
 
-~~~ts
+```ts
 name: {
   en: 'Addition',
   uk: 'Додавання',
   pl: 'Dodawanie',
   be: 'Складаньне',
 }
-~~~
+```
 
 Use the repo's configured string quote preference independently of the **no-quotation language keys** rule.
 

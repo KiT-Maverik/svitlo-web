@@ -8,7 +8,7 @@ Program dependence: None
 
 ## Educational purpose
 
-Introduce **area as the amount of plane region covered**, not the length around its outside. Children first use equal square tiles to cover a simple region *exactly*, without gaps or overlaps, then compare regions by square counts. This is a prerequisite for reasoning about pieces that can be rearranged while preserving total area.
+Introduce **area as the amount of plane region covered**, not the length around its outside. Children first use equal square tiles to cover a simple region _exactly_, without gaps or overlaps, then compare regions by square counts. This is a prerequisite for reasoning about pieces that can be rearranged while preserving total area.
 
 ## Target audience
 

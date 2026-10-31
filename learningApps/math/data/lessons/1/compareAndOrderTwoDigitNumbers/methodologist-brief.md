@@ -49,6 +49,7 @@ The pedagogically related Skills remain independently assessable objects with th
 **Target depth and exclusions:** Grade 2 values 10–99, small two- to four-card sets, repeated equal values allowed if introduced, actual tens-and-ones evidence. No hundreds-place generalization, decimals, negatives, rounding or speed sorting drills.
 
 **Exact examples:**
+
 - 47=40+7<50+2=52; 29<31.
 - 63<68; 72=72.
 - 24<29<42<71.
@@ -65,7 +66,6 @@ English is editorial source copy, not a completed locale implementation. For the
 - Canonical Skill source files in the Target Skills section, preserved byte-for-byte in the earlier migration from Mathematics `main`.
 - [Lesson Editorial Architecture](../../../../../../studio/docs/architecture/lesson-editorial-document.md), [Learning Philosophy](../../../../../../studio/docs/architecture/learning-experience-philosophy.md).
 - [Internationalization/Accessibility](../../../../../../studio/docs/architecture/internationalization-and-accessibility.md) and [Offline Architecture](../../../../../../studio/docs/architecture/offline-first-and-device-compatibility.md).
-
 
 No named national Curriculum or attainment standards are claimed.
 

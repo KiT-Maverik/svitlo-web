@@ -33,11 +33,11 @@ Establish that a numerical expression represents a quantitative calculation and 
 
 ## Essential subject matter
 
-An expression contains numerals and mathematical operations and *denotes a value* without asserting a comparison to another value. `7 + 4` is an expression; `7 + 4 = 11` is a numerical equality (statement). `9 − 3` describes starting with nine and removing three; `3 − 9` does not represent that situation. Examples within 0–20 include `6 + 2`, `10 − 4`, `8 + 5`; a verbal phrase ‘five less than twelve’ means 12 − 5, not 5 − 12. Parentheses may appear in canonical expressions, but formal order-of-operations, nested grouping, variables, multi-operation precedence, and expression simplification are not outcomes in this introductory Lesson.
+An expression contains numerals and mathematical operations and _denotes a value_ without asserting a comparison to another value. `7 + 4` is an expression; `7 + 4 = 11` is a numerical equality (statement). `9 − 3` describes starting with nine and removing three; `3 − 9` does not represent that situation. Examples within 0–20 include `6 + 2`, `10 − 4`, `8 + 5`; a verbal phrase ‘five less than twelve’ means 12 − 5, not 5 − 12. Parentheses may appear in canonical expressions, but formal order-of-operations, nested grouping, variables, multi-operation precedence, and expression simplification are not outcomes in this introductory Lesson.
 
 ## Conceptual progression and dependencies
 
-Start with concrete joined/removed groups, ask the learner to describe the operation aloud, compare the expression with the *equation that includes its value*, and write a corresponding expression from a fresh verbal relationship. Include reversed subtraction as the discriminating nonexample; vary the story context for independent transfer.
+Start with concrete joined/removed groups, ask the learner to describe the operation aloud, compare the expression with the _equation that includes its value_, and write a corresponding expression from a fresh verbal relationship. Include reversed subtraction as the discriminating nonexample; vary the story context for independent transfer.
 
 ## Misconceptions, examples and boundaries
 

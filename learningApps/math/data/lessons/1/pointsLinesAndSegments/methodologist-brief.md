@@ -38,7 +38,7 @@ A geometric point has **position but no size**; any visible dot is a marker. An 
 
 ## Conceptual progression and dependencies
 
-1) Contrast a dot and line mark, establish that drawing symbols are models. 2) Use observable bend/straight and join properties to separate curve versus polyline. 3) Show an extendable straight line and trim to a segment with fixed endpoints. 4) Have the learner construct AB and name both endpoints; vary orientation and compare the same segment to a bent route between endpoints. Conceptual distinction comes before construction, and construction before centimeter measurements in another Lesson.
+1. Contrast a dot and line mark, establish that drawing symbols are models. 2) Use observable bend/straight and join properties to separate curve versus polyline. 3) Show an extendable straight line and trim to a segment with fixed endpoints. 4) Have the learner construct AB and name both endpoints; vary orientation and compare the same segment to a bent route between endpoints. Conceptual distinction comes before construction, and construction before centimeter measurements in another Lesson.
 
 ## Misconceptions, examples and boundaries
 

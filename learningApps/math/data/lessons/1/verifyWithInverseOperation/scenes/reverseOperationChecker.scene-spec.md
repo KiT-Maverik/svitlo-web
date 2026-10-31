@@ -19,7 +19,7 @@ A calculation can be checked by performing a **different, inverse operation** th
 
 **Entry D (Section 4), independent transfer.** Present **68 − 19 = 49** with the reverse calculation absent. The learner can enter an expression through a keyboard-friendly simple numeric/operator chooser or select accessible symbolic parts, then optionally reveal hint 1: “Restore what was removed” and hint 2: “Start with forty-nine and add nineteen.” Correct verification is **49 + 19 = 68**. For choosing 49−19, say “That removes more and cannot rebuild the original sixty-eight.” The learner may reveal the complete mathematical explanation without a score. Reset returns to the initial blank check.
 
-**Optional extension:** For a learner who already understands exact division, 6 × 4 = 24 can be checked by 24 ÷ 4 = 6. It is a *proposal for a later optional mode*, not required content or automatic grade prerequisite; do not implement it by default.
+**Optional extension:** For a learner who already understands exact division, 6 × 4 = 24 can be checked by 24 ÷ 4 = 6. It is a _proposal for a later optional mode_, not required content or automatic grade prerequisite; do not implement it by default.
 
 ## Objects and state invariants
 

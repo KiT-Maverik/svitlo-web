@@ -11,9 +11,9 @@ Implementation: editorial only, with proposed custom Scene; no runtime Lesson da
 
 ## INSTRUCTIONAL CONCEPT
 
-**"A scale reading needs the mark *and* the unit."** A balance that tips tells us which object has greater mass, but not **how many grams**. A calibrated **mass scale** with numbered marks and equal spaces can produce a numeric reading. This simple schematic instrument reads grams (g): large ticks at **0, 100, 200, 300, 400, 500, 600 g**, with an unlabeled **midpoint tick** at **50 g** between each pair. The child first discovers the 100 g spacing, then interprets the in-between marks to find values like **350 g**, rather than merely reciting visible printed numerals.
+**"A scale reading needs the mark _and_ the unit."** A balance that tips tells us which object has greater mass, but not **how many grams**. A calibrated **mass scale** with numbered marks and equal spaces can produce a numeric reading. This simple schematic instrument reads grams (g): large ticks at **0, 100, 200, 300, 400, 500, 600 g**, with an unlabeled **midpoint tick** at **50 g** between each pair. The child first discovers the 100 g spacing, then interprets the in-between marks to find values like **350 g**, rather than merely reciting visible printed numerals.
 
-The scale is **zeroed when empty**. An illustrative +100 g offset is a measurement error, not added object mass. The Scene helps identify the error and reset/tare the instrument before reporting a trustworthy result. A real spring scale relates a physical force to a *mass-calibrated display under specified conditions*; this Stage 3 Lesson focuses on reading an ideal gram-calibrated scale, not the physics of force and mass or device calibration.
+The scale is **zeroed when empty**. An illustrative +100 g offset is a measurement error, not added object mass. The Scene helps identify the error and reset/tare the instrument before reporting a trustworthy result. A real spring scale relates a physical force to a _mass-calibrated display under specified conditions_; this Stage 3 Lesson focuses on reading an ideal gram-calibrated scale, not the physics of force and mass or device calibration.
 
 ## LEARNER JOURNEY
 
@@ -46,7 +46,7 @@ Each reveal is learner-controlled; numerical values never become a pass/fail bad
   1. **text — currently supported:** "Between **300 g** and **400 g** there is a small tick in the middle. If the big gap is **100 g**, how much is half the gap? What does the pointer mean when it stops there?"
   2. **scene — proposed:** [Graduated Mass Scale](./scenes/graduatedMassScale.scene-spec.md), placement B. Fixed scale 0–600 g, 100 g major interval and one intermediate 50 g tick per adjacent pair. Pointer **350 g** at exactly halfway in the 300–400 span. Learner can bracket 300→350→400, select "300 g", "350 g" or "400 g", then reveal an **equal-length pair of 50 g subintervals**.
   3. **markdown — currently supported:** "We split the gap from **300 to 400** into two equal parts: **300→350** and **350→400**, each **50 grams**. The pointer is halfway, so we read **350 g**. The little tick has a value even without a printed number."
-- **Feedback:** For 300: "The pointer is **after** the 300 mark, halfway to 400." For 400: "It has not reached the next big mark." For 350 g: "We counted two equal halves of one 100 g interval." If the child says the short tick is 1 g: "The *size* of an interval comes from the numbered scale, not from how small the tick looks."
+- **Feedback:** For 300: "The pointer is **after** the 300 mark, halfway to 400." For 400: "It has not reached the next big mark." For 350 g: "We counted two equal halves of one 100 g interval." If the child says the short tick is 1 g: "The _size_ of an interval comes from the numbered scale, not from how small the tick looks."
 - **Access:** Textual interval summary before reveal says "pointer at midway tick between printed 300 and 400" (contains enough information to solve). A "Show major interval" control reveals all 100 g labels without requiring pointing at tiny marks.
 - **Planned Note:** "Halfway across a 100 g interval is 50 g more."
 

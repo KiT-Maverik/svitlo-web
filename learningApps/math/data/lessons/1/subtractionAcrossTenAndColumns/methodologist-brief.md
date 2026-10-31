@@ -67,4 +67,3 @@ Not specified. The two concepts form a coherent independent Lesson for learners 
 ## Methodologist handoff
 
 Draft for explicit editor approval. After approval, the Screenwriter may plan a concrete and symbolic comparison showing why exchanging tens for ones preserves value, and then link it to a written method. No preordained widget, test score, or formal mastery certification is implied.
-

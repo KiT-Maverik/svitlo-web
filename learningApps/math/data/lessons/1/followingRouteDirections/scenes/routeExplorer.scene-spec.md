@@ -7,7 +7,7 @@ Methodologist objectives: [Draft Brief](../methodologist-brief.md) — give and 
 
 ## LEARNER PURPOSE AND CONCEPT
 
-A route is an ordered sequence of state changes. The learner sees, predicts and manipulates the explorer's *heading* separately from its *position*, watches an instruction tape applied in order, then gives new instructions for a target. Changing initial heading or order can change the destination even when command words do not change.
+A route is an ordered sequence of state changes. The learner sees, predicts and manipulates the explorer's _heading_ separately from its _position_, watches an instruction tape applied in order, then gives new instructions for a target. Changing initial heading or order can change the destination even when command words do not change.
 
 Core learner voice: "**A turn changes where I face. Forward changes where I am. The next instruction uses my new direction.**"
 
@@ -33,7 +33,7 @@ Core learner voice: "**A turn changes where I face. Forward changes where I am. 
 
 1. Fixed start (2,2) facing north; tape with three commands: **Forward, Right, Forward**. Before each command, allow prediction of the new heading or square.
 2. Step 1: forward → **(2,1), north**. Step 2: right → **(2,1), east**. Step 3: forward → **(3,1), east**.
-3. Show readable log after each step. On request, compare arrow *before/after* one command.
+3. Show readable log after each step. On request, compare arrow _before/after_ one command.
 4. For destination (2,0): "That would mean forward twice with no turn. The turn made the last step go right." For (3,2): "The first forward already took us up a square."
 5. "Undo" restores both coordinates and heading from the previous logged state; "Replay" and reset produce identical transitions.
 
@@ -42,7 +42,7 @@ Core learner voice: "**A turn changes where I face. Forward changes where I am. 
 1. Same tape **Forward, Right, Forward**, same starting (2,2), but **east** start heading. Prediction: "Will we finish where we did before?"
 2. Progression: (2,2) east → **(3,2) east** → **(3,2) south** → **(3,3) south**. Display prior (3,1) north-start finish only as an optional textual comparison.
 3. Restore original north heading and instead reorder tape **Right, Forward, Forward**. Progression: (2,2) north → **(2,2) east** → **(3,2) east** → **(4,2) east**.
-4. Explanation: "We changed the start arrow once, then changed command order. Both changes led elsewhere in these examples." Not a claim that any route reorder *always* changes its finish.
+4. Explanation: "We changed the start arrow once, then changed command order. Both changes led elsewhere in these examples." Not a claim that any route reorder _always_ changes its finish.
 5. Both comparison paths remain reviewable by textual ordered state lists, even if lines visually overlap.
 
 ### Placement D — Author and Debug a Route (Section 4)
@@ -50,7 +50,7 @@ Core learner voice: "**A turn changes where I face. Forward changes where I am. 
 1. New preset start (1,3), heading north, target square (2,2). Command editor has insert, remove, move up/down, and reset buttons; optional reorder drag never required.
 2. Maximum six commands, using the exact three allowed actions. One valid tape is **Forward, Right, Forward**, ending (2,2) east.
 3. Execute stepwise or review full trace with each state. Do **not** compare the tape to one hard-coded answer: other sequences reaching (2,2) are valid when **only destination** is requested.
-4. If an attempt goes to a different square, show **first divergent command** only relative to a displayed sample route *when comparison is requested*, without claiming other valid routes are wrong; otherwise describe the resulting position and ask which action to revise.
+4. If an attempt goes to a different square, show **first divergent command** only relative to a displayed sample route _when comparison is requested_, without claiming other valid routes are wrong; otherwise describe the resulting position and ask which action to revise.
 5. Edge example: at (4,2) facing east, "Forward" would leave grid. Action is not applied; explain: "No square lies beyond the right edge. Turn or change your route." Do not silently clamp while marking a command successful.
 6. Optional new prompt "End at target facing map right" may introduce heading as an explicit extra condition; do not evaluate heading when the only target criterion is square location.
 
@@ -70,7 +70,7 @@ Use stable SVG/grid, distinguish heading arrow from move trail. A turn animation
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 
 - Translate every command, prediction, button, heading/destination explanation, status and screen-reader label for all supported locales; missing translations block release.
-- **RTL is not a mirror of the map coordinate system:** "right turn" is clockwise relative to avatar heading in *every* locale. If the entire diagram is mirrored for presentation, mathematical mapping and recorded results must be consistently remapped and tested; safer default is to preserve the fixed instructional map and mirror only UI layout/direction.
+- **RTL is not a mirror of the map coordinate system:** "right turn" is clockwise relative to avatar heading in _every_ locale. If the entire diagram is mirrored for presentation, mathematical mapping and recorded results must be consistently remapped and tested; safer default is to preserve the fixed instructional map and mirror only UI layout/direction.
 - All actions available by buttons/keyboard/switch; no forced drag/voice/precision. Visible focus, large touch targets, line/shape cues independent of color, no timing.
 - For nonvisual learners, the log says e.g. "At middle square (row 3, column 3), facing map top; after forward, row 2, column 3, same facing." Rows/columns in descriptions are 1-indexed (not the internal 0-index coordinates); keep that distinction explicit in tests and localized copy.
 - Respect reduced motion, reading order, live-region announcement throttling, mobile zoom and large fonts. All outcomes and explanations work fully offline after selected locale and Scene assets are downloaded.
@@ -79,9 +79,9 @@ Use stable SVG/grid, distinguish heading arrow from move trail. A turn animation
 
 1. From (2,2) north, **Right** gives **(2,2) east** (no movement); **Forward** from the original reset gives **(2,1) north**.
 2. From (2,2) north, Forward→Right→Forward ends **(3,1) east** with exact intermediate states in this specification.
-3. From (2,2) east, the *same tape* ends **(3,3) south**.
+3. From (2,2) east, the _same tape_ ends **(3,3) south**.
 4. From (2,2) north, Right→Forward→Forward ends **(4,2) east**.
-5. From (1,3) north, Forward→Right→Forward reaches target **(2,2)**. Any different valid command tape reaching the target also receives explanatory success for *destination only*.
+5. From (1,3) north, Forward→Right→Forward reaches target **(2,2)**. Any different valid command tape reaching the target also receives explanatory success for _destination only_.
 6. At (4,2) east, invalid Forward leaves state unchanged and tells the learner **why**.
 7. Undo/replay/reset are deterministic; distinct placement state never leaks into another Section.
 8. Keyboard/RTL/nonvisual/reduced-motion/mobile/offline modes present the same route math, no color or spatial pointer dependency.

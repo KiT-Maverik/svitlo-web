@@ -23,9 +23,7 @@ describe('Components', () => {
     it('should render markdown content using the locale and RTL direction', async () => {
       await LessonSectionContent_fx.render({
         locale: 'ar-SA',
-        content: [
-          LessonSectionContent_fx.blocks.markdown('/data/demoLesson/markdown/sample-ar.md'),
-        ],
+        content: [LessonSectionContent_fx.blocks.markdown('/data/demoLesson/markdown/sample-ar.md')],
       });
       expect(LessonSectionContent_fx.selectors.article()).toHaveAttribute('lang', 'ar-SA');
       expect(LessonSectionContent_fx.selectors.article()).toHaveAttribute('dir', 'rtl');

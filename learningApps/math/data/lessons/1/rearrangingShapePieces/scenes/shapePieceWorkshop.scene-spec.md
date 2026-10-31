@@ -7,7 +7,7 @@ Methodologist objectives: [Draft Methodologist Brief](../methodologist-brief.md)
 
 ## LEARNER PURPOSE AND CONCEPT
 
-The student can **cut** a six-square 2×3 region *along a cell boundary*, inspect two unaltered three-square strips and reposition them. The conceptual question is not which puzzle picture looks right but **why the parts still contain six equal unit-square cells**. The Scene distinguishes the *piece-material count* from the **unique grid cells covered by their union**. This matters when pieces overlap: each strip still has three squares, yet the flat area covered by their layered union may be only five.
+The student can **cut** a six-square 2×3 region _along a cell boundary_, inspect two unaltered three-square strips and reposition them. The conceptual question is not which puzzle picture looks right but **why the parts still contain six equal unit-square cells**. The Scene distinguishes the _piece-material count_ from the **unique grid cells covered by their union**. This matters when pieces overlap: each strip still has three squares, yet the flat area covered by their layered union may be only five.
 
 Learner voice: "**The parts keep their squares. If they don't overlap or leave pieces out, their areas add to the new shape's area. The outside edge can change.**"
 

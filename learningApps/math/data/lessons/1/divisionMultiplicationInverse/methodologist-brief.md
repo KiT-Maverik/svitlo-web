@@ -63,7 +63,7 @@ No Program dependence. Grade 3 is the selected audience of this particular Lesso
 
 ## Open editorial decisions
 
-- Ensure the inverse-check procedure always compares the reconstructed product against the *original dividend*, not against the proposed quotient. One fact family is an example, not a claim to assess full division fluency.
+- Ensure the inverse-check procedure always compares the reconstructed product against the _original dividend_, not against the proposed quotient. One fact family is an example, not a claim to assess full division fluency.
 - Verify that short readable operand language and model-unit names transfer naturally to the supported locales before approval.
 
 ## Methodologist handoff

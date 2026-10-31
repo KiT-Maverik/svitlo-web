@@ -41,7 +41,7 @@ For any positive integer d, 0 ÷ d = 0: d equal groups of zero counters use zero
 
 1. **Share Nothing into Four Groups:** Show four labeled empty groups, zero original counters, accessible ledger; allow learner to inspect every empty group and check 4×0=0.
 2. **Try Dividing Six by Zero:** Show the original 6÷0, allow inspection of nonzero six total and zero group-count boundary, and test the equation 0×q=6 with candidate q 0/1/6, all yielding 0, never six.
-3. **What About Zero Divided by Zero?:** Keep 0÷0 visibly *undefined*, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined.
+3. **What About Zero Divided by Zero?:** Keep 0÷0 visibly _undefined_, offer candidate q=0,1,2 and compute 0×q=0 for all; point out a division result must be uniquely determined.
 4. **Read the Divisor Carefully:** Offer four independent expression cards with native labels for first/second operand and explanatory classification. Check 3×0=0 and 3×3=9; for either /0 explicitly show 'undefined'.
 
 ## Misconceptions, examples and boundaries

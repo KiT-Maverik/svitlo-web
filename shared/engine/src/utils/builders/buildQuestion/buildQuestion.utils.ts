@@ -17,8 +17,9 @@ export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Loc
     flashcardConfig: config.flashcardConfig,
   };
   const resources = (items: readonly DeepReadonly<Resource_Config>[]) => items.map(item => buildResource(item, locale));
-  const nonEmptyResources = (items: readonly [DeepReadonly<Resource_Config>, ...DeepReadonly<Resource_Config>[]]): [Resource, ...Resource[]] =>
-    items.map(item => buildResource(item, locale)) as [Resource, ...Resource[]];
+  const nonEmptyResources = (
+    items: readonly [DeepReadonly<Resource_Config>, ...DeepReadonly<Resource_Config>[]],
+  ): [Resource, ...Resource[]] => items.map(item => buildResource(item, locale)) as [Resource, ...Resource[]];
   switch (config.type) {
     case 'select-one-answer':
       return {

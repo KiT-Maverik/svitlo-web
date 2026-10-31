@@ -22,12 +22,12 @@ With the identical 12-unit reference strip: 1/2 = 6 units, 2/4 = 6 units, 1/3 = 
 
 ## Required observable states
 
-| State | Data or model facts | Correct interpretation |
-|---|---|---|
-| Halves vs quarters | Two 12-unit strips: 1/2 shades 6 units, 2/4 shades 6. | Equivalent fractions, same whole. |
-| Thirds vs sixths | Two 12-unit strips: 1/3 shades 4 units, 2/6 shades 4. | Equivalent fractions, same whole. |
-| Near miss | 12-unit strips: 1/2 shades 6 units, 2/6 shades 4. | Not equivalent. |
-| Different wholes | 12-unit strip 1/2 shades 6; 24-unit strip 2/4 shades 12. | Fractions remain equivalent, but absolute shaded lengths differ. |
+| State              | Data or model facts                                      | Correct interpretation                                           |
+| ------------------ | -------------------------------------------------------- | ---------------------------------------------------------------- |
+| Halves vs quarters | Two 12-unit strips: 1/2 shades 6 units, 2/4 shades 6.    | Equivalent fractions, same whole.                                |
+| Thirds vs sixths   | Two 12-unit strips: 1/3 shades 4 units, 2/6 shades 4.    | Equivalent fractions, same whole.                                |
+| Near miss          | 12-unit strips: 1/2 shades 6 units, 2/6 shades 4.        | Not equivalent.                                                  |
+| Different wholes   | 12-unit strip 1/2 shades 6; 24-unit strip 2/4 shades 12. | Fractions remain equivalent, but absolute shaded lengths differ. |
 
 ## Required learning interaction
 

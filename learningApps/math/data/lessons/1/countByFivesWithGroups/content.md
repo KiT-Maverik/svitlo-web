@@ -14,7 +14,7 @@ Count groups that each contain exactly five objects by repeated addition of five
 
 **What must become clear:** Each completed pack contains five **distinct** objects. After k complete packs the number of items is 5k, while there are only k packs. Starting from zero, successive completed packs yield 5,10,15,20,25,30 for one through six packs. Three packs have fifteen items; four packs twenty; six packs thirty. A pack of four is not a complete five-item pack: two complete packs plus one four-item group total 5+5+4=14, not 15, and cannot be called three full packs of five. Numerical increments of five correspond to adding a **whole** five-item group each time. This is a specific counting strategy, not an inference task about an arbitrary number pattern.
 
-**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains *why* an answer differs from the model.
+**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains _why_ an answer differs from the model.
 
 ## LEARNER JOURNEY
 
@@ -136,15 +136,15 @@ These documents include **English editorial source text only**. Full real transl
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Capability | Status | Owner / next work |
-| --- | --- | --- |
-| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract | Coding Agent builds Lesson later |
-| Generic `text`, `markdown`, `scene` renderer | Observed in Playground `LessonSectionContent.tsx` | New Scene is *not* provided by generic support |
-| Five-Strip Builder and Five-Pack Transfer | **Proposed** Scene specifications only | Editor approval, separate Scene design, implementation and own tests |
-| Genuine locale translations and RTL/nonvisual equivalence | Product requirements, not produced here | Localization and accessibility QA |
-| Complete downloaded-offline experience | Product target; not verified implemented | PWA/dependency integration and airplane-mode E2E |
-| Lesson Notes and unlock/storage | Planned, unverified runtime | Separate architecture and implementation |
-| Scored Questions, Quizzes, mastery and progress claims | Not authored | Separate Assessment Architect |
+| Capability                                                    | Status                                            | Owner / next work                                                    |
+| ------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
+| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract                      | Coding Agent builds Lesson later                                     |
+| Generic `text`, `markdown`, `scene` renderer                  | Observed in Playground `LessonSectionContent.tsx` | New Scene is _not_ provided by generic support                       |
+| Five-Strip Builder and Five-Pack Transfer                     | **Proposed** Scene specifications only            | Editor approval, separate Scene design, implementation and own tests |
+| Genuine locale translations and RTL/nonvisual equivalence     | Product requirements, not produced here           | Localization and accessibility QA                                    |
+| Complete downloaded-offline experience                        | Product target; not verified implemented          | PWA/dependency integration and airplane-mode E2E                     |
+| Lesson Notes and unlock/storage                               | Planned, unverified runtime                       | Separate architecture and implementation                             |
+| Scored Questions, Quizzes, mastery and progress claims        | Not authored                                      | Separate Assessment Architect                                        |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

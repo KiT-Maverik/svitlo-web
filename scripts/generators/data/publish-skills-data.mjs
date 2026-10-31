@@ -42,8 +42,10 @@ function fields(node, label) {
   assert(obj && ts.isObjectLiteralExpression(obj), 'Expected literal object: ' + label);
   const result = new Map();
   for (const entry of obj.properties) {
-    assert(ts.isPropertyAssignment(entry) &&
-      (ts.isIdentifier(entry.name) || ts.isStringLiteral(entry.name)), 'Nonliteral property: ' + label);
+    assert(
+      ts.isPropertyAssignment(entry) && (ts.isIdentifier(entry.name) || ts.isStringLiteral(entry.name)),
+      'Nonliteral property: ' + label,
+    );
     const key = entry.name.text;
     assert(!result.has(key), 'Duplicate property ' + key + ': ' + label);
     result.set(key, entry.initializer);
@@ -52,15 +54,18 @@ function fields(node, label) {
 }
 
 function literal(node, label) {
-  assert(node && (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)),
-    'Expected string literal: ' + label);
+  assert(
+    node && (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)),
+    'Expected string literal: ' + label,
+  );
   return node.text;
 }
 
 function languageCodes() {
   const file = path.join(repositoryRoot, 'shared/contracts/src/types/languages.ts');
   const ast = parse(file);
-  const declaration = ast.statements.filter(ts.isVariableStatement)
+  const declaration = ast.statements
+    .filter(ts.isVariableStatement)
     .flatMap(statement => [...statement.declarationList.declarations])
     .find(item => item.name.getText(ast) === 'DEFAULT_SUPPORTED_LANGUAGES');
   assert(declaration, 'Missing DEFAULT_SUPPORTED_LANGUAGES');
@@ -70,8 +75,10 @@ function languageCodes() {
     const props = fields(item, 'language registry entry ' + index);
     return literal(props.get('language'), 'language registry entry ' + index);
   });
-  assert(codes.length > 0 && codes.includes('en') && codes.every(code => /^[a-z]{2,8}$/.test(code)),
-    'Invalid language codes');
+  assert(
+    codes.length > 0 && codes.includes('en') && codes.every(code => /^[a-z]{2,8}$/.test(code)),
+    'Invalid language codes',
+  );
   assert(new Set(codes).size === codes.length, 'Duplicate language code in registry');
   return codes;
 }
@@ -80,8 +87,10 @@ function localizedStrings(node, codes, label) {
   const props = fields(node, label);
   const unexpected = [...props.keys()].filter(key => !codes.includes(key));
   const missing = codes.filter(code => !props.has(code));
-  assert(!unexpected.length && !missing.length,
-    label + ': missing [' + missing.join(', ') + '], unexpected [' + unexpected.join(', ') + ']');
+  assert(
+    !unexpected.length && !missing.length,
+    label + ': missing [' + missing.join(', ') + '], unexpected [' + unexpected.join(', ') + ']',
+  );
   const result = {};
   for (const code of codes) {
     const value = literal(props.get(code), label + '.' + code);
@@ -94,18 +103,23 @@ function localizedStrings(node, codes, label) {
 function readEntity(file, slug, kind, codes) {
   const ast = parse(file);
   const symbol = slug + '_' + kind + '_Data';
-  const declarations = ast.statements.filter(ts.isVariableStatement)
+  const declarations = ast.statements
+    .filter(ts.isVariableStatement)
     .flatMap(statement => [...statement.declarationList.declarations])
     .filter(item => item.name.getText(ast) === symbol);
   assert(declarations.length === 1, 'Expected one ' + symbol + ': ' + file);
   const call = declarations[0].initializer;
-  assert(call && ts.isCallExpression(call) && ts.isIdentifier(call.expression) &&
-    call.expression.text === 'build' + kind + 'Config' && call.arguments.length === 1,
-    'Invalid builder for ' + symbol + ': ' + file);
+  assert(
+    call &&
+      ts.isCallExpression(call) &&
+      ts.isIdentifier(call.expression) &&
+      call.expression.text === 'build' + kind + 'Config' &&
+      call.arguments.length === 1,
+    'Invalid builder for ' + symbol + ': ' + file,
+  );
   const props = fields(call.arguments[0], file);
   const authoredSlug = literal(props.get('slug'), file + '.slug');
-  assert(authoredSlug === slug && slugPattern.test(authoredSlug),
-    'Missing/mismatched Skill slug: ' + file);
+  assert(authoredSlug === slug && slugPattern.test(authoredSlug), 'Missing/mismatched Skill slug: ' + file);
   const id = literal(props.get('id'), file + '.id');
   assert(uuidPattern.test(id), 'Invalid UUID: ' + file);
   const name = localizedStrings(props.get('name'), codes, file + '.name');
@@ -117,20 +131,27 @@ function readEntity(file, slug, kind, codes) {
     for (const key of detail.keys()) {
       assert(key === 'methodological' || key === 'frontend', 'Unexpected description field: ' + file + '.' + key);
     }
-    if (detail.has('frontend')) description = localizedStrings(detail.get('frontend'), codes, file + '.description.frontend');
+    if (detail.has('frontend'))
+      description = localizedStrings(detail.get('frontend'), codes, file + '.description.frontend');
   }
   assert(kind !== 'Skill' || description, 'Skill requires complete frontend descriptions: ' + file);
   return { id, slug, kind, name, description };
 }
 
 function directories(root) {
-  return fs.readdirSync(root, { withFileTypes: true }).filter(item => item.isDirectory())
-    .map(item => item.name).sort();
+  return fs
+    .readdirSync(root, { withFileTypes: true })
+    .filter(item => item.isDirectory())
+    .map(item => item.name)
+    .sort();
 }
 
 function skillSlugs(root) {
-  return fs.readdirSync(root).filter(name => name.endsWith('.data.ts'))
-    .map(name => name.slice(0, -'.data.ts'.length)).sort();
+  return fs
+    .readdirSync(root)
+    .filter(name => name.endsWith('.data.ts'))
+    .map(name => name.slice(0, -'.data.ts'.length))
+    .sort();
 }
 
 /** Read a fully validated canonical graph, without executing config imports. */
@@ -141,8 +162,10 @@ export function loadSkillGraph(root, codes = languageCodes()) {
   const allIds = new Set();
   function entity(file, slug, kind) {
     const relativeFile = path.relative(root, file).split(path.sep).join('/');
-    assert(slugPattern.test(slug) && !allPaths.has(relativeFile),
-      'Duplicate or invalid Skill source location: ' + relativeFile);
+    assert(
+      slugPattern.test(slug) && !allPaths.has(relativeFile),
+      'Duplicate or invalid Skill source location: ' + relativeFile,
+    );
     allPaths.add(relativeFile);
     const result = readEntity(file, slug, kind, codes);
     assert(!allIds.has(result.id), 'Duplicate UUID: ' + result.id);
@@ -155,7 +178,8 @@ export function loadSkillGraph(root, codes = languageCodes()) {
     const directSkills = path.join(domainDir, 'skills');
     if (fs.existsSync(directSkills)) {
       domain.skills = skillSlugs(directSkills).map(skillSlug =>
-        entity(path.join(directSkills, skillSlug + '.data.ts'), skillSlug, 'Skill'));
+        entity(path.join(directSkills, skillSlug + '.data.ts'), skillSlug, 'Skill'),
+      );
     }
     const groupSlugs = directories(domainDir).filter(slug => slug !== 'skills');
     if (groupSlugs.length) {
@@ -170,8 +194,10 @@ export function loadSkillGraph(root, codes = languageCodes()) {
         domain.groups.push(group);
       }
     }
-    assert((domain.groups?.length ?? 0) + (domain.skills?.length ?? 0) > 0,
-      'Domain must include Groups or direct Skills: ' + domainSlug);
+    assert(
+      (domain.groups?.length ?? 0) + (domain.skills?.length ?? 0) > 0,
+      'Domain must include Groups or direct Skills: ' + domainSlug,
+    );
     graph.push(domain);
   }
   return graph;
@@ -183,19 +209,24 @@ export function loadSkillGraph(root, codes = languageCodes()) {
 export function taxonomyCollections() {
   const file = path.join(repositoryRoot, 'shared/contracts/src/types/misc.types.ts');
   const source = parse(file);
-  const declaration = source.statements.find(item =>
-    ts.isTypeAliasDeclaration(item) && item.name.text === 'Collection');
+  const declaration = source.statements.find(
+    item => ts.isTypeAliasDeclaration(item) && item.name.text === 'Collection',
+  );
   assert(declaration && ts.isUnionTypeNode(declaration.type), 'Missing shared Collection union');
   const values = declaration.type.types.map(member => {
-    assert(ts.isLiteralTypeNode(member) && ts.isStringLiteral(member.literal),
-      'Collection union must consist of literal string discriminators');
+    assert(
+      ts.isLiteralTypeNode(member) && ts.isStringLiteral(member.literal),
+      'Collection union must consist of literal string discriminators',
+    );
     return member.literal.text;
   });
   return new Set(values);
 }
 
 const collectionByKind = Object.freeze({
-  Skill: 'skill', SkillGroup: 'skillGroup', SkillDomain: 'skillDomain',
+  Skill: 'skill',
+  SkillGroup: 'skillGroup',
+  SkillDomain: 'skillDomain',
 });
 
 /** Publish immutable metadata once per entity, and only localized copy per language.
@@ -237,8 +268,10 @@ export function renderSkillFiles(graph, codes) {
 function currentFiles(root) {
   const files = new Map();
   if (!fs.existsSync(root)) return files;
-  assert(fs.statSync(root).isDirectory() && !fs.lstatSync(root).isSymbolicLink(),
-    'Published Skills output must be a real directory: ' + root);
+  assert(
+    fs.statSync(root).isDirectory() && !fs.lstatSync(root).isSymbolicLink(),
+    'Published Skills output must be a real directory: ' + root,
+  );
   function visit(dir, relative) {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       assert(!entry.isSymbolicLink(), 'Symlinks are not permitted in generated output');
@@ -266,8 +299,10 @@ export function checkPublishedFiles(root, expected) {
 export function writePublishedFiles(root, files) {
   const parent = path.dirname(root);
   fs.mkdirSync(parent, { recursive: true });
-  assert(!fs.existsSync(root) || (fs.statSync(root).isDirectory() && !fs.lstatSync(root).isSymbolicLink()),
-    'Refusing to replace a non-directory or symlink: ' + root);
+  assert(
+    !fs.existsSync(root) || (fs.statSync(root).isDirectory() && !fs.lstatSync(root).isSymbolicLink()),
+    'Refusing to replace a non-directory or symlink: ' + root,
+  );
   const staging = fs.mkdtempSync(path.join(parent, '.Skills-staging-'));
   const backup = path.join(parent, '.Skills-backup-' + crypto.randomUUID());
   let backedUp = false;
@@ -309,8 +344,11 @@ function options(args) {
   }
   assert(packageName && action, 'Usage: --package learningApps/<textbook> (--write | --check)');
   const pkg = path.resolve(repositoryRoot, packageName);
-  assert(pkg.startsWith(path.join(repositoryRoot, 'learningApps') + path.sep) &&
-    fs.existsSync(path.join(pkg, 'package.json')), 'Expected a textbook package under learningApps/');
+  assert(
+    pkg.startsWith(path.join(repositoryRoot, 'learningApps') + path.sep) &&
+      fs.existsSync(path.join(pkg, 'package.json')),
+    'Expected a textbook package under learningApps/',
+  );
   return { pkg, action };
 }
 
@@ -323,13 +361,18 @@ function main() {
   const files = renderSkillFiles(graph, codes);
   if (action === '--write') {
     writePublishedFiles(output, files);
-    console.log('Published ' + files.size + ' JSON files for ' + codes.length +
-      ' languages in ' + output);
+    console.log('Published ' + files.size + ' JSON files for ' + codes.length + ' languages in ' + output);
   } else {
     const diff = checkPublishedFiles(output, files);
     if (diff.missing.length || diff.changed.length || diff.stale.length) {
-      console.error('Published Skills differ: missing ' + diff.missing.length +
-        ', changed ' + diff.changed.length + ', stale ' + diff.stale.length);
+      console.error(
+        'Published Skills differ: missing ' +
+          diff.missing.length +
+          ', changed ' +
+          diff.changed.length +
+          ', stale ' +
+          diff.stale.length,
+      );
       for (const item of [...diff.missing, ...diff.changed, ...diff.stale].slice(0, 15)) {
         console.error('  ' + item);
       }
@@ -339,7 +382,12 @@ function main() {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  try { main(); } catch (error) { console.error(error.message); process.exitCode = 1; }
+  try {
+    main();
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
+  }
 }
 
 export { languageCodes };

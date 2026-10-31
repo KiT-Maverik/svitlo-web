@@ -21,6 +21,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 ### Beat 1: Build the number 26 using bundles and loose sticks.
+
 - **Exact learner-facing invitation:** “Build the number 26 using bundles and loose sticks.”
 - **Action / teacher model:** Place two ten-bundles and six loose units in labelled Tens/Ones containers, then select numeral 26; read as twenty-six with a language-specific voice/text alternative.
 - **Expected state change / observation:** 2 tens and 6 ones -> 26; 20+6=26 used only as a supported explanation, not as an unscored addition drill.
@@ -29,6 +30,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 2: A model has two tens and three ones. Another has three tens and two ones. Are the amounts equal?
+
 - **Exact learner-facing invitation:** “A model has two tens and three ones. Another has three tens and two ones. Are the amounts equal?”
 - **Action / teacher model:** Side-by-side inside this single Scene compare 23 and 32 with complete item/group ledger; change bundle counts rather than merely rearrange digit glyphs.
 - **Expected state change / observation:** 23 = 2 tens + 3 ones; 32 = 3 tens + 2 ones; difference is nine items.
@@ -37,6 +39,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 3: You have one ten and seventeen loose sticks. Can you repack to show 27 normally?
+
 - **Exact learner-facing invitation:** “You have one ten and seventeen loose sticks. Can you repack to show 27 normally?”
 - **Action / teacher model:** Select ten of seventeen loose sticks, bundle them, observe two ten-bundles and seven loose units.
 - **Expected state change / observation:** 1 ten +17 loose ones = 2 tens +7 ones =27; preserve 27 original object identities.
@@ -45,6 +48,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 4: Without a worked example beside it, model forty-three.
+
 - **Exact learner-facing invitation:** “Without a worked example beside it, model forty-three.”
 - **Action / teacher model:** Independent transfer: build four bundles and three loose units, identify 43, then explain why 34 is not equivalent.
 - **Expected state change / observation:** 4 tens +3 ones =43, distinct from 3 tens+4 ones =34.
@@ -57,6 +61,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 **Objects:** Modelled quantity cards/items, their stable semantic identities, count/representation ledger, native controls and visible explanation. Add/remove a ten-bundle, add/remove a loose one, Trade bundle for ten ones, Bundle ten loose units, Read numeral, Reveal explanation, Reset; constraints stay within 10–49 in main pathway.
 
 **Local state and invariants:**
+
 - Initial values come from deterministic constants within the standalone Scene module, **not** a Lesson prop, global store, new Resource subtype, invented platform API or fake locale prop.
 - Only an explicit learner action may change represented quantity, grouping or order; all labels and accessible counts derive from the same authoritative local model.
 - Do not allow an object to be consumed/paired/placed twice when that would alter the mathematics. **Reset** restores exactly this Scene's initial state, not any other Section; scenario changes cannot leak answers or counters from the previous state.

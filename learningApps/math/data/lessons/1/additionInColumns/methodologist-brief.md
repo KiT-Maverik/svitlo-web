@@ -63,9 +63,9 @@ Not specified. Grade 2 is the selected primary audience, not a grade limit on th
 
 ## Open editorial decisions
 
-- Confirm this Lesson's single-carry Grade 2 depth and separation from `additionRegroupingAcrossPlaces`, which extends the *value-preserving exchange* across tens and hundreds.
+- Confirm this Lesson's single-carry Grade 2 depth and separation from `additionRegroupingAcrossPlaces`, which extends the _value-preserving exchange_ across tens and hundreds.
 - Confirm numeric examples, aligned place-value meaning and equivalent nonvisual/counter operations before production.
 
 ## Methodologist handoff
 
-**Draft, not approved.** The adjoining Screenwriter Content is *provisional*, not an official Methodologist sign-off. No React Scene, Question, Quiz, Score or production wiring is authorized by this Draft.
+**Draft, not approved.** The adjoining Screenwriter Content is _provisional_, not an official Methodologist sign-off. No React Scene, Question, Quiz, Score or production wiring is authorized by this Draft.

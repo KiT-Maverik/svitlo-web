@@ -10,8 +10,9 @@ const allNames = () =>
   ) as Skill_Config['name'];
 
 const frontendCopy = () =>
-  Object.fromEntries(DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) =>
-    [language, 'Frontend description in ' + language])) as Skill_Config['description']['frontend'];
+  Object.fromEntries(
+    DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, 'Frontend description in ' + language]),
+  ) as Skill_Config['description']['frontend'];
 
 const skill = (): Skill_Config => ({
   slug: 'testSkill',
@@ -48,8 +49,10 @@ describe('Utils / builders / config / buildSkillConfig', () => {
 
   it('rejects missing or invalid slugs', () => {
     for (const slug of [undefined, null, '', 'UPPER', 'bad-slug', 123]) {
-      assert.throws(() => buildSkillConfig({ ...skill(), slug } as unknown as Skill_Config),
-        /Skill slug must be lowerCamelCase/);
+      assert.throws(
+        () => buildSkillConfig({ ...skill(), slug } as unknown as Skill_Config),
+        /Skill slug must be lowerCamelCase/,
+      );
     }
   });
 
@@ -74,12 +77,18 @@ describe('Utils / builders / config / buildSkillConfig', () => {
   it('rejects blank and non-string localized names', () => {
     for (const value of ['', '  ', null, 5]) {
       const invalid = { ...allNames(), uk: value };
-      assert.throws(() => buildSkillConfig({ slug: skill().slug, id: skill().id, name: invalid } as unknown as Skill_Config), /uk/);
+      assert.throws(
+        () => buildSkillConfig({ slug: skill().slug, id: skill().id, name: invalid } as unknown as Skill_Config),
+        /uk/,
+      );
     }
   });
 
   it('rejects missing descriptions and frontend dictionaries', () => {
-    assert.throws(() => buildSkillConfig({ ...skill(), description: undefined } as unknown as Skill_Config), /Skill description is required/);
+    assert.throws(
+      () => buildSkillConfig({ ...skill(), description: undefined } as unknown as Skill_Config),
+      /Skill description is required/,
+    );
     assert.throws(
       () => buildSkillConfig({ ...skill(), description: { methodological: 'Valid text' } } as unknown as Skill_Config),
       /Skill description.frontend must contain all supported languages/,
@@ -95,19 +104,41 @@ describe('Utils / builders / config / buildSkillConfig', () => {
   });
 
   it('rejects missing, blank, malformed and extra methodological fields', () => {
-    for (const description of [null, [], 'text', {}, { frontend: frontendCopy() },
-      { methodological: '' }, { methodological: '  ' }, { methodological: 17 },
-      { methodological: 'Valid', extra: 'Unsupported' }]) {
-      assert.throws(() => buildSkillConfig({ ...skill(), description } as unknown as Skill_Config), /Skill description/);
+    for (const description of [
+      null,
+      [],
+      'text',
+      {},
+      { frontend: frontendCopy() },
+      { methodological: '' },
+      { methodological: '  ' },
+      { methodological: 17 },
+      { methodological: 'Valid', extra: 'Unsupported' },
+    ]) {
+      assert.throws(
+        () => buildSkillConfig({ ...skill(), description } as unknown as Skill_Config),
+        /Skill description/,
+      );
     }
   });
 
   it('rejects frontend when incomplete, malformed, blank or containing unexpected locales', () => {
     const completeFrontend = frontendCopy();
-    for (const frontend of [null, [], 'text', {}, { en: 'Only English' },
-      { ...completeFrontend, uk: ' ' }, { ...completeFrontend, xx: 'Unsupported' }]) {
+    for (const frontend of [
+      null,
+      [],
+      'text',
+      {},
+      { en: 'Only English' },
+      { ...completeFrontend, uk: ' ' },
+      { ...completeFrontend, xx: 'Unsupported' },
+    ]) {
       assert.throws(
-        () => buildSkillConfig({ ...skill(), description: { methodological: 'Valid', frontend: frontend } } as unknown as Skill_Config),
+        () =>
+          buildSkillConfig({
+            ...skill(),
+            description: { methodological: 'Valid', frontend: frontend },
+          } as unknown as Skill_Config),
         /Skill description.frontend/,
       );
     }

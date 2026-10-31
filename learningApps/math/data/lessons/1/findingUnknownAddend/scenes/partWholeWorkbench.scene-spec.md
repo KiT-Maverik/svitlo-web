@@ -23,6 +23,7 @@ Canonical child-facing idea: “There are 12 counters altogether. Five are in th
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Section 1 / observation entry (prop-free placement)**
+
 1. A large number “12 altogether” names the whole. Show twelve individually countable counters (such as outlines or identical dots) in a tidy, stable arrangement.
 2. Draw a clear divider after five counters and label that cluster “5 we know.” The other counters remain countable but the numeric label is “?” or “missing part.” Read the relationship out loud as text: “5 plus a missing number equals 12.”
 3. Ask “How many counters are in the other part?” Offer optional response choices 6 / 7 / 8 or buttons “Count the rest” and “Show both parts.” A learner does **not** need to answer to obtain the explanation.
@@ -31,6 +32,7 @@ Canonical child-facing idea: “There are 12 counters altogether. Five are in th
 6. “Reset” restores the unlabeled group and clears the choice; “Show the full explanation” always available.
 
 **Section 2 / guided subtraction entry (independent state)**
+
 1. Begin with the same twelve counters, all still present. Ask: “We already know five of the twelve. What happens if we move those five to a separate part?”
 2. “Separate the 5” moves exactly the known five to a labeled sub-area and announces “12 altogether; 5 separated; 7 left in the other part.” Both clusters remain visible so none of the whole disappears.
 3. The equivalent numbers display “12 − 5 = 7.” Select “Put the two parts together” to rejoin the clusters and display “5 + 7 = 12,” stressing **the whole stayed twelve**.

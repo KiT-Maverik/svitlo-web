@@ -1,8 +1,6 @@
 'use client';
 
-import {
-  createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode,
-} from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { DEFAULT_SUPPORTED_LANGUAGES, getLocaleDirection, type Locale } from '@svitlo/engine/localization';
 
 export interface SkillsPageSettings {
@@ -100,15 +98,40 @@ export function SkillsPageSettingsProvider({ children }: { children: ReactNode }
     setLocaleError(null);
   }, []);
 
-  const setLanguageCode = useCallback((code: string) => {
-    const parsed = supportedLocale(code);
-    if (!parsed) throw new Error('Непідтримувана мова Skills: ' + code);
-    setLocale(parsed);
-  }, [setLocale]);
+  const setLanguageCode = useCallback(
+    (code: string) => {
+      const parsed = supportedLocale(code);
+      if (!parsed) throw new Error('Непідтримувана мова Skills: ' + code);
+      setLocale(parsed);
+    },
+    [setLocale],
+  );
 
   const value = useMemo<SkillsPageContextValue>(
-    () => ({ settings, locale, localeError, ready, mapReady, registerMapActions, runMapAction, updateSetting, setLocale, setLanguageCode }),
-    [settings, locale, localeError, ready, mapReady, registerMapActions, runMapAction, updateSetting, setLocale, setLanguageCode],
+    () => ({
+      settings,
+      locale,
+      localeError,
+      ready,
+      mapReady,
+      registerMapActions,
+      runMapAction,
+      updateSetting,
+      setLocale,
+      setLanguageCode,
+    }),
+    [
+      settings,
+      locale,
+      localeError,
+      ready,
+      mapReady,
+      registerMapActions,
+      runMapAction,
+      updateSetting,
+      setLocale,
+      setLanguageCode,
+    ],
   );
   return <SkillsPageContext.Provider value={value}>{children}</SkillsPageContext.Provider>;
 }

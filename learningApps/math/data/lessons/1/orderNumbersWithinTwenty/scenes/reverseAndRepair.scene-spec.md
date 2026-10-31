@@ -21,6 +21,7 @@ For ascending (nondecreasing) order, each adjacent value must be at least the on
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 ### Beat 1: Arrange 12, 20, 0 and 19 from largest to smallest.
+
 - **Exact learner-facing invitation:** “Arrange 12, 20, 0 and 19 from largest to smallest.”
 - **Action / teacher model:** Learner builds a descending row via numbered slots and can reveal one adjacent comparison at a time.
 - **Expected state change / observation:** Correct descending 20, 19, 12, 0.
@@ -29,6 +30,7 @@ For ascending (nondecreasing) order, each adjacent value must be at least the on
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 2: Is this row truly smallest-to-largest: 2, 11, 5, 17?
+
 - **Exact learner-facing invitation:** “Is this row truly smallest-to-largest: 2, 11, 5, 17?”
 - **Action / teacher model:** Learner inspects adjacent pairs and moves only the offending card(s), then explains why 5 precedes 11.
 - **Expected state change / observation:** Repaired ascending sequence 2, 5, 11, 17.
@@ -41,6 +43,7 @@ For ascending (nondecreasing) order, each adjacent value must be at least the on
 **Objects:** Modelled quantity cards/items, their stable semantic identities, count/representation ledger, native controls and visible explanation. Select challenge, Move card earlier/later, Inspect neighbor, Explain/reveal, Reset; all local state.
 
 **Local state and invariants:**
+
 - Initial values come from deterministic constants within the standalone Scene module, **not** a Lesson prop, global store, new Resource subtype, invented platform API or fake locale prop.
 - Only an explicit learner action may change represented quantity, grouping or order; all labels and accessible counts derive from the same authoritative local model.
 - Do not allow an object to be consumed/paired/placed twice when that would alter the mathematics. **Reset** restores exactly this Scene's initial state, not any other Section; scenario changes cannot leak answers or counters from the previous state.

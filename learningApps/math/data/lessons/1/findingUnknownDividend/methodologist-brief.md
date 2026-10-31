@@ -66,4 +66,3 @@ Not specified. This is **not assumed compatible with standard grade 1–2 covera
 ## Methodologist handoff
 
 Draft for editor review; **do not present as approved or universally age-appropriate**. After explicit approval of the readiness gate and scope, the Screenwriter may design accessible equal-group representations and inverse-relation explanations.
-

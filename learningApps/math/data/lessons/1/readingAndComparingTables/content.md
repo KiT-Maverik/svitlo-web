@@ -4,9 +4,10 @@
 **Audience:** Grade 2, approximately ages 7–8.
 **Source brief:** [Draft Methodologist Brief](./methodologist-brief.md).
 **Target Skills:**
+
 - [readSimpleTable.data.ts](../../../../data/skills/data/presentation/skills/readSimpleTable.data.ts)
 - [compareCategories.data.ts](../../../../data/skills/data/interpretation/skills/compareCategories.data.ts)
-**Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
+  **Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
 
 ## The learner's experience
 
@@ -45,8 +46,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *6 chosen for squares*: “Six belongs to Triangle. Follow the Square row across to the count column.”
-- *4 with no unit*: “Four of what? The row and heading tell us: four square shapes.”
+- _6 chosen for squares_: “Six belongs to Triangle. Follow the Square row across to the count column.”
+- _4 with no unit_: “Four of what? The row and heading tell us: four square shapes.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. A screen reader can inspect a linear list of pairs: 'Triangle, six shapes; Square, four shapes; Circle, two shapes'. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -68,8 +69,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *6+2=10*: “Count on from six: seven, eight. Two more makes eight.”
-- *Wrong total*: “Check all three rows exactly once: six triangles, four squares, two circles; 6+4+2=12.”
+- _6+2=10_: “Count on from six: seven, eight. Two more makes eight.”
+- _Wrong total_: “Check all three rows exactly once: six triangles, four squares, two circles; 6+4+2=12.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Token quantities and equations both have text alternatives and no color-only identification. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -91,8 +92,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *10 as the difference*: “Ten is the total of both rows. To find how many MORE, match four pairs and count the two triangles left over.”
-- *2 as difference*: “Yes. Six minus four gives a gap of two shapes.”
+- _10 as the difference_: “Ten is the total of both rows. To find how many MORE, match four pairs and count the two triangles left over.”
+- _2 as difference_: “Yes. Six minus four gives a gap of two shapes.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Provide a nonvisual pairing count: 'four matched pairs; two unmatched triangles'. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -114,8 +115,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Total 8*: “Count all three categories: five plus three is eight, and one more sun makes nine.”
-- *Difference 8*: “Eight adds stars and moons; 'how many more' asks for the gap, five minus three = two.”
+- _Total 8_: “Count all three categories: five plus three is eight, and one more sun makes nine.”
+- _Difference 8_: “Eight adds stars and moons; 'how many more' asks for the gap, five minus three = two.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. No drawing or precise row targeting required; named row choices and spoken explanations are equivalent. The explanation remains available even if the learner chooses not to answer before moving on.
 

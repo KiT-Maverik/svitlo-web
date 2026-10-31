@@ -3160,6 +3160,7 @@ Status: implemented
 
 Methodological description: Organize distinct moving graphic passages with coherent transitions, rhythm and informational or aesthetic hierarchy.
 User-friendly description: Arrange moving graphic passages with purposeful rhythm and transitions.
+
 ### Art History and Cultures
 
 Slug: artHistoryAndCultures
@@ -3889,6 +3890,7 @@ Status: implemented
 
 Methodological description: Explain how selected Indian filmmakers developed alternative social themes and production aesthetics in relation to commercial filmmaking traditions.
 User-friendly description: Explore how Indian Parallel Cinema developed alternatives to mainstream film styles.
+
 #### Social Context and Exchange
 
 Slug: socialContextAndExchange
@@ -4287,4 +4289,3 @@ Status: implemented
 
 Methodological description: Distinguish licenses, attribution and permitted reuse from an assumption that access equals permission.
 User-friendly description: Check whether artwork may be reused and give the credit its rights require.
-

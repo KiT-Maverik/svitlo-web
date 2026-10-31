@@ -12,7 +12,7 @@ Runtime Lesson: **Not implemented**
 
 Read and compose whole-number numerals through 100 using tens and ones, then advance or retreat exactly one unit across ten boundaries without restarting the count.
 
-**Exact mathematical foundation and reference model:** A written two-digit numeral represents complete tens and remaining ones: 42 has four tens and two ones, whereas 24 has two tens and four ones; 70 has seven tens and zero ones and is not 7. Each neighboring number differs by exactly one: 28→29→30→31, 31→30→29→28, 98→99→100 and 100→99. At 100, ten complete tens become one hundred; this is a *three-digit endpoint*, not an example of a two-digit numeral. The selected 0–100 exercise range has boundaries but the wider number sequence does not end at 100.
+**Exact mathematical foundation and reference model:** A written two-digit numeral represents complete tens and remaining ones: 42 has four tens and two ones, whereas 24 has two tens and four ones; 70 has seven tens and zero ones and is not 7. Each neighboring number differs by exactly one: 28→29→30→31, 31→30→29→28, 98→99→100 and 100→99. At 100, ten complete tens become one hundred; this is a _three-digit endpoint_, not an example of a two-digit numeral. The selected 0–100 exercise range has boundaries but the wider number sequence does not end at 100.
 
 The learner actively constructs or changes a representation, predicts its effect and explains a discrepancy. The Lesson does **not** consist of a long Markdown lecture plus a token quiz. One Scene provides the guided causal encounter, a short reflection section retrieves the rule and challenges a shortcut, and a **different** second Scene tests the rule with changed numbers and a new context. Correct answers are accompanied by verifiable evidence, not praise alone.
 
@@ -94,19 +94,19 @@ Guided manipulation in Section 1, short verbal retrieval in Section 2 and differ
 
 All learner-facing prompts, controls, errors, numerals/number words, object identities, accessible state messages and Notes require **genuine translations for every current Engine-supported locale**, with no fallback. Mathematical order, operand identities, currency units and grouping must be preserved in semantic RTL, not flipped mechanically. WCAG 2.2 AA: touch/keyboard/switch controls, visible focus, nonvisual ordered evidence ledger, color-independent status, reduced motion, high zoom and mobile support. Equivalent selected-language instructional data and interaction must remain usable once downloaded offline; these are **requirements, not delivered production features**.
 
-Learner-facing samples in this Markdown are **English editorial source only**. No translation dictionaries or alternative locale content are falsely claimed. 
+Learner-facing samples in this Markdown are **English editorial source only**. No translation dictionaries or alternative locale content are falsely claimed.
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Verified / proposed | Later responsibility |
-| --- | --- | --- |
-| `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract | Coding Agent assembles only after editorial approval |
-| Generic `text`, `markdown`, `scene` renderer | Observed in Playground | Bespoke Scenes remain unimplemented |
-| Build and Read Two Digits, One-Step Hundred Counter | **Proposed** Screenwriter specifications | Editor approval, Scene Designer, independent tests |
-| Genuine locales, RTL and nonvisual controls | Product requirements, not delivered | Localization and accessibility QA |
-| Selected-language offline Lesson and asset download | Product target, unverified | PWA/integration and offline E2E |
-| Notes, revision sheet, progress, persistent mastery | Planned or unverified, not wired | Separate architecture |
-| Questions, Quizzes, grading | Not authored | Assessment Architect |
+| Feature                                               | Verified / proposed                      | Later responsibility                                 |
+| ----------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
+| `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract             | Coding Agent assembles only after editorial approval |
+| Generic `text`, `markdown`, `scene` renderer          | Observed in Playground                   | Bespoke Scenes remain unimplemented                  |
+| Build and Read Two Digits, One-Step Hundred Counter   | **Proposed** Screenwriter specifications | Editor approval, Scene Designer, independent tests   |
+| Genuine locales, RTL and nonvisual controls           | Product requirements, not delivered      | Localization and accessibility QA                    |
+| Selected-language offline Lesson and asset download   | Product target, unverified               | PWA/integration and offline E2E                      |
+| Notes, revision sheet, progress, persistent mastery   | Planned or unverified, not wired         | Separate architecture                                |
+| Questions, Quizzes, grading                           | Not authored                             | Assessment Architect                                 |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

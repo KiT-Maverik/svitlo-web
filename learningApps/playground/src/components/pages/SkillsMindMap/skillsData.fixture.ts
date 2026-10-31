@@ -7,16 +7,31 @@ export function fixtureJsonForSkillUrl(url: string): unknown | null {
   const match = /^\/data\/pages\/skillAnalytics\/(uk|en)\.json$/.exec(url);
   if (!match) return null;
   const uk = match[1] === 'uk';
-  return { domains: [{
-    id: uuid(1), slug: 'testColors', collection: 'skillDomain', name: uk ? 'Кольори' : 'Colors',
-    children: [{
-      id: uuid(2), slug: 'testWarmColors', collection: 'skillGroup',
-      name: uk ? 'Теплі кольори' : 'Warm colors',
-      children: [{
-        id: uuid(3), slug: 'testRed', collection: 'skill',
-        name: uk ? 'Червоний' : 'Red',
-        description: uk ? 'Розпізнавати червоний.' : 'Recognize red.',
-      }],
-    }],
-  }] };
+  return {
+    domains: [
+      {
+        id: uuid(1),
+        slug: 'testColors',
+        collection: 'skillDomain',
+        name: uk ? 'Кольори' : 'Colors',
+        children: [
+          {
+            id: uuid(2),
+            slug: 'testWarmColors',
+            collection: 'skillGroup',
+            name: uk ? 'Теплі кольори' : 'Warm colors',
+            children: [
+              {
+                id: uuid(3),
+                slug: 'testRed',
+                collection: 'skill',
+                name: uk ? 'Червоний' : 'Red',
+                description: uk ? 'Розпізнавати червоний.' : 'Recognize red.',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  };
 }

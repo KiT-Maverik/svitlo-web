@@ -15,12 +15,13 @@ Children see that the **same total** can be counted as repeated equal addends or
 - Section 2: 3 groups with 4 in each; 4+4+4=12; 3×4=12. Factors 3 and 4, product 12.
 - Section 4: 2 groups with 5 in each; 5+5=10; 2×5=10. Factors 2 and 5, product 10.
 - Optional new model: 3 groups of 2; 2+2+2=6 and 3×2=6.
-- Input group sizes and counts positive ≤5 with whole ≤25. No unequal groups may be presented as repeated *identical* addends without changing the modeled grouping; no unproved commutativity teaching, division tasks, negative factors or timed tables.
-- Distinguish the *numeric factor* from the *meaning attached to it in one concrete model*. The result of a multiplication expression is its product, not one of its factors.
+- Input group sizes and counts positive ≤5 with whole ≤25. No unequal groups may be presented as repeated _identical_ addends without changing the modeled grouping; no unproved commutativity teaching, division tasks, negative factors or timed tables.
+- Distinguish the _numeric factor_ from the _meaning attached to it in one concrete model_. The result of a multiplication expression is its product, not one of its factors.
 
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Section 2 / guided expression mapping**
+
 1. Display 3 labeled groups containing 4 visible counters each and say “Three groups, four in each.”
 2. A learner-selected “Show the addition” highlights groups one at a time and reveals **4 + 4 + 4 = 12**, with a written/accessible connection from each group to one addend 4.
 3. “Show the short way” reveals **3 × 4 = 12**. Explain “The first factor, 3, counts our groups. The second factor, 4, counts each group. Twelve is the product, the total.”
@@ -29,6 +30,7 @@ Children see that the **same total** can be counted as repeated equal addends or
 6. Explicit contrast if child selects 3+4 as equivalent: “Three plus four is seven. But our groups have twelve counters. To count all groups, we need 4+4+4.”
 
 **Section 4 / independent transfer**
+
 1. Display a fresh scene with two groups of five counters. “Can you name a matching addition and multiplication sentence?” Initial answers are not displayed.
 2. Offer candidate additions **5+5=10**, **2+5=7** and **5+5+5=15** with text/radio-like selection; correct/model explanation for each is visible on request. The group count remains exactly two throughout.
 3. Show matching multiplication choices **2×5=10**, **2×5=7** and **3×5=15**; distinguish an incorrect numeric result from an expression representing the wrong count of groups.

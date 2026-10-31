@@ -2779,4 +2779,3 @@ Status: pending
 
 Methodological description: Near massive bodies, spacetime geometry changes light trajectories; this is not refraction at the boundary of two optical media.
 User-friendly description: Explain how gravity bends light trajectories without ordinary optical refraction.
-

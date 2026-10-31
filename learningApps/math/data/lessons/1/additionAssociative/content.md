@@ -19,7 +19,7 @@ The child learns by making a prediction, controlling the mathematical model and 
 
 1. **Three Collections Make Nine:** Display 2,3,4 counters as three persistently labeled disjoint collections with unique IDs; allow learner to count all nine without grouping first.
 2. **First Two Together:** Learner selects a bracket around first pair (2+3), sees a subtotal of five, then includes the third group of four to obtain nine; labels stay attached to original groups.
-3. **Last Two Together:** On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side *inside the Scene*.
+3. **Last Two Together:** On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side _inside the Scene_.
 4. **Group Six, Four and Three:** A transfer set 6,4,3 keeps thirteen unique counters; learner chooses (6+4)+3 or 6+(4+3) and inspects first subtotal ten vs seven. Both finish at thirteen.
 
 ## SECTION PLAN
@@ -57,9 +57,9 @@ The child learns by making a prediction, controlling the mathematical model and 
 - **Purpose/outcome:** Distinguish **regrouping** without changing any addend from changing a value or swapping order.
 - **Typed structure:** One ordered `LessonSection_Config` with text, scene, markdown resources in a single vertical column.
 - **Learner-facing text resource (supported):** “Now add the last two groups first. Is the result still nine?”
-- **Interactive scene resource (supported type; new Scene proposed):** [Grouping Brackets Playground](./scenes/groupingBracketsPlayground.scene-spec.md), independently initialized placement 3. On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side *inside the Scene*.
+- **Interactive scene resource (supported type; new Scene proposed):** [Grouping Brackets Playground](./scenes/groupingBracketsPlayground.scene-spec.md), independently initialized placement 3. On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side _inside the Scene_.
 - **Learner-facing markdown resource (supported):** “Three and four make seven, then two plus seven makes nine. The subtotal changed from five to seven; the final sum stayed nine.” Exact expression: **2 + (3 + 4) = 2 + 7 = 9**.
-- **Learner action, observations and feedback:** On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side *inside the Scene*. If an incorrect response is selected, explain: If the learner thinks seven is the new final answer, show that the initial two counters are still part of the whole. Provide “Show how”, “Read the groups” and “Reset” whether or not the child submits a prediction.
+- **Learner action, observations and feedback:** On learner command, reset only subtotal emphasis and bracket 3+4, show seven, then combine with first group two for nine. Display both bracketings side by side _inside the Scene_. If an incorrect response is selected, explain: If the learner thinks seven is the new final answer, show that the initial two counters are still part of the whole. Provide “Show how”, “Read the groups” and “Reset” whether or not the child submits a prediction.
 - **Illustration/model direction:** Three labeled counter trays remain in a fixed spatial sequence while a large accessible bracket and subtotal ribbon move between the first and last adjacent pairs. Do not exchange tray order when changing parentheses. Preserve exact numerical objects/quantities and display an equivalent readable, navigable count ledger, not a decorative picture.
 - **Transition/navigation:** Offer a question for the next Section only after the current relationship is visible, with non-scored optional replay.
 - **Accessibility, locale and RTL:** Native touch, keyboard and screen-reader operations; exact group roles and equations read in correct math order across RTL; full real translations and reduced-motion equivalence, including offline use.
@@ -89,7 +89,7 @@ The child learns by making a prediction, controlling the mathematical model and 
 1. “With three addends, we can add the first two or last two first.” — proposed after the first corresponding fully explained demonstration, not as proof of a correct guess.
 2. “Only the grouping changes; every original addend and the final total stay the same.” — proposed after the first corresponding fully explained demonstration, not as proof of a correct guess.
 
-Notes are *planned and not wired*. Do not invent existing Note IDs, unlock events, learner persistence, revision sheet or spaced scheduler; a Note reveal is not proof of mastery.
+Notes are _planned and not wired_. Do not invent existing Note IDs, unlock events, learner persistence, revision sheet or spaced scheduler; a Note reveal is not proof of mastery.
 
 ## PRACTICE, RETRIEVAL AND ASSESSMENT HANDOFF
 

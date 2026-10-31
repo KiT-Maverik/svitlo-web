@@ -5,7 +5,7 @@
 
 ## Goal
 
-Let authored flashcards explicitly distinguish **variable parts of an example or rule** from fixed facts worth memorizing. The learner should recall *that a variable belongs here and what it represents*, not memorize the particular value shown in one example.
+Let authored flashcards explicitly distinguish **variable parts of an example or rule** from fixed facts worth memorizing. The learner should recall _that a variable belongs here and what it represents_, not memorize the particular value shown in one example.
 
 ## Intended experience
 

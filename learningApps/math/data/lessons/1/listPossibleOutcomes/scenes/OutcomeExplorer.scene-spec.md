@@ -5,6 +5,7 @@
 **Lesson Content:** [What Could the Result Be?](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Target Skills:**
+
 - [listOutcomes.data.ts](../../../../../data/skills/probability/events/skills/listOutcomes.data.ts)
 
 ## Intended learning interaction
@@ -17,14 +18,14 @@ The root Scene is proposed as a self-contained **prop-free component** with loca
 
 ## Visual/conceptual model and required states
 
-| State / preset | What the learner can inspect | Correct mathematical / logical condition |
-|---|---|---|
-| Spinner A | Four equally sized sectors numbered 1,2,3,4; report 'one number' | Possible outcomes {1,2,3,4}; exactly one numeral per spin. |
-| Faulty proposed list | Candidate list {1,3,4,5} for Spinner A | 2 missing, 5 extra; corrected {1,2,3,4}. |
-| Bag B | Three tokens individually labeled red A, red B, blue C; report only color | Possible reported colors {red,blue}, no green. Two red tokens do not create two distinct red results. |
-| Bag B alternate identity thought experiment | Same three tokens, report token label instead | Possible token identity labels {red A,red B,blue C}; different reporting criterion. |
-| Spinner C transfer | Three sectors numbered 2,4,6; report number | Possible outcomes {2,4,6}, no 3. |
-| Empty candidate set | No choices selected despite available sectors | Incomplete; explain any one missing matching sector. |
+| State / preset                              | What the learner can inspect                                              | Correct mathematical / logical condition                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Spinner A                                   | Four equally sized sectors numbered 1,2,3,4; report 'one number'          | Possible outcomes {1,2,3,4}; exactly one numeral per spin.                                            |
+| Faulty proposed list                        | Candidate list {1,3,4,5} for Spinner A                                    | 2 missing, 5 extra; corrected {1,2,3,4}.                                                              |
+| Bag B                                       | Three tokens individually labeled red A, red B, blue C; report only color | Possible reported colors {red,blue}, no green. Two red tokens do not create two distinct red results. |
+| Bag B alternate identity thought experiment | Same three tokens, report token label instead                             | Possible token identity labels {red A,red B,blue C}; different reporting criterion.                   |
+| Spinner C transfer                          | Three sectors numbered 2,4,6; report number                               | Possible outcomes {2,4,6}, no 3.                                                                      |
+| Empty candidate set                         | No choices selected despite available sectors                             | Incomplete; explain any one missing matching sector.                                                  |
 
 All representations preserve the chosen whole, complete inventory, reference clock or observed tokens as appropriate. Do not silently change model conditions while an answer is being explained.
 

@@ -7,7 +7,7 @@ Methodologist objective(s): Interpret exact division as equal groups and reconst
 
 ## LEARNER PURPOSE AND CONCEPT
 
-Learners use a *countable* collection rather than guessing a symbol. When sharing among three groups gives four in each, the whole is the sum of all group counts. The Scene makes 3 groups of 4 into 4 + 4 + 4 and 3 × 4; it must never equate “3 groups” with “3 items in each” without explaining the chosen story.
+Learners use a _countable_ collection rather than guessing a symbol. When sharing among three groups gives four in each, the whole is the sum of all group counts. The Scene makes 3 groups of 4 into 4 + 4 + 4 and 3 × 4; it must never equate “3 groups” with “3 items in each” without explaining the chosen story.
 
 ## ACCURATE CONTENT AND MODEL LIMITATIONS
 

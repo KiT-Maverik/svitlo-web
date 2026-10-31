@@ -7,28 +7,29 @@ Status: **Proposed prop-free Scene**, not an existing component. The four placem
 
 ## What the learner will discover
 
-A numeric fact can be *unnecessary for one question but necessary for another*. A missing fact is different: it can permit multiple answers to one and the same question. Each entry keeps the **actual question visible** and ties learner judgments to the relationships in the story, not to whether text looks decorative. When the question changes, reset any previous relevance verdict; when a required quantity is unknown, do not invent or silently assume a value.
+A numeric fact can be _unnecessary for one question but necessary for another_. A missing fact is different: it can permit multiple answers to one and the same question. Each entry keeps the **actual question visible** and ties learner judgments to the relationships in the story, not to whether text looks decorative. When the question changes, reset any previous relevance verdict; when a required quantity is unknown, do not invent or silently assume a value.
 
 ## Opening: an unnecessary number (Entry A, Section 1)
 
-Display “There are **7 stars**, **4 circles**, and **3 triangles** on a board. How many **stars and circles together**?” with labeled, accessible groups of exactly seven, four and three shapes. Choose fact, then classify it as “needed for this question” or “not needed for this question”. Learner may select with keyboard/touch, no drag required. Correct: 7 stars and 4 circles needed; 3 triangles irrelevant *to this question*. The answer is **11** stars and circles. If the learner includes triangles in the result: “You answered how many shapes in total, but this question asks only about stars and circles.” If they omit circles: “The question names circles as well.” Never call the triangle statement false or always useless.
+Display “There are **7 stars**, **4 circles**, and **3 triangles** on a board. How many **stars and circles together**?” with labeled, accessible groups of exactly seven, four and three shapes. Choose fact, then classify it as “needed for this question” or “not needed for this question”. Learner may select with keyboard/touch, no drag required. Correct: 7 stars and 4 circles needed; 3 triangles irrelevant _to this question_. The answer is **11** stars and circles. If the learner includes triangles in the result: “You answered how many shapes in total, but this question asks only about stars and circles.” If they omit circles: “The question names circles as well.” Never call the triangle statement false or always useless.
 
 ## Change only the question (Entry B, Section 2)
 
-Show identical groups **7 stars, 4 circles, 3 triangles** and now ask “How many shapes **altogether**?” Clear earlier relevance choices but preserve facts. Now all three quantities matter, and **7 + 4 + 3 = 14 shapes**. The child should be able to explain that the formerly extra three triangles became essential because the requested total changed. If triangles are still excluded: “This time triangles are included in *all shapes*.” This is a new starting entry, not a hidden cross-Section state dependency.
+Show identical groups **7 stars, 4 circles, 3 triangles** and now ask “How many shapes **altogether**?” Clear earlier relevance choices but preserve facts. Now all three quantities matter, and **7 + 4 + 3 = 14 shapes**. The child should be able to explain that the formerly extra three triangles became essential because the requested total changed. If triangles are still excluded: “This time triangles are included in _all shapes_.” This is a new starting entry, not a hidden cross-Section state dependency.
 
 ## A missing quantity (Entry C, Section 3)
 
 Show “There are **7 bicycles** and **some scooters**. How many vehicles?” Explicitly state that the scene treats these as the only vehicle categories in the problem. Mark bicycles 7 known, scooters unknown, combined vehicle count unknown. Provide two separately labeled **hypotheses**, never silently presented as original facts:
-- *If there are 2 scooters*, the total is **7 + 2 = 9 vehicles**.
-- *If there are 5 scooters*, the total is **7 + 5 = 12 vehicles**.
-Both worlds satisfy the supplied information but lead to distinct answers. Feedback for “exactly nine”: “Nine follows only if two scooters exist; the story did not say that.” For “no single answer”: “Correct: we need the scooter count.” An “Add a fact” exploration may set scooters to 3, then compute 10, but it must visibly label this as a **new hypothetical condition**, not inferred data.
+
+- _If there are 2 scooters_, the total is **7 + 2 = 9 vehicles**.
+- _If there are 5 scooters_, the total is **7 + 5 = 12 vehicles**.
+  Both worlds satisfy the supplied information but lead to distinct answers. Feedback for “exactly nine”: “Nine follows only if two scooters exist; the story did not say that.” For “no single answer”: “Correct: we need the scooter count.” An “Add a fact” exploration may set scooters to 3, then compute 10, but it must visibly label this as a **new hypothetical condition**, not inferred data.
 
 ## Independent contrast (Entry D, Section 4)
 
 Two self-contained cards, with a separate question and reset for each:
 
-**Card 1:** “A jar contains 6 blue beads, 5 yellow beads, and 4 red beads. How many **blue and yellow** beads?” Count 6 + 5 = **11**; four red beads are extra to this question. If the learner includes red, clarify that 15 would answer *all beads*, not the specified subset.
+**Card 1:** “A jar contains 6 blue beads, 5 yellow beads, and 4 red beads. How many **blue and yellow** beads?” Count 6 + 5 = **11**; four red beads are extra to this question. If the learner includes red, clarify that 15 would answer _all beads_, not the specified subset.
 
 **Card 2:** “A jar contains 6 blue beads and **some yellow beads**. These are the only bead types in the jar. How many beads **in total**?” Insufficient information: the yellow count is needed. Example compatible completions: two yellow → 8 total; five yellow → 11 total. If a child answers 11 without a stated yellow count: “That requires five yellow beads, which the story never supplied.” A useful response is “How many yellow beads?” rather than a guessed total.
 

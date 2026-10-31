@@ -35,7 +35,7 @@ Learner voice: "**First the row, then the column. Each step moves one square, an
 
 1. Fixed initial cell **B2** containing a tree. Target **A4** containing park. Command tape (absolute **map** directions): **right one**, **right one**, **up one**.
 2. Prompt learner to predict next cell before running each command. Step results exactly **B2→B3→B4→A4**. Show ordered cell log with per-step meaning and the final park.
-3. For predicted C4 on last step, explain C is down not up from B; for A3, explain a right move is missing; for B2→B4 in one claimed step, explain one step means *one neighbor*.
+3. For predicted C4 on last step, explain C is down not up from B; for A3, explain a right move is missing; for B2→B4 in one claimed step, explain one step means _one neighbor_.
 4. "Previous step", "Replay", "Reset" allow inspection, deterministic state restoration and hint/reveal with no timed gates. Do not infer the learner's heading from commands.
 5. Optional alternative path to A4 can be accepted as a destination match if using the same absolute grid rules, **not** marked wrong because its command list differs. This stage's guided tape nevertheless uses the stated three commands.
 
@@ -53,7 +53,7 @@ Learner voice: "**First the row, then the column. Each step moves one square, an
 1. Fresh fixed map (independent of stage C) with **garden in A3**, **market in D2**, all other cells empty. Explorer starts **C2**. Visible instruction list: **up, up, right**, exactly one cell each.
 2. Step-by-step results: **C2→B2→A2→A3**, ending at **garden**. Player may predict cell or destination with accessible named choices; no route animation required.
 3. Feedback for B3: "We needed a second up step to reach row A"; for A2: "That is after the two up steps, before the final right"; for D3: "That is down, not up".
-4. Challenge a convention violation explicitly: one proposed map-label description says "**A3 means row 3, column A**". Let the learner identify the problem: the map defines **letter rows** and **number columns**. Correct text: "A3 means row A, column 3." This is a *map-reading* error, not a new Language Skill.
+4. Challenge a convention violation explicitly: one proposed map-label description says "**A3 means row 3, column A**". Let the learner identify the problem: the map defines **letter rows** and **number columns**. Correct text: "A3 means row A, column 3." This is a _map-reading_ error, not a new Language Skill.
 5. Optional scale thought experiment: If a different map shows squares twice as wide **on screen**, do not assume each square is twice the real distance; require a declared scale. An accessibility description should state this conceptual point without measuring physical pixels.
 
 ## INTERACTIVE OBJECTS, STATES AND RULES

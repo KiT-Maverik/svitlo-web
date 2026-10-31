@@ -43,7 +43,7 @@ These observable outcomes state what the Lesson intends to teach and invite lear
 
 ## Essential subject matter
 
-- A pictograph represents observed frequencies using repeated symbols. A *key* states how many observations each symbol represents. In this lesson the key always says 1 icon = 1 object.
+- A pictograph represents observed frequencies using repeated symbols. A _key_ states how many observations each symbol represents. In this lesson the key always says 1 icon = 1 object.
 - In a one-to-one pictograph, the correct row icon count equals that category's observed count. Changing the physical icon size or color cannot change the number it represents.
 - A source table with Apples 4, Pears 3, Plums 2 (all pieces of fruit) must produce four/three/two uniform count tokens, with category labels kept beside the matching rows.
 - To read a pictograph, identify the category label, read the key, and count the symbols in that row. For five cat icons, two dog icons and four bird icons, there are 5, 2 and 4 animals respectively.
@@ -53,12 +53,12 @@ These observable outcomes state what the Lesson intends to teach and invite lear
 
 ## Conceptual progression and dependencies
 
-Build on the listed prerequisites, expose the *reference* (whole size, hour and minute scale, pictograph key, or random-experiment conditions) before asking the learner to reason. Move from a familiar case to an interactive contrast that makes a common misconception visible, then apply the correct rule in an independent fresh example. The Screenwriter chooses presentation, interactions and number of Sections; the Methodologist owns content limits and accuracy. Supporting representations teach a Skill; they do not create additional Skill IDs.
+Build on the listed prerequisites, expose the _reference_ (whole size, hour and minute scale, pictograph key, or random-experiment conditions) before asking the learner to reason. Move from a familiar case to an interactive contrast that makes a common misconception visible, then apply the correct rule in an independent fresh example. The Screenwriter chooses presentation, interactions and number of Sections; the Methodologist owns content limits and accuracy. Supporting representations teach a Skill; they do not create additional Skill IDs.
 
 ## Misconceptions, examples and boundaries
 
 - A larger decorative icon stands for more objects even though the stated key is one-to-one.
-- The pictograph has one icon per *category*, not per observation.
+- The pictograph has one icon per _category_, not per observation.
 - An unlabeled row of five icons tells us which category it describes without a heading.
 - A displayed key can be ignored because the icons look like the physical objects.
 - A pictograph with five icons for four observed apples is acceptable because it looks more balanced.
@@ -88,4 +88,4 @@ Not specified. Standalone and Program-neutral. Do not claim formal Ukrainian or 
 
 ## Methodologist handoff
 
-**Draft pending editorial approval.** Companion Content and Scene specifications are *provisional* under the explicit batch instruction; their creation does not satisfy or bypass the Methodologist approval gate. No runtime Lesson_Config, Question, Quiz, React Scene, scoring, storage API or Note implementation is authorized by this handoff.
+**Draft pending editorial approval.** Companion Content and Scene specifications are _provisional_ under the explicit batch instruction; their creation does not satisfy or bypass the Methodologist approval gate. No runtime Lesson_Config, Question, Quiz, React Scene, scoring, storage API or Note implementation is authorized by this handoff.

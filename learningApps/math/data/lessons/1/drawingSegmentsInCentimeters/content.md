@@ -39,12 +39,12 @@ The learner should repeatedly see the two separate sources of correctness: **whe
 
 ### Section 2 — Make Three Different Lengths
 
-- **Purpose:** transfer the same procedure while only the *target number* changes.
+- **Purpose:** transfer the same procedure while only the _target number_ changes.
 - **Current implementation shape:** `LessonSection_Config` with one vertical stack.
 - **Ordered Resources:**
   1. **text — existing:** "Choose **3 cm**, **5 cm**, or **7 cm**. Where will you place the second dot if the first dot is at 0? Place the dots, draw the straight connection, then check your result."
   2. **scene — proposed:** [Measured Segment Maker](./scenes/measuredSegmentMaker.scene-spec.md), stage B. First choose a target from {3,5,7}; each new target clears old B and stroke, keeps one ruler with equal 0–10 intervals. Controls are "Set A to 0", "Mark B at n" (n selectable by accessible tick list), "Connect straight", "Check construction", "Back", "Reset". For each target n, the correct constructed segment spans marks **0→n**, precisely **n** centimeter spaces. A ruler may be positioned to a different visual location without changing unit spacing.
-  3. **markdown — existing:** "The same ruler can help make different lengths. If we need **5 cm**, our last mark is **5**, because we count **five spaces** after 0. For **7 cm**, our last mark is 7. We should verify the straight segment *after* we draw it."
+  3. **markdown — existing:** "The same ruler can help make different lengths. If we need **5 cm**, our last mark is **5**, because we count **five spaces** after 0. For **7 cm**, our last mark is 7. We should verify the straight segment _after_ we draw it."
 - **Feedback:** If target 5 and learner chooses B at 6: "Your segment would span 0 to 6, which is **6 cm**. Move B back one mark to 5." If target 3 and B at 3 but connection uses a visibly bent route: "The endpoints are correct, but the path is not **one straight segment**. Choose 'Connect straight'." For an already correct construction: "Both ends line up and the path is straight. It spans n equal spaces."
 - **Access and autonomy:** Learner may try all targets in any order; a button sequence provides exactly the same construction as optional drag. No need to draw with a finger. Nonvisual ledger reports every chosen mark and connection type without giving the answer before checking.
 
@@ -55,7 +55,7 @@ The learner should repeatedly see the two separate sources of correctness: **whe
 - **Ordered Resources:**
   1. **text — existing:** "Two learners tried to make a **5 cm** segment. One placed A at ruler mark **1** and B at mark **5**. Another placed A at **0** and B at **5** but drew a **bent** line. Did either one make the requested straight 5 cm segment?"
   2. **scene — proposed:** [Measured Segment Maker](./scenes/measuredSegmentMaker.scene-spec.md), stage C, two selectable flawed samples. **Sample 1** has aligned straight ruler marks 1 and 5, so endpoint separation is only **4** centimeter intervals, despite the printed last mark being 5. **Sample 2** has endpoints at marks 0 and 5, but the connecting path goes via an off-line third point, so it is not the straight segment AB. Learner can choose "Fix start", "Fix end", "Straighten path", then replay an accurate construction.
-  3. **markdown — existing:** "For a **5 cm straight segment**, both conditions must hold: A at **0** and B at **5**, and a **single straight path** joins A and B. The first sample is only 4 cm between its endpoints. The second is a *bent route*, not a segment."
+  3. **markdown — existing:** "For a **5 cm straight segment**, both conditions must hold: A at **0** and B at **5**, and a **single straight path** joins A and B. The first sample is only 4 cm between its endpoints. The second is a _bent route_, not a segment."
 - **Explanatory feedback:** For sample 1, "Starting at tick 1 skips the first space. Between ticks 1 and 5 there are four intervals." For sample 2, "The curved/bent route touches both points but does not go straight between them." If learner proposes extending a crooked path: "Fix its shape, not just its apparent size." We do not imply nonzero-start construction is mathematically impossible; rather, the prescribed **introductory zero-start method** was not followed.
 - **Planned Note:** After diagnosis: "Correct endpoints **and** straight path are both needed."
 
@@ -67,7 +67,7 @@ The learner should repeatedly see the two separate sources of correctness: **whe
   1. **text — existing:** "Make a fresh straight segment **6 cm long**. This time the ruler starts without any dots on the drawing. What will you mark, and how will you connect the marks? Try before asking for a hint."
   2. **scene — proposed:** [Measured Segment Maker](./scenes/measuredSegmentMaker.scene-spec.md), stage D. Blank workspace, target 6 cm; learner independently sets A at 0, places B at tick 6, connects straight and checks. If the initial ruler is shifted, "Align zero" moves **the marked origin**, not the physical edge, into the construction start. Expected final state: A 0, B 6, straight segment, **six equal intervals**. Reveal a new optional orientation where the same marks are placed vertically; true model length is preserved.
   3. **markdown — existing:** "We marked 0 and 6 and drew a straight segment between them. That covers six one-centimeter intervals. The number **6 cm** tells us the finished segment's length, not the size of a dot or the thickness of the line."
-- **Feedback and flexible routes:** If B=5: "Five spaces, one short; mark the next centimeter line." If B=7: "Seven spaces, one too far." If start at outer plastic edge: "Find the **printed zero**; the blank ruler margin is not a centimeter." For an accepted straight six-interval construction, explain *why* each condition was satisfied. A "Show first hint" action reveals the need to locate zero **without** drawing the finished line.
+- **Feedback and flexible routes:** If B=5: "Five spaces, one short; mark the next centimeter line." If B=7: "Seven spaces, one too far." If start at outer plastic edge: "Find the **printed zero**; the blank ruler margin is not a centimeter." For an accepted straight six-interval construction, explain _why_ each condition was satisfied. A "Show first hint" action reveals the need to locate zero **without** drawing the finished line.
 - **Unscored external transfer:** With optional physical tools, attempt a 6 cm pencil segment on paper and check with a calibrated ruler. A student without tools gets complete equivalent construction practice inside the Scene.
 
 ## CUSTOM SCENE SPECIFICATIONS
@@ -96,7 +96,7 @@ The generic Lesson Section currently renders `text`, `markdown` and `scene` Reso
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 
 - [Draft Methodologist Brief](./methodologist-brief.md) and its canonical draw-segment Skill.
-- Editor: check that the no-drag construction controls provide the *same* mathematical outcome as tracing a real line with pencil, within a schematic model.
+- Editor: check that the no-drag construction controls provide the _same_ mathematical outcome as tracing a real line with pencil, within a schematic model.
 - The Methodologist Brief is **Draft** and all Scene/content text is provisional.
 
 ## HANDOFF

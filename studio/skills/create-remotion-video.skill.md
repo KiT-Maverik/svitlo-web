@@ -17,7 +17,7 @@
 
 Approach the task as an experienced **motion designer, editor, compositor, animation engineer and audio/video producer**, not merely a React developer who animates text.
 
-- **Storyboarding and visual hierarchy:** translate *approved* narrative beats into a shot list, purposefully timed visual changes, camera motion, clear focal points, readable titles, purposeful transitions and controlled information density.
+- **Storyboarding and visual hierarchy:** translate _approved_ narrative beats into a shot list, purposefully timed visual changes, camera motion, clear focal points, readable titles, purposeful transitions and controlled information density.
 - **Animation fundamentals:** master staging, anticipation, easing, velocity/acceleration curves, overshoot/settle, follow-through, squash/stretch when stylistically appropriate, arcs, timing, rhythm and visual continuity. Respect realism and scientific models when the subject demands precision.
 - **Timing and compositing:** plan at frame granularity (holds, cuts, overlaps, stagger, masking, clipping, parallax, layer compositing and motion blur), with coherent pacing and visually stable typography. Reusable animation primitives are preferable to scattered magic frame constants.
 - **Advanced motion work:** choreograph complex multi-object movement, morphing paths, data-driven graphs, charts, transformations, camera moves, perspective, pseudo-3D/3D, particles, procedural patterns, kinetic typography and layered effects. Use SVG, Canvas, WebGL/Three.js or auxiliary libraries only if the selected Remotion pipeline supports deterministic preview **and** final rendering.
@@ -63,16 +63,16 @@ Choose **YouTube hosting** when the intent is **public reach, sharing/discovery,
 - Do not assert a completed `youtube` content-block integration: the current Engine declares the `'youtube'` label but lacks a member of `Resource_Config` and the inspected generic Lesson Section renderer does not support it.
 - No automatic uploads, account access, monetization or external publication without explicit authorization. Report actual link, video privacy level, subtitles and availability only after confirmed.
 
-**Decision rule:** choose the **lowest-complexity delivery that preserves the approved instructional objective**, full localization, accessibility, offline capabilities and device compatibility. If the brief asks for a responsive timeline *and* independent learner-controlled manipulation, discuss a hybrid composition + Scene rather than misclassifying a rendered video as an interactive experiment. If a high-cost Player is non-equivalent on low-end hardware, escalate instead of silently dropping the educational behavior.
+**Decision rule:** choose the **lowest-complexity delivery that preserves the approved instructional objective**, full localization, accessibility, offline capabilities and device compatibility. If the brief asks for a responsive timeline _and_ independent learner-controlled manipulation, discuss a hybrid composition + Scene rather than misclassifying a rendered video as an interactive experiment. If a high-cost Player is non-equivalent on low-end hardware, escalate instead of silently dropping the educational behavior.
 
 ## OUTPUT FORMATS — FULL HD + STORY
 
 Unless the approved brief says otherwise, design **two first-class, semantically equivalent compositions** (not a blind cropped duplicate):
 
-| Variant | Composition dimensions | Ratio | Intended use |
-| --- | --- | --- | --- |
-| **Landscape Full HD** | **1920 × 1080** | **16:9** | In-lesson videos, full-screen presentations, YouTube landscape |
-| **Portrait Story / vertical Full HD** | **1080 × 1920** | **9:16** | Vertical Story/Shorts-style delivery, mobile sharing and vertical learning views |
+| Variant                               | Composition dimensions | Ratio    | Intended use                                                                     |
+| ------------------------------------- | ---------------------- | -------- | -------------------------------------------------------------------------------- |
+| **Landscape Full HD**                 | **1920 × 1080**        | **16:9** | In-lesson videos, full-screen presentations, YouTube landscape                   |
+| **Portrait Story / vertical Full HD** | **1080 × 1920**        | **9:16** | Vertical Story/Shorts-style delivery, mobile sharing and vertical learning views |
 
 - Both should convey **the same approved educational message**: reflow text, relocate labels, resize diagrams, shift camera focus or reorganize scenes **intentionally**. Do not stretch, letterbox unintentionally, crop meaningful formulas/diagrams or make captions unreadable.
 - Choose a shared **fps** suited to animation and production (typically **30 fps** unless the brief or material needs otherwise). Define `durationInFrames` from the intended timeline for each composition; validate timing with actual media and voiceover length.

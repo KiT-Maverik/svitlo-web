@@ -10,7 +10,7 @@ Implementation state: editorial plan; custom Scene and runtime configuration do 
 
 ## INSTRUCTIONAL CONCEPT
 
-"**Count what makes the outline.**" Children already know a triangle and rectangle by sight. Now an unfamiliar slanted or uneven shape should be recognized by its **straight sides** and the **corners (vertices)** where two neighboring sides meet. We first test whether an outline is a polygon, then count, then classify. Deliberate nonexamples make properties visible. A shape may be stretched, recolored or turned without becoming a different *side-count class*, provided the boundary remains a **simple closed polygon** and its number of straight sides remains unchanged.
+"**Count what makes the outline.**" Children already know a triangle and rectangle by sight. Now an unfamiliar slanted or uneven shape should be recognized by its **straight sides** and the **corners (vertices)** where two neighboring sides meet. We first test whether an outline is a polygon, then count, then classify. Deliberate nonexamples make properties visible. A shape may be stretched, recolored or turned without becoming a different _side-count class_, provided the boundary remains a **simple closed polygon** and its number of straight sides remains unchanged.
 
 A **side** is a straight line segment along the outer boundary. A **vertex** is a joining point between consecutive sides; the final return to the first vertex does **not** create an extra vertex. For simple polygons, side count equals vertex count. All of the Lesson's polygon examples are non-self-crossing; classifications use 3, 4, 5 or 6 sides. Neither every quadrilateral nor every irregular polygon must be a rectangle.
 
@@ -32,7 +32,7 @@ Avoid a repetitive shape-matching quiz. The key experience is a **traceable, exp
 - **Ordered blocks:**
   1. **text — existing renderer:** "This shape is tilted and its sides are not all the same size. Is it still a four-sided shape? What would you count to find out?"
   2. **scene — existing type, proposed Scene:** [Polygon Outline Investigator](./scenes/polygonOutlineInvestigator.scene-spec.md), stage A: irregular quadrilateral in a clear non-crossing outline. Controls "Trace next straight side" / "Show next corner" reveal exactly four distinct boundary edges and four distinct meeting points; an internal dashed diagonal is **decoration** and can be hidden.
-  3. **markdown — existing renderer:** "The **sides** are straight pieces of the outside edge. A **corner**, or **vertex**, is where one side meets the next. This outline has **4 sides and 4 vertices**. A line drawn *inside* it is not an extra outer side."
+  3. **markdown — existing renderer:** "The **sides** are straight pieces of the outside edge. A **corner**, or **vertex**, is where one side meets the next. This outline has **4 sides and 4 vertices**. A line drawn _inside_ it is not an extra outer side."
 - **Action and feedback:** Invite children to name each edge 1–4 as it lights up or appears in a textual list. If they count the dashed diagonal: "That line goes through the inside. We count only the outside outline." If they count five corners: "We came back to the **starting corner**. It does not become a new corner."
 - **Navigation/access:** Child-controlled reveal, large buttons, read-out vertex list and alternative ordered description. No exact dragging or color-only highlight.
 - **Planned Note:** "Sides are the straight parts of the outside edge."
@@ -54,9 +54,9 @@ Avoid a repetitive shape-matching quiz. The key experience is a **traceable, exp
 - **Section contract:** `LessonSection_Config`, vertical sequence.
 - **Ordered blocks:**
   1. **text — existing:** "A pentagon can be very uneven. Can you still find **five** outside sides? Turn it and check what stays the same."
-  2. **scene — proposed:** [Polygon Outline Investigator](./scenes/polygonOutlineInvestigator.scene-spec.md), stage C. Start irregular pentagon with vertices (1,1), (4,1), (5,3), (3,4), (1,3) in *local diagram units*, five distinct straight edges closing to the first. Trace 1→2→3→4→5→1; turn whole outline by a preset 90° and recount. Switch between **triangle 3/3**, **irregular quadrilateral 4/4**, **irregular pentagon 5/5**, **simple hexagon 6/6**. Each result gives count and category; shape names are introduced only *after* the learner can justify them.
+  2. **scene — proposed:** [Polygon Outline Investigator](./scenes/polygonOutlineInvestigator.scene-spec.md), stage C. Start irregular pentagon with vertices (1,1), (4,1), (5,3), (3,4), (1,3) in _local diagram units_, five distinct straight edges closing to the first. Trace 1→2→3→4→5→1; turn whole outline by a preset 90° and recount. Switch between **triangle 3/3**, **irregular quadrilateral 4/4**, **irregular pentagon 5/5**, **simple hexagon 6/6**. Each result gives count and category; shape names are introduced only _after_ the learner can justify them.
   3. **markdown — existing:** "Turning did not add an edge. The five outside edges still meet at five vertices: that is a **pentagon**. A polygon with three sides is a triangle, with four is a quadrilateral, with six is a hexagon."
-- **Feedback and contrast:** If user calls irregular pentagon "not a pentagon" because the sides are unequal: "Pentagon means five straight sides that make a simple closed outline; those sides do **not** have to be equal." If someone chooses "6" from the duplicate start corner, show an ordered ledger of five *unique* vertices.
+- **Feedback and contrast:** If user calls irregular pentagon "not a pentagon" because the sides are unequal: "Pentagon means five straight sides that make a simple closed outline; those sides do **not** have to be equal." If someone chooses "6" from the duplicate start corner, show an ordered ledger of five _unique_ vertices.
 - **Proposed Note:** "For a simple polygon, sides and vertices come in matching counts."
 
 ### Section 4 — Explain, Don't Just Guess

@@ -122,16 +122,16 @@ All English teaching copy is **editorial source** for genuine translation into e
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Readiness / owner |
-| --- | --- |
-| LessonSection_Config and ordered text, markdown, scene blocks | Verified in current contract/generic renderer; Coding Agent assembles approved content |
-| Ten Exchange Lab and Place-Value Column Board | **Proposed custom Scenes**, not implemented; Scene Designer builds each after independent approval, with own tests |
-| Independent initial state per Section and locale wiring | Coding Agent verifies prop-free Scene entries and full localization; no invented mode prop |
-| KnowledgeCheckpoint | Existing unscored UI Kit widget through Scene wrapper; not required here |
-| Quiz_Config / Question data | Type contracts exist; adapter presently supports select-one; Assessment Architect owns assessment |
-| Image/audio/video/code | Typed-only in generic renderer; not required |
-| YouTube | Resource label only, not in current Resource_Config; not used |
-| Planned Notes, spaced review, offline content package download | No implemented API claimed; requires separate engineering review |
+| Feature                                                        | Readiness / owner                                                                                                  |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| LessonSection_Config and ordered text, markdown, scene blocks  | Verified in current contract/generic renderer; Coding Agent assembles approved content                             |
+| Ten Exchange Lab and Place-Value Column Board                  | **Proposed custom Scenes**, not implemented; Scene Designer builds each after independent approval, with own tests |
+| Independent initial state per Section and locale wiring        | Coding Agent verifies prop-free Scene entries and full localization; no invented mode prop                         |
+| KnowledgeCheckpoint                                            | Existing unscored UI Kit widget through Scene wrapper; not required here                                           |
+| Quiz_Config / Question data                                    | Type contracts exist; adapter presently supports select-one; Assessment Architect owns assessment                  |
+| Image/audio/video/code                                         | Typed-only in generic renderer; not required                                                                       |
+| YouTube                                                        | Resource label only, not in current Resource_Config; not used                                                      |
+| Planned Notes, spaced review, offline content package download | No implemented API claimed; requires separate engineering review                                                   |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

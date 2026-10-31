@@ -117,7 +117,7 @@ Learners should first predict or justify their thinking without copying the orig
 
 The canonical [equivalentVisual.data.ts](../../../../data/skills/fractions/representation/skills/equivalentVisual.data.ts) governs Skill meaning; its UUID, definition and multilingual translations are unchanged. With the identical 12-unit reference strip: 1/2 = 6 units, 2/4 = 6 units, 1/3 = 4 units, 2/6 = 4 units; 2/6 ≠ 1/2. Splits are equal size within each model. Side-by-side aligned strips have a common starting edge. Use counted lengths and accessible textual numeric comparisons as a full alternative to graphics.
 
-All runtime copy requires complete, authentic translation into every configured locale; this English editorial script is *not* runtime locale coverage. The proposed Scene's essential functions need nonvisual equivalence, mobile usability, semantic RTL, and offline availability. These are requirements for implementation review, not a declaration that they pass.
+All runtime copy requires complete, authentic translation into every configured locale; this English editorial script is _not_ runtime locale coverage. The proposed Scene's essential functions need nonvisual equivalence, mobile usability, semantic RTL, and offline availability. These are requirements for implementation review, not a declaration that they pass.
 
 ## Approvals and implementation boundary
 

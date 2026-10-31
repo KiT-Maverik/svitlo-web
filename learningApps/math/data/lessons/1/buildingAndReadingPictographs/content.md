@@ -4,10 +4,11 @@
 **Methodologist input:** [Draft Brief](./methodologist-brief.md) (**not approved**).
 **Primary audience:** Grade 2, ages 7–8.
 **Target canonical Skills:**
+
 - [buildPictograph.data.ts](../../../../data/skills/data/presentation/skills/buildPictograph.data.ts)
 - [readPictograph.data.ts](../../../../data/skills/data/presentation/skills/readPictograph.data.ts)
-**Independence:** standalone Playground Lesson; no Program storyline, mascot, reward, mission or past learner state required.
-**Implementation:** editorial Content only. No runtime Lesson, Questions, Quizzes, scoring, registered custom Scenes or locale bundles created.
+  **Independence:** standalone Playground Lesson; no Program storyline, mascot, reward, mission or past learner state required.
+  **Implementation:** editorial Content only. No runtime Lesson, Questions, Quizzes, scoring, registered custom Scenes or locale bundles created.
 
 ## Instructional concept
 

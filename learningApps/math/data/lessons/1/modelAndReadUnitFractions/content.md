@@ -139,7 +139,7 @@ Invite the child to describe **why** the result fits the model before revealing 
 
 “A unit fraction is one of equal parts of one chosen whole.”
 
-Proposed pedagogical unlock *point*: when the contrast in Section 3 has been examined and explained. **Status planned, not wired**: no Note entity, unlock API, persistence, offline sync or review-sheet scheduler is claimed present. A learner who does not trigger an eventual Note still gets the full teaching content.
+Proposed pedagogical unlock _point_: when the contrast in Section 3 has been examined and explained. **Status planned, not wired**: no Note entity, unlock API, persistence, offline sync or review-sheet scheduler is claimed present. A learner who does not trigger an eventual Note still gets the full teaching content.
 
 ## Locale, accessibility, offline and resource readiness
 

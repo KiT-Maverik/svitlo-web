@@ -23,7 +23,7 @@ Inspect **every Domain, Group and Skill**, both headings and substantive descrip
 ### 1. Distribution asymmetries
 
 - Recompute actual Domain/Group/Skill totals, child counts and the spread of Skills per Domain and per Group; compare them with all declared counts.
-- Highlight **substantial** outliers, unusually broad or sparse branches, and inconsistent granularity among *semantically comparable* areas. Give actual counts and context.
+- Highlight **substantial** outliers, unusually broad or sparse branches, and inconsistent granularity among _semantically comparable_ areas. Give actual counts and context.
 - Ask whether an imbalance reflects a legitimately larger discipline, over-fragmentation, omitted competencies, a misplaced Group, or two Domains inadvertently merged.
 - **Never enforce equal-sized Domains/Groups, fixed minimum child counts, numeric quotas or arbitrary asymmetry thresholds.** A Group with one Skill and a Domain with many Groups can both be valid.
 
@@ -66,7 +66,7 @@ For each exception include:
 1. **ID, category, severity and status**: confirmed inconsistency vs editorial question.
 2. **Exact location**: Domain / Group / Skill heading(s) and a file location or stable anchor.
 3. **Evidence**: current wording, comparable entries or actual counts; explain **why** this is suspect, not merely that it is unusual.
-4. **Recommended disposition**: keep with rationale, simplify, rename, relocate, split, merge, add coverage, or ask the editor. Give a *minimal concrete alternative* where possible and identify trade-offs.
+4. **Recommended disposition**: keep with rationale, simplify, rename, relocate, split, merge, add coverage, or ask the editor. Give a _minimal concrete alternative_ where possible and identify trade-offs.
 5. **Editorial decision needed**, where unresolved. Never present a proposed change as approved.
 
 Conclude with **confirmed problems vs open choices**, missing subject coverage, verified counts, evidence limitations, and an ordered list of decisions for the editor. If the evidence supports an exception, report it even when it concerns the author's own prior work; if a flagged pattern is defensible, say so. Avoid duplicating the entire taxonomy or overwhelming the editor with every acceptable entry.

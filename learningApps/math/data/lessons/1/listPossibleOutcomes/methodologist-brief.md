@@ -34,7 +34,7 @@ Relevant previously transferred Playground Skill: `certainImpossible`. The Lesso
 - For a spinner with four sectors numbered 1, 2, 3, 4, list exactly 1, 2, 3, 4 as possible reported results.
 - Identify missing and impossible entries in an outcome list, explaining why 5 is not a result on this spinner.
 - Distinguish individual spinner sectors or tokens from the reported number/color when labels repeat.
-- For a bag holding two red tokens and one blue token, list the possible *colors* as red and blue once each, not red/red/blue or green.
+- For a bag holding two red tokens and one blue token, list the possible _colors_ as red and blue once each, not red/red/blue or green.
 
 An instructional interaction shows what was taught or practiced, not validated mastery of every linked Skill.
 
@@ -44,9 +44,9 @@ An instructional interaction shows what was taught or practiced, not validated m
 - If a four-sector spinner is labeled 1, 2, 3, 4 and the recorded value is the number shown, the possible outcomes are exactly {1, 2, 3, 4}. Every spin reports one of these, never a 5.
 - The possible-outcome list includes each distinct reported value. A missing possible value makes the list incomplete; an impossible value makes it inaccurate.
 - If we draw exactly one token from a bag with two red and one blue and record its **color**, the possible color outcomes are {red, blue}. There are three physical tokens but two distinct reported color values.
-- A list of *possible colors* is not a tally of how many physical tokens carry those colors and does not imply equal likelihood. If token identity were recorded instead, it would be a different experiment description.
+- A list of _possible colors_ is not a tally of how many physical tokens carry those colors and does not imply equal likelihood. If token identity were recorded instead, it would be a different experiment description.
 
-**Instructional depth and hard scope:** One draw or one spin; finite sample spaces, at most four visibly specified sectors or three tokens. Outcomes are mutually exclusive and exhaustive at the *chosen description level*. No probability arithmetic, numerical odds, equal-likelihood assumptions, replacement protocols or predictions of the next actual result.
+**Instructional depth and hard scope:** One draw or one spin; finite sample spaces, at most four visibly specified sectors or three tokens. Outcomes are mutually exclusive and exhaustive at the _chosen description level_. No probability arithmetic, numerical odds, equal-likelihood assumptions, replacement protocols or predictions of the next actual result.
 
 ## Conceptual progression and dependencies
 

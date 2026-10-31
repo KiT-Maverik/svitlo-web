@@ -107,15 +107,15 @@ Real translations are required for every supported locale, including place-value
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Readiness / next owner |
-| --- | --- |
-| LessonSection_Config, text/markdown/scene vertical rendering | Verified in current Playground implementation; Coding Agent integrates reviewed resources |
-| Hundred Exchange Lab, Zero Bridge Column Board | **Proposed**, require independent editor-approved specifications then Scene Designer implementation and own tests |
-| Prop-free isolated Scene entries, locale lookup | Coding Agent checks integration; no invented mode prop or Scene API |
-| Quiz/Question scoring | Assessment Architect owns validation and scoring; none authored |
-| image/video/audio/code generic Section resources | Typed only, not generic-rendered; unused |
-| youtube label | No generic Resource_Config; unused |
-| Notes, offline sync/download, spaced review | Planned requirements, not claimed implemented |
+| Feature                                                      | Readiness / next owner                                                                                            |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| LessonSection_Config, text/markdown/scene vertical rendering | Verified in current Playground implementation; Coding Agent integrates reviewed resources                         |
+| Hundred Exchange Lab, Zero Bridge Column Board               | **Proposed**, require independent editor-approved specifications then Scene Designer implementation and own tests |
+| Prop-free isolated Scene entries, locale lookup              | Coding Agent checks integration; no invented mode prop or Scene API                                               |
+| Quiz/Question scoring                                        | Assessment Architect owns validation and scoring; none authored                                                   |
+| image/video/audio/code generic Section resources             | Typed only, not generic-rendered; unused                                                                          |
+| youtube label                                                | No generic Resource_Config; unused                                                                                |
+| Notes, offline sync/download, spaced review                  | Planned requirements, not claimed implemented                                                                     |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

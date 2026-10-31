@@ -27,7 +27,7 @@ A child can directly observe that removed and remaining quantities partition the
 
 ## INTERACTIVE OBJECTS, STATES AND RULES
 
-Four independent prop-free Scene entries (one per Section); **no new React mode prop** is implied. Internal code may be shared with separated state and locale bindings. Objects: ordered group trays, total/removed/remaining ledger, optional candidate buttons, original equation, substitution line, explanation and reset/reveal. The candidate may temporarily show a failed *trial* clearly marked “does not equal,” not a true identity. Reset returns entry-specific amounts and hidden states, not a hidden assessment score. Each action recomputes exact integer arithmetic and never changes original total except when switching to a named transfer example.
+Four independent prop-free Scene entries (one per Section); **no new React mode prop** is implied. Internal code may be shared with separated state and locale bindings. Objects: ordered group trays, total/removed/remaining ledger, optional candidate buttons, original equation, substitution line, explanation and reset/reveal. The candidate may temporarily show a failed _trial_ clearly marked “does not equal,” not a true identity. Reset returns entry-specific amounts and hidden states, not a hidden assessment score. Each action recomputes exact integer arithmetic and never changes original total except when switching to a named transfer example.
 
 ## VISUAL / AUDIO / MEDIA DIRECTION
 

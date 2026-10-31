@@ -4,6 +4,7 @@
 **Lesson:** [Find the Story in a Data Table — Content](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [readSimpleTable.data.ts](../../../../../data/skills/data/presentation/skills/readSimpleTable.data.ts)
 - [compareCategories.data.ts](../../../../../data/skills/data/interpretation/skills/compareCategories.data.ts)
 
@@ -17,15 +18,15 @@ This Scene is a **proposed self-contained, prop-free root**. A renderer for the 
 
 ## Model, essential visual states and verifiable answers
 
-| State / preset | Concrete representation | Explanation / correct conclusion |
-|---|---|---|
-| Main table | Two headings Shape / Number of shapes; Triangle 6, Square 4, Circle 2 | All values count shapes from one tray |
-| Read square cell | Square row × Number of shapes column | 4 squares |
-| Combine two | Triangle 6 and Circle 2 selected | 6+2=8 shapes |
-| All rows | Triangle 6 + Square 4 + Circle 2 | 12 shapes total |
-| Difference | Triangle 6 and Square 4 paired | 6−4=2 extra triangles |
-| New table | Star 5, Moon 3, Sun 1, same unit shapes | 5+3+1=9 shapes; 5−3=2 gap |
-| Incompatible unit warning | An example length 4 cm placed beside count 6 shapes | Cannot treat cm as a count of shapes |
+| State / preset            | Concrete representation                                               | Explanation / correct conclusion      |
+| ------------------------- | --------------------------------------------------------------------- | ------------------------------------- |
+| Main table                | Two headings Shape / Number of shapes; Triangle 6, Square 4, Circle 2 | All values count shapes from one tray |
+| Read square cell          | Square row × Number of shapes column                                  | 4 squares                             |
+| Combine two               | Triangle 6 and Circle 2 selected                                      | 6+2=8 shapes                          |
+| All rows                  | Triangle 6 + Square 4 + Circle 2                                      | 12 shapes total                       |
+| Difference                | Triangle 6 and Square 4 paired                                        | 6−4=2 extra triangles                 |
+| New table                 | Star 5, Moon 3, Sun 1, same unit shapes                               | 5+3+1=9 shapes; 5−3=2 gap             |
+| Incompatible unit warning | An example length 4 cm placed beside count 6 shapes                   | Cannot treat cm as a count of shapes  |
 
 **Model scope and limitation:** The table describes one invented finite tray of shapes, not a survey of a population. The explorer does not infer causes or statistics.
 

@@ -82,7 +82,7 @@ Section content is ordered **vertically** as typed resources; a custom Scene can
 2. After Section 3 equal pans: "Equal pan height means equal mass."
 3. After Section 4 repair: "Check that the comparison is fair before deciding."
 
-These are short *future* localized Note suggestions only. No existing Note unlock API, stable Note ID, persistence, user profile or spaced schedule is asserted.
+These are short _future_ localized Note suggestions only. No existing Note unlock API, stable Note ID, persistence, user profile or spaced schedule is asserted.
 
 ## PRACTICE, RETRIEVAL AND ASSESSMENT HANDOFF
 

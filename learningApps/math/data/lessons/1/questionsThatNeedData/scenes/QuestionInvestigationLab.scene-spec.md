@@ -22,12 +22,12 @@ Use the fictional group A–F with six responses to ‘Which fruit would you pic
 
 ## Required observable states
 
-| State | Data or model facts | Correct interpretation |
-|---|---|---|
-| Arithmetic question | What is 4 + 3? Known single answer: 7. | No response collection is required. |
-| Survey question | Which fruit would each of six storybook children choose today? | Several observations; possible variation. |
-| Variable outcomes | Responses A=apple, B=banana, C=apple, D=pear, E=banana, F=apple. | Six responses; counts 3, 2, 1. |
-| Uniform outcomes | Fictional other group: six responses all apple. | The same statistical question can yield uniform responses. |
+| State               | Data or model facts                                              | Correct interpretation                                     |
+| ------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------- |
+| Arithmetic question | What is 4 + 3? Known single answer: 7.                           | No response collection is required.                        |
+| Survey question     | Which fruit would each of six storybook children choose today?   | Several observations; possible variation.                  |
+| Variable outcomes   | Responses A=apple, B=banana, C=apple, D=pear, E=banana, F=apple. | Six responses; counts 3, 2, 1.                             |
+| Uniform outcomes    | Fictional other group: six responses all apple.                  | The same statistical question can yield uniform responses. |
 
 ## Required learning interaction
 

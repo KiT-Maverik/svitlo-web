@@ -50,7 +50,7 @@ Each Section is a single-column ordered Resource plan. **`text` and `markdown`**
 
 ## Independent application and feedback principles
 
-Invite the learner to explain the key reason in a new everyday example, not only repeat the original picture. A plausible wrong answer must receive a *specific mathematical explanation* rather than a red mark. Avoid asserting mastery from one voluntary interaction. No Question/Quiz/scoring implementation is proposed in this batch.
+Invite the learner to explain the key reason in a new everyday example, not only repeat the original picture. A plausible wrong answer must receive a _specific mathematical explanation_ rather than a red mark. Avoid asserting mastery from one voluntary interaction. No Question/Quiz/scoring implementation is proposed in this batch.
 
 ## Future recall cue (not implemented)
 

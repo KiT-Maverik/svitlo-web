@@ -7,7 +7,7 @@ Methodologist objectives: Observe 8+5=13, count the thirteen ones and recognize 
 
 ## LEARNER PURPOSE AND CONCEPT
 
-When two collections of ones together contain ten or more, exchange exactly ten ones for one ten while conserving the value. This lesson makes a base-ten exchange visible. It is distinct from the existing make-ten mental strategy: here the child records and justifies the *new ten* after the ones sum, not only decomposes an addend to reach ten.
+When two collections of ones together contain ten or more, exchange exactly ten ones for one ten while conserving the value. This lesson makes a base-ten exchange visible. It is distinct from the existing make-ten mental strategy: here the child records and justifies the _new ten_ after the ones sum, not only decomposes an addend to reach ten.
 
 Learners are active in the mathematical transformation and see every count, intermediate step and verification. The Scene is not an unscored imitation of a Quiz; it provides concrete controlled exploration and exact feedback.
 
@@ -15,7 +15,7 @@ Learners are active in the mathematical transformation and see every count, inte
 
 For 8+5, count thirteen one-counters, trade ten for one ten-bundle, retain three individual ones: 13 ones → 1 ten + 3 ones, both equal 13. For 9+4, 13 ones → 1T 3O. For 7+6, 13 ones → 1T 3O. Optional boundary 6+4=10 becomes 1T 0O. In decimal place value exactly TEN ones can be replaced with ONE ten; this is not a new amount, and both originals must be counted only once. All totals ≤20; no written carry marks yet.
 
-A child may retain all thirteen loose counters plus a new ten (23), confuse ten-bundle with one object worth one, or think because a ten is created the sum grows by ten. A child may confuse the make-ten strategy (split a contributing addend) with exchanging the *sum* of ones; show their conceptual connection but preserve the new Skill focus.
+A child may retain all thirteen loose counters plus a new ten (23), confuse ten-bundle with one object worth one, or think because a ten is created the sum grows by ten. A child may confuse the make-ten strategy (split a contributing addend) with exchanging the _sum_ of ones; show their conceptual connection but preserve the new Skill focus.
 
 **Invariant:** Before exchange each original counter belongs to exactly one addend; after exchange 10×tens + loose ones equals the sum of original addends. For 13 the only authored exchanged state is 1T3O. Exchanging is a replacement, not an addition.
 
@@ -31,15 +31,15 @@ A child may retain all thirteen loose counters plus a new ten (23), confuse ten-
 
 ## INTERACTIVE OBJECTS, STATES AND RULES
 
-- Four *independent prop-free Scene entries*, one per Section. Section mode is editorial, not a public React prop or Resource_Config discriminator. Implementer may share internal math utilities but must not share per-learner UI state across placements.
-- Objects and semantics: Two source trays, a large exchange ring accepting precisely ten counters and a single ten-bundle marked 10, with an accessible running ledger; never show ten *more* counters appearing. Use labeled objects, native controls for each action, ordered numerical text ledger, prediction buttons, explanation and Reset/Undo.
+- Four _independent prop-free Scene entries_, one per Section. Section mode is editorial, not a public React prop or Resource_Config discriminator. Implementer may share internal math utilities but must not share per-learner UI state across placements.
+- Objects and semantics: Two source trays, a large exchange ring accepting precisely ten counters and a single ten-bundle marked 10, with an accessible running ledger; never show ten _more_ counters appearing. Use labeled objects, native controls for each action, ordered numerical text ledger, prediction buttons, explanation and Reset/Undo.
 - State: Per placement: contributor counts (8+5, 9+4, 7+6 or boundary 6+4), stable counter identities, number of loose ones and ten bundles, exchange in progress, prediction, feedback visibility and Reset.
-- Rules: Before exchange each original counter belongs to exactly one addend; after exchange 10×tens + loose ones equals the sum of original addends. For 13 the only authored exchanged state is 1T3O. Exchanging is a replacement, not an addition. The UI must not silently change actual mathematical objects when a child selects a wrong option; incorrect statements are explicitly identified as *trials*, not true equalities.
+- Rules: Before exchange each original counter belongs to exactly one addend; after exchange 10×tens + loose ones equals the sum of original addends. For 13 the only authored exchanged state is 1T3O. Exchanging is a replacement, not an addition. The UI must not silently change actual mathematical objects when a child selects a wrong option; incorrect statements are explicitly identified as _trials_, not true equalities.
 - All instruction available on reveal without forced guesses. No grader, Note API, score event or achievement state.
 
 ## VISUAL / AUDIO / MEDIA DIRECTION
 
-Two source trays, a large exchange ring accepting precisely ten counters and a single ten-bundle marked 10, with an accessible running ledger; never show ten *more* counters appearing. Render using lightweight HTML/SVG with explicit quantities and large labels, rather than remote/generated image assets. Motion is initiated by learner and may be stepped through or skipped; reduced motion shows identical before/after numerical states instantly. No WebGL, mandatory narration, video, music, external resources or reward graphics.
+Two source trays, a large exchange ring accepting precisely ten counters and a single ten-bundle marked 10, with an accessible running ledger; never show ten _more_ counters appearing. Render using lightweight HTML/SVG with explicit quantities and large labels, rather than remote/generated image assets. Motion is initiated by learner and may be stepped through or skipped; reduced motion shows identical before/after numerical states instantly. No WebGL, mandatory narration, video, music, external resources or reward graphics.
 
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 

@@ -43,7 +43,7 @@ Semantically labeled Tens/Ones columns, linked countable counters and ten-bundle
 
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 
-Every prompt, error, step, role, place name, label, status, aria text and Note genuinely localized for all supported locales; no English fallback. In RTL, preserve exact operand identities and place values rather than mechanically flipping number order. A fully interactive ordered text ledger mirrors *each exchange and arithmetic step* via native keyboard/touch/switch buttons and screen reader status, providing full access without vision or dragging. Large child-friendly controls, visible focus, high contrast, zoom/mobile and reduced-motion parity. Entire deterministic operation and locale data must work offline after download on low-end devices.
+Every prompt, error, step, role, place name, label, status, aria text and Note genuinely localized for all supported locales; no English fallback. In RTL, preserve exact operand identities and place values rather than mechanically flipping number order. A fully interactive ordered text ledger mirrors _each exchange and arithmetic step_ via native keyboard/touch/switch buttons and screen reader status, providing full access without vision or dragging. Large child-friendly controls, visible focus, high contrast, zoom/mobile and reduced-motion parity. Entire deterministic operation and locale data must work offline after download on low-end devices.
 
 ## ACCEPTANCE SCENARIOS
 
@@ -57,4 +57,4 @@ Every prompt, error, step, role, place name, label, status, aria text and Note g
 
 ## IMPLEMENTATION DEPENDENCIES AND OPEN QUESTIONS
 
-Generic Scene Resource rendering exists; this specific Place Value Column Adder is **proposed** and awaits editorial approval of the Draft Brief, then separate Content/Scene approval, Design Scene coding and own tests. Coding Agent validates state isolation, actual locale coverage and offline delivery. Assessment Architect owns scored Question work. Editorial review: Confirm this Lesson's single-carry Grade 2 depth and separation from `additionRegroupingAcrossPlaces`, which extends the *value-preserving exchange* across tens and hundreds.
+Generic Scene Resource rendering exists; this specific Place Value Column Adder is **proposed** and awaits editorial approval of the Draft Brief, then separate Content/Scene approval, Design Scene coding and own tests. Coding Agent validates state isolation, actual locale coverage and offline delivery. Assessment Architect owns scored Question work. Editorial review: Confirm this Lesson's single-carry Grade 2 depth and separation from `additionRegroupingAcrossPlaces`, which extends the _value-preserving exchange_ across tens and hundreds.

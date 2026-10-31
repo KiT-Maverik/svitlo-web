@@ -10,7 +10,7 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-We know the **whole product** and one **factor** but not the other. If three equal groups make twelve, every group must have four: **12 ÷ 3 = 4**. The original statement is **3 × □ = 12**; inserting four and calculating **3 × 4 = 12** verifies the candidate. If a box comes *first*, in **□ × 4 = 12**, the example convention instead asks “how many groups of four?” The missing three has a distinct modeled role. Division discovers the answer; multiplication checks it.
+We know the **whole product** and one **factor** but not the other. If three equal groups make twelve, every group must have four: **12 ÷ 3 = 4**. The original statement is **3 × □ = 12**; inserting four and calculating **3 × 4 = 12** verifies the candidate. If a box comes _first_, in **□ × 4 = 12**, the example convention instead asks “how many groups of four?” The missing three has a distinct modeled role. Division discovers the answer; multiplication checks it.
 
 This is a readiness-dependent enrichment lesson, not introductory multiplication for everyone. Only exact, small, nonzero-known-factor cases; no zero-factor ambiguity, mixed-ability prerequisite skipping, fractions, long division or rote timed table practice.
 

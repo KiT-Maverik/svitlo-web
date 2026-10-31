@@ -18,10 +18,12 @@ export function resolveLearningAppUrl(raw: string | undefined): string | null {
 }
 
 export function getLearningApps(): readonly LearningApp[] {
-  return [{
-    id: 'math',
-    name: 'Математика',
-    description: 'Інтерактивне вивчення математичних понять і навичок.',
-    url: resolveLearningAppUrl(process.env.NEXT_PUBLIC_MATH_APP_URL),
-  }];
+  return [
+    {
+      id: 'math',
+      name: 'Математика',
+      description: 'Інтерактивне вивчення математичних понять і навичок.',
+      url: resolveLearningAppUrl(process.env.NEXT_PUBLIC_MATH_APP_URL),
+    },
+  ];
 }

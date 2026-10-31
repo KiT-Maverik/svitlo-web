@@ -18,7 +18,7 @@ A set-builder inspector for a clearly stated one-step experiment. Learner change
 
 **Why interactivity matters:** The child can change the relevant mathematical or observational state, inspect evidence rather than accept an answer by authority, receive a reason-specific explanation, and retry without penalty. The final unfamiliar example is not a copy of the original. The experience is a standalone teaching sequence, not a Program plot, mascot activity or points-based game.
 
-**Teaching limits:** One draw or one spin; finite sample spaces, at most four visibly specified sectors or three tokens. Outcomes are mutually exclusive and exhaustive at the *chosen description level*. No probability arithmetic, numerical odds, equal-likelihood assumptions, replacement protocols or predictions of the next actual result. The experiment is one independent spin or draw with fully disclosed contents; the learner lists outcomes at the specified observation level only. Comparing likelihood, calculating ratios and repeated-run variation are reserved for their own Skills.
+**Teaching limits:** One draw or one spin; finite sample spaces, at most four visibly specified sectors or three tokens. Outcomes are mutually exclusive and exhaustive at the _chosen description level_. No probability arithmetic, numerical odds, equal-likelihood assumptions, replacement protocols or predictions of the next actual result. The experiment is one independent spin or draw with fully disclosed contents; the learner lists outcomes at the specified observation level only. Comparing likelihood, calculating ratios and repeated-run variation are reserved for their own Skills.
 
 ## Learner journey / planned Sections
 
@@ -139,7 +139,7 @@ Invite the child to describe **why** the result fits the model before revealing 
 
 “First say what gets recorded; a complete outcome list contains every possible reported result and nothing impossible.”
 
-Proposed pedagogical unlock *point*: when the contrast in Section 3 has been examined and explained. **Status planned, not wired**: no Note entity, unlock API, persistence, offline sync or review-sheet scheduler is claimed present. A learner who does not trigger an eventual Note still gets the full teaching content.
+Proposed pedagogical unlock _point_: when the contrast in Section 3 has been examined and explained. **Status planned, not wired**: no Note entity, unlock API, persistence, offline sync or review-sheet scheduler is claimed present. A learner who does not trigger an eventual Note still gets the full teaching content.
 
 ## Locale, accessibility, offline and resource readiness
 

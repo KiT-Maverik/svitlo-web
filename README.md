@@ -4,31 +4,31 @@ Svitlo is a modular interactive-learning project. Each textbook is a **standalon
 
 ## Workspace map
 
-| Workspace | Folder | Purpose |
-| --- | --- | --- |
-| `@svitlo/platform` | `frontend/platform` | Next.js web platform and external textbook catalog |
-| `@svitlo/math` | `learningApps/math` | Mathematics textbook; owns taxonomy and curriculum |
-| `@svitlo/biology` | `learningApps/biology` | Biology textbook scaffold |
-| `@svitlo/geography` | `learningApps/geography` | Geography textbook scaffold |
-| `@svitlo/informatics` | `learningApps/informatics` | Informatics textbook scaffold |
-| `@svitlo/physics` | `learningApps/physics` | Physics textbook scaffold |
-| `@svitlo/language-literature` | `learningApps/language-literature` | Language and Literature textbook scaffold |
-| `@svitlo/ukrainian` | `learningApps/languages/ukrainian` | Ukrainian language textbook scaffold (under Languages) |
-| `@svitlo/chemistry` | `learningApps/chemistry` | Chemistry textbook scaffold |
-| `@svitlo/astronomy` | `learningApps/astronomy` | Astronomy textbook scaffold |
-| `@svitlo/history` | `learningApps/history` | History textbook scaffold |
-| `@svitlo/philosophy` | `learningApps/philosophy` | Philosophy textbook scaffold |
-| `@svitlo/psychology` | `learningApps/psychology` | Psychology textbook scaffold |
-| `@svitlo/economics` | `learningApps/economics` | Economics textbook scaffold |
-| `@svitlo/art` | `learningApps/art` | Art textbook scaffold |
-| `@svitlo/health-safety` | `learningApps/health-safety` | Health and Safety textbook scaffold |
-| `@svitlo/engineering` | `learningApps/engineering` | Engineering textbook scaffold |
-| `@svitlo/playground` | `learningApps/playground` | Subject-neutral widget/lesson demonstration application |
-| `@svitlo/contracts` | `shared/contracts` | Shared types, stable IDs, localization descriptors and persisted-state contracts |
-| `@svitlo/engine` | `shared/engine` | Framework-independent builders, validation, generation and Assessment Methods |
-| `@svitlo/indexdb` | `shared/indexdb` | Browser IndexedDB persistence, schemas and native integration tests |
-| `@svitlo/ui-kit` | `shared/ui-kit` | Shared React/MUI widgets, navigation, themes/preferences composition and Storybook |
-| `@svitlo/server` | `backend/server` | **Placeholder only**; no operational backend yet |
+| Workspace                     | Folder                             | Purpose                                                                            |
+| ----------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------- |
+| `@svitlo/platform`            | `frontend/platform`                | Next.js web platform and external textbook catalog                                 |
+| `@svitlo/math`                | `learningApps/math`                | Mathematics textbook; owns taxonomy and curriculum                                 |
+| `@svitlo/biology`             | `learningApps/biology`             | Biology textbook scaffold                                                          |
+| `@svitlo/geography`           | `learningApps/geography`           | Geography textbook scaffold                                                        |
+| `@svitlo/informatics`         | `learningApps/informatics`         | Informatics textbook scaffold                                                      |
+| `@svitlo/physics`             | `learningApps/physics`             | Physics textbook scaffold                                                          |
+| `@svitlo/language-literature` | `learningApps/language-literature` | Language and Literature textbook scaffold                                          |
+| `@svitlo/ukrainian`           | `learningApps/languages/ukrainian` | Ukrainian language textbook scaffold (under Languages)                             |
+| `@svitlo/chemistry`           | `learningApps/chemistry`           | Chemistry textbook scaffold                                                        |
+| `@svitlo/astronomy`           | `learningApps/astronomy`           | Astronomy textbook scaffold                                                        |
+| `@svitlo/history`             | `learningApps/history`             | History textbook scaffold                                                          |
+| `@svitlo/philosophy`          | `learningApps/philosophy`          | Philosophy textbook scaffold                                                       |
+| `@svitlo/psychology`          | `learningApps/psychology`          | Psychology textbook scaffold                                                       |
+| `@svitlo/economics`           | `learningApps/economics`           | Economics textbook scaffold                                                        |
+| `@svitlo/art`                 | `learningApps/art`                 | Art textbook scaffold                                                              |
+| `@svitlo/health-safety`       | `learningApps/health-safety`       | Health and Safety textbook scaffold                                                |
+| `@svitlo/engineering`         | `learningApps/engineering`         | Engineering textbook scaffold                                                      |
+| `@svitlo/playground`          | `learningApps/playground`          | Subject-neutral widget/lesson demonstration application                            |
+| `@svitlo/contracts`           | `shared/contracts`                 | Shared types, stable IDs, localization descriptors and persisted-state contracts   |
+| `@svitlo/engine`              | `shared/engine`                    | Framework-independent builders, validation, generation and Assessment Methods      |
+| `@svitlo/indexdb`             | `shared/indexdb`                   | Browser IndexedDB persistence, schemas and native integration tests                |
+| `@svitlo/ui-kit`              | `shared/ui-kit`                    | Shared React/MUI widgets, navigation, themes/preferences composition and Storybook |
+| `@svitlo/server`              | `backend/server`                   | **Placeholder only**; no operational backend yet                                   |
 
 Node and npm workspaces are the current package/CI tools; `package-lock.json` is authoritative. `pnpm-workspace.yaml` and `turbo.json` are not used for this project's current GitHub Actions builds.
 
@@ -47,6 +47,7 @@ npm run packages:artifacts:check
 Run a textbook: `npm run dev:<subject-slug>` (all 16 subjects). Run Platform: `npm run dev:platform`; Playground: `npm run dev`. Each Next.js app is independent; simultaneous development servers require different ports.
 
 Browser testing after `npx playwright install chromium` and a build:
+
 - `npm run test:e2e:db` — native IndexedDB controller Chromium suite
 - `npm run test:e2e:platform` — Platform desktop/mobile smoke
 - `npm run test:e2e --workspace @svitlo/math` and `npm run test:e2e --workspace @svitlo/playground` — learning app suites

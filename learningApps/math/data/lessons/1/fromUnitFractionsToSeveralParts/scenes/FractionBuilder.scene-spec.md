@@ -4,6 +4,7 @@
 **Lesson:** [From One Part to Several Parts — Content](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [denominatorMeaning.data.ts](../../../../../data/skills/fractions/representation/skills/denominatorMeaning.data.ts)
 - [numeratorMeaning.data.ts](../../../../../data/skills/fractions/representation/skills/numeratorMeaning.data.ts)
 - [nonUnitModel.data.ts](../../../../../data/skills/fractions/representation/skills/nonUnitModel.data.ts)
@@ -18,18 +19,18 @@ This Scene is a **proposed self-contained, prop-free root**. A renderer for the 
 
 ## Model, essential visual states and verifiable answers
 
-| State / preset | Concrete representation | Explanation / correct conclusion |
-|---|---|---|
-| One whole | 12-cell strip partitioned into four equal groups of 3, no selection | 0/4 selected, whole still twelve cells |
-| One selected | Same partition, one group selected | 1/4 = 3 of 12 cells |
-| Three selected | Same partition, three groups selected | 3/4 = 9 of 12 cells |
-| All selected | Same partition, all four groups selected | 4/4 = 12 of 12 cells = one whole |
-| Two thirds | 12-cell strip partitioned 4+4+4, two groups selected | 2/3 = 8 of 12 cells |
-| Two quarters | 12-cell strip partitioned 3+3+3+3, two groups selected | 2/4 = 6 of 12 cells |
-| Unequal warning | 8-unit strip cut into 1,1,2,4, first three regions selected | Not justified as 3/4 because parts unequal |
-| Independent badge | 2×2 four-square badge, three squares selected | 3/4: top 3 chosen, bottom 4 equal parts |
+| State / preset    | Concrete representation                                             | Explanation / correct conclusion           |
+| ----------------- | ------------------------------------------------------------------- | ------------------------------------------ |
+| One whole         | 12-cell strip partitioned into four equal groups of 3, no selection | 0/4 selected, whole still twelve cells     |
+| One selected      | Same partition, one group selected                                  | 1/4 = 3 of 12 cells                        |
+| Three selected    | Same partition, three groups selected                               | 3/4 = 9 of 12 cells                        |
+| All selected      | Same partition, all four groups selected                            | 4/4 = 12 of 12 cells = one whole           |
+| Two thirds        | 12-cell strip partitioned 4+4+4, two groups selected                | 2/3 = 8 of 12 cells                        |
+| Two quarters      | 12-cell strip partitioned 3+3+3+3, two groups selected              | 2/4 = 6 of 12 cells                        |
+| Unequal warning   | 8-unit strip cut into 1,1,2,4, first three regions selected         | Not justified as 3/4 because parts unequal |
+| Independent badge | 2×2 four-square badge, three squares selected                       | 3/4: top 3 chosen, bottom 4 equal parts    |
 
-**Model scope and limitation:** Visual tile area is a model of a fraction of a *chosen* whole; it does not authorize conclusions about different-sized wholes.
+**Model scope and limitation:** Visual tile area is a model of a fraction of a _chosen_ whole; it does not authorize conclusions about different-sized wholes.
 
 ## Learner controls, transitions and no-penalty recovery
 

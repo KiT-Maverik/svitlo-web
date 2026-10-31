@@ -13,7 +13,7 @@ Implementation: editorial documents only; Section rendering of `scene` type exis
 
 **"The pieces can move. The total flat space in them stays the same."** Start with a 2×3 rectangle covering **six equal square units**. Split along a row boundary into **two 1×3 strips**, each of area three. If neither is stretched, lost nor overlapped when rearranged, the result still covers six separate unit squares. Placing one strip **end-to-end** with the other produces a **1×6** region: area still six; outside border is different from the original 2×3 region. A deliberately overlapping arrangement lets the learner catch a false "six covered squares" report.
 
-This is not a memorized jigsaw exercise; children predict changes, choose locations, verify a region's actual *union* and explain why a hidden overlap changes covered area. Unlike the prior area-covering Lesson, this one focuses on the **relationship between parts and whole across a rearrangement**.
+This is not a memorized jigsaw exercise; children predict changes, choose locations, verify a region's actual _union_ and explain why a hidden overlap changes covered area. Unlike the prior area-covering Lesson, this one focuses on the **relationship between parts and whole across a rearrangement**.
 
 ## LEARNER JOURNEY
 
@@ -57,8 +57,8 @@ No physical cutting equipment, compulsory mouse drag, competition, scored Questi
 - **Ordered blocks:**
   1. **text — available:** "Someone says, 'Two three-square strips always cover six different squares, even if I lay one partly on top of the other.' Is that true? Look at the shared square."
   2. **scene — proposed:** [Shape Piece Workshop](./scenes/shapePieceWorkshop.scene-spec.md), placement C. A occupies (0,0),(1,0),(2,0), B occupies (2,0),(3,0),(4,0): **one overlap** (2,0). Although the pieces contain 3+3=6 unit cells **of material**, their union covers only **5 distinct grid cells**. "Slide B one cell to the right" changes B to (3,0),(4,0),(5,0) ⇒ union **6** nonoverlapping cells. Separate "Remove a piece" demo covers only three cells.
-  3. **markdown — available:** "Both pieces *contain* three squares, but when they overlap on one square, **only five different places are covered**. For a valid reassembly, pieces must fit with **no overlap and no gap**. Shift the strip and we cover six different cells again."
-- **Feedback:** If learner counts shared cell twice: "That is **one place**, even though two layers cover it." If learner thinks overlapped area vanished from the pieces: "The pieces still have six squares of material; the flat *region they cover together* has only five distinct squares when layered." If learner leaves a gap in the target outline: "The target region isn't fully reconstructed; join the strips edge to edge."
+  3. **markdown — available:** "Both pieces _contain_ three squares, but when they overlap on one square, **only five different places are covered**. For a valid reassembly, pieces must fit with **no overlap and no gap**. Shift the strip and we cover six different cells again."
+- **Feedback:** If learner counts shared cell twice: "That is **one place**, even though two layers cover it." If learner thinks overlapped area vanished from the pieces: "The pieces still have six squares of material; the flat _region they cover together_ has only five distinct squares when layered." If learner leaves a gap in the target outline: "The target region isn't fully reconstructed; join the strips edge to edge."
 - **Access:** The ledger reads both **piece totals** and **distinct occupied cells**, with repeated cell named explicitly.
 - **Reflection:** "What stayed the same about the pieces? What changed about the region they cover?" Unscored checkpoint, no scored Question.
 

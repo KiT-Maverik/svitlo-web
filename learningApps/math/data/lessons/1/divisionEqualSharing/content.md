@@ -13,7 +13,7 @@ Introduce partitive division through an exact, fair share: when the total and th
 
 With an exact whole-number share, 12 objects and 3 groups give 4 each, written 12 ÷ 3 = 4. The shares must all match: 4+4+4=12. A second exact case 10 ÷ 2 = 5 uses two groups of five. When trying to share 13 counters among 3 groups, four go in each and one remains: there is NO equal share of all thirteen into three whole-number groups; do not falsely write 13 ÷ 3 = 4 as an exact identity. The remainder is observed as one leftover object without a full formal remainder algorithm. A divisor of zero is not used.
 
-Learners must identify the *unit* counted in the answer, not merely choose a numeral. Native controls permit fair grouping and inspection without dragging or reading a long word problem. The representation is not a scored quiz.
+Learners must identify the _unit_ counted in the answer, not merely choose a numeral. Native controls permit fair grouping and inspection without dragging or reading a long word problem. The representation is not a scored quiz.
 
 ## LEARNER JOURNEY
 

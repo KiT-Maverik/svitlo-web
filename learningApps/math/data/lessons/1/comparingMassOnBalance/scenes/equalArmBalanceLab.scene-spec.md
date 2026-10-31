@@ -50,7 +50,7 @@ Learner voice: "**On this fair balance, the pan with the object of greater mass 
 4. Compare textual statements:
    - Before: "A left, B right; left pan down; **A heavier than B**."
    - After: "B left, A right; right pan down; **A heavier than B**."
-5. If child chooses "A became lighter": "We moved A, but its mass did not change. The lower *side* moved with A." Provide "Swap again" to replay; no reward.
+5. If child chooses "A became lighter": "We moved A, but its mass did not change. The lower _side_ moved with A." Provide "Swap again" to replay; no reward.
 6. Clear, separately named left/right pan state in any RTL locale: if visual positions mirror, the same swap and text log must be remapped consistently rather than reversing which object is heavier.
 
 ### C — Equal Mass, Different Shapes (Section 3)

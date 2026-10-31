@@ -5,7 +5,9 @@ import { validateSkillConfig } from './buildSkillConfig.utils';
 import { validateSkillChildren } from './validateSkillChildren.utils';
 
 /** Build a Group retaining its complete Skill children, without mutating input. */
-export function buildSkillGroupConfig<const T extends SkillGroup_Config>(config: T): DeepReadonly<T & { readonly collection: Extract<Collection, 'skillGroup'> }> {
+export function buildSkillGroupConfig<const T extends SkillGroup_Config>(
+  config: T,
+): DeepReadonly<T & { readonly collection: Extract<Collection, 'skillGroup'> }> {
   validateSkillConfig(config);
   validateSkillChildren('SkillGroup', 'skills', config.skills);
   const collection: Extract<Collection, 'skillGroup'> = 'skillGroup';

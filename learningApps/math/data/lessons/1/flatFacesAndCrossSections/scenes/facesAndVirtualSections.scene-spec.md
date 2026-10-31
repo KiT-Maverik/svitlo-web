@@ -7,7 +7,7 @@ Methodologist objective: [Draft Methodologist Brief](../methodologist-brief.md) 
 
 ## LEARNER PURPOSE AND CONCEPT
 
-The learner first points to/reads an actual **flat exterior face**, then distinguishes it from curved exterior surfaces and from a **flat cross-sectional region created by a virtual plane inside** the solid. Viewing a 3D shape from the front may give the same *outline* as a face or section while conveying a different geometric object. The interface must make the **face/section/whole** distinction explicit using controlled examples and a fully equivalent textual plan.
+The learner first points to/reads an actual **flat exterior face**, then distinguishes it from curved exterior surfaces and from a **flat cross-sectional region created by a virtual plane inside** the solid. Viewing a 3D shape from the front may give the same _outline_ as a face or section while conveying a different geometric object. The interface must make the **face/section/whole** distinction explicit using controlled examples and a fully equivalent textual plan.
 
 Learner voice: "**A face is flat on the outside. A section is a flat region in an imagined cut through the solid. Neither is the whole 3D object.**"
 
@@ -60,7 +60,7 @@ Learner voice: "**A face is flat on the outside. A section is a flat region in a
    - The flat **top exterior base of an upright cylinder** → filled disk **FACE** on outside.
    - A **central virtual plane section through a sphere** → filled disk **SECTION** inside.
    - The **whole sphere seen in a circular-looking silhouette** → **SOLID**, not a flat disk.
-2. Prompt "Which is an *exterior face*, which is a *section*, which is the *whole solid*?" Offer three named options with keyboard accessible one-to-one assignments; a screen reader can hear each object's role description after preview.
+2. Prompt "Which is an _exterior face_, which is a _section_, which is the _whole solid_?" Offer three named options with keyboard accessible one-to-one assignments; a screen reader can hear each object's role description after preview.
 3. Reveal each category and explain why two scenes may contain disk-shaped flat regions but represent different **part locations**, while the third is a 3D body. For sphere: "**No flat exterior face**, but a flat imagined central section." Avoid claiming the sphere's outside is now cut flat.
 4. Second case contrasts cuboid **exterior 4×2 face** and **interior parallel 4×2 section**: both rectangles geometrically, different **roles**. The two are not interchangeable as locations.
 5. Feedback for misclassifying a sphere silhouette as a disk face: "The picture's circular outline is a **view of a 3D ball-shaped solid**, not a flat outside region." For face as section: "One is on the outside; the other is on an imaginary plane inside."
@@ -70,7 +70,7 @@ Learner voice: "**A face is flat on the outside. A section is a flat region in a
 
 - **Objects:** ideal cuboid, cube, cylinder, sphere; selected planar exterior face; curved exterior highlight; predefined imaginary slicing-plane representation; cross-section region, role labels FACE / SECTION / SOLID; step-based selection, prediction, reveal, back/reset.
 - **Local state per Section:** immutable model definition and plane preset, selected area/face, current visual/text view mode, prediction, reveal stage and feedback. Reset removes only this instance's reveal, leaving other Sections independent.
-- **Invariant 1:** exterior face is *on boundary*; interior section lies *inside plane–body intersection*, cannot be called an exterior face by default.
+- **Invariant 1:** exterior face is _on boundary_; interior section lies _inside plane–body intersection_, cannot be called an exterior face by default.
 - **Invariant 2:** true 2D region of the cuboid parallel section is 4×2 rectangle; right-cylinder perpendicular cut is disk; sphere central cut is disk. No "all cuts same" claim.
 - **Invariant 3:** sphere has **no flat external face**, despite a flat central cross-section; cylinder's lateral surface is curved, not a planar rectangle.
 - **Invariant 4:** viewpoint change or reduced-motion view switch cannot alter actual face/section roles or 3D identity. No nonlocal physics, measurement scale, online service or hardware.
@@ -83,7 +83,7 @@ Use minimal high-contrast static SVG/HTML **3D schematics** and **filled 2D sect
 
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 
-Real supported-locale translations required for *face, base, curved side, disk, circle boundary, section, virtual plane, outside, inside, perpendicular/parallel* and all control/feedback/audio-description strings. RTL UI order may mirror but physical model orientation must remain **explicit**, and roles/section shapes cannot accidentally flip. Give accessible **plane orientation description** before the learner predicts, in each of the four Section placements; don't reveal the answer by naming it in the pre-reveal alt text, while still allowing meaningful reasoning from the model. Keyboard/switch controls, large touch areas, visible focus, non-color-coded statuses, readable text list, reduced motion, mobile 200% zoom, screen-reader announcements and complete post-download offline operation are requirements. If a truly equivalent nonvisual 3D section presentation cannot be made, raise an explicit editor/accessibility blocker; do not silently remove sections.
+Real supported-locale translations required for _face, base, curved side, disk, circle boundary, section, virtual plane, outside, inside, perpendicular/parallel_ and all control/feedback/audio-description strings. RTL UI order may mirror but physical model orientation must remain **explicit**, and roles/section shapes cannot accidentally flip. Give accessible **plane orientation description** before the learner predicts, in each of the four Section placements; don't reveal the answer by naming it in the pre-reveal alt text, while still allowing meaningful reasoning from the model. Keyboard/switch controls, large touch areas, visible focus, non-color-coded statuses, readable text list, reduced motion, mobile 200% zoom, screen-reader announcements and complete post-download offline operation are requirements. If a truly equivalent nonvisual 3D section presentation cannot be made, raise an explicit editor/accessibility blocker; do not silently remove sections.
 
 ## ACCEPTANCE SCENARIOS
 

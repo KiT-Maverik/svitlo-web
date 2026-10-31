@@ -13,7 +13,7 @@ Translate among **four modes**—countable objects, a labeled quantitative diagr
 
 ### Entry A — from objects to diagram to symbols (Section 1)
 
-Show eight beads in a jar and a distinct incoming group of three beads. Start with a learner prediction: “Would every picture with an eight and a three tell the same story?” Offer a “Show diagram” control producing explicit **before=8, incoming=3, after=?** labels, and then “Say it in words” revealing “Eight beads, three more arrive.” Show expression **8 + 3**, with optional “Find total” revealing **11**. Any colors used are secondary to count/role labels. The invariant is *eight initial plus three incoming*, not a particular spatial layout. If the learner associates the group with removal, explain “The three enter the jar rather than leave.”
+Show eight beads in a jar and a distinct incoming group of three beads. Start with a learner prediction: “Would every picture with an eight and a three tell the same story?” Offer a “Show diagram” control producing explicit **before=8, incoming=3, after=?** labels, and then “Say it in words” revealing “Eight beads, three more arrive.” Show expression **8 + 3**, with optional “Find total” revealing **11**. Any colors used are secondary to count/role labels. The invariant is _eight initial plus three incoming_, not a particular spatial layout. If the learner associates the group with removal, explain “The three enter the jar rather than leave.”
 
 ### Entry B — the same digits do not guarantee the same model (Section 2)
 
@@ -22,19 +22,20 @@ Show two diagrams, each featuring 8 and 3 but different action types. Diagram A 
 ### Entry C — from a diagram back to words and symbols (Section 3)
 
 Display a labeled diagram with a known starting group of **12** tokens, **5** marked removed, and an unknown remainder. Offer three verbal alternatives:
+
 - “Twelve tokens; five are taken away; how many remain?” (accurate).
 - “Twelve tokens; five are added; how many now?” (wrong relation).
 - “Five tokens; twelve removed; how many remain?” (wrong starting amount).
-The learner chooses and can request the symbolic form **12 − 5**, with optional evaluation **7**. For the second, explain “The diagram marks five leaving.” For the third, explain “The twelve is the original whole; five is the amount removed.” A choice is formative, not scored.
+  The learner chooses and can request the symbolic form **12 − 5**, with optional evaluation **7**. For the second, explain “The diagram marks five leaving.” For the third, explain “The twelve is the original whole; five is the amount removed.” A choice is formative, not scored.
 
 ### Entry D — independently construct equivalent modes (Section 4)
 
-Narrative: “Ten shells on a table, four shells moved into a bag. How many remain on the table?” Offer a diagram editor with explicit labels and accessible select controls, plus text response choices to prevent mandatory drawing. A correct diagram labels ten initial and four removed, one sentence conveys the same action, and expression **10 − 4** gives result **6** if evaluated. If child supplies **10 + 4**, say “The shells moved away *from* the table; nothing was added to the table.” If they set four as initial group, say “Four is the number moved, not the original amount.” If the story input is incomplete, allow “Show a complete model” without penalty.
+Narrative: “Ten shells on a table, four shells moved into a bag. How many remain on the table?” Offer a diagram editor with explicit labels and accessible select controls, plus text response choices to prevent mandatory drawing. A correct diagram labels ten initial and four removed, one sentence conveys the same action, and expression **10 − 4** gives result **6** if evaluated. If child supplies **10 + 4**, say “The shells moved away _from_ the table; nothing was added to the table.” If they set four as initial group, say “Four is the number moved, not the original amount.” If the story input is incomplete, allow “Show a complete model” without penalty.
 
 ## States, objects, invariants and reset
 
 - Each entry has fixed localized story and immutable mathematical quantities, model view mode, current verbal/symbolic choice, explicit role labels (start, arriving/removed, unknown), optional calculation reveal, hint and feedback state.
-- Diagram lengths, number of discrete counters and symbolic operands must be linked to the *same labeled quantities*. Do not use physically scaled but numerically inconsistent bars. Never infer meaning from color or picture orientation alone.
+- Diagram lengths, number of discrete counters and symbolic operands must be linked to the _same labeled quantities_. Do not use physically scaled but numerically inconsistent bars. Never infer meaning from color or picture orientation alone.
 - Translation between modes is correct only if both numeric quantities and their **roles and relation** are preserved. Identical numerals with different operations are non-equivalent.
 - Reset restores the single entry; there is no hidden cross-Section memory, score, Question model or Note storage.
 - Each Scene entry is independently configured at design/implementation time while public React components take no props; do not invent an API or Resource-config property to vary the scenario.

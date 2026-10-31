@@ -21,6 +21,7 @@ For finite collections A and B, pairing each item of A with one distinct item of
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 ### Beat 1: There are three BIG books and five tiny counters. Which group has more objects?
+
 - **Exact learner-facing invitation:** “There are three BIG books and five tiny counters. Which group has more objects?”
 - **Action / teacher model:** Learner first predicts based on scene, then chooses count each or build pairings. Counts update without altering size.
 - **Expected state change / observation:** Books = 3, counters = 5; counters have more objects despite smaller visible size.
@@ -29,6 +30,7 @@ For finite collections A and B, pairing each item of A with one distinct item of
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 2: Eight pencils are bunched together; six erasers are spread out. Which group has more?
+
 - **Exact learner-facing invitation:** “Eight pencils are bunched together; six erasers are spread out. Which group has more?”
 - **Action / teacher model:** Independent transfer: change object identity and spacing; learner counts or pairs and explains the observed relation, with optional explanation reveal.
 - **Expected state change / observation:** 8 pencils vs 6 erasers, two pencils unpaired when six pairs formed.
@@ -41,6 +43,7 @@ For finite collections A and B, pairing each item of A with one distinct item of
 **Objects:** Modelled quantity cards/items, their stable semantic identities, count/representation ledger, native controls and visible explanation. Predict group, Count each, Match objects sequentially, Explain/reveal, Reset. No automatic correctness lock.
 
 **Local state and invariants:**
+
 - Initial values come from deterministic constants within the standalone Scene module, **not** a Lesson prop, global store, new Resource subtype, invented platform API or fake locale prop.
 - Only an explicit learner action may change represented quantity, grouping or order; all labels and accessible counts derive from the same authoritative local model.
 - Do not allow an object to be consumed/paired/placed twice when that would alter the mathematics. **Reset** restores exactly this Scene's initial state, not any other Section; scenario changes cannot leak answers or counters from the previous state.

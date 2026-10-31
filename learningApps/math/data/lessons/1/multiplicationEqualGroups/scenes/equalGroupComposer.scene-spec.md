@@ -20,12 +20,14 @@ Children should **count what is in each group**, not simply add “number of gro
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Section 1 / observe and count**
+
 1. Display three named containers with four visible identical countable counters each. Prompt: “How many groups? How many counters in each? How many altogether?” Labels for “groups” and “in each group” are distinctly spelled out.
 2. Child can tap/select a group or use “Inspect group 1/2/3” buttons. Announce that group’s count and keep it visible. “Count them all” reveals incremental totals 4, 8, 12, followed by 4+4+4=12.
 3. Prediction choices 7, 12, 14 optional. For 7: “Three plus four names the group count and group size. But there are four counters in EACH of three groups.” For 14: “Four, eight, twelve; not fourteen.” For 12: “All three groups contain four, making twelve.” Every response gives a retry/reveal path without score.
 4. “Show groups as a list” gives “group 1: four; group 2: four; group 3: four; all groups: twelve”. This representation must remain usable without seeing counters.
 
 **Section 3 / compare equal vs uneven**
+
 1. A fresh Scene instance presents two labeled examples, one after another: group counts [4,4,4] and [4,3,4]. Ask: “Are all the groups the same size?”
 2. Learner checks groups individually. For [4,4,4], “Each group has four: same size.” For [4,3,4], “The middle has three. The others have four. They are not all equal.”
 3. Choice “same size / not all the same size” is allowed before reveal; early guesses prompt checking all three. Exact text compares observed counts, not only colors or icon states.

@@ -21,6 +21,7 @@ A predecessor immediately before an integer n differs by one. For positive value
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 ### Beat 1: Six lights are on. Turn off one. How many stay on?
+
 - **Exact learner-facing invitation:** “Six lights are on. Turn off one. How many stay on?”
 - **Action / teacher model:** Activate Step back to extinguish exactly one lit lantern and update an ordered ledger of remaining lights; predict 5 before reveal.
 - **Expected state change / observation:** 6 → 5, five lit and one unlit; only lit items count.
@@ -29,6 +30,7 @@ A predecessor immediately before an integer n differs by one. For positive value
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 2: Start at twelve. Step back three times. Which numbers do you pass?
+
 - **Exact learner-facing invitation:** “Start at twelve. Step back three times. Which numbers do you pass?”
 - **Action / teacher model:** Display full ten-frame plus two loose objects, remove the two loose objects in two steps, then remove one object from the ten-frame; allow next, previous-step review and reset.
 - **Expected state change / observation:** 12 → 11 → 10 → 9; 10-frame goes from full to nine on the third step.
@@ -41,6 +43,7 @@ A predecessor immediately before an integer n differs by one. For positive value
 **Objects:** Modelled quantity cards/items, their stable semantic identities, count/representation ledger, native controls and visible explanation. Start preset (6/12), Predict next (optional), Step back, Show count ledger, Reset/Reveal. Each action checks currently lit objects; at zero disable further decrement or state 'We've reached zero in this lesson.'
 
 **Local state and invariants:**
+
 - Initial values come from deterministic constants within the standalone Scene module, **not** a Lesson prop, global store, new Resource subtype, invented platform API or fake locale prop.
 - Only an explicit learner action may change represented quantity, grouping or order; all labels and accessible counts derive from the same authoritative local model.
 - Do not allow an object to be consumed/paired/placed twice when that would alter the mathematics. **Reset** restores exactly this Scene's initial state, not any other Section; scenario changes cannot leak answers or counters from the previous state.

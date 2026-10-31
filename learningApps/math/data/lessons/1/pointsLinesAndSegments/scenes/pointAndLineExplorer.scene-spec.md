@@ -7,17 +7,17 @@ Methodologist objectives: [Draft Brief](../methodologist-brief.md), two separate
 
 ## LEARNER PURPOSE AND CONCEPT
 
-Children are usually shown finite ink marks, which can misleadingly look like the mathematical objects themselves. Here they *change marker size without moving the point*, explore three fundamentally distinct path types, switch between a full straight-line **representation** and finite segment AB, then **construct** a new labeled segment. At each stage the learner predicts a difference, manipulates the model, sees the exact changed property and explains it.
+Children are usually shown finite ink marks, which can misleadingly look like the mathematical objects themselves. Here they _change marker size without moving the point_, explore three fundamentally distinct path types, switch between a full straight-line **representation** and finite segment AB, then **construct** a new labeled segment. At each stage the learner predicts a difference, manipulates the model, sees the exact changed property and explains it.
 
 Learner-facing invariant: "**A drawn dot shows where a point is. A straight line keeps going. A segment is the straight part between two endpoints.**"
 
 ## ACCURATE CONTENT AND MODEL LIMITATIONS
 
-- A **point** has a position but no size. Marker discs may have arbitrary visible radius `r>0`; changing `r` does **not** change center position. Display pixels are *not* geometric length or point size.
+- A **point** has a position but no size. Marker discs may have arbitrary visible radius `r>0`; changing `r` does **not** change center position. Display pixels are _not_ geometric length or point size.
 - An ideal **straight line** extends without endpoints in two directions; it is represented by a finite straight stroke with two continuation arrows, explicitly labeled "continues beyond picture". Those arrows indicate extension, **not endpoint dots**.
 - A general **curve** need not be straight or a chain of straight segments. Use a genuinely curved SVG path in stage B, not many segments secretly presented as a proof of straightness.
 - A **polygonal chain** consists of consecutive straight segments joined end-to-end; in this Lesson use one open **two-piece** chain with a visible bend at C.
-- A **segment AB** includes its two **distinct** endpoints A and B, is straight between them and has a finite length equal to the straight-line distance. **AB = BA** as an *unoriented geometric segment*. Distinguish from arrows at ends of a drawn line. A bent route A→C→B with C not collinear with A,B is not AB.
+- A **segment AB** includes its two **distinct** endpoints A and B, is straight between them and has a finite length equal to the straight-line distance. **AB = BA** as an _unoriented geometric segment_. Distinguish from arrows at ends of a drawn line. A bent route A→C→B with C not collinear with A,B is not AB.
 - All coordinates are **diagram-local model units**, not centimeter lengths or formal coordinate-plane learning targets. No exact motor drawing or screen calibration. Do not introduce rays, angle measure, parallel/perpendicular Skills or length computations as goals.
 - A single finite drawn piece cannot display an infinite line in full; explicitly teach it is a **model**, not literal completion.
 
@@ -43,7 +43,7 @@ Learner-facing invariant: "**A drawn dot shows where a point is. A straight line
 
 1. Fixed labeled points A=(1,2), B=(5,2). "Show **ideal line**" draws one straight stroke through A and B with arrows beyond both, representing endless extension.
 2. "Show **segment AB**" displays **only** the straight path from (1,2) to (5,2), **both endpoint dots filled**. "Beyond A/B" regions are hidden.
-3. "Swap label order" names the exact same path **BA**, with no change to endpoints, geometry, state length or direction. Explain equality of *unoriented segments*; do not imply an instruction route A→B equals a directed move B→A.
+3. "Swap label order" names the exact same path **BA**, with no change to endpoints, geometry, state length or direction. Explain equality of _unoriented segments_; do not imply an instruction route A→B equals a directed move B→A.
 4. "Show bent alternative" draws A→C→B where C=(3,3), distinct from the straight AB. Both paths share endpoints but not interior geometry or length. The bent path must be clearly marked "**not segment AB**".
 5. Prompts: "Does AB include the two dots?", "Do the arrows belong to the segment?", "Does swapping the order of the letters move the line?" Feedback explains the relevant inclusion/limitation, not a binary colored grade.
 6. Text summary after reveal: "The straight segment includes endpoints A and B. It stops at both. The extended line continues in both directions."
@@ -51,7 +51,7 @@ Learner-facing invariant: "**A drawn dot shows where a point is. A straight line
 ### Placement D: Build AB (Section 4)
 
 1. Draw a **5×5 discrete position board** as an optional coordinate selection aid (internal positions 0…4 on both axes); initial construction preset **A=(1,1), B=(4,3)** with endpoints distinct. Do not teach Cartesian coordinates here; visible controls describe positions as board row/column or named dots, with a matching textual list.
-2. Learner may choose new A and B positions using two row/column selectors, then presses "Mark endpoints". Attempt to set B equal A gets: "Choose two *different* positions so we can make a finite segment with two distinct endpoints." No silent fallback point moves.
+2. Learner may choose new A and B positions using two row/column selectors, then presses "Mark endpoints". Attempt to set B equal A gets: "Choose two _different_ positions so we can make a finite segment with two distinct endpoints." No silent fallback point moves.
 3. "Connect straight" draws exact straight stroke between A and B; "Connect via C" places C=(2,4) or another explicitly **off-line** position and creates two-piece route A→C→B. This is a deliberate wrong construction **not** a scored trap.
 4. "Name AB" / "Name BA" buttons show identical straight segment for either label order. Prompt learner to explain: "Same endpoints, same straight piece."
 5. Independent transfer preset: choose new points A=(0,3) and B=(3,0), with prior answers cleared, and invite a straight connection. Compare with path via (0,0): two straight pieces, not AB. The learner can review an ordered ledger and reset to blank.
@@ -63,7 +63,7 @@ Learner-facing invariant: "**A drawn dot shows where a point is. A straight line
 - **Per-placement state:** independent preset type A/B/C/D fixed editorially; selected object/path, center/radius for marker (A only), display mode line vs segment vs bend, selected endpoint positions, chosen prediction and reveal step. User-visible data comes from real locale context.
 - **Geometry invariant:** marker radius never mutates center; an ideal line has no mathematical endpoints; segment stroke between A and B is straight and includes endpoints; AB and BA are same unoriented segment; changing drawing size does not create a new point.
 - **Bounds:** coordinates remain on local board; two endpoints must be distinct; C bent-path preset cannot lie on segment AB. The scene must not use SVG scale/pixel size as centimeters.
-- **Reset:** restore *that Section placement* to its original model and unrevealed state, with no leakage from another Section. Each exported Scene root is **prop-free**; implementations may share private helpers while independent roots define their own initial presets. Do **not** introduce a guessed `mode`, `data`, `direction`, `locale` or `onChange` public prop.
+- **Reset:** restore _that Section placement_ to its original model and unrevealed state, with no leakage from another Section. Each exported Scene root is **prop-free**; implementations may share private helpers while independent roots define their own initial presets. Do **not** introduce a guessed `mode`, `data`, `direction`, `locale` or `onChange` public prop.
 - **Controls:** native labeled buttons/list/radio selections, keyboard and switch accessibility equal to any optional pointer exploration. Every revealing action updates a readable state log without requiring visual arrow interpretation.
 - **Pedagogical feedback:** one actionable reason, hint/retry and optional reveal; no score/Quiz/mastery calculation, correct-answer secrets, timers, storage or external event schema.
 
@@ -78,7 +78,7 @@ All labels, model descriptions, prediction choices, explanations, feedback, opti
 ## ACCEPTANCE SCENARIOS
 
 1. Enlarging marker radius for A centered (2,2) does not change its position. Moving it to (4,2) changes position, irrespective of marker size.
-2. The "ideal straight line" has **both** continuation arrows and no *mathematical* endpoints; its finite picture is not claimed physically infinite.
+2. The "ideal straight line" has **both** continuation arrows and no _mathematical_ endpoints; its finite picture is not claimed physically infinite.
 3. Smooth curve and two-piece A→C→B chain with C=(3,3) are distinct from one straight line.
 4. Switching extended line to segment AB keeps endpoints A=(1,2), B=(5,2) and removes all portions beyond them.
 5. BA and AB give **exactly the same** straight segment geometry, including endpoints; a bend via (3,3) is explicitly **not** AB.
@@ -89,4 +89,4 @@ All labels, model descriptions, prediction choices, explanations, feedback, opti
 
 ## IMPLEMENTATION DEPENDENCIES AND OPEN QUESTIONS
 
-Current `scene` Resource and generic renderer provide a place for such a component, **not the component itself**. Coding Agent later verifies localization provider/context, Section placement, Math SVG models, deterministic tests and offline packaging; Scene Designer requires an **approved** Scene specification first. Editorial decision pending on whether optional segment-length *description* should be allowed; no centimeter output is part of this Lesson. No Question, Quiz, Score, Note unlock API, persistence or external action invented here.
+Current `scene` Resource and generic renderer provide a place for such a component, **not the component itself**. Coding Agent later verifies localization provider/context, Section placement, Math SVG models, deterministic tests and offline packaging; Scene Designer requires an **approved** Scene specification first. Editorial decision pending on whether optional segment-length _description_ should be allowed; no centimeter output is part of this Lesson. No Question, Quiz, Score, Note unlock API, persistence or external action invented here.

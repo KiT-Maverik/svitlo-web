@@ -4,26 +4,27 @@
 **Lesson Content:** [Same Spinner, Different Results](../content.md)
 **Methodologist:** [Draft Brief](../methodologist-brief.md)
 **Canonical target Skills:**
+
 - [experimentVariation.data.ts](../../../../../data/skills/probability/experiments/skills/experimentVariation.data.ts)
 
 ## Educational purpose and intended web interaction
 
 Compare outcome frequencies from two finite runs of the same fair random experiment and explain why differing counts can arise without any change to the experiment's possible outcomes, conditions or chances.
 
-A deterministic *illustration of possible outcome sequences*, not a fake live-randomness proof: a labelled equal-sector spinner remains visibly unchanged while the learner reveals Run A and Run B as fixed recorded sequences of ten spins. Counts update one by one with blue/yellow labels; after both, an optional third panel deliberately shows a changed spinner and asks which conditions changed.
+A deterministic _illustration of possible outcome sequences_, not a fake live-randomness proof: a labelled equal-sector spinner remains visibly unchanged while the learner reveals Run A and Run B as fixed recorded sequences of ten spins. Counts update one by one with blue/yellow labels; after both, an optional third panel deliberately shows a changed spinner and asks which conditions changed.
 
 **Self-contained design:** One independently initializable, prop-free Scene root owns all preset data, controls, explanations and interaction state. Multiple Section placements must not rely on props or state inherited from other Scenes. No invented renderer registration, engine hooks, scoring or persistence are authorized by this document.
 
 ## Exact factual models and required states
 
-| Preset/state | Model shown or described | Correct observation and explanatory result |
-|---|---|---|
-| **Shared setup** | Two equal-size angular sectors, blue and yellow; uniform pointer direction assumed | Both colors possible and equally likely per spin |
-| **Run A outcomes** | Blue, Blue, Yellow, Blue, Blue, Yellow, Blue, Blue, Yellow, Blue | 7 blue and 3 yellow; total 10 |
-| **Changed setup** | Four equal-sized sectors, 3 blue and 1 yellow; uniform pointer direction assumed | Chances changed; 3 blue sectors rather than 1 of 2 |
-| **Incomplete run** | Any prefix of recorded examples shorter than ten trials | Subtotal of blue+yellow equals revealed trial count |
-| **Run B outcomes** | Yellow, Blue, Yellow, Yellow, Blue, Yellow, Blue, Yellow, Yellow, Blue | 4 blue and 6 yellow; total 10 |
-| **Run comparison** | Run A 7 blue/3 yellow; Run B 4 blue/6 yellow; same spinner rule | Counts differ across runs despite unchanged conditions |
+| Preset/state       | Model shown or described                                                           | Correct observation and explanatory result             |
+| ------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **Shared setup**   | Two equal-size angular sectors, blue and yellow; uniform pointer direction assumed | Both colors possible and equally likely per spin       |
+| **Run A outcomes** | Blue, Blue, Yellow, Blue, Blue, Yellow, Blue, Blue, Yellow, Blue                   | 7 blue and 3 yellow; total 10                          |
+| **Changed setup**  | Four equal-sized sectors, 3 blue and 1 yellow; uniform pointer direction assumed   | Chances changed; 3 blue sectors rather than 1 of 2     |
+| **Incomplete run** | Any prefix of recorded examples shorter than ten trials                            | Subtotal of blue+yellow equals revealed trial count    |
+| **Run B outcomes** | Yellow, Blue, Yellow, Yellow, Blue, Yellow, Blue, Yellow, Yellow, Blue             | 4 blue and 6 yellow; total 10                          |
+| **Run comparison** | Run A 7 blue/3 yellow; Run B 4 blue/6 yellow; same spinner rule                    | Counts differ across runs despite unchanged conditions |
 
 **Validity boundary:** Two explicit ten-trial sequences of a fixed two-equal-sector uniformly random spinner, per-color frequency comparisons, and one changed-conditions counterexample. Count outcomes, identify constant/changing factors and compare two runs; do not introduce numeric probability estimates, significance testing, independence theorems, law of large numbers, hypothesis testing, percentages or claims about statistical bias from tiny samples.
 
@@ -54,7 +55,7 @@ Choose 'Reveal next trial', 'Show Run A', 'Show Run B', 'Compare fixed condition
 
 ## Accessible equivalent path
 
-A keyboard-operable textual table lists each of ten outcomes in Run A and Run B and the numeric frequency after each reveal, with an explicit note that both are *possible examples*. An equally valid reduced-motion state shows complete lists immediately. A separate textual changed-condition card says 'original one blue of two equal sectors; changed three blue of four equal sectors'.
+A keyboard-operable textual table lists each of ten outcomes in Run A and Run B and the numeric frequency after each reveal, with an explicit note that both are _possible examples_. An equally valid reduced-motion state shows complete lists immediately. A separate textual changed-condition card says 'original one blue of two equal sectors; changed three blue of four equal sectors'.
 
 All key interactions must be fully operable with native labelled keyboard/touch controls. Screen readers need a chronological, understandable announcement of changes without a flood of redundant narration. Use text labels and descriptive math/value captions rather than color or position alone. Include visible focus, sensible order, reduced-motion/static states, adequate touch sizing and narrow-screen alternatives.
 

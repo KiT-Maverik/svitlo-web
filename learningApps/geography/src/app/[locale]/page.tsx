@@ -20,8 +20,12 @@ export default async function LocaleHomePage({ params }: Props) {
   return (
     <Container component="main" maxWidth="md" sx={{ py: { xs: 5, sm: 10 } }}>
       <Stack spacing={3}>
-        <Typography component="h1" variant="h2" sx={{ fontWeight: 800 }}>{title}</Typography>
-        <Typography variant="body1" color="text.secondary">{description}</Typography>
+        <Typography component="h1" variant="h2" sx={{ fontWeight: 800 }}>
+          {title}
+        </Typography>
+        <Typography variant="body1" color="text.secondary">
+          {description}
+        </Typography>
       </Stack>
     </Container>
   );

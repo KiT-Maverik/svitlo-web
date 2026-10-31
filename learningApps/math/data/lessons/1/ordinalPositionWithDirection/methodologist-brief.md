@@ -45,6 +45,7 @@ Confusing third with a collection of three; assuming leftmost means first regard
 **Instructional depth and hard exclusions:** Grade 1: five or six identifiable items and explicit START marker; no number-line lengths, sorting magnitude, ordinal spelling drills, speed tests or grades.
 
 **Verified numerical examples:**
+
 - C third from A; six in total.
 - C fourth from F; six in total.
 - Star third becomes fifth, total five.
@@ -54,12 +55,10 @@ Confusing third with a collection of three; assuming leftmost means first regard
 
 Complete genuine translations for every Engine-supported language are required; English drafts are not released locale assets. Semantic RTL must preserve object identity, designated START, pairing membership, euro value and numeric order, not reverse the mathematics. WCAG 2.2 AA plan: keyboard, touch and switch operation, ordered nonvisual ledger, meaningful labels, visible focus, zoom/mobile and reduced-motion equivalents. The selected-language content and same learning interactions must function offline after download, which is a required future capability, not implemented by this task.
 
-
 ## Sources and factual verification
 
 - Approved canonical Mathematics Skill data files directly linked above, copied unchanged in Batch 1.
 - [Lesson Editorial Artifacts](../../../../../../studio/docs/architecture/lesson-editorial-document.md) and [Learning Experience Philosophy](../../../../../../studio/docs/architecture/learning-experience-philosophy.md).
-
 
 ## Curriculum / Program compatibility
 
@@ -69,7 +68,6 @@ Standalone and Program-neutral. No named Curriculum alignment asserted.
 
 - Editor: approve Grade 1, prerequisites, target Skills and scope before formal Content/Scene approval.
 - Editor and localization team: verify full-locale copy, semantic RTL and nonvisual equivalence.
-
 
 ## Methodologist handoff
 

@@ -3,7 +3,7 @@
 Status: **Provisional Draft — awaiting Methodologist and Screenwriter/editor approval**
 Owner: Educational Screenwriter
 Parent Lesson / Sections: [How Much Flat Space? Count Equal Squares](../content.md), Sections 1–4
-Methodologist objectives: [Draft Methodologist Brief](../methodologist-brief.md) — determine area by covering an interior region with *equal unit squares without gaps or overlaps*, distinguish coverage from exterior border and invalid units. The activity is **not** a new Skill, scored Question or perimeter assessment.
+Methodologist objectives: [Draft Methodologist Brief](../methodologist-brief.md) — determine area by covering an interior region with _equal unit squares without gaps or overlaps_, distinguish coverage from exterior border and invalid units. The activity is **not** a new Skill, scored Question or perimeter assessment.
 
 ## LEARNER PURPOSE AND CONCEPT
 
@@ -19,7 +19,7 @@ Learner-facing thesis: "**Count the same-size squares that fill the inside. A ga
 - Region T = {(1,1),(2,1),(3,1),(1,2),(2,2)}, a **five-cell** step region with 3+2=**5**. Its area is one unit smaller than either R or S.
 - Final transfer region U = {(1,1),(2,1),(3,1),(1,2)}, four cells; it is a three-plus-one L-shaped region.
 - To **cover exactly**, every cell in target region has **occupancy count exactly 1** and all cells outside the region have occupancy count 0. A tile on an already occupied cell creates overlap; **do not** mark a covering complete merely because the number of placed tile objects equals required area. Coverage is the number of **distinct occupied cells inside region**.
-- Changing outline topology, visual color, whole-shape rotation or screen zoom does not affect the number of equal unit-square cells *if the set of cells remains the same size*; do not claim any arbitrary resize preserves physical area. We compare only whole-cell examples, not fractional cells/curves.
+- Changing outline topology, visual color, whole-shape rotation or screen zoom does not affect the number of equal unit-square cells _if the set of cells remains the same size_; do not claim any arbitrary resize preserves physical area. We compare only whole-cell examples, not fractional cells/curves.
 - A 2×2 tile covers **4 one-by-one unit squares**. Two nonoverlapping 2×2 tiles cover **8** unit squares, whereas two nonoverlapping 1×1 tiles cover **2**. Equal raw tile counts with different tile areas **cannot** be compared directly.
 - Boundary/perimeter is a different property. This model may reveal an outside outline but **must not require computing perimeter**.
 
@@ -28,7 +28,7 @@ Learner-facing thesis: "**Count the same-size squares that fill the inside. A ga
 ### A — Where Is the Area? (Section 1)
 
 1. Display outlines of R (rectangle) and S (stepped region) in separate but identically scaled diagrams. Hide full square-cell subdivisions at first, except for a clear shared reference **one unit square**.
-2. Ask: "Which covers more *inside space*: rectangle R, steps S, or equal?" Predictions remain editable before "Show squares".
+2. Ask: "Which covers more _inside space_: rectangle R, steps S, or equal?" Predictions remain editable before "Show squares".
 3. Reveal cells **row by row** (R: 3+3, S: 3+2+1). Textual state for each: "R: row one three, row two three, total six equal square units"; "S: row one three, row two two, row three one, total six".
 4. Feedback for "S larger because more corners": "Corners describe an outside border; **six** same-size inside squares cover each." Feedback for "R larger because longer": "A longer appearance does not replace counting full inside cells." Correct "equal": "Both have six square units."
 5. "Inspect border" traces/explains the boundary but never reveals an unrequested perimeter value. Reset hides totals and returns to prediction state without changing region geometry.
@@ -63,10 +63,10 @@ Learner-facing thesis: "**Count the same-size squares that fill the inside. A ga
 - **Objects:** four precisely defined target cell sets R,S,T,U; fixed unit-square tile; optional 2×2 comparison tile; cell-selector controls; placement history; per-cell occupancy counters; row/cell count log; prediction/reveal/hint/reset.
 - **State per independent Section placement:** region preset; current prediction; occupied-cell multiset or occupancy map; currently highlighted row/cell; reveal stage; localized feedback. Region definitions are **constants**; learner cannot edit boundaries into non-grid/fractional shapes.
 - **Invariants:** target region area = size of its cell set; full valid tiling iff **each target cell occupancy=1** and no outside occupied cells; overlap never counts twice toward distinct coverage; identical unit square area 1; two 2×2 units occupy total 8 basic cells when nonoverlapping.
-- **Validation:** if "Complete" requested early, explain remaining *uncovered target cells*. If duplicate placed in exercise mode, do not mutate occupancy or else enter explicitly marked overlap demo mode; accepted duplicate must never be treated as full coverage.
+- **Validation:** if "Complete" requested early, explain remaining _uncovered target cells_. If duplicate placed in exercise mode, do not mutate occupancy or else enter explicitly marked overlap demo mode; accepted duplicate must never be treated as full coverage.
 - **Reset:** per placement restores original target, predication state, initial tiles and reveal state (D includes its deliberate flawed preplacement). No state leakage between Sections.
 - **Public component contract:** a Scene root for each placement is **prop-free**, reads locale from **actual verified Lesson context** and owns its state. Shared private helpers can receive internal configuration, not external runtime `region`, `locale`, `mode`, `onCheck` props.
-- **Feedback contract:** tell the learner *what was covered*, not just "right/wrong". No Quiz, grading, external event, persistent Note or account requirement.
+- **Feedback contract:** tell the learner _what was covered_, not just "right/wrong". No Quiz, grading, external event, persistent Note or account requirement.
 
 ## VISUAL / AUDIO / MEDIA DIRECTION
 

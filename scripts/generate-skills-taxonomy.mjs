@@ -16,7 +16,9 @@ import process from 'node:process';
 import ts from 'typescript';
 import { checkTaxonomy } from './check-skills-taxonomy-structure.mjs';
 
-function fail(message) { throw new Error(message); }
+function fail(message) {
+  throw new Error(message);
+}
 function options(args) {
   const result = { locale: 'en', check: false, stdout: false };
   for (let i = 0; i < args.length; i++) {
@@ -33,13 +35,15 @@ function options(args) {
     if (result[key] !== undefined && (key !== 'locale' || result.locale !== 'en')) fail('Duplicate argument ' + arg);
     result[key] = args[++i];
   }
-  if (!result.package || (result.check && result.stdout)) fail('Provide --package and choose at most one of --check, --stdout');
+  if (!result.package || (result.check && result.stdout))
+    fail('Provide --package and choose at most one of --check, --stdout');
   return result;
 }
 const repositoryRoot = path.resolve(import.meta.dirname, '..');
 const opts = options(process.argv.slice(2));
 const packageRoot = path.resolve(repositoryRoot, opts.package);
-if (!packageRoot.startsWith(path.join(repositoryRoot, 'learningApps') + path.sep)) fail('Package must be within learningApps/');
+if (!packageRoot.startsWith(path.join(repositoryRoot, 'learningApps') + path.sep))
+  fail('Package must be within learningApps/');
 const taxonomyRoot = path.join(packageRoot, 'data/skills');
 if (!fs.existsSync(taxonomyRoot) || !fs.statSync(taxonomyRoot).isDirectory()) {
   fail('No code taxonomy: ' + taxonomyRoot);
@@ -52,7 +56,8 @@ function parse(file) {
   return ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
 }
 function unwrap(node) {
-  while (ts.isAsExpression(node) || ts.isSatisfiesExpression(node) || ts.isParenthesizedExpression(node)) node = node.expression;
+  while (ts.isAsExpression(node) || ts.isSatisfiesExpression(node) || ts.isParenthesizedExpression(node))
+    node = node.expression;
   return node;
 }
 function key(node) {
@@ -63,7 +68,8 @@ function getProperty(object, name) {
   return object.properties.find(p => ts.isPropertyAssignment(p) && key(p.name) === name);
 }
 function stringValue(node, context) {
-  if (!node || !(ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node))) fail('Expected literal localized text: ' + context);
+  if (!node || !(ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)))
+    fail('Expected literal localized text: ' + context);
   const value = node.text.trim();
   if (!value) fail('Blank localized text: ' + context);
   return value;
@@ -108,9 +114,13 @@ function readEntity(file, kind) {
   const sf = parse(file);
   let config;
   function visit(n) {
-    if (ts.isCallExpression(n) && ts.isIdentifier(n.expression) &&
-      n.expression.text === 'build' + kind + 'Config' && n.arguments.length === 1 &&
-      ts.isObjectLiteralExpression(n.arguments[0])) {
+    if (
+      ts.isCallExpression(n) &&
+      ts.isIdentifier(n.expression) &&
+      n.expression.text === 'build' + kind + 'Config' &&
+      n.arguments.length === 1 &&
+      ts.isObjectLiteralExpression(n.arguments[0])
+    ) {
       if (config) fail('Multiple entity configs: ' + file);
       config = n.arguments[0];
     }
@@ -151,11 +161,18 @@ function readEntity(file, kind) {
 }
 function subdirs(dir) {
   if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir, { withFileTypes: true }).filter(x => x.isDirectory() && x.name !== '__tests__' && x.name !== 'skills').map(x => x.name).sort();
+  return fs
+    .readdirSync(dir, { withFileTypes: true })
+    .filter(x => x.isDirectory() && x.name !== '__tests__' && x.name !== 'skills')
+    .map(x => x.name)
+    .sort();
 }
 function fileNames(dir) {
   if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir).filter(x => x.endsWith('.data.ts')).sort();
+  return fs
+    .readdirSync(dir)
+    .filter(x => x.endsWith('.data.ts'))
+    .sort();
 }
 
 function readSkills(folder) {
@@ -197,13 +214,24 @@ if (!domains.length) fail('No domains found');
 if (domains.length !== graphCounts.domains) fail('Domain count disagrees with validated source graph');
 const out = path.join(packageRoot, 'docs/generated/skills', 'taxonomy.' + opts.locale + '.md');
 const groupCount = domains.reduce((sum, domain) => sum + domain.groups.length, 0);
-const skillCount = domains.reduce((sum, domain) =>
-  sum + domain.skills.length + domain.groups.reduce((n, group) => n + group.skills.length, 0), 0);
-if (groupCount !== graphCounts.groups || skillCount !== graphCounts.skills) fail('Entity counts disagree with validated source graph');
-let markdown = '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' + opts.locale + ')\n\n' +
+const skillCount = domains.reduce(
+  (sum, domain) => sum + domain.skills.length + domain.groups.reduce((n, group) => n + group.skills.length, 0),
+  0,
+);
+if (groupCount !== graphCounts.groups || skillCount !== graphCounts.skills)
+  fail('Entity counts disagree with validated source graph');
+let markdown =
+  '<!-- GENERATED FROM CODE; DO NOT EDIT. -->\n\n# Skills Taxonomy (' +
+  opts.locale +
+  ')\n\n' +
   '> Names and available user-friendly descriptions use the requested locale. Methodological descriptions remain canonical English, not translated. This is a generated Code view, not the editorial staging template.\n\n' +
   '## SUMMARY\n\n' +
-  'Domains: ' + domains.length + '\n\nGroups: ' + groupCount + '\n\nSkills: ' + skillCount +
+  'Domains: ' +
+  domains.length +
+  '\n\nGroups: ' +
+  groupCount +
+  '\n\nSkills: ' +
+  skillCount +
   '\n\n## DOMAINS\n\n';
 for (const domain of domains) {
   const count = domain.skills.length + domain.groups.reduce((n, group) => n + group.skills.length, 0);
@@ -220,9 +248,29 @@ if (opts.stdout) {
   if (!fs.existsSync(out) || fs.readFileSync(out, 'utf8') !== markdown) {
     fail('Generated taxonomy is missing or stale: ' + path.relative(repositoryRoot, out));
   }
-  console.log('Verified ' + path.relative(repositoryRoot, out) + ' (' + domains.length + '/' + groupCount + '/' + skillCount + ')');
+  console.log(
+    'Verified ' +
+      path.relative(repositoryRoot, out) +
+      ' (' +
+      domains.length +
+      '/' +
+      groupCount +
+      '/' +
+      skillCount +
+      ')',
+  );
 } else {
   fs.mkdirSync(path.dirname(out), { recursive: true });
   if (!fs.existsSync(out) || fs.readFileSync(out, 'utf8') !== markdown) fs.writeFileSync(out, markdown);
-  console.log('Generated ' + path.relative(repositoryRoot, out) + ' (' + domains.length + ' Domains, ' + groupCount + ' Groups, ' + skillCount + ' Skills)');
+  console.log(
+    'Generated ' +
+      path.relative(repositoryRoot, out) +
+      ' (' +
+      domains.length +
+      ' Domains, ' +
+      groupCount +
+      ' Groups, ' +
+      skillCount +
+      ' Skills)',
+  );
 }

@@ -23,14 +23,16 @@ function countLanguageEntries(source: string, language: string): number {
 describe('Extended locale resource coverage', () => {
   it('registers each extended locale with its intended language code', () => {
     for (let index = 0; index < newLocales.length; index++) {
-      expect(DEFAULT_SUPPORTED_LANGUAGES.find(item => item.locale === newLocales[index])?.language)
-        .toBe(newLanguages[index]);
+      expect(DEFAULT_SUPPORTED_LANGUAGES.find(item => item.locale === newLocales[index])?.language).toBe(
+        newLanguages[index],
+      );
     }
   });
 
   it('includes six translations in every authored math taxonomy config', () => {
-    const files = collectFiles(join(root, 'data/skills'))
-      .filter(file => file.endsWith('.data.ts') && !file.endsWith('index.data.ts'));
+    const files = collectFiles(join(root, 'data/skills')).filter(
+      file => file.endsWith('.data.ts') && !file.endsWith('index.data.ts'),
+    );
     // Locale coverage follows the authored Code inventory. The number of Skills
     // changes during approved taxonomy reviews, so a fixed total is not a
     // localization requirement; the taxonomy-specific tests own that invariant.

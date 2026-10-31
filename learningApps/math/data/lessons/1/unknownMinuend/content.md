@@ -10,7 +10,7 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-Subtraction can hide the **starting quantity**, not just the answer. We can work backward by *putting removed and remaining counters together*. If four were taken away and seven remain, there had to be eleven to begin with. The discovery is visible before the formula: **7 + 4 = 11**, and the decisive check is **11 − 4 = 7**. The model must not confuse a missing minuend with a missing amount removed.
+Subtraction can hide the **starting quantity**, not just the answer. We can work backward by _putting removed and remaining counters together_. If four were taken away and seven remain, there had to be eleven to begin with. The discovery is visible before the formula: **7 + 4 = 11**, and the decisive check is **11 − 4 = 7**. The model must not confuse a missing minuend with a missing amount removed.
 
 ## LEARNER JOURNEY
 
@@ -23,7 +23,7 @@ Subtraction can hide the **starting quantity**, not just the answer. We can work
 
 ### Section 1 — How Many Were There at First?
 
-- Purpose / learning outcome: Recognize the unknown as the *starting* collection.
+- Purpose / learning outcome: Recognize the unknown as the _starting_ collection.
 - Current implementation shape: LessonSection_Config, vertical ordered Resource blocks.
 - Ordered content blocks:
   1. **text (available):** “Someone took away 4 counters. You can still see 7. How many counters were there before?”
@@ -52,7 +52,7 @@ Subtraction can hide the **starting quantity**, not just the answer. We can work
 
 ### Section 3 — Which Number Is Missing?
 
-- Purpose: Distinguish missing *starting whole* from missing *removed amount*, avoiding rule confusion.
+- Purpose: Distinguish missing _starting whole_ from missing _removed amount_, avoiding rule confusion.
 - Current implementation shape: LessonSection_Config.
 - Ordered blocks:
   1. **text (available):** “Compare **□ − 4 = 7** with **11 − □ = 7**. Which box is the starting number? Which box is the amount removed?”

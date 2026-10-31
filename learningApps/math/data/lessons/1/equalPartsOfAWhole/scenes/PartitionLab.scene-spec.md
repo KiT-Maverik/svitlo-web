@@ -20,13 +20,13 @@ Draw a midpoint vertical cut and an off-center vertical cut on exactly the same 
 
 ## Required observable states and correct explanations
 
-| State | Required representation | Mathematical truth |
-|---|---|---|
-| Initial | One 8×4 rectangle, 32 congruent unit squares, no cut; 'Show whole' highlights outer border. | Identifies one reference whole rather than a detached piece. |
-| Middle split | Vertical cut into 4×4 + 4×4: areas 16 and 16. | Both parts are equal; two halves. |
-| Off-centre split | Vertical cut into 2×4 + 6×4: areas 8 and 24. | Two parts exist but are unequal. |
-| Diagonal split | Corner-to-corner diagonal of an 8×4 rectangle: two right triangles each area 16. | Triangles differ in orientation, yet have equal area. |
-| Changed whole | 4×4 split into two 8-unit halves versus 8×4 split into two 16-unit halves. | Equal parts of different wholes need not match. |
+| State            | Required representation                                                                     | Mathematical truth                                           |
+| ---------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Initial          | One 8×4 rectangle, 32 congruent unit squares, no cut; 'Show whole' highlights outer border. | Identifies one reference whole rather than a detached piece. |
+| Middle split     | Vertical cut into 4×4 + 4×4: areas 16 and 16.                                               | Both parts are equal; two halves.                            |
+| Off-centre split | Vertical cut into 2×4 + 6×4: areas 8 and 24.                                                | Two parts exist but are unequal.                             |
+| Diagonal split   | Corner-to-corner diagonal of an 8×4 rectangle: two right triangles each area 16.            | Triangles differ in orientation, yet have equal area.        |
+| Changed whole    | 4×4 split into two 8-unit halves versus 8×4 split into two 16-unit halves.                  | Equal parts of different wholes need not match.              |
 
 ## Interaction protocol (pedagogical, not an API)
 

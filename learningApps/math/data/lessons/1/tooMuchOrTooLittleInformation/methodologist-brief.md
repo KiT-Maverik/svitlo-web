@@ -25,14 +25,14 @@ Develop an explicit contrast between an irrelevant stated quantity and a missing
 
 ## Expected learning outcomes
 
-- Distinguish a relevant number from a stated but irrelevant number relative to the *current* question.
+- Distinguish a relevant number from a stated but irrelevant number relative to the _current_ question.
 - Identify a quantity or relationship missing when the stated conditions allow more than one answer.
 - Show that a missing-data problem has at least two compatible answers, and describe the additional information required to determine one answer.
 - Explain how changing the question can turn an originally irrelevant fact into a relevant one.
 
 ## Essential subject matter
 
-Relevant information is relative to a specific question, not an intrinsic property of a numeral. Seven stars, four circles and three triangles give 11 stars-and-circles; three triangles are extraneous for that question, but essential for the total number of shapes, 14. In 'Seven bicycles and some scooters are parked here; how many vehicles?', the number of scooters is absent. Two scooters give 9 vehicles, while five give 12; both satisfy the stated conditions, so no single numeric answer follows. Supplying three scooters is a *hypothetical new fact* that would yield 10, not an answer inferred from the original problem.
+Relevant information is relative to a specific question, not an intrinsic property of a numeral. Seven stars, four circles and three triangles give 11 stars-and-circles; three triangles are extraneous for that question, but essential for the total number of shapes, 14. In 'Seven bicycles and some scooters are parked here; how many vehicles?', the number of scooters is absent. Two scooters give 9 vehicles, while five give 12; both satisfy the stated conditions, so no single numeric answer follows. Supplying three scooters is a _hypothetical new fact_ that would yield 10, not an answer inferred from the original problem.
 
 ## Conceptual progression and dependencies
 

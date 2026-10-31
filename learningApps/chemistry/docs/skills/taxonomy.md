@@ -2769,7 +2769,6 @@ Status: pending
 Methodological description: Explain bond formation between organic partners accompanied by removal of a small molecule.
 User-friendly description: Explore how two organic partners join while releasing a small molecule.
 
-
 #### Macromolecules
 
 Slug: macromolecules

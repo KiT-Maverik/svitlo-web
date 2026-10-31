@@ -7,11 +7,11 @@
 
 ## Learner purpose and invariant
 
-The difference between two nonnegative counts of the **same unit** is the number of unmatched objects when each member of the smaller group is paired one-to-one with one member of the larger group. Changing “how many more does A have?” to “how many fewer does B have?” changes the *perspective* but not the nonnegative numerical gap for the same two fixed counts. Do not confuse this gap with a combined total or with a multiplicative ratio.
+The difference between two nonnegative counts of the **same unit** is the number of unmatched objects when each member of the smaller group is paired one-to-one with one member of the larger group. Changing “how many more does A have?” to “how many fewer does B have?” changes the _perspective_ but not the nonnegative numerical gap for the same two fixed counts. Do not confuse this gap with a combined total or with a multiplicative ratio.
 
 ## Scenario A — same count, no excess (Section 1)
 
-Two labeled collections each contain **8 pencils**: Lena=8, Danylo=8. Show an optional pairing animation with manual “Pair next” and “Pair all” buttons. All eight pairs match and **0 pencils remain unmatched**. Ask “How many more does either have?” Expected “zero”. If a child answers sixteen, say “Sixteen would count *both collections together*, not how many one exceeds the other.” If learner says eight, say “Eight is the count of each collection, not an extra group.” The comparison result is explicitly shown as 8−8=0.
+Two labeled collections each contain **8 pencils**: Lena=8, Danylo=8. Show an optional pairing animation with manual “Pair next” and “Pair all” buttons. All eight pairs match and **0 pencils remain unmatched**. Ask “How many more does either have?” Expected “zero”. If a child answers sixteen, say “Sixteen would count _both collections together_, not how many one exceeds the other.” If learner says eight, say “Eight is the count of each collection, not an extra group.” The comparison result is explicitly shown as 8−8=0.
 
 ## Scenario B — unmatched difference (Section 2)
 
@@ -20,13 +20,14 @@ Lena=13 pencils, Danylo=9 pencils. Let the child reveal nine one-to-one pairs, t
 ## Scenario C — ask from the other side (Section 3)
 
 Reuse **exact same counts thirteen and nine** in a fresh self-contained instance. Display both phrases:
+
 - “How many **more** pencils does Lena have than Danylo?”
 - “How many **fewer** pencils does Danylo have than Lena?”
-Both ask for the *same nonnegative gap* **4 pencils**. Learner can switch which sentence is read while no object count changes. If answer changes only because wording changes, say “Nine pairs match either way, leaving four in Lena's group. The number four is still the difference.” If group names are reversed, update the verbal relation, not mathematical counts.
+  Both ask for the _same nonnegative gap_ **4 pencils**. Learner can switch which sentence is read while no object count changes. If answer changes only because wording changes, say “Nine pairs match either way, leaving four in Lena's group. The number four is still the difference.” If group names are reversed, update the verbal relation, not mathematical counts.
 
 ## Scenario D — independent transfer (Section 4)
 
-Story: **18 small books** and **11 large books** on a shelf. Ask “How many more small books than large books?” Start with only the two named counts and a completely optional matching model. Learner can form 18−11 and submit **7 books**. A hint first identifies which count is larger; a second shows pairing eleven. Candidate 29 feedback: “That would answer how many books in both categories together, not the difference.” Candidate 7 feedback: “Seven is the gap; it does *not* mean only seven small books exist.” “Show answer and reasoning” stays available at all times.
+Story: **18 small books** and **11 large books** on a shelf. Ask “How many more small books than large books?” Start with only the two named counts and a completely optional matching model. Learner can form 18−11 and submit **7 books**. A hint first identifies which count is larger; a second shows pairing eleven. Candidate 29 feedback: “That would answer how many books in both categories together, not the difference.” Candidate 7 feedback: “Seven is the gap; it does _not_ mean only seven small books exist.” “Show answer and reasoning” stays available at all times.
 
 ## Interaction objects, state and numeric rules
 

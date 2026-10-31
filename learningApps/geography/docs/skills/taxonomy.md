@@ -372,7 +372,7 @@ Status: pending
 
 [Not implemented](#)
 
-Methodological description: Choose a globe, world or regional map, or detailed street plan according to the required spatial extent, scale and projection properties. This concerns the *representation and coverage*; choosing the subject matter of a political, geological or population map is a separate Skill.
+Methodological description: Choose a globe, world or regional map, or detailed street plan according to the required spatial extent, scale and projection properties. This concerns the _representation and coverage_; choosing the subject matter of a political, geological or population map is a separate Skill.
 User-friendly description: Choose between a globe, broad-area map and detailed plan for a geographic purpose.
 
 #### Geographic Coordinates
@@ -718,7 +718,6 @@ Status: pending
 
 Methodological description: Classify coast-related geographic forms using enclosure, land connection and water passage: islands, peninsulas, capes, straits and isthmuses serve as contrasting examples. The transferable competency is recognizing the geographic relationships, not memorizing one named feature or a particular illustrative list.
 User-friendly description: Recognize islands, peninsulas, capes, straits and isthmuses by their shapes and connections.
-
 
 ##### Classify common landforms by observable characteristics
 

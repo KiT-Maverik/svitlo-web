@@ -18,40 +18,38 @@ const text = (id: string, english: string, ukrainian = english): TextResource_Co
 });
 
 // Mutable test fixture deliberately bypasses the readonly Data builder: tests amend it to exercise error paths.
-const lesson = (): Lesson_Config =>
-  ({
-    collection: 'lesson',
-    id: 'lesson',
-    slug: 'light',
-    requireQuiz: true,
-    title: 'title',
-    sections: {
-      allowNavigation: true,
-      allowSkipping: false,
-      showIndexes: true,
-      content: ['theory'],
-    },
-  });
+const lesson = (): Lesson_Config => ({
+  collection: 'lesson',
+  id: 'lesson',
+  slug: 'light',
+  requireQuiz: true,
+  title: 'title',
+  sections: {
+    allowNavigation: true,
+    allowSkipping: false,
+    showIndexes: true,
+    content: ['theory'],
+  },
+});
 
-const theory = (): LessonSection_Config =>
-  ({
-    collection: 'lessonSection',
-    id: 'theory',
-    lessonId: 'lesson',
-    skippable: false,
-    name: text('section-name', 'Theory', 'Теорія'),
-    content: [
-      text('body', 'Body', 'Текст'),
-      { id: 'scene', blockType: 'scene', component: 'Scene content' },
-      {
-        id: 'image',
-        blockType: 'image',
-        allLocales: false,
-        fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
-        alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
-      },
-    ],
-  });
+const theory = (): LessonSection_Config => ({
+  collection: 'lessonSection',
+  id: 'theory',
+  lessonId: 'lesson',
+  skippable: false,
+  name: text('section-name', 'Theory', 'Теорія'),
+  content: [
+    text('body', 'Body', 'Текст'),
+    { id: 'scene', blockType: 'scene', component: 'Scene content' },
+    {
+      id: 'image',
+      blockType: 'image',
+      allLocales: false,
+      fileLocation: { 'en-US': '/en.png', 'uk-UA': '/uk.png' },
+      alt: { 'en-US': 'Light', 'uk-UA': 'Світло' },
+    },
+  ],
+});
 
 const catalog = (): LessonContentCatalog => ({
   text: { title: text('title', 'Light', 'Світло') },

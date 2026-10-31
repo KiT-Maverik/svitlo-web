@@ -4,17 +4,18 @@
 **Methodologist input:** [Draft Brief](./methodologist-brief.md) (**not approved**).
 **Primary audience:** Grade 3, ages 8–9.
 **Target canonical Skills:**
+
 - [experimentVariation.data.ts](../../../../data/skills/probability/experiments/skills/experimentVariation.data.ts)
-**Independence:** standalone Playground Lesson; no Program storyline, mascot, reward, mission or past learner state required.
-**Implementation:** editorial Content only. No runtime Lesson, Questions, Quizzes, scoring, registered custom Scenes or locale bundles created.
+  **Independence:** standalone Playground Lesson; no Program storyline, mascot, reward, mission or past learner state required.
+  **Implementation:** editorial Content only. No runtime Lesson, Questions, Quizzes, scoring, registered custom Scenes or locale bundles created.
 
 ## Instructional concept
 
 Compare outcome frequencies from two finite runs of the same fair random experiment and explain why differing counts can arise without any change to the experiment's possible outcomes, conditions or chances.
 
-Having identified possible outcomes and compared chances, learners can now distinguish the *fixed rule* of a fair experiment from the *variable tally* observed in finite repeated runs. This is the domain's final canonical Skill; the depth is Grade 3 without numeric probability calculations.
+Having identified possible outcomes and compared chances, learners can now distinguish the _fixed rule_ of a fair experiment from the _variable tally_ observed in finite repeated runs. This is the domain's final canonical Skill; the depth is Grade 3 without numeric probability calculations.
 
-The core web opportunity is **learner-controlled inspection of a mathematical model**, not merely an illustration: A deterministic *illustration of possible outcome sequences*, not a fake live-randomness proof: a labelled equal-sector spinner remains visibly unchanged while the learner reveals Run A and Run B as fixed recorded sequences of ten spins. Counts update one by one with blue/yellow labels; after both, an optional third panel deliberately shows a changed spinner and asks which conditions changed.
+The core web opportunity is **learner-controlled inspection of a mathematical model**, not merely an illustration: A deterministic _illustration of possible outcome sequences_, not a fake live-randomness proof: a labelled equal-sector spinner remains visibly unchanged while the learner reveals Run A and Run B as fixed recorded sequences of ten spins. Counts update one by one with blue/yellow labels; after both, an optional third panel deliberately shows a changed spinner and asks which conditions changed.
 
 Every example is bounded: Two explicit ten-trial sequences of a fixed two-equal-sector uniformly random spinner, per-color frequency comparisons, and one changed-conditions counterexample. Count outcomes, identify constant/changing factors and compare two runs; do not introduce numeric probability estimates, significance testing, independence theorems, law of large numbers, hypothesis testing, percentages or claims about statistical bias from tiny samples.
 
@@ -39,7 +40,7 @@ Use a vertical single-column order of typed Resource blocks within each general 
 
 2. **`scene` Resource (existing type; bespoke Scene proposed, not implemented):** [TrialRunComparator](./scenes/TrialRunComparator.scene-spec.md). TrialRunComparator displays the unchanged blue/yellow half-spinner with its fair-uniform assumption. Learner predicts whether 5/5 must occur; Run A's ten possible example results are shown one at a time or as an accessible list.
 
-3. **`markdown` Resource (available block type):** “A fair spinner gives both colors the same chance *on each spin*. It does not promise five of each in every short run. In this example, Run A has seven blue and three yellow.”
+3. **`markdown` Resource (available block type):** “A fair spinner gives both colors the same chance _on each spin_. It does not promise five of each in every short run. In this example, Run A has seven blue and three yellow.”
 
 **Meaningful learner action:** Predict whether a 5/5 split is obligatory and tally Run A's ten outcomes.
 
@@ -58,7 +59,7 @@ Use a vertical single-column order of typed Resource blocks within each general 
 
 **Ordered blocks (single outer column):**
 
-1. **`text` Resource (available block type):** “We use the *same* spinner for another ten spins. Could the numbers of blue and yellow change even though the chance for each color stays equal?”
+1. **`text` Resource (available block type):** “We use the _same_ spinner for another ten spins. Could the numbers of blue and yellow change even though the chance for each color stays equal?”
 
 2. **`scene` Resource (existing type; bespoke Scene proposed, not implemented):** [TrialRunComparator](./scenes/TrialRunComparator.scene-spec.md). Replay Run B as a distinct fixed possible sequence with exactly four blue and six yellow outcomes, keeping the spinner illustration locked. Reveal its counts and compare to Run A's 7/3.
 

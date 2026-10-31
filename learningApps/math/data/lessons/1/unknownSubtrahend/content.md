@@ -10,7 +10,7 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-We can find what was **taken away** even if we did not see it being removed: compare how much there was at first with what remains. A starting eleven and remaining seven mean exactly four were removed. The calculation 11−7=4 *finds* this missing part, but the original statement **11−□=7** is only verified when the learner puts **4** into the box and checks **11−4=7**. The same numbers appeared in the unknown-minuend Lesson, but the missing role is different.
+We can find what was **taken away** even if we did not see it being removed: compare how much there was at first with what remains. A starting eleven and remaining seven mean exactly four were removed. The calculation 11−7=4 _finds_ this missing part, but the original statement **11−□=7** is only verified when the learner puts **4** into the box and checks **11−4=7**. The same numbers appeared in the unknown-minuend Lesson, but the missing role is different.
 
 ## LEARNER JOURNEY
 

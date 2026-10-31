@@ -14,7 +14,7 @@ Use <, > and = as precise relational signs between two numerical quantities, ret
 
 **What must become clear:** The statement a < b means a is less than b, a > b means a is greater than b, and a = b means they have equal values. For 8 and 12, 8 < 12 is true, while 12 > 8 expresses the **same** quantitative relationship after swapping operand order. Leaving < in place after swapping makes 12 < 8 false. Equality stays equality after swapping the same values: 7 = 7 in either order. The glyphs are mathematical operators with fixed operand order; they are not words to mirror for Arabic/Hebrew layout. The mathematical pair is isolated directionally so the left operand and right operand remain the intended numbers.
 
-**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains *why* an answer differs from the model.
+**Pedagogical premise:** A learner is not merely recognizing a displayed fact. The first interactive Scene gives control over a concrete model and exposes a critical contrast. A compact explanatory/reflection Section invites retrieval and makes errors understandable. The second Scene independently changes the numbers or representation, so successful reasoning requires applying the mathematical rule rather than reproducing the original picture. Every key feedback branch explains _why_ an answer differs from the model.
 
 ## LEARNER JOURNEY
 
@@ -136,15 +136,15 @@ These documents include **English editorial source text only**. Full real transl
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Capability | Status | Owner / next work |
-| --- | --- | --- |
-| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract | Coding Agent builds Lesson later |
-| Generic `text`, `markdown`, `scene` renderer | Observed in Playground `LessonSectionContent.tsx` | New Scene is *not* provided by generic support |
-| Relation Card Lab and Swap the Comparison | **Proposed** Scene specifications only | Editor approval, separate Scene design, implementation and own tests |
-| Genuine locale translations and RTL/nonvisual equivalence | Product requirements, not produced here | Localization and accessibility QA |
-| Complete downloaded-offline experience | Product target; not verified implemented | PWA/dependency integration and airplane-mode E2E |
-| Lesson Notes and unlock/storage | Planned, unverified runtime | Separate architecture and implementation |
-| Scored Questions, Quizzes, mastery and progress claims | Not authored | Separate Assessment Architect |
+| Capability                                                    | Status                                            | Owner / next work                                                    |
+| ------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
+| General `LessonSection_Config` with ordered `Resource_Config` | Existing TypeScript contract                      | Coding Agent builds Lesson later                                     |
+| Generic `text`, `markdown`, `scene` renderer                  | Observed in Playground `LessonSectionContent.tsx` | New Scene is _not_ provided by generic support                       |
+| Relation Card Lab and Swap the Comparison                     | **Proposed** Scene specifications only            | Editor approval, separate Scene design, implementation and own tests |
+| Genuine locale translations and RTL/nonvisual equivalence     | Product requirements, not produced here           | Localization and accessibility QA                                    |
+| Complete downloaded-offline experience                        | Product target; not verified implemented          | PWA/dependency integration and airplane-mode E2E                     |
+| Lesson Notes and unlock/storage                               | Planned, unverified runtime                       | Separate architecture and implementation                             |
+| Scored Questions, Quizzes, mastery and progress claims        | Not authored                                      | Separate Assessment Architect                                        |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

@@ -4,16 +4,16 @@
 
 ## Completed migrations (code and ownership)
 
-| Stage | Status in stacked branch | Evidence / owner |
-| --- | --- | --- |
-| 0–1 | Earlier foundation and content split | Math owns its taxonomy and docs; Playground owns its demo fixtures |
-| 2 | Contracts split | `shared/contracts` provides canonical content/locale/state contracts and assessment IDs |
-| 3 | Engine utilities + assessment methods | `shared/engine` owns generic builders and the 16 methods |
-| 4 | IndexedDB extraction | `shared/indexdb` owns CRUD, schemas and database configuration; original app `src/db` removed |
-| 5 | Browser integration tests | `shared/indexdb/testing` owns Chromium harness/commands/Playwright suite; app Vitest setup retained |
-| 6 | Shared navigation and preferences | UI Kit owns LearningLayout, NavbarPreferences, 7 dictionaries; app-specific hook bindings remain local |
-| 7 | Platform bootstrap | `frontend/platform` is a standalone Next.js workspace with catalog and desktop/mobile smoke test |
-| 8 | Audit + regression guards | This change: authoritative docs, duplicate baseline, built-export checks and CI integration |
+| Stage | Status in stacked branch              | Evidence / owner                                                                                       |
+| ----- | ------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| 0–1   | Earlier foundation and content split  | Math owns its taxonomy and docs; Playground owns its demo fixtures                                     |
+| 2     | Contracts split                       | `shared/contracts` provides canonical content/locale/state contracts and assessment IDs                |
+| 3     | Engine utilities + assessment methods | `shared/engine` owns generic builders and the 16 methods                                               |
+| 4     | IndexedDB extraction                  | `shared/indexdb` owns CRUD, schemas and database configuration; original app `src/db` removed          |
+| 5     | Browser integration tests             | `shared/indexdb/testing` owns Chromium harness/commands/Playwright suite; app Vitest setup retained    |
+| 6     | Shared navigation and preferences     | UI Kit owns LearningLayout, NavbarPreferences, 7 dictionaries; app-specific hook bindings remain local |
+| 7     | Platform bootstrap                    | `frontend/platform` is a standalone Next.js workspace with catalog and desktop/mobile smoke test       |
+| 8     | Audit + regression guards             | This change: authoritative docs, duplicate baseline, built-export checks and CI integration            |
 
 ## Current audit results
 

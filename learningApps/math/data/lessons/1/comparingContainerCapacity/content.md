@@ -4,7 +4,7 @@ Status: **Provisional Draft — Methodologist approval pending; NOT approved for
 Target Lesson: `learningApps/playground/Data/Lessons/1/comparingContainerCapacity/`
 Audience: **Grade 1**, approximately 6–7 years, all reading/sensory/motor modes, no actual pouring required
 Methodologist source: [Draft Methodologist Brief](./methodologist-brief.md)
-Learning outcomes: explain capacity as *maximum* fill, compare two containers fairly by complete transfer or same-sized scoop, reject misleading height/current fill, recognize equal capacities, repair unfair measurement.
+Learning outcomes: explain capacity as _maximum_ fill, compare two containers fairly by complete transfer or same-sized scoop, reject misleading height/current fill, recognize equal capacities, repair unfair measurement.
 Target Skills: **`capacityConcept.data.ts`** as directly linked in the Brief, not liter/milliliter measurement or density.
 Program dependence: None
 Implementation status: editor-authored Lesson/Scene concept only; no runtime Lesson, water-physics engine, Question or Quiz.
@@ -17,9 +17,9 @@ All demonstrations use discrete internal capacity values in **identical model-sc
 
 ## LEARNER JOURNEY
 
-1. See a **tall narrow** and **short wide** empty container, ask which *could hold* more, and separate **capacity** from **current fill**.
+1. See a **tall narrow** and **short wide** empty container, ask which _could hold_ more, and separate **capacity** from **current fill**.
 2. Use one equal-sized scoop to fill both to their full marks; discover **4 versus 6** and explain why comparing the counts is fair.
-3. Transfer from the *full* smaller container into the *empty* larger one, then reverse the process; reason from **spare room** versus **leftover volume**, without spills.
+3. Transfer from the _full_ smaller container into the _empty_ larger one, then reverse the process; reason from **spare room** versus **leftover volume**, without spills.
 4. Compare differently shaped **equal-capacity** containers, then diagnose a false comparison caused by starting partly filled or changing scoop size.
 
 This is intentional observation–prediction–explanation–controlled manipulation–transfer, not a pouring game for collecting scores. Every interactive action has a verbal/textual equivalent and a reproducible result. No sound, time pressure, graphics-intensive fluid rendering or physical water handling is necessary.
@@ -31,7 +31,7 @@ This is intentional observation–prediction–explanation–controlled manipula
 - **Purpose:** distinguish a container's maximum capacity from its current content and challenge height-only judgments.
 - **Current shape:** `LessonSection_Config` with one ordered vertical Resource column.
 - **Ordered Resources:**
-  1. **text — existing renderer:** "A tall cup and a short wide cup are both empty. Does that mean they can hold nothing? Which one *could hold more if full*? Can we tell from height alone?"
+  1. **text — existing renderer:** "A tall cup and a short wide cup are both empty. Does that mean they can hold nothing? Which one _could hold more if full_? Can we tell from height alone?"
   2. **scene — existing Resource type, proposed custom:** [Capacity Pouring Bench](./scenes/capacityPouringBench.scene-spec.md), placement A. Present empty tall/narrow A, shorter/wider B, each with a marked full boundary but **no numerical unit ticks**. Before revealing model capacities, offer predictions "A holds more", "B holds more", "Cannot know from height only". After the child responds, reveal only the **capacity definition** and why appearance cannot establish which is greater; do **not** reveal capacity ordering or scoop counts before the fair test in Section 2.
   3. **markdown — existing renderer:** "Even an **empty** cup can hold something. Its **capacity** is the amount it could hold when filled to its full mark. A taller cup is not necessarily the cup with greater capacity: width and shape also matter. We need a fair comparison."
 - **Feedback:** For "empty means no capacity": "It's empty now, but it still has space inside. That's its capacity." For "A because taller": "Height alone doesn't tell us how much it can hold. Let's use the **same scoop** to test." The initial "cannot tell" is a reasoned uncertainty, not a scored correct answer.
@@ -67,7 +67,7 @@ This is intentional observation–prediction–explanation–controlled manipula
 - **Current shape:** single-column general Section.
 - **Ordered Resources:**
   1. **text — available:** "Here are two more differently shaped containers. Could they hold the **same amount**? Someone measured one container with a **big scoop** and the other with a **small scoop**. Is that a fair test?"
-  2. **scene — proposed:** [Capacity Pouring Bench](./scenes/capacityPouringBench.scene-spec.md), placement D. Containers C tallish/narrow and D low/wide each have capacity **5 of one identical model scoop**. A fair comparison fills both with 5 and reports **equal capacity**. An *invalid* example shows "C: 3 large scoops; D: 5 small scoops" where scoop volumes are **not equivalent** and no numeric comparative conclusion is permitted. Offer "Use identical scoop", "Fill both to the full mark", then reveal 5 versus 5. Another false example uses C only partly filled (2/5) while D is full (5/5); repair it before comparing capacities.
+  2. **scene — proposed:** [Capacity Pouring Bench](./scenes/capacityPouringBench.scene-spec.md), placement D. Containers C tallish/narrow and D low/wide each have capacity **5 of one identical model scoop**. A fair comparison fills both with 5 and reports **equal capacity**. An _invalid_ example shows "C: 3 large scoops; D: 5 small scoops" where scoop volumes are **not equivalent** and no numeric comparative conclusion is permitted. Offer "Use identical scoop", "Fill both to the full mark", then reveal 5 versus 5. Another false example uses C only partly filled (2/5) while D is full (5/5); repair it before comparing capacities.
   3. **markdown — available:** "C and D have **equal capacity** because each holds **five of the same scoops** when full. Different shapes can hold the same amount. We cannot compare capacities from different scoop sizes or from one cup only partly filled."
 - **Feedback:** For "D holds more because five is bigger than three": "Those numbers count **different-sized scoops**, so the comparison isn't fair." For "D holds more because it's fuller right now": "One cup was **not filled to capacity**. Fill both fully with identical scoops." For equality when fair: "Same full count with the same scoop means **equal capacity**." Do not assert that physically equivalent scoop sizes have been measured in liters.
 - **Independent transfer:** Show unfamiliar empty vessels with very different silhouettes and ask what measurement setup would fairly compare their capacities. Child selects "same scoop, fill to full" instead of guessing taller or wider. No graded Quiz.

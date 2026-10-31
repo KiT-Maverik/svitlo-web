@@ -89,15 +89,15 @@ Every prompt, alternative text, digit/number word, Scene state, feedback, Focus 
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Item | Actual status | Owner / next step |
-| --- | --- | --- |
-| General `LessonSection_Config` with ordered Resource list | Existing Code contract | Coding Agent assembles Lesson only after approvals |
-| Generic `text`, `markdown`, `scene` Resource rendering | Existing Playground renderer | Coding Agent verifies current implementation |
-| Bespoke Number Card Organizer and Reverse and Repair | **Proposed**; only Screenwriter scene specs exist | Editor approves specs, then Scene Designer implements and tests |
-| Locales / screen readers / semantic RTL / media alternatives | Design requirements; not delivered here | Localization and QA must verify |
-| Fully downloaded offline experience | Required target; not established by these docs | App/PWA integration and airplane-mode tests |
-| Notes and persistence | Planned only, no verified Note runtime | Separate future architectural approval |
-| Questions, Quizzes, scoring, mastery | **Not authored** | Assessment Architect owns separate stage |
+| Item                                                         | Actual status                                     | Owner / next step                                               |
+| ------------------------------------------------------------ | ------------------------------------------------- | --------------------------------------------------------------- |
+| General `LessonSection_Config` with ordered Resource list    | Existing Code contract                            | Coding Agent assembles Lesson only after approvals              |
+| Generic `text`, `markdown`, `scene` Resource rendering       | Existing Playground renderer                      | Coding Agent verifies current implementation                    |
+| Bespoke Number Card Organizer and Reverse and Repair         | **Proposed**; only Screenwriter scene specs exist | Editor approves specs, then Scene Designer implements and tests |
+| Locales / screen readers / semantic RTL / media alternatives | Design requirements; not delivered here           | Localization and QA must verify                                 |
+| Fully downloaded offline experience                          | Required target; not established by these docs    | App/PWA integration and airplane-mode tests                     |
+| Notes and persistence                                        | Planned only, no verified Note runtime            | Separate future architectural approval                          |
+| Questions, Quizzes, scoring, mastery                         | **Not authored**                                  | Assessment Architect owns separate stage                        |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

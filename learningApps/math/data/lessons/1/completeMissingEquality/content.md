@@ -4,18 +4,20 @@
 
 ## Editorial experience
 
-Do not repeat the existing unknown-addend Lesson as a single blank arithmetic fact. The central discovery is that **both sides of the equals sign may be expressions**, and the unknown must make their *values* match. Use predictable, equal-unit counters first, then let students reason symbolically; every attempt receives a meaningful explanation, without a score.
+Do not repeat the existing unknown-addend Lesson as a single blank arithmetic fact. The central discovery is that **both sides of the equals sign may be expressions**, and the unknown must make their _values_ match. Use predictable, equal-unit counters first, then let students reason symbolically; every attempt receives a meaningful explanation, without a score.
 
 ### Section 1 — One side is already known (guided exploration)
-*Purpose: learn to establish a target value before choosing a missing term.*
+
+_Purpose: learn to establish a target value before choosing a missing term._
 
 1. **`text` resource:** “Which side can we work out right now? **6 + □ = 4 + 5**.” Give a moment to predict whether the box should contain 3, 5 or 9, without marking a guess wrong.
 2. **`scene` resource, proposed:** [Expression Match Lab](./scenes/expressionMatchLab.scene-spec.md), entry A. A fixed right-hand board shows four counters joined with five; its total is revealed as **9**. The left board shows six visible counters and a space for the box. Children insert one, two, three or more unit counters using plus/minus controls (a keyboard-equivalent to optional manipulation), then inspect the two totals.
 3. **`text`:** For 3: “Six and three make nine. Four and five make nine. **Both sides match**.” For 9: “The right side is nine altogether, but six plus nine is fifteen. The box is one part, not the whole.” For 5: “Six plus five is eleven, not nine.”
-4. **`markdown`:** “The side with no box gives us a target. Find a number that makes the other side have that same value. Then check *both* sides.”
+4. **`markdown`:** “The side with no box gives us a target. Find a number that makes the other side have that same value. Then check _both_ sides.”
 
 ### Section 2 — Move the box, not the rule (guided contrast)
-*Purpose: resist reading the equals sign as a one-way arrow.*
+
+_Purpose: resist reading the equals sign as a one-way arrow._
 
 1. **`text`:** “A different equality: **7 + 2 = □ − 1**. Seven plus two is nine. What number must we start with if we remove one and still have nine?”
 2. **`scene` resource, proposed:** Expression Match Lab, entry B. Show nine counters for 7 + 2 on one board. The other board is a configurable starting group with one counter visually marked to leave. Try **9**, **10**, **11** in the start box, and reveal the amount after removing one. The learner may change the candidate freely.
@@ -23,14 +25,16 @@ Do not repeat the existing unknown-addend Lesson as a single blank arithmetic fa
 4. **`markdown`:** “The missing number is not always the result. It may be a starting number or part of an expression.”
 
 ### Section 3 — Fix a mistaken idea (prediction and explanation)
-*Purpose: make the value-based test explicit.*
+
+_Purpose: make the value-based test explicit._
 
 1. **`text`:** “A friend writes **8 + □ = 6 + 5**, puts **11** in the box and says, ‘The right side is eleven, so the box is eleven.’ Is that enough?”
 2. **`scene` resource, proposed:** Lab entry C begins with candidate 11. Compare 8 + 11 = 19 with 6 + 5 = 11. Ask what is actually missing on the left; replacing with **3** restores 8 + 3 = 11. Learner chooses whether to change the box or the equals sign. If they choose the sign: “The symbol doesn't change eight plus eleven.”
-3. **`text`:** “A true check: **8 + 3 = 11** and **6 + 5 = 11**. You found what *was needed*, not just the total.”
+3. **`text`:** “A true check: **8 + 3 = 11** and **6 + 5 = 11**. You found what _was needed_, not just the total.”
 
 ### Section 4 — New context, independent transfer
-*Purpose: apply the same reasoning without a pre-filled candidate.*
+
+_Purpose: apply the same reasoning without a pre-filled candidate._
 
 1. **`text`:** “Make **□ + 4 = 5 + 6** true. First work out the side without the box, then find the missing part and explain.”
 2. **`scene` resource, proposed:** Lab entry D hides the target until the learner elects to reveal a hint, offers an accessible number-entry alternative to tokens, and shows a comparison only after the learner requests Check. Expected: **7 + 4 = 5 + 6 = 11**.

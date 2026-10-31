@@ -30,7 +30,7 @@ Produce a concise, prioritized review:
 - **Finding:** severity (`blocker` / `high` / `medium` / `low`); exact changed code/file/lines; concrete mechanism and consequence; evidence and a minimal recommended fix.
 - **Constitution compliance:** specify the **actual written rule/section** when it exists. When the Development Constitution is still empty, explicitly say no constitutional clause was available and cite the **real** repository/source requirement instead; do not invent a failing clause.
 - **Change-level conclusion:** summarize architecture and contract compliance, tests/checks observed versus not run, blockers, open questions and downstream effects. It is acceptable to report **no actionable findings** if substantiated.
-- **Scope:** separate *introduced by this PR*, *pre-existing*, *potential future risk* and *not verified*.
+- **Scope:** separate _introduced by this PR_, _pre-existing_, _potential future risk_ and _not verified_.
 
 **Review-only by default:** do not alter code, merge/approve a PR, refactor unrelated packages or create follow-up PRs without explicit authorization. Never mark a review “passed” on the basis of incomplete inspection.
 

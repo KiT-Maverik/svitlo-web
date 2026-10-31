@@ -21,6 +21,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 ### Beat 1: There are ten loose sticks. Can you turn exactly ten into one bundle?
+
 - **Exact learner-facing invitation:** “There are ten loose sticks. Can you turn exactly ten into one bundle?”
 - **Action / teacher model:** Select all ten loose sticks (or use accessible 'Select ten' control) and activate Bundle; show a band around exactly ten, then show ten still counted inside when expanded.
 - **Expected state change / observation:** 10 loose ones → 1 ten-bundle + 0 loose ones; total unchanged at 10.
@@ -29,6 +30,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 - **Progression:** Learner may inspect a worked reveal at any time; no irreversible grade, timeout or random success condition.
 
 ### Beat 2: Here are one ten-bundle and seven loose sticks. What if you unbundle the ten?
+
 - **Exact learner-facing invitation:** “Here are one ten-bundle and seven loose sticks. What if you unbundle the ten?”
 - **Action / teacher model:** Unbundle the group of ten while leaving the seven loose ones; reveal 17 loose pieces, then bundle ten again.
 - **Expected state change / observation:** 1 ten + 7 ones = 17; 0 tens + 17 loose ones = 17; return to 1 ten + 7 ones.
@@ -41,6 +43,7 @@ In decimal notation a ten is equivalent to exactly ten ones. For a two-digit num
 **Objects:** Modelled quantity cards/items, their stable semantic identities, count/representation ledger, native controls and visible explanation. Select ten, Bundle, Unbundle, Show contained members, Reveal full count, Reset; no automatic timed actions.
 
 **Local state and invariants:**
+
 - Initial values come from deterministic constants within the standalone Scene module, **not** a Lesson prop, global store, new Resource subtype, invented platform API or fake locale prop.
 - Only an explicit learner action may change represented quantity, grouping or order; all labels and accessible counts derive from the same authoritative local model.
 - Do not allow an object to be consumed/paired/placed twice when that would alter the mathematics. **Reset** restores exactly this Scene's initial state, not any other Section; scenario changes cannot leak answers or counters from the previous state.

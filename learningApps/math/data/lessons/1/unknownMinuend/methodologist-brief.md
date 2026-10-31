@@ -8,7 +8,7 @@ Program dependence: None
 
 ## Educational purpose
 
-Help children reconstruct an unknown *starting whole* in a subtraction. When the amount removed and the amount remaining are known, putting those two parts back together finds the original whole. This is the inverse relation behind □ − 4 = 7, so □ = 7 + 4 = 11. A reliable answer is checked by substitution into the **original subtraction**, not by accepting a plausible sum.
+Help children reconstruct an unknown _starting whole_ in a subtraction. When the amount removed and the amount remaining are known, putting those two parts back together finds the original whole. This is the inverse relation behind □ − 4 = 7, so □ = 7 + 4 = 11. A reliable answer is checked by substitution into the **original subtraction**, not by accepting a plausible sum.
 
 ## Target audience
 
@@ -27,7 +27,7 @@ Children aged approximately 6–8 (grades 1–2) who understand concrete subtrac
 
 ## Expected learning outcomes
 
-- Identify the missing first number in □ − 4 = 7 as the *starting whole*, not what was removed.
+- Identify the missing first number in □ − 4 = 7 as the _starting whole_, not what was removed.
 - Reconstruct the starting whole by combining 4 removed and 7 remaining: 7 + 4 = 11.
 - Model the part–whole reconstruction physically, visually or with an equivalent accessible number record.
 - Verify the candidate in the original equality 11 − 4 = 7 and distinguish this calculation from finding an unknown subtrahend.
@@ -38,7 +38,7 @@ The minuend is the quantity from which another amount is subtracted. For nonnega
 
 ## Conceptual progression and dependencies
 
-Begin with a known whole and a fully explained removal, then obscure *only* the original whole's numeral while keeping removed and remaining quantities visible. Reconstruct the original by combining two known parts, express the addition and restore the number into the original subtraction. Contrast positions of the blank without requiring formal symbolic rearrangement. Transfer to a fresh example with smaller prompts.
+Begin with a known whole and a fully explained removal, then obscure _only_ the original whole's numeral while keeping removed and remaining quantities visible. Reconstruct the original by combining two known parts, express the addition and restore the number into the original subtraction. Contrast positions of the blank without requiring formal symbolic rearrangement. Transfer to a fresh example with smaller prompts.
 
 ## Misconceptions, examples and boundaries
 

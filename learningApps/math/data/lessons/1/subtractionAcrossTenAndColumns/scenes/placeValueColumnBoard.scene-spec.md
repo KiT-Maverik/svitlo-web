@@ -24,6 +24,7 @@ Child-facing explanation: “Thirty-two has three tens and two ones. We need to 
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Section 3 / notice and exchange**
+
 1. Show a labeled tens/ones board with 32 above 17, and a separate model: three ten-bundles and two ones for 32. Label 17 as “we are taking away one ten and seven ones,” clearly separated from the original whole.
 2. Ask “Can we take away seven ones from the two loose ones?” Child may predict, then reveal the numerical comparison “2 ones is fewer than 7 ones.”
 3. “Exchange one ten” transforms exactly one of the three ten-bundles into ten loose ones. The tens column decrements from three to two; the ones column changes from two to twelve. Display both states and explicit equality: **30+2=20+12=32**.
@@ -32,11 +33,12 @@ Child-facing explanation: “Thirty-two has three tens and two ones. We need to 
 6. Only after the child can inspect the conserved representation does the Scene display the preview “Now we can subtract 7 from 12 ones.”
 
 **Section 4 / subtract and verify**
+
 1. A fresh self-contained entry displays **32−17**, aligned tens/ones columns, and the corresponding original 3 ten-bundles+2 ones. The answer and marks are not initially displayed.
 2. “Exchange a ten” performs the same conservation-safe update (or “Show me how” reveals the update). Show “2 tens, 12 ones”.
 3. “Take away 7 ones” moves/marks seven ones as removed, leaving five. Write **12−7=5** into the ones-column explanation.
 4. “Take away 1 ten” marks one of the remaining two tens as removed, leaving one ten. Write **2−1=1 ten**. Final result is **1 ten + 5 ones = 15**.
-5. “Check the answer” explicitly displays **15+17=32** and labels it as reverse addition to the *original* subtraction 32−17; the sum thirty-two matches the initial quantity.
+5. “Check the answer” explicitly displays **15+17=32** and labels it as reverse addition to the _original_ subtraction 32−17; the sum thirty-two matches the initial quantity.
 6. Offer a supported mistake inspection (not a fake quiz): If child selects “subtract 7−2=5,” say “We need to take seven ones FROM the two ones in thirty-two. We cannot reverse the numbers to avoid an exchange. Exchange one ten so we can do 12−7.” If child retains three tens after exchange, show **42** and explain missing decrement.
 7. Optional new case **41−16** (only upon request), with exchange, subtraction and check **25+16=41**; all steps must reflect the new numbers. “Reset” restores the original case.
 8. End with learner reflection “What changed when the ten became ones? What did not change?” Reveal “The number of tens and ones changed. The total before subtracting stayed the same.”

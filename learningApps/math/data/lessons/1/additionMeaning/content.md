@@ -29,6 +29,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Identify whether a situation joins two separate collections or grows one existing collection.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “Three blue counters are in one bowl and two yellow counters in another. How many counters do both bowls hold?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Joining and Growing Lab](./scenes/joiningGrowingLab.scene-spec.md), Section 1 entry. Two separate countable bowls with 3 and 2 counters. Learner selects 'Count first bowl', 'Count second bowl', then 'Count all' (or a complete-text explanation). No physical arrival, no time sequence.
 3. **markdown (supported):** “The first bowl has three and the second has two. Counting both disjoint sets once gives five. Nothing had to arrive later; we joined the quantities in our counting.” Display the mathematical statement **3 + 2 = 5** as readable symbolic text.
@@ -52,6 +53,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Represent each story by a correct addition equality and distinguish starting amount, amount added and combined total.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “Three counters are on the table. Two more arrive. How many are on the table now?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Joining and Growing Lab](./scenes/joiningGrowingLab.scene-spec.md), Section 2 entry. Show an initial group of 3, then learner-controlled 'Add two' action places exactly two new counters in a labeled 'arrived' area. Preserve both initial and new counts.
 3. **markdown (supported):** “Three were already here, and two arrived; now there are five. This time addition describes a change in one collection, although the numbers match the bowl story.” Display the mathematical statement **3 + 2 = 5** as readable symbolic text.
@@ -75,6 +77,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Explain with counters that 3+2=5 in both stories without pretending the first story contains a temporal event.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “Which story joins two groups? Which story makes one group grow?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Joining and Growing Lab](./scenes/joiningGrowingLab.scene-spec.md), Section 3 entry. Offer both stories side by side inside the Scene, with semantic labels. Learner selects 'both bowls' or 'two arrive'; display corresponding objects and identical 3+2=5 each time.
 3. **markdown (supported):** “Both stories have a total of five, but in one we combined separate bowls and in the other two new counters arrived. The equality alone doesn't tell the entire story.” Display the mathematical statement **3 + 2 = 5** as readable symbolic text.
@@ -98,6 +101,7 @@ Learners build and examine exact numerical relationships before being told a rul
 **Purpose and outcome:** Solve a new one-step combine or increase example within ten and check by counting.
 
 **Ordered resource blocks (one vertical LessonSection_Config):**
+
 1. **text (supported):** “Four counters are waiting. Three more arrive. How many now? Can you also make a two-bowl story for those numbers?”
 2. **scene (generic renderer supported; custom implementation proposed):** [Joining and Growing Lab](./scenes/joiningGrowingLab.scene-spec.md), Section 4 entry. Transfer: initial 4, arrival 3, new total 7. Learner predicts 6/7/8, inspects a counter ledger, then toggles to two independent bowls 4 and 3 and explains 4+3=7.
 3. **markdown (supported):** “Four plus three equals seven. We can grow a group of four by three or count two separate groups of four and three. Both contain seven overall.” Display the mathematical statement **4 + 3 = 7** as readable symbolic text.

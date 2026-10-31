@@ -120,17 +120,17 @@ All learner-facing source text here is English for subsequent genuine translatio
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Readiness | Owner / required action |
-| --- | --- | --- |
-| LessonSection_Config, ordered single-column text/markdown resources | Available in current contract/renderer | Coding Agent assembles reviewed localized content |
-| scene Resource block and React rendering | Available integration mechanism | Coding Agent verifies registration and locale handling |
-| Step Explorer and Rule Inspector | Proposed new components | Scene Designer implements separate approved Scene specs with tests |
-| Independent section-specific instances / starting modes | Requires integration review | Coding Agent chooses prop-free entries and isolated state; no invented React props |
-| KnowledgeCheckpoint | Existing unscored widget via Scene wrapper | Not necessary for this Lesson; do not infer assessment from checking |
-| Graded Quiz/Question, assessment attribution | Contract-only/partially integrated | Assessment Architect specifies independently, if approved |
-| Notes, persisted unlocks, spaced review, full offline download flow | Planned / not wired | Separate later implementation; do not fabricate APIs |
-| Image/audio/video/code blocks | Typed-only in the generic Section renderer | Not needed |
-| youtube | Label-only, not a supported Resource_Config | Not used |
+| Feature                                                             | Readiness                                   | Owner / required action                                                            |
+| ------------------------------------------------------------------- | ------------------------------------------- | ---------------------------------------------------------------------------------- |
+| LessonSection_Config, ordered single-column text/markdown resources | Available in current contract/renderer      | Coding Agent assembles reviewed localized content                                  |
+| scene Resource block and React rendering                            | Available integration mechanism             | Coding Agent verifies registration and locale handling                             |
+| Step Explorer and Rule Inspector                                    | Proposed new components                     | Scene Designer implements separate approved Scene specs with tests                 |
+| Independent section-specific instances / starting modes             | Requires integration review                 | Coding Agent chooses prop-free entries and isolated state; no invented React props |
+| KnowledgeCheckpoint                                                 | Existing unscored widget via Scene wrapper  | Not necessary for this Lesson; do not infer assessment from checking               |
+| Graded Quiz/Question, assessment attribution                        | Contract-only/partially integrated          | Assessment Architect specifies independently, if approved                          |
+| Notes, persisted unlocks, spaced review, full offline download flow | Planned / not wired                         | Separate later implementation; do not fabricate APIs                               |
+| Image/audio/video/code blocks                                       | Typed-only in the generic Section renderer  | Not needed                                                                         |
+| youtube                                                             | Label-only, not a supported Resource_Config | Not used                                                                           |
 
 The Methodologist Brief still carries status Draft on disk. The editor's explicit authorization to **treat all existing Briefs as approved for this test** permits the Screenwriter's work now; do not rewrite that Methodologist-owned file here. Resolve metadata before publication.
 

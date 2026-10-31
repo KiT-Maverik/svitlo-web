@@ -4,10 +4,11 @@
 **Methodologist input:** [Draft Brief](./methodologist-brief.md) (**not approved**).
 **Primary audience:** Grade 3, ages 8–9.
 **Target canonical Skills:**
+
 - [wholeDependence.data.ts](../../../../data/skills/fractions/representation/skills/wholeDependence.data.ts)
 - [oneAsFraction.data.ts](../../../../data/skills/fractions/representation/skills/oneAsFraction.data.ts)
-**Independence:** standalone Playground Lesson; no Program storyline, mascot, reward, mission or past learner state required.
-**Implementation:** editorial Content only. No runtime Lesson, Questions, Quizzes, scoring, registered custom Scenes or locale bundles created.
+  **Independence:** standalone Playground Lesson; no Program storyline, mascot, reward, mission or past learner state required.
+  **Implementation:** editorial Content only. No runtime Lesson, Questions, Quizzes, scoring, registered custom Scenes or locale bundles created.
 
 ## Instructional concept
 
@@ -69,7 +70,7 @@ Use a vertical single-column order of typed Resource blocks within each general 
 
 **Explanatory feedback for anticipated choices:**
 
-- **Three wholes:** “Three thirds are three *parts* of one whole. They fit within its original border and fill it once.”
+- **Three wholes:** “Three thirds are three _parts_ of one whole. They fit within its original border and fill it once.”
 - **2/3 for all:** “Two of the three equal pieces leave one unselected; to cover the whole we need three of three.”
 
 **Learner control and transfer:** Ask for a prediction before revealing a model's conclusion where appropriate. Any wrong selection exposes the relevant mathematical fact, with a no-penalty retry. The correct explanation stays accessible on demand without requiring a correct answer or forcing perfect performance before navigation.

@@ -10,7 +10,7 @@ Program dependence: None
 
 ## INSTRUCTIONAL CONCEPT
 
-Children can count three *groups of four* before they know the symbol ×. The group count and the number inside each group explain **4 + 4 + 4 = 12**. We then introduce multiplication **3 × 4 = 12** as a shorter way to name that repeated addition, with the convention **number of groups × items in each group** for this lesson. “Three plus four” is not the same operation. Both 3 and 4 are **factors** (the numbers multiplied); the result 12 is the **product**. The roles “groups” and “in each group” belong to the *model* and may correspond differently in another convention; do not claim mathematical factor position universally fixes real-world meaning.
+Children can count three _groups of four_ before they know the symbol ×. The group count and the number inside each group explain **4 + 4 + 4 = 12**. We then introduce multiplication **3 × 4 = 12** as a shorter way to name that repeated addition, with the convention **number of groups × items in each group** for this lesson. “Three plus four” is not the same operation. Both 3 and 4 are **factors** (the numbers multiplied); the result 12 is the **product**. The roles “groups” and “in each group” belong to the _model_ and may correspond differently in another convention; do not claim mathematical factor position universally fixes real-world meaning.
 
 The decisive contrast is between **equal addends** (4 + 4 + 4) and **unequal addends** (4 + 3 + 4). The second cannot be read as repeated addition of one identical addend **without rearranging the quantities**. This is not a claim that its sum cannot be computed or that it cannot be modeled by some other mathematics. Use factors 1–5 and totals up to 25, with countable objects and no division, advanced properties, arrays-as-formal proof, negative numbers or timed recall drills.
 
@@ -35,7 +35,7 @@ Short text → manipulable model → explanatory feedback is the primary rhythm.
   3. **markdown — available:** “There are **3 groups**, with **4 in each group**. Count all the counters: **4 + 4 + 4 = 12**. The numbers four repeat because every group is the same size.”
 - Core explanation and learner-facing text: Each group contains the same number, not “three counters” everywhere. The group count and group size answer different questions.
 - Illustration / model / experiment: Three consistent containers of four objects (not three rows where one has a different size). Each group has an explicit ordinal label and count, with an equivalent text list.
-- Learner action, observations and explanatory feedback: The child chooses “Count one group”, “Count all” or predicts 7 / 12 / 14. For 7: “Three plus four is seven, but that counts only the *labels*. We need all counters in each group.” For 14: “Four, eight, twelve—there are twelve counters.” For 12: “Yes. Four from each of three groups is twelve.”
+- Learner action, observations and explanatory feedback: The child chooses “Count one group”, “Count all” or predicts 7 / 12 / 14. For 7: “Three plus four is seven, but that counts only the _labels_. We need all counters in each group.” For 14: “Four, eight, twelve—there are twelve counters.” For 12: “Yes. Four from each of three groups is twelve.”
 - Navigation and transition: Keep the three groups unchanged when introducing symbols; the picture is the anchor.
 - Accessibility, locale and RTL: All group membership/quantities have native text descriptions; controls keyboard/touch operable and non-color-dependent. Translate “in each” unambiguously, preserve numerical order under RTL.
 - Proposed unlocked Note(s): Note 1 “Equal groups have the same number in each group” after the first full group comparison; planned, not wired.
@@ -114,16 +114,16 @@ All learner-facing English strings are translation source only; real localized e
 
 ## PRODUCTION / PLATFORM DEPENDENCIES
 
-| Feature | Readiness / responsible role |
-| --- | --- |
-| LessonSection_Config and ordered text, markdown and scene rendering | Available in inspected current code; Coding Agent composes after approval |
-| Equal Group Composer and Expression Reader | Proposed custom Scenes; Scene Designer implements after separate spec approvals and with tests |
-| Scene placements with independent initial state/locales | Integration check required by Coding Agent; no fictional public mode props |
-| KnowledgeCheckpoint | Existing unscored widget via Scene wrapper, not needed here |
-| Quiz_Config and Questions | Type contracts exist; Lesson adapter supports select-one; Assessment Architect owns graded assessment |
-| Image, video, audio, code | Typed but not generic-rendered; unused |
-| YouTube | Type label only, not supported by Resource_Config; unused |
-| Notes, spaced review, full offline download | Planned capabilities, not invented as implemented |
+| Feature                                                             | Readiness / responsible role                                                                          |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| LessonSection_Config and ordered text, markdown and scene rendering | Available in inspected current code; Coding Agent composes after approval                             |
+| Equal Group Composer and Expression Reader                          | Proposed custom Scenes; Scene Designer implements after separate spec approvals and with tests        |
+| Scene placements with independent initial state/locales             | Integration check required by Coding Agent; no fictional public mode props                            |
+| KnowledgeCheckpoint                                                 | Existing unscored widget via Scene wrapper, not needed here                                           |
+| Quiz_Config and Questions                                           | Type contracts exist; Lesson adapter supports select-one; Assessment Architect owns graded assessment |
+| Image, video, audio, code                                           | Typed but not generic-rendered; unused                                                                |
+| YouTube                                                             | Type label only, not supported by Resource_Config; unused                                             |
+| Notes, spaced review, full offline download                         | Planned capabilities, not invented as implemented                                                     |
 
 ## EDITORIAL SOURCES AND OPEN QUESTIONS
 

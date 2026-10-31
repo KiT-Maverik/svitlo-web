@@ -25,6 +25,7 @@ Canonical child-facing statement: “The box can be first or second. Put your nu
 ## EXPERIENCE BEATS AND LEARNER ACTIONS
 
 **Section 3 / position-comparison placement**
+
 1. Show 5 + □ = 12, with a 12-counter whole split into five known counters and seven counters whose numeral is hidden. Prompt **“Which part is the box? What number makes the two sides equal?”**
 2. Permit choosing 5, 6 or 7, or pressing “Show the parts”. Selecting 7 replaces the box and displays **“5 + 7 = 12. Both sides are 12.”** Selecting 5 gives **“5 + 5 = 10. That is not 12.”** Selecting 6 gives **“5 + 6 = 11. That is not 12.”** Do not give feedback solely as red/green or a score.
 3. Present **□ + 5 = 12** with exactly the same whole and the same part sizes. Prompt **“Now the box moved. Did the whole change?”** Learner may substitute the same seven. The check reads **“7 + 5 = 12.”** Show that the total and known part did not change.
@@ -33,6 +34,7 @@ Canonical child-facing statement: “The box can be first or second. Put your nu
 6. Learner can reset or select “Show why” at any stage; no compulsory success gate.
 
 **Section 4 / independent substitution placement**
+
 1. In an independently initialized Scene, show **□ + 6 = 14** and clear text **“Find the missing part. Put your number in the box. Then check the addition.”** Do not initially expose the result.
 2. Optional “Show the parts” reveals a model of fourteen counters with a known six; “Show a hint” says **“If you know the whole and one part, subtract that part from the whole.”** These aids do not change the learning goal.
 3. Offer **7 / 8 / 9** as formative selections. A candidate is inserted into the **same original equation**; explicitly compute both sides and compare:
@@ -50,19 +52,19 @@ Canonical child-facing statement: “The box can be first or second. Put your nu
 - **Placement independence:** Two self-contained, prop-free Scene entries; position-comparison and independent-check are **editorial presentations**, not a new React mode prop or Resource_Config field. Coding Agent may share internal logic while preserving initial state and locale isolation.
 - **State:** current original equality and missing position, known addend, whole, candidate(s) tried, last substituted equality, result of direct numeric comparison, help level, explanation visibility, optional transfer example. Reset restores the original unseen candidate, not a hidden “correctness score”.
 - **Calculation rule:** On choosing candidate C, render the original expression with □ replaced by C, evaluate LHS using addition, compare exactly with the stated RHS W, and explain the result. The displayed check must not silently rewrite the original equality as a subtraction problem.
-- **Mathematical invariant:** The only *valid missing value* for K + U = W or U + K = W in the approved nonnegative domain is W−K. Other candidates must be shown as failed substitutions with their actual sums. The UI may display an incorrect equality temporarily, but must label it clearly as **not equal**, never a true mathematical identity.
+- **Mathematical invariant:** The only _valid missing value_ for K + U = W or U + K = W in the approved nonnegative domain is W−K. Other candidates must be shown as failed substitutions with their actual sums. The UI may display an incorrect equality temporarily, but must label it clearly as **not equal**, never a true mathematical identity.
 - **Control state:** The child may request explanation without choosing, switch between positions in Section 3 and switch to transfer only on explicit request. Every switch announces the original equality and resets dependent state. Cross-Section state is not shared.
 - **Out-of-range cases:** No example with negative unknown or sum above twenty is set as an initial task. When evaluating a wrong candidate that would produce a sum above 20, use accurate numerical text rather than inventing uncountable/overflow counter visuals.
 - **No scoring:** All responses are transitory formative comparisons, not Question_Config answer persistence, diagnostic statistics or a mastered Skill event.
 
 ## VISUAL / AUDIO / MEDIA DIRECTION
 
-Display one large, legible expression and a simple counter part/whole representation. Show the *candidate substitution* as a visible replacement of the box, followed by the evaluated left and right numerical values; mark **“equal”** or **“not equal”** in words as well as optional icons. Use subtle transitions to call attention to which position changed, but avoid a balance scale animation that falsely implies different operations or physical weights. Present equations in correct mathematical reading order in every layout. No required media asset, narration, video, remote computation, mascot or visual reward.
+Display one large, legible expression and a simple counter part/whole representation. Show the _candidate substitution_ as a visible replacement of the box, followed by the evaluated left and right numerical values; mark **“equal”** or **“not equal”** in words as well as optional icons. Use subtle transitions to call attention to which position changed, but avoid a balance scale animation that falsely implies different operations or physical weights. Present equations in correct mathematical reading order in every layout. No required media asset, narration, video, remote computation, mascot or visual reward.
 
 ## LOCALIZATION, DIRECTION AND ACCESSIBILITY
 
 - Genuine translations required for **all** learner-facing controls, hints, feedback, equation descriptions and accessible status messages in every supported locale; retain mathematically meaningful terms and a child-friendly explanation for addend/whole/sum.
-- For screen readers, speak **“missing first addend plus six equals fourteen”** or **“five plus missing second addend equals twelve”** as appropriate, and on testing announce the *full substituted equality*, result and match status. A structured text comparison must enable all reasoning without viewing the counters.
+- For screen readers, speak **“missing first addend plus six equals fourteen”** or **“five plus missing second addend equals twelve”** as appropriate, and on testing announce the _full substituted equality_, result and match status. A structured text comparison must enable all reasoning without viewing the counters.
 - RTL: preserve the order and identities of numeric operands/equalities; do not blindly flip mathematical glyphs or make the unknown appear in the wrong addend role. Surrounding controls may use locale-specific logical ordering.
 - Accessible native buttons, visible focus, high contrast, ample hit areas for children, no drag-only interactions, no compulsory typing/voice or timed expiry. Counter group sizes also available through text and optional simple numerals for dyscalculia support.
 - Reduced-motion mode shows identical substituted numbers and outcomes instantly. Zoom and narrow-screen layouts may stack the model and original equality while preserving the same Section and Scene behavior.

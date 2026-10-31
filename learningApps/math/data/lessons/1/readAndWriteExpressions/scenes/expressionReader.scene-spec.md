@@ -7,7 +7,7 @@
 
 ## Learner purpose and mathematical contract
 
-This Scene teaches translation from quantities and words into a correct **numeric expression**, without conflating expression, evaluated number and equality. All counters, symbols and text must agree on the **start**, **change** and **operation**. An expression is not automatically an equality. Correct mathematical calculations can still be the *wrong output type* when the instruction specifically requests an expression.
+This Scene teaches translation from quantities and words into a correct **numeric expression**, without conflating expression, evaluated number and equality. All counters, symbols and text must agree on the **start**, **change** and **operation**. An expression is not automatically an equality. Correct mathematical calculations can still be the _wrong output type_ when the instruction specifically requests an expression.
 
 ## Learner journey, choices and feedback
 
@@ -25,11 +25,11 @@ Present three labeled cards: 6 + 2, 8, and 6 + 2 = 8. Learner classifies them as
 
 ### Entry D — independent transfer (Section 4)
 
-Story: fourteen tokens in a jar, four taken out. Present empty operation slots or an accessible text entry. Expected expression: 14 − 4. If 4 − 14, explain that fourteen is the initial count. If 14 + 4, explain that removal lowers the number remaining. If 14 − 4 = 10, explain that it is a *true equality* but the requested output was an expression; show 14 − 4 as the precise response. Optional hints: “Which amount starts?” then “Were tokens added or removed?” Optional answer reveal shows ten tokens remain only after the initial expression is clear.
+Story: fourteen tokens in a jar, four taken out. Present empty operation slots or an accessible text entry. Expected expression: 14 − 4. If 4 − 14, explain that fourteen is the initial count. If 14 + 4, explain that removal lowers the number remaining. If 14 − 4 = 10, explain that it is a _true equality_ but the requested output was an expression; show 14 − 4 as the precise response. Optional hints: “Which amount starts?” then “Were tokens added or removed?” Optional answer reveal shows ten tokens remain only after the initial expression is clear.
 
 ## Objects, state and invariants
 
-A fixed scenario (numbers, unit, start/change relation), ordered symbolic slots or choices, a precise counter depiction, optional hint/reveal state and local Reset. Each Section entry starts independently without props or shared state. Underlying arithmetic must match displayed quantities in every visible mode: 7+4=11; 9−3=6; 6+2=8; 14−4=10. Learner guesses change the *chosen representation*, never the original narrative data. An equality is not labeled numerically false merely because the instruction asked for an expression. This Scene is an explanatory interaction, not a Question or scoring contract.
+A fixed scenario (numbers, unit, start/change relation), ordered symbolic slots or choices, a precise counter depiction, optional hint/reveal state and local Reset. Each Section entry starts independently without props or shared state. Underlying arithmetic must match displayed quantities in every visible mode: 7+4=11; 9−3=6; 6+2=8; 14−4=10. Learner guesses change the _chosen representation_, never the original narrative data. An equality is not labeled numerically false merely because the instruction asked for an expression. This Scene is an explanatory interaction, not a Question or scoring contract.
 
 ## Accessibility, localization and offline intent
 

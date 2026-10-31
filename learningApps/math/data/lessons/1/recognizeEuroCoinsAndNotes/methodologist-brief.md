@@ -45,6 +45,7 @@ Reading 50 as greater than 1 without converting units; guessing worth from coin 
 **Instructional depth and hard exclusions:** Grade 2 real euro case study; core items one- and two-euro coins plus five- and ten-euro notes; 50-cent contrast supported by explicit conversion reference. No changing currency automatically with UI locale, no purchase or exchange rates, no unlicensed banknote art.
 
 **Verified numerical examples:**
+
 - €1/€2 coins; €5/€10 banknotes.
 - €2 remains €2 irrespective of national-side artwork.
 - 50c width 24.25mm>€1 width 23.25mm; monetary 50c<100c.

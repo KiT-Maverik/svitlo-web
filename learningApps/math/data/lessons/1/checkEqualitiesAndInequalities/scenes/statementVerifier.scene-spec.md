@@ -7,7 +7,7 @@
 
 ## Mathematical and pedagogical purpose
 
-Each complete equality or strict inequality is a mathematical **claim**, true only if the evaluated values of both complete sides satisfy the *specified* sign. The comparison must be based on the actual numbers, never the orientation of a decorative picture or merely the leftmost numeral. In particular, equal values satisfy = but **not** < or >.
+Each complete equality or strict inequality is a mathematical **claim**, true only if the evaluated values of both complete sides satisfy the _specified_ sign. The comparison must be based on the actual numbers, never the orientation of a decorative picture or merely the leftmost numeral. In particular, equal values satisfy = but **not** < or >.
 
 ## Experiences, learner actions and feedback
 
@@ -32,7 +32,7 @@ Display 5 + 6 > 8 + 2 with no initial arithmetic hint. The learner can explicitl
 - Complete operand/expression text for each side, original relation operator, independently disclosed numeric values, learner verdict, optional replacement operator in entry C, explanation and hint reveal states, Reset.
 - Calculate side values from the expressions shown. For = compare numeric equality; for < compare strictly less; for > compare strictly greater. A chosen answer must **never** determine the result calculation.
 - No automatic state transfer between entries; each is a self-contained public no-props Scene with its own initial scenario. Reusing internal math helpers is allowed, inventing external props, learner records or assessment APIs is not.
-- A verdict of false is a *teaching decision*, not a score or Skill mastery measurement. Always show why the relationship fails.
+- A verdict of false is a _teaching decision_, not a score or Skill mastery measurement. Always show why the relationship fails.
 
 ## Visual/media and universal access
 

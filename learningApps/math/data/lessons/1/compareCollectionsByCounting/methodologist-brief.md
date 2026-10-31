@@ -49,6 +49,7 @@ Connect known individual counting with paired matching → identify unmatched or
 **Instructional depth and hard boundaries:** Sets of 0–12 discrete objects, visually and textually identifiable; no formal `<`, `>` or `=` symbol teaching (reserved `comparisonSymbols` Skill), no subtraction algorithm and no scored mastery.
 
 **Concrete reference models:**
+
 - 4 vs 3: A has one more item, B one fewer.
 - 5 vs 5 are equally many even if one row is longer.
 - 5 counters are more numerous than 3 books.

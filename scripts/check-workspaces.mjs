@@ -2,111 +2,117 @@ import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const root = process.cwd();
-const readJson = (path) => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
+const readJson = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
 const expected = [
   {
-    "path": "backend/server",
-    "name": "@svitlo/server"
+    path: 'backend/server',
+    name: '@svitlo/server',
   },
   {
-    "path": "frontend/platform",
-    "name": "@svitlo/platform"
+    path: 'frontend/platform',
+    name: '@svitlo/platform',
   },
   {
-    "path": "learningApps/informatics",
-    "name": "@svitlo/informatics"
+    path: 'learningApps/informatics',
+    name: '@svitlo/informatics',
   },
   {
-    "path": "learningApps/biology",
-    "name": "@svitlo/biology"
+    path: 'learningApps/biology',
+    name: '@svitlo/biology',
   },
   {
-    "path": "learningApps/geography",
-    "name": "@svitlo/geography"
+    path: 'learningApps/geography',
+    name: '@svitlo/geography',
   },
   {
-    "path": "learningApps/math",
-    "name": "@svitlo/math"
+    path: 'learningApps/math',
+    name: '@svitlo/math',
   },
   {
-    "path": "learningApps/physics",
-    "name": "@svitlo/physics"
+    path: 'learningApps/physics',
+    name: '@svitlo/physics',
   },
   {
-    "path": "learningApps/playground",
-    "name": "@svitlo/playground"
+    path: 'learningApps/playground',
+    name: '@svitlo/playground',
   },
   {
-    "path": "learningApps/language-literature",
-    "name": "@svitlo/language-literature"
+    path: 'learningApps/language-literature',
+    name: '@svitlo/language-literature',
   },
   {
-    "path": "learningApps/languages/ukrainian",
-    "name": "@svitlo/ukrainian"
+    path: 'learningApps/languages/ukrainian',
+    name: '@svitlo/ukrainian',
   },
   {
-    "path": "learningApps/chemistry",
-    "name": "@svitlo/chemistry"
+    path: 'learningApps/chemistry',
+    name: '@svitlo/chemistry',
   },
   {
-    "path": "learningApps/astronomy",
-    "name": "@svitlo/astronomy"
+    path: 'learningApps/astronomy',
+    name: '@svitlo/astronomy',
   },
   {
-    "path": "learningApps/history",
-    "name": "@svitlo/history"
+    path: 'learningApps/history',
+    name: '@svitlo/history',
   },
   {
-    "path": "learningApps/philosophy",
-    "name": "@svitlo/philosophy"
+    path: 'learningApps/philosophy',
+    name: '@svitlo/philosophy',
   },
   {
-    "path": "learningApps/psychology",
-    "name": "@svitlo/psychology"
+    path: 'learningApps/psychology',
+    name: '@svitlo/psychology',
   },
   {
-    "path": "learningApps/economics",
-    "name": "@svitlo/economics"
+    path: 'learningApps/economics',
+    name: '@svitlo/economics',
   },
   {
-    "path": "learningApps/art",
-    "name": "@svitlo/art"
+    path: 'learningApps/art',
+    name: '@svitlo/art',
   },
   {
-    "path": "learningApps/health-safety",
-    "name": "@svitlo/health-safety"
+    path: 'learningApps/health-safety',
+    name: '@svitlo/health-safety',
   },
   {
-    "path": "learningApps/engineering",
-    "name": "@svitlo/engineering"
+    path: 'learningApps/engineering',
+    name: '@svitlo/engineering',
   },
   {
-    "path": "shared/contracts",
-    "name": "@svitlo/contracts"
+    path: 'shared/contracts',
+    name: '@svitlo/contracts',
   },
   {
-    "path": "shared/indexdb",
-    "name": "@svitlo/indexdb"
+    path: 'shared/indexdb',
+    name: '@svitlo/indexdb',
   },
   {
-    "path": "shared/engine",
-    "name": "@svitlo/engine"
+    path: 'shared/engine',
+    name: '@svitlo/engine',
   },
   {
-    "path": "shared/ui-kit",
-    "name": "@svitlo/ui-kit"
-  }
+    path: 'shared/ui-kit',
+    name: '@svitlo/ui-kit',
+  },
 ];
 const manifest = readJson('package.json');
 const lock = readJson('package-lock.json');
-const patterns = ["backend/*","frontend/*","learningApps/*","learningApps/languages/*","shared/*"];
+const patterns = ['backend/*', 'frontend/*', 'learningApps/*', 'learningApps/languages/*', 'shared/*'];
 
 function assert(ok, description) {
   if (!ok) throw new Error(description);
 }
 
-assert(JSON.stringify(manifest.workspaces) === JSON.stringify(patterns), 'Root workspace patterns differ from the expected layout');
-assert(JSON.stringify(lock.packages[''].workspaces) === JSON.stringify(patterns), 'Lockfile workspace patterns are out of sync');
+assert(
+  JSON.stringify(manifest.workspaces) === JSON.stringify(patterns),
+  'Root workspace patterns differ from the expected layout',
+);
+assert(
+  JSON.stringify(lock.packages[''].workspaces) === JSON.stringify(patterns),
+  'Lockfile workspace patterns are out of sync',
+);
 for (const { path, name } of expected) {
   const pkgPath = path + '/package.json';
   const tsconfigPath = path + '/tsconfig.json';

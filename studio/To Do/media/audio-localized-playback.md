@@ -11,7 +11,7 @@ Introduce complete accessible audio playback and an explicit partial-locale audi
 
 - Build dedicated Audio Resource UI with localized title/description and playback controls; Engine already has AudioResourceConfig title/description/fileLocation but no general-section player.
 - Provide synchronized, localized captions/transcripts and optional timed cues (two-second chunks are a candidate, not a rigid fixed interval).
-- Audio files may initially exist for fewer locales due to synthesis cost; display the *actual spoken language* and require an intentional user-facing fallback/choice.
+- Audio files may initially exist for fewer locales due to synthesis cost; display the _actual spoken language_ and require an intentional user-facing fallback/choice.
 - Maintain true text translations, labels, transcripts and scene content for all mandatory locales; audio fallback is never a substitute for missing text translations.
 - Account for download/caching, streaming, keyboard, variable playback speed, captions, accessibility, offline availability.
 

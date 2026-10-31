@@ -13,7 +13,7 @@ A two-step word problem has an **intermediate quantity** whose value is needed t
 
 Story: “There are **8 red books** and **7 blue books** on a shelf. **6 books** are borrowed. How many books remain?” Display separate cards for known red eight, known blue seven, borrowed six, unknown initial total, unknown remaining total. Learner selects the intermediate question: “How many books were on the shelf before borrowing?” and then a second question “How many remain afterward?” The model draws labeled dependency connections; the nonvisual alternative is an ordered two-card plan.
 
-Expected **first step** 8 + 7 = **15 books initially**. Expected **second step** 15 − 6 = **9 books remaining**. If the learner picks just 8 − 6 = 2 as final, explain “The original total includes both red and blue books; two does not answer what remains on the whole shelf.” Do not declare *every* alternative reordering invalid; e.g., a properly justified nonnegative decomposition may get the same total. If the child stops at 15, explain that 15 answers the first question, not the final question. Every correct result retains the unit “books”.
+Expected **first step** 8 + 7 = **15 books initially**. Expected **second step** 15 − 6 = **9 books remaining**. If the learner picks just 8 − 6 = 2 as final, explain “The original total includes both red and blue books; two does not answer what remains on the whole shelf.” Do not declare _every_ alternative reordering invalid; e.g., a properly justified nonnegative decomposition may get the same total. If the child stops at 15, explain that 15 answers the first question, not the final question. Every correct result retains the unit “books”.
 
 ## Scenario entry B — comparison first, then combine (Section 2)
 
@@ -21,10 +21,11 @@ Story: “Ava has **12 stickers**. Sam has **3 fewer** than Ava. How many do the
 
 ## Scenario entry C — what must come first? (Section 3)
 
-Reuse Ava/Sam quantitative story **only in a new independent initial state**. Show two incomplete *meaningful* step cards:
+Reuse Ava/Sam quantitative story **only in a new independent initial state**. Show two incomplete _meaningful_ step cards:
+
 - “Find Sam: 12 − 3 = ?”
 - “Find combined total: 12 + Sam's stickers = ?”
-Ask which can be completed with the known data and why. If the learner attempts the combined total first, do not mark their attempt as a generic wrong choice; say “We still need to know Sam's amount. Which step supplies it?” After the child reveals nine stickers for Sam (or opts to “Show why”), complete the second card 12 + 9 = 21. Include a label identifying the intermediate result, not a novel runtime state contract.
+  Ask which can be completed with the known data and why. If the learner attempts the combined total first, do not mark their attempt as a generic wrong choice; say “We still need to know Sam's amount. Which step supplies it?” After the child reveals nine stickers for Sam (or opts to “Show why”), complete the second card 12 + 9 = 21. Include a label identifying the intermediate result, not a novel runtime state contract.
 
 ## Scenario entry D — independent transfer (Section 4)
 
@@ -32,7 +33,7 @@ Story: “Mila has **14 shells**. Theo has **5 fewer shells** than Mila. How man
 
 ## Objects and interaction state
 
-Represent a story with known quantity cards, named missing-quantity cards, semantic dependency edges (both visual and an equivalent textual ordered list), optional step expression choices, intermediate value with unit, final answer with unit, independent hints, “Explain plan”, “Reset”. State includes which intermediate is named, the ordered plan, calculated values and revealed explanations. Arithmetic is derived from displayed quantities: 8+7=15; 15−6=9; 12−3=9; 12+9=21; 14−5=9; 14+9=23. If a step produces a number but uses an incorrect *role*, the Scene must explain the relationship error rather than judge only its arithmetic. There is no mandatory drag/arrow drawing; sequence is selectable by accessible ordered controls.
+Represent a story with known quantity cards, named missing-quantity cards, semantic dependency edges (both visual and an equivalent textual ordered list), optional step expression choices, intermediate value with unit, final answer with unit, independent hints, “Explain plan”, “Reset”. State includes which intermediate is named, the ordered plan, calculated values and revealed explanations. Arithmetic is derived from displayed quantities: 8+7=15; 15−6=9; 12−3=9; 12+9=21; 14−5=9; 14+9=23. If a step produces a number but uses an incorrect _role_, the Scene must explain the relationship error rather than judge only its arithmetic. There is no mandatory drag/arrow drawing; sequence is selectable by accessible ordered controls.
 
 Every entry is a self-contained prop-free Scene. No Section-to-Section state is assumed; future implementation may internally reuse helpers. A “Show the answer” control provides the full two-question plan even without an attempt. Incorrect decisions are formative and revisable; never serialize correctness or claim Skill mastery.
 

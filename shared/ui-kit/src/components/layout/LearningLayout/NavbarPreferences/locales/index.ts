@@ -8,6 +8,14 @@ import { locale as ka } from './ka-GE';
 import { locale as kk } from './kk-Cyrl-KZ';
 import { locale as qm } from './crh-Latn-UA';
 
-const dictionaries = { 'uk-UA': uk, 'lt-LT': lt, 'lv-LV': lv, 'et-EE': et, 'be-tarask': be, 'ka-GE': ka, 'kk-Cyrl-KZ': kk, 'crh-Latn-UA': qm } as const;
-export const getNavbarPreferencesMessages = (locale: Locale) =>
-  dictionaries[locale as keyof typeof dictionaries] ?? uk;
+const dictionaries = {
+  'uk-UA': uk,
+  'lt-LT': lt,
+  'lv-LV': lv,
+  'et-EE': et,
+  'be-tarask': be,
+  'ka-GE': ka,
+  'kk-Cyrl-KZ': kk,
+  'crh-Latn-UA': qm,
+} as const;
+export const getNavbarPreferencesMessages = (locale: Locale) => dictionaries[locale as keyof typeof dictionaries] ?? uk;

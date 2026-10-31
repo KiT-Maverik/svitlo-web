@@ -4,10 +4,11 @@
 **Audience:** Grade 3, approximately ages 8–9.
 **Source brief:** [Draft Methodologist Brief](./methodologist-brief.md).
 **Target Skills:**
+
 - [denominatorMeaning.data.ts](../../../../data/skills/fractions/representation/skills/denominatorMeaning.data.ts)
 - [numeratorMeaning.data.ts](../../../../data/skills/fractions/representation/skills/numeratorMeaning.data.ts)
 - [nonUnitModel.data.ts](../../../../data/skills/fractions/representation/skills/nonUnitModel.data.ts)
-**Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
+  **Lesson:** standalone, Program-neutral; no runtime Lesson, Quiz, Question, score or completed Scene is implemented.
 
 ## The learner's experience
 
@@ -46,9 +47,9 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *3/4*: “Yes: four equal pieces make the whole; exactly three are selected.”
-- *4/3*: “That reverses the jobs. Four tells how many equal pieces the whole has; only three are selected.”
-- *3/3*: “There are four equal pieces in the whole, including the unselected one. Check the bottom number.”
+- _3/4_: “Yes: four equal pieces make the whole; exactly three are selected.”
+- _4/3_: “That reverses the jobs. Four tells how many equal pieces the whole has; only three are selected.”
+- _3/3_: “There are four equal pieces in the whole, including the unselected one. Check the bottom number.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. The same operation must be possible with labelled part buttons 1–4, independent of shading perception. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -70,9 +71,9 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *4/4 fills whole*: “Four selected out of four equal parts covers the whole strip: 4/4 is one whole.”
-- *0/4 confusion*: “Zero selected parts cover none of the whole. The whole still has four equal parts.”
-- *More denominator*: “The cut lines did not change, so the denominator stays four. Only the selected count changes.”
+- _4/4 fills whole_: “Four selected out of four equal parts covers the whole strip: 4/4 is one whole.”
+- _0/4 confusion_: “Zero selected parts cover none of the whole. The whole still has four equal parts.”
+- _More denominator_: “The cut lines did not change, so the denominator stays four. Only the selected count changes.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Offer a text summary after every toggle: '3 of 4 equal parts selected; 9 of 12 cells covered'. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -94,8 +95,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Same amount*: “Two parts are selected in both, but the parts have different sizes. Count: 8 cells versus 6 cells.”
-- *2/4 larger*: “Four equal cuts make smaller parts than three equal cuts in this same strip; two quarters cover less than two thirds.”
+- _Same amount_: “Two parts are selected in both, but the parts have different sizes. Count: 8 cells versus 6 cells.”
+- _2/4 larger_: “Four equal cuts make smaller parts than three equal cuts in this same strip; two quarters cover less than two thirds.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Area counts and an ordered textual comparison provide the same evidence without color. The explanation remains available even if the learner chooses not to answer before moving on.
 
@@ -117,8 +118,8 @@ The general Sections below use a **single vertical top-to-bottom column** of typ
 
 **Specific explanatory feedback:**
 
-- *Equal model 4/3*: “There are four equal pieces, not three, in the whole. Three are marked.”
-- *Unequal model accepted*: “A fraction names equal unit parts of one whole. Those four regions differ in area, so counting three of them is not enough.”
+- _Equal model 4/3_: “There are four equal pieces, not three, in the whole. Three are marked.”
+- _Unequal model accepted_: “A fraction names equal unit parts of one whole. Those four regions differ in area, so counting three of them is not enough.”
 
 **Guidance, pacing and transition:** Learner-controlled predict/inspect/reveal/retry; no correctness gate, scoring, timed input or fake mastery event. Present both piece areas as numerical labels to avoid precision visual interpretation. The explanation remains available even if the learner chooses not to answer before moving on.
 

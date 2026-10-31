@@ -20,10 +20,11 @@ Begin with one full tray of **10 buttons**, exactly six labeled red; the other f
 ## Scenario C — change the question, not the objects (Section 3)
 
 A stable **ten-button** collection consists of six red and four blue. Independently present three question cards:
+
 1. **Whole unknown:** given 6 and 4 → 6 + 4 = **10**.
 2. **Blue part unknown:** whole 10 and red 6 → 10 − 6 = **4**.
 3. **Red part unknown:** whole 10 and blue 4 → 10 − 4 = **6**.
-Optional fourth variant: all ten red and “rest blue” yields **10 − 10 = 0 blue**. A user can inspect which role has the question mark and request an explanation before answering. Wrong operation feedback must identify whether the whole was *already* known; no keyword-only arithmetic. Each question card opens as a new local starting state, independent of Sections A/B.
+   Optional fourth variant: all ten red and “rest blue” yields **10 − 10 = 0 blue**. A user can inspect which role has the question mark and request an explanation before answering. Wrong operation feedback must identify whether the whole was _already_ known; no keyword-only arithmetic. Each question card opens as a new local starting state, independent of Sections A/B.
 
 ## Scenario D — independent transfer (Section 4)
 
@@ -31,7 +32,7 @@ Story: 15 marbles in a bag, 9 green, **all remaining are yellow**. Show a fiftee
 
 ## Interactions, state and calculation integrity
 
-Store scenario-local declared whole/count roles, the displayed tokens, the learner's candidate, optional reveal of whole and part labels, hint level, explanatory state. All totals derive from the actual stored counts, never a visual CSS width. When a role is hidden, it is labeled **unknown** rather than removed from the model. A “Join groups” state must not duplicate tokens. All units are explicit “buttons” or “marbles”. Support zero-part cases. The conditional premise “these are all the groups” is essential; no implicit third color. Reset restores only the active instance. A shared internal helper is allowed, but *public Scene components take absolutely no props*; do not add Resource_Config scenario attributes.
+Store scenario-local declared whole/count roles, the displayed tokens, the learner's candidate, optional reveal of whole and part labels, hint level, explanatory state. All totals derive from the actual stored counts, never a visual CSS width. When a role is hidden, it is labeled **unknown** rather than removed from the model. A “Join groups” state must not duplicate tokens. All units are explicit “buttons” or “marbles”. Support zero-part cases. The conditional premise “these are all the groups” is essential; no implicit third color. Reset restores only the active instance. A shared internal helper is allowed, but _public Scene components take absolutely no props_; do not add Resource_Config scenario attributes.
 
 ## Visual/audio, inclusivity, localization and offline
 

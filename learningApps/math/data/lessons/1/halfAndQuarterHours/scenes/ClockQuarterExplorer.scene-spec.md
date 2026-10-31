@@ -5,6 +5,7 @@
 **Lesson Content:** [Half Past, Quarter Past, Quarter To](../content.md)
 **Methodologist source:** [Draft Brief](../methodologist-brief.md)
 **Target Skills:**
+
 - [readHalfQuarter.data.ts](../../../../../data/skills/time/clock/skills/readHalfQuarter.data.ts)
 
 ## Intended learning interaction
@@ -17,14 +18,14 @@ The root Scene is proposed as a self-contained **prop-free component** with loca
 
 ## Visual/conceptual model and required states
 
-| State / preset | What the learner can inspect | Correct mathematical / logical condition |
-|---|---|---|
-| Initial exact hour | 4:00; long hand 12, short hand 4 | Reference for start of the hour. |
-| Quarter past | 4:15; long hand 3, short hand 4.25 hour-position | Quarter past four = 4:15. |
-| Half past | 6:30; long hand 6, short hand 6.5 hour-position | Half past six = 6:30. |
-| Quarter to | 7:45; long hand 9, short hand 7.75 hour-position | Quarter to eight = 7:45. |
-| Boundary reveal | 8:00; long hand 12, short hand 8 | After 7:45, fifteen more minutes reaches 8:00. |
-| Independent | 10:45; long hand 9, short hand 10.75 hour-position | Quarter to eleven = 10:45. |
+| State / preset     | What the learner can inspect                       | Correct mathematical / logical condition       |
+| ------------------ | -------------------------------------------------- | ---------------------------------------------- |
+| Initial exact hour | 4:00; long hand 12, short hand 4                   | Reference for start of the hour.               |
+| Quarter past       | 4:15; long hand 3, short hand 4.25 hour-position   | Quarter past four = 4:15.                      |
+| Half past          | 6:30; long hand 6, short hand 6.5 hour-position    | Half past six = 6:30.                          |
+| Quarter to         | 7:45; long hand 9, short hand 7.75 hour-position   | Quarter to eight = 7:45.                       |
+| Boundary reveal    | 8:00; long hand 12, short hand 8                   | After 7:45, fifteen more minutes reaches 8:00. |
+| Independent        | 10:45; long hand 9, short hand 10.75 hour-position | Quarter to eleven = 10:45.                     |
 
 All representations preserve the chosen whole, complete inventory, reference clock or observed tokens as appropriate. Do not silently change model conditions while an answer is being explained.
 

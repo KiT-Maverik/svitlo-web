@@ -42,13 +42,13 @@ If an approved Scene specification calls for programmable motion design, video-s
 
 Use these **current architectural examples**, not mandatory source files to duplicate:
 
-| Example | Actual location under `learningApps/playground/src/data/howLightMoves/sections/` | Lessons to extract |
-| --- | --- | --- |
-| `LightRayDiagram` | `theory/resources/scenes/LightRayDiagram/LightRayDiagram.tsx` and `LightRayDiagram.module.css` | SVG illustration, localized `<title>`/`<desc>`, directional graphic geometry, **separate readable labels** |
-| `LightPropagationSimulation` | `theory/resources/scenes/LightPropagationSimulation/LightPropagationSimulation.tsx` and `LightPropagationSimulation.module.css` | Local state, playback/speed controls, reduced-motion preference, CSS logical properties, accessible labels |
-| `Practice` | `practice/resources/scenes/Practice/Practice.tsx`, `Practice.constants.ts` and `Practice.module.css` | Interactive selection, domain constants separated from JSX, localized numbers and text, RTL-aware layout |
-| `Checkpoint` | `theory/resources/scenes/Checkpoint/Checkpoint.tsx` | Prop-free Scene composing an existing widget using localized messages; **child widget props do not violate the Scene-root rule** |
-| `Scene resource registration` | `theory/resources/scenes/scenes.data.ts`, `index.ts`, `index.ids.ts`; practice equivalents | Stable resource IDs, `blockType: 'scene'`, `createElement(SceneName)` **without props**, level-specific exports |
+| Example                       | Actual location under `learningApps/playground/src/data/howLightMoves/sections/`                                                | Lessons to extract                                                                                                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `LightRayDiagram`             | `theory/resources/scenes/LightRayDiagram/LightRayDiagram.tsx` and `LightRayDiagram.module.css`                                  | SVG illustration, localized `<title>`/`<desc>`, directional graphic geometry, **separate readable labels**                       |
+| `LightPropagationSimulation`  | `theory/resources/scenes/LightPropagationSimulation/LightPropagationSimulation.tsx` and `LightPropagationSimulation.module.css` | Local state, playback/speed controls, reduced-motion preference, CSS logical properties, accessible labels                       |
+| `Practice`                    | `practice/resources/scenes/Practice/Practice.tsx`, `Practice.constants.ts` and `Practice.module.css`                            | Interactive selection, domain constants separated from JSX, localized numbers and text, RTL-aware layout                         |
+| `Checkpoint`                  | `theory/resources/scenes/Checkpoint/Checkpoint.tsx`                                                                             | Prop-free Scene composing an existing widget using localized messages; **child widget props do not violate the Scene-root rule** |
+| `Scene resource registration` | `theory/resources/scenes/scenes.data.ts`, `index.ts`, `index.ids.ts`; practice equivalents                                      | Stable resource IDs, `blockType: 'scene'`, `createElement(SceneName)` **without props**, level-specific exports                  |
 
 Also inspect the exact runtime wiring:
 
@@ -66,7 +66,7 @@ Also inspect the exact runtime wiring:
 
 The current Math textbook model is:
 
-~~~tsx
+```tsx
 // The public Scene component accepts NO props.
 'use client';
 
@@ -77,7 +77,11 @@ import type { ExampleScene_Locale } from './ExampleScene.locale';
 export function ExampleScene() {
   const { locale, scenes } = useSceneLocales<{ example: ExampleScene_Locale }>();
   const messages = scenes.example;
-  return <section lang={locale} dir={getLocaleDirection(locale)}>{messages.title}</section>;
+  return (
+    <section lang={locale} dir={getLocaleDirection(locale)}>
+      {messages.title}
+    </section>
+  );
 }
 
 // In the owning Section's scene resource map (a DIFFERENT file):
@@ -86,7 +90,7 @@ export function ExampleScene() {
 //   blockType: 'scene',
 //   component: createElement(ExampleScene),
 // }
-~~~
+```
 
 This is an illustrative **split across files**: do not place resource-registration snippets into the component file. Adapt import aliases, scene key, naming and types to the real target package. For any scene using hooks, event handlers, browser APIs or local interactive state, use `'use client'` as required by the current Next.js boundary. Do not mark an entire Lesson or unrelated tree client-side when only the Scene needs client behavior.
 
@@ -137,16 +141,15 @@ Support LTR **and** RTL as **directional design modes**, not a single `scaleX(-1
 - **Responsive design:** adapt size, hit targets and layout to mobile/tablet/desktop; avoid horizontal overflow and tiny controls. Use existing theme tokens, shared components and CSS modules as appropriate rather than hardcoded platform-specific styling.
 - **Performance, full learning functionality and cleanup:** limit unbounded animations and excessive re-renders, remove event listeners/observers on unmount, avoid hydration mismatch and unnecessary client bundle dependencies. Do not import massive media or translation collections solely to render one Scene. Design the Scene and **its required assets for fully offline use after download** when the textbook is delivered as a PWA. Support weak devices through equivalent lower-cost visual representations when feasible, **not by silently removing necessary learning content, core controls or modeled behavior**. Any material trade-off requiring reduced learning functionality **must be raised to the editor/architect**; future capability flags may disclose limitations but do not replace an equivalent experience.
 
-
 **Example required end-of-file annotation when accessibility is genuinely blocked (illustrative only; use a real, scene-specific explanation):**
 
-~~~tsx
+```tsx
 // TODO(a11y): Learners who cannot use pointer-based spatial dragging cannot yet
 // complete [specific interactive task]. An equivalent keyboard/screen-reader
 // interaction needs [specific unresolved design or technical work]; a naive
 // conversion to buttons would lose [specific essential learning behavior].
 // Investigate [concrete accessible alternative] with the accessibility reviewer.
-~~~
+```
 
 The TODO must appear **after the main Scene implementation at the end of its own `<SceneName>.tsx` file**, not only in a test, PR description or issue. Do not copy the example as a generic excuse: identify the actual accessibility barrier and concrete next action. If the Scene can be made accessible with existing techniques, **implement them** instead of leaving a TODO.
 

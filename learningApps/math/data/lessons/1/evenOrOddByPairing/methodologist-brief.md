@@ -45,6 +45,7 @@ Confusing four pairs with four objects; letting the same object belong to two pa
 **Instructional depth and hard exclusions:** Grade 2 concrete collections of 1–15 items; no negative integers, formal divisibility test, memorized final-digit shortcut or scoring.
 
 **Verified numerical examples:**
+
 - 8=4 pairs +0 leftover.
 - 9=4 pairs +1 leftover.
 - 12=6 pairs +0 both ways.
@@ -54,12 +55,10 @@ Confusing four pairs with four objects; letting the same object belong to two pa
 
 Complete genuine translations for every Engine-supported language are required; English drafts are not released locale assets. Semantic RTL must preserve object identity, designated START, pairing membership, euro value and numeric order, not reverse the mathematics. WCAG 2.2 AA plan: keyboard, touch and switch operation, ordered nonvisual ledger, meaningful labels, visible focus, zoom/mobile and reduced-motion equivalents. The selected-language content and same learning interactions must function offline after download, which is a required future capability, not implemented by this task.
 
-
 ## Sources and factual verification
 
 - Approved canonical Mathematics Skill data files directly linked above, copied unchanged in Batch 1.
 - [Lesson Editorial Artifacts](../../../../../../studio/docs/architecture/lesson-editorial-document.md) and [Learning Experience Philosophy](../../../../../../studio/docs/architecture/learning-experience-philosophy.md).
-
 
 ## Curriculum / Program compatibility
 
@@ -69,7 +68,6 @@ Standalone and Program-neutral. No named Curriculum alignment asserted.
 
 - Editor: approve Grade 2, prerequisites, target Skills and scope before formal Content/Scene approval.
 - Editor and localization team: verify full-locale copy, semantic RTL and nonvisual equivalence.
-
 
 ## Methodologist handoff
 
