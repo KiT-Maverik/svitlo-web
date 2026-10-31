@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { readHour_Skill_Data, readHalfQuarter_Skill_Data, readFiveMinute_Skill_Data } from './skills';
+import {readHour_Skill_Data, readHalfQuarter_Skill_Data, readFiveMinute_Skill_Data, readMinute_Skill_Data } from './skills';
 
 export const clock_SkillGroup_Data = buildSkillGroupConfig({
   id: '03f5c155-b4e6-4e8f-8ee4-81141018984d',
@@ -38,6 +38,7 @@ export const clock_SkillGroup_Data = buildSkillGroupConfig({
     readHour: readHour_Skill_Data.id,
     readHalfQuarter: readHalfQuarter_Skill_Data.id,
     readFiveMinute: readFiveMinute_Skill_Data.id,
+    readMinute: readMinute_Skill_Data.id,
   },
   description: { methodological: "Matching clock-hand positions and digital notation to a particular instant of the day at different levels of reading precision." },
 });

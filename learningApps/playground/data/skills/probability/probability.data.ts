@@ -1,5 +1,6 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 import { events_SkillGroup_Data } from './events/events.data';
+import { experiments_SkillGroup_Data } from './experiments/experiments.data';
 
 
 export const probability_SkillDomain_Data = buildSkillDomainConfig({
@@ -36,6 +37,7 @@ export const probability_SkillDomain_Data = buildSkillDomainConfig({
   },
   groupIds: {
     events: events_SkillGroup_Data.id,
+    experiments: experiments_SkillGroup_Data.id,
   },
   description: { methodological: "Possible outcomes of random experiments, events and their probabilities, comparisons of chance, independence or dependence of outcomes, and random variability in repeated observations." },
 });
