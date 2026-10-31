@@ -32,6 +32,7 @@ export const mixPigmentColors_Skill_Data = buildSkillConfig({
     be: "Змешваць пігментныя фарбы",
     ka: "პიგმენტების ფერების შერევა",
     kk: "Пигмент түстерін араластыру",
+    qm: "Pigment boyalarını qarıştırmaq",
   },
   description: {
     methodological: "Combine available pigments deliberately to approach a chosen target or relation between colors.",
@@ -64,6 +65,7 @@ export const mixPigmentColors_Skill_Data = buildSkillConfig({
       be: "Змешвайце фарбы, каб атрымаць патрэбны колер або жаданае суаднясенне колераў.",
       ka: "შეურიეთ საღებავები სასურველი ფერის ან ფერთა ურთიერთმიმართების მისაღებად.",
       kk: "Қалаған түсті немесе түстердің үйлесімін алу үшін бояуларды араластырыңыз.",
+      qm: "İstegen tüsni ya da tüsler arasındaki munasebetni yaratmaq içün boyalarnı qarıştırıñız.",
     },
   },
 });
