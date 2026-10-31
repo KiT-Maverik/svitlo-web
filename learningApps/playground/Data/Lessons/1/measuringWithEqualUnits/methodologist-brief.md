@@ -52,7 +52,7 @@ All proposed language must be authentically translated for supported locales, in
 
 - Approved canonical Mathematics Skill file(s): linked above; their IDs, translations and methodological meaning must remain unchanged.
 - [Playground taxonomy view](../../../../docs/generated/skills/taxonomy.en.md) is a generated reference and requires coordinator regeneration after integration.
-- [Studio Lesson editorial workflow](../../../../../studio/docs/architecture/lesson-editorial-document.md) (repository-level path should be checked during link validation).
+- [Studio Lesson editorial workflow](../../../../../../studio/docs/architecture/lesson-editorial-document.md) (repository-level path should be checked during link validation).
 - Mathematics follows the exact models described above; there are no national Curriculum alignment claims.
 
 ## Editorial decisions
