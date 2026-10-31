@@ -5,6 +5,16 @@ export const compareArchitecturalStyles_Skill_Data = buildSkillConfig({
   id: "7776587d-3529-4f9b-8558-e83aa254da5f",
   name: {
     en: "Compare Architectural Styles",
+    zh: "比较建筑风格", hi: "वास्तुशैलियों की तुलना करें", es: "Comparar estilos arquitectónicos",
+    ar: "مقارنة الطرز المعمارية", fr: "Comparer les styles architecturaux", bn: "স্থাপত্যশৈলীর তুলনা করা",
+    pt: "Comparar estilos arquitetônicos", ur: "تعمیراتی طرزوں کا موازنہ", id: "Membandingkan Gaya Arsitektur",
+    de: "Architekturstile vergleichen", ja: "建築様式を比較する", ko: "건축 양식 비교하기",
+    tr: "Mimari Üslupları Karşılaştırmak", vi: "So sánh các phong cách kiến trúc", ta: "கட்டிடக்கலைப் பாணிகளை ஒப்பிடுதல்",
+    te: "వాస్తు శైలులను పోల్చడం", mr: "वास्तुशैलींची तुलना करणे", ms: "Membandingkan Gaya Seni Bina",
+    he: "השוואת סגנונות אדריכליים", pl: "Porównywanie stylów architektonicznych", uk: "Порівнювати архітектурні стилі",
+    lt: "Lyginti architektūros stilius", lv: "Salīdzināt arhitektūras stilus", et: "Arhitektuuristiilide võrdlemine",
+    be: "Параўноўваць архітэктурныя стылі", ka: "არქიტექტურული სტილების შედარება", kk: "Сәулет стильдерін салыстыру",
+    qm: "Mimari üslüplerni qarşılaştırmaq",
   },
   description: {
     methodological: "Distinguish formal conventions in specific historical and regional settings.",
@@ -37,6 +47,7 @@ export const compareArchitecturalStyles_Skill_Data = buildSkillConfig({
       be: "Прааналізуй візуальны рытм сцен, вокнаў і праёмаў на знешнім баку будынка.",
       ka: "წაიკითხეთ შენობის გარე კედლების, ფანჯრებისა და ღიობების ვიზუალური წყობა.",
       kk: "Ғимараттың сыртқы қабырғалары, терезелері мен ойықтарының көрнекі өрнегін талдаңыз.",
+      qm: "Mimariy üslüplerni şekilleri ve medeniy bağlamları boyunca qarşılaştırıñız.",
     },
   },
 });
