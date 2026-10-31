@@ -44,8 +44,11 @@ function fixture() {
   const run=(...flags)=>spawnSync(process.execPath,
     [script,'--package',path.relative(root,pkg),'--translations',path.relative(root,tFile),...flags],
     {cwd:root,encoding:'utf8',maxBuffer:16*1024*1024});
+  const runEnglishOnly=(...flags)=>spawnSync(process.execPath,
+    [script,'--package',path.relative(root,pkg),...flags],
+    {cwd:root,encoding:'utf8',maxBuffer:16*1024*1024});
   const edit=fn=>fs.writeFileSync(md,fn(fs.readFileSync(md,'utf8')));
-  return {pkg,md,tFile,run,edit};
+  return {pkg,md,tFile,run,runEnglishOnly,edit};
 }
 function withFixture(fn) {
   const f=fixture();
@@ -62,6 +65,61 @@ test('dry-run is default and leaves code and Markdown untouched',()=>withFixture
   assert.match(r.stdout,/"mode":"dry-run"/);
   assert.equal(fs.existsSync(data(f)),false);
   assert.equal(fs.readFileSync(f.md,'utf8'),before);
+}));
+
+test('English-only create needs no reviewed translations and keeps locales visibly incomplete',()=>withFixture(f=>{
+  const dry=f.runEnglishOnly();
+  assert.equal(dry.status,0,dry.stderr);
+  assert.match(dry.stdout,/"success":5/);
+  assert.equal(fs.existsSync(data(f)),false);
+  const applied=f.runEnglishOnly('--apply');
+  assert.equal(applied.status,0,applied.stderr);
+  assert.match(applied.stdout,/"success":5/);
+  const skill=source(f,'geometry/angles/skills/compareAngles.data.ts');
+  const domain=source(f,'geometry/geometry.data.ts');
+  assert.match(skill,/"en": "Compare Angles"/);
+  assert.match(skill,/"en": "Explore this topic\\."/);
+  assert.match(skill,/methodological: "Definition of Compare Angles\\."/);
+  assert.match(domain,/"en": "Geometry"/);
+  assert.doesNotMatch(skill,/"uk":|\\bas\\s+Record\\b|\\bas\\s+any\\b/);
+  assert.doesNotMatch(domain,/"uk":/);
+  assert.equal(f.runEnglishOnly('--apply').status,0,'Second application should be idempotent');
+}));
+
+test('English Markdown updates preserve existing non-English translations without a JSON file',()=>withFixture(f=>{
+  assert.equal(f.run('--apply').status,0);
+  const p='music/skills/hearRhythm.data.ts';
+  const id=uuid(source(f,p));
+  const before=source(f,p);
+  f.edit(s=>s.replace('#### Hear Rhythm\\n\\nSlug: hearRhythm','#### Hear Rhythms\\n\\nSlug: hearRhythm')
+    .replace('Slug: hearRhythm\\nAction: create','Slug: hearRhythm\\nAction: update'));
+  const r=f.runEnglishOnly('--apply');
+  assert.equal(r.status,0,r.stderr);
+  const after=source(f,p);
+  assert.equal(uuid(after),id);
+  assert.match(after,/"en": "Hear Rhythms"/);
+  assert.match(after,/"uk": "Translated Hear Rhythm uk"/);
+  assert.match(after,/"uk": "Frontend Hear Rhythm uk"/);
+  assert.notEqual(after,before);
+}));
+
+test('optional partial reviewed translations only populate the supplied locales',()=>withFixture(f=>{
+  const additions={
+    'geometry/angles/compareAngles':{
+      name:{uk:'Порівнювати кути'},
+      fe:{uk:'Досліджуй кути.'},
+    },
+  };
+  fs.writeFileSync(f.tFile,JSON.stringify(additions));
+  const r=f.run('--apply');
+  assert.equal(r.status,0,r.stderr);
+  const translated=source(f,'geometry/angles/skills/compareAngles.data.ts');
+  assert.match(translated,/"en": "Compare Angles"/);
+  assert.match(translated,/"uk": "Порівнювати кути"/);
+  assert.match(translated,/"uk": "Досліджуй кути\\."/);
+  const unreviewed=source(f,'music/skills/hearRhythm.data.ts');
+  assert.match(unreviewed,/"en": "Hear Rhythm"/);
+  assert.doesNotMatch(unreviewed,/"uk":/);
 }));
 
 test('create emits entity-owned IDs, direct imports and only allowed indexes',()=>withFixture(f=>{
@@ -139,13 +197,13 @@ test('a Skill update does not force unchanged ancestor Data to be regenerated',(
   assert.match(source(f,leaf),/Updated angle comparison description/);
 }));
 
-test('missing localization blocks only affected Domain',()=>withFixture(f=>{
+test('invalid supplied translations block only the affected Domain',()=>withFixture(f=>{
   const loc=JSON.parse(fs.readFileSync(f.tFile,'utf8'));
-  delete loc['geometry/angles/compareAngles'].fe.uk;
+  loc['geometry/angles/compareAngles'].fe.uk='  ';
   fs.writeFileSync(f.tFile,JSON.stringify(loc));
   const r=f.run('--apply');
   assert.notEqual(r.status,0);
-  assert.match(r.stderr,/Incomplete locales/);
+  assert.match(r.stderr,/Invalid locales/);
   assert.equal(fs.existsSync(path.join(data(f),'geometry')),false);
   assert.ok(fs.existsSync(path.join(data(f),'music/skills/hearRhythm.data.ts')));
 }));
