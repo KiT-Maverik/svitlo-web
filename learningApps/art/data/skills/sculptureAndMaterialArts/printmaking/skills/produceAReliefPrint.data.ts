@@ -5,7 +5,7 @@ export const produceAReliefPrint_Skill_Data = buildSkillConfig({
   id: "65750767-9f4d-475c-85a6-9ea87745f862",
   name: {
     en: "Produce a Relief Print",
-    zh: "制作凸版印刷",
+    zh: "制作凸版画",
     hi: "उभरे हुए हिस्सों से छाप बनाएँ",
     es: "Crear una estampa en relieve",
     ar: "إنتاج طبعة بارزة",
