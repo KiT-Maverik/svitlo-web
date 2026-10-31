@@ -3,7 +3,37 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { analyzeArtisticMetaphor_Skill_Data, analyzeEmotionalExpression_Skill_Data, interpretArtisticSymbols_Skill_Data, relateArtisticFormToContent_Skill_Data } from './skills';
 
 export const expressionAndMeaning_SkillGroup_Data = buildSkillGroupConfig({
-  slug: "expressionAndMeaning", id: "433ef00c-63d4-43d7-9d6f-764d0ba50c2b", name: { en: "Expression and Meaning" },
+  slug: "expressionAndMeaning", id: "433ef00c-63d4-43d7-9d6f-764d0ba50c2b", name: {
+    en: "Expression and Meaning",
+    zh: "表达与意义",
+    hi: "अभिव्यक्ति और अर्थ",
+    es: "Expresión y significado",
+    ar: "التعبير والمعنى",
+    fr: "Expression et signification",
+    bn: "প্রকাশ ও অর্থ",
+    pt: "Expressão e significado",
+    ur: "اظہار اور معنی",
+    id: "Ekspresi dan Makna",
+    de: "Ausdruck und Bedeutung",
+    ja: "表現と意味",
+    ko: "표현과 의미",
+    tr: "İfade ve Anlam",
+    vi: "Biểu đạt và ý nghĩa",
+    ta: "வெளிப்பாடும் பொருளும்",
+    te: "వ్యక్తీకరణ మరియు అర్థం",
+    mr: "अभिव्यक्ती आणि अर्थ",
+    ms: "Ekspresi dan Makna",
+    he: "ביטוי ומשמעות",
+    pl: "Ekspresja i znaczenie",
+    uk: "Вираження і значення",
+    lt: "Išraiška ir prasmė",
+    lv: "Izteiksme un nozīme",
+    et: "Väljendus ja tähendus",
+    be: "Выяўленне і значэнне",
+    ka: "გამოხატვა და მნიშვნელობა",
+    kk: "Бейнелеу және мағына",
+    qm: "İfade ve mana",
+  },
   skills: { analyzeArtisticMetaphor: analyzeArtisticMetaphor_Skill_Data, analyzeEmotionalExpression: analyzeEmotionalExpression_Skill_Data, interpretArtisticSymbols: interpretArtisticSymbols_Skill_Data, relateArtisticFormToContent: relateArtisticFormToContent_Skill_Data },
   description: { methodological: "Symbolism and emotional character require interpretations anchored in artistic choices and context.", frontend: {
           "en": "Explore how art communicates meaning through metaphor, emotion and form.",
@@ -34,5 +64,6 @@ export const expressionAndMeaning_SkillGroup_Data = buildSkillGroupConfig({
           "be": "Даследуйце, як мастацтва перадае сэнс праз метафару, эмоцыі і форму.",
           "ka": "შეისწავლეთ, როგორ გადმოსცემს ხელოვნება მნიშვნელობას მეტაფორის, ემოციისა და ფორმის საშუალებით.",
           "kk": "Өнердің метафора, эмоция және пішін арқылы мағынаны қалай жеткізетінін зерттеңіз."
-    } },
+    
+      qm: "Sanatnıñ mecaz, duyğu ve şekil vastasınen mananı nasıl bildirdigini keşf etiñiz.",} },
 });
