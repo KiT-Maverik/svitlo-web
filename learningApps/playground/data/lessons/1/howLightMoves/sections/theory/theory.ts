@@ -1,3 +1,8 @@
+import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
+import type { StringObjectToLocale } from '../../transformer.types';
+
+type Locale = StringObjectToLocale<Pick<HowLightMoves_Lesson_Locale['section']['theory'], 'name'>>;
+
 export const theory = {
   name: {
     en: 'Theory',
@@ -29,5 +34,5 @@ export const theory = {
     he: 'תיאוריה',
     pl: 'Teoria',
     uk: 'Теорія',
-  }
-} as const;
+  },
+} satisfies Locale;

@@ -1,703 +1,389 @@
-import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
+import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
+import type { StringObjectToLocale } from '../../../transformer.types';
 
-const uk = {
-  scene: {
-    title: 'Простеж шлях світла',
-    description: 'Від джерела — прямою до екрана.',
-    accessibleName: 'Анімація поширення світла від джерела до екрана',
-  },
-  track: {
-    accessibleDescription: 'Жовта позначка рухається прямою лінією від джерела ліворуч до екрана праворуч.',
-    source: 'Джерело світла',
-    screen: 'Екран',
-  },
-  controls: {
-    play: 'Відтворити',
-    pause: 'Пауза',
-    speed: 'Швидкість',
-    speedAccessibleName: 'Швидкість анімації',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Умовна модель: швидкість світла не відтворена в масштабі.',
-  },
-};
-
-export type LightPropagationSimulation_Locale = typeof uk;
-
-const en = {
-  scene: {
-    title: 'Trace the path of light',
-    description: 'From the source straight to the screen.',
-    accessibleName: 'Animation of light traveling from the source to the screen',
-  },
-  track: {
-    accessibleDescription:
-      'A yellow marker moves in a straight line from the source on the left to the screen on the right.',
-    source: 'Light source',
-    screen: 'Screen',
-  },
-  controls: {
-    play: 'Play',
-    pause: 'Pause',
-    speed: 'Speed',
-    speedAccessibleName: 'Animation speed',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Simplified model: the speed of light is not shown to scale.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const zh = {
-  scene: {
-    title: '追踪光的路径',
-    description: '从光源沿直线传播到屏幕。',
-    accessibleName: '光从光源传播到屏幕的动画',
-  },
-  track: {
-    accessibleDescription: '黄色标记沿直线从左侧的光源移动到右侧的屏幕。',
-    source: '光源',
-    screen: '屏幕',
-  },
-  controls: {
-    play: '播放',
-    pause: '暂停',
-    speed: '速度',
-    speedAccessibleName: '动画速度',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: '简化模型：光速未按比例呈现。',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const hi = {
-  scene: {
-    title: 'प्रकाश के पथ का अनुसरण करें',
-    description: 'स्रोत से पर्दे तक सीधी रेखा में।',
-    accessibleName: 'स्रोत से पर्दे तक प्रकाश के संचरण का ऐनिमेशन',
-  },
-  track: {
-    accessibleDescription: 'एक पीला संकेतक बाईं ओर स्थित स्रोत से दाईं ओर स्थित पर्दे तक सीधी रेखा में चलता है।',
-    source: 'प्रकाश स्रोत',
-    screen: 'पर्दा',
-  },
-  controls: {
-    play: 'चलाएँ',
-    pause: 'रोकें',
-    speed: 'गति',
-    speedAccessibleName: 'ऐनिमेशन की गति',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'सरलीकृत मॉडल: प्रकाश की गति को वास्तविक अनुपात में नहीं दिखाया गया है।',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const es = {
-  scene: {
-    title: 'Sigue el recorrido de la luz',
-    description: 'De la fuente a la pantalla en línea recta.',
-    accessibleName: 'Animación de la propagación de la luz desde la fuente hasta la pantalla',
-  },
-  track: {
-    accessibleDescription:
-      'Un marcador amarillo se desplaza en línea recta desde la fuente situada a la izquierda hasta la pantalla situada a la derecha.',
-    source: 'Fuente de luz',
-    screen: 'Pantalla',
-  },
-  controls: {
-    play: 'Reproducir',
-    pause: 'Pausar',
-    speed: 'Velocidad',
-    speedAccessibleName: 'Velocidad de la animación',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Modelo simplificado: la velocidad de la luz no se representa a escala.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const ar = {
-  scene: {
-    title: 'تتبّع مسار الضوء',
-    description: 'من المصدر إلى الشاشة في خط مستقيم.',
-    accessibleName: 'رسم متحرك لانتشار الضوء من المصدر إلى الشاشة',
-  },
-  track: {
-    accessibleDescription: 'تتحرك علامة صفراء في خط مستقيم من المصدر على اليمين إلى الشاشة على اليسار.',
-    source: 'مصدر الضوء',
-    screen: 'الشاشة',
-  },
-  controls: {
-    play: 'تشغيل',
-    pause: 'إيقاف مؤقت',
-    speed: 'السرعة',
-    speedAccessibleName: 'سرعة الحركة',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'نموذج مبسّط: سرعة الضوء غير ممثّلة بمقياس واقعي.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const fr = {
-  scene: {
-    title: 'Suis le trajet de la lumière',
-    description: 'De la source à l’écran en ligne droite.',
-    accessibleName: 'Animation de la propagation de la lumière de la source à l’écran',
-  },
-  track: {
-    accessibleDescription:
-      'Un repère jaune se déplace en ligne droite de la source située à gauche vers l’écran situé à droite.',
-    source: 'Source lumineuse',
-    screen: 'Écran',
-  },
-  controls: {
-    play: 'Lire',
-    pause: 'Mettre en pause',
-    speed: 'Vitesse',
-    speedAccessibleName: 'Vitesse de l’animation',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Modèle simplifié : la vitesse de la lumière n’est pas représentée à l’échelle.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const bn = {
-  scene: {
-    title: 'আলোর পথ অনুসরণ করো',
-    description: 'উৎস থেকে সরলরেখায় পর্দা পর্যন্ত।',
-    accessibleName: 'উৎস থেকে পর্দা পর্যন্ত আলোর সঞ্চালনের অ্যানিমেশন',
-  },
-  track: {
-    accessibleDescription: 'একটি হলুদ চিহ্ন বাম দিকের উৎস থেকে ডান দিকের পর্দা পর্যন্ত সরলরেখায় এগিয়ে যায়।',
-    source: 'আলোর উৎস',
-    screen: 'পর্দা',
-  },
-  controls: {
-    play: 'চালু করুন',
-    pause: 'বিরতি দিন',
-    speed: 'গতি',
-    speedAccessibleName: 'অ্যানিমেশনের গতি',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'সরলীকৃত মডেল: আলোর গতি প্রকৃত অনুপাতে দেখানো হয়নি।',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const pt = {
-  scene: {
-    title: 'Acompanhe o caminho da luz',
-    description: 'Da fonte até a tela em linha reta.',
-    accessibleName: 'Animação da propagação da luz da fonte até a tela',
-  },
-  track: {
-    accessibleDescription: 'Um marcador amarelo se move em linha reta da fonte à esquerda até a tela à direita.',
-    source: 'Fonte de luz',
-    screen: 'Tela',
-  },
-  controls: {
-    play: 'Reproduzir',
-    pause: 'Pausar',
-    speed: 'Velocidade',
-    speedAccessibleName: 'Velocidade da animação',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Modelo simplificado: a velocidade da luz não é representada em escala.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const ur = {
-  scene: {
-    title: 'روشنی کے راستے کا مشاہدہ کریں',
-    description: 'منبع سے پردے تک سیدھی لکیر میں۔',
-    accessibleName: 'منبع سے پردے تک روشنی کے پھیلاؤ کی اینیمیشن',
-  },
-  track: {
-    accessibleDescription:
-      'ایک پیلا نشان دائیں جانب موجود منبع سے بائیں جانب موجود پردے تک سیدھی لکیر میں حرکت کرتا ہے۔',
-    source: 'روشنی کا منبع',
-    screen: 'پردہ',
-  },
-  controls: {
-    play: 'چلائیں',
-    pause: 'وقفہ دیں',
-    speed: 'رفتار',
-    speedAccessibleName: 'اینیمیشن کی رفتار',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'سادہ ماڈل: روشنی کی رفتار اصل تناسب کے مطابق نہیں دکھائی گئی۔',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const id = {
-  scene: {
-    title: 'Telusuri lintasan cahaya',
-    description: 'Dari sumber menuju layar dalam garis lurus.',
-    accessibleName: 'Animasi perambatan cahaya dari sumber ke layar',
-  },
-  track: {
-    accessibleDescription:
-      'Penanda kuning bergerak dalam garis lurus dari sumber di sebelah kiri menuju layar di sebelah kanan.',
-    source: 'Sumber cahaya',
-    screen: 'Layar',
-  },
-  controls: {
-    play: 'Putar',
-    pause: 'Jeda',
-    speed: 'Kecepatan',
-    speedAccessibleName: 'Kecepatan animasi',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Model sederhana: kecepatan cahaya tidak ditampilkan sesuai skala.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const de = {
-  scene: {
-    title: 'Verfolge den Weg des Lichts',
-    description: 'Von der Quelle geradlinig zum Schirm.',
-    accessibleName: 'Animation der Lichtausbreitung von der Quelle zum Schirm',
-  },
-  track: {
-    accessibleDescription: 'Eine gelbe Markierung bewegt sich geradlinig von der Quelle links zum Schirm rechts.',
-    source: 'Lichtquelle',
-    screen: 'Schirm',
-  },
-  controls: {
-    play: 'Abspielen',
-    pause: 'Pausieren',
-    speed: 'Geschwindigkeit',
-    speedAccessibleName: 'Animationsgeschwindigkeit',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Vereinfachtes Modell: Die Lichtgeschwindigkeit wird nicht maßstabsgetreu dargestellt.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const ja = {
-  scene: {
-    title: '光の進む道をたどろう',
-    description: '光源からスクリーンまで一直線に。',
-    accessibleName: '光源からスクリーンまで光が伝わるアニメーション',
-  },
-  track: {
-    accessibleDescription: '黄色いマーカーが、左側の光源から右側のスクリーンまで直線上を移動します。',
-    source: '光源',
-    screen: 'スクリーン',
-  },
-  controls: {
-    play: '再生',
-    pause: '一時停止',
-    speed: '速度',
-    speedAccessibleName: 'アニメーションの速度',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: '簡略化したモデルです。光の速度は実際の縮尺では表現されていません。',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const ko = {
-  scene: {
-    title: '빛의 경로를 따라가 보세요',
-    description: '광원에서 스크린까지 직선으로.',
-    accessibleName: '광원에서 스크린까지 빛이 전파되는 애니메이션',
-  },
-  track: {
-    accessibleDescription: '노란색 표시가 왼쪽의 광원에서 오른쪽의 스크린까지 직선으로 이동합니다.',
-    source: '광원',
-    screen: '스크린',
-  },
-  controls: {
-    play: '재생',
-    pause: '일시 정지',
-    speed: '속도',
-    speedAccessibleName: '애니메이션 속도',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: '단순화한 모형입니다. 빛의 속도는 실제 비율로 표현되지 않았습니다.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const tr = {
-  scene: {
-    title: 'Işığın yolunu takip et',
-    description: 'Kaynaktan ekrana düz bir çizgi boyunca.',
-    accessibleName: 'Işığın kaynaktan ekrana yayılmasını gösteren animasyon',
-  },
-  track: {
-    accessibleDescription: 'Sarı bir işaret, soldaki kaynaktan sağdaki ekrana düz bir çizgi boyunca hareket eder.',
-    source: 'Işık kaynağı',
-    screen: 'Ekran',
-  },
-  controls: {
-    play: 'Oynat',
-    pause: 'Duraklat',
-    speed: 'Hız',
-    speedAccessibleName: 'Animasyon hızı',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Basitleştirilmiş model: ışık hızı ölçekli olarak gösterilmemiştir.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const vi = {
-  scene: {
-    title: 'Theo dõi đường đi của ánh sáng',
-    description: 'Từ nguồn sáng đến màn theo đường thẳng.',
-    accessibleName: 'Hoạt ảnh mô tả ánh sáng truyền từ nguồn sáng đến màn',
-  },
-  track: {
-    accessibleDescription: 'Một dấu màu vàng di chuyển theo đường thẳng từ nguồn sáng bên trái đến màn bên phải.',
-    source: 'Nguồn sáng',
-    screen: 'Màn',
-  },
-  controls: {
-    play: 'Phát',
-    pause: 'Tạm dừng',
-    speed: 'Tốc độ',
-    speedAccessibleName: 'Tốc độ hoạt ảnh',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Mô hình đơn giản hóa: tốc độ ánh sáng không được thể hiện theo tỉ lệ thực tế.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const ta = {
-  scene: {
-    title: 'ஒளியின் பாதையைப் பின்தொடருங்கள்',
-    description: 'ஒளிமூலத்திலிருந்து திரை வரை நேர்கோட்டில்.',
-    accessibleName: 'ஒளிமூலத்திலிருந்து திரை வரை ஒளி பரவுவதைக் காட்டும் அசைவூட்டம்',
-  },
-  track: {
-    accessibleDescription:
-      'மஞ்சள் நிறக் குறியொன்று இடப்புறத்தில் உள்ள ஒளிமூலத்திலிருந்து வலப்புறத்தில் உள்ள திரை வரை நேர்கோட்டில் நகர்கிறது.',
-    source: 'ஒளிமூலம்',
-    screen: 'திரை',
-  },
-  controls: {
-    play: 'இயக்கு',
-    pause: 'இடைநிறுத்து',
-    speed: 'வேகம்',
-    speedAccessibleName: 'அசைவூட்டத்தின் வேகம்',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'எளிமைப்படுத்தப்பட்ட மாதிரி: ஒளியின் வேகம் உண்மையான விகிதத்தில் காட்டப்படவில்லை.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const te = {
-  scene: {
-    title: 'కాంతి మార్గాన్ని అనుసరించండి',
-    description: 'కాంతి మూలం నుంచి తెర వరకు సరళరేఖలో.',
-    accessibleName: 'కాంతి మూలం నుంచి తెర వరకు కాంతి ప్రసరించే యానిమేషన్',
-  },
-  track: {
-    accessibleDescription:
-      'పసుపు రంగు గుర్తు ఎడమవైపు ఉన్న కాంతి మూలం నుంచి కుడివైపు ఉన్న తెర వరకు సరళరేఖలో కదులుతుంది.',
-    source: 'కాంతి మూలం',
-    screen: 'తెర',
-  },
-  controls: {
-    play: 'ప్లే చేయండి',
-    pause: 'విరామం ఇవ్వండి',
-    speed: 'వేగం',
-    speedAccessibleName: 'యానిమేషన్ వేగం',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'సరళీకృత నమూనా: కాంతి వేగాన్ని వాస్తవ నిష్పత్తిలో చూపలేదు.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const mr = {
-  scene: {
-    title: 'प्रकाशाचा मार्ग पाहा',
-    description: 'स्रोतापासून पडद्यापर्यंत सरळ रेषेत.',
-    accessibleName: 'स्रोतापासून पडद्यापर्यंत प्रकाशाच्या प्रसाराचे अॅनिमेशन',
-  },
-  track: {
-    accessibleDescription: 'एक पिवळी खूण डावीकडील स्रोतापासून उजवीकडील पडद्यापर्यंत सरळ रेषेत सरकते.',
-    source: 'प्रकाशस्रोत',
-    screen: 'पडदा',
-  },
-  controls: {
-    play: 'चालू करा',
-    pause: 'विराम द्या',
-    speed: 'वेग',
-    speedAccessibleName: 'अॅनिमेशनचा वेग',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'सुलभ केलेले मॉडेल: प्रकाशाचा वेग प्रत्यक्ष प्रमाणात दाखवलेला नाही.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const ms = {
-  scene: {
-    title: 'Jejaki laluan cahaya',
-    description: 'Dari sumber ke skrin dalam garis lurus.',
-    accessibleName: 'Animasi perambatan cahaya dari sumber ke skrin',
-  },
-  track: {
-    accessibleDescription:
-      'Penanda kuning bergerak dalam garis lurus dari sumber di sebelah kiri ke skrin di sebelah kanan.',
-    source: 'Sumber cahaya',
-    screen: 'Skrin',
-  },
-  controls: {
-    play: 'Main',
-    pause: 'Jeda',
-    speed: 'Kelajuan',
-    speedAccessibleName: 'Kelajuan animasi',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Model ringkas: kelajuan cahaya tidak ditunjukkan mengikut skala.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const he = {
-  scene: {
-    title: 'עקבו אחר מסלול האור',
-    description: 'ממקור האור אל המסך בקו ישר.',
-    accessibleName: 'הנפשה של התפשטות האור מהמקור אל המסך',
-  },
-  track: {
-    accessibleDescription: 'סמן צהוב נע בקו ישר ממקור האור מימין אל המסך משמאל.',
-    source: 'מקור אור',
-    screen: 'מסך',
-  },
-  controls: {
-    play: 'הפעלה',
-    pause: 'השהיה',
-    speed: 'מהירות',
-    speedAccessibleName: 'מהירות ההנפשה',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'מודל מפושט: מהירות האור אינה מוצגת בקנה מידה מציאותי.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const pl = {
-  scene: {
-    title: 'Prześledź drogę światła',
-    description: 'Od źródła prosto do ekranu.',
-    accessibleName: 'Animacja rozchodzenia się światła od źródła do ekranu',
-  },
-  track: {
-    accessibleDescription:
-      'Żółty znacznik porusza się po linii prostej od źródła po lewej stronie do ekranu po prawej stronie.',
-    source: 'Źródło światła',
-    screen: 'Ekran',
-  },
-  controls: {
-    play: 'Odtwórz',
-    pause: 'Wstrzymaj',
-    speed: 'Prędkość',
-    speedAccessibleName: 'Prędkość animacji',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Model uproszczony: prędkość światła nie jest przedstawiona w rzeczywistej skali.',
-  },
-} satisfies LightPropagationSimulation_Locale;
-
-const lt = {
-  scene: {
-    title: 'Sek šviesos kelią',
-    description: 'Nuo šaltinio tiesiai iki ekrano.',
-    accessibleName: 'Šviesos sklidimo nuo šaltinio iki ekrano animacija',
-  },
-  track: {
-    accessibleDescription: 'Geltona žymė juda tiesia linija nuo šaltinio kairėje iki ekrano dešinėje.',
-    source: 'Šviesos šaltinis',
-    screen: 'Ekranas',
-  },
-  controls: {
-    play: 'Paleisti',
-    pause: 'Pauzė',
-    speed: 'Greitis',
-    speedAccessibleName: 'Animacijos greitis',
-    speedUnit: '×',
-  },
-  hints: { scale: 'Supaprastintas modelis: tikrasis šviesos greitis neatvaizduojamas pagal mastelį.' },
-} satisfies LightPropagationSimulation_Locale;
-
-const lv = {
-  scene: {
-    title: 'Izseko gaismas ceļu',
-    description: 'No avota pa taisnu līniju līdz ekrānam.',
-    accessibleName: 'Gaismas izplatīšanās animācija no avota līdz ekrānam',
-  },
-  track: {
-    accessibleDescription: 'Dzeltenā atzīme pārvietojas pa taisnu līniju no avota kreisajā pusē uz ekrānu labajā pusē.',
-    source: 'Gaismas avots',
-    screen: 'Ekrāns',
-  },
-  controls: {
-    play: 'Atskaņot',
-    pause: 'Pauze',
-    speed: 'Ātrums',
-    speedAccessibleName: 'Animācijas ātrums',
-    speedUnit: '×',
-  },
-  hints: { scale: 'Vienkāršots modelis: īstais gaismas ātrums nav attēlots mērogā.' },
-} satisfies LightPropagationSimulation_Locale;
-
-const et = {
-  scene: {
-    title: 'Jälgi valguse teekonda',
-    description: 'Allikast sirgjooneliselt ekraanini.',
-    accessibleName: 'Animatsioon valguse levimisest allikast ekraanini',
-  },
-  track: {
-    accessibleDescription:
-      'Kollane tähis liigub sirgjooneliselt vasakul asuvast valgusallikast paremal oleva ekraanini.',
-    source: 'Valgusallikas',
-    screen: 'Ekraan',
-  },
-  controls: {
-    play: 'Esita',
-    pause: 'Paus',
-    speed: 'Kiirus',
-    speedAccessibleName: 'Animatsiooni kiirus',
-    speedUnit: '×',
-  },
-  hints: { scale: 'Lihtsustatud mudel: valguse tegelik kiirus ei ole kujutatud õiges mõõtkavas.' },
-} satisfies LightPropagationSimulation_Locale;
-
-const be = {
-  scene: {
-    title: 'Прасачы шлях сьвятла',
-    description: 'Ад крыніцы па простай лініі да экрана.',
-    accessibleName: 'Анімацыя пашырэньня сьвятла ад крыніцы да экрана',
-  },
-  track: {
-    accessibleDescription: 'Жоўтая пазнака рухаецца па простай лініі ад крыніцы зьлева да экрана справа.',
-    source: 'Крыніца сьвятла',
-    screen: 'Экран',
-  },
-  controls: {
-    play: 'Прайграць',
-    pause: 'Паўза',
-    speed: 'Хуткасьць',
-    speedAccessibleName: 'Хуткасьць анімацыі',
-    speedUnit: '×',
-  },
-  hints: { scale: 'Спрошчаная мадэль: сапраўдная хуткасьць сьвятла не паказаная ў маштабе.' },
-} satisfies LightPropagationSimulation_Locale;
-
-const ka = {
-  scene: {
-    title: 'მიჰყევი სინათლის გზას',
-    description: 'წყაროდან ეკრანამდე სწორი ხაზით.',
-    accessibleName: 'სინათლის წყაროდან ეკრანამდე გავრცელების ანიმაცია',
-  },
-  track: {
-    accessibleDescription:
-      'ყვითელი მაჩვენებელი სწორ ხაზზე გადაადგილდება მარცხნივ მდებარე წყაროდან მარჯვნივ მდებარე ეკრანამდე.',
-    source: 'სინათლის წყარო',
-    screen: 'ეკრანი',
-  },
-  controls: {
-    play: 'გაშვება',
-    pause: 'პაუზა',
-    speed: 'სიჩქარე',
-    speedAccessibleName: 'ანიმაციის სიჩქარე',
-    speedUnit: '×',
-  },
-  hints: { scale: 'გამარტივებული მოდელი: სინათლის რეალური სიჩქარე მასშტაბით არ არის ნაჩვენები.' },
-} satisfies LightPropagationSimulation_Locale;
-
-const kk = {
-  scene: {
-    title: 'Жарықтың жолын бақыла',
-    description: 'Көзден экранға дейін түзу сызық бойымен.',
-    accessibleName: 'Жарықтың көзден экранға таралу анимациясы',
-  },
-  track: {
-    accessibleDescription:
-      'Сары белгі сол жақтағы жарық көзінен оң жақтағы экранға дейін түзу сызық бойымен қозғалады.',
-    source: 'Жарық көзі',
-    screen: 'Экран',
-  },
-  controls: {
-    play: 'Ойнату',
-    pause: 'Кідірту',
-    speed: 'Жылдамдық',
-    speedAccessibleName: 'Анимация жылдамдығы',
-    speedUnit: '×',
-  },
-  hints: { scale: 'Қарапайым модель: жарықтың нақты жылдамдығы масштабпен көрсетілмеген.' },
-} satisfies LightPropagationSimulation_Locale;
-
-/** Crimean Tatar (qm, crh-Latn-UA); native-speaker review recommended. */
-const qm = {
-  scene: {
-    title: 'Yarıqnıñ yolunı izle',
-    description: 'Menbadan ekranğa doğru sızıq boyunca.',
-    accessibleName: 'Menbadan ekranğa yayılağan yarıqnı köstergen animatsiya',
-  },
-  track: {
-    accessibleDescription: 'Sarı belgi soldaki menbadan sağdaki ekranğa doğru sızıq boyunca areket ete.',
-    source: 'Yarıq menbası',
-    screen: 'Ekran',
-  },
-  controls: {
-    play: 'Başlat',
-    pause: 'Toqtat',
-    speed: 'Sürat',
-    speedAccessibleName: 'Animatsiyanıñ sürati',
-    speedUnit: '×',
-  },
-  hints: {
-    scale: 'Sadeleştirilgen model: yarıqnıñ sürati kerçek miqyasnen kösterilmegen.',
-  },
-} satisfies LightPropagationSimulation_Locale;
+type Locale = StringObjectToLocale<
+  HowLightMoves_Lesson_Locale['section']['theory']['scene']['LightPropagationSimulation']
+>;
 
 export const lightPropagationSimulation = {
-  en,
-  zh,
-  hi,
-  es,
-  ar,
-  fr,
-  bn,
-  pt,
-  ur,
-  id,
-  de,
-  ja,
-  ko,
-  tr,
-  vi,
-  ta,
-  te,
-  mr,
-  ms,
-  he,
-  pl,
-  uk,
-  lt,
-  lv,
-  et,
-  be,
-  ka,
-  kk,
-  qm,
-} satisfies Record<DefaultSupportedLanguage['language'], LightPropagationSimulation_Locale>;
+  scene: {
+    title: {
+      uk: 'Простеж шлях світла',
+      en: 'Trace the path of light',
+      zh: '追踪光的路径',
+      hi: 'प्रकाश के पथ का अनुसरण करें',
+      es: 'Sigue el recorrido de la luz',
+      ar: 'تتبّع مسار الضوء',
+      fr: 'Suis le trajet de la lumière',
+      bn: 'আলোর পথ অনুসরণ করো',
+      pt: 'Acompanhe o caminho da luz',
+      ur: 'روشنی کے راستے کا مشاہدہ کریں',
+      id: 'Telusuri lintasan cahaya',
+      de: 'Verfolge den Weg des Lichts',
+      ja: '光の進む道をたどろう',
+      ko: '빛의 경로를 따라가 보세요',
+      tr: 'Işığın yolunu takip et',
+      vi: 'Theo dõi đường đi của ánh sáng',
+      ta: 'ஒளியின் பாதையைப் பின்தொடருங்கள்',
+      te: 'కాంతి మార్గాన్ని అనుసరించండి',
+      mr: 'प्रकाशाचा मार्ग पाहा',
+      ms: 'Jejaki laluan cahaya',
+      he: 'עקבו אחר מסלול האור',
+      pl: 'Prześledź drogę światła',
+      lt: 'Sek šviesos kelią',
+      lv: 'Izseko gaismas ceļu',
+      et: 'Jälgi valguse teekonda',
+      be: 'Прасачы шлях сьвятла',
+      ka: 'მიჰყევი სინათლის გზას',
+      kk: 'Жарықтың жолын бақыла',
+      qm: 'Yarıqnıñ yolunı izle',
+    },
+    description: {
+      uk: 'Від джерела — прямою до екрана.',
+      en: 'From the source straight to the screen.',
+      zh: '从光源沿直线传播到屏幕。',
+      hi: 'स्रोत से पर्दे तक सीधी रेखा में।',
+      es: 'De la fuente a la pantalla en línea recta.',
+      ar: 'من المصدر إلى الشاشة في خط مستقيم.',
+      fr: 'De la source à l’écran en ligne droite.',
+      bn: 'উৎস থেকে সরলরেখায় পর্দা পর্যন্ত।',
+      pt: 'Da fonte até a tela em linha reta.',
+      ur: 'منبع سے پردے تک سیدھی لکیر میں۔',
+      id: 'Dari sumber menuju layar dalam garis lurus.',
+      de: 'Von der Quelle geradlinig zum Schirm.',
+      ja: '光源からスクリーンまで一直線に。',
+      ko: '광원에서 스크린까지 직선으로.',
+      tr: 'Kaynaktan ekrana düz bir çizgi boyunca.',
+      vi: 'Từ nguồn sáng đến màn theo đường thẳng.',
+      ta: 'ஒளிமூலத்திலிருந்து திரை வரை நேர்கோட்டில்.',
+      te: 'కాంతి మూలం నుంచి తెర వరకు సరళరేఖలో.',
+      mr: 'स्रोतापासून पडद्यापर्यंत सरळ रेषेत.',
+      ms: 'Dari sumber ke skrin dalam garis lurus.',
+      he: 'ממקור האור אל המסך בקו ישר.',
+      pl: 'Od źródła prosto do ekranu.',
+      lt: 'Nuo šaltinio tiesiai iki ekrano.',
+      lv: 'No avota pa taisnu līniju līdz ekrānam.',
+      et: 'Allikast sirgjooneliselt ekraanini.',
+      be: 'Ад крыніцы па простай лініі да экрана.',
+      ka: 'წყაროდან ეკრანამდე სწორი ხაზით.',
+      kk: 'Көзден экранға дейін түзу сызық бойымен.',
+      qm: 'Menbadan ekranğa doğru sızıq boyunca.',
+    },
+    accessibleName: {
+      uk: 'Анімація поширення світла від джерела до екрана',
+      en: 'Animation of light traveling from the source to the screen',
+      zh: '光从光源传播到屏幕的动画',
+      hi: 'स्रोत से पर्दे तक प्रकाश के संचरण का ऐनिमेशन',
+      es: 'Animación de la propagación de la luz desde la fuente hasta la pantalla',
+      ar: 'رسم متحرك لانتشار الضوء من المصدر إلى الشاشة',
+      fr: 'Animation de la propagation de la lumière de la source à l’écran',
+      bn: 'উৎস থেকে পর্দা পর্যন্ত আলোর সঞ্চালনের অ্যানিমেশন',
+      pt: 'Animação da propagação da luz da fonte até a tela',
+      ur: 'منبع سے پردے تک روشنی کے پھیلاؤ کی اینیمیشن',
+      id: 'Animasi perambatan cahaya dari sumber ke layar',
+      de: 'Animation der Lichtausbreitung von der Quelle zum Schirm',
+      ja: '光源からスクリーンまで光が伝わるアニメーション',
+      ko: '광원에서 스크린까지 빛이 전파되는 애니메이션',
+      tr: 'Işığın kaynaktan ekrana yayılmasını gösteren animasyon',
+      vi: 'Hoạt ảnh mô tả ánh sáng truyền từ nguồn sáng đến màn',
+      ta: 'ஒளிமூலத்திலிருந்து திரை வரை ஒளி பரவுவதைக் காட்டும் அசைவூட்டம்',
+      te: 'కాంతి మూలం నుంచి తెర వరకు కాంతి ప్రసరించే యానిమేషన్',
+      mr: 'स्रोतापासून पडद्यापर्यंत प्रकाशाच्या प्रसाराचे अॅनिमेशन',
+      ms: 'Animasi perambatan cahaya dari sumber ke skrin',
+      he: 'הנפשה של התפשטות האור מהמקור אל המסך',
+      pl: 'Animacja rozchodzenia się światła od źródła do ekranu',
+      lt: 'Šviesos sklidimo nuo šaltinio iki ekrano animacija',
+      lv: 'Gaismas izplatīšanās animācija no avota līdz ekrānam',
+      et: 'Animatsioon valguse levimisest allikast ekraanini',
+      be: 'Анімацыя пашырэньня сьвятла ад крыніцы да экрана',
+      ka: 'სინათლის წყაროდან ეკრანამდე გავრცელების ანიმაცია',
+      kk: 'Жарықтың көзден экранға таралу анимациясы',
+      qm: 'Menbadan ekranğa yayılağan yarıqnı köstergen animatsiya',
+    },
+  },
+  track: {
+    accessibleDescription: {
+      uk: 'Жовта позначка рухається прямою лінією від джерела ліворуч до екрана праворуч.',
+      en: 'A yellow marker moves in a straight line from the source on the left to the screen on the right.',
+      zh: '黄色标记沿直线从左侧的光源移动到右侧的屏幕。',
+      hi: 'एक पीला संकेतक बाईं ओर स्थित स्रोत से दाईं ओर स्थित पर्दे तक सीधी रेखा में चलता है।',
+      es: 'Un marcador amarillo se desplaza en línea recta desde la fuente situada a la izquierda hasta la pantalla situada a la derecha.',
+      ar: 'تتحرك علامة صفراء في خط مستقيم من المصدر على اليمين إلى الشاشة على اليسار.',
+      fr: 'Un repère jaune se déplace en ligne droite de la source située à gauche vers l’écran situé à droite.',
+      bn: 'একটি হলুদ চিহ্ন বাম দিকের উৎস থেকে ডান দিকের পর্দা পর্যন্ত সরলরেখায় এগিয়ে যায়।',
+      pt: 'Um marcador amarelo se move em linha reta da fonte à esquerda até a tela à direita.',
+      ur: 'ایک پیلا نشان دائیں جانب موجود منبع سے بائیں جانب موجود پردے تک سیدھی لکیر میں حرکت کرتا ہے۔',
+      id: 'Penanda kuning bergerak dalam garis lurus dari sumber di sebelah kiri menuju layar di sebelah kanan.',
+      de: 'Eine gelbe Markierung bewegt sich geradlinig von der Quelle links zum Schirm rechts.',
+      ja: '黄色いマーカーが、左側の光源から右側のスクリーンまで直線上を移動します。',
+      ko: '노란색 표시가 왼쪽의 광원에서 오른쪽의 스크린까지 직선으로 이동합니다.',
+      tr: 'Sarı bir işaret, soldaki kaynaktan sağdaki ekrana düz bir çizgi boyunca hareket eder.',
+      vi: 'Một dấu màu vàng di chuyển theo đường thẳng từ nguồn sáng bên trái đến màn bên phải.',
+      ta: 'மஞ்சள் நிறக் குறியொன்று இடப்புறத்தில் உள்ள ஒளிமூலத்திலிருந்து வலப்புறத்தில் உள்ள திரை வரை நேர்கோட்டில் நகர்கிறது.',
+      te: 'పసుపు రంగు గుర్తు ఎడమవైపు ఉన్న కాంతి మూలం నుంచి కుడివైపు ఉన్న తెర వరకు సరళరేఖలో కదులుతుంది.',
+      mr: 'एक पिवळी खूण डावीकडील स्रोतापासून उजवीकडील पडद्यापर्यंत सरळ रेषेत सरकते.',
+      ms: 'Penanda kuning bergerak dalam garis lurus dari sumber di sebelah kiri ke skrin di sebelah kanan.',
+      he: 'סמן צהוב נע בקו ישר ממקור האור מימין אל המסך משמאל.',
+      pl: 'Żółty znacznik porusza się po linii prostej od źródła po lewej stronie do ekranu po prawej stronie.',
+      lt: 'Geltona žymė juda tiesia linija nuo šaltinio kairėje iki ekrano dešinėje.',
+      lv: 'Dzeltenā atzīme pārvietojas pa taisnu līniju no avota kreisajā pusē uz ekrānu labajā pusē.',
+      et: 'Kollane tähis liigub sirgjooneliselt vasakul asuvast valgusallikast paremal oleva ekraanini.',
+      be: 'Жоўтая пазнака рухаецца па простай лініі ад крыніцы зьлева да экрана справа.',
+      ka: 'ყვითელი მაჩვენებელი სწორ ხაზზე გადაადგილდება მარცხნივ მდებარე წყაროდან მარჯვნივ მდებარე ეკრანამდე.',
+      kk: 'Сары белгі сол жақтағы жарық көзінен оң жақтағы экранға дейін түзу сызық бойымен қозғалады.',
+      qm: 'Sarı belgi soldaki menbadan sağdaki ekranğa doğru sızıq boyunca areket ete.',
+    },
+    source: {
+      uk: 'Джерело світла',
+      en: 'Light source',
+      zh: '光源',
+      hi: 'प्रकाश स्रोत',
+      es: 'Fuente de luz',
+      ar: 'مصدر الضوء',
+      fr: 'Source lumineuse',
+      bn: 'আলোর উৎস',
+      pt: 'Fonte de luz',
+      ur: 'روشنی کا منبع',
+      id: 'Sumber cahaya',
+      de: 'Lichtquelle',
+      ja: '光源',
+      ko: '광원',
+      tr: 'Işık kaynağı',
+      vi: 'Nguồn sáng',
+      ta: 'ஒளிமூலம்',
+      te: 'కాంతి మూలం',
+      mr: 'प्रकाशस्रोत',
+      ms: 'Sumber cahaya',
+      he: 'מקור אור',
+      pl: 'Źródło światła',
+      lt: 'Šviesos šaltinis',
+      lv: 'Gaismas avots',
+      et: 'Valgusallikas',
+      be: 'Крыніца сьвятла',
+      ka: 'სინათლის წყარო',
+      kk: 'Жарық көзі',
+      qm: 'Yarıq menbası',
+    },
+    screen: {
+      uk: 'Екран',
+      en: 'Screen',
+      zh: '屏幕',
+      hi: 'पर्दा',
+      es: 'Pantalla',
+      ar: 'الشاشة',
+      fr: 'Écran',
+      bn: 'পর্দা',
+      pt: 'Tela',
+      ur: 'پردہ',
+      id: 'Layar',
+      de: 'Schirm',
+      ja: 'スクリーン',
+      ko: '스크린',
+      tr: 'Ekran',
+      vi: 'Màn',
+      ta: 'திரை',
+      te: 'తెర',
+      mr: 'पडदा',
+      ms: 'Skrin',
+      he: 'מסך',
+      pl: 'Ekran',
+      lt: 'Ekranas',
+      lv: 'Ekrāns',
+      et: 'Ekraan',
+      be: 'Экран',
+      ka: 'ეკრანი',
+      kk: 'Экран',
+      qm: 'Ekran',
+    },
+  },
+  controls: {
+    play: {
+      uk: 'Відтворити',
+      en: 'Play',
+      zh: '播放',
+      hi: 'चलाएँ',
+      es: 'Reproducir',
+      ar: 'تشغيل',
+      fr: 'Lire',
+      bn: 'চালু করুন',
+      pt: 'Reproduzir',
+      ur: 'چلائیں',
+      id: 'Putar',
+      de: 'Abspielen',
+      ja: '再生',
+      ko: '재생',
+      tr: 'Oynat',
+      vi: 'Phát',
+      ta: 'இயக்கு',
+      te: 'ప్లే చేయండి',
+      mr: 'चालू करा',
+      ms: 'Main',
+      he: 'הפעלה',
+      pl: 'Odtwórz',
+      lt: 'Paleisti',
+      lv: 'Atskaņot',
+      et: 'Esita',
+      be: 'Прайграць',
+      ka: 'გაშვება',
+      kk: 'Ойнату',
+      qm: 'Başlat',
+    },
+    pause: {
+      uk: 'Пауза',
+      en: 'Pause',
+      zh: '暂停',
+      hi: 'रोकें',
+      es: 'Pausar',
+      ar: 'إيقاف مؤقت',
+      fr: 'Mettre en pause',
+      bn: 'বিরতি দিন',
+      pt: 'Pausar',
+      ur: 'وقفہ دیں',
+      id: 'Jeda',
+      de: 'Pausieren',
+      ja: '一時停止',
+      ko: '일시 정지',
+      tr: 'Duraklat',
+      vi: 'Tạm dừng',
+      ta: 'இடைநிறுத்து',
+      te: 'విరామం ఇవ్వండి',
+      mr: 'विराम द्या',
+      ms: 'Jeda',
+      he: 'השהיה',
+      pl: 'Wstrzymaj',
+      lt: 'Pauzė',
+      lv: 'Pauze',
+      et: 'Paus',
+      be: 'Паўза',
+      ka: 'პაუზა',
+      kk: 'Кідірту',
+      qm: 'Toqtat',
+    },
+    speed: {
+      uk: 'Швидкість',
+      en: 'Speed',
+      zh: '速度',
+      hi: 'गति',
+      es: 'Velocidad',
+      ar: 'السرعة',
+      fr: 'Vitesse',
+      bn: 'গতি',
+      pt: 'Velocidade',
+      ur: 'رفتار',
+      id: 'Kecepatan',
+      de: 'Geschwindigkeit',
+      ja: '速度',
+      ko: '속도',
+      tr: 'Hız',
+      vi: 'Tốc độ',
+      ta: 'வேகம்',
+      te: 'వేగం',
+      mr: 'वेग',
+      ms: 'Kelajuan',
+      he: 'מהירות',
+      pl: 'Prędkość',
+      lt: 'Greitis',
+      lv: 'Ātrums',
+      et: 'Kiirus',
+      be: 'Хуткасьць',
+      ka: 'სიჩქარე',
+      kk: 'Жылдамдық',
+      qm: 'Sürat',
+    },
+    speedAccessibleName: {
+      uk: 'Швидкість анімації',
+      en: 'Animation speed',
+      zh: '动画速度',
+      hi: 'ऐनिमेशन की गति',
+      es: 'Velocidad de la animación',
+      ar: 'سرعة الحركة',
+      fr: 'Vitesse de l’animation',
+      bn: 'অ্যানিমেশনের গতি',
+      pt: 'Velocidade da animação',
+      ur: 'اینیمیشن کی رفتار',
+      id: 'Kecepatan animasi',
+      de: 'Animationsgeschwindigkeit',
+      ja: 'アニメーションの速度',
+      ko: '애니메이션 속도',
+      tr: 'Animasyon hızı',
+      vi: 'Tốc độ hoạt ảnh',
+      ta: 'அசைவூட்டத்தின் வேகம்',
+      te: 'యానిమేషన్ వేగం',
+      mr: 'अॅनिमेशनचा वेग',
+      ms: 'Kelajuan animasi',
+      he: 'מהירות ההנפשה',
+      pl: 'Prędkość animacji',
+      lt: 'Animacijos greitis',
+      lv: 'Animācijas ātrums',
+      et: 'Animatsiooni kiirus',
+      be: 'Хуткасьць анімацыі',
+      ka: 'ანიმაციის სიჩქარე',
+      kk: 'Анимация жылдамдығы',
+      qm: 'Animatsiyanıñ sürati',
+    },
+    speedUnit: {
+      uk: '×',
+      en: '×',
+      zh: '×',
+      hi: '×',
+      es: '×',
+      ar: '×',
+      fr: '×',
+      bn: '×',
+      pt: '×',
+      ur: '×',
+      id: '×',
+      de: '×',
+      ja: '×',
+      ko: '×',
+      tr: '×',
+      vi: '×',
+      ta: '×',
+      te: '×',
+      mr: '×',
+      ms: '×',
+      he: '×',
+      pl: '×',
+      lt: '×',
+      lv: '×',
+      et: '×',
+      be: '×',
+      ka: '×',
+      kk: '×',
+      qm: '×',
+    },
+  },
+  hints: {
+    scale: {
+      uk: 'Умовна модель: швидкість світла не відтворена в масштабі.',
+      en: 'Simplified model: the speed of light is not shown to scale.',
+      zh: '简化模型：光速未按比例呈现。',
+      hi: 'सरलीकृत मॉडल: प्रकाश की गति को वास्तविक अनुपात में नहीं दिखाया गया है।',
+      es: 'Modelo simplificado: la velocidad de la luz no se representa a escala.',
+      ar: 'نموذج مبسّط: سرعة الضوء غير ممثّلة بمقياس واقعي.',
+      fr: 'Modèle simplifié : la vitesse de la lumière n’est pas représentée à l’échelle.',
+      bn: 'সরলীকৃত মডেল: আলোর গতি প্রকৃত অনুপাতে দেখানো হয়নি।',
+      pt: 'Modelo simplificado: a velocidade da luz não é representada em escala.',
+      ur: 'سادہ ماڈل: روشنی کی رفتار اصل تناسب کے مطابق نہیں دکھائی گئی۔',
+      id: 'Model sederhana: kecepatan cahaya tidak ditampilkan sesuai skala.',
+      de: 'Vereinfachtes Modell: Die Lichtgeschwindigkeit wird nicht maßstabsgetreu dargestellt.',
+      ja: '簡略化したモデルです。光の速度は実際の縮尺では表現されていません。',
+      ko: '단순화한 모형입니다. 빛의 속도는 실제 비율로 표현되지 않았습니다.',
+      tr: 'Basitleştirilmiş model: ışık hızı ölçekli olarak gösterilmemiştir.',
+      vi: 'Mô hình đơn giản hóa: tốc độ ánh sáng không được thể hiện theo tỉ lệ thực tế.',
+      ta: 'எளிமைப்படுத்தப்பட்ட மாதிரி: ஒளியின் வேகம் உண்மையான விகிதத்தில் காட்டப்படவில்லை.',
+      te: 'సరళీకృత నమూనా: కాంతి వేగాన్ని వాస్తవ నిష్పత్తిలో చూపలేదు.',
+      mr: 'सुलभ केलेले मॉडेल: प्रकाशाचा वेग प्रत्यक्ष प्रमाणात दाखवलेला नाही.',
+      ms: 'Model ringkas: kelajuan cahaya tidak ditunjukkan mengikut skala.',
+      he: 'מודל מפושט: מהירות האור אינה מוצגת בקנה מידה מציאותי.',
+      pl: 'Model uproszczony: prędkość światła nie jest przedstawiona w rzeczywistej skali.',
+      lt: 'Supaprastintas modelis: tikrasis šviesos greitis neatvaizduojamas pagal mastelį.',
+      lv: 'Vienkāršots modelis: īstais gaismas ātrums nav attēlots mērogā.',
+      et: 'Lihtsustatud mudel: valguse tegelik kiirus ei ole kujutatud õiges mõõtkavas.',
+      be: 'Спрошчаная мадэль: сапраўдная хуткасьць сьвятла не паказаная ў маштабе.',
+      ka: 'გამარტივებული მოდელი: სინათლის რეალური სიჩქარე მასშტაბით არ არის ნაჩვენები.',
+      kk: 'Қарапайым модель: жарықтың нақты жылдамдығы масштабпен көрсетілмеген.',
+      qm: 'Sadeleştirilgen model: yarıqnıñ sürati kerçek miqyasnen kösterilmegen.',
+    },
+  },
+} satisfies Locale;
