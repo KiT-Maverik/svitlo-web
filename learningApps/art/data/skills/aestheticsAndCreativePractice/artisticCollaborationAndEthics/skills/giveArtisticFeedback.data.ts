@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const giveArtisticFeedback_Skill_Data = buildSkillConfig({
-  slug: "giveArtisticFeedback",
-  id: "b1723767-0061-4f30-98c5-e6148c5ec3f0",
-  name: {
-    en: "Give Artistic Feedback",
-  },
-  description: {
-    methodological: "Offer specific observations and actionable suggestions aligned with a maker's goals.",
-    frontend: {
-      en: "Offer useful, specific suggestions that support another artist's goals.",
-    },
-  },
+  slug: "giveArtisticFeedback", id: "b1723767-0061-4f30-98c5-e6148c5ec3f0", name: { en: "Give Artistic Feedback" },
+  description: { methodological: "Offer specific observations and actionable suggestions aligned with a maker's goals.", frontend: {
+          "en": "Offer useful, specific suggestions that support another artist's goals.",
+          "zh": "提出具体且有用的建议，帮助其他艺术家实现目标。",
+          "hi": "दूसरे कलाकार के लक्ष्यों का समर्थन करने वाले उपयोगी और स्पष्ट सुझाव दें।",
+          "es": "Ofrece sugerencias útiles y concretas que apoyen los objetivos de otro artista.",
+          "ar": "قدّم اقتراحات مفيدة ومحددة تدعم أهداف فنان آخر.",
+          "fr": "Proposez des suggestions utiles et précises qui soutiennent les objectifs d’un autre artiste.",
+          "bn": "অন্য শিল্পীর লক্ষ্যকে সহায়তা করে এমন কার্যকর ও নির্দিষ্ট পরামর্শ দিন।",
+          "pt": "Ofereça sugestões úteis e específicas que apoiem os objetivos de outro artista.",
+          "ur": "دوسرے فنکار کے مقاصد کی حمایت کے لیے مفید اور واضح تجاویز دیں۔",
+          "id": "Berikan saran yang berguna dan spesifik untuk mendukung tujuan seniman lain.",
+          "de": "Gib hilfreiche, konkrete Vorschläge, die die Ziele eines anderen Künstlers unterstützen.",
+          "ja": "他のアーティストの目標を支える、具体的で役立つ提案をします。",
+          "ko": "다른 작가의 목표를 뒷받침하는 유용하고 구체적인 제안을 해 보세요.",
+          "tr": "Başka bir sanatçının hedeflerini destekleyen yararlı ve somut öneriler sunun.",
+          "vi": "Đưa ra góp ý hữu ích, cụ thể để hỗ trợ mục tiêu của nghệ sĩ khác.",
+          "ta": "மற்றொரு கலைஞரின் இலக்குகளை ஆதரிக்கும் பயனுள்ள, குறிப்பான பரிந்துரைகளை வழங்குங்கள்.",
+          "te": "మరో కళాకారుడి లక్ష్యాలకు తోడ్పడే ఉపయోగకరమైన, నిర్దిష్ట సూచనలు ఇవ్వండి.",
+          "mr": "दुसऱ्या कलाकाराच्या उद्दिष्टांना मदत करणाऱ्या उपयुक्त आणि नेमक्या सूचना द्या.",
+          "ms": "Berikan cadangan yang berguna dan khusus untuk menyokong matlamat artis lain.",
+          "he": "הציעו הצעות מועילות וממוקדות שתומכות במטרות של אמן אחר.",
+          "pl": "Przekazuj konkretne, przydatne sugestie wspierające cele innego artysty.",
+          "uk": "Надавайте корисні й конкретні поради, що допомагають іншому митцю досягти його цілей.",
+          "lt": "Pateikite naudingų ir konkrečių pasiūlymų, padedančių kitam menininkui siekti tikslų.",
+          "lv": "Sniedziet noderīgus un konkrētus ieteikumus, kas palīdz citam māksliniekam sasniegt mērķus.",
+          "et": "Anna kasulikke ja konkreetseid soovitusi, mis toetavad teise kunstniku eesmärke.",
+          "be": "Давайце карысныя і канкрэтныя парады, якія дапамагаюць іншаму мастаку дасягнуць мэт.",
+          "ka": "მიეცით სასარგებლო და კონკრეტული რჩევები, რომლებიც სხვა ხელოვანის მიზნებს ეხმარება.",
+          "kk": "Adjon hasznos, konkrét javaslatokat, amelyek támogatják egy másik művész céljait。"
+    } },
 });
