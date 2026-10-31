@@ -32,6 +32,7 @@ export const createReliefSculpture_Skill_Data = buildSkillConfig({
     be: "Ствараць рэльефную скульптуру",
     ka: "რელიეფური ქანდაკების შექმნა",
     kk: "Барельеф жасау",
+      qm: "Qabarıq heykel yaratmaq",
   },
   description: {
     methodological: "Organize raised and recessed forms on a supporting plane for legible depth.",
@@ -64,6 +65,7 @@ export const createReliefSculpture_Skill_Data = buildSkillConfig({
       be: "Стварайце выпуклыя і заглыбленыя формы на плоскай аснове.",
       ka: "ბრტყელ საფუძველზე შექმენით ამობურცული და ჩაღრმავებული ფორმები.",
       kk: "Жазық негізде шығыңқы және ойыңқы пішіндер жасаңыз.",
+          qm: "Yassı bir esas üstünde qabarıq ve içke kirgen şekiller yaratın.",
     },
   },
 });
