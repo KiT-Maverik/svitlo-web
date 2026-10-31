@@ -1,6 +1,9 @@
 'use client';
 
-import { Box, Divider, FormControlLabel, Stack, Switch, Typography } from '@mui/material';
+import { Box, Button, Divider, FormControlLabel, Stack, Switch, Typography } from '@mui/material';
+import CenterFocusStrongRoundedIcon from '@mui/icons-material/CenterFocusStrongRounded';
+import OpenInFullRoundedIcon from '@mui/icons-material/OpenInFullRounded';
+import CloseFullscreenRoundedIcon from '@mui/icons-material/CloseFullscreenRounded';
 import { useSkillsPageSettings, type SkillsPageSettings } from './SkillsPageSettingsContext';
 
 const OPTIONS: readonly {
@@ -26,7 +29,7 @@ const OPTIONS: readonly {
 ];
 
 export function SkillsPagePreferences() {
-  const { settings, updateSetting } = useSkillsPageSettings();
+  const { settings, updateSetting, mapReady, runMapAction } = useSkillsPageSettings();
   return (
     <Box component="section" aria-label="Налаштування сторінки Skills">
       <Typography component="h3" sx={{ fontWeight: 800, mb: 0.5 }}>Skills · Відображення</Typography>
@@ -55,6 +58,30 @@ export function SkillsPagePreferences() {
           </Box>
         ))}
       </Stack>
+      <Divider sx={{ my: 2.5 }} />
+      <Box component="section" aria-label="Керування мапою Skills">
+        <Typography component="h3" sx={{ fontWeight: 800, mb: 0.5 }}>Керування мапою</Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+          Згортайте всі гілки й картки або вмістіть видиму мапу в екран.
+        </Typography>
+        <Stack spacing={1}>
+          <Button variant="outlined" fullWidth disabled={!mapReady}
+            startIcon={<CloseFullscreenRoundedIcon />}
+            onClick={() => runMapAction('collapseAll')}>
+            Згорнути все
+          </Button>
+          <Button variant="outlined" fullWidth disabled={!mapReady}
+            startIcon={<OpenInFullRoundedIcon />}
+            onClick={() => runMapAction('expandAll')}>
+            Розгорнути все
+          </Button>
+          <Button variant="contained" fullWidth disabled={!mapReady}
+            startIcon={<CenterFocusStrongRoundedIcon />}
+            onClick={() => runMapAction('fitToScreen')}>
+            Вмістити в екран
+          </Button>
+        </Stack>
+      </Box>
     </Box>
   );
 }
