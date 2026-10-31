@@ -25,7 +25,7 @@ export const classifyArtisticGenres_Skill_Data = buildSkillConfig({
       tr: "Yaygın sanat türlerini tanıyın; bunları birleştiren veya sorgulayan eserlere de dikkat edin.",
       vi: "Nhận biết các thể loại nghệ thuật phổ biến, đồng thời chú ý đến những tác phẩm kết hợp hoặc thách thức các thể loại đó.",
       ta: "பொதுவான கலை வகைகளை அடையாளம் கண்டு, அவற்றைக் கலக்கும் அல்லது கேள்விக்குள்ளாக்கும் படைப்புகளையும் கவனியுங்கள்.",
-      te: "సాధారణ కళా ప్రక్రియలను గుర్తించండి; వాటిని కలిపే లేదా సవాలు చేసే作品లను కూడా గమనించండి.",
+      te: "సాధారణ కళా ప్రక్రియలను గుర్తించండి; వాటిని కలిపే లేదా సవాలు చేసే కళాకృతులను కూడా గమనించండి.",
       mr: "कलेतील प्रचलित प्रकार ओळखा आणि त्यांचे मिश्रण करणाऱ्या किंवा त्यांना आव्हान देणाऱ्या कलाकृतींकडेही लक्ष द्या.",
       ms: "Kenali genre seni yang lazim sambil memerhatikan karya yang menggabungkan atau mencabarnya.",
       he: "זהו סוגות אמנות נפוצות, ושימו לב גם ליצירות שמשלבות ביניהן או מערערות עליהן.",
