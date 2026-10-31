@@ -11,6 +11,7 @@ export const threeStepPlan_Skill_Data = buildSkillConfig({
     ka: 'სამმოქმედებიანი ამოცანის ამოხსნა',
     kk: 'Үш амалдық есепті шығару',
     en: 'Solving a three-step problem',
+    qm: 'Üç adımlı meseleni çezmek',
     zh: '解决三步应用题',
     hi: 'तीन चरणों की समस्या हल करना',
     es: 'Resolver un problema de tres pasos',
@@ -38,6 +39,7 @@ export const threeStepPlan_Skill_Data = buildSkillConfig({
       "A three-step solution successively determines intermediate results required to find the primary unknown. Every operation must follow from the problem's conditions and each result must retain its contextual meaning.",
     frontend: {
       en: 'You can solve a problem that needs three connected steps, using each intermediate result to reach a meaningful final answer.',
+      qm: 'Bir-birinen bağlı üç adım talap etken meseleni çezip, er ara neticeni manalı soñ cevapqa erişmek içün qullana bilesiñ.',
       zh: '你能解决需要三个相互关联步骤的问题，利用每一步的中间结果得出有意义的最终答案。',
       hi: 'आप तीन जुड़े चरणों वाली समस्या हल कर सकते हैं, हर बीच के परिणाम का उपयोग करके सार्थक अंतिम उत्तर तक पहुँचते हुए।',
       es: 'Puedes resolver un problema que requiere tres pasos relacionados, usando los resultados intermedios para llegar a una respuesta con sentido.',

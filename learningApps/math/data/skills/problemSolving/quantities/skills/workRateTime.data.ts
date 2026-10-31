@@ -11,6 +11,7 @@ export const workRateTime_Skill_Data = buildSkillConfig({
     ka: 'შრომის ნაყოფიერების, დროისა და სამუშაოს მოცულობის კავშირი',
     kk: 'Өнімділік, уақыт және жұмыс көлемі арасындағы байланыс',
     en: 'Relating work rate, time and output',
+    qm: 'İş tezligi, vaqıt ve netice arasındaki bağlılıq',
     zh: '联系工作效率、时间与工作量',
     hi: 'कार्य दर, समय और कार्य में संबंध',
     es: 'Relacionar ritmo de trabajo, tiempo y producción',
@@ -38,6 +39,7 @@ export const workRateTime_Skill_Data = buildSkillConfig({
       'At a constant work rate, the amount of completed work equals rate multiplied by elapsed time. Units must be consistent, and the formula does not directly model varying rates without an additional assumption or model.',
     frontend: {
       en: 'You can relate a steady work rate, elapsed time, and completed work: multiplying the rate by time gives the amount done when the rate stays constant.',
+      qm: 'Bir türlü iş tezligini, keçken vaqıtnı ve yapılğan iş miqdarını bir-birine bağla. Tezlik deñişmese, onı vaqıtqa arttırıp yapılğan işniñ miqdarını taparsıñ.',
       zh: '你能联系恒定的工作速度、经过的时间和完成的工作量：速度不变时，速度乘时间就是工作量。',
       hi: 'आप स्थिर कार्य-दर, बीते समय और किए गए काम का संबंध समझ सकते हैं: दर स्थिर हो तो दर को समय से गुणा करने पर काम की मात्रा मिलती है।',
       es: 'Puedes relacionar un ritmo de trabajo constante, el tiempo transcurrido y el trabajo realizado: multiplicar el ritmo por el tiempo da la cantidad de trabajo.',
