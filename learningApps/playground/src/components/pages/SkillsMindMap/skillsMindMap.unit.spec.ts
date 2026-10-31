@@ -1,48 +1,34 @@
 import { describe, expect, it } from 'vitest';
 import {
-  expandableSkillIds,
-  fitMindMapZoom,
-  fitVisibleSkillNodes,
-  flattenSkillNodes,
-  layoutSkillMindMap,
-  mockSkillMastery,
-  skillLearningHref,
-  parseSkillsDomain,
-  parseSkillsManifest,
+  assemblePublishedSkillNode, expandableSkillIds,
+  fitMindMapZoom, fitVisibleSkillNodes, flattenSkillNodes,
+  layoutSkillMindMap, mockSkillMastery, skillLearningHref,
+  parsePublishedSkillMeta, parsePublishedSkillCopy,
 } from './skillsMindMap.utils';
-import type { SkillNode } from './skillsMindMap.utils';
+import type { SkillNode, SkillNodeKind } from './skillsMindMap.utils';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
-const skill = (n: number, slug: string) => ({
-  id: uuid(n), slug, collection: 'skill', name: slug, description: 'About ' + slug,
-});
-const fixture = {
-  id: uuid(1), slug: 'testColors', collection: 'skillDomain', name: 'Colors', language: 'en',
-  groups: [
-    {
-      id: uuid(2), slug: 'warm', collection: 'skillGroup', name: 'Warm',
-      skills: [skill(3, 'red'), skill(4, 'orange')],
-    },
-    {
-      id: uuid(5), slug: 'cool', collection: 'skillGroup', name: 'Cool',
-      skills: [skill(6, 'blue'), skill(7, 'green')],
-    },
-  ],
-};
 
-const sample = (): SkillNode => parseSkillsDomain(fixture, 'en', 'testColors');
+function node(n: number, slug: string, kind: SkillNodeKind, children: SkillNode[] = []): SkillNode {
+  const groups = children.filter(child => child.kind === 'skillGroup').map(child => child.slug);
+  const skills = children.filter(child => child.kind === 'skill').map(child => child.slug);
+  const rawMeta = { id: uuid(n), collection: kind,
+    ...(kind === 'skillDomain' && groups.length ? { groups } : {}),
+    ...(kind !== 'skill' && skills.length ? { skills } : {}) };
+  const meta = parsePublishedSkillMeta(rawMeta, kind);
+  const copy = parsePublishedSkillCopy(
+    { name: slug, ...(kind === 'skill' ? { description: 'About ' + slug } : {}) },
+    kind);
+  return assemblePublishedSkillNode(meta, copy, slug, children);
+}
 
-describe('Skills mind map publishing contract', () => {
-  it('reads the catalog manifest and keeps languages separate from domain data', () => {
-    expect(parseSkillsManifest({ version: 1, languages: ['en', 'uk'], domains: ['testColors'] }))
-      .toEqual({ version: 1, languages: ['en', 'uk'], domains: ['testColors'] });
-    expect(() => parseSkillsManifest({ version: 2, languages: ['en'], domains: ['testColors'] }))
-      .toThrow(/версія/);
-    expect(() => parseSkillsManifest({ version: 1, languages: ['en', 'en'], domains: ['testColors'] }))
-      .toThrow(/повторювані/);
-  });
+const sample = (): SkillNode => node(1, 'testColors', 'skillDomain', [
+  node(2, 'warm', 'skillGroup', [node(3, 'red', 'skill'), node(4, 'orange', 'skill')]),
+  node(5, 'cool', 'skillGroup', [node(6, 'blue', 'skill'), node(7, 'green', 'skill')]),
+]);
 
-  it('parses a Domain → Group → Skill tree from one localized JSON resource', () => {
+describe('Skills split published data contract', () => {
+  it('reconstructs a Domain-Group-Skill tree without a manifest or nested entity copies', () => {
     const domain = sample();
     expect(domain.children).toHaveLength(2);
     expect(domain.children[0].children).toHaveLength(2);
@@ -50,45 +36,45 @@ describe('Skills mind map publishing contract', () => {
     expect(expandableSkillIds([domain])).toEqual([uuid(1), uuid(2), uuid(5)]);
   });
 
-  it('does not fall back on unsupported languages, missing translations or malformed content', () => {
-    expect(() => parseSkillsDomain(fixture, 'uk', 'testColors')).toThrow(/мова/);
-    expect(() => parseSkillsDomain(fixture, 'en', 'wrongDomain')).toThrow(/адреса/);
-    const malformed = { ...fixture, groups: [{ ...fixture.groups[0], skills: [{ ...skill(3, 'red'), name: { uk: 'Червоний' } }] }] };
-    expect(() => parseSkillsDomain(malformed, 'en', 'testColors')).toThrow(/Некоректне поле/);
+  it('separates identity and collection from localized name and description', () => {
+    const metadata = parsePublishedSkillMeta({ id: uuid(3), collection: 'skill' }, 'skill');
+    const localized = parsePublishedSkillCopy({ name: 'Red', description: 'Recognize red.' }, 'skill');
+    expect(assemblePublishedSkillNode(metadata, localized, 'red', [])).toEqual({
+      id: uuid(3), slug: 'red', kind: 'skill',
+      name: 'Red', description: 'Recognize red.', children: [],
+    });
   });
 
-  it('supports Groups and direct Skills coexisting in one Domain', () => {
-    const mixed = {
-      ...fixture,
-      skills: [skill(8, 'violet')],
-    };
-    const parsed = parseSkillsDomain(mixed, 'en', 'testColors');
-    expect(parsed.children.map(node => node.kind))
-      .toEqual(['skillGroup', 'skillGroup', 'skill']);
-    expect(parsed.children.at(-1)?.slug).toBe('violet');
-    expect(flattenSkillNodes([parsed])).toHaveLength(8);
+  it('rejects metadata/localization duplication, missing data and wrong entity types', () => {
+    expect(() => parsePublishedSkillMeta({ id: uuid(1), collection: 'skill', slug: 'red' }, 'skill'))
+      .toThrow(/Зайві поля/);
+    expect(() => parsePublishedSkillMeta({ id: uuid(1), collection: 'skill' }, 'skillDomain'))
+      .toThrow(/Collection/);
+    expect(() => parsePublishedSkillMeta({ id: uuid(1), collection: 'skillGroup', skills: [] }, 'skillGroup'))
+      .toThrow(/Порожня група/);
+    expect(() => parsePublishedSkillCopy({ name: 'Red', language: 'en', description: 'red' }, 'skill'))
+      .toThrow(/Зайві поля/);
+    expect(() => parsePublishedSkillCopy({ name: 'Red' }, 'skill'))
+      .toThrow(/фронтенд-опису/);
+    expect(() => parsePublishedSkillCopy({ name: { en: 'Red' }, description: 'red' }, 'skill'))
+      .toThrow(/Некоректне поле/);
   });
 
-  it('rejects obsolete IDs, missing slugs and missing frontend Skill descriptions', () => {
-    expect(() => parseSkillsDomain({ ...fixture, groupIds: { old: uuid(2) } }, 'en', 'testColors'))
-      .toThrow(/ID-посилання/);
-    expect(() => parseSkillsDomain({ ...fixture, groups: [{ ...fixture.groups[0], skillIds: {} }] }, 'en', 'testColors'))
-      .toThrow(/ID-посилання/);
-    expect(() => parseSkillsDomain({
-      ...fixture, groups: [{ ...fixture.groups[0], skills: [{ ...skill(3, 'red'), slug: undefined }] }],
-    }, 'en', 'testColors')).toThrow(/slug/);
-    expect(() => parseSkillsDomain({
-      ...fixture, groups: [{ ...fixture.groups[0], skills: [{ ...skill(3, 'red'), description: undefined }] }],
-    }, 'en', 'testColors')).toThrow(/фронтенд-опису/);
+  it('supports direct Skills alongside grouped Skills in one Domain', () => {
+    const groups = sample().children;
+    const mixed = node(8, 'mixed', 'skillDomain', [...groups, node(9, 'violet', 'skill')]);
+    expect(mixed.children.map(child => child.kind)).toEqual(['skillGroup', 'skillGroup', 'skill']);
+    expect(flattenSkillNodes([mixed])).toHaveLength(8);
   });
 
-  it('supports direct Skills without groups', () => {
-    const direct = {
-      id: uuid(10), slug: 'simple', collection: 'skillDomain', name: 'Simple', language: 'en',
-      skills: [skill(11, 'red')],
-    };
-    const node = parseSkillsDomain(direct, 'en', 'simple');
-    expect(node.children.map(item => item.kind)).toEqual(['skill']);
+  it('rejects child slug mismatches rather than inferring content from incorrect paths', () => {
+    const meta = parsePublishedSkillMeta({
+      id: uuid(1), collection: 'skillDomain', groups: ['warm'],
+    }, 'skillDomain');
+    expect(() => assemblePublishedSkillNode(meta, { name: 'Colors' }, 'colors', []))
+      .toThrow(/структура/);
+    expect(() => assemblePublishedSkillNode(meta, { name: 'Colors' }, 'colors', [node(3, 'wrong', 'skill')]))
+      .toThrow(/структура/);
   });
 });
 
