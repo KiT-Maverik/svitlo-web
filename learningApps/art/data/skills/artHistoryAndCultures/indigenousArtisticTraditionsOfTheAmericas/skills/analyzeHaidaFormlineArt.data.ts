@@ -37,7 +37,7 @@ export const analyzeHaidaFormlineArt_Skill_Data = buildSkillConfig({
   description: {
     methodological: "Examine the formal relationships of ovoids, U-forms and negative space in works connected to Haida visual conventions and cultural contexts.",
     frontend: {
-      en: "Examine the shapes and negative space in Haida formline art within its cultural context.",
+      en: "Examine the shapes and spatial patterns of Haida formline art in cultural context.",
       zh: "了解海达艺术如何运用形状与负空间，并结合其文化背景进行观察。",
       hi: "हैडा फॉर्मलाइन कला में आकृतियों और रिक्त स्थान को सांस्कृतिक संदर्भ में देखें।",
       es: "Examina las formas y el espacio negativo del arte haida en su contexto cultural.",
