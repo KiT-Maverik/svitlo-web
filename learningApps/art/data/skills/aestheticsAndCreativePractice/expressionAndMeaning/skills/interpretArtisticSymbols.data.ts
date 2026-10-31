@@ -60,7 +60,7 @@ export const interpretArtisticSymbols_Skill_Data = buildSkillConfig({
           "et": "Otsi vihjeid, mis aitavad selgitada kunstilise sümboli võimalikku tähendust.",
           "be": "Шукайце падказкі, якія дапамагаюць растлумачыць магчымы сэнс мастацкага сімвала.",
           "ka": "მოძებნეთ მინიშნებები, რომლებიც მხატვრული სიმბოლოს შესაძლო მნიშვნელობის ახსნაში დაგეხმარებათ.",
-          "kk": "Көркемдік нышанның ықтимал мағынасын түсіндіруге көмектесетін белгілерді іздеңіз."
+          "kk": "Көркемдік нышанның ықтимал мағынасын түсіндіруге көмектесетін белгілерді іздеңіз.",
     
       qm: "Sanat remiziniñ ne mananı bildire bilecegini añlatmağa yardım etken işaretlerni izleştiñiz.",} },
 });
