@@ -11,6 +11,7 @@ export const lightSpeedInWater_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.lightSpeedInWater.content, {
       en: 'How does the speed of light change in water compared with a vacuum?',
+      qm: "Vakuumğa nisbeten suvda yarıqnıñ sürati nasıl deñişe?",
         lt: "Kaip pasikeičia šviesos greitis vandenyje, palyginti su vakuumu?",
         lv: "Kā gaismas ātrums mainās ūdenī, salīdzinot ar vakuumu?",
         et: "Kuidas valguse kiirus vees vaakumiga võrreldes muutub?",
@@ -42,6 +43,7 @@ export const lightSpeedInWater_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.lightSpeedInWater.explanation, {
     en: 'Light travels more slowly in water than in a vacuum.',
+    qm: "Yarıq suvda vakuumğa nisbeten yavaşraq yayıla.",
       lt: "Vandenyje šviesa sklinda lėčiau nei vakuume.",
       lv: "Ūdenī gaisma izplatās lēnāk nekā vakuumā.",
       et: "Vees levib valgus aeglasemalt kui vaakumis.",
@@ -76,6 +78,7 @@ export const lightSpeedInWater_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.lightSpeedInWater.correct, {
       en: 'It decreases.',
+      qm: "Azaya.",
         lt: "Sumažėja.",
         lv: "Samazinās.",
         et: "Väheneb.",
@@ -107,6 +110,7 @@ export const lightSpeedInWater_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.lightSpeedInWater.incorrectFirst, {
         en: 'It increases.',
+        qm: "Arta.",
           lt: "Padidėja.",
           lv: "Palielinās.",
           et: "Suureneb.",
@@ -139,6 +143,7 @@ export const lightSpeedInWater_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.lightSpeedInWater.incorrectSecond, {
         en: 'It does not change.',
+        qm: "Deñişmey.",
           lt: "Nepasikeičia.",
           lv: "Nemainās.",
           et: "Ei muutu.",

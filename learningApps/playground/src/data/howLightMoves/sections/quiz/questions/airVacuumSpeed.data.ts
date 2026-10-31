@@ -11,6 +11,7 @@ export const airVacuumSpeed_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.airVacuumSpeed.content, {
       en: 'Is the speed of light the same in air and in a vacuum?',
+      qm: "Yarıq avada ve vakuumda aynı süratnen yayılamı?",
         lt: "Ar šviesos greitis ore ir vakuume yra vienodas?",
         lv: "Vai gaismas ātrums gaisā un vakuumā ir vienāds?",
         et: "Kas valguse kiirus õhus ja vaakumis on sama?",
@@ -42,6 +43,7 @@ export const airVacuumSpeed_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.airVacuumSpeed.explanation, {
     en: 'Light travels slightly slower in air than in a vacuum.',
+    qm: "Yarıq avada vakuumğa nisbeten biraz yavaşraq yayıla.",
       lt: "Ore šviesa sklinda šiek tiek lėčiau nei vakuume.",
       lv: "Gaisā gaisma izplatās nedaudz lēnāk nekā vakuumā.",
       et: "Õhus levib valgus veidi aeglasemalt kui vaakumis.",
@@ -76,6 +78,7 @@ export const airVacuumSpeed_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.airVacuumSpeed.correct, {
       en: 'No, it is slightly slower in air.',
+      qm: "Yoq, avada biraz yavaşraq yayıla.",
         lt: "Ne, ore ji sklinda šiek tiek lėčiau.",
         lv: "Nē, gaisā tas ir nedaudz mazāks.",
         et: "Ei, õhus on see veidi väiksem.",
@@ -107,6 +110,7 @@ export const airVacuumSpeed_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.airVacuumSpeed.incorrectFirst, {
         en: 'Yes, it is exactly the same.',
+        qm: "Ebet, sürati tam aynı.",
           lt: "Taip, jis visiškai vienodas.",
           lv: "Jā, tas ir tieši vienāds.",
           et: "Jah, kiirus on täpselt sama.",
@@ -139,6 +143,7 @@ export const airVacuumSpeed_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.airVacuumSpeed.incorrectSecond, {
         en: 'No, it is twice as fast in air.',
+        qm: "Yoq, avada eki qat tez yayıla.",
           lt: "Ne, ore ji sklinda dvigubai greičiau.",
           lv: "Nē, gaisā tas ir divreiz lielāks.",
           et: "Ei, õhus on see kaks korda suurem.",

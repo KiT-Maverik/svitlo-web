@@ -612,6 +612,34 @@ const kk = {
   notes: { caption: "Анимация едәуір баяулатылған, бірақ жылдамдықтардың қатынасы сақталған. Ауа мен вакуумның көрінісі дерлік бірдей. Нүктенің қайтуы тек модельді қайталайды, шағылуды көрсетпейді. Көрінетін жарыққа арналған мәндер жуық және жағдайға байланысты өзгереді.", model: "Модель: v = c / n.", sourceLink: "Сыну көрсеткішінің мәндері: OpenStax" },
 } satisfies Practice_Locale;
 
+/** Crimean Tatar (qm, crh-Latn-UA); native-speaker review recommended. */
+const qm = {
+  header: {
+    eyebrow: 'KEŞF ET · TEÑEŞTİR · KÖZET',
+    title: 'Bir yarıq. Çeşit ortamlar.',
+    description:
+      'Ortamnı deñiştir ve yarıqnıñ aynı mesafeni keçmesine ne qadar vaqt ketkenini teñeşdir. Noqta menbadan ekranğa ve keri tekrarlanğan areket ete.',
+  },
+  selector: { label: 'Yarıqnıñ yayılma ortamı', media: { vacuum: 'Vakuum', air: 'Ava', water: 'Suv' } },
+  simulation: {
+    trackPrefix: 'Yarıqnıñ yayılma modeli: ',
+    source: 'Menba',
+    screen: 'Ekran',
+    play: 'Başlat',
+    pause: 'Toqtat',
+    speedUnit: 'km/s',
+  },
+  insight: {
+    quote: '“Yarıqnıñ sürati ortamğa bağlı: suvda yarıq vakuumğa nisbeten yavaşraq yayıla.”',
+  },
+  notes: {
+    caption:
+      'Animatsiya pek yavaşlatılğan, amma süratlerniñ nisbetleri saqlanğan. Ava ve vakuum bir-birine yaqın körüne. Keri areket tek modelni tekrarlamaq içündir, aks etüvni köstermey. Qiymetler közge körüngen yarıq içün taqribiy olup, şartlarğa köre deñişe.',
+    model: 'Model: v = c / n.',
+    sourceLink: 'Sındıruv köstergici qiymetleri: OpenStax',
+  },
+} satisfies Practice_Locale;
+
 export const locales = {
   en,
   zh,
@@ -635,5 +663,5 @@ export const locales = {
   he,
   pl,
   uk,
-  lt, lv, et, be, ka, kk,
+  lt, lv, et, be, ka, kk, qm,
 } satisfies Record<DefaultSupportedLanguage['language'], Practice_Locale>;

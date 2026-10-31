@@ -383,6 +383,22 @@ const kk = {
   ],
 } satisfies TheoryKnowledgeCheckpoint_Locale;
 
+/** Crimean Tatar (qm, crh-Latn-UA); native-speaker review recommended. */
+const qm = {
+  title: 'Añlatıp baq',
+  items: [
+    { question: 'Yarıq menbası saifeniñ qay yerinde?', answer: 'Menba sol tarafta.' },
+    {
+      question: 'Animatsiya süratini deñiştirgende yarıqnıñ yolu deñişemi?',
+      answer: 'İdare tek animatsiya süratini deñiştire; yol doğru sızıq olaraq qala.',
+    },
+    {
+      question: 'Menba ile ekran arasına yarıqnı keçirmegen şey qoysañ ne olur?',
+      answer: 'Böyle şey yarıqnıñ bir qısmını toqtata ve artında kölge peyda ete.',
+    },
+  ],
+} satisfies TheoryKnowledgeCheckpoint_Locale;
+
 export const locales = {
   en,
   zh,
@@ -406,5 +422,5 @@ export const locales = {
   he,
   pl,
   uk,
-  lt, lv, et, be, ka, kk,
+  lt, lv, et, be, ka, kk, qm,
 } satisfies Record<DefaultSupportedLanguage['language'], TheoryKnowledgeCheckpoint_Locale>;

@@ -68,7 +68,7 @@ for (const [label, manifest] of [['Mathematics textbook', math], ['Playground', 
   assert(manifest.dependencies?.[engine.name] === engine.version, label + ' must use public Engine dependency');
   assert(manifest.dependencies?.[uiKit.name] === uiKit.version, label + ' must use public UI Kit dependency');
 }
-assert(existsSync(resolve(root, 'learningApps/math/src/data/skillsTaxonomy')), 'Math textbook is missing its domain content');
+assert(existsSync(resolve(root, 'learningApps/math/data/skills')), 'Math textbook is missing its canonical Skills taxonomy');
 assert(existsSync(resolve(root, 'learningApps/math/docs')), 'Math textbook is missing package-local educational docs');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/math')), 'Playground cannot own mathematics skills taxonomy');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/content')), 'Playground cannot contain authored textbook content');
@@ -93,7 +93,7 @@ assert(existsSync(resolve(root, 'shared/engine/src/data/assessmentMethodTaxonomy
 assert(!existsSync(resolve(root, 'learningApps/math/src/data/assessmentMethodTaxonomy')), 'Math must not own shared Assessment Method Taxonomy');
 assert(!existsSync(resolve(root, 'learningApps/math/src/utils')), 'Math utility duplicates must be removed after extraction');
 assert(!existsSync(resolve(root, 'learningApps/playground/src/utils')), 'Playground utility duplicates must be removed after extraction');
-assert(existsSync(resolve(root, 'learningApps/math/src/data/skillsTaxonomy/__tests__/arithmeticTaxonomy.spec.ts')), 'Subject-specific Math taxonomy checks must stay with Math');
+assert(existsSync(resolve(root, 'learningApps/math/data/skills/index.ts')), 'Math textbook must export its canonical Skills taxonomy');
 assert(existsSync(resolve(root, 'shared/engine/src/utils/createLocalizedFileLocations/createLocalizedFileLocations.spec.ts')), 'Engine must own shared locale path tests');
 assert(existsSync(resolve(root, 'shared/engine/src/utils/builders/config/buildSkillCatalogConfig.spec.ts')), 'Engine must own shared skill builder tests');
 assert(engine.exports?.['./assessment-methods']?.default === './dist/assessment-methods.js', 'Engine must publicly export shared Assessment Methods');

@@ -29,7 +29,7 @@ describe('Extended locale resource coverage', () => {
   });
 
   it('includes six translations in every authored math taxonomy config', () => {
-    const files = collectFiles(join(root, 'src/data/skillsTaxonomy'))
+    const files = collectFiles(join(root, 'data/skills'))
       .filter(file => file.endsWith('.data.ts') && !file.endsWith('index.data.ts'));
     // Locale coverage follows the authored Code inventory. The number of Skills
     // changes during approved taxonomy reviews, so a fixed total is not a
@@ -42,6 +42,15 @@ describe('Extended locale resource coverage', () => {
         expect(countLanguageEntries(source, language), `${file}: missing ${language}`).toBeGreaterThanOrEqual(1);
       }
     }
+  });
+
+  it('supports the Crimean Tatar learner interface without locale fallback', () => {
+    const locale = 'crh-Latn-UA';
+    expect(DEFAULT_SUPPORTED_LANGUAGES.find(item => item.locale === locale)?.language).toBe('qm');
+    expect(getLearningLayoutMessages(locale).navigation.top).toBe('Oquvnıñ yuqarı navigatsiyası');
+    expect(getNavbarPreferencesMessages(locale).language).toBe('Til');
+    const source = readFileSync(join(root, 'src/components/pages/Lesson/locales', `${locale}.ts`), 'utf8');
+    expect(source).toContain('export const locale');
   });
 
   it('provides locale dictionaries for the learner interface and lesson UI', () => {

@@ -11,6 +11,7 @@ export const opaqueObjectShadow_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.opaqueObjectShadow.content, {
       en: 'What forms behind an opaque object that blocks light?',
+      qm: "Yarıqnı keçirmegen bir şeyniñ artında ne peyda ola?",
         lt: "Kas susidaro už nepermatomo daikto, kuris užstoja šviesą?",
         lv: "Kas veidojas aiz necaurspīdīga priekšmeta, kas aiztur gaismu?",
         et: "Mis tekib valguse ette jääva läbipaistmatu eseme taha?",
@@ -42,6 +43,7 @@ export const opaqueObjectShadow_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.opaqueObjectShadow.explanation, {
     en: 'A shadow forms behind an opaque object.',
+    qm: "Yarıqnı keçirmegen şeyniñ artında kölge peyda ola.",
       lt: "Už nepermatomo daikto susidaro šešėlis.",
       lv: "Aiz necaurspīdīga priekšmeta veidojas ēna.",
       et: "Läbipaistmatu eseme taha tekib vari.",
@@ -76,6 +78,7 @@ export const opaqueObjectShadow_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.opaqueObjectShadow.correct, {
       en: 'A shadow.',
+      qm: "Kölge.",
         lt: "Šešėlis.",
         lv: "Ēna.",
         et: "Vari.",
@@ -107,6 +110,7 @@ export const opaqueObjectShadow_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.opaqueObjectShadow.incorrectFirst, {
         en: 'A new light source.',
+        qm: "Yañı yarıq menbası.",
           lt: "Naujas šviesos šaltinis.",
           lv: "Jauns gaismas avots.",
           et: "Uus valgusallikas.",
@@ -139,6 +143,7 @@ export const opaqueObjectShadow_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.opaqueObjectShadow.incorrectSecond, {
         en: 'A vacuum.',
+        qm: "Vakuum.",
           lt: "Vakuumas.",
           lv: "Vakuums.",
           et: "Vaakum.",
