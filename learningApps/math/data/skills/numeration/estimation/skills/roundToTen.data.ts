@@ -11,6 +11,7 @@ export const roundToTen_Skill_Data = buildSkillConfig({
     ka: 'უახლოეს ათეულამდე დამრგვალება',
     kk: 'Ең жақын ондыққа дейін дөңгелектеу',
     en: 'Rounding to the nearest ten',
+    qm: 'Eñ yaqın onluqqa yuvarlaqlav',
     zh: '四舍五入到最接近的十',
     hi: 'निकटतम दहाई तक पूर्णांकन',
     es: 'Redondeo a la decena más cercana',
@@ -38,6 +39,7 @@ export const roundToTen_Skill_Data = buildSkillConfig({
       'Rounding to the nearest ten replaces a value with the closest multiple of ten, comparing distances to neighboring tens. An exact halfway case needs an agreed tie-breaking convention.',
     frontend: {
       en: 'Find the nearest multiple of ten by comparing distances to the tens on either side. Exactly halfway requires a rounding rule.',
+      qm: 'Sayınıñ eki yanındaki onluqlarğa qadar mesafesini qıyaslap eñ yaqın onluqnı tap. Tam ortada qalsa, yuvarlaqlav qaidesi kerek.',
       zh: '比较一个数与相邻两个整十数的距离，找出最近的整十数。正好在中间时需要约定规则。',
       hi: 'पास की दोनों दहाइयों से दूरी देखकर निकटतम दहाई चुनें। ठीक आधे पर एक तय नियम चाहिए।',
       es: 'Encuentra la decena más cercana comparando distancias a las decenas vecinas. Si está justo a mitad, se necesita una regla.',
