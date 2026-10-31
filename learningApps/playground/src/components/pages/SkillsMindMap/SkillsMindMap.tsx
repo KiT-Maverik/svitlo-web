@@ -85,6 +85,7 @@ export function SkillsMindMap() {
   const [status, setStatus] = useState<LoadingStatus>('loading');
   const [error, setError] = useState('');
   const [collapsed, setCollapsed] = useState<Set<string>>(() => new Set());
+  const [rootCollapsed, setRootCollapsed] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [listView, setListView] = useState(false);
   const [zoom, setZoom] = useState(0.65);
@@ -162,7 +163,7 @@ export function SkillsMindMap() {
   const allNodes = useMemo(() => flattenSkillNodes(domains), [domains]);
   const selectable = useMemo(() => new Map(allNodes.map(node => [node.id, node])), [allNodes]);
   const selected = selectedId ? selectable.get(selectedId) : null;
-  const layout = useMemo(() => layoutSkillMindMap(domains, collapsed), [domains, collapsed]);
+  const layout = useMemo(() => layoutSkillMindMap(rootCollapsed ? [] : domains, collapsed), [domains, collapsed, rootCollapsed]);
   const expandableIds = useMemo(() => expandableSkillIds(domains), [domains]);
 
   useEffect(() => {
@@ -182,11 +183,10 @@ export function SkillsMindMap() {
       });
     }
   };
-  const collapseAll = () => setCollapsed(new Set(expandableIds));
-  const expandAll = () => setCollapsed(new Set());
+  const collapseAll = () => { setRootCollapsed(true); setCollapsed(new Set(expandableIds)); };
+  const expandAll = () => { setRootCollapsed(false); setCollapsed(new Set()); };
   const toggleFromProfile = () => {
-    if (expandableIds.length > 0 && expandableIds.every(id => collapsed.has(id))) expandAll();
-    else collapseAll();
+    setRootCollapsed(value => !value);
     setSelectedId(null);
   };
   const resetView = () => {
@@ -225,7 +225,8 @@ export function SkillsMindMap() {
   const totalDomains = domains.length;
   const totalGroups = allNodes.filter(node => node.kind === 'skillGroup').length;
   const totalSkills = allNodes.filter(node => node.kind === 'skill').length;
-  const profileIsExpanded = expandableIds.some(id => !collapsed.has(id));
+  const profileIsExpanded = !rootCollapsed && domains.length > 0;
+  const textDirection = language === 'ar' || language === 'he' || language === 'ur' ? 'rtl' : 'ltr';
 
   return (
     <Box className={styles.root}>
@@ -288,7 +289,7 @@ export function SkillsMindMap() {
                 <AccountCircleRoundedIcon fontSize="large" /> Учень
                 <span>{profileIsExpanded ? '−' : '+'}</span>
               </button>
-              <SkillOutline nodes={domains} collapsed={collapsed} selectedId={selectedId} onNodeClick={onNodeClick} />
+              {!rootCollapsed && <SkillOutline nodes={domains} collapsed={collapsed} selectedId={selectedId} onNodeClick={onNodeClick} />}
             </section>
           ) : (
             <section className={styles.mapFrame} aria-label="Радіальна мапа навичок">
@@ -333,7 +334,7 @@ export function SkillsMindMap() {
                           (children ? node.expanded ? '. Згорнути' : '. Розгорнути' : '')}
                         data-testid={'skill-node-' + node.slug}>
                         <span className={styles.nodeKind}>{KIND_LABELS[node.kind]}</span>
-                        <span className={styles.nodeName}>{node.name}</span>
+                        <span className={styles.nodeName} lang={language ?? undefined} dir={textDirection}>{node.name}</span>
                         {children > 0 && <span className={styles.nodeCount}>
                           {children} {node.expanded ? '−' : '+'}
                         </span>}
@@ -357,8 +358,8 @@ export function SkillsMindMap() {
             {selected ? (
               <>
                 <span className={styles.detailEyebrow}>{KIND_LABELS[selected.kind]}</span>
-                <h2>{selected.name}</h2>
-                {selected.description && <p>{selected.description}</p>}
+                <h2 lang={language ?? undefined} dir={textDirection}>{selected.name}</h2>
+                {selected.description && <p lang={language ?? undefined} dir={textDirection}>{selected.description}</p>}
                 <span className={styles.detailMeta}>
                   {selected.children.length ? 'Безпосередніх нащадків: ' + selected.children.length : 'Окрема навичка'}
                 </span>
