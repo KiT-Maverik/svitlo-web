@@ -5,7 +5,7 @@ import {StringObjectToLocale} from "../../transformer.types";
 
 type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['practice']>;
 
-export const meta = {
+export const practice: Locale = {
   name: {
     en: 'Practice',
     qm: 'Ameliyat',
@@ -68,13 +68,7 @@ export const meta = {
     pl: 'Porównaj prędkość światła w próżni, powietrzu i wodzie.',
     uk: 'Порівняй швидкість світла у вакуумі, повітрі та воді.',
   },
-} as const;
-
-export const scene = {
-  showcase,
-} as const;
-
-export const practice: Locale = {
-  ...meta,
-  showcase,
+  scene:{
+    showcase,
+  }
 } as const;
