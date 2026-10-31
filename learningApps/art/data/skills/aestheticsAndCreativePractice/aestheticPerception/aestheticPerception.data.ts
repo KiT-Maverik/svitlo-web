@@ -33,6 +33,6 @@ export const aestheticPerception_SkillGroup_Data = buildSkillGroupConfig({
           "et": "Pane tähele, kuidas erinevad kogemused ja ootused kujundavad meie reaktsiooni kunstile.",
           "be": "Звяртайце ўвагу, як розны досвед і чаканні фарміруюць нашу рэакцыю на мастацтва.",
           "ka": "დააკვირდით, როგორ აყალიბებს განსხვავებული გამოცდილება და მოლოდინები ჩვენს რეაქციას ხელოვნებაზე.",
-          "kk": "Figyelje meg, hogyan alakítják a különböző tapasztalatok és elvárások a művészetre adott reakcióinkat。"
+          "kk": "Әртүрлі тәжірибе мен күту өнерге деген көзқарасымызды қалай қалыптастыратынын байқаңыз."
     } },
 });
