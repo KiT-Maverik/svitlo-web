@@ -1,21 +1,8 @@
 import { buildLessonSectionConfig } from '@svitlo/engine/builders';
-import { theory_MarkdownResources_Data } from './resources/markdown/index.data';
-import { theory_SceneResources_Data } from './resources/scenes/index.data';
-import { name_TextResource_Data } from './resources/text/index.data';
-import { theory_Section_Ids } from './theory.ids';
-import { howLightMoves_Lesson_Ids } from '../../howLightMoves.ids';
+import {theory_Scenes} from './scenes/scenes.data';
 
 export const theory_Section_Data = buildLessonSectionConfig({
-  id: theory_Section_Ids.theory,
-  lessonId: howLightMoves_Lesson_Ids.howLightMoves,
-  name: name_TextResource_Data,
+  id: '32376510-b49a-5da8-91d7-e13cf162c9f9',
   skippable: false,
-  content: [
-    theory_MarkdownResources_Data.introduction,
-    theory_SceneResources_Data.lightRayDiagram,
-    theory_MarkdownResources_Data.continuation,
-    theory_SceneResources_Data.lightPropagationSimulation,
-    theory_MarkdownResources_Data.conclusion,
-    theory_SceneResources_Data.theoryCheckpoint,
-  ],
+  content: theory_Scenes,
 });

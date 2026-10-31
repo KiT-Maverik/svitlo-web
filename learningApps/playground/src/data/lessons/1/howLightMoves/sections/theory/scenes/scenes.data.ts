@@ -5,19 +5,19 @@ import { LightRayDiagram } from './LightRayDiagram/LightRayDiagram';
 import { LightPropagationSimulation } from './LightPropagationSimulation/LightPropagationSimulation';
 import { Checkpoint } from './Checkpoint/Checkpoint';
 
-export const theory_SceneResources_Data = {
+export const theory_Scenes = {
   lightRayDiagram: {
-    id: theory_SceneResources_Ids.lightRayDiagram,
+    id: '5acac9ef-2452-5072-b471-1255d52b4a28',
     blockType: 'scene',
     component: createElement(LightRayDiagram),
   },
   lightPropagationSimulation: {
-    id: theory_SceneResources_Ids.lightPropagationSimulation,
+    id: '1c0b03fd-de9a-50b8-a493-03594337b5a7',
     blockType: 'scene',
     component: createElement(LightPropagationSimulation),
   },
   theoryCheckpoint: {
-    id: theory_SceneResources_Ids.theoryCheckpoint,
+    id: 'cd65e160-da27-57e1-a58f-38b1276c4346',
     blockType: 'scene',
     component: createElement(Checkpoint),
   },
