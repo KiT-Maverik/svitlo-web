@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const developAnArtisticSeries_Skill_Data = buildSkillConfig({
-  slug: "developAnArtisticSeries", id: "374704ad-a86e-40e3-bbce-3c3c7a97a2d2", name: { en: "Develop an Artistic Series" },
+  slug: "developAnArtisticSeries", id: "374704ad-a86e-40e3-bbce-3c3c7a97a2d2", name: {
+    en: "Develop an Artistic Series",
+    zh: "创作系列艺术作品",
+    hi: "कलात्मक शृंखला विकसित करें",
+    es: "Desarrollar una serie artística",
+    ar: "تطوير سلسلة فنية",
+    fr: "Développer une série artistique",
+    bn: "শৈল্পিক ধারাবাহিকতা গড়ে তুলুন",
+    pt: "Desenvolver uma série artística",
+    ur: "فنّی سلسلہ تیار کریں",
+    id: "Mengembangkan Seri Artistik",
+    de: "Eine künstlerische Serie entwickeln",
+    ja: "芸術シリーズを展開する",
+    ko: "예술 연작 발전시키기",
+    tr: "Sanatsal Bir Seri Geliştirmek",
+    vi: "Phát triển một chuỗi tác phẩm nghệ thuật",
+    ta: "கலைத் தொடரை உருவாக்குங்கள்",
+    te: "కళాత్మక శ్రేణిని అభివృద్ధి చేయండి",
+    mr: "कलात्मक मालिकेचा विकास करा",
+    ms: "Mengembangkan Siri Artistik",
+    he: "פיתוח סדרת יצירות אמנות",
+    pl: "Rozwijać serię artystyczną",
+    uk: "Розвивати мистецьку серію",
+    lt: "Plėtoti meno kūrinių seriją",
+    lv: "Veidot mākslas darbu sēriju",
+    et: "Kunstiseeria arendamine",
+    be: "Развіваць мастацкую серыю",
+    ka: "მხატვრული სერიის განვითარება",
+    kk: "Өнер топтамасын дамыту",
+    qm: "Sanat eserleriniñ bir seriyasını inkişaf ettirmek",
+  },
   description: { methodological: "Create related works that sustain a coherent inquiry through selected variations.", frontend: {
           "en": "Create a related set of artworks that explores one idea in different ways.",
           "zh": "创作一组相互关联的作品，以不同方式探索同一个想法。",
@@ -31,5 +61,6 @@ export const developAnArtisticSeries_Skill_Data = buildSkillConfig({
           "be": "Стварыце серыю звязаных твораў, якія па-рознаму даследуюць адну ідэю.",
           "ka": "შექმენით ერთმანეთთან დაკავშირებული ნამუშევრების სერია, რომელიც ერთ იდეას სხვადასხვა გზით იკვლევს.",
           "kk": "Бір идеяны әр қырынан зерттейтін өзара байланысты өнер туындыларының топтамасын жасаңыз."
-    } },
+    
+      qm: "Bir fikirni çeşit türlü yollar ile araştırğan, bir-birine bağlı sanat eserleri toplamasını yaratıñız.",} },
 });
