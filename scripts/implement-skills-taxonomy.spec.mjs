@@ -90,10 +90,18 @@ test('English-only create needs no reviewed translations and keeps locales visib
   assert.match(applied.stdout,/"success":5/);
   const skill=source(f,'geometry/angles/skills/compareAngles.data.ts');
   const domain=source(f,'geometry/geometry.data.ts');
+  const group=source(f,'geometry/angles/angles.data.ts');
+  const directDomain=source(f,'music/music.data.ts');
+  assert.match(domain,/^import \{ buildSkillDomainConfig \} from '@svitlo\/engine\/taxonomy';\n\nimport \{ angles_SkillGroup_Data \} from '\.\/angles\/angles\.data';/);
+  assert.match(group,/^import \{ buildSkillGroupConfig \} from '@svitlo\/engine\/taxonomy';\n\nimport \{ compareAngles_Skill_Data \} from '\.\/skills';/);
+  assert.match(directDomain,/^import \{ buildSkillDomainConfig \} from '@svitlo\/engine\/taxonomy';\n\nimport \{ hearRhythm_Skill_Data \} from '\.\/skills';/);
   assert.match(skill,/en: "Compare Angles"/);
   assert.match(skill,/en: "Explore this topic\."/);
   assert.match(skill,/name: \{\s*en: /);
   assert.match(skill,/frontend: \{\s*en: /);
+  assert.match(skill,/^  name: \{\n    en: "Compare Angles",\n  \},$/m);
+  assert.match(skill,/^    frontend: \{\n      en: "Explore this topic\\.",\n    \},$/m);
+  assert.match(skill,/^import \{ buildSkillConfig \} from '@svitlo\/engine\/taxonomy';\n\nexport const compareAngles_Skill_Data/m);
   assert.doesNotMatch(skill,/["'](?:en|uk)["']\s*:/);
   assert.match(skill,/methodological: "Definition of Compare Angles\."/);
   assert.match(domain,/en: "Geometry"/);
@@ -108,7 +116,9 @@ test('English Markdown updates preserve existing non-English translations withou
   const id=uuid(source(f,p));
   const before=source(f,p);
   f.edit(s=>s.replace('#### Hear Rhythm\n\nSlug: hearRhythm','#### Hear Rhythms\n\nSlug: hearRhythm')
-    .replace('Slug: hearRhythm\nAction: create','Slug: hearRhythm\nAction: update'));
+    .replace('Slug: hearRhythm\nAction: create','Slug: hearRhythm\nAction: update')
+    .replace('Methodological description: Definition of Hear Rhythm.\nUser-friendly description: Explore this topic.',
+      'Methodological description: Definition of Hear Rhythm.\nUser-friendly description: Explore rhythms together.'));
   const r=f.runEnglishOnly('--apply');
   assert.equal(r.status,0,r.stderr);
   const after=source(f,p);
@@ -116,6 +126,9 @@ test('English Markdown updates preserve existing non-English translations withou
   assert.match(after,/en: "Hear Rhythms"/);
   assert.match(after,/uk: "Translated Hear Rhythm uk"/);
   assert.match(after,/uk: "Frontend Hear Rhythm uk"/);
+  assert.match(after,/^    frontend: \{\n      uk: |^      en: "Explore rhythms together\.",/m);
+  assert.match(after,/^      en: "Explore rhythms together\.",$/m);
+  assert.match(after,/^    \},$/m);
   assert.notEqual(after,before);
 }));
 
