@@ -95,3 +95,27 @@ Until Lesson/Program authoring metadata exposes an actual Skill UUID → content
 relationship, the destination shows an explicit empty result instead of linking
 unrelated demo lessons. Add filtered Lessons and Programs only after their
 Skill-ID relationships become available.
+
+## Page-scoped controls in the shared settings sidebar
+
+The `/skills` route creates `SkillsPageSettingsProvider` and renders the existing
+`@svitlo/ui-kit/learning-layout` navbar. Its settings icon opens the ordinary
+right-hand settings Drawer with `SkillsPagePreferences`. A generic
+`settingsContent` slot was added to the shared layout; lesson pages continue
+to use their existing placeholder when this slot is absent. Skills hides the
+lesson-only bottom navigation using `showBottomNavbar={false}`.
+
+Default page settings:
+
+- `showMastery: true` — whether the percentage and mastery bar appear.
+- `colorMastery: true` — whether mastery adds tier tint to compact cards and
+  colors the mastery bar; disables the color option in the sidebar when mastery
+  is hidden, without clearing its stored choice.
+- `showPump: true` — whether expanded Skill cards and outline entries have a
+  learning destination action.
+
+Components consume these values from the **page context** rather than the
+static published Skill Data. Changes update visible cards instantly. Settings
+are intentionally ephemeral and reset on a new page mount; no per-user storage
+is implemented. The navbar's existing locale selector synchronizes with the
+same context, and Domain JSON requests still load only the active language.
