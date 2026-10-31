@@ -19,6 +19,7 @@ export const placeValue_SkillGroup_Data = buildSkillGroupConfig({
   id: '1a31b4c2-458b-4bb4-9228-c735fee263a9',
   name: {
     en: 'Place value',
+    qm: 'Razryad qıymeti',
     lt: 'Skaitmenų vietinė vertė',
     lv: 'Cipara vietas vērtība',
     et: 'Kohaväärtus',
@@ -65,6 +66,7 @@ export const placeValue_SkillGroup_Data = buildSkillGroupConfig({
       'The decimal structure of numbers, place values, exchanges between ones, tens, and hundreds, and equivalent decompositions of the same quantity.',
     frontend: {
       en: 'Understand how digits gain value from their place and how ones, tens, and hundreds can be grouped, exchanged, or split without changing a number.',
+      qm: 'Raqamlarnıñ yerlerine köre qıymetini añla. Birlik, onluq ve yüzlüklerni sayını deñiştirmeden nasıl toparlamaq, alıştırmaq ve parçalamaq mümkün olğanını ögren.',
       zh: '理解数字在不同数位上的值，以及如何在不改变总数的情况下组合、交换或拆分个、十和百。',
       hi: 'समझें कि अंक का स्थान उसका मान कैसे तय करता है और इकाई, दहाई व सैकड़े को बिना मान बदले कैसे बाँट या बदल सकते हैं।',
       es: 'Comprende cómo cambia el valor de una cifra según su posición y cómo agrupar o separar unidades, decenas y centenas sin cambiar el número.',

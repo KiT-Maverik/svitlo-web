@@ -11,6 +11,7 @@ export const regroupPlaceValues_Skill_Data = buildSkillConfig({
     ka: 'თანრიგებს შორის გადაჯგუფება',
     kk: 'Разрядтар арасында қайта топтастыру',
     en: 'Regrouping between place values',
+    qm: 'Razryad birliklerini yañıdan toparlav',
     zh: '数位单位间的换算',
     hi: 'स्थानीय मानों के बीच पुनर्समूहन',
     es: 'Reagrupación entre órdenes posicionales',
@@ -38,6 +39,7 @@ export const regroupPlaceValues_Skill_Data = buildSkillConfig({
       'Equivalent place-value exchanges work in both directions: one hundred equals ten tens and one ten equals ten ones. The total value is preserved across different representations.',
     frontend: {
       en: 'Exchange one hundred for ten tens, or one ten for ten ones, and reverse the exchange without changing the total.',
+      qm: 'Bir yüzlükni on onluqqa ya da bir onluqnı on birlikke alıştırıp, soñra bu alıştırmanı tersine yap. Umumiy miqdar deñişmey.',
       zh: '一百可以换成十个十，一个十可以换成十个一；反过来换也不改变总量。',
       hi: 'एक सैकड़े को दस दहाइयों या एक दहाई को दस इकाइयों में बदलें और उल्टा करें। कुल मान वही रहता है।',
       es: 'Cambia una centena por diez decenas o una decena por diez unidades, y haz el cambio inverso sin alterar el total.',
