@@ -34,6 +34,7 @@ export const colorPractice_SkillGroup_Data = buildSkillGroupConfig({
     be: "Практыка працы з колерам",
     ka: "ფერთა პრაქტიკა",
     kk: "Түспен жұмыс тәжірибесі",
+    qm: "Tüsler üzerinde çalışma",
   },
   skills: {
     buildALimitedPalette: buildALimitedPalette_Skill_Data,
@@ -73,6 +74,7 @@ export const colorPractice_SkillGroup_Data = buildSkillGroupConfig({
       be: "Даведайцеся, як святлата, інтэнсіўнасць і змешванне пігментаў змяняюць суадносіны колераў.",
       ka: "გაიგეთ, როგორ ცვლის ფერებს შორის ურთიერთობას სიმსუბუქე, ინტენსივობა და პიგმენტების შერევა.",
       kk: "Ашықтық, қанықтық және пигменттерді араластыру түстердің өзара қатынасын қалай өзгертетінін үйреніңіз.",
+      qm: "Açıq-qaranqlıq, tüs quveti ve pigmentlerni qarıştırmaq tüsler arasındaki munasebetlerni nasıl deñiştirgenini ögrenüñiz.",
     },
   },
 });
