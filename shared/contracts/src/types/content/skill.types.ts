@@ -11,12 +11,12 @@ export type SkillId = `${string}-${string}-${string}-${string}-${string}`;
 /**
  * Meaning of a Skill, Group or Domain.
  * methodological: canonical English text for the Methodologist and authoring agents.
- * fe: complete frontend text for every supported language when provided. 
+ * frontend: complete frontend text for every supported language when provided. 
  * Authored Skills require it; Groups and Domains may still be migrating.
  */
 export interface SkillDescription_Config {
   methodological: string;
-  fe?: Readonly<Record<LanguageCode, string>>;
+  frontend?: Readonly<Record<LanguageCode, string>>;
 }
 
 export interface Skill_Config {
