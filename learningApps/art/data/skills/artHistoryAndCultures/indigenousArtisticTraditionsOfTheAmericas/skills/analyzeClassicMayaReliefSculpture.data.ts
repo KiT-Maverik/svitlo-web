@@ -37,7 +37,7 @@ export const analyzeClassicMayaReliefSculpture_Skill_Data = buildSkillConfig({
   description: {
     methodological: "Relate figures, glyphic inscriptions and dynastic imagery to specific Classic Maya sites and known historical contexts.",
     frontend: {
-      en: "Explore how figures, inscriptions and royal imagery appear in reliefs at Classic Maya sites.",
+      en: "Read how Maya reliefs use figures, inscriptions and dynastic imagery at particular sites.",
       zh: "了解古典期玛雅遗址的浮雕如何呈现人物、铭文和王权图像。",
       hi: "जानें कि शास्त्रीय माया स्थलों के उत्कीर्ण शिल्प में आकृतियाँ, अभिलेख और राजकीय चित्रण कैसे दिखाई देते हैं।",
       es: "Descubre cómo los relieves de sitios mayas clásicos representan figuras, inscripciones e imágenes dinásticas.",
