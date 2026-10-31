@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const assessCulturalAppropriation_Skill_Data = buildSkillConfig({
-  slug: "assessCulturalAppropriation",
-  id: "b537ef6c-162b-4dc4-bf91-de5836942ab9",
-  name: {
-    en: "Assess Cultural Appropriation",
-  },
-  description: {
-    methodological: "Weigh permission, cultural significance and power relationships when adapting artistic material.",
-    frontend: {
-      en: "Consider cultural meaning, permission and unequal power when using others' traditions.",
-    },
-  },
+  slug: "assessCulturalAppropriation", id: "b537ef6c-162b-4dc4-bf91-de5836942ab9", name: { en: "Assess Cultural Appropriation" },
+  description: { methodological: "Weigh permission, cultural significance and power relationships when adapting artistic material.", frontend: {
+          "en": "Consider cultural meaning, permission and unequal power when using others' traditions.",
+          "zh": "使用他人传统时，考虑其文化意义、许可和权力不平等。",
+          "hi": "दूसरों की परंपराओं का उपयोग करते समय सांस्कृतिक अर्थ, अनुमति और असमान शक्ति पर विचार करें।",
+          "es": "Considera el significado cultural, los permisos y las desigualdades de poder al usar tradiciones ajenas.",
+          "ar": "راعِ المعنى الثقافي والإذن واختلال توازن القوى عند استخدام تقاليد الآخرين.",
+          "fr": "Tenez compte du sens culturel, des autorisations et des rapports de pouvoir inégaux lorsque vous utilisez les traditions d’autrui.",
+          "bn": "অন্যের ঐতিহ্য ব্যবহার করার সময় সাংস্কৃতিক অর্থ, অনুমতি ও ক্ষমতার অসমতা বিবেচনা করুন।",
+          "pt": "Considere o significado cultural, a permissão e as desigualdades de poder ao usar tradições alheias.",
+          "ur": "دوسروں کی روایات استعمال کرتے وقت ثقافتی معنی، اجازت اور طاقت کے عدم توازن پر غور کریں۔",
+          "id": "Pertimbangkan makna budaya, izin, dan ketimpangan kuasa saat menggunakan tradisi orang lain.",
+          "de": "Berücksichtige kulturelle Bedeutung, Zustimmung und Machtungleichgewichte, wenn du Traditionen anderer nutzt.",
+          "ja": "他者の伝統を用いる際は、文化的な意味や許可、力関係の不均衡を考慮します。",
+          "ko": "다른 사람들의 전통을 사용할 때 문화적 의미와 허락, 권력의 불균형을 고려해 보세요.",
+          "tr": "Başkalarının geleneklerini kullanırken kültürel anlamı, izni ve güç eşitsizliklerini dikkate alın.",
+          "vi": "Khi sử dụng truyền thống của người khác, hãy cân nhắc ý nghĩa văn hóa, sự cho phép và chênh lệch quyền lực.",
+          "ta": "பிறரின் மரபுகளைப் பயன்படுத்தும்போது பண்பாட்டு அர்த்தம், அனுமதி, அதிகாரச் சமமின்மை ஆகியவற்றைக் கருத்தில் கொள்ளுங்கள்.",
+          "te": "ఇతరుల సంప్రదాయాలను ఉపయోగించేటప్పుడు సాంస్కృతిక అర్థం, అనుమతి, అధికార అసమానతలను పరిగణించండి.",
+          "mr": "इतरांच्या परंपरा वापरताना सांस्कृतिक अर्थ, परवानगी आणि सत्तेतील असमानता विचारात घ्या.",
+          "ms": "Pertimbangkan makna budaya, kebenaran dan ketidakseimbangan kuasa apabila menggunakan tradisi orang lain.",
+          "he": "התחשבו במשמעות התרבותית, בהרשאה ובפערי הכוח בעת שימוש במסורות של אחרים.",
+          "pl": "Korzystając z cudzych tradycji, uwzględniaj ich znaczenie kulturowe, zgodę i nierówności władzy.",
+          "uk": "Використовуючи чужі традиції, зважайте на культурне значення, дозвіл і нерівність влади.",
+          "lt": "Naudodami kitų tradicijas atsižvelkite į kultūrinę reikšmę, leidimą ir galios nelygybę.",
+          "lv": "Izmantojot citu tradīcijas, ņemiet vērā kultūras nozīmi, atļauju un varas nevienlīdzību.",
+          "et": "Arvesta teiste traditsioonide kasutamisel kultuurilise tähenduse, loa ja võimuerinevustega.",
+          "be": "Выкарыстоўваючы чужыя традыцыі, улічвайце культурнае значэнне, дазвол і няроўнасць улады.",
+          "ka": "სხვების ტრადიციების გამოყენებისას გაითვალისწინეთ კულტურული მნიშვნელობა, ნებართვა და ძალაუფლების უთანასწორობა.",
+          "kk": "Mások hagyományainak felhasználásakor vegye figyelembe a kulturális jelentést, az engedélyt és a hatalmi egyenlőtlenségeket。"
+    } },
 });
