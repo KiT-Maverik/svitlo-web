@@ -73,7 +73,7 @@ export const formsAndPurposes_SkillGroup_Data = buildSkillGroupConfig({
       be: "Дасьледуй шматлікія спосабы, якімі мастацтва перадае думкі, пачуцьці й досьвед.",
       ka: "შეისწავლეთ მრავალი გზა, რომლითაც ხელოვნებას შეუძლია იდეების, გრძნობებისა და გამოცდილების გადმოცემა.",
       kk: "Өнердің ойларды, сезімдер мен тәжірибені жеткізудің сан алуан жолдарын зерттеңіз.",
-      qm: "Sanatnıñ fikirlerni, duyğularnı ve tecrübeler­ni añlatqan çeşit yollarını keşf etiñiz.",
+      qm: "Sanatnıñ fikirlerni, duyğularnı ve tecrübelerni añlatqan çeşit yollarını keşf etiñiz.",
     },
   },
 });
