@@ -64,7 +64,7 @@ export const applyDigitalThreeDimensionalMaterials_Skill_Data = buildSkillConfig
           "et": "Anna digitaalsele objektile soovitud pind tekstuuri, läike ja värvi abil.",
           "be": "Надайце лічбаваму аб’екту патрэбную паверхню з дапамогай тэкстуры, бляску і колеру.",
           "ka": "ციფრულ ობიექტს მიანიჭეთ სასურველი ზედაპირი ტექსტურის, ბზინვარებისა და ფერის გამოყენებით.",
-          "kk": "Цифрлық нысанға текстура, жылтырлық және түс арқылы қалаған беткі көрінісін беріңіз。"
+          "kk": "Цифрлық нысанға текстура, жылтырлық және түс арқылы қалаған беткі көрінісін беріңіз。",
     
       qm: "Raqemiy obyektke tekstura, parıltı ve tüs vastasınen saylanğan yüzeyni beriñiz.",},
   },
