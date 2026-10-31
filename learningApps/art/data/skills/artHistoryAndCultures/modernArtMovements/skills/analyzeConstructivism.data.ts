@@ -37,7 +37,7 @@ export const analyzeConstructivism_Skill_Data = buildSkillConfig({
   description: {
     methodological: "Relate abstract geometry, material experimentation and the ambition to connect art with social production in selected Constructivist practices.",
     frontend: {
-      en: "Explore how Constructivist artists combined geometric forms, experimental materials and ideas about society.",
+      en: "Explore how Constructivist artists connected geometry, materials and social ideas.",
       zh: "了解构成主义艺术家如何结合几何形式、实验材料与社会理念。",
       hi: "जानें कि रचनावादी कलाकारों ने ज्यामितीय रूपों, प्रयोगात्मक सामग्रियों और सामाजिक विचारों को कैसे जोड़ा।",
       es: "Explora cómo los artistas constructivistas combinaron formas geométricas, materiales experimentales e ideas sociales.",
