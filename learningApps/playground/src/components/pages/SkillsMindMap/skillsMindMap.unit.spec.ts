@@ -85,7 +85,7 @@ describe('Skills mind map publishing contract', () => {
   it('supports direct Skills without groups', () => {
     const direct = {
       id: uuid(10), slug: 'simple', collection: 'skillDomain', name: 'Simple', language: 'en',
-      groupIds: undefined, skills: [skill(11, 'red')],
+      skills: [skill(11, 'red')],
     };
     const node = parseSkillsDomain(direct, 'en', 'simple');
     expect(node.children.map(item => item.kind)).toEqual(['skill']);
