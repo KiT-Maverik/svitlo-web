@@ -1,6 +1,8 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
 import { length_SkillGroup_Data } from './length/length.data';
+import { mass_SkillGroup_Data } from './mass/mass.data';
+import { capacity_SkillGroup_Data } from './capacity/capacity.data';
 
 export const measurement_SkillDomain_Data = buildSkillDomainConfig({
   id: '01fcc12a-a71d-4741-a245-e3a4e045f9cd',
@@ -36,6 +38,8 @@ export const measurement_SkillDomain_Data = buildSkillDomainConfig({
   },
   groupIds: {
     length: length_SkillGroup_Data.id,
+    mass: mass_SkillGroup_Data.id,
+    capacity: capacity_SkillGroup_Data.id,
   },
   description: { methodological: "Measurement of physical quantities by comparison with units, instruments, and scales, covering length, mass, capacity, temperature, and consistent use of units." },
 });
