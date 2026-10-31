@@ -3,6 +3,7 @@ import { quiz_TextResources_Ids } from './index.ids';
 
 export const name_TextResource_Data = createTextResource(quiz_TextResources_Ids.name, {
   en: 'Quiz',
+  qm: "Sınav",
   lt: "Testas",
   lv: "Tests",
   et: "Test",
