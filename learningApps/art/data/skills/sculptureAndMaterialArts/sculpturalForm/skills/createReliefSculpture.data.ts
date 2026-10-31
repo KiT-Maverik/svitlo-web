@@ -31,7 +31,7 @@ export const createReliefSculpture_Skill_Data = buildSkillConfig({
     et: "Reljeefskulptuuri loomine",
     be: "Ствараць рэльефную скульптуру",
     ka: "რელიეფური ქანდაკების შექმნა",
-    kk: "Барельеф жасау",
+    kk: "Бедерлі мүсін жасау",
       qm: "Qabarıq heykel yaratmaq",
   },
   description: {
