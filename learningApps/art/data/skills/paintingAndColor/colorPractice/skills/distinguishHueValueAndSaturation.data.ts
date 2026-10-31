@@ -32,6 +32,7 @@ export const distinguishHueValueAndSaturation_Skill_Data = buildSkillConfig({
     be: "Адрозніваць каляровы тон, светласць і насычанасць",
     ka: "ტონის, სინათლისა და გაჯერებულობის გარჩევა",
     kk: "Түс реңкін, ашықтығын және қанықтылығын ажырату",
+    qm: "Tüs tonunı, açıq-qaranqlığını ve doyunğanlığını ayırmaq",
   },
   description: {
     methodological: "Identify color family, lightness and intensity as separable properties with different visual consequences.",
@@ -64,6 +65,7 @@ export const distinguishHueValueAndSaturation_Skill_Data = buildSkillConfig({
       be: "Звяртайце ўвагу на розніцу паміж каляровым тонам, светласцю і яркасцю.",
       ka: "დააკვირდით განსხვავებას ფერის ტონს, სინათლესა და მკვეთრობას შორის.",
       kk: "Түстің реңкі, ашықтығы және қанық көрінуі арасындағы айырмашылықты байқаңыз.",
+      qm: "Bir tüsniñ tonı, açıq-qaranqlığı ve canlılığı arasındaki farqnı añlañız.",
     },
   },
 });
