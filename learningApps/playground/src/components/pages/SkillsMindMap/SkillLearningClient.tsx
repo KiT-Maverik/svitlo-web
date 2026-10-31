@@ -63,8 +63,8 @@ export function SkillLearningClient({ skillId, domainSlugs }: SkillLearningClien
   return (
     <Stack spacing={3} sx={{ pt: 2 }}>
       <Box>
-        <Typography variant="overline" color="primary" fontWeight={800}>SKILL · ПРОКАЧУВАННЯ</Typography>
-        <Typography component="h1" variant="h3" fontWeight={800} lang={state.language} dir={dir}>
+        <Typography variant="overline" color="primary" sx={{ fontWeight: 800 }}>SKILL · ПРОКАЧУВАННЯ</Typography>
+        <Typography component="h1" variant="h3" sx={{ fontWeight: 800 }} lang={state.language} dir={dir}>
           {state.node.name}
         </Typography>
         {state.node.description && (
@@ -77,9 +77,9 @@ export function SkillLearningClient({ skillId, domainSlugs }: SkillLearningClien
           <Typography color="text.secondary" variant="caption">Тестове значення, не реальна оцінка знань.</Typography>
         </Box>
       </Box>
-      <Typography variant="h5" fontWeight={700}>Уроки та програми для цієї навички</Typography>
+      <Typography variant="h5" sx={{ fontWeight: 700 }}>Уроки та програми для цієї навички</Typography>
       <Paper variant="outlined" sx={{ borderRadius: 3, p: { xs: 3, sm: 4 } }}>
-        <Typography variant="h6" fontWeight={700}>Поки немає пов'язаних матеріалів</Typography>
+        <Typography variant="h6" sx={{ fontWeight: 700 }}>Поки немає пов'язаних матеріалів</Typography>
         <Typography color="text.secondary" sx={{ mt: 1 }}>
           У цьому тестовому Playground ще не створено зв'язків між UUID навички та уроками або програмами.
           Коли такі зв'язки з'являться, тут можна буде показувати матеріали саме для цієї навички.
