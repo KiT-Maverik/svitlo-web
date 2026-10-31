@@ -32,7 +32,7 @@ export const phraseAVocalPerformance_Skill_Data = buildSkillConfig({
       be: "Фарміраваць вакальную фразу",
       ka: "ვოკალური ფრაზის ჩამოყალიბება",
       kk: "Ән фразасын қалыптастыру",
-      qm: "Nәğmә frazasını şekillendirmek",
+      qm: "Yırlav frazasını şekillendirmek",
     },
   description: {
     methodological: "Coordinate breath, articulation and timing across a musical phrase.",
@@ -65,7 +65,7 @@ export const phraseAVocalPerformance_Skill_Data = buildSkillConfig({
       be: "Фарміруйце вакальную фразу з дапамогай дыхання, выразнай дыкцыі і рытму.",
       ka: "სასიმღერო ფრაზა ჩამოაყალიბეთ სუნთქვით, მკაფიო სიტყვებითა და დროის შეგრძნებით.",
       kk: "Ән фразасын тыныс, анық сөздер және уақытты дәл сақтау арқылы қалыптастырыңыз.",
-      qm: "Nәğmә frazasını tınıs, aydın sözlәr vә vaxt hissi ilә formalaşdırın.",
+      qm: "Yırlanğan frazanı nefes, añlaşıqlı sözler ve ritm yardımınen şekillendiriñiz.",
     }
   },
 });
