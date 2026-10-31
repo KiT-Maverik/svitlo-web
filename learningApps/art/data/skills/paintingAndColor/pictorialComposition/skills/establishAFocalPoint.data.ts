@@ -32,6 +32,7 @@ export const establishAFocalPoint_Skill_Data = buildSkillConfig({
     be: "Ствараць фокусны цэнтр",
     ka: "ფოკუსური წერტილის შექმნა",
     kk: "Негізгі назар нүктесін белгілеу",
+    qm: "Diqqat merkezini belgilemek",
   },
   description: {
     methodological: "Direct attention through controlled contrasts of placement, value, color or detail.",
@@ -64,6 +65,7 @@ export const establishAFocalPoint_Skill_Data = buildSkillConfig({
       be: "Накіроўвайце позірк гледача да найважнейшай часткі карціны.",
       ka: "მაყურებლის მზერა ნახატის ყველაზე მნიშვნელოვანი ნაწილისკენ მიმართეთ.",
       kk: "Көрерменнің назарын картинаның ең маңызды бөлігіне бағыттаңыз.",
+      qm: "Seyirciniñ baqışını resimniñ eñ müim yerine yöneltiñiz."
     },
   },
 });
