@@ -58,7 +58,7 @@ export const designAnimatedTransitions_Skill_Data = buildSkillConfig({
       te: "ఒక యానిమేషన్ స్థితి నుంచి మరొకదానికి సున్నితమైన లేదా భావవ్యక్తీకరణతో కూడిన మార్పును రూపొందించండి.",
       mr: "एका अॅनिमेशन अवस्थेतून दुसऱ्या अवस्थेत सहज किंवा अभिव्यक्तिपूर्ण बदलाची रचना करा.",
       ms: "Reka perubahan yang lancar atau ekspresif daripada satu keadaan animasi kepada keadaan lain.",
-      he: "עצבו מעבר חלק או выразני ממצב מונפש אחד לאחר.",
+      he: "עצבו מעבר חלק או הבעתי ממצב מונפש אחד לאחר.",
       pl: "Zaprojektuj płynne lub ekspresyjne przejście z jednego stanu animacji do drugiego.",
       uk: "Спроєктуйте плавний або виразний перехід з одного анімованого стану до іншого.",
       lt: "Sukurkite sklandų arba išraiškingą perėjimą iš vienos animacijos būsenos į kitą.",
