@@ -103,6 +103,9 @@ function readEntity(file, slug, kind, codes) {
     call.expression.text === 'build' + kind + 'Config' && call.arguments.length === 1,
     'Invalid builder for ' + symbol + ': ' + file);
   const props = fields(call.arguments[0], file);
+  const authoredSlug = literal(props.get('slug'), file + '.slug');
+  assert(authoredSlug === slug && slugPattern.test(authoredSlug),
+    'Missing/mismatched Skill slug: ' + file);
   const id = literal(props.get('id'), file + '.id');
   assert(uuidPattern.test(id), 'Invalid UUID: ' + file);
   const name = localizedStrings(props.get('name'), codes, file + '.name');
@@ -112,9 +115,9 @@ function readEntity(file, slug, kind, codes) {
     const methodological = literal(detail.get('methodological'), file + '.description.methodological');
     assert(methodological.trim(), 'Empty methodological description: ' + file);
     for (const key of detail.keys()) {
-      assert(key === 'methodological' || key === 'fe', 'Unexpected description field: ' + file + '.' + key);
+      assert(key === 'methodological' || key === 'frontend', 'Unexpected description field: ' + file + '.' + key);
     }
-    if (detail.has('fe')) description = localizedStrings(detail.get('fe'), codes, file + '.description.fe');
+    if (detail.has('frontend')) description = localizedStrings(detail.get('frontend'), codes, file + '.description.frontend');
   }
   assert(kind !== 'Skill' || description, 'Skill requires complete frontend descriptions: ' + file);
   return { id, slug, kind, name, description };
@@ -151,9 +154,11 @@ export function loadSkillGraph(root, codes = languageCodes()) {
     if (fs.existsSync(directSkills)) {
       domain.skills = skillSlugs(directSkills).map(skillSlug =>
         entity(path.join(directSkills, skillSlug + '.data.ts'), skillSlug, 'Skill'));
-    } else {
+    }
+    const groupSlugs = directories(domainDir).filter(slug => slug !== 'skills');
+    if (groupSlugs.length) {
       domain.groups = [];
-      for (const groupSlug of directories(domainDir)) {
+      for (const groupSlug of groupSlugs) {
         const groupDir = path.join(domainDir, groupSlug);
         const group = entity(path.join(groupDir, groupSlug + '.data.ts'), groupSlug, 'SkillGroup');
         group.skills = [];
@@ -163,6 +168,8 @@ export function loadSkillGraph(root, codes = languageCodes()) {
         domain.groups.push(group);
       }
     }
+    assert((domain.groups?.length ?? 0) + (domain.skills?.length ?? 0) > 0,
+      'Domain must include Groups or direct Skills: ' + domainSlug);
     graph.push(domain);
   }
   return graph;
@@ -194,7 +201,8 @@ export function renderSkillFiles(graph, codes) {
           ...localized(group, code),
           skills: group.skills.map(skill => localized(skill, code)),
         }));
-      } else {
+      }
+      if (domain.skills) {
         domainValue.skills = domain.skills.map(skill => localized(skill, code));
       }
       files.set(path.posix.join(domain.slug, code + '.json'), JSON.stringify(domainValue, null, 2) + '\n');
