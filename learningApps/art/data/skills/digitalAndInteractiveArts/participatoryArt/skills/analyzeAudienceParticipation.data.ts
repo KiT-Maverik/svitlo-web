@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const analyzeAudienceParticipation_Skill_Data = buildSkillConfig({
   slug: "analyzeAudienceParticipation",
   id: "8f412dbd-87ae-4ccc-8310-488ca5285278",
-  name: { en: "Analyze Audience Participation" },
+  name: {
+    en: "Analyze Audience Participation",
+    zh: "分析观众参与",
+    hi: "दर्शकों की भागीदारी का विश्लेषण करें",
+    es: "Analizar la participación del público",
+    ar: "تحليل مشاركة الجمهور",
+    fr: "Analyser la participation du public",
+    bn: "দর্শকের অংশগ্রহণ বিশ্লেষণ করুন",
+    pt: "Analisar a participação do público",
+    ur: "ناظرین کی شرکت کا تجزیہ کریں",
+    id: "Menganalisis Partisipasi Audiens",
+    de: "Publikumsbeteiligung analysieren",
+    ja: "観客の参加を分析する",
+    ko: "관객 참여 분석하기",
+    tr: "İzleyici Katılımını Çözümlemek",
+    vi: "Phân tích sự tham gia của khán giả",
+    ta: "பார்வையாளர் பங்கேற்பைப் பகுப்பாய்வு செய்யுங்கள்",
+    te: "ప్రేక్షకుల భాగస్వామ్యాన్ని విశ్లేషించండి",
+    mr: "प्रेक्षकांच्या सहभागाचे विश्लेषण करा",
+    ms: "Menganalisis Penyertaan Penonton",
+    he: "ניתוח השתתפות הקהל",
+    pl: "Analizować udział odbiorców",
+    uk: "Аналізувати участь аудиторії",
+    lt: "Analizuoti auditorijos dalyvavimą",
+    lv: "Analizēt auditorijas līdzdalību",
+    et: "Publiku osaluse analüüsimine",
+    be: "Аналізаваць удзел аўдыторыі",
+    ka: "აუდიტორიის მონაწილეობის ანალიზი",
+    kk: "Көрермендердің қатысуын талдау",
+    qm: "Seyirci qatnaşuvını tahlil etüv",
+  },
   description: {
     methodological: "Examine how participant contributions alter authorship, sequence or interpretation.",
     frontend: {
@@ -35,6 +65,7 @@ export const analyzeAudienceParticipation_Skill_Data = buildSkillConfig({
           "be": "Даследуйце, як унёсак удзельнікаў змяняе аўтарства, паслядоўнасць або інтэрпрэтацыю твора.",
           "ka": "შეისწავლეთ, როგორ ცვლის მონაწილეთა წვლილი ნამუშევრის ავტორობას, თანმიმდევრობას ან ინტერპრეტაციას.",
           "kk": "Қатысушылардың үлесі өнер туындысының авторлығын, ретін немесе түсіндірілуін қалай өзгертетінін зерттеңіз。"
-    },
+    
+      qm: "Qatnaşuvnıñ sanat eserini kim şekillendire ve onıñ manasını nasıl deñiştire bilecegini keşf etiñiz.",},
   },
 });
