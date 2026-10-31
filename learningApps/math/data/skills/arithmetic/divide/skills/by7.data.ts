@@ -11,6 +11,7 @@ export const by7_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — ÷ 7',
     kk: 'Бөлу — ÷ 7',
     en: 'Division — ÷ 7',
+    qm: 'Bölüv — ÷ 7',
     zh: '除法 — ÷ 7',
     hi: 'भाग — ÷ 7',
     es: 'División — ÷ 7',
@@ -38,6 +39,7 @@ export const by7_Skill_Data = buildSkillConfig({
       'Division by seven draws on multiples of seven and inverse multiplication facts. The relevant quotient is the value that reproduces the dividend when multiplied by seven.',
     frontend: {
       en: 'You can divide by seven using groups of seven and known multiplication facts to find the quotient.',
+      qm: 'Yedişerlik toparlar ve belli arttıruv neticeleri yardımınen yedige bölüp, bölüm neticesini tapa bilesiñ.',
       zh: '你能利用每组七个的分组和已知乘法口诀求出除以七的商。',
       hi: 'तुम सात-सात के समूह और ज्ञात गुणा के तथ्यों की मदद से सात से भाग देकर भागफल निकाल सकते हो।',
       es: 'Puedes dividir entre siete usando grupos de siete y multiplicaciones conocidas para hallar el cociente.',

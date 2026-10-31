@@ -11,6 +11,7 @@ export const placeValueMental_Skill_Data = buildSkillConfig({
     ka: 'შეკრება და გამოკლება — ზეპირი გამოთვლა თანრიგებით',
     kk: 'Қосу және азайту — разряд бойынша ауызша есептеу',
     en: 'Addition and subtraction — Mental place-value strategy',
+    qm: 'Qoşuv ve çıqaruv — zihinden razryadlarğa köre esaplav',
     zh: '加减法 — 按位值心算',
     hi: 'जोड़ और घटाव — स्थानीय मान से मौखिक गणना',
     es: 'Suma y resta — Cálculo mental por valor posicional',
@@ -38,6 +39,7 @@ export const placeValueMental_Skill_Data = buildSkillConfig({
       'Mental place-value decomposition replaces an expression by equivalent calculations on tens and ones. Each step must preserve the sum or difference and be justified by operation properties.',
     frontend: {
       en: 'You can split numbers into tens and ones to add or subtract mentally while keeping the sum or difference unchanged.',
+      qm: 'Sayıları onluq ve birliklerge bölüp, toplam ya da farqnı deñiştirmeden zihinden qoşa ya da çıqara bilesiñ.',
       zh: '你能把数字拆成十位和个位进行心算，同时保持和或差不变。',
       hi: 'तुम संख्याओं को दहाइयों और इकाइयों में बाँटकर मन में जोड़ या घटा सकते हो, ताकि योग या अंतर वही रहे।',
       es: 'Puedes separar números en decenas y unidades para sumar o restar mentalmente sin cambiar la suma o diferencia.',

@@ -11,6 +11,7 @@ export const by1AndSelf_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — ÷ 1 · a ÷ a',
     kk: 'Бөлу — ÷ 1 · a ÷ a',
     en: 'Division — ÷ 1 · a ÷ a',
+    qm: 'Bölüv — ÷ 1 · a ÷ a',
     zh: '除法 — ÷ 1 · a ÷ a',
     hi: 'भाग — ÷ 1 · a ÷ a',
     es: 'División — ÷ 1 · a ÷ a',
@@ -38,6 +39,7 @@ export const by1AndSelf_Skill_Data = buildSkillConfig({
       'Dividing any nonzero number by one leaves it unchanged, and a nonzero number divided by itself equals one. These follow from multiplication and do not define 0/0.',
     frontend: {
       en: 'Dividing by one leaves a number unchanged. Any nonzero number divided by itself equals one.',
+      qm: 'Birge bölüv sayını deñiştirmey. Sıfırdan farqlı er sayı öz-özüne bölüngende netice birge teñ ola.',
       zh: '一个数除以一，结果不变。任何非零数除以自身都等于一。',
       hi: 'किसी संख्या को एक से भाग देने पर वही संख्या मिलती है। शून्य से अलग संख्या को उसी से भाग देने पर एक मिलता है।',
       es: 'Dividir un número entre uno no lo cambia. Todo número distinto de cero dividido entre sí mismo da uno.',

@@ -11,6 +11,7 @@ export const by9_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — ÷ 9',
     kk: 'Бөлу — ÷ 9',
     en: 'Division — ÷ 9',
+    qm: 'Bölüv — ÷ 9',
     zh: '除法 — ÷ 9',
     hi: 'भाग — ÷ 9',
     es: 'División — ÷ 9',
@@ -38,6 +39,7 @@ export const by9_Skill_Data = buildSkillConfig({
       'Division by nine is inverse to the matching products with factor nine. Known multiples or equivalent decompositions can determine the quotient across the family of facts.',
     frontend: {
       en: 'You can divide by nine using multiples of nine and the link between multiplication and division.',
+      qm: 'Toquznıñ eseleri ve arttıruvnen bölüv arasındaki bağlılıq yardımınen toquzğa böle bilesiñ.',
       zh: '你能利用九的倍数以及乘除法之间的关系来计算除以九。',
       hi: 'तुम नौ के गुणजों और गुणा-भाग के संबंध से नौ से भाग कर सकते हो।',
       es: 'Puedes dividir entre nueve usando múltiplos de nueve y la relación entre multiplicación y división.',

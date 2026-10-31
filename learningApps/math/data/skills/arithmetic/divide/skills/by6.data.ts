@@ -11,6 +11,7 @@ export const by6_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — ÷ 6',
     kk: 'Бөлу — ÷ 6',
     en: 'Division — ÷ 6',
+    qm: 'Bölüv — ÷ 6',
     zh: '除法 — ÷ 6',
     hi: 'भाग — ÷ 6',
     es: 'División — ÷ 6',
@@ -38,6 +39,7 @@ export const by6_Skill_Data = buildSkillConfig({
       'Division by six is linked to corresponding multiplication-by-six facts. Find the quotient from a known product or an equivalent grouping without restricting competence to one example.',
     frontend: {
       en: 'You can divide by six using equal groups or multiplication facts to find the quotient.',
+      qm: 'Teñ toparlar ya da arttıruv neticeleri yardımınen altığa bölüp, bölüm neticesini tapa bilesiñ.',
       zh: '你能利用相等的组或六的乘法口诀求出除以六的商。',
       hi: 'तुम बराबर समूहों या छह के गुणा के तथ्यों से छह से भाग देकर भागफल निकाल सकते हो।',
       es: 'Puedes dividir entre seis usando grupos iguales o multiplicaciones conocidas para encontrar el cociente.',
