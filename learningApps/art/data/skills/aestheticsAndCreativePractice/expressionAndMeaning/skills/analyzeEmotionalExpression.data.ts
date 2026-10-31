@@ -30,6 +30,6 @@ export const analyzeEmotionalExpression_Skill_Data = buildSkillConfig({
           "et": "Seosta kunstiteose väljenduslikud omadused tunnetega, mida see võib esile kutsuda.",
           "be": "Звяжыце выразныя асаблівасці твора з пачуццямі, якія ён можа выклікаць.",
           "ka": "დააკავშირეთ ნამუშევრის გამომსახველობითი ნიშნები იმ გრძნობებთან, რომლებსაც ის შეიძლება აღძრავდეს.",
-          "kk": "Kapcsolja össze a műalkotás kifejező jegyeit az általa sugallt érzésekkel。"
+          "kk": "Өнер туындысының мәнерлі белгілерін ол білдіретін сезімдермен байланыстырыңыз."
     } },
 });
