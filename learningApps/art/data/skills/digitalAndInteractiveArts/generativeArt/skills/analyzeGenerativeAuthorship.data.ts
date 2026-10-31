@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const analyzeGenerativeAuthorship_Skill_Data = buildSkillConfig({
   slug: "analyzeGenerativeAuthorship",
   id: "55e9f579-7a2b-40ca-9c68-aadff5f43b31",
-  name: { en: "Analyze Generative Authorship" },
+  name: {
+    en: "Analyze Generative Authorship",
+    zh: "分析生成艺术的作者身份",
+    hi: "जनरेटिव कला के लेखकत्व का विश्लेषण करें",
+    es: "Analizar la autoría en el arte generativo",
+    ar: "تحليل التأليف في الفن التوليدي",
+    fr: "Analyser l’auctorialité de l’art génératif",
+    bn: "জেনারেটিভ শিল্পের স্রষ্টৃত্ব বিশ্লেষণ করুন",
+    pt: "Analisar a autoria na arte generativa",
+    ur: "جنریٹو فن میں تصنیف کا تجزیہ کریں",
+    id: "Menganalisis Kepengarangan Seni Generatif",
+    de: "Urheberschaft in generativer Kunst analysieren",
+    ja: "ジェネラティブアートの作者性を分析する",
+    ko: "생성 예술의 저자성 분석하기",
+    tr: "Üretken Sanatta Eser Sahipliğini Çözümlemek",
+    vi: "Phân tích quyền tác giả trong nghệ thuật tạo sinh",
+    ta: "உருவாக்கக் கலையின் ஆசிரியத்துவத்தைப் பகுப்பாய்வு செய்யுங்கள்",
+    te: "ఉత్పాదక కళలో రచయితత్వాన్ని విశ్లేషించండి",
+    mr: "जनरेटिव्ह कलेतील लेखकत्वाचे विश्लेषण करा",
+    ms: "Menganalisis Kepengarangan Seni Generatif",
+    he: "ניתוח מחברוּת באמנות גנרטיבית",
+    pl: "Analizować autorstwo sztuki generatywnej",
+    uk: "Аналізувати авторство в генеративному мистецтві",
+    lt: "Analizuoti generatyviojo meno autorystę",
+    lv: "Analizēt ģeneratīvās mākslas autorību",
+    et: "Generatiivse kunsti autorluse analüüsimine",
+    be: "Аналізаваць аўтарства генератыўнага мастацтва",
+    ka: "გენერაციულ ხელოვნებაში ავტორობის ანალიზი",
+    kk: "Генеративті өнердегі авторлықты талдау",
+    qm: "Yaratıcı algoritm sanatında müelliflikni tahlil etüv",
+  },
   description: {
     methodological: "Distinguish contributions from source material, tools, rule choices and human curation.",
     frontend: {
@@ -35,6 +65,7 @@ export const analyzeGenerativeAuthorship_Skill_Data = buildSkillConfig({
           "be": "Даследуйце, як мастакі, інструменты, зыходныя матэрыялы і правілы ўдзельнічаюць у генератыўным мастацтве.",
           "ka": "შეისწავლეთ, როგორ მონაწილეობენ მხატვრები, ხელსაწყოები, საწყისი მასალა და წესები გენერაციულ ხელოვნებაში.",
           "kk": "Суретшілер, құралдар, бастапқы материалдар мен ережелер генеративті өнерге қалай үлес қосатынын зерттеңіз。"
-    },
+    
+      qm: "Sanatçı, aletler, menba materialı ve qaideleñgen qaide-niñ yaratılğan sanatqa qatqısını keşf etiñiz.",},
   },
 });
