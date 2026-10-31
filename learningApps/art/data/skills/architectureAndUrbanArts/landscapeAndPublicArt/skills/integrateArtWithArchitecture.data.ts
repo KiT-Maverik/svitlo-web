@@ -64,7 +64,7 @@ export const integrateArtWithArchitecture_Skill_Data = buildSkillConfig({
           "et": "Kavanda kunstiline lisand, mis suhestub teadlikult hoone või ruumiga.",
           "be": "Стварыце мастацкае дапаўненне, якое мэтанакіравана звязана з будынкам або прасторай.",
           "ka": "შექმენით მხატვრული დამატება, რომელიც გააზრებულად უკავშირდება შენობას ან სივრცეს.",
-          "kk": "Ғимаратпен немесе кеңістікпен мақсатты байланыс орнататын көркемдік толықтыру жобалаңыз。"
+          "kk": "Ғимаратпен немесе кеңістікпен мақсатты байланыс орнататын көркемдік толықтыру жобалаңыз。",
     
       qm: "Bina ya da meydan ile maqsatlı bağ qurğan sanat qoşuntısını tasarlayıñız.",},
   },
