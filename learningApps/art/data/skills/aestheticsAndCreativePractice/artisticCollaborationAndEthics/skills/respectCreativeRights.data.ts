@@ -60,7 +60,7 @@ export const respectCreativeRights_Skill_Data = buildSkillConfig({
           "et": "Kontrolli, kas teost tohib taaskasutada, ja lisa õigustega nõutud viide autorile.",
           "be": "Правярайце, ці дазволена паўторна выкарыстоўваць твор, і пазначайце аўтарства паводле ўмоў правоў.",
           "ka": "შეამოწმეთ, ნებადართულია თუ არა ნამუშევრის ხელახლა გამოყენება და მიუთითეთ ავტორობა უფლებების შესაბამისად.",
-          "kk": "Туындыны қайта пайдалануға болатынын тексеріп, құқық иелері талап еткен авторлық атрибуцияны көрсетіңіз."
+          "kk": "Туындыны қайта пайдалануға болатынын тексеріп, құқық иелері талап еткен авторлық атрибуцияны көрсетіңіз.",
     
       qm: "Sanat eserini qayta qullanmağa izin bar-yoqluğını tekşiriñiz ve kerekli müelliflikni bildiriñiz.",} },
 });
