@@ -11,6 +11,7 @@ export const doubleHalf_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — განახევრება და გაორმაგება',
     kk: 'Бөлу — жартылау және екі еселеу',
     en: 'Division — Halving and doubling',
+    qm: 'Bölüv — yarımğa bölüv ve ekileştirme',
     zh: '除法 — 减半与加倍',
     hi: 'भाग — आधा और दुगुना',
     es: 'División — Mitad y doble',
@@ -38,6 +39,7 @@ export const doubleHalf_Skill_Data = buildSkillConfig({
       'Half of an even quantity is one of two equal addends composing the whole. Doubling the half restores the original whole and provides an inverse check.',
     frontend: {
       en: 'You can halve an even quantity into two equal parts and check by doubling one part.',
+      qm: 'Çift miqdarnı eki teñ parçaga böle ve bir parçanı ekileştirip neticeni teşkere ete bilesiñ.',
       zh: '你能把偶数数量平分为两份，再把其中一份翻倍来检查。',
       hi: 'तुम सम मात्रा को दो बराबर हिस्सों में बाँट सकते हो और एक हिस्से को दोगुना करके जाँच सकते हो।',
       es: 'Puedes repartir una cantidad par en dos partes iguales y comprobarlo duplicando una parte.',

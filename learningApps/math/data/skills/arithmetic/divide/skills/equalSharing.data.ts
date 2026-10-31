@@ -11,6 +11,7 @@ export const equalSharing_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — თანაბრად განაწილება',
     kk: 'Бөлу — тең үлестерге бөлу',
     en: 'Division — Equal sharing',
+    qm: 'Bölüv — teñ paylaştırma',
     zh: '除法 — 平均分配',
     hi: 'भाग — समान बाँट',
     es: 'División — Reparto equitativo',
@@ -38,6 +39,7 @@ export const equalSharing_Skill_Data = buildSkillConfig({
       'Partitive division determines the size of each group from the total and the number of equal groups. Nonzero remainders and integer divisibility may require explicit qualification of the mathematical model.',
     frontend: {
       en: 'You can share a total into a known number of equal groups and find how much belongs in each group.',
+      qm: 'Umumiy miqdarnı belli sayıda teñ toparlarğa bölüp, er toparğa ne qadar tüşkenini tapa bilesiñ.',
       zh: '你能把总量平均分成已知数量的组，并求出每组有多少。',
       hi: 'तुम किसी कुल मात्रा को दी गई संख्या के बराबर समूहों में बाँटकर हर समूह का हिस्सा निकाल सकते हो।',
       es: 'Puedes repartir un total en un número conocido de grupos iguales y hallar cuánto recibe cada grupo.',
