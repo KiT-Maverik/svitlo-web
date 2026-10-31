@@ -78,6 +78,11 @@ function parseNode(value: unknown, kind: SkillNodeKind, location: string): Skill
   const slug = nonempty(value.slug, location + '.slug');
   if (!slugPattern.test(slug)) throw new Error('Некоректний slug: ' + location);
   const name = nonempty(value.name, location + '.name');
+  // Published Skill copy is the selected language's description.frontend text.
+  // No methodological text or a locale dictionary may reach the UI.
+  if (kind === 'skill' && value.description === undefined) {
+    throw new Error('Скіл без фронтенд-опису: ' + location);
+  }
   const description = value.description === undefined ? undefined : nonempty(value.description, location + '.description');
   let children: SkillNode[] = [];
   if (kind === 'skillDomain') {
