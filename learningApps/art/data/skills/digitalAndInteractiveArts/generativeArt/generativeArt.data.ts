@@ -72,7 +72,7 @@ export const generativeArt_SkillGroup_Data = buildSkillGroupConfig({
           "et": "Uuri, kuidas lihtsad reeglid ja kontrollitud varieeruvus võivad luua visuaalkunsti.",
           "be": "Даследуйце, як простыя правілы і кантраляваная разнастайнасць могуць ствараць візуальнае мастацтва.",
           "ka": "შეისწავლეთ, როგორ შეიძლება მარტივმა წესებმა და კონტროლირებულმა მრავალფეროვნებამ შექმნას ვიზუალური ხელოვნება.",
-          "kk": "Қарапайым ережелер мен басқарылатын өзгерістердің визуалды өнерді қалай жасай алатынын зерттеңіз."
+          "kk": "Қарапайым ережелер мен басқарылатын өзгерістердің визуалды өнерді қалай жасай алатынын зерттеңіз.",
     
       qm: "Basit qaide ve nezaretli çeşitlikniñ körüniş sanatını nasıl yaratabilecegini keşf etiñiz.",},
   },
