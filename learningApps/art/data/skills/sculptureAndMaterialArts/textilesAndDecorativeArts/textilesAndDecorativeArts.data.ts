@@ -49,7 +49,7 @@ export const textilesAndDecorativeArts_SkillGroup_Data = buildSkillGroupConfig({
       en: "Explore pattern, weaving and decoration through textile materials.",
           qm: "Tekstil materialları vasıtası ile naqış, toquma ve bezemeni keşf etiñiz.",
     
-      zh: "текстильдік материалдар арқылы өрнек, тоқу және безендіруді зерттеңіз.",
+      zh: "通过纺织材料探索图案、织造与装饰。",
       hi: "कपड़ा सामग्री के माध्यम से पैटर्न, बुनाई और सजावट का अन्वेषण करें।",
       es: "Explora los patrones, el tejido y la decoración mediante materiales textiles.",
       ar: "استكشف الأنماط والنسيج والزخرفة باستخدام المواد النسيجية.",
