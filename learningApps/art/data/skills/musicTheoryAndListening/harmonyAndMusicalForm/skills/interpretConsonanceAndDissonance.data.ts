@@ -32,7 +32,7 @@ export const interpretConsonanceAndDissonance_Skill_Data = buildSkillConfig({
       be: "Тлумачыць кансананс і дысананс",
       ka: "კონსონანსისა და დისონანსის განმარტება",
       kk: "Консонанс пен диссонансты түсіндіру",
-      qm: "Konsonans və dissonansı şərh etmək",
+      qm: "Konsonans ve dissonansnı añlatmaq",
     },
   description: {
     methodological: "Explain perceived stability or tension with reference to style and musical context.",
@@ -65,7 +65,7 @@ export const interpretConsonanceAndDissonance_Skill_Data = buildSkillConfig({
       be: "Паслухайце, як музычная напружанасць і спакой залежаць ад стылю і кантэксту.",
       ka: "მოუსმინეთ, როგორ არის მუსიკალური დაძაბულობა და სიმშვიდე დამოკიდებული სტილსა და კონტექსტზე.",
       kk: "Тыңдаңыз: музыкалық ширығу мен тыныштық стиль мен мәнмәтінге қалай тәуелді.",
-      qm: "Dinləyin: musiqidə gərginlik və sakitlik üslubdan vә kontekstdәn necә asılıdır.",
+      qm: "Musiqiy gerginlik ve tınçlıqnıñ uslûpqa ve şaraitke bağlı olğanını diñleñiz.",
     }
   },
 });
