@@ -32,6 +32,7 @@ export const useAcrylicPaintingTechniques_Skill_Data = buildSkillConfig({
     be: "Выкарыстоўваць тэхнікі акрылавага жывапісу",
     ka: "აკრილით ხატვის ტექნიკების გამოყენება",
     kk: "Акрил бояумен кескіндеме техникасын қолдану",
+    qm: "Akrilik boya usullarını qullanmaq",
   },
   description: {
     methodological: "Use the faster drying and film-forming behavior of acrylic-bound pigment to develop deliberate layers, textures and transitions appropriate to the medium.",
@@ -64,6 +65,7 @@ export const useAcrylicPaintingTechniques_Skill_Data = buildSkillConfig({
       be: "Выкарыстоўвайце хуткае высыханне акрылавых фарбаў, каб ствараць колеры, фактуры і слаі.",
       ka: "გამოიყენეთ აკრილის საღებავის სწრაფად გაშრობის თვისება ფერების, ფაქტურებისა და ფენების შესაქმნელად.",
       kk: "Түстерді, фактураларды және қабаттарды қалыптастыру үшін акрил бояуының тез кебу қасиетін пайдаланыңыз.",
+      qm: "Renkler, teksturalar ve qatlamlar yaratmaq içün akrilik boyanıñ tez quruv hususiyetinden faydalaniñız."
     },
   },
 });
