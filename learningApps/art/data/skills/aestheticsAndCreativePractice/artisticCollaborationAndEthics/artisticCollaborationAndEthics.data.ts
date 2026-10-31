@@ -63,7 +63,7 @@ export const artisticCollaborationAndEthics_SkillGroup_Data = buildSkillGroupCon
           "et": "Loo ja jaga kunsti läbimõeldult, austades koostööpartnereid, loojaid ja kogukondi.",
           "be": "Стварайце і дзяліцеся мастацтвам удумліва, паважаючы супрацоўнікаў, аўтараў і супольнасці.",
           "ka": "შექმენით და გააზიარეთ ხელოვნება თანამშრომლების, შემქმნელებისა და საზოგადოებების პატივისცემით.",
-          "kk": "Өнерді ойланып жасап, бөлісіңіз; бірге жұмыс істейтін авторларды, суретшілерді және қауымдастықтарды құрметтеңіз."
+          "kk": "Өнерді ойланып жасап, бөлісіңіз; бірге жұмыс істейтін авторларды, суретшілерді және қауымдастықтарды құрметтеңіз.",
     
       qm: "Birlikte sanat yaratıp paylaşqanda, iştirakçılarnı, yaratıcılarnı ve cemaatlerni sayıp, ehtiyatnen davranıñız.",} },
 });
