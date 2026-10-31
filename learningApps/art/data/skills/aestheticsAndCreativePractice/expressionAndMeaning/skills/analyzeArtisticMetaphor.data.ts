@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const analyzeArtisticMetaphor_Skill_Data = buildSkillConfig({
-  slug: "analyzeArtisticMetaphor", id: "578f26db-2e1d-4325-939a-2752e177b352", name: { en: "Analyze Artistic Metaphor" },
+  slug: "analyzeArtisticMetaphor", id: "578f26db-2e1d-4325-939a-2752e177b352", name: {
+    en: "Analyze Artistic Metaphor",
+    zh: "分析艺术隐喻",
+    hi: "कलात्मक रूपक का विश्लेषण करें",
+    es: "Analizar la metáfora artística",
+    ar: "تحليل الاستعارة الفنية",
+    fr: "Analyser la métaphore artistique",
+    bn: "শৈল্পিক রূপক বিশ্লেষণ করুন",
+    pt: "Analisar a metáfora artística",
+    ur: "فنّی استعارے کا تجزیہ کریں",
+    id: "Menganalisis Metafora Artistik",
+    de: "Künstlerische Metaphern analysieren",
+    ja: "芸術的な比喩を分析する",
+    ko: "예술적 은유 분석하기",
+    tr: "Sanatsal Metaforu Çözümlemek",
+    vi: "Phân tích ẩn dụ nghệ thuật",
+    ta: "கலை உருவகத்தைப் பகுப்பாய்வு செய்யுங்கள்",
+    te: "కళాత్మక రూపకాన్ని విశ్లేషించండి",
+    mr: "कलात्मक रूपकाचे विश्लेषण करा",
+    ms: "Menganalisis Metafora Artistik",
+    he: "ניתוח מטפורה אמנותית",
+    pl: "Analizować metaforę artystyczną",
+    uk: "Аналізувати мистецьку метафору",
+    lt: "Analizuoti meninę metaforą",
+    lv: "Analizēt māksliniecisko metaforu",
+    et: "Kunstilise metafoori analüüsimine",
+    be: "Аналізаваць мастацкую метафару",
+    ka: "მხატვრული მეტაფორის ანალიზი",
+    kk: "Көркем метафораны талдау",
+    qm: "Sanat mecazını tahlil etüv",
+  },
   description: { methodological: "Explain how artistic choices transfer a relationship from one domain of experience to another.", frontend: {
           "en": "Explore how an artwork can communicate an idea through metaphor.",
           "zh": "探索艺术作品如何通过隐喻传达想法。",
@@ -31,5 +61,6 @@ export const analyzeArtisticMetaphor_Skill_Data = buildSkillConfig({
           "be": "Даследуйце, як мастацкі твор можа перадаваць ідэю праз метафару.",
           "ka": "შეისწავლეთ, როგორ შეუძლია ნამუშევარს მეტაფორის საშუალებით იდეის გადმოცემა.",
           "kk": "Өнер туындысының метафора арқылы идеяны қалай жеткізе алатынын зерттеңіз."
-    } },
+    
+      qm: "Sanat eseriniñ bir fikirni mecaz vastasınen nasıl bildirebildigini keşf etiñiz.",} },
 });
