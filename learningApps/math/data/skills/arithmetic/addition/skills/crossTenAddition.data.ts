@@ -11,6 +11,7 @@ export const crossTenAddition_Skill_Data = buildSkillConfig({
     ka: 'შეკრება — ათეულის გადაცილებით',
     kk: 'Қосу — ондықтан аттап өту',
     en: 'Addition — Crossing ten',
+    qm: 'Qoşuv — onluqtan keçüv',
     zh: '加法 — 跨十计算',
     hi: 'जोड़ — दस पार करना',
     es: 'Suma — Cruzar la decena',
@@ -38,6 +39,7 @@ export const crossTenAddition_Skill_Data = buildSkillConfig({
       'If the ones sum exceeds nine, ten ones can be exchanged for one ten with remaining ones. This place-value regrouping preserves the numerical value regardless of calculation method.',
     frontend: {
       en: 'When the ones in an addition make ten or more, you can regroup ten ones as one ten while keeping the total unchanged.',
+      qm: 'Qoşuvda birliklerniñ toplamı on ya da daa çoq olsa, umumiy toplam deñişmeden on birlikni bir onluqqa birleştire bilesiñ.',
       zh: '相加时，如果个位相加得到十或更多，你可以把十个一换成一个十，总数不变。',
       hi: 'जब जोड़ में इकाइयों का योग दस या अधिक हो, तो दस इकाइयों को एक दहाई में बदल सकते हैं, बिना कुल योग बदले।',
       es: 'Cuando las unidades de una suma llegan a diez o más, puedes convertir diez unidades en una decena sin cambiar el total.',

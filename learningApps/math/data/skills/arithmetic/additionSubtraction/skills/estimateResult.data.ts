@@ -11,6 +11,7 @@ export const estimateResult_Skill_Data = buildSkillConfig({
     ka: 'შეკრება და გამოკლება — შედეგის შეფასება',
     kk: 'Қосу және азайту — нәтижені бағалау',
     en: 'Addition and subtraction — Result estimation',
+    qm: 'Qoşuv ve çıqaruv — neticeni tahmin etüv',
     zh: '加减法 — 结果估算',
     hi: 'जोड़ और घटाव — परिणाम का अनुमान',
     es: 'Suma y resta — Estimación del resultado',
@@ -38,6 +39,7 @@ export const estimateResult_Skill_Data = buildSkillConfig({
       'Place-value reasoning, rounding, or bounds provide an estimated order of magnitude for a result. Such estimates can reveal large errors but cannot independently establish an exact answer.',
     frontend: {
       en: 'You can round numbers or use place value to estimate a sum or difference and notice answers that are far off.',
+      qm: 'Sayıları yuvarlaqlap ya da razryad qıymetini qullanıp toplam ya da farqnı tahmin ete, pek yañlış neticelerni ise fark ete bilesiñ.',
       zh: '你能通过四舍五入或数位知识估算和或差，判断答案是否明显不合理。',
       hi: 'तुम संख्याओं को सन्निकट करके या स्थान-मूल्य से योग या अंतर का अनुमान लगा सकते हो और बहुत गलत उत्तर पहचान सकते हो।',
       es: 'Puedes redondear números o usar el valor posicional para estimar una suma o diferencia y detectar resultados muy alejados.',

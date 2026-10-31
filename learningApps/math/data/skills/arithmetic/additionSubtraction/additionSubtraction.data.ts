@@ -21,6 +21,7 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
   id: '0f2df82b-4d66-4ea9-94bb-373105c62c6f',
   name: {
     en: 'Combining addition and subtraction',
+    qm: 'Qoşuv ve çıqaruvnı birleştirüv',
     lt: 'Sudėties ir atimties derinimas',
     lv: 'Saskaitīšanas un atņemšanas apvienošana',
     et: 'Liitmise ja lahutamise ühendamine',
@@ -69,6 +70,7 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
       'The relationship between inverse addition and subtraction, part-whole relationships, and flexible methods for mental calculation and self-checking.',
     frontend: {
       en: 'See how addition and subtraction connect parts with a whole, and use place value, estimates, and inverse operations to calculate and check results.',
+      qm: 'Qoşuv ve çıqaruvnıñ parçalarnı bütünnen nasıl bağlağanını köre bilesiñ. Esaplav ve teşkere etüv içün razryad qıymetini, tahminni ve ters amellerni qullan.',
       zh: '了解加减法怎样连接部分与整体，并利用数位、估算和互逆运算进行计算与验算。',
       hi: 'समझो कि जोड़ और घटाव हिस्सों को पूरे से कैसे जोड़ते हैं और स्थान-मूल्य, अनुमान तथा उलटी संक्रियाएँ हिसाब और जाँच में कैसे मदद करती हैं।',
       es: 'Descubre cómo la suma y la resta relacionan las partes con el todo y usa el valor posicional, la estimación y las operaciones inversas para calcular y comprobar.',

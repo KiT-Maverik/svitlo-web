@@ -11,6 +11,7 @@ export const compensation_Skill_Data = buildSkillConfig({
     ka: 'შეკრება და გამოკლება — კომპენსაციის ხერხი',
     kk: 'Қосу және азайту — компенсация әдісі',
     en: 'Addition and subtraction — Compensation',
+    qm: 'Qoşuv ve çıqaruv — tenleştirme usulı',
     zh: '加减法 — 补偿策略',
     hi: 'जोड़ और घटाव — समायोजन विधि',
     es: 'Suma y resta — Compensación',
@@ -38,6 +39,7 @@ export const compensation_Skill_Data = buildSkillConfig({
       'Compensation adjusts one operand to simplify mental calculation and then offsets that change to preserve the result. For 39 + 8, compute 40 + 8 = 48 and subtract the extra one.',
     frontend: {
       en: 'You can make a number easier to add or subtract, then balance the change so the result stays correct.',
+      qm: 'Bir sayını qoşmaq ya da çıqarmaq qolay olsun dep deñiştire bilesiñ. Netice doğru qalsın dep bu deñişmeni soñra tenleştir.',
       zh: '你能适当调整一个数，让加减计算更容易，再补偿这一变化，使结果不变。',
       hi: 'तुम जोड़ या घटाव को आसान बनाने के लिए किसी संख्या को बदलकर फिर उस बदलाव की भरपाई कर सकते हो, ताकि उत्तर सही रहे।',
       es: 'Puedes ajustar un número para facilitar una suma o resta y compensar ese cambio para conservar el resultado.',

@@ -11,6 +11,7 @@ export const hundredsAndTens_Skill_Data = buildSkillConfig({
     ka: 'შეკრება და გამოკლება — ასეულები და ათეულები',
     kk: 'Қосу және азайту — жүздіктер мен ондықтар',
     en: 'Addition and subtraction — Hundreds and tens',
+    qm: 'Qoşuv ve çıqaruv — yüzlükler ve onluqlar',
     zh: '加减法 — 整百与整十',
     hi: 'जोड़ और घटाव — सैकड़े और दहाई',
     es: 'Suma y resta — Centenas y decenas',
@@ -38,6 +39,7 @@ export const hundredsAndTens_Skill_Data = buildSkillConfig({
       'Multiples of a hundred and ten are calculated as quantities of their corresponding place-value units. Mixed-place computations require equivalent exchanges to preserve overall value.',
     frontend: {
       en: 'You can add and subtract tens and hundreds by their place values, regrouping when necessary.',
+      qm: 'Onluq ve yüzlüklerni razryad qıymetlerine köre qoşa ve çıqara bilesiñ. Kerek olğanda razryadlarnı yañıdan toparla.',
       zh: '你能按数位计算整十数和整百数的加减法，并在必要时进行换位重组。',
       hi: 'तुम दहाइयों और सैकड़ों को उनके स्थान-मूल्य के अनुसार जोड़-घटा सकते हो और ज़रूरत पर पुनः समूह बना सकते हो।',
       es: 'Puedes sumar y restar decenas y centenas según su valor posicional, reagrupando cuando sea necesario.',

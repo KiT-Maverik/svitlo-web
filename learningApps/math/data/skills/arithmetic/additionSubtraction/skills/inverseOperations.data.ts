@@ -11,6 +11,7 @@ export const inverseOperations_Skill_Data = buildSkillConfig({
     ka: 'შეკრება და გამოკლება — შებრუნებული მოქმედებები',
     kk: 'Қосу және азайту — кері амалдар',
     en: 'Addition and subtraction — Inverse operations',
+    qm: 'Qoşuv ve çıqaruv — ters ameller',
     zh: '加减法 — 逆运算',
     hi: 'जोड़ और घटाव — व्युत्क्रम संक्रियाएँ',
     es: 'Suma y resta — Operaciones inversas',
@@ -38,6 +39,7 @@ export const inverseOperations_Skill_Data = buildSkillConfig({
       'Addition and subtraction are inverses in the relevant number domains. For a + b = c, checking c - b = a or c - a = b uses the same mathematical relationship.',
     frontend: {
       en: 'You can undo an addition with subtraction and undo a subtraction with addition by using the relationship between the numbers.',
+      qm: 'Sayılar arasındaki bağlılıqnı qullanıp, qoşuvnı çıqaruvnen ve çıqaruvnı qoşuvnen tersine çevire bilesiñ.',
       zh: '你能用减法撤销加法、用加法撤销减法，理解算式中各个数之间的关系。',
       hi: 'तुम संख्याओं के संबंध का उपयोग कर जोड़ को घटाव से और घटाव को जोड़ से उलट सकते हो।',
       es: 'Puedes deshacer una suma con una resta y una resta con una suma gracias a la relación entre los números.',
