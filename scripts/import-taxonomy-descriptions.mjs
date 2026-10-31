@@ -8,7 +8,7 @@
  *   node scripts/import-taxonomy-descriptions.mjs --package learningApps/math --write
  *
  * Dry-run is the default. No translation, ID generation, file creation,
- * export rewrites, hierarchy changes, or FE localization is performed.
+ * export rewrites, hierarchy changes, or frontend localization is performed.
  */
 import fs from 'node:fs';
 import path from 'node:path';
