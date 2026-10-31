@@ -173,6 +173,38 @@
   background: linear-gradient(160deg, #fff9ee, #fff);
   overflow: hidden;
 }
+
+/* Collapsed Skills remain real cards rather than disappearing from the graph.
+ * Mastery is encoded by a numeric value, a short bottom bar, and a subtle tint.
+ * Keep the expanded card on the same anchor so opening it does not reflow the map. */
+.compactSkillNode {
+  width: 218px;
+  height: 150px;
+  min-height: 0;
+  max-height: none;
+  gap: 0;
+  border-radius: 17px;
+  justify-content: space-between;
+}
+.compactSkillNode[data-tier='starting'] {
+  border-color: #e7ba88;
+  background: linear-gradient(155deg, #fff3e4, #fff);
+}
+.compactSkillNode[data-tier='growing'] {
+  border-color: #a8baf1;
+  background: linear-gradient(155deg, #eef2ff, #fff);
+}
+.compactSkillNode[data-tier='strong'] {
+  border-color: #99d4b9;
+  background: linear-gradient(155deg, #eafaef, #fff);
+}
+.expandedSkillNode {
+  width: 278px;
+  min-height: 270px;
+  max-height: 334px;
+  z-index: 4;
+}
+
 .selectedNode {
   outline: 4px solid #4d63d9;
   outline-offset: 4px;
@@ -242,6 +274,43 @@
   font-size: 17px;
   -webkit-line-clamp: 3;
 }
+
+.skillExpandIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #dbdced;
+  border-radius: 8px;
+  color: #5e538f;
+  background: rgba(255, 255, 255, .65);
+  flex: 0 0 25px;
+  font-size: 19px;
+  line-height: 1;
+}
+.compactSkillNode .skillCardBody {
+  padding: 13px 13px 4px;
+  gap: 6px;
+}
+.compactSkillNode .skillTitleButton {
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+}
+.compactSkillNode .nodeName {
+  -webkit-line-clamp: 2;
+  font-size: 15px;
+}
+.expandedSkillNode .skillTitleButton {
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.expandedSkillNode .nodeName {
+  -webkit-line-clamp: 3;
+}
+
 .nodeDescription {
   color: #53607b;
   font-size: 12px;
@@ -291,6 +360,36 @@
   border-radius: inherit;
   background: var(--mastery-color);
 }
+
+.mastery[data-compact='true'] {
+  padding: 5px 12px 8px;
+}
+.mastery[data-compact='true'] .masteryHeading {
+  margin-bottom: 5px;
+}
+.mastery[data-compact='true'] .masteryHeading strong {
+  font-size: 17px;
+}
+.compactSkillNode .mastery[data-compact='true'] {
+  padding: 0;
+  flex: 0 0 auto;
+}
+.compactSkillNode .masteryHeading {
+  padding: 2px 13px 7px;
+  margin-bottom: 0;
+}
+.compactSkillNode .masteryTrack {
+  height: 8px;
+  border-radius: 0;
+}
+.compactSkillNode .masteryFill {
+  border-radius: 0;
+}
+.outlineSkillDetails[data-expanded='false'] {
+  padding-bottom: 7px;
+  background: var(--mui-palette-background-paper, #fff);
+}
+
 .skillCardFooter {
   width: 100%;
   padding: 10px 15px 13px;
