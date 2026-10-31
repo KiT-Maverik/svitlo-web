@@ -103,6 +103,42 @@ describe('Skills page-scoped settings', () => {
     expect(within(list).getByRole('link', { name: /Прокачати/ })).toBeInTheDocument();
   });
 
+  it('collapses and expands the whole graph through the page settings controls', async () => {
+    renderPage();
+    const leaf = await screen.findByTestId('skill-node-testRed');
+    const controls = screen.getByRole('region', { name: 'Керування мапою Skills' });
+    expect(within(controls).getByRole('button', { name: 'Згорнути все' })).toBeEnabled();
+    expect(leaf).toHaveAttribute('data-expanded', 'false');
+
+    fireEvent.click(within(controls).getByRole('button', { name: 'Згорнути все' }));
+    expect(screen.queryByTestId('skill-node-testRed')).not.toBeInTheDocument();
+    expect(screen.getByTestId('skills-profile')).toHaveAttribute('aria-expanded', 'false');
+
+    fireEvent.click(within(controls).getByRole('button', { name: 'Розгорнути все' }));
+    expect(screen.getByTestId('skill-node-testRed')).toHaveAttribute('data-expanded', 'true');
+    expect(screen.getByTestId('skills-profile')).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  it('fits map after zooming and can return from list mode to a fitted map', async () => {
+    renderPage();
+    await screen.findByTestId('skill-node-testRed');
+    const controls = screen.getByRole('region', { name: 'Керування мапою Skills' });
+    const world = screen.getByTestId('skills-map-world');
+    const fitted = Number(world.getAttribute('data-zoom'));
+    fireEvent.click(screen.getByRole('button', { name: 'Збільшити масштаб' }));
+    expect(Number(world.getAttribute('data-zoom'))).toBeGreaterThan(fitted);
+
+    fireEvent.click(within(controls).getByRole('button', { name: 'Вмістити в екран' }));
+    expect(Number(world.getAttribute('data-zoom'))).toBeCloseTo(fitted, 8);
+    expect(world).toHaveAttribute('data-pan-x');
+    expect(world).toHaveAttribute('data-pan-y');
+
+    fireEvent.click(screen.getByRole('button', { name: 'Список' }));
+    expect(screen.queryByTestId('skills-map-world')).not.toBeInTheDocument();
+    fireEvent.click(within(controls).getByRole('button', { name: 'Вмістити в екран' }));
+    expect(screen.getByTestId('skills-map-world')).toBeInTheDocument();
+  });
+
   it('resets page preferences when a new page provider is mounted', async () => {
     const first = renderPage();
     await screen.findByTestId('skill-node-testRed');
