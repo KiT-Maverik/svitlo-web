@@ -32,6 +32,7 @@ export const useComplementaryColors_Skill_Data = buildSkillConfig({
     be: "Выкарыстоўваць дадатковыя колеры",
     ka: "დამატებითი ფერების გამოყენება",
     kk: "Қосымша түстерді пайдалану",
+    qm: "Bir-birine qarşı turgan tüslerni qullanmaq",
   },
   description: {
     methodological: "Employ contrasting color relationships to produce emphasis or modify perceived intensity.",
@@ -64,6 +65,7 @@ export const useComplementaryColors_Skill_Data = buildSkillConfig({
       be: "Выкарыстоўвайце колеры, размешчаныя насупраць адзін аднаго на каляровым крузе, каб стварыць кантраст і акцэнт.",
       ka: "კონტრასტისა და აქცენტის შესაქმნელად გამოიყენეთ ფერთა წრეზე ერთმანეთის საპირისპიროდ განლაგებული ფერები.",
       kk: "Контраст пен екпін жасау үшін түс шеңберінде бір-біріне қарама-қарсы түстерді қолданыңыз.",
+      qm: "Kontrast ve vurğulama yaratmaq içün tüs çemberinde bir-birine qarşı turgan tüslerni qullanıñız.",
     },
   },
 });
