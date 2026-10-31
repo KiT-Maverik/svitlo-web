@@ -32,6 +32,7 @@ export const useOilPaintingTechniques_Skill_Data = buildSkillConfig({
     be: "Выкарыстоўваць тэхнікі алейнага жывапісу",
     ka: "ზეთით ხატვის ტექნიკების გამოყენება",
     kk: "Майлы бояумен кескіндеме техникасын қолдану",
+    qm: "Yağlı boya usullarını qullanmaq",
   },
   description: {
     methodological: "Exploit the slow drying and blending behavior of oil-bound pigment to build controlled passages, revise wet edges and manage successive paint layers with suitable materials and safe handling.",
@@ -64,6 +65,7 @@ export const useOilPaintingTechniques_Skill_Data = buildSkillConfig({
       be: "Працуйце з алейнымі фарбамі, якія павольна сохнуць: змешвайце колеры, накладвайце слаі і бяспечна карэктуйце намаляваныя ўчасткі.",
       ka: "იმუშავეთ ნელა შრობადი ზეთის საღებავებით: შეურიეთ ფერები, შექმენით ფენები და უსაფრთხოდ შეცვალეთ მოხატული მონაკვეთები.",
       kk: "Баяуды қауіпсіз пайдалана отырып, баяу кебетін майлы бояумен түстерді араластырыңыз, қабаттар жасаңыз және боялған тұстарды түзетіңіз.",
+      qm: "Yavaş quruğan yağlı boya ile renklerni qarıştırıñız, qatlamlar yaratıp, boyalğan yerlerni emniyetli şekilde deñiştiriñiz."
     },
   },
 });
