@@ -11,6 +11,7 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — თანაბარ ჯგუფებად დაყოფა',
     kk: 'Бөлу — тең топтарға бөлу',
     en: 'Division — Equal grouping · Equal groups',
+    qm: 'Bölüv — teñ toparlarğa ayıruv',
     zh: '除法 — 按相等组分组 · 等量组',
     hi: 'भाग — समान समूह बनाना · समान समूह',
     es: 'División — Formación de grupos iguales · Grupos iguales',
@@ -38,6 +39,7 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
       'Quotitive division determines how many groups of a specified size can be formed from a total. When division is not exact, distinguish complete groups from the remainder.',
     frontend: {
       en: 'You can find how many complete groups of a given size fit into a total and identify anything left over.',
+      qm: 'Umumiy miqdarda belli ölçüde qaç tolu topar olğanını tapıp, artıp qalğan eşyalarnı belgiley bilesiñ.',
       zh: '你能求出总量中可以分成多少个指定大小的完整组，并找出剩余数量。',
       hi: 'तुम देख सकते हो कि कुल में दिए गए आकार के कितने पूरे समूह बनते हैं और कितना बचता है।',
       es: 'Puedes averiguar cuántos grupos completos de un tamaño dado caben en un total y qué queda sin agrupar.',

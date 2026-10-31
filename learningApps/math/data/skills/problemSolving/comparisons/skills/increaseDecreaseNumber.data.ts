@@ -11,6 +11,7 @@ export const increaseDecreaseNumber_Skill_Data = buildSkillConfig({
     ka: 'მოცემული რიცხვით გაზრდა ან შემცირება',
     kk: 'Берілген санға арттыру немесе кеміту',
     en: 'Increasing or decreasing by a given amount',
+    qm: 'Berilgen miqdarğa arttırmaq ya da azlatmaq',
     zh: '按给定数量增加或减少',
     hi: 'दी गई संख्या से बढ़ाना या घटाना',
     es: 'Aumentar o disminuir una cantidad dada',
@@ -38,6 +39,7 @@ export const increaseDecreaseNumber_Skill_Data = buildSkillConfig({
       "Changing a quantity additively by a specified amount is represented by addition or subtraction according to the direction of change. An absolute increase must be distinguished from a multiplicative 'times as much' change.",
     frontend: {
       en: 'You can increase or decrease a quantity by a given amount using addition or subtraction, without confusing this with a change by a factor.',
+      qm: 'Qoşuv ya da çıqaruv yardımınen miqdarnı berilgen miqdarğa arttıra ya da azlata bilesiñ. Belli qatqa deñiştirüvnen qarıştırma.',
       zh: '你能用加法或减法让数量增加或减少指定的数值，不把它与按倍数变化混淆。',
       hi: 'आप जोड़ या घटाव से मात्रा में तय संख्या की वृद्धि या कमी कर सकते हैं और इसे कई गुना परिवर्तन से अलग समझ सकते हैं।',
       es: 'Puedes aumentar o disminuir una cantidad en un número determinado mediante suma o resta, sin confundirlo con un cambio por un factor.',

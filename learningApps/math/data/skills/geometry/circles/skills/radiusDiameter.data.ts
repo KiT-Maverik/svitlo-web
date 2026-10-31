@@ -5,6 +5,7 @@ export const radiusDiameter_Skill_Data = buildSkillConfig({
   id: '200f6633-8027-4330-8218-b6e4c1cc1750',
   name: {
     en: 'Relating the center, radius and diameter',
+    qm: 'Merkez, radius ve diametr arasındaki bağlılıq',
     lt: 'Centro, spindulio ir skersmens ryšys',
     lv: 'Centra, rādiusa un diametra saistība',
     et: 'Keskpunkti, raadiuse ja diameetri seos',
@@ -38,6 +39,7 @@ export const radiusDiameter_Skill_Data = buildSkillConfig({
       "A circle's center determines its constant distance to every point on the circle; a radius connects center to circle, and a diameter passes through the center to join two circle points. Diameter length is twice radius.",
     frontend: {
       en: 'Find the center, radius, and diameter of a circle. The diameter crosses the center and is twice the radius.',
+      qm: 'Çemberniñ merkezini, radiusını ve diametrini tap. Diametr merkezden keçe ve radiusnıñ eki qatına teñ.',
       zh: '找到圆心、半径和直径。直径经过圆心，长度是半径的两倍。',
       hi: 'केंद्र, त्रिज्या और व्यास खोजें। व्यास केंद्र से गुजरता है और त्रिज्या से दोगुना है।',
       es: 'Encuentra el centro, radio y diámetro de una circunferencia. El diámetro pasa por el centro y mide dos radios.',

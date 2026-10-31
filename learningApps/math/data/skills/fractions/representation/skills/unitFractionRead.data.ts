@@ -5,6 +5,7 @@ export const unitFractionRead_Skill_Data = buildSkillConfig({
   id: '6d176ee8-9b59-4752-b39d-7cf3127d871f',
   name: {
     en: 'Reading and writing unit fractions',
+    qm: 'Birlik kesirlerni oqumaq ve yazmaq',
     lt: 'Vienetinių trupmenų skaitymas ir rašymas',
     lv: 'Vienības daļu lasīšana un rakstīšana',
     et: 'Ühikmurdude lugemine ja kirjutamine',
@@ -38,6 +39,7 @@ export const unitFractionRead_Skill_Data = buildSkillConfig({
       'A unit fraction has numerator one and a positive denominator stating how many equal parts form the whole. Half, third, and quarter correspond to the fractions 1/2, 1/3, and 1/4.',
     frontend: {
       en: 'Read and write fractions with 1 on top, such as 1/2 (one half), 1/3 (one third), and 1/4 (one quarter).',
+      qm: 'Payı 1 olğan kesirlerni oqu ve yaz: 1/2 (yarım), 1/3 (üçten bir), 1/4 (çeyrek) kibi.',
       zh: '读写分子为1的分数，例如1/2（二分之一）、1/3（三分之一）和1/4（四分之一）。',
       hi: 'ऊपर 1 वाले भिन्न पढ़ें और लिखें, जैसे 1/2 (आधा), 1/3 (एक तिहाई), 1/4 (एक चौथाई)।',
       es: 'Lee y escribe fracciones con 1 arriba, como 1/2 (un medio), 1/3 (un tercio) y 1/4 (un cuarto).',

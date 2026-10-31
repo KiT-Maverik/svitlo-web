@@ -5,6 +5,7 @@ export const arithmeticPattern_Skill_Data = buildSkillConfig({
   id: '80600511-51d8-411c-a132-4a17836d680d',
   name: {
     en: 'Continuing numerical patterns with a constant step',
+    qm: 'Aynı adımnen sayı silsilesini devam ettirmek',
     lt: 'Skaitinio dėsningumo tęsimas pastoviu žingsniu',
     lv: 'Skaitliskas likumsakarības turpināšana ar nemainīgu soli',
     et: 'Arvumustri jätkamine kindla sammuga',
@@ -38,6 +39,7 @@ export const arithmeticPattern_Skill_Data = buildSkillConfig({
       'A number sequence such as 4, 7, 10, 13 has a constant increment of three; extend it by repeatedly applying the same step to the preceding term.',
     frontend: {
       en: 'You can continue a sequence by repeatedly adding or subtracting the same amount.',
+      qm: 'Er seferinde aynı miqdarnı qoşaraq ya da çıqararaq sayı silsilesini devam ettire bilesiñ.',
       zh: '你能通过每次加上或减去相同的数来续写数列。',
       hi: 'तुम हर बार समान मात्रा जोड़कर या घटाकर संख्या-क्रम आगे बढ़ा सकते हो।',
       es: 'Puedes continuar una secuencia sumando o restando siempre la misma cantidad.',

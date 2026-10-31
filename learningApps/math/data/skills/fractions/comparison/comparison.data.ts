@@ -7,6 +7,7 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
   id: 'c1e510c8-1bd0-475a-a977-e2aac0b0bed7',
   name: {
     en: 'Comparing fractions',
+    qm: 'Kesirlerni qıyaslav',
     lt: 'Trupmenų palyginimas',
     lv: 'Daļu salīdzināšana',
     et: 'Murdude võrdlemine',
@@ -45,6 +46,7 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
       'Comparing the magnitudes of fractional parts relative to the same whole while holding either the numerator or denominator fixed.',
     frontend: {
       en: 'Compare fractions of the same whole by looking at the size of equal parts or the number of parts taken.',
+      qm: 'Aynı bütünniñ kesirlerini teñ parçalarnıñ ölçüsine ya da alınğan parçalarnıñ sayısına köre qıyasla.',
       zh: '比较同一整体的分数，可以看每份有多大，或取了多少份。',
       hi: 'एक ही पूरे के भिन्नों की तुलना बराबर भागों के आकार या लिए गए भागों की संख्या से करें।',
       es: 'Compara fracciones del mismo entero según el tamaño de las partes iguales o cuántas partes se toman.',

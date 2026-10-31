@@ -5,6 +5,7 @@ export const leapYearDays_Skill_Data = buildSkillConfig({
   id: '653b69ae-2576-4b9c-a2af-959bb675b8d1',
   name: {
     en: 'Distinguishing common and leap years',
+    qm: 'Adiy ve artıq künlü yıllarnı ayırmaq',
     lt: 'Paprastųjų ir keliamųjų metų atskyrimas',
     lv: 'Parastu un garo gadu atšķiršana',
     et: 'Liigaasta ja tavalise aasta eristamine',
@@ -38,6 +39,7 @@ export const leapYearDays_Skill_Data = buildSkillConfig({
       'The Gregorian calendar distinguishes ordinary years of 365 days from leap years of 366 days, with 29 days in February. Divisibility by four determines leap years except century years not divisible by 400; navigating a calendar also requires correct transitions between dates.',
     frontend: {
       en: 'You can tell a common year of 365 days from a leap year of 366 days, recognize February 29, and use the calendar correctly.',
+      qm: '365 künlü adiy yılnen 366 künlü artıq künlü yılnı ayıra, 29 fevralni tanıy ve taqvimni doğru qullana bilesiñ.',
       zh: '你能区分有365天的平年和有366天的闰年，认识2月29日，并正确使用日历。',
       hi: 'आप 365 दिनों वाले सामान्य वर्ष और 366 दिनों वाले अधिवर्ष में अंतर कर सकते हैं, 29 फ़रवरी पहचान सकते हैं और कैलेंडर सही पढ़ सकते हैं।',
       es: 'Puedes distinguir un año común de 365 días de uno bisiesto de 366, reconocer el 29 de febrero y usar bien el calendario.',

@@ -11,6 +11,7 @@ export const roundToHundred_Skill_Data = buildSkillConfig({
     ka: 'უახლოეს ასეულამდე დამრგვალება',
     kk: 'Ең жақын жүздікке дейін дөңгелектеу',
     en: 'Rounding to the nearest hundred',
+    qm: 'Eñ yaqın yüzlükke yuvarlaqlav',
     zh: '四舍五入到最接近的百',
     hi: 'निकटतम सैकड़े तक पूर्णांकन',
     es: 'Redondeo a la centena más cercana',
@@ -38,6 +39,7 @@ export const roundToHundred_Skill_Data = buildSkillConfig({
       'Rounding to the nearest hundred replaces a value with the closest multiple of one hundred. Rounding error is the difference between exact and rounded values; equidistant cases need an explicit rounding rule.',
     frontend: {
       en: 'Find the nearest multiple of one hundred and see how much the rounded value differs from the exact one. Halfway needs a rule.',
+      qm: 'Eñ yaqın yüzge qatlı sayını tap ve yuvarlaqlanğan qıymetniñ tam qıymetten ne qadar farqlı olğanını köre bil. Tam ortada qalsa, ayrıca qaide kerek.',
       zh: '找出最接近的整百数，并比较取整值和准确值的差。正好在中间时需要规定取整规则。',
       hi: 'निकटतम सैकड़ा खोजें और वास्तविक तथा पूर्णांकित मान का अंतर समझें। ठीक बीच के लिए नियम चाहिए।',
       es: 'Encuentra la centena más cercana y observa la diferencia respecto al valor exacto. Un empate de distancia necesita una regla.',

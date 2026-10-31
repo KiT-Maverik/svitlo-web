@@ -11,6 +11,7 @@ export const by3_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — ÷ 3',
     kk: 'Бөлу — ÷ 3',
     en: 'Division — ÷ 3',
+    qm: 'Bölüv — ÷ 3',
     zh: '除法 — ÷ 3',
     hi: 'भाग — ÷ 3',
     es: 'División — ÷ 3',
@@ -38,6 +39,7 @@ export const by3_Skill_Data = buildSkillConfig({
       'Division facts by three correspond to multiples of three and the inverse of multiplication by three. Derive the quotient from the appropriate product while preserving the chosen sharing or grouping interpretation.',
     frontend: {
       en: 'You can divide by three using equal groups and the multiplication facts for three.',
+      qm: 'Teñ toparlar ve üçke arttıruv neticeleri yardımınen üçke böle bilesiñ.',
       zh: '你能利用相等的组和三的乘法口诀来计算除以三。',
       hi: 'तुम बराबर समूहों और तीन के गुणा के तथ्यों से तीन से भाग कर सकते हो।',
       es: 'Puedes dividir entre tres usando grupos iguales y las multiplicaciones del tres.',

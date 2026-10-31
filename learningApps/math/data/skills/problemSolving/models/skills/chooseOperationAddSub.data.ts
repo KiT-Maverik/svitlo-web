@@ -11,6 +11,7 @@ export const chooseOperationAddSub_Skill_Data = buildSkillConfig({
     ka: 'შეკრების ან გამოკლების არჩევა',
     kk: 'Қосу немесе азайту амалын таңдау',
     en: 'Choosing addition or subtraction',
+    qm: 'Qoşuv ya da çıqaruvnı saylav',
     zh: '选择加法或减法',
     hi: 'जोड़ या घटाव चुनना',
     es: 'Elegir suma o resta',
@@ -38,6 +39,7 @@ export const chooseOperationAddSub_Skill_Data = buildSkillConfig({
       'The choice between addition and subtraction depends on the relationship between known and unknown quantities: combining, changing, comparing, or finding a part. The same wording in different problems does not always imply the same operation.',
     frontend: {
       en: 'You can choose addition or subtraction by understanding how the known and unknown quantities relate, instead of relying on clue words alone.',
+      qm: 'Yalıñız işaret berici sözlerge dayanmay, belli ve belli olmağan miqdarlarnıñ bağlılığını añlap, qoşuv ya da çıqaruvnı sayla.',
       zh: '你能根据已知量和未知量之间的关系选择加法或减法，而不是只依靠提示词。',
       hi: 'आप केवल संकेत देने वाले शब्दों पर निर्भर हुए बिना, ज्ञात और अज्ञात मात्राओं के संबंध को समझकर जोड़ या घटाव चुन सकते हैं।',
       es: 'Puedes elegir entre sumar y restar según cómo se relacionan las cantidades conocidas y desconocidas, sin depender solo de palabras clave.',

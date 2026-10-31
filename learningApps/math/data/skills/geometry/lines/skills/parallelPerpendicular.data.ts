@@ -5,6 +5,7 @@ export const parallelPerpendicular_Skill_Data = buildSkillConfig({
   id: '983869b9-b9aa-4053-b0fb-be6c3430cff1',
   name: {
     en: 'Recognizing parallel and perpendicular lines',
+    qm: 'Paralel ve tik sızıqlarnı tanımaq',
     lt: 'Lygiagrečių ir statmenų tiesių atpažinimas',
     lv: 'Paralēlu un perpendikulāru taišņu atpazīšana',
     et: 'Paralleelsete ja ristsirgete äratundmine',
@@ -38,6 +39,7 @@ export const parallelPerpendicular_Skill_Data = buildSkillConfig({
       'Distinct parallel lines in the same plane do not intersect; perpendicular lines meet at a right angle. These relations depend on geometric structure, not merely a familiar horizontal or vertical drawing.',
     frontend: {
       en: 'Recognize parallel lines that never meet and perpendicular lines that cross at a right angle, even when tilted.',
+      qm: 'İç bir yerde kesişmegen paralel sızıqlarnı ve doğru köşe altında kesişken tik sızıqlarnı, qıya çizilgen olsa bile, tanı.',
       zh: '认识永不相交的平行线和成直角相交的垂线，即使它们是倾斜的。',
       hi: 'कभी न मिलने वाली समांतर रेखाएँ और समकोण पर मिलने वाली लंब रेखाएँ पहचानें, चाहे वे तिरछी हों।',
       es: 'Reconoce rectas paralelas que nunca se cruzan y perpendiculares que forman un ángulo recto, aunque estén inclinadas.',

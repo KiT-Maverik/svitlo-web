@@ -5,6 +5,7 @@ export const numeratorMeaning_Skill_Data = buildSkillConfig({
   id: 'a0eac2ec-b5d3-4042-8ebc-f8fb28089999',
   name: {
     en: 'Explaining the numerator of a fraction',
+    qm: 'Kesirniñ payınıñ manasını añlatmaq',
     lt: 'Trupmenos skaitiklio reikšmės aiškinimas',
     lv: 'Daļas skaitītāja nozīmes skaidrošana',
     et: 'Murru lugeja tähenduse selgitamine',
@@ -38,6 +39,7 @@ export const numeratorMeaning_Skill_Data = buildSkillConfig({
       'The numerator specifies the count of unit parts determined by the denominator. With a fixed positive denominator, increasing a nonnegative numerator increases the fraction, possibly above one.',
     frontend: {
       en: 'The top number tells how many equal parts are counted. With the same bottom number, more parts mean a greater fraction.',
+      qm: 'Üstteki sayı qaç teñ parçanıñ sayılğanını köstere. Paydalar aynı olsa, daa çoq parça daa büyük kesir demek.',
       zh: '分子表示取了多少个等份。分母相同时，取的份数越多，分数越大。',
       hi: 'ऊपर का अंश बताता है कि कितने बराबर भाग लिए गए। हर समान हो तो अधिक भाग वाला भिन्न बड़ा है।',
       es: 'El numerador indica cuántas partes iguales se cuentan. Con el mismo denominador, más partes dan una fracción mayor.',

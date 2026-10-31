@@ -7,6 +7,7 @@ export const estimation_SkillGroup_Data = buildSkillGroupConfig({
   id: 'be26668b-7f9a-40dd-b78f-f65acb5f4791',
   name: {
     en: 'Estimating numbers',
+    qm: 'Sayılarnı tahmin etüv',
     lt: 'Apytikris skaičių vertinimas',
     lv: 'Skaitļu novērtēšana',
     et: 'Arvude hindamine',
@@ -45,6 +46,7 @@ export const estimation_SkillGroup_Data = buildSkillGroupConfig({
       'Approximate numerical values and quantities, rounding, and matching estimation precision to the magnitude of the actual quantity.',
     frontend: {
       en: 'Make sensible approximations of quantities or values and round numbers to a useful level of precision.',
+      qm: 'Miqdar ya da qıymetlerni aqılğa uygun yaqlaşıq belgile ve sayılarnı kerekli doğrulıq derecesine qadar yuvarlaqla.',
       zh: '对数量或数值作出合理估计，并按需要的精度四舍五入。',
       hi: 'मात्राओं या मानों का उचित अनुमान लगाएँ और आवश्यक सटीकता तक संख्याएँ पूर्णांकित करें।',
       es: 'Haz aproximaciones razonables de cantidades o valores y redondea números con la precisión adecuada.',

@@ -5,6 +5,7 @@ export const compareLength_Skill_Data = buildSkillConfig({
   id: '49a806ae-35f5-4e85-afad-94418ac02e10',
   name: {
     en: 'Comparing lengths directly and indirectly',
+    qm: 'Uzunlıqlarnı doğrudan ve vasitaynen qıyaslav',
     lt: 'Tiesioginis ir netiesioginis ilgių palyginimas',
     lv: 'Garumu tieša un netieša salīdzināšana',
     et: 'Pikkuste otsene ja kaudne võrdlemine',
@@ -38,6 +39,7 @@ export const compareLength_Skill_Data = buildSkillConfig({
       "Lengths can be compared by aligning their initial endpoints or through a common intermediate measure. Comparison concerns endpoint separation, not an object's placement or visible thickness.",
     frontend: {
       en: 'You can compare which object or segment is longer by aligning their ends or using the same reference length, not by their position or thickness.',
+      qm: 'Eşya ya da kesiklerniñ uçlarını bir sızıqta tutıp ya da aynı etalon uzunlıqnı qullanıp qaysısınıñ uzun olğanını qıyasla. Yerine ya da qalınlığına baqma.',
       zh: '你能对齐端点或使用同一参照长度，比较物体或线段谁更长，而不受位置或粗细影响。',
       hi: 'आप सिरों को मिलाकर या समान माप से तुलना करके बता सकते हैं कि कौन-सी वस्तु या रेखाखंड लंबा है, उनकी स्थिति या मोटाई से नहीं।',
       es: 'Puedes comparar qué objeto o segmento es más largo alineando sus extremos o usando la misma medida de referencia, no por su posición o grosor.',

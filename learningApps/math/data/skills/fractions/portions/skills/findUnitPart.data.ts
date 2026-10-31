@@ -5,6 +5,7 @@ export const findUnitPart_Skill_Data = buildSkillConfig({
   id: '98870d29-e56b-471d-aba8-8ed9f22e3c3a',
   name: {
     en: 'Finding 1/n of a quantity by division',
+    qm: 'Bölüv yardımınen miqdarnıñ 1/n parçasını tapmaq',
     lt: 'Dydžio 1/n dalies radimas dalijant',
     lv: 'Lieluma 1/n daļas atrašana ar dalīšanu',
     et: 'Suuruse 1/n osa leidmine jagamisega',
@@ -38,6 +39,7 @@ export const findUnitPart_Skill_Data = buildSkillConfig({
       'Finding 1/n of a quantity divides the whole into n equal parts for positive n. The resulting magnitude retains the physical unit and need not be an integer.',
     frontend: {
       en: 'To find 1/n of a quantity, divide the quantity into n equal shares. A share can include a fraction of a measurement unit.',
+      qm: 'Miqdarnıñ 1/n parçasını tapmaq içün miqdarnı n teñ payğa böl. Bir pay ölçü birlikniñ kesir parçasını da içine ala bilir.',
       zh: '要找出一个量的1/n，把它平均分成n份。每份也可能包含不足一个单位的量。',
       hi: 'किसी मात्रा का 1/n पाने के लिए उसे n बराबर भागों में बाँटें। एक भाग में माप की इकाई का अंश भी हो सकता है।',
       es: 'Para hallar 1/n de una cantidad, divídela en n partes iguales. Una parte puede medir menos de una unidad.',

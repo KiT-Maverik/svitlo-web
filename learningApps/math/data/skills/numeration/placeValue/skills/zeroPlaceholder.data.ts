@@ -11,6 +11,7 @@ export const zeroPlaceholder_Skill_Data = buildSkillConfig({
     ka: 'ნული, როგორც თანრიგის ადგილის აღმნიშვნელი',
     kk: 'Нөлдің разряд орнын белгілеу қызметі',
     en: 'Zero as a place-value placeholder',
+    qm: 'Sıfırnıñ boş razryadnı belgilevi',
     zh: '零作为数位占位符',
     hi: 'स्थान धारक के रूप में शून्य',
     es: 'El cero como marcador de posición',
@@ -38,6 +39,7 @@ export const zeroPlaceholder_Skill_Data = buildSkillConfig({
       'Zero in positional notation can signify no units at a particular place while preserving the place values of neighboring digits. Omitting that position may produce a different number.',
     frontend: {
       en: 'A zero can keep an empty place in a number: in 305, it means there are no tens, so 305 is not 35.',
+      qm: 'Sıfır sayıdaki boş razryadnı saqlay bile: 305 sayısında onluq yoq, şu sebepten 305 sayısı 35 degil.',
       zh: '零能占住没有单位的数位：305中的0表示没有十，所以305不同于35。',
       hi: 'शून्य खाली स्थान बनाए रखता है: 305 में दहाई नहीं है, इसलिए 305 और 35 अलग हैं।',
       es: 'El cero conserva una posición vacía: en 305 significa que no hay decenas, así que 305 no es 35.',

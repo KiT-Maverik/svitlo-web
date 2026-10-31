@@ -5,6 +5,7 @@ export const equalityMeaning_Skill_Data = buildSkillConfig({
   id: '974af868-5b72-4a5a-a88e-8f7e03e48661',
   name: {
     en: 'Understanding the equals sign',
+    qm: 'Musaviylik işaretiniñ manasını añlav',
     lt: 'Lygybės ženklo reikšmės supratimas',
     lv: 'Vienādības zīmes nozīmes izpratne',
     et: 'Võrdusmärgi tähenduse mõistmine',
@@ -38,6 +39,7 @@ export const equalityMeaning_Skill_Data = buildSkillConfig({
       'The equality sign asserts equal values on both sides, not a prompt to compute an answer. Either side may contain numbers, expressions, or other mathematical objects; equality is determined by their values.',
     frontend: {
       en: 'The equals sign means that the expressions on both sides have the same value, not simply that an answer follows.',
+      qm: 'Musaviylik işareti eki tarafındaki ifadelerniñ qıymetleri bir olğanını bildirir. O, yalıñız soñundan cevap kelecegini bildirmey.',
       zh: '等号表示两边表达式的值相同，而不只是提示后面要写答案。',
       hi: 'बराबर का चिह्न बताता है कि दोनों पक्षों के व्यंजकों का मान समान है, न कि केवल उसके बाद उत्तर आता है।',
       es: 'El signo igual indica que las expresiones de ambos lados valen lo mismo, no solo que a continuación viene una respuesta.',

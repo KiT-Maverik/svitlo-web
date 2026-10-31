@@ -12,6 +12,7 @@ export const duration_SkillGroup_Data = buildSkillGroupConfig({
   id: '7bd683f2-1db4-4242-b223-733aa66481f7',
   name: {
     en: 'Duration',
+    qm: 'Vaqıt devamlılığı',
     lt: 'Trukmė',
     lv: 'Ilgums',
     et: 'Kestus',

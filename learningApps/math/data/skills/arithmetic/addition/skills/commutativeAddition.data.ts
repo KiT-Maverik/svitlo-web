@@ -11,6 +11,7 @@ export const commutativeAddition_Skill_Data = buildSkillConfig({
     ka: 'შეკრება — გადანაცვლებადობის თვისება',
     kk: 'Қосу — ауыстырымдылық қасиеті',
     en: 'Addition — Commutative property',
+    qm: 'Qoşuv — yer deñiştirüv hasiyeti',
     zh: '加法 — 交换律',
     hi: 'जोड़ — क्रमविनिमेय नियम',
     es: 'Suma — Propiedad conmutativa',
@@ -38,6 +39,7 @@ export const commutativeAddition_Skill_Data = buildSkillConfig({
       'Commutativity of addition states a + b = b + a: exchanging addends preserves their sum. This changes operand order, not operand values, and can be used to choose a convenient computation order.',
     frontend: {
       en: 'You can swap the order of the numbers being added without changing their sum.',
+      qm: 'Qoşulğan sayılarnıñ yerlerini deñiştirip qoşsañ da, olarnıñ toplamı deñişmey.',
       zh: '相加时，你可以交换两个加数的位置，而它们的和不变。',
       hi: 'जोड़ी जाने वाली संख्याओं का क्रम बदलने पर भी उनका योग वही रहता है।',
       es: 'Puedes cambiar el orden de los sumandos sin que cambie su suma.',

@@ -11,6 +11,7 @@ export const expandedForm_Skill_Data = buildSkillConfig({
     ka: 'რიცხვის გაშლილი ფორმა',
     kk: 'Санның жіктелген түрі',
     en: 'Expanded form of numbers',
+    qm: 'Sayını razryad toplamı şeklinde yazmaq',
     zh: '数的展开式',
     hi: 'संख्या का विस्तारित रूप',
     es: 'Forma desarrollada de los números',
@@ -38,6 +39,7 @@ export const expandedForm_Skill_Data = buildSkillConfig({
       'Standard expanded form expresses a number as the sum of its nonzero place values, and recombining the terms restores the number. This is a positional representation of the same value, not a different number.',
     frontend: {
       en: 'Break a number into a sum of its place values and put them back together. For example, 243 = 200 + 40 + 3.',
+      qm: 'Sayını razryad qıymetleriniñ toplamına ayırıp, soñra qayta birleştir. Meselâ, 243 = 200 + 40 + 3.',
       zh: '把一个数写成各数位的和，再重新合成它，例如243 = 200 + 40 + 3。',
       hi: 'संख्या को स्थानिक मानों के योग में तोड़ें और फिर जोड़ें, जैसे 243 = 200 + 40 + 3।',
       es: 'Descompón un número en la suma de sus valores posicionales y vuelve a unirlos: 243 = 200 + 40 + 3.',

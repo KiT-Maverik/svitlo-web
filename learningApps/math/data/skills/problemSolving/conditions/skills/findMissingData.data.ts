@@ -11,6 +11,7 @@ export const findMissingData_Skill_Data = buildSkillConfig({
     ka: 'დაკლებული მონაცემების გამოვლენა',
     kk: 'Жетіспейтін мәліметтерді анықтау',
     en: 'Identifying missing information',
+    qm: 'Eksik malümatnı belgilemek',
     zh: '发现缺失信息',
     hi: 'अनुपस्थित जानकारी पहचानना',
     es: 'Detectar información faltante',
@@ -38,6 +39,7 @@ export const findMissingData_Skill_Data = buildSkillConfig({
       'A problem has insufficient data when its stated conditions permit different answers to the same question. The missing quantity, relationship, or constraint needed for a unique answer must be identified rather than replaced with an arbitrary assumption.',
     frontend: {
       en: 'You can recognize when a word problem does not contain enough information for one definite answer and explain which fact or relationship is missing.',
+      qm: 'Sözlü meselede birden-bir belgili cevap tapmaq içün malümat yetmegenini tanıy ve qaysı delil ya da bağlılıq eksik olğanını añlata bilesiñ.',
       zh: '你能发现应用题的信息不足以得出唯一答案，并说明还缺少哪个数据或数量关系。',
       hi: 'आप पहचान सकते हैं कि शब्द-समस्या में एक निश्चित उत्तर पाने के लिए पर्याप्त जानकारी नहीं है और बता सकते हैं कि कौन-सा तथ्य या संबंध गायब है।',
       es: 'Puedes reconocer cuándo faltan datos para obtener una única respuesta y explicar qué cantidad o relación necesitas conocer.',

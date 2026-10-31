@@ -5,6 +5,7 @@ export const compositeArea_Skill_Data = buildSkillConfig({
   id: '8dedc81b-faae-489e-9d3c-14331920224e',
   name: {
     en: 'Finding the area of a composite rectilinear figure',
+    qm: 'Dik dörtkenarlardan tüzülgen murakkep şekilniñ meydanını tapmaq',
     lt: 'Sudėtinės stačiakampės figūros ploto radimas',
     lv: 'Saliktas taisnleņķa figūras laukuma atrašana',
     et: 'Liitkujundi pindala leidmine ristkülikutest',
@@ -38,6 +39,7 @@ export const compositeArea_Skill_Data = buildSkillConfig({
       'Area is additive for nonoverlapping regions: a compound figure may be partitioned into rectangles whose areas sum to the original. The partition must cover the figure without gaps or double-counted overlaps.',
     frontend: {
       en: 'Split a shape made of rectangles into nonoverlapping pieces, find each area, and add them without counting space twice.',
+      qm: 'Dik dörtkenarlardan tüzülgen şekilni bir-birini qaplamağan parçalarğa ayır, er parçanıñ meydanını tap ve aynı yerni eki kere saymadan topla.',
       zh: '把由长方形组成的图形拆成不重叠的部分，求各部分面积后相加，不重复计算。',
       hi: 'आयतों से बनी आकृति को बिना दोहराव के बाँटें और हर हिस्से का क्षेत्रफल जोड़ें।',
       es: 'Divide una figura formada por rectángulos en piezas sin solapamiento, calcula sus áreas y súmalas sin contar ninguna dos veces.',

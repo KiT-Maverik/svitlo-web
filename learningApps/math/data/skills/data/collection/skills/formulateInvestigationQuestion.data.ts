@@ -5,6 +5,7 @@ export const formulateInvestigationQuestion_Skill_Data = buildSkillConfig({
   id: '9977837d-7e8b-4a51-8a83-89d51242aa8a',
   name: {
     en: 'Formulating a data investigation question',
+    qm: 'Malümat araştırması içün sual tüzmek',
     lt: 'Duomenų tyrimo klausimo formulavimas',
     lv: 'Datu pētījuma jautājuma formulēšana',
     et: 'Andmeuurimuse küsimuse sõnastamine',
@@ -38,6 +39,7 @@ export const formulateInvestigationQuestion_Skill_Data = buildSkillConfig({
       'A statistical question calls for observations or responses that may vary among members of a population. Distinguish a question requiring data collection from one whose answer follows uniquely from an already known arithmetic expression.',
     frontend: {
       en: 'You can ask a question that needs data from several observations or people because the answers may differ.',
+      qm: 'Cevapları farqlı olabilecegi içün bir qaç müşaededen ya da bir qaç adamdan malümat toplavnı talap etken sual tüzebilesiñ.',
       zh: '你能提出一个需要收集多个观察结果或不同人的回答才能解答的问题，因为答案可能不同。',
       hi: 'आप ऐसा प्रश्न पूछ सकते हैं जिसका उत्तर अलग-अलग अवलोकनों या लोगों से डेटा इकट्ठा करके मिले, क्योंकि उत्तर भिन्न हो सकते हैं।',
       es: 'Puedes plantear una pregunta que requiera reunir datos de varias observaciones o personas porque las respuestas pueden variar.',

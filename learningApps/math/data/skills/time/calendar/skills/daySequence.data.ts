@@ -5,6 +5,7 @@ export const daySequence_Skill_Data = buildSkillConfig({
   id: '8dba0c68-4d5b-4e3f-a6fa-119f448baaa4',
   name: {
     en: 'Sequencing parts of the day',
+    qm: 'Künniñ bölüklerini tertipke qoymaq',
     lt: 'Paros dalių eiliškumas',
     lv: 'Diennakts daļu secība',
     et: 'Päevaosade järjestamine',
@@ -38,6 +39,7 @@ export const daySequence_Skill_Data = buildSkillConfig({
       'Parts of the day form a recurring cycle, but their everyday names and boundaries depend on context. The competency concerns their sequence and matching events to approximate periods, without assigning a fixed clock time to each label.',
     frontend: {
       en: 'You can put morning, afternoon, evening, and night in order and connect them to everyday activities, knowing their exact times can vary.',
+      qm: 'Sabah, üyle, aqşam ve gece bölüklerini doğru tertipke qoyıp, olarnı kündelik işlernen bağlay bilesiñ. Olarnıñ tam başlanğıç saatları deñişebilir.',
       zh: '你能按顺序排列早晨、下午、傍晚和夜晚，并联系日常活动，知道这些时段没有统一的精确起止时间。',
       hi: 'आप सुबह, दोपहर, शाम और रात को क्रम में रखकर दैनिक कामों से जोड़ सकते हैं और समझ सकते हैं कि इनके सटीक समय अलग हो सकते हैं।',
       es: 'Puedes ordenar mañana, tarde, atardecer y noche y relacionarlas con actividades diarias, sabiendo que sus horas exactas pueden variar.',

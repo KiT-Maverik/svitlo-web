@@ -20,6 +20,7 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
   id: 'abd38d75-1cdc-40e0-8ed0-db15e4ea8d98',
   name: {
     en: 'Representing fractions',
+    qm: 'Kesirlerni tasvir etüv',
     lt: 'Trupmenų vaizdavimas',
     lv: 'Daļu attēlošana',
     et: 'Murdude kujutamine',
@@ -67,6 +68,7 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
       'Fractional representation relative to a specified whole: unit and nonunit parts, conventional fraction notation, equivalent fractions, geometric models, and values greater than one.',
     frontend: {
       en: 'Show parts of a chosen whole with fraction symbols, pictures, or a number line, including fractions equal to or greater than one.',
+      qm: 'Saylanğan bütünniñ parçalarını kesir işaretleri, resimler ya da sayı sızığı yardımınen köster. Birge teñ ya da birden büyük kesirler de buña kire.',
       zh: '用分数符号、图形或数轴表示选定整体的部分，包括等于或大于1的分数。',
       hi: 'चुने हुए पूरे के भागों को भिन्न, चित्र या संख्या रेखा से दिखाएँ, जिनमें एक के बराबर या उससे बड़े भिन्न भी हों।',
       es: 'Representa partes de un mismo entero con fracciones, dibujos o una recta numérica, incluso valores iguales o mayores que uno.',

@@ -11,6 +11,7 @@ export const zeroDividend_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — ნული გასაყოფის როლში',
     kk: 'Бөлу — бөлінгіш нөл',
     en: 'Division — Zero dividend',
+    qm: 'Bölüv — sıfır bölüngen sayı',
     zh: '除法 — 被除数为零',
     hi: 'भाग — शून्य भाज्य',
     es: 'División — Dividendo cero',
@@ -38,6 +39,7 @@ export const zeroDividend_Skill_Data = buildSkillConfig({
       'Zero divided by a nonzero number is zero, because that divisor multiplied by zero gives zero. Distinguish a zero dividend from the undefined operation of division by zero.',
     frontend: {
       en: 'Zero divided by any nonzero number is zero; this is different from trying to divide by zero.',
+      qm: 'Sıfırnı er angi sıfırdan farqlı sayığa bölseñ, netice sıfır ola. Bu sıfırğa bölmekten farqlıdır.',
       zh: '零除以任何非零数都等于零；这和除以零不同。',
       hi: 'शून्य को किसी भी शून्य से अलग संख्या से भाग देने पर शून्य मिलता है; यह शून्य से भाग देने से अलग है।',
       es: 'Cero dividido entre cualquier número distinto de cero es cero; no es lo mismo que dividir entre cero.',

@@ -12,6 +12,7 @@ export const cardinality_SkillGroup_Data = buildSkillGroupConfig({
   id: '0a3584de-bb32-4932-8f8d-c0fe908ce71d',
   name: {
     en: 'Cardinality',
+    qm: 'Eşyalar sayısını belgilemek',
     lt: 'Kiekybinis skaičiavimas',
     lv: 'Skaita noteikšana',
     et: 'Hulga suuruse määramine',
@@ -51,6 +52,7 @@ export const cardinality_SkillGroup_Data = buildSkillGroupConfig({
       'Understanding number as the cardinality of a set, including the empty set, and methods for determining and comparing the sizes of sets.',
     frontend: {
       en: 'Find how many objects are in a collection, including when it is empty. Compare collections by their number of objects, not by size or arrangement.',
+      qm: 'Bir toplumda, o boş olsa bile, qaç eşya olğanını tap. Toplumlarnı eşyalarnıñ ölçüsine ya da yerleşüvine köre degil, eşya sayısına köre qıyasla.',
       zh: '了解一组物品有多少个，包括一个也没有的情况。比较数量时看个数，而不是物品的大小或摆放方式。',
       hi: 'किसी समूह में कितनी वस्तुएँ हैं, यह जानें, चाहे समूह खाली ही क्यों न हो। तुलना वस्तुओं की संख्या से करें, उनके आकार या सजावट से नहीं।',
       es: 'Descubre cuántos objetos hay en un conjunto, incluso si está vacío. Compara cantidades, no el tamaño ni la disposición de los objetos.',

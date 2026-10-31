@@ -11,6 +11,7 @@ export const measurement_SkillDomain_Data = buildSkillDomainConfig({
   id: '01fcc12a-a71d-4741-a245-e3a4e045f9cd',
   name: {
     en: 'Measurement',
+    qm: 'Ölçüv',
     lt: 'Matavimas',
     lv: 'Mērīšana',
     et: 'Mõõtmine',

@@ -11,6 +11,7 @@ export const general_SkillGroup_Data = buildSkillGroupConfig({
   id: '44154798-a292-4ff4-8f64-5093114af194',
   name: {
     en: 'General measurement skills',
+    qm: 'Umumiy ölçüv becerileri',
     lt: 'Bendrieji matavimo įgūdžiai',
     lv: 'Vispārīgās mērīšanas prasmes',
     et: 'Üldised mõõtmisoskused',

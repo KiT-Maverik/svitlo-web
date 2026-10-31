@@ -11,6 +11,7 @@ export const equalGroups_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — თანაბარი ჯგუფები',
     kk: 'Көбейту — тең топтар',
     en: 'Multiplication — Equal groups',
+    qm: 'Arttıruv — teñ toparlar',
     zh: '乘法 — 等量组',
     hi: 'गुणा — समान समूह',
     es: 'Multiplicación — Grupos iguales',
@@ -38,6 +39,7 @@ export const equalGroups_Skill_Data = buildSkillConfig({
       'Multiplication relates the number of equally sized groups, the size of one group, and the total number of objects. Unequal groups cannot be represented by a single group-count-times-group-size product without another model.',
     frontend: {
       en: 'You can find a total from the number of equally sized groups and the number of items in each group.',
+      qm: 'Teñ ölçüdeki toplarnıñ sayısını ve er topardaki eşya sayısını bilerek eşyalarnıñ umumiy sayısını tapa bilesiñ.',
       zh: '你能根据相等的组数和每组的数量求出总数。',
       hi: 'तुम बराबर समूहों की संख्या और हर समूह में वस्तुओं की संख्या से कुल संख्या निकाल सकते हो।',
       es: 'Puedes encontrar el total conociendo cuántos grupos iguales hay y cuántos elementos contiene cada uno.',

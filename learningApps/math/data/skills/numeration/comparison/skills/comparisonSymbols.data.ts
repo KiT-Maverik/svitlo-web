@@ -11,6 +11,7 @@ export const comparisonSymbols_Skill_Data = buildSkillConfig({
     ka: 'შედარების ნიშნები <, > და =',
     kk: 'Салыстыру таңбалары <, > және =',
     en: 'Comparison symbols <, > and =',
+    qm: 'Qıyaslav işaretleri <, > ve =',
     zh: '使用比较符号 <、> 和 =',
     hi: 'तुलना चिह्न <, > और =',
     es: 'Signos de comparación <, > y =',
@@ -38,6 +39,7 @@ export const comparisonSymbols_Skill_Data = buildSkillConfig({
       'The symbols <, >, and = respectively express less than, greater than, and equality. Operand order determines inequality direction; swapping distinct numbers requires reversing the comparison sign.',
     frontend: {
       en: 'Use <, >, and = to show which number is smaller, larger, or equal. Switching two different numbers reverses the inequality sign.',
+      qm: 'Qaysı sayınıñ daa kiçik, daa büyük ya da teñ olğanını köstermek içün <, > ve = işaretlerini qullan. Eki farqlı sayınıñ yerlerini deñiştirseñ, teñsizlik işaretiniñ yönü de deñişe.',
       zh: '用<、>和=表示小于、大于或等于。交换两个不同数的位置时，不等号的方向也要改变。',
       hi: '<, > और = से छोटी, बड़ी या बराबर संख्याएँ दिखाएँ। दो अलग संख्याओं की जगह बदलने पर असमानता का चिह्न उलटता है।',
       es: 'Usa <, > y = para indicar menor que, mayor que e igual. Al intercambiar dos números distintos, invierte el signo de desigualdad.',

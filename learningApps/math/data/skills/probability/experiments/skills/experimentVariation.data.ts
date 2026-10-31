@@ -5,6 +5,7 @@ export const experimentVariation_Skill_Data = buildSkillConfig({
   id: '90f7775d-bb0d-4b7b-85fd-d56870116d3f',
   name: {
     en: 'Comparing results of repeated random experiments',
+    qm: 'Tekrarlanğan tesadüfiy tecribelerniñ neticelerini qıyaslav',
     lt: 'Kartojamų atsitiktinių bandymų rezultatų palyginimas',
     lv: 'Atkārtotu nejaušu eksperimentu rezultātu salīdzināšana',
     et: 'Korduvate juhukatsete tulemuste võrdlemine',
@@ -38,6 +39,7 @@ export const experimentVariation_Skill_Data = buildSkillConfig({
       "Repetitions of a random experiment under identical conditions can yield different outcome frequencies across finite runs. This natural sampling variation must be distinguished from changes to the experiment's rules, conditions, or probabilities.",
     frontend: {
       en: 'You can compare results from repeated random experiments and recognize that the counts can differ even when the rules and chances stay the same.',
+      qm: 'Tekrarlanğan tesadüfiy tecribelerniñ neticelerini qıyaslay ve qaide hem ihtimallar deñişmese bile, neticelerniñ sayıları farqlı olabilecegini añlay bilesiñ.',
       zh: '你能比较重复随机试验的结果，认识到即使规则和概率不变，各次试验中结果出现的次数也可能不同。',
       hi: 'आप बार-बार किए गए यादृच्छिक प्रयोगों के परिणामों की तुलना कर सकते हैं और समझ सकते हैं कि नियम और संभावनाएँ समान रहने पर भी उनकी गिनती अलग हो सकती है।',
       es: 'Puedes comparar los resultados de experimentos aleatorios repetidos y reconocer que las frecuencias pueden variar aunque las reglas y las probabilidades sean las mismas.',

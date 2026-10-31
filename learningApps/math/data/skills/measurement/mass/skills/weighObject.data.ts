@@ -5,6 +5,7 @@ export const weighObject_Skill_Data = buildSkillConfig({
   id: '401849ab-d37f-49a3-9179-da85f6704707',
   name: {
     en: 'Reading a scale and recording mass with units',
+    qm: 'Terazini oqumaq ve kütleni birliknen yazmaq',
     lt: 'Svarstyklių rodmenų skaitymas ir masės užrašymas vienetais',
     lv: 'Svaru rādījumu nolasīšana un masas pierakstīšana ar mērvienībām',
     et: 'Kaalu näidu lugemine ja massi märkimine ühikutega',
@@ -38,6 +39,7 @@ export const weighObject_Skill_Data = buildSkillConfig({
       "A mass reading is meaningful only with its unit and the instrument's scale. Interpret divisions, graduation intervals, and the physical quantity being measured.",
     frontend: {
       en: "You can read a scale to find an object's mass and write the result with the right unit, paying attention to the scale marks.",
+      qm: 'Teraziniñ belgilerine diqqat etip eşyanıñ kütlesini oqu ve neticeni doğru ölçü birliknen yaz.',
       zh: '你能根据秤的刻度读出物体的质量，并用正确的单位记录测量结果。',
       hi: 'आप तराजू के निशान ध्यान से पढ़कर वस्तु का द्रव्यमान जान सकते हैं और परिणाम सही इकाई में लिख सकते हैं।',
       es: 'Puedes leer una báscula para saber la masa de un objeto y anotar el resultado con su unidad, prestando atención a las marcas de la escala.',

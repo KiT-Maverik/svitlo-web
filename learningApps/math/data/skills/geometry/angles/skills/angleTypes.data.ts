@@ -5,6 +5,7 @@ export const angleTypes_Skill_Data = buildSkillConfig({
   id: '3b0bc126-23d9-4350-82f3-11df0c34b571',
   name: {
     en: 'Distinguishing acute, right and obtuse angles',
+    qm: 'Sivri, doğru ve küt köşelerni ayırmaq',
     lt: 'Smailiųjų, stačiųjų ir bukųjų kampų atskyrimas',
     lv: 'Šauru, taisnu un platu leņķu atšķiršana',
     et: 'Terav-, täis- ja nürinurkade eristamine',
@@ -38,6 +39,7 @@ export const angleTypes_Skill_Data = buildSkillConfig({
       'An acute angle has measure strictly between 0 and 90 degrees, a right angle measures 90 degrees, and an obtuse angle lies strictly between 90 and 180 degrees. The drawn lengths of the arms do not affect classification.',
     frontend: {
       en: 'Tell acute angles (less than 90°), right angles (90°), and obtuse angles (between 90° and 180°) apart.',
+      qm: 'Sivri köşelerni (90°-den kiçik), doğru köşelerni (90°) ve küt köşelerni (90° ile 180° arasında) bir-birinden ayıra bilesiñ.',
       zh: '区分锐角（小于90°）、直角（90°）和钝角（大于90°且小于180°）。',
       hi: 'न्यून कोण (90° से कम), समकोण (90°) और अधिक कोण (90° से 180° के बीच) पहचानें।',
       es: 'Distingue ángulos agudos (menos de 90°), rectos (90°) y obtusos (entre 90° y 180°).',

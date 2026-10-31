@@ -5,6 +5,7 @@ export const readSimpleTable_Skill_Data = buildSkillConfig({
   id: '68637838-f4bd-4a06-a40f-a86a53a27d19',
   name: {
     en: 'Reading a simple data table',
+    qm: 'Sade malümat cedvelini oqumaq',
     lt: 'Paprastos duomenų lentelės skaitymas',
     lv: 'Vienkāršas datu tabulas lasīšana',
     et: 'Lihtsa andmetabeli lugemine',
@@ -38,6 +39,7 @@ export const readSimpleTable_Skill_Data = buildSkillConfig({
       'Interpreting a table requires locating the relevant row, column, heading, and unit and relating them to the question. A bare number without its category or variable is not a complete interpretation.',
     frontend: {
       en: 'You can find the answer to a question in a table by matching the right row, column, label, and unit.',
+      qm: 'Doğru satırnı, sütunnı, adı ve ölçü birlemini tapıp, cedveldeki sualniñ cevabını bula bilesiñ.',
       zh: '你能根据问题找到表格中正确的行、列、标签和单位，从而读出答案。',
       hi: 'आप प्रश्न का उत्तर पाने के लिए तालिका की सही पंक्ति, स्तंभ, नाम और इकाई पहचान सकते हैं।',
       es: 'Puedes encontrar la respuesta a una pregunta en una tabla eligiendo la fila, columna, etiqueta y unidad correctas.',

@@ -5,6 +5,7 @@ export const explainStrategy_Skill_Data = buildSkillConfig({
   id: '195b4494-38ea-4ae0-a6c4-ab4ec583b5ee',
   name: {
     en: 'Explaining a chosen calculation strategy',
+    qm: 'Saylanğan esaplav usulını añlatmaq',
     lt: 'Pasirinktos skaičiavimo strategijos paaiškinimas',
     lv: 'Izvēlētās aprēķina stratēģijas izskaidrošana',
     et: 'Valitud arvutusstrateegia selgitamine',
@@ -38,6 +39,7 @@ export const explainStrategy_Skill_Data = buildSkillConfig({
       'A mathematical explanation must communicate the actual sequence of transformations and why they preserve the result or justify an approximation. Verbal, visual, and symbolic representations may differ but must express the same underlying reasoning.',
     frontend: {
       en: 'You can explain the steps of a calculation or estimate and why they work, using words, diagrams, or mathematical symbols.',
+      qm: 'Esaplavnıñ ya da tahminniñ adımlarını ve olarnıñ ne içün işlegenini sözler, diagrammalar ya da matematik işaretlernen añlata bilesiñ.',
       zh: '你能用语言、图示或数学符号说明计算或估算的步骤，以及这些步骤为什么成立。',
       hi: 'आप शब्दों, चित्रों या गणितीय चिह्नों से गणना या अनुमान के चरण और उनके सही होने का कारण समझा सकते हैं।',
       es: 'Puedes explicar los pasos de un cálculo o una estimación y por qué funcionan, con palabras, dibujos o símbolos matemáticos.',

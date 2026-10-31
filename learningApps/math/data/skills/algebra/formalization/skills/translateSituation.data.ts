@@ -5,6 +5,7 @@ export const translateSituation_Skill_Data = buildSkillConfig({
   id: '616323a8-423c-4ff8-9d1a-f19435a0dd26',
   name: {
     en: 'Representing a situation with an expression or equation',
+    qm: 'Vaziyetni ifade ya da musaviyliknen köstermek',
     lt: 'Situacijos užrašymas reiškiniu arba lygtimi',
     lv: 'Situācijas attēlošana ar izteiksmi vai vienādojumu',
     et: 'Olukorra esitamine avaldise või võrrandina',
@@ -38,6 +39,7 @@ export const translateSituation_Skill_Data = buildSkillConfig({
       'A symbolic model must preserve the essential quantities and dependencies of a real or mathematical situation, including known and unknown roles. Correct numbers combined by the wrong operation do not yield an appropriate model.',
     frontend: {
       en: 'You can turn a situation into a mathematical expression or equation that correctly shows the known quantities and what is unknown.',
+      qm: 'Berilgen vaziyetni belli olğan miqdarlarnı ve belli olmağan qıymetni doğru köstergen matematik ifadege ya da musaviylikke çevire bilesiñ.',
       zh: '你能把实际情况表示成数学表达式或方程，正确反映已知量和未知量。',
       hi: 'तुम किसी स्थिति को ऐसे गणितीय व्यंजक या समीकरण से दिखा सकते हो जिसमें ज्ञात और अज्ञात मात्राएँ सही तरह से जुड़ी हों।',
       es: 'Puedes representar una situación con una expresión o ecuación que refleje correctamente las cantidades conocidas y las desconocidas.',

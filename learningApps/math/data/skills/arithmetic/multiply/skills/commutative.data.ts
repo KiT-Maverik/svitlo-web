@@ -11,6 +11,7 @@ export const commutative_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — გადანაცვლებადობის თვისება',
     kk: 'Көбейту — ауыстырымдылық қасиеті',
     en: 'Multiplication — Commutative property',
+    qm: 'Arttıruv — yer deñiştirüv hasiyeti',
     zh: '乘法 — 交换律',
     hi: 'गुणा — क्रमविनिमेय नियम',
     es: 'Multiplicación — Propiedad conmutativa',
@@ -38,6 +39,7 @@ export const commutative_Skill_Data = buildSkillConfig({
       'Multiplication is commutative: a × b = b × a. Reorienting a rectangular array or establishing another one-to-one mapping can show why exchanging factors does not change the product.',
     frontend: {
       en: 'You can change the order of numbers being multiplied without changing their product.',
+      qm: 'Arttırılğan sayılarnıñ yerlerini deñiştirseñ de, arttıruv neticesi deñişmey.',
       zh: '你能交换两个因数的位置，而乘积不变。',
       hi: 'तुम गुणा की संख्याओं का क्रम बदल सकते हो, लेकिन गुणनफल वही रहता है।',
       es: 'Puedes cambiar el orden de los factores sin cambiar su producto.',

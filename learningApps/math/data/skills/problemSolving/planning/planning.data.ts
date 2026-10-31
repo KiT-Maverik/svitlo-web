@@ -13,6 +13,7 @@ export const planning_SkillGroup_Data = buildSkillGroupConfig({
   id: 'e6efe33e-ba9c-44c1-85c9-92ac9f83a74e',
   name: {
     en: 'Solution planning',
+    qm: 'Çezimni planlaştırmaq',
     lt: 'Sprendimo planavimas',
     lv: 'Risinājuma plānošana',
     et: 'Lahenduse kavandamine',

@@ -14,6 +14,7 @@ export const unknowns_SkillGroup_Data = buildSkillGroupConfig({
   id: '5209c6a1-5197-40eb-a562-b2f9162b887d',
   name: {
     en: 'Unknown values',
+    qm: 'Belli olmağan qıymetler',
     lt: 'Nežinomos reikšmės',
     lv: 'Nezināmās vērtības',
     et: 'Tundmatud väärtused',
@@ -55,6 +56,7 @@ export const unknowns_SkillGroup_Data = buildSkillGroupConfig({
       'Relationships between components and results of the four arithmetic operations that allow an unknown quantity to be found and verified.',
     frontend: {
       en: 'Learn to find and check missing numbers in addition, subtraction, multiplication, and division by using relationships between the operations.',
+      qm: 'Qoşuv, çıqaruv, arttıruv ve bölüv amelleri arasındaki bağlılıqlardan faydalanıp, eksik sayılarnı tapmaq ve teşkere etmekni ögren.',
       zh: '学习利用运算之间的联系，在加减乘除中求出并检查未知数。',
       hi: 'जोड़, घटाव, गुणा और भाग के संबंधों से अज्ञात संख्याएँ निकालना और जाँचना सीखो।',
       es: 'Aprende a encontrar y comprobar números desconocidos en sumas, restas, multiplicaciones y divisiones usando sus relaciones.',

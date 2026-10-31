@@ -11,6 +11,7 @@ export const equalGroups_Skill_Data = buildSkillConfig({
     ka: 'თანაბარი ჯგუფების ამოცანების ამოხსნა',
     kk: 'Тең топтарға арналған есептерді шығару',
     en: 'Solving equal-group problems',
+    qm: 'Teñ toparlar meselelerini çezmek',
     zh: '解决等组问题',
     hi: 'समान समूहों की समस्याएँ हल करना',
     es: 'Resolver problemas de grupos iguales',
@@ -38,6 +39,7 @@ export const equalGroups_Skill_Data = buildSkillConfig({
       'The total number of objects in equal groups is the number of groups multiplied by the size of each group. Any unknown one of the three related quantities can be obtained from the other two by the appropriate inverse operation when division is valid.',
     frontend: {
       en: 'You can solve equal-group problems by relating the number of groups, how many items are in each group, and the total, using multiplication or division.',
+      qm: 'Toparlar sayısını, er topardaki eşya sayısını ve umumiy miqdarnı bir-birine bağlap, arttıruv ya da bölüvnen teñ toparlar meselelerini çeze bilesiñ.',
       zh: '你能用乘法或除法联系相等组的组数、每组数量和总数，解决等量分组问题。',
       hi: 'आप बराबर समूहों की संख्या, हर समूह की वस्तुओं की संख्या और कुल संख्या को गुणा या भाग से जोड़कर समस्याएँ हल कर सकते हैं।',
       es: 'Puedes resolver problemas de grupos iguales relacionando el número de grupos, los elementos de cada grupo y el total mediante multiplicación o división.',

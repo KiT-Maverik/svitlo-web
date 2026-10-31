@@ -7,6 +7,7 @@ export const orientation_SkillGroup_Data = buildSkillGroupConfig({
   id: 'f4986b8c-60ea-4f06-aed5-0458fa8d3e08',
   name: {
     en: 'Spatial orientation',
+    qm: 'Fezada yön tapuv',
     lt: 'Orientavimasis erdvėje',
     lv: 'Orientēšanās telpā',
     et: 'Ruumiline orienteerumine',
@@ -45,6 +46,7 @@ export const orientation_SkillGroup_Data = buildSkillGroupConfig({
       'Verbal descriptions of relative positions and movements, following and giving route instructions, and navigating a simple grid.',
     frontend: {
       en: 'Describe where things are and how to move between places using directions, routes, and simple maps.',
+      qm: 'Yönler, yollar ve sade haritalar yardımınen eşyalarnıñ qayda olğanını ve yerler arasında nasıl areket etilgenini añlat.',
       zh: '用方向、路线和简单地图描述物体的位置以及如何到达目的地。',
       hi: 'दिशाओं, रास्तों और सरल नक्शों से बताएँ कि चीज़ें कहाँ हैं और एक जगह से दूसरी कैसे जाएँ।',
       es: 'Describe dónde están las cosas y cómo llegar de un lugar a otro usando direcciones, rutas y mapas sencillos.',
