@@ -1,0 +1,8 @@
+{
+  "id": "00000000-0000-4000-8000-000000000002",
+  "slug": "testRecognizeOrange",
+  "collection": "skill",
+  "name": "[TEST fr] Recognize orange",
+  "description": "[TEST fr] Recognize the color orange in a simple visual example.",
+  "language": "fr"
+}

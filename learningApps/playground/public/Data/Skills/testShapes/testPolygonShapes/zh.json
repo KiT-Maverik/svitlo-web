@@ -1,0 +1,23 @@
+{
+  "id": "00000000-0000-4000-8000-000000000013",
+  "slug": "testPolygonShapes",
+  "collection": "skillGroup",
+  "name": "[TEST zh] Polygon shapes",
+  "language": "zh",
+  "skills": [
+    {
+      "id": "00000000-0000-4000-8000-000000000012",
+      "slug": "testRecognizeSquare",
+      "collection": "skill",
+      "name": "[TEST zh] Recognize a square",
+      "description": "[TEST zh] Recognize a square in a simple visual example."
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000011",
+      "slug": "testRecognizeTriangle",
+      "collection": "skill",
+      "name": "[TEST zh] Recognize a triangle",
+      "description": "[TEST zh] Recognize a triangle in a simple visual example."
+    }
+  ]
+}

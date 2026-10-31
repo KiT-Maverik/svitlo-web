@@ -1,0 +1,8 @@
+{
+  "id": "00000000-0000-4000-8000-000000000001",
+  "slug": "testRecognizeRed",
+  "collection": "skill",
+  "name": "[TEST ka] Recognize red",
+  "description": "[TEST ka] Recognize the color red in a simple visual example.",
+  "language": "ka"
+}

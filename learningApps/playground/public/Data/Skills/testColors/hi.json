@@ -1,0 +1,53 @@
+{
+  "id": "00000000-0000-4000-8000-000000000007",
+  "slug": "testColors",
+  "collection": "skillDomain",
+  "name": "[TEST hi] Color recognition",
+  "language": "hi",
+  "groups": [
+    {
+      "id": "00000000-0000-4000-8000-000000000006",
+      "slug": "testCoolColors",
+      "collection": "skillGroup",
+      "name": "[TEST hi] Cool colors",
+      "skills": [
+        {
+          "id": "00000000-0000-4000-8000-000000000004",
+          "slug": "testRecognizeBlue",
+          "collection": "skill",
+          "name": "[TEST hi] Recognize blue",
+          "description": "[TEST hi] Recognize the color blue in a simple visual example."
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000005",
+          "slug": "testRecognizeGreen",
+          "collection": "skill",
+          "name": "[TEST hi] Recognize green",
+          "description": "[TEST hi] Recognize the color green in a simple visual example."
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000003",
+      "slug": "testWarmColors",
+      "collection": "skillGroup",
+      "name": "[TEST hi] Warm colors",
+      "skills": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "slug": "testRecognizeOrange",
+          "collection": "skill",
+          "name": "[TEST hi] Recognize orange",
+          "description": "[TEST hi] Recognize the color orange in a simple visual example."
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "testRecognizeRed",
+          "collection": "skill",
+          "name": "[TEST hi] Recognize red",
+          "description": "[TEST hi] Recognize the color red in a simple visual example."
+        }
+      ]
+    }
+  ]
+}

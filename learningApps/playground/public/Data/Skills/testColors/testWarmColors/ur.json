@@ -1,0 +1,23 @@
+{
+  "id": "00000000-0000-4000-8000-000000000003",
+  "slug": "testWarmColors",
+  "collection": "skillGroup",
+  "name": "[TEST ur] Warm colors",
+  "language": "ur",
+  "skills": [
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "slug": "testRecognizeOrange",
+      "collection": "skill",
+      "name": "[TEST ur] Recognize orange",
+      "description": "[TEST ur] Recognize the color orange in a simple visual example."
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "slug": "testRecognizeRed",
+      "collection": "skill",
+      "name": "[TEST ur] Recognize red",
+      "description": "[TEST ur] Recognize the color red in a simple visual example."
+    }
+  ]
+}

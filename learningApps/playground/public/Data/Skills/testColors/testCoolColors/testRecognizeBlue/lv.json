@@ -1,0 +1,8 @@
+{
+  "id": "00000000-0000-4000-8000-000000000004",
+  "slug": "testRecognizeBlue",
+  "collection": "skill",
+  "name": "[TEST lv] Recognize blue",
+  "description": "[TEST lv] Recognize the color blue in a simple visual example.",
+  "language": "lv"
+}
