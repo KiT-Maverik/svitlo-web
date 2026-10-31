@@ -2,16 +2,16 @@
 export const locale = {
   steps: { navigation: 'Dersniñ basamaqları' },
   quiz: {
-    test: 'Sınav',
+    test: 'Matematika sınavı',
     finish: 'Dersni bitir',
     nextQuestion: 'Nevbetteki sual',
     sound: 'Tamamlanma sesi',
-    skipped: 'Sınav atlanıldı. Dersni bitirmek içün sınavdan keçmek kerek.',
+    skipped: 'Matematika sınavı atlanıldı. Dersni bitirmek içün sınavdan keçmek kerek.',
     resumeQuiz: 'Sınavğa qayt',
     saveError: 'Neticeni saqlamaq mümkün olmadı. Sınavnı yañıdan bitirip baq.',
   },
   celebration: {
-    title: 'Tebrikler, sen bu dersni bitirdiñ!',
+    title: 'Tebrikler, matematika dersini bitirdiñ!',
     description: 'Nazariye, ameliyat, bilgi kartları ve sınav — bütün basamaqlar artında qaldı.',
     correctAnswers: 'Doğru cevaplarnıñ sayısı:',
     score: (score: number, total: number) => `${score} / ${total}`,
