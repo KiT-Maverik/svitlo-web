@@ -1,6 +1,6 @@
-import * from './sections/theory/scenes'
+import {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
 
-export const howLightMoves_Locale = {
+export const howLightMoves_Locale: HowLightMoves_Lesson_Locale = {
   name: {
     en: 'How Light Travels',
     qm: 'Yarıq nasıl yayıla?',

@@ -4,7 +4,7 @@ import {Quiz_Section_Locale} from "./sections/quiz/quiz.types";
 
 export type HowLightMoves_Sections = 'practice' | 'quiz' | 'theory';
 
-export type HowLightMoves_Locale = {
+export type HowLightMoves_Lesson_Locale = {
   name: string;
   section: {
     practice: Practice_Section_Locale
