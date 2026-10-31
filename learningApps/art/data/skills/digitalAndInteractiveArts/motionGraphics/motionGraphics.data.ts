@@ -71,7 +71,7 @@ export const motionGraphics_SkillGroup_Data = buildSkillGroupConfig({
           "et": "Kasuta liikuvat graafikat ideede, rütmi ja visuaalsete muutuste edastamiseks.",
           "be": "Выкарыстоўвайце рухомую графіку, каб перадаваць ідэі, рытм і візуальныя змены.",
           "ka": "გამოიყენეთ მოძრავი გრაფიკა იდეების, რიტმისა და ვიზუალური ცვლილებების გადმოსაცემად.",
-          "kk": "Идеяларды, ырғақты және визуалды өзгерістерді жеткізу үшін қозғалыстағы графиканы пайдаланыңыз."
+          "kk": "Идеяларды, ырғақты және визуалды өзгерістерді жеткізу үшін қозғалыстағы графиканы пайдаланыңыз.",
     
       qm: "Hareket, yazı ve körüniş elementleriniñ zaman içinde nasıl tertiplengenini keşf etiñiz.",},
   },
