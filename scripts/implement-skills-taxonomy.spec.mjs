@@ -185,7 +185,7 @@ test('create emits entity-owned IDs, direct imports and only allowed indexes',()
     const id=uuid(content);
     assert.match(id,/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/);
     ids.add(id);
-    assert.doesNotMatch(content,/\bslug\s*:/);
+    assert.match(content,/\bslug\s*:/);
   }
   assert.equal(ids.size,5);
   assert.match(source(f,'geometry/geometry.data.ts'),/angles: angles_SkillGroup_Data,/);
