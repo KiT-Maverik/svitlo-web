@@ -1,13 +1,34 @@
 import type { AssessmentMethodKey } from '@svitlo/engine/content';
 import type { LanguageCode } from '@svitlo/engine/localization';
+import type {Question_Type} from '@svitlo/engine/content';
+import type {Disability} from "@svitlo/engine";
 
 export type Quiz_Section_Locale = {
   name: string;
   welcome: string;
 };
 
-export type Quiz_Question_Locale = Record<LanguageCode, string>;
+export type Locale_Object = Record<LanguageCode, string>;
 export type Quiz_Question_Entities = Record<string, Quiz_Question_Locale>;
+
+export interface Question_Base {
+  id: string;
+  assessmentMethod: AssessmentMethodKey;
+  type: Question_Type
+  restrictions?: Disability[];
+  skillIds: string[];
+}
+
+export interface Question_SOA extends Question_Base {
+  type: 'select-one-answer';
+  answer:{
+    correct: Record<string, Locale_Object>;
+    incorrect: Record<string, Locale_Object>;
+    distractors: Record<string, Locale_Object>;
+  },
+  question:
+
+}
 
 export type HowLightMoves_Quiz_Question_Data = {
   id: string;
