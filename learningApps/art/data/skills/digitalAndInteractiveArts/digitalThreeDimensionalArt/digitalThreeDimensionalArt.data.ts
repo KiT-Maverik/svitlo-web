@@ -1,13 +1,9 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { applyDigitalThreeDimensionalMaterials_Skill_Data, composeADigitalThreeDimensionalScene_Skill_Data, lightADigitalThreeDimensionalScene_Skill_Data, modelDigitalThreeDimensionalForms_Skill_Data } from './skills';
-
 export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig({
   slug: "digitalThreeDimensionalArt",
   id: "7a47dab9-19a9-4d22-9308-e97353302f3f",
-  name: {
-    en: "Digital Three-Dimensional Art",
-  },
+  name: { en: "Build expressive virtual spaces through modeling, materials, light and composition." },
   skills: {
     applyDigitalThreeDimensionalMaterials: applyDigitalThreeDimensionalMaterials_Skill_Data,
     composeADigitalThreeDimensionalScene: composeADigitalThreeDimensionalScene_Skill_Data,
@@ -17,7 +13,34 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
   description: {
     methodological: "A digital scene requires modeling of volume, material appearance, lighting and viewpoint; the focus is expressive representation, not implementing a rendering engine.",
     frontend: {
-      en: "Build expressive virtual spaces through modeling, materials, light and composition.",
+          "en": "Build expressive virtual spaces through modeling, materials, light and composition.",
+          "zh": "通过建模、材质、光线和构图打造富有表现力的虚拟空间。",
+          "hi": "मॉडलिंग, सामग्री, प्रकाश और संरचना से अभिव्यंजक आभासी स्थान बनाएँ।",
+          "es": "Construye espacios virtuales expresivos mediante modelado, materiales, luz y composición.",
+          "ar": "أنشئ مساحات افتراضية معبّرة باستخدام النمذجة والمواد والإضاءة والتكوين.",
+          "fr": "Créez des espaces virtuels expressifs grâce à la modélisation, aux matériaux, à la lumière et à la composition.",
+          "bn": "মডেলিং, উপকরণ, আলো ও বিন্যাসের মাধ্যমে অভিব্যক্তিপূর্ণ ভার্চুয়াল স্থান তৈরি করুন।",
+          "pt": "Construa espaços virtuais expressivos por meio de modelagem, materiais, luz e composição.",
+          "ur": "ماڈلنگ، مواد، روشنی اور ترکیب کے ذریعے اظہار سے بھرپور مجازی جگہیں بنائیں۔",
+          "id": "Bangun ruang virtual yang ekspresif melalui pemodelan, material, cahaya, dan komposisi.",
+          "de": "Gestalte ausdrucksstarke virtuelle Räume durch Modellierung, Materialien, Licht und Komposition.",
+          "ja": "モデリング、素材、光、構図を通じて表現豊かな仮想空間をつくります。",
+          "ko": "모델링, 재질, 조명과 구성을 통해 표현력 있는 가상 공간을 만들어 보세요.",
+          "tr": "Modelleme, malzemeler, ışık ve kompozisyonla etkileyici sanal mekânlar oluşturun.",
+          "vi": "Xây dựng không gian ảo giàu biểu cảm bằng mô hình hóa, vật liệu, ánh sáng và bố cục.",
+          "ta": "மாதிரியாக்கம், பொருட்கள், ஒளி, அமைப்பு ஆகியவற்றால் வெளிப்பாட்டுமிக்க மெய்நிகர் இடங்களை உருவாக்குங்கள்.",
+          "te": "మోడలింగ్, పదార్థాలు, వెలుతురు, కూర్పుతో భావవ్యక్తీకరణ గల వర్చువల్ స్థలాలను నిర్మించండి.",
+          "mr": "मॉडेलिंग, साहित्य, प्रकाश आणि रचनेद्वारे अभिव्यक्तिपूर्ण आभासी जागा तयार करा.",
+          "ms": "Bina ruang maya yang ekspresif melalui pemodelan, bahan, pencahayaan dan gubahan.",
+          "he": "בנו מרחבים וירטואליים מלאי הבעה באמצעות מידול, חומרים, תאורה וקומפוזיציה.",
+          "pl": "Buduj ekspresyjne przestrzenie wirtualne dzięki modelowaniu, materiałom, światłu i kompozycji.",
+          "uk": "Створюйте виразні віртуальні простори за допомогою моделювання, матеріалів, світла й композиції.",
+          "lt": "Kurkite išraiškingas virtualias erdves pasitelkdami modeliavimą, medžiagas, šviesą ir kompoziciją.",
+          "lv": "Veidojiet izteiksmīgas virtuālās telpas ar modelēšanu, materiāliem, gaismu un kompozīciju.",
+          "et": "Loo väljendusrikkaid virtuaalseid ruume modelleerimise, materjalide, valguse ja kompositsiooni abil.",
+          "be": "Стварайце выразныя віртуальныя прасторы з дапамогай мадэлявання, матэрыялаў, святла і кампазіцыі.",
+          "ka": "მოდელირებით, მასალებით, განათებითა და კომპოზიციით შექმენით გამომსახველობითი ვირტუალური სივრცეები.",
+          "kk": "Модельдеу, материалдар, жарық пен композиция арқылы әсерлі виртуалды кеңістіктер құрыңыз."
     },
   },
 });
