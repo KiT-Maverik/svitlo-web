@@ -64,7 +64,7 @@ export const interpretUrbanLandmarks_Skill_Data = buildSkillConfig({
           "et": "Uuri, kuidas silmapaistvad linnamärgid aitavad inimestel orienteeruda ja sidet tunnetada.",
           "be": "Даследуйце, як выразныя гарадскія арыенціры дапамагаюць людзям арыентавацца і адчуваць сувязь з горадам.",
           "ka": "შეისწავლეთ, როგორ ეხმარება გამორჩეული ურბანული ღირსშესანიშნაობები ადამიანებს ორიენტირებასა და კავშირის განცდაში.",
-          "kk": "Қаланың ерекше нысандары адамдарға бағыт табуға және ортақтық сезінуге қалай көмектесетінін зерттеңіз。"
+          "kk": "Қаланың ерекше нысандары адамдарға бағыт табуға және ортақтық сезінуге қалай көмектесетінін зерттеңіз。",
     
       qm: "Ayrı yerlerniñ insanlarğa yol tapmağa ve bağlılıq duymağa nasıl yardım etkenini keşf etiñiz.",},
   },
