@@ -119,3 +119,20 @@ static published Skill Data. Changes update visible cards instantly. Settings
 are intentionally ephemeral and reset on a new page mount; no per-user storage
 is implemented. The navbar's existing locale selector synchronizes with the
 same context, and Domain JSON requests still load only the active language.
+
+## Mind-map actions in the right settings sidebar
+
+Under **Керування мапою**, the shared right-hand navbar settings drawer exposes:
+
+- **Згорнути все** — hide every branch below the profile avatar, and compact the Skill cards.
+- **Розгорнути все** — show every branch and expand all Skill cards.
+- **Вмістити в екран** — switch from the outline view to the radial map if needed, then
+  center and scale the *currently visible* nodes to the actual viewport.
+
+These buttons call the same page-owned actions as the map. The page context registers
+the live map actions while Skills has finished loading; controls are disabled before
+the map is available and released on unmount. Fit accounts for both compact and
+expanded Skill card dimensions and preserves user zoom/pan during ordinary node
+interaction until Fit is explicitly requested. The map's bottom-right fit icon
+invokes the exact same action. Removed redundant collapse/expand buttons from the
+top-of-page controls.
