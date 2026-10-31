@@ -8,7 +8,19 @@ import { urbanComposition_SkillGroup_Data } from './urbanComposition/urbanCompos
 export const architectureAndUrbanArts_SkillDomain_Data = buildSkillDomainConfig({
   slug: "architectureAndUrbanArts",
   id: "126f6ab5-e879-4982-abff-1729deeeb793",
-  name: { en: "Architecture and Urban Arts" },
+  name: {
+    en: "Architecture and Urban Arts",
+    zh: "建筑与城市艺术", hi: "वास्तुकला और शहरी कला", es: "Arquitectura y artes urbanas",
+    ar: "العمارة والفنون الحضرية", fr: "Architecture et arts urbains", bn: "স্থাপত্য ও নগরশিল্প",
+    pt: "Arquitetura e artes urbanas", ur: "فنِ تعمیر اور شہری فنون", id: "Arsitektur dan Seni Urban",
+    de: "Architektur und urbane Kunst", ja: "建築と都市芸術", ko: "건축과 도시 예술",
+    tr: "Mimarlık ve Kentsel Sanatlar", vi: "Kiến trúc và nghệ thuật đô thị", ta: "கட்டிடக்கலையும் நகர்ப்புறக் கலைகளும்",
+    te: "వాస్తుశిల్పం మరియు పట్టణ కళలు", mr: "वास्तुकला आणि नागरी कला", ms: "Seni Bina dan Seni Bandar",
+    he: "אדריכלות ואמנות עירונית", pl: "Architektura i sztuka miejska", uk: "Архітектура та міське мистецтво",
+    lt: "Architektūra ir miesto menai", lv: "Arhitektūra un pilsētas māksla", et: "Arhitektuur ja linnakunst",
+    be: "Архітэктура і гарадское мастацтва", ka: "არქიტექტურა და ურბანული ხელოვნება", kk: "Сәулет және қалалық өнер",
+    qm: "Mimarlıq ve şeer sanatları",
+  },
   groups: {
     architecturalFormAndStyle: architecturalFormAndStyle_SkillGroup_Data,
     architecturalSpace: architecturalSpace_SkillGroup_Data,
@@ -45,7 +57,8 @@ export const architectureAndUrbanArts_SkillDomain_Data = buildSkillDomainConfig(
           "et": "Avasta, kuidas hooned, tänavad ja avalikud ruumid loovad visuaalseid ja kultuurilisi kogemusi.",
           "be": "Даследуйце, як будынкі, вуліцы і грамадскія прасторы ствараюць візуальны і культурны досвед.",
           "ka": "შეისწავლეთ, როგორ ქმნის შენობები, ქუჩები და საჯარო სივრცეები ვიზუალურ და კულტურულ გამოცდილებას.",
-          "kk": "Ғимараттар, көшелер мен қоғамдық кеңістіктер визуалды және мәдени тәжірибені қалай қалыптастыратынын зерттеңіз。"
+          "kk": "Ғимараттар, көшелер мен қоғамдық кеңістіктер визуалды және мәдени тәжірибені қалай қалыптастыратынын зерттеңіз。",
+          "qm": "Binalar, sokaklar ve cemaat yerleri körüniş ve medeniy tecribeni nasıl yarata, keşf etiñiz."
     },
   },
 });
