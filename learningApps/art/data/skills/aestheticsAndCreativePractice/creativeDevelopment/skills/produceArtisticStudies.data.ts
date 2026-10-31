@@ -13,7 +13,7 @@ export const produceArtisticStudies_Skill_Data = buildSkillConfig({
           "pt": "Experimente esboços ou testes sonoros para descobrir no que uma ideia criativa pode se transformar.",
           "ur": "خاکے یا صوتی تجربے آزمائیں تاکہ معلوم ہو کہ تخلیقی خیال کیا شکل اختیار کر سکتا ہے۔",
           "id": "Coba sketsa atau eksperimen suara untuk menemukan kemungkinan pengembangan suatu gagasan kreatif.",
-          "de": "Probiere Skizzen oder Kl experimentelle Klangversuche aus, um herauszufinden, was aus einer kreativen Idee werden kann.",
+          "de": "Probiere Skizzen oder Klangexperimente aus, um herauszufinden, was aus einer kreativen Idee werden kann.",
           "ja": "スケッチや音の実験を試し、創造的なアイデアがどのように発展するかを探ります。",
           "ko": "스케치나 소리 실험을 통해 창의적인 아이디어가 어떻게 발전할 수 있는지 알아보세요.",
           "tr": "Yaratıcı bir fikrin neye dönüşebileceğini keşfetmek için eskizler veya ses deneyleri yapın.",
