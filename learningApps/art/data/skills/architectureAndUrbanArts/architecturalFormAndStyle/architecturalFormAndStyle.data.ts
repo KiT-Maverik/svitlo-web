@@ -7,6 +7,16 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
   id: "030e3145-f301-4171-a563-fea55b0586ff",
   name: {
     en: "Architectural Form and Style",
+    zh: "建筑形式与风格", hi: "वास्तु रूप और शैली", es: "Forma y estilo arquitectónicos",
+    ar: "الشكل والطراز المعماري", fr: "Forme et style architecturaux", bn: "স্থাপত্যের রূপ ও শৈলী",
+    pt: "Forma e estilo arquitetônicos", ur: "تعمیراتی شکل اور طرز", id: "Bentuk dan Gaya Arsitektur",
+    de: "Architekturform und -stil", ja: "建築の形態と様式", ko: "건축 형태와 양식",
+    tr: "Mimari Biçim ve Üslup", vi: "Hình thức và phong cách kiến trúc", ta: "கட்டிடக்கலை வடிவமும் பாணியும்",
+    te: "వాస్తు రూపం మరియు శైలి", mr: "वास्तुरूप आणि शैली", ms: "Bentuk dan Gaya Seni Bina",
+    he: "צורה וסגנון אדריכליים", pl: "Forma i styl architektoniczny", uk: "Архітектурна форма і стиль",
+    lt: "Architektūrinė forma ir stilius", lv: "Arhitektūras forma un stils", et: "Arhitektuurne vorm ja stiil",
+    be: "Архітэктурная форма і стыль", ka: "არქიტექტურული ფორმა და სტილი", kk: "Сәулеттік пішін мен стиль",
+    qm: "Mimari şekil ve üslüp",
   },
   skills: {
     analyzeABuildingFacade: analyzeABuildingFacade_Skill_Data,
@@ -45,6 +55,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       be: "Даследуй, што архітэктурны дэкор перадае ў сваім гістарычным кантэксце.",
       ka: "შეისწავლეთ, რას გადმოსცემს არქიტექტურული მორთულობა ისტორიულ კონტექსტში.",
       kk: "Сәулеттік әшекейдің тарихи контексте нені білдіретінін зерттеңіз.",
+      qm: "Binalarnıñ şekilleri ve bezek tafsilâtları mimariy fikirlerni nasıl ifade etkenini keşf etiñiz.",
     },
   },
 });
