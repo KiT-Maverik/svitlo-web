@@ -32,6 +32,7 @@ export const buildALimitedPalette_Skill_Data = buildSkillConfig({
     be: "Стварыць абмежаваную палітру",
     ka: "შეზღუდული ფერთა პალიტრის შექმნა",
     kk: "Шектеулі түстер палитрасын құрастыру",
+    qm: "Sınırlı tüs palitrasını qurmaq",
   },
   description: {
     methodological: "Choose a constrained pigment set that still supports coherent variation within a work.",
@@ -64,6 +65,7 @@ export const buildALimitedPalette_Skill_Data = buildSkillConfig({
       be: "Стварыце гарманічны жывапісны твор з дапамогай невялікай колькасці старанна падабраных колераў.",
       ka: "შექმენით ჰარმონიული ნახატი საგულდაგულოდ შერჩეული რამდენიმე ფერით.",
       kk: "Мұқият таңдалған аз ғана түспен үйлесімді картина жасаңыз.",
+      qm: "Dikkatnen saylanğan az sayıda boya ile ahenkli bir resim yaratın.",
     },
   },
 });
