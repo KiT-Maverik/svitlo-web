@@ -1,0 +1,115 @@
+import { beforeEach, afterEach, describe, expect, it, vi } from 'vitest';
+import { fireEvent, render, screen, within } from '@testing-library/react';
+import { SkillsMindMap } from './SkillsMindMap';
+import { SkillsPagePreferences } from './SkillsPagePreferences';
+import { SkillsPageSettingsProvider } from './SkillsPageSettingsContext';
+
+const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
+const domain = {
+  id: uuid(1), slug: 'testColors', collection: 'skillDomain',
+  name: 'Кольори', language: 'uk',
+  groups: [{
+    id: uuid(2), slug: 'testWarmColors', collection: 'skillGroup',
+    name: 'Теплі кольори',
+    skills: [{
+      id: uuid(3), slug: 'testRed', collection: 'skill',
+      name: 'Червоний', description: 'Розпізнавати червоний.',
+    }],
+  }],
+};
+
+describe('Skills page-scoped settings', () => {
+  const originalFetch = globalThis.fetch;
+
+  beforeEach(() => {
+    document.documentElement.lang = 'uk';
+    window.history.replaceState({}, '', '/skills');
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      const result: unknown = url === '/Data/Skills/index.json'
+        ? { version: 1, languages: ['uk'], domains: ['testColors'] }
+        : url === '/Data/Skills/testColors/uk.json' ? domain : null;
+      return { ok: result !== null, status: result === null ? 404 : 200, json: async () => result };
+    }));
+  });
+
+  afterEach(() => {
+    vi.stubGlobal('fetch', originalFetch);
+    window.history.replaceState({}, '', '/');
+  });
+
+  function renderPage() {
+    return render(
+      <SkillsPageSettingsProvider>
+        <SkillsPagePreferences />
+        <SkillsMindMap />
+      </SkillsPageSettingsProvider>,
+    );
+  }
+
+  it('shows all three switches and enables mastery, color and Pump by default', async () => {
+    renderPage();
+    const card = await screen.findByTestId('skill-node-testRed');
+    const settings = screen.getByRole('region', { name: 'Налаштування сторінки Skills' });
+    const mastery = within(settings).getByRole('checkbox', { name: 'Показувати володіння навичкою' });
+    const tint = within(settings).getByRole('checkbox', { name: 'Підсвічувати рівень кольором' });
+    const pump = within(settings).getByRole('checkbox', { name: 'Показувати «Прокачати»' });
+    expect(mastery).toBeChecked();
+    expect(tint).toBeChecked();
+    expect(pump).toBeChecked();
+    expect(card).toHaveAttribute('data-tier');
+    expect(within(card).getByRole('progressbar')).toBeInTheDocument();
+
+    fireEvent.click(within(card).getByRole('button', { name: /Інформація про скіл/ }));
+    expect(within(card).getByRole('link', { name: /Прокачати/ })).toBeInTheDocument();
+  });
+
+  it('hides mastery metrics, disables tint and keeps the card interactive', async () => {
+    renderPage();
+    const card = await screen.findByTestId('skill-node-testRed');
+    const mastery = screen.getByRole('checkbox', { name: 'Показувати володіння навичкою' });
+    const tint = screen.getByRole('checkbox', { name: 'Підсвічувати рівень кольором' });
+    fireEvent.click(mastery);
+    expect(within(card).queryByRole('progressbar')).not.toBeInTheDocument();
+    expect(card).not.toHaveAttribute('data-tier');
+    expect(tint).toBeDisabled();
+    fireEvent.click(within(card).getByRole('button', { name: /Інформація про скіл/ }));
+    expect(card).toHaveAttribute('data-expanded', 'true');
+    expect(within(card).getByRole('link', { name: /Прокачати/ })).toBeInTheDocument();
+    fireEvent.click(mastery);
+    expect(within(card).getByRole('progressbar')).toBeInTheDocument();
+    expect(tint).toBeEnabled();
+  });
+
+  it('keeps numeric mastery but removes tier colors when highlighting is disabled', async () => {
+    renderPage();
+    const card = await screen.findByTestId('skill-node-testRed');
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Підсвічувати рівень кольором' }));
+    expect(card).not.toHaveAttribute('data-tier');
+    expect(within(card).getByRole('progressbar')).toBeInTheDocument();
+    expect(within(card).getByTestId('mastery-' + uuid(3))).toHaveAttribute('data-tier', 'neutral');
+  });
+
+  it('removes Pump links across both compact outline and expanded cards', async () => {
+    renderPage();
+    const card = await screen.findByTestId('skill-node-testRed');
+    fireEvent.click(within(card).getByRole('button', { name: /Інформація про скіл/ }));
+    expect(within(card).getByRole('link', { name: /Прокачати/ })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Показувати «Прокачати»' }));
+    expect(within(card).queryByRole('link', { name: /Прокачати/ })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Список' }));
+    const list = screen.getByRole('region', { name: 'Навички за доменами' });
+    expect(within(list).queryByRole('link', { name: /Прокачати/ })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Показувати «Прокачати»' }));
+    expect(within(list).getByRole('link', { name: /Прокачати/ })).toBeInTheDocument();
+  });
+
+  it('resets page preferences when a new page provider is mounted', async () => {
+    const first = renderPage();
+    await screen.findByTestId('skill-node-testRed');
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Показувати володіння навичкою' }));
+    expect(screen.getByRole('checkbox', { name: 'Показувати володіння навичкою' })).not.toBeChecked();
+    first.unmount();
+    renderPage();
+    expect(screen.getByRole('checkbox', { name: 'Показувати володіння навичкою' })).toBeChecked();
+  });
+});
