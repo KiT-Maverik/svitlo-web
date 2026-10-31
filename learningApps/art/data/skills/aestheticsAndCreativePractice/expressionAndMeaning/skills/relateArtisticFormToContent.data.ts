@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const relateArtisticFormToContent_Skill_Data = buildSkillConfig({
-  slug: "relateArtisticFormToContent",
-  id: "aef86e64-86f7-46c1-baa1-b131cfe7369a",
-  name: {
-    en: "Relate Artistic Form to Content",
-  },
-  description: {
-    methodological: "Explain how medium and organization shape what an expressive subject communicates.",
-    frontend: {
-      en: "See how the way something is made changes the meaning it conveys.",
-    },
-  },
+  slug: "relateArtisticFormToContent", id: "aef86e64-86f7-46c1-baa1-b131cfe7369a", name: { en: "Relate Artistic Form to Content" },
+  description: { methodological: "Explain how medium and organization shape what an expressive subject communicates.", frontend: {
+          "en": "See how the way something is made changes the meaning it conveys.",
+          "zh": "观察作品的制作方式如何改变它所传达的意义。",
+          "hi": "देखें कि किसी चीज़ को बनाने का तरीका उसके अर्थ को कैसे बदलता है।",
+          "es": "Observa cómo la manera de crear algo cambia el significado que transmite.",
+          "ar": "لاحظ كيف تغيّر طريقة صنع العمل المعنى الذي ينقله.",
+          "fr": "Voyez comment la manière de créer une œuvre modifie le sens qu’elle transmet.",
+          "bn": "দেখুন, কোনো কিছু তৈরির পদ্ধতি কীভাবে তার প্রকাশিত অর্থ বদলে দেয়।",
+          "pt": "Veja como a maneira de criar algo altera o significado que transmite.",
+          "ur": "دیکھیں کہ کسی چیز کو بنانے کا طریقہ اس کے پیغام کو کیسے بدل دیتا ہے۔",
+          "id": "Lihat bagaimana cara sesuatu dibuat mengubah makna yang disampaikannya.",
+          "de": "Erkenne, wie die Herstellungsweise die vermittelte Bedeutung verändert.",
+          "ja": "作品のつくり方によって、伝わる意味がどのように変わるかを見てみましょう。",
+          "ko": "무언가를 만드는 방식이 전달하는 의미를 어떻게 바꾸는지 살펴보세요.",
+          "tr": "Bir şeyin yapılma biçiminin aktardığı anlamı nasıl değiştirdiğini görün.",
+          "vi": "Xem cách thức tạo nên một tác phẩm làm thay đổi ý nghĩa mà nó truyền tải.",
+          "ta": "ஒன்றை உருவாக்கும் முறை அது தெரிவிக்கும் பொருளை எவ்வாறு மாற்றுகிறது என்பதைப் பாருங்கள்.",
+          "te": "ఏదైనా రూపొందించే విధానం అది తెలియజేసే అర్థాన్ని ఎలా మారుస్తుందో చూడండి.",
+          "mr": "एखादी गोष्ट बनवण्याची पद्धत तिचा अर्थ कसा बदलते ते पाहा.",
+          "ms": "Lihat bagaimana cara sesuatu dihasilkan mengubah makna yang disampaikannya.",
+          "he": "ראו כיצד אופן היצירה משנה את המשמעות שהיא מעבירה.",
+          "pl": "Zobacz, jak sposób wykonania wpływa na przekazywane znaczenie.",
+          "uk": "Подивіться, як спосіб створення змінює зміст, який передає твір.",
+          "lt": "Pamatykite, kaip kūrinio sukūrimo būdas keičia jo perteikiamą prasmę.",
+          "lv": "Uzziniet, kā darba radīšanas veids maina tā pausto nozīmi.",
+          "et": "Vaata, kuidas teose valmistamise viis muudab selle edastatavat tähendust.",
+          "be": "Паглядзіце, як спосаб стварэння змяняе сэнс, які перадае твор.",
+          "ka": "ნახეთ, როგორ ცვლის შექმნის გზა იმ მნიშვნელობას, რომელსაც ნამუშევარი გადმოსცემს.",
+          "kk": "Figyelje meg, hogyan változtatja meg az alkotás módja a közvetített jelentést。"
+    } },
 });
