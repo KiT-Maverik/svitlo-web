@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Editorial Markdown -> direct-composition Skill Data. Dry run is the default. */
+/** Editorial Markdown -> direct-composition Skill Data. English-first; dry run by default. */
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -107,20 +107,29 @@ function dict(object, field) {
   }
   return result;
 }
-function checkLocales(value, field, codes) {
+function checkLocaleValues(value, field, codes) {
+  // Incomplete dictionaries are intentional: TypeScript must report missing
+  // translations, not the code generator. Never emit empty/fallback strings.
   if (!value || typeof value !== 'object' || Array.isArray(value)) throw Error('Missing localized ' + field);
-  const keys = Object.keys(value);
-  const missing = codes.filter(c => typeof value[c] !== 'string' || !value[c].trim() || /^\[(?:Not authored|TODO)\]$/i.test(value[c].trim()));
-  const extras = keys.filter(k => !codes.includes(k));
-  if (missing.length || extras.length) throw Error('Incomplete locales for ' + field + ': missing ' + missing.join(', ') + '; unexpected ' + extras.join(', '));
+  const invalid = Object.entries(value).filter(([code, text]) =>
+    !codes.includes(code) || typeof text !== 'string' || !text.trim() ||
+    /^\[(?:Not authored|TODO)\]$/i.test(text.trim())).map(([code]) => code);
+  if (invalid.length) throw Error('Invalid locales for ' + field + ': ' + invalid.join(', '));
   return value;
 }
 function translations(entry, codes) {
   const given = opts.translations[entry.key] ?? {};
   if (!given || typeof given !== 'object' || Array.isArray(given)) throw Error('Invalid translations for ' + entry.key);
   if (Object.keys(given).some(k => k !== 'name' && k !== 'fe')) throw Error('Unexpected translation field for ' + entry.key);
-  if (given.name && given.name.en !== entry.title) throw Error('Translated name.en differs from approved heading');
-  if (given.fe && entry.friendly !== '[Not authored]' && given.fe.en !== entry.friendly) throw Error('Translated fe.en differs from approved frontend text');
+  for (const field of ['name','fe'])
+    if (given[field] !== undefined &&
+      (!given[field] || typeof given[field] !== 'object' || Array.isArray(given[field])))
+      throw Error('Invalid ' + field + ' translations for ' + entry.key);
+  if (given.name && Object.hasOwn(given.name,'en') && given.name.en !== entry.title)
+    throw Error('Translated name.en differs from approved heading');
+  if (given.fe && entry.friendly !== '[Not authored]' &&
+      Object.hasOwn(given.fe,'en') && given.fe.en !== entry.friendly)
+    throw Error('Translated fe.en differs from approved frontend text');
   return given;
 }
 function parse(markdown) {
@@ -385,22 +394,25 @@ function domainPlan(d,entities,registry,codes) {
       throw Error('Implemented source missing: '+e.key);
     const prior=found?existing(e):null;
     const reviewed=translations(e,codes);
-    const name=reviewed.name??prior?.name,fe=reviewed.fe??prior?.fe;
-    checkLocales(name,'name '+e.key,codes);
-    if (name.en!==e.title) throw Error('English name differs from approved title: '+e.key);
-    if (e.kind==='Skill' && e.friendly==='[Not authored]')
+    // Markdown owns English. Keep approved existing translations and overlay
+    // optional reviewed translations, but do not manufacture any other locale.
+    const name={...(prior?.name??{}),...(reviewed.name??{}),en:e.title};
+    const authoredFe=e.friendly!=='[Not authored]';
+    const fe=authoredFe ?
+      {...(prior?.fe??{}),...(reviewed.fe??{}),en:e.friendly} :
+      (prior?.fe || reviewed.fe ? {...(prior?.fe??{}),...(reviewed.fe??{})} : undefined);
+    checkLocaleValues(name,'name '+e.key,codes);
+    if (e.kind==='Skill' && !authoredFe)
       throw Error('Skill frontend description is not authored: '+e.key);
-    if (e.kind==='Skill' || e.friendly!=='[Not authored]') {
-      checkLocales(fe,'frontend '+e.key,codes);
-      if (fe.en!==e.friendly) throw Error('English frontend text differs from approved draft: '+e.key);
-    } else if (fe) checkLocales(fe,'frontend '+e.key,codes);
+    if (e.kind==='Skill' || authoredFe) checkLocaleValues(fe,'frontend '+e.key,codes);
+    else if (fe) checkLocaleValues(fe,'frontend '+e.key,codes);
     if (!found && registry.slugs.has(e.slug.toLowerCase()) &&
       registry.slugs.get(e.slug.toLowerCase())!==file)
       throw Error('Slug already exists elsewhere in source: '+e.slug);
     const id=prior?.id??allocateId(registry.ids);
     const kids=e.kind==='Skill'?[]:children(e,local);
     const code=found && e.action==='update' && stableMembership(e,kids) ?
-      patchExisting(e,reviewed,e.methodological) :
+      patchExisting(e,{name,fe},e.methodological) :
       render(e,{id,name,fe,methodological:e.methodological},kids);
     if (found && e.action==='create') {
       if (kids.length && !stableMembership(e,kids)) throw Error('Create cannot change existing parent membership: '+e.key);
