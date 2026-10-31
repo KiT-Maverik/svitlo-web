@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const createBranchingArtNarratives_Skill_Data = buildSkillConfig({
   slug: "createBranchingArtNarratives",
   id: "1d8b812c-3632-4d3f-a6d3-40fbc947d8a8",
-  name: { en: "Create Branching Art Narratives" },
+  name: {
+    en: "Create Branching Art Narratives",
+    zh: "创作分支式艺术叙事",
+    hi: "शाखाओं वाली कलात्मक कथाएँ बनाएँ",
+    es: "Crear narrativas artísticas ramificadas",
+    ar: "إنشاء سرديات فنية متفرعة",
+    fr: "Créer des récits artistiques à embranchements",
+    bn: "শাখাবিশিষ্ট শৈল্পিক আখ্যান তৈরি করুন",
+    pt: "Criar narrativas artísticas ramificadas",
+    ur: "شاخ دار فنّی کہانیاں بنائیں",
+    id: "Membuat Narasi Artistik Bercabang",
+    de: "Verzweigte künstlerische Erzählungen gestalten",
+    ja: "分岐する芸術的な物語を作る",
+    ko: "분기형 예술 서사 만들기",
+    tr: "Dallanıp Budaklanan Sanatsal Anlatılar Oluşturmak",
+    vi: "Tạo câu chuyện nghệ thuật phân nhánh",
+    ta: "கிளைகளாகப் பிரியும் கலைக் கதைகளை உருவாக்குங்கள்",
+    te: "శాఖలుగా సాగే కళాత్మక కథనాలను సృష్టించండి",
+    mr: "शाखायुक्त कलात्मक कथानके तयार करा",
+    ms: "Mencipta Naratif Artistik Bercabang",
+    he: "יצירת נרטיבים אמנותיים מסתעפים",
+    pl: "Tworzyć rozgałęzione narracje artystyczne",
+    uk: "Створювати розгалужені мистецькі оповіді",
+    lt: "Kurti šakotus meninius pasakojimus",
+    lv: "Veidot sazarotus mākslinieciskus stāstus",
+    et: "Hargnevate kunstiliste narratiivide loomine",
+    be: "Ствараць разгалінаваныя мастацкія аповеды",
+    ka: "განშტოებული მხატვრული ნარატივების შექმნა",
+    kk: "Тармақталған көркем әңгімелер жасау",
+    qm: "Dallanğan sanat hikâyelerini yaratmaq",
+  },
   description: {
     methodological: "Organize viewer decisions that lead to meaningfully different narrative experiences.",
     frontend: {
@@ -35,6 +65,7 @@ export const createBranchingArtNarratives_Skill_Data = buildSkillConfig({
           "be": "Дазвольце выбару аўдыторыі весці да розных змястоўных сюжэтных шляхоў.",
           "ka": "მიეცით აუდიტორიის არჩევანს საშუალება, სხვადასხვა შინაარსიან სიუჟეტურ გზამდე მიიყვანოს.",
           "kk": "Көрермен таңдауы әртүрлі мағыналы оқиға желілеріне апарсын。"
-    },
+    
+      qm: "Seyirciniñ saylavları ayrı ve manalı hikâye yollarına alıp barğanını qurıñız.",},
   },
 });
