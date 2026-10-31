@@ -64,7 +64,7 @@ export const composeALandscapeView_Skill_Data = buildSkillConfig({
           "et": "Sea taimed, vaated ja pilgupüüdjad mõjuvaks väliruumi kompositsiooniks.",
           "be": "Размясціце расліны, краявіды і акцэнтныя элементы ў выразнай кампазіцыі пад адкрытым небам.",
           "ka": "მცენარეები, ხედები და აქცენტები მიმზიდველ გარე კომპოზიციად დაალაგეთ.",
-          "kk": "Өсімдіктерді, көріністерді және назар аударатын нысандарды тартымды ашық кеңістік композициясына біріктіріңіз。"
+          "kk": "Өсімдіктерді, көріністерді және назар аударатын нысандарды тартымды ашық кеңістік композициясына біріктіріңіз。",
     
       qm: "Ösimliklerni, körünişlerni ve diqqet merkezlerini tesirli açıq hava kompozitsiyasına tertip etiñiz.",},
   },
