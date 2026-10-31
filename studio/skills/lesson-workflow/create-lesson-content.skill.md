@@ -10,7 +10,7 @@ The Lesson must **teach, illustrate, invite prediction and meaningful action, ex
 
 This Skill works on **existing Lesson directories selected or identified by the user**, not arbitrary new Lesson topics.
 
-- If the user names a textbook, directory, one Lesson, several Lessons or another unambiguous natural-language selection, resolve the exact existing directories under `<PackageRoot>/Data/Lessons/<bucketNumber>/<lessonSlug>/`. Read those folders; **do not ask the user to repeat already clear scope**.
+- If the user names a textbook, directory, one Lesson, several Lessons or another unambiguous natural-language selection, resolve the exact existing directories under `<PackageRoot>/data/lessons/<bucketNumber>/<lessonSlug>/`. Read those folders; **do not ask the user to repeat already clear scope**.
 - The user may also ask to **find Lessons with a Methodologist Brief / methodology outline but no `content.md`**. Inspect the specified textbook or subtree across numbered buckets, recognizing `methodologist-brief.md` and verifiable legacy methodical filenames. Treat `content.md` as the canonical Lesson Content filename; inspect legacy `script.md`, `*.lesson-script.md`, and other existing authored content documents before calling a Lesson missing authored Lesson Content. A legacy file is not an instruction to overwrite or silently duplicate it. Report the matching Lesson paths and methodical approval states. **Discovery alone does not authorize authoring Lesson Content**.
 - If the user has not identified any textbook/Lesson/search scope, ask **which Lesson(s) or textbook/folder** to work with. Do not choose Playground or random Lessons as a substitute.
 - For multiple explicitly assigned Lessons, read and audit each Brief independently, preserve each Lesson's folder/bucket, write **one `content.md` per approved Lesson**, and report blocked/unapproved Lessons rather than silently skipping them or applying one Brief to another.
@@ -324,7 +324,7 @@ including LTR, RTL, reduced motion and assistive-technology use>
 
 Provide:
 
-1. **One** draft `content.md` per explicitly assigned, approved Lesson, **including a planned Lesson Notes/unlock section**, inside that Lesson's existing `Data/Lessons/<bucket>/<slug>/` folder.
+1. **One** draft `content.md` per explicitly assigned, approved Lesson, **including a planned Lesson Notes/unlock section**, inside that Lesson's existing `data/lessons/<bucket>/<slug>/` folder.
 2. **One specification per custom Scene**, with real relative links from the Lesson Content. A purely text or existing-widget Lesson need not create an empty Scene specification.
 3. A concise editorial report stating the **most important interactive concepts**, how the Lesson avoids passive content without losing clarity, the chosen Sections/Resource blocks, **verified runtime capabilities vs proposed features**, accessibility/localization decisions, any source/technical gaps and which artifacts are waiting for approval.
 
