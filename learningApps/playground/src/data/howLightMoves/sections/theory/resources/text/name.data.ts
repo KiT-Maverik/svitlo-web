@@ -3,6 +3,7 @@ import { theory_TextResources_Ids } from './index.ids';
 
 export const name_TextResource_Data = createTextResource(theory_TextResources_Ids.name, {
   en: 'Theory',
+  qm: "Nazariye",
     lt: "Teorija",
     lv: "Teorija",
     et: "Teooria",

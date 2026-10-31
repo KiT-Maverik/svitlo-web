@@ -19,4 +19,6 @@ const be = { flashcard: { region: 'Навучальная картка', actions
 const ka = { flashcard: { region: 'სასწავლო ბარათი', actions: { menu: 'ბარათის მოქმედებები', reveal: 'პასუხის ჩვენება', forgot: 'არ მახსოვს', remembered: 'მახსოვს', addLabel: 'ნიშნულის დამატება' } } } satisfies Flashcard_Locale;
 const kk = { flashcard: { region: 'Оқу карточкасы', actions: { menu: 'Карточка әрекеттері', reveal: 'Жауапты көрсету', forgot: 'Есімде жоқ', remembered: 'Есімде', addLabel: 'Белгі қосу' } } } satisfies Flashcard_Locale;
 
-export const locales = { uk, lt, lv, et, be, ka, kk } as const;
+const qm = { flashcard: { region: 'Bilgi kartı', actions: { menu: 'Kartnıñ amelleri', reveal: 'Cevapnı köster', forgot: 'Hatırlamayım', remembered: 'Hatırlayım', addLabel: 'Belgi qoş' } } } satisfies Flashcard_Locale;
+
+export const locales = { uk, lt, lv, et, be, ka, kk, qm } as const;

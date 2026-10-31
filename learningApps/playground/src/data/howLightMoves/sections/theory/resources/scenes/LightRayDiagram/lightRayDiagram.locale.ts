@@ -296,6 +296,19 @@ const kk = {
   labels: { source: "Жарық көзі", direction: "Жарықтың таралу бағыты", screen: "Экран" },
 } satisfies LightRayDiagram_Locale;
 
+/** Crimean Tatar (qm, crh-Latn-UA); native-speaker review recommended. */
+const qm = {
+  scene: {
+    title: 'Yarıqnıñ yolunı izle',
+    description: 'Menbadan ekranğa doğru sızıq boyunca.',
+  },
+  labels: {
+    source: 'Yarıq menbası',
+    direction: 'Yarıqnıñ yayılma yönelişi',
+    screen: 'Ekran',
+  },
+} satisfies LightRayDiagram_Locale;
+
 export const locales = {
   en,
   zh,
@@ -319,5 +332,5 @@ export const locales = {
   he,
   pl,
   uk,
-  lt, lv, et, be, ka, kk,
+  lt, lv, et, be, ka, kk, qm,
 } satisfies Record<DefaultSupportedLanguage['language'], LightRayDiagram_Locale>;

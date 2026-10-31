@@ -3,6 +3,7 @@ import { quiz_TextResources_Ids } from './index.ids';
 
 export const welcome_TextResource_Data = createTextResource(quiz_TextResources_Ids.welcome, {
   en: "Let's check how light travels.",
+  qm: "Yarıqnıñ nasıl yayılğanını tekşerip baqayıq.",
     lt: "Patikrinkime, kaip sklinda šviesa.",
     lv: "Pārbaudīsim, kā izplatās gaisma.",
     et: "Kontrollime, kuidas valgus levib.",

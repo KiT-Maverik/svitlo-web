@@ -27,6 +27,7 @@ import { be_AssessmentMethod_Locale } from './locales/be';
 import { ka_AssessmentMethod_Locale } from './locales/ka';
 import { kk_AssessmentMethod_Locale } from './locales/kk';
 import { uk_AssessmentMethod_Locale } from './locales/uk';
+import { qm_AssessmentMethod_Locale } from './locales/qm';
 
 /** Explicit, type-checked native translations for every supported language. */
 export const assessmentMethodTranslations = {
@@ -60,6 +61,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.retrieval.title,
       pl: pl_AssessmentMethod_Locale.retrieval.title,
       uk: uk_AssessmentMethod_Locale.retrieval.title,
+      qm: qm_AssessmentMethod_Locale.retrieval.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.retrieval.description,
@@ -90,6 +92,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.retrieval.description,
       pl: pl_AssessmentMethod_Locale.retrieval.description,
       uk: uk_AssessmentMethod_Locale.retrieval.description,
+      qm: qm_AssessmentMethod_Locale.retrieval.description,
     },
   },
   interpretation: {
@@ -122,6 +125,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.interpretation.title,
       pl: pl_AssessmentMethod_Locale.interpretation.title,
       uk: uk_AssessmentMethod_Locale.interpretation.title,
+      qm: qm_AssessmentMethod_Locale.interpretation.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.interpretation.description,
@@ -152,6 +156,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.interpretation.description,
       pl: pl_AssessmentMethod_Locale.interpretation.description,
       uk: uk_AssessmentMethod_Locale.interpretation.description,
+      qm: qm_AssessmentMethod_Locale.interpretation.description,
     },
   },
   application: {
@@ -184,6 +189,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.application.title,
       pl: pl_AssessmentMethod_Locale.application.title,
       uk: uk_AssessmentMethod_Locale.application.title,
+      qm: qm_AssessmentMethod_Locale.application.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.application.description,
@@ -214,6 +220,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.application.description,
       pl: pl_AssessmentMethod_Locale.application.description,
       uk: uk_AssessmentMethod_Locale.application.description,
+      qm: qm_AssessmentMethod_Locale.application.description,
     },
   },
   classification: {
@@ -246,6 +253,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.classification.title,
       pl: pl_AssessmentMethod_Locale.classification.title,
       uk: uk_AssessmentMethod_Locale.classification.title,
+      qm: qm_AssessmentMethod_Locale.classification.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.classification.description,
@@ -276,6 +284,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.classification.description,
       pl: pl_AssessmentMethod_Locale.classification.description,
       uk: uk_AssessmentMethod_Locale.classification.description,
+      qm: qm_AssessmentMethod_Locale.classification.description,
     },
   },
   relationshipMapping: {
@@ -308,6 +317,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.relationshipMapping.title,
       pl: pl_AssessmentMethod_Locale.relationshipMapping.title,
       uk: uk_AssessmentMethod_Locale.relationshipMapping.title,
+      qm: qm_AssessmentMethod_Locale.relationshipMapping.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.relationshipMapping.description,
@@ -338,6 +348,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.relationshipMapping.description,
       pl: pl_AssessmentMethod_Locale.relationshipMapping.description,
       uk: uk_AssessmentMethod_Locale.relationshipMapping.description,
+      qm: qm_AssessmentMethod_Locale.relationshipMapping.description,
     },
   },
   representationTranslation: {
@@ -370,6 +381,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.representationTranslation.title,
       pl: pl_AssessmentMethod_Locale.representationTranslation.title,
       uk: uk_AssessmentMethod_Locale.representationTranslation.title,
+      qm: qm_AssessmentMethod_Locale.representationTranslation.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.representationTranslation.description,
@@ -400,6 +412,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.representationTranslation.description,
       pl: pl_AssessmentMethod_Locale.representationTranslation.description,
       uk: uk_AssessmentMethod_Locale.representationTranslation.description,
+      qm: qm_AssessmentMethod_Locale.representationTranslation.description,
     },
   },
   missingInformationInference: {
@@ -432,6 +445,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.missingInformationInference.title,
       pl: pl_AssessmentMethod_Locale.missingInformationInference.title,
       uk: uk_AssessmentMethod_Locale.missingInformationInference.title,
+      qm: qm_AssessmentMethod_Locale.missingInformationInference.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.missingInformationInference.description,
@@ -462,6 +476,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.missingInformationInference.description,
       pl: pl_AssessmentMethod_Locale.missingInformationInference.description,
       uk: uk_AssessmentMethod_Locale.missingInformationInference.description,
+      qm: qm_AssessmentMethod_Locale.missingInformationInference.description,
     },
   },
   structuralAnalysis: {
@@ -494,6 +509,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.structuralAnalysis.title,
       pl: pl_AssessmentMethod_Locale.structuralAnalysis.title,
       uk: uk_AssessmentMethod_Locale.structuralAnalysis.title,
+      qm: qm_AssessmentMethod_Locale.structuralAnalysis.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.structuralAnalysis.description,
@@ -524,6 +540,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.structuralAnalysis.description,
       pl: pl_AssessmentMethod_Locale.structuralAnalysis.description,
       uk: uk_AssessmentMethod_Locale.structuralAnalysis.description,
+      qm: qm_AssessmentMethod_Locale.structuralAnalysis.description,
     },
   },
   patternGeneralization: {
@@ -556,6 +573,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.patternGeneralization.title,
       pl: pl_AssessmentMethod_Locale.patternGeneralization.title,
       uk: uk_AssessmentMethod_Locale.patternGeneralization.title,
+      qm: qm_AssessmentMethod_Locale.patternGeneralization.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.patternGeneralization.description,
@@ -586,6 +604,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.patternGeneralization.description,
       pl: pl_AssessmentMethod_Locale.patternGeneralization.description,
       uk: uk_AssessmentMethod_Locale.patternGeneralization.description,
+      qm: qm_AssessmentMethod_Locale.patternGeneralization.description,
     },
   },
   analogicalReasoning: {
@@ -618,6 +637,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.analogicalReasoning.title,
       pl: pl_AssessmentMethod_Locale.analogicalReasoning.title,
       uk: uk_AssessmentMethod_Locale.analogicalReasoning.title,
+      qm: qm_AssessmentMethod_Locale.analogicalReasoning.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.analogicalReasoning.description,
@@ -648,6 +668,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.analogicalReasoning.description,
       pl: pl_AssessmentMethod_Locale.analogicalReasoning.description,
       uk: uk_AssessmentMethod_Locale.analogicalReasoning.description,
+      qm: qm_AssessmentMethod_Locale.analogicalReasoning.description,
     },
   },
   knowledgeTransfer: {
@@ -680,6 +701,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.knowledgeTransfer.title,
       pl: pl_AssessmentMethod_Locale.knowledgeTransfer.title,
       uk: uk_AssessmentMethod_Locale.knowledgeTransfer.title,
+      qm: qm_AssessmentMethod_Locale.knowledgeTransfer.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.knowledgeTransfer.description,
@@ -710,6 +732,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.knowledgeTransfer.description,
       pl: pl_AssessmentMethod_Locale.knowledgeTransfer.description,
       uk: uk_AssessmentMethod_Locale.knowledgeTransfer.description,
+      qm: qm_AssessmentMethod_Locale.knowledgeTransfer.description,
     },
   },
   prediction: {
@@ -742,6 +765,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.prediction.title,
       pl: pl_AssessmentMethod_Locale.prediction.title,
       uk: uk_AssessmentMethod_Locale.prediction.title,
+      qm: qm_AssessmentMethod_Locale.prediction.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.prediction.description,
@@ -772,6 +796,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.prediction.description,
       pl: pl_AssessmentMethod_Locale.prediction.description,
       uk: uk_AssessmentMethod_Locale.prediction.description,
+      qm: qm_AssessmentMethod_Locale.prediction.description,
     },
   },
   errorDiagnosis: {
@@ -804,6 +829,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.errorDiagnosis.title,
       pl: pl_AssessmentMethod_Locale.errorDiagnosis.title,
       uk: uk_AssessmentMethod_Locale.errorDiagnosis.title,
+      qm: qm_AssessmentMethod_Locale.errorDiagnosis.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.errorDiagnosis.description,
@@ -834,6 +860,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.errorDiagnosis.description,
       pl: pl_AssessmentMethod_Locale.errorDiagnosis.description,
       uk: uk_AssessmentMethod_Locale.errorDiagnosis.description,
+      qm: qm_AssessmentMethod_Locale.errorDiagnosis.description,
     },
   },
   verification: {
@@ -866,6 +893,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.verification.title,
       pl: pl_AssessmentMethod_Locale.verification.title,
       uk: uk_AssessmentMethod_Locale.verification.title,
+      qm: qm_AssessmentMethod_Locale.verification.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.verification.description,
@@ -896,6 +924,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.verification.description,
       pl: pl_AssessmentMethod_Locale.verification.description,
       uk: uk_AssessmentMethod_Locale.verification.description,
+      qm: qm_AssessmentMethod_Locale.verification.description,
     },
   },
   justification: {
@@ -928,6 +957,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.justification.title,
       pl: pl_AssessmentMethod_Locale.justification.title,
       uk: uk_AssessmentMethod_Locale.justification.title,
+      qm: qm_AssessmentMethod_Locale.justification.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.justification.description,
@@ -958,6 +988,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.justification.description,
       pl: pl_AssessmentMethod_Locale.justification.description,
       uk: uk_AssessmentMethod_Locale.justification.description,
+      qm: qm_AssessmentMethod_Locale.justification.description,
     },
   },
   knowledgeConstruction: {
@@ -990,6 +1021,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.knowledgeConstruction.title,
       pl: pl_AssessmentMethod_Locale.knowledgeConstruction.title,
       uk: uk_AssessmentMethod_Locale.knowledgeConstruction.title,
+      qm: qm_AssessmentMethod_Locale.knowledgeConstruction.title,
     },
     description: {
       en: en_AssessmentMethod_Locale.knowledgeConstruction.description,
@@ -1020,6 +1052,7 @@ export const assessmentMethodTranslations = {
       he: he_AssessmentMethod_Locale.knowledgeConstruction.description,
       pl: pl_AssessmentMethod_Locale.knowledgeConstruction.description,
       uk: uk_AssessmentMethod_Locale.knowledgeConstruction.description,
+      qm: qm_AssessmentMethod_Locale.knowledgeConstruction.description,
     },
   },
 } as const satisfies Record<AssessmentMethodKey, Pick<AssessmentMethod_Config, 'title' | 'description'>>;

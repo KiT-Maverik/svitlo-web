@@ -11,6 +11,7 @@ export const lightTravelsStraight_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.lightTravelsStraight.content, {
       en: 'How does light travel in a uniform transparent medium?',
+      qm: "Yarıq bir cıns şeffaf ortamda nasıl yayıla?",
         lt: "Kaip šviesa sklinda vienalytėje skaidrioje terpėje?",
         lv: "Kā gaisma izplatās viendabīgā caurspīdīgā vidē?",
         et: "Kuidas valgus levib ühtlases läbipaistvas keskkonnas?",
@@ -42,6 +43,7 @@ export const lightTravelsStraight_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.lightTravelsStraight.explanation, {
     en: 'In a uniform transparent medium, light travels in a straight line.',
+    qm: "Bir cıns şeffaf ortamda yarıq doğru sızıq boyunca yayıla.",
       lt: "Vienalytėje skaidrioje terpėje šviesa sklinda tiesia linija.",
       lv: "Viendabīgā caurspīdīgā vidē gaisma izplatās taisnā līnijā.",
       et: "Ühtlases läbipaistvas keskkonnas levib valgus sirgjooneliselt.",
@@ -76,6 +78,7 @@ export const lightTravelsStraight_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.lightTravelsStraight.correct, {
       en: 'In a straight line.',
+      qm: "Doğru sızıq boyunca.",
         lt: "Tiesia linija.",
         lv: "Taisnā līnijā.",
         et: "Sirgjooneliselt.",
@@ -107,6 +110,7 @@ export const lightTravelsStraight_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.lightTravelsStraight.incorrectFirst, {
         en: 'In a circle.',
+        qm: "Daire boyunca.",
           lt: "Apskritimu.",
           lv: "Pa apli.",
           et: "Ringikujuliselt.",
@@ -139,6 +143,7 @@ export const lightTravelsStraight_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.lightTravelsStraight.incorrectSecond, {
         en: 'Always along a curve.',
+        qm: "Daima egri sızıq boyunca.",
           lt: "Visada kreive.",
           lv: "Vienmēr pa līkni.",
           et: "Alati mööda kõverat.",

@@ -11,6 +11,7 @@ export const lightRayDirection_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.lightRayDirection.content, {
       en: 'What does a light ray show?',
+      qm: "Yarıq şavlesi ne köstere?",
         lt: "Ką parodo šviesos spindulys?",
         lv: "Ko parāda gaismas stars?",
         et: "Mida valguskiir näitab?",
@@ -42,6 +43,7 @@ export const lightRayDirection_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.lightRayDirection.explanation, {
     en: 'A light ray shows the direction in which light travels.',
+    qm: "Yarıq şavlesi yarıqnıñ yayılma yönelişini köstere.",
       lt: "Šviesos spindulys parodo šviesos sklidimo kryptį.",
       lv: "Gaismas stars parāda gaismas izplatīšanās virzienu.",
       et: "Valguskiir näitab valguse levimise suunda.",
@@ -76,6 +78,7 @@ export const lightRayDirection_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.lightRayDirection.correct, {
       en: 'The direction light travels.',
+      qm: "Yarıqnıñ yayılma yönelişini.",
         lt: "Šviesos sklidimo kryptį.",
         lv: "Gaismas izplatīšanās virzienu.",
         et: "Valguse levimise suunda.",
@@ -107,6 +110,7 @@ export const lightRayDirection_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.lightRayDirection.incorrectFirst, {
         en: 'The temperature of the source.',
+        qm: "Menbanıñ araretini.",
           lt: "Šaltinio temperatūrą.",
           lv: "Avota temperatūru.",
           et: "Valgusallika temperatuuri.",
@@ -139,6 +143,7 @@ export const lightRayDirection_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.lightRayDirection.incorrectSecond, {
         en: 'The size of a light particle.',
+        qm: "Yarıq zerresiniñ ölçüsini.",
           lt: "Šviesos dalelės dydį.",
           lv: "Gaismas daļiņas izmēru.",
           et: "Valgusosakese suurust.",

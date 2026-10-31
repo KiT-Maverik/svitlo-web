@@ -11,6 +11,7 @@ export const fastestMedium_Question_Data = {
   content: [
     createTextResource(quiz_Questions_Ids.fastestMedium.content, {
       en: 'Where does light travel fastest: in a vacuum, air, or water?',
+      qm: "Yarıq qayda eñ tez yayıla: vakuumda, avada yoqsa suvda?",
         lt: "Kur šviesa sklinda greičiausiai: vakuume, ore ar vandenyje?",
         lv: "Kur gaisma izplatās visātrāk: vakuumā, gaisā vai ūdenī?",
         et: "Kus levib valgus kõige kiiremini: vaakumis, õhus või vees?",
@@ -42,6 +43,7 @@ export const fastestMedium_Question_Data = {
   ],
   explanation: createTextResource(quiz_Questions_Ids.fastestMedium.explanation, {
     en: 'Light travels fastest in a vacuum—about 300,000 km/s.',
+    qm: "Yarıq eñ tez vakuumda yayıla — taqriben saniyede 300 000 kilometr.",
       lt: "Greičiausiai šviesa sklinda vakuume – apie 300 000 km/s.",
       lv: "Visātrāk gaisma izplatās vakuumā — apmēram 300 000 km/s.",
       et: "Kõige kiiremini levib valgus vaakumis — umbes 300 000 km/s.",
@@ -76,6 +78,7 @@ export const fastestMedium_Question_Data = {
   answers: {
     correct: createTextResource(quiz_Questions_Ids.fastestMedium.correct, {
       en: 'In a vacuum.',
+      qm: "Vakuumda.",
         lt: "Vakuume.",
         lv: "Vakuumā.",
         et: "Vaakumis.",
@@ -107,6 +110,7 @@ export const fastestMedium_Question_Data = {
     incorrect: [
       createTextResource(quiz_Questions_Ids.fastestMedium.incorrectFirst, {
         en: 'In air.',
+        qm: "Avada.",
           lt: "Ore.",
           lv: "Gaisā.",
           et: "Õhus.",
@@ -139,6 +143,7 @@ export const fastestMedium_Question_Data = {
     distractors: [
       createTextResource(quiz_Questions_Ids.fastestMedium.incorrectSecond, {
         en: 'In water.',
+        qm: "Suvda.",
           lt: "Vandenyje.",
           lv: "Ūdenī.",
           et: "Vees.",

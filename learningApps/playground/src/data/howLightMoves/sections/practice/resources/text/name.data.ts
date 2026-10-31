@@ -3,6 +3,7 @@ import { practice_TextResources_Ids } from './index.ids';
 
 export const name_TextResource_Data = createTextResource(practice_TextResources_Ids.name, {
   en: 'Practice',
+  qm: "Ameliyat",
     lt: "Praktika",
     lv: "Prakse",
     et: "Harjutamine",

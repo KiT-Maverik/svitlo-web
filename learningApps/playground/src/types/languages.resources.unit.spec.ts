@@ -4,11 +4,11 @@ import { describe, expect, it } from 'vitest';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { getLearningLayoutMessages } from '@svitlo/ui-kit/learning-layout/locales';
 
-const additionalLocales = ['lt-LT', 'lv-LV', 'et-EE', 'be-tarask', 'ka-GE', 'kk-Cyrl-KZ'] as const;
-const languages = ['lt', 'lv', 'et', 'be', 'ka', 'kk'] as const;
+const additionalLocales = ['lt-LT', 'lv-LV', 'et-EE', 'be-tarask', 'ka-GE', 'kk-Cyrl-KZ', 'crh-Latn-UA'] as const;
+const languages = ['lt', 'lv', 'et', 'be', 'ka', 'kk', 'qm'] as const;
 
 const root = process.cwd();
-const newLanguages = ['lt', 'lv', 'et', 'be', 'ka', 'kk'] as const;
+const newLanguages = ['lt', 'lv', 'et', 'be', 'ka', 'kk', 'qm'] as const;
 function collectFiles(folder: string): string[] {
   return readdirSync(folder, { withFileTypes: true }).flatMap(entry => {
     const path = join(folder, entry.name);

@@ -4,6 +4,7 @@ import { howLightMoves_TextResources_Ids } from './index.ids';
 
 export const name_TextResource_Data = createTextResource(howLightMoves_TextResources_Ids.name, {
   en: 'How Light Travels',
+  qm: "Yarıq nasıl yayıla?",
       lt: "Kaip sklinda šviesa",
       lv: "Kā izplatās gaisma",
       et: "Kuidas valgus levib",
