@@ -10,6 +10,7 @@ export const sculptureAndMaterialArts_SkillDomain_Data = buildSkillDomainConfig(
   id: "a30b85bf-1f13-4ac9-bcdb-57d3d5531a12",
   name: {
     en: "Sculpture and Material Arts",
+      qm: "Heykel ve material sanatları",
   },
   groups: {
     ceramicsAndAssemblage: ceramicsAndAssemblage_SkillGroup_Data,
@@ -21,6 +22,7 @@ export const sculptureAndMaterialArts_SkillDomain_Data = buildSkillDomainConfig(
     methodological: "Physical media can be shaped, assembled, printed or woven to produce objects, editions and decorative surfaces. This domain concerns expressive material practices rather than engineering manufacture.",
     frontend: {
       en: "Create expressive physical objects using shaping, printing, clay, fabric and other materials.",
+          qm: "Şekil bermek, baskı, balçıq, kumaş ve başqa materiallarnı qullanıp ifadeleyici fiziki obyektler yaratın.",
     },
   },
 });
