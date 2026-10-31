@@ -1,4 +1,7 @@
-export type SkillNodeKind = 'skillDomain' | 'skillGroup' | 'skill';
+import type { Collection } from '@svitlo/engine/content';
+
+/** Reconstructed runtime model; neither source .data.ts nor published JSON is imported. */
+export type SkillNodeKind = Extract<Collection, 'skill' | 'skillGroup' | 'skillDomain'>;
 
 export interface SkillNode {
   readonly id: string;
@@ -9,10 +12,16 @@ export interface SkillNode {
   readonly children: readonly SkillNode[];
 }
 
-export interface SkillsManifest {
-  readonly version: 1;
-  readonly languages: readonly string[];
-  readonly domains: readonly string[];
+export interface PublishedSkillMeta {
+  readonly id: string;
+  readonly collection: SkillNodeKind;
+  readonly groups?: readonly string[];
+  readonly skills?: readonly string[];
+}
+
+export interface PublishedSkillCopy {
+  readonly name: string;
+  readonly description?: string;
 }
 
 export interface MapNode extends SkillNode {
@@ -41,85 +50,92 @@ export interface MindMapLayout {
 }
 
 type RecordValue = Record<string, unknown>;
-const slugPattern = /^[a-z][a-zA-Z0-9]*$/;
-const languagePattern = /^[a-z]{2,8}$/;
+export const slugPattern = /^[a-z][a-zA-Z0-9]*$/;
+export const languagePattern = /^[a-z]{2,8}$/;
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
 function isRecord(value: unknown): value is RecordValue {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
-
 function nonempty(value: unknown, label: string): string {
   if (typeof value !== 'string' || !value.trim()) throw new Error('Некоректне поле: ' + label);
   return value;
 }
-
-function uniqueStrings(values: unknown, pattern: RegExp, label: string): string[] {
-  if (!Array.isArray(values) || values.length === 0) throw new Error('Немає списку: ' + label);
-  const result = values.map(value => nonempty(value, label));
-  if (result.some(value => !pattern.test(value)) || new Set(result).size !== result.length) {
-    throw new Error('Некоректні або повторювані значення: ' + label);
+function exactKeys(value: RecordValue, allowed: readonly string[], label: string) {
+  const extra = Object.keys(value).filter(key => !allowed.includes(key));
+  if (extra.length) throw new Error('Зайві поля ' + label + ': ' + extra.join(', '));
+}
+function childSlugs(value: unknown, label: string): string[] {
+  if (!Array.isArray(value)) throw new Error('Некоректний список нащадків: ' + label);
+  const slugs: string[] = [];
+  for (const entry of value) {
+    if (typeof entry !== 'string' || !slugPattern.test(entry)) {
+      throw new Error('Некоректний slug у списку: ' + label);
+    }
+    slugs.push(entry);
   }
-  return result;
+  if (new Set(slugs).size !== slugs.length) throw new Error('Повторюваний slug: ' + label);
+  return slugs;
 }
 
-/** Metadata-only discovery. Never stores localized Skill names in a shared manifest. */
-export function parseSkillsManifest(value: unknown): SkillsManifest {
-  if (!isRecord(value) || value.version !== 1) throw new Error('Невідома версія каталогу Skills');
-  const domains = uniqueStrings(value.domains, slugPattern, 'domains');
-  const languages = uniqueStrings(value.languages, languagePattern, 'languages');
-  return { version: 1, domains, languages };
+/** Immutable metadata contains only identity, Collection and child path segments. */
+export function parsePublishedSkillMeta(value: unknown, expected: SkillNodeKind): PublishedSkillMeta {
+  if (!isRecord(value)) throw new Error('Некоректний meta.json: ' + expected);
+  exactKeys(value, ['id', 'collection', 'groups', 'skills'], 'meta.json');
+  if (value.collection !== expected) throw new Error('Неправильний Collection: ' + expected);
+  const id = nonempty(value.id, 'meta.id');
+  if (!uuidPattern.test(id)) throw new Error('Некоректний UUID метаданих');
+  if (expected === 'skill') {
+    if (value.groups !== undefined || value.skills !== undefined) {
+      throw new Error('Skill не може мати нащадків');
+    }
+    return { id, collection: expected };
+  }
+  if (expected === 'skillGroup') {
+    if (value.groups !== undefined || value.skills === undefined) throw new Error('Група повинна мати Skills');
+    const skills = childSlugs(value.skills, 'group.skills');
+    if (!skills.length) throw new Error('Порожня група Skills');
+    return { id, collection: expected, skills };
+  }
+  const groups = value.groups === undefined ? [] : childSlugs(value.groups, 'domain.groups');
+  const skills = value.skills === undefined ? [] : childSlugs(value.skills, 'domain.skills');
+  if (!groups.length && !skills.length) throw new Error('Порожній домен Skills');
+  return {
+    id, collection: expected,
+    ...(value.groups === undefined ? {} : { groups }),
+    ...(value.skills === undefined ? {} : { skills }),
+  };
 }
 
-function parseNode(value: unknown, kind: SkillNodeKind, location: string): SkillNode {
-  if (!isRecord(value) || value.collection !== kind) throw new Error('Некоректна сутність: ' + location);
-  const id = nonempty(value.id, location + '.id');
-  if (!uuidPattern.test(id)) throw new Error('Некоректний UUID: ' + location);
-  const slug = nonempty(value.slug, location + '.slug');
-  if (!slugPattern.test(slug)) throw new Error('Некоректний slug: ' + location);
-  const name = nonempty(value.name, location + '.name');
-  // Published Skill copy is the selected language's description.frontend text.
-  // No methodological text or a locale dictionary may reach the UI.
-  if (kind === 'skill' && value.description === undefined) {
-    throw new Error('Скіл без фронтенд-опису: ' + location);
-  }
-  const description = value.description === undefined ? undefined : nonempty(value.description, location + '.description');
-  let children: SkillNode[] = [];
-  if (kind === 'skillDomain') {
-    // Canonical Domain entities can contain Groups and ungrouped direct Skills
-    // simultaneously. The published resource uses arrays, never ID references.
-    if (value.groups !== undefined && !Array.isArray(value.groups)) {
-      throw new Error('Некоректні групи домена: ' + slug);
-    }
-    if (value.skills !== undefined && !Array.isArray(value.skills)) {
-      throw new Error('Некоректні прямі скіли домена: ' + slug);
-    }
-    if (value.groupIds !== undefined || value.skillIds !== undefined) {
-      throw new Error('Застарілі ID-посилання домена: ' + slug);
-    }
-    const groups = (value.groups ?? []) as unknown[];
-    const skills = (value.skills ?? []) as unknown[];
-    if (groups.length + skills.length === 0) throw new Error('Порожній домен: ' + slug);
-    children = [
-      ...groups.map((item, index) => parseNode(item, 'skillGroup', location + '.groups.' + index)),
-      ...skills.map((item, index) => parseNode(item, 'skill', location + '.skills.' + index)),
-    ];
-  } else if (kind === 'skillGroup') {
-    if (value.skillIds !== undefined) throw new Error('Застарілі ID-посилання групи: ' + slug);
-    if (!Array.isArray(value.skills) || !value.skills.length) throw new Error('Порожня група: ' + slug);
-    children = value.skills.map((item, index) => parseNode(item, 'skill', location + '.skills.' + index));
-  } else if (value.groups !== undefined || value.skills !== undefined) {
-    throw new Error('Окремий Skill не повинен мати нащадків: ' + slug);
-  }
-  return { id, slug, kind, name, ...(description === undefined ? {} : { description }), children };
+/** Locale file has no identity, type, language, slug or nested entity copies. */
+export function parsePublishedSkillCopy(value: unknown, kind: SkillNodeKind): PublishedSkillCopy {
+  if (!isRecord(value)) throw new Error('Некоректний локалізований JSON');
+  exactKeys(value, ['name', 'description'], 'локалізації');
+  const name = nonempty(value.name, 'name');
+  if (kind === 'skill' && value.description === undefined) throw new Error('Скіл без фронтенд-опису');
+  const description = value.description === undefined ? undefined : nonempty(value.description, 'description');
+  return { name, ...(description === undefined ? {} : { description }) };
 }
 
-/** Parse one language resource; reject missing or mismatched locale instead of falling back. */
-export function parseSkillsDomain(value: unknown, language: string, slug: string): SkillNode {
-  if (!isRecord(value) || value.language !== language) throw new Error('Неправильна мова файла: ' + slug);
-  const node = parseNode(value, 'skillDomain', slug);
-  if (node.slug !== slug) throw new Error('Не збігається адреса домена: ' + slug);
-  return node;
+/** Rebuild one runtime node from validated independent resources. */
+export function assemblePublishedSkillNode(
+  meta: PublishedSkillMeta, copy: PublishedSkillCopy, slug: string,
+  children: readonly SkillNode[],
+): SkillNode {
+  if (!slugPattern.test(slug)) throw new Error('Некоректний slug із шляху');
+  const expected = [
+    ...(meta.groups ?? []).map(childSlug => ({ slug: childSlug, kind: 'skillGroup' })),
+    ...(meta.skills ?? []).map(childSlug => ({ slug: childSlug, kind: 'skill' })),
+  ];
+  if (expected.length !== children.length ||
+      expected.some((child, index) => children[index].slug !== child.slug || children[index].kind !== child.kind)) {
+    throw new Error('Неповна або некоректна структура дітей для ' + slug);
+  }
+  return {
+    id: meta.id, slug, kind: meta.collection,
+    name: copy.name, ...(copy.description === undefined ? {} : { description: copy.description }),
+    children,
+  };
 }
 
 export function flattenSkillNodes(domains: readonly SkillNode[]): SkillNode[] {
