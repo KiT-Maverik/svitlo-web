@@ -2,7 +2,7 @@ import type { Skill_Config } from '../../../taxonomy';
 import { buildSkillConfig } from '../../../taxonomy';
 
 const names = {} as Skill_Config['name'];
-const description = { methodological: 'English conceptual boundaries.', fe: names };
+const description = { methodological: 'English conceptual boundaries.', frontend: names };
 
 // @ts-expect-error A semantic slug is not a UUID.
 buildSkillConfig({ id: 'math.multiply.by-2', name: names });
@@ -28,14 +28,14 @@ buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb' });
 buildSkillConfig({
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: names,
-  description: { methodological: 'English conceptual boundaries.', fe: names },
+  description: { methodological: 'English conceptual boundaries.', frontend: names },
 });
 
-// @ts-expect-error A Skill description without fe must not compile.
+// @ts-expect-error A Skill description without frontend must not compile.
 buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { methodological: 'English' } });
 
 // @ts-expect-error description.methodological is required when description exists.
-buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { fe: names } });
+buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { frontend: names } });
 
-// @ts-expect-error A supplied fe description cannot omit supported language keys.
-buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { methodological: 'English', fe: { en: 'English' } } });
+// @ts-expect-error A supplied frontend description cannot omit supported language keys.
+buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { methodological: 'English', frontend: { en: 'English' } } });
