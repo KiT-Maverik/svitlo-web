@@ -103,7 +103,7 @@ function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, 
 }
 
 export function SkillsMindMap() {
-  const { locale, setLanguageCode } = useSkillsPageSettings();
+  const { locale, localeError, setLanguageCode } = useSkillsPageSettings();
   const [manifest, setManifest] = useState<SkillsManifest | null>(null);
   const [language, setLanguage] = useState<string | null>(null);
   const [domains, setDomains] = useState<SkillNode[]>([]);
@@ -283,6 +283,8 @@ export function SkillsMindMap() {
   const totalSkills = allNodes.filter(node => node.kind === 'skill').length;
   const profileIsExpanded = !rootCollapsed && domains.length > 0;
   const textDirection = language === 'ar' || language === 'he' || language === 'ur' ? 'rtl' : 'ltr';
+
+  if (localeError) return <Alert severity="error" role="alert">{localeError}</Alert>;
 
   return (
     <Box className={styles.root}>
