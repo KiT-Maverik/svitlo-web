@@ -64,7 +64,7 @@ export const useArtisticRandomness_Skill_Data = buildSkillConfig({
           "et": "Kasuta oma kunstilise plaani piires juhitud juhuslikkust üllatavate variatsioonide loomiseks.",
           "be": "Выкарыстоўвайце кантраляваную выпадковасць, каб ствараць нечаканыя варыяцыі ў межах мастацкай задумы.",
           "ka": "გამოიყენეთ კონტროლირებადი შემთხვევითობა მხატვრული გეგმის ფარგლებში მოულოდნელი ვარიაციების შესაქმნელად.",
-          "kk": "Өнерлік жоспарыңыз аясында күтпеген өзгерістер жасау үшін басқарылатын кездейсоқтықты пайдаланыңыз。"
+          "kk": "Өнерлік жоспарыңыз аясында күтпеген өзгерістер жасау үшін басқарылатын кездейсоқтықты пайдаланыңыз。",
     
       qm: "Tesadüfniñ sanat eserine qanday çeşitlik ve keşif ketirgenini qullanıñız.",},
   },
