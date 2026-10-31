@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Alert, Box, CircularProgress, Paper, Stack, Typography } from '@mui/material';
 import { SkillMastery } from '@/components/pages/SkillsMindMap/SkillLeafCard';
-import {
-  flattenSkillNodes, parseSkillsDomain, parseSkillsManifest,
-} from '@/components/pages/SkillsMindMap/skillsMindMap.utils';
+import { flattenSkillNodes } from '@/components/pages/SkillsMindMap/skillsMindMap.utils';
+import { loadPublishedSkills, resolveSkillLanguage } from '@/components/pages/SkillsMindMap/skillsData.client';
 import type { SkillNode } from '@/components/pages/SkillsMindMap/skillsMindMap.utils';
 
 interface SkillLearningClientProps {
   skillId: string;
+  domainSlugs: readonly string[];
 }
 
 type State =
@@ -18,18 +18,12 @@ type State =
   | { status: 'error'; message: string }
   | { status: 'ready'; node: SkillNode; language: string };
 
-async function loadJson(url: string, signal: AbortSignal): Promise<unknown> {
-  const response = await fetch(url, { signal });
-  if (!response.ok) throw new Error('Не вдалося завантажити ' + url);
-  return response.json() as Promise<unknown>;
-}
-
 /**
  * This is the future entry point for Skill-linked Lessons and Programs.
  * Playground's current Lesson/Program data does not declare links to fixture Skill
  * UUIDs, so no matching content can be honestly displayed yet.
  */
-export function SkillLearningClient({ skillId }: SkillLearningClientProps) {
+export function SkillLearningClient({ skillId, domainSlugs }: SkillLearningClientProps) {
   const [state, setState] = useState<State>({ status: 'loading' });
 
   useEffect(() => {
@@ -37,15 +31,9 @@ export function SkillLearningClient({ skillId }: SkillLearningClientProps) {
     setState({ status: 'loading' });
     void (async () => {
       try {
-        const manifest = parseSkillsManifest(await loadJson('/Data/Skills/index.json', controller.signal));
-        const language = new URLSearchParams(window.location.search).get('lang') ??
-          document.documentElement.lang.split('-')[0];
-        if (!manifest.languages.includes(language)) throw new Error('Мова не підтримується: ' + language);
-
-        const domains = await Promise.all(manifest.domains.map(async slug => {
-          const url = '/Data/Skills/' + encodeURIComponent(slug) + '/' + encodeURIComponent(language) + '.json';
-          return parseSkillsDomain(await loadJson(url, controller.signal), language, slug);
-        }));
+        const language = resolveSkillLanguage(
+          new URLSearchParams(window.location.search).get('lang') ?? document.documentElement.lang);
+        const domains = await loadPublishedSkills(domainSlugs, language, controller.signal);
         const match = flattenSkillNodes(domains).find(node => node.kind === 'skill' && node.id === skillId);
         if (!match) throw new Error('Скіл із таким UUID не знайдено в каталозі.');
         if (!controller.signal.aborted) setState({ status: 'ready', node: match, language });
@@ -57,7 +45,7 @@ export function SkillLearningClient({ skillId }: SkillLearningClientProps) {
       }
     })();
     return () => controller.abort();
-  }, [skillId]);
+  }, [skillId, domainSlugs]);
 
   if (state.status === 'loading') {
     return <Box role="status" sx={{ display: 'flex', gap: 2, alignItems: 'center', py: 7 }}>

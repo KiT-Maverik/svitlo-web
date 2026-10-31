@@ -5,6 +5,7 @@ import { Box, Container } from '@mui/material';
 import { useColorScheme } from '@mui/material/styles';
 import { LearningLayout, NavbarPreferences } from '@svitlo/ui-kit/learning-layout';
 import { SkillsMindMap } from './SkillsMindMap';
+import { PLAYGROUND_SKILL_DOMAINS } from './skillsPageConfig';
 import { SkillsPagePreferences } from './SkillsPagePreferences';
 import { SkillsPageSettingsProvider, useSkillsPageSettings } from './SkillsPageSettingsContext';
 
@@ -17,7 +18,7 @@ const idleProgress = {
 } as const;
 const unusedActions = { back: () => {}, next: () => {}, skip: () => {} };
 
-function SkillsPageContent() {
+function SkillsPageContent({ domainSlugs }: { domainSlugs: readonly string[] }) {
   const { locale, setLocale, ready, localeError } = useSkillsPageSettings();
   const { mode, systemMode, setMode } = useColorScheme();
 
@@ -44,17 +45,19 @@ function SkillsPageContent() {
         {ready && (
           localeError
             ? <Box role="alert">{localeError}</Box>
-            : <SkillsMindMap />
+            : <SkillsMindMap domainSlugs={domainSlugs} />
         )}
       </Container>
     </LearningLayout>
   );
 }
 
-export function SkillsPageShell() {
+export function SkillsPageShell({ domainSlugs = PLAYGROUND_SKILL_DOMAINS }: {
+  domainSlugs?: readonly string[];
+} = {}) {
   return (
     <SkillsPageSettingsProvider>
-      <SkillsPageContent />
+      <SkillsPageContent domainSlugs={domainSlugs} />
     </SkillsPageSettingsProvider>
   );
 }
