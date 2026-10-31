@@ -30,6 +30,6 @@ export const reviseAnArtwork_Skill_Data = buildSkillConfig({
           "et": "Täienda kunstiteost, võrreldes selle mõju kavandatud tulemusega.",
           "be": "Удасканальвайце твор, параўноўваючы яго ўздзеянне з задуманым вынікам.",
           "ka": "გააუმჯობესეთ ნამუშევარი მისი ეფექტის თქვენს განზრახვასთან შედარებით.",
-          "kk": "Javítsa a műalkotást úgy, hogy összeveti a hatását a szándékolt eredménnyel。"
+          "kk": "Өнер туындысының әсерін көздеген нәтижемен салыстырып, оны жетілдіріңіз."
     } },
 });
