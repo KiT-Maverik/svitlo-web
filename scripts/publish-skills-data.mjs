@@ -147,19 +147,22 @@ export function loadSkillGraph(root, codes = languageCodes()) {
   for (const domainSlug of directories(root)) {
     const domainDir = path.join(root, domainSlug);
     const domain = entity(path.join(domainDir, domainSlug + '.data.ts'), domainSlug, 'SkillDomain');
-    domain.groups = [];
-    for (const groupSlug of directories(domainDir)) {
-      const groupDir = path.join(domainDir, groupSlug);
-      const group = entity(path.join(groupDir, groupSlug + '.data.ts'), groupSlug, 'SkillGroup');
-      group.skills = [];
-      for (const skillSlug of skillSlugs(path.join(groupDir, 'skills'))) {
-        group.skills.push(entity(path.join(groupDir, 'skills', skillSlug + '.data.ts'), skillSlug, 'Skill'));
+    const directSkills = path.join(domainDir, 'skills');
+    if (fs.existsSync(directSkills)) {
+      domain.skills = skillSlugs(directSkills).map(skillSlug =>
+        entity(path.join(directSkills, skillSlug + '.data.ts'), skillSlug, 'Skill'));
+    } else {
+      domain.groups = [];
+      for (const groupSlug of directories(domainDir)) {
+        const groupDir = path.join(domainDir, groupSlug);
+        const group = entity(path.join(groupDir, groupSlug + '.data.ts'), groupSlug, 'SkillGroup');
+        group.skills = [];
+        for (const skillSlug of skillSlugs(path.join(groupDir, 'skills'))) {
+          group.skills.push(entity(path.join(groupDir, 'skills', skillSlug + '.data.ts'), skillSlug, 'Skill'));
+        }
+        domain.groups.push(group);
       }
-      domain.groups.push(group);
     }
-    // This publisher currently targets the explicitly requested Domain -> Group -> Skill graph.
-    // The canonical taxonomy can also contain direct Domain -> Skill records; fail rather than silently drop them.
-    assert(domain.groups.length > 0, 'Direct-Skill Domain is not supported by this publisher: ' + domainSlug);
     graph.push(domain);
   }
   return graph;
@@ -185,13 +188,17 @@ export function renderSkillFiles(graph, codes) {
   const files = new Map();
   for (const domain of graph) {
     for (const code of codes) {
-      const groups = domain.groups.map(group => ({
-        ...localized(group, code),
-        skills: group.skills.map(skill => localized(skill, code)),
-      }));
-      const domainValue = { ...localized(domain, code), language: code, groups };
+      const domainValue = { ...localized(domain, code), language: code };
+      if (domain.groups) {
+        domainValue.groups = domain.groups.map(group => ({
+          ...localized(group, code),
+          skills: group.skills.map(skill => localized(skill, code)),
+        }));
+      } else {
+        domainValue.skills = domain.skills.map(skill => localized(skill, code));
+      }
       files.set(path.posix.join(domain.slug, code + '.json'), JSON.stringify(domainValue, null, 2) + '\n');
-      for (const group of domain.groups) {
+      for (const group of domain.groups ?? []) {
         const skills = group.skills.map(skill => localized(skill, code));
         const groupValue = { ...localized(group, code), language: code, skills };
         files.set(path.posix.join(domain.slug, group.slug, code + '.json'),
@@ -201,6 +208,11 @@ export function renderSkillFiles(graph, codes) {
           files.set(path.posix.join(domain.slug, group.slug, skill.slug, code + '.json'),
             JSON.stringify(skillValue, null, 2) + '\n');
         }
+      }
+      for (const skill of domain.skills ?? []) {
+        const skillValue = { ...localized(skill, code), language: code };
+        files.set(path.posix.join(domain.slug, skill.slug, code + '.json'),
+          JSON.stringify(skillValue, null, 2) + '\n');
       }
     }
   }
