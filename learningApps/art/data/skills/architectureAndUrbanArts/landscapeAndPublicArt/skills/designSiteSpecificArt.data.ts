@@ -64,7 +64,7 @@ export const designSiteSpecificArt_Skill_Data = buildSkillConfig({
           "et": "Loo kunsti, mis suhestub paigaga, kus inimesed seda kogevad.",
           "be": "Стварайце мастацтва, якое адгукаецца на месца, дзе людзі з ім сустракаюцца.",
           "ka": "შექმენით ხელოვნება, რომელიც ეხმიანება ადგილს, სადაც ადამიანები მას ეცნობიან.",
-          "kk": "Адамдар өнермен кездесетін орынның ерекшелігіне үн қосатын туынды жасаңыз。"
+          "kk": "Адамдар өнермен кездесетін орынның ерекшелігіне үн қосатын туынды жасаңыз。",
     
       qm: "İnsanlarnıñ rast kelgen yerine cevap bergen sanat eserini yaratıñız.",},
   },
