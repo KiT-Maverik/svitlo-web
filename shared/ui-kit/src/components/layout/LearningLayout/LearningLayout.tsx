@@ -37,7 +37,7 @@ export interface LearningLayoutProps {
   actions: { back: () => void; next: () => void; skip: () => void };
   preferences?: ReactNode;
   /** Optional page-specific controls inside the existing right settings drawer. */
-  settingsContent?: ReactNode;
+  settingsContent?: ReactNode | ((actions: { closeSettings: () => void }) => ReactNode);
   /** Non-lesson pages can reuse the navbar and sidebars without lesson navigation. */
   showBottomNavbar?: boolean;
   linkComponent?: ElementType;
@@ -254,7 +254,9 @@ export default function LearningLayout({
               </IconButton>
             </Box>
             <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', p: 2 }}>
-              {settingsContent ?? <Typography color="text.secondary">{messages.settingsDescription}</Typography>}
+              {typeof settingsContent === 'function'
+                ? settingsContent({ closeSettings: () => setSettingsOpen(false) })
+                : settingsContent ?? <Typography color="text.secondary">{messages.settingsDescription}</Typography>}
             </Box>
           </Box>
         </Drawer>
