@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const produceArtisticStudies_Skill_Data = buildSkillConfig({
-  slug: "produceArtisticStudies",
-  id: "5373d6bf-fe99-43bc-bd5b-cef11c290dec",
-  name: {
-    en: "Produce Artistic Studies",
-  },
-  description: {
-    methodological: "Use exploratory sketches or sound experiments to investigate creative possibilities.",
-    frontend: {
-      en: "Try sketches or sound experiments to discover what a creative idea could become.",
-    },
-  },
+  slug: "produceArtisticStudies", id: "5373d6bf-fe99-43bc-bd5b-cef11c290dec", name: { en: "Produce Artistic Studies" },
+  description: { methodological: "Use exploratory sketches or sound experiments to investigate creative possibilities.", frontend: {
+          "en": "Try sketches or sound experiments to discover what a creative idea could become.",
+          "zh": "通过草图或声音实验，探索一个创意可以发展成什么。",
+          "hi": "स्केच या ध्वनि प्रयोग करके जानें कि रचनात्मक विचार क्या रूप ले सकता है।",
+          "es": "Prueba bocetos o experimentos sonoros para descubrir en qué puede convertirse una idea creativa.",
+          "ar": "جرّب الرسومات الأولية أو التجارب الصوتية لاكتشاف ما يمكن أن تصبح عليه الفكرة الإبداعية.",
+          "fr": "Essayez des croquis ou des expériences sonores pour découvrir ce qu’une idée créative peut devenir.",
+          "bn": "স্কেচ বা শব্দের পরীক্ষা করে দেখুন, একটি সৃজনশীল ধারণা কী রূপ নিতে পারে।",
+          "pt": "Experimente esboços ou testes sonoros para descobrir no que uma ideia criativa pode se transformar.",
+          "ur": "خاکے یا صوتی تجربے آزمائیں تاکہ معلوم ہو کہ تخلیقی خیال کیا شکل اختیار کر سکتا ہے۔",
+          "id": "Coba sketsa atau eksperimen suara untuk menemukan kemungkinan pengembangan suatu gagasan kreatif.",
+          "de": "Probiere Skizzen oder Kl experimentelle Klangversuche aus, um herauszufinden, was aus einer kreativen Idee werden kann.",
+          "ja": "スケッチや音の実験を試し、創造的なアイデアがどのように発展するかを探ります。",
+          "ko": "스케치나 소리 실험을 통해 창의적인 아이디어가 어떻게 발전할 수 있는지 알아보세요.",
+          "tr": "Yaratıcı bir fikrin neye dönüşebileceğini keşfetmek için eskizler veya ses deneyleri yapın.",
+          "vi": "Thử phác thảo hoặc thực nghiệm âm thanh để khám phá một ý tưởng sáng tạo có thể phát triển thành gì.",
+          "ta": "வரைபடங்கள் அல்லது ஒலி முயற்சிகளைச் செய்து, படைப்புக் கருத்து எவ்வாறு உருவாகலாம் என்பதை அறியுங்கள்.",
+          "te": "సృజనాత్మక ఆలోచన ఏ రూపం దాల్చగలదో తెలుసుకోవడానికి స్కెచ్‌లు లేదా శబ్ద ప్రయోగాలు చేయండి.",
+          "mr": "सर्जनशील कल्पना काय रूप घेऊ शकते हे शोधण्यासाठी रेखाचित्रे किंवा ध्वनी प्रयोग करून पाहा.",
+          "ms": "Cuba lakaran atau eksperimen bunyi untuk mengetahui kemungkinan perkembangan sesuatu idea kreatif.",
+          "he": "נסו רישומים או ניסויי צליל כדי לגלות למה רעיון יצירתי יכול להפוך.",
+          "pl": "Wypróbuj szkice lub eksperymenty dźwiękowe, aby odkryć, czym może stać się pomysł twórczy.",
+          "uk": "Спробуйте ескізи або звукові експерименти, щоб з’ясувати, на що може перетворитися творча ідея.",
+          "lt": "Išbandykite eskizus ar garso eksperimentus, kad sužinotumėte, kuo gali tapti kūrybinė idėja.",
+          "lv": "Izmēģiniet skices vai skaņas eksperimentus, lai atklātu, par ko var kļūt radoša ideja.",
+          "et": "Katseta visandeid või helikatsetusi, et avastada, milleks loominguline idee võib kujuneda.",
+          "be": "Паспрабуйце эскізы або гукавыя эксперыменты, каб даведацца, у што можа ператварыцца творчая ідэя.",
+          "ka": "სცადეთ ესკიზები ან ხმოვანი ექსპერიმენტები, რათა აღმოაჩინოთ, რად შეიძლება იქცეს შემოქმედებითი იდეა.",
+          "kk": "Készítsen vázlatokat vagy hangkísérleteket, hogy felfedezze, mivé fejlődhet egy kreatív ötlet。"
+    } },
 });
