@@ -5,6 +5,16 @@ export const analyzeABuildingFacade_Skill_Data = buildSkillConfig({
   id: "18ca2346-51e2-4899-a8e6-8c08e270ac11",
   name: {
     en: "Analyze a Building Facade",
+    zh: "分析建筑立面", hi: "इमारत के मुखभाग का विश्लेषण करें", es: "Analizar la fachada de un edificio",
+    ar: "تحليل واجهة مبنى", fr: "Analyser la façade d’un bâtiment", bn: "একটি ভবনের সম্মুখভাগ বিশ্লেষণ করা",
+    pt: "Analisar a fachada de um edifício", ur: "عمارت کے اگلے رخ کا تجزیہ", id: "Menganalisis Fasad Bangunan",
+    de: "Eine Gebäudefassade analysieren", ja: "建物のファサードを分析する", ko: "건물 입면 분석하기",
+    tr: "Bir Binanın Cephesini Çözümlemek", vi: "Phân tích mặt đứng công trình", ta: "கட்டிடத்தின் முகப்பைப் பகுப்பாய்வு செய்தல்",
+    te: "భవనం ముఖభాగాన్ని విశ్లేషించడం", mr: "इमारतीच्या दर्शनी भागाचे विश्लेषण करणे", ms: "Menganalisis Fasad Bangunan",
+    he: "ניתוח חזית של מבנה", pl: "Analizowanie fasady budynku", uk: "Аналізувати фасад будівлі",
+    lt: "Analizuoti pastato fasadą", lv: "Analizēt ēkas fasādi", et: "Hoone fassaadi analüüsimine",
+    be: "Аналізаваць фасад будынка", ka: "შენობის ფასადის ანალიზი", kk: "Ғимарат қасбетін талдау",
+    qm: "Bina cephesini tahlil etüv",
   },
   description: {
     methodological: "Explain the organization of solids, openings and repeated exterior features.",
@@ -37,6 +47,7 @@ export const analyzeABuildingFacade_Skill_Data = buildSkillConfig({
       be: "Даследуй, як формы будынкаў і дэкаратыўныя дэталі выяўляюць архітэктурныя ідэі.",
       ka: "შეისწავლეთ, როგორ გამოხატავს შენობის ფორმები და დეკორატიული დეტალები არქიტექტურულ იდეებს.",
       kk: "Ғимарат пішіндері мен сәндік бөлшектер сәулет идеяларын қалай білдіретінін зерттеңіз.",
+      qm: "Bina dışındaki divarlarnıñ, pencerelerniñ ve açılışlarnıñ körüniş tertibini inceleñiz.",
     },
   },
 });
