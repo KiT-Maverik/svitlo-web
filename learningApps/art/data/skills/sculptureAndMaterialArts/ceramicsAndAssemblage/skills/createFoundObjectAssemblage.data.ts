@@ -32,6 +32,7 @@ export const createFoundObjectAssemblage_Skill_Data = buildSkillConfig({
     be: "Ствараць асамбляж з знойдзеных прадметаў",
     ka: "ნაპოვნი საგნებით ასამბლაჟის შექმნა",
     kk: "Табылған заттардан ассамбляж жасау",
+      qm: "Tabılğan eşyalardan assamblaj yaratmaq",
   },
   description: {
     methodological: "Combine preexisting items so their materials, histories or juxtaposition create new meaning.",
@@ -64,6 +65,7 @@ export const createFoundObjectAssemblage_Skill_Data = buildSkillConfig({
       be: "Аб’ядноўвайце гатовыя прадметы, каб стварыць новы мастацкі сэнс.",
       ka: "შეაერთეთ არსებული საგნები ახალი მხატვრული მნიშვნელობის შესაქმნელად.",
       kk: "Бұрыннан бар заттарды біріктіріп, жаңа көркем мағына жасаңыз.",
+          qm: "Mevcut eşyalarni birleştirip yañı sanat manası yaratın.",
     },
   },
 });
