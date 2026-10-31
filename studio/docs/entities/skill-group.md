@@ -21,9 +21,9 @@ Each new-format SkillGroup has one English `Slug: lowerCamelCase` immediately be
 The Group config lives in `<PackageRoot>/data/skills/<domain>/<group>/<group>.data.ts`, imports child Skills from `./skills/index.ts` and populates `skillIds` from their `.id` fields. A Group does not have its own directory-level `index.ts`; only its `skills/index.ts` barrel exports immediate Skill Data.
 
 
-The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It permits transitional optional `description: { methodological: string; fe?: Record<LanguageCode, string> }` (reviewed English methodological text required for promotion; fe absent or complete for all languages), but does not contain teaching order, evaluation evidence or student progress.
+The shared-engine `SkillGroup_Config` has `id`, localized `name` and a direct-child `skillIds` map. It permits transitional optional `description: { methodological: string; frontend?: Record<LanguageCode, string> }` (reviewed English methodological text required for promotion; frontend absent or complete for all languages), but does not contain teaching order, evaluation evidence or student progress.
 
-- **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological meaning, any optional full fe translations and parent/child placement.
+- **Editorial authority until migration:** `<PackageRoot>/docs/skills/taxonomy.md`; after reviewed migration, Code localized name, English methodological meaning, any optional full frontend translations and parent/child placement.
 - **Implementation link:** a verified application `*.data.ts` file linked with its complete filename as the label, or exactly `[Not implemented](#)` as a standalone link without `Code:`.
 
 New-format records use separate single-line `Methodological description:` (English) and `User-friendly description:` (default `[Not authored]`) fields after the standalone link. Older unlabeled prose requires migration; there is no generic `Description:` field or per-entity editorial approval file. The current `Action: skip|create|update|delete` and `Status: pending|implemented` fields instead denote future generator intent and verified Code implementation.
