@@ -38,9 +38,9 @@ describe('buildSkillDomainConfig', () => {
     assert.deepEqual(buildSkillDomainConfig(config).description, config.description);
     const incomplete = {
       ...config,
-      description: { methodological: 'Valid text', fe: { en: 'Partial locale' } },
+      description: { methodological: 'Valid text', frontend: { en: 'Partial locale' } },
     } as unknown as SkillDomain_Config;
-    assert.throws(() => buildSkillDomainConfig(incomplete), /Skill description.fe/);
+    assert.throws(() => buildSkillDomainConfig(incomplete), /Skill description.frontend/);
   });
 
   it('allows direct Skills when the domain has zero Groups', () => {
