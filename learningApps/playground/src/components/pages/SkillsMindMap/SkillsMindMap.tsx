@@ -1,18 +1,15 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { PointerEvent as ReactPointerEvent } from 'react';
 import { Alert, Box, Button, Chip, CircularProgress, Stack, Typography } from '@mui/material';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
-import CenterFocusStrongRoundedIcon from '@mui/icons-material/CenterFocusStrongRounded';
-import CloseFullscreenRoundedIcon from '@mui/icons-material/CloseFullscreenRounded';
-import OpenInFullRoundedIcon from '@mui/icons-material/OpenInFullRounded';
 import ViewListRoundedIcon from '@mui/icons-material/ViewListRounded';
 import ZoomInRoundedIcon from '@mui/icons-material/ZoomInRounded';
 import ZoomOutRoundedIcon from '@mui/icons-material/ZoomOutRounded';
 import {
-  expandableSkillIds, fitMindMapZoom, flattenSkillNodes, layoutSkillMindMap,
+  expandableSkillIds, fitVisibleSkillNodes, flattenSkillNodes, layoutSkillMindMap,
   parseSkillsDomain, parseSkillsManifest,
 } from './skillsMindMap.utils';
 import type { SkillNode, SkillsManifest, MapEdge } from './skillsMindMap.utils';
@@ -103,7 +100,7 @@ function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, 
 }
 
 export function SkillsMindMap() {
-  const { locale, localeError, setLanguageCode } = useSkillsPageSettings();
+  const { locale, localeError, setLanguageCode, registerMapActions } = useSkillsPageSettings();
   const [manifest, setManifest] = useState<SkillsManifest | null>(null);
   const [language, setLanguage] = useState<string | null>(null);
   const [domains, setDomains] = useState<SkillNode[]>([]);
@@ -121,6 +118,9 @@ export function SkillsMindMap() {
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const dragRef = useRef<{ pointerId: number; x: number; y: number } | null>(null);
   const firstLoad = useRef(true);
+  const didInitialFit = useRef(false);
+  const handledFitRequest = useRef(0);
+  const [fitRequest, setFitRequest] = useState(0);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -211,11 +211,27 @@ export function SkillsMindMap() {
   const layout = useMemo(() => layoutSkillMindMap(rootCollapsed ? [] : domains, collapsed), [domains, collapsed, rootCollapsed]);
   const expandableIds = useMemo(() => expandableSkillIds(domains), [domains]);
 
+  const fitToVisibleNodes = useCallback(() => {
+    const width = viewportRef.current?.clientWidth || viewport.width || 960;
+    const height = viewportRef.current?.clientHeight || viewport.height || 640;
+    const result = fitVisibleSkillNodes(layout, expandedSkills, width, height);
+    setZoom(result.zoom);
+    setPan(result.pan);
+  }, [layout, expandedSkills, viewport.width, viewport.height]);
+
+  // Automatically fit the first loaded graph; subsequent manual pans and zooms
+  // are preserved until an explicit "Вмістити в екран" request.
   useEffect(() => {
-    if (status !== 'ready') return;
-    setZoom(fitMindMapZoom(layout, viewport.width, viewport.height));
-    setPan({ x: 0, y: 0 });
-  }, [layout, viewport.width, viewport.height, status]);
+    if (status !== 'ready' || listView || didInitialFit.current) return;
+    didInitialFit.current = true;
+    fitToVisibleNodes();
+  }, [status, listView, fitToVisibleNodes]);
+
+  useEffect(() => {
+    if (status !== 'ready' || listView || fitRequest === handledFitRequest.current) return;
+    handledFitRequest.current = fitRequest;
+    fitToVisibleNodes();
+  }, [fitRequest, status, listView, fitToVisibleNodes]);
 
   const onSkillToggle = (node: SkillNode) => {
     if (node.kind !== 'skill') return;
@@ -238,24 +254,32 @@ export function SkillsMindMap() {
       });
     }
   };
-  const collapseAll = () => {
+  const collapseAll = useCallback(() => {
     setRootCollapsed(true);
     setCollapsed(new Set(expandableIds));
     setExpandedSkills(new Set());
-  };
-  const expandAll = () => {
+  }, [expandableIds]);
+  const expandAll = useCallback(() => {
     setRootCollapsed(false);
     setCollapsed(new Set());
     setExpandedSkills(new Set(allNodes.filter(node => node.kind === 'skill').map(node => node.id)));
-  };
+  }, [allNodes]);
+  const requestFitToScreen = useCallback(() => {
+    setListView(false);
+    setFitRequest(value => value + 1);
+  }, []);
+
+  // The sidebar invokes exactly the actions used by the map's own controls.
+  useEffect(() => {
+    if (status !== 'ready') return;
+    registerMapActions({ collapseAll, expandAll, fitToScreen: requestFitToScreen });
+    return () => registerMapActions(null);
+  }, [status, registerMapActions, collapseAll, expandAll, requestFitToScreen]);
   const toggleFromProfile = () => {
     setRootCollapsed(value => !value);
     setSelectedId(null);
   };
-  const resetView = () => {
-    setPan({ x: 0, y: 0 });
-    setZoom(fitMindMapZoom(layout, viewport.width, viewport.height));
-  };
+  const resetView = requestFitToScreen;
   const onPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
     if ((event.target as HTMLElement).closest('button, a, select, input')) return;
@@ -318,10 +342,6 @@ export function SkillsMindMap() {
           </select>
         </label>
         <Stack direction="row" flexWrap="wrap" gap={1} alignItems="center">
-          <Button size="small" variant="outlined" startIcon={<OpenInFullRoundedIcon />}
-            onClick={expandAll} disabled={status !== 'ready'}>Розгорнути все</Button>
-          <Button size="small" variant="outlined" startIcon={<CloseFullscreenRoundedIcon />}
-            onClick={collapseAll} disabled={status !== 'ready'}>Згорнути все</Button>
           <Button size="small" variant={listView ? 'contained' : 'outlined'}
             startIcon={listView ? <AccountTreeRoundedIcon /> : <ViewListRoundedIcon />}
             onClick={() => setListView(value => !value)} disabled={status !== 'ready'}>
@@ -360,7 +380,8 @@ export function SkillsMindMap() {
                 onPointerDown={onPointerDown} onPointerMove={onPointerMove}
                 onPointerUp={onPointerUp} onPointerCancel={onPointerUp}
                 data-testid="skills-map-viewport">
-                <div className={styles.world} style={{
+                <div className={styles.world} data-testid="skills-map-world"
+                  data-zoom={zoom} data-pan-x={pan.x} data-pan-y={pan.y} style={{
                   width: layout.worldSize, height: layout.worldSize,
                   transform: 'translate(-50%, -50%) translate(' + pan.x + 'px, ' + pan.y + 'px) scale(' + zoom + ')',
                 }}>
@@ -416,9 +437,9 @@ export function SkillsMindMap() {
                 <button type="button" aria-label="Збільшити масштаб"
                   onClick={() => setZoom(value => Math.min(2.5, value * 1.2))}><ZoomInRoundedIcon /></button>
                 <button type="button" aria-label="Зменшити масштаб"
-                  onClick={() => setZoom(value => Math.max(0.18, value / 1.2))}><ZoomOutRoundedIcon /></button>
+                  onClick={() => setZoom(value => Math.max(0.01, value / 1.2))}><ZoomOutRoundedIcon /></button>
                 <button type="button" aria-label="Показати всю мапу" onClick={resetView}>
-                  <CenterFocusStrongRoundedIcon /></button>
+                  <ZoomOutRoundedIcon /></button>
               </div>
               <p className={styles.mapHint}>Перетягніть для переміщення · Колесо миші для масштабу</p>
             </section>
