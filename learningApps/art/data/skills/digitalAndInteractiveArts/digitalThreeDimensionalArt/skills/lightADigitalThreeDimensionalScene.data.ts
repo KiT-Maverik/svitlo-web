@@ -64,7 +64,7 @@ export const lightADigitalThreeDimensionalScene_Skill_Data = buildSkillConfig({
           "et": "Kasuta digitaalset valgust ja varje meeleolu loomiseks ning vormi esiletoomiseks.",
           "be": "Выкарыстоўвайце лічбавае асвятленне і цені, каб стварыць настрой і выявіць форму.",
           "ka": "გამოიყენეთ ციფრული განათება და ჩრდილები განწყობის შესაქმნელად და ფორმის გამოსაკვეთად.",
-          "kk": "Көңіл күй қалыптастырып, пішінді айқындау үшін цифрлық жарық пен көлеңкені пайдаланыңыз。"
+          "kk": "Көңіл күй қалыптастырып, пішінді айқындау үшін цифрлық жарық пен көлеңкені пайдаланыңыз。",
     
       qm: "Köñül vaziyetini yaratmaq ve şekilni köstermek içün raqemiy yarıq ve kölgeler qullanıñız.",},
   },
