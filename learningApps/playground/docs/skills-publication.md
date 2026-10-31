@@ -70,3 +70,21 @@ The radial view has an avatar root, collapsible Domain and Group branches,
 pan/zoom, an accessible outline mode, and an information panel. Skills are
 leaf nodes; selecting a leaf shows its description. The central avatar is an
 anonymous placeholder until a user-profile data source is connected.
+
+## Skill mastery preview and learning call to action
+
+Only leaf Skill cards show their frontend `name`, `description`, and a mastery
+meter (0–100%). For now `mockSkillMastery(skillId)` produces a deterministic,
+pseudo-random demo percentage from the stable UUID. These numbers are **not**
+learner outcomes, quiz scores or statistics; they are never written to the
+published static JSON. Later replace this function with a profile-specific
+mastery source keyed by Skill UUID.
+
+The **Прокачати** action links to `/skills/<skillUuid>/learn?lang=<languageCode>`.
+This is a distinct anchor from the node's information control; activating the
+link must not trigger map dragging or collapse the node. The destination reads
+the same locale-specific public Skills JSON and validates the requested UUID.
+Until Lesson/Program authoring metadata exposes an actual Skill UUID → content
+relationship, the destination shows an explicit empty result instead of linking
+unrelated demo lessons. Add filtered Lessons and Programs only after their
+Skill-ID relationships become available.
