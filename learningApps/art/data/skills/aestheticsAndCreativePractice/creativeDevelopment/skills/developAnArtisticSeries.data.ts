@@ -30,6 +30,6 @@ export const developAnArtisticSeries_Skill_Data = buildSkillConfig({
           "et": "Loo seotud kunstiteoste sari, mis uurib üht ideed eri viisidel.",
           "be": "Стварыце серыю звязаных твораў, якія па-рознаму даследуюць адну ідэю.",
           "ka": "შექმენით ერთმანეთთან დაკავშირებული ნამუშევრების სერია, რომელიც ერთ იდეას სხვადასხვა გზით იკვლევს.",
-          "kk": "Hozzon létre összetartozó műalkotásokból álló sorozatot, amely egy gondolatot többféleképpen vizsgál。"
+          "kk": "Бір идеяны әр қырынан зерттейтін өзара байланысты өнер туындыларының топтамасын жасаңыз."
     } },
 });
