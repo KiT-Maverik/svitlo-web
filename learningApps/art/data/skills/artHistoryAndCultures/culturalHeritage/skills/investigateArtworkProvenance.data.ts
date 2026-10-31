@@ -65,7 +65,7 @@ export const investigateArtworkProvenance_Skill_Data = buildSkillConfig({
       be: "Адсочваць задакументаваную гісторыю ўласнасці на твор і выяўляць прабелы.",
       ka: "მიჰყევი ნამუშევრის დოკუმენტირებულ მფლობელობის ისტორიას და შენიშნე დაკარგული ინფორმაცია.",
       kk: "Өнер туындысының құжатталған меншік тарихын қадағалап, жетіспейтін деректерді байқа.",
-      qm: "Sanat eseriniñ belgilengен saiplik tarihını izlep, eksik malümatnı fark et.",
+      qm: "Sanat eseriniñ belgilengen saiplik tarihını izlep, eksik malümatnı fark et.",
     },
   },
 });
