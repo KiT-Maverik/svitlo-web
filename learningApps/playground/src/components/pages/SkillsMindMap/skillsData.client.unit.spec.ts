@@ -1,10 +1,12 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
-import { loadPublishedSkills, resolveSkillLanguage } from './skillsData.client';
+import {
+  loadSkillAnalyticsPage, parseSkillAnalyticsPage, resolveSkillLanguage,
+} from './skillsData.client';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
 
-describe('Skills published data transport', () => {
+describe('skillAnalytics page payload', () => {
   const originalFetch = globalThis.fetch;
   beforeEach(() => {
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
@@ -15,47 +17,50 @@ describe('Skills published data transport', () => {
   });
   afterEach(() => vi.stubGlobal('fetch', originalFetch));
 
-  it('resolves real supported language codes from locale identifiers, including Belarusian', () => {
+  it('resolves supported locale codes without fallback', () => {
     expect(resolveSkillLanguage('uk-UA')).toBe('uk');
     expect(resolveSkillLanguage('be-tarask')).toBe('be');
     expect(resolveSkillLanguage('en')).toBe('en');
     expect(() => resolveSkillLanguage('ru')).toThrow(/Непідтримувана/);
   });
 
-  it('loads one locale and one immutable meta per entity without an index.json', async () => {
-    const data = await loadPublishedSkills(TEST_SKILLS_DOMAIN_SLUGS, 'uk', new AbortController().signal);
-    expect(data).toHaveLength(1);
-    expect(data[0].id).toBe(uuid(1));
-    expect(data[0].children[0].children[0]).toMatchObject({
-      id: uuid(3), slug: 'testRed', name: 'Червоний', description: 'Розпізнавати червоний.',
+  it('loads the whole Skill tree with exactly one request per selected language', async () => {
+    const domains = await loadSkillAnalyticsPage('uk', new AbortController().signal, TEST_SKILLS_DOMAIN_SLUGS);
+    expect(domains).toHaveLength(1);
+    expect(domains[0].children[0].children[0]).toMatchObject({
+      id: uuid(3), slug: 'testRed', kind: 'skill',
+      name: 'Червоний', description: 'Розпізнавати червоний.',
     });
-    const urls = vi.mocked(globalThis.fetch).mock.calls.map(([url]) => String(url));
-    expect(urls).toHaveLength(6);
-    expect(urls).toContain('/data/skills/testColors/meta.json');
-    expect(urls).toContain('/data/skills/testColors/testWarmColors/testRed/uk.json');
-    expect(urls.every(url => url.endsWith('/meta.json') || url.endsWith('/uk.json'))).toBe(true);
-    expect(urls.some(url => url.includes('index.json'))).toBe(false);
+    expect(globalThis.fetch).toHaveBeenCalledTimes(1);
+    expect(globalThis.fetch).toHaveBeenCalledWith('/data/pages/skillAnalytics/uk.json',
+      expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
-  it('loads another locale without downloading unrelated language files', async () => {
-    const domains = await loadPublishedSkills(TEST_SKILLS_DOMAIN_SLUGS, 'en', new AbortController().signal);
-    expect(domains[0].children[0].children[0].name).toBe('Red');
-    const urls = vi.mocked(globalThis.fetch).mock.calls.map(([url]) => String(url));
-    expect(urls.filter(url => url.endsWith('/uk.json'))).toHaveLength(0);
+  it('downloads no unrelated locales or metadata', async () => {
+    const result = await loadSkillAnalyticsPage('en', new AbortController().signal);
+    expect(result[0].children[0].children[0].name).toBe('Red');
+    expect(vi.mocked(globalThis.fetch).mock.calls.map(([url]) => String(url)))
+      .toEqual(['/data/pages/skillAnalytics/en.json']);
   });
 
-  it('rejects broken metadata links, duplicate domains and unavailable locale data', async () => {
-    await expect(loadPublishedSkills(['testColors', 'testColors'], 'uk', new AbortController().signal))
-      .rejects.toThrow(/доменів/);
-    await expect(loadPublishedSkills(TEST_SKILLS_DOMAIN_SLUGS, 'ru', new AbortController().signal))
+  it('enforces strict identifiers, scope membership, names and descriptions', async () => {
+    await expect(loadSkillAnalyticsPage('ru', new AbortController().signal))
       .rejects.toThrow(/Непідтримувана/);
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const json = url.endsWith('/testRed/meta.json')
-        ? { id: uuid(3), collection: 'skillGroup', skills: ['broken'] }
-        : fixtureJsonForSkillUrl(url);
-      return { ok: json !== null, status: json === null ? 404 : 200, json: async () => json };
-    }));
-    await expect(loadPublishedSkills(TEST_SKILLS_DOMAIN_SLUGS, 'uk', new AbortController().signal))
-      .rejects.toThrow(/Collection/);
+    await expect(loadSkillAnalyticsPage('uk', new AbortController().signal, ['missing']))
+      .rejects.toThrow(/Невідомі/);
+
+    const fixture = fixtureJsonForSkillUrl('/data/pages/skillAnalytics/en.json');
+    expect(fixture).not.toBeNull();
+    const missingDescription = structuredClone(fixture) as {
+      domains: { children: { children: { description?: string }[] }[] }[];
+    };
+    delete missingDescription.domains[0].children[0].children[0].description;
+    expect(() => parseSkillAnalyticsPage(missingDescription)).toThrow(/фронтенд-опису/);
+
+    const duplicate = structuredClone(fixture) as {
+      domains: { children: { children: { id: string }[] }[] }[];
+    };
+    duplicate.domains[0].children[0].children[0].id = uuid(1);
+    expect(() => parseSkillAnalyticsPage(duplicate)).toThrow(/UUID/);
   });
 });
