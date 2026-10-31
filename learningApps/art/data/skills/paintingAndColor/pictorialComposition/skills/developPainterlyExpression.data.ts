@@ -32,6 +32,7 @@ export const developPainterlyExpression_Skill_Data = buildSkillConfig({
     be: "Развіваць жывапісную выразнасць",
     ka: "ფერწერული გამომსახველობის განვითარება",
     kk: "Кескіндемелік мәнерді дамыту",
+    qm: "Resim ifade tarzını inkişaf ettirmek",
   },
   description: {
     methodological: "Relate brushwork and application texture to a deliberate expressive character.",
@@ -64,6 +65,7 @@ export const developPainterlyExpression_Skill_Data = buildSkillConfig({
       be: "Выкарыстоўвайце характар мазкоў і фактуру фарбы, каб выказаць задуму.",
       ka: "იდეის გამოსახატავად გამოიყენეთ ფუნჯის მონასმების ხასიათი და საღებავის ფაქტურა.",
       kk: "Ойды жеткізу үшін қылқалам іздерінің сипаты мен бояу фактурасын пайдаланыңыз.",
+      qm: "Bir fikirni ifade etmek içün fırça izleriniñ hususiyetini ve boya teksturasını qullanıñız."
     },
   },
 });
