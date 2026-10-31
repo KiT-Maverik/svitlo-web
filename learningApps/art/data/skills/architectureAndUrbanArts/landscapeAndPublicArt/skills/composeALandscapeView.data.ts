@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const composeALandscapeView_Skill_Data = buildSkillConfig({
   slug: "composeALandscapeView",
   id: "3a1e27c6-f208-47be-90fd-e9c902a272de",
-  name: { en: "Compose a Landscape View" },
+  name: {
+    en: "Compose a Landscape View",
+    zh: "构成景观视图",
+    hi: "परिदृश्य दृश्य की रचना करें",
+    es: "Componer una vista paisajística",
+    ar: "تكوين مشهد طبيعي",
+    fr: "Composer une vue paysagère",
+    bn: "ভূদৃশ্যের দৃশ্য বিন্যস্ত করুন",
+    pt: "Compor uma vista paisagística",
+    ur: "منظرنامے کا منظر ترتیب دیں",
+    id: "Menyusun Tampilan Lanskap",
+    de: "Eine Landschaftsansicht gestalten",
+    ja: "風景の眺めを構成する",
+    ko: "경관 장면 구성하기",
+    tr: "Bir Peyzaj Görünümü Oluşturmak",
+    vi: "Bố cục cảnh quan",
+    ta: "நிலக்காட்சிக் காட்சியை அமைக்குங்கள்",
+    te: "ప్రకృతి దృశ్య వీక్షణను కూర్చండి",
+    mr: "भूदृश्य दृश्याची रचना करा",
+    ms: "Menyusun Pemandangan Landskap",
+    he: "עיצוב מבט נופי",
+    pl: "Komponować widok krajobrazowy",
+    uk: "Компонувати ландшафтний краєвид",
+    lt: "Komponuoti kraštovaizdžio vaizdą",
+    lv: "Veidot ainavas skatu",
+    et: "Maastikuvaate kujundamine",
+    be: "Кампанаваць ландшафтны від",
+    ka: "ლანდშაფტის ხედის კომპოზიცია",
+    kk: "Ландшафт көрінісін құрастыру",
+    qm: "Manzara körünişini tertip etmek",
+  },
   description: {
     methodological: "Arrange depth planes, plant forms and focal elements within an outdoor scene.",
     frontend: {
@@ -35,6 +65,7 @@ export const composeALandscapeView_Skill_Data = buildSkillConfig({
           "be": "Размясціце расліны, краявіды і акцэнтныя элементы ў выразнай кампазіцыі пад адкрытым небам.",
           "ka": "მცენარეები, ხედები და აქცენტები მიმზიდველ გარე კომპოზიციად დაალაგეთ.",
           "kk": "Өсімдіктерді, көріністерді және назар аударатын нысандарды тартымды ашық кеңістік композициясына біріктіріңіз。"
-    },
+    
+      qm: "Ösimliklerni, körünişlerni ve diqqet merkezlerini tesirli açıq hava kompozitsiyasına tertip etiñiz.",},
   },
 });
