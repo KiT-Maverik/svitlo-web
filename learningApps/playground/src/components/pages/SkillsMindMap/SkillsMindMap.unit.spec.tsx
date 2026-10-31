@@ -3,27 +3,9 @@ import { fireEvent, render, screen, waitFor, within } from '@testing-library/rea
 import { SkillsMindMap } from './SkillsMindMap';
 import { SkillsPageSettingsProvider } from './SkillsPageSettingsContext';
 import { SkillsPagePreferences } from './SkillsPagePreferences';
+import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
-const domain = (language: 'en' | 'uk') => ({
-  id: uuid(1),
-  slug: 'testColors',
-  collection: 'skillDomain',
-  language,
-  name: language === 'uk' ? 'Кольори' : 'Colors',
-  groups: [{
-    id: uuid(2), slug: 'testWarmColors', collection: 'skillGroup',
-    name: language === 'uk' ? 'Теплі кольори' : 'Warm colors',
-    skills: [
-      {
-        id: uuid(3), slug: 'testRed', collection: 'skill',
-        name: language === 'uk' ? 'Червоний' : 'Red',
-        description: language === 'uk' ? 'Розпізнавати червоний.' : 'Recognize red.',
-      },
-    ],
-  }],
-});
-
 describe('SkillsMindMap', () => {
   const originalFetch = globalThis.fetch;
 
@@ -31,13 +13,7 @@ describe('SkillsMindMap', () => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skills');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const data: unknown = url === '/Data/Skills/index.json'
-        ? { version: 1, languages: ['uk', 'en'], domains: ['testColors'] }
-        : url === '/Data/Skills/testColors/uk.json'
-          ? domain('uk')
-          : url === '/Data/Skills/testColors/en.json'
-            ? domain('en')
-            : null;
+      const data: unknown = fixtureJsonForSkillUrl(url);
       return { ok: data !== null, status: data ? 200 : 404, json: async () => data };
     }));
   });
@@ -48,7 +24,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('loads only the selected language and toggles an individual Group', async () => {
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     const node = await screen.findByTestId('skill-node-testWarmColors');
     expect(node).toHaveAttribute('aria-expanded', 'true');
     expect(screen.getByTestId('skill-node-testRed')).toBeVisible();
@@ -59,11 +35,11 @@ describe('SkillsMindMap', () => {
     fireEvent.click(screen.getByTestId('skill-node-testWarmColors'));
     expect(screen.getByTestId('skill-node-testRed')).toBeInTheDocument();
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/Data/Skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('starts compact with visible mastery, expands the description and Pump action, then collapses again', async () => {
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     const leaf = await screen.findByTestId('skill-node-testRed');
     expect(leaf).toHaveTextContent('Червоний');
     expect(leaf).toHaveAttribute('data-expanded', 'false');
@@ -95,7 +71,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('preserves compact mastery and expanded CTA in the accessible list view', async () => {
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testRed');
     fireEvent.click(screen.getByRole('button', { name: 'Список' }));
     const list = screen.getByRole('region', { name: 'Навички за доменами' });
@@ -116,7 +92,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('keeps different Skill card sizes independent of the Group collapse state', async () => {
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     const leaf = await screen.findByTestId('skill-node-testRed');
     const group = screen.getByTestId('skill-node-testWarmColors');
     fireEvent.click(within(leaf).getByRole('button', { name: /Інформація про скіл/ }));
@@ -132,7 +108,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('collapses all branches, expands them, and supports a keyboard-friendly list view', async () => {
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testRed');
     fireEvent.click(screen.getByRole('button', { name: 'Згорнути все' }));
     expect(screen.queryByTestId('skill-node-testRed')).not.toBeInTheDocument();
@@ -144,7 +120,7 @@ describe('SkillsMindMap', () => {
   });
 
   it('allows collapsing the avatar root to just the learner profile', async () => {
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testColors');
     fireEvent.click(screen.getByTestId('skills-profile'));
     expect(screen.queryByTestId('skill-node-testColors')).not.toBeInTheDocument();
@@ -154,18 +130,18 @@ describe('SkillsMindMap', () => {
   });
 
   it('switches to the requested language without loading all locale files', async () => {
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testRed');
     fireEvent.change(screen.getByRole('combobox', { name: 'Мова даних Skills' }), { target: { value: 'en' } });
     await waitFor(() => expect(screen.getByTestId('skill-node-testRed')).toHaveTextContent('Red'));
     expect(window.location.search).toBe('?lang=en');
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/Data/Skills/testColors/en.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/skills/testColors/en.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('displays a hard error for an unsupported requested language', async () => {
     window.history.replaceState({}, '', '/skills?lang=ru');
-    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     expect(await screen.findByRole('alert')).toHaveTextContent('відсутня');
     expect(globalThis.fetch).not.toHaveBeenCalledWith(
       '/Data/Skills/testColors/ru.json', expect.anything());

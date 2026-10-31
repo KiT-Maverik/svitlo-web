@@ -3,28 +3,17 @@ import { fireEvent, render, screen, within } from '@testing-library/react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { aria } from '@svitlo/ui-kit/learning-layout/constants';
 import { SkillsPageShell } from './SkillsPageShell';
+import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 const theme = createTheme({ cssVariables: true, colorSchemes: { light: true, dark: true } });
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
-const domain = {
-  id: uuid(1), slug: 'testColors', collection: 'skillDomain',
-  language: 'uk', name: 'Кольори',
-  groups: [{
-    id: uuid(2), slug: 'testWarmColors', collection: 'skillGroup', name: 'Теплі кольори',
-    skills: [{ id: uuid(3), slug: 'testRed', collection: 'skill',
-      name: 'Червоний', description: 'Розпізнавати червоний.' }],
-  }],
-};
-
 describe('Skills page in shared LearningLayout', () => {
   const originalFetch = globalThis.fetch;
   beforeEach(() => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skills');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const data = url === '/Data/Skills/index.json'
-        ? { version: 1, languages: ['uk'], domains: ['testColors'] }
-        : url === '/Data/Skills/testColors/uk.json' ? domain : null;
+      const data: unknown = fixtureJsonForSkillUrl(url);
       return { ok: data !== null, status: data === null ? 404 : 200, json: async () => data };
     }));
   });
@@ -34,7 +23,7 @@ describe('Skills page in shared LearningLayout', () => {
   });
 
   it('opens the existing navbar settings drawer and changes page-owned Skill cards', async () => {
-    render(<ThemeProvider theme={theme}><SkillsPageShell /></ThemeProvider>);
+    render(<ThemeProvider theme={theme}><SkillsPageShell domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></ThemeProvider>);
     const card = await screen.findByTestId('skill-node-testRed');
     expect(within(card).getByRole('progressbar')).toBeInTheDocument();
     expect(screen.getByRole('navigation', { name: aria.navigation.top })).toBeInTheDocument();

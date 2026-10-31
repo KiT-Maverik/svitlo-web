@@ -2,17 +2,9 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { SkillsMindMap } from './SkillsMindMap';
 import { SkillsPageSettingsProvider } from './SkillsPageSettingsContext';
+import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
-const fixture = {
-  id: uuid(1), slug: 'testColors', collection: 'skillDomain', language: 'uk', name: 'Кольори',
-  groups: [{
-    id: uuid(2), slug: 'testWarmColors', collection: 'skillGroup', name: 'Теплі кольори',
-    skills: [{ id: uuid(3), slug: 'testRed', collection: 'skill', name: 'Червоний',
-      description: 'Розпізнавати червоний.' }],
-  }],
-};
-
 type PointerTest = {
   id: number; x: number; y: number;
   pointerType?: 'touch' | 'mouse';
@@ -34,9 +26,7 @@ describe('Skills mind-map touch gestures', () => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skills');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const data = url === '/Data/Skills/index.json'
-        ? { version: 1, languages: ['uk'], domains: ['testColors'] }
-        : url === '/Data/Skills/testColors/uk.json' ? fixture : null;
+      const data: unknown = fixtureJsonForSkillUrl(url);
       return { ok: data !== null, status: data !== null ? 200 : 404, json: async () => data };
     }));
   });
@@ -46,7 +36,7 @@ describe('Skills mind-map touch gestures', () => {
   });
 
   async function map() {
-    render(<SkillsPageSettingsProvider><SkillsMindMap /></SkillsPageSettingsProvider>);
+    render(<SkillsPageSettingsProvider><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     await screen.findByTestId('skill-node-testRed');
     const viewport = screen.getByTestId('skills-map-viewport');
     const captured = new Set<number>();

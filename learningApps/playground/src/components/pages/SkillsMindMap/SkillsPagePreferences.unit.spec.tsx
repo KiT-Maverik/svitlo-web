@@ -3,21 +3,9 @@ import { fireEvent, render, screen, within } from '@testing-library/react';
 import { SkillsMindMap } from './SkillsMindMap';
 import { SkillsPagePreferences } from './SkillsPagePreferences';
 import { SkillsPageSettingsProvider } from './SkillsPageSettingsContext';
+import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
-const domain = {
-  id: uuid(1), slug: 'testColors', collection: 'skillDomain',
-  name: 'Кольори', language: 'uk',
-  groups: [{
-    id: uuid(2), slug: 'testWarmColors', collection: 'skillGroup',
-    name: 'Теплі кольори',
-    skills: [{
-      id: uuid(3), slug: 'testRed', collection: 'skill',
-      name: 'Червоний', description: 'Розпізнавати червоний.',
-    }],
-  }],
-};
-
 describe('Skills page-scoped settings', () => {
   const originalFetch = globalThis.fetch;
 
@@ -25,9 +13,7 @@ describe('Skills page-scoped settings', () => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skills');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const result: unknown = url === '/Data/Skills/index.json'
-        ? { version: 1, languages: ['uk'], domains: ['testColors'] }
-        : url === '/Data/Skills/testColors/uk.json' ? domain : null;
+      const result: unknown = fixtureJsonForSkillUrl(url);
       return { ok: result !== null, status: result === null ? 404 : 200, json: async () => result };
     }));
   });
@@ -41,7 +27,7 @@ describe('Skills page-scoped settings', () => {
     return render(
       <SkillsPageSettingsProvider>
         <SkillsPagePreferences />
-        <SkillsMindMap />
+        <SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} />
       </SkillsPageSettingsProvider>,
     );
   }

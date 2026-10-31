@@ -1,19 +1,9 @@
 import { beforeEach, afterEach, describe, expect, it, vi } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import { SkillLearningClient } from './SkillLearningClient';
+import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
-const fixture = {
-  id: uuid(1), slug: 'testColors', collection: 'skillDomain',
-  name: 'Кольори', language: 'uk',
-  groups: [{
-    id: uuid(2), slug: 'testWarmColors', collection: 'skillGroup',
-    name: 'Теплі кольори',
-    skills: [{ id: uuid(3), slug: 'testRed', collection: 'skill', name: 'Червоний',
-      description: 'Розпізнавати червоний.' }],
-  }],
-};
-
 describe('Skill learning destination', () => {
   const originalFetch = globalThis.fetch;
 
@@ -21,10 +11,7 @@ describe('Skill learning destination', () => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skills/' + uuid(3) + '/learn?lang=uk');
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const data = url === '/Data/Skills/index.json'
-        ? { version: 1, languages: ['uk'], domains: ['testColors'] }
-        : url === '/Data/Skills/testColors/uk.json'
-          ? fixture : null;
+      const data: unknown = fixtureJsonForSkillUrl(url);
       return { ok: data !== null, status: data === null ? 404 : 200, json: async () => data };
     }));
   });
@@ -35,7 +22,7 @@ describe('Skill learning destination', () => {
   });
 
   it('loads one locale, selects the UUID and does not invent linked content', async () => {
-    render(<SkillLearningClient skillId={uuid(3)} />);
+    render(<SkillLearningClient skillId={uuid(3)} domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} />);
     expect(await screen.findByRole('heading', { name: 'Червоний' })).toBeInTheDocument();
     expect(screen.getByText('Розпізнавати червоний.')).toBeInTheDocument();
     expect(screen.getByRole('progressbar', { name: /Демонстраційний рівень/ })).toHaveAttribute('aria-valuenow');
@@ -43,11 +30,11 @@ describe('Skill learning destination', () => {
     expect(screen.getByRole('link', { name: /Повернутися до карти Skills/ }))
       .toHaveAttribute('href', '/skills?lang=uk');
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/Data/Skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('reports an unknown skill rather than substituting a different lesson', async () => {
-    render(<SkillLearningClient skillId={uuid(99)} />);
+    render(<SkillLearningClient skillId={uuid(99)} domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} />);
     const alert = await screen.findByRole('alert');
     expect(alert).toHaveTextContent('не знайдено');
     expect(within(alert).getByRole('link', { name: /Повернутися/ }))
