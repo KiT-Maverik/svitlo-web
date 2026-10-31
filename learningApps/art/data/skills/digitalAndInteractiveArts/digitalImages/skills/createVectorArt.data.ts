@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const createVectorArt_Skill_Data = buildSkillConfig({
   slug: "createVectorArt",
   id: "d12691a0-b50e-41b8-a8a7-fa1c67343b8d",
-  name: { en: "Create Vector Art" },
+  name: {
+    en: "Create Vector Art",
+    zh: "创作矢量艺术",
+    hi: "वेक्टर कला बनाएँ",
+    es: "Crear arte vectorial",
+    ar: "إنشاء فن متجهي",
+    fr: "Créer une œuvre vectorielle",
+    bn: "ভেক্টর শিল্প তৈরি করুন",
+    pt: "Criar arte vetorial",
+    ur: "ویکٹر آرٹ بنائیں",
+    id: "Membuat Seni Vektor",
+    de: "Vektorgrafik erstellen",
+    ja: "ベクターアートを制作する",
+    ko: "벡터 아트 만들기",
+    tr: "Vektör Sanatı Oluşturmak",
+    vi: "Tạo nghệ thuật vector",
+    ta: "வெக்டர் கலையை உருவாக்குங்கள்",
+    te: "వెక్టర్ కళను సృష్టించండి",
+    mr: "व्हेक्टर कला तयार करा",
+    ms: "Mencipta Seni Vektor",
+    he: "יצירת אמנות וקטורית",
+    pl: "Tworzyć grafikę wektorową",
+    uk: "Створювати векторне мистецтво",
+    lt: "Kurti vektorinį meną",
+    lv: "Veidot vektorgrafiku",
+    et: "Vektorkunsti loomine",
+    be: "Ствараць вектарны твор",
+    ka: "ვექტორული ხელოვნების შექმნა",
+    kk: "Векторлық өнер жасау",
+    qm: "Vektor sanatını yaratmaq",
+  },
   description: {
     methodological: "Organize curves and shapes that remain coherent across changes in display scale.",
     frontend: {
@@ -35,6 +65,7 @@ export const createVectorArt_Skill_Data = buildSkillConfig({
           "be": "Стварайце маштабаваныя выявы з дапамогай рэдагаваных лічбавых крывых і фігур.",
           "ka": "შექმენით მასშტაბირებადი გამოსახულებები რედაქტირებადი ციფრული მრუდებისა და ფორმების გამოყენებით.",
           "kk": "Өңдеуге болатын цифрлық қисықтар мен пішіндер арқылы өлшемі өзгеретін кескіндер жасаңыз。"
-    },
+    
+      qm: "Deñiştirilebilen raqemiy egri ve şekiller ile ölçeklenebilir suretler yaratmaq.",},
   },
 });
