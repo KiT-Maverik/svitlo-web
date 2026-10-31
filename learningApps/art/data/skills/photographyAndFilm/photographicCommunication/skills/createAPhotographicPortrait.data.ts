@@ -46,7 +46,7 @@ export const createAPhotographicPortrait_Skill_Data = buildSkillConfig({
       ar: "أنشئ صورة شخصية مدروسة باستخدام الوضعية والمنظور والمكان والإضاءة.",
       fr: "Réalisez un portrait réfléchi en jouant sur la pose, la perspective, le décor et la lumière.",
       bn: "ভঙ্গি, দৃষ্টিকোণ, পরিবেশ ও আলো ব্যবহার করে ভাবনাপূর্ণ প্রতিকৃতি তৈরি করুন।",
-      pt: "Crie um retrato pensado, usando a pose, a perspetiva, o cenário e a luz.",
+      pt: "Crie um retrato pensado, usando a pose, a perspectiva, o cenário e a luz.",
       ur: "پوز، زاویۂ نگاہ، ماحول اور روشنی سے بامقصد پورٹریٹ بنائیں۔",
       id: "Buat potret yang terencana dengan menggunakan pose, perspektif, latar, dan cahaya.",
       de: "Gestalte ein durchdachtes Porträt mit Pose, Perspektive, Umgebung und Licht.",
