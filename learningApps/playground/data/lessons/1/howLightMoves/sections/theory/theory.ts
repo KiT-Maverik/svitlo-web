@@ -1,3 +1,4 @@
+import {LanguageCode} from "@svitlo/engine";
 import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
 
 import type { StringObjectToLocale } from '../../transformer.types';
@@ -6,6 +7,8 @@ import lightPropagationSimulation from "./scenes/lightPropagationSimulation";
 import {lightRayDiagram} from "./scenes/lightRayDiagram";
 
 type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['theory']>;
+
+const getMarkdownLocale = (path: string): Record<LanguageCode, string> => 4
 
 export const theory: Locale = {
   name: {
@@ -38,6 +41,11 @@ export const theory: Locale = {
     ur: 'نظریہ',
     vi: 'Lý thuyết',
     zh: '理论',
+  },
+  markdown:{
+    p1: getMarkdownLocale('./markdown/p1'),
+    p2: getMarkdownLocale('./markdown/p2'),
+    p3: getMarkdownLocale('./markdown/p3'),
   },
   scene: {
     checkpoint,
