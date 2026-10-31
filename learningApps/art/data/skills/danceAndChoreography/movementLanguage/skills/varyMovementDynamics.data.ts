@@ -6,7 +6,7 @@ export const varyMovementDynamics_Skill_Data = buildSkillConfig({
   name: {
   "en": "Vary Movement Dynamics",
   "zh": "变化动作力度",
-  "hi": "改变动作的力度与动态",
+  "hi": "गति की गतिशीलता में विविधता लाएँ",
   "es": "Variar la dinámica del movimiento",
   "ar": "نوّع ديناميكيات الحركة",
   "fr": "Variez la dynamique du mouvement",
