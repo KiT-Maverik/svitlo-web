@@ -220,7 +220,7 @@ export function SkillsMindMap() {
   };
   const onPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
-    if ((event.target as HTMLElement).closest('button, select')) return;
+    if ((event.target as HTMLElement).closest('button, a, select, input')) return;
     dragRef.current = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
     event.currentTarget.setPointerCapture(event.pointerId);
   };
