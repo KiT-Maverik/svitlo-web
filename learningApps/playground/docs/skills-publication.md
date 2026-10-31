@@ -134,5 +134,6 @@ the live map actions while Skills has finished loading; controls are disabled be
 the map is available and released on unmount. Fit accounts for both compact and
 expanded Skill card dimensions and preserves user zoom/pan during ordinary node
 interaction until Fit is explicitly requested. The map's bottom-right fit icon
-invokes the exact same action. Removed redundant collapse/expand buttons from the
+invokes the exact same action. The right drawer closes after using Fit, so it
+cannot obscure the newly fitted graph. Removed redundant collapse/expand buttons from the
 top-of-page controls.
