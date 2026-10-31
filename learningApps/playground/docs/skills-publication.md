@@ -59,8 +59,10 @@ through its `predev` and `prebuild` hooks, *before* Next.js serves the assets.
 `--write` atomically replaces the **entire generated** `public/Data/Skills`
 directory after validation. Never place handwritten files in that directory.
 The `--check` command is read-only and fails on missing, changed, or stale files.
-Unsupported languages, missing translations, duplicate slugs or UUIDs, and broken
-child references fail generation instead of falling back to English.
+Unsupported languages, missing translations, mismatched authoring slugs,
+duplicate UUIDs, and broken child references fail generation instead of falling
+back to English. A slug is unique within its parent collection and may recur
+under another Group or Domain; a UUID must be globally unique.
 
 The synthetic Playground `[TEST <code>]` values are temporary fixtures, **not**
 valid translations for production use.
