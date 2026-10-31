@@ -1,6 +1,17 @@
-import {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
+import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
+import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
 
-export const howLightMoves_Locale: HowLightMoves_Lesson_Locale = {
+export type DeepLocalized<T> = T extends string
+  ? Record<DefaultSupportedLanguage['language'], string>
+  : T extends readonly (infer Item)[]
+    ? readonly DeepLocalized<Item>[]
+    : T extends object
+      ? { [Key in keyof T]: DeepLocalized<T[Key]> }
+      : T;
+
+export type HowLightMoves_Lesson_Locales = DeepLocalized<HowLightMoves_Lesson_Locale>;
+
+export const howLightMoves_Locale: HowLightMoves_Lesson_Locales = {
   name: {
     en: 'How Light Travels',
     qm: 'Yarıq nasıl yayıla?',
