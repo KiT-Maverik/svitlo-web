@@ -3,7 +3,37 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { developAnArtisticSeries_Skill_Data, explainArtisticDecisions_Skill_Data, generateArtisticIdeas_Skill_Data, produceArtisticStudies_Skill_Data, reviseAnArtwork_Skill_Data } from './skills';
 
 export const creativeDevelopment_SkillGroup_Data = buildSkillGroupConfig({
-  slug: "creativeDevelopment", id: "ede2b917-513d-42a9-adb8-a22bc76dcb81", name: { en: "Creative Development" },
+  slug: "creativeDevelopment", id: "ede2b917-513d-42a9-adb8-a22bc76dcb81", name: {
+    en: "Creative Development",
+    zh: "创意发展",
+    hi: "रचनात्मक विकास",
+    es: "Desarrollo creativo",
+    ar: "التطور الإبداعي",
+    fr: "Développement créatif",
+    bn: "সৃজনশীল বিকাশ",
+    pt: "Desenvolvimento criativo",
+    ur: "تخلیقی نشوونما",
+    id: "Pengembangan Kreatif",
+    de: "Kreative Entwicklung",
+    ja: "創造的な発展",
+    ko: "창의적 발전",
+    tr: "Yaratıcı Gelişim",
+    vi: "Phát triển sáng tạo",
+    ta: "படைப்பாற்றல் வளர்ச்சி",
+    te: "సృజనాత్మక అభివృద్ధి",
+    mr: "सर्जनशील विकास",
+    ms: "Perkembangan Kreatif",
+    he: "התפתחות יצירתית",
+    pl: "Rozwój twórczy",
+    uk: "Творчий розвиток",
+    lt: "Kūrybinė raida",
+    lv: "Radošā attīstība",
+    et: "Loov areng",
+    be: "Творчае развіццё",
+    ka: "შემოქმედებითი განვითარება",
+    kk: "Шығармашылық даму",
+    qm: "Yaratıcılıq inkişafı",
+  },
   skills: { developAnArtisticSeries: developAnArtisticSeries_Skill_Data, explainArtisticDecisions: explainArtisticDecisions_Skill_Data, generateArtisticIdeas: generateArtisticIdeas_Skill_Data, produceArtisticStudies: produceArtisticStudies_Skill_Data, reviseAnArtwork: reviseAnArtwork_Skill_Data },
   description: { methodological: "Original work grows through choices, experiments and refinement, but this catalog does not impose a fixed teaching sequence.", frontend: {
           "en": "Turn creative possibilities into artworks through experimentation and thoughtful revision.",
@@ -34,5 +64,6 @@ export const creativeDevelopment_SkillGroup_Data = buildSkillGroupConfig({
           "be": "Ператварайце творчыя магчымасці ў мастацкія творы праз эксперыменты і прадуманае дапрацоўванне.",
           "ka": "ექსპერიმენტითა და გააზრებული გადამუშავებით აქციეთ შემოქმედებითი შესაძლებლობები ნამუშევრებად.",
           "kk": "Тәжірибе жасап, ойластыра қайта өңдеу арқылы шығармашылық мүмкіндіктерді өнер туындыларына айналдырыңыз."
-    } },
+    
+      qm: "Yaratıcılıq imkânlarını tecribe ve düşünceli qayta işlevnen sanat eserlerine çevriñiz.",} },
 });
