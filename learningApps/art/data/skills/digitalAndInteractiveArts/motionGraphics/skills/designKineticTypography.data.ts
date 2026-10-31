@@ -64,7 +64,7 @@ export const designKineticTypography_Skill_Data = buildSkillConfig({
           "et": "Pane liikuvad sõnad tähendust edasi andma ajastuse ja teisenduste abil.",
           "be": "Перадавайце сэнс рухомымі словамі праз іх рытм і трансфармацыі.",
           "ka": "მოძრავი სიტყვებით გადმოეცით აზრი დროისა და გარდაქმნების საშუალებით.",
-          "kk": "Қозғалыстағы сөздердің уақытын және түрленуін басқарып, мағына жеткізіңіз."
+          "kk": "Қозғалыстағы сөздердің уақытын және түрленуін басқарып, мағына жеткізіңіз.",
     
       qm: "Yazı şekilleriniñ hareketi vastasınen mana ve tesir yaratqan tasarımını yapıñız.",},
   },
