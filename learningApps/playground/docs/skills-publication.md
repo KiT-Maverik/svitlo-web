@@ -73,8 +73,15 @@ anonymous placeholder until a user-profile data source is connected.
 
 ## Skill mastery preview and learning call to action
 
-Only leaf Skill cards show their frontend `name`, `description`, and a mastery
-meter (0–100%). For now `mockSkillMastery(skillId)` produces a deterministic,
+Each leaf Skill node has two independent display states. **Compact** is the default:
+the localized `name`, numeric mastery percentage, and a bottom progress stripe
+remain visible, with a subtle mastery-tier tint. Clicking the Skill title expands
+the card to show its frontend `description`, full mastery bar, and the
+**Прокачати** action; clicking again minimizes it. The expanded state is keyed
+by Skill UUID, independent of collapsing Domain/Group descendants. The outline
+mode supports the same toggle. Map positions do not jump when a card changes size.
+
+Only leaf Skill cards show the mastery meter (0–100%). For now `mockSkillMastery(skillId)` produces a deterministic,
 pseudo-random demo percentage from the stable UUID. These numbers are **not**
 learner outcomes, quiz scores or statistics; they are never written to the
 published static JSON. Later replace this function with a profile-specific
