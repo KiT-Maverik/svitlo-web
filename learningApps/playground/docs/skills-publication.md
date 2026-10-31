@@ -31,12 +31,16 @@ A Domain JSON root has `id`, `slug`, `collection: "skillDomain"`, `name`,
 optional localized `description`, `language`, and `groups` containing SkillGroup
 objects with nested `skills`. Each Group JSON root has the same metadata and a
 `skills` array. Each Skill JSON root has `collection: "skill"` and no children.
-An exceptional ungrouped Domain uses `skills` directly and individual Skill files
-at `<domain>/<skill>/<language>.json`.
+A Domain may use `skills` directly, with individual Skill files at
+`<domain>/<skill>/<language>.json`, **alongside** its `groups`. The hierarchy in
+source files is composed of complete child entities (`groups`, `skills`), not
+`groupIds` or `skillIds`; the published JSON is a localized projection of them.
 
 `name` and `description` are **strings**, never dictionaries of locales.
-`description` is emitted only when frontend text `description.fe[language]`
-exists; authoring-only `description.methodological` is never published.
+`description` is emitted from the mandatory Skill text `description.frontend[language]`;
+authoring-only `description.methodological` is never published. Group and Domain
+frontend descriptions are optional. The publisher validates the authored `slug`
+against its `.data.ts` filename and never synthesizes an omitted slug.
 The `id` values are copied from stable authoring UUIDs, not regenerated.
 
 ## Commands
@@ -154,3 +158,15 @@ instructions. The node/label palette includes a dark-mode variant for the
 `data-dark` MUI color scheme. Real-device Safari/Android multitouch interaction,
 font clipping with long translations, and visual WCAG contrast still need
 browser verification before a production release.
+
+## Canonical contract alignment (main)
+
+Playground fixture authoring now follows the repository-wide contracts: every
+Skill, Group and Domain has an explicit `slug`; every Skill has
+`description.methodological` plus its fully translated `description.frontend`;
+Groups contain keyed complete `skills` entities, and Domains contain keyed
+complete `groups` and optional direct `skills` entities. No ID-only taxonomy
+relations are permitted. The publisher validates this structure and only emits
+selected-locale strings. The browser parser rejects obsolete ID-only fields,
+missing Skill descriptions and invalid slugs. All canonical types/builders from
+`main` must be present in the eventual merge commit for TypeScript compilation.
