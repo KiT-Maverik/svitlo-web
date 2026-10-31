@@ -42,7 +42,15 @@ function cli() {
   opts.markdown = path.join(pkg, 'docs/skills/taxonomy.md');
   opts.targetRoot = path.join(pkg, 'data/skills');
   if (!fs.existsSync(opts.markdown)) throw Error('Missing taxonomy.md: ' + opts.markdown);
-  if (fs.existsSync(path.join(pkg,'Data/skills'))) throw Error('Obsolete uppercase Data root: migrate explicitly');
+  // Inspect actual directory-entry casing: on case-insensitive macOS,
+  // existsSync('Data/skills') also returns true for valid 'data/skills'.
+  const packageDirs = fs.readdirSync(pkg, { withFileTypes: true });
+  if (packageDirs.some(entry => entry.isDirectory() && entry.name === 'Data'))
+    throw Error('Obsolete uppercase Data root: migrate explicitly');
+  const dataDir = packageDirs.find(entry => entry.isDirectory() && entry.name === 'data');
+  if (dataDir && fs.readdirSync(path.join(pkg, dataDir.name), { withFileTypes: true })
+    .some(entry => entry.isDirectory() && entry.name === 'Skills'))
+    throw Error('Obsolete uppercase Skills root: migrate explicitly');
   if (opts.translations) {
     const p = path.resolve(root, opts.translations);
     if (!p.startsWith(root + path.sep) || !fs.existsSync(p)) throw Error('Translations must be an existing file inside repository');
