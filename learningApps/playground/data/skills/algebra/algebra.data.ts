@@ -1,5 +1,6 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
+import { equalities_SkillGroup_Data } from './equalities/equalities.data';
 import { patterns_SkillGroup_Data } from './patterns/patterns.data';
 import { unknowns_SkillGroup_Data } from './unknowns/unknowns.data';
 
@@ -36,6 +37,7 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Алгебра",
   },
   groupIds: {
+    equalities: equalities_SkillGroup_Data.id,
     patterns: patterns_SkillGroup_Data.id,
     unknowns: unknowns_SkillGroup_Data.id,
   },
