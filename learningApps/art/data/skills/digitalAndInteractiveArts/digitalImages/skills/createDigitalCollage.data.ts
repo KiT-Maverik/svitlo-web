@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const createDigitalCollage_Skill_Data = buildSkillConfig({
   slug: "createDigitalCollage",
   id: "05ee1906-55b6-4985-9810-be8d48200e2c",
-  name: { en: "Create Digital Collage" },
+  name: {
+    en: "Create Digital Collage",
+    zh: "创作数字拼贴",
+    hi: "डिजिटल कोलाज बनाएँ",
+    es: "Crear un collage digital",
+    ar: "إنشاء كولاج رقمي",
+    fr: "Créer un collage numérique",
+    bn: "ডিজিটাল কোলাজ তৈরি করুন",
+    pt: "Criar uma colagem digital",
+    ur: "ڈیجیٹل کولیج بنائیں",
+    id: "Membuat Kolase Digital",
+    de: "Eine digitale Collage erstellen",
+    ja: "デジタルコラージュを作成する",
+    ko: "디지털 콜라주 만들기",
+    tr: "Dijital Kolaj Oluşturmak",
+    vi: "Tạo tranh ghép kỹ thuật số",
+    ta: "மின்னிலக்கப் படத்தொகுப்பை உருவாக்குங்கள்",
+    te: "డిజిటల్ కొలాజ్‌ను సృష్టించండి",
+    mr: "डिजिटल कोलाज तयार करा",
+    ms: "Mencipta Kolaj Digital",
+    he: "יצירת קולאז׳ דיגיטלי",
+    pl: "Tworzyć kolaż cyfrowy",
+    uk: "Створювати цифровий колаж",
+    lt: "Kurti skaitmeninį koliažą",
+    lv: "Veidot digitālu kolāžu",
+    et: "Digitaalse kollaaži loomine",
+    be: "Ствараць лічбавы калаж",
+    ka: "ციფრული კოლაჟის შექმნა",
+    kk: "Цифрлық коллаж жасау",
+    qm: "Raqemiy kollaj yaratmaq",
+  },
   description: {
     methodological: "Combine images or fragments so their juxtaposition creates a new meaning.",
     frontend: {
@@ -35,6 +65,7 @@ export const createDigitalCollage_Skill_Data = buildSkillConfig({
           "be": "Спалучайце лічбавыя выявы, каб ствараць новыя сувязі і значэнні.",
           "ka": "შეაერთეთ ციფრული გამოსახულებები ახალი კავშირებისა და მნიშვნელობების შესაქმნელად.",
           "kk": "Жаңа байланыстар мен мағыналар жасау үшін цифрлық кескіндерді біріктіріңіз。"
-    },
+    
+      qm: "Raqemiy suretlerni birleştirip, yañı bağlar ve manalar yaratmaq.",},
   },
 });
