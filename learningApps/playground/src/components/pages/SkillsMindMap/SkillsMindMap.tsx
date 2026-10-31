@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import type { PointerEvent as ReactPointerEvent } from 'react';
+import type { MouseEvent as ReactMouseEvent, PointerEvent as ReactPointerEvent } from 'react';
 import { Alert, Box, Button, Chip, CircularProgress, Stack, Typography } from '@mui/material';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
@@ -370,7 +370,7 @@ export function SkillsMindMap() {
       event.currentTarget.releasePointerCapture(event.pointerId);
     }
   };
-  const onClickCapture = (event: React.MouseEvent<HTMLDivElement>) => {
+  const onClickCapture = (event: ReactMouseEvent<HTMLDivElement>) => {
     if (suppressTapRef.current) {
       event.preventDefault();
       event.stopPropagation();
