@@ -33,6 +33,6 @@ export const expressionAndMeaning_SkillGroup_Data = buildSkillGroupConfig({
           "et": "Uuri, kuidas kunst vahendab tähendust metafooride, emotsioonide ja vormi kaudu.",
           "be": "Даследуйце, як мастацтва перадае сэнс праз метафару, эмоцыі і форму.",
           "ka": "შეისწავლეთ, როგორ გადმოსცემს ხელოვნება მნიშვნელობას მეტაფორის, ემოციისა და ფორმის საშუალებით.",
-          "kk": "Fedezze fel, hogyan közvetít jelentést a művészet metaforán, érzelmeken és formán keresztül。"
+          "kk": "Өнердің метафора, эмоция және пішін арқылы мағынаны қалай жеткізетінін зерттеңіз."
     } },
 });
