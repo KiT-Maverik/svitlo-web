@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const fractionGreaterThanOne_Skill_Data = buildSkillConfig({
+  slug: 'fractionGreaterThanOne',
   id: '59f5bbe7-63e4-4f1b-a23e-47f3e59c1ac7',
   name: {
     en: "Representing fractions greater than one",

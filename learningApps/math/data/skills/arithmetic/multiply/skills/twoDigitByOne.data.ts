@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const twoDigitByOne_Skill_Data = buildSkillConfig({
+  slug: 'twoDigitByOne',
   id: 'd2a66536-011d-4d97-b85b-707e2b55919d',
   name: {
     lt: "Daugyba — dviženklis skaičius iš vienaženklio",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const twoStepPlan_Skill_Data = buildSkillConfig({
+  slug: 'twoStepPlan',
   id: '126e3b5b-fa90-4f68-8efc-05b0117611c3',
   name: {
     lt: "Dviejų veiksmų sprendimo planavimas",

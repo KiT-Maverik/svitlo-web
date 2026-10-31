@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const weekMonthYear_Skill_Data = buildSkillConfig({
+  slug: 'weekMonthYear',
   id: '3fccd9a5-9094-400e-8401-be2fa98cbfa6',
   name: {
     en: "Navigating days, weeks, and months in a calendar",

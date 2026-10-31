@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const weighObject_Skill_Data = buildSkillConfig({
+  slug: 'weighObject',
   id: '401849ab-d37f-49a3-9179-da85f6704707',
   name: {
     en: "Reading a scale and recording mass with units",

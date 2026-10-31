@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const commutative_Skill_Data = buildSkillConfig({
+  slug: 'commutative',
   id: '1750b60b-9e8d-4426-b307-1b6c7a4d641b',
   name: {
     lt: "Daugyba — perstatomumo dėsnis",

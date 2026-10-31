@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const rectangleAreaModel_Skill_Data = buildSkillConfig({
+  slug: 'rectangleAreaModel',
   id: '18927cbb-05bf-4f99-9d85-aaf60512417f',
   name: {
     en: "Relating rectangle area to side-length multiplication",

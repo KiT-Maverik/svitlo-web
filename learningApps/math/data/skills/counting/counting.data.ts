@@ -7,6 +7,7 @@ import { ordinal_SkillGroup_Data } from './ordinal/ordinal.data';
 import { parity_SkillGroup_Data } from './parity/parity.data';
 
 export const counting_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'counting',
   id: 'b41da424-c12f-4563-87d5-c8a58052a922',
   name: {
     en: "Counting",
@@ -38,12 +39,12 @@ export const counting_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Liczenie",
     uk: "Лічба",
   },
-  groupIds: {
-    sequence: sequence_SkillGroup_Data.id,
-    cardinality: cardinality_SkillGroup_Data.id,
-    steps: steps_SkillGroup_Data.id,
-    ordinal: ordinal_SkillGroup_Data.id,
-    parity: parity_SkillGroup_Data.id,
+  groups: {
+    sequence: sequence_SkillGroup_Data,
+    cardinality: cardinality_SkillGroup_Data,
+    steps: steps_SkillGroup_Data,
+    ordinal: ordinal_SkillGroup_Data,
+    parity: parity_SkillGroup_Data,
   },
   description: {
     methodological: "The concept of quantity develops through one-to-one correspondence between objects and number words, movement along the natural-number sequence, ordinal positions, and grouping objects for counting.",

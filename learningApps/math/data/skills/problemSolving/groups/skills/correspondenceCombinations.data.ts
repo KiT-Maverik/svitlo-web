@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const correspondenceCombinations_Skill_Data = buildSkillConfig({
+  slug: 'correspondenceCombinations',
   id: 'e2a50956-57c9-44c5-a871-6ce071a147be',
   name: {
     lt: "Dviejų rinkinių derinių skaičiavimas",

@@ -6,6 +6,7 @@ import { logic_SkillGroup_Data } from './logic/logic.data';
 import { representations_SkillGroup_Data } from './representations/representations.data';
 
 export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'reasoning',
   id: '91e2d845-0c04-4a81-b126-8bad16300cad',
   name: {
     en: "Reasoning",
@@ -37,11 +38,11 @@ export const reasoning_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Rozumowanie",
     uk: "Міркування",
   },
-  groupIds: {
-    argumentation: argumentation_SkillGroup_Data.id,
-    verification: verification_SkillGroup_Data.id,
-    logic: logic_SkillGroup_Data.id,
-    representations: representations_SkillGroup_Data.id,
+  groups: {
+    argumentation: argumentation_SkillGroup_Data,
+    verification: verification_SkillGroup_Data,
+    logic: logic_SkillGroup_Data,
+    representations: representations_SkillGroup_Data,
   },
   description: { methodological: "Justifying mathematical statements, finding counterexamples, drawing logical conclusions, checking solutions, and translating between representations." },
 });

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const partWholeAddsub_Skill_Data = buildSkillConfig({
+  slug: 'partWholeAddsub',
   id: 'adb1adc5-7f54-495d-a65f-e8754a2a0748',
   name: {
     lt: "Dalies ir visumos uždavinių sprendimas",

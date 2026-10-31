@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const distanceOnLine_Skill_Data = buildSkillConfig({
+  slug: 'distanceOnLine',
   id: 'c3a0e1b2-2158-4365-be77-cf97d3bace23',
   name: {
     lt: "Atstumas tarp sveikųjų skaičių skaičių tiesėje",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const numberLine20_Skill_Data = buildSkillConfig({
+  slug: 'numberLine20',
   id: 'b0ee8874-a540-48d4-bcc4-8075e49526ce',
   name: {
     lt: "Skaičiai skaičių tiesėje iki 20",

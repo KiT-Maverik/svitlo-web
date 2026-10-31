@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { multipleRepresentations_Skill_Data } from './skills';
 
 export const representations_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'representations',
   id: 'efaa3687-e789-421a-996b-78ac52d63f42',
   name: {
     en: "Mathematical representations",
@@ -34,8 +35,8 @@ export const representations_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Reprezentacje matematyczne",
     uk: "Математичні представлення",
   },
-  skillIds: {
-    multipleRepresentations: multipleRepresentations_Skill_Data.id,
+  skills: {
+    multipleRepresentations: multipleRepresentations_Skill_Data,
   },
   description: { methodological: "Translating between concrete depictions, diagrams, verbal rules, and symbolic notation while preserving mathematical meaning." },
 });

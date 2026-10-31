@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const tallyMarks_Skill_Data = buildSkillConfig({
+  slug: 'tallyMarks',
   id: '8930fd33-d7d2-448f-a97c-637053e95731',
   name: {
     en: "Recording and reading tally marks",

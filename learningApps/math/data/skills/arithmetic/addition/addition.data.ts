@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { addMeaning_Skill_Data, addZero_Skill_Data, commutativeAddition_Skill_Data, makeTenStrategy_Skill_Data, crossTenAddition_Skill_Data, associativeAddition_Skill_Data, columnAddition_Skill_Data, regrouping_Skill_Data } from './skills';
 
 export const addition_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'addition',
   id: 'd7008a9f-2674-4f99-b11d-c6edae4ee778',
   name: {
     en: "Addition",
@@ -34,15 +35,15 @@ export const addition_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Dodawanie",
     uk: "Додавання",
   },
-  skillIds: {
-    addMeaning: addMeaning_Skill_Data.id,
-    addZero: addZero_Skill_Data.id,
-    commutativeAddition: commutativeAddition_Skill_Data.id,
-    makeTenStrategy: makeTenStrategy_Skill_Data.id,
-    crossTenAddition: crossTenAddition_Skill_Data.id,
-    associativeAddition: associativeAddition_Skill_Data.id,
-    columnAddition: columnAddition_Skill_Data.id,
-    regrouping: regrouping_Skill_Data.id,
+  skills: {
+    addMeaning: addMeaning_Skill_Data,
+    addZero: addZero_Skill_Data,
+    commutativeAddition: commutativeAddition_Skill_Data,
+    makeTenStrategy: makeTenStrategy_Skill_Data,
+    crossTenAddition: crossTenAddition_Skill_Data,
+    associativeAddition: associativeAddition_Skill_Data,
+    columnAddition: columnAddition_Skill_Data,
+    regrouping: regrouping_Skill_Data,
   },
   description: {
     methodological: "Combining quantities, properties of sums, place-value regrouping, and methods for calculating and checking results.",

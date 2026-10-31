@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const estimateResult_Skill_Data = buildSkillConfig({
+  slug: 'estimateResult',
   id: 'ddaf0423-4cd8-45ed-8e8c-7f88038c0fcd',
   name: {
     lt: "Sudėtis ir atimtis — rezultato įvertinimas",

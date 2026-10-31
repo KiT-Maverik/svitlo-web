@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { flexiblePartition_Skill_Data, totalTensInNumber_Skill_Data, makeTen_Skill_Data, tensOnes_Skill_Data, makeHundred_Skill_Data, hundredsTensOnes_Skill_Data, digitPlaceValue_Skill_Data, zeroPlaceholder_Skill_Data, expandedForm_Skill_Data, regroupPlaceValues_Skill_Data, multipleRepresentations_Skill_Data } from './skills';
 
 export const placeValue_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'placeValue',
   id: '1a31b4c2-458b-4bb4-9228-c735fee263a9',
   name: {
     en: "Place value",
@@ -34,18 +35,18 @@ export const placeValue_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Wartość pozycyjna",
     uk: "Розрядність",
   },
-  skillIds: {
-    flexiblePartition: flexiblePartition_Skill_Data.id,
-    totalTensInNumber: totalTensInNumber_Skill_Data.id,
-    makeTen: makeTen_Skill_Data.id,
-    tensOnes: tensOnes_Skill_Data.id,
-    makeHundred: makeHundred_Skill_Data.id,
-    hundredsTensOnes: hundredsTensOnes_Skill_Data.id,
-    digitPlaceValue: digitPlaceValue_Skill_Data.id,
-    zeroPlaceholder: zeroPlaceholder_Skill_Data.id,
-    expandedForm: expandedForm_Skill_Data.id,
-    regroupPlaceValues: regroupPlaceValues_Skill_Data.id,
-    multipleRepresentations: multipleRepresentations_Skill_Data.id,
+  skills: {
+    flexiblePartition: flexiblePartition_Skill_Data,
+    totalTensInNumber: totalTensInNumber_Skill_Data,
+    makeTen: makeTen_Skill_Data,
+    tensOnes: tensOnes_Skill_Data,
+    makeHundred: makeHundred_Skill_Data,
+    hundredsTensOnes: hundredsTensOnes_Skill_Data,
+    digitPlaceValue: digitPlaceValue_Skill_Data,
+    zeroPlaceholder: zeroPlaceholder_Skill_Data,
+    expandedForm: expandedForm_Skill_Data,
+    regroupPlaceValues: regroupPlaceValues_Skill_Data,
+    multipleRepresentations: multipleRepresentations_Skill_Data,
   },
   description: {
     methodological: "The decimal structure of numbers, place values, exchanges between ones, tens, and hundreds, and equivalent decompositions of the same quantity.",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const countUnitSquares_Skill_Data = buildSkillConfig({
+  slug: 'countUnitSquares',
   id: '4c389e9b-24de-476f-8882-e973d812809a',
   name: {
     en: "Determining area by counting unit squares",

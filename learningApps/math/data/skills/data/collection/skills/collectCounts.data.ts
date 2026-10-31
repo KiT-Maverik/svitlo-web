@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const collectCounts_Skill_Data = buildSkillConfig({
+  slug: 'collectCounts',
   id: 'cfe3e619-a2bf-42db-8b4e-6cc3ff707f01',
   name: {
     en: "Counting category frequencies",

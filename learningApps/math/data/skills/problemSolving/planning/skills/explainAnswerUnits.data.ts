@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const explainAnswerUnits_Skill_Data = buildSkillConfig({
+  slug: 'explainAnswerUnits',
   id: 'cc32ed01-5823-42a0-a32e-810074474d93',
   name: {
     lt: "Atsakymo matavimo vienetų ir pagrįstumo tikrinimas",

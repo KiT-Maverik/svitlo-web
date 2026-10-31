@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const fillSimpleTable_Skill_Data = buildSkillConfig({
+  slug: 'fillSimpleTable',
   id: '03c02752-3921-4349-b7b0-ad955248e511',
   name: {
     en: "Recording observations in a table",

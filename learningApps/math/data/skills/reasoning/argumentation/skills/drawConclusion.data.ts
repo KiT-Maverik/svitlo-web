@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const drawConclusion_Skill_Data = buildSkillConfig({
+  slug: 'drawConclusion',
   id: 'cda308de-9fd0-4536-8635-2f5ba1a7010d',
   name: {
     en: "Drawing a conclusion from given conditions and reasoning",

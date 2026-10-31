@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const distinguishExampleRule_Skill_Data = buildSkillConfig({
+  slug: 'distinguishExampleRule',
   id: 'a7426dcb-f817-41c5-bc9e-47244ea5301b',
   name: {
     en: "Distinguishing a single example from a general rule",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const increaseDecreaseFactor_Skill_Data = buildSkillConfig({
+  slug: 'increaseDecreaseFactor',
   id: '863bc70e-c4f5-4ca2-b65d-94d69638c09d',
   name: {
     lt: "Didinimas ar mažinimas nurodytą kartų skaičių",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const distributive_Skill_Data = buildSkillConfig({
+  slug: 'distributive',
   id: 'f8ebb2c5-d8e4-42d5-96ee-71e6ab32269e',
   name: {
     lt: "Daugyba — skirstomumo dėsnis",

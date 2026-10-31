@@ -5,6 +5,7 @@ import { presentation_SkillGroup_Data } from './presentation/presentation.data';
 import { interpretation_SkillGroup_Data } from './interpretation/interpretation.data';
 
 export const data_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'data',
   id: 'ae6d7bb7-0ee8-4bdd-8853-3d8d11233007',
   name: {
     en: "Data",
@@ -36,10 +37,10 @@ export const data_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Dane",
     uk: "Дані",
   },
-  groupIds: {
-    collection: collection_SkillGroup_Data.id,
-    presentation: presentation_SkillGroup_Data.id,
-    interpretation: interpretation_SkillGroup_Data.id,
+  groups: {
+    collection: collection_SkillGroup_Data,
+    presentation: presentation_SkillGroup_Data,
+    interpretation: interpretation_SkillGroup_Data,
   },
   description: { methodological: "Formulating questions, collecting and classifying information, representing it in tables and charts, and drawing conclusions supported by the data." },
 });

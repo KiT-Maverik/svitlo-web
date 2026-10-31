@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readExpression_Skill_Data = buildSkillConfig({
+  slug: 'readExpression',
   id: '122fcbd6-0bb7-4a3b-b639-688837198113',
   name: {
     lt: "Dalyba — reiškinių skaitymas",

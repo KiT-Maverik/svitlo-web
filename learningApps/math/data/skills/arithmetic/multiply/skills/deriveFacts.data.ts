@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const deriveFacts_Skill_Data = buildSkillConfig({
+  slug: 'deriveFacts',
   id: '3785f833-039d-49f7-a70f-4a1ebdb6654a',
   name: {
     lt: "Daugyba — sandaugų išvedimas",

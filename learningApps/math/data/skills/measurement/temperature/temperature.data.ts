@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { readTemperature_Skill_Data } from './skills';
 
 export const temperature_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'temperature',
   id: '3bf02823-2dbf-49cd-af93-2df758f4208a',
   name: {
     en: "Temperature",
@@ -34,8 +35,8 @@ export const temperature_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Temperatura",
     uk: "Температура"
   },
-  skillIds: {
-    readTemperature: readTemperature_Skill_Data.id,
+  skills: {
+    readTemperature: readTemperature_Skill_Data,
   },
   description: { methodological: "Temperature as a physical quantity, its reading from a thermometer scale, interpretation of scale divisions, and correct temperature-unit notation; whether a reading is positive or negative does not determine membership in this group." },
 });

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unknownMinuend_Skill_Data = buildSkillConfig({
+  slug: 'unknownMinuend',
   id: '9b035dee-91cf-4e5a-ad29-c64100da3964',
   name: {
     en: "Finding an unknown minuend",

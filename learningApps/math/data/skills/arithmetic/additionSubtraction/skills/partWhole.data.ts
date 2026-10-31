@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const partWhole_Skill_Data = buildSkillConfig({
+  slug: 'partWhole',
   id: 'edd12274-ab3e-4409-bbc0-9847140ec465',
   name: {
     lt: "Sudėtis ir atimtis — dalies ir visumos ryšys",

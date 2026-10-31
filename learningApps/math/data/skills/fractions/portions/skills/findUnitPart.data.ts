@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const findUnitPart_Skill_Data = buildSkillConfig({
+  slug: 'findUnitPart',
   id: '98870d29-e56b-471d-aba8-8ed9f22e3c3a',
   name: {
     en: "Finding 1/n of a quantity by division",

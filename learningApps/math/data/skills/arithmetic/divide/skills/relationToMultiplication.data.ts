@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const relationToMultiplication_Skill_Data = buildSkillConfig({
+  slug: 'relationToMultiplication',
   id: 'aeda65fb-0667-443b-8842-73cee12965a4',
   name: {
     lt: "Dalyba — atvirkštiniai veiksmai",

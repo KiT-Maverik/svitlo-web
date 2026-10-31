@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const by6_Skill_Data = buildSkillConfig({
+  slug: 'by6',
   id: '82a88ace-2af0-4507-b6a6-12bae32ff6b6',
   name: {
     lt: "Dalyba — ÷ 6",

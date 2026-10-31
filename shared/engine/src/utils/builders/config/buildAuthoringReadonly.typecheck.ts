@@ -33,25 +33,30 @@ section.name.value.en = 'Changed';
 
 const names = {} as Skill_Config['name'];
 const skill = buildSkillConfig({
+  slug: 'testSkill',
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names,
   description: { methodological: 'English conceptual boundaries.', frontend: names },
 });
+// @ts-expect-error Skill slug is readonly.
+skill.slug = 'changed';
 // @ts-expect-error Skill names are readonly.
 skill.name.uk = 'Changed';
 
 const group = buildSkillGroupConfig({
+  slug: 'testGroup',
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names,
-  skillIds: { first: '9d1e7906-fa72-4ac5-b313-b135333fb937' },
+  skills: { first: skill },
 });
 // @ts-expect-error Skill Group references are readonly.
-group.skillIds.first = 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb';
+group.skills.first = skill;
 
 const domain = buildSkillDomainConfig({
+  slug: 'testDomain',
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names,
-  groupIds: { first: '9d1e7906-fa72-4ac5-b313-b135333fb937' },
+  groups: { first: group },
 });
 // @ts-expect-error Skill Domain references are readonly.
-domain.groupIds.first = 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb';
+domain.groups.first = group;
 
 const translated = {} as AssessmentMethod_Config['title'];
 const assessment = buildAssessmentMethodConfig({

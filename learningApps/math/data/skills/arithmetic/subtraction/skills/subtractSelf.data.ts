@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const subtractSelf_Skill_Data = buildSkillConfig({
+  slug: 'subtractSelf',
   id: '623f1f12-39d4-4422-8f2b-52053eefa7bc',
   name: {
     lt: "Atimtis — tas pats skaičius",

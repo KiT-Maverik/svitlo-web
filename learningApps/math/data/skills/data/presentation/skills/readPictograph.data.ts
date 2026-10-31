@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readPictograph_Skill_Data = buildSkillConfig({
+  slug: 'readPictograph',
   id: '4d9532aa-f47a-416f-a0a6-c219943ceb24',
   name: {
     en: "Reading a one-to-one pictograph",

@@ -182,7 +182,7 @@ for (const folder of subdirs(taxonomyRoot)) {
   const domain = readEntity(domainFile, 'SkillDomain');
   const groups = subdirs(domainFolder);
   const directSkills = readSkills(domainFolder);
-  if ((groups.length > 0) === (directSkills.length > 0)) fail('Domain must have only Groups or direct Skills: ' + domainFile);
+  if (groups.length === 0 && directSkills.length === 0) fail('Domain has no Groups or Skills: ' + domainFile);
   const content = groups.map(group => {
     const groupFolder = path.join(domainFolder, group);
     const groupFile = path.join(groupFolder, group + '.data.ts');

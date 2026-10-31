@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const capacityConcept_Skill_Data = buildSkillConfig({
+  slug: 'capacityConcept',
   id: 'a57c2d50-cd76-4614-9e12-f1505ef7f05c',
   name: {
     en: "Comparing container capacities by pouring or measuring",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const circleDisk_Skill_Data = buildSkillConfig({
+  slug: 'circleDisk',
   id: 'e875516d-7466-4b91-b249-1b4e0de6b052',
   name: {
     en: "Distinguishing the circumference and the disk",

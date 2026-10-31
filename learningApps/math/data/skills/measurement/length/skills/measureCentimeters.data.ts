@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const measureCentimeters_Skill_Data = buildSkillConfig({
+  slug: 'measureCentimeters',
   id: 'abb9261a-793e-48fd-8262-7cd2ca8df3d3',
   name: {
     en: "Measuring segments in centimeters",

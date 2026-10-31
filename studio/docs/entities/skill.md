@@ -28,7 +28,7 @@ A candidate is **not** a Skill merely because a learner can perform an observabl
 
 ## EDITORIAL SLUG
 
-New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug must be unique among **all Domain, Group and Skill slugs in the textbook**, including unrelated parents and entity kinds. An approved slug remains stable across name/translation changes; it is not the UUID or an additional runtime `Skill_Config` field. Preserve existing Code paths and UUIDs without silent renaming.
+New-format Skills have one English `Slug: lowerCamelCase` immediately beneath their heading. A Skill slug must be unique among **all Domain, Group and Skill slugs in the textbook**, including unrelated parents and entity kinds. An approved slug remains stable across name/translation changes; it is a required `Skill_Config.slug` field distinct from the UUID. Preserve existing Code paths and UUIDs without silent renaming.
 
 ## CLASSIFICATION, REFERENCES AND OWNERSHIP
 
@@ -39,7 +39,7 @@ New-format Skills have one English `Slug: lowerCamelCase` immediately beneath th
 - **Within each textbook**, continue checking for redundant Skills, unclear splits/merges, atomicity and stable identities. Cross-textbook duplication permission does **not** authorize needless duplication within one taxonomy.
 - Cross-subject lessons may draw on material from several textbooks without asserting globally unified Skill identity or a combined learner-mastery record.
 
-- A Skill has exactly one primary catalog parent: ordinarily a SkillGroup, or exceptionally a SkillDomain with no Groups. It may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics without duplicate ownership.
+- A Skill has exactly one primary catalog parent: ordinarily a SkillGroup, or directly a SkillDomain, including one that also contains Groups. It may be referenced across Lessons, Questions, Practice, Curricula, Programs and analytics without duplicate ownership.
 - A multi-Skill Question does not automatically establish separate mastery evidence for each referenced Skill. Assessment attribution and scores belong to assessment/progress entities.
 - Curriculum/Program owns sequencing and prerequisites; the taxonomy owns classification and conceptual descriptions.
 - Age, school grade, teaching instructions, difficulty, exercise format, prerequisites, learner history, outcomes and scores are **not Skill fields**.

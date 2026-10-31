@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const doubleTwice_Skill_Data = buildSkillConfig({
+  slug: 'doubleTwice',
   id: 'dcaa33ea-4bd8-42d5-8b22-27dd75d13c53',
   name: {
     lt: "Daugyba — dvigubinimas du kartus",

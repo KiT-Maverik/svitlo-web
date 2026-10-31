@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const trueFalseEquality_Skill_Data = buildSkillConfig({
+  slug: 'trueFalseEquality',
   id: '7dca0048-581a-4cff-9fa4-670cb7655505',
   name: {
     en: "Checking numerical equalities and inequalities",

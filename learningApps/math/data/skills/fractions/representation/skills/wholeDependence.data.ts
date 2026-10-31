@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const wholeDependence_Skill_Data = buildSkillConfig({
+  slug: 'wholeDependence',
   id: 'ff4e8348-80c0-49dd-8f49-191c9673b3e4',
   name: {
     en: "Explaining how part size depends on the whole",

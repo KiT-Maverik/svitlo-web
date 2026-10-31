@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const millimeters_Skill_Data = buildSkillConfig({
+  slug: 'millimeters',
   id: 'fa6cb61c-e83a-49d9-961c-8444e0fa231b',
   name: {
     en: "Measuring in millimeters and relating them to centimeters",

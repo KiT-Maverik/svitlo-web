@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { areaPerimeterContrast_Skill_Data, perimeterVsArea_Skill_Data } from './skills';
 
 export const perimeterArea_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'perimeterArea',
   id: '580b10f6-cb53-4db4-b74c-ffccef55564d',
   name: {
     en: "Relationship between perimeter and area",
@@ -34,9 +35,9 @@ export const perimeterArea_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Związek między obwodem a polem",
     uk: "Зв’язок периметра та площі",
   },
-  skillIds: {
-    areaPerimeterContrast: areaPerimeterContrast_Skill_Data.id,
-    perimeterVsArea: perimeterVsArea_Skill_Data.id,
+  skills: {
+    areaPerimeterContrast: areaPerimeterContrast_Skill_Data,
+    perimeterVsArea: perimeterVsArea_Skill_Data,
   },
   description: {
     methodological: "Perimeter measures the boundary and area measures the interior; the same value for one does not uniquely determine the other.",

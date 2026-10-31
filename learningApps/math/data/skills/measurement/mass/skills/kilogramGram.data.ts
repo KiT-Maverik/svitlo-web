@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const kilogramGram_Skill_Data = buildSkillConfig({
+  slug: 'kilogramGram',
   id: '2d6e3dbf-3b0e-4368-92aa-6853332f20d0',
   name: {
     en: "Relating kilograms and grams",

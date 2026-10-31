@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const order100_Skill_Data = buildSkillConfig({
+  slug: 'order100',
   id: '299e8e1c-d426-403f-a73a-9111bcc65939',
   name: {
     lt: "Dviženklių skaičių lyginimas ir rikiavimas",

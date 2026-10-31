@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const totalTensInNumber_Skill_Data = buildSkillConfig({
+  slug: 'totalTensInNumber',
   id: 'e89f69ed-48a7-4b1c-a4fc-d990926d0cb4',
   name: {
     lt: "Pilnų dešimčių skaičius skaičiuje",

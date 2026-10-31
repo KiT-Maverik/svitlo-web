@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const factsWithin20_Skill_Data = buildSkillConfig({
+  slug: 'factsWithin20',
   id: '1ffee805-7302-4069-a2ae-1639b07ce718',
   name: {
     lt: "Sudėtis ir atimtis — skaičių deriniai iki 20",

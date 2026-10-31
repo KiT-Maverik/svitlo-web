@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readWrite1000_Skill_Data = buildSkillConfig({
+  slug: 'readWrite1000',
   id: 'de22f569-5a58-4d63-bc1a-664fad8a6bf6',
   name: {
     lt: "Triženklių skaičių skaitymas ir rašymas",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const crossTenSubtraction_Skill_Data = buildSkillConfig({
+  slug: 'crossTenSubtraction',
   id: '31be8d1e-5c8c-44cb-b8da-bf811b46c4f7',
   name: {
     lt: "Atimtis — peržengiant dešimtį",

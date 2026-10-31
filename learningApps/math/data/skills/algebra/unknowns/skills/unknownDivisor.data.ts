@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unknownDivisor_Skill_Data = buildSkillConfig({
+  slug: 'unknownDivisor',
   id: 'c820dfa2-a186-4d00-8a53-4b6b4993a76b',
   name: {
     en: "Finding an unknown divisor",

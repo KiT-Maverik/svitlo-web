@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const countBy10_Skill_Data = buildSkillConfig({
+  slug: 'countBy10',
   id: 'f0669022-6bc5-45fc-acb7-92f03e03cf27',
   name: {
     en: "Counting in steps of 10",

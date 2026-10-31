@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const forward20_Skill_Data = buildSkillConfig({
+  slug: 'forward20',
   id: '0fef6118-fa2e-4ffa-a31f-42f26ef94177',
   name: {
     en: "Counting forward within 20",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const digits09_Skill_Data = buildSkillConfig({
+  slug: 'digits09',
   id: 'b86b9bc2-f53d-404a-92a3-10de53a83f06',
   name: {
     lt: "Skaitmenys 0–9 ir skaitmens reikšmė",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const linesAndPoints_Skill_Data = buildSkillConfig({
+  slug: 'linesAndPoints',
   id: '32258326-50ad-496c-a202-059bff6828b6',
   name: {
     en: "Distinguishing points and line types",

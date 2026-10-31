@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const chooseAppropriateUnit_Skill_Data = buildSkillConfig({
+  slug: 'chooseAppropriateUnit',
   id: 'bc720d51-24c5-43a2-b034-0b58055a0efd',
   name: {
     en: "Choosing suitable units for length, mass or capacity",

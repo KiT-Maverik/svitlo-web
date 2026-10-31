@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compositeArea_Skill_Data = buildSkillConfig({
+  slug: 'compositeArea',
   id: '8dedc81b-faae-489e-9d3c-14331920224e',
   name: {
     en: "Finding the area of a composite rectilinear figure",

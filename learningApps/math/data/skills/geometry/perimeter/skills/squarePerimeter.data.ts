@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const squarePerimeter_Skill_Data = buildSkillConfig({
+  slug: 'squarePerimeter',
   id: '109234af-0003-4dca-9b7a-a0fdfb791835',
   name: {
     en: "Calculating the perimeter of a square",

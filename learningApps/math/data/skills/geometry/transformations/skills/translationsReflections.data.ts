@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const translationsReflections_Skill_Data = buildSkillConfig({
+  slug: 'translationsReflections',
   id: 'd93e1819-5d86-4cfe-b200-44ad0cc8478c',
   name: {
     en: "Translating and reflecting figures",

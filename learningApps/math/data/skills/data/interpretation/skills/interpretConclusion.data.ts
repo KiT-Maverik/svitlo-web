@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const interpretConclusion_Skill_Data = buildSkillConfig({
+  slug: 'interpretConclusion',
   id: '57c71e4d-0641-42e2-856d-b2282f308374',
   name: {
     en: "Drawing conclusions from data",

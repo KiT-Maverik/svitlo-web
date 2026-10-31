@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const measurePerimeter_Skill_Data = buildSkillConfig({
+  slug: 'measurePerimeter',
   id: '13a58a6e-d453-4d8b-bba8-fae79b2a77cd',
   name: {
     en: "Measuring a polygon perimeter by adding its sides",

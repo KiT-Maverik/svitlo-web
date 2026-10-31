@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const identifyKnownUnknown_Skill_Data = buildSkillConfig({
+  slug: 'identifyKnownUnknown',
   id: '87a8b2f2-0e9e-4b10-aa28-bd52ba0c9b7e',
   name: {
     lt: "Žinomų ir nežinomų dydžių nustatymas",

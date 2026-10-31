@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unknownFactor_Skill_Data = buildSkillConfig({
+  slug: 'unknownFactor',
   id: '86d61e77-3ad4-4d9c-bf1a-5646ffc15f24',
   name: {
     en: "Finding an unknown factor",

@@ -1,18 +1,22 @@
 import type { Collection } from '../misc.types';
-import type { SkillDescription_Config } from './skill.types';
+import type { SkillDescription_Config, SkillData } from './skill.types';
 import type { LanguageCode } from '../languages';
-import type { Skill } from './skill.types';
 
 export interface SkillGroup_Config {
-  id: Skill['id'];
+  /** Stable editorial slug, matching the entity's data filename. */
+  slug: string;
+  id: SkillData['id'];
   name: Readonly<Record<LanguageCode, string>>;
-  /** Canonical English methodological text and optional complete frontend translations. */
   description?: SkillDescription_Config;
-  skillIds: Readonly<Record<string, Skill['id']>>;
+  /** Direct child Skill entities, not UUID references. */
+  skills: Readonly<Record<string, SkillData>>;
 }
 
-/** fileLocation is added by a build-time source registry. */
+/** fileLocation is assigned by the source registry, not the authoring builder. */
 export interface SkillGroup extends SkillGroup_Config {
   readonly collection: Extract<Collection, 'skillGroup'>;
   fileLocation: string;
 }
+
+/** Built Group entity, before fileLocation is attached by the source registry. */
+export type SkillGroupData = Omit<SkillGroup, 'fileLocation'>;

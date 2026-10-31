@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const shapeOnSolidSurface_Skill_Data = buildSkillConfig({
+  slug: 'shapeOnSolidSurface',
   id: 'a9355c95-a65a-472e-bb7d-f11c7a23fe49',
   name: {
     en: "Identifying plane figures on solid surfaces",

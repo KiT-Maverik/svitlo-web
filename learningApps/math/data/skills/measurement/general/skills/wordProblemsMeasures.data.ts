@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const wordProblemsMeasures_Skill_Data = buildSkillConfig({
+  slug: 'wordProblemsMeasures',
   id: '64050aaa-4552-4d11-a947-c922f51e89f8',
   name: {
     en: "Solving measurement word problems with compatible units",

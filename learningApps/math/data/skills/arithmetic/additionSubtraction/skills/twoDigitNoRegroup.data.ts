@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
+  slug: 'twoDigitNoRegroup',
   id: '3e712df5-1468-4ade-9539-f74986e61ea3',
   name: {
     lt: "Sudėtis ir atimtis — dviženkliai skaičiai be pergrupavimo",

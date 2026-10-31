@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const buildBarChart_Skill_Data = buildSkillConfig({
+  slug: 'buildBarChart',
   id: '5dd18314-5344-4219-9ffb-1b9df9fc7ec7',
   name: {
     en: "Constructing a bar chart",

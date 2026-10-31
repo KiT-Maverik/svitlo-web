@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const logicalElimination_Skill_Data = buildSkillConfig({
+  slug: 'logicalElimination',
   id: '0322e05e-0418-4031-8473-5b84e7ebb363',
   name: {
     en: "Eliminating impossible options in a logical problem",

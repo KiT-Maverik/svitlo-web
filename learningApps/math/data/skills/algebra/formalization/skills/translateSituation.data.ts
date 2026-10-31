@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const translateSituation_Skill_Data = buildSkillConfig({
+  slug: 'translateSituation',
   id: '616323a8-423c-4ff8-9d1a-f19435a0dd26',
   name: {
     en: "Representing a situation with an expression or equation",

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { standardUnitPurpose_Skill_Data, chooseAppropriateUnit_Skill_Data, wordProblemsMeasures_Skill_Data } from './skills';
 
 export const general_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'general',
   id: '44154798-a292-4ff4-8f64-5093114af194',
   name: {
     en: "General measurement skills",
@@ -34,10 +35,10 @@ export const general_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Ogólne umiejętności mierzenia",
     uk: "Загальні вимірювальні навички"
   },
-  skillIds: {
-    standardUnitPurpose: standardUnitPurpose_Skill_Data.id,
-    chooseAppropriateUnit: chooseAppropriateUnit_Skill_Data.id,
-    wordProblemsMeasures: wordProblemsMeasures_Skill_Data.id,
+  skills: {
+    standardUnitPurpose: standardUnitPurpose_Skill_Data,
+    chooseAppropriateUnit: chooseAppropriateUnit_Skill_Data,
+    wordProblemsMeasures: wordProblemsMeasures_Skill_Data,
   },
   description: { methodological: "General principles for choosing units, reconciling measurements, and calculating with comparable quantities." },
 });
