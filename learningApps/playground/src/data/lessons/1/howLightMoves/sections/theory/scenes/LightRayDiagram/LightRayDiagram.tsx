@@ -3,7 +3,7 @@
 import styles from './LightRayDiagram.module.css';
 import { getLocaleDirection } from '@svitlo/engine/localization';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { LightRayDiagram_Locale } from './lightRayDiagram.locale';
+import type { LightRayDiagram_Locale } from './LightRayDiagram.types';
 
 export function LightRayDiagram() {
   const { locale, scenes } = useSceneLocales<{ ray: LightRayDiagram_Locale }>();

@@ -4,7 +4,7 @@ import { LightRayDiagram } from './LightRayDiagram';
 import { howLightMoves_Lesson_Data } from '../../../../../index.data';
 import { howLightMovesCatalog } from '../../../../../howLightMoves.catalog';
 import { buildLesson } from '@svitlo/engine/builders';
-import type { LightRayDiagram_Locale } from './lightRayDiagram.locale';
+import type { LightRayDiagram_Locale } from './LightRayDiagram.types';
 import { SceneLocaleProvider } from '@/components/pages/Lesson/SceneLocaleContext';
 import type { Locale } from '@svitlo/engine/localization';
 

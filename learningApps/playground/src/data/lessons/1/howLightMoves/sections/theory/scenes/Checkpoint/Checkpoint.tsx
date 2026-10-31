@@ -2,7 +2,7 @@
 
 import { KnowledgeCheckpoint } from '@svitlo/ui-kit';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { TheoryKnowledgeCheckpoint_Locale } from './Checkpoint.locale';
+import type { TheoryKnowledgeCheckpoint_Locale } from './Checkpoint.types';
 
 export function Checkpoint() {
   const { locale, scenes } = useSceneLocales<{ checkpoint: TheoryKnowledgeCheckpoint_Locale }>();

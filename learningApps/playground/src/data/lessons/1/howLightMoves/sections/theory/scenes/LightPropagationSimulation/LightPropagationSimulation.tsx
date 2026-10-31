@@ -5,7 +5,7 @@ import { Box, Button, Paper, Slider, Typography } from '@mui/material';
 import styles from './LightPropagationSimulation.module.css';
 import { getLocaleDirection } from '@svitlo/engine/localization';
 import { useSceneLocales } from '@/components/pages/Lesson/SceneLocaleContext';
-import type { LightPropagationSimulation_Locale } from './lightPropagationSimulation.locale';
+import type { LightPropagationSimulation_Locale } from './LightPropagationSimulation.types';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
 

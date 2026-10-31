@@ -9,10 +9,10 @@ import {
   opaqueObjectShadow_Question_Data,
 } from './questions/index.data';
 import { howLightMoves_Lesson_Ids } from '../../howLightMoves.ids';
-import { quiz_Section_Ids, quiz_Quiz_Ids } from './quiz.ids';
+import { quiz_Section_Ids } from './quiz.ids';
 
 export const quiz_Quiz_Data: Quiz_Config = {
-  id: quiz_Quiz_Ids.quiz,
+  id: '2a02b81f-dbd6-58d8-9711-4deb97312a56',
   sectionId: quiz_Section_Ids.quiz,
   lessonId: howLightMoves_Lesson_Ids.howLightMoves,
   name: name_TextResource_Data,
