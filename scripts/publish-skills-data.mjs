@@ -137,11 +137,13 @@ function skillSlugs(root) {
 export function loadSkillGraph(root, codes = languageCodes()) {
   checkTaxonomy(root);
   const graph = [];
-  const allSlugs = new Set();
+  const allPaths = new Set();
   const allIds = new Set();
   function entity(file, slug, kind) {
-    assert(slugPattern.test(slug) && !allSlugs.has(slug), 'Duplicate or invalid slug: ' + slug);
-    allSlugs.add(slug);
+    const relativeFile = path.relative(root, file).split(path.sep).join('/');
+    assert(slugPattern.test(slug) && !allPaths.has(relativeFile),
+      'Duplicate or invalid Skill source location: ' + relativeFile);
+    allPaths.add(relativeFile);
     const result = readEntity(file, slug, kind, codes);
     assert(!allIds.has(result.id), 'Duplicate UUID: ' + result.id);
     allIds.add(result.id);
