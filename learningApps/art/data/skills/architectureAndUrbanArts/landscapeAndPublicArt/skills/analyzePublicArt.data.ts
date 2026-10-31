@@ -64,7 +64,7 @@ export const analyzePublicArt_Skill_Data = buildSkillConfig({
           "et": "Uuri, kuidas avaliku kunstiteose asukoht mõjutab selle tähendust ja ligipääsetavust.",
           "be": "Даследуйце, як размяшчэнне публічнага мастацкага твора ўплывае на яго значэнне і даступнасць.",
           "ka": "შეისწავლეთ, როგორ მოქმედებს საჯარო ხელოვნების ნიმუშის მდებარეობა მის მნიშვნელობასა და ხელმისაწვდომობაზე.",
-          "kk": "Қоғамдық өнер туындысының орналасуы оның мәні мен қолжетімділігіне қалай әсер ететінін зерттеңіз。"
+          "kk": "Қоғамдық өнер туындысының орналасуы оның мәні мен қолжетімділігіне қалай әсер ететінін зерттеңіз。",
     
       qm: "Cemaat sanat eseriniñ yeriniñ mana ve qolaylıqqa nasıl tesir etkenini keşf etiñiz.",},
   },
