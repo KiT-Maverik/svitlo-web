@@ -64,7 +64,7 @@ export const curateGenerativeOutputs_Skill_Data = buildSkillConfig({
           "et": "Vali ja täiusta loodud pilte oma kunstiliste eesmärkide järgi.",
           "be": "Выбірайце і ўдасканальвайце згенераваныя выявы ў адпаведнасці з мастацкімі мэтамі.",
           "ka": "შეარჩიეთ და გააუმჯობესეთ გენერირებული გამოსახულებები თქვენი მხატვრული მიზნების შესაბამისად.",
-          "kk": "Өнерлік мақсаттарыңызға сай жасалған кескіндерді таңдап, жетілдіріңіз。"
+          "kk": "Өнерлік мақсаттарыңызға сай жасалған кескіндерді таңдап, жетілдіріңіз。",
     
       qm: "Yaratılğan suretlerni öz sanat maqsatlarıñızğa köre saylañız ve yahşılañız.",},
   },
