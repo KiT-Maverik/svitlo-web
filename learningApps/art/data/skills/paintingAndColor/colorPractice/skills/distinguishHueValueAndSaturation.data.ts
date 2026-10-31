@@ -62,7 +62,7 @@ export const distinguishHueValueAndSaturation_Skill_Data = buildSkillConfig({
       lv: "Ievērojiet atšķirību starp krāsas nokrāsu, gaišumu un košumu.",
       et: "Pane tähele värvitooni, heleduse ja erksuse erinevust.",
       be: "Звяртайце ўвагу на розніцу паміж каляровым тонам, светласцю і яркасцю.",
-      ka: "დააკვირდით განსხვავებას ფერის ტონს, სიმ明ლესა და მკვეთრობას შორის.",
+      ka: "დააკვირდით განსხვავებას ფერის ტონს, სინათლესა და მკვეთრობას შორის.",
       kk: "Түстің реңкі, ашықтығы және қанық көрінуі арасындағы айырмашылықты байқаңыз.",
     },
   },
