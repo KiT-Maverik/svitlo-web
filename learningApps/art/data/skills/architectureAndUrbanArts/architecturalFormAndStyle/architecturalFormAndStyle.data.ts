@@ -16,6 +16,11 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
     he: "צורה וסגנון אדריכליים", pl: "Forma i styl architektoniczny", uk: "Архітектурна форма і стиль",
     lt: "Architektūrinė forma ir stilius", lv: "Arhitektūras forma un stils", et: "Arhitektuurne vorm ja stiil",
     be: "Архітэктурная форма і стыль", ka: "არქიტექტურული ფორმა და სტილი", kk: "Сәулеттік пішін мен стиль",
+    hi: "वास्तु रूप और शैली", es: "Forma y estilo arquitectónicos", fr: "Forme et style architecturaux", bn: "স্থাপত্যের রূপ ও শৈলী",
+    ur: "تعمیراتی شکل اور طرز", id: "Bentuk dan Gaya Arsitektur", ja: "建築の形態と様式", ko: "건축 형태와 양식",
+    vi: "Hình thức và phong cách kiến trúc", ta: "கட்டிடக்கலை வடிவமும் பாணியும்", mr: "वास्तुरूप आणि शैली", ms: "Bentuk dan Gaya Seni Bina",
+    pl: "Forma i styl architektoniczny", uk: "Архітектурна форма і стиль", lv: "Arhitektūras forma un stils", et: "Arhitektuurne vorm ja stiil",
+    ka: "არქიტექტურული ფორმა და სტილი", kk: "Сәулеттік пішін мен стиль",
     qm: "Mimari şekil ve üslüp",
   },
   skills: {
