@@ -64,7 +64,7 @@ export const modelDigitalThreeDimensionalForms_Skill_Data = buildSkillConfig({
           "et": "Vormi kolmemõõtmeline digiobjekt läbimõeldud kuju ja proportsioonidega.",
           "be": "Фармуйце трохмерны лічбавы аб’ект з прадуманай формай і прапорцыямі.",
           "ka": "შექმენით სამგანზომილებიანი ციფრული ობიექტი გააზრებული ფორმითა და პროპორციებით.",
-          "kk": "Ойластырылған пішін мен пропорция арқылы үшөлшемді цифрлық нысанды модельдеңіз。"
+          "kk": "Ойластырылған пішін мен пропорция арқылы үшөлшемді цифрлық нысанды модельдеңіз。",
     
       qm: "Maqsatlı şekil ve nisbet ile üç ölçemli raqemiy obyektni şekillendiriñiz.",},
   },
