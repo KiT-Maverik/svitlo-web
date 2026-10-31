@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const analyzePerceptualAmbiguity_Skill_Data = buildSkillConfig({
-  slug: "analyzePerceptualAmbiguity",
-  id: "cb6e249e-37cc-4241-83a0-91760639c1a2",
-  name: {
-    en: "Analyze Perceptual Ambiguity",
-  },
-  description: {
-    methodological: "Explain how one artistic configuration supports different perceptual organizations.",
-    frontend: {
-      en: "Explore why the same picture or form can be perceived in different ways.",
-    },
-  },
+  slug: "analyzePerceptualAmbiguity", id: "cb6e249e-37cc-4241-83a0-91760639c1a2", name: { en: "Analyze Perceptual Ambiguity" },
+  description: { methodological: "Explain how one artistic configuration supports different perceptual organizations.", frontend: {
+          "en": "Explore why the same picture or form can be perceived in different ways.",
+          "zh": "探索同一图像或形式为何会产生不同的感知方式。",
+          "hi": "जानें कि एक ही चित्र या रूप को अलग-अलग तरीकों से क्यों देखा जा सकता है।",
+          "es": "Explora por qué una misma imagen o forma puede percibirse de distintas maneras.",
+          "ar": "استكشف لماذا يمكن إدراك الصورة أو الشكل نفسه بطرق مختلفة.",
+          "fr": "Découvrez pourquoi une même image ou forme peut être perçue de différentes manières.",
+          "bn": "একই ছবি বা আকৃতিকে কেন ভিন্নভাবে উপলব্ধি করা যায় তা জানুন।",
+          "pt": "Explore por que a mesma imagem ou forma pode ser percebida de maneiras diferentes.",
+          "ur": "جانیں کہ ایک ہی تصویر یا شکل کو مختلف طریقوں سے کیوں محسوس کیا جا سکتا ہے۔",
+          "id": "Jelajahi mengapa gambar atau bentuk yang sama dapat dipersepsikan dengan cara berbeda.",
+          "de": "Entdecke, warum dasselbe Bild oder dieselbe Form unterschiedlich wahrgenommen werden kann.",
+          "ja": "同じ画像や形が、なぜ異なる見え方をするのかを探ります。",
+          "ko": "같은 그림이나 형태가 서로 다르게 지각될 수 있는 이유를 살펴보세요.",
+          "tr": "Aynı görselin veya biçimin neden farklı şekillerde algılanabildiğini keşfedin.",
+          "vi": "Khám phá vì sao cùng một hình ảnh hoặc hình dạng có thể được cảm nhận theo nhiều cách khác nhau.",
+          "ta": "ஒரே படம் அல்லது வடிவம் ஏன் வெவ்வேறு விதங்களில் உணரப்படலாம் என்பதை ஆராயுங்கள்.",
+          "te": "ఒకే చిత్రం లేదా ఆకారాన్ని వేర్వేరు విధాలుగా ఎందుకు గ్రహించవచ్చో తెలుసుకోండి.",
+          "mr": "एकच चित्र किंवा आकार वेगवेगळ्या प्रकारे का जाणवू शकतो ते जाणून घ्या.",
+          "ms": "Terokai sebab imej atau bentuk yang sama boleh ditanggapi dengan cara berbeza.",
+          "he": "גלו מדוע אפשר לתפוס אותה תמונה או צורה בדרכים שונות.",
+          "pl": "Odkryj, dlaczego ten sam obraz lub forma mogą być postrzegane na różne sposoby.",
+          "uk": "Дослідіть, чому те саме зображення або форму можна сприймати по-різному.",
+          "lt": "Sužinokite, kodėl tas pats vaizdas ar forma gali būti suvokiami skirtingai.",
+          "lv": "Izpētiet, kāpēc vienu un to pašu attēlu vai formu var uztvert dažādi.",
+          "et": "Uuri, miks sama pilti või vormi võib tajuda erinevalt.",
+          "be": "Даследуйце, чаму адну і тую ж выяву або форму можна ўспрымаць па-рознаму.",
+          "ka": "შეისწავლეთ, რატომ შეიძლება ერთი და იგივე გამოსახულება ან ფორმა სხვადასხვაგვარად აღიქმებოდეს.",
+          "kk": "Fedezze fel, miért érzékelhető ugyanaz a kép vagy forma többféleképpen。"
+    } },
 });
