@@ -25,7 +25,7 @@ export const carveSubtractiveSculpture_Skill_Data = buildSkillConfig({
     ms: "Mengukir arca secara subtraktif",
     he: "גילוף פסל באמצעות גריעת חומר",
     pl: "Rzeźbienie przez odejmowanie materiału",
-    uk: "Створювати скульптуру методом віднімання",
+    uk: "Створювати скульптуру шляхом зняття матеріалу",
     lt: "Kurti skulptūrą atimant medžiagą",
     lv: "Veidot skulptūru, atņemot materiālu",
     et: "Skulptuuri tahumine materjali eemaldades",
