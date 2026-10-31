@@ -48,27 +48,27 @@ export function validateSkillConfig(
       throw new Error('Skill description.methodological must be non-empty English text');
     }
 
-    const unexpectedKeys = Object.keys(description).filter(key => key !== 'methodological' && key !== 'fe');
+    const unexpectedKeys = Object.keys(description).filter(key => key !== 'methodological' && key !== 'frontend');
     if (unexpectedKeys.length > 0) {
       throw new Error('Skill description contains unsupported fields: ' + unexpectedKeys.join(', '));
     }
 
-    if (requireFrontendDescription && description.fe === undefined) {
-      throw new Error('Skill description.fe must contain all supported languages');
+    if (requireFrontendDescription && description.frontend === undefined) {
+      throw new Error('Skill description.frontend must contain all supported languages');
     }
-    if (description.fe !== undefined) {
-      if (!description.fe || typeof description.fe !== 'object' || Array.isArray(description.fe)) {
-        throw new Error('Skill description.fe must contain all supported languages');
+    if (description.frontend !== undefined) {
+      if (!description.frontend || typeof description.frontend !== 'object' || Array.isArray(description.frontend)) {
+        throw new Error('Skill description.frontend must contain all supported languages');
       }
       for (const language of supportedLanguages) {
-        const value = description.fe[language as keyof typeof description.fe];
+        const value = description.frontend[language as keyof typeof description.frontend];
         if (typeof value !== 'string' || value.trim() === '') {
-          throw new Error('Skill description.fe must contain a non-empty translation for ' + language);
+          throw new Error('Skill description.frontend must contain a non-empty translation for ' + language);
         }
       }
-      const extraLanguages = Object.keys(description.fe).filter(language => !supportedLanguages.has(language));
+      const extraLanguages = Object.keys(description.frontend).filter(language => !supportedLanguages.has(language));
       if (extraLanguages.length > 0) {
-        throw new Error('Skill description.fe contains unsupported languages: ' + extraLanguages.join(', '));
+        throw new Error('Skill description.frontend contains unsupported languages: ' + extraLanguages.join(', '));
       }
     }
   }
