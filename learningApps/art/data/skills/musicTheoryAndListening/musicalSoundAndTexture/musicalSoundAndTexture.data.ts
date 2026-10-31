@@ -34,7 +34,7 @@ export const musicalSoundAndTexture_SkillGroup_Data = buildSkillGroupConfig({
       be: "Музычнае гучанне і фактура",
       ka: "მუსიკალური ჟღერადობა და ფაქტურა",
       kk: "Музыкалық дыбыс пен фактура",
-      qm: "Musiqi sәsi vә teksturası",
+      qm: "Musiqiy ses ve faktura",
     },
   skills: {
     classifyMusicalInstruments: classifyMusicalInstruments_Skill_Data,
@@ -74,7 +74,7 @@ export const musicalSoundAndTexture_SkillGroup_Data = buildSkillGroupConfig({
       be: "Адкрыйце гукі і пласты, якія робяць музычныя выкананні пазнавальнымі.",
       ka: "აღმოაჩინეთ ხმები და ფენები, რომლებიც მუსიკალურ შესრულებას ცნობადს ხდის.",
       kk: "Музыкалық орындауды тануға мүмкіндік беретін дыбыстар мен қабаттарды зерттеңіз.",
-      qm: "Musiqi ifalarını tanınan edən səsləri vә qatları kәşf edin.",
+      qm: "Musiqiy icralarnı tanıtqan sesler ve qatlamlarnı keşf etiñiz.",
     }
   },
 });
