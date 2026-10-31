@@ -32,6 +32,7 @@ export const handBuildACeramicForm_Skill_Data = buildSkillConfig({
     be: "Ляпіць керамічную форму ўручную",
     ka: "კერამიკული ფორმის ხელით ძერწვა",
     kk: "Керамикалық пішінді қолмен жасау",
+      qm: "Keramika şeklini elnen yapmaq",
   },
   description: {
     methodological: "Shape clay through pinching, coils or slabs while controlling the overall object.",
@@ -64,6 +65,7 @@ export const handBuildACeramicForm_Skill_Data = buildSkillConfig({
       be: "Надавайце гліне форму рукамі, джгутамі або пласцінамі.",
       ka: "ხელით, თიხის გრეხილებით ან ფირფიტებით მიეცით თიხას ფორმა.",
       kk: "Қолмен, ширатылған сазбен немесе тақташалармен сазға пішін беріңіз.",
+          qm: "Balçıqnı elleriñiz, buramalar ya da yassı qatlar ile şekillendiriñiz.",
     },
   },
 });
