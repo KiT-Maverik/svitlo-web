@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const relateContrastToAttention_Skill_Data = buildSkillConfig({
-  slug: "relateContrastToAttention", id: "5c9fc599-02a5-4516-aeba-39119c1e5c64", name: { en: "Relate Contrast to Attention" },
+  slug: "relateContrastToAttention", id: "5c9fc599-02a5-4516-aeba-39119c1e5c64", name: {
+    en: "Relate Contrast to Attention",
+    zh: "关联对比与注意力",
+    hi: "विरोधाभास को ध्यान से जोड़ें",
+    es: "Relacionar el contraste con la atención",
+    ar: "ربط التباين بالانتباه",
+    fr: "Relier le contraste à l’attention",
+    bn: "বৈপরীত্যের সঙ্গে মনোযোগের সম্পর্ক বুঝুন",
+    pt: "Relacionar contraste e atenção",
+    ur: "تضاد اور توجہ کے تعلق کو سمجھیں",
+    id: "Mengaitkan Kontras dengan Perhatian",
+    de: "Kontrast und Aufmerksamkeit in Beziehung setzen",
+    ja: "コントラストと注意の関係を捉える",
+    ko: "대비와 주의의 관계 이해하기",
+    tr: "Karşıtlığı Dikkatle İlişkilendirmek",
+    vi: "Liên hệ sự tương phản với sự chú ý",
+    ta: "முரண்பாட்டையும் கவனத்தையும் தொடர்புபடுத்துங்கள்",
+    te: "వైరుధ్యాన్ని దృష్టితో అనుసంధానించండి",
+    mr: "विरोधाभासाचा लक्षाशी संबंध जोडणे",
+    ms: "Mengaitkan Kontras dengan Perhatian",
+    he: "קישור בין ניגודיות לקשב",
+    pl: "Łączenie kontrastu z uwagą",
+    uk: "Пов’язувати контраст з увагою",
+    lt: "Sieti kontrastą su dėmesiu",
+    lv: "Saistīt kontrastu ar uzmanību",
+    et: "Kontrasti ja tähelepanu seostamine",
+    be: "Звязваць кантраст з увагай",
+    ka: "კონტრასტის ყურადღებასთან დაკავშირება",
+    kk: "Контраст пен зейінді байланыстыру",
+    qm: "Qarşıtlıqnı diqqetnen bağlamaq",
+  },
   description: { methodological: "Explain how salient differences draw attention to parts of an artwork.", frontend: {
           "en": "See how strong differences in color, shape or sound attract attention.",
           "zh": "观察颜色、形状或声音的强烈差异如何吸引注意力。",
@@ -31,5 +61,6 @@ export const relateContrastToAttention_Skill_Data = buildSkillConfig({
           "be": "Паглядзіце, як выразныя адрозненні колеру, формы ці гуку прыцягваюць увагу.",
           "ka": "ნახეთ, როგორ იპყრობს ყურადღებას ფერის, ფორმისა თუ ხმის მკვეთრი განსხვავება.",
           "kk": "Түс, пішін немесе дыбыстағы айқын айырмашылықтар назарды қалай аударатынын байқаңыз."
-    } },
+    
+      qm: "Tüs, şekil ya da ses arasındaki küçlü farqlarniñ diqqetni nasıl çekkenini körüñiz.",} },
 });
