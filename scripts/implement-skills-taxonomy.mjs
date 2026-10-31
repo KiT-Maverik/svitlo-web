@@ -337,8 +337,8 @@ function patchExisting(e,reviewed,methodological) {
   const currentFrontend=optionalProperty(desc,'frontend');
   if (reviewed.frontend) {
     if (currentFrontend) {
-      const oldFe=unwrap(currentFrontend.initializer);
-      if (!sameDictionary(dict(oldFe,'frontend'),reviewed.frontend)) add(oldFe,dictionary(reviewed.frontend));
+      const oldFrontend=unwrap(currentFrontend.initializer);
+      if (!sameDictionary(dict(oldFrontend,'frontend'),reviewed.frontend)) add(oldFrontend,dictionary(reviewed.frontend));
     } else changes.push({start:desc.getEnd()-1,end:desc.getEnd()-1,
       text:'\n    frontend: '+dictionary(reviewed.frontend)+',\n  '});
   }
