@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const analyzeAStreetscape_Skill_Data = buildSkillConfig({
   slug: "analyzeAStreetscape",
   id: "1451cc79-a9d9-4abe-9764-20217fb13a9d",
-  name: { en: "Analyze a Streetscape" },
+  name: {
+    en: "Analyze a Streetscape",
+    zh: "分析街道景观",
+    hi: "सड़क के दृश्य का विश्लेषण करें",
+    es: "Analizar un paisaje urbano de calle",
+    ar: "تحليل مشهد الشارع",
+    fr: "Analyser un paysage de rue",
+    bn: "রাস্তার দৃশ্য বিশ্লেষণ করুন",
+    pt: "Analisar uma paisagem de rua",
+    ur: "سڑک کے منظر کا تجزیہ کریں",
+    id: "Menganalisis Pemandangan Jalan",
+    de: "Ein Straßenbild analysieren",
+    ja: "街路景観を分析する",
+    ko: "가로 경관 분석하기",
+    tr: "Bir Sokak Görünümünü Çözümlemek",
+    vi: "Phân tích cảnh quan đường phố",
+    ta: "தெருக்காட்சியைப் பகுப்பாய்வு செய்யுங்கள்",
+    te: "వీధి దృశ్యాన్ని విశ్లేషించండి",
+    mr: "रस्त्याच्या दृश्याचे विश्लेषण करा",
+    ms: "Menganalisis Pemandangan Jalan",
+    he: "ניתוח נוף רחוב",
+    pl: "Analizować krajobraz ulicy",
+    uk: "Аналізувати вуличний простір",
+    lt: "Analizuoti gatvės vaizdą",
+    lv: "Analizēt ielas ainavu",
+    et: "Tänavaruumi analüüsimine",
+    be: "Аналізаваць вулічны краявід",
+    ka: "ქუჩის პეიზაჟის ანალიზი",
+    kk: "Көше көрінісін талдау",
+    qm: "Sokak körünişini tahlil etüv",
+  },
   description: {
     methodological: "Explain how paths, buildings and edges shape the appearance of a street.",
     frontend: {
@@ -35,6 +65,7 @@ export const analyzeAStreetscape_Skill_Data = buildSkillConfig({
           "be": "Паглядзіце, як будынкі, шляхі і межы надаюць вуліцы адметны характар.",
           "ka": "შეისწავლეთ, როგორ ანიჭებს შენობები, ბილიკები და საზღვრები ქუჩას გამორჩეულ ხასიათს.",
           "kk": "Ғимараттар, жолдар мен кеңістік шекаралары көшеге өзіндік сипат қалай беретінін зерттеңіз。"
-    },
+    
+      qm: "Binalar, yollar ve kenarlarnıñ sokakka mahsus bir hava nasıl bergenini araştırıñız.",},
   },
 });
