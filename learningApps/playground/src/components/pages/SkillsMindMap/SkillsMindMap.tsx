@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { PointerEvent as ReactPointerEvent, WheelEvent as ReactWheelEvent } from 'react';
+import type { PointerEvent as ReactPointerEvent } from 'react';
 import { Alert, Box, Button, Chip, CircularProgress, Stack, Typography } from '@mui/material';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
@@ -160,6 +160,19 @@ export function SkillsMindMap() {
     return () => observer.disconnect();
   }, [status, listView]);
 
+  // React delegates wheel as a passive listener; the native non-passive handler
+  // prevents the page from scrolling while zooming inside the map.
+  useEffect(() => {
+    const element = viewportRef.current;
+    if (!element || status !== 'ready' || listView) return;
+    const handleWheel = (event: WheelEvent) => {
+      event.preventDefault();
+      setZoom(current => Math.max(0.18, Math.min(2.5, current * (event.deltaY < 0 ? 1.1 : 0.9))));
+    };
+    element.addEventListener('wheel', handleWheel, { passive: false });
+    return () => element.removeEventListener('wheel', handleWheel);
+  }, [status, listView]);
+
   const allNodes = useMemo(() => flattenSkillNodes(domains), [domains]);
   const selectable = useMemo(() => new Map(allNodes.map(node => [node.id, node])), [allNodes]);
   const selected = selectedId ? selectable.get(selectedId) : null;
@@ -208,10 +221,6 @@ export function SkillsMindMap() {
   const onPointerUp = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (dragRef.current?.pointerId === event.pointerId) dragRef.current = null;
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
-  };
-  const onWheel = (event: ReactWheelEvent<HTMLDivElement>) => {
-    event.preventDefault();
-    setZoom(current => Math.max(0.18, Math.min(2.5, current * (event.deltaY < 0 ? 1.1 : 0.9))));
   };
   const onLanguageChange = (next: string) => {
     if (!manifest?.languages.includes(next)) return;
@@ -295,7 +304,7 @@ export function SkillsMindMap() {
             <section className={styles.mapFrame} aria-label="Радіальна мапа навичок">
               <div ref={viewportRef} className={styles.viewport}
                 onPointerDown={onPointerDown} onPointerMove={onPointerMove}
-                onPointerUp={onPointerUp} onPointerCancel={onPointerUp} onWheel={onWheel}
+                onPointerUp={onPointerUp} onPointerCancel={onPointerUp}
                 data-testid="skills-map-viewport">
                 <div className={styles.world} style={{
                   width: layout.worldSize, height: layout.worldSize,
