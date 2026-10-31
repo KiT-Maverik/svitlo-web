@@ -5,7 +5,7 @@ export const modelAdditiveSculpture_Skill_Data = buildSkillConfig({
   id: "4d206210-3ef8-4cd4-9b98-da39535c401e",
   name: {
     en: "Model Additive Sculpture",
-    zh: "塑造加法雕塑",
+    zh: "通过添加材料塑造雕塑",
     hi: "जोड़कर मूर्तिकला गढ़ें",
     es: "Modelar una escultura por adición",
     ar: "تشكيل منحوتة بإضافة المادة",
