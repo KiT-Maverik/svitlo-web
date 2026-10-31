@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { collectCounts_Skill_Data, tallyMarks_Skill_Data, fillSimpleTable_Skill_Data } from './skills';
+import {  collectCounts_Skill_Data, tallyMarks_Skill_Data, fillSimpleTable_Skill_Data, formulateInvestigationQuestion_Skill_Data } from './skills';
 
 export const collection_SkillGroup_Data = buildSkillGroupConfig({
   id: 'fbff6de3-3855-4c1f-9ec6-025693e12adf',
@@ -38,6 +38,7 @@ export const collection_SkillGroup_Data = buildSkillGroupConfig({
     collectCounts: collectCounts_Skill_Data.id,
     tallyMarks: tallyMarks_Skill_Data.id,
     fillSimpleTable: fillSimpleTable_Skill_Data.id,
+    formulateInvestigationQuestion: formulateInvestigationQuestion_Skill_Data.id,
   },
   description: { methodological: "Formulating an investigation question, selecting classification attributes, counting occurrences, and recording observations." },
 });

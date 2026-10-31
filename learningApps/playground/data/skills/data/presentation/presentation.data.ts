@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import {readSimpleTable_Skill_Data, buildPictograph_Skill_Data, readPictograph_Skill_Data } from './skills';
+import { readSimpleTable_Skill_Data, buildPictograph_Skill_Data, readPictograph_Skill_Data, readBarChart_Skill_Data } from './skills';
 
 export const presentation_SkillGroup_Data = buildSkillGroupConfig({
   id: '37dd18b1-b119-438c-96e5-44226023a7a3',
@@ -38,6 +38,7 @@ export const presentation_SkillGroup_Data = buildSkillGroupConfig({
     readSimpleTable: readSimpleTable_Skill_Data.id,
     buildPictograph: buildPictograph_Skill_Data.id,
     readPictograph: readPictograph_Skill_Data.id,
+    readBarChart: readBarChart_Skill_Data.id,
   },
   description: { methodological: "Representing collected counts in tables, pictographs, and charts while correctly interpreting the scales and values of marks." },
 });

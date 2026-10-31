@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import {wholeAndEqualParts_Skill_Data, unitFractionModel_Skill_Data, unitFractionRead_Skill_Data, denominatorMeaning_Skill_Data, numeratorMeaning_Skill_Data, nonUnitModel_Skill_Data, wholeDependence_Skill_Data, oneAsFraction_Skill_Data } from './skills';
+import { wholeAndEqualParts_Skill_Data, unitFractionModel_Skill_Data, unitFractionRead_Skill_Data, denominatorMeaning_Skill_Data, numeratorMeaning_Skill_Data, nonUnitModel_Skill_Data, wholeDependence_Skill_Data, oneAsFraction_Skill_Data, equivalentVisual_Skill_Data } from './skills';
 
 export const representation_SkillGroup_Data = buildSkillGroupConfig({
   id: 'abd38d75-1cdc-40e0-8ed0-db15e4ea8d98',
@@ -43,6 +43,7 @@ export const representation_SkillGroup_Data = buildSkillGroupConfig({
     nonUnitModel: nonUnitModel_Skill_Data.id,
     wholeDependence: wholeDependence_Skill_Data.id,
     oneAsFraction: oneAsFraction_Skill_Data.id,
+    equivalentVisual: equivalentVisual_Skill_Data.id,
   },
   description: {
     methodological: "Fractional representation relative to a specified whole: unit and nonunit parts, conventional fraction notation, equivalent fractions, geometric models, and values greater than one.",
