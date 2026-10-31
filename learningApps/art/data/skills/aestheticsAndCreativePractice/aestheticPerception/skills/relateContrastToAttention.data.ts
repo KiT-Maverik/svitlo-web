@@ -1,15 +1,35 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const relateContrastToAttention_Skill_Data = buildSkillConfig({
-  slug: "relateContrastToAttention",
-  id: "5c9fc599-02a5-4516-aeba-39119c1e5c64",
-  name: {
-    en: "Relate Contrast to Attention",
-  },
-  description: {
-    methodological: "Explain how salient differences draw attention to parts of an artwork.",
-    frontend: {
-      en: "See how strong differences in color, shape or sound attract attention.",
-    },
-  },
+  slug: "relateContrastToAttention", id: "5c9fc599-02a5-4516-aeba-39119c1e5c64", name: { en: "Relate Contrast to Attention" },
+  description: { methodological: "Explain how salient differences draw attention to parts of an artwork.", frontend: {
+          "en": "See how strong differences in color, shape or sound attract attention.",
+          "zh": "观察颜色、形状或声音的强烈差异如何吸引注意力。",
+          "hi": "देखें कि रंग, आकार या ध्वनि में स्पष्ट अंतर ध्यान कैसे आकर्षित करते हैं।",
+          "es": "Observa cómo las diferencias marcadas de color, forma o sonido atraen la atención.",
+          "ar": "لاحظ كيف تجذب الاختلافات الواضحة في اللون أو الشكل أو الصوت الانتباه.",
+          "fr": "Voyez comment de forts contrastes de couleur, de forme ou de son attirent l’attention.",
+          "bn": "দেখুন, রং, আকৃতি বা শব্দের তীব্র পার্থক্য কীভাবে মনোযোগ আকর্ষণ করে।",
+          "pt": "Veja como diferenças marcantes de cor, forma ou som atraem a atenção.",
+          "ur": "دیکھیں کہ رنگ، شکل یا آواز کے نمایاں فرق توجہ کیسے کھینچتے ہیں۔",
+          "id": "Lihat bagaimana perbedaan warna, bentuk, atau suara yang kuat menarik perhatian.",
+          "de": "Erkenne, wie starke Unterschiede in Farbe, Form oder Klang Aufmerksamkeit erzeugen.",
+          "ja": "色や形、音の強い違いがどのように注意を引くかを見てみましょう。",
+          "ko": "색상과 형태, 소리의 뚜렷한 차이가 어떻게 시선을 끄는지 살펴보세요.",
+          "tr": "Renk, biçim veya sesteki belirgin farklılıkların dikkati nasıl çektiğini görün.",
+          "vi": "Quan sát cách khác biệt rõ nét về màu sắc, hình dạng hoặc âm thanh thu hút sự chú ý.",
+          "ta": "நிறம், வடிவம் அல்லது ஒலியில் உள்ள வலுவான வேறுபாடுகள் எவ்வாறு கவனத்தை ஈர்க்கின்றன என்பதைப் பாருங்கள்.",
+          "te": "రంగు, ఆకారం లేదా శబ్దంలోని స్పష్టమైన తేడాలు దృష్టిని ఎలా ఆకర్షిస్తాయో చూడండి.",
+          "mr": "रंग, आकार किंवा आवाजातील ठळक फरक लक्ष कसे वेधतात ते पाहा.",
+          "ms": "Lihat bagaimana perbezaan ketara pada warna, bentuk atau bunyi menarik perhatian.",
+          "he": "ראו כיצד הבדלים בולטים בצבע, בצורה או בצליל מושכים תשומת לב.",
+          "pl": "Zobacz, jak wyraźne różnice koloru, kształtu lub dźwięku przyciągają uwagę.",
+          "uk": "Подивіться, як виразні відмінності кольору, форми чи звуку привертають увагу.",
+          "lt": "Pamatykite, kaip ryškūs spalvų, formų ar garsų skirtumai patraukia dėmesį.",
+          "lv": "Uzziniet, kā izteiktas krāsu, formu vai skaņu atšķirības piesaista uzmanību.",
+          "et": "Vaata, kuidas tugevad värvi-, kuju- või helierinevused tähelepanu köidavad.",
+          "be": "Паглядзіце, як выразныя адрозненні колеру, формы ці гуку прыцягваюць увагу.",
+          "ka": "ნახეთ, როგორ იპყრობს ყურადღებას ფერის, ფორმისა თუ ხმის მკვეთრი განსხვავება.",
+          "kk": "Figyelje meg, hogyan vonják magukra a figyelmet a szín, forma vagy hang erőteljes különbségei。"
+    } },
 });
