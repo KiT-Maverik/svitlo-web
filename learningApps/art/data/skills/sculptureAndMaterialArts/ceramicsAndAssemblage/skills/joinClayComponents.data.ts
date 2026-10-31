@@ -32,6 +32,7 @@ export const joinClayComponents_Skill_Data = buildSkillConfig({
     be: "Злучаць часткі гліны",
     ka: "თიხის ნაწილების შეერთება",
     kk: "Саз бөліктерін біріктіру",
+      qm: "Balçıq parçalarını birleştirmek",
   },
   description: {
     methodological: "Prepare and attach clay elements so that a composite form remains coherent and stable.",
@@ -64,6 +65,7 @@ export const joinClayComponents_Skill_Data = buildSkillConfig({
       be: "Злучайце асобныя часткі гліны, каб утварыць адзіную ўстойлівую форму.",
       ka: "შეაერთეთ თიხის ცალკეული ნაწილები ერთ მყარ ფორმად.",
       kk: "Жеке саз бөліктерін біріктіріп, біртұтас берік пішін жасаңыз.",
+          qm: "Ayrı balçıq parçalarını birleştirip sağlam bir şekil yapıñız.",
     },
   },
 });
