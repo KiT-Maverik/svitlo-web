@@ -64,7 +64,7 @@ export const analyzeAudienceParticipation_Skill_Data = buildSkillConfig({
           "et": "Uuri, kuidas osalejate panus muudab kunstiteose autorlust, järjestust või tõlgendust.",
           "be": "Даследуйце, як унёсак удзельнікаў змяняе аўтарства, паслядоўнасць або інтэрпрэтацыю твора.",
           "ka": "შეისწავლეთ, როგორ ცვლის მონაწილეთა წვლილი ნამუშევრის ავტორობას, თანმიმდევრობას ან ინტერპრეტაციას.",
-          "kk": "Қатысушылардың үлесі өнер туындысының авторлығын, ретін немесе түсіндірілуін қалай өзгертетінін зерттеңіз。"
+          "kk": "Қатысушылардың үлесі өнер туындысының авторлығын, ретін немесе түсіндірілуін қалай өзгертетінін зерттеңіз。",
     
       qm: "Qatnaşuvnıñ sanat eserini kim şekillendire ve onıñ manasını nasıl deñiştire bilecegini keşf etiñiz.",},
   },
