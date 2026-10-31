@@ -7,6 +7,7 @@ export const transformations_SkillGroup_Data = buildSkillGroupConfig({
   id: '41302cd8-48f9-4734-96a2-7c32e26a4361',
   name: {
     en: 'Geometric transformations',
+    qm: 'Geometrik deñiştirmeler',
     lt: 'Geometrinės transformacijos',
     lv: 'Ģeometriskās pārveidošanas',
     et: 'Geomeetrilised teisendused',
@@ -45,6 +46,7 @@ export const transformations_SkillGroup_Data = buildSkillGroupConfig({
       "Changes in a shape's position through rotation, translation, and reflection, along with symmetry about an axis.",
     frontend: {
       en: 'Move, turn, and reflect shapes while noticing which features stay the same.',
+      qm: 'Şekillerni köçür, bur ve aks ettir; qaysı hasiyetleriniñ deñişmeden qalğanına diqqat et.',
       zh: '移动、旋转和翻转图形，观察哪些性质保持不变。',
       hi: 'आकृतियाँ खिसकाएँ, घुमाएँ या प्रतिबिंबित करें और देखें कौन से गुण समान रहते हैं।',
       es: 'Desplaza, gira y refleja figuras, observando qué características no cambian.',
