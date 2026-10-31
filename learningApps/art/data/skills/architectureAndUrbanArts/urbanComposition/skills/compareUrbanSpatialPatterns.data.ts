@@ -64,7 +64,7 @@ export const compareUrbanSpatialPatterns_Skill_Data = buildSkillConfig({
           "et": "Võrdle erinevaid tänavamustreid ja kogemusi, mida need loovad.",
           "be": "Параўнайце розныя схемы вуліц і ўражанні, якія яны ствараюць.",
           "ka": "შეადარეთ ქუჩების სხვადასხვა განლაგება და მათ მიერ შექმნილი გამოცდილება.",
-          "kk": "Көше құрылымдарының әртүрлі үлгілері мен олардың қалыптастыратын тәжірибесін салыстырыңыз。"
+          "kk": "Көше құрылымдарының әртүрлі үлгілері мен олардың қалыптастыратын тәжірибесін салыстырыңыз。",
     
       qm: "Ayrı sokak tertiplerini ve olarnıñ doğurğan tecribelerini qarşılaştırıñız.",},
   },
