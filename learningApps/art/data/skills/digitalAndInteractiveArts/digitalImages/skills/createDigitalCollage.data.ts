@@ -64,7 +64,7 @@ export const createDigitalCollage_Skill_Data = buildSkillConfig({
           "et": "Ühenda digipilte, et luua uusi seoseid ja tähendusi.",
           "be": "Спалучайце лічбавыя выявы, каб ствараць новыя сувязі і значэнні.",
           "ka": "შეაერთეთ ციფრული გამოსახულებები ახალი კავშირებისა და მნიშვნელობების შესაქმნელად.",
-          "kk": "Жаңа байланыстар мен мағыналар жасау үшін цифрлық кескіндерді біріктіріңіз。"
+          "kk": "Жаңа байланыстар мен мағыналар жасау үшін цифрлық кескіндерді біріктіріңіз。",
     
       qm: "Raqemiy suretlerni birleştirip, yañı bağlar ve manalar yaratmaq.",},
   },
