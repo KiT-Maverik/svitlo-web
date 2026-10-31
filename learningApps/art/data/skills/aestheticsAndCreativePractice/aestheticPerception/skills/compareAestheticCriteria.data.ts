@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const compareAestheticCriteria_Skill_Data = buildSkillConfig({
-  slug: "compareAestheticCriteria", id: "d32b867b-413e-4b9d-80ac-f5de4c15ab3c", name: { en: "Compare Aesthetic Criteria" },
+  slug: "compareAestheticCriteria", id: "d32b867b-413e-4b9d-80ac-f5de4c15ab3c", name: {
+    en: "Compare Aesthetic Criteria",
+    zh: "比较审美标准",
+    hi: "सौंदर्य मानदंडों की तुलना करें",
+    es: "Comparar criterios estéticos",
+    ar: "مقارنة المعايير الجمالية",
+    fr: "Comparer les critères esthétiques",
+    bn: "নান্দনিক মানদণ্ডের তুলনা করুন",
+    pt: "Comparar critérios estéticos",
+    ur: "جمالیاتی معیارات کا موازنہ کریں",
+    id: "Membandingkan Kriteria Estetis",
+    de: "Ästhetische Kriterien vergleichen",
+    ja: "美的基準を比較する",
+    ko: "미적 기준 비교하기",
+    tr: "Estetik Ölçütleri Karşılaştırmak",
+    vi: "So sánh các tiêu chí thẩm mỹ",
+    ta: "அழகியல் அளவுகோல்களை ஒப்பிடுங்கள்",
+    te: "సౌందర్య ప్రమాణాలను పోల్చండి",
+    mr: "सौंदर्यविषयक निकषांची तुलना करा",
+    ms: "Membandingkan Kriteria Estetik",
+    he: "השוואת קריטריונים אסתטיים",
+    pl: "Porównywanie kryteriów estetycznych",
+    uk: "Порівнювати естетичні критерії",
+    lt: "Palyginti estetinius kriterijus",
+    lv: "Salīdzināt estētiskos kritērijus",
+    et: "Esteetiliste kriteeriumide võrdlemine",
+    be: "Параўноўваць эстэтычныя крытэрыі",
+    ka: "ესთეტიკური კრიტერიუმების შედარება",
+    kk: "Эстетикалық өлшемдерді салыстыру",
+    qm: "Estetik ölçevlerni qarşılaştırmaq",
+  },
   description: { methodological: "Examine how harmony, novelty or expressiveness matter differently across traditions.", frontend: {
           "en": "Compare what different artistic traditions value in an artwork.",
           "zh": "比较不同艺术传统在作品中重视的价值。",
@@ -31,5 +61,6 @@ export const compareAestheticCriteria_Skill_Data = buildSkillConfig({
           "be": "Параўнайце, што розныя мастацкія традыцыі цэняць у творы.",
           "ka": "შეადარეთ, რას აფასებს სხვადასხვა მხატვრული ტრადიცია ნამუშევარში.",
           "kk": "Әртүрлі өнер дәстүрлері туындыда нені бағалайтынын салыстырыңыз."
-    } },
+    
+      qm: "Mütenevvi sanat ananeleri eserlerde neni qıymetli sayğanını qarşılaştırıñız.",} },
 });
