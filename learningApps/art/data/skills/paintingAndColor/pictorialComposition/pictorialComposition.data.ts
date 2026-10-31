@@ -34,6 +34,7 @@ export const pictorialComposition_SkillGroup_Data = buildSkillGroupConfig({
     be: "Жывапісная кампазіцыя",
     ka: "ფერწერული კომპოზიცია",
     kk: "Кескіндеме композициясы",
+    qm: "Resim kompozitsiyası",
   },
   skills: {
     composeWithColorMasses: composeWithColorMasses_Skill_Data,
@@ -73,6 +74,7 @@ export const pictorialComposition_SkillGroup_Data = buildSkillGroupConfig({
       be: "Арганізуйце вялікія каляровыя плоскасці, кантрасты і краі, каб карціна ўспрымалася як цэлае.",
       ka: "დაალაგეთ დიდი ფერადი არეები, კონტრასტები და კიდეები ისე, რომ ნახატი ერთიან მთლიანობად აღიქმებოდეს.",
       kk: "Картина тұтас көрінуі үшін үлкен түстік аймақтарды, контрастарды және жиектерді үйлестіріңіз.",
+      qm: "Resim bir bütün olaraq tesirli olması içün büyük tüs alanlarını, qarşıtlıqlarnı ve kenarlarnı tertip etiñiz."
     },
   },
 });
