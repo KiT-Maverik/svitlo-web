@@ -50,22 +50,30 @@ interface OutlineProps {
   collapsed: ReadonlySet<string>;
   selectedId: string | null;
   language: string;
+  expandedSkills: ReadonlySet<string>;
   onNodeClick: (node: SkillNode) => void;
+  onSkillToggle: (node: SkillNode) => void;
 }
-function SkillOutline({ nodes, collapsed, selectedId, language, onNodeClick }: OutlineProps) {
+function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, onNodeClick, onSkillToggle }: OutlineProps) {
   return (
     <ul className={styles.outlineList}>
       {nodes.map(node => {
         const hasChildren = node.children.length > 0;
         const expanded = hasChildren && !collapsed.has(node.id);
+        const skillExpanded = node.kind === 'skill' && expandedSkills.has(node.id);
         return (
           <li key={node.id}>
             <button type="button"
               className={styles.outlineButton + (selectedId === node.id ? ' ' + styles.outlineSelected : '')}
-              onClick={() => onNodeClick(node)}
-              aria-expanded={hasChildren ? expanded : undefined}
+              onClick={() => {
+                onNodeClick(node);
+                if (node.kind === 'skill') onSkillToggle(node);
+              }}
+              aria-expanded={node.kind === 'skill' ? skillExpanded : hasChildren ? expanded : undefined}
               aria-label={KIND_LABELS[node.kind] + ': ' + node.name +
-                (hasChildren ? expanded ? '. Згорнути' : '. Розгорнути' : '')}>
+                (node.kind === 'skill'
+                  ? skillExpanded ? '. Згорнути картку' : '. Розгорнути картку'
+                  : hasChildren ? expanded ? '. Згорнути гілку' : '. Розгорнути гілку' : '')}>
               <span className={styles.outlineGlyph} aria-hidden="true">
                 {hasChildren ? (expanded ? '−' : '+') : '•'}
               </span>
@@ -73,16 +81,18 @@ function SkillOutline({ nodes, collapsed, selectedId, language, onNodeClick }: O
               {hasChildren && <span className={styles.outlineCount}>{node.children.length}</span>}
             </button>
             {node.kind === 'skill' && (
-              <div className={styles.outlineSkillDetails}>
-                {node.description && <p lang={language}
+              <div className={styles.outlineSkillDetails} data-expanded={skillExpanded ? 'true' : 'false'}>
+                {skillExpanded && node.description && <p lang={language}
                   dir={language === 'ar' || language === 'ur' || language === 'he' ? 'rtl' : 'ltr'}>
                   {node.description}
                 </p>}
-                <SkillMastery skillId={node.id} compact />
-                <SkillAction skillId={node.id} language={language} compact />
+                <SkillMastery skillId={node.id} compact={!skillExpanded} />
+                {skillExpanded && <SkillAction skillId={node.id} language={language} compact />}
               </div>
             )}
-            {expanded && <SkillOutline nodes={node.children} collapsed={collapsed} selectedId={selectedId} language={language} onNodeClick={onNodeClick} />}
+            {expanded && <SkillOutline nodes={node.children} collapsed={collapsed}
+              selectedId={selectedId} language={language}
+              expandedSkills={expandedSkills} onNodeClick={onNodeClick} onSkillToggle={onSkillToggle} />}
           </li>
         );
       })}
@@ -97,6 +107,8 @@ export function SkillsMindMap() {
   const [status, setStatus] = useState<LoadingStatus>('loading');
   const [error, setError] = useState('');
   const [collapsed, setCollapsed] = useState<Set<string>>(() => new Set());
+  // Card detail is independent from whether a Domain/Group branch is visible.
+  const [expandedSkills, setExpandedSkills] = useState<Set<string>>(() => new Set());
   const [rootCollapsed, setRootCollapsed] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [listView, setListView] = useState(false);
@@ -197,6 +209,16 @@ export function SkillsMindMap() {
     setPan({ x: 0, y: 0 });
   }, [layout, viewport.width, viewport.height, status]);
 
+  const onSkillToggle = (node: SkillNode) => {
+    if (node.kind !== 'skill') return;
+    setExpandedSkills(previous => {
+      const next = new Set(previous);
+      if (next.has(node.id)) next.delete(node.id);
+      else next.add(node.id);
+      return next;
+    });
+  };
+
   const onNodeClick = (node: SkillNode) => {
     setSelectedId(node.id);
     if (node.children.length) {
@@ -208,8 +230,16 @@ export function SkillsMindMap() {
       });
     }
   };
-  const collapseAll = () => { setRootCollapsed(true); setCollapsed(new Set(expandableIds)); };
-  const expandAll = () => { setRootCollapsed(false); setCollapsed(new Set()); };
+  const collapseAll = () => {
+    setRootCollapsed(true);
+    setCollapsed(new Set(expandableIds));
+    setExpandedSkills(new Set());
+  };
+  const expandAll = () => {
+    setRootCollapsed(false);
+    setCollapsed(new Set());
+    setExpandedSkills(new Set(allNodes.filter(node => node.kind === 'skill').map(node => node.id)));
+  };
   const toggleFromProfile = () => {
     setRootCollapsed(value => !value);
     setSelectedId(null);
@@ -258,7 +288,7 @@ export function SkillsMindMap() {
           </Typography>
           <Typography component="h1" variant="h3" fontWeight={800}>Skills</Typography>
           <Typography color="text.secondary">
-            Оберіть навичку та прокачайте її. Натисніть на домен або групу, щоб згорнути чи розгорнути гілку.
+            Натисніть на скіл, щоб розгорнути опис і кнопку «Прокачати». Домен і група згортають свої гілки.
           </Typography>
           <Typography variant="caption" color="text.secondary">
             Значення володіння навичками — тестові, не результати оцінювання учня.
@@ -313,7 +343,9 @@ export function SkillsMindMap() {
                 <AccountCircleRoundedIcon fontSize="large" /> Учень
                 <span>{profileIsExpanded ? '−' : '+'}</span>
               </button>
-              {!rootCollapsed && <SkillOutline nodes={domains} collapsed={collapsed} selectedId={selectedId} language={language!} onNodeClick={onNodeClick} />}
+              {!rootCollapsed && <SkillOutline nodes={domains} collapsed={collapsed}
+                selectedId={selectedId} language={language!}
+                expandedSkills={expandedSkills} onNodeClick={onNodeClick} onSkillToggle={onSkillToggle} />}
             </section>
           ) : (
             <section className={styles.mapFrame} aria-label="Радіальна мапа навичок">
@@ -347,7 +379,8 @@ export function SkillsMindMap() {
                     const children = node.children.length;
                     if (node.kind === 'skill') {
                       return <SkillLeafCard key={node.id} node={node} language={language!}
-                        selected={selectedId === node.id} onSelect={onNodeClick}
+                        selected={selectedId === node.id} expanded={expandedSkills.has(node.id)}
+                        onSelect={onNodeClick} onToggle={onSkillToggle}
                         left={middle + node.x} top={middle + node.y} />;
                     }
                     return (
