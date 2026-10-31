@@ -10,7 +10,7 @@ export type FlagProps = Omit<ImgHTMLAttributes<HTMLImageElement>, 'src' | 'alt'>
 };
 
 /**
- * ISO 3166-1 country asset codes, except the Crimean Tatar crh.svg language flag.
+ * ISO 3166-1 country asset codes, except the Crimean Tatar qm.svg language flag.
  * Belarusian Taraškievica deliberately uses the historical white-red-white asset.
  * Unregistered future locales intentionally have no dispatcher entry.
  */
@@ -43,7 +43,7 @@ export const flagCountryByLocale = {
   'be-tarask': 'by',
   'ka-GE': 'ge',
   'kk-Cyrl-KZ': 'kz',
-  'crh-Latn-UA': 'crh',
+  'crh-Latn-UA': 'qm',
 } as const satisfies Record<FlagLocale, string>;
 
 /** A single image wrapper instead of individually authored React SVG components. */
