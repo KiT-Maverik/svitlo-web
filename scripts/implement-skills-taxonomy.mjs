@@ -120,16 +120,16 @@ function checkLocaleValues(value, field, codes) {
 function translations(entry, codes) {
   const given = opts.translations[entry.key] ?? {};
   if (!given || typeof given !== 'object' || Array.isArray(given)) throw Error('Invalid translations for ' + entry.key);
-  if (Object.keys(given).some(k => k !== 'name' && k !== 'fe')) throw Error('Unexpected translation field for ' + entry.key);
-  for (const field of ['name','fe'])
+  if (Object.keys(given).some(k => k !== 'name' && k !== 'frontend')) throw Error('Unexpected translation field for ' + entry.key);
+  for (const field of ['name','frontend'])
     if (given[field] !== undefined &&
       (!given[field] || typeof given[field] !== 'object' || Array.isArray(given[field])))
       throw Error('Invalid ' + field + ' translations for ' + entry.key);
   if (given.name && Object.hasOwn(given.name,'en') && given.name.en !== entry.title)
     throw Error('Translated name.en differs from approved heading');
-  if (given.fe && entry.friendly !== '[Not authored]' &&
-      Object.hasOwn(given.fe,'en') && given.fe.en !== entry.friendly)
-    throw Error('Translated fe.en differs from approved frontend text');
+  if (given.frontend && entry.friendly !== '[Not authored]' &&
+      Object.hasOwn(given.frontend,'en') && given.frontend.en !== entry.friendly)
+    throw Error('Translated frontend.en differs from approved frontend text');
   return given;
 }
 function parse(markdown) {
@@ -215,7 +215,7 @@ function codeLink(e) {
   return '[' + path.basename(f) + '](' + encodeURI(path.relative(path.dirname(opts.markdown),f).split(path.sep).join('/')) + ')';
 }
 function dictionary(obj) {
-  return '{\n' + Object.entries(obj).map(([k,v]) => '    ' + JSON.stringify(k) + ': ' + JSON.stringify(v) + ',').join('\n') + '\n  }';
+  return '{\n' + Object.entries(obj).map(([k,v]) => '    ' + (/^[A-Za-z_$][\w$]*$/.test(k) ? k : JSON.stringify(k)) + ': ' + JSON.stringify(v) + ',').join('\n') + '\n  }';
 }
 function existing(e) {
   const f = fileOf(e), code = readCode(f,e.kind);
@@ -224,12 +224,12 @@ function existing(e) {
   const name = dict(unwrap(property(code.config,'name').initializer),'name');
   const desc = unwrap(property(code.config,'description').initializer);
   const methodological = literal(property(desc,'methodological').initializer,'methodological');
-  const feProp = optionalProperty(desc,'fe');
-  const fe = feProp ? dict(unwrap(feProp.initializer),'fe') : undefined;
+  const frontendProp = optionalProperty(desc,'frontend');
+  const frontend = frontendProp ? dict(unwrap(frontendProp.initializer),'frontend') : undefined;
   for (const p of code.config.properties)
     if (!ts.isPropertyAssignment(p) || !['id','name','description','groupIds','skillIds'].includes(p.name.text))
       throw Error('Unsupported config property; refusing rewrite: ' + rel(f));
-  return {id,name,fe,methodological};
+  return {id,name,frontend,methodological};
 }
 function scanRegistry() {
   const registry = new Set(), seenSlugs = new Map();
@@ -304,7 +304,7 @@ function render(e,value,kids) {
   }
   lines.push('  description: {');
   lines.push('    methodological: '+JSON.stringify(value.methodological)+',');
-  if (value.fe) lines.push('    fe: '+dictionary(value.fe)+',');
+  if (value.frontend) lines.push('    frontend: '+dictionary(value.frontend)+',');
   lines.push('  },');
   return imports.join('\n')+'\n\nexport const '+e.slug+'_'+e.kind+'_Data = build'+e.kind+
     'Config({\n'+lines.join('\n')+'\n});\n';
@@ -334,13 +334,13 @@ function patchExisting(e,reviewed,methodological) {
   const desc=unwrap(property(info.config,'description').initializer);
   const method=property(desc,'methodological').initializer;
   if (literal(method,'methodological')!==methodological) add(method,JSON.stringify(methodological));
-  const currentFe=optionalProperty(desc,'fe');
-  if (reviewed.fe) {
-    if (currentFe) {
-      const oldFe=unwrap(currentFe.initializer);
-      if (!sameDictionary(dict(oldFe,'fe'),reviewed.fe)) add(oldFe,dictionary(reviewed.fe));
+  const currentFrontend=optionalProperty(desc,'frontend');
+  if (reviewed.frontend) {
+    if (currentFrontend) {
+      const oldFe=unwrap(currentFrontend.initializer);
+      if (!sameDictionary(dict(oldFe,'frontend'),reviewed.frontend)) add(oldFe,dictionary(reviewed.frontend));
     } else changes.push({start:desc.getEnd()-1,end:desc.getEnd()-1,
-      text:'\n    fe: '+dictionary(reviewed.fe)+',\n  '});
+      text:'\n    frontend: '+dictionary(reviewed.frontend)+',\n  '});
   }
   let content=info.source;
   for (const x of changes.sort((a,b)=>b.start-a.start))
@@ -397,23 +397,23 @@ function domainPlan(d,entities,registry,codes) {
     // Markdown owns English. Keep approved existing translations and overlay
     // optional reviewed translations, but do not manufacture any other locale.
     const name={...(prior?.name??{}),...(reviewed.name??{}),en:e.title};
-    const authoredFe=e.friendly!=='[Not authored]';
-    const fe=authoredFe ?
-      {...(prior?.fe??{}),...(reviewed.fe??{}),en:e.friendly} :
-      (prior?.fe || reviewed.fe ? {...(prior?.fe??{}),...(reviewed.fe??{})} : undefined);
+    const authoredFrontend=e.friendly!=='[Not authored]';
+    const frontend=authoredFrontend ?
+      {...(prior?.frontend??{}),...(reviewed.frontend??{}),en:e.friendly} :
+      (prior?.frontend || reviewed.frontend ? {...(prior?.frontend??{}),...(reviewed.frontend??{})} : undefined);
     checkLocaleValues(name,'name '+e.key,codes);
-    if (e.kind==='Skill' && !authoredFe)
+    if (e.kind==='Skill' && !authoredFrontend)
       throw Error('Skill frontend description is not authored: '+e.key);
-    if (e.kind==='Skill' || authoredFe) checkLocaleValues(fe,'frontend '+e.key,codes);
-    else if (fe) checkLocaleValues(fe,'frontend '+e.key,codes);
+    if (e.kind==='Skill' || authoredFrontend) checkLocaleValues(frontend,'frontend '+e.key,codes);
+    else if (frontend) checkLocaleValues(frontend,'frontend '+e.key,codes);
     if (!found && registry.slugs.has(e.slug.toLowerCase()) &&
       registry.slugs.get(e.slug.toLowerCase())!==file)
       throw Error('Slug already exists elsewhere in source: '+e.slug);
     const id=prior?.id??allocateId(registry.ids);
     const kids=e.kind==='Skill'?[]:children(e,local);
     const code=found && e.action==='update' && stableMembership(e,kids) ?
-      patchExisting(e,{name,fe},e.methodological) :
-      render(e,{id,name,fe,methodological:e.methodological},kids);
+      patchExisting(e,{name,frontend},e.methodological) :
+      render(e,{id,name,frontend,methodological:e.methodological},kids);
     if (found && e.action==='create') {
       if (kids.length && !stableMembership(e,kids)) throw Error('Create cannot change existing parent membership: '+e.key);
       if (prior.methodological!==e.methodological)
