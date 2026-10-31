@@ -559,6 +559,31 @@ const kk = {
   hints: { scale: "Қарапайым модель: жарықтың нақты жылдамдығы масштабпен көрсетілмеген." },
 } satisfies LightPropagationSimulation_Locale;
 
+/** Crimean Tatar (qm, crh-Latn-UA); native-speaker review recommended. */
+const qm = {
+  scene: {
+    title: 'Yarıqnıñ yolunı izle',
+    description: 'Menbadan ekranğa doğru sızıq boyunca.',
+    accessibleName: 'Menbadan ekranğa yayılağan yarıqnı köstergen animatsiya',
+  },
+  track: {
+    accessibleDescription:
+      'Sarı belgi soldaki menbadan sağdaki ekranğa doğru sızıq boyunca areket ete.',
+    source: 'Yarıq menbası',
+    screen: 'Ekran',
+  },
+  controls: {
+    play: 'Başlat',
+    pause: 'Toqtat',
+    speed: 'Sürat',
+    speedAccessibleName: 'Animatsiyanıñ sürati',
+    speedUnit: '×',
+  },
+  hints: {
+    scale: 'Sadeleştirilgen model: yarıqnıñ sürati kerçek miqyasnen kösterilmegen.',
+  },
+} satisfies LightPropagationSimulation_Locale;
+
 export const locales = {
   en,
   zh,
@@ -582,5 +607,5 @@ export const locales = {
   he,
   pl,
   uk,
-  lt, lv, et, be, ka, kk,
+  lt, lv, et, be, ka, kk, qm,
 } satisfies Record<DefaultSupportedLanguage['language'], LightPropagationSimulation_Locale>;
