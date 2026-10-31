@@ -49,7 +49,7 @@ export const danceAndChoreography_SkillDomain_Data = buildSkillDomainConfig({
       ms: "Terokai cara gerakan ekspresif, corak pergerakan dan tradisi budaya membentuk tarian.",
       he: "גלו כיצד תנועה הבעתית, דפוסי תנועה ומסורות תרבותיות יוצרים מחול.",
       pl: "Poznaj, jak ekspresyjny ruch, wzorce ruchowe i tradycje kulturowe tworzą taniec.",
-      uk: "Досліджуйте, як виразні рухи, рухові patterns і культурні традиції формують танець.",
+      uk: "Досліджуйте, як виразні рухи, рухові закономірності і культурні традиції формують танець.",
       lt: "Atraskite, kaip išraiškingi judesiai, jų modeliai ir kultūrinės tradicijos kuria šokį.",
       lv: "Izpētiet, kā izteiksmīgas kustības, kustību raksti un kultūras tradīcijas veido deju.",
       et: "Uuri, kuidas väljendusrikkad liigutused, liikumismustrid ja kultuuritraditsioonid kujundavad tantsu.",
