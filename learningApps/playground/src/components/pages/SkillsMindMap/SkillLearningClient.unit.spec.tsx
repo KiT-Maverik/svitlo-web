@@ -30,7 +30,7 @@ describe('Skill learning destination', () => {
     expect(screen.getByRole('link', { name: /Повернутися до аналітики навичок/ }))
       .toHaveAttribute('href', '/skillAnalytics?lang=uk');
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/data/Pages/skillAnalytics/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/pages/skillAnalytics/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('reports an unknown skill rather than substituting a different lesson', async () => {

@@ -113,3 +113,24 @@ Example `uk.json` for the same Group:
   must depend on an injected textbook Domain list and generic published
   resources, so moving the view to `shared/ui-kit` does not bring
   Playground-only fixtures or other textbook authoring data into the kit.
+
+## 6. Page-specific publication
+
+- Each page can have its own generator at
+  `scripts/generators/pages/<camelCasePageName>/`, with lowercase `pages`.
+  `skillAnalytics` is the page name, not `mindMap`.
+- Emit exactly one self-contained `public/data/pages/<camelCasePageName>/<language>.json`
+  per locale, containing only the fields that the page consumes.
+  Do not add speculative fields to global entity metadata.
+- The skillAnalytics projection contains the complete localized
+  Domain → Group → Skill tree with canonical UUIDs, slugs, shared Collection
+  discriminators and user-facing text. Slugs are retained inside this payload
+  because nested items do not have individual file paths.
+- Progress, mastery and profile-specific analytics are joined at runtime
+  by UUID and must never appear in public generated files.
+- Subject and Program views are separate filters: Program membership must
+  derive from verified Program-to-Skill relationships, not guesses.
+- Keep the page loader and view generic for later extraction to UI Kit;
+  authoring `*.data.ts` may only be read at build time.
+- Report sizes for **all** supported locales (UTF-8, gzip, Brotli) and test
+  stable output, missing translations and locale isolation.

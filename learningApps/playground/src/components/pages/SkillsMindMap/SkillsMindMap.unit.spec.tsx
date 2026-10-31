@@ -35,7 +35,7 @@ describe('SkillsMindMap', () => {
     fireEvent.click(screen.getByTestId('skill-node-testWarmColors'));
     expect(screen.getByTestId('skill-node-testRed')).toBeInTheDocument();
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/data/Pages/skillAnalytics/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/pages/skillAnalytics/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('starts compact with visible mastery, expands the description and Pump action, then collapses again', async () => {
@@ -136,7 +136,7 @@ describe('SkillsMindMap', () => {
     await waitFor(() => expect(screen.getByTestId('skill-node-testRed')).toHaveTextContent('Red'));
     expect(window.location.search).toBe('?lang=en');
     expect(globalThis.fetch).toHaveBeenCalledWith(
-      '/data/Pages/skillAnalytics/en.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+      '/data/pages/skillAnalytics/en.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
   });
 
   it('displays a hard error for an unsupported requested language', async () => {
@@ -144,6 +144,6 @@ describe('SkillsMindMap', () => {
     render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     expect(await screen.findByRole('alert')).toHaveTextContent('відсутня');
     expect(globalThis.fetch).not.toHaveBeenCalledWith(
-      '/data/Pages/skillAnalytics/ru.json', expect.anything());
+      '/data/pages/skillAnalytics/ru.json', expect.anything());
   });
 });
