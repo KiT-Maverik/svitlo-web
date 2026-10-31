@@ -17,6 +17,7 @@ import {
 } from './skillsMindMap.utils';
 import type { SkillNode, SkillsManifest, MapEdge } from './skillsMindMap.utils';
 import styles from './SkillsMindMap.module.css';
+import { SkillAction, SkillLeafCard, SkillMastery } from './SkillLeafCard';
 
 type LoadingStatus = 'loading' | 'ready' | 'error';
 const KIND_LABELS = { skillDomain: 'Домен', skillGroup: 'Група', skill: 'Скіл' } as const;
@@ -71,6 +72,16 @@ function SkillOutline({ nodes, collapsed, selectedId, language, onNodeClick }: O
               <span lang={language} dir={language === 'ar' || language === 'ur' || language === 'he' ? 'rtl' : 'ltr'}>{node.name}</span>
               {hasChildren && <span className={styles.outlineCount}>{node.children.length}</span>}
             </button>
+            {node.kind === 'skill' && (
+              <div className={styles.outlineSkillDetails}>
+                {node.description && <p lang={language}
+                  dir={language === 'ar' || language === 'ur' || language === 'he' ? 'rtl' : 'ltr'}>
+                  {node.description}
+                </p>}
+                <SkillMastery skillId={node.id} compact />
+                <SkillAction skillId={node.id} language={language} compact />
+              </div>
+            )}
             {expanded && <SkillOutline nodes={node.children} collapsed={collapsed} selectedId={selectedId} language={language} onNodeClick={onNodeClick} />}
           </li>
         );
@@ -247,7 +258,10 @@ export function SkillsMindMap() {
           </Typography>
           <Typography component="h1" variant="h3" fontWeight={800}>Skills</Typography>
           <Typography color="text.secondary">
-            Карта навичок учня. Натисніть на домен або групу, щоб згорнути чи розгорнути гілку.
+            Оберіть навичку та прокачайте її. Натисніть на домен або групу, щоб згорнути чи розгорнути гілку.
+          </Typography>
+          <Typography variant="caption" color="text.secondary">
+            Значення володіння навичками — тестові, не результати оцінювання учня.
           </Typography>
         </Box>
         <Stack direction="row" flexWrap="wrap" gap={1}>
@@ -331,6 +345,11 @@ export function SkillsMindMap() {
                   </button>
                   {layout.nodes.map(node => {
                     const children = node.children.length;
+                    if (node.kind === 'skill') {
+                      return <SkillLeafCard key={node.id} node={node} language={language!}
+                        selected={selectedId === node.id} onSelect={onNodeClick}
+                        left={middle + node.x} top={middle + node.y} />;
+                    }
                     return (
                       <button key={node.id} type="button"
                         className={styles.node + ' ' +
