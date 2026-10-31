@@ -32,6 +32,7 @@ export const registerMultiplePrintLayers_Skill_Data = buildSkillConfig({
     be: "Сумяшчаць некалькі друкарскіх слаёў",
     ka: "რამდენიმე საბეჭდი ფენის შეთავსება",
     kk: "Бірнеше баспа қабатын дәл келтіру",
+      qm: "Bir qaç baskı qatını teñleştirmek",
   },
   description: {
     methodological: "Align successive impressions so separate colors or image parts meet deliberately.",
@@ -64,6 +65,7 @@ export const registerMultiplePrintLayers_Skill_Data = buildSkillConfig({
       be: "Сумясціце адбіткі слаёў так, каб колеры і формы супадалі, як задумана.",
       ka: "შეათავსეთ დაბეჭდილი ფენები ისე, რომ ფერები და ფორმები განზრახულის შესაბამისად დაემთხვეს.",
       kk: "Түстер мен пішіндер ойдағыдай түйісуі үшін баспа қабаттарын туралаңыз.",
+          qm: "Boya qatlarınıñ renkleri ve şekilleri planlanğan yerde birleşecek şekilde teñleştirñiz.",
     },
   },
 });
