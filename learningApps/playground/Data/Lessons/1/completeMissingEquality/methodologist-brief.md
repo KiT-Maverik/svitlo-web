@@ -61,4 +61,4 @@ Not specified. This Lesson is independent of any Program or Curriculum.
 
 ## Methodologist handoff
 
-**Draft pending explicit Methodologist/editor approval.** Proposed [Content](./content.md) and [Scene specification](./scenes/) are parallel review artifacts, not approved implementation instructions. Do not infer mastery, introduce new Skills, or add Questions, Quizzes, scoring, persistence or runtime data from this Brief.
+**Draft pending explicit Methodologist/editor approval.** Proposed [Content](./content.md) and [Scene specification](./scenes/expressionMatchLab.scene-spec.md) are parallel review artifacts, not approved implementation instructions. Do not infer mastery, introduce new Skills, or add Questions, Quizzes, scoring, persistence or runtime data from this Brief.
