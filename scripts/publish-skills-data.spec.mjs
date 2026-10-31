@@ -23,7 +23,12 @@ test('publishes all 2 domains, 4 groups, 8 Skills into localized standalone and 
   assert.equal(graph.reduce((sum, domain) => sum + domain.groups.length, 0), 4);
   assert.equal(graph.reduce((sum, domain) =>
     sum + domain.groups.reduce((groupSum, group) => groupSum + group.skills.length, 0), 0), 8);
-  assert.equal(files.size, 14 * codes.length);
+  assert.equal(files.size, 14 * codes.length + 1);
+  assert.deepEqual(JSON.parse(files.get('index.json')), {
+    version: 1,
+    languages: codes,
+    domains: ['testColors', 'testShapes'],
+  });
   assert(codes.includes('en') && codes.includes('uk'));
   assert.equal(new Set(codes).size, codes.length);
 
