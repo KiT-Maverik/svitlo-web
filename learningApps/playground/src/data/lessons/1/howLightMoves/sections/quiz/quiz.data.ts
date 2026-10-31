@@ -7,7 +7,7 @@ import {
   lightSpeedInWater_Question_Data,
   lightTravelsStraight_Question_Data,
   opaqueObjectShadow_Question_Data,
-} from './questions/index.data';
+} from './questions';
 import { howLightMoves_Lesson_Ids } from '../../howLightMoves.ids';
 import { quiz_Section_Ids } from './quiz.ids';
 

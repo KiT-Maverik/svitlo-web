@@ -27,7 +27,7 @@ export type HowLightMoves_Named_Quiz_Question_Data = Omit<
   HowLightMoves_Quiz_Question_Data,
   'content' | 'explanation' | 'answers'
 > & {
-  content: Quiz_Question_Entities;
+  question: Quiz_Question_Locale;
   explanation: Quiz_Question_Entities;
   answers: {
     correct: Quiz_Question_Entities;
