@@ -11,6 +11,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — სამნიშნა რიცხვი ერთნიშნაზე',
     kk: 'Көбейту — үш таңбалы санды бір таңбалы санға',
     en: 'Multiplication — 3-digit×1-digit',
+    qm: 'Arttıruv — üç raqamlı sayını bir raqamlı sayığa arttıruv',
     zh: '乘法 — 3-位数×1-位数',
     hi: 'गुणा — 3-अंकीय×1-अंकीय',
     es: 'Multiplicación — 3-cifras×1-cifras',
@@ -38,6 +39,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
       'Multiplying a three-digit number by a one-digit factor relies on decomposition into hundreds, tens, and ones and the distributive law. Carrying between places must preserve the total product.',
     frontend: {
       en: 'You can multiply a three-digit number by a one-digit number using hundreds, tens, and ones, carrying when needed.',
+      qm: 'Yüzlük, onluq ve birliklerni qullanıp, kerek olğanda soñraki razryadğa keçirerek üç raqamlı sayını bir raqamlı sayığa arttıra bilesiñ.',
       zh: '你能按百位、十位和个位计算三位数乘一位数，必要时进位。',
       hi: 'तुम सैकड़े, दहाइयाँ और इकाइयाँ लेकर तीन अंकों की संख्या का एक अंक से गुणा कर सकते हो और ज़रूरत पर हासिल आगे ले जा सकते हो।',
       es: 'Puedes multiplicar un número de tres cifras por uno de una cifra usando centenas, decenas y unidades, con llevadas si es necesario.',
