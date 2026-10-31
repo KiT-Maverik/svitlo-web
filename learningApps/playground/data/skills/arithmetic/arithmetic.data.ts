@@ -1,5 +1,6 @@
 import { buildSkillDomainConfig } from '@svitlo/engine/taxonomy';
 
+import { addition_SkillGroup_Data } from './addition/addition.data';
 import { subtraction_SkillGroup_Data } from './subtraction/subtraction.data';
 import { multiply_SkillGroup_Data } from './multiply/multiply.data';
 
@@ -36,6 +37,7 @@ export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Арифметика",
   },
   groupIds: {
+    addition: addition_SkillGroup_Data.id,
     subtraction: subtraction_SkillGroup_Data.id,
     multiply: multiply_SkillGroup_Data.id,
   },
