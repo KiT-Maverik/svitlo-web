@@ -5,11 +5,13 @@ export const createRepeatingOrnament_Skill_Data = buildSkillConfig({
   id: "1ed560b9-806b-451f-ba6a-455d53c9ce98",
   name: {
     en: "Create Repeating Ornament",
+      qm: "Tekrarlanğan naqış yaratmaq",
   },
   description: {
     methodological: "Develop a motif through planned translations, rotations, reflections or variations.",
     frontend: {
       en: "Repeat and vary shapes to build a decorative pattern.",
+          qm: "Bezeme naqşını qurmaq içün şekillerni tekrarlañız ve deñiştiriñiz.",
     },
   },
 });
