@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const compareUrbanSpatialPatterns_Skill_Data = buildSkillConfig({
   slug: "compareUrbanSpatialPatterns",
   id: "88aa2d8e-a872-48ac-af85-3bd58cbaab20",
-  name: { en: "Compare Urban Spatial Patterns" },
+  name: {
+    en: "Compare Urban Spatial Patterns",
+    zh: "比较城市空间模式",
+    hi: "शहरी स्थानिक प्रतिरूपों की तुलना करें",
+    es: "Comparar patrones espaciales urbanos",
+    ar: "مقارنة الأنماط المكانية الحضرية",
+    fr: "Comparer les structures spatiales urbaines",
+    bn: "নগর স্থানিক বিন্যাসের তুলনা করুন",
+    pt: "Comparar padrões espaciais urbanos",
+    ur: "شہری مکانی نمونوں کا موازنہ کریں",
+    id: "Membandingkan Pola Ruang Perkotaan",
+    de: "Städtische Raummuster vergleichen",
+    ja: "都市の空間パターンを比較する",
+    ko: "도시 공간 패턴 비교하기",
+    tr: "Kentsel Mekânsal Örüntüleri Karşılaştırmak",
+    vi: "So sánh các mô hình không gian đô thị",
+    ta: "நகர்ப்புற இடவியல் வடிவங்களை ஒப்பிடுங்கள்",
+    te: "పట్టణ స్థల నమూనాలను పోల్చండి",
+    mr: "शहरी अवकाशीय नमुन्यांची तुलना करा",
+    ms: "Membandingkan Corak Ruang Bandar",
+    he: "השוואת דפוסים מרחביים עירוניים",
+    pl: "Porównywać miejskie układy przestrzenne",
+    uk: "Порівнювати міські просторові структури",
+    lt: "Palyginti miesto erdvines struktūras",
+    lv: "Salīdzināt pilsētvides telpiskos modeļus",
+    et: "Linnaruumi mustrite võrdlemine",
+    be: "Параўноўваць гарадскія прасторавыя ўзоры",
+    ka: "ურბანული სივრცითი ნიმუშების შედარება",
+    kk: "Қалалық кеңістік үлгілерін салыстыру",
+    qm: "Şeer meydan şekillerini qarşılaştırmaq",
+  },
   description: {
     methodological: "Relate street grids, irregular networks and open spaces to urban experience.",
     frontend: {
@@ -35,6 +65,7 @@ export const compareUrbanSpatialPatterns_Skill_Data = buildSkillConfig({
           "be": "Параўнайце розныя схемы вуліц і ўражанні, якія яны ствараюць.",
           "ka": "შეადარეთ ქუჩების სხვადასხვა განლაგება და მათ მიერ შექმნილი გამოცდილება.",
           "kk": "Көше құрылымдарының әртүрлі үлгілері мен олардың қалыптастыратын тәжірибесін салыстырыңыз。"
-    },
+    
+      qm: "Ayrı sokak tertiplerini ve olarnıñ doğurğan tecribelerini qarşılaştırıñız.",},
   },
 });
