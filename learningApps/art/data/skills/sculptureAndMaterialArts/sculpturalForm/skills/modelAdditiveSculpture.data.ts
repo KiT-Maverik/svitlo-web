@@ -32,6 +32,7 @@ export const modelAdditiveSculpture_Skill_Data = buildSkillConfig({
     be: "Мадэляваць скульптуру метадам нарошчвання",
     ka: "მასალის დამატებით ქანდაკების გამოძერწვა",
     kk: "Материал қосу арқылы мүсін жасау",
+      qm: "Qoşma usulı ile heykel şekillendirmek",
   },
   description: {
     methodological: "Build volume through controlled accumulation and shaping of pliable material.",
@@ -64,6 +65,7 @@ export const modelAdditiveSculpture_Skill_Data = buildSkillConfig({
       be: "Дадавайце і фармуйце мяккі матэрыял, каб стварыць скульптурны аб’ект.",
       ka: "დაამატეთ და გამოძერწეთ რბილი მასალა სკულპტურული ობიექტის შესაქმნელად.",
       kk: "Жұмсақ материалды қосып, пішін беріп, мүсіндік бұйым жасаңыз.",
+          qm: "Heykel obyektini qurmaq içün yumşaq material qoşuñız ve şekillendiriñiz.",
     },
   },
 });
