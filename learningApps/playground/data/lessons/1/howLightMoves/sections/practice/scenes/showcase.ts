@@ -1,6 +1,5 @@
-import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
-
 import type {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
+import {LanguageCode} from "@svitlo/engine";
 
 type Locale = HowLightMoves_Lesson_Locale['section']['practice']['scene']['showcase'];
 
@@ -639,7 +638,7 @@ const qm: Locale = {
   },
 };
 
-export const showcase: Record<DefaultSupportedLanguage['language'] | Locale> = {
+export const showcase: Record<LanguageCode, Locale> = {
   ar,
   be,
   bn,
