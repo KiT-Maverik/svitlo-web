@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const distinguishBeautyAndArtisticValue_Skill_Data = buildSkillConfig({
-  slug: "distinguishBeautyAndArtisticValue", id: "bd0f1d89-6430-4d79-939f-0c92d0088e77", name: { en: "Distinguish Beauty and Artistic Value" },
+  slug: "distinguishBeautyAndArtisticValue", id: "bd0f1d89-6430-4d79-939f-0c92d0088e77", name: {
+    en: "Distinguish Beauty and Artistic Value",
+    zh: "区分美与艺术价值",
+    hi: "सुंदरता और कलात्मक मूल्य में अंतर करें",
+    es: "Distinguir la belleza del valor artístico",
+    ar: "التمييز بين الجمال والقيمة الفنية",
+    fr: "Distinguer beauté et valeur artistique",
+    bn: "সৌন্দর্য ও শৈল্পিক মূল্যের পার্থক্য বুঝুন",
+    pt: "Distinguir beleza e valor artístico",
+    ur: "خوبصورتی اور فنّی قدر میں فرق کریں",
+    id: "Membedakan Keindahan dan Nilai Artistik",
+    de: "Schönheit und künstlerischen Wert unterscheiden",
+    ja: "美しさと芸術的価値を区別する",
+    ko: "아름다움과 예술적 가치 구분하기",
+    tr: "Güzellik ile Sanatsal Değeri Ayırt Etmek",
+    vi: "Phân biệt vẻ đẹp và giá trị nghệ thuật",
+    ta: "அழகுக்கும் கலை மதிப்புக்கும் உள்ள வேறுபாட்டைக் கண்டறியுங்கள்",
+    te: "అందం మరియు కళాత్మక విలువను వేరు చేయండి",
+    mr: "सौंदर्य आणि कलात्मक मूल्य यांतील फरक ओळखा",
+    ms: "Membezakan Keindahan dan Nilai Artistik",
+    he: "הבחנה בין יופי לערך אמנותי",
+    pl: "Odróżnianie piękna od wartości artystycznej",
+    uk: "Розрізняти красу й художню цінність",
+    lt: "Atskirti grožį ir meninę vertę",
+    lv: "Atšķirt skaistumu no mākslinieciskās vērtības",
+    et: "Ilu ja kunstilise väärtuse eristamine",
+    be: "Адрозніваць прыгажосць і мастацкую каштоўнасць",
+    ka: "სილამაზისა და მხატვრული ღირებულების გარჩევა",
+    kk: "Сұлулық пен көркемдік құндылықты ажырату",
+    qm: "Güzellik ve sanat qıymetini ayırmaq",
+  },
   description: { methodological: "Explain how significant art can challenge conventional ideals of visual attractiveness.", frontend: {
           "en": "Discover why an important artwork does not always aim to look beautiful.",
           "zh": "了解为什么重要的艺术作品并不总是追求外表美。",
@@ -31,5 +61,6 @@ export const distinguishBeautyAndArtisticValue_Skill_Data = buildSkillConfig({
           "be": "Даведайцеся, чаму важны мастацкі твор не заўсёды імкнецца выглядаць прыгожа.",
           "ka": "გაიგეთ, რატომ არ ცდილობს მნიშვნელოვანი ნამუშევარი ყოველთვის ლამაზად გამოიყურებოდეს.",
           "kk": "Маңызды өнер туындысы әрдайым әдемі көрінуді мақсат етпейтінінің себебін зерттеңіз."
-    } },
+    
+      qm: "Mühim sanat eseriniñ daaima güzel körünmek istegeniniñ sebep degil ekenini añlañız.",} },
 });
