@@ -32,6 +32,7 @@ export const designAPrintMatrix_Skill_Data = buildSkillConfig({
     be: "Праектаваць друкарскую форму",
     ka: "საბეჭდი ფორმის დაპროექტება",
     kk: "Баспа матрицасын жобалау",
+      qm: "Baskı kalıbını tasarlamaq",
   },
   description: {
     methodological: "Plan which areas of a printing surface will transfer the desired image.",
@@ -64,6 +65,7 @@ export const designAPrintMatrix_Skill_Data = buildSkillConfig({
       be: "Вызначце, якія часткі друкарскай паверхні будуць пераносіць выяву.",
       ka: "დაგეგმეთ, საბეჭდი ზედაპირის რომელი ნაწილები გადაიტანს გამოსახულებას.",
       kk: "Жартылай баспа бетінің қай бөліктері кескін қалдыратынын жоспарлаңыз.",
+          qm: "Baskı yüzüniñ hangi yerleri suret qaldıracağını evelden planlañız.",
     },
   },
 });
