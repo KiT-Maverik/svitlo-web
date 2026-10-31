@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { SkillsMindMap } from './SkillsMindMap';
 
 const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
@@ -58,6 +58,36 @@ describe('SkillsMindMap', () => {
     expect(screen.getByTestId('skill-node-testRed')).toBeInTheDocument();
     expect(globalThis.fetch).toHaveBeenCalledWith(
       '/Data/Skills/testColors/uk.json', expect.objectContaining({ signal: expect.any(AbortSignal) }));
+  });
+
+  it('shows frontend description, demo mastery and a working per-Skill Pump destination', async () => {
+    render(<SkillsMindMap />);
+    const leaf = await screen.findByTestId('skill-node-testRed');
+    expect(leaf).toHaveTextContent('Червоний');
+    expect(leaf).toHaveTextContent('Розпізнавати червоний.');
+    const meter = within(leaf).getByRole('progressbar', { name: /Демонстраційний рівень/ });
+    const score = Number(meter.getAttribute('aria-valuenow'));
+    expect(score).toBeGreaterThanOrEqual(0);
+    expect(score).toBeLessThanOrEqual(100);
+    expect(within(leaf).getByText(score + '%')).toBeInTheDocument();
+    expect(within(leaf).getByRole('link', { name: /Прокачати навичку/ }))
+      .toHaveAttribute('href', '/skills/' + uuid(3) + '/learn?lang=uk');
+
+    fireEvent.click(within(leaf).getByRole('button', { name: /Інформація про скіл/ }));
+    expect(screen.getByRole('region', { name: 'Інформація про вибраний вузол' }))
+      .toHaveTextContent('Розпізнавати червоний.');
+    expect(screen.getByTestId('skill-node-testWarmColors')).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  it('also exposes the mastery and learning CTA in the accessible list view', async () => {
+    render(<SkillsMindMap />);
+    await screen.findByTestId('skill-node-testRed');
+    fireEvent.click(screen.getByRole('button', { name: 'Список' }));
+    const list = screen.getByRole('region', { name: 'Навички за доменами' });
+    expect(within(list).getByText('Розпізнавати червоний.')).toBeInTheDocument();
+    expect(within(list).getByRole('progressbar')).toHaveAttribute('aria-valuenow');
+    expect(within(list).getByRole('link', { name: /Прокачати навичку/ }))
+      .toHaveAttribute('href', '/skills/' + uuid(3) + '/learn?lang=uk');
   });
 
   it('collapses all branches, expands them, and supports a keyboard-friendly list view', async () => {
