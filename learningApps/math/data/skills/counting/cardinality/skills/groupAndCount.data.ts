@@ -5,6 +5,7 @@ export const groupAndCount_Skill_Data = buildSkillConfig({
   id: '8efbfcb0-c600-40ff-b8e3-e15891c5359c',
   name: {
     en: 'Counting objects in groups of tens or hundreds',
+    qm: 'Eşyalarnı onluq ya da yüzlüq toparlarğa ayırıp saymaq',
     lt: 'Daiktų skaičiavimas dešimtimis ar šimtais',
     lv: 'Priekšmetu skaitīšana desmitu vai simtu grupās',
     et: 'Esemete loendamine kümneste või sadade kaupa',
@@ -38,6 +39,7 @@ export const groupAndCount_Skill_Data = buildSkillConfig({
       "Determine a large set's cardinality by forming complete groups of ten or one hundred and recording any incomplete group separately. The total is the sum of all grouped and ungrouped elements.",
     frontend: {
       en: 'Find a total by grouping objects into tens or hundreds, then counting any objects left outside the full groups.',
+      qm: 'Eşyalarnı onluq ya da yüzlüq toparlarğa ayırıp, soñra tolu toparlardan tışta qalğan eşyalarnı da sayaraq umumiy sayını tap.',
       zh: '把物品分成每组十个或一百个，再加上不足一整组的物品，求出总数。',
       hi: 'वस्तुओं के दस या सौ के समूह बनाकर और बची हुई वस्तुओं को जोड़कर कुल संख्या ज्ञात करें।',
       es: 'Agrupa los objetos de diez en diez o de cien en cien y suma los que sobren para hallar el total.',

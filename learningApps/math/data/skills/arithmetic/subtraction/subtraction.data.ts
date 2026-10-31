@@ -14,6 +14,7 @@ export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
   id: '5953fa57-ee20-48ec-9764-2e9290c97314',
   name: {
     en: 'Subtraction',
+    qm: 'Çıqaruv',
     lt: 'Atimtis',
     lv: 'Atņemšana',
     et: 'Lahutamine',
@@ -55,6 +56,7 @@ export const subtraction_SkillGroup_Data = buildSkillGroupConfig({
       'Removing a part, finding a difference, regrouping place values, and verifying subtraction calculations.',
     frontend: {
       en: 'Learn how subtraction finds what remains, how much quantities differ, or which part is missing, and how place value helps you calculate and check answers.',
+      qm: 'Çıqaruv yardımınen ne qadar qalğanını, miqdarlar arasındaki farqnı ya da eksik parçanı nasıl tapmaqnı ögren. Razryad qıymeti esaplavğa ve cevaplarnı teşkere etmege yardım ete.',
       zh: '了解减法怎样求剩余数量、两个数量的差或缺少的部分，以及怎样利用数位进行计算和验算。',
       hi: 'समझो कि घटाव से कितना बचता है, दो मात्राओं में कितना अंतर है या कौन-सा भाग गायब है, और स्थान-मूल्य से उत्तर कैसे निकालते तथा जाँचते हैं।',
       es: 'Aprende cómo la resta permite saber qué queda, cuánto difieren dos cantidades o qué parte falta, y cómo el valor posicional ayuda a calcular y comprobar.',

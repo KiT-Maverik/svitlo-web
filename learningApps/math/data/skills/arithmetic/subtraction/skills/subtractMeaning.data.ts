@@ -11,6 +11,7 @@ export const subtractMeaning_Skill_Data = buildSkillConfig({
     ka: 'გამოკლება — მნიშვნელობა და მოდელები',
     kk: 'Азайту — мағынасы мен модельдері',
     en: 'Subtraction — Meaning and models',
+    qm: 'Çıqaruv — manası ve modelleri',
     zh: '减法 — 含义与模型',
     hi: 'घटाव — अर्थ और मॉडल',
     es: 'Resta — Significado y modelos',
@@ -38,6 +39,7 @@ export const subtractMeaning_Skill_Data = buildSkillConfig({
       'Subtraction may model removing a part, finding the difference between two quantities, or finding an unknown component of a known whole. These share an arithmetic relation but differ in known and unknown roles.',
     frontend: {
       en: 'You can recognize subtraction as taking away, comparing quantities, or finding a missing part, and show each situation with a subtraction.',
+      qm: 'Çıqaruvnı miqdardan bir parçanı aluv, miqdarlarnı qıyaslav ya da eksik parçanı tapuv olaraq tanıy ve er vaziyetni çıqaruv amelinen köstere bilesiñ.',
       zh: '你能辨认减法表示拿走一部分、比较两个数量或求缺少的部分，并用减法算式表示。',
       hi: 'तुम समझ सकते हो कि घटाव कब कुछ हटाने, मात्राओं की तुलना करने या गायब हिस्सा ढूँढ़ने के लिए होता है और उसे घटाव से दिखा सकते हो।',
       es: 'Puedes reconocer la resta como quitar, comparar cantidades o hallar una parte que falta, y representar cada caso con una resta.',
