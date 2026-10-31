@@ -4,6 +4,6 @@ export type Practice_Section_Locale = {
   name: string;
   task: string;
   scene: {
-    practice: Showcase_Locale;
+    showcase: Showcase_Locale;
   }
 }

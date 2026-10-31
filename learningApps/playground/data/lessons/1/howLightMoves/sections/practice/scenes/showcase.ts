@@ -1,6 +1,10 @@
 import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
 
-const uk = {
+import type {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
+
+type Locale = HowLightMoves_Lesson_Locale['section']['practice']['scene']['showcase'];
+
+const uk: Locale = {
   header: {
     eyebrow: 'ДОСЛІДЖУЙ · ПОРІВНЮЙ · ПОМІЧАЙ',
     title: 'Одне світло. Різні середовища.',
@@ -27,9 +31,7 @@ const uk = {
   },
 };
 
-export type Showcase_Locale = typeof uk;
-
-const en = {
+const en: Locale = {
   header: {
     eyebrow: 'EXPLORE · COMPARE · OBSERVE',
     title: 'One light. Different media.',
@@ -54,9 +56,9 @@ const en = {
     model: 'Model: v = c / n.',
     sourceLink: 'Refractive-index values from OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const zh = {
+const zh: Locale = {
   header: {
     eyebrow: '探索 · 比较 · 观察',
     title: '同一种光，不同的介质。',
@@ -78,9 +80,9 @@ const zh = {
     model: '模型：v = c / n。',
     sourceLink: '折射率数据来源：OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const hi = {
+const hi: Locale = {
   header: {
     eyebrow: 'खोजें · तुलना करें · देखें',
     title: 'एक ही प्रकाश। अलग-अलग माध्यम।',
@@ -103,9 +105,9 @@ const hi = {
     model: 'मॉडल: v = c / n।',
     sourceLink: 'अपवर्तनांक के मान: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const es = {
+const es: Locale = {
   header: {
     eyebrow: 'EXPLORA · COMPARA · OBSERVA',
     title: 'Una misma luz. Distintos medios.',
@@ -128,9 +130,9 @@ const es = {
     model: 'Modelo: v = c / n.',
     sourceLink: 'Valores del índice de refracción: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const ar = {
+const ar: Locale = {
   header: {
     eyebrow: 'استكشف · قارن · لاحظ',
     title: 'ضوء واحد، أوساط مختلفة.',
@@ -153,9 +155,9 @@ const ar = {
     model: 'النموذج: v = c / n.',
     sourceLink: 'قيم معامل الانكسار من OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const fr = {
+const fr: Locale = {
   header: {
     eyebrow: 'EXPLORE · COMPARE · OBSERVE',
     title: 'Une même lumière. Différents milieux.',
@@ -178,9 +180,9 @@ const fr = {
     model: 'Modèle : v = c / n.',
     sourceLink: 'Valeurs de l’indice de réfraction : OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const bn = {
+const bn: Locale = {
   header: {
     eyebrow: 'অন্বেষণ · তুলনা · পর্যবেক্ষণ',
     title: 'একই আলো, ভিন্ন মাধ্যম।',
@@ -203,9 +205,9 @@ const bn = {
     model: 'মডেল: v = c / n।',
     sourceLink: 'প্রতিসরাঙ্কের মান: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const pt = {
+const pt: Locale = {
   header: {
     eyebrow: 'EXPLORE · COMPARE · OBSERVE',
     title: 'A mesma luz. Meios diferentes.',
@@ -228,9 +230,9 @@ const pt = {
     model: 'Modelo: v = c / n.',
     sourceLink: 'Valores do índice de refração: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const ur = {
+const ur: Locale = {
   header: {
     eyebrow: 'دریافت کریں · موازنہ کریں · دیکھیں',
     title: 'ایک ہی روشنی، مختلف واسطے۔',
@@ -253,9 +255,9 @@ const ur = {
     model: 'نمونہ: v = c / n۔',
     sourceLink: 'ضریبِ انعطاف کی قدریں: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const id = {
+const id: Locale = {
   header: {
     eyebrow: 'JELAJAHI · BANDINGKAN · AMATI',
     title: 'Cahaya yang sama. Medium yang berbeda.',
@@ -280,9 +282,9 @@ const id = {
     model: 'Model: v = c / n.',
     sourceLink: 'Nilai indeks bias dari OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const de = {
+const de: Locale = {
   header: {
     eyebrow: 'ERKUNDE · VERGLEICHE · BEOBACHTE',
     title: 'Dasselbe Licht. Verschiedene Medien.',
@@ -307,9 +309,9 @@ const de = {
     model: 'Modell: v = c / n.',
     sourceLink: 'Brechungsindexwerte von OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const ja = {
+const ja: Locale = {
   header: {
     eyebrow: '調べる · 比べる · 観察する',
     title: '同じ光、異なる媒質。',
@@ -331,9 +333,9 @@ const ja = {
     model: 'モデル：v = c / n。',
     sourceLink: '屈折率の値の出典：OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const ko = {
+const ko: Locale = {
   header: {
     eyebrow: '탐구 · 비교 · 관찰',
     title: '같은 빛, 다른 매질.',
@@ -356,9 +358,9 @@ const ko = {
     model: '모형: v = c / n.',
     sourceLink: '굴절률 값 출처: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const tr = {
+const tr: Locale = {
   header: {
     eyebrow: 'KEŞFET · KARŞILAŞTIR · GÖZLEMLE',
     title: 'Aynı ışık. Farklı ortamlar.',
@@ -381,9 +383,9 @@ const tr = {
     model: 'Model: v = c / n.',
     sourceLink: 'Kırılma indisi değerleri: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const vi = {
+const vi: Locale = {
   header: {
     eyebrow: 'KHÁM PHÁ · SO SÁNH · QUAN SÁT',
     title: 'Cùng một ánh sáng. Các môi trường khác nhau.',
@@ -408,9 +410,9 @@ const vi = {
     model: 'Mô hình: v = c / n.',
     sourceLink: 'Giá trị chiết suất từ OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const ta = {
+const ta: Locale = {
   header: {
     eyebrow: 'ஆராய் · ஒப்பிடு · கவனி',
     title: 'ஒரே ஒளி. வெவ்வேறு ஊடகங்கள்.',
@@ -433,9 +435,9 @@ const ta = {
     model: 'மாதிரி: v = c / n.',
     sourceLink: 'ஒளிவிலகல் எண் மதிப்புகள்: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const te = {
+const te: Locale = {
   header: {
     eyebrow: 'అన్వేషించు · పోల్చు · గమనించు',
     title: 'ఒకే కాంతి. వేర్వేరు యానకాలు.',
@@ -458,9 +460,9 @@ const te = {
     model: 'నమూనా: v = c / n.',
     sourceLink: 'వక్రీభవన గుణకం విలువలు: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const mr = {
+const mr: Locale = {
   header: {
     eyebrow: 'शोधा · तुलना करा · निरीक्षण करा',
     title: 'तोच प्रकाश. वेगवेगळी माध्यमे.',
@@ -483,9 +485,9 @@ const mr = {
     model: 'प्रतिरूप: v = c / n.',
     sourceLink: 'अपवर्तनांकाची मूल्ये: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const ms = {
+const ms: Locale = {
   header: {
     eyebrow: 'TEROKA · BANDINGKAN · PERHATI',
     title: 'Cahaya yang sama. Medium yang berbeza.',
@@ -510,9 +512,9 @@ const ms = {
     model: 'Model: v = c / n.',
     sourceLink: 'Nilai indeks biasan daripada OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const he = {
+const he: Locale = {
   header: {
     eyebrow: 'חקרו · השוו · התבוננו',
     title: 'אותו אור. תווכים שונים.',
@@ -534,9 +536,9 @@ const he = {
     model: 'מודל: v = c / n.',
     sourceLink: 'ערכי מקדם השבירה מתוך OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const pl = {
+const pl: Locale = {
   header: {
     eyebrow: 'ODKRYWAJ · PORÓWNUJ · OBSERWUJ',
     title: 'To samo światło. Różne ośrodki.',
@@ -562,57 +564,57 @@ const pl = {
     model: 'Model: v = c / n.',
     sourceLink: 'Wartości współczynnika załamania: OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-const lt = {
+const lt: Locale = {
   header: { eyebrow: "TYRINĖK · LYGINК · STEBĖK", title: "Ta pati šviesa. Skirtingos terpės.", description: "Keisk terpes ir palygink, kiek laiko šviesai reikia tam pačiam atstumui įveikti. Taškas kartotinėje animacijoje juda tarp šaltinio ir ekrano." },
   selector: { label: "Šviesos sklidimo terpė", media: { vacuum: "Vakuumas", air: "Oras", water: "Vanduo" } },
   simulation: { trackPrefix: "Šviesos sklidimo modelis: ", source: "Šaltinis", screen: "Ekranas", play: "Paleisti", pause: "Pauzė", speedUnit: "km/s" },
   insight: { quote: "Šviesos greitis priklauso nuo terpės: vandenyje šviesa sklinda lėčiau nei vakuume." },
   notes: { caption: "Animacija gerokai sulėtinta, tačiau greičių santykis išlaikytas. Oras ir vakuumas atrodo beveik vienodai. Taško grįžimas tik pakartoja modelį, o ne vaizduoja atspindį. Matomosios šviesos vertės yra apytikslės ir priklauso nuo sąlygų.", model: "Modelis: v = c / n.", sourceLink: "Lūžio rodiklio reikšmių šaltinis – OpenStax" },
-} satisfies Showcase_Locale;
+};
 
-const lv = {
+const lv: Locale = {
   header: { eyebrow: "IZPĒTI · SALĪDZINI · NOVĒRO", title: "Viena gaisma. Dažādas vides.", description: "Pārslēdz vides un salīdzini, cik ilgi gaisma veic vienādu attālumu. Punkts atkārtotā animācijā pārvietojas starp avotu un ekrānu." },
   selector: { label: "Gaismas izplatīšanās vide", media: { vacuum: "Vakuums", air: "Gaiss", water: "Ūdens" } },
   simulation: { trackPrefix: "Gaismas izplatīšanās modelis: ", source: "Avots", screen: "Ekrāns", play: "Atskaņot", pause: "Pauze", speedUnit: "km/s" },
   insight: { quote: "Gaismas ātrums ir atkarīgs no vides: ūdenī gaisma izplatās lēnāk nekā vakuumā." },
   notes: { caption: "Animācija ir ievērojami palēnināta, bet ātrumu attiecība ir saglabāta. Gaiss un vakuums izskatās gandrīz vienādi. Punkta atgriešanās tikai atkārto modeli un nerāda atstarošanos. Redzamās gaismas vērtības ir aptuvenas un atkarīgas no apstākļiem.", model: "Modelis: v = c / n.", sourceLink: "Laušanas koeficienta vērtību avots — OpenStax" },
-} satisfies Showcase_Locale;
+};
 
-const et = {
+const et: Locale = {
   header: { eyebrow: "UURI · VÕRDLE · MÄRKA", title: "Sama valgus. Erinevad keskkonnad.", description: "Vaheta keskkondi ja võrdle, kui kaua kulub valgusel sama vahemaa läbimiseks. Punkt liigub korduvas animatsioonis valgusallika ja ekraani vahel." },
   selector: { label: "Valguse levimise keskkond", media: { vacuum: "Vaakum", air: "Õhk", water: "Vesi" } },
   simulation: { trackPrefix: "Valguse levimise mudel: ", source: "Allikas", screen: "Ekraan", play: "Esita", pause: "Paus", speedUnit: "km/s" },
   insight: { quote: "Valguse kiirus sõltub keskkonnast: vees levib valgus aeglasemalt kui vaakumis." },
   notes: { caption: "Animatsioon on oluliselt aeglustatud, kuid kiiruste suhted on säilitatud. Õhk ja vaakum paistavad peaaegu ühesugused. Punkti tagasiliikumine kordab ainult mudelit ega kujuta peegeldumist. Nähtava valguse väärtused on ligikaudsed ja sõltuvad tingimustest.", model: "Mudel: v = c / n.", sourceLink: "Murdumisnäitaja väärtuste allikas — OpenStax" },
-} satisfies Showcase_Locale;
+};
 
-const be = {
+const be: Locale = {
   header: { eyebrow: "ДАСЬЛЕДУЙ · ПАРАЎНОЎВАЙ · НАЗІРАЙ", title: "Адно сьвятло. Розныя асяродзьдзі.", description: "Пераключай асяродзьдзі і параўноўвай, колькі часу сьвятлу трэба, каб прайсьці аднолькавую адлегласьць. Кропка паўторна рухаецца паміж крыніцай і экранам." },
   selector: { label: "Асяродзьдзе пашырэньня сьвятла", media: { vacuum: "Вакуўм", air: "Паветра", water: "Вада" } },
   simulation: { trackPrefix: "Мадэль пашырэньня сьвятла: ", source: "Крыніца", screen: "Экран", play: "Прайграць", pause: "Паўза", speedUnit: "км/с" },
   insight: { quote: "Хуткасьць сьвятла залежыць ад асяродзьдзя: у вадзе сьвятло пашыраецца павольней, чым у вакуўме." },
   notes: { caption: "Анімацыю моцна запаволілі, але суадносіны хуткасьцяў захавалі. Паветра і вакуўм выглядаюць амаль аднолькава. Вяртаньне кропкі толькі паўтарае мадэль, а не паказвае адбіцьцё. Значэньні для бачнага сьвятла прыблізныя і залежаць ад умоваў.", model: "Мадэль: v = c / n.", sourceLink: "Крыніца значэньняў паказьніка праламленьня — OpenStax" },
-} satisfies Showcase_Locale;
+};
 
-const ka = {
+const ka: Locale = {
   header: { eyebrow: "გამოიკვლიე · შეადარე · დააკვირდი", title: "ერთი სინათლე. სხვადასხვა გარემო.", description: "შეცვალე გარემო და შეადარე დრო, რომელიც სინათლეს ერთნაირი მანძილის გასავლელად სჭირდება. წერტილი წყაროსა და ეკრანს შორის განმეორებით მოძრაობს." },
   selector: { label: "სინათლის გავრცელების გარემო", media: { vacuum: "ვაკუუმი", air: "ჰაერი", water: "წყალი" } },
   simulation: { trackPrefix: "სინათლის გავრცელების მოდელი: ", source: "წყარო", screen: "ეკრანი", play: "გაშვება", pause: "პაუზა", speedUnit: "კმ/წმ" },
   insight: { quote: "სინათლის სიჩქარე დამოკიდებულია გარემოზე: წყალში სინათლე უფრო ნელა ვრცელდება, ვიდრე ვაკუუმში." },
   notes: { caption: "ანიმაცია მნიშვნელოვნად შენელებულია, მაგრამ სიჩქარეთა თანაფარდობა შენარჩუნებულია. ჰაერი და ვაკუუმი თითქმის ერთნაირად ჩანს. წერტილის დაბრუნება მხოლოდ მოდელის გამეორებაა და არ ასახავს არეკვლას. ხილული სინათლის მნიშვნელობები მიახლოებითია და პირობებზეა დამოკიდებული.", model: "მოდელი: v = c / n.", sourceLink: "გარდატეხის მაჩვენებლის მნიშვნელობების წყარო — OpenStax" },
-} satisfies Showcase_Locale;
+};
 
-const kk = {
+const kk: Locale = {
   header: { eyebrow: "ЗЕРТТЕ · САЛЫСТЫР · БАҚЫЛА", title: "Бір жарық. Әртүрлі орта.", description: "Ортаны ауыстырып, жарықтың бірдей қашықтықты жүріп өту уақытын салыстыр. Нүкте жарық көзі мен экран арасында қайталанып қозғалады." },
   selector: { label: "Жарық таралатын орта", media: { vacuum: "Вакуум", air: "Ауа", water: "Су" } },
   simulation: { trackPrefix: "Жарықтың таралу моделі: ", source: "Көз", screen: "Экран", play: "Ойнату", pause: "Кідірту", speedUnit: "км/с" },
   insight: { quote: "Жарықтың жылдамдығы ортаға тәуелді: суда жарық вакуумға қарағанда баяу таралады." },
   notes: { caption: "Анимация едәуір баяулатылған, бірақ жылдамдықтардың қатынасы сақталған. Ауа мен вакуумның көрінісі дерлік бірдей. Нүктенің қайтуы тек модельді қайталайды, шағылуды көрсетпейді. Көрінетін жарыққа арналған мәндер жуық және жағдайға байланысты өзгереді.", model: "Модель: v = c / n.", sourceLink: "Сыну көрсеткішінің мәндері: OpenStax" },
-} satisfies Showcase_Locale;
+};
 
-const qm = {
+const qm: Locale = {
   header: {
     eyebrow: 'ЗЕРТЛЕ · САЛЫСТЫР · БАЙҚА',
     title: 'Бір жарық. Әртүрлі орталар.',
@@ -635,32 +637,37 @@ const qm = {
     model: 'Модель: v = c / n.',
     sourceLink: 'Сыну көрсеткіші мәндерінің көзі — OpenStax',
   },
-} satisfies Showcase_Locale;
+};
 
-export const showcase = {
-  en,
-  qm,
-  zh,
-  hi,
-  es,
+export const showcase: Record<DefaultSupportedLanguage['language'] | Locale> = {
   ar,
-  fr,
+  be,
   bn,
-  pt,
-  ur,
-  id,
   de,
+  en,
+  es,
+  et,
+  fr,
+  he,
+  hi,
+  id,
   ja,
+  ka,
+  kk,
   ko,
-  tr,
-  vi,
-  ta,
-  te,
+  lt,
+  lv,
   mr,
   ms,
-  he,
   pl,
+  pt,
+  qm,
+  ta,
+  te,
+  tr,
   uk,
-  lt, lv, et, be, ka, kk,
-} satisfies Record<DefaultSupportedLanguage['language'] | 'qm', Showcase_Locale>;
+  ur,
+  vi,
+  zh,
+}
 
