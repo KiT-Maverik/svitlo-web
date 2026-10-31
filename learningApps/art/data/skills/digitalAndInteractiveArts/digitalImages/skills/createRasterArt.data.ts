@@ -64,7 +64,7 @@ export const createRasterArt_Skill_Data = buildSkillConfig({
           "et": "Loo pikslipõhiseid pilte teadlikult valitud värvide, märkide ja kihtidega.",
           "be": "Стварайце піксельныя выявы з дапамогай прадуманых колераў, штрыхоў і слаёў.",
           "ka": "შექმენით პიქსელური გამოსახულებები გააზრებული ფერებით, ნიშნებითა და ფენებით.",
-          "kk": "Ойластырылған түстер, белгілер мен қабаттар арқылы пиксельдік кескіндер жасаңыз。"
+          "kk": "Ойластырылған түстер, белгілер мен қабаттар арқылы пиксельдік кескіндер жасаңыз。",
     
       qm: "Pikselge esaslanğan suretlerni maqsatlı tüs, iz ve qatlar ile qurıñız.",},
   },
