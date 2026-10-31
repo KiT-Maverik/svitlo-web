@@ -32,7 +32,7 @@ export const identifyMusicalMotifs_Skill_Data = buildSkillConfig({
       be: "Распазнаваць музычныя матывы",
       ka: "მუსიკალური მოტივების ამოცნობა",
       kk: "Музыкалық мотивтерді анықтау",
-      qm: "Musiqi motivlərini tanımaq",
+      qm: "Musiqiy motivlerni tanımaq",
     },
   description: {
     methodological: "Recognize a short characteristic idea that recurs or changes across a work.",
@@ -65,7 +65,7 @@ export const identifyMusicalMotifs_Skill_Data = buildSkillConfig({
       be: "Распазнайце кароткую музычную ідэю, калі яна вяртаецца ў розных формах.",
       ka: "ამოიცანით მოკლე მუსიკალური იდეა, როდესაც ის სხვადასხვა ფორმით ბრუნდება.",
       kk: "Қысқа музыкалық идея әртүрлі түрде қайталанғанда, оны таныңыз.",
-      qm: "Qısa musiqi ideyası müxtəlif formalarda təkrarlandıqda onu tanıyın.",
+      qm: "Qısqa musiqiy fikir çeşit şekillerde tekrarlanğanda onı tanıñız.",
     }
   },
 });
