@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const presentAnArtwork_Skill_Data = buildSkillConfig({
-  slug: "presentAnArtwork", id: "3e431186-a5fc-452f-80a5-7d7082ab1d0b", name: { en: "Present an Artwork" },
+  slug: "presentAnArtwork", id: "3e431186-a5fc-452f-80a5-7d7082ab1d0b", name: {
+    en: "Present an Artwork",
+    zh: "展示艺术作品",
+    hi: "कलाकृति प्रस्तुत करें",
+    es: "Presentar una obra de arte",
+    ar: "عرض عمل فني",
+    fr: "Présenter une œuvre d’art",
+    bn: "শিল্পকর্ম উপস্থাপন করুন",
+    pt: "Apresentar uma obra de arte",
+    ur: "فن پارہ پیش کریں",
+    id: "Menyajikan Karya Seni",
+    de: "Ein Kunstwerk präsentieren",
+    ja: "作品を発表する",
+    ko: "작품 발표하기",
+    tr: "Bir Sanat Eserini Sunmak",
+    vi: "Giới thiệu một tác phẩm nghệ thuật",
+    ta: "கலைப்படைப்பை வழங்குங்கள்",
+    te: "కళాకృతిని ప్రదర్శించండి",
+    mr: "कलाकृती सादर करा",
+    ms: "Mempersembahkan Karya Seni",
+    he: "הצגת יצירת אמנות",
+    pl: "Prezentować dzieło sztuki",
+    uk: "Презентувати мистецький твір",
+    lt: "Pristatyti meno kūrinį",
+    lv: "Prezentēt mākslas darbu",
+    et: "Kunstiteose esitlemine",
+    be: "Прадстаўляць мастацкі твор",
+    ka: "ხელოვნების ნიმუშის წარდგენა",
+    kk: "Өнер туындысын таныстыру",
+    qm: "Bir sanat eserini tanıştırmaq",
+  },
   description: { methodological: "Choose an appropriate display or performance setting for an intended audience.", frontend: {
           "en": "Choose how and where to share an artwork with its intended audience.",
           "zh": "选择合适的方式和场所，向目标观众展示作品。",
@@ -31,5 +61,6 @@ export const presentAnArtwork_Skill_Data = buildSkillConfig({
           "be": "Выберыце, як і дзе прадставіць твор мэтавай аўдыторыі.",
           "ka": "აირჩიეთ, როგორ და სად გაუზიაროთ ნამუშევარი მის სამიზნე აუდიტორიას.",
           "kk": "Көрерменге сай өнер туындысын қалай және қайда ұсынатыныңызды таңдаңыз."
-    } },
+    
+      qm: "Sanat eserini közde tutulğan seyircige nasıl ve qayda paylaşacağını saylañız.",} },
 });
