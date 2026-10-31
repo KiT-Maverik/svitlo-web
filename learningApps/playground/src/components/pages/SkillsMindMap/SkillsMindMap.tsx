@@ -18,6 +18,7 @@ import {
 import type { SkillNode, SkillsManifest, MapEdge } from './skillsMindMap.utils';
 import styles from './SkillsMindMap.module.css';
 import { SkillAction, SkillLeafCard, SkillMastery } from './SkillLeafCard';
+import { useSkillsPageSettings } from './SkillsPageSettingsContext';
 
 type LoadingStatus = 'loading' | 'ready' | 'error';
 const KIND_LABELS = { skillDomain: 'Домен', skillGroup: 'Група', skill: 'Скіл' } as const;
@@ -55,6 +56,7 @@ interface OutlineProps {
   onSkillToggle: (node: SkillNode) => void;
 }
 function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, onNodeClick, onSkillToggle }: OutlineProps) {
+  const { settings } = useSkillsPageSettings();
   return (
     <ul className={styles.outlineList}>
       {nodes.map(node => {
@@ -86,8 +88,8 @@ function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, 
                   dir={language === 'ar' || language === 'ur' || language === 'he' ? 'rtl' : 'ltr'}>
                   {node.description}
                 </p>}
-                <SkillMastery skillId={node.id} compact={!skillExpanded} />
-                {skillExpanded && <SkillAction skillId={node.id} language={language} compact />}
+                {settings.showMastery && <SkillMastery skillId={node.id} compact={!skillExpanded} colored={settings.colorMastery} />}
+                {settings.showPump && skillExpanded && <SkillAction skillId={node.id} language={language} compact />}
               </div>
             )}
             {expanded && <SkillOutline nodes={node.children} collapsed={collapsed}
@@ -101,6 +103,7 @@ function SkillOutline({ nodes, collapsed, selectedId, language, expandedSkills, 
 }
 
 export function SkillsMindMap() {
+  const { locale, setLanguageCode } = useSkillsPageSettings();
   const [manifest, setManifest] = useState<SkillsManifest | null>(null);
   const [language, setLanguage] = useState<string | null>(null);
   const [domains, setDomains] = useState<SkillNode[]>([]);
@@ -124,14 +127,8 @@ export function SkillsMindMap() {
     void (async () => {
       try {
         const data = parseSkillsManifest(await readJson('/Data/Skills/index.json', controller.signal));
-        const requested = new URLSearchParams(window.location.search).get('lang') ??
-          document.documentElement.lang.split('-')[0];
-        if (!data.languages.includes(requested)) {
-          throw new Error('Мова "' + requested + '" відсутня в опублікованому каталозі Skills.');
-        }
         if (controller.signal.aborted) return;
         setManifest(data);
-        setLanguage(requested);
       } catch (cause) {
         if (!controller.signal.aborted) {
           setStatus('error');
@@ -141,6 +138,17 @@ export function SkillsMindMap() {
     })();
     return () => controller.abort();
   }, []);
+
+  useEffect(() => {
+    if (!manifest) return;
+    const code = locale.split('-')[0];
+    if (!manifest.languages.includes(code)) {
+      setError('Мова "' + code + '" відсутня в опублікованому каталозі Skills.');
+      setStatus('error');
+      return;
+    }
+    setLanguage(code);
+  }, [manifest, locale]);
 
   useEffect(() => {
     if (!manifest || !language) return;
@@ -266,10 +274,7 @@ export function SkillsMindMap() {
   };
   const onLanguageChange = (next: string) => {
     if (!manifest?.languages.includes(next)) return;
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', next);
-    window.history.replaceState(null, '', url);
-    setLanguage(next);
+    setLanguageCode(next);
   };
 
   const middle = layout.worldSize / 2;
