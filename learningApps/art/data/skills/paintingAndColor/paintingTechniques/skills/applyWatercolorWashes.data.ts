@@ -32,6 +32,7 @@ export const applyWatercolorWashes_Skill_Data = buildSkillConfig({
     be: "Наносіць акварэльныя заліўкі",
     ka: "აკვარელის ლესირების შესრულება",
     kk: "Акварель бояуымен жайма жағу",
+    qm: "Akvarel boya qatlarını sürmek",
   },
   description: {
     methodological: "Control dilution and flow to create intentionally transparent painted regions.",
@@ -64,6 +65,7 @@ export const applyWatercolorWashes_Skill_Data = buildSkillConfig({
       be: "Стварайце лёгкія празрыстыя ўчасткі, кантралюючы колькасць вады і фарбы.",
       ka: "წყლისა და საღებავის რაოდენობის კონტროლით შექმენით მსუბუქი, გამჭვირვალე ფერადი არეები.",
       kk: "Су мен бояу мөлшерін реттеп, ашық әрі мөлдір түсті аймақтар жасаңыз.",
+      qm: "Su ve boya miqdarını idare etip, yengil ve şeffaf boya alanlarını yaratın.",
     },
   },
 });
