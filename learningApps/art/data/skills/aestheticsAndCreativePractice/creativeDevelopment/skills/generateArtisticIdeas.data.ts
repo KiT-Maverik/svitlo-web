@@ -1,7 +1,37 @@
 import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 export const generateArtisticIdeas_Skill_Data = buildSkillConfig({
-  slug: "generateArtisticIdeas", id: "f3fecd9b-1db8-4fee-af67-5df3077f128d", name: { en: "Generate Artistic Ideas" },
+  slug: "generateArtisticIdeas", id: "f3fecd9b-1db8-4fee-af67-5df3077f128d", name: {
+    en: "Generate Artistic Ideas",
+    zh: "生成艺术创意",
+    hi: "कलात्मक विचार उत्पन्न करें",
+    es: "Generar ideas artísticas",
+    ar: "توليد أفكار فنية",
+    fr: "Générer des idées artistiques",
+    bn: "শৈল্পিক ধারণা তৈরি করুন",
+    pt: "Gerar ideias artísticas",
+    ur: "فنّی خیالات پیدا کریں",
+    id: "Menghasilkan Gagasan Artistik",
+    de: "Künstlerische Ideen entwickeln",
+    ja: "芸術的なアイデアを生み出す",
+    ko: "예술적 아이디어 생성하기",
+    tr: "Sanatsal Fikirler Üretmek",
+    vi: "Tạo ra ý tưởng nghệ thuật",
+    ta: "கலைக் கருத்துகளை உருவாக்குங்கள்",
+    te: "కళాత్మక ఆలోచనలను రూపొందించండి",
+    mr: "कलात्मक कल्पना निर्माण करा",
+    ms: "Menjana Idea Artistik",
+    he: "יצירת רעיונות אמנותיים",
+    pl: "Generować pomysły artystyczne",
+    uk: "Генерувати мистецькі ідеї",
+    lt: "Generuoti menines idėjas",
+    lv: "Radīt mākslinieciskas idejas",
+    et: "Kunstiliste ideede loomine",
+    be: "Ствараць мастацкія ідэі",
+    ka: "მხატვრული იდეების გენერირება",
+    kk: "Өнер идеяларын қалыптастыру",
+    qm: "Sanat fikirlerini yaratmaq",
+  },
   description: { methodological: "Develop distinct possible creative directions from a premise or material constraint.", frontend: {
           "en": "Develop several distinct artistic possibilities from one starting idea.",
           "zh": "从一个起始想法发展出几种不同的艺术可能性。",
@@ -31,5 +61,6 @@ export const generateArtisticIdeas_Skill_Data = buildSkillConfig({
           "be": "Развівайце некалькі розных мастацкіх магчымасцей на аснове адной пачатковай ідэі.",
           "ka": "განავითარეთ რამდენიმე განსხვავებული მხატვრული შესაძლებლობა ერთი საწყისი იდეიდან.",
           "kk": "Бастапқы идеядан бірнеше түрлі көркемдік мүмкіндікті дамытыңыз."
-    } },
+    
+      qm: "Bir başlangıç fikrinden bir-birinden farqlı bir qaç sanat imkânını inkişaf ettiñiz.",} },
 });
