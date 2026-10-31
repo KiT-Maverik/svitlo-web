@@ -7,6 +7,7 @@ export type Quiz_Section_Locale = {
 };
 
 export type Quiz_Question_Locale = Record<LanguageCode, string>;
+export type Quiz_Question_Entities = Record<string, Quiz_Question_Locale>;
 
 export type HowLightMoves_Quiz_Question_Data = {
   id: string;
@@ -19,5 +20,18 @@ export type HowLightMoves_Quiz_Question_Data = {
     correct: Quiz_Question_Locale;
     incorrect: readonly [Quiz_Question_Locale];
     distractors: readonly [Quiz_Question_Locale];
+  };
+};
+
+export type HowLightMoves_Named_Quiz_Question_Data = Omit<
+  HowLightMoves_Quiz_Question_Data,
+  'content' | 'explanation' | 'answers'
+> & {
+  content: Quiz_Question_Entities;
+  explanation: Quiz_Question_Entities;
+  answers: {
+    correct: Quiz_Question_Entities;
+    incorrect: Quiz_Question_Entities;
+    distractors: Quiz_Question_Entities;
   };
 };
