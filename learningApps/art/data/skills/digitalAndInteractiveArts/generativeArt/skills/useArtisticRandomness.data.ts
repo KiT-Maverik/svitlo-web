@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const useArtisticRandomness_Skill_Data = buildSkillConfig({
   slug: "useArtisticRandomness",
   id: "131ac879-9190-434a-893a-8990e5552607",
-  name: { en: "Use Artistic Randomness" },
+  name: {
+    en: "Use Artistic Randomness",
+    zh: "运用艺术随机性",
+    hi: "कलात्मक यादृच्छिकता का उपयोग करें",
+    es: "Usar el azar artístico",
+    ar: "استخدام العشوائية الفنية",
+    fr: "Utiliser le hasard artistique",
+    bn: "শৈল্পিক দৈবতা ব্যবহার করুন",
+    pt: "Usar o acaso artístico",
+    ur: "فنّی اتفاقیت استعمال کریں",
+    id: "Menggunakan Keacakan Artistik",
+    de: "Künstlerischen Zufall einsetzen",
+    ja: "芸術的な偶然性を活用する",
+    ko: "예술적 무작위성 활용하기",
+    tr: "Sanatsal Rastlantısallığı Kullanmak",
+    vi: "Sử dụng tính ngẫu nhiên nghệ thuật",
+    ta: "கலைநயமான தற்செயல்தன்மையைப் பயன்படுத்துங்கள்",
+    te: "కళాత్మక యాదృచ్ఛికతను ఉపయోగించండి",
+    mr: "कलात्मक यादृच्छिकता वापरा",
+    ms: "Menggunakan Kerawakan Artistik",
+    he: "שימוש באקראיות אמנותית",
+    pl: "Wykorzystywać artystyczny przypadek",
+    uk: "Використовувати мистецьку випадковість",
+    lt: "Naudoti meninį atsitiktinumą",
+    lv: "Izmantot māksliniecisko nejaušību",
+    et: "Kunstilise juhuslikkuse kasutamine",
+    be: "Выкарыстоўваць мастацкую выпадковасць",
+    ka: "მხატვრული შემთხვევითობის გამოყენება",
+    kk: "Көркем кездейсоқтықты пайдалану",
+    qm: "Sanat tesadüfini qullanmaq",
+  },
   description: {
     methodological: "Control ranges and distributions to produce bounded and purposeful variation.",
     frontend: {
@@ -35,6 +65,7 @@ export const useArtisticRandomness_Skill_Data = buildSkillConfig({
           "be": "Выкарыстоўвайце кантраляваную выпадковасць, каб ствараць нечаканыя варыяцыі ў межах мастацкай задумы.",
           "ka": "გამოიყენეთ კონტროლირებადი შემთხვევითობა მხატვრული გეგმის ფარგლებში მოულოდნელი ვარიაციების შესაქმნელად.",
           "kk": "Өнерлік жоспарыңыз аясында күтпеген өзгерістер жасау үшін басқарылатын кездейсоқтықты пайдаланыңыз。"
-    },
+    
+      qm: "Tesadüfniñ sanat eserine qanday çeşitlik ve keşif ketirgenini qullanıñız.",},
   },
 });
