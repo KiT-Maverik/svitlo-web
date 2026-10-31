@@ -10,13 +10,13 @@ Domains: 2
 
 Groups: 4
 
-Skills: 12
+Skills: 16
 
 ## DOMAINS
 
 ### Algebra
 
-Groups: 2 · Skills: 4
+Groups: 2 · Skills: 8
 
 [algebra.data.ts](../../../data/skills/algebra/algebra.data.ts)
 
@@ -52,7 +52,7 @@ Skills: 2
 
 #### Unknown values
 
-Skills: 2
+Skills: 6
 
 [unknowns.data.ts](../../../data/skills/algebra/unknowns/unknowns.data.ts)
 
@@ -75,6 +75,38 @@ Skills: 2
 **Methodological description (English):** For exact division, the dividend equals the product of divisor and quotient. Finding an unknown dividend uses the inverse relation with multiplication and is checked against the original equality.
 
 **User-friendly description (en):** In an exact division, you can find the missing dividend by multiplying the divisor by the quotient.
+
+##### Finding an unknown divisor
+
+[unknownDivisor.data.ts](../../../data/skills/algebra/unknowns/skills/unknownDivisor.data.ts)
+
+**Methodological description (English):** Given a nonzero dividend and nonzero quotient, determine the divisor by dividing the dividend by the quotient in the relevant number domain. Check that the divisor is nonzero and the original division holds.
+
+**User-friendly description (en):** When the dividend and a nonzero quotient are known, you can find the missing divisor and check it is not zero.
+
+##### Finding an unknown factor
+
+[unknownFactor.data.ts](../../../data/skills/algebra/unknowns/skills/unknownFactor.data.ts)
+
+**Methodological description (English):** Given a product and a known nonzero factor, determine the missing factor by division within the permitted number domain. Verify by reconstructing the original product.
+
+**User-friendly description (en):** When a product and a nonzero factor are known, you can divide to find the other factor and check by multiplying.
+
+##### Finding an unknown minuend
+
+[unknownMinuend.data.ts](../../../data/skills/algebra/unknowns/skills/unknownMinuend.data.ts)
+
+**Methodological description (English):** When the minuend is unknown, reconstruct it by adding the subtrahend to the given difference. Verification must satisfy the original equation; this differs from finding an unknown subtrahend.
+
+**User-friendly description (en):** You can find the missing starting number in a subtraction by adding the amount subtracted to the difference.
+
+##### Finding an unknown subtrahend
+
+[unknownSubtrahend.data.ts](../../../data/skills/algebra/unknowns/skills/unknownSubtrahend.data.ts)
+
+**Methodological description (English):** Given the minuend and difference, find the unknown subtrahend by subtracting the difference from the minuend. Component positions matter: the inverse formulas for unknown minuend and unknown subtrahend are not interchangeable.
+
+**User-friendly description (en):** You can find the missing amount subtracted by taking the difference away from the starting number.
 
 ### Arithmetic
 

@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { unknownAddend_Skill_Data, unknownDividend_Skill_Data } from './skills';
+import { unknownAddend_Skill_Data, unknownMinuend_Skill_Data, unknownSubtrahend_Skill_Data, unknownFactor_Skill_Data, unknownDividend_Skill_Data, unknownDivisor_Skill_Data } from './skills';
 
 export const unknowns_SkillGroup_Data = buildSkillGroupConfig({
   id: '5209c6a1-5197-40eb-a562-b2f9162b887d',
@@ -36,7 +36,11 @@ export const unknowns_SkillGroup_Data = buildSkillGroupConfig({
   },
   skillIds: {
     unknownAddend: unknownAddend_Skill_Data.id,
+    unknownMinuend: unknownMinuend_Skill_Data.id,
+    unknownSubtrahend: unknownSubtrahend_Skill_Data.id,
+    unknownFactor: unknownFactor_Skill_Data.id,
     unknownDividend: unknownDividend_Skill_Data.id,
+    unknownDivisor: unknownDivisor_Skill_Data.id,
   },
   description: {
     methodological: "Relationships between components and results of the four arithmetic operations that allow an unknown quantity to be found and verified.",
