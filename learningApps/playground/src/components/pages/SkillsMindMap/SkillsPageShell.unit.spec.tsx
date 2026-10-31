@@ -53,5 +53,11 @@ describe('Skills page in shared LearningLayout', () => {
     expect(within(card).getByRole('progressbar')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: aria.actions.closeSettingsPanel }));
     expect(screen.getByRole('button', { name: aria.actions.openSettings })).toHaveAttribute('aria-expanded', 'false');
+
+    fireEvent.click(screen.getByRole('button', { name: aria.actions.openSettings }));
+    const expandedSidebar = screen.getByRole('complementary', { name: aria.navigation.settings });
+    fireEvent.click(within(expandedSidebar).getByRole('button', { name: 'Вмістити в екран' }));
+    expect(screen.getByRole('button', { name: aria.actions.openSettings })).toHaveAttribute('aria-expanded', 'false');
+    expect(screen.getByTestId('skills-map-world')).toBeInTheDocument();
   });
 });
