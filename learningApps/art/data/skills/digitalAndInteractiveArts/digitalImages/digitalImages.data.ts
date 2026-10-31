@@ -72,7 +72,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
           "et": "Loo digipilte pikslite, kujundite, kihtide ja valikuliste muudatuste abil.",
           "be": "Стварайце лічбавыя выявы з дапамогай пікселяў, фігур, слаёў і выбарачных змен.",
           "ka": "შექმენით ციფრული გამოსახულებები პიქსელების, ფორმების, ფენებისა და შერჩევითი ცვლილებების გამოყენებით.",
-          "kk": "Пиксельдер, пішіндер, қабаттар және ішінара өңдеу арқылы цифрлық кескіндер жасаңыз."
+          "kk": "Пиксельдер, пішіндер, қабаттар және ішінара өңдеу арқылы цифрлық кескіндер жасаңыз.",
     
       qm: "Pikseller, şekiller, qatlar ve saylanğan deñiştirmeler ile raqemiy suretler yaratmaq.",},
   },
