@@ -36,7 +36,7 @@ export const expressionAndMeaning_SkillGroup_Data = buildSkillGroupConfig({
   },
   skills: { analyzeArtisticMetaphor: analyzeArtisticMetaphor_Skill_Data, analyzeEmotionalExpression: analyzeEmotionalExpression_Skill_Data, interpretArtisticSymbols: interpretArtisticSymbols_Skill_Data, relateArtisticFormToContent: relateArtisticFormToContent_Skill_Data },
   description: { methodological: "Symbolism and emotional character require interpretations anchored in artistic choices and context.", frontend: {
-          "en": "Explore how art communicates meaning through metaphor, emotion and form.",
+          "en": "Explore how symbols, emotions and formal choices communicate artistic meaning.",
           "zh": "探索艺术如何通过隐喻、情感和形式传达意义。",
           "hi": "जानें कि कला रूपक, भावना और रूप के माध्यम से अर्थ कैसे व्यक्त करती है।",
           "es": "Explora cómo el arte comunica significado mediante metáforas, emociones y formas.",
