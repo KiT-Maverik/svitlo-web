@@ -50,13 +50,13 @@ export const fashionAndApparelDesign_SkillGroup_Data = buildSkillGroupConfig({
     frontend: {
       en: "Explore how garment shape, fabric and detail turn a fashion idea into clothing.",
     
-      zh: "Исследуйте, как форма одежды, ткань и детали превращают модную идею в одежду.",
-      hi: "探索服装形状、面料和细节如何将时尚构想转化为衣物。",
+      zh: "探索服装的廓形、面料和细节如何将时尚创意变成实际服装。",
+      hi: "जानें कि परिधान का आकार, कपड़ा और बारीकियाँ फैशन के विचार को पहनने योग्य वस्त्र में कैसे बदलती हैं।",
       es: "Explora cómo la forma, el tejido y los detalles convierten una idea de moda en una prenda.",
       ar: "استكشف كيف يحوّل شكل الملابس والقماش والتفاصيل فكرة الأزياء إلى قطعة ملابس.",
       fr: "Découvrez comment la forme, le tissu et les détails transforment une idée de mode en vêtement.",
       bn: "পোশাকের আকৃতি, কাপড় ও খুঁটিনাটি কীভাবে ফ্যাশনের ধারণাকে পোশাকে রূপ দেয় তা জানুন।",
-      pt: "Explore como a forma, o tecido e os detalhes transformam uma ideia de moda numa peça de vestuário.",
+      pt: "Explore como o formato, o tecido e os detalhes transformam uma ideia de moda em uma peça de roupa.",
       ur: "دریافت کریں کہ لباس کی شکل، کپڑا اور تفصیلات فیشن کے خیال کو ملبوسات میں کیسے بدلتے ہیں۔",
       id: "Jelajahi bagaimana bentuk pakaian, kain, dan detail mengubah ide fesyen menjadi busana.",
       de: "Erkunde, wie Schnittform, Stoff und Details eine Modeidee in Kleidung verwandeln.",
