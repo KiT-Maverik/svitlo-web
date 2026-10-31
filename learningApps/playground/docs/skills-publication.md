@@ -2,7 +2,7 @@
 
 The authoring source remains `learningApps/playground/data/skills/**/*.data.ts`.
 The application does not import authoring modules at runtime. Publication follows
-[Generator Requirements](../../../../studio/generator-requirements.md).
+[Generator Requirements](../../../studio/generator-requirements.md).
 
 ## Format
 

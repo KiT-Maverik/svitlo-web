@@ -4,7 +4,6 @@ import { SkillsMindMap } from './SkillsMindMap';
 import { SkillsPageSettingsProvider } from './SkillsPageSettingsContext';
 import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
-const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
 type PointerTest = {
   id: number; x: number; y: number;
   pointerType?: 'touch' | 'mouse';

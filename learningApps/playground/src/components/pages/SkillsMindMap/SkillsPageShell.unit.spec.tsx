@@ -6,7 +6,6 @@ import { SkillsPageShell } from './SkillsPageShell';
 import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 const theme = createTheme({ cssVariables: true, colorSchemes: { light: true, dark: true } });
-const uuid = (n: number) => '00000000-0000-4000-8000-' + String(n).padStart(12, '0');
 describe('Skills page in shared LearningLayout', () => {
   const originalFetch = globalThis.fetch;
   beforeEach(() => {

@@ -144,6 +144,6 @@ describe('SkillsMindMap', () => {
     render(<SkillsPageSettingsProvider><SkillsPagePreferences /><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
     expect(await screen.findByRole('alert')).toHaveTextContent('відсутня');
     expect(globalThis.fetch).not.toHaveBeenCalledWith(
-      '/Data/Skills/testColors/ru.json', expect.anything());
+      '/data/skills/testColors/ru.json', expect.anything());
   });
 });

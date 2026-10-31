@@ -3,8 +3,8 @@
  * Publish one-language-at-a-time Skill Data JSON from canonical TypeScript configs.
  *
  * Usage:
- *   node scripts/publish-skills-data.mjs --package learningApps/playground --write
- *   node scripts/publish-skills-data.mjs --package learningApps/playground --check
+ *   node scripts/generators/data/publish-skills-data.mjs --package learningApps/playground --write
+ *   node scripts/generators/data/publish-skills-data.mjs --package learningApps/playground --check
  *
  * This deliberately parses authoring data without importing/evaluating textbook code.
  * Only the dedicated public/data/skills directory is replaced during --write.
