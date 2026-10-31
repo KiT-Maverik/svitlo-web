@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "languages": [
+    "en",
+    "zh",
+    "hi",
+    "es",
+    "ar",
+    "fr",
+    "bn",
+    "pt",
+    "ur",
+    "id",
+    "de",
+    "ja",
+    "ko",
+    "tr",
+    "vi",
+    "ta",
+    "te",
+    "mr",
+    "ms",
+    "he",
+    "pl",
+    "uk",
+    "lt",
+    "lv",
+    "et",
+    "be",
+    "ka",
+    "kk"
+  ],
+  "domains": [
+    "testColors",
+    "testShapes"
+  ]
+}
