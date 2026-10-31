@@ -60,7 +60,7 @@ export const relateArtisticFormToContent_Skill_Data = buildSkillConfig({
           "et": "Vaata, kuidas teose valmistamise viis muudab selle edastatavat tähendust.",
           "be": "Паглядзіце, як спосаб стварэння змяняе сэнс, які перадае твор.",
           "ka": "ნახეთ, როგორ ცვლის შექმნის გზა იმ მნიშვნელობას, რომელსაც ნამუშევარი გადმოსცემს.",
-          "kk": "Туындының жасалу тәсілі жеткізілетін мағынаны қалай өзгертетінін байқаңыз."
+          "kk": "Туындының жасалу тәсілі жеткізілетін мағынаны қалай өзгертетінін байқаңыз.",
     
       qm: "Bir şeyniñ nasıl yapılğanınıñ onıñ bildirdigi mananı nasıl deñiştirgenini körüñiz.",} },
 });
