@@ -81,15 +81,26 @@ function parseNode(value: unknown, kind: SkillNodeKind, location: string): Skill
   const description = value.description === undefined ? undefined : nonempty(value.description, location + '.description');
   let children: SkillNode[] = [];
   if (kind === 'skillDomain') {
-    const grouped = Array.isArray(value.groups);
-    const direct = Array.isArray(value.skills);
-    if (grouped === direct) throw new Error('Домен повинен мати групи або прямі скіли: ' + slug);
-    const key = grouped ? 'groups' : 'skills';
-    const nestedKind = grouped ? 'skillGroup' : 'skill';
-    const items = value[key] as unknown[];
-    if (!items.length) throw new Error('Порожній домен: ' + slug);
-    children = items.map((item, index) => parseNode(item, nestedKind, location + '.' + key + '.' + index));
+    // Canonical Domain entities can contain Groups and ungrouped direct Skills
+    // simultaneously. The published resource uses arrays, never ID references.
+    if (value.groups !== undefined && !Array.isArray(value.groups)) {
+      throw new Error('Некоректні групи домена: ' + slug);
+    }
+    if (value.skills !== undefined && !Array.isArray(value.skills)) {
+      throw new Error('Некоректні прямі скіли домена: ' + slug);
+    }
+    if (value.groupIds !== undefined || value.skillIds !== undefined) {
+      throw new Error('Застарілі ID-посилання домена: ' + slug);
+    }
+    const groups = (value.groups ?? []) as unknown[];
+    const skills = (value.skills ?? []) as unknown[];
+    if (groups.length + skills.length === 0) throw new Error('Порожній домен: ' + slug);
+    children = [
+      ...groups.map((item, index) => parseNode(item, 'skillGroup', location + '.groups.' + index)),
+      ...skills.map((item, index) => parseNode(item, 'skill', location + '.skills.' + index)),
+    ];
   } else if (kind === 'skillGroup') {
+    if (value.skillIds !== undefined) throw new Error('Застарілі ID-посилання групи: ' + slug);
     if (!Array.isArray(value.skills) || !value.skills.length) throw new Error('Порожня група: ' + slug);
     children = value.skills.map((item, index) => parseNode(item, 'skill', location + '.skills.' + index));
   } else if (value.groups !== undefined || value.skills !== undefined) {
