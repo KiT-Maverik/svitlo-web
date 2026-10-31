@@ -30,6 +30,6 @@ export const interpretArtisticSymbols_Skill_Data = buildSkillConfig({
           "et": "Otsi vihjeid, mis aitavad selgitada kunstilise sümboli võimalikku tähendust.",
           "be": "Шукайце падказкі, якія дапамагаюць растлумачыць магчымы сэнс мастацкага сімвала.",
           "ka": "მოძებნეთ მინიშნებები, რომლებიც მხატვრული სიმბოლოს შესაძლო მნიშვნელობის ახსნაში დაგეხმარებათ.",
-          "kk": "Keressen olyan támpontokat, amelyek segítenek megmagyarázni egy művészi szimbólum lehetséges jelentését。"
+          "kk": "Көркемдік нышанның ықтимал мағынасын түсіндіруге көмектесетін белгілерді іздеңіз."
     } },
 });
