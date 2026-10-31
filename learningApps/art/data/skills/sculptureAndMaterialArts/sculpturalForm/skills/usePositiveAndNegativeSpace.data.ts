@@ -32,6 +32,7 @@ export const usePositiveAndNegativeSpace_Skill_Data = buildSkillConfig({
     be: "Выкарыстоўваць станоўчую і адмоўную прастору",
     ka: "დადებითი და უარყოფითი სივრცის გამოყენება",
     kk: "Оң және теріс кеңістікті пайдалану",
+      qm: "Musbet ve menfiy boşluqtan faydalanmaq",
   },
   description: {
     methodological: "Coordinate solids with surrounding or enclosed voids as active sculptural relationships.",
@@ -64,6 +65,7 @@ export const usePositiveAndNegativeSpace_Skill_Data = buildSkillConfig({
       be: "Выкарыстоўвайце аб’ёмныя формы і прастору паміж імі як часткі скульптуры.",
       ka: "გამოიყენეთ მყარი ფორმები და მათ შორის არსებული სივრცეები ქანდაკების ნაწილებად.",
       kk: "Тұтас пішіндер мен олардың арасындағы кеңістікті мүсіннің бөлігі ретінде пайдаланыңыз.",
+          qm: "Heykelniñ parçaları olaraq qatı şekillerden ve olarnıñ arasındaki boşluqlardan faydalaniñız.",
     },
   },
 });
