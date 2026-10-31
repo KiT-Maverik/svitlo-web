@@ -5,6 +5,9 @@ import { models_SkillGroup_Data } from './models/models.data';
 
 import { planning_SkillGroup_Data } from './planning/planning.data';
 
+import { parts_SkillGroup_Data } from './parts/parts.data';
+import { comparisons_SkillGroup_Data } from './comparisons/comparisons.data';
+
 export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
   id: '695fd427-aaea-4cbb-bd07-2d1702f36a17',
   name: {
@@ -38,6 +41,8 @@ export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
     uk: "Розв’язування задач",
   },
   groupIds: {
+    parts: parts_SkillGroup_Data.id,
+    comparisons: comparisons_SkillGroup_Data.id,
     planning: planning_SkillGroup_Data.id,
     conditions: conditions_SkillGroup_Data.id,
     models: models_SkillGroup_Data.id,
