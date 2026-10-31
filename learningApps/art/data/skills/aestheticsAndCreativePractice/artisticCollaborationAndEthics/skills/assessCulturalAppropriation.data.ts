@@ -30,6 +30,6 @@ export const assessCulturalAppropriation_Skill_Data = buildSkillConfig({
           "et": "Arvesta teiste traditsioonide kasutamisel kultuurilise tähenduse, loa ja võimuerinevustega.",
           "be": "Выкарыстоўваючы чужыя традыцыі, улічвайце культурнае значэнне, дазвол і няроўнасць улады.",
           "ka": "სხვების ტრადიციების გამოყენებისას გაითვალისწინეთ კულტურული მნიშვნელობა, ნებართვა და ძალაუფლების უთანასწორობა.",
-          "kk": "Mások hagyományainak felhasználásakor vegye figyelembe a kulturális jelentést, az engedélyt és a hatalmi egyenlőtlenségeket。"
+          "kk": "Өзге мәдени дәстүрлерді қолданғанда олардың мәнін, рұқсатты және билік теңсіздігін ескеріңіз."
     } },
 });
