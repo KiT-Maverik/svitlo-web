@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readHalfQuarter_Skill_Data = buildSkillConfig({
+  slug: 'readHalfQuarter',
   id: '1b6415de-16f7-4e65-9f82-871d0bdb8b2d',
   name: {
     en: "Reading half-hours and quarter-hours",
@@ -34,7 +35,7 @@ export const readHalfQuarter_Skill_Data = buildSkillConfig({
     uk: "Зчитування половин і чвертей години",
   },
   description: { methodological: "Half an hour is 30 minutes and a quarter of an hour is 15 minutes. On an analog clock, the minute hand indicates the fraction of the hour while the hour hand advances toward the next hour.",
-    fe: {
+    frontend: {
       en: "You can read half-hours and quarter-hours on a clock, knowing that they mean 30 and 15 minutes and that the hour hand moves between numbers.",
       zh: "你能读出时钟上的半小时和一刻钟，知道它们分别是30分钟和15分钟，时针也会在数字之间移动。",
       hi: "आप घड़ी पर आधे और चौथाई घंटे का समय पढ़ सकते हैं, जानते हुए कि वे 30 और 15 मिनट हैं और घंटे की सुई भी आगे बढ़ती है।",

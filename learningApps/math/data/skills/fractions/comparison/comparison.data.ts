@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { compareSameNumerator_Skill_Data, compareUnit_Skill_Data, sameDenominatorModel_Skill_Data } from './skills';
 
 export const comparison_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'comparison',
   id: 'c1e510c8-1bd0-475a-a977-e2aac0b0bed7',
   name: {
     en: "Comparing fractions",
@@ -34,14 +35,14 @@ export const comparison_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Porównywanie ułamków",
     uk: "Порівняння дробів",
   },
-  skillIds: {
-    compareSameNumerator: compareSameNumerator_Skill_Data.id,
-    compareUnit: compareUnit_Skill_Data.id,
-    sameDenominatorModel: sameDenominatorModel_Skill_Data.id,
+  skills: {
+    compareSameNumerator: compareSameNumerator_Skill_Data,
+    compareUnit: compareUnit_Skill_Data,
+    sameDenominatorModel: sameDenominatorModel_Skill_Data,
   },
   description: {
     methodological: "Comparing the magnitudes of fractional parts relative to the same whole while holding either the numerator or denominator fixed.",
-    fe: {
+    frontend: {
       en: "Compare fractions of the same whole by looking at the size of equal parts or the number of parts taken.",
       zh: "比较同一整体的分数，可以看每份有多大，或取了多少份。",
       hi: "एक ही पूरे के भिन्नों की तुलना बराबर भागों के आकार या लिए गए भागों की संख्या से करें।",

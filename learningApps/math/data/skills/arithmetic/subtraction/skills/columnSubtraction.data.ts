@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const columnSubtraction_Skill_Data = buildSkillConfig({
+  slug: 'columnSubtraction',
   id: '6d74f20c-3203-4bcc-bad2-f356b480c6c0',
   name: {
     lt: "Atimtis — stulpeliu",
@@ -35,7 +36,7 @@ export const columnSubtraction_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Written column subtraction aligns like place values and performs needed exchanges before subtracting corresponding digits. Each exchange must correctly affect adjacent places in the decimal system.",
-    fe: {
+    frontend: {
       en: "You can subtract numbers in columns by aligning place values and regrouping when a column does not have enough.",
       zh: "你能按数位对齐进行竖式减法，并在某一位不够减时进行退位换算。",
       hi: "तुम स्थान-मूल्यों को एक सीध में रखकर स्तंभ विधि से घटा सकते हो और किसी स्थान पर कम अंक होने पर पुनर्गठन कर सकते हो।",

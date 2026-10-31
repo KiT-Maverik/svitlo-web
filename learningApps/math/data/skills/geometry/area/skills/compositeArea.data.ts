@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compositeArea_Skill_Data = buildSkillConfig({
+  slug: 'compositeArea',
   id: '8dedc81b-faae-489e-9d3c-14331920224e',
   name: {
     en: "Finding the area of a composite rectilinear figure",
@@ -35,7 +36,7 @@ export const compositeArea_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Area is additive for nonoverlapping regions: a compound figure may be partitioned into rectangles whose areas sum to the original. The partition must cover the figure without gaps or double-counted overlaps.",
-    fe: {
+    frontend: {
       en: "Split a shape made of rectangles into nonoverlapping pieces, find each area, and add them without counting space twice.",
       zh: "把由长方形组成的图形拆成不重叠的部分，求各部分面积后相加，不重复计算。",
       hi: "आयतों से बनी आकृति को बिना दोहराव के बाँटें और हर हिस्से का क्षेत्रफल जोड़ें।",

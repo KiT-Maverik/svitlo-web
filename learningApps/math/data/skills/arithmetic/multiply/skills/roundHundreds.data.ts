@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const roundHundreds_Skill_Data = buildSkillConfig({
+  slug: 'roundHundreds',
   id: '650e7e05-3e7e-4e80-8f0e-e23df595ed22',
   name: {
     lt: "Daugyba — pilni šimtai",
@@ -35,7 +36,7 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A multiple of one hundred represents a count of complete hundreds. Multiplication by a one-digit factor changes that count while respecting the factor of one hundred, not merely manipulating digits.",
-    fe: {
+    frontend: {
       en: "You can multiply whole hundreds by a one-digit number by working with the number of hundreds.",
       zh: "你能把整百数看成若干个百，再用一位数与百的个数相乘。",
       hi: "तुम पूरी सैकड़ों की संख्या पर काम करके उनका एक अंक की संख्या से गुणा कर सकते हो।",

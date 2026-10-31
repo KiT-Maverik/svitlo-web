@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const nonUnitModel_Skill_Data = buildSkillConfig({
+  slug: 'nonUnitModel',
   id: 'ee8b4be0-4de7-4f66-9a05-7eca8f524caa',
   name: {
     en: "Modeling fractions with multiple equal parts",
@@ -35,7 +36,7 @@ export const nonUnitModel_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The fraction a/b combines a selected count a of unit parts with their size 1/b for nonzero b. All parts refer to the same whole, and the numerator may equal or exceed the denominator.",
-    fe: {
+    frontend: {
       en: "Combine several equal parts of the same whole to show a fraction such as 3/4. The number of parts can reach or exceed one whole.",
       zh: "把同一整体的几个等份合在一起表示3/4这样的分数；所取部分也可能达到或超过一个整体。",
       hi: "एक ही पूरे के कई बराबर भाग मिलाकर 3/4 जैसा भिन्न दिखाएँ। हिस्से मिलकर एक पूरा या उससे अधिक भी हो सकते हैं।",

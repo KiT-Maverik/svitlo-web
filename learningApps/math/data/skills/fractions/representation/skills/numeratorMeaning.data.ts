@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const numeratorMeaning_Skill_Data = buildSkillConfig({
+  slug: 'numeratorMeaning',
   id: 'a0eac2ec-b5d3-4042-8ebc-f8fb28089999',
   name: {
     en: "Explaining the numerator of a fraction",
@@ -35,7 +36,7 @@ export const numeratorMeaning_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The numerator specifies the count of unit parts determined by the denominator. With a fixed positive denominator, increasing a nonnegative numerator increases the fraction, possibly above one.",
-    fe: {
+    frontend: {
       en: "The top number tells how many equal parts are counted. With the same bottom number, more parts mean a greater fraction.",
       zh: "分子表示取了多少个等份。分母相同时，取的份数越多，分数越大。",
       hi: "ऊपर का अंश बताता है कि कितने बराबर भाग लिए गए। हर समान हो तो अधिक भाग वाला भिन्न बड़ा है।",

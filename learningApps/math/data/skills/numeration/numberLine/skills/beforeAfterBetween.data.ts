@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const beforeAfterBetween_Skill_Data = buildSkillConfig({
+  slug: 'beforeAfterBetween',
   id: 'f1f3fcb5-c6ce-4542-817a-a9eca6b79453',
   name: {
     lt: "Ankstesni, tolesni ir tarpiniai skaičiai",
@@ -35,7 +36,7 @@ export const beforeAfterBetween_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Where predecessor and successor exist in the relevant set, they differ from a natural number by one. Intermediate numbers are defined by numerical order and can be represented on a number line.",
-    fe: {
+    frontend: {
       en: "Find the number immediately before or after another number, or numbers that lie between two given numbers.",
       zh: "找到一个数前面紧挨着或后面紧挨着的数，以及两个数之间的数。",
       hi: "किसी संख्या के ठीक पहले या बाद की संख्या और दो संख्याओं के बीच की संख्याएँ खोजें।",

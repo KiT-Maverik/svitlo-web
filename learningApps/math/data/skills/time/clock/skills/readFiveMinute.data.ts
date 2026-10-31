@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readFiveMinute_Skill_Data = buildSkillConfig({
+  slug: 'readFiveMinute',
   id: '21d2c77f-39e4-4c54-98fc-b54a8e1568fe',
   name: {
     en: "Reading time to five minutes",
@@ -34,7 +35,7 @@ export const readFiveMinute_Skill_Data = buildSkillConfig({
     uk: "Зчитування часу з точністю до п’яти хвилин",
   },
   description: { methodological: "Each numbered hour interval on a standard twelve-hour clock face represents five minutes. Reading the time combines the minute scale with the hour hand's position, without confusing an hour numeral with a minute count.",
-    fe: {
+    frontend: {
       en: "You can tell time in five-minute steps on a clock by counting the minute-hand marks and checking the hour hand.",
       zh: "你能根据分针所指的刻度，每次以五分钟为单位读取时间，同时检查时针的位置。",
       hi: "आप मिनट की सुई के निशान गिनकर और घंटे की सुई देखकर पाँच-पाँच मिनट के अंतर पर समय बता सकते हैं।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const doubleTwice_Skill_Data = buildSkillConfig({
+  slug: 'doubleTwice',
   id: 'dcaa33ea-4bd8-42d5-8b22-27dd75d13c53',
   name: {
     lt: "Daugyba — dvigubinimas du kartus",
@@ -35,7 +36,7 @@ export const doubleTwice_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Four equal groups can be obtained by doubling and then doubling again. This is a calculation strategy for multiplication by four, not necessarily a separate general multiplication concept.",
-    fe: {
+    frontend: {
       en: "You can multiply by four by doubling a number, then doubling the result again.",
       zh: "你能先把一个数翻倍，再把结果翻倍，算出乘以四的结果。",
       hi: "तुम किसी संख्या को दोगुना करके फिर उसका परिणाम दोगुना कर चार से गुणा कर सकते हो।",

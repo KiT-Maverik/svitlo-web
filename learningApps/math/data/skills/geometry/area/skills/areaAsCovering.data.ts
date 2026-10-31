@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const areaAsCovering_Skill_Data = buildSkillConfig({
+  slug: 'areaAsCovering',
   id: '6b0d5eb1-8d6f-448d-b1db-051779916e97',
   name: {
     en: "Understanding area as coverage by unit squares",
@@ -35,7 +36,7 @@ export const areaAsCovering_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Area measures the size of a plane region in square units; covering it with identical squares without gaps or overlap yields a numerical measure. Equal area after changing shape does not imply equal perimeter.",
-    fe: {
+    frontend: {
       en: "Area tells how much flat space a shape covers. Cover it with equal unit squares without gaps or overlaps.",
       zh: "面积表示一个图形覆盖了多少平面。用相同大小的单位正方形无缝且不重叠地覆盖它。",
       hi: "क्षेत्रफल बताता है कि आकृति कितनी सपाट जगह घेरती है। समान वर्गों से बिना खाली जगह या दोहराव के ढकें।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const regrouping_Skill_Data = buildSkillConfig({
+  slug: 'regrouping',
   id: '5ef6de35-c2d8-4073-98d8-d8779eaa7875',
   name: {
     en: "Subtraction with regrouping",
@@ -35,7 +36,7 @@ export const regrouping_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Subtraction with place-value regrouping exchanges a higher-place unit for ten lower-place units when needed, including exchanges across a zero. The same invariant holds for two-digit, three-digit and larger minuends: regrouping changes representation without changing value.",
-    fe: {
+    frontend: {
       en: "You can subtract numbers by exchanging one ten for ten ones, or one hundred for ten tens, when there are not enough units in a place.",
       zh: "减法中，当某一数位不够减时，你能把一个十换成十个一，或把一个百换成十个十。",
       hi: "घटाते समय जब किसी स्थान पर पर्याप्त अंक न हों, तो तुम एक दहाई को दस इकाइयों में या एक सैकड़े को दस दहाइयों में बदल सकते हो।",

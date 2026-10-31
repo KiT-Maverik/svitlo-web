@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { addLikeDenominators_Skill_Data, subtractLikeDenominators_Skill_Data } from './skills';
 
 export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'arithmetic',
   id: 'dc20987a-2239-43c6-9e2c-e14d6baeda8b',
   name: {
     en: "Operations with fractions",
@@ -34,13 +35,13 @@ export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Działania na ułamkach",
     uk: "Обчислення з дробами",
   },
-  skillIds: {
-    addLikeDenominators: addLikeDenominators_Skill_Data.id,
-    subtractLikeDenominators: subtractLikeDenominators_Skill_Data.id,
+  skills: {
+    addLikeDenominators: addLikeDenominators_Skill_Data,
+    subtractLikeDenominators: subtractLikeDenominators_Skill_Data,
   },
   description: {
     methodological: "Changing the number of equal parts of the same whole through addition or subtraction with a common denominator.",
-    fe: {
+    frontend: {
       en: "Add or subtract fractions made of the same-sized parts of one whole, keeping the denominator unchanged.",
       zh: "同一整体中每份大小相同的分数可以相加或相减，分母不变。",
       hi: "एक ही पूरे के बराबर आकार के भागों वाले भिन्नों को जोड़ें या घटाएँ, हर वही रखें।",

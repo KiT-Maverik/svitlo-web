@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
+  slug: 'subtractLikeDenominators',
   id: '80d0e1fc-eda0-4b6f-8aad-a27971ba7650',
   name: {
     en: "Subtracting fractions with the same denominator within one whole",
@@ -35,7 +36,7 @@ export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Subtracting like-denominator fractions removes unit parts without changing their size: a/b - c/b = (a-c)/b. The allowable range of numerators depends on the relevant number domain.",
-    fe: {
+    frontend: {
       en: "Subtract fractions with the same bottom number by subtracting their top numbers. You remove parts without changing their size.",
       zh: "分母相同的分数相减，只把分子相减。去掉的是一些份数，每份的大小不变。",
       hi: "समान हर वाले भिन्न घटाने के लिए अंश घटाएँ। भाग कम होते हैं, उनका आकार नहीं बदलता।",

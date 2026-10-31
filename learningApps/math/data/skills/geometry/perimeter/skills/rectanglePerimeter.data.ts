@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const rectanglePerimeter_Skill_Data = buildSkillConfig({
+  slug: 'rectanglePerimeter',
   id: 'bd8c28e8-38f7-4a07-a26a-1bec77f0d53c',
   name: {
     en: "Calculating the perimeter of a rectangle",
@@ -35,7 +36,7 @@ export const rectanglePerimeter_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Opposite sides of a rectangle are equal, so a rectangle with side lengths a and b has perimeter P = 2(a+b). This abbreviates the sum of four side lengths, not the area.",
-    fe: {
+    frontend: {
       en: "Find a rectangle’s perimeter by adding all four sides or doubling the sum of its length and width.",
       zh: "把长方形的四条边相加，或把长与宽之和乘以2，求出周长。",
       hi: "आयत का परिमाप चार भुजाएँ जोड़कर या लंबाई और चौड़ाई का योग दोगुना करके निकालें।",

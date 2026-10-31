@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const order1000_Skill_Data = buildSkillConfig({
+  slug: 'order1000',
   id: 'd5a5fa8a-d208-4fc7-94c9-1ccc91caf6ce',
   name: {
     lt: "Triženklių skaičių lyginimas ir rikiavimas",
@@ -35,7 +36,7 @@ export const order1000_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Compare three-digit decimal numerals from hundreds through tens to ones; the first unequal place determines their order. Lower-place zeros cannot outweigh a larger higher-place digit.",
-    fe: {
+    frontend: {
       en: "Compare three-digit numbers by hundreds first, then tens, then ones. The first different digit decides which is greater.",
       zh: "比较三位数时先看百位，再看十位和个位；第一个不同的数位决定大小。",
       hi: "तीन अंकों की तुलना में पहले सैकड़ा, फिर दहाई, फिर इकाई देखें। पहला अलग अंक बड़ा-छोटा तय करता है।",

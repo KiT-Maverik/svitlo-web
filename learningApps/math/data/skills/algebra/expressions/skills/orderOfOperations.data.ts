@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const orderOfOperations_Skill_Data = buildSkillConfig({
+  slug: 'orderOfOperations',
   id: '87cd08bd-e276-4a36-88de-77dd23028abf',
   name: {
     en: "Applying the order of operations",
@@ -35,7 +36,7 @@ export const orderOfOperations_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "An expression's value follows the agreed order of operations: parentheses, multiplication/division, then addition/subtraction, applying associativity or left-to-right rules where appropriate. Changing the order can change the result.",
-    fe: {
+    frontend: {
       en: "You can evaluate expressions by following parentheses first, then multiplication and division, then addition and subtraction.",
       zh: "你能按照先算括号内，再算乘除，最后算加减的顺序求出表达式的值。",
       hi: "तुम व्यंजक में पहले कोष्ठक, फिर गुणा-भाग और फिर जोड़-घटाव करके मान निकाल सकते हो।",

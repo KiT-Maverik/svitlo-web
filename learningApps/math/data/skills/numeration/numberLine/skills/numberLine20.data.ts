@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const numberLine20_Skill_Data = buildSkillConfig({
+  slug: 'numberLine20',
   id: 'b0ee8874-a540-48d4-bcc4-8075e49526ce',
   name: {
     lt: "Skaičiai skaičių tiesėje iki 20",
@@ -35,7 +36,7 @@ export const numberLine20_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A number line orders numbers by coordinate; equal numerical increments occupy equal lengths on its scale. The predecessor and successor lie one unit interval to the left and right.",
-    fe: {
+    frontend: {
       en: "Find numbers up to 20 on an evenly spaced number line. Each move of one unit covers the same distance.",
       zh: "在刻度均匀的数轴上找到20以内的数，每相差1的距离都相等。",
       hi: "समान अंतर वाली संख्या रेखा पर 20 तक संख्याएँ खोजें। एक-एक का कदम समान दूरी का होता है।",

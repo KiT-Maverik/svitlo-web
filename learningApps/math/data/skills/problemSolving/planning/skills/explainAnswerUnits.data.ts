@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const explainAnswerUnits_Skill_Data = buildSkillConfig({
+  slug: 'explainAnswerUnits',
   id: 'cc32ed01-5823-42a0-a32e-810074474d93',
   name: {
     lt: "Atsakymo matavimo vienetų ir pagrįstumo tikrinimas",
@@ -34,7 +35,7 @@ export const explainAnswerUnits_Skill_Data = buildSkillConfig({
     uk: "Перевірка одиниць і правдоподібності відповіді",
   },
   description: { methodological: "A word-problem answer must name the requested quantity in consistent units and satisfy the constraints of its mathematical or real-world context. A bare number without a unit or a plausibility check may fail to answer the question.",
-    fe: {
+    frontend: {
       en: "You can give an answer with the right units and check whether it makes sense in the situation, not just write a number.",
       zh: "你能用正确的单位写出答案，并检查答案是否符合实际情境，而不只是写一个数字。",
       hi: "आप उत्तर सही इकाइयों के साथ लिख सकते हैं और जाँच सकते हैं कि वह परिस्थिति में उचित है या नहीं, सिर्फ एक संख्या नहीं लिखते।",

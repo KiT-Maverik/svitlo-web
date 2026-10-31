@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const digitPlaceValue_Skill_Data = buildSkillConfig({
+  slug: 'digitPlaceValue',
   id: 'bfa629a1-292a-4a80-8305-001a2506e4bb',
   name: {
     lt: "Skaitmens vertė pagal jo poziciją",
@@ -35,7 +36,7 @@ export const digitPlaceValue_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A digit's value depends on its position: the two digits 2 in 232 represent 200 and 2. Place value is distinct from the digit's graphic form.",
-    fe: {
+    frontend: {
       en: "A digit's position changes its value: the two 2s in 232 mean 200 and 2.",
       zh: "数字的值取决于位置：232里的两个2分别表示200和2。",
       hi: "अंक का मान उसके स्थान पर निर्भर है: 232 में दो 2 का अर्थ 200 और 2 है।",

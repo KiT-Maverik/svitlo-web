@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const drawConclusion_Skill_Data = buildSkillConfig({
+  slug: 'drawConclusion',
   id: 'cda308de-9fd0-4536-8635-2f5ba1a7010d',
   name: {
     en: "Drawing a conclusion from given conditions and reasoning",
@@ -35,7 +36,7 @@ export const drawConclusion_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A logical conclusion must follow from established premises and prior statements through valid inference rules. Necessary consequences must be distinguished from plausible guesses and conclusions based on insufficient conditions.",
-    fe: {
+    frontend: {
       en: "You can use the given facts to reach a conclusion that must follow from them, rather than simply making a plausible guess.",
       zh: "你能根据已知事实进行推理，得出必然成立的结论，而不只是作出看似合理的猜测。",
       hi: "आप दिए गए तथ्यों से तर्क करके ऐसा निष्कर्ष निकाल सकते हैं जो उनसे अनिवार्य रूप से निकलता हो, न कि केवल अनुमान लगा सकते हैं।",

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { read24HourClock_Skill_Data, readFiveMinute_Skill_Data, readHalfQuarter_Skill_Data, readHour_Skill_Data, readMinute_Skill_Data } from './skills';
 
 export const clock_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'clock',
   id: '03f5c155-b4e6-4e8f-8ee4-81141018984d',
   name: {
     en: "Reading clocks",
@@ -34,12 +35,12 @@ export const clock_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Odczytywanie godziny",
     uk: "Зчитування часу з годинника",
   },
-  skillIds: {
-    read24HourClock: read24HourClock_Skill_Data.id,
-    readHour: readHour_Skill_Data.id,
-    readHalfQuarter: readHalfQuarter_Skill_Data.id,
-    readFiveMinute: readFiveMinute_Skill_Data.id,
-    readMinute: readMinute_Skill_Data.id,
+  skills: {
+    read24HourClock: read24HourClock_Skill_Data,
+    readHour: readHour_Skill_Data,
+    readHalfQuarter: readHalfQuarter_Skill_Data,
+    readFiveMinute: readFiveMinute_Skill_Data,
+    readMinute: readMinute_Skill_Data,
   },
   description: { methodological: "Matching clock-hand positions and digital notation to a particular instant of the day at different levels of reading precision." },
 });

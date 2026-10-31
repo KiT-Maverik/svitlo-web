@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
+  slug: 'threeDigitNoRegroup',
   id: 'cde7469c-abf3-4fd9-94ce-3089629fc77b',
   name: {
     lt: "Sudėtis ir atimtis — triženkliai skaičiai be pergrupavimo",
@@ -35,7 +36,7 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Where no carrying or borrowing is required, corresponding hundreds, tens, and ones can be computed separately. Combining the place values produces the same sum or difference.",
-    fe: {
+    frontend: {
       en: "You can add or subtract three-digit numbers by working with hundreds, tens, and ones separately when no regrouping is needed.",
       zh: "不需要进位或退位时，你能分别计算三位数的百位、十位和个位来完成加减法。",
       hi: "जब पुनर्गठन की ज़रूरत न हो, तुम तीन अंकों की संख्याओं में सैकड़े, दहाइयाँ और इकाइयाँ अलग-अलग जोड़ या घटा सकते हो।",

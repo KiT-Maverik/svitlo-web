@@ -32,7 +32,7 @@ test('dry-run leaves source unchanged and write inserts only methodological text
   assert.equal(done.status, 0, done.stderr);
   const updated = fs.readFileSync(entity, 'utf8');
   assert.match(updated, /description: \{ methodological: "Conceptual domain scope in English\." \}/);
-  assert.doesNotMatch(updated, /fe:/);
+  assert.doesNotMatch(updated, /frontend:/);
   assert.match(updated, /id: "4e36cc11-d273-44a4-aa6d-a153c4e53701"/);
   const again = run(true);
   assert.equal(again.status, 0, again.stderr);

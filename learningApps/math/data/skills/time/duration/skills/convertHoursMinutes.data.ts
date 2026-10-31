@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const convertHoursMinutes_Skill_Data = buildSkillConfig({
+  slug: 'convertHoursMinutes',
   id: '131741ec-c4d9-4f98-9c52-208326de7cd0',
   name: {
     en: "Converting hours and minutes",
@@ -34,7 +35,7 @@ export const convertHoursMinutes_Skill_Data = buildSkillConfig({
     uk: "Перетворення годин на хвилини й навпаки",
   },
   description: { methodological: "Hours and minutes are duration units related exactly by 1 hour = 60 minutes. Conversion must preserve the same elapsed duration irrespective of its numerical representation.",
-    fe: {
+    frontend: {
       en: "You can change hours into minutes and minutes into hours, knowing that one hour is exactly 60 minutes and the duration stays the same.",
       zh: "你能把小时换算成分钟，也能把分钟换算成小时，知道1小时恰好等于60分钟，时间长度不变。",
       hi: "आप घंटे को मिनट और मिनट को घंटे में बदल सकते हैं, जानते हुए कि एक घंटे में ठीक 60 मिनट होते हैं और अवधि वही रहती है।",

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { completeEquality_Skill_Data, equalityMeaning_Skill_Data, trueFalseEquality_Skill_Data } from './skills';
 
 export const equalities_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'equalities',
   id: 'b5bc6d15-c8cb-41ad-8227-54a473c1dc38',
   name: {
     en: "Equalities",
@@ -34,14 +35,14 @@ export const equalities_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Równości",
     uk: "Рівності",
   },
-  skillIds: {
-    completeEquality: completeEquality_Skill_Data.id,
-    equalityMeaning: equalityMeaning_Skill_Data.id,
-    trueFalseEquality: trueFalseEquality_Skill_Data.id,
+  skills: {
+    completeEquality: completeEquality_Skill_Data,
+    equalityMeaning: equalityMeaning_Skill_Data,
+    trueFalseEquality: trueFalseEquality_Skill_Data,
   },
   description: {
     methodological: "Equality as equal values of two expressions, the truth of equalities, and completing missing components.",
-    fe: {
+    frontend: {
       en: "Learn what the equals sign means, how to check mathematical statements, and how to find a missing value that makes an equality true.",
       zh: "了解等号的含义、如何判断数学陈述是否正确，以及怎样求出使等式成立的未知数。",
       hi: "जानो कि बराबर का चिह्न क्या बताता है, गणितीय कथन कैसे जाँचते हैं और समानता को सही बनाने वाला लुप्त मान कैसे खोजते हैं।",

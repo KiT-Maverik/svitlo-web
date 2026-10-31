@@ -7,6 +7,7 @@ import { multiply_SkillGroup_Data } from './multiply/multiply.data';
 import { divide_SkillGroup_Data } from './divide/divide.data';
 
 export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'arithmetic',
   id: '488e1b0d-4c9b-469d-b3ee-dba724111826',
   name: {
     en: "Arithmetic",
@@ -38,16 +39,16 @@ export const arithmetic_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Arytmetyka",
     uk: "Арифметика",
   },
-  groupIds: {
-    addition: addition_SkillGroup_Data.id,
-    subtraction: subtraction_SkillGroup_Data.id,
-    additionSubtraction: additionSubtraction_SkillGroup_Data.id,
-    multiply: multiply_SkillGroup_Data.id,
-    divide: divide_SkillGroup_Data.id,
+  groups: {
+    addition: addition_SkillGroup_Data,
+    subtraction: subtraction_SkillGroup_Data,
+    additionSubtraction: additionSubtraction_SkillGroup_Data,
+    multiply: multiply_SkillGroup_Data,
+    divide: divide_SkillGroup_Data,
   },
   description: {
     methodological: "The meanings and properties of addition, subtraction, multiplication, and division; their relationships; exact and approximate calculation methods; justifications of algorithms; and result verification. The Curriculum determines numerical ranges and degree of formalization.",
-    fe: {
+    frontend: {
       en: "Explore how addition, subtraction, multiplication, and division work together to calculate quantities, make estimates, and check whether results make sense.",
       zh: "了解加减乘除怎样相互联系，帮助你计算数量、估算结果，并检查答案是否合理。",
       hi: "जानो कि जोड़, घटाव, गुणा और भाग एक-दूसरे से कैसे जुड़े हैं और गणना, अनुमान तथा उत्तर की जाँच में कैसे मदद करते हैं।",

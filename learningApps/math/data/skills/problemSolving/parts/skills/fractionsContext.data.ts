@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const fractionsContext_Skill_Data = buildSkillConfig({
+  slug: 'fractionsContext',
   id: '44334f70-1eba-4175-8396-dfe9a735b9d2',
   name: {
     lt: "Vienetinės trupmenos dalies radimas",
@@ -34,7 +35,7 @@ export const fractionsContext_Skill_Data = buildSkillConfig({
     uk: "Знаходження одиничної частини кількості",
   },
   description: { methodological: "A unit fraction 1/n of a nonnegative quantity is obtained by dividing the whole into n equal parts for positive n. The situation must identify the chosen unit whole, and the selected part must be relative to that same whole.",
-    fe: {
+    frontend: {
       en: "You can find a unit fraction, such as one fourth of a quantity, by dividing the whole into equal parts and identifying which whole the fraction refers to.",
       zh: "你能把整体平均分成相等的份数，求出四分之一等单位分数所代表的数量，并清楚它是哪个整体的一部分。",
       hi: "आप किसी पूर्ण मात्रा को बराबर भागों में बाँटकर उसका एक इकाई भिन्न, जैसे एक चौथाई, निकाल सकते हैं और पहचान सकते हैं कि भिन्न किस पूरे का हिस्सा है।",

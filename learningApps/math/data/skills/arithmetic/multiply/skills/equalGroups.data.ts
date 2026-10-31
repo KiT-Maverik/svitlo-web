@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const equalGroups_Skill_Data = buildSkillConfig({
+  slug: 'equalGroups',
   id: 'a3a6ab42-2285-4d6f-a65e-f2a4d8140a88',
   name: {
     lt: "Daugyba — lygios grupės",
@@ -35,7 +36,7 @@ export const equalGroups_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplication relates the number of equally sized groups, the size of one group, and the total number of objects. Unequal groups cannot be represented by a single group-count-times-group-size product without another model.",
-    fe: {
+    frontend: {
       en: "You can find a total from the number of equally sized groups and the number of items in each group.",
       zh: "你能根据相等的组数和每组的数量求出总数。",
       hi: "तुम बराबर समूहों की संख्या और हर समूह में वस्तुओं की संख्या से कुल संख्या निकाल सकते हो।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const centnerKilogram_Skill_Data = buildSkillConfig({
+  slug: 'centnerKilogram',
   id: '3eb50b43-90c3-4a4a-ae8b-1cfa460fab1d',
   name: {
     en: "Using centners and kilograms in problems",
@@ -34,7 +35,7 @@ export const centnerKilogram_Skill_Data = buildSkillConfig({
     uk: "Застосування співвідношення центнерів і кілограмів у задачах"
   },
   description: { methodological: "Where the metric centner is used, one centner equals 100 kilograms, while one metric tonne equals 1,000 kilograms. The centner is context-dependent, not universal across countries or curricula.",
-    fe: {
+    frontend: {
       en: "You can use the metric centner in problems where this unit is used, knowing that 1 centner equals 100 kilograms, not 1,000 kilograms.",
       zh: "你能在使用公担这个单位的问题中换算，知道1公担等于100千克，而不是1000千克。",
       hi: "आप जहाँ मीट्रिक क्विंटल का उपयोग होता है वहाँ इससे जुड़े प्रश्न हल कर सकते हैं, जानते हुए कि 1 क्विंटल 100 किलोग्राम होता है, 1,000 नहीं।",

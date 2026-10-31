@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const equalGroups_Skill_Data = buildSkillConfig({
+  slug: 'equalGroups',
   id: '30aa7d28-187b-44e7-806b-06457d3a0970',
   name: {
     lt: "Vienodų grupių uždavinių sprendimas",
@@ -34,7 +35,7 @@ export const equalGroups_Skill_Data = buildSkillConfig({
     uk: "Розв’язування задач на однакові групи",
   },
   description: { methodological: "The total number of objects in equal groups is the number of groups multiplied by the size of each group. Any unknown one of the three related quantities can be obtained from the other two by the appropriate inverse operation when division is valid.",
-    fe: {
+    frontend: {
       en: "You can solve equal-group problems by relating the number of groups, how many items are in each group, and the total, using multiplication or division.",
       zh: "你能用乘法或除法联系相等组的组数、每组数量和总数，解决等量分组问题。",
       hi: "आप बराबर समूहों की संख्या, हर समूह की वस्तुओं की संख्या और कुल संख्या को गुणा या भाग से जोड़कर समस्याएँ हल कर सकते हैं।",

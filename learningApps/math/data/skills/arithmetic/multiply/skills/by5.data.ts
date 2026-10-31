@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const by5_Skill_Data = buildSkillConfig({
+  slug: 'by5',
   id: '9551993a-3bc6-45f5-86ea-32cf4fb85021',
   name: {
     lt: "Daugyba — × 5",
@@ -35,7 +36,7 @@ export const by5_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Products with factor five relate to successive multiples of five and equal groups. They may be found by repeated addition or decomposition into familiar facts while preserving equal group size.",
-    fe: {
+    frontend: {
       en: "You can multiply by five using five equal groups or by building on sums you already know.",
       zh: "你能用五个相等的组表示乘以五，也能利用熟悉的加法求出结果。",
       hi: "तुम पाँच बराबर समूहों से या ज्ञात जोड़ के परिणामों की मदद से पाँच से गुणा कर सकते हो।",

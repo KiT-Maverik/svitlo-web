@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const ray_Skill_Data = buildSkillConfig({
+  slug: 'ray',
   id: '1f1740cd-914a-4945-b564-5124a982c735',
   name: {
     en: "Distinguishing rays, segments and lines",
@@ -35,7 +36,7 @@ export const ray_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A line extends indefinitely in both directions; a ray has one endpoint and extends indefinitely in one direction; a segment has two endpoints. Drawing orientation does not change these properties.",
-    fe: {
+    frontend: {
       en: "Tell a line that continues both ways from a ray that starts at one point and a segment with two endpoints.",
       zh: "区分向两边无限延伸的直线、从一个端点向一边延伸的射线和有两个端点的线段。",
       hi: "दोनों ओर अनंत बढ़ती रेखा, एक सिरे से बढ़ती किरण और दो सिरों वाला रेखाखंड अलग पहचानें।",

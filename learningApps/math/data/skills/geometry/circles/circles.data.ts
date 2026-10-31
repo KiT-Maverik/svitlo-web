@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { circleDisk_Skill_Data, radiusDiameter_Skill_Data, drawCircle_Skill_Data } from './skills';
 
 export const circles_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'circles',
   id: 'fdca56d5-299f-4755-b87f-dd7d46f5d851',
   name: {
     en: "Circles and disks",
@@ -34,14 +35,14 @@ export const circles_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Okręgi i koła",
     uk: "Коло та круг",
   },
-  skillIds: {
-    circleDisk: circleDisk_Skill_Data.id,
-    radiusDiameter: radiusDiameter_Skill_Data.id,
-    drawCircle: drawCircle_Skill_Data.id,
+  skills: {
+    circleDisk: circleDisk_Skill_Data,
+    radiusDiameter: radiusDiameter_Skill_Data,
+    drawCircle: drawCircle_Skill_Data,
   },
   description: {
     methodological: "The circumference as the boundary of a disk, its center, radius and diameter, and constructing a circle at a fixed distance from its center.",
-    fe: {
+    frontend: {
       en: "Explore round boundaries and filled disks, their centers, radii, and diameters, and how to draw circles.",
       zh: "认识圆形边界和实心圆盘、圆心、半径、直径，以及如何画圆。",
       hi: "वृत्त की सीमा और भरे वृत्ताकार भाग, केंद्र, त्रिज्या, व्यास तथा वृत्त बनाना सीखें।",

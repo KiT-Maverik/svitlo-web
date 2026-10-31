@@ -129,25 +129,25 @@ function readEntity(file, kind) {
     if (!ts.isPropertyAssignment(prop)) fail('Unexpected dynamic description property: ' + file);
     return key(prop.name);
   });
-  if (new Set(keys).size !== keys.length || keys.some(k => k !== 'methodological' && k !== 'fe')) {
+  if (new Set(keys).size !== keys.length || keys.some(k => k !== 'methodological' && k !== 'frontend')) {
     fail('Unexpected or duplicated description keys: ' + file);
   }
   const methodological = stringValue(getProperty(description, 'methodological')?.initializer, file + ':methodological');
 
-  const fe = getProperty(description, 'fe') ? dictionary(description, 'fe', file) : undefined;
+  const frontend = getProperty(description, 'frontend') ? dictionary(description, 'frontend', file) : undefined;
   // This source parser does not run tsc: enforce the Skill contract independently
   // instead of silently generating incomplete documentation from untyped files.
-  if (kind === 'Skill' && !fe) fail('Missing required Skill description.fe: ' + file);
+  if (kind === 'Skill' && !frontend) fail('Missing required Skill description.frontend: ' + file);
   for (const locale of locales) {
     if (!name[locale]) fail('Missing required name locale ' + locale + ': ' + file);
-    if (fe && !fe[locale]) fail('Missing required fe locale ' + locale + ': ' + file);
+    if (frontend && !frontend[locale]) fail('Missing required frontend locale ' + locale + ': ' + file);
   }
-  for (const map of fe ? [name, fe] : [name]) {
+  for (const map of frontend ? [name, frontend] : [name]) {
     for (const locale of Object.keys(map)) {
       if (!locales.includes(locale)) fail('Unexpected locale ' + locale + ': ' + file);
     }
   }
-  return { file, name: name[opts.locale], methodological, frontend: fe?.[opts.locale] };
+  return { file, name: name[opts.locale], methodological, frontend: frontend?.[opts.locale] };
 }
 function subdirs(dir) {
   if (!fs.existsSync(dir)) return [];
@@ -182,7 +182,7 @@ for (const folder of subdirs(taxonomyRoot)) {
   const domain = readEntity(domainFile, 'SkillDomain');
   const groups = subdirs(domainFolder);
   const directSkills = readSkills(domainFolder);
-  if ((groups.length > 0) === (directSkills.length > 0)) fail('Domain must have only Groups or direct Skills: ' + domainFile);
+  if (groups.length === 0 && directSkills.length === 0) fail('Domain has no Groups or Skills: ' + domainFile);
   const content = groups.map(group => {
     const groupFolder = path.join(domainFolder, group);
     const groupFile = path.join(groupFolder, group + '.data.ts');

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const circleDisk_Skill_Data = buildSkillConfig({
+  slug: 'circleDisk',
   id: 'e875516d-7466-4b91-b249-1b4e0de6b052',
   name: {
     en: "Distinguishing the circumference and the disk",
@@ -35,7 +36,7 @@ export const circleDisk_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A circle is the set of points in a plane at a fixed distance from a center; a disk includes those points and its enclosed region. Distinguish boundary from filled area, and circumference from the disk's area.",
-    fe: {
+    frontend: {
       en: "Tell the curved boundary of a circle from the filled disk inside it. The boundary is not the area.",
       zh: "区分圆的曲线边界和它包围的实心圆盘。边界不是圆盘的面积。",
       hi: "वृत्त की गोल सीमा और उसके भीतर भरे क्षेत्र को अलग पहचानें। सीमा क्षेत्रफल नहीं है।",

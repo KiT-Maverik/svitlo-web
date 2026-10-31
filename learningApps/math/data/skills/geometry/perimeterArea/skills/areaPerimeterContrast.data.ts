@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const areaPerimeterContrast_Skill_Data = buildSkillConfig({
+  slug: 'areaPerimeterContrast',
   id: '1c1b7595-df14-4cb6-aa67-0831d6c4425d',
   name: {
     en: "Constructing shapes with contrasting perimeters and areas",
@@ -35,7 +36,7 @@ export const areaPerimeterContrast_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Equal perimeter lengths do not determine area: rectangles 1 × 6 and 2 × 5 both have perimeter 14 but areas 6 and 10. Rectangles 1 × 6 and 2 × 3 both have area 6 but different perimeters.",
-    fe: {
+    frontend: {
       en: "Build shapes with the same perimeter but different areas, or the same area but different perimeters.",
       zh: "拼出周长相同但面积不同的图形，或面积相同而周长不同的图形。",
       hi: "ऐसी आकृतियाँ बनाएँ जिनका परिमाप समान पर क्षेत्रफल अलग हो, या क्षेत्रफल समान पर परिमाप अलग हो।",

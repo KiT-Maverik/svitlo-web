@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const chooseOperationMulDiv_Skill_Data = buildSkillConfig({
+  slug: 'chooseOperationMulDiv',
   id: '8abaee79-c7a9-462f-9cd6-b9efaa9ed699',
   name: {
     lt: "Daugybos ar dalybos pasirinkimas",
@@ -34,7 +35,7 @@ export const chooseOperationMulDiv_Skill_Data = buildSkillConfig({
     uk: "Вибір множення або ділення",
   },
   description: { methodological: "Multiplication relates the number of equal groups, the size of each group, and their total; division finds an unknown component from the other two. The structure of equal groups determines the operation rather than a particular word in the problem.",
-    fe: {
+    frontend: {
       en: "You can decide whether to multiply or divide by looking at the number of equal groups, the size of each group, and the total.",
       zh: "你能根据相等组的组数、每组数量和总数之间的关系判断该用乘法还是除法。",
       hi: "आप बराबर समूहों की संख्या, हर समूह के आकार और कुल संख्या के संबंध को देखकर गुणा या भाग चुन सकते हैं।",

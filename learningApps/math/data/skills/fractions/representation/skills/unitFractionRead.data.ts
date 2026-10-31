@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const unitFractionRead_Skill_Data = buildSkillConfig({
+  slug: 'unitFractionRead',
   id: '6d176ee8-9b59-4752-b39d-7cf3127d871f',
   name: {
     en: "Reading and writing unit fractions",
@@ -35,7 +36,7 @@ export const unitFractionRead_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A unit fraction has numerator one and a positive denominator stating how many equal parts form the whole. Half, third, and quarter correspond to the fractions 1/2, 1/3, and 1/4.",
-    fe: {
+    frontend: {
       en: "Read and write fractions with 1 on top, such as 1/2 (one half), 1/3 (one third), and 1/4 (one quarter).",
       zh: "读写分子为1的分数，例如1/2（二分之一）、1/3（三分之一）和1/4（四分之一）。",
       hi: "ऊपर 1 वाले भिन्न पढ़ें और लिखें, जैसे 1/2 (आधा), 1/3 (एक तिहाई), 1/4 (एक चौथाई)।",

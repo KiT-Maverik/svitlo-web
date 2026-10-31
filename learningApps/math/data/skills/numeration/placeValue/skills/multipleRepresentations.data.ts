@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const multipleRepresentations_Skill_Data = buildSkillConfig({
+  slug: 'multipleRepresentations',
   id: '0e2bf14b-81b7-4cca-8fd0-56bb46a11816',
   name: {
     lt: "Skirtingų skaičiaus vaizdavimo būdų atitikmenys",
@@ -35,7 +36,7 @@ export const multipleRepresentations_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A positional numeral, a set of place-value blocks, a point on a number line, and the cardinality of a finite set can represent the same natural number. Converting among these preserves value rather than appearance.",
-    fe: {
+    frontend: {
       en: "Recognize the same number when shown as digits, counting blocks, a point on a number line, or a collection of objects.",
       zh: "认出同一个数可以用数字、计数积木、数轴上的点或一组物品表示。",
       hi: "अंकों, गिनती के खंडों, संख्या रेखा के बिंदु या वस्तुओं के समूह में एक ही संख्या पहचानें।",

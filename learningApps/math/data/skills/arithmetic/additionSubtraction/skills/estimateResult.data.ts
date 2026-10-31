@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const estimateResult_Skill_Data = buildSkillConfig({
+  slug: 'estimateResult',
   id: 'ddaf0423-4cd8-45ed-8e8c-7f88038c0fcd',
   name: {
     lt: "Sudėtis ir atimtis — rezultato įvertinimas",
@@ -35,7 +36,7 @@ export const estimateResult_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Place-value reasoning, rounding, or bounds provide an estimated order of magnitude for a result. Such estimates can reveal large errors but cannot independently establish an exact answer.",
-    fe: {
+    frontend: {
       en: "You can round numbers or use place value to estimate a sum or difference and notice answers that are far off.",
       zh: "你能通过四舍五入或数位知识估算和或差，判断答案是否明显不合理。",
       hi: "तुम संख्याओं को सन्निकट करके या स्थान-मूल्य से योग या अंतर का अनुमान लगा सकते हो और बहुत गलत उत्तर पहचान सकते हो।",

@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { chooseOperationAddSub_Skill_Data, chooseOperationMulDiv_Skill_Data, createProblem_Skill_Data, oneStepModel_Skill_Data } from './skills';
 
 export const models_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'models',
   id: '09128b1e-b715-40c1-a99c-da46e3f0a3d0',
   name: {
     en: "Problem models",
@@ -34,11 +35,11 @@ export const models_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Modele zadań",
     uk: "Моделювання задач",
   },
-  skillIds: {
-    chooseOperationAddSub: chooseOperationAddSub_Skill_Data.id,
-    chooseOperationMulDiv: chooseOperationMulDiv_Skill_Data.id,
-    oneStepModel: oneStepModel_Skill_Data.id,
-    createProblem: createProblem_Skill_Data.id,
+  skills: {
+    chooseOperationAddSub: chooseOperationAddSub_Skill_Data,
+    chooseOperationMulDiv: chooseOperationMulDiv_Skill_Data,
+    oneStepModel: oneStepModel_Skill_Data,
+    createProblem: createProblem_Skill_Data,
   },
   description: { methodological: "Relationships between a concrete situation, drawing, schematic model, and numerical expression representing the required operation." },
 });

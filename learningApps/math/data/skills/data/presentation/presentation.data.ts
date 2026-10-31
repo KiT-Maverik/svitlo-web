@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { linePlotMeasurements_Skill_Data, readSimpleTable_Skill_Data, readPictograph_Skill_Data, buildPictograph_Skill_Data, readBarChart_Skill_Data, buildBarChart_Skill_Data, scaledChart_Skill_Data } from './skills';
 
 export const presentation_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'presentation',
   id: '37dd18b1-b119-438c-96e5-44226023a7a3',
   name: {
     en: "Data representation",
@@ -34,14 +35,14 @@ export const presentation_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Przedstawianie danych",
     uk: "Подання даних",
   },
-  skillIds: {
-    linePlotMeasurements: linePlotMeasurements_Skill_Data.id,
-    readSimpleTable: readSimpleTable_Skill_Data.id,
-    readPictograph: readPictograph_Skill_Data.id,
-    buildPictograph: buildPictograph_Skill_Data.id,
-    readBarChart: readBarChart_Skill_Data.id,
-    buildBarChart: buildBarChart_Skill_Data.id,
-    scaledChart: scaledChart_Skill_Data.id,
+  skills: {
+    linePlotMeasurements: linePlotMeasurements_Skill_Data,
+    readSimpleTable: readSimpleTable_Skill_Data,
+    readPictograph: readPictograph_Skill_Data,
+    buildPictograph: buildPictograph_Skill_Data,
+    readBarChart: readBarChart_Skill_Data,
+    buildBarChart: buildBarChart_Skill_Data,
+    scaledChart: scaledChart_Skill_Data,
   },
   description: { methodological: "Representing collected counts in tables, pictographs, and charts while correctly interpreting the scales and values of marks." },
 });

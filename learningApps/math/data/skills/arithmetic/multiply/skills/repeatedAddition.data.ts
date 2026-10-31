@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const repeatedAddition_Skill_Data = buildSkillConfig({
+  slug: 'repeatedAddition',
   id: '5c08d331-b6ba-44ee-ab1d-0f1781f23f73',
   name: {
     lt: "Daugyba — kartotinė sudėtis",
@@ -35,7 +36,7 @@ export const repeatedAddition_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A product of natural factors can be written as repeated addition of equal addends. Reversing this representation requires equality of the addends; an arbitrary sum is not necessarily one repeated-addition product.",
-    fe: {
+    frontend: {
       en: "You can express repeated addition of the same whole-number amount as multiplication.",
       zh: "当同一个整数数量反复相加时，你能用乘法表示。",
       hi: "एक ही पूर्णांक मात्रा को बार-बार जोड़ने को गुणा के रूप में लिख सकते हो।",

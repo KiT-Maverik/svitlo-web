@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const chooseAppropriateUnit_Skill_Data = buildSkillConfig({
+  slug: 'chooseAppropriateUnit',
   id: 'bc720d51-24c5-43a2-b034-0b58055a0efd',
   name: {
     en: "Choosing suitable units for length, mass or capacity",
@@ -34,7 +35,7 @@ export const chooseAppropriateUnit_Skill_Data = buildSkillConfig({
     uk: "Вибір доречних одиниць довжини, маси чи місткості"
   },
   description: { methodological: "Choose a measurement unit based on the physical quantity, size of the object, and needed precision. The choice must be justified without mixing dimensions or copying a conventional example uncritically.",
-    fe: {
+    frontend: {
       en: "You can choose a sensible unit for measuring length, mass, or capacity, based on what you measure and how precise it needs to be.",
       zh: "你能根据测量的长度、质量或容量，以及所需精度，选择合适的单位。",
       hi: "आप क्या माप रहे हैं और कितनी सटीकता चाहिए, इसके अनुसार लंबाई, द्रव्यमान या धारिता की उपयुक्त इकाई चुन सकते हैं।",

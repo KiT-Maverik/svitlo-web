@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const threeStepPlan_Skill_Data = buildSkillConfig({
+  slug: 'threeStepPlan',
   id: 'be6ad385-9004-4823-9f89-ef8c6ae2341a',
   name: {
     lt: "Trijų veiksmų uždavinio sprendimas",
@@ -34,7 +35,7 @@ export const threeStepPlan_Skill_Data = buildSkillConfig({
     uk: "Розв’язування задачі на три дії",
   },
   description: { methodological: "A three-step solution successively determines intermediate results required to find the primary unknown. Every operation must follow from the problem's conditions and each result must retain its contextual meaning.",
-    fe: {
+    frontend: {
       en: "You can solve a problem that needs three connected steps, using each intermediate result to reach a meaningful final answer.",
       zh: "你能解决需要三个相互关联步骤的问题，利用每一步的中间结果得出有意义的最终答案。",
       hi: "आप तीन जुड़े चरणों वाली समस्या हल कर सकते हैं, हर बीच के परिणाम का उपयोग करके सार्थक अंतिम उत्तर तक पहुँचते हुए।",

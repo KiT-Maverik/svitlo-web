@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const by5_Skill_Data = buildSkillConfig({
+  slug: 'by5',
   id: 'e7c66fa9-9208-4877-8dca-504dc55833f7',
   name: {
     lt: "Dalyba — ÷ 5",
@@ -35,7 +36,7 @@ export const by5_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Division by five can be established through multiples of five and inverse multiplication facts. Whether five denotes the group size or group count is determined by context.",
-    fe: {
+    frontend: {
       en: "You can divide by five using equal groups and known multiples of five.",
       zh: "你能利用相等的组和已知的五的倍数计算除以五。",
       hi: "तुम बराबर समूहों और पाँच के ज्ञात गुणजों से पाँच से भाग कर सकते हो।",

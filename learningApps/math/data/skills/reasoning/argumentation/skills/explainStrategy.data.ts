@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const explainStrategy_Skill_Data = buildSkillConfig({
+  slug: 'explainStrategy',
   id: '195b4494-38ea-4ae0-a6c4-ab4ec583b5ee',
   name: {
     en: "Explaining a chosen calculation strategy",
@@ -35,7 +36,7 @@ export const explainStrategy_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A mathematical explanation must communicate the actual sequence of transformations and why they preserve the result or justify an approximation. Verbal, visual, and symbolic representations may differ but must express the same underlying reasoning.",
-    fe: {
+    frontend: {
       en: "You can explain the steps of a calculation or estimate and why they work, using words, diagrams, or mathematical symbols.",
       zh: "你能用语言、图示或数学符号说明计算或估算的步骤，以及这些步骤为什么成立。",
       hi: "आप शब्दों, चित्रों या गणितीय चिह्नों से गणना या अनुमान के चरण और उनके सही होने का कारण समझा सकते हैं।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const budgetConstraint_Skill_Data = buildSkillConfig({
+  slug: 'budgetConstraint',
   id: '945f887d-4370-42b0-aefa-02a88a06f6d8',
   name: {
     en: "Choosing purchases within a budget",
@@ -34,7 +35,7 @@ export const budgetConstraint_Skill_Data = buildSkillConfig({
     uk: "Вибір покупок у межах бюджету",
   },
   description: { methodological: "Whether a set of purchases is affordable depends on the sum of its costs relative to the available budget. Each item being individually affordable does not make the entire set affordable; quantities and the total-spending limit must be considered.",
-    fe: {
+    frontend: {
       en: "You can decide which items and quantities you can buy without going over your budget by adding up the cost of the whole purchase.",
       zh: "你能算出整笔购物的费用，判断可以买哪些商品、各买多少，同时不超过预算。",
       hi: "आप पूरी खरीद की लागत जोड़कर तय कर सकते हैं कि बजट से अधिक खर्च किए बिना कौन-सी चीज़ें और कितनी मात्रा में खरीद सकते हैं।",

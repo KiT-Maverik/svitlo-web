@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const checkReasonableness_Skill_Data = buildSkillConfig({
+  slug: 'checkReasonableness',
   id: 'd9a090cc-ab44-4e08-babd-357a9b7a3154',
   name: {
     en: "Assessing whether an answer is reasonable in context and magnitude",
@@ -35,7 +36,7 @@ export const checkReasonableness_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "For 98 + 105, a result near 200 is reasonable in scale whereas 2000 is not, even without carrying out an exact calculation.",
-    fe: {
+    frontend: {
       en: "You can tell whether an answer makes sense in the situation and is about the right size, even without calculating exactly.",
       zh: "即使不进行精确计算，你也能根据实际情境和数值大小判断答案是否合理。",
       hi: "आप बिना सटीक गणना किए भी परिस्थिति और संख्या के आकार को देखकर बता सकते हैं कि उत्तर उचित है या नहीं।",

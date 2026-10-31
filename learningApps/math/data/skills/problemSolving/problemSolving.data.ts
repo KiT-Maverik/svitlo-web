@@ -9,6 +9,7 @@ import { groups_SkillGroup_Data } from './groups/groups.data';
 import { quantities_SkillGroup_Data } from './quantities/quantities.data';
 
 export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'problemSolving',
   id: '695fd427-aaea-4cbb-bd07-2d1702f36a17',
   name: {
     en: "Problem solving",
@@ -40,14 +41,14 @@ export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Rozwiązywanie zadań",
     uk: "Розв’язування задач",
   },
-  groupIds: {
-    conditions: conditions_SkillGroup_Data.id,
-    models: models_SkillGroup_Data.id,
-    planning: planning_SkillGroup_Data.id,
-    comparisons: comparisons_SkillGroup_Data.id,
-    parts: parts_SkillGroup_Data.id,
-    groups: groups_SkillGroup_Data.id,
-    quantities: quantities_SkillGroup_Data.id,
+  groups: {
+    conditions: conditions_SkillGroup_Data,
+    models: models_SkillGroup_Data,
+    planning: planning_SkillGroup_Data,
+    comparisons: comparisons_SkillGroup_Data,
+    parts: parts_SkillGroup_Data,
+    groups: groups_SkillGroup_Data,
+    quantities: quantities_SkillGroup_Data,
   },
   description: { methodological: "Translating real-life situations into mathematical models, selecting operations, planning multi-step solutions, and checking whether answers make sense." },
 });

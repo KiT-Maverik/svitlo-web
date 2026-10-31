@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { countBy2_Skill_Data, countBy5_Skill_Data, countBy10_Skill_Data, countBy100_Skill_Data } from './skills';
 
 export const steps_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'steps',
   id: '6adaeb37-f3ed-4cad-899a-28057e94c8c3',
   name: {
     en: "Skip counting",
@@ -34,15 +35,15 @@ export const steps_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Liczenie skokowe",
     uk: "Крокова лічба",
   },
-  skillIds: {
-    countBy2: countBy2_Skill_Data.id,
-    countBy5: countBy5_Skill_Data.id,
-    countBy10: countBy10_Skill_Data.id,
-    countBy100: countBy100_Skill_Data.id,
+  skills: {
+    countBy2: countBy2_Skill_Data,
+    countBy5: countBy5_Skill_Data,
+    countBy10: countBy10_Skill_Data,
+    countBy100: countBy100_Skill_Data,
   },
   description: {
     methodological: "Moving through the number sequence by fixed increments, connected with equal groups, tens, and hundreds rather than counting individual units.",
-    fe: {
+    frontend: {
       en: "Count equal groups by adding the same amount each time. Use steps of 2, 5, 10, or 100 instead of counting each object separately.",
       zh: "每次数相同的数量，就能按组数数。可以每次加2、5、10或100，不必逐个数物品。",
       hi: "हर बार समान मात्रा जोड़कर बराबर समूहों की गिनती करें। हर वस्तु अलग गिनने के बजाय 2, 5, 10 या 100 के कदम लें।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const totalTensInNumber_Skill_Data = buildSkillConfig({
+  slug: 'totalTensInNumber',
   id: 'e89f69ed-48a7-4b1c-a4fc-d990926d0cb4',
   name: {
     lt: "Pilnų dešimčių skaičius skaičiuje",
@@ -35,7 +36,7 @@ export const totalTensInNumber_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Distinguish the total number of complete units of a place value from the digit in that place: 348 contains 34 complete tens, although its tens digit is 4. Smaller-place remainders must be counted separately.",
-    fe: {
+    frontend: {
       en: "Find all the complete tens or hundreds inside a number, not just the digit in that place. For example, 348 contains 34 full tens.",
       zh: "找出一个数含有多少个完整的十或百，而不只是看该数位的数字。例如348含有34个完整的十。",
       hi: "संख्या में पूरी दहाइयों या सैकड़ों की कुल गिनती करें, केवल उस स्थान का अंक नहीं। 348 में 34 पूरी दहाइयाँ हैं।",

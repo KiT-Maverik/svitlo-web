@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const twoStepPlan_Skill_Data = buildSkillConfig({
+  slug: 'twoStepPlan',
   id: '126e3b5b-fa90-4f68-8efc-05b0117611c3',
   name: {
     lt: "Dviejų veiksmų sprendimo planavimas",
@@ -34,7 +35,7 @@ export const twoStepPlan_Skill_Data = buildSkillConfig({
     uk: "План розв’язання задачі на дві дії",
   },
   description: { methodological: "A two-step solution includes an intermediate quantity that must be found before the final answer. The order of steps follows dependencies between the given and unknown quantities, not simply the written order of operation signs.",
-    fe: {
+    frontend: {
       en: "You can plan a two-step solution by finding which intermediate quantity is needed first and explaining why the steps go in that order.",
       zh: "你能先确定需要求出的中间量，再规划两步解题顺序，并说明这样安排的原因。",
       hi: "आप दो चरणों के समाधान की योजना बना सकते हैं, पहले आवश्यक बीच की मात्रा पहचानकर और चरणों का क्रम समझाकर।",

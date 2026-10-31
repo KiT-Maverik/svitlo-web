@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const hundredsAndTens_Skill_Data = buildSkillConfig({
+  slug: 'hundredsAndTens',
   id: '8e0dda78-413c-4120-8d68-ea185bd1a1b6',
   name: {
     lt: "Sudėtis ir atimtis — šimtai ir dešimtys",
@@ -35,7 +36,7 @@ export const hundredsAndTens_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiples of a hundred and ten are calculated as quantities of their corresponding place-value units. Mixed-place computations require equivalent exchanges to preserve overall value.",
-    fe: {
+    frontend: {
       en: "You can add and subtract tens and hundreds by their place values, regrouping when necessary.",
       zh: "你能按数位计算整十数和整百数的加减法，并在必要时进行换位重组。",
       hi: "तुम दहाइयों और सैकड़ों को उनके स्थान-मूल्य के अनुसार जोड़-घटा सकते हो और ज़रूरत पर पुनः समूह बना सकते हो।",

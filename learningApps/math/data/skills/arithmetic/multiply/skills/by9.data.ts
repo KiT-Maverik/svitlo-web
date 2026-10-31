@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const by9_Skill_Data = buildSkillConfig({
+  slug: 'by9',
   id: '9cc0ebe1-d4f6-4397-9b72-be58ff4c8056',
   name: {
     lt: "Daugyba — × 9",
@@ -35,7 +36,7 @@ export const by9_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiples of nine can be computed from nine equal groups or the relation 9a = 10a - a. Different valid strategies produce the same product without prescribing a single procedure.",
-    fe: {
+    frontend: {
       en: "You can multiply by nine using nine equal groups or by multiplying by ten and subtracting one group.",
       zh: "你能用九个相等的组表示乘以九，也能先乘以十再减去一组。",
       hi: "तुम नौ बराबर समूहों से नौ से गुणा कर सकते हो या दस से गुणा करके एक समूह घटा सकते हो।",

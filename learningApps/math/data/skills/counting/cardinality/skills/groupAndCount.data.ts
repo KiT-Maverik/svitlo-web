@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const groupAndCount_Skill_Data = buildSkillConfig({
+  slug: 'groupAndCount',
   id: '8efbfcb0-c600-40ff-b8e3-e15891c5359c',
   name: {
     en: "Counting objects in groups of tens or hundreds",
@@ -35,7 +36,7 @@ export const groupAndCount_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Determine a large set's cardinality by forming complete groups of ten or one hundred and recording any incomplete group separately. The total is the sum of all grouped and ungrouped elements.",
-    fe: {
+    frontend: {
       en: "Find a total by grouping objects into tens or hundreds, then counting any objects left outside the full groups.",
       zh: "把物品分成每组十个或一百个，再加上不足一整组的物品，求出总数。",
       hi: "वस्तुओं के दस या सौ के समूह बनाकर और बची हुई वस्तुओं को जोड़कर कुल संख्या ज्ञात करें।",

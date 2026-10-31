@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const by1AndSelf_Skill_Data = buildSkillConfig({
+  slug: 'by1AndSelf',
   id: 'a609bf69-69fb-44f8-8367-db6360b2de79',
   name: {
     lt: "Dalyba — ÷ 1 · a ÷ a",
@@ -35,7 +36,7 @@ export const by1AndSelf_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Dividing any nonzero number by one leaves it unchanged, and a nonzero number divided by itself equals one. These follow from multiplication and do not define 0/0.",
-    fe: {
+    frontend: {
       en: "Dividing by one leaves a number unchanged. Any nonzero number divided by itself equals one.",
       zh: "一个数除以一，结果不变。任何非零数除以自身都等于一。",
       hi: "किसी संख्या को एक से भाग देने पर वही संख्या मिलती है। शून्य से अलग संख्या को उसी से भाग देने पर एक मिलता है।",

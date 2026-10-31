@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const readExpression_Skill_Data = buildSkillConfig({
+  slug: 'readExpression',
   id: 'cb983432-175a-41ae-8655-468c2325f7cd',
   name: {
     lt: "Daugyba — reiškinių skaitymas",
@@ -35,7 +36,7 @@ export const readExpression_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Factors are the inputs to multiplication and the product is its result. In an equal-groups model, factors represent the group count and group size; distinguish this concrete interpretation from the symbolic expression alone.",
-    fe: {
+    frontend: {
       en: "You can read a multiplication expression, identify its factors and product, and connect it to equal groups.",
       zh: "你能读懂乘法算式，指出因数和积，并将算式与相等的组联系起来。",
       hi: "तुम गुणा का व्यंजक पढ़कर उसके गुणनखंड और गुणनफल पहचान सकते हो तथा उसे बराबर समूहों से जोड़ सकते हो।",

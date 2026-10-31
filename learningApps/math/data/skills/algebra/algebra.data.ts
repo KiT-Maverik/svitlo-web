@@ -7,6 +7,7 @@ import { patterns_SkillGroup_Data } from './patterns/patterns.data';
 import { unknowns_SkillGroup_Data } from './unknowns/unknowns.data';
 
 export const algebra_SkillDomain_Data = buildSkillDomainConfig({
+  slug: 'algebra',
   id: '5b1cb581-be28-4de4-a854-b32fbfea95d7',
   name: {
     en: "Algebra",
@@ -38,16 +39,16 @@ export const algebra_SkillDomain_Data = buildSkillDomainConfig({
     pl: "Algebra",
     uk: "Алгебра",
   },
-  groupIds: {
-    equalities: equalities_SkillGroup_Data.id,
-    expressions: expressions_SkillGroup_Data.id,
-    formalization: formalization_SkillGroup_Data.id,
-    patterns: patterns_SkillGroup_Data.id,
-    unknowns: unknowns_SkillGroup_Data.id,
+  groups: {
+    equalities: equalities_SkillGroup_Data,
+    expressions: expressions_SkillGroup_Data,
+    formalization: formalization_SkillGroup_Data,
+    patterns: patterns_SkillGroup_Data,
+    unknowns: unknowns_SkillGroup_Data,
   },
   description: {
     methodological: "Mathematical expressions, equalities, inequalities, variables and unknowns, patterns, generalizations, and symbolic descriptions of relationships. The scope is not constrained to a particular age, numerical range, or notation.",
-    fe: {
+    frontend: {
       en: "Explore how equations, expressions, letters standing for numbers, and patterns can describe relationships and help you find unknown values.",
       zh: "探索方程、表达式、代表数字的字母和数列规律怎样描述数量关系并帮助求出未知值。",
       hi: "जानो कि समीकरण, व्यंजक, संख्याओं के स्थान पर अक्षर और संख्या-पैटर्न संबंध कैसे दिखाते हैं तथा अज्ञात मान खोजने में मदद करते हैं।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const nonstandardLength_Skill_Data = buildSkillConfig({
+  slug: 'nonstandardLength',
   id: '8d0cccb9-f078-450a-af0a-b0ab6fbcbb26',
   name: {
     en: "Measuring length with repeated nonstandard units",
@@ -34,7 +35,7 @@ export const nonstandardLength_Skill_Data = buildSkillConfig({
     uk: "Вимірювання довжини повторенням однакових умовних одиниць"
   },
   description: { methodological: "Measuring length means counting consecutive equal unit intervals along an object without gaps or overlaps. The numerical result depends on the unit, but the physical length does not.",
-    fe: {
+    frontend: {
       en: "You can measure length by laying identical units end to end with no gaps or overlaps, knowing that different unit sizes give different counts.",
       zh: "你能把相同的长度单位一个接一个排好，不留空隙也不重叠来测量长度，并知道单位大小不同，数值也会不同。",
       hi: "आप बिना खाली जगह या दोहराव के बराबर माप-इकाइयाँ सिरों से जोड़कर लंबाई माप सकते हैं और समझ सकते हैं कि इकाई बदलने से गिनती बदलती है।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const oneStepModel_Skill_Data = buildSkillConfig({
+  slug: 'oneStepModel',
   id: '64808d1f-bbb7-4252-965f-9f361078720c',
   name: {
     lt: "Vieno veiksmo uždavinio modeliavimas",
@@ -34,7 +35,7 @@ export const oneStepModel_Skill_Data = buildSkillConfig({
     uk: "Модель одноходової задачі",
   },
   description: { methodological: "A mathematical model must preserve the original problem's quantities, unknown, and relationships, regardless of whether it is a drawing, diagram, or expression. Using the correct numbers to represent a different relationship does not yield a valid model.",
-    fe: {
+    frontend: {
       en: "You can show a one-step word problem using a drawing, diagram, or expression that accurately represents what is known and what must be found.",
       zh: "你能用图画、示意图或算式表示一步应用题，准确体现已知条件和需要求出的量。",
       hi: "आप एक चरण वाली शब्द-समस्या को चित्र, आरेख या व्यंजक से दिखा सकते हैं, जिसमें ज्ञात बातें और खोजी जाने वाली मात्रा सही हों।",

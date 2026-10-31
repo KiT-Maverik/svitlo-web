@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const compareAmounts_Skill_Data = buildSkillConfig({
+  slug: 'compareAmounts',
   id: '6ac377cf-4d67-4ef4-bdc7-4bb8a0895e81',
   name: {
     en: "Comparing money amounts",
@@ -34,7 +35,7 @@ export const compareAmounts_Skill_Data = buildSkillConfig({
     uk: "Порівняння грошових сум",
   },
   description: { methodological: "Compare the total face value, not the number or physical size of coins and banknotes. Values within one currency can be combined in consistent units, including fractional currency units where applicable.",
-    fe: {
+    frontend: {
       en: "You can compare two amounts of money in the same currency by adding up their values, rather than counting coins or looking at their sizes.",
       zh: "你能把同一种货币的金额相加后比较大小，而不是只数硬币数量或看它们的大小。",
       hi: "आप एक ही मुद्रा की दो राशियों की तुलना सिक्कों की संख्या या आकार देखकर नहीं, बल्कि उनकी कुल कीमत जोड़कर कर सकते हैं।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const by0And1_Skill_Data = buildSkillConfig({
+  slug: 'by0And1',
   id: 'ab67e3dd-2c8e-4633-8673-c46409c70e74',
   name: {
     lt: "Daugyba — × 0 · × 1",
@@ -35,7 +36,7 @@ export const by0And1_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Zero is absorbing and one is the identity for multiplication: a × 0 = 0 and a × 1 = a in the relevant number domain. These properties do not depend on a concrete object model.",
-    fe: {
+    frontend: {
       en: "Multiplying any number by zero gives zero; multiplying it by one leaves it unchanged.",
       zh: "任何数乘零都等于零，乘一则保持原数不变。",
       hi: "किसी भी संख्या को शून्य से गुणा करने पर शून्य मिलता है; एक से गुणा करने पर संख्या वही रहती है।",

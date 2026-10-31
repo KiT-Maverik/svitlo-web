@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const tenthsAsDivision_Skill_Data = buildSkillConfig({
+  slug: 'tenthsAsDivision',
   id: '07f83714-554b-4dd3-8e1a-3abeb1c065b0',
   name: {
     en: "Relating tenths to division by 10",
@@ -35,7 +36,7 @@ export const tenthsAsDivision_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A tenth results from partitioning the same whole into ten equal parts, with value 1/10 of that whole. Dividing by ten and representing the result as common or decimal fractions preserve the chosen unit.",
-    fe: {
+    frontend: {
       en: "One tenth is one of ten equal parts of a whole. Dividing the whole by 10 gives 1/10, which can also be written 0.1.",
       zh: "十分之一是整体平均分成十份中的一份。整体除以10得到1/10，也可写成0.1。",
       hi: "दस बराबर भागों में से एक भाग एक दशमांश है। पूरे को 10 से बाँटने पर 1/10 मिलता है, जिसे 0.1 भी लिखते हैं।",

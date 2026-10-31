@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { arithmeticPattern_Skill_Data, growingPattern_Skill_Data } from './skills';
 
 export const patterns_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'patterns',
   id: '391a608f-ebba-4587-9c15-39437e736e36',
   name: {
     en: "Patterns",
@@ -34,13 +35,13 @@ export const patterns_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Prawidłowości",
     uk: "Закономірності",
   },
-  skillIds: {
-    arithmeticPattern: arithmeticPattern_Skill_Data.id,
-    growingPattern: growingPattern_Skill_Data.id,
+  skills: {
+    arithmeticPattern: arithmeticPattern_Skill_Data,
+    growingPattern: growingPattern_Skill_Data,
   },
   description: {
     methodological: "Regular numerical changes following a rule and recognizing a sequence's structure from several terms.",
-    fe: {
+    frontend: {
       en: "Explore number patterns by finding consistent changes, checking the rule, and using it to continue a sequence.",
       zh: "探索数字规律：发现一致的变化、检验规律，并用它续写数列。",
       hi: "संख्या-पैटर्न में नियमित बदलाव खोजो, नियम की जाँच करो और उसी से क्रम आगे बढ़ाओ।",

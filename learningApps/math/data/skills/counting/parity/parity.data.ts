@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { evenOdd_Skill_Data } from './skills';
 
 export const parity_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'parity',
   id: '77e6c4eb-a1ee-4cfd-a286-7180e3b51e9f',
   name: {
     en: "Even and odd numbers",
@@ -34,12 +35,12 @@ export const parity_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Liczby parzyste i nieparzyste",
     uk: "Парність",
   },
-  skillIds: {
-    evenOdd: evenOdd_Skill_Data.id,
+  skills: {
+    evenOdd: evenOdd_Skill_Data,
   },
   description: {
     methodological: "Classifying natural numbers by whether a corresponding collection can be divided into pairs with no remainder.",
-    fe: {
+    frontend: {
       en: "Tell whether a number is even or odd by making pairs. An even amount pairs up completely; an odd amount leaves one unpaired.",
       zh: "把物品两两配对，判断数量是偶数还是奇数。偶数能全部配对，奇数会剩下一个。",
       hi: "जोड़ियाँ बनाकर पहचानें कि संख्या सम है या विषम। सम संख्या में कोई नहीं बचता, विषम में एक बचता है।",

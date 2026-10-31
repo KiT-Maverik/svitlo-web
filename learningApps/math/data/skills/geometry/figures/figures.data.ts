@@ -3,6 +3,7 @@ import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 import { identify2dShapes_Skill_Data, shapeAttributes_Skill_Data, polygon_Skill_Data, triangleRectangleSquare_Skill_Data, composeDecomposeShapes_Skill_Data } from './skills';
 
 export const figures_SkillGroup_Data = buildSkillGroupConfig({
+  slug: 'figures',
   id: 'd4c9c57c-09a9-43f5-a7c5-3544d3133e51',
   name: {
     en: "Plane figures",
@@ -34,16 +35,16 @@ export const figures_SkillGroup_Data = buildSkillGroupConfig({
     pl: "Figury płaskie",
     uk: "Плоскі фігури",
   },
-  skillIds: {
-    identify2dShapes: identify2dShapes_Skill_Data.id,
-    shapeAttributes: shapeAttributes_Skill_Data.id,
-    polygon: polygon_Skill_Data.id,
-    triangleRectangleSquare: triangleRectangleSquare_Skill_Data.id,
-    composeDecomposeShapes: composeDecomposeShapes_Skill_Data.id,
+  skills: {
+    identify2dShapes: identify2dShapes_Skill_Data,
+    shapeAttributes: shapeAttributes_Skill_Data,
+    polygon: polygon_Skill_Data,
+    triangleRectangleSquare: triangleRectangleSquare_Skill_Data,
+    composeDecomposeShapes: composeDecomposeShapes_Skill_Data,
   },
   description: {
     methodological: "Properties of polygons and other plane figures that remain independent of scale or orientation, and composing shapes from parts.",
-    fe: {
+    frontend: {
       en: "Recognize flat shapes by their sides, corners, and other properties, and build new shapes from parts.",
       zh: "根据边、角和其他性质认识平面图形，并用部分拼出新图形。",
       hi: "भुजाओं, कोनों और गुणों से सपाट आकृतियाँ पहचानें तथा हिस्सों से नई आकृतियाँ बनाएँ।",

@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const distributive_Skill_Data = buildSkillConfig({
+  slug: 'distributive',
   id: 'f8ebb2c5-d8e4-42d5-96ee-71e6ab32269e',
   name: {
     lt: "Daugyba — skirstomumo dėsnis",
@@ -35,7 +36,7 @@ export const distributive_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "The distributive law relates a(b + c) to ab + ac. Splitting a factor into convenient addends preserves the product and recombines partial products while maintaining each part's role.",
-    fe: {
+    frontend: {
       en: "You can split a number into parts, multiply each part by the same factor, and add the partial products to get the original product.",
       zh: "你能把一个数拆成几部分，分别乘以同一个因数，再把部分乘积相加得到原来的积。",
       hi: "तुम किसी संख्या को हिस्सों में बाँटकर हर हिस्से को उसी गुणनखंड से गुणा कर सकते हो और आंशिक गुणनफल जोड़कर मूल उत्तर पा सकते हो।",

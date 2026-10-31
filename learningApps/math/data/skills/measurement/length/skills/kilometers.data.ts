@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const kilometers_Skill_Data = buildSkillConfig({
+  slug: 'kilometers',
   id: 'b0749c5e-742e-40a5-931f-f1dcf93a012f',
   name: {
     en: "Using kilometers for long distances and converting to meters",
@@ -34,7 +35,7 @@ export const kilometers_Skill_Data = buildSkillConfig({
     uk: "Використання кілометрів для великих відстаней і перетворення на метри"
   },
   description: { methodological: "One kilometer equals one thousand meters. It is convenient for large distances, but an appropriate unit depends on context and precision. Conversion does not change the distance.",
-    fe: {
+    frontend: {
       en: "You can use kilometers for large distances and convert between kilometers and meters, knowing that 1 km = 1,000 m.",
       zh: "你能用千米表示较远的距离，并在千米与米之间换算，知道1千米等于1000米。",
       hi: "आप बड़ी दूरियाँ किलोमीटर में बता सकते हैं और किलोमीटर व मीटर के बीच बदल सकते हैं, जानते हुए कि 1 किमी = 1,000 मीटर।",

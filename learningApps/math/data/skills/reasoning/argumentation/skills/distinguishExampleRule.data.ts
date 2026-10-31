@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const distinguishExampleRule_Skill_Data = buildSkillConfig({
+  slug: 'distinguishExampleRule',
   id: 'a7426dcb-f817-41c5-bc9e-47244ea5301b',
   name: {
     en: "Distinguishing a single example from a general rule",
@@ -35,7 +36,7 @@ export const distinguishExampleRule_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "A confirming instance does not establish a universal mathematical proposition. A general rule requires justification across the entire specified class, while one valid counterexample refutes it.",
-    fe: {
+    frontend: {
       en: "You can tell a single example from a rule meant to hold in every case. One matching example does not prove a general rule.",
       zh: "你能区分单个例子和适用于所有情况的一般规律。一个符合规律的例子并不能证明规律总是成立。",
       hi: "आप एक उदाहरण और हर स्थिति में लागू होने वाले सामान्य नियम में अंतर कर सकते हैं। एक सही उदाहरण पूरे नियम को सिद्ध नहीं करता।",

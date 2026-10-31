@@ -2,6 +2,7 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 
 
 export const commutative_Skill_Data = buildSkillConfig({
+  slug: 'commutative',
   id: '1750b60b-9e8d-4426-b307-1b6c7a4d641b',
   name: {
     lt: "Daugyba — perstatomumo dėsnis",
@@ -35,7 +36,7 @@ export const commutative_Skill_Data = buildSkillConfig({
   },
   description: {
     methodological: "Multiplication is commutative: a × b = b × a. Reorienting a rectangular array or establishing another one-to-one mapping can show why exchanging factors does not change the product.",
-    fe: {
+    frontend: {
       en: "You can change the order of numbers being multiplied without changing their product.",
       zh: "你能交换两个因数的位置，而乘积不变。",
       hi: "तुम गुणा की संख्याओं का क्रम बदल सकते हो, लेकिन गुणनफल वही रहता है।",
