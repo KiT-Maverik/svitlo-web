@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const applyDigitalThreeDimensionalMaterials_Skill_Data = buildSkillConfig({
   slug: "applyDigitalThreeDimensionalMaterials",
   id: "9e500a5b-1b92-4662-b708-bb6a99a8cf24",
-  name: { en: "Apply Digital Three-Dimensional Materials" },
+  name: {
+    en: "Apply Digital Three-Dimensional Materials",
+    zh: "应用数字三维材质",
+    hi: "डिजिटल त्रि-आयामी सामग्री लागू करें",
+    es: "Aplicar materiales digitales tridimensionales",
+    ar: "تطبيق مواد رقمية ثلاثية الأبعاد",
+    fr: "Appliquer des matériaux numériques tridimensionnels",
+    bn: "ডিজিটাল ত্রিমাত্রিক উপকরণ প্রয়োগ করুন",
+    pt: "Aplicar materiais digitais tridimensionais",
+    ur: "ڈیجیٹل سہ جہتی مواد لاگو کریں",
+    id: "Menerapkan Material Digital Tiga Dimensi",
+    de: "Digitale dreidimensionale Materialien anwenden",
+    ja: "デジタルの三次元マテリアルを適用する",
+    ko: "디지털 3차원 재질 적용하기",
+    tr: "Dijital Üç Boyutlu Malzemeler Uygulamak",
+    vi: "Áp dụng vật liệu kỹ thuật số ba chiều",
+    ta: "மின்னிலக்க முப்பரிமாணப் பொருட்களைப் பயன்படுத்துங்கள்",
+    te: "డిజిటల్ త్రిమితీయ పదార్థాలను వర్తింపజేయండి",
+    mr: "डिजिटल त्रिमितीय साहित्य लागू करा",
+    ms: "Menggunakan Bahan Digital Tiga Dimensi",
+    he: "יישום חומרים דיגיטליים תלת־ממדיים",
+    pl: "Stosować cyfrowe materiały trójwymiarowe",
+    uk: "Застосовувати цифрові тривимірні матеріали",
+    lt: "Taikyti skaitmenines trimačių objektų medžiagas",
+    lv: "Lietot digitālus trīsdimensiju materiālus",
+    et: "Digitaalsete kolmemõõtmeliste materjalide rakendamine",
+    be: "Ужываць лічбавыя трохмерныя матэрыялы",
+    ka: "ციფრული სამგანზომილებიანი მასალების გამოყენება",
+    kk: "Цифрлық үшөлшемді материалдарды қолдану",
+    qm: "Raqemiy üç ölçemli materiallarnı qullanmaq",
+  },
   description: {
     methodological: "Define surface appearance through color, roughness, reflectivity and texture so that objects communicate a selected material or artistic style.",
     frontend: {
@@ -35,6 +65,7 @@ export const applyDigitalThreeDimensionalMaterials_Skill_Data = buildSkillConfig
           "be": "Надайце лічбаваму аб’екту патрэбную паверхню з дапамогай тэкстуры, бляску і колеру.",
           "ka": "ციფრულ ობიექტს მიანიჭეთ სასურველი ზედაპირი ტექსტურის, ბზინვარებისა და ფერის გამოყენებით.",
           "kk": "Цифрлық нысанға текстура, жылтырлық және түс арқылы қалаған беткі көрінісін беріңіз。"
-    },
+    
+      qm: "Raqemiy obyektke tekstura, parıltı ve tüs vastasınen saylanğan yüzeyni beriñiz.",},
   },
 });
