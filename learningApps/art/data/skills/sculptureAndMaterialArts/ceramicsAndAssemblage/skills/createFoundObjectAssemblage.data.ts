@@ -6,7 +6,7 @@ export const createFoundObjectAssemblage_Skill_Data = buildSkillConfig({
   name: {
     en: "Create Found-Object Assemblage",
     zh: "组合现成物创作",
-    hi: "발견한 사물로 조합 작품 만들기",
+    hi: "मिली हुई वस्तुओं से संयोजन कलाकृति बनाना",
     es: "Crear un ensamblaje con objetos encontrados",
     ar: "إنشاء تجميع فني من أشياء موجودة",
     fr: "Créer un assemblage d’objets trouvés",
@@ -39,7 +39,7 @@ export const createFoundObjectAssemblage_Skill_Data = buildSkillConfig({
     frontend: {
       en: "Combine existing objects to create a new artistic meaning.",
       zh: "将现成物品组合起来，赋予它们新的艺术含义。",
-      hi: "Существующие предметы объединяются в новое художественное целое.",
+      hi: "मौजूदा वस्तुओं को मिलाकर नया कलात्मक अर्थ रचें।",
       es: "Combina objetos existentes para crear un nuevo significado artístico.",
       ar: "اجمع أشياء موجودة لتكوين معنى فني جديد.",
       fr: "Associez des objets existants pour créer un nouveau sens artistique.",
