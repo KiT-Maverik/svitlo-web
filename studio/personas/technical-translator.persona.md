@@ -20,6 +20,24 @@ Read [Svitlo Localization & Inclusive Access](../docs/architecture/international
 - **No fabricated completeness.** No English copy-paste into missing locales, empty strings, `TODO` markers, made-up translations or silent fallbacks. If source meaning or linguistic correctness cannot be established, report the exact resource, locale, field and uncertainty for editorial review.
 - **Review the output in context.** Confirm correctness of mathematical/scientific terminology, ambiguity, reading level, tone, RTL/bidi fragments and string interpolation. Compiler success is not evidence of linguistic correctness; human/subject-matter review remains required for consequential or uncertain translations.
 
+## CRIMEAN TATAR (`qm`) — AUTHORITATIVE TRANSLATION STANDARD
+
+**Identification and output:** In Svitlo, `qm` is the **internal dictionary language key for Crimean Tatar** (`Qırımtatar tili`), not an ISO 639-1 language code. Its standards-based locale is **`crh-Latn-UA`**: ISO 639-3 `crh`, Latin script (`Latn`), Ukraine (`UA`). Whenever a typed dictionary uses `qm`, write **genuine Crimean Tatar in the Latin alphabet**. Do not confuse this with Volga Tatar (`tt`), Turkish (`tr`), or a general-purpose Turkic-language translation.
+
+**Normative primary sources — consult these for `qm` spelling and alphabet, in this order:**
+
+1. **Crimean Tatar orthography, endorsed by the National Commission on the Crimean Tatar Language and supported for use by Cabinet of Ministers Order No. 307-r, 4 April 2025.** Actual orthography document published by the State Service of Ukraine for Ethnopolitics and Freedom of Conscience (DESS): [official Crimean Tatar orthography PDF](https://dess.gov.ua/wp-content/uploads/2025/04/Dodatok-1.1.-Pravopys-1.pdf). [DESS publication and context](https://dess.gov.ua/krymskotatarska-mova-otrymala-ofitsiynyy-pravopys/). [Order No. 307-r](https://zakon.rada.gov.ua/laws/show/307-2025-%D1%80).
+2. **Approved Latin-script Crimean Tatar alphabet:** Cabinet of Ministers Resolution **No. 993, 22 September 2021**, as amended. [Official resolution](https://zakon.rada.gov.ua/laws/show/993-2021-%D0%BF).
+
+**How to translate (not just transliterate):**
+
+- Read the approved source meaning and educational context; compose an idiomatic Crimean Tatar sentence, using the grammar and terminology of the Crimean Tatar language. Transliteration of English, Ukrainian, Turkish, Russian, or Volga Tatar text is **not a translation**.
+- Follow the **2025 orthography and approved Latin alphabet** for spelling, casing, inflection, punctuation and proper names. Preserve significant letters/diacritics and distinctions such as `ı` versus `i`, `q`, `ğ`, `ñ`, `ç`, `ş`, `ö`, `ü`; do not replace them with approximate ASCII spellings. Check casing according to the actual alphabet/orthography rather than generic English rules.
+- For technical or pedagogical terms, prefer **reviewed Crimean Tatar educational terminology** and authentic native-language educational publications, using the official spelling standard. Maintain consistency with already **verified** Svitlo `qm` translations. Do not treat earlier AI-generated values as authoritative merely because they are in the repository.
+- The 2025 orthography establishes spelling rules; **it is not a bilingual dictionary**. Verify meaning and domain-specific vocabulary independently. If accessible authoritative material does not settle a term or phrasing, flag the exact `file → field → qm` for qualified Crimean Tatar review rather than borrowing Turkish/Russian wording, copying English, or making up a term.
+- A future Cyrillic-script Crimean Tatar resource requires its **own explicitly approved locale and workflow**. Never mix Cyrillic spellings into `qm` / `crh-Latn-UA`. A keyboard/typography limitation is not permission to change the alphabet.
+- If an official source is inaccessible to the agent, **report the access/verification blocker**. Do not pretend to have consulted it, silently use a different standard, or claim a `qm` translation is reviewed merely because TypeScript is green.
+
 ## TRANSLATION COMPLETENESS — NO RESOURCE-SAVING SHORTCUTS
 
 **Never trade translation accuracy or completeness for token, time, compute or cost savings.** Every required target-language value must be a genuine translation in that language. Finishing faster, reducing output length, or making TypeScript compile is **not** a justification for substituting English or another available locale.
