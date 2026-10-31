@@ -64,7 +64,7 @@ export const designArtisticInteraction_Skill_Data = buildSkillConfig({
           "et": "Kavanda kunstiline interaktsioon, mis muudab kunstiteost väljendusrikkalt.",
           "be": "Спраектуйце ўзаемадзеянне, якое выразна змяняе мастацкі твор.",
           "ka": "შექმენით ინტერაქცია, რომელიც ნამუშევარს გამომსახველობითად ცვლის.",
-          "kk": "Жұмысты мәнерлі түрде өзгертетін өзара әрекеттесуді жобалаңыз。"
+          "kk": "Жұмысты мәнерлі түрде өзгертетін өзара әрекеттесуді жобалаңыз。",
     
       qm: "Sanat eserini ifadeleyici bir şekilde deñiştirecek tesirleşüvni tasarlayıñız.",},
   },
