@@ -1,3 +1,5 @@
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { readSimpleTable_Skill_Data } from './skills';
 
 export const presentation_SkillGroup_Data = buildSkillGroupConfig({

@@ -1,3 +1,5 @@
+import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
+
 import { compareCategories_Skill_Data } from './skills';
 
 export const interpretation_SkillGroup_Data = buildSkillGroupConfig({
