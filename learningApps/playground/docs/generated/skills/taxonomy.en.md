@@ -10,7 +10,7 @@ Domains: 2
 
 Groups: 4
 
-Skills: 16
+Skills: 20
 
 ## DOMAINS
 
@@ -110,7 +110,7 @@ Skills: 6
 
 ### Arithmetic
 
-Groups: 2 · Skills: 8
+Groups: 2 · Skills: 12
 
 [arithmetic.data.ts](../../../data/skills/arithmetic/arithmetic.data.ts)
 
@@ -120,13 +120,45 @@ Groups: 2 · Skills: 8
 
 #### Multiplication
 
-Skills: 2
+Skills: 6
 
 [multiply.data.ts](../../../data/skills/arithmetic/multiply/multiply.data.ts)
 
 **Methodological description (English):** Products as equal groups or rectangular arrays, multiplication facts and properties, and place-value-based computation methods.
 
 **User-friendly description (en):** Explore multiplication through equal groups and arrays, use its properties to find products, and learn how place value helps with larger calculations.
+
+##### Multiplication — × 0 · × 1
+
+[by0And1.data.ts](../../../data/skills/arithmetic/multiply/skills/by0And1.data.ts)
+
+**Methodological description (English):** Zero is absorbing and one is the identity for multiplication: a × 0 = 0 and a × 1 = a in the relevant number domain. These properties do not depend on a concrete object model.
+
+**User-friendly description (en):** Multiplying any number by zero gives zero; multiplying it by one leaves it unchanged.
+
+##### Multiplication — Array model
+
+[arrayModel.data.ts](../../../data/skills/arithmetic/multiply/skills/arrayModel.data.ts)
+
+**Methodological description (English):** A rectangular array with the same number of elements in each row models the product of row count and elements per row. Interchanging row and column roles preserves cardinality and demonstrates multiplication commutativity.
+
+**User-friendly description (en):** You can arrange objects in equal rows and columns to show multiplication and find the total.
+
+##### Multiplication — Commutative property
+
+[commutative.data.ts](../../../data/skills/arithmetic/multiply/skills/commutative.data.ts)
+
+**Methodological description (English):** Multiplication is commutative: a × b = b × a. Reorienting a rectangular array or establishing another one-to-one mapping can show why exchanging factors does not change the product.
+
+**User-friendly description (en):** You can change the order of numbers being multiplied without changing their product.
+
+##### Multiplication — Equal groups
+
+[equalGroups.data.ts](../../../data/skills/arithmetic/multiply/skills/equalGroups.data.ts)
+
+**Methodological description (English):** Multiplication relates the number of equally sized groups, the size of one group, and the total number of objects. Unequal groups cannot be represented by a single group-count-times-group-size product without another model.
+
+**User-friendly description (en):** You can find a total from the number of equally sized groups and the number of items in each group.
 
 ##### Multiplication — Reading expressions
 

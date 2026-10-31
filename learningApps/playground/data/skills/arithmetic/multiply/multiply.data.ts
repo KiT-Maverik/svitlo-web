@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { repeatedAddition_Skill_Data, readExpression_Skill_Data } from './skills';
+import { repeatedAddition_Skill_Data, readExpression_Skill_Data, equalGroups_Skill_Data, arrayModel_Skill_Data, commutative_Skill_Data, by0And1_Skill_Data } from './skills';
 
 export const multiply_SkillGroup_Data = buildSkillGroupConfig({
   id: '1cb60869-1e45-44c0-bc72-aab0a8df8af7',
@@ -37,6 +37,10 @@ export const multiply_SkillGroup_Data = buildSkillGroupConfig({
   skillIds: {
     repeatedAddition: repeatedAddition_Skill_Data.id,
     readExpression: readExpression_Skill_Data.id,
+    equalGroups: equalGroups_Skill_Data.id,
+    arrayModel: arrayModel_Skill_Data.id,
+    commutative: commutative_Skill_Data.id,
+    by0And1: by0And1_Skill_Data.id,
   },
   description: {
     methodological: "Products as equal groups or rectangular arrays, multiplication facts and properties, and place-value-based computation methods.",
