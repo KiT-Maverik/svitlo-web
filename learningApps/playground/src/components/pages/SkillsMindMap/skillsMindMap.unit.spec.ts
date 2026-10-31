@@ -57,6 +57,31 @@ describe('Skills mind map publishing contract', () => {
     expect(() => parseSkillsDomain(malformed, 'en', 'testColors')).toThrow(/Некоректне поле/);
   });
 
+  it('supports Groups and direct Skills coexisting in one Domain', () => {
+    const mixed = {
+      ...fixture,
+      skills: [skill(8, 'violet')],
+    };
+    const parsed = parseSkillsDomain(mixed, 'en', 'testColors');
+    expect(parsed.children.map(node => node.kind))
+      .toEqual(['skillGroup', 'skillGroup', 'skill']);
+    expect(parsed.children.at(-1)?.slug).toBe('violet');
+    expect(flattenSkillNodes([parsed])).toHaveLength(8);
+  });
+
+  it('rejects obsolete IDs, missing slugs and missing frontend Skill descriptions', () => {
+    expect(() => parseSkillsDomain({ ...fixture, groupIds: { old: uuid(2) } }, 'en', 'testColors'))
+      .toThrow(/ID-посилання/);
+    expect(() => parseSkillsDomain({ ...fixture, groups: [{ ...fixture.groups[0], skillIds: {} }] }, 'en', 'testColors'))
+      .toThrow(/ID-посилання/);
+    expect(() => parseSkillsDomain({
+      ...fixture, groups: [{ ...fixture.groups[0], skills: [{ ...skill(3, 'red'), slug: undefined }] }],
+    }, 'en', 'testColors')).toThrow(/slug/);
+    expect(() => parseSkillsDomain({
+      ...fixture, groups: [{ ...fixture.groups[0], skills: [{ ...skill(3, 'red'), description: undefined }] }],
+    }, 'en', 'testColors')).toThrow(/фронтенд-опису/);
+  });
+
   it('supports direct Skills without groups', () => {
     const direct = {
       id: uuid(10), slug: 'simple', collection: 'skillDomain', name: 'Simple', language: 'en',
