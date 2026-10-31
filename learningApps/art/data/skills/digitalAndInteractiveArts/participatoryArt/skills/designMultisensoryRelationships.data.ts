@@ -64,7 +64,7 @@ export const designMultisensoryRelationships_Skill_Data = buildSkillConfig({
           "et": "Ühenda heli, pildid, liikumine või puudutus üheks kunstiliseks kogemuseks.",
           "be": "Аб’ядноўвайце гук, выявы, рух або дотык у адным мастацкім досведзе.",
           "ka": "შეაერთეთ ხმა, გამოსახულებები, მოძრაობა ან შეხება ერთ მხატვრულ გამოცდილებაში.",
-          "kk": "Дыбыс, кескін, қозғалыс немесе жанасуды бір өнер тәжірибесіне біріктіріңіз。"
+          "kk": "Дыбыс, кескін, қозғалыс немесе жанасуды бір өнер тәжірибесіне біріктіріңіз。",
     
       qm: "Ses, suret, hareket ya da toqunuvnı bir sanat tecribesine birleştiriñiz.",},
   },
