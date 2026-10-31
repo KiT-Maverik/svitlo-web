@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const createRasterArt_Skill_Data = buildSkillConfig({
   slug: "createRasterArt",
   id: "958379cd-2786-4cb7-aa69-3cd194887b3c",
-  name: { en: "Create Raster Art" },
+  name: {
+    en: "Create Raster Art",
+    zh: "创作栅格艺术",
+    hi: "रास्टर कला बनाएँ",
+    es: "Crear arte rasterizado",
+    ar: "إنشاء فن نقطي",
+    fr: "Créer une œuvre matricielle",
+    bn: "রাস্টার শিল্প তৈরি করুন",
+    pt: "Criar arte raster",
+    ur: "راسٹر آرٹ بنائیں",
+    id: "Membuat Seni Raster",
+    de: "Rasterkunst erstellen",
+    ja: "ラスターアートを制作する",
+    ko: "래스터 아트 만들기",
+    tr: "Raster Sanatı Oluşturmak",
+    vi: "Tạo nghệ thuật raster",
+    ta: "ராஸ்டர் கலையை உருவாக்குங்கள்",
+    te: "రాస్టర్ కళను సృష్టించండి",
+    mr: "रास्टर कला तयार करा",
+    ms: "Mencipta Seni Raster",
+    he: "יצירת אמנות רסטרית",
+    pl: "Tworzyć grafikę rastrową",
+    uk: "Створювати растрове мистецтво",
+    lt: "Kurti rastrinį meną",
+    lv: "Veidot rastra mākslu",
+    et: "Rasterkunsti loomine",
+    be: "Ствараць растравы твор",
+    ka: "რასტერული ხელოვნების შექმნა",
+    kk: "Растрлық өнер жасау",
+    qm: "Rastr sanatını yaratmaq",
+  },
   description: {
     methodological: "Build an intentional pixel-based image using marks, tone and layered edits.",
     frontend: {
@@ -35,6 +65,7 @@ export const createRasterArt_Skill_Data = buildSkillConfig({
           "be": "Стварайце піксельныя выявы з дапамогай прадуманых колераў, штрыхоў і слаёў.",
           "ka": "შექმენით პიქსელური გამოსახულებები გააზრებული ფერებით, ნიშნებითა და ფენებით.",
           "kk": "Ойластырылған түстер, белгілер мен қабаттар арқылы пиксельдік кескіндер жасаңыз。"
-    },
+    
+      qm: "Pikselge esaslanğan suretlerni maqsatlı tüs, iz ve qatlar ile qurıñız.",},
   },
 });
