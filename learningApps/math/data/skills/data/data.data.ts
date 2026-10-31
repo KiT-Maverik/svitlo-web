@@ -9,6 +9,7 @@ export const data_SkillDomain_Data = buildSkillDomainConfig({
   id: 'ae6d7bb7-0ee8-4bdd-8853-3d8d11233007',
   name: {
     en: 'Data',
+    qm: 'Malümatlar',
     lt: 'Duomenys',
     lv: 'Dati',
     et: 'Andmed',

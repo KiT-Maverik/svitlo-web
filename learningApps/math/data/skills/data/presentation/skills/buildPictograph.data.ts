@@ -5,6 +5,7 @@ export const buildPictograph_Skill_Data = buildSkillConfig({
   id: 'fdbb130e-d9ff-490f-9979-4b3c3ef67271',
   name: {
     en: 'Constructing a pictograph',
+    qm: 'Resimli diagramma tüzmek',
     lt: 'Piktogramos sudarymas',
     lv: 'Piktogrammas veidošana',
     et: 'Piltgraafiku koostamine',
@@ -38,6 +39,7 @@ export const buildPictograph_Skill_Data = buildSkillConfig({
       'A pictograph must faithfully represent frequencies for labeled categories using an agreed key. Identical symbols must encode identical counts, and visual decoration must not distort relationships between values.',
     frontend: {
       en: 'You can draw a pictograph that accurately shows category counts, using a clear key so identical symbols always mean the same amount.',
+      qm: 'Kategoriyalarnıñ sayısını doğru köstergen resimli diagramma çize bilesiñ. Açıq añlatılğan anahtar sayesinde aynı resim işareti er vaqıt aynı miqdarnı bildirsin.',
       zh: '你能绘制准确显示各类别数量的象形统计图，配上清楚的图例，让相同符号始终表示相同数量。',
       hi: 'आप हर श्रेणी की गिनती सही दिखाने वाला चित्र आलेख बना सकते हैं, जिसमें संकेत स्पष्ट हो और समान चित्र का अर्थ हमेशा समान संख्या हो।',
       es: 'Puedes crear un pictograma que muestre correctamente los recuentos, con una leyenda clara donde los símbolos iguales representen la misma cantidad.',
