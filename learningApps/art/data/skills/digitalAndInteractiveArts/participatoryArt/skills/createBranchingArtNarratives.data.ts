@@ -64,7 +64,7 @@ export const createBranchingArtNarratives_Skill_Data = buildSkillConfig({
           "et": "Lase publiku valikutel viia erinevate tähenduslike süžeeradadeni.",
           "be": "Дазвольце выбару аўдыторыі весці да розных змястоўных сюжэтных шляхоў.",
           "ka": "მიეცით აუდიტორიის არჩევანს საშუალება, სხვადასხვა შინაარსიან სიუჟეტურ გზამდე მიიყვანოს.",
-          "kk": "Көрермен таңдауы әртүрлі мағыналы оқиға желілеріне апарсын。"
+          "kk": "Көрермен таңдауы әртүрлі мағыналы оқиға желілеріне апарсын。",
     
       qm: "Seyirciniñ saylavları ayrı ve manalı hikâye yollarına alıp barğanını qurıñız.",},
   },
