@@ -1,7 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import {
-  clampSkillZoom, gesturePair, moveAndScaleSkillMap, panSkillMap,
-  MIN_SKILL_ZOOM, MAX_SKILL_ZOOM,
+  clampSkillZoom,
+  gesturePair,
+  moveAndScaleSkillMap,
+  panSkillMap,
+  MIN_SKILL_ZOOM,
+  MAX_SKILL_ZOOM,
 } from './skillsMindMap.gestures';
 
 describe('Skills map touch gesture math', () => {
@@ -37,25 +41,22 @@ describe('Skills map touch gesture math', () => {
     const next = moveAndScaleSkillMap(view, before, after, 1.5, viewport);
     expect(next.zoom).toBe(1.5);
     expect(next.pan).toEqual({ x: 140, y: -20 });
-    expect(
-      (before.x - 400 - view.pan.x) / view.zoom,
-    ).toBeCloseTo((after.x - 400 - next.pan.x) / next.zoom);
+    expect((before.x - 400 - view.pan.x) / view.zoom).toBeCloseTo((after.x - 400 - next.pan.x) / next.zoom);
   });
 
   it('handles single-finger drag independently from zoom', () => {
     expect(panSkillMap(view, 26, -13)).toEqual({
-      zoom: 1, pan: { x: 66, y: -33 },
+      zoom: 1,
+      pan: { x: 66, y: -33 },
     });
   });
 
   it('clamps very small and large pinch changes without losing the focal position', () => {
     expect(clampSkillZoom(0)).toBe(MIN_SKILL_ZOOM);
     expect(clampSkillZoom(100)).toBe(MAX_SKILL_ZOOM);
-    const small = moveAndScaleSkillMap(view, { x: 90, y: 80 },
-      { x: 90, y: 80 }, 0.0001, viewport);
+    const small = moveAndScaleSkillMap(view, { x: 90, y: 80 }, { x: 90, y: 80 }, 0.0001, viewport);
     expect(small.zoom).toBe(MIN_SKILL_ZOOM);
-    const large = moveAndScaleSkillMap(view, { x: 90, y: 80 },
-      { x: 90, y: 80 }, 4000, viewport);
+    const large = moveAndScaleSkillMap(view, { x: 90, y: 80 }, { x: 90, y: 80 }, 4000, viewport);
     expect(large.zoom).toBe(MAX_SKILL_ZOOM);
     for (const result of [small, large]) {
       expect(Number.isFinite(result.pan.x)).toBe(true);

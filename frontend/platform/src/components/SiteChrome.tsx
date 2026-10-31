@@ -13,11 +13,19 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-container site-header__inner">
         <Link className="brand" href="/" aria-label="Світло Academy — головна">
-          <span className="brand__symbol" aria-hidden="true">✳</span>
-          <span>світло<span className="brand__dot">.</span></span>
+          <span className="brand__symbol" aria-hidden="true">
+            ✳
+          </span>
+          <span>
+            світло<span className="brand__dot">.</span>
+          </span>
         </Link>
         <nav className="site-nav" aria-label="Головна навігація">
-          {navigation.map(({ href, label }) => <Link key={href} href={href}>{label}</Link>)}
+          {navigation.map(({ href, label }) => (
+            <Link key={href} href={href}>
+              {label}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>
@@ -29,11 +37,20 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="site-container site-footer__inner">
         <div>
-          <Link className="brand brand--footer" href="/"><span className="brand__symbol" aria-hidden="true">✳</span> світло<span className="brand__dot">.</span></Link>
+          <Link className="brand brand--footer" href="/">
+            <span className="brand__symbol" aria-hidden="true">
+              ✳
+            </span>{' '}
+            світло<span className="brand__dot">.</span>
+          </Link>
           <p>NextGen Learning. Знання, що відкривають майбутнє.</p>
         </div>
         <nav aria-label="Навігація у підвалі">
-          {navigation.map(({ href, label }) => <Link key={href} href={href}>{label}</Link>)}
+          {navigation.map(({ href, label }) => (
+            <Link key={href} href={href}>
+              {label}
+            </Link>
+          ))}
         </nav>
         <small>© {new Date().getFullYear()} Світло Academy</small>
       </div>

@@ -6,7 +6,7 @@
 
 Every Lesson should be able to **unlock small Notes during the learner's experience**. These Notes are **short, atomic memory anchors**: just enough wording, symbols, a key relation, a minimal example or a prompt to help the learner **recall essential material later**.
 
-**A Note is neither a summary of the Lesson nor the original learning content.** It is not a duplicate paragraph, transcript, chapter excerpt or full explanation. Reading a Note should *cue retrieval* of what the learner experienced rather than retell that experience. Prefer a compact formulation such as “Multiplication = equal groups” over a paragraph describing the whole lesson. The exact length is content-dependent, but **maximal brevity with enough meaning** is the default.
+**A Note is neither a summary of the Lesson nor the original learning content.** It is not a duplicate paragraph, transcript, chapter excerpt or full explanation. Reading a Note should _cue retrieval_ of what the learner experienced rather than retell that experience. Prefer a compact formulation such as “Multiplication = equal groups” over a paragraph describing the whole lesson. The exact length is content-dependent, but **maximal brevity with enough meaning** is the default.
 
 ## Intended learner workflow
 
@@ -39,11 +39,11 @@ For every new Lesson Script, the Screenwriter should include an **editorial Note
 
 ## Example of desired style (illustrative, not a literal schema)
 
-| Moment | Recall Note | Why it helps |
-| --- | --- | --- |
-| After understanding additive inverse operations | “Subtraction undoes addition.” | Triggers recall of a relation rather than recounting the demonstration |
-| After a model of straight-line light travel | “In a uniform medium, light travels in straight lines.” | Prompts the learner to recall the conditions of the model |
-| After comparing selected solar-system distances | “Model scales can differ; always check the scale.” | Reminds the learner of a limitation exposed by the simulation |
+| Moment                                          | Recall Note                                             | Why it helps                                                           |
+| ----------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------- |
+| After understanding additive inverse operations | “Subtraction undoes addition.”                          | Triggers recall of a relation rather than recounting the demonstration |
+| After a model of straight-line light travel     | “In a uniform medium, light travels in straight lines.” | Prompts the learner to recall the conditions of the model              |
+| After comparing selected solar-system distances | “Model scales can differ; always check the scale.”      | Reminds the learner of a limitation exposed by the simulation          |
 
 Do not automatically imply these Notes can be unlocked by the current Lesson implementation.
 

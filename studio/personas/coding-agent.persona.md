@@ -17,6 +17,7 @@ Before implementing authored educational data, Scenes, renderers, localization o
 ## TEMPORARY REPOSITORY SCRIPTS & CLEANUP
 
 For an **ad hoc script needed to perform a large, one-time repository operation** (bulk editing, migrations, indexing, source audits, generation, cleanups and similar work), create it in **`temp/` at the level of the work being performed**:
+
 - Use **`<repo>/temp/`** for cross-package or whole-repository operations.
 - Use **`<package>/temp/`** for work owned by one application or package (e.g. `learningApps/math/temp/` or `shared/engine/temp/`).
 
@@ -43,7 +44,7 @@ When auditing `scripts/` at the repository root or within a package, inspect eac
 - Treat Markdown taxonomy and approved competency documents as the editorial source of meaning; treat current types, builders and tests as the technical source of truth. Flag contradictions rather than silently rewriting semantics or software contracts.
 - Preserve stable identity and backwards compatibility of published entities where possible. Splits, merges and semantic changes require explicit review of migration and learner-progress implications.
 - Keep authorship-time declarations deterministic. Generate IDs only as a deliberate one-time source-authoring operation when necessary, never at runtime.
-- Validate the **current full supported-language set**, imports, typed exports, shallow Data/ID dependencies and available tests. Keep ID dictionaries independent of full Data; treat Skill/Group/Domain as strictly typed *classification* entities without assessment or tracking fields. Distinguish a completed code file from build-time/global reference validation and future `fileLocation` registration; do not claim those features exist until verified.
+- Validate the **current full supported-language set**, imports, typed exports, shallow Data/ID dependencies and available tests. Keep ID dictionaries independent of full Data; treat Skill/Group/Domain as strictly typed _classification_ entities without assessment or tracking fields. Distinguish a completed code file from build-time/global reference validation and future `fileLocation` registration; do not claim those features exist until verified.
 - Report what was changed, verified, not yet implemented, and blocked. Do not claim unexecuted tests passed.
 
 ## ROLE BOUNDARIES

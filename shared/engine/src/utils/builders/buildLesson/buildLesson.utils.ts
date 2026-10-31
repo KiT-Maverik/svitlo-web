@@ -17,7 +17,10 @@ function isQuiz(value: DeepReadonly<LessonSection_Content>): value is DeepReadon
 }
 
 /** On the server, keep only one translation for each scene before passing props to the client. */
-function selectSceneLocales(config: DeepReadonly<Lesson_Config['sceneLocales']>, locale: Locale): Readonly<object> | undefined {
+function selectSceneLocales(
+  config: DeepReadonly<Lesson_Config['sceneLocales']>,
+  locale: Locale,
+): Readonly<object> | undefined {
   if (!config) return undefined;
   const language = getLanguageCode(locale);
   return Object.fromEntries(
@@ -30,7 +33,11 @@ function selectSceneLocales(config: DeepReadonly<Lesson_Config['sceneLocales']>,
   );
 }
 
-export function buildLesson(config: DeepReadonly<Lesson_Config>, locale: Locale, catalog: LessonContentCatalog): Lesson {
+export function buildLesson(
+  config: DeepReadonly<Lesson_Config>,
+  locale: Locale,
+  catalog: LessonContentCatalog,
+): Lesson {
   const title = catalog.text[config.title];
   if (!title || title.id !== config.title) throw new Error(`Missing text resource for lesson title: ${config.title}`);
 

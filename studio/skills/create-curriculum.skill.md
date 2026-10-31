@@ -27,7 +27,7 @@ If a required input is absent or taxonomy files cannot be inspected, **stop Curr
 - **Learning resource:** title or working title of the textbook/course/learning program, discipline or interdisciplinary theme, and requested scope (whole resource, level, module, or lesson).
 - **Audience:** learner category and approximate age or professional stage when relevant; prior knowledge, literacy and language proficiency; learning context and meaningful accessibility needs. School grades are optional, not universal.
 - **Intent:** desired educational outcomes, depth, boundaries, mandatory source materials, and whether alignment with a specified local standard or accreditation is required.
-- **Taxonomy:** consult [Skill Taxonomy Workflow](./skill-taxonomy-workflow/README.md). For *unpromoted* Skills read approved staging `<PackageRoot>/docs/skills/taxonomy.md`; for *promoted* Skills read verified canonical Code definitions (localized `name` and `description`). A missing staging file is valid only after complete promotion. Do not guess scope or derive semantics from names alone.
+- **Taxonomy:** consult [Skill Taxonomy Workflow](./skill-taxonomy-workflow/README.md). For _unpromoted_ Skills read approved staging `<PackageRoot>/docs/skills/taxonomy.md`; for _promoted_ Skills read verified canonical Code definitions (localized `name` and `description`). A missing staging file is valid only after complete promotion. Do not guess scope or derive semantics from names alone.
 
 Clarify optional constraints when they matter: language(s) of output, locale/cultural setting, delivery conditions, available time, modality, assessment goals, and existing resources. Do not force a country, age range, grade, timetable, or instructional duration onto a brief that does not require one. Canonical editorial Curriculum prose and structural identifiers remain in English. Target learner-language requirements are fulfilled through separate localization artifacts, not by changing the canonical Curriculum document.
 
@@ -35,7 +35,7 @@ Clarify optional constraints when they matter: language(s) of output, locale/cul
 
 - **Catalog inventory:** Code for fully promoted entries, approved Markdown staging for outstanding entries, as defined by [Create Skills Taxonomy Skill](./skill-taxonomy-workflow/create-skills-taxonomy.skill.md). Read relevant Domain, Group and Skill names/descriptions from the correct authoritative source for each entry; there are no separate Skill Definition files.
 - For unpromoted entries, the staging Markdown preserves approved meaning and links; Code is authoritative only after reviewed promotion. Missing Code does not block Curriculum planning. Preserve traceability without creating duplicate Skill definitions.
-- **Check every referenced file exists** and refers to the intended entity. Resolve Markdown links relative to the *generated Curriculum or brief file*, **never** relative to this instruction file.
+- **Check every referenced file exists** and refers to the intended entity. Resolve Markdown links relative to the _generated Curriculum or brief file_, **never** relative to this instruction file.
 - Taxonomy **editorial approval** is distinct from runtime implementation and learner mastery. If approval or the meaning of an in-scope entity is unresolved, report a blocker; do not rely on a nonexistent per-entity Draft/Approved status.
 - Prefer a **specific Skill** as a learning target. Link to a SkillGroup or SkillDomain only for genuinely broad context or prerequisites, and make the intended breadth explicit.
 - The taxonomy is a catalog, **not** the curriculum. Derive prerequisites and progression from instructional reasoning and the audience's needs, not from folder order.
@@ -100,6 +100,7 @@ Use the following template **as written**, replacing placeholders with content a
 
 **Prerequisites authoring guidance (not part of generated Curriculum):**
 Allowed records:
+
 - Plain text: %TEXT_PREREQUISITE%
 - Skill: **%SKILL_NAME%** — [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
 - SkillGroup: **%SKILL_GROUP_NAME%** — [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
@@ -133,7 +134,6 @@ Ages: %AGE_RANGE%
 - %ITEM_1%
 - ...
 
-
 ## SCOPE & EDITORIAL NOTES
 
 Scope: %IN_SCOPE%
@@ -144,21 +144,23 @@ Dependencies: %UNRESOLVED_DEPENDENCIES_OR_GAPS%
 ## LEARNING PLAN
 
 ### %MODULE_INDEX_NUMBER% - %MODULE_NAME%
+
 Definition: %Module Markdown document link. Default [Not implemented](#). Replace only with a verified file link.%
 Code: %Module runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
-Goal: %MODULE_GOAL% 
+Goal: %MODULE_GOAL%
 %Module description in a form of a detailed reasonably long text.%
 
 #### %LESSON_INDEX_NUMBER% - %LESSON_NAME%
+
 Definition: %Lesson Markdown document/learning brief link. Default [Not implemented](#). Replace only with a verified file link.%
 Code: %Lesson runtime code link. Default [Not implemented](#). Replace only with a verified file link.%
 Goal: %LESSON_GOAL%
 %Lesson description in a form of a detailed reasonably long text.%
 Target skills:
+
 - **%SKILL_NAME%** — [Skills Taxonomy](%VERIFIED_RELATIVE_ENTITY_SOURCE_PATH%)
 - ...
 ```
-
 
 ## RESULT
 

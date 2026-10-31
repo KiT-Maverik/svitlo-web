@@ -4,7 +4,7 @@
 
 ## We build a learning ecosystem, not a content viewer
 
-Svitlo is **not** a pipeline of “read an article → watch a video → click the correct answer”. These may be valid *ingredients*, but **not** a sufficient definition of learning. The system should provide the explanations, worked examples, manipulable representations, targeted practice, retrieval opportunities, feedback, review materials and accessible alternatives needed to reach the intended learning objective.
+Svitlo is **not** a pipeline of “read an article → watch a video → click the correct answer”. These may be valid _ingredients_, but **not** a sufficient definition of learning. The system should provide the explanations, worked examples, manipulable representations, targeted practice, retrieval opportunities, feedback, review materials and accessible alternatives needed to reach the intended learning objective.
 
 The experience should help learners move through multiple distinguishable levels of capability:
 

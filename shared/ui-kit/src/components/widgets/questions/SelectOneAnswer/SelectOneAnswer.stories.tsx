@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import { QuestionAttempt, type QuestionAttemptProps } from '../helpers';
 import { singleSelectQuestion } from '../../../../../.storybook/fixtures/questions';
 
-
 type StoryProps = QuestionAttemptProps<'single-select'>;
 
 function SelectOneAnswerStory(props: StoryProps) {

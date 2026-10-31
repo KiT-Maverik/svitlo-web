@@ -21,16 +21,16 @@ function countLanguageEntries(source: string, language: string): number {
 
 describe('Playground internationalization', () => {
   it('includes localized values for every light-lesson text resource', () => {
-    const files = collectFiles(join(root, 'src/data/howLightMoves'))
-      .filter(file => file.endsWith('.data.ts'));
+    const files = collectFiles(join(root, 'src/data/howLightMoves')).filter(file => file.endsWith('.data.ts'));
 
     for (const file of files) {
       const source = readFileSync(file, 'utf8');
       const resources = source.split('createTextResource(').length - 1;
       if (!resources) continue;
       for (const language of newLanguages) {
-        expect(countLanguageEntries(source, language), `${file}: missing ${language}`)
-          .toBeGreaterThanOrEqual(resources);
+        expect(countLanguageEntries(source, language), `${file}: missing ${language}`).toBeGreaterThanOrEqual(
+          resources,
+        );
       }
     }
   });
@@ -45,10 +45,11 @@ describe('Playground internationalization', () => {
     }
   });
 
-
   it('registers all extended locales with the correct language codes', () => {
     for (let i = 0; i < additionalLocales.length; i++) {
-      expect(DEFAULT_SUPPORTED_LANGUAGES.find(item => item.locale === additionalLocales[i])?.language).toBe(languages[i]);
+      expect(DEFAULT_SUPPORTED_LANGUAGES.find(item => item.locale === additionalLocales[i])?.language).toBe(
+        languages[i],
+      );
     }
   });
 

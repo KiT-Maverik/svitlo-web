@@ -25,7 +25,6 @@ export type NavbarPreferencesProps = {
 };
 
 function LocaleSelector({ locale, onLocaleChange }: Pick<NavbarPreferencesProps, 'locale' | 'onLocaleChange'>) {
-
   return (
     <Select
       size="small"
@@ -60,7 +59,12 @@ function LocaleSelector({ locale, onLocaleChange }: Pick<NavbarPreferencesProps,
   );
 }
 
-function ThemeSwitch({ locale, mode, systemMode, onThemeChange }: Pick<NavbarPreferencesProps, 'locale' | 'mode' | 'systemMode' | 'onThemeChange'>) {
+function ThemeSwitch({
+  locale,
+  mode,
+  systemMode,
+  onThemeChange,
+}: Pick<NavbarPreferencesProps, 'locale' | 'mode' | 'systemMode' | 'onThemeChange'>) {
   const messages = getNavbarPreferencesMessages(locale);
   const isDark = mode === 'dark' || (mode === 'system' && systemMode === 'dark');
 
@@ -76,7 +80,13 @@ function ThemeSwitch({ locale, mode, systemMode, onThemeChange }: Pick<NavbarPre
   );
 }
 
-export default function NavbarPreferences({ locale, onLocaleChange, mode, systemMode, onThemeChange }: NavbarPreferencesProps) {
+export default function NavbarPreferences({
+  locale,
+  onLocaleChange,
+  mode,
+  systemMode,
+  onThemeChange,
+}: NavbarPreferencesProps) {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
       <LocaleSelector locale={locale} onLocaleChange={onLocaleChange} />

@@ -5,12 +5,17 @@ import { SkillsPageSettingsProvider } from './SkillsPageSettingsContext';
 import { fixtureJsonForSkillUrl, TEST_SKILLS_DOMAIN_SLUGS } from './skillsData.fixture';
 
 type PointerTest = {
-  id: number; x: number; y: number;
+  id: number;
+  x: number;
+  y: number;
   pointerType?: 'touch' | 'mouse';
 };
 
-function pointer(target: Element, type: 'pointerdown' | 'pointermove' | 'pointerup' | 'pointercancel',
-  { id, x, y, pointerType = 'touch' }: PointerTest) {
+function pointer(
+  target: Element,
+  type: 'pointerdown' | 'pointermove' | 'pointerup' | 'pointercancel',
+  { id, x, y, pointerType = 'touch' }: PointerTest,
+) {
   // JSDOM has no full PointerEvent implementation: synthesize the event's
   // standard properties for React's pointer event plugin.
   const event = new Event(type, { bubbles: true, cancelable: true });
@@ -24,10 +29,13 @@ describe('Skills mind-map touch gestures', () => {
   beforeEach(() => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skillAnalytics');
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const data: unknown = fixtureJsonForSkillUrl(url);
-      return { ok: data !== null, status: data !== null ? 200 : 404, json: async () => data };
-    }));
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (url: string) => {
+        const data: unknown = fixtureJsonForSkillUrl(url);
+        return { ok: data !== null, status: data !== null ? 200 : 404, json: async () => data };
+      }),
+    );
   });
   afterEach(() => {
     vi.stubGlobal('fetch', originalFetch);
@@ -35,16 +43,32 @@ describe('Skills mind-map touch gestures', () => {
   });
 
   async function map() {
-    render(<SkillsPageSettingsProvider><SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></SkillsPageSettingsProvider>);
+    render(
+      <SkillsPageSettingsProvider>
+        <SkillsMindMap domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} />
+      </SkillsPageSettingsProvider>,
+    );
     await screen.findByTestId('skill-node-testRed');
     const viewport = screen.getByTestId('skills-map-viewport');
     const captured = new Set<number>();
     Object.defineProperties(viewport, {
-      setPointerCapture: { configurable: true, value: (id: number) => { captured.add(id); } },
+      setPointerCapture: {
+        configurable: true,
+        value: (id: number) => {
+          captured.add(id);
+        },
+      },
       hasPointerCapture: { configurable: true, value: (id: number) => captured.has(id) },
-      releasePointerCapture: { configurable: true, value: (id: number) => { captured.delete(id); } },
-      getBoundingClientRect: { configurable: true, value: () =>
-        ({ left: 0, top: 0, right: 800, bottom: 600, width: 800, height: 600 }) },
+      releasePointerCapture: {
+        configurable: true,
+        value: (id: number) => {
+          captured.delete(id);
+        },
+      },
+      getBoundingClientRect: {
+        configurable: true,
+        value: () => ({ left: 0, top: 0, right: 800, bottom: 600, width: 800, height: 600 }),
+      },
     });
     return { viewport, world: screen.getByTestId('skills-map-world'), captured };
   }

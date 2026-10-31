@@ -17,6 +17,7 @@ Do not redesign schemas, edit nonlocalization fields, change IDs/slugs/imports/e
 Required: (1) an explicit package or file/directory scope, and (2) a source-language reference, normally the resource's approved English text. The target languages may be specified; otherwise fill **all missing required languages** for the scoped resource. Do not roam unrelated packages or translate already complete objects by default.
 
 Resolve these from current repository sources before editing:
+
 - The owning type/builder, which fields are translatable, whether they are mandatory or optional, and whether the keys use language codes (e.g. `be`) or full locale tags (e.g. `be-tarask`).
 - The current supported-language roster and any package-specific additions; inspect `shared/contracts/src/types/languages.ts` and actual owning types as applicable.
 - The resource's pedagogical/functional purpose, reader age/ability, subject-specific terminology, linked approved Skills, Lesson Brief/Content or UI context. **Do not assume all content targets ages 6–8.**
@@ -49,6 +50,7 @@ If scope, source meaning or essential reader context is ambiguous, isolate and r
 Report: scoped files/resources; source and target languages; localized fields added or revised; any missing or ambiguous entries; typecheck command(s) and actual exit results; which checks covered the modified files; applicable focused tests; and any editorial review still needed. Provide reviewable Git changes/PR according to the task.
 
 Mark the technical translation **complete** only when:
+
 - Each required target-locale field in scope has a genuine, context-appropriate translation, with no hidden fallback or placeholder.
 - Nonlocalization semantics and code structure are unchanged.
 - **Every changed typed resource has a passing, correctly scoped TypeScript validation** under the actual contracts.

@@ -40,13 +40,13 @@ If approved Skills, essential audience or substantive intent are missing, or a S
 
 ### Approval and revisions
 
-The new document is a **Draft Methodologist Brief**, not a draft of the *implemented Lesson*. `Methodologist status: Draft` means *pending editorial review*, not approved. Only an explicit editor decision can change this to `Approved`; a later revision affecting approved outcomes, prerequisite claims, content boundaries or Target Skills requires renewed Methodologist/editor review. Status of the whole Lesson's implementation is **not** inferred from Methodologist approval. Keep open questions visible; no automatic per-Lesson historical Review files (the Persona history policy covers Taxonomy and Curriculum only).
+The new document is a **Draft Methodologist Brief**, not a draft of the _implemented Lesson_. `Methodologist status: Draft` means _pending editorial review_, not approved. Only an explicit editor decision can change this to `Approved`; a later revision affecting approved outcomes, prerequisite claims, content boundaries or Target Skills requires renewed Methodologist/editor review. Status of the whole Lesson's implementation is **not** inferred from Methodologist approval. Keep open questions visible; no automatic per-Lesson historical Review files (the Persona history policy covers Taxonomy and Curriculum only).
 
 ## METHODOLOGIST BRIEF TEMPLATE
 
 The following is an **embedded authoring template**; replace all placeholders and remove inapplicable optional notes before delivery. Canonical editorial writing is in **English**; learner-facing content will be localized in its later authoring stage. Do not use a target-language translation as a replacement for the canonical pedagogical contract.
 
-~~~md
+```md
 # %LESSON_TITLE% — Methodologist Brief
 
 Date: %YYYY-MM-DD%
@@ -106,7 +106,7 @@ Program dependence: None
 ## Methodologist handoff
 
 %Readiness summary, scope decisions, unresolved blockers, and what the Screenwriter may design after explicit approval.%
-~~~
+```
 
 **Metadata rules:** `Code` references the **Lesson implementation**, not a Skill Code link and not a directive to embed Methodologist prose in runtime configuration. Leave exactly `Code: [Not implemented](#)` unless a real Lesson implementation has been verified, in which case use its actual relative Markdown link and exact filename. Do not fabricate a runtime UUID, registry, approval date or implementation status. The Lesson slug is a file locator, not a verified runtime ID.
 
@@ -114,9 +114,9 @@ Program dependence: None
 
 The **canonical Target Skills destination is `<PackageRoot>/data/skills/`**, the existing static authoring-data tree at the textbook application root, independent of `src/`. For a Brief in `learningApps/math/data/lessons/1/understandingNumbers/`, an **illustrative existing** Skill location `learningApps/math/data/skills/arithmetic/addition/skills/addMeaning.data.ts` would be linked as:
 
-~~~md
+```md
 - [addMeaning.data.ts](../../../../data/skills/arithmetic/addition/skills/addMeaning.data.ts)
-~~~
+```
 
 The intermediate folders `arithmetic/addition/skills/` are an **example only**; use the actual Skill source-file nesting, rather than imposing that illustrative hierarchy. Compute `../../../../data/skills/` from the actual numbered Lesson directory and append the verified Skill-relative path. **Do not point any new Brief to `src/data/skillsTaxonomy/`**. Check that the Markdown label equals the exact `.data.ts` basename and the path is normalized within the target textbook's `data/skills/` tree. Verify every linked source file exists before authoring a Brief. **If a textbook has not migrated, report the missing destinations as blockers**, not verified links; do not switch to `src/` or claim those source files exist. If the source filename/nesting is genuinely unknown, raise an explicit migration decision rather than fabricate it. Generated taxonomy Markdown remains a read-only discovery aid, not a Target Skills link destination.
 
@@ -124,9 +124,9 @@ The intermediate folders `arithmetic/addition/skills/` are an **example only**; 
 
 The independent Methodologist Brief is stored at:
 
-~~~text
+```text
 <PackageRoot>/data/lessons/<bucketNumber>/<lessonSlug>/methodologist-brief.md
-~~~
+```
 
 Example: `learningApps/math/data/lessons/1/understandingNumbers/methodologist-brief.md`.
 
@@ -144,6 +144,7 @@ Lessons remain Program-neutral and can be reused from multiple Curricula.
 **Output exactly one authored/updated `methodologist-brief.md`** in the selected Lesson's stable numbered directory, with explicit `Draft` status and a verified Lesson Code link or the specified placeholder. Do not write companion Lesson Briefs, Lesson Content documents, runtime configs, or duplicate methodical content. Leave existing specialist and implementation artifacts untouched.
 
 The accompanying editor-facing handoff (chat/PR, not a second mandatory file) reports:
+
 - The actual Brief path, Lesson slug, numbered bucket, and create/update operation.
 - Target Skills listed as direct relative links targeting the canonical `data/skills/` tree and labeled with exact `.data.ts` filenames; report any unresolved source-file migration, plus learning outcomes, scope and prerequisite decisions.
 - Optional Curriculum/Program compatibility checks, or that none was requested.

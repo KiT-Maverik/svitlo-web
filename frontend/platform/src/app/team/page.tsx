@@ -34,7 +34,11 @@ const members = [
 export default function TeamPage() {
   return (
     <main>
-      <PageIntro eyebrow="ЛЮДИ СВІТЛА" title="Наша команда" description="Маленька команда. Великі мрії. І дуже багато любові до того, що ми робимо." />
+      <PageIntro
+        eyebrow="ЛЮДИ СВІТЛА"
+        title="Наша команда"
+        description="Маленька команда. Великі мрії. І дуже багато любові до того, що ми робимо."
+      />
       <section className="section section--after-intro">
         <div className="site-container">
           <div className="team-grid">
@@ -42,19 +46,40 @@ export default function TeamPage() {
               <article className="team-card" key={person.name}>
                 <div className={'team-card__image team-card__image--' + person.style}>
                   {/* Demonstration images are not photographs of the named team members. */}
-                  <Image unoptimized src={person.photo} alt={'Ілюстративний портрет для картки «' + person.name + '»'} loading="lazy" width={900} height={900} />
+                  <Image
+                    unoptimized
+                    src={person.photo}
+                    alt={'Ілюстративний портрет для картки «' + person.name + '»'}
+                    loading="lazy"
+                    width={900}
+                    height={900}
+                  />
                   <span className="team-card__photo-note">Ілюстративне фото</span>
                 </div>
                 <div className="team-card__body">
                   <p className="team-card__role">{person.role}</p>
                   <h2>{person.name}</h2>
-                  <div className="chip-list">{person.tags.map(tag => <span className="tag-chip" key={tag}>{tag}</span>)}</div>
-                  {person.details && <div className="team-card__epilogue"><span className="team-card__ellipsis">...</span><span>Одним словом — безробітний.</span></div>}
+                  <div className="chip-list">
+                    {person.tags.map(tag => (
+                      <span className="tag-chip" key={tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  {person.details && (
+                    <div className="team-card__epilogue">
+                      <span className="team-card__ellipsis">...</span>
+                      <span>Одним словом — безробітний.</span>
+                    </div>
+                  )}
                 </div>
               </article>
             ))}
           </div>
-          <p className="content-note">Фотографії тимчасові й слугують лише для оформлення макета. Перед публікацією замінимо їх на фото учасників за їхньою згодою.</p>
+          <p className="content-note">
+            Фотографії тимчасові й слугують лише для оформлення макета. Перед публікацією замінимо їх на фото учасників
+            за їхньою згодою.
+          </p>
         </div>
       </section>
     </main>

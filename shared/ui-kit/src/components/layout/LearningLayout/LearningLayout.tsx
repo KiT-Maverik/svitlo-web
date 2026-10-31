@@ -25,7 +25,14 @@ import { getLearningLayoutMessages } from './locales';
 import { aria } from './LearningLayout.constants';
 
 export type Topic = { id: string; title: string; href: string };
-export type LearningLayoutProgress = { ready: boolean; step: number; lastStep: number; testDone: boolean; skipped: readonly string[]; quizSectionId?: string };
+export type LearningLayoutProgress = {
+  ready: boolean;
+  step: number;
+  lastStep: number;
+  testDone: boolean;
+  skipped: readonly string[];
+  quizSectionId?: string;
+};
 export interface LearningLayoutProps {
   children: ReactNode;
   topics: readonly Topic[];
@@ -42,7 +49,6 @@ export interface LearningLayoutProps {
   showBottomNavbar?: boolean;
   linkComponent?: ElementType;
 }
-
 
 export default function LearningLayout({
   children,
@@ -256,7 +262,7 @@ export default function LearningLayout({
             <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', p: 2 }}>
               {typeof settingsContent === 'function'
                 ? settingsContent({ closeSettings: () => setSettingsOpen(false) })
-                : settingsContent ?? <Typography color="text.secondary">{messages.settingsDescription}</Typography>}
+                : (settingsContent ?? <Typography color="text.secondary">{messages.settingsDescription}</Typography>)}
             </Box>
           </Box>
         </Drawer>
@@ -275,50 +281,49 @@ export default function LearningLayout({
         </Box>
       </Box>
 
-      {showBottomNavbar && <BottomNavbar
-        aria-label={aria.navigation.bottom}
-        slots={{
-          center: (
-            <>
+      {showBottomNavbar && (
+        <BottomNavbar
+          aria-label={aria.navigation.bottom}
+          slots={{
+            center: (
+              <>
+                <Button variant="contained" disabled={!progress.ready || progress.step === 0} onClick={actions.back}>
+                  {direction === 'rtl' ? '→' : '←'} {messages.actions.previous}
+                </Button>
+                <Button
+                  variant="contained"
+                  disabled={
+                    !progress.ready ||
+                    progress.step >= progress.lastStep ||
+                    (progress.step === quizStep &&
+                      !progress.testDone &&
+                      !progress.skipped.includes(progress.quizSectionId ?? ''))
+                  }
+                  onClick={actions.next}
+                >
+                  {messages.actions.next} {direction === 'rtl' ? '←' : '→'}
+                </Button>
+              </>
+            ),
+            right: (
               <Button
-                variant="contained"
-                disabled={!progress.ready || progress.step === 0}
-                onClick={actions.back}
-              >
-                {direction === 'rtl' ? '→' : '←'} {messages.actions.previous}
-              </Button>
-              <Button
-                variant="contained"
+                variant="outlined"
                 disabled={
-                  (!progress.ready || progress.step >= progress.lastStep) ||
-                  (progress.step === quizStep &&
-                    !progress.testDone &&
-                    !progress.skipped.includes(progress.quizSectionId ?? ''))
+                  !progress.ready ||
+                  !skippableSteps[progress.step] ||
+                  (progress.step === (quizStep ?? progress.lastStep) &&
+                    (progress.testDone ||
+                      Boolean(progress.quizSectionId && progress.skipped.includes(progress.quizSectionId))))
                 }
-                onClick={actions.next}
+                onClick={actions.skip}
               >
-                {messages.actions.next} {direction === 'rtl' ? '←' : '→'}
+                {messages.actions.skip}
               </Button>
-            </>
-          ),
-          right: (
-            <Button
-              variant="outlined"
-              disabled={
-                !progress.ready ||
-                !skippableSteps[progress.step] ||
-                (progress.step === (quizStep ?? progress.lastStep) &&
-                  (progress.testDone ||
-                    Boolean(progress.quizSectionId && progress.skipped.includes(progress.quizSectionId))))
-              }
-              onClick={actions.skip}
-            >
-              {messages.actions.skip}
-            </Button>
-          ),
-        }}
-        slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }}
-      />}
+            ),
+          }}
+          slotProps={{ root: { sx: { px: { xs: 1, sm: 2 } } } }}
+        />
+      )}
     </Box>
   );
 }

@@ -32,7 +32,9 @@ export function SkillsPagePreferences({ onFitToScreen }: { onFitToScreen?: () =>
   const { settings, updateSetting, mapReady, runMapAction } = useSkillsPageSettings();
   return (
     <Box component="section" aria-label="Налаштування сторінки Skills">
-      <Typography component="h3" sx={{ fontWeight: 800, mb: 0.5 }}>Skills · Відображення</Typography>
+      <Typography component="h3" sx={{ fontWeight: 800, mb: 0.5 }}>
+        Skills · Відображення
+      </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
         Налаштування цієї сторінки. Вони діють лише протягом поточного відкриття сторінки.
       </Typography>
@@ -50,7 +52,11 @@ export function SkillsPagePreferences({ onFitToScreen }: { onFitToScreen?: () =>
                   slotProps={{ input: { 'aria-label': option.title } }}
                 />
               }
-              label={<Typography variant="body2" sx={{ fontWeight: 700 }}>{option.title}</Typography>}
+              label={
+                <Typography variant="body2" sx={{ fontWeight: 700 }}>
+                  {option.title}
+                </Typography>
+              }
             />
             <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mt: 0.6 }}>
               {option.description}
@@ -60,24 +66,41 @@ export function SkillsPagePreferences({ onFitToScreen }: { onFitToScreen?: () =>
       </Stack>
       <Divider sx={{ my: 2.5 }} />
       <Box component="section" aria-label="Керування мапою Skills">
-        <Typography component="h3" sx={{ fontWeight: 800, mb: 0.5 }}>Керування мапою</Typography>
+        <Typography component="h3" sx={{ fontWeight: 800, mb: 0.5 }}>
+          Керування мапою
+        </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
           Згортайте всі гілки й картки або вмістіть видиму мапу в екран.
         </Typography>
         <Stack spacing={1}>
-          <Button variant="outlined" fullWidth disabled={!mapReady}
+          <Button
+            variant="outlined"
+            fullWidth
+            disabled={!mapReady}
             startIcon={<CloseFullscreenRoundedIcon />}
-            onClick={() => runMapAction('collapseAll')}>
+            onClick={() => runMapAction('collapseAll')}
+          >
             Згорнути все
           </Button>
-          <Button variant="outlined" fullWidth disabled={!mapReady}
+          <Button
+            variant="outlined"
+            fullWidth
+            disabled={!mapReady}
             startIcon={<OpenInFullRoundedIcon />}
-            onClick={() => runMapAction('expandAll')}>
+            onClick={() => runMapAction('expandAll')}
+          >
             Розгорнути все
           </Button>
-          <Button variant="contained" fullWidth disabled={!mapReady}
+          <Button
+            variant="contained"
+            fullWidth
+            disabled={!mapReady}
             startIcon={<CenterFocusStrongRoundedIcon />}
-            onClick={() => { runMapAction('fitToScreen'); onFitToScreen?.(); }}>
+            onClick={() => {
+              runMapAction('fitToScreen');
+              onFitToScreen?.();
+            }}
+          >
             Вмістити в екран
           </Button>
         </Stack>

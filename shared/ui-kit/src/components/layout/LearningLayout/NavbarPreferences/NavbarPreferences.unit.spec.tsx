@@ -10,8 +10,15 @@ describe('NavbarPreferences in shared UI Kit', () => {
   const setLocale = vi.fn();
   const setMode = vi.fn();
   const renderPreferences = (locale: 'uk-UA' | 'lt-LT' = 'uk-UA', mode: 'light' | 'dark' | null = 'light') =>
-    render(<NavbarPreferences locale={locale} onLocaleChange={setLocale}
-      mode={mode ?? undefined} systemMode="light" onThemeChange={setMode} />);
+    render(
+      <NavbarPreferences
+        locale={locale}
+        onLocaleChange={setLocale}
+        mode={mode ?? undefined}
+        systemMode="light"
+        onThemeChange={setMode}
+      />,
+    );
   const theme = () => screen.getByRole('switch', { name: aria.theme });
   const locale = () => screen.getByRole('combobox', { name: aria.locale });
 
@@ -56,7 +63,7 @@ describe('NavbarPreferences in shared UI Kit', () => {
   });
 
   it('keeps every legacy translation and Ukrainian fallback', () => {
-    for(const code of ['uk-UA','lt-LT','lv-LV','et-EE','be-tarask','ka-GE','kk-Cyrl-KZ'] as const) {
+    for (const code of ['uk-UA', 'lt-LT', 'lv-LV', 'et-EE', 'be-tarask', 'ka-GE', 'kk-Cyrl-KZ'] as const) {
       expect(getNavbarPreferencesMessages(code).language).toBeTruthy();
       expect(getNavbarPreferencesMessages(code).theme.dark).toBeTruthy();
       expect(getNavbarPreferencesMessages(code).theme.light).toBeTruthy();

@@ -2,7 +2,6 @@
 
 > **Historical log, not the current architecture.** This file retains dated paths and stage names from earlier, separately numbered migrations. For the canonical 2026-10-29 layout and final audit use [Monorepo & Textbook](./docs/architecture/monorepo-and-textbook.md) and [Stage 8 Audit](./docs/architecture/migration-stage-8-audit.md). Current workspaces are `learningApps/{math,playground}`, `frontend/platform`, `shared/{contracts,engine,indexdb,ui-kit}`, and `backend/server`. The formerly pending IndexedDB browser harness consolidation was completed in Stage 5; Stage 6 centralized preferences, Stage 7 bootstrapped Platform.
 
-
 ## Phase 01 — Workspace foundation (complete)
 
 ## Phase 02 — Relocate Next.js into Playground (complete)
@@ -16,13 +15,13 @@ Phase 01 established package boundaries. Phase 02 moves the existing application
 
 ### Workspaces
 
-| Path | Package | Purpose |
-| --- | --- | --- |
-| `backend/server` | `@svitlo/server` | Future server application |
-| `frontend/textbooks/math` | `@svitlo/math` | Future mathematics Next.js textbook |
-| `frontend/playground` | `@svitlo/playground` | Future independent Next.js playground |
-| `shared/engine` | `@svitlo/engine` | Framework-agnostic assessment, synchronization, generation, and other non-UI logic |
-| `shared/ui-kit` | `@svitlo/ui-kit` | Shared React/MUI components, hooks, contexts, and frontend-specific utilities |
+| Path                      | Package              | Purpose                                                                            |
+| ------------------------- | -------------------- | ---------------------------------------------------------------------------------- |
+| `backend/server`          | `@svitlo/server`     | Future server application                                                          |
+| `frontend/textbooks/math` | `@svitlo/math`       | Future mathematics Next.js textbook                                                |
+| `frontend/playground`     | `@svitlo/playground` | Future independent Next.js playground                                              |
+| `shared/engine`           | `@svitlo/engine`     | Framework-agnostic assessment, synchronization, generation, and other non-UI logic |
+| `shared/ui-kit`           | `@svitlo/ui-kit`     | Shared React/MUI components, hooks, contexts, and frontend-specific utilities      |
 
 ### Dependency boundaries
 

@@ -38,7 +38,7 @@ For every candidate Skill, **before** choosing its Domain or splitting/merging i
 **Mandatory candidate-by-candidate check BEFORE considering an entry as a new Skill or changing an existing one:**
 
 1. **Underlying competency:** In one subject-specific sentence, state what knowledge or transferable capability the learner should acquire **regardless of how it is presented or tested**.
-2. **Replace the interaction:** Replace a sorting/matching/ordering/drag-and-drop/quiz/model/diagram/key-use task with a materially different activity. Does the *same* learning outcome remain? If yes, the original interaction is likely a **Question/Practice format**, not the Skill.
+2. **Replace the interaction:** Replace a sorting/matching/ordering/drag-and-drop/quiz/model/diagram/key-use task with a materially different activity. Does the _same_ learning outcome remain? If yes, the original interaction is likely a **Question/Practice format**, not the Skill.
 3. **Map to existing Skills:** Identify the precise canonical Skill(s) whose knowledge this task would already verify. A Question may reference one or several; a task needing two Skills does **not** create a third “compare/use both” Skill by default.
 4. **Independence and transfer:** Explain what would remain independently useful to assess or track if that Question type and its particular examples disappeared. Apply both the **A-without-B test** and the **subject-ownership/context-substitution test**. Do not automatically exclude genuinely disciplinary identification, classifications, practical procedures or scientific reasoning.
 5. **Editor decision:** Classify each candidate as **(A) clearly a distinct subject Skill**, **(B) an activity/Question/Practice reusing named existing Skill(s)**, **(C) a possible cross-subject capability**, or **(D) ambiguous / overlap**. State the evidence. **Any candidate triggered below must be surfaced in a separate, explicit editor-review question, regardless of the agent's personal confidence.**
@@ -50,6 +50,7 @@ For every candidate Skill, **before** choosing its Domain or splitting/merging i
 **STOP RULE:** If the editor has not explicitly resolved an escalated case, mark it `PENDING EDITOR DECISION`, leave existing approved taxonomy entries/IDs unchanged, and do not generate their Code, UUIDs, Questions or dependent Curriculum as if the change were approved. For a new draft taxonomy, keep candidates clearly provisional **outside the canonical approved inventory** until the editor decides. Continue reviewing unrelated, unambiguous entries if safe, but do not silently infer approval from the absence of a reply. This applies even when the agent feels certain that a candidate is “just a Question” or “obviously a Skill”.
 
 **Concrete Biology precedents (already decided, not new rules for every subject):**
+
 - “Group mammals and reptiles into piles” → **Question** grounded in the existing mammal/reptile recognition Skills; “choose a sorting criterion” is not independently a Biology Skill merely because the cards depict organisms.
 - “Distinguish selection from genetic modification” → **Question** relying on the two foundational concept Skills, not necessarily an extra comparison Skill.
 - “What happens when a predator disappears?” → **Question/lesson example** for “Пояснювати взаємозалежність компонентів екосистеми”, not an extra narrow Skill.
@@ -59,7 +60,7 @@ For every candidate Skill, **before** choosing its Domain or splitting/merging i
 
 A **Skill** names what a learner can independently know, explain, determine, or do; a **Lesson**, **Question**, **diagram**, **simulation**, **graph**, **model**, or **interactive block** is a way of teaching or assessing it. The availability or use of a particular format **does not itself create a Skill**. Examine whether the intended outcome survives a change of medium: if the same biological prediction can be demonstrated from prose, a diagram, or a simulation, identify the biological reasoning instead of creating redundant "using a simulation" Skills.
 
-**Modeling is not automatically disallowed:** creating a *biologically valid causal representation* or predicting how a biological system changes can be an independently assessable subject competence when it requires disciplinary mechanisms. Generic model literacy (e.g. distinguishing a map/model from reality) may be cross-disciplinary. Apply the subject ownership and atomicity gates to individual candidates; do **not** automatically delete a whole Modeling Group because interactive models are used in Lessons. Review unresolved cases with the editor.
+**Modeling is not automatically disallowed:** creating a _biologically valid causal representation_ or predicting how a biological system changes can be an independently assessable subject competence when it requires disciplinary mechanisms. Generic model literacy (e.g. distinguishing a map/model from reality) may be cross-disciplinary. Apply the subject ownership and atomicity gates to individual candidates; do **not** automatically delete a whole Modeling Group because interactive models are used in Lessons. Review unresolved cases with the editor.
 
 **Group necessity and reuse:** do not create a SkillGroup purely to collect similar interaction formats. If pruning leaves a Group empty or with a single independent Skill, evaluate whether that Skill fits an existing coherent Group; remove empty Groups and revisit parent Domain names. Before inventing a Skill ID, look for an existing subject Skill that already tests the same outcome and update/move it if editorially approved. Physical instrument proficiency may be genuinely assessable in practice, but a virtual textbook Question alone cannot prove real-world proficiency; do not invent digital-only proof of mastery.
 
@@ -161,7 +162,7 @@ Title: **Skill Taxonomy Review**. Keep the **original review date** and append s
 
 Repeat the blocks for each Domain, Group and Skill. **Grouped and direct Domain examples are alternatives, never mixed in one Domain.** The templates show safe defaults (`Action: skip`, `Status: pending`); use `Status: implemented` only when Code is verified, and change `Action` only by an explicitly scoped authoring decision. Each field is a single Markdown line; use English for methodological text, and the explicitly selected working language for user-friendly draft copy. Use `User-friendly description: [Not authored]` when no frontend text is required. Complete all supported locales in a separate localization stage before publishing `description.fe`. The template is embedded; do not create another template file.
 
-~~~md
+```md
 # %SUBJECT_NAME% — Skills Taxonomy
 
 Date: %CURRENT_DATE%
@@ -238,17 +239,17 @@ Status: pending
 
 Methodological description: %ENGLISH_DIRECT_SKILL_COMPETENCY%
 User-friendly description: [Not authored]
-~~~
+```
 
 ## RESULT
 
 Create or update **exactly one canonical taxonomy file** in the selected textbook package (a history file is separately optional and strictly gated):
 
-~~~text
+```text
 <PackageRoot>/
 └── docs/
     └── skills/
         └── taxonomy.md
-~~~
+```
 
 Keep validated code references and editorial decisions stable. Deliver source references, Domain/Group/Skill and verified Code counts, **a separate editor-facing list of all Skill-versus-Question escalation cases with the actual editor decisions**, and unresolved questions that block final approval, plus a concise declaration of whether a qualifying dated Review was appended/created or no historical file was warranted. The **next authorized stage after approval** is [Implement Skill Code](./implement-skill-code.skill.md), not a Definition-generation step.

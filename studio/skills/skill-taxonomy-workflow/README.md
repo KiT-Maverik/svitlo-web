@@ -23,7 +23,7 @@ Each textbook's authoring taxonomy belongs under `<PackageRoot>/data/skills/`: r
 - **Before promotion:** the approved `docs/skills/taxonomy.md` is the editorial authority for outstanding, not-yet-migrated entries and required hierarchical scaffolding. The code objects, if already present but incomplete, do **not** supersede the approved prose.
 - **After individual promotion:** the verified `*.data.ts` object is authoritative for ID, localized name, English methodological description, any approved complete frontend copy, immediate catalog membership and the code representation of the entity. Its Markdown definition must not be re-authored in the staging catalog. Git history preserves the original drafting work.
 - **After complete promotion:** `docs/skills/taxonomy.md` may be removed **only if no unpromoted entries or unresolved editor decisions remain and the full Code catalog regenerates without errors**. Generated documents remain derived assets; never edit them by hand.
-- **Mixed state:** a parent Domain/Group heading can remain as a *container* for not-yet-promoted children. Do not remove this scaffold or orphan children. Its displayed description is temporary editorial context until its whole subtree can be safely represented via Code.
+- **Mixed state:** a parent Domain/Group heading can remain as a _container_ for not-yet-promoted children. Do not remove this scaffold or orphan children. Its displayed description is temporary editorial context until its whole subtree can be safely represented via Code.
 - **Approval:** human editor approves semantic/translation migration; compiler presence, locale-key counts and link existence alone cannot prove correct translation or same meaning.
 
 ## EDITORIAL SLUGS
@@ -50,7 +50,7 @@ The generator **fails** for missing localized names or English methodology and f
 
 Before changing any staging taxonomy record: preserve exact approved semantic meaning; verify source links; reconcile actual Code UUID and parent; verify locale roster at runtime contract; verify translation quality, not merely presence; inspect all downstream users; keep reportable evidence and editor approval; commit an auditable diff. If any check fails, retain the record. Do not auto-delete all implemented-looking entries. Do not remove archived originals in `studio/skills/Obsolete`; they are marked as historical.
 
-**Localization of generated views:** `--locale` localizes catalog names and available `User-friendly description (<locale>)` copy; the methodological description remains English in *every* output. Generated views do **not** contain editorial Slug/Action/Status metadata and must not claim to be a fully translated methodological document or a round-trip of the editorial staging format.
+**Localization of generated views:** `--locale` localizes catalog names and available `User-friendly description (<locale>)` copy; the methodological description remains English in _every_ output. Generated views do **not** contain editorial Slug/Action/Status metadata and must not claim to be a fully translated methodological document or a round-trip of the editorial staging format.
 
 ## Markdown → Code entity generator
 

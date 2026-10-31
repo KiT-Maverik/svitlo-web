@@ -99,15 +99,43 @@ export const DEFAULT_SUPPORTED_LANGUAGES = [
     nameUk: 'Українська',
     direction: 'ltr',
   },
-  { locale: 'lt-LT', language: 'lt', name: 'Lithuanian', nativeName: 'Lietuvių', nameUk: 'Литовська', direction: 'ltr' },
+  {
+    locale: 'lt-LT',
+    language: 'lt',
+    name: 'Lithuanian',
+    nativeName: 'Lietuvių',
+    nameUk: 'Литовська',
+    direction: 'ltr',
+  },
   { locale: 'lv-LV', language: 'lv', name: 'Latvian', nativeName: 'Latviešu', nameUk: 'Латиська', direction: 'ltr' },
   { locale: 'et-EE', language: 'et', name: 'Estonian', nativeName: 'Eesti', nameUk: 'Естонська', direction: 'ltr' },
-  { locale: 'be-tarask', language: 'be', name: 'Belarusian (Taraškievica)', nativeName: 'Беларуская (тарашкевіца)', nameUk: 'Білоруська (тарашкевиця)', direction: 'ltr' },
+  {
+    locale: 'be-tarask',
+    language: 'be',
+    name: 'Belarusian (Taraškievica)',
+    nativeName: 'Беларуская (тарашкевіца)',
+    nameUk: 'Білоруська (тарашкевиця)',
+    direction: 'ltr',
+  },
   { locale: 'ka-GE', language: 'ka', name: 'Georgian', nativeName: 'ქართული', nameUk: 'Грузинська', direction: 'ltr' },
-  { locale: 'kk-Cyrl-KZ', language: 'kk', name: 'Kazakh (Cyrillic)', nativeName: 'Қазақша', nameUk: 'Казахська', direction: 'ltr' },
+  {
+    locale: 'kk-Cyrl-KZ',
+    language: 'kk',
+    name: 'Kazakh (Cyrillic)',
+    nativeName: 'Қазақша',
+    nameUk: 'Казахська',
+    direction: 'ltr',
+  },
   // Svitlo-specific internal language key: 'qm' = Crimean Tatar (not an ISO 639 code).
   // Use the standard BCP 47 locale 'crh-Latn-UA' for external language identification.
-  { locale: 'crh-Latn-UA', language: 'qm', name: 'Crimean Tatar', nativeName: 'Qırımtatar tili', nameUk: 'Кримськотатарська', direction: 'ltr' },
+  {
+    locale: 'crh-Latn-UA',
+    language: 'qm',
+    name: 'Crimean Tatar',
+    nativeName: 'Qırımtatar tili',
+    nameUk: 'Кримськотатарська',
+    direction: 'ltr',
+  },
 ] as const satisfies readonly LanguageDefinition[];
 
 export type DefaultSupportedLanguage = (typeof DEFAULT_SUPPORTED_LANGUAGES)[number];
@@ -135,4 +163,3 @@ export interface LanguageConfiguration {
   /** When true, use only additionalLanguages and omit the defaults. */
   replaceDefaults?: boolean;
 }
-

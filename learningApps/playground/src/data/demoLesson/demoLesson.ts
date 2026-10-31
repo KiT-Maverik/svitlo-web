@@ -1,4 +1,10 @@
-import type { Lesson_Config, LessonContentCatalog, LessonSection_Config, Quiz_Config, TextResource_Config } from '@svitlo/engine/content';
+import type {
+  Lesson_Config,
+  LessonContentCatalog,
+  LessonSection_Config,
+  Quiz_Config,
+  TextResource_Config,
+} from '@svitlo/engine/content';
 import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
 
 /**
@@ -37,7 +43,13 @@ const theory: LessonSection_Config = {
   lessonId: demoIds.lesson,
   name: text(demoIds.theoryName, 'Overview', 'Огляд'),
   skippable: false,
-  content: [text(demoIds.theoryText, 'This is a generic content section for exercising the lesson renderer.', 'Це нейтральний приклад секції для перевірки відображення уроку.')],
+  content: [
+    text(
+      demoIds.theoryText,
+      'This is a generic content section for exercising the lesson renderer.',
+      'Це нейтральний приклад секції для перевірки відображення уроку.',
+    ),
+  ],
 };
 const practice: LessonSection_Config = {
   collection: 'lessonSection',
@@ -45,7 +57,13 @@ const practice: LessonSection_Config = {
   lessonId: demoIds.lesson,
   name: text(demoIds.practiceName, 'Interaction', 'Взаємодія'),
   skippable: true,
-  content: [text(demoIds.practiceText, 'Use the navigation controls to reach the sample quiz.', 'Скористайтеся навігацією, щоб перейти до демонстраційного тесту.')],
+  content: [
+    text(
+      demoIds.practiceText,
+      'Use the navigation controls to reach the sample quiz.',
+      'Скористайтеся навігацією, щоб перейти до демонстраційного тесту.',
+    ),
+  ],
 };
 
 export const demoQuizConfig: Quiz_Config = {
@@ -64,21 +82,33 @@ export const demoQuizConfig: Quiz_Config = {
     allowQuestionNavigation: true,
     skippable: true,
   },
-  questionBank: [{
-    id: demoIds.question,
-    assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.retrieval,
-    type: 'select-one-answer',
-    restrictions: [],
-    number: 1,
-    weight: 1,
-    content: [text(demoIds.prompt, 'Which control is used to check an answer?', 'Який елемент дозволяє перевірити відповідь?')],
-    explanation: text(demoIds.explanation, 'The Check button validates a selected answer.', 'Кнопка «Перевірити» перевіряє обрану відповідь.'),
-    answers: {
-      correct: text(demoIds.correct, 'Check button', 'Кнопка перевірки'),
-      incorrect: [text(demoIds.incorrect, 'Close', 'Закрити')],
-      distractors: [text(demoIds.distractor, 'Reset', 'Скинути')],
+  questionBank: [
+    {
+      id: demoIds.question,
+      assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.retrieval,
+      type: 'select-one-answer',
+      restrictions: [],
+      number: 1,
+      weight: 1,
+      content: [
+        text(
+          demoIds.prompt,
+          'Which control is used to check an answer?',
+          'Який елемент дозволяє перевірити відповідь?',
+        ),
+      ],
+      explanation: text(
+        demoIds.explanation,
+        'The Check button validates a selected answer.',
+        'Кнопка «Перевірити» перевіряє обрану відповідь.',
+      ),
+      answers: {
+        correct: text(demoIds.correct, 'Check button', 'Кнопка перевірки'),
+        incorrect: [text(demoIds.incorrect, 'Close', 'Закрити')],
+        distractors: [text(demoIds.distractor, 'Reset', 'Скинути')],
+      },
     },
-  }],
+  ],
   results: { visibility: 'immediate', showScore: true },
   screen: {},
 };

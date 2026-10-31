@@ -42,10 +42,8 @@ export function moveAndScaleSkillMap(
   return {
     zoom,
     pan: {
-      x: nextMidpoint.x - centerX -
-        ratio * (previousMidpoint.x - centerX - view.pan.x),
-      y: nextMidpoint.y - centerY -
-        ratio * (previousMidpoint.y - centerY - view.pan.y),
+      x: nextMidpoint.x - centerX - ratio * (previousMidpoint.x - centerX - view.pan.x),
+      y: nextMidpoint.y - centerY - ratio * (previousMidpoint.y - centerY - view.pan.y),
     },
   };
 }

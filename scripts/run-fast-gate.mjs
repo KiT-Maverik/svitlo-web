@@ -6,12 +6,18 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-function assert(ok, message) { if (!ok) throw new Error(message); }
-function json(file) { return JSON.parse(fs.readFileSync(path.join(repoRoot, file), 'utf8')); }
+function assert(ok, message) {
+  if (!ok) throw new Error(message);
+}
+function json(file) {
+  return JSON.parse(fs.readFileSync(path.join(repoRoot, file), 'utf8'));
+}
 function exec(command, args) {
   const result = spawnSync(command, args, { cwd: repoRoot, stdio: 'inherit', shell: false });
-  assert(!result.error && result.status === 0,
-    'FastGate command failed: ' + command + ' ' + args.join(' ') + (result.error ? ': ' + result.error.message : ''));
+  assert(
+    !result.error && result.status === 0,
+    'FastGate command failed: ' + command + ' ' + args.join(' ') + (result.error ? ': ' + result.error.message : ''),
+  );
 }
 function expandWorkspaces() {
   const result = [];
@@ -43,18 +49,29 @@ export function chooseChecks(changed, workspaces) {
   for (const file of changed) {
     const pkg = packageFor(file, workspaces);
     if (pkg) affected.add(pkg.name);
-    if (file.startsWith('shared/') && pkg &&
-      ['@svitlo/contracts', '@svitlo/engine', '@svitlo/indexdb', '@svitlo/ui-kit'].includes(pkg.name)) {
+    if (
+      file.startsWith('shared/') &&
+      pkg &&
+      ['@svitlo/contracts', '@svitlo/engine', '@svitlo/indexdb', '@svitlo/ui-kit'].includes(pkg.name)
+    ) {
       affected.add('@svitlo/math');
     }
   }
   if (global) for (const name of packages.keys()) affected.add(name);
-  if (lockChange) for (const name of ['@svitlo/contracts', '@svitlo/engine', '@svitlo/indexdb', '@svitlo/ui-kit', '@svitlo/math']) {
-    if (packages.has(name)) affected.add(name);
-  }
-  const taxonomy = global || lockChange || changed.some(f => f.startsWith('learningApps/math/data/skills/') ||
-    f.startsWith('scripts/check-skills-taxonomy-structure') ||
-    f.startsWith('shared/contracts/') || f.startsWith('shared/engine/'));
+  if (lockChange)
+    for (const name of ['@svitlo/contracts', '@svitlo/engine', '@svitlo/indexdb', '@svitlo/ui-kit', '@svitlo/math']) {
+      if (packages.has(name)) affected.add(name);
+    }
+  const taxonomy =
+    global ||
+    lockChange ||
+    changed.some(
+      f =>
+        f.startsWith('learningApps/math/data/skills/') ||
+        f.startsWith('scripts/check-skills-taxonomy-structure') ||
+        f.startsWith('shared/contracts/') ||
+        f.startsWith('shared/engine/'),
+    );
   const mathComponents = changed.some(f => f.startsWith('learningApps/math/src/') && /\.(ts|tsx|js|jsx)$/.test(f));
   const jsFiles = changed.filter(f => /\.(?:mjs|cjs|js)$/.test(f) && fs.existsSync(path.join(repoRoot, f)));
   const jsonFiles = changed.filter(f => f.endsWith('.json') && fs.existsSync(path.join(repoRoot, f)));
@@ -63,7 +80,9 @@ export function chooseChecks(changed, workspaces) {
 function changedFiles(base, head) {
   assert(/^[a-f0-9]{40}$/.test(base) && /^[a-f0-9]{40}$/.test(head), 'Base and head must be 40-character commit SHAs');
   return execFileSync('git', ['diff', '--name-only', '-z', base, head], { cwd: repoRoot })
-    .toString('utf8').split('\0').filter(Boolean);
+    .toString('utf8')
+    .split('\0')
+    .filter(Boolean);
 }
 function runGate(changed) {
   const workspaces = expandWorkspaces();
@@ -72,17 +91,34 @@ function runGate(changed) {
   for (const f of plan.jsFiles) exec('node', ['--check', f]);
   for (const f of plan.jsonFiles) json(f);
   exec('node', ['--test', 'scripts/check-skills-taxonomy-structure.spec.mjs', 'scripts/run-fast-gate.spec.mjs']);
-  if (changed.some(f => f.startsWith('scripts/generators/pages/skillAnalytics/') ||
-    f.startsWith('learningApps/playground/data/skills/'))) {
+  if (
+    changed.some(
+      f =>
+        f.startsWith('scripts/generators/pages/skillAnalytics/') ||
+        f.startsWith('learningApps/playground/data/skills/'),
+    )
+  ) {
     exec('node', ['--test', 'scripts/generators/pages/skillAnalytics/generate-skill-analytics.spec.mjs']);
-    exec('node', ['scripts/generators/pages/skillAnalytics/generate-skill-analytics.mjs',
-      '--package', 'learningApps/playground', '--measure']);
+    exec('node', [
+      'scripts/generators/pages/skillAnalytics/generate-skill-analytics.mjs',
+      '--package',
+      'learningApps/playground',
+      '--measure',
+    ]);
   }
-  if (changed.some(f => /^scripts\/(?:implement-skills-taxonomy|generate-skills-taxonomy)(?:\.mjs|\.spec\.mjs|\.roundtrip\.spec\.mjs)$/.test(f))) {
-    exec('node', ['--test',
+  if (
+    changed.some(f =>
+      /^scripts\/(?:implement-skills-taxonomy|generate-skills-taxonomy)(?:\.mjs|\.spec\.mjs|\.roundtrip\.spec\.mjs)$/.test(
+        f,
+      ),
+    )
+  ) {
+    exec('node', [
+      '--test',
       'scripts/implement-skills-taxonomy.spec.mjs',
       'scripts/generate-skills-taxonomy.spec.mjs',
-      'scripts/generate-skills-taxonomy.roundtrip.spec.mjs']);
+      'scripts/generate-skills-taxonomy.roundtrip.spec.mjs',
+    ]);
   }
   if (plan.taxonomy) exec('node', ['scripts/check-skills-taxonomy-structure.mjs']);
 

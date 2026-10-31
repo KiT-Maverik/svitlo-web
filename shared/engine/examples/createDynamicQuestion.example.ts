@@ -1,5 +1,9 @@
 import { createDynamicQuestion } from '../src/generation';
-import type { DynamicQuestion_Config, DynamicQuestion_NumberArgumentConfig, DynamicQuestion_Variant } from '../src/generation';
+import type {
+  DynamicQuestion_Config,
+  DynamicQuestion_NumberArgumentConfig,
+  DynamicQuestion_Variant,
+} from '../src/generation';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../src/localization';
 import type { TextResource_AllLocales_Config } from '@svitlo/contracts/content';
 

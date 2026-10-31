@@ -5,8 +5,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import {
-  languageCodes, loadSkillGraph, renderSkillFiles,
-  writePublishedFiles, checkPublishedFiles,
+  languageCodes,
+  loadSkillGraph,
+  renderSkillFiles,
+  writePublishedFiles,
+  checkPublishedFiles,
 } from './publish-skills-data.mjs';
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
@@ -14,16 +17,24 @@ const fixture = path.join(repo, 'learningApps/playground/data/skills');
 
 function resources() {
   const codes = languageCodes();
-  return { codes, graph: loadSkillGraph(fixture, codes),
-    files: renderSkillFiles(loadSkillGraph(fixture, codes), codes) };
+  return {
+    codes,
+    graph: loadSkillGraph(fixture, codes),
+    files: renderSkillFiles(loadSkillGraph(fixture, codes), codes),
+  };
 }
 
 test('publishes one immutable meta and one localization per entity, without index.json', () => {
   const { codes, graph, files } = resources();
   assert.equal(graph.length, 2);
-  assert.equal(graph.reduce((sum, domain) => sum + domain.groups.length, 0), 4);
-  assert.equal(graph.reduce((sum, domain) =>
-    sum + domain.groups.reduce((total, group) => total + group.skills.length, 0), 0), 8);
+  assert.equal(
+    graph.reduce((sum, domain) => sum + domain.groups.length, 0),
+    4,
+  );
+  assert.equal(
+    graph.reduce((sum, domain) => sum + domain.groups.reduce((total, group) => total + group.skills.length, 0), 0),
+    8,
+  );
   assert.equal(files.size, 14 * (codes.length + 1));
   assert.equal(files.has('index.json'), false);
 
@@ -52,8 +63,7 @@ test('publishes one immutable meta and one localization per entity, without inde
     assert.equal(Object.hasOwn(copy, 'slug'), false);
     assert.equal(Object.hasOwn(copy, 'collection'), false);
   }
-  assert(![...files.values()].some(value =>
-    value.includes('"methodological"') || value.includes('"frontend"')));
+  assert(![...files.values()].some(value => value.includes('"methodological"') || value.includes('"frontend"')));
   assert(codes.includes('en') && codes.includes('uk'));
 });
 
@@ -72,8 +82,10 @@ test('strictly rejects missing translations, authored slugs and frontend descrip
     fails(original.replace('    en: "[TEST en] Recognize red",\n', ''), /missing \[en\]/);
     fails(original.replace("  slug: 'testRecognizeRed',\n", ''), /slug/);
     fails(original.replace('    frontend: {', '    fe: {'), /frontend|Unexpected/);
-    fails(original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\n', ''),
-      /missing \[uk\]/);
+    fails(
+      original.replace('      uk: "[TEST uk] Recognize the color red in a simple visual example.",\n', ''),
+      /missing \[uk\]/,
+    );
   } finally {
     fs.rmSync(temp, { recursive: true, force: true });
   }

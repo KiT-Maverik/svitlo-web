@@ -8,15 +8,23 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync, brotliCompressSync } from 'node:zlib';
 import {
-  languageCodes, loadSkillGraph, writePublishedFiles, checkPublishedFiles, taxonomyCollections,
+  languageCodes,
+  loadSkillGraph,
+  writePublishedFiles,
+  checkPublishedFiles,
+  taxonomyCollections,
 } from '../../data/publish-skills-data.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../..');
 const collectionByKind = Object.freeze({
-  SkillDomain: 'skillDomain', SkillGroup: 'skillGroup', Skill: 'skill',
+  SkillDomain: 'skillDomain',
+  SkillGroup: 'skillGroup',
+  Skill: 'skill',
 });
 
-function assert(ok, message) { if (!ok) throw new Error(message); }
+function assert(ok, message) {
+  if (!ok) throw new Error(message);
+}
 
 /** The page gets the exact fields it renders; no per-entity metadata lookups. */
 export function renderSkillAnalyticsFiles(graph, codes) {
@@ -35,16 +43,20 @@ export function renderSkillAnalyticsFiles(graph, codes) {
       collection,
       name: entity.name[language],
       ...(entity.description ? { description: entity.description[language] } : {}),
-      ...((entity.groups?.length || entity.skills?.length)
-        ? { children: [
-          ...(entity.groups ?? []).map(child => node(child, language)),
-          ...(entity.skills ?? []).map(child => node(child, language)),
-        ] } : {}),
+      ...(entity.groups?.length || entity.skills?.length
+        ? {
+            children: [
+              ...(entity.groups ?? []).map(child => node(child, language)),
+              ...(entity.skills ?? []).map(child => node(child, language)),
+            ],
+          }
+        : {}),
     };
-    assert(typeof result.name === 'string' && result.name.trim(),
-      'Missing ' + language + ' name for ' + entity.slug);
-    assert(collection !== 'skill' || (typeof result.description === 'string' && result.description.trim()),
-      'Missing ' + language + ' frontend description for ' + entity.slug);
+    assert(typeof result.name === 'string' && result.name.trim(), 'Missing ' + language + ' name for ' + entity.slug);
+    assert(
+      collection !== 'skill' || (typeof result.description === 'string' && result.description.trim()),
+      'Missing ' + language + ' frontend description for ' + entity.slug,
+    );
     return result;
   }
   // Validate globally unique IDs once, irrespective of language.
@@ -58,9 +70,12 @@ export function renderSkillAnalyticsFiles(graph, codes) {
   assert(graph.length > 0, 'Skill Analytics page requires at least one Domain');
   for (const code of codes) {
     assert(!files.has(code + '.json'), 'Duplicate language: ' + code);
-    files.set(code + '.json', JSON.stringify({
-      domains: graph.map(domain => node(domain, code)),
-    }) + '\n');
+    files.set(
+      code + '.json',
+      JSON.stringify({
+        domains: graph.map(domain => node(domain, code)),
+      }) + '\n',
+    );
   }
   return files;
 }
@@ -76,9 +91,15 @@ export function measureSkillAnalyticsFiles(files) {
     };
   });
   const sum = key => rows.reduce((total, item) => total + item[key], 0);
-  return { count: rows.length, total: sum('bytes'), gzip: sum('gzip'),
-    brotli: sum('brotli'), min: Math.min(...rows.map(x => x.bytes)),
-    max: Math.max(...rows.map(x => x.bytes)), rows };
+  return {
+    count: rows.length,
+    total: sum('bytes'),
+    gzip: sum('gzip'),
+    brotli: sum('brotli'),
+    min: Math.min(...rows.map(x => x.bytes)),
+    max: Math.max(...rows.map(x => x.bytes)),
+    rows,
+  };
 }
 
 function options(args) {
@@ -86,8 +107,7 @@ function options(args) {
   for (let i = 0; i < args.length; i++) {
     const token = args[i];
     if (token === '--package') {
-      assert(!packageName && args[i + 1] && !args[i + 1].startsWith('--'),
-        'Missing or repeated --package');
+      assert(!packageName && args[i + 1] && !args[i + 1].startsWith('--'), 'Missing or repeated --package');
       packageName = args[++i];
     } else if (['--write', '--check', '--measure'].includes(token)) {
       assert(!action, 'Specify exactly one action');
@@ -96,8 +116,10 @@ function options(args) {
   }
   assert(packageName && action, 'Usage: --package learningApps/<textbook> --write|--check|--measure');
   const pkg = path.resolve(repoRoot, packageName);
-  assert(pkg.startsWith(path.join(repoRoot, 'learningApps') + path.sep) &&
-    fs.existsSync(path.join(pkg, 'package.json')), 'Invalid textbook package');
+  assert(
+    pkg.startsWith(path.join(repoRoot, 'learningApps') + path.sep) && fs.existsSync(path.join(pkg, 'package.json')),
+    'Invalid textbook package',
+  );
   return { pkg, action };
 }
 
@@ -113,8 +135,15 @@ function main() {
   } else if (action === '--write') {
     writePublishedFiles(output, files);
     const metrics = measureSkillAnalyticsFiles(files);
-    console.log('Published skillAnalytics: ' + files.size + ' languages, ' +
-      metrics.total + ' uncompressed bytes, ' + metrics.gzip + ' gzip bytes total');
+    console.log(
+      'Published skillAnalytics: ' +
+        files.size +
+        ' languages, ' +
+        metrics.total +
+        ' uncompressed bytes, ' +
+        metrics.gzip +
+        ' gzip bytes total',
+    );
   } else {
     const diff = checkPublishedFiles(output, files);
     if (diff.missing.length || diff.changed.length || diff.stale.length) {
@@ -124,5 +153,10 @@ function main() {
   }
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  try { main(); } catch (error) { console.error(error); process.exitCode = 1; }
+  try {
+    main();
+  } catch (error) {
+    console.error(error);
+    process.exitCode = 1;
+  }
 }

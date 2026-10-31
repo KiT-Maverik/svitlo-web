@@ -1068,7 +1068,6 @@ Status: pending
 Methodological description: Recognize the measured response or outcome whose variation an investigation attempts to account for, distinguishing outcome measurement from factors that may influence it.
 User-friendly description: Recognize what a study measures as its outcome.
 
-
 ##### Control relevant experimental conditions
 
 Slug: controlRelevantExperimentalConditions
@@ -1717,7 +1716,6 @@ Status: pending
 
 Methodological description: Compare accounts of how conflicting ultimate-belief claims might be understood and evaluated while respecting freedom of conscience.
 User-friendly description: Explore philosophical responses to competing religious truth claims.
-
 
 ##### Analyze religious tolerance as an ethical principle
 
@@ -2794,7 +2792,6 @@ Status: pending
 
 Methodological description: Compare readings of an utterance using the speaker's context, conventions, and available evidence.
 User-friendly description: Choose between interpretations by considering context and available evidence.
-
 
 #### Language, Truth, and Power
 

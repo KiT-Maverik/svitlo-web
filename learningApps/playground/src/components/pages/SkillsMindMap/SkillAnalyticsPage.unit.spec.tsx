@@ -11,10 +11,13 @@ describe('Skills page in shared LearningLayout', () => {
   beforeEach(() => {
     document.documentElement.lang = 'uk';
     window.history.replaceState({}, '', '/skillAnalytics');
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      const data: unknown = fixtureJsonForSkillUrl(url);
-      return { ok: data !== null, status: data === null ? 404 : 200, json: async () => data };
-    }));
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (url: string) => {
+        const data: unknown = fixtureJsonForSkillUrl(url);
+        return { ok: data !== null, status: data === null ? 404 : 200, json: async () => data };
+      }),
+    );
   });
   afterEach(() => {
     vi.stubGlobal('fetch', originalFetch);
@@ -22,7 +25,11 @@ describe('Skills page in shared LearningLayout', () => {
   });
 
   it('opens the existing navbar settings drawer and changes page-owned Skill cards', async () => {
-    render(<ThemeProvider theme={theme}><SkillAnalyticsPage domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} /></ThemeProvider>);
+    render(
+      <ThemeProvider theme={theme}>
+        <SkillAnalyticsPage domainSlugs={TEST_SKILLS_DOMAIN_SLUGS} />
+      </ThemeProvider>,
+    );
     const card = await screen.findByTestId('skill-node-testRed');
     expect(within(card).getByRole('progressbar')).toBeInTheDocument();
     expect(screen.getByRole('navigation', { name: aria.navigation.top })).toBeInTheDocument();

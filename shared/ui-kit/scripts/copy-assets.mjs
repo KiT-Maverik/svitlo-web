@@ -7,9 +7,9 @@ function copy(dir) {
     const path = join(dir, entry.name);
     if (entry.isDirectory()) copy(path);
     else if (entry.isFile() && entry.name.endsWith('.module.css')) {
-      const output = join(dist, relative(src,path));
-      mkdirSync(dirname(output),{recursive:true});
-      copyFileSync(path,output);
+      const output = join(dist, relative(src, path));
+      mkdirSync(dirname(output), { recursive: true });
+      copyFileSync(path, output);
     }
   }
 }

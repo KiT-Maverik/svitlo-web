@@ -25,7 +25,7 @@ Git is **not** the store for learner answers, private progress, account data, ru
 
 A minimal illustrative pattern (**confirm the current target contract before implementing**):
 
-~~~ts
+```ts
 import { buildLessonConfig } from '@/utils';
 import { example_Lesson_Ids } from './example.ids';
 
@@ -33,7 +33,7 @@ export const example_Lesson_Data = buildLessonConfig({
   id: example_Lesson_Ids.example,
   // ...the remaining fields required by the real Lesson_Config contract
 });
-~~~
+```
 
 The example deliberately does **not** invent a full `Lesson_Config`; inspect the current Engine version and builder before populating required fields.
 

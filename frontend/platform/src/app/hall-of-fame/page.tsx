@@ -29,7 +29,11 @@ const placeholders: readonly { name: string; country: FlagCode }[] = [
 export default function HallOfFamePage() {
   return (
     <main>
-      <PageIntro eyebrow="ДЯКУЄМО, ЩО ВИ З НАМИ" title="Зал слави" description="Світло стає яскравішим завдяки людям. Тут ми з вдячністю відзначатимемо тих, хто допомагає проєкту зростати." />
+      <PageIntro
+        eyebrow="ДЯКУЄМО, ЩО ВИ З НАМИ"
+        title="Зал слави"
+        description="Світло стає яскравішим завдяки людям. Тут ми з вдячністю відзначатимемо тих, хто допомагає проєкту зростати."
+      />
       <section className="section section--after-intro">
         <div className="site-container">
           <div className="hall-panel">
@@ -37,12 +41,17 @@ export default function HallOfFamePage() {
             <p className="hall-names">
               {placeholders.map(person => (
                 <Fragment key={person.name}>
-                  <span className="hall-entry"><CountryFlag code={person.country} /><span>{person.name}</span></span>{' '}
+                  <span className="hall-entry">
+                    <CountryFlag code={person.country} />
+                    <span>{person.name}</span>
+                  </span>{' '}
                 </Fragment>
               ))}
             </p>
           </div>
-          <p className="content-note">Усі імена вище — вигадані демонстраційні приклади. Справжніх учасників додаватимемо лише з їхньої згоди.</p>
+          <p className="content-note">
+            Усі імена вище — вигадані демонстраційні приклади. Справжніх учасників додаватимемо лише з їхньої згоди.
+          </p>
         </div>
       </section>
     </main>

@@ -18,28 +18,54 @@ export default function MaterialsPage() {
   const apps = getLearningApps();
   return (
     <main>
-      <PageIntro eyebrow="ПІЗНАВАЙ · ДОСЛІДЖУЙ · СТВОРЮЙ" title="Навчальні матеріали" description="Інтерактивні підручники — це простір для маленьких і великих відкриттів. Обирай цікаву тему та навчайся у своєму темпі." />
+      <PageIntro
+        eyebrow="ПІЗНАВАЙ · ДОСЛІДЖУЙ · СТВОРЮЙ"
+        title="Навчальні матеріали"
+        description="Інтерактивні підручники — це простір для маленьких і великих відкриттів. Обирай цікаву тему та навчайся у своєму темпі."
+      />
       <section className="section section--after-intro">
         <div className="site-container">
-          <div className="section-bar"><h2>Наші підручники</h2><span>Бібліотека поповнюється</span></div>
+          <div className="section-bar">
+            <h2>Наші підручники</h2>
+            <span>Бібліотека поповнюється</span>
+          </div>
           <div className="materials-grid">
             {apps.map(app => (
               <article className="material-card material-card--featured" key={app.id}>
-                <div className="material-card__symbol" aria-hidden="true">π</div>
-                <div><span className="material-card__status">{app.url ? 'МОЖНА ВІДКРИТИ' : 'ГОТУЄТЬСЯ'}</span><h3>{app.name}</h3><p>{app.description}</p></div>
-                {app.url ? <a className="text-link" href={app.url} target="_blank" rel="noopener noreferrer">Відкрити підручник <span aria-hidden="true">↗</span></a>
-                  : <span className="material-card__coming">Посилання з’явиться після публікації</span>}
+                <div className="material-card__symbol" aria-hidden="true">
+                  π
+                </div>
+                <div>
+                  <span className="material-card__status">{app.url ? 'МОЖНА ВІДКРИТИ' : 'ГОТУЄТЬСЯ'}</span>
+                  <h3>{app.name}</h3>
+                  <p>{app.description}</p>
+                </div>
+                {app.url ? (
+                  <a className="text-link" href={app.url} target="_blank" rel="noopener noreferrer">
+                    Відкрити підручник <span aria-hidden="true">↗</span>
+                  </a>
+                ) : (
+                  <span className="material-card__coming">Посилання з’явиться після публікації</span>
+                )}
               </article>
             ))}
             {upcoming.map(subject => (
               <article className="material-card" key={subject.name}>
-                <div className="material-card__symbol" aria-hidden="true">{subject.sign}</div>
-                <div><span className="material-card__status">У РОЗРОБЦІ</span><h3>{subject.name}</h3><p>{subject.description}</p></div>
+                <div className="material-card__symbol" aria-hidden="true">
+                  {subject.sign}
+                </div>
+                <div>
+                  <span className="material-card__status">У РОЗРОБЦІ</span>
+                  <h3>{subject.name}</h3>
+                  <p>{subject.description}</p>
+                </div>
                 <span className="material-card__coming">Незабаром</span>
               </article>
             ))}
           </div>
-          <div className="materials-outro">Знання для всіх — не привілей, а можливість. <Link href="/scholarships">Наші стипендійні ініціативи ↗</Link></div>
+          <div className="materials-outro">
+            Знання для всіх — не привілей, а можливість. <Link href="/scholarships">Наші стипендійні ініціативи ↗</Link>
+          </div>
         </div>
       </section>
     </main>

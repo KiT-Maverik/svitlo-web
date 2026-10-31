@@ -41,22 +41,21 @@ function walk(dir) {
   });
 }
 function isProductionSource(file) {
-  return /\.(ts|tsx)$/.test(file) &&
+  return (
+    /\.(ts|tsx)$/.test(file) &&
     !/\.(spec|test|e2e|stories|typecheck|unit\.fx|unit\.mx)\.(ts|tsx)$/.test(file) &&
-    !file.includes(sep + 'testing' + sep);
+    !file.includes(sep + 'testing' + sep)
+  );
 }
 function packageName(specifier) {
-  return specifier.startsWith('@')
-    ? specifier.split('/').slice(0, 2).join('/')
-    : specifier.split('/')[0];
+  return specifier.startsWith('@') ? specifier.split('/').slice(0, 2).join('/') : specifier.split('/')[0];
 }
 function isPublicImport(pkg, specifier) {
   const subpath = specifier === pkg.name ? '.' : '.' + specifier.slice(pkg.name.length);
   return Object.keys(pkg.exports || {}).some(key => {
     if (key === subpath) return true;
     const wildcard = key.indexOf('*');
-    return wildcard >= 0 && subpath.startsWith(key.slice(0, wildcard)) &&
-      subpath.endsWith(key.slice(wildcard + 1));
+    return wildcard >= 0 && subpath.startsWith(key.slice(0, wildcard)) && subpath.endsWith(key.slice(wildcard + 1));
   });
 }
 
@@ -65,8 +64,10 @@ for (const [path, pkg] of workspaces) {
   const tsconfig = readJson(path + '/tsconfig.json');
   if (tsconfig.extends && tsconfig.extends.startsWith('.')) {
     const base = relative(packageRoot, resolve(packageRoot, tsconfig.extends));
-    assert(base !== '..' && !base.startsWith('..' + sep) && !isAbsolute(base),
-      'External TypeScript config prevents standalone extraction: ' + path + ' -> ' + tsconfig.extends);
+    assert(
+      base !== '..' && !base.startsWith('..' + sep) && !isAbsolute(base),
+      'External TypeScript config prevents standalone extraction: ' + path + ' -> ' + tsconfig.extends,
+    );
   }
   const declared = new Set(Object.keys({ ...(pkg.dependencies || {}), ...(pkg.peerDependencies || {}) }));
   const localAliases = readJson(path + '/tsconfig.json').compilerOptions?.paths || {};
@@ -76,12 +77,17 @@ for (const [path, pkg] of workspaces) {
       if (specifier.startsWith('.')) {
         const target = resolve(dirname(file), specifier);
         const remainder = relative(packageRoot, target);
-        assert(remainder !== '..' && !remainder.startsWith('..' + sep) && !isAbsolute(remainder),
-          'Cross-package relative import: ' + description);
+        assert(
+          remainder !== '..' && !remainder.startsWith('..' + sep) && !isAbsolute(remainder),
+          'Cross-package relative import: ' + description,
+        );
         continue;
       }
       if (specifier.startsWith('@/') || Object.hasOwn(localAliases, specifier)) {
-        assert(path.startsWith('learningApps/') || path.startsWith('frontend/'), 'Unrewritten shared source alias: ' + description);
+        assert(
+          path.startsWith('learningApps/') || path.startsWith('frontend/'),
+          'Unrewritten shared source alias: ' + description,
+        );
         continue;
       }
       if (specifier.startsWith('node:') || builtins.has(specifier)) continue;
@@ -93,7 +99,10 @@ for (const [path, pkg] of workspaces) {
       } else {
         assert(!specifier.startsWith('@svitlo/'), 'Unknown Svitlo workspace: ' + description);
         assert(declared.has(name), 'Undeclared production dependency: ' + description);
-        assert(path !== 'shared/engine' && path !== 'shared/contracts', 'Engine and Contracts cannot depend on external runtime modules: ' + description);
+        assert(
+          path !== 'shared/engine' && path !== 'shared/contracts',
+          'Engine and Contracts cannot depend on external runtime modules: ' + description,
+        );
         assert(path !== 'shared/ui-kit' || name !== 'next', 'UI Kit depends on Next.js: ' + description);
       }
     }
@@ -108,13 +117,16 @@ for (const [path, pkg] of workspaces.filter(([name]) => name.startsWith('shared/
     if (target.startsWith('./scripts/')) {
       assert(existsSync(resolve(root, path, target)), 'Missing public script: ' + pkg.name + subpath);
     } else {
-      assert(target.startsWith('./dist/') && target.endsWith('.js'),
-        'Invalid compiled entrypoint: ' + pkg.name + subpath);
+      assert(
+        target.startsWith('./dist/') && target.endsWith('.js'),
+        'Invalid compiled entrypoint: ' + pkg.name + subpath,
+      );
       const sourcePath = target.replace('./dist/', 'src/').replace(/\.js$/, '');
-      assert(['.ts', '.tsx'].some(ext => existsSync(resolve(root, path, sourcePath + ext))),
-        'Missing public entrypoint source: ' + pkg.name + subpath);
-      assert(entry.types === target.replace(/\.js$/, '.d.ts'),
-        'Mismatched declarations: ' + pkg.name + subpath);
+      assert(
+        ['.ts', '.tsx'].some(ext => existsSync(resolve(root, path, sourcePath + ext))),
+        'Missing public entrypoint source: ' + pkg.name + subpath,
+      );
+      assert(entry.types === target.replace(/\.js$/, '.d.ts'), 'Mismatched declarations: ' + pkg.name + subpath);
     }
   }
 }
@@ -124,22 +136,52 @@ for (const path of ['dist', 'assets/flags', 'scripts/sync-flags.mjs']) {
   assert(kit.files && kit.files.includes(path), 'UI Kit package files omit ' + path);
   if (path !== 'dist') assert(existsSync(resolve(root, 'shared/ui-kit', path)), 'Missing asset: ' + path);
 }
-assert(kit.exports?.['./sync-flags']?.default === './scripts/sync-flags.mjs',
-  'UI Kit must export the included flag sync script');
-assert(readdirSync(resolve(root, 'shared/ui-kit/assets/flags')).some(name => name.endsWith('.svg')),
-  'Flag assets are missing');
+assert(
+  kit.exports?.['./sync-flags']?.default === './scripts/sync-flags.mjs',
+  'UI Kit must export the included flag sync script',
+);
+assert(
+  readdirSync(resolve(root, 'shared/ui-kit/assets/flags')).some(name => name.endsWith('.svg')),
+  'Flag assets are missing',
+);
 console.log('Stage 5 extraction readiness: source imports, dependencies, public exports, and static assets verified.');
 
 // Storybook is owned by UI Kit, not coupled to either Next.js application.
 const storybookMain = readFileSync(resolve(root, 'shared/ui-kit/.storybook/main.ts'), 'utf8');
-assert(!/\b(?:apps|learningApps)\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/(?:apps|learningApps)\//.test(storybookMain),
-  'UI Kit Storybook must not read application or monorepo source paths');
-assert(readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
-  'UI Kit must own the Storybook build command');
-for (const application of ['learningApps/playground', 'learningApps/math', 'learningApps/physics', 'learningApps/geography', 'learningApps/informatics', 'learningApps/biology', 'learningApps/language-literature', 'learningApps/languages/ukrainian', 'learningApps/chemistry', 'learningApps/astronomy', 'learningApps/history', 'learningApps/philosophy', 'learningApps/psychology', 'learningApps/economics', 'learningApps/art', 'learningApps/health-safety', 'learningApps/engineering']) {
-  assert(!existsSync(resolve(root, application, '.storybook')),
-    'Application Storybook must not depend on shared source trees: ' + application);
+assert(
+  !/\b(?:apps|learningApps)\/|\.\.\/\.\.\/shared\/|\.\.\/\.\.\/(?:apps|learningApps)\//.test(storybookMain),
+  'UI Kit Storybook must not read application or monorepo source paths',
+);
+assert(
+  readJson('shared/ui-kit/package.json').scripts?.['build-storybook'],
+  'UI Kit must own the Storybook build command',
+);
+for (const application of [
+  'learningApps/playground',
+  'learningApps/math',
+  'learningApps/physics',
+  'learningApps/geography',
+  'learningApps/informatics',
+  'learningApps/biology',
+  'learningApps/language-literature',
+  'learningApps/languages/ukrainian',
+  'learningApps/chemistry',
+  'learningApps/astronomy',
+  'learningApps/history',
+  'learningApps/philosophy',
+  'learningApps/psychology',
+  'learningApps/economics',
+  'learningApps/art',
+  'learningApps/health-safety',
+  'learningApps/engineering',
+]) {
+  assert(
+    !existsSync(resolve(root, application, '.storybook')),
+    'Application Storybook must not depend on shared source trees: ' + application,
+  );
   const appManifest = readJson(application + '/package.json');
-  assert(!appManifest.scripts?.storybook && !appManifest.scripts?.['build-storybook'],
-    'Storybook commands must be owned by UI Kit: ' + application);
+  assert(
+    !appManifest.scripts?.storybook && !appManifest.scripts?.['build-storybook'],
+    'Storybook commands must be owned by UI Kit: ' + application,
+  );
 }

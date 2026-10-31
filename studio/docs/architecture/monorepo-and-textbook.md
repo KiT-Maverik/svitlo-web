@@ -52,16 +52,16 @@ The **eleven** current workspaces are `@svitlo/server`, `@svitlo/platform`, `@sv
 
 Arrows above summarize **allowed consumption**, not a promise that every app imports every shared package. Specifically:
 
-| Package | Owns | Direct production dependencies / boundaries |
-| --- | --- | --- |
-| Contracts | Common content/state/taxonomy types, stable IDs and language descriptors | No runtime dependencies on Engine, UI, Next.js or apps |
-| Engine | Builders, generation, assessment methods, localization logic | Depends on Contracts; no React, Next, MUI or app imports |
-| IndexDB | `svitlo-progress` v1 persistence, Zod state validation, browser controllers | Depends on Contracts and Zod; production does not depend on Engine/React/Next |
-| UI Kit | Components, Flag assets, LearningLayout, NavbarPreferences and locale dictionaries | Depends on Engine and UI peer dependencies; no Next.js/application imports in production source |
-| Informatics / Physics | Standalone Next.js textbook scaffolds, subject content in separate reviews | No application-to-application imports |
-| Geography / Math / Playground | Route handlers, progress/locale providers, subject content or demo fixtures | Declared public shared exports only; **no app-to-app imports** |
-| Platform | Standalone public site and external textbook catalog links | Next.js/React/MUI; does not embed Math or Playground |
-| Server | Future backend | Placeholder package only; do not claim build/API/test capabilities |
+| Package                       | Owns                                                                               | Direct production dependencies / boundaries                                                     |
+| ----------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Contracts                     | Common content/state/taxonomy types, stable IDs and language descriptors           | No runtime dependencies on Engine, UI, Next.js or apps                                          |
+| Engine                        | Builders, generation, assessment methods, localization logic                       | Depends on Contracts; no React, Next, MUI or app imports                                        |
+| IndexDB                       | `svitlo-progress` v1 persistence, Zod state validation, browser controllers        | Depends on Contracts and Zod; production does not depend on Engine/React/Next                   |
+| UI Kit                        | Components, Flag assets, LearningLayout, NavbarPreferences and locale dictionaries | Depends on Engine and UI peer dependencies; no Next.js/application imports in production source |
+| Informatics / Physics         | Standalone Next.js textbook scaffolds, subject content in separate reviews         | No application-to-application imports                                                           |
+| Geography / Math / Playground | Route handlers, progress/locale providers, subject content or demo fixtures        | Declared public shared exports only; **no app-to-app imports**                                  |
+| Platform                      | Standalone public site and external textbook catalog links                         | Next.js/React/MUI; does not embed Math or Playground                                            |
+| Server                        | Future backend                                                                     | Placeholder package only; do not claim build/API/test capabilities                              |
 
 Framework-specific links, `usePathname`, lesson progress and `useColorScheme` remain in app adapters. `createLessonLearningLayout` in UI Kit accepts injected host bindings; the UI Kit itself must not import Next.js. `NavbarPreferences` and its seven specialized dictionaries are owned by UI Kit; each app supplies locale/theme state via props and hooks.
 
@@ -105,7 +105,7 @@ Individual app entrypoints: `npm run dev:informatics`, `npm run dev:physics`, `n
 
 ## Remaining duplication after Stage 7
 
-A Stage 8 SHA comparison found **67 byte-identical same-relative-path files in Math and Playground `src/`** (including application-owned lesson rendering, lesson progress, routes, locales and tests). These are a *known migration debt*, not evidence that Stage 4–6 failed. The full exact-path baseline lives in `scripts/known-app-duplicates.json`; `check-final-architecture.mjs` rejects **new** clone paths but allows existing baseline paths until separately reviewed. Do not blindly promote app-owned providers or content into UI Kit. Deduplicating the still-shared lesson runtime requires a separate, scoped architectural migration with explicit public APIs and regression tests.
+A Stage 8 SHA comparison found **67 byte-identical same-relative-path files in Math and Playground `src/`** (including application-owned lesson rendering, lesson progress, routes, locales and tests). These are a _known migration debt_, not evidence that Stage 4–6 failed. The full exact-path baseline lives in `scripts/known-app-duplicates.json`; `check-final-architecture.mjs` rejects **new** clone paths but allows existing baseline paths until separately reviewed. Do not blindly promote app-owned providers or content into UI Kit. Deduplicating the still-shared lesson runtime requires a separate, scoped architectural migration with explicit public APIs and regression tests.
 
 ## Review rules
 

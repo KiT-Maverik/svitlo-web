@@ -12,11 +12,11 @@ export function importedModules(source, filename = 'source.ts') {
   const kind = filename.endsWith('.tsx') ? ts.ScriptKind.TSX : ts.ScriptKind.TS;
   const ast = ts.createSourceFile(filename, source, ts.ScriptTarget.Latest, true, kind);
   const modules = [];
-  const record = (specifier) => {
+  const record = specifier => {
     if (specifier && ts.isStringLiteralLike(specifier)) modules.push(specifier.text);
   };
 
-  const visit = (node) => {
+  const visit = node => {
     if (ts.isImportDeclaration(node) || ts.isExportDeclaration(node)) {
       record(node.moduleSpecifier);
     } else if (ts.isImportEqualsDeclaration(node) && ts.isExternalModuleReference(node.moduleReference)) {

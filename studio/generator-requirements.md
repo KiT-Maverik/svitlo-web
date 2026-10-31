@@ -76,9 +76,11 @@ Domains may contain both Groups and direct Skills.
 Example `meta.json` for a Group:
 
 ```json
-{ "id": "00000000-0000-4000-8000-000000000003",
+{
+  "id": "00000000-0000-4000-8000-000000000003",
   "collection": "skillGroup",
-  "skills": ["testRecognizeRed", "testRecognizeOrange"] }
+  "skills": ["testRecognizeRed", "testRecognizeOrange"]
+}
 ```
 
 Example `uk.json` for the same Group:

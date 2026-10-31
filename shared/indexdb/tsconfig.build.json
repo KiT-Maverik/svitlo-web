@@ -10,15 +10,6 @@
     "noEmit": false,
     "incremental": false
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    ".test-build",
-    "**/*.spec.ts",
-    "**/*.test.ts",
-    "**/*.e2e.spec.ts"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", ".test-build", "**/*.spec.ts", "**/*.test.ts", "**/*.e2e.spec.ts"]
 }

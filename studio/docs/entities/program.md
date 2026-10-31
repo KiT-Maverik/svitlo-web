@@ -8,7 +8,7 @@ A **Program** selects, sequences and provides context to reusable [Lessons](./le
 
 - A Lesson **teaches independently**; a Program **organizes and contextualizes** multiple Lessons or learning activities. A Lesson may be used in different Programs, in a Curriculum, or outside all Programs.
 - The Program may add its own narrative to an existing Lesson experience without changing the Lesson's factual content, approved Skill targets or learning outcomes. It does not become the canonical source of the Lesson's explanations or assessments.
-- Teaching order *within* a Lesson remains its instructional design. Larger-scale journey order, plot, missions and program progression belong here.
+- Teaching order _within_ a Lesson remains its instructional design. Larger-scale journey order, plot, missions and program progression belong here.
 - A Curriculum is an editorial learning plan; do not equate it automatically with a Program runtime or assume that every Lesson must belong to either.
 
 ## IMPLEMENTATION STATUS

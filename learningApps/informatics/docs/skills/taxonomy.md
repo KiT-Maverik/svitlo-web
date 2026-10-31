@@ -184,6 +184,7 @@ Status: pending
 
 Methodological description: Show when two or more requirements cannot hold under the same conditions: for example, an object cannot simultaneously be located exclusively in room A and exclusively in room B. The focus is rule consistency rather than program execution order.
 User-friendly description: Recognize when two requirements cannot both be true.
+
 ### Programming
 
 Slug: programming
@@ -707,6 +708,7 @@ Status: pending
 
 Methodological description: Compare specifying concrete state-changing steps with specifying desired results or rules from which the environment chooses an execution strategy.
 User-friendly description: Compare giving explicit instructions with describing the desired result.
+
 ### Digital Systems and Networks
 
 Slug: digitalSystemsAndNetworks
@@ -1230,6 +1232,7 @@ Status: pending
 
 Methodological description: Plan which subtasks can run simultaneously and which must wait for dependent results in a model computing system. For example, process several images independently before combining their outputs.
 User-friendly description: Plan which tasks can run together and which must wait for other results.
+
 ### Information and Data
 
 Slug: informationAndData
@@ -1571,6 +1574,7 @@ Status: pending
 
 Methodological description: Introduce random selection from an explicitly defined outcome set into a digital simulation and distinguish it from a predetermined scenario. Variable outcomes do not imply equal likelihoods.
 User-friendly description: Add random choices to a model while defining which outcomes can occur.
+
 ### Software Architecture
 
 Slug: softwareArchitecture
@@ -1840,6 +1844,7 @@ Status: pending
 
 Methodological description: Separate business rules from concrete data-access mechanisms through an interface admitting multiple implementations. High-level logic receives dependencies from outside instead of instantiating a fixed service internally.
 User-friendly description: Separate business logic from concrete services by depending on contracts.
+
 ### Design Patterns
 
 Slug: designPatterns
@@ -2144,6 +2149,7 @@ Status: pending
 
 Methodological description: Move operations on a family of types into a separate visitor while keeping the element structure relatively stable.
 User-friendly description: Separate operations from the object structures on which they act.
+
 ### Artificial Intelligence
 
 Slug: artificialIntelligence
@@ -2621,6 +2627,7 @@ Status: pending
 
 Methodological description: Avoid entering passwords, confirmation codes, access keys, or confidential information into chatbots without proper authorization and verified safeguards.
 User-friendly description: Protect passwords, access keys and confidential information when working with AI.
+
 ### Robotics and Automation
 
 Slug: roboticsAndAutomation
@@ -2747,6 +2754,7 @@ Status: pending
 
 Methodological description: Determine whether a navigation or response error arises from a sensor reading, controller condition, or actuator command, and correct the appropriate rule. Debugging requires comparing expected and observed actions.
 User-friendly description: Find whether a robot's unexpected behavior comes from sensing, logic or action.
+
 ### Digital Safety and Responsibility
 
 Slug: digitalSafetyAndResponsibility
@@ -3031,6 +3039,7 @@ Status: pending
 
 Methodological description: Connect devices and services with energy consumption, resource extraction, hardware lifespan, and electronic waste. Comparing alternatives requires more than electricity used during one run.
 User-friendly description: Compare computing's energy, material and electronic-waste impacts.
+
 ### Digital Product UX
 
 Slug: digitalProductUX
@@ -3170,6 +3179,7 @@ Status: pending
 
 Methodological description: Recognize designs that covertly steer people toward unwanted choices, such as confusing cancellation, preselected add-ons, or deceptive button wording. Distinguish persuasive design from hidden restrictions on informed choice.
 User-friendly description: Recognize interface tricks that hide costs, force choices or obstruct cancellation.
+
 ### Digital Creativity and Games
 
 Slug: digitalCreativityAndGames
@@ -3331,6 +3341,7 @@ Status: pending
 
 Methodological description: Assess trade-offs between stored data volume, compact rule descriptions, initialization time, and CPU/GPU/RAM use. Procedural generation is not the same as lossless or lossy compression of a ready-made file.
 User-friendly description: Compare the storage saved by procedural generation with the computation it requires.
+
 ### Data Structures
 
 Slug: dataStructures
@@ -3821,6 +3832,7 @@ Status: pending
 
 Methodological description: A data structure defines how information is organized and accessed; an algorithm specifies a sequence of operations on that information.
 User-friendly description: Distinguish organizing data in a structure from processing it with an algorithm.
+
 ### Algorithms
 
 Slug: algorithms
@@ -4151,6 +4163,7 @@ Status: pending
 
 Methodological description: Compare algorithms where fewer operations may require extra intermediate data; speed is not the only criterion for a sound choice.
 User-friendly description: Understand why faster algorithms may require more temporary memory.
+
 ### Git and Open Source
 
 Slug: gitAndOpenSource
@@ -4323,6 +4336,7 @@ Status: pending
 
 Methodological description: Compare successive file or project states, identify when changes appeared, and restore earlier saved versions where necessary. Multiple files labeled 'final2' do not necessarily form a transparent history.
 User-friendly description: Use version history to find when changes happened or restore earlier work.
+
 ### History of Programming
 
 Slug: historyOfProgramming

@@ -4,7 +4,12 @@ import path from 'node:path';
 import os from 'node:os';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { languageCodes, loadSkillGraph, checkPublishedFiles, writePublishedFiles } from '../../data/publish-skills-data.mjs';
+import {
+  languageCodes,
+  loadSkillGraph,
+  checkPublishedFiles,
+  writePublishedFiles,
+} from '../../data/publish-skills-data.mjs';
 import { renderSkillAnalyticsFiles, measureSkillAnalyticsFiles } from './generate-skill-analytics.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../..');
@@ -51,5 +56,7 @@ test('output remains deterministic, isolated by locale and strictly validated', 
     writePublishedFiles(dest, files);
     assert.deepEqual(checkPublishedFiles(dest, files), { missing: [], changed: [], stale: [] });
     assert.deepEqual(fs.readdirSync(dest).sort(), codes.map(c => c + '.json').sort());
-  } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
 });

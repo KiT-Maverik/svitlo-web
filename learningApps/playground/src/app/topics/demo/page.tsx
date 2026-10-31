@@ -33,7 +33,5 @@ async function LocalizedDemoTopic({ searchParams }: Pick<PageProps<'/topics/demo
     DEFAULT_SUPPORTED_LANGUAGES.map(language => language.locale),
     'uk-UA',
   );
-  return (
-    <Lesson config={demoLessonConfig} catalog={demoLessonCatalog} locale={locale} href="/topics/demo" />
-  );
+  return <Lesson config={demoLessonConfig} catalog={demoLessonCatalog} locale={locale} href="/topics/demo" />;
 }

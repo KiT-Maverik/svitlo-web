@@ -81,7 +81,9 @@ export function validateSkillConfig(
  * Adds the static taxonomy discriminator to entity-owned UUID data.
  * Authoring config is not mutated; fileLocation is added separately by the registry.
  */
-export function buildSkillConfig<const T extends Skill_Config>(config: T): DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }> {
+export function buildSkillConfig<const T extends Skill_Config>(
+  config: T,
+): DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }> {
   validateSkillConfig(config, true);
   const collection: Extract<Collection, 'skill'> = 'skill';
   return { ...config, collection } as DeepReadonly<T & { readonly collection: Extract<Collection, 'skill'> }>;
