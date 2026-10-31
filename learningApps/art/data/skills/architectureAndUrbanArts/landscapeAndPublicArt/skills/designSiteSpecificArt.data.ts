@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const designSiteSpecificArt_Skill_Data = buildSkillConfig({
   slug: "designSiteSpecificArt",
   id: "b1d4747c-69a6-41aa-b026-d3acf1eaafa8",
-  name: { en: "Design Site-Specific Art" },
+  name: {
+    en: "Design Site-Specific Art",
+    zh: "设计场域特定艺术",
+    hi: "स्थान-विशिष्ट कला डिज़ाइन करें",
+    es: "Diseñar arte específico para un lugar",
+    ar: "تصميم فن خاص بموقع معين",
+    fr: "Concevoir une œuvre liée à un site",
+    bn: "স্থাননির্দিষ্ট শিল্প নকশা করুন",
+    pt: "Projetar arte específica para um local",
+    ur: "مخصوص مقام کے لیے فن ڈیزائن کریں",
+    id: "Merancang Seni Khusus Lokasi",
+    de: "Ortsbezogene Kunst gestalten",
+    ja: "場所に応じたアートをデザインする",
+    ko: "장소 특정적 예술 디자인하기",
+    tr: "Mekâna Özgü Sanat Tasarlamak",
+    vi: "Thiết kế nghệ thuật đặc thù địa điểm",
+    ta: "குறிப்பிட்ட இடத்திற்கான கலையை வடிவமைக்குங்கள்",
+    te: "స్థల-నిర్దిష్ట కళను రూపకల్పన చేయండి",
+    mr: "स्थळविशिष्ट कला तयार करा",
+    ms: "Mereka Bentuk Seni Khusus Tapak",
+    he: "עיצוב אמנות תלוית־מקום",
+    pl: "Projektować sztukę związaną z miejscem",
+    uk: "Проєктувати мистецтво для конкретного місця",
+    lt: "Kurti konkrečiai vietai skirtą meną",
+    lv: "Veidot konkrētai vietai paredzētu mākslu",
+    et: "Kohaspetsiifilise kunsti kujundamine",
+    be: "Праектаваць мастацтва для канкрэтнага месца",
+    ka: "კონკრეტულ ადგილზე მორგებული ხელოვნების შექმნა",
+    kk: "Белгілі бір орынға арналған өнер жобалау",
+    qm: "Yerine mahsus sanat tasarlamaq",
+  },
   description: {
     methodological: "Adapt artistic form to a location's scale, history and use.",
     frontend: {
@@ -35,6 +65,7 @@ export const designSiteSpecificArt_Skill_Data = buildSkillConfig({
           "be": "Стварайце мастацтва, якое адгукаецца на месца, дзе людзі з ім сустракаюцца.",
           "ka": "შექმენით ხელოვნება, რომელიც ეხმიანება ადგილს, სადაც ადამიანები მას ეცნობიან.",
           "kk": "Адамдар өнермен кездесетін орынның ерекшелігіне үн қосатын туынды жасаңыз。"
-    },
+    
+      qm: "İnsanlarnıñ rast kelgen yerine cevap bergen sanat eserini yaratıñız.",},
   },
 });
