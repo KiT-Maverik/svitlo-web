@@ -64,7 +64,7 @@ export const animateGraphicElements_Skill_Data = buildSkillConfig({
           "et": "Animeeri kujundeid ja ikoone, et suunata tähelepanu või luua väljendusrikast liikumist.",
           "be": "Анімуйце формы і значкі, каб накіроўваць увагу або ствараць выразны рух.",
           "ka": "გააცოცხლეთ ფორმები და ხატულები ყურადღების მისაპყრობად ან გამომსახველობითი მოძრაობის შესაქმნელად.",
-          "kk": "Назарды бағыттау немесе мәнерлі қозғалыс жасау үшін пішіндер мен белгішелерді жандандырыңыз。"
+          "kk": "Назарды бағыттау немесе мәнерлі қозғалыс жасау үшін пішіндер мен белгішелерді жандандырыңыз。",
     
       qm: "Grafik şekillerge zaman içinde hereket beriñiz.",},
   },
