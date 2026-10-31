@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const designAPublicSquare_Skill_Data = buildSkillConfig({
   slug: "designAPublicSquare",
   id: "8119489d-bf61-4340-a1ae-30ee623ae5c1",
-  name: { en: "Design a Public Square" },
+  name: {
+    en: "Design a Public Square",
+    zh: "设计公共广场",
+    hi: "सार्वजनिक चौक डिज़ाइन करें",
+    es: "Diseñar una plaza pública",
+    ar: "تصميم ساحة عامة",
+    fr: "Concevoir une place publique",
+    bn: "একটি গণচত্বর নকশা করুন",
+    pt: "Projetar uma praça pública",
+    ur: "عوامی چوک ڈیزائن کریں",
+    id: "Merancang Alun-Alun Publik",
+    de: "Einen öffentlichen Platz gestalten",
+    ja: "公共広場を設計する",
+    ko: "공공 광장 설계하기",
+    tr: "Bir Kamusal Meydan Tasarlamak",
+    vi: "Thiết kế quảng trường công cộng",
+    ta: "பொதுச் சதுக்கத்தை வடிவமைக்குங்கள்",
+    te: "ప్రజా కూడలిని రూపకల్పన చేయండి",
+    mr: "सार्वजनिक चौकाची रचना करा",
+    ms: "Mereka Bentuk Dataran Awam",
+    he: "תכנון כיכר ציבורית",
+    pl: "Projektować plac publiczny",
+    uk: "Проєктувати громадську площу",
+    lt: "Projektuoti viešąją aikštę",
+    lv: "Veidot publisku laukumu",
+    et: "Avaliku väljaku kujundamine",
+    be: "Праектаваць грамадскую плошчу",
+    ka: "საჯარო მოედნის დაპროექტება",
+    kk: "Қоғамдық алаң жобалау",
+    qm: "Cemaat meydanını tasarlamaq",
+  },
   description: {
     methodological: "Organize activity, movement and visual emphasis in an inclusive civic place.",
     frontend: {
@@ -35,6 +65,7 @@ export const designAPublicSquare_Skill_Data = buildSkillConfig({
           "be": "Арганізуйце гасцінную грамадскую плошчу для сустрэч, руху і візуальнай выразнасці.",
           "ka": "მოაწყვეთ მიმზიდველი საჯარო მოედანი შეხვედრებისთვის, გადაადგილებისა და ვიზუალური ინტერესისთვის.",
           "kk": "Кездесуге, қозғалысқа және көркемдік тартымдылыққа арналған жайлы қоғамдық алаң ұйымдастырыңыз。"
-    },
+    
+      qm: "Toplanış, qatnav ve körüniş cazibesi içün quçaqlayıcı bir cemaat meydanını tertip etiñiz.",},
   },
 });
