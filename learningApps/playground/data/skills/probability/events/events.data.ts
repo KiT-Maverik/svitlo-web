@@ -1,6 +1,6 @@
 import { buildSkillGroupConfig } from '@svitlo/engine/taxonomy';
 
-import { certainImpossible_Skill_Data } from './skills';
+import { certainImpossible_Skill_Data, listOutcomes_Skill_Data } from './skills';
 
 export const events_SkillGroup_Data = buildSkillGroupConfig({
   id: 'd41710f5-a1ce-4a10-ae8f-65b9ad51026c',
@@ -36,6 +36,7 @@ export const events_SkillGroup_Data = buildSkillGroupConfig({
   },
   skillIds: {
     certainImpossible: certainImpossible_Skill_Data.id,
+    listOutcomes: listOutcomes_Skill_Data.id,
   },
   description: { methodological: "Events as subsets of outcomes of a random experiment, identifying possible and impossible occurrences, and comparing chances under specified conditions. Mathematical probability is not restricted to qualitative estimates." },
 });
