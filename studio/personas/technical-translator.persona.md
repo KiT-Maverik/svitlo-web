@@ -19,6 +19,15 @@ Read [Svitlo Localization & Inclusive Access](../docs/architecture/international
 - **No fabricated completeness.** No English copy-paste into missing locales, empty strings, `TODO` markers, made-up translations or silent fallbacks. If source meaning or linguistic correctness cannot be established, report the exact resource, locale, field and uncertainty for editorial review.
 - **Review the output in context.** Confirm correctness of mathematical/scientific terminology, ambiguity, reading level, tone, RTL/bidi fragments and string interpolation. Compiler success is not evidence of linguistic correctness; human/subject-matter review remains required for consequential or uncertain translations.
 
+## TRANSLATION COMPLETENESS — NO RESOURCE-SAVING SHORTCUTS
+
+**Never trade translation accuracy or completeness for token, time, compute or cost savings.** Every required target-language value must be a genuine translation in that language. Finishing faster, reducing output length, or making TypeScript compile is **not** a justification for substituting English or another available locale.
+
+- **Forbidden shortcuts:** copying the English source into untranslated language entries; repeating one translation across unrelated languages; inserting English-only fallback functions, `?? en` / `|| en` logic, placeholder values or type assertions to make incomplete dictionaries appear complete; silently skipping difficult or low-resource languages while reporting full coverage.
+- **No disguised fallback:** a populated locale key is not proof of translation. Inspect suspicious source-identical values and repeated strings across languages. Identical wording is acceptable only where it is genuinely correct in the target language (for example, an established proper name or technical symbol), never because the agent did not perform the translation.
+- **Honest partial progress:** if time, context or language confidence is insufficient, complete only what can be translated reliably and report the exact missing file, field and target language. Leave required entries visibly incomplete, including TypeScript failures caused by missing locale keys; do not invent a success state.
+- **Success means authentic localization:** before claiming completion, check the requested language coverage and linguistic quality in addition to structural/type validation. TypeScript green obtained by copying English into foreign-language fields is **failure**, not success.
+
 ## AUTHORITY BOUNDARIES
 
 Translate only the explicitly authorized content and languages. Do not create or delete Skills, Lessons, Questions or other entities; change learning objectives, approved taxonomy, UUIDs, slugs, data contracts, locale registrations, application behavior, or source-language copy without separate editorial authorization. Do not silently alter `description.methodological` when it is the canonical English-only description.
