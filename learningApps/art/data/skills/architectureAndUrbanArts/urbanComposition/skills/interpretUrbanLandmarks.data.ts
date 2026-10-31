@@ -3,7 +3,37 @@ import { buildSkillConfig } from '@svitlo/engine/taxonomy';
 export const interpretUrbanLandmarks_Skill_Data = buildSkillConfig({
   slug: "interpretUrbanLandmarks",
   id: "d7c863ec-e9a0-4003-8af5-bed1cf5f6937",
-  name: { en: "Interpret Urban Landmarks" },
+  name: {
+    en: "Interpret Urban Landmarks",
+    zh: "解读城市地标",
+    hi: "शहरी स्थलों की व्याख्या करें",
+    es: "Interpretar hitos urbanos",
+    ar: "تفسير المعالم الحضرية",
+    fr: "Interpréter les repères urbains",
+    bn: "নগর স্থাপনার তাৎপর্য ব্যাখ্যা করুন",
+    pt: "Interpretar marcos urbanos",
+    ur: "شہری نشانات کی تشریح کریں",
+    id: "Menafsirkan Tengara Perkotaan",
+    de: "Städtische Orientierungspunkte interpretieren",
+    ja: "都市のランドマークを解釈する",
+    ko: "도시 랜드마크 해석하기",
+    tr: "Kentsel İşaret Noktalarını Yorumlamak",
+    vi: "Diễn giải các địa danh tiêu biểu đô thị",
+    ta: "நகர அடையாளச் சின்னங்களைப் பொருள்கொள்ளுங்கள்",
+    te: "పట్టణ గుర్తులను అర్థం చేసుకోండి",
+    mr: "शहरी खुणांचा अर्थ लावा",
+    ms: "Mentafsir Mercu Tanda Bandar",
+    he: "פרשנות של ציוני דרך עירוניים",
+    pl: "Interpretować miejskie punkty orientacyjne",
+    uk: "Інтерпретувати міські орієнтири",
+    lt: "Interpretuoti miesto orientyrus",
+    lv: "Interpretēt pilsētas orientierus",
+    et: "Linna maamärkide tõlgendamine",
+    be: "Інтэрпрэтаваць гарадскія арыенціры",
+    ka: "ურბანული ღირსშესანიშნაობების ინტერპრეტაცია",
+    kk: "Қалалық бағдарларды түсіндіру",
+    qm: "Şeer alametlerini tefsir etüv",
+  },
   description: {
     methodological: "Explain how distinctive spaces support orientation and shared identity.",
     frontend: {
@@ -35,6 +65,7 @@ export const interpretUrbanLandmarks_Skill_Data = buildSkillConfig({
           "be": "Даследуйце, як выразныя гарадскія арыенціры дапамагаюць людзям арыентавацца і адчуваць сувязь з горадам.",
           "ka": "შეისწავლეთ, როგორ ეხმარება გამორჩეული ურბანული ღირსშესანიშნაობები ადამიანებს ორიენტირებასა და კავშირის განცდაში.",
           "kk": "Қаланың ерекше нысандары адамдарға бағыт табуға және ортақтық сезінуге қалай көмектесетінін зерттеңіз。"
-    },
+    
+      qm: "Ayrı yerlerniñ insanlarğa yol tapmağa ve bağlılıq duymağa nasıl yardım etkenini keşf etiñiz.",},
   },
 });
