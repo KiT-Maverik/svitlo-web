@@ -61,7 +61,7 @@ export const solarLuminosity_Skill_Data = buildSkillConfig({
       id: 'Pahami total energi yang dipancarkan Matahari dan bagaimana cahaya yang diterima berubah menurut jarak.',
       tr: 'Güneş\'in toplam enerji yayımını ve alınan ışığın uzaklıkla nasıl değiştiğini anla.',
       zh: '了解太阳辐射的总能量，以及接收到的光如何随距离变化。',
-      ja: '太陽が放つエネルギーの総量と、距離によって受け取る光がどう変わるか理解しよう。',
+      ja: '太陽光度が単位時間あたりに放射するエネルギーを表すことと、届く光の強さが距離でどう変わるか理解しよう。',
       ko: '태양이 방출하는 총에너지와 거리에 따라 도달하는 빛의 양이 어떻게 달라지는지 이해해 보세요.',
       ar: 'افهم إجمالي الطاقة التي تشعها الشمس وكيف تتغير كمية الضوء المستقبَل بحسب المسافة.',
       hi: 'सूर्य द्वारा उत्सर्जित कुल ऊर्जा और दूरी के साथ प्राप्त प्रकाश में होने वाले परिवर्तन को समझें।',
