@@ -1,76 +1,93 @@
 # Review Translation Skill
 
-**Status:** Active — language-focused, read-only review of generated artifacts derived from canonical typed content.
+**Status:** Active. Read-only linguistic review of generated, Code-derived educational content.
 
-**Mandatory first action:** Read [Technical Translator Persona](../../personas/technical-translator.persona.md) in full. Follow the repository's `AGENTS.md`, [Internationalization & Inclusive Access](../../docs/architecture/internationalization-and-accessibility.md), and the applicable textbook instructions. **Review Translation uses the Translator's linguistic judgment, not a coding persona.** It does not require the reviewer to inspect TypeScript imports, understand code builders, or perform a TypeScript build merely to review language.
+**Mandatory first action:** Read [Technical Translator Persona](../../personas/technical-translator.persona.md) **in full**, relevant repository `AGENTS.md`, and applicable textbook/domain instructions. Review Translation is a **linguistic and terminological** role. It does not require TypeScript expertise: code navigation, CI generation, and later typed edits are separate mechanisms.
 
-## PURPOSE AND SOURCE OF TRUTH
+## PURPOSE
 
-Review the quality of one or more Svitlo language localizations using **generated, readable Markdown views of actual Code entities**. For Skills taxonomies, the canonical sources are `learningApps/<textbook>/data/skills/**/*.data.ts`. The existing read-only generator, [Generate Skills Taxonomy](../../../scripts/generate-skills-taxonomy.mjs), renders localized names, available user-facing descriptions, English methodological descriptions, hierarchy, counts, and links to canonical entities.
+Review one or more Svitlo localizations **by reading generated Markdown reference documents** derived from canonical typed entities. These documents contain domain/group/skill hierarchy, localized names, any localized user-facing descriptions, **canonical English methodological meaning**, and links back to the original `*.data.ts` files.
 
-Generated Markdown is a **disposable review artifact, never an editable authoring source**. Do not fix translations inside the generated file or commit generated review Markdown. The review itself is read-only unless an explicit follow-up authorizes applying corrections to canonical code; then use [Technical Translation](./technical-translation.skill.md) and its TypeScript acceptance gate.
+**Source of truth:** `learningApps/<textbook>/data/skills/`. Generated Markdown is temporary, disposable, **not** an editorial source and must never be manually corrected in place.
 
-## SELF-DIRECTED ARTIFACT SELECTION
+## ONE CANONICAL GENERATED LIBRARY
 
-Infer the needed coverage from the task, without repeatedly asking the user to generate the next document or approve the next domain. Choose the smallest complete set that satisfies the request; expand it independently if the review reveals cross-domain or cross-locale inconsistency.
-
-Supported scopes (combine freely):
-
-- **One textbook, one language:** `--package learningApps/astronomy --locale qm`.
-- **One textbook, all supported languages:** `--package learningApps/astronomy --all-locales`.
-- **All textbooks with Code Skills taxonomies, one language:** `--all-packages --locale qm`.
-- **All available Code Skills taxonomies in all supported languages:** `--all-packages --all-locales`.
-
-The tool reads the **live** supported-language registry; never hardcode locale counts. Other source types may acquire their own generators later. Do not pretend the Skills taxonomy generator covers unrelated resources.
-
-The reviewer may generate the full requested batch **once**, then selectively read individual artifacts and process large documents by domain/section. It is not necessary to load every file into model context simultaneously. Batch review findings across the full scope before reporting. If the selected package or locale cannot be generated due to incomplete or structurally invalid source data, report its exact failure; do not fabricate missing translations.
-
-## ACQUIRE ARTIFACTS: PREFERRED ROUTES
-
-### A. Existing local/agent runtime
-
-From the repository root, use the checked-in wrapper `scripts/generate-translation-review-artifacts.mjs` (it delegates to the existing Code → Markdown generator):
-
-```bash
-node scripts/generate-translation-review-artifacts.mjs --package learningApps/astronomy --locale qm
-node scripts/generate-translation-review-artifacts.mjs --package learningApps/astronomy --all-locales
-node scripts/generate-translation-review-artifacts.mjs --all-packages --locale qm
-node scripts/generate-translation-review-artifacts.mjs --all-packages --all-locales
-```
-
-The command creates a temporary, out-of-repository directory containing `<textbook>/taxonomy.<language>.md` and `manifest.json`, not changes to tracked source. It requires installed Node.js dependencies (the existing generator imports `typescript`). The manifest lists successes, failures, and the actual source commit. Inspect it before claiming full coverage.
-
-### B. GitHub Actions — when repository checkout is unavailable locally
-
-Use the **permanent, reusable** [Translation Review Artifacts](../../../.github/workflows/translation-review.yml) workflow. It supports both the Actions **Run workflow** button (choose a source ref, one/all textbooks, one/all locales) and an agent-friendly, guarded **GitHub PR comment** trigger. If the connected agent can post a comment to an in-repository PR on behalf of the **repository owner**, it can initiate the workflow itself with one command:
+All agents share the repository-level temporary folder:
 
 ```text
-/review-translation package=learningApps/astronomy locale=qm
-/review-translation package=learningApps/astronomy all-locales
-/review-translation all-packages locale=qm
-/review-translation all-packages all-locales
+.agent-ci-artifacts/
+  manifest.json
+  taxonomies/
+    astronomy/
+      qm.md
+      en.md
+      tr.md
+      ...
+    biology/
+      qm.md
+      ...
+    <other textbooks with Code Skills taxonomies>/
+      <every supported language key>.md
 ```
 
-For the PR-comment mode, the workflow always checks out the **current source head commit of that PR** automatically: no separate branch prompt or manual ref is required. Only explicit commands written by the repository **OWNER** in a PR conversation are honored; arbitrary comments, comments from other authors, and comments on issues do not generate review artifacts. Post a single command covering the complete review scope; do not request a fresh comment per domain or locale. Locate the resulting **Translation Review Artifacts** Actions run, inspect its summary and manifest, then retrieve the short-lived Markdown archive.
+One generation always attempts **every available textbook taxonomy in every registered language**. There is **no user-facing option to generate one book, one domain, or one locale**. The agent simply picks the documents it needs from this complete reference library, according to its assigned scope. **Generating all languages does not mean reviewing or altering all languages.** If the task is to review Crimean Tatar Astronomy, read `.agent-ci-artifacts/taxonomies/astronomy/qm.md`; use other Markdown files only when they materially help terminology comparison.
 
-**Do not create a new workflow file, temporary branch, or CI definition for each review.** GitHub provisions and discards the per-run runner automatically. The reusable workflow must be present on the repository **default branch** for both `workflow_dispatch` and the `issue_comment` command trigger to function. Until then, use the local route or a supplied generated Markdown, and **do not post a command expecting a run**. The manual workflow can check out any explicitly selected in-repository source ref even when its definition lives on `main`.
+The generator reads `shared/contracts/src/types/languages.ts` for the real language roster and auto-discovers textbooks with `learningApps/*/data/skills`. It uses the established read-only [Code → Markdown generator](../../../scripts/generate-skills-taxonomy.mjs) in `--stdout` mode, then rewrites canonical source links for the temporary directory. `manifest.json` records which files were actually generated, which failed, and the exact source commit. **Do not assume 100% generation coverage if the manifest contains failures.** Never fabricate missing artifacts.
 
-The workflow is **opt-in only**, has no push trigger, and does not modify FastGate. It uses read-only source access, installs just the TypeScript parser rather than building the monorepo, generates into `RUNNER_TEMP`, uploads an artifact with **one-day retention**, emits a run summary/manifest, and removes temporary runner files even if generation failed. GitHub expires the uploaded archive automatically after its retention window. **No generated Markdown and no one-off job definition is committed.** Never describe the uploaded archive as immediately deleted; it is available until expiration. Avoid a separate deletion bot or broad deletion token.
+## GET OR REFRESH THE LIBRARY (ON DEMAND)
 
-If agent tools cannot issue the command, dispatch the workflow, or read the artifact, use the checked-in wrapper in a real checkout or ask for the single generated archive/document only as a last resort. Do not claim execution if none occurred.
+**The agent decides whether fresh reference material is needed and starts generation itself, rather than asking the user to generate one language after another.** It is **not** automatically generated for every commit or PR; ordinary PR validation stays independent.
 
-## LINGUISTIC REVIEW PROCEDURE
+### Preferred: CI on a specific PR branch
 
-1. **Choose scope and snapshot.** Identify exact textbook(s), language(s), branch/commit. Generate or obtain all required Markdown artifacts together and read the manifest. Confirm that the hierarchy/counts correspond to source and that filenames link back to canonical `*.data.ts`.
-2. **Review the full selected scope.** Read each Domain, Group, and Skill, including both the localized heading and the user-friendly description. Use the canonical English methodological description to establish technical meaning; it is intentionally not a translated field. Account for learner age and subject context, not a universal grades-1–2 assumption.
-3. **Check linguistic quality.** Find mistranslations, semantic drift, incoherent grammar, orthography, register, inappropriate terminology, false friends, unidiomatic word order, mislabeled scientific concepts, inconsistencies between related entities, missing concepts, literal translations, and suspicious copied foreign-language text. Check repeated terms **across the entire selected batch**, not just within each domain.
-4. **Consult evidence proportionately.** Prefer authoritative target-language terminology and education sources; when needed use reliable scientific/international terminology. For Crimean Tatar (`qm`), follow the Persona's **Crimean Tatar → international → Turkish** priority and Ukraine-approved Latin orthography. An adapted Turkish **term** may be defensible; a Turkish sentence passed off as Crimean Tatar is not. Do not assume a questionable form is wrong solely because a similar term exists in Turkish.
-5. **Classify findings.** Distinguish verified errors from evidence-based recommendations and uncertain review candidates; give precise `textbook → locale → Code path → field`, original and proposed text, reason, severity, and confidence. Separate glossary-wide normalization from local grammar fixes. Do not invent citations, attestations, or native-speaker sign-off.
-6. **Complete a coherent pass.** Produce a concise coverage report, shared terminology decisions, prioritized issues, and a proposed correction set. Process big views in chunks internally, but do not interrupt the user for each domain, next locale, or successive artifact.
-7. **Handoff for code edits if authorized.** Use file links to edit only the affected localized `name.<locale>` / `description.frontend.<locale>` fields in canonical Code. Delegate correctness and TypeScript validation to [Technical Translation](./technical-translation.skill.md); regenerate and compare the same Markdown view to prove the fixes landed. The review document itself remains disposable.
+A single **permanent** workflow, [Agent CI Artifacts](../../../.github/workflows/translation-review.yml), accepts an owner-authorized command posted in the PR conversation:
 
-## ACCEPTANCE AND HONEST REPORTING
+```text
+/agent-artifacts generate
+```
 
-A translation **review** is complete when all requested generated artifacts were actually inspected and findings have traceable Code links; it is **not** a certificate of native-level correctness. If only part of the batch was read, identify the unread portion. If an artifact generator fails, report the failure and do not silently treat it as an empty taxonomy. A read-only review does not claim TypeScript has passed. Report the source ref/commit, exact language and textbook coverage, generated/success/failed counts, key findings and any unresolved linguistic uncertainty.
+The workflow resolves the PR, checks out its **current head commit** (not necessarily `main`), generates **all** taxonomies × languages on an isolated read-only worker, and then commits the resulting `.agent-ci-artifacts/` files **only to the same PR branch**. The agent can read them directly through GitHub as ordinary files, by exact path. It does **not** need the user to upload the Markdown. For manual execution, GitHub Actions → **Agent CI Artifacts** → **Run workflow** takes a PR number and `generate` operation.
 
-**Artifact lifecycle:** CI job summary says what was generated and that the runner directory was cleaned; uploaded GitHub Actions artifacts expire after one day. For local runs, delete the temporary output directory after reviewing (or allow the agent's ephemeral environment to be discarded). Do not commit reviews or generated source views unless the user expressly requests a permanent reviewed report.
+**Important deployment prerequisite:** GitHub only processes `issue_comment` and `workflow_dispatch` from workflows present on the **default branch**. If this workflow has not yet been merged into `main`, comment commands will not run. Do not claim a CI job exists or was triggered. In that situation, use a checkout/local execution, or report the activation prerequisite. On first adoption, merge the workflow infrastructure via a clean PR with no `.agent-ci-artifacts/` data; only then run it for translation-review PRs.
+
+**Authentication:** PR comments trigger only if authored by the repository **OWNER**; a GitHub connector posting as the owner's account can submit that command. Check the actual Actions run rather than presuming the comment started CI. Only in-repository, open PR branches can be modified. The generation worker cannot push source edits; the separate publish job only commits reference materials. A stale job whose source branch has advanced will fail to push rather than overwrite newer work.
+
+### Alternative: agent with local repo checkout
+
+From the repository root, run:
+
+```bash
+node scripts/generate-translation-review-artifacts.mjs
+```
+
+This runs exactly the same all-taxonomies/all-locales generation and populates `.agent-ci-artifacts/` locally. The agent may use these documents in the local checkout. If GitHub access is only via a file-reading connector and no workflow has been activated, do **not** pretend local execution occurred.
+
+## REVIEW PROCESS
+
+1. **Resolve scope and source.** Determine the assigned textbook(s), locale(s), branch/PR, and authoritative English meaning. Locate `manifest.json`; generate/refresh once if missing or stale relative to the intended source. Record the commit to which the generated documents refer.
+2. **Select only useful documents.** The complete library is generated, but the reviewer reads the relevant `taxonomies/<textbook>/<locale>.md` views; optionally read comparison languages. For long views, process sections/domains in batches while keeping a shared glossary and a single cumulative issue log. Do not demand user prompts for the next domain or artifact.
+3. **Audit all assigned entities.** Compare every translated title and available frontend description against the English methodological definition and educational context; evaluate accuracy, grammar, orthography, tone, age appropriateness, ambiguity, false friends, scientific terminology and internal consistency across domains.
+4. **Apply language-specific guidance.** For Crimean Tatar (`qm`), follow the Persona's **Crimean Tatar → international → Turkish** hierarchy, approved Latin spelling and provisional-review policy. A carefully adapted Turkish **technical term** may be appropriate, but Turkish entire sentences are not Crimean Tatar localization.
+5. **Produce actionable findings.** Cite specific textbook, locale, canonical code link/path, field (`name.<locale>` or `description.frontend.<locale>`), current wording, recommended wording, rationale, confidence, severity and sources actually checked. Differentiate definite errors from plausible linguistic variants or unverified proposals. No false native-speaker or standards certifications.
+6. **Apply corrections only when explicitly authorized.** This skill alone is read-only. For edits, switch to [Technical Translation](./technical-translation.skill.md) and its actual TypeScript verification gate; modify **only** authorized locale fields in canonical code. Refresh the temporary library if another review of the updated text is required.
+7. **Report coherent results.** Provide overall coverage, key terminology decisions, number of reviewed entities and outstanding questions. Complete the entire assigned scope without unnecessary user interruptions.
+
+## REQUIRED CLEANUP BEFORE MERGE
+
+When the review is done, **the agent requests cleanup** through the PR conversation:
+
+```text
+/agent-artifacts cleanup
+```
+
+The same reusable workflow deletes **all tracked `.agent-ci-artifacts/` files** in that PR branch in a cleanup commit. Switching a draft PR to **Ready for review** also requests cleanup automatically for PRs targeting `main`. The cleanup is deliberate: **do not delete files before the agent finishes reading them**.
+
+GitHub's [Agent CI Artifacts / clean check](../../../.github/workflows/agent-ci-artifacts-guard.yml) runs on **every PR into `main`**, even docs-only PRs, and fails if the directory remains; FastGate also refuses it when FastGate runs. Configure the dedicated check as a **required status check** in the repository's `main` ruleset to guarantee enforcement. While the temporary folder is present, a red merge check is **expected and must not be bypassed**; request cleanup, confirm the directory is gone and the check is green, then merge.
+
+**Do not add the directory to `.gitignore`**: agents must be able to read its files through GitHub while reviewing. Do not create or delete workflow YAML per review, and do not merge generated documents into `main`. CI runners and one-day transport artifacts are disposed of automatically; **the committed PR library remains until the cleanup commit**, so do not confuse runner expiration with Git branch cleanup.
+
+## ACCEPTANCE AND LIMITATIONS
+
+A completed language review is supported by actually reading the requested view(s), comparing with source meaning, reporting traceable issues and accurately stating what has or has not been verified. A green CI check, present locale keys or generated Markdown alone **does not** establish native-quality translation. Record failed documents from the manifest. The reviewer does not need to inspect all other languages just because generation produced them.
+
+**The infrastructure is intentionally reusable:** other agent tasks may eventually put their temporary machine-generated reference documents into `.agent-ci-artifacts/`, with the same generation-on-demand, PR-only commit, and cleanup-before-merge discipline; add new generators through separately reviewed CI changes, not ad hoc one-off jobs.
