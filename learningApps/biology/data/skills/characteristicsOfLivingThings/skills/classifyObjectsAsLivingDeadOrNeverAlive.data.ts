@@ -32,6 +32,7 @@ export const classifyObjectsAsLivingDeadOrNeverAlive_Skill_Data = buildSkillConf
     be: 'Клясыфікаваць аб’екты як жывыя, мёртвыя або тыя, што ніколі не былі жывымі',
     ka: 'ობიექტების დაყოფა ცოცხალ, მკვდარ და არასოდეს ცოცხალ კატეგორიებად',
     kk: 'Нысандарды тірі, өлі немесе ешқашан тірі болмаған деп жіктеу',
+    qm: 'Nesnelerni canlı, ölü ya da iç bir vaqıt canlı olmağan olaraq sınıflandırmaq',
   },
   description: {
     methodological: "Use evidence of life processes and origin to classify an object and justify the decision through diagnostic features. A living tree carries out life processes, a dead leaf once belonged to a living organism, and a stone has no biological origin. Do not equate dead organisms with their remains or with products of biological origin.",
@@ -64,6 +65,7 @@ export const classifyObjectsAsLivingDeadOrNeverAlive_Skill_Data = buildSkillConf
       be: 'Выкарыстоўвай доказы, каб вызначыць, ці нешта жывое, мёртвае або ніколі не было жывым.',
       ka: 'მტკიცებულებებით განსაზღვრე, რაიმე ცოცხალია, მკვდარია თუ არასოდეს ყოფილა ცოცხალი.',
       kk: 'Дәлелдерге сүйеніп, бір нәрсенің тірі, өлі немесе ешқашан тірі болмағанын анықта.',
+      qm: 'Yaşayış belirtilerine ve nesneniñ kelip çıquvına baqıp, o canlımı, ölgenmi ya da iç bir vaqıt canlı olmağanmı — delillerge esaslanıp belgileñiz.',
     },
   },
 });
