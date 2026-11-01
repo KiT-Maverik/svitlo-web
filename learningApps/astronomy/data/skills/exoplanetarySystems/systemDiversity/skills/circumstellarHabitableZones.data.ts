@@ -5,7 +5,7 @@ export const circumstellarHabitableZones_Skill_Data = buildSkillConfig({
   id: '940cd87e-fab3-424d-aac6-bcd20b36b236',
   name: {
     en: 'Circumstellar Habitable Zones',
-      zh: '恒星周围的宜居带',
+    zh: '恒星周围的宜居带',
     hi: 'तारों के आसपास रहने योग्य क्षेत्र',
     es: 'Zonas habitables alrededor de estrellas',
     ar: 'المناطق الصالحة للسكن حول النجوم',
@@ -39,7 +39,7 @@ export const circumstellarHabitableZones_Skill_Data = buildSkillConfig({
       'Interpret the range of stellar irradiation permitting surface liquid water under stated atmospheric assumptions.',
     frontend: {
       en: "Understand what a star's habitable zone does—and does not—tell us about liquid water.",
-          zh: '理解恒星宜居带能告诉我们有关液态水的哪些信息，以及它不能说明什么。',
+      zh: '理解恒星宜居带能告诉我们有关液态水的哪些信息，以及它不能说明什么。',
       hi: 'समझें कि तारे का रहने योग्य क्षेत्र तरल पानी की संभावना के बारे में क्या बताता है और क्या नहीं।',
       es: 'Comprende qué puede indicar la zona habitable de una estrella sobre el agua líquida y qué no puede indicar.',
       ar: 'افهم ما الذي تخبرنا به المنطقة الصالحة للسكن حول نجم عن الماء السائل وما الذي لا تثبته.',
