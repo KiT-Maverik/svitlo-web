@@ -66,7 +66,7 @@ export const keplersFirstLaw_Skill_Data = buildSkillConfig({
       be: 'Распазнавайце, як ідэалізаваная арбіта можа быць эліпсам з цэнтральным целам у адным з фокусаў.',
       ka: 'ამოიცანით, როგორ შეიძლება იდეალური ორბიტა იყოს ელიფსი, რომლის ერთ ფოკუსში ცენტრალური სხეული მდებარეობს.',
       kk: 'Идеал орбита эллипс болып, орталық дене оның бір фокусында орналасуы мүмкін екенін түсініңіз.',
-      qm: 'İdeal orbita ellips şeklinde ola bilecegini ve merkezdeki cisımniñ onıñ bir fokusında bulunğanını añlañız.',
+      qm: 'İdeal orbita ellips şeklinde ola bilecegini ve merkezdeki cisimniñ onıñ bir fokusında bulunğanını añlañız.',
     },
   },
 });
