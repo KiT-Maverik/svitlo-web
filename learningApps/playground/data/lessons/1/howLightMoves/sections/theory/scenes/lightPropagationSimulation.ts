@@ -1,8 +1,5 @@
-import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
-import type { StringObjectToLocale } from '../../../transformer.types';
-type Locale = StringObjectToLocale<
-  HowLightMoves_Lesson_Locale['section']['theory']['scene']['lightPropagationSimulation']
->;
+import type { LightPropagationSimulation_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/theory/scenes/LightPropagationSimulation/LightPropagationSimulation.types';
+
 const lightPropagationSimulation = {
   scene: {
     title: {
@@ -384,5 +381,12 @@ const lightPropagationSimulation = {
       zh: '简化模型：光速未按比例呈现。',
     },
   },
-} satisfies Locale;
+};
+
+export const lightPropagationSimulationData = {
+  id: '1c0b03fd-de9a-50b8-a493-03594337b5a7',
+  slug: 'lightPropagationSimulation',
+  locales: lightPropagationSimulation,
+} satisfies LightPropagationSimulation_ContentBlock<'data'>;
+
 export default lightPropagationSimulation;

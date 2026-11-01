@@ -2,8 +2,20 @@ import { createElement } from 'react';
 import type { SceneContentBlock_Config } from '@svitlo/engine/content';
 import { theory_SceneContentBlocks_Ids } from './index.ids';
 import { LightRayDiagram } from './LightRayDiagram/LightRayDiagram';
+import type { LightRayDiagram_ContentBlock } from './LightRayDiagram/LightRayDiagram.types';
 import { LightPropagationSimulation } from './LightPropagationSimulation/LightPropagationSimulation';
+import type { LightPropagationSimulation_ContentBlock } from './LightPropagationSimulation/LightPropagationSimulation.types';
 import { Checkpoint } from './Checkpoint/Checkpoint';
+
+export const lightRayDiagramDefinition = {
+  type: 'scene',
+  component: createElement(LightRayDiagram),
+} satisfies LightRayDiagram_ContentBlock<'definition'>;
+
+export const lightPropagationSimulationDefinition = {
+  type: 'scene',
+  component: createElement(LightPropagationSimulation),
+} satisfies LightPropagationSimulation_ContentBlock<'definition'>;
 
 export const theory_Scenes = {
   lightRayDiagram: {

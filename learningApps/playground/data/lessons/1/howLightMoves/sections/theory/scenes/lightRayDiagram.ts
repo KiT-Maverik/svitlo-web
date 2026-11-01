@@ -1,6 +1,5 @@
-import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
-import type { StringObjectToLocale } from '../../../transformer.types';
-type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['theory']['scene']['lightRayDiagram']>;
+import type { LightRayDiagram_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/theory/scenes/LightRayDiagram/LightRayDiagram.types';
+
 export const lightRayDiagram = {
   scene: {
     title: {
@@ -161,4 +160,10 @@ export const lightRayDiagram = {
       zh: '屏幕',
     },
   },
-} satisfies Locale;
+};
+
+export const lightRayDiagramData = {
+  id: '5acac9ef-2452-5072-b471-1255d52b4a28',
+  slug: 'lightRayDiagram',
+  locales: lightRayDiagram,
+} satisfies LightRayDiagram_ContentBlock<'data'>;

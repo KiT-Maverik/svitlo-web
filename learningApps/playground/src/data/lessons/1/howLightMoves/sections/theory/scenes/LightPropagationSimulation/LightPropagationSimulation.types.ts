@@ -1,3 +1,5 @@
+import type { ContentBlock_Scene } from '@svitlo/engine/content';
+
 export type LightPropagationSimulation_Locale = {
   scene: {
     title: string;
@@ -20,3 +22,6 @@ export type LightPropagationSimulation_Locale = {
     scale: string;
   };
 };
+
+export type LightPropagationSimulation_ContentBlock<ConfigType extends 'definition' | 'data' | 'response'> =
+  ContentBlock_Scene<ConfigType, LightPropagationSimulation_Locale>;
