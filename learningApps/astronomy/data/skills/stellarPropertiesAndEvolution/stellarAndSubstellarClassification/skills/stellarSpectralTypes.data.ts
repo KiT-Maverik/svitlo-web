@@ -18,7 +18,7 @@ export const stellarSpectralTypes_Skill_Data = buildSkillConfig({
     ja: '恒星のスペクトル型',
     ko: '별의 분광형',
     tr: 'Yıldızların tayf türleri',
-    vi: 'Các loại quang phổ sao',
+    vi: 'Các lớp quang phổ của sao',
     ta: 'விண்மீன் நிறமாலை வகைகள்',
     te: 'నక్షత్ర వర్ణపట రకాలు',
     mr: 'ताऱ्यांचे वर्णपटीय प्रकार',
