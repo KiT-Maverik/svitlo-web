@@ -12,7 +12,7 @@ export const assessCulturalAppropriation_Skill_Data = buildSkillConfig({
     fr: 'Évaluer l’appropriation culturelle',
     bn: 'সাংস্কৃতিক আত্মসাৎ মূল্যায়ন করুন',
     pt: 'Avaliar a apropriação cultural',
-    ur: 'ثقافتی appropriation کا جائزہ لیں',
+    ur: 'دوسری ثقافت کی روایات اپنانے کے اخلاقی پہلوؤں کا جائزہ لیں',
     id: 'Menilai Apropriasi Budaya',
     de: 'Kulturelle Aneignung beurteilen',
     ja: '文化的盗用を評価する',

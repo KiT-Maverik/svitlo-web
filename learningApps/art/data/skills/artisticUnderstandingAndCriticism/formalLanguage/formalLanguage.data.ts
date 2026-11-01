@@ -20,7 +20,7 @@ export const formalLanguage_SkillGroup_Data = buildSkillGroupConfig({
     fr: 'Langage formel',
     bn: 'আঙ্গিক ভাষা',
     pt: 'Linguagem formal',
-    ur: 'رسمی زبان',
+    ur: 'فن کی بصری زبان',
     id: 'Bahasa rupa',
     de: 'Formensprache',
     ja: '造形言語',

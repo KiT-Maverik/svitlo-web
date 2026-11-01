@@ -18,7 +18,7 @@ export const indigenousArtisticTraditionsOfTheAmericas_SkillGroup_Data = buildSk
     fr: 'Traditions artistiques autochtones des Amériques',
     bn: 'আমেরিকার আদিবাসী শিল্পকলার ঐতিহ্য',
     pt: 'Tradições artísticas indígenas das Américas',
-    ur: 'امریکہ کے مقامی فنّی روایات',
+    ur: 'براعظم ہائے امریکا کے مقامی لوگوں کی فنّی روایات',
     id: 'Tradisi Seni Masyarakat Adat Amerika',
     de: 'Künstlerische Traditionen indigener Völker Amerikas',
     ja: 'アメリカ先住民の芸術的伝統',
