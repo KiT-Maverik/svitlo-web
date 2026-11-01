@@ -45,7 +45,7 @@ export const cosmicDistanceMeasures_Skill_Data = buildSkillConfig({
       es: 'Compara las distintas formas de definir y medir distancias en cosmología.',
       ar: 'قارن الطرق المختلفة التي يستخدمها علماء الكونيات لتعريف المسافات وقياسها.',
       fr: 'Compare les différentes façons de définir et mesurer les distances en cosmologie.',
-      bn: 'মহাবিশ্বতত্ত্ববিদেরা দূরত্ব নির্ধারণ ও মাপার বিভিন্ন পদ্ধতি তুলনা করো।',
+      bn: 'মহাবিশ্বতত্ত্বে দূরত্ব নির্ধারণ ও পরিমাপের বিভিন্ন পদ্ধতির তুলনা করো।',
       pt: 'Compare as diferentes formas de definir e medir distâncias na cosmologia.',
       ur: 'کونیات دانوں کے فاصلے متعین اور ناپنے کے مختلف طریقوں کا موازنہ کریں۔',
       id: 'Bandingkan beragam cara ahli kosmologi mendefinisikan dan mengukur jarak.',
