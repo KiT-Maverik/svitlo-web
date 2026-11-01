@@ -57,7 +57,7 @@ export const repeatedAddition_Skill_Data = buildSkillConfig({
       ta: 'அதே முழு எண் அளவை மீண்டும் மீண்டும் கூட்டுவதைப் பெருக்கலாக எழுதலாம்.',
       te: 'ఒకే పూర్ణ సంఖ్య పరిమాణాన్ని మళ్లీమళ్లీ కూడడాన్ని గుణకారంగా రాయవచ్చు.',
       mr: 'तीच पूर्णांक राशी पुन्हा पुन्हा मिळवणे हे गुणाकाराने दाखवता येते.',
-      ms: 'Kamu boleh mewakili penambahan berulang bagi kuantiti integer yang sama sebagai pendaraban.',
+      ms: 'Kamu boleh mewakili penambahan berulang bagi kuantiti yang sama sebagai pendaraban.',
       he: 'אפשר לכתוב חיבור חוזר של אותה כמות שלמה כתרגיל כפל.',
       pl: 'Możesz zapisać wielokrotne dodawanie tej samej całkowitej ilości jako mnożenie.',
       uk: 'Ти можеш записувати повторюване додавання однакової цілої кількості як множення.',
