@@ -1,19 +1,7 @@
-import type { Locales_All } from '../locale.types';
-import type { Locale } from '../../languages';
-import type { ContentBlock_ConfigBase, ContentBlock_Localized } from './common.types';
+import type { ContentBlock_Meta } from './common.types';
 
-export type AudioContentBlock_Config<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> =
-  ContentBlock_ConfigBase & {
-    type: 'audio';
-    fileLocation: LocalizedValue;
-    title: LocalizedValue;
-    description: LocalizedValue;
-  };
-
-export interface AudioContentBlock extends ContentBlock_ConfigBase {
-  type: 'audio';
-  locale: Locale;
+export type AudioContentBlock = ContentBlock_Meta<'audio'> & {
   fileLocation: string;
   title: string;
   description: string;
-}
+};

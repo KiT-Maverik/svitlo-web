@@ -1,22 +1,6 @@
-import type { Locales_All } from '../locale.types';
-import type { Locale } from '../../languages';
-import type { ContentBlock_ConfigBase, ContentBlock_Localized } from './common.types';
+import type { ContentBlock_Meta } from './common.types';
 
-export interface CodeContentBlockParam<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> {
-  selector: string;
-  values: LocalizedValue;
-}
-
-export type CodeContentBlock_Config<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> =
-  ContentBlock_ConfigBase & {
-    type: 'code';
-    fileLocation: LocalizedValue;
-    codeParams: CodeContentBlockParam<LocalizedValue>[];
-  };
-
-export interface CodeContentBlock extends ContentBlock_ConfigBase {
-  type: 'code';
-  locale: Locale;
+export type CodeContentBlock = ContentBlock_Meta<'code'> & {
   fileLocation: string;
   codeParams: { selector: string; value: string }[];
-}
+};

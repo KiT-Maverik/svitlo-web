@@ -1,17 +1,6 @@
-import type { Locales_All } from '../locale.types';
-import type { Locale } from '../../languages';
-import type { ContentBlock_ConfigBase, ContentBlock_Localized } from './common.types';
+import type { ContentBlock_Meta } from './common.types';
 
-export type ImageContentBlock_Config<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> =
-  ContentBlock_ConfigBase & {
-    type: 'image';
-    fileLocation: LocalizedValue;
-    alt: LocalizedValue;
-  };
-
-export interface ImageContentBlock extends ContentBlock_ConfigBase {
-  type: 'image';
-  locale: Locale;
+export type ImageContentBlock = ContentBlock_Meta<'image'> & {
   fileLocation: string;
   alt: string;
-}
+};

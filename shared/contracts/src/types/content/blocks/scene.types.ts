@@ -1,9 +1,6 @@
-import type { ContentBlock_ConfigBase } from './common.types';
+import type { ContentBlock_Meta } from './common.types';
 
-export interface SceneContentBlock_Config<TComponent = unknown> extends ContentBlock_ConfigBase {
-  type: 'scene';
+export type SceneContentBlock<TComponent = unknown> = ContentBlock_Meta<'scene'> & {
   /** Renderer-defined payload (e.g. ReactNode), not a UI dependency of the engine. */
   component: TComponent;
-}
-
-export type SceneContentBlock = SceneContentBlock_Config;
+};
