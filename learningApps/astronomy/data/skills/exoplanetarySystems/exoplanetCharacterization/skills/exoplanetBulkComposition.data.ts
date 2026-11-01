@@ -54,7 +54,7 @@ export const exoplanetBulkComposition_Skill_Data = buildSkillConfig({
       tr: 'Kütle ve yarıçapla bir gezegenin olası maddelerini araştırın, tek bir yanıt olduğunu varsaymayın.',
       vi: 'Dùng khối lượng và bán kính để tìm hiểu vật liệu có thể cấu tạo nên hành tinh mà không cho rằng chỉ có một đáp án.',
       ta: 'ஒரே விடை உண்டு என்று கருதாமல், நிறையும் ஆரமும் கொண்டு ஒரு கோளின் சாத்தியமான கூறுகளை ஆராயுங்கள்.',
-      te: 'ఒకే సమాధానం ఉందని అనుకోకుండా, ద్రవ్యరాశి, వ్యాసార్థంతో గ్రహం ఉండవచ్చిన పదార్థాలను పరిశోధించండి.',
+      te: 'ఒకే సమాధానం ఉందని అనుకోకుండా, ద్రవ్యరాశి, వ్యాసార్థం ఆధారంగా గ్రహంలో ఉండవచ్చే పదార్థాలను పరిశోధించండి.',
       mr: 'एकच उत्तर गृहीत न धरता वस्तुमान आणि त्रिज्या वापरून ग्रहातील संभाव्य पदार्थांचा अभ्यास करा.',
       ms: 'Gunakan jisim dan jejari untuk mengkaji kemungkinan bahan planet tanpa menganggap hanya satu jawapan.',
       he: 'השתמשו במסה וברדיוס כדי לבדוק ממה כוכב לכת עשוי להיות מורכב, בלי להניח שיש תשובה יחידה.',
