@@ -1,8 +1,11 @@
 name: Translation Review Artifacts
 
-# Deliberately manual, reusable, and independent of FastGate.
+# Deliberately opt-in, reusable, and independent of FastGate.
 # GitHub requires workflow_dispatch definitions to be present on the default branch.
 on:
+  # An owner can ask the connected GitHub agent to post a guarded command in a PR.
+  issue_comment:
+    types: [created]
   workflow_dispatch:
     inputs:
       source_ref:
@@ -33,29 +36,85 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 jobs:
   generate:
     name: Generate temporary localized Markdown views
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    env:
-      REVIEW_PACKAGE: ${{ inputs.package }}
-      REVIEW_ALL_PACKAGES: ${{ inputs.all_packages }}
-      REVIEW_LOCALE: ${{ inputs.locale }}
-      REVIEW_ALL_LOCALES: ${{ inputs.all_locales }}
-      REVIEW_SOURCE_REF: ${{ inputs.source_ref || github.ref_name }}
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issue_comment' &&
+       github.event.issue.pull_request &&
+       github.event.comment.author_association == 'OWNER' &&
+       startsWith(github.event.comment.body, '/review-translation '))
     steps:
-      - name: Check out requested source ref
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.source_ref || github.ref_name }}
-          persist-credentials: false
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '24'
+
+      # Owner-only, explicit slash command; cannot be invoked by arbitrary PR commenters.
+      # Always checks out the current head SHA of the PR containing the command.
+      - name: Resolve PR comment scope
+        id: comment_scope
+        if: github.event_name == 'issue_comment'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
+          const tokens = event.comment.body.trim().split(/\s+/);
+          if (tokens.shift() !== '/review-translation') throw new Error('Unknown command');
+          const scope = { package: 'learningApps/astronomy', locale: 'qm', allPackages: false, allLocales: false };
+          let explicitPackage = false;
+          let explicitLocale = false;
+          for (const token of tokens) {
+            if (token === 'all-packages') scope.allPackages = true;
+            else if (token === 'all-locales') scope.allLocales = true;
+            else if (/^package=learningApps\/[a-z][a-z0-9-]*$/i.test(token)) {
+              scope.package = token.slice('package='.length);
+              explicitPackage = true;
+            } else if (/^locale=[a-z][a-z-]*$/.test(token)) {
+              scope.locale = token.slice('locale='.length);
+              explicitLocale = true;
+            } else throw new Error('Invalid /review-translation option: ' + token);
+          }
+          if (scope.allPackages && explicitPackage) throw new Error('Choose package=... OR all-packages');
+          if (scope.allLocales && explicitLocale) throw new Error('Choose locale=... OR all-locales');
+          const pr = event.issue.number;
+          const response = await fetch('https://api.github.com/repos/' +
+            process.env.GITHUB_REPOSITORY + '/pulls/' + pr, {
+              headers: {
+                authorization: 'Bearer ' + process.env.GH_TOKEN,
+                accept: 'application/vnd.github+json',
+                'x-github-api-version': '2022-11-28',
+              },
+            });
+          if (!response.ok) throw new Error('Failed to resolve source PR: HTTP ' + response.status);
+          const pull = await response.json();
+          if (pull.head.repo?.full_name !== process.env.GITHUB_REPOSITORY) {
+            throw new Error('Cross-repository PR head is not supported for unattended reviews');
+          }
+          const values = {
+            source_ref: pull.head.sha,
+            package: scope.package,
+            all_packages: String(scope.allPackages),
+            locale: scope.locale,
+            all_locales: String(scope.allLocales),
+          };
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,
+            Object.entries(values).map(([key, value]) => key + '=' + value).join('\n') + '\n');
+          NODE
+
+      - name: Check out requested source ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.comment_scope.outputs.source_ref || inputs.source_ref || github.ref_name }}
+          persist-credentials: false
 
       # Install only the TypeScript parser used by the existing generator.
       # Do not install the monorepo or build any textbook application.
@@ -75,6 +134,11 @@ jobs:
 
       - name: Generate requested review artifacts
         shell: bash
+        env:
+          REVIEW_PACKAGE: ${{ steps.comment_scope.outputs.package || inputs.package }}
+          REVIEW_ALL_PACKAGES: ${{ steps.comment_scope.outputs.all_packages || inputs.all_packages }}
+          REVIEW_LOCALE: ${{ steps.comment_scope.outputs.locale || inputs.locale }}
+          REVIEW_ALL_LOCALES: ${{ steps.comment_scope.outputs.all_locales || inputs.all_locales }}
         run: |
           set -euo pipefail
           args=(--out-dir "$RUNNER_TEMP/translation-review")
@@ -102,6 +166,8 @@ jobs:
       - name: Report review scope and artifact lifecycle
         if: always()
         shell: bash
+        env:
+          REVIEW_SOURCE_REF: ${{ steps.comment_scope.outputs.source_ref || inputs.source_ref || github.ref_name }}
         run: |
           {
             echo '### Translation review artifacts'
