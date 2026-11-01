@@ -41,7 +41,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
       qm: 'Yıldızlararası toznıñ yıldız yarığını nasıl zayıflattığını, qırmızılaştırğanını ve energiyanı infraqırmızı şavle şeklinde qayta çıqarğanını ögreniñiz.',
       zh: '了解星际尘埃如何使星光变暗、变红，并重新辐射能量。',
       hi: 'जानें कि तारों के बीच की धूल तारों के प्रकाश को मंद, लाल और पुनः उत्सर्जित कैसे करती है।',
-      es: 'Descubre cómo el polvo interestelar atenúa, enrojece y vuelve a emitir la luz estelar.',
+      es: 'Descubre cómo el polvo interestelar atenúa y enrojece la luz estelar y emite radiación infrarroja.',
       ar: 'اعرف كيف يخفت الغبار بين النجوم ضوءها ويجعله أكثر احمرارًا ثم يعيد إشعاعه.',
       fr: 'Découvre comment la poussière interstellaire atténue et rougit la lumière des étoiles, puis réémet de l\'énergie.',
       bn: 'তারার মধ্যবর্তী ধূলিকণা কীভাবে তারার আলো কমায়, লাল করে ও আবার বিকিরণ করে তা জানো।',

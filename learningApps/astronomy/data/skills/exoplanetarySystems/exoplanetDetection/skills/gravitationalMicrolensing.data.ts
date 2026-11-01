@@ -41,7 +41,7 @@ export const gravitationalMicrolensing_Skill_Data = buildSkillConfig({
       en: "Understand how gravity can briefly magnify a distant star's light and reveal a planet.",
       zh: '理解引力如何短暂放大遥远恒星的光，从而揭示行星的存在。',
       hi: 'समझें कि गुरुत्वाकर्षण दूर के तारे का प्रकाश थोड़ी देर के लिए बढ़ाकर ग्रह का संकेत कैसे दे सकता है।',
-      es: 'Comprende cómo la gravedad puede ampliar brevemente la luz de una estrella distante y revelar un planeta.',
+      es: 'Comprende cómo la gravedad puede aumentar temporalmente el brillo aparente de una estrella distante y revelar un planeta.',
       ar: 'افهم كيف يمكن للجاذبية أن تكبّر ضوء نجم بعيد مؤقتًا وتكشف عن كوكب.',
       fr: 'Comprenez comment la gravitation peut amplifier brièvement la lumière d’une étoile lointaine et révéler une planète.',
       bn: 'মহাকর্ষ কীভাবে অল্প সময়ের জন্য দূরের নক্ষত্রের আলো বাড়িয়ে কোনো গ্রহের উপস্থিতি প্রকাশ করে, তা বোঝো।',
