@@ -28,7 +28,7 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
     vi: 'Phép chia — Chia thành nhóm bằng nhau · Nhóm bằng nhau',
     ta: 'வகுத்தல் — சமக் குழுக்களாகப் பிரித்தல் · சமக் குழுக்கள்',
     te: 'భాగహారం — సమాన సమూహాలుగా చేయడం · సమాన సమూహాలు',
-    mr: 'भागाकार — समान गट करणे · समान गट',
+    mr: 'भागाकार — समान गट करणे',
     ms: 'Pembahagian — Membentuk kumpulan sama banyak · Kumpulan sama banyak',
     he: 'חילוק — יצירת קבוצות שוות · קבוצות שוות',
     pl: 'Dzielenie — Tworzenie równych grup · Równe grupy',
