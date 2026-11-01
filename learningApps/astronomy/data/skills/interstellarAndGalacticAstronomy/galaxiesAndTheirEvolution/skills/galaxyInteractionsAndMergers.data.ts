@@ -60,7 +60,7 @@ export const galaxyInteractionsAndMergers_Skill_Data = buildSkillConfig({
       he: 'ראו כיצד מפגשים ומיזוגים משנים צורות של גלקסיות ומעודדים היווצרות כוכבים חדשים.',
       pl: 'Zobacz, jak spotkania i połączenia zmieniają galaktyki i wyzwalają powstawanie nowych gwiazd.',
       uk: 'Досліди, як зустрічі й злиття змінюють галактики та спричиняють утворення нових зір.',
-      lt: 'Pamatyk, kaip galaktikų susitikimai bei susiliejimai keičia jų formas ir skatina naujų žvaigždžių gimimą.',
+      lt: 'Tyrinėk, kaip galaktikų sąveikos ir susiliejimai keičia jų sandarą, dujas ir žvaigždėdarą.',
       lv: 'Izpēti, kā sastapšanās un saplūšana maina galaktiku formas un izraisa jaunu zvaigžņu rašanos.',
       et: 'Vaata, kuidas kohtumised ja ühinemised muudavad galaktikate kuju ning käivitavad uute tähtede tekke.',
       be: 'Паглядзі, як сустрэчы й зьліцьці зьмяняюць галяктыкі ды выклікаюць утварэньне новых зорак.',
