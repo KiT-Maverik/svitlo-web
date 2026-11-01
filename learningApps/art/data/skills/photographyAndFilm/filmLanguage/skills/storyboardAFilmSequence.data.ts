@@ -33,7 +33,7 @@ export const storyboardAFilmSequence_Skill_Data = buildSkillConfig({
     be: 'Ствараць раскадроўку кінасцэны',
     ka: 'ფილმის ეპიზოდის სტორიბორდის შექმნა',
     kk: 'Фильм көрінісінің сторибордын жасау',
-    qm: 'Film sekansı için taslak kareler hazırlamak',
+    qm: 'Film sekansı içün taslak kareler hazırlamak',
   },
   description: {
     methodological:

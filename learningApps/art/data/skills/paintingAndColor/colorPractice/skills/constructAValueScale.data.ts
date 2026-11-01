@@ -65,7 +65,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
       be: 'Стварыце раўнамерны пераход тонаў ад светлага да цёмнага.',
       ka: 'შექმენით ტონების თანაბარი გადასვლა ღიადან მუქისკენ.',
       kk: 'Ашық түстен қою түске дейін біркелкі реңк ауысуын жасаңыз.',
-      qm: 'Açıqtan qaranlıqqa doğru tonlarnıñ bir-birine teñ keçişini yapın.',
+      qm: 'Açıqtan qaranlıqqa doğru tonlarnıñ bir-birine teñ keçişini yapıñız.',
     },
   },
 });

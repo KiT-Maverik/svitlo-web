@@ -51,7 +51,7 @@ export const sculptureAndMaterialArts_SkillDomain_Data = buildSkillDomainConfig(
       'Physical media can be shaped, assembled, printed or woven to produce objects, editions and decorative surfaces. This domain concerns expressive material practices rather than engineering manufacture.',
     frontend: {
       en: 'Create expressive physical objects using shaping, printing, clay, fabric and other materials.',
-      qm: 'Şekil bermek, baskı, balçıq, kumaş ve başqa materiallarnı qullanıp ifadeleyici fiziki obyektler yaratın.',
+      qm: 'Şekil bermek, baskı, balçıq, kumaş ve başqa materiallarnı qullanıp ifadeleyici fiziki obyektler yaratıñız.',
 
       zh: '通过塑形、印制、陶土、织物和其他材料，创造富有表现力的实体作品。',
       hi: 'आकार देने, छपाई, मिट्टी, कपड़े और अन्य सामग्रियों से अभिव्यंजक भौतिक वस्तुएँ बनाएँ।',
