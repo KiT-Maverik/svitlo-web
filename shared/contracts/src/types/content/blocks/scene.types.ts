@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
@@ -9,9 +10,8 @@ export type SceneLocales_Strings<TLocales> = TLocales extends string
     ? { [Key in keyof TLocales]: SceneLocales_Strings<TLocales[Key]> }
     : never;
 
-export type SceneContentBlock_Definition<TLocales extends object, TComponent = unknown> = ContentBlock_Definition_Meta<'scene'> & {
-  /** Renderer-defined payload (e.g. ReactNode), not a UI dependency of the contracts. */
-  component: TComponent;
+export type SceneContentBlock_Definition<TLocales extends object> = ContentBlock_Definition_Meta<'scene'> & {
+  component: ReactNode;
   locales: TLocales & SceneLocales_Strings<TLocales>;
 };
 
@@ -33,9 +33,8 @@ export type SceneContentBlock_Response<TLocales extends object> = ContentBlock_R
 export type SceneContentBlock<
   ConfigType extends ContentEntity_ConfigType,
   TLocales extends object = Record<string, string>,
-  TComponent = unknown,
 > = {
-  definition: SceneContentBlock_Definition<TLocales, TComponent>;
+  definition: SceneContentBlock_Definition<TLocales>;
   data: SceneContentBlock_Data<TLocales>;
   response: SceneContentBlock_Response<TLocales>;
 }[ConfigType];
