@@ -1,4 +1,4 @@
-import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
+import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta<'video'> } from './common.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 
@@ -9,7 +9,7 @@ type ContentBlock_Video_Data = ContentBlock_Data_Meta & {
   poster: Locale_Config;
 };
 
-type ContentBlock_Video_Response = ContentBlock_Response_Meta & Locale_ResponseParams & {
+type ContentBlock_Video_Response = ContentBlock_Response_Meta<'video'> & Locale_ResponseParams & {
   fileLocation: string;
   poster: string;
 };
