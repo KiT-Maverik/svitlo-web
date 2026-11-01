@@ -5,6 +5,7 @@ export const horizonCoordinates_Skill_Data = buildSkillConfig({
   id: '70f45d89-bf5b-42e2-9b00-7b04a7a48c0a',
   name: {
     en: 'Horizon Coordinates',
+    qm: 'Ufıq koordinataları',
     zh: '地平坐标',
     hi: 'क्षितिजीय निर्देशांक',
     es: 'Coordenadas horizontales',
@@ -38,6 +39,7 @@ export const horizonCoordinates_Skill_Data = buildSkillConfig({
       "Locate a celestial object using altitude and azimuth relative to an observer's horizon and orientation.",
     frontend: {
       en: "Find a sky object's direction using its height above the horizon and compass bearing.",
+      qm: 'Kök cisminiñ yönüni ufıqtan yüksekliği ve pusula yönü yardımınen tapıñız.',
       zh: '利用地平线以上的高度角和方位角确定天体的方向。',
       hi: 'क्षितिज से ऊँचाई और दिगंश का उपयोग करके आकाशीय पिंड की दिशा पता करें।',
       es: 'Determina la dirección de un astro mediante su altura sobre el horizonte y su acimut.',

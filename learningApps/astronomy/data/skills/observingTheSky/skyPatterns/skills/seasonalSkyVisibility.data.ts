@@ -5,6 +5,7 @@ export const seasonalSkyVisibility_Skill_Data = buildSkillConfig({
   id: '4e930fe7-05ba-45ab-9efb-11dd43b3e9e2',
   name: {
     en: 'Seasonal Sky Visibility',
+    qm: 'Yıl mevsimlerine köre kökniñ körünüvi',
     zh: '星空的季节性可见性',
     hi: 'ऋतुओं के अनुसार आकाश की दृश्यता',
     es: 'Visibilidad estacional del cielo',
@@ -37,6 +38,7 @@ export const seasonalSkyVisibility_Skill_Data = buildSkillConfig({
     methodological: 'Explain why different stars and constellations become visible at different times of the year.',
     frontend: {
       en: 'Explain why different star patterns are visible in different seasons.',
+      qm: 'Yılnıñ çeşit mevsimlerinde ne içün çeşit yıldız şekilleri körüngenini añlatıñız.',
       zh: '解释为什么不同季节能看到不同的恒星图案。',
       hi: 'समझाएँ कि अलग-अलग ऋतुओं में तारों की अलग आकृतियाँ क्यों दिखाई देती हैं।',
       es: 'Explica por qué se ven diferentes patrones de estrellas en distintas estaciones.',

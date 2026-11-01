@@ -10,6 +10,7 @@ export const observingTheSky_SkillDomain_Data = buildSkillDomainConfig({
   id: '85a8b6db-20e6-466b-9a0c-23ec5bb54203',
   name: {
     en: 'Observing the Sky',
+    qm: 'Kökni közetüv',
     zh: '观测天空',
     hi: 'आकाश का अवलोकन',
     es: 'Observación del cielo',
@@ -49,6 +50,7 @@ export const observingTheSky_SkillDomain_Data = buildSkillDomainConfig({
       "This domain addresses how celestial positions, patterns, brightness and changes are represented from an observer's location on Earth. It treats the sky as an observable system while distinguishing apparent motion from the physical causes developed in celestial mechanics.",
     frontend: {
       en: 'Learn to describe where objects appear in the sky and how their positions change with time and location.',
+      qm: 'Cisimlerniñ kökte qayda körüngenini ve olarnıñ yeri vaqıtqa ve bulunğan yeriñizge köre nasıl deñişkenini añlatmağı ögreniñiz.',
       zh: '学习描述天体在天空中出现的位置，以及这些位置如何随时间和观测地点而变化。',
       hi: 'जानें कि आकाश में खगोलीय पिंड कहाँ दिखाई देते हैं और समय तथा स्थान बदलने पर उनकी स्थिति कैसे बदलती है।',
       es: 'Aprende a describir dónde aparecen los astros en el cielo y cómo cambia su posición según el momento y el lugar.',

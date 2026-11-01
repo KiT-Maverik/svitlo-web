@@ -14,6 +14,7 @@ export const skyPatterns_SkillGroup_Data = buildSkillGroupConfig({
   id: 'd148c95a-dce1-468f-9068-bd96247909d2',
   name: {
     en: 'Sky Patterns',
+    qm: 'Kök şekilleri',
     zh: '星空图案',
     hi: 'आकाश में दिखने वाली आकृतियाँ',
     es: 'Patrones del cielo',
@@ -55,6 +56,7 @@ export const skyPatterns_SkillGroup_Data = buildSkillGroupConfig({
       'Recognizable configurations make celestial scenes navigable, but their visibility and apparent arrangement depend on viewpoint and date.',
     frontend: {
       en: 'Recognize sky patterns and understand how their visibility changes.',
+      qm: 'Kökteki yıldız şekillerini tanıñız ve olarnıñ körünüvi ne içün deñişkenini añlañız.',
       zh: '辨认天空中的图案，并了解它们的可见性如何变化。',
       hi: 'आकाश में दिखाई देने वाले पैटर्न पहचानें और समझें कि उनकी दृश्यता कैसे बदलती है।',
       es: 'Reconoce patrones en el cielo y comprende cómo cambia su visibilidad.',

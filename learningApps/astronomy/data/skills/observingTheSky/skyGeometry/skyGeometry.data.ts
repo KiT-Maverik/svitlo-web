@@ -12,6 +12,7 @@ export const skyGeometry_SkillGroup_Data = buildSkillGroupConfig({
   id: '25ee1c2b-6a51-42f5-a148-643490c7db5c',
   name: {
     en: 'Sky Geometry',
+    qm: 'Kök geometriyası',
     zh: '天空几何',
     hi: 'आकाशीय ज्यामिति',
     es: 'Geometría del cielo',
@@ -51,6 +52,7 @@ export const skyGeometry_SkillGroup_Data = buildSkillGroupConfig({
       'Positions and separations in the visible sky can be communicated through directional frames and angular quantities rather than terrestrial distance alone.',
     frontend: {
       en: 'Use angles and sky coordinates to describe the direction of objects seen from Earth.',
+      qm: 'Yerden körüngen cisimlerniñ yönüni bucaqlar ve kök koordinataları ile añlatıñız.',
       zh: '使用角度和天空坐标描述从地球上看到的天体方向。',
       hi: 'पृथ्वी से दिखाई देने वाले खगोलीय पिंडों की दिशा बताने के लिए कोणों और आकाशीय निर्देशांकों का उपयोग करें।',
       es: 'Utiliza ángulos y coordenadas celestes para describir la dirección en la que se ven los astros desde la Tierra.',
