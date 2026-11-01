@@ -9,7 +9,7 @@ export const interpretExpressiveMovement_Skill_Data = buildSkillConfig({
     hi: 'अभिव्यंजक गति की व्याख्या करें',
     es: 'Interpretar el movimiento expresivo',
     ar: 'فسّر الحركة التعبيرية',
-    fr: 'Interprétez le mouvement expressif',
+    fr: 'Interpréter le mouvement expressif',
     bn: 'অভিব্যক্তিপূর্ণ চলনের ব্যাখ্যা করুন',
     pt: 'Interpretar o movimento expressivo',
     ur: 'اظہاری حرکت کی تشریح کریں',

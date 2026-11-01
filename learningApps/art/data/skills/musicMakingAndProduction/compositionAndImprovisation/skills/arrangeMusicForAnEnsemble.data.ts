@@ -9,7 +9,7 @@ export const arrangeMusicForAnEnsemble_Skill_Data = buildSkillConfig({
     hi: 'वाद्यवृंद के लिए संगीत संयोजित करें',
     es: 'Arreglar música para un conjunto',
     ar: 'وزّع الأدوار الموسيقية على الفرقة',
-    fr: 'Arrangez la musique pour un ensemble',
+    fr: 'Arranger de la musique pour un ensemble',
     bn: 'বাদ্যদলের জন্য সংগীত সাজান',
     pt: 'Arranjar música para um conjunto',
     ur: 'مجموعے کے لیے موسیقی ترتیب دیں',

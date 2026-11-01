@@ -9,7 +9,7 @@ export const evaluateDancePerformance_Skill_Data = buildSkillConfig({
     hi: 'नृत्य प्रस्तुति का मूल्यांकन करें',
     es: 'Evaluar una actuación de danza',
     ar: 'قيّم عرض الرقص',
-    fr: 'Évaluez une performance de danse',
+    fr: 'Évaluer une performance de danse',
     bn: 'নৃত্য পরিবেশনার মূল্যায়ন করুন',
     pt: 'Avaliar uma apresentação de dança',
     ur: 'رقص کی پیشکش کا جائزہ لیں',

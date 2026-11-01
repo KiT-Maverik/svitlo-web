@@ -9,7 +9,7 @@ export const distinguishDanceGenres_Skill_Data = buildSkillConfig({
     hi: 'नृत्य शैलियों में अंतर पहचानें',
     es: 'Distinguir géneros de danza',
     ar: 'ميّز بين أنواع الرقص',
-    fr: 'Distinguez les genres de danse',
+    fr: 'Distinguer les genres de danse',
     bn: 'নৃত্যের ধরনগুলোর পার্থক্য বুঝুন',
     pt: 'Distinguir gêneros de dança',
     ur: 'رقص کی اصناف میں فرق کریں',
