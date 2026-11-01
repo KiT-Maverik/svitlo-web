@@ -39,7 +39,7 @@ export const flybyMeasurements_Skill_Data = buildSkillConfig({
       'Interpret scientific information obtained during a brief spacecraft encounter, including coverage constraints.',
     frontend: {
       en: 'See what a brief spacecraft flyby can reveal—and what it may miss.',
-      qm: 'Kosmik apparatnıñ qısqa yaqından uçuvı neni kösterebilegenini ve neni körmey qalabilgenini ögreniñiz.',
+      qm: 'Kosmik apparatnıñ qısqa yaqından uçuvı neni köstere bilgenini ve neni körmey qala bilgenini ögreniñiz.',
       bn: 'মহাকাশযান কোনো জ্যোতিষ্কের কাছ দিয়ে অল্প সময়ে উড়ে গেলে কী জানা যায় এবং কী অজানা থেকে যেতে পারে, তা দেখো।',
       ur: 'دیکھیں کہ کسی آسمانی جسم کے قریب سے خلائی جہاز کے مختصر گزرنے پر کیا معلوم ہو سکتا ہے اور کیا رہ سکتا ہے۔',
       ta: 'ஒரு விண்கலம் ஒரு விண்பொருளின் அருகே சிறிது நேரம் கடந்து செல்லும்போது எதை அறியலாம், எது தவறவிடப்படலாம் என்பதைப் பாருங்கள்.',

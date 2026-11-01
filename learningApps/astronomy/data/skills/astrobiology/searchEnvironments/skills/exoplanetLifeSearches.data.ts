@@ -39,7 +39,7 @@ export const exoplanetLifeSearches_Skill_Data = buildSkillConfig({
       'Interpret the capabilities and limitations of remote atmospheric and planetary measurements in searches for life.',
     frontend: {
       en: 'Learn what distant planetary measurements can reveal—and cannot reveal—about possible life.',
-      qm: 'Uzaqtaki planetalar ölçüvleri yaşayış ihtimalı aqqında neni kösterebilegenini ve neni köstere olamağanını ögreniñiz.',
+      qm: 'Uzaqtaki planetalar ölçüvleri yaşayış ihtimalı aqqında neni köstere bilgenini ve neni köstere olamağanını ögreniñiz.',
       bn: 'দূরবর্তী গ্রহের পরিমাপ থেকে সম্ভাব্য জীবন সম্পর্কে কী জানা যায় এবং কী জানা যায় না, তা বোঝো।',
       ur: 'جانیں کہ دور دراز سیاروں کی پیمائشیں ممکنہ زندگی کے بارے میں کیا بتا سکتی ہیں اور کیا نہیں۔',
       ta: 'தொலைதூரக் கோள்களின் அளவீடுகள் சாத்தியமான உயிரைப் பற்றி எதைத் தெரிவிக்க முடியும், எதைத் தெரிவிக்க முடியாது என்பதை அறியுங்கள்.',

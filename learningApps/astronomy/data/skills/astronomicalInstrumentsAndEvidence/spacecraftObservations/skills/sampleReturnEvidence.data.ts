@@ -39,7 +39,7 @@ export const sampleReturnEvidence_Skill_Data = buildSkillConfig({
       'Explain how collected extraterrestrial materials can be analyzed and how contamination or context loss affects conclusions.',
     frontend: {
       en: 'Explore what returned space samples reveal and how contamination can affect findings.',
-      qm: 'Kosmostan qaytarılğan numunalar neni bildirgenini ve kirlenüv neticelerge nasıl tesir etebilegenini araştırıñız.',
+      qm: 'Kosmostan qaytarılğan numunalar neni bildirgenini ve kirlenüv neticelerge nasıl tesir ete bilgenini araştırıñız.',
       bn: 'মহাকাশ থেকে ফিরিয়ে আনা নমুনা কী জানায় এবং দূষণ কীভাবে গবেষণার ফলকে প্রভাবিত করতে পারে, তা খুঁজে দেখো।',
       ur: 'دریافت کریں کہ خلا سے واپس لائے گئے نمونے کیا ظاہر کرتے ہیں اور آلودگی نتائج پر کیسے اثر ڈال سکتی ہے۔',
       ta: 'விண்வெளியிலிருந்து கொண்டுவரப்பட்ட மாதிரிகள் எதை வெளிப்படுத்துகின்றன, மாசுபாடு முடிவுகளை எவ்வாறு பாதிக்கலாம் என்பதை ஆராயுங்கள்.',

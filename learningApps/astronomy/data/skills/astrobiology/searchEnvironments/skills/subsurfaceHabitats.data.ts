@@ -39,7 +39,7 @@ export const subsurfaceHabitats_Skill_Data = buildSkillConfig({
       'Explain why liquid environments protected under ice or rock can be relevant even when a surface is hostile.',
     frontend: {
       en: 'Discover why oceans hidden beneath ice or rock could be promising places to investigate.',
-      qm: 'Buz ya da taş astında gizlengen okeanlar ne içün araştırmağa degerli yaşayış yerleri olabilgenini ögreniñiz.',
+      qm: 'Buz ya da taş astında gizlengen okeanlar ne içün araştırmağa degerli yaşayış yerleri ola bilgenini ögreniñiz.',
       bn: 'বরফ বা শিলার নিচে লুকানো মহাসাগর কেন অনুসন্ধানের জন্য আশাব্যঞ্জক হতে পারে, তা জানো।',
       ur: 'جانیں کہ برف یا چٹان کے نیچے چھپے سمندر تحقیق کے لیے امید افزا مقامات کیوں ہو سکتے ہیں۔',
       ta: 'பனி அல்லது பாறையின் அடியில் மறைந்துள்ள பெருங்கடல்கள் ஆய்வுக்கு ஏற்ற இடங்களாக ஏன் இருக்கலாம் என்பதை அறியுங்கள்.',
