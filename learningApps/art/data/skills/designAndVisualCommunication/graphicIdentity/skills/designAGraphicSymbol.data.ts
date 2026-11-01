@@ -12,7 +12,7 @@ export const designAGraphicSymbol_Skill_Data = buildSkillConfig({
     ar: 'تصميم رمز رسومي',
     fr: 'Concevoir un symbole graphique',
     bn: 'গ্রাফিক প্রতীক নকশা করুন',
-    pt: 'Conceber um símbolo gráfico',
+    pt: 'Projetar um símbolo gráfico',
     ur: 'گرافک علامت ڈیزائن کریں',
     id: 'Merancang simbol grafis',
     de: 'Ein grafisches Symbol gestalten',
@@ -67,7 +67,7 @@ export const designAGraphicSymbol_Skill_Data = buildSkillConfig({
       be: 'Стварыце просты сімвал, які перадае пэўную ідэю.',
       ka: 'შექმენით მარტივი სიმბოლო, რომელიც კონკრეტულ იდეას გადმოსცემს.',
       kk: 'Белгілі бір ойды жеткізетін қарапайым таңба жасаңыз.',
-      qm: 'Müeyyen bir fikirni añlatqan sade sembol yaratın.',
+      qm: 'Müeyyen bir fikirni añlatqan sade sembol yaratıñız.',
     },
   },
 });

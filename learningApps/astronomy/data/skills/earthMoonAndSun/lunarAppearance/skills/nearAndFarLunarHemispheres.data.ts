@@ -24,7 +24,7 @@ export const nearAndFarLunarHemispheres_Skill_Data = buildSkillConfig({
     mr: 'चंद्राचे जवळचे आणि दूरचे गोलार्ध',
     ms: 'Hemisfera dekat dan jauh Bulan',
     he: 'חצאי הכדור הקרוב והרחוק של הירח',
-    pl: 'Półkule Księżyca widoczna i niewidoczna z Ziemi',
+    pl: 'Półkule Księżyca: bliższa i dalsza',
     uk: 'Ближня та дальня півкулі Місяця',
     lt: 'Artimasis ir tolimasis Mėnulio pusrutuliai',
     lv: 'Mēness tuvā un tālā puslode',

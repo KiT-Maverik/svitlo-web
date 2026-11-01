@@ -27,7 +27,7 @@ export const performAnInstrumentalPhrase_Skill_Data = buildSkillConfig({
     pl: 'Wykonuj frazę instrumentalną',
     uk: 'Виконуйте інструментальну фразу',
     lt: 'Atlikite instrumentinę frazę',
-    lv: 'Izpildiet instrumentālu frāzi',
+    lv: 'Izpildīt instrumentālu frāzi',
     et: 'Esita instrumentaalset fraasi',
     be: 'Выконвайце інструментальную фразу',
     ka: 'შეასრულეთ ინსტრუმენტული ფრაზა',

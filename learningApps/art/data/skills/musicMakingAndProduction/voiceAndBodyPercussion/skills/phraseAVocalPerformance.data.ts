@@ -61,7 +61,7 @@ export const phraseAVocalPerformance_Skill_Data = buildSkillConfig({
       uk: 'Формуйте співану фразу за допомогою дихання, чіткої вимови й точного ритму.',
       lt: 'Formuokite dainuojamą frazę pasitelkdami kvėpavimą, aiškius žodžius ir laiką.',
       lv: 'Veidojiet dziedātu frāzi ar elpu, skaidru dikciju un ritmu.',
-      et: 'Kujundage lauldud fraasi hingamise, selge diktsiooni ja ajastusega.',
+      et: 'Kujunda lauldud fraasi hingamise, selge diktsiooni ja ajastusega.',
       be: 'Фарміруйце вакальную фразу з дапамогай дыхання, выразнай дыкцыі і рытму.',
       ka: 'სასიმღერო ფრაზა ჩამოაყალიბეთ სუნთქვით, მკაფიო სიტყვებითა და დროის შეგრძნებით.',
       kk: 'Ән фразасын тыныс, анық сөздер және уақытты дәл сақтау арқылы қалыптастырыңыз.',

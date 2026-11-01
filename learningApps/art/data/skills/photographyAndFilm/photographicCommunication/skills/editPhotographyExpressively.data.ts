@@ -60,7 +60,7 @@ export const editPhotographyExpressively_Skill_Data = buildSkillConfig({
       ms: 'Laraskan warna dan pembingkaian foto sambil menghormati perkara yang didakwa ditunjukkan.',
       he: 'התאימו צבע וחיתוך תוך כיבוד התוכן שהתצלום מתיימר להציג.',
       pl: 'Dostosuj kolor i kadr, zachowując zgodność z tym, co zdjęcie ma przedstawiać.',
-      uk: 'Коригуйте колір і кадрування, поважаючи те, що фотографія нібито показує.',
+      uk: 'Коригуйте колір, контраст і кадрування, зберігаючи достовірність того, що документує фотографія.',
       lt: 'Koreguokite nuotraukos spalvas ir kadravimą, paisydami to, ką ji teigia vaizduojanti.',
       lv: 'Pielāgojiet fotogrāfijas krāsas un kadrējumu, respektējot to, ko tā apgalvo attēlojam.',
       et: 'Muuda foto värve ja kadreeringut, austades samal ajal seda, mida foto väidab kujutavat.',

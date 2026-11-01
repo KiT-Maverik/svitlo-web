@@ -60,7 +60,7 @@ export const photographicTechnique_SkillGroup_Data = buildSkillGroupConfig({
       ar: 'استخدم اختيارات الكاميرا والإضاءة لإنشاء صورة ذات تأثير بصري واضح.',
       fr: 'Utilisez les réglages de l’appareil et de l’éclairage pour créer une photographie à l’effet visuel net.',
       bn: 'স্পষ্ট দৃশ্যগত প্রভাবসহ ছবি তৈরি করতে ক্যামেরা ও আলোর সিদ্ধান্ত নিন।',
-      pt: 'Use escolhas de câmara e iluminação para criar uma fotografia com um efeito visual claro.',
+      pt: 'Use os recursos da câmera e a iluminação para criar uma fotografia com um efeito visual claro.',
       ur: 'واضح بصری اثر والی تصویر بنانے کے لیے کیمرے اور روشنی کے انتخاب استعمال کریں۔',
       id: 'Gunakan pilihan kamera dan pencahayaan untuk menghasilkan foto dengan efek visual yang jelas.',
       de: 'Nutze Kamera- und Lichtentscheidungen, um ein Foto mit klarer visueller Wirkung zu gestalten.',

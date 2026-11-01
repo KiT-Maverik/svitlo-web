@@ -14,7 +14,7 @@ export const motionGraphics_SkillGroup_Data = buildSkillGroupConfig({
     zh: '动态图形',
     hi: 'मोशन ग्राफ़िक्स',
     es: 'Gráficos en movimiento',
-    ar: 'الرسوم المتحركة',
+    ar: 'الرسوميات المتحركة',
     fr: 'Graphisme animé',
     bn: 'মোশন গ্রাফিক্স',
     pt: 'Motion graphics',

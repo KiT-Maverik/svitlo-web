@@ -27,7 +27,7 @@ export const performBodyPercussion_Skill_Data = buildSkillConfig({
     pl: 'Wykonuj body percussion',
     uk: 'Виконуйте боді-перкусію',
     lt: 'Atlikite kūno perkusiją',
-    lv: 'Izpildiet ķermeņa perkusiju',
+    lv: 'Izpildīt ķermeņa perkusiju',
     et: 'Esita kehapillimuusikat',
     be: 'Выконвайце бодзі-перкусію',
     ka: 'შეასრულეთ სხეულის პერკუსია',
@@ -65,7 +65,7 @@ export const performBodyPercussion_Skill_Data = buildSkillConfig({
       be: 'Стварайце рытмы плясканнем, крокамі, пастукваннем па целе або іншымі гукамі цела.',
       ka: 'შექმენით რიტმები ტაშით, ნაბიჯებით, სხეულზე დაკვრით ან სხეულის სხვა ხმებით.',
       kk: 'Шапалақтау, аяқ басу, денені соғу және басқа дене дыбыстары арқылы ырғақ жасаңыз.',
-      qm: 'Alqış çalaraq, adım ataraq, bedenni tıqıldataraq yaki başqa beden seslerinen ritm yaratın',
+      qm: 'Alqış çalaraq, adım ataraq, bedenni tıqıldataraq yaki başqa beden seslerinen ritm yaratıñız',
     },
   },
 });

@@ -27,7 +27,7 @@ export const arrangeMusicInASequencer_Skill_Data = buildSkillConfig({
     pl: 'Układaj muzykę w sekwencerze',
     uk: 'Аранжуйте музику в секвенсорі',
     lt: 'Išdėstykite muziką sekvenceryje',
-    lv: 'Sakārtojiet mūziku sekvencerā',
+    lv: 'Sakārtot mūziku sekvencerā',
     et: 'Sea muusikat sekventseris',
     be: 'Упарадкоўвайце музыку ў секвенсары',
     ka: 'მუსიკის დალაგება სეკვენსერში',

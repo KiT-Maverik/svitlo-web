@@ -50,7 +50,7 @@ export const radioAstronomy_Skill_Data = buildSkillConfig({
       lv: 'Uzzini, ko radiosignāli atklāj par Visumu.',
       et: 'Uuri, mida raadiosignaalid universumi kohta näitavad.',
       be: 'Даведайся, што радыёсыгналы могуць расказаць пра Сусьвет.',
-      ka: 'გაიგე, რას გვიმხელს რადიოსიგნალები სამყაროს შესახებ.',
+      ka: 'გაიგე, რას გვიმხელენ რადიოსიგნალები სამყაროს შესახებ.',
       kk: 'Радиосигналдар Ғалам туралы нені ашып көрсететінін біл.',
       uk: 'Дізнайся, що радіосигнали можуть розповісти про Всесвіт.',
       pl: 'Odkryj, co sygnały radiowe mogą ujawnić o Wszechświecie.',

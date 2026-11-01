@@ -5,7 +5,7 @@ export const designKineticTypography_Skill_Data = buildSkillConfig({
   id: '5b04bfdb-9766-482f-8dd7-125a012fa600',
   name: {
     en: 'Design Kinetic Typography',
-    zh: '设计动态字体',
+    zh: '设计动态文字排版',
     hi: 'काइनेटिक टाइपोग्राफी डिज़ाइन करें',
     es: 'Diseñar tipografía cinética',
     ar: 'تصميم الطباعة الحركية',

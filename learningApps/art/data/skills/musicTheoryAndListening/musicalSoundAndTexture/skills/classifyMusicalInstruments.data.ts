@@ -43,7 +43,7 @@ export const classifyMusicalInstruments_Skill_Data = buildSkillConfig({
       hi: 'वाद्ययंत्रों को उनकी ध्वनि उत्पन्न करने की विधि के अनुसार समूहित करें और विभिन्न परंपराओं का सम्मान करें।',
       es: 'Agrupa los instrumentos según cómo producen sonido, respetando las distintas tradiciones.',
       ar: 'صنّف الآلات بحسب طريقة إصدارها للصوت، مع احترام التقاليد المختلفة.',
-      fr: 'Regroupe les instruments selon leur mode de production du son, tout en respectant les différentes traditions.',
+      fr: 'Regroupez les instruments selon leur mode de production du son, tout en respectant les différentes traditions.',
       bn: 'বিভিন্ন ঐতিহ্যের প্রতি সম্মান রেখে কীভাবে শব্দ তৈরি হয় তার ভিত্তিতে বাদ্যযন্ত্রগুলোকে ভাগ করুন।',
       pt: 'Agrupe os instrumentos pela forma como produzem som, respeitando as diferentes tradições.',
       ur: 'آلات کو آواز پیدا کرنے کے طریقے کے مطابق گروہوں میں رکھیں اور مختلف روایات کا احترام کریں۔',

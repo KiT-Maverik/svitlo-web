@@ -19,7 +19,7 @@ export const analyzeMinimalism_Skill_Data = buildSkillConfig({
     ko: '미니멀리즘 분석하기',
     tr: 'Minimalizmi incelemek',
     vi: 'Phân tích chủ nghĩa tối giản',
-    ta: 'குறைந்தபட்சவாதத்தைப் பகுப்பாய்வு செய்',
+    ta: 'குறைந்தபட்சவாதத்தைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'మినిమలిజాన్ని విశ్లేషించండి',
     mr: 'मिनिमलिझमचे विश्लेषण करा',
     ms: 'Menganalisis Minimalisme',
@@ -32,7 +32,7 @@ export const analyzeMinimalism_Skill_Data = buildSkillConfig({
     be: 'Аналізаваць мінімалізм',
     ka: 'მინიმალიზმის გაანალიზება',
     kk: 'Минимализмді талдау',
-    qm: 'Minimalizmi incelemek',
+    qm: 'Minimalizmni tahlil etüv',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const analyzeMinimalism_Skill_Data = buildSkillConfig({
       be: 'Паглядзіце, як мінімалістычнае мастацтва выкарыстоўвае паўтарэнне, простыя матэрыялы і прастору гледача.',
       ka: 'ნახეთ, როგორ იყენებს მინიმალისტური ხელოვნება გამეორებას, მარტივ მასალებსა და მაყურებლის სივრცეს.',
       kk: 'Көріңіз: минималистік өнер қайталауды, қарапайым материалдарды және көрермен кеңістігін қалай пайдаланады.',
-      qm: 'Minimalist sanatın tekrarı, yalın malzemeleri ve izleyici alanını nasıl kullandığını görün.',
+      qm: 'Minimalist sanatnıñ tekrarlav, sade materiallar ve seyirci mekânını nasıl qullanğanını tahlil etiñiz.',
     },
   },
 });

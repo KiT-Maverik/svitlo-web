@@ -61,7 +61,7 @@ export const recognizeHarmonicProgressions_Skill_Data = buildSkillConfig({
       uk: 'Простежте, як зміни акордів допомагають музиці розвиватися.',
       lt: 'Stebėkite, kaip besikeičiantys akordai padeda muzikai judėti pirmyn.',
       lv: 'Sekojiet, kā mainīgi akordi virza mūziku uz priekšu.',
-      et: 'Jälgige, kuidas muutuvad akordid aitavad muusikal edasi liikuda.',
+      et: 'Jälgi, kuidas muutuvad akordid aitavad muusikal edasi liikuda.',
       be: 'Сачыце, як змены акордаў дапамагаюць музыцы рухацца наперад.',
       ka: 'დააკვირდით, როგორ ეხმარება აკორდების ცვლილება მუსიკას წინსვლაში.',
       kk: 'Бақылаңыз: аккордтардың өзгеруі музыканы қалай алға жетелейді.',

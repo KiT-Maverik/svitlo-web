@@ -61,7 +61,7 @@ export const directAScene_Skill_Data = buildSkillConfig({
       uk: 'Спрямовуй акторські рішення, щоб передати спільний драматичний задум.',
       lt: 'Vadovaukite atlikėjų pasirinkimams, kad perteiktumėte bendrą draminę idėją.',
       lv: 'Vadiet izpildītāju izvēles, lai paustu kopīgu dramatisko ieceri.',
-      et: 'Suunake esinejate valikuid ühise dramaatilise idee edastamiseks.',
+      et: 'Suuna esinejate valikuid ühise dramaatilise idee edastamiseks.',
       be: 'Накіроўвайце выбар выканаўцаў, каб перадаць агульную драматычную задуму.',
       ka: 'უხელმძღვანელეთ მსახიობთა არჩევანს საერთო დრამატული ჩანაფიქრის გადმოსაცემად.',
       kk: 'Ортақ драмалық ойды жеткізу үшін орындаушылардың шешімдеріне бағыт беріңіз.',

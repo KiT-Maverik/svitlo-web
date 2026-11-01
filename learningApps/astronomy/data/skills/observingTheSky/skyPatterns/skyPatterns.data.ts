@@ -81,7 +81,7 @@ export const skyPatterns_SkillGroup_Data = buildSkillGroupConfig({
       lt: 'Atpažink dangaus raštus ir suprask, kaip kinta jų matomumas.',
       lv: 'Atpazīsti rakstus debesīs un izproti, kā mainās to redzamība.',
       et: 'Õpi ära tundma mustreid taevas ja mõistma, kuidas nende nähtavus muutub.',
-      be: 'Распазнавай узоры на небе і даведвайся, як зьмяняецца іхная бачнасць.',
+      be: 'Распазнавай узоры на небе і даведвайся, як зьмяняецца іхная бачнасьць.',
       ka: 'ამოიცანი ცაზე ხილული მოხაზულობები და გაიგე, როგორ იცვლება მათი ხილვადობა.',
       kk: 'Аспандағы өрнектерді танып, олардың көрінуі қалай өзгеретінін түсін.',
     },

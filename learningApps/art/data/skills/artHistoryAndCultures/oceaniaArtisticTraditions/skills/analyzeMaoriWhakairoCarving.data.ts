@@ -47,7 +47,7 @@ export const analyzeMaoriWhakairoCarving_Skill_Data = buildSkillConfig({
       bn: 'মাওরি হোয়াকাইরো খোদাইয়ের রূপ, অর্থ ও সম্প্রদায়গত প্রেক্ষাপট জানুন।',
       pt: 'Explore as formas, os significados e o contexto comunitário da escultura whakairo Māori.',
       ur: 'ماؤری whakairo نقش کے انداز، معنی اور برادری کے تناظر کو جانیں۔',
-      id: 'Terokai bentuk, makna dan konteks komuniti ukiran whakairo Māori.',
+      id: 'Jelajahi bentuk, makna, dan konteks komunitas dalam seni ukir whakairo Māori.',
       de: 'Entdecke Formen, Bedeutungen und den Gemeinschaftskontext der Māori-Whakairo-Schnitzkunst.',
       ja: 'マオリのワカイロ彫刻を、その形や意味、共同体との関わりから学びます。',
       ko: '마오리 와카이로 조각의 형태와 의미, 공동체적 맥락을 살펴보세요.',
@@ -66,7 +66,7 @@ export const analyzeMaoriWhakairoCarving_Skill_Data = buildSkillConfig({
       be: 'Пазнаёмцеся з формамі, значэннямі і супольнасным кантэкстам разьбы whakairo народа маоры.',
       ka: 'გაეცანით მაორის whakairo კვეთის ფორმებს, მნიშვნელობებსა და თემის კონტექსტს.',
       kk: 'Маори халқының whakairo ою өнерінің пішіндерімен, мағыналарымен және қауымдық контекстімен танысыңыз.',
-      qm: 'Māori whakairo oymacılığının biçimlerini, anlamlarını ve topluluk bağlamını keşfedin.',
+      qm: 'Māori whakairo oymacılığının biçimlerini, anlamlarını ve topluluk bağlamını keşf etiñiz.',
     },
   },
 });
