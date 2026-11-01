@@ -1,4 +1,4 @@
-import type { Checkpoint_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/theory/scenes/Checkpoint/Checkpoint.types';
+import type { Checkpoint_ContentBlock } from './checkpoint.types';
 
 export const checkpoint = {
   title: {

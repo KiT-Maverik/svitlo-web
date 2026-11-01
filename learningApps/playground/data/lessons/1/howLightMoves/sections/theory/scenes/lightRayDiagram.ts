@@ -1,4 +1,4 @@
-import type { LightRayDiagram_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/theory/scenes/LightRayDiagram/LightRayDiagram.types';
+import type { LightRayDiagram_ContentBlock } from './lightRayDiagram.types';
 
 export const lightRayDiagram = {
   scene: {

@@ -1,4 +1,4 @@
-import type { LightPropagationSimulation_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/theory/scenes/LightPropagationSimulation/LightPropagationSimulation.types';
+import type { LightPropagationSimulation_ContentBlock } from './lightPropagationSimulation.types';
 
 const lightPropagationSimulation = {
   scene: {

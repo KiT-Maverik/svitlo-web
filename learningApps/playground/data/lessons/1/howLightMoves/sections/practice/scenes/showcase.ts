@@ -1,4 +1,4 @@
-import type { Showcase_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/practice/scenes/Showcase/Showcase.types';
+import type { Showcase_ContentBlock } from './showcase.types';
 
 export const showcase = {
   header: {
