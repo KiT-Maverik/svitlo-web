@@ -5,7 +5,7 @@ export const orbitalEnergy_Skill_Data = buildSkillConfig({
   id: 'bcdae6ce-0963-4395-b44f-1cdf37fd46a9',
   name: {
     en: 'Orbital Energy',
-      zh: '轨道能量',
+    zh: '轨道能量',
     hi: 'कक्षीय ऊर्जा',
     es: 'Energía orbital',
     ar: 'الطاقة المدارية',
@@ -38,7 +38,7 @@ export const orbitalEnergy_Skill_Data = buildSkillConfig({
     methodological: 'Relate gravitational potential and kinetic energy to bound and unbound orbital trajectories.',
     frontend: {
       en: 'Explore how energy determines whether an orbit remains bound or escapes.',
-          zh: '探索能量如何决定天体是保持引力束缚的轨道，还是能够逃离。',
+      zh: '探索能量如何决定天体是保持引力束缚的轨道，还是能够逃离。',
       hi: 'जानें कि ऊर्जा कैसे तय करती है कि कोई पिंड कक्षा में बँधा रहेगा या उससे निकल जाएगा।',
       es: 'Explora cómo la energía determina si una órbita permanece ligada por la gravedad o permite escapar.',
       ar: 'استكشف كيف تحدد الطاقة ما إذا كان الجسم سيبقى في مدار مرتبط بالجاذبية أم سيفلت منه.',
