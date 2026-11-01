@@ -5,7 +5,7 @@ export const universalGravitation_Skill_Data = buildSkillConfig({
   id: '9d342d91-27a6-4c64-9e4d-8b04a2b3dbcc',
   name: {
     en: 'Universal Gravitation',
-      zh: '万有引力',
+    zh: '万有引力',
     hi: 'सार्वत्रिक गुरुत्वाकर्षण',
     es: 'Gravitación universal',
     ar: 'الجاذبية الكونية',
@@ -39,7 +39,7 @@ export const universalGravitation_Skill_Data = buildSkillConfig({
       'Apply the dependence of gravitational attraction on interacting masses and separation to astronomical situations.',
     frontend: {
       en: 'Use the masses and distances of objects to reason about gravitational attraction.',
-          zh: '利用天体的质量和彼此之间的距离，分析它们之间的引力。',
+      zh: '利用天体的质量和彼此之间的距离，分析它们之间的引力。',
       hi: 'पिंडों के द्रव्यमान और उनके बीच की दूरी से गुरुत्वाकर्षण बल के बारे में तर्क करें।',
       es: 'Usa las masas de los objetos y las distancias entre ellos para razonar sobre su atracción gravitatoria.',
       ar: 'استخدم كتل الأجسام والمسافات بينها لفهم التجاذب الثقالي.',
