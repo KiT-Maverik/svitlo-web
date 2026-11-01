@@ -20,7 +20,7 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
     bn: 'ভাগ — 2-অঙ্কের÷1-অঙ্কের',
     pt: 'Divisão — 2-algarismos÷1-algarismos',
     ur: 'تقسیم — 2-ہندسوں÷1-ہندسوں',
-    id: 'Pembagian — 2-angka÷1-angka',
+    id: 'Pembagian — bilangan dua angka dibagi bilangan satu angka',
     de: 'Division — 2-stellige÷1-stellige',
     ja: '除法 — 2-桁の数÷1-桁の数',
     ko: '나눗셈 — 2-자리 수÷1-자리 수',
