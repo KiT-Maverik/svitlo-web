@@ -66,7 +66,7 @@ export const subsurfaceOceans_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце сьведчаньні таго, што пад паверхняй некаторых ледзяных спадарожнікаў могуць быць вадкія акіяны.',
       ka: 'შეისწავლეთ ნიშნები, რომ ზოგი ყინულოვანი თანამგზავრის ზედაპირის ქვეშ შეიძლება თხევადი ოკეანეები იყოს.',
       kk: 'Кейбір мұзды серіктердің астында сұйық мұхиттар жасырынуы мүмкін екенін көрсететін белгілерді зерттеңіз.',
-      qm: 'Bazı buzlı aylarnıñ yüzüniñ astında sıvı okeanlar ola bilecegini köstergen delillerni tetqiq etiñiz.',
+      qm: 'Bazı buzlı aylarnıñ yüzüniñ astında sıyıq suvdan ibaret okeanlar ola bilecegini köstergen delillerni tetqiq etiñiz.',
     },
   },
 });

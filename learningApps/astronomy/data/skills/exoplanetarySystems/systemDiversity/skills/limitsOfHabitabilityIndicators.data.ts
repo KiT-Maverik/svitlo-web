@@ -66,7 +66,7 @@ export const limitsOfHabitabilityIndicators_Skill_Data = buildSkillConfig({
       be: 'Зразумейце, чаму плянэта памерам зь Зямлю на адпаведнай арбіце не абавязкова прыдатная для жыцьця.',
       ka: 'გაიგეთ, რატომ არ არის დედამიწის ზომის პლანეტა შესაფერის ორბიტაზე აუცილებლად სიცოცხლისთვის ვარგისი.',
       kk: 'Жер көлеміндей ғаламшар қолайлы орбитада болса да, неге міндетті түрде тіршілікке жарамды емес екенін түсініңіз.',
-      qm: 'Yer büyükligindeki seyyare uygun orbitada olsa da, ne içün mıtlaq yaşavğa elverişli olmağanını añlañız.',
+      qm: 'Yer büyükligindeki seyyare uyğun orbitada olsa da, ne içün mıtlaq yaşavğa elverişli olmağanını añlañız.',
     },
   },
 });
