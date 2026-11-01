@@ -5,7 +5,7 @@ export const exoplanetRadius_Skill_Data = buildSkillConfig({
   id: '08ee542d-9df0-41ab-b5ae-cb7d8d81dc3a',
   name: {
     en: 'Exoplanet Radius',
-      zh: '系外行星半径',
+    zh: '系外行星半径',
     hi: 'बहिर्ग्रह की त्रिज्या',
     es: 'Radio de exoplanetas',
     ar: 'نصف قطر الكواكب الخارجية',
@@ -39,7 +39,7 @@ export const exoplanetRadius_Skill_Data = buildSkillConfig({
       "Infer a planet's size from transit or other observations and explain its dependence on stellar parameters.",
     frontend: {
       en: "Estimate a distant planet's size using a transit and information about its star.",
-          zh: '利用凌星现象和恒星信息估算遥远行星的大小。',
+      zh: '利用凌星现象和恒星信息估算遥远行星的大小。',
       hi: 'पारगमन और तारे की जानकारी से दूर के ग्रह का आकार अनुमानित करें।',
       es: 'Estima el tamaño de un planeta distante mediante un tránsito y la información sobre su estrella.',
       ar: 'قدّر حجم كوكب بعيد باستخدام عبوره أمام نجمه ومعلومات عن النجم.',
