@@ -39,7 +39,7 @@ export const abioticFalsePositives_Skill_Data = buildSkillConfig({
       'Identify nonbiological processes capable of producing signals superficially similar to biosignatures.',
     frontend: {
       en: 'Discover how nonliving processes can imitate signs that might suggest life.',
-      qm: 'Cansız protsesslerniñ yaşayış bar dep düşündirebilecek işaretlerni nasıl taqlit etkenini ögreniñiz.',
+      qm: 'Cansız protsesslerniñ yaşayış bar dep düşündire bilgen işaretlerni nasıl taqlit etkenini ögreniñiz.',
       bn: 'জীবনহীন প্রক্রিয়া কীভাবে জীবনের লক্ষণের মতো সংকেত তৈরি করতে পারে, তা জানো।',
       ur: 'جانیں کہ غیر جاندار عمل زندگی کی علامتوں جیسے اشارے کیسے پیدا کر سکتے ہیں۔',
       ta: 'உயிரற்ற செயல்முறைகள் உயிரின் அறிகுறிகளைப் போன்ற சமிக்ஞைகளை எவ்வாறு உருவாக்கலாம் என்பதை அறியுங்கள்.',

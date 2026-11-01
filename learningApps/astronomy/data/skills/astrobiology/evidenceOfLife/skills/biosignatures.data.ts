@@ -39,7 +39,7 @@ export const biosignatures_Skill_Data = buildSkillConfig({
       'Evaluate chemical, morphological or other candidate indicators that might be produced by living systems.',
     frontend: {
       en: 'Recognize candidate chemical or physical clues that could be linked to living systems.',
-      qm: 'Canlı sistemalarnen bağlı olabilgen kimyeviy ya da fiziki işaretlerni tanıñız.',
+      qm: 'Canlı sistemalarnen bağlı ola bilgen kimyeviy ya da fiziki işaretlerni tanıñız.',
       bn: 'জীবিত ব্যবস্থার সঙ্গে যুক্ত থাকতে পারে এমন রাসায়নিক বা ভৌত সূত্র শনাক্ত করো।',
       ur: 'ایسے ممکنہ کیمیائی یا طبعی آثار پہچانیں جن کا تعلق جاندار نظاموں سے ہو سکتا ہے۔',
       ta: 'உயிருள்ள அமைப்புகளுடன் தொடர்புடையதாக இருக்கக்கூடிய வேதியியல் அல்லது இயற்பியல் தடயங்களை அடையாளம் காணுங்கள்.',

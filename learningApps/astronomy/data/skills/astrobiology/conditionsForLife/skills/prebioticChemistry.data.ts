@@ -39,7 +39,7 @@ export const prebioticChemistry_Skill_Data = buildSkillConfig({
       "Explain plausible nonliving chemical pathways relevant to life's origins while distinguishing hypotheses from established histories.",
     frontend: {
       en: "Discover how nonliving chemistry might produce ingredients relevant to life's origins.",
-      qm: 'Cansız kimyeviy protsessler yaşayışnıñ menşeine alâqalı maddelerni nasıl peyda etebilegenini ögreniñiz.',
+      qm: 'Cansız kimyeviy protsessler yaşayışnıñ menşeine alâqalı maddelerni nasıl peyda ete bilgenini ögreniñiz.',
       bn: 'জীবিত প্রাণীর সাহায্য ছাড়াই রাসায়নিক প্রক্রিয়ায় জীবনের উৎপত্তির জন্য গুরুত্বপূর্ণ পদার্থ কীভাবে তৈরি হতে পারে, তা জানো।',
       ur: 'دریافت کریں کہ غیر جاندار کیمیائی عمل زندگی کے آغاز سے متعلق مادے کیسے بنا سکتے تھے۔',
       ta: 'உயிரற்ற வேதியியல் செயல்முறைகள் உயிரின் தோற்றத்திற்குத் தேவையான பொருட்களை எவ்வாறு உருவாக்கியிருக்கலாம் என்பதை அறியுங்கள்.',
