@@ -47,7 +47,7 @@ export const identifyBreathingChangesDuringPhysicalActivity_Skill_Data = buildSk
       pt: 'Explique por que a respiração muda durante a atividade física.',
       ur: 'وضاحت کریں کہ جسمانی سرگرمی کے دوران سانس کیوں بدلتی ہے۔',
       id: 'Jelaskan mengapa pernapasan berubah saat melakukan aktivitas fisik.',
-      de: 'Erkläre, warum sich die Atmung bei körperlicher Aktivität verändert.',
+      de: 'Erkenne, wie sich Atemfrequenz und Atemtiefe bei körperlicher Aktivität verändern.',
       ja: '運動中に呼吸が変化する理由を説明しましょう。',
       ko: '신체 활동 중 호흡이 달라지는 이유를 설명해 보세요.',
       tr: 'Fiziksel etkinlik sırasında solunumun neden değiştiğini açıklayın.',
