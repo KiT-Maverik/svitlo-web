@@ -44,6 +44,7 @@ jobs:
       REVIEW_ALL_PACKAGES: ${{ inputs.all_packages }}
       REVIEW_LOCALE: ${{ inputs.locale }}
       REVIEW_ALL_LOCALES: ${{ inputs.all_locales }}
+      REVIEW_SOURCE_REF: ${{ inputs.source_ref || github.ref_name }}
     steps:
       - name: Check out requested source ref
         uses: actions/checkout@v4
@@ -100,7 +101,7 @@ jobs:
           {
             echo '### Translation review artifacts'
             echo "- Run: ${{ github.run_id }} / attempt ${{ github.run_attempt }}"
-            echo "- Requested source: ${{ inputs.source_ref || github.ref_name }}"
+            echo "- Requested source: $REVIEW_SOURCE_REF"
             echo '- Generated Markdown exists only in this run artifact; no commit or source edits are made.'
             echo '- Uploaded archive expires automatically after **1 day**.'
             echo '- Runner temp files are removed by the final cleanup step.'
