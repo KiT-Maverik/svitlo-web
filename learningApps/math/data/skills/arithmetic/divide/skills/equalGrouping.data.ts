@@ -20,7 +20,7 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
     bn: 'ভাগ — সমান দল গঠন',
     pt: 'Divisão — Formação de grupos iguais · Grupos iguais',
     ur: 'تقسیم — برابر گروہ بنانا',
-    id: 'Pembagian — Membentuk kelompok sama besar · Kelompok sama besar',
+    id: 'Pembagian — Membentuk kelompok sama besar',
     de: 'Division — Bilden gleicher Gruppen · Gleich große Gruppen',
     ja: '除法 — 等しいグループ分け · 等しいグループ',
     ko: '나눗셈 — 같은 크기로 묶기 · 같은 크기 묶음',
