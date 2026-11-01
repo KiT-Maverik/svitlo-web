@@ -59,7 +59,7 @@ export const oceaniaArtisticTraditions_SkillGroup_Data = buildSkillGroupConfig({
       ko: '마오리 공동체와 욜누(Yolŋu) 사람들의 서로 다른 예술 전통을 공부합니다.',
       tr: 'Māori topluluklarının ve Yolŋu halklarının kendilerine özgü sanat geleneklerini inceleyin.',
       vi: 'Tìm hiểu truyền thống nghệ thuật riêng của cộng đồng Māori và người Yolŋu.',
-      ta: 'மாவோரி சமூகங்கள் மற்றும் யோல்ŋு மக்களின் தனித்துவமான கலை மரபுகளைக் கற்றறியுங்கள்.',
+      ta: 'மாவோரி சமூகங்கள் மற்றும் யோல்ங்கு (Yolŋu) மக்களின் தனித்துவமான கலை மரபுகளைக் கற்றறியுங்கள்.',
       te: 'మావోరి సముదాయాలు మరియు యోల్ŋు ప్రజల ప్రత్యేక కళా సంప్రదాయాలను అధ్యయనం చేయండి.',
       mr: 'माओरी समुदाय आणि योलŋु लोकांच्या स्वतंत्र कलात्मक परंपरांचा अभ्यास करा.',
       ms: 'Pelajari tradisi seni tersendiri masyarakat Māori dan orang Yolŋu.',

@@ -52,7 +52,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       ko: '건축 장식이 역사적 시대와 문화적 맥락에서 어떤 의미를 전하는지 해석해 보세요.',
       tr: 'Yapı kütlelerini ve açık alanları dengeli bir görsel biçimde birleştirin.',
       vi: 'Tìm hiểu cách các chi tiết trang trí kiến trúc truyền tải ý nghĩa gắn với thời kỳ lịch sử và bối cảnh văn hóa.',
-      ta: 'கட்டிடத் தொகுதிகளையும் திறந்த இடங்களையும் இணைத்து சமநிலையான காட்சிவடிவத்தை உருவாக்குங்கள்.',
+      ta: 'கட்டிடக்கலை அலங்காரங்கள் வரலாற்றுக் காலத்துடனும் பண்பாட்டுச் சூழலுடனும் எவ்வாறு பொருள் பெறுகின்றன என்பதை ஆராயுங்கள்.',
       te: 'భవన ఘన పరిమాణాలు, ఖాళీ ప్రదేశాలను సమతుల్య దృశ్య రూపంగా కలపండి.',
       mr: 'इमारतीचे घनाकार भाग आणि मोकळ्या जागा एकत्र करून संतुलित दृश्यरूप तयार करा.',
       ms: 'Gabungkan jisim bangunan dan ruang terbuka menjadi bentuk visual yang seimbang.',

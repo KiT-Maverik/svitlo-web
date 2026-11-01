@@ -20,7 +20,7 @@ export const composeAPhotograph_Skill_Data = buildSkillConfig({
     ko: '사진 구도 잡기',
     tr: 'Fotoğraf kompozisyonu oluşturmak',
     vi: 'Bố cục một bức ảnh',
-    ta: 'புகைப்படத்தைச் சேர்மானம் செய்யவும்',
+    ta: 'புகைப்படத்தின் காட்சியமைப்பைத் திட்டமிடுங்கள்',
     te: 'ఫోటోను కంపోజ్ చేయండి',
     mr: 'छायाचित्राची रचना करा',
     ms: 'Menggubah komposisi foto',

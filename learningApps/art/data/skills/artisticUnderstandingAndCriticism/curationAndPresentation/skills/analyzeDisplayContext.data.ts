@@ -52,7 +52,7 @@ export const analyzeDisplayContext_Skill_Data = buildSkillConfig({
       ko: '빛, 크기, 위치, 라벨이 작품의 전시에 어떤 영향을 주는지 살펴보세요.',
       tr: 'Işık, ölçek, konum ve etiketlerin bir sanat eserinin sunumunu nasıl etkilediğini keşfedin.',
       vi: 'Khám phá cách ánh sáng, kích thước, vị trí và nhãn giới thiệu ảnh hưởng đến trải nghiệm của người xem tác phẩm.',
-      ta: 'ஒளி, அளவு, இடம், விளக்கச் சீட்டுகள் ஆகியவை கலைப்படைப்பின் காட்சிப்படுத்தலை எவ்வாறு பாதிக்கின்றன என்பதை ஆராயுங்கள்.',
+      ta: 'ஒளி, அளவு, இடம், விளக்கச் சீட்டுகள் ஆகியவை பார்வையாளர்கள் ஒரு கலைப்படைப்பைப் புரிந்துகொள்ளும் விதத்தை எவ்வாறு பாதிக்கின்றன என்பதை ஆராயுங்கள்.',
       te: 'వెలుతురు, పరిమాణం, స్థానం, లేబుళ్లు కళాకృతి ప్రదర్శనను ఎలా ప్రభావితం చేస్తాయో తెలుసుకోండి.',
       mr: 'प्रकाश, आकारमान, स्थान आणि लेबले कलाकृतीच्या सादरीकरणावर कसा परिणाम करतात ते जाणून घ्या.',
       ms: 'Terokai bagaimana cahaya, skala, kedudukan dan label mempengaruhi persembahan karya seni.',

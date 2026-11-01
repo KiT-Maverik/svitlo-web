@@ -26,7 +26,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     ko: '디지털 3차원 예술',
     tr: 'Modelleme, malzemeler, ışık ve kompozisyon yoluyla etkileyici sanal mekânlar oluşturmak.',
     vi: 'Nghệ thuật ba chiều kỹ thuật số',
-    ta: 'மாதிரியாக்கம், பொருட்கள், ஒளி மற்றும் அமைப்பு மூலம் வெளிப்பாட்டுமிக்க மெய்நிகர் இடங்களை உருவாக்குங்கள்.',
+    ta: 'மின்னிலக்க முப்பரிமாணக் கலை',
     te: 'మోడలింగ్, పదార్థాలు, వెలుతురు మరియు కూర్పు ద్వారా భావవ్యక్తీకరణతో కూడిన వర్చువల్ ప్రదేశాలను నిర్మించండి.',
     mr: 'मॉडेलिंग, साहित्य, प्रकाश आणि रचना यांच्या साहाय्याने अभिव्यक्तिपूर्ण आभासी जागा तयार करा.',
     ms: 'Membina ruang maya yang ekspresif melalui pemodelan, bahan, cahaya dan komposisi.',

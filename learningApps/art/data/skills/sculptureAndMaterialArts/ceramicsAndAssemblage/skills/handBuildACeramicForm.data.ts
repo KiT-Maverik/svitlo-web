@@ -19,7 +19,7 @@ export const handBuildACeramicForm_Skill_Data = buildSkillConfig({
     ko: '손으로 도자기 형태 빚기',
     tr: 'Elle seramik formu şekillendirmek',
     vi: 'Tạo hình gốm bằng tay',
-    ta: 'கைகளால் பீங்கான் வடிவத்தை உருவாக்கவும்',
+    ta: 'கைகளால் மட்பாண்ட வடிவத்தை உருவாக்கவும்',
     te: 'చేతితో సిరామిక్ ఆకారాన్ని రూపొందించండి',
     mr: 'हाताने मातीची वस्तू घडवा',
     ms: 'Membentuk seramik dengan tangan',
