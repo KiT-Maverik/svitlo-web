@@ -39,7 +39,7 @@ export const milliliter_Skill_Data = buildSkillConfig({
       'One liter equals 1,000 milliliters. Different numerical unit representations can express the same volume or capacity; conversion must preserve the factor of one thousand.',
     frontend: {
       en: 'You can measure capacity in milliliters and convert between liters and milliliters, knowing that 1 liter equals 1,000 milliliters.',
-      qm: 'Sıyımlılıqnı millilitrlerde ölçep, litrlernen millilitrler arasında çevirüv yapabilirsin. 1 litr 1000 millilitrge teñ.',
+      qm: 'Sıyımlılıqnı millilitrlerde ölçep, litrni millilitrge ve millilitrni litrge çevire bilesiñ. 1 litr = 1000 millilitr.',
       zh: '你能用毫升测量容量，并在升和毫升之间换算，知道1升等于1000毫升。',
       hi: 'आप धारिता मिलीलीटर में माप सकते हैं और लीटर तथा मिलीलीटर में बदल सकते हैं, यह जानते हुए कि 1 लीटर = 1,000 मिलीलीटर।',
       es: 'Puedes medir capacidades en mililitros y convertir entre litros y mililitros, sabiendo que un litro equivale a 1000 mililitros.',
