@@ -20,7 +20,7 @@ describe('ContentBlockRenderer: response dispatch', () => {
     render(<ContentBlockRenderer type="markdown" response={{
       id: 'md', locale: { code: 'ar' }, text: '**مرحبا**',
     }} />);
-    expect(screen.getByText('مرحبا')).toHaveAttribute('dir', 'rtl');
+    expect(screen.getByText('مرحبا').closest('article')).toHaveAttribute('dir', 'rtl');
   });
 
   it('forwards media response properties to native accessible elements', () => {
@@ -73,7 +73,7 @@ describe('ContentBlockRenderer: response dispatch', () => {
       id: 'registered-scene', locale: { code: 'en', title: 'Beam' },
     };
     const sceneRegistry: SceneRegistry = {
-      'registered-scene': ({ locale: localized }) => <div role="img" aria-label={localized.title} />,
+      'registered-scene': ({ locale: localized }) => <div role="img" aria-label={String(localized.title)} />,
     };
     render(<ContentBlockRenderer type="scene" response={response} sceneRegistry={sceneRegistry} />);
     expect(screen.getByRole('img', { name: 'Beam' })).toBeVisible();
