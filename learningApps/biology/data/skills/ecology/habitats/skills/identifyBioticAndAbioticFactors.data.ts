@@ -63,7 +63,7 @@ export const identifyBioticAndAbioticFactors_Skill_Data = buildSkillConfig({
       et: 'Erista elusorganismide mõju eluta keskkonnateguritest.',
       be: 'Адрозьнівай уплыў жывых арганізмаў ад чыньнікаў нежывога асяродзьдзя.',
       ka: 'განასხვავე ცოცხალი ორგანიზმების გავლენა არაცოცხალი გარემოს ფაქტორებისგან.',
-      kk: 'Тірі ағзалардың әсерін өлі орта факторларынан ажырат.',
+      kk: 'Тірі ағзалардың әсерін жансыз орта факторларынан ажырат.',
     },
   },
 });

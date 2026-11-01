@@ -63,7 +63,7 @@ export const explainMatterCyclingInEcosystems_Skill_Data = buildSkillConfig({
       et: 'Uuri, kuidas ained ringlevad organismide ja eluta keskkonna vahel.',
       be: 'Даведайся, як рэчывы цыркулююць паміж арганізмамі і нежывым асяродзьдзем.',
       ka: 'გაიგე, როგორ ბრუნავს ნივთიერება ორგანიზმებსა და არაცოცხალ გარემოს შორის.',
-      kk: 'Заттың ағзалар мен өлі табиғат ортасы арасында қалай айналатынын біл.',
+      kk: 'Заттың ағзалар мен жансыз орта арасында қалай айналатынын біл.',
     },
   },
 });
