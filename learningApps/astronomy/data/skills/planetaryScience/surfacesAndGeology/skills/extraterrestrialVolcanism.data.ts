@@ -5,7 +5,7 @@ export const extraterrestrialVolcanism_Skill_Data = buildSkillConfig({
   id: '0477f914-d36b-413e-8605-4bfbfd15689e',
   name: {
     en: 'Extraterrestrial Volcanism',
-      zh: '地外火山活动',
+    zh: '地外火山活动',
     hi: 'पृथ्वी के बाहर ज्वालामुखीय गतिविधि',
     es: 'Vulcanismo extraterrestre',
     ar: 'النشاط البركاني خارج الأرض',
@@ -38,7 +38,7 @@ export const extraterrestrialVolcanism_Skill_Data = buildSkillConfig({
     methodological: 'Interpret evidence of past or current volcanic processes on planets and moons.',
     frontend: {
       en: 'Look for signs of volcanoes on worlds beyond Earth.',
-          zh: '寻找地球以外天体上存在火山的迹象。',
+      zh: '寻找地球以外天体上存在火山的迹象。',
       hi: 'पृथ्वी के अलावा अन्य खगोलीय पिंडों पर ज्वालामुखियों के संकेत खोजें।',
       es: 'Busca señales de volcanes en mundos más allá de la Tierra.',
       ar: 'ابحث عن علامات وجود البراكين على عوالم أخرى غير الأرض.',
