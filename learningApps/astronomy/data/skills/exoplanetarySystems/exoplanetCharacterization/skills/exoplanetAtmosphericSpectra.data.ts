@@ -5,7 +5,7 @@ export const exoplanetAtmosphericSpectra_Skill_Data = buildSkillConfig({
   id: '6309e32a-3465-4b66-981f-07c9e46792e8',
   name: {
     en: 'Exoplanet Atmospheric Spectra',
-      zh: '系外行星大气光谱',
+    zh: '系外行星大气光谱',
     hi: 'बहिर्ग्रहों के वायुमंडलीय वर्णक्रम',
     es: 'Espectros atmosféricos de exoplanetas',
     ar: 'الأطياف الجوية للكواكب الخارجية',
@@ -38,7 +38,7 @@ export const exoplanetAtmosphericSpectra_Skill_Data = buildSkillConfig({
     methodological: 'Interpret transit or emission spectra as evidence about atmospheric constituents and conditions.',
     frontend: {
       en: "See how a planet's spectrum provides clues to its atmosphere.",
-          zh: '了解行星的光谱如何提供有关其大气层的线索。',
+      zh: '了解行星的光谱如何提供有关其大气层的线索。',
       hi: 'जानें कि ग्रह का वर्णक्रम उसके वायुमंडल के बारे में संकेत कैसे देता है।',
       es: 'Observa cómo el espectro de un planeta ofrece pistas sobre su atmósfera.',
       ar: 'تعرّف كيف يقدّم طيف الكوكب أدلة عن غلافه الجوي.',
