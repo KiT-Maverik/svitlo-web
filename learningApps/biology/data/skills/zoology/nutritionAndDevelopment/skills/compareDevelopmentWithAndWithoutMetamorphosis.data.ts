@@ -52,7 +52,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
       tr: 'Gelişirken biçim değiştiren hayvanlarla değiştirmeyenleri karşılaştır.',
       vi: 'So sánh động vật thay đổi hình dạng khi phát triển với động vật không thay đổi hình dạng.',
       ta: 'வளர்ச்சியின்போது வடிவம் மாறும் விலங்குகளையும் மாறாத விலங்குகளையும் ஒப்பிடு.',
-      te: 'అభివృద్ధిలో ఆకారం మారే జంతువులను, మారని జంతువులతో పోల్చండి.',
+      te: 'అభివృద్ధిలో ఆకారం గణనీయంగా మారే జంతువులను, అలాంటి పెద్ద మార్పు లేని జంతువులతో పోల్చండి.',
       mr: 'वाढताना रूप बदलणारे प्राणी आणि रूप न बदलणारे प्राणी यांची तुलना करा.',
       ms: 'Bandingkan haiwan yang berubah bentuk semasa berkembang dengan haiwan yang tidak berubah bentuk.',
       he: 'השוו בין בעלי חיים שעוברים שינוי גדול במבנה גופם במהלך ההתפתחות לבין אלה שאינם עוברים שינוי קיצוני כזה.',
