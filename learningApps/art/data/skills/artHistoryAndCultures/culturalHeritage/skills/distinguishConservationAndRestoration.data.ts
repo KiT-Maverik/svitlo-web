@@ -61,7 +61,7 @@ export const distinguishConservationAndRestoration_Skill_Data = buildSkillConfig
       pl: 'Zrozum, czym zachowanie oryginalnego materiału różni się od odtwarzania utraconych cech.',
       uk: 'Розуміти, чим збереження оригінального матеріалу відрізняється від відтворення втрачених елементів.',
       lt: 'Suprask, kuo originalios medžiagos išsaugojimas skiriasi nuo prarastų ypatybių atkūrimo.',
-      lv: 'Izproti, kā oriģinālā materiāla saglabāšana atšķiras no zudušo iezīmju atjaunošanas.',
+      lv: 'Izprotiet, kā oriģinālā materiāla saglabāšana atšķiras no zudušo iezīmju atjaunošanas.',
       et: 'Mõista, kuidas algmaterjali säilitamine erineb kadunud tunnuste taastamisest.',
       be: 'Зразумець, чым захаванне арыгінальнага матэрыялу адрозніваецца ад аднаўлення страчаных элементаў.',
       ka: 'გაიგე, რით განსხვავდება ორიგინალი მასალის შენარჩუნება დაკარგული დეტალების აღდგენისგან.',

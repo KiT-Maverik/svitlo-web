@@ -60,7 +60,7 @@ export const evaluateMuseumRepresentation_Skill_Data = buildSkillConfig({
       pl: 'Zastanów się, czyje historie i perspektywy są obecne w muzeach, a czyich brakuje.',
       uk: 'З’ясовувати, чиї історії та погляди представлені в музеях, а чиї відсутні.',
       lt: 'Apsvarstyk, kieno istorijos ir požiūriai muziejuose pristatomi, o kieno nepateikiami.',
-      lv: 'Apsver, kuru vēsture un skatpunkti muzejos ir pārstāvēti un kuru trūkst.',
+      lv: 'Apsveriet, kuru vēsture un skatpunkti muzejos ir pārstāvēti un kuru trūkst.',
       et: 'Mõtle, kelle ajalugu ja vaatenurgad on muuseumides esindatud ning kelle omad puuduvad.',
       be: 'Разглядаць, чые гісторыі і погляды прадстаўлены ў музеях, а чые адсутнічаюць.',
       ka: 'განიხილე, ვისი ისტორიები და ხედვებია მუზეუმებში წარმოდგენილი და ვისი — გამოტოვებული.',

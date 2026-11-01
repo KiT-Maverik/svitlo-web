@@ -61,7 +61,7 @@ export const assessCulturalRepatriation_Skill_Data = buildSkillConfig({
       pl: 'Poznaj roszczenia społeczności i historię pozyskania obiektu podczas dyskusji o jego zwrocie.',
       uk: 'Розглядати вимоги спільнот та історію набуття під час обговорення повернення предмета.',
       lt: 'Nagrinėk bendruomenių reikalavimus ir įsigijimo istoriją aptardamas objekto grąžinimą.',
-      lv: 'Aplūko kopienu prasības un priekšmeta iegūšanas vēsturi, apspriežot tā atdošanu.',
+      lv: 'Aplūkojiet kopienu prasības un priekšmeta iegūšanas vēsturi, apspriežot tā atdošanu.',
       et: 'Uuri kogukondade nõudeid ja eseme omandamise ajalugu, kui arutled selle tagastamise üle.',
       be: 'Разглядаць патрабаванні супольнасцяў і гісторыю набыцця пры абмеркаванні вяртання прадмета.',
       ka: 'განიხილე თემების მოთხოვნები და ნივთის შეძენის ისტორია მისი დაბრუნების საკითხის განხილვისას.',
