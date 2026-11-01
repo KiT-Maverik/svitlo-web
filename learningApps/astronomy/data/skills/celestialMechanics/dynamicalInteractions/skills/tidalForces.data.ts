@@ -66,7 +66,7 @@ export const tidalForces_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як неаднолькавае гравітацыйнае прыцягненьне розных частак нябеснага цела выклікае прылівы і адлівы.',
       ka: 'გაიგეთ, როგორ წარმოქმნის ციური სხეულის სხვადასხვა ნაწილზე არათანაბარი გრავიტაციული მიზიდულობა მოქცევასა და მიქცევას.',
       kk: 'Аспан денесінің әр бөлігіндегі әркелкі гравитациялық тартылыс толысу мен қайтуды қалай тудыратынын біліңіз.',
-      qm: 'Kök cisminiñ çeşit yerlerindeki yer çekiminiñ birdey olmağan tesirleri gelgitlerni nasıl peyda etkenini ögreniñiz.',
+      qm: 'Kök cisminiñ çeşit yerlerindeki cazibe quvetiniñ birdey olmağan tesirleri gelgitlerni nasıl peyda etkenini ögreniñiz.',
     },
   },
 });

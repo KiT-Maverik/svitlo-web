@@ -32,7 +32,7 @@ export const universalGravitation_Skill_Data = buildSkillConfig({
     be: 'Сусьветнае прыцягненьне',
     ka: 'მსოფლიო მიზიდულობა',
     kk: 'Бүкіләлемдік тартылыс',
-    qm: 'Umumiy yer çekimi',
+    qm: 'Umumiy cazibe quveti',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const universalGravitation_Skill_Data = buildSkillConfig({
       be: 'Выкарыстоўвайце масы целаў і адлегласьці паміж імі, каб тлумачыць гравітацыйнае прыцягненьне.',
       ka: 'გამოიყენეთ სხეულების მასები და მათ შორის მანძილები გრავიტაციული მიზიდულობის ასახსნელად.',
       kk: 'Денелердің массалары мен арақашықтығын пайдаланып, гравитациялық тартылысты түсіндіріңіз.',
-      qm: 'Cisimlerniñ kütlelerini ve aralarındaki mesafeni qullanıp, yer çekimi quvetini añlatıñız.',
+      qm: 'Cisimlerniñ kütlelerini ve aralarındaki mesafeni qullanıp, cazibe quvetini añlatıñız.',
     },
   },
 });

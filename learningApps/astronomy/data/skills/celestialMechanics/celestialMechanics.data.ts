@@ -75,7 +75,7 @@ export const celestialMechanics_SkillDomain_Data = buildSkillDomainConfig({
       be: 'Дасьледуйце, як гравітацыя і рух вызначаюць арбіты і вярчэньне аб’ектаў у космасе.',
       ka: 'გაეცანით, როგორ განსაზღვრავს გრავიტაცია და მოძრაობა კოსმოსური სხეულების ორბიტებსა და ბრუნვას.',
       kk: 'Гравитация мен қозғалыстың ғарыш денелерінің орбиталары мен айналуын қалай анықтайтынын зерттеңіз.',
-      qm: 'Yer çekimi ve areketniñ kâinattaki cisimlerniñ orbitalarını ve aylanmasını nasıl şekillendirgenini ögreniñiz.',
+      qm: 'Cazibe quveti ve areketniñ kâinattaki cisimlerniñ orbitalarını ve aylanmasını nasıl şekillendirgenini ögreniñiz.',
     },
   },
 });

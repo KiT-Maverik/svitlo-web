@@ -41,7 +41,7 @@ export const gravitationalMotion_SkillGroup_Data = buildSkillGroupConfig({
     be: 'Гравітацыйны рух',
     ka: 'გრავიტაციული მოძრაობა',
     kk: 'Гравитациялық қозғалыс',
-    qm: 'Yer çekimi tesirindeki areket',
+    qm: 'Cazibe quveti tesirindeki areket',
   },
   skills: {
     barycentricMotion: barycentricMotion_Skill_Data,
@@ -83,7 +83,7 @@ export const gravitationalMotion_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Даведайцеся, як гравітацыя вызначае рух нябесных целаў.',
       ka: 'გაიგეთ, როგორ განაპირობებს გრავიტაცია ციური სხეულების მოძრაობას.',
       kk: 'Тартылыс күші аспан денелерінің қозғалысын қалай басқаратынын біліңіз.',
-      qm: 'Yer çekiminiñ kök cisimleriniñ areketini nasıl idare etkenini ögreniñiz.',
+      qm: 'Cazibe quvetiniñ kök cisimleriniñ areketini nasıl idare etkenini ögreniñiz.',
     },
   },
 });

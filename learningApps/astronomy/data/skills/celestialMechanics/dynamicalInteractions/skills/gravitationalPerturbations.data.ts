@@ -32,7 +32,7 @@ export const gravitationalPerturbations_Skill_Data = buildSkillConfig({
     be: 'Гравітацыйныя абурэньні',
     ka: 'გრავიტაციული შეშფოთებები',
     kk: 'Гравитациялық ұйытқулар',
-    qm: 'Yer çekimi bozuvları',
+    qm: 'Cazibe quveti bozuvları',
   },
   description: {
     methodological: 'Interpret departures from a simple two-body orbit caused by additional gravitational influences.',
@@ -65,7 +65,7 @@ export const gravitationalPerturbations_Skill_Data = buildSkillConfig({
       be: 'Растлумачце, як дадатковыя гравітацыйныя ўплывы зьмяняюць арбіту, якая інакш была б простай.',
       ka: 'ახსენით, როგორ ცვლის დამატებითი გრავიტაციული ზემოქმედება სხვაგვარად მარტივ ორბიტას.',
       kk: 'Қосымша гравитациялық әсерлер қарапайым орбитаны қалай өзгертетінін түсіндіріңіз.',
-      qm: 'Qoşma yer çekimi tesirleriniñ sade bir orbitanı nasıl deñiştirgenini añlatıñız.',
+      qm: 'Qoşma cazibe quveti tesirleriniñ sade bir orbitanı nasıl deñiştirgenini añlatıñız.',
     },
   },
 });

@@ -79,7 +79,7 @@ export const dynamicalInteractions_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Дасьледуйце, як прыліўныя сілы ды іншыя гравітацыйныя ўзаемадзеяньні зьмяняюць рух нябесных целаў.',
       ka: 'გაეცანით, როგორ ცვლის მოქცევის ძალები და სხვა გრავიტაციული ურთიერთქმედებები ციური სხეულების მოძრაობას.',
       kk: 'Тасу күштері мен басқа гравитациялық әсерлер аспан денелерінің қозғалысын қалай өзгертетінін зерттеңіз.',
-      qm: 'Gelgit quvetleri ve başqa yer çekimi tesirleşüvleriniñ kök cisimleriniñ areketini nasıl deñiştirgenini ögreniñiz.',
+      qm: 'Gelgit quvetleri ve başqa cazibe quveti tesirleşüvleriniñ kök cisimleriniñ areketini nasıl deñiştirgenini ögreniñiz.',
     },
   },
 });
