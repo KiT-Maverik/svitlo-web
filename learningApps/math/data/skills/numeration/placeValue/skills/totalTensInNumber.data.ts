@@ -7,7 +7,7 @@ export const totalTensInNumber_Skill_Data = buildSkillConfig({
     lt: 'Pilnų dešimčių skaičius skaičiuje',
     lv: 'Pilnu desmitu skaits skaitlī',
     et: 'Täiskümnete arv arvus',
-    be: 'Колькасьць поўных дзясяткаў у ліку',
+    be: 'Колькасьць поўных дзясяткаў і сотняў у ліку',
     ka: 'რიცხვში სრული ათეულების რაოდენობა',
     kk: 'Сандағы толық ондықтар мен жүздіктердің саны',
     en: 'Total tens and hundreds in a number',
