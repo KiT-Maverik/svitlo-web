@@ -38,8 +38,13 @@ export interface ContentBlock_Map<ConfigType extends ContentEntity_ConfigType> {
 }
 
 export type ContentBlock_Catalog<ConfigType extends ContentEntity_ConfigType> = {
-  [Type in ContentBlock_Type & keyof ContentBlock_Map<ConfigType>]?: Record<string, ContentBlock_Map<ConfigType>[Type]>;
+  [Type in ContentBlock_Type & keyof ContentBlock_Map<ConfigType>]?: Readonly<Record<string, ContentBlock_Map<ConfigType>[Type]>>;
 };
+
+/** Ordered references to blocks in a Section catalog. */
+export type ContentBlock_Reference = {
+  [Type in keyof ContentBlock_Map<'response'>]: { type: Type; slug: string };
+}[keyof ContentBlock_Map<'response'>];
 
 export type ContentBlock_Catalog_DataFor<Definition extends ContentBlock_Catalog<'definition'>> = {
   [Type in keyof Definition]: Type extends keyof ContentBlock_Map<'data'>
@@ -71,4 +76,3 @@ export type {
   ContentBlock_Video,
   ContentBlock_Youtube,
 };
-export type { ContentBlock_Quiz_Question } from './quiz.types';

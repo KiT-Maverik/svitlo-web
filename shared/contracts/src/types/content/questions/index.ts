@@ -23,7 +23,7 @@ export type Question_Map<ConfigType extends ContentEntity_ConfigType> = {
   selectOneAnswer: Question_SelectOneAnswer<ConfigType>;
 };
 
-export type QuestionV2<ConfigType extends ContentEntity_ConfigType> = Question_Map<ConfigType>[Question_Type];
+export type Question<ConfigType extends ContentEntity_ConfigType> = Question_Map<ConfigType>[Question_Type];
 
 export type Question_Catalog<ConfigType extends ContentEntity_ConfigType> = {
   [Type in Question_Type]?: Record<string, Question_Map<ConfigType>[Type]>;
