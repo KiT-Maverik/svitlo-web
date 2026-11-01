@@ -27,7 +27,7 @@ export const analyzeFilmShots_Skill_Data = buildSkillConfig({
     he: 'ניתוח שוטים קולנועיים',
     pl: 'Analizowanie ujęć filmowych',
     uk: 'Аналізувати кінокадри',
-    lt: 'Analizuoti kino kadrus',
+    lt: 'Analizuoti kino planus',
     lv: 'Analizēt filmas kadrus',
     et: 'Filmikaadrite analüüsimine',
     be: 'Аналізаваць кінакадры',

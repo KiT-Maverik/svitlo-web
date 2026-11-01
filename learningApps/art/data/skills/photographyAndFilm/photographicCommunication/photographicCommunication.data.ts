@@ -75,7 +75,7 @@ export const photographicCommunication_SkillGroup_Data = buildSkillGroupConfig({
       he: 'גלו כיצד תצלומים יכולים לתעד, לתאר או לספר סיפורים בדרכים שונות.',
       pl: 'Poznaj, jak fotografie mogą dokumentować, przedstawiać lub opowiadać historie na różne sposoby.',
       uk: 'Дізнайтеся, як фотографії можуть документувати, зображати або розповідати історії по-різному.',
-      lt: 'Sužinokite, kaip nuotraukos gali įvairiai dokumentuoti, vaizduoti ar pasakoti istorijas.',
+      lt: 'Sužinokite, kaip fotografija gali dokumentuoti arba surežisuoti įvykius ir pasakoti istorijas.',
       lv: 'Atklājiet, kā fotogrāfijas dažādos veidos var dokumentēt, attēlot vai stāstīt stāstus.',
       et: 'Avasta, kuidas fotod saavad eri viisidel dokumenteerida, kujutada või jutustada lugusid.',
       be: 'Даведайцеся, як фатаграфіі могуць па-рознаму дакументаваць, адлюстроўваць або расказваць гісторыі.',

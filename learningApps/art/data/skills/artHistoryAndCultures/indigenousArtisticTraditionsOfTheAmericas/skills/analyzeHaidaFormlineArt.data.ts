@@ -60,7 +60,7 @@ export const analyzeHaidaFormlineArt_Skill_Data = buildSkillConfig({
       he: 'בחנו את הצורות ואת החללים הריקים באמנות הקווים של בני היידה בהקשר התרבותי שלה.',
       pl: 'Poznaj formy i puste przestrzenie w sztuce formline ludu Haida w jej kontekście kulturowym.',
       uk: 'Розгляньте форми й негативний простір у мистецтві формлайн народу гайда в культурному контексті.',
-      lt: 'Nagrinėkite formas ir tuščią erdvę haidų formline mene, atsižvelgdami į kultūrinį kontekstą.',
+      lt: 'Nagrinėkite ovalias formas, U formos motyvus ir tuščią erdvę haidų formline mene, atsižvelgdami į kultūrinį kontekstą.',
       lv: 'Izpētiet formas un negatīvo telpu haidu formline mākslā, ņemot vērā kultūras kontekstu.',
       et: 'Uuri haida formline-kunsti vorme ja negatiivset ruumi kultuurilises kontekstis.',
       be: 'Разгледзьце формы і адмоўную прастору ў мастацтве формлайн народа гайда ў культурным кантэксце.',

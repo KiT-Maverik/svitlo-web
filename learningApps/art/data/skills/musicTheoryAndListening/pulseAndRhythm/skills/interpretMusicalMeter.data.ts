@@ -59,7 +59,7 @@ export const interpretMusicalMeter_Skill_Data = buildSkillConfig({
       he: 'הקשיבו לאופן שבו פעימות חזקות וחלשות שחוזרות על עצמן מארגנות תבנית מוזיקלית.',
       pl: 'Posłuchaj, jak powtarzające się mocne i słabe uderzenia porządkują wzór muzyczny.',
       uk: 'Почуйте, як повторювані сильні й слабкі долі формують музичний малюнок.',
-      lt: 'Klausykitės, kaip pasikartojantys stiprūs ir silpni taktai kuria muzikinį modelį.',
+      lt: 'Klausykitės, kaip pasikartojantys stiprieji ir silpnieji kirčiai sudaro muzikinį metrą.',
       lv: 'Ieklausieties, kā atkārtoti spēcīgi un vāji sitieni veido muzikālu rakstu.',
       et: 'Kuula, kuidas korduvad tugevad ja nõrgad löögid kujundavad muusikalist mustrit.',
       be: 'Паслухайце, як паўтаральныя моцныя і слабыя долі арганізуюць музычны малюнак.',
