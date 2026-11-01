@@ -26,7 +26,7 @@ export const unknownDividend_Skill_Data = buildSkillConfig({
     ko: '모르는 피제수 구하기',
     tr: 'Bilinmeyen bölüneni bulma',
     vi: 'Tìm số bị chia chưa biết',
-    ta: 'தெரியாத வகுபடுஎண்ணைக் காணுதல்',
+    ta: 'தெரியாத வகுபடும் எண்ணைக் காணுதல்',
     te: 'తెలియని భాజ్యాన్ని కనుగొనడం',
     mr: 'अज्ञात भाज्य शोधणे',
     ms: 'Mencari nombor yang dibahagi',

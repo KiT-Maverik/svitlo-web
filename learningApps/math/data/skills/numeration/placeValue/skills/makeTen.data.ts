@@ -50,7 +50,7 @@ export const makeTen_Skill_Data = buildSkillConfig({
       ur: 'دس اکائیوں کا ایک دہائی کا گروہ بنائیں یا ایک دہائی کو دس اکائیوں میں توڑیں۔ مقدار وہی رہتی ہے۔',
       id: 'Gabungkan sepuluh satuan menjadi satu puluhan, atau pecah satu puluhan menjadi sepuluh satuan. Jumlah tetap sama.',
       de: 'Fasse zehn Einer zu einem Zehner zusammen oder zerlege einen Zehner in zehn Einer. Der Wert bleibt gleich.',
-      ja: '一を10個まとめて十にしたり、十を一10個に分けたりできます。数の大きさは変わりません。',
+      ja: '10個の一を一つの十にまとめたり、一つの十を10個の一に分けたりできます。数の大きさは変わりません。',
       ko: '일 열 개를 십 하나로 묶거나 십 하나를 일 열 개로 나눕니다. 전체 값은 같습니다.',
       tr: 'On birliği bir onlukta topla veya bir onluğu on birliğe ayır. Miktar aynı kalır.',
       vi: 'Gộp mười đơn vị thành một chục hoặc tách một chục thành mười đơn vị. Tổng không đổi.',

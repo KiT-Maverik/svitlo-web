@@ -26,7 +26,7 @@ export const roundToHundred_Skill_Data = buildSkillConfig({
     ko: '가장 가까운 백으로 반올림',
     tr: 'En yakın yüzlüğe yuvarlama',
     vi: 'Làm tròn đến hàng trăm',
-    ta: 'அருகிலுள்ள நூறுக்கு வட்டமிடுதல்',
+    ta: 'அருகிலுள்ள நூறுக்கு முழுமையாக்குதல்',
     te: 'దగ్గరి వందకు సవరించడం',
     mr: 'जवळच्या शंभरापर्यंत पूर्णांकित करणे',
     ms: 'Membundarkan kepada ratus terdekat',

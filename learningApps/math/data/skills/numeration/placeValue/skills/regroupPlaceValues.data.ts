@@ -50,7 +50,7 @@ export const regroupPlaceValues_Skill_Data = buildSkillConfig({
       ur: 'ایک سینکڑے کو دس دہائیوں یا ایک دہائی کو دس اکائیوں میں بدلیں، پھر الٹا کریں۔ کل قدر نہیں بدلتی۔',
       id: 'Tukar satu ratusan dengan sepuluh puluhan atau satu puluhan dengan sepuluh satuan, lalu sebaliknya. Nilainya tidak berubah.',
       de: 'Tausche einen Hunderter gegen zehn Zehner oder einen Zehner gegen zehn Einer und umgekehrt. Der Gesamtwert bleibt gleich.',
-      ja: '百を十10個に、十を一10個に交換し、逆の交換もできます。合計は変わりません。',
+      ja: '一つの百を10個の十に、一つの十を10個の一に交換し、逆にもまとめられます。合計は変わりません。',
       ko: '백 하나를 십 열 개로, 십 하나를 일 열 개로 바꾸거나 거꾸로 바꿉니다. 합계는 같습니다.',
       tr: 'Bir yüzlüğü on onlukla veya bir onluğu on birlikle değiştir ve tersini yap. Toplam değişmez.',
       vi: 'Đổi một trăm thành mười chục hoặc một chục thành mười đơn vị, và đổi ngược lại mà không đổi tổng.',

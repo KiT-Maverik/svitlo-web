@@ -26,7 +26,7 @@ export const roundToTen_Skill_Data = buildSkillConfig({
     ko: '가장 가까운 십으로 반올림',
     tr: 'En yakın onluğa yuvarlama',
     vi: 'Làm tròn đến hàng chục',
-    ta: 'அருகிலுள்ள பத்துக்கு வட்டமிடுதல்',
+    ta: 'அருகிலுள்ள பத்துக்கு முழுமையாக்குதல்',
     te: 'దగ్గరి పదికి సవరించడం',
     mr: 'जवळच्या दहापर्यंत पूर्णांकित करणे',
     ms: 'Membundarkan kepada puluh terdekat',

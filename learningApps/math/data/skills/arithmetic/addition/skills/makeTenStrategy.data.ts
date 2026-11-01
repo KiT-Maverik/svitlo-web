@@ -25,7 +25,7 @@ export const makeTenStrategy_Skill_Data = buildSkillConfig({
     ja: '加法 — 10をつくる',
     ko: '덧셈 — 10 만들기',
     tr: 'Toplama — Onluğa tamamlama',
-    vi: 'Phép cộng — Làm tròn thành mười',
+    vi: 'Phép cộng — Chiến lược tạo chục',
     ta: 'கூட்டல் — பத்தை நிறைவு செய்தல்',
     te: 'కూడిక — పది పూర్తి చేయడం',
     mr: 'बेरीज — दहा पूर्ण करणे',

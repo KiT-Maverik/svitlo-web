@@ -25,7 +25,7 @@ export const calculateChange_Skill_Data = buildSkillConfig({
     ja: 'おつりを計算する',
     ko: '거스름돈 계산하기',
     tr: 'Para üstünü hesaplama',
-    vi: 'Tính tiền thối lại',
+    vi: 'Tính tiền thừa khi mua hàng',
     ta: 'மீதி பணத்தைக் கணக்கிடுதல்',
     te: 'చిల్లర డబ్బును లెక్కించడం',
     mr: 'परत मिळणारे सुटे पैसे मोजणे',
