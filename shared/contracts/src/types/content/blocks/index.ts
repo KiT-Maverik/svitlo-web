@@ -7,6 +7,7 @@ import type { ContentBlock_Markdown } from './markdown.types';
 import type { ContentBlock_Scene } from './scene.types';
 import type { ContentBlock_Text } from './text.types';
 import type { ContentBlock_Video } from './video.types';
+import type { ContentBlock_Youtube } from './youtube.types';
 
 export type ContentBlock<ConfigType extends ContentEntity_ConfigType> =
   | ContentBlock_Text<ConfigType>
@@ -16,6 +17,7 @@ export type ContentBlock<ConfigType extends ContentEntity_ConfigType> =
   | ContentBlock_Code<ConfigType>
   | ContentBlock_Audio<ConfigType>
   | ContentBlock_Video<ConfigType>
+  | ContentBlock_Youtube<ConfigType>
   | ContentBlock_Image<ConfigType>;
 
 export interface ContentBlock_Map<ConfigType extends ContentEntity_ConfigType> {
@@ -26,6 +28,7 @@ export interface ContentBlock_Map<ConfigType extends ContentEntity_ConfigType> {
   code: ContentBlock_Code<ConfigType>;
   audio: ContentBlock_Audio<ConfigType>;
   video: ContentBlock_Video<ConfigType>;
+  youtube: ContentBlock_Youtube<ConfigType>;
   image: ContentBlock_Image<ConfigType>;
 }
 
@@ -38,4 +41,5 @@ export type {
   ContentBlock_Scene,
   ContentBlock_Text,
   ContentBlock_Video,
+  ContentBlock_Youtube,
 };
