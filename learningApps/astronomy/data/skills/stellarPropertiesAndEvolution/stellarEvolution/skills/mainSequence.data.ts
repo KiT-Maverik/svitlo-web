@@ -61,7 +61,7 @@ export const mainSequence_Skill_Data = buildSkillConfig({
       pl: 'Wyjaśnij, dlaczego gwiazdy spędzają większość życia na syntezie wodoru w swoich jądrach.',
       uk: 'Поясніть, чому зорі проводять більшу частину життя, здійснюючи термоядерний синтез водню у своїх ядрах.',
       lt: 'Paaiškinkite, kodėl žvaigždės didžiąją gyvenimo dalį praleidžia savo branduoliuose jungdamos vandenilį.',
-      lv: 'Izskaidrojiet, kāpēc zvaigznes lielāko dzīves daļu kodolos sintezē ūdeņradi.',
+      lv: 'Izskaidrojiet, kāpēc zvaigznes lielāko dzīves daļu kodolos kodolsintēzes ceļā pārvērš ūdeņradi hēlijā.',
       et: 'Selgita, miks tähed veedavad suurema osa elust tuumades vesinikku sünteesides.',
       be: 'Растлумачце, чаму зоркі праводзяць большую частку жыцьця, зьліваючы вадарод у ядрах.',
       ka: 'ახსენით, რატომ ატარებენ ვარსკვლავები სიცოცხლის უმეტეს ნაწილს ბირთვში წყალბადის შერწყმაში.',
