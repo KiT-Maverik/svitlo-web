@@ -20,7 +20,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     bn: 'ভাগ — 3-অঙ্কের÷1-অঙ্কের',
     pt: 'Divisão — 3-algarismos÷1-algarismos',
     ur: 'تقسیم — 3-ہندسوں÷1-ہندسوں',
-    id: 'Pembagian — 3-angka÷1-angka',
+    id: 'Pembagian — bilangan tiga angka dibagi bilangan satu angka',
     de: 'Division — 3-stellige÷1-stellige',
     ja: '除法 — 3-桁の数÷1-桁の数',
     ko: '나눗셈 — 3-자리 수÷1-자리 수',
