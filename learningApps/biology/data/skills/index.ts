@@ -1,0 +1,11 @@
+export { biotechnology_SkillDomain_Data } from './biotechnology/biotechnology.data';
+export { botany_SkillDomain_Data } from './botany/botany.data';
+export { characteristicsOfLivingThings_SkillDomain_Data } from './characteristicsOfLivingThings/characteristicsOfLivingThings.data';
+export { ecology_SkillDomain_Data } from './ecology/ecology.data';
+export { generalAndCellBiology_SkillDomain_Data } from './generalAndCellBiology/generalAndCellBiology.data';
+export { geneticsAndEvolution_SkillDomain_Data } from './geneticsAndEvolution/geneticsAndEvolution.data';
+export { humanAnatomyAndPhysiology_SkillDomain_Data } from './humanAnatomyAndPhysiology/humanAnatomyAndPhysiology.data';
+export { microbiology_SkillDomain_Data } from './microbiology/microbiology.data';
+export { mycology_SkillDomain_Data } from './mycology/mycology.data';
+export { virology_SkillDomain_Data } from './virology/virology.data';
+export { zoology_SkillDomain_Data } from './zoology/zoology.data';
