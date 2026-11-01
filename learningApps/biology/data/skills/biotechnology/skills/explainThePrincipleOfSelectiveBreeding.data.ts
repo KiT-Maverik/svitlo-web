@@ -32,6 +32,7 @@ export const explainThePrincipleOfSelectiveBreeding_Skill_Data = buildSkillConfi
     be: 'Тлумачыць прынцып сэлекцыйнага разьвядзеньня',
     ka: 'სელექციური გამრავლების პრინციპის ახსნა',
     kk: 'Селекциялық өсіру қағидатын түсіндіру',
+    qm: 'İrsiy belgilerge köre saylap yetiştirüv printsipini añlatmaq',
   },
   description: {
     methodological: "Define selective breeding as purposeful selection and reproduction of organisms with desired inherited traits across generations to create or improve crop varieties and animal breeds. Understand that a breeder selects carriers of hereditary variants rather than arbitrarily 'ordering' a characteristic in each offspring.",
@@ -64,6 +65,7 @@ export const explainThePrincipleOfSelectiveBreeding_Skill_Data = buildSkillConfi
       be: 'Зразумей, як сэлекцыйнае разьвядзеньне разьвівае спадчынныя прыкметы цягам пакаленьняў.',
       ka: 'გაიგე, როგორ ვითარდება მემკვიდრეობითი ნიშნები სელექციური გამრავლებით თაობების განმავლობაში.',
       kk: 'Селекциялық өсіру тұқым қуалайтын белгілерді ұрпақтан ұрпаққа қалай дамытатынын түсін.',
+      qm: 'İstenilgen irsiy belgileri olğan canlılarnı saylap çoğaltuv nesiller devamında bu belgilerge nasıl tesir etkenini ögreniñiz.',
     },
   },
 });

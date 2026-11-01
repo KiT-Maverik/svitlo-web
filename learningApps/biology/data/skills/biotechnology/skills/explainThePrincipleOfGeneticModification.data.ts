@@ -32,6 +32,7 @@ export const explainThePrincipleOfGeneticModification_Skill_Data = buildSkillCon
     be: 'Тлумачыць прынцып генэтычнай мадыфікацыі',
     ka: 'გენეტიკური მოდიფიკაციის პრინციპის ახსნა',
     kk: 'Генетикалық модификациялау қағидатын түсіндіру',
+    qm: 'Genetik deñiştirüv printsipini añlatmaq',
   },
   description: {
     methodological: "Define genetic modification as the intentional alteration of genetic material by biotechnological methods. Distinguish changing DNA from simply selecting organisms by traits without assuming that every genetic change automatically brings benefits or harm.",
@@ -64,6 +65,7 @@ export const explainThePrincipleOfGeneticModification_Skill_Data = buildSkillCon
       be: 'Растлумач, як генэтычная мадыфікацыя зьмяняе ДНК, у адрозьненьне ад выбару бацькоўскіх арганізмаў для разьвядзеньня.',
       ka: 'ახსენი, როგორ ცვლის გენეტიკური მოდიფიკაცია დნმ-ს, განსხვავებით გამრავლებისთვის მშობელი ორგანიზმების შერჩევისგან.',
       kk: 'Генетикалық модификация ДНҚ-ны қалай өзгертетінін және оның будандастыру үшін ата-аналық ағзаларды таңдаудан айырмасын түсіндір.',
+      qm: 'Genetik deñiştirüv DNAnı nasıl deñiştirgenini ve bunun yetiştirüv içün ana-baba canlılarnı saylavdan farqlı olğanını añlatıñız.',
     },
   },
 });
