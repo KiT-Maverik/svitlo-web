@@ -12,7 +12,7 @@ export const surfacesAndGeology_SkillGroup_Data = buildSkillGroupConfig({
   id: '54747e19-fc5d-47f1-ab28-9583559684ea',
   name: {
     en: 'Surfaces and Geology',
-      zh: '行星表面与地质',
+    zh: '行星表面与地质',
     hi: 'सतहें और भूविज्ञान',
     es: 'Superficies y geología',
     ar: 'الأسطح والجيولوجيا',
@@ -52,7 +52,7 @@ export const surfacesAndGeology_SkillGroup_Data = buildSkillGroupConfig({
       'Observable terrain records impacts, deformation, volcanism and erosion, with interpretation conditioned by the limits of remote data.',
     frontend: {
       en: 'Read the clues left on planetary surfaces by collisions and geological change.',
-          zh: '解读撞击和地质变化在行星表面留下的线索。',
+      zh: '解读撞击和地质变化在行星表面留下的线索。',
       hi: 'टक्करों और भूगर्भीय परिवर्तनों के कारण ग्रहों की सतहों पर छोड़े गए संकेत पहचानें।',
       es: 'Interpreta las huellas que dejan las colisiones y los cambios geológicos en las superficies planetarias.',
       ar: 'اقرأ الآثار التي تتركها الاصطدامات والتغيرات الجيولوجية على أسطح الكواكب.',
