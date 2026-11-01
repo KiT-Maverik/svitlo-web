@@ -42,13 +42,22 @@ The command creates a temporary, out-of-repository directory containing `<textbo
 
 ### B. GitHub Actions — when repository checkout is unavailable locally
 
-Use the **permanent, reusable, manually dispatched** [Translation Review Artifacts](../../../.github/workflows/translation-review.yml) workflow. Provide the source branch/ref, textbook or all-textbooks flag, and locale or all-locales flag. Run it once for the appropriate batch; then download the resulting short-lived Markdown artifact from that run.
+Use the **permanent, reusable** [Translation Review Artifacts](../../../.github/workflows/translation-review.yml) workflow. It supports both the Actions **Run workflow** button (choose a source ref, one/all textbooks, one/all locales) and an agent-friendly, guarded **GitHub PR comment** trigger. If the connected agent can post a comment to an in-repository PR on behalf of the **repository owner**, it can initiate the workflow itself with one command:
 
-**Do not create a new workflow file, temporary branch, or CI definition for each review.** GitHub provisions and discards the per-run runner automatically. The reusable workflow must be present on the repository **default branch** for the normal `workflow_dispatch` UI to be available; until then, use the local route or a supplied generated Markdown. The workflow checks out the requested **source ref**, so the reviewed Code may come from a feature branch even when the workflow definition lives on `main`.
+```text
+/review-translation package=learningApps/astronomy locale=qm
+/review-translation package=learningApps/astronomy all-locales
+/review-translation all-packages locale=qm
+/review-translation all-packages all-locales
+```
 
-The workflow has **no push or PR trigger** and does not modify FastGate. It uses read-only permissions, generates into `RUNNER_TEMP`, uploads an artifact with **one-day retention**, emits a run summary/manifest, and removes temporary runner files even if generation failed. GitHub expires the uploaded archive automatically after its retention window. **No generated Markdown and no one-off job definition is committed.** Never describe the uploaded archive as immediately deleted; it is available until expiration. Avoid creating a separate deletion bot or broad deletion token just for this lifecycle.
+For the PR-comment mode, the workflow always checks out the **current source head commit of that PR** automatically: no separate branch prompt or manual ref is required. Only explicit commands written by the repository **OWNER** in a PR conversation are honored; arbitrary comments, comments from other authors, and comments on issues do not generate review artifacts. Post a single command covering the complete review scope; do not request a fresh comment per domain or locale. Locate the resulting **Translation Review Artifacts** Actions run, inspect its summary and manifest, then retrieve the short-lived Markdown archive.
 
-If agent tools cannot dispatch the workflow or read the artifact, use the checked-in wrapper in a real checkout or ask for the single generated archive/document only as a last resort. Do not claim execution if none occurred.
+**Do not create a new workflow file, temporary branch, or CI definition for each review.** GitHub provisions and discards the per-run runner automatically. The reusable workflow must be present on the repository **default branch** for both `workflow_dispatch` and the `issue_comment` command trigger to function. Until then, use the local route or a supplied generated Markdown, and **do not post a command expecting a run**. The manual workflow can check out any explicitly selected in-repository source ref even when its definition lives on `main`.
+
+The workflow is **opt-in only**, has no push trigger, and does not modify FastGate. It uses read-only source access, installs just the TypeScript parser rather than building the monorepo, generates into `RUNNER_TEMP`, uploads an artifact with **one-day retention**, emits a run summary/manifest, and removes temporary runner files even if generation failed. GitHub expires the uploaded archive automatically after its retention window. **No generated Markdown and no one-off job definition is committed.** Never describe the uploaded archive as immediately deleted; it is available until expiration. Avoid a separate deletion bot or broad deletion token.
+
+If agent tools cannot issue the command, dispatch the workflow, or read the artifact, use the checked-in wrapper in a real checkout or ask for the single generated archive/document only as a last resort. Do not claim execution if none occurred.
 
 ## LINGUISTIC REVIEW PROCEDURE
 
