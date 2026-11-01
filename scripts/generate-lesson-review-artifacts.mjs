@@ -30,7 +30,7 @@ export function discoverLessons(root) {
       for (const slug of directories(path.join(lessonsRoot, group))) {
         if (!lessonSlugPattern.test(slug)) continue;
         const source = path.join(lessonsRoot, group, slug, `${slug}.data.ts`);
-        if (!fs.existsSync(source) || !fs.statSync(source).isFile()) continue;
+        if (!fs.existsSync(source) || !fs.lstatSync(source).isFile()) continue;
         lessons.push({ textbook: app, package: `learningApps/${app}`, group, slug, source });
       }
     }
@@ -46,7 +46,7 @@ export function discoverLessons(root) {
 export function generateLessonReviewArtifacts({ root, output, languages, manifest, saveManifest, run = spawnSync }) {
   const lessons = discoverLessons(root);
   const generator = path.join(root, 'scripts/generate-lessons-markdown.mjs');
-  const generatorAvailable = fs.existsSync(generator) && fs.statSync(generator).isFile();
+  const generatorAvailable = fs.existsSync(generator) && fs.lstatSync(generator).isFile();
   const result = { discoveredLessons: lessons.length, generated: 0, failures: 0 };
   fs.mkdirSync(path.join(output, 'lessons'), { recursive: true });
 
