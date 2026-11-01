@@ -7,6 +7,7 @@ export const habitats_SkillGroup_Data = buildSkillGroupConfig({
   id: "a0b78fd2-16f0-4d39-ab65-ad420593b605",
   name: {
     en: "Habitats",
+    qm: 'Yaşayış yerleri',
     zh: '栖息地',
     hi: 'आवास',
     es: 'Hábitats',
@@ -45,6 +46,7 @@ export const habitats_SkillGroup_Data = buildSkillGroupConfig({
     methodological: "Temperature, water, light, other organisms, and resources affect the survival prospects of a particular species.",
     frontend: {
       en: "Discover how environmental conditions shape the lives of organisms.",
+      qm: 'Etraftaki müit şartları canlılarnıñ yaşayışına nasıl tesir etkenini ögreniñiz.',
       zh: '了解环境条件如何影响生物的生活。',
       hi: 'जानें कि पर्यावरणीय परिस्थितियाँ जीवों के जीवन को कैसे प्रभावित करती हैं।',
       es: 'Descubre cómo las condiciones ambientales influyen en la vida de los organismos.',
