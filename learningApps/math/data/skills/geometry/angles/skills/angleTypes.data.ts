@@ -28,7 +28,7 @@ export const angleTypes_Skill_Data = buildSkillConfig({
     vi: 'Phân biệt góc nhọn, vuông và tù',
     ta: 'குறுங்கோணம் செங்கோணம் விரிகோணம் வேறுபடுத்துதல்',
     te: 'లఘుకోణం లంబకోణం అధికకోణాలను వేరు చేయడం',
-    mr: 'लघु काटकोन आणि विशालकोन ओळखणे',
+    mr: 'लघुकोन, काटकोन आणि विशालकोन ओळखणे',
     ms: 'Membezakan sudut tirus, tegak dan cakah',
     he: 'הבחנה בין זוויות חדות ישרות וקהות',
     pl: 'Rozróżnianie kątów ostrych, prostych i rozwartych',
