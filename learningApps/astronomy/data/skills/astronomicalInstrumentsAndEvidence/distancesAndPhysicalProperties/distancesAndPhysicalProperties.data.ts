@@ -14,6 +14,8 @@ export const distancesAndPhysicalProperties_SkillGroup_Data = buildSkillGroupCon
   id: '5c0ef873-fe6c-4cd8-9633-c2e27dd267d8',
   name: {
     en: 'Distances and Physical Properties',
+    uk: 'Відстані та фізичні властивості',
+    pl: 'Odległości i właściwości fizyczne',
   },
   skills: {
     absoluteMagnitude: absoluteMagnitude_Skill_Data,
@@ -28,6 +30,8 @@ export const distancesAndPhysicalProperties_SkillGroup_Data = buildSkillGroupCon
       'Astronomical measurements connect remote observations to inferred size, distance and energy output using explicit models rather than direct contact.',
     frontend: {
       en: 'Explore how astronomers estimate properties they cannot measure directly.',
+      uk: 'Досліджуй, як астрономи оцінюють властивості об’єктів, які неможливо виміряти безпосередньо.',
+      pl: 'Poznaj sposoby, w jakie astronomowie szacują właściwości, których nie mogą zmierzyć bezpośrednio.',
     },
   },
 });
