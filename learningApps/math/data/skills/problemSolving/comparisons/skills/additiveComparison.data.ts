@@ -4,9 +4,9 @@ export const additiveComparison_Skill_Data = buildSkillConfig({
   slug: 'additiveComparison',
   id: '6ec0b82a-2cb0-4875-a327-dc292e6624c0',
   name: {
-    lt: 'Sudėtinių palyginimo uždavinių sprendimas',
-    lv: 'Saskaitāmu lielumu salīdzināšanas uzdevumu risināšana',
-    et: 'Liitvahe võrdlusülesannete lahendamine',
+    lt: 'Skirtuminio palyginimo uždavinių sprendimas',
+    lv: 'Lielumu salīdzināšanas pēc starpības uzdevumu risināšana',
+    et: 'Vahe järgi võrdlemise ülesannete lahendamine',
     be: 'Разьвязваньне задач на розьнічнае параўнаньне',
     ka: 'შეკრებით შედარების ამოცანების ამოხსნა',
     kk: 'Айырмалық салыстыру есептерін шығару',

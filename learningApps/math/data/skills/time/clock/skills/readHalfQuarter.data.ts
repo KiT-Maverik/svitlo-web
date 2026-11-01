@@ -57,7 +57,7 @@ export const readHalfQuarter_Skill_Data = buildSkillConfig({
       ta: 'கடிகாரத்தில் அரைமணி, கால்மணி ஆகியவற்றைப் படித்து அவை 30, 15 நிமிடங்கள் எனவும் மணிமுள் எண்களுக்கு இடையே நகரும் எனவும் அறிய முடியும்.',
       te: 'గడియారంలో అరగంట, పావుగంట చదివి, అవి 30, 15 నిమిషాలని, గంటల ముల్లు సంఖ్యల మధ్య కదులుతుందని తెలుసుకోగలవు.',
       mr: 'घड्याळावर अर्धा व पाव तास वाचू शकता, ते ३० व १५ मिनिटे असतात आणि तासकाटा अंकांच्या मध्ये सरकतो हे समजू शकता.',
-      ms: 'Kamu boleh membaca setengah jam dan suku jam, mengetahui kedua-duanya 30 dan 15 minit serta jarum jam bergerak antara nombor.',
+      ms: 'Kamu boleh membaca setengah jam (30 minit) dan suku jam (15 minit) serta memahami pergerakan jarum jam antara nombor.',
       he: 'אפשר לקרוא חצי שעה ורבע שעה, לדעת שהן 30 ו-15 דקות ושמחוג השעות מתקדם גם בין המספרים.',
       pl: 'Potrafisz odczytać pół godziny i kwadrans, wiedząc, że to 30 i 15 minut oraz że wskazówka godzinowa przesuwa się między liczbami.',
       uk: 'Ти можеш читати половину й чверть години, знаючи, що це 30 і 15 хвилин, а годинна стрілка поступово рухається між числами.',

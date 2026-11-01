@@ -8,7 +8,7 @@ export const linePlotMeasurements_Skill_Data = buildSkillConfig({
     qm: 'Ölçüvlerni sayı sızığında köstermek',
     lt: 'Matavimų žymėjimas skaičių tiesėje',
     lv: 'Mērījumu attēlošana uz skaitļu taisnes',
-    et: 'Mõõtmiste märkimine arvkiirel',
+    et: 'Mõõtmiste märkimine arvteljel',
     be: 'Адзначэньне вымярэньняў на лікавай прамой',
     ka: 'გაზომვების რიცხვით ღერძზე დატანა',
     kk: 'Өлшемдерді сан сәулесіне белгілеу',

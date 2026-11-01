@@ -52,7 +52,7 @@ export const equalityMeaning_Skill_Data = buildSkillConfig({
       de: 'Das Gleichheitszeichen bedeutet, dass beide Seiten denselben Wert haben, nicht bloß, dass danach die Antwort steht.',
       ja: '等号は左右の式の値が等しいことを表し、単に後ろに答えを書く合図ではありません。',
       ko: '등호는 양쪽 식의 값이 같다는 뜻이지, 단순히 뒤에 답이 나온다는 표시가 아니에요.',
-      tr: 'Eşittir işareti, iki taraftaki ifadelerin aynı değerde olduğunu gösterir; sadece ardından cevap geleceğini değil.',
+      tr: 'Eşittir işareti, yalnızca sonucun yazılacağı yeri göstermez; iki tarafın aynı değere sahip olduğunu belirtir.',
       vi: 'Dấu bằng nghĩa là biểu thức ở hai vế có giá trị bằng nhau, không chỉ báo rằng đáp án đứng phía sau.',
       ta: 'சமக்குறி இருபுறக் கோவைகளின் மதிப்பும் சமம் என்பதைக் குறிக்கும்; அதன் பின் விடை வரும் என்பதைக் குறிக்க மட்டும் அல்ல.',
       te: 'సమానం గుర్తు రెండు వైపుల వ్యక్తీకరణల విలువ ఒకటేనని చెబుతుంది; దాని తర్వాత జవాబు వస్తుందనే సూచన మాత్రమే కాదు.',

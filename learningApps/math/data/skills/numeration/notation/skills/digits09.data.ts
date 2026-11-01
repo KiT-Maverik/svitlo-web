@@ -4,8 +4,8 @@ export const digits09_Skill_Data = buildSkillConfig({
   slug: 'digits09',
   id: 'b86b9bc2-f53d-404a-92a3-10de53a83f06',
   name: {
-    lt: 'Skaitmenys 0–9 ir skaitmens reikšmė',
-    lv: 'Cipari 0–9 un cipara nozīme',
+    lt: 'Skaitmenys 0–9 ir skaitmens bei skaičiaus skirtumas',
+    lv: 'Cipari 0–9 un atšķirība starp ciparu un skaitli',
     et: 'Numbrid 0–9 ja numbri tähendus',
     be: 'Лічбы 0–9 і значэньне лічбы',
     ka: 'ციფრები 0–9 და ციფრის მნიშვნელობა',

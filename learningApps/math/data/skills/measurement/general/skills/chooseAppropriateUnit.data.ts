@@ -7,7 +7,7 @@ export const chooseAppropriateUnit_Skill_Data = buildSkillConfig({
     en: 'Choosing suitable units for length, mass or capacity',
     qm: 'Uzunlıq, kütle ya da sıyımlılıq içün uyğun birlik saylav',
     lt: 'Tinkamų ilgio, masės ar talpos matavimo vienetų pasirinkimas',
-    lv: 'Piemērotu garuma, masas vai tilpuma mērvienību izvēle',
+    lv: 'Piemērotu garuma, masas vai ietilpības mērvienību izvēle',
     et: 'Sobivate pikkuse, massi või mahutavuse ühikute valimine',
     be: 'Выбар прыдатных адзінак даўжыні, масы ці ўмяшчальнасьці',
     ka: 'სიგრძის, მასის ან ტევადობის შესაბამისი ერთეულების შერჩევა',
