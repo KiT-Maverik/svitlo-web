@@ -12,7 +12,7 @@ export const explainTheirRoleInDecomposition_Skill_Data = buildSkillConfig({
     fr: 'Expliquer leur rôle dans la décomposition',
     bn: 'পচন প্রক্রিয়ায় অণুজীবের ভূমিকা ব্যাখ্যা করা',
     pt: 'Explicar seu papel na decomposição',
-    ur: 'گلنے سڑنے میں ان کے کردار کی وضاحت',
+    ur: 'گلنے سڑنے میں خرد جانداروں کے کردار کی وضاحت',
     id: 'Menjelaskan Peran Mikroorganisme dalam Penguraian',
     de: 'Die Rolle von Mikroorganismen bei der Zersetzung erklären',
     ja: '分解における微生物の役割を説明する',

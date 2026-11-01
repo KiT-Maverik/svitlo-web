@@ -44,7 +44,7 @@ export const recognizeFernAndFernAllyCharacteristics_Skill_Data = buildSkillConf
       fr: 'Reconnais les fougères et les plantes vasculaires apparentées qui se reproduisent par spores.',
       bn: 'রেণুর মাধ্যমে বংশবিস্তারকারী ফার্ন ও সংশ্লিষ্ট সংবহনতন্ত্রযুক্ত উদ্ভিদ চিনতে শেখো।',
       pt: 'Reconheça samambaias e plantas vasculares relacionadas que se reproduzem por esporos.',
-      ur: 'بذریوں کے ذریعے تولید کرنے والے فرن اور متعلقہ عروقی پودے پہچانیں۔',
+      ur: 'تخمکوں کے ذریعے تولید کرنے والے فرن اور متعلقہ عروقی پودے پہچانیں۔',
       id: 'Kenali tumbuhan paku dan tumbuhan berpembuluh terkait yang bereproduksi dengan spora.',
       de: 'Erkenne Farne und verwandte Gefäßpflanzen, die sich durch Sporen fortpflanzen.',
       ja: '胞子で増えるシダ類と近縁の維管束植物を見分けよう。',
