@@ -20,7 +20,7 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
     bn: 'যোগ ও বিয়োগ — 2-অঙ্কের · পুনর্বিন্যাস ছাড়া',
     pt: 'Adição e subtração — 2-algarismos · Sem reagrupamento',
     ur: 'جمع اور تفریق — 2-ہندسوں · دوبارہ گروہ بندی کے بغیر',
-    id: 'Penjumlahan dan pengurangan — 2-angka · Tanpa pengelompokan ulang',
+    id: 'Penjumlahan dan pengurangan — bilangan dua angka tanpa pengelompokan ulang',
     de: 'Addition und Subtraktion — 2-stellige · Ohne Bündelwechsel',
     ja: '加減算 — 2-桁の数 · 位の繰り上がり・下がりなし',
     ko: '덧셈과 뺄셈 — 2-자리 수 · 자리 바꿈 없이',
