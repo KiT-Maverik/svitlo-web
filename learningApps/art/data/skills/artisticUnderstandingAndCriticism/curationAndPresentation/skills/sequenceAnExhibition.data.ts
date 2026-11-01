@@ -28,7 +28,7 @@ export const sequenceAnExhibition_Skill_Data = buildSkillConfig({
     uk: 'Вибудовувати послідовність виставки',
     lt: 'Sudėlioti parodos seką',
     lv: 'Veidot izstādes secību',
-    et: 'Näitus järjestama',
+    et: 'Näituse teoste järjestamine',
     be: 'Выбудоўваць паслядоўнасць выставы',
     ka: 'გამოფენის თანმიმდევრობის დაგეგმვა',
     kk: 'Көрме ретін құрастыру',

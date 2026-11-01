@@ -66,7 +66,7 @@ export const analyzeMaoriWhakairoCarving_Skill_Data = buildSkillConfig({
       be: 'Пазнаёмцеся з формамі, значэннямі і супольнасным кантэкстам разьбы whakairo народа маоры.',
       ka: 'გაეცანით მაორის whakairo კვეთის ფორმებს, მნიშვნელობებსა და თემის კონტექსტს.',
       kk: 'Маори халқының whakairo ою өнерінің пішіндерімен, мағыналарымен және қауымдық контекстімен танысыңыз.',
-      qm: 'Māori whakairo oymacılığının biçimlerini, anlamlarını ve topluluk bağlamını keşfedin.',
+      qm: 'Māori whakairo oymacılığının biçimlerini, anlamlarını ve topluluk bağlamını keşf etiñiz.',
     },
   },
 });

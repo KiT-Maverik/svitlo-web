@@ -59,7 +59,7 @@ export const analyzeByzantineIconPainting_Skill_Data = buildSkillConfig({
       ms: 'Terokai cara ikon Byzantine menggunakan bentuk dan bahan simbolik dalam ibadah.',
       he: 'גלו כיצד איקונות ביזנטיות משתמשות בצורות ובחומרים סמליים בפולחן.',
       pl: 'Poznaj, jak ikony bizantyjskie wykorzystują symboliczne formy i materiały w kulcie.',
-      uk: 'Досліджувати, як візантійські ікони використовують символічні форми й матеріали в богослужінні.',
+      uk: 'Дослідіть, як візантійські ікони використовують символічні форми й матеріали в богослужінні.',
       lt: 'Sužinokite, kaip Bizantijos ikonų simbolinės formos ir medžiagos siejasi su religinėmis praktikomis.',
       lv: 'Uzziniet, kā Bizantijas ikonas dievkalpojumos izmanto simboliskas formas un materiālus.',
       et: 'Uuri, kuidas Bütsantsi ikoonid kasutavad jumalateenistusel sümboolseid vorme ja materjale.',
