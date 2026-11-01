@@ -14,7 +14,7 @@ export const subsurfaceHabitats_Skill_Data = buildSkillConfig({
     ms: 'Habitat bawah permukaan',
     lt: 'Po paviršiumi esančios buveinės',
     lv: 'Dzīvotnes zem virsmas',
-    et: 'Maa-alused elupaigad',
+    et: 'Pinnaalused elupaigad',
     be: 'Падпаверхневыя асяродкі жыцьця',
     ka: 'ზედაპირისქვეშა საარსებო გარემოები',
     kk: 'Жер асты тіршілік орталары',

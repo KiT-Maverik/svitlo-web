@@ -55,7 +55,7 @@ export const originOfTheMoon_Skill_Data = buildSkillConfig({
       vi: 'So sánh bằng chứng cho các giả thuyết khác nhau về nguồn gốc Mặt Trăng, trong đó có giả thuyết va chạm khổng lồ.',
       ta: 'மாபெரும் மோதல் கருதுகோள் உட்பட நிலவின் தோற்றம் குறித்த பல்வேறு கோட்பாடுகளுக்கான ஆதாரங்களை ஒப்பிடுங்கள்.',
       te: 'భారీ ఢీకొనడం వల్ల చంద్రుడు ఏర్పడ్డాడనే సిద్ధాంతంతో సహా చంద్రుని మూలానికి సంబంధించిన వివిధ సిద్ధాంతాల ఆధారాలను పోల్చండి.',
-      mr: 'चंद्राच्या उत्पत्तीविषयीच्या विविध सिद्धांतांचे पुरावे तुलना करा; त्यात महाकाय धडकेचा सिद्धांतही समाविष्ट आहे.',
+      mr: 'चंद्राच्या उत्पत्तीविषयीच्या विविध सिद्धांतांच्या पुराव्यांची तुलना करा; त्यात महाकाय धडकेचा सिद्धांतही समाविष्ट आहे.',
       ms: 'Bandingkan bukti bagi pelbagai teori asal usul Bulan, termasuk hipotesis perlanggaran gergasi.',
       he: 'השוו בין הראיות לתיאוריות שונות על היווצרות הירח, ובהן השערת ההתנגשות הענקית.',
       pl: 'Porównaj dowody wspierające różne teorie pochodzenia Księżyca, w tym hipotezę wielkiego zderzenia.',

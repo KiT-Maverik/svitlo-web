@@ -65,7 +65,7 @@ export const primordialNucleosynthesis_Skill_Data = buildSkillConfig({
       lv: 'Uzzini, kā agrīnā Visuma modeļi prognozē vieglo elementu daudzumu.',
       et: 'Uuri, kuidas varase Universumi mudelid ennustavad kergete elementide koguseid.',
       be: 'Дасьледуй, як мадэлі раньняга Сусьвету прадказваюць колькасьць лёгкіх элемэнтаў.',
-      ka: 'გამოიკვლიე, როგორ წინასწარმეტყველებს ადრეული სამყაროს მოდელები მსუბუქი ელემენტების რაოდენობას.',
+      ka: 'გამოიკვლიე, როგორ წინასწარმეტყველებენ ადრეული სამყაროს მოდელები მსუბუქი ელემენტების რაოდენობას.',
       kk: 'Ерте Ғалам модельдері жеңіл элементтердің мөлшерін қалай болжайтынын зертте.',
     },
   },
