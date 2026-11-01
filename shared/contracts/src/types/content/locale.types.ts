@@ -24,3 +24,5 @@ export type Locale_ResponseParams = {
     isFallback?: true;
   };
 };
+
+export type Locale_Config = Locales_All | Locales_Subset | Locales_Single | Locales_Partial;
