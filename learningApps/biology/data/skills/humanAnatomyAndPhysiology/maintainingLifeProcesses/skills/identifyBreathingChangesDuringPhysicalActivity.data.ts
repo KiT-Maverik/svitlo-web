@@ -57,7 +57,7 @@ export const identifyBreathingChangesDuringPhysicalActivity_Skill_Data = buildSk
       mr: 'शारीरिक हालचालीदरम्यान श्वसन का बदलते ते स्पष्ट करा.',
       ms: 'Terangkan mengapa pernafasan berubah semasa aktiviti fizikal.',
       he: 'הסבירו מדוע הנשימה משתנה במהלך פעילות גופנית.',
-      pl: 'Wyjaśnij, dlaczego oddychanie zmienia się podczas aktywności fizycznej.',
+      pl: 'Rozpoznaj, jak zmieniają się częstość i głębokość oddychania podczas aktywności fizycznej.',
       uk: 'Визначай, як змінюються частота й глибина дихання під час фізичної активності.',
       lt: 'Paaiškinkite, kodėl kvėpavimas keičiasi fizinės veiklos metu.',
       lv: 'Izskaidrojiet, kāpēc elpošana mainās fiziskās slodzes laikā.',
