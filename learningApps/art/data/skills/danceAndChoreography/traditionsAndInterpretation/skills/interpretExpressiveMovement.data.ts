@@ -65,7 +65,7 @@ export const interpretExpressiveMovement_Skill_Data = buildSkillConfig({
       be: 'Выкарыстоўвайце дэталі руху, каб растлумачыць, што можа выражаць танец.',
       ka: 'მოძრაობის დეტალებით ახსენით, რისი გამოხატვა შეუძლია ცეკვას.',
       kk: 'Қимыл бөлшектерін пайдаланып, бидің нені білдіруі мүмкін екенін түсіндіріңіз.',
-      qm: 'Aqaynıñ neni ifade etkenini areket tafsilâtları ile añlatıñız.',
+      qm: 'Oyunnıñ neni ifade etkenini areket tafsilâtları ile añlatıñız.',
     },
   },
 });
