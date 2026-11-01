@@ -15,7 +15,7 @@ export const equalGrouping_Skill_Data = buildSkillConfig({
     zh: '除法 — 按相等组分组 · 等量组',
     hi: 'भाग — समान समूह बनाना · समान समूह',
     es: 'División — Formación de grupos iguales · Grupos iguales',
-    ar: 'القسمة — تكوين مجموعات متساوية · مجموعات متساوية',
+    ar: 'القسمة — تكوين مجموعات متساوية',
     fr: 'Division — Groupements égaux · Groupes égaux',
     bn: 'ভাগ — সমান দল গঠন · সমান দল',
     pt: 'Divisão — Formação de grupos iguais · Grupos iguais',
