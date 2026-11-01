@@ -1,6 +1,5 @@
-import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
-import { StringObjectToLocale } from '../../../transformer.types';
-type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['practice']['scene']['showcase']>;
+import type { Showcase_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/practice/scenes/Showcase/Showcase.types';
+
 export const showcase = {
   header: {
     eyebrow: {
@@ -541,4 +540,10 @@ export const showcase = {
       zh: '折射率数据来源：OpenStax',
     },
   },
-} satisfies Locale;
+};
+
+export const showcaseData = {
+  id: '9ea839e1-4237-5382-bf9b-1b534539f968',
+  slug: 'showcase' as const,
+  locales: showcase,
+} satisfies Showcase_ContentBlock<'data'>;

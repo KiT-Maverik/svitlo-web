@@ -2,7 +2,16 @@ export type * from './types/misc.types';
 export type * from './types/disabilities.types';
 export type * from './types/readonly.types';
 export type * from './types/content/contentBlock.types';
-export type { ContentBlock_Catalog, ContentBlock_Checkpoint, ContentBlock_Scene } from './types/content/blocks';
+export type {
+  ContentBlock_Catalog,
+  ContentBlock_Catalog_DataFor,
+  ContentBlock_Checkpoint,
+  ContentBlock_Markdown,
+  ContentBlock_Quiz,
+  ContentBlock_Quiz_Question,
+  ContentBlock_Scene,
+  ContentBlock_Text,
+} from './types/content/blocks';
 export { defineContentBlockCatalog } from './types/content/blocks';
 export type * from './types/content/locale.types';
 export type * from './types/content/lesson.types';

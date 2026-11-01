@@ -164,6 +164,6 @@ export const lightRayDiagram = {
 
 export const lightRayDiagramData = {
   id: '5acac9ef-2452-5072-b471-1255d52b4a28',
-  slug: 'lightRayDiagram',
+  slug: 'lightRayDiagram' as const,
   locales: lightRayDiagram,
 } satisfies LightRayDiagram_ContentBlock<'data'>;

@@ -10,6 +10,10 @@ type ContentBlock_Scene_Locales_Strings<TLocales> = TLocales extends string
     ? { [Key in keyof TLocales]: ContentBlock_Scene_Locales_Strings<TLocales[Key]> }
     : never;
 
+type ContentBlock_Scene_LocaleShape = {
+  [Key: string]: string | ContentBlock_Scene_LocaleShape;
+};
+
 type ContentBlock_Scene_Definition = ContentBlock_Definition_Meta<'scene'> & {
   component: ReactNode;
 };
@@ -31,7 +35,7 @@ type ContentBlock_Scene_Response<TLocales extends object> = ContentBlock_Respons
 
 export type ContentBlock_Scene<
   ConfigType extends ContentEntity_ConfigType,
-  TLocales extends object = Record<string, string>,
+  TLocales extends object = ContentBlock_Scene_LocaleShape,
 > = {
   definition: ContentBlock_Scene_Definition;
   data: ContentBlock_Scene_Data<TLocales>;

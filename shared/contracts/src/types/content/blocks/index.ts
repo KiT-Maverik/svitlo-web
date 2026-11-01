@@ -6,6 +6,7 @@ import type { DefineValidKeysFromSlugs } from '../../misc.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { ContentBlock_Image } from './image.types';
 import type { ContentBlock_Markdown } from './markdown.types';
+import type { ContentBlock_Quiz } from './quiz.types';
 import type { ContentBlock_Scene } from './scene.types';
 import type { ContentBlock_Text } from './text.types';
 import type { ContentBlock_Video } from './video.types';
@@ -20,7 +21,8 @@ export type ContentBlock<ConfigType extends ContentEntity_ConfigType> =
   | ContentBlock_Audio<ConfigType>
   | ContentBlock_Video<ConfigType>
   | ContentBlock_Youtube<ConfigType>
-  | ContentBlock_Image<ConfigType>;
+  | ContentBlock_Image<ConfigType>
+  | ContentBlock_Quiz<ConfigType>;
 
 export interface ContentBlock_Map<ConfigType extends ContentEntity_ConfigType> {
   text: ContentBlock_Text<ConfigType>;
@@ -32,10 +34,17 @@ export interface ContentBlock_Map<ConfigType extends ContentEntity_ConfigType> {
   video: ContentBlock_Video<ConfigType>;
   youtube: ContentBlock_Youtube<ConfigType>;
   image: ContentBlock_Image<ConfigType>;
+  quiz: ContentBlock_Quiz<ConfigType>;
 }
 
 export type ContentBlock_Catalog<ConfigType extends ContentEntity_ConfigType> = {
   [Type in ContentBlock_Type & keyof ContentBlock_Map<ConfigType>]?: Record<string, ContentBlock_Map<ConfigType>[Type]>;
+};
+
+export type ContentBlock_Catalog_DataFor<Definition extends ContentBlock_Catalog<'definition'>> = {
+  [Type in keyof Definition]: Type extends keyof ContentBlock_Map<'data'>
+    ? Record<keyof Definition[Type] & string, ContentBlock_Map<'data'>[Type]>
+    : never;
 };
 
 type ContentBlock_Catalog_ValidSlugs<T extends ContentBlock_Catalog<'data'>> = {
@@ -56,8 +65,10 @@ export type {
   ContentBlock_Code,
   ContentBlock_Image,
   ContentBlock_Markdown,
+  ContentBlock_Quiz,
   ContentBlock_Scene,
   ContentBlock_Text,
   ContentBlock_Video,
   ContentBlock_Youtube,
 };
+export type { ContentBlock_Quiz_Question } from './quiz.types';

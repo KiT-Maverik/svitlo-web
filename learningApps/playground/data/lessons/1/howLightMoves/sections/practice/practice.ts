@@ -1,11 +1,6 @@
-import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
-
 import { showcase } from './scenes/showcase';
-import { StringObjectToLocale } from '../../transformer.types';
 
-type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['practice']>;
-
-export const practice: Locale = {
+export const practice = {
   name: {
     ar: 'تدريب',
     be: 'Практыка',

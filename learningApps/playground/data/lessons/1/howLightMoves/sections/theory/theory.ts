@@ -1,14 +1,9 @@
-import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
-
-import type { StringObjectToLocale } from '../../transformer.types';
-import { checkpoint } from './scenes/checkpoint';
+import { checkpoint } from './checkpoints/checkpoint';
 import lightPropagationSimulation from './scenes/lightPropagationSimulation';
 import { lightRayDiagram } from './scenes/lightRayDiagram';
-import { getMarkdownLocale } from '../../generators/getMarkdownLocale';
+import { getMarkdownLocale } from '../../generators/getMarkdownLocale/getMarkdownLocale.util';
 
-type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['theory']>;
-
-export const theory: Locale = {
+export const theory = {
   name: {
     ar: 'النظرية',
     be: 'Тэорыя',

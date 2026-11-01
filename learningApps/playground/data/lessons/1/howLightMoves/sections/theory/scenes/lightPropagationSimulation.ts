@@ -385,7 +385,7 @@ const lightPropagationSimulation = {
 
 export const lightPropagationSimulationData = {
   id: '1c0b03fd-de9a-50b8-a493-03594337b5a7',
-  slug: 'lightPropagationSimulation',
+  slug: 'lightPropagationSimulation' as const,
   locales: lightPropagationSimulation,
 } satisfies LightPropagationSimulation_ContentBlock<'data'>;
 

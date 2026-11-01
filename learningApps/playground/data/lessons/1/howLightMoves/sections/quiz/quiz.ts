@@ -1,8 +1,3 @@
-import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
-import type { StringObjectToLocale } from '../../transformer.types';
-
-type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['quiz']>;
-
 export const quiz = {
   name: {
     ar: 'اختبار',
@@ -66,4 +61,4 @@ export const quiz = {
     vi: 'Hãy kiểm tra xem ánh sáng truyền đi như thế nào.',
     zh: '让我们检验一下光是如何传播的。',
   },
-} satisfies Locale;
+};

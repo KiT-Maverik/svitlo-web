@@ -1,3 +1,5 @@
+import type { ContentBlock_Scene } from '@svitlo/engine/content';
+
 export interface Showcase_Locale {
   header: {
     eyebrow: string;
@@ -29,3 +31,6 @@ export interface Showcase_Locale {
     sourceLink: string;
   };
 }
+
+export type Showcase_ContentBlock<ConfigType extends 'definition' | 'data' | 'response'> =
+  ContentBlock_Scene<ConfigType, Showcase_Locale>;

@@ -1,0 +1,30 @@
+import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine';
+import { defineLessonV2Data, type LessonV2 } from '@svitlo/engine/content';
+import type { howLightMovesDefinition } from '@/data/lessons/1/howLightMoves/howLightMoves.definition';
+import { howLightMoves_Locale } from './howLightMoves';
+import { practiceData } from './sections/practice/practice.data';
+import { quizData } from './sections/quiz/quiz.data';
+import { theoryData } from './sections/theory/theory.data';
+
+export const howLightMovesData = defineLessonV2Data({
+  id: 'd3048d21-8690-5255-b62c-984c69ac272c',
+  slug: 'howLightMoves',
+  title: howLightMoves_Locale.name,
+  parameters: {
+    requireQuiz: true,
+    languages: [
+      DEFAULT_SUPPORTED_LANGUAGES[0].language,
+      ...DEFAULT_SUPPORTED_LANGUAGES.slice(1).map(({ language }) => language),
+    ],
+    sections: {
+      allowNavigation: true,
+      allowSkipping: true,
+      showIndexes: true,
+    },
+  },
+  sections: {
+    theory: theoryData,
+    practice: practiceData,
+    quiz: quizData,
+  } satisfies Record<keyof typeof howLightMovesDefinition.sections, LessonV2<'data'>['sections'][string]>,
+} satisfies LessonV2<'data'>);

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { DEFAULT_SUPPORTED_LANGUAGES, type LanguageCode } from '@svitlo/engine';
 
 const defaultLanguageCodes = DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => language);
-const theoryDirectory = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const theoryDirectory = resolve(dirname(fileURLToPath(import.meta.url)), '../../sections/theory');
 
 export const getMarkdownLocale = <T extends LanguageCode = LanguageCode>(
   path: string,
