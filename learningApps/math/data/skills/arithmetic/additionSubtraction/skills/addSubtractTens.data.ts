@@ -19,7 +19,7 @@ export const addSubtractTens_Skill_Data = buildSkillConfig({
     fr: 'Addition et soustraction — Dizaines entières',
     bn: 'যোগ ও বিয়োগ — পূর্ণ দশক',
     pt: 'Adição e subtração — Dezenas exatas',
-    ur: 'جمع اور تفریق — پورے دہائی',
+    ur: 'جمع اور تفریق — مکمل دہائیاں',
     id: 'Penjumlahan dan pengurangan — Puluhan penuh',
     de: 'Addition und Subtraktion — Ganze Zehner',
     ja: '加減算 — 10のまとまり',
