@@ -4,7 +4,7 @@ export const objectsAndPhenomena_Skill_Data = buildSkillConfig({
   slug: 'objectsAndPhenomena',
   id: '21f08efd-4c9f-4cb8-8988-33e1f1c7a135',
   name: {
-    en: "Objects and Phenomena",
+    en: 'Objects and Phenomena',
     zh: "天体与天文现象",
     hi: "खगोलीय पिंड और घटनाएँ",
     es: "Objetos y fenómenos",
@@ -38,7 +38,7 @@ export const objectsAndPhenomena_Skill_Data = buildSkillConfig({
     methodological:
       'Distinguish enduring physical objects and systems from observed events or effects such as eclipses, meteors, flares and transient brightenings, even when both occur in object catalogs.',
     frontend: {
-      en: "Tell the difference between a lasting celestial object and an event such as an eclipse or flare.",
+      en: 'Tell the difference between a lasting celestial object and an event such as an eclipse or flare.',
       zh: "区分持续存在的天体和日食、耀斑等短暂事件。",
       hi: "स्थायी खगोलीय पिंड और ग्रहण या सौर ज्वाला जैसी घटना के बीच अंतर पहचानें।",
       es: "Distingue un objeto celeste duradero de un suceso como un eclipse o una erupción.",
