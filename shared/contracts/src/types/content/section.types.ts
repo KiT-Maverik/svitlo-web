@@ -9,7 +9,7 @@ type Section_Data = {
   id: string;
   type: 'section';
   title: Locale_Config;
-  eyebrow: Locale_Config;
+  navigationLabel: Locale_Config;
   skippable?: true;
 };
 
@@ -17,7 +17,7 @@ type Section_Response = Locale_ResponseParams & {
   id: string;
   type: 'section';
   title: string;
-  eyebrow: string;
+  navigationLabel: string;
   skippable?: true;
 };
 
