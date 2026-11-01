@@ -45,7 +45,7 @@ export const analyzeRealistPainting_Skill_Data = buildSkillConfig({
       ar: 'اكتشف كيف صوّر الرسامون الواقعيون الحياة اليومية والمجتمع المعاصر.',
       fr: 'Découvrez comment les peintres réalistes ont représenté la vie quotidienne et la société de leur temps.',
       bn: 'বাস্তববাদী চিত্রশিল্পীরা দৈনন্দিন জীবন ও সমকালীন সমাজ কীভাবে তুলে ধরেছেন তা দেখুন।',
-      pt: 'Veja como os pintores realistas retrataram a vida quotidiana e a sociedade contemporânea.',
+      pt: 'Veja como os pintores realistas retrataram o cotidiano e a sociedade de sua época.',
       ur: 'دیکھیں کہ حقیقت نگار مصوروں نے روزمرہ زندگی اور معاصر معاشرے کو کیسے پیش کیا۔',
       id: 'Amati cara pelukis Realis menggambarkan kehidupan sehari-hari dan masyarakat sezamannya.',
       de: 'Sieh, wie realistische Maler den Alltag und die Gesellschaft ihrer Zeit darstellten.',

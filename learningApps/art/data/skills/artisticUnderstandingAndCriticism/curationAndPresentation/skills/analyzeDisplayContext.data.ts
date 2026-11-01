@@ -44,7 +44,7 @@ export const analyzeDisplayContext_Skill_Data = buildSkillConfig({
       ar: 'استكشف كيف يؤثر الضوء والحجم والموضع والملصقات في طريقة عرض العمل الفني.',
       fr: 'Découvrez comment la lumière, l’échelle, l’emplacement et les cartels influencent la présentation d’une œuvre.',
       bn: 'আলো, আকার, অবস্থান ও লেবেল কীভাবে শিল্পকর্মের উপস্থাপনাকে প্রভাবিত করে তা জানুন।',
-      pt: 'Explore como a luz, a escala, a posição e as legendas influenciam a apresentação de uma obra.',
+      pt: 'Explore como a iluminação, a escala, a posição e as legendas influenciam a experiência do público diante de uma obra.',
       ur: 'جانیں کہ روشنی، پیمانہ، جگہ اور لیبل فن پارے کی پیشکش پر کیسے اثر انداز ہوتے ہیں۔',
       id: 'Jelajahi bagaimana cahaya, skala, posisi, dan label memengaruhi penyajian karya seni.',
       de: 'Entdecke, wie Licht, Maßstab, Position und Beschriftungen die Präsentation eines Kunstwerks beeinflussen.',

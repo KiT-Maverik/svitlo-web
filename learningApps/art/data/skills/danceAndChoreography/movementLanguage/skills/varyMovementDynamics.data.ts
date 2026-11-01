@@ -11,7 +11,7 @@ export const varyMovementDynamics_Skill_Data = buildSkillConfig({
     ar: 'نوّع ديناميكيات الحركة',
     fr: 'Variez la dynamique du mouvement',
     bn: 'চলনের গতিশীলতা পরিবর্তন করুন',
-    pt: 'Varie a dinâmica do movimento',
+    pt: 'Variar a dinâmica do movimento',
     ur: 'حرکت کی حرکیات میں تنوع پیدا کریں',
     id: 'Variasikan dinamika gerakan',
     de: 'Bewegungsdynamik variieren',

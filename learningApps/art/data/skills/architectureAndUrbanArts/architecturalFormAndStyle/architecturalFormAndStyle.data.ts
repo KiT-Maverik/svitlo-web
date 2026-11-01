@@ -58,7 +58,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       ar: 'استكشف ما تنقله الزخارف المعمارية في سياقها التاريخي.',
       fr: 'Découvrez ce que la décoration architecturale communique dans son contexte historique.',
       bn: 'ঐতিহাসিক প্রেক্ষাপটে স্থাপত্যের অলংকরণ কী বার্তা দেয় তা জানুন।',
-      pt: 'Explore o que a decoração arquitetônica comunica em seu contexto histórico.',
+      pt: 'Explore como os volumes dos edifícios, o ritmo das fachadas e os ornamentos expressam ideias arquitetônicas.',
       ur: 'جانیں کہ تاریخی پس منظر میں تعمیراتی آرائش کیا پیغام دیتی ہے۔',
       id: 'Jelajahi makna yang disampaikan ornamen arsitektur dalam konteks sejarahnya.',
       de: 'Entdecke, was architektonischer Schmuck in seinem historischen Kontext vermittelt.',

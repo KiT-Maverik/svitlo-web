@@ -44,7 +44,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       ar: 'اجمع بين كتل المبنى والفراغات المفتوحة في تكوين بصري متوازن.',
       fr: 'Associez volumes bâtis et espaces ouverts pour créer une forme visuelle équilibrée.',
       bn: 'ভবনের আয়তন ও খোলা জায়গা মিলিয়ে ভারসাম্যপূর্ণ দৃশ্যরূপ তৈরি করুন।',
-      pt: 'Combine volumes construídos e espaços abertos em uma forma visual equilibrada.',
+      pt: 'Explore o que os ornamentos arquitetônicos comunicam em seus contextos históricos e culturais.',
       ur: 'عمارت کے حجم اور کھلی جگہوں کو ملا کر متوازن بصری شکل بنائیں۔',
       id: 'Padukan massa bangunan dan ruang terbuka menjadi bentuk visual yang seimbang.',
       de: 'Verbinde Baukörper und Freiräume zu einer ausgewogenen visuellen Form.',

@@ -11,7 +11,7 @@ export const classifyArtisticGenres_Skill_Data = buildSkillConfig({
     ar: 'تصنيف الأنواع الفنية',
     fr: 'Classer les genres artistiques',
     bn: 'শিল্পের ধরন শ্রেণিবদ্ধ করুন',
-    pt: 'Classificar géneros artísticos',
+    pt: 'Classificar gêneros artísticos',
     ur: 'فنی اصناف کی درجہ بندی کریں',
     id: 'Mengelompokkan genre seni',
     de: 'Kunstgattungen einordnen',

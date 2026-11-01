@@ -12,7 +12,7 @@ export const designPackagingGraphics_Skill_Data = buildSkillConfig({
     ar: 'تصميم رسومات التغليف',
     fr: 'Concevoir les graphismes d’un emballage',
     bn: 'প্যাকেজিং গ্রাফিক্স নকশা করুন',
-    pt: 'Conceber grafismos para embalagens',
+    pt: 'Projetar elementos gráficos para embalagens',
     ur: 'پیکیجنگ گرافکس ڈیزائن کریں',
     id: 'Merancang grafis kemasan',
     de: 'Verpackungsgrafiken gestalten',
