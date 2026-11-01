@@ -56,11 +56,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-          cache: npm
 
-      # The original taxonomy parser needs the TypeScript npm package, not a Next.js build.
-      - name: Install parser dependency
-        run: npm ci --ignore-scripts --no-audit --no-fund
+      # Install only the TypeScript parser used by the existing generator.
+      # Do not install the monorepo or build any textbook application.
+      - name: Install lightweight parser dependency
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --prefix "$RUNNER_TEMP/review-tools" --no-save --ignore-scripts --no-audit --no-fund 'typescript@5'
+          mkdir -p node_modules
+          ln -s "$RUNNER_TEMP/review-tools/node_modules/typescript" node_modules/typescript
 
       - name: Validate artifact generator syntax
         run: |
@@ -120,4 +125,6 @@ jobs:
       - name: Remove temporary runner files
         if: always()
         shell: bash
-        run: rm -rf -- "$RUNNER_TEMP/translation-review"
+        run: |
+          rm -rf -- "$RUNNER_TEMP/translation-review" "$RUNNER_TEMP/review-tools"
+          rm -f -- node_modules/typescript
