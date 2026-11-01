@@ -10,9 +10,8 @@ export type SceneLocales_Strings<TLocales> = TLocales extends string
     ? { [Key in keyof TLocales]: SceneLocales_Strings<TLocales[Key]> }
     : never;
 
-export type SceneContentBlock_Definition<TLocales extends object> = ContentBlock_Definition_Meta<'scene'> & {
+export type SceneContentBlock_Definition = ContentBlock_Definition_Meta<'scene'> & {
   component: ReactNode;
-  locales: TLocales & SceneLocales_Strings<TLocales>;
 };
 
 export type SceneLocales_Data<TLocales> = TLocales extends string
@@ -27,14 +26,14 @@ export type SceneContentBlock_Data<TLocales extends object> = ContentBlock_Respo
 
 export type SceneContentBlock_Response<TLocales extends object> = ContentBlock_Response_Meta<'scene'> &
   Locale_ResponseParams & {
-    locales: TLocales & SceneLocales_Strings<TLocales>;
+    locale: TLocales & SceneLocales_Strings<TLocales>;
   };
 
 export type SceneContentBlock<
   ConfigType extends ContentEntity_ConfigType,
   TLocales extends object = Record<string, string>,
 > = {
-  definition: SceneContentBlock_Definition<TLocales>;
+  definition: SceneContentBlock_Definition;
   data: SceneContentBlock_Data<TLocales>;
   response: SceneContentBlock_Response<TLocales>;
 }[ConfigType];
