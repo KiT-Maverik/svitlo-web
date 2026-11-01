@@ -5,7 +5,7 @@ export const terrestrialPlanets_Skill_Data = buildSkillConfig({
   id: '2cc91d1f-1ef5-424d-ac21-a73315aeef8e',
   name: {
     en: 'Terrestrial Planets',
-      zh: '类地行星',
+    zh: '类地行星',
     hi: 'स्थलीय ग्रह',
     es: 'Planetas terrestres',
     ar: 'الكواكب الصخرية',
@@ -39,7 +39,7 @@ export const terrestrialPlanets_Skill_Data = buildSkillConfig({
       'Compare the characteristic rocky interiors, surfaces and atmospheres of Mercury, Venus, Earth and Mars.',
     frontend: {
       en: 'Explore what makes Mercury, Venus, Earth and Mars rocky planets with different conditions.',
-          zh: '探索水星、金星、地球和火星为何都是岩石行星，却有不同的环境。',
+      zh: '探索水星、金星、地球和火星为何都是岩石行星，却有不同的环境。',
       hi: 'जानें कि बुध, शुक्र, पृथ्वी और मंगल चट्टानी ग्रह होकर भी अलग-अलग परिस्थितियों वाले क्यों हैं।',
       es: 'Explora por qué Mercurio, Venus, la Tierra y Marte son planetas rocosos con condiciones distintas.',
       ar: 'استكشف ما يجعل عطارد والزهرة والأرض والمريخ كواكب صخرية ذات ظروف مختلفة.',
