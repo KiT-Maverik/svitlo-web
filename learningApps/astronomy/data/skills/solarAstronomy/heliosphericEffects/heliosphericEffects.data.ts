@@ -36,7 +36,7 @@ export const heliosphericEffects_SkillGroup_Data = buildSkillGroupConfig({
     ja: '太陽圏の影響',
     ko: '태양권의 영향',
     ar: 'تأثيرات الغلاف الشمسي',
-    hi: 'सौरमंडलीय प्रभाव',
+    hi: 'हेलियोस्फीयर के प्रभाव',
     he: 'השפעות ההליוספירה',
     vi: 'Ảnh hưởng của nhật quyển',
   },
