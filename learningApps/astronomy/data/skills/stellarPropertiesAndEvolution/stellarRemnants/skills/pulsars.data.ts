@@ -66,7 +66,7 @@ export const pulsars_Skill_Data = buildSkillConfig({
       be: 'Растлумачце, чаму нэўтронныя зоркі, што круцяцца, могуць выпраменьваць рэгулярныя імпульсы.',
       ka: 'ახსენით, რატომ შეიძლება მბრუნავმა ნეიტრონულმა ვარსკვლავებმა გამოსცენ გამოსხივების რეგულარული იმპულსები.',
       kk: 'Айналатын нейтрондық жұлдыздар неге тұрақты сәуле импульстерін шығара алатынын түсіндіріңіз.',
-      qm: 'Aylanğan neytron yulduzları ne içün muntazam nurlanuv impulsları çıqara bilgenini añlatıñız.',
+      qm: 'Aylanğan neytron yıldızları ne içün muntazam nurlanuv impulsları çıqara bilgenini añlatıñız.',
     },
   },
 });

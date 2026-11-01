@@ -32,7 +32,7 @@ export const neutronStars_Skill_Data = buildSkillConfig({
     be: 'Нэўтронныя зоркі',
     ka: 'ნეიტრონული ვარსკვლავები',
     kk: 'Нейтрондық жұлдыздар',
-    qm: 'Neytron yulduzları',
+    qm: 'Neytron yıldızları',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const neutronStars_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як каляпс ядра зоркі можа ўтварыць нэўтронную зорку.',
       ka: 'გაიგეთ, როგორ შეიძლება ვარსკვლავის ბირთვის კოლაფსმა წარმოქმნას ნეიტრონული ვარსკვლავი.',
       kk: 'Жұлдыз өзегінің сығылуы нейтрондық жұлдызды қалай түзетінін біліңіз.',
-      qm: 'Yulduznıñ merkeziniñ çöküvi neytron yulduzını nasıl peyda ete bilgenini ögreniñiz.',
+      qm: 'Yıldıznıñ merkeziniñ çöküvi neytron yıldızını nasıl peyda ete bilgenini ögreniñiz.',
     },
   },
 });

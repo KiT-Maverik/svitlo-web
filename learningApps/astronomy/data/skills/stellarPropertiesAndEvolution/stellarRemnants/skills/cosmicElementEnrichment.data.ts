@@ -66,7 +66,7 @@ export const cosmicElementEnrichment_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як зоркі і іхныя выбухі пашыраюць хімічныя элемэнты ў навакольнай прасторы.',
       ka: 'გაიგეთ, როგორ ავრცელებენ ვარსკვლავები და მათი აფეთქებები ქიმიურ ელემენტებს გარემომცველ სივრცეში.',
       kk: 'Жұлдыздар мен олардың жарылыстары химиялық элементтерді айналадағы кеңістікке қалай тарататынын біліңіз.',
-      qm: 'Yulduzlar ve olarnıñ patlavları kimyeviy elementlerni etraftaki kosmosqa nasıl tarqatqanını ögreniñiz.',
+      qm: 'Yıldızlar ve olarnıñ patlavları kimyeviy elementlerni etraftaki kosmosqa nasıl tarqatqanını ögreniñiz.',
     },
   },
 });

@@ -38,7 +38,7 @@ export const stellarPropertiesAndEvolution_SkillDomain_Data = buildSkillDomainCo
     be: 'Уласьцівасьці і эвалюцыя зорак',
     ka: 'ვარსკვლავების თვისებები და ევოლუცია',
     kk: 'Жұлдыздардың қасиеттері мен эволюциясы',
-    qm: 'Yulduzlarnıñ hususiyetleri ve evolyutsiyası',
+    qm: 'Yıldızlarnıñ hususiyetleri ve evolyutsiyası',
   },
   groups: {
     starFormation: starFormation_SkillGroup_Data,
@@ -79,7 +79,7 @@ export const stellarPropertiesAndEvolution_SkillDomain_Data = buildSkillDomainCo
       be: 'Дасьледуйце, якія бываюць зоркі, як яны ўтвараюцца і зьмяняюцца цягам свайго існаваньня.',
       ka: 'შეისწავლეთ, როგორია ვარსკვლავები, როგორ წარმოიქმნებიან და როგორ იცვლებიან სიცოცხლის განმავლობაში.',
       kk: 'Жұлдыздардың қасиеттерін, қалай пайда болатынын және өмір бойы қалай өзгеретінін зерттеңіз.',
-      qm: 'Yulduzlar nasıl olğanını, nasıl peyda olğanını ve ömürleri devamında nasıl deñişkenini ögreniñiz.',
+      qm: 'Yıldızlar nasıl olğanını, nasıl peyda olğanını ve ömürleri devamında nasıl deñişkenini ögreniñiz.',
     },
   },
 });

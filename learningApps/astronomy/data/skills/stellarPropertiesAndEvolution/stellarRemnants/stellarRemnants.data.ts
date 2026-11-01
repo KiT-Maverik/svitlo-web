@@ -41,7 +41,7 @@ export const stellarRemnants_SkillGroup_Data = buildSkillGroupConfig({
     be: 'Зорныя рэшткі',
     ka: 'ვარსკვლავური ნაშთები',
     kk: 'Жұлдыз қалдықтары',
-    qm: 'Yulduz qaldıqları',
+    qm: 'Yıldız qaldıqları',
   },
   skills: {
     cosmicElementEnrichment: cosmicElementEnrichment_Skill_Data,
@@ -83,7 +83,7 @@ export const stellarRemnants_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Дасьледуйце кампактныя рэшткі й выбуховыя завяршэньні жыцьця розных тыпаў зорак.',
       ka: 'შეისწავლეთ სხვადასხვა ტიპის ვარსკვლავების მკვრივი ნაშთები და მათი აფეთქებითი დასასრული.',
       kk: 'Әртүрлі жұлдыздардың тығыз қалдықтарын және жарылыспен аяқталуын зерттеңіз.',
-      qm: 'Türlü yulduzlarnıñ sıqı qaldıqlarını ve patlavnen tamamlanğan ömürlerini ögreniñiz.',
+      qm: 'Türlü yıldızlarnıñ sıqı qaldıqlarını ve patlavnen tamamlanğan ömürlerini ögreniñiz.',
     },
   },
 });

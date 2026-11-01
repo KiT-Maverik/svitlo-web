@@ -32,7 +32,7 @@ export const whiteDwarfs_Skill_Data = buildSkillConfig({
     be: 'Белыя карлікі',
     ka: 'თეთრი ჯუჯები',
     kk: 'Ақ ергежейлілер',
-    qm: 'Beyaz cüce yulduzlar',
+    qm: 'Beyaz cüce yıldızlar',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const whiteDwarfs_Skill_Data = buildSkillConfig({
       be: 'Зразумейце, чаму некаторыя зоркі напрыканцы жыцьця пакідаюць шчыльныя белыя карлікі.',
       ka: 'გაიგეთ, რატომ ტოვებენ ზოგიერთი ვარსკვლავი სიცოცხლის ბოლოს მკვრივ თეთრ ჯუჯებს.',
       kk: 'Кейбір жұлдыздар өмірінің соңында неліктен тығыз ақ ергежейлілер қалдыратынын түсініңіз.',
-      qm: 'Bazı yulduzlar ömürleriniñ soñunda ne içün sıqı beyaz cüce yulduzlar qaldırğanını añlañız.',
+      qm: 'Bazı yıldızlar ömürleriniñ soñunda ne içün sıqı beyaz cüce yıldızlar qaldırğanını añlañız.',
     },
   },
 });

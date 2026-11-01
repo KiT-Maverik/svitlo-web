@@ -40,7 +40,7 @@ export const stellarProperties_SkillGroup_Data = buildSkillGroupConfig({
     be: 'Фізычныя ўласьцівасьці зорак',
     ka: 'ვარსკვლავების ფიზიკური თვისებები',
     kk: 'Жұлдыздардың физикалық қасиеттері',
-    qm: 'Yulduzlarnıñ fiziki hususiyetleri',
+    qm: 'Yıldızlarnıñ fiziki hususiyetleri',
   },
   skills: {
     stellarHydrostaticEquilibrium: stellarHydrostaticEquilibrium_Skill_Data,
@@ -81,7 +81,7 @@ export const stellarProperties_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Даведайцеся, як астраномы вымяраюць і вызначаюць фізычныя ўласьцівасьці зорак.',
       ka: 'გაიგეთ, როგორ ზომავენ და ადგენენ ასტრონომები ვარსკვლავების ფიზიკურ თვისებებს.',
       kk: 'Астрономдардың жұлдыздардың физикалық қасиеттерін қалай өлшеп, анықтайтынын біліңіз.',
-      qm: 'Astronomlar yulduzlarnıñ fiziki hususiyetlerini nasıl ölçkenini ve netice çıqarğanını ögreniñiz.',
+      qm: 'Astronomlar yıldızlarnıñ fiziki hususiyetlerini nasıl ölçkenini ve netice çıqarğanını ögreniñiz.',
     },
   },
 });

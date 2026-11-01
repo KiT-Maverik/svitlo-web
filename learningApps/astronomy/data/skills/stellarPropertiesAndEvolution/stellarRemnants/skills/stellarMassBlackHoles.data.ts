@@ -32,7 +32,7 @@ export const stellarMassBlackHoles_Skill_Data = buildSkillConfig({
     be: 'Чорныя дзіркі зорнай масы',
     ka: 'ვარსკვლავური მასის შავი ხვრელები',
     kk: 'Жұлдыздық массалы қара құрдымдар',
-    qm: 'Yulduz kütlesindeki qara çuqurlar',
+    qm: 'Yıldız kütlesindeki qara çuqurlar',
   },
   description: {
     methodological: 'Explain the formation and observational inference of compact remnants with event horizons.',
@@ -65,7 +65,7 @@ export const stellarMassBlackHoles_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як утвараюцца чорныя дзіркі зорнай масы і як астраномы выяўляюць іхны ўплыў.',
       ka: 'შეისწავლეთ, როგორ წარმოიქმნება ვარსკვლავური მასის შავი ხვრელები და როგორ აფიქსირებენ ასტრონომები მათ გავლენას.',
       kk: 'Жұлдыздық массалы қара құрдымдардың қалай пайда болатынын және астрономдардың олардың әсерін қалай анықтайтынын зерттеңіз.',
-      qm: 'Yulduz kütlesindeki qara çuqurlar nasıl peyda olğanını ve astronomlar olarnıñ tesirini nasıl belgilegenini ögreniñiz.',
+      qm: 'Yıldız kütlesindeki qara çuqurlar nasıl peyda olğanını ve astronomlar olarnıñ tesirini nasıl belgilegenini ögreniñiz.',
     },
   },
 });
