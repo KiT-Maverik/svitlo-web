@@ -66,7 +66,7 @@ export const planetaryWeather_Skill_Data = buildSkillConfig({
       be: 'Распазнавайце буры, вятры і аблокі на нябесных целах з умовамі, адрознымі ад зямных.',
       ka: 'ამოიცანით ქარიშხლები, ქარები და ღრუბლები ციურ სხეულებზე, სადაც პირობები დედამიწისგან განსხვავდება.',
       kk: 'Жерден өзгеше жағдайлары бар әлемдердегі дауылдарды, желдер мен бұлттарды таныңыз.',
-      qm: 'Yer yüzündekinden farqlı şartları olğan kök cisimlerinde fırtınalarnı, yeller­ni ve bulutlarnı tanıñız.',
+      qm: 'Yer yüzündekinden farqlı şartları olğan kök cisimlerinde fırtınalarnı, yellerni ve bulutlarnı tanıñız.',
     },
   },
 });
