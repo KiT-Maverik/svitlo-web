@@ -5,11 +5,11 @@ import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 export type MarkdownContentBlock_Definition = ContentBlock_Definition_Meta<'markdown'>;
 
 export type MarkdownContentBlock_Data = ContentBlock_Response_Meta<'markdown'> & {
-  fileLocation: Locale_Config;
+  files: Locale_Config;
 };
 
 export type MarkdownContentBlock_Response = ContentBlock_Response_Meta<'markdown'> & Locale_ResponseParams & {
-  fileLocation: string;
+  text: string;
 };
 
 export type MarkdownContentBlock<ConfigType extends ContentEntity_ConfigType> = {
