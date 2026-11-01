@@ -60,7 +60,7 @@ export const analyzeLineAndShape_Skill_Data = buildSkillConfig({
       pl: 'Zwróć uwagę, jak linie i kształty prowadzą wzrok i porządkują obraz.',
       uk: 'Зверніть увагу, як лінії та форми спрямовують погляд і впорядковують зображення.',
       lt: 'Atkreipk dėmesį, kaip linijos ir formos veda žvilgsnį ir struktūruoja vaizdą.',
-      lv: 'Pievērs uzmanību tam, kā līnijas un formas vada skatienu un organizē attēlu.',
+      lv: 'Pievērsiet uzmanību tam, kā līnijas un formas vada skatienu un organizē attēlu.',
       et: 'Pane tähele, kuidas jooned ja kujundid su pilku suunavad ning pilti struktureerivad.',
       be: 'Зьвярні ўвагу, як лініі й формы вядуць позірк і ўпарадкоўваюць выяву.',
       ka: 'დააკვირდით, როგორ წარმართავს ხაზები და ფორმები მზერას და აწყობს გამოსახულებას.',

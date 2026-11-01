@@ -60,7 +60,7 @@ export const analyzeComposition_Skill_Data = buildSkillConfig({
       pl: 'Zobacz, jak artyści wykorzystują rozmieszczenie, skalę i równowagę, by kierować Twoją uwagą.',
       uk: 'Подивіться, як митці за допомогою розташування, масштабу й рівноваги спрямовують вашу увагу.',
       lt: 'Pažvelk, kaip menininkai išdėstymu, masteliu ir pusiausvyra nukreipia tavo dėmesį.',
-      lv: 'Ievēro, kā mākslinieki ar izvietojumu, mērogu un līdzsvaru virza tavu uzmanību.',
+      lv: 'Ievērojiet, kā mākslinieki ar izvietojumu, mērogu un līdzsvaru virza jūsu uzmanību.',
       et: 'Vaata, kuidas kunstnikud suunavad sinu tähelepanu paigutuse, mõõtkava ja tasakaalu abil.',
       be: 'Паглядзі, як мастакі скіроўваюць тваю ўвагу з дапамогай разьмяшчэньня, маштабу й раўнавагі.',
       ka: 'ნახეთ, როგორ მიმართავენ ხელოვანები თქვენს ყურადღებას განლაგების, მასშტაბისა და წონასწორობის გამოყენებით.',
