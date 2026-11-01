@@ -28,7 +28,7 @@ export const equalities_SkillGroup_Data = buildSkillGroupConfig({
     ko: '등식',
     tr: 'Eşitlikler',
     vi: 'Đẳng thức',
-    ta: 'சமன்பாடுகள்',
+    ta: 'சமத்துவங்கள்',
     te: 'సమానతలు',
     mr: 'समानता',
     ms: 'Kesamaan',
