@@ -59,7 +59,7 @@ export const readArchitecturalPlans_Skill_Data = buildSkillConfig({
       he: 'היעזרו בסמלי תוכנית כדי להבין חדרים, קשרים ונתיבי תנועה במבנה.',
       pl: 'Korzystaj z symboli na rzutach, aby rozumieć pomieszczenia, połączenia i drogi w budynku.',
       uk: 'Використовуйте умовні позначення плану, щоб розуміти кімнати, зв’язки й маршрути в будівлі.',
-      lt: 'Naudok plano simbolius, kad suprastum pastato patalpas, jungtis ir judėjimo maršrutus.',
+      lt: 'Naudokite plano simbolius, kad suprastumėte pastato patalpas, jungtis ir judėjimo maršrutus.',
       lv: 'Izmanto plāna apzīmējumus, lai izprastu ēkas telpas, savienojumus un pārvietošanās ceļus.',
       et: 'Kasuta plaanisümboleid, et mõista hoone ruume, ühendusi ja liikumisteid.',
       be: 'Выкарыстоўвай абазначэнні на плане, каб разумець пакоі, сувязі й маршруты ў будынку.',
