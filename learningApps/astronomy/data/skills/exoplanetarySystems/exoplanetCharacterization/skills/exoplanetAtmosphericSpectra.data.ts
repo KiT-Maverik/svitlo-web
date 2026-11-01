@@ -65,7 +65,7 @@ export const exoplanetAtmosphericSpectra_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як спэктар плянэты дае падказкі пра яе атмасфэру.',
       ka: 'გაიგეთ, როგორ გვაწვდის პლანეტის სპექტრი მინიშნებებს მისი ატმოსფეროს შესახებ.',
       kk: 'Ғаламшар спектрі оның атмосферасы туралы қандай дерек беретінін біліңіз.',
-      qm: 'Seyyareniñ spektri onıñ atmosferası aqqında nasıl ipuclar bergenini ögreniñiz.',
+      qm: 'Seyyareniñ spektri onıñ atmosferası aqqında nasıl işaretler bergenini ögreniñiz.',
     },
   },
 });
