@@ -6,10 +6,10 @@ import { interstellarMatter_SkillGroup_Data } from './interstellarMatter/interst
 import { theMilkyWay_SkillGroup_Data } from './theMilkyWay/theMilkyWay.data';
 
 export const interstellarAndGalacticAstronomy_SkillDomain_Data = buildSkillDomainConfig({
-  slug: "interstellarAndGalacticAstronomy",
-  id: "5d195196-4e99-4b09-85e4-b6119f97ec99",
+  slug: 'interstellarAndGalacticAstronomy',
+  id: '5d195196-4e99-4b09-85e4-b6119f97ec99',
   name: {
-    en: "Interstellar and Galactic Astronomy",
+    en: 'Interstellar and Galactic Astronomy',
   },
   groups: {
     activeGalacticNuclei: activeGalacticNuclei_SkillGroup_Data,
@@ -18,9 +18,10 @@ export const interstellarAndGalacticAstronomy_SkillDomain_Data = buildSkillDomai
     theMilkyWay: theMilkyWay_SkillGroup_Data,
   },
   description: {
-    methodological: "This domain investigates matter between stars and the structure, dynamics and transformations of galaxies. The Milky Way is one case, while distant galaxies reveal different environments and stages of evolution.",
+    methodological:
+      'This domain investigates matter between stars and the structure, dynamics and transformations of galaxies. The Milky Way is one case, while distant galaxies reveal different environments and stages of evolution.',
     frontend: {
-      en: "Explore the matter between stars and how galaxies form, behave and evolve.",
+      en: 'Explore the matter between stars and how galaxies form, behave and evolve.',
     },
   },
 });

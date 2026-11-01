@@ -7,10 +7,10 @@ import { stellarProperties_SkillGroup_Data } from './stellarProperties/stellarPr
 import { stellarRemnants_SkillGroup_Data } from './stellarRemnants/stellarRemnants.data';
 
 export const stellarPropertiesAndEvolution_SkillDomain_Data = buildSkillDomainConfig({
-  slug: "stellarPropertiesAndEvolution",
-  id: "b5b29d0f-019c-4a66-a881-86c988eac956",
+  slug: 'stellarPropertiesAndEvolution',
+  id: 'b5b29d0f-019c-4a66-a881-86c988eac956',
   name: {
-    en: "Stellar Properties and Evolution",
+    en: 'Stellar Properties and Evolution',
   },
   groups: {
     starFormation: starFormation_SkillGroup_Data,
@@ -20,9 +20,10 @@ export const stellarPropertiesAndEvolution_SkillDomain_Data = buildSkillDomainCo
     stellarRemnants: stellarRemnants_SkillGroup_Data,
   },
   description: {
-    methodological: "Stars are understood through measurements of their physical properties and models of formation, fusion, change and eventual remnants. The same competencies apply to the Sun where its properties form a useful comparison.",
+    methodological:
+      'Stars are understood through measurements of their physical properties and models of formation, fusion, change and eventual remnants. The same competencies apply to the Sun where its properties form a useful comparison.',
     frontend: {
-      en: "Explore what stars are like, how they form and how their lives eventually change.",
+      en: 'Explore what stars are like, how they form and how their lives eventually change.',
     },
   },
 });
