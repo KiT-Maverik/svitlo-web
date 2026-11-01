@@ -62,7 +62,7 @@ export const crossTenAddition_Skill_Data = buildSkillConfig({
       pl: 'Gdy suma jedności wynosi dziesięć lub więcej, możesz zamienić dziesięć jedności na jedną dziesiątkę bez zmiany wyniku.',
       uk: 'Коли сума одиниць дорівнює десяти або більше, ти можеш обміняти десять одиниць на один десяток, не змінюючи загальної суми.',
       lt: 'Kai vienetų suma siekia dešimt ar daugiau, gali dešimt vienetų pakeisti viena dešimtimi, o suma nepasikeis.',
-      lv: 'Kad vienu summa sasniedz desmit vai vairāk, vari desmit vienus aizstāt ar vienu desmitu, nemainot summu.',
+      lv: 'Kad vienu šķiras summa sasniedz desmit vai vairāk, vari desmit vienus aizstāt ar vienu desmitu, nemainot summu.',
       et: 'Kui üheliste summa on kümme või rohkem, saad kümme ühelist asendada ühe kümnelisega, ilma et summa muutuks.',
       be: 'Калі сума адзінак роўная дзесяці або большая, можаш замяніць дзесяць адзінак адным дзясяткам, не зьмяняючы сумы.',
       ka: 'როცა ერთეულების ჯამი ათს ან მეტს აღწევს, შეგიძლია ათი ერთეული ერთ ათეულად გადააჯგუფო ისე, რომ ჯამი არ შეიცვალოს.',
