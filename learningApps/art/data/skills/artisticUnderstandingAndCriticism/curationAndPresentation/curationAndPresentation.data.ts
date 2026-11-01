@@ -61,7 +61,7 @@ export const curationAndPresentation_SkillGroup_Data = buildSkillGroupConfig({
       pt: 'Explore como a seleção e a exposição de obras de arte transformam a experiência do público.',
       ur: 'جانیں کہ فن پاروں کا انتخاب اور نمائش ناظرین کے تجربے کو کیسے بدلتی ہے۔',
       id: 'Jelajahi bagaimana pemilihan dan penataan karya seni mengubah pengalaman pengunjung.',
-      de: 'Entdecken Sie, wie die Auswahl und Präsentation von Kunstwerken das Publikumserlebnis verändert.',
+      de: 'Entdecke, wie die Auswahl und Präsentation von Kunstwerken das Publikumserlebnis verändert.',
       ja: '作品の選択と展示が鑑賞者の体験をどのように変えるかを探りましょう。',
       ko: '작품의 선정과 전시가 관람객의 경험을 어떻게 바꾸는지 살펴보세요.',
       tr: 'Sanat eserlerini seçmenin ve sergilemenin izleyicilerin deneyimini nasıl değiştirdiğini keşfedin.',

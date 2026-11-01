@@ -63,7 +63,7 @@ export const lateModernAndContemporaryPractices_SkillGroup_Data = buildSkillGrou
       pt: 'Explore obras que dão destaque especial às ideias, ao espaço, à participação ou às imagens do cotidiano.',
       ur: 'ایسے فن پاروں کا مطالعہ کریں جن میں خیالات، جگہ، شرکت یا روزمرہ کی تصاویر کو خاص اہمیت دی جاتی ہے۔',
       id: 'Jelajahi karya yang mengutamakan gagasan, ruang, partisipasi, atau citra kehidupan sehari-hari.',
-      de: 'Entdecken Sie Werke, die Ideen, Raum, Beteiligung oder Alltagsbilder besonders hervorheben.',
+      de: 'Entdecke Werke, die Ideen, Raum, Beteiligung oder Alltagsbilder besonders hervorheben.',
       ja: '思想、空間、参加、日常のイメージを重視する作品を探究します。',
       ko: '아이디어, 공간, 참여 또는 일상적 이미지에 특별히 주목하는 작품을 살펴봅니다.',
       tr: 'Fikirleri, mekânı, katılımı veya gündelik imgeleri öne çıkaran eserleri keşfedin.',

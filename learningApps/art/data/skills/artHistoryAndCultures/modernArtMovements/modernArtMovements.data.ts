@@ -69,7 +69,7 @@ export const modernArtMovements_SkillGroup_Data = buildSkillGroupConfig({
       pt: 'Descubra como diferentes movimentos modernos desafiaram convenções artísticas estabelecidas.',
       ur: 'جانیں کہ جدید فن کی مختلف تحریکوں نے مانوس فنّی اصولوں کو کیسے چیلنج کیا۔',
       id: 'Pelajari bagaimana gerakan seni modern menantang konvensi artistik yang sudah dikenal.',
-      de: 'Entdecken Sie, wie moderne Kunstbewegungen vertraute künstlerische Konventionen infrage stellten.',
+      de: 'Entdecke, wie moderne Kunstbewegungen vertraute künstlerische Konventionen infrage stellten.',
       ja: '近代美術の諸運動が既存の芸術慣習にどう挑んだかを探ります。',
       ko: '여러 현대 미술 운동이 익숙한 예술 관습에 어떻게 도전했는지 살펴봅니다.',
       tr: 'Modern sanat akımlarının yerleşik sanatsal geleneklere nasıl meydan okuduğunu keşfedin.',

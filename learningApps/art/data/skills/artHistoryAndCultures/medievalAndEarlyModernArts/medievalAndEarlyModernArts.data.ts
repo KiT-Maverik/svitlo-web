@@ -63,7 +63,7 @@ export const medievalAndEarlyModernArts_SkillGroup_Data = buildSkillGroupConfig(
       pt: 'Compare obras sacras e cívicas de distintas tradições medievais e do início da era moderna.',
       ur: 'قرونِ وسطیٰ اور ابتدائی جدید روایات کے مذہبی اور شہری فن پاروں کا تقابل کریں۔',
       id: 'Bandingkan karya sakral dan sipil dalam tradisi abad pertengahan dan awal modern yang berbeda.',
-      de: 'Vergleichen Sie sakrale und öffentliche Werke verschiedener mittelalterlicher und frühneuzeitlicher Traditionen.',
+      de: 'Vergleiche sakrale und öffentliche Werke verschiedener mittelalterlicher und frühneuzeitlicher Traditionen.',
       ja: '異なる中世・近世初期の伝統における宗教美術と公共美術を比較します。',
       ko: '서로 다른 중세 및 근세 초기 전통의 종교·시민 미술 작품을 비교합니다.',
       tr: 'Farklı Orta Çağ ve erken modern geleneklerdeki kutsal ve kamusal eserleri karşılaştırın.',

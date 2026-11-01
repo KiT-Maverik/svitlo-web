@@ -59,7 +59,7 @@ export const latinAmericanArtMovements_SkillGroup_Data = buildSkillGroupConfig({
       pt: 'Explore diferentes movimentos artísticos latino-americanos por seus contextos e objetivos específicos.',
       ur: 'لاطینی امریکی فن کی مختلف تحریکوں کو ان کے مخصوص پس منظر اور مقاصد کے ذریعے جانیں۔',
       id: 'Jelajahi gerakan seni Amerika Latin melalui konteks dan tujuan khususnya.',
-      de: 'Erkunden Sie unterschiedliche lateinamerikanische Kunstbewegungen anhand ihrer Kontexte und Ziele.',
+      de: 'Erkunde unterschiedliche lateinamerikanische Kunstbewegungen anhand ihrer Kontexte und Ziele.',
       ja: 'それぞれの背景と目的に注目し、ラテンアメリカの多様な芸術運動を探究します。',
       ko: '구체적인 배경과 목표를 통해 다양한 라틴 아메리카 미술 운동을 탐구합니다.',
       tr: 'Farklı Latin Amerika sanat akımlarını kendi bağlamları ve amaçları üzerinden inceleyin.',
