@@ -5,6 +5,7 @@ export const primordialNucleosynthesis_Skill_Data = buildSkillConfig({
   id: '55cc73e8-b19d-4a87-9bd1-7ae46d03b6f4',
   name: {
     en: 'Primordial Nucleosynthesis',
+    qm: 'Başlangıçtaki yadroviy sintez',
     zh: '原初核合成',
     hi: 'आदिम नाभिकीय संश्लेषण',
     es: 'Nucleosíntesis primordial',
@@ -38,6 +39,7 @@ export const primordialNucleosynthesis_Skill_Data = buildSkillConfig({
       'Explain the predicted formation of light nuclei and why their observed abundances test early-Universe models.',
     frontend: {
       en: 'See how early-universe models predict the amounts of light elements.',
+      qm: 'Erte Kâinat modelleriniñ yeñil elementlerniñ miqdarını nasıl qabaqtan aytqanını ögreniñiz.',
       zh: '了解早期宇宙模型如何预测轻元素的丰度。',
       hi: 'जानें कि आरंभिक ब्रह्मांड के मॉडल हल्के तत्वों की मात्रा का अनुमान कैसे लगाते हैं।',
       es: 'Descubre cómo los modelos del Universo temprano predicen las cantidades de elementos ligeros.',

@@ -5,6 +5,7 @@ export const hotBigBangModel_Skill_Data = buildSkillConfig({
   id: '7c7c9caf-ee8f-4064-b704-1f890b97a7b1',
   name: {
     en: 'Hot Big Bang Model',
+    qm: 'Sıcaq Büyük Patlav modeli',
     zh: '热大爆炸模型',
     hi: 'गर्म बिग बैंग मॉडल',
     es: 'Modelo del Big Bang caliente',
@@ -38,6 +39,7 @@ export const hotBigBangModel_Skill_Data = buildSkillConfig({
       'Explain the evidence-supported early evolution of the observable Universe without claiming that the model fully explains its ultimate origin.',
     frontend: {
       en: 'Discover what the hot Big Bang model explains—and what it does not establish.',
+      qm: 'Sıcaq Büyük Patlav modeliniñ neni añlatqanını ve neni isbatlamağanını ögreniñiz.',
       zh: '了解热大爆炸模型能够解释什么，以及它尚未证明什么。',
       hi: 'जानें कि गर्म बिग बैंग मॉडल क्या समझाता है और क्या स्थापित नहीं करता।',
       es: 'Descubre qué explica el modelo del Big Bang caliente y qué no demuestra.',

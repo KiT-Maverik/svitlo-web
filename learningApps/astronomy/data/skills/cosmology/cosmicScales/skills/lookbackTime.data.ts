@@ -5,6 +5,7 @@ export const lookbackTime_Skill_Data = buildSkillConfig({
   id: '3431da8f-dea0-4ac7-a362-aad77da8afc0',
   name: {
     en: 'Lookback Time',
+    qm: 'Keçmişke baquv vaqtı',
     zh: '回望时间',
     hi: 'अतीत में झाँकने का समय',
     es: 'Tiempo de retrospección',
@@ -37,6 +38,7 @@ export const lookbackTime_Skill_Data = buildSkillConfig({
     methodological: 'Explain why distant observations show objects at earlier cosmic epochs.',
     frontend: {
       en: 'Discover why looking farther into space also means looking into the past.',
+      qm: 'Ne qadar uzaqqa baqsaq, o qadar keçmişteki Kâinatnı körgenimizni añlañız.',
       zh: '了解为什么观测越遥远的宇宙，也就越是在回望过去。',
       hi: 'जानें कि अंतरिक्ष में अधिक दूर देखना अतीत में देखना भी क्यों है।',
       es: 'Descubre por qué mirar más lejos en el espacio significa también mirar hacia el pasado.',

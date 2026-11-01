@@ -12,6 +12,7 @@ export const activeGalacticNuclei_SkillGroup_Data = buildSkillGroupConfig({
   id: '227a1e3c-3dd2-43ec-b4eb-70d4a9cd14db',
   name: {
     en: 'Active Galactic Nuclei',
+    qm: 'Faol galaktik çekirdekleri',
     zh: '活动星系核',
     hi: 'सक्रिय आकाशगंगीय नाभिक',
     es: 'Núcleos galácticos activos',
@@ -51,6 +52,7 @@ export const activeGalacticNuclei_SkillGroup_Data = buildSkillGroupConfig({
       'In some galaxies, accretion onto a central supermassive black hole generates radiation and outflows that differ from normal starlight.',
     frontend: {
       en: 'Investigate galaxy centres where material falling toward black holes generates immense energy.',
+      qm: 'Qara deşiklerge tüşken madde pek büyük energiya yarattığı galaktika merkezlerini araştırıñız.',
       zh: '探索星系中心落向黑洞的物质如何释放巨大能量。',
       hi: 'उन आकाशगंगाओं के केंद्रों को जानें जहाँ ब्लैक होल की ओर गिरता पदार्थ अपार ऊर्जा उत्पन्न करता है।',
       es: 'Investiga centros galácticos donde la materia que cae hacia agujeros negros libera una energía enorme.',
