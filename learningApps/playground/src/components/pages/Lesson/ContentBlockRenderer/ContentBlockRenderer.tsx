@@ -32,7 +32,7 @@ export type ContentBlockReference = {
   [Type in ContentBlockType]: { type: Type; key: string };
 }[ContentBlockType];
 
-type NestedResponse = ContentBlockResponse<'checkpoint'>['items'][number]['answer'][number];
+type NestedResponse = { [Type in ContentBlockType]: ContentBlockResponse<Type> }[ContentBlockType];
 type TaggedResponse = {
   [Type in ContentBlockType]: ContentBlockResponse<Type> & { type: Type };
 }[ContentBlockType];
@@ -140,6 +140,10 @@ function CodeBlock({ response }: { response: ContentBlockResponse<'code'> }) {
 
   useEffect(() => {
     if (response.codeParams.length !== 0) return;
+    if (!response.fileLocation.startsWith('/') || response.fileLocation.startsWith('//')) {
+      setError('Code fileLocation must reference a same-origin published resource');
+      return;
+    }
     const controller = new AbortController();
     setCode(null);
     setError(null);
