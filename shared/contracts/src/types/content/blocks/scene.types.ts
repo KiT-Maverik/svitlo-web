@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
+import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 
@@ -20,11 +20,11 @@ type ContentBlock_Scene_Locales_Data<TLocales> = TLocales extends string
     ? { [Key in keyof TLocales]: ContentBlock_Scene_Locales_Data<TLocales[Key]> }
     : never;
 
-type ContentBlock_Scene_Data<TLocales extends object> = ContentBlock_Response_Meta<'scene'> & {
+type ContentBlock_Scene_Data<TLocales extends object> = ContentBlock_Data_Meta & {
   locales: ContentBlock_Scene_Locales_Data<ContentBlock_Scene_Locales_Strings<TLocales>>;
 };
 
-type ContentBlock_Scene_Response<TLocales extends object> = ContentBlock_Response_Meta<'scene'> &
+type ContentBlock_Scene_Response<TLocales extends object> = ContentBlock_Response_Meta &
   Locale_ResponseParams & {
     locale: TLocales & ContentBlock_Scene_Locales_Strings<TLocales>;
   };

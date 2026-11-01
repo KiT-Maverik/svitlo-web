@@ -1,15 +1,15 @@
-import type { ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
+import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 
 type ContentBlock_Image_Definition = ContentBlock_Definition_Meta<'image'>;
 
-type ContentBlock_Image_Data = ContentBlock_Response_Meta<'image'> & {
+type ContentBlock_Image_Data = ContentBlock_Data_Meta & {
   locales: Locale_Config;
   alt: Locale_Config;
 };
 
-type ContentBlock_Image_Response = ContentBlock_Response_Meta<'image'> & Locale_ResponseParams & {
+type ContentBlock_Image_Response = ContentBlock_Response_Meta & Locale_ResponseParams & {
   src: string;
   alt: string;
 };

@@ -3,7 +3,7 @@ import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 import type { ContentBlock_Audio } from './audio.types';
 import type { ContentBlock_Code } from './code.types';
-import type { ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
+import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
 import type { ContentBlock_Image } from './image.types';
 import type { ContentBlock_Markdown } from './markdown.types';
 import type { ContentBlock_Scene } from './scene.types';
@@ -37,7 +37,7 @@ type ContentBlock_Checkpoint_Settings = {
 
 type ContentBlock_Checkpoint_Definition = ContentBlock_Definition_Meta<'checkpoint'>;
 
-type ContentBlock_Checkpoint_Data = ContentBlock_Response_Meta<'checkpoint'> & ContentBlock_Checkpoint_Settings & {
+type ContentBlock_Checkpoint_Data = ContentBlock_Data_Meta & ContentBlock_Checkpoint_Settings & {
   title: Locale_Config;
   items: {
     question: Locale_Config;
@@ -46,7 +46,7 @@ type ContentBlock_Checkpoint_Data = ContentBlock_Response_Meta<'checkpoint'> & C
   }[];
 };
 
-type ContentBlock_Checkpoint_Response = ContentBlock_Response_Meta<'checkpoint'> &
+type ContentBlock_Checkpoint_Response = ContentBlock_Response_Meta &
   Locale_ResponseParams &
   ContentBlock_Checkpoint_Settings & {
     title: string;
