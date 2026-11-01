@@ -66,7 +66,7 @@ export const keplersSecondLaw_Skill_Data = buildSkillConfig({
       be: 'Растлумачце, чаму цела на арбіце рухаецца хутчэй, калі набліжаецца да цэнтральнага цела.',
       ka: 'ახსენით, რატომ მოძრაობს ორბიტაზე მყოფი სხეული უფრო სწრაფად, როცა ცენტრალურ სხეულს უახლოვდება.',
       kk: 'Орбитадағы дененің орталық денеге жақындағанда неге жылдамырақ қозғалатынын түсіндіріңіз.',
-      qm: 'Orbitadaki cisım merkezdeki cisimge yaqın olğanda ne içün daa tez areket etkenini añlatıñız.',
+      qm: 'Orbitadaki cisim merkezdeki cisimge yaqın olğanda ne içün daa tez areket etkenini añlatıñız.',
     },
   },
 });
