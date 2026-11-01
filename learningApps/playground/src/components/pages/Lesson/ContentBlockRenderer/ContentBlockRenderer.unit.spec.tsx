@@ -3,12 +3,19 @@ import { describe, expect, it, vi } from 'vitest';
 import type { ContentBlock_Catalog } from '@svitlo/engine/content';
 import {
   ContentBlockCatalogRenderer, ContentBlockRenderer,
-  type ContentBlockResponse, type SceneRegistry,
+  type ContentBlockResponse, type ContentBlockType, type SceneRegistry,
 } from './ContentBlockRenderer';
 
+function typed<Type extends ContentBlockType>(
+  type: Type,
+  payload: Omit<ContentBlockResponse<Type>, 'type'>,
+): ContentBlockResponse<Type> & { type: Type } {
+  return { ...payload, type } as ContentBlockResponse<Type> & { type: Type };
+}
+
 const locale = { code: 'en' as const };
-const text = { id: 'text-1', locale, value: 'Localized response' } satisfies ContentBlockResponse<'text'>;
-const nestedText = { ...text, type: 'text' as const };
+const text = typed('text', { id: 'text-1', locale, value: 'Localized response' });
+const nestedText = text;
 
 describe('ContentBlockRenderer: response dispatch', () => {
   it('renders localized text without authored data', () => {
@@ -17,21 +24,21 @@ describe('ContentBlockRenderer: response dispatch', () => {
   });
 
   it('renders sanitized markdown with language direction', () => {
-    render(<ContentBlockRenderer type="markdown" response={{
+    render(<ContentBlockRenderer type="markdown" response={typed('markdown', {
       id: 'md', locale: { code: 'ar' }, text: '**مرحبا**',
-    }} />);
+    })} />);
     expect(screen.getByText('مرحبا').closest('article')).toHaveAttribute('dir', 'rtl');
   });
 
   it('forwards media response properties to native accessible elements', () => {
     const { container } = render(<>
-      <ContentBlockRenderer type="image" response={{ id: 'i', locale, src: '/x.png', alt: 'Diagram' }} />
-      <ContentBlockRenderer type="audio" response={{
+      <ContentBlockRenderer type="image" response={typed('image', { id: 'i', locale, src: '/x.png', alt: 'Diagram' })} />
+      <ContentBlockRenderer type="audio" response={typed('audio', {
         id: 'a', locale, fileLocation: '/x.mp3', title: 'Explanation', description: 'Audio guide',
-      }} />
-      <ContentBlockRenderer type="video" response={{
+      })} />
+      <ContentBlockRenderer type="video" response={typed('video', {
         id: 'v', locale, fileLocation: '/x.mp4', poster: '/poster.png',
-      }} />
+      })} />
     </>);
     expect(screen.getByAltText('Diagram')).toHaveAttribute('src', '/x.png');
     expect(screen.getByLabelText('Explanation')).toHaveAttribute('src', '/x.mp3');
@@ -40,38 +47,38 @@ describe('ContentBlockRenderer: response dispatch', () => {
   });
 
   it('renders YouTube links and secure embeds without unsafe URLs', () => {
-    const link = { id: 'yt', locale, href: 'https://youtu.be/abcdefghijk', title: 'Watch lesson',
-      mode: 'link' as const };
+    const link = typed('youtube', { id: 'yt', locale, href: 'https://youtu.be/abcdefghijk', title: 'Watch lesson',
+      mode: 'link' });
     const { rerender } = render(<ContentBlockRenderer type="youtube" response={link} />);
     expect(screen.getByRole('link', { name: 'Watch lesson' })).toHaveAttribute('rel', 'noopener noreferrer');
-    rerender(<ContentBlockRenderer type="youtube" response={{ ...link, mode: 'embed', hint: 'Demonstration' }} />);
+    rerender(<ContentBlockRenderer type="youtube" response={typed('youtube', { ...link, mode: 'embed', hint: 'Demonstration' })} />);
     expect(screen.getByTitle('Watch lesson')).toHaveAttribute('src', 'https://www.youtube-nocookie.com/embed/abcdefghijk');
-    expect(() => render(<ContentBlockRenderer type="youtube" response={{
+    expect(() => render(<ContentBlockRenderer type="youtube" response={typed('youtube', {
       ...link, href: 'javascript:alert(1)',
-    }} />)).toThrow('HTTPS');
+    })} />)).toThrow('HTTPS');
   });
 
   it('fetches public code using its response fileLocation', async () => {
     const fetcher = vi.fn().mockResolvedValue({ ok: true, text: async () => 'const n = 42;' });
     vi.stubGlobal('fetch', fetcher);
-    render(<ContentBlockRenderer type="code" response={{
+    render(<ContentBlockRenderer type="code" response={typed('code', {
       id: 'code', locale, fileLocation: '/public/example.ts', codeParams: [],
-    }} />);
+    })} />);
     await waitFor(() => expect(screen.getByText('const n = 42;')).toBeInTheDocument());
     expect(fetcher).toHaveBeenCalledWith('/public/example.ts', expect.objectContaining({ signal: expect.any(AbortSignal) }));
     vi.unstubAllGlobals();
   });
 
   it('refuses code selectors until their transformation semantics are specified', () => {
-    expect(() => render(<ContentBlockRenderer type="code" response={{
+    expect(() => render(<ContentBlockRenderer type="code" response={typed('code', {
       id: 'code', locale, fileLocation: '/example.ts', codeParams: [{ selector: '.foo', value: 'x' }],
-    }} />)).toThrow('selector/parameter');
+    })} />)).toThrow('selector/parameter');
   });
 
   it('resolves scenes solely through the provided typed registry', () => {
-    const response: ContentBlockResponse<'scene'> = {
+    const response = typed('scene', {
       id: 'registered-scene', locale: { code: 'en', title: 'Beam' },
-    };
+    });
     const sceneRegistry: SceneRegistry = {
       'registered-scene': ({ locale: localized }) => <div role="img" aria-label={String(localized.title)} />,
     };
@@ -81,10 +88,10 @@ describe('ContentBlockRenderer: response dispatch', () => {
   });
 
   it('recursively renders checkpoint answer blocks and checkboxes', () => {
-    render(<ContentBlockRenderer type="checkpoint" response={{
+    render(<ContentBlockRenderer type="checkpoint" response={typed('checkpoint', {
       id: 'cp', locale, title: 'Knowledge check', headingLevel: 3, enableChecks: true,
       items: [{ question: 'What is light?', answer: [nestedText] }],
-    }} />);
+    })} />);
     expect(screen.getByRole('heading', { name: 'Knowledge check', level: 3 })).toBeInTheDocument();
     fireEvent.click(screen.getByText('What is light?'));
     expect(screen.getByText('Localized response')).toBeVisible();
@@ -94,15 +101,16 @@ describe('ContentBlockRenderer: response dispatch', () => {
   });
 
   it('rejects untagged checkpoint answers rather than guessing by shape', () => {
-    expect(() => render(<ContentBlockRenderer type="checkpoint" response={{
+    expect(() => render(<ContentBlockRenderer type="checkpoint" response={typed('checkpoint', {
       id: 'cp', locale, title: 'Checkpoint', items: [{
-        question: 'Question', answer: [text],
+        question: 'Question',
+        answer: [{ id: 'untagged', locale, value: 'No discriminator' } as ContentBlockResponse<'text'>],
       }],
-    }} />)).toThrow('requires a supported response.type');
+    })} />)).toThrow('requires a supported response.type');
   });
 
   it('renders rich nested quiz content and tracks selected answers, score and retries', () => {
-    const quiz: ContentBlockResponse<'quiz'> = {
+    const quiz = typed('quiz', {
       id: 'quiz-1', locale, welcome: 'Choose one answer',
       feedbackMode: 'after-completion',
       interaction: {
@@ -122,7 +130,7 @@ describe('ContentBlockRenderer: response dispatch', () => {
           },
         },
       },
-    };
+    });
     const { container } = render(<ContentBlockRenderer type="quiz" response={quiz} />);
     expect(screen.getByText('The question')).toBeVisible();
     fireEvent.click(screen.getByRole('radio', { name: 'Correct' }));
@@ -143,7 +151,7 @@ describe('ContentBlockRenderer: response dispatch', () => {
       },
       results: { visibility: 'immediate', showScore: true },
       screen: {},
-    };
+    });
     render(<ContentBlockRenderer type="quiz" response={quiz} />);
     expect(screen.getByText('Your quiz')).toBeInTheDocument();
   });
@@ -152,7 +160,7 @@ describe('ContentBlockRenderer: response dispatch', () => {
 describe('ContentBlockCatalogRenderer: ordered dispatch', () => {
   const catalog: ContentBlock_Catalog<'response'> = {
     text: { first: { ...text, value: 'First' }, last: { ...text, id: 'last', value: 'Last' } },
-    image: { middle: { id: 'middle', locale, src: '/middle.svg', alt: 'Middle' } },
+    image: { middle: typed('image', { id: 'middle', locale, src: '/middle.svg', alt: 'Middle' }) },
   };
 
   it('preserves explicit mixed-type ordering', () => {
