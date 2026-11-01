@@ -42,7 +42,7 @@ export const evaluateMuseumRepresentation_Skill_Data = buildSkillConfig({
       hi: 'विचार करें कि संग्रहालयों में किनके इतिहास और दृष्टिकोण मौजूद हैं और किनके अनुपस्थित।',
       es: 'Considera qué historias y perspectivas están presentes o ausentes en los museos.',
       ar: 'تأمل تواريخ ووجهات نظر من تظهر في المتاحف ومن تُغفل.',
-      fr: 'Examine quelles histoires et perspectives sont présentes ou absentes dans les musées.',
+      fr: 'Examinez quelles histoires et quelles perspectives sont présentées ou omises dans les musées.',
       bn: 'জাদুঘরে কার ইতিহাস ও দৃষ্টিভঙ্গি আছে, আর কারগুলো অনুপস্থিত, তা বিবেচনা করুন।',
       pt: 'Considere quais histórias e perspectivas estão presentes ou ausentes nos museus.',
       ur: 'غور کریں کہ عجائب گھروں میں کن کی تاریخیں اور نقطۂ نظر موجود ہیں اور کن کے غائب ہیں۔',

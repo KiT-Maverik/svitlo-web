@@ -42,7 +42,7 @@ export const investigateArtworkProvenance_Skill_Data = buildSkillConfig({
       hi: 'कलाकृति के दर्ज स्वामित्व इतिहास का पता लगाएँ और अनुपस्थित जानकारी पर ध्यान दें।',
       es: 'Sigue la historia documentada de propiedad de una obra y detecta la información que falta.',
       ar: 'تتبّع تاريخ ملكية العمل الفني الموثق ولاحظ المعلومات الناقصة.',
-      fr: "Retracer l'historique documenté de propriété d'une œuvre et repérer les lacunes.",
+      fr: 'Retracez l’historique documenté de la propriété d’une œuvre et repérez les lacunes.',
       bn: 'শিল্পকর্মের নথিভুক্ত মালিকানার ইতিহাস অনুসরণ করুন এবং অনুপস্থিত তথ্য খেয়াল করুন।',
       pt: 'Acompanhe o histórico documentado de propriedade de uma obra e observe o que está faltando.',
       ur: 'فن پارے کی دستاویزی ملکیت کی تاریخ کا سراغ لگائیں اور معلومات کی کمی پر توجہ دیں۔',

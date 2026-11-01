@@ -43,7 +43,7 @@ export const distinguishConservationAndRestoration_Skill_Data = buildSkillConfig
       hi: 'समझें कि मूल सामग्री को सुरक्षित रखना खोई हुई विशेषताओं को फिर से बनाने से कैसे अलग है।',
       es: 'Comprende en qué se diferencia conservar el material original de recrear elementos perdidos.',
       ar: 'افهم الفرق بين الحفاظ على المادة الأصلية وإعادة إنشاء السمات المفقودة.',
-      fr: "Comprendre en quoi la préservation des matériaux d'origine diffère de la reconstitution d'éléments disparus.",
+      fr: 'Comprenez en quoi la préservation des matériaux d’origine diffère de la reconstitution d’éléments disparus.',
       bn: 'মূল উপাদান সংরক্ষণ করা এবং হারানো বৈশিষ্ট্য পুনর্নির্মাণের পার্থক্য বুঝুন।',
       pt: 'Entenda como preservar o material original difere de recriar elementos perdidos.',
       ur: 'سمجھیں کہ اصل مواد کو محفوظ رکھنا کھوئی ہوئی خصوصیات کو دوبارہ بنانے سے کیسے مختلف ہے۔',

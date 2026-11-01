@@ -43,7 +43,7 @@ export const assessCulturalRepatriation_Skill_Data = buildSkillConfig({
       hi: 'किसी वस्तु की वापसी पर चर्चा करते समय समुदायों के दावों और अधिग्रहण के इतिहास को समझें।',
       es: 'Explora las reclamaciones de las comunidades y la historia de adquisición al debatir la devolución de un objeto.',
       ar: 'استكشف مطالب المجتمعات وتاريخ اقتناء القطعة عند مناقشة إعادتها.',
-      fr: "Explorer les revendications des communautés et l'historique d'acquisition lors d'une discussion sur la restitution d'un objet.",
+      fr: 'Explorez les revendications des communautés et l’historique des acquisitions lorsque vous examinez la restitution d’un objet culturel.',
       bn: 'কোনো বস্তু ফেরত দেওয়ার আলোচনা করতে গিয়ে সম্প্রদায়ের দাবি ও অধিগ্রহণের ইতিহাস জানুন।',
       pt: 'Explore as reivindicações das comunidades e o histórico de aquisição ao discutir a devolução de um objeto.',
       ur: 'کسی شے کی واپسی پر گفتگو کرتے ہوئے برادریوں کے مطالبات اور حصول کی تاریخ کا جائزہ لیں۔',
