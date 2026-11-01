@@ -143,7 +143,7 @@ describe('ContentBlockRenderer: response dispatch', () => {
   });
 
   it('renders quiz welcome; supports the empty catalog without legacy block shapes', () => {
-    const quiz: ContentBlockResponse<'quiz'> = {
+    const quiz = typed('quiz', {
       id: 'q', locale, welcome: 'Your quiz',
       questions: {}, feedbackMode: 'after-completion', interaction: {
         retries: 1, showErrors: true, showCorrectAnswers: true, allowExplanations: true,
