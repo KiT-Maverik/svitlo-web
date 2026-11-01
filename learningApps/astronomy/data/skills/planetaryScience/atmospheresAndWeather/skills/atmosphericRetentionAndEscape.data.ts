@@ -5,7 +5,7 @@ export const atmosphericRetentionAndEscape_Skill_Data = buildSkillConfig({
   id: '996cc8b5-8061-403b-98c1-31a5bd2bec6d',
   name: {
     en: 'Atmospheric Retention and Escape',
-      zh: '大气的保留与逃逸',
+    zh: '大气的保留与逃逸',
     hi: 'वायुमंडल का बने रहना और पलायन',
     es: 'Retención y escape de la atmósfera',
     ar: 'احتفاظ الكواكب بالغلاف الجوي وفقدانه',
@@ -39,7 +39,7 @@ export const atmosphericRetentionAndEscape_Skill_Data = buildSkillConfig({
       'Explain how gravity, temperature and escape processes influence the presence or loss of planetary atmospheres.',
     frontend: {
       en: 'Explain why some worlds keep thick atmospheres while others lose gas to space.',
-          zh: '解释为什么有些天体能保留浓厚的大气层，而另一些天体的气体会逸散到太空中。',
+      zh: '解释为什么有些天体能保留浓厚的大气层，而另一些天体的气体会逸散到太空中。',
       hi: 'समझाएँ कि कुछ खगोलीय पिंड घने वायुमंडल कैसे बनाए रखते हैं, जबकि अन्य की गैस अंतरिक्ष में निकल जाती है।',
       es: 'Explica por qué algunos mundos conservan atmósferas densas mientras otros pierden gases hacia el espacio.',
       ar: 'اشرح لماذا تحتفظ بعض العوالم بأغلفة جوية كثيفة بينما تفقد عوالم أخرى غازاتها إلى الفضاء.',
