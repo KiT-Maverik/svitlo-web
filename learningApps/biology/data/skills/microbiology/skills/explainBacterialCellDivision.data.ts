@@ -45,7 +45,7 @@ export const explainBacterialCellDivision_Skill_Data = buildSkillConfig({
       fr: 'Expliquez comment les bactéries se reproduisent en divisant leurs cellules en deux.',
       bn: 'ব্যাকটেরিয়ার কোষ দুই ভাগে বিভক্ত হয়ে কীভাবে বংশবৃদ্ধি করে, তা ব্যাখ্যা করো।',
       pt: 'Explique como as células bacterianas se reproduzem ao se dividir em duas.',
-      ur: 'وضاحت کریں کہ بیکٹیریا کے خلیے دو حصوں میں تقسیم ہو کر کیسے بڑھتے ہیں۔',
+      ur: 'وضاحت کریں کہ بیکٹیریائی خلیے دو حصوں میں تقسیم ہو کر کیسے اپنی تعداد بڑھاتے ہیں۔',
       id: 'Jelaskan bagaimana sel bakteri berkembang biak dengan membelah menjadi dua.',
       de: 'Erkläre, wie sich Bakterienzellen durch Teilung in zwei Zellen vermehren.',
       ja: '細菌の細胞が二つに分かれて増える仕組みを説明しましょう。',

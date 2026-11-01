@@ -21,7 +21,7 @@ export const distinguishAnOrganismPopulationAndCommunity_Skill_Data = buildSkill
     vi: 'Phân biệt cá thể, quần thể và quần xã',
     ta: 'உயிரி, உயிரினக் கூட்டம், உயிர்ச் சமூகத்தை வேறுபடுத்துதல்',
     te: 'జీవి, జనాభా, జీవ సముదాయాన్ని వేరు చేయడం',
-    mr: 'सजीव, लोकसंख्या आणि समुदाय यांत फरक ओळखणे',
+    mr: 'सजीव, जीवसमूह आणि समुदाय यांत फरक ओळखणे',
     ms: 'Membezakan organisma, populasi dan komuniti',
     he: 'הבחנה בין אורגניזם, אוכלוסייה וקהילה',
     pl: 'Odróżnianie organizmu, populacji i zespołu organizmów',

@@ -53,7 +53,7 @@ export const distinguishTreesShrubsAndHerbaceousPlants_Skill_Data = buildSkillCo
       vi: 'Phân biệt cây gỗ, cây bụi và cây thân thảo theo cách thân phát triển.',
       ta: 'தண்டுகள் வளரும் முறையைக் கொண்டு மரங்கள், புதர்கள், மென்மையான தண்டுள்ள தாவரங்களை வேறுபடுத்து.',
       te: 'కాండాలు పెరిగే విధానాన్ని బట్టి చెట్లు, పొదలు, మృదుకాండ మొక్కలను వేరుచేయండి.',
-      mr: 'खोडांच्या वाढीच्या पद्धतीवरून वृक्ष, झुडपे व तृणमय वनस्पती वेगळ्या ओळखा.',
+      mr: 'खोडांच्या वाढीच्या पद्धतीवरून वृक्ष, झुडपे व शाकीय वनस्पती वेगळ्या ओळखा.',
       ms: 'Bezakan pokok, renek dan tumbuhan herba berdasarkan cara batangnya tumbuh.',
       he: 'הבחינו בין עצים, שיחים וצמחים עשבוניים לפי אופן צמיחת הגבעולים.',
       pl: 'Odróżniaj drzewa, krzewy i rośliny zielne według sposobu wzrostu łodyg.',
