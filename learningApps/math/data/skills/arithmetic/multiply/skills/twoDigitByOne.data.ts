@@ -15,7 +15,7 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
     zh: '乘法 — 2-位数×1-位数',
     hi: 'गुणा — 2-अंकीय×1-अंकीय',
     es: 'Multiplicación — 2-cifras×1-cifras',
-    ar: 'الضرب — 2-أرقام×1-أرقام',
+    ar: 'الضرب — عدد من خانتين في عدد من خانة واحدة',
     fr: 'Multiplication — 2-chiffres×1-chiffres',
     bn: 'গুণ — 2-অঙ্কের×1-অঙ্কের',
     pt: 'Multiplicação — 2-algarismos×1-algarismos',
