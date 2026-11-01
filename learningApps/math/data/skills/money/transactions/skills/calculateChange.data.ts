@@ -63,7 +63,7 @@ export const calculateChange_Skill_Data = buildSkillConfig({
       uk: 'Ти можеш обчислити решту, яку маєш отримати після достатньої оплати покупки, і перевірити її за вартістю товарів.',
       lt: 'Gali apskaičiuoti grąžą, kurią turi gauti pakankamai sumokėjęs už pirkinį, ir patikrinti ją pagal kainą.',
       lv: 'Vari aprēķināt atlikumu, kas jāsaņem pēc pietiekamas samaksas par pirkumu, un pārbaudīt to pēc pirkuma cenas.',
-      et: 'Saad arvutada, kui palju vahetusraha peab pärast piisava summa maksmist tagasi saama, ja kontrollida seda ostuhinna põhjal.',
+      et: 'Saad arvutada, kui palju tagasiraha peab pärast piisava summa maksmist saama, ja kontrollida seda ostuhinna põhjal.',
       be: 'Ты можаш вылічыць рэшту, якую мусіш атрымаць пасьля дастатковай аплаты пакупкі, і праверыць яе паводле кошту тавараў.',
       ka: 'შეგიძლია გამოთვალო, რამდენი ხურდა უნდა დაგიბრუნონ საკმარისი თანხით გადახდისას, და შეამოწმო შენაძენის ფასით.',
       kk: 'Сатып алуға жеткілікті ақша берген соң қайтарылатын ақшаны есептеп, оны тауар құнымен тексере аласың.',
