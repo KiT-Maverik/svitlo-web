@@ -47,7 +47,7 @@ export const recordAMusicalSample_Skill_Data = buildSkillConfig({
       bn: 'এমন একটি শব্দ রেকর্ড করুন, যা আপনার সংগীতে সৃজনশীলভাবে ব্যবহার করতে পারবেন।',
       pt: 'Grave um som que possa usar de forma criativa em sua música.',
       ur: 'ایسی آواز ریکارڈ کریں جسے آپ اپنی موسیقی میں تخلیقی طور پر استعمال کر سکیں۔',
-      id: 'Rekam suara yang dapat kamu gunakan secara kreatif dalam musikmu.',
+      id: 'Rekam suara yang dapat Anda gunakan secara kreatif dalam musik Anda.',
       de: 'Nimm einen Klang auf, den du kreativ in deiner Musik verwenden kannst.',
       ja: '音楽制作に創造的に活用できる音を録音しましょう。',
       ko: '음악에서 창의적으로 활용할 수 있는 소리를 녹음하세요.',

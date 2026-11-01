@@ -20,7 +20,7 @@ export const musicalSoundAndTexture_SkillGroup_Data = buildSkillGroupConfig({
     fr: 'Son et texture musicale',
     bn: 'সঙ্গীতের ধ্বনি ও বুনন',
     pt: 'Som e textura musical',
-    ur: 'موسیقی کی آواز اور ساخت',
+    ur: 'موسیقی کی آواز اور صوتی بُنت',
     id: 'Bunyi dan tekstur musik',
     de: 'Musikalischer Klang und Textur',
     ja: '音楽の響きとテクスチャー',

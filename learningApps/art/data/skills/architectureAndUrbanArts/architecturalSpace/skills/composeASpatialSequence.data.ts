@@ -60,7 +60,7 @@ export const composeASpatialSequence_Skill_Data = buildSkillConfig({
       pl: 'Rozmieść połączone przestrzenie tak, aby celowo zmieniać wrażenie otwartości i skupienia.',
       uk: 'Розташовуйте поєднані простори так, щоб цілеспрямовано змінювати відчуття відкритості та фокус уваги.',
       lt: 'Išdėstyk sujungtas erdves taip, kad sąmoningai keistųsi atvirumo ir dėmesio pojūtis.',
-      lv: 'Sakārto savienotas telpas, lai apzināti mainītu atvērtības un uzmanības fokusu.',
+      lv: 'Sakārtojiet savienotas telpas, lai apzināti mainītu atvērtības un uzmanības fokusu.',
       et: 'Paiguta ühendatud ruumid nii, et avatus ja tähelepanu fookus muutuksid sihipäraselt.',
       be: 'Размяшчай злучаныя прасторы так, каб мэтанакіравана змяняць адчуванне адкрытасці й фокус увагі.',
       ka: 'დაალაგეთ დაკავშირებული სივრცეები ისე, რომ მიზანმიმართულად შეიცვალოს გახსნილობისა და ყურადღების ფოკუსი.',

@@ -72,7 +72,7 @@ export const artisticUnderstandingAndCriticism_SkillDomain_Data = buildSkillDoma
       pl: 'Odkrywaj, jak wybory artystyczne i kontekst kulturowy pomagają nam rozumieć dzieła i o nich rozmawiać.',
       uk: 'Досліджуйте, як мистецькі рішення та культурний контекст допомагають розуміти й обговорювати твори.',
       lt: 'Sužinok, kaip meniniai sprendimai ir kultūrinis kontekstas padeda suprasti meno kūrinius ir juos aptarti.',
-      lv: 'Atklāj, kā mākslinieciskās izvēles un kultūras konteksts palīdz izprast mākslas darbus un tos apspriest.',
+      lv: 'Atklājiet, kā mākslinieciskās izvēles un kultūras konteksts palīdz izprast mākslas darbus un tos apspriest.',
       et: 'Avasta, kuidas kunstilised valikud ja kultuurikontekst aitavad meil kunstiteoseid mõista ja nende üle arutleda.',
       be: 'Даследуй, як мастацкія рашэнні й культурны кантэкст дапамагаюць разумець і абмяркоўваць творы.',
       ka: 'შეისწავლეთ, როგორ გვეხმარება მხატვრული არჩევანი და კულტურული კონტექსტი ნამუშევრების გაგებასა და განხილვაში.',

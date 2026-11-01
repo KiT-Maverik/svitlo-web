@@ -74,7 +74,7 @@ export const formsAndPurposes_SkillGroup_Data = buildSkillGroupConfig({
       pl: 'Odkryj wiele sposobów, na jakie sztuka może przekazywać myśli, uczucia i doświadczenia.',
       uk: 'Досліджуйте, як мистецтво може передавати думки, почуття та досвід у різні способи.',
       lt: 'Atrask, kaip įvairiais būdais menas gali perteikti mintis, jausmus ir patirtis.',
-      lv: 'Atklāj daudzos veidus, kā māksla var paust idejas, izjūtas un pieredzi.',
+      lv: 'Atklājiet daudzos veidus, kā māksla var paust idejas, izjūtas un pieredzi.',
       et: 'Avasta, kuidas kunst saab mitmel moel edasi anda mõtteid, tundeid ja kogemusi.',
       be: 'Дасьледуй шматлікія спосабы, якімі мастацтва перадае думкі, пачуцьці й досьвед.',
       ka: 'შეისწავლეთ მრავალი გზა, რომლითაც ხელოვნებას შეუძლია იდეების, გრძნობებისა და გამოცდილების გადმოცემა.',

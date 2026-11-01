@@ -60,7 +60,7 @@ export const composeArchitecturalMassing_Skill_Data = buildSkillConfig({
       pl: 'Połącz bryły budynków i otwarte przestrzenie w zrównoważoną formę wizualną.',
       uk: 'Поєднуйте об’єми будівель і відкриті простори в урівноважену візуальну форму.',
       lt: 'Sujunk pastatų tūrius ir atviras erdves į subalansuotą vizualinę formą.',
-      lv: 'Apvieno ēku apjomus un atklātās telpas līdzsvarotā vizuālā formā.',
+      lv: 'Apvienojiet ēku apjomus un atklātās telpas līdzsvarotā vizuālā formā.',
       et: 'Ühenda hoonemahud ja avatud ruumid tasakaalustatud visuaalseks tervikuks.',
       be: 'Аб’ядноўвай аб’ёмы будынкаў і адкрытыя прасторы ў збалансаваную візуальную форму.',
       ka: 'შეაერთეთ შენობების მოცულობები და ღია სივრცეები დაბალანსებულ ვიზუალურ ფორმად.',

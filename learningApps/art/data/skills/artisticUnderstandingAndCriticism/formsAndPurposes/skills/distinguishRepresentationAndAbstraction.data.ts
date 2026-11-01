@@ -61,7 +61,7 @@ export const distinguishRepresentationAndAbstraction_Skill_Data = buildSkillConf
       pl: 'Poznaj różnicę między przedstawianiem rozpoznawalnych tematów a używaniem form abstrakcyjnych.',
       uk: 'Дослідіть різницю між зображенням упізнаваних предметів і використанням абстрактних форм.',
       lt: 'Atrask skirtumą tarp atpažįstamų objektų vaizdavimo ir abstrakčių formų naudojimo.',
-      lv: 'Izpēti atšķirību starp atpazīstamu objektu attēlošanu un abstraktu formu izmantošanu.',
+      lv: 'Izpētiet atšķirību starp atpazīstamu objektu attēlošanu un abstraktu formu izmantošanu.',
       et: 'Uuri erinevust äratuntavate objektide kujutamise ja abstraktsete vormide kasutamise vahel.',
       be: 'Дасьледуй розьніцу паміж выявай пазнавальных прадметаў і выкарыстаньнем абстрактных формаў.',
       ka: 'შეისწავლეთ განსხვავება ცნობადი საგნების გამოსახვასა და აბსტრაქტული ფორმების გამოყენებას შორის.',

@@ -60,7 +60,7 @@ export const analyzeArtisticRhythm_Skill_Data = buildSkillConfig({
       pl: 'Znajdź wzory i zmiany rytmu w obrazach, dźwiękach lub ruchu.',
       uk: 'Знаходьте закономірності та зміни ритму в зображеннях, звуках або рухах.',
       lt: 'Atpažink vaizdų, garsų ar judesių ritmo dėsningumus ir pokyčius.',
-      lv: 'Atrodi likumsakarības un pārmaiņas attēlu, skaņu vai kustību ritmā.',
+      lv: 'Atrodiet likumsakarības un pārmaiņas attēlu, skaņu vai kustību ritmā.',
       et: 'Leia mustreid ja muutusi piltide, helide või liikumise rütmis.',
       be: 'Знаходзь заканамернасьці й зьмены рытму ў выявах, гуках або рухах.',
       ka: 'იპოვეთ კანონზომიერებები და ცვლილებები გამოსახულებების, ხმებისა თუ მოძრაობის რიტმში.',

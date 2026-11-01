@@ -61,7 +61,7 @@ export const analyzeColorRelationships_Skill_Data = buildSkillConfig({
       pl: 'Sprawdź, jak zestawienia kolorów wpływają na nastrój, kontrast i uwagę.',
       uk: 'Досліджуйте, як поєднання кольорів впливає на настрій, контраст і увагу.',
       lt: 'Sužinok, kaip spalvų deriniai veikia nuotaiką, kontrastą ir dėmesį.',
-      lv: 'Izpēti, kā krāsu salikumi ietekmē noskaņu, kontrastu un uzmanību.',
+      lv: 'Izpētiet, kā krāsu salikumi ietekmē noskaņu, kontrastu un uzmanību.',
       et: 'Uuri, kuidas värvikombinatsioonid mõjutavad meeleolu, kontrasti ja tähelepanu.',
       be: 'Дасьледуй, як спалучэньні колераў уплываюць на настрой, кантраст і ўвагу.',
       ka: 'შეისწავლეთ, როგორ მოქმედებს ფერების შეხამება განწყობაზე, კონტრასტსა და ყურადღებაზე.',

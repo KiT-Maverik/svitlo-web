@@ -27,7 +27,7 @@ export const createAMovementMotif_Skill_Data = buildSkillConfig({
     pl: 'Stwórz motyw ruchowy',
     uk: 'Створюйте руховий мотив',
     lt: 'Sukurkite judesio motyvą',
-    lv: 'Izveidojiet kustību motīvu',
+    lv: 'Izveidot kustību motīvu',
     et: 'Loo liikumismotiiv',
     be: 'Стварыце рухавы матыў',
     ka: 'შექმენით მოძრაობის მოტივი',

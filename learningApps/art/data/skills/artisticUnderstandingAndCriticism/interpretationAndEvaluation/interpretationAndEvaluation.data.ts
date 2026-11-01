@@ -76,7 +76,7 @@ export const interpretationAndEvaluation_SkillGroup_Data = buildSkillGroupConfig
       pl: 'Naucz się omawiać możliwe znaczenie dzieła, korzystając z dowodów i jasnych kryteriów.',
       uk: 'Учіться обговорювати можливе значення мистецького твору, спираючись на докази й чіткі критерії.',
       lt: 'Mokykis aptarti, ką kūrinys gali reikšti, remdamasis įrodymais ir aiškiais kriterijais.',
-      lv: 'Mācies apspriest, ko mākslas darbs varētu nozīmēt, izmantojot pierādījumus un skaidrus kritērijus.',
+      lv: 'Mācieties apspriest, ko mākslas darbs varētu nozīmēt, izmantojot pierādījumus un skaidrus kritērijus.',
       et: 'Õpi arutama, mida kunstiteos võib tähendada, kasutades tõendeid ja selgeid kriteeriume.',
       be: 'Вучыся абмяркоўваць магчымы сэнс мастацкага твора, абапіраючыся на доказы й выразныя крытэрыі.',
       ka: 'ისწავლეთ ნამუშევრის შესაძლო მნიშვნელობის განხილვა მტკიცებულებებისა და მკაფიო კრიტერიუმების გამოყენებით.',

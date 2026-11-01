@@ -29,7 +29,7 @@ export const lateModernAndContemporaryPractices_SkillGroup_Data = buildSkillGrou
     vi: 'Thực hành nghệ thuật hiện đại muộn và đương đại',
     ta: 'பிந்தைய நவீன மற்றும் சமகாலக் கலைப் பயிற்சிகள்',
     te: 'ఆధునికానంతర మరియు సమకాలీన కళా పద్ధతులు',
-    mr: 'उत्तर-आधुनिक आणि समकालीन कलाप्रवाह',
+    mr: 'उत्तरकालीन आधुनिक आणि समकालीन कलाप्रवाह',
     ms: 'Amalan Moden Akhir dan Kontemporari',
     he: 'פרקטיקות מודרניות מאוחרות ועכשוויות',
     pl: 'Praktyki późnego modernizmu i współczesności',
