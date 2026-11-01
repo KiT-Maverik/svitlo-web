@@ -66,7 +66,7 @@ export const orbitalPeriods_Skill_Data = buildSkillConfig({
       be: 'Адрозьнівайце час абароту вакол іншага цела ад часу вярчэньня вакол уласнай восі.',
       ka: 'განასხვავეთ სხვა სხეულის გარშემო ერთი შემოვლის დრო საკუთარი ღერძის გარშემო ერთი ბრუნვის დროისგან.',
       kk: 'Басқа денені толық айналып шығуға кететін уақыт пен өз осінен айналу уақытын ажыратыңыз.',
-      qm: 'Başqa bir cisım etrafında dolanmağa ketken vaqıtnı öz oqu etrafında aylanmağa ketken vaqıttan ayırıñız.',
+      qm: 'Başqa bir cisim etrafında dolanmağa ketken vaqıtnı öz oqu etrafında aylanmağa ketken vaqıttan ayırıñız.',
     },
   },
 });

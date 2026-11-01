@@ -65,7 +65,7 @@ export const orbitalEnergy_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як энэргія вызначае, ці застанецца цела на гравітацыйна зьвязанай арбіце, ці зможа зь яе вырвацца.',
       ka: 'გაიგეთ, როგორ განსაზღვრავს ენერგია, დარჩება სხეული გრავიტაციულად შეკრულ ორბიტაზე თუ შეძლებს მისგან გაქცევას.',
       kk: 'Энергия дененің гравитациялық байланысқан орбитада қалуын немесе одан шығып кетуін қалай анықтайтынын зерттеңіз.',
-      qm: 'Energiyanıñ cisımni yer çekimi ile bağlı orbitada tutqanını ya da ondan qurtulmasına nasıl imkân bergenini ögreniñiz.',
+      qm: 'Energiyanıñ cisimni yer çekimi ile bağlı orbitada tutqanını ya da ondan qurtulmasına nasıl imkân bergenini ögreniñiz.',
     },
   },
 });

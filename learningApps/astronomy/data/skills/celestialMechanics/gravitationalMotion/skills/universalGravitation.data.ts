@@ -28,7 +28,7 @@ export const universalGravitation_Skill_Data = buildSkillConfig({
     uk: 'Всесвітнє тяжіння',
     lt: 'Visuotinė trauka',
     lv: 'Vispasaules gravitācija',
-    et: 'Ülemaailmne gravitatsioon',
+    et: 'Universaalne gravitatsioon',
     be: 'Сусьветнае прыцягненьне',
     ka: 'მსოფლიო მიზიდულობა',
     kk: 'Бүкіләлемдік тартылыс',

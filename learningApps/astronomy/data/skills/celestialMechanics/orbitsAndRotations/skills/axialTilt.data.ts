@@ -58,7 +58,7 @@ export const axialTilt_Skill_Data = buildSkillConfig({
       mr: 'एखाद्या ग्रहाच्या अक्षाचा कल त्याच्यावर प्रकाश पडण्याची पद्धत कशी बदलतो ते जाणून घ्या.',
       ms: 'Terokai bagaimana kecondongan paksi sebuah planet mengubah corak pencahayaan yang diterimanya.',
       he: 'גלו כיצד נטיית ציר הסיבוב של כוכב לכת משנה את דפוסי ההארה שלו.',
-      pl: 'Odkryj, jak nachylenie osi ciała planetarnego zmienia rozkład padaświetlenia jego powierzchni.',
+      pl: 'Odkryj, jak nachylenie osi ciała planetarnego zmienia rozkład oświetlenia jego powierzchni.',
       uk: 'Досліджуйте, як нахил осі небесного тіла змінює характер його освітлення.',
       lt: 'Sužinokite, kaip planetos sukimosi ašies posvyris keičia jos apšvietimo pobūdį.',
       lv: 'Izpētiet, kā planētas rotācijas ass slīpums maina tās apgaismojuma rakstu.',
