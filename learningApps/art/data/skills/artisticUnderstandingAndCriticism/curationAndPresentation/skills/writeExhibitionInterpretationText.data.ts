@@ -60,7 +60,7 @@ export const writeExhibitionInterpretationText_Skill_Data = buildSkillConfig({
       pl: 'Pisz pomocne teksty wystawowe, które dostarczają kontekstu, nie narzucając odczuć.',
       uk: 'Пишіть корисні виставкові тексти, що дають контекст, але не нав’язують почуттів.',
       lt: 'Rašyk naudingus parodos tekstus, kurie suteikia kontekstą, bet nenurodo, ką jausti.',
-      lv: 'Raksti noderīgus izstādes tekstus, kas sniedz kontekstu, nenosakot, ko just.',
+      lv: 'Rakstiet noderīgus izstādes tekstus, kas sniedz kontekstu, nenosakot, ko just.',
       et: 'Kirjuta kasulikud näitusetekstid, mis annavad tausta, kuid ei ütle ette, mida tunda.',
       be: 'Пішы карысныя выставовыя тэксты, якія даюць кантэкст, але не навязваюць пачуццяў.',
       ka: 'დაწერეთ გამოფენის სასარგებლო ტექსტები, რომლებიც კონტექსტს გვთავაზობს და არ გვკარნახობს, რას უნდა ვგრძნობდეთ.',
