@@ -45,7 +45,7 @@ export const areaAsCovering_Skill_Data = buildSkillConfig({
       es: 'El área mide cuánto espacio plano cubre una figura. Cúbrela con cuadrados iguales, sin huecos ni superposiciones.',
       ar: 'المساحة تقيس مقدار السطح الذي يغطيه الشكل. غطّه بمربعات وحدة متساوية دون فجوات أو تداخل.',
       fr: "L'aire indique combien de surface une figure couvre. Recouvre-la de carrés identiques sans vide ni chevauchement.",
-      bn: 'ক্ষেত্রফল বলে আকৃতি কতটা সমতল জায়গা ঢাকে। সমান একক বর্গ দিয়ে ফাঁক বা ওভারল্যাপ ছাড়া ঢাকো।',
+      bn: 'ক্ষেত্রফল বলে আকৃতি কতটা সমতল জায়গা ঢাকে। সমান একক বর্গ দিয়ে ফাঁক না রেখে বা একটির ওপর আরেকটি না বসিয়ে ঢাকো।',
       pt: 'A área mostra quanto espaço plano a figura ocupa. Cubra-a com quadrados iguais sem lacunas nem sobreposições.',
       ur: 'رقبہ بتاتا ہے شکل کتنی سطح گھیرتی ہے۔ برابر مربعوں سے بغیر خلا چھوڑے یا ایک دوسرے پر چڑھائے ڈھانپیں۔',
       id: 'Luas menunjukkan seberapa banyak permukaan datar tertutup. Tutupi dengan persegi satuan sama tanpa celah atau tumpang tindih.',
