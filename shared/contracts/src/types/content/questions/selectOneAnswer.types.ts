@@ -1,25 +1,28 @@
+import type { NonEmptyArray } from '../../misc.types';
+import type { ContentBlock } from '../blocks';
 import type { ContentEntity_ConfigType } from '../entity.types';
-import type { Locale_Config } from '../locale.types';
 import type { Question_Data_Meta, Question_Definition_Meta, Question_Response_Meta } from './common.types';
 
-type Question_SelectOneAnswer_Answers<Value> = {
-  correct: Record<string, Value>;
-  incorrect: Record<string, Value>;
-  distractors: Record<string, Value>;
+type Question_SelectOneAnswer_Answers<ConfigType extends ContentEntity_ConfigType> = {
+  correct: Record<string, ContentBlock<ConfigType>>;
+  incorrect: Record<string, ContentBlock<ConfigType>>;
+  distractors: Record<string, ContentBlock<ConfigType>>;
 };
 
 type Question_SelectOneAnswer_Definition = Question_Definition_Meta<'select-one-answer'>;
 
 type Question_SelectOneAnswer_Data = Question_Data_Meta<'select-one-answer'> & {
-  question: Locale_Config;
-  explanation: Record<string, Locale_Config>;
-  answers: Question_SelectOneAnswer_Answers<Locale_Config>;
+  question: NonEmptyArray<ContentBlock<'data'>>;
+  explanation?: NonEmptyArray<ContentBlock<'data'>>;
+  hint?: NonEmptyArray<ContentBlock<'data'>>;
+  answers: Question_SelectOneAnswer_Answers<'data'>;
 };
 
 type Question_SelectOneAnswer_Response = Question_Response_Meta<'select-one-answer'> & {
-  question: string;
-  explanation: Record<string, string>;
-  answers: Question_SelectOneAnswer_Answers<string>;
+  question: NonEmptyArray<ContentBlock<'response'>>;
+  explanation?: NonEmptyArray<ContentBlock<'response'>>;
+  hint?: NonEmptyArray<ContentBlock<'response'>>;
+  answers: Question_SelectOneAnswer_Answers<'response'>;
 };
 
 export type Question_SelectOneAnswer<ConfigType extends ContentEntity_ConfigType> = {

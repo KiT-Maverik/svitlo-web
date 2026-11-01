@@ -19,12 +19,14 @@ export type Question_Definition_Meta<Type extends Question_Type> = {
 
 export type Question_Data_Meta<Type extends Question_Type> = {
   id: string;
+  type: Type;
   assessmentMethod: AssessmentMethodKey;
   restrictions: Disability[];
 };
 
 export type Question_Response_Meta<Type extends Question_Type> = Locale_ResponseParams & {
   id: string;
+  type: Type;
   assessmentMethod: AssessmentMethodKey;
   restrictions: Disability[];
 };
