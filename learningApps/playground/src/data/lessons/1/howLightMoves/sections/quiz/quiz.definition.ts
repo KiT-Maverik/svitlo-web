@@ -1,4 +1,5 @@
 import type { ContentBlock_Quiz, Section } from '@svitlo/engine/content';
+import { howLightMovesQuestionsDefinition } from '../../questions/index.definition';
 
 export const quizDefinition = {
   type: 'section',
@@ -6,14 +7,7 @@ export const quizDefinition = {
     quiz: {
       quiz: {
         type: 'quiz',
-        questions: {
-          lightTravelsStraight: { type: 'select-one-answer' },
-          lightRayDirection: { type: 'select-one-answer' },
-          fastestMedium: { type: 'select-one-answer' },
-          lightSpeedInWater: { type: 'select-one-answer' },
-          airVacuumSpeed: { type: 'select-one-answer' },
-          opaqueObjectShadow: { type: 'select-one-answer' },
-        },
+        questions: howLightMovesQuestionsDefinition.selectOneAnswer,
       } satisfies ContentBlock_Quiz<'definition'>,
     },
   },

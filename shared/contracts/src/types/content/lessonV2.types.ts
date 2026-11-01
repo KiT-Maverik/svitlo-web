@@ -3,6 +3,7 @@ import type { LanguageCode } from '../languages';
 import type { DefineValidKeysFromSlugs, NonEmptyArray } from '../misc.types';
 import type { ContentEntity_ConfigType } from './entity.types';
 import type { Locale_Config, Locale_ResponseParams } from './locale.types';
+import type { Question_Catalog, Question_Catalog_ValidSlugs } from './questions';
 import type { Section } from './section.types';
 
 type LessonV2_Parameters = {
@@ -26,6 +27,7 @@ type LessonV2_Data = {
   slug: string;
   title: Locale_Config;
   parameters: LessonV2_Parameters;
+  questions: Question_Catalog<'data'>;
   sections: Record<string, Section<'data'>>;
 };
 
@@ -34,6 +36,7 @@ type LessonV2_Response = Locale_ResponseParams & {
   slug: string;
   title: string;
   parameters: LessonV2_Parameters;
+  questions: Question_Catalog<'response'>;
   sections: Record<string, Section<'response'>>;
 };
 
@@ -44,7 +47,10 @@ export type LessonV2<ConfigType extends ContentEntity_ConfigType> = {
 }[ConfigType];
 
 export function defineLessonV2Data<const T extends LessonV2<'data'>>(
-  lesson: T & { sections: DefineValidKeysFromSlugs<keyof T['sections'] & string, Section<'data'>> },
+  lesson: T & {
+    questions: Question_Catalog_ValidSlugs<T['questions']>;
+    sections: DefineValidKeysFromSlugs<keyof T['sections'] & string, Section<'data'>>;
+  },
 ): T {
   return lesson;
 }

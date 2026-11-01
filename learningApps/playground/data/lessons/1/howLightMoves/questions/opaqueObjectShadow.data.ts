@@ -153,6 +153,7 @@ export const opaqueObjectShadow_Question_Data = {
     },
   ],
   id: 'fbc29fba-d44d-5658-b6e7-ef1733ce81b5',
+  slug: 'opaqueObjectShadow' as const,
   question: [
     {
       id: '449b5f02-dcf0-50c9-9c18-a379fd78589c',
@@ -191,5 +192,5 @@ export const opaqueObjectShadow_Question_Data = {
     },
   ],
   restrictions: [],
-  type: 'select-one-answer',
+  type: 'selectOneAnswer',
 } satisfies Question_SelectOneAnswer<'data'>;

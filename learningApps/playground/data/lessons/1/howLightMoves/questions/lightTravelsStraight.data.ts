@@ -153,6 +153,7 @@ export const lightTravelsStraight_Question_Data = {
     },
   ],
   id: 'a4f1e4aa-3831-5e3f-aece-1df57f757d82',
+  slug: 'lightTravelsStraight' as const,
   question: [
     {
       id: '42b21cc4-14a5-5159-8c28-aa1fb0309c95',
@@ -191,5 +192,5 @@ export const lightTravelsStraight_Question_Data = {
     },
   ],
   restrictions: [],
-  type: 'select-one-answer',
+  type: 'selectOneAnswer',
 } satisfies Question_SelectOneAnswer<'data'>;

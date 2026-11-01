@@ -1,10 +1,12 @@
 import type { LessonV2 } from '@svitlo/engine/content';
+import { howLightMovesQuestionsDefinition } from './questions/index.definition';
 import { practiceDefinition } from './sections/practice/practice.definition';
 import { quizDefinition } from './sections/quiz/quiz.definition';
 import { theoryDefinition } from './sections/theory/theory.definition';
 
 export const howLightMovesDefinition = {
   type: 'lesson',
+  questions: howLightMovesQuestionsDefinition,
   sections: {
     theory: theoryDefinition,
     practice: practiceDefinition,

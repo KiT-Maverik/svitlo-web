@@ -153,6 +153,7 @@ export const lightSpeedInWater_Question_Data = {
     },
   ],
   id: 'f42370dc-1de2-59bf-93a0-0e304f9021f0',
+  slug: 'lightSpeedInWater' as const,
   question: [
     {
       id: '802c89a1-87bc-5f24-9190-92b8f145b5e0',
@@ -191,5 +192,5 @@ export const lightSpeedInWater_Question_Data = {
     },
   ],
   restrictions: [],
-  type: 'select-one-answer',
+  type: 'selectOneAnswer',
 } satisfies Question_SelectOneAnswer<'data'>;

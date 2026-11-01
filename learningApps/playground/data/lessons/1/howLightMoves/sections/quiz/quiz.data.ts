@@ -6,12 +6,7 @@ import {
   type Section,
 } from '@svitlo/engine/content';
 import type { quizDefinition } from '@/data/lessons/1/howLightMoves/sections/quiz/quiz.definition';
-import { airVacuumSpeed_Question_Data } from '../../questions/airVacuumSpeed.data';
-import { fastestMedium_Question_Data } from '../../questions/fastestMedium.data';
-import { lightRayDirection_Question_Data } from '../../questions/lightRayDirection.data';
-import { lightSpeedInWater_Question_Data } from '../../questions/lightSpeedInWater.data';
-import { lightTravelsStraight_Question_Data } from '../../questions/lightTravelsStraight.data';
-import { opaqueObjectShadow_Question_Data } from '../../questions/opaqueObjectShadow.data';
+import { howLightMovesQuestionsData } from '../../questions/index.data';
 import { quiz } from './quiz';
 
 const quizBlock = {
@@ -29,14 +24,10 @@ const quizBlock = {
     allowQuestionNavigation: true,
     skippable: true,
   },
-  questions: {
-    lightTravelsStraight: lightTravelsStraight_Question_Data,
-    lightRayDirection: lightRayDirection_Question_Data,
-    fastestMedium: fastestMedium_Question_Data,
-    lightSpeedInWater: lightSpeedInWater_Question_Data,
-    airVacuumSpeed: airVacuumSpeed_Question_Data,
-    opaqueObjectShadow: opaqueObjectShadow_Question_Data,
-  } satisfies Record<keyof typeof quizDefinition.content.quiz.quiz.questions, Question_SelectOneAnswer<'data'>>,
+  questions: howLightMovesQuestionsData.selectOneAnswer satisfies Record<
+    keyof typeof quizDefinition.content.quiz.quiz.questions,
+    Question_SelectOneAnswer<'data'>
+  >,
   results: { visibility: 'immediate', showScore: true },
   screen: {
     ending: { success: { showDefaultContent: true }, fail: { showDefaultContent: true } },

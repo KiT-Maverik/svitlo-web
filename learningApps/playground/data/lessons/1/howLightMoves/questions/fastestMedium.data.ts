@@ -153,6 +153,7 @@ export const fastestMedium_Question_Data = {
     },
   ],
   id: '08c3bae5-081a-5afc-bccf-e44078e137f2',
+  slug: 'fastestMedium' as const,
   question: [
     {
       id: 'f671bcff-e9a1-5d7a-afd0-f28b4d591078',
@@ -191,5 +192,5 @@ export const fastestMedium_Question_Data = {
     },
   ],
   restrictions: [],
-  type: 'select-one-answer',
+  type: 'selectOneAnswer',
 } satisfies Question_SelectOneAnswer<'data'>;

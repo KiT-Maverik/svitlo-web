@@ -3,15 +3,15 @@ import type { AssessmentMethodKey } from '../assessmentMethod.types';
 import type { Locale_ResponseParams } from '../locale.types';
 
 export type Question_Type =
-  | 'select-one-answer'
-  | 'select-multiple-answers'
-  | 'match-blocks'
-  | 'answer-with-text'
-  | 'answer-with-number'
-  | 'order-sequence'
-  | 'build-answer-with-blocks'
-  | 'fill-blanks-with-blocks'
-  | 'fill-blanks-with-text';
+  | 'selectOneAnswer'
+  | 'selectMultipleAnswers'
+  | 'matchBlocks'
+  | 'answerWithText'
+  | 'answerWithNumber'
+  | 'orderSequence'
+  | 'buildAnswerWithBlocks'
+  | 'fillBlanksWithBlocks'
+  | 'fillBlanksWithText';
 
 export type Question_Definition_Meta<Type extends Question_Type> = {
   type: Type;
@@ -19,6 +19,7 @@ export type Question_Definition_Meta<Type extends Question_Type> = {
 
 export type Question_Data_Meta<Type extends Question_Type> = {
   id: string;
+  slug: string;
   type: Type;
   assessmentMethod: AssessmentMethodKey;
   restrictions: Disability[];

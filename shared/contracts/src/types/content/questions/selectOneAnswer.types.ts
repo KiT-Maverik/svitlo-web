@@ -9,16 +9,16 @@ type Question_SelectOneAnswer_Answers<ConfigType extends ContentEntity_ConfigTyp
   distractors: Record<string, ContentBlock<ConfigType>>;
 };
 
-type Question_SelectOneAnswer_Definition = Question_Definition_Meta<'select-one-answer'>;
+type Question_SelectOneAnswer_Definition = Question_Definition_Meta<'selectOneAnswer'>;
 
-type Question_SelectOneAnswer_Data = Question_Data_Meta<'select-one-answer'> & {
+type Question_SelectOneAnswer_Data = Question_Data_Meta<'selectOneAnswer'> & {
   question: NonEmptyArray<ContentBlock<'data'>>;
   explanation?: NonEmptyArray<ContentBlock<'data'>>;
   hint?: NonEmptyArray<ContentBlock<'data'>>;
   answers: Question_SelectOneAnswer_Answers<'data'>;
 };
 
-type Question_SelectOneAnswer_Response = Question_Response_Meta<'select-one-answer'> & {
+type Question_SelectOneAnswer_Response = Question_Response_Meta<'selectOneAnswer'> & {
   question: NonEmptyArray<ContentBlock<'response'>>;
   explanation?: NonEmptyArray<ContentBlock<'response'>>;
   hint?: NonEmptyArray<ContentBlock<'response'>>;

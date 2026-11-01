@@ -153,6 +153,7 @@ export const airVacuumSpeed_Question_Data = {
     },
   ],
   id: '21733db1-2e1a-55cc-80c2-08e68fec1d90',
+  slug: 'airVacuumSpeed' as const,
   question: [
     {
       id: '4a239502-091e-59a4-b57f-0c4c059de468',
@@ -191,5 +192,5 @@ export const airVacuumSpeed_Question_Data = {
     },
   ],
   restrictions: [],
-  type: 'select-one-answer',
+  type: 'selectOneAnswer',
 } satisfies Question_SelectOneAnswer<'data'>;

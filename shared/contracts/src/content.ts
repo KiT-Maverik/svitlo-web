@@ -22,6 +22,9 @@ export type * from './types/content/quiz.types';
 export type * from './types/content/question.types';
 export type {
   QuestionV2,
+  Question_Catalog,
+  Question_Catalog_DataFor,
+  Question_Catalog_ValidSlugs,
   Question_Map,
   Question_Type,
   Question_AnswerWithNumber,

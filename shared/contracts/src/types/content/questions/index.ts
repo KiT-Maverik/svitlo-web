@@ -1,4 +1,5 @@
 import type { ContentEntity_ConfigType } from '../entity.types';
+import type { DefineValidKeysFromSlugs } from '../../misc.types';
 import type { Question_AnswerWithNumber } from './answerWithNumber.types';
 import type { Question_AnswerWithText } from './answerWithText.types';
 import type { Question_BuildAnswerWithBlocks } from './buildAnswerWithBlocks.types';
@@ -11,18 +12,34 @@ import type { Question_SelectMultipleAnswers } from './selectMultipleAnswers.typ
 import type { Question_SelectOneAnswer } from './selectOneAnswer.types';
 
 export type Question_Map<ConfigType extends ContentEntity_ConfigType> = {
-  'answer-with-number': Question_AnswerWithNumber<ConfigType>;
-  'answer-with-text': Question_AnswerWithText<ConfigType>;
-  'build-answer-with-blocks': Question_BuildAnswerWithBlocks<ConfigType>;
-  'fill-blanks-with-blocks': Question_FillBlanksWithBlocks<ConfigType>;
-  'fill-blanks-with-text': Question_FillBlanksWithText<ConfigType>;
-  'match-blocks': Question_MatchBlocks<ConfigType>;
-  'order-sequence': Question_OrderSequence<ConfigType>;
-  'select-multiple-answers': Question_SelectMultipleAnswers<ConfigType>;
-  'select-one-answer': Question_SelectOneAnswer<ConfigType>;
+  answerWithNumber: Question_AnswerWithNumber<ConfigType>;
+  answerWithText: Question_AnswerWithText<ConfigType>;
+  buildAnswerWithBlocks: Question_BuildAnswerWithBlocks<ConfigType>;
+  fillBlanksWithBlocks: Question_FillBlanksWithBlocks<ConfigType>;
+  fillBlanksWithText: Question_FillBlanksWithText<ConfigType>;
+  matchBlocks: Question_MatchBlocks<ConfigType>;
+  orderSequence: Question_OrderSequence<ConfigType>;
+  selectMultipleAnswers: Question_SelectMultipleAnswers<ConfigType>;
+  selectOneAnswer: Question_SelectOneAnswer<ConfigType>;
 };
 
 export type QuestionV2<ConfigType extends ContentEntity_ConfigType> = Question_Map<ConfigType>[Question_Type];
+
+export type Question_Catalog<ConfigType extends ContentEntity_ConfigType> = {
+  [Type in Question_Type]?: Record<string, Question_Map<ConfigType>[Type]>;
+};
+
+export type Question_Catalog_DataFor<Definition extends Question_Catalog<'definition'>> = {
+  [Type in keyof Definition]: Type extends Question_Type
+    ? Record<keyof Definition[Type] & string, Question_Map<'data'>[Type]>
+    : never;
+};
+
+export type Question_Catalog_ValidSlugs<Catalog extends Question_Catalog<'data'>> = {
+  [Type in keyof Catalog]: Type extends Question_Type
+    ? DefineValidKeysFromSlugs<keyof NonNullable<Catalog[Type]> & string, Question_Map<'data'>[Type]>
+    : never;
+};
 
 export type {
   Question_AnswerWithNumber,
