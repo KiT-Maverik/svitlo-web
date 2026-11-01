@@ -1,6 +1,7 @@
 import type { ContentBlock_Audio } from './audio.types';
 import type { ContentBlock_Checkpoint } from './checkpoint.types';
 import type { ContentBlock_Code } from './code.types';
+import type { ContentBlock_Type } from './common.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { ContentBlock_Image } from './image.types';
 import type { ContentBlock_Markdown } from './markdown.types';
@@ -31,6 +32,10 @@ export interface ContentBlock_Map<ConfigType extends ContentEntity_ConfigType> {
   youtube: ContentBlock_Youtube<ConfigType>;
   image: ContentBlock_Image<ConfigType>;
 }
+
+export type ContentBlock_Catalog<ConfigType extends ContentEntity_ConfigType> = {
+  [Type in ContentBlock_Type & keyof ContentBlock_Map<ConfigType>]?: Record<string, ContentBlock_Map<ConfigType>[Type]>;
+};
 
 export type {
   ContentBlock_Audio,
