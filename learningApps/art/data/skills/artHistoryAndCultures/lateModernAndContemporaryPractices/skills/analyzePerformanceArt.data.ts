@@ -19,7 +19,7 @@ export const analyzePerformanceArt_Skill_Data = buildSkillConfig({
     ko: '퍼포먼스 아트 분석하기',
     tr: 'Performans sanatını incelemek',
     vi: 'Phân tích nghệ thuật trình diễn',
-    ta: 'செயல்திறன் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'நேரடி நிகழ்த்துக் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'పెర్ఫార్మెన్స్ కళను విశ్లేషించండి',
     mr: 'परफॉर्मन्स कलेचे विश्लेषण करा',
     ms: 'Menganalisis Seni Persembahan',

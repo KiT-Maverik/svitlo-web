@@ -19,7 +19,7 @@ export const analyzeCuscoSchoolPainting_Skill_Data = buildSkillConfig({
     ko: '쿠스코 회화 학파 작품 분석하기',
     tr: 'Cusco Okulu resmini incelemek',
     vi: 'Phân tích hội họa Trường phái Cusco',
-    ta: 'குஸ்கோ பள்ளி ஓவியத்தைப் பகுப்பாய்வு செய்',
+    ta: 'குஸ்கோ பள்ளி ஓவியத்தைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'కుస్కో పాఠశాల చిత్రకళను విశ్లేషించండి',
     mr: 'कुस्को स्कूल चित्रकलेचे विश्लेषण करा',
     ms: 'Menganalisis Lukisan Sekolah Cusco',

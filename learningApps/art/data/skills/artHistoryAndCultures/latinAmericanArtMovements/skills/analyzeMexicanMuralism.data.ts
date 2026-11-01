@@ -60,7 +60,7 @@ export const analyzeMexicanMuralism_Skill_Data = buildSkillConfig({
       he: 'גלו כיצד אמני הקיר המקסיקניים קישרו ציור ציבורי להיסטוריה ולרעיונות חברתיים.',
       pl: 'Poznaj, jak meksykańscy muralisci łączyli malarstwo publiczne z historią i ideami społecznymi.',
       uk: 'Досліджувати, як мексиканські муралісти поєднували публічний живопис з історією та суспільними ідеями.',
-      lt: 'Sužinok, kaip Meksikos muralistai susiejo viešąją tapybą su istorija ir socialinėmis idėjomis.',
+      lt: 'Sužinokite, kaip Meksikos muralistai susiejo viešąją tapybą su istorija ir socialinėmis idėjomis.',
       lv: 'Uzziniet, kā Meksikas muralisti saistīja publisko glezniecību ar vēsturi un sociālajām idejām.',
       et: 'Uuri, kuidas Mehhiko muralistid sidusid avaliku seinamaali ajaloo ja ühiskondlike ideedega.',
       be: 'Даведайся, як мексіканскія муралісты звязвалі публічны жывапіс з гісторыяй і грамадскімі ідэямі.',
