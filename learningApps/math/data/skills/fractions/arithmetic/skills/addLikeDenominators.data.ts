@@ -18,7 +18,7 @@ export const addLikeDenominators_Skill_Data = buildSkillConfig({
     ar: 'جمع الكسور ذات المقام نفسه ضمن الواحد الصحيح',
     fr: 'Additionner des fractions de même dénominateur dans un tout',
     bn: 'এক পূর্ণের মধ্যে সমান হরের ভগ্নাংশ যোগ',
-    pt: 'Somar frações de mesmo denominador dentro de um inteiro',
+    pt: 'Somar frações de mesmo denominador referentes ao mesmo todo',
     ur: 'ایک مکمل کے اندر یکساں مخرج والے کسر جمع کرنا',
     id: 'Menjumlahkan pecahan berpenyebut sama dalam satu keseluruhan',
     de: 'Brüche mit gleichem Nenner innerhalb eines Ganzen addieren',
