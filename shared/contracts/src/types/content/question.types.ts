@@ -1,8 +1,5 @@
 import type { AssessmentMethodId } from './assessmentMethod.types';
-import type {
-  ContentBlock,
-  ContentBlock_Config,
-} from './blocks/common.types';
+import type { ContentBlock, ContentBlock_Config } from './blocks/index';
 import type { TextContentBlock, TextContentBlock_Config } from './blocks/text.types';
 import type { NonEmptyArray } from '../misc.types';
 import type { Disability } from '../disabilities.types';
