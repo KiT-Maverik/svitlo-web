@@ -1,7 +1,5 @@
-import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
 import type { Checkpoint_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/theory/scenes/Checkpoint/Checkpoint.types';
-import type { StringObjectToLocale } from '../../../transformer.types';
-type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['theory']['scene']['checkpoint']>;
+
 export const checkpoint = {
   title: {
     ar: 'حاول أن تشرح',
@@ -228,7 +226,7 @@ export const checkpoint = {
       },
     },
   ],
-} satisfies Locale;
+};
 
 type CheckpointAnswer = Checkpoint_ContentBlock<'data'>['items'][number]['answer'];
 
