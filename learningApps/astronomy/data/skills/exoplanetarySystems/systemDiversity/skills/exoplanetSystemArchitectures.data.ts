@@ -57,7 +57,7 @@ export const exoplanetSystemArchitectures_Skill_Data = buildSkillConfig({
       te: 'దగ్గరగా ఉన్న గ్రహాలు, అసాధారణ కక్ష్యలు లేదా కక్ష్యా అనునాదాలు గల వ్యవస్థలను పోల్చండి.',
       mr: 'एकमेकांच्या जवळ असलेले ग्रह, अनोख्या कक्षा किंवा कक्षीय अनुनाद असलेल्या प्रणालींची तुलना करा.',
       ms: 'Bandingkan sistem dengan planet yang rapat, orbit luar biasa atau resonans orbit.',
-      he: 'השוו בין מערכות עם כוכבי לכת צפופים, מסלולים יוצאי דופן או תהודות מסלוליות.',
+      he: 'השוו בין מערכות שבהן כוכבי הלכת קרובים זה לזה, נעים במסלולים חריגים או מצויים בתהודה מסלולית.',
       pl: 'Porównuj układy z ciasno rozmieszczonymi planetami, nietypowymi orbitami lub rezonansami orbitalnymi.',
       uk: 'Порівнюйте системи зі щільним розташуванням планет, незвичними орбітами чи орбітальними резонансами.',
       lt: 'Palyginkite sistemas su glaudžiai išsidėsčiusiomis planetomis, neįprastomis orbitomis ar orbitiniais rezonansais.',
