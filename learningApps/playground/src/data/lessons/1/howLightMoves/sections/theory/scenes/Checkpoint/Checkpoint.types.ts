@@ -1,7 +1,9 @@
-export type Checkpoint_Locale = {
+type Locale = {
   title: string;
-  items: readonly {
+  items: {
     question: string;
     answer: string;
   }[];
 };
+
+// todo create content block instead of scene
