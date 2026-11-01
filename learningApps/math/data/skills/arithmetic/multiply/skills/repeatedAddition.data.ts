@@ -61,7 +61,7 @@ export const repeatedAddition_Skill_Data = buildSkillConfig({
       he: 'אפשר לכתוב חיבור חוזר של אותה כמות שלמה כתרגיל כפל.',
       pl: 'Możesz zapisać wielokrotne dodawanie tej samej całkowitej ilości jako mnożenie.',
       uk: 'Ти можеш записувати повторюване додавання однакової цілої кількості як множення.',
-      lt: 'Gali pakartotinį to paties sveikojo kiekio sudėjimą užrašyti kaip daugybą.',
+      lt: 'Gali pakartotinę vienodų dėmenų sudėtį užrašyti kaip daugybą.',
       lv: 'Tu vari vienāda vesela daudzuma atkārtotu saskaitīšanu pierakstīt kā reizināšanu.',
       et: 'Sa saad sama täisarvulise koguse korduvat liitmist väljendada korrutamisena.',
       be: 'Ты можаш запісваць паўторнае складаньне аднолькавай цэлай колькасьці як множаньне.',
