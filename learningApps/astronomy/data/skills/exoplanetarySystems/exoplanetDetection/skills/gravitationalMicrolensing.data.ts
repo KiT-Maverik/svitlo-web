@@ -62,7 +62,7 @@ export const gravitationalMicrolensing_Skill_Data = buildSkillConfig({
       uk: 'Зрозумійте, як гравітація може ненадовго підсилити світло далекої зорі й виявити планету.',
       lt: 'Supraskite, kaip gravitacinis lęšiavimas gali trumpam padidinti regimąjį tolimos žvaigždės ryškį ir atskleisti planetą.',
       lv: 'Izprotiet, kā gravitācija īslaicīgi pastiprina tālas zvaigznes gaismu un palīdz atklāt planētu.',
-      et: 'Mõista, kuidas gravitatsioon võib lühiajaliselt võimendada kauge tähe valgust ja paljastada planeedi.',
+      et: 'Mõista, kuidas gravitatsioonilääts võib ajutiselt suurendada kauge tähe näivat heledust ja aidata planeeti avastada.',
       be: 'Зразумейце, як гравітацыя можа ненадоўга ўзмацніць сьвятло далёкай зоркі й выявіць плянэту.',
       ka: 'გაიგეთ, როგორ შეუძლია გრავიტაციას შორეული ვარსკვლავის სინათლის ხანმოკლე გაძლიერება და პლანეტის გამოვლენა.',
       kk: 'Тартылыс күші алыс жұлдыз жарығын уақытша күшейтіп, ғаламшарды қалай анықтай алатынын түсініңіз.',

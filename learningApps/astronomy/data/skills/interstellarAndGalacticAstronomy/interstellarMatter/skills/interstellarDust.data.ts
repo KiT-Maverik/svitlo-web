@@ -62,7 +62,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
       uk: 'Досліди, як міжзоряний пил послаблює, почервонює й перевипромінює світло зір.',
       lt: 'Sužinok, kaip tarpžvaigždinės dulkės silpnina ir raudonina žvaigždžių šviesą bei skleidžia infraraudonąją spinduliuotę.',
       lv: 'Izpēti, kā putekļi vājina, sarkanina un atkārtoti izstaro zvaigžņu gaismu.',
-      et: 'Uuri, kuidas tolm nõrgendab ja punetab tähevalgust ning kiirgab selle uuesti välja.',
+      et: 'Uuri, kuidas tähtedevaheline tolm nõrgendab tähevalgust, muudab selle punasemaks ja kiirgab infrapunakiirgust.',
       be: 'Дасьледуй, як пыл аслабляе, чырваніць і паўторна выпраменьвае сьвятло зорак.',
       ka: 'ნახე, როგორ ასუსტებს და აწითლებს მტვერი ვარსკვლავურ სინათლეს და ხელახლა ასხივებს მას.',
       kk: 'Шаң жұлдыз жарығын қалай бәсеңдетіп, қызартып және қайта сәуле шығаратынын түсін.',
