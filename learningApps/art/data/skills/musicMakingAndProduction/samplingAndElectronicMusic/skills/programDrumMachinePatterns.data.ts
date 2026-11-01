@@ -30,7 +30,7 @@ export const programDrumMachinePatterns_Skill_Data = buildSkillConfig({
     lv: 'Programmēt bungu mašīnas ritmus',
     et: 'Programmi trummimasina rütmimustreid',
     be: 'Праграмуйце рытмічныя ўзоры драм-машыны',
-    ka: 'დააპროგრამეთ დრამ-мანქანის რიტმული პატერნები',
+    ka: 'დრამ-მანქანის რიტმული ნიმუშების პროგრამირება',
     kk: 'Драм-машина ырғақтарын бағдарламалаңыз',
     qm: 'Davul maşını ritm naqışlarını programlañız',
   },

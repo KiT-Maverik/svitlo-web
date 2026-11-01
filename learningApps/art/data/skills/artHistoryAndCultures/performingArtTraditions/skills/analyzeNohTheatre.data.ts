@@ -65,7 +65,7 @@ export const analyzeNohTheatre_Skill_Data = buildSkillConfig({
       et: 'Õpi, kuidas liikumine, maskid ja muusika kujundavad Jaapani nō-teatri etendusi.',
       be: 'Даведайцеся, як рух, маскі і музыка фарміруюць спектаклі японскага тэатра но.',
       ka: 'შეიტყვეთ, როგორ აყალიბებს მოძრაობა, ნიღბები და მუსიკა იაპონური ნოს წარმოდგენებს.',
-      kk: 'Біл, қимыл, бетперде мен музыка жапон но театрының қойылымдарын қалай қалыптастыратынын біліңіз.',
+      kk: 'Жапон но театрының қойылымдарында қимыл, бетперде мен музыканың қалай қолданылатынын зерттеңіз.',
       qm: 'Yapon Noh teatrında areket, maskalar ve muzıka sahne gösterilerini nasıl şekillendirgenini ögreniniz.',
     },
   },

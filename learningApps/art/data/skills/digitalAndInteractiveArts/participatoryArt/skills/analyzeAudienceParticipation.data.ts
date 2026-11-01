@@ -56,7 +56,7 @@ export const analyzeAudienceParticipation_Skill_Data = buildSkillConfig({
       te: 'పాల్గొనేవారి సహకారం కళాకృతి రచయితత్వం, క్రమం లేదా వ్యాఖ్యానాన్ని ఎలా మారుస్తుందో తెలుసుకోండి.',
       mr: 'सहभागींचे योगदान कलाकृतीचे कर्तृत्व, क्रम किंवा अर्थलावणे कसे बदलते ते जाणून घ्या.',
       ms: 'Terokai bagaimana sumbangan peserta mengubah kepengarangan, urutan atau tafsiran karya seni.',
-      he: 'גלו כיצד תרומות המשתתפים משנות את היוצרות, הרצף או הפרשנות של יצירת אמנות.',
+      he: 'גלו כיצד תרומות המשתתפים משנות את חלוקת התפקידים ביצירה, את הרצף או את הפרשנות של יצירת אמנות.',
       pl: 'Odkryj, jak wkład uczestników zmienia autorstwo, kolejność lub interpretację dzieła.',
       uk: 'Дослідіть, як внесок учасників змінює авторство, послідовність або інтерпретацію твору.',
       lt: 'Sužinokite, kaip dalyvių indėlis keičia kūrinio autorystę, seką ar interpretaciją.',
