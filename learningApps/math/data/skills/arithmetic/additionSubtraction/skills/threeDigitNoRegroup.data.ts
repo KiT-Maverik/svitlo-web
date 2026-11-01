@@ -12,7 +12,7 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
     kk: 'Қосу және азайту — үш таңбалы сандар қайта топтастырусыз',
     en: 'Addition and subtraction — 3-digit · Without regrouping',
     qm: 'Qoşuv ve çıqaruv — üç raqamlı sayılar, razryad deñiştirmeden',
-    zh: '加减法 — 3-位数 · 不进退位',
+    zh: '加减法 — 三位数 · 不进位不退位',
     hi: 'जोड़ और घटाव — 3-अंकीय · बिना पुनर्समूहन',
     es: 'Suma y resta — 3-cifras · Sin reagrupación',
     ar: 'الجمع والطرح — 3-أرقام · دون إعادة التجميع',
