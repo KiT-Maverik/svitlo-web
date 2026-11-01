@@ -10,14 +10,14 @@ import ExpandMoreRounded from '@mui/icons-material/ExpandMoreRounded';
 import LightbulbOutlineRounded from '@mui/icons-material/LightbulbOutlineRounded';
 import RadioButtonUncheckedRounded from '@mui/icons-material/RadioButtonUncheckedRounded';
 import CheckCircleRounded from '@mui/icons-material/CheckCircleRounded';
-import type { Resource } from '@svitlo/engine/content';
+import type { ContentBlock } from '@svitlo/engine/content';
 import { getLanguageCode, getLocaleDirection } from '@svitlo/engine/localization';
 import type { LanguageCode } from '@svitlo/engine/localization';
 import { locales, type KnowledgeCheckpoint_Locale } from './KnowledgeCheckpoint.locale';
 import type { KnowledgeCheckpointProps, KnowledgeCheckpointProgress } from './KnowledgeCheckpoint.types';
 import styles from './KnowledgeCheckpoint.module.css';
 
-function defaultAnswer(answer: Resource): ReactNode {
+function defaultAnswer(answer: ContentBlock): ReactNode {
   switch (answer.blockType) {
     case 'text':
       return <p className={styles.answerText}>{answer.value}</p>;
@@ -28,7 +28,7 @@ function defaultAnswer(answer: Resource): ReactNode {
     case 'video':
       return <video className={styles.media} src={answer.fileLocation} poster={answer.poster} controls />;
     default:
-      throw new Error(`Provide an answerSlot or slots.renderAnswer for ${answer.blockType} resources`);
+      throw new Error(`Provide an answerSlot or slots.renderAnswer for ${answer.blockType} content blocks`);
   }
 }
 
