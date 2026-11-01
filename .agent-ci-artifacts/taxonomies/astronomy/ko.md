@@ -646,7 +646,7 @@ Skills: 4
 
 **Methodological description (English):** Classify astronomical sources as stellar bodies, planetary bodies, compact remnants, diffuse clouds, star clusters, galaxies or other broad physical types using characteristic evidence rather than appearance alone.
 
-**User-friendly description (ko):** 물리적 특성으로 천체의 주요 유형을 구분한다.
+**User-friendly description (ko):** 물리적 특성을 바탕으로 천체의 주요 유형을 구별해 보세요.
 
 ##### 확산된 천체와 복합 천체
 

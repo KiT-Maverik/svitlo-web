@@ -2156,7 +2156,7 @@ Skills: 6
 
 **User-friendly description (vi):** So sánh các quần thể sao có tuổi, thành phần và vị trí khác nhau.
 
-##### Các loại quang phổ sao
+##### Các lớp quang phổ của sao
 
 [stellarSpectralTypes.data.ts](../../../learningApps/astronomy/data/skills/stellarPropertiesAndEvolution/stellarAndSubstellarClassification/skills/stellarSpectralTypes.data.ts)
 

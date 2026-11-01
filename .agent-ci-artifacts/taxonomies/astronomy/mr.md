@@ -1960,7 +1960,7 @@ Skills: 5
 
 **Methodological description (English):** Evaluate proposed formation scenarios for Earth's Moon, including giant-impact models, using angular momentum, lunar samples, isotopic composition and the limitations of current evidence.
 
-**User-friendly description (mr):** चंद्राच्या उत्पत्तीविषयीच्या विविध सिद्धांतांचे पुरावे तुलना करा; त्यात महाकाय धडकेचा सिद्धांतही समाविष्ट आहे.
+**User-friendly description (mr):** चंद्राच्या उत्पत्तीविषयीच्या विविध सिद्धांतांच्या पुराव्यांची तुलना करा; त्यात महाकाय धडकेचा सिद्धांतही समाविष्ट आहे.
 
 ##### ग्रहांची अभिवृद्धी
 
@@ -2132,7 +2132,7 @@ Skills: 6
 
 **User-friendly description (mr):** दोन किंवा अधिक तारे एकमेकांभोवती कसे फिरतात ते जाणून घ्या.
 
-##### तपकिरी बटू तारे
+##### तपकिरी बटू पिंड
 
 [brownDwarfs.data.ts](../../../learningApps/astronomy/data/skills/stellarPropertiesAndEvolution/stellarAndSubstellarClassification/skills/brownDwarfs.data.ts)
 
@@ -2146,7 +2146,7 @@ Skills: 6
 
 **Methodological description (English):** Interpret the distribution of stars by luminosity and temperature and identify major evolutionary regions.
 
-**User-friendly description (mr):** हर्ट्झस्प्रुंग–रसेल आकृती वाचून ताऱ्यांचे तापमान, दीप्तिमानता आणि विकासाचे टप्पे तुलना करा.
+**User-friendly description (mr):** हर्ट्झस्प्रुंग–रसेल आकृती वाचून ताऱ्यांच्या तापमानाची, दीप्तिमानतेची आणि विकासाच्या टप्प्यांची तुलना करा.
 
 ##### तारकीय समूहवर्ग
 

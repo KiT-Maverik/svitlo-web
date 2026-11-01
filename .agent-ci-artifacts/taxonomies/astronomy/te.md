@@ -1098,7 +1098,7 @@ Skills: 5
 
 **Methodological description (English):** Relate a planet's mass-radius behavior to plausible internal materials while recognizing model degeneracy.
 
-**User-friendly description (te):** ఒకే సమాధానం ఉందని అనుకోకుండా, ద్రవ్యరాశి, వ్యాసార్థంతో గ్రహం ఉండవచ్చిన పదార్థాలను పరిశోధించండి.
+**User-friendly description (te):** ఒకే సమాధానం ఉందని అనుకోకుండా, ద్రవ్యరాశి, వ్యాసార్థం ఆధారంగా గ్రహంలో ఉండవచ్చే పదార్థాలను పరిశోధించండి.
 
 ##### బాహ్యగ్రహ ద్రవ్యరాశి
 
@@ -1150,7 +1150,7 @@ Skills: 4
 
 **User-friendly description (te):** గురుత్వాకర్షణ దూర నక్షత్రం కాంతిని కొద్దిసేపు పెంచి గ్రహాన్ని ఎలా వెల్లడించగలదో అర్థం చేసుకోండి.
 
-##### రేఖీయ వేగం ద్వారా గుర్తింపు
+##### దృష్టిరేఖా వేగం ద్వారా గుర్తింపు
 
 [radialVelocityDetection.data.ts](../../../learningApps/astronomy/data/skills/exoplanetarySystems/exoplanetDetection/skills/radialVelocityDetection.data.ts)
 
