@@ -58,7 +58,7 @@ export const reproductionAndTraits_SkillGroup_Data = buildSkillGroupConfig({
       id: 'Temukan mengapa keturunan mirip kerabatnya tetapi tidak selalu sama persis.',
       de: 'Entdecke, warum Nachkommen ihren Verwandten ähneln, aber nicht immer genau gleich sind.',
       ja: '子が親や血縁のある個体に似ていても、必ずしも同じではない理由を学ぼう。',
-      ko: '자손이 친척을 닮지만 항상 똑같지는 않은 이유를 알아보세요.',
+      ko: '자손이 부모를 닮아도 완전히 똑같지는 않은 이유를 알아보세요.',
       tr: 'Yavruların akrabalarına neden benzediğini ama her zaman aynı olmadığını keşfet.',
       vi: 'Khám phá vì sao con cháu giống họ hàng nhưng không phải lúc nào cũng giống hệt.',
       ta: 'சந்ததிகள் உறவினர்களைப் போல இருந்தாலும் எப்போதும் ஒரே மாதிரி இல்லாததன் காரணத்தை அறியுங்கள்.',

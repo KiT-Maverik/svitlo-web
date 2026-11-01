@@ -48,7 +48,7 @@ export const relatePlantStructuralFeaturesToEnvironmentalConditions_Skill_Data =
       id: 'Jelaskan mengapa akar, daun, dan tunas memiliki bentuk yang sesuai dengan kondisi yang berbeda.',
       de: 'Erkläre, warum Wurzeln, Blätter und Sprosse unter verschiedenen Bedingungen unterschiedliche Formen haben.',
       ja: '根・葉・茎や枝の構造が、周囲の環境での生存にどう役立つか説明しよう。',
-      ko: '뿌리, 잎, 싹이 서로 다른 환경에 적합한 형태를 지니는 이유를 설명해 보세요.',
+      ko: '뿌리, 잎, 줄기의 구조가 서로 다른 환경에서 생존하는 데 어떻게 도움이 되는지 설명해 보세요.',
       tr: 'Köklerin, yaprakların ve sürgünlerin farklı koşullara neden uygun biçimlerde olduğunu açıkla.',
       vi: 'Giải thích vì sao rễ, lá và chồi có hình dạng phù hợp với các điều kiện khác nhau.',
       ta: 'வேர்கள், இலைகள், தளிர்கள் பல சூழல்களுக்கு ஏற்ற வடிவங்களில் இருப்பதன் காரணத்தை விளக்கு.',

@@ -16,7 +16,7 @@ export const distinguishIndividualChangesDuringLifeFromPopulationChanges_Skill_D
     id: 'Membedakan perubahan selama hidup individu dari perubahan populasi',
     de: 'Veränderungen im Leben eines Individuums von Veränderungen einer Population unterscheiden',
     ja: '個体の生涯での変化と集団の変化を区別する',
-    ko: '개체의 일생 동안 변화와 개체군의 변화 구별하기',
+    ko: '개체의 일생 동안의 변화와 개체군의 변화 구별하기',
     tr: 'Bireyin yaşamındaki değişimleri popülasyon değişimlerinden ayırmak',
     vi: 'Phân biệt thay đổi trong đời cá thể với thay đổi của quần thể',
     ta: 'ஒரு உயிரின் வாழ்நாள் மாற்றங்களையும் உயிரினக் கூட்டத்தின் மாற்றங்களையும் வேறுபடுத்துதல்',
