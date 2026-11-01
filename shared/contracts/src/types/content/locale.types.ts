@@ -17,3 +17,10 @@ export type Locales_Single<Value = string> = {
   value: Value;
   language: LanguageCode;
 };
+
+export type Locale_ResponseParams = {
+  locale: {
+    code: LanguageCode;
+    isFallback?: true;
+  };
+};
