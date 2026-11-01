@@ -5,6 +5,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
   id: '2592da19-e7d8-44f0-b88d-e3dfc05f74bb',
   name: {
     en: 'Interstellar Dust',
+    qm: 'Yıldızlararası toz',
     zh: '星际尘埃',
     hi: 'अंतरतारकीय धूल',
     es: 'Polvo interestelar',
@@ -37,6 +38,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
     methodological: 'Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.',
     frontend: {
       en: 'See how interstellar dust dims, reddens and re-emits starlight.',
+      qm: 'Yıldızlararası toznıñ yıldız yarığını nasıl zayıflattığını, qırmızılaştırğanını ve başqa dalğa uzunlıqlarında qayta saçqanını ögreniñiz.',
       zh: '了解星际尘埃如何使星光变暗、变红，并重新辐射能量。',
       hi: 'जानें कि तारों के बीच की धूल तारों के प्रकाश को मंद, लाल और पुनः उत्सर्जित कैसे करती है।',
       es: 'Descubre cómo el polvo interestelar atenúa, enrojece y vuelve a emitir la luz estelar.',

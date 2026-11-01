@@ -5,6 +5,7 @@ export const galaxyStellarPopulations_Skill_Data = buildSkillConfig({
   id: 'a0c0bdf2-17b1-44e8-aaf0-07123264dc12',
   name: {
     en: 'Galaxy Stellar Populations',
+    qm: 'Galaktikalardaki yıldız nesilleri',
     zh: '星系恒星族群',
     hi: 'आकाशगंगाओं की तारकीय आबादी',
     es: 'Poblaciones estelares de galaxias',
@@ -38,6 +39,7 @@ export const galaxyStellarPopulations_Skill_Data = buildSkillConfig({
       'Infer differences in star formation and past evolution from stellar colors, spectra and age indicators.',
     frontend: {
       en: "Use a galaxy's light to infer differences in its stars and star-formation history.",
+      qm: 'Galaktikanıñ yarığından onıñ yıldızları ve yıldızlarnıñ peyda oluv tarihı aqqında malümat çıqarıñız.',
       zh: '利用星系的光推测其中恒星及恒星形成历史的差异。',
       hi: 'आकाशगंगा के प्रकाश से उसके तारों और तारा निर्माण के इतिहास में अंतर जानें।',
       es: 'Utiliza la luz de una galaxia para deducir diferencias entre sus estrellas y su historia de formación estelar.',

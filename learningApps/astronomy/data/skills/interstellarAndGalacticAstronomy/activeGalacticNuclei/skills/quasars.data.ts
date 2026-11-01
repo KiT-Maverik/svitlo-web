@@ -5,6 +5,7 @@ export const quasars_Skill_Data = buildSkillConfig({
   id: 'd88337d9-a374-45b1-a915-0fa209204c5b',
   name: {
     en: 'Quasars',
+    qm: 'Kvazarlar',
     zh: '类星体',
     hi: 'क्वेसर',
     es: 'Cuásares',
@@ -38,6 +39,7 @@ export const quasars_Skill_Data = buildSkillConfig({
       'Identify quasars as luminous manifestations of active galactic nuclei, including the implications of their cosmological distances.',
     frontend: {
       en: 'Recognize quasars as extremely bright examples of active galactic nuclei.',
+      qm: 'Kvazarlarnı pek parlak faol galaktik çekirdekler olaraq tanıñız.',
       zh: '认识类星体是极其明亮的活动星系核。',
       hi: 'क्वेसरों को सक्रिय आकाशगंगीय नाभिकों के अत्यंत चमकीले उदाहरणों के रूप में पहचानें।',
       es: 'Reconoce los cuásares como ejemplos extremadamente brillantes de núcleos galácticos activos.',

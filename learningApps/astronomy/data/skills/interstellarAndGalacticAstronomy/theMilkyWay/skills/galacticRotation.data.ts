@@ -5,6 +5,7 @@ export const galacticRotation_Skill_Data = buildSkillConfig({
   id: '9beaa8ae-e933-46e9-b99c-d9bc3621c3ab',
   name: {
     en: 'Galactic Rotation',
+    qm: 'Galaktikanıñ dönüvi',
     zh: '银河系旋转',
     hi: 'आकाशगंगा का घूर्णन',
     es: 'Rotación galáctica',
@@ -38,6 +39,7 @@ export const galacticRotation_Skill_Data = buildSkillConfig({
       'Explain how orbital motions and measured velocities reveal the distribution of mass in the Milky Way.',
     frontend: {
       en: 'Use the motion of stars and gas to learn how mass is distributed in our galaxy.',
+      qm: 'Yıldız ve gaz areketine baqıp, öz galaktikamızda kütleniñ nasıl tarqalğanını ögreniñiz.',
       zh: '利用恒星和气体的运动了解银河系中的质量分布。',
       hi: 'तारों और गैस की गति से जानें कि हमारी आकाशगंगा में द्रव्यमान कैसे बँटा है।',
       es: 'Usa el movimiento de estrellas y gas para descubrir cómo se distribuye la masa en nuestra galaxia.',

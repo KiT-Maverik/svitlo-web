@@ -5,6 +5,7 @@ export const supermassiveBlackHoles_Skill_Data = buildSkillConfig({
   id: '98de2957-3d94-4ecc-abe4-75b33ade2fbd',
   name: {
     en: 'Supermassive Black Holes',
+    qm: 'Pek büyük kütleli qara deşikler',
     zh: '超大质量黑洞',
     hi: 'अतिविशाल ब्लैक होल',
     es: 'Agujeros negros supermasivos',
@@ -38,6 +39,7 @@ export const supermassiveBlackHoles_Skill_Data = buildSkillConfig({
       'Interpret evidence for compact massive objects in galaxy centers and their influence on nearby orbits.',
     frontend: {
       en: 'Explore the evidence for massive black holes at the centres of galaxies.',
+      qm: 'Galaktika merkezlerinde pek büyük kütleli qara deşikler barlığına dair delillerni araştırıñız.',
       zh: '探索支持星系中心存在巨大黑洞的证据。',
       hi: 'आकाशगंगाओं के केंद्रों में विशाल ब्लैक होल होने के प्रमाणों को जानें।',
       es: 'Examina las pruebas de la existencia de enormes agujeros negros en los centros de las galaxias.',

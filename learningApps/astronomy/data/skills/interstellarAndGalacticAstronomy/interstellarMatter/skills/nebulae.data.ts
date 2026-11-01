@@ -5,6 +5,7 @@ export const nebulae_Skill_Data = buildSkillConfig({
   id: 'af0e6597-0519-4e84-9ec7-0ffdb8b6df88',
   name: {
     en: 'Nebulae',
+    qm: 'Tumanlıqlar',
     zh: '星云',
     hi: 'नीहारिकाएँ',
     es: 'Nebulosas',
@@ -38,6 +39,7 @@ export const nebulae_Skill_Data = buildSkillConfig({
       'Distinguish emission, reflection and dark nebulae by their observable mechanisms and relation to surrounding light sources.',
     frontend: {
       en: 'Recognize different kinds of nebulae by the way they interact with light.',
+      qm: 'Tumanlıqlarnıñ yarıq ile qarşılıqlı tesirine köre çeşitlerini tanıñız.',
       zh: '根据星云与光的相互作用区分不同类型的星云。',
       hi: 'प्रकाश के साथ उनकी अंतःक्रिया से विभिन्न प्रकार की नीहारिकाएँ पहचानें।',
       es: 'Reconoce diferentes nebulosas según cómo interactúan con la luz.',
