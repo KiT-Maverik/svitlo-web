@@ -66,7 +66,7 @@ export const analyzeFrenchNewWaveCinema_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся пра эксперыментальныя здымкі і мантаж французскага кіно новай хвалі.',
       ka: 'გაეცანით ფრანგული ახალი ტალღის კინოს ექსპერიმენტულ გადაღებასა და მონტაჟს.',
       kk: 'Француздық жаңа толқын киносының тәжірибелік түсірілімі мен монтажын зерттеңіз.',
-      qm: 'Fransız Yeni Dalğa sinemasının tecribeli çekim ve montaj usullarını keşfedin.',
+      qm: 'Fransız Yeni Dalğa sinemasının tecribeli çekim ve montaj usullarını keşf etiñiz.',
     },
   },
 });

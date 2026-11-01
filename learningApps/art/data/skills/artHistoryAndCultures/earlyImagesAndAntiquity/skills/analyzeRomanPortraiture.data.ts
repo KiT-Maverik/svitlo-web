@@ -66,7 +66,7 @@ export const analyzeRomanPortraiture_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як рымскія партрэты адлюстроўвалі асоб і іх грамадскае становішча.',
       ka: 'გაეცანით, როგორ ასახავდა რომაული პორტრეტები ადამიანებსა და მათ საზოგადოებრივ მდგომარეობას.',
       kk: 'Зерттеңіз: Рим портреттері адамдарды және олардың қоғамдағы орнын қалай бейнелеген.',
-      qm: 'Roma portrelerinin şahısları ve içtimai mevqilerini nasıl tasvir etkenini keşfedin.',
+      qm: 'Roma portrelerinin şahısları ve içtimai mevqilerini nasıl tasvir etkenini keşf etiñiz.',
     },
   },
 });

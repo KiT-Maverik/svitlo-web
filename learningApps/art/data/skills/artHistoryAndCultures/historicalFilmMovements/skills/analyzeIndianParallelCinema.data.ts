@@ -66,7 +66,7 @@ export const analyzeIndianParallelCinema_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як індыйскае паралельнае кіно стварыла альтэрнатыву мэйнстрымным кінастылям.',
       ka: 'გაიგეთ, როგორ განავითარა ინდურმა პარალელურმა კინომ მეინსტრიმული კინოს სტილების ალტერნატივები.',
       kk: 'Зерттеңіз: Үндістанның параллель киносы негізгі кино стильдеріне қандай баламалар ұсынды.',
-      qm: 'Hindistan Paralel Sinemasının ana akım film üsluplarına nasıl alternatifler geliştirdiğini keşfedin.',
+      qm: 'Hindistan Paralel Sinemasının ana akım film üsluplarına nasıl alternatifler geliştirdiğini keşf etiñiz.',
     },
   },
 });
