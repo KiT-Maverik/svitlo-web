@@ -20,7 +20,7 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
     bn: 'যোগ ও বিয়োগ — 3-অঙ্কের · পুনর্বিন্যাস ছাড়া',
     pt: 'Adição e subtração — 3-algarismos · Sem reagrupamento',
     ur: 'جمع اور تفریق — 3-ہندسوں · دوبارہ گروہ بندی کے بغیر',
-    id: 'Penjumlahan dan pengurangan — 3-angka · Tanpa pengelompokan ulang',
+    id: 'Penjumlahan dan pengurangan — bilangan tiga angka tanpa pengelompokan ulang',
     de: 'Addition und Subtraktion — 3-stellige · Ohne Bündelwechsel',
     ja: '加減算 — 3-桁の数 · 位の繰り上がり・下がりなし',
     ko: '덧셈과 뺄셈 — 3-자리 수 · 자리 바꿈 없이',
