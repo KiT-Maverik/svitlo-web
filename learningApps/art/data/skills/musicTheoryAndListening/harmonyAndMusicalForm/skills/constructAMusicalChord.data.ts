@@ -61,7 +61,7 @@ export const constructAMusicalChord_Skill_Data = buildSkillConfig({
       uk: 'Поєднайте ноти, щоб створити акорд із вибраним музичним звучанням.',
       lt: 'Sujunkite natas ir sukurkite norimo skambesio akordą.',
       lv: 'Apvienojiet notis, lai izveidotu akordu ar izvēlēto skanējumu.',
-      et: 'Ühendage noodid, et luua soovitud kõlaga akord.',
+      et: 'Ühenda noodid, et luua soovitud kõlaga akord.',
       be: "Аб'яднайце ноты, каб стварыць акорд з абраным музычным гучаннем.",
       ka: 'შეაერთეთ ნოტები სასურველი ჟღერადობის აკორდის შესაქმნელად.',
       kk: 'Ноталарды біріктіріп, таңдалған музыкалық дыбысталуы бар аккорд құрастырыңыз.',

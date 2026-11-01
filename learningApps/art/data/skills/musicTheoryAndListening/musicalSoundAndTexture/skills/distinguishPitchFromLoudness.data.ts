@@ -61,7 +61,7 @@ export const distinguishPitchFromLoudness_Skill_Data = buildSkillConfig({
       uk: 'Визначай, чи звук високий або низький, не плутаючи це з гучністю.',
       lt: 'Nustatykite, ar garsas aukštas, ar žemas, nepainiodami to su garsumu.',
       lv: 'Nosakiet, vai skaņa ir augsta vai zema, nejaucot to ar skaļumu.',
-      et: 'Tuvastage, kas heli on kõrge või madal, ajamata seda segi valjusega.',
+      et: 'Tuvasta, kas heli on kõrge või madal, ajamata seda segi valjusega.',
       be: 'Вызначайце, ці гук высокі або нізкі, не блытаючы гэта з гучнасцю.',
       ka: 'გაარჩიეთ, ბგერა მაღალია თუ დაბალი და ნუ აურევთ ამას ხმის სიძლიერეში.',
       kk: 'Дыбыстың жоғары не төмен екенін оның қаттылығымен шатастырмай анықтаңыз.',
