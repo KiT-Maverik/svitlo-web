@@ -1,5 +1,5 @@
 import { defineContentBlockCatalog, type ContentBlock_Catalog_DataFor, type Section } from '@svitlo/engine/content';
-import type { theoryDefinition } from '@/data/lessons/1/howLightMoves/sections/theory/theory.definition';
+import type { theoryDefinition } from './theory.definition';
 import { checkpointData } from './checkpoints/checkpoint';
 import { lightPropagationSimulationData } from './scenes/lightPropagationSimulation';
 import { lightRayDiagramData } from './scenes/lightRayDiagram';
@@ -10,6 +10,7 @@ export const theoryData = {
   slug: 'theory' as const,
   title: theory.name,
   navigationLabel: theory.name,
+  contentOrder: ['markdown/p1', 'scene/lightRayDiagram', 'markdown/p2', 'scene/lightPropagationSimulation', 'markdown/p3', 'checkpoint/checkpoint'],
   content: defineContentBlockCatalog({
     checkpoint: { checkpoint: checkpointData },
     markdown: {
@@ -22,4 +23,4 @@ export const theoryData = {
       lightRayDiagram: lightRayDiagramData,
     },
   } satisfies ContentBlock_Catalog_DataFor<typeof theoryDefinition.content>),
-} satisfies Section<'data'>;
+} satisfies Section<'data'> & { contentOrder: string[] };

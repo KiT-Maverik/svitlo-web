@@ -1,6 +1,6 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine';
 import { defineLessonV2Data, type LessonV2 } from '@svitlo/engine/content';
-import type { howLightMovesDefinition } from '@/data/lessons/1/howLightMoves/howLightMoves.definition';
+import type { howLightMovesDefinition } from './howLightMoves.definition';
 import { howLightMovesFlashcards } from './flashcards/index.data';
 import { howLightMoves_Locale } from './howLightMoves';
 import { howLightMovesQuestionsData } from './questions/index.data';

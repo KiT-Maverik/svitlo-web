@@ -4,7 +4,7 @@ import {
   type ContentBlock_Catalog_DataFor,
   type Section,
 } from '@svitlo/engine/content';
-import type { quizDefinition } from '@/data/lessons/1/howLightMoves/sections/quiz/quiz.definition';
+import type { quizDefinition } from './quiz.definition';
 import { howLightMovesQuestionsData } from '../../questions/index.data';
 import { quiz } from './quiz';
 
@@ -36,7 +36,8 @@ export const quizData = {
   title: quiz.name,
   navigationLabel: quiz.name,
   skippable: true,
+  contentOrder: ['quiz/quiz'],
   content: defineContentBlockCatalog({
     quiz: { quiz: quizBlock },
   } satisfies ContentBlock_Catalog_DataFor<typeof quizDefinition.content>),
-} satisfies Section<'data'>;
+} satisfies Section<'data'> & { contentOrder: string[] };
