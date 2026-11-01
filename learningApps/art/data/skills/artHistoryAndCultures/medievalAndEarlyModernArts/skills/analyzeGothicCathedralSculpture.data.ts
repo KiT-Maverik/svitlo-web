@@ -60,7 +60,7 @@ export const analyzeGothicCathedralSculpture_Skill_Data = buildSkillConfig({
       he: 'גלה כיצד דמויות מגולפות בקתדרלות מספרות סיפורים בתוך האדריכלות הגותית.',
       pl: 'Poznaj, jak rzeźbione postacie katedralne opowiadają historie w architekturze gotyckiej.',
       uk: 'Досліджувати, як різьблені постаті соборів передають історії в контексті готичної архітектури.',
-      lt: 'Sužinok, kaip iškaltos katedrų figūros pasakoja istorijas gotikinėje architektūroje.',
+      lt: 'Sužinokite, kaip gotikinių katedrų skulptūros perteikė religinius pasakojimus viduramžių žiūrovams.',
       lv: 'Uzzini, kā katedrāļu tēlotās figūras gotiskajā arhitektūrā vēsta stāstus.',
       et: 'Uuri, kuidas katedraalide raidfiguurid jutustavad lugusid gooti arhitektuuri kontekstis.',
       be: 'Даведайся, як разьбяныя постаці сабораў перадаюць гісторыі ў гатычнай архітэктуры.',

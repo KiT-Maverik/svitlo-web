@@ -60,7 +60,7 @@ export const analyzeConstructivism_Skill_Data = buildSkillConfig({
       he: 'גלו כיצד אמני הקונסטרוקטיביזם שילבו צורות גאומטריות, חומרים ניסיוניים ורעיונות חברתיים.',
       pl: 'Poznaj, jak artyści konstruktywistyczni łączyli formy geometryczne, eksperymentalne materiały i idee społeczne.',
       uk: 'Досліджуй, як митці-конструктивісти поєднували геометричні форми, експериментальні матеріали та суспільні ідеї.',
-      lt: 'Sužinok, kaip konstruktyvistai jungė geometrines formas, eksperimentines medžiagas ir visuomenines idėjas.',
+      lt: 'Sužinokite, kaip konstruktyvistai jungė geometrines formas, eksperimentines medžiagas ir visuomenines idėjas.',
       lv: 'Uzzini, kā konstruktīvisti apvienoja ģeometriskas formas, eksperimentālus materiālus un sociālas idejas.',
       et: 'Uuri, kuidas konstruktivistid ühendasid geomeetrilisi vorme, eksperimentaalseid materjale ja ühiskondlikke ideid.',
       be: 'Даведайся, як канструктывісты спалучалі геаметрычныя формы, эксперыментальныя матэрыялы і грамадскія ідэі.',

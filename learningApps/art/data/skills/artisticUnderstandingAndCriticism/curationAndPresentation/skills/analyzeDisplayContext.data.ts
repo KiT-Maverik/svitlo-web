@@ -59,7 +59,7 @@ export const analyzeDisplayContext_Skill_Data = buildSkillConfig({
       he: 'גלו כיצד תאורה, קנה מידה, מיקום ותוויות משפיעים על הצגת יצירת אמנות.',
       pl: 'Sprawdź, jak światło, skala, położenie i etykiety wpływają na prezentację dzieła.',
       uk: 'Дослідіть, як світло, масштаб, розташування й підписи впливають на презентацію твору.',
-      lt: 'Sužinok, kaip šviesa, mastelis, vieta ir etiketės veikia meno kūrinio pateikimą.',
+      lt: 'Sužinokite, kaip apšvietimas, mastelis, vieta ir aiškinamosios etiketės veikia žiūrovų meno kūrinio suvokimą.',
       lv: 'Atklāj, kā gaisma, mērogs, novietojums un etiķetes ietekmē mākslas darba eksponēšanu.',
       et: 'Uuri, kuidas valgus, mõõtkava, paigutus ja sildid mõjutavad kunstiteose esitlemist.',
       be: 'Даследуй, як святло, маштаб, размяшчэнне й подпісы ўплываюць на прэзентацыю твора.',
