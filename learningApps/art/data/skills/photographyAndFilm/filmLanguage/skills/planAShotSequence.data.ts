@@ -7,7 +7,7 @@ export const planAShotSequence_Skill_Data = buildSkillConfig({
     en: 'Plan a Shot Sequence',
 
     zh: '规划镜头顺序',
-    hi: 'योजना शॉट क्रम',
+    hi: 'शॉट्स के क्रम की योजना बनाएँ',
     es: 'Planificar una secuencia de planos',
     ar: 'تخطيط تسلسل اللقطات',
     fr: 'Planifier une séquence de plans',
