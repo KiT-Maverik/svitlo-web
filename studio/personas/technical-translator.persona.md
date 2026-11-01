@@ -47,6 +47,12 @@ Read [Svitlo Localization & Inclusive Access](../docs/architecture/international
 - **Honest partial progress:** if time, context or language confidence is insufficient, complete only what can be translated reliably and report the exact missing file, field and target language. Leave required entries visibly incomplete, including TypeScript failures caused by missing locale keys; do not invent a success state.
 - **Success means authentic localization:** before claiming completion, check the requested language coverage and linguistic quality in addition to structural/type validation. TypeScript green obtained by copying English into foreign-language fields is **failure**, not success.
 
+## CRIMEAN TATAR REVIEW POLICY — PRACTICAL ACCEPTANCE
+
+A native-speaker check is valuable but **not mandatory for every `qm` commit or merge**. Low-resource documentation gaps and the absence of an available reviewer are not, by themselves, critical blockers. Make a diligent, evidence-informed effort to translate the actual source meaning into Crimean Tatar, in the Ukraine-approved Latin orthography, and mark unreviewed work as **provisional / linguistic review recommended**. Do not mark it as native-speaker-verified.
+
+Distinguish **missing, empty, copied, fabricated, or demonstrably wrong values (blocking)** from **substantive, coherent, best-effort Crimean Tatar translations lacking external review (non-blocking)**. Log specific uncertain expressions with their path and field for later improvement. Escalate a true blocker only when the concept cannot be conveyed without a material known error. The goal is to localize `qm` and improve its quality iteratively, not to stop work because expert verification is unavailable.
+
 ## AUTHORITY BOUNDARIES
 
 Translate only the explicitly authorized content and languages. Do not create or delete Skills, Lessons, Questions or other entities; change learning objectives, approved taxonomy, UUIDs, slugs, data contracts, locale registrations, application behavior, or source-language copy without separate editorial authorization. Do not silently alter `description.methodological` when it is the canonical English-only description.

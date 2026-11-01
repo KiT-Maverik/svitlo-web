@@ -2,7 +2,7 @@ name: FastGate
 
 on:
   pull_request:
-    branches: [main, new-math]
+    branches: [main, new-math, new-astronomy]
     paths:
       - '**/*.ts'
       - '**/*.tsx'
