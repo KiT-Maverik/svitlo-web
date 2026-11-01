@@ -61,7 +61,7 @@ export const stellarLuminosity_Skill_Data = buildSkillConfig({
       pl: 'Odróżnij energię wypromieniowywaną przez gwiazdę od jej jasności widzianej z Ziemi.',
       uk: 'Розрізняйте потужність випромінювання зорі та її видиму яскравість із Землі.',
       lt: 'Atskirkite žvaigždės spinduliuojamą energiją nuo jos regimojo ryškio iš Žemės.',
-      lv: 'Atšķiriet zvaigznes izstaroto enerģiju no tās šķietamā spožuma, raugoties no Zemes.',
+      lv: 'Atšķiriet zvaigznes izstaroto enerģiju laika vienībā no tās šķietamā spožuma, raugoties no Zemes.',
       et: 'Erista tähe kiiratavat energiat ja selle Maalt nähtavat heledust.',
       be: 'Адрозьнівайце выпраменьваную зоркай энэргію ад яе бачнай яркасьці зь Зямлі.',
       ka: 'განასხვავეთ ვარსკვლავის გამოსხივებული ენერგია და მისი ხილული სიკაშკაშე დედამიწიდან.',
