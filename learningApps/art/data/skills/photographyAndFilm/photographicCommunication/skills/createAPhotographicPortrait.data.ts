@@ -17,7 +17,7 @@ export const createAPhotographicPortrait_Skill_Data = buildSkillConfig({
     id: 'Membuat potret fotografi',
     de: 'Ein fotografisches Porträt gestalten',
     ja: '写真ポートレートを制作する',
-    ko: '사진 인물 사진 만들기',
+    ko: '인물 사진 촬영하기',
     tr: 'Fotoğraf portresi oluşturmak',
     vi: 'Tạo chân dung nhiếp ảnh',
     ta: 'புகைப்பட உருவப்படம் உருவாக்கவும்',

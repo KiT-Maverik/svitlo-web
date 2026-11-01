@@ -16,7 +16,7 @@ export const analyzeRomanPortraiture_Skill_Data = buildSkillConfig({
     id: 'Menganalisis Seni Potret Romawi',
     de: 'Römische Porträtkunst analysieren',
     ja: 'ローマの肖像表現を分析する',
-    ko: '로마 초상 조각 분석하기',
+    ko: '로마 초상 미술 분석하기',
     tr: 'Roma portre sanatını incelemek',
     vi: 'Phân tích nghệ thuật chân dung La Mã',
     ta: 'உரோமானிய உருவப்படக் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
