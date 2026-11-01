@@ -40,7 +40,7 @@ export const arrayModel_Skill_Data = buildSkillConfig({
     frontend: {
       en: 'You can arrange objects in equal rows and columns to show multiplication and find the total.',
       qm: 'Eşyalarnı teñ satır ve sütunlarğa yerleştirip arttıruvnı köstere ve olarnıñ umumiy sayısını tapa bilesiñ.',
-      zh: '你能把物体排成行列数目相等的方阵，用来表示乘法并求出总数。',
+      zh: '你能把物体排成每行数量相同的长方形阵列，用行数乘每行个数求出总数。',
       hi: 'तुम वस्तुओं को बराबर पंक्तियों और स्तंभों में सजाकर गुणा दिखा सकते हो और कुल संख्या निकाल सकते हो।',
       es: 'Puedes ordenar objetos en filas y columnas iguales para representar una multiplicación y hallar el total.',
       ar: 'يمكنك ترتيب الأشياء في صفوف وأعمدة متساوية لتمثيل الضرب وإيجاد المجموع.',
