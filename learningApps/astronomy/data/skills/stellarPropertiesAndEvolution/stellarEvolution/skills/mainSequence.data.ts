@@ -46,7 +46,7 @@ export const mainSequence_Skill_Data = buildSkillConfig({
       fr: 'Expliquez pourquoi les étoiles passent une grande partie de leur vie à fusionner l\'hydrogène dans leur cœur.',
       bn: 'নক্ষত্র জীবনের বেশির ভাগ সময় কেন্দ্রে হাইড্রোজেন সংযোজন কেন ঘটায়, তা ব্যাখ্যা করো।',
       pt: 'Explique por que as estrelas passam grande parte da vida fundindo hidrogênio em seus núcleos.',
-      ur: 'وضاحت کریں کہ ستارے اپنی زیادہ تر زندگی مرکز میں ہائیڈروجن کے جوہری انشقاق میں کیوں گزارتے ہیں۔',
+      ur: 'وضاحت کریں کہ ستارے اپنی زیادہ تر زندگی مرکز میں ہائیڈروجن کے جوہری انضمام میں کیوں گزارتے ہیں۔',
       id: 'Jelaskan mengapa bintang menghabiskan sebagian besar hidupnya dengan menggabungkan hidrogen di intinya.',
       de: 'Erkläre, warum Sterne den größten Teil ihres Lebens Wasserstoff in ihren Kernen fusionieren.',
       ja: '星が生涯の大部分を中心部で水素を核融合させながら過ごす理由を説明しましょう。',
