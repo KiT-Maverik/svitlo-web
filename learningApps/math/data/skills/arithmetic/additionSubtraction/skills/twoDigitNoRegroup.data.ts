@@ -15,7 +15,7 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
     zh: '加减法 — 2-位数 · 不进退位',
     hi: 'जोड़ और घटाव — 2-अंकीय · बिना पुनर्समूहन',
     es: 'Suma y resta — 2-cifras · Sin reagrupación',
-    ar: 'الجمع والطرح — 2-أرقام · دون إعادة التجميع',
+    ar: 'الجمع والطرح — أعداد من خانتين دون إعادة التجميع',
     fr: 'Addition et soustraction — 2-chiffres · Sans regroupement',
     bn: 'যোগ ও বিয়োগ — 2-অঙ্কের · পুনর্বিন্যাস ছাড়া',
     pt: 'Adição e subtração — 2-algarismos · Sem reagrupamento',
