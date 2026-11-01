@@ -12,7 +12,7 @@ export const selectTextilesForGarments_Skill_Data = buildSkillConfig({
     ar: 'اختيار الأقمشة للملابس',
     fr: 'Choisir des textiles pour les vêtements',
     bn: 'পোশাকের জন্য বস্ত্র নির্বাচন করুন',
-    pt: 'Selecionar tecidos para vestuário',
+    pt: 'Selecionar tecidos para roupas',
     ur: 'ملبوسات کے لیے کپڑے منتخب کریں',
     id: 'Memilih tekstil untuk busana',
     de: 'Textilien für Kleidungsstücke auswählen',

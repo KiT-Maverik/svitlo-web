@@ -47,7 +47,7 @@ export const developAFashionCollection_Skill_Data = buildSkillConfig({
       ar: 'صمّم سلسلة من الإطلالات المترابطة مع اختلافات مدروسة.',
       fr: 'Concevez une série de tenues cohérentes présentant des variations réfléchies.',
       bn: 'পরিকল্পিত পার্থক্যসহ সম্পর্কযুক্ত পোশাকের একটি সিরিজ নকশা করুন।',
-      pt: 'Desenhe uma série de coordenados relacionados, com diferenças ponderadas.',
+      pt: 'Crie uma série de roupas relacionadas, com variações deliberadas de forma, material e detalhes.',
       ur: 'سوچ سمجھ کر مختلف خصوصیات والے باہم مربوط ملبوسات کا سلسلہ ڈیزائن کریں۔',
       id: 'Rancang rangkaian busana yang saling terkait dengan variasi yang dipikirkan matang.',
       de: 'Entwickle eine zusammengehörige Reihe von Outfits mit durchdachten Unterschieden.',

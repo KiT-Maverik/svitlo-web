@@ -12,7 +12,7 @@ export const draftGarmentPatterns_Skill_Data = buildSkillConfig({
     ar: 'رسم أنماط الملابس',
     fr: 'Tracer des patrons de vêtements',
     bn: 'পোশাকের প্যাটার্ন তৈরি করুন',
-    pt: 'Traçar moldes de vestuário',
+    pt: 'Desenhar moldes de roupas',
     ur: 'لباس کے پیٹرن تیار کریں',
     id: 'Membuat pola busana',
     de: 'Kleidungsschnitte entwerfen',

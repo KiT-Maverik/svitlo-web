@@ -12,7 +12,7 @@ export const designGarmentSilhouettes_Skill_Data = buildSkillConfig({
     ar: 'تصميم ظلال الملابس',
     fr: 'Concevoir les silhouettes des vêtements',
     bn: 'পোশাকের সিলুয়েট নকশা করুন',
-    pt: 'Desenhar silhuetas de vestuário',
+    pt: 'Desenhar silhuetas de roupas',
     ur: 'لباس کے خدوخال ڈیزائن کریں',
     id: 'Merancang siluet busana',
     de: 'Kleidungssilhouetten gestalten',

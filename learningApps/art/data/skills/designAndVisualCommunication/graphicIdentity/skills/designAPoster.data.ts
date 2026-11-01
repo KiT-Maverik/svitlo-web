@@ -12,7 +12,7 @@ export const designAPoster_Skill_Data = buildSkillConfig({
     ar: 'تصميم ملصق',
     fr: 'Concevoir une affiche',
     bn: 'পোস্টার নকশা করুন',
-    pt: 'Conceber um cartaz',
+    pt: 'Projetar um cartaz',
     ur: 'پوسٹر ڈیزائن کریں',
     id: 'Merancang poster',
     de: 'Ein Plakat gestalten',
