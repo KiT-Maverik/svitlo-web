@@ -5,7 +5,7 @@ export const milkyWayStructure_Skill_Data = buildSkillConfig({
   id: 'd6602fe7-c23d-44ed-ac6c-68afc483fbec',
   name: {
     en: 'Milky Way Structure',
-    qm: 'Samanyolu galaktikasınıñ quruluşu',
+    qm: 'Kâbe yolu galaktikasınıñ quruluşu',
     zh: '银河系结构',
     hi: 'आकाशगंगा की संरचना',
     es: 'Estructura de la Vía Láctea',

@@ -39,7 +39,7 @@ export const solarSystemsGalacticLocation_Skill_Data = buildSkillConfig({
       'Locate the Sun approximately within the Galactic disk, distinguishing its local spiral-arm environment from the Galactic center.',
     frontend: {
       en: 'Locate the Solar System within the Milky Way rather than at its centre.',
-      qm: 'Küneş sistemasını Samanyolunıñ merkezinde degil, onıñ içinde olğan bir yerde tapıñız.',
+      qm: 'Küneş sistemasını Kâbe yolunıñ merkezinde degil, onıñ içinde olğan bir yerde tapıñız.',
       zh: '了解太阳系在银河系中的位置，而不是误以为它位于中心。',
       hi: 'आकाशगंगा में सौरमंडल की स्थिति खोजें और जानें कि यह केंद्र में नहीं है।',
       es: 'Sitúa el sistema solar dentro de la Vía Láctea, no en su centro.',

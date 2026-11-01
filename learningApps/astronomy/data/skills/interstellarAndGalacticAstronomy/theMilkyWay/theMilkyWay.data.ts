@@ -12,7 +12,7 @@ export const theMilkyWay_SkillGroup_Data = buildSkillGroupConfig({
   id: '8e527ec4-34b1-40bc-9dd1-851c05b29573',
   name: {
     en: 'The Milky Way',
-    qm: 'Samanyolu',
+    qm: 'Kâbe yolu',
     zh: '银河系',
     hi: 'आकाशगंगा',
     es: 'La Vía Láctea',
@@ -52,7 +52,7 @@ export const theMilkyWay_SkillGroup_Data = buildSkillGroupConfig({
       'Our galaxy is mapped from an interior viewpoint by combining stellar distributions, gas, motions and distance measurements.',
     frontend: {
       en: 'Learn how astronomers map the Milky Way from inside it.',
-      qm: 'Samanyolunıñ içinde turıp astronomlar onı nasıl haritağa tüşürgenlerini ögreniñiz.',
+      qm: 'Kâbe yolunıñ içinde turıp astronomlar onı nasıl haritağa tüşürgenlerini ögreniñiz.',
       zh: '了解天文学家如何从银河系内部绘制它的地图。',
       hi: 'जानें कि खगोलविद हमारी आकाशगंगा के अंदर से उसका मानचित्र कैसे बनाते हैं।',
       es: 'Aprende cómo los astrónomos trazan mapas de la Vía Láctea desde su interior.',

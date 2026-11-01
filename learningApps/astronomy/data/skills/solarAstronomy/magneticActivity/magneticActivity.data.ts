@@ -12,7 +12,7 @@ export const magneticActivity_SkillGroup_Data = buildSkillGroupConfig({
   id: '477e03be-7e47-4d37-b428-ac6c4066addd',
   name: {
     en: 'Magnetic Activity',
-    qm: 'Magnit faoliyeti',
+    qm: 'Magnit faaliyeti',
     bn: 'সূর্যের চৌম্বকীয় কার্যকলাপ',
     ur: 'سورج کی مقناطیسی سرگرمی',
     ta: 'சூரியனின் காந்தச் செயல்பாடு',

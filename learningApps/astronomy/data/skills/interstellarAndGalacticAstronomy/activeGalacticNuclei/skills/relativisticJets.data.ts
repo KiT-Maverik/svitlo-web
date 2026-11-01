@@ -39,7 +39,7 @@ export const relativisticJets_Skill_Data = buildSkillConfig({
       'Explain the observed collimated outflows in some active galaxies and the role of viewing geometry.',
     frontend: {
       en: 'Explore the narrow, fast-moving jets produced by some active galaxies.',
-      qm: 'Bazı faol galaktikalardan çıqqan tar ve pek tez areket etken madde aqımlarını araştırıñız.',
+      qm: 'Bazı faal galaktikalardan çıqqan tar ve pek tez areket etken madde aqımlarını araştırıñız.',
       zh: '探索一些活动星系发出的狭窄高速喷流。',
       hi: 'कुछ सक्रिय आकाशगंगाओं से निकलने वाली संकरी और तेज़ जेट धाराओं का अध्ययन करें।',
       es: 'Explora los chorros estrechos y veloces que producen algunas galaxias activas.',
