@@ -1,6 +1,6 @@
 # Content Block Renderer (new lesson architecture)
 
-Import from `@/components/pages/Lesson/ContentBlockRenderer/ContentBlockRenderer`.
+Import from `@/components/pages/Lesson/ContentBlockRenderer`.
 
 ```tsx
 import {
@@ -8,7 +8,7 @@ import {
   ContentBlockCatalogRenderer,
   type ContentBlockReference,
   type SceneRegistry,
-} from '@/components/pages/Lesson/ContentBlockRenderer/ContentBlockRenderer';
+} from '@/components/pages/Lesson/ContentBlockRenderer';
 
 // For one response block (type-grouped catalog):
 <ContentBlockRenderer type="text" response={section.content.text!.intro} />

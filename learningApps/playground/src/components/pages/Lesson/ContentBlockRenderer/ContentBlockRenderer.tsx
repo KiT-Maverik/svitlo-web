@@ -98,12 +98,25 @@ function CheckpointBlock({
       <div role={response.renderAsGroup ? 'group' : undefined}>
         {response.items.map((item, index) => {
           const checkable = item.check === true || (item.check === undefined && response.enableChecks === true);
+          const adornments = (position: 'left' | 'right') => (
+            <>
+              {response.showIndices !== false && (response.indexPosition ?? 'left') === position && (
+                <span aria-hidden="true">{index + 1}. </span>
+              )}
+              {response.showIcon && (response.iconPosition ?? 'left') === position && (
+                <span aria-hidden="true">✦ </span>
+              )}
+              {response.showChevron !== false && (response.chevronPosition ?? 'right') === position && (
+                <span aria-hidden="true">▸ </span>
+              )}
+            </>
+          );
           return (
             <details key={index}>
-              <summary>
-                {response.showIndices !== false && <span aria-hidden="true">{index + 1}. </span>}
-                {response.showIcon && <span aria-hidden="true">✦ </span>}
-                {item.question}
+              <summary style={{ listStyle: 'none', cursor: 'pointer' }}>
+                {adornments('left')}
+                <span>{item.question}</span>
+                {adornments('right')}
               </summary>
               <div>
                 {item.answer.map((block, blockIndex) => (
@@ -135,46 +148,51 @@ function CheckpointBlock({
 }
 
 function CodeBlock({ response }: { response: ContentBlockResponse<'code'> }) {
-  const [code, setCode] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [loaded, setLoaded] = useState<{ path: string; value: string } | null>(null);
+  const [failed, setFailed] = useState<{ path: string; message: string } | null>(null);
+  const locationIsLocal = response.fileLocation.startsWith('/') && !response.fileLocation.startsWith('//');
 
   useEffect(() => {
-    if (response.codeParams.length !== 0) return;
-    if (!response.fileLocation.startsWith('/') || response.fileLocation.startsWith('//')) {
-      setError('Code fileLocation must reference a same-origin published resource');
-      return;
-    }
+    if (response.codeParams.length !== 0 || !locationIsLocal) return;
     const controller = new AbortController();
-    setCode(null);
-    setError(null);
     void fetch(response.fileLocation, { signal: controller.signal })
       .then(async result => {
         if (!result.ok) throw new Error('HTTP ' + result.status);
         return result.text();
       })
-      .then(value => { if (!controller.signal.aborted) setCode(value); })
+      .then(value => {
+        if (!controller.signal.aborted) setLoaded({ path: response.fileLocation, value });
+      })
       .catch(reason => {
-        if (!controller.signal.aborted) setError(String(reason));
+        if (!controller.signal.aborted) setFailed({ path: response.fileLocation, message: String(reason) });
       });
     return () => controller.abort();
-  }, [response.fileLocation, response.codeParams]);
+  }, [response.fileLocation, response.codeParams, locationIsLocal]);
 
   if (response.codeParams.length !== 0) {
     throw new Error('Code block selector/parameter transformations are not defined by the Response contract');
   }
-  if (error) return <p role="alert">{error}</p>;
+  if (!locationIsLocal) throw new Error('Code fileLocation must reference a same-origin published resource');
+  if (failed?.path === response.fileLocation) return <p role="alert">{failed.message}</p>;
   return (
     <pre {...localizedAttributes(response)}>
-      <code>{code ?? response.fileLocation}</code>
+      <code>{loaded?.path === response.fileLocation ? loaded.value : response.fileLocation}</code>
     </pre>
   );
 }
 
-function youtubeEmbedUrl(href: string): string {
+function validateYoutubeUrl(href: string): URL {
   let url: URL;
   try { url = new URL(href); }
   catch { throw new Error('Invalid YouTube URL'); }
   if (url.protocol !== 'https:') throw new Error('YouTube URL must use HTTPS');
+  const allowed = ['youtu.be', 'youtube.com', 'www.youtube.com', 'm.youtube.com', 'www.youtube-nocookie.com'];
+  if (!allowed.includes(url.hostname.toLowerCase())) throw new Error('URL is not a supported YouTube host');
+  return url;
+}
+
+function youtubeEmbedUrl(href: string): string {
+  const url = validateYoutubeUrl(href);
   const host = url.hostname.toLowerCase();
   let id: string | undefined;
   if (host === 'youtu.be') id = url.pathname.slice(1);
@@ -189,8 +207,8 @@ function youtubeEmbedUrl(href: string): string {
 
 function YoutubeBlock({ response }: { response: ContentBlockResponse<'youtube'> }) {
   const attributes = localizedAttributes(response);
-  const url = youtubeEmbedUrl(response.href);
   if (response.mode === 'link') {
+    validateYoutubeUrl(response.href);
     return (
       <a {...attributes} href={response.href} rel="noopener noreferrer" target="_blank">
         {response.title || response.hint || response.href}
@@ -198,6 +216,7 @@ function YoutubeBlock({ response }: { response: ContentBlockResponse<'youtube'> 
     );
   }
   if (response.mode === 'embed') {
+    const url = youtubeEmbedUrl(response.href);
     if (!response.title && !response.hint) throw new Error('Embedded YouTube blocks require an accessible title or hint');
     return (
       <figure {...attributes}>
