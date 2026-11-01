@@ -61,7 +61,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
       lt: 'Palygink gyvūnus, kurie vystydamiesi keičia kūno formą, su tais, kurie jos nekeičia.',
       lv: 'Salīdzini dzīvniekus, kuri attīstoties maina ķermeņa formu, ar tiem, kuri to nemaina.',
       et: 'Võrdle loomi, kelle kehakuju arengu jooksul muutub, nendega, kellel see ei muutu.',
-      be: 'Параўноўвай жывёлаў, якія зьмяняюць форму цела падчас разьвіцьця, з тымі, якія гэтага ня робяць.',
+      be: 'Параўноўвай жывёлаў, у якіх падчас разьвіцьця істотна зьмяняецца будова цела, з тымі, у якіх такіх рэзкіх зьменаў няма.',
       ka: 'შეადარე ცხოველები, რომელთა სხეულის ფორმა განვითარებისას იცვლება, იმათ, რომელთა ფორმა არ იცვლება.',
       kk: 'Даму барысында дене пішіні өзгеретін жануарларды өзгермейтіндерімен салыстыр.',
     },
