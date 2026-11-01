@@ -47,7 +47,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
       ur: 'ان جانوروں کا موازنہ کریں جن کی شکل نشوونما کے دوران بدلتی ہے اور جن کی نہیں بدلتی۔',
       id: 'Bandingkan hewan yang berubah bentuk selama perkembangan dengan hewan yang tidak mengalaminya.',
       de: 'Vergleiche Tiere, die während ihrer Entwicklung ihre Gestalt verändern, mit solchen, bei denen das nicht geschieht.',
-      ja: '成長中に体の形が変わる動物と変わらない動物を比べよう。',
+      ja: '発育中に体の形が大きく変わる場合と、幼体が成体に似たまま成長する場合を比べよう。',
       ko: '성장하면서 몸의 형태가 바뀌는 동물과 그렇지 않은 동물을 비교해 보세요.',
       tr: 'Gelişirken biçim değiştiren hayvanlarla değiştirmeyenleri karşılaştır.',
       vi: 'So sánh động vật thay đổi hình dạng khi phát triển với động vật không thay đổi hình dạng.',

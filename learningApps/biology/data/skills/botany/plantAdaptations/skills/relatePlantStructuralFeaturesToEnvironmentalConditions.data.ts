@@ -47,7 +47,7 @@ export const relatePlantStructuralFeaturesToEnvironmentalConditions_Skill_Data =
       ur: 'بتائیں کہ جڑوں، پتوں اور نئی شاخوں کی شکلیں مختلف حالات کے موافق کیوں ہوتی ہیں۔',
       id: 'Jelaskan mengapa akar, daun, dan tunas memiliki bentuk yang sesuai dengan kondisi yang berbeda.',
       de: 'Erkläre, warum Wurzeln, Blätter und Sprosse unter verschiedenen Bedingungen unterschiedliche Formen haben.',
-      ja: '根、葉、芽がさまざまな環境に適した形をしている理由を説明しよう。',
+      ja: '根・葉・茎や枝の構造が、周囲の環境での生存にどう役立つか説明しよう。',
       ko: '뿌리, 잎, 싹이 서로 다른 환경에 적합한 형태를 지니는 이유를 설명해 보세요.',
       tr: 'Köklerin, yaprakların ve sürgünlerin farklı koşullara neden uygun biçimlerde olduğunu açıkla.',
       vi: 'Giải thích vì sao rễ, lá và chồi có hình dạng phù hợp với các điều kiện khác nhau.',
