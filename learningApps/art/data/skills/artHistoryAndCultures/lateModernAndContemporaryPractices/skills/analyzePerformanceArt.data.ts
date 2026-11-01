@@ -66,7 +66,7 @@ export const analyzePerformanceArt_Skill_Data = buildSkillConfig({
       be: 'Пазнаёмцеся з перформансамі, дзе жывая дзея і прысутнасць гледачоў становяцца мастацтвам.',
       ka: 'გაეცანით პერფორმანსებს, სადაც ცოცხალი მოქმედება და მაყურებლის დასწრება ხელოვნებად იქცევა.',
       kk: 'Зерттеңіз: тірі әрекет пен көрерменнің қатысуы өнерге айналатын перформанстарды.',
-      qm: 'Canlı eylemin ve izleyici varlığının sanata dönüştüğü performansları keşfedin.',
+      qm: 'Canlı eylemin ve izleyici varlığının sanata dönüştüğü performansları keşf etiñiz.',
     },
   },
 });

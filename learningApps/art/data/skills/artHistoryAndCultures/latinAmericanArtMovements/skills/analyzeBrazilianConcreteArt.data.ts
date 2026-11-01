@@ -66,7 +66,7 @@ export const analyzeBrazilianConcreteArt_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як бразільскія мастакі канкрэтнага мастацтва выкарыстоўвалі дакладныя геаметрычныя суадносіны.',
       ka: 'გაეცანით, როგორ იყენებდნენ ბრაზილიელი კონკრეტული ხელოვნების მხატვრები ზუსტ გეომეტრიულ მიმართებებს.',
       kk: 'Зерттеңіз: Бразилияның нақты өнер суретшілері дәл геометриялық қатынастарды қалай қолданды.',
-      qm: 'Brezilyalı somut sanatçıların kesin geometrik ilişkileri nasıl kullandığını keşfedin.',
+      qm: 'Brezilyalı somut sanatçıların kesin geometrik ilişkileri nasıl kullandığını keşf etiñiz.',
     },
   },
 });

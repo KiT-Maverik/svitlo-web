@@ -66,7 +66,7 @@ export const analyzeCuscoSchoolPainting_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як жывапіс Кускаўскай школы спалучае мастацкія ўплывы Анд і Еўропы.',
       ka: 'გაიგეთ, როგორ აერთიანებს კუსკოს სკოლის მხატვრობა ანდებისა და ევროპის ხელოვნების გავლენებს.',
       kk: 'Біліңіз: Куско мектебінің кескіндемесі Анд және Еуропа өнерінің ықпалдарын қалай біріктіреді.',
-      qm: 'Cusco Okulu resimlerinin And ve Avrupa sanat etkilerini nasıl birleştirdiğini keşfedin.',
+      qm: 'Cusco Okulu resimlerinin And ve Avrupa sanat etkilerini nasıl birleştirdiğini keşf etiñiz.',
     },
   },
 });
