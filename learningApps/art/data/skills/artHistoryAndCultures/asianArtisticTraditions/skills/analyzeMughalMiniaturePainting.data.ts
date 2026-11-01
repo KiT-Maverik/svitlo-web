@@ -66,7 +66,7 @@ export const analyzeMughalMiniaturePainting_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як магольскі прыдворны жывапіс і ілюстрацыі рукапісаў расказваюць гісторыі праз дэталёвыя выявы.',
       ka: 'გაიგეთ, როგორ გადმოსცემს მუღალთა სასახლისა და ხელნაწერების მხატვრობა ამბებს დახვეწილი დეტალებით.',
       kk: 'Моғол сарайы мен қолжазба кескіндемесінің ұсақ бөлшектер арқылы оқиғаларды қалай баяндайтынын біліңіз.',
-      qm: 'Babür saray ve yazma resimleri ince tafsilâtlar vastasınen nasıl añlatılğanını ögrenin.',
+      qm: 'Babür saray resimleri ve elyazmalarındaki resimler ince tafsilâtlarnen nasıl ikâye añlatqanını ögreniñiz.',
     },
   },
 });

@@ -37,7 +37,7 @@ export const aestheticsAndCreativePractice_SkillDomain_Data = buildSkillDomainCo
     be: 'Эстэтыка і творчая практыка',
     ka: 'ესთეტიკა და შემოქმედებითი პრაქტიკა',
     kk: 'Эстетика және шығармашылық тәжірибе',
-    qm: 'Estetika ve yaratıcılıq ameliyatı',
+    qm: 'Estetika ve icadiy faaliyet',
   },
   groups: {
     aestheticPerception: aestheticPerception_SkillGroup_Data,
