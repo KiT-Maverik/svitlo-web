@@ -42,7 +42,7 @@ export const stellarLuminosity_Skill_Data = buildSkillConfig({
       zh: '区分恒星实际发出的能量与从地球上看到的亮度。',
       hi: 'तारा कुल कितनी ऊर्जा उत्सर्जित करता है और पृथ्वी से कितना चमकीला दिखता है, इनमें अंतर करें।',
       es: 'Distingue la energía que emite una estrella de lo brillante que se ve desde la Tierra.',
-      ar: 'ميّز بين مقدار الطاقة التي يصدرها النجم ومدى سطوعه كما يبدو من الأرض.',
+      ar: 'ميّز بين طاقة النجم المشعّة في كل ثانية وسطوعه الظاهري كما يُرى من الأرض.',
       fr: 'Distinguez la puissance totale rayonnée par une étoile de son éclat apparent vu depuis la Terre.',
       bn: 'নক্ষত্র মোট কত শক্তি বিকিরণ করে এবং পৃথিবী থেকে কত উজ্জ্বল দেখায়—এই দুইয়ের পার্থক্য বোঝো।',
       pt: 'Diferencie a energia emitida por uma estrela de seu brilho aparente visto da Terra.',
