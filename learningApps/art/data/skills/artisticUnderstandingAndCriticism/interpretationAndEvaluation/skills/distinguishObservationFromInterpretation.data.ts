@@ -60,7 +60,7 @@ export const distinguishObservationFromInterpretation_Skill_Data = buildSkillCon
       pl: 'Odróżniaj to, co zauważasz, od tego, co według ciebie to oznacza.',
       uk: 'Розрізняйте те, що ви помічаєте, і те, що, на вашу думку, це означає.',
       lt: 'Atskirk, ką pastebi, nuo to, ką, tavo manymu, tai reiškia.',
-      lv: 'Atšķir to, ko tu pamani, no tā, ko, tavuprāt, tas nozīmē.',
+      lv: 'Atšķiriet to, ko jūs pamanāt, no tā, ko, jūsuprāt, tas nozīmē.',
       et: 'Erista seda, mida märkad, sellest, mida arvad selle tähendavat.',
       be: 'Адрознівай тое, што заўважаеш, ад таго, што, на тваю думку, гэта азначае.',
       ka: 'განასხვავეთ ის, რასაც ამჩნევთ, იმისგან, თუ რას ფიქრობთ, რომ ეს ნიშნავს.',

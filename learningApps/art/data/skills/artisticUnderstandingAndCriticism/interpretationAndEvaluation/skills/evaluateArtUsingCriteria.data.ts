@@ -61,7 +61,7 @@ export const evaluateArtUsingCriteria_Skill_Data = buildSkillConfig({
       pl: 'Oceniaj dzieło według jasnych kryteriów dopasowanych do jego celów, a nie wyłącznie według własnego gustu.',
       uk: 'Оцінюйте твір за чіткими критеріями, що відповідають його задуму, а не лише за власним смаком.',
       lt: 'Vertink kūrinį pagal aiškius, jo tikslus atitinkančius kriterijus, o ne vien pagal savo skonį.',
-      lv: 'Novērtē darbu pēc skaidriem kritērijiem, kas atbilst tā mērķiem, nevis tikai pēc savas gaumes.',
+      lv: 'Novērtējiet darbu pēc skaidriem kritērijiem, kas atbilst tā mērķiem, nevis tikai pēc savas gaumes.',
       et: 'Hinda kunstiteost selgete, selle eesmärkidega sobivate kriteeriumide, mitte üksnes oma maitse järgi.',
       be: 'Ацэньвай твор паводле выразных крытэрыяў, адпаведных яго мэтам, а не толькі паводле ўласнага густу.',
       ka: 'შეაფასეთ ნამუშევარი მკაფიო კრიტერიუმებით, რომლებიც მის მიზნებს შეესაბამება, და არა მხოლოდ თქვენი გემოვნებით.',
