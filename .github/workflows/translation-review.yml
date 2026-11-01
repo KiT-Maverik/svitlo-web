@@ -188,9 +188,12 @@ jobs:
           const expected = new Set();
           for (const entry of manifest.generated) {
             const name = entry.path;
+            const segments = typeof name === 'string' ? name.split('/') : [];
+            const depth = segments[1] === 'taxonomies' ? 4 : segments[1] === 'lessons' ? 6 : -1;
             if (typeof name !== 'string' ||
-                !/^\\.agent-ci-artifacts\\/(?:taxonomies|lessons)\\/[a-zA-Z0-9._/-]+\\.md$/.test(name) ||
-                name.split('/').includes('..') || expected.has(name) || !fs.statSync(name).isFile()) {
+                segments[0] !== root || segments.length !== depth ||
+                segments.slice(2).some(part => !/^[a-zA-Z0-9._-]+$/.test(part) || part === '..') ||
+                !name.endsWith('.md') || expected.has(name) || !fs.statSync(name).isFile()) {
               throw Error('Invalid generated artifact entry: ' + String(name));
             }
             expected.add(name);
