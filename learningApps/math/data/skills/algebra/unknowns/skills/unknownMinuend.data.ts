@@ -29,7 +29,7 @@ export const unknownMinuend_Skill_Data = buildSkillConfig({
     ta: 'தெரியாத கழிக்கப்படும் எண்ணைக் காணுதல்',
     te: 'తెలియని వియోజ్యాన్ని కనుగొనడం',
     mr: 'अज्ञात वज्य संख्या शोधणे',
-    ms: 'Mencari nombor yang ditolak',
+    ms: 'Mencari nombor asal yang tidak diketahui',
     he: 'מציאת המחוסר הלא ידוע',
     pl: 'Znajdowanie nieznanej odjemnej',
     uk: 'Знаходження невідомого зменшуваного',
