@@ -25,7 +25,7 @@ export const analyzeGermanExpressionistCinema_Skill_Data = buildSkillConfig({
     ms: 'Menganalisis Sinema Ekspresionis Jerman',
     he: 'ניתוח הקולנוע האקספרסיוניסטי הגרמני',
     pl: 'Analizować niemieckie kino ekspresjonistyczne',
-    uk: 'Аналізувати німецьке кіноекспресіонізму',
+    uk: 'Аналізувати німецький кіноекспресіонізм',
     lt: 'Analizuoti vokiečių ekspresionistinį kiną',
     lv: 'Analizēt vācu ekspresionisma kino',
     et: 'Analüüsida Saksa ekspressionistlikku kino',

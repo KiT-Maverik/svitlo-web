@@ -25,7 +25,7 @@ export const reviseAnArtwork_Skill_Data = buildSkillConfig({
     ms: 'Menyemak Semula Karya Seni',
     he: 'עריכת יצירת אמנות מחדש',
     pl: 'Poprawiać dzieło sztuki',
-    uk: 'Переглядати мистецький твір',
+    uk: 'Доопрацьовувати мистецький твір',
     lt: 'Tobulinti meno kūrinį',
     lv: 'Pārstrādāt mākslas darbu',
     et: 'Kunstiteose läbivaatamine',

@@ -25,7 +25,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
     ms: 'Membina Skala Ton',
     he: 'יצירת סולם ערכי בהירות',
     pl: 'Tworzenie skali walorowej',
-    uk: 'Побудувати шкалу світлот',
+    uk: 'Побудувати шкалу світлоти',
     lt: 'Sukurti tonų skalę',
     lv: 'Izveidot toņu skalu',
     et: 'Heletumeduse astmiku loomine',
