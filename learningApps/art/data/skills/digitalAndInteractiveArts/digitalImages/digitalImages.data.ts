@@ -30,7 +30,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
     te: 'పిక్సెల్‌లు, ఆకారాలు, లేయర్‌లు మరియు ఎంపిక చేసిన మార్పులతో డిజిటల్ చిత్రాలను సృష్టించండి.',
     mr: 'पिक्सेल, आकार, स्तर आणि निवडक संपादन वापरून डिजिटल चित्रे तयार करा.',
     ms: 'Cipta gambar digital menggunakan piksel, bentuk, lapisan dan suntingan terpilih.',
-    he: 'יצירת תמונות דיגיטליות באמצעות פיקסלים, צורות, שכבות ועריכות ממוקדות.',
+    he: 'תמונות דיגיטליות',
     pl: 'Tworzyć obrazy cyfrowe za pomocą pikseli, kształtów, warstw i selektywnej edycji.',
     uk: 'Створювати цифрові зображення за допомогою пікселів, фігур, шарів і вибіркового редагування.',
     lt: 'Kurti skaitmeninius vaizdus naudojant pikselius, formas, sluoksnius ir atrankinį redagavimą.',

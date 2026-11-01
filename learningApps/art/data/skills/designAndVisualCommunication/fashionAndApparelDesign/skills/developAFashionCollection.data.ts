@@ -59,7 +59,7 @@ export const developAFashionCollection_Skill_Data = buildSkillConfig({
       te: 'ఆలోచనాత్మకమైన తేడాలతో పరస్పరం సంబంధం ఉన్న దుస్తుల శ్రేణిని రూపొందించండి.',
       mr: 'विचारपूर्वक वेगळेपणा असलेली परस्पर संबंधित पोशाखमालिका तयार करा.',
       ms: 'Reka siri pakaian yang saling berkaitan dengan perbezaan yang dirancang teliti.',
-      he: 'עצבו סדרת תלבושות קשורות עם הבדלים מתוכננים היטב.',
+      he: 'עצבו סדרת דגמי לבוש קשורים עם הבדלים מתוכננים היטב.',
       pl: 'Zaprojektuj powiązaną serię strojów z przemyślanymi różnicami.',
       uk: 'Розробіть пов’язану серію образів із продуманими відмінностями.',
       lt: 'Sukurkite tarpusavyje derančią aprangos seriją su apgalvotais skirtumais.',

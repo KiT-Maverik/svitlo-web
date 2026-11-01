@@ -57,7 +57,7 @@ export const analyzeByzantineIconPainting_Skill_Data = buildSkillConfig({
       te: 'బైజాంటైన్ ఐకాన్లు ఆరాధనలో ప్రతీకాత్మక రూపాలు, పదార్థాలను ఎలా ఉపయోగిస్తాయో తెలుసుకోండి.',
       mr: 'बायझंटाईन आयकॉन्स उपासनेत प्रतीकात्मक आकार आणि साहित्याचा कसा वापर करतात ते जाणून घ्या.',
       ms: 'Terokai cara ikon Byzantine menggunakan bentuk dan bahan simbolik dalam ibadah.',
-      he: 'גלה כיצד איקונות ביזנטיות משתמשות בצורות ובחומרים סמליים בפולחן.',
+      he: 'גלו כיצד איקונות ביזנטיות משתמשות בצורות ובחומרים סמליים בפולחן.',
       pl: 'Poznaj, jak ikony bizantyjskie wykorzystują symboliczne formy i materiały w kulcie.',
       uk: 'Досліджувати, як візантійські ікони використовують символічні форми й матеріали в богослужінні.',
       lt: 'Sužinok, kaip Bizantijos ikonos pamaldose naudoja simbolines formas ir medžiagas.',

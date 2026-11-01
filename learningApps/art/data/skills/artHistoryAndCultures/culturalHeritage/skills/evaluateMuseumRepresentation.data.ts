@@ -56,7 +56,7 @@ export const evaluateMuseumRepresentation_Skill_Data = buildSkillConfig({
       te: 'మ్యూజియంలలో ఎవరి చరిత్రలు, దృక్కోణాలు ఉన్నాయో, ఎవరివి లేవో పరిశీలించండి.',
       mr: 'संग्रहालयांत कोणाचा इतिहास आणि दृष्टिकोन दिसतो, तसेच कोणाचा गाळला जातो, याचा विचार करा.',
       ms: 'Teliti sejarah dan perspektif siapa yang dipaparkan atau tidak disertakan di muzium.',
-      he: 'בחן אילו היסטוריות ונקודות מבט מופיעות במוזיאונים ואילו נעדרות מהם.',
+      he: 'בחנו אילו היסטוריות ונקודות מבט מופיעות במוזיאונים ואילו נעדרות מהם.',
       pl: 'Zastanów się, czyje historie i perspektywy są obecne w muzeach, a czyich brakuje.',
       uk: 'З’ясовувати, чиї історії та погляди представлені в музеях, а чиї відсутні.',
       lt: 'Apsvarstyk, kieno istorijos ir požiūriai muziejuose pristatomi, o kieno nepateikiami.',

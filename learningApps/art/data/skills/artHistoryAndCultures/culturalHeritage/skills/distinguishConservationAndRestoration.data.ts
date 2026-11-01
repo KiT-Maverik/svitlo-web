@@ -57,7 +57,7 @@ export const distinguishConservationAndRestoration_Skill_Data = buildSkillConfig
       te: 'అసలు పదార్థాన్ని కాపాడటం, కోల్పోయిన లక్షణాలను మళ్లీ సృష్టించడం కంటే ఎలా భిన్నమో అర్థం చేసుకోండి.',
       mr: 'मूळ सामग्री जतन करणे आणि हरवलेली वैशिष्ट्ये पुन्हा तयार करणे यांतला फरक समजून घ्या.',
       ms: 'Fahami perbezaan antara mengekalkan bahan asal dengan membina semula ciri yang hilang.',
-      he: 'הבן כיצד שימור החומר המקורי שונה משחזור מאפיינים שאבדו.',
+      he: 'הבינו כיצד שימור החומר המקורי שונה משחזור מאפיינים שאבדו.',
       pl: 'Zrozum, czym zachowanie oryginalnego materiału różni się od odtwarzania utraconych cech.',
       uk: 'Розуміти, чим збереження оригінального матеріалу відрізняється від відтворення втрачених елементів.',
       lt: 'Suprask, kuo originalios medžiagos išsaugojimas skiriasi nuo prarastų ypatybių atkūrimo.',

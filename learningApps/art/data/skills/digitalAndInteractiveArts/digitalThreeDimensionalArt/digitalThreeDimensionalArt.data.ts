@@ -30,7 +30,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     te: 'మోడలింగ్, పదార్థాలు, వెలుతురు మరియు కూర్పు ద్వారా భావవ్యక్తీకరణతో కూడిన వర్చువల్ ప్రదేశాలను నిర్మించండి.',
     mr: 'मॉडेलिंग, साहित्य, प्रकाश आणि रचना यांच्या साहाय्याने अभिव्यक्तिपूर्ण आभासी जागा तयार करा.',
     ms: 'Membina ruang maya yang ekspresif melalui pemodelan, bahan, cahaya dan komposisi.',
-    he: 'בניית מרחבים וירטואליים מלאי הבעה באמצעות מידול, חומרים, תאורה וקומפוזיציה.',
+    he: 'אמנות דיגיטלית תלת־ממדית',
     pl: 'Budować ekspresyjne przestrzenie wirtualne za pomocą modelowania, materiałów, światła i kompozycji.',
     uk: 'Створювати виразні віртуальні простори за допомогою моделювання, матеріалів, світла й композиції.',
     lt: 'Kurti išraiškingas virtualias erdves modeliuojant, parenkant medžiagas, šviesą ir kompoziciją.',

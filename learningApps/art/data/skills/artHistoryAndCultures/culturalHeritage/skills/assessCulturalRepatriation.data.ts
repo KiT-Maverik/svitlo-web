@@ -57,7 +57,7 @@ export const assessCulturalRepatriation_Skill_Data = buildSkillConfig({
       te: 'ఒక వస్తువును తిరిగి ఇవ్వడంపై చర్చించేటప్పుడు సముదాయాల అభ్యర్థనలు, దాని స్వాధీన చరిత్రను పరిశీలించండి.',
       mr: 'एखादी वस्तू परत करण्याबाबत चर्चा करताना समुदायांचे दावे आणि ती मिळवण्याचा इतिहास जाणून घ्या.',
       ms: 'Teliti tuntutan komuniti dan sejarah pemerolehan apabila membincangkan pemulangan sesuatu objek.',
-      he: 'בחן את טענות הקהילות ואת היסטוריית הרכישה בעת דיון בהחזרת חפץ.',
+      he: 'בחנו את טענות הקהילות ואת היסטוריית הרכישה בעת דיון בהחזרת חפץ.',
       pl: 'Poznaj roszczenia społeczności i historię pozyskania obiektu podczas dyskusji o jego zwrocie.',
       uk: 'Розглядати вимоги спільнот та історію набуття під час обговорення повернення предмета.',
       lt: 'Nagrinėk bendruomenių reikalavimus ir įsigijimo istoriją aptardamas objekto grąžinimą.',

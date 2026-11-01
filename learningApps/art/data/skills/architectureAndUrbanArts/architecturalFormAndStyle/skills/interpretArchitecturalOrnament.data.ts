@@ -56,7 +56,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       te: 'భవన ఘన పరిమాణాలు, ఖాళీ ప్రదేశాలను సమతుల్య దృశ్య రూపంగా కలపండి.',
       mr: 'इमारतीचे घनाकार भाग आणि मोकळ्या जागा एकत्र करून संतुलित दृश्यरूप तयार करा.',
       ms: 'Gabungkan jisim bangunan dan ruang terbuka menjadi bentuk visual yang seimbang.',
-      he: 'שלבו נפחי בנייה ומרחבים פתוחים לצורה חזותית מאוזנת.',
+      he: 'גלו מה העיטור האדריכלי מבטא בהקשרו ההיסטורי.',
       pl: 'Łącz bryły budynków i otwarte przestrzenie w zrównoważoną formę wizualną.',
       uk: 'Поєднуйте об’єми будівлі та відкриті простори в урівноважену візуальну форму.',
       lt: 'Derink pastato tūrius ir atviras erdves į darnią vizualią formą.',
