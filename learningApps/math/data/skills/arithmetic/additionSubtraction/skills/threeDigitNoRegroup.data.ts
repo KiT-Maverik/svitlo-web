@@ -16,7 +16,7 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
     hi: 'जोड़ और घटाव — 3-अंकीय · बिना पुनर्समूहन',
     es: 'Suma y resta — 3-cifras · Sin reagrupación',
     ar: 'الجمع والطرح — أعداد من ثلاث خانات دون إعادة التجميع',
-    fr: 'Addition et soustraction — 3-chiffres · Sans regroupement',
+    fr: 'Addition et soustraction — nombres à trois chiffres sans regroupement',
     bn: 'যোগ ও বিয়োগ — 3-অঙ্কের · পুনর্বিন্যাস ছাড়া',
     pt: 'Adição e subtração — 3-algarismos · Sem reagrupamento',
     ur: 'جمع اور تفریق — 3-ہندسوں · دوبارہ گروہ بندی کے بغیر',
