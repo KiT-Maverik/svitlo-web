@@ -62,7 +62,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       ur: 'جانیں کہ تاریخی پس منظر میں تعمیراتی آرائش کیا پیغام دیتی ہے۔',
       id: 'Jelajahi makna yang disampaikan ornamen arsitektur dalam konteks sejarahnya.',
       de: 'Entdecke, was architektonischer Schmuck in seinem historischen Kontext vermittelt.',
-      ja: '歴史的背景の中で建築装飾が何を伝えているかを探りましょう。',
+      ja: '建物の形態、ファサードのリズム、装飾がどのように建築表現を形づくるかを探りましょう。',
       ko: '역사적 맥락에서 건축 장식이 무엇을 전달하는지 살펴보세요.',
       tr: 'Mimari süslemenin tarihsel bağlamında ne anlattığını keşfedin.',
       vi: 'Khám phá ý nghĩa mà trang trí kiến trúc truyền tải trong bối cảnh lịch sử.',

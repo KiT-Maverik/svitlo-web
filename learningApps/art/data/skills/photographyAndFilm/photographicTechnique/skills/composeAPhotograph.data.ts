@@ -16,7 +16,7 @@ export const composeAPhotograph_Skill_Data = buildSkillConfig({
     ur: 'تصویر کی ساخت ترتیب دیں',
     id: 'Menyusun komposisi foto',
     de: 'Ein Foto komponieren',
-    ja: '写真を構図する',
+    ja: '写真の構図を決める',
     ko: '사진 구도 잡기',
     tr: 'Fotoğraf kompozisyonu oluşturmak',
     vi: 'Bố cục một bức ảnh',

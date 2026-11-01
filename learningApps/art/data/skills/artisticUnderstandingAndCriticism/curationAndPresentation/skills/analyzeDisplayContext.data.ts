@@ -48,7 +48,7 @@ export const analyzeDisplayContext_Skill_Data = buildSkillConfig({
       ur: 'جانیں کہ روشنی، پیمانہ، جگہ اور لیبل فن پارے کی پیشکش پر کیسے اثر انداز ہوتے ہیں۔',
       id: 'Jelajahi bagaimana cahaya, skala, posisi, dan label memengaruhi penyajian karya seni.',
       de: 'Entdecke, wie Licht, Maßstab, Position und Beschriftungen die Präsentation eines Kunstwerks beeinflussen.',
-      ja: '光、スケール、配置、ラベルが作品の展示方法にどう影響するかを探りましょう。',
+      ja: '照明、作品の大きさや配置、解説ラベルが鑑賞者の受け取り方にどう影響するかを探りましょう。',
       ko: '빛, 크기, 위치, 라벨이 작품의 전시에 어떤 영향을 주는지 살펴보세요.',
       tr: 'Işık, ölçek, konum ve etiketlerin bir sanat eserinin sunumunu nasıl etkilediğini keşfedin.',
       vi: 'Khám phá cách ánh sáng, kích thước, vị trí và nhãn giới thiệu ảnh hưởng đến cách trình bày tác phẩm.',

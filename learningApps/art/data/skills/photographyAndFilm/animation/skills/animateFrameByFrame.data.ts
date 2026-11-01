@@ -16,7 +16,7 @@ export const animateFrameByFrame_Skill_Data = buildSkillConfig({
     ur: 'فریم بہ فریم اینیمیشن بنائیں',
     id: 'Membuat animasi bingkai demi bingkai',
     de: 'Bild für Bild animieren',
-    ja: 'コマ撮りでアニメーションを作る',
+    ja: '一コマずつアニメーションを制作する',
     ko: '프레임 단위로 애니메이션 만들기',
     tr: 'Kare kare animasyon yapmak',
     vi: 'Tạo hoạt hình từng khung hình',
