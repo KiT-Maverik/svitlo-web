@@ -5,6 +5,7 @@ export const habitabilityThroughTime_Skill_Data = buildSkillConfig({
   id: 'ece84c77-7c2a-472b-ae33-a07ffbd9ad55',
   name: {
     en: 'Habitability Through Time',
+    qm: 'Zaman boyunca yaşayışqa uyğunlıq',
     bn: 'সময়ের সঙ্গে বাসযোগ্যতার পরিবর্তন',
     ur: 'وقت کے ساتھ زندگی کے لیے موزونیت',
     ta: 'காலப்போக்கில் உயிர் வாழும் தகுதி',
@@ -37,6 +38,7 @@ export const habitabilityThroughTime_Skill_Data = buildSkillConfig({
     methodological: "Assess how a world's environmental history may change its potential to support life.",
     frontend: {
       en: "Investigate how a world's changing environment affects its potential to support life.",
+      qm: 'Bir dünyanıñ müiti zaman keçkeninen deñişkende, onıñ yaşayışnı destekleme ihtimalı nasıl deñişkenini araştırıñız.',
       bn: 'কোনো জগতের পরিবেশ বদলালে সেখানে জীবন টিকে থাকার সম্ভাবনা কীভাবে পাল্টায়, তা অনুসন্ধান করো।',
       ur: 'تحقیق کریں کہ کسی دنیا کے بدلتے ماحول سے وہاں زندگی کے برقرار رہنے کی صلاحیت کیسے متاثر ہوتی ہے۔',
       ta: 'ஒரு உலகின் சூழல் மாறுவதால் உயிர்களைத் தாங்கும் அதன் சாத்தியம் எவ்வாறு பாதிக்கப்படுகிறது என்பதை ஆராயுங்கள்.',

@@ -5,6 +5,7 @@ export const extremophileAnalogues_Skill_Data = buildSkillConfig({
   id: '107fc21c-0c4b-458f-ad9d-885d97d3de3d',
   name: {
     en: 'Extremophile Analogues',
+    qm: 'Aşırı şartlarğa dayanğan canlılar örnekleri',
     bn: 'চরম পরিবেশে বসবাসকারী জীবের তুলনামূলক উদাহরণ',
     ur: 'شدید حالات میں رہنے والے جانداروں کی مثالیں',
     ta: 'தீவிரச் சூழலில் வாழும் உயிரினங்களின் ஒப்புமைகள்',
@@ -38,6 +39,7 @@ export const extremophileAnalogues_Skill_Data = buildSkillConfig({
       'Interpret how Earth organisms in extreme environments inform hypotheses about extraterrestrial habitats without proving life exists there.',
     frontend: {
       en: "Use life's survival in extreme places on Earth to investigate possible extraterrestrial habitats.",
+      qm: 'Yerdeki canlılarnıñ ağır şartlarda yaşayışını başqa dünyalarda mümkün yaşayış yerlerini araştırmaq içün qullanıñız.',
       bn: 'পৃথিবীর চরম পরিবেশে টিকে থাকা জীবের উদাহরণ দিয়ে সম্ভাব্য ভিনগ্রহের আবাস অনুসন্ধান করো।',
       ur: 'زمین کے انتہائی سخت ماحول میں زندہ رہنے والے جانداروں کی مدد سے ممکنہ غیر زمینی مساکن کا مطالعہ کریں۔',
       ta: 'பூமியின் கடுமையான சூழல்களில் வாழும் உயிரினங்களை எடுத்துக்காட்டாகக் கொண்டு வேற்றுலக வாழிடங்களின் சாத்தியத்தை ஆராயுங்கள்.',

@@ -13,6 +13,7 @@ export const evidenceOfLife_SkillGroup_Data = buildSkillGroupConfig({
   id: 'b6aa9935-9b82-4753-8abe-678b2c459f8b',
   name: {
     en: 'Evidence of Life',
+    qm: 'Yaşayış delilleri',
     bn: 'জীবনের প্রমাণ',
     ur: 'زندگی کے شواہد',
     ta: 'உயிர் இருப்பதற்கான சான்றுகள்',
@@ -53,6 +54,7 @@ export const evidenceOfLife_SkillGroup_Data = buildSkillGroupConfig({
       'A proposed sign of life must be weighed against nonbiological processes and the limits of the measuring instrument.',
     frontend: {
       en: 'Learn how to distinguish possible signs of life from nonliving explanations.',
+      qm: 'Yaşayışnıñ mümkün işaretlerini cansız protsesslernen añlatılabilgen belgilerden ayırmağı ögreniñiz.',
       bn: 'সম্ভাব্য জীবনের লক্ষণকে জীবিত প্রাণী ছাড়াই ব্যাখ্যা করা যায় এমন ঘটনা থেকে আলাদা করতে শেখো।',
       ur: 'ممکنہ زندگی کی علامات اور ایسے واقعات میں فرق کرنا سیکھیں جن کی وضاحت جانداروں کے بغیر بھی ہو سکتی ہے۔',
       ta: 'உயிர் இருப்பதற்கான சாத்தியமான அறிகுறிகளையும் உயிரற்ற செயல்களால் விளக்கக்கூடிய நிகழ்வுகளையும் வேறுபடுத்திப் பாருங்கள்.',

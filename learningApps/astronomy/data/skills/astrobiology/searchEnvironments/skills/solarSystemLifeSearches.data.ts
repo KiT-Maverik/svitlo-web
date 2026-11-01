@@ -5,6 +5,7 @@ export const solarSystemLifeSearches_Skill_Data = buildSkillConfig({
   id: '1a4baeb0-e27d-4a45-871d-6968d4b7f42d',
   name: {
     en: 'Solar System Life Searches',
+    qm: 'Küneş sistemasında yaşayış izlevleri',
     bn: 'সৌরজগতে জীবনের অনুসন্ধান',
     ur: 'نظامِ شمسی میں زندگی کی تلاش',
     ta: 'சூரியக் குடும்பத்தில் உயிரைத் தேடுதல்',
@@ -38,6 +39,7 @@ export const solarSystemLifeSearches_Skill_Data = buildSkillConfig({
       'Compare scientific search approaches for places such as Mars and icy moons using expected environmental indicators.',
     frontend: {
       en: 'Explore how scientists look for signs of habitability or life on Mars and icy moons.',
+      qm: 'Alimler Mars ve buzlı aylarda yaşayışqa uyğunlıq ya da yaşayış işaretlerini nasıl izlegenlerini araştırıñız.',
       bn: 'বিজ্ঞানীরা মঙ্গল ও বরফাবৃত উপগ্রহে বাসযোগ্য পরিবেশ বা জীবনের চিহ্ন কীভাবে খোঁজেন, তা জানো।',
       ur: 'جانیں کہ سائنس دان مریخ اور برفیلے چاندوں پر زندگی کے لیے موزوں حالات یا زندگی کی علامات کیسے تلاش کرتے ہیں۔',
       ta: 'செவ்வாய் மற்றும் பனியால் மூடப்பட்ட நிலவுகளில் உயிர் வாழ ஏற்ற சூழல் அல்லது உயிரின் தடயங்களை விஞ்ஞானிகள் எவ்வாறு தேடுகிறார்கள் என்பதை ஆராயுங்கள்.',

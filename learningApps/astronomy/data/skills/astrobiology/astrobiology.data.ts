@@ -9,6 +9,7 @@ export const astrobiology_SkillDomain_Data = buildSkillDomainConfig({
   id: '88aa5904-3d8d-4c51-9dc0-70a01ea3f67f',
   name: {
     en: 'Astrobiology',
+    qm: 'Astrobiologiya',
     bn: 'মহাকাশীয় জীববিজ্ঞান',
     ur: 'فلکی حیاتیات',
     ta: 'விண்வெளி உயிரியல்',
@@ -47,6 +48,7 @@ export const astrobiology_SkillDomain_Data = buildSkillDomainConfig({
       'Scientific investigation of the possibility, conditions and evidence of life beyond Earth, including chemical origins, habitability and contamination risks. The methods of spacecraft observation are classified with astronomical instrumentation and evidence rather than presented as a separate astrobiological subject.',
     frontend: {
       en: 'Explore what life beyond Earth might require and how scientists could recognize credible evidence of it.',
+      qm: 'Yerden tışta yaşayış olabilmesi içün neler kerek olğanını ve alimler onıñ işançlı delillerini nasıl tanıy bilegenini araştırıñız.',
       bn: 'পৃথিবীর বাইরে জীবনের জন্য কী প্রয়োজন হতে পারে এবং বিজ্ঞানীরা তার নির্ভরযোগ্য প্রমাণ কীভাবে শনাক্ত করেন, তা জানো।',
       ur: 'جانیں کہ زمین کے باہر زندگی کے لیے کیا ضروری ہو سکتا ہے اور سائنس دان اس کے قابلِ اعتماد شواہد کیسے پہچانتے ہیں۔',
       ta: 'பூமிக்கு வெளியே உயிர்கள் வாழ எவை தேவைப்படலாம், அவற்றுக்கான நம்பகமான சான்றுகளை விஞ்ஞானிகள் எவ்வாறு கண்டறிகிறார்கள் என்பதை ஆராயுங்கள்.',

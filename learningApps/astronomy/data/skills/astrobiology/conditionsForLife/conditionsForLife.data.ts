@@ -12,6 +12,7 @@ export const conditionsForLife_SkillGroup_Data = buildSkillGroupConfig({
   id: 'dfc0e071-5101-4aaa-b24f-691b32dd77f4',
   name: {
     en: 'Conditions for Life',
+    qm: 'Yaşayış içün şartlar',
     bn: 'জীবনের জন্য প্রয়োজনীয় অবস্থা',
     ur: 'زندگی کے لیے حالات',
     ta: 'உயிர் வாழ்வதற்கான நிபந்தனைகள்',
@@ -51,6 +52,7 @@ export const conditionsForLife_SkillGroup_Data = buildSkillGroupConfig({
       'Evaluating environments for life requires explicit biological and geochemical assumptions; familiar Earth conditions are useful evidence, not universal proof.',
     frontend: {
       en: 'Consider the environments and chemistry that might allow life to exist.',
+      qm: 'Yaşayışnı mümkün etebilecek müitlerni ve kimyeviy şartlarnı tetqiq etiñiz.',
       bn: 'কোন পরিবেশ ও রাসায়নিক প্রক্রিয়া জীবনকে সম্ভব করতে পারে, তা বিবেচনা করো।',
       ur: 'غور کریں کہ کون سے ماحول اور کیمیائی عمل زندگی کو ممکن بنا سکتے ہیں۔',
       ta: 'எந்தச் சூழல்களும் வேதியியல் செயல்முறைகளும் உயிர்கள் வாழ அனுமதிக்கலாம் என்பதைச் சிந்தியுங்கள்.',

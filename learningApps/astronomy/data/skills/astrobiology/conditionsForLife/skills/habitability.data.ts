@@ -5,6 +5,7 @@ export const habitability_Skill_Data = buildSkillConfig({
   id: 'ffb659ed-b31f-4282-9653-af21af95a950',
   name: {
     en: 'Habitability',
+    qm: 'Yaşayışqa uyğunlıq',
     bn: 'বাসযোগ্যতা',
     ur: 'زندگی کے لیے موزونیت',
     ta: 'உயிர் வாழ்வதற்கான தகுதி',
@@ -38,6 +39,7 @@ export const habitability_Skill_Data = buildSkillConfig({
       'Evaluate energy sources, chemical building blocks, solvent availability and environmental stability as possible prerequisites for known life.',
     frontend: {
       en: 'Explore the energy, chemistry, liquids and stability that could make an environment habitable.',
+      qm: 'Energiya, kimyeviy maddeler, sıyıqlıqlar ve sabit şartlar bir müitni yaşayışqa nasıl uyğun etebilegenini araştırıñız.',
       bn: 'শক্তি, রাসায়নিক উপাদান, তরল ও স্থিতিশীল পরিবেশ কীভাবে কোনো স্থানকে জীবনের উপযোগী করতে পারে, তা জানো।',
       ur: 'جانیں کہ توانائی، کیمیائی اجزا، مائعات اور مستحکم ماحول کسی جگہ کو زندگی کے لیے موزوں کیسے بنا سکتے ہیں۔',
       ta: 'ஆற்றல், வேதிப் பொருட்கள், திரவங்கள், நிலையான சூழல் ஆகியவை ஓர் இடத்தை உயிர் வாழத் தகுந்ததாக எவ்வாறு மாற்றலாம் என்பதை ஆராயுங்கள்.',
