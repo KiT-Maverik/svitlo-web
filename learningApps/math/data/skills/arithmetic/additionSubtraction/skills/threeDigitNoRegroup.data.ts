@@ -63,7 +63,7 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
       uk: 'Ти можеш додавати й віднімати трицифрові числа окремо за сотнями, десятками й одиницями, коли не потрібен розрядний обмін.',
       lt: 'Gali sudėti ar atimti triženklius skaičius atskirai skaičiuodamas šimtus, dešimtis ir vienetus, kai nereikia pergrupuoti.',
       lv: 'Tu vari saskaitīt vai atņemt trīsciparu skaitļus, atsevišķi rēķinot simtus, desmitus un vienus, ja pārgrupēšana nav vajadzīga.',
-      et: 'Sa oskad kolme­kohalisi arve liita või lahutada, arvutades sajalis­ed, kümnelis­ed ja ühelis­ed eraldi, kui ümberrühmitamine pole vajalik.',
+      et: 'Sa oskad kolmekohalisi arve liita või lahutada, arvutades sajalised, kümnelised ja ühelised eraldi, kui ümberrühmitamine pole vajalik.',
       be: 'Ты можаш складаць і адымаць трохзначныя лікі асобна па сотнях, дзясятках і адзінках, калі разрадны абмен не патрэбны.',
       ka: 'შეგიძლია სამნიშნა რიცხვები შეკრიბო ან გამოაკლო, ასეულების, ათეულებისა და ერთეულების ცალკე გამოთვლით, როცა გადაჯგუფება საჭირო არ არის.',
       kk: 'Қайта топтастыру қажет болмағанда үш таңбалы сандардың жүздіктерін, ондықтарын және бірліктерін бөлек есептеп қоса немесе азайта аласың.',
