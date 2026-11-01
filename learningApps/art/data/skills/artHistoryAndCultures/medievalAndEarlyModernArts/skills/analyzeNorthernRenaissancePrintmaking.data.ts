@@ -59,7 +59,7 @@ export const analyzeNorthernRenaissancePrintmaking_Skill_Data = buildSkillConfig
       ms: 'Terokai cara pencetak Eropah Utara menghasilkan dan menyebarkan imej terperinci.',
       he: 'גלה כיצד אמני הדפוס בצפון אירופה יצרו והפיצו תמונות מפורטות.',
       pl: 'Poznaj, jak północnoeuropejscy graficy tworzyli i rozpowszechniali szczegółowe obrazy.',
-      uk: 'Досліджувати, як північноєвропейські майстри друку створювали й поширювали деталізовані зображення.',
+      uk: 'Дослідіть, як північноєвропейські майстри друку створювали й поширювали деталізовані зображення.',
       lt: 'Sužinok, kaip Šiaurės Europos grafikai kūrė ir platino detalius vaizdus.',
       lv: 'Uzzini, kā Ziemeļeiropas grafiķi veidoja un izplatīja detalizētus attēlus.',
       et: 'Uuri, kuidas Põhja-Euroopa graafikud lõid ja levitasid detailirohkeid kujutisi.',
