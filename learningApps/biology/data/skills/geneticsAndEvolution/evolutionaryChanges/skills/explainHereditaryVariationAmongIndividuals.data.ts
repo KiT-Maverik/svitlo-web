@@ -55,7 +55,7 @@ export const explainHereditaryVariationAmongIndividuals_Skill_Data = buildSkillC
       te: 'వేర్వేరు జీవుల మధ్య వారసత్వంగా వచ్చే తేడాలు ఎందుకు ఉంటాయో వివరించండి.',
       mr: 'वेगवेगळ्या जीवांमध्ये आनुवंशिक फरक का असतात ते स्पष्ट करा.',
       ms: 'Terangkan mengapa wujud perbezaan yang diwarisi antara individu.',
-      he: 'הסבר מדוע קיימים הבדלים תורשתיים בין פרטים.',
+      he: 'הסבירו מדוע קיימים הבדלים תורשתיים בין פרטים.',
       pl: 'Wyjaśnij, dlaczego między osobnikami występują różnice dziedziczne.',
       uk: 'Пояснюй, чому між окремими організмами існують спадкові відмінності.',
       lt: 'Paaiškink, kodėl individai turi paveldimų skirtumų.',
