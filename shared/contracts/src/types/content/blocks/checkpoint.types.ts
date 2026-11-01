@@ -23,23 +23,39 @@ type OtherContentBlocks<ConfigType extends ContentEntity_ConfigType> =
 
 type CheckpointAnswer<ConfigType extends ContentEntity_ConfigType> = NonEmptyArray<OtherContentBlocks<ConfigType>>;
 
+type ContentBlock_Checkpoint_Settings = {
+  headingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
+  showIndices?: boolean;
+  showChevron?: boolean;
+  showIcon?: boolean;
+  indexPosition?: 'left' | 'right';
+  iconPosition?: 'left' | 'right';
+  chevronPosition?: 'left' | 'right';
+  enableChecks?: boolean;
+  renderAsGroup?: boolean;
+};
+
 type ContentBlock_Checkpoint_Definition = ContentBlock_Definition_Meta<'checkpoint'>;
 
-type ContentBlock_Checkpoint_Data = ContentBlock_Response_Meta<'checkpoint'> & {
+type ContentBlock_Checkpoint_Data = ContentBlock_Response_Meta<'checkpoint'> & ContentBlock_Checkpoint_Settings & {
   title: Locale_Config;
   items: {
     question: Locale_Config;
     answer: CheckpointAnswer<'data'>;
+    enableCheck?: true;
   }[];
 };
 
-type ContentBlock_Checkpoint_Response = ContentBlock_Response_Meta<'checkpoint'> & Locale_ResponseParams & {
-  title: string;
-  items: {
-    question: string;
-    answer: CheckpointAnswer<'response'>;
-  }[];
-};
+type ContentBlock_Checkpoint_Response = ContentBlock_Response_Meta<'checkpoint'> &
+  Locale_ResponseParams &
+  ContentBlock_Checkpoint_Settings & {
+    title: string;
+    items: {
+      question: string;
+      answer: CheckpointAnswer<'response'>;
+      enableCheck?: true;
+    }[];
+  };
 
 export type ContentBlock_Checkpoint<ConfigType extends ContentEntity_ConfigType> = {
   definition: ContentBlock_Checkpoint_Definition;
