@@ -12,7 +12,7 @@ export const objectMembershipAndIsolation_Skill_Data = buildSkillConfig({
     fr: 'Appartenance et isolement des objets',
     bn: 'বস্তুর অন্তর্ভুক্তি ও বিচ্ছিন্নতা',
     pt: 'Pertencimento e isolamento dos objetos',
-    ur: 'اجر‌ام کی وابستگی اور تنہائی',
+    ur: 'اجرام کی وابستگی اور تنہائی',
     id: 'Keanggotaan dan keterasingan objek',
     de: 'Zugehörigkeit und Isolation von Objekten',
     ja: '天体の所属と孤立',
@@ -66,7 +66,7 @@ export const objectMembershipAndIsolation_Skill_Data = buildSkillConfig({
       be: 'Высьветліце, ці ўваходзіць аб’ект у большую сыстэму, не блытаючы прыналежнасьць зь відам самога аб’екта.',
       ka: 'გაარკვიეთ, ეკუთვნის თუ არა ობიექტი უფრო დიდ სისტემას და ნუ აურევთ ამ კავშირს თავად ობიექტის ტიპში.',
       kk: 'Нысанның үлкенірек жүйеге кіретінін анықтап, оның жүйеге жатуын нысанның өз түрімен шатастырмаңыз.',
-      qm: 'Bir cisımniñ daa büyük sistemağa ait olıp-olmağanını añlañız, amma bu aitlikni cisımniñ öz çeşiti ile qarıştırmañız.',
+      qm: 'Bir cisimniñ daa büyük sistemağa ait olıp-olmağanını añlañız, amma bu aitlikni cisimniñ öz çeşiti ile qarıştırmañız.',
     },
   },
 });

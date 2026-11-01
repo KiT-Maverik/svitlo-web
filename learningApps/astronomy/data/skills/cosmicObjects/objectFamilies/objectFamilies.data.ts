@@ -19,7 +19,7 @@ export const objectFamilies_SkillGroup_Data = buildSkillGroupConfig({
     fr: "Familles d’objets",
     bn: "মহাজাগতিক বস্তুর ধরন",
     pt: "Famílias de objetos",
-    ur: "اجر‌ام کے گروہ",
+    ur: "اجرام کے گروہ",
     id: "Kelompok objek",
     de: "Objektfamilien",
     ja: "天体の種類",
