@@ -1,0 +1,111 @@
+name: Translation Review Artifacts
+
+# Deliberately manual, reusable, and independent of FastGate.
+# GitHub requires workflow_dispatch definitions to be present on the default branch.
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: 'Branch, tag, or commit to review (empty = selected workflow branch)'
+        required: false
+        type: string
+        default: ''
+      package:
+        description: 'Textbook path, e.g. learningApps/astronomy (ignored when all_packages=true)'
+        required: true
+        type: string
+        default: 'learningApps/astronomy'
+      all_packages:
+        description: 'Generate all available Code Skills taxonomies'
+        required: true
+        type: boolean
+        default: false
+      locale:
+        description: 'Language key, e.g. qm (ignored when all_locales=true)'
+        required: true
+        type: string
+        default: 'qm'
+      all_locales:
+        description: 'Generate every supported language from the live language registry'
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    name: Generate temporary localized Markdown views
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      REVIEW_PACKAGE: ${{ inputs.package }}
+      REVIEW_ALL_PACKAGES: ${{ inputs.all_packages }}
+      REVIEW_LOCALE: ${{ inputs.locale }}
+      REVIEW_ALL_LOCALES: ${{ inputs.all_locales }}
+    steps:
+      - name: Check out requested source ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref || github.ref_name }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      # The original taxonomy parser needs the TypeScript npm package, not a Next.js build.
+      - name: Install parser dependency
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Generate requested review artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--out-dir "$RUNNER_TEMP/translation-review")
+          if [[ "$REVIEW_ALL_PACKAGES" == 'true' ]]; then
+            args+=(--all-packages)
+          else
+            args+=(--package "$REVIEW_PACKAGE")
+          fi
+          if [[ "$REVIEW_ALL_LOCALES" == 'true' ]]; then
+            args+=(--all-locales)
+          else
+            args+=(--locale "$REVIEW_LOCALE")
+          fi
+          node scripts/generate-translation-review-artifacts.mjs "${args[@]}"
+
+      - name: Upload short-lived Markdown bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: translation-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/translation-review/
+          retention-days: 1
+          if-no-files-found: warn
+
+      - name: Report review scope and artifact lifecycle
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '### Translation review artifacts'
+            echo "- Run: ${{ github.run_id }} / attempt ${{ github.run_attempt }}"
+            echo "- Requested source: ${{ inputs.source_ref || github.ref_name }}"
+            echo '- Generated Markdown exists only in this run artifact; no commit or source edits are made.'
+            echo '- Uploaded archive expires automatically after **1 day**.'
+            echo '- Runner temp files are removed by the final cleanup step.'
+            if [[ -f "$RUNNER_TEMP/translation-review/manifest.json" ]]; then
+              node -e 'const m=require(process.argv[1]); console.log("- Source commit: `"+(m.sourceCommit||"unknown")+"`"); console.log("- Generated: **"+m.generated.length+"**; failures: **"+m.failures.length+"**"); if(m.failures.length) console.log("- Failed scope(s): "+m.failures.map(x=>x.textbook+"/"+x.locale).join(", "));' "$RUNNER_TEMP/translation-review/manifest.json"
+            else
+              echo '- No manifest produced; inspect earlier job logs.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Remove temporary runner files
+        if: always()
+        shell: bash
+        run: rm -rf -- "$RUNNER_TEMP/translation-review"
