@@ -63,7 +63,7 @@ export const absoluteMagnitude_Skill_Data = buildSkillConfig({
       hi: 'समान संदर्भ दूरी का उपयोग करके पिंडों की वास्तविक चमक की तुलना करें।',
       he: 'השווה את הבהירות העצמית של עצמים על סמך אותו מרחק ייחוס.',
       vi: 'So sánh độ sáng nội tại của các thiên thể bằng cách dùng cùng một khoảng cách chuẩn.',
-      uk: 'Порівнюй власну світність об’єктів, використовуючи однакову еталонну відстань.',
+      uk: 'Порівнюй власну яскравість об’єктів, уявно розміщуючи їх на однаковій еталонній відстані.',
       pl: 'Porównuj rzeczywistą jasność obiektów, przyjmując tę samą odległość odniesienia.',
     },
   },
