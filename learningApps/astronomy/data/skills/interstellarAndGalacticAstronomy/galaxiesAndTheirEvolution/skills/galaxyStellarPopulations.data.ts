@@ -29,7 +29,7 @@ export const galaxyStellarPopulations_Skill_Data = buildSkillConfig({
     lt: 'Galaktikų žvaigždžių populiacijos',
     lv: 'Galaktiku zvaigžņu populācijas',
     et: 'Galaktikate tähepopulatsioonid',
-    be: 'Зорныя насельніцтвы галяктык',
+    be: 'Зорныя папуляцыі галяктык',
     ka: 'გალაქტიკათა ვარსკვლავური პოპულაციები',
     kk: 'Галактикалардың жұлдыздық популяциялары',
   },
