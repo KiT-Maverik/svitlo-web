@@ -61,7 +61,7 @@ export const analyzeNorthernRenaissancePrintmaking_Skill_Data = buildSkillConfig
       pl: 'Poznaj, jak północnoeuropejscy graficy tworzyli i rozpowszechniali szczegółowe obrazy.',
       uk: 'Досліджувати, як північноєвропейські майстри друку створювали й поширювали деталізовані зображення.',
       lt: 'Sužinok, kaip Šiaurės Europos grafikai kūrė ir platino detalius vaizdus.',
-      lv: 'Uzzini, kā Ziemeļeiropas grafiķi veidoja un izplatīja detalizētus attēlus.',
+      lv: 'Uzziniet, kā Ziemeļeiropas grafiķi veidoja un izplatīja detalizētus attēlus.',
       et: 'Uuri, kuidas Põhja-Euroopa graafikud lõid ja levitasid detailirohkeid kujutisi.',
       be: 'Даведайся, як паўночнаеўрапейскія графікі стваралі і распаўсюджвалі падрабязныя выявы.',
       ka: 'გაიგე, როგორ ქმნიდნენ და ავრცელებდნენ ჩრდილოეთ ევროპელი მბეჭდავი მხატვრები დეტალურ გამოსახულებებს.',
