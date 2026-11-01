@@ -20,7 +20,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     bn: 'গুণ — 3-অঙ্কের×1-অঙ্কের',
     pt: 'Multiplicação — 3-algarismos×1-algarismos',
     ur: 'ضرب — 3-ہندسوں×1-ہندسوں',
-    id: 'Perkalian — 3-angka×1-angka',
+    id: 'Perkalian — bilangan tiga angka dikali bilangan satu angka',
     de: 'Multiplikation — 3-stellige×1-stellige',
     ja: '乗法 — 3-桁の数×1-桁の数',
     ko: '곱셈 — 3-자리 수×1-자리 수',
