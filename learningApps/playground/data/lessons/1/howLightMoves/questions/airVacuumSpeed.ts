@@ -3,7 +3,7 @@ import type { HowLightMoves_Named_Quiz_Question_Data } from '../quiz.types';
 const meta = {
   type: 'select-one-answer',
   id: '21733db1-2e1a-55cc-80c2-08e68fec1d90',
-}
+};
 
 export const airVacuumSpeed_Question_Locale = {
   answers: {

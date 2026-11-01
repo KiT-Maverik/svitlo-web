@@ -1,7 +1,7 @@
-import type {HowLightMoves_Lesson_Locale} from "@/data/lessons/1/howLightMoves/howLightMoves.types";
+import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
 
-import {showcase} from "./scenes/showcase";
-import {StringObjectToLocale} from "../../transformer.types";
+import { showcase } from './scenes/showcase';
+import { StringObjectToLocale } from '../../transformer.types';
 
 type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['practice']>;
 
@@ -68,7 +68,7 @@ export const practice: Locale = {
     vi: 'So sánh tốc độ ánh sáng trong chân không, không khí và nước.',
     zh: '比较光在真空、空气和水中的传播速度。',
   },
-  scene:{
+  scene: {
     showcase,
-  }
+  },
 } as const;

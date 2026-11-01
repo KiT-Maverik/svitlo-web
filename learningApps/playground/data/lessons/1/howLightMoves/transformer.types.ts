@@ -1,4 +1,4 @@
-import type {DefaultSupportedLanguage} from "@svitlo/engine/localization";
+import type { DefaultSupportedLanguage } from '@svitlo/engine/localization';
 
 export type StringObjectToLocale<T> = T extends string
   ? Record<DefaultSupportedLanguage['language'], string>
