@@ -1326,7 +1326,7 @@ Skills: 4
 
 **Methodological description (English):** Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
 
-**User-friendly description (uk):** Досліди, як міжзоряний пил послаблює, почервонює й перевипромінює світло зір.
+**User-friendly description (uk):** Досліди, як міжзоряний пил послаблює й почервонює світло зір, а поглинуту енергію перевипромінює в інфрачервоному діапазоні.
 
 ##### Міжзоряний газ
 
@@ -1908,7 +1908,7 @@ Skills: 4
 
 **Methodological description (English):** Interpret the Sun's total radiant output and its relationship to illumination received at different distances.
 
-**User-friendly description (uk):** Зрозумій, скільки енергії випромінює Сонце загалом і як змінюється кількість отриманого світла з відстанню.
+**User-friendly description (uk):** Зрозумій, що світність Сонця — це потужність його випромінювання, а кількість отриманого світла залежить від відстані.
 
 ##### Ядерний синтез на Сонці
 

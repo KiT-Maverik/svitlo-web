@@ -1014,7 +1014,7 @@ Skills: 4
 
 **User-friendly description (pl):** Wyjaśnij, dlaczego oświetlona przez Słońce część Księżyca wydaje się zmieniać kształt w kolejnych fazach.
 
-##### Półkule Księżyca widoczna i niewidoczna z Ziemi
+##### Półkule Księżyca: bliższa i dalsza
 
 [nearAndFarLunarHemispheres.data.ts](../../../learningApps/astronomy/data/skills/earthMoonAndSun/lunarAppearance/skills/nearAndFarLunarHemispheres.data.ts)
 
@@ -1278,7 +1278,7 @@ Skills: 4
 
 **User-friendly description (pl):** Dowiedz się, jak grawitacja łączy galaktyki w grupy i gromady.
 
-##### Oddziaływania i zderzenia galaktyk
+##### Oddziaływania i łączenie się galaktyk
 
 [galaxyInteractionsAndMergers.data.ts](../../../learningApps/astronomy/data/skills/interstellarAndGalacticAstronomy/galaxiesAndTheirEvolution/skills/galaxyInteractionsAndMergers.data.ts)
 
@@ -1326,7 +1326,7 @@ Skills: 4
 
 **Methodological description (English):** Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
 
-**User-friendly description (pl):** Sprawdź, jak pył międzygwiazdowy przyciemnia, czerwieni i ponownie emituje światło gwiazd.
+**User-friendly description (pl):** Sprawdź, jak pył międzygwiazdowy osłabia i zaczerwienia światło gwiazd, a pochłoniętą energię wypromieniowuje w podczerwieni.
 
 ##### Gaz międzygwiazdowy
 
@@ -2146,7 +2146,7 @@ Skills: 6
 
 **Methodological description (English):** Interpret the distribution of stars by luminosity and temperature and identify major evolutionary regions.
 
-**User-friendly description (pl):** Odczytaj diagram Hertzsprunga–Russella, aby porównać temperatury, jasności absolutne i etapy ewolucji gwiazd.
+**User-friendly description (pl):** Odczytaj diagram Hertzsprunga–Russella, aby porównać temperatury, moce promieniowania i etapy ewolucji gwiazd.
 
 ##### Populacje gwiazd
 
@@ -2204,7 +2204,7 @@ Skills: 5
 
 **Methodological description (English):** Explain the expansion and cooling of stellar envelopes during post-main-sequence evolution and distinguish the relevant evolutionary paths by progenitor mass.
 
-**User-friendly description (pl):** Poznaj, jak gwiazdy rozszerzają się i ich powierzchnie stygną, gdy stają się czerwonymi olbrzymami.
+**User-friendly description (pl):** Zbadaj, jak gwiazdy się rozszerzają, a ich powierzchnie ochładzają podczas przemiany w czerwone olbrzymy.
 
 ##### Czas życia gwiazd
 
@@ -2240,13 +2240,13 @@ Skills: 5
 
 **User-friendly description (pl):** Zrozum, jak grawitacja i ciśnienie wewnętrzne utrzymują równowagę gwiazdy.
 
-##### Jasność absolutna gwiazd
+##### Moc promieniowania gwiazd
 
 [stellarLuminosity.data.ts](../../../learningApps/astronomy/data/skills/stellarPropertiesAndEvolution/stellarProperties/skills/stellarLuminosity.data.ts)
 
 **Methodological description (English):** Distinguish total emitted power from the light received by an observer and infer luminosity from suitable measurements.
 
-**User-friendly description (pl):** Odróżnij energię wypromieniowywaną przez gwiazdę od jej jasności widzianej z Ziemi.
+**User-friendly description (pl):** Odróżnij całkowitą moc promieniowania gwiazdy od jej jasności obserwowanej z Ziemi.
 
 ##### Masa gwiazd
 

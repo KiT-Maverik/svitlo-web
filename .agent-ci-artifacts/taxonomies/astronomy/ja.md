@@ -1326,7 +1326,7 @@ Skills: 4
 
 **Methodological description (English):** Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
 
-**User-friendly description (ja):** 星間塵が星の光を弱め、赤く見せ、再び放射するしくみを知ろう。
+**User-friendly description (ja):** 星間塵が星の光を弱めて赤く見せ、吸収したエネルギーを赤外線として放射するしくみを知ろう。
 
 ##### 星間ガス
 
@@ -1908,7 +1908,7 @@ Skills: 4
 
 **Methodological description (English):** Interpret the Sun's total radiant output and its relationship to illumination received at different distances.
 
-**User-friendly description (ja):** 太陽が放つエネルギーの総量と、距離によって受け取る光がどう変わるか理解しよう。
+**User-friendly description (ja):** 太陽光度が単位時間あたりに放射するエネルギーを表すことと、届く光の強さが距離でどう変わるか理解しよう。
 
 ##### 太陽の核融合
 
@@ -2246,7 +2246,7 @@ Skills: 5
 
 **Methodological description (English):** Distinguish total emitted power from the light received by an observer and infer luminosity from suitable measurements.
 
-**User-friendly description (ja):** 星が放出するエネルギーの量と、地球から見た明るさを区別しましょう。
+**User-friendly description (ja):** 星が単位時間あたりに放出するエネルギーの総量と、地球から見た明るさを区別しましょう。
 
 ##### 恒星の質量
 

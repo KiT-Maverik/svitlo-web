@@ -1190,7 +1190,7 @@ Skills: 4
 
 **Methodological description (English):** Compare tightly packed, resonant, eccentric and other planetary arrangements using orbital evidence.
 
-**User-friendly description (he):** השוו בין מערכות עם כוכבי לכת צפופים, מסלולים יוצאי דופן או תהודות מסלוליות.
+**User-friendly description (he):** השוו בין מערכות שבהן כוכבי הלכת קרובים זה לזה, נעים במסלולים חריגים או מצויים בתהודה מסלולית.
 
 ##### מגבלות של מדדי ישיבות
 
@@ -1326,7 +1326,7 @@ Skills: 4
 
 **Methodological description (English):** Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
 
-**User-friendly description (he):** ראו כיצד אבק בין־כוכבי מחליש, מאדים ופולט מחדש אור כוכבים.
+**User-friendly description (he):** ראו כיצד אבק בין־כוכבי מחליש ומאדים את אור הכוכבים, ופולט את האנרגיה שספג כקרינה תת־אדומה.
 
 ##### גז בין־כוכבי
 
@@ -1908,7 +1908,7 @@ Skills: 4
 
 **Methodological description (English):** Interpret the Sun's total radiant output and its relationship to illumination received at different distances.
 
-**User-friendly description (he):** הבן כמה אנרגיה השמש פולטת בסך הכול וכיצד כמות האור שמגיעה משתנה עם המרחק.
+**User-friendly description (he):** הבן שבהיקות השמש היא קצב פליטת האנרגיה שלה, וכיצד עוצמת האור המתקבלת משתנה עם המרחק.
 
 ##### היתוך גרעיני בשמש
 

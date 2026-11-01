@@ -450,7 +450,7 @@ Skills: 7
 
 **Methodological description (English):** Interpret observations at radio wavelengths, including the kinds of astronomical sources and atmospheric or detector limitations relevant to these measurements.
 
-**User-friendly description (ka):** გაიგე, რას გვიმხელს რადიოსიგნალები სამყაროს შესახებ.
+**User-friendly description (ka):** გაიგე, რას გვიმხელენ რადიოსიგნალები სამყაროს შესახებ.
 
 ##### დაკვირვება კოსმოსიდან
 
@@ -724,7 +724,7 @@ Skills: 3
 
 **Methodological description (English):** Gravitational and expansion measurements constrain otherwise unseen components, while cosmological parameters and theoretical uncertainties limit the interpretations that can be supported by available evidence.
 
-**User-friendly description (ka):** გაიგე, როგორ მიუთითებს კოსმოსური გაზომვები კომპონენტებსა და კითხვებზე, რომლებსაც ჯერ ბოლომდე ვერ ვხსნით.
+**User-friendly description (ka):** გაიგე, როგორ მიუთითებენ კოსმოსური გაზომვები სამყაროს შემადგენლობაზე და რა კითხვები რჩება ჯერ კიდევ პასუხგაუცემელი.
 
 ##### ბნელი ენერგიის მტკიცებულებები
 
@@ -900,7 +900,7 @@ Skills: 4
 
 **Methodological description (English):** Explain the predicted formation of light nuclei and why their observed abundances test early-Universe models.
 
-**User-friendly description (ka):** გამოიკვლიე, როგორ წინასწარმეტყველებს ადრეული სამყაროს მოდელები მსუბუქი ელემენტების რაოდენობას.
+**User-friendly description (ka):** გამოიკვლიე, როგორ წინასწარმეტყველებენ ადრეული სამყაროს მოდელები მსუბუქი ელემენტების რაოდენობას.
 
 ### დედამიწა, მთვარე და მზე
 
@@ -1156,7 +1156,7 @@ Skills: 4
 
 **Methodological description (English):** Interpret periodic stellar spectral shifts as evidence for an orbiting companion and constrain its mass.
 
-**User-friendly description (ka):** ვარსკვლავის სპექტრში მოძრაობის ცვლილებებით დაადგინეთ მის გარშემო მოძრავი პლანეტის მიზიდულობის გავლენა.
+**User-friendly description (ka):** ვარსკვლავის სპექტრული ხაზების პერიოდული წანაცვლებით გამოიკვლიეთ მის გარშემო მოძრავი პლანეტის გრავიტაციული გავლენა.
 
 ##### ტრანზიტის მეთოდით აღმოჩენა
 
@@ -1326,7 +1326,7 @@ Skills: 4
 
 **Methodological description (English):** Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
 
-**User-friendly description (ka):** ნახე, როგორ ასუსტებს და აწითლებს მტვერი ვარსკვლავურ სინათლეს და ხელახლა ასხივებს მას.
+**User-friendly description (ka):** ნახე, როგორ ასუსტებს და აწითლებს ვარსკვლავთშორისი მტვერი ვარსკვლავურ სინათლეს, ხოლო შთანთქმულ ენერგიას ინფრაწითელი გამოსხივების სახით გამოყოფს.
 
 ##### ვარსკვლავთშორისი აირი
 
@@ -1908,7 +1908,7 @@ Skills: 4
 
 **Methodological description (English):** Interpret the Sun's total radiant output and its relationship to illumination received at different distances.
 
-**User-friendly description (ka):** გაიგე, რამდენ ენერგიას ასხივებს მზე მთლიანობაში და როგორ იცვლება მიღებული სინათლე მანძილის მიხედვით.
+**User-friendly description (ka):** გაიგე, რომ მზის ნათობა მისი გამოსხივების სიმძლავრეა და როგორ იცვლება მიღებული სინათლის ინტენსივობა მანძილის მიხედვით.
 
 ##### ბირთვული სინთეზი მზეზე
 
@@ -2238,7 +2238,7 @@ Skills: 5
 
 **Methodological description (English):** Explain how the balance of inward gravitational forces and outward pressure gradients sustains an approximately stable star and how disruption of the balance causes structural changes.
 
-**User-friendly description (ka):** გაიგეთ, როგორ ინარჩუნებს გრავიტაცია და შიდა წნევა ვარსკვლავის წონასწორობას.
+**User-friendly description (ka):** გაიგეთ, როგორ ინარჩუნებენ გრავიტაცია და შიდა წნევა ვარსკვლავის წონასწორობას.
 
 ##### ვარსკვლავების ნათობა
 
@@ -2246,7 +2246,7 @@ Skills: 5
 
 **Methodological description (English):** Distinguish total emitted power from the light received by an observer and infer luminosity from suitable measurements.
 
-**User-friendly description (ka):** განასხვავეთ ვარსკვლავის გამოსხივებული ენერგია და მისი ხილული სიკაშკაშე დედამიწიდან.
+**User-friendly description (ka):** განასხვავეთ ვარსკვლავის გამოსხივების სრული სიმძლავრე და მისი დედამიწიდან დანახული სიკაშკაშე.
 
 ##### ვარსკვლავების მასა
 
