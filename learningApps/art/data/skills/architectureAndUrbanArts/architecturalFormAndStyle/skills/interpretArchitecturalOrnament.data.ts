@@ -55,7 +55,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       ta: 'கட்டிடத் தொகுதிகளையும் திறந்த இடங்களையும் இணைத்து சமநிலையான காட்சிவடிவத்தை உருவாக்குங்கள்.',
       te: 'చారిత్రక సందర్భంలో నిర్మాణ అలంకరణ ఏమి తెలియజేస్తుందో తెలుసుకోండి.',
       mr: 'इमारतीचे घनाकार भाग आणि मोकळ्या जागा एकत्र करून संतुलित दृश्यरूप तयार करा.',
-      ms: 'Gabungkan jisim bangunan dan ruang terbuka menjadi bentuk visual yang seimbang.',
+      ms: 'Terokai makna yang disampaikan oleh hiasan seni bina dalam latar sejarahnya.',
       he: 'גלו מה העיטור האדריכלי מבטא בהקשרו ההיסטורי.',
       pl: 'Łącz bryły budynków i otwarte przestrzenie w zrównoważoną formę wizualną.',
       uk: 'Поєднуйте об’єми будівлі та відкриті простори в урівноважену візуальну форму.',

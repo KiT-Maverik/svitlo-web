@@ -30,7 +30,7 @@ export const formalLanguage_SkillGroup_Data = buildSkillGroupConfig({
     ta: 'வடிவ மொழி',
     te: 'రూప భాష',
     mr: 'दृश्यरूपाची भाषा',
-    ms: 'Bahasa bentuk',
+    ms: 'Bahasa Formal dalam Seni',
     he: 'שפה חזותית',
     pl: 'Język formy',
     uk: 'Формальна мова',

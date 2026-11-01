@@ -29,7 +29,7 @@ export const improvisationAndDevising_SkillGroup_Data = buildSkillGroupConfig({
     ta: 'தன்னிச்சை நடிப்பும் நாடக உருவாக்கமும்',
     te: 'తక్షణ నటన మరియు నాటక సృష్టి',
     mr: 'तात्कालिक अभिनय आणि नाट्यनिर्मिती',
-    ms: 'Improvisasi dan penciptaan',
+    ms: 'Improvisasi dan Penciptaan Teater Bersama',
     he: 'אימפרוביזציה ויצירה תיאטרונית',
     pl: 'Improwizacja i tworzenie spektaklu',
     uk: 'Імпровізація та творення вистави',

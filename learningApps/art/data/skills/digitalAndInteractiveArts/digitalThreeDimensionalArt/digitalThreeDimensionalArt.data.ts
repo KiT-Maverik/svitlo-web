@@ -29,7 +29,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     ta: 'மாதிரியாக்கம், பொருட்கள், ஒளி மற்றும் அமைப்பு மூலம் வெளிப்பாட்டுமிக்க மெய்நிகர் இடங்களை உருவாக்குங்கள்.',
     te: 'త్రిమితీయ డిజిటల్ కళ',
     mr: 'मॉडेलिंग, साहित्य, प्रकाश आणि रचना यांच्या साहाय्याने अभिव्यक्तिपूर्ण आभासी जागा तयार करा.',
-    ms: 'Membina ruang maya yang ekspresif melalui pemodelan, bahan, cahaya dan komposisi.',
+    ms: 'Seni Digital Tiga Dimensi',
     he: 'אמנות דיגיטלית תלת־ממדית',
     pl: 'Budować ekspresyjne przestrzenie wirtualne za pomocą modelowania, materiałów, światła i kompozycji.',
     uk: 'Створювати виразні віртуальні простори за допомогою моделювання, матеріалів, світла й композиції.',

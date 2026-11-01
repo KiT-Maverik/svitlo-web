@@ -69,7 +69,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       ta: 'வரலாற்றுச் சூழலில் கட்டிடக்கலை அலங்காரம் எதைத் தெரிவிக்கிறது என்பதை ஆராயுங்கள்.',
       te: 'భవన ఆకారాలు, అలంకరణ వివరాలు వాస్తుశిల్ప ఆలోచనలను ఎలా వ్యక్తపరుస్తాయో తెలుసుకోండి.',
       mr: 'ऐतिहासिक संदर्भात वास्तुशिल्पीय सजावट काय व्यक्त करते ते जाणून घ्या.',
-      ms: 'Terokai makna yang disampaikan oleh hiasan seni bina dalam latar sejarahnya.',
+      ms: 'Terokai bagaimana bentuk bangunan dan perincian hiasan menyampaikan idea seni bina.',
       he: 'גלו כיצד צורות המבנים ופרטי העיטור מבטאים רעיונות אדריכליים.',
       pl: 'Odkrywaj, co ornament architektoniczny komunikuje w swoim kontekście historycznym.',
       uk: 'Досліджуйте, що архітектурний декор передає у своєму історичному контексті.',

@@ -29,7 +29,7 @@ export const historicalFilmMovements_SkillGroup_Data = buildSkillGroupConfig({
     ta: 'திரைப்பட வரலாற்று இயக்கங்கள்',
     te: 'చారిత్రక సినిమా ఉద్యమాలు',
     mr: 'ऐतिहासिक चित्रपट चळवळी',
-    ms: 'Gerakan Filem Sejarah',
+    ms: 'Gerakan dalam Sejarah Perfileman',
     he: 'תנועות קולנוע היסטוריות',
     pl: 'Historyczne nurty filmowe',
     uk: 'Історичні кінематографічні рухи',
