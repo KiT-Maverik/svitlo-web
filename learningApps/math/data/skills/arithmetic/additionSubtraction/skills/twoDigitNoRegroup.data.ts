@@ -28,7 +28,7 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
     vi: 'Cộng và trừ — 2-chữ số · Không đổi nhóm',
     ta: 'கூட்டலும் கழித்தலும் — 2-இலக்க · மறுதொகுப்பு இல்லாமல்',
     te: 'కూడిక మరియు తీసివేత — 2-అంకెల · పునఃసమూహీకరణ లేకుండా',
-    mr: 'बेरीज आणि वजाबाकी — दोन अंकी संख्यांची पुनर्गटणाशिवाय',
+    mr: 'बेरीज आणि वजाबाकी — दोन अंकी संख्यांची पुनर्गटणाशिवाय गणना',
     ms: 'Penambahan dan penolakan — 2-digit · Tanpa pengumpulan semula',
     he: 'חיבור וחיסור — 2-ספרות · ללא המרה',
     pl: 'Dodawanie i odejmowanie — 2-cyfrowe · Bez zamiany jednostek',
