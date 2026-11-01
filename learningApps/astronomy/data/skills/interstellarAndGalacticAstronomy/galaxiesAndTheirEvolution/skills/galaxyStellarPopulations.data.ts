@@ -54,7 +54,7 @@ export const galaxyStellarPopulations_Skill_Data = buildSkillConfig({
       ko: '은하의 빛을 이용해 별들과 별 형성 역사의 차이를 추론해 보세요.',
       tr: 'Bir galaksinin ışığından yıldızları arasındaki farkları ve yıldız oluşum geçmişini çıkar.',
       vi: 'Dùng ánh sáng thiên hà để suy ra sự khác biệt giữa các ngôi sao và lịch sử hình thành sao.',
-      ta: 'திரளின் ஒளியிலிருந்து அதன் விண்மீன்களிலும் உருவாக்க வரலாற்றிலும் உள்ள வேறுபாடுகளை ஊகி.',
+      ta: 'ஒரு விண்மீன் திரளின் ஒளியைக் கொண்டு அதன் விண்மீன்களின் வேறுபாடுகளையும் விண்மீன் உருவாக்க வரலாற்றையும் ஊகி.',
       te: 'గెలాక్సీ కాంతితో దాని నక్షత్రాల్లోని తేడాలు, నక్షత్రాల ఏర్పాటుచరిత్రను అంచనా వేయండి.',
       mr: 'आकाशगंगेच्या प्रकाशावरून तिच्या ताऱ्यांतील व तारानिर्मितीच्या इतिहासातील फरकांचा अंदाज घ्या.',
       ms: 'Gunakan cahaya galaksi untuk menyimpulkan perbezaan bintangnya dan sejarah pembentukan bintang.',
