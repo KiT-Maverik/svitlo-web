@@ -38,7 +38,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     et: 'Väljendusrikaste virtuaalruumide loomine modelleerimise, materjalide, valguse ja kompositsiooni abil.',
     be: 'Трохвымернае лічбавае мастацтва',
     ka: 'სამგანზომილებიანი ციფრული ხელოვნება',
-    kk: 'Модельдеу, материалдар, жарық және композиция арқылы мәнерлі виртуалды кеңістіктер құру.',
+    kk: 'Үшөлшемді цифрлық өнер',
     qm: 'Modelleme, material, yarıq ve kompozitsiya vastasınen ifadeleyici sanal meydanlar qurmaq',
   },
   skills: {

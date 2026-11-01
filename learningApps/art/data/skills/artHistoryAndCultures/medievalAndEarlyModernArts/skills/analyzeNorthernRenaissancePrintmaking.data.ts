@@ -65,7 +65,7 @@ export const analyzeNorthernRenaissancePrintmaking_Skill_Data = buildSkillConfig
       et: 'Uuri, kuidas Põhja-Euroopa graafikud lõid ja levitasid detailirohkeid kujutisi.',
       be: 'Даведайся, як паўночнаеўрапейскія графікі стваралі і распаўсюджвалі падрабязныя выявы.',
       ka: 'გაიგეთ, როგორ ქმნიდნენ და ავრცელებდნენ ჩრდილოეთ ევროპელი მბეჭდავი მხატვრები დეტალურ გამოსახულებებს.',
-      kk: 'Солтүстік Еуропа баспа шеберлерінің егжей-тегжейлі бейнелерді қалай жасап, таратқанын біл.',
+      kk: 'Солтүстік Еуропа баспа шеберлерінің егжей-тегжейлі бейнелерді қалай жасап, таратқанын біліңіз.',
       qm: 'Kuzey Avropa basma ustalarınıñ tafsilâtlı suretlerni nasıl yaratqanını ve taratqanını ögren.',
     },
   },

@@ -42,7 +42,7 @@ export const modernArtMovements_SkillGroup_Data = buildSkillGroupConfig({
     et: 'Moodsa kunsti liikumised',
     be: 'Мастацкія плыні мадэрнізму',
     ka: 'მოდერნისტული ხელოვნების მიმდინარეობები',
-    kk: 'Заманауи өнер қозғалыстары',
+    kk: 'Модернистік өнер қозғалыстары',
     qm: 'Modern sanat areketleri',
   },
   skills: {
@@ -86,7 +86,7 @@ export const modernArtMovements_SkillGroup_Data = buildSkillGroupConfig({
       et: 'Uurige, kuidas moodsa kunsti liikumised seadsid kahtluse alla väljakujunenud kunstinormid.',
       be: 'Даследуйце, як мастацкія плыні мадэрнізму аспрэчвалі звыклыя мастацкія нормы.',
       ka: 'გაიგეთ, როგორ უპირისპირდებოდა თანამედროვე ხელოვნების მოძრაობები დამკვიდრებულ მხატვრულ წესებს.',
-      kk: 'Заманауи өнер қозғалыстары қалыптасқан көркемдік қағидаларға қалай сын-қатер төндіргенін зерттеңіз.',
+      kk: 'Модернистік өнер қозғалыстары қалыптасқан көркемдік қағидаларға қалай қарсы шыққанын зерттеңіз.',
       qm: 'Modern sanat areketleriniñ yerleşken sanat kaidelerine nasıl meydan oquğanını ögreniñiz.',
     },
   },

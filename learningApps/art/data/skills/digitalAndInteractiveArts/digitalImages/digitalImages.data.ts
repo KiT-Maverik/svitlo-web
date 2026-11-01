@@ -38,7 +38,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
     et: 'Digipiltide loomine pikslite, kujundite, kihtide ja valikulise töötlusega.',
     be: 'Лічбавыя выявы',
     ka: 'ციფრული გამოსახულებები',
-    kk: 'Пиксельдер, пішіндер, қабаттар және іріктеп өңдеу арқылы цифрлық суреттер жасау.',
+    kk: 'Цифрлық кескіндер',
     qm: 'Pikseller, şekiller, qatlar ve saylanğan deñiştirmeler ile raqemiy suretler yaratmaq',
   },
   skills: {

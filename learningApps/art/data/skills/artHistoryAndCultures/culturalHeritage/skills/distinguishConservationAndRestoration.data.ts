@@ -65,7 +65,7 @@ export const distinguishConservationAndRestoration_Skill_Data = buildSkillConfig
       et: 'Mõista, kuidas algmaterjali säilitamine erineb kadunud tunnuste taastamisest.',
       be: 'Зразумець, чым захаванне арыгінальнага матэрыялу адрозніваецца ад аднаўлення страчаных элементаў.',
       ka: 'გაიგეთ, რით განსხვავდება ორიგინალი მასალის შენარჩუნება დაკარგული დეტალების აღდგენისგან.',
-      kk: 'Түпнұсқа материалды сақтаудың жоғалған белгілерді қайта жасаудан айырмасын түсін.',
+      kk: 'Түпнұсқа материалды сақтаудың жоғалған белгілерді қайта жасаудан айырмасын түсініңіз.',
       qm: 'Asıl materialnı saqlamaqnen coyulğan hususiyetlerni yañıdan yapmaq arasındaki farqnı añla.',
     },
   },

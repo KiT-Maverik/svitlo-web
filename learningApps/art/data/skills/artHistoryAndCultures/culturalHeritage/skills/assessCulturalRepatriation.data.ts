@@ -65,7 +65,7 @@ export const assessCulturalRepatriation_Skill_Data = buildSkillConfig({
       et: 'Uuri kogukondade nõudeid ja eseme omandamise ajalugu, kui arutled selle tagastamise üle.',
       be: 'Разглядаць патрабаванні супольнасцяў і гісторыю набыцця пры абмеркаванні вяртання прадмета.',
       ka: 'განიხილეთ თემების მოთხოვნები და ნივთის შეძენის ისტორია მისი დაბრუნების საკითხის შეფასებისას.',
-      kk: 'Заттың қайтарылуын талқылағанда қауымдастықтардың талаптары мен оның иелену тарихын қарастыр.',
+      kk: 'Затты қайтару мәселесін талқылағанда қауымдастықтардың талаптары мен оны иелену тарихын қарастырыңыз.',
       qm: 'Eşyanıñ qaytarılması aqqında laf etkeniñde cemaatlarnıñ taleplerini ve onıñ alınuv tarihını ögren.',
     },
   },
