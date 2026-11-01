@@ -42,7 +42,7 @@ type ContentBlock_Checkpoint_Data = ContentBlock_Response_Meta<'checkpoint'> & C
   items: {
     question: Locale_Config;
     answer: CheckpointAnswer<'data'>;
-    enableCheck?: true;
+    check?: true;
   }[];
 };
 
@@ -53,7 +53,7 @@ type ContentBlock_Checkpoint_Response = ContentBlock_Response_Meta<'checkpoint'>
     items: {
       question: string;
       answer: CheckpointAnswer<'response'>;
-      enableCheck?: true;
+      check?: true;
     }[];
   };
 
