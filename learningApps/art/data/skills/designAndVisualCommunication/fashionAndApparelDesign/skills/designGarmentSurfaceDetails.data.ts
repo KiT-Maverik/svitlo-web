@@ -12,7 +12,7 @@ export const designGarmentSurfaceDetails_Skill_Data = buildSkillConfig({
     ar: 'تصميم تفاصيل سطح الملابس',
     fr: 'Concevoir les détails de surface des vêtements',
     bn: 'পোশাকের পৃষ্ঠের খুঁটিনাটি নকশা করুন',
-    pt: 'Desenhar detalhes de superfície das peças',
+    pt: 'Projetar detalhes decorativos das roupas',
     ur: 'لباس کی سطحی تفصیلات ڈیزائن کریں',
     id: 'Merancang detail permukaan busana',
     de: 'Oberflächendetails von Kleidung gestalten',

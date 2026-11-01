@@ -12,7 +12,7 @@ export const designAGraphicSymbol_Skill_Data = buildSkillConfig({
     ar: 'تصميم رمز رسومي',
     fr: 'Concevoir un symbole graphique',
     bn: 'গ্রাফিক প্রতীক নকশা করুন',
-    pt: 'Conceber um símbolo gráfico',
+    pt: 'Projetar um símbolo gráfico',
     ur: 'گرافک علامت ڈیزائن کریں',
     id: 'Merancang simbol grafis',
     de: 'Ein grafisches Symbol gestalten',
