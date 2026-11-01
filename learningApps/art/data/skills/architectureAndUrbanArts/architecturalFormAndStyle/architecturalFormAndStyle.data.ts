@@ -52,7 +52,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       'Building volumes, facade rhythms and ornament carry expressive meaning independently of engineering feasibility.',
     frontend: {
       en: 'Explore how building shapes and decorative details express architectural ideas.',
-      zh: '探索建筑装饰在其历史背景中传达的含义。',
+      zh: '探索建筑体量、立面节奏和装饰如何表达建筑风格。',
       hi: 'जानें कि ऐतिहासिक संदर्भ में वास्तुशिल्प सजावट क्या संदेश देती है।',
       es: 'Explora qué comunica la decoración arquitectónica en su contexto histórico.',
       ar: 'استكشف ما تنقله الزخارف المعمارية في سياقها التاريخي.',

@@ -38,7 +38,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
     methodological: 'Relate decorative features to meaning, period or cultural context.',
     frontend: {
       en: 'Explore what architectural decoration communicates in its historical setting.',
-      zh: '将建筑体量与开放空间组合成均衡的视觉形态。',
+      zh: '探索建筑装饰如何体现其历史时期及文化含义。',
       hi: 'इमारत के आयतन और खुले स्थानों को मिलाकर संतुलित दृश्य रूप बनाएँ।',
       es: 'Combina volúmenes edificados y espacios abiertos en una forma visual equilibrada.',
       ar: 'اجمع بين كتل المبنى والفراغات المفتوحة في تكوين بصري متوازن.',

@@ -38,7 +38,7 @@ export const programDrumMachinePatterns_Skill_Data = buildSkillConfig({
     methodological: 'Place percussion events into time positions to produce a repeatable beat.',
     frontend: {
       en: 'Place drum sounds on a time grid to make a repeating beat.',
-      zh: '将鼓声放在时间网格上， შექმ成重复的节拍。',
+      zh: '将鼓声放在时间网格上，编排成重复的节拍。',
       hi: 'दोहराई जाने वाली ताल बनाने के लिए ड्रम ध्वनियों को समय ग्रिड पर रखें।',
       es: 'Coloca sonidos de batería en una cuadrícula temporal para crear un ritmo repetitivo.',
       ar: 'ضع أصوات الطبول على شبكة زمنية لإنشاء إيقاع متكرر.',

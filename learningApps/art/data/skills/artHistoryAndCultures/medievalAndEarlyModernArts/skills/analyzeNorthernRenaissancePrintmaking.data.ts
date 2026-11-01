@@ -39,7 +39,7 @@ export const analyzeNorthernRenaissancePrintmaking_Skill_Data = buildSkillConfig
       'Explain how woodcut or engraving technologies shaped image detail, circulation and artistic practice in northern European contexts.',
     frontend: {
       en: 'Discover how northern European printmakers created and circulated detailed images.',
-      zh: '了解北欧版画家如何制作并传播细节丰富的图像。',
+      zh: '了解北方文艺复兴时期的版画家如何制作并传播细节丰富的图像。',
       hi: 'जानें कि उत्तरी यूरोप के प्रिंट निर्माताओं ने विस्तृत चित्र कैसे बनाए और प्रसारित किए।',
       es: 'Descubre cómo los grabadores del norte de Europa crearon y difundieron imágenes detalladas.',
       ar: 'اكتشف كيف أنشأ فنانو الطباعة في شمال أوروبا صورًا دقيقة ونشروها.',

@@ -6,7 +6,7 @@ export const distinguishDocumentaryAndStagedPhotography_Skill_Data = buildSkillC
   name: {
     en: 'Distinguish Documentary and Staged Photography',
 
-    zh: '纪实摄影与摆拍摄影的区别',
+    zh: '区分纪实摄影与摆拍摄影',
     hi: 'डॉक्यूमेंट्री और मंचित फ़ोटोग्राफ़ी में अंतर करें',
     es: 'Distinguir la fotografía documental de la escenificada',
     ar: 'التمييز بين التصوير الوثائقي والمُرتّب',
