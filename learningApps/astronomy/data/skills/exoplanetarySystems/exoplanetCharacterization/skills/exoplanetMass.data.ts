@@ -65,7 +65,7 @@ export const exoplanetMass_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як гравітацыйны ўплыў плянэты дапамагае ацаніць яе масу.',
       ka: 'გაიგეთ, როგორ გვეხმარება პლანეტის გრავიტაციული გავლენა მისი მასის შეფასებაში.',
       kk: 'Ғаламшардың тартылыс әсері оның массасын бағалауға қалай көмектесетінін зерттеңіз.',
-      qm: 'Seyyareniñ yer çekimi tesirleri onıñ kütlesini tahmin etmege nasıl yardım etkenini ögreniñiz.',
+      qm: 'Seyyareniñ cazibe quveti tesirleri onıñ kütlesini tahmin etmege nasıl yardım etkenini ögreniñiz.',
     },
   },
 });

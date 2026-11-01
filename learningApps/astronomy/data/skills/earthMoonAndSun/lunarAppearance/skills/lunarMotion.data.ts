@@ -65,7 +65,7 @@ export const lunarMotion_Skill_Data = buildSkillConfig({
       be: 'Прасачыце, як ад ночы да ночы зьмяняецца становішча Месяца адносна зорак.',
       ka: 'დააკვირდით, როგორ იცვლება მთვარის მდებარეობა ვარსკვლავების მიმართ ღამიდან ღამემდე.',
       kk: 'Айдың жұлдыздарға қатысты орны түн сайын қалай өзгеретінін бақылаңыз.',
-      qm: 'Aynıñ yulduzlarğa nisbeten yeriniñ geceden gecege nasıl deñişkenini baqıñız.',
+      qm: 'Aynıñ yıldızlarğa nisbeten yeriniñ geceden gecege nasıl deñişkenini baqıñız.',
     },
   },
 });

@@ -39,7 +39,7 @@ export const cosmicHorizons_Skill_Data = buildSkillConfig({
       'Interpret limits on observable or causally connected regions without treating them as physical walls.',
     frontend: {
       en: 'Explore limits on how far signals can reach us or influence other regions.',
-      qm: 'Signallarnıñ bizge ne qadar uzaqtan yetişebilegenini ya da başqa bölgelere tesir etebilegenini araştırıñız.',
+      qm: 'Signallarnıñ bizge ne qadar uzaqtan yetişebilegenini ya da başqa bölgelere tesir ete bilgenini araştırıñız.',
       zh: '了解信号能传播到我们这里或影响其他区域的范围限制。',
       hi: 'जानें कि संकेत कितनी दूर से हम तक पहुँच सकते हैं या दूसरे क्षेत्रों को प्रभावित कर सकते हैं।',
       es: 'Explora los límites de hasta dónde pueden llegarnos señales o influir en otras regiones.',

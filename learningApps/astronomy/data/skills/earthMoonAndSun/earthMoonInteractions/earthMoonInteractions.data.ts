@@ -73,7 +73,7 @@ export const earthMoonInteractions_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Дасьледуйце, як Месяц і Зямля ўплываюць адзін на аднаго дзякуючы гравітацыі.',
       ka: 'შეისწავლეთ, როგორ მოქმედებენ მთვარე და დედამიწა ერთმანეთზე მიზიდულობის ძალით.',
       kk: 'Ай мен Жердің тартылыс күші арқылы бір-біріне қалай әсер ететінін зерттеңіз.',
-      qm: 'Ay ve Yerniñ çekim quveti vastasınen bir-birine nasıl tesir etkenini ögreniñiz.',
+      qm: 'Ay ve Yerniñ cazibe quveti vastasınen bir-birine nasıl tesir etkenini ögreniñiz.',
     },
   },
 });

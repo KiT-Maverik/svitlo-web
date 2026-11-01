@@ -39,7 +39,7 @@ export const accretionPoweredEmission_Skill_Data = buildSkillConfig({
       'Explain how infalling material can release substantial radiation before crossing an event horizon.',
     frontend: {
       en: 'Learn how material falling toward a black hole can produce powerful radiation.',
-      qm: 'Qara deşikke tüşken madde nasıl küçlü şavle çıqarabilegenini ögreniñiz.',
+      qm: 'Qara deşikke tüşken madde nasıl küçlü şavle çıqara bilgenini ögreniñiz.',
       zh: '了解落向黑洞的物质如何产生强烈辐射。',
       hi: 'जानें कि ब्लैक होल की ओर गिरता पदार्थ शक्तिशाली विकिरण कैसे उत्पन्न कर सकता है।',
       es: 'Aprende cómo la materia que cae hacia un agujero negro puede producir una radiación intensa.',

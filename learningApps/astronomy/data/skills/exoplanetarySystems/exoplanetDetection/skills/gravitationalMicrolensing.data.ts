@@ -32,7 +32,7 @@ export const gravitationalMicrolensing_Skill_Data = buildSkillConfig({
     be: 'Гравітацыйнае мікралінзаваньне',
     ka: 'გრავიტაციული მიკროლინზირება',
     kk: 'Гравитациялық микролинзалау',
-    qm: 'Yer çekimi mikrolinzalaması',
+    qm: 'Gravitatsion mikrolinzalanma',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const gravitationalMicrolensing_Skill_Data = buildSkillConfig({
       be: 'Зразумейце, як гравітацыя можа ненадоўга ўзмацніць сьвятло далёкай зоркі й выявіць плянэту.',
       ka: 'გაიგეთ, როგორ შეუძლია გრავიტაციას შორეული ვარსკვლავის სინათლის ხანმოკლე გაძლიერება და პლანეტის გამოვლენა.',
       kk: 'Тартылыс күші алыс жұлдыз жарығын уақытша күшейтіп, ғаламшарды қалай анықтай алатынын түсініңіз.',
-      qm: 'Yer çekimi uzaq yıldıznıñ yarığını qısqa vaqıtqa küçlendirip, seyyareni nasıl köstere bilgenini añlañız.',
+      qm: 'Cazibe quveti uzaq yıldıznıñ yarığını qısqa vaqıtqa küçlendirip, seyyareni nasıl köstere bilgenini añlañız.',
     },
   },
 });

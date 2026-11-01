@@ -32,7 +32,7 @@ export const gravitationallyBoundSystems_Skill_Data = buildSkillConfig({
     be: 'Гравітацыйна зьвязаныя сыстэмы',
     ka: 'გრავიტაციულად დაკავშირებული სისტემები',
     kk: 'Гравитациялық байланысқан жүйелер',
-    qm: 'Yer çekimi ile bağlı sistemalar',
+    qm: 'Cazibe quveti ile bağlı sistemalar',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const gravitationallyBoundSystems_Skill_Data = buildSkillConfig({
       be: 'Параўноўвайце плянэтныя сыстэмы, зорныя скопішчы, галяктыкі ды іншыя сыстэмы, зьвязаныя гравітацыяй.',
       ka: 'შეადარეთ პლანეტური სისტემები, ვარსკვლავთა გროვები, გალაქტიკები და სხვა გრავიტაციულად შეკავშირებული სისტემები.',
       kk: 'Ғаламшар жүйелерін, жұлдыз шоғырларын, галактикаларды және тартылыс күшімен байланысқан басқа жүйелерді салыстырыңыз.',
-      qm: 'Seyyare sistemalarını, yıldız toplulıqlarını, galaktikalarnı ve yer çekimi ile bağlı başqa sistemalarnı qıyaslañız.',
+      qm: 'Seyyare sistemalarını, yıldız toplulıqlarını, galaktikalarnı ve cazibe quveti ile bağlı başqa sistemalarnı qıyaslañız.',
     },
   },
 });
