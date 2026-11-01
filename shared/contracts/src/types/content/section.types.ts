@@ -9,6 +9,7 @@ type Section_Definition = {
 
 type Section_Data = {
   id: string;
+  slug: string;
   title: Locale_Config;
   navigationLabel: Locale_Config;
   skippable?: true;

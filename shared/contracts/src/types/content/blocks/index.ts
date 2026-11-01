@@ -2,6 +2,7 @@ import type { ContentBlock_Audio } from './audio.types';
 import type { ContentBlock_Checkpoint } from './checkpoint.types';
 import type { ContentBlock_Code } from './code.types';
 import type { ContentBlock_Type } from './common.types';
+import type { DefineValidKeysFromSlugs } from '../../misc.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { ContentBlock_Image } from './image.types';
 import type { ContentBlock_Markdown } from './markdown.types';
@@ -36,6 +37,18 @@ export interface ContentBlock_Map<ConfigType extends ContentEntity_ConfigType> {
 export type ContentBlock_Catalog<ConfigType extends ContentEntity_ConfigType> = {
   [Type in ContentBlock_Type & keyof ContentBlock_Map<ConfigType>]?: Record<string, ContentBlock_Map<ConfigType>[Type]>;
 };
+
+type ContentBlock_Catalog_ValidSlugs<T extends ContentBlock_Catalog<'data'>> = {
+  [Type in keyof T]: Type extends keyof ContentBlock_Map<'data'>
+    ? DefineValidKeysFromSlugs<keyof NonNullable<T[Type]> & string, ContentBlock_Map<'data'>[Type]>
+    : never;
+};
+
+export function defineContentBlockCatalog<const T extends ContentBlock_Catalog<'data'>>(
+  catalog: T & ContentBlock_Catalog_ValidSlugs<T>,
+): T {
+  return catalog;
+}
 
 export type {
   ContentBlock_Audio,

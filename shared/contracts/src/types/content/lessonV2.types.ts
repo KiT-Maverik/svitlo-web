@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import type { LanguageCode } from '../languages';
-import type { NonEmptyArray } from '../misc.types';
+import type { DefineValidKeysFromSlugs, NonEmptyArray } from '../misc.types';
 import type { ContentEntity_ConfigType } from './entity.types';
 import type { Locale_Config, Locale_ResponseParams } from './locale.types';
 import type { Section } from './section.types';
@@ -42,3 +42,9 @@ export type LessonV2<ConfigType extends ContentEntity_ConfigType> = {
   data: LessonV2_Data;
   response: LessonV2_Response;
 }[ConfigType];
+
+export function defineLessonV2Data<const T extends LessonV2<'data'>>(
+  lesson: T & { sections: DefineValidKeysFromSlugs<keyof T['sections'] & string, Section<'data'>> },
+): T {
+  return lesson;
+}
