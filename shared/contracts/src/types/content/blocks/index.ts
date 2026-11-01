@@ -3,11 +3,11 @@ import type { CodeContentBlock } from './code.types';
 import type { ImageContentBlock } from './image.types';
 import type { MarkdownContentBlock } from './markdown.types';
 import type { SceneContentBlock } from './scene.types';
-import type { ContentBlock_Text } from './text.types';
+import type { ContentBlock_Text_Definition } from './text.types';
 import type { VideoContentBlock } from './video.types';
 
 export type ContentBlock =
-  | ContentBlock_Text
+  | ContentBlock_Text_Definition
   | SceneContentBlock
   | MarkdownContentBlock
   | CodeContentBlock
@@ -16,7 +16,7 @@ export type ContentBlock =
   | ImageContentBlock;
 
 export interface ContentBlockMap {
-  text: ContentBlock_Text;
+  text: ContentBlock_Text_Definition;
   scene: SceneContentBlock;
   markdown: MarkdownContentBlock;
   code: CodeContentBlock;
@@ -31,6 +31,6 @@ export type {
   ImageContentBlock,
   MarkdownContentBlock,
   SceneContentBlock,
-  ContentBlock_Text,
+  ContentBlock_Text_Definition,
   VideoContentBlock,
 };

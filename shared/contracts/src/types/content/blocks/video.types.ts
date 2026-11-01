@@ -1,6 +1,6 @@
-import type { ContentBlock_Meta } from './common.types';
+import type { ContentBlock_Response_Meta } from './common.types';
 
-export type VideoContentBlock = ContentBlock_Meta<'video'> & {
+export type VideoContentBlock = ContentBlock_Response_Meta<'video'> & {
   fileLocation: string;
   poster: string;
 };
