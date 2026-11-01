@@ -12,7 +12,7 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
     kk: 'Бөлу — екі таңбалы санды бір таңбалы санға',
     en: 'Division — 2-digit÷1-digit',
     qm: 'Bölüv — eki raqamlı sayını bir raqamlı sayığa bölüv',
-    zh: '除法 — 2-位数÷1-位数',
+    zh: '除法 — 两位数除以一位数',
     hi: 'भाग — 2-अंकीय÷1-अंकीय',
     es: 'División — 2-cifras÷1-cifras',
     ar: 'القسمة — 2-أرقام÷1-أرقام',
