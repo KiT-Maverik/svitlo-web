@@ -30,7 +30,7 @@ export const solarFlares_Skill_Data = buildSkillConfig({
     ko: '태양 플레어',
     ar: 'التوهجات الشمسية',
     hi: 'सौर ज्वालाएँ',
-    he: 'להבות שמש',
+    he: 'התפרצויות שמש',
     vi: 'Lóa Mặt Trời',
   },
   description: {
