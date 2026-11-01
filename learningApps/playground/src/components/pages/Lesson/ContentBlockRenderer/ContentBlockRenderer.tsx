@@ -232,6 +232,7 @@ function QuizBlock({
   const questions = Object.values(response.questions);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [retriesUsed, setRetriesUsed] = useState(0);
   const score = questions.filter(question => Object.entries(question.answers.correct)
     .some(([key, item]) => (answers[question.id] === key || answers[question.id] === item.id))).length;
   const attrs = localizedAttributes(response);
@@ -255,27 +256,41 @@ function QuizBlock({
                 ))}
               </div>
               <div role="group" aria-labelledby={name + '-prompt'}>
-                {options.map(([key, block]) => (
-                  <label key={key} style={{ display: 'block' }}>
-                    <input
-                      type="radio"
-                      name={name}
-                      value={key}
-                      checked={answers[question.id] === key}
-                      onChange={() => setAnswers(previous => ({ ...previous, [question.id]: key }))}
-                    />
-                    {renderNested(block, context)}
-                  </label>
-                ))}
+                {options.map(([key, block]) => {
+                  const optionId = name + '-' + key;
+                  return (
+                    <div key={key}>
+                      <input
+                        id={optionId}
+                        type="radio"
+                        name={name}
+                        value={key}
+                        aria-labelledby={optionId + '-content'}
+                        checked={answers[question.id] === key}
+                        onChange={() => setAnswers(previous => ({ ...previous, [question.id]: key }))}
+                      />
+                      <div id={optionId + '-content'}>{renderNested(block, context)}</div>
+                    </div>
+                  );
+                })}
               </div>
-              {submitted && question.explanation?.map((block, blockIndex) => (
+              {submitted && response.interaction.allowExplanations && question.explanation?.map((block, blockIndex) => (
                 <div key={block.id + ':' + blockIndex}>{renderNested(block, context)}</div>
               ))}
             </fieldset>
           );
         })}
         {!submitted && questions.length > 0 && <input type="submit" disabled={questions.some(q => !answers[q.id])} />}
-        {submitted && <output aria-live="polite">{score} / {questions.length}</output>}
+        {submitted && response.results.showScore && response.results.visibility !== 'hidden' && (
+          <output aria-live="polite">{score} / {questions.length}</output>
+        )}
+        {submitted && retriesUsed < response.interaction.retries && (
+          <input type="reset" onClick={() => {
+            setSubmitted(false);
+            setAnswers({});
+            setRetriesUsed(previous => previous + 1);
+          }} />
+        )}
       </form>
     </section>
   );
