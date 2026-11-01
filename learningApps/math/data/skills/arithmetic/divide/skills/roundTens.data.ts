@@ -19,7 +19,7 @@ export const roundTens_Skill_Data = buildSkillConfig({
     fr: 'Division — Dizaines entières',
     bn: 'ভাগ — পূর্ণ দশক',
     pt: 'Divisão — Dezenas exatas',
-    ur: 'تقسیم — پورے دہائی',
+    ur: 'تقسیم — مکمل دہائیاں',
     id: 'Pembagian — Puluhan penuh',
     de: 'Division — Ganze Zehner',
     ja: '除法 — 10のまとまり',
