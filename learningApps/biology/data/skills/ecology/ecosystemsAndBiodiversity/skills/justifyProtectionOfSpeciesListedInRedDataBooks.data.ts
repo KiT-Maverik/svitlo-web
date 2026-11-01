@@ -32,6 +32,7 @@ export const justifyProtectionOfSpeciesListedInRedDataBooks_Skill_Data = buildSk
     be: 'Абгрунтоўваць ахову відаў з Чырвоных кніг',
     ka: 'წითელ წიგნებში შეტანილი სახეობების დაცვის დასაბუთება',
     kk: 'Қызыл кітаптардағы түрлерді қорғауды негіздеу',
+    qm: 'Qırmızı kitaplardaki türlerni qorçalamaqnı esaslandırmaq',
   },
   description: {
     methodological: "Explain why species listed in national or regional Red Data Books require conservation attention in light of threats and population status. Distinguish the legal and informational status of a particular Red Data Book from the international IUCN Red List: these lists are not equivalent.",
@@ -64,6 +65,7 @@ export const justifyProtectionOfSpeciesListedInRedDataBooks_Skill_Data = buildSk
       be: 'Патлумач, чаму віды пад пагрозай, занесеныя ў Чырвоныя кнігі, патрабуюць аховы.',
       ka: 'ახსენი, რატომ საჭიროებენ დაცვას წითელ წიგნებში შეტანილი საფრთხის ქვეშ მყოფი სახეობები.',
       kk: 'Қызыл кітаптарға енген жойылу қаупі бар түрлерді неге қорғау қажет екенін түсіндір.',
+      qm: 'Qırmızı kitaplarga kirsetilgen telüke astındaki türler ne içün hususiy qorçalavğa muhtac olğanını añlatıñız.',
     },
   },
 });
