@@ -26,7 +26,7 @@ export const extremophileAnalogues_Skill_Data = buildSkillConfig({
     pt: 'Análogos de extremófilos',
     id: 'Analogi ekstremofil',
     tr: 'Ekstremofil benzerleri',
-    zh: '极端微生物的类比研究',
+    zh: '极端环境生物的类比研究',
     ja: '極限環境生物との比較',
     ko: '극한생물 유사 사례',
     ar: 'نظائر الكائنات المحبة للظروف القاسية',

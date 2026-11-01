@@ -64,7 +64,7 @@ export const observingConditions_Skill_Data = buildSkillConfig({
       lt: 'Rinkis laiką ir vietą, kur tinkami orai, tamsa ir matomumas.',
       lv: 'Izvēlies laiku un vietu ar piemērotiem laikapstākļiem, tumsu un redzamību.',
       et: 'Vali vaatluseks sobiva ilma, pimeduse ja nähtavusega aeg ning koht.',
-      be: 'Выбірай час і месца з адпаведным надвор’ем, цемрай і бачнасцю.',
+      be: 'Выбірай час і месца з адпаведным надвор’ем, цемрай і бачнасьцю.',
       ka: 'შეარჩიე დრო და ადგილი შესაფერისი ამინდით, სიბნელითა და ხილვადობით.',
       kk: 'Ауа райы, қараңғылық пен көріну деңгейі қолайлы уақыт пен орынды таңда.',
     },

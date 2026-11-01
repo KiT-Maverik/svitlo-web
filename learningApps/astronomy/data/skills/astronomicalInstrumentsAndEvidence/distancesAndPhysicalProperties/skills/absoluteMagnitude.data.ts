@@ -23,7 +23,7 @@ export const absoluteMagnitude_Skill_Data = buildSkillConfig({
     de: 'Absolute Helligkeit',
     pt: 'Magnitude absoluta',
     id: 'Magnitudo mutlak',
-    tr: 'Mutlak parlaklık',
+    tr: 'Mutlak kadir',
     zh: '绝对星等',
     ja: '絶対等級',
     ko: '절대등급',

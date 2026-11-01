@@ -50,7 +50,7 @@ export const celestialObjectClassification_Skill_Data = buildSkillConfig({
       id: 'Kenali kategori utama benda langit berdasarkan sifat fisiknya.',
       de: 'Erkenne die wichtigsten Arten von Himmelsobjekten anhand ihrer physikalischen Eigenschaften.',
       ja: '物理的な性質から天体の主な種類を見分ける。',
-      ko: '물리적 특성으로 천체의 주요 유형을 구분한다.',
+      ko: '물리적 특성을 바탕으로 천체의 주요 유형을 구별해 보세요.',
       tr: 'Gök cisimlerinin başlıca türlerini fiziksel özelliklerinden tanıyın.',
       vi: 'Nhận biết các nhóm thiên thể chính dựa vào tính chất vật lý của chúng.',
       ta: 'வான்பொருட்களின் இயற்பியல் பண்புகளைக் கொண்டு அவற்றின் முக்கிய வகைகளை அறிந்துகொள்ளுங்கள்.',

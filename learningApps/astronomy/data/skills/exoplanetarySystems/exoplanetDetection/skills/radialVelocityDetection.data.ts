@@ -6,7 +6,7 @@ export const radialVelocityDetection_Skill_Data = buildSkillConfig({
   name: {
     en: 'Radial-Velocity Detection',
     zh: '径向速度探测法',
-    hi: 'रेखीय वेग से ग्रहों की खोज',
+    hi: 'त्रिज्यीय वेग से ग्रहों की खोज',
     es: 'Detección por velocidad radial',
     ar: 'الكشف بالسرعة الشعاعية',
     fr: 'Détection par vitesse radiale',
@@ -20,7 +20,7 @@ export const radialVelocityDetection_Skill_Data = buildSkillConfig({
     tr: 'Radyal hız yöntemi',
     vi: 'Phát hiện bằng vận tốc xuyên tâm',
     ta: 'ஆரவேக முறையால் கண்டறிதல்',
-    te: 'రేఖీయ వేగం ద్వారా గుర్తింపు',
+    te: 'దృష్టిరేఖా వేగం ద్వారా గుర్తింపు',
     mr: 'त्रिज्यीय वेगाने शोध',
     ms: 'Pengesanan halaju jejari',
     he: 'גילוי באמצעות מהירות רדיאלית',

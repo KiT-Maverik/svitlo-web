@@ -21,7 +21,7 @@ export const brownDwarfs_Skill_Data = buildSkillConfig({
     vi: 'Sao lùn nâu',
     ta: 'பழுப்புக் குறுவிண்மீன்கள்',
     te: 'గోధుమ మరుగుజ్జు ఖగోళ వస్తువులు',
-    mr: 'तपकिरी बटू तारे',
+    mr: 'तपकिरी बटू पिंड',
     ms: 'Kerdil perang',
     he: 'ננסים חומים',
     pl: 'Brązowe karły',
