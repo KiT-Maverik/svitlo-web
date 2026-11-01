@@ -20,7 +20,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
     bn: 'ডিজিটাল চিত্র',
     pt: 'Criar imagens digitais com pixels, formas, camadas e edições seletivas.',
     ur: 'ڈیجیٹل تصاویر',
-    id: 'Membuat gambar digital dengan piksel, bentuk, lapisan, dan penyuntingan selektif.',
+    id: 'Gambar Digital',
     de: 'Digitale Bilder mit Pixeln, Formen, Ebenen und gezielten Bearbeitungen erstellen.',
     ja: 'ピクセル、図形、レイヤー、部分編集を使ってデジタル画像を作成する。',
     ko: '픽셀, 도형, 레이어 및 선택적 편집으로 디지털 그림 만들기.',
