@@ -25,7 +25,7 @@ export async function generateMetadata({ searchParams }: PageProps<'/topics/ligh
   const { response } = await localizedLesson(searchParams);
   return {
     title: response.title + ' — Світло',
-    description: 'Інтерактивний урок про поширення світла.',
+    description: response.title,
   };
 }
 
