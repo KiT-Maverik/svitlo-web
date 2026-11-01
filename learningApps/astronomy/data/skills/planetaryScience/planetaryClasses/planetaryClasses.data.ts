@@ -13,7 +13,7 @@ export const planetaryClasses_SkillGroup_Data = buildSkillGroupConfig({
   id: 'ccef5030-d741-4f0d-904e-40f8aa8ce696',
   name: {
     en: 'Planetary Classes',
-      zh: '行星天体的类别',
+    zh: '行星天体的类别',
     hi: 'ग्रहीय पिंडों की श्रेणियाँ',
     es: 'Clases de cuerpos planetarios',
     ar: 'فئات الأجرام الكوكبية',
@@ -54,7 +54,7 @@ export const planetaryClasses_SkillGroup_Data = buildSkillGroupConfig({
       'Composition, density and thermal history help explain why planets and moons display very different structures rather than simply different sizes.',
     frontend: {
       en: 'Compare rocky worlds, giant planets, moons and other planetary bodies.',
-          zh: '比较岩石天体、巨行星、卫星和其他行星类天体。',
+      zh: '比较岩石天体、巨行星、卫星和其他行星类天体。',
       hi: 'चट्टानी ग्रहों, विशाल ग्रहों, चंद्रमाओं और अन्य ग्रहीय पिंडों की तुलना करें।',
       es: 'Compara mundos rocosos, planetas gigantes, lunas y otros cuerpos planetarios.',
       ar: 'قارن بين العوالم الصخرية والكواكب العملاقة والأقمار والأجرام الكوكبية الأخرى.',
