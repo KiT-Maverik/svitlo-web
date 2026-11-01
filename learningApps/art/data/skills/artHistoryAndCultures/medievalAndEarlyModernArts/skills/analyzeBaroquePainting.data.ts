@@ -28,7 +28,7 @@ export const analyzeBaroquePainting_Skill_Data = buildSkillConfig({
     uk: 'Аналізувати бароковий живопис',
     lt: 'Analizuoti baroko tapybą',
     lv: 'Analizēt baroka glezniecību',
-    et: 'Analüüsida barok maalikunsti',
+    et: 'Analüüsida barokkmaali',
     be: 'Аналізаваць барочны жывапіс',
     ka: 'ბაროკოს ფერწერის ანალიზი',
     kk: 'Барокко кескіндемесін талдау',

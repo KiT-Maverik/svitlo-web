@@ -73,7 +73,7 @@ export const latinAmericanArtMovements_SkillGroup_Data = buildSkillGroupConfig({
       uk: 'Вивчайте різні мистецькі рухи Латинської Америки з огляду на їхній контекст і мету.',
       lt: 'Pažinkite Lotynų Amerikos meno judėjimus per konkrečius jų kontekstus ir tikslus.',
       lv: 'Iepazīstiet dažādas Latīņamerikas mākslas kustības to konkrētajā kontekstā un mērķos.',
-      et: 'Tutvuge Ladina-Ameerika kunstiliikumistega nende konkreetse tausta ja eesmärkide kaudu.',
+      et: 'Tutvu Ladina-Ameerika kunstiliikumistega nende konkreetse tausta ja eesmärkide kaudu.',
       be: 'Вывучайце розныя мастацкія рухі Лацінскай Амерыкі з улікам іх кантэксту і мэтаў.',
       ka: 'შეისწავლეთ ლათინური ამერიკის ხელოვნების განსხვავებული მოძრაობები მათი კონკრეტული კონტექსტისა და მიზნების მიხედვით.',
       kk: 'Латын Америкасындағы өнер қозғалыстарын олардың нақты жағдайы мен мақсаттары арқылы таныңыз.',

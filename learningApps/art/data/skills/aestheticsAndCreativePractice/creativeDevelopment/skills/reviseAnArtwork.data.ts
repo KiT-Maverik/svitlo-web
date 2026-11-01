@@ -28,7 +28,7 @@ export const reviseAnArtwork_Skill_Data = buildSkillConfig({
     uk: 'Доопрацьовувати мистецький твір',
     lt: 'Tobulinti meno kūrinį',
     lv: 'Pārstrādāt mākslas darbu',
-    et: 'Kunstiteose läbivaatamine',
+    et: 'Kunstiteose täiendamine',
     be: 'Пераглядаць мастацкі твор',
     ka: 'ხელოვნების ნიმუშის გადამუშავება',
     kk: 'Өнер туындысын қайта қарау',

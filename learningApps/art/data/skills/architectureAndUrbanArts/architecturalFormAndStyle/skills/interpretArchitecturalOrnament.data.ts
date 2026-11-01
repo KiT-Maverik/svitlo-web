@@ -61,7 +61,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       uk: 'Дослідіть, як архітектурні орнаменти передають зміст, пов’язаний з історичною добою та культурою.',
       lt: 'Derink pastato tūrius ir atviras erdves į darnią vizualią formą.',
       lv: 'Apvieno ēkas apjomus un atklātās telpas līdzsvarotā vizuālā formā.',
-      et: 'Ühenda hoonemahud ja avatud ruumid tasakaalustatud visuaalseks vormiks.',
+      et: 'Uuri, kuidas arhitektuursed kaunistused väljendavad oma ajastu ja kultuuri tähendusi.',
       be: 'Спалучай аб’ёмы будынка і адкрытыя прасторы ў збалансаваную візуальную форму.',
       ka: 'შეუთავსეთ შენობის მოცულობები და ღია სივრცეები დაბალანსებულ ვიზუალურ ფორმად.',
       kk: 'Ғимарат көлемдері мен ашық кеңістіктерді үйлесімді көрнекі пішінге біріктіріңіз.',

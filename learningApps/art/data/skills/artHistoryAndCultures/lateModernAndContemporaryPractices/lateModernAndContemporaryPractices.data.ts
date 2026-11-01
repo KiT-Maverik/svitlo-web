@@ -77,7 +77,7 @@ export const lateModernAndContemporaryPractices_SkillGroup_Data = buildSkillGrou
       uk: 'Досліджуйте твори, у яких особливого значення набувають ідеї, простір, участь або повсякденні образи.',
       lt: 'Pažinkite kūrinius, kuriuose ypač pabrėžiamos idėjos, erdvė, dalyvavimas ar kasdieniai vaizdai.',
       lv: 'Iepazīstiet darbus, kuros īpaši izceltas idejas, telpa, līdzdalība vai ikdienas tēli.',
-      et: 'Uurige teoseid, mis tõstavad esile ideid, ruumi, osalust või igapäevaseid kujutisi.',
+      et: 'Uuri teoseid, mis tõstavad esile ideid, ruumi, osalust või igapäevaseid kujutisi.',
       be: 'Даследуйце творы, у якіх асаблівае значэнне маюць ідэі, прастора, удзел або паўсядзённыя вобразы.',
       ka: 'შეისწავლეთ ნამუშევრები, რომლებშიც განსაკუთრებული მნიშვნელობა ენიჭება იდეებს, სივრცეს, მონაწილეობას ან ყოველდღიურ გამოსახულებებს.',
       kk: 'Идеяға, кеңістікке, қатысуға немесе күнделікті бейнелерге ерекше мән беретін туындыларды зерттеңіз.',

@@ -77,7 +77,7 @@ export const medievalAndEarlyModernArts_SkillGroup_Data = buildSkillGroupConfig(
       uk: 'Порівнюйте сакральні та світські твори різних середньовічних і ранньомодерних традицій.',
       lt: 'Palyginkite sakralinius ir pasaulietinius skirtingų viduramžių bei ankstyvųjų naujųjų laikų tradicijų kūrinius.',
       lv: 'Salīdziniet sakrālos un sabiedriskos darbus dažādās viduslaiku un agrīno jauno laiku tradīcijās.',
-      et: 'Võrrelge eri keskaja ja varauusaja traditsioonide sakraalseid ning ilmalikke teoseid.',
+      et: 'Võrdle eri keskaja ja varauusaja traditsioonide sakraalseid ning ilmalikke teoseid.',
       be: 'Параўноўвайце сакральныя і свецкія творы розных сярэднявечных і раннемадэрных традыцый.',
       ka: 'შეადარეთ შუა საუკუნეებისა და ადრეული ახალი დროის სხვადასხვა ტრადიციის საკრალური და სამოქალაქო ნამუშევრები.',
       kk: 'Орта ғасырлар мен ерте жаңа дәуірдің әртүрлі дәстүрлеріндегі діни және қоғамдық туындыларды салыстырыңыз.',
