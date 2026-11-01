@@ -26,7 +26,7 @@ export const zero_Skill_Data = buildSkillConfig({
     ko: '0을 아무것도 없는 수량으로 이해하기',
     tr: 'Sıfırı boş miktar olarak anlama',
     vi: 'Hiểu số không là số lượng bằng không',
-    ta: 'பூஜ்ஜியத்தைப் பொருள்கள் இல்லாத அளவாகப் புரிந்துகொள்ளுதல்',
+    ta: 'பூச்சியத்தைப் பொருள்கள் இல்லாத அளவாகப் புரிந்துகொள்ளுதல்',
     te: 'సున్నాను వస్తువులు లేని పరిమాణంగా అర్థం చేసుకోవడం',
     mr: 'शून्य म्हणजे रिकामी संख्या समजणे',
     ms: 'Memahami sifar sebagai kuantiti kosong',
