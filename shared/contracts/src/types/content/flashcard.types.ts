@@ -1,6 +1,5 @@
 import type { ContentBlock } from './blocks';
 import type { ContentEntity_ConfigType } from './entity.types';
-import type { Review } from './review.types';
 
 type Flashcard_Definition = {
   type: 'flashcard';
@@ -8,7 +7,6 @@ type Flashcard_Definition = {
 
 type Flashcard_Data = {
   id: string;
-  review?: Review;
   isDefault?: true;
   front: ContentBlock<'data'>[];
   back: ContentBlock<'data'>[];

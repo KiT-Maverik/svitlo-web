@@ -1,7 +1,6 @@
 import type { Disability } from '../../disabilities.types';
 import type { AssessmentMethodKey } from '../assessmentMethod.types';
 import type { Locale_ResponseParams } from '../locale.types';
-import type { Review } from '../review.types';
 
 export type Question_Type =
   | 'selectOneAnswer'
@@ -20,7 +19,6 @@ export type Question_Definition_Meta<Type extends Question_Type> = {
 
 export type Question_Data_Meta<Type extends Question_Type> = {
   id: string;
-  review?: Review;
   slug: string;
   type: Type;
   assessmentMethod: AssessmentMethodKey;

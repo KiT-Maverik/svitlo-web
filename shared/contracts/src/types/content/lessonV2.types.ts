@@ -5,7 +5,6 @@ import type { ContentEntity_ConfigType } from './entity.types';
 import type { Flashcard } from './flashcard.types';
 import type { Locale_Config, Locale_ResponseParams } from './locale.types';
 import type { Question_Catalog, Question_Catalog_ValidSlugs } from './questions';
-import type { Review } from './review.types';
 import type { Section } from './section.types';
 
 type LessonV2_Parameters = {
@@ -26,7 +25,7 @@ type LessonV2_Definition = {
 
 type LessonV2_Data = {
   id: string;
-  review?: Review;
+  group: string;
   slug: string;
   title: Locale_Config;
   flashcards: Flashcard<'data'>[];
