@@ -47,7 +47,7 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
       fr: 'Tu peux diviser des centaines entières par un nombre à un chiffre, en échangeant des centaines contre des dizaines ou unités si nécessaire.',
       bn: 'পূর্ণ শতককে এক অঙ্কের সংখ্যা দিয়ে ভাগ করতে এবং দরকারে শতককে দশক বা এককে বদলাতে পারো।',
       pt: 'Você pode dividir centenas inteiras por um número de um algarismo, trocando centenas por dezenas ou unidades quando necessário.',
-      ur: 'آپ پوری سینکڑوں کی تعداد کو ایک ہندسے سے تقسیم کر سکتے ہیں اور ضرورت پڑنے پر سینکڑوں کو دہائیوں یا اکائیوں میں بدل سکتے ہیں۔',
+      ur: 'آپ مکمل سینکڑوں کی تعداد کو ایک ہندسے سے تقسیم کر سکتے ہیں اور ضرورت پڑنے پر سینکڑوں کو دہائیوں یا اکائیوں میں بدل سکتے ہیں۔',
       id: 'Kamu bisa membagi ratusan penuh dengan bilangan satu angka, menukar ratusan menjadi puluhan atau satuan saat perlu.',
       de: 'Du kannst volle Hunderter durch eine einstellige Zahl teilen und bei Bedarf Hunderter in Zehner oder Einer tauschen.',
       ja: '整百数を1桁の数で割り、必要なら百を十や一にくずして計算できます。',
