@@ -5,7 +5,7 @@ export const planetaryMagneticFields_Skill_Data = buildSkillConfig({
   id: 'fdb77ddf-8d2e-439f-b396-f12a8e877b18',
   name: {
     en: 'Planetary Magnetic Fields',
-      zh: '行星磁场',
+    zh: '行星磁场',
     hi: 'ग्रहों के चुंबकीय क्षेत्र',
     es: 'Campos magnéticos planetarios',
     ar: 'المجالات المغناطيسية للكواكب',
@@ -39,7 +39,7 @@ export const planetaryMagneticFields_Skill_Data = buildSkillConfig({
       'Explain the conditions under which internal conductive flows can generate global or regional magnetic fields.',
     frontend: {
       en: 'Explain how moving conductive material inside a planet can create a magnetic field.',
-          zh: '解释行星内部流动的导电物质如何产生磁场。',
+      zh: '解释行星内部流动的导电物质如何产生磁场。',
       hi: 'समझाएँ कि ग्रह के भीतर गति करता विद्युत चालक पदार्थ चुंबकीय क्षेत्र कैसे बना सकता है।',
       es: 'Explica cómo el material conductor en movimiento dentro de un planeta puede generar un campo magnético.',
       ar: 'اشرح كيف يمكن للمواد الموصلة المتحركة داخل كوكب أن تولّد مجالًا مغناطيسيًا.',
