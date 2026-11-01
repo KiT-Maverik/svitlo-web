@@ -7,12 +7,11 @@ import type { Section } from './section.types';
 
 type LessonV2_Parameters = {
   requireQuiz: boolean;
-  languages: LanguageCode[];
+  languages: NonEmptyArray<LanguageCode>;
   sections: {
     allowNavigation: boolean;
     allowSkipping: boolean;
     showIndexes: boolean;
-    content: NonEmptyArray<string>;
   };
 };
 
@@ -24,7 +23,6 @@ type LessonV2_Definition = {
 
 type LessonV2_Data = {
   id: string;
-  type: 'lesson';
   slug: string;
   title: Locale_Config;
   parameters: LessonV2_Parameters;
@@ -33,7 +31,6 @@ type LessonV2_Data = {
 
 type LessonV2_Response = Locale_ResponseParams & {
   id: string;
-  type: 'lesson';
   slug: string;
   title: string;
   parameters: LessonV2_Parameters;
