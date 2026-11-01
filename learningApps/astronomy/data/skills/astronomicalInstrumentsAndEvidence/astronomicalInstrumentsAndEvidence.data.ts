@@ -12,6 +12,8 @@ export const astronomicalInstrumentsAndEvidence_SkillDomain_Data = buildSkillDom
   id: 'bf04eb18-9dd9-462c-8c83-7269bdc4d17d',
   name: {
     en: 'Astronomical Instruments and Evidence',
+    uk: 'Астрономічні інструменти та докази',
+    pl: 'Instrumenty astronomiczne i dowody obserwacyjne',
   },
   groups: {
     astronomicalSpectra: astronomicalSpectra_SkillGroup_Data,
@@ -26,6 +28,8 @@ export const astronomicalInstrumentsAndEvidence_SkillDomain_Data = buildSkillDom
       'Astronomy infers properties of remote objects from electromagnetic radiation, gravitational effects, particles and spacecraft observations. This domain covers what an observation can reveal, how instruments and methods constrain the evidence, and how competing interpretations are evaluated, not the engineering construction of observatories and spacecraft.',
     frontend: {
       en: 'Discover how astronomers gather evidence from light, gravity, particles and space missions to study distant worlds.',
+      uk: 'Дізнайся, як астрономи збирають свідчення за допомогою світла, гравітації, частинок і космічних місій, щоб досліджувати далекі світи.',
+      pl: 'Odkryj, jak astronomowie badają odległe światy, zbierając dane ze światła, grawitacji, cząstek i misji kosmicznych.',
     },
   },
 });
